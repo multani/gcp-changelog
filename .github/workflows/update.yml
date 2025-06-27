@@ -1,0 +1,33 @@
+---
+name: Update
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "37 * * * *"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+
+      - name: Build
+        run: uv sync --all-extras --dev
+
+      - name: Update
+        run: uv run gcp-changelog
+
+      - name: Commit changes
+        run: |
+          git config --local user.name "GitHub Actions"
+          git config --local user.email "github-action@github.com"
+          git add data
+          git commit -m "Automatic update from Google Cloud changelog" || true
+          git push

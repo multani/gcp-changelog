@@ -1,0 +1,7 @@
+# Google Cloud Managed Service for Apache Kafka
+
+## 2025-05-29 00:00:00-07:00
+
+### Feature
+
+Public preview: Google Managed Service for Apache Kafka now offers schema registry support. For more information about the feature, see the [schema registry overview](https://cloud.google.com/managed-service-for-apache-kafka/docs/schema-registry/schema-registry-overview) or [get started with an Avro producer in Java](https://cloud.google.com/managed-service-for-apache-kafka/docs/quickstart-avro).

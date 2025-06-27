@@ -1,0 +1,9 @@
+# Document AI
+
+## 2025-06-19 00:00:00-07:00
+
+### Feature
+
+We've increased the maximum file size for [online processing](https://cloud.google.com/document-ai/docs/reference/rest/v1/projects.locations.processors/process) requests from 20 MB to 40 MB. This applies to all types of processors.
+
+For more information, see the Document AI [limits](https://cloud.google.com/document-ai/limits#content_limits) page.

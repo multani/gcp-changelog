@@ -1,0 +1,98 @@
+# Pub/Sub
+
+## 2025-06-16 00:00:00-07:00
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Node.js
+
+### Changes for [@google-cloud/pubsub](https://github.com/googleapis/nodejs-pubsub)
+
+#### [5.1.0](https://github.com/googleapis/nodejs-pubsub/compare/v5.0.0...v5.1.0) (2025-06-04)
+
+##### Features
+
+* Add SchemaViolationReason to IngestionFailureEvent ([#2045](https://github.com/googleapis/nodejs-pubsub/issues/2045)) ([3348e3e](https://github.com/googleapis/nodejs-pubsub/commit/3348e3e6195405608e380e5291e6107bcba855cb))
+* Use specific W3CTraceContextPropagator for OTel ([#2036](https://github.com/googleapis/nodejs-pubsub/issues/2036)) ([c9a9656](https://github.com/googleapis/nodejs-pubsub/commit/c9a9656b8ae4b6e26c0a90c6ea53f5387e1bb846))
+
+##### Bug Fixes
+
+* **deps:** Update dependency @opentelemetry/semantic-conventions to ~1.33.0 ([#2038](https://github.com/googleapis/nodejs-pubsub/issues/2038)) ([4eb46c5](https://github.com/googleapis/nodejs-pubsub/commit/4eb46c56a941cfb4616785269cc97d9eeca7f174))
+* **deps:** Update dependency @opentelemetry/semantic-conventions to ~1.34.0 ([#2048](https://github.com/googleapis/nodejs-pubsub/issues/2048)) ([1072c2d](https://github.com/googleapis/nodejs-pubsub/commit/1072c2ddbe2445bac92328e58fbf76e45b464e50))
+* **deps:** Update dependency protobufjs to ~7.5.0 ([#2041](https://github.com/googleapis/nodejs-pubsub/issues/2041)) ([b65eaeb](https://github.com/googleapis/nodejs-pubsub/commit/b65eaebdc54974a81f60f1901e2bd68c2bfd9b92))
+* Set messaging.operation in createAttributes ([#2030](https://github.com/googleapis/nodejs-pubsub/issues/2030)) ([b8d513a](https://github.com/googleapis/nodejs-pubsub/commit/b8d513a3901ae6c160c3f797ed0a41fc0d697fac))
+
+### Python
+
+### Changes for [google-cloud-pubsub](https://github.com/googleapis/python-pubsub)
+
+#### [2.30.0](https://github.com/googleapis/python-pubsub/compare/v2.29.1...v2.30.0) (2025-06-07)
+
+##### Features
+
+* Add SchemaViolationReason to IngestionFailureEvent ([#1411](https://github.com/googleapis/python-pubsub/issues/1411)) ([c046ca2](https://github.com/googleapis/python-pubsub/commit/c046ca22e9bddff6b50f7670bf6b9b9470bf78e8))## 2025-06-09 00:00:00-07:00
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Go
+
+### Changes for [pubsub/apiv1](https://github.com/googleapis/google-cloud-go/tree/main/pubsub/apiv1)
+
+### Java
+
+### Changes for [google-cloud-pubsub](https://github.com/googleapis/java-pubsub)
+
+#### [1.140.1](https://github.com/googleapis/java-pubsub/compare/v1.140.0...v1.140.1) (2025-06-05)
+
+##### Bug Fixes
+
+* **deps:** Update the Java code generator (gapic-generator-java) to 2.59.0 ([0eece50](https://github.com/googleapis/java-pubsub/commit/0eece5012fbaf887a5c062beba433dbb30edbf43))
+
+##### Dependencies
+
+* Update dependency com.google.cloud:sdk-platform-java-config to v3.49.0 ([#2448](https://github.com/googleapis/java-pubsub/issues/2448)) ([d89a14d](https://github.com/googleapis/java-pubsub/commit/d89a14d6569fc914d877cc24d66c42684a812eba))
+
+#### [1.140.0](https://github.com/googleapis/java-pubsub/compare/v1.139.4...v1.140.0) (2025-06-03)
+
+##### Features
+
+* Add SchemaViolationReason to IngestionFailureEvent ([21cc376](https://github.com/googleapis/java-pubsub/commit/21cc3764aaa6fc05eb4a5078a72dae30694fba91))
+
+##### Dependencies
+
+* Update dependency com.google.cloud:google-cloud-bigquery to v2.50.1 ([#2435](https://github.com/googleapis/java-pubsub/issues/2435)) ([b37c557](https://github.com/googleapis/java-pubsub/commit/b37c5573e1d0d7eada4ce4ec6a052521ea11cff1))
+* Update dependency com.google.cloud:google-cloud-storage to v2.52.3 ([#2436](https://github.com/googleapis/java-pubsub/issues/2436)) ([4f309d1](https://github.com/googleapis/java-pubsub/commit/4f309d151d4bd584a33a0bb8882d0614a1b9d533))
+* Update dependency com.google.cloud:sdk-platform-java-config to v3.49.0 ([#2444](https://github.com/googleapis/java-pubsub/issues/2444)) ([a59135c](https://github.com/googleapis/java-pubsub/commit/a59135c6859d0aa5c247a6a1f60872c959123cc7))
+* Update dependency com.google.cloud:sdk-platform-java-config to v3.49.0 ([#2446](https://github.com/googleapis/java-pubsub/issues/2446)) ([6434be1](https://github.com/googleapis/java-pubsub/commit/6434be16560fdc8797b7c930b06df38c0972c96c))
+* Update dependency com.google.protobuf:protobuf-java-util to v4.31.0 ([#2430](https://github.com/googleapis/java-pubsub/issues/2430)) ([232fac1](https://github.com/googleapis/java-pubsub/commit/232fac1c47e0d3680dcc8d56b69d65ed0d379dde))
+* Update googleapis/sdk-platform-java action to v2.59.0 ([#2445](https://github.com/googleapis/java-pubsub/issues/2445)) ([12d4cfb](https://github.com/googleapis/java-pubsub/commit/12d4cfb7d67dbb163b3a545ea2ebae450e88283d))
+
+##### Documentation
+
+* **sample:** Update the subscribe with error listener and subscribe with exactly-once samples ([#2437](https://github.com/googleapis/java-pubsub/issues/2437)) ([17c142b](https://github.com/googleapis/java-pubsub/commit/17c142b20efb79f9c71fc6306cb3ee4e15c5e06f))## 2025-06-02 00:00:00-07:00
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Python
+
+### Changes for [google-cloud-pubsub](https://github.com/googleapis/python-pubsub)
+
+#### [2.29.1](https://github.com/googleapis/python-pubsub/compare/v2.29.0...v2.29.1) (2025-05-23)
+
+##### Bug Fixes
+
+* Remove setup.cfg configuration for creating universal wheels ([#1376](https://github.com/googleapis/python-pubsub/issues/1376)) ([60639c4](https://github.com/googleapis/python-pubsub/commit/60639c4928105ae8a72c8e37b1f48f75cc2ffcc3))
+
+##### Documentation
+
+* **sample:** Add samples for topic and subscription SMTs ([#1386](https://github.com/googleapis/python-pubsub/issues/1386)) ([4d072e0](https://github.com/googleapis/python-pubsub/commit/4d072e088b59f692dc3d59c3197a2993c125917e))
+* Update documentation for JavaScriptUDF to indicate that the `message_id` metadata field is optional instead of required ([#1380](https://github.com/googleapis/python-pubsub/issues/1380)) ([be90054](https://github.com/googleapis/python-pubsub/commit/be9005412fea06bea917c8b6861546b7e6c62a1e))
+* Update readme links ([#1409](https://github.com/googleapis/python-pubsub/issues/1409)) ([77ba05d](https://github.com/googleapis/python-pubsub/commit/77ba05d4ba5b84a25c1a07c5397bbc184fa6041d))### Feature
+
+General availability: Pub/Sub now offers Single Message Transforms (SMTs) that enable lightweight modifications to message data and attributes directly within Pub/Sub. SMTs can be set as properties of topics or subscriptions. The change is being rolled out in a phased manner over the rest of the week. For more information about SMTs, see [Single Message Transforms (SMTs) overview](https://cloud.google.com/pubsub/docs/smts/smts-overview).

@@ -1,0 +1,30 @@
+[project]
+name = "gcp-changelog"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Jonathan Ballet", email = "jon@multani.info" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4>=4.13.4",
+    "dateutils>=0.6.12",
+    "httpx>=0.28.1",
+    "markdownify>=1.1.0",
+    "typer>=0.16.0",
+]
+
+[project.scripts]
+gcp-changelog = "gcp_changelog:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.16.1",
+    "ruff>=0.12.1",
+    "types-beautifulsoup4>=4.12.0.20250516",
+]

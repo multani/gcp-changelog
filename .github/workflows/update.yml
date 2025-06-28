@@ -21,8 +21,11 @@ jobs:
       - name: Build
         run: uv sync --all-extras --dev
 
-      - name: Update
-        run: uv run gcp-changelog
+      - name: Fetch data
+        run: uv run gcp-changelog fetch
+
+      - name: Render to markdown
+        run: uv run gcp-changelog render
 
       - name: Commit changes
         run: |

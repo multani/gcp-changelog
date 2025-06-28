@@ -4,36 +4,45 @@ from xml.etree import ElementTree
 
 import bs4
 import dateutil.parser
+import httpx
 from markdownify import markdownify  # type: ignore
 
 from . import models
 
 
-def as_markdown(content: list[bs4.PageElement]) -> str:
-    return str(markdownify("\n".join(str(c) for c in content)))
+def fetch_feed(url: str) -> models.Index:
+    with httpx.Client() as client:
+        response = client.get(url)
+
+    index = parse_atom_feed(response.text)
+    return index
 
 
 def parse_atom_feed(feed: str) -> models.Index:
     index = models.Index()
 
+    ns = {
+        "atom": "http://www.w3.org/2005/Atom",
+    }
+
     root = ElementTree.fromstring(feed)
-    for entry in root.findall("{http://www.w3.org/2005/Atom}entry"):
-        content = entry.find("{http://www.w3.org/2005/Atom}content")
+    for atom_entry in root.findall("atom:entry", ns):
+        content = atom_entry.find("atom:content", ns)
         assert content is not None
         assert content.text is not None
 
-        date_element = entry.find("{http://www.w3.org/2005/Atom}updated")
+        date_element = atom_entry.find("atom:updated", ns)
         assert date_element is not None
         assert date_element.text is not None
         date = dateutil.parser.parse(date_element.text)
 
         assert content.attrib["type"] == "html"
 
-        for pc in parse_single_date(content.text, date):
-            if (old_pc := index.products.get(pc.name)) is not None:
-                old_pc.absorb(pc)
+        for product in parse_single_date(content.text, date):
+            if (old_product := index.products.get(product.name)) is not None:
+                old_product.absorb(product)
             else:
-                index.products[pc.name] = pc
+                index.products[product.name] = product
 
     return index
 
@@ -44,32 +53,34 @@ def parse_single_date(content: str, date: date) -> Generator[models.ProductChang
     products = page.findAll("h2")
 
     for product in products:
-        cel: list[models.ChangelogEntry] = []
+        entries: list[models.ChangelogEntry] = []
 
         product_name = product.text.strip()
 
-        for ce in parse_product_updates(product):
-            cel.append(ce)
+        entries = [entry for entry in parse_product_updates(product)]
 
-        pc = models.ProductChangelog(
+        product_changelog = models.ProductChangelog(
             name=product_name,
-            entries={date: cel},
+            entries={date: entries},
         )
 
-        yield pc
+        yield product_changelog
 
 
 def parse_product_updates(product: bs4.Tag) -> Generator[models.ChangelogEntry]:
     kind: str | None = None
     content: list[bs4.PageElement] = []
 
+    # Loop until the next h2
+    # The next h2 is the next product
     for sibling in product.next_siblings:
         sibling = cast(bs4.Tag, sibling)
 
         if sibling.name == "h3":
+            # This is a new announcement/feature/changes for this product.
             if kind is not None:
-                ce = models.ChangelogEntry(kind=kind, content=as_markdown(content))
-                yield ce
+                entry = models.ChangelogEntry(kind=kind, content=as_markdown(content))
+                yield entry
 
             kind = sibling.text.strip()
             content = []
@@ -83,5 +94,9 @@ def parse_product_updates(product: bs4.Tag) -> Generator[models.ChangelogEntry]:
             content.append(sibling)
 
     if kind is not None:
-        ce = models.ChangelogEntry(kind=kind, content=as_markdown(content))
-        yield ce
+        entry = models.ChangelogEntry(kind=kind, content=as_markdown(content))
+        yield entry
+
+
+def as_markdown(content: list[bs4.PageElement]) -> str:
+    return str(markdownify("\n".join(str(c) for c in content)))

@@ -1,5 +1,11 @@
 # Compute Engine
 
+## 2025-06-27
+
+### Feature
+
+**Generally available**: You can specify a custom ephemeral external IPv6 address when creating an instance. For more information, see [Create instances that use IPv6 addresses](https://cloud.google.com/compute/docs/instances/create-ipv6-instance).
+
 ## 2025-06-13
 
 ### Feature

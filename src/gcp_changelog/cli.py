@@ -59,8 +59,8 @@ def fetch(config: Config, url: str) -> None:
 @cli.command()
 @click.option(
     "--render-folder",
-    default="data/markdown",
-    help="Folder to renderd the content to",
+    default="data",
+    help="Folder to render the content to",
     type=click.Path(dir_okay=True, path_type=Path),
 )
 @pass_config

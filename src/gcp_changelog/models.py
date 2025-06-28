@@ -1,4 +1,5 @@
 import datetime
+import re
 from pathlib import Path
 from typing import Self
 
@@ -16,7 +17,7 @@ class ProductChangelog(BaseModel):
 
     @property
     def slug(self) -> str:
-        return self.name.lower().replace(" ", "-").replace("/", "")
+        return re.sub(r"[^a-z0-9\-_]", "-", self.name.lower())
 
     @classmethod
     def load(cls, filename: Path) -> Self:
@@ -42,6 +43,8 @@ class ProductChangelog(BaseModel):
                     fp.write(entry.content)
                     fp.write("\n")
                     fp.write("\n")
+
+                fp.write("---\n")
 
     def absorb(self, other: Self) -> None:
         for date, other_entries in other.entries.items():
@@ -71,11 +74,22 @@ class Index(BaseModel):
             product.dump(filename)
 
     def render(self, folder: Path) -> None:
+        index: dict[str, Path] = {}
+
         for product in self.products.values():
             slug = product.slug
 
-            filename = folder / f"{slug}.md"
+            filename = folder / "services" / f"{slug}.md"
             product.render(filename)
+            index[product.name] = filename
+
+        with open(folder / "index.md", "w") as fp:
+            fp.write("# Google Cloud Platform Release Notes (by services)\n")
+            fp.write("\n")
+
+            for name, path in sorted(index.items()):
+                filename = path.relative_to(folder)
+                fp.write(f"- [{name}]({filename})\n")
 
     def absorb(self, other: Self) -> None:
         for name, other_product in other.products.items():

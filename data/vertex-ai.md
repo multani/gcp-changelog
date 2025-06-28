@@ -1,5 +1,11 @@
 # Vertex AI
 
+## 2025-06-27
+
+### Feature
+
+[Gemma 3n](https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/gemma3n) models are now available through Model Garden.
+
 ## 2025-06-24
 
 ### Deprecated

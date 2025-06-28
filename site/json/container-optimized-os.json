@@ -1,0 +1,799 @@
+{
+  "name": "Container Optimized OS",
+  "entries": {
+    "2025-06-23": [
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-125-19115-0-0",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.94](https://cos.googlesource.com/third_party/kernel/+/ffa537805d6bb853cb6baacb2d70fb7fadba42e0 ) | v27.5.1 | v2.0.4 | [See List](https://storage.googleapis.com/cos-tools/19115.0.0/csql-arm64-gcp/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated the Linux kernel to v6.6.94."
+      },
+      {
+        "kind": "Feature",
+        "content": "Added NVIDIA 570.133.20 vGPU driver."
+      },
+      {
+        "kind": "Feature",
+        "content": "Added a kernel patch to address bcache latency."
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded elfutils to version 0.193. This fixes CVE-2025-1365, CVE-2025-1371, CVE-2025-1372, and CVE-2025-1377."
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811736 -> 811773"
+      },
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-121-18867-90-67",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.93](https://cos.googlesource.com/third_party/kernel/+/25875e54e8fcc5831f6572e7bd367a70ef85b37c ) | v27.5.1 | v2.0.4 | [See List](https://storage.googleapis.com/cos-tools/18867.90.67/lakitu/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Security",
+        "content": "Updated the Linux kernel to v6.6.93. This includes\nmitigations for CVE-2024-28956, which may negatively impact the\nperformance of Intel machine types."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-d35acc1 in the Linux kernel."
+      },
+      {
+        "kind": "Feature",
+        "content": "Added a kernel patch to address bcache latency."
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811824 -> 811798"
+      },
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-117-18613-263-49",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.93](https://cos.googlesource.com/third_party/kernel/+/12c0014075ea8438afd8396c473a3895a9c9dc5a ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18613.263.49/lakitu/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Security",
+        "content": "Updated the Linux kernel to v6.6.93. This includes\nmitigations for CVE-2024-28956, which may negatively impact the\nperformance of Intel machine types."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-d35acc1 in the Linux kernel."
+      },
+      {
+        "kind": "Feature",
+        "content": "Added a kernel patch to address bcache latency."
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811766 -> 811785"
+      },
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-113-18244-382-49",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.141](https://cos.googlesource.com/third_party/kernel/+/436274a3803b4d919d23b19b266c7e95ccdb4e09 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.382.49/lakitu/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Security",
+        "content": "Updated the Linux kernel to v6.1.141. This includes\nmitigations for CVE-2024-28956, which may negatively impact the\nperformance of Intel machine types."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-d35acc1 in the Linux kernel."
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 812035 -> 812041"
+      },
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-109-17800-519-36",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.141](https://cos.googlesource.com/third_party/kernel/+/80aa802c8b1dacdfd244bb9931499a2fa4fcd118 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/17800.519.36/lakitu/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Security",
+        "content": "Updated the Linux kernel to v6.1.141. This includes\nmitigations for CVE-2024-28956, which may negatively impact the\nperformance of Intel machine types."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-d35acc1 in the Linux kernel."
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 812276 -> 812288"
+      }
+    ],
+    "2025-06-18": [
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-dev-125-19104-0-0",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.93](https://cos.googlesource.com/third_party/kernel/+/8f1ed7554eff45bf08c26fd7f15bc57a7ffac0b0 ) | v27.5.1 | v2.0.4 | [See List](https://storage.googleapis.com/cos-tools/19104.0.0/lakitu/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Changed",
+        "content": "Upgraded dpdk-kmods to 9b182be2ee4b"
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated the Linux kernel to v6.6.93."
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded app-misc/jq to v1.8.0. This fixes CVE-2025-48060."
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811779 -> 811736"
+      },
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-121-18867-90-62",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.87](https://cos.googlesource.com/third_party/kernel/+/2b6148ec22df8bd88c829407078577aecc9c764a ) | v27.5.1 | v2.0.4 | [See List](https://storage.googleapis.com/cos-tools/18867.90.62/lakitu/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded app-misc/jq to v1.8.0. This fixes CVE-2025-48060."
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811798 -> 811824"
+      },
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-117-18613-263-45",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.87](https://cos.googlesource.com/third_party/kernel/+/90daf444819d8b8478e6285bdafc25f1fa953e04 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18613.263.45/lakitu/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded app-misc/jq to v1.8.0. This fixes CVE-2025-48060."
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811775 -> 811766"
+      },
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-113-18244-382-47",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.134](https://cos.googlesource.com/third_party/kernel/+/cbd62176e17d3c4d02a624ad951c16f9e6c8d5a4 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.382.47/lakitu/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded app-misc/jq to v1.8.0. This fixes CVE-2025-48060."
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 812031 -> 812035"
+      },
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-109-17800-519-32",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.135](https://cos.googlesource.com/third_party/kernel/+/269aea26c0f2e9675236f141e0a182b8c58e8e52 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/17800.519.32/lakitu/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded app-misc/jq to v1.8.0. This fixes CVE-2025-48060."
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 812266 -> 812276"
+      }
+    ],
+    "2025-06-17": [
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-117-18613-263-42",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.87](https://cos.googlesource.com/third_party/kernel/+/90daf444819d8b8478e6285bdafc25f1fa953e04 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18613.263.42/lakitu/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated cos-gpu-installer to v2.5.3."
+      },
+      {
+        "kind": "Changed",
+        "content": "Added support for the Lustre 2.14.0\\_p198 drivers."
+      },
+      {
+        "kind": "Feature",
+        "content": "Added support for Nvidia driver version 575.57.08."
+      },
+      {
+        "kind": "Feature",
+        "content": "Fixed CVE-2024-41110 in Docker."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-47273 in dev-python/setuptools."
+      },
+      {
+        "kind": "Security",
+        "content": "Updated systemd to v254.26. This resolves CVE-2025-4598."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-37800 in the Linux kernel."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-37800 in the Linux kernel."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-37803 in the Linux kernel."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-ac9fe7d in the kernel."
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811818 -> 811775"
+      },
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-121-18867-90-59",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.87](https://cos.googlesource.com/third_party/kernel/+/2b6148ec22df8bd88c829407078577aecc9c764a ) | v27.5.1 | v2.0.4 | [See List](https://storage.googleapis.com/cos-tools/18867.90.59/lakitu/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated cos-gpu-installer to v2.5.3."
+      },
+      {
+        "kind": "Changed",
+        "content": "Added support for the Lustre 2.14.0\\_p198 drivers."
+      },
+      {
+        "kind": "Feature",
+        "content": "Added support for Nvidia driver version 575.57.08."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-47273 in dev-python/setuptools."
+      },
+      {
+        "kind": "Security",
+        "content": "Updated systemd to v254.26. This resolves CVE-2025-4598."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-37800 in the Linux kernel."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-37803 in the Linux kernel."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-ac9fe7d in the kernel."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-43840 in the Linux kernel."
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811741 -> 811798"
+      },
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-113-18244-382-43",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.134](https://cos.googlesource.com/third_party/kernel/+/cbd62176e17d3c4d02a624ad951c16f9e6c8d5a4 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.382.43/lakitu/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated cos-gpu-installer to v2.5.3."
+      },
+      {
+        "kind": "Feature",
+        "content": "Added support for Nvidia driver version 575.57.08."
+      },
+      {
+        "kind": "Feature",
+        "content": "Fixed CVE-2024-41110 in Docker."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-47273 in dev-python/setuptools."
+      },
+      {
+        "kind": "Security",
+        "content": "Updated systemd to v254.26. This resolves CVE-2025-4598."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-ac9fe7d in the kernel."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-26783 in the Linux kernel."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-36903 in the Linux kernel."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-43840 in the Linux kernel."
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 812017 -> 812031"
+      },
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-109-17800-519-30",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.135](https://cos.googlesource.com/third_party/kernel/+/269aea26c0f2e9675236f141e0a182b8c58e8e52 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/17800.519.30/lakitu/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated cos-gpu-installer to v2.5.3."
+      },
+      {
+        "kind": "Feature",
+        "content": "Added support for Nvidia driver version 575.57.08."
+      },
+      {
+        "kind": "Feature",
+        "content": "Fixed CVE-2024-41110 in Docker."
+      },
+      {
+        "kind": "Security",
+        "content": "Updated systemd to v253.33. This resolves CVE-2025-4598."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-47273 in dev-python/setuptools."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-ac9fe7d in the kernel."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-36927 in the Linux kernel."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-43840 in the Linux kernel."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-36903 in the Linux kernel."
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 812283 -> 812266"
+      },
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-dev-125-19094-0-0",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.92](https://cos.googlesource.com/third_party/kernel/+/8ff56aa9d000fc42d1198f5e46504f60c75f29b2 ) | v27.5.1 | v2.0.4 | [See List](https://storage.googleapis.com/cos-tools/19094.0.0/lakitu/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated cos-gpu-installer to v2.5.3."
+      },
+      {
+        "kind": "Changed",
+        "content": "Added support for the Lustre 2.14.0\\_p198 drivers."
+      },
+      {
+        "kind": "Feature",
+        "content": "Added support for Nvidia driver version 575.57.08."
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/shill-client to v0.0.1-r4869."
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-db/sqlite to v3.50.0."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-47273 in dev-python/setuptools."
+      },
+      {
+        "kind": "Security",
+        "content": "Updated systemd to v254.26. This resolves CVE-2025-4598."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-ac9fe7d in the kernel."
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811798 -> 811779"
+      }
+    ],
+    "2025-06-02": [
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-dev-125-19071-0-0",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.92](https://cos.googlesource.com/third_party/kernel/+/1c5a7e09f4791a79a02ae7d83967cd3e13b12755 ) | v27.5.1 | v2.0.4 | [See List](https://storage.googleapis.com/cos-tools/19071.0.0/lakitu/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Changed",
+        "content": "Upgraded google-guest-agent to 20250327.00. This included\nnew services like `google-guest-compat-manager.service` and\n`google-guest-agent-manager.service` and new binaries like\n`google_guest_compat_manager`, `gce_metadata_script_runner`,\n`google_guest_agent_manager`, `ggactl_plugin_cleanup` and\n`gce_compat_metadata_script_runner`."
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated the Linux kernel to v6.6.92."
+      },
+      {
+        "kind": "Feature",
+        "content": "Supported NVIDIA MFT Tools."
+      },
+      {
+        "kind": "Feature",
+        "content": "Injected IMEX channel char device for GB200 GPUs."
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO\\_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA\\_GB200 machine."
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/google-guest-configs to v20250516.00."
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed docker MTU mismatch."
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/chromeos-common-script to v0.0.1-r665."
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/google-breakpad to v2025.05.22.184901-r240."
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/session\\_manager-client to v0.0.1-r2830."
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/power\\_manager-client to v0.0.1-r2969."
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/shill-client to v0.0.1-r4866."
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/debugd-client to v0.0.1-r2734."
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/rootdev to v0.0.1-r51."
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-lang/go to v1.23.9."
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/dbus to v1.16.2-r197."
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/less to v678."
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-db/sqlite to v3.49.2."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-23337 in app-misc/jq."
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded net-misc/curl to version 8.12.1. This fixes CVE-2025-0167."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-46836 in sys-apps/net-tools"
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-20250-3198 in sys-libs/bintuils-libs."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-3f98113 in the Linux kernel."
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811729 -> 811798\n* Changed: net.ipv6.conf.docker0.mtu: 1500 -> 1460"
+      },
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-117-18613-263-24",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.87](https://cos.googlesource.com/third_party/kernel/+/d7d9a34e59a967bd31420a1a629853632fc7d3a0 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18613.263.24/lakitu/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO\\_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA\\_GB200 machine."
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/less to v678."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-23337 in app-misc/jq."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-43840 in the Linux kernel."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-3f98113 in the Linux kernel."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-8478a72 in the Linux kernel."
+      },
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-113-18244-382-29",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.134](https://cos.googlesource.com/third_party/kernel/+/e99d24367a9c6985bc9c997c6f3a053c2a7e2eff ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.382.29/lakitu/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO\\_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA\\_GB200 machine."
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/less to v678."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-23337 in app-misc/jq."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-36927 in the Linux kernel."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-3f98113 in the Linux kernel."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-8478a72 in the Linux kernel."
+      },
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-121-18867-90-38",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.87](https://cos.googlesource.com/third_party/kernel/+/7217e46094ce6bf030248161190afe8b3d8678e8 ) | v27.5.1 | v2.0.4 | [See List](https://storage.googleapis.com/cos-tools/18867.90.38/lakitu/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO\\_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA\\_GB200 machine."
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/less to v678."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-23337 in app-misc/jq."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-3f98113 in the Linux kernel."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-8478a72 in the Linux kernel."
+      },
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-109-17800-519-18",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.135](https://cos.googlesource.com/third_party/kernel/+/2e89dc9fc1cfcb0184104491d7f412eee640086b ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/17800.519.18/lakitu/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO\\_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA\\_GB200 machine."
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/less to v678."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-26783 in the Linux kernel."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-3f98113 in the Linux kernel."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-8478a72 in the Linux kernel."
+      }
+    ],
+    "2025-05-27": [
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-121-18867-90-32",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.87](https://cos.googlesource.com/third_party/kernel/+/b4264a6c074cc123d9f043b10a6e2653952fdae2 ) | v27.5.1 | v2.0.4 | [See List](https://storage.googleapis.com/cos-tools/18867.90.32/lakitu/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Feature",
+        "content": "Support NVIDIA MFT Tools on COS."
+      },
+      {
+        "kind": "Feature",
+        "content": "Inject IMEX channel char device for GB200 GPUs."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-46836 in sys-apps/net-tools."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-20250-3198 in sys-libs/bintuils-libs."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-b3bf8f6 in the Linux kernel."
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811834 -> 811792"
+      },
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-117-18613-263-19",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.87](https://cos.googlesource.com/third_party/kernel/+/e736bf1d9149d0c78e366c270fb44502fca96e9f ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18613.263.19/lakitu/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Feature",
+        "content": "Support NVIDIA MFT Tools on COS."
+      },
+      {
+        "kind": "Feature",
+        "content": "Inject IMEX channel char device for GB200 GPUs."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-46836 in sys-apps/net-tools."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-20250-3198 in sys-libs/bintuils-libs."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-b3bf8f6 in the Linux kernel."
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811793 -> 811830"
+      },
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-113-18244-382-22",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.134](https://cos.googlesource.com/third_party/kernel/+/418e1a7f94faec8f2e29f8e2202b06212ad9910b ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.382.22/lakitu/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Feature",
+        "content": "Support NVIDIA MFT Tools on COS."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-46836 in sys-apps/net-tools."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-20250-3198 in sys-libs/bintuils-libs."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-b3bf8f6 in the Linux kernel."
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 812054 -> 812045"
+      },
+      {
+        "kind": "Changed",
+        "content": ""
+      },
+      {
+        "kind": "cos-109-17800-519-12",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.135](https://cos.googlesource.com/third_party/kernel/+/8f41e7ee6fe9b8eb00f95b8b56858a7594b466b7 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/17800.519.12/lakitu/gpu_driver_versions.textproto) |"
+      },
+      {
+        "kind": "Feature",
+        "content": "Support NVIDIA MFT Tools on COS."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-46836 in sys-apps/net-tools."
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-20250-3198 in sys-libs/bintuils-libs."
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 812270 -> 812274"
+      }
+    ]
+  }
+}

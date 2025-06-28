@@ -19,7 +19,7 @@ jobs:
         uses: astral-sh/setup-uv@v6
 
       - name: Build
-        run: uv sync --all-extras --dev
+        run: uv sync --group dev --group doc
 
       - name: Fetch data
         run: uv run gcp-changelog fetch
@@ -27,10 +27,13 @@ jobs:
       - name: Render to markdown
         run: uv run gcp-changelog render
 
+      - name: Render to HTML
+        run: make mkdocs
+
       - name: Commit changes
         run: |
           git config --local user.name "GitHub Actions"
           git config --local user.email "github-action@github.com"
-          git add data
+          git add data site
           git commit -m "Automatic update from Google Cloud changelog" || true
           git push

@@ -1,0 +1,25 @@
+{
+  "name": "Cloud Service Mesh",
+  "entries": {
+    "2025-06-09": [
+      {
+        "kind": "Feature",
+        "content": "You can now enforce cluster-local traffic for an individual service, all services in a particular namespace, or globally for all services in the mesh. For more information, see [Keeping traffic in-cluster](https://cloud.google.com/service-mesh/docs/operate-and-maintain/multi-cluster#keeping_traffic_in-cluster)."
+      }
+    ],
+    "2025-06-06": [
+      {
+        "kind": "Feature",
+        "content": "[DNS Proxy feature](https://cloud.google.com/service-mesh/docs/operate-and-maintain/dns-proxy) is now available in the Rapid release channel. This feature requires sidecar version `1.21.5-asm.39` or later."
+      },
+      {
+        "kind": "Changed",
+        "content": "This change affects clusters using both the `TRAFFIC_DIRECTOR` and `ISTIOD` control plane implementations.\n\nWhen using Cloud Service Mesh with Istio APIs, configuring an [unsupported field](https://cloud.google.com/service-mesh/docs/onboarding/unsupported-istio-apis) or value in an Istio Custom Resources will be reflected as an error in the Mesh status API.\n\nIn some cases, the validation webhook will also reject unsupported API usage with an error message indicating the specific unsupported API. For more information, see [Common webhook error messages](https://cloud.google.com/service-mesh/docs/troubleshooting/troubleshoot-webhook#common_webhook_error_messages). You can mitigate these issues by amending the Istio Custom Resource to remove the specified unsupported API configuration."
+      },
+      {
+        "kind": "Feature",
+        "content": "Isolation support to prevent cross-region overflow is now available as a preview feature for `TRAFFIC_DIRECTOR` implementations of Cloud Service Mesh. For more information, see [Isolation for Cloud Service Mesh](https://cloud.google.com/service-mesh/docs/service-routing/isolation)."
+      }
+    ]
+  }
+}

@@ -14,3 +14,7 @@ check:
 .PHONY: mypy
 mypy:
 	uv run mypy
+
+.PHONY: mkdocs
+mkdocs:
+	uv run mkdocs build --strict

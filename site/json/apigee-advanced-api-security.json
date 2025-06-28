@@ -1,0 +1,35 @@
+{
+  "name": "Apigee Advanced API Security",
+  "entries": {
+    "2025-06-16": [
+      {
+        "kind": "Announcement",
+        "content": "On June 16, 2025 we released a new version of Advanced API Security Abuse Detection."
+      },
+      {
+        "kind": "Feature",
+        "content": "**API address drill down details are now available in the preview release of Advanced API Security Abuse Detection incidents in the detected traffic tab.**\n\nThis new functionality shows details related to specific API addresses when viewing detected abuse in detected traffic.\n\nFor usage information, see the [Abuse Detection customer documentation](https://cloud.google.com/apigee/docs/api-security/abuse-detection#incident-details) for incident details."
+      }
+    ],
+    "2025-06-04": [
+      {
+        "kind": "Announcement",
+        "content": "On June 4, 2025 we released an update to the Anomaly Detection model in Advanced API Security Abuse Detection.\n\n**Note:** Rollouts of this release to production instances will begin within two business days and may take four or more business days to complete across all Google Cloud zones. Your instances may not have the feature available until the rollout is complete."
+      },
+      {
+        "kind": "Feature",
+        "content": "**New model for Abuse Detection's Advanced Anomaly Detection rule**\n\nWith this release, we introduced a new and improved machine learning model for anomaly detection in Advanced API Security. This new model includes the following improvements:\n\n* **Trained on customer-specific traffic patterns.** The new model is trained exclusively on your organization's historical API traffic data. It continues to learn from your API traffic patterns over time to increase accuracy.\n* **Engineered by Google for anomaly detection.** The new model is a custom Vertex AI-based machine learning model, engineered and also used internally by Google specifically to detect anomalies in traffic patterns.\n\nUsage requirements:\n\n* In order to use this new model, you must explicitly opt in to allow the model to use your traffic and other data to train for anomaly detection. Note that your data is never shared with other customers for training purposes.\n* The new model is not available for VPC-SC customers at this time.\n\nThe new anomaly detection model replaces the old model, with no customer-facing changes to the API or UI. Upon opting in for model training, you can expect to start seeing detected anomalies within 6 hours. If you have already opted in to allow the older version of our anomaly detection model to use your traffic data for training, you will not need to opt in again.\n\nFor more information on this model and on Abuse Detection, see [Abuse Detection customer documentation](https://cloud.google.com/apigee/docs/api-security/abuse-detection), including [Detection rules](https://cloud.google.com/apigee/docs/api-security/detection-rules)."
+      }
+    ],
+    "2025-05-27": [
+      {
+        "kind": "Announcement",
+        "content": "On May 27, 2025 we released an updated version of Apigee Advanced API Security."
+      },
+      {
+        "kind": "Feature",
+        "content": "With this release, Advanced API Security expands its runtime region support to include `africa-south1` (Johannesburg).\n\nFor a list of supported regions, see [Apigee locations](https://cloud.google.com/apigee/docs/locations)."
+      }
+    ]
+  }
+}

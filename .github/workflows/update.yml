@@ -27,13 +27,26 @@ jobs:
       - name: Render to markdown
         run: uv run gcp-changelog render
 
+      - name: Has updates?
+        id: meta
+        run: |
+          if git diff --quiet --exit-code; then
+            echo "No updates found."
+            echo "updates=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Updates found."
+            echo "updates=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Render to HTML
+        if: steps.meta.outputs.updates == 'true'
         run: make mkdocs
 
       - name: Commit changes
+        if: steps.meta.outputs.updates == 'true'
         run: |
           git config --local user.name "GitHub Actions"
           git config --local user.email "github-action@github.com"
           git add data site
-          git commit -m "Automatic update from Google Cloud changelog" || true
+          git commit -m "Automatic update from Google Cloud changelog"
           git push

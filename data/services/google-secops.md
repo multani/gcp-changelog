@@ -1,5 +1,14 @@
 # Google SecOps
 
+## 2025-06-26
+
+### Announcement
+
+**Premium [Fortinet Firewall parser](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fw) now available as Release Candidate**
+
+This enhanced parser is available as a **Release Candidate** for the next 3 months. To opt in and begin testing it, go to **SIEM Settings > Parsers**. We encourage you to try it out and evaluate the improvements before it becomes the default.
+
+---
 ## 2025-06-23
 
 ### Announcement

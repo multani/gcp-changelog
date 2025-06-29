@@ -12,7 +12,7 @@ New parser documentation is available to help you ingest and normalize logs from
 
 [Collect BloxOne Threat Defense logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/bloxone)
 
-[Collect BlueCat Edge DNS Resolver logs](https://cloud.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/bluecat-edge)
+[Collect BlueCat Edge DNS Resolver logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/bluecat-edge)
 
 [Collect Cambium Networks logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cambium-networks)
 

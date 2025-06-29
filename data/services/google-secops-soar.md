@@ -1,5 +1,20 @@
 # Google SecOps SOAR
 
+## 2025-06-29
+
+### Announcement
+
+Release 6.3.51 is being rolled out to the first phase of regions as listed [here](https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains the following change.
+
+### Changed
+
+**Bulk Playbook Duplication Behavior Updated**
+
+When duplicating playbooks in bulk, the original selection is now preserved. Newly created copies are no longer automatically selected in the platform.
+
+---
 ## 2025-06-28
 
 ### Announcement

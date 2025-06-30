@@ -1,5 +1,24 @@
 # Cloud Load Balancing
 
+## 2025-06-26
+
+### Feature
+
+In typical HTTPS communication, neither the load balancer nor the backend verify each other's identity, assuming that they are within a secure perimeter and can be trusted. However, when perimeter security needs reinforcement or communication extends beyond the perimeter, backend mTLS becomes essential. Backend mTLS ensures secure communication by requiring both the load balancer and the backend to mutually verify their identities.
+
+With *backend authenticated TLS*, the load balancer verifies the backend server's certificate by checking its chain of trust, thereby confirming the backend's identity. Conversely, with *backend mTLS*, the backend server verifies the client certificate presented by the load balancer. Together, these mechanisms enable backend mTLS, ensuring that both parties validate each other's identity.
+
+Backend mTLS complements frontend mTLS, which is already generally available (GA).
+
+For details, see the following:
+
+* [Backend mTLS overview](https://cloud.google.com/load-balancing/docs/backend-authenticated-tls-backend-mtls)
+* [Set up backend authenticated TLS](https://cloud.google.com/load-balancing/docs/backend-authenticated-tls-setup)
+* [Set up backend mTLS](https://cloud.google.com/load-balancing/docs/backend-mtls-setup)
+
+This capability is in **General Availability** for global external Application Load Balancers.
+
+---
 ## 2025-06-13
 
 ### Feature

@@ -1,5 +1,12 @@
 # Generative AI on Vertex AI
 
+## 2025-06-27
+
+### Feature
+
+Multimodal datasets are now available in preview. For more information, see [Multimodal datasets](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/datasets).
+
+---
 ## 2025-06-24
 
 ### Deprecated

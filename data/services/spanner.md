@@ -1,5 +1,91 @@
 # Spanner
 
+## 2025-06-30
+
+### Feature
+
+Spanner supports the following new client-side metrics to the Spanner API frontend (AFE) and Google frontend (GFE) for Java and Go applications:
+
+* AFE connectivity error count
+* AFE latencies
+* GFE connectivity error count
+* GFE latencies
+
+These metrics can be used with server-side metrics to enable faster troubleshooting of performance and latency issues. For more information, see
+[Client-side metrics descriptions](https://cloud.google.com/spanner/docs/client-side-metrics-descriptions).
+
+### Feature
+
+To troubleshoot or understand your Spanner queries better, you can download and save your [query execution plan](https://cloud.google.com/spanner/docs/query-execution-plans) as a JSON file. You can now use the content of this file to see a visualization of the query execution plan in Spanner Studio. For more information, see [Take a tour of the query plan visualizer](https://cloud.google.com/spanner/docs/tune-query-with-visualizer#visual-plan-tour).
+
+### Libraries
+
+A monthly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Go
+
+### Changes for [spanner/admin/database/apiv1](https://github.com/googleapis/google-cloud-go/tree/main/spanner/admin/database/apiv1)
+
+#### [1.83.0](https://github.com/googleapis/google-cloud-go/compare/spanner/v1.82.0...spanner/v1.83.0) (2025-06-27)
+
+##### Features
+
+* **spanner/spansql:** Add support for TOKENIZE\_JSON. ([#12338](https://github.com/googleapis/google-cloud-go/issues/12338)) ([72225a5](https://github.com/googleapis/google-cloud-go/commit/72225a52c0f6bc6eac6d4e450dad0b566e79553f))
+* **spanner/spansql:** Support EXISTS in query parsing ([#12439](https://github.com/googleapis/google-cloud-go/issues/12439)) ([f5cb67b](https://github.com/googleapis/google-cloud-go/commit/f5cb67b104e4d99196064fb4474e0644e90c9a00))
+* **spanner:** Add new change\_stream.proto ([40b60a4](https://github.com/googleapis/google-cloud-go/commit/40b60a4b268040ca3debd71ebcbcd126b5d58eaa))
+* **spanner:** Add option for how to call BeginTransaction ([#12436](https://github.com/googleapis/google-cloud-go/issues/12436)) ([2cba13b](https://github.com/googleapis/google-cloud-go/commit/2cba13b8fef80b6cb5980e3b5b2bfc6dc796a03e))
+* **spanner:** Wrap proto mutation ([#12497](https://github.com/googleapis/google-cloud-go/issues/12497)) ([e655889](https://github.com/googleapis/google-cloud-go/commit/e655889e2fd6a55f901d1d8b146e7aa5efdca705))
+
+##### Bug Fixes
+
+* **spanner:** Pointer type custom struct decoder ([#12496](https://github.com/googleapis/google-cloud-go/issues/12496)) ([ac3cafb](https://github.com/googleapis/google-cloud-go/commit/ac3cafbac435a3ac98fd4693bac84a3f4a260c5b))
+
+### Java
+
+### Changes for [google-cloud-spanner](https://github.com/googleapis/java-spanner)
+
+#### [6.95.0](https://github.com/googleapis/java-spanner/compare/v6.94.0...v6.95.0) (2025-06-05)
+
+##### Features
+
+* Enable ALTS hard bound token in DirectPath ([#3904](https://github.com/googleapis/java-spanner/issues/3904)) ([2b0f2ff](https://github.com/googleapis/java-spanner/commit/2b0f2ff214f4b68dd5957bc4280edb713b77a763))
+* Enable grpc and afe metrics ([#3896](https://github.com/googleapis/java-spanner/issues/3896)) ([706f794](https://github.com/googleapis/java-spanner/commit/706f794f044c2cb1112cfdae6f379e5f2bc3f26f))
+* Last statement sample ([#3830](https://github.com/googleapis/java-spanner/issues/3830)) ([2f62816](https://github.com/googleapis/java-spanner/commit/2f62816b0af9aced1b73e25525f60f8e3e923454))
+* **spanner:** Add new change\_stream.proto ([f385698](https://github.com/googleapis/java-spanner/commit/f38569865de7465ae9a37b844a9dd983571d3688))
+
+##### Bug Fixes
+
+* Directpath\_enabled attribute ([#3897](https://github.com/googleapis/java-spanner/issues/3897)) ([53bc510](https://github.com/googleapis/java-spanner/commit/53bc510145921d00bc3df04aa4cf407179ed8d8e))
+
+##### Dependencies
+
+* Update dependency io.opentelemetry:opentelemetry-bom to v1.50.0 ([#3887](https://github.com/googleapis/java-spanner/issues/3887)) ([94b879c](https://github.com/googleapis/java-spanner/commit/94b879c8c1848fa0b14dbe8cda8390cfe9e8fce6))
+
+#### [6.95.1](https://github.com/googleapis/java-spanner/compare/v6.95.0...v6.95.1) (2025-06-06)
+
+##### Dependencies
+
+* Update dependency com.google.cloud:sdk-platform-java-config to v3.49.0 ([#3909](https://github.com/googleapis/java-spanner/issues/3909)) ([3de8502](https://github.com/googleapis/java-spanner/commit/3de8502b98ebb90526fc2339e279f9b710816b3b))
+* Update googleapis/sdk-platform-java action to v2.59.0 ([#3910](https://github.com/googleapis/java-spanner/issues/3910)) ([aed8bd6](https://github.com/googleapis/java-spanner/commit/aed8bd6d5a0b1e0dfab345e0de68f285e8b8aedb))
+
+#### [6.96.0](https://github.com/googleapis/java-spanner/compare/v6.95.1...v6.96.0) (2025-06-27)
+
+##### Features
+
+* Allow JDBC to configure directpath for connection ([#3929](https://github.com/googleapis/java-spanner/issues/3929)) ([d754f1f](https://github.com/googleapis/java-spanner/commit/d754f1f99294d86ec881583f217fa09f291a3d7a))
+* Support getOrNull and getOrDefault in Struct ([#3914](https://github.com/googleapis/java-spanner/issues/3914)) ([1dc5a3e](https://github.com/googleapis/java-spanner/commit/1dc5a3ec0ca9ea530e8691df5c2734c0a1ece559))
+* Use multiplexed sessions for read-only transactions ([#3917](https://github.com/googleapis/java-spanner/issues/3917)) ([37fdc27](https://github.com/googleapis/java-spanner/commit/37fdc27aab4e71ac141c2a2c979f864e97395a97))
+
+##### Bug Fixes
+
+* Allow zero durations to be set for connections ([#3916](https://github.com/googleapis/java-spanner/issues/3916)) ([43ea4fa](https://github.com/googleapis/java-spanner/commit/43ea4fa68eac00801beb8e58c1eb09e9f32e5ce5))
+
+##### Documentation
+
+* Add snippet for Repeatable Read configuration at client and transaction ([#3908](https://github.com/googleapis/java-spanner/issues/3908)) ([ff3d212](https://github.com/googleapis/java-spanner/commit/ff3d212c98276c4084f44619916d0444c9652803))
+* Update SpannerSample.java to align with best practices ([#3625](https://github.com/googleapis/java-spanner/issues/3625)) ([7bfc62d](https://github.com/googleapis/java-spanner/commit/7bfc62d3d9e57242e0dfddea090208f8c65f0f8e))
+
+---
 ## 2025-06-24
 
 ### Feature

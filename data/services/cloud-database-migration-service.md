@@ -1,5 +1,17 @@
 # Cloud Database Migration Service
 
+## 2025-06-30
+
+### Announcement
+
+Database Migration Service support for heterogeneous SQL Server to PostgreSQL migrations is now generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
+
+For more information, see:
+
+* [Database Migration Service for SQL Server to Cloud SQL for PostgreSQL](https://cloud.google.com/database-migration/docs/sqlserver-to-csql-pgsql/scenario-overview)
+* [Database Migration Service for SQL Server to AlloyDB for PostgreSQL](https://cloud.google.com/database-migration/docs/sqlserver-to-alloydb/scenario-overview)
+
+---
 ## 2025-06-16
 
 ### Feature

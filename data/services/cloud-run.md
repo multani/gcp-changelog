@@ -1,5 +1,12 @@
 # Cloud Run
 
+## 2025-06-30
+
+### Feature
+
+You can [apply maximum instance configuration](https://cloud.google.com/run/docs/configuring/max-instances#service-vs-revision-level) at the service level (in Preview).
+
+---
 ## 2025-06-25
 
 ### Feature

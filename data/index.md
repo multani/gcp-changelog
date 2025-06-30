@@ -27,6 +27,7 @@
 - [Assured Workloads](services/assured-workloads.md)
 - [BigQuery](services/bigquery.md)
 - [Bigtable](services/bigtable.md)
+- [Certificate Authority Service](services/certificate-authority-service.md)
 - [Cloud Asset Inventory](services/cloud-asset-inventory.md)
 - [Cloud Billing](services/cloud-billing.md)
 - [Cloud Build](services/cloud-build.md)

@@ -1,5 +1,12 @@
 # Datastream
 
+## 2025-06-30
+
+### Feature
+
+Datastream is now available in the `northamerica-south1` (Mexico) region. For the list of all available regions, see [IP allowlists and regions](https://cloud.google.com/datastream/docs/ip-allowlists-and-regions).
+
+---
 ## 2025-06-23
 
 ### Feature

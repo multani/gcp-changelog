@@ -1,5 +1,16 @@
 # BigQuery
 
+## 2025-07-01
+
+### Feature
+
+You can now [update a Cloud KMS encryption key](https://cloud.google.com/bigquery/docs/customer-managed-encryption#key_rotation) by updating the table with the same key. This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+### Feature
+
+You can use the [`@@location` system variable](https://cloud.google.com/bigquery/docs/reference/system-variables) to set the location in which to run a query. This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+---
 ## 2025-06-30
 
 ### Libraries

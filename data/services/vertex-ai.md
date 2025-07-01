@@ -1,5 +1,24 @@
 # Vertex AI
 
+## 2025-06-30
+
+### Deprecated
+
+Mistral Nemo, which is offered as a Model as a Service (MaaS) model in Model Garden, is deprecated. For details, see [Model as a Service (MaaS) deprecations](https://cloud.google.com/vertex-ai/generative-ai/docs/deprecations/partner-models).
+
+### Deprecated
+
+Anthropic's Claude 3 Opus, which is offered as a Model as a Service (MaaS) model in Model Garden, is deprecated. For details, see [Model as a Service (MaaS) deprecations](https://cloud.google.com/vertex-ai/generative-ai/docs/deprecations/partner-models).
+
+### Feature
+
+Vertex AI online inference now offers Preview support of PSC service automation that can automatically create PSC endpoints for dedicated private endpoints. For more information, see [Create the online inference endpoint with PSC automation](https://cloud.google.com/vertex-ai/docs/predictions/private-service-connect#create-endpoint-with-automation).
+
+### Feature
+
+Vertex AI now offers GA support of Private Service Connect Interface and includes Private DNS Peering. For more information, see [Use Private Service Connect interface for Vertex AI Training](https://cloud.google.com/vertex-ai/docs/training/psc-i-egress).
+
+---
 ## 2025-06-27
 
 ### Feature

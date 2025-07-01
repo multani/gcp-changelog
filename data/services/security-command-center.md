@@ -1,5 +1,39 @@
 # Security Command Center
 
+## 2025-06-30
+
+### Feature
+
+You can download risk reports as PDFs. Risk reports help you understand the results of the attack path simulations (virtual red teaming) that Security Command Center runs. This feature is in [Preview](http://cloud.google.com/products#product-launch-stages) and is available for customers on the Enterprise or Premium service tiers. For more information, see [Risk reports overview](https://cloud.google.com/security-command-center/docs/risk-reports-overview).
+
+### Feature
+
+The following [Virtual Machine Threat Detection](https://cloud.google.com/security-command-center/docs/concepts-vm-threat-detection-overview) detectors are in [General Availability](https://cloud.google.com/products#product-launch-stages).
+
+* `Defense Evasion: Unexpected ftrace handler`
+* `Defense Evasion: Unexpected interrupt handler`
+* `Defense Evasion: Unexpected kernel modules`
+* `Defense Evasion: Unexpected kernel read-only data modification`
+* `Defense Evasion: Unexpected kprobe handler`
+* `Defense Evasion: Unexpected processes in runqueue`
+* `Defense Evasion: Unexpected system call handler`
+
+### Deprecated
+
+The `Defense Evasion: Unexpected kernel code modification` detector of Virtual Machine Threat Detection is shut down. For more information, see [Detector shutdowns](https://cloud.google.com/security-command-center/docs/deprecations).
+
+---
+## 2025-06-27
+
+### Changed
+
+The following [Event Threat Detection](https://cloud.google.com/security-command-center/docs/concepts-event-threat-detection-overview) detectors have been released to [GA](https://cloud.google.com/products#product-launch-stages).
+
+* `Exfiltration: Cloud SQL Data Exfiltration`
+* `Credential Access: CloudDB Failed login from Anonymizing Proxy IP`
+* `Initial Access: CloudDB Successful login from Anonymizing Proxy IP`
+
+---
 ## 2025-06-20
 
 ### Changed

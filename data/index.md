@@ -92,6 +92,7 @@
 - [Resource Manager](services/resource-manager.md)
 - [SAP on Google Cloud](services/sap-on-google-cloud.md)
 - [Security Command Center](services/security-command-center.md)
+- [Sensitive Data Protection](services/sensitive-data-protection.md)
 - [Service Extensions](services/service-extensions.md)
 - [Spanner](services/spanner.md)
 - [Text-to-Speech](services/text-to-speech.md)

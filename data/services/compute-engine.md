@@ -1,5 +1,21 @@
 # Compute Engine
 
+## 2025-06-30
+
+### Feature
+
+**Generally available**: You can now modify licenses attached to your disks. Previously, licenses on disk resources were immutable. You had to delete and recreate disks, or engage our support team to change licenses.
+
+This feature provides greater flexibility for managing your disk licenses. You can now:
+
+* Append, remove, replace, and view the history of license updates.
+* Perform in-place license upgrades, such as [Ubuntu to Ubuntu Pro](https://cloud.google.com/compute/docs/images/premium/ubuntu-pro/upgrade-from-ubuntu), using the `gcloud` CLI and REST.
+* [Switch from PAYG to BYOS billing](https://cloud.google.com/compute/docs/licenses/switch-from-payg-to-byos) models.
+* Review [license changes and restrictions](https://cloud.google.com/compute/docs/licenses/license-changes-and-restrictions) and [append a RHEL ELS](https://cloud.google.com/compute/docs/images/premium/rhel/append-els-licenses) license to a newer version.
+
+For more information on how to manage licenses, see [Manage licenses](https://cloud.google.com//compute/docs/licenses/manage).
+
+---
 ## 2025-06-27
 
 ### Feature

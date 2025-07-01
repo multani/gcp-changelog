@@ -1,5 +1,19 @@
 # Google SecOps SIEM
 
+## 2025-06-30
+
+### Changed
+
+[Data tables](https://cloud.google.com/chronicle/docs/investigation/data-tables) are multicolumn constructs that let you input your own data into Google SecOps. You can create or import data tables to your Google SecOps account using the Google SecOps UI, the Data Tables API, or by using YARA-L queries in rules. This feature is now available to all customers.
+
+What's new for this release:
+
+* Multiple web interface enhancements have been made, including a new default table view for data table management.
+* Support for the `number` data type is now available for data table columns.
+* Support for repeated fields in data table columns.
+* The [Limitations](https://cloud.google.com/chronicle/docs/investigation/data-tables#limitations) section has additional details.
+
+---
 ## 2025-06-26
 
 ### Announcement

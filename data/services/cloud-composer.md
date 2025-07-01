@@ -2,10 +2,6 @@
 
 ## 2025-06-23
 
-### Announcement
-
-A new Cloud Composer release has started on **June 23, 2025**. Get ready for upcoming changes and features as we roll out the new release to all regions. This release is in progress at the moment. Listed changes and features might not be available in some regions yet.
-
 ### Feature
 
 Improved the startup times of Airflow workers for environments that have a large number of custom PyPI packages installed.

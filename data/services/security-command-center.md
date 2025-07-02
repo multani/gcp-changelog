@@ -1,5 +1,17 @@
 # Security Command Center
 
+## 2025-07-01
+
+### Changed
+
+Security Command Center now supports the [detection of Chokepoints](https://cloud.google.com/security-command-center/docs/toxic-combinations-overview) for the following cloud service provider platforms:
+
+* Amazon Web Services (AWS)
+* Microsoft Azure
+
+Support for Chokepoints with Microsoft Azure and AWS is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-06-30
 
 ### Feature

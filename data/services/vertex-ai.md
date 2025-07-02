@@ -1,5 +1,12 @@
 # Vertex AI
 
+## 2025-07-01
+
+### Feature
+
+The global endpoint is generally available (GA) for Anthropic's Claude Opus 4. For details, see [Global endpoint](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/locations#global-endpoint).
+
+---
 ## 2025-06-30
 
 ### Deprecated

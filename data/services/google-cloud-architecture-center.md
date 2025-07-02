@@ -1,5 +1,12 @@
 # Google Cloud Architecture Center
 
+## 2025-07-01
+
+### Feature
+
+(New guide) [GraphRAG infrastructure for generative AI using Vertex AI and Spanner Graph](https://cloud.google.com/architecture/gen-ai-graphrag-spanner): Shows how to design infrastructure for GraphRAG-capable generative AI applications in Google Cloud by using Vertex AI and Spanner Graph.
+
+---
 ## 2025-06-02
 
 ### Feature

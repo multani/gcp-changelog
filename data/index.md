@@ -90,6 +90,7 @@
 - [Network Security Integration](services/network-security-integration.md)
 - [Oracle Database@Google Cloud](services/oracle-database-google-cloud.md)
 - [Policy Controller](services/policy-controller.md)
+- [Policy Intelligence](services/policy-intelligence.md)
 - [Pub/Sub](services/pub-sub.md)
 - [Resource Manager](services/resource-manager.md)
 - [SAP on Google Cloud](services/sap-on-google-cloud.md)

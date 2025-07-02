@@ -1,5 +1,76 @@
 # Google Cloud Contact Center as a Service
 
+## 2025-07-02
+
+### Announcement
+
+**Version 3.36 is released**
+
+All release notes published on this date are part of version 3.36.
+
+The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see [Deployment schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**Configure storage of Screen Share recordings**
+
+You can now configure how long to store Screen Share recordings in your external storage settings. You can also now store Screen Share recordings that originated from the Screen Share adapter.
+
+Administrators: The **CRM Comments Creation Details** pane at **Settings > Operation Management** has new **Post Cobrowse recording link to CRM record** settings. You need to contact Google support to enable Screen Share recordings.
+
+For more information, see [Set up external storage for CRMs](https://cloud.google.com/contact-center/ccai-platform/docs/crm-external-storage).
+
+### Feature
+
+**Restrict auto-assignment for email queues**
+
+You can now configure email queues so that incoming emails are auto-assigned only during queue operating hours or to agents who are signed in.
+
+Administrators: The **Auto assignment** dialog at **Settings > Queue > Email Edit/View > [queue name] > Automatic assignment > Configure** has two new checkboxes.
+
+For more information, see [Email auto assignment](https://cloud.google.com/contact-center/ccai-platform/docs/email-channel-config#email-auto-assignment).
+
+### Feature
+
+**Salesforce: New closed record options for scheduled calls**
+
+If you've integrated Google Cloud CCaaS with the Salesforce CRM, you can configure how your instance handles scheduled calls for closed records. Here are the configuration options that are available with Salesforce integrations:
+
+* **Don't look up record status**. Your instance doesn't look up record status and makes the scheduled call regardless of whether the record is open or closed.
+* **Look up record status and reopen closed records**. Your instance looks up record status before making a scheduled call and reopens records that are closed.
+* **Look up record status and cancel scheduled calls for closed records**. Your instance looks up record status before making a scheduled call and cancels scheduled calls for records that are closed.
+
+Administrators: The **CRM Record Creation Details** pane at **Settings > Operation Management** has new settings at **Closed record options when initiating an API-scheduled call**.
+
+For more information, see [Schedule calls with Salesforce](https://cloud.google.com/contact-center/ccai-platform/docs/schedule-calls-salesforce).
+
+### Fixed
+
+The following issues were addressed in this release:
+
+* Fixed an issue where calls weren't being assigned to the correct agent in Google Cloud CCaaS reporting.
+* Fixed an issue where calls weren't being assigned to the correct agent in the CRM.
+* Fixed an issue where the communication between a virtual task assistant and an end-user was not included in the Agent Assist live transcript in the agent adapter.
+* Fixed an issue where agent outbound calls generated incorrect URLs in reporting. URLs contained `ticket` instead of `tickets`.
+* Fixed an issue where newly created global contact list destinations were not available in the **Overcapacity Deflection** settings for IVR queues.
+* Fixed an issue where the `on_email_thread_created` event listener was mistakenly logging customer names and email addresses.
+* Fixed an issue where uploading a new overcapacity deflection message didn't replace the existing message.
+* Fixed an issue where agents were not being assigned chat sessions while routing was configured for deltacast.
+* Fixed an issue where attachments were lost when: (1) A chat session was transfered to another agent, or (2) After a chat auto-dismissed, an end-user restarted the chat with the same agent in the same queue.
+* Fixed an issue where chats didn't time out after being inactive for longer than the chat timeout setting for the queue.
+* Fixed an issue where agents who were removed from a chat session using the **Connected Chats** page were not fully disconnected from the session. These agents remained in the conversation tile, couldn't remove themselves from the session, and couldn't receive new chats.
+* Fixed an issue where chats initiated outside of working hours generated incorrect chat transcripts. Instead of indicating that the support center was closed, the transcipts indicated that customer support was experiencing high volume.
+* Fixed an issue where an external agent and an end-user couldn't communicate after an internal agent did the following: (1) Answered the call, (2) Put the end-user on hold, (3) tranferred the call to a queue with auto redirect to an external number, and (4) failed to release the hold before leaving the call.
+* Fixed an issue where end-users with a blocked phone number were able to contact support using chat.
+* Fixed an issue where the global disposition list appeared in the chat adapter during wrap-up instead of the disposition list for the agent's queue.
+* Fixed an issue where a barge-in event interrupted an agent's audio.
+* Fixed an issue where call session recordings were either not being sent to external storage or they were sent in the wrong file format.
+* Fixed an issue in advanced reporting dashboards where chats appeared in the chat waiting menu even after the chat sessions ended.
+* Fixed an issue where the agent desktop translations in French (Canada) and Japanese were not complete.
+* Fixed an issue where the system was generating duplicate After Call Work records for a single wrap-up.
+* Fixed an issue where bulk upload containing new users assigned to teams failed.
+
+---
 ## 2025-06-26
 
 ### Announcement

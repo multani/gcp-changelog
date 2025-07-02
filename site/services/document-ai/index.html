@@ -512,8 +512,15 @@
 
 
 <h1 id="document-ai">Document AI</h1>
-<h2 id="2025-06-19">2025-06-19</h2>
+<h2 id="2025-06-30">2025-06-30</h2>
 <h3 id="feature">Feature</h3>
+<p><a href="https://cloud.google.com/document-ai/docs/ce-with-genai">Custom Extractor</a> model <a href="https://cloud.google.com/document-ai/docs/processors-list#processor_cde"><code>pretrained-foundation-model-v1.5-2025-05-05</code></a> is in General Availability (<a href="https://cloud.google.com/products/#product-launch-stages">GA</a>) and has fine-tuning available for the US and EU.</p>
+<p>From version v1.4 and later, we will use a new quota for online processing called <a href="https://cloud.google.com/document-ai/quotas#quotas_list"><code>Number of online process document pages per minute per processor type and model version</code></a>. This quota will be enforced at a per-page and per-foundation model level. There will be no change to the batch processing quota.</p>
+<p>These can be enabled in the console when creating labels and by using the <a href="https://cloud.google.com/document-ai/docs/reference/rpc/google.cloud.documentai.v1#entitytype"><code>DocumentSchema.EntityType</code></a>.</p>
+<p>For more information, read <a href="https://cloud.google.com/document-ai/docs/manage-processor-versions#import">Managing processor versions</a>.</p>
+<hr />
+<h2 id="2025-06-19">2025-06-19</h2>
+<h3 id="feature_1">Feature</h3>
 <p>We've increased the maximum file size for <a href="https://cloud.google.com/document-ai/docs/reference/rest/v1/projects.locations.processors/process">online processing</a> requests from 20 MB to 40 MB. This applies to all types of processors.</p>
 <p>For more information, see the Document AI <a href="https://cloud.google.com/document-ai/limits#content_limits">limits</a> page.</p>
 <hr /></div>
@@ -527,6 +534,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#document-ai">Document AI</a></li>
+          <li class="nav-item">
+            <a href="#2025-06-30" class="nav-link">2025-06-30</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-06-19" class="nav-link">2025-06-19</a>
           </li>

@@ -48,6 +48,7 @@
 - [Cloud Run](services/cloud-run.md)
 - [Cloud Run functions](services/cloud-run-functions.md)
 - [Cloud SQL for MySQL](services/cloud-sql-for-mysql.md)
+- [Cloud SQL for PostgreSQL](services/cloud-sql-for-postgresql.md)
 - [Cloud SQL for SQL Server](services/cloud-sql-for-sql-server.md)
 - [Cloud Service Mesh](services/cloud-service-mesh.md)
 - [Cloud Storage](services/cloud-storage.md)

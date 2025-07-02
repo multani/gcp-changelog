@@ -10,6 +10,14 @@ You can now [update a Cloud KMS encryption key](https://cloud.google.com/bigquer
 
 You can use the [`@@location` system variable](https://cloud.google.com/bigquery/docs/reference/system-variables) to set the location in which to run a query. This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
 
+### Feature
+
+BigQuery now supports the following Apache Hadoop migration features in [Preview](https://cloud.google.com/products#product-launch-stages):
+
+* [Use the `dwh-migration-dumper` tool to migrate the metadata](https://cloud.google.com/bigquery/docs/hadoop-metadata) necessary for a Hadoop permissions and data migration.
+* [Migrate permissions from Apache Hadoop, Apache Hive, and Ranger HDFS](https://cloud.google.com/bigquery/docs/hadoop-permissions-migration) to BigQuery.
+* [Migrate table data and metadata from your Hadoop clusters](https://cloud.google.com/bigquery/docs/hadoop-transfer) to BigQuery.
+
 ---
 ## 2025-06-30
 

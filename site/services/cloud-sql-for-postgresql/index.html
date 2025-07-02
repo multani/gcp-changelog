@@ -8,7 +8,7 @@
       
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <title>Cloud SQL for SQL Server - Google Cloud Platform Changelog (unofficial, by products)</title>
+      <title>Cloud SQL for PostgreSQL - Google Cloud Platform Changelog (unofficial, by products)</title>
       <script src="../../dist/bundle.js"></script>
     
   </head>
@@ -235,11 +235,11 @@
   </li>
                             
   <li>
-    <a href="../cloud-sql-for-postgresql/" class="dropdown-item">Cloud SQL for PostgreSQL</a>
+    <a href="./" class="dropdown-item active">Cloud SQL for PostgreSQL</a>
   </li>
                             
   <li>
-    <a href="./" class="dropdown-item active">Cloud SQL for SQL Server</a>
+    <a href="../cloud-sql-for-sql-server/" class="dropdown-item">Cloud SQL for SQL Server</a>
   </li>
                             
   <li>
@@ -485,12 +485,12 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" rel="next" href="../cloud-sql-for-postgresql/">
+                  <a class="nav-link" rel="next" href="../cloud-sql-for-mysql/">
                     <i class="fa fa-arrow-left"></i> Previous
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" rel="prev" href="../cloud-storage/">
+                  <a class="nav-link" rel="prev" href="../cloud-sql-for-sql-server/">
                     Next <i class="fa fa-arrow-right"></i>
                   </a>
                 </li>
@@ -512,20 +512,19 @@
       
       
         <li class="breadcrumb-item active" aria-current="page">
-          Cloud SQL for SQL Server
+          Cloud SQL for PostgreSQL
         </li>
       
     </ol>
   </nav>
 
 
-<h1 id="cloud-sql-for-sql-server">Cloud SQL for SQL Server</h1>
-<h2 id="2025-05-28">2025-05-28</h2>
+<h1 id="cloud-sql-for-postgresql">Cloud SQL for PostgreSQL</h1>
+<h2 id="2025-07-01">2025-07-01</h2>
 <h3 id="feature">Feature</h3>
-<p>Cloud SQL for SQL Server now offers the maximum server memory recommender.</p>
-<p>Database instances running with an allocation of memory that's either too low or too high might experience performance issues.</p>
-<p>The <code>max server memory (mb)</code> flag limits the amount of memory that Cloud SQL can allocate for its internal pools. You can manually set a value for this flag, or omit the flag and let Cloud SQL manage memory limits for you automatically.</p>
-<p>For more information, see <a href="https://cloud.google.com/sql/docs/sqlserver/recommender-maximum-server-memory">Optimize maximum server memory usage</a>.</p>
+<p>The write endpoint feature for Cloud SQL Enterprise Plus edition instances is now <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA). This endpoint is a global domain name service (DNS) name and resolves to the IP address of the current primary Cloud SQL instance that's enabled with private services access.</p>
+<p>By using a write endpoint, you can avoid having to make application connection changes after performing a switchover or replica failover operation to test or mitigate a regional failure.</p>
+<p>For more information, see <a href="https://cloud.google.com/sql/docs/postgres/connect-to-instance-using-write-endpoint">Connect to an instance using a write endpoint</a>.</p>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
   <div class="navbar-header">
@@ -536,9 +535,9 @@
 
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
-        <li class="nav-item main"><a class="nav-link" href="#cloud-sql-for-sql-server">Cloud SQL for SQL Server</a></li>
+        <li class="nav-item main"><a class="nav-link" href="#cloud-sql-for-postgresql">Cloud SQL for PostgreSQL</a></li>
           <li class="nav-item">
-            <a href="#2025-05-28" class="nav-link">2025-05-28</a>
+            <a href="#2025-07-01" class="nav-link">2025-07-01</a>
           </li>
     </ul>
   </div>

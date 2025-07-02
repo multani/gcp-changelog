@@ -1,5 +1,21 @@
 # Cloud Composer
 
+## 2025-07-02
+
+### Changed
+
+Cloud Composer 1 and Cloud Composer 2 environments with version 2.0.x are **approaching their end of life**. We're planning to deprecate them in the following way:
+
+* Starting **September 15, 2025**, you will no longer be able to create new Cloud Composer 1 environments.
+* On **September 15, 2026**, all Cloud Composer 1 and Cloud Composer 2 version 2.0.x environments will reach their planned end of life, and you **won't be able to use them**.
+
+Cloud Composer 2 environments with versions later than 2.1.0 and all Cloud Composer 3 environments are not affected by this deprecation.
+
+We recommend planning
+[migration to Cloud Composer 3](https://cloud.google.com/composer/docs/latest/migrate-composer-1-to-3)
+or upgrading your Cloud Composer 2 environments to a later version.
+
+---
 ## 2025-06-23
 
 ### Feature

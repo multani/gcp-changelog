@@ -101,6 +101,7 @@
 - [Service Extensions](services/service-extensions.md)
 - [Spanner](services/spanner.md)
 - [Text-to-Speech](services/text-to-speech.md)
+- [VPC Service Controls](services/vpc-service-controls.md)
 - [Vertex AI](services/vertex-ai.md)
 - [Vertex AI Workbench](services/vertex-ai-workbench.md)
 - [Virtual Private Cloud](services/virtual-private-cloud.md)

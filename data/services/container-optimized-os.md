@@ -1,5 +1,41 @@
 # Container Optimized OS
 
+## 2025-06-30
+
+### Changed
+
+
+
+### cos-121-18867-90-75
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.93](https://cos.googlesource.com/third_party/kernel/+/25875e54e8fcc5831f6572e7bd367a70ef85b37c ) | v27.5.1 | v2.0.4 | [See List](https://storage.googleapis.com/cos-tools/18867.90.75/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Added support for the Lustre 2.14.0\_p212 drivers.
+
+### Fixed
+
+Upgraded sys-apps/less to v679.
+
+### Security
+
+Upgrade libarchive to version 3.8.1. This fixes CVE-2025-5914.
+
+### Security
+
+Upgraded elfutils to version 0.193. This fixes CVE-2025-1365, CVE-2025-1371, CVE-2025-1372, and CVE-2025-1377.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811798 -> 811807
+
+---
 ## 2025-06-23
 
 ### Changed

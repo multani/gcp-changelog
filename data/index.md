@@ -80,6 +80,7 @@
 - [Google Distributed Cloud (software only) for bare metal](services/google-distributed-cloud--software-only--for-bare-metal.md)
 - [Google Kubernetes Engine](services/google-kubernetes-engine.md)
 - [Google SecOps](services/google-secops.md)
+- [Google SecOps Marketplace](services/google-secops-marketplace.md)
 - [Google SecOps SIEM](services/google-secops-siem.md)
 - [Google SecOps SOAR](services/google-secops-soar.md)
 - [Identity and Access Management](services/identity-and-access-management.md)

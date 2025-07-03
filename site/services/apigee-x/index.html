@@ -674,6 +674,16 @@
 <li>Upgraded Salesforce API version from 53.0 to 62.0 (<a href="https://cdap.atlassian.net/browse/PLUGIN-1891">PLUGIN-1891</a>).</li>
 <li>Added a retry mechanism for all Salesforce API calls from the Salesforce plugin (<a href="https://cdap.atlassian.net/browse/PLUGIN-1892">PLUGIN-1892</a>).</li>
 </ul>
+<h2 id="cloud-monitoring">Cloud Monitoring</h2>
+<h3 id="feature_7">Feature</h3>
+<p>You can now add treemap widgets to your custom dashboards. Treemaps display the
+most recent value of aggregated data as a series of nested rectangles, the
+color saturation of a rectangle is proportional to the represented value.
+For more information, see the following:</p>
+<ul>
+<li><a href="https://cloud.google.com/monitoring/charts#dashboard_with_a_treemap_widget">Display the most recent value as a treemap</a></li>
+<li><a href="https://cloud.google.com/monitoring/dashboards/api-examples#dashboard_with_a_treemap_widget">API: Dashboard with a Treemap widget</a></li>
+</ul>
 <h2 id="cloud-storage">Cloud Storage</h2>
 <h3 id="libraries_2">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
@@ -700,7 +710,7 @@
 <li><strong>storage/internal:</strong> Add note that managedFolders are supported for GetIamPolicy and SetIamPolicy (<a href="https://github.com/googleapis/google-cloud-go/commit/d8ae6874a54b48fce49968664f14db63c055c6e2">d8ae687</a>)</li>
 </ul>
 <h2 id="compute-engine">Compute Engine</h2>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p><strong>Preview</strong>: The general-purpose C4D machine series offers bare metal (<code>-metal</code>) machine types with 384 vCPUs. Bare metal instances let you create an instance with direct access to the machine's CPU and memory, without a virtualization layer in the middle. To learn more, see <a href="https://cloud.google.com/compute/docs/general-purpose-machines#c4d_series">C4D machine series</a>. For information about bare metal instances, including regional availability, see <a href="https://cloud.google.com/compute/docs/instances/bare-metal-instances">Bare metal instances on Compute Engine</a>.</p>
 <h2 id="container-optimized-os">Container Optimized OS</h2>
 <h3 id="changed_6">Changed</h3>
@@ -738,9 +748,9 @@ new services like <code>google-guest-compat-manager.service</code> and
 <code>gce_compat_metadata_script_runner</code>.</p>
 <h3 id="changed_8">Changed</h3>
 <p>Updated the Linux kernel to v6.6.92.</p>
-<h3 id="feature_8">Feature</h3>
-<p>Supported NVIDIA MFT Tools.</p>
 <h3 id="feature_9">Feature</h3>
+<p>Supported NVIDIA MFT Tools.</p>
+<h3 id="feature_10">Feature</h3>
 <p>Injected IMEX channel char device for GB200 GPUs.</p>
 <h3 id="fixed_2">Fixed</h3>
 <p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
@@ -935,7 +945,7 @@ new services like <code>google-guest-compat-manager.service</code> and
 <h3 id="security_18">Security</h3>
 <p>Fixed KCTF-8478a72 in the Linux kernel.</p>
 <h2 id="google-cloud-architecture-center">Google Cloud Architecture Center</h2>
-<h3 id="feature_10">Feature</h3>
+<h3 id="feature_11">Feature</h3>
 <p>(New guide) <a href="https://cloud.google.com/architecture/optimize-ai-ml-workloads-managed-lustre">Optimize AI and ML workloads with Google Cloud Managed Lustre</a>: Shows how to use Managed Lustre to optimize the performance of AI and ML workloads.</p>
 <h2 id="policy-controller">Policy Controller</h2>
 <h3 id="changed_14">Changed</h3>
@@ -956,10 +966,10 @@ new services like <code>google-guest-compat-manager.service</code> and
 <li>Update documentation for JavaScriptUDF to indicate that the <code>message_id</code> metadata field is optional instead of required (<a href="https://github.com/googleapis/python-pubsub/issues/1380">#1380</a>) (<a href="https://github.com/googleapis/python-pubsub/commit/be9005412fea06bea917c8b6861546b7e6c62a1e">be90054</a>)</li>
 <li>Update readme links (<a href="https://github.com/googleapis/python-pubsub/issues/1409">#1409</a>) (<a href="https://github.com/googleapis/python-pubsub/commit/77ba05d4ba5b84a25c1a07c5397bbc184fa6041d">77ba05d</a>)</li>
 </ul>
-<h3 id="feature_11">Feature</h3>
+<h3 id="feature_12">Feature</h3>
 <p>General availability: Pub/Sub now offers Single Message Transforms (SMTs) that enable lightweight modifications to message data and attributes directly within Pub/Sub. SMTs can be set as properties of topics or subscriptions. The change is being rolled out in a phased manner over the rest of the week. For more information about SMTs, see <a href="https://cloud.google.com/pubsub/docs/smts/smts-overview">Single Message Transforms (SMTs) overview</a>.</p>
 <h2 id="spanner">Spanner</h2>
-<h3 id="feature_12">Feature</h3>
+<h3 id="feature_13">Feature</h3>
 <p>BigQuery now supports using <a href="https://cloud.google.com/bigquery/docs/spanner-external-datasets">Spanner external datasets</a> with <a href="https://cloud.google.com/bigquery/docs/authorized-views">authorized views</a>, <a href="https://cloud.google.com/bigquery/docs/authorized-routines">authorized routines</a>, and <a href="https://cloud.google.com/bigquery/docs/create-cloud-resource-connection">Cloud resource connections</a>. This feature is <a href="https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages">generally available</a> (GA).</p>
 <h3 id="libraries_4">Libraries</h3>
 <p>A monthly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
@@ -1101,7 +1111,7 @@ new services like <code>google-guest-compat-manager.service</code> and
 <h2 id="2025-05-30">2025-05-30</h2>
 <h3 id="announcement_2">Announcement</h3>
 <p>On May 30, 2025 we released an updated version of Apigee.</p>
-<h3 id="feature_13">Feature</h3>
+<h3 id="feature_14">Feature</h3>
 <p><strong>Announcing the general availability of Gemini Code Assist API development features in Apigee</strong></p>
 <p>With this functionality, you can accelerate your API development lifecycle within VS Code using Gemini Code Assist in Apigee. This feature allows you to use natural language prompts to design, create, iterate, and manage OpenAPI specifications with the following capabilities:</p>
 <ul>
@@ -1118,7 +1128,7 @@ new services like <code>google-guest-compat-manager.service</code> and
 <p>On May 29, 2025 we announced the shutdown schedule for the Apigee Classic UI.</p>
 <h3 id="announcement_4">Announcement</h3>
 <p>On May 29, 2025, we released an updated version of Apigee.</p>
-<h3 id="feature_14">Feature</h3>
+<h3 id="feature_15">Feature</h3>
 <p><strong>Public Preview: Apigee Extension Processor support for request and response body processing</strong></p>
 <p>When creating a load balancer service extension, you can customize the behavior of the extension processor proxy to support request body processing, response body processing, or a combination of the two.</p>
 <p>For more information, see <a href="https://cloud.google.com/apigee/docs/api-platform/service-extensions/extension-processor-quickstart#create-lb-ext">Get started with the Apigee Extension Processor</a>.</p>
@@ -1155,6 +1165,9 @@ new services like <code>google-guest-compat-manager.service</code> and
           </li>
           <li class="nav-item">
             <a href="#cloud-data-fusion" class="nav-link">Cloud Data Fusion</a>
+          </li>
+          <li class="nav-item">
+            <a href="#cloud-monitoring" class="nav-link">Cloud Monitoring</a>
           </li>
           <li class="nav-item">
             <a href="#cloud-storage" class="nav-link">Cloud Storage</a>

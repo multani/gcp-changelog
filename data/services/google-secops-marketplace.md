@@ -69,7 +69,7 @@ Refactored the code to work with updated API in the following integrations:
 **Nmap**: Version 2.0
 
 * Updated JSON Result structure in the following action:
-  + **Scan Entities action**:
+  + **Scan Entities**
 
 ### Changed
 

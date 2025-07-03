@@ -1,5 +1,16 @@
 # AI Applications
 
+## 2025-07-02
+
+### Feature
+
+**Vertex AI Search: Search for an exact match (GA)**
+
+To search for an exact match, you can enclose your search query in double quotes (`"`). For example, when you search for `"Mary had a little lamb"`, Vertex AI Search looks for the phrase exactly as it is. It doesn't return search results that contain `Mary had lamb`, which has missing words; or `a little lamb had Mary`, which has the words in a different order.
+
+This feature is Generally available when you use the [`engines.servingConfigs.search`](https://cloud.google.com/generative-ai-app-builder/docs/reference/rest/v1/projects.locations.collections.engines.servingConfigs/search) method to get search results for [custom data](https://cloud.google.com/generative-ai-app-builder/docs/preview-search-results), [media data](https://cloud.google.com/generative-ai-app-builder/docs/get-media-search-results), and [healthcare data](https://cloud.google.com/generative-ai-app-builder/docs/search-hc-data).
+
+---
 ## 2025-06-16
 
 ### Changed

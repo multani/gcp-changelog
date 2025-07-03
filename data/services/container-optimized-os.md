@@ -6,6 +6,124 @@
 
 
 
+### cos-dev-125-19126-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.94](https://cos.googlesource.com/third_party/kernel/+/ffa537805d6bb853cb6baacb2d70fb7fadba42e0 ) | v27.5.1 | v2.0.4 | [See List](https://storage.googleapis.com/cos-tools/19126.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated nvidia-container-toolkit to v1.17.7.
+
+### Changed
+
+Upgraded sys-apps/ethtool to version 6.11.
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20250605.00.
+
+### Fixed
+
+Added support for the Lustre 2.14.0\_p212 drivers.
+
+### Fixed
+
+drop marvell-pcie-ep-octeon driver
+
+### Fixed
+
+Upgraded chromeos-base/shill-client to v0.0.1-r4872.
+
+### Fixed
+
+Upgraded chromeos-base/google-breakpad to v2025.06.12.121629-r242.
+
+### Fixed
+
+Upgraded chromeos-base/shill-client to v0.0.1-r4871.
+
+### Fixed
+
+Upgraded chromeos-base/chromeos-common-script to v0.0.1-r667.
+
+### Fixed
+
+Upgraded dev-lang/go to v1.23.10.
+
+### Fixed
+
+Upgraded app-admin/sudo to v1.9.17.
+
+### Fixed
+
+Upgraded sys-apps/less to v679.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.50.1.
+
+### Fixed
+
+Upgraded sys-process/procps to v4.0.5-r2.
+
+### Fixed
+
+Upgraded sys-libs/libcap to v2.76.
+
+### Security
+
+Upgrade libarchive to version 3.8.1. This fixes CVE-2025-5914.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811773 -> 811755
+
+### Changed
+
+
+
+### cos-117-18613-263-56
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.93](https://cos.googlesource.com/third_party/kernel/+/12c0014075ea8438afd8396c473a3895a9c9dc5a ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18613.263.56/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Added support for the Lustre 2.14.0\_p212 drivers.
+
+### Fixed
+
+Upgraded sys-apps/less to v679.
+
+### Fixed
+
+Upgraded dev-libs/libusb to v1.0.29.
+
+### Security
+
+Upgrade libarchive to version 3.8.1. This fixes CVE-2025-5914.
+
+### Security
+
+Upgraded elfutils to version 0.193. This fixes CVE-2025-1365, CVE-2025-1371, CVE-2025-1372, and CVE-2025-1377.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811785 -> 811719
+
+### Changed
+
+
+
 ### cos-121-18867-90-75
 
 |  |  |  |  |
@@ -34,6 +152,64 @@ Upgraded elfutils to version 0.193. This fixes CVE-2025-1365, CVE-2025-1371, CVE
 Runtime sysctl changes:
 
 * Changed: fs.file-max: 811798 -> 811807
+
+### Changed
+
+
+
+### cos-113-18244-382-53
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.141](https://cos.googlesource.com/third_party/kernel/+/436274a3803b4d919d23b19b266c7e95ccdb4e09 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.382.53/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Upgraded dev-libs/libusb to v1.0.29.
+
+### Security
+
+Upgrade libarchive to version 3.8.1. This fixes CVE-2025-5914.
+
+### Security
+
+Upgraded elfutils to version 0.193. This fixes CVE-2025-1365, CVE-2025-1371, CVE-2025-1372, and CVE-2025-1377.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812041 -> 812035
+
+### Changed
+
+
+
+### cos-109-17800-519-40
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.141](https://cos.googlesource.com/third_party/kernel/+/80aa802c8b1dacdfd244bb9931499a2fa4fcd118 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/17800.519.40/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Upgraded dev-libs/libusb to v1.0.29.
+
+### Security
+
+Upgrade libarchive to version 3.8.1. This fixes CVE-2025-5914.
+
+### Security
+
+Upgraded elfutils to version 0.193. This fixes CVE-2025-1365, CVE-2025-1371, CVE-2025-1372, and CVE-2025-1377.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812288 -> 812258
 
 ---
 ## 2025-06-23

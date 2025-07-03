@@ -35,6 +35,7 @@
 - [Cloud Build](services/cloud-build.md)
 - [Cloud CDN](services/cloud-cdn.md)
 - [Cloud Composer](services/cloud-composer.md)
+- [Cloud DNS](services/cloud-dns.md)
 - [Cloud Data Fusion](services/cloud-data-fusion.md)
 - [Cloud Database Migration Service](services/cloud-database-migration-service.md)
 - [Cloud Healthcare API](services/cloud-healthcare-api.md)

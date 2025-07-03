@@ -1,5 +1,44 @@
 # Compute Engine
 
+## 2025-07-02
+
+### Feature
+
+**Preview**: You can reserve GPU VMs that use A4 and A3 Ultra machine types by using future reservations in calendar mode. This feature lets you reserve up to 80 GPU VMs for up to 90 days to obtain capacity for the following workloads:
+
+* Model pre-training jobs
+* Model fine-tuning jobs
+* High performance computing (HPC) simulation workloads
+* Short-term expected increases in inference workloads
+
+For more information, see [About future reservation requests in calendar mode](https://cloud.google.com/compute/docs/instances/future-reservations-calendar-mode-overview).
+
+### Feature
+
+**Generally available**: You can create Z3 VMs using smaller machine types, ranging in size from 14 to 88 vCPUs. Also, Z3 now offers `-standardlssd` and `-highlssd` predefined machine types. These new machine types have different amounts of Local SSD capacity per vCPU.
+
+When you use Local SSD disks with Z3 VMs, you can receive committed use discounts (CUDs) without needing to [attach reservations to your commitments](https://cloud.google.com/compute/docs/instances/reservations-with-commitments#committed_resources_that_require_attached_reservations).
+
+For more information, see [Storage-optimized machines](https://cloud.google.com/compute/docs/storage-optimized-machines).
+
+### Feature
+
+**Preview**: The general purpose C4 machine series now supports the following machine types on Intel's Xeon 6 processor (Granite Rapids):
+
+* C4 VMs with Titanium Local SSD attached using two new machine types:
+  + `c4-standard-*-lssd`
+  + `c4-highmem-*-lssd`
+* Three new bare metal machine types:
+  + `c4-standard-288-metal`
+  + `c4-highcpu-288-metal`
+  + `c4-highmem-288-metal`
+* C4 `standard`, `highmem`, and `highcpu` VMs with 144 and 288 vCPUs
+
+To learn more, see the [C4 machine series](https://cloud.google.com/compute/docs/general-purpose-machines#c4_series).
+
+For more information, about the attached Local SSD disks, see [Machine types that automatically attach Local SSD disks](https://cloud.google.com/compute/docs/disks/local-ssd#lssd_disks_fixed).
+
+---
 ## 2025-06-30
 
 ### Feature

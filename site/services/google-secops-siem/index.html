@@ -532,8 +532,162 @@
 
 
 <h1 id="google-secops-siem">Google SecOps SIEM</h1>
-<h2 id="2025-06-30">2025-06-30</h2>
+<h2 id="2025-07-02">2025-07-02</h2>
 <h3 id="changed">Changed</h3>
+<p>Google SecOps has updated the list of supported default parsers. Parsers are updated gradually, so it might take one to four days before you see the changes reflected in your region.</p>
+<p>The following supported default parsers have been updated. Each parser is listed by product name and <code>log_type</code> value, where applicable. This list includes both released default parsers and pending parser updates.</p>
+<ul>
+<li>1Password (<code>ONEPASSWORD</code>)</li>
+<li>Apache (<code>APACHE</code>)</li>
+<li>Arcsight CEF (<code>ARCSIGHT_CEF</code>)</li>
+<li>Aruba Switch (<code>ARUBA_SWITCH</code>)</li>
+<li>AWS Cloudtrail (<code>AWS_CLOUDTRAIL</code>)</li>
+<li>AWS CloudWatch (<code>AWS_CLOUDWATCH</code>)</li>
+<li>AWS GuardDuty (<code>GUARDDUTY</code>)</li>
+<li>AWS Lambda Function (<code>AWS_LAMBDA_FUNCTION</code>)</li>
+<li>AWS S3 Server Access (<code>AWS_S3_SERVER_ACCESS</code>)</li>
+<li>AWS VPC Flow (<code>AWS_VPC_FLOW</code>)</li>
+<li>AWS VPC Flow (CSV) (<code>AWS_VPC_FLOW_CSV</code>)</li>
+<li>Azure AD (<code>AZURE_AD</code>)</li>
+<li>Azure Application Gateway (<code>AZURE_GATEWAY</code>)</li>
+<li>Azure Firewall (<code>AZURE_FIREWALL</code>)</li>
+<li>Azure Storage Audit (<code>AZURE_STORAGE_AUDIT</code>)</li>
+<li>Azure VNET Flow (<code>AZURE_VNET_FLOW</code>)</li>
+<li>BIND (<code>BIND_DNS</code>)</li>
+<li>Blue Coat Proxy (<code>BLUECOAT_WEBPROXY</code>)</li>
+<li>Brocade Switch (<code>BROCADE_SWITCH</code>)</li>
+<li>Carbon Black (<code>CB_EDR</code>)</li>
+<li>Carbon Black App Control (<code>CB_APP_CONTROL</code>)</li>
+<li>Check Point (<code>CHECKPOINT_FIREWALL</code>)</li>
+<li>Chronicle SOAR Audit (<code>CHRONICLE_SOAR_AUDIT</code>)</li>
+<li>Cisco Application Centric Infrastructure (<code>CISCO_ACI</code>)</li>
+<li>Cisco ASA (<code>CISCO_ASA_FIREWALL</code>)</li>
+<li>Cisco Email Security (<code>CISCO_EMAIL_SECURITY</code>)</li>
+<li>Cisco Firepower NGFW (<code>CISCO_FIREPOWER_FIREWALL</code>)</li>
+<li>Cisco Internetwork Operating System (<code>CISCO_IOS</code>)</li>
+<li>Cisco IronPort (<code>CISCO_IRONPORT</code>)</li>
+<li>Cisco ISE (<code>CISCO_ISE</code>)</li>
+<li>Cisco NX-OS (<code>CISCO_NX_OS</code>)</li>
+<li>Cisco Router (<code>CISCO_ROUTER</code>)</li>
+<li>Cisco Umbrella Web Proxy (<code>UMBRELLA_WEBPROXY</code>)</li>
+<li>Cisco vManage SD-WAN (<code>CISCO_SDWAN</code>)</li>
+<li>Citrix Netscaler (<code>CITRIX_NETSCALER</code>)</li>
+<li>Claroty Continuous Threat Detection (<code>CLAROTY_CTD</code>)</li>
+<li>Cloudflare (<code>CLOUDFLARE</code>)</li>
+<li>CrowdStrike Detection Monitoring (<code>CS_DETECTS</code>)</li>
+<li>CrowdStrike Falcon (<code>CS_EDR</code>)</li>
+<li>Crowdstrike IOC (<code>CROWDSTRIKE_IOC</code>)</li>
+<li>Custom Security Data Analytics (<code>CUSTOM_SECURITY_DATA_ANALYTICS</code>)</li>
+<li>CyberArk Endpoint Privilege Manager (EPM) (<code>CYBERARK_EPM</code>)</li>
+<li>Cyberark Privilege Cloud (<code>CYBERARK_PRIVILEGE_CLOUD</code>)</li>
+<li>Darktrace (<code>DARKTRACE</code>)</li>
+<li>Datadog (<code>DATADOG</code>)</li>
+<li>Dell Switch (<code>DELL_SWITCH</code>)</li>
+<li>Elastic Defend (<code>ELASTIC_DEFEND</code>)</li>
+<li>ESET AV (<code>ESET_AV</code>)</li>
+<li>ExtraHop RevealX (<code>EXTRAHOP</code>)</li>
+<li>F5 Advanced Firewall Management (<code>F5_AFM</code>)</li>
+<li>F5 ASM (<code>F5_ASM</code>)</li>
+<li>FireEye ETP (<code>FIREEYE_ETP</code>)</li>
+<li>FireEye NX (<code>FIREEYE_NX</code>)</li>
+<li>FortiGate (<code>FORTINET_FIREWALL</code>)</li>
+<li>Fortinet FortiAnalyzer (<code>FORTINET_FORTIANALYZER</code>)</li>
+<li>Fortinet Web Application Firewall (<code>FORTINET_FORTIWEB</code>)</li>
+<li>GitHub (<code>GITHUB</code>)</li>
+<li>Guardicore Centra (<code>GUARDICORE_CENTRA</code>)</li>
+<li>H3C Comware Platform Switch (<code>H3C_SWITCH</code>)</li>
+<li>IBM Cloud Activity Tracker (<code>IBM_CLOUD_ACTIVITY_TRACKER</code>)</li>
+<li>IBM Security Verify Access (<code>IBM_SVA</code>)</li>
+<li>IBM zSecure Alert (<code>IBM_ZSECURE_ALERT</code>)</li>
+<li>Imperva (<code>IMPERVA_WAF</code>)</li>
+<li>Infoblox (<code>INFOBLOX</code>)</li>
+<li>Infoblox DHCP (<code>INFOBLOX_DHCP</code>)</li>
+<li>KnowBe4 PhishER (<code>KNOWBE4_PHISHER</code>)</li>
+<li>LastPass Password Management (<code>LASTPASS</code>)</li>
+<li>Linux Auditing System (AuditD) (<code>AUDITD</code>)</li>
+<li>Microsoft AD (<code>WINDOWS_AD</code>)</li>
+<li>Microsoft AD FS (<code>ADFS</code>)</li>
+<li>Microsoft Azure Activity (<code>AZURE_ACTIVITY</code>)</li>
+<li>Microsoft Defender for Endpoint (<code>MICROSOFT_DEFENDER_ENDPOINT</code>)</li>
+<li>Microsoft Graph API Alerts (<code>MICROSOFT_GRAPH_ALERT</code>)</li>
+<li>Microsoft IIS (<code>IIS</code>)</li>
+<li>Netskope V2 (<code>NETSKOPE_ALERT_V2</code>)</li>
+<li>NGINX (<code>NGINX</code>)</li>
+<li>Nozomi Networks Scada Guardian (<code>NOZOMI_GUARDIAN</code>)</li>
+<li>Office 365 (<code>OFFICE_365</code>)</li>
+<li>Okta (<code>OKTA</code>)</li>
+<li>Openpath (<code>OPENPATH</code>)</li>
+<li>Opnsense (<code>OPNSENSE</code>)</li>
+<li>Palo Alto Cortex XDR Alerts (<code>CORTEX_XDR</code>)</li>
+<li>Palo Alto Cortex XDR Events (<code>PAN_CORTEX_XDR_EVENTS</code>)</li>
+<li>Palo Alto Networks Firewall (<code>PAN_FIREWALL</code>)</li>
+<li>Palo Alto Panorama (<code>PAN_PANORAMA</code>)</li>
+<li>Palo Alto Prisma Access (<code>PAN_CASB</code>)</li>
+<li>Ping Federate (<code>PING_FEDERATE</code>)</li>
+<li>Ping Identity (<code>PING</code>)</li>
+<li>PostgreSQL (<code>POSTGRESQL</code>)</li>
+<li>Proofpoint Tap Alerts (<code>PROOFPOINT_MAIL</code>)</li>
+<li>Proofpoint Threat Response (<code>PROOFPOINT_TRAP</code>)</li>
+<li>Radware Web Application Firewall (<code>RADWARE_FIREWALL</code>)</li>
+<li>Red Hat OpenShift (<code>REDHAT_OPENSHIFT</code>)</li>
+<li>Remediant SecureONE (<code>REMEDIANT_SECUREONE</code>)</li>
+<li>Riverbed Steelhead (<code>STEELHEAD</code>)</li>
+<li>SailPoint IAM (<code>SAILPOINT_IAM</code>)</li>
+<li>Security Command Center Posture Violation (<code>GCP_SECURITYCENTER_POSTURE_VIOLATION</code>)</li>
+<li>Security Command Center Threat (<code>N/A</code>)</li>
+<li>Security Command Center Toxic Combination (<code>GCP_SECURITYCENTER_TOXIC_COMBINATION</code>)</li>
+<li>Symantec DLP (<code>SYMANTEC_DLP</code>)</li>
+<li>Sysdig (<code>SYSDIG</code>)</li>
+<li>Teradata DB (<code>TERADATA_DB</code>)</li>
+<li>Terraform Enterprise Audit (<code>TERRAFORM_ENTERPRISE</code>)</li>
+<li>Trend Micro Vision One (<code>TRENDMICRO_VISION_ONE</code>)</li>
+<li>Tripwire (<code>TRIPWIRE_FIM</code>)</li>
+<li>Vectra Detect (<code>VECTRA_DETECT</code>)</li>
+<li>Vectra Stream (<code>VECTRA_STREAM</code>)</li>
+<li>Versa Firewall (<code>VERSA_FIREWALL</code>)</li>
+<li>VMware AirWatch (<code>AIRWATCH</code>)</li>
+<li>VMware ESXi (<code>VMWARE_ESX</code>)</li>
+<li>Voltage (<code>VOLTAGE</code>)</li>
+<li>WatchGuard (<code>WATCHGUARD</code>)</li>
+<li>Windows DHCP (<code>WINDOWS_DHCP</code>)</li>
+<li>Windows Event (<code>WINEVTLOG</code>)</li>
+<li>Windows Event (XML) (<code>WINEVTLOG_XML</code>)</li>
+<li>Windows Hyper-V (<code>WINDOWS_HYPERV</code>)</li>
+<li>wiz.io (<code>WIZ_IO</code>)</li>
+<li>Workday (<code>WORKDAY</code>)</li>
+<li>Workspace Activities (<code>WORKSPACE_ACTIVITY</code>)</li>
+<li>Zscaler (<code>ZSCALER_WEBPROXY</code>)</li>
+<li>Zscaler CASB (<code>ZSCALER_CASB</code>)</li>
+<li>ZScaler Deception (<code>ZSCALER_DECEPTION</code>)</li>
+<li>Zscaler DLP (<code>ZSCALER_DLP</code>)</li>
+<li>Zscaler Tunnel (<code>ZSCALER_TUNNEL</code>)</li>
+</ul>
+<p>The following log types were added without a default parser. Each parser is listed by product name and <code>log_type</code> value, where applicable.</p>
+<ul>
+<li>Akamai Kona Edge Grid (<code>AKAMAI_KONA_EDGE_GRID</code>)</li>
+<li>Azure Compute (<code>AZURE_COMPUTE</code>)</li>
+<li>Bluecat Micetro IP Address Management (<code>BLUECAT_MICETRO_IPAM</code>)</li>
+<li>Cloudera Ranger (<code>CLOUDERA_RANGER</code>)</li>
+<li>Cyberark Identity (<code>CYBERARK_IDENTITY</code>)</li>
+<li>Fortinet FortiDLP (<code>FORTINET_FORTIDLP</code>)</li>
+<li>IBM Cognos Analytics (<code>IBM_COGNOS</code>)</li>
+<li>IBM Planning Analytics (<code>IBM_PA</code>)</li>
+<li>Ironclad (<code>IRONCLAD</code>)</li>
+<li>Ivanti Endpoint Manager Mobile (<code>IVANTI_ENDPOINT_MANAGER_MOBILE</code>)</li>
+<li>Mimecast Mail V2 (<code>MIMECAST_MAIL_V2</code>)</li>
+<li>Minsait Sigefi (<code>MINSAIT_SIGEFI</code>)</li>
+<li>Netskope One Secure SD-WAN (<code>NETSKOPE_SDWAN</code>)</li>
+<li>Proxmox (<code>PROXMOX</code>)</li>
+<li>Radware Bot (<code>RADWARE_BOT</code>)</li>
+<li>ScaleFusion for Windows MDM (<code>SCALEFUSION</code>)</li>
+<li>Titan SFTP Server (<code>TITAN_SFTP</code>)</li>
+<li>ZoomInfo (<code>ZOOMINFO</code>)</li>
+<li>Zscaler Email DLP Insights (<code>ZSCALER_EMAIL_DLP_INSIGHTS</code>)</li>
+</ul>
+<p>For a list of supported log types and details about default parser changes, see <a href="https://cloud.google.com/chronicle/docs/ingestion/parser-list/supported-default-parsers">Supported log types and default parsers</a>.</p>
+<hr />
+<h2 id="2025-06-30">2025-06-30</h2>
+<h3 id="changed_1">Changed</h3>
 <p><a href="https://cloud.google.com/chronicle/docs/investigation/data-tables">Data tables</a> are multicolumn constructs that let you input your own data into Google SecOps. You can create or import data tables to your Google SecOps account using the Google SecOps UI, the Data Tables API, or by using YARA-L queries in rules. This feature is now available to all customers.</p>
 <p>What's new for this release:</p>
 <ul>
@@ -655,7 +809,7 @@
 <p>There was an issue with uppercase keywords in <strong>Search</strong> and <strong>Rules Editor</strong>. They weren't being highlighted correctly. This issue has been fixed.</p>
 <hr />
 <h2 id="2025-05-29">2025-05-29</h2>
-<h3 id="changed_1">Changed</h3>
+<h3 id="changed_2">Changed</h3>
 <p>Google SecOps has updated the list of supported default parsers. Parsers are updated gradually, so it might take one to four days before you see the changes reflected in your region.</p>
 <p>The following supported default parsers have changed. Each parser is listed by product name and <code>log_type</code> value, if applicable. This list now includes both released default parsers and pending parser updates.</p>
 <ul>
@@ -793,6 +947,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-secops-siem">Google SecOps SIEM</a></li>
+          <li class="nav-item">
+            <a href="#2025-07-02" class="nav-link">2025-07-02</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-06-30" class="nav-link">2025-06-30</a>
           </li>

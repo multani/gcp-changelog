@@ -1,5 +1,16 @@
 # SAP on Google Cloud
 
+## 2025-07-03
+
+### Announcement
+
+**ABAP SDK for Google Cloud version 1.11 (On-premises or any cloud edition)**
+
+Version 1.11 of the on-premises or any cloud edition of the ABAP SDK for Google Cloud is generally available (GA). This version introduces support for Anthropic Claude models through the Vertex AI SDK for ABAP, integration with the Model Armor API for LLM prompt security, and the WIF authentication validation feature. In addition, this version includes minor enhancements and bug fixes.
+
+For more information, see [What's new with the on-premises or any cloud edition of the ABAP SDK for Google Cloud](https://cloud.google.com/solutions/sap/docs/abap-sdk/on-premises-or-any-cloud/whats-new#version-1-11).
+
+---
 ## 2025-06-13
 
 ### Announcement

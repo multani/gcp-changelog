@@ -1,5 +1,12 @@
 # Cloud Storage
 
+## 2025-07-02
+
+### Feature
+
+[Bucket IP filtering](https://cloud.google.com/storage/docs/ip-filtering-overview) for Cloud Storage is now generally available ([GA](https://cloud.google.com/products#product-launch-stages)). Bucket IP filtering provides enhanced control over access to your data, allowing you to restrict incoming requests to your Cloud Storage buckets based on their source IP addresses or their Google Cloud Virtual Private Cloud.
+
+---
 ## 2025-06-30
 
 ### Libraries

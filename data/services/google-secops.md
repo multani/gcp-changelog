@@ -1,5 +1,16 @@
 # Google SecOps
 
+## 2025-07-05
+
+### Feature
+
+**Share Case Queue Filters**
+
+You can now share case queue filters with other users. These filters can be saved with specific criteria, such as assignee roles, and shared with individual users, SOC roles, or all users in your organization for quick access..
+
+For more information, see [Apply and save filters](https://cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/apply-and-save-filters).
+
+---
 ## 2025-07-02
 
 ### Changed

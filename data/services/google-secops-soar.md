@@ -1,5 +1,29 @@
 # Google SecOps SOAR
 
+## 2025-07-06
+
+### Announcement
+
+Release 6.3.52 is being rolled out to the first phase of regions as listed [here](https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains the following feature:
+
+### Feature
+
+**Share Case Queue Filters**
+
+You can now share case queue filters with other users. These filters can be saved with specific criteria, such as assignee roles, and shared with individual users, SOC roles, or all users in your organization for quick access..
+
+For more information, see [Apply and save filters](https://cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/apply-and-save-filters).
+
+---
+## 2025-07-05
+
+### Announcement
+
+[Release 6.3.51](https://cloud.google.com/chronicle/docs/soar/release-notes#June_29_2025) is now available for all regions.
+
+---
 ## 2025-06-29
 
 ### Announcement

@@ -1,5 +1,12 @@
 # Dataproc
 
+## 2025-07-07
+
+### Feature
+
+The [Cluster Scheduled Stop](https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/scheduled-stop) feature is available in [preview](https://cloud.google.com/products#product-launch-stages). You can use this feature to stop clusters after a specified idle period, at a specified future time, or after a specified period from the cluster creation or update request.
+
+---
 ## 2025-07-01
 
 ### Announcement

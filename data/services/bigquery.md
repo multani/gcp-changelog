@@ -1,5 +1,13 @@
 # BigQuery
 
+## 2025-07-07
+
+### Feature
+
+You can now use your Google Account user credentials to authorize the execution of a data preparation in development. For more information, see
+[Manually run a data preparation in development](https://cloud.google.com/bigquery/docs/orchestrate-data-preparations#run-undeployed-manually). This feature is in [preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-07-01
 
 ### Feature

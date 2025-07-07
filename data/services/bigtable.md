@@ -1,5 +1,12 @@
 # Bigtable
 
+## 2025-07-07
+
+### Changed
+
+When you [undelete a table](https://cloud.google.com/bigtable/docs/managing-tables#undelete-table), Bigtable automatically enables deletion protection for that table.
+
+---
 ## 2025-06-30
 
 ### Libraries

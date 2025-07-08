@@ -1,5 +1,19 @@
 # AI Hypercomputer
 
+## 2025-07-07
+
+### Feature
+
+**Preview**: You can use future reservations in calendar mode to obtain resources for up to 90 days. By creating a request in calendar mode, you can reserve up to 80 GPU VMs for a future date and time. Then, you can use that capacity to run the following workloads:
+
+* Model pre-training
+* Model fine-tuning
+* Simulations
+* Inference
+
+For more information, see [Choose a consumption option](https://cloud.google.com/ai-hypercomputer/docs/consumption-models).
+
+---
 ## 2025-06-11
 
 ### Feature

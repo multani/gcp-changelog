@@ -69,6 +69,8 @@ The following issues were addressed in this release:
 * Fixed an issue where the agent desktop translations in French (Canada) and Japanese were not complete.
 * Fixed an issue where the system was generating duplicate After Call Work records for a single wrap-up.
 * Fixed an issue where bulk upload containing new users assigned to teams failed.
+* Fixed an issue where the chat adapter failed to appear after Nexmo VOIP initialization failed.
+* Fixed an issue where saving chat transcripts to a CRM failed.
 
 ---
 ## 2025-06-26

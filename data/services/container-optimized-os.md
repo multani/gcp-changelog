@@ -1,5 +1,24 @@
 # Container Optimized OS
 
+## 2025-07-07
+
+### Changed
+
+
+
+### cos-113-18244-382-54
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.141](https://cos.googlesource.com/third_party/kernel/+/436274a3803b4d919d23b19b266c7e95ccdb4e09 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.382.54/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Upgraded app-admin/sudo to v1.9.17\_p1. This resolves
+CVE-2025-32462 and CVE-2025-32463.
+
+---
 ## 2025-06-30
 
 ### Changed

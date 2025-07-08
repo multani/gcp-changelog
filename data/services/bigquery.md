@@ -1,5 +1,12 @@
 # BigQuery
 
+## 2025-07-08
+
+### Announcement
+
+Starting August 1, 2025, GoogleSQL will become the default dialect for queries run from the command line interface (CLI) or API. To use LegacySQL, you will need to explicitly specify it in your requests or [set the configuration setting](https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#alter_project_set_options_statement) `default_sql_dialect_option` to `'default_legacy_sql'` at the project or organization level.
+
+---
 ## 2025-07-07
 
 ### Feature

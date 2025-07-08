@@ -1,5 +1,16 @@
 # SAP on Google Cloud
 
+## 2025-07-08
+
+### Announcement
+
+**BigQuery Connector for SAP version 2.9**
+
+Version 2.9 of the BigQuery Connector for SAP is generally available (GA). This version introduces Change Data Capture (CDC) replication of SAP data into BigQuery through Pub/Sub. This replication path keeps your BigQuery tables up-to-date with the latest changes from your SAP data sources, eliminating the need for custom deduplication.
+
+For more information, see [What's new with BigQuery Connector for SAP](https://cloud.google.com/solutions/sap/docs/bq-connector/whats-new#version-2-9).
+
+---
 ## 2025-07-03
 
 ### Announcement

@@ -50,6 +50,22 @@ CVE-2025-32462 and CVE-2025-32463.
 Upgraded app-admin/sudo to v1.9.17\_p1. This resolves
 CVE-2025-32462 and CVE-2025-32463.
 
+### Changed
+
+
+
+### cos-109-17800-519-41
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.141](https://cos.googlesource.com/third_party/kernel/+/80aa802c8b1dacdfd244bb9931499a2fa4fcd118 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/17800.519.41/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Upgraded app-admin/sudo to v1.9.17\_p1. This resolves
+CVE-2025-32462 and CVE-2025-32463.
+
 ---
 ## 2025-06-30
 

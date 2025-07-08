@@ -1,5 +1,14 @@
 # Generative AI on Vertex AI
 
+## 2025-07-08
+
+### Feature
+
+**Vertex AI Agent Engine**
+
+[Vertex AI Agent Engine Memory Bank](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/memory-bank/overview) is now available in Preview. Memory Bank lets you dynamically generate long-term memories based on users' conversations with your agent.
+
+---
 ## 2025-07-03
 
 ### Feature

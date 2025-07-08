@@ -43,6 +43,14 @@ Refactored the code to work with updated API in the following integrations:
 * **ServiceNow**: Version 57.0
 * **Microsoft Graph Mail Delegated**: Version 5.0
 
+Refactored the code in the following integrations:
+
+* **Gmail**: Version 4.0
+* **Google Cloud API**: Version 6.0
+* **HTTP v2**: Version 9.0
+* **Microsoft Graph Mail**: Version 28.0
+* **Tor**: Version 7.0
+
 ---
 ## 2025-06-04
 

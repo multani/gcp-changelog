@@ -1,5 +1,14 @@
 # Generative AI on Vertex AI
 
+## 2025-07-03
+
+### Feature
+
+**Vertex AI Agent Garden**
+
+[Vertex AI Agent Garden](https://console.cloud.google.com/vertex-ai/agents/agent-garden) now supports filtering by tags.
+
+---
 ## 2025-06-27
 
 ### Feature

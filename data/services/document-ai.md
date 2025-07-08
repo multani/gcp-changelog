@@ -1,5 +1,33 @@
 # Document AI
 
+## 2025-07-04
+
+### Feature
+
+Document AI now supports [Identity and Access Management](https://cloud.google.com/iam/docs/overview) (IAM) deny policies. These policies allow you to define deny rules that prevent certain principals from using certain permissions to access Google Cloud resources, regardless of the roles they're granted.
+
+For more information, read [Deny policy](https://cloud.google.com/iam/docs/deny-overview) overview and [Document AI security and compliance](https://cloud.google.com/document-ai/docs/security).
+
+### Feature
+
+Document AI [VPC service controls](https://cloud.google.com/vpc-service-controls/docs/overview) (VPC-SC) integration now supports identity groups.
+
+For more information on setting up VPC-SC identity groups, read [Configure identity groups and third-party identities in ingress and egress rules](https://cloud.google.com/vpc-service-controls/docs/configure-identity-groups).
+
+---
+## 2025-07-03
+
+### Feature
+
+The Document AI CDE processor now supports merging the child entities of nested entities that extend across several pages. This is supported in custom extractor model [`pretrained-foundation-model-v1.5-2025-05-05`](https://cloud.google.com/document-ai/docs/processors-list#processor_cde).
+
+This change is automatically present in existing and newly created processors.
+
+For customers with existing v1.5 processors to make use of this feature, you must relabel the nested entities in different pages.
+
+To learn more about the labeling process, refer to our [Label documents](https://cloud.google.com/document-ai/docs/label-documents) documentation.
+
+---
 ## 2025-06-30
 
 ### Feature

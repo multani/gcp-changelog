@@ -1,5 +1,13 @@
 # Google Cloud VMware Engine
 
+## 2025-07-07
+
+### Feature
+
+When upgrading to Windows Server 2022 or newer images on your GCVE private clouds, you can use a combination of Windows Server BYOL for Windows Server 2019 and earlier images and on-demand licensing for Google-provided Windows Server 2022. For more information, see
+[Use a combination of BYOL and on-demand Windows Server licenses from Google](https://cloud.google.com/vmware-engine/docs/vmware-ecosystem/microsoft-licensing#combination-mode).
+
+---
 ## 2025-07-01
 
 ### Feature

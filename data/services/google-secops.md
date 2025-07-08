@@ -1,5 +1,24 @@
 # Google SecOps
 
+## 2025-07-07
+
+### Feature
+
+**Dashboards for enhanced visualizations and threat hunting**
+
+You can now use the Google SecOps Dashboards to enhance data visualization, investigations, and threat hunting.
+
+Key capabilities include:
+
+* SOAR data availability
+* Downloadable reports
+* Custom drilldowns
+* Markdown widgets
+* 51 curated dashboards covering a broad range of security categories and use cases.
+
+For more information, see [Dashboards](https://cloud.google.com/chronicle/docs/reports/native-dashboards).
+
+---
 ## 2025-07-05
 
 ### Feature

@@ -1,5 +1,17 @@
 # Virtual Private Cloud
 
+## 2025-07-08
+
+### Feature
+
+The following features of policy-based routes are available in **General Availability**:
+
+* Applying policy-based routes to IPv6 traffic
+* Using a next hop that is in a peered VPC network
+
+For more information, see [Create policy-based routes](https://cloud.google.com/vpc/docs/use-policy-based-routes#create).
+
+---
 ## 2025-06-27
 
 ### Feature

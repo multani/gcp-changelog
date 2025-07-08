@@ -6,6 +6,38 @@
 
 
 
+### cos-121-18867-90-77
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.93](https://cos.googlesource.com/third_party/kernel/+/25875e54e8fcc5831f6572e7bd367a70ef85b37c ) | v27.5.1 | v2.0.4 | [See List](https://storage.googleapis.com/cos-tools/18867.90.77/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Upgraded app-admin/sudo to v1.9.17\_p1. This resolves
+CVE-2025-32462 and CVE-2025-32463.
+
+### Changed
+
+
+
+### cos-117-18613-263-58
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.93](https://cos.googlesource.com/third_party/kernel/+/12c0014075ea8438afd8396c473a3895a9c9dc5a ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18613.263.58/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Upgraded app-admin/sudo to v1.9.17\_p1. This resolves
+CVE-2025-32462 and CVE-2025-32463.
+
+### Changed
+
+
+
 ### cos-113-18244-382-54
 
 |  |  |  |  |

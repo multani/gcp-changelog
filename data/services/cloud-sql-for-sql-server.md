@@ -1,5 +1,12 @@
 # Cloud SQL for SQL Server
 
+## 2025-07-08
+
+### Feature
+
+Cloud SQL for SQL Server now offers Active Directory support for write endpoints. For more information, see [Write endpoints across forests](https://cloud.google.com/sql/docs/sqlserver/configure-private-ip#cross-forest-trusts).
+
+---
 ## 2025-05-28
 
 ### Feature

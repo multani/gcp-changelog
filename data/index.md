@@ -99,6 +99,7 @@
 - [Resource Manager](services/resource-manager.md)
 - [SAP on Google Cloud](services/sap-on-google-cloud.md)
 - [Secret Manager](services/secret-manager.md)
+- [Secure Source Manager](services/secure-source-manager.md)
 - [Security Command Center](services/security-command-center.md)
 - [Sensitive Data Protection](services/sensitive-data-protection.md)
 - [Service Extensions](services/service-extensions.md)

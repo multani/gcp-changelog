@@ -1,5 +1,86 @@
 # Google SecOps Marketplace
 
+## 2025-07-02
+
+### Feature
+
+**Okta**: Version 9.0
+
+* The following new action has been added:
+
+  + **Send SSF to Okta**
+
+### Changed
+
+**CrowdStrike Falcon**: Version 62.0
+
+* Updated JSON Result structure in the following action:
+
+  + **List Hosts**
+
+### Changed
+
+**Google Chronicle**: Version 61.0
+
+* Updated action processing logic in the following action:
+
+  + **Execute UDM Query**
+
+### Changed
+
+**Vertex AI**: Version 3.0
+
+* **Integration**: Updated the handling of non-Google models.
+
+---
+## 2025-06-27
+
+### Changed
+
+**Siemplify**: Version 92.0
+
+* Updated action logic in the following actions:
+
+  + **Get Case Details**
+  + **Get Similar Cases**
+  + **Update Case Description**
+
+---
+## 2025-06-25
+
+### Changed
+
+Refactored the code to work with updated API in the following integrations:
+
+* **Case Federation**: Version 3.0
+* **Siemplify**: Version 91.0
+
+### Changed
+
+**Microsoft Azure Sentinel**: Version 54.0
+
+* Added an ability to not process the alert until Scheduled/NRT alert objects are available from API in the following connectors:
+
+  + **Microsoft Azure Sentinel - Incident Connector v2**
+  + **Microsoft Azure Sentinel - Incident Tracking Connector**
+
+### Changed
+
+**SentinelOneV2**: Version 39.0
+
+* Updated ontology mapping in the following connector:
+
+  + **SentinelOneV2 - Threats Connector**
+
+### Changed
+
+**Siemplify**: Version 91.0
+
+* Updated Predefined Widget in the following action:
+
+  + **Get Similar Cases**
+
+---
 ## 2025-06-18
 
 ### Changed

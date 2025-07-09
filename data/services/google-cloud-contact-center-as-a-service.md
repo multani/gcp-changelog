@@ -1,5 +1,34 @@
 # Google Cloud Contact Center as a Service
 
+## 2025-07-08
+
+### Announcement
+
+**Mobile SDK 2.13 is released**
+
+Mobile SDK 2.13 includes the following updates:
+
+* End-users can download chat transcripts to their devices during a session or after a session ends.
+* The user experience with post-session virtual assistants is improved in the following ways:
+
+  + You can configure an opt-in banner to appear for the post-session virtual assistant experience.
+  + The user interface makes it easier for an end-user to know whether they are speaking to a human agent or a post-session virtual agent.
+* End-users can navigate the user interface using keyboard shortcuts in conformance with the W3C Web Content Accessibility Guidelines.
+* You can configure your instance to let end-users skip customer satisfaction surveys.
+
+### Fixed
+
+The following issues were addressed in this release:
+
+* Android SDK:
+
+  + Fixed an issue where system messages containing an empty space were being sent, even though the message strings were set to NULL.
+* iOS SDK:
+
+  + Fixed an issue where the "Skip the human agent" button was displayed after an end-user was transferred to a virtual agent.
+  + Fixed an issue where a notification sound played for new chat messages despite the end-user disabling notifications.
+
+---
 ## 2025-07-07
 
 ### Announcement

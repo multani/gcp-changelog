@@ -42,6 +42,7 @@
 - [Cloud Healthcare API](services/cloud-healthcare-api.md)
 - [Cloud Interconnect](services/cloud-interconnect.md)
 - [Cloud Key Management Service](services/cloud-key-management-service.md)
+- [Cloud Life Sciences](services/cloud-life-sciences.md)
 - [Cloud Load Balancing](services/cloud-load-balancing.md)
 - [Cloud Location Finder](services/cloud-location-finder.md)
 - [Cloud Logging](services/cloud-logging.md)

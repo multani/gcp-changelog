@@ -4,7 +4,9 @@
 
 ### Feature
 
-**Agent mode is available in preview for Gemini Code Assist Standard and Enterprise insiders channel for VS Code**.
+
+
+### Use agent mode in Gemini Code Assist Standard and Enterprise insiders channel for VS Code (Preview)
 
 ![Review and approve](https://cloud.google.com/gemini/images/release-notes-images/vscode-agent-mode-approve-changes.gif)
 
@@ -16,7 +18,9 @@ To get started with agent mode, see [Use agentic chat as a pair programmer](http
 
 ### Feature
 
-**Multi file editing is available in preview for Gemini Code Assist Standard and Enterprise insiders channel in agent mode**.
+
+
+### Use multi file editing in Gemini Code Assist Standard and Enterprise insiders channel in agent mode for VS Code (Preview)
 
 ![Multi-file edits](https://cloud.google.com/gemini/images/release-notes-images/vscode-agent-mode-multi-file-edit.gif)
 
@@ -27,7 +31,9 @@ You will also have the option to undo changes to local files in case you want to
 
 ### Feature
 
-**Full Project Context is available in preview for Gemini Code Assist Standard and Enterprise insiders channel in agent mode**.
+
+
+### Use full project context in Gemini Code Assist Standard and Enterprise insiders channel in agent mode for VS Code (Preview)
 
 ![Explain my codebase](https://cloud.google.com/gemini/images/release-notes-images/vscode-agent-mode-explain-codebase.gif)
 

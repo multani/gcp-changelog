@@ -1,5 +1,38 @@
 # Cloud Load Balancing
 
+## 2025-07-09
+
+### Feature
+
+Application Load Balancers and Proxy Network Load Balancers now support TLS certificates with large key sizes. Previously, these load balancers supported only certificates with RSA-2048 or ECDSA P-256 key types. With this update, you can now use self-managed certificates with RSA-3072, RSA-4096, and ECDSA P-384 keys.
+
+**Key details**:
+
+* Supported key types (for self-managed certificates): RSA-2048, RSA-3072, RSA-4096, ECDSA P-256, and ECDSA P-384
+* Load balancing coverage for self managed certificates:
+
+  + Certificate Manager SSL certificates: Global and regional load balancing
+  + Compute Engine SSL Certificates: Regional load balancing
+* Pricing: An additional charge of $0.45 per 1 million connections applies with certificates that use RSA-3072 and RSA-4096 key types. There are no per-connection charges for certificates that use RSA-2048, ECDSA P-256, or ECDSA P-384 key types.
+
+For more information, see the documentation for [Supported key types](https://cloud.google.com/load-balancing/docs/ssl-certificates#key-types).
+
+This capability is now in **General Availability**.
+
+---
+## 2025-07-08
+
+### Feature
+
+Zonal affinity, configured on the backend service of an internal passthrough Network Load Balancer, lets you limit cross-zone traffic, reduce latency, and improve performance, all while maintaining the benefits of a multi-zonal architecture.
+
+Internal passthrough Network Load Balancers support three zonal affinity options that offer varying degrees of preference for routing new connections to eligible backends that are in the same zone as a supported client.
+
+For more information, see [Zonal affinity for internal passthrough Network Load Balancers](https://cloud.google.com/load-balancing/docs/internal/zonal-affinity).
+
+This feature is in **Preview**.
+
+---
 ## 2025-06-26
 
 ### Feature

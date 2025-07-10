@@ -544,8 +544,33 @@
 
 
 <h1 id="cloud-load-balancing">Cloud Load Balancing</h1>
-<h2 id="2025-06-26">2025-06-26</h2>
+<h2 id="2025-07-09">2025-07-09</h2>
 <h3 id="feature">Feature</h3>
+<p>Application Load Balancers and Proxy Network Load Balancers now support TLS certificates with large key sizes. Previously, these load balancers supported only certificates with RSA-2048 or ECDSA P-256 key types. With this update, you can now use self-managed certificates with RSA-3072, RSA-4096, and ECDSA P-384 keys.</p>
+<p><strong>Key details</strong>:</p>
+<ul>
+<li>Supported key types (for self-managed certificates): RSA-2048, RSA-3072, RSA-4096, ECDSA P-256, and ECDSA P-384</li>
+<li>
+<p>Load balancing coverage for self managed certificates:</p>
+</li>
+<li>
+<p>Certificate Manager SSL certificates: Global and regional load balancing</p>
+</li>
+<li>Compute Engine SSL Certificates: Regional load balancing</li>
+<li>Pricing: An additional charge of $0.45 per 1 million connections applies with certificates that use RSA-3072 and RSA-4096 key types. There are no per-connection charges for certificates that use RSA-2048, ECDSA P-256, or ECDSA P-384 key types.</li>
+</ul>
+<p>For more information, see the documentation for <a href="https://cloud.google.com/load-balancing/docs/ssl-certificates#key-types">Supported key types</a>.</p>
+<p>This capability is now in <strong>General Availability</strong>.</p>
+<hr />
+<h2 id="2025-07-08">2025-07-08</h2>
+<h3 id="feature_1">Feature</h3>
+<p>Zonal affinity, configured on the backend service of an internal passthrough Network Load Balancer, lets you limit cross-zone traffic, reduce latency, and improve performance, all while maintaining the benefits of a multi-zonal architecture.</p>
+<p>Internal passthrough Network Load Balancers support three zonal affinity options that offer varying degrees of preference for routing new connections to eligible backends that are in the same zone as a supported client.</p>
+<p>For more information, see <a href="https://cloud.google.com/load-balancing/docs/internal/zonal-affinity">Zonal affinity for internal passthrough Network Load Balancers</a>.</p>
+<p>This feature is in <strong>Preview</strong>.</p>
+<hr />
+<h2 id="2025-06-26">2025-06-26</h2>
+<h3 id="feature_2">Feature</h3>
 <p>In typical HTTPS communication, neither the load balancer nor the backend verify each other's identity, assuming that they are within a secure perimeter and can be trusted. However, when perimeter security needs reinforcement or communication extends beyond the perimeter, backend mTLS becomes essential. Backend mTLS ensures secure communication by requiring both the load balancer and the backend to mutually verify their identities.</p>
 <p>With <em>backend authenticated TLS</em>, the load balancer verifies the backend server's certificate by checking its chain of trust, thereby confirming the backend's identity. Conversely, with <em>backend mTLS</em>, the backend server verifies the client certificate presented by the load balancer. Together, these mechanisms enable backend mTLS, ensuring that both parties validate each other's identity.</p>
 <p>Backend mTLS complements frontend mTLS, which is already generally available (GA).</p>
@@ -558,16 +583,16 @@
 <p>This capability is in <strong>General Availability</strong> for global external Application Load Balancers.</p>
 <hr />
 <h2 id="2025-06-13">2025-06-13</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>Cloud Load Balancing supports load balancing to multi-NIC instances that use <a href="https://cloud.google.com/vpc/docs/multiple-interfaces-concepts">Dynamic NICs</a>.</p>
 <p>This capability is in <strong>Preview</strong>.</p>
 <hr />
 <h2 id="2025-06-03">2025-06-03</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>Application Load Balancers now support the use of <em>custom metrics</em> that let you configure your load balancer's traffic distribution behavior to be based on metrics specific to your application or infrastructure requirements, rather than Google Cloud's standard utilization or rate-based metrics. Defining custom metrics for your load balancer gives you the flexibility to route application requests to the backend instances and endpoints that are most optimal for your workload.</p>
 <p>For more information, see <a href="https://cloud.google.com/load-balancing/docs/https/applb-custom-metrics">Custom metrics for Application Load Balancers</a>.</p>
 <p>This capability is in <strong>General availability</strong>.</p>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p>Cleartext HTTP/2 over TCP, also known as H2C, lets you use HTTP/2 without TLS. H2C is supported by internal and external Application Load Balancers for both of the following connections:</p>
 <ul>
 <li>Connections between clients and the load balancer. No special configuration is required. Support for this capability is already in <strong>General Availability</strong>.</li>
@@ -585,6 +610,12 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-load-balancing">Cloud Load Balancing</a></li>
+          <li class="nav-item">
+            <a href="#2025-07-09" class="nav-link">2025-07-09</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2025-07-08" class="nav-link">2025-07-08</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-06-26" class="nav-link">2025-06-26</a>
           </li>

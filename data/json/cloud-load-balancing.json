@@ -1,6 +1,18 @@
 {
   "name": "Cloud Load Balancing",
   "entries": {
+    "2025-07-09": [
+      {
+        "kind": "Feature",
+        "content": "Application Load Balancers and Proxy Network Load Balancers now support TLS certificates with large key sizes. Previously, these load balancers supported only certificates with RSA-2048 or ECDSA P-256 key types. With this update, you can now use self-managed certificates with RSA-3072, RSA-4096, and ECDSA P-384 keys.\n\n**Key details**:\n\n* Supported key types (for self-managed certificates): RSA-2048, RSA-3072, RSA-4096, ECDSA P-256, and ECDSA P-384\n* Load balancing coverage for self managed certificates:\n\n  + Certificate Manager SSL certificates: Global and regional load balancing\n  + Compute Engine SSL Certificates: Regional load balancing\n* Pricing: An additional charge of $0.45 per 1 million connections applies with certificates that use RSA-3072 and RSA-4096 key types. There are no per-connection charges for certificates that use RSA-2048, ECDSA P-256, or ECDSA P-384 key types.\n\nFor more information, see the documentation for [Supported key types](https://cloud.google.com/load-balancing/docs/ssl-certificates#key-types).\n\nThis capability is now in **General Availability**."
+      }
+    ],
+    "2025-07-08": [
+      {
+        "kind": "Feature",
+        "content": "Zonal affinity, configured on the backend service of an internal passthrough Network Load Balancer, lets you limit cross-zone traffic, reduce latency, and improve performance, all while maintaining the benefits of a multi-zonal architecture.\n\nInternal passthrough Network Load Balancers support three zonal affinity options that offer varying degrees of preference for routing new connections to eligible backends that are in the same zone as a supported client.\n\nFor more information, see [Zonal affinity for internal passthrough Network Load Balancers](https://cloud.google.com/load-balancing/docs/internal/zonal-affinity).\n\nThis feature is in **Preview**."
+      }
+    ],
     "2025-06-26": [
       {
         "kind": "Feature",

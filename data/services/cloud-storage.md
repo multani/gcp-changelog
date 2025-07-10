@@ -1,5 +1,29 @@
 # Cloud Storage
 
+## 2025-07-08
+
+### Feature
+
+You can now create caches with Anywhere Cache in the `us-west3-a`, `us-west3-b`, and `us-west3-c` zones. For more information about supported locations for Anywhere Cache, see [Supported locations](https://cloud.google.com/storage/docs/anywhere-cache#supported-locations).
+
+---
+## 2025-07-07
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Python
+
+### Changes for [google-cloud-storage](https://github.com/googleapis/python-storage)
+
+#### [3.2.0](https://github.com/googleapis/python-storage/compare/v3.1.1...v3.2.0) (2025-07-04)
+
+##### Features
+
+* Adding support of single shot download ([#1493](https://github.com/googleapis/python-storage/issues/1493)) ([61c5d5f](https://github.com/googleapis/python-storage/commit/61c5d5f62c88506f200bc6d86b399a2c28715bc4))
+
+---
 ## 2025-07-02
 
 ### Feature

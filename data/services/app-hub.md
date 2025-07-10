@@ -1,5 +1,12 @@
 # App Hub
 
+## 2025-07-08
+
+### Feature
+
+[Dataproc Metastore services](https://cloud.google.com/app-hub/docs/supported-resources) are now generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
+
+---
 ## 2025-06-25
 
 ### Feature

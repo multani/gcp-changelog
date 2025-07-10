@@ -27,10 +27,6 @@ Cloud Armor supports [organization-scoped address groups](https://cloud.google.c
 
 Cloud Armor supports Network Threat Intelligence (NTI) in [globally scoped edge security policies](https://cloud.google.com/armor/docs/security-policy-overview#expandable-1) for Media CDN edge cache services in Preview.
 
-### Feature
-
-Cloud Armor supports Autonomous System Numbers (ASNs) in [globally scoped edge security policies](https://cloud.google.com/armor/docs/security-policy-overview#expandable-1) for Media CDN edge cache services in Preview.
-
 ---
 ## 2025-06-09
 

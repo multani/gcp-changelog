@@ -16,10 +16,4 @@ You can use Network Threat Intelligence (NTI) from Cloud Armor in Edge Security 
 
 For an example, see [Example: Block traffic from known malicious IPs](https://cloud.google.com/media-cdn/docs/security-policies#example-block-malicious-using-NTI).
 
-### Feature
-
-You can use Autonomous System Numbers (ASN) based rules from Cloud Armor for Media CDN. ASN-based rules allow you to create security policies that specifically permit or deny traffic based on the ASN of the client requesting your content. This feature is in **Preview**.
-
-For more information, see [Google Cloud Armor support](https://cloud.google.com/media-cdn/docs/overview#armor-support).
-
 ---

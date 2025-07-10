@@ -544,8 +544,89 @@
 
 
 <h1 id="apigee-hybrid">Apigee hybrid</h1>
-<h2 id="2025-06-04">2025-06-04</h2>
+<h2 id="2025-07-09">2025-07-09</h2>
 <h3 id="announcement">Announcement</h3>
+<h3 id="hybrid-v1134">hybrid v1.13.4</h3>
+<p>On July 9, 2025 we released an updated version of the Apigee hybrid software, 1.13.4.</p>
+<ul>
+<li>For information on upgrading, see <a href="https://cloud.google.com/apigee/docs/hybrid/v1.13/upgrade">Upgrading Apigee hybrid to version 1.13</a>.</li>
+<li>For information on new installations, see <a href="https://cloud.google.com/apigee/docs/hybrid/v1.13/big-picture">The big picture</a>.</li>
+</ul>
+<p><strong>Note:</strong> if you are upgrading to Apigee hybrid version 1.13.4 from version 1.13.2 or earlier, see <a href="https://cloud.google.com/apigee/docs/hybrid/v1.13/upgrade#recommended-actions-upgrade-1133">APPENDIX: Validate policies after upgrade to 1.13.3 or later</a> for steps to address stricter class instantiation checks introduced in <a href="https://cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1133">version 1.13.3</a>.
+<strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
+<h3 id="fixed">Fixed</h3>
+<table>
+<thead>
+<tr>
+<th>Bug ID</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>420675540</strong></td>
+<td><strong>Fixed Cassandra based replication for runtime contracts in synchronizer.</strong></td>
+</tr>
+<tr>
+<td><strong>401746333</strong></td>
+<td><strong>Fixed a <code>java.lang.ClassCircularityError</code> that could occur in Java Callouts due to an issue with the class loading mechanism.</strong></td>
+</tr>
+<tr>
+<td><strong>382565315</strong></td>
+<td><strong>A memory leak within the Security Policy has been addressed, improving system stability.</strong></td>
+</tr>
+<tr>
+<td><strong>375360455</strong></td>
+<td><strong>Updated apigee-runtime drain timeout to 300s to fix connection termination issue during pod termination.</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="security">Security</h3>
+<table>
+<thead>
+<tr>
+<th>Bug ID</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>396944778</strong></td>
+<td><strong>Security fixes for <code>apigee-synchronizer</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-25193">CVE-2025-25193</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-24970">CVE-2025-24970</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-23184">CVE-2025-23184</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-47554">CVE-2024-47554</a></td>
+</tr>
+<tr>
+<td><strong>392934392</strong></td>
+<td><strong>Security fixes for <code>apigee-logger</code>.</strong></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-mart-server</code>.</strong>  This addresses the following vulnerability:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-20952">CVE-2024-20952</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-mint-task-scheduler</code>.</strong>  This addresses the following vulnerability:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-20952">CVE-2024-20952</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-redis</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-24834">CVE-2022-24834</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-24735">CVE-2022-24735</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-runtime</code>.</strong>  This addresses the following vulnerability:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-20952">CVE-2024-20952</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-synchronizer</code>.</strong>  This addresses the following vulnerability:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-20952">CVE-2024-20952</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>vault</code>.</strong>  This addresses the following vulnerability:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-0377">CVE-2025-0377</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2025-06-04">2025-06-04</h2>
+<h3 id="announcement_1">Announcement</h3>
 <h3 id="hybrid-v1150">hybrid v1.15.0</h3>
 <p>On June 4, 2025 we released an updated version of the Apigee hybrid software, 1.15.0.</p>
 <ul>
@@ -556,7 +637,7 @@
 <h3 id="feature">Feature</h3>
 <p><strong>Large message payload support in Apigee hybrid</strong></p>
 <p>Apigee now supports message payloads up to 30MB. You configure support for large message payloads in Apigee hybrid for individual environments or for your whole installation. See <a href="https://cloud.google.com/apigee/docs/hybrid/v1.15/configure-large-payload-support">Configure large message payload support in Apigee hybrid</a>.</p>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_1">Fixed</h3>
 <table>
 <thead>
 <tr>
@@ -611,7 +692,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="security">Security</h3>
+<h3 id="security_1">Security</h3>
 <p><strong>Fixed in this release</strong></p>
 <table>
 <thead>
@@ -707,7 +788,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="security_1">Security</h3>
+<h3 id="security_2">Security</h3>
 <p><strong>Fixed since last minor release</strong></p>
 <table>
 <thead>
@@ -825,7 +906,7 @@
 </table>
 <hr />
 <h2 id="2025-05-29">2025-05-29</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p>On May 29, 2025 we announced the shutdown schedule for the Apigee Classic UI.</p>
 <h3 id="deprecated">Deprecated</h3>
 <p>The Apigee Classic UI will be shutdown as of August 29, 2025.</p>
@@ -843,6 +924,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#apigee-hybrid">Apigee hybrid</a></li>
+          <li class="nav-item">
+            <a href="#2025-07-09" class="nav-link">2025-07-09</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-06-04" class="nav-link">2025-06-04</a>
           </li>

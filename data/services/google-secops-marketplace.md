@@ -1,5 +1,33 @@
 # Google SecOps Marketplace
 
+## 2025-07-09
+
+### Changed
+
+**BMC Remedy ITSM**: Version 9.0
+
+* Updated input parameter processing in the following action:
+
+  + **Create Incident**
+
+### Changed
+
+**ServiceNow**: Version 58.0
+
+* Updated processing of record object in the following connector:
+
+  + **ServiceNow - ServiceNow Connector**
+
+### Changed
+
+**Siemplify**: Version 93.0
+
+* Updated action logic in the following actions:
+
+  + **Get Case Details**
+  + **Get Similar Cases**
+
+---
 ## 2025-07-02
 
 ### Feature

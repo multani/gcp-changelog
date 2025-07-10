@@ -1,6 +1,24 @@
 {
   "name": "Apigee hybrid",
   "entries": {
+    "2025-07-09": [
+      {
+        "kind": "Announcement",
+        "content": ""
+      },
+      {
+        "kind": "hybrid v1.13.4",
+        "content": "On July 9, 2025 we released an updated version of the Apigee hybrid software, 1.13.4.\n\n* For information on upgrading, see [Upgrading Apigee hybrid to version 1.13](https://cloud.google.com/apigee/docs/hybrid/v1.13/upgrade).\n* For information on new installations, see [The big picture](https://cloud.google.com/apigee/docs/hybrid/v1.13/big-picture).\n\n**Note:** if you are upgrading to Apigee hybrid version 1.13.4 from version 1.13.2 or earlier, see [APPENDIX: Validate policies after upgrade to 1.13.3 or later](https://cloud.google.com/apigee/docs/hybrid/v1.13/upgrade#recommended-actions-upgrade-1133) for steps to address stricter class instantiation checks introduced in [version 1.13.3](https://cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1133).\n**Note:** This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images)."
+      },
+      {
+        "kind": "Fixed",
+        "content": "| Bug ID | Description |\n| --- | --- |\n| **420675540** | **Fixed Cassandra based replication for runtime contracts in synchronizer.** |\n| **401746333** | **Fixed a `java.lang.ClassCircularityError` that could occur in Java Callouts due to an issue with the class loading mechanism.** |\n| **382565315** | **A memory leak within the Security Policy has been addressed, improving system stability.** |\n| **375360455** | **Updated apigee-runtime drain timeout to 300s to fix connection termination issue during pod termination.** |"
+      },
+      {
+        "kind": "Security",
+        "content": "| Bug ID | Description |\n| --- | --- |\n| **396944778** | **Security fixes for `apigee-synchronizer`.**  This addresses the following vulnerabilities:  * [CVE-2025-25193](https://nvd.nist.gov/vuln/detail/CVE-2025-25193) * [CVE-2025-24970](https://nvd.nist.gov/vuln/detail/CVE-2025-24970) * [CVE-2025-23184](https://nvd.nist.gov/vuln/detail/CVE-2025-23184) * [CVE-2024-47554](https://nvd.nist.gov/vuln/detail/CVE-2024-47554) |\n| **392934392** | **Security fixes for `apigee-logger`.** |\n| **N/A** | **Security fixes for `apigee-mart-server`.**  This addresses the following vulnerability:  * [CVE-2024-20952](https://nvd.nist.gov/vuln/detail/CVE-2024-20952) |\n| **N/A** | **Security fixes for `apigee-mint-task-scheduler`.**  This addresses the following vulnerability:  * [CVE-2024-20952](https://nvd.nist.gov/vuln/detail/CVE-2024-20952) |\n| **N/A** | **Security fixes for `apigee-redis`.**  This addresses the following vulnerabilities:  * [CVE-2022-24834](https://nvd.nist.gov/vuln/detail/CVE-2022-24834) * [CVE-2022-24735](https://nvd.nist.gov/vuln/detail/CVE-2022-24735) |\n| **N/A** | **Security fixes for `apigee-runtime`.**  This addresses the following vulnerability:  * [CVE-2024-20952](https://nvd.nist.gov/vuln/detail/CVE-2024-20952) |\n| **N/A** | **Security fixes for `apigee-synchronizer`.**  This addresses the following vulnerability:  * [CVE-2024-20952](https://nvd.nist.gov/vuln/detail/CVE-2024-20952) |\n| **N/A** | **Security fixes for `vault`.**  This addresses the following vulnerability:  * [CVE-2025-0377](https://nvd.nist.gov/vuln/detail/CVE-2025-0377) |"
+      }
+    ],
     "2025-06-04": [
       {
         "kind": "Announcement",

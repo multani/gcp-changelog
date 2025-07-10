@@ -49,7 +49,7 @@ This feature provides greater flexibility for managing your disk licenses. You c
 
 * Append, remove, replace, and view the history of license updates.
 * Perform in-place license upgrades, such as [Ubuntu to Ubuntu Pro](https://cloud.google.com/compute/docs/images/premium/ubuntu-pro/upgrade-from-ubuntu), using the `gcloud` CLI and REST.
-* [Switch from PAYG to BYOS billing](https://cloud.google.com/compute/docs/licenses/switch-from-payg-to-byos) models.
+* [Switch from PAYG to BYOS billing](https://cloud.google.com/compute/docs/licenses/switch-between-payg-and-byos) models.
 * Review [license changes and restrictions](https://cloud.google.com/compute/docs/licenses/license-changes-and-restrictions) and [append a RHEL ELS](https://cloud.google.com/compute/docs/images/premium/rhel/append-els-licenses) license to a newer version.
 
 For more information on how to manage licenses, see [Manage licenses](https://cloud.google.com//compute/docs/licenses/manage).

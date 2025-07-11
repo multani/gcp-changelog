@@ -1,5 +1,14 @@
 # AI Hypercomputer
 
+## 2025-07-10
+
+### Feature
+
+**Generally available**: You can now manage the [Collective Communication Analyzer (CoMMA)](https://cloud.google.com/ai-hypercomputer/docs/nccl/comma), a library that uses the NVIDIA Collective Communication Library (NCCL) profiler plugin to collect detailed NCCL telemetry for GPU machine types. The collected performance metrics and operational events are used for analyzing and optimizing large-scale AI and ML training workloads.
+
+CoMMA is automatically installed and enabled on A4X, A4 High, and A3 Ultra machine types when using specific images. You can manage this data collection by disabling the plugin, adjusting its data granularity levels, or manually installing it on other GPU machine types. For more information, see [Enable, disable, and configure CoMMA](https://cloud.google.com/ai-hypercomputer/docs/nccl/configure-comma).
+
+---
 ## 2025-07-07
 
 ### Feature

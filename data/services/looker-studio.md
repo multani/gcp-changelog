@@ -1,5 +1,16 @@
 # Looker Studio
 
+## 2025-07-10
+
+### Feature
+
+**New alignment option for Cartesian charts**
+
+The new **Align with grid** setting lets you set the alignment of the chart legend with the position of the chart grid, instead of aligning with the chart title.
+
+This setting is available for Cartesian charts in reports that [have modern charts enabled](https://cloud.google.com/looker/docs/studio/modern-charts).
+
+---
 ## 2025-06-26
 
 ### Breaking

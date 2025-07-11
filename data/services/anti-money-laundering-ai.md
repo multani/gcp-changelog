@@ -1,5 +1,19 @@
 # Anti Money Laundering AI
 
+## 2025-07-10
+
+### Announcement
+
+A new major engine version is now available for Retail and Commercial lines of business, within the v4 tuning version. This includes a more reliable training performance when using optional enum input fields.
+
+---
+## 2025-06-26
+
+### Announcement
+
+New minor engine version released for retail line of business within the v004 tuning version. This extends support for the major version and includes no significant changes versus the previous minor version.
+
+---
 ## 2025-05-28
 
 ### Announcement

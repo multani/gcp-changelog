@@ -1,5 +1,20 @@
 # Gemini Code Assist
 
+## 2025-07-01
+
+### Announcement
+
+
+
+### Gemini 2.5 Pro and Gemini 2.5 Flash models are Generally Available (GA)
+
+Gemini 2.5 Pro and Gemini 2.5 Flash are [Generally Available (GA)](https://cloud.google.com/terms/service-terms). These models are used for Gemini Code Assist Standard and Enterprise, and power Gemini Code Assist's chat, code generation, and code transformation capabilities.
+
+With the integration of these stable versions of Gemini 2.5 Pro and Gemini 2.5 Flash, you'll experience a boost in how Gemini Code Assist handles complex tasks. These models excel in areas like coding, mathematics, science, and intricate reasoning, leading to more accurate and helpful suggestions.
+
+![Gemini Code Assist 2.5 Flash and Pro comparison chart.](https://cloud.google.com/gemini/images/release-notes-images/gca-flash-pro-chart.png)
+
+---
 ## 2025-06-25
 
 ### Feature

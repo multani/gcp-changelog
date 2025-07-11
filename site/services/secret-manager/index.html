@@ -544,6 +544,19 @@
 
 
 <h1 id="secret-manager">Secret Manager</h1>
+<h2 id="2025-07-09">2025-07-09</h2>
+<h3 id="feature">Feature</h3>
+<p><strong>Enhanced tagging capabilities for Secret Manager</strong>: You can now add tags directly at the time of secret creation. This new feature lets you provide essential metadata for your resources and helps with better organization, cost tracking, and automated policy application from the time a secret is created. In addition to this, <em>tagging for regional secrets</em> is now fully supported, both during secret creation and for existing regional secrets. For more information, see the documentation on tags for <a href="https://cloud.google.com/secret-manager/docs/create-and-manage-tags">global secrets</a> and <a href="https://cloud.google.com/secret-manager/regional-secrets/create-manage-tags-regional-secrets">regional secrets</a>.</p>
+<p><strong>Soft-enforced rate limits for modifying secrets and secret versions</strong>: We have introduced soft-enforced rate limits for the following operations in Secret Manager:</p>
+<ul>
+<li><code>AddSecretVersion</code></li>
+<li><code>UpdateSecret</code></li>
+<li><code>EnableSecretVersion</code></li>
+<li><code>DisableSecretVersion</code></li>
+<li><code>DestroySecretVersion</code></li>
+</ul>
+<p>Soft enforcement lets us continue serving requests beyond the defined quota as long as our backend systems can comfortably handle the increased load. For details, see the <a href="https://cloud.google.com/secret-manager/quotas">Quotas and limits</a> documentation.</p>
+<hr />
 <h2 id="2025-06-23">2025-06-23</h2>
 <h3 id="libraries">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
@@ -565,6 +578,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#secret-manager">Secret Manager</a></li>
+          <li class="nav-item">
+            <a href="#2025-07-09" class="nav-link">2025-07-09</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-06-23" class="nav-link">2025-06-23</a>
           </li>

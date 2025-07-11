@@ -1,5 +1,22 @@
 # Secret Manager
 
+## 2025-07-09
+
+### Feature
+
+**Enhanced tagging capabilities for Secret Manager**: You can now add tags directly at the time of secret creation. This new feature lets you provide essential metadata for your resources and helps with better organization, cost tracking, and automated policy application from the time a secret is created. In addition to this, *tagging for regional secrets* is now fully supported, both during secret creation and for existing regional secrets. For more information, see the documentation on tags for [global secrets](https://cloud.google.com/secret-manager/docs/create-and-manage-tags) and [regional secrets](https://cloud.google.com/secret-manager/regional-secrets/create-manage-tags-regional-secrets).
+
+**Soft-enforced rate limits for modifying secrets and secret versions**: We have introduced soft-enforced rate limits for the following operations in Secret Manager:
+
+* `AddSecretVersion`
+* `UpdateSecret`
+* `EnableSecretVersion`
+* `DisableSecretVersion`
+* `DestroySecretVersion`
+
+Soft enforcement lets us continue serving requests beyond the defined quota as long as our backend systems can comfortably handle the increased load. For details, see the [Quotas and limits](https://cloud.google.com/secret-manager/quotas) documentation.
+
+---
 ## 2025-06-23
 
 ### Libraries

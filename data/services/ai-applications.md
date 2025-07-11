@@ -1,5 +1,23 @@
 # AI Applications
 
+## 2025-07-09
+
+### Announcement
+
+**AI Applications: Quotas**
+
+AI Applications offers the following allocation quotas in the global region (`global`), the US multi-region (`us`), and the EU multi-region (`eu`) under the Discovery Engine API:
+
+* Number of data stores per project
+* Number of documents per project
+* Number of engines per project
+* Number of user events
+
+The number of data stores, documents, user events, and engines across all locations can't exceed the total per-project quota for that resource.
+
+For more information, see [Quotas](https://cloud.google.com/generative-ai-app-builder/quotas).
+
+---
 ## 2025-07-02
 
 ### Feature

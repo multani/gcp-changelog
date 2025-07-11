@@ -544,8 +544,12 @@
 
 
 <h1 id="security-command-center">Security Command Center</h1>
-<h2 id="2025-07-01">2025-07-01</h2>
+<h2 id="2025-07-10">2025-07-10</h2>
 <h3 id="changed">Changed</h3>
+<p>In the Google Cloud console, the <a href="https://cloud.google.com/security-command-center/docs/concepts-security-sources#gke-security-posture-dashboard">Google Kubernetes Engine (GKE) security posture dashboard</a> shows the top software vulnerabilities that affect your GKE workloads. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">General Availability</a>.</p>
+<hr />
+<h2 id="2025-07-01">2025-07-01</h2>
+<h3 id="changed_1">Changed</h3>
 <p>Security Command Center now supports the <a href="https://cloud.google.com/security-command-center/docs/toxic-combinations-overview">detection of Chokepoints</a> for the following cloud service provider platforms:</p>
 <ul>
 <li>Amazon Web Services (AWS)</li>
@@ -571,7 +575,7 @@
 <p>The <code>Defense Evasion: Unexpected kernel code modification</code> detector of Virtual Machine Threat Detection is shut down. For more information, see <a href="https://cloud.google.com/security-command-center/docs/deprecations">Detector shutdowns</a>.</p>
 <hr />
 <h2 id="2025-06-27">2025-06-27</h2>
-<h3 id="changed_1">Changed</h3>
+<h3 id="changed_2">Changed</h3>
 <p>The following <a href="https://cloud.google.com/security-command-center/docs/concepts-event-threat-detection-overview">Event Threat Detection</a> detectors have been released to <a href="https://cloud.google.com/products#product-launch-stages">GA</a>.</p>
 <ul>
 <li><code>Exfiltration: Cloud SQL Data Exfiltration</code></li>
@@ -580,7 +584,7 @@
 </ul>
 <hr />
 <h2 id="2025-06-20">2025-06-20</h2>
-<h3 id="changed_2">Changed</h3>
+<h3 id="changed_3">Changed</h3>
 <p>The display name for the following <a href="https://cloud.google.com/security-command-center/docs/concepts-event-threat-detection-overview#rules">Event Threat Detection</a> rules have changed. Please update any artifacts that use these values, such as finding filters, finding queries, or mute rules.</p>
 <table>
 <thead>
@@ -660,13 +664,13 @@
 </tr>
 </tbody>
 </table>
-<h3 id="changed_3">Changed</h3>
+<h3 id="changed_4">Changed</h3>
 <p>Risk Engine includes the <code>aiplatform.googleapis.com/Model</code> resource type in the default high-value resource set. For more information, see the <a href="https://cloud.google.com/security-command-center/docs/attack-exposure-learn#default-high-value-resource-set">list of default resource types</a>.</p>
 <hr />
 <h2 id="2025-06-19">2025-06-19</h2>
-<h3 id="changed_4">Changed</h3>
-<p>The prompt injection and jailbreak detection filter in Model Armor flags more threats across various attack vectors, and offers an improved detection rate for high-confidence malicious prompts. This filter is available in us-east1.</p>
 <h3 id="changed_5">Changed</h3>
+<p>The prompt injection and jailbreak detection filter in Model Armor flags more threats across various attack vectors, and offers an improved detection rate for high-confidence malicious prompts. This filter is available in us-east1.</p>
+<h3 id="changed_6">Changed</h3>
 <p><strong>CVEs with no known exploitation activity are not considered in attack path simulations</strong></p>
 <p>Vulnerability findings in Security Command Center are enriched by Mandiant Threat Intelligence. A CVE with wide exploitation activity is more likely to be used in an attack path compared to a CVE with only anticipated exploitation activity. Vulnerabilities with no known exploitation activity are not considered in attack path simulations. For more information, see <a href="https://cloud.google.com/security-command-center/docs/attack-exposure-learn#incorporation_of_cve_data">Incorporation of CVE data</a>.</p>
 <hr />
@@ -702,13 +706,13 @@
 <p>For more information, see <a href="https://cloud.google.com/security-command-center/docs/model-armor-overview#languages-supported">Languages supported</a>.</p>
 <hr />
 <h2 id="2025-06-06">2025-06-06</h2>
-<h3 id="changed_6">Changed</h3>
+<h3 id="changed_7">Changed</h3>
 <p>The <a href="https://cloud.google.com/compute/docs/monitor-security-risks-console">Security Risk Overview dashboard for Compute Engine</a> is in <a href="https://cloud.google.com/products#product-launch-stages">General Availability</a>. In addition, it provides a <strong>Top CVE findings</strong> table that lists the most severe CVEs that affect your Compute Engine instances.</p>
 <hr />
 <h2 id="2025-06-05">2025-06-05</h2>
 <h3 id="feature_5">Feature</h3>
 <p><a href="https://cloud.google.com/security-command-center/docs/vulnerability-assessment-google-cloud">Vulnerability Assessment for Google Cloud</a> supports scanning on Google Kubernetes Engine (GKE) nodes and containers. This feature has been released to <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
-<h3 id="changed_7">Changed</h3>
+<h3 id="changed_8">Changed</h3>
 <p>Muted findings are no longer considered in the Security Command Center Risk Engine. As a result, they no longer get <a href="https://cloud.google.com/security-command-center/docs/attack-exposure-learn">attack exposure scores</a>.</p>
 <hr />
 <h2 id="2025-06-04">2025-06-04</h2>
@@ -730,7 +734,7 @@
 </ul>
 <hr />
 <h2 id="2025-05-29">2025-05-29</h2>
-<h3 id="changed_8">Changed</h3>
+<h3 id="changed_9">Changed</h3>
 <p>Domain tagging for <a href="https://cloud.google.com/security-command-center/docs/toxic-combinations-overview">toxic combinations and chokepoints</a> has been improved to be more precise. The following filters are available for <a href="https://cloud.google.com/security-command-center/docs/issues-overview">issues</a>:</p>
 <ul>
 <li>CVE Vulnerabilities</li>
@@ -740,7 +744,7 @@
 </ul>
 <hr />
 <h2 id="2025-05-28">2025-05-28</h2>
-<h3 id="changed_9">Changed</h3>
+<h3 id="changed_10">Changed</h3>
 <p><strong>Model Armor enhancements</strong></p>
 <ul>
 <li>Model Armor supports multi-regional endpoints. For more information, see <a href="https://cloud.google.com/security-command-center/docs/regional-endpoints#locations-model-armor">Locations for the Model Armor API</a>.</li>
@@ -748,7 +752,7 @@
 </ul>
 <hr />
 <h2 id="2025-05-27">2025-05-27</h2>
-<h3 id="changed_10">Changed</h3>
+<h3 id="changed_11">Changed</h3>
 <p>Enhanced <a href="https://cloud.google.com/security-command-center/docs/data-residency-support">data residency support</a> in the European Union and United States is in <a href="https://cloud.google.com/products#product-launch-stages">General Availability</a>.</p>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
@@ -761,6 +765,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#security-command-center">Security Command Center</a></li>
+          <li class="nav-item">
+            <a href="#2025-07-10" class="nav-link">2025-07-10</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-07-01" class="nav-link">2025-07-01</a>
           </li>

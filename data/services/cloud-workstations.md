@@ -1,5 +1,12 @@
 # Cloud Workstations
 
+## 2025-07-07
+
+### Feature
+
+Cloud Workstations is available in the `europe-central2` region (Warsaw). For more information, see [Locations](https://cloud.google.com/workstations/docs/locations).
+
+---
 ## 2025-06-09
 
 ### Feature

@@ -1,5 +1,12 @@
 # Security Command Center
 
+## 2025-07-10
+
+### Changed
+
+In the Google Cloud console, the [Google Kubernetes Engine (GKE) security posture dashboard](https://cloud.google.com/security-command-center/docs/concepts-security-sources#gke-security-posture-dashboard) shows the top software vulnerabilities that affect your GKE workloads. This feature is in [General Availability](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-07-01
 
 ### Changed

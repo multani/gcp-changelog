@@ -1,5 +1,12 @@
 # Agent Assist
 
+## 2025-07-11
+
+### Changed
+
+Google Cloud provides **quotas** for using Agent Assist APIs. Each feature uses specific APIs, which have their own [quotas](https://cloud.google.com/agent-assist/docs/quotas).
+
+---
 ## 2025-06-13
 
 ### Feature

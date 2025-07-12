@@ -1,5 +1,15 @@
 # Vertex AI
 
+## 2025-07-11
+
+### Feature
+
+To reduce the cost of running your inference jobs, you can now use flex-start VMs, which are powered by [Dynamic Workload Scheduler](https://cloud.google.com/blog/products/compute/introducing-dynamic-workload-scheduler). Flex-start VMs offer significant discounts and are well-suited for
+short-duration workloads. This feature is available in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+For more information, see [Use DWS flex-start VMs with inference](https://cloud.google.com/vertex-ai/docs/predictions/use-flex-start-vms).
+
+---
 ## 2025-07-01
 
 ### Feature

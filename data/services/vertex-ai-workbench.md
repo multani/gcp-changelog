@@ -1,5 +1,16 @@
 # Vertex AI Workbench
 
+## 2025-07-10
+
+### Feature
+
+**M131 release**
+
+The M131 release of Vertex AI Workbench instances includes the following:
+
+* Updated the Dataproc JupyterLab plugin to version 0.1.89.
+
+---
 ## 2025-06-26
 
 ### Feature

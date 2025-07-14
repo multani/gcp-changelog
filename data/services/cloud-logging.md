@@ -1,5 +1,26 @@
 # Cloud Logging
 
+## 2025-07-14
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Java
+
+### Changes for [google-cloud-logging](https://github.com/googleapis/java-logging)
+
+#### [3.23.0](https://github.com/googleapis/java-logging/compare/v3.22.6...v3.23.0) (2025-07-11)
+
+##### Features
+
+* Next release from main branch is 3.23.0 ([#1826](https://github.com/googleapis/java-logging/issues/1826)) ([f0ef15f](https://github.com/googleapis/java-logging/commit/f0ef15f609a3400460bd8074bdd05014cc388743))
+
+##### Dependencies
+
+* Update dependency com.google.cloud:sdk-platform-java-config to v3.50.1 ([#1828](https://github.com/googleapis/java-logging/issues/1828)) ([44c3094](https://github.com/googleapis/java-logging/commit/44c3094e23450f1a8e6bb397f209b17cf37a4345))
+
+---
 ## 2025-06-30
 
 ### Libraries

@@ -544,6 +544,26 @@
 
 
 <h1 id="alloydb-for-postgresql">AlloyDB for PostgreSQL</h1>
+<h2 id="2025-07-14">2025-07-14</h2>
+<h3 id="announcement">Announcement</h3>
+<p>The <a href="/alloydb/omni/current/docs/deploy-kubernetes">AlloyDB Omni Kubernetes operator</a> version 1.5.0 is generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>) and includes the following features and bug fixes:</p>
+<ul>
+<li>You can install the operator using the <a href="https://operator-lifecycle.io/">Operator Lifecycle Manager (OLM)</a> for Kubernetes and OpenShift environments. See "Install the AlloyDB Omni operator" for AlloyDB Omni <a href="/alloydb/omni/15.12.0/docs/deploy-kubernetes#olm">15.12.0</a> and <a href="/alloydb/omni/16.8.0/docs/deploy-kubernetes#olm">16.8.0</a> for details.</li>
+<li>Low downtime, minor version upgrades for a database cluster in a high availability setup are available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. For more information, see "Perform a minor database version upgrade for AlloyDB Omni on Kubernetes" in the documentation for AlloyDB Omni <a href="/alloydb/omni/15.12.0/docs/upgrade-kubernetes-database-minor-version">15.12.0</a> and <a href="/alloydb/omni/16.8.0/docs/upgrade-kubernetes-database-minor-version">16.8.0</a>.</li>
+<li><a href="https://en.wikipedia.org/wiki/Active_Directory">Active Directory</a> authentication integration on your Kubernetes-based AlloyDB Omni database cluster is generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>). For more information, see <a href="/alloydb/omni/16.8.0/docs/integrate-active-directory-kubernetes-operator">Integrate Active Directory with AlloyDB Omni on Kubernetes</a>.</li>
+<li>Active Directory group-based authorization on your Kubernetes-based AlloyDB Omni database cluster is available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. For more information, see <a href="/alloydb/omni/16-next/docs/integrate-ad-group-support-kubernetes-operator">Integrate Active Directory group support on Kubernetes</a>.</li>
+<li>You can configure backups to be taken directly from a standby Kubernetes cluster in a high availability (HA) setup to offload backup operations from your primary instance. See "Backup and restore in Kubernetes" for AlloyDB Omni <a href="/alloydb/omni/15.12.0/docs/backup-kubernetes">15.12.0</a> and <a href="/alloydb/omni/16.8.0/docs/backup-kubernetes">16.8.0</a> for details.</li>
+<li>The operator fully automatically replicates replication slots for cross-data-center replication to work with primary database clusters that have high availability (HA) enabled. You still need to make sure you have reliable and low latency network connectivity between the primary and secondary data centers, which is crucial for cross-data-center replication to function effectively. For more information, see "Work with cross-data-center replication" for AlloyDB Omni <a href="/alloydb/omni/15.12.0/docs/cross-data-center-replication">15.12.0</a> and <a href="/alloydb/omni/16.8.0/docs/cross-data-center-replication">16.8.0</a>.</li>
+<li>AlloyDB Omni Kubernetes images are now built on Red Hat's Universal Base Image (UBI) 9. For more information, see "Install AlloyDB Omni on Kubernetes" for AlloyDB Omni <a href="/alloydb/omni/15.12.0/docs/deploy-kubernetes#base-image">15.12.0</a> and <a href="/alloydb/omni/16.8.0/docs/deploy-kubernetes#base-image">16.8.0</a>.</li>
+<li>AlloyDB AI requires AlloyDB Omni version 15.5.5 or later.</li>
+</ul>
+<h3 id="issue">Issue</h3>
+<p>When upgrading your AlloyDB Omni database clusters, be aware of specific upgrade paths and prerequisites depending on your current <code>controlPlaneAgentsVersion</code> and environment:</p>
+<ul>
+<li>If your database cluster's <code>controlPlaneAgentsVersion</code> is <code>1.0.0</code>, you must first upgrade to <code>1.1.1</code> before you upgrade to <code>1.5.0</code> or higher. You can directly upgrade database clusters with <code>controlPlaneAgentsVersion</code> <code>1.1.0</code> or later to <code>1.5.0</code>.</li>
+<li>If you use an OpenShift database cluster that runs <code>controlPlaneAgentsVersion</code> <code>1.4.1</code> or earlier, you must run prerequisite steps before updating to <code>1.5.0</code>. For more information, see "Update OpenShift database clusters from version <code>1.4.1</code> or earlier" for AlloyDB Omni <a href="/alloydb/omni/15.12.0/docs/upgrade-kubernetes-operator-version#update-openshift">15.12.0</a> and <a href="/alloydb/omni/16.8.0/docs/upgrade-kubernetes-operator-version#update-openshift">16.8.0</a>.</li>
+</ul>
+<hr />
 <h2 id="2025-06-17">2025-06-17</h2>
 <h3 id="feature">Feature</h3>
 <p>You can use the columnar engine to improve the performance of vector similarity
@@ -587,6 +607,9 @@ generally available
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#alloydb-for-postgresql">AlloyDB for PostgreSQL</a></li>
+          <li class="nav-item">
+            <a href="#2025-07-14" class="nav-link">2025-07-14</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-06-17" class="nav-link">2025-06-17</a>
           </li>

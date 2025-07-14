@@ -1,5 +1,22 @@
 # Apigee Advanced API Security
 
+## 2025-07-14
+
+### Announcement
+
+On July 14, 2025 we released an updated version of Advanced API Security
+
+**Note:** Rollouts of this release to production instances will begin within two business days and may take four or more business days to complete across all Google Cloud zones. Your instances may not have the feature available until the rollout is complete.
+
+### Feature
+
+**Support for editing and deleting security actions**
+
+With this release you can edit and delete existing security actions using either the UI or the Apigee Management APIs.
+
+For usage information, see the [security actions documentation](https://cloud.google.com/apigee/docs/api-security/security-actions).
+
+---
 ## 2025-07-01
 
 ### Announcement

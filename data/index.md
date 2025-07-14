@@ -27,6 +27,7 @@
 - [App Hub](services/app-hub.md)
 - [Artifact Registry](services/artifact-registry.md)
 - [Assured Workloads](services/assured-workloads.md)
+- [Backup and DR](services/backup-and-dr.md)
 - [Backup for GKE](services/backup-for-gke.md)
 - [BigQuery](services/bigquery.md)
 - [Bigtable](services/bigtable.md)

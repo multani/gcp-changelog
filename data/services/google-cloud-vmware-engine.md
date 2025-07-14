@@ -1,5 +1,12 @@
 # Google Cloud VMware Engine
 
+## 2025-07-14
+
+### Announcement
+
+VMware Engine `ve2` nodes are now available in the São Paulo, Brazil (`southamerica-east1-c`) zone in the São Paulo region (`southamerica-east1`).
+
+---
 ## 2025-07-07
 
 ### Feature

@@ -22,6 +22,10 @@
 
 ### Feature
 
+[Gemma 3n](https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/gemma3n) models are now available through Model Garden.
+
+### Feature
+
 Multimodal datasets are now available in preview. For more information, see [Multimodal datasets](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/datasets).
 
 ---

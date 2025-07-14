@@ -8,7 +8,7 @@
       
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <title>Google Cloud Armor - Google Cloud Platform Changelog (unofficial, by products)</title>
+      <title>Backup and DR - Google Cloud Platform Changelog (unofficial, by products)</title>
       <script src="../../dist/bundle.js"></script>
     
   </head>
@@ -147,7 +147,7 @@
   </li>
                             
   <li>
-    <a href="../backup-and-dr/" class="dropdown-item">Backup and DR</a>
+    <a href="./" class="dropdown-item active">Backup and DR</a>
   </li>
                             
   <li>
@@ -343,7 +343,7 @@
   </li>
                             
   <li>
-    <a href="./" class="dropdown-item active">Google Cloud Armor</a>
+    <a href="../google-cloud-armor/" class="dropdown-item">Google Cloud Armor</a>
   </li>
                             
   <li>
@@ -513,12 +513,12 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" rel="next" href="../google-cloud-architecture-center/">
+                  <a class="nav-link" rel="next" href="../assured-workloads/">
                     <i class="fa fa-arrow-left"></i> Previous
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" rel="prev" href="../google-cloud-contact-center-as-a-service/">
+                  <a class="nav-link" rel="prev" href="../backup-for-gke/">
                     Next <i class="fa fa-arrow-right"></i>
                   </a>
                 </li>
@@ -540,33 +540,24 @@
       
       
         <li class="breadcrumb-item active" aria-current="page">
-          Google Cloud Armor
+          Backup and DR
         </li>
       
     </ol>
   </nav>
 
 
-<h1 id="google-cloud-armor">Google Cloud Armor</h1>
-<h2 id="2025-07-08">2025-07-08</h2>
-<h3 id="changed">Changed</h3>
-<p>Cloud Armor <a href="https://cloud.google.com/armor/docs/waf-rules">preconfigured WAF rules</a> can now inspect up to the first 64kB (either 8kB, 16kB, 32kB, 48kB, or 64kB) of the POST or PATCH <a href="https://cloud.google.com/armor/docs/security-policy-overview#post-body">request body content</a> in Preview.</p>
-<hr />
-<h2 id="2025-06-27">2025-06-27</h2>
-<h3 id="feature">Feature</h3>
-<p>Cloud Armor's <a href="https://cloud.google.com/armor/docs/hierarchical-policies-overview">Hierarchical security policies</a> facilitate centralized control, enhanced consistency, operational efficiency, and effective delegation of security policy management in Preview.</p>
-<hr />
-<h2 id="2025-06-24">2025-06-24</h2>
-<h3 id="feature_1">Feature</h3>
-<p>Cloud Armor supports <a href="https://cloud.google.com/armor/docs/address-groups-overview#organization-scoped-address-group">organization-scoped address groups</a> for security policies in Preview.</p>
-<hr />
-<h2 id="2025-06-18">2025-06-18</h2>
-<h3 id="feature_2">Feature</h3>
-<p>Cloud Armor supports Network Threat Intelligence (NTI) in <a href="https://cloud.google.com/armor/docs/security-policy-overview#expandable-1">globally scoped edge security policies</a> for Media CDN edge cache services in Preview.</p>
-<hr />
-<h2 id="2025-06-09">2025-06-09</h2>
-<h3 id="changed_1">Changed</h3>
-<p>Cloud Armor support for JA4 rate limiting key is Generally Available. For more information, see <a href="https://cloud.google.com/armor/docs/configure-rate-limiting">Configure rate limiting</a>.</p>
+<h1 id="backup-and-dr">Backup and DR</h1>
+<h2 id="2025-07-11">2025-07-11</h2>
+<h3 id="announcement">Announcement</h3>
+<p>We're excited to announce the launch of Editable Backup Plans, a new feature designed to give you more flexibility and control over your data protection strategy. You can now modify your existing backup plans directly, eliminating the need to create new plans and reassign them when your requirements change. This makes it easier than ever to adapt to evolving business needs, optimize for cost, and correct configuration errors on the fly.</p>
+<p>What's new:</p>
+<ul>
+<li>Directly Edit Key Settings: You can now change the description, schedule, backup window, and retention periods of your existing backup plans. You can also add or remove backup rules as needed.</li>
+<li>Automatic Updates: Once a plan is edited, the changes are automatically applied to all resources protected by that plan for all future backups. There's no need to manually detach and reattach the plan.</li>
+<li>Backward Compatibility: This new capability is available for all backup plans, including those created before this update.</li>
+</ul>
+<p>Important Note: While most settings in a backup plan are now editable, the assigned backup vault cannot be changed. To store backups in a different vault, a new backup plan must be created.</p>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
   <div class="navbar-header">
@@ -577,21 +568,9 @@
 
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
-        <li class="nav-item main"><a class="nav-link" href="#google-cloud-armor">Google Cloud Armor</a></li>
+        <li class="nav-item main"><a class="nav-link" href="#backup-and-dr">Backup and DR</a></li>
           <li class="nav-item">
-            <a href="#2025-07-08" class="nav-link">2025-07-08</a>
-          </li>
-          <li class="nav-item">
-            <a href="#2025-06-27" class="nav-link">2025-06-27</a>
-          </li>
-          <li class="nav-item">
-            <a href="#2025-06-24" class="nav-link">2025-06-24</a>
-          </li>
-          <li class="nav-item">
-            <a href="#2025-06-18" class="nav-link">2025-06-18</a>
-          </li>
-          <li class="nav-item">
-            <a href="#2025-06-09" class="nav-link">2025-06-09</a>
+            <a href="#2025-07-11" class="nav-link">2025-07-11</a>
           </li>
     </ul>
   </div>

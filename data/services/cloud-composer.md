@@ -1,5 +1,19 @@
 # Cloud Composer
 
+## 2025-07-14
+
+### Changed
+
+We're changing the way we provide support dates for Airflow builds in Cloud Composer 3. Before this change, some Airflow builds had their end of support date listed as "To be announced" until a later Airflow version became available. We're deprecating this approach for all builds that are released after July 01, 2025.
+
+We are now providing support dates that depend on a date when a particular Airflow build was released:
+
+* We are introducing the [standard support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support) of 12 months after the release date.
+* All Airflow builds that didn't have an end of support date when this change was introduced are supported until July 1, 2026. Because of this change, some Airflow builds released before July 1, 2025 are supported for longer than the standard support period.
+* All Airflow builds that had their support date shorter than 12 months are now supported for 12 months since the date of their initial release.
+* All builds released after July 1, 2025 will use the standard support period.
+
+---
 ## 2025-07-02
 
 ### Changed

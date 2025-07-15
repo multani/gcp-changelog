@@ -1,5 +1,16 @@
 # BigQuery
 
+## 2025-07-15
+
+### Feature
+
+You can now [commercialize your BigQuery sharing listings on Google Cloud Marketplace](https://cloud.google.com/bigquery/docs/analytics-hub-cloud-marketplace). This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+### Feature
+
+You can flatten [JSON columns](https://cloud.google.com/bigquery/docs/data-prep-get-suggestions#flatten-json) in BigQuery data preparation with a single operation. This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+---
 ## 2025-07-08
 
 ### Announcement

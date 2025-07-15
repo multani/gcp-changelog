@@ -1,5 +1,12 @@
 # Generative AI on Vertex AI
 
+## 2025-07-14
+
+### Feature
+
+[Multimodal MedGemma 27B IT](https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/medgemma;publisherModelVersion=medgemma-27b-it), [MedSigLIP](https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/medsiglip), and [T5Gemma](https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/t5gemma) models are available through Model Garden.
+
+---
 ## 2025-07-08
 
 ### Feature

@@ -29,6 +29,17 @@ To search for an exact match, you can enclose your search query in double quotes
 This feature is Generally available when you use the [`engines.servingConfigs.search`](https://cloud.google.com/generative-ai-app-builder/docs/reference/rest/v1/projects.locations.collections.engines.servingConfigs/search) method to get search results for [custom data](https://cloud.google.com/generative-ai-app-builder/docs/preview-search-results), [media data](https://cloud.google.com/generative-ai-app-builder/docs/get-media-search-results), and [healthcare data](https://cloud.google.com/generative-ai-app-builder/docs/search-hc-data).
 
 ---
+## 2025-06-26
+
+### Feature
+
+**Vertex AI Search: gemini-2.5-flash/answer\_gen/v1 model**
+
+You can generate answers with the Gemini 2.5 Flash (`gemini-2.5-flash`) model. This model is tuned to address context-based question and answering tasks.
+
+For more information, see [Answer generation model versions and lifecycle](https://cloud.google.com/generative-ai-app-builder/docs/answer-generation-models).
+
+---
 ## 2025-06-16
 
 ### Changed

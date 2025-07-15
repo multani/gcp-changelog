@@ -1,5 +1,44 @@
 # Google Kubernetes Engine
 
+## 2025-07-14
+
+### Fixed
+
+Windows NVMe attached disks are supported only in GKE version
+1.33.2-gke.1240000 and later. In earlier GKE versions, creating
+PersistentVolumeClaims on Windows nodes that use NVMe volumes results in errors.
+For more information about the disk interface types that are used by machine
+families, see the Compute Engine
+[Machine series comparison](https://cloud.google.com/compute/docs/machine-resource#machine_type_comparison).
+
+If you have Windows workloads that use machine families that support only NVMe,
+upgrade your clusters to version 1.33.2-gke.1240000 or later.
+
+Spanner
+-------
+
+### Feature
+
+[Spanner Data Boost](https://cloud.google.com/spanner/docs/databoost/databoost-overview) supports data stored on hard disk drives (HDD). This feature is [generally available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+VPC Service Controls
+--------------------
+
+### Feature
+
+[Preview stage](https://cloud.google.com/products#product-launch-stages) support for the following integration:
+
+* [Address Validation API](https://cloud.google.com/vpc-service-controls/docs/supported-products#table_address_validation)
+* [Places (New) API](https://cloud.google.com/vpc-service-controls/docs/supported-products#table_places_new)
+
+Vertex AI
+---------
+
+### Feature
+
+[Multimodal MedGemma 27B IT](https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/medgemma;publisherModelVersion=medgemma-27b-it), [MedSigLIP](https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/medsiglip), and [T5Gemma](https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/t5gemma) models are available through Model Garden.
+
+---
 ## 2025-07-11
 
 ### Changed

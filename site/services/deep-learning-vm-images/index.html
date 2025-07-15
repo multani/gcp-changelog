@@ -8,7 +8,7 @@
       
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <title>AlloyDB for PostgreSQL - Google Cloud Platform Changelog (unofficial, by products)</title>
+      <title>Deep Learning VM Images - Google Cloud Platform Changelog (unofficial, by products)</title>
       <script src="../../dist/bundle.js"></script>
     
   </head>
@@ -51,7 +51,7 @@
   </li>
                             
   <li>
-    <a href="./" class="dropdown-item active">AlloyDB for PostgreSQL</a>
+    <a href="../alloydb-for-postgresql/" class="dropdown-item">AlloyDB for PostgreSQL</a>
   </li>
                             
   <li>
@@ -319,7 +319,7 @@
   </li>
                             
   <li>
-    <a href="../deep-learning-vm-images/" class="dropdown-item">Deep Learning VM Images</a>
+    <a href="./" class="dropdown-item active">Deep Learning VM Images</a>
   </li>
                             
   <li>
@@ -517,12 +517,12 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" rel="next" href="../ai-hypercomputer/">
+                  <a class="nav-link" rel="next" href="../datastream/">
                     <i class="fa fa-arrow-left"></i> Previous
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" rel="prev" href="../alloydb-omni/">
+                  <a class="nav-link" rel="prev" href="../dialogflow/">
                     Next <i class="fa fa-arrow-right"></i>
                   </a>
                 </li>
@@ -544,66 +544,25 @@
       
       
         <li class="breadcrumb-item active" aria-current="page">
-          AlloyDB for PostgreSQL
+          Deep Learning VM Images
         </li>
       
     </ol>
   </nav>
 
 
-<h1 id="alloydb-for-postgresql">AlloyDB for PostgreSQL</h1>
+<h1 id="deep-learning-vm-images">Deep Learning VM Images</h1>
 <h2 id="2025-07-14">2025-07-14</h2>
-<h3 id="announcement">Announcement</h3>
-<p>The <a href="/alloydb/omni/current/docs/deploy-kubernetes">AlloyDB Omni Kubernetes operator</a> version 1.5.0 is generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>) and includes the following features and bug fixes:</p>
+<h3 id="breaking">Breaking</h3>
+<p>The following framework versions have reached their end of patch and support dates:</p>
 <ul>
-<li>You can install the operator using the <a href="https://operator-lifecycle.io/">Operator Lifecycle Manager (OLM)</a> for Kubernetes and OpenShift environments. See "Install the AlloyDB Omni operator" for AlloyDB Omni <a href="/alloydb/omni/15.12.0/docs/deploy-kubernetes#olm">15.12.0</a> and <a href="/alloydb/omni/16.8.0/docs/deploy-kubernetes#olm">16.8.0</a> for details.</li>
-<li>Low downtime, minor version upgrades for a database cluster in a high availability setup are available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. For more information, see "Perform a minor database version upgrade for AlloyDB Omni on Kubernetes" in the documentation for AlloyDB Omni <a href="/alloydb/omni/15.12.0/docs/upgrade-kubernetes-database-minor-version">15.12.0</a> and <a href="/alloydb/omni/16.8.0/docs/upgrade-kubernetes-database-minor-version">16.8.0</a>.</li>
-<li><a href="https://en.wikipedia.org/wiki/Active_Directory">Active Directory</a> authentication integration on your Kubernetes-based AlloyDB Omni database cluster is generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>). For more information, see <a href="/alloydb/omni/16.8.0/docs/integrate-active-directory-kubernetes-operator">Integrate Active Directory with AlloyDB Omni on Kubernetes</a>.</li>
-<li>Active Directory group-based authorization on your Kubernetes-based AlloyDB Omni database cluster is available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. For more information, see <a href="/alloydb/omni/16-next/docs/integrate-ad-group-support-kubernetes-operator">Integrate Active Directory group support on Kubernetes</a>.</li>
-<li>You can configure backups to be taken directly from a standby Kubernetes cluster in a high availability (HA) setup to offload backup operations from your primary instance. See "Backup and restore in Kubernetes" for AlloyDB Omni <a href="/alloydb/omni/15.12.0/docs/backup-kubernetes">15.12.0</a> and <a href="/alloydb/omni/16.8.0/docs/backup-kubernetes">16.8.0</a> for details.</li>
-<li>The operator fully automatically replicates replication slots for cross-data-center replication to work with primary database clusters that have high availability (HA) enabled. You still need to make sure you have reliable and low latency network connectivity between the primary and secondary data centers, which is crucial for cross-data-center replication to function effectively. For more information, see "Work with cross-data-center replication" for AlloyDB Omni <a href="/alloydb/omni/15.12.0/docs/cross-data-center-replication">15.12.0</a> and <a href="/alloydb/omni/16.8.0/docs/cross-data-center-replication">16.8.0</a>.</li>
-<li>AlloyDB Omni Kubernetes images are now built on Red Hat's Universal Base Image (UBI) 9. For more information, see "Install AlloyDB Omni on Kubernetes" for AlloyDB Omni <a href="/alloydb/omni/15.12.0/docs/deploy-kubernetes#base-image">15.12.0</a> and <a href="/alloydb/omni/16.8.0/docs/deploy-kubernetes#base-image">16.8.0</a>.</li>
-<li>AlloyDB AI requires AlloyDB Omni version 15.5.5 or later.</li>
+<li>Base versions with CUDA 12.4 and earlier</li>
+<li>Tensorflow versions 2.17 and earlier</li>
+<li>PyTorch versions 2.3 and earlier</li>
 </ul>
-<h3 id="issue">Issue</h3>
-<p>When upgrading your AlloyDB Omni database clusters, be aware of specific upgrade paths and prerequisites depending on your current <code>controlPlaneAgentsVersion</code> and environment:</p>
-<ul>
-<li>If your database cluster's <code>controlPlaneAgentsVersion</code> is <code>1.0.0</code>, you must first upgrade to <code>1.1.1</code> before you upgrade to <code>1.5.0</code> or higher. You can directly upgrade database clusters with <code>controlPlaneAgentsVersion</code> <code>1.1.0</code> or later to <code>1.5.0</code>.</li>
-<li>If you use an OpenShift database cluster that runs <code>controlPlaneAgentsVersion</code> <code>1.4.1</code> or earlier, you must run prerequisite steps before updating to <code>1.5.0</code>. For more information, see "Update OpenShift database clusters from version <code>1.4.1</code> or earlier" for AlloyDB Omni <a href="/alloydb/omni/15.12.0/docs/upgrade-kubernetes-operator-version#update-openshift">15.12.0</a> and <a href="/alloydb/omni/16.8.0/docs/upgrade-kubernetes-operator-version#update-openshift">16.8.0</a>.</li>
-</ul>
-<hr />
-<h2 id="2025-06-17">2025-06-17</h2>
-<h3 id="feature">Feature</h3>
-<p>You can use the columnar engine to improve the performance of vector similarity
-searches, specifically K-Nearest Neighbor (KNN) searches, when combined with
-highly-selective predicate filtering. For more information, see
-<a href="https://cloud.google.com/alloydb/docs/ai/perform-vector-search#accelerate-filtered-vector-search">Accelerate your filtered vector search</a>. This feature is in
-<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
-<hr />
-<h2 id="2025-06-02">2025-06-02</h2>
-<h3 id="feature_1">Feature</h3>
-<p>You can let <a href="https://cloud.google.com/alloydb/docs/configure-private-service-connect#create_the_endpoint_automatically">AlloyDB automatically create Private Service Connect endpoints</a>
-for authorized projects when you create Private Service Connect-enabled
-instances, based on your defined service connection policy. This feature is generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).</p>
-<h3 id="feature_2">Feature</h3>
-<p>You can create AlloyDB clusters with <a href="https://cloud.google.com/alloydb/docs/configure-private-service-connect#create_the_endpoint_automatically">Private Services Connect</a> through the Google Cloud console.</p>
-<hr />
-<h2 id="2025-05-29">2025-05-29</h2>
-<h3 id="feature_3">Feature</h3>
-<p>You can now
-<a href="https://cloud.google.com/alloydb/docs/instance-start-stop-restart">start, stop, and restart your primary and read pool AlloyDB instances</a>
-using the Google Cloud console and the Google Cloud CLI. This feature is
-generally available
-(<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).</p>
-<hr />
-<h2 id="2025-05-27">2025-05-27</h2>
-<h3 id="feature_4">Feature</h3>
-<p>The <a href="/alloydb/omni/current/docs/deploy-kubernetes">AlloyDB Omni Kubernetes</a> operator version 1.4.1 is generally available (GA) and includes the following bug fixes:</p>
-<ul>
-<li>Fix for overriding replication related parameters. This fix lets you override the <code>wal_keep_size</code> value. For more information, see <a href="/alloydb/omni/current/docs/cross-data-center-replication/work-with-cross-data-center-replication">Work with cross-data-center replication</a>. This fix requires database version 15.7.1 or later.</li>
-<li>63-character DBCluster names are supported, which lets you define clearer and more descriptive cluster names.</li>
-<li>Various bug fixes are implemented to enhance stability and the user experience.</li>
-</ul>
+<p>To view the end of patch and support dates, see <a href="https://cloud.google.com/deep-learning-vm/docs/images#supported-frameworks">Supported framework versions</a>.</p>
+<p>For more information on what the end of patch and support date means, see <a href="https://cloud.google.com/deep-learning-vm/docs/framework-support-policy#support_policy_schedule">Support policy schedule</a>.</p>
+<p>If you must use an image after deprecation against Google security recommendations and at your own risk, see <a href="https://cloud.google.com/deep-learning-vm/docs/images#after-deprecation">After deprecation</a>.</p>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
   <div class="navbar-header">
@@ -614,21 +573,9 @@ generally available
 
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
-        <li class="nav-item main"><a class="nav-link" href="#alloydb-for-postgresql">AlloyDB for PostgreSQL</a></li>
+        <li class="nav-item main"><a class="nav-link" href="#deep-learning-vm-images">Deep Learning VM Images</a></li>
           <li class="nav-item">
             <a href="#2025-07-14" class="nav-link">2025-07-14</a>
-          </li>
-          <li class="nav-item">
-            <a href="#2025-06-17" class="nav-link">2025-06-17</a>
-          </li>
-          <li class="nav-item">
-            <a href="#2025-06-02" class="nav-link">2025-06-02</a>
-          </li>
-          <li class="nav-item">
-            <a href="#2025-05-29" class="nav-link">2025-05-29</a>
-          </li>
-          <li class="nav-item">
-            <a href="#2025-05-27" class="nav-link">2025-05-27</a>
           </li>
     </ul>
   </div>

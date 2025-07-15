@@ -70,6 +70,7 @@
 - [Dataplex](services/dataplex.md)
 - [Dataproc](services/dataproc.md)
 - [Datastream](services/datastream.md)
+- [Deep Learning VM Images](services/deep-learning-vm-images.md)
 - [Dialogflow](services/dialogflow.md)
 - [Document AI](services/document-ai.md)
 - [Filestore](services/filestore.md)

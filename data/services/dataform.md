@@ -1,5 +1,12 @@
 # Dataform
 
+## 2025-07-14
+
+### Feature
+
+Updates to the automatic cataloging of Dataform metadata in Dataplex improve the near real-time [management](https://cloud.google.com/dataplex/docs/catalog-overview) and [search](https://cloud.google.com/dataplex/docs/search-assets) capabilities for repository metadata. These features are [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+---
 ## 2025-06-12
 
 ### Announcement

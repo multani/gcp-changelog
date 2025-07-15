@@ -1,5 +1,20 @@
 # Gemini Code Assist
 
+## 2025-07-15
+
+### Announcement
+
+
+
+### Thinking tokens
+
+You'll see thinking insights into Gemini's thought process before Gemini Code
+Assist produces a response, to show you that Gemini is actively working on your
+request.
+
+![Thinking tokens in VS Code Gemini Code Assist.](/gemini/images/release-notes-images/vscode-thinking-tokens.gif)
+
+---
 ## 2025-07-01
 
 ### Announcement

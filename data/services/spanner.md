@@ -1,5 +1,12 @@
 # Spanner
 
+## 2025-07-14
+
+### Feature
+
+[Spanner Data Boost](https://cloud.google.com/spanner/docs/databoost/databoost-overview) supports data stored on hard disk drives (HDD). This feature is [generally available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+---
 ## 2025-06-30
 
 ### Feature

@@ -1,5 +1,18 @@
 # Virtual Private Cloud
 
+## 2025-07-09
+
+### Feature
+
+Dynamic Private Service Connect interfaces are available in **Preview**. You can update VM instances to add or remove dynamic Private Service Connect interfaces without restarting or recreating the instance.
+
+For more information, see [Private Service Connect interface types](https://cloud.google.com/vpc/docs/about-private-service-connect-interfaces#types).
+
+### Feature
+
+VPC Network Peering supports peering connections in consensus mode. This feature is available in **Preview**. For more information, see [Update strategy](https://cloud.google.com/vpc/docs/using-vpc-peering#update-strategy).
+
+---
 ## 2025-07-08
 
 ### Feature

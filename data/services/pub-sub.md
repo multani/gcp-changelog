@@ -1,5 +1,26 @@
 # Pub/Sub
 
+## 2025-07-14
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Python
+
+### Changes for [google-cloud-pubsub](https://github.com/googleapis/python-pubsub)
+
+#### [2.31.0](https://github.com/googleapis/python-pubsub/compare/v2.30.0...v2.31.0) (2025-06-26)
+
+##### Features
+
+* Add MessageTransformationFailureReason to IngestionFailureEvent ([#1427](https://github.com/googleapis/python-pubsub/issues/1427)) ([8ab13e1](https://github.com/googleapis/python-pubsub/commit/8ab13e1b71c151f0146548e7224dd38c9d719a88))
+
+##### Bug Fixes
+
+* Surface Fatal Stream Errors to Future; Adjust Retryable Error Codes ([#1422](https://github.com/googleapis/python-pubsub/issues/1422)) ([e081beb](https://github.com/googleapis/python-pubsub/commit/e081beb29056035304d365ec9c50fa7ffbac6886))
+
+---
 ## 2025-06-30
 
 ### Libraries

@@ -20,6 +20,7 @@
 - [Apigee hybrid](services/apigee-hybrid.md)
 - [App Engine flexible environment PHP](services/app-engine-flexible-environment-php.md)
 - [App Engine flexible environment Ruby](services/app-engine-flexible-environment-ruby.md)
+- [App Engine standard environment Go](services/app-engine-standard-environment-go.md)
 - [App Engine standard environment Java](services/app-engine-standard-environment-java.md)
 - [App Engine standard environment PHP](services/app-engine-standard-environment-php.md)
 - [App Engine standard environment Python](services/app-engine-standard-environment-python.md)

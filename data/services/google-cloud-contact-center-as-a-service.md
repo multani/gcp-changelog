@@ -8,7 +8,7 @@
 
 Mobile SDK 2.13 includes the following updates:
 
-* End-users can download chat transcripts to their devices during a session or after a session ends.
+* End-users can download chat transcripts to their devices during a session or after a session ends. For more information, see [Download chat transcripts using the web SDK and mobile SDKs](https://cloud.google.com/contact-center/ccai-platform/docs/chat-transcripts#download_chat_transcripts_using_the_web_sdk_and_mobile_sdks).
 * The user experience with post-session virtual assistants is improved in the following ways:
 
   + You can configure an opt-in banner to appear for the post-session virtual assistant experience.

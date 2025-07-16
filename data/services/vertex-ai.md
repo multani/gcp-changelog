@@ -1,5 +1,12 @@
 # Vertex AI
 
+## 2025-07-16
+
+### Feature
+
+Added [Gemma 3](https://github.com/GoogleCloudPlatform/vertex-ai-samples/blob/main/notebooks/community/model_garden/model_garden_axolotl_gemma3_finetuning.ipynb) fine-tuning notebook using Axolotl docker with support for 1b, 4b, 12b, and 27b variants.
+
+---
 ## 2025-07-14
 
 ### Feature

@@ -14,6 +14,13 @@ families, see the Compute Engine
 If you have Windows workloads that use machine families that support only NVMe,
 upgrade your clusters to version 1.33.2-gke.1240000 or later.
 
+Security Command Center
+-----------------------
+
+### Changed
+
+In the [Google Kubernetes Engine (GKE) security posture dashboard](https://cloud.google.com/security-command-center/docs/concepts-security-sources#gke-security-posture-dashboard), the software vulnerabilities pane is available in [Preview](https://cloud.google.com/products#product-launch-stages), not General Availability.
+
 Spanner
 -------
 

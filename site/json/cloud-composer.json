@@ -7,6 +7,32 @@
         "content": "We're changing the way we provide support dates for Airflow builds in Cloud Composer 3. Before this change, some Airflow builds had their end of support date listed as \"To be announced\" until a later Airflow version became available. We're deprecating this approach for all builds that are released after July 01, 2025.\n\nWe are now providing support dates that depend on a date when a particular Airflow build was released:\n\n* We are introducing the [standard support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support) of 12 months after the release date.\n* All Airflow builds that didn't have an end of support date when this change was introduced are supported until July 1, 2026. Because of this change, some Airflow builds released before July 1, 2025 are supported for longer than the standard support period.\n* All Airflow builds that had their support date shorter than 12 months are now supported for 12 months since the date of their initial release.\n* All builds released after July 1, 2025 will use the standard support period."
       }
     ],
+    "2025-07-09": [
+      {
+        "kind": "Announcement",
+        "content": "A new Cloud Composer release has started on **July 9, 2025**. Get ready for upcoming changes and features as we roll out the new release to all regions. This release is in progress at the moment. Listed changes and features might not be available in some regions yet."
+      },
+      {
+        "kind": "Changed",
+        "content": "We are gradually rolling out a change that **switches the default version** from Cloud Composer 2 to Cloud Composer 3 in the Cloud Composer API.\n\nIn regions where the change is rolled out, a Cloud Composer 3 environment is created by default when a version is not specified in Google Cloud CLI, Cloud Composer API, or Terraform. If you use automation scripts to provision Cloud Composer 2 environments, make sure that you explicitly specify a Cloud Composer 2 version.\n\nIn this release, the change is rolling out in the following regions: africa-south1, asia-northeast2, asia-south2, asia-southeast2, europe-southwest1, europe-west10, europe-west12, europe-west8, me-central1, me-central2, me-west1, southamerica-west1, and us-south1."
+      },
+      {
+        "kind": "Changed",
+        "content": "*(Available without upgrading)* During Cloud Composer 2 environment operations, a more informative error message is returned when an environment's web server has connectivity issues."
+      },
+      {
+        "kind": "Changed",
+        "content": "New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3) are available in Cloud Composer 3:\n\n* [composer-3-airflow-2.10.5-build.9](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-9) (default)\n* [composer-3-airflow-2.9.3-build.29](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-29)"
+      },
+      {
+        "kind": "Changed",
+        "content": "New [images](https://cloud.google.com/composer/docs/composer-versions#images-composer-2) are available in Cloud Composer 2:\n\n* [composer-2.13.7-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-13-5-airflow-2-10-5) (default)\n* [composer-2.13.7-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-13-5-airflow-2-9-3)"
+      },
+      {
+        "kind": "Deprecated",
+        "content": "Cloud Composer versions 2.8.4 and 2.8.5 have reached their [end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support)."
+      }
+    ],
     "2025-07-02": [
       {
         "kind": "Changed",

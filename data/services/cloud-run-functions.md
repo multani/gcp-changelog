@@ -1,5 +1,12 @@
 # Cloud Run functions
 
+## 2025-07-15
+
+### Feature
+
+Support for the [Go 1.24 runtime](https://cloud.google.com/functions/docs/concepts/execution-environment#go) is in [Preview](https://cloud.google.com/products/?_gl=1*dplot*_ga*MTM2MDk5MzEzMi4xNzQ1ODg0OTY5*_ga_4LYFWVHBEB*MTc0NjE0MTA3Ny4yMi4xLjE3NDYxNDEwOTYuMC4wLjA.#product-launch-stages).
+
+---
 ## 2025-06-17
 
 ### Feature

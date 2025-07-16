@@ -1,5 +1,12 @@
 # Security Command Center
 
+## 2025-07-14
+
+### Changed
+
+In the [Google Kubernetes Engine (GKE) security posture dashboard](https://cloud.google.com/security-command-center/docs/concepts-security-sources#gke-security-posture-dashboard), the software vulnerabilities pane is available in [Preview](https://cloud.google.com/products#product-launch-stages), not General Availability.
+
+---
 ## 2025-07-11
 
 ### Feature

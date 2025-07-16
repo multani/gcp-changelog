@@ -18,6 +18,7 @@
 - [Apigee UI](services/apigee-ui.md)
 - [Apigee X](services/apigee-x.md)
 - [Apigee hybrid](services/apigee-hybrid.md)
+- [App Engine flexible environment Go](services/app-engine-flexible-environment-go.md)
 - [App Engine flexible environment PHP](services/app-engine-flexible-environment-php.md)
 - [App Engine flexible environment Ruby](services/app-engine-flexible-environment-ruby.md)
 - [App Engine standard environment Go](services/app-engine-standard-environment-go.md)

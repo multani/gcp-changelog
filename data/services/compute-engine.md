@@ -1,5 +1,30 @@
 # Compute Engine
 
+## 2025-07-15
+
+### Changed
+
+Compute flexible committed use discounts (CUDs) offer expanded coverage by
+supporting the following resources and services:
+
+* Memory-optimized M1, M2, M3, and M4 VMs
+* Compute-optimized H3 instances
+* Cloud Run services with request-based billing
+* Cloud Run Functions
+
+To receive the expanded coverage for flexible CUDs, you must opt in to the new
+spend-based CUD model. Cloud Billing accounts that meet specific criteria are
+automatically opted into the new model. On January 21, 2026, all remaining
+accounts will automatically migrate to the new model. You can opt in before that
+date to start receiving the expanded coverage. To learn more about the new model
+and the opt-in details, see
+[Spend-based CUDs program improvements](https://cloud.google.com/docs/cuds-multiprice).
+
+To learn more about this change and how your flexible CUDs apply after you opt
+in, see
+[Compute flexible CUDs](https://cloud.google.com/compute/docs/instances/committed-use-discounts-overview#spend_based).
+
+---
 ## 2025-07-02
 
 ### Feature

@@ -1,5 +1,35 @@
 # Dataproc
 
+## 2025-07-15
+
+### Announcement
+
+**Dataproc on Compute Engine:** Starting August 18, 2025, the following diagnostic properties will be enabled by default for newly created Dataproc clusters:
+
+* `dataproc:diagnostic.capture.enabled`: Enables the collection of [checkpoint data](https://cloud.google.com/dataproc/docs/support/diagnose-clusters#checkpoint_data) in the cluster [temp bucket](https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/staging-bucket).
+* `dataproc:dataproc.logging.extended.enabled`: Enables the collection of logs for the [Knox, Zeppelin, Ranger-usersync, Jupyter\_notebook, Jupyter\_kernel\_gateway components](https://cloud.google.com/dataproc/docs/concepts/components/overview) and the [Spark History-Server](https://cloud.google.com/dataproc/docs/concepts/jobs/history-server) in [Cloud Logging](https://cloud.google.com/dataproc/docs/guides/logging#cluster_logs_in).
+* `dataproc:dataproc.logging.syslog.enabled`: Enables the collection of VM syslogs in [Cloud Logging](https://cloud.google.com/dataproc/docs/guides/logging#cluster_logs_in).
+
+  To continue using the [Ops Agent](https://cloud.google.com/stackdriver/docs/solutions/agents/ops-agent) initialization action [`opsagent.sh`](https://github.com/GoogleCloudDataproc/initialization-actions/blob/main/opsagent/opsagent.sh) to ingest syslogs from Dataproc cluster nodes, do one of the following:
+
+  + Recommended: Use [`opsagent_nosyslog.sh`](https://github.com/GoogleCloudDataproc/initialization-actions/blob/main/opsagent/opsagent_nosyslog.sh) since
+    VM syslogs will now be emitted by default from Dataproc clusters.
+  + Set the `dataproc:dataproc.logging.syslog.enabled=false` and continue using [`opsagent.sh`](https://github.com/GoogleCloudDataproc/initialization-actions/blob/main/opsagent/opsagent.sh)
+    to ingest syslogs.
+
+**Note:** To disable any of these features, set the corresponding property to `false` during cluster creation.
+
+### Announcement
+
+New [Dataproc on Compute Engine subminor image versions](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):
+
+`2.3.6-debian12`, `2.3.6-ubuntu22`, and `2.3.6-rocky9`.
+
+### Feature
+
+Dataproc now allows Dynamic update of [multi-tenancy clusters](https://cloud.google.com/dataproc/docs/concepts/iam/sa-multi-tenancy#create_a_secure_multi-tenancy_cluster).
+
+---
 ## 2025-07-07
 
 ### Feature
@@ -14,6 +44,10 @@ The [Cluster Scheduled Stop](https://cloud.google.com/dataproc/docs/concepts/con
 New [Dataproc on Compute Engine subminor image versions](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):
 
 `2.3.5-debian12`, `2.3.5-ubuntu22`, and `2.3.5-rocky9`.
+
+### Changed
+
+[**Serverless for Apache Spark**](https://cloud.google.com/dataproc-serverless/docs) (formerly known as **Dataproc Serverless for Spark**) now supports [OS Login organization policy](https://cloud.google.com/compute/docs/oslogin/manage-oslogin-in-an-org#set-org-policy). Organizations, folders, and projects that enforce the OS Login policy can now use Serverless for Apache Spark.
 
 ---
 ## 2025-07-01

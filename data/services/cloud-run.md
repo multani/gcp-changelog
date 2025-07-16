@@ -1,5 +1,20 @@
 # Cloud Run
 
+## 2025-07-15
+
+### Feature
+
+Compute flexible committed use discounts (CUDs) have expanded to also cover your Cloud Billing account's spend across Cloud Run services with request-based billing and Cloud Run functions.
+
+The [improved spend-based CUD experience](https://cloud.google.com/docs/cuds-multiprice) is available without requiring an opt-in for new users or users who don't have an active spend-based CUD.
+
+To learn more about how opting into the new model affects your flexible CUDs, see [Committed use discounts](https://cloud.google.com/run/cud).
+
+### Feature
+
+Support for the [Go 1.24 runtime](https://cloud.google.com/run/docs/runtime-support#go) is in [Preview](https://cloud.google.com/products?e=48754805&hl=en#product-launch-stages).
+
+---
 ## 2025-06-30
 
 ### Feature

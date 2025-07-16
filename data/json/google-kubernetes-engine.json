@@ -1,6 +1,12 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2025-07-16": [
+      {
+        "kind": "Changed",
+        "content": "To enable upcoming support for mTLS and client certificates, Google Front Ends\n(GFEs) that power GKE DNS-based control plane public endpoints will add client\ncertificate requests during the TLS handshake. Requests are already incorporated\ninto GKE DNS-based control plane public endpoints where hostnames end with\n`us-central1.gke.goog`. For all other GKE DNS-based control plane public\nendpoints, this will roll out between August 18, 2025 and August 22, 2025.\n\nUntil mTLS and client certificate configuration options are available, the\nfollowing details apply:\n\n* A client certificate request in a TLS handshake *doesn't* mean that `kubectl`\n  (or other compatible clients) must provide a client certificate. Client\n  certificates are neither mandatory nor configurable.\n* TLS libraries in current operating systems send a \"no client certificate\"\n  response to the public endpoint's client certificate request.\n* GKE DNS-based control plane public endpoints will **not** enforce client\n  certificates or mTLS requirements until a future announcement about\n  configuration options.\n\nIf you use an intermediate proxy between `kubectl` (or other compatible\nclients) and a GKE DNS-based control plane public endpoint, ensure that it fully\nadheres to\n[Section 7.4.4 of RFC 5246](https://datatracker.ietf.org/doc/html/rfc5246#section-7.4.4),\n[Section 4.4.2 of RFC 8446](https://datatracker.ietf.org/doc/html/rfc8446#section-4.4.2),\nor\n[Section 4.4.2.4 of RFC 8446](https://datatracker.ietf.org/doc/html/rfc8446#section-4.4.2.4).\n\nVertex AI\n---------\n\n### Feature\n\nAdded [Gemma 3](https://github.com/GoogleCloudPlatform/vertex-ai-samples/blob/main/notebooks/community/model_garden/model_garden_axolotl_gemma3_finetuning.ipynb) fine-tuning notebook using Axolotl docker with support for 1b, 4b, 12b, and 27b variants."
+      }
+    ],
     "2025-07-14": [
       {
         "kind": "Fixed",

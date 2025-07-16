@@ -1,5 +1,44 @@
 # Google Kubernetes Engine
 
+## 2025-07-16
+
+### Changed
+
+To enable upcoming support for mTLS and client certificates, Google Front Ends
+(GFEs) that power GKE DNS-based control plane public endpoints will add client
+certificate requests during the TLS handshake. Requests are already incorporated
+into GKE DNS-based control plane public endpoints where hostnames end with
+`us-central1.gke.goog`. For all other GKE DNS-based control plane public
+endpoints, this will roll out between August 18, 2025 and August 22, 2025.
+
+Until mTLS and client certificate configuration options are available, the
+following details apply:
+
+* A client certificate request in a TLS handshake *doesn't* mean that `kubectl`
+  (or other compatible clients) must provide a client certificate. Client
+  certificates are neither mandatory nor configurable.
+* TLS libraries in current operating systems send a "no client certificate"
+  response to the public endpoint's client certificate request.
+* GKE DNS-based control plane public endpoints will **not** enforce client
+  certificates or mTLS requirements until a future announcement about
+  configuration options.
+
+If you use an intermediate proxy between `kubectl` (or other compatible
+clients) and a GKE DNS-based control plane public endpoint, ensure that it fully
+adheres to
+[Section 7.4.4 of RFC 5246](https://datatracker.ietf.org/doc/html/rfc5246#section-7.4.4),
+[Section 4.4.2 of RFC 8446](https://datatracker.ietf.org/doc/html/rfc8446#section-4.4.2),
+or
+[Section 4.4.2.4 of RFC 8446](https://datatracker.ietf.org/doc/html/rfc8446#section-4.4.2.4).
+
+Vertex AI
+---------
+
+### Feature
+
+Added [Gemma 3](https://github.com/GoogleCloudPlatform/vertex-ai-samples/blob/main/notebooks/community/model_garden/model_garden_axolotl_gemma3_finetuning.ipynb) fine-tuning notebook using Axolotl docker with support for 1b, 4b, 12b, and 27b variants.
+
+---
 ## 2025-07-14
 
 ### Fixed

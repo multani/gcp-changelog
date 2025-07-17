@@ -1,5 +1,49 @@
 # Google SecOps Marketplace
 
+## 2025-07-16
+
+### Feature
+
+**Google Chronicle**: Version 62.0
+
+* The following new actions have been added:
+
+  + **Remove Rows From Data Table**
+  + **Get Data Tables**
+  + **Is Value In Data Table**
+  + **Add Rows To Data Table**
+
+### Changed
+
+**Azure Security Center**: Version 11.0
+
+* **Integration**: Refactored the integration code to support the updated API.
+
+### Changed
+
+**Mandiant Threat Intelligence**: Version 14.0
+
+* Improved entity processing logic in the following action:
+
+  + **Enrich Entities**
+
+### Changed
+
+**Microsoft Azure Sentinel**: Version 55.0
+
+* Updated logger initialization in the following connector:
+
+  + **Microsoft Azure Sentinel - Incident Connector v2**
+
+### Changed
+
+**MySQL**: Version 5.0
+
+* Refined query processing in the following action:
+
+  + **Run SQL Query**
+
+---
 ## 2025-07-09
 
 ### Changed

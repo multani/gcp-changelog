@@ -1,5 +1,17 @@
 # BigQuery
 
+## 2025-07-16
+
+### Feature
+
+You can now add comments to [notebooks](https://cloud.google.com/bigquery/docs/create-notebooks#create-notebook-console), [data canvases](https://cloud.google.com/bigquery/docs/data-canvas#work-with-data-canvas), [data preparation files](https://cloud.google.com/bigquery/docs/data-prep-get-suggestions#open-data-prep-editor), or [saved queries](https://cloud.google.com/bigquery/docs/work-with-saved-queries#create_saved_queries). You can also reply to existing comments or get a link to them. This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+You can now create [BigQuery ML models by using the
+Google Cloud console user interface](https://cloud.google.com/bigquery/docs/create-machine-learning-model-console). This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2025-07-15
 
 ### Feature

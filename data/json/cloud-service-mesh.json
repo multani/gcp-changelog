@@ -1,6 +1,24 @@
 {
   "name": "Cloud Service Mesh",
   "entries": {
+    "2025-07-16": [
+      {
+        "kind": "Announcement",
+        "content": "**1.26.0-asm.11 is now available for in-cluster Cloud Service Mesh.**\n\nYou can now download 1.26.0-asm.11 for in-cluster Cloud Service Mesh. It includes the features of [Istio 1.26.0](https://istio.io/latest/news/releases/1.26.x/announcing-1.26/) subject to the list of [supported features](https://cloud.google.com/service-mesh/docs/supported-features-in-cluster).\n\nThe following environment variables and annotations are not supported:\n\n* `ENABLE_GATEWAY_API_MANUAL_DEPLOYMENT`\n* `RETRY_IGNORE_PREVIOUS_HOSTS`\n* `ENABLE_CLUSTER_TRUST_BUNDLE_API`\n* `OMIT_EMPTY_VALUES`\n* `PILOT_SPAWN_UPSTREAM_SPAN_FOR_GATEWAY`\n* `MAX_CONNECTIONS_PER_SOCKET_EVENT_LOOP` with the value 1\n* Referencing ConfigMaps in a DestinationRule with TLS mode set to SIMPLE mode is not supported\n\nThe `ENABLE_AUTO_SNI` flag is still supported to stay aligned with the legacy behavior.\n\nFor details on upgrading Cloud Service Mesh, see [Upgrade Cloud Service Mesh](https://cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service Mesh version 1.26.0-asm.11 uses Envoy v1.34.2-dev."
+      },
+      {
+        "kind": "Announcement",
+        "content": "In-cluster Cloud Service Mesh 1.23 is no longer supported. For more information and to view the earliest end-of-life dates for other versions, see [Supported versions](https://cloud.google.com/service-mesh/docs/supported-features-in-cluster#supported_versions)."
+      },
+      {
+        "kind": "Announcement",
+        "content": "**1.25.3-asm.11 is now available for in-cluster Cloud Service Mesh.**\n\nYou can now download 1.25.3-asm.11 for in-cluster Cloud Service Mesh. It includes the features of [Istio 1.25.3](https://istio.io/latest/news/releases/1.25.x/announcing-1.25.3/) subject to the list of [supported features](https://cloud.google.com/service-mesh/docs/supported-features-in-cluster). Cloud Service Mesh version 1.25.3-asm.11 uses envoy v1.33.4-dev.\n\nFor details on upgrading Cloud Service Mesh, see [Upgrade Cloud Service Mesh](https://cloud.google.com/service-mesh/v1.25/docs/upgrade/upgrade)."
+      },
+      {
+        "kind": "Announcement",
+        "content": "**1.24.6-asm.9 is now available for in-cluster Cloud Service Mesh.**\n\nYou can now download 1.24.6-asm.9 for in-cluster Cloud Service Mesh. It includes the features of [Istio 1.24.6](https://istio.io/latest/news/releases/1.24.x/announcing-1.24.6/) subject to the list of [supported features](https://cloud.google.com/service-mesh/v1.24/docs/supported-features-in-cluster). Cloud Service Mesh version 1.24.6-asm.9 uses envoy v1.32.7-dev.\n\nFor details on upgrading Cloud Service Mesh, see [Upgrade Cloud Service Mesh](https://cloud.google.com/service-mesh/v1.24/docs/upgrade/upgrade)."
+      }
+    ],
     "2025-07-09": [
       {
         "kind": "Announcement",

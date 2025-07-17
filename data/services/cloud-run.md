@@ -1,5 +1,12 @@
 # Cloud Run
 
+## 2025-07-16
+
+### Feature
+
+You can [disable the built-in `run.app` URL](https://cloud.google.com/run/docs/securing/ingress) of a Cloud Run service to ensure that traffic can only ingress through paths that you've explicitly configured ([GA](https://cloud.google.com/products#product-launch-stages)).
+
+---
 ## 2025-07-15
 
 ### Feature

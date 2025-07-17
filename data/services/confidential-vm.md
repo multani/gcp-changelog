@@ -1,5 +1,17 @@
 # Confidential VM
 
+## 2025-07-14
+
+### Issue
+
+As of June 20, 2025, Confidential VM instances using AMD SEV-SNP or Intel TDX do not support remote attestation when running the following guest OS images:
+
+* SLES 15 SP7
+* Ubuntu 25.04
+
+To restore remote attestation, use an earlier guest OS version such as SLES 15 SP6 or Ubuntu 24.04.
+
+---
 ## 2025-06-13
 
 ### Feature

@@ -1,5 +1,14 @@
 # Compute Engine
 
+## 2025-07-18
+
+### Feature
+
+**Generally available**: You can create instant and standard snapshots from Hyperdisk volumes in multi-writer mode. You can also clone Hyperdisk volumes in multi-writer mode.
+
+For more information, see [Share disks between instances](https://cloud.google.com/compute/docs/disks/sharing-disks-between-vms).
+
+---
 ## 2025-07-15
 
 ### Changed

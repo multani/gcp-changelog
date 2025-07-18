@@ -6,6 +6,10 @@
 
 General availability: The Go Pub/Sub client library has a new major version. For more information on how to migrate from v1 to v2, see the [Migration guide](https://github.com/googleapis/google-cloud-go/blob/main/pubsub/MIGRATING.md).
 
+### Deprecated
+
+**Deprecated:** The v1 Pub/Sub Go client library, [cloud.google.com/go/pubsub](http://cloud.google.com/go/pubsub), is now deprecated. Effective July 31st, 2026, this library will no longer receive security or bug fixes. To receive new features, [migrate](https://github.com/googleapis/google-cloud-go/blob/main/pubsub/MIGRATING.md) to the newest version, [cloud.google.com/go/pubsub/v2](http://cloud.google.com/go/pubsub/v2).
+
 ---
 ## 2025-07-14
 

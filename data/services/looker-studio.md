@@ -14,10 +14,10 @@ Looker Studio report viewers can now [report abusive content](https://cloud.goog
 
 Report viewers may notice improved performance when the report uses a BigQuery data source.
 
-The BigQuery connector supports short query optimized mode. In this mode, when BigQuery determines it can finish a query quickly, BigQuery prioritizes returning immediate results instead of creating a BigQuery job. Short query optimized mode may apply in the following situations:
+The BigQuery connector supports short query optimized mode. In this mode, when BigQuery determines that it can finish a query quickly, BigQuery prioritizes returning immediate results instead of creating a BigQuery job. Short query optimized mode may apply in the following situations:
 
 * When the data source uses Viewer's Credentials
-* When the data source uses Owner's Credentials but you are not the credential owner.
+* When the data source uses Owner's Credentials but you are not the credential owner
 
 There is no change in user experience or report behavior for data source credential owners.
 

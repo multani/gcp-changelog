@@ -1,5 +1,12 @@
 # Generative AI on Vertex AI
 
+## 2025-07-17
+
+### Announcement
+
+**Veo 3** preview models now support upscaling for 1080p resolution using the new `resolution` parameter. For more information, see [Veo on Vertex AI](https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/veo-video-generation#resolution).
+
+---
 ## 2025-07-16
 
 ### Feature

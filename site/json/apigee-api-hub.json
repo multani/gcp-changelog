@@ -1,6 +1,24 @@
 {
   "name": "Apigee API hub",
   "entries": {
+    "2025-07-18": [
+      {
+        "kind": "Feature",
+        "content": "**Apigee and hybrid plugin instance management**\n\nYou can now create and delete plugin instances for Apigee and Apigee Hybrid while associating the respective Apigee runtime projects to API hub.\n\nFor more information, see [Auto-register Apigee proxies](https://cloud.google.com/apigee/docs/apihub/auto-register-apigee-proxies)."
+      },
+      {
+        "kind": "Breaking",
+        "content": "**Apigee and Apigee hybrid plugin creation now requires source project ID**\n\nWhen creating new instances of the **Apigee X and hybrid** plugin, you must now provide a source project ID. This source project ID is the Google Cloud project from which the plugin will import data.\n\nThis is a breaking change and will affect any existing API calls that create these plugins without explicitly providing this ID.\n\n**Action Required:** Update your API calls to include the appropriate source project ID when creating new Apigee X and hybrid plugins. Failing to do so will result in creation errors."
+      },
+      {
+        "kind": "Changed",
+        "content": "**Edit plugin instances changes**\n\nYou can now change or modify the name and curation logic of your plugin instance.\n\nFor more information, see [Edit a plugin instance](https://cloud.google.com/apigee/docs/apihub/manage-plugin-instances#edit-plugin-instance)."
+      },
+      {
+        "kind": "Changed",
+        "content": "**Resource URI format for Apigee deployments**\n\nTo ensure optimal functionality and consistency while creating or updating **Apigee** deployments, we now recommend that the **Resource URI** conforms to the following format:\n`organizations/([^/]+)/environments/([^/]+)/apis/([^/]+)$`\n\nFor more information, see [Introduction to deployments](https://cloud.google.com/apigee/docs/apihub/deployments-intro)."
+      }
+    ],
     "2025-06-03": [
       {
         "kind": "Announcement",

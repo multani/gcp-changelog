@@ -1,5 +1,19 @@
 # SAP on Google Cloud
 
+## 2025-07-18
+
+### Announcement
+
+**New SAP certification for operating system: SLES 15 SP7 for SAP**
+
+For use with SAP HANA and SAP NetWeaver on Google Cloud, SAP has certified the operating system SUSE Linux Enterprise Server (SLES) 15 SP7 for SAP.
+
+For more information, see:
+
+* [Certified operating systems for SAP HANA](https://cloud.google.com/solutions/sap/docs/sap-hana-os-support#quick_reference_table)
+* [Certified operating systems for SAP NetWeaver](https://cloud.google.com/solutions/sap/docs/netweaver-os-support#quick_reference_table)
+
+---
 ## 2025-07-08
 
 ### Announcement

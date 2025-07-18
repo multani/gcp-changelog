@@ -1,5 +1,43 @@
 # Apigee API hub
 
+## 2025-07-18
+
+### Feature
+
+**Apigee and hybrid plugin instance management**
+
+You can now create and delete plugin instances for Apigee and Apigee Hybrid while associating the respective Apigee runtime projects to API hub.
+
+For more information, see [Auto-register Apigee proxies](https://cloud.google.com/apigee/docs/apihub/auto-register-apigee-proxies).
+
+### Breaking
+
+**Apigee and Apigee hybrid plugin creation now requires source project ID**
+
+When creating new instances of the **Apigee X and hybrid** plugin, you must now provide a source project ID. This source project ID is the Google Cloud project from which the plugin will import data.
+
+This is a breaking change and will affect any existing API calls that create these plugins without explicitly providing this ID.
+
+**Action Required:** Update your API calls to include the appropriate source project ID when creating new Apigee X and hybrid plugins. Failing to do so will result in creation errors.
+
+### Changed
+
+**Edit plugin instances changes**
+
+You can now change or modify the name and curation logic of your plugin instance.
+
+For more information, see [Edit a plugin instance](https://cloud.google.com/apigee/docs/apihub/manage-plugin-instances#edit-plugin-instance).
+
+### Changed
+
+**Resource URI format for Apigee deployments**
+
+To ensure optimal functionality and consistency while creating or updating **Apigee** deployments, we now recommend that the **Resource URI** conforms to the following format:
+`organizations/([^/]+)/environments/([^/]+)/apis/([^/]+)$`
+
+For more information, see [Introduction to deployments](https://cloud.google.com/apigee/docs/apihub/deployments-intro).
+
+---
 ## 2025-06-03
 
 ### Announcement

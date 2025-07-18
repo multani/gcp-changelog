@@ -564,10 +564,30 @@
 
 
 <h1 id="apigee-api-hub">Apigee API hub</h1>
+<h2 id="2025-07-18">2025-07-18</h2>
+<h3 id="feature">Feature</h3>
+<p><strong>Apigee and hybrid plugin instance management</strong></p>
+<p>You can now create and delete plugin instances for Apigee and Apigee Hybrid while associating the respective Apigee runtime projects to API hub.</p>
+<p>For more information, see <a href="https://cloud.google.com/apigee/docs/apihub/auto-register-apigee-proxies">Auto-register Apigee proxies</a>.</p>
+<h3 id="breaking">Breaking</h3>
+<p><strong>Apigee and Apigee hybrid plugin creation now requires source project ID</strong></p>
+<p>When creating new instances of the <strong>Apigee X and hybrid</strong> plugin, you must now provide a source project ID. This source project ID is the Google Cloud project from which the plugin will import data.</p>
+<p>This is a breaking change and will affect any existing API calls that create these plugins without explicitly providing this ID.</p>
+<p><strong>Action Required:</strong> Update your API calls to include the appropriate source project ID when creating new Apigee X and hybrid plugins. Failing to do so will result in creation errors.</p>
+<h3 id="changed">Changed</h3>
+<p><strong>Edit plugin instances changes</strong></p>
+<p>You can now change or modify the name and curation logic of your plugin instance.</p>
+<p>For more information, see <a href="https://cloud.google.com/apigee/docs/apihub/manage-plugin-instances#edit-plugin-instance">Edit a plugin instance</a>.</p>
+<h3 id="changed_1">Changed</h3>
+<p><strong>Resource URI format for Apigee deployments</strong></p>
+<p>To ensure optimal functionality and consistency while creating or updating <strong>Apigee</strong> deployments, we now recommend that the <strong>Resource URI</strong> conforms to the following format:
+<code>organizations/([^/]+)/environments/([^/]+)/apis/([^/]+)$</code></p>
+<p>For more information, see <a href="https://cloud.google.com/apigee/docs/apihub/deployments-intro">Introduction to deployments</a>.</p>
+<hr />
 <h2 id="2025-06-03">2025-06-03</h2>
 <h3 id="announcement">Announcement</h3>
 <p>On June 3, 2025, we released an updated version of Apigee.</p>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_1">Feature</h3>
 <p><strong>Apigee API hub is enabled for new Apigee organizations in supported regions.</strong></p>
 <p>With this release, we are enabling <a href="https://cloud.google.com/apigee/docs/apihub/what-is-api-hub">Apigee API hub</a> for new Apigee organizations <a href="https://cloud.google.com/apigee/docs/locations#available-apigee-api-analytics-regions">in regions where API hub is supported</a>. All new Apigee organizations, including hybrid organizations, that select an API hub-supported region <em>for their Apigee Analytics region</em> during provisioning will have access to API hub features at no additional cost.</p>
 <p>API hub allows you to view, organize, and manage all of the APIs in your Apigee organization in one central location. To learn more, see <a href="https://cloud.google.com/apigee/docs/apihub/what-is-api-hub">What is Apigee API hub?</a></p>
@@ -588,6 +608,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#apigee-api-hub">Apigee API hub</a></li>
+          <li class="nav-item">
+            <a href="#2025-07-18" class="nav-link">2025-07-18</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-06-03" class="nav-link">2025-06-03</a>
           </li>

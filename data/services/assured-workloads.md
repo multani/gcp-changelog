@@ -1,5 +1,33 @@
 # Assured Workloads
 
+## 2025-07-17
+
+### Feature
+
+The [Data Boundary for Impact Level 4 (IL4)](https://cloud.google.com/assured-workloads/docs/control-packages#il4) now supports the following products:
+
+* Certificate Authority Service
+* Cloud Build
+* Cloud NAT
+* GKE Hub
+* Memorystore for Redis
+* Secret Manager
+* Sensitive Data Protection
+
+The [Data Boundary for Impact Level 5 (IL5)](https://cloud.google.com/assured-workloads/docs/control-packages#il5) now supports the following products:
+
+* Certificate Authority Service
+* Cloud Build
+* Cloud NAT
+* Cloud VPN
+* GKE Hub
+* Memorystore for Redis
+* Secret Manager
+* Sensitive Data Protection
+
+See [Supported products by control package](https://cloud.google.com/assured-workloads/docs/supported-products) for more information.
+
+---
 ## 2025-06-20
 
 ### Feature

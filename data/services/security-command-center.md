@@ -1,5 +1,19 @@
 # Security Command Center
 
+## 2025-07-17
+
+### Feature
+
+The following [Container Threat Detection](https://cloud.google.com/security-command-center/docs/concepts-container-threat-detection-overview) detectors for file monitoring are in [Preview](https://cloud.google.com/products#product-launch-stages):
+
+* `Collection: Pam.d Modification`
+* `Credential Access: Access Sensitive Files on Nodes`
+* `Defense Evasion: Disable or modify Linux audit system`
+* `Defense Evasion: Root Certificate Installed`
+* `Execution: Suspicious Cron Modification`
+* `Persistence: Modify ld.so.preload`
+
+---
 ## 2025-07-14
 
 ### Changed

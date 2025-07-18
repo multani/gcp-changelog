@@ -82,6 +82,7 @@
 - [Google Cloud Armor](services/google-cloud-armor.md)
 - [Google Cloud Contact Center as a Service](services/google-cloud-contact-center-as-a-service.md)
 - [Google Cloud Managed Service for Apache Kafka](services/google-cloud-managed-service-for-apache-kafka.md)
+- [Google Cloud Marketplace Partners](services/google-cloud-marketplace-partners.md)
 - [Google Cloud VMware Engine](services/google-cloud-vmware-engine.md)
 - [Google Distributed Cloud (software only) for VMware](services/google-distributed-cloud--software-only--for-vmware.md)
 - [Google Distributed Cloud (software only) for bare metal](services/google-distributed-cloud--software-only--for-bare-metal.md)

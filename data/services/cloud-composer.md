@@ -1,5 +1,12 @@
 # Cloud Composer
 
+## 2025-07-17
+
+### Feature
+
+[Highly resilient environments](https://cloud.google.com/composer/docs/composer-3/set-up-highly-resilient-environments) are now generally available (GA) in Cloud Composer 3.
+
+---
 ## 2025-07-14
 
 ### Changed

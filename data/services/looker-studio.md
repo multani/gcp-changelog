@@ -1,5 +1,27 @@
 # Looker Studio
 
+## 2025-07-17
+
+### Feature
+
+**Report abuse**
+
+Looker Studio report viewers can now [report abusive content](https://cloud.google.com/looker/docs/studio/report-abuse). Content is automatically reviewed, and content that is reported as abusive is hidden or deleted.
+
+### Feature
+
+**Performance improvement for BigQuery data sources**
+
+Report viewers may notice improved performance when the report uses a BigQuery data source.
+
+The BigQuery connector supports short query optimized mode. In this mode, when BigQuery determines it can finish a query quickly, BigQuery prioritizes returning immediate results instead of creating a BigQuery job. Short query optimized mode may apply in the following situations:
+
+* When the data source uses Viewer's Credentials
+* When the data source uses Owner's Credentials but you are not the credential owner.
+
+There is no change in user experience or report behavior for data source credential owners.
+
+---
 ## 2025-07-10
 
 ### Feature

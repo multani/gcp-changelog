@@ -1,5 +1,24 @@
 # Dialogflow
 
+## 2025-07-17
+
+### Feature
+
+**Conversational Agents**: CMEK is now available in EU regions.
+
+### Feature
+
+**Conversational Agents**: The [conversational history flow analysis feature](https://cloud.google.com/dialogflow/cx/docs/concept/conversation-history#flow-analysis-table) is now available.
+
+### Feature
+
+**Conversational Agents**: The [model](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions) `gemini-2.5-flash` is now available in all regions. This change applies to the following features:
+
+* Generators
+* Playbooks (Public Preview)
+* Data stores tools (Public Preview)
+
+---
 ## 2025-06-26
 
 ### Feature

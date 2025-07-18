@@ -54,7 +54,7 @@ BigQuery now supports the following Apache Hadoop migration features in [Preview
 
 * [Use the `dwh-migration-dumper` tool to migrate the metadata](https://cloud.google.com/bigquery/docs/hadoop-metadata) necessary for a Hadoop permissions and data migration.
 * [Migrate permissions from Apache Hadoop, Apache Hive, and Ranger HDFS](https://cloud.google.com/bigquery/docs/hadoop-permissions-migration) to BigQuery.
-* [Migrate table data and metadata from your Hadoop clusters](https://cloud.google.com/bigquery/docs/hadoop-transfer) to BigQuery.
+* [Migrate tables from a HDFS data lake](https://cloud.google.com/bigquery/docs/hdfs-data-lake-transfer) to Google Cloud.
 
 ---
 ## 2025-06-30

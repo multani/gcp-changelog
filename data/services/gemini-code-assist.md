@@ -1,5 +1,23 @@
 # Gemini Code Assist
 
+## 2025-07-17
+
+### Announcement
+
+
+
+### Checkpoints, selected code snippets and terminal output, and other features are now Generally Available (GA)
+
+The following features, which launched in Preview in May and June 2025, are now
+[Generally Available](https://cloud.google.com/terms/service-terms):
+
+* [Revert to checkpoints](/gemini/docs/codeassist/chat-gemini#revert_to_a_checkpoint_in_chat)
+* [Add selected code snippets to context](/gemini/docs/codeassist/chat-gemini#add_selected_code_snippets_to_context)
+* [Prompt Gemini Code Assist with selected terminal output](/gemini/docs/codeassist/chat-gemini#prompt_with_selected_terminal_output_using_chat)
+* [Specify filenames in your workspace](/gemini/docs/codeassist/chat-gemini#specify_files_and_folders_in_your_workspace_context)
+* [Exclude files from Gemini Code Assist use](/gemini/docs/codeassist/create-aiexclude-file)
+
+---
 ## 2025-07-15
 
 ### Announcement

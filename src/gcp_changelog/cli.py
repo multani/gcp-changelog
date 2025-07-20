@@ -1,4 +1,3 @@
-from dataclasses import dataclass
 from pathlib import Path
 
 import click
@@ -6,30 +5,24 @@ import click
 from . import models
 from .parser import fetch_feed
 
+pass_config = click.make_pass_decorator(models.Config)
+
 
 def main() -> None:
     cli()
 
 
-@dataclass
-class Config:
-    data_folder: Path
-
-
-pass_config = click.make_pass_decorator(Config)
-
-
 @click.group()
 @click.option(
-    "--data-folder",
-    default="data/json",
+    "--contents-folder",
+    default="content",
     help="Folder to save the parsed data",
     type=click.Path(dir_okay=True, path_type=Path),
 )
 @click.pass_context
-def cli(ctx: click.Context, data_folder: Path) -> None:
-    config = ctx.obj = Config(data_folder=data_folder)
-    config.data_folder.mkdir(parents=True, exist_ok=True)
+def cli(ctx: click.Context, contents_folder: Path) -> None:
+    config = ctx.obj = models.Config(content_folder=contents_folder)
+    config.ensure()
 
 
 @cli.command()
@@ -39,9 +32,9 @@ def cli(ctx: click.Context, data_folder: Path) -> None:
     help="URL of the GCP release notes feed.",
 )
 @pass_config
-def fetch(config: Config, url: str) -> None:
+def fetch(config: models.Config, url: str) -> None:
     print("Loading existing data...")
-    original_index = models.Index.load(config.data_folder)
+    original_index = models.Index.load(config)
 
     print(f"Fetching feed from {url=}...")
     url = "https://cloud.google.com/feeds/gcp-release-notes.xml"
@@ -50,26 +43,19 @@ def fetch(config: Config, url: str) -> None:
     print("Merging fetched data with previous data...")
     index.absorb(original_index)
 
-    print(f"Saving data to: {config.data_folder}")
-    index.dump(config.data_folder)
+    print(f"Saving data to: {config.content_folder}")
+    index.dump(config)
 
     print("Done!")
 
 
 @cli.command()
-@click.option(
-    "--render-folder",
-    default="data",
-    help="Folder to render the content to",
-    type=click.Path(dir_okay=True, path_type=Path),
-)
 @pass_config
-def render(config: Config, render_folder: Path) -> None:
-    print(f"Loading existing data from: {config.data_folder}")
-    index = models.Index.load(config.data_folder)
+def render(config: models.Config) -> None:
+    print(f"Loading existing data from: {config.content_folder}")
+    index = models.Index.load(config)
 
-    print(f"Rendering data to: {render_folder}")
-    render_folder.mkdir(parents=True, exist_ok=True)
-    index.render(render_folder)
+    print("Rendering data")
+    index.render(config)
 
     print("Done!")

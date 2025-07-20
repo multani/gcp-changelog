@@ -1,9 +1,29 @@
 import datetime
 import re
+from dataclasses import dataclass
 from pathlib import Path
-from typing import Self
+from typing import Iterator, Self
 
 from pydantic import BaseModel
+
+
+@dataclass
+class Config:
+    content_folder: Path
+
+    def ensure(self) -> None:
+        self.content_folder.mkdir(parents=True, exist_ok=True)
+
+    @property
+    def site_index(self) -> Path:
+        return self.content_folder / "index.md"
+
+    def folder_for(self, slug: str) -> Path:
+        return self.content_folder / slug
+
+    @property
+    def json_files(self) -> Iterator[Path]:
+        return self.content_folder.glob("*/*.json")
 
 
 class ChangelogEntry(BaseModel):
@@ -57,38 +77,38 @@ class Index(BaseModel):
     products: dict[str, ProductChangelog] = {}
 
     @classmethod
-    def load(cls, folder: Path) -> Self:
+    def load(cls, config: Config) -> Self:
         products: dict[str, ProductChangelog] = {}
 
-        for json_file in folder.glob("*.json"):
+        for json_file in config.json_files:
             product = ProductChangelog.load(json_file)
             products[product.name] = product
 
         return cls(products=products)
 
-    def dump(self, folder: Path) -> None:
+    def dump(self, config: Config) -> None:
         for product in self.products.values():
             slug = product.slug
 
-            filename = folder / f"{slug}.json"
+            filename = config.folder_for(slug) / "index.json"
             product.dump(filename)
 
-    def render(self, folder: Path) -> None:
+    def render(self, config: Config) -> None:
         index: dict[str, Path] = {}
 
         for product in self.products.values():
             slug = product.slug
 
-            filename = folder / "services" / f"{slug}.md"
+            filename = config.folder_for(slug) / "index.md"
             product.render(filename)
             index[product.name] = filename
 
-        with open(folder / "index.md", "w") as fp:
+        with open(config.site_index, "w") as fp:
             fp.write("# Google Cloud Platform Release Notes (by services)\n")
             fp.write("\n")
 
             for name, path in sorted(index.items()):
-                filename = path.relative_to(folder)
+                filename = path.relative_to(config.content_folder)
                 fp.write(f"- [{name}]({filename})\n")
 
     def absorb(self, other: Self) -> None:

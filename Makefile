@@ -15,6 +15,6 @@ check:
 mypy:
 	uv run mypy
 
-.PHONY: mkdocs
-mkdocs:
+.PHONY: doc
+doc:
 	uv run mkdocs build --strict

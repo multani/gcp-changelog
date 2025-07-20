@@ -40,13 +40,13 @@ jobs:
 
       - name: Render to HTML
         if: steps.meta.outputs.updates == 'true'
-        run: make mkdocs
+        run: make doc
 
       - name: Commit changes
         if: steps.meta.outputs.updates == 'true'
         run: |
           git config --local user.name "GitHub Actions"
           git config --local user.email "github-action@github.com"
-          git add data site
+          git add content site
           git commit -m "Automatic update from Google Cloud changelog"
           git push

@@ -13,6 +13,19 @@ The following [Container Threat Detection](https://cloud.google.com/security-com
 * `Execution: Suspicious Cron Modification`
 * `Persistence: Modify ld.so.preload`
 
+### Changed
+
+The following Security Command Center Enterprise pages in the Google Cloud
+console now fully replace equivalent pages that you accessed previously in the
+Google Security Operations console.
+
+* [Risk Overview](https://cloud.google.com/security-command-center/docs/assess-risk)
+* [Issues](https://cloud.google.com/security-command-center/docs/issues-overview)
+* [Assets](https://cloud.google.com/security-command-center/docs/work-with-resources-in-the-console) (previously called Resources)
+* [Findings](https://cloud.google.com/security-command-center/docs/review-manage-findings)
+
+Left navigation links in the Google Security Operations console open the related Google Cloud console page. See the earlier [release announcement](https://cloud.google.com/security-command-center/docs/release-notes#May_08_2025) about these pages.
+
 ---
 ## 2025-07-14
 

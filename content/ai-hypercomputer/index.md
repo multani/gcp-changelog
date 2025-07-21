@@ -1,5 +1,17 @@
 # AI Hypercomputer
 
+## 2025-07-18
+
+### Feature
+
+**Generally available**: You can troubleshoot workloads with slow performance by using straggler detection metrics and logs.
+
+*Stragglers* are single-point, non-crashing failures that eventually
+slow down your entire workload. Large-scale ML workloads are very susceptible to stragglers, and VMs with stragglers are often very difficult to notice and pinpoint without straggler detection.
+
+For more information, see [Monitor VMs and Slurm clusters](https://cloud.google.com/ai-hypercomputer/docs/monitor) and [Troubleshoot slow performance](https://cloud.google.com/ai-hypercomputer/docs/troubleshooting/troubleshoot-slow-performance).
+
+---
 ## 2025-07-10
 
 ### Feature

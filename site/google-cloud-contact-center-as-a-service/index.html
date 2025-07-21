@@ -1464,8 +1464,55 @@
 
 
 <h1 id="google-cloud-contact-center-as-a-service">Google Cloud Contact Center as a Service</h1>
-<h2 id="2025-07-08">2025-07-08</h2>
+<h2 id="2025-07-10">2025-07-10</h2>
 <h3 id="announcement">Announcement</h3>
+<p><strong>Portal version 3.37 pre-release notes</strong></p>
+<p>Here are the pre-release notes for portal version 3.37. When we release version 3.37, we expect the new capabilities to be as shown here.</p>
+<h3 id="feature">Feature</h3>
+<p><strong>Restrict email transfers</strong></p>
+<p>You can now configure your instance to prevent users with the agent role from transferring email sessions to other agents. Agents can still assign unassigned emails to themselves, and users with the manager role can still transfer email sessions from agent to agent.</p>
+<p>Administrators: There's a new <strong>Transfer Restrictions</strong> pane at <strong>Settings &gt; Queue &gt; Email &gt; Edit / View &gt; [queue] &gt; Transfer Restrictions &gt; Configure</strong>.</p>
+<h3 id="feature_1">Feature</h3>
+<p><strong>Skip the connecting message playback</strong></p>
+<p>You can now configure your instance to skip playback of the connecting message when calls are connected to agents.</p>
+<p>Administrators: The <strong>Settings &gt; Call &gt; Call Details</strong> pane contains a new <strong>Skip the Connecting Message playback</strong> checkbox.</p>
+<h3 id="feature_2">Feature</h3>
+<p><strong>Workforce Management terminology update</strong></p>
+<p>We've updated the terminology in the Workforce Management interface to align with Google Cloud CCaaS terminology. For example, we've changed "supervisor" to "manager", "employee" to "agent", and "Supervisor Portal" to "Manager Portal".</p>
+<h3 id="feature_3">Feature</h3>
+<p><strong>Generative knowledge assist is available in Agent Desktop</strong></p>
+<p>Generative knowledge assist is now available in Agent Desktop as a widget that you can drag into a desktop panel.</p>
+<p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-create-desktop-layouts">Create desktop panels</a>.</p>
+<h3 id="feature_4">Feature</h3>
+<p><strong>Generative knowledge assist is available in the agent adapter</strong></p>
+<p>Generative knowledge assist is now available in the agent adapter.</p>
+<h3 id="feature_5">Feature</h3>
+<p><strong>Web SDK version 3.37</strong></p>
+<p>Starting with version 3.37, web SDK releases align with portal releases and share the same version number.</p>
+<p>Web SDK version 3.37 includes the following update: we've improved the accessibily of the web SDK to be in compliance with the European Accessibility Act.</p>
+<h3 id="fixed">Fixed</h3>
+<p>The following issues were addressed in this release:</p>
+<ul>
+<li>Fixed an issue where a blank error message box appeared in the agent adapter when a call connected.</li>
+<li>Fixed an issue where the notification icon for a new message or event in the chat adapter didn't clear after the agent viewed the message or event.</li>
+<li>Fixed a Conversational Insights issue where conversation recordings were split into a file for the human agent segment and a file for the virtual agent segment. Now all call segments are aggregated into a single recording file, which is more useful for conversational analysis.</li>
+<li>Fixed an issue where a single call was being reported as two separate calls after the following occurred: (1) A call was escalated from a virtual agent to a queue, (2) An agent clicked <strong>Answer</strong> in the agent adapter, and (3) The end-user hung up before the countdown was complete.</li>
+<li>Fixed an issue where agents were unsure whether their action of declining a call was taking effect. Now, after an agent declines a call, the <strong>Decline</strong> button changes to <strong>Declining...</strong>, the <strong>Answer</strong> button is deactivated, and a message displays indicating that the call was declined.</li>
+<li>Fixed the message that appeared in the agent adapter when an agent left a multi-party session. Instead of saying that the session will be tranferred to the remaining agents(s), the message now says that the session will be transferred to the remaining participant(s). This is because the remaining participants might not be agents.</li>
+<li>Fixed an issue where administators were unable to monitor or barge into calls.</li>
+<li>Fixed an issue where the <strong>Decline</strong> button didn't display or didn't work correctly in the agent adapter when the following occurred: (1) An agent was in an active call, and (2) The agent received a second call on their direct number.</li>
+<li>Fixed an issue where clearing the <strong>Play Call Recording Message</strong> checkbox in <strong>Settings &gt; Call &gt; Call Details</strong> pane didn't work if the queue was configured for human agents and virtual agents or virtual agents only.</li>
+<li>Fixed an issue where the <strong>Transfer failed</strong> error message failed to appear in the call adapter after the following occured: a transferred call wasn't answered before the unanswered call expiration time expired.</li>
+<li>Fixed an issue where an agent on a team that was assigned to a queue wasn't able to select their desired queue to make an outbound call. We also improved the text at <strong>Settings &gt; Call &gt; Call Details &gt; Queue Selection for Outbound Call</strong> to better describe the call adapter behavior.</li>
+<li>Fixed an issue where the missed chat message didn't appear after the missed chat threshold expired.</li>
+<li>Fixed an issue where end-users were unable to download chat transcripts containing special characters, emoji, or redacted content.</li>
+<li>Fixed an issue with the web SDK where configuring custom system messages with empty quotes or NULL values didn't fully suppress the messages.</li>
+<li>Fixed an issue with the web SDK where some non-English characters in downloaded chat transcripts were appearing as question marks.</li>
+<li>Fixed an issue in Salesforce where the <strong>Call</strong> button in the call adapter wasn't working for outbound calls to a phone number that was associated with a previous record.</li>
+</ul>
+<hr />
+<h2 id="2025-07-08">2025-07-08</h2>
+<h3 id="announcement_1">Announcement</h3>
 <p><strong>Mobile SDK 2.13 is released</strong></p>
 <p>Mobile SDK 2.13 includes the following updates:</p>
 <ul>
@@ -1480,7 +1527,7 @@
 <li>End-users can navigate the user interface using keyboard shortcuts in conformance with the W3C Web Content Accessibility Guidelines.</li>
 <li>You can configure your instance to let end-users skip customer satisfaction surveys.</li>
 </ul>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_1">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>
@@ -1499,26 +1546,26 @@
 </ul>
 <hr />
 <h2 id="2025-07-07">2025-07-07</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p><strong>Session metadata in Conversational Insights conversations is GA</strong></p>
 <p>The Google Cloud CCaaS capability of including session metadata when creating conversations in Conversational Insights is now <a href="https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages">generally available (GA)</a>. Metadata values are available for each conversation. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/conversational-insights">Conversational Insights and Quality AI</a>.</p>
 <hr />
 <h2 id="2025-07-02">2025-07-02</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p><strong>Version 3.36 is released</strong></p>
 <p>All release notes published on this date are part of version 3.36.</p>
 <p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p><strong>Configure storage of Screen Share recordings</strong></p>
 <p>You can now configure how long to store Screen Share recordings in your external storage settings. You can also now store Screen Share recordings that originated from the Screen Share adapter.</p>
 <p>Administrators: The <strong>CRM Comments Creation Details</strong> pane at <strong>Settings &gt; Operation Management</strong> has new <strong>Post Cobrowse recording link to CRM record</strong> settings. You need to contact Google support to enable Screen Share recordings.</p>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/crm-external-storage">Set up external storage for CRMs</a>.</p>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p><strong>Restrict auto-assignment for email queues</strong></p>
 <p>You can now configure email queues so that incoming emails are auto-assigned only during queue operating hours or to agents who are signed in.</p>
 <p>Administrators: The <strong>Auto assignment</strong> dialog at <strong>Settings &gt; Queue &gt; Email Edit/View &gt; [queue name] &gt; Automatic assignment &gt; Configure</strong> has two new checkboxes.</p>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/email-channel-config#email-auto-assignment">Email auto assignment</a>.</p>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p><strong>Salesforce: New closed record options for scheduled calls</strong></p>
 <p>If you've integrated Google Cloud CCaaS with the Salesforce CRM, you can configure how your instance handles scheduled calls for closed records. Here are the configuration options that are available with Salesforce integrations:</p>
 <ul>
@@ -1528,7 +1575,7 @@
 </ul>
 <p>Administrators: The <strong>CRM Record Creation Details</strong> pane at <strong>Settings &gt; Operation Management</strong> has new settings at <strong>Closed record options when initiating an API-scheduled call</strong>.</p>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/schedule-calls-salesforce">Schedule calls with Salesforce</a>.</p>
-<h3 id="fixed_1">Fixed</h3>
+<h3 id="fixed_2">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where calls weren't being assigned to the correct agent in Google Cloud CCaaS reporting.</li>
@@ -1557,7 +1604,7 @@
 </ul>
 <hr />
 <h2 id="2025-06-26">2025-06-26</h2>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p><strong>Web SDK version 3</strong></p>
 <p>We're pleased to announce that the web SDK v3 is now <a href="https://cloud.google.com/products#product-launch-stages">generally available (GA)</a>. The web SDK v3 is built on the <a href="https://cloud.google.com/contact-center/ccai-platform/docs/headless-web-guide">headless web SDK</a>, so all of the methods that are available on a headless SDK client are also available with the web SDK v3 widget.</p>
 <p><strong>Deprecation notice</strong></p>
@@ -1584,18 +1631,18 @@
 <p>For help upgrading to web SDK v3, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-upgrade">Upgrade from web SDK version 2 to web SDK version 3</a>. If you've been using the Private Preview version of web SDK v3, be sure to update your implementations to access <code>widget.js</code> from your Google Cloud CCaaS instance.</p>
 <hr />
 <h2 id="2025-06-23">2025-06-23</h2>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p><strong>Version 3.36 pre-release notes</strong></p>
 <p>Here are the pre-release notes for version 3.36. When we release version 3.36, we expect the new capabilities to be as shown here.</p>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p><strong>Configure storage of Screen Share recordings</strong></p>
 <p>You can now configure how long to store Screen Share recordings in your external storage settings. You can also now store Screen Share recordings that originated from the Screen Share adapter.</p>
 <p>Administrators: The <strong>CRM Comments Creation Details</strong> pane at <strong>Settings &gt; Operation Management</strong> has new <strong>Post Cobrowse recording link to CRM record</strong> settings. You need to contact Google support to enable Screen Share recordings.</p>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p><strong>Restrict auto-assignment for email queues</strong></p>
 <p>You can now configure email queues so that incoming emails are auto-assigned only during queue operating hours or to agents who are signed in.</p>
 <p>Administrators: The <strong>Auto assignment</strong> dialog at <strong>Settings &gt; Queue &gt; Email Edit/View &gt; [queue name] &gt; Automatic assignment &gt; Configure</strong> has two new checkboxes.</p>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_11">Feature</h3>
 <p><strong>Salesforce: New closed record options for scheduled calls</strong></p>
 <p>If you've integrated Google Cloud CCaaS with the Salesforce CRM, you can configure how your instance handles scheduled calls for closed records. Here are the configuration options that are available with Salesforce integrations:</p>
 <ul>
@@ -1604,7 +1651,7 @@
 <li><strong>Look up record status and cancel scheduled calls for closed records</strong>. Your instance looks up record status before making a scheduled call and cancels scheduled calls for records that are closed.</li>
 </ul>
 <p>Administrators: The <strong>CRM Record Creation Details</strong> pane at <strong>Settings &gt; Operation Management</strong> has new settings at <strong>Closed record options when initiating an API-scheduled call</strong>.</p>
-<h3 id="fixed_2">Fixed</h3>
+<h3 id="fixed_3">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where calls weren't being assigned to the correct agent in Google Cloud CCaaS reporting.</li>
@@ -1631,7 +1678,7 @@
 </ul>
 <hr />
 <h2 id="2025-06-09">2025-06-09</h2>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_6">Announcement</h3>
 <p><strong>Salesforce ICU Update</strong></p>
 <p>This is for Google Contact Center as a Service (CCaaS) customers that use Salesforce integration with CCaaS.</p>
 <p>On <strong>June 15th, 2025</strong>, Salesforce is rolling out an automatic upgrade to its International Components for Unicode (ICU) locale data. This affects how date, time, number, and currency formatting are handled across Apex, Visualforce, and Lightning components.</p>
@@ -1695,7 +1742,7 @@
 <p><strong>Important</strong>: This will only be effective if completed before <strong>June 15th 2025</strong>.</p>
 <hr />
 <h2 id="2025-06-05">2025-06-05</h2>
-<h3 id="announcement_6">Announcement</h3>
+<h3 id="announcement_7">Announcement</h3>
 <p><strong>Patch 3.35.15 is released</strong></p>
 <p>This patch does the following:</p>
 <ul>
@@ -1705,7 +1752,7 @@
 </ul>
 <hr />
 <h2 id="2025-05-28">2025-05-28</h2>
-<h3 id="announcement_7">Announcement</h3>
+<h3 id="announcement_8">Announcement</h3>
 <p><strong>Headless web SDK 3.6.5 is released</strong></p>
 <p>This release does the following:</p>
 <ul>
@@ -1715,11 +1762,11 @@
 </ul>
 <hr />
 <h2 id="2025-05-27">2025-05-27</h2>
-<h3 id="announcement_8">Announcement</h3>
+<h3 id="announcement_9">Announcement</h3>
 <p><strong>Version 3.35 is released</strong></p>
 <p>All release notes published on this date are part of version 3.35.</p>
 <p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_12">Feature</h3>
 <p><strong>QM integration now includes chat session events</strong></p>
 <p>You can now export chat session events to an external quality management (QM) system. After you configure the endpoint of your QM system in Google Cloud CCaaS, your chat session events can be streamed to the endpoint in real time.</p>
 <p>User experience change:</p>
@@ -1727,11 +1774,11 @@
 <li>The <strong>QM Integration</strong> dialog at <strong>Settings &gt; Developer Settings &gt; Session Data Export &gt; QM Integration</strong> has a new <strong>QM Chat Events - send chat sessions events</strong> checkbox.</li>
 </ul>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/qm-siprec-integration">QM, SIPREC, and WFM integration</a>.</p>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_13">Feature</h3>
 <p><strong>Remove email subject lines from interaction data</strong></p>
 <p>We now support removing email subject lines when you delete interaction data from your instance for specified end-users. The email subjects are removed when you delete data for an end-user in the <strong>Consumer Privacy</strong> dialog at <strong>Settings &gt; Consumer Management &gt; Consumer Privacy</strong>. To completely remove an end-user's data, you must also delete their emails from your mail server. You must also delete chat transcripts, call recordings, and other session-related files from your CRM or external storage, depending on your configuration.</p>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/remove-end-user-data#remove-subject-lines-from-email-interactions">Remove subject lines from end-user email interactions</a>.</p>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_14">Feature</h3>
 <p><strong>New sender email with auto-response emails</strong></p>
 <p>You can now configure an outbound-only email address and use it as the sender address for auto-response emails. The outbound-only address is a "no-reply" email address that prevents the receiver from responding.</p>
 <p>User experience changes:</p>
@@ -1740,7 +1787,7 @@
 <li>The <strong>Add an email</strong> dialog at <strong>Settings &gt; Developer Settings &gt; Email Account Management &gt; Email account list &gt; Add email account</strong> has a new <strong>This is an outbound only email account</strong> checkbox.</li>
 </ul>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/email-channel-config#configure-outbound-only-email-account">Configure an outbound-only email account</a> and <a href="https://cloud.google.com/contact-center/ccai-platform/docs/email-channel-config#configure-auto-response-email">Configure an auto-response email</a>.</p>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_15">Feature</h3>
 <p><strong>Include images in outbound emails</strong></p>
 <p>You can now include images in outbound emails. This includes emails from an agent in an email session and outbound auto-response emails.</p>
 <p>User experience change:</p>
@@ -1749,7 +1796,7 @@
 <li>The email adapter has a new <strong>Insert Image</strong> button.</li>
 </ul>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/email-adapter">Agent email adapter</a> and <a href="https://cloud.google.com/contact-center/ccai-platform/docs/email-channel-config#configure-auto-response-email">Configure an auto-response email</a>.</p>
-<h3 id="fixed_3">Fixed</h3>
+<h3 id="fixed_4">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where calls were were being logged as <strong>Call with unknown contact</strong> in HubSpot instead of under the correct contact name.</li>
@@ -1787,6 +1834,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-cloud-contact-center-as-a-service">Google Cloud Contact Center as a Service</a></li>
+          <li class="nav-item">
+            <a href="#2025-07-10" class="nav-link">2025-07-10</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-07-08" class="nav-link">2025-07-08</a>
           </li>

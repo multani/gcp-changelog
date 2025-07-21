@@ -1,6 +1,40 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
+    "2025-07-10": [
+      {
+        "kind": "Announcement",
+        "content": "**Portal version 3.37 pre-release notes**\n\nHere are the pre-release notes for portal version 3.37. When we release version 3.37, we expect the new capabilities to be as shown here."
+      },
+      {
+        "kind": "Feature",
+        "content": "**Restrict email transfers**\n\nYou can now configure your instance to prevent users with the agent role from transferring email sessions to other agents. Agents can still assign unassigned emails to themselves, and users with the manager role can still transfer email sessions from agent to agent.\n\nAdministrators: There's a new **Transfer Restrictions** pane at **Settings > Queue > Email > Edit / View > [queue] > Transfer Restrictions > Configure**."
+      },
+      {
+        "kind": "Feature",
+        "content": "**Skip the connecting message playback**\n\nYou can now configure your instance to skip playback of the connecting message when calls are connected to agents.\n\nAdministrators: The **Settings > Call > Call Details** pane contains a new **Skip the Connecting Message playback** checkbox."
+      },
+      {
+        "kind": "Feature",
+        "content": "**Workforce Management terminology update**\n\nWe've updated the terminology in the Workforce Management interface to align with Google Cloud CCaaS terminology. For example, we've changed \"supervisor\" to \"manager\", \"employee\" to \"agent\", and \"Supervisor Portal\" to \"Manager Portal\"."
+      },
+      {
+        "kind": "Feature",
+        "content": "**Generative knowledge assist is available in Agent Desktop**\n\nGenerative knowledge assist is now available in Agent Desktop as a widget that you can drag into a desktop panel.\n\nFor more information, see [Create desktop panels](https://cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-create-desktop-layouts)."
+      },
+      {
+        "kind": "Feature",
+        "content": "**Generative knowledge assist is available in the agent adapter**\n\nGenerative knowledge assist is now available in the agent adapter."
+      },
+      {
+        "kind": "Feature",
+        "content": "**Web SDK version 3.37**\n\nStarting with version 3.37, web SDK releases align with portal releases and share the same version number.\n\nWeb SDK version 3.37 includes the following update: we've improved the accessibily of the web SDK to be in compliance with the European Accessibility Act."
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were addressed in this release:\n\n* Fixed an issue where a blank error message box appeared in the agent adapter when a call connected.\n* Fixed an issue where the notification icon for a new message or event in the chat adapter didn't clear after the agent viewed the message or event.\n* Fixed a Conversational Insights issue where conversation recordings were split into a file for the human agent segment and a file for the virtual agent segment. Now all call segments are aggregated into a single recording file, which is more useful for conversational analysis.\n* Fixed an issue where a single call was being reported as two separate calls after the following occurred: (1) A call was escalated from a virtual agent to a queue, (2) An agent clicked **Answer** in the agent adapter, and (3) The end-user hung up before the countdown was complete.\n* Fixed an issue where agents were unsure whether their action of declining a call was taking effect. Now, after an agent declines a call, the **Decline** button changes to **Declining...**, the **Answer** button is deactivated, and a message displays indicating that the call was declined.\n* Fixed the message that appeared in the agent adapter when an agent left a multi-party session. Instead of saying that the session will be tranferred to the remaining agents(s), the message now says that the session will be transferred to the remaining participant(s). This is because the remaining participants might not be agents.\n* Fixed an issue where administators were unable to monitor or barge into calls.\n* Fixed an issue where the **Decline** button didn't display or didn't work correctly in the agent adapter when the following occurred: (1) An agent was in an active call, and (2) The agent received a second call on their direct number.\n* Fixed an issue where clearing the **Play Call Recording Message** checkbox in **Settings > Call > Call Details** pane didn't work if the queue was configured for human agents and virtual agents or virtual agents only.\n* Fixed an issue where the **Transfer failed** error message failed to appear in the call adapter after the following occured: a transferred call wasn't answered before the unanswered call expiration time expired.\n* Fixed an issue where an agent on a team that was assigned to a queue wasn't able to select their desired queue to make an outbound call. We also improved the text at **Settings > Call > Call Details > Queue Selection for Outbound Call** to better describe the call adapter behavior.\n* Fixed an issue where the missed chat message didn't appear after the missed chat threshold expired.\n* Fixed an issue where end-users were unable to download chat transcripts containing special characters, emoji, or redacted content.\n* Fixed an issue with the web SDK where configuring custom system messages with empty quotes or NULL values didn't fully suppress the messages.\n* Fixed an issue with the web SDK where some non-English characters in downloaded chat transcripts were appearing as question marks.\n* Fixed an issue in Salesforce where the **Call** button in the call adapter wasn't working for outbound calls to a phone number that was associated with a previous record."
+      }
+    ],
     "2025-07-08": [
       {
         "kind": "Announcement",

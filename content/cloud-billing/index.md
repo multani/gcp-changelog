@@ -1,5 +1,16 @@
 # Cloud Billing
 
+## 2025-07-16
+
+### Feature
+
+**Spend-based committed use discount (CUD) metadata export to BigQuery (public preview)**
+
+You can now access spend-based CUD metadata programmatically through a BigQuery export. This data provides a comprehensive, daily snapshot of spend-based CUDs, which you can join with other billing data exports for improved CUD reporting and management.
+
+[Learn more about the CUD metadata export](https://cloud.google.com/billing/docs/how-to/export-data-bigquery-tables/cud-export).
+
+---
 ## 2025-06-27
 
 ### Changed

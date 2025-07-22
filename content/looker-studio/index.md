@@ -12,6 +12,8 @@ Looker Studio report viewers can now [report abusive content](https://cloud.goog
 
 **Performance improvement for BigQuery data sources**
 
+**Note:** This feature has been delayed and is currently not available. (Release note updated on July 21, 2025.)
+
 Report viewers may notice improved performance when the report uses a BigQuery data source.
 
 The BigQuery connector supports short query optimized mode. In this mode, when BigQuery determines that it can finish a query quickly, BigQuery prioritizes returning immediate results instead of creating a BigQuery job. Short query optimized mode may apply in the following situations:

@@ -1,5 +1,12 @@
 # Contact Center AI Insights
 
+## 2025-07-18
+
+### Changed
+
+Quality AI offers **multiple scorecards** in preview. With [multiple scorecards](https://cloud.google.com/contact-center/insights/docs/qai-basics#scorecards), Quality AI can evaluate a single conversation against different criteria and provide multiple conversation scores. You can also choose which scorecard data to view on each page of the console.
+
+---
 ## 2025-06-27
 
 ### Feature
@@ -13,6 +20,10 @@ Qualilty AI offers agent [**assessments**](https://cloud.google.com/contact-cent
 ### Feature
 
 Quality AI offers [**sampling rules**](https://cloud.google.com/contact-center/insights/docs/assessment-rules) that filter conversations to reduce the workload for human evaluators, saving contact centers time and money.
+
+### Changed
+
+Add your own **custom tags** in [Quality AI](https://cloud.google.com/contact-center/insights/docs/qai-basics). In addition to the default Business, Compliance and Customer tags, you can apply custom tags to any question in any scorecard.
 
 ### Feature
 

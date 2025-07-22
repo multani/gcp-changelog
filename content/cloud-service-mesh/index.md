@@ -1,5 +1,12 @@
 # Cloud Service Mesh
 
+## 2025-07-21
+
+### Changed
+
+Managed Cloud Service Mesh will start using proxy version `csm_mesh_proxy.20250623b_RC00` for Gateway API on GKE clusters. This proxy version maps closest to Envoy version 1.35. This change is rolling out to all release channels.
+
+---
 ## 2025-07-16
 
 ### Announcement

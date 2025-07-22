@@ -1,5 +1,42 @@
 # Google Kubernetes Engine
 
+## 2025-07-21
+
+### Feature
+
+In GKE version 1.33.2-gke.1111000 and later, you can use compute classes to set
+[Kubernetes labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
+on all nodes that are created for that compute class. These labels are applied
+to the corresponding `Node` objects in the Kubernetes API. For more information
+about setting node labels in compute classes, see the
+[ComputeClass custom resource definition](https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#nodepoolconfig).
+
+### Feature
+
+In GKE version 1.33.2-gke.1111000 and later, you can use compute classes to set
+[Kubernetes labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
+on all nodes that are created for that compute class. These labels are applied
+to the corresponding `Node` objects in the Kubernetes API. For more information
+about setting node labels in compute classes, see the
+[ComputeClass custom resource definition](https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#nodepoolconfig).
+
+Identity and Access Management
+------------------------------
+
+### Feature
+
+You can ask Gemini for predefined role suggestions using the IAM role picker in the Google Cloud Console. This feature is in [preview](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [Get predefined role suggestions with Gemini assistance](https://cloud.google.com/iam/docs/role-picker-gemini).
+
+Security Command Center
+-----------------------
+
+### Changed
+
+The **Aggregations** panel on the **Findings** page in Security Command Center Enterprise has been enhanced and is now called **Quick Filters**. For information about filtering results on the Findings page, see [Review and manage findings](https://cloud.google.com/security-command-center/docs/review-manage-findings).
+
+---
 ## 2025-07-16
 
 ### Changed

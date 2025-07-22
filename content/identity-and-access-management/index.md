@@ -1,5 +1,14 @@
 # Identity and Access Management
 
+## 2025-07-21
+
+### Feature
+
+You can ask Gemini for predefined role suggestions using the IAM role picker in the Google Cloud Console. This feature is in [preview](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [Get predefined role suggestions with Gemini assistance](https://cloud.google.com/iam/docs/role-picker-gemini).
+
+---
 ## 2025-06-13
 
 ### Changed

@@ -1,5 +1,12 @@
 # Security Command Center
 
+## 2025-07-21
+
+### Changed
+
+The **Aggregations** panel on the **Findings** page in Security Command Center Enterprise has been enhanced and is now called **Quick Filters**. For information about filtering results on the Findings page, see [Review and manage findings](https://cloud.google.com/security-command-center/docs/review-manage-findings).
+
+---
 ## 2025-07-17
 
 ### Feature

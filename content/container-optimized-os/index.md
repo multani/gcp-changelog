@@ -1,5 +1,140 @@
 # Container Optimized OS
 
+## 2025-07-14
+
+### Changed
+
+
+
+### cos-117-18613-263-66
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.93](https://cos.googlesource.com/third_party/kernel/+/12c0014075ea8438afd8396c473a3895a9c9dc5a ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18613.263.66/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Upgraded nvidia-container-toolkit to v1.17.8.
+
+### Fixed
+
+Updated google-guest-agent to v20250701.01.
+
+### Security
+
+Updated app-editors/nano to v8.5. This resolves
+CVE-2024-5742.
+
+### Security
+
+Upgraded vim, vim-core to
+version 9.1.1500. This fixes CVE-2025-26603, CVE-2025-27423,
+CVE-2025-29768, CVE-2025-1215, CVE-2025-24014, CVE-2025-22134.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811799 -> 811784
+
+### Changed
+
+
+
+### cos-109-17800-519-47
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.141](https://cos.googlesource.com/third_party/kernel/+/80aa802c8b1dacdfd244bb9931499a2fa4fcd118 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/17800.519.47/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Upgraded nvidia-container-toolkit to v1.17.8.
+
+### Fixed
+
+Upgraded sys-apps/less to v679.
+
+### Security
+
+Updated app-editors/nano to v8.5. This resolves
+CVE-2024-5742.
+
+### Security
+
+Upgraded vim, vim-core to
+version 9.1.1500. This fixes CVE-2025-26603, CVE-2025-27423,
+CVE-2025-29768, CVE-2025-1215, CVE-2025-24014, CVE-2025-22134.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812201 -> 812258
+
+### Changed
+
+
+
+### cos-121-18867-90-85
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.93](https://cos.googlesource.com/third_party/kernel/+/25875e54e8fcc5831f6572e7bd367a70ef85b37c ) | v27.5.1 | v2.0.4 | [See List](https://storage.googleapis.com/cos-tools/18867.90.85/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Upgraded nvidia-container-toolkit to v1.17.8.
+
+### Fixed
+
+Updated google-guest-agent to v20250701.01.
+
+### Security
+
+Updated app-editors/nano to v8.5. This resolves
+CVE-2024-5742.
+
+### Security
+
+Upgraded vim, vim-core to
+version 9.1.1500. This fixes CVE-2025-26603, CVE-2025-27423,
+CVE-2025-29768, CVE-2025-1215, CVE-2025-24014, CVE-2025-22134.
+
+### Changed
+
+
+
+### cos-113-18244-382-60
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.141](https://cos.googlesource.com/third_party/kernel/+/436274a3803b4d919d23b19b266c7e95ccdb4e09 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.382.60/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Upgraded nvidia-container-toolkit to v1.17.8.
+
+### Fixed
+
+Upgraded sys-apps/less to v679.
+
+### Security
+
+Updated app-editors/nano to v8.5. This resolves
+CVE-2024-5742.
+
+### Security
+
+Upgraded vim, vim-core to
+version 9.1.1500. This fixes CVE-2025-26603, CVE-2025-27423,
+CVE-2025-29768, CVE-2025-1215, CVE-2025-24014, CVE-2025-22134.
+
+---
 ## 2025-07-07
 
 ### Changed

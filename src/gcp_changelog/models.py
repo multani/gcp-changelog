@@ -2,10 +2,23 @@ import datetime
 import re
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Any
 from typing import Iterator
 from typing import Self
 
 from pydantic import BaseModel
+
+STANDARD_KINDS = {
+    "Announcement",
+    "Breaking",
+    "Changed",
+    "Deprecated",
+    "Feature",
+    "Fixed",
+    "Issue",
+    "Libraries",
+    "Security",
+}
 
 
 @dataclass
@@ -37,6 +50,18 @@ class ChangelogEntry(BaseModel):
     content: str
 
     summary: Summary | None = None
+
+    def __hash__(self) -> int:
+        return hash(f"{self.kind}{self.content}")
+
+    def __eq__(self, other: Any) -> bool:
+        if not isinstance(other, self.__class__):
+            return False
+
+        return (
+            self.kind.strip() == other.kind.strip()
+            and self.content.strip() == other.content.strip()
+        )
 
 
 class ProductChangelog(BaseModel):
@@ -77,8 +102,39 @@ class ProductChangelog(BaseModel):
     def absorb(self, other: Self) -> None:
         for date, other_entries in other.entries.items():
             if date in self.entries:
+                self.entries[date] = list(self._merge_entries(date, other_entries))
+            else:
+                self.entries[date] = other_entries
+
+    def _merge_entries(
+        self, date: datetime.date, olders: list[ChangelogEntry]
+    ) -> Iterator[ChangelogEntry]:
+        # We prioritize what we parsed now, instead of what we parsed before.
+        #
+        # What we parsed before: if the "entries" match, we keep the old one,
+        # which may contain an already built summary.
+        #
+        # Otherwise, we assume the new one "wins" and we discard the old one.
+
+        _olders = set(olders)
+
+        entries = self.entries[date]
+
+        for entry in entries:
+            if entry.content.strip() == "" and entry.kind in STANDARD_KINDS:
+                # No description, let's skip it
                 continue
-            self.entries[date] = other_entries
+
+            for older in _olders:
+                if older == entry:
+                    # _olders.remove(older)
+                    entry.summary = older.summary
+                    yield entry
+                    break
+            else:
+                # The entry we parsed is new (or a rewrite of an old one)
+                # We keep it as it is in this case.
+                yield entry
 
 
 class Index(BaseModel):

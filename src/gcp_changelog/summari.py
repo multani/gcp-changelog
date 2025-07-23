@@ -28,6 +28,7 @@ class Summarizer:
             for date, entries in changelog.entries.items():
                 for entry in entries:
                     if entry.summary is not None:
+                        print("Summary for entry already exists, skipping...")
                         yield None
                         continue
 

@@ -67,14 +67,12 @@ def render(config: models.Config) -> None:
 def summarize(config: models.Config) -> None:
     index = models.Index.load(config)
     summarizer = summari.Summarizer()
+    total_size = index.total_size()
 
-    with click.progressbar(
-        length=index.total_size(),
-        label="Summarizing entries",
-        show_eta=True,
-    ) as progressbar:
-        for summary in summarizer.summarize_index(index):
-            progressbar.update(1)
-            if summary is None:
-                continue
-            index.dump(config)
+    for i, summary in enumerate(summarizer.summarize_index(index), start=1):
+        print(f"Summarizing {i}/{total_size} entries...")
+        if summary is None:
+            continue
+        print(f"New summary: {summary}")
+
+    index.dump(config)

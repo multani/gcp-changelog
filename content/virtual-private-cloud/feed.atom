@@ -6,7 +6,6 @@
   <id>urn:github:multani:gcp-changelog:virtual-private-cloud</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/virtual-private-cloud/" />
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -16,9 +15,10 @@
     <content type="text/markdown">Dynamic Private Service Connect interfaces are available in **Preview**. You can update VM instances to add or remove dynamic Private Service Connect interfaces without restarting or recreating the instance.
 
 For more information, see [Private Service Connect interface types](https://cloud.google.com/vpc/docs/about-private-service-connect-interfaces#types).</content>
+    <summary>VM instances can now be updated to add or remove dynamic Private Service Connect interfaces without needing to restart or recreate the instance.</summary>
+    <title>Feature: Dynamic Private Service Connect interfaces now in preview</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -26,9 +26,10 @@ For more information, see [Private Service Connect interface types](https://clou
     <published>2025-07-09T00:00:00+00:00</published>
     <updated>2025-07-09T00:00:00+00:00</updated>
     <content type="text/markdown">VPC Network Peering supports peering connections in consensus mode. This feature is available in **Preview**. For more information, see [Update strategy](https://cloud.google.com/vpc/docs/using-vpc-peering#update-strategy).</content>
+    <summary>VPC Network Peering now supports connections in consensus mode. This feature is currently in Preview. For more details, refer to the update strategy documentation.</summary>
+    <title>Feature: VPC Network Peering supports consensus mode</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -41,9 +42,10 @@ For more information, see [Private Service Connect interface types](https://clou
 * Using a next hop that is in a peered VPC network
 
 For more information, see [Create policy-based routes](https://cloud.google.com/vpc/docs/use-policy-based-routes#create).</content>
+    <summary>Policy-based routes now support IPv6 traffic and peered VPC networks as next hops, offering enhanced routing flexibility.</summary>
+    <title>Feature: Policy-based routes now generally available</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -51,9 +53,10 @@ For more information, see [Create policy-based routes](https://cloud.google.com/
     <published>2025-06-27T00:00:00+00:00</published>
     <updated>2025-06-27T00:00:00+00:00</updated>
     <content type="text/markdown">Private Service Connect service connectivity automation periodically retries endpoint create or delete operations that fail due to errors. This feature is available in **General Availability**. For more information, see [Automatic retries for endpoint failures](https://cloud.google.com/vpc/docs/about-service-connectivity-automation#endpoint-automation).</content>
+    <summary>This feature provides automatic retries for endpoint creation or deletion operations that fail, increasing reliability and reducing manual intervention.</summary>
+    <title>Feature: Enhanced reliability for Private Service Connect</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -67,9 +70,10 @@ For more information, see [Create policy-based routes](https://cloud.google.com/
 * [Enabling VPC Flow Logs for a subnet](https://cloud.google.com/vpc/docs/using-flow-logs#network-management)
 
 For more information, see [Supported configurations](https://cloud.google.com/vpc/docs/flow-logs#configurations).</content>
+    <summary>You can now manage VPC Flow Logs using the Network Management API. This includes enabling logs for your organization, VPC networks, and subnets. For more details on supported configurations, see the documentation.</summary>
+    <title>Feature: VPC Flow Logs now available through Network Management API</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -77,9 +81,10 @@ For more information, see [Supported configurations](https://cloud.google.com/vp
     <published>2025-06-16T00:00:00+00:00</published>
     <updated>2025-06-16T00:00:00+00:00</updated>
     <content type="text/markdown">VPC Flow Logs annotates RDMA traffic that is reported from A3 Mega VMs. This feature is available in **General Availability**. For more information, see [About VPC Flow Logs records](https://cloud.google.com/vpc/docs/about-flow-logs-records).</content>
+    <summary>VPC Flow Logs now annotates RDMA traffic from A3 Mega VMs, a feature now in General Availability.</summary>
+    <title>Feature: RDMA traffic annotation for VPC Flow Logs</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -97,9 +102,10 @@ For more information, see the following:
 * [Dynamic NICs](https://cloud.google.com/vpc/docs/multiple-interfaces-concepts#dynamic-nics)
 * [Create a VM instance with Dynamic NICs](https://cloud.google.com/vpc/docs/create-use-multiple-interfaces)
 * [Add Dynamic NICs to an existing instance](https://cloud.google.com/vpc/docs/add-dynamic-nics)</content>
+    <summary>You can now add or remove network interfaces from your instances without needing to restart or recreate them, and increase the maximum number of vNICs to 16.</summary>
+    <title>Feature: Dynamic Network Interfaces Available in Preview</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -107,9 +113,10 @@ For more information, see the following:
     <published>2025-06-05T00:00:00+00:00</published>
     <updated>2025-06-05T00:00:00+00:00</updated>
     <content type="text/markdown">You can [publish a Secure Web Proxy instance](https://cloud.google.com/secure-web-proxy/docs/deploy-service-attachment) as a Private Service Connect service. Making Secure Web Proxy available as a published service lets you centralize egress traffic management across multiple VPC networks. This feature is available in **General Availability**.</content>
+    <summary>Secure Web Proxy can now be published as a Private Service Connect service, enabling centralized egress traffic management across multiple VPC networks. This feature is now generally available.</summary>
+    <title>Feature: Secure Web Proxy now available via Private Service Connect</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -119,5 +126,7 @@ For more information, see the following:
     <content type="text/markdown">You can assign IPv6 bring your own IP (BYOIP) addresses to a subnet's external address range. These subnet ranges can only be used by VM instances, either as ephemeral or reserved addresses. To reserve addresses from these ranges, create a static regional external IPv6 address with the VM endpoint type. This feature is available in **General Availability**.
 
 For more information, see [Create and use IPv6 sub-prefixes](https://cloud.google.com/vpc/docs/create-ipv6-sub-prefixes).</content>
+    <summary>You can now assign IPv6 bring your own IP (BYOIP) addresses to a subnet's external address range. These addresses can be used by VM instances as either ephemeral or reserved addresses. To reserve addresses, create a static regional external IPv6 address with the VM endpoint type. This feature is available in General Availability.</summary>
+    <title>Feature: Assign IPv6 BYOIP Addresses to Subnets</title>
   </entry>
 </feed>

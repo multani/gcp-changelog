@@ -4,91 +4,155 @@
     "2025-07-21": [
       {
         "kind": "Feature",
-        "content": "**Generally available**: The general-purpose C4D machine series offers the following bare metal machine types:\n\n* `c4d-standard-384-metal`\n* `c4d-highcpu-384-metal`\n* `c4d-highmem-384-metal`\n\nThis is the first machine series to offer AMD-based bare metal instances. Bare metal instances let you create an instance with direct access to the machine's CPU and memory, without a virtualization layer in the middle. C4D uses [Titanium](https://cloud.google.com/titanium) to deliver more compute and memory resources for your workloads by offloading network and I/O processing from the host hardware. To learn more, see [C4D machine series](https://cloud.google.com/compute/docs/general-purpose-machines#c4d_series). For information about bare metal instances, including regional availability, see [Bare metal instances on Compute Engine](https://cloud.google.com/compute/docs/instances/bare-metal-instances#c4d-metal)."
+        "content": "**Generally available**: The general-purpose C4D machine series offers the following bare metal machine types:\n\n* `c4d-standard-384-metal`\n* `c4d-highcpu-384-metal`\n* `c4d-highmem-384-metal`\n\nThis is the first machine series to offer AMD-based bare metal instances. Bare metal instances let you create an instance with direct access to the machine's CPU and memory, without a virtualization layer in the middle. C4D uses [Titanium](https://cloud.google.com/titanium) to deliver more compute and memory resources for your workloads by offloading network and I/O processing from the host hardware. To learn more, see [C4D machine series](https://cloud.google.com/compute/docs/general-purpose-machines#c4d_series). For information about bare metal instances, including regional availability, see [Bare metal instances on Compute Engine](https://cloud.google.com/compute/docs/instances/bare-metal-instances#c4d-metal).",
+        "summary": {
+          "title": "New AMD-based bare metal instances now available",
+          "summary": "The new C4D machine series, featuring AMD EPYC processors, is now generally available. These bare metal instances provide direct access to hardware resources, offering enhanced performance for demanding workloads. The series includes standard, high-CPU, and high-memory configurations."
+        }
       }
     ],
     "2025-07-18": [
       {
         "kind": "Feature",
-        "content": "**Generally available**: You can create instant and standard snapshots from Hyperdisk volumes in multi-writer mode. You can also clone Hyperdisk volumes in multi-writer mode.\n\nFor more information, see [Share disks between instances](https://cloud.google.com/compute/docs/disks/sharing-disks-between-vms)."
+        "content": "**Generally available**: You can create instant and standard snapshots from Hyperdisk volumes in multi-writer mode. You can also clone Hyperdisk volumes in multi-writer mode.\n\nFor more information, see [Share disks between instances](https://cloud.google.com/compute/docs/disks/sharing-disks-between-vms).",
+        "summary": {
+          "title": "Hyperdisk Snapshots and Cloning Now Available",
+          "summary": "Snapshots and cloning for multi-writer Hyperdisks are now generally available. This allows for greater flexibility in managing and sharing your storage."
+        }
       }
     ],
     "2025-07-15": [
       {
         "kind": "Changed",
-        "content": "Compute flexible committed use discounts (CUDs) offer expanded coverage by\nsupporting the following resources and services:\n\n* Memory-optimized M1, M2, M3, and M4 VMs\n* Compute-optimized H3 instances\n* Cloud Run services with request-based billing\n* Cloud Run Functions\n\nTo receive the expanded coverage for flexible CUDs, you must opt in to the new\nspend-based CUD model. Cloud Billing accounts that meet specific criteria are\nautomatically opted into the new model. On January 21, 2026, all remaining\naccounts will automatically migrate to the new model. You can opt in before that\ndate to start receiving the expanded coverage. To learn more about the new model\nand the opt-in details, see\n[Spend-based CUDs program improvements](https://cloud.google.com/docs/cuds-multiprice).\n\nTo learn more about this change and how your flexible CUDs apply after you opt\nin, see\n[Compute flexible CUDs](https://cloud.google.com/compute/docs/instances/committed-use-discounts-overview#spend_based)."
+        "content": "Compute flexible committed use discounts (CUDs) offer expanded coverage by\nsupporting the following resources and services:\n\n* Memory-optimized M1, M2, M3, and M4 VMs\n* Compute-optimized H3 instances\n* Cloud Run services with request-based billing\n* Cloud Run Functions\n\nTo receive the expanded coverage for flexible CUDs, you must opt in to the new\nspend-based CUD model. Cloud Billing accounts that meet specific criteria are\nautomatically opted into the new model. On January 21, 2026, all remaining\naccounts will automatically migrate to the new model. You can opt in before that\ndate to start receiving the expanded coverage. To learn more about the new model\nand the opt-in details, see\n[Spend-based CUDs program improvements](https://cloud.google.com/docs/cuds-multiprice).\n\nTo learn more about this change and how your flexible CUDs apply after you opt\nin, see\n[Compute flexible CUDs](https://cloud.google.com/compute/docs/instances/committed-use-discounts-overview#spend_based).",
+        "summary": {
+          "title": "Expanded Coverage for Flexible Committed Use Discounts",
+          "summary": "Compute flexible committed use discounts now cover memory-optimized VMs (M1-M4), compute-optimized H3 instances, and Cloud Run services. To benefit from this expanded coverage, opt into the new spend-based CUD model before January 21, 2026, when all remaining accounts will be automatically migrated."
+        }
       }
     ],
     "2025-07-02": [
       {
         "kind": "Feature",
-        "content": "**Preview**: You can reserve GPU VMs that use A4 and A3 Ultra machine types by using future reservations in calendar mode. This feature lets you reserve up to 80 GPU VMs for up to 90 days to obtain capacity for the following workloads:\n\n* Model pre-training jobs\n* Model fine-tuning jobs\n* High performance computing (HPC) simulation workloads\n* Short-term expected increases in inference workloads\n\nFor more information, see [About future reservation requests in calendar mode](https://cloud.google.com/compute/docs/instances/future-reservations-calendar-mode-overview)."
+        "content": "**Preview**: You can reserve GPU VMs that use A4 and A3 Ultra machine types by using future reservations in calendar mode. This feature lets you reserve up to 80 GPU VMs for up to 90 days to obtain capacity for the following workloads:\n\n* Model pre-training jobs\n* Model fine-tuning jobs\n* High performance computing (HPC) simulation workloads\n* Short-term expected increases in inference workloads\n\nFor more information, see [About future reservation requests in calendar mode](https://cloud.google.com/compute/docs/instances/future-reservations-calendar-mode-overview).",
+        "summary": {
+          "title": "Reserve GPU VMs with Future Reservations",
+          "summary": "You can now reserve A4 and A3 Ultra GPU VMs using future reservations in calendar mode. This allows for capacity booking of up to 80 GPU VMs for 90 days, suitable for model training, HPC, and inference workloads."
+        }
       },
       {
         "kind": "Feature",
-        "content": "**Generally available**: You can create Z3 VMs using smaller machine types, ranging in size from 14 to 88 vCPUs. Also, Z3 now offers `-standardlssd` and `-highlssd` predefined machine types. These new machine types have different amounts of Local SSD capacity per vCPU.\n\nWhen you use Local SSD disks with Z3 VMs, you can receive committed use discounts (CUDs) without needing to [attach reservations to your commitments](https://cloud.google.com/compute/docs/instances/reservations-with-commitments#committed_resources_that_require_attached_reservations).\n\nFor more information, see [Storage-optimized machines](https://cloud.google.com/compute/docs/storage-optimized-machines)."
+        "content": "**Generally available**: You can create Z3 VMs using smaller machine types, ranging in size from 14 to 88 vCPUs. Also, Z3 now offers `-standardlssd` and `-highlssd` predefined machine types. These new machine types have different amounts of Local SSD capacity per vCPU.\n\nWhen you use Local SSD disks with Z3 VMs, you can receive committed use discounts (CUDs) without needing to [attach reservations to your commitments](https://cloud.google.com/compute/docs/instances/reservations-with-commitments#committed_resources_that_require_attached_reservations).\n\nFor more information, see [Storage-optimized machines](https://cloud.google.com/compute/docs/storage-optimized-machines).",
+        "summary": {
+          "title": "Z3 VMs now more flexible with new machine types",
+          "summary": "Z3 VMs now support a wider range of machine types, from 14 to 88 vCPUs, including new predefined machine types with varying Local SSD capacities. Additionally, using Local SSDs with Z3 VMs now qualifies for committed use discounts without requiring reservation attachments."
+        }
       },
       {
         "kind": "Feature",
-        "content": "**Preview**: The general purpose C4 machine series now supports the following machine types on Intel's Xeon 6 processor (Granite Rapids):\n\n* C4 VMs with Titanium Local SSD attached using two new machine types:\n  + `c4-standard-*-lssd`\n  + `c4-highmem-*-lssd`\n* Three new bare metal machine types:\n  + `c4-standard-288-metal`\n  + `c4-highcpu-288-metal`\n  + `c4-highmem-288-metal`\n* C4 `standard`, `highmem`, and `highcpu` VMs with 144 and 288 vCPUs\n\nTo learn more, see the [C4 machine series](https://cloud.google.com/compute/docs/general-purpose-machines#c4_series).\n\nFor more information, about the attached Local SSD disks, see [Machine types that automatically attach Local SSD disks](https://cloud.google.com/compute/docs/disks/local-ssd#lssd_disks_fixed)."
+        "content": "**Preview**: The general purpose C4 machine series now supports the following machine types on Intel's Xeon 6 processor (Granite Rapids):\n\n* C4 VMs with Titanium Local SSD attached using two new machine types:\n  + `c4-standard-*-lssd`\n  + `c4-highmem-*-lssd`\n* Three new bare metal machine types:\n  + `c4-standard-288-metal`\n  + `c4-highcpu-288-metal`\n  + `c4-highmem-288-metal`\n* C4 `standard`, `highmem`, and `highcpu` VMs with 144 and 288 vCPUs\n\nTo learn more, see the [C4 machine series](https://cloud.google.com/compute/docs/general-purpose-machines#c4_series).\n\nFor more information, about the attached Local SSD disks, see [Machine types that automatically attach Local SSD disks](https://cloud.google.com/compute/docs/disks/local-ssd#lssd_disks_fixed).",
+        "summary": {
+          "title": "New C4 machine types available",
+          "summary": "The C4 machine series now supports new machine types on Intel's Xeon 6 processor (Granite Rapids), including VMs with Titanium Local SSD and bare metal options. This expansion provides more choices for various workloads."
+        }
       }
     ],
     "2025-06-30": [
       {
         "kind": "Feature",
-        "content": "**Generally available**: You can now modify licenses attached to your disks. Previously, licenses on disk resources were immutable. You had to delete and recreate disks, or engage our support team to change licenses.\n\nThis feature provides greater flexibility for managing your disk licenses. You can now:\n\n* Append, remove, replace, and view the history of license updates.\n* Perform in-place license upgrades, such as [Ubuntu to Ubuntu Pro](https://cloud.google.com/compute/docs/images/premium/ubuntu-pro/upgrade-from-ubuntu), using the `gcloud` CLI and REST.\n* [Switch from PAYG to BYOS billing](https://cloud.google.com/compute/docs/licenses/switch-between-payg-and-byos) models.\n* Review [license changes and restrictions](https://cloud.google.com/compute/docs/licenses/license-changes-and-restrictions) and [append a RHEL ELS](https://cloud.google.com/compute/docs/images/premium/rhel/append-els-licenses) license to a newer version.\n\nFor more information on how to manage licenses, see [Manage licenses](https://cloud.google.com//compute/docs/licenses/manage)."
+        "content": "**Generally available**: You can now modify licenses attached to your disks. Previously, licenses on disk resources were immutable. You had to delete and recreate disks, or engage our support team to change licenses.\n\nThis feature provides greater flexibility for managing your disk licenses. You can now:\n\n* Append, remove, replace, and view the history of license updates.\n* Perform in-place license upgrades, such as [Ubuntu to Ubuntu Pro](https://cloud.google.com/compute/docs/images/premium/ubuntu-pro/upgrade-from-ubuntu), using the `gcloud` CLI and REST.\n* [Switch from PAYG to BYOS billing](https://cloud.google.com/compute/docs/licenses/switch-between-payg-and-byos) models.\n* Review [license changes and restrictions](https://cloud.google.com/compute/docs/licenses/license-changes-and-restrictions) and [append a RHEL ELS](https://cloud.google.com/compute/docs/images/premium/rhel/append-els-licenses) license to a newer version.\n\nFor more information on how to manage licenses, see [Manage licenses](https://cloud.google.com//compute/docs/licenses/manage).",
+        "summary": {
+          "title": "Modify disk licenses",
+          "summary": "You can now easily modify licenses attached to your disks, append, remove, replace, and view license history. This provides greater flexibility for managing disk licenses, including in-place upgrades and switching between billing models."
+        }
       }
     ],
     "2025-06-27": [
       {
         "kind": "Feature",
-        "content": "**Generally available**: You can specify a custom ephemeral external IPv6 address when creating an instance. For more information, see [Create instances that use IPv6 addresses](https://cloud.google.com/compute/docs/instances/create-ipv6-instance)."
+        "content": "**Generally available**: You can specify a custom ephemeral external IPv6 address when creating an instance. For more information, see [Create instances that use IPv6 addresses](https://cloud.google.com/compute/docs/instances/create-ipv6-instance).",
+        "summary": {
+          "title": "Custom ephemeral IPv6 address for instances",
+          "summary": "You can now specify a custom ephemeral external IPv6 address when creating an instance. This feature is now generally available."
+        }
       }
     ],
     "2025-06-13": [
       {
         "kind": "Feature",
-        "content": "**Generally available**: General purpose [C4D machine types](https://cloud.google.com/compute/docs/general-purpose-machines#c4d_series), powered by the fifth generation AMD EPYC processors (Turin) and Google Titanium, are generally available.\n\nC4D is designed to run mission-critical workloads including web app and game servers, AI inference, web serving, video streaming, and data centric applications like analytics, relational, and in-memory databases.\n\nC4D is available in `standard`, `highmem`, and `highcpu` machine types and supports only Google Cloud Hyperdisk storage and Titanium SSD. To learn more about C4D, refer to the [C4D release blog](https://www.google.com/url?q=https://cloud.google.com/blog/products/compute/c4d-vms-unparalleled-performance-for-business-workloads). For details about where you can create C4D instances, see the [Regions and zones](https://cloud.google.com/compute/docs/regions-zones#available) page."
+        "content": "**Generally available**: General purpose [C4D machine types](https://cloud.google.com/compute/docs/general-purpose-machines#c4d_series), powered by the fifth generation AMD EPYC processors (Turin) and Google Titanium, are generally available.\n\nC4D is designed to run mission-critical workloads including web app and game servers, AI inference, web serving, video streaming, and data centric applications like analytics, relational, and in-memory databases.\n\nC4D is available in `standard`, `highmem`, and `highcpu` machine types and supports only Google Cloud Hyperdisk storage and Titanium SSD. To learn more about C4D, refer to the [C4D release blog](https://www.google.com/url?q=https://cloud.google.com/blog/products/compute/c4d-vms-unparalleled-performance-for-business-workloads). For details about where you can create C4D instances, see the [Regions and zones](https://cloud.google.com/compute/docs/regions-zones#available) page.",
+        "summary": {
+          "title": "New C4D machine types now available",
+          "summary": "The new C4D machine types, featuring AMD EPYC processors and Google Titanium, are now generally available. These general-purpose VMs are ideal for a wide range of mission-critical workloads, including web applications, game servers, AI inference, and data-centric applications like databases and analytics."
+        }
       },
       {
         "kind": "Feature",
-        "content": "**Preview**: Dynamic NICs let you add or remove network interfaces to or from an instance without having to restart or recreate the instance.\n\nYou can also use Dynamic NICs when you need more network interfaces. The maximum number of vNICs for most machine types in Google Cloud is 10; however, you can configure up to 16 total interfaces by using Dynamic NICs.\n\nFor more information, see the following:\n\n* [Multiple network interfaces overview](https://cloud.google.com/vpc/docs/multiple-interfaces-concepts)\n* [Create VM instances with multiple network interfaces](https://cloud.google.com/vpc/docs/create-use-multiple-interfaces)\n* [Add Dynamic NICs to an instance](https://cloud.google.com/vpc/docs/add-dynamic-nics)"
+        "content": "**Preview**: Dynamic NICs let you add or remove network interfaces to or from an instance without having to restart or recreate the instance.\n\nYou can also use Dynamic NICs when you need more network interfaces. The maximum number of vNICs for most machine types in Google Cloud is 10; however, you can configure up to 16 total interfaces by using Dynamic NICs.\n\nFor more information, see the following:\n\n* [Multiple network interfaces overview](https://cloud.google.com/vpc/docs/multiple-interfaces-concepts)\n* [Create VM instances with multiple network interfaces](https://cloud.google.com/vpc/docs/create-use-multiple-interfaces)\n* [Add Dynamic NICs to an instance](https://cloud.google.com/vpc/docs/add-dynamic-nics)",
+        "summary": {
+          "title": "Dynamic NICs: Add or remove network interfaces without restarting",
+          "summary": "You can now add or remove network interfaces from your instances without needing to restart them. This feature allows for more network interfaces, with the possibility of configuring up to 16 total interfaces for most machine types."
+        }
       }
     ],
     "2025-06-11": [
       {
         "kind": "Feature",
-        "content": "**Preview**: The storage-optimized Z3 machine series offers a bare metal (`-metal`) machine type with 192 vCPUs. Bare metal instances let you create an instance with direct access to the machine's CPU and memory, without a virtualization layer in the middle. To learn more, see [Z3 machine series](https://cloud.google.com/compute/docs/storage-optimized-machines#z3_series). For information about bare metal instances, including regional availability, see [Bare metal instances on Compute Engine](https://cloud.google.com/compute/docs/instances/bare-metal-instances)."
+        "content": "**Preview**: The storage-optimized Z3 machine series offers a bare metal (`-metal`) machine type with 192 vCPUs. Bare metal instances let you create an instance with direct access to the machine's CPU and memory, without a virtualization layer in the middle. To learn more, see [Z3 machine series](https://cloud.google.com/compute/docs/storage-optimized-machines#z3_series). For information about bare metal instances, including regional availability, see [Bare metal instances on Compute Engine](https://cloud.google.com/compute/docs/instances/bare-metal-instances).",
+        "summary": {
+          "title": "New Z3 Machine Series with Bare Metal Option",
+          "summary": "Introducing the storage-optimized Z3 machine series, now available with a bare metal option. This new machine type provides direct access to the machine's CPU and memory, bypassing the virtualization layer for enhanced performance."
+        }
       }
     ],
     "2025-06-10": [
       {
         "kind": "Security",
-        "content": "A vulnerability (CVE-2025-2884) affecting Shielded VMs using virtual Trusted Platform Module (vTPM) was discovered and is being addressed. For more information, see the [GCP-2025-031 security bulletin](https://cloud.google.com/compute/docs/security-bulletins#gcp-2025-031)."
+        "content": "A vulnerability (CVE-2025-2884) affecting Shielded VMs using virtual Trusted Platform Module (vTPM) was discovered and is being addressed. For more information, see the [GCP-2025-031 security bulletin](https://cloud.google.com/compute/docs/security-bulletins#gcp-2025-031).",
+        "summary": {
+          "title": "Security vulnerability in Shielded VMs",
+          "summary": "A vulnerability (CVE-2025-2884) affecting Shielded VMs with vTPM has been identified and is being resolved. Further details are available in the security bulletin GCP-205-031."
+        }
       }
     ],
     "2025-06-06": [
       {
         "kind": "Changed",
-        "content": "**Generally available**: The [Security Risk Overview dashboard for Compute Engine](https://cloud.google.com/compute/docs/monitor-security-risks-console) is generally available. In addition, it provides a **Top CVE findings** table that lists the most severe CVEs that affect your Compute Engine instances."
+        "content": "**Generally available**: The [Security Risk Overview dashboard for Compute Engine](https://cloud.google.com/compute/docs/monitor-security-risks-console) is generally available. In addition, it provides a **Top CVE findings** table that lists the most severe CVEs that affect your Compute Engine instances.",
+        "summary": {
+          "title": "Security Risk Overview dashboard for Compute Engine now available",
+          "summary": "The Security Risk Overview dashboard for Compute Engine is now generally available. This update includes a new table listing the most severe CVE findings affecting your Compute Engine instances."
+        }
       }
     ],
     "2025-06-04": [
       {
         "kind": "Feature",
-        "content": "**Preview**: OS Login now supports connections from SSH certificates in addition to SSH keys. For more information, see [Set up OS Login to require SSH certificates for SSH connections](https://cloud.google.com/compute/docs/oslogin/certificates)."
+        "content": "**Preview**: OS Login now supports connections from SSH certificates in addition to SSH keys. For more information, see [Set up OS Login to require SSH certificates for SSH connections](https://cloud.google.com/compute/docs/oslogin/certificates).",
+        "summary": {
+          "title": "OS Login supports SSH certificates",
+          "summary": "OS Login now supports connecting via SSH certificates, enhancing security and flexibility."
+        }
       }
     ],
     "2025-06-03": [
       {
         "kind": "Feature",
-        "content": "**Preview**: You can enable your project to send HTTP requests to a Compute Engine feature alpha URI. This action lets you test and develop with experimental features in the alpha stage using REST. For more information, see [Use the Compute Engine API in alpha](https://cloud.google.com/compute/docs/reference/rest/alpha)."
+        "content": "**Preview**: You can enable your project to send HTTP requests to a Compute Engine feature alpha URI. This action lets you test and develop with experimental features in the alpha stage using REST. For more information, see [Use the Compute Engine API in alpha](https://cloud.google.com/compute/docs/reference/rest/alpha).",
+        "summary": {
+          "title": "Test new Compute Engine features",
+          "summary": "You can now test and develop with experimental features in the alpha stage using REST by enabling your project to send HTTP requests to a Compute Engine alpha URI."
+        }
       }
     ],
     "2025-06-02": [
       {
         "kind": "Feature",
-        "content": "**Preview**: The general-purpose C4D machine series offers bare metal (`-metal`) machine types with 384 vCPUs. Bare metal instances let you create an instance with direct access to the machine's CPU and memory, without a virtualization layer in the middle. To learn more, see [C4D machine series](https://cloud.google.com/compute/docs/general-purpose-machines#c4d_series). For information about bare metal instances, including regional availability, see [Bare metal instances on Compute Engine](https://cloud.google.com/compute/docs/instances/bare-metal-instances)."
+        "content": "**Preview**: The general-purpose C4D machine series offers bare metal (`-metal`) machine types with 384 vCPUs. Bare metal instances let you create an instance with direct access to the machine's CPU and memory, without a virtualization layer in the middle. To learn more, see [C4D machine series](https://cloud.google.com/compute/docs/general-purpose-machines#c4d_series). For information about bare metal instances, including regional availability, see [Bare metal instances on Compute Engine](https://cloud.google.com/compute/docs/instances/bare-metal-instances).",
+        "summary": {
+          "title": "Introducing C4D bare metal instances",
+          "summary": "The new C4D machine series now offers bare metal instances with 384 vCPUs, providing direct access to the machine's CPU and memory without a virtualization layer. This feature enhances performance for demanding workloads."
+        }
       }
     ]
   }

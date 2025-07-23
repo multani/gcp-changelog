@@ -24,6 +24,11 @@ jobs:
       - name: Fetch data
         run: uv run gcp-changelog fetch
 
+      - name: Build summaries
+        run: uv run gcp-changelog summarize
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+
       - name: Render to markdown
         run: uv run gcp-changelog render
 

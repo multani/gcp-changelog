@@ -6,7 +6,6 @@
   <id>urn:github:multani:gcp-changelog:document-ai</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/document-ai/" />
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -16,9 +15,10 @@
     <content type="text/markdown">Document AI now supports [Identity and Access Management](https://cloud.google.com/iam/docs/overview) (IAM) deny policies. These policies allow you to define deny rules that prevent certain principals from using certain permissions to access Google Cloud resources, regardless of the roles they're granted.
 
 For more information, read [Deny policy](https://cloud.google.com/iam/docs/deny-overview) overview and [Document AI security and compliance](https://cloud.google.com/document-ai/docs/security).</content>
+    <summary>Document AI now supports IAM deny policies, which allow you to create rules that restrict access to Google Cloud resources.</summary>
+    <title>Feature: IAM Deny Policies Now Supported in Document AI</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -28,9 +28,10 @@ For more information, read [Deny policy](https://cloud.google.com/iam/docs/deny-
     <content type="text/markdown">Document AI [VPC service controls](https://cloud.google.com/vpc-service-controls/docs/overview) (VPC-SC) integration now supports identity groups.
 
 For more information on setting up VPC-SC identity groups, read [Configure identity groups and third-party identities in ingress and egress rules](https://cloud.google.com/vpc-service-controls/docs/configure-identity-groups).</content>
+    <summary>Document AI now supports identity groups for VPC Service Controls. This enhancement allows for more granular control over data access by enabling the use of identity groups in VPC-SC security policies. For setup instructions, refer to the provided documentation.</summary>
+    <title>Feature: Document AI VPC-SC Now Supports Identity Groups</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -44,9 +45,10 @@ This change is automatically present in existing and newly created processors.
 For customers with existing v1.5 processors to make use of this feature, you must relabel the nested entities in different pages.
 
 To learn more about the labeling process, refer to our [Label documents](https://cloud.google.com/document-ai/docs/label-documents) documentation.</content>
+    <summary>The Document AI CDE processor now supports merging child entities across pages for nested entities. This feature is available in the pretrained-foundation-model-v1.5-2025-05-05 custom extractor model and is automatically enabled for all processors. For existing v1.5 processors, relabeling nested entities across pages is necessary to utilize this enhancement.</summary>
+    <title>Feature: Document AI CDE Processor Now Merges Nested Entities Across Pages</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -60,9 +62,10 @@ From version v1.4 and later, we will use a new quota for online processing calle
 These can be enabled in the console when creating labels and by using the [`DocumentSchema.EntityType`](https://cloud.google.com/document-ai/docs/reference/rpc/google.cloud.documentai.v1#entitytype).
 
 For more information, read [Managing processor versions](https://cloud.google.com/document-ai/docs/manage-processor-versions#import).</content>
+    <summary>The new Custom Extractor model version, pretrained-foundation-model-v1.5-2025-05-05, is now generally available with fine-tuning support for US and EU regions. Online processing will now be subject to a new quota based on pages per minute, per processor type and model version, while batch processing quotas remain unchanged. You can enable these features in the console or via the DocumentSchema API.</summary>
+    <title>Feature: Custom Extractor model now available</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -72,5 +75,7 @@ For more information, read [Managing processor versions](https://cloud.google.co
     <content type="text/markdown">We've increased the maximum file size for [online processing](https://cloud.google.com/document-ai/docs/reference/rest/v1/projects.locations.processors/process) requests from 20 MB to 40 MB. This applies to all types of processors.
 
 For more information, see the Document AI [limits](https://cloud.google.com/document-ai/limits#content_limits) page.</content>
+    <summary>You can now upload files up to 40 MB for online processing with all Document AI processor types. This doubles the previous limit and allows for larger documents to be processed.</summary>
+    <title>Feature: Increased file size limit for online processing</title>
   </entry>
 </feed>

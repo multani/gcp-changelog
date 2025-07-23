@@ -4,25 +4,41 @@
     "2025-07-18": [
       {
         "kind": "Feature",
-        "content": "**Generally available**: You can troubleshoot workloads with slow performance by using straggler detection metrics and logs.\n\n*Stragglers* are single-point, non-crashing failures that eventually\nslow down your entire workload. Large-scale ML workloads are very susceptible to stragglers, and VMs with stragglers are often very difficult to notice and pinpoint without straggler detection.\n\nFor more information, see [Monitor VMs and Slurm clusters](https://cloud.google.com/ai-hypercomputer/docs/monitor) and [Troubleshoot slow performance](https://cloud.google.com/ai-hypercomputer/docs/troubleshooting/troubleshoot-slow-performance)."
+        "content": "**Generally available**: You can troubleshoot workloads with slow performance by using straggler detection metrics and logs.\n\n*Stragglers* are single-point, non-crashing failures that eventually\nslow down your entire workload. Large-scale ML workloads are very susceptible to stragglers, and VMs with stragglers are often very difficult to notice and pinpoint without straggler detection.\n\nFor more information, see [Monitor VMs and Slurm clusters](https://cloud.google.com/ai-hypercomputer/docs/monitor) and [Troubleshoot slow performance](https://cloud.google.com/ai-hypercomputer/docs/troubleshooting/troubleshoot-slow-performance).",
+        "summary": {
+          "title": "New Feature: Straggler Detection for Performance Troubleshooting",
+          "summary": "Troubleshoot slow performance in your workloads by using new straggler detection metrics and logs. This feature helps identify and resolve single-point, non-crashing failures that can slow down your entire workload, especially in large-scale ML workloads."
+        }
       }
     ],
     "2025-07-10": [
       {
         "kind": "Feature",
-        "content": "**Generally available**: You can now manage the [Collective Communication Analyzer (CoMMA)](https://cloud.google.com/ai-hypercomputer/docs/nccl/comma), a library that uses the NVIDIA Collective Communication Library (NCCL) profiler plugin to collect detailed NCCL telemetry for GPU machine types. The collected performance metrics and operational events are used for analyzing and optimizing large-scale AI and ML training workloads.\n\nCoMMA is automatically installed and enabled on A4X, A4 High, and A3 Ultra machine types when using specific images. You can manage this data collection by disabling the plugin, adjusting its data granularity levels, or manually installing it on other GPU machine types. For more information, see [Enable, disable, and configure CoMMA](https://cloud.google.com/ai-hypercomputer/docs/nccl/configure-comma)."
+        "content": "**Generally available**: You can now manage the [Collective Communication Analyzer (CoMMA)](https://cloud.google.com/ai-hypercomputer/docs/nccl/comma), a library that uses the NVIDIA Collective Communication Library (NCCL) profiler plugin to collect detailed NCCL telemetry for GPU machine types. The collected performance metrics and operational events are used for analyzing and optimizing large-scale AI and ML training workloads.\n\nCoMMA is automatically installed and enabled on A4X, A4 High, and A3 Ultra machine types when using specific images. You can manage this data collection by disabling the plugin, adjusting its data granularity levels, or manually installing it on other GPU machine types. For more information, see [Enable, disable, and configure CoMMA](https://cloud.google.com/ai-hypercomputer/docs/nccl/configure-comma).",
+        "summary": {
+          "title": "Collective Communication Analyzer (CoMMA) Now Generally Available",
+          "summary": "The Collective Communication Analyzer (CoMMA) is now generally available for optimizing large-scale AI and ML training workloads. It collects detailed NCCL telemetry for GPU machine types, helping to analyze performance and operational events. CoMMA is automatically installed on specific GPU machine types and can be managed through configuration or manual installation on others."
+        }
       }
     ],
     "2025-07-07": [
       {
         "kind": "Feature",
-        "content": "**Preview**: You can use future reservations in calendar mode to obtain resources for up to 90 days. By creating a request in calendar mode, you can reserve up to 80 GPU VMs for a future date and time. Then, you can use that capacity to run the following workloads:\n\n* Model pre-training\n* Model fine-tuning\n* Simulations\n* Inference\n\nFor more information, see [Choose a consumption option](https://cloud.google.com/ai-hypercomputer/docs/consumption-models)."
+        "content": "**Preview**: You can use future reservations in calendar mode to obtain resources for up to 90 days. By creating a request in calendar mode, you can reserve up to 80 GPU VMs for a future date and time. Then, you can use that capacity to run the following workloads:\n\n* Model pre-training\n* Model fine-tuning\n* Simulations\n* Inference\n\nFor more information, see [Choose a consumption option](https://cloud.google.com/ai-hypercomputer/docs/consumption-models).",
+        "summary": {
+          "title": "Future Reservations Now Available",
+          "summary": "You can now reserve up to 80 GPU VMs for up to 90 days in advance using calendar mode. This feature is ideal for workloads such as model pre-training, fine-tuning, simulations, and inference."
+        }
       }
     ],
     "2025-06-11": [
       {
         "kind": "Feature",
-        "content": "**Generally available**: You can apply a workload policy in a managed instance group (MIG) to specify the type of the workload to run on the MIG. Workload policies help improve the workload performance by optimizing the underlying infrastructure. The supported type, `high-throughput`, is ideal for workloads that require high networking performance. For more information, see [Workload policy for MIGs](https://cloud.google.com/ai-hypercomputer/docs/placement-policy-and-workload-policy#workload-policy)."
+        "content": "**Generally available**: You can apply a workload policy in a managed instance group (MIG) to specify the type of the workload to run on the MIG. Workload policies help improve the workload performance by optimizing the underlying infrastructure. The supported type, `high-throughput`, is ideal for workloads that require high networking performance. For more information, see [Workload policy for MIGs](https://cloud.google.com/ai-hypercomputer/docs/placement-policy-and-workload-policy#workload-policy).",
+        "summary": {
+          "title": "New Workload Policy Feature for MIGs",
+          "summary": "You can now apply a workload policy to a managed instance group (MIG) to optimize underlying infrastructure for better workload performance. The supported 'high-throughput' type is ideal for workloads needing high networking performance."
+        }
       }
     ]
   }

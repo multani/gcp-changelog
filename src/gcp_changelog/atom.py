@@ -6,7 +6,7 @@ from .models import ProductChangelog
 
 
 def date_to_datetime(d: datetime.date) -> str:
-    dt =datetime.datetime.fromisoformat(d.isoformat())
+    dt = datetime.datetime.fromisoformat(d.isoformat())
     dt = dt.replace(tzinfo=datetime.timezone.utc)
     return dt.isoformat()
 
@@ -54,10 +54,6 @@ def build_entries(product_changelog: ProductChangelog) -> Iterator[ET.Element]:
         for i, changelog in enumerate(changelog_entries):
             elements = []
 
-            title = ET.Element("title")
-            title.text = changelog.kind
-            elements.append(title)
-
             author = ET.Element("author")
             author_name = ET.Element("name")
             author_name.text = "Google Cloud"
@@ -67,7 +63,9 @@ def build_entries(product_changelog: ProductChangelog) -> Iterator[ET.Element]:
             id = f"{date.isoformat()}:{changelog.kind}:{i}".lower()
 
             entry_id = ET.Element("id")
-            entry_id.text = f"urn:github:multani:gcp-changelog:{product_changelog.slug}:{id}"
+            entry_id.text = (
+                f"urn:github:multani:gcp-changelog:{product_changelog.slug}:{id}"
+            )
             elements.append(entry_id)
 
             published = ET.Element("published")
@@ -78,11 +76,19 @@ def build_entries(product_changelog: ProductChangelog) -> Iterator[ET.Element]:
             updated.text = published.text
             elements.append(updated)
 
-            # summary = ET.Element("summary")
             content = ET.Element("content")
             content.set("type", "text/markdown")
             content.text = changelog.content
             elements.append(content)
+
+            if changelog.summary is not None:
+                summary = ET.Element("summary")
+                summary.text = changelog.summary.summary
+                elements.append(summary)
+
+                title = ET.Element("title")
+                title.text = f"{changelog.kind}: {changelog.summary.title}"
+                elements.append(title)
 
             x = ET.Element("entry")
             x.extend(elements)

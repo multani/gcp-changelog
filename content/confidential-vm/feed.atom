@@ -6,7 +6,6 @@
   <id>urn:github:multani:gcp-changelog:confidential-vm</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/confidential-vm/" />
   <entry>
-    <title>Issue</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -19,9 +18,10 @@
 * Ubuntu 25.04
 
 To restore remote attestation, use an earlier guest OS version such as SLES 15 SP6 or Ubuntu 24.04.</content>
+    <summary>Confidential VM instances with AMD SEV-SNP or Intel TDX do not support remote attestation for SLES 15 SP7 and Ubuntu 25.04 as of June 20, 2025. To re-enable remote attestation, please use previous versions of the operating system, such as SLES 15 SP6 or Ubuntu 24.04.</summary>
+    <title>Issue: Confidential VM remote attestation issue</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -32,5 +32,7 @@ To restore remote attestation, use an earlier guest OS version such as SLES 15 S
 
 * 5th generation AMD EPYC processors (Turin) and Google Titanium
 * AMD [Secure Encrypted Virtualization (SEV)](https://www.amd.com/en/developer/sev.html) which can encrypt the memory of the VM to protect data in-use</content>
+    <summary>New C4D machine types with 5th generation AMD EPYC processors and Google Titanium are now generally available, offering enhanced security with AMD Secure Encrypted Virtualization (SEV) to protect VM memory.</summary>
+    <title>Feature: C4D machine types now available</title>
   </entry>
 </feed>

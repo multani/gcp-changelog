@@ -3,6 +3,7 @@ from pathlib import Path
 import click
 
 from . import models
+from . import summari  # yes, I know
 from .parser import fetch_feed
 
 pass_config = click.make_pass_decorator(models.Config)
@@ -60,3 +61,20 @@ def render(config: models.Config) -> None:
 
     print("Done!")
 
+
+@cli.command()
+@pass_config
+def summarize(config: models.Config) -> None:
+    index = models.Index.load(config)
+    summarizer = summari.Summarizer()
+
+    with click.progressbar(
+        length=index.total_size(),
+        label="Summarizing entries",
+        show_eta=True,
+    ) as progressbar:
+        for summary in summarizer.summarize_index(index):
+            progressbar.update(1)
+            if summary is None:
+                continue
+            index.dump(config)

@@ -11,7 +11,13 @@ dependencies = [
     "beautifulsoup4==4.13.4",
     "click==8.2.1",
     "dateutils==0.6.12",
+    "gpt4all>=2.8.2",
     "httpx==0.28.1",
+    "langchain>=0.3.26",
+    "langchain-community>=0.3.27",
+    "langchain-google-genai>=2.1.8",
+    "langchain-ollama>=0.3.6",
+    "langchain-openai>=0.3.28",
     "markdownify==1.1.0",
     "pydantic==2.11.7",
 ]
@@ -37,3 +43,21 @@ doc = [
     "mkdocs==1.6.1",
     "mkdocs-theme-bootstrap4>=0.4.0",
 ]
+
+[tool.mypy]
+strict = true
+files = ["src"]
+
+[tool.ruff.lint]
+ignore = [
+    # It's OK to have long line
+    "E501",
+]
+extend-select = [
+    # Sort imports
+    "I",
+]
+
+[tool.ruff.lint.isort]
+force-single-line = true
+

@@ -6,7 +6,6 @@
   <id>urn:github:multani:gcp-changelog:cloud-load-balancing</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-load-balancing/" />
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -27,9 +26,10 @@
 For more information, see the documentation for [Supported key types](https://cloud.google.com/load-balancing/docs/ssl-certificates#key-types).
 
 This capability is now in **General Availability**.</content>
+    <summary>Application Load Balancers and Proxy Network Load Balancers now support self-managed TLS certificates with larger key sizes, including RSA-3072, RSA-4096, and ECDSA P-384. This update expands the previously supported RSA-2048 and ECDSA P-256 key types. Note that certificates using RSA-3072 and RSA-4096 keys incur an additional charge of $0.45 per 1 million connections.</summary>
+    <title>Feature: TLS Certificates with Larger Key Sizes Now Supported</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -43,9 +43,10 @@ Internal passthrough Network Load Balancers support three zonal affinity options
 For more information, see [Zonal affinity for internal passthrough Network Load Balancers](https://cloud.google.com/load-balancing/docs/internal/zonal-affinity).
 
 This feature is in **Preview**.</content>
+    <summary>This feature allows internal passthrough Network Load Balancers to limit cross-zone traffic, reduce latency, and improve performance by configuring zonal affinity on the backend service. It supports three options for routing new connections to backends in the same zone as the client. This feature is currently in Preview.</summary>
+    <title>Feature: Zonal Affinity for Internal Load Balancers</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -65,9 +66,10 @@ For details, see the following:
 * [Set up backend mTLS](https://cloud.google.com/load-balancing/docs/backend-mtls-setup)
 
 This capability is in **General Availability** for global external Application Load Balancers.</content>
+    <summary>This feature enables secure communication between your load balancer and backend services by ensuring mutual identity verification, complementing existing frontend mTLS. It's now generally available for global external Application Load Balancers.</summary>
+    <title>Feature: Backend mTLS for Enhanced Security</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -77,9 +79,10 @@ This capability is in **General Availability** for global external Application L
     <content type="text/markdown">Cloud Load Balancing supports load balancing to multi-NIC instances that use [Dynamic NICs](https://cloud.google.com/vpc/docs/multiple-interfaces-concepts).
 
 This capability is in **Preview**.</content>
+    <summary>Cloud Load Balancing now supports load balancing to instances with multiple network interfaces, including those using Dynamic NICs. This feature is currently in Preview.</summary>
+    <title>Feature: Load Balancing to Multi-NIC Instances</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -91,9 +94,10 @@ This capability is in **Preview**.</content>
 For more information, see [Custom metrics for Application Load Balancers](https://cloud.google.com/load-balancing/docs/https/applb-custom-metrics).
 
 This capability is in **General availability**.</content>
+    <summary>You can now use custom metrics to configure Application Load Balancer traffic distribution based on your specific application or infrastructure needs. This allows for more flexible routing to optimal backend instances and endpoints.</summary>
+    <title>Feature: Application Load Balancers support custom metrics</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -106,5 +110,7 @@ This capability is in **General availability**.</content>
 * Connections between the load balancer and its backends. Support for this capability is now in **General Availability**.
 
   To configure H2C for connections between the load balancer and its backends, you set the backend service protocol to `H2C`.</content>
+    <summary>Cleartext HTTP/2 over TCP (H2C) is now generally available for both client-load balancer and load balancer-backend connections. You can enable H2C for backend connections by setting the backend service protocol to H2C.</summary>
+    <title>Feature: H2C Support Now Generally Available</title>
   </entry>
 </feed>

@@ -1,5 +1,6 @@
 from datetime import date
-from typing import Generator, cast
+from typing import Generator
+from typing import cast
 from xml.etree import ElementTree
 
 import bs4

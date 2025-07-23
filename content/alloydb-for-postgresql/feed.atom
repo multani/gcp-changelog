@@ -6,7 +6,6 @@
   <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/alloydb-for-postgresql/" />
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -14,9 +13,10 @@
     <published>2025-07-14T00:00:00+00:00</published>
     <updated>2025-07-14T00:00:00+00:00</updated>
     <content type="text/markdown">You can now create an AlloyDB instance with a specific IP address range using the Google Cloud CLI, Terraform, or REST API. You can also override IP address range allocations configured during cluster creation. For more information, see [Create an instance with a specific IP address range](https://cloud.google.com/alloydb/docs/cluster-create#ip-instance). This feature is generally available [GA](https://cloud.google.com/products#product-launch-stages).</content>
+    <summary>You can now create AlloyDB instances with specific IP address ranges using the Google Cloud CLI, Terraform, or REST API, and override existing IP range allocations.</summary>
+    <title>Feature: AlloyDB instance IP address range support</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -28,9 +28,10 @@ searches, specifically K-Nearest Neighbor (KNN) searches, when combined with
 highly-selective predicate filtering. For more information, see
 [Accelerate your filtered vector search](https://cloud.google.com/alloydb/docs/ai/perform-vector-search#accelerate-filtered-vector-search). This feature is in
 [Preview](https://cloud.google.com/products#product-launch-stages).</content>
+    <summary>A new feature allows for improved performance of vector similarity searches, specifically K-Nearest Neighbor (KNN) searches, when combined with highly-selective predicate filtering. This feature is currently in Preview.</summary>
+    <title>Feature: Improved Vector Search Performance</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -40,9 +41,10 @@ highly-selective predicate filtering. For more information, see
     <content type="text/markdown">You can let [AlloyDB automatically create Private Service Connect endpoints](https://cloud.google.com/alloydb/docs/configure-private-service-connect#create_the_endpoint_automatically)
 for authorized projects when you create Private Service Connect-enabled
 instances, based on your defined service connection policy. This feature is generally available ([GA](https://cloud.google.com/products#product-launch-stages)).</content>
+    <summary>AlloyDB now supports automatic creation of Private Service Connect endpoints for authorized projects, simplifying network configuration. This feature is now generally available.</summary>
+    <title>Feature: Automatic Private Service Connect Endpoints for AlloyDB</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -50,9 +52,10 @@ instances, based on your defined service connection policy. This feature is gene
     <published>2025-06-02T00:00:00+00:00</published>
     <updated>2025-06-02T00:00:00+00:00</updated>
     <content type="text/markdown">You can create AlloyDB clusters with [Private Services Connect](https://cloud.google.com/alloydb/docs/configure-private-service-connect#create_the_endpoint_automatically) through the Google Cloud console.</content>
+    <summary>You can now create AlloyDB clusters using Private Services Connect directly from the Google Cloud console.</summary>
+    <title>Feature: AlloyDB Private Services Connect Support</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -64,9 +67,10 @@ instances, based on your defined service connection policy. This feature is gene
 using the Google Cloud console and the Google Cloud CLI. This feature is
 generally available
 ([GA](https://cloud.google.com/products#product-launch-stages)).</content>
+    <summary>You can now start, stop, and restart your AlloyDB instances using the Google Cloud console and CLI. This feature is now generally available.</summary>
+    <title>Feature: AlloyDB instance management is now GA</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -78,5 +82,7 @@ generally available
 * Fix for overriding replication related parameters. This fix lets you override the `wal_keep_size` value. For more information, see [Work with cross-data-center replication](/alloydb/omni/current/docs/cross-data-center-replication/work-with-cross-data-center-replication). This fix requires database version 15.7.1 or later.
 * 63-character DBCluster names are supported, which lets you define clearer and more descriptive cluster names.
 * Various bug fixes are implemented to enhance stability and the user experience.</content>
+    <summary>The AlloyDB Omni Kubernetes operator 1.4.1 is now generally available, featuring support for 63-character DBCluster names and fixes for replication parameters and overall stability.</summary>
+    <title>Feature: AlloyDB Omni Kubernetes Operator 1.4.1 Released</title>
   </entry>
 </feed>

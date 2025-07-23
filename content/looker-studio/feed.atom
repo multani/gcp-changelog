@@ -6,7 +6,6 @@
   <id>urn:github:multani:gcp-changelog:looker-studio</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/looker-studio/" />
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -16,9 +15,10 @@
     <content type="text/markdown">**Report abuse**
 
 Looker Studio report viewers can now [report abusive content](https://cloud.google.com/looker/docs/studio/report-abuse). Content is automatically reviewed, and content that is reported as abusive is hidden or deleted.</content>
+    <summary>Users can now report abusive content in Looker Studio. Reported content undergoes automatic review and is either hidden or deleted.</summary>
+    <title>Feature: Report abuse in Looker Studio</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -37,9 +37,10 @@ The BigQuery connector supports short query optimized mode. In this mode, when B
 * When the data source uses Owner's Credentials but you are not the credential owner
 
 There is no change in user experience or report behavior for data source credential owners.</content>
+    <summary>BigQuery data sources now offer enhanced performance, prioritizing faster query completion when possible. This improvement is particularly noticeable when using Viewer's Credentials or when the report owner is not the credential owner. The feature</summary>
+    <title>Feature: Performance improvements for BigQuery data sources</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -51,9 +52,10 @@ There is no change in user experience or report behavior for data source credent
 The new **Align with grid** setting lets you set the alignment of the chart legend with the position of the chart grid, instead of aligning with the chart title.
 
 This setting is available for Cartesian charts in reports that [have modern charts enabled](https://cloud.google.com/looker/docs/studio/modern-charts).</content>
+    <summary>Align your chart legends with the chart grid using the new 'Align with grid' setting. This option provides better visual consistency for Cartesian charts in reports with modern charts enabled.</summary>
+    <title>Feature: Align chart legends with grid</title>
   </entry>
   <entry>
-    <title>Breaking</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -63,9 +65,10 @@ This setting is available for Cartesian charts in reports that [have modern char
     <content type="text/markdown">**Don't display data in comparison metrics when Group others is enabled**
 
 The **Group others** option could display incorrect data when used with [comparison metrics](https://cloud.google.com/looker/docs/studio/add-comparison-metrics-and-running-totals#differences_between_running_calculations_and_calculated_fields). Comparison metric fields now display the string `no data` when the **Group others** option is enabled on a chart.</content>
+    <summary>When the 'Group others' option is enabled on a chart, comparison metric fields will now display 'no data' to prevent the display of inaccurate data.</summary>
+    <title>Breaking: Group others option update</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -75,9 +78,10 @@ The **Group others** option could display incorrect data when used with [compari
     <content type="text/markdown">**Looker connector enhancements**
 
 The Looker connector can now connect to a [private IP (private services access) only](https://cloud.google.com/looker/docs/looker-core-networking-options#private_ip_connections) Looker (Google Cloud core) instance or to a [private IP (Private Service Connect)](https://cloud.google.com/looker/docs/looker-core-networking-options#psc) Looker (Google Cloud core) instance [using the Looker instance ID](https://cloud.google.com/looker/docs/looker-core-connect-to-private-ip-lsp-sil).</content>
+    <summary>You can now connect to private IP Looker instances (Private Service Connect or Private Services Access) using the Looker instance ID.</summary>
+    <title>Feature: Looker connector enhancements</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -87,9 +91,10 @@ The Looker connector can now connect to a [private IP (private services access) 
     <content type="text/markdown">**Updates to Assets: search API endpoint**
 
 The Assets: search API endpoint now includes a `previousPageToken` attribute in its response. This token allows API users to paginate forwards and backwards through the result set.</content>
+    <summary>The Assets: search API endpoint has been updated to include a previousPageToken, enabling easier navigation through search results.</summary>
+    <title>Feature: API endpoint now supports backward pagination</title>
   </entry>
   <entry>
-    <title>Announcement</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -99,9 +104,10 @@ The Assets: search API endpoint now includes a `previousPageToken` attribute in 
     <content type="text/markdown">**Pro feature: Gemini in Looker is enabled by default**
 
 For Looker Studio Pro subscriptions that are created on or after June 3, 2025, [Gemini in Looker](https://cloud.google.com/looker/docs/overview-gemini) is enabled automatically. Looker Studio users with the [appropriate permissions](https://cloud.google.com/looker/docs/studio/enable-and-disable-gemini-in-looker-for-looker-studio#before_you_begin) can manage enablement on the **Gemini in Looker** page under **User Settings**.</content>
+    <summary>Gemini in Looker is now enabled by default for new Looker Studio Pro subscriptions starting June 3, 2025. Users with the correct permissions can manage this feature through User Settings.</summary>
+    <title>Announcement: Gemini in Looker enabled for new Pro subscriptions</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -113,5 +119,7 @@ For Looker Studio Pro subscriptions that are created on or after June 3, 2025, [
 The [Code Interpreter](https://cloud.google.com/looker/docs/studio/conversational-analytics-code-interpreter) for [Conversational Analytics](https://cloud.google.com/looker/docs/studio/conversational-analytics) is now enabled by default when the Gemini in Looker and Trusted Tester features settings are enabled for the Google Cloud project that is associated with a Looker Studio Pro subscription. The Code Interpreter in Conversational Analytics is a Preview feature that translates your natural language questions into Python code and executes that code to provide advanced analysis and visualizations.
 
 Looker Studio users with the [appropriate permissions](https://cloud.google.com/looker/docs/studio/enable-and-disable-gemini-in-looker-for-looker-studio#before_you_begin) can manage enablement on the **Gemini in Looker** page under **User Settings**.</content>
+    <summary>The Code Interpreter feature for Conversational Analytics is now enabled by default for Looker Studio Pro users when specific Gemini and Trusted Tester settings are active. This feature allows natural language questions to be converted into Python code for advanced data analysis and visualizations.</summary>
+    <title>Feature: Code Interpreter Now Enabled by Default</title>
   </entry>
 </feed>

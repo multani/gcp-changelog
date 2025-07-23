@@ -6,7 +6,6 @@
   <id>urn:github:multani:gcp-changelog:secret-manager</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/secret-manager/" />
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -24,9 +23,10 @@
 * `DestroySecretVersion`
 
 Soft enforcement lets us continue serving requests beyond the defined quota as long as our backend systems can comfortably handle the increased load. For details, see the [Quotas and limits](https://cloud.google.com/secret-manager/quotas) documentation.</content>
+    <summary>Secret Manager now supports adding tags at creation for better organization and cost tracking, including full support for regional secrets. Additionally, soft-enforced rate limits have been introduced for several modification operations to ensure continued service availability.</summary>
+    <title>Feature: New tagging and rate limit features in Secret Manager</title>
   </entry>
   <entry>
-    <title>Libraries</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -44,5 +44,7 @@ Soft enforcement lets us continue serving requests beyond the defined quota as l
 ##### Features
 
 * **secretmanager:** Update secret manager protos for tags ([#12406](https://github.com/googleapis/google-cloud-go/issues/12406)) ([feb078b](https://github.com/googleapis/google-cloud-go/commit/feb078b04ab541dd3bdceb2ac1f24938bb0354a3))</content>
+    <summary>This is a weekly digest of client library updates for Google Cloud.</summary>
+    <title>Libraries: Client Library Updates</title>
   </entry>
 </feed>

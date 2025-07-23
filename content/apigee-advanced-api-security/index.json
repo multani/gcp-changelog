@@ -4,51 +4,91 @@
     "2025-07-14": [
       {
         "kind": "Announcement",
-        "content": "On July 14, 2025 we released an updated version of Advanced API Security\n\n**Note:** Rollouts of this release to production instances will begin within two business days and may take four or more business days to complete across all Google Cloud zones. Your instances may not have the feature available until the rollout is complete."
+        "content": "On July 14, 2025 we released an updated version of Advanced API Security\n\n**Note:** Rollouts of this release to production instances will begin within two business days and may take four or more business days to complete across all Google Cloud zones. Your instances may not have the feature available until the rollout is complete.",
+        "summary": {
+          "title": "Updated Advanced API Security Released",
+          "summary": "An updated version of Advanced API Security was released on July 14, 2025. Production rollouts will begin within two business days and may take up to four or more business days to complete across all Google Cloud zones."
+        }
       },
       {
         "kind": "Feature",
-        "content": "**Support for editing and deleting security actions**\n\nWith this release you can edit and delete existing security actions using either the UI or the Apigee Management APIs.\n\nFor usage information, see the [security actions documentation](https://cloud.google.com/apigee/docs/api-security/security-actions)."
+        "content": "**Support for editing and deleting security actions**\n\nWith this release you can edit and delete existing security actions using either the UI or the Apigee Management APIs.\n\nFor usage information, see the [security actions documentation](https://cloud.google.com/apigee/docs/api-security/security-actions).",
+        "summary": {
+          "title": "Edit and Delete Security Actions",
+          "summary": "You can now edit and delete existing security actions through the UI and Apigee Management APIs."
+        }
       }
     ],
     "2025-07-01": [
       {
         "kind": "Announcement",
-        "content": "On July 1, 2025 we released a new version of Advanced API Security Abuse Detection.\n\n**Note:** Rollouts of this release to production instances will begin within two business days and may take four or more business days to complete across all Google Cloud zones. Your instances may not have the feature available until the rollout is complete."
+        "content": "On July 1, 2025 we released a new version of Advanced API Security Abuse Detection.\n\n**Note:** Rollouts of this release to production instances will begin within two business days and may take four or more business days to complete across all Google Cloud zones. Your instances may not have the feature available until the rollout is complete.",
+        "summary": {
+          "title": "New Version of Advanced API Security Abuse Detection Released",
+          "summary": "A new version of Advanced API Security Abuse Detection has been released, with rollouts to production instances starting within two business days and potentially taking longer to complete across all zones."
+        }
       },
       {
         "kind": "Feature",
-        "content": "**Support for AppGroups in Abuse Detection attributes**\n\nAbuse Detection incidents and detected traffic now show information on AppGroups and AppGroup apps when the AppGroup is part of the request or traffic.\n\n**Note:** This functionality is not available in Apigee hybrid at this time.\n\nFor usage information, see the [Abuse Detection documentation](https://cloud.google.com/apigee/docs/api-security/abuse-detection#incident-details)."
+        "content": "**Support for AppGroups in Abuse Detection attributes**\n\nAbuse Detection incidents and detected traffic now show information on AppGroups and AppGroup apps when the AppGroup is part of the request or traffic.\n\n**Note:** This functionality is not available in Apigee hybrid at this time.\n\nFor usage information, see the [Abuse Detection documentation](https://cloud.google.com/apigee/docs/api-security/abuse-detection#incident-details).",
+        "summary": {
+          "title": "AppGroups Support in Abuse Detection",
+          "summary": "AppGroups and AppGroup apps are now displayed in Abuse Detection incidents and traffic details for requests that include them. Note that this feature is not yet available in Apigee hybrid."
+        }
       }
     ],
     "2025-06-16": [
       {
         "kind": "Announcement",
-        "content": "On June 16, 2025 we released a new version of Advanced API Security Abuse Detection."
+        "content": "On June 16, 2025 we released a new version of Advanced API Security Abuse Detection.",
+        "summary": {
+          "title": "New API Security Version Released",
+          "summary": "A new version of Advanced API Security Abuse Detection was released on June 16, 2025."
+        }
       },
       {
         "kind": "Feature",
-        "content": "**API address drill down details are now available in the preview release of Advanced API Security Abuse Detection incidents in the detected traffic tab.**\n\nThis new functionality shows details related to specific API addresses when viewing detected abuse in detected traffic.\n\nFor usage information, see the [Abuse Detection customer documentation](https://cloud.google.com/apigee/docs/api-security/abuse-detection#incident-details) for incident details."
+        "content": "**API address drill down details are now available in the preview release of Advanced API Security Abuse Detection incidents in the detected traffic tab.**\n\nThis new functionality shows details related to specific API addresses when viewing detected abuse in detected traffic.\n\nFor usage information, see the [Abuse Detection customer documentation](https://cloud.google.com/apigee/docs/api-security/abuse-detection#incident-details) for incident details.",
+        "summary": {
+          "title": "API Address Details Now Available",
+          "summary": "You can now view details for specific API addresses in the detected traffic tab for Advanced API Security Abuse Detection incidents."
+        }
       }
     ],
     "2025-06-04": [
       {
         "kind": "Announcement",
-        "content": "On June 4, 2025 we released an update to the Anomaly Detection model in Advanced API Security Abuse Detection.\n\n**Note:** Rollouts of this release to production instances will begin within two business days and may take four or more business days to complete across all Google Cloud zones. Your instances may not have the feature available until the rollout is complete."
+        "content": "On June 4, 2025 we released an update to the Anomaly Detection model in Advanced API Security Abuse Detection.\n\n**Note:** Rollouts of this release to production instances will begin within two business days and may take four or more business days to complete across all Google Cloud zones. Your instances may not have the feature available until the rollout is complete.",
+        "summary": {
+          "title": "New Anomaly Detection Model Update",
+          "summary": "A new version of the Anomaly Detection model in Advanced API Security Abuse Detection was released on June 4, 2025. The rollout to production instances will commence within two business days and may take up to four or more business days to complete across all zones."
+        }
       },
       {
         "kind": "Feature",
-        "content": "**New model for Abuse Detection's Advanced Anomaly Detection rule**\n\nWith this release, we introduced a new and improved machine learning model for anomaly detection in Advanced API Security. This new model includes the following improvements:\n\n* **Trained on customer-specific traffic patterns.** The new model is trained exclusively on your organization's historical API traffic data. It continues to learn from your API traffic patterns over time to increase accuracy.\n* **Engineered by Google for anomaly detection.** The new model is a custom Vertex AI-based machine learning model, engineered and also used internally by Google specifically to detect anomalies in traffic patterns.\n\nUsage requirements:\n\n* In order to use this new model, you must explicitly opt in to allow the model to use your traffic and other data to train for anomaly detection. Note that your data is never shared with other customers for training purposes.\n* The new model is not available for VPC-SC customers at this time.\n\nThe new anomaly detection model replaces the old model, with no customer-facing changes to the API or UI. Upon opting in for model training, you can expect to start seeing detected anomalies within 6 hours. If you have already opted in to allow the older version of our anomaly detection model to use your traffic data for training, you will not need to opt in again.\n\nFor more information on this model and on Abuse Detection, see [Abuse Detection customer documentation](https://cloud.google.com/apigee/docs/api-security/abuse-detection), including [Detection rules](https://cloud.google.com/apigee/docs/api-security/detection-rules)."
+        "content": "**New model for Abuse Detection's Advanced Anomaly Detection rule**\n\nWith this release, we introduced a new and improved machine learning model for anomaly detection in Advanced API Security. This new model includes the following improvements:\n\n* **Trained on customer-specific traffic patterns.** The new model is trained exclusively on your organization's historical API traffic data. It continues to learn from your API traffic patterns over time to increase accuracy.\n* **Engineered by Google for anomaly detection.** The new model is a custom Vertex AI-based machine learning model, engineered and also used internally by Google specifically to detect anomalies in traffic patterns.\n\nUsage requirements:\n\n* In order to use this new model, you must explicitly opt in to allow the model to use your traffic and other data to train for anomaly detection. Note that your data is never shared with other customers for training purposes.\n* The new model is not available for VPC-SC customers at this time.\n\nThe new anomaly detection model replaces the old model, with no customer-facing changes to the API or UI. Upon opting in for model training, you can expect to start seeing detected anomalies within 6 hours. If you have already opted in to allow the older version of our anomaly detection model to use your traffic data for training, you will not need to opt in again.\n\nFor more information on this model and on Abuse Detection, see [Abuse Detection customer documentation](https://cloud.google.com/apigee/docs/api-security/abuse-detection), including [Detection rules](https://cloud.google.com/apigee/docs/api-security/detection-rules).",
+        "summary": {
+          "title": "New Abuse Detection Model for Advanced Anomaly Detection",
+          "summary": "A new machine learning model for anomaly detection in Advanced API Security has been released. This model is trained on your organization's specific traffic patterns and is engineered by Google using Vertex AI. To use it, you need to opt in, and it replaces the old model without API or UI changes. Detected anomalies can be seen within 6 hours of opting in. Note that this model is not currently available for VPC-SC customers."
+        }
       }
     ],
     "2025-05-27": [
       {
         "kind": "Announcement",
-        "content": "On May 27, 2025 we released an updated version of Apigee Advanced API Security."
+        "content": "On May 27, 2025 we released an updated version of Apigee Advanced API Security.",
+        "summary": {
+          "title": "Apigee Advanced API Security Update",
+          "summary": "An updated version of Apigee Advanced API Security was released on May 27, 2025."
+        }
       },
       {
         "kind": "Feature",
-        "content": "With this release, Advanced API Security expands its runtime region support to include `africa-south1` (Johannesburg).\n\nFor a list of supported regions, see [Apigee locations](https://cloud.google.com/apigee/docs/locations)."
+        "content": "With this release, Advanced API Security expands its runtime region support to include `africa-south1` (Johannesburg).\n\nFor a list of supported regions, see [Apigee locations](https://cloud.google.com/apigee/docs/locations).",
+        "summary": {
+          "title": "New region support for Advanced API Security",
+          "summary": "Advanced API Security now supports the `africa-south1` region in Johannesburg, expanding its runtime capabilities."
+        }
       }
     ]
   }

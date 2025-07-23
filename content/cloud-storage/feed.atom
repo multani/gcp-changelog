@@ -6,7 +6,6 @@
   <id>urn:github:multani:gcp-changelog:cloud-storage</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-storage/" />
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -14,9 +13,10 @@
     <published>2025-07-08T00:00:00+00:00</published>
     <updated>2025-07-08T00:00:00+00:00</updated>
     <content type="text/markdown">You can now create caches with Anywhere Cache in the `us-west3-a`, `us-west3-b`, and `us-west3-c` zones. For more information about supported locations for Anywhere Cache, see [Supported locations](https://cloud.google.com/storage/docs/anywhere-cache#supported-locations).</content>
+    <summary>Anywhere Cache is now available in the us-west3-a, us-west3-b, and us-west3-c zones. For a full list of supported locations, please refer to the documentation.</summary>
+    <title>Feature: Anywhere Cache now available in us-west3 zones</title>
   </entry>
   <entry>
-    <title>Libraries</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -34,9 +34,10 @@
 ##### Features
 
 * Adding support of single shot download ([#1493](https://github.com/googleapis/python-storage/issues/1493)) ([61c5d5f](https://github.com/googleapis/python-storage/commit/61c5d5f62c88506f200bc6d86b399a2c28715bc4))</content>
+    <summary>This is a weekly digest of client library updates for cloud storage, including new features like single shot download support.</summary>
+    <title>Libraries: Python Client Library Updates</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -44,9 +45,10 @@
     <published>2025-07-02T00:00:00+00:00</published>
     <updated>2025-07-02T00:00:00+00:00</updated>
     <content type="text/markdown">[Bucket IP filtering](https://cloud.google.com/storage/docs/ip-filtering-overview) for Cloud Storage is now generally available ([GA](https://cloud.google.com/products#product-launch-stages)). Bucket IP filtering provides enhanced control over access to your data, allowing you to restrict incoming requests to your Cloud Storage buckets based on their source IP addresses or their Google Cloud Virtual Private Cloud.</content>
+    <summary>You can now restrict access to your Cloud Storage buckets based on IP address or VPC network. This feature provides enhanced control over your data.</summary>
+    <title>Feature: IP Filtering for Cloud Storage Now Available</title>
   </entry>
   <entry>
-    <title>Libraries</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -69,9 +71,10 @@
 
 * Update dependency com.google.cloud.opentelemetry:exporter-trace to v0.36.0 ([#3162](https://github.com/googleapis/java-storage/issues/3162)) ([41a1030](https://github.com/googleapis/java-storage/commit/41a1030a2e77036cf961a16d472068b07e624192))
 * Update sdk-platform-java dependencies ([#3164](https://github.com/googleapis/java-storage/issues/3164)) ([c22a131](https://github.com/googleapis/java-storage/commit/c22a1319d8e2d92beeb03abac6bf2af8d09d49ee))</content>
+    <summary>This release of the Java client library for Cloud Storage includes a bug fix for the Journaling BlobWriteSessionConfig to improve retry handling. It also updates several dependencies, including the OpenTelemetry trace exporter.</summary>
+    <title>Libraries: Java Client Library Update</title>
   </entry>
   <entry>
-    <title>Libraries</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -117,9 +120,10 @@
 
 * Move quickstart to top of readme ([#1451](https://github.com/googleapis/python-storage/issues/1451)) ([53257cf](https://github.com/googleapis/python-storage/commit/53257cf20a4de3810156ae9576a7092f5527df98))
 * Update README to break infinite redirect loop ([#1450](https://github.com/googleapis/python-storage/issues/1450)) ([03f1594](https://github.com/googleapis/python-storage/commit/03f1594eb90ea1298a3a23927537c86ac35d33d5))</content>
+    <summary>This release includes bug fixes for the Java client library for Storage, addressing issues in RemoteStorageHelper and updating the Java code generator. The Python client library for Storage also received bug fixes, including handling partial response data and resolving segmentation faults, along with dependency updates and documentation improvements.</summary>
+    <title>Libraries: Client Library Updates: Java and Python Storage</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -127,9 +131,10 @@
     <published>2025-06-23T00:00:00+00:00</published>
     <updated>2025-06-23T00:00:00+00:00</updated>
     <content type="text/markdown">The Cloud Storage Cloud Audit Logs have expanded support to include error scenario coverage and produce a more comprehensive error message with code, error messages, and details, in an easy to understand format. The Gemini Cloud Assist (GCA) service can then easily analyze the log and provide tailored recommendations on how to mitigate issues as they arise. Before this enhancement, error logs were generated for only a specific set of scenarios, and the status field solely contained the gRPC error code without any additional information. To learn more about Cloud Audit Logs, see [Cloud Audit Logs overview](https://cloud.google.com/logging/docs/audit).</content>
+    <summary>Cloud Audit Logs for Cloud Storage now provide more detailed error messages, including codes and specific details. This enhancement allows Gemini Cloud Assist to offer better recommendations for issue mitigation. Previously, error logs had limited information, lacking comprehensive details beyond gRPC error codes.</summary>
+    <title>Feature: Enhanced Cloud Audit Logs for Cloud Storage</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -137,9 +142,10 @@
     <published>2025-06-16T00:00:00+00:00</published>
     <updated>2025-06-16T00:00:00+00:00</updated>
     <content type="text/markdown">Cloud Storage FUSE version 3.0 is now available with new features and enhancements designed to improve performance and simplify configuration. Improvements include [automated configurations for high-performance machines](https://cloud.google.com/storage/docs/cloud-storage-fuse/automated-configurations), a comprehensive [performance tuning guide](https://cloud.google.com/storage/docs/cloud-storage-fuse/performance) to help optimize performance, and the new [`global-max-blocks` configuration option](https://cloud.google.com/storage/docs/cloud-storage-fuse/cli-options#write-global-max-blocks), which gives you granular control over streaming write operations.</content>
+    <summary>Cloud Storage FUSE 3.0 is here, bringing performance improvements and easier setup. Key updates include automated configurations for high-performance machines, a detailed performance tuning guide, and a new option for granular control over write operations.</summary>
+    <title>Feature: Cloud Storage FUSE 3.0 Now Available</title>
   </entry>
   <entry>
-    <title>Libraries</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -175,9 +181,10 @@
 * Add explicit Optional annotations to fields that have always been treated as optional ([53b6927](https://github.com/googleapis/java-storage/commit/53b6927de9e5b948e1192e6cf716b88cc872c632))
 * Add note that Bucket.project output format is always project number format ([53b6927](https://github.com/googleapis/java-storage/commit/53b6927de9e5b948e1192e6cf716b88cc872c632))
 * Add note that managedFolders are supported for GetIamPolicy and SetIamPolicy ([53b6927](https://github.com/googleapis/java-storage/commit/53b6927de9e5b948e1192e6cf716b88cc872c632))</content>
+    <summary>This release of the Java client library for Google Cloud Storage (version 2.53.0) includes new features such as Anywhere cache control APIs and Storage Intelligence configuration. It also includes dependency updates and documentation improvements, including notes on project number format and managed folders support.</summary>
+    <title>Libraries: Java Client Library for Google Cloud Storage: New Features and Updates</title>
   </entry>
   <entry>
-    <title>Changed</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -185,9 +192,10 @@
     <published>2025-06-05T00:00:00+00:00</published>
     <updated>2025-06-05T00:00:00+00:00</updated>
     <content type="text/markdown">The limit for the maximum number of prefixes and suffixes when using [matchesPrefix and matchesSuffix lifecycle conditions](https://cloud.google.com/storage/docs/lifecycle#matchesprefix-suffix) across all rules on a bucket is increased from 50 to 1,000. For more information, see [Quotas and limits](https://cloud.google.com/storage/quotas#buckets).</content>
+    <summary>The maximum number of prefixes and suffixes for lifecycle conditions in Cloud Storage has been increased from 50 to 1,000 across all rules on a bucket.</summary>
+    <title>Changed: Increased prefix and suffix limits for lifecycle conditions</title>
   </entry>
   <entry>
-    <title>Libraries</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -220,5 +228,7 @@
 * **storage/internal:** Add explicit Optional annotations to fields that have always been treated as optional ([d8ae687](https://github.com/googleapis/google-cloud-go/commit/d8ae6874a54b48fce49968664f14db63c055c6e2))
 * **storage/internal:** Add note that Bucket.project output format is always project number format ([d8ae687](https://github.com/googleapis/google-cloud-go/commit/d8ae6874a54b48fce49968664f14db63c055c6e2))
 * **storage/internal:** Add note that managedFolders are supported for GetIamPolicy and SetIamPolicy ([d8ae687](https://github.com/googleapis/google-cloud-go/commit/d8ae6874a54b48fce49968664f14db63c055c6e2))</content>
+    <summary>This is a weekly update on client library changes. This week's Go client library for storage includes new features like Storage IntelligenceConfig and IpFilter for buckets, along with bug fixes for authentication and error handling. Documentation has also been updated to clarify optional fields and supported features.</summary>
+    <title>Libraries: Go Client Library Updates</title>
   </entry>
 </feed>

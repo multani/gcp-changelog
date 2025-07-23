@@ -2,7 +2,8 @@ import datetime
 import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterator, Self
+from typing import Iterator
+from typing import Self
 
 from pydantic import BaseModel
 
@@ -26,9 +27,16 @@ class Config:
         return self.content_folder.glob("*/*.json")
 
 
+class Summary(BaseModel):
+    title: str
+    summary: str
+
+
 class ChangelogEntry(BaseModel):
     kind: str
     content: str
+
+    summary: Summary | None = None
 
 
 class ProductChangelog(BaseModel):
@@ -86,6 +94,14 @@ class Index(BaseModel):
 
         return cls(products=products)
 
+    def total_size(self) -> int:
+        return sum(
+            1
+            for product in self.products.values()
+            for entries in product.entries.values()
+            for entry in entries
+        )
+
     def dump(self, config: Config) -> None:
         for product in self.products.values():
             slug = product.slug
@@ -106,6 +122,7 @@ class Index(BaseModel):
             index[product.name] = filename
 
             from .atom import build_feed
+
             feed = build_feed(product)
 
             filename = config.folder_for(slug) / "feed.atom"

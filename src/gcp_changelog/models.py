@@ -91,6 +91,7 @@ class Index(BaseModel):
             slug = product.slug
 
             filename = config.folder_for(slug) / "index.json"
+            filename.parent.mkdir(parents=True, exist_ok=True)
             product.dump(filename)
 
     def render(self, config: Config) -> None:

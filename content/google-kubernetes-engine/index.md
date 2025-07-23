@@ -20,6 +20,136 @@ to the corresponding `Node` objects in the Kubernetes API. For more information
 about setting node labels in compute classes, see the
 [ComputeClass custom resource definition](https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#nodepoolconfig).
 
+Google SecOps
+-------------
+
+### Feature
+
+**New parser documentation now available**
+
+New parser documentation is available to help you ingest and normalize logs from the following sources:
+
+[Collect Apache Tomcat logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tomcat)
+
+[Collect Appian Cloud logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/appian-cloud)
+
+[Collect Archer IRM logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/archer-irm)
+
+[Collect ArcSight CEF logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/arcsight-cef)
+
+[Collect Area 1 logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/area1)
+
+[Collect Aruba EdgeConnect SD-WAN logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aruba)
+
+[Collect Atlassian Cloud Admin Audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/atlassian-audit)
+
+[Collect Avatier logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/avatier)
+
+[Collect Avigilon Access Control Manager logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/avigilon-access-logs)
+
+[Collect AWS CloudTrail logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/ingest-aws-logs-into-chronicle)
+
+[Collect Barracuda CloudGen Firewall logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/barracuda-cloudgen-firewall)
+
+[Collect Barracuda Web Filter logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/barracuda-webfilter)
+
+[Collect Broadcom CA PAM logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/broadcom-ca-pam)
+
+[Collect Broadcom SSL VA logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/broadcom-ssl-va)
+
+[Collect Cato Networks logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cato-networks)
+
+[Collect Check Point Harmony logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/checkpoint-harmony)
+
+[Collect CipherTrust Manager logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/ciphertrust-manager)
+
+[Collect Cisco VCS logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-vcs)
+
+[Collect Cisco VPN logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-vpn)
+
+[Collect Cisco WSA logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-wsa)
+
+[Collect CyberArk Privilege Cloud logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cyberark-privilege-cloud)
+
+[Collect Digi Modems logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/digi-modems)
+
+[Collect F5 DNS logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/F5-dns)
+
+[Collect F5 VPN logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/F5-vpn)
+
+[Collect Forcepoint CASB logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/forcepoint-casb)
+
+[Collect HPE BladeSystem c7000 logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/hpe-bladesystem-c7000)
+
+[Collect Skyhigh Security logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/skyhigh-security)
+
+[Collect Trellix IPS logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/trellix-ips)
+
+Google SecOps SIEM
+------------------
+
+### Feature
+
+**New parser documentation now available**
+
+New parser documentation is available to help you ingest and normalize logs from the following sources:
+
+[Collect Apache Tomcat logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tomcat)
+
+[Collect Appian Cloud logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/appian-cloud)
+
+[Collect Archer IRM logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/archer-irm)
+
+[Collect ArcSight CEF logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/arcsight-cef)
+
+[Collect Area 1 logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/area1)
+
+[Collect Aruba EdgeConnect SD-WAN logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aruba)
+
+[Collect Atlassian Cloud Admin Audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/atlassian-audit)
+
+[Collect Avatier logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/avatier)
+
+[Collect Avigilon Access Control Manager logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/avigilon-access-logs)
+
+[Collect AWS CloudTrail logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/ingest-aws-logs-into-chronicle)
+
+[Collect Barracuda CloudGen Firewall logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/barracuda-cloudgen-firewall)
+
+[Collect Barracuda Web Filter logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/barracuda-webfilter)
+
+[Collect Broadcom CA PAM logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/broadcom-ca-pam)
+
+[Collect Broadcom SSL VA logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/broadcom-ssl-va)
+
+[Collect Cato Networks logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cato-networks)
+
+[Collect Check Point Harmony logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/checkpoint-harmony)
+
+[Collect CipherTrust Manager logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/ciphertrust-manager)
+
+[Collect Cisco VCS logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-vcs)
+
+[Collect Cisco VPN logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-vpn)
+
+[Collect Cisco WSA logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-wsa)
+
+[Collect CyberArk Privilege Cloud logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cyberark-privilege-cloud)
+
+[Collect Digi Modems logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/digi-modems)
+
+[Collect F5 DNS logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/F5-dns)
+
+[Collect F5 VPN logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/F5-vpn)
+
+[Collect Forcepoint CASB logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/forcepoint-casb)
+
+[Collect HPE BladeSystem c7000 logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/hpe-bladesystem-c7000)
+
+[Collect Skyhigh Security logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/skyhigh-security)
+
+[Collect Trellix IPS logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/trellix-ips)
+
 Identity and Access Management
 ------------------------------
 

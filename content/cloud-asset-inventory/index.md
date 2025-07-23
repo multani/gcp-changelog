@@ -1,5 +1,26 @@
 # Cloud Asset Inventory
 
+## 2025-07-18
+
+### Feature
+
+The following resource types are now publicly available through the [ExportAssets](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/exportAssets), [ListAssets](https://cloud.google.com/asset-inventory/docs/listing-assets), [BatchGetAssetsHistory](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/batchGetAssetsHistory), [QueryAssets](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/queryAssets), [Feed](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/feeds), and Search ([SearchAllResources](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllResources), [SearchAllIamPolicies](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllIamPolicies)) APIs.
+
+* Service Management API
+  + `servicemanagement.googleapis.com/Service`
+
+---
+## 2025-07-11
+
+### Feature
+
+The following resource types are now publicly available through the [ExportAssets](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/exportAssets), [ListAssets](https://cloud.google.com/asset-inventory/docs/listing-assets), [BatchGetAssetsHistory](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/batchGetAssetsHistory), [QueryAssets](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/queryAssets), and [Feed](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/feeds) APIs.
+
+* Parameter Manager
+  + `parametermanager.googleapis.com/Parameter`
+  + `parametermanager.googleapis.com/ParameterVersion`
+
+---
 ## 2025-06-27
 
 ### Feature

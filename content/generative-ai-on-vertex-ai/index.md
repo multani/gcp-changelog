@@ -1,5 +1,14 @@
 # Generative AI on Vertex AI
 
+## 2025-07-22
+
+### Announcement
+
+**Gemini 2.5 Flash-Lite** is now generally available and accessible using the API and Vertex AI Studio. This GA release includes support for explicit caching and [batch prediction](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/batch-prediction-gemini), as well as expanded region support.
+
+See [Gemini 2.5 Flash-Lite](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash-lite) for more information.
+
+---
 ## 2025-07-17
 
 ### Announcement

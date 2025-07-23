@@ -1,5 +1,20 @@
 # Apigee API hub
 
+## 2025-07-22
+
+### Changed
+
+**API hub provisioning now enables Apigee API**
+
+When you provision API hub, it now enables the Apigee API (`apigee.googleapis.com`) in your Google Cloud project. If Apigee isn't already provisioned, an Apigee organization is also automatically created in your project as part of the provisioning process.
+
+API hub remains a free service. Enabling the Apigee API has no additional pricing or billing implications for your project.
+
+**Action Required:** If you use any automation scripts for API hub provisioning, update them to account for this change.
+
+For more information, see [Provision API hub](https://cloud.google.com/apigee/docs/apihub/provision).
+
+---
 ## 2025-07-18
 
 ### Feature

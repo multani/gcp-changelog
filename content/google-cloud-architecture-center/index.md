@@ -1,5 +1,16 @@
 # Google Cloud Architecture Center
 
+## 2025-07-22
+
+### Feature
+
+(New guide) [Secure apps and resources by using context-aware access](https://cloud.google.com/architecture/secure-apps-resources-using-context-aware-access): Describes how you can use context-aware access to secure different types of apps and resources.
+
+### Feature
+
+(New guide) [Best practices for securing apps and resources by using context-aware access](https://cloud.google.com/architecture/secure-apps-resources-using-context-aware-access/best-practices): Describes best practices for using context-aware access to secure apps and resources.
+
+---
 ## 2025-07-01
 
 ### Feature

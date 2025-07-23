@@ -29,6 +29,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Access transparency <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../access-transparency/" class="dropdown-item">Access Transparency</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Agent assist <b class="caret"></b>
                         </a>
 
@@ -1464,15 +1476,25 @@
 
 
 <h1 id="cloud-data-fusion">Cloud Data Fusion</h1>
-<h2 id="2025-06-12">2025-06-12</h2>
+<h2 id="2025-07-16">2025-07-16</h2>
 <h3 id="changed">Changed</h3>
+<p>The Oracle plugin version 1.12.3 is available in Cloud Data Fusion (via Hub) versions 6.11.0 and later, and 1.11.8 is available in Cloud Data Fusion (via Hub) version 6.10.</p>
+<p>This release provides backward compatibility for recent schema changes, including the following:</p>
+<ul>
+<li><a href="https://cloud.google.com/data-fusion/docs/release-notes#March_14_2023">Precisionless numbers</a>: In version 1.10.0, precisionless numbers were handled as strings.</li>
+<li><a href="https://cloud.google.com/data-fusion/docs/release-notes#June_14_2023">Improved timestamp handling</a>: Version 1.11.0 introduced improvements to timestamp handling.</li>
+</ul>
+<p>To address backward compatibility for these changes, two new hidden fields are introduced in Oracle batch source configurations: <code>treatPrecisionlessNumAsDeci</code> and <code>treatAsOldTimestamp</code>. Both flags default to <code>false</code>. To enable these flags, edit the respective values in your exported connection JSON (if using connections) or pipeline JSON (if not using connections) before re-importing or re-deploying (<a href="https://cdap.atlassian.net/browse/PLUGIN-1893">PLUGIN-1893</a>).</p>
+<hr />
+<h2 id="2025-06-12">2025-06-12</h2>
+<h3 id="changed_1">Changed</h3>
 <p>The Elasticsearch plugin version 1.11.0 is available in Cloud Data Fusion version 6.11.0. This release includes the following change:</p>
 <ul>
 <li>Upgraded Hadoop version for Elasticsearch plugin compatibility (<a href="https://cdap.atlassian.net/browse/PLUGIN-1881">PLUGIN-1881</a>).</li>
 </ul>
 <hr />
 <h2 id="2025-06-11">2025-06-11</h2>
-<h3 id="changed_1">Changed</h3>
+<h3 id="changed_2">Changed</h3>
 <p>The HTTP plugin version 1.4.4 is available in Cloud Data Fusion version 6.10.1. This release includes the following changes:</p>
 <ul>
 <li>Implemented the Client Credentials Grant flow for HTTP OAuth2, enabling authorized clients to securely access data using the <code>client_credentials</code> grant type. Client credentials can be passed through Basic Authentication header, in the request body, or as query parameters (<a href="https://cdap.atlassian.net/browse/PLUGIN-1872">PLUGIN-1872</a>).</li>
@@ -1480,11 +1502,11 @@
 </ul>
 <hr />
 <h2 id="2025-06-09">2025-06-09</h2>
-<h3 id="changed_2">Changed</h3>
+<h3 id="changed_3">Changed</h3>
 <p>Cloud Data Fusion is available in the <code>northamerica-south1</code> (Mexico) region. For more information, see <a href="https://cloud.google.com/data-fusion/pricing">Pricing</a>.</p>
 <hr />
 <h2 id="2025-06-02">2025-06-02</h2>
-<h3 id="changed_3">Changed</h3>
+<h3 id="changed_4">Changed</h3>
 <p>The <a href="https://cloud.google.com/data-fusion/docs/how-to/configure-salesforce-batch-source">Salesforce plugin</a> version 1.6.10 is available in Cloud Data Fusion versions 6.10.1 and 6.11.0. This release includes the following changes:</p>
 <ul>
 <li>Upgraded Salesforce API version from 53.0 to 62.0 (<a href="https://cdap.atlassian.net/browse/PLUGIN-1891">PLUGIN-1891</a>).</li>
@@ -1501,6 +1523,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-data-fusion">Cloud Data Fusion</a></li>
+          <li class="nav-item">
+            <a href="#2025-07-16" class="nav-link">2025-07-16</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-06-12" class="nav-link">2025-06-12</a>
           </li>

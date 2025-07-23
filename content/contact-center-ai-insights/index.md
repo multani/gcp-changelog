@@ -2,7 +2,7 @@
 
 ## 2025-07-18
 
-### Changed
+### Feature
 
 Quality AI offers **multiple scorecards** in preview. With [multiple scorecards](https://cloud.google.com/contact-center/insights/docs/qai-basics#scorecards), Quality AI can evaluate a single conversation against different criteria and provide multiple conversation scores. You can also choose which scorecard data to view on each page of the console.
 

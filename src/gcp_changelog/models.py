@@ -97,12 +97,20 @@ class Index(BaseModel):
     def render(self, config: Config) -> None:
         index: dict[str, Path] = {}
 
-        for product in self.products.values():
+        for key, product in self.products.items():
             slug = product.slug
+            print(f"Rendering product: {key} ({slug})")
 
             filename = config.folder_for(slug) / "index.md"
             product.render(filename)
             index[product.name] = filename
+
+            from .atom import build_feed
+            feed = build_feed(product)
+
+            filename = config.folder_for(slug) / "feed.atom"
+            with open(str(filename), "w") as fp:
+                feed.write(fp, encoding="unicode", xml_declaration=True)
 
         with open(config.site_index, "w") as fp:
             fp.write("# Google Cloud Platform Release Notes (by services)\n")

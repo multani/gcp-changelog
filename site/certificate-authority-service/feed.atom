@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>Google Cloud: Certificate Authority Service</title>
+  <subtitle>Changelog for Google Cloud product: Certificate Authority Service</subtitle>
+  <updated>2025-06-27T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:certificate-authority-service</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/certificate-authority-service/" />
+  <entry>
+    <title>Feature</title>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:certificate-authority-service:2025-06-27:feature:0</id>
+    <published>2025-06-27T00:00:00+00:00</published>
+    <updated>2025-06-27T00:00:00+00:00</updated>
+    <content type="text/markdown">You can backdate the `not_before_time` of certificates by specifying the `backdate_duration` field within the issuance policy of your CA Pool. This new optional field in the issuance policy allows you to control the `not_before_time` of all certificates issued from a given CA Pool.
+
+If `backdate_duration` is not set: Certificates are issued with a `not_before_time` equal to the current issuance time.
+
+If `backdate_duration` is set: Certificates are issued with a `not_before_time` equal to the issuance time minus the specified `backdate_duration`. The `not_after_time` automatically adjusts to maintain the requested certificate lifetime.</content>
+  </entry>
+</feed>

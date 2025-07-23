@@ -59,3 +59,4 @@ def render(config: models.Config) -> None:
     index.render(config)
 
     print("Done!")
+

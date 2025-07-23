@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>Google Cloud: Cloud Data Fusion</title>
+  <subtitle>Changelog for Google Cloud product: Cloud Data Fusion</subtitle>
+  <updated>2025-07-16T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:cloud-data-fusion</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-data-fusion/" />
+  <entry>
+    <title>Changed</title>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-data-fusion:2025-07-16:changed:0</id>
+    <published>2025-07-16T00:00:00+00:00</published>
+    <updated>2025-07-16T00:00:00+00:00</updated>
+    <content type="text/markdown">The Oracle plugin version 1.12.3 is available in Cloud Data Fusion (via Hub) versions 6.11.0 and later, and 1.11.8 is available in Cloud Data Fusion (via Hub) version 6.10.
+
+This release provides backward compatibility for recent schema changes, including the following:
+
+* [Precisionless numbers](https://cloud.google.com/data-fusion/docs/release-notes#March_14_2023): In version 1.10.0, precisionless numbers were handled as strings.
+* [Improved timestamp handling](https://cloud.google.com/data-fusion/docs/release-notes#June_14_2023): Version 1.11.0 introduced improvements to timestamp handling.
+
+To address backward compatibility for these changes, two new hidden fields are introduced in Oracle batch source configurations: `treatPrecisionlessNumAsDeci` and `treatAsOldTimestamp`. Both flags default to `false`. To enable these flags, edit the respective values in your exported connection JSON (if using connections) or pipeline JSON (if not using connections) before re-importing or re-deploying ([PLUGIN-1893](https://cdap.atlassian.net/browse/PLUGIN-1893)).</content>
+  </entry>
+  <entry>
+    <title>Changed</title>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-data-fusion:2025-06-12:changed:0</id>
+    <published>2025-06-12T00:00:00+00:00</published>
+    <updated>2025-06-12T00:00:00+00:00</updated>
+    <content type="text/markdown">The Elasticsearch plugin version 1.11.0 is available in Cloud Data Fusion version 6.11.0. This release includes the following change:
+
+* Upgraded Hadoop version for Elasticsearch plugin compatibility ([PLUGIN-1881](https://cdap.atlassian.net/browse/PLUGIN-1881)).</content>
+  </entry>
+  <entry>
+    <title>Changed</title>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-data-fusion:2025-06-11:changed:0</id>
+    <published>2025-06-11T00:00:00+00:00</published>
+    <updated>2025-06-11T00:00:00+00:00</updated>
+    <content type="text/markdown">The HTTP plugin version 1.4.4 is available in Cloud Data Fusion version 6.10.1. This release includes the following changes:
+
+* Implemented the Client Credentials Grant flow for HTTP OAuth2, enabling authorized clients to securely access data using the `client_credentials` grant type. Client credentials can be passed through Basic Authentication header, in the request body, or as query parameters ([PLUGIN-1872](https://cdap.atlassian.net/browse/PLUGIN-1872)).
+* Fixed an issue causing the HTTP Source plugin to throw a `NullPointerException` when the `BasePageIterator` received a null response ([PLUGIN-1894](https://cdap.atlassian.net/browse/PLUGIN-1894)).</content>
+  </entry>
+  <entry>
+    <title>Changed</title>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-data-fusion:2025-06-09:changed:0</id>
+    <published>2025-06-09T00:00:00+00:00</published>
+    <updated>2025-06-09T00:00:00+00:00</updated>
+    <content type="text/markdown">Cloud Data Fusion is available in the `northamerica-south1` (Mexico) region. For more information, see [Pricing](https://cloud.google.com/data-fusion/pricing).</content>
+  </entry>
+  <entry>
+    <title>Changed</title>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-data-fusion:2025-06-02:changed:0</id>
+    <published>2025-06-02T00:00:00+00:00</published>
+    <updated>2025-06-02T00:00:00+00:00</updated>
+    <content type="text/markdown">The [Salesforce plugin](https://cloud.google.com/data-fusion/docs/how-to/configure-salesforce-batch-source) version 1.6.10 is available in Cloud Data Fusion versions 6.10.1 and 6.11.0. This release includes the following changes:
+
+* Upgraded Salesforce API version from 53.0 to 62.0 ([PLUGIN-1891](https://cdap.atlassian.net/browse/PLUGIN-1891)).
+* Added a retry mechanism for all Salesforce API calls from the Salesforce plugin ([PLUGIN-1892](https://cdap.atlassian.net/browse/PLUGIN-1892)).</content>
+  </entry>
+</feed>

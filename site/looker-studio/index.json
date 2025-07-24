@@ -4,45 +4,77 @@
     "2025-07-17": [
       {
         "kind": "Feature",
-        "content": "**Report abuse**\n\nLooker Studio report viewers can now [report abusive content](https://cloud.google.com/looker/docs/studio/report-abuse). Content is automatically reviewed, and content that is reported as abusive is hidden or deleted."
+        "content": "**Report abuse**\n\nLooker Studio report viewers can now [report abusive content](https://cloud.google.com/looker/docs/studio/report-abuse). Content is automatically reviewed, and content that is reported as abusive is hidden or deleted.",
+        "summary": {
+          "title": "Report abuse in Looker Studio",
+          "summary": "Users can now report abusive content in Looker Studio. Reported content undergoes automatic review and is either hidden or deleted."
+        }
       },
       {
         "kind": "Feature",
-        "content": "**Performance improvement for BigQuery data sources**\n\n**Note:** This feature has been delayed and is currently not available. (Release note updated on July 21, 2025.)\n\nReport viewers may notice improved performance when the report uses a BigQuery data source.\n\nThe BigQuery connector supports short query optimized mode. In this mode, when BigQuery determines that it can finish a query quickly, BigQuery prioritizes returning immediate results instead of creating a BigQuery job. Short query optimized mode may apply in the following situations:\n\n* When the data source uses Viewer's Credentials\n* When the data source uses Owner's Credentials but you are not the credential owner\n\nThere is no change in user experience or report behavior for data source credential owners."
+        "content": "**Performance improvement for BigQuery data sources**\n\n**Note:** This feature has been delayed and is currently not available. (Release note updated on July 21, 2025.)\n\nReport viewers may notice improved performance when the report uses a BigQuery data source.\n\nThe BigQuery connector supports short query optimized mode. In this mode, when BigQuery determines that it can finish a query quickly, BigQuery prioritizes returning immediate results instead of creating a BigQuery job. Short query optimized mode may apply in the following situations:\n\n* When the data source uses Viewer's Credentials\n* When the data source uses Owner's Credentials but you are not the credential owner\n\nThere is no change in user experience or report behavior for data source credential owners.",
+        "summary": {
+          "title": "Performance improvements for BigQuery data sources",
+          "summary": "BigQuery data sources now offer enhanced performance, prioritizing faster query completion when possible. This improvement is particularly noticeable when using Viewer's Credentials or when the report owner is not the credential owner. The feature"
+        }
       }
     ],
     "2025-07-10": [
       {
         "kind": "Feature",
-        "content": "**New alignment option for Cartesian charts**\n\nThe new **Align with grid** setting lets you set the alignment of the chart legend with the position of the chart grid, instead of aligning with the chart title.\n\nThis setting is available for Cartesian charts in reports that [have modern charts enabled](https://cloud.google.com/looker/docs/studio/modern-charts)."
+        "content": "**New alignment option for Cartesian charts**\n\nThe new **Align with grid** setting lets you set the alignment of the chart legend with the position of the chart grid, instead of aligning with the chart title.\n\nThis setting is available for Cartesian charts in reports that [have modern charts enabled](https://cloud.google.com/looker/docs/studio/modern-charts).",
+        "summary": {
+          "title": "Align chart legends with grid",
+          "summary": "Align your chart legends with the chart grid using the new 'Align with grid' setting. This option provides better visual consistency for Cartesian charts in reports with modern charts enabled."
+        }
       }
     ],
     "2025-06-26": [
       {
         "kind": "Breaking",
-        "content": "**Don't display data in comparison metrics when Group others is enabled**\n\nThe **Group others** option could display incorrect data when used with [comparison metrics](https://cloud.google.com/looker/docs/studio/add-comparison-metrics-and-running-totals#differences_between_running_calculations_and_calculated_fields). Comparison metric fields now display the string `no data` when the **Group others** option is enabled on a chart."
+        "content": "**Don't display data in comparison metrics when Group others is enabled**\n\nThe **Group others** option could display incorrect data when used with [comparison metrics](https://cloud.google.com/looker/docs/studio/add-comparison-metrics-and-running-totals#differences_between_running_calculations_and_calculated_fields). Comparison metric fields now display the string `no data` when the **Group others** option is enabled on a chart.",
+        "summary": {
+          "title": "Group others option update",
+          "summary": "When the 'Group others' option is enabled on a chart, comparison metric fields will now display 'no data' to prevent the display of inaccurate data."
+        }
       },
       {
         "kind": "Feature",
-        "content": "**Looker connector enhancements**\n\nThe Looker connector can now connect to a [private IP (private services access) only](https://cloud.google.com/looker/docs/looker-core-networking-options#private_ip_connections) Looker (Google Cloud core) instance or to a [private IP (Private Service Connect)](https://cloud.google.com/looker/docs/looker-core-networking-options#psc) Looker (Google Cloud core) instance [using the Looker instance ID](https://cloud.google.com/looker/docs/looker-core-connect-to-private-ip-lsp-sil)."
+        "content": "**Looker connector enhancements**\n\nThe Looker connector can now connect to a [private IP (private services access) only](https://cloud.google.com/looker/docs/looker-core-networking-options#private_ip_connections) Looker (Google Cloud core) instance or to a [private IP (Private Service Connect)](https://cloud.google.com/looker/docs/looker-core-networking-options#psc) Looker (Google Cloud core) instance [using the Looker instance ID](https://cloud.google.com/looker/docs/looker-core-connect-to-private-ip-lsp-sil).",
+        "summary": {
+          "title": "Looker connector enhancements",
+          "summary": "You can now connect to private IP Looker instances (Private Service Connect or Private Services Access) using the Looker instance ID."
+        }
       }
     ],
     "2025-06-18": [
       {
         "kind": "Feature",
-        "content": "**Updates to Assets: search API endpoint**\n\nThe Assets: search API endpoint now includes a `previousPageToken` attribute in its response. This token allows API users to paginate forwards and backwards through the result set."
+        "content": "**Updates to Assets: search API endpoint**\n\nThe Assets: search API endpoint now includes a `previousPageToken` attribute in its response. This token allows API users to paginate forwards and backwards through the result set.",
+        "summary": {
+          "title": "API endpoint now supports backward pagination",
+          "summary": "The Assets: search API endpoint has been updated to include a previousPageToken, enabling easier navigation through search results."
+        }
       }
     ],
     "2025-06-03": [
       {
         "kind": "Announcement",
-        "content": "**Pro feature: Gemini in Looker is enabled by default**\n\nFor Looker Studio Pro subscriptions that are created on or after June 3, 2025, [Gemini in Looker](https://cloud.google.com/looker/docs/overview-gemini) is enabled automatically. Looker Studio users with the [appropriate permissions](https://cloud.google.com/looker/docs/studio/enable-and-disable-gemini-in-looker-for-looker-studio#before_you_begin) can manage enablement on the **Gemini in Looker** page under **User Settings**."
+        "content": "**Pro feature: Gemini in Looker is enabled by default**\n\nFor Looker Studio Pro subscriptions that are created on or after June 3, 2025, [Gemini in Looker](https://cloud.google.com/looker/docs/overview-gemini) is enabled automatically. Looker Studio users with the [appropriate permissions](https://cloud.google.com/looker/docs/studio/enable-and-disable-gemini-in-looker-for-looker-studio#before_you_begin) can manage enablement on the **Gemini in Looker** page under **User Settings**.",
+        "summary": {
+          "title": "Gemini in Looker enabled for new Pro subscriptions",
+          "summary": "Gemini in Looker is now enabled by default for new Looker Studio Pro subscriptions starting June 3, 2025. Users with the correct permissions can manage this feature through User Settings."
+        }
       }
     ],
     "2025-05-29": [
       {
         "kind": "Feature",
-        "content": "**Pro feature: Code Interpreter is enabled by default**\n\nThe [Code Interpreter](https://cloud.google.com/looker/docs/studio/conversational-analytics-code-interpreter) for [Conversational Analytics](https://cloud.google.com/looker/docs/studio/conversational-analytics) is now enabled by default when the Gemini in Looker and Trusted Tester features settings are enabled for the Google Cloud project that is associated with a Looker Studio Pro subscription. The Code Interpreter in Conversational Analytics is a Preview feature that translates your natural language questions into Python code and executes that code to provide advanced analysis and visualizations.\n\nLooker Studio users with the [appropriate permissions](https://cloud.google.com/looker/docs/studio/enable-and-disable-gemini-in-looker-for-looker-studio#before_you_begin) can manage enablement on the **Gemini in Looker** page under **User Settings**."
+        "content": "**Pro feature: Code Interpreter is enabled by default**\n\nThe [Code Interpreter](https://cloud.google.com/looker/docs/studio/conversational-analytics-code-interpreter) for [Conversational Analytics](https://cloud.google.com/looker/docs/studio/conversational-analytics) is now enabled by default when the Gemini in Looker and Trusted Tester features settings are enabled for the Google Cloud project that is associated with a Looker Studio Pro subscription. The Code Interpreter in Conversational Analytics is a Preview feature that translates your natural language questions into Python code and executes that code to provide advanced analysis and visualizations.\n\nLooker Studio users with the [appropriate permissions](https://cloud.google.com/looker/docs/studio/enable-and-disable-gemini-in-looker-for-looker-studio#before_you_begin) can manage enablement on the **Gemini in Looker** page under **User Settings**.",
+        "summary": {
+          "title": "Code Interpreter Now Enabled by Default",
+          "summary": "The Code Interpreter feature for Conversational Analytics is now enabled by default for Looker Studio Pro users when specific Gemini and Trusted Tester settings are active. This feature allows natural language questions to be converted into Python code for advanced data analysis and visualizations."
+        }
       }
     ]
   }

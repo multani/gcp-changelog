@@ -6,7 +6,6 @@
   <id>urn:github:multani:gcp-changelog:apigee-api-hub</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-api-hub/" />
   <entry>
-    <title>Changed</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -19,12 +18,11 @@ When you provision API hub, it now enables the Apigee API (`apigee.googleapis.co
 
 API hub remains a free service. Enabling the Apigee API has no additional pricing or billing implications for your project.
 
-**Action Required:** If you use any automation scripts for API hub provisioning, update them to account for this change.
-
-For more information, see [Provision API hub](https://cloud.google.com/apigee/docs/apihub/provision).</content>
+For more information, see [Provision API hub in the Cloud console](https://cloud.google.com/apigee/docs/apihub/provision).</content>
+    <summary>API hub provisioning now enables the Apigee API.</summary>
+    <title>Changed: Apigee API Enabled with API Hub Provisioning</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -36,9 +34,10 @@ For more information, see [Provision API hub](https://cloud.google.com/apigee/do
 You can now create and delete plugin instances for Apigee and Apigee Hybrid while associating the respective Apigee runtime projects to API hub.
 
 For more information, see [Auto-register Apigee proxies](https://cloud.google.com/apigee/docs/apihub/auto-register-apigee-proxies).</content>
+    <summary>You can now create and delete plugin instances for Apigee and Apigee Hybrid, associating them with API hub and relevant Apigee runtime projects. This feature simplifies the management of plugin instances and their integration with API hub.</summary>
+    <title>Feature: Manage Apigee and hybrid plugin instances</title>
   </entry>
   <entry>
-    <title>Breaking</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -52,9 +51,10 @@ When creating new instances of the **Apigee X and hybrid** plugin, you must now 
 This is a breaking change and will affect any existing API calls that create these plugins without explicitly providing this ID.
 
 **Action Required:** Update your API calls to include the appropriate source project ID when creating new Apigee X and hybrid plugins. Failing to do so will result in creation errors.</content>
+    <summary>You must now provide a source project ID when creating new Apigee X and hybrid plugin instances. This change affects existing API calls that do not explicitly provide this ID. Please update your API calls to include the source project ID to avoid creation errors.</summary>
+    <title>Breaking: Apigee plugin creation requires source project ID</title>
   </entry>
   <entry>
-    <title>Changed</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -66,9 +66,10 @@ This is a breaking change and will affect any existing API calls that create the
 You can now change or modify the name and curation logic of your plugin instance.
 
 For more information, see [Edit a plugin instance](https://cloud.google.com/apigee/docs/apihub/manage-plugin-instances#edit-plugin-instance).</content>
+    <summary>You can now modify the name and curation logic of your plugin instances. For more details, see the documentation on editing a plugin instance.</summary>
+    <title>Changed: Edit plugin instances</title>
   </entry>
   <entry>
-    <title>Changed</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -81,9 +82,10 @@ To ensure optimal functionality and consistency while creating or updating **Api
 `organizations/([^/]+)/environments/([^/]+)/apis/([^/]+)$`
 
 For more information, see [Introduction to deployments](https://cloud.google.com/apigee/docs/apihub/deployments-intro).</content>
+    <summary>The Resource URI format for Apigee deployments has been updated to organizations/([^/]+)/environments/([^/]+)/apis/([^/]+)$ to ensure optimal functionality and consistency.</summary>
+    <title>Changed: Apigee Deployment URI Format Changed</title>
   </entry>
   <entry>
-    <title>Announcement</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -91,9 +93,10 @@ For more information, see [Introduction to deployments](https://cloud.google.com
     <published>2025-06-03T00:00:00+00:00</published>
     <updated>2025-06-03T00:00:00+00:00</updated>
     <content type="text/markdown">On June 3, 2025, we released an updated version of Apigee.</content>
+    <summary>The new version of Apigee was released on June 3, 2025.</summary>
+    <title>Announcement: Updated Apigee Version Released</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -112,5 +115,7 @@ No action on your part is required to provision API hub for your organization, w
 * If your Apigee organization uses Customer-Managed Encryption Keys (CMEK), you must deprovision the Apigee API hub instance provided by default and recreate it to support CMEK. See [Deprovision Apigee API hub](https://cloud.google.com/apigee/docs/apihub/deprovision) and [Provision API hub in the Cloud console](https://cloud.google.com/apigee/docs/apihub/provision) for step-by-step instructions.
 
 Contact [Google Cloud Support](https://cloud.google.com/apigee/docs/support/getting-started-with-support) for questions or assistance.</content>
+    <summary>Apigee API hub is now available for new Apigee organizations in supported regions. This feature provides a central location to view, organize, and manage all your APIs at no extra cost. Specific configurations may be required for organizations using Data Residency, VPC Service Controls, or Customer-Managed Encryption Keys.</summary>
+    <title>Feature: Apigee API hub now available</title>
   </entry>
 </feed>

@@ -2,11 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>Google Cloud: Google Cloud Armor</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Armor</subtitle>
-  <updated>2025-07-08T00:00:00+00:00</updated>
+  <updated>2025-07-23T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-armor</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-armor/" />
   <entry>
-    <title>Changed</title>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-armor:2025-07-23:feature:0</id>
+    <published>2025-07-23T00:00:00+00:00</published>
+    <updated>2025-07-23T00:00:00+00:00</updated>
+    <content type="text/markdown">Cloud Armor supports internal service security policies for the [service mesh](https://cloud.google.com/armor/docs/integrating-cloud-armor#service-mesh) to enforce global server-side rate limiting per client in Preview.</content>
+    <summary>Cloud Armor now supports internal service security policies for service mesh.</summary>
+    <title>Feature: Cloud Armor Feature Update</title>
+  </entry>
+  <entry>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -14,9 +24,10 @@
     <published>2025-07-08T00:00:00+00:00</published>
     <updated>2025-07-08T00:00:00+00:00</updated>
     <content type="text/markdown">Cloud Armor [preconfigured WAF rules](https://cloud.google.com/armor/docs/waf-rules) can now inspect up to the first 64kB (either 8kB, 16kB, 32kB, 48kB, or 64kB) of the POST or PATCH [request body content](https://cloud.google.com/armor/docs/security-policy-overview#post-body) in Preview.</content>
+    <summary>Cloud Armor preconfigured WAF rules now support inspecting up to 64kB of POST/PATCH request body content in Preview. This enhancement allows for more comprehensive security analysis of incoming data.</summary>
+    <title>Changed: Cloud Armor WAF Rules Now Inspect Larger Request Bodies</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -24,9 +35,10 @@
     <published>2025-06-27T00:00:00+00:00</published>
     <updated>2025-06-27T00:00:00+00:00</updated>
     <content type="text/markdown">Cloud Armor's [Hierarchical security policies](https://cloud.google.com/armor/docs/hierarchical-policies-overview) facilitate centralized control, enhanced consistency, operational efficiency, and effective delegation of security policy management in Preview.</content>
+    <summary>This feature allows for centralized control, consistent security policies, and efficient management, with support for policy delegation.</summary>
+    <title>Feature: Hierarchical Security Policies Now in Preview</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -34,9 +46,10 @@
     <published>2025-06-24T00:00:00+00:00</published>
     <updated>2025-06-24T00:00:00+00:00</updated>
     <content type="text/markdown">Cloud Armor supports [organization-scoped address groups](https://cloud.google.com/armor/docs/address-groups-overview#organization-scoped-address-group) for security policies in Preview.</content>
+    <summary>Cloud Armor now supports organization-scoped address groups in preview, allowing for more centralized management of security policies across your organization.</summary>
+    <title>Feature: Cloud Armor supports organization-scoped address groups</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -44,9 +57,10 @@
     <published>2025-06-18T00:00:00+00:00</published>
     <updated>2025-06-18T00:00:00+00:00</updated>
     <content type="text/markdown">Cloud Armor supports Network Threat Intelligence (NTI) in [globally scoped edge security policies](https://cloud.google.com/armor/docs/security-policy-overview#expandable-1) for Media CDN edge cache services in Preview.</content>
+    <summary>Cloud Armor now supports Network Threat Intelligence for Media CDN edge cache services, enhancing security for globally scoped edge security policies.</summary>
+    <title>Feature: Cloud Armor NTI Support for Media CDN</title>
   </entry>
   <entry>
-    <title>Changed</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -54,5 +68,7 @@
     <published>2025-06-09T00:00:00+00:00</published>
     <updated>2025-06-09T00:00:00+00:00</updated>
     <content type="text/markdown">Cloud Armor support for JA4 rate limiting key is Generally Available. For more information, see [Configure rate limiting](https://cloud.google.com/armor/docs/configure-rate-limiting).</content>
+    <summary>JA4 rate limiting key is now available in Cloud Armor. Learn more about configuring rate limiting. </summary>
+    <title>Changed: Cloud Armor JA4 Rate Limiting Now Available</title>
   </entry>
 </feed>

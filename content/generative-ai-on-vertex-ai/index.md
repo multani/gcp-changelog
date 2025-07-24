@@ -1,5 +1,12 @@
 # Generative AI on Vertex AI
 
+## 2025-07-23
+
+### Changed
+
+[Grounding with Google Maps](https://cloud.google.com/vertex-ai/generative-ai/docs/grounding/grounding-with-google-maps) is available in all regions (except for the EEA) as a Preview (Pre-GA) feature.
+
+---
 ## 2025-07-22
 
 ### Announcement

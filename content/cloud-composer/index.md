@@ -1,5 +1,36 @@
 # Cloud Composer
 
+## 2025-07-23
+
+### Announcement
+
+If your environment uses `dag-factory` package version 0.22, then you might
+experience DAG failures in Cloud Composer versions that have
+`apache-airflow-providers-cncf-kubernetes` package version 10.4.2 or later. At
+the same time, upgrading the `dag-factory` package to version 0.23 might require
+you to update your DAG code to make it compatible.
+
+If your environment uses `dag-factory` version 0.22, we recommend to do the
+following:
+
+* Temporarily postpone upgrading your environment until you're ready to switch
+  to `dag-factory` version 0.23. Last versions of Cloud Composer that support
+  version 0.22 are composer-3-airflow-2.10.5-build.3,
+  composer-3-airflow-2.9.3-build.23, composer-2.13.1-airflow-2.10.5, and
+  composer-2.13.1-airflow-2.9.3 released on May 14, 2025.
+* When you are ready to upgrade, update your DAGs for compatibility with 0.23.
+  We recommend to do this in a development environment first.
+  [Install](https://cloud.google.com/composer/docs/composer-3/install-python-dependencies)
+  `dag-factory` version 0.23, then check that your DAGs are parsed and are
+  working correctly, and update them if needed. After your DAGs are
+  compatible, install `dag-factory` version 0.23 in your production
+  environment and transfer the updated DAGs. Your environment can now be
+  upgraded to a later version of Cloud Composer or Airflow.
+* If your environment is already upgraded to a later version of Cloud Composer
+  and you experience problems, then update `dag-factory` to version 0.23 and
+  update your DAGs for compatibility with 0.23.
+
+---
 ## 2025-07-17
 
 ### Feature

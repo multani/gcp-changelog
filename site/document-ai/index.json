@@ -1,32 +1,62 @@
 {
   "name": "Document AI",
   "entries": {
+    "2025-07-22": [
+      {
+        "kind": "Feature",
+        "content": "[Custom extractor](https://cloud.google.com/document-ai/docs/ce-with-genai) model [`pretrained-foundation-model-v1.5-pro-2025-06-20`](https://cloud.google.com/document-ai/docs/processors-list#processor_cde) powered by Gemini 2.5 Pro is in [Public Preview](https://cloud.google.com/products/#product-launch-stages). It has ML processing available for US and EU regions, and 30 page per minute processing requests.\n\nFor more information, see [Managing processor versions](https://cloud.google.com/document-ai/docs/manage-processor-versions#import).",
+        "summary": {
+          "title": "New Custom Extractor Model Now in Public Preview",
+          "summary": "A new custom extractor model powered by Gemini 2.5 Pro is now available in Public Preview. This feature offers ML processing for US and EU regions with a processing speed of 30 pages per minute."
+        }
+      }
+    ],
     "2025-07-04": [
       {
         "kind": "Feature",
-        "content": "Document AI now supports [Identity and Access Management](https://cloud.google.com/iam/docs/overview) (IAM) deny policies. These policies allow you to define deny rules that prevent certain principals from using certain permissions to access Google Cloud resources, regardless of the roles they're granted.\n\nFor more information, read [Deny policy](https://cloud.google.com/iam/docs/deny-overview) overview and [Document AI security and compliance](https://cloud.google.com/document-ai/docs/security)."
+        "content": "Document AI now supports [Identity and Access Management](https://cloud.google.com/iam/docs/overview) (IAM) deny policies. These policies allow you to define deny rules that prevent certain principals from using certain permissions to access Google Cloud resources, regardless of the roles they're granted.\n\nFor more information, read [Deny policy](https://cloud.google.com/iam/docs/deny-overview) overview and [Document AI security and compliance](https://cloud.google.com/document-ai/docs/security).",
+        "summary": {
+          "title": "IAM Deny Policies Now Supported in Document AI",
+          "summary": "Document AI now supports IAM deny policies, which allow you to create rules that restrict access to Google Cloud resources."
+        }
       },
       {
         "kind": "Feature",
-        "content": "Document AI [VPC service controls](https://cloud.google.com/vpc-service-controls/docs/overview) (VPC-SC) integration now supports identity groups.\n\nFor more information on setting up VPC-SC identity groups, read [Configure identity groups and third-party identities in ingress and egress rules](https://cloud.google.com/vpc-service-controls/docs/configure-identity-groups)."
+        "content": "Document AI [VPC service controls](https://cloud.google.com/vpc-service-controls/docs/overview) (VPC-SC) integration now supports identity groups.\n\nFor more information on setting up VPC-SC identity groups, read [Configure identity groups and third-party identities in ingress and egress rules](https://cloud.google.com/vpc-service-controls/docs/configure-identity-groups).",
+        "summary": {
+          "title": "Document AI VPC-SC Now Supports Identity Groups",
+          "summary": "Document AI now supports identity groups for VPC Service Controls. This enhancement allows for more granular control over data access by enabling the use of identity groups in VPC-SC security policies. For setup instructions, refer to the provided documentation."
+        }
       }
     ],
     "2025-07-03": [
       {
         "kind": "Feature",
-        "content": "The Document AI CDE processor now supports merging the child entities of nested entities that extend across several pages. This is supported in custom extractor model [`pretrained-foundation-model-v1.5-2025-05-05`](https://cloud.google.com/document-ai/docs/processors-list#processor_cde).\n\nThis change is automatically present in existing and newly created processors.\n\nFor customers with existing v1.5 processors to make use of this feature, you must relabel the nested entities in different pages.\n\nTo learn more about the labeling process, refer to our [Label documents](https://cloud.google.com/document-ai/docs/label-documents) documentation."
+        "content": "The Document AI CDE processor now supports merging the child entities of nested entities that extend across several pages. This is supported in custom extractor model [`pretrained-foundation-model-v1.5-2025-05-05`](https://cloud.google.com/document-ai/docs/processors-list#processor_cde).\n\nThis change is automatically present in existing and newly created processors.\n\nFor customers with existing v1.5 processors to make use of this feature, you must relabel the nested entities in different pages.\n\nTo learn more about the labeling process, refer to our [Label documents](https://cloud.google.com/document-ai/docs/label-documents) documentation.",
+        "summary": {
+          "title": "Document AI CDE Processor Now Merges Nested Entities Across Pages",
+          "summary": "The Document AI CDE processor now supports merging child entities across pages for nested entities. This feature is available in the pretrained-foundation-model-v1.5-2025-05-05 custom extractor model and is automatically enabled for all processors. For existing v1.5 processors, relabeling nested entities across pages is necessary to utilize this enhancement."
+        }
       }
     ],
     "2025-06-30": [
       {
         "kind": "Feature",
-        "content": "[Custom Extractor](https://cloud.google.com/document-ai/docs/ce-with-genai) model [`pretrained-foundation-model-v1.5-2025-05-05`](https://cloud.google.com/document-ai/docs/processors-list#processor_cde) is in General Availability ([GA](https://cloud.google.com/products/#product-launch-stages)) and has fine-tuning available for the US and EU.\n\nFrom version v1.4 and later, we will use a new quota for online processing called [`Number of online process document pages per minute per processor type and model version`](https://cloud.google.com/document-ai/quotas#quotas_list). This quota will be enforced at a per-page and per-foundation model level. There will be no change to the batch processing quota.\n\nThese can be enabled in the console when creating labels and by using the [`DocumentSchema.EntityType`](https://cloud.google.com/document-ai/docs/reference/rpc/google.cloud.documentai.v1#entitytype).\n\nFor more information, read [Managing processor versions](https://cloud.google.com/document-ai/docs/manage-processor-versions#import)."
+        "content": "[Custom Extractor](https://cloud.google.com/document-ai/docs/ce-with-genai) model [`pretrained-foundation-model-v1.5-2025-05-05`](https://cloud.google.com/document-ai/docs/processors-list#processor_cde) is in General Availability ([GA](https://cloud.google.com/products/#product-launch-stages)) and has fine-tuning available for the US and EU.\n\nFrom version v1.4 and later, we will use a new quota for online processing called [`Number of online process document pages per minute per processor type and model version`](https://cloud.google.com/document-ai/quotas#quotas_list). This quota will be enforced at a per-page and per-foundation model level. There will be no change to the batch processing quota.\n\nThese can be enabled in the console when creating labels and by using the [`DocumentSchema.EntityType`](https://cloud.google.com/document-ai/docs/reference/rpc/google.cloud.documentai.v1#entitytype).\n\nFor more information, read [Managing processor versions](https://cloud.google.com/document-ai/docs/manage-processor-versions#import).",
+        "summary": {
+          "title": "Custom Extractor model now available",
+          "summary": "The new Custom Extractor model version, pretrained-foundation-model-v1.5-2025-05-05, is now generally available with fine-tuning support for US and EU regions. Online processing will now be subject to a new quota based on pages per minute, per processor type and model version, while batch processing quotas remain unchanged. You can enable these features in the console or via the DocumentSchema API."
+        }
       }
     ],
     "2025-06-19": [
       {
         "kind": "Feature",
-        "content": "We've increased the maximum file size for [online processing](https://cloud.google.com/document-ai/docs/reference/rest/v1/projects.locations.processors/process) requests from 20 MB to 40 MB. This applies to all types of processors.\n\nFor more information, see the Document AI [limits](https://cloud.google.com/document-ai/limits#content_limits) page."
+        "content": "We've increased the maximum file size for [online processing](https://cloud.google.com/document-ai/docs/reference/rest/v1/projects.locations.processors/process) requests from 20 MB to 40 MB. This applies to all types of processors.\n\nFor more information, see the Document AI [limits](https://cloud.google.com/document-ai/limits#content_limits) page.",
+        "summary": {
+          "title": "Increased file size limit for online processing",
+          "summary": "You can now upload files up to 40 MB for online processing with all Document AI processor types. This doubles the previous limit and allows for larger documents to be processed."
+        }
       }
     ]
   }

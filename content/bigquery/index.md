@@ -1,5 +1,32 @@
 # BigQuery
 
+## 2025-07-22
+
+### Feature
+
+You can now use the
+[`VECTOR_INDEX.STATISTICS` function](https://cloud.google.com/bigquery/docs/reference/standard-sql/vectorindex_functions#vector_indexstatistics) to calculate how much an indexed table's data has drifted between when a
+vector index was created and the present. If table data has changed enough
+to require a [vector index rebuild](https://cloud.google.com/bigquery/docs/vector-index#rebuild_a_vector_index), you can use the
+[`ALTER VECTOR INDEX REBUILD` statement](https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#alter_vector_index_rebuild_statement)
+to rebuild the vector index. This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+[Access Transparency](https://cloud.google.com/assured-workloads/access-transparency/docs/supported-services) supports [BigQuery data preparation](https://cloud.google.com/bigquery/docs/data-prep-introduction) in the [GA](https://cloud.google.com/products#product-launch-stages) stage.
+
+### Feature
+
+The [`CREATE EXTERNAL TABLE`](https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#create_external_table_statement) and [`LOAD DATA`](https://cloud.google.com/bigquery/docs/reference/standard-sql/load-statements) statements now support the following options in [Preview](https://cloud.google.com/products#product-launch-stages):
+
+* `null_markers`: define the strings that represent `NULL` values in CSV files.
+* `source_column_match`: specify how loaded columns are matched to the schema. You can match columns by position or by name.
+
+### Feature
+
+You can now use the [`MATCH_RECOGNIZE` clause](https://cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax#match_recognize_clause) in your SQL queries to filter and aggregate matches across rows in a table. This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2025-07-21
 
 ### Libraries

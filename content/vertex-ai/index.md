@@ -49,6 +49,12 @@ Vertex AI online inference now offers Preview support of PSC service automation 
 
 Vertex AI now offers GA support of Private Service Connect Interface and includes Private DNS Peering. For more information, see [Use Private Service Connect interface for Vertex AI Training](https://cloud.google.com/vertex-ai/docs/training/psc-i-egress).
 
+### Feature
+
+Private Service Connect interface (PSC-I) support for ML pipeline runs in Vertex AI Pipelines is now [generally available](https://cloud.google.com/products#product-launch-stages). PSC-I is recommended for private connectivity because it reduces the chance of IP exhaustion, allows for transitive peering, and includes Private DNS Peering.
+
+For more information, see [Configure Private Service Connect interface for a pipeline](https://cloud.google.com/vertex-ai/docs/pipelines/configure-private-service-connect).
+
 ---
 ## 2025-06-27
 

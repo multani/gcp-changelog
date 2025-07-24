@@ -4,13 +4,21 @@
     "2025-07-09": [
       {
         "kind": "Feature",
-        "content": "**Enhanced tagging capabilities for Secret Manager**: You can now add tags directly at the time of secret creation. This new feature lets you provide essential metadata for your resources and helps with better organization, cost tracking, and automated policy application from the time a secret is created. In addition to this, *tagging for regional secrets* is now fully supported, both during secret creation and for existing regional secrets. For more information, see the documentation on tags for [global secrets](https://cloud.google.com/secret-manager/docs/create-and-manage-tags) and [regional secrets](https://cloud.google.com/secret-manager/regional-secrets/create-manage-tags-regional-secrets).\n\n**Soft-enforced rate limits for modifying secrets and secret versions**: We have introduced soft-enforced rate limits for the following operations in Secret Manager:\n\n* `AddSecretVersion`\n* `UpdateSecret`\n* `EnableSecretVersion`\n* `DisableSecretVersion`\n* `DestroySecretVersion`\n\nSoft enforcement lets us continue serving requests beyond the defined quota as long as our backend systems can comfortably handle the increased load. For details, see the [Quotas and limits](https://cloud.google.com/secret-manager/quotas) documentation."
+        "content": "**Enhanced tagging capabilities for Secret Manager**: You can now add tags directly at the time of secret creation. This new feature lets you provide essential metadata for your resources and helps with better organization, cost tracking, and automated policy application from the time a secret is created. In addition to this, *tagging for regional secrets* is now fully supported, both during secret creation and for existing regional secrets. For more information, see the documentation on tags for [global secrets](https://cloud.google.com/secret-manager/docs/create-and-manage-tags) and [regional secrets](https://cloud.google.com/secret-manager/regional-secrets/create-manage-tags-regional-secrets).\n\n**Soft-enforced rate limits for modifying secrets and secret versions**: We have introduced soft-enforced rate limits for the following operations in Secret Manager:\n\n* `AddSecretVersion`\n* `UpdateSecret`\n* `EnableSecretVersion`\n* `DisableSecretVersion`\n* `DestroySecretVersion`\n\nSoft enforcement lets us continue serving requests beyond the defined quota as long as our backend systems can comfortably handle the increased load. For details, see the [Quotas and limits](https://cloud.google.com/secret-manager/quotas) documentation.",
+        "summary": {
+          "title": "New tagging and rate limit features in Secret Manager",
+          "summary": "Secret Manager now supports adding tags at creation for better organization and cost tracking, including full support for regional secrets. Additionally, soft-enforced rate limits have been introduced for several modification operations to ensure continued service availability."
+        }
       }
     ],
     "2025-06-23": [
       {
         "kind": "Libraries",
-        "content": "A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).\n\n### Go\n\n### Changes for [secretmanager/apiv1](https://github.com/googleapis/google-cloud-go/tree/main/secretmanager/apiv1)\n\n#### [1.15.0](https://github.com/googleapis/google-cloud-go/compare/secretmanager/v1.14.7...secretmanager/v1.15.0) (2025-06-17)\n\n##### Features\n\n* **secretmanager:** Update secret manager protos for tags ([#12406](https://github.com/googleapis/google-cloud-go/issues/12406)) ([feb078b](https://github.com/googleapis/google-cloud-go/commit/feb078b04ab541dd3bdceb2ac1f24938bb0354a3))"
+        "content": "A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).\n\n### Go\n\n### Changes for [secretmanager/apiv1](https://github.com/googleapis/google-cloud-go/tree/main/secretmanager/apiv1)\n\n#### [1.15.0](https://github.com/googleapis/google-cloud-go/compare/secretmanager/v1.14.7...secretmanager/v1.15.0) (2025-06-17)\n\n##### Features\n\n* **secretmanager:** Update secret manager protos for tags ([#12406](https://github.com/googleapis/google-cloud-go/issues/12406)) ([feb078b](https://github.com/googleapis/google-cloud-go/commit/feb078b04ab541dd3bdceb2ac1f24938bb0354a3))",
+        "summary": {
+          "title": "Client Library Updates",
+          "summary": "This is a weekly digest of client library updates for Google Cloud."
+        }
       }
     ]
   }

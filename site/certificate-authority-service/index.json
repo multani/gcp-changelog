@@ -4,7 +4,11 @@
     "2025-06-27": [
       {
         "kind": "Feature",
-        "content": "You can backdate the `not_before_time` of certificates by specifying the `backdate_duration` field within the issuance policy of your CA Pool. This new optional field in the issuance policy allows you to control the `not_before_time` of all certificates issued from a given CA Pool.\n\nIf `backdate_duration` is not set: Certificates are issued with a `not_before_time` equal to the current issuance time.\n\nIf `backdate_duration` is set: Certificates are issued with a `not_before_time` equal to the issuance time minus the specified `backdate_duration`. The `not_after_time` automatically adjusts to maintain the requested certificate lifetime."
+        "content": "You can backdate the `not_before_time` of certificates by specifying the `backdate_duration` field within the issuance policy of your CA Pool. This new optional field in the issuance policy allows you to control the `not_before_time` of all certificates issued from a given CA Pool.\n\nIf `backdate_duration` is not set: Certificates are issued with a `not_before_time` equal to the current issuance time.\n\nIf `backdate_duration` is set: Certificates are issued with a `not_before_time` equal to the issuance time minus the specified `backdate_duration`. The `not_after_time` automatically adjusts to maintain the requested certificate lifetime.",
+        "summary": {
+          "title": "Control certificate \"not before time\" with backdating",
+          "summary": "You can now control the \"not before time\" of certificates by setting a backdate duration in your CA Pool's issuance policy. This allows certificates to be issued with a \"not before time\" set to the current time minus a specified duration, with the \"not after time\" adjusting automatically to maintain the certificate's lifetime."
+        }
       }
     ]
   }

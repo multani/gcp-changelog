@@ -1,6 +1,16 @@
 {
   "name": "Cloud Composer",
   "entries": {
+    "2025-07-23": [
+      {
+        "kind": "Announcement",
+        "content": "If your environment uses `dag-factory` package version 0.22, then you might\nexperience DAG failures in Cloud Composer versions that have\n`apache-airflow-providers-cncf-kubernetes` package version 10.4.2 or later. At\nthe same time, upgrading the `dag-factory` package to version 0.23 might require\nyou to update your DAG code to make it compatible.\n\nIf your environment uses `dag-factory` version 0.22, we recommend to do the\nfollowing:\n\n* Temporarily postpone upgrading your environment until you're ready to switch\n  to `dag-factory` version 0.23. Last versions of Cloud Composer that support\n  version 0.22 are composer-3-airflow-2.10.5-build.3,\n  composer-3-airflow-2.9.3-build.23, composer-2.13.1-airflow-2.10.5, and\n  composer-2.13.1-airflow-2.9.3 released on May 14, 2025.\n* When you are ready to upgrade, update your DAGs for compatibility with 0.23.\n  We recommend to do this in a development environment first.\n  [Install](https://cloud.google.com/composer/docs/composer-3/install-python-dependencies)\n  `dag-factory` version 0.23, then check that your DAGs are parsed and are\n  working correctly, and update them if needed. After your DAGs are\n  compatible, install `dag-factory` version 0.23 in your production\n  environment and transfer the updated DAGs. Your environment can now be\n  upgraded to a later version of Cloud Composer or Airflow.\n* If your environment is already upgraded to a later version of Cloud Composer\n  and you experience problems, then update `dag-factory` to version 0.23 and\n  update your DAGs for compatibility with 0.23.",
+        "summary": {
+          "title": "DAG Failures with dag-factory v0.22",
+          "summary": "This announcement provides guidance on potential DAG failures in Cloud Composer when using dag-factory version 0.22 with specific Airflow provider versions. It recommends postponing upgrades or updating to dag-factory version 0.23 with necessary DAG code modifications."
+        }
+      }
+    ],
     "2025-07-17": [
       {
         "kind": "Feature",

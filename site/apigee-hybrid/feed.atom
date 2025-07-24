@@ -6,21 +6,10 @@
   <id>urn:github:multani:gcp-changelog:apigee-hybrid</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-hybrid/" />
   <entry>
-    <title>Announcement</title>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2025-07-09:announcement:0</id>
-    <published>2025-07-09T00:00:00+00:00</published>
-    <updated>2025-07-09T00:00:00+00:00</updated>
-    <content type="text/markdown" />
-  </entry>
-  <entry>
-    <title>hybrid v1.13.4</title>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2025-07-09:hybrid v1.13.4:1</id>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2025-07-09:hybrid v1.13.4:0</id>
     <published>2025-07-09T00:00:00+00:00</published>
     <updated>2025-07-09T00:00:00+00:00</updated>
     <content type="text/markdown">On July 9, 2025 we released an updated version of the Apigee hybrid software, 1.13.4.
@@ -30,13 +19,14 @@
 
 **Note:** if you are upgrading to Apigee hybrid version 1.13.4 from version 1.13.2 or earlier, see [APPENDIX: Validate policies after upgrade to 1.13.3 or later](https://cloud.google.com/apigee/docs/hybrid/v1.13/upgrade#recommended-actions-upgrade-1133) for steps to address stricter class instantiation checks introduced in [version 1.13.3](https://cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1133).
 **Note:** This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).</content>
+    <summary>A new version of Apigee hybrid, 1.13.4, was released on July 9, 2025. The release includes important updates for upgrading and new installations. Users upgrading from version 1.13.2 or earlier should follow specific steps to validate policies. This patch release is integrated with Helm charts for automatic image updates.</summary>
+    <title>hybrid v1.13.4: Apigee hybrid 1.13.4 released</title>
   </entry>
   <entry>
-    <title>Fixed</title>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2025-07-09:fixed:2</id>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2025-07-09:fixed:1</id>
     <published>2025-07-09T00:00:00+00:00</published>
     <updated>2025-07-09T00:00:00+00:00</updated>
     <content type="text/markdown">| Bug ID | Description |
@@ -45,13 +35,14 @@
 | **401746333** | **Fixed a `java.lang.ClassCircularityError` that could occur in Java Callouts due to an issue with the class loading mechanism.** |
 | **382565315** | **A memory leak within the Security Policy has been addressed, improving system stability.** |
 | **375360455** | **Updated apigee-runtime drain timeout to 300s to fix connection termination issue during pod termination.** |</content>
+    <summary>This release addresses several key issues: a fix for Cassandra-based replication in the synchronizer, resolution of a `java.lang.ClassCircularityError` in Java Callouts, a memory leak in Security Policy, and an update to the apigee-runtime drain timeout to prevent connection termination problems.</summary>
+    <title>Fixed: Bug Fixes</title>
   </entry>
   <entry>
-    <title>Security</title>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2025-07-09:security:3</id>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2025-07-09:security:2</id>
     <published>2025-07-09T00:00:00+00:00</published>
     <updated>2025-07-09T00:00:00+00:00</updated>
     <content type="text/markdown">| Bug ID | Description |
@@ -64,9 +55,10 @@
 | **N/A** | **Security fixes for `apigee-runtime`.**  This addresses the following vulnerability:  * [CVE-2024-20952](https://nvd.nist.gov/vuln/detail/CVE-2024-20952) |
 | **N/A** | **Security fixes for `apigee-synchronizer`.**  This addresses the following vulnerability:  * [CVE-2024-20952](https://nvd.nist.gov/vuln/detail/CVE-2024-20952) |
 | **N/A** | **Security fixes for `vault`.**  This addresses the following vulnerability:  * [CVE-2025-0377](https://nvd.nist.gov/vuln/detail/CVE-2025-0377) |</content>
+    <summary>This security update addresses vulnerabilities in apigee-synchronizer, apigee-logger, apigee-mart-server, apigee-mint-task-scheduler, apigee-redis, apigee-runtime, and vault. Key vulnerabilities include CVE-2025-25193, CVE-2025-24970, CVE-2025-23184, CVE-2024-47554, CVE-2024-20952, CVE-2022-24834, CVE-2022-24735, and CVE-2025-0377.</summary>
+    <title>Security: Security fixes for Apigee components</title>
   </entry>
   <entry>
-    <title>Announcement</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -74,9 +66,10 @@
     <published>2025-06-04T00:00:00+00:00</published>
     <updated>2025-06-04T00:00:00+00:00</updated>
     <content type="text/markdown" />
+    <summary>This is a sample announcement.</summary>
+    <title>Announcement: Sample Announcement</title>
   </entry>
   <entry>
-    <title>hybrid v1.15.0</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -89,9 +82,10 @@
 * For information on new installations, see [The big picture](https://cloud.google.com/apigee/docs/hybrid/v1.15/big-picture).
 
 **Note:** This is a minor release: The container images used in minor releases are integrated with the Apigee hybrid Helm charts. Upgrading to a minor via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).</content>
+    <summary>A new update for Apigee hybrid, version 1.15.0, was released on June 4, 2025. This minor release includes updates to container images integrated with the Apigee hybrid Helm charts, simplifying the upgrade process.</summary>
+    <title>hybrid v1.15.0: Apigee hybrid 1.15.0 released</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -101,9 +95,10 @@
     <content type="text/markdown">**Large message payload support in Apigee hybrid**
 
 Apigee now supports message payloads up to 30MB. You configure support for large message payloads in Apigee hybrid for individual environments or for your whole installation. See [Configure large message payload support in Apigee hybrid](https://cloud.google.com/apigee/docs/hybrid/v1.15/configure-large-payload-support).</content>
+    <summary>Apigee hybrid now supports message payloads up to 30MB. This can be configured for individual environments or the entire installation.</summary>
+    <title>Feature: Large message payload support in Apigee hybrid</title>
   </entry>
   <entry>
-    <title>Fixed</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -123,9 +118,10 @@ Apigee now supports message payloads up to 30MB. You configure support for large
 | **383441226** | **Added the following `metrics` configuration properties:**  * [metrics.adapter.resources.limits.cpu](https://cloud.google.com/apigee/docs/hybrid/v1.15/config-prop-ref#metrics-adapter-resources-limits-cpu) * [metrics.adapter.resources.limits.memory](https://cloud.google.com/apigee/docs/hybrid/v1.15/config-prop-ref#metrics-adapter-resources-limits-memory) * [metrics.adapter.resources.requests.cpu](https://cloud.google.com/apigee/docs/hybrid/v1.15/config-prop-ref#metrics-adapter-resources-requests-cpu) * [metrics.adapter.resources.requests.memory](https://cloud.google.com/apigee/docs/hybrid/v1.15/config-prop-ref#metrics-adapter-resources-requests-memory) * [metrics.prometheus.resources.limits.cpu](https://cloud.google.com/apigee/docs/hybrid/v1.15/config-prop-ref#metrics-prometheus-resources-limits-cpu) * [metrics.prometheus.resources.limits.memory](https://cloud.google.com/apigee/docs/hybrid/v1.15/config-prop-ref#metrics-prometheus-resources-limits-memory) * [metrics.prometheus.resources.requests.cpu](https://cloud.google.com/apigee/docs/hybrid/v1.15/config-prop-ref#metrics-prometheus-resources-requests-cpu) * [metrics.prometheus.resources.requests.memory](https://cloud.google.com/apigee/docs/hybrid/v1.15/config-prop-ref#metrics-prometheus-resources-requests-memory)  (Fixed in [v1.14.1](https://cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1141)) |
 | **368155212** | **Auto Cassandra secret rotation could fail when [Enhanced per-environment proxy limits](https://cloud.google.com/apigee/docs/hybrid/v1.15/enhanced-proxy-limits) are enabled.** (Fixed in [v1.14.2](https://cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1142)) |
 | **367681534** | **Tagging [`apigee-stackdriver-prometheus-sidecar`](http://gcr.io/apigee-release/hybrid/apigee-stackdriver-prometheus-sidecar:0.10.0) to prevent removal from customer repos after 2 years due to infrequent updates.** (Fixed in [1.14.0-hotfix.1](https://cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_1140-hotfix1)) |</content>
+    <summary>This release includes several fixes, such as resolving Runtime container CPU usage issues, preventing API proxy deployment hangs, correcting Horizontal Pod Autoscaler replica counts, and fixing Cassandra credential rotation for multi-region setups. It also addresses issues with system key spaces during restore operations and ensures automatic removal of old Cassandra snapshots. Additionally, it resolves `ApigeeRoute` name collisions and improves Helm chart checks.</summary>
+    <title>Fixed: Various fixes and improvements</title>
   </entry>
   <entry>
-    <title>Security</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -157,9 +153,10 @@ Apigee now supports message payloads up to 30MB. You configure support for large
 | **N/A** | **Security fixes for `cert-manager-controller`.**  This addresses the following vulnerabilities:  * [CVE-2023-45287](https://nvd.nist.gov/vuln/detail/CVE-2023-45287) * [CVE-2023-45285](https://nvd.nist.gov/vuln/detail/CVE-2023-45285) * [CVE-2023-44487](https://nvd.nist.gov/vuln/detail/CVE-2023-44487) * [CVE-2023-39325](https://nvd.nist.gov/vuln/detail/CVE-2023-39325) * [CVE-2023-39323](https://nvd.nist.gov/vuln/detail/CVE-2023-39323) * [CVE-2023-29405](https://nvd.nist.gov/vuln/detail/CVE-2023-29405) * [CVE-2023-29404](https://nvd.nist.gov/vuln/detail/CVE-2023-29404) * [CVE-2023-29403](https://nvd.nist.gov/vuln/detail/CVE-2023-29403) * [CVE-2023-29402](https://nvd.nist.gov/vuln/detail/CVE-2023-29402) * [CVE-2023-29400](https://nvd.nist.gov/vuln/detail/CVE-2023-29400) * [CVE-2023-24540](https://nvd.nist.gov/vuln/detail/CVE-2023-24540) * [CVE-2023-24539](https://nvd.nist.gov/vuln/detail/CVE-2023-24539) * [CVE-2023-24538](https://nvd.nist.gov/vuln/detail/CVE-2023-24538) * [CVE-2023-24537](https://nvd.nist.gov/vuln/detail/CVE-2023-24537) * [CVE-2023-24536](https://nvd.nist.gov/vuln/detail/CVE-2023-24536) * [CVE-2023-24534](https://nvd.nist.gov/vuln/detail/CVE-2023-24534) * [CVE-2022-41725](https://nvd.nist.gov/vuln/detail/CVE-2022-41725) * [CVE-2022-41724](https://nvd.nist.gov/vuln/detail/CVE-2022-41724) * [CVE-2022-41723](https://nvd.nist.gov/vuln/detail/CVE-2022-41723) * [CVE-2022-41715](https://nvd.nist.gov/vuln/detail/CVE-2022-41715) * [CVE-2022-32189](https://nvd.nist.gov/vuln/detail/CVE-2022-32189) * [CVE-2022-30635](https://nvd.nist.gov/vuln/detail/CVE-2022-30635) * [CVE-2022-30633](https://nvd.nist.gov/vuln/detail/CVE-2022-30633) * [CVE-2022-30632](https://nvd.nist.gov/vuln/detail/CVE-2022-30632) * [CVE-2022-30631](https://nvd.nist.gov/vuln/detail/CVE-2022-30631) * [CVE-2022-30630](https://nvd.nist.gov/vuln/detail/CVE-2022-30630) * [CVE-2022-30580](https://nvd.nist.gov/vuln/detail/CVE-2022-30580) * [CVE-2022-2880](https://nvd.nist.gov/vuln/detail/CVE-2022-2880) * [CVE-2022-2879](https://nvd.nist.gov/vuln/detail/CVE-2022-2879) * [CVE-2022-28327](https://nvd.nist.gov/vuln/detail/CVE-2022-28327) * [CVE-2022-28131](https://nvd.nist.gov/vuln/detail/CVE-2022-28131) * [CVE-2022-27664](https://nvd.nist.gov/vuln/detail/CVE-2022-27664) * [CVE-2022-24921](https://nvd.nist.gov/vuln/detail/CVE-2022-24921) * [CVE-2022-24675](https://nvd.nist.gov/vuln/detail/CVE-2022-24675) * [CVE-2022-23806](https://nvd.nist.gov/vuln/detail/CVE-2022-23806) * [CVE-2022-23773](https://nvd.nist.gov/vuln/detail/CVE-2022-23773) * [CVE-2022-23772](https://nvd.nist.gov/vuln/detail/CVE-2022-23772) * [CVE-2021-44716](https://nvd.nist.gov/vuln/detail/CVE-2021-44716) * [CVE-2021-41772](https://nvd.nist.gov/vuln/detail/CVE-2021-41772) * [CVE-2021-41771](https://nvd.nist.gov/vuln/detail/CVE-2021-41771) * [CVE-2021-39293](https://nvd.nist.gov/vuln/detail/CVE-2021-39293) * [CVE-2021-38297](https://nvd.nist.gov/vuln/detail/CVE-2021-38297) * [CVE-2021-33198](https://nvd.nist.gov/vuln/detail/CVE-2021-33198) * [CVE-2021-33196](https://nvd.nist.gov/vuln/detail/CVE-2021-33196) * [CVE-2021-33195](https://nvd.nist.gov/vuln/detail/CVE-2021-33195) * [CVE-2021-33194](https://nvd.nist.gov/vuln/detail/CVE-2021-33194) * [CVE-2021-29923](https://nvd.nist.gov/vuln/detail/CVE-2021-29923) * [CVE-2021-27918](https://nvd.nist.gov/vuln/detail/CVE-2021-27918) * [CVE-2020-28367](https://nvd.nist.gov/vuln/detail/CVE-2020-28367) * [CVE-2020-28366](https://nvd.nist.gov/vuln/detail/CVE-2020-28366) * [CVE-2020-28362](https://nvd.nist.gov/vuln/detail/CVE-2020-28362) * [CVE-2020-16845](https://nvd.nist.gov/vuln/detail/CVE-2020-16845) |
 | **N/A** | **Security fixes for `cert-manager-webhook`.**  This addresses the following vulnerabilities:  * [CVE-2023-45287](https://nvd.nist.gov/vuln/detail/CVE-2023-45287) * [CVE-2023-45285](https://nvd.nist.gov/vuln/detail/CVE-2023-45285) * [CVE-2023-44487](https://nvd.nist.gov/vuln/detail/CVE-2023-44487) * [CVE-2023-39325](https://nvd.nist.gov/vuln/detail/CVE-2023-39325) * [CVE-2023-39323](https://nvd.nist.gov/vuln/detail/CVE-2023-39323) * [CVE-2023-29405](https://nvd.nist.gov/vuln/detail/CVE-2023-29405) * [CVE-2023-29404](https://nvd.nist.gov/vuln/detail/CVE-2023-29404) * [CVE-2023-29403](https://nvd.nist.gov/vuln/detail/CVE-2023-29403) * [CVE-2023-29402](https://nvd.nist.gov/vuln/detail/CVE-2023-29402) * [CVE-2023-29400](https://nvd.nist.gov/vuln/detail/CVE-2023-29400) * [CVE-2023-24540](https://nvd.nist.gov/vuln/detail/CVE-2023-24540) * [CVE-2023-24539](https://nvd.nist.gov/vuln/detail/CVE-2023-24539) * [CVE-2023-24538](https://nvd.nist.gov/vuln/detail/CVE-2023-24538) * [CVE-2023-24537](https://nvd.nist.gov/vuln/detail/CVE-2023-24537) * [CVE-2023-24536](https://nvd.nist.gov/vuln/detail/CVE-2023-24536) * [CVE-2023-24534](https://nvd.nist.gov/vuln/detail/CVE-2023-24534) * [CVE-2022-41725](https://nvd.nist.gov/vuln/detail/CVE-2022-41725) * [CVE-2022-41724](https://nvd.nist.gov/vuln/detail/CVE-2022-41724) * [CVE-2022-41723](https://nvd.nist.gov/vuln/detail/CVE-2022-41723) * [CVE-2022-41715](https://nvd.nist.gov/vuln/detail/CVE-2022-41715) * [CVE-2022-32189](https://nvd.nist.gov/vuln/detail/CVE-2022-32189) * [CVE-2022-30635](https://nvd.nist.gov/vuln/detail/CVE-2022-30635) * [CVE-2022-30633](https://nvd.nist.gov/vuln/detail/CVE-2022-30633) * [CVE-2022-30632](https://nvd.nist.gov/vuln/detail/CVE-2022-30632) * [CVE-2022-30631](https://nvd.nist.gov/vuln/detail/CVE-2022-30631) * [CVE-2022-30630](https://nvd.nist.gov/vuln/detail/CVE-2022-30630) * [CVE-2022-30580](https://nvd.nist.gov/vuln/detail/CVE-2022-30580) * [CVE-2022-2880](https://nvd.nist.gov/vuln/detail/CVE-2022-2880) * [CVE-2022-2879](https://nvd.nist.gov/vuln/detail/CVE-2022-2879) * [CVE-2022-28327](https://nvd.nist.gov/vuln/detail/CVE-2022-28327) * [CVE-2022-28131](https://nvd.nist.gov/vuln/detail/CVE-2022-28131) * [CVE-2022-27664](https://nvd.nist.gov/vuln/detail/CVE-2022-27664) * [CVE-2022-24921](https://nvd.nist.gov/vuln/detail/CVE-2022-24921) * [CVE-2022-24675](https://nvd.nist.gov/vuln/detail/CVE-2022-24675) * [CVE-2022-23806](https://nvd.nist.gov/vuln/detail/CVE-2022-23806) * [CVE-2022-23773](https://nvd.nist.gov/vuln/detail/CVE-2022-23773) * [CVE-2022-23772](https://nvd.nist.gov/vuln/detail/CVE-2022-23772) * [CVE-2021-44716](https://nvd.nist.gov/vuln/detail/CVE-2021-44716) * [CVE-2021-41772](https://nvd.nist.gov/vuln/detail/CVE-2021-41772) * [CVE-2021-41771](https://nvd.nist.gov/vuln/detail/CVE-2021-41771) * [CVE-2021-39293](https://nvd.nist.gov/vuln/detail/CVE-2021-39293) * [CVE-2021-38297](https://nvd.nist.gov/vuln/detail/CVE-2021-38297) * [CVE-2021-33198](https://nvd.nist.gov/vuln/detail/CVE-2021-33198) * [CVE-2021-33196](https://nvd.nist.gov/vuln/detail/CVE-2021-33196) * [CVE-2021-33195](https://nvd.nist.gov/vuln/detail/CVE-2021-33195) * [CVE-2021-33194](https://nvd.nist.gov/vuln/detail/CVE-2021-33194) * [CVE-2021-29923](https://nvd.nist.gov/vuln/detail/CVE-2021-29923) * [CVE-2021-27918](https://nvd.nist.gov/vuln/detail/CVE-2021-27918) * [CVE-2020-28367](https://nvd.nist.gov/vuln/detail/CVE-2020-28367) * [CVE-2020-28366](https://nvd.nist.gov/vuln/detail/CVE-2020-28366) * [CVE-2020-28362](https://nvd.nist.gov/vuln/detail/CVE-2020-28362) * [CVE-2020-16845](https://nvd.nist.gov/vuln/detail/CVE-2020-16845) |
 | **N/A** | **Security fixes for `vault`.**  This addresses the following vulnerability:  * [CVE-2025-0377](https://nvd.nist.gov/vuln/detail/CVE-2025-0377) |</content>
+    <summary>This release includes security fixes for various components, including apigee-asm-ingress, apigee-asm-istiod, apigee-connect-agent, apigee-envoy, apigee-fluent-bit, apigee-hybrid-cassandra, apigee-hybrid-cassandra-client, apigee-kube-rbac-proxy, apigee-mart-server, apigee-operators, apigee-prom-prometheus, apigee-prometheus-adapter, apigee-redis, apigee-runtime, apigee-stackdriver-logging-agent, apigee-synchronizer, apigee-watcher, cert-manager-cainjector, cert-manager-controller, cert-manager-webhook, and vault. These fixes address multiple CVEs, enhancing the overall security of the system.</summary>
+    <title>Security: Security Fixes Released for Multiple Components</title>
   </entry>
   <entry>
-    <title>Security</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -196,9 +193,10 @@ Apigee now supports message payloads up to 30MB. You configure support for large
 | **N/A** | **Security fixes for `apigee-fluent-bit`.** (Fixed in [v1.14.2](https://cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1142))  This addresses the following vulnerabilities:  * [CVE-2025-1094](https://nvd.nist.gov/vuln/detail/CVE-2025-1094) * [CVE-2025-0395](https://nvd.nist.gov/vuln/detail/CVE-2025-0395) |
 | **N/A** | **Security fixes for `apigee-fluent-bit`.** (Fixed in [v1.13.3](https://cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1133))  This addresses the following vulnerability:  * [CVE-2024-10979](https://nvd.nist.gov/vuln/detail/CVE-2024-10979) |
 | **N/A** | **Security fixes for `apigee-asm-istiod`.** (Fixed in [v1.14.1](https://cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1141))  This addresses the following vulnerability:  * [CVE-2024-45338](https://nvd.nist.gov/vuln/detail/CVE-2024-45338) |</content>
+    <summary>This release includes security fixes for various Apigee components, including apigee-watcher, apigee-udca, apigee-cassandra-backup-utility, apigee-cassandra-client, apigee-hybrid-cassandra, PythonScript policy, apigee-stackdriver-logging-agent, apigee-redis, apigee-prometheus-adapter, apigee-operators, apigee-open-telemetry-collector, apigee-mint-task-scheduler, apigee-kube-rbac-proxy, and apigee-fluent-bit. These fixes address multiple CVEs to enhance the security of your Apigee hybrid deployment.</summary>
+    <title>Security: Security Updates for Apigee Components</title>
   </entry>
   <entry>
-    <title>Announcement</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -206,9 +204,10 @@ Apigee now supports message payloads up to 30MB. You configure support for large
     <published>2025-05-29T00:00:00+00:00</published>
     <updated>2025-05-29T00:00:00+00:00</updated>
     <content type="text/markdown">On May 29, 2025 we announced the shutdown schedule for the Apigee Classic UI.</content>
+    <summary>The Apigee Classic UI will be shut down starting May 29, 2025. This announcement details the schedule for this transition.</summary>
+    <title>Announcement: Apigee Classic UI Shutdown</title>
   </entry>
   <entry>
-    <title>Deprecated</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -222,5 +221,7 @@ This is the final phase of moving Apigee to the Google Cloud console. Apigee in 
 To prepare for the shutdown of the Apigee Classic UI, familiarize yourself with the new Apigee UI in Google Cloud console by reviewing [UI overview](https://cloud.google.com/apigee/docs/api-platform/fundamentals/ui-overview).
 
 See [Apigee Classic UI shutdown](https://cloud.google.com/apigee/docs/deprecations/apigee-classic-ui) for details on shutdown dates and exception request.</content>
+    <summary>The Apigee Classic UI will be shut down on August 29, 2025, marking the final step in integrating Apigee into the Google Cloud console. Users are encouraged to familiarize themselves with the new interface to manage all Apigee functionalities in one location.</summary>
+    <title>Deprecated: Apigee Classic UI Deprecation</title>
   </entry>
 </feed>

@@ -5,9 +5,10 @@
 ### Feature
 
 **Silent Host Monitoring**
-New Silent Host Monitoring options are available. Detection rule based Silent Host Monitoring within SecOps on UDM fields or labels is available and configurable for time windows.
 
-For more information, see [Silent-host monitoring](https://cloud.google.com/chronicle/docs/ingestion/silent-host-monitoring)
+New configuration options are now available for Silent Host Monitoring. You can now define detection rule-based Silent Host Monitoring in SecOps using UDM fields or labels, configurable within a specified time window.
+
+For more information, see [Silent host monitoring](https://cloud.google.com/chronicle/docs/ingestion/silent-host-monitoring).
 
 ---
 ## 2025-07-21

@@ -2,11 +2,94 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>Google Cloud: AlloyDB for PostgreSQL</title>
   <subtitle>Changelog for Google Cloud product: AlloyDB for PostgreSQL</subtitle>
-  <updated>2025-07-14T00:00:00+00:00</updated>
+  <updated>2025-07-23T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/alloydb-for-postgresql/" />
   <entry>
-    <title>Feature</title>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql:2025-07-23:announcement:0</id>
+    <published>2025-07-23T00:00:00+00:00</published>
+    <updated>2025-07-23T00:00:00+00:00</updated>
+    <content type="text/markdown">[AlloyDB Omni](https://cloud.google.com/alloydb/omni/current/docs)
+version 16.8.0 is generally available
+([GA](https://cloud.google.com/products#product-launch-stages)). Version 16.8.0
+includes the following features and changes:
+
+* AlloyDB Omni supports PostgreSQL version
+  [16.8](https://www.postgresql.org/docs/release/16.8/).
+* AlloyDB Omni supports the
+  [`pg_squeeze`](/alloydb/omni/current/docs/reference/extensions) extension
+  that addresses table bloat and improves data locality.
+* You can set up the columnar engine storage cache on dedicated devices. For
+  more information, see
+  [Configure the columnar engine in AlloyDB Omni](/alloydb/omni/16.8.0/docs/columnar-engine/configure).
+* [Improved I/O acceleration](/alloydb/omni/16.8.0/docs/improve-database-performance-using-io-acceleration)
+  due to bug fixes in `libaio`.
+* [Active Directory](https://en.wikipedia.org/wiki/Active_Directory) authentication integration is generally available ([GA](https://cloud.google.com/products#product-launch-stages)), providing robust user authentication for your database clusters. For more information, see [Integrate Active Directory with AlloyDB Omni](/alloydb/omni/16.8.0/docs/integrate-active-directory).
+* Active Directory group-based authorization is available in [Preview](https://cloud.google.com/products#product-launch-stages), enabling granular permission management based on your Active Directory groups. For more information, see [Integrate Active Directory group support with AlloyDB Omni](/alloydb/omni/16.8.0/docs/integrate-ad-group-support-alloydb-omni).</content>
+    <summary>AlloyDB Omni 16.8.0 is now generally available, now supporting PostgreSQL 16.8 and the pg_squeeze extension. Key features include columnar engine storage cache on dedicated devices, improved I/O acceleration, and generally available Active Directory authentication. Active Directory group-based authorization is also available in preview.</summary>
+    <title>Announcement: AlloyDB Omni 16.8.0 Now Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql:2025-07-23:announcement:1</id>
+    <published>2025-07-23T00:00:00+00:00</published>
+    <updated>2025-07-23T00:00:00+00:00</updated>
+    <content type="text/markdown">[AlloyDB Omni](https://cloud.google.com/alloydb/omni/current/docs)
+version 15.12.0 is generally available
+([GA](https://cloud.google.com/products#product-launch-stages)). Version 15.12.0
+includes the following features and changes:
+
+* AlloyDB Omni supports PostgreSQL version
+  [15.12](https://www.postgresql.org/docs/release/15.12/).
+* AlloyDB Omni supports the
+  [`pg_squeeze`](/alloydb/omni/current/docs/reference/extensions) extension
+  that addresses table bloat and improves data locality.
+* You can set up the columnar engine storage cache on dedicated devices. For
+  more information, see
+  [Configure the columnar engine in AlloyDB Omni](/alloydb/omni/15.12.0/docs/columnar-engine/configure).</content>
+    <summary>AlloyDB Omni 15.12.0 is now available with PostgreSQL 15.12 support, the pg_squeeze extension for table bloat, and options to configure columnar engine storage cache on dedicated devices.</summary>
+    <title>Announcement: AlloyDB Omni 15.12.0 Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql:2025-07-23:announcement:2</id>
+    <published>2025-07-23T00:00:00+00:00</published>
+    <updated>2025-07-23T00:00:00+00:00</updated>
+    <content type="text/markdown">The [AlloyDB Omni Kubernetes operator](/alloydb/omni/current/docs/deploy-kubernetes) version 1.5.0 is generally available ([GA](https://cloud.google.com/products#product-launch-stages)) and includes the following features and bug fixes:
+
+* You can install the operator using the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework.io/) for Kubernetes and OpenShift environments. See "Install the AlloyDB Omni operator" for AlloyDB Omni [15.12.0](/alloydb/omni/15.12.0/docs/deploy-kubernetes#olm) and [16.8.0](/alloydb/omni/16.8.0/docs/deploy-kubernetes#olm) for details.
+* Low downtime, minor version upgrades for a database cluster in a high availability setup are available in [Preview](https://cloud.google.com/products#product-launch-stages). For more information, see "Perform a minor database version upgrade for AlloyDB Omni on Kubernetes" in the documentation for AlloyDB Omni [15.12.0](/alloydb/omni/15.12.0/docs/upgrade-kubernetes-database-minor-version) and [16.8.0](/alloydb/omni/16.8.0/docs/upgrade-kubernetes-database-minor-version).
+* [Active Directory](https://en.wikipedia.org/wiki/Active_Directory) authentication integration on your Kubernetes-based AlloyDB Omni database cluster is generally available ([GA](https://cloud.google.com/products#product-launch-stages)). For more information, see [Integrate Active Directory with AlloyDB Omni on Kubernetes](/alloydb/omni/16.8.0/docs/integrate-active-directory-kubernetes-operator).
+* Active Directory group-based authorization on your Kubernetes-based AlloyDB Omni database cluster is available in [Preview](https://cloud.google.com/products#product-launch-stages). For more information, see [Integrate Active Directory group support on Kubernetes](/alloydb/omni/16.8.0/docs/integrate-ad-group-support-kubernetes-operator).
+* You can configure backups to be taken directly from a standby Kubernetes cluster in a high availability (HA) setup to offload backup operations from your primary instance. See "Backup and restore in Kubernetes" for AlloyDB Omni [15.12.0](/alloydb/omni/15.12.0/docs/backup-kubernetes) and [16.8.0](/alloydb/omni/16.8.0/docs/backup-kubernetes) for details.
+* The operator fully automatically replicates replication slots for cross-data-center replication to work with primary database clusters that have high availability (HA) enabled. You still need to make sure you have reliable and low latency network connectivity between the primary and secondary data centers, which is crucial for cross-data-center replication to function effectively. For more information, see "Work with cross-data-center replication" for AlloyDB Omni [15.12.0](/alloydb/omni/15.12.0/docs/cross-data-center-replication/work-with-cross-data-center-replication) and [16.8.0](/alloydb/omni/16.8.0/docs/cross-data-center-replication/work-with-cross-data-center-replication).
+* AlloyDB Omni Kubernetes images are now built on Red Hat's Universal Base Image (UBI) 9. For more information, see "Install AlloyDB Omni on Kubernetes" for AlloyDB Omni [15.12.0](/alloydb/omni/15.12.0/docs/deploy-kubernetes#base-image) and [16.8.0](/alloydb/omni/16.8.0/docs/deploy-kubernetes#base-image).
+* AlloyDB AI requires AlloyDB Omni version 15.5.5 or later.</content>
+    <summary>New version of AlloyDB Omni Kubernetes operator released with OLM support, Active Directory integration, and improved backup options.</summary>
+    <title>Announcement: AlloyDB Omni Kubernetes Operator 1.5.0 Now Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql:2025-07-23:issue:3</id>
+    <published>2025-07-23T00:00:00+00:00</published>
+    <updated>2025-07-23T00:00:00+00:00</updated>
+    <content type="text/markdown">When upgrading your AlloyDB Omni database clusters, be aware of specific upgrade paths and prerequisites depending on your current `controlPlaneAgentsVersion` and environment:
+
+* If your database cluster's `controlPlaneAgentsVersion` is `1.0.0`, you must first upgrade to `1.1.1` before you upgrade to `1.5.0` or higher. You can directly upgrade database clusters with `controlPlaneAgentsVersion` `1.1.0` or later to `1.5.0`.
+* If you use an OpenShift database cluster that runs `controlPlaneAgentsVersion` `1.4.1` or earlier, you must run prerequisite steps before updating to `1.5.0`. For more information, see "Update OpenShift database clusters from version `1.4.1` or earlier" for AlloyDB Omni [15.12.0](/alloydb/omni/15.12.0/docs/upgrade-kubernetes-operator-version#update-openshift) and [16.8.0](/alloydb/omni/16.8.0/docs/upgrade-kubernetes-operator-version#update-openshift).</content>
+    <summary>AlloyDB Omni upgrade paths require specific version sequencing and prerequisites, especially for older control plane agents and OpenShift clusters.</summary>
+    <title>Issue: AlloyDB Omni upgrade notes</title>
+  </entry>
+  <entry>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -14,9 +97,10 @@
     <published>2025-07-14T00:00:00+00:00</published>
     <updated>2025-07-14T00:00:00+00:00</updated>
     <content type="text/markdown">You can now create an AlloyDB instance with a specific IP address range using the Google Cloud CLI, Terraform, or REST API. You can also override IP address range allocations configured during cluster creation. For more information, see [Create an instance with a specific IP address range](https://cloud.google.com/alloydb/docs/cluster-create#ip-instance). This feature is generally available [GA](https://cloud.google.com/products#product-launch-stages).</content>
+    <summary>You can now create AlloyDB instances with specific IP address ranges using the Google Cloud CLI, Terraform, or REST API, and override existing IP range allocations.</summary>
+    <title>Feature: AlloyDB instance IP address range support</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -28,9 +112,10 @@ searches, specifically K-Nearest Neighbor (KNN) searches, when combined with
 highly-selective predicate filtering. For more information, see
 [Accelerate your filtered vector search](https://cloud.google.com/alloydb/docs/ai/perform-vector-search#accelerate-filtered-vector-search). This feature is in
 [Preview](https://cloud.google.com/products#product-launch-stages).</content>
+    <summary>A new feature allows for improved performance of vector similarity searches, specifically K-Nearest Neighbor (KNN) searches, when combined with highly-selective predicate filtering. This feature is currently in Preview.</summary>
+    <title>Feature: Improved Vector Search Performance</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -40,9 +125,10 @@ highly-selective predicate filtering. For more information, see
     <content type="text/markdown">You can let [AlloyDB automatically create Private Service Connect endpoints](https://cloud.google.com/alloydb/docs/configure-private-service-connect#create_the_endpoint_automatically)
 for authorized projects when you create Private Service Connect-enabled
 instances, based on your defined service connection policy. This feature is generally available ([GA](https://cloud.google.com/products#product-launch-stages)).</content>
+    <summary>AlloyDB now supports automatic creation of Private Service Connect endpoints for authorized projects, simplifying network configuration. This feature is now generally available.</summary>
+    <title>Feature: Automatic Private Service Connect Endpoints for AlloyDB</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -50,9 +136,10 @@ instances, based on your defined service connection policy. This feature is gene
     <published>2025-06-02T00:00:00+00:00</published>
     <updated>2025-06-02T00:00:00+00:00</updated>
     <content type="text/markdown">You can create AlloyDB clusters with [Private Services Connect](https://cloud.google.com/alloydb/docs/configure-private-service-connect#create_the_endpoint_automatically) through the Google Cloud console.</content>
+    <summary>You can now create AlloyDB clusters using Private Services Connect directly from the Google Cloud console.</summary>
+    <title>Feature: AlloyDB Private Services Connect Support</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -64,9 +151,10 @@ instances, based on your defined service connection policy. This feature is gene
 using the Google Cloud console and the Google Cloud CLI. This feature is
 generally available
 ([GA](https://cloud.google.com/products#product-launch-stages)).</content>
+    <summary>You can now start, stop, and restart your AlloyDB instances using the Google Cloud console and CLI. This feature is now generally available.</summary>
+    <title>Feature: AlloyDB instance management is now GA</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -78,5 +166,7 @@ generally available
 * Fix for overriding replication related parameters. This fix lets you override the `wal_keep_size` value. For more information, see [Work with cross-data-center replication](/alloydb/omni/current/docs/cross-data-center-replication/work-with-cross-data-center-replication). This fix requires database version 15.7.1 or later.
 * 63-character DBCluster names are supported, which lets you define clearer and more descriptive cluster names.
 * Various bug fixes are implemented to enhance stability and the user experience.</content>
+    <summary>The AlloyDB Omni Kubernetes operator 1.4.1 is now generally available, featuring support for 63-character DBCluster names and fixes for replication parameters and overall stability.</summary>
+    <title>Feature: AlloyDB Omni Kubernetes Operator 1.4.1 Released</title>
   </entry>
 </feed>

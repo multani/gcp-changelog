@@ -1,5 +1,12 @@
 # Google Cloud Armor
 
+## 2025-07-23
+
+### Feature
+
+Cloud Armor supports internal service security policies for the [service mesh](https://cloud.google.com/armor/docs/integrating-cloud-armor#service-mesh) to enforce global server-side rate limiting per client in Preview.
+
+---
 ## 2025-07-08
 
 ### Changed

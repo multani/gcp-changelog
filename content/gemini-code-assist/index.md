@@ -2,10 +2,6 @@
 
 ## 2025-07-18
 
-### Changed
-
-
-
 ### Improved code completion speed
 
 #### VS Code Gemini Code Assist `2.41.0`
@@ -14,10 +10,6 @@ Code completion suggestion speed is improved with VS Code Extension `2.41.0`.
 
 ---
 ## 2025-07-17
-
-### Announcement
-
-
 
 ### Checkpoints, selected code snippets and terminal output, and other features are now Generally Available (GA)
 
@@ -48,10 +40,6 @@ request.
 ---
 ## 2025-07-01
 
-### Announcement
-
-
-
 ### Gemini 2.5 Pro and Gemini 2.5 Flash models are Generally Available (GA)
 
 Gemini 2.5 Pro and Gemini 2.5 Flash are [Generally Available (GA)](https://cloud.google.com/terms/service-terms). These models are used for Gemini Code Assist Standard and Enterprise, and power Gemini Code Assist's chat, code generation, and code transformation capabilities.
@@ -63,10 +51,6 @@ With the integration of these stable versions of Gemini 2.5 Pro and Gemini 2.5 F
 ---
 ## 2025-06-25
 
-### Feature
-
-
-
 ### Use agent mode in Gemini Code Assist Standard and Enterprise insiders channel for VS Code (Preview)
 
 ![Review and approve](https://cloud.google.com/gemini/images/release-notes-images/vscode-agent-mode-approve-changes.gif)
@@ -77,10 +61,6 @@ You can use Gemini Code Assist chat in agent mode to complete complex, multi-ste
 
 To get started with agent mode, see [Use agentic chat as a pair programmer](https://cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer).
 
-### Feature
-
-
-
 ### Use multi file editing in Gemini Code Assist Standard and Enterprise insiders channel in agent mode for VS Code (Preview)
 
 ![Multi-file edits](https://cloud.google.com/gemini/images/release-notes-images/vscode-agent-mode-multi-file-edit.gif)
@@ -89,10 +69,6 @@ To get started with agent mode, see [Use agentic chat as a pair programmer](http
 
 With multi-file edits in agent mode, the agent can make concurrent changes across your entire codebase in response to a single prompt. This powerful new capability streamlines large-scale refactoring, feature implementation, and bug fixes. Simply describe the changes you need, and the agent will intelligently identify and modify all relevant files, saving you time and effort.
 You will also have the option to undo changes to local files in case you want to revert the changes to an earlier state.
-
-### Feature
-
-
 
 ### Use full project context in Gemini Code Assist Standard and Enterprise insiders channel in agent mode for VS Code (Preview)
 

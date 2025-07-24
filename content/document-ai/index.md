@@ -1,5 +1,14 @@
 # Document AI
 
+## 2025-07-22
+
+### Feature
+
+[Custom extractor](https://cloud.google.com/document-ai/docs/ce-with-genai) model [`pretrained-foundation-model-v1.5-pro-2025-06-20`](https://cloud.google.com/document-ai/docs/processors-list#processor_cde) powered by Gemini 2.5 Pro is in [Public Preview](https://cloud.google.com/products/#product-launch-stages). It has ML processing available for US and EU regions, and 30 page per minute processing requests.
+
+For more information, see [Managing processor versions](https://cloud.google.com/document-ai/docs/manage-processor-versions#import).
+
+---
 ## 2025-07-04
 
 ### Feature

@@ -1,5 +1,12 @@
 # Cloud Data Fusion
 
+## 2025-07-23
+
+### Fixed
+
+The Cloud Data Fusion version 6.10.1.5 patch revision is generally available ([GA](https://cloud.google.com/products#product-launch-stages)). 6.10.1.5 includes reliability fixes.
+
+---
 ## 2025-07-16
 
 ### Changed

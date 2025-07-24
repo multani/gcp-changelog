@@ -1,5 +1,16 @@
 # Security Command Center
 
+## 2025-07-22
+
+### Changed
+
+The [Setup guide](https://cloud.google.com/security-command-center/docs/activate-enterprise-tier#monitor-configure-enterprise-tab) in Security Command Center Enterprise, used to monitor the activation progress and configure services, is now in [General Availability](https://cloud.google.com/products#product-launch-stages).
+
+### Changed
+
+The `Impair Defenses: Two Step Verification Disabled` finding type of Event Threat Detection was renamed to `Persistence: Two Step Verification Disabled`. For a complete list of Event Threat Detection finding types, see [Event Threat Detection overview](https://cloud.google.com/security-command-center/docs/concepts-event-threat-detection-overview).
+
+---
 ## 2025-07-21
 
 ### Changed

@@ -6,7 +6,6 @@
   <id>urn:github:multani:gcp-changelog:bigtable</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/bigtable/" />
   <entry>
-    <title>Libraries</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -32,9 +31,10 @@
 
 * Minor cleanup ([#2623](https://github.com/googleapis/java-bigtable/issues/2623)) ([7b230e8](https://github.com/googleapis/java-bigtable/commit/7b230e86902b5733c06e45fad90da76653ee1096))
 * Update shared dependencies ([#2616](https://github.com/googleapis/java-bigtable/issues/2616)) ([eb7cfd5](https://github.com/googleapis/java-bigtable/commit/eb7cfd526aa999c614b7b8285d32759e2739ff9a))</content>
+    <summary>This release of the Java client library for Bigtable (version 2.62.0) introduces idempotency for the MutateRowRequest API and adds support for SchemaBundles. It also includes dependency updates and minor code cleanup.</summary>
+    <title>Libraries: Java Bigtable Client Library Update</title>
   </entry>
   <entry>
-    <title>Changed</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -42,9 +42,10 @@
     <published>2025-07-07T00:00:00+00:00</published>
     <updated>2025-07-07T00:00:00+00:00</updated>
     <content type="text/markdown">When you [undelete a table](https://cloud.google.com/bigtable/docs/managing-tables#undelete-table), Bigtable automatically enables deletion protection for that table.</content>
+    <summary>Bigtable automatically enables deletion protection for tables when they are undeleted.</summary>
+    <title>Changed: Deletion protection enabled after undeleting tables</title>
   </entry>
   <entry>
-    <title>Libraries</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -71,9 +72,10 @@
 ##### Dependencies
 
 * Update shared dependencies ([#2605](https://github.com/googleapis/java-bigtable/issues/2605)) ([4cc7246](https://github.com/googleapis/java-bigtable/commit/4cc7246ff8e2e0e26d2edc0aee8866a32ec1c8ab))</content>
+    <summary>This release of the java-bigtable client library includes a new getter for universe domain in JwtCredentialsWithAudience, fixes for pom.xml elements and materialized view table ID, and updated shared dependencies.</summary>
+    <title>Libraries: Java Bigtable Client Library Update</title>
   </entry>
   <entry>
-    <title>Feature</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -81,9 +83,10 @@
     <published>2025-06-24T00:00:00+00:00</published>
     <updated>2025-06-24T00:00:00+00:00</updated>
     <content type="text/markdown">You can use [Data Boost](https://cloud.google.com/bigquery/docs/create-bigtable-external-table#compute) to analyze your Bigtable data with BigQuery without impacting the performance of the clusters that handle your application traffic. This feature is generally available ([GA](https://cloud.google.com/products#product-launch-stages)).</content>
+    <summary>Analyze your Bigtable data using BigQuery without affecting your cluster performance. This feature is now generally available.</summary>
+    <title>Feature: Bigtable data analysis with BigQuery</title>
   </entry>
   <entry>
-    <title>Libraries</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -111,9 +114,10 @@
 ##### Dependencies
 
 * Update shared dependencies ([#2587](https://github.com/googleapis/java-bigtable/issues/2587)) ([8ec0339](https://github.com/googleapis/java-bigtable/commit/8ec033994f20b2b3aea0dfcdaffbdd1c6d19fdad))</content>
+    <summary>This release of the Java client library for Bigtable includes improved error messages for malformed structs and ensures that multiple client instances in the same process do not interfere with each other. It also updates the Java code generator and shared dependencies.</summary>
+    <title>Libraries: Java Bigtable Client Library Updates</title>
   </entry>
   <entry>
-    <title>Libraries</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -131,9 +135,10 @@
 ##### Features
 
 * Add full support for the universe domain ([#1604](https://github.com/googleapis/nodejs-bigtable/issues/1604)) ([4562e23](https://github.com/googleapis/nodejs-bigtable/commit/4562e2329e734c0c9d9f00cfa83aa2be13e9a7fe))</content>
+    <summary>This is a weekly digest of client library updates for Node.js, including features like full support for the universe domain in @google-cloud/bigtable.</summary>
+    <title>Libraries: Node.js Client Library Updates</title>
   </entry>
   <entry>
-    <title>Changed</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -144,9 +149,10 @@
 
 * Connector versions 0.5.0 and later support [dynamic columns](https://github.com/GoogleCloudDataproc/spark-bigtable-connector?tab=readme-ov-file#catalog-with-variable-column-definitions).
 * Connector versions 0.6.0 and later support [custom authentication providers](https://github.com/GoogleCloudDataproc/spark-bigtable-connector/?tab=readme-ov-file#how-do-i-authenticate-outside-gce--dataproc) and [efficient joins with data sources](https://github.com/GoogleCloudDataproc/spark-bigtable-connector/?tab=readme-ov-file#efficient-joins-with-other-data-sources).</content>
+    <summary>The Bigtable Spark connector now supports Scala versions 2.12 and 2.13. Recent updates include support for dynamic columns in version 0.5.0 and later, and custom authentication providers along with efficient joins in version 0.6.0 and later.</summary>
+    <title>Changed: Bigtable Spark Connector Updates</title>
   </entry>
   <entry>
-    <title>Announcement</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -154,5 +160,7 @@
     <published>2025-05-27T00:00:00+00:00</published>
     <updated>2025-05-27T00:00:00+00:00</updated>
     <content type="text/markdown">You can delete logical and continuous materialized views in the Google Cloud console. For more information, see [Delete a logical view](https://cloud.google.com/bigtable/docs/create-manage-logical-views#delete) or [Delete a continuous materialized view](https://cloud.google.com/bigtable/docs/manage-continuous-materialized-views#delete).</content>
+    <summary>You can now delete logical and continuous materialized views through the Google Cloud console. For detailed instructions, refer to the documentation on deleting logical views or continuous materialized views.</summary>
+    <title>Announcement: Manage Materialized Views in Google Cloud Console</title>
   </entry>
 </feed>

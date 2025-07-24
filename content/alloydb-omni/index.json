@@ -1,6 +1,40 @@
 {
   "name": "AlloyDB Omni",
   "entries": {
+    "2025-07-23": [
+      {
+        "kind": "Announcement",
+        "content": "[AlloyDB Omni](https://cloud.google.com/alloydb/omni/current/docs)\nversion 16.8.0 is generally available\n([GA](https://cloud.google.com/products#product-launch-stages)). Version 16.8.0\nincludes the following features and changes:\n\n* AlloyDB Omni supports PostgreSQL version\n  [16.8](https://www.postgresql.org/docs/release/16.8/).\n* AlloyDB Omni supports the\n  [`pg_squeeze`](/alloydb/omni/current/docs/reference/extensions) extension\n  that addresses table bloat and improves data locality.\n* You can set up the columnar engine storage cache on dedicated devices. For\n  more information, see\n  [Configure the columnar engine in AlloyDB Omni](/alloydb/omni/16.8.0/docs/columnar-engine/configure).\n* [Improved I/O acceleration](/alloydb/omni/16.8.0/docs/improve-database-performance-using-io-acceleration)\n  due to bug fixes in `libaio`.\n* [Active Directory](https://en.wikipedia.org/wiki/Active_Directory) authentication integration is generally available ([GA](https://cloud.google.com/products#product-launch-stages)), providing robust user authentication for your database clusters. For more information, see [Integrate Active Directory with AlloyDB Omni](/alloydb/omni/16.8.0/docs/integrate-active-directory).\n* Active Directory group-based authorization is available in [Preview](https://cloud.google.com/products#product-launch-stages), enabling granular permission management based on your Active Directory groups. For more information, see [Integrate Active Directory group support with AlloyDB Omni](/alloydb/omni/16.8.0/docs/integrate-ad-group-support-alloydb-omni).",
+        "summary": {
+          "title": "AlloyDB Omni 16.8.0 Now Available",
+          "summary": "AlloyDB Omni 16.8.0 is now generally available, supporting PostgreSQL 16.8 and introducing the pg_squeeze extension for table bloat. It also features columnar engine cache on dedicated devices, improved I/O acceleration, and generally available Active Directory authentication, with Active Directory group-based authorization in preview."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "[AlloyDB Omni](https://cloud.google.com/alloydb/omni/current/docs)\nversion 15.12.0 is generally available\n([GA](https://cloud.google.com/products#product-launch-stages)). Version 15.12.0\nincludes the following features and changes:\n\n* AlloyDB Omni supports PostgreSQL version\n  [15.12](https://www.postgresql.org/docs/release/15.12/).\n* AlloyDB Omni supports the\n  [`pg_squeeze`](/alloydb/omni/current/docs/reference/extensions) extension\n  that addresses table bloat and improves data locality.\n* You can set up the columnar engine storage cache on dedicated devices. For\n  more information, see\n  [Configure the columnar engine in AlloyDB Omni](/alloydb/omni/15.12.0/docs/columnar-engine/configure).",
+        "summary": {
+          "title": "AlloyDB Omni 15.12.0 GA",
+          "summary": "AlloyDB Omni 15.12.0 is now generally available, supporting PostgreSQL 15.12 and introducing the pg_squeeze extension for table bloat and columnar engine storage cache configuration."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "The [AlloyDB Omni Kubernetes operator](/alloydb/omni/current/docs/deploy-kubernetes) version 1.5.0 is generally available ([GA](https://cloud.google.com/products#product-launch-stages)) and includes the following features and bug fixes:\n\n* You can install the operator using the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework.io/) for Kubernetes and OpenShift environments. See \"Install the AlloyDB Omni operator\" for AlloyDB Omni [15.12.0](/alloydb/omni/15.12.0/docs/deploy-kubernetes#olm) and [16.8.0](/alloydb/omni/16.8.0/docs/deploy-kubernetes#olm) for details.\n* Low downtime, minor version upgrades for a database cluster in a high availability setup are available in [Preview](https://cloud.google.com/products#product-launch-stages). For more information, see \"Perform a minor database version upgrade for AlloyDB Omni on Kubernetes\" in the documentation for AlloyDB Omni [15.12.0](/alloydb/omni/15.12.0/docs/upgrade-kubernetes-database-minor-version) and [16.8.0](/alloydb/omni/16.8.0/docs/upgrade-kubernetes-database-minor-version).\n* [Active Directory](https://en.wikipedia.org/wiki/Active_Directory) authentication integration on your Kubernetes-based AlloyDB Omni database cluster is generally available ([GA](https://cloud.google.com/products#product-launch-stages)). For more information, see [Integrate Active Directory with AlloyDB Omni on Kubernetes](/alloydb/omni/16.8.0/docs/integrate-active-directory-kubernetes-operator).\n* Active Directory group-based authorization on your Kubernetes-based AlloyDB Omni database cluster is available in [Preview](https://cloud.google.com/products#product-launch-stages). For more information, see [Integrate Active Directory group support on Kubernetes](/alloydb/omni/16.8.0/docs/integrate-ad-group-support-kubernetes-operator).\n* You can configure backups to be taken directly from a standby Kubernetes cluster in a high availability (HA) setup to offload backup operations from your primary instance. See \"Backup and restore in Kubernetes\" for AlloyDB Omni [15.12.0](/alloydb/omni/15.12.0/docs/backup-kubernetes) and [16.8.0](/alloydb/omni/16.8.0/docs/backup-kubernetes) for details.\n* The operator fully automatically replicates replication slots for cross-data-center replication to work with primary database clusters that have high availability (HA) enabled. You still need to make sure you have reliable and low latency network connectivity between the primary and secondary data centers, which is crucial for cross-data-center replication to function effectively. For more information, see \"Work with cross-data-center replication\" for AlloyDB Omni [15.12.0](/alloydb/omni/15.12.0/docs/cross-data-center-replication/work-with-cross-data-center-replication) and [16.8.0](/alloydb/omni/16.8.0/docs/cross-data-center-replication/work-with-cross-data-center-replication).\n* AlloyDB Omni Kubernetes images are now built on Red Hat's Universal Base Image (UBI) 9. For more information, see \"Install AlloyDB Omni on Kubernetes\" for AlloyDB Omni [15.12.0](/alloydb/omni/15.12.0/docs/deploy-kubernetes#base-image) and [16.8.0](/alloydb/omni/16.8.0/docs/deploy-kubernetes#base-image).\n* AlloyDB AI requires AlloyDB Omni version 15.5.5 or later.",
+        "summary": {
+          "title": "New AlloyDB Omni Operator Version Released",
+          "summary": "AlloyDB Omni Kubernetes operator 1.5.0 is now available, introducing OLM installation, low downtime upgrades, and Active Directory integration."
+        }
+      },
+      {
+        "kind": "Issue",
+        "content": "When upgrading your AlloyDB Omni database clusters, be aware of specific upgrade paths and prerequisites depending on your current `controlPlaneAgentsVersion` and environment:\n\n* If your database cluster's `controlPlaneAgentsVersion` is `1.0.0`, you must first upgrade to `1.1.1` before you upgrade to `1.5.0` or higher. You can directly upgrade database clusters with `controlPlaneAgentsVersion` `1.1.0` or later to `1.5.0`.\n* If you use an OpenShift database cluster that runs `controlPlaneAgentsVersion` `1.4.1` or earlier, you must run prerequisite steps before updating to `1.5.0`. For more information, see \"Update OpenShift database clusters from version `1.4.1` or earlier\" for AlloyDB Omni [15.12.0](/alloydb/omni/15.12.0/docs/upgrade-kubernetes-operator-version#update-openshift) and [16.8.0](/alloydb/omni/16.8.0/docs/upgrade-kubernetes-operator-version#update-openshift).",
+        "summary": {
+          "title": "Upgrade paths for AlloyDB Omni",
+          "summary": "Upgrade paths for AlloyDB Omni"
+        }
+      }
+    ],
     "2025-07-14": [
       {
         "kind": "Announcement",

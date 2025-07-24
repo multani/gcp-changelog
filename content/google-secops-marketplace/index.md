@@ -1,5 +1,26 @@
 # Google SecOps Marketplace
 
+## 2025-07-23
+
+### Feature
+
+**Siemplify**: Version 94.0
+
+* The following new actions have been added:
+
+  + **Get Custom Field Values**
+  + **Resume Case SLA**
+  + **Pause Case SLA**
+
+### Changed
+
+**Sophos**: Version 18.0
+
+Added ability to work with new authentication method in the following action:
+
+* **Get Events Log**
+
+---
 ## 2025-07-16
 
 ### Feature

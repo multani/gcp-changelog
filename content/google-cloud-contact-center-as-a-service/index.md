@@ -71,6 +71,7 @@ The following issues were addressed in this release:
 * Fixed an issue where end-users were unable to download chat transcripts containing special characters, emoji, or redacted content.
 * Fixed an issue with the web SDK where configuring custom system messages with empty quotes or NULL values didn't fully suppress the messages.
 * Fixed an issue with the web SDK where some non-English characters in downloaded chat transcripts were appearing as question marks.
+* Fixed an issue in Hubspot where recordings of transferred calls were failing to save.
 * Fixed an issue in Salesforce where the **Call** button in the call adapter wasn't working for outbound calls to a phone number that was associated with a previous record.
 
 ---

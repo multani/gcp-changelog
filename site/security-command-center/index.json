@@ -1,152 +1,278 @@
 {
   "name": "Security Command Center",
   "entries": {
+    "2025-07-22": [
+      {
+        "kind": "Changed",
+        "content": "The [Setup guide](https://cloud.google.com/security-command-center/docs/activate-enterprise-tier#monitor-configure-enterprise-tab) in Security Command Center Enterprise, used to monitor the activation progress and configure services, is now in [General Availability](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "Security Command Center Enterprise Setup Guide Now GA",
+          "summary": "Setup guide for Security Command Center Enterprise is now in General Availability."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "The `Impair Defenses: Two Step Verification Disabled` finding type of Event Threat Detection was renamed to `Persistence: Two Step Verification Disabled`. For a complete list of Event Threat Detection finding types, see [Event Threat Detection overview](https://cloud.google.com/security-command-center/docs/concepts-event-threat-detection-overview).",
+        "summary": {
+          "title": "Finding Type Change",
+          "summary": "Two Step Verification Disabled finding type renamed."
+        }
+      }
+    ],
     "2025-07-21": [
       {
         "kind": "Changed",
-        "content": "The **Aggregations** panel on the **Findings** page in Security Command Center Enterprise has been enhanced and is now called **Quick Filters**. For information about filtering results on the Findings page, see [Review and manage findings](https://cloud.google.com/security-command-center/docs/review-manage-findings)."
+        "content": "The **Aggregations** panel on the **Findings** page in Security Command Center Enterprise has been enhanced and is now called **Quick Filters**. For information about filtering results on the Findings page, see [Review and manage findings](https://cloud.google.com/security-command-center/docs/review-manage-findings).",
+        "summary": {
+          "title": "Aggregations panel renamed to Quick Filters",
+          "summary": "The Aggregations panel in Security Command Center Enterprise Findings page has been renamed to Quick Filters. For more details on filtering, refer to the documentation on reviewing and managing findings."
+        }
       }
     ],
     "2025-07-17": [
       {
         "kind": "Feature",
-        "content": "The following [Container Threat Detection](https://cloud.google.com/security-command-center/docs/concepts-container-threat-detection-overview) detectors for file monitoring are in [Preview](https://cloud.google.com/products#product-launch-stages):\n\n* `Collection: Pam.d Modification`\n* `Credential Access: Access Sensitive Files on Nodes`\n* `Defense Evasion: Disable or modify Linux audit system`\n* `Defense Evasion: Root Certificate Installed`\n* `Execution: Suspicious Cron Modification`\n* `Persistence: Modify ld.so.preload`"
+        "content": "The following [Container Threat Detection](https://cloud.google.com/security-command-center/docs/concepts-container-threat-detection-overview) detectors for file monitoring are in [Preview](https://cloud.google.com/products#product-launch-stages):\n\n* `Collection: Pam.d Modification`\n* `Credential Access: Access Sensitive Files on Nodes`\n* `Defense Evasion: Disable or modify Linux audit system`\n* `Defense Evasion: Root Certificate Installed`\n* `Execution: Suspicious Cron Modification`\n* `Persistence: Modify ld.so.preload`",
+        "summary": {
+          "title": "Container Threat Detection detectors now in preview",
+          "summary": "New detectors for file monitoring are available in preview, including Pam.d Modification, Credential Access, Defense Evasion, Execution, and Persistence."
+        }
       },
       {
         "kind": "Changed",
-        "content": "The following Security Command Center Enterprise pages in the Google Cloud\nconsole now fully replace equivalent pages that you accessed previously in the\nGoogle Security Operations console.\n\n* [Risk Overview](https://cloud.google.com/security-command-center/docs/assess-risk)\n* [Issues](https://cloud.google.com/security-command-center/docs/issues-overview)\n* [Assets](https://cloud.google.com/security-command-center/docs/work-with-resources-in-the-console) (previously called Resources)\n* [Findings](https://cloud.google.com/security-command-center/docs/review-manage-findings)\n\nLeft navigation links in the Google Security Operations console open the related Google Cloud console page. See the earlier [release announcement](https://cloud.google.com/security-command-center/docs/release-notes#May_08_2025) about these pages."
+        "content": "The following Security Command Center Enterprise pages in the Google Cloud\nconsole now fully replace equivalent pages that you accessed previously in the\nGoogle Security Operations console.\n\n* [Risk Overview](https://cloud.google.com/security-command-center/docs/assess-risk)\n* [Issues](https://cloud.google.com/security-command-center/docs/issues-overview)\n* [Assets](https://cloud.google.com/security-command-center/docs/work-with-resources-in-the-console) (previously called Resources)\n* [Findings](https://cloud.google.com/security-command-center/docs/review-manage-findings)\n\nLeft navigation links in the Google Security Operations console open the related Google Cloud console page. See the earlier [release announcement](https://cloud.google.com/security-command-center/docs/release-notes#May_08_2025) about these pages.",
+        "summary": {
+          "title": "Security Operations console now part of Google Cloud console",
+          "summary": "The Google Security Operations console has been updated, and its functionalities are now fully integrated into the Google Cloud console. Key pages such as Risk Overview, Issues, Assets, and Findings have been moved and replaced within the Google Cloud console. Links from the Security Operations console now direct users to the corresponding pages in Google Cloud."
+        }
       }
     ],
     "2025-07-14": [
       {
         "kind": "Changed",
-        "content": "In the [Google Kubernetes Engine (GKE) security posture dashboard](https://cloud.google.com/security-command-center/docs/concepts-security-sources#gke-security-posture-dashboard), the software vulnerabilities pane is available in [Preview](https://cloud.google.com/products#product-launch-stages), not General Availability."
+        "content": "In the [Google Kubernetes Engine (GKE) security posture dashboard](https://cloud.google.com/security-command-center/docs/concepts-security-sources#gke-security-posture-dashboard), the software vulnerabilities pane is available in [Preview](https://cloud.google.com/products#product-launch-stages), not General Availability.",
+        "summary": {
+          "title": "GKE Security Dashboard Vulnerability Pane in Preview",
+          "summary": "The software vulnerabilities pane in the Google Kubernetes Engine (GKE) security posture dashboard is now available in Preview. This update allows users to access and evaluate software vulnerabilities within their GKE environments."
+        }
       }
     ],
     "2025-07-11": [
       {
         "kind": "Feature",
-        "content": "[Notebook Security Scanner](https://cloud.google.com/security-command-center/docs/concepts-security-sources#notebook-security-scanner) is a built-in package vulnerability detection service of Security Command Center. This feature is available in [Preview](https://cloud.google.com/products#product-launch-stages) to the Security Command Center Premium or Enterprise tier.\n\nYou can enable and use Notebook Security Scanner to detect vulnerabilities in Python packages that are used in Colab Enterprise notebooks (files with the `ipynb` filename extension) and resolve those package vulnerability findings."
+        "content": "[Notebook Security Scanner](https://cloud.google.com/security-command-center/docs/concepts-security-sources#notebook-security-scanner) is a built-in package vulnerability detection service of Security Command Center. This feature is available in [Preview](https://cloud.google.com/products#product-launch-stages) to the Security Command Center Premium or Enterprise tier.\n\nYou can enable and use Notebook Security Scanner to detect vulnerabilities in Python packages that are used in Colab Enterprise notebooks (files with the `ipynb` filename extension) and resolve those package vulnerability findings.",
+        "summary": {
+          "title": "New Notebook Security Scanner Available",
+          "summary": "A new feature is available for Security Command Center Premium or Enterprise users. The Notebook Security Scanner helps detect vulnerabilities in Python packages used in Colab Enterprise notebooks, allowing you to resolve package security issues."
+        }
       }
     ],
     "2025-07-10": [
       {
         "kind": "Changed",
-        "content": "In the Google Cloud console, the [Google Kubernetes Engine (GKE) security posture dashboard](https://cloud.google.com/security-command-center/docs/concepts-security-sources#gke-security-posture-dashboard) shows the top software vulnerabilities that affect your GKE workloads. This feature is in [General Availability](https://cloud.google.com/products#product-launch-stages)."
+        "content": "In the Google Cloud console, the [Google Kubernetes Engine (GKE) security posture dashboard](https://cloud.google.com/security-command-center/docs/concepts-security-sources#gke-security-posture-dashboard) shows the top software vulnerabilities that affect your GKE workloads. This feature is in [General Availability](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "GKE Security Posture Dashboard Update",
+          "summary": "The GKE security posture dashboard in the Google Cloud console now shows the top software vulnerabilities affecting your GKE workloads. This feature has reached General Availability."
+        }
       }
     ],
     "2025-07-01": [
       {
         "kind": "Changed",
-        "content": "Security Command Center now supports the [detection of Chokepoints](https://cloud.google.com/security-command-center/docs/toxic-combinations-overview) for the following cloud service provider platforms:\n\n* Amazon Web Services (AWS)\n* Microsoft Azure\n\nSupport for Chokepoints with Microsoft Azure and AWS is in [Preview](https://cloud.google.com/products#product-launch-stages)."
+        "content": "Security Command Center now supports the [detection of Chokepoints](https://cloud.google.com/security-command-center/docs/toxic-combinations-overview) for the following cloud service provider platforms:\n\n* Amazon Web Services (AWS)\n* Microsoft Azure\n\nSupport for Chokepoints with Microsoft Azure and AWS is in [Preview](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "Chokepoint Detection Now Available for AWS and Azure",
+          "summary": "Security Command Center now detects Chokepoints for AWS and Azure, with support currently in Preview."
+        }
       }
     ],
     "2025-06-30": [
       {
         "kind": "Feature",
-        "content": "You can download risk reports as PDFs. Risk reports help you understand the results of the attack path simulations (virtual red teaming) that Security Command Center runs. This feature is in [Preview](http://cloud.google.com/products#product-launch-stages) and is available for customers on the Enterprise or Premium service tiers. For more information, see [Risk reports overview](https://cloud.google.com/security-command-center/docs/risk-reports-overview)."
+        "content": "You can download risk reports as PDFs. Risk reports help you understand the results of the attack path simulations (virtual red teaming) that Security Command Center runs. This feature is in [Preview](http://cloud.google.com/products#product-launch-stages) and is available for customers on the Enterprise or Premium service tiers. For more information, see [Risk reports overview](https://cloud.google.com/security-command-center/docs/risk-reports-overview).",
+        "summary": {
+          "title": "Downloadable Risk Reports Available",
+          "summary": "You can now download risk reports as PDFs to understand your attack path simulation results. This feature is available in Preview for Enterprise and Premium service tiers."
+        }
       },
       {
         "kind": "Feature",
-        "content": "The following [Virtual Machine Threat Detection](https://cloud.google.com/security-command-center/docs/concepts-vm-threat-detection-overview) detectors are in [General Availability](https://cloud.google.com/products#product-launch-stages).\n\n* `Defense Evasion: Unexpected ftrace handler`\n* `Defense Evasion: Unexpected interrupt handler`\n* `Defense Evasion: Unexpected kernel modules`\n* `Defense Evasion: Unexpected kernel read-only data modification`\n* `Defense Evasion: Unexpected kprobe handler`\n* `Defense Evasion: Unexpected processes in runqueue`\n* `Defense Evasion: Unexpected system call handler`"
+        "content": "The following [Virtual Machine Threat Detection](https://cloud.google.com/security-command-center/docs/concepts-vm-threat-detection-overview) detectors are in [General Availability](https://cloud.google.com/products#product-launch-stages).\n\n* `Defense Evasion: Unexpected ftrace handler`\n* `Defense Evasion: Unexpected interrupt handler`\n* `Defense Evasion: Unexpected kernel modules`\n* `Defense Evasion: Unexpected kernel read-only data modification`\n* `Defense Evasion: Unexpected kprobe handler`\n* `Defense Evasion: Unexpected processes in runqueue`\n* `Defense Evasion: Unexpected system call handler`",
+        "summary": {
+          "title": "Virtual Machine Threat Detection Now Generally Available",
+          "summary": "We are pleased to announce that our Virtual Machine Threat Detection feature is now in General Availability. This feature includes several new detectors for enhanced security."
+        }
       },
       {
         "kind": "Deprecated",
-        "content": "The `Defense Evasion: Unexpected kernel code modification` detector of Virtual Machine Threat Detection is shut down. For more information, see [Detector shutdowns](https://cloud.google.com/security-command-center/docs/deprecations)."
+        "content": "The `Defense Evasion: Unexpected kernel code modification` detector of Virtual Machine Threat Detection is shut down. For more information, see [Detector shutdowns](https://cloud.google.com/security-command-center/docs/deprecations).",
+        "summary": {
+          "title": "Virtual Machine Threat Detection detector shut down",
+          "summary": "The Defense Evasion: Unexpected kernel code modification detector in Virtual Machine Threat Detection has been shut down. For more information, please refer to the detector shutdowns documentation."
+        }
       }
     ],
     "2025-06-27": [
       {
         "kind": "Changed",
-        "content": "The following [Event Threat Detection](https://cloud.google.com/security-command-center/docs/concepts-event-threat-detection-overview) detectors have been released to [GA](https://cloud.google.com/products#product-launch-stages).\n\n* `Exfiltration: Cloud SQL Data Exfiltration`\n* `Credential Access: CloudDB Failed login from Anonymizing Proxy IP`\n* `Initial Access: CloudDB Successful login from Anonymizing Proxy IP`"
+        "content": "The following [Event Threat Detection](https://cloud.google.com/security-command-center/docs/concepts-event-threat-detection-overview) detectors have been released to [GA](https://cloud.google.com/products#product-launch-stages).\n\n* `Exfiltration: Cloud SQL Data Exfiltration`\n* `Credential Access: CloudDB Failed login from Anonymizing Proxy IP`\n* `Initial Access: CloudDB Successful login from Anonymizing Proxy IP`",
+        "summary": {
+          "title": "New Event Threat Detection detectors released",
+          "summary": "Three new Event Threat Detection detectors are now generally available, including Cloud SQL Data Exfiltration and detectors for anonymizing proxy IP addresses targeting CloudDB."
+        }
       }
     ],
     "2025-06-20": [
       {
         "kind": "Changed",
-        "content": "The display name for the following [Event Threat Detection](https://cloud.google.com/security-command-center/docs/concepts-event-threat-detection-overview#rules) rules have changed. Please update any artifacts that use these values, such as finding filters, finding queries, or mute rules.\n\n| Previous display name | New display name |\n| --- | --- |\n| `Defensive Evasion: Static Pod Created` | `Defense Evasion: Static Pod Created` |\n| `Data Destruction: Deleted Google Cloud Backup and DR Backup` | `Impact: Deleted Google Cloud Backup and DR Backup` |\n| `Inhibit System Recovery: Deleted Google Cloud Backup and DR host` | `Impact: Deleted Google Cloud Backup and DR host` |\n| `Inhibit System Recovery: Deleted Google Cloud Backup and DR plan association` | `Impact: Deleted Google Cloud Backup and DR plan association` |\n| `Inhibit System Recovery: Deleted Google Cloud Backup and DR Vault` | `Impact: Deleted Google Cloud Backup and DR Vault` |\n| `Inhibit System Recovery: Google Cloud Backup and DR delete policy` | `Impact: Google Cloud Backup and DR delete policy` |\n| `Inhibit System Recovery: Google Cloud Backup and DR delete profile` | `Impact: Google Cloud Backup and DR delete profile` |\n| `Inhibit System Recovery: Google Cloud Backup and DR delete storage pool` | `Impact: Google Cloud Backup and DR delete storage pool` |\n| `Inhibit System Recovery: Google Cloud Backup and DR delete template` | `Impact: Google Cloud Backup and DR delete template` |\n| `Data Destruction: Google Cloud Backup and DR expire image` | `Impact: Google Cloud Backup and DR expire image` |\n| `Data Destruction: Google Cloud Backup and DR remove appliance` | `Impact: Google Cloud Backup and DR remove appliance` |\n| `Inhibit System Recovery: Google Cloud Backup and DR remove plan` | `Impact: Google Cloud Backup and DR remove plan` |\n| `Impair Defenses: Strong Authentication Disabled` | `Persistence: Strong Authentication Disabled` |\n| `Credential Access: External Member Added To Privileged Group` | `Privilege Escalation: External Member Added To Privileged Group` |\n| `Persistence: Impersonation Role Granted For Dormant Service Account` | `Privilege Escalation: Impersonation Role Granted For Dormant Service Account` |\n| `Credential Access: Privileged Group Opened To Public` | `Privilege Escalation: Privileged Group Opened To Public` |\n| `Credential Access: Sensitive Role Granted To Hybrid Group` | `Privilege Escalation: Sensitive Role Granted To Hybrid Group` |"
+        "content": "The display name for the following [Event Threat Detection](https://cloud.google.com/security-command-center/docs/concepts-event-threat-detection-overview#rules) rules have changed. Please update any artifacts that use these values, such as finding filters, finding queries, or mute rules.\n\n| Previous display name | New display name |\n| --- | --- |\n| `Defensive Evasion: Static Pod Created` | `Defense Evasion: Static Pod Created` |\n| `Data Destruction: Deleted Google Cloud Backup and DR Backup` | `Impact: Deleted Google Cloud Backup and DR Backup` |\n| `Inhibit System Recovery: Deleted Google Cloud Backup and DR host` | `Impact: Deleted Google Cloud Backup and DR host` |\n| `Inhibit System Recovery: Deleted Google Cloud Backup and DR plan association` | `Impact: Deleted Google Cloud Backup and DR plan association` |\n| `Inhibit System Recovery: Deleted Google Cloud Backup and DR Vault` | `Impact: Deleted Google Cloud Backup and DR Vault` |\n| `Inhibit System Recovery: Google Cloud Backup and DR delete policy` | `Impact: Google Cloud Backup and DR delete policy` |\n| `Inhibit System Recovery: Google Cloud Backup and DR delete profile` | `Impact: Google Cloud Backup and DR delete profile` |\n| `Inhibit System Recovery: Google Cloud Backup and DR delete storage pool` | `Impact: Google Cloud Backup and DR delete storage pool` |\n| `Inhibit System Recovery: Google Cloud Backup and DR delete template` | `Impact: Google Cloud Backup and DR delete template` |\n| `Data Destruction: Google Cloud Backup and DR expire image` | `Impact: Google Cloud Backup and DR expire image` |\n| `Data Destruction: Google Cloud Backup and DR remove appliance` | `Impact: Google Cloud Backup and DR remove appliance` |\n| `Inhibit System Recovery: Google Cloud Backup and DR remove plan` | `Impact: Google Cloud Backup and DR remove plan` |\n| `Impair Defenses: Strong Authentication Disabled` | `Persistence: Strong Authentication Disabled` |\n| `Credential Access: External Member Added To Privileged Group` | `Privilege Escalation: External Member Added To Privileged Group` |\n| `Persistence: Impersonation Role Granted For Dormant Service Account` | `Privilege Escalation: Impersonation Role Granted For Dormant Service Account` |\n| `Credential Access: Privileged Group Opened To Public` | `Privilege Escalation: Privileged Group Opened To Public` |\n| `Credential Access: Sensitive Role Granted To Hybrid Group` | `Privilege Escalation: Sensitive Role Granted To Hybrid Group` |",
+        "summary": {
+          "title": "Event Threat Detection rule display names updated",
+          "summary": "The display names for several Event Threat Detection rules have been updated. Please review and update any artifacts that reference these display names, such as filters, queries, or mute rules."
+        }
       },
       {
         "kind": "Changed",
-        "content": "Risk Engine includes the `aiplatform.googleapis.com/Model` resource type in the default high-value resource set. For more information, see the [list of default resource types](https://cloud.google.com/security-command-center/docs/attack-exposure-learn#default-high-value-resource-set)."
+        "content": "Risk Engine includes the `aiplatform.googleapis.com/Model` resource type in the default high-value resource set. For more information, see the [list of default resource types](https://cloud.google.com/security-command-center/docs/attack-exposure-learn#default-high-value-resource-set).",
+        "summary": {
+          "title": "Risk Engine resource set updated",
+          "summary": "The Risk Engine now includes the `aiplatform.googleapis.com/Model` resource type in its default high-value resource set, enhancing its ability to identify and prioritize critical assets. For more details, refer to the updated list of default resource types."
+        }
       }
     ],
     "2025-06-19": [
       {
         "kind": "Changed",
-        "content": "The prompt injection and jailbreak detection filter in Model Armor flags more threats across various attack vectors, and offers an improved detection rate for high-confidence malicious prompts. This filter is available in us-east1."
+        "content": "The prompt injection and jailbreak detection filter in Model Armor flags more threats across various attack vectors, and offers an improved detection rate for high-confidence malicious prompts. This filter is available in us-east1.",
+        "summary": {
+          "title": "Improved threat detection in Model Armor",
+          "summary": "The prompt injection and jailbreak detection filter in Model Armor now identifies more threats, including a better detection rate for high-confidence malicious prompts. This feature is available in us-east1."
+        }
       },
       {
         "kind": "Changed",
-        "content": "**CVEs with no known exploitation activity are not considered in attack path simulations**\n\nVulnerability findings in Security Command Center are enriched by Mandiant Threat Intelligence. A CVE with wide exploitation activity is more likely to be used in an attack path compared to a CVE with only anticipated exploitation activity. Vulnerabilities with no known exploitation activity are not considered in attack path simulations. For more information, see [Incorporation of CVE data](https://cloud.google.com/security-command-center/docs/attack-exposure-learn#incorporation_of_cve_data)."
+        "content": "**CVEs with no known exploitation activity are not considered in attack path simulations**\n\nVulnerability findings in Security Command Center are enriched by Mandiant Threat Intelligence. A CVE with wide exploitation activity is more likely to be used in an attack path compared to a CVE with only anticipated exploitation activity. Vulnerabilities with no known exploitation activity are not considered in attack path simulations. For more information, see [Incorporation of CVE data](https://cloud.google.com/security-command-center/docs/attack-exposure-learn#incorporation_of_cve_data).",
+        "summary": {
+          "title": "CVEs in Attack Path Simulations",
+          "summary": "Vulnerability findings are enriched by Mandiant Threat Intelligence. Only CVEs with known exploitation are included in attack path simulations, as they pose a higher risk."
+        }
       }
     ],
     "2025-06-18": [
       {
         "kind": "Announcement",
-        "content": "The **Set security marks** option in the [new Security Command Center Enterprise Findings and Assets pages](https://cloud.google.com/security-command-center/docs/release-notes#May_08_2025) is temporarily unavailable. You can opt-out of the new Security Command Center Enterprise experience to manage security marks using the Cloud console. Or, you can manage security marks using the [Security Command Center API](https://cloud.google.com/security-command-center/docs/how-to-api-add-manage-security-marks)."
+        "content": "The **Set security marks** option in the [new Security Command Center Enterprise Findings and Assets pages](https://cloud.google.com/security-command-center/docs/release-notes#May_08_2025) is temporarily unavailable. You can opt-out of the new Security Command Center Enterprise experience to manage security marks using the Cloud console. Or, you can manage security marks using the [Security Command Center API](https://cloud.google.com/security-command-center/docs/how-to-api-add-manage-security-marks).",
+        "summary": {
+          "title": "Security Marks Feature Temporarily Unavailable",
+          "summary": "The \"Set security marks\" feature is temporarily unavailable in the new Security Command Center Enterprise Findings and Assets pages. Users can manage security marks through the Cloud console by opting out of the new experience or by using the Security Command Center API."
+        }
       }
     ],
     "2025-06-13": [
       {
         "kind": "Feature",
-        "content": "The following [Event Threat Detection](https://cloud.google.com/security-command-center/docs/concepts-event-threat-detection-overview) detectors for Vertex AI have been released to [Preview](https://cloud.google.com/products#product-launch-stages):\n\n* `Persistence: New Geography for AI Service`\n* `Privilege Escalation: Anomalous Multistep Service Account Delegation for AI Admin Activity`\n* `Privilege Escalation: Anomalous Multistep Service Account Delegation for AI Data Access`\n* `Privilege Escalation: Anomalous Service Account Impersonator for AI Admin Activity`\n* `Privilege Escalation: Anomalous Service Account Impersonator for AI Data Access`\n* `Privilege Escalation: Anomalous Impersonation of Service Account for AI Admin Activity`\n* `Persistence: New AI API Method`\n* `Initial Access: Dormant Service Account Activity in AI Service`"
+        "content": "The following [Event Threat Detection](https://cloud.google.com/security-command-center/docs/concepts-event-threat-detection-overview) detectors for Vertex AI have been released to [Preview](https://cloud.google.com/products#product-launch-stages):\n\n* `Persistence: New Geography for AI Service`\n* `Privilege Escalation: Anomalous Multistep Service Account Delegation for AI Admin Activity`\n* `Privilege Escalation: Anomalous Multistep Service Account Delegation for AI Data Access`\n* `Privilege Escalation: Anomalous Service Account Impersonator for AI Admin Activity`\n* `Privilege Escalation: Anomalous Service Account Impersonator for AI Data Access`\n* `Privilege Escalation: Anomalous Impersonation of Service Account for AI Admin Activity`\n* `Persistence: New AI API Method`\n* `Initial Access: Dormant Service Account Activity in AI Service`",
+        "summary": {
+          "title": "New Vertex AI detectors for Event Threat Detection",
+          "summary": "New detectors for Vertex AI are now available in preview, enhancing Event Threat Detection capabilities."
+        }
       }
     ],
     "2025-06-08": [
       {
         "kind": "Feature",
-        "content": "Model Armor supports screening text in the following document types for malicious content.\n\n* DOCX, DOCM, DOTX, DOTM documents\n* PPTX, PPTM, POTX, POT presentations\n* XLSX, XLSM, XLTX, XLTM spreadsheets"
+        "content": "Model Armor supports screening text in the following document types for malicious content.\n\n* DOCX, DOCM, DOTX, DOTM documents\n* PPTX, PPTM, POTX, POT presentations\n* XLSX, XLSM, XLTX, XLTM spreadsheets",
+        "summary": {
+          "title": "Model Armor now screens more document types",
+          "summary": "Model Armor now screens DOCX, DOCM, DOTX, DOTM documents, PPTX, PPTM, POTX, POTM presentations, and XLSX, XLSM, XLTX, XLTM spreadsheets for malicious content."
+        }
       },
       {
         "kind": "Feature",
-        "content": "**Multi-language support for Model Armor filters**\n\nThe Responsible AI and prompt injection and jailbreak detection filters are tested in English, Spanish, French, Italian, Portuguese, German, Chinese (Mandarin), Japanese, and Korean. These filters can work in other languages, but the quality of results might vary.\n\nFor more information, see [Languages supported](https://cloud.google.com/security-command-center/docs/model-armor-overview#languages-supported)."
+        "content": "**Multi-language support for Model Armor filters**\n\nThe Responsible AI and prompt injection and jailbreak detection filters are tested in English, Spanish, French, Italian, Portuguese, German, Chinese (Mandarin), Japanese, and Korean. These filters can work in other languages, but the quality of results might vary.\n\nFor more information, see [Languages supported](https://cloud.google.com/security-command-center/docs/model-armor-overview#languages-supported).",
+        "summary": {
+          "title": "Multi-language Support for Model Armor Filters",
+          "summary": "The new update includes multi-language support for Model Armor filters, which have been tested in multiple languages including English, Spanish, French, German, and more. While the filters may work in other languages, the quality of results may vary."
+        }
       }
     ],
     "2025-06-06": [
       {
         "kind": "Changed",
-        "content": "The [Security Risk Overview dashboard for Compute Engine](https://cloud.google.com/compute/docs/monitor-security-risks-console) is in [General Availability](https://cloud.google.com/products#product-launch-stages). In addition, it provides a **Top CVE findings** table that lists the most severe CVEs that affect your Compute Engine instances."
+        "content": "The [Security Risk Overview dashboard for Compute Engine](https://cloud.google.com/compute/docs/monitor-security-risks-console) is in [General Availability](https://cloud.google.com/products#product-launch-stages). In addition, it provides a **Top CVE findings** table that lists the most severe CVEs that affect your Compute Engine instances.",
+        "summary": {
+          "title": "Security Risk Overview dashboard for Compute Engine now available",
+          "summary": "The Security Risk Overview dashboard for Compute Engine is now generally available. This update includes a new table listing the most severe CVE findings affecting your Compute Engine instances."
+        }
       }
     ],
     "2025-06-05": [
       {
         "kind": "Feature",
-        "content": "[Vulnerability Assessment for Google Cloud](https://cloud.google.com/security-command-center/docs/vulnerability-assessment-google-cloud) supports scanning on Google Kubernetes Engine (GKE) nodes and containers. This feature has been released to [Preview](https://cloud.google.com/products#product-launch-stages)."
+        "content": "[Vulnerability Assessment for Google Cloud](https://cloud.google.com/security-command-center/docs/vulnerability-assessment-google-cloud) supports scanning on Google Kubernetes Engine (GKE) nodes and containers. This feature has been released to [Preview](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "Vulnerability Assessment for GKE",
+          "summary": "Vulnerability Assessment now supports scanning of Google Kubernetes Engine (GKE) nodes and containers. This feature is currently in Preview."
+        }
       },
       {
         "kind": "Changed",
-        "content": "Muted findings are no longer considered in the Security Command Center Risk Engine. As a result, they no longer get [attack exposure scores](https://cloud.google.com/security-command-center/docs/attack-exposure-learn)."
+        "content": "Muted findings are no longer considered in the Security Command Center Risk Engine. As a result, they no longer get [attack exposure scores](https://cloud.google.com/security-command-center/docs/attack-exposure-learn).",
+        "summary": {
+          "title": "Muted findings no longer impact risk score",
+          "summary": "Muted findings are no longer evaluated by the Security Command Center Risk Engine, meaning they will not receive attack exposure scores."
+        }
       }
     ],
     "2025-06-04": [
       {
         "kind": "Feature",
-        "content": "Security Command Center Premium customers can now access toxic combinations, which are in [General Availability](https://cloud.google.com/products#product-launch-stages), and chokepoints, which are in [Preview](https://cloud.google.com/products?e=48754805#product-launch-stages). These are available at the organization level. For more information, see [Toxic combinations and chokepoints overview](https://cloud.google.com/security-command-center/docs/toxic-combinations-overview)."
+        "content": "Security Command Center Premium customers can now access toxic combinations, which are in [General Availability](https://cloud.google.com/products#product-launch-stages), and chokepoints, which are in [Preview](https://cloud.google.com/products?e=48754805#product-launch-stages). These are available at the organization level. For more information, see [Toxic combinations and chokepoints overview](https://cloud.google.com/security-command-center/docs/toxic-combinations-overview).",
+        "summary": {
+          "title": "New Security Features Available",
+          "summary": "Security Command Center Premium now offers toxic combinations in General Availability and chokepoints in Preview, both accessible at the organization level."
+        }
       }
     ],
     "2025-06-03": [
       {
         "kind": "Feature",
-        "content": "The following [Container Threat Detection](https://cloud.google.com/security-command-center/docs/concepts-container-threat-detection-overview) detectors for Google Kubernetes Engine have been released to [General Availability](https://cloud.google.com/products#product-launch-stages):\n\n* `Credential Access: Find Google Cloud Credentials`\n* `Credential Access: GPG Key Reconnaissance`\n* `Defense Evasion: Base64 ELF File Command Line`\n* `Defense Evasion: Base64 Encoded Python Script Executed`\n* `Defense Evasion: Base64 Encoded Shell Script Executed`\n* `Execution: Fileless Execution in /memfd:`\n* `Execution: Suspicious OpenSSL Shared Object Loaded`\n* `Privilege Escalation: Fileless Execution in /dev/shm`"
+        "content": "The following [Container Threat Detection](https://cloud.google.com/security-command-center/docs/concepts-container-threat-detection-overview) detectors for Google Kubernetes Engine have been released to [General Availability](https://cloud.google.com/products#product-launch-stages):\n\n* `Credential Access: Find Google Cloud Credentials`\n* `Credential Access: GPG Key Reconnaissance`\n* `Defense Evasion: Base64 ELF File Command Line`\n* `Defense Evasion: Base64 Encoded Python Script Executed`\n* `Defense Evasion: Base64 Encoded Shell Script Executed`\n* `Execution: Fileless Execution in /memfd:`\n* `Execution: Suspicious OpenSSL Shared Object Loaded`\n* `Privilege Escalation: Fileless Execution in /dev/shm`",
+        "summary": {
+          "title": "New detectors for Container Threat Detection",
+          "summary": "Container Threat Detection for Google Kubernetes Engine now offers 8 new detectors for enhanced security, including Credential Access, Defense Evasion, Execution, and Privilege Escalation."
+        }
       }
     ],
     "2025-05-29": [
       {
         "kind": "Changed",
-        "content": "Domain tagging for [toxic combinations and chokepoints](https://cloud.google.com/security-command-center/docs/toxic-combinations-overview) has been improved to be more precise. The following filters are available for [issues](https://cloud.google.com/security-command-center/docs/issues-overview):\n\n* CVE Vulnerabilities\n* Identity\n* Data\n* AI Security"
+        "content": "Domain tagging for [toxic combinations and chokepoints](https://cloud.google.com/security-command-center/docs/toxic-combinations-overview) has been improved to be more precise. The following filters are available for [issues](https://cloud.google.com/security-command-center/docs/issues-overview):\n\n* CVE Vulnerabilities\n* Identity\n* Data\n* AI Security",
+        "summary": {
+          "title": "Improved Domain Tagging and New Issue Filters",
+          "summary": "Domain tagging for toxic combinations and chokepoints has been improved for greater precision. New filters for issues include CVE Vulnerabilities, Identity, Data, and AI Security."
+        }
       }
     ],
     "2025-05-28": [
       {
         "kind": "Changed",
-        "content": "**Model Armor enhancements**\n\n* Model Armor supports multi-regional endpoints. For more information, see [Locations for the Model Armor API](https://cloud.google.com/security-command-center/docs/regional-endpoints#locations-model-armor).\n* All Model Armor filters support up to 2,000 tokens."
+        "content": "**Model Armor enhancements**\n\n* Model Armor supports multi-regional endpoints. For more information, see [Locations for the Model Armor API](https://cloud.google.com/security-command-center/docs/regional-endpoints#locations-model-armor).\n* All Model Armor filters support up to 2,000 tokens.",
+        "summary": {
+          "title": "Model Armor enhancements",
+          "summary": "Model Armor now supports multi-regional endpoints and all filters support up to 2,000 tokens."
+        }
       }
     ],
     "2025-05-27": [
       {
         "kind": "Changed",
-        "content": "Enhanced [data residency support](https://cloud.google.com/security-command-center/docs/data-residency-support) in the European Union and United States is in [General Availability](https://cloud.google.com/products#product-launch-stages)."
+        "content": "Enhanced [data residency support](https://cloud.google.com/security-command-center/docs/data-residency-support) in the European Union and United States is in [General Availability](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "Enhanced data residency support",
+          "summary": "Data residency support has been enhanced in the EU and US, and is now generally available."
+        }
       }
     ]
   }

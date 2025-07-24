@@ -2,11 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>Google Cloud: Cloud Data Fusion</title>
   <subtitle>Changelog for Google Cloud product: Cloud Data Fusion</subtitle>
-  <updated>2025-07-16T00:00:00+00:00</updated>
+  <updated>2025-07-23T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-data-fusion</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-data-fusion/" />
   <entry>
-    <title>Changed</title>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-data-fusion:2025-07-23:fixed:0</id>
+    <published>2025-07-23T00:00:00+00:00</published>
+    <updated>2025-07-23T00:00:00+00:00</updated>
+    <content type="text/markdown">The Cloud Data Fusion version 6.10.1.5 patch revision is generally available ([GA](https://cloud.google.com/products#product-launch-stages)). 6.10.1.5 includes reliability fixes.</content>
+    <summary>Reliability fixes for Cloud Data Fusion.</summary>
+    <title>Fixed: Cloud Data Fusion v6.10.1.5 now available</title>
+  </entry>
+  <entry>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -21,9 +31,10 @@ This release provides backward compatibility for recent schema changes, includin
 * [Improved timestamp handling](https://cloud.google.com/data-fusion/docs/release-notes#June_14_2023): Version 1.11.0 introduced improvements to timestamp handling.
 
 To address backward compatibility for these changes, two new hidden fields are introduced in Oracle batch source configurations: `treatPrecisionlessNumAsDeci` and `treatAsOldTimestamp`. Both flags default to `false`. To enable these flags, edit the respective values in your exported connection JSON (if using connections) or pipeline JSON (if not using connections) before re-importing or re-deploying ([PLUGIN-1893](https://cdap.atlassian.net/browse/PLUGIN-1893)).</content>
+    <summary>The Oracle plugin has been updated to version 1.12.3 for Cloud Data Fusion versions 6.11.0 and later, and version 1.11.8 for version 6.10. This update includes backward compatibility for precisionless numbers and improved timestamp handling, with new hidden fields `treatPrecisionlessNumAsDeci` and `treatAsOldTimestamp` available for configuration.</summary>
+    <title>Changed: Oracle plugin updated</title>
   </entry>
   <entry>
-    <title>Changed</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -33,9 +44,10 @@ To address backward compatibility for these changes, two new hidden fields are i
     <content type="text/markdown">The Elasticsearch plugin version 1.11.0 is available in Cloud Data Fusion version 6.11.0. This release includes the following change:
 
 * Upgraded Hadoop version for Elasticsearch plugin compatibility ([PLUGIN-1881](https://cdap.atlassian.net/browse/PLUGIN-1881)).</content>
+    <summary>The Elasticsearch plugin has been updated to version 1.11.0 in Cloud Data Fusion 6.11.0. This update includes an upgraded Hadoop version to ensure compatibility for the Elasticsearch plugin.</summary>
+    <title>Changed: Elasticsearch plugin updated</title>
   </entry>
   <entry>
-    <title>Changed</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -46,9 +58,10 @@ To address backward compatibility for these changes, two new hidden fields are i
 
 * Implemented the Client Credentials Grant flow for HTTP OAuth2, enabling authorized clients to securely access data using the `client_credentials` grant type. Client credentials can be passed through Basic Authentication header, in the request body, or as query parameters ([PLUGIN-1872](https://cdap.atlassian.net/browse/PLUGIN-1872)).
 * Fixed an issue causing the HTTP Source plugin to throw a `NullPointerException` when the `BasePageIterator` received a null response ([PLUGIN-1894](https://cdap.atlassian.net/browse/PLUGIN-1894)).</content>
+    <summary>The HTTP plugin has been updated to version 1.4.4 in Cloud Data Fusion 6.10.1. This update introduces support for the Client Credentials Grant flow in HTTP OAuth2 and resolves a NullPointerException in the HTTP Source plugin.</summary>
+    <title>Changed: HTTP plugin updated to version 1.4.4</title>
   </entry>
   <entry>
-    <title>Changed</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -56,9 +69,10 @@ To address backward compatibility for these changes, two new hidden fields are i
     <published>2025-06-09T00:00:00+00:00</published>
     <updated>2025-06-09T00:00:00+00:00</updated>
     <content type="text/markdown">Cloud Data Fusion is available in the `northamerica-south1` (Mexico) region. For more information, see [Pricing](https://cloud.google.com/data-fusion/pricing).</content>
+    <summary>Cloud Data Fusion is now available in the `northamerica-south1` (Mexico) region. For more details on pricing, please refer to the documentation.</summary>
+    <title>Changed: Cloud Data Fusion now in Mexico</title>
   </entry>
   <entry>
-    <title>Changed</title>
     <author>
       <name>Google Cloud</name>
     </author>
@@ -69,5 +83,7 @@ To address backward compatibility for these changes, two new hidden fields are i
 
 * Upgraded Salesforce API version from 53.0 to 62.0 ([PLUGIN-1891](https://cdap.atlassian.net/browse/PLUGIN-1891)).
 * Added a retry mechanism for all Salesforce API calls from the Salesforce plugin ([PLUGIN-1892](https://cdap.atlassian.net/browse/PLUGIN-1892)).</content>
+    <summary>The Salesforce plugin has been updated to version 1.6.10 in Cloud Data Fusion versions 6.10.1 and 6.11.0. This update includes an upgrade to Salesforce API version 62.0 and the addition of a retry mechanism for all Salesforce API calls.</summary>
+    <title>Changed: Salesforce plugin updated</title>
   </entry>
 </feed>

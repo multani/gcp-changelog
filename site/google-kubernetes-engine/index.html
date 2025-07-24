@@ -1559,6 +1559,48 @@ about setting node labels in compute classes, see the
 <h3 id="feature_4">Feature</h3>
 <p>You can ask Gemini for predefined role suggestions using the IAM role picker in the Google Cloud Console. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">preview</a>.</p>
 <p>For more information, see <a href="https://cloud.google.com/iam/docs/role-picker-gemini">Get predefined role suggestions with Gemini assistance</a>.</p>
+<h2 id="pubsub">Pub/Sub</h2>
+<h3 id="libraries">Libraries</h3>
+<p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
+<h3 id="go">Go</h3>
+<h3 id="changes-for-pubsubapiv1">Changes for <a href="https://github.com/googleapis/google-cloud-go/tree/main/pubsub/apiv1">pubsub/apiv1</a></h3>
+<h4 id="200-2025-07-16">2.0.0 (2025-07-16)</h4>
+<p>To migrate from the v1 cloud.google.com/go/pubsub, please follow the <a href="https://github.com/googleapis/google-cloud-go/blob/main/pubsub/MIGRATING.md">migration guide</a></p>
+<h5 id="features">Features</h5>
+<ul>
+<li><strong>pubsub/v2:</strong> Add MessageTransformationFailureReason to IngestionFailureEvent (<a href="https://github.com/googleapis/google-cloud-go/commit/208745bbc1f4fc9122ec71d6cf42f512ae570d13">208745b</a>)</li>
+<li><strong>pubsub/v2:</strong> Add new v2 library (<a href="https://github.com/googleapis/google-cloud-go/issues/12218">#12218</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/c798f62f908140686b8e2a365cccf9608fb5ab95">c798f62</a>)</li>
+<li><strong>pubsub/v2:</strong> Add SchemaViolationReason to IngestionFailureEvent (<a href="https://github.com/googleapis/google-cloud-go/commit/d8ae6874a54b48fce49968664f14db63c055c6e2">d8ae687</a>)</li>
+<li><strong>pubsub/v2:</strong> Generate renamed go pubsub admin clients (<a href="https://github.com/googleapis/google-cloud-go/commit/a95a0bf4172b8a227955a0353fd9c845f4502411">a95a0bf</a>)</li>
+<li><strong>pubsub/v2:</strong> Release 2.0.0 (<a href="https://github.com/googleapis/google-cloud-go/issues/12568">#12568</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/704efce43ffd2e81e9fe8e19f7573913b86840e8">704efce</a>)</li>
+</ul>
+<h5 id="documentation">Documentation</h5>
+<ul>
+<li><strong>pubsub/v2:</strong> Document that the <code>acknowledge_confirmation</code> and <code>modify_ack_deadline_confirmation</code> fields in message <code>.google.pubsub.v1.StreamingPullResponse</code> are not guaranteed to be populated (<a href="https://github.com/googleapis/google-cloud-go/commit/208745bbc1f4fc9122ec71d6cf42f512ae570d13">208745b</a>)</li>
+<li><strong>pubsub/v2:</strong> Standardize spelling of "acknowledgment" in Pub/Sub protos (<a href="https://github.com/googleapis/google-cloud-go/commit/d8ae6874a54b48fce49968664f14db63c055c6e2">d8ae687</a>)</li>
+<li><strong>pubsub/v2:</strong> Update v2 package docs with migration guide (<a href="https://github.com/googleapis/google-cloud-go/issues/12564">#12564</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/5ef606838a84f1c56225fc4e33f4ee394eb34725">5ef6068</a>)</li>
+</ul>
+<h3 id="java">Java</h3>
+<h3 id="changes-for-google-cloud-pubsub">Changes for <a href="https://github.com/googleapis/java-pubsub">google-cloud-pubsub</a></h3>
+<h4 id="11410-2025-07-11"><a href="https://github.com/googleapis/java-pubsub/compare/v1.140.2...v1.141.0">1.141.0</a> (2025-07-11)</h4>
+<h5 id="features_1">Features</h5>
+<ul>
+<li>Add MessageTransformationFailureReason to IngestionFailureEvent (<a href="https://github.com/googleapis/java-pubsub/commit/8271399cc6348f69ba034b676cce2aa7592122a4">8271399</a>)</li>
+<li>Next release from main branch is 1.141.0 (<a href="https://github.com/googleapis/java-pubsub/issues/2481">#2481</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/bd9f3850efa77ce759b4f281aecd9645666cb0f7">bd9f385</a>)</li>
+</ul>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.60.1 (<a href="https://github.com/googleapis/java-pubsub/commit/c9ef2cda2c6ad20d5e57fe3ccf69f845f7ef36b7">c9ef2cd</a>)</li>
+</ul>
+<h5 id="dependencies">Dependencies</h5>
+<ul>
+<li>Update dependency com.google.cloud:google-cloud-bigquery to v2.52.0 (<a href="https://github.com/googleapis/java-pubsub/issues/2467">#2467</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/fe08a6f1f6ee18e97c752f82786016999f6ab12c">fe08a6f</a>)</li>
+<li>Update dependency com.google.cloud:google-cloud-core to v2.58.1 (<a href="https://github.com/googleapis/java-pubsub/issues/2476">#2476</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/96a23544fce609c7b19a00638a767926c304d3f8">96a2354</a>)</li>
+<li>Update dependency com.google.cloud:google-cloud-storage to v2.53.2 (<a href="https://github.com/googleapis/java-pubsub/issues/2469">#2469</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/fa51a01ed39393b7cad25fb39a1c87099def830a">fa51a01</a>)</li>
+<li>Update dependency com.google.cloud:sdk-platform-java-config to v3.50.1 (<a href="https://github.com/googleapis/java-pubsub/issues/2477">#2477</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/e1657cbeae5f2c3c9680ef6b5ff2b1ea5549f4ba">e1657cb</a>)</li>
+<li>Update googleapis/sdk-platform-java action to v2.60.0 (<a href="https://github.com/googleapis/java-pubsub/issues/2471">#2471</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/2b0e8e0b58432f0975c15d0d01f185dc81de6caf">2b0e8e0</a>)</li>
+<li>Update googleapis/sdk-platform-java action to v2.60.1 (<a href="https://github.com/googleapis/java-pubsub/issues/2475">#2475</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/e7c0b5d44f0ad53adfac6ec26572baad54d04dee">e7c0b5d</a>)</li>
+</ul>
 <h2 id="security-command-center">Security Command Center</h2>
 <h3 id="changed">Changed</h3>
 <p>The <strong>Aggregations</strong> panel on the <strong>Findings</strong> page in Security Command Center Enterprise has been enhanced and is now called <strong>Quick Filters</strong>. For information about filtering results on the Findings page, see <a href="https://cloud.google.com/security-command-center/docs/review-manage-findings">Review and manage findings</a>.</p>
@@ -1788,17 +1830,17 @@ families, see the Compute Engine
 <a href="https://cloud.google.com/compute/docs/machine-resource#machine_type_comparison">Machine series comparison</a>.</p>
 <p>If you have Windows workloads that use machine families that support only NVMe,
 upgrade your clusters to version 1.33.2-gke.1240000 or later.</p>
-<h2 id="pubsub">Pub/Sub</h2>
-<h3 id="libraries">Libraries</h3>
+<h2 id="pubsub_1">Pub/Sub</h2>
+<h3 id="libraries_1">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="python">Python</h3>
-<h3 id="changes-for-google-cloud-pubsub">Changes for <a href="https://github.com/googleapis/python-pubsub">google-cloud-pubsub</a></h3>
+<h3 id="changes-for-google-cloud-pubsub_1">Changes for <a href="https://github.com/googleapis/python-pubsub">google-cloud-pubsub</a></h3>
 <h4 id="2310-2025-06-26"><a href="https://github.com/googleapis/python-pubsub/compare/v2.30.0...v2.31.0">2.31.0</a> (2025-06-26)</h4>
-<h5 id="features">Features</h5>
+<h5 id="features_2">Features</h5>
 <ul>
 <li>Add MessageTransformationFailureReason to IngestionFailureEvent (<a href="https://github.com/googleapis/python-pubsub/issues/1427">#1427</a>) (<a href="https://github.com/googleapis/python-pubsub/commit/8ab13e1b71c151f0146548e7224dd38c9d719a88">8ab13e1</a>)</li>
 </ul>
-<h5 id="bug-fixes">Bug Fixes</h5>
+<h5 id="bug-fixes_1">Bug Fixes</h5>
 <ul>
 <li>Surface Fatal Stream Errors to Future; Adjust Retryable Error Codes (<a href="https://github.com/googleapis/python-pubsub/issues/1422">#1422</a>) (<a href="https://github.com/googleapis/python-pubsub/commit/e081beb29056035304d365ec9c50fa7ffbac6886">e081beb</a>)</li>
 </ul>
@@ -3621,6 +3663,9 @@ zones.</p>
             <a href="#identity-and-access-management" class="nav-link">Identity and Access Management</a>
           </li>
           <li class="nav-item">
+            <a href="#pubsub" class="nav-link">Pub/Sub</a>
+          </li>
+          <li class="nav-item">
             <a href="#security-command-center" class="nav-link">Security Command Center</a>
           </li>
           <li class="nav-item">
@@ -3630,7 +3675,7 @@ zones.</p>
             <a href="#2025-07-14" class="nav-link">2025-07-14</a>
           </li>
           <li class="nav-item">
-            <a href="#pubsub" class="nav-link">Pub/Sub</a>
+            <a href="#pubsub_1" class="nav-link">Pub/Sub</a>
           </li>
           <li class="nav-item">
             <a href="#security-command-center_1" class="nav-link">Security Command Center</a>

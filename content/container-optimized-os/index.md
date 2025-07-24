@@ -2,10 +2,6 @@
 
 ## 2025-07-14
 
-### Changed
-
-
-
 ### cos-117-18613-263-66
 
 |  |  |  |  |
@@ -37,10 +33,6 @@ CVE-2025-29768, CVE-2025-1215, CVE-2025-24014, CVE-2025-22134.
 Runtime sysctl changes:
 
 * Changed: fs.file-max: 811799 -> 811784
-
-### Changed
-
-
 
 ### cos-109-17800-519-47
 
@@ -74,10 +66,6 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 812201 -> 812258
 
-### Changed
-
-
-
 ### cos-121-18867-90-85
 
 |  |  |  |  |
@@ -103,10 +91,6 @@ CVE-2024-5742.
 Upgraded vim, vim-core to
 version 9.1.1500. This fixes CVE-2025-26603, CVE-2025-27423,
 CVE-2025-29768, CVE-2025-1215, CVE-2025-24014, CVE-2025-22134.
-
-### Changed
-
-
 
 ### cos-113-18244-382-60
 
@@ -137,10 +121,6 @@ CVE-2025-29768, CVE-2025-1215, CVE-2025-24014, CVE-2025-22134.
 ---
 ## 2025-07-07
 
-### Changed
-
-
-
 ### cos-121-18867-90-77
 
 |  |  |  |  |
@@ -152,10 +132,6 @@ CVE-2025-29768, CVE-2025-1215, CVE-2025-24014, CVE-2025-22134.
 
 Upgraded app-admin/sudo to v1.9.17\_p1. This resolves
 CVE-2025-32462 and CVE-2025-32463.
-
-### Changed
-
-
 
 ### cos-117-18613-263-58
 
@@ -169,10 +145,6 @@ CVE-2025-32462 and CVE-2025-32463.
 Upgraded app-admin/sudo to v1.9.17\_p1. This resolves
 CVE-2025-32462 and CVE-2025-32463.
 
-### Changed
-
-
-
 ### cos-113-18244-382-54
 
 |  |  |  |  |
@@ -184,10 +156,6 @@ CVE-2025-32462 and CVE-2025-32463.
 
 Upgraded app-admin/sudo to v1.9.17\_p1. This resolves
 CVE-2025-32462 and CVE-2025-32463.
-
-### Changed
-
-
 
 ### cos-109-17800-519-41
 
@@ -203,10 +171,6 @@ CVE-2025-32462 and CVE-2025-32463.
 
 ---
 ## 2025-06-30
-
-### Changed
-
-
 
 ### cos-dev-125-19126-0-0
 
@@ -285,10 +249,6 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 811773 -> 811755
 
-### Changed
-
-
-
 ### cos-117-18613-263-56
 
 |  |  |  |  |
@@ -322,10 +282,6 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 811785 -> 811719
 
-### Changed
-
-
-
 ### cos-121-18867-90-75
 
 |  |  |  |  |
@@ -355,10 +311,6 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 811798 -> 811807
 
-### Changed
-
-
-
 ### cos-113-18244-382-53
 
 |  |  |  |  |
@@ -383,10 +335,6 @@ Upgraded elfutils to version 0.193. This fixes CVE-2025-1365, CVE-2025-1371, CVE
 Runtime sysctl changes:
 
 * Changed: fs.file-max: 812041 -> 812035
-
-### Changed
-
-
 
 ### cos-109-17800-519-40
 

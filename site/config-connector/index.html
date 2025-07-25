@@ -1476,8 +1476,27 @@
 
 
 <h1 id="config-connector">Config Connector</h1>
-<h2 id="2025-06-10">2025-06-10</h2>
+<h2 id="2025-07-14">2025-07-14</h2>
 <h3 id="announcement">Announcement</h3>
+<p>Config Connector version 1.132.1 is now available.</p>
+<h3 id="changed">Changed</h3>
+<p>Reconciliation Improvements:</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/spanner/spannerinstance">SpannerInstance</a></li>
+<li>You can opt-in the direct controller by adding the
+    <code>alpha.cnrm.cloud.google.com/reconciler: direct</code> annotation to the
+    <code>SpannerInstance</code> resource`.</li>
+<li>Direct controller is opt-in if using the following fields:<ul>
+<li><code>spec.labels</code></li>
+<li><code>spec.defaultBackupScheduleType</code></li>
+<li><code>spec.edition</code></li>
+<li><code>spec.autoscalingConfig</code></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="2025-06-10">2025-06-10</h2>
+<h3 id="announcement_1">Announcement</h3>
 <p>Config Connector version 1.132.0 is now available.</p>
 <h3 id="feature">Feature</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
@@ -1488,7 +1507,7 @@
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/notebooks/notebookinstance"><code>VertexAINotebooksInstance</code></a></li>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/vertexai/vertexaimetadatastore"><code>VertexAIMetadataStore</code></a></li>
 </ul>
-<h3 id="changed">Changed</h3>
+<h3 id="changed_1">Changed</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
 <ul>
 <li><code>OrgPolicyPolicy</code></li>
@@ -1518,6 +1537,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#config-connector">Config Connector</a></li>
+          <li class="nav-item">
+            <a href="#2025-07-14" class="nav-link">2025-07-14</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-06-10" class="nav-link">2025-06-10</a>
           </li>

@@ -1,6 +1,280 @@
 {
   "name": "Looker",
   "entries": {
+    "2025-07-24": [
+      {
+        "kind": "Announcement",
+        "content": "**Looker 25.12** is expected to include the following changes, features, and fixes:\n\n* Expected Looker (original) deployment start: **Monday, July 28, 2025**\n* Expected Looker (original) final deployment and download available: **Thursday, August 7, 2025**\n* Expected Looker (Google Cloud core) deployment start: **Monday, July 28, 2025**\n* Expected Looker (Google Cloud core) final deployment: **Wednesday, July 30, 2025**",
+        "summary": {
+          "title": "Looker 25.12 Release",
+          "summary": "Looker 25.12 Release"
+        }
+      },
+      {
+        "kind": "Breaking",
+        "content": "Because of security concerns, text tiles no longer support the `form` and `input` Markdown elements.",
+        "summary": {
+          "title": "Breaking News",
+          "summary": "Text tiles no longer support form and input Markdown elements due to security concerns."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The Oracle JDBC driver has been updated to version 19.25.",
+        "summary": {
+          "title": "Oracle JDBC Driver Update",
+          "summary": "Oracle JDBC driver updated."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "For faster response time for queries in BigQuery, Looker will execute BigQuery queries by using [`jobCreationMode=JOB_CREATION_OPTIONAL`](https://cloud.google.com/bigquery/docs/reference/rest/v2/jobs/query#jobcreationmode). If BigQuery can return immediate results, it will run the query without creating a job, so the record in the Looker query history will have a BigQuery query ID instead of a BigQuery job ID. See the [Understanding query performance metrics](https://cloud.google.com/looker/docs/query-performance-metrics#bigquery_bi_engine_metrics) documentation page for more information about the BigQuery BI Engine metrics.",
+        "summary": {
+          "title": "Faster BigQuery Queries in Looker",
+          "summary": "Looker now uses an improved method for running BigQuery queries, leading to faster response times."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [Query Concurrency System Activity Explore](https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#query_concurrency) is now available. This Explore can help you identify periods of high load and investigate performance bottlenecks that are related to database connection limits.",
+        "summary": {
+          "title": "New Query Concurrency System Activity Explore Available",
+          "summary": "Identify high load periods and investigate performance bottlenecks related to database connection limits."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Looker 25.12 contains the following accessibility improvements:\n\n* Improved contrast for exit buttons on dialogs\n* Improved contrast for checkbox borders",
+        "summary": {
+          "title": "Looker 25.12 Accessibility Update",
+          "summary": "Accessibility improvements in Looker 25.12"
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where pull requests could display a different user than the pull request's owner. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed: Pull Request Owner Display Issue",
+          "summary": "Pull requests now display the correct owner."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the System Activity Query Metrics Explore was not reliably populating with data. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed System Activity Query Metrics Explore",
+          "summary": "System Activity Query Metrics Explore data population issue fixed."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where API users could view a list of users on a Looker instance, even if they didn't have the `see_users` permission. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed: API user permissions",
+          "summary": "API users can now only view users if they have the `see_users` permission."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the response headers from some API calls were not set by Looker. This feature now performs as expected.",
+        "summary": {
+          "title": "Looker API Header Fix",
+          "summary": "Looker API response headers are now correctly set."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where exploring from a dashboard tile while editing a dashboard could result in a permissions error, even if the user had permission to view the Explore. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed: Dashboard tile exploration error",
+          "summary": "Permissions error fixed when exploring from dashboard tile."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the row limit in an Explore could display a blank field when the row limit was set to 5,000. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed: Explore Row Limit Issue",
+          "summary": "Row limit in explore now displays correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where some users were unable to create or edit BigQuery OAuth connections. This feature now performs as expected.",
+        "summary": {
+          "title": "BigQuery OAuth Connection Issue Fixed",
+          "summary": "Fixed an issue with BigQuery OAuth connections."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where SQL Runner would display a blank page if a user changed the visualization type after pivoting on a dimension. This feature now performs as expected.",
+        "summary": {
+          "title": "Bug Fix",
+          "summary": "SQL Runner fixed blank page issue after visualization change."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where some queries to the internal database were unoptimized, affecting instance performance. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed: Instance performance improved",
+          "summary": "Internal database queries optimized."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where a visualization template could fail to be displayed in the list of templates if the name contained certain unicode characters. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed: Visualization template issue",
+          "summary": "Visualization template display issue fixed."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where invalid query killing statements could cause unnecessarily verbose log outputs. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed verbose logs",
+          "summary": "Invalid query killing statements no longer produce verbose logs."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where API users without the `explore` permission could access visualization templates. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed: Visualization template access",
+          "summary": "API users without explore permission can no longer access visualization templates."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where Looker could return a 500 error while retrieving dashboard details if the details contained non-UTF-8 characters. This feature now performs as expected.",
+        "summary": {
+          "title": "Looker error fixed",
+          "summary": "Looker dashboard error fixed."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where forecasting didn't work properly on fields that were based on JSON data. This feature now performs as expected.",
+        "summary": {
+          "title": "Forecasting Fix",
+          "summary": "Forecasting on JSON-based fields now works correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where Looker didn't properly sanitize slash characters in git references that were used for remote dependencies. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed Git Reference Issue",
+          "summary": "Looker no longer has issues with git references."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where fields could be sorted differently when a visualization was downloaded or scheduled as a PNG. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed: Visualization Sort Order",
+          "summary": "Fields are now sorted correctly in downloaded PNGs."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the `all_connections` API call could ignore the `fields` parameter. This feature now performs as expected.",
+        "summary": {
+          "title": "API Call Fix",
+          "summary": "The `all_connections` API call now correctly handles the `fields` parameter."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where a map visualization would display drill links for fields that were hidden from the visualization. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed: Map visualization drill links",
+          "summary": "Map visualization drill links fixed."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where some System Activity tables were missing the `element_id` field. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed: System Activity Tables",
+          "summary": "System Activity tables missing element_id field fixed."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where subtotals could be incorrectly formatted in PDF downloads when an HTML parameter was defined on the field and the \"Expand tables to show all rows\" option was enabled. This feature now performs as expected.",
+        "summary": {
+          "title": "Formatting Issue Resolved",
+          "summary": "Subtotals formatting in PDF downloads has been fixed when HTML parameters are used with row expansion enabled."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The Looker IDE now checks for subparameters in local and remote dependencies and displays a more informative error if the subparameters are missing. Local dependencies must be defined with a project subparameter, while remote dependencies require both a `url` subparameter and a `ref` subparameter.",
+        "summary": {
+          "title": "IDE dependency checks improved",
+          "summary": "IDE now checks for subparameters in local and remote dependencies. Local dependencies require a project subparameter, while remote dependencies need both url and ref subparameters for more informative error messages."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where editing a merged query in an embedded session would open in a new tab. This feature now performs as expected.",
+        "summary": {
+          "title": "Bug Fix for Merged Query Editing",
+          "summary": "Editing a merged query in an embedded session now opens in a new tab as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where Looker could generate duplicate SQL table references if a PDT referenced a table directly as well as through a join. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed duplicate SQL references in Looker",
+          "summary": "Looker no longer generates duplicate SQL table references when a PDT references a table directly as well as through a join."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where some PDT regeneration events were not tracked in System Activity. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed PDT regeneration tracking",
+          "summary": "PDT regeneration events were not tracked in System Activity."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "When an Explore is saved as a new dashboard, Looker will create advanced filter type dashboard filters, rather than drop-down type dashboard filters, for number type parameters.",
+        "summary": {
+          "title": "Looker dashboard filter update",
+          "summary": "Looker now creates advanced filters for number parameters when saving an Explore as a dashboard."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where SAML authentication could fail for a Looker (Google Cloud core) instance. This feature now performs as expected.",
+        "summary": {
+          "title": "SAML authentication fixed",
+          "summary": "SAML authentication issue fixed."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the Looker Marketplace toggle was not being displayed in Looker core instances for users who were granted Admin permissions with an IAM role. This feature now performs as expected.",
+        "summary": {
+          "title": "Looker Marketplace Fix",
+          "summary": "Looker Marketplace toggle now displayed correctly for IAM admins."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where installing multiple drivers for the same database type on a customer-hosted instance could cause Looker to display an error. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed driver installation issue",
+          "summary": "An issue with installing multiple drivers for the same database type on a customer-hosted instance has been fixed."
+        }
+      }
+    ],
     "2025-06-30": [
       {
         "kind": "Feature",

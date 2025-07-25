@@ -1,5 +1,12 @@
 # Security Command Center
 
+## 2025-07-24
+
+### Feature
+
+For the Enterprise service tier, Security Command Center offers [data residency support](https://cloud.google.com/security-command-center/docs/data-residency-support) in the European Union, Saudi Arabia, and United States. This feature is in [General Availability](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-07-22
 
 ### Changed

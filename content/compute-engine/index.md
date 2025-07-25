@@ -1,5 +1,28 @@
 # Compute Engine
 
+## 2025-07-24
+
+### Feature
+
+**Generally available**: The general-purpose C4 machine series now supports Hyperdisk Balanced High Availability. For more information, see [Supported disk types for C4](https://cloud.google.com/compute/docs/general-purpose-machines#supported_disk_types_for_c4).
+
+---
+## 2025-07-23
+
+### Changed
+
+When a regional Persistent Disk volume is fully replicated, Compute Engine now refreshes its replica recovery checkpoint every 15 minutes.
+
+Learn more about [Regional Persistent Disk replica recovery checkpoints](https://cloud.google.com/compute/docs/disks/about-regional-persistent-disk#repd-replica-recovery-checkpoint) and [how to use checkpoints to recover a degraded disk](https://cloud.google.com/compute/docs/disks/repd-failover#recover-repd-using-checkpoint).
+
+---
+## 2025-07-22
+
+### Feature
+
+**Preview**: Multi-writer support for Hyperdisk Extreme disks. You can give up to 16 instances, across two zones, simultaneous read-write access to the same disk. For more information, see [Share disks between instances](https://cloud.google.com/compute/docs/disks/sharing-disks-between-vms).
+
+---
 ## 2025-07-21
 
 ### Feature

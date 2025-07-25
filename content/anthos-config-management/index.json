@@ -1,6 +1,40 @@
 {
   "name": "Anthos Config Management",
   "entries": {
+    "2025-07-24": [
+      {
+        "kind": "Changed",
+        "content": "Addressed multiple Common Vulnerabilities and Exposures (CVEs) by updating dependencies.",
+        "summary": {
+          "title": "Dependency Updates",
+          "summary": "Updated dependencies to address CVEs."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated the git-sync image from v4.3.0 to v4.4.2, which fixes an issue that could cause the git-sync container to crash loop. For more information see [git-sync releases](https://github.com/kubernetes/git-sync/releases).",
+        "summary": {
+          "title": "Fixed git-sync image",
+          "summary": "git-sync image updated to v4.4.2 to fix crash loop."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed a regression introduced in 1.21.0 that occasionally caused Config Sync to become stuck when applying [mutation ignored objects](https://cloud.google.com/kubernetes-engine/enterprise/config-sync/docs/concepts/configs#ignoring).",
+        "summary": {
+          "title": "Config Sync Fix",
+          "summary": "Fixed a regression that caused Config Sync to get stuck when applying mutation ignored objects."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed an issue where Config Sync waited longer than intended between retry attempts after failing to sync from Helm and OCI sources.",
+        "summary": {
+          "title": "Config Sync Update",
+          "summary": "Fixed Config Sync retry delays."
+        }
+      }
+    ],
     "2025-06-26": [
       {
         "kind": "Changed",

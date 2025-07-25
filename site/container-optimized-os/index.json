@@ -1,6 +1,304 @@
 {
   "name": "Container Optimized OS",
   "entries": {
+    "2025-07-21": [
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "Short Title",
+          "summary": "This is a short summary."
+        }
+      },
+      {
+        "kind": "cos-109-17800-570-5",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.143](https://cos.googlesource.com/third_party/kernel/+/934359bdc0f1081eed66a6db8dba3ea7c2948d3c ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/17800.570.5/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 109-17800-570-5",
+          "summary": "COS 109 with GPU driver support"
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "This is an [LTS Refresh release](https://cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases).",
+        "summary": {
+          "title": "LTS Refresh Release",
+          "summary": "This is an LTS Refresh release."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated the NVIDIA GPU driver policy for New Feature Branch (NFB) drivers. The LATEST tag has been updated to point to the stable 570.133.20 Production Branch. The 575.57.08 NFB driver remains available for development and testing but must now be selected by its specific version number.",
+        "summary": {
+          "title": "NVIDIA GPU Driver Update",
+          "summary": "Updated NVIDIA GPU driver policy for NFB drivers, with the LATEST tag now pointing to the stable 570.133.20 Production Branch. The 575.57.08 NFB driver is still available for development and testing but requires explicit version selection."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/google-guest-configs to v20250516.00.",
+        "summary": {
+          "title": "Guest config update",
+          "summary": "Guest config update"
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-containers/docker-credential-helpers to v0.9.3.",
+        "summary": {
+          "title": "Docker Credential Helpers Upgrade",
+          "summary": "Upgraded docker-credential-helpers to v0.9.3."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated app-misc/jq to v1.8.1.",
+        "summary": {
+          "title": "jq update",
+          "summary": "Updated jq to v1.8.1"
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-fs/cifs-utils to v7.4.",
+        "summary": {
+          "title": "CIFS utils upgrade",
+          "summary": " CIFS utils upgraded to v7.4"
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-libs/libcap to v2.76.",
+        "summary": {
+          "title": "Fixed: libcap upgrade",
+          "summary": "libcap v2.76 upgrade"
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-db/sqlite to v3.50.1.",
+        "summary": {
+          "title": "sqlite upgrade",
+          "summary": "Upgraded dev-db/sqlite to v3.50.1."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-arch/unzip to v6.0\\_p29.",
+        "summary": {
+          "title": "Unzip upgraded",
+          "summary": "Fixed: Unzip upgrade."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-arch/gzip to v1.14.",
+        "summary": {
+          "title": "gzip upgrade",
+          "summary": "Upgraded app-arch/gzip to v1.14."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed an issue where some workloads could cause a full\nsystem hang when running close to their memory limit.",
+        "summary": {
+          "title": "System Stability Improvement",
+          "summary": "Fixed system hang issue for memory-intensive workloads."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-libs/talloc to v2.4.3.",
+        "summary": {
+          "title": "Talloc upgrade",
+          "summary": "Talloc v2.4.3 is now available."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 812258 -> 812234",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "Runtime sysctl changes: fs.file-max changed from 812258 to 812234."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-103406b in the Linux kernel",
+        "summary": {
+          "title": "Security update for Linux kernel",
+          "summary": "Fixed KCTF-103406b in the Linux kernel"
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "Short Title",
+          "summary": "This is a short summary."
+        }
+      },
+      {
+        "kind": "cos-121-18867-90-97",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.93](https://cos.googlesource.com/third_party/kernel/+/24fc21afff6a88ece2f6e5e3163e54e15fb554b5 ) | v27.5.1 | v2.0.4 | [See List](https://storage.googleapis.com/cos-tools/18867.90.97/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container-Optimized OS Update",
+          "summary": "New Container-Optimized OS release available."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated the NVIDIA GPU driver policy for New Feature Branch (NFB) drivers. The LATEST tag has been updated to point to the stable 570.133.20 Production Branch. The 575.57.08 NFB driver remains available for development and testing but must now be selected by its specific version number. Removed 575.57.08 NFB driver support for NVIDIA\\_GB200 machine.",
+        "summary": {
+          "title": "GPU Driver Policy Update",
+          "summary": "Updated GPU driver policy for NFB drivers. LATEST tag now points to stable 570.133.20. 575.57.08 NFB driver requires specific version selection and no longer supports NVIDIA_GB200."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added ARM support for the Lustre 2.14.0 drivers.",
+        "summary": {
+          "title": "New ARM Support",
+          "summary": "ARM support for Lustre 2.14.0 drivers added."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed an issue where some workloads could cause a full\nsystem hang when running close to their memory limit.",
+        "summary": {
+          "title": "System Hang Issue Fixed",
+          "summary": "Fixed system hang issue."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-6174 and CVE-2024-11584 in cloud-init.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixed CVE-2024-6174 and CVE-2024-11584."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-103406b in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "Fixed KCTF-103406b in the Linux kernel."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811807 -> 811784",
+        "summary": {
+          "title": "Runtime sysctl fs.file-max change",
+          "summary": "Runtime sysctl changes: fs.file-max changed from 811807 to 811784."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "Short Title",
+          "summary": "This is a short summary."
+        }
+      },
+      {
+        "kind": "cos-117-18613-263-75",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.93](https://cos.googlesource.com/third_party/kernel/+/00c059b5e633ba65a380fed13ae9d1d3503be953 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18613.263.75/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS-117-18613-263-75",
+          "summary": "New COS release available."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated the NVIDIA GPU driver policy for New Feature Branch (NFB) drivers. The LATEST tag has been updated to point to the stable 570.133.20 Production Branch. The 575.57.08 NFB driver remains available for development and testing but must now be selected by its specific version number. Removed 575.57.08 NFB driver support for NVIDIA\\_GB200 machine.",
+        "summary": {
+          "title": "NVIDIA GPU Driver Update",
+          "summary": "Updated NVIDIA GPU driver policy for NFB drivers. LATEST tag now points to stable 570.133.20. 575.57.08 NFB driver requires specific version selection and is removed for NVIDIA_GB200."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added ARM support for the Lustre 2.14.0 drivers.",
+        "summary": {
+          "title": "New ARM Support",
+          "summary": "ARM support for Lustre 2.14.0 drivers."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed an issue where some workloads could cause a full\nsystem hang when running close to their memory limit.",
+        "summary": {
+          "title": "System Hang Fix",
+          "summary": "Fixed system hang issue."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-103406b in the Linux kernel.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixed KCTF-103406b in the Linux kernel."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811784 -> 811820",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "Runtime sysctl changes: fs.file-max changed from 811784 to 811820."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "Short Title",
+          "summary": "This is a short summary."
+        }
+      },
+      {
+        "kind": "cos-113-18244-382-65",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.141](https://cos.googlesource.com/third_party/kernel/+/9fee4f41d85c4575865445d7411310b7f9959ab4 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.382.65/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS-113-18244-382-65",
+          "summary": "New COS release available."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated the NVIDIA GPU driver policy for New Feature Branch (NFB) drivers. The LATEST tag has been updated to point to the stable 570.133.20 Production Branch. The 575.57.08 NFB driver remains available for development and testing but must now be selected by its specific version number.",
+        "summary": {
+          "title": "GPU Driver Policy Update",
+          "summary": "Updated GPU driver policy for NFB drivers. LATEST tag now points to stable Production Branch. Specific version needed for NFB driver."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed an issue where some workloads could cause a full\nsystem hang when running close to their memory limit.",
+        "summary": {
+          "title": "System Hang Fix",
+          "summary": "Fixed system hang issue."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-103406b in the Linux kernel.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixed KCTF-103406b in the Linux kernel."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 812031 -> 811983",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "fs.file-max changed from 812031 to 811983."
+        }
+      }
+    ],
     "2025-07-14": [
       {
         "kind": "cos-117-18613-263-66",

@@ -2,9 +2,122 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>Google Cloud: Looker Studio</title>
   <subtitle>Changelog for Google Cloud product: Looker Studio</subtitle>
-  <updated>2025-07-17T00:00:00+00:00</updated>
+  <updated>2025-07-24T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:looker-studio</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/looker-studio/" />
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker-studio:2025-07-24:feature:0</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">**New report canvas sizes**
+
+Two new preset canvas size options are available, letting you control the width and height of your report on the screen. The new options are size A4, available in portrait or landscape orientations.
+
+[Learn more about report and page layout options.](https://cloud.google.com/looker/docs/studio/report-and-page-layout#canvas_size)</content>
+    <summary>New preset canvas sizes for reports.</summary>
+    <title>Feature: Report Canvas Size Options</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker-studio:2025-07-24:feature:1</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">**New alt text field for images**
+
+You can now [add alt text to report images](https://cloud.google.com/looker/docs/studio/add-text-images-lines-and-shapes-to-your-reports#add_images) to make them accessible to screen readers. See the [Web Content Accessibility Guidelines (WCAG) guidelines on alt text](https://www.wcag.com/blog/good-alt-text-bad-alt-text-making-your-content-perceivable/#What_is_alt_text_and_who_does_it_benefit) for more information about writing alt text.</content>
+    <summary>New way to add alt text to images.</summary>
+    <title>Feature: Alt Text for Images</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker-studio:2025-07-24:feature:2</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">**Looker connector enhancements**
+
+Additional [calculated field functions](https://cloud.google.com/looker/docs/studio/limits-of-the-looker-connector) are now available in [Preview](https://cloud.google.com/products#product-launch-stages).</content>
+    <summary>New functions for Looker connector.</summary>
+    <title>Feature: Looker connector enhancements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker-studio:2025-07-24:feature:3</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">**Performance improvement for BigQuery data sources**
+
+Report viewers may notice improved performance when the report uses a BigQuery data source.
+
+The BigQuery connector supports short query optimized mode. In this mode, when BigQuery determines it can finish a query quickly, BigQuery prioritizes returning immediate results instead of creating a BigQuery job. Short query optimized mode may apply in the following situations:
+
+* When the data source uses Viewer's Credentials
+* When the data source uses Owner's Credentials but you are not the credential owner.
+
+There is no change in user experience or report behavior for data source credential owners.</content>
+    <summary>Performance improvements for BigQuery data sources.</summary>
+    <title>Feature: BigQuery Performance Boost</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker-studio:2025-07-24:feature:4</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">**Highlight charts by filter**
+
+The [Applied Filters panel](https://cloud.google.com/looker/docs/studio/about-filter-properties#multiple_filters_on_a_component) now lets you click on a filter to highlight all charts that the filter applies to.</content>
+    <summary>Highlight charts by filter</summary>
+    <title>Feature: Highlight charts by filter</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker-studio:2025-07-24:feature:5</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">**Add descriptions to reports**
+
+You can now add text descriptions to a report. The report search now matches the report title as well as the description.</content>
+    <summary>Add descriptions to reports. Search matches report title and description.</summary>
+    <title>Feature: New feature: Report descriptions</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker-studio:2025-07-24:announcement:6</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">**Partner connection launch update**
+
+The following partner connectors have been added to the [Looker Studio Connector Gallery](https://lookerstudio.google.com/data):
+
+* [Google Ads](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbzSwavmpb_HOJ-mGTQh58_JV1lqbY8tOcvry3mi_kFOESRMIb9UDCTimctyOo9lMBL4SQ) by Detrics
+* [Facebook Insights](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbxEIVPCXZyTPZtOtQPQl0nPfgtEwdKKDFGTt8GYSN2q9aKaTakYIlKf8lqYeyNGGcUm) by Master Metrics
+* [Instagram Insights](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbyrOltbWEyCaf6MLjLwsX_a7ny5xyCbGY4nrm0pyukmPLA9wD63ESClQ3UtETodJSS1) by Master Metrics
+* [Youtube](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbxa0z7PzIBswipUWcFWPN5LRce5Rvb0KbSuR-hN05InreICPCvyso359bGFrG7_063i) by Master Metrics
+* [Google Ads](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbx8LrzHexCTkTBGu5AJntmDe-q8IYWKMxF0DfphW9s6P4YdPh9OHDUk9nGWNqffyCuoPQ) by Master Metrics
+* [Google Analytics 4](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbwZ-OALYuQvZPoMf4Zs3cRFBAgfc-lll8TYKN2qF6WDSpj6PrXqb9gScu2z_k_HOQK4Rg) by Master Metrics
+* [Dashbo](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbx0NZ5e2MMISr6toZCb7PoxooYfIFuDdQwCW4oWnpxjtNfwR80SkV8aAiibLnKlCRTEDA) by Dashbo
+* [Odoo Sign AppiWorks](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbxCH6kb7jGrVV36u6ZBiweYnJVWWKQd7tE1mZu7GVG_Vw6dmot89sL86giHoND-rh0t8g) by Jivrus Technologies
+* [快客-GSC 串接](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycby-SaBW_LVIVAyuI7q1PQhqqKbwcxp0kaCrCYi0Wj3nVlIJFENFiWOQP_MvfCgpFpY) by 黑客數位
+* [IntelliKid Systems](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbznaukKHnRM-AtDjqYNKotj8BCXBZdmlcLZw4cIhy67a1NjaJWQWF7Med9GEDAgDSPG) by IntelliKid Systems LLC
+* [Odoo POS AppiWorks](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbxDTDWkPSwYKH096FJ-XK-KSr23-aEVeyxGeSgSTnpF3P8Rggd3ar5GgLeY0zK8FkQL) by Jivrus Technologies
+* [Google PageSpeed Insights](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbzEvtbGv2c24ZXDnJ55sjQVYfmfvyjJlK-OajreKH_OQVxWq5TGFMahS-O62t76ZBLd) by Supermetrics</content>
+    <summary>New partner connectors are available in the Looker Studio Connector Gallery.</summary>
+    <title>Announcement: Partner Connections Update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

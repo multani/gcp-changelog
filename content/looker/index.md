@@ -1,5 +1,152 @@
 # Looker
 
+## 2025-07-24
+
+### Announcement
+
+**Looker 25.12** is expected to include the following changes, features, and fixes:
+
+* Expected Looker (original) deployment start: **Monday, July 28, 2025**
+* Expected Looker (original) final deployment and download available: **Thursday, August 7, 2025**
+* Expected Looker (Google Cloud core) deployment start: **Monday, July 28, 2025**
+* Expected Looker (Google Cloud core) final deployment: **Wednesday, July 30, 2025**
+
+### Breaking
+
+Because of security concerns, text tiles no longer support the `form` and `input` Markdown elements.
+
+### Feature
+
+The Oracle JDBC driver has been updated to version 19.25.
+
+### Feature
+
+For faster response time for queries in BigQuery, Looker will execute BigQuery queries by using [`jobCreationMode=JOB_CREATION_OPTIONAL`](https://cloud.google.com/bigquery/docs/reference/rest/v2/jobs/query#jobcreationmode). If BigQuery can return immediate results, it will run the query without creating a job, so the record in the Looker query history will have a BigQuery query ID instead of a BigQuery job ID. See the [Understanding query performance metrics](https://cloud.google.com/looker/docs/query-performance-metrics#bigquery_bi_engine_metrics) documentation page for more information about the BigQuery BI Engine metrics.
+
+### Feature
+
+The [Query Concurrency System Activity Explore](https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#query_concurrency) is now available. This Explore can help you identify periods of high load and investigate performance bottlenecks that are related to database connection limits.
+
+### Fixed
+
+Looker 25.12 contains the following accessibility improvements:
+
+* Improved contrast for exit buttons on dialogs
+* Improved contrast for checkbox borders
+
+### Fixed
+
+An issue has been fixed where pull requests could display a different user than the pull request's owner. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the System Activity Query Metrics Explore was not reliably populating with data. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where API users could view a list of users on a Looker instance, even if they didn't have the `see_users` permission. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the response headers from some API calls were not set by Looker. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where exploring from a dashboard tile while editing a dashboard could result in a permissions error, even if the user had permission to view the Explore. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the row limit in an Explore could display a blank field when the row limit was set to 5,000. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where some users were unable to create or edit BigQuery OAuth connections. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where SQL Runner would display a blank page if a user changed the visualization type after pivoting on a dimension. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where some queries to the internal database were unoptimized, affecting instance performance. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where a visualization template could fail to be displayed in the list of templates if the name contained certain unicode characters. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where invalid query killing statements could cause unnecessarily verbose log outputs. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where API users without the `explore` permission could access visualization templates. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where Looker could return a 500 error while retrieving dashboard details if the details contained non-UTF-8 characters. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where forecasting didn't work properly on fields that were based on JSON data. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where Looker didn't properly sanitize slash characters in git references that were used for remote dependencies. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where fields could be sorted differently when a visualization was downloaded or scheduled as a PNG. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the `all_connections` API call could ignore the `fields` parameter. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where a map visualization would display drill links for fields that were hidden from the visualization. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where some System Activity tables were missing the `element_id` field. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where subtotals could be incorrectly formatted in PDF downloads when an HTML parameter was defined on the field and the "Expand tables to show all rows" option was enabled. This feature now performs as expected.
+
+### Fixed
+
+The Looker IDE now checks for subparameters in local and remote dependencies and displays a more informative error if the subparameters are missing. Local dependencies must be defined with a project subparameter, while remote dependencies require both a `url` subparameter and a `ref` subparameter.
+
+### Fixed
+
+An issue has been fixed where editing a merged query in an embedded session would open in a new tab. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where Looker could generate duplicate SQL table references if a PDT referenced a table directly as well as through a join. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where some PDT regeneration events were not tracked in System Activity. This feature now performs as expected.
+
+### Fixed
+
+When an Explore is saved as a new dashboard, Looker will create advanced filter type dashboard filters, rather than drop-down type dashboard filters, for number type parameters.
+
+### Fixed
+
+An issue has been fixed where SAML authentication could fail for a Looker (Google Cloud core) instance. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the Looker Marketplace toggle was not being displayed in Looker core instances for users who were granted Admin permissions with an IAM role. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where installing multiple drivers for the same database type on a customer-hosted instance could cause Looker to display an error. This feature now performs as expected.
+
+---
 ## 2025-06-30
 
 ### Feature

@@ -1476,11 +1476,55 @@
 
 
 <h1 id="looker-studio">Looker Studio</h1>
-<h2 id="2025-07-17">2025-07-17</h2>
+<h2 id="2025-07-24">2025-07-24</h2>
 <h3 id="feature">Feature</h3>
+<p><strong>New report canvas sizes</strong></p>
+<p>Two new preset canvas size options are available, letting you control the width and height of your report on the screen. The new options are size A4, available in portrait or landscape orientations.</p>
+<p><a href="https://cloud.google.com/looker/docs/studio/report-and-page-layout#canvas_size">Learn more about report and page layout options.</a></p>
+<h3 id="feature_1">Feature</h3>
+<p><strong>New alt text field for images</strong></p>
+<p>You can now <a href="https://cloud.google.com/looker/docs/studio/add-text-images-lines-and-shapes-to-your-reports#add_images">add alt text to report images</a> to make them accessible to screen readers. See the <a href="https://www.wcag.com/blog/good-alt-text-bad-alt-text-making-your-content-perceivable/#What_is_alt_text_and_who_does_it_benefit">Web Content Accessibility Guidelines (WCAG) guidelines on alt text</a> for more information about writing alt text.</p>
+<h3 id="feature_2">Feature</h3>
+<p><strong>Looker connector enhancements</strong></p>
+<p>Additional <a href="https://cloud.google.com/looker/docs/studio/limits-of-the-looker-connector">calculated field functions</a> are now available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
+<h3 id="feature_3">Feature</h3>
+<p><strong>Performance improvement for BigQuery data sources</strong></p>
+<p>Report viewers may notice improved performance when the report uses a BigQuery data source.</p>
+<p>The BigQuery connector supports short query optimized mode. In this mode, when BigQuery determines it can finish a query quickly, BigQuery prioritizes returning immediate results instead of creating a BigQuery job. Short query optimized mode may apply in the following situations:</p>
+<ul>
+<li>When the data source uses Viewer's Credentials</li>
+<li>When the data source uses Owner's Credentials but you are not the credential owner.</li>
+</ul>
+<p>There is no change in user experience or report behavior for data source credential owners.</p>
+<h3 id="feature_4">Feature</h3>
+<p><strong>Highlight charts by filter</strong></p>
+<p>The <a href="https://cloud.google.com/looker/docs/studio/about-filter-properties#multiple_filters_on_a_component">Applied Filters panel</a> now lets you click on a filter to highlight all charts that the filter applies to.</p>
+<h3 id="feature_5">Feature</h3>
+<p><strong>Add descriptions to reports</strong></p>
+<p>You can now add text descriptions to a report. The report search now matches the report title as well as the description.</p>
+<h3 id="announcement">Announcement</h3>
+<p><strong>Partner connection launch update</strong></p>
+<p>The following partner connectors have been added to the <a href="https://lookerstudio.google.com/data">Looker Studio Connector Gallery</a>:</p>
+<ul>
+<li><a href="https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbzSwavmpb_HOJ-mGTQh58_JV1lqbY8tOcvry3mi_kFOESRMIb9UDCTimctyOo9lMBL4SQ">Google Ads</a> by Detrics</li>
+<li><a href="https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbxEIVPCXZyTPZtOtQPQl0nPfgtEwdKKDFGTt8GYSN2q9aKaTakYIlKf8lqYeyNGGcUm">Facebook Insights</a> by Master Metrics</li>
+<li><a href="https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbyrOltbWEyCaf6MLjLwsX_a7ny5xyCbGY4nrm0pyukmPLA9wD63ESClQ3UtETodJSS1">Instagram Insights</a> by Master Metrics</li>
+<li><a href="https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbxa0z7PzIBswipUWcFWPN5LRce5Rvb0KbSuR-hN05InreICPCvyso359bGFrG7_063i">Youtube</a> by Master Metrics</li>
+<li><a href="https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbx8LrzHexCTkTBGu5AJntmDe-q8IYWKMxF0DfphW9s6P4YdPh9OHDUk9nGWNqffyCuoPQ">Google Ads</a> by Master Metrics</li>
+<li><a href="https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbwZ-OALYuQvZPoMf4Zs3cRFBAgfc-lll8TYKN2qF6WDSpj6PrXqb9gScu2z_k_HOQK4Rg">Google Analytics 4</a> by Master Metrics</li>
+<li><a href="https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbx0NZ5e2MMISr6toZCb7PoxooYfIFuDdQwCW4oWnpxjtNfwR80SkV8aAiibLnKlCRTEDA">Dashbo</a> by Dashbo</li>
+<li><a href="https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbxCH6kb7jGrVV36u6ZBiweYnJVWWKQd7tE1mZu7GVG_Vw6dmot89sL86giHoND-rh0t8g">Odoo Sign AppiWorks</a> by Jivrus Technologies</li>
+<li><a href="https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycby-SaBW_LVIVAyuI7q1PQhqqKbwcxp0kaCrCYi0Wj3nVlIJFENFiWOQP_MvfCgpFpY">快客-GSC 串接</a> by 黑客數位</li>
+<li><a href="https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbznaukKHnRM-AtDjqYNKotj8BCXBZdmlcLZw4cIhy67a1NjaJWQWF7Med9GEDAgDSPG">IntelliKid Systems</a> by IntelliKid Systems LLC</li>
+<li><a href="https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbxDTDWkPSwYKH096FJ-XK-KSr23-aEVeyxGeSgSTnpF3P8Rggd3ar5GgLeY0zK8FkQL">Odoo POS AppiWorks</a> by Jivrus Technologies</li>
+<li><a href="https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbzEvtbGv2c24ZXDnJ55sjQVYfmfvyjJlK-OajreKH_OQVxWq5TGFMahS-O62t76ZBLd">Google PageSpeed Insights</a> by Supermetrics</li>
+</ul>
+<hr />
+<h2 id="2025-07-17">2025-07-17</h2>
+<h3 id="feature_6">Feature</h3>
 <p><strong>Report abuse</strong></p>
 <p>Looker Studio report viewers can now <a href="https://cloud.google.com/looker/docs/studio/report-abuse">report abusive content</a>. Content is automatically reviewed, and content that is reported as abusive is hidden or deleted.</p>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p><strong>Performance improvement for BigQuery data sources</strong></p>
 <p><strong>Note:</strong> This feature has been delayed and is currently not available. (Release note updated on July 21, 2025.)</p>
 <p>Report viewers may notice improved performance when the report uses a BigQuery data source.</p>
@@ -1492,7 +1536,7 @@
 <p>There is no change in user experience or report behavior for data source credential owners.</p>
 <hr />
 <h2 id="2025-07-10">2025-07-10</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p><strong>New alignment option for Cartesian charts</strong></p>
 <p>The new <strong>Align with grid</strong> setting lets you set the alignment of the chart legend with the position of the chart grid, instead of aligning with the chart title.</p>
 <p>This setting is available for Cartesian charts in reports that <a href="https://cloud.google.com/looker/docs/studio/modern-charts">have modern charts enabled</a>.</p>
@@ -1501,22 +1545,22 @@
 <h3 id="breaking">Breaking</h3>
 <p><strong>Don't display data in comparison metrics when Group others is enabled</strong></p>
 <p>The <strong>Group others</strong> option could display incorrect data when used with <a href="https://cloud.google.com/looker/docs/studio/add-comparison-metrics-and-running-totals#differences_between_running_calculations_and_calculated_fields">comparison metrics</a>. Comparison metric fields now display the string <code>no data</code> when the <strong>Group others</strong> option is enabled on a chart.</p>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p><strong>Looker connector enhancements</strong></p>
 <p>The Looker connector can now connect to a <a href="https://cloud.google.com/looker/docs/looker-core-networking-options#private_ip_connections">private IP (private services access) only</a> Looker (Google Cloud core) instance or to a <a href="https://cloud.google.com/looker/docs/looker-core-networking-options#psc">private IP (Private Service Connect)</a> Looker (Google Cloud core) instance <a href="https://cloud.google.com/looker/docs/looker-core-connect-to-private-ip-lsp-sil">using the Looker instance ID</a>.</p>
 <hr />
 <h2 id="2025-06-18">2025-06-18</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p><strong>Updates to Assets: search API endpoint</strong></p>
 <p>The Assets: search API endpoint now includes a <code>previousPageToken</code> attribute in its response. This token allows API users to paginate forwards and backwards through the result set.</p>
 <hr />
 <h2 id="2025-06-03">2025-06-03</h2>
-<h3 id="announcement">Announcement</h3>
+<h3 id="announcement_1">Announcement</h3>
 <p><strong>Pro feature: Gemini in Looker is enabled by default</strong></p>
 <p>For Looker Studio Pro subscriptions that are created on or after June 3, 2025, <a href="https://cloud.google.com/looker/docs/overview-gemini">Gemini in Looker</a> is enabled automatically. Looker Studio users with the <a href="https://cloud.google.com/looker/docs/studio/enable-and-disable-gemini-in-looker-for-looker-studio#before_you_begin">appropriate permissions</a> can manage enablement on the <strong>Gemini in Looker</strong> page under <strong>User Settings</strong>.</p>
 <hr />
 <h2 id="2025-05-29">2025-05-29</h2>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_11">Feature</h3>
 <p><strong>Pro feature: Code Interpreter is enabled by default</strong></p>
 <p>The <a href="https://cloud.google.com/looker/docs/studio/conversational-analytics-code-interpreter">Code Interpreter</a> for <a href="https://cloud.google.com/looker/docs/studio/conversational-analytics">Conversational Analytics</a> is now enabled by default when the Gemini in Looker and Trusted Tester features settings are enabled for the Google Cloud project that is associated with a Looker Studio Pro subscription. The Code Interpreter in Conversational Analytics is a Preview feature that translates your natural language questions into Python code and executes that code to provide advanced analysis and visualizations.</p>
 <p>Looker Studio users with the <a href="https://cloud.google.com/looker/docs/studio/enable-and-disable-gemini-in-looker-for-looker-studio#before_you_begin">appropriate permissions</a> can manage enablement on the <strong>Gemini in Looker</strong> page under <strong>User Settings</strong>.</p>
@@ -1531,6 +1575,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#looker-studio">Looker Studio</a></li>
+          <li class="nav-item">
+            <a href="#2025-07-24" class="nav-link">2025-07-24</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-07-17" class="nav-link">2025-07-17</a>
           </li>

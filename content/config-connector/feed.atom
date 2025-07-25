@@ -2,9 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>Google Cloud: Config Connector</title>
   <subtitle>Changelog for Google Cloud product: Config Connector</subtitle>
-  <updated>2025-06-10T00:00:00+00:00</updated>
+  <updated>2025-07-14T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:config-connector</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/config-connector/" />
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-07-14:announcement:0</id>
+    <published>2025-07-14T00:00:00+00:00</published>
+    <updated>2025-07-14T00:00:00+00:00</updated>
+    <content type="text/markdown">Config Connector version 1.132.1 is now available.</content>
+    <summary>Config Connector v1.132.1 is out.</summary>
+    <title>Announcement: Announcement</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-07-14:changed:1</id>
+    <published>2025-07-14T00:00:00+00:00</published>
+    <updated>2025-07-14T00:00:00+00:00</updated>
+    <content type="text/markdown">Reconciliation Improvements:
+
+* [SpannerInstance](https://cloud.google.com/config-connector/docs/reference/resource-docs/spanner/spannerinstance)
+  + You can opt-in the direct controller by adding the
+    `alpha.cnrm.cloud.google.com/reconciler: direct` annotation to the
+    `SpannerInstance` resource`.
+  + Direct controller is opt-in if using the following fields:
+    - `spec.labels`
+    - `spec.defaultBackupScheduleType`
+    - `spec.edition`
+    - `spec.autoscalingConfig`</content>
+    <summary>SpannerInstance reconciliation improvements.</summary>
+    <title>Changed: SpannerInstance reconciliation</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -5,9 +5,9 @@
 ### Feature
 
 Application-specific resource attributes are attached to your trace data when
-your App Hub applications use supported {{dynamic\_data.site\_values.cloud\_name}} resources,
+your App Hub applications use supported Google Cloud resources,
 or when you instrument an application with OpenTelemetry and use the
-{{dynamic\_data.site\_values.cloud\_name}} Telemetry endpoint. To learn more, see the following:
+Google Cloud Telemetry endpoint. To learn more, see the following:
 
 * [Application Monitoring overview](https://cloud.google.com/monitoring/docs/about-application-monitoring)
 * [View application telemetry](https://cloud.google.com/monitoring/docs/application-monitoring)

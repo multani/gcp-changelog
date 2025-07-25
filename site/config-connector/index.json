@@ -1,6 +1,24 @@
 {
   "name": "Config Connector",
   "entries": {
+    "2025-07-14": [
+      {
+        "kind": "Announcement",
+        "content": "Config Connector version 1.132.1 is now available.",
+        "summary": {
+          "title": "Announcement",
+          "summary": "Config Connector v1.132.1 is out."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Reconciliation Improvements:\n\n* [SpannerInstance](https://cloud.google.com/config-connector/docs/reference/resource-docs/spanner/spannerinstance)\n  + You can opt-in the direct controller by adding the\n    `alpha.cnrm.cloud.google.com/reconciler: direct` annotation to the\n    `SpannerInstance` resource`.\n  + Direct controller is opt-in if using the following fields:\n    - `spec.labels`\n    - `spec.defaultBackupScheduleType`\n    - `spec.edition`\n    - `spec.autoscalingConfig`",
+        "summary": {
+          "title": "SpannerInstance reconciliation",
+          "summary": "SpannerInstance reconciliation improvements."
+        }
+      }
+    ],
     "2025-06-10": [
       {
         "kind": "Announcement",

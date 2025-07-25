@@ -1,5 +1,24 @@
 # Anthos Config Management
 
+## 2025-07-24
+
+### Changed
+
+Addressed multiple Common Vulnerabilities and Exposures (CVEs) by updating dependencies.
+
+### Fixed
+
+Updated the git-sync image from v4.3.0 to v4.4.2, which fixes an issue that could cause the git-sync container to crash loop. For more information see [git-sync releases](https://github.com/kubernetes/git-sync/releases).
+
+### Fixed
+
+Fixed a regression introduced in 1.21.0 that occasionally caused Config Sync to become stuck when applying [mutation ignored objects](https://cloud.google.com/kubernetes-engine/enterprise/config-sync/docs/concepts/configs#ignoring).
+
+### Fixed
+
+Fixed an issue where Config Sync waited longer than intended between retry attempts after failing to sync from Helm and OCI sources.
+
+---
 ## 2025-06-26
 
 ### Changed

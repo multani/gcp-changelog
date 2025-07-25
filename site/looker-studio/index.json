@@ -1,6 +1,64 @@
 {
   "name": "Looker Studio",
   "entries": {
+    "2025-07-24": [
+      {
+        "kind": "Feature",
+        "content": "**New report canvas sizes**\n\nTwo new preset canvas size options are available, letting you control the width and height of your report on the screen. The new options are size A4, available in portrait or landscape orientations.\n\n[Learn more about report and page layout options.](https://cloud.google.com/looker/docs/studio/report-and-page-layout#canvas_size)",
+        "summary": {
+          "title": "Report Canvas Size Options",
+          "summary": "New preset canvas sizes for reports."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**New alt text field for images**\n\nYou can now [add alt text to report images](https://cloud.google.com/looker/docs/studio/add-text-images-lines-and-shapes-to-your-reports#add_images) to make them accessible to screen readers. See the [Web Content Accessibility Guidelines (WCAG) guidelines on alt text](https://www.wcag.com/blog/good-alt-text-bad-alt-text-making-your-content-perceivable/#What_is_alt_text_and_who_does_it_benefit) for more information about writing alt text.",
+        "summary": {
+          "title": "Alt Text for Images",
+          "summary": "New way to add alt text to images."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Looker connector enhancements**\n\nAdditional [calculated field functions](https://cloud.google.com/looker/docs/studio/limits-of-the-looker-connector) are now available in [Preview](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "Looker connector enhancements",
+          "summary": "New functions for Looker connector."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Performance improvement for BigQuery data sources**\n\nReport viewers may notice improved performance when the report uses a BigQuery data source.\n\nThe BigQuery connector supports short query optimized mode. In this mode, when BigQuery determines it can finish a query quickly, BigQuery prioritizes returning immediate results instead of creating a BigQuery job. Short query optimized mode may apply in the following situations:\n\n* When the data source uses Viewer's Credentials\n* When the data source uses Owner's Credentials but you are not the credential owner.\n\nThere is no change in user experience or report behavior for data source credential owners.",
+        "summary": {
+          "title": "BigQuery Performance Boost",
+          "summary": "Performance improvements for BigQuery data sources."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Highlight charts by filter**\n\nThe [Applied Filters panel](https://cloud.google.com/looker/docs/studio/about-filter-properties#multiple_filters_on_a_component) now lets you click on a filter to highlight all charts that the filter applies to.",
+        "summary": {
+          "title": "Highlight charts by filter",
+          "summary": "Highlight charts by filter"
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Add descriptions to reports**\n\nYou can now add text descriptions to a report. The report search now matches the report title as well as the description.",
+        "summary": {
+          "title": "New feature: Report descriptions",
+          "summary": "Add descriptions to reports. Search matches report title and description."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "**Partner connection launch update**\n\nThe following partner connectors have been added to the [Looker Studio Connector Gallery](https://lookerstudio.google.com/data):\n\n* [Google Ads](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbzSwavmpb_HOJ-mGTQh58_JV1lqbY8tOcvry3mi_kFOESRMIb9UDCTimctyOo9lMBL4SQ) by Detrics\n* [Facebook Insights](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbxEIVPCXZyTPZtOtQPQl0nPfgtEwdKKDFGTt8GYSN2q9aKaTakYIlKf8lqYeyNGGcUm) by Master Metrics\n* [Instagram Insights](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbyrOltbWEyCaf6MLjLwsX_a7ny5xyCbGY4nrm0pyukmPLA9wD63ESClQ3UtETodJSS1) by Master Metrics\n* [Youtube](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbxa0z7PzIBswipUWcFWPN5LRce5Rvb0KbSuR-hN05InreICPCvyso359bGFrG7_063i) by Master Metrics\n* [Google Ads](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbx8LrzHexCTkTBGu5AJntmDe-q8IYWKMxF0DfphW9s6P4YdPh9OHDUk9nGWNqffyCuoPQ) by Master Metrics\n* [Google Analytics 4](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbwZ-OALYuQvZPoMf4Zs3cRFBAgfc-lll8TYKN2qF6WDSpj6PrXqb9gScu2z_k_HOQK4Rg) by Master Metrics\n* [Dashbo](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbx0NZ5e2MMISr6toZCb7PoxooYfIFuDdQwCW4oWnpxjtNfwR80SkV8aAiibLnKlCRTEDA) by Dashbo\n* [Odoo Sign AppiWorks](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbxCH6kb7jGrVV36u6ZBiweYnJVWWKQd7tE1mZu7GVG_Vw6dmot89sL86giHoND-rh0t8g) by Jivrus Technologies\n* [快客-GSC 串接](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycby-SaBW_LVIVAyuI7q1PQhqqKbwcxp0kaCrCYi0Wj3nVlIJFENFiWOQP_MvfCgpFpY) by 黑客數位\n* [IntelliKid Systems](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbznaukKHnRM-AtDjqYNKotj8BCXBZdmlcLZw4cIhy67a1NjaJWQWF7Med9GEDAgDSPG) by IntelliKid Systems LLC\n* [Odoo POS AppiWorks](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbxDTDWkPSwYKH096FJ-XK-KSr23-aEVeyxGeSgSTnpF3P8Rggd3ar5GgLeY0zK8FkQL) by Jivrus Technologies\n* [Google PageSpeed Insights](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbzEvtbGv2c24ZXDnJ55sjQVYfmfvyjJlK-OajreKH_OQVxWq5TGFMahS-O62t76ZBLd) by Supermetrics",
+        "summary": {
+          "title": "Partner Connections Update",
+          "summary": "New partner connectors are available in the Looker Studio Connector Gallery."
+        }
+      }
+    ],
     "2025-07-17": [
       {
         "kind": "Feature",

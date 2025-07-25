@@ -1,5 +1,180 @@
 # Container Optimized OS
 
+## 2025-07-21
+
+### Changed
+
+
+
+### cos-109-17800-570-5
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.143](https://cos.googlesource.com/third_party/kernel/+/934359bdc0f1081eed66a6db8dba3ea7c2948d3c ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/17800.570.5/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This is an [LTS Refresh release](https://cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases).
+
+### Changed
+
+Updated the NVIDIA GPU driver policy for New Feature Branch (NFB) drivers. The LATEST tag has been updated to point to the stable 570.133.20 Production Branch. The 575.57.08 NFB driver remains available for development and testing but must now be selected by its specific version number.
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20250516.00.
+
+### Fixed
+
+Upgraded app-containers/docker-credential-helpers to v0.9.3.
+
+### Fixed
+
+Updated app-misc/jq to v1.8.1.
+
+### Fixed
+
+Upgraded net-fs/cifs-utils to v7.4.
+
+### Fixed
+
+Upgraded sys-libs/libcap to v2.76.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.50.1.
+
+### Fixed
+
+Upgraded app-arch/unzip to v6.0\_p29.
+
+### Fixed
+
+Upgraded app-arch/gzip to v1.14.
+
+### Fixed
+
+Fixed an issue where some workloads could cause a full
+system hang when running close to their memory limit.
+
+### Fixed
+
+Upgraded sys-libs/talloc to v2.4.3.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812258 -> 812234
+
+### Security
+
+Fixed KCTF-103406b in the Linux kernel
+
+### Changed
+
+
+
+### cos-121-18867-90-97
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.93](https://cos.googlesource.com/third_party/kernel/+/24fc21afff6a88ece2f6e5e3163e54e15fb554b5 ) | v27.5.1 | v2.0.4 | [See List](https://storage.googleapis.com/cos-tools/18867.90.97/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated the NVIDIA GPU driver policy for New Feature Branch (NFB) drivers. The LATEST tag has been updated to point to the stable 570.133.20 Production Branch. The 575.57.08 NFB driver remains available for development and testing but must now be selected by its specific version number. Removed 575.57.08 NFB driver support for NVIDIA\_GB200 machine.
+
+### Feature
+
+Added ARM support for the Lustre 2.14.0 drivers.
+
+### Fixed
+
+Fixed an issue where some workloads could cause a full
+system hang when running close to their memory limit.
+
+### Security
+
+Fixed CVE-2024-6174 and CVE-2024-11584 in cloud-init.
+
+### Security
+
+Fixed KCTF-103406b in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811807 -> 811784
+
+### Changed
+
+
+
+### cos-117-18613-263-75
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.93](https://cos.googlesource.com/third_party/kernel/+/00c059b5e633ba65a380fed13ae9d1d3503be953 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18613.263.75/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated the NVIDIA GPU driver policy for New Feature Branch (NFB) drivers. The LATEST tag has been updated to point to the stable 570.133.20 Production Branch. The 575.57.08 NFB driver remains available for development and testing but must now be selected by its specific version number. Removed 575.57.08 NFB driver support for NVIDIA\_GB200 machine.
+
+### Feature
+
+Added ARM support for the Lustre 2.14.0 drivers.
+
+### Fixed
+
+Fixed an issue where some workloads could cause a full
+system hang when running close to their memory limit.
+
+### Security
+
+Fixed KCTF-103406b in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811784 -> 811820
+
+### Changed
+
+
+
+### cos-113-18244-382-65
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.141](https://cos.googlesource.com/third_party/kernel/+/9fee4f41d85c4575865445d7411310b7f9959ab4 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.382.65/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated the NVIDIA GPU driver policy for New Feature Branch (NFB) drivers. The LATEST tag has been updated to point to the stable 570.133.20 Production Branch. The 575.57.08 NFB driver remains available for development and testing but must now be selected by its specific version number.
+
+### Fixed
+
+Fixed an issue where some workloads could cause a full
+system hang when running close to their memory limit.
+
+### Security
+
+Fixed KCTF-103406b in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812031 -> 811983
+
+---
 ## 2025-07-14
 
 ### cos-117-18613-263-66

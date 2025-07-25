@@ -1,5 +1,33 @@
 # Gemini Code Assist
 
+## 2025-07-24
+
+### Feature
+
+
+
+### Stop in-progress chat responses with IntelliJ
+
+#### IntelliJ Gemini Code Assist `1.22.1`
+
+You can
+[stop chat responses](/gemini/docs/codeassist/chat-gemini#stop_in-progress_chat)
+with IntelliJ Gemini Code Assist `1.22.1`. Undesired long running or errant chat
+responses are immediately halted.
+
+### Announcement
+
+
+
+### Thinking tokens
+
+You'll see thinking insights into Gemini's thought process before IntelliJ
+Gemini Code Assist produces a response, to show you that Gemini is actively
+working on your request.
+
+![Thinking tokens in IntelliJ Code Gemini Code Assist.](/gemini/images/release-notes-images/intellij-thinking-tokens.png)
+
+---
 ## 2025-07-18
 
 ### Improved code completion speed

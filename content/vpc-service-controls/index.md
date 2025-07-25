@@ -1,5 +1,14 @@
 # VPC Service Controls
 
+## 2025-07-24
+
+### Feature
+
+[Preview stage](https://cloud.google.com/products#product-launch-stages) support for the following integration:
+
+* [License Manager](https://cloud.google.com/vpc-service-controls/docs/supported-products#table_license_manager)
+
+---
 ## 2025-07-14
 
 ### Feature

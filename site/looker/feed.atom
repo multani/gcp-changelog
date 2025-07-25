@@ -2,9 +2,391 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>Google Cloud: Looker</title>
   <subtitle>Changelog for Google Cloud product: Looker</subtitle>
-  <updated>2025-06-30T00:00:00+00:00</updated>
+  <updated>2025-07-24T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:looker</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/looker/" />
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:announcement:0</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">**Looker 25.12** is expected to include the following changes, features, and fixes:
+
+* Expected Looker (original) deployment start: **Monday, July 28, 2025**
+* Expected Looker (original) final deployment and download available: **Thursday, August 7, 2025**
+* Expected Looker (Google Cloud core) deployment start: **Monday, July 28, 2025**
+* Expected Looker (Google Cloud core) final deployment: **Wednesday, July 30, 2025**</content>
+    <summary>Looker 25.12 Release</summary>
+    <title>Announcement: Looker 25.12 Release</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:breaking:1</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">Because of security concerns, text tiles no longer support the `form` and `input` Markdown elements.</content>
+    <summary>Text tiles no longer support form and input Markdown elements due to security concerns.</summary>
+    <title>Breaking: Breaking News</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:feature:2</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">The Oracle JDBC driver has been updated to version 19.25.</content>
+    <summary>Oracle JDBC driver updated.</summary>
+    <title>Feature: Oracle JDBC Driver Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:feature:3</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">For faster response time for queries in BigQuery, Looker will execute BigQuery queries by using [`jobCreationMode=JOB_CREATION_OPTIONAL`](https://cloud.google.com/bigquery/docs/reference/rest/v2/jobs/query#jobcreationmode). If BigQuery can return immediate results, it will run the query without creating a job, so the record in the Looker query history will have a BigQuery query ID instead of a BigQuery job ID. See the [Understanding query performance metrics](https://cloud.google.com/looker/docs/query-performance-metrics#bigquery_bi_engine_metrics) documentation page for more information about the BigQuery BI Engine metrics.</content>
+    <summary>Looker now uses an improved method for running BigQuery queries, leading to faster response times.</summary>
+    <title>Feature: Faster BigQuery Queries in Looker</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:feature:4</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">The [Query Concurrency System Activity Explore](https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#query_concurrency) is now available. This Explore can help you identify periods of high load and investigate performance bottlenecks that are related to database connection limits.</content>
+    <summary>Identify high load periods and investigate performance bottlenecks related to database connection limits.</summary>
+    <title>Feature: New Query Concurrency System Activity Explore Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:5</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">Looker 25.12 contains the following accessibility improvements:
+
+* Improved contrast for exit buttons on dialogs
+* Improved contrast for checkbox borders</content>
+    <summary>Accessibility improvements in Looker 25.12</summary>
+    <title>Fixed: Looker 25.12 Accessibility Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:6</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where pull requests could display a different user than the pull request's owner. This feature now performs as expected.</content>
+    <summary>Pull requests now display the correct owner.</summary>
+    <title>Fixed: Fixed: Pull Request Owner Display Issue</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:7</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where the System Activity Query Metrics Explore was not reliably populating with data. This feature now performs as expected.</content>
+    <summary>System Activity Query Metrics Explore data population issue fixed.</summary>
+    <title>Fixed: Fixed System Activity Query Metrics Explore</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:8</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where API users could view a list of users on a Looker instance, even if they didn't have the `see_users` permission. This feature now performs as expected.</content>
+    <summary>API users can now only view users if they have the `see_users` permission.</summary>
+    <title>Fixed: Fixed: API user permissions</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:9</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where the response headers from some API calls were not set by Looker. This feature now performs as expected.</content>
+    <summary>Looker API response headers are now correctly set.</summary>
+    <title>Fixed: Looker API Header Fix</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:10</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where exploring from a dashboard tile while editing a dashboard could result in a permissions error, even if the user had permission to view the Explore. This feature now performs as expected.</content>
+    <summary>Permissions error fixed when exploring from dashboard tile.</summary>
+    <title>Fixed: Fixed: Dashboard tile exploration error</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:11</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where the row limit in an Explore could display a blank field when the row limit was set to 5,000. This feature now performs as expected.</content>
+    <summary>Row limit in explore now displays correctly.</summary>
+    <title>Fixed: Fixed: Explore Row Limit Issue</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:12</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where some users were unable to create or edit BigQuery OAuth connections. This feature now performs as expected.</content>
+    <summary>Fixed an issue with BigQuery OAuth connections.</summary>
+    <title>Fixed: BigQuery OAuth Connection Issue Fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:13</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where SQL Runner would display a blank page if a user changed the visualization type after pivoting on a dimension. This feature now performs as expected.</content>
+    <summary>SQL Runner fixed blank page issue after visualization change.</summary>
+    <title>Fixed: Bug Fix</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:14</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where some queries to the internal database were unoptimized, affecting instance performance. This feature now performs as expected.</content>
+    <summary>Internal database queries optimized.</summary>
+    <title>Fixed: Fixed: Instance performance improved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:15</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where a visualization template could fail to be displayed in the list of templates if the name contained certain unicode characters. This feature now performs as expected.</content>
+    <summary>Visualization template display issue fixed.</summary>
+    <title>Fixed: Fixed: Visualization template issue</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:16</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where invalid query killing statements could cause unnecessarily verbose log outputs. This feature now performs as expected.</content>
+    <summary>Invalid query killing statements no longer produce verbose logs.</summary>
+    <title>Fixed: Fixed verbose logs</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:17</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where API users without the `explore` permission could access visualization templates. This feature now performs as expected.</content>
+    <summary>API users without explore permission can no longer access visualization templates.</summary>
+    <title>Fixed: Fixed: Visualization template access</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:18</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where Looker could return a 500 error while retrieving dashboard details if the details contained non-UTF-8 characters. This feature now performs as expected.</content>
+    <summary>Looker dashboard error fixed.</summary>
+    <title>Fixed: Looker error fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:19</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where forecasting didn't work properly on fields that were based on JSON data. This feature now performs as expected.</content>
+    <summary>Forecasting on JSON-based fields now works correctly.</summary>
+    <title>Fixed: Forecasting Fix</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:20</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where Looker didn't properly sanitize slash characters in git references that were used for remote dependencies. This feature now performs as expected.</content>
+    <summary>Looker no longer has issues with git references.</summary>
+    <title>Fixed: Fixed Git Reference Issue</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:21</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where fields could be sorted differently when a visualization was downloaded or scheduled as a PNG. This feature now performs as expected.</content>
+    <summary>Fields are now sorted correctly in downloaded PNGs.</summary>
+    <title>Fixed: Fixed: Visualization Sort Order</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:22</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where the `all_connections` API call could ignore the `fields` parameter. This feature now performs as expected.</content>
+    <summary>The `all_connections` API call now correctly handles the `fields` parameter.</summary>
+    <title>Fixed: API Call Fix</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:23</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where a map visualization would display drill links for fields that were hidden from the visualization. This feature now performs as expected.</content>
+    <summary>Map visualization drill links fixed.</summary>
+    <title>Fixed: Fixed: Map visualization drill links</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:24</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where some System Activity tables were missing the `element_id` field. This feature now performs as expected.</content>
+    <summary>System Activity tables missing element_id field fixed.</summary>
+    <title>Fixed: Fixed: System Activity Tables</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:25</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where subtotals could be incorrectly formatted in PDF downloads when an HTML parameter was defined on the field and the "Expand tables to show all rows" option was enabled. This feature now performs as expected.</content>
+    <summary>Subtotals formatting in PDF downloads has been fixed when HTML parameters are used with row expansion enabled.</summary>
+    <title>Fixed: Formatting Issue Resolved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:26</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">The Looker IDE now checks for subparameters in local and remote dependencies and displays a more informative error if the subparameters are missing. Local dependencies must be defined with a project subparameter, while remote dependencies require both a `url` subparameter and a `ref` subparameter.</content>
+    <summary>IDE now checks for subparameters in local and remote dependencies. Local dependencies require a project subparameter, while remote dependencies need both url and ref subparameters for more informative error messages.</summary>
+    <title>Fixed: IDE dependency checks improved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:27</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where editing a merged query in an embedded session would open in a new tab. This feature now performs as expected.</content>
+    <summary>Editing a merged query in an embedded session now opens in a new tab as expected.</summary>
+    <title>Fixed: Bug Fix for Merged Query Editing</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:28</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where Looker could generate duplicate SQL table references if a PDT referenced a table directly as well as through a join. This feature now performs as expected.</content>
+    <summary>Looker no longer generates duplicate SQL table references when a PDT references a table directly as well as through a join.</summary>
+    <title>Fixed: Fixed duplicate SQL references in Looker</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:29</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where some PDT regeneration events were not tracked in System Activity. This feature now performs as expected.</content>
+    <summary>PDT regeneration events were not tracked in System Activity.</summary>
+    <title>Fixed: Fixed PDT regeneration tracking</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:30</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">When an Explore is saved as a new dashboard, Looker will create advanced filter type dashboard filters, rather than drop-down type dashboard filters, for number type parameters.</content>
+    <summary>Looker now creates advanced filters for number parameters when saving an Explore as a dashboard.</summary>
+    <title>Fixed: Looker dashboard filter update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:31</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where SAML authentication could fail for a Looker (Google Cloud core) instance. This feature now performs as expected.</content>
+    <summary>SAML authentication issue fixed.</summary>
+    <title>Fixed: SAML authentication fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:32</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where the Looker Marketplace toggle was not being displayed in Looker core instances for users who were granted Admin permissions with an IAM role. This feature now performs as expected.</content>
+    <summary>Looker Marketplace toggle now displayed correctly for IAM admins.</summary>
+    <title>Fixed: Looker Marketplace Fix</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:33</id>
+    <published>2025-07-24T00:00:00+00:00</published>
+    <updated>2025-07-24T00:00:00+00:00</updated>
+    <content type="text/markdown">An issue has been fixed where installing multiple drivers for the same database type on a customer-hosted instance could cause Looker to display an error. This feature now performs as expected.</content>
+    <summary>An issue with installing multiple drivers for the same database type on a customer-hosted instance has been fixed.</summary>
+    <title>Fixed: Fixed driver installation issue</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

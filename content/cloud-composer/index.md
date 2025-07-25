@@ -1,5 +1,13 @@
 # Cloud Composer
 
+## 2025-07-24
+
+### Feature
+
+[Web server restarting](https://cloud.google.com/composer/docs/composer-3/access-airflow-web-interface#restarting)
+is is now generally available (GA) in Cloud Composer 2 and Cloud Composer 3.
+
+---
 ## 2025-07-23
 
 ### Announcement

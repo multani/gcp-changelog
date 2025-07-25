@@ -49,9 +49,9 @@ def parse_atom_feed(feed: str) -> models.Index:
 
 
 def parse_single_date(content: str, date: date) -> Generator[models.ProductChangelog]:
-    page = bs4.BeautifulSoup(content, "html.parser")
+    page = bs4.BeautifulSoup(content, "lxml")
 
-    products = page.findAll("h2")
+    products = page.find_all("h2")
 
     for product in products:
         entries: list[models.ChangelogEntry] = []

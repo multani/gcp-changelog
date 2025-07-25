@@ -1,6 +1,8 @@
 import datetime
 from typing import Iterator
-from xml.etree import ElementTree as etree
+
+import markdown
+from lxml import etree
 
 from .models import ProductChangelog
 
@@ -11,7 +13,7 @@ def date_to_datetime(d: datetime.date) -> str:
     return dt.isoformat()
 
 
-def build_feed(changelog: ProductChangelog) -> etree.ElementTree:
+def build_feed(changelog: ProductChangelog) -> etree._ElementTree:
     attributes = {
         "xmlns": "http://www.w3.org/2005/Atom",
     }
@@ -24,7 +26,7 @@ def build_feed(changelog: ProductChangelog) -> etree.ElementTree:
     return etree.ElementTree(feed)
 
 
-def build_metadata(changelog: ProductChangelog) -> Iterator[etree.Element]:
+def build_metadata(changelog: ProductChangelog) -> Iterator[etree._Element]:
     last_date = max(changelog.entries.keys())
 
     fields = {
@@ -48,7 +50,7 @@ def build_metadata(changelog: ProductChangelog) -> Iterator[etree.Element]:
     yield element
 
 
-def build_entries(product_changelog: ProductChangelog) -> Iterator[etree.Element]:
+def build_entries(product_changelog: ProductChangelog) -> Iterator[etree._Element]:
     for date, changelog_entries in product_changelog.entries.items():
         for i, changelog in enumerate(changelog_entries):
             elements = []
@@ -76,8 +78,8 @@ def build_entries(product_changelog: ProductChangelog) -> Iterator[etree.Element
             elements.append(updated)
 
             content = etree.Element("content")
-            content.set("type", "text/markdown")
-            content.text = changelog.content
+            content.set("type", "html")
+            content.text = etree.CDATA(markdown.markdown(changelog.content))
             elements.append(content)
 
             if changelog.summary is not None:

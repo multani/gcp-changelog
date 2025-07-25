@@ -4,7 +4,7 @@
   <subtitle>Changelog for Google Cloud product: Looker</subtitle>
   <updated>2025-07-24T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:looker</id>
-  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/looker/" />
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/looker/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -12,12 +12,13 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:announcement:0</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">**Looker 25.12** is expected to include the following changes, features, and fixes:
-
-* Expected Looker (original) deployment start: **Monday, July 28, 2025**
-* Expected Looker (original) final deployment and download available: **Thursday, August 7, 2025**
-* Expected Looker (Google Cloud core) deployment start: **Monday, July 28, 2025**
-* Expected Looker (Google Cloud core) final deployment: **Wednesday, July 30, 2025**</content>
+    <content type="html"><![CDATA[<p><strong>Looker 25.12</strong> is expected to include the following changes, features, and fixes:</p>
+<ul>
+<li>Expected Looker (original) deployment start: <strong>Monday, July 28, 2025</strong></li>
+<li>Expected Looker (original) final deployment and download available: <strong>Thursday, August 7, 2025</strong></li>
+<li>Expected Looker (Google Cloud core) deployment start: <strong>Monday, July 28, 2025</strong></li>
+<li>Expected Looker (Google Cloud core) final deployment: <strong>Wednesday, July 30, 2025</strong></li>
+</ul>]]></content>
     <summary>Looker 25.12 Release</summary>
     <title>Announcement: Looker 25.12 Release</title>
   </entry>
@@ -28,7 +29,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:breaking:1</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">Because of security concerns, text tiles no longer support the `form` and `input` Markdown elements.</content>
+    <content type="html"><![CDATA[<p>Because of security concerns, text tiles no longer support the <code>form</code> and <code>input</code> Markdown elements.</p>]]></content>
     <summary>Text tiles no longer support form and input Markdown elements due to security concerns.</summary>
     <title>Breaking: Breaking News</title>
   </entry>
@@ -39,7 +40,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:feature:2</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">The Oracle JDBC driver has been updated to version 19.25.</content>
+    <content type="html"><![CDATA[<p>The Oracle JDBC driver has been updated to version 19.25.</p>]]></content>
     <summary>Oracle JDBC driver updated.</summary>
     <title>Feature: Oracle JDBC Driver Update</title>
   </entry>
@@ -50,7 +51,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:feature:3</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">For faster response time for queries in BigQuery, Looker will execute BigQuery queries by using [`jobCreationMode=JOB_CREATION_OPTIONAL`](https://cloud.google.com/bigquery/docs/reference/rest/v2/jobs/query#jobcreationmode). If BigQuery can return immediate results, it will run the query without creating a job, so the record in the Looker query history will have a BigQuery query ID instead of a BigQuery job ID. See the [Understanding query performance metrics](https://cloud.google.com/looker/docs/query-performance-metrics#bigquery_bi_engine_metrics) documentation page for more information about the BigQuery BI Engine metrics.</content>
+    <content type="html"><![CDATA[<p>For faster response time for queries in BigQuery, Looker will execute BigQuery queries by using <a href="https://cloud.google.com/bigquery/docs/reference/rest/v2/jobs/query#jobcreationmode"><code>jobCreationMode=JOB_CREATION_OPTIONAL</code></a>. If BigQuery can return immediate results, it will run the query without creating a job, so the record in the Looker query history will have a BigQuery query ID instead of a BigQuery job ID. See the <a href="https://cloud.google.com/looker/docs/query-performance-metrics#bigquery_bi_engine_metrics">Understanding query performance metrics</a> documentation page for more information about the BigQuery BI Engine metrics.</p>]]></content>
     <summary>Looker now uses an improved method for running BigQuery queries, leading to faster response times.</summary>
     <title>Feature: Faster BigQuery Queries in Looker</title>
   </entry>
@@ -61,7 +62,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:feature:4</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">The [Query Concurrency System Activity Explore](https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#query_concurrency) is now available. This Explore can help you identify periods of high load and investigate performance bottlenecks that are related to database connection limits.</content>
+    <content type="html"><![CDATA[<p>The <a href="https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#query_concurrency">Query Concurrency System Activity Explore</a> is now available. This Explore can help you identify periods of high load and investigate performance bottlenecks that are related to database connection limits.</p>]]></content>
     <summary>Identify high load periods and investigate performance bottlenecks related to database connection limits.</summary>
     <title>Feature: New Query Concurrency System Activity Explore Available</title>
   </entry>
@@ -72,10 +73,11 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:5</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">Looker 25.12 contains the following accessibility improvements:
-
-* Improved contrast for exit buttons on dialogs
-* Improved contrast for checkbox borders</content>
+    <content type="html"><![CDATA[<p>Looker 25.12 contains the following accessibility improvements:</p>
+<ul>
+<li>Improved contrast for exit buttons on dialogs</li>
+<li>Improved contrast for checkbox borders</li>
+</ul>]]></content>
     <summary>Accessibility improvements in Looker 25.12</summary>
     <title>Fixed: Looker 25.12 Accessibility Update</title>
   </entry>
@@ -86,7 +88,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:6</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where pull requests could display a different user than the pull request's owner. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where pull requests could display a different user than the pull request's owner. This feature now performs as expected.</p>]]></content>
     <summary>Pull requests now display the correct owner.</summary>
     <title>Fixed: Fixed: Pull Request Owner Display Issue</title>
   </entry>
@@ -97,7 +99,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:7</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where the System Activity Query Metrics Explore was not reliably populating with data. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the System Activity Query Metrics Explore was not reliably populating with data. This feature now performs as expected.</p>]]></content>
     <summary>System Activity Query Metrics Explore data population issue fixed.</summary>
     <title>Fixed: Fixed System Activity Query Metrics Explore</title>
   </entry>
@@ -108,7 +110,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:8</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where API users could view a list of users on a Looker instance, even if they didn't have the `see_users` permission. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where API users could view a list of users on a Looker instance, even if they didn't have the <code>see_users</code> permission. This feature now performs as expected.</p>]]></content>
     <summary>API users can now only view users if they have the `see_users` permission.</summary>
     <title>Fixed: Fixed: API user permissions</title>
   </entry>
@@ -119,7 +121,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:9</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where the response headers from some API calls were not set by Looker. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the response headers from some API calls were not set by Looker. This feature now performs as expected.</p>]]></content>
     <summary>Looker API response headers are now correctly set.</summary>
     <title>Fixed: Looker API Header Fix</title>
   </entry>
@@ -130,7 +132,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:10</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where exploring from a dashboard tile while editing a dashboard could result in a permissions error, even if the user had permission to view the Explore. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where exploring from a dashboard tile while editing a dashboard could result in a permissions error, even if the user had permission to view the Explore. This feature now performs as expected.</p>]]></content>
     <summary>Permissions error fixed when exploring from dashboard tile.</summary>
     <title>Fixed: Fixed: Dashboard tile exploration error</title>
   </entry>
@@ -141,7 +143,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:11</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where the row limit in an Explore could display a blank field when the row limit was set to 5,000. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the row limit in an Explore could display a blank field when the row limit was set to 5,000. This feature now performs as expected.</p>]]></content>
     <summary>Row limit in explore now displays correctly.</summary>
     <title>Fixed: Fixed: Explore Row Limit Issue</title>
   </entry>
@@ -152,7 +154,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:12</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where some users were unable to create or edit BigQuery OAuth connections. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where some users were unable to create or edit BigQuery OAuth connections. This feature now performs as expected.</p>]]></content>
     <summary>Fixed an issue with BigQuery OAuth connections.</summary>
     <title>Fixed: BigQuery OAuth Connection Issue Fixed</title>
   </entry>
@@ -163,7 +165,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:13</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where SQL Runner would display a blank page if a user changed the visualization type after pivoting on a dimension. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where SQL Runner would display a blank page if a user changed the visualization type after pivoting on a dimension. This feature now performs as expected.</p>]]></content>
     <summary>SQL Runner fixed blank page issue after visualization change.</summary>
     <title>Fixed: Bug Fix</title>
   </entry>
@@ -174,7 +176,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:14</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where some queries to the internal database were unoptimized, affecting instance performance. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where some queries to the internal database were unoptimized, affecting instance performance. This feature now performs as expected.</p>]]></content>
     <summary>Internal database queries optimized.</summary>
     <title>Fixed: Fixed: Instance performance improved</title>
   </entry>
@@ -185,7 +187,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:15</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where a visualization template could fail to be displayed in the list of templates if the name contained certain unicode characters. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where a visualization template could fail to be displayed in the list of templates if the name contained certain unicode characters. This feature now performs as expected.</p>]]></content>
     <summary>Visualization template display issue fixed.</summary>
     <title>Fixed: Fixed: Visualization template issue</title>
   </entry>
@@ -196,7 +198,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:16</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where invalid query killing statements could cause unnecessarily verbose log outputs. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where invalid query killing statements could cause unnecessarily verbose log outputs. This feature now performs as expected.</p>]]></content>
     <summary>Invalid query killing statements no longer produce verbose logs.</summary>
     <title>Fixed: Fixed verbose logs</title>
   </entry>
@@ -207,7 +209,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:17</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where API users without the `explore` permission could access visualization templates. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where API users without the <code>explore</code> permission could access visualization templates. This feature now performs as expected.</p>]]></content>
     <summary>API users without explore permission can no longer access visualization templates.</summary>
     <title>Fixed: Fixed: Visualization template access</title>
   </entry>
@@ -218,7 +220,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:18</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where Looker could return a 500 error while retrieving dashboard details if the details contained non-UTF-8 characters. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where Looker could return a 500 error while retrieving dashboard details if the details contained non-UTF-8 characters. This feature now performs as expected.</p>]]></content>
     <summary>Looker dashboard error fixed.</summary>
     <title>Fixed: Looker error fixed</title>
   </entry>
@@ -229,7 +231,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:19</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where forecasting didn't work properly on fields that were based on JSON data. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where forecasting didn't work properly on fields that were based on JSON data. This feature now performs as expected.</p>]]></content>
     <summary>Forecasting on JSON-based fields now works correctly.</summary>
     <title>Fixed: Forecasting Fix</title>
   </entry>
@@ -240,7 +242,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:20</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where Looker didn't properly sanitize slash characters in git references that were used for remote dependencies. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where Looker didn't properly sanitize slash characters in git references that were used for remote dependencies. This feature now performs as expected.</p>]]></content>
     <summary>Looker no longer has issues with git references.</summary>
     <title>Fixed: Fixed Git Reference Issue</title>
   </entry>
@@ -251,7 +253,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:21</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where fields could be sorted differently when a visualization was downloaded or scheduled as a PNG. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where fields could be sorted differently when a visualization was downloaded or scheduled as a PNG. This feature now performs as expected.</p>]]></content>
     <summary>Fields are now sorted correctly in downloaded PNGs.</summary>
     <title>Fixed: Fixed: Visualization Sort Order</title>
   </entry>
@@ -262,7 +264,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:22</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where the `all_connections` API call could ignore the `fields` parameter. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the <code>all_connections</code> API call could ignore the <code>fields</code> parameter. This feature now performs as expected.</p>]]></content>
     <summary>The `all_connections` API call now correctly handles the `fields` parameter.</summary>
     <title>Fixed: API Call Fix</title>
   </entry>
@@ -273,7 +275,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:23</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where a map visualization would display drill links for fields that were hidden from the visualization. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where a map visualization would display drill links for fields that were hidden from the visualization. This feature now performs as expected.</p>]]></content>
     <summary>Map visualization drill links fixed.</summary>
     <title>Fixed: Fixed: Map visualization drill links</title>
   </entry>
@@ -284,7 +286,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:24</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where some System Activity tables were missing the `element_id` field. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where some System Activity tables were missing the <code>element_id</code> field. This feature now performs as expected.</p>]]></content>
     <summary>System Activity tables missing element_id field fixed.</summary>
     <title>Fixed: Fixed: System Activity Tables</title>
   </entry>
@@ -295,7 +297,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:25</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where subtotals could be incorrectly formatted in PDF downloads when an HTML parameter was defined on the field and the "Expand tables to show all rows" option was enabled. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where subtotals could be incorrectly formatted in PDF downloads when an HTML parameter was defined on the field and the "Expand tables to show all rows" option was enabled. This feature now performs as expected.</p>]]></content>
     <summary>Subtotals formatting in PDF downloads has been fixed when HTML parameters are used with row expansion enabled.</summary>
     <title>Fixed: Formatting Issue Resolved</title>
   </entry>
@@ -306,7 +308,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:26</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">The Looker IDE now checks for subparameters in local and remote dependencies and displays a more informative error if the subparameters are missing. Local dependencies must be defined with a project subparameter, while remote dependencies require both a `url` subparameter and a `ref` subparameter.</content>
+    <content type="html"><![CDATA[<p>The Looker IDE now checks for subparameters in local and remote dependencies and displays a more informative error if the subparameters are missing. Local dependencies must be defined with a project subparameter, while remote dependencies require both a <code>url</code> subparameter and a <code>ref</code> subparameter.</p>]]></content>
     <summary>IDE now checks for subparameters in local and remote dependencies. Local dependencies require a project subparameter, while remote dependencies need both url and ref subparameters for more informative error messages.</summary>
     <title>Fixed: IDE dependency checks improved</title>
   </entry>
@@ -317,7 +319,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:27</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where editing a merged query in an embedded session would open in a new tab. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where editing a merged query in an embedded session would open in a new tab. This feature now performs as expected.</p>]]></content>
     <summary>Editing a merged query in an embedded session now opens in a new tab as expected.</summary>
     <title>Fixed: Bug Fix for Merged Query Editing</title>
   </entry>
@@ -328,7 +330,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:28</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where Looker could generate duplicate SQL table references if a PDT referenced a table directly as well as through a join. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where Looker could generate duplicate SQL table references if a PDT referenced a table directly as well as through a join. This feature now performs as expected.</p>]]></content>
     <summary>Looker no longer generates duplicate SQL table references when a PDT references a table directly as well as through a join.</summary>
     <title>Fixed: Fixed duplicate SQL references in Looker</title>
   </entry>
@@ -339,7 +341,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:29</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where some PDT regeneration events were not tracked in System Activity. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where some PDT regeneration events were not tracked in System Activity. This feature now performs as expected.</p>]]></content>
     <summary>PDT regeneration events were not tracked in System Activity.</summary>
     <title>Fixed: Fixed PDT regeneration tracking</title>
   </entry>
@@ -350,7 +352,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:30</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">When an Explore is saved as a new dashboard, Looker will create advanced filter type dashboard filters, rather than drop-down type dashboard filters, for number type parameters.</content>
+    <content type="html"><![CDATA[<p>When an Explore is saved as a new dashboard, Looker will create advanced filter type dashboard filters, rather than drop-down type dashboard filters, for number type parameters.</p>]]></content>
     <summary>Looker now creates advanced filters for number parameters when saving an Explore as a dashboard.</summary>
     <title>Fixed: Looker dashboard filter update</title>
   </entry>
@@ -361,7 +363,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:31</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where SAML authentication could fail for a Looker (Google Cloud core) instance. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where SAML authentication could fail for a Looker (Google Cloud core) instance. This feature now performs as expected.</p>]]></content>
     <summary>SAML authentication issue fixed.</summary>
     <title>Fixed: SAML authentication fixed</title>
   </entry>
@@ -372,7 +374,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:32</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where the Looker Marketplace toggle was not being displayed in Looker core instances for users who were granted Admin permissions with an IAM role. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the Looker Marketplace toggle was not being displayed in Looker core instances for users who were granted Admin permissions with an IAM role. This feature now performs as expected.</p>]]></content>
     <summary>Looker Marketplace toggle now displayed correctly for IAM admins.</summary>
     <title>Fixed: Looker Marketplace Fix</title>
   </entry>
@@ -383,7 +385,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-07-24:fixed:33</id>
     <published>2025-07-24T00:00:00+00:00</published>
     <updated>2025-07-24T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where installing multiple drivers for the same database type on a customer-hosted instance could cause Looker to display an error. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where installing multiple drivers for the same database type on a customer-hosted instance could cause Looker to display an error. This feature now performs as expected.</p>]]></content>
     <summary>An issue with installing multiple drivers for the same database type on a customer-hosted instance has been fixed.</summary>
     <title>Fixed: Fixed driver installation issue</title>
   </entry>
@@ -394,7 +396,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-30:feature:0</id>
     <published>2025-06-30T00:00:00+00:00</published>
     <updated>2025-06-30T00:00:00+00:00</updated>
-    <content type="text/markdown">The Fast Dev Mode Transition feature is out of Labs and is now generally available. The Fast Dev Mode Transition feature improves the performance of [Development Mode](https://cloud.google.com/looker/docs/dev-mode-prod-mode#development_mode) on your instance by loading LookML projects in read-only mode until a developer clicks the [Create Developer Copy](https://cloud.google.com/looker/docs/git-command-reference#create-developer-copy) button for the project. **Note:** This item was added on July 8, 2025.</content>
+    <content type="html"><![CDATA[<p>The Fast Dev Mode Transition feature is out of Labs and is now generally available. The Fast Dev Mode Transition feature improves the performance of <a href="https://cloud.google.com/looker/docs/dev-mode-prod-mode#development_mode">Development Mode</a> on your instance by loading LookML projects in read-only mode until a developer clicks the <a href="https://cloud.google.com/looker/docs/git-command-reference#create-developer-copy">Create Developer Copy</a> button for the project. <strong>Note:</strong> This item was added on July 8, 2025.</p>]]></content>
     <summary>Fast Dev Mode Transition is now generally available, improving development mode performance by loading LookML projects in read-only mode until a developer creates a copy.</summary>
     <title>Feature: Fast Dev Mode Transition Now Generally Available</title>
   </entry>
@@ -405,7 +407,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-30:feature:1</id>
     <published>2025-06-30T00:00:00+00:00</published>
     <updated>2025-06-30T00:00:00+00:00</updated>
-    <content type="text/markdown">The Fast Dev Mode Transition feature is now available for Looker (Google Cloud core). The Fast Dev Mode Transition feature improves the performance of [Development Mode](https://cloud.google.com/looker/docs/dev-mode-prod-mode#development_mode) on your instance by loading LookML projects in read-only mode until a developer clicks the [Create Developer Copy](https://cloud.google.com/looker/docs/git-command-reference#create-developer-copy) button for the project. **Note:** This item was added on July 8, 2025.</content>
+    <content type="html"><![CDATA[<p>The Fast Dev Mode Transition feature is now available for Looker (Google Cloud core). The Fast Dev Mode Transition feature improves the performance of <a href="https://cloud.google.com/looker/docs/dev-mode-prod-mode#development_mode">Development Mode</a> on your instance by loading LookML projects in read-only mode until a developer clicks the <a href="https://cloud.google.com/looker/docs/git-command-reference#create-developer-copy">Create Developer Copy</a> button for the project. <strong>Note:</strong> This item was added on July 8, 2025.</p>]]></content>
     <summary>Looker's Fast Dev Mode Transition is now available, improving instance performance by loading LookML projects in read-only mode until a developer initiates a copy. This enhancement applies to Looker (Google Cloud core).</summary>
     <title>Feature: New Fast Dev Mode Transition for Looker</title>
   </entry>
@@ -416,9 +418,10 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-24:feature:0</id>
     <published>2025-06-24T00:00:00+00:00</published>
     <updated>2025-06-24T00:00:00+00:00</updated>
-    <content type="text/markdown">The following feature is generally available for Looker reports:
-
-* The Looker connector can now connect to a [private IP (private services access) only](https://cloud.google.com/looker/docs/looker-core-networking-options#private_ip_connections) Looker (Google Cloud core) instance or to a [private IP (Private Service Connect)](https://cloud.google.com/looker/docs/looker-core-networking-options#psc) Looker (Google Cloud core) instance [using the Looker instance ID](https://cloud.google.com/looker/docs/looker-core-connect-to-private-ip-lsp-sil).</content>
+    <content type="html"><![CDATA[<p>The following feature is generally available for Looker reports:</p>
+<ul>
+<li>The Looker connector can now connect to a <a href="https://cloud.google.com/looker/docs/looker-core-networking-options#private_ip_connections">private IP (private services access) only</a> Looker (Google Cloud core) instance or to a <a href="https://cloud.google.com/looker/docs/looker-core-networking-options#psc">private IP (Private Service Connect)</a> Looker (Google Cloud core) instance <a href="https://cloud.google.com/looker/docs/looker-core-connect-to-private-ip-lsp-sil">using the Looker instance ID</a>.</li>
+</ul>]]></content>
     <summary>The Looker connector now supports connecting to Looker (Google Cloud core) instances using private IP addresses, including those with Private Service Connect.</summary>
     <title>Feature: Looker connector supports private IP connections</title>
   </entry>
@@ -429,12 +432,13 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:announcement:0</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">**Looker 25.10** is expected to include the following changes, features, and fixes:
-
-* Expected Looker (original) deployment start: **Tuesday, June 17, 2025**
-* Expected Looker (original) final deployment and download available: **Thursday, June 26, 2025**
-* Expected Looker (Google Cloud core) deployment start: **Monday, June 16, 2025**
-* Expected Looker (Google Cloud core) final deployment: **Monday, June 30, 2025**</content>
+    <content type="html"><![CDATA[<p><strong>Looker 25.10</strong> is expected to include the following changes, features, and fixes:</p>
+<ul>
+<li>Expected Looker (original) deployment start: <strong>Tuesday, June 17, 2025</strong></li>
+<li>Expected Looker (original) final deployment and download available: <strong>Thursday, June 26, 2025</strong></li>
+<li>Expected Looker (Google Cloud core) deployment start: <strong>Monday, June 16, 2025</strong></li>
+<li>Expected Looker (Google Cloud core) final deployment: <strong>Monday, June 30, 2025</strong></li>
+</ul>]]></content>
     <summary>Looker 25.10 release is scheduled for June 2025, with deployments for Looker (original) starting June 17th and Looker (Google Cloud core) starting June 16th. Final deployments and downloads will be available by June 26th for original and June 30th for Google Cloud core.</summary>
     <title>Announcement: Looker 25.10 Release Notes</title>
   </entry>
@@ -445,13 +449,13 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:breaking:1</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">The [Embed SDK](https://cloud.google.com/looker/docs/embed-sdk-intro) has been upgraded to release 2.0.0. While the 2.0.0 API is backwards-compatible with Embed SDK 1.8.x, the underlying implementation has changed for some functionality. SDK 1.8.x exported a number of classes. SDK 2.0.0 replaces these classes with interfaces that are marked as deprecated (alternative interfaces are identified). We recommend that applications use the interfaces that have an 'I' prefix (the interfaces that have prefixes are identical to the interfaces that don't have them). Applications that are upgraded to SDK 2.0.0 should continue to work and behave as they did previously. To take advantage of the API improvements, some refactoring will be required. The following major changes are included in Embed SDK 2.0.0:
-
-* Navigating between dashboards, Explores, and Looks no longer requires that an iframe be recreated. Instead, the `loadDashboard`, `loadLook`, `loadExplore`, and `loadUrl` methods can be used to navigate within the Looker iframe.
-* `connect` now returns a unified connection rather than a connection that is related only to a dashboard, a Look, or an Explore. The unified connection allows embedding applications to detect a user navigating inside the iframe.
-* Support for additional Looker embedded content has been added for Looker reports and query visualizations.
-
-**Note:** This item was added on June 13, 2025.</content>
+    <content type="html"><![CDATA[<p>The <a href="https://cloud.google.com/looker/docs/embed-sdk-intro">Embed SDK</a> has been upgraded to release 2.0.0. While the 2.0.0 API is backwards-compatible with Embed SDK 1.8.x, the underlying implementation has changed for some functionality. SDK 1.8.x exported a number of classes. SDK 2.0.0 replaces these classes with interfaces that are marked as deprecated (alternative interfaces are identified). We recommend that applications use the interfaces that have an 'I' prefix (the interfaces that have prefixes are identical to the interfaces that don't have them). Applications that are upgraded to SDK 2.0.0 should continue to work and behave as they did previously. To take advantage of the API improvements, some refactoring will be required. The following major changes are included in Embed SDK 2.0.0:</p>
+<ul>
+<li>Navigating between dashboards, Explores, and Looks no longer requires that an iframe be recreated. Instead, the <code>loadDashboard</code>, <code>loadLook</code>, <code>loadExplore</code>, and <code>loadUrl</code> methods can be used to navigate within the Looker iframe.</li>
+<li><code>connect</code> now returns a unified connection rather than a connection that is related only to a dashboard, a Look, or an Explore. The unified connection allows embedding applications to detect a user navigating inside the iframe.</li>
+<li>Support for additional Looker embedded content has been added for Looker reports and query visualizations.</li>
+</ul>
+<p><strong>Note:</strong> This item was added on June 13, 2025.</p>]]></content>
     <summary>The Embed SDK has been upgraded to version 2.0.0. This new version is backward-compatible with 1.8.x but introduces changes to how classes are exported, recommending the use of interfaces instead. Key improvements include eliminating the need to recreate iframes for navigation, a unified connection object for better event detection, and expanded support for Looker reports and query visualizations. Some refactoring may be needed to leverage the new features.</summary>
     <title>Breaking: Embed SDK upgraded to 2.0.0</title>
   </entry>
@@ -462,7 +466,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:feature:2</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">For period-over-period (PoP) measures, a new subparameter, [`value_to_date`](https://cloud.google.com/looker/docs/period-over-period#value_to_date), is available. When a PoP measure is defined with `value_to_date:yes`, Looker will calculate the amount of time in the current timeframe at the time that the query is run and apply that amount of time when it calculates the values for previous periods.</content>
+    <content type="html"><![CDATA[<p>For period-over-period (PoP) measures, a new subparameter, <a href="https://cloud.google.com/looker/docs/period-over-period#value_to_date"><code>value_to_date</code></a>, is available. When a PoP measure is defined with <code>value_to_date:yes</code>, Looker will calculate the amount of time in the current timeframe at the time that the query is run and apply that amount of time when it calculates the values for previous periods.</p>]]></content>
     <summary>Looker's period-over-period measures now support a `value_to_date` subparameter. This allows for more accurate calculations of previous periods by considering the current timeframe when the query is executed.</summary>
     <title>Feature: New subparameter for period-over-period measures</title>
   </entry>
@@ -473,7 +477,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:feature:3</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">The Firebolt JDBC driver has been updated to version 3.5.0.</content>
+    <content type="html"><![CDATA[<p>The Firebolt JDBC driver has been updated to version 3.5.0.</p>]]></content>
     <summary>The Firebolt JDBC driver has been updated to version 3.5.0, offering improved performance and reliability for data connectivity.</summary>
     <title>Feature: Firebolt JDBC driver updated to version 3.5.0</title>
   </entry>
@@ -484,7 +488,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:feature:4</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">The Hive JDBC driver has been updated to version 4.0.1.</content>
+    <content type="html"><![CDATA[<p>The Hive JDBC driver has been updated to version 4.0.1.</p>]]></content>
     <summary>The Hive JDBC driver has been updated to version 4.0.1.</summary>
     <title>Feature: Hive JDBC driver updated</title>
   </entry>
@@ -495,7 +499,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:feature:5</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">The MS SQL JDBC driver has been updated to version 12.10.0.</content>
+    <content type="html"><![CDATA[<p>The MS SQL JDBC driver has been updated to version 12.10.0.</p>]]></content>
     <summary>The MS SQL JDBC driver has been updated to version 12.10.0.</summary>
     <title>Feature: MS SQL JDBC driver updated</title>
   </entry>
@@ -506,7 +510,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:feature:6</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">The Teradata JDBC driver has been updated to version 20.00.00.45.</content>
+    <content type="html"><![CDATA[<p>The Teradata JDBC driver has been updated to version 20.00.00.45.</p>]]></content>
     <summary>The Teradata JDBC driver has been updated to version 20.00.00.45.</summary>
     <title>Feature: Teradata JDBC driver updated</title>
   </entry>
@@ -517,7 +521,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:feature:7</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">The Vertica JDBC driver has been updated to version 24.2.0-1.</content>
+    <content type="html"><![CDATA[<p>The Vertica JDBC driver has been updated to version 24.2.0-1.</p>]]></content>
     <summary>The Vertica JDBC driver has been updated to version 24.2.0-1.</summary>
     <title>Feature: Vertica JDBC Driver Update</title>
   </entry>
@@ -528,7 +532,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:feature:8</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">The new Content Guardrails admin panel lets Looker admins limit both the ability for users to add or execute merged results queries on dashboards and the use of the dashboard auto-refresh option. Limiting merged results queries and dashboard auto-refreshes can reduce the number of queries that are sent to the database and improve dashboard performance. **Note:** This item was added on June 12, 2025.</content>
+    <content type="html"><![CDATA[<p>The new Content Guardrails admin panel lets Looker admins limit both the ability for users to add or execute merged results queries on dashboards and the use of the dashboard auto-refresh option. Limiting merged results queries and dashboard auto-refreshes can reduce the number of queries that are sent to the database and improve dashboard performance. <strong>Note:</strong> This item was added on June 12, 2025.</p>]]></content>
     <summary>Looker admins can now control user access to merged results queries and dashboard auto-refresh functionality. This feature helps reduce database load and enhance dashboard performance by limiting query execution.</summary>
     <title>Feature: Control Merged Results and Auto-Refresh</title>
   </entry>
@@ -539,7 +543,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:feature:9</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">The Looker [Continuous Integration (CI)](https://cloud.google.com/looker/docs/continuous-integration) features let you run tests on your LookML project to deliver more reliable, efficient, and user-friendly data experiences. You can use the CI validators to catch issues with SQL, data test, content, and LookML before they hit production to verify your LookML and prevent query errors for your users. You can also configure the CI validators to run automatically when a pull request is submitted to your LookML repository. **Note:** This item was added on June 23, 2025.</content>
+    <content type="html"><![CDATA[<p>The Looker <a href="https://cloud.google.com/looker/docs/continuous-integration">Continuous Integration (CI)</a> features let you run tests on your LookML project to deliver more reliable, efficient, and user-friendly data experiences. You can use the CI validators to catch issues with SQL, data test, content, and LookML before they hit production to verify your LookML and prevent query errors for your users. You can also configure the CI validators to run automatically when a pull request is submitted to your LookML repository. <strong>Note:</strong> This item was added on June 23, 2025.</p>]]></content>
     <summary>Looker's new Continuous Integration features enable automated testing of your LookML projects, catching SQL, data test, content, and LookML issues before they reach production. This ensures more reliable and user-friendly data experiences by preventing query errors.</summary>
     <title>Feature: Looker CI Features</title>
   </entry>
@@ -550,10 +554,11 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:fixed:10</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">This release contains the following accessibility improvements:
-
-* Increased contrast ratio for graphic elements, including icon bullets
-* Improved contrast for download links and unemphasized text to comply with Web Content Accessibility Guidelines (WCAG) Level AA</content>
+    <content type="html"><![CDATA[<p>This release contains the following accessibility improvements:</p>
+<ul>
+<li>Increased contrast ratio for graphic elements, including icon bullets</li>
+<li>Improved contrast for download links and unemphasized text to comply with Web Content Accessibility Guidelines (WCAG) Level AA</li>
+</ul>]]></content>
     <summary>This release includes accessibility improvements such as increased contrast for graphic elements and links, ensuring compliance with WCAG Level AA standards.</summary>
     <title>Fixed: Accessibility Improvements</title>
   </entry>
@@ -564,7 +569,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:fixed:11</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">The Tile Actions kebab menu now includes the name of the dashboard tile in its `aria-label` value.</content>
+    <content type="html"><![CDATA[<p>The Tile Actions kebab menu now includes the name of the dashboard tile in its <code>aria-label</code> value.</p>]]></content>
     <summary>The Tile Actions kebab menu's aria-label now includes the dashboard tile's name for improved accessibility.</summary>
     <title>Fixed: Accessibility improvements for Tile Actions menu</title>
   </entry>
@@ -575,7 +580,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:fixed:12</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where SDK API calls could return a 500 error if optional headers were not specified. The API calls now work as expected even if optional headers are not included.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where SDK API calls could return a 500 error if optional headers were not specified. The API calls now work as expected even if optional headers are not included.</p>]]></content>
     <summary>SDK API calls now correctly handle missing optional headers, resolving the 500 error.</summary>
     <title>Fixed: Fixed: SDK API call errors</title>
   </entry>
@@ -586,7 +591,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:fixed:13</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where the PDT Override Service Account field was not available for connections that use OAuth credentials. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the PDT Override Service Account field was not available for connections that use OAuth credentials. This feature now performs as expected.</p>]]></content>
     <summary>The PDT Override Service Account field is now available for connections using OAuth credentials, resolving a previous issue.</summary>
     <title>Fixed: PDT Override Service Account Field Fixed</title>
   </entry>
@@ -597,7 +602,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:fixed:14</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where the Manage Access dialog on a folder could load slowly if the Looker instance has a large number of groups. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the Manage Access dialog on a folder could load slowly if the Looker instance has a large number of groups. This feature now performs as expected.</p>]]></content>
     <summary>The Manage Access dialog for folders now loads quickly, even with a large number of groups in the Looker instance.</summary>
     <title>Fixed: Manage Access dialog performance improved</title>
   </entry>
@@ -608,7 +613,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:fixed:15</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where, previously, testing a new OAuth connection before saving would run connection tests on an empty connection. OAuth settings must now be saved before running connection tests. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where, previously, testing a new OAuth connection before saving would run connection tests on an empty connection. OAuth settings must now be saved before running connection tests. This feature now performs as expected.</p>]]></content>
     <summary>Previously, testing a new OAuth connection before saving would run connection tests on an empty connection. OAuth settings must now be saved before running connection tests. This feature now performs as expected.</summary>
     <title>Fixed: Fixed: OAuth connection testing</title>
   </entry>
@@ -619,7 +624,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:fixed:16</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">The OAuth Tenant ID field will no longer appear in connections for which it is not relevant. The only connection type that supports this field is Trino.</content>
+    <content type="html"><![CDATA[<p>The OAuth Tenant ID field will no longer appear in connections for which it is not relevant. The only connection type that supports this field is Trino.</p>]]></content>
     <summary>The OAuth Tenant ID field is now hidden for irrelevant connections. This field is only relevant for Trino connections.</summary>
     <title>Fixed: OAuth Tenant ID field updated</title>
   </entry>
@@ -630,7 +635,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:fixed:17</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where the API calls to run git connection tests would fail unless the user was in dev mode. These calls now work as expected whether the user is in production or development mode.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the API calls to run git connection tests would fail unless the user was in dev mode. These calls now work as expected whether the user is in production or development mode.</p>]]></content>
     <summary>API calls for git connection tests now function correctly in both production and development modes, resolving a previous issue where they only worked in dev mode.</summary>
     <title>Fixed: Fixed git connection test API calls</title>
   </entry>
@@ -641,7 +646,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:fixed:18</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where drill downs wouldn't be displayed for a field if the first field value had null values. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where drill downs wouldn't be displayed for a field if the first field value had null values. This feature now performs as expected.</p>]]></content>
     <summary>Drill downs now display correctly even if the first field value is null.</summary>
     <title>Fixed: Drill down issue fixed</title>
   </entry>
@@ -652,8 +657,8 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:fixed:19</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where assigning the user attribute
-`looker_internal_email_domain_allowlist` on the SAML config page would return a 500 error. This user attribute is not designed to be assigned at the user level, so the option to assign it has been removed from the SAML config page.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where assigning the user attribute
+<code>looker_internal_email_domain_allowlist</code> on the SAML config page would return a 500 error. This user attribute is not designed to be assigned at the user level, so the option to assign it has been removed from the SAML config page.</p>]]></content>
     <summary>The ability to assign the user attribute `looker_internal_email_domain_allowlist` on the SAML config page has been removed due to a bug that caused a 500 error. This attribute is not intended for user-level assignment.</summary>
     <title>Fixed: User attribute assignment fixed</title>
   </entry>
@@ -664,7 +669,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:fixed:20</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where restarting the Looker instance during a folder sync could cause the instance to fail to start.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where restarting the Looker instance during a folder sync could cause the instance to fail to start.</p>]]></content>
     <summary>The Looker instance could fail to start after being restarted during a folder sync. This issue has now been resolved.</summary>
     <title>Fixed: Looker instance startup issue fixed</title>
   </entry>
@@ -675,7 +680,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:fixed:21</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where selecting fields from the Session view in the System Activity User Explore could cause fanout. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where selecting fields from the Session view in the System Activity User Explore could cause fanout. This feature now performs as expected.</p>]]></content>
     <summary>The fanout issue when selecting fields from the Session view in the System Activity User Explore has been resolved. This feature now functions correctly.</summary>
     <title>Fixed: Fixed fanout issue in System Activity User Explore</title>
   </entry>
@@ -686,7 +691,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:fixed:22</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where the `count` table calculation function could return incorrect values if its inputs included a list with null values. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the <code>count</code> table calculation function could return incorrect values if its inputs included a list with null values. This feature now performs as expected.</p>]]></content>
     <summary>The `count` table calculation function now correctly handles lists with null values, returning accurate results.</summary>
     <title>Fixed: Fixed incorrect calculation in `count` table function</title>
   </entry>
@@ -697,7 +702,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:fixed:23</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where the drill menu did not properly translate some entries when the locale was set to Swedish (sv\_SE). This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the drill menu did not properly translate some entries when the locale was set to Swedish (sv_SE). This feature now performs as expected.</p>]]></content>
     <summary>The drill menu in the product now correctly translates all entries when the locale is set to Swedish.</summary>
     <title>Fixed: Drill menu translation fixed for Swedish locale</title>
   </entry>
@@ -708,7 +713,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:fixed:24</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where drilling on a query with subtotals could display incorrect values. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where drilling on a query with subtotals could display incorrect values. This feature now performs as expected.</p>]]></content>
     <summary>Drilling on a query with subtotals now displays the correct values, resolving a previous issue.</summary>
     <title>Fixed: Fixed incorrect values in queries with subtotals</title>
   </entry>
@@ -719,7 +724,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:fixed:25</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where filtering on a custom dimension that references a `datetime` type field could return the following error message: `No matching signature`. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where filtering on a custom dimension that references a <code>datetime</code> type field could return the following error message: <code>No matching signature</code>. This feature now performs as expected.</p>]]></content>
     <summary>Filtering on a custom dimension that references a datetime type field could return an error. This issue has now been resolved and the feature performs as expected.</summary>
     <title>Fixed: Fixed issue with custom dimension filtering</title>
   </entry>
@@ -730,7 +735,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:fixed:26</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where the LookML validator would return a 500 error if a LookML file contained a `sum_distinct` measure for a database that doesn't support `sum_distinct` measures. The LookML validator now returns a more descriptive error message.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the LookML validator would return a 500 error if a LookML file contained a <code>sum_distinct</code> measure for a database that doesn't support <code>sum_distinct</code> measures. The LookML validator now returns a more descriptive error message.</p>]]></content>
     <summary>The LookML validator no longer returns a 500 error for LookML files with `sum_distinct` measures on unsupported databases. Instead, it provides a more informative error message, improving the developer experience.</summary>
     <title>Fixed: Fixed LookML validator error for sum_distinct measures</title>
   </entry>
@@ -741,7 +746,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:fixed:27</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where entering the value `12:00` in the Time field of an alert schedule dialog would input `00:00` instead.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where entering the value <code>12:00</code> in the Time field of an alert schedule dialog would input <code>00:00</code> instead.</p>]]></content>
     <summary>The Time field in alert schedules would incorrectly display 00:00 when 12:00 was entered. This issue has now been resolved.</summary>
     <title>Fixed: Time field input corrected</title>
   </entry>
@@ -752,7 +757,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:fixed:28</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where changes to PDT override settings would not be saved. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where changes to PDT override settings would not be saved. This feature now performs as expected.</p>]]></content>
     <summary> PDT override settings are now saved correctly after an issue that prevented this has been resolved. The feature is functioning as expected.</summary>
     <title>Fixed: Fixed issue with PDT override settings</title>
   </entry>
@@ -763,7 +768,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:fixed:29</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where PDTs could fail to rebuild with the following error message: `undefined method trace_id_hex`. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where PDTs could fail to rebuild with the following error message: <code>undefined method trace_id_hex</code>. This feature now performs as expected.</p>]]></content>
     <summary>PDTs failing to rebuild due to an "undefined method trace_id_hex" error have been resolved. The feature now functions correctly.</summary>
     <title>Fixed: Fixed PDT rebuild issue</title>
   </entry>
@@ -774,7 +779,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:feature:30</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">You can now [embed Looker reports](https://cloud.google.com/looker/docs/embed-reports) on Looker (original) instances when Looker reports and the Embed Looker reports Labs features are enabled for your instance. Looker reports are available in preview.</content>
+    <content type="html"><![CDATA[<p>You can now <a href="https://cloud.google.com/looker/docs/embed-reports">embed Looker reports</a> on Looker (original) instances when Looker reports and the Embed Looker reports Labs features are enabled for your instance. Looker reports are available in preview.</p>]]></content>
     <summary>Looker reports are now available for embedding on Looker (original) instances with the relevant features enabled. This feature is currently in preview.</summary>
     <title>Feature: Embedding Looker reports is now available</title>
   </entry>
@@ -785,7 +790,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:fixed:31</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">An issue has been fixed where LDAP authentication could fail with the following error message: `no implicit conversion of Hash into String`. This feature now performs as expected.</content>
+    <content type="html"><![CDATA[<p>An issue has been fixed where LDAP authentication could fail with the following error message: <code>no implicit conversion of Hash into String</code>. This feature now performs as expected.</p>]]></content>
     <summary>LDAP authentication no longer fails with a hash to string conversion error.</summary>
     <title>Fixed: Fixed LDAP authentication issue</title>
   </entry>
@@ -796,7 +801,7 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-11:feature:32</id>
     <published>2025-06-11T00:00:00+00:00</published>
     <updated>2025-06-11T00:00:00+00:00</updated>
-    <content type="text/markdown">The [Code Interpreter in Conversational Analytics](https://cloud.google.com/looker/docs/studio/conversational-analytics-code-interpreter) is now available in [Preview](https://cloud.google.com/products#product-launch-stages). The Code Interpreter translates your natural language questions into Python code and executes that code to provide advanced analysis and visualizations. The Code Interpreter is disabled by default. Admins of Looker (Google Cloud core) instances can manage enablement for the Code Interpreter on the [Gemini in Looker admin page](https://cloud.google.com/looker/docs/looker-core-admin-gemini#enable-ci-core). **Note:** This item was added on June 23, 2025.</content>
+    <content type="html"><![CDATA[<p>The <a href="https://cloud.google.com/looker/docs/studio/conversational-analytics-code-interpreter">Code Interpreter in Conversational Analytics</a> is now available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. The Code Interpreter translates your natural language questions into Python code and executes that code to provide advanced analysis and visualizations. The Code Interpreter is disabled by default. Admins of Looker (Google Cloud core) instances can manage enablement for the Code Interpreter on the <a href="https://cloud.google.com/looker/docs/looker-core-admin-gemini#enable-ci-core">Gemini in Looker admin page</a>. <strong>Note:</strong> This item was added on June 23, 2025.</p>]]></content>
     <summary>A new code interpreter feature is available for conversational analytics, allowing users to translate natural language questions into Python code for advanced analysis and visualizations. This feature is disabled by default and can be managed by instance administrators.</summary>
     <title>Feature: New Code Interpreter Available for Conversational Analytics</title>
   </entry>
@@ -807,14 +812,13 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-06-09:announcement:0</id>
     <published>2025-06-09T00:00:00+00:00</published>
     <updated>2025-06-09T00:00:00+00:00</updated>
-    <content type="text/markdown">Gemini in Looker will be enabled by default for Looker (original) instances that meet at least one of the following criteria:
-
-* The Automated Gemini in Looker enablement and user management setting on the Settings page in the Looker Admin panel was previously enabled.
-* The instance is updated to Looker 25.6 or later after June 9, 2025.
-
-Instances that are hosted in the [EMEA region](https://cloud.google.com/looker/docs/looker-original-locations) and those that are enrolled in Looker's [Extended Support Release (ESR) program](https://cloud.google.com/looker/docs/standard-extended-support-release-program-overview) are exempt from automatic enablement.
-
-Looker admins can still manage Gemini in Looker enablement manually on the [Gemini in Looker](https://cloud.google.com/looker/docs/admin-panel-platform-gil) page in the Admin panel.</content>
+    <content type="html"><![CDATA[<p>Gemini in Looker will be enabled by default for Looker (original) instances that meet at least one of the following criteria:</p>
+<ul>
+<li>The Automated Gemini in Looker enablement and user management setting on the Settings page in the Looker Admin panel was previously enabled.</li>
+<li>The instance is updated to Looker 25.6 or later after June 9, 2025.</li>
+</ul>
+<p>Instances that are hosted in the <a href="https://cloud.google.com/looker/docs/looker-original-locations">EMEA region</a> and those that are enrolled in Looker's <a href="https://cloud.google.com/looker/docs/standard-extended-support-release-program-overview">Extended Support Release (ESR) program</a> are exempt from automatic enablement.</p>
+<p>Looker admins can still manage Gemini in Looker enablement manually on the <a href="https://cloud.google.com/looker/docs/admin-panel-platform-gil">Gemini in Looker</a> page in the Admin panel.</p>]]></content>
     <summary>Gemini in Looker will be automatically enabled by default for Looker (original) instances starting with version 25.6, provided they meet specific criteria or had the feature enabled previously. However, instances in the EMEA region or those in the ESR program are exempt from this automatic enablement. Admins retain manual control over the feature</summary>
     <title>Announcement: Gemini in Looker enablement update</title>
   </entry>
@@ -825,8 +829,8 @@ Looker admins can still manage Gemini in Looker enablement manually on the [Gemi
     <id>urn:github:multani:gcp-changelog:looker:2025-06-09:feature:1</id>
     <published>2025-06-09T00:00:00+00:00</published>
     <updated>2025-06-09T00:00:00+00:00</updated>
-    <content type="text/markdown">When the [Automated Gemini in Looker enablement and user management](https://cloud.google.com/looker/docs/admin-panel-general-settings#gemini_default_enablement) setting is enabled, the Gemini Default Users group
-is created automatically for instances that use an [open system configuration](https://cloud.google.com/looker/docs/access-levels#open_and_closed_systems_of_access_to_folders). The Gemini Default Users group is populated automatically with all existing users and any new users who are added to the instance.</content>
+    <content type="html"><![CDATA[<p>When the <a href="https://cloud.google.com/looker/docs/admin-panel-general-settings#gemini_default_enablement">Automated Gemini in Looker enablement and user management</a> setting is enabled, the Gemini Default Users group
+is created automatically for instances that use an <a href="https://cloud.google.com/looker/docs/access-levels#open_and_closed_systems_of_access_to_folders">open system configuration</a>. The Gemini Default Users group is populated automatically with all existing users and any new users who are added to the instance.</p>]]></content>
     <summary>A new feature is available for Looker, regarding the Automated Gemini enablement and user management. When the relevant setting is enabled, a Gemini Default Users group is automatically created and populated with all existing and new users for instances using an open system configuration.</summary>
     <title>Feature: Automated Gemini in Looker</title>
   </entry>

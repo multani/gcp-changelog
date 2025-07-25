@@ -305,6 +305,7 @@ dependencies = [
     { name = "langchain-ollama" },
     { name = "langchain-openai" },
     { name = "lxml" },
+    { name = "markdown" },
     { name = "markdownify" },
     { name = "pydantic" },
 ]
@@ -318,6 +319,7 @@ dev = [
     { name = "ruff" },
     { name = "types-beautifulsoup4" },
     { name = "types-lxml", extra = ["mypy"] },
+    { name = "types-markdown" },
     { name = "types-python-dateutil" },
 ]
 doc = [
@@ -338,6 +340,7 @@ requires-dist = [
     { name = "langchain-ollama", specifier = ">=0.3.6" },
     { name = "langchain-openai", specifier = ">=0.3.28" },
     { name = "lxml", specifier = "==6.0.0" },
+    { name = "markdown", specifier = "==3.8.2" },
     { name = "markdownify", specifier = "==1.1.0" },
     { name = "pydantic", specifier = "==2.11.7" },
 ]
@@ -351,6 +354,7 @@ dev = [
     { name = "ruff", specifier = "==0.12.1" },
     { name = "types-beautifulsoup4", specifier = "==4.12.0.20250516" },
     { name = "types-lxml", extras = ["mypy"], specifier = "==2025.3.30" },
+    { name = "types-markdown", specifier = "==3.8.0.20250708" },
     { name = "types-python-dateutil", specifier = "==2.9.0.20250516" },
 ]
 doc = [
@@ -1584,6 +1588,15 @@ wheels = [
 [package.optional-dependencies]
 mypy = [
     { name = "mypy" },
+]
+
+[[package]]
+name = "types-markdown"
+version = "3.8.0.20250708"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/95/01/0bab46f013e8ff6f2c54f9cb35252e4f6ccf1b7b863ba53f56e5e1ae1429/types_markdown-3.8.0.20250708.tar.gz", hash = "sha256:28690251fe90757f5a99cd671c79502bc2de07aef2d35fe54117c3b1c799804a", size = 19337 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/29/08/3e160e70de991f234ea8bcfe135a61779761ffc76c13164b97c068989ffc/types_markdown-3.8.0.20250708-py3-none-any.whl", hash = "sha256:d1f634931b463adf7603c012724b7e9e5eff976eb517dc700ebece2d6189b1ce", size = 25785 },
 ]
 
 [[package]]

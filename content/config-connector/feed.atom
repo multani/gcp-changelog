@@ -4,7 +4,7 @@
   <subtitle>Changelog for Google Cloud product: Config Connector</subtitle>
   <updated>2025-07-14T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:config-connector</id>
-  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/config-connector/" />
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/config-connector/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -12,7 +12,7 @@
     <id>urn:github:multani:gcp-changelog:config-connector:2025-07-14:announcement:0</id>
     <published>2025-07-14T00:00:00+00:00</published>
     <updated>2025-07-14T00:00:00+00:00</updated>
-    <content type="text/markdown">Config Connector version 1.132.1 is now available.</content>
+    <content type="html"><![CDATA[<p>Config Connector version 1.132.1 is now available.</p>]]></content>
     <summary>Config Connector v1.132.1 is out.</summary>
     <title>Announcement: Announcement</title>
   </entry>
@@ -23,17 +23,20 @@
     <id>urn:github:multani:gcp-changelog:config-connector:2025-07-14:changed:1</id>
     <published>2025-07-14T00:00:00+00:00</published>
     <updated>2025-07-14T00:00:00+00:00</updated>
-    <content type="text/markdown">Reconciliation Improvements:
-
-* [SpannerInstance](https://cloud.google.com/config-connector/docs/reference/resource-docs/spanner/spannerinstance)
-  + You can opt-in the direct controller by adding the
-    `alpha.cnrm.cloud.google.com/reconciler: direct` annotation to the
-    `SpannerInstance` resource`.
-  + Direct controller is opt-in if using the following fields:
-    - `spec.labels`
-    - `spec.defaultBackupScheduleType`
-    - `spec.edition`
-    - `spec.autoscalingConfig`</content>
+    <content type="html"><![CDATA[<p>Reconciliation Improvements:</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/spanner/spannerinstance">SpannerInstance</a></li>
+<li>You can opt-in the direct controller by adding the
+    <code>alpha.cnrm.cloud.google.com/reconciler: direct</code> annotation to the
+    <code>SpannerInstance</code> resource`.</li>
+<li>Direct controller is opt-in if using the following fields:<ul>
+<li><code>spec.labels</code></li>
+<li><code>spec.defaultBackupScheduleType</code></li>
+<li><code>spec.edition</code></li>
+<li><code>spec.autoscalingConfig</code></li>
+</ul>
+</li>
+</ul>]]></content>
     <summary>SpannerInstance reconciliation improvements.</summary>
     <title>Changed: SpannerInstance reconciliation</title>
   </entry>
@@ -44,7 +47,7 @@
     <id>urn:github:multani:gcp-changelog:config-connector:2025-06-10:announcement:0</id>
     <published>2025-06-10T00:00:00+00:00</published>
     <updated>2025-06-10T00:00:00+00:00</updated>
-    <content type="text/markdown">Config Connector version 1.132.0 is now available.</content>
+    <content type="html"><![CDATA[<p>Config Connector version 1.132.0 is now available.</p>]]></content>
     <summary>Config Connector version 1.132.0 has been released.</summary>
     <title>Announcement: Config Connector v1.132.0 Now Available</title>
   </entry>
@@ -55,13 +58,14 @@
     <id>urn:github:multani:gcp-changelog:config-connector:2025-06-10:feature:1</id>
     <published>2025-06-10T00:00:00+00:00</published>
     <updated>2025-06-10T00:00:00+00:00</updated>
-    <content type="text/markdown">New Beta Resources (Direct Reconciler):
-
-* [`SpeechCustomClass`](https://cloud.google.com/config-connector/docs/reference/resource-docs/speech/speechcustomclass)
-* [`SpeechPhraseSet`](https://cloud.google.com/config-connector/docs/reference/resource-docs/speech/speechphraseset)
-* [`SpeechRecognizer`](https://cloud.google.com/config-connector/docs/reference/resource-docs/speech/speechrecognizer)
-* [`VertexAINotebooksInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/notebooks/notebookinstance)
-* [`VertexAIMetadataStore`](https://cloud.google.com/config-connector/docs/reference/resource-docs/vertexai/vertexaimetadatastore)</content>
+    <content type="html"><![CDATA[<p>New Beta Resources (Direct Reconciler):</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/speech/speechcustomclass"><code>SpeechCustomClass</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/speech/speechphraseset"><code>SpeechPhraseSet</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/speech/speechrecognizer"><code>SpeechRecognizer</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/notebooks/notebookinstance"><code>VertexAINotebooksInstance</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/vertexai/vertexaimetadatastore"><code>VertexAIMetadataStore</code></a></li>
+</ul>]]></content>
     <summary>New beta resources are available for Speech-to-Text and Vertex AI, including SpeechCustomClass, SpeechPhraseSet, SpeechRecognizer, VertexAINotebooksInstance, and VertexAIMetadataStore.</summary>
     <title>Feature: New Beta Resources for Speech and Vertex AI</title>
   </entry>
@@ -72,12 +76,13 @@
     <id>urn:github:multani:gcp-changelog:config-connector:2025-06-10:changed:2</id>
     <published>2025-06-10T00:00:00+00:00</published>
     <updated>2025-06-10T00:00:00+00:00</updated>
-    <content type="text/markdown">New Alpha Resources (Direct Reconciler):
-
-* `OrgPolicyPolicy`
-* `OrgPolicyCustomConstraint`
-* `SpeechRecognizer`
-* `StorageAnywhereCache`</content>
+    <content type="html"><![CDATA[<p>New Alpha Resources (Direct Reconciler):</p>
+<ul>
+<li><code>OrgPolicyPolicy</code></li>
+<li><code>OrgPolicyCustomConstraint</code></li>
+<li><code>SpeechRecognizer</code></li>
+<li><code>StorageAnywhereCache</code></li>
+</ul>]]></content>
     <summary>New Alpha resources are available, including OrgPolicyPolicy, OrgPolicyCustomConstraint, SpeechRecognizer, and StorageAnywhereCache.</summary>
     <title>Changed: New Alpha Resources Available</title>
   </entry>
@@ -88,15 +93,16 @@
     <id>urn:github:multani:gcp-changelog:config-connector:2025-06-10:feature:3</id>
     <published>2025-06-10T00:00:00+00:00</published>
     <updated>2025-06-10T00:00:00+00:00</updated>
-    <content type="text/markdown">New Fields:
-
-* [SpannerInstance](https://cloud.google.com/config-connector/docs/reference/resource-docs/spanner/spannerinstance)
-  For opt-in direct controller,
-  + Added `spec.labels` field.
-  + Added `spec.defaultBackupScheduleType` field.
-* [SecretManagerSecret](https://cloud.google.com/config-connector/docs/reference/resource-docs/secretmanager/secretmanagersecret)
-  For opt-in direct controller,
-  + Added `spec.labels` field.</content>
+    <content type="html"><![CDATA[<p>New Fields:</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/spanner/spannerinstance">SpannerInstance</a>
+  For opt-in direct controller,</li>
+<li>Added <code>spec.labels</code> field.</li>
+<li>Added <code>spec.defaultBackupScheduleType</code> field.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/secretmanager/secretmanagersecret">SecretManagerSecret</a>
+  For opt-in direct controller,</li>
+<li>Added <code>spec.labels</code> field.</li>
+</ul>]]></content>
     <summary>New fields `spec.labels` and `spec.defaultBackupScheduleType` have been added to SpannerInstance, and `spec.labels` has been added to SecretManagerSecret for opt-in direct controller.</summary>
     <title>Feature: New fields for SpannerInstance and SecretManagerSecret</title>
   </entry>

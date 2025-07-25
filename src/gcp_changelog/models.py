@@ -182,8 +182,8 @@ class Index(BaseModel):
             feed = build_feed(product)
 
             filename = config.folder_for(slug) / "feed.atom"
-            with open(str(filename), "w") as fp:
-                feed.write(fp, encoding="unicode", xml_declaration=True)
+            with open(str(filename), "wb") as fp:
+                feed.write(fp, encoding="utf-8", xml_declaration=True)
 
         with open(config.site_index, "w") as fp:
             fp.write("# Google Cloud Platform Release Notes (by services)\n")

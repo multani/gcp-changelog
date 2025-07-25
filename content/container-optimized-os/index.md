@@ -2,10 +2,6 @@
 
 ## 2025-07-21
 
-### Changed
-
-
-
 ### cos-109-17800-570-5
 
 |  |  |  |  |
@@ -72,10 +68,6 @@ Runtime sysctl changes:
 
 Fixed KCTF-103406b in the Linux kernel
 
-### Changed
-
-
-
 ### cos-121-18867-90-97
 
 |  |  |  |  |
@@ -110,10 +102,6 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 811807 -> 811784
 
-### Changed
-
-
-
 ### cos-117-18613-263-75
 
 |  |  |  |  |
@@ -143,10 +131,6 @@ Fixed KCTF-103406b in the Linux kernel.
 Runtime sysctl changes:
 
 * Changed: fs.file-max: 811784 -> 811820
-
-### Changed
-
-
 
 ### cos-113-18244-382-65
 

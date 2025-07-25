@@ -3,14 +3,6 @@
   "entries": {
     "2025-07-21": [
       {
-        "kind": "Changed",
-        "content": "",
-        "summary": {
-          "title": "Short Title",
-          "summary": "This is a short summary."
-        }
-      },
-      {
         "kind": "cos-109-17800-570-5",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.143](https://cos.googlesource.com/third_party/kernel/+/934359bdc0f1081eed66a6db8dba3ea7c2948d3c ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/17800.570.5/lakitu/gpu_driver_versions.textproto) |",
         "summary": {
@@ -131,14 +123,6 @@
         }
       },
       {
-        "kind": "Changed",
-        "content": "",
-        "summary": {
-          "title": "Short Title",
-          "summary": "This is a short summary."
-        }
-      },
-      {
         "kind": "cos-121-18867-90-97",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.93](https://cos.googlesource.com/third_party/kernel/+/24fc21afff6a88ece2f6e5e3163e54e15fb554b5 ) | v27.5.1 | v2.0.4 | [See List](https://storage.googleapis.com/cos-tools/18867.90.97/lakitu/gpu_driver_versions.textproto) |",
         "summary": {
@@ -166,8 +150,8 @@
         "kind": "Fixed",
         "content": "Fixed an issue where some workloads could cause a full\nsystem hang when running close to their memory limit.",
         "summary": {
-          "title": "System Hang Issue Fixed",
-          "summary": "Fixed system hang issue."
+          "title": "System Stability Improvement",
+          "summary": "Fixed system hang issue for memory-intensive workloads."
         }
       },
       {
@@ -195,14 +179,6 @@
         }
       },
       {
-        "kind": "Changed",
-        "content": "",
-        "summary": {
-          "title": "Short Title",
-          "summary": "This is a short summary."
-        }
-      },
-      {
         "kind": "cos-117-18613-263-75",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.93](https://cos.googlesource.com/third_party/kernel/+/00c059b5e633ba65a380fed13ae9d1d3503be953 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18613.263.75/lakitu/gpu_driver_versions.textproto) |",
         "summary": {
@@ -214,8 +190,8 @@
         "kind": "Changed",
         "content": "Updated the NVIDIA GPU driver policy for New Feature Branch (NFB) drivers. The LATEST tag has been updated to point to the stable 570.133.20 Production Branch. The 575.57.08 NFB driver remains available for development and testing but must now be selected by its specific version number. Removed 575.57.08 NFB driver support for NVIDIA\\_GB200 machine.",
         "summary": {
-          "title": "NVIDIA GPU Driver Update",
-          "summary": "Updated NVIDIA GPU driver policy for NFB drivers. LATEST tag now points to stable 570.133.20. 575.57.08 NFB driver requires specific version selection and is removed for NVIDIA_GB200."
+          "title": "GPU Driver Policy Update",
+          "summary": "Updated GPU driver policy for NFB drivers. LATEST tag now points to stable 570.133.20. 575.57.08 NFB driver requires specific version selection and no longer supports NVIDIA_GB200."
         }
       },
       {
@@ -223,22 +199,22 @@
         "content": "Added ARM support for the Lustre 2.14.0 drivers.",
         "summary": {
           "title": "New ARM Support",
-          "summary": "ARM support for Lustre 2.14.0 drivers."
+          "summary": "ARM support for Lustre 2.14.0 drivers added."
         }
       },
       {
         "kind": "Fixed",
         "content": "Fixed an issue where some workloads could cause a full\nsystem hang when running close to their memory limit.",
         "summary": {
-          "title": "System Hang Fix",
-          "summary": "Fixed system hang issue."
+          "title": "System Stability Improvement",
+          "summary": "Fixed system hang issue for memory-intensive workloads."
         }
       },
       {
         "kind": "Security",
         "content": "Fixed KCTF-103406b in the Linux kernel.",
         "summary": {
-          "title": "Security Update",
+          "title": "Linux Kernel Security Fix",
           "summary": "Fixed KCTF-103406b in the Linux kernel."
         }
       },
@@ -248,14 +224,6 @@
         "summary": {
           "title": "Runtime sysctl changes",
           "summary": "Runtime sysctl changes: fs.file-max changed from 811784 to 811820."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "",
-        "summary": {
-          "title": "Short Title",
-          "summary": "This is a short summary."
         }
       },
       {
@@ -270,23 +238,23 @@
         "kind": "Changed",
         "content": "Updated the NVIDIA GPU driver policy for New Feature Branch (NFB) drivers. The LATEST tag has been updated to point to the stable 570.133.20 Production Branch. The 575.57.08 NFB driver remains available for development and testing but must now be selected by its specific version number.",
         "summary": {
-          "title": "GPU Driver Policy Update",
-          "summary": "Updated GPU driver policy for NFB drivers. LATEST tag now points to stable Production Branch. Specific version needed for NFB driver."
+          "title": "NVIDIA GPU Driver Update",
+          "summary": "Updated NVIDIA GPU driver policy for NFB drivers, with the LATEST tag now pointing to the stable 570.133.20 Production Branch. The 575.57.08 NFB driver is still available for development and testing but requires explicit version selection."
         }
       },
       {
         "kind": "Fixed",
         "content": "Fixed an issue where some workloads could cause a full\nsystem hang when running close to their memory limit.",
         "summary": {
-          "title": "System Hang Fix",
-          "summary": "Fixed system hang issue."
+          "title": "System Stability Improvement",
+          "summary": "Fixed system hang issue for memory-intensive workloads."
         }
       },
       {
         "kind": "Security",
         "content": "Fixed KCTF-103406b in the Linux kernel.",
         "summary": {
-          "title": "Security Update",
+          "title": "Linux Kernel Security Fix",
           "summary": "Fixed KCTF-103406b in the Linux kernel."
         }
       },

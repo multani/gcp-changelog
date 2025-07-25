@@ -9,6 +9,14 @@
           "title": "Apigee API Enabled with API Hub Provisioning",
           "summary": "API hub provisioning now enables the Apigee API."
         }
+      },
+      {
+        "kind": "Changed",
+        "content": "**API hub deprovisioning changes**\n\nDeprovisioning an API hub instance now also deletes any associated Apigee organizations from your Google Cloud project, provided those Apigee organizations have no Apigee instances.\n\nIf you deprovision an API hub instance, you can reprovision it later, but you'll need to wait 7 days before you can do so.\n\nFor more information, see [Deprovision Apigee API hub](https://cloud.google.com/apigee/docs/apihub/deprovision).",
+        "summary": {
+          "title": "API Hub Deprovisioning Update",
+          "summary": "API hub deprovisioning now deletes associated Apigee organizations if they have no instances. Reprovisioning is possible after a 7-day wait."
+        }
       }
     ],
     "2025-07-18": [

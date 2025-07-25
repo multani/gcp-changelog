@@ -7,6 +7,20 @@
 The Cloud Data Fusion version 6.10.1.5 patch revision is generally available ([GA](https://cloud.google.com/products#product-launch-stages)). 6.10.1.5 includes reliability fixes.
 
 ---
+## 2025-07-20
+
+### Changed
+
+The SAP ODP plugin version 0.12 is available in Cloud Data Fusion version 6.10 and later. This release includes the following changes:
+
+* Support for old SAP ODP RFCs is removed to align with SAP Note 3255746.
+* Messages have been updated when attempting to extract data from unsupported hierarchy data sources.
+
+We recommend upgrading all your pipelines to the latest SAP ODP plugin version, as earlier versions are no longer compliant with SAP Guidelines.
+
+**Note:** This release is backward compatible.
+
+---
 ## 2025-07-16
 
 ### Changed

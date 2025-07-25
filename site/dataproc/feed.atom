@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Dataproc</title>
   <subtitle>Changelog for Google Cloud product: Dataproc</subtitle>
   <updated>2025-07-15T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:dataproc</id>
-  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/dataproc/" />
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/dataproc/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -12,20 +12,20 @@
     <id>urn:github:multani:gcp-changelog:dataproc:2025-07-15:announcement:0</id>
     <published>2025-07-15T00:00:00+00:00</published>
     <updated>2025-07-15T00:00:00+00:00</updated>
-    <content type="text/markdown">**Dataproc on Compute Engine:** Starting August 18, 2025, the following diagnostic properties will be enabled by default for newly created Dataproc clusters:
-
-* `dataproc:diagnostic.capture.enabled`: Enables the collection of [checkpoint data](https://cloud.google.com/dataproc/docs/support/diagnose-clusters#checkpoint_data) in the cluster [temp bucket](https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/staging-bucket).
-* `dataproc:dataproc.logging.extended.enabled`: Enables the collection of logs for the [Knox, Zeppelin, Ranger-usersync, Jupyter\_notebook, Jupyter\_kernel\_gateway components](https://cloud.google.com/dataproc/docs/concepts/components/overview) and the [Spark History-Server](https://cloud.google.com/dataproc/docs/concepts/jobs/history-server) in [Cloud Logging](https://cloud.google.com/dataproc/docs/guides/logging#cluster_logs_in).
-* `dataproc:dataproc.logging.syslog.enabled`: Enables the collection of VM syslogs in [Cloud Logging](https://cloud.google.com/dataproc/docs/guides/logging#cluster_logs_in).
-
-  To continue using the [Ops Agent](https://cloud.google.com/stackdriver/docs/solutions/agents/ops-agent) initialization action [`opsagent.sh`](https://github.com/GoogleCloudDataproc/initialization-actions/blob/main/opsagent/opsagent.sh) to ingest syslogs from Dataproc cluster nodes, do one of the following:
-
-  + Recommended: Use [`opsagent_nosyslog.sh`](https://github.com/GoogleCloudDataproc/initialization-actions/blob/main/opsagent/opsagent_nosyslog.sh) since
-    VM syslogs will now be emitted by default from Dataproc clusters.
-  + Set the `dataproc:dataproc.logging.syslog.enabled=false` and continue using [`opsagent.sh`](https://github.com/GoogleCloudDataproc/initialization-actions/blob/main/opsagent/opsagent.sh)
-    to ingest syslogs.
-
-**Note:** To disable any of these features, set the corresponding property to `false` during cluster creation.</content>
+    <content type="html"><![CDATA[<p><strong>Dataproc on Compute Engine:</strong> Starting August 18, 2025, the following diagnostic properties will be enabled by default for newly created Dataproc clusters:</p>
+<ul>
+<li><code>dataproc:diagnostic.capture.enabled</code>: Enables the collection of <a href="https://cloud.google.com/dataproc/docs/support/diagnose-clusters#checkpoint_data">checkpoint data</a> in the cluster <a href="https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/staging-bucket">temp bucket</a>.</li>
+<li><code>dataproc:dataproc.logging.extended.enabled</code>: Enables the collection of logs for the <a href="https://cloud.google.com/dataproc/docs/concepts/components/overview">Knox, Zeppelin, Ranger-usersync, Jupyter_notebook, Jupyter_kernel_gateway components</a> and the <a href="https://cloud.google.com/dataproc/docs/concepts/jobs/history-server">Spark History-Server</a> in <a href="https://cloud.google.com/dataproc/docs/guides/logging#cluster_logs_in">Cloud Logging</a>.</li>
+<li><code>dataproc:dataproc.logging.syslog.enabled</code>: Enables the collection of VM syslogs in <a href="https://cloud.google.com/dataproc/docs/guides/logging#cluster_logs_in">Cloud Logging</a>.</li>
+</ul>
+<p>To continue using the <a href="https://cloud.google.com/stackdriver/docs/solutions/agents/ops-agent">Ops Agent</a> initialization action <a href="https://github.com/GoogleCloudDataproc/initialization-actions/blob/main/opsagent/opsagent.sh"><code>opsagent.sh</code></a> to ingest syslogs from Dataproc cluster nodes, do one of the following:</p>
+<ul>
+<li>Recommended: Use <a href="https://github.com/GoogleCloudDataproc/initialization-actions/blob/main/opsagent/opsagent_nosyslog.sh"><code>opsagent_nosyslog.sh</code></a> since
+    VM syslogs will now be emitted by default from Dataproc clusters.</li>
+<li>Set the <code>dataproc:dataproc.logging.syslog.enabled=false</code> and continue using <a href="https://github.com/GoogleCloudDataproc/initialization-actions/blob/main/opsagent/opsagent.sh"><code>opsagent.sh</code></a>
+    to ingest syslogs.</li>
+</ul>
+<p><strong>Note:</strong> To disable any of these features, set the corresponding property to <code>false</code> during cluster creation.</p>]]></content>
     <summary>Diagnostic data collection will be enabled by default for new Dataproc clusters starting August 18, 2025. This includes checkpoint data, extended logs for components like Spark History-Server, and VM syslogs in Cloud Logging. If you use the Ops Agent initialization action, consider using `opsagent_nosyslog.sh` or disabling the syslog property to avoid duplicate logs.</summary>
     <title>Announcement: Enhanced Diagnostic Data Collection for Dataproc Clusters</title>
   </entry>
@@ -36,9 +36,8 @@
     <id>urn:github:multani:gcp-changelog:dataproc:2025-07-15:announcement:1</id>
     <published>2025-07-15T00:00:00+00:00</published>
     <updated>2025-07-15T00:00:00+00:00</updated>
-    <content type="text/markdown">New [Dataproc on Compute Engine subminor image versions](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):
-
-`2.3.6-debian12`, `2.3.6-ubuntu22`, and `2.3.6-rocky9`.</content>
+    <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters">Dataproc on Compute Engine subminor image versions</a>:</p>
+<p><code>2.3.6-debian12</code>, <code>2.3.6-ubuntu22</code>, and <code>2.3.6-rocky9</code>.</p>]]></content>
     <summary>New Dataproc image versions for Compute Engine are available, including 2.3.6-debian12, 2.3.6-ubuntu22, and 2.3.6-rocky9.</summary>
     <title>Announcement: New Dataproc Image Versions Available</title>
   </entry>
@@ -49,7 +48,7 @@
     <id>urn:github:multani:gcp-changelog:dataproc:2025-07-15:feature:2</id>
     <published>2025-07-15T00:00:00+00:00</published>
     <updated>2025-07-15T00:00:00+00:00</updated>
-    <content type="text/markdown">Dataproc now allows Dynamic update of [multi-tenancy clusters](https://cloud.google.com/dataproc/docs/concepts/iam/sa-multi-tenancy#create_a_secure_multi-tenancy_cluster).</content>
+    <content type="html"><![CDATA[<p>Dataproc now allows Dynamic update of <a href="https://cloud.google.com/dataproc/docs/concepts/iam/sa-multi-tenancy#create_a_secure_multi-tenancy_cluster">multi-tenancy clusters</a>.</p>]]></content>
     <summary>You can now dynamically update your multi-tenancy clusters in Dataproc.</summary>
     <title>Feature: Dataproc Dataproc Dynamic Update for Multi-Tenancy Clusters</title>
   </entry>
@@ -60,7 +59,7 @@
     <id>urn:github:multani:gcp-changelog:dataproc:2025-07-07:feature:0</id>
     <published>2025-07-07T00:00:00+00:00</published>
     <updated>2025-07-07T00:00:00+00:00</updated>
-    <content type="text/markdown">The [Cluster Scheduled Stop](https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/scheduled-stop) feature is available in [preview](https://cloud.google.com/products#product-launch-stages). You can use this feature to stop clusters after a specified idle period, at a specified future time, or after a specified period from the cluster creation or update request.</content>
+    <content type="html"><![CDATA[<p>The <a href="https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/scheduled-stop">Cluster Scheduled Stop</a> feature is available in <a href="https://cloud.google.com/products#product-launch-stages">preview</a>. You can use this feature to stop clusters after a specified idle period, at a specified future time, or after a specified period from the cluster creation or update request.</p>]]></content>
     <summary>You can now stop your Dataproc clusters automatically after a specified idle period, at a specific time, or after a certain period from creation or update.</summary>
     <title>Feature: Dataproc Scheduled Stop Feature Now in Preview</title>
   </entry>
@@ -71,9 +70,8 @@
     <id>urn:github:multani:gcp-changelog:dataproc:2025-07-04:announcement:0</id>
     <published>2025-07-04T00:00:00+00:00</published>
     <updated>2025-07-04T00:00:00+00:00</updated>
-    <content type="text/markdown">New [Dataproc on Compute Engine subminor image versions](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):
-
-`2.3.5-debian12`, `2.3.5-ubuntu22`, and `2.3.5-rocky9`.</content>
+    <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters">Dataproc on Compute Engine subminor image versions</a>:</p>
+<p><code>2.3.5-debian12</code>, <code>2.3.5-ubuntu22</code>, and <code>2.3.5-rocky9</code>.</p>]]></content>
     <summary>New Dataproc version 2.3.5 is available for Compute Engine, with image versions supporting Debian 12, Ubuntu 22, and Rocky 9.</summary>
     <title>Announcement: Dataproc Version 2.3.5 Available</title>
   </entry>
@@ -84,7 +82,7 @@
     <id>urn:github:multani:gcp-changelog:dataproc:2025-07-04:changed:1</id>
     <published>2025-07-04T00:00:00+00:00</published>
     <updated>2025-07-04T00:00:00+00:00</updated>
-    <content type="text/markdown">[**Serverless for Apache Spark**](https://cloud.google.com/dataproc-serverless/docs) (formerly known as **Dataproc Serverless for Spark**) now supports [OS Login organization policy](https://cloud.google.com/compute/docs/oslogin/manage-oslogin-in-an-org#set-org-policy). Organizations, folders, and projects that enforce the OS Login policy can now use Serverless for Apache Spark.</content>
+    <content type="html"><![CDATA[<p><a href="https://cloud.google.com/dataproc-serverless/docs"><strong>Serverless for Apache Spark</strong></a> (formerly known as <strong>Dataproc Serverless for Spark</strong>) now supports <a href="https://cloud.google.com/compute/docs/oslogin/manage-oslogin-in-an-org#set-org-policy">OS Login organization policy</a>. Organizations, folders, and projects that enforce the OS Login policy can now use Serverless for Apache Spark.</p>]]></content>
     <summary>Serverless for Apache Spark now supports the OS Login organization policy, allowing organizations to use it even when this policy is enforced.</summary>
     <title>Changed: Serverless for Apache Spark supports OS Login</title>
   </entry>
@@ -95,12 +93,13 @@
     <id>urn:github:multani:gcp-changelog:dataproc:2025-07-01:announcement:0</id>
     <published>2025-07-01T00:00:00+00:00</published>
     <updated>2025-07-01T00:00:00+00:00</updated>
-    <content type="text/markdown">New [Dataproc Serverless for Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
-
-* 1.1.110
-* 1.2.54
-* 2.2.54
-* 2.3.5</content>
+    <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Dataproc Serverless for Spark runtime versions</a>:</p>
+<ul>
+<li>1.1.110</li>
+<li>1.2.54</li>
+<li>2.2.54</li>
+<li>2.3.5</li>
+</ul>]]></content>
     <summary>New runtime versions are available for Dataproc Serverless for Spark. The updated versions include 1.1.110, 1.2.54, 2.2.54, and 2.3.5.</summary>
     <title>Announcement: Dataproc Serverless Runtime Updates</title>
   </entry>
@@ -111,12 +110,13 @@
     <id>urn:github:multani:gcp-changelog:dataproc:2025-06-20:announcement:0</id>
     <published>2025-06-20T00:00:00+00:00</published>
     <updated>2025-06-20T00:00:00+00:00</updated>
-    <content type="text/markdown">New [Dataproc Serverless for Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
-
-* 1.1.109
-* 1.2.53
-* 2.2.53
-* 2.3.4</content>
+    <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Dataproc Serverless for Spark runtime versions</a>:</p>
+<ul>
+<li>1.1.109</li>
+<li>1.2.53</li>
+<li>2.2.53</li>
+<li>2.3.4</li>
+</ul>]]></content>
     <summary>We're excited to announce the release of new Dataproc Serverless runtime versions. This update includes versions 1.1.109, 1.2.53, 2.2.53, and 2.3.4, providing you with the latest features and improvements for your data processing needs.</summary>
     <title>Announcement: New Dataproc Serverless Runtime Versions Released</title>
   </entry>
@@ -127,7 +127,7 @@
     <id>urn:github:multani:gcp-changelog:dataproc:2025-06-20:changed:1</id>
     <published>2025-06-20T00:00:00+00:00</published>
     <updated>2025-06-20T00:00:00+00:00</updated>
-    <content type="text/markdown">**Dataproc Serverless for Spark:** Upgraded the Cloud Storage connector version to `2.2.28` in the `1.1` runtime.</content>
+    <content type="html"><![CDATA[<p><strong>Dataproc Serverless for Spark:</strong> Upgraded the Cloud Storage connector version to <code>2.2.28</code> in the <code>1.1</code> runtime.</p>]]></content>
     <summary>The Cloud Storage connector version for Dataproc Serverless for Spark 1.1 runtime has been updated to 2.2.28.</summary>
     <title>Changed: Dataproc Serverless Update</title>
   </entry>
@@ -138,7 +138,7 @@
     <id>urn:github:multani:gcp-changelog:dataproc:2025-06-20:changed:2</id>
     <published>2025-06-20T00:00:00+00:00</published>
     <updated>2025-06-20T00:00:00+00:00</updated>
-    <content type="text/markdown">**Dataproc Serverless for Spark:** The built-in Iceberg now supports the BigLake Iceberg REST catalog on the `2.2` runtime.</content>
+    <content type="html"><![CDATA[<p><strong>Dataproc Serverless for Spark:</strong> The built-in Iceberg now supports the BigLake Iceberg REST catalog on the <code>2.2</code> runtime.</p>]]></content>
     <summary>The Dataproc Serverless for Spark runtime 2.2 now supports the BigLake Iceberg REST catalog with the built-in Iceberg.</summary>
     <title>Changed: Dataproc Serverless for Spark runtime 2.2 supports BigLake Iceberg REST catalog</title>
   </entry>
@@ -149,12 +149,13 @@
     <id>urn:github:multani:gcp-changelog:dataproc:2025-06-20:announcement:3</id>
     <published>2025-06-20T00:00:00+00:00</published>
     <updated>2025-06-20T00:00:00+00:00</updated>
-    <content type="text/markdown">New [Dataproc on Compute Engine subminor image versions](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported_dataproc_versions):
-
-* 2.0.144-debian10, 2.0.144-rocky8, 2.0.144-ubuntu18
-* 2.1.92-debian11, 2.1.92-rocky8, 2.1.92-ubuntu20, 2.1.92-ubuntu20-arm
-* 2.2.60-debian12, 2.2.60-rocky9, 2.2.60-ubuntu22
-* 2.3.4-debian12, 2.3.4-rocky9, 2.3.4-ubuntu22</content>
+    <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported_dataproc_versions">Dataproc on Compute Engine subminor image versions</a>:</p>
+<ul>
+<li>2.0.144-debian10, 2.0.144-rocky8, 2.0.144-ubuntu18</li>
+<li>2.1.92-debian11, 2.1.92-rocky8, 2.1.92-ubuntu20, 2.1.92-ubuntu20-arm</li>
+<li>2.2.60-debian12, 2.2.60-rocky9, 2.2.60-ubuntu22</li>
+<li>2.3.4-debian12, 2.3.4-rocky9, 2.3.4-ubuntu22</li>
+</ul>]]></content>
     <summary>New Dataproc image versions are available, including updates for 2.0, 2.1, 2.2, and 2.3 lines, with support for various operating systems like Debian, Rocky Linux, and Ubuntu, including ARM architecture for Ubuntu 20.</summary>
     <title>Announcement: New Dataproc Image Versions Released</title>
   </entry>
@@ -165,7 +166,7 @@
     <id>urn:github:multani:gcp-changelog:dataproc:2025-06-20:changed:4</id>
     <published>2025-06-20T00:00:00+00:00</published>
     <updated>2025-06-20T00:00:00+00:00</updated>
-    <content type="text/markdown">**Dataproc on Compute Engine:** Upgraded the Cloud Storage connector version to `2.2.28` in the latest `2.0` and `2.1` images.</content>
+    <content type="html"><![CDATA[<p><strong>Dataproc on Compute Engine:</strong> Upgraded the Cloud Storage connector version to <code>2.2.28</code> in the latest <code>2.0</code> and <code>2.1</code> images.</p>]]></content>
     <summary>The Cloud Storage connector version for Dataproc on Compute Engine has been updated to 2.2.28 in the 2.0 and 2.1 images.</summary>
     <title>Changed: Dataproc: Cloud Storage Connector Updated</title>
   </entry>
@@ -176,7 +177,7 @@
     <id>urn:github:multani:gcp-changelog:dataproc:2025-06-20:changed:5</id>
     <published>2025-06-20T00:00:00+00:00</published>
     <updated>2025-06-20T00:00:00+00:00</updated>
-    <content type="text/markdown">**Dataproc on Compute Engine:** Dataproc now automatically configures Knox Gateway configuration properties `gateway.dispatch.whitelist.services` and `gateway.dispatch.whitelist` for component web UIs within the cluster.</content>
+    <content type="html"><![CDATA[<p><strong>Dataproc on Compute Engine:</strong> Dataproc now automatically configures Knox Gateway configuration properties <code>gateway.dispatch.whitelist.services</code> and <code>gateway.dispatch.whitelist</code> for component web UIs within the cluster.</p>]]></content>
     <summary>Dataproc on Compute Engine now automatically configures Knox Gateway properties for component web UIs, simplifying cluster management.</summary>
     <title>Changed: Dataproc Auto-configures Knox Gateway</title>
   </entry>
@@ -187,11 +188,12 @@
     <id>urn:github:multani:gcp-changelog:dataproc:2025-06-20:fixed:6</id>
     <published>2025-06-20T00:00:00+00:00</published>
     <updated>2025-06-20T00:00:00+00:00</updated>
-    <content type="text/markdown">**Dataproc on Compute Engine:** Fixed a bug in `trino-jvm cluster properties`. To configure Trino JVM options prefixed with `trino-jvm`, follow these guidelines:
-
-* Configure JVM options starting with `-XX:`, without `:`. For JVM flags without a value, add `=` at the end. For example, add `trino-jvm:-XX+HeapDumpOnOutOfMemoryError=` as -`XX:+HeapDumpOnOutOfMemoryError` in the `jvm.config`.
-* Specify JVM options system properties with a `-D` prefix the same way. For example, `trino-jvm:-Dsystem.property.name=value`.
-* Any value containing `:` cannot be provided as a cluster property.</content>
+    <content type="html"><![CDATA[<p><strong>Dataproc on Compute Engine:</strong> Fixed a bug in <code>trino-jvm cluster properties</code>. To configure Trino JVM options prefixed with <code>trino-jvm</code>, follow these guidelines:</p>
+<ul>
+<li>Configure JVM options starting with <code>-XX:</code>, without <code>:</code>. For JVM flags without a value, add <code>=</code> at the end. For example, add <code>trino-jvm:-XX+HeapDumpOnOutOfMemoryError=</code> as -<code>XX:+HeapDumpOnOutOfMemoryError</code> in the <code>jvm.config</code>.</li>
+<li>Specify JVM options system properties with a <code>-D</code> prefix the same way. For example, <code>trino-jvm:-Dsystem.property.name=value</code>.</li>
+<li>Any value containing <code>:</code> cannot be provided as a cluster property.</li>
+</ul>]]></content>
     <summary>A bug in `trino-jvm cluster properties` for Dataproc on Compute Engine has been fixed. The guidelines for configuring Trino JVM options have been updated to ensure proper formatting for JVM flags and system properties.</summary>
     <title>Fixed: Dataproc: Trino JVM properties configuration fixed</title>
   </entry>
@@ -202,7 +204,7 @@
     <id>urn:github:multani:gcp-changelog:dataproc:2025-06-20:fixed:7</id>
     <published>2025-06-20T00:00:00+00:00</published>
     <updated>2025-06-20T00:00:00+00:00</updated>
-    <content type="text/markdown">**Dataproc on Compute Engine &amp; Dataproc Serverless:** Backported [GH-3198](https://github.com/apache/parquet-java/pull/3199) in Parquet addressing [CVE-2025-46762](https://nvd.nist.gov/vuln/detail/cve-2025-46762).</content>
+    <content type="html"><![CDATA[<p><strong>Dataproc on Compute Engine &amp; Dataproc Serverless:</strong> Backported <a href="https://github.com/apache/parquet-java/pull/3199">GH-3198</a> in Parquet addressing <a href="https://nvd.nist.gov/vuln/detail/cve-2025-46762">CVE-2025-46762</a>.</p>]]></content>
     <summary>A security vulnerability in Parquet (CVE-2025-46762) has been fixed and backported for Dataproc on Compute Engine and Dataproc Serverless. This update addresses the identified issue.</summary>
     <title>Fixed: Parquet security vulnerability fixed in Dataproc</title>
   </entry>
@@ -213,12 +215,13 @@
     <id>urn:github:multani:gcp-changelog:dataproc:2025-06-10:announcement:0</id>
     <published>2025-06-10T00:00:00+00:00</published>
     <updated>2025-06-10T00:00:00+00:00</updated>
-    <content type="text/markdown">New [Dataproc Serverless for Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
-
-* 1.1.108
-* 1.2.52
-* 2.2.52
-* 2.3.3</content>
+    <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Dataproc Serverless for Spark runtime versions</a>:</p>
+<ul>
+<li>1.1.108</li>
+<li>1.2.52</li>
+<li>2.2.52</li>
+<li>2.3.3</li>
+</ul>]]></content>
     <summary>New versions of Dataproc Serverless for Spark runtime are now available: 1.1.108, 1.2.52, 2.2.52, and 2.3.3.</summary>
     <title>Announcement: Dataproc Serverless for Spark Runtime Update</title>
   </entry>
@@ -229,15 +232,13 @@
     <id>urn:github:multani:gcp-changelog:dataproc:2025-06-09:announcement:0</id>
     <published>2025-06-09T00:00:00+00:00</published>
     <updated>2025-06-09T00:00:00+00:00</updated>
-    <content type="text/markdown">Announcing the GA release of [Dataproc on Compute Engine image version 2.3](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-2.3):
-
-Image Version 2.3 is a lightweight image that contains only core components, reducing exposure to Common Vulnerabilities and Exposures (CVEs). For higher security compliance requirements, use the image version 2.3 or later when creating a Dataproc cluster. Optional components can still be deployed on-demand.
-
-The following images are the latest available `2.3` subminor image versions:
-
-* `2.3.3-debian12`, `2.3.3-rocky9`, and `2.3.3-ubuntu22`
-
-`2.3` images include the components listed in [2.3.x release versions](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-2.3).</content>
+    <content type="html"><![CDATA[<p>Announcing the GA release of <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-2.3">Dataproc on Compute Engine image version 2.3</a>:</p>
+<p>Image Version 2.3 is a lightweight image that contains only core components, reducing exposure to Common Vulnerabilities and Exposures (CVEs). For higher security compliance requirements, use the image version 2.3 or later when creating a Dataproc cluster. Optional components can still be deployed on-demand.</p>
+<p>The following images are the latest available <code>2.3</code> subminor image versions:</p>
+<ul>
+<li><code>2.3.3-debian12</code>, <code>2.3.3-rocky9</code>, and <code>2.3.3-ubuntu22</code></li>
+</ul>
+<p><code>2.3</code> images include the components listed in <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-2.3">2.3.x release versions</a>.</p>]]></content>
     <summary>Google Cloud announces the general availability of Dataproc on Compute Engine image version 2.3. This version is a lightweight image with core components, enhancing security by reducing exposure to CVEs. It is recommended for clusters with high security compliance requirements, and optional components can be deployed as needed. The latest subminor versions available are 2.3.3 with Debian 12, Rocky 9, and Ubuntu 22.</summary>
     <title>Announcement: Dataproc on Compute Engine 2.3 Now Generally Available</title>
   </entry>
@@ -248,12 +249,13 @@ The following images are the latest available `2.3` subminor image versions:
     <id>urn:github:multani:gcp-changelog:dataproc:2025-06-06:announcement:0</id>
     <published>2025-06-06T00:00:00+00:00</published>
     <updated>2025-06-06T00:00:00+00:00</updated>
-    <content type="text/markdown">New [Dataproc Serverless for Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
-
-* 1.1.107
-* 1.2.51
-* 2.2.51
-* 2.3.2</content>
+    <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Dataproc Serverless for Spark runtime versions</a>:</p>
+<ul>
+<li>1.1.107</li>
+<li>1.2.51</li>
+<li>2.2.51</li>
+<li>2.3.2</li>
+</ul>]]></content>
     <summary>New runtime versions are available for Dataproc Serverless for Spark. The updated versions include 1.1.107, 1.2.51, 2.2.51, and 2.3.2.</summary>
     <title>Announcement: Dataproc Serverless for Spark runtime updates</title>
   </entry>
@@ -264,7 +266,7 @@ The following images are the latest available `2.3` subminor image versions:
     <id>urn:github:multani:gcp-changelog:dataproc:2025-06-06:fixed:1</id>
     <published>2025-06-06T00:00:00+00:00</published>
     <updated>2025-06-06T00:00:00+00:00</updated>
-    <content type="text/markdown">**Dataproc Serverless for Spark:** Fixed a bug that prevented the `spark.executorEnv` property from correctly setting specific executor environment variables across all runtimes.</content>
+    <content type="html"><![CDATA[<p><strong>Dataproc Serverless for Spark:</strong> Fixed a bug that prevented the <code>spark.executorEnv</code> property from correctly setting specific executor environment variables across all runtimes.</p>]]></content>
     <summary>A bug that affected the setting of specific executor environment variables in Dataproc Serverless for Spark has been resolved. The fix ensures that the `spark.executorEnv` property now functions correctly across all runtimes.</summary>
     <title>Fixed: Dataproc Serverless: Executor environment variable bug fixed</title>
   </entry>
@@ -275,11 +277,12 @@ The following images are the latest available `2.3` subminor image versions:
     <id>urn:github:multani:gcp-changelog:dataproc:2025-06-01:announcement:0</id>
     <published>2025-06-01T00:00:00+00:00</published>
     <updated>2025-06-01T00:00:00+00:00</updated>
-    <content type="text/markdown">New [Dataproc on Compute Engine subminor image versions](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported_dataproc_versions):
-
-* 2.0.143-debian10, 2.0.143-rocky8, 2.0.143-ubuntu18
-* 2.1.91-debian11, 2.1.90-rocky8, 2.1.91-ubuntu20, 2.1.91-ubuntu20-arm
-* 2.2.59-debian12, 2.2.59-rocky9, 2.2.59-ubuntu22</content>
+    <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported_dataproc_versions">Dataproc on Compute Engine subminor image versions</a>:</p>
+<ul>
+<li>2.0.143-debian10, 2.0.143-rocky8, 2.0.143-ubuntu18</li>
+<li>2.1.91-debian11, 2.1.90-rocky8, 2.1.91-ubuntu20, 2.1.91-ubuntu20-arm</li>
+<li>2.2.59-debian12, 2.2.59-rocky9, 2.2.59-ubuntu22</li>
+</ul>]]></content>
     <summary>New Dataproc image versions are available for Compute Engine, including updates to the 2.0, 2.1, and 2.2 series. These new versions support Debian 10/11/12, Rocky 8/9, and Ubuntu 18/20/22 operating systems, with some offering ARM compatibility.</summary>
     <title>Announcement: New Dataproc Image Versions Released</title>
   </entry>
@@ -290,7 +293,7 @@ The following images are the latest available `2.3` subminor image versions:
     <id>urn:github:multani:gcp-changelog:dataproc:2025-06-01:fixed:1</id>
     <published>2025-06-01T00:00:00+00:00</published>
     <updated>2025-06-01T00:00:00+00:00</updated>
-    <content type="text/markdown">**Dataproc on Compute Engine**: Fixed the ordering of log entries generated from clusters created with `2.2+` image versions by assigning timestamps closer to the log generation time.</content>
+    <content type="html"><![CDATA[<p><strong>Dataproc on Compute Engine</strong>: Fixed the ordering of log entries generated from clusters created with <code>2.2+</code> image versions by assigning timestamps closer to the log generation time.</p>]]></content>
     <summary>Timestamps for log entries from Dataproc on Compute Engine clusters with '2.2+' image versions have been corrected to more accurately reflect log generation time.</summary>
     <title>Fixed: Fixed log entry ordering in Dataproc</title>
   </entry>
@@ -301,12 +304,13 @@ The following images are the latest available `2.3` subminor image versions:
     <id>urn:github:multani:gcp-changelog:dataproc:2025-05-30:announcement:0</id>
     <published>2025-05-30T00:00:00+00:00</published>
     <updated>2025-05-30T00:00:00+00:00</updated>
-    <content type="text/markdown">New [Dataproc Serverless for Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
-
-* 1.1.106
-* 1.2.50
-* 2.2.50
-* 2.3.1</content>
+    <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Dataproc Serverless for Spark runtime versions</a>:</p>
+<ul>
+<li>1.1.106</li>
+<li>1.2.50</li>
+<li>2.2.50</li>
+<li>2.3.1</li>
+</ul>]]></content>
     <summary>New runtime versions are available for Dataproc Serverless for Spark, including 1.1.106, 1.2.50, 2.2.50, and 2.3.1.</summary>
     <title>Announcement: Dataproc Serverless for Spark Runtime Updates</title>
   </entry>
@@ -317,11 +321,12 @@ The following images are the latest available `2.3` subminor image versions:
     <id>urn:github:multani:gcp-changelog:dataproc:2025-05-30:announcement:1</id>
     <published>2025-05-30T00:00:00+00:00</published>
     <updated>2025-05-30T00:00:00+00:00</updated>
-    <content type="text/markdown">The support dates for **Dataproc on Compute Engine** image versions `2.0`, `2.1`, and `2.2` have been extended, as follows:
-
-* Image version `2.2`: Supported until 03/31/2027
-* Image version `2.1`: Supported until 03/31/2026
-* Image version `2.0` Supported until 09/30/2025</content>
+    <content type="html"><![CDATA[<p>The support dates for <strong>Dataproc on Compute Engine</strong> image versions <code>2.0</code>, <code>2.1</code>, and <code>2.2</code> have been extended, as follows:</p>
+<ul>
+<li>Image version <code>2.2</code>: Supported until 03/31/2027</li>
+<li>Image version <code>2.1</code>: Supported until 03/31/2026</li>
+<li>Image version <code>2.0</code> Supported until 09/30/2025</li>
+</ul>]]></content>
     <summary>The support periods for Dataproc on Compute Engine image versions 2.0, 2.1, and 2.2 have been extended. Version 2.2 is now supported until March 31, 2027, version 2.1 until March 31, 2026, and version 2.0 until September 30, 2025.</summary>
     <title>Announcement: Dataproc image version support extended</title>
   </entry>
@@ -332,7 +337,7 @@ The following images are the latest available `2.3` subminor image versions:
     <id>urn:github:multani:gcp-changelog:dataproc:2025-05-28:announcement:0</id>
     <published>2025-05-28T00:00:00+00:00</published>
     <updated>2025-05-28T00:00:00+00:00</updated>
-    <content type="text/markdown">Announcing the [General Availability](https://cloud.google.com/products#product-launch-stages) release of **Spark on BigQuery**, which lets you create a serverless Spark session in a [BigQuery Studio](https://cloud.google.com/bigquery/docs/query-overview#bigquery-studio) notebook. Use this feature to create, run, and test Spark jobs quickly and easily. For more information, see [Run PySpark code in BigQuery Studio notebooks](https://cloud.google.com/bigquery/docs/use-spark).</content>
+    <content type="html"><![CDATA[<p>Announcing the <a href="https://cloud.google.com/products#product-launch-stages">General Availability</a> release of <strong>Spark on BigQuery</strong>, which lets you create a serverless Spark session in a <a href="https://cloud.google.com/bigquery/docs/query-overview#bigquery-studio">BigQuery Studio</a> notebook. Use this feature to create, run, and test Spark jobs quickly and easily. For more information, see <a href="https://cloud.google.com/bigquery/docs/use-spark">Run PySpark code in BigQuery Studio notebooks</a>.</p>]]></content>
     <summary>We are excited to announce the general availability of Spark on BigQuery. This new feature allows you to create and run serverless Spark sessions directly within BigQuery Studio notebooks, making it easier than ever to develop and test your Spark jobs.</summary>
     <title>Announcement: Spark on BigQuery Now Generally Available</title>
   </entry>
@@ -343,12 +348,13 @@ The following images are the latest available `2.3` subminor image versions:
     <id>urn:github:multani:gcp-changelog:dataproc:2025-05-28:announcement:1</id>
     <published>2025-05-28T00:00:00+00:00</published>
     <updated>2025-05-28T00:00:00+00:00</updated>
-    <content type="text/markdown">New [Dataproc Serverless for Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
-
-* 1.1.105
-* 1.2.49
-* 2.2.49
-* 2.3.0</content>
+    <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Dataproc Serverless for Spark runtime versions</a>:</p>
+<ul>
+<li>1.1.105</li>
+<li>1.2.49</li>
+<li>2.2.49</li>
+<li>2.3.0</li>
+</ul>]]></content>
     <summary>New runtime versions for Dataproc Serverless for Spark are now available: 1.1.105, 1.2.49, 2.2.49, and 2.3.0.</summary>
     <title>Announcement: Dataproc Serverless Spark Runtime Updates</title>
   </entry>
@@ -359,15 +365,16 @@ The following images are the latest available `2.3` subminor image versions:
     <id>urn:github:multani:gcp-changelog:dataproc:2025-05-28:announcement:2</id>
     <published>2025-05-28T00:00:00+00:00</published>
     <updated>2025-05-28T00:00:00+00:00</updated>
-    <content type="text/markdown">Announcing the [General Availability (GA)](https://cloud.google.com/products#product-launch-stages) release of Dataproc Serverless for Spark runtime versions [2.3](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_23), which include the following components:
-
-* Spark 3.5.1
-* BigQuery Spark Connector 0.42.3
-* Cloud Storage Connector 3.1.2
-* Java 17
-* Python 3.11
-* R 4.3
-* Scala 2.13</content>
+    <content type="html"><![CDATA[<p>Announcing the <a href="https://cloud.google.com/products#product-launch-stages">General Availability (GA)</a> release of Dataproc Serverless for Spark runtime versions <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_23">2.3</a>, which include the following components:</p>
+<ul>
+<li>Spark 3.5.1</li>
+<li>BigQuery Spark Connector 0.42.3</li>
+<li>Cloud Storage Connector 3.1.2</li>
+<li>Java 17</li>
+<li>Python 3.11</li>
+<li>R 4.3</li>
+<li>Scala 2.13</li>
+</ul>]]></content>
     <summary>Dataproc Serverless for Spark is now generally available with runtime version 2.3, featuring Spark 3.5.1, BigQuery Spark Connector 0.42.3, Cloud Storage Connector 3.1.2, Java 17, Python 3.11, R 4.3, and Scala 2.13.</summary>
     <title>Announcement: Dataproc Serverless for Spark Now Generally Available</title>
   </entry>

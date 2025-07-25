@@ -12,6 +12,16 @@ API hub remains a free service. Enabling the Apigee API has no additional pricin
 
 For more information, see [Provision API hub in the Cloud console](https://cloud.google.com/apigee/docs/apihub/provision).
 
+### Changed
+
+**API hub deprovisioning changes**
+
+Deprovisioning an API hub instance now also deletes any associated Apigee organizations from your Google Cloud project, provided those Apigee organizations have no Apigee instances.
+
+If you deprovision an API hub instance, you can reprovision it later, but you'll need to wait 7 days before you can do so.
+
+For more information, see [Deprovision Apigee API hub](https://cloud.google.com/apigee/docs/apihub/deprovision).
+
 ---
 ## 2025-07-18
 

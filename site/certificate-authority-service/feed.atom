@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Certificate Authority Service</title>
   <subtitle>Changelog for Google Cloud product: Certificate Authority Service</subtitle>
   <updated>2025-06-27T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:certificate-authority-service</id>
-  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/certificate-authority-service/" />
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/certificate-authority-service/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -12,11 +12,9 @@
     <id>urn:github:multani:gcp-changelog:certificate-authority-service:2025-06-27:feature:0</id>
     <published>2025-06-27T00:00:00+00:00</published>
     <updated>2025-06-27T00:00:00+00:00</updated>
-    <content type="text/markdown">You can backdate the `not_before_time` of certificates by specifying the `backdate_duration` field within the issuance policy of your CA Pool. This new optional field in the issuance policy allows you to control the `not_before_time` of all certificates issued from a given CA Pool.
-
-If `backdate_duration` is not set: Certificates are issued with a `not_before_time` equal to the current issuance time.
-
-If `backdate_duration` is set: Certificates are issued with a `not_before_time` equal to the issuance time minus the specified `backdate_duration`. The `not_after_time` automatically adjusts to maintain the requested certificate lifetime.</content>
+    <content type="html"><![CDATA[<p>You can backdate the <code>not_before_time</code> of certificates by specifying the <code>backdate_duration</code> field within the issuance policy of your CA Pool. This new optional field in the issuance policy allows you to control the <code>not_before_time</code> of all certificates issued from a given CA Pool.</p>
+<p>If <code>backdate_duration</code> is not set: Certificates are issued with a <code>not_before_time</code> equal to the current issuance time.</p>
+<p>If <code>backdate_duration</code> is set: Certificates are issued with a <code>not_before_time</code> equal to the issuance time minus the specified <code>backdate_duration</code>. The <code>not_after_time</code> automatically adjusts to maintain the requested certificate lifetime.</p>]]></content>
     <summary>You can now control the "not before time" of certificates by setting a backdate duration in your CA Pool's issuance policy. This allows certificates to be issued with a "not before time" set to the current time minus a specified duration, with the "not after time" adjusting automatically to maintain the certificate's lifetime.</summary>
     <title>Feature: Control certificate "not before time" with backdating</title>
   </entry>

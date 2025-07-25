@@ -2,22 +2,14 @@
 
 ## 2025-07-24
 
-### Feature
-
-
-
 ### Stop in-progress chat responses with IntelliJ
 
 #### IntelliJ Gemini Code Assist `1.22.1`
 
 You can
-[stop chat responses](/gemini/docs/codeassist/chat-gemini#stop_in-progress_chat)
+[stop chat responses](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#stop_in-progress_chat)
 with IntelliJ Gemini Code Assist `1.22.1`. Undesired long running or errant chat
 responses are immediately halted.
-
-### Announcement
-
-
 
 ### Thinking tokens
 
@@ -25,7 +17,7 @@ You'll see thinking insights into Gemini's thought process before IntelliJ
 Gemini Code Assist produces a response, to show you that Gemini is actively
 working on your request.
 
-![Thinking tokens in IntelliJ Code Gemini Code Assist.](/gemini/images/release-notes-images/intellij-thinking-tokens.png)
+![Thinking tokens in IntelliJ Code Gemini Code Assist.](https://cloud.google.com/gemini/images/release-notes-images/intellij-thinking-tokens.png)
 
 ---
 ## 2025-07-18
@@ -44,11 +36,11 @@ Code completion suggestion speed is improved with VS Code Extension `2.41.0`.
 The following features, which launched in Preview in May and June 2025, are now
 [Generally Available](https://cloud.google.com/terms/service-terms):
 
-* [Revert to checkpoints](/gemini/docs/codeassist/chat-gemini#revert_to_a_checkpoint_in_chat)
-* [Add selected code snippets to context](/gemini/docs/codeassist/chat-gemini#add_selected_code_snippets_to_context)
-* [Prompt Gemini Code Assist with selected terminal output](/gemini/docs/codeassist/chat-gemini#prompt_with_selected_terminal_output_using_chat)
-* [Specify filenames in your workspace](/gemini/docs/codeassist/chat-gemini#specify_files_and_folders_in_your_workspace_context)
-* [Exclude files from Gemini Code Assist use](/gemini/docs/codeassist/create-aiexclude-file)
+* [Revert to checkpoints](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#revert_to_a_checkpoint_in_chat)
+* [Add selected code snippets to context](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#add_selected_code_snippets_to_context)
+* [Prompt Gemini Code Assist with selected terminal output](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#prompt_with_selected_terminal_output_using_chat)
+* [Specify filenames in your workspace](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#specify_files_and_folders_in_your_workspace_context)
+* [Exclude files from Gemini Code Assist use](https://cloud.google.com/gemini/docs/codeassist/create-aiexclude-file)
 
 ---
 ## 2025-07-15

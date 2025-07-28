@@ -1,5 +1,39 @@
 # Cloud Composer
 
+## 2025-07-28
+
+### Fixed
+
+Fixed an issue that caused unexpected restarts of Airflow component workloads
+in the environment's cluster.
+
+### Fixed
+
+*(Cloud Composer 3)* The `DAGS_FOLDER` reserved environment variable now
+correctly points to the local directory where DAG files are stored.
+
+### Changed
+
+New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3)
+are available in Cloud Composer 3:
+
+* [composer-3-airflow-2.10.5-build.10](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-10) (default)
+* [composer-3-airflow-2.9.3-build.30](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-30)
+
+### Changed
+
+New [images](https://cloud.google.com/composer/docs/composer-versions#images-composer-2)
+are available in Cloud Composer 2:
+
+* [composer-2.13.8-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-13-8-airflow-2-10-5) (default)
+* [composer-2.13.8-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-13-8-airflow-2-9-3)
+
+### Deprecated
+
+Cloud Composer version 2.8.6 has reached its
+[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support).
+
+---
 ## 2025-07-24
 
 ### Feature

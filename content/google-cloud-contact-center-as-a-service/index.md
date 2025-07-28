@@ -1,5 +1,14 @@
 # Google Cloud Contact Center as a Service
 
+## 2025-07-24
+
+### Announcement
+
+**Mobile SDK patch 2.13.1 is released**
+
+This patch fixes an issue where the Android SDK didn't support deep linking in the customizable link format.
+
+---
 ## 2025-07-10
 
 ### Announcement

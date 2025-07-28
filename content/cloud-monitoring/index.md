@@ -1,5 +1,15 @@
 # Cloud Monitoring
 
+## 2025-07-24
+
+### Feature
+
+You can now monitor and understand the costs and utilization of resources in
+your Google Cloud project or App Hub application
+by using the Cost Explorer. This feature is in Public Preview. For more
+information, see [Optimize costs with the Cost Explorer](https://cloud.google.com//stackdriver/docs/costs/optimize-costs).
+
+---
 ## 2025-07-17
 
 ### Feature

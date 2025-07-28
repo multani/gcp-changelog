@@ -1,5 +1,28 @@
 # Google SecOps
 
+## 2025-07-27
+
+### Feature
+
+**Automate tasks with Playbook Loops**
+
+This feature is in Preview.
+
+Playbook functionality has been enhanced to include **Playbook Loops**. This feature update lets playbooks iterate over lists or entities, performing one or more actions for each item. It streamlines automation by eliminating the need for duplicated steps or custom actions when processing multiple items. You can configure Playbook Loops directly within a playbook or inside a playbook block.
+
+For setup instructions and use case examples , see [Automate tasks with Playbook Loops](https://cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/playbook-loops).
+
+### Feature
+
+**Playbook Simulator enhancements for loops**
+
+The Playbook Simulator now supports visualization and debugging of playbooks that contain loops. This lets you clearly see and navigate through each loop iteration within the simulator viewer.
+
+Additionally, the step display order has been updated to show actions from top to bottom (oldest at the top, newest at the bottom), with automatic scrolling to the most recent activity.
+
+For more details, see [Loops in the Playbook Simulator](https://cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/playbook-loops#loops-in-the-playbook-simulator).
+
+---
 ## 2025-07-22
 
 ### Feature

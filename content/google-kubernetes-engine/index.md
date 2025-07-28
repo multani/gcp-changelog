@@ -1,5 +1,502 @@
 # Google Kubernetes Engine
 
+## 2025-07-25
+
+### Changed
+
+#### (2025-R31) Version updates
+
+**Note:** Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.
+
+* Version [1.33.2-gke.1111000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332) is now the default version for cluster creation in the Extended channel.
+* The following versions are now available in the Extended channel:
+  + [1.28.15-gke.2488000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815)
+  + [1.29.15-gke.1656000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915)
+  + [1.30.12-gke.1340000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012)
+  + [1.31.10-gke.1034000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13110)
+  + [1.32.6-gke.1025000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1326)
+  + [1.33.2-gke.1240000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332)
+* The following versions are no longer available in the Extended channel:
+  + 1.28.15-gke.2303000
+  + 1.28.15-gke.2380000
+  + 1.28.15-gke.2428000
+  + 1.28.15-gke.2445000
+  + 1.28.15-gke.2475000
+  + 1.29.15-gke.1415000
+  + 1.29.15-gke.1493000
+  + 1.29.15-gke.1549000
+  + 1.29.15-gke.1594000
+  + 1.29.15-gke.1639000
+  + 1.30.12-gke.1168000
+  + 1.30.12-gke.1208000
+  + 1.30.12-gke.1246000
+  + 1.30.12-gke.1279000
+  + 1.30.12-gke.1320000
+  + 1.31.9-gke.1044001
+  + 1.31.9-gke.1119000
+  + 1.31.9-gke.1176000
+  + 1.31.9-gke.1218000
+  + 1.31.9-gke.1287000
+  + 1.32.4-gke.1415000
+  + 1.32.4-gke.1603000
+  + 1.32.4-gke.1698000
+  + 1.32.4-gke.1767000
+  + 1.33.1-gke.1107000
+  + 1.33.1-gke.1386000
+  + 1.33.1-gke.1584000
+  + 1.33.1-gke.1744000
+  + 1.33.2-gke.1043000
+* Auto-upgrade targets are now available for the following minor versions:
+  + Control planes and nodes with auto-upgrade enabled in the Extended channel will be upgraded from version 1.27 to version [1.28.15-gke.2456000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815) with this release.
+* The following patch-only version auto-upgrade targets are now available for clusters with [maintenance exclusions](https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions) or other factors preventing minor version upgrades:
+  + Control planes and nodes with auto-upgrade enabled in the Extended channel will be upgraded from version 1.28 to version [1.28.15-gke.2456000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815) with this release.
+  + Control planes and nodes with auto-upgrade enabled in the Extended channel will be upgraded from version 1.29 to version [1.29.15-gke.1607000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915) with this release.
+  + Control planes and nodes with auto-upgrade enabled in the Extended channel will be upgraded from version 1.30 to version [1.30.12-gke.1333000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012) with this release.
+  + Control planes and nodes with auto-upgrade enabled in the Extended channel will be upgraded from version 1.31 to version [1.31.10-gke.1021000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13110) with this release.
+  + Control planes and nodes with auto-upgrade enabled in the Extended channel will be upgraded from version 1.32 to version [1.32.6-gke.1013000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1326) with this release.
+  + Control planes and nodes with auto-upgrade enabled in the Extended channel will be upgraded from version 1.33 to version [1.33.2-gke.1111000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332) with this release.
+
+    ### Changed
+
+    #### (2025-R31) Version updates
+
+    **Note:** Your clusters might not have these versions available.
+    Rollouts are already in progress when we publish the release notes, and can take
+    multiple days to complete across all Google Cloud zones.
+    - Version [1.33.2-gke.1111000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332) is now the default version for cluster creation.
+    - The following versions are now available:
+      * [1.30.12-gke.1390000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012)
+      * [1.31.11-gke.1002000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13111)
+      * [1.32.6-gke.1096000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1326)
+      * [1.33.2-gke.4655000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332)
+    - The following node versions are now available:
+      * [1.28.15-gke.2488000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815)
+      * [1.29.15-gke.1656000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915)
+      * [1.30.12-gke.1390000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012)
+      * [1.31.11-gke.1002000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13111)
+      * [1.32.6-gke.1096000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1326)
+      * [1.33.2-gke.4655000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332)
+    - The following versions are no longer available:
+      * 1.30.12-gke.1086000
+      * 1.30.12-gke.1151000
+      * 1.30.12-gke.1168000
+      * 1.30.12-gke.1208000
+      * 1.30.12-gke.1246000
+      * 1.31.8-gke.1113000
+      * 1.31.9-gke.1005000
+      * 1.31.9-gke.1044001
+      * 1.31.9-gke.1119000
+      * 1.31.9-gke.1176000
+      * 1.32.2-gke.1182003
+      * 1.32.4-gke.1353003
+      * 1.32.4-gke.1603000
+      * 1.33.1-gke.1107000
+      * 1.33.1-gke.1386000
+      * 1.33.1-gke.1744000
+      * 1.33.1-gke.1959000
+      * 1.33.2-gke.1384000
+    - Auto-upgrade targets are now available for the following minor versions:
+      * Control planes and nodes with auto-upgrade enabled will be upgraded from version 1.29 to version [1.30.12-gke.1333000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012) with this release.
+      * Control planes and nodes with auto-upgrade enabled will be upgraded from version 1.30 to version [1.31.10-gke.1021000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13110) with this release.
+      * Control planes and nodes with auto-upgrade enabled will be upgraded from version 1.31 to version [1.32.4-gke.1698000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1324) with this release.
+    - The following patch-only version auto-upgrade targets are now available for clusters with [maintenance exclusions](https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions) or other factors preventing minor version upgrades:
+      * Control planes and nodes with auto-upgrade enabled will be upgraded from version 1.30 to version [1.30.12-gke.1333000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012) with this release.
+      * Control planes and nodes with auto-upgrade enabled will be upgraded from version 1.31 to version [1.31.10-gke.1021000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13110) with this release.
+      * Control planes and nodes with auto-upgrade enabled will be upgraded from version 1.32 to version [1.32.4-gke.1698000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1324) with this release.
+      * Control planes and nodes with auto-upgrade enabled will be upgraded from version 1.33 to version [1.33.2-gke.1111000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332) with this release.
+
+        ### Changed
+
+        #### (2025-R31) Version updates
+
+        **Note:** Your clusters might not have these versions available.
+        Rollouts are already in progress when we publish the release notes, and can take
+        multiple days to complete across all Google Cloud zones.
+        + Version [1.33.2-gke.1240000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332) is now the default version for cluster creation in the Rapid channel.
+        + The following versions are now available in the Rapid channel:
+          - [1.30.12-gke.1390000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012)
+          - [1.31.11-gke.1002000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13111)
+          - [1.32.6-gke.1096000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1326)
+          - [1.33.2-gke.4655000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332)
+        + The following versions are no longer available in the Rapid channel:
+          - 1.30.12-gke.1208000
+          - 1.30.12-gke.1246000
+          - 1.30.12-gke.1279000
+          - 1.30.12-gke.1320000
+          - 1.30.12-gke.1333000
+          - 1.31.9-gke.1119000
+          - 1.31.9-gke.1176000
+          - 1.31.9-gke.1218000
+          - 1.31.9-gke.1287000
+          - 1.31.10-gke.1021000
+          - 1.32.4-gke.1415000
+          - 1.32.4-gke.1603000
+          - 1.32.4-gke.1698000
+          - 1.32.4-gke.1767000
+          - 1.32.6-gke.1013000
+          - 1.33.1-gke.1584000
+          - 1.33.1-gke.1744000
+          - 1.33.1-gke.1959000
+          - 1.33.2-gke.1043000
+          - 1.33.2-gke.1111000
+          - 1.33.2-gke.1384000
+        + Auto-upgrade targets are now available for the following minor versions:
+          - Control planes and nodes with auto-upgrade enabled in the Rapid channel will be upgraded from version 1.29 to version [1.30.12-gke.1340000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012) with this release.
+          - Control planes and nodes with auto-upgrade enabled in the Rapid channel will be upgraded from version 1.30 to version [1.31.10-gke.1034000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13110) with this release.
+          - Control planes and nodes with auto-upgrade enabled in the Rapid channel will be upgraded from version 1.31 to version [1.32.6-gke.1025000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1326) with this release.
+          - Control planes and nodes with auto-upgrade enabled in the Rapid channel will be upgraded from version 1.32 to version [1.33.2-gke.1240000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332) with this release.
+        + The following patch-only version auto-upgrade targets are now available for clusters with [maintenance exclusions](https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions) or other factors preventing minor version upgrades:
+          - Control planes and nodes with auto-upgrade enabled in the Rapid channel will be upgraded from version 1.30 to version [1.30.12-gke.1340000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012) with this release.
+          - Control planes and nodes with auto-upgrade enabled in the Rapid channel will be upgraded from version 1.31 to version [1.31.10-gke.1034000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13110) with this release.
+          - Control planes and nodes with auto-upgrade enabled in the Rapid channel will be upgraded from version 1.32 to version [1.32.6-gke.1025000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1326) with this release.
+          - Control planes and nodes with auto-upgrade enabled in the Rapid channel will be upgraded from version 1.33 to version [1.33.2-gke.1240000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332) with this release.
+
+            ### Changed
+
+            #### (2025-R31) Version updates
+
+            **Note:** Your clusters might not have these versions available.
+            Rollouts are already in progress when we publish the release notes, and can take
+            multiple days to complete across all Google Cloud zones.
+            * Version [1.33.2-gke.1111000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332) is now the default version for cluster creation in the Regular channel.
+            * The following versions are now available in the Regular channel:
+              + [1.30.12-gke.1340000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012)
+              + [1.31.10-gke.1034000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13110)
+              + [1.32.6-gke.1025000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1326)
+              + [1.33.2-gke.1240000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332)
+            * The following versions are no longer available in the Regular channel:
+              + 1.30.12-gke.1168000
+              + 1.30.12-gke.1208000
+              + 1.30.12-gke.1246000
+              + 1.30.12-gke.1279000
+              + 1.30.12-gke.1320000
+              + 1.31.9-gke.1044001
+              + 1.31.9-gke.1119000
+              + 1.31.9-gke.1176000
+              + 1.31.9-gke.1218000
+              + 1.31.9-gke.1287000
+              + 1.32.4-gke.1415000
+              + 1.32.4-gke.1603000
+              + 1.32.4-gke.1698000
+              + 1.32.4-gke.1767000
+              + 1.33.1-gke.1107000
+              + 1.33.1-gke.1386000
+              + 1.33.1-gke.1584000
+              + 1.33.1-gke.1744000
+              + 1.33.2-gke.1043000
+            * Auto-upgrade targets are now available for the following minor versions:
+              + Control planes and nodes with auto-upgrade enabled in the Regular channel will be upgraded from version 1.29 to version [1.30.12-gke.1333000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012) with this release.
+              + Control planes and nodes with auto-upgrade enabled in the Regular channel will be upgraded from version 1.30 to version [1.31.10-gke.1021000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13110) with this release.
+              + Control planes and nodes with auto-upgrade enabled in the Regular channel will be upgraded from version 1.31 to version [1.32.6-gke.1013000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1326) with this release.
+            * The following patch-only version auto-upgrade targets are now available for clusters with [maintenance exclusions](https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions) or other factors preventing minor version upgrades:
+              + Control planes and nodes with auto-upgrade enabled in the Regular channel will be upgraded from version 1.30 to version [1.30.12-gke.1333000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012) with this release.
+              + Control planes and nodes with auto-upgrade enabled in the Regular channel will be upgraded from version 1.31 to version [1.31.10-gke.1021000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13110) with this release.
+              + Control planes and nodes with auto-upgrade enabled in the Regular channel will be upgraded from version 1.32 to version [1.32.6-gke.1013000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1326) with this release.
+              + Control planes and nodes with auto-upgrade enabled in the Regular channel will be upgraded from version 1.33 to version [1.33.2-gke.1111000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332) with this release.
+
+                ### Changed
+
+                #### (2025-R31) Version updates
+
+                **Note:** Your clusters might not have these versions available.
+                Rollouts are already in progress when we publish the release notes, and can take
+                multiple days to complete across all Google Cloud zones.
+                - Version [1.32.4-gke.1698000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1324) is now the default version for cluster creation in the Stable channel.
+                - The following versions are now available in the Stable channel:
+                  * [1.30.12-gke.1320000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012)
+                  * [1.31.9-gke.1287000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v1319)
+                  * [1.32.4-gke.1767000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1324)
+                  * [1.33.2-gke.1043000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332)
+                - The following versions are no longer available in the Stable channel:
+                  * 1.30.12-gke.1086000
+                  * 1.30.12-gke.1151000
+                  * 1.30.12-gke.1168000
+                  * 1.30.12-gke.1208000
+                  * 1.30.12-gke.1246000
+                  * 1.31.8-gke.1113000
+                  * 1.31.9-gke.1005000
+                  * 1.31.9-gke.1044001
+                  * 1.31.9-gke.1119000
+                  * 1.31.9-gke.1176000
+                  * 1.32.2-gke.1297002
+                  * 1.32.4-gke.1415000
+                  * 1.32.4-gke.1603000
+                - Auto-upgrade targets are now available for the following minor versions:
+                  * Control planes and nodes with auto-upgrade enabled in the Stable channel will be upgraded from version 1.29 to version [1.30.12-gke.1279000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012) with this release.
+                  * Control planes and nodes with auto-upgrade enabled in the Stable channel will be upgraded from version 1.30 to version [1.31.9-gke.1218000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v1319) with this release.
+                  * Control planes and nodes with auto-upgrade enabled in the Stable channel will be upgraded from version 1.31 to version [1.32.4-gke.1698000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1324) with this release.
+                - The following patch-only version auto-upgrade targets are now available for clusters with [maintenance exclusions](https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions) or other factors preventing minor version upgrades:
+                  * Control planes and nodes with auto-upgrade enabled in the Stable channel will be upgraded from version 1.30 to version [1.30.12-gke.1279000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012) with this release.
+                  * Control planes and nodes with auto-upgrade enabled in the Stable channel will be upgraded from version 1.31 to version [1.31.9-gke.1218000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v1319) with this release.
+                  * Control planes and nodes with auto-upgrade enabled in the Stable channel will be upgraded from version 1.32 to version [1.32.4-gke.1698000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1324) with this release.
+                  * Control planes and nodes with auto-upgrade enabled in the Stable channel will be upgraded from version 1.33 to version [1.33.2-gke.1043000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332) with this release.
+
+                    ### Changed
+
+                    #### (2025-R31) Version updates
+
+                    GKE cluster versions have been updated.
+
+                    **New versions available for upgrades and new clusters.**
+
+                    The following Kubernetes versions are now available for new clusters and for
+                    opt-in control plane upgrades and node upgrades for existing clusters. For more
+                    information on versioning and upgrades, see [GKE versioning and support](https://cloud.google.com/kubernetes-engine/versioning)
+                    and [Upgrades](https://cloud.google.com/kubernetes-engine/upgrades).
+
+                    ### Rapid channel
+
+                    **Note**: Your clusters might not have these versions available.
+                    Rollouts are already in progress when we publish the release notes, and can take
+                    multiple days to complete across all Google Cloud zones.
+                    + Version [1.33.2-gke.1240000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332) is now the default version for cluster creation in the Rapid channel.
+                    + The following versions are now available in the Rapid channel:
+                      - [1.30.12-gke.1390000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012)
+                      - [1.31.11-gke.1002000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13111)
+                      - [1.32.6-gke.1096000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1326)
+                      - [1.33.2-gke.4655000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332)
+                    + The following versions are no longer available in the Rapid channel:
+                      - 1.30.12-gke.1208000
+                      - 1.30.12-gke.1246000
+                      - 1.30.12-gke.1279000
+                      - 1.30.12-gke.1320000
+                      - 1.30.12-gke.1333000
+                      - 1.31.9-gke.1119000
+                      - 1.31.9-gke.1176000
+                      - 1.31.9-gke.1218000
+                      - 1.31.9-gke.1287000
+                      - 1.31.10-gke.1021000
+                      - 1.32.4-gke.1415000
+                      - 1.32.4-gke.1603000
+                      - 1.32.4-gke.1698000
+                      - 1.32.4-gke.1767000
+                      - 1.32.6-gke.1013000
+                      - 1.33.1-gke.1584000
+                      - 1.33.1-gke.1744000
+                      - 1.33.1-gke.1959000
+                      - 1.33.2-gke.1043000
+                      - 1.33.2-gke.1111000
+                      - 1.33.2-gke.1384000
+                    + Auto-upgrade targets are now available for the following minor versions:
+                      - Control planes and nodes with auto-upgrade enabled in the Rapid channel will be upgraded from version 1.29 to version [1.30.12-gke.1340000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012) with this release.
+                      - Control planes and nodes with auto-upgrade enabled in the Rapid channel will be upgraded from version 1.30 to version [1.31.10-gke.1034000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13110) with this release.
+                      - Control planes and nodes with auto-upgrade enabled in the Rapid channel will be upgraded from version 1.31 to version [1.32.6-gke.1025000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1326) with this release.
+                      - Control planes and nodes with auto-upgrade enabled in the Rapid channel will be upgraded from version 1.32 to version [1.33.2-gke.1240000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332) with this release.
+                    + The following patch-only version auto-upgrade targets are now available for clusters with [maintenance exclusions](https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions) or other factors preventing minor version upgrades:
+                      - Control planes and nodes with auto-upgrade enabled in the Rapid channel will be upgraded from version 1.30 to version [1.30.12-gke.1340000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012) with this release.
+                      - Control planes and nodes with auto-upgrade enabled in the Rapid channel will be upgraded from version 1.31 to version [1.31.10-gke.1034000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13110) with this release.
+                      - Control planes and nodes with auto-upgrade enabled in the Rapid channel will be upgraded from version 1.32 to version [1.32.6-gke.1025000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1326) with this release.
+                      - Control planes and nodes with auto-upgrade enabled in the Rapid channel will be upgraded from version 1.33 to version [1.33.2-gke.1240000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332) with this release.
+
+                    ### Regular channel
+
+                    **Note**: Your clusters might not have these versions available.
+                    Rollouts are already in progress when we publish the release notes, and can take
+                    multiple days to complete across all Google Cloud zones.
+                    + Version [1.33.2-gke.1111000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332) is now the default version for cluster creation in the Regular channel.
+                    + The following versions are now available in the Regular channel:
+                      - [1.30.12-gke.1340000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012)
+                      - [1.31.10-gke.1034000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13110)
+                      - [1.32.6-gke.1025000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1326)
+                      - [1.33.2-gke.1240000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332)
+                    + The following versions are no longer available in the Regular channel:
+                      - 1.30.12-gke.1168000
+                      - 1.30.12-gke.1208000
+                      - 1.30.12-gke.1246000
+                      - 1.30.12-gke.1279000
+                      - 1.30.12-gke.1320000
+                      - 1.31.9-gke.1044001
+                      - 1.31.9-gke.1119000
+                      - 1.31.9-gke.1176000
+                      - 1.31.9-gke.1218000
+                      - 1.31.9-gke.1287000
+                      - 1.32.4-gke.1415000
+                      - 1.32.4-gke.1603000
+                      - 1.32.4-gke.1698000
+                      - 1.32.4-gke.1767000
+                      - 1.33.1-gke.1107000
+                      - 1.33.1-gke.1386000
+                      - 1.33.1-gke.1584000
+                      - 1.33.1-gke.1744000
+                      - 1.33.2-gke.1043000
+                    + Auto-upgrade targets are now available for the following minor versions:
+                      - Control planes and nodes with auto-upgrade enabled in the Regular channel will be upgraded from version 1.29 to version [1.30.12-gke.1333000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012) with this release.
+                      - Control planes and nodes with auto-upgrade enabled in the Regular channel will be upgraded from version 1.30 to version [1.31.10-gke.1021000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13110) with this release.
+                      - Control planes and nodes with auto-upgrade enabled in the Regular channel will be upgraded from version 1.31 to version [1.32.6-gke.1013000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1326) with this release.
+                    + The following patch-only version auto-upgrade targets are now available for clusters with [maintenance exclusions](https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions) or other factors preventing minor version upgrades:
+                      - Control planes and nodes with auto-upgrade enabled in the Regular channel will be upgraded from version 1.30 to version [1.30.12-gke.1333000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012) with this release.
+                      - Control planes and nodes with auto-upgrade enabled in the Regular channel will be upgraded from version 1.31 to version [1.31.10-gke.1021000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13110) with this release.
+                      - Control planes and nodes with auto-upgrade enabled in the Regular channel will be upgraded from version 1.32 to version [1.32.6-gke.1013000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1326) with this release.
+                      - Control planes and nodes with auto-upgrade enabled in the Regular channel will be upgraded from version 1.33 to version [1.33.2-gke.1111000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332) with this release.
+
+                    ### Stable channel
+
+                    **Note**: Your clusters might not have these versions available.
+                    Rollouts are already in progress when we publish the release notes, and can take
+                    multiple days to complete across all Google Cloud zones.
+                    + Version [1.32.4-gke.1698000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1324) is now the default version for cluster creation in the Stable channel.
+                    + The following versions are now available in the Stable channel:
+                      - [1.30.12-gke.1320000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012)
+                      - [1.31.9-gke.1287000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v1319)
+                      - [1.32.4-gke.1767000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1324)
+                      - [1.33.2-gke.1043000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332)
+                    + The following versions are no longer available in the Stable channel:
+                      - 1.30.12-gke.1086000
+                      - 1.30.12-gke.1151000
+                      - 1.30.12-gke.1168000
+                      - 1.30.12-gke.1208000
+                      - 1.30.12-gke.1246000
+                      - 1.31.8-gke.1113000
+                      - 1.31.9-gke.1005000
+                      - 1.31.9-gke.1044001
+                      - 1.31.9-gke.1119000
+                      - 1.31.9-gke.1176000
+                      - 1.32.2-gke.1297002
+                      - 1.32.4-gke.1415000
+                      - 1.32.4-gke.1603000
+                    + Auto-upgrade targets are now available for the following minor versions:
+                      - Control planes and nodes with auto-upgrade enabled in the Stable channel will be upgraded from version 1.29 to version [1.30.12-gke.1279000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012) with this release.
+                      - Control planes and nodes with auto-upgrade enabled in the Stable channel will be upgraded from version 1.30 to version [1.31.9-gke.1218000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v1319) with this release.
+                      - Control planes and nodes with auto-upgrade enabled in the Stable channel will be upgraded from version 1.31 to version [1.32.4-gke.1698000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1324) with this release.
+                    + The following patch-only version auto-upgrade targets are now available for clusters with [maintenance exclusions](https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions) or other factors preventing minor version upgrades:
+                      - Control planes and nodes with auto-upgrade enabled in the Stable channel will be upgraded from version 1.30 to version [1.30.12-gke.1279000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012) with this release.
+                      - Control planes and nodes with auto-upgrade enabled in the Stable channel will be upgraded from version 1.31 to version [1.31.9-gke.1218000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v1319) with this release.
+                      - Control planes and nodes with auto-upgrade enabled in the Stable channel will be upgraded from version 1.32 to version [1.32.4-gke.1698000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1324) with this release.
+                      - Control planes and nodes with auto-upgrade enabled in the Stable channel will be upgraded from version 1.33 to version [1.33.2-gke.1043000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332) with this release.
+
+                    ### Extended channel
+
+                    **Note**: Your clusters might not have these versions available.
+                    Rollouts are already in progress when we publish the release notes, and can take
+                    multiple days to complete across all Google Cloud zones.
+                    + Version [1.33.2-gke.1111000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332) is now the default version for cluster creation in the Extended channel.
+                    + The following versions are now available in the Extended channel:
+                      - [1.28.15-gke.2488000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815)
+                      - [1.29.15-gke.1656000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915)
+                      - [1.30.12-gke.1340000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012)
+                      - [1.31.10-gke.1034000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13110)
+                      - [1.32.6-gke.1025000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1326)
+                      - [1.33.2-gke.1240000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332)
+                    + The following versions are no longer available in the Extended channel:
+                      - 1.28.15-gke.2303000
+                      - 1.28.15-gke.2380000
+                      - 1.28.15-gke.2428000
+                      - 1.28.15-gke.2445000
+                      - 1.28.15-gke.2475000
+                      - 1.29.15-gke.1415000
+                      - 1.29.15-gke.1493000
+                      - 1.29.15-gke.1549000
+                      - 1.29.15-gke.1594000
+                      - 1.29.15-gke.1639000
+                      - 1.30.12-gke.1168000
+                      - 1.30.12-gke.1208000
+                      - 1.30.12-gke.1246000
+                      - 1.30.12-gke.1279000
+                      - 1.30.12-gke.1320000
+                      - 1.31.9-gke.1044001
+                      - 1.31.9-gke.1119000
+                      - 1.31.9-gke.1176000
+                      - 1.31.9-gke.1218000
+                      - 1.31.9-gke.1287000
+                      - 1.32.4-gke.1415000
+                      - 1.32.4-gke.1603000
+                      - 1.32.4-gke.1698000
+                      - 1.32.4-gke.1767000
+                      - 1.33.1-gke.1107000
+                      - 1.33.1-gke.1386000
+                      - 1.33.1-gke.1584000
+                      - 1.33.1-gke.1744000
+                      - 1.33.2-gke.1043000
+                    + Auto-upgrade targets are now available for the following minor versions:
+                      - Control planes and nodes with auto-upgrade enabled in the Extended channel will be upgraded from version 1.27 to version [1.28.15-gke.2456000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815) with this release.
+                    + The following patch-only version auto-upgrade targets are now available for clusters with [maintenance exclusions](https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions) or other factors preventing minor version upgrades:
+                      - Control planes and nodes with auto-upgrade enabled in the Extended channel will be upgraded from version 1.28 to version [1.28.15-gke.2456000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815) with this release.
+                      - Control planes and nodes with auto-upgrade enabled in the Extended channel will be upgraded from version 1.29 to version [1.29.15-gke.1607000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915) with this release.
+                      - Control planes and nodes with auto-upgrade enabled in the Extended channel will be upgraded from version 1.30 to version [1.30.12-gke.1333000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012) with this release.
+                      - Control planes and nodes with auto-upgrade enabled in the Extended channel will be upgraded from version 1.31 to version [1.31.10-gke.1021000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13110) with this release.
+                      - Control planes and nodes with auto-upgrade enabled in the Extended channel will be upgraded from version 1.32 to version [1.32.6-gke.1013000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1326) with this release.
+                      - Control planes and nodes with auto-upgrade enabled in the Extended channel will be upgraded from version 1.33 to version [1.33.2-gke.1111000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332) with this release.
+
+                    ### No channel
+
+                    **Note**: Your clusters might not have these versions available.
+                    Rollouts are already in progress when we publish the release notes, and can take
+                    multiple days to complete across all Google Cloud zones.
+                    + Version [1.33.2-gke.1111000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332) is now the default version for cluster creation.
+                    + The following versions are now available:
+                      - [1.30.12-gke.1390000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012)
+                      - [1.31.11-gke.1002000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13111)
+                      - [1.32.6-gke.1096000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1326)
+                      - [1.33.2-gke.4655000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332)
+                    + The following node versions are now available:
+                      - [1.28.15-gke.2488000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815)
+                      - [1.29.15-gke.1656000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915)
+                      - [1.30.12-gke.1390000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012)
+                      - [1.31.11-gke.1002000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13111)
+                      - [1.32.6-gke.1096000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1326)
+                      - [1.33.2-gke.4655000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332)
+                    + The following versions are no longer available:
+                      - 1.30.12-gke.1086000
+                      - 1.30.12-gke.1151000
+                      - 1.30.12-gke.1168000
+                      - 1.30.12-gke.1208000
+                      - 1.30.12-gke.1246000
+                      - 1.31.8-gke.1113000
+                      - 1.31.9-gke.1005000
+                      - 1.31.9-gke.1044001
+                      - 1.31.9-gke.1119000
+                      - 1.31.9-gke.1176000
+                      - 1.32.2-gke.1182003
+                      - 1.32.4-gke.1353003
+                      - 1.32.4-gke.1603000
+                      - 1.33.1-gke.1107000
+                      - 1.33.1-gke.1386000
+                      - 1.33.1-gke.1744000
+                      - 1.33.1-gke.1959000
+                      - 1.33.2-gke.1384000
+                    + Auto-upgrade targets are now available for the following minor versions:
+                      - Control planes and nodes with auto-upgrade enabled will be upgraded from version 1.29 to version [1.30.12-gke.1333000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012) with this release.
+                      - Control planes and nodes with auto-upgrade enabled will be upgraded from version 1.30 to version [1.31.10-gke.1021000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13110) with this release.
+                      - Control planes and nodes with auto-upgrade enabled will be upgraded from version 1.31 to version [1.32.4-gke.1698000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1324) with this release.
+                    + The following patch-only version auto-upgrade targets are now available for clusters with [maintenance exclusions](https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions) or other factors preventing minor version upgrades:
+                      - Control planes and nodes with auto-upgrade enabled will be upgraded from version 1.30 to version [1.30.12-gke.1333000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012) with this release.
+                      - Control planes and nodes with auto-upgrade enabled will be upgraded from version 1.31 to version [1.31.10-gke.1021000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13110) with this release.
+                      - Control planes and nodes with auto-upgrade enabled will be upgraded from version 1.32 to version [1.32.4-gke.1698000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1324) with this release.
+                      - Control planes and nodes with auto-upgrade enabled will be upgraded from version 1.33 to version [1.33.2-gke.1111000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332) with this release.
+
+                    Looker
+                    ------
+
+                    ### Announcement
+
+                    The [Code Interpreter in Conversational Analytics](https://cloud.google.com/looker/docs/studio/conversational-analytics-code-interpreter) is available in [Preview](https://cloud.google.com/products#product-launch-stages) for Looker (original) and Looker (Google Cloud core) instances. The Code Interpreter translates your natural language questions into Python code and executes that code to provide advanced analysis and visualizations. The Code Interpreter is disabled by default.
+
+                    + Looker (original) instances must be on Looker 25.8 or later. Looker admins can manage enablement for the Code Interpreter on the [**Gemini in Looker** admin page](https://cloud.google.com/looker/docs/admin-panel-platform-gil#enable-and-disable-gil-original) of the Looker (original) instance.
+                    + Looker (Google Cloud core) instances must be on Looker 25.10 or later. Looker admins can manage enablement for the Code Interpreter on the [**Gemini in Looker** admin page](https://cloud.google.com/looker/docs/looker-core-admin-gemini#enable-ci-core) of the Looker (Google Cloud core) instance.
+
+                    Looker Studio
+                    -------------
+
+                    ### Announcement
+
+                    **Pro feature: The Code Interpreter is now available in Preview**
+
+                    The [Code Interpreter in Conversational Analytics](https://cloud.google.com/looker/docs/studio/conversational-analytics-code-interpreter) is available in [Preview](https://cloud.google.com/products#product-launch-stages) for Looker Studio Pro subscriptions. The Code Interpreter translates your natural language questions into Python code and executes that code to provide advanced analysis and visualizations. The Code Interpreter is disabled by default.
+
+                    NetApp Volumes
+                    --------------
+
+                    ### Feature
+
+                    Google Cloud NetApp Volumes now supports cross-project cross-region replication for Standard, Premium, and Extreme service levels. This feature is generally available for allow-listed users. For more information, see [About volume replication](https://cloud.google.com/netapp/volumes/docs/protect-data/about-volume-replication).
+
+                    ### Feature
+
+                    Google Cloud NetApp Volumes now supports volume backups for large capacity volumes. This feature is now generally available. For more information, see [About backups](https://cloud.google.com/netapp/volumes/docs/protect-data/about-backups).
+
+---
 ## 2025-07-21
 
 ### Feature

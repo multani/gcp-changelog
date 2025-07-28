@@ -1,5 +1,12 @@
 # Cloud Service Mesh
 
+## 2025-07-25
+
+### Feature
+
+[Advanced load balancing](https://cloud.google.com/service-mesh/docs/operate-and-maintain/advanced-load-balancing-istio) for managed Cloud Service Mesh (TD) now generally available (GA).
+
+---
 ## 2025-07-21
 
 ### Changed

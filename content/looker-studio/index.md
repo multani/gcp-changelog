@@ -1,5 +1,14 @@
 # Looker Studio
 
+## 2025-07-25
+
+### Announcement
+
+**Pro feature: The Code Interpreter is now available in Preview**
+
+The [Code Interpreter in Conversational Analytics](https://cloud.google.com/looker/docs/studio/conversational-analytics-code-interpreter) is available in [Preview](https://cloud.google.com/products#product-launch-stages) for Looker Studio Pro subscriptions. The Code Interpreter translates your natural language questions into Python code and executes that code to provide advanced analysis and visualizations. The Code Interpreter is disabled by default.
+
+---
 ## 2025-07-24
 
 ### Feature

@@ -1500,6 +1500,10 @@
 
 
 <h1 id="cloud-service-mesh">Cloud Service Mesh</h1>
+<h2 id="2025-07-25">2025-07-25</h2>
+<h3 id="feature">Feature</h3>
+<p><a href="https://cloud.google.com/service-mesh/docs/operate-and-maintain/advanced-load-balancing-istio">Advanced load balancing</a> for managed Cloud Service Mesh (TD) now generally available (GA).</p>
+<hr />
 <h2 id="2025-07-21">2025-07-21</h2>
 <h3 id="changed">Changed</h3>
 <p>Managed Cloud Service Mesh will start using proxy version <code>csm_mesh_proxy.20250623b_RC00</code> for Gateway API on GKE clusters. This proxy version maps closest to Envoy version 1.35. This change is rolling out to all release channels.</p>
@@ -1546,17 +1550,17 @@
 <p>For details on upgrading Cloud Service Mesh, see <a href="https://cloud.google.com/service-mesh/v1.23/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>.</p>
 <hr />
 <h2 id="2025-06-09">2025-06-09</h2>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_1">Feature</h3>
 <p>You can now enforce cluster-local traffic for an individual service, all services in a particular namespace, or globally for all services in the mesh. For more information, see <a href="https://cloud.google.com/service-mesh/docs/operate-and-maintain/multi-cluster#keeping_traffic_in-cluster">Keeping traffic in-cluster</a>.</p>
 <hr />
 <h2 id="2025-06-06">2025-06-06</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p><a href="https://cloud.google.com/service-mesh/docs/operate-and-maintain/dns-proxy">DNS Proxy feature</a> is now available in the Rapid release channel. This feature requires sidecar version <code>1.21.5-asm.39</code> or later.</p>
 <h3 id="changed_2">Changed</h3>
 <p>This change affects clusters using both the <code>TRAFFIC_DIRECTOR</code> and <code>ISTIOD</code> control plane implementations.</p>
 <p>When using Cloud Service Mesh with Istio APIs, configuring an <a href="https://cloud.google.com/service-mesh/docs/onboarding/unsupported-istio-apis">unsupported field</a> or value in an Istio Custom Resources will be reflected as an error in the Mesh status API.</p>
 <p>In some cases, the validation webhook will also reject unsupported API usage with an error message indicating the specific unsupported API. For more information, see <a href="https://cloud.google.com/service-mesh/docs/troubleshooting/troubleshoot-webhook#common_webhook_error_messages">Common webhook error messages</a>. You can mitigate these issues by amending the Istio Custom Resource to remove the specified unsupported API configuration.</p>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>Isolation support to prevent cross-region overflow is now available as a preview feature for <code>TRAFFIC_DIRECTOR</code> implementations of Cloud Service Mesh. For more information, see <a href="https://cloud.google.com/service-mesh/docs/service-routing/isolation">Isolation for Cloud Service Mesh</a>.</p>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
@@ -1569,6 +1573,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-service-mesh">Cloud Service Mesh</a></li>
+          <li class="nav-item">
+            <a href="#2025-07-25" class="nav-link">2025-07-25</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-07-21" class="nav-link">2025-07-21</a>
           </li>

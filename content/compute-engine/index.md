@@ -1,5 +1,17 @@
 # Compute Engine
 
+## 2025-07-25
+
+### Changed
+
+Hyperdisk Extreme is available in all regions and zones.
+For more information, see [About Hyperdisk Extreme](https://cloud.google.com/compute/docs/disks/hd-types/hyperdisk-extreme).
+
+### Changed
+
+You can now resize Hyperdisk Balanced volumes twice within a 4-hour window. For more information, see [Capacity changes](https://cloud.google.com/compute/docs/disks/modify-hyperdisks#capacity_changes).
+
+---
 ## 2025-07-24
 
 ### Feature

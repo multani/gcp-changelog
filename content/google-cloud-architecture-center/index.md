@@ -1,5 +1,12 @@
 # Google Cloud Architecture Center
 
+## 2025-07-28
+
+### Feature
+
+(New guide) [Well-Architected Framework: Financial services industry (FSI) perspective](https://cloud.google.com/architecture/framework/perspectives/fsi): Principles and recommendations that are specific to FSI, aligned to each pillar of the Architecture Framework.
+
+---
 ## 2025-07-22
 
 ### Feature

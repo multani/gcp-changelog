@@ -1,5 +1,36 @@
 # BigQuery
 
+## 2025-07-28
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Node.js
+
+### Changes for [@google-cloud/bigquery](https://github.com/googleapis/nodejs-bigquery)
+
+#### [8.1.1](https://github.com/googleapis/nodejs-bigquery/compare/v8.1.0...v8.1.1) (2025-07-23)
+
+##### Bug Fixes
+
+* Remove `is` package as dependency ([#1500](https://github.com/googleapis/nodejs-bigquery/issues/1500)) ([926c9f8](https://github.com/googleapis/nodejs-bigquery/commit/926c9f879521f0c06ab4f96b0b86e426aff3543c))
+
+### Python
+
+### Changes for [google-cloud-bigquery](https://github.com/googleapis/python-bigquery)
+
+#### [3.35.1](https://github.com/googleapis/python-bigquery/compare/v3.35.0...v3.35.1) (2025-07-21)
+
+##### Documentation
+
+* Specify the inherited-members directive for job classes ([#2244](https://github.com/googleapis/python-bigquery/issues/2244)) ([d207f65](https://github.com/googleapis/python-bigquery/commit/d207f6539b7a4c248a5de5719d7f384abbe20abe))
+
+### Feature
+
+You can now associate [data policies directly on columns](https://cloud.google.com/bigquery/docs/column-data-masking#data-policies-on-column). This feature enables direct database administration for controlling access and applying masking and transformation rules at the column level. This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2025-07-22
 
 ### Feature

@@ -11,10 +11,140 @@ supports
 
 ### Feature
 
+In GKE version 1.33.1-gke.1788000 and later, you can target specific reservation
+sub-blocks in a reservation block by using the
+[`reservationSubBlock` field in compute classes](https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#reservationSubBlock).
+
+### Feature
+
+In GKE version 1.32.2-gke.1359000 and later, you can now configure
+[collection scheduling](https://cloud.google.com/kubernetes-engine/docs/concepts/tpus#collection-scheduling)
+for single-host and multi-host TPU node pools by using
+[compute classes](https://cloud.google.com/kubernetes-engine/docs/concepts/about-custom-compute-classes).
+Collection scheduling lets you set a Service Level Objective (SLO) for your TPU
+workloads.
+
+### Feature
+
 In GKE version 1.33.2-gke.1335000 and later, the
 [GKE Gateway controller](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api#gateway_controller)
 supports
 [Gateway API v1.3 CRDs](https://gateway-api.sigs.k8s.io/implementations/v1.3/).
+
+### Feature
+
+In GKE version 1.33.1-gke.1788000 and later, you can target specific reservation
+sub-blocks in a reservation block by using the
+[`reservationSubBlock` field in compute classes](https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#reservationSubBlock).
+
+### Feature
+
+In GKE version 1.32.2-gke.1359000 and later, you can now configure
+[collection scheduling](https://cloud.google.com/kubernetes-engine/docs/concepts/tpus#collection-scheduling)
+for single-host and multi-host TPU node pools by using
+[compute classes](https://cloud.google.com/kubernetes-engine/docs/concepts/about-custom-compute-classes).
+Collection scheduling lets you set a Service Level Objective (SLO) for your TPU
+workloads.
+
+### Announcement
+
+#### Control plane datastore maintenance
+
+Starting in May, 2025, Google is performing maintenance on the internal control
+plane datastore for all GKE clusters to improve scalability and
+reliability. We expect to complete these improvements across GKE
+by October, 2025.
+
+This maintenance is happening gradually across all GKE clusters,
+and will occur in your clusters only during configured maintenance windows. The
+maintenance process is expected to take approximately 15 minutes to complete
+during your cluster's maintenance window.
+
+**Expected impact**
+
+During the internal control plane datastore maintenance, the
+**Kubernetes API server will be unavailable for 15 minutes**, regardless of
+whether you use a regional cluster or a zonal cluster. During this 15-minute
+period, you won't be able to interact with the Kubernetes API server for your
+cluster.
+
+Consider the following potential disruptions to your normal workflows during the
+maintenance window for your cluster:
+
+* **Kubernetes API unavailability**: you can't use the `kubectl` tool or any
+  other Kubernetes API client to issue commands to the control plane,
+  regardless of whether the cluster is regional or zonal. Attempts to deploy,
+  modify, or query resources by using the Kubernetes API will fail during this
+  period.
+* **Halted deployments:** automated deployment pipelines (CI/CD) that interact
+  with the Kubernetes API will fail to complete tasks such as deploying or
+  updating applications in the cluster.
+* **Google Cloud console limitations**: operations for the cluster in the
+  Google Cloud console that communicate with the Kubernetes API might fail
+  during the maintenance period.
+* **Delayed control plane automation**: features that are managed by the
+  control plane, such as the cluster autoscaler, Horizontal or Vertical
+  Pod Autoscaling adjustments, or some node auto-repair operations might be
+  paused until the API server is online.
+
+The following resources have no expected impact during the maintenance period:
+
+* **Running applications**: any running applications and services on your
+  nodes should continue to function without interruptions.
+* **Node pool operations**: existing nodes should remain connected and
+  operational.
+* **Network traffic**: traffic in the data plane, such as traffic to and from
+  your running workloads, shouldn't be affected.
+
+**What you need to do**
+
+No action is required from you for the maintenance to occur. To plan for this
+maintenance, we recommend that you do the following:
+
+* **Review maintenance windows**: review your cluster's
+  [maintenance window and exclusions settings](https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions)
+  and schedule maintenance windows during periods that minimize disruptions to
+  your normal workflows.
+* **Plan for Kubernetes API unavailability**: if you run critical operations
+  in your cluster that require access to the Kubernetes API, avoid scheduling
+  these operations during maintenance windows.
+
+  ### Fixed
+
+  A fix is available for an issue in which the Compute Engine Persistent Disk CSI
+  driver failed with an `invalid cpuString` error on GKE nodes that used custom
+  machine types. This issue prevented successful attachment and mounting of
+  Persistent Disk volumes on affected nodes. The fix is available in the following
+  GKE versions:
+
+  + 1.31.10-gke.1021000 and later
+  + 1.32.4-gke.1698000 and later
+  + 1.33.1-gke.1386000 and later
+
+    SAP on Google Cloud
+    -------------------
+
+    ### Announcement
+
+    **New SAP NetWeaver certification: C4D bare metal machine types**
+
+    For use with SAP NetWeaver, SAP has certified the following Compute Engine bare metal machine types: `c4d-standard-384-metal` and `c4d-highmem-384-metal`.
+
+    For more information, see the following:
+
+    - [Certifications for SAP applications on Google Cloud](https://cloud.google.com/solutions/sap/docs/certifications-sap-apps#sap-certified-vms-gen-purpose-c4d)
+    - [C4D machine series](https://cloud.google.com/compute/docs/general-purpose-machines#c4d_series)
+
+    Security Command Center
+    -----------------------
+
+    ### Changed
+
+    **Model Armor filter updates**
+
+    - The prompt injection and jailbreak detection filter now supports 10,000 tokens.
+    - For the Sensitive Data Protection filter, `SKIP_DETECTION` is returned if the prompt or response exceeds the token limit.
+    - For all other filters, `MATCH_FOUND` is returned if malicious content is found, and `SKIP_DETECTION` is returned if no malicious content is found.
 
 ---
 ## 2025-07-25

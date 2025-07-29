@@ -12,10 +12,50 @@
       },
       {
         "kind": "Feature",
+        "content": "In GKE version 1.33.1-gke.1788000 and later, you can target specific reservation\nsub-blocks in a reservation block by using the\n[`reservationSubBlock` field in compute classes](https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#reservationSubBlock).",
+        "summary": {
+          "title": "GKE Feature Update",
+          "summary": "Target specific reservation sub-blocks in GKE."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "In GKE version 1.32.2-gke.1359000 and later, you can now configure\n[collection scheduling](https://cloud.google.com/kubernetes-engine/docs/concepts/tpus#collection-scheduling)\nfor single-host and multi-host TPU node pools by using\n[compute classes](https://cloud.google.com/kubernetes-engine/docs/concepts/about-custom-compute-classes).\nCollection scheduling lets you set a Service Level Objective (SLO) for your TPU\nworkloads.",
+        "summary": {
+          "title": "TPU Collection Scheduling",
+          "summary": "TPU collection scheduling for GKE"
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "In GKE version 1.33.2-gke.1335000 and later, the\n[GKE Gateway controller](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api#gateway_controller)\nsupports\n[Gateway API v1.3 CRDs](https://gateway-api.sigs.k8s.io/implementations/v1.3/).",
         "summary": {
           "title": "GKE Gateway API Update",
           "summary": "GKE Gateway controller now supports Gateway API v1.3 CRDs."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "In GKE version 1.33.1-gke.1788000 and later, you can target specific reservation\nsub-blocks in a reservation block by using the\n[`reservationSubBlock` field in compute classes](https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#reservationSubBlock).",
+        "summary": {
+          "title": "GKE Feature Update",
+          "summary": "Target specific reservation sub-blocks in GKE."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "In GKE version 1.32.2-gke.1359000 and later, you can now configure\n[collection scheduling](https://cloud.google.com/kubernetes-engine/docs/concepts/tpus#collection-scheduling)\nfor single-host and multi-host TPU node pools by using\n[compute classes](https://cloud.google.com/kubernetes-engine/docs/concepts/about-custom-compute-classes).\nCollection scheduling lets you set a Service Level Objective (SLO) for your TPU\nworkloads.",
+        "summary": {
+          "title": "TPU Collection Scheduling",
+          "summary": "Configure collection scheduling for TPUs."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "#### Control plane datastore maintenance\n\nStarting in May, 2025, Google is performing maintenance on the internal control\nplane datastore for all GKE clusters to improve scalability and\nreliability. We expect to complete these improvements across GKE\nby October, 2025.\n\nThis maintenance is happening gradually across all GKE clusters,\nand will occur in your clusters only during configured maintenance windows. The\nmaintenance process is expected to take approximately 15 minutes to complete\nduring your cluster's maintenance window.\n\n**Expected impact**\n\nDuring the internal control plane datastore maintenance, the\n**Kubernetes API server will be unavailable for 15 minutes**, regardless of\nwhether you use a regional cluster or a zonal cluster. During this 15-minute\nperiod, you won't be able to interact with the Kubernetes API server for your\ncluster.\n\nConsider the following potential disruptions to your normal workflows during the\nmaintenance window for your cluster:\n\n* **Kubernetes API unavailability**: you can't use the `kubectl` tool or any\n  other Kubernetes API client to issue commands to the control plane,\n  regardless of whether the cluster is regional or zonal. Attempts to deploy,\n  modify, or query resources by using the Kubernetes API will fail during this\n  period.\n* **Halted deployments:** automated deployment pipelines (CI/CD) that interact\n  with the Kubernetes API will fail to complete tasks such as deploying or\n  updating applications in the cluster.\n* **Google Cloud console limitations**: operations for the cluster in the\n  Google Cloud console that communicate with the Kubernetes API might fail\n  during the maintenance period.\n* **Delayed control plane automation**: features that are managed by the\n  control plane, such as the cluster autoscaler, Horizontal or Vertical\n  Pod Autoscaling adjustments, or some node auto-repair operations might be\n  paused until the API server is online.\n\nThe following resources have no expected impact during the maintenance period:\n\n* **Running applications**: any running applications and services on your\n  nodes should continue to function without interruptions.\n* **Node pool operations**: existing nodes should remain connected and\n  operational.\n* **Network traffic**: traffic in the data plane, such as traffic to and from\n  your running workloads, shouldn't be affected.\n\n**What you need to do**\n\nNo action is required from you for the maintenance to occur. To plan for this\nmaintenance, we recommend that you do the following:\n\n* **Review maintenance windows**: review your cluster's\n  [maintenance window and exclusions settings](https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions)\n  and schedule maintenance windows during periods that minimize disruptions to\n  your normal workflows.\n* **Plan for Kubernetes API unavailability**: if you run critical operations\n  in your cluster that require access to the Kubernetes API, avoid scheduling\n  these operations during maintenance windows.\n\n  ### Fixed\n\n  A fix is available for an issue in which the Compute Engine Persistent Disk CSI\n  driver failed with an `invalid cpuString` error on GKE nodes that used custom\n  machine types. This issue prevented successful attachment and mounting of\n  Persistent Disk volumes on affected nodes. The fix is available in the following\n  GKE versions:\n\n  + 1.31.10-gke.1021000 and later\n  + 1.32.4-gke.1698000 and later\n  + 1.33.1-gke.1386000 and later\n\n    SAP on Google Cloud\n    -------------------\n\n    ### Announcement\n\n    **New SAP NetWeaver certification: C4D bare metal machine types**\n\n    For use with SAP NetWeaver, SAP has certified the following Compute Engine bare metal machine types: `c4d-standard-384-metal` and `c4d-highmem-384-metal`.\n\n    For more information, see the following:\n\n    - [Certifications for SAP applications on Google Cloud](https://cloud.google.com/solutions/sap/docs/certifications-sap-apps#sap-certified-vms-gen-purpose-c4d)\n    - [C4D machine series](https://cloud.google.com/compute/docs/general-purpose-machines#c4d_series)\n\n    Security Command Center\n    -----------------------\n\n    ### Changed\n\n    **Model Armor filter updates**\n\n    - The prompt injection and jailbreak detection filter now supports 10,000 tokens.\n    - For the Sensitive Data Protection filter, `SKIP_DETECTION` is returned if the prompt or response exceeds the token limit.\n    - For all other filters, `MATCH_FOUND` is returned if malicious content is found, and `SKIP_DETECTION` is returned if no malicious content is found.",
+        "summary": {
+          "title": "GKE Control Plane Maintenance",
+          "summary": "Control plane maintenance for GKE clusters to improve scalability and reliability. The Kubernetes API server will be unavailable for 15 minutes during maintenance windows. Running applications and network traffic are not expected to be impacted. Please review your maintenance windows and plan accordingly."
         }
       }
     ],

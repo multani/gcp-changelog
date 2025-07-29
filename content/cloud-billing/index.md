@@ -11,6 +11,17 @@ You can now access spend-based CUD metadata programmatically through a BigQuery 
 [Learn more about the CUD metadata export](https://cloud.google.com/billing/docs/how-to/export-data-bigquery-tables/cud-export).
 
 ---
+## 2025-07-07
+
+### Feature
+
+**Tags data for *regional* Secret Manager secret usage is available in both the [Standard usage cost export](https://cloud.google.com/billing/docs/how-to/export-data-bigquery-tables/standard-usage) and the [Detailed usage cost export](https://cloud.google.com/billing/docs/how-to/export-data-bigquery-tables/detailed-usage).**
+
+Tags for Global secrets have been available since [August 8, 2024](https://cloud.google.com/billing/docs/release-notes#August_08_2024). With this update, you can now tag *Regional secrets* as well.
+
+To learn more about Tags, see [Tags overview](https://cloud.google.com/resource-manager/docs/tags/tags-overview). To learn about using Tags in your cost data exported to BigQuery, see [about tags](https://cloud.google.com/billing/docs/how-to/export-data-bigquery-tables/standard-usage#tags) and [query examples with tags](https://cloud.google.com/billing/docs/how-to/export-data-bigquery-tables/standard-usage#query-with-tags).
+
+---
 ## 2025-06-27
 
 ### Changed

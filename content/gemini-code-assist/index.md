@@ -1,5 +1,31 @@
 # Gemini Code Assist
 
+## 2025-07-28
+
+### Feature
+
+
+
+### Inline diff (Preview)
+
+#### VS Code Gemini Code Assist `2.42.0`
+
+[Inline diff](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#view_code_diffs)
+is available for VS Code Gemini Code Assist `2.42.0` in
+[Preview](https://cloud.google.com/terms/service-terms). With the inline diff
+view, you can visually highlight code changes directly in your editor—green for
+additions, red for deletions. This feature boosts productivity by offering
+immediate visibility on modifications, streamlining reviews, and enabling
+precise control over integrating new code, all without leaving your current
+view.
+
+If preferred, you can
+[change the diff view settings to have a side-by-side diff window](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#change_diff_view_settings)
+instead of the inline diff.
+
+![Inline diff in VS Code Gemini Code Assist.](https://cloud.google.com/gemini/images/release-notes-images/vscode-inline-diff.gif)
+
+---
 ## 2025-07-24
 
 ### Stop in-progress chat responses with IntelliJ

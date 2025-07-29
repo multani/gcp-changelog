@@ -1,5 +1,16 @@
 # Dialogflow
 
+## 2025-07-24
+
+### Feature
+
+**Conversational Agents**: 21 new [Chirp 3 HD voices](https://cloud.google.com/text-to-speech/docs/chirp3-hd) are now available across 34 locales.
+
+### Feature
+
+**Conversational Agents data stores**: Conversational Agents now supports AlloyDB AI, Bigtable, Firestore, Spanner and Cloud SQL data store source as public GA features; Microsoft Entra ID source has now private GA support. See the [data store documentation](https://cloud.google.com/dialogflow/cx/docs/concept/data-store) for a complete list.
+
+---
 ## 2025-07-17
 
 ### Feature

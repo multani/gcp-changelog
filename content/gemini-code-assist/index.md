@@ -2,10 +2,6 @@
 
 ## 2025-07-28
 
-### Feature
-
-
-
 ### Inline diff (Preview)
 
 #### VS Code Gemini Code Assist `2.42.0`

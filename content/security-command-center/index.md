@@ -8,7 +8,7 @@
 
 * The prompt injection and jailbreak detection filter now supports 10,000 tokens.
 * For the Sensitive Data Protection filter, `SKIP_DETECTION` is returned if the prompt or response exceeds the token limit.
-* For all other filters, `MATCH_FOUND` is returned if malicious content is found, and `SKIP_DETECTION` is returned if no malicious content is found.
+* For all other filters, if the prompt or response exceeds the token limit, `MATCH_FOUND` is returned if malicious content is found, and `SKIP_DETECTION` is returned if no malicious content is found.
 
 ---
 ## 2025-07-25

@@ -1,5 +1,22 @@
 # Google Kubernetes Engine
 
+## 2025-07-28
+
+### Feature
+
+In GKE version 1.33.2-gke.1335000 and later, the
+[GKE Gateway controller](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api#gateway_controller)
+supports
+[Gateway API v1.3 CRDs](https://gateway-api.sigs.k8s.io/implementations/v1.3/).
+
+### Feature
+
+In GKE version 1.33.2-gke.1335000 and later, the
+[GKE Gateway controller](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api#gateway_controller)
+supports
+[Gateway API v1.3 CRDs](https://gateway-api.sigs.k8s.io/implementations/v1.3/).
+
+---
 ## 2025-07-25
 
 ### Changed
@@ -495,6 +512,17 @@ multiple days to complete across all Google Cloud zones.
                     ### Feature
 
                     Google Cloud NetApp Volumes now supports volume backups for large capacity volumes. This feature is now generally available. For more information, see [About backups](https://cloud.google.com/netapp/volumes/docs/protect-data/about-backups).
+
+                    Security Command Center
+                    -----------------------
+
+                    ### Changed
+
+                    [Cloud Infrastructure Entitlement Management (CIEM)](https://cloud.google.com/security-command-center/docs/ciem-overview) has launched support for log ingestion from Microsoft Azure management groups. This capability lets users set up log ingestion and then consume findings at an Azure management group level, rather than at the subscription level. For more information, see [Configure Microsoft Azure log ingestion for management groups](https://cloud.google.com/security-command-center/docs/connect-secops-azure#mgmt-group). This capability is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+                    ### Changed
+
+                    A new risk scoring algorithm is launched. As a result, you might see slight changes in [attack exposure scores for resources and findings](https://cloud.google.com/security-command-center/docs/attack-exposure-learn). The new algorithm better reflects attacker behavior and gives a fairer representation of the relative risk level of your organization. We will monitor the results of this change and might perform further adjustments, if necessary.
 
 ---
 ## 2025-07-21

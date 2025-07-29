@@ -1,5 +1,14 @@
 # Cloud Load Balancing
 
+## 2025-07-28
+
+### Feature
+
+Global external Application Load Balancers now support the [JA4 fingerprint](https://github.com/FoxIO-LLC/ja4/blob/main/technical_details/JA4.md). The JA4 fingerprint can be added to a [custom request header](https://cloud.google.com/load-balancing/docs/https/custom-headers-global?variables#variables) using the `tls_ja4_fingerprint` variable.
+
+This capability is now in **General Availability**.
+
+---
 ## 2025-07-09
 
 ### Feature

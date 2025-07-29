@@ -1,5 +1,19 @@
 # SAP on Google Cloud
 
+## 2025-07-28
+
+### Announcement
+
+**New SAP NetWeaver certification: C4D bare metal machine types**
+
+For use with SAP NetWeaver, SAP has certified the following Compute Engine bare metal machine types: `c4d-standard-384-metal` and `c4d-highmem-384-metal`.
+
+For more information, see the following:
+
+* [Certifications for SAP applications on Google Cloud](https://cloud.google.com/solutions/sap/docs/certifications-sap-apps#sap-certified-vms-gen-purpose-c4d)
+* [C4D machine series](https://cloud.google.com/compute/docs/general-purpose-machines#c4d_series)
+
+---
 ## 2025-07-18
 
 ### Announcement

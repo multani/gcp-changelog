@@ -1,5 +1,12 @@
 # Text-to-Speech
 
+## 2025-07-24
+
+### Changed
+
+Chirp 3: HD voices now offers General Availability (GA) support for four additional Nordic languages: Danish (`da-DK`), Finnish (`fi-FI`), Norwegian Bokmål (`nb-NO`), and Swedish (`sv-SE`). For more information, see [Chirp 3: HD voices](https://cloud.google.com/text-to-speech/docs/chirp3-hd).
+
+---
 ## 2025-06-18
 
 ### Changed

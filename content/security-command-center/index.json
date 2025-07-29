@@ -1,6 +1,34 @@
 {
   "name": "Security Command Center",
   "entries": {
+    "2025-07-28": [
+      {
+        "kind": "Changed",
+        "content": "**Model Armor filter updates**\n\n* The prompt injection and jailbreak detection filter now supports 10,000 tokens.\n* For the Sensitive Data Protection filter, `SKIP_DETECTION` is returned if the prompt or response exceeds the token limit.\n* For all other filters, `MATCH_FOUND` is returned if malicious content is found, and `SKIP_DETECTION` is returned if no malicious content is found.",
+        "summary": {
+          "title": "Model Armor Filter Update",
+          "summary": "Model Armor filter updates: prompt injection and jailbreak detection filter now supports 10,000 tokens."
+        }
+      }
+    ],
+    "2025-07-25": [
+      {
+        "kind": "Changed",
+        "content": "[Cloud Infrastructure Entitlement Management (CIEM)](https://cloud.google.com/security-command-center/docs/ciem-overview) has launched support for log ingestion from Microsoft Azure management groups. This capability lets users set up log ingestion and then consume findings at an Azure management group level, rather than at the subscription level. For more information, see [Configure Microsoft Azure log ingestion for management groups](https://cloud.google.com/security-command-center/docs/connect-secops-azure#mgmt-group). This capability is available in [Preview](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "CIEM Azure Log Ingestion Update",
+          "summary": "CIEM now supports log ingestion from Azure management groups."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "A new risk scoring algorithm is launched. As a result, you might see slight changes in [attack exposure scores for resources and findings](https://cloud.google.com/security-command-center/docs/attack-exposure-learn). The new algorithm better reflects attacker behavior and gives a fairer representation of the relative risk level of your organization. We will monitor the results of this change and might perform further adjustments, if necessary.",
+        "summary": {
+          "title": "Risk Scoring Algorithm Update",
+          "summary": "New risk scoring algorithm launched. Attack exposure scores may change slightly. The new algorithm better reflects attacker behavior and risk."
+        }
+      }
+    ],
     "2025-07-24": [
       {
         "kind": "Feature",

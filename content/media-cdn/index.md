@@ -4,7 +4,7 @@
 
 ### Announcement
 
-Media CDN supports a dedicated range of IPs for requests to external origin servers. [IP allowlisting](https://cloud.google.com/media-cdn/docs/origins#allow-ip) at the origin helps you restrict access to your content by only allowing traffic from Media CDN's IP addresses. This feature is **Generally Available**.
+Media CDN supports a dedicated range of IPs for requests to external origin servers. [IP allowlisting](https://cloud.google.com/media-cdn/docs/origins#allow-ip) at the origin helps you restrict access to your content by only allowing traffic from Media CDN's IP addresses. This capability is **Generally Available**.
 
 ---
 ## 2025-06-25

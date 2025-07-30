@@ -23,7 +23,9 @@
 
 New [Dataproc on Compute Engine subminor image versions](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):
 
-`2.3.6-debian12`, `2.3.6-ubuntu22`, and `2.3.6-rocky9`.
+`2.3.6-debian12`, `2.3.6-ubuntu22`, `2.3.6-ml-ubuntu22`, and `2.3.6-rocky9`.
+
+The `2.3.6-ml-ubuntu22` image extends the 2.3 base image with [ML-specific libraries](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-2.3#image_version_23_machine_learning_ml_components).
 
 ### Feature
 
@@ -43,7 +45,9 @@ The [Cluster Scheduled Stop](https://cloud.google.com/dataproc/docs/concepts/con
 
 New [Dataproc on Compute Engine subminor image versions](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):
 
-`2.3.5-debian12`, `2.3.5-ubuntu22`, and `2.3.5-rocky9`.
+`2.3.5-debian12`, `2.3.5-ubuntu22`, `2.3.5-ml-ubuntu22`, and `2.3.5-rocky9`.
+
+The `2.3.5-ml-ubuntu22` image extends the 2.3 base image with [ML-specific libraries](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-2.3#image_version_23_machine_learning_ml_components).
 
 ### Changed
 

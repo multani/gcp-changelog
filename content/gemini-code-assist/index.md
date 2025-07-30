@@ -35,6 +35,8 @@ responses are immediately halted.
 
 ### Thinking tokens
 
+#### IntelliJ Gemini Code Assist `1.22.1`
+
 You'll see thinking insights into Gemini's thought process before IntelliJ
 Gemini Code Assist produces a response, to show you that Gemini is actively
 working on your request.

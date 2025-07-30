@@ -1,5 +1,12 @@
 # Cloud Data Fusion
 
+## 2025-07-25
+
+### Feature
+
+You can now attach tags to Cloud Data Fusion instances during instance creation. This ensures immediate metadata for better organization, cost tracking, and policy automation. For more information, see [Attach tags during instance creation](https://cloud.google.com/data-fusion/docs/how-to/control-access-with-tags#add-tags).
+
+---
 ## 2025-07-23
 
 ### Fixed

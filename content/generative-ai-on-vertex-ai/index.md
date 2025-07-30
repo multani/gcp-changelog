@@ -1,5 +1,12 @@
 # Generative AI on Vertex AI
 
+## 2025-07-29
+
+### Announcement
+
+**Veo video generation** Veo 3 and Veo 3 Fast are now generally available. For more information, see [Generate videos using text prompts](https://cloud.google.com/vertex-ai/generative-ai/docs/video/generate-videos-from-text).
+
+---
 ## 2025-07-23
 
 ### Changed

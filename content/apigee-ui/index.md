@@ -1,5 +1,24 @@
 # Apigee UI
 
+## 2025-07-29
+
+### Announcement
+
+On July 29, 2025 we removed the **Switch to Classic** option from the following Apigee UI in the Google Cloud console pages:
+
+* API Proxy
+* Shared Flow
+* Offline Debug detail
+
+This is part of the Apigee Classic UI shutdown plan.
+
+See [Apigee UI in Cloud console navigation](https://cloud.google.com/apigee/docs/api-platform/fundamentals/ui-overview#console-compare) for a mapping of each Classic Apigee UI feature page to its location in the Apigee UI in Cloud console.
+
+See [Apigee Classic UI shutdown](https://cloud.google.com/apigee/docs/deprecations/apigee-classic-ui) for details on shutdown dates.
+
+If you require more time to transition to the Google Cloud console, submit the [exception request form](https://docs.google.com/forms/d/e/1FAIpQLSedFe2Pj2f9B8YxD7cgWOyf8-IjRA8IhRZpZ2jXMZ9DU1uz1g/viewform) by Aug 15, 2025.
+
+---
 ## 2025-07-24
 
 ### Announcement

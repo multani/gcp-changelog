@@ -82,6 +82,10 @@ The following issues were addressed in this release:
 * Fixed an issue with the web SDK where some non-English characters in downloaded chat transcripts were appearing as question marks.
 * Fixed an issue in Hubspot where recordings of transferred calls were failing to save.
 * Fixed an issue in Salesforce where the **Call** button in the call adapter wasn't working for outbound calls to a phone number that was associated with a previous record.
+* Fixed an issue where the data in reports didn't match the data in the dashboards.
+* Fixed an issue where virtual agent calls using Dialogflow ES failed, ending unexpectedly.
+* Fixed two cross-site scripting vulnerabilites in the agent adapter.
+* Fixed an issue where deltacast selected the agent with the longest time in the Available status instead of the agent with the longest time since their last customer interaction.
 
 ---
 ## 2025-07-08

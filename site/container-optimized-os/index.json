@@ -1,6 +1,48 @@
 {
   "name": "Container Optimized OS",
   "entries": {
+    "2025-07-28": [
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "Announcement",
+          "summary": "The content of the announcement is not specified."
+        }
+      },
+      {
+        "kind": "cos-109-17800-570-8",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.143](https://cos.googlesource.com/third_party/kernel/+/66208798dd21d4ee2d28f8ea8b9b3a2df63e3f42 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/17800.570.8/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS-109-17800-570-8",
+          "summary": "COS-109-17800-570-8 release notes."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-5e28d5a in the Linux kernel.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixed KCTF-5e28d5a in the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded sqlite to v3.50.2. This resolves CVE-2025-6965.",
+        "summary": {
+          "title": "Security update: sqlite",
+          "summary": "Resolved CVE-2025-6965 by upgrading sqlite to v3.50.2."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 812234 -> 812262",
+        "summary": {
+          "title": "Runtime sysctl fs.file-max change",
+          "summary": "Runtime sysctl changes: fs.file-max changed from 812234 to 812262."
+        }
+      }
+    ],
     "2025-07-21": [
       {
         "kind": "cos-109-17800-570-5",

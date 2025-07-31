@@ -1,5 +1,16 @@
 # Dataproc
 
+## 2025-07-25
+
+### Announcement
+
+New [Dataproc on Compute Engine subminor image versions](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):
+
+`2.3.7-debian12`, `2.3.7-ubuntu22`, `2.3.7-ml-ubuntu22`, and `2.3.7-rocky9`.
+
+The `2.3.7-ml-ubuntu22` image extends the 2.3 base image with [ML-specific libraries](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-2.3#image_version_23_machine_learning_ml_components).
+
+---
 ## 2025-07-15
 
 ### Announcement

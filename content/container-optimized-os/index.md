@@ -1,5 +1,33 @@
 # Container Optimized OS
 
+## 2025-07-28
+
+### Changed
+
+
+
+### cos-109-17800-570-8
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.143](https://cos.googlesource.com/third_party/kernel/+/66208798dd21d4ee2d28f8ea8b9b3a2df63e3f42 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/17800.570.8/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed KCTF-5e28d5a in the Linux kernel.
+
+### Security
+
+Upgraded sqlite to v3.50.2. This resolves CVE-2025-6965.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812234 -> 812262
+
+---
 ## 2025-07-21
 
 ### cos-109-17800-570-5

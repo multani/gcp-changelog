@@ -1,5 +1,75 @@
 # Gemini Code Assist
 
+## 2025-07-31
+
+### Feature
+
+
+
+### Use Gemini Code Assist agent mode in IntelliJ (Preview)
+
+![IntelliJ Gemini Code Assist agent mode in action](https://cloud.google.com/gemini/images/release-notes-images/intellij-agent-mode-in-action.gif)
+
+#### Stay in control with interactive reviews and approvals
+
+You can use Gemini Code Assist chat in agent mode to complete complex,
+multi-step tasks and goals with complete control over every change. Before
+making any modifications, the agent will present a plan for your review. You can
+edit, ask for changes, approve, or deny any suggested changes. This
+collaborative approach combines the power of AI with your expertise, resulting
+in better code and a more efficient workflow.
+
+To get started with agent mode, restart your IDE and follow the instructions in
+[Use agentic chat as a pair programmer](https://cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer).
+
+### Feature
+
+
+
+### Auto Approve mode lets the agent act on your behalf (Preview)
+
+Enable auto approve mode to let the agent act on your behalf. Once the agent is
+done you can review and roll back changes as you see fit.
+
+![auto-approve mode in action](https://cloud.google.com/gemini/images/release-notes-images/intellij-auto-approve-in-action.gif)
+
+### Feature
+
+
+
+### Use agent mode in Gemini Code Assist for VS Code (Preview)
+
+![Agent mode in VS Code](https://cloud.google.com/gemini/images/release-notes-images/vscode-agent-mode-toggle.png)
+
+#### Tackle complex tasks with Gemini Code Assist agent mode for VS Code
+
+Gemini Code Assist agent mode is available for all users. Describe your goal,
+and Gemini will create a plan for you to review and approve before any code is
+changed. This update removes the insiders channel requirement, and includes
+persistent agent mode or interactive chat state between IDE restarts, real-time
+shell command output, and faster UI performance. This collaborative approach
+combines AI power with your expertise, enabling you to complete multi-step tasks
+with complete control and efficiency.
+
+To get started with agent mode, see
+[Use agentic chat as a pair programmer](https://cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer).
+
+### Feature
+
+
+
+### Effectively collaborate with your agent with the improved diff view functionality (Preview)
+
+We've enhanced Gemini Code Assist agent mode with powerful new
+editing capabilities. You can edit code changes directly in the integrated Diff
+view for precise, on-the-fly adjustments. To improve clarity, we've also added
+inline diffs directly in the chat, making it easier to see proposed changes at a
+glance. These features give you unparalleled control and a more efficient way to
+refine AI-suggested code.
+
+![Agent mode diff view in VS Code](https://cloud.google.com/gemini/images/release-notes-images/vscode-agent-mode-diff-view.png)
+
+---
 ## 2025-07-28
 
 ### Inline diff (Preview)

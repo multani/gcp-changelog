@@ -1,5 +1,21 @@
 # Dataproc
 
+## 2025-07-31
+
+### Announcement
+
+New [Dataproc Serverless for Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
+
+* 1.1.111
+* 1.2.55
+* 2.2.55
+* 2.3.6
+
+### Announcement
+
+**Dataproc Serverless for Spark:** Subminor version `1.1.111` is the last release of runtime version [`1.1`](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions#unsupported-dataproc-serverless-for-spark-runtime-versions), which will no longer be supported and will not receive new releases.
+
+---
 ## 2025-07-25
 
 ### Announcement

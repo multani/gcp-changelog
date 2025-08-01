@@ -20,6 +20,7 @@
 - [Apigee X](apigee-x/index.md)
 - [Apigee hybrid](apigee-hybrid/index.md)
 - [App Engine flexible environment Go](app-engine-flexible-environment-go/index.md)
+- [App Engine flexible environment Node.js](app-engine-flexible-environment-node-js/index.md)
 - [App Engine flexible environment PHP](app-engine-flexible-environment-php/index.md)
 - [App Engine flexible environment Ruby](app-engine-flexible-environment-ruby/index.md)
 - [App Engine standard environment Go](app-engine-standard-environment-go/index.md)

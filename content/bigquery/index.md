@@ -1,5 +1,40 @@
 # BigQuery
 
+## 2025-07-31
+
+### Changed
+
+BigQuery ML has improved throughput by more than 100x for the following
+generative AI functions:
+
+* [`ML.GENERATE_TEXT`](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-generate-text)
+* [`AI.GENERATE_TABLE`](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-generate-table)
+* [`AI.GENERATE`](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate)
+* [`AI.GENERATE_BOOL`](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate-bool)
+* [`AI.GENERATE_DOUBLE`](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate-double)
+* [`AI.GENERATE_INT`](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate-int)
+
+Actual performance varies based on the number of input and output tokens in the
+request, but a typical 6-hour job can now process millions of rows. For more
+information, see
+[Generative AI functions](https://cloud.google.com/bigquery/quotas#generative_ai_functions).
+
+### Changed
+
+BigQuery ML now can automatically detect model quota increases in Vertex AI, and automatically adjusts the quota for any BigQuery ML functions that use those models. You no longer need to email the BigQuery ML team to increase model quota.
+
+### Feature
+
+You can now use [continuous queries](https://cloud.google.com/bigquery/docs/continuous-queries-introduction) to [export BigQuery data to Spanner in real time](https://cloud.google.com/bigquery/docs/export-to-spanner). This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
+## 2025-07-30
+
+### Announcement
+
+The Gemini for Google Cloud API (cloudaicompanion.googleapis.com) is now enabled by default for most BigQuery projects. Exceptions include projects where customers have opted out, and those linked to accounts based in EMEA regions including [BigQuery Europe, Middle East, and Africa regions](https://cloud.google.com/bigquery/docs/locations#supported_locations).
+
+---
 ## 2025-07-28
 
 ### Libraries

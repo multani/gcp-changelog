@@ -3,6 +3,158 @@
   "entries": {
     "2025-07-28": [
       {
+        "kind": "cos-117-18613-339-11",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.97](https://cos.googlesource.com/third_party/kernel/+/28b7c5a22b76c6b3f6ee318b28af04c6270cdd0c ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18613.339.11/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS-117-18613-339-11",
+          "summary": "COS-117-18613-339-11: Kernel, Docker, Containerd, and GPU Drivers."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "This is an [LTS Refresh release](https://cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases).",
+        "summary": {
+          "title": "LTS Refresh Release Announcement",
+          "summary": "This is an LTS Refresh release."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/google-guest-configs to v20250516.00.",
+        "summary": {
+          "title": "Fixed guest configs",
+          "summary": "v20250516.00 guest configs"
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-containers/cni-plugins to v1.7.1.",
+        "summary": {
+          "title": "App-containers/cni-plugins upgrade",
+          "summary": "Upgraded app-containers/cni-plugins to v1.7.1."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-lang/go to v1.23.9.",
+        "summary": {
+          "title": "Go upgrade",
+          "summary": "Go upgraded to v1.23.9."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-process/lsof to v4.99.5.",
+        "summary": {
+          "title": "lsof upgrade",
+          "summary": "Upgraded sys-process/lsof to v4.99.5."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated app-misc/jq to v1.8.1.",
+        "summary": {
+          "title": "jq update",
+          "summary": "Updated jq to v1.8.1"
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-db/sqlite to v3.50.1.",
+        "summary": {
+          "title": "SQLite Update",
+          "summary": "Updated dev-db/sqlite to v3.50.1."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-libs/libcap to v2.76.",
+        "summary": {
+          "title": "libcap upgraded",
+          "summary": "libcap upgrade to v2.76"
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-fs/cifs-utils to v7.4.",
+        "summary": {
+          "title": "CIFS Utils Upgrade",
+          "summary": "CIFS utils upgraded to v7.4."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-process/procps to v4.0.5-r2.",
+        "summary": {
+          "title": "Fixed",
+          "summary": "Upgraded sys-process/procps to v4.0.5-r2."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-arch/gzip to v1.14.",
+        "summary": {
+          "title": "Gzip upgrade",
+          "summary": "Upgraded gzip to v1.14."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed a kernel bug which caused some NVME disk IO errors to be ignored, potentially resulting in dropped writes.",
+        "summary": {
+          "title": "NVME IO Error Fix",
+          "summary": "Fixed NVME disk IO error bug."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The NFS access cache is no longer cleared on login by default. To use the old behavior, load the NFS module with the `nfs_fasc=1` module parameter.",
+        "summary": {
+          "title": "NFS access cache behavior updated",
+          "summary": "The NFS access cache is no longer cleared on login by default."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-26130 in dev-python/cryptography.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixed CVE-2024-26130 in dev-python/cryptography."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded sqlite to v3.50.2. This resolves CVE-2025-6965.",
+        "summary": {
+          "title": "Security update: sqlite",
+          "summary": "Resolved CVE-2025-6965 by upgrading sqlite to v3.50.2."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-libs/talloc to v2.4.3.",
+        "summary": {
+          "title": "Talloc upgrade",
+          "summary": "Upgraded sys-libs/talloc to v2.4.3."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-5e28d5a in the Linux kernel.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixed KCTF-5e28d5a in the Linux kernel."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811820 -> 811775",
+        "summary": {
+          "title": "Runtime sysctl change",
+          "summary": "fs.file-max changed from 811820 to 811775."
+        }
+      },
+      {
         "kind": "cos-109-17800-570-8",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.143](https://cos.googlesource.com/third_party/kernel/+/66208798dd21d4ee2d28f8ea8b9b3a2df63e3f42 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/17800.570.8/lakitu/gpu_driver_versions.textproto) |",
         "summary": {

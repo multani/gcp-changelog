@@ -2,9 +2,66 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: BigQuery</title>
   <subtitle>Changelog for Google Cloud product: BigQuery</subtitle>
-  <updated>2025-07-28T00:00:00+00:00</updated>
+  <updated>2025-07-31T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:bigquery</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/bigquery/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-07-31:changed:0</id>
+    <published>2025-07-31T00:00:00+00:00</published>
+    <updated>2025-07-31T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>BigQuery ML has improved throughput by more than 100x for the following
+generative AI functions:</p>
+<ul>
+<li><a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-generate-text"><code>ML.GENERATE_TEXT</code></a></li>
+<li><a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-generate-table"><code>AI.GENERATE_TABLE</code></a></li>
+<li><a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate"><code>AI.GENERATE</code></a></li>
+<li><a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate-bool"><code>AI.GENERATE_BOOL</code></a></li>
+<li><a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate-double"><code>AI.GENERATE_DOUBLE</code></a></li>
+<li><a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate-int"><code>AI.GENERATE_INT</code></a></li>
+</ul>
+<p>Actual performance varies based on the number of input and output tokens in the
+request, but a typical 6-hour job can now process millions of rows. For more
+information, see
+<a href="https://cloud.google.com/bigquery/quotas#generative_ai_functions">Generative AI functions</a>.</p>]]></content>
+    <summary>BigQuery ML boosts generative AI function throughput by over 100x.</summary>
+    <title>Changed: Improved BigQuery ML Performance</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-07-31:changed:1</id>
+    <published>2025-07-31T00:00:00+00:00</published>
+    <updated>2025-07-31T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>BigQuery ML now can automatically detect model quota increases in Vertex AI, and automatically adjusts the quota for any BigQuery ML functions that use those models. You no longer need to email the BigQuery ML team to increase model quota.</p>]]></content>
+    <summary>BigQuery ML now automatically detects and adjusts model quotas in Vertex AI, eliminating the need to contact the BigQuery ML team for increases.</summary>
+    <title>Changed: BigQuery ML Model Quota Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-07-31:feature:2</id>
+    <published>2025-07-31T00:00:00+00:00</published>
+    <updated>2025-07-31T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now use <a href="https://cloud.google.com/bigquery/docs/continuous-queries-introduction">continuous queries</a> to <a href="https://cloud.google.com/bigquery/docs/export-to-spanner">export BigQuery data to Spanner in real time</a>. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>]]></content>
+    <summary>Real-time data export to Spanner with continuous queries.</summary>
+    <title>Feature: Real-time Spanner Exports</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-07-30:announcement:0</id>
+    <published>2025-07-30T00:00:00+00:00</published>
+    <updated>2025-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Gemini for Google Cloud API (cloudaicompanion.googleapis.com) is now enabled by default for most BigQuery projects. Exceptions include projects where customers have opted out, and those linked to accounts based in EMEA regions including <a href="https://cloud.google.com/bigquery/docs/locations#supported_locations">BigQuery Europe, Middle East, and Africa regions</a>.</p>]]></content>
+    <summary>Gemini for Google Cloud is now enabled by default for most BigQuery projects.</summary>
+    <title>Announcement: Gemini for Google Cloud in BigQuery</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -86,6 +86,8 @@ The following issues were addressed in this release:
 * Fixed an issue where virtual agent calls using Dialogflow ES failed, ending unexpectedly.
 * Fixed two cross-site scripting vulnerabilites in the agent adapter.
 * Fixed an issue where deltacast selected the agent with the longest time in the Available status instead of the agent with the longest time since their last customer interaction.
+* Fixed an issue where escalations from a virtual agent to a human agent failed, and audio from the last agent response before human agent escalation was truncated.
+* Fixed an issue where transcriptions weren't being created for IVR calls.
 
 ---
 ## 2025-07-08

@@ -1,5 +1,15 @@
 # AlloyDB for PostgreSQL
 
+## 2025-07-29
+
+### Feature
+
+Database server compatibility with PostgreSQL version 17 is now available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+You can [create AlloyDB clusters](https://cloud.google.com/alloydb/docs/cluster-create#procedure)
+with PostgreSQL 17 compatibility.
+
+---
 ## 2025-07-23
 
 ### Announcement

@@ -32,7 +32,7 @@ Learn more about [Regional Persistent Disk replica recovery checkpoints](https:/
 
 ### Feature
 
-**Preview**: Multi-writer support for Hyperdisk Extreme disks. You can give up to 16 instances, across two zones, simultaneous read-write access to the same disk. For more information, see [Share disks between instances](https://cloud.google.com/compute/docs/disks/sharing-disks-between-vms).
+**Preview**: Multi-writer support for Hyperdisk Extreme disks. You can give up to 16 instances simultaneous read-write access to the same disk. For more information, see [Share disks between instances](https://cloud.google.com/compute/docs/disks/sharing-disks-between-vms).
 
 ---
 ## 2025-07-21

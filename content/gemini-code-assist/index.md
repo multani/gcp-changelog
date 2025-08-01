@@ -2,10 +2,6 @@
 
 ## 2025-07-31
 
-### Feature
-
-
-
 ### Use Gemini Code Assist agent mode in IntelliJ (Preview)
 
 ![IntelliJ Gemini Code Assist agent mode in action](https://cloud.google.com/gemini/images/release-notes-images/intellij-agent-mode-in-action.gif)
@@ -22,20 +18,12 @@ in better code and a more efficient workflow.
 To get started with agent mode, restart your IDE and follow the instructions in
 [Use agentic chat as a pair programmer](https://cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer).
 
-### Feature
-
-
-
 ### Auto Approve mode lets the agent act on your behalf (Preview)
 
 Enable auto approve mode to let the agent act on your behalf. Once the agent is
 done you can review and roll back changes as you see fit.
 
 ![auto-approve mode in action](https://cloud.google.com/gemini/images/release-notes-images/intellij-auto-approve-in-action.gif)
-
-### Feature
-
-
 
 ### Use agent mode in Gemini Code Assist for VS Code (Preview)
 
@@ -53,10 +41,6 @@ with complete control and efficiency.
 
 To get started with agent mode, see
 [Use agentic chat as a pair programmer](https://cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer).
-
-### Feature
-
-
 
 ### Effectively collaborate with your agent with the improved diff view functionality (Preview)
 

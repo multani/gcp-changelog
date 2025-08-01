@@ -83,6 +83,76 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 811820 -> 811775
 
+### cos-113-18244-448-6
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.144](https://cos.googlesource.com/third_party/kernel/+/b1a3d1b003be6fec7ba7dea5a6b70bf397c567aa ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.448.6/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This is an [LTS Refresh release](https://cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases).
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20250501.00.
+
+### Fixed
+
+Upgraded app-containers/docker-credential-helpers to v0.9.3.
+
+### Fixed
+
+Updated app-misc/jq to v1.8.1.
+
+### Fixed
+
+Upgraded sys-libs/libcap to v2.76.
+
+### Fixed
+
+Upgraded net-fs/cifs-utils to v7.4.
+
+### Fixed
+
+Upgraded sys-process/procps to v4.0.5-r2.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.50.1.
+
+### Fixed
+
+Upgraded app-arch/gzip to v1.14.
+
+### Security
+
+Fixed KCTF-5e28d5a in the Linux kernel.
+
+### Security
+
+Patched openssl to fix CVE-2023-50782 affecting
+dev-python/crytography.
+
+### Security
+
+Upgraded sqlite to v3.50.2. This resolves CVE-2025-6965.
+
+### Security
+
+Fixed CVE-2024-26130 in dev-python/cryptography.
+
+### Fixed
+
+Upgraded sys-libs/talloc to v2.4.3.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811983 -> 812027
+
 ### cos-109-17800-570-8
 
 |  |  |  |  |

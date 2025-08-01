@@ -1,5 +1,16 @@
 # Dialogflow
 
+## 2025-07-31
+
+### Feature
+
+**Conversational Agents**: [Routine playbooks](https://cloud.google.com/dialogflow/cx/docs/concept/playbook#routine) are now generally available.
+
+### Feature
+
+**Conversational Agents**: [Parameter passing](https://cloud.google.com/dialogflow/cx/docs/concept/playbook/parameter#passing-parameters) is now available and documented between routine playbooks, task playbooks, and flows.
+
+---
 ## 2025-07-24
 
 ### Feature

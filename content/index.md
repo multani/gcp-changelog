@@ -24,6 +24,7 @@
 - [App Engine flexible environment Ruby](app-engine-flexible-environment-ruby/index.md)
 - [App Engine standard environment Go](app-engine-standard-environment-go/index.md)
 - [App Engine standard environment Java](app-engine-standard-environment-java/index.md)
+- [App Engine standard environment Node.js](app-engine-standard-environment-node-js/index.md)
 - [App Engine standard environment PHP](app-engine-standard-environment-php/index.md)
 - [App Engine standard environment Python](app-engine-standard-environment-python/index.md)
 - [App Engine standard environment Ruby](app-engine-standard-environment-ruby/index.md)

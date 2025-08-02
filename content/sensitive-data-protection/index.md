@@ -1,5 +1,28 @@
 # Sensitive Data Protection
 
+## 2025-08-01
+
+### Feature
+
+The following infoType detectors are available in all regions. For more information about all built-in infoTypes, see [InfoType detector reference](https://cloud.google.com/sensitive-data-protection/docs/infotypes-reference).
+
+* `DOCUMENT_TYPE/R&D/SOURCE_CODE/C`
+* `DOCUMENT_TYPE/R&D/SOURCE_CODE/CPP`
+* `DOCUMENT_TYPE/R&D/SOURCE_CODE/CS`
+* `DOCUMENT_TYPE/R&D/SOURCE_CODE/GO`
+* `DOCUMENT_TYPE/R&D/SOURCE_CODE/HTML`
+* `DOCUMENT_TYPE/R&D/SOURCE_CODE/JAVA`
+* `DOCUMENT_TYPE/R&D/SOURCE_CODE/JAVASCRIPT`
+* `DOCUMENT_TYPE/R&D/SOURCE_CODE/JSON`
+* `DOCUMENT_TYPE/R&D/SOURCE_CODE/PHP`
+* `DOCUMENT_TYPE/R&D/SOURCE_CODE/POWERSHELL`
+* `DOCUMENT_TYPE/R&D/SOURCE_CODE/PYTHON`
+* `DOCUMENT_TYPE/R&D/SOURCE_CODE/RUST`
+* `DOCUMENT_TYPE/R&D/SOURCE_CODE/SHELL`
+* `DOCUMENT_TYPE/R&D/SOURCE_CODE/SQL`
+* `DOCUMENT_TYPE/R&D/SOURCE_CODE/TYPESCRIPT`
+
+---
 ## 2025-07-04
 
 ### Feature

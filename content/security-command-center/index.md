@@ -1,5 +1,22 @@
 # Security Command Center
 
+## 2025-07-29
+
+### Feature
+
+**Model Armor and Vertex AI integration**
+
+Model Armor integrates with Vertex AI, providing a default security configuration for all new prediction endpoints. This feature is in [Preview](https://cloud.google.com/products#product-launch-stages). For more information, see [Integration with Vertex AI](https://cloud.google.com/security-command-center/docs/model-armor-vertex-integration).
+
+### Feature
+
+You can send a bulk export of Security Command Center findings to a BigQuery dataset. This feature is available in [Preview](https://cloud.google.com/products#product-launch-stages). For more information, see [Bulk export findings to BigQuery](https://cloud.google.com/security-command-center/docs/bulk-exports-to-big-query).
+
+### Feature
+
+You can use Terraform to manage Model Armor floor settings and templates. This helps reduce manual overhead with Model Armor deployments. For more information, see [Terraform resources for Security Command Center](https://cloud.google.com/security-command-center/docs/terraform#resources).
+
+---
 ## 2025-07-28
 
 ### Changed

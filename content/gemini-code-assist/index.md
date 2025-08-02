@@ -2,10 +2,6 @@
 
 ## 2025-08-01
 
-### Feature
-
-
-
 ### View code diff in IntelliJ chat
 
 #### IntelliJ Gemini Code Assist `1.23.3`
@@ -19,10 +15,6 @@ chat interface.
 
 ![Accept code diff in IntelliJ Gemini Code Assist.](https://cloud.google.com/gemini/images/intellij-accept-diff.png)
 
-### Feature
-
-
-
 ### Multi-part chat code suggestions
 
 #### IntelliJ Gemini Code Assist `1.23.3`
@@ -33,10 +25,6 @@ changes.
 
 ![Structured chat edits in IntelliJ Gemini Code Assist](https://cloud.google.com/gemini/images/release-notes-images/intellij-structured-chat-edits.png)
 
-### Feature
-
-
-
 ### Clickable filenames in chat output
 
 #### IntelliJ Gemini Code Assist `1.23.3`
@@ -44,10 +32,6 @@ changes.
 IntelliJ Gemini Code Assist provides clickable filenames when it references a
 file in your workspace as part of its chat response. Clicking the filename opens
 the file in your workspace.
-
-### Announcement
-
-
 
 ### BYOID support for IntelliJ
 
@@ -57,10 +41,6 @@ The IntelliJ Gemini Code Assist Standard and Enterprise editions support Bring
 Your Own ID (BYOID) login. With BYOID support, you can authenticate once with a
 trusted identity. For more information, see
 [Workload Identity Federation](https://cloud.google.com/iam/docs/workload-identity-federation).
-
-### Changed
-
-
 
 ### Chat banner shows release channel information
 

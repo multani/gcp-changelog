@@ -989,6 +989,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Firestore <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../firestore/" class="dropdown-item">Firestore</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Gemini code assist <b class="caret"></b>
                         </a>
 
@@ -1524,12 +1536,22 @@
 
 
 <h1 id="cloud-sql-for-sql-server">Cloud SQL for SQL Server</h1>
-<h2 id="2025-07-08">2025-07-08</h2>
+<h2 id="2025-07-31">2025-07-31</h2>
 <h3 id="feature">Feature</h3>
+<p>Cloud SQL now offers two options of backup services to manage your instance's backups:</p>
+<ul>
+<li><strong>Enhanced backups</strong> (<a href="https://cloud.google.com/products?#product-launch-stages">Preview</a>): backups are managed and stored in a centralized backup management project that leverages the <a href="https://cloud.google.com/backup-disaster-recovery">Backup and DR service</a>, and provides enforced retention, granular scheduling, and longer retention.</li>
+<li><strong>Standard backups</strong> (existing option): backups are created, managed, and stored in the same project as your Cloud SQL instances.</li>
+</ul>
+<p>You can choose between these options based on your instance's requirements and needs. Although instances can't use both backup options at the same time, Cloud SQL gives you the ability to switch between these backup options as necessary.</p>
+<p>For more information about the available options and their limitations, see <a href="https://cloud.google.com/sql/docs/sqlserver/backup-recovery/backups#backup-options">Backup options</a>.</p>
+<hr />
+<h2 id="2025-07-08">2025-07-08</h2>
+<h3 id="feature_1">Feature</h3>
 <p>Cloud SQL for SQL Server now offers Active Directory support for write endpoints. For more information, see <a href="https://cloud.google.com/sql/docs/sqlserver/configure-private-ip#cross-forest-trusts">Write endpoints across forests</a>.</p>
 <hr />
 <h2 id="2025-05-28">2025-05-28</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>Cloud SQL for SQL Server now offers the maximum server memory recommender.</p>
 <p>Database instances running with an allocation of memory that's either too low or too high might experience performance issues.</p>
 <p>The <code>max server memory (mb)</code> flag limits the amount of memory that Cloud SQL can allocate for its internal pools. You can manually set a value for this flag, or omit the flag and let Cloud SQL manage memory limits for you automatically.</p>
@@ -1545,6 +1567,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-sql-for-sql-server">Cloud SQL for SQL Server</a></li>
+          <li class="nav-item">
+            <a href="#2025-07-31" class="nav-link">2025-07-31</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-07-08" class="nav-link">2025-07-08</a>
           </li>

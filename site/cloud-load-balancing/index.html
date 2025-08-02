@@ -989,6 +989,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Firestore <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../firestore/" class="dropdown-item">Firestore</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Gemini code assist <b class="caret"></b>
                         </a>
 
@@ -1524,6 +1536,15 @@
 
 
 <h1 id="cloud-load-balancing">Cloud Load Balancing</h1>
+<h2 id="2025-07-30">2025-07-30</h2>
+<h3 id="changed">Changed</h3>
+<p><strong>Starting October 15, 2025, the global and classic external Application Load Balancers are improving HTTP header handling for headers with obs-fold values to comply with the <a href="https://www.rfc-editor.org/rfc/rfc9112.html#section-5.2">RFC 9112</a> standard</strong></p>
+<p>Previously, these load balancers would forward HTTP headers with obs-fold values (those split across multiple lines, with subsequent lines starting with a space or a tab) without any changes. Starting October 15, 2025, each obs-fold will be replaced with one or more space characters (SP octets) before forwarding the message upstream. This ensures that the header is correctly interpreted as a single line, as required by the HTTP specification.</p>
+<p><strong>What you need to do</strong></p>
+<p>Review your current client applications and backend services before October 15, 2025 and ensure that they generate HTTP headers with obs-fold values in a single-line format when communicating with these load balancers.</p>
+<p>Because the obs-fold header fields have been deprecated in RFC 9112, compliant clients and servers should already avoid using this format. However, there is a possibility that services that specifically rely on the old, non-compliant multi-line format of headers with obs-fold values might experience unexpected behavior. You should proactively check your backend service logs for any errors originating from your services due to the modified obs-fold headers.</p>
+<p>For more information on the HTTP specification regarding headers with obs-fold values, review <a href="https://www.rfc-editor.org/rfc/rfc9112.html#section-5.2">RFC 9112, Section 5.2: Obsolete Line Folding</a>.</p>
+<hr />
 <h2 id="2025-07-28">2025-07-28</h2>
 <h3 id="feature">Feature</h3>
 <p>Global external Application Load Balancers now support the <a href="https://github.com/FoxIO-LLC/ja4/blob/main/technical_details/JA4.md">JA4 fingerprint</a>. The JA4 fingerprint can be added to a <a href="https://cloud.google.com/load-balancing/docs/https/custom-headers-global?variables#variables">custom request header</a> using the <code>tls_ja4_fingerprint</code> variable.</p>
@@ -1595,6 +1616,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-load-balancing">Cloud Load Balancing</a></li>
+          <li class="nav-item">
+            <a href="#2025-07-30" class="nav-link">2025-07-30</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-07-28" class="nav-link">2025-07-28</a>
           </li>

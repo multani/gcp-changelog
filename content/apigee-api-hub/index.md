@@ -1,5 +1,89 @@
 # Apigee API hub
 
+## 2025-07-31
+
+### Feature
+
+**New data source support for plugins**
+
+API hub now supports importing API metadata through new dedicated plugins for the following data sources:
+
+1. [Apigee Edge Public Cloud](https://docs.apigee.com/api-platform/get-started/apigee-edge-uapim)
+2. [Apigee Edge Private Cloud (OPDK)](https://docs.apigee.com/private-cloud/v4.53.00/privatecloud-uapim-overview)
+
+For more information, see [Plugins overview](https://cloud.google.com/apigee/docs/apihub/plugins).
+
+### Feature
+
+**Push-based plugin ingestion**
+
+API hub now supports push-based plugin ingestion. This method allows for more real-time synchronization of API metadata. All new **Apigee, Apigee hybrid, Apigee Edge Public Cloud, and Apigee Edge Private Cloud (OPDK)** plugins are created with push-based ingestion by default.
+
+For more information, see [Plugin data ingestion methods](https://cloud.google.com/apigee/docs/apihub/plugins#plugin-data-ingestion-methods).
+
+**Note:** Rollouts of this feature will begin today, and may take five or more business days to be completed across all Google Cloud zones. You may not be able to create push-based plugins until the rollout is complete.
+
+### Feature
+
+**Create custom plugins [API only]**
+
+You can now use the `Create Plugin` API to create custom plugins in API hub. Custom plugins are created manually to connect API hub to a specific API data source.
+
+For more information, see [Create custom plugins](https://cloud.google.com/apigee/docs/apihub/create-custom-plugins).
+
+### Issue
+
+**Default Apigee plugin instance not auto-created during runtime attachment**
+
+**Issue:** When provisioning API hub as part of Apigee provisioning, the default `Apigee X and hybrid` plugin instance is not automatically created. This prevents API proxies from being auto-registered.
+
+**Workaround:** You can manually attach an Apigee runtime instance and import the Apigee assets. See [Attach a runtime project](https://cloud.google.com/apigee/docs/apihub/auto-register-apigee-proxies#attach-a-runtime-project).
+
+### Changed
+
+**Delete plugin instance changes**
+
+API hub no longer retains any ingested metadata from a plugin after its deletion. Deleting a plugin instance also permanently deletes all the associated API data from API hub.
+
+For more information, see [Delete a plugin instance](https://cloud.google.com/apigee/docs/apihub/manage-plugin-instances#delete-plugin-instance).
+
+### Changed
+
+**Provisioning changes and Apigee API proxy registration**
+
+API hub changed how it registers API proxies from Apigee and how it creates default plugin instances during provisioning.
+
+API hub now automatically creates a default `Apigee X and hybrid` plugin instance and auto-registers API proxies only when you provision it as part of Apigee provisioning.
+
+If you provision API hub directly from the API hub UI, API hub does not automatically create a default plugin instance, nor does it auto-register proxies.
+
+For more information, see [Project attachments and plugins](https://cloud.google.com/apigee/docs/apihub/auto-register-apigee-proxies#project-associations-and-plugins).
+
+### Changed
+
+**New tutorial: Enrich API data in API hub**
+
+A new tutorial is available for enriching API data in Apigee API hub.
+
+It shows you how to use API hub's custom curation features to automatically fetch OpenAPI specifications from a Cloud Storage bucket and associate them with their corresponding Apigee API proxies. The custom curation logic is defined using an integration in Application Integration.
+
+For more information, see [Enrich API data with custom curation in API hub](https://cloud.google.com/apigee/docs/apihub/tutorials/enrich-api-data).
+
+### Deprecated
+
+**Deprecation of pull-based ingestion for Apigee plugins**
+
+[Pull-based ingestion](https://cloud.google.com/apigee/docs/apihub/plugins#plugin-data-ingestion-methods) is no longer supported for `Apigee and Apigee hybrid` plugins as of **July 31, 2025**. For existing projects that have pull-based Apigee X and hybrid plugins configured, these plugins will continue to function and will be automatically migrated to the push-based type starting **August 2025**.
+
+### Deprecated
+
+**Deprecation of Apigee proxy deployment attributes**
+
+As of **July 31st, 2025**, the `Apigee X and Hybrid Environment` and `Apigee X and Hybrid Organization` attributes will no longer be added to new Apigee proxy deployments. This change specifically applies when you import deployments into API hub by attaching a runtime project.
+
+If your existing projects use these attributes in filtered search queries, we recommend updating them. To ensure your searches continue to work, use the `Source project` and `Source environment` fields as alternatives.
+
+---
 ## 2025-07-22
 
 ### Changed
@@ -21,6 +105,14 @@ Deprovisioning an API hub instance now also deletes any associated Apigee organi
 If you deprovision an API hub instance, you can reprovision it later, but you'll need to wait 7 days before you can do so.
 
 For more information, see [Deprovision Apigee API hub](https://cloud.google.com/apigee/docs/apihub/deprovision).
+
+### Changed
+
+**VPC Service Controls (VPC-SC) is GA**
+
+VPC Service Controls in API hub is now [GA](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [VPC Service Controls for API hub](https://cloud.google.com/apigee/docs/apihub/vpc-service-control).
 
 ---
 ## 2025-07-18

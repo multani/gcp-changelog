@@ -80,6 +80,7 @@
 - [Dialogflow](dialogflow/index.md)
 - [Document AI](document-ai/index.md)
 - [Filestore](filestore/index.md)
+- [Firestore](firestore/index.md)
 - [Gemini Code Assist](gemini-code-assist/index.md)
 - [Generative AI on Vertex AI](generative-ai-on-vertex-ai/index.md)
 - [Google Cloud Architecture Center](google-cloud-architecture-center/index.md)

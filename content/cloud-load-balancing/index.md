@@ -1,5 +1,22 @@
 # Cloud Load Balancing
 
+## 2025-07-30
+
+### Changed
+
+**Starting October 15, 2025, the global and classic external Application Load Balancers are improving HTTP header handling for headers with obs-fold values to comply with the [RFC 9112](https://www.rfc-editor.org/rfc/rfc9112.html#section-5.2) standard**
+
+Previously, these load balancers would forward HTTP headers with obs-fold values (those split across multiple lines, with subsequent lines starting with a space or a tab) without any changes. Starting October 15, 2025, each obs-fold will be replaced with one or more space characters (SP octets) before forwarding the message upstream. This ensures that the header is correctly interpreted as a single line, as required by the HTTP specification.
+
+**What you need to do**
+
+Review your current client applications and backend services before October 15, 2025 and ensure that they generate HTTP headers with obs-fold values in a single-line format when communicating with these load balancers.
+
+Because the obs-fold header fields have been deprecated in RFC 9112, compliant clients and servers should already avoid using this format. However, there is a possibility that services that specifically rely on the old, non-compliant multi-line format of headers with obs-fold values might experience unexpected behavior. You should proactively check your backend service logs for any errors originating from your services due to the modified obs-fold headers.
+
+For more information on the HTTP specification regarding headers with obs-fold values, review [RFC 9112, Section 5.2: Obsolete Line Folding](https://www.rfc-editor.org/rfc/rfc9112.html#section-5.2).
+
+---
 ## 2025-07-28
 
 ### Feature

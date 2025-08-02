@@ -1,5 +1,50 @@
 # Container Optimized OS
 
+## 2025-07-30
+
+### Changed
+
+
+
+### cos-dev-125-19175-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.37](https://cos.googlesource.com/third_party/kernel/+/dfb6569157e957816a33d329705284d2ef5a390e ) | v27.5.1 | v2.0.4 | [See List](https://storage.googleapis.com/cos-tools/19175.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Updated app-misc/jq to v1.8.1.
+
+### Fixed
+
+The NFS access cache is no longer cleared on login by default. To use the old behavior, load the NFS module with the `nfs_fasc=1` module parameter.
+
+### Security
+
+Patched openssl to fix CVE-2023-50782 affecting
+dev-python/crytography.
+
+### Security
+
+Upgraded sqlite to v3.50.2. This resolves CVE-2025-6965.
+
+### Security
+
+Fixed CVE-2024-26130 in dev-python/cryptography.
+
+### Security
+
+Fixed KCTF-5e28d5a in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811539 -> 811510
+
+---
 ## 2025-07-28
 
 ### cos-117-18613-339-11
@@ -153,6 +198,48 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 811983 -> 812027
 
+### cos-121-18867-90-106
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.93](https://cos.googlesource.com/third_party/kernel/+/386b92953069741a6a583dd4abce71d299fafa55 ) | v27.5.1 | v2.0.4 | [See List](https://storage.googleapis.com/cos-tools/18867.90.106/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Upgraded sys-process/lsof to v4.99.5.
+
+### Fixed
+
+Updated app-misc/jq to v1.8.1.
+
+### Fixed
+
+Fixed a kernel bug which caused some NVME disk IO errors to be ignored, potentially resulting in dropped writes.
+
+### Fixed
+
+The NFS access cache is no longer cleared on login by default. To use the old behavior, load the NFS module with the `nfs_fasc=1` module parameter.
+
+### Security
+
+Patched openssl to fix CVE-2023-50782 affecting
+dev-python/crytography.
+
+### Security
+
+Fixed CVE-2024-26130 in dev-python/cryptography.
+
+### Security
+
+Fixed KCTF-5e28d5a in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811784 -> 811826
+
 ### cos-109-17800-570-8
 
 |  |  |  |  |
@@ -173,6 +260,134 @@ Upgraded sqlite to v3.50.2. This resolves CVE-2025-6965.
 Runtime sysctl changes:
 
 * Changed: fs.file-max: 812234 -> 812262
+
+---
+## 2025-07-24
+
+### Changed
+
+
+
+### cos-dev-125-19165-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.37](https://cos.googlesource.com/third_party/kernel/+/0ce36d1d9a8a3cab6816b03d67f80f64e582deb7 ) | v27.5.1 | v2.0.4 | [See List](https://storage.googleapis.com/cos-tools/19165.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated the NVIDIA GPU driver policy for New Feature Branch (NFB) drivers. The LATEST tag has been updated to point to the stable 570.133.20 Production Branch. The 575.57.08 NFB driver remains available for development and testing but must now be selected by its specific version number.Removed 575.57.08 NFB driver support for NVIDIA\_GB200 machine.
+
+### Changed
+
+Upgraded nvidia-container-toolkit to v1.17.8.
+
+### Changed
+
+Updated cos-gpu-installer to v2.5.5.
+
+### Changed
+
+Updated the Linux kernel to v6.12.37.
+
+### Feature
+
+Added ARM support for the Lustre 2.14.0 drivers.
+
+### Feature
+
+Remove support for the v2.14.0\_p184 and v2.14.0\_p198 Lustre client drivers.
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20250627.00.
+
+### Fixed
+
+Upgraded chromeos-base/shill-client to v0.0.1-r4875.
+
+### Fixed
+
+Upgraded chromeos-base/google-breakpad to v2025.07.01.161305-r243.
+
+### Fixed
+
+Upgraded uhaul to version 6.12-0.
+
+### Fixed
+
+Upgraded sysram to version 6.12-0.
+
+### Fixed
+
+Fixed an issue where some workloads could cause a full
+system hang when running close to their memory limit.
+
+### Security
+
+Fixed CVE-2024-6174 and CVE-2024-11584 in cloud-init.
+
+### Security
+
+Updated app-editors/nano to v8.5. This resolves
+CVE-2024-5742.
+
+### Security
+
+Upgraded vim, vim-core to
+version 9.1.1500. This fixes CVE-2025-26603, CVE-2025-27423,
+CVE-2025-29768, CVE-2025-1215, CVE-2025-24014, CVE-2025-22134.
+
+### Security
+
+Upgraded app-admin/sudo to v1.9.17\_p1. This resolves
+CVE-2025-32462 and CVE-2025-32463.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Added: kernel.apparmor\_restrict\_unprivileged\_unconfined: 0
+* Added: kernel.core\_file\_note\_size\_limit: 4194304
+* Added: kernel.core\_sort\_vma: 0
+* Added: net.ipv4.fib\_multipath\_hash\_seed: 0
+* Added: net.ipv4.tcp\_pingpong\_thresh: 1
+* Added: net.ipv6.conf.all.ra\_honor\_pio\_life: 0
+* Added: net.ipv6.conf.all.ra\_honor\_pio\_pflag: 0
+* Added: net.ipv6.conf.all.regen\_min\_advance: 2
+* Added: net.ipv6.conf.default.ra\_honor\_pio\_life: 0
+* Added: net.ipv6.conf.default.ra\_honor\_pio\_pflag: 0
+* Added: net.ipv6.conf.default.regen\_min\_advance: 2
+* Added: net.ipv6.conf.docker0.ra\_honor\_pio\_life: 0
+* Added: net.ipv6.conf.docker0.ra\_honor\_pio\_pflag: 0
+* Added: net.ipv6.conf.docker0.regen\_min\_advance: 2
+* Added: net.ipv6.conf.eth0.ra\_honor\_pio\_life: 0
+* Added: net.ipv6.conf.eth0.ra\_honor\_pio\_pflag: 0
+* Added: net.ipv6.conf.eth0.regen\_min\_advance: 2
+* Added: net.ipv6.conf.lo.ra\_honor\_pio\_life: 0
+* Added: net.ipv6.conf.lo.ra\_honor\_pio\_pflag: 0
+* Added: net.ipv6.conf.lo.regen\_min\_advance: 2
+* Added: vm.enable\_soft\_offline: 1
+* Changed: fs.epoll.max\_user\_watches: 1809007 -> 1808517
+* Changed: fs.fanotify.max\_user\_marks: 67544 -> 68412
+* Changed: fs.file-max: 811755 -> 811539
+* Changed: fs.inotify.max\_user\_watches: 63425 -> 64189
+* Changed: kernel.threads-max: 63487 -> 63178
+* Changed: net.ipv4.tcp\_mem: 94041 125391 188082 -> 94017 125357 188034
+* Changed: net.ipv4.udp\_mem: 188085 250783 376170 -> 188034 250715 376068
+* Changed: user.max\_cgroup\_namespaces: 31743 -> 31589
+* Changed: user.max\_fanotify\_marks: 67544 -> 68412
+* Changed: user.max\_inotify\_watches: 63425 -> 64189
+* Changed: user.max\_ipc\_namespaces: 31743 -> 31589
+* Changed: user.max\_mnt\_namespaces: 31743 -> 31589
+* Changed: user.max\_net\_namespaces: 31743 -> 31589
+* Changed: user.max\_pid\_namespaces: 31743 -> 31589
+* Changed: user.max\_time\_namespaces: 31743 -> 31589
+* Changed: user.max\_user\_namespaces: 31743 -> 31589
+* Changed: user.max\_uts\_namespaces: 31743 -> 31589
+* Changed: vm.lowmem\_reserve\_ratio: 256 256 32 0 0 -> 256 256 32 0
+* Deleted: kernel.sched\_child\_runs\_first: 0
 
 ---
 ## 2025-07-21

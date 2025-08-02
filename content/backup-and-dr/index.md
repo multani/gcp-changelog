@@ -1,5 +1,12 @@
 # Backup and DR
 
+## 2025-07-31
+
+### Announcement
+
+Announcing the **Public Preview launch of Cloud SQL enhanced backups** with Backup and DR. This enables advanced data protection capabilities offered by Backup and DR including backup vault support, granular scheduling through backup plans, and centralized management.
+
+---
 ## 2025-07-11
 
 ### Announcement

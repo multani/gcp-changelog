@@ -1,5 +1,77 @@
 # Gemini Code Assist
 
+## 2025-08-01
+
+### Feature
+
+
+
+### View code diff in IntelliJ chat
+
+#### IntelliJ Gemini Code Assist `1.23.3`
+
+With the [code diff view](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#view_code_diffs)
+in IntelliJ Gemini Code Assist, you can view suggested code changes directly in
+your chat with Gemini Code Assist. This feature boosts productivity by offering
+immediate visibility on modifications, streamlining reviews, and enabling
+precise control over integrating new code, all within the Gemini Code Assist
+chat interface.
+
+![Accept code diff in IntelliJ Gemini Code Assist.](https://cloud.google.com/gemini/images/intellij-accept-diff.png)
+
+### Feature
+
+
+
+### Multi-part chat code suggestions
+
+#### IntelliJ Gemini Code Assist `1.23.3`
+
+IntelliJ Gemini Code Assist now supports streamlined multi-part chat code
+suggestions. You have the option to accept a single code change or all suggested
+changes.
+
+![Structured chat edits in IntelliJ Gemini Code Assist](https://cloud.google.com/gemini/images/release-notes-images/intellij-structured-chat-edits.png)
+
+### Feature
+
+
+
+### Clickable filenames in chat output
+
+#### IntelliJ Gemini Code Assist `1.23.3`
+
+IntelliJ Gemini Code Assist provides clickable filenames when it references a
+file in your workspace as part of its chat response. Clicking the filename opens
+the file in your workspace.
+
+### Announcement
+
+
+
+### BYOID support for IntelliJ
+
+#### IntelliJ Gemini Code Assist `1.23.3`
+
+The IntelliJ Gemini Code Assist Standard and Enterprise editions support Bring
+Your Own ID (BYOID) login. With BYOID support, you can authenticate once with a
+trusted identity. For more information, see
+[Workload Identity Federation](https://cloud.google.com/iam/docs/workload-identity-federation).
+
+### Changed
+
+
+
+### Chat banner shows release channel information
+
+#### IntelliJ Gemini Code Assist `1.23.3`
+
+The IntelliJ Gemini Code Assist chat banner shows the release channel that
+you're currently working in.
+
+![IntelliJ Gemini Code Assist chat banner shows release channel info.](https://cloud.google.com/gemini/images/release-notes-images/intellij-release-channel-info.png)
+
+---
 ## 2025-07-31
 
 ### Use Gemini Code Assist agent mode in IntelliJ (Preview)

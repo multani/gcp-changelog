@@ -2,6 +2,10 @@
 
 ## 2025-07-31
 
+### Feature
+
+You can manage data profile scans and data quality scans across your project by using the **Metadata curation** page in the Google Cloud console. For more information, see [Profile your data](https://cloud.google.com/bigquery/docs/data-profile-scan) and [Scan for data quality issues](https://cloud.google.com/bigquery/docs/data-quality-scan). This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
 ### Changed
 
 BigQuery ML has improved throughput by more than 100x for the following

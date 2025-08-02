@@ -1,5 +1,16 @@
 # SAP on Google Cloud
 
+## 2025-07-30
+
+### Announcement
+
+**Google Cloud's Agent for SAP version 3.9**
+
+Version 3.9 of Google Cloud's Agent for SAP is generally available (GA). This version introduces monitoring and supportability enhancements.
+
+For more information, see [What's new with Google Cloud's Agent for SAP](https://cloud.google.com/sap/docs/agent-for-sap/whats-new).
+
+---
 ## 2025-07-28
 
 ### Announcement

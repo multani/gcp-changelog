@@ -1,5 +1,43 @@
 # Config Connector
 
+## 2025-07-30
+
+### Announcement
+
+Config Connector version 1.133.0 is now available.
+
+### Feature
+
+New Beta Resources (Direct Reconciler):
+
+* [`APIGatewayAPI`](https://cloud.google.com/config-connector/docs/reference/docs/reference/resource-docs/apigateway/apigatewayapi.md)
+* [`AppHubApplication`](https://cloud.google.com/config-connector/docs/reference/docs/reference/resource-docs/apphub/apphubapplication.md)
+* `StorageAnywhereCache`
+
+### Changed
+
+New Alpha Resources (Direct Reconciler):
+
+* `BigtableLogicalView`
+
+### Changed
+
+Reconciliation Improvements
+
+Added support for direct reconciliation to more resources, with opt-in behaviour. The API is backward compatible. The following resources now have direct reconciliation support
+
+* `BigQueryTable`
+  + Use the `alpha.cnrm.cloud.google.com/reconciler: direct` annotation on the `BigQueryTable` CR object to opt-in the direct controller.
+  + The direct controller also supports adding BigQueryDataPolicies directly to BigQueryTable columns within `spec.schema`.
+
+### Fixed
+
+* [PR#4808](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/4808)
+  filtered out Kubernetes labels that are invalid for Google Cloud in the
+  `ComputeForwardingRule` direct controller, ensuring backward compatibility
+  after migrating to the direct controller.
+
+---
 ## 2025-07-14
 
 ### Announcement

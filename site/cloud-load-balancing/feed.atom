@@ -2,9 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Load Balancing</title>
   <subtitle>Changelog for Google Cloud product: Cloud Load Balancing</subtitle>
-  <updated>2025-07-28T00:00:00+00:00</updated>
+  <updated>2025-07-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-load-balancing</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-load-balancing/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-load-balancing:2025-07-30:changed:0</id>
+    <published>2025-07-30T00:00:00+00:00</published>
+    <updated>2025-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Starting October 15, 2025, the global and classic external Application Load Balancers are improving HTTP header handling for headers with obs-fold values to comply with the <a href="https://www.rfc-editor.org/rfc/rfc9112.html#section-5.2">RFC 9112</a> standard</strong></p>
+<p>Previously, these load balancers would forward HTTP headers with obs-fold values (those split across multiple lines, with subsequent lines starting with a space or a tab) without any changes. Starting October 15, 2025, each obs-fold will be replaced with one or more space characters (SP octets) before forwarding the message upstream. This ensures that the header is correctly interpreted as a single line, as required by the HTTP specification.</p>
+<p><strong>What you need to do</strong></p>
+<p>Review your current client applications and backend services before October 15, 2025 and ensure that they generate HTTP headers with obs-fold values in a single-line format when communicating with these load balancers.</p>
+<p>Because the obs-fold header fields have been deprecated in RFC 9112, compliant clients and servers should already avoid using this format. However, there is a possibility that services that specifically rely on the old, non-compliant multi-line format of headers with obs-fold values might experience unexpected behavior. You should proactively check your backend service logs for any errors originating from your services due to the modified obs-fold headers.</p>
+<p>For more information on the HTTP specification regarding headers with obs-fold values, review <a href="https://www.rfc-editor.org/rfc/rfc9112.html#section-5.2">RFC 9112, Section 5.2: Obsolete Line Folding</a>.</p>]]></content>
+    <summary>Starting October 15, 2025, Application Load Balancers will improve HTTP header handling for obs-fold values to comply with RFC 9112 standard. This change ensures correct interpretation of headers as a single line.</summary>
+    <title>Changed: HTTP Header Handling Update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

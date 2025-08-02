@@ -1,6 +1,48 @@
 {
   "name": "Config Connector",
   "entries": {
+    "2025-07-30": [
+      {
+        "kind": "Announcement",
+        "content": "Config Connector version 1.133.0 is now available.",
+        "summary": {
+          "title": "New Config Connector Version",
+          "summary": "Config Connector version 1.133.0 is available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Beta Resources (Direct Reconciler):\n\n* [`APIGatewayAPI`](https://cloud.google.com/config-connector/docs/reference/docs/reference/resource-docs/apigateway/apigatewayapi.md)\n* [`AppHubApplication`](https://cloud.google.com/config-connector/docs/reference/docs/reference/resource-docs/apphub/apphubapplication.md)\n* `StorageAnywhereCache`",
+        "summary": {
+          "title": "New Beta Resources Available",
+          "summary": "New Beta Resources"
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "New Alpha Resources (Direct Reconciler):\n\n* `BigtableLogicalView`",
+        "summary": {
+          "title": "New Alpha Release",
+          "summary": "BigtableLogicalView is now available."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Reconciliation Improvements\n\nAdded support for direct reconciliation to more resources, with opt-in behaviour. The API is backward compatible. The following resources now have direct reconciliation support\n\n* `BigQueryTable`\n  + Use the `alpha.cnrm.cloud.google.com/reconciler: direct` annotation on the `BigQueryTable` CR object to opt-in the direct controller.\n  + The direct controller also supports adding BigQueryDataPolicies directly to BigQueryTable columns within `spec.schema`.",
+        "summary": {
+          "title": "Reconciliation Improvements",
+          "summary": "Direct reconciliation added for BigQueryTable resources, with opt-in behavior via annotation. Supports BigQueryDataPolicies on columns."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "* [PR#4808](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/4808)\n  filtered out Kubernetes labels that are invalid for Google Cloud in the\n  `ComputeForwardingRule` direct controller, ensuring backward compatibility\n  after migrating to the direct controller.",
+        "summary": {
+          "title": "",
+          "summary": "Kubernetes labels that are invalid for Google Cloud were filtered out in the ComputeForwardingRule direct controller."
+        }
+      }
+    ],
     "2025-07-14": [
       {
         "kind": "Announcement",

@@ -1,5 +1,16 @@
 # Pub/Sub
 
+## 2025-07-31
+
+### Libraries
+
+General availability: The Ruby Pub/Sub client library has a new major version. For more information on how to migrate from v2 to v3, see the [Migration guide](https://github.com/googleapis/google-cloud-ruby/blob/main/google-cloud-pubsub/MIGRATION_GUIDE.md).
+
+### Deprecated
+
+**Deprecated:** The v2 Pub/Sub Ruby client library, [google-cloud-pubsub/v2.x](https://rubygems.org/gems/google-cloud-pubsub/versions/2.23.0), is now deprecated. Effective July 31st, 2026, this version will no longer receive security or bug fixes. To receive new features, [migrate](https://github.com/googleapis/google-cloud-ruby/blob/main/google-cloud-pubsub/MIGRATION_GUIDE.md) to the newest version, [google-cloud-pubsub/v3.x](https://rubygems.org/gems/google-cloud-pubsub/versions/3.0.0).
+
+---
 ## 2025-07-21
 
 ### Libraries

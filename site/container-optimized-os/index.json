@@ -1,6 +1,80 @@
 {
   "name": "Container Optimized OS",
   "entries": {
+    "2025-07-30": [
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "Short Title",
+          "summary": "This is a short summary for a title."
+        }
+      },
+      {
+        "kind": "cos-dev-125-19175-0-0",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.37](https://cos.googlesource.com/third_party/kernel/+/dfb6569157e957816a33d329705284d2ef5a390e ) | v27.5.1 | v2.0.4 | [See List](https://storage.googleapis.com/cos-tools/19175.0.0/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS-6.12.37 Update",
+          "summary": "COS-6.12.37 with Docker v27.5.1, Containerd v2.0.4, and GPU driver support."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated app-misc/jq to v1.8.1.",
+        "summary": {
+          "title": "jq update",
+          "summary": "Updated jq to v1.8.1."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The NFS access cache is no longer cleared on login by default. To use the old behavior, load the NFS module with the `nfs_fasc=1` module parameter.",
+        "summary": {
+          "title": "NFS Cache Behavior",
+          "summary": "NFS access cache is no longer cleared on login by default."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Patched openssl to fix CVE-2023-50782 affecting\ndev-python/crytography.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "OpenSSL patched for CVE-2023-50782"
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded sqlite to v3.50.2. This resolves CVE-2025-6965.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Resolved CVE-2025-6965"
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-26130 in dev-python/cryptography.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixed CVE-2024-26130 in dev-python/cryptography."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-5e28d5a in the Linux kernel.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixed KCTF-5e28d5a in the Linux kernel."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811539 -> 811510",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "fs.file-max changed to 811510"
+        }
+      }
+    ],
     "2025-07-28": [
       {
         "kind": "cos-117-18613-339-11",
@@ -283,6 +357,78 @@
         }
       },
       {
+        "kind": "cos-121-18867-90-106",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.93](https://cos.googlesource.com/third_party/kernel/+/386b92953069741a6a583dd4abce71d299fafa55 ) | v27.5.1 | v2.0.4 | [See List](https://storage.googleapis.com/cos-tools/18867.90.106/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 18867.90.106",
+          "summary": "New COS release available."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-process/lsof to v4.99.5.",
+        "summary": {
+          "title": "lsof upgrade",
+          "summary": "Upgraded sys-process/lsof to v4.99.5."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated app-misc/jq to v1.8.1.",
+        "summary": {
+          "title": "jq update",
+          "summary": "Updated jq to v1.8.1"
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed a kernel bug which caused some NVME disk IO errors to be ignored, potentially resulting in dropped writes.",
+        "summary": {
+          "title": "NVME IO Error Fix",
+          "summary": "Fixed NVME disk IO error bug."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The NFS access cache is no longer cleared on login by default. To use the old behavior, load the NFS module with the `nfs_fasc=1` module parameter.",
+        "summary": {
+          "title": "NFS access cache behavior updated",
+          "summary": "The NFS access cache is no longer cleared on login by default."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Patched openssl to fix CVE-2023-50782 affecting\ndev-python/crytography.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixes CVE-2023-50782 in openssl."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-26130 in dev-python/cryptography.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixed CVE-2024-26130 in dev-python/cryptography."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-5e28d5a in the Linux kernel.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixed KCTF-5e28d5a in the Linux kernel."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811784 -> 811826",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "fs.file-max changed to 811826"
+        }
+      },
+      {
         "kind": "cos-109-17800-570-8",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.143](https://cos.googlesource.com/third_party/kernel/+/66208798dd21d4ee2d28f8ea8b9b3a2df63e3f42 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/17800.570.8/lakitu/gpu_driver_versions.textproto) |",
         "summary": {
@@ -312,6 +458,160 @@
         "summary": {
           "title": "Runtime sysctl fs.file-max change",
           "summary": "Runtime sysctl changes: fs.file-max changed from 812234 to 812262."
+        }
+      }
+    ],
+    "2025-07-24": [
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "Short Title",
+          "summary": "This is a short summary."
+        }
+      },
+      {
+        "kind": "cos-dev-125-19165-0-0",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.37](https://cos.googlesource.com/third_party/kernel/+/0ce36d1d9a8a3cab6816b03d67f80f64e582deb7 ) | v27.5.1 | v2.0.4 | [See List](https://storage.googleapis.com/cos-tools/19165.0.0/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS Release Notes",
+          "summary": "COS-6.12.37 with Docker v27.5.1 and Containerd v2.0.4, including GPU driver information."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated the NVIDIA GPU driver policy for New Feature Branch (NFB) drivers. The LATEST tag has been updated to point to the stable 570.133.20 Production Branch. The 575.57.08 NFB driver remains available for development and testing but must now be selected by its specific version number.Removed 575.57.08 NFB driver support for NVIDIA\\_GB200 machine.",
+        "summary": {
+          "title": "NVIDIA GPU Driver Update",
+          "summary": "NVIDIA GPU driver policy updated. The LATEST tag now points to the stable 570.133.20 Production Branch. The 575.57.08 NFB driver is still available for dev/test but requires specific version selection. NVIDIA_GB200 machine no longer supports the 575.57.08 NFB driver."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Upgraded nvidia-container-toolkit to v1.17.8.",
+        "summary": {
+          "title": "NVIDIA Container Toolkit Upgrade",
+          "summary": "Upgraded nvidia-container-toolkit to v1.17.8."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated cos-gpu-installer to v2.5.5.",
+        "summary": {
+          "title": "cos-gpu-installer updated",
+          "summary": "Updated cos-gpu-installer to v2.5.5."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated the Linux kernel to v6.12.37.",
+        "summary": {
+          "title": "Linux Kernel Update",
+          "summary": "Updated Linux kernel to v6.12.37."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added ARM support for the Lustre 2.14.0 drivers.",
+        "summary": {
+          "title": "ARM support for Lustre 2.14.0 drivers",
+          "summary": "ARM support for Lustre 2.14.0 drivers."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Remove support for the v2.14.0\\_p184 and v2.14.0\\_p198 Lustre client drivers.",
+        "summary": {
+          "title": "Lustre Client Driver Support Removed",
+          "summary": "Removed support for v2.14.0_p184 and v2.14.0_p198 Lustre client drivers."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/google-guest-configs to v20250627.00.",
+        "summary": {
+          "title": "Fixed google-guest-configs",
+          "summary": "Upgraded google-guest-configs to v20250627.00."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/shill-client to v0.0.1-r4875.",
+        "summary": {
+          "title": "shill-client upgrade",
+          "summary": "ChromeOS shill-client upgraded."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/google-breakpad to v2025.07.01.161305-r243.",
+        "summary": {
+          "title": "Fixed google-breakpad upgrade",
+          "summary": "Upgraded google-breakpad."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded uhaul to version 6.12-0.",
+        "summary": {
+          "title": "Uhaul upgrade",
+          "summary": "Upgraded uhaul to version 6.12-0."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sysram to version 6.12-0.",
+        "summary": {
+          "title": "Sysram Upgrade",
+          "summary": "Upgraded sysram to version 6.12-0."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed an issue where some workloads could cause a full\nsystem hang when running close to their memory limit.",
+        "summary": {
+          "title": "System hang issue fixed",
+          "summary": "Fixed an issue where some workloads could cause a full system hang when running close to their memory limit."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-6174 and CVE-2024-11584 in cloud-init.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixed CVE-2024-6174 and CVE-2024-11584 in cloud-init."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated app-editors/nano to v8.5. This resolves\nCVE-2024-5742.",
+        "summary": {
+          "title": "Security Update for Nano Editor",
+          "summary": "This security update resolves CVE-2024-5742."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded vim, vim-core to\nversion 9.1.1500. This fixes CVE-2025-26603, CVE-2025-27423,\nCVE-2025-29768, CVE-2025-1215, CVE-2025-24014, CVE-2025-22134.",
+        "summary": {
+          "title": "Vim security updates",
+          "summary": "Vim security updates"
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded app-admin/sudo to v1.9.17\\_p1. This resolves\nCVE-2025-32462 and CVE-2025-32463.",
+        "summary": {
+          "title": "Security update for sudo",
+          "summary": "Sudo updated to v1.9.17_p1, fixing CVE-2025-32462 and CVE-2025-32463."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Added: kernel.apparmor\\_restrict\\_unprivileged\\_unconfined: 0\n* Added: kernel.core\\_file\\_note\\_size\\_limit: 4194304\n* Added: kernel.core\\_sort\\_vma: 0\n* Added: net.ipv4.fib\\_multipath\\_hash\\_seed: 0\n* Added: net.ipv4.tcp\\_pingpong\\_thresh: 1\n* Added: net.ipv6.conf.all.ra\\_honor\\_pio\\_life: 0\n* Added: net.ipv6.conf.all.ra\\_honor\\_pio\\_pflag: 0\n* Added: net.ipv6.conf.all.regen\\_min\\_advance: 2\n* Added: net.ipv6.conf.default.ra\\_honor\\_pio\\_life: 0\n* Added: net.ipv6.conf.default.ra\\_honor\\_pio\\_pflag: 0\n* Added: net.ipv6.conf.default.regen\\_min\\_advance: 2\n* Added: net.ipv6.conf.docker0.ra\\_honor\\_pio\\_life: 0\n* Added: net.ipv6.conf.docker0.ra\\_honor\\_pio\\_pflag: 0\n* Added: net.ipv6.conf.docker0.regen\\_min\\_advance: 2\n* Added: net.ipv6.conf.eth0.ra\\_honor\\_pio\\_life: 0\n* Added: net.ipv6.conf.eth0.ra\\_honor\\_pio\\_pflag: 0\n* Added: net.ipv6.conf.eth0.regen\\_min\\_advance: 2\n* Added: net.ipv6.conf.lo.ra\\_honor\\_pio\\_life: 0\n* Added: net.ipv6.conf.lo.ra\\_honor\\_pio\\_pflag: 0\n* Added: net.ipv6.conf.lo.regen\\_min\\_advance: 2\n* Added: vm.enable\\_soft\\_offline: 1\n* Changed: fs.epoll.max\\_user\\_watches: 1809007 -> 1808517\n* Changed: fs.fanotify.max\\_user\\_marks: 67544 -> 68412\n* Changed: fs.file-max: 811755 -> 811539\n* Changed: fs.inotify.max\\_user\\_watches: 63425 -> 64189\n* Changed: kernel.threads-max: 63487 -> 63178\n* Changed: net.ipv4.tcp\\_mem: 94041 125391 188082 -> 94017 125357 188034\n* Changed: net.ipv4.udp\\_mem: 188085 250783 376170 -> 188034 250715 376068\n* Changed: user.max\\_cgroup\\_namespaces: 31743 -> 31589\n* Changed: user.max\\_fanotify\\_marks: 67544 -> 68412\n* Changed: user.max\\_inotify\\_watches: 63425 -> 64189\n* Changed: user.max\\_ipc\\_namespaces: 31743 -> 31589\n* Changed: user.max\\_mnt\\_namespaces: 31743 -> 31589\n* Changed: user.max\\_net\\_namespaces: 31743 -> 31589\n* Changed: user.max\\_pid\\_namespaces: 31743 -> 31589\n* Changed: user.max\\_time\\_namespaces: 31743 -> 31589\n* Changed: user.max\\_user\\_namespaces: 31743 -> 31589\n* Changed: user.max\\_uts\\_namespaces: 31743 -> 31589\n* Changed: vm.lowmem\\_reserve\\_ratio: 256 256 32 0 0 -> 256 256 32 0\n* Deleted: kernel.sched\\_child\\_runs\\_first: 0",
+        "summary": {
+          "title": "Runtime Sysctl Updates",
+          "summary": "Runtime sysctl settings have been updated, including changes to network, kernel, and user limits."
         }
       }
     ],

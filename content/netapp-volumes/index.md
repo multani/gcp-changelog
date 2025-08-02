@@ -1,5 +1,19 @@
 # NetApp Volumes
 
+## 2025-07-31
+
+### Feature
+
+Google Cloud NetApp Volumes now supports organization policy for Customer Managed Encryption Keys (CMEK). For more information, see [CMEK organization policy](https://cloud.google.com/netapp/volumes/docs/configure-and-use/cmek/cmek-overview#cmek_organization_policy).
+
+---
+## 2025-07-29
+
+### Feature
+
+Google Cloud NetApp Volumes is now integrated with NetApp BlueXP Connector. For more information, see [NetApp Volumes integration with BlueXP](https://cloud.google.com/netapp/volumes/docs/discover/features#netapp-volumes-integration-with-bluexp).
+
+---
 ## 2025-07-25
 
 ### Feature
@@ -9,5 +23,12 @@ Google Cloud NetApp Volumes now supports cross-project cross-region replication 
 ### Feature
 
 Google Cloud NetApp Volumes now supports volume backups for large capacity volumes. This feature is now generally available. For more information, see [About backups](https://cloud.google.com/netapp/volumes/docs/protect-data/about-backups).
+
+---
+## 2025-07-22
+
+### Feature
+
+Google Cloud NetApp Volumes now supports multi-VPC peering for all service levels. For more information, see [Connect additional networks](https://cloud.google.com/netapp/volumes/docs/get-started/quickstarts/connect-additional-networks).
 
 ---

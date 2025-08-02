@@ -2,9 +2,83 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Config Connector</title>
   <subtitle>Changelog for Google Cloud product: Config Connector</subtitle>
-  <updated>2025-07-14T00:00:00+00:00</updated>
+  <updated>2025-07-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:config-connector</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/config-connector/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-07-30:announcement:0</id>
+    <published>2025-07-30T00:00:00+00:00</published>
+    <updated>2025-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.133.0 is now available.</p>]]></content>
+    <summary>Config Connector version 1.133.0 is available.</summary>
+    <title>Announcement: New Config Connector Version</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-07-30:feature:1</id>
+    <published>2025-07-30T00:00:00+00:00</published>
+    <updated>2025-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Beta Resources (Direct Reconciler):</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/docs/reference/resource-docs/apigateway/apigatewayapi.md"><code>APIGatewayAPI</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/docs/reference/resource-docs/apphub/apphubapplication.md"><code>AppHubApplication</code></a></li>
+<li><code>StorageAnywhereCache</code></li>
+</ul>]]></content>
+    <summary>New Beta Resources</summary>
+    <title>Feature: New Beta Resources Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-07-30:changed:2</id>
+    <published>2025-07-30T00:00:00+00:00</published>
+    <updated>2025-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Alpha Resources (Direct Reconciler):</p>
+<ul>
+<li><code>BigtableLogicalView</code></li>
+</ul>]]></content>
+    <summary>BigtableLogicalView is now available.</summary>
+    <title>Changed: New Alpha Release</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-07-30:changed:3</id>
+    <published>2025-07-30T00:00:00+00:00</published>
+    <updated>2025-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Reconciliation Improvements</p>
+<p>Added support for direct reconciliation to more resources, with opt-in behaviour. The API is backward compatible. The following resources now have direct reconciliation support</p>
+<ul>
+<li><code>BigQueryTable</code></li>
+<li>Use the <code>alpha.cnrm.cloud.google.com/reconciler: direct</code> annotation on the <code>BigQueryTable</code> CR object to opt-in the direct controller.</li>
+<li>The direct controller also supports adding BigQueryDataPolicies directly to BigQueryTable columns within <code>spec.schema</code>.</li>
+</ul>]]></content>
+    <summary>Direct reconciliation added for BigQueryTable resources, with opt-in behavior via annotation. Supports BigQueryDataPolicies on columns.</summary>
+    <title>Changed: Reconciliation Improvements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-07-30:fixed:4</id>
+    <published>2025-07-30T00:00:00+00:00</published>
+    <updated>2025-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/4808">PR#4808</a>
+  filtered out Kubernetes labels that are invalid for Google Cloud in the
+  <code>ComputeForwardingRule</code> direct controller, ensuring backward compatibility
+  after migrating to the direct controller.</li>
+</ul>]]></content>
+    <summary>Kubernetes labels that are invalid for Google Cloud were filtered out in the ComputeForwardingRule direct controller.</summary>
+    <title>Fixed: </title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

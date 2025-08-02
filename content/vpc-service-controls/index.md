@@ -19,6 +19,15 @@
 * [Places (New) API](https://cloud.google.com/vpc-service-controls/docs/supported-products#table_places_new)
 
 ---
+## 2025-07-07
+
+### Feature
+
+[General availability](https://cloud.google.com/products#product-launch-stages) support for the following integration:
+
+* [Apigee API hub](https://cloud.google.com/vpc-service-controls/docs/supported-products#table_api_hub)
+
+---
 ## 2025-06-30
 
 ### Feature

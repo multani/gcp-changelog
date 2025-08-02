@@ -1,6 +1,16 @@
 {
   "name": "Cloud Load Balancing",
   "entries": {
+    "2025-07-30": [
+      {
+        "kind": "Changed",
+        "content": "**Starting October 15, 2025, the global and classic external Application Load Balancers are improving HTTP header handling for headers with obs-fold values to comply with the [RFC 9112](https://www.rfc-editor.org/rfc/rfc9112.html#section-5.2) standard**\n\nPreviously, these load balancers would forward HTTP headers with obs-fold values (those split across multiple lines, with subsequent lines starting with a space or a tab) without any changes. Starting October 15, 2025, each obs-fold will be replaced with one or more space characters (SP octets) before forwarding the message upstream. This ensures that the header is correctly interpreted as a single line, as required by the HTTP specification.\n\n**What you need to do**\n\nReview your current client applications and backend services before October 15, 2025 and ensure that they generate HTTP headers with obs-fold values in a single-line format when communicating with these load balancers.\n\nBecause the obs-fold header fields have been deprecated in RFC 9112, compliant clients and servers should already avoid using this format. However, there is a possibility that services that specifically rely on the old, non-compliant multi-line format of headers with obs-fold values might experience unexpected behavior. You should proactively check your backend service logs for any errors originating from your services due to the modified obs-fold headers.\n\nFor more information on the HTTP specification regarding headers with obs-fold values, review [RFC 9112, Section 5.2: Obsolete Line Folding](https://www.rfc-editor.org/rfc/rfc9112.html#section-5.2).",
+        "summary": {
+          "title": "HTTP Header Handling Update",
+          "summary": "Starting October 15, 2025, Application Load Balancers will improve HTTP header handling for obs-fold values to comply with RFC 9112 standard. This change ensures correct interpretation of headers as a single line."
+        }
+      }
+    ],
     "2025-07-28": [
       {
         "kind": "Feature",

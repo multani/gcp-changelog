@@ -1,5 +1,22 @@
 # Apigee X
 
+## 2025-07-30
+
+### Announcement
+
+On July 30, 2025 we began redirecting the following Apigee Classic UI navigation items to Apigee UI in the Google Cloud console:
+
+* Develop > API Proxies
+* Develop > Shared Flows
+* Develop > Offline Debug
+
+See [Apigee UI in Cloud console navigation](https://cloud.google.com/apigee/docs/api-platform/fundamentals/ui-overview#console-compare) for a mapping of each Classic Apigee UI feature page to its location in the Apigee UI in Cloud console.
+
+See [Apigee Classic UI shutdown](https://cloud.google.com/apigee/docs/deprecations/apigee-classic-ui) for details on shutdown dates.
+
+If you require more time to transition to the Google Cloud console, submit the [exception request form](https://docs.google.com/forms/d/e/1FAIpQLSedFe2Pj2f9B8YxD7cgWOyf8-IjRA8IhRZpZ2jXMZ9DU1uz1g/viewform) by Aug 15, 2025.
+
+---
 ## 2025-07-28
 
 ### Announcement
@@ -28,6 +45,21 @@ Streaming from SSE endpoints is available in Apigee and in Apigee hybrid v1.15.0
 | **390234048** | **Resolved issue resulting in missing fields in API responses for Monetization rate plans** The `createdAt` and `lastModifiedAt` fields are now present in responses from the `organizations.apiproducts.rateplans` API. |
 | **422757662** | **Reverted problematic commit regarding X-b3 trace headers send when using distributed tracing.** |
 | **N/A** | **Updates to security infrastructure and libraries.** |
+
+---
+## 2025-07-24
+
+### Announcement
+
+On July 24, 2025 we began redirecting the following Apigee Classic UI navigation items to Apigee UI in the Google Cloud console:
+
+* Publish > Portals
+
+See [Apigee UI in Cloud console navigation](https://cloud.google.com/apigee/docs/api-platform/fundamentals/ui-overview#console-compare) for a mapping of each Classic Apigee UI feature page to its location in the Apigee UI in Cloud console.
+
+See [Apigee Classic UI shutdown](https://cloud.google.com/apigee/docs/deprecations/apigee-classic-ui) for details on shutdown dates.
+
+If you require more time to transition to the Google Cloud console, submit the [exception request form](https://docs.google.com/forms/d/e/1FAIpQLSedFe2Pj2f9B8YxD7cgWOyf8-IjRA8IhRZpZ2jXMZ9DU1uz1g/viewform) by Aug 15, 2025.
 
 ---
 ## 2025-06-03

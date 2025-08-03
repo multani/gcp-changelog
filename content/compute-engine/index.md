@@ -1,5 +1,24 @@
 # Compute Engine
 
+## 2025-07-30
+
+### Feature
+
+**Generally available**: The general purpose C4 machine series now supports the following machine types on Intel's Xeon 6 processor (Granite Rapids):
+
+* C4 VMs with Titanium Local SSD attached using new machine types:
+  + `c4-standard-*-lssd`
+  + `c4-highmem-*-lssd`
+* New bare metal machine types:
+  + `c4-standard-288-metal`
+  + `c4-highmem-288-metal`
+* C4 `standard`, `highmem`, and `highcpu` VMs with 144 and 288 vCPUs
+
+To learn more, see the [C4 machine series](https://cloud.google.com/compute/docs/general-purpose-machines#c4_series).
+
+For more information, about the attached Local SSD disks, see [Machine types that automatically attach Local SSD disks](https://cloud.google.com/compute/docs/disks/local-ssd#lssd_disks_fixed).
+
+---
 ## 2025-07-25
 
 ### Changed

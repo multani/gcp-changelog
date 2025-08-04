@@ -1,5 +1,41 @@
 # Google SecOps
 
+## 2025-08-04
+
+### Changed
+
+**New rules added to rule pack**
+
+Curated detections has been enhanced with additional Chrome Enterprise Premium Browser Threat detections. The following rules have been added to the rule pack:
+
+Malware Transfer Event in Chrome Management
+
+Password Breach Event By Admin User
+
+Phishing Navigation Event Containing Suspicious Parameters In Chrome Management
+
+Chrome Password Event on Newly Observed Domain in Environment
+
+---
+## 2025-08-03
+
+### Feature
+
+**Automated retries for failed playbook actions**
+
+This feature is in Preview.
+
+Playbook functionality now supports automatic retries for individual actions that encounter temporary issues, such as network outages, API rate limits, or service unavailability. You can define the number of retry attempts and the intervals between retries directly at the step level within playbooks.
+
+For more information on configuring and using action retries, see [Configure action retries in playbooks](https://cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/retry-actions).
+
+### Feature
+
+**Custom Fields Form widget is now supported in Playbook View**
+
+The **Custom Fields Form** widget is now supported in Playbook View.
+
+---
 ## 2025-07-27
 
 ### Feature

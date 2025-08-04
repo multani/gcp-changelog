@@ -1,5 +1,16 @@
 # Confidential VM
 
+## 2025-07-31
+
+### Feature
+
+Support for [accelerator-optimized a3-highgpu-1g](https://cloud.google.com/compute/docs/accelerator-optimized-machines#a3-standard-vms) machine type for securely running AI and ML workloads is now generally available, with the following specifications:
+
+* 4th Generation Intel Xeon Scalable processor (Sapphire Rapids)
+* Intel TDX
+* 1 NVIDIA H100 GPU
+
+---
 ## 2025-07-14
 
 ### Issue

@@ -1,5 +1,22 @@
 # Google SecOps SIEM
 
+## 2025-08-04
+
+### Changed
+
+**New rules added to rule pack**
+
+Curated detections has been enhanced with additional Chrome Enterprise Premium Browser Threat detections. The following rules have been added to the rule pack:
+
+Malware Transfer Event in Chrome Management
+
+Password Breach Event By Admin User
+
+Phishing Navigation Event Containing Suspicious Parameters In Chrome Management
+
+Chrome Password Event on Newly Observed Domain in Environment
+
+---
 ## 2025-07-22
 
 ### Feature

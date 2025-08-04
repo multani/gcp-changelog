@@ -1,5 +1,37 @@
 # Google SecOps SOAR
 
+## 2025-08-03
+
+### Announcement
+
+Release 6.3.56 is rolling out to the first phase of regions, as outlined in our [Google SecOps release plan](https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release includes the following features:
+
+### Feature
+
+**Automated retries for failed playbook actions**
+
+This feature is in Preview.
+
+Playbook functionality now supports automatic retries for individual actions that encounter temporary issues, such as network outages, API rate limits, or service unavailability. You can define the number of retry attempts and the intervals between retries directly at the step level within playbooks.
+
+For more information on configuring and using action retries, see [Configure action retries in playbooks](https://cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/retry-actions).
+
+### Feature
+
+**Custom Fields Form widget is now supported in Playbook View**
+
+The **Custom Fields Form** widget is now supported in Playbook View.
+
+---
+## 2025-08-02
+
+### Announcement
+
+[Release 6.3.55](https://cloud.google.com/chronicle/docs/soar/release-notes#July_27_2025) is now available for all regions.
+
+---
 ## 2025-07-27
 
 ### Announcement

@@ -1,5 +1,20 @@
 # Cloud Run
 
+## 2025-07-30
+
+### Feature
+
+Support for [Go 1.24 runtime](https://cloud.google.com/run/docs/runtime-support#go) is in [General Availability (GA)](https://cloud.google.com/products?e=48754805&hl=en#product-launch-stages).
+
+### Feature
+
+Support for [Go 1.25 runtime](https://cloud.google.com/run/docs/runtime-support#go) is in [Preview](https://cloud.google.com/products?e=48754805&hl=en#product-launch-stages). This runtime is available for early testers using existing [release candidates](https://go.dev/dl/#unstable).
+
+### Feature
+
+Support for [Node.js 24 runtime](https://cloud.google.com/run/docs/runtime-support#node.js) is in [Preview](https://cloud.google.com/products?e=48754805&hl=en#product-launch-stages). Node.js 24 is in the Current release state and enters long-term support (LTS) in October 2025. For more information, see [Node.js v24.0.0 (Current)](https://nodejs.org/en/blog/release/v24.0.0) in the Node.js website.
+
+---
 ## 2025-07-16
 
 ### Feature

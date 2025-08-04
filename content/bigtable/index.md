@@ -1,5 +1,12 @@
 # Bigtable
 
+## 2025-07-31
+
+### Feature
+
+[Logical views](https://cloud.google.com/bigtable/docs/create-manage-logical-views) for Bigtable are now generally available ([GA](https://cloud.google.com/products#product-launch-stages)). Logical views let you save a SQL query as a specific, shareable view of your data—even with a flexible schema—and then control who has permission to see the results.
+
+---
 ## 2025-07-28
 
 ### Libraries

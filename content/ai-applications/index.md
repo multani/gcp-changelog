@@ -1,5 +1,16 @@
 # AI Applications
 
+## 2025-08-04
+
+### Changed
+
+**Vertex AI Search: gemini-2.5-flash/answer\_gen/v1 model is the default model**
+
+Model version gemini-2.5-flash/answer\_gen/v1 is the default model for generating answers in Vertex AI Search.
+
+For more information, see [Answer generation model versions and lifecycle](https://cloud.google.com/generative-ai-app-builder/docs/answer-generation-models).
+
+---
 ## 2025-07-09
 
 ### Announcement

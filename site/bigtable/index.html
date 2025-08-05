@@ -1572,42 +1572,72 @@
 
 
 <h1 id="bigtable">Bigtable</h1>
+<h2 id="2025-08-04">2025-08-04</h2>
+<h3 id="announcement">Announcement</h3>
+<p>You can add the <a href="https://github.com/GoogleCloudPlatform/cloud-bigtable-ecosystem/blob/main/cassandra-bigtable-migration-tools/cassandra-bigtable-java-client/cassandra-bigtable-java-client-lib/README.md">Cassandra to Bigtable client for Java</a> library to your Java project from the Maven Central repository.</p>
+<h3 id="libraries">Libraries</h3>
+<p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
+<h3 id="java">Java</h3>
+<h3 id="changes-for-google-cloud-bigtable">Changes for <a href="https://github.com/googleapis/java-bigtable">google-cloud-bigtable</a></h3>
+<h4 id="2630-2025-07-30"><a href="https://github.com/googleapis/java-bigtable/compare/v2.62.0...v2.63.0">2.63.0</a> (2025-07-30)</h4>
+<h5 id="features">Features</h5>
+<ul>
+<li>Add Idempotency to Cloud Bigtable MutateRowsRequest API (<a href="https://github.com/googleapis/java-bigtable/commit/bc58b4f31ef457bd322f270b044735e4b62d298f">bc58b4f</a>)</li>
+<li>Add port as a parameter for the Bigtable emulator (<a href="https://github.com/googleapis/java-bigtable/issues/2645">#2645</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/5acd3dc01c36072bd28248d560c5d923c34b1817">5acd3dc</a>)</li>
+<li>Add type support for Proto and Enum (<a href="https://github.com/googleapis/java-bigtable/commit/bc58b4f31ef457bd322f270b044735e4b62d298f">bc58b4f</a>)</li>
+<li>Publish Proto and Enum types to CBT data API (<a href="https://github.com/googleapis/java-bigtable/commit/ace12d53fe9f4d3779b2b1a2aed69ceeedd11600">ace12d5</a>)</li>
+<li>Selective GAPIC autogeneration for Python Bigtable Admin (<a href="https://github.com/googleapis/java-bigtable/commit/e219c387487673869fb8bb55a5060bdc9d37bbcb">e219c38</a>)</li>
+</ul>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.60.2 (<a href="https://github.com/googleapis/java-bigtable/commit/e219c387487673869fb8bb55a5060bdc9d37bbcb">e219c38</a>)</li>
+<li>Update routing_parameters.path_template (<a href="https://github.com/googleapis/java-bigtable/commit/e219c387487673869fb8bb55a5060bdc9d37bbcb">e219c38</a>)</li>
+</ul>
+<h5 id="dependencies">Dependencies</h5>
+<ul>
+<li>Update sdk-platorm-java-config to 3.50.2 (<a href="https://github.com/googleapis/java-bigtable/issues/2646">#2646</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/03e6961e758a9a0c39cb168c73c853328c14bfd1">03e6961</a>)</li>
+</ul>
+<h5 id="documentation">Documentation</h5>
+<ul>
+<li>Sync generated comments from the API Protos (<a href="https://github.com/googleapis/java-bigtable/commit/bc58b4f31ef457bd322f270b044735e4b62d298f">bc58b4f</a>)</li>
+</ul>
+<hr />
 <h2 id="2025-07-31">2025-07-31</h2>
 <h3 id="feature">Feature</h3>
 <p><a href="https://cloud.google.com/bigtable/docs/create-manage-logical-views">Logical views</a> for Bigtable are now generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>). Logical views let you save a SQL query as a specific, shareable view of your data—even with a flexible schema—and then control who has permission to see the results.</p>
 <hr />
 <h2 id="2025-07-28">2025-07-28</h2>
-<h3 id="libraries">Libraries</h3>
+<h3 id="libraries_1">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="nodejs">Node.js</h3>
 <h3 id="changes-for-google-cloudbigtable">Changes for <a href="https://github.com/googleapis/nodejs-bigtable">@google-cloud/bigtable</a></h3>
 <h4 id="620-2025-07-23"><a href="https://github.com/googleapis/nodejs-bigtable/compare/v6.1.0...v6.2.0">6.2.0</a> (2025-07-23)</h4>
-<h5 id="features">Features</h5>
+<h5 id="features_1">Features</h5>
 <ul>
 <li>Add client-side metrics collection to readRows calls (<a href="https://github.com/googleapis/nodejs-bigtable/issues/1571">#1571</a>) (<a href="https://github.com/googleapis/nodejs-bigtable/commit/71f4d78422137c88f1521be45004982367dbda31">71f4d78</a>)</li>
 <li>Add plumbing to support unary calls for client side metric collection (<a href="https://github.com/googleapis/nodejs-bigtable/issues/1631">#1631</a>) (<a href="https://github.com/googleapis/nodejs-bigtable/commit/c267ede0140aa29bc75feada93899a4945980375">c267ede</a>)</li>
 <li>Add support for Execute Query (<a href="https://github.com/googleapis/nodejs-bigtable/issues/1613">#1613</a>) (<a href="https://github.com/googleapis/nodejs-bigtable/commit/e3894edf4fc881153432f77ce976141397dc0348">e3894ed</a>)</li>
 <li>Initial timed stream implementation for application latencies (<a href="https://github.com/googleapis/nodejs-bigtable/issues/1639">#1639</a>) (<a href="https://github.com/googleapis/nodejs-bigtable/commit/ca490e80f2359156475e52c5f72fe0a9fe8e9740">ca490e8</a>)</li>
 </ul>
-<h5 id="bug-fixes">Bug Fixes</h5>
+<h5 id="bug-fixes_1">Bug Fixes</h5>
 <ul>
 <li>In client-side metrics, make sure that the right views get created for the right metrics (<a href="https://github.com/googleapis/nodejs-bigtable/issues/1590">#1590</a>) (<a href="https://github.com/googleapis/nodejs-bigtable/commit/6cb7cddf42ff1fe29b2ae4a729739bc12c3d4942">6cb7cdd</a>)</li>
 </ul>
 <hr />
 <h2 id="2025-07-21">2025-07-21</h2>
-<h3 id="libraries_1">Libraries</h3>
+<h3 id="libraries_2">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
-<h3 id="java">Java</h3>
-<h3 id="changes-for-google-cloud-bigtable">Changes for <a href="https://github.com/googleapis/java-bigtable">google-cloud-bigtable</a></h3>
+<h3 id="java_1">Java</h3>
+<h3 id="changes-for-google-cloud-bigtable_1">Changes for <a href="https://github.com/googleapis/java-bigtable">google-cloud-bigtable</a></h3>
 <h4 id="2620-2025-07-15"><a href="https://github.com/googleapis/java-bigtable/compare/v2.61.0...v2.62.0">2.62.0</a> (2025-07-15)</h4>
-<h5 id="features_1">Features</h5>
+<h5 id="features_2">Features</h5>
 <ul>
 <li>Add Idempotency to Cloud Bigtable MutateRowRequest API (<a href="https://github.com/googleapis/java-bigtable/commit/b5acca6ac4f1eec420adb27bc77aa1bda0ec2dca">b5acca6</a>)</li>
 <li>Add SchemaBundles API (<a href="https://github.com/googleapis/java-bigtable/commit/b5acca6ac4f1eec420adb27bc77aa1bda0ec2dca">b5acca6</a>)</li>
 <li><strong>bigtable:</strong> Add schema bundle support (<a href="https://github.com/googleapis/java-bigtable/issues/2619">#2619</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/7d7b9a966d3ef7b7a0ef3f82038ab73f4d791427">7d7b9a9</a>)</li>
 <li>Next release from main branch is 2.62.0 (<a href="https://github.com/googleapis/java-bigtable/issues/2621">#2621</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/202b21102e71da71ff56f19a12d8a00a59cd8107">202b211</a>)</li>
 </ul>
-<h5 id="dependencies">Dependencies</h5>
+<h5 id="dependencies_1">Dependencies</h5>
 <ul>
 <li>Minor cleanup (<a href="https://github.com/googleapis/java-bigtable/issues/2623">#2623</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/7b230e86902b5733c06e45fad90da76653ee1096">7b230e8</a>)</li>
 <li>Update shared dependencies (<a href="https://github.com/googleapis/java-bigtable/issues/2616">#2616</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/eb7cfd526aa999c614b7b8285d32759e2739ff9a">eb7cfd5</a>)</li>
@@ -1618,21 +1648,21 @@
 <p>When you <a href="https://cloud.google.com/bigtable/docs/managing-tables#undelete-table">undelete a table</a>, Bigtable automatically enables deletion protection for that table.</p>
 <hr />
 <h2 id="2025-06-30">2025-06-30</h2>
-<h3 id="libraries_2">Libraries</h3>
+<h3 id="libraries_3">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
-<h3 id="java_1">Java</h3>
-<h3 id="changes-for-google-cloud-bigtable_1">Changes for <a href="https://github.com/googleapis/java-bigtable">google-cloud-bigtable</a></h3>
+<h3 id="java_2">Java</h3>
+<h3 id="changes-for-google-cloud-bigtable_2">Changes for <a href="https://github.com/googleapis/java-bigtable">google-cloud-bigtable</a></h3>
 <h4 id="2610-2025-06-27"><a href="https://github.com/googleapis/java-bigtable/compare/v2.60.0...v2.61.0">2.61.0</a> (2025-06-27)</h4>
-<h5 id="features_2">Features</h5>
+<h5 id="features_3">Features</h5>
 <ul>
 <li>Add getter for universe domain in JwtCredentialsWithAudience (<a href="https://github.com/googleapis/java-bigtable/issues/2598">#2598</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/9ad66b129923500cdeb794fc2e4570ad8b1d92fd">9ad66b1</a>)</li>
 </ul>
-<h5 id="bug-fixes_1">Bug Fixes</h5>
+<h5 id="bug-fixes_2">Bug Fixes</h5>
 <ul>
 <li>Add name elements for the pom.xml files (<a href="https://github.com/googleapis/java-bigtable/commit/a873719e7e32a0cd21dc259911a193520f20797e">a873719</a>)</li>
 <li>Populate table ID for materialized view (<a href="https://github.com/googleapis/java-bigtable/issues/2610">#2610</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/50c3fe2ffe66acaba8cb408dc3b1a4d13a4a2556">50c3fe2</a>)</li>
 </ul>
-<h5 id="dependencies_1">Dependencies</h5>
+<h5 id="dependencies_2">Dependencies</h5>
 <ul>
 <li>Update shared dependencies (<a href="https://github.com/googleapis/java-bigtable/issues/2605">#2605</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/4cc7246ff8e2e0e26d2edc0aee8866a32ec1c8ab">4cc7246</a>)</li>
 </ul>
@@ -1642,33 +1672,33 @@
 <p>You can use <a href="https://cloud.google.com/bigquery/docs/create-bigtable-external-table#compute">Data Boost</a> to analyze your Bigtable data with BigQuery without impacting the performance of the clusters that handle your application traffic. This feature is generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).</p>
 <hr />
 <h2 id="2025-06-09">2025-06-09</h2>
-<h3 id="libraries_3">Libraries</h3>
+<h3 id="libraries_4">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
-<h3 id="java_2">Java</h3>
-<h3 id="changes-for-google-cloud-bigtable_2">Changes for <a href="https://github.com/googleapis/java-bigtable">google-cloud-bigtable</a></h3>
+<h3 id="java_3">Java</h3>
+<h3 id="changes-for-google-cloud-bigtable_3">Changes for <a href="https://github.com/googleapis/java-bigtable">google-cloud-bigtable</a></h3>
 <h4 id="2600-2025-06-06"><a href="https://github.com/googleapis/java-bigtable/compare/v2.59.0...v2.60.0">2.60.0</a> (2025-06-06)</h4>
-<h5 id="features_3">Features</h5>
+<h5 id="features_4">Features</h5>
 <ul>
 <li>Improve error message on malformed struct (<a href="https://github.com/googleapis/java-bigtable/issues/2592">#2592</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/7f5fdf094c5fe140807ce6abcea0b891462ba809">7f5fdf0</a>)</li>
 <li>Run ExecuteQuery conformance tests (<a href="https://github.com/googleapis/java-bigtable/issues/2557">#2557</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/0bbc083b9e798e5b557f3ffe7090b45e66c9ada5">0bbc083</a>)</li>
 </ul>
-<h5 id="bug-fixes_2">Bug Fixes</h5>
+<h5 id="bug-fixes_3">Bug Fixes</h5>
 <ul>
 <li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.59.0 (<a href="https://github.com/googleapis/java-bigtable/commit/65782aaf89ad78aafd7f5928e81e513c3016b471">65782aa</a>)</li>
 <li>Ensure that multiple instances of a client in the same process don't clobber each other (<a href="https://github.com/googleapis/java-bigtable/issues/2590">#2590</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/8d3dca43224179829829bcf91972610c666b130b">8d3dca4</a>)</li>
 </ul>
-<h5 id="dependencies_2">Dependencies</h5>
+<h5 id="dependencies_3">Dependencies</h5>
 <ul>
 <li>Update shared dependencies (<a href="https://github.com/googleapis/java-bigtable/issues/2587">#2587</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/8ec033994f20b2b3aea0dfcdaffbdd1c6d19fdad">8ec0339</a>)</li>
 </ul>
 <hr />
 <h2 id="2025-06-02">2025-06-02</h2>
-<h3 id="libraries_4">Libraries</h3>
+<h3 id="libraries_5">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="nodejs_1">Node.js</h3>
 <h3 id="changes-for-google-cloudbigtable_1">Changes for <a href="https://github.com/googleapis/nodejs-bigtable">@google-cloud/bigtable</a></h3>
 <h4 id="610-2025-05-30"><a href="https://github.com/googleapis/nodejs-bigtable/compare/v6.0.0...v6.1.0">6.1.0</a> (2025-05-30)</h4>
-<h5 id="features_4">Features</h5>
+<h5 id="features_5">Features</h5>
 <ul>
 <li>Add full support for the universe domain (<a href="https://github.com/googleapis/nodejs-bigtable/issues/1604">#1604</a>) (<a href="https://github.com/googleapis/nodejs-bigtable/commit/4562e2329e734c0c9d9f00cfa83aa2be13e9a7fe">4562e23</a>)</li>
 </ul>
@@ -1682,7 +1712,7 @@
 </ul>
 <hr />
 <h2 id="2025-05-27">2025-05-27</h2>
-<h3 id="announcement">Announcement</h3>
+<h3 id="announcement_1">Announcement</h3>
 <p>You can delete logical and continuous materialized views in the Google Cloud console. For more information, see <a href="https://cloud.google.com/bigtable/docs/create-manage-logical-views#delete">Delete a logical view</a> or <a href="https://cloud.google.com/bigtable/docs/manage-continuous-materialized-views#delete">Delete a continuous materialized view</a>.</p>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
@@ -1695,6 +1725,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#bigtable">Bigtable</a></li>
+          <li class="nav-item">
+            <a href="#2025-08-04" class="nav-link">2025-08-04</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-07-31" class="nav-link">2025-07-31</a>
           </li>

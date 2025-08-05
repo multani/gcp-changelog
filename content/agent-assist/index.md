@@ -1,5 +1,12 @@
 # Agent Assist
 
+## 2025-07-28
+
+### Feature
+
+Agent Assist offers the **[Twilio UI module V3](https://cloud.google.com/agent-assist/docs/twilio)**. This version provides an upgraded integration.
+
+---
 ## 2025-07-11
 
 ### Changed

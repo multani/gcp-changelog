@@ -1,5 +1,20 @@
 # Cloud Asset Inventory
 
+## 2025-08-04
+
+### Feature
+
+The following resource types are now publicly available through the [ExportAssets](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/exportAssets), [ListAssets](https://cloud.google.com/asset-inventory/docs/listing-assets), [BatchGetAssetsHistory](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/batchGetAssetsHistory), [QueryAssets](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/queryAssets), [Feed](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/feeds), and Search ([SearchAllResources](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllResources), [SearchAllIamPolicies](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllIamPolicies)) APIs.
+
+* Contact Center AI Insights API
+  + `contactcenterinsights.googleapis.com/EncryptionSpec`
+* Network Security API
+  + `networksecurity.googleapis.com/MirroringDeployment`
+  + `networksecurity.googleapis.com/MirroringDeploymentGroup`
+  + `networksecurity.googleapis.com/MirroringEndpointGroup`
+  + `networksecurity.googleapis.com/MirroringEndpointGroupAssociation`
+
+---
 ## 2025-07-18
 
 ### Feature

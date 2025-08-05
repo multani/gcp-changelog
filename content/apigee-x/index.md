@@ -44,6 +44,7 @@ Streaming from SSE endpoints is available in Apigee and in Apigee hybrid v1.15.0
 | **423597917** | **`POST` operations for AppGroupApp keys updated** `POST` operations for AppGroup app keys now insert scopes and attributes instead of appending these values. This behavior is consistent with `POST` operations for companies in Apigee Edge for Public Cloud. |
 | **390234048** | **Resolved issue resulting in missing fields in API responses for Monetization rate plans** The `createdAt` and `lastModifiedAt` fields are now present in responses from the `organizations.apiproducts.rateplans` API. |
 | **422757662** | **Reverted problematic commit regarding X-b3 trace headers send when using distributed tracing.** |
+| **409048431** | **Fixed a SAML signature verification bypass vulnerability.** |
 | **N/A** | **Updates to security infrastructure and libraries.** |
 
 ---

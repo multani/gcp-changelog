@@ -1,5 +1,12 @@
 # Cloud NGFW
 
+## 2025-08-04
+
+### Feature
+
+You can create a secure tag at the organization level and bind its value to all virtual machine (VM) instances across that organization. For more information, see [Secure tags for firewalls](https://cloud.google.com/firewall/docs/tags-firewalls-overview). This feature is available in **General Availability**.
+
+---
 ## 2025-07-25
 
 ### Feature

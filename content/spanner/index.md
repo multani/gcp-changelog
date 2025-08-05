@@ -11,7 +11,7 @@ For more information, see [Spanner free trial instances](https://cloud.google.co
 ---
 ## 2025-07-31
 
-### Changed
+### Feature
 
 You can use [continuous queries](https://cloud.google.com/bigquery/docs/continuous-queries-introduction) to [export BigQuery data into Spanner in real time](https://cloud.google.com/bigquery/docs/export-to-spanner). This feature is in [preview](https://cloud.google.com/products#product-launch-stages).
 

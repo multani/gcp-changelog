@@ -1,5 +1,12 @@
 # Vertex AI Workbench
 
+## 2025-08-05
+
+### Feature
+
+[Generally available](https://cloud.google.com/products#product-launch-stages): You can consume reservations with Vertex AI Workbench instances. Reservations of Compute Engine zonal resources help you gain a high level of assurance that your jobs have the necessary resources to run. For more information, see [Use reservations with Vertex AI Workbench instances](https://cloud.google.com/vertex-ai/docs/workbench/instances/reservations).
+
+---
 ## 2025-07-10
 
 ### Feature

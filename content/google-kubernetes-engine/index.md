@@ -22,6 +22,20 @@ GKE versions:
 * 1.32.4-gke.1698000 and later
 * 1.33.1-gke.1386000 and later
 
+  Spanner
+  -------
+
+  ### Feature
+
+  Columnar engine for Spanner is now in Preview. Columnar engine is a storage technique used with analytics queries to speed up scans. Spanner columnar engine accelerates analytical query performance on live operational data by up to 200 times without affecting transaction workloads. This eliminates the need for ETL into separate data warehouses while maintaining strong consistency. For more information, see the [Columnar engine for Spanner overview](https://cloud.google.com/spanner/docs/columnar-engine).
+
+  Vertex AI Workbench
+  -------------------
+
+  ### Feature
+
+  [Generally available](https://cloud.google.com/products#product-launch-stages): You can consume reservations with Vertex AI Workbench instances. Reservations of Compute Engine zonal resources help you gain a high level of assurance that your jobs have the necessary resources to run. For more information, see [Use reservations with Vertex AI Workbench instances](https://cloud.google.com/vertex-ai/docs/workbench/instances/reservations).
+
 ---
 ## 2025-08-01
 
@@ -367,6 +381,15 @@ multiple days to complete across all Google Cloud zones.
                     When you create the free trial instance using the Google Cloud console, Spanner creates and preloads it with a sample database for an ecommerce store. You can use the free trial instance to explore the dataset and learn about Spanner capabilities with pre-loaded queries.
 
                     For more information, see [Spanner free trial instances](https://cloud.google.com/spanner/docs/free-trial-instance).
+
+                    VPC Service Controls
+                    --------------------
+
+                    ### Feature
+
+                    [General availability](https://cloud.google.com/products#product-launch-stages) support for the following integration:
+
+                    + [Eventarc Advanced](https://cloud.google.com/vpc-service-controls/docs/supported-products#table_eventarc_advanced)
 
 ---
 ## 2025-07-28

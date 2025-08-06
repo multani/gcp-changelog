@@ -1,5 +1,12 @@
 # Spanner
 
+## 2025-08-05
+
+### Feature
+
+Columnar engine for Spanner is now in Preview. Columnar engine is a storage technique used with analytics queries to speed up scans. Spanner columnar engine accelerates analytical query performance on live operational data by up to 200 times without affecting transaction workloads. This eliminates the need for ETL into separate data warehouses while maintaining strong consistency. For more information, see the [Columnar engine for Spanner overview](https://cloud.google.com/spanner/docs/columnar-engine).
+
+---
 ## 2025-08-01
 
 ### Feature

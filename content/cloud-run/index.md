@@ -1,5 +1,12 @@
 # Cloud Run
 
+## 2025-08-05
+
+### Feature
+
+Support for [manually scaling your Cloud Run service](https://cloud.google.com/run/docs/configuring/services/manual-scaling) is now at General Availability (GA).
+
+---
 ## 2025-07-30
 
 ### Feature

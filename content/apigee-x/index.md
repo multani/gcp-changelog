@@ -1,5 +1,20 @@
 # Apigee X
 
+## 2025-08-04
+
+### Announcement
+
+On August 4, 2025, we released an updated version of Apigee (1-15-0-apigee-8).
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| **435620966** | **Fixed a regression that occurred when upgrading from ASM 1.22 to 1.23 that resulted in 503 errors.** |
+
+---
 ## 2025-07-30
 
 ### Announcement

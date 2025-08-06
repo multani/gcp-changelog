@@ -2,6 +2,14 @@
 
 ## 2025-08-05
 
+### Feature
+
+The [M4 machine series](https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series) is generally available in GKE Standard clusters.
+
+### Feature
+
+The [M4 machine series](https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series) is generally available in GKE Standard clusters.
+
 ### Fixed
 
 A fix is available for an issue in which the Compute Engine Persistent Disk CSI
@@ -320,6 +328,13 @@ multiple days to complete across all Google Cloud zones.
                       - Control planes and nodes with auto-upgrade enabled will be upgraded from version 1.31 to version [1.31.10-gke.1034000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13110) with this release.
                       - Control planes and nodes with auto-upgrade enabled will be upgraded from version 1.32 to version [1.32.4-gke.1767000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1324) with this release.
                       - Control planes and nodes with auto-upgrade enabled will be upgraded from version 1.33 to version [1.33.2-gke.1240000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1332) with this release.
+
+                    Security Command Center
+                    -----------------------
+
+                    ### Feature
+
+                    [Compliance Manager](https://cloud.google.com/security-command-center/docs/compliance-manager-overview) helps ensure that your Google Cloud infrastructure, workloads, and data meet the security and regulatory requirements of your organization. This product is available in [Preview](https://cloud.google.com/products#product-launch-stages) to the Security Command Center Enterprise tier.
 
                     Sensitive Data Protection
                     -------------------------

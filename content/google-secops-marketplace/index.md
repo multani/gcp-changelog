@@ -1,5 +1,61 @@
 # Google SecOps Marketplace
 
+## 2025-08-04
+
+### Feature
+
+**Google Chronicle**: Version 63.0
+
+* The following new actions have been added:
+
+  + **Ask Gemini**
+  + **Enrich Entities**
+
+### Changed
+
+**Case Federation**: Version 4.0
+
+* **Integration:** Refactored the code.
+
+### Changed
+
+**Gmail**: Version 5.0
+
+* **Integration**: Improved error handling.
+
+### Changed
+
+**Google Chronicle**: Version 63.0
+
+* The following actions have been deprecated:
+
+  + **Enrich Domain**
+  + **Enrich IP**
+
+### Changed
+
+**QRadar**: Version 60.0
+
+* Updated offense processing logic in the following connector:
+
+  + **Qradar - Baseline Offenses Connector**
+
+### Changed
+
+**SentinelOneV2**: Version 40.0
+
+* Added ability to fetch agent information in the following actions:
+
+  + **Disconnect Agent From Network**
+  + **Enrich Endpoint**
+  + **Get Agent Status**
+  + **Get Application List For Endpoint**
+  + **Get Events For Endpoint Hours Back**
+  + **Initiate Full Scan**
+  + **Move Agents**
+  + **Reconnect Agent To The Network**
+
+---
 ## 2025-07-23
 
 ### Feature

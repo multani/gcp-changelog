@@ -1,5 +1,19 @@
 # Security Command Center
 
+## 2025-08-04
+
+### Changed
+
+Model Armor supports the `asia-southeast1` location. For information about supported locations, see [Locations for the Model Armor API](https://cloud.google.com/security-command-center/docs/regional-endpoints#locations-model-armor).
+
+---
+## 2025-08-01
+
+### Feature
+
+[Compliance Manager](https://cloud.google.com/security-command-center/docs/compliance-manager-overview) helps ensure that your Google Cloud infrastructure, workloads, and data meet the security and regulatory requirements of your organization. This product is available in [Preview](https://cloud.google.com/products#product-launch-stages) to the Security Command Center Enterprise tier.
+
+---
 ## 2025-07-29
 
 ### Feature

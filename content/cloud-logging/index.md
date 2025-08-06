@@ -1,5 +1,30 @@
 # Cloud Logging
 
+## 2025-08-04
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Java
+
+### Changes for [google-cloud-logging](https://github.com/googleapis/java-logging)
+
+#### [3.23.1](https://github.com/googleapis/java-logging/compare/v3.23.0...v3.23.1) (2025-07-28)
+
+##### Bug Fixes
+
+* **deps:** Update the Java code generator (gapic-generator-java) to 2.60.2 ([6a268f8](https://github.com/googleapis/java-logging/commit/6a268f8dbb33b38fa5e4d35d8dfcd196f8fcf9db))
+
+##### Dependencies
+
+* Update dependency com.google.cloud:sdk-platform-java-config to v3.50.2 ([#1834](https://github.com/googleapis/java-logging/issues/1834)) ([2e46f6e](https://github.com/googleapis/java-logging/commit/2e46f6ef44278af5031167106c216dcdb0a16357))
+
+### Feature
+
+You can now build queries without manually writing SQL in the Log Analytics page by using the query builder. This feature is in Public Preview. For more information, see [Build and run a SQL query](https://cloud.google.com/logging/docs/analyze/query-and-view#query-builder).
+
+---
 ## 2025-07-14
 
 ### Libraries

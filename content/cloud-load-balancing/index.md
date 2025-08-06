@@ -1,5 +1,16 @@
 # Cloud Load Balancing
 
+## 2025-08-05
+
+### Feature
+
+Cross-region internal Application Load Balancers can now route requests for static content to Cloud Storage buckets.
+
+For more information, see [Set up a cross-region internal Application Load Balancer with Cloud Storage buckets](https://cloud.google.com/load-balancing/docs/l7-internal/setup-cross-region-internal-https-buckets).
+
+This capability is now in **General Availability**.
+
+---
 ## 2025-07-30
 
 ### Changed

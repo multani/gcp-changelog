@@ -1,5 +1,12 @@
 # Colab Enterprise
 
+## 2025-08-04
+
+### Feature
+
+You can now use the new Data Science Agent to automate exploratory data analysis, perform machine learning tasks, and deliver insights from within a Colab Enterprise notebook. To get started, see [Use the Data Science Agent](https://cloud.google.com/colab/docs/use-data-science-agent). This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-06-30
 
 ### Feature

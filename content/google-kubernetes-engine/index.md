@@ -1,5 +1,20 @@
 # Google Kubernetes Engine
 
+## 2025-08-05
+
+### Fixed
+
+A fix is available for an issue in which the Compute Engine Persistent Disk CSI
+driver failed with an `invalid cpuString` error on GKE nodes that used custom
+machine types. This issue prevented successful attachment and mounting of
+Persistent Disk volumes on affected nodes. The fix is available in the following
+GKE versions:
+
+* 1.31.10-gke.1034000 and later
+* 1.32.4-gke.1698000 and later
+* 1.33.1-gke.1386000 and later
+
+---
 ## 2025-08-01
 
 ### Changed
@@ -449,6 +464,9 @@ maintenance, we recommend that you do the following:
   these operations during maintenance windows.
 
   ### Fixed
+
+  **Important:** This note is incorrect. For the correct note, see the entry for
+  [August 5, 2025](#csi-fix-20250805).
 
   A fix is available for an issue in which the Compute Engine Persistent Disk CSI
   driver failed with an `invalid cpuString` error on GKE nodes that used custom

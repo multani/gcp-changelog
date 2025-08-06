@@ -1,5 +1,12 @@
 # Virtual Private Cloud
 
+## 2025-08-04
+
+### Feature
+
+When you reserve an internal range with an automatically allocated IPv4 CIDR block, you can specify the [allocation strategy](https://cloud.google.com/vpc/docs/internal-ranges#allocation-strategies) that is used to select a free block. This feature is available in **General Availability**.
+
+---
 ## 2025-07-09
 
 ### Feature

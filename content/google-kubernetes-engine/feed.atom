@@ -2,9 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2025-08-01T00:00:00+00:00</updated>
+  <updated>2025-08-05T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-05:fixed:0</id>
+    <published>2025-08-05T00:00:00+00:00</published>
+    <updated>2025-08-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A fix is available for an issue in which the Compute Engine Persistent Disk CSI
+driver failed with an <code>invalid cpuString</code> error on GKE nodes that used custom
+machine types. This issue prevented successful attachment and mounting of
+Persistent Disk volumes on affected nodes. The fix is available in the following
+GKE versions:</p>
+<ul>
+<li>1.31.10-gke.1034000 and later</li>
+<li>1.32.4-gke.1698000 and later</li>
+<li>1.33.1-gke.1386000 and later</li>
+</ul>]]></content>
+    <summary>Persistent Disk CSI driver fixed for custom machine types.</summary>
+    <title>Fixed: Fixed: Persistent Disk CSI driver error</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -496,6 +516,8 @@ maintenance, we recommend that you do the following:</p>
   these operations during maintenance windows.</li>
 </ul>
 <p>### Fixed</p>
+<p><strong>Important:</strong> This note is incorrect. For the correct note, see the entry for
+  <a href="#csi-fix-20250805">August 5, 2025</a>.</p>
 <p>A fix is available for an issue in which the Compute Engine Persistent Disk CSI
   driver failed with an <code>invalid cpuString</code> error on GKE nodes that used custom
   machine types. This issue prevented successful attachment and mounting of
@@ -525,7 +547,7 @@ maintenance, we recommend that you do the following:</p>
 </ul>
 </li>
 </ul>]]></content>
-    <summary>Control plane maintenance for GKE clusters scheduled between May and October 2025. The Kubernetes API server will be unavailable for 15 minutes during maintenance windows. Running applications and network traffic will not be affected. No action is required, but review your maintenance windows.</summary>
+    <summary>Control plane maintenance for GKE clusters.</summary>
     <title>Announcement: GKE Control Plane Maintenance</title>
   </entry>
   <entry>

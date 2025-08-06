@@ -881,6 +881,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Database center <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../database-center/" class="dropdown-item">Database Center</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Dataflow <b class="caret"></b>
                         </a>
 
@@ -1572,6 +1584,50 @@
 
 
 <h1 id="google-secops-siem">Google SecOps SIEM</h1>
+<h2 id="2025-08-05">2025-08-05</h2>
+<h3 id="feature">Feature</h3>
+<p><strong>New YARA-L features</strong></p>
+<p>The following capabilities have been added to YARA-L 2.0 to enhance search precision, data analysis, and investigative workflows:</p>
+<ul>
+<li><a href="https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-conditions"><strong>Conditions in UDM search and dashboards</strong></a></li>
+</ul>
+<p>You can now filter aggregates defined in the <code>outcome</code> section using the new <code>condition</code> clause. This gives you more precise control over your results and supports more targeted investigations.</p>
+<ul>
+<li>New functionality includes support for <code>OR</code> and <code>n</code> of <code>[a, b, c.. z]</code> expressions.</li>
+<li>General availability for search and dashboards.</li>
+<li><a href="https://cloud.google.com/chronicle/docs/investigation/deduplication-yaral"><strong>Deduplicate events in searches and dashboards</strong></a></li>
+</ul>
+<p>The new <code>dedup</code> section lets you remove duplicate events after the <code>match</code> clause in both standard UDM searches and YARA-L 2.0 queries.</p>
+<p>General availability for search and dashboards.
+* <a href="https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-metrics-search"><strong>Use metrics functions in UDM searches</strong></a></p>
+<p>You can now apply <code>metrics</code> functions in the <code>outcome</code> section of your search to access aggregated historical data directly in your search queries.</p>
+<ul>
+<li>Uses the same syntax as <code>metrics</code> in rules.</li>
+<li>General availability for search.</li>
+<li><a href="https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-syntax#aggregations"><strong>Increased limits for array and array_distinct</strong></a></li>
+</ul>
+<p>The element limit for <code>array</code> and <code>array_distinct</code> aggregation functions in YARA-L has increased from 25 to 1,000.</p>
+<ul>
+<li>General availability for search and dashboards.</li>
+<li>Private preview for rules.</li>
+<li><strong>Restrict search results using limit</strong></li>
+</ul>
+<p>The <code>limit</code> keyword now lets you restrict the number of results returned by a search. Use this to quickly preview data, optimize performance, or focus on a subset of results.</p>
+<p>General availability for search and dashboards.
+* <a href="https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#earliest"><strong><code>earliest</code></strong></a> and <a href="https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#latest"><strong><code>latest</code></strong></a> <strong>timestamps</strong></p>
+<p>New <code>earliest</code> and <code>latest</code> timestamps let you extract the time range of your data (within microseconds) during aggregation.</p>
+<p>General availability for search.
+* <strong>Layer aggregations and analytics across multi-stage queries</strong></p>
+<p>Recent updates to multi-stage queries let you:</p>
+<ul>
+<li>Layer aggregations and data statistical functions. Calculate baselines, deviations, and trends across multiple stages of data processing.</li>
+<li>Conduct joins both within and across stages.</li>
+</ul>
+<p>Private preview for search and dashboards. Contact your Google SecOps representative to enroll.
+* <strong>Join events, the entity graph, and data tables</strong></p>
+<p>You can now perform Inner joins between events, the entity graph, and data tables. These queries require a <code>match</code> clause for these joins and return results as statistics.</p>
+<p>Private preview for search and dashboards. Contact your Google SecOps representative to enroll.</p>
+<hr />
 <h2 id="2025-08-04">2025-08-04</h2>
 <h3 id="changed">Changed</h3>
 <p><strong>New rules added to rule pack</strong></p>
@@ -1580,15 +1636,17 @@
 <p>Password Breach Event By Admin User</p>
 <p>Phishing Navigation Event Containing Suspicious Parameters In Chrome Management</p>
 <p>Chrome Password Event on Newly Observed Domain in Environment</p>
+<h3 id="feature_1">Feature</h3>
+<p><a href="https://cloud.google.com/chronicle/docs/event-processing/auto-extraction">Auto Extraction</a> supports XML formatted logs in addition to JSON formatted logs. This enhancement will be available starting this week.</p>
 <hr />
 <h2 id="2025-07-22">2025-07-22</h2>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p><strong>Silent Host Monitoring</strong></p>
 <p>New configuration options are now available for Silent Host Monitoring. You can now define detection rule-based Silent Host Monitoring in SecOps using UDM fields or labels, configurable within a specified time window.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/ingestion/silent-host-monitoring">Silent host monitoring</a>.</p>
 <hr />
 <h2 id="2025-07-21">2025-07-21</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p><strong>New parser documentation now available</strong></p>
 <p>New parser documentation is available to help you ingest and normalize logs from the following sources:</p>
 <p><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tomcat">Collect Apache Tomcat logs</a></p>
@@ -1621,7 +1679,7 @@
 <p><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/trellix-ips">Collect Trellix IPS logs</a></p>
 <hr />
 <h2 id="2025-07-07">2025-07-07</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p><strong>Dashboards for enhanced visualizations and threat hunting</strong></p>
 <p>You can now use the Google SecOps Dashboards to enhance data visualization, investigations, and threat hunting.</p>
 <p>Key capabilities include:</p>
@@ -1850,16 +1908,16 @@
 <p><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/trend-micro-vision-one-workbench">Collect Trend Micro Vision One Workbench logs</a></p>
 <hr />
 <h2 id="2025-06-19">2025-06-19</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p><strong>Product Centric Feed Management</strong></p>
 <p>This feature is currently in Preview.</p>
 <p>You can now configure multiple log-type feeds for the same product type on a single page. This new product-led experience simplifies the feed configuration flow and provides additional in-product guidance. For more information, see <a href="https://cloud.google.com/chronicle/docs/ingestion/ingestion-entities/configure-multiple-feeds">Configure feeds by product</a>.</p>
 <hr />
 <h2 id="2025-06-18">2025-06-18</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p>You can now remove existing UDM field mappings by using parser extensions in Google SecOps.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/event-processing/using-parser-extensions#remove_udm_field_mappings_using_parser_extensions">Remove UDM field mappings using parser extensions</a> and <a href="https://cloud.google.com/chronicle/docs/event-processing/parser-extension-examples#code_snippet_remove_existing_mappings">Code snippet - Remove existing mappings</a></p>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p>New data ingestion and health dashboard widgets are now available.</p>
 <ul>
 <li><strong>Silent host monitoring</strong>: displays hosts that were active in the last 7 days, but haven't reported recently, including a count of days since their last ingestion.</li>
@@ -2049,6 +2107,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-secops-siem">Google SecOps SIEM</a></li>
+          <li class="nav-item">
+            <a href="#2025-08-05" class="nav-link">2025-08-05</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-08-04" class="nav-link">2025-08-04</a>
           </li>

@@ -1,6 +1,16 @@
 {
   "name": "Google SecOps",
   "entries": {
+    "2025-08-05": [
+      {
+        "kind": "Feature",
+        "content": "**New YARA-L features**\n\nThe following capabilities have been added to YARA-L 2.0 to enhance search precision, data analysis, and investigative workflows:\n\n* [**Conditions in UDM search and dashboards**](https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-conditions)\n\n  You can now filter aggregates defined in the `outcome` section using the new `condition` clause. This gives you more precise control over your results and supports more targeted investigations.\n\n  + New functionality includes support for `OR` and `n` of `[a, b, c.. z]` expressions.\n  + General availability for search and dashboards.\n* [**Deduplicate events in searches and dashboards**](https://cloud.google.com/chronicle/docs/investigation/deduplication-yaral)\n\n  The new `dedup` section lets you remove duplicate events after the `match` clause in both standard UDM searches and YARA-L 2.0 queries.\n\n  General availability for search and dashboards.\n* [**Use metrics functions in UDM searches**](https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-metrics-search)\n\n  You can now apply `metrics` functions in the `outcome` section of your search to access aggregated historical data directly in your search queries.\n\n  + Uses the same syntax as `metrics` in rules.\n  + General availability for search.\n* [**Increased limits for array and array\\_distinct**](https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-syntax#aggregations)\n\n  The element limit for `array` and `array_distinct` aggregation functions in YARA-L has increased from 25 to 1,000.\n\n  + General availability for search and dashboards.\n  + Private preview for rules.\n* **Restrict search results using limit**\n\n  The `limit` keyword now lets you restrict the number of results returned by a search. Use this to quickly preview data, optimize performance, or focus on a subset of results.\n\n  General availability for search and dashboards.\n* [**`earliest`**](https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#earliest) and [**`latest`**](https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#latest) **timestamps**\n\n  New `earliest` and `latest` timestamps let you extract the time range of your data (within microseconds) during aggregation.\n\n  General availability for search.\n* **Layer aggregations and analytics across multi-stage queries**\n\n  Recent updates to multi-stage queries let you:\n\n  + Layer aggregations and data statistical functions. Calculate baselines, deviations, and trends across multiple stages of data processing.\n  + Conduct joins both within and across stages.\n\n  Private preview for search and dashboards. Contact your Google SecOps representative to enroll.\n* **Join events, the entity graph, and data tables**\n\n  You can now perform Inner joins between events, the entity graph, and data tables. These queries require a `match` clause for these joins and return results as statistics.\n\n  Private preview for search and dashboards. Contact your Google SecOps representative to enroll.",
+        "summary": {
+          "title": "Enhanced YARA-L 2.0 Capabilities",
+          "summary": "New capabilities in YARA-L 2.0 enhance search precision and data analysis with features like conditions in UDM search, event deduplication, and the use of metrics functions. Limits for array aggregations have been increased, and new options like the 'limit' keyword and 'earliest'/'latest' timestamps provide greater control over search results. Additionally, updates allow for layering analytics across multi-stage queries and joining events with the entity graph and data tables."
+        }
+      }
+    ],
     "2025-08-04": [
       {
         "kind": "Changed",
@@ -8,6 +18,14 @@
         "summary": {
           "title": "Updated Chrome Detections",
           "summary": "New rules added to rule pack for Chrome Enterprise Premium Browser Threat detections."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "[Auto Extraction](https://cloud.google.com/chronicle/docs/event-processing/auto-extraction) supports XML formatted logs in addition to JSON formatted logs. This enhancement will be available starting this week.",
+        "summary": {
+          "title": "New log format support",
+          "summary": "Auto Extraction now supports XML logs."
         }
       }
     ],

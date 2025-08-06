@@ -2,9 +2,60 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps</subtitle>
-  <updated>2025-08-04T00:00:00+00:00</updated>
+  <updated>2025-08-05T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2025-08-05:feature:0</id>
+    <published>2025-08-05T00:00:00+00:00</published>
+    <updated>2025-08-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>New YARA-L features</strong></p>
+<p>The following capabilities have been added to YARA-L 2.0 to enhance search precision, data analysis, and investigative workflows:</p>
+<ul>
+<li><a href="https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-conditions"><strong>Conditions in UDM search and dashboards</strong></a></li>
+</ul>
+<p>You can now filter aggregates defined in the <code>outcome</code> section using the new <code>condition</code> clause. This gives you more precise control over your results and supports more targeted investigations.</p>
+<ul>
+<li>New functionality includes support for <code>OR</code> and <code>n</code> of <code>[a, b, c.. z]</code> expressions.</li>
+<li>General availability for search and dashboards.</li>
+<li><a href="https://cloud.google.com/chronicle/docs/investigation/deduplication-yaral"><strong>Deduplicate events in searches and dashboards</strong></a></li>
+</ul>
+<p>The new <code>dedup</code> section lets you remove duplicate events after the <code>match</code> clause in both standard UDM searches and YARA-L 2.0 queries.</p>
+<p>General availability for search and dashboards.
+* <a href="https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-metrics-search"><strong>Use metrics functions in UDM searches</strong></a></p>
+<p>You can now apply <code>metrics</code> functions in the <code>outcome</code> section of your search to access aggregated historical data directly in your search queries.</p>
+<ul>
+<li>Uses the same syntax as <code>metrics</code> in rules.</li>
+<li>General availability for search.</li>
+<li><a href="https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-syntax#aggregations"><strong>Increased limits for array and array_distinct</strong></a></li>
+</ul>
+<p>The element limit for <code>array</code> and <code>array_distinct</code> aggregation functions in YARA-L has increased from 25 to 1,000.</p>
+<ul>
+<li>General availability for search and dashboards.</li>
+<li>Private preview for rules.</li>
+<li><strong>Restrict search results using limit</strong></li>
+</ul>
+<p>The <code>limit</code> keyword now lets you restrict the number of results returned by a search. Use this to quickly preview data, optimize performance, or focus on a subset of results.</p>
+<p>General availability for search and dashboards.
+* <a href="https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#earliest"><strong><code>earliest</code></strong></a> and <a href="https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#latest"><strong><code>latest</code></strong></a> <strong>timestamps</strong></p>
+<p>New <code>earliest</code> and <code>latest</code> timestamps let you extract the time range of your data (within microseconds) during aggregation.</p>
+<p>General availability for search.
+* <strong>Layer aggregations and analytics across multi-stage queries</strong></p>
+<p>Recent updates to multi-stage queries let you:</p>
+<ul>
+<li>Layer aggregations and data statistical functions. Calculate baselines, deviations, and trends across multiple stages of data processing.</li>
+<li>Conduct joins both within and across stages.</li>
+</ul>
+<p>Private preview for search and dashboards. Contact your Google SecOps representative to enroll.
+* <strong>Join events, the entity graph, and data tables</strong></p>
+<p>You can now perform Inner joins between events, the entity graph, and data tables. These queries require a <code>match</code> clause for these joins and return results as statistics.</p>
+<p>Private preview for search and dashboards. Contact your Google SecOps representative to enroll.</p>]]></content>
+    <summary>New capabilities in YARA-L 2.0 enhance search precision and data analysis with features like conditions in UDM search, event deduplication, and the use of metrics functions. Limits for array aggregations have been increased, and new options like the 'limit' keyword and 'earliest'/'latest' timestamps provide greater control over search results. Additionally, updates allow for layering analytics across multi-stage queries and joining events with the entity graph and data tables.</summary>
+    <title>Feature: Enhanced YARA-L 2.0 Capabilities</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -20,6 +71,17 @@
 <p>Chrome Password Event on Newly Observed Domain in Environment</p>]]></content>
     <summary>New rules added to rule pack for Chrome Enterprise Premium Browser Threat detections.</summary>
     <title>Changed: Updated Chrome Detections</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2025-08-04:feature:1</id>
+    <published>2025-08-04T00:00:00+00:00</published>
+    <updated>2025-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://cloud.google.com/chronicle/docs/event-processing/auto-extraction">Auto Extraction</a> supports XML formatted logs in addition to JSON formatted logs. This enhancement will be available starting this week.</p>]]></content>
+    <summary>Auto Extraction now supports XML logs.</summary>
+    <title>Feature: New log format support</title>
   </entry>
   <entry>
     <author>

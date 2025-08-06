@@ -1,5 +1,12 @@
 # Colab Enterprise
 
+## 2025-08-05
+
+### Feature
+
+[Generally available](https://cloud.google.com/products#product-launch-stages): You can consume reservations with Colab Enterprise runtimes. Reservations of Compute Engine zonal resources help you gain a high level of assurance that your runtimes have the necessary resources to run. For more information, see [Use reservations with Colab Enterprise](https://cloud.google.com/colab/docs/reservations).
+
+---
 ## 2025-08-04
 
 ### Feature

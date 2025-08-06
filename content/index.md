@@ -71,6 +71,7 @@
 - [Config Connector](config-connector/index.md)
 - [Contact Center AI Insights](contact-center-ai-insights/index.md)
 - [Container Optimized OS](container-optimized-os/index.md)
+- [Database Center](database-center/index.md)
 - [Dataflow](dataflow/index.md)
 - [Dataform](dataform/index.md)
 - [Dataplex](dataplex/index.md)

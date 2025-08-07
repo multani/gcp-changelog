@@ -21,7 +21,7 @@ For use with SAP NetWeaver, SAP has certified the following Compute Engine bare 
 
 For more information, see the following:
 
-* [Certifications for SAP applications on Google Cloud](https://cloud.google.com/solutions/sap/docs/certifications-sap-apps#sap-certified-vms-gen-purpose-c4d)
+* [Certifications for SAP applications on Google Cloud](https://cloud.google.com/sap/docs/certifications-sap-apps#sap-certified-vms-gen-purpose-c4d)
 * [C4D machine series](https://cloud.google.com/compute/docs/general-purpose-machines#c4d_series)
 
 ---
@@ -35,8 +35,8 @@ For use with SAP HANA and SAP NetWeaver on Google Cloud, SAP has certified the o
 
 For more information, see:
 
-* [Certified operating systems for SAP HANA](https://cloud.google.com/solutions/sap/docs/sap-hana-os-support#quick_reference_table)
-* [Certified operating systems for SAP NetWeaver](https://cloud.google.com/solutions/sap/docs/netweaver-os-support#quick_reference_table)
+* [Certified operating systems for SAP HANA](https://cloud.google.com/sap/docs/sap-hana-os-support#quick_reference_table)
+* [Certified operating systems for SAP NetWeaver](https://cloud.google.com/sap/docs/netweaver-os-support#quick_reference_table)
 
 ---
 ## 2025-07-08
@@ -47,7 +47,7 @@ For more information, see:
 
 Version 2.9 of the BigQuery Connector for SAP is generally available (GA). This version introduces Change Data Capture (CDC) replication of SAP data into BigQuery through Pub/Sub. This replication path keeps your BigQuery tables up-to-date with the latest changes from your SAP data sources, eliminating the need for custom deduplication.
 
-For more information, see [What's new with BigQuery Connector for SAP](https://cloud.google.com/solutions/sap/docs/bq-connector/whats-new#version-2-9).
+For more information, see [What's new with BigQuery Connector for SAP](https://cloud.google.com/sap/docs/bq-connector/whats-new#version-2-9).
 
 ---
 ## 2025-07-03

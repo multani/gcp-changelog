@@ -639,7 +639,7 @@ maintenance, we recommend that you do the following:
 
     For more information, see the following:
 
-    - [Certifications for SAP applications on Google Cloud](https://cloud.google.com/solutions/sap/docs/certifications-sap-apps#sap-certified-vms-gen-purpose-c4d)
+    - [Certifications for SAP applications on Google Cloud](https://cloud.google.com/sap/docs/certifications-sap-apps#sap-certified-vms-gen-purpose-c4d)
     - [C4D machine series](https://cloud.google.com/compute/docs/general-purpose-machines#c4d_series)
 
     Security Command Center

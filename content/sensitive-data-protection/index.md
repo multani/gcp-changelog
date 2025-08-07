@@ -1,5 +1,14 @@
 # Sensitive Data Protection
 
+## 2025-08-04
+
+### Feature
+
+Sensitive Data Protection provides recommendations to optimize your infoType selections. In the Google Cloud console, if you select a specific infoType that is covered by a general infoType, Sensitive Data Protection recommends general infoTypes that you can use instead.
+
+For information about the benefits of using general infoTypes, see [General and specific infoType detectors](https://cloud.google.com/sensitive-data-protection/docs/concepts-infotypes#general-specific-infotypes).
+
+---
 ## 2025-08-01
 
 ### Feature

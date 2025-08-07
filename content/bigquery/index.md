@@ -1,5 +1,12 @@
 # BigQuery
 
+## 2025-08-06
+
+### Feature
+
+Enabling the advanced runtime now includes [short query optimizations](https://cloud.google.com/bigquery/docs/advanced-runtime#short_query_optimizations). This feature is in [preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-08-04
 
 ### Libraries

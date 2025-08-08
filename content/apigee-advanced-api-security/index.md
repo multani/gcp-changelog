@@ -1,5 +1,26 @@
 # Apigee Advanced API Security
 
+## 2025-08-06
+
+### Announcement
+
+On August 6, 2025 we released an updated version of Advanced API Security
+
+**Note:** Rollouts of this release to production instances will begin within two business days and may take four or more business days to complete across all Google Cloud zones. Your instances may not have the feature available until the rollout is complete.
+
+### Feature
+
+**Availability of Shadow API Discovery for APIs in any Google Cloud project**
+
+Using Shadow API Discovery, you can find undocumented/shadow APIs in your existing cloud infrastructure. Shadow APIs pose a security risk to your system, since they might be unsecured, unmonitored, and unmaintained.
+
+With this release, you can configure and run API observation jobs in any Google Cloud project, without needing to provision Apigee in that project. You can also centrally view the results of API observation jobs and compare discovered API endpoints and operations to APIs cataloged in API hub to identify shadow APIs.
+
+See the [Shadow API Discovery overview](https://cloud.google.com/apigee/docs/api-observation/shadow-api-discovery) for information on Shadow API Discovery and how to add it to projects.
+
+**Note:** Data residency is not currently supported for Shadow API Discovery. See [data residency compatibility](https://cloud.google.com/apigee/docs/api-platform/get-started/drz-concepts#data-residency-compatibility).
+
+---
 ## 2025-07-14
 
 ### Announcement

@@ -1,5 +1,12 @@
 # Google Cloud Architecture Center
 
+## 2025-08-07
+
+### Changed
+
+[AI and ML perspective: Reliability](https://cloud.google.com/architecture/framework/perspectives/ai-ml/reliability): Major update to expand the reliability principles and recommendations in the AI and ML perspective.
+
+---
 ## 2025-07-28
 
 ### Feature

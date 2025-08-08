@@ -149,12 +149,6 @@ responses are immediately halted.
 
 Code completion suggestion speed is improved with VS Code Extension `2.41.0`.
 
-### Improved code completion speed
-
-#### VS Code Gemini Code Assist `2.41.0`
-
-Code completion suggestion speed is improved with VS Code Extension `2.41.0`.
-
 ---
 ## 2025-07-17
 

@@ -33,15 +33,6 @@ IntelliJ Gemini Code Assist provides clickable filenames when it references a
 file in your workspace as part of its chat response. Clicking the filename opens
 the file in your workspace.
 
-### BYOID support for IntelliJ
-
-#### IntelliJ Gemini Code Assist `1.23.3`
-
-The IntelliJ Gemini Code Assist Standard and Enterprise editions support Bring
-Your Own ID (BYOID) login. With BYOID support, you can authenticate once with a
-trusted identity. For more information, see
-[Workload Identity Federation](https://cloud.google.com/iam/docs/workload-identity-federation).
-
 ### Chat banner shows release channel information
 
 #### IntelliJ Gemini Code Assist `1.23.3`
@@ -130,15 +121,6 @@ instead of the inline diff.
 ---
 ## 2025-07-24
 
-### Stop in-progress chat responses with IntelliJ
-
-#### IntelliJ Gemini Code Assist `1.22.1`
-
-You can
-[stop chat responses](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#stop_in-progress_chat)
-with IntelliJ Gemini Code Assist `1.22.1`. Undesired long running or errant chat
-responses are immediately halted.
-
 ### Thinking tokens
 
 #### IntelliJ Gemini Code Assist `1.22.1`
@@ -149,8 +131,23 @@ working on your request.
 
 ![Thinking tokens in IntelliJ Code Gemini Code Assist.](https://cloud.google.com/gemini/images/release-notes-images/intellij-thinking-tokens.png)
 
+### Stop in-progress chat responses with IntelliJ
+
+#### IntelliJ Gemini Code Assist `1.22.1`
+
+You can
+[stop chat responses](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#stop_in-progress_chat)
+with IntelliJ Gemini Code Assist `1.22.1`. Undesired long running or errant chat
+responses are immediately halted.
+
 ---
 ## 2025-07-18
+
+### Improved code completion speed
+
+#### VS Code Gemini Code Assist `2.41.0`
+
+Code completion suggestion speed is improved with VS Code Extension `2.41.0`.
 
 ### Improved code completion speed
 

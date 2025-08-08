@@ -1,5 +1,23 @@
 # Gemini Code Assist
 
+## 2025-08-08
+
+### Feature
+
+
+
+### Quick Preview of chat code suggestions across multiple files
+
+#### VS Code Gemini Code Assist `2.44.0`
+
+Gemini Code Assist chat provides a [quick preview](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#view_code_diffs)
+of the collective code suggestions across multiple files in the chat. Selecting
+a particular file opens the corresponding file in the editor with the first
+suggestion selected by default.
+
+![Quick Preview in VS Code Gemini Code Assist.](https://cloud.google.com/gemini/images/vscode-quick-preview.png)
+
+---
 ## 2025-08-01
 
 ### View code diff in IntelliJ chat
@@ -121,6 +139,15 @@ instead of the inline diff.
 ---
 ## 2025-07-24
 
+### Stop in-progress chat responses with IntelliJ
+
+#### IntelliJ Gemini Code Assist `1.22.1`
+
+You can
+[stop chat responses](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#stop_in-progress_chat)
+with IntelliJ Gemini Code Assist `1.22.1`. Undesired long running or errant chat
+responses are immediately halted.
+
 ### Thinking tokens
 
 #### IntelliJ Gemini Code Assist `1.22.1`
@@ -130,15 +157,6 @@ Gemini Code Assist produces a response, to show you that Gemini is actively
 working on your request.
 
 ![Thinking tokens in IntelliJ Code Gemini Code Assist.](https://cloud.google.com/gemini/images/release-notes-images/intellij-thinking-tokens.png)
-
-### Stop in-progress chat responses with IntelliJ
-
-#### IntelliJ Gemini Code Assist `1.22.1`
-
-You can
-[stop chat responses](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#stop_in-progress_chat)
-with IntelliJ Gemini Code Assist `1.22.1`. Undesired long running or errant chat
-responses are immediately halted.
 
 ---
 ## 2025-07-18

@@ -821,6 +821,15 @@ workloads.
 
 ### Feature
 
+In GKE version 1.32.2-gke.1359000 and later, you can now configure
+[collection scheduling](https://cloud.google.com/kubernetes-engine/docs/concepts/tpus#collection-scheduling)
+for single-host and multi-host TPU node pools by using
+[compute classes](https://cloud.google.com/kubernetes-engine/docs/concepts/about-custom-compute-classes).
+Collection scheduling lets you set a Service Level Objective (SLO) for your TPU
+workloads.
+
+### Feature
+
 In GKE version 1.33.2-gke.1335000 and later, the
 [GKE Gateway controller](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api#gateway_controller)
 supports
@@ -831,15 +840,6 @@ supports
 In GKE version 1.33.1-gke.1788000 and later, you can target specific reservation
 sub-blocks in a reservation block by using the
 [`reservationSubBlock` field in compute classes](https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#reservationSubBlock).
-
-### Feature
-
-In GKE version 1.32.2-gke.1359000 and later, you can now configure
-[collection scheduling](https://cloud.google.com/kubernetes-engine/docs/concepts/tpus#collection-scheduling)
-for single-host and multi-host TPU node pools by using
-[compute classes](https://cloud.google.com/kubernetes-engine/docs/concepts/about-custom-compute-classes).
-Collection scheduling lets you set a Service Level Objective (SLO) for your TPU
-workloads.
 
 ### Announcement
 
@@ -1495,47 +1495,6 @@ For information about the latest known issues, see [Google Distributed Cloud for
 
 ---
 ## 2025-07-21
-
-### Announcement
-
-Google Distributed Cloud for bare metal 1.30.1100-gke.67 is now available for [download](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads). To upgrade, see [Upgrade clusters](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade). Google Distributed Cloud for bare metal 1.30.1100-gke.67 runs on Kubernetes v1.30.12-gke.800.
-
-After a release, it takes approximately 7 to 14 days for the version to become available for installations or upgrades with the [GKE On-Prem API clients](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools): the Google Cloud console, the gcloud CLI, and Terraform.
-
-If you use a third-party storage vendor, check the [Ready storage partners](https://cloud.google.com/anthos/docs/resources/partner-storage) document to make sure the storage vendor has already passed the qualification for this release of Google Distributed Cloud for bare metal.
-
-### Announcement
-
-Google Distributed Cloud (software only) for VMware 1.30.1100-gke.67 is now available for [download](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads). To upgrade, see [Upgrade a cluster](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading). Google Distributed Cloud 1.30.1100-gke.67 runs on Kubernetes v1.30.12-gke.800.
-
-If you are using a third-party storage vendor, check the [GDC Ready storage partners](https://cloud.google.com/anthos/docs/resources/partner-storage) document to make sure the storage vendor has already passed the qualification for this release.
-
-After a release, it takes approximately 7 to 14 days for the version to become available for use with [GKE On-Prem API clients](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools): the Google Cloud console, the gcloud CLI, and Terraform.
-
-### Fixed
-
-The following issues were fixed in 1.30.1100-gke.67:
-
-* Fixed vulnerabilities listed in [Vulnerability fixes](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
-
-### Fixed
-
-The following issues were fixed in 1.30.1100-gke.67:
-
-* Fixed vulnerabilities listed in [Vulnerability fixes](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
-
-### Issue
-
-For information about the latest known issues, see [Google Distributed Cloud for bare metal known issues](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues) in the Troubleshooting section.
-
-### Feature
-
-In GKE version 1.33.2-gke.1111000 and later, you can use compute classes to set
-[Kubernetes labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
-on all nodes that are created for that compute class. These labels are applied
-to the corresponding `Node` objects in the Kubernetes API. For more information
-about setting node labels in compute classes, see the
-[ComputeClass custom resource definition](https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#nodepoolconfig).
 
 ### Feature
 

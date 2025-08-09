@@ -1584,38 +1584,245 @@
 
 
 <h1 id="cloud-composer">Cloud Composer</h1>
+<h2 id="2025-08-05">2025-08-05</h2>
+<h3 id="announcement">Announcement</h3>
+<p>A new Cloud Composer release has started on <strong>August 05, 2025</strong>. Get ready for
+upcoming changes and features as we roll out the new release to all regions.
+This release is in progress at the moment. Listed changes and features might
+not be available in some regions yet.</p>
+<h3 id="changed">Changed</h3>
+<p><em>(Cloud Composer 2)</em> Moved the <code>update_fab_perms</code> option from <code>[webserver]</code> to
+<code>[fab]</code> in the Airflow configuration. The corresponding deprecation warning is
+no longer generated in Airflow web server logs.</p>
+<h3 id="feature">Feature</h3>
+<p>Added task-level resource consumption
+<a href="https://cloud.google.com/composer/docs/composer-3/monitor-environments">Airflow metrics</a>
+to Cloud Composer.</p>
+<ul>
+<li><code>composer.googleapis.com/workflow/task/cpu_usage</code>: percentage of CPU used by
+  a task.</li>
+<li><code>composer.googleapis.com/workflow/task/cpu_usage</code>: percentage of memory used
+  by a task.</li>
+</ul>
+<p>### Changed</p>
+<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
+  are available in Cloud Composer 3:</p>
+<ul>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-11">composer-3-airflow-2.10.5-build.11</a> (default)</li>
+<li>
+<p><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-31">composer-3-airflow-2.9.3-build.</a></p>
+<h3 id="changed_1">Changed</h3>
+<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
+are available in Cloud Composer 2:</p>
+<ul>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-9-airflow-2-10-5">composer-2.13.9-airflow-2.10.5</a> (default)</li>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-9-airflow-2-9-3">composer-2.13.9-airflow-2.9.3</a></li>
+</ul>
+<p>### Deprecated</p>
+<p>Cloud Composer versions 2.8.7 and 2.8.8 have reached their
+  <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>.</p>
+<p>Cloud Load Balancing</p>
+<hr />
+<p>### Feature</p>
+<p>Cross-region internal Application Load Balancers can now route requests for static content to Cloud Storage buckets.</p>
+<p>For more information, see <a href="https://cloud.google.com/load-balancing/docs/l7-internal/setup-cross-region-internal-https-buckets">Set up a cross-region internal Application Load Balancer with Cloud Storage buckets</a>.</p>
+<p>This capability is now in <strong>General Availability</strong>.</p>
+<p>Cloud Monitoring</p>
+<hr />
+<p>### Feature</p>
+<p>You can now use the <a href="https://cloud.google.com/monitoring/api/metrics_gcp_i_o#monitoring/billing/time_series_billed_for_queries_count"><code>time_series_billed_for_queries_count</code></a>
+  metric to estimate charges based on the number of time series that have been
+  queried. For more information, see <a href="https://cloud.google.com/stackdriver/estimating-bills#mon-billable-api-reads">View the number of time series billed
+  for queries</a>.</p>
+<p>Billing by time series queried isn't enforced until October 2, 2025. For
+  more information, see <a href="https://cloud.google.com/stackdriver/pricing#monitoring-pricing-summary">Cloud Monitoring pricing summary</a>.</p>
+<p>Cloud Run</p>
+<hr />
+<p>### Feature</p>
+<p>Support for <a href="https://cloud.google.com/run/docs/configuring/services/manual-scaling">manually scaling your Cloud Run service</a> is now at General Availability (GA).</p>
+<p>Colab Enterprise</p>
+<hr />
+<p>### Feature</p>
+<p><a href="https://cloud.google.com/products#product-launch-stages">Generally available</a>: You can consume reservations with Colab Enterprise runtimes. Reservations of Compute Engine zonal resources help you gain a high level of assurance that your runtimes have the necessary resources to run. For more information, see <a href="https://cloud.google.com/colab/docs/reservations">Use reservations with Colab Enterprise</a>.</p>
+<p>Compute Engine</p>
+<hr />
+<p>### Feature</p>
+<p>For Hyperdisk Throughput, the maximum IOPS for a single volume has increased from 600 MiB/s to 2,400 MiB/s. The maximum IOPS for a single volume has increased from 2,400 IOPS to 9,600 IOPS. Hyperdisk Throughput volumes are designed for cost-sensitive workloads, analytics workloads, and workloads that have sequential I/O and large block sizes. For more information, see <a href="https://cloud.google.com/compute/docs/disks/hd-types/hyperdisk-throughput">About Hyperdisk Throughput</a>.</p>
+<p>### Feature</p>
+<p><strong>Generally Available</strong>: The storage-optimized Z3 machine series offers a bare metal (<code>z3-highmem-192-highlssd-metal</code>) machine type with 192 vCPUs, 1,536 GB of memory, and 72 TiB of Local SSD storage.</p>
+<p>Bare metal instances let you create an instance with direct access to the machine's CPU and memory, without a virtualization layer in the middle. Z3 uses <a href="https://cloud.google.com/titanium">Titanium</a> to deliver more compute and memory resources for your workloads by offloading network and I/O processing from the host hardware. To learn more, see <a href="https://cloud.google.com/compute/docs/storage-optimized-machines#z3_series">Z3 machine series</a>. For information about bare metal instances, including regional availability, see <a href="https://cloud.google.com/compute/docs/instances/bare-metal-instances">Bare metal instances on Compute Engine</a>.</p>
+<p>### Deprecated</p>
+<p>The Compute Engine feature that deploys containers on VMs during VM creation is deprecated. For more information about the alternative solutions for running containers on VMs and MIGs, see <a href="https://cloud.google.com/compute/docs/deprecations/container-startup-agent-on-compute">Compute Engine container startup agent deprecation</a>.</p>
+<p>Database Center</p>
+<hr />
+<p>### Feature</p>
+<p>Database Center offers monitoring support for databases running on
+  Google Compute Engine virtual machines. This feature is in
+  <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.
+  To request access to this feature, visit the
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_6uR6JTpgdtJ-oqQbW8gprcypGQoFcR-CUgydYeBZNtvcaw/viewform">access request page</a>.
+  For more information, see
+  <a href="https://cloud.google.com/database-center/docs/monitor-gce-databases">Monitor databases on Compute Engine virtual machines</a>.</p>
+<p>### Feature</p>
+<p>Database Center supports the analyze system performance feature
+  in the <em>High Resource Utilization</em> recommendation for
+  AlloyDB for PostgreSQL. For more information, see
+  <a href="https://cloud.google.com/database-center/docs/learn-database-products-using-gemini#performance_insights_and_recommendations">Performance insights and recommendations</a>.</p>
+<p>### Changed</p>
+<p>You can monitor the number of new Google Cloud database resources that were
+  added to your fleet over the past 1, 7, or 30 days. For more information, see
+  <a href="https://cloud.google.com/database-center/docs/monitor-gce-databases#view-recently-added-database-resources">View recently added database resources</a>.</p>
+<p>### Changed</p>
+<p>You can enable Gemini chat at the folder level to help you learn about
+  Google Cloud database products. To learn how to enable Gemini
+  chat at the folder level, see
+  <a href="https://cloud.google.com/database-center/docs/learn-database-products-using-gemini#before-you-begin">Before you begin using Gemini chat</a>.</p>
+<p>Google Kubernetes Engine</p>
+<hr />
+<p>### Feature</p>
+<p>The <a href="https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series">M4 machine series</a> is generally available in GKE Standard clusters.</p>
+<p>### Feature</p>
+<p>The <a href="https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series">M4 machine series</a> is generally available in GKE Standard clusters.</p>
+<p>### Fixed</p>
+<p>A fix is available for an issue in which the Compute Engine Persistent Disk CSI
+  driver failed with an <code>invalid cpuString</code> error on GKE nodes that used custom
+  machine types. This issue prevented successful attachment and mounting of
+  Persistent Disk volumes on affected nodes. The fix is available in the following
+  GKE versions:</p>
+<ul>
+<li>1.31.10-gke.1034000 and later</li>
+<li>1.32.4-gke.1698000 and later</li>
+<li>
+<p>1.33.1-gke.1386000 and later</p>
+<h2 id="google-secops">Google SecOps</h2>
+<h3 id="feature_1">Feature</h3>
+<p><strong>New YARA-L features</strong></p>
+<p>The following capabilities have been added to YARA-L 2.0 to enhance search precision, data analysis, and investigative workflows:</p>
+<ul>
+<li><a href="https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-conditions"><strong>Conditions in UDM search and dashboards</strong></a></li>
+</ul>
+<p>You can now filter aggregates defined in the <code>outcome</code> section using the new <code>condition</code> clause. This gives you more precise control over your results and supports more targeted investigations.</p>
+<ul>
+<li>New functionality includes support for <code>OR</code> and <code>n</code> of <code>[a, b, c.. z]</code> expressions.</li>
+<li>General availability for search and dashboards.</li>
+<li><a href="https://cloud.google.com/chronicle/docs/investigation/deduplication-yaral"><strong>Deduplicate events in searches and dashboards</strong></a></li>
+</ul>
+<p>The new <code>dedup</code> section lets you remove duplicate events after the <code>match</code> clause in both standard UDM searches and YARA-L 2.0 queries.</p>
+<p>General availability for search and dashboards.
++ <a href="https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-metrics-search"><strong>Use metrics functions in UDM searches</strong></a></p>
+<p>You can now apply <code>metrics</code> functions in the <code>outcome</code> section of your search to access aggregated historical data directly in your search queries.</p>
+<ul>
+<li>Uses the same syntax as <code>metrics</code> in rules.</li>
+<li>General availability for search.</li>
+<li><a href="https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-syntax#aggregations"><strong>Increased limits for array and array_distinct</strong></a></li>
+</ul>
+<p>The element limit for <code>array</code> and <code>array_distinct</code> aggregation functions in YARA-L has increased from 25 to 1,000.</p>
+<ul>
+<li>General availability for search and dashboards.</li>
+<li>Private preview for rules.</li>
+<li><strong>Restrict search results using limit</strong></li>
+</ul>
+<p>The <code>limit</code> keyword now lets you restrict the number of results returned by a search. Use this to quickly preview data, optimize performance, or focus on a subset of results.</p>
+<p>General availability for search and dashboards.
++ <a href="https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#earliest"><strong><code>earliest</code></strong></a> and <a href="https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#latest"><strong><code>latest</code></strong></a> <strong>timestamps</strong></p>
+<p>New <code>earliest</code> and <code>latest</code> timestamps let you extract the time range of your data (within microseconds) during aggregation.</p>
+<p>General availability for search.
++ <strong>Layer aggregations and analytics across multi-stage queries</strong></p>
+<p>Recent updates to multi-stage queries let you:</p>
+<ul>
+<li>Layer aggregations and data statistical functions. Calculate baselines, deviations, and trends across multiple stages of data processing.</li>
+<li>Conduct joins both within and across stages.</li>
+</ul>
+<p>Private preview for search and dashboards. Contact your Google SecOps representative to enroll.
++ <strong>Join events, the entity graph, and data tables</strong></p>
+<p>You can now perform Inner joins between events, the entity graph, and data tables. These queries require a <code>match</code> clause for these joins and return results as statistics.</p>
+<p>Private preview for search and dashboards. Contact your Google SecOps representative to enroll.</p>
+<h2 id="google-secops-siem">Google SecOps SIEM</h2>
+<h3 id="feature_2">Feature</h3>
+<p><strong>New YARA-L features</strong></p>
+<p>The following capabilities have been added to YARA-L 2.0 to enhance search precision, data analysis, and investigative workflows:</p>
+<ul>
+<li><a href="https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-conditions"><strong>Conditions in UDM search and dashboards</strong></a></li>
+</ul>
+<p>You can now filter aggregates defined in the <code>outcome</code> section using the new <code>condition</code> clause. This gives you more precise control over your results and supports more targeted investigations.</p>
+<ul>
+<li>New functionality includes support for <code>OR</code> and <code>n</code> of <code>[a, b, c.. z]</code> expressions.</li>
+<li>General availability for search and dashboards.</li>
+<li><a href="https://cloud.google.com/chronicle/docs/investigation/deduplication-yaral"><strong>Deduplicate events in searches and dashboards</strong></a></li>
+</ul>
+<p>The new <code>dedup</code> section lets you remove duplicate events after the <code>match</code> clause in both standard UDM searches and YARA-L 2.0 queries.</p>
+<p>General availability for search and dashboards.
++ <a href="https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-metrics-search"><strong>Use metrics functions in UDM searches</strong></a></p>
+<p>You can now apply <code>metrics</code> functions in the <code>outcome</code> section of your search to access aggregated historical data directly in your search queries.</p>
+<ul>
+<li>Uses the same syntax as <code>metrics</code> in rules.</li>
+<li>General availability for search.</li>
+<li><a href="https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-syntax#aggregations"><strong>Increased limits for array and array_distinct</strong></a></li>
+</ul>
+<p>The element limit for <code>array</code> and <code>array_distinct</code> aggregation functions in YARA-L has increased from 25 to 1,000.</p>
+<ul>
+<li>General availability for search and dashboards.</li>
+<li>Private preview for rules.</li>
+<li><strong>Restrict search results using limit</strong></li>
+</ul>
+<p>The <code>limit</code> keyword now lets you restrict the number of results returned by a search. Use this to quickly preview data, optimize performance, or focus on a subset of results.</p>
+<p>General availability for search and dashboards.
++ <a href="https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#earliest"><strong><code>earliest</code></strong></a> and <a href="https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#latest"><strong><code>latest</code></strong></a> <strong>timestamps</strong></p>
+<p>New <code>earliest</code> and <code>latest</code> timestamps let you extract the time range of your data (within microseconds) during aggregation.</p>
+<p>General availability for search.
++ <strong>Layer aggregations and analytics across multi-stage queries</strong></p>
+<p>Recent updates to multi-stage queries let you:</p>
+<ul>
+<li>Layer aggregations and data statistical functions. Calculate baselines, deviations, and trends across multiple stages of data processing.</li>
+<li>Conduct joins both within and across stages.</li>
+</ul>
+<p>Private preview for search and dashboards. Contact your Google SecOps representative to enroll.
++ <strong>Join events, the entity graph, and data tables</strong></p>
+<p>You can now perform Inner joins between events, the entity graph, and data tables. These queries require a <code>match</code> clause for these joins and return results as statistics.</p>
+<p>Private preview for search and dashboards. Contact your Google SecOps representative to enroll.</p>
+<h2 id="spanner">Spanner</h2>
+<h3 id="feature_3">Feature</h3>
+<p>Columnar engine for Spanner is now in Preview. Columnar engine is a storage technique used with analytics queries to speed up scans. Spanner columnar engine accelerates analytical query performance on live operational data by up to 200 times without affecting transaction workloads. This eliminates the need for ETL into separate data warehouses while maintaining strong consistency. For more information, see the <a href="https://cloud.google.com/spanner/docs/columnar-engine">Columnar engine for Spanner overview</a>.</p>
+<h2 id="vertex-ai-workbench">Vertex AI Workbench</h2>
+<h3 id="feature_4">Feature</h3>
+<p><a href="https://cloud.google.com/products#product-launch-stages">Generally available</a>: You can consume reservations with Vertex AI Workbench instances. Reservations of Compute Engine zonal resources help you gain a high level of assurance that your jobs have the necessary resources to run. For more information, see <a href="https://cloud.google.com/vertex-ai/docs/workbench/instances/reservations">Use reservations with Vertex AI Workbench instances</a>.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
 <h2 id="2025-07-28">2025-07-28</h2>
+<h3 id="deprecated">Deprecated</h3>
+<p>Cloud Composer version 2.8.6 has reached its
+<a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>.</p>
 <h3 id="fixed">Fixed</h3>
 <p>Fixed an issue that caused unexpected restarts of Airflow component workloads
 in the environment's cluster.</p>
 <h3 id="fixed_1">Fixed</h3>
 <p><em>(Cloud Composer 3)</em> The <code>DAGS_FOLDER</code> reserved environment variable now
 correctly points to the local directory where DAG files are stored.</p>
-<h3 id="changed">Changed</h3>
+<h3 id="changed_2">Changed</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
 are available in Cloud Composer 3:</p>
 <ul>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-10">composer-3-airflow-2.10.5-build.10</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-30">composer-3-airflow-2.9.3-build.30</a></li>
 </ul>
-<h3 id="changed_1">Changed</h3>
+<h3 id="changed_3">Changed</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
 are available in Cloud Composer 2:</p>
 <ul>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-8-airflow-2-10-5">composer-2.13.8-airflow-2.10.5</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-8-airflow-2-9-3">composer-2.13.8-airflow-2.9.3</a></li>
 </ul>
-<h3 id="deprecated">Deprecated</h3>
-<p>Cloud Composer version 2.8.6 has reached its
-<a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>.</p>
 <hr />
 <h2 id="2025-07-24">2025-07-24</h2>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p><a href="https://cloud.google.com/composer/docs/composer-3/access-airflow-web-interface#restarting">Web server restarting</a>
 is is now generally available (GA) in Cloud Composer 2 and Cloud Composer 3.</p>
 <hr />
 <h2 id="2025-07-23">2025-07-23</h2>
-<h3 id="announcement">Announcement</h3>
+<h3 id="announcement_1">Announcement</h3>
 <p>If your environment uses <code>dag-factory</code> package version 0.22, then you might
 experience DAG failures in Cloud Composer versions that have
 <code>apache-airflow-providers-cncf-kubernetes</code> package version 10.4.2 or later. At
@@ -1643,11 +1850,11 @@ following:</p>
 </ul>
 <hr />
 <h2 id="2025-07-17">2025-07-17</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p><a href="https://cloud.google.com/composer/docs/composer-3/set-up-highly-resilient-environments">Highly resilient environments</a> are now generally available (GA) in Cloud Composer 3.</p>
 <hr />
 <h2 id="2025-07-14">2025-07-14</h2>
-<h3 id="changed_2">Changed</h3>
+<h3 id="changed_4">Changed</h3>
 <p>We're changing the way we provide support dates for Airflow builds in Cloud Composer 3. Before this change, some Airflow builds had their end of support date listed as "To be announced" until a later Airflow version became available. We're deprecating this approach for all builds that are released after July 01, 2025.</p>
 <p>We are now providing support dates that depend on a date when a particular Airflow build was released:</p>
 <ul>
@@ -1658,21 +1865,21 @@ following:</p>
 </ul>
 <hr />
 <h2 id="2025-07-09">2025-07-09</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p>A new Cloud Composer release has started on <strong>July 9, 2025</strong>. Get ready for upcoming changes and features as we roll out the new release to all regions. This release is in progress at the moment. Listed changes and features might not be available in some regions yet.</p>
-<h3 id="changed_3">Changed</h3>
+<h3 id="changed_5">Changed</h3>
 <p>We are gradually rolling out a change that <strong>switches the default version</strong> from Cloud Composer 2 to Cloud Composer 3 in the Cloud Composer API.</p>
 <p>In regions where the change is rolled out, a Cloud Composer 3 environment is created by default when a version is not specified in Google Cloud CLI, Cloud Composer API, or Terraform. If you use automation scripts to provision Cloud Composer 2 environments, make sure that you explicitly specify a Cloud Composer 2 version.</p>
 <p>In this release, the change is rolling out in the following regions: africa-south1, asia-northeast2, asia-south2, asia-southeast2, europe-southwest1, europe-west10, europe-west12, europe-west8, me-central1, me-central2, me-west1, southamerica-west1, and us-south1.</p>
-<h3 id="changed_4">Changed</h3>
+<h3 id="changed_6">Changed</h3>
 <p><em>(Available without upgrading)</em> During Cloud Composer 2 environment operations, a more informative error message is returned when an environment's web server has connectivity issues.</p>
-<h3 id="changed_5">Changed</h3>
+<h3 id="changed_7">Changed</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a> are available in Cloud Composer 3:</p>
 <ul>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-9">composer-3-airflow-2.10.5-build.9</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-29">composer-3-airflow-2.9.3-build.29</a></li>
 </ul>
-<h3 id="changed_6">Changed</h3>
+<h3 id="changed_8">Changed</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a> are available in Cloud Composer 2:</p>
 <ul>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-5-airflow-2-10-5">composer-2.13.7-airflow-2.10.5</a> (default)</li>
@@ -1682,7 +1889,7 @@ following:</p>
 <p>Cloud Composer versions 2.8.4 and 2.8.5 have reached their <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>.</p>
 <hr />
 <h2 id="2025-07-02">2025-07-02</h2>
-<h3 id="changed_7">Changed</h3>
+<h3 id="changed_9">Changed</h3>
 <p>Cloud Composer 1 and Cloud Composer 2 environments with version 2.0.x are <strong>approaching their end of life</strong>. We're planning to deprecate them in the following way:</p>
 <ul>
 <li>Starting <strong>September 15, 2025</strong>, you will no longer be able to create new Cloud Composer 1 environments.</li>
@@ -1694,17 +1901,17 @@ following:</p>
 or upgrading your Cloud Composer 2 environments to a later version.</p>
 <hr />
 <h2 id="2025-07-01">2025-07-01</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p>A new Cloud Composer release has started on <strong>July 1, 2025</strong>. This release is in progress at the moment. Listed changes might not be available in some regions yet.</p>
-<h3 id="changed_8">Changed</h3>
+<h3 id="changed_10">Changed</h3>
 <p>This release includes internal infrastructure improvements to Cloud Composer. There are no user-visible changes.</p>
-<h3 id="changed_9">Changed</h3>
+<h3 id="changed_11">Changed</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a> are available in Cloud Composer 3:</p>
 <ul>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-8">composer-3-airflow-2.10.5-build.8</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-28">composer-3-airflow-2.9.3-build.28</a></li>
 </ul>
-<h3 id="changed_10">Changed</h3>
+<h3 id="changed_12">Changed</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a> are available in Cloud Composer 2:</p>
 <ul>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-5-airflow-2-10-5">composer-2.13.6-airflow-2.10.5</a> (default)</li>
@@ -1712,20 +1919,20 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
 </ul>
 <hr />
 <h2 id="2025-06-23">2025-06-23</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p>Improved the startup times of Airflow workers for environments that have a large number of custom PyPI packages installed.</p>
 <p>This feature <a href="https://cloud.google.com/composer/docs/release-notes#June_02_2025">was announced previously</a> and is gradually rolling out over several releases. In this release, it's available in asia-east2, asia-northeast3, europe-central2, europe-west9, me-central1, me-west1, northamerica-northeast1, northamerica-northeast2, northamerica-south1, and us-west1 re</p>
 <h3 id="fixed_2">Fixed</h3>
 <p><em>(Available without upgrading)</em> Fixed an issue where deleting a Cloud Composer 2 environment could fail when the environment's cluster was in the process of creating a node pool.</p>
-<h3 id="changed_11">Changed</h3>
+<h3 id="changed_13">Changed</h3>
 <p><em>(Airflow 2.10.5)</em> The <code>apache-airflow-providers-cncf-kubernetes</code> package was <a href="https://airflow.apache.org/docs/apache-airflow-providers-cncf-kubernetes/stable/changelog.html">upgraded to version 10.5.0</a> from version 10.4.2. For changes in other packages, see the <a href="https://cloud.google.com/composer/docs/versions-packages">preinstalled packages changelog</a>.</p>
-<h3 id="changed_12">Changed</h3>
+<h3 id="changed_14">Changed</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a> are available in Cloud Composer 3:</p>
 <ul>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-7">composer-3-airflow-2.10.5-build.7</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-27">composer-3-airflow-2.9.3-build.27</a></li>
 </ul>
-<h3 id="changed_13">Changed</h3>
+<h3 id="changed_15">Changed</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a> are available in Cloud Composer 2:</p>
 <ul>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-5-airflow-2-10-5">composer-2.13.5-airflow-2.10.5</a> (default)</li>
@@ -1735,7 +1942,7 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
 <p>Cloud Composer version 2.8.3 has reached its <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>.</p>
 <hr />
 <h2 id="2025-06-16">2025-06-16</h2>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p>We're planning to phase out the APIs that aren't required by Cloud Composer 3.</p>
 <ul>
 <li>
@@ -1758,21 +1965,21 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
 </ul>
 <hr />
 <h2 id="2025-06-13">2025-06-13</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p>Cloud Composer pages in the Cloud Console now support the dark color theme. You can switch to the dark theme on the <a href="https://console.cloud.google.com/user-preferences/appearance">Appearance page</a> in the Cloud Console.</p>
 <hr />
 <h2 id="2025-06-10">2025-06-10</h2>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p>A new Cloud Composer release has started on <strong>June 10, 2025</strong>. Get ready for upcoming changes and features as we roll out the new release to all regions. This release is in progress at the moment. Listed changes and features might not be available in some regions yet.</p>
 <h3 id="fixed_3">Fixed</h3>
 <p>Fixed an issue that caused Airflow worker and scheduler Pods to be evicted when a large number of tasks was executed.</p>
-<h3 id="changed_14">Changed</h3>
+<h3 id="changed_16">Changed</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a> are available in Cloud Composer 3:</p>
 <ul>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-6">composer-3-airflow-2.10.5-build.6</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-26">composer-3-airflow-2.9.3-build.26</a></li>
 </ul>
-<h3 id="changed_15">Changed</h3>
+<h3 id="changed_17">Changed</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a> are available in Cloud Composer 2:</p>
 <ul>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-4-airflow-2-10-5">composer-2.13.4-airflow-2.10.5</a> (default)</li>
@@ -1782,25 +1989,25 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
 <p>Cloud Composer version 2.8.2 has reached its <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>.</p>
 <hr />
 <h2 id="2025-06-02">2025-06-02</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p>Improved the startup times of Airflow workers for environments that have a large number of custom PyPI packages installed.</p>
 <p>This change rolls out gradually. In this release, it's available in asia-east1, asia-northeast2, asia-south1, europe-north1, europe-west3, us-east1, us-south1, and us-west2 regions.</p>
-<h3 id="changed_16">Changed</h3>
+<h3 id="changed_18">Changed</h3>
 <p><em>(Cloud Composer 3)</em> If a VPC network is attached to an environment, then all DNS addresses accessed by the Airflow components of the environment are resolved using the Cloud DNS configuration of the VPC network. In particular, Airflow workers that execute DAGs will resolve DNS addresses in this way.</p>
-<h3 id="changed_17">Changed</h3>
+<h3 id="changed_19">Changed</h3>
 <p><em>(Cloud Composer 3)</em> All newly created private DNS zones are immediately visible to a Cloud Composer environment. Previously, re-attaching a VPC network was required.</p>
 <h3 id="fixed_4">Fixed</h3>
 <p><em>(Cloud Composer 3)</em> It's now possible to use <a href="http://cloud.google.com/dns/docs/zones/cross-project-binding">zones with cross-project binding</a>. Before this change, cross-project bound zones weren't supported in Cloud Composer 3.</p>
-<h3 id="changed_18">Changed</h3>
+<h3 id="changed_20">Changed</h3>
 <p><em>(Cloud Composer 2)</em> In Cloud Composer versions 2.11.5 and later, log processing is switching to using OpenTelemetry instead of Fluentd.</p>
 <p>This change was <a href="https://cloud.google.com/composer/docs/release-notes#May_14_2025">announced previously</a> and is gradually rolling out over several releases. In this release, it's available in the following regions: asia-east1, asia-east2, asia-northeast2, asia-northeast3, asia-south2, asia-southeast2, australia-southeast1, australia-southeast2, europe-central2, europe-north1, europe-north2, europe-southwest1, europe-west, europe-west10, europe-west12, europe-west6, europe-west8, europe-west9, me-central1, me-central2, me-west1, northamerica-northeast2, northamerica-south1, southamerica-east1, southamerica-west1, us-east5, us-south1, us-west, and us-west3.</p>
-<h3 id="changed_19">Changed</h3>
+<h3 id="changed_21">Changed</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a> are available in Cloud Composer 3:</p>
 <ul>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-5">composer-3-airflow-2.10.5-build.5</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-25">composer-3-airflow-2.9.3-build.25</a></li>
 </ul>
-<h3 id="changed_20">Changed</h3>
+<h3 id="changed_22">Changed</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a> are available in Cloud Composer 2:</p>
 <ul>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-3-airflow-2-10-5">composer-2.13.3-airflow-2.10.5</a> (default)</li>
@@ -1810,7 +2017,7 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
 <p>Cloud Composer version 2.8.1 has reached its <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>.</p>
 <hr />
 <h2 id="2025-05-29">2025-05-29</h2>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p>The <a href="https://cloud.google.com/composer/docs/composer-3/run-local-airflow-environments">Composer Local Development CLI tool</a> is now available in Cloud Composer 3. This tool helps to streamline testing and developing by providing local Airflow environments based on Airflow builds used by Cloud Composer 3.</p>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
@@ -1823,6 +2030,21 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-composer">Cloud Composer</a></li>
+          <li class="nav-item">
+            <a href="#2025-08-05" class="nav-link">2025-08-05</a>
+          </li>
+          <li class="nav-item">
+            <a href="#google-secops" class="nav-link">Google SecOps</a>
+          </li>
+          <li class="nav-item">
+            <a href="#google-secops-siem" class="nav-link">Google SecOps SIEM</a>
+          </li>
+          <li class="nav-item">
+            <a href="#spanner" class="nav-link">Spanner</a>
+          </li>
+          <li class="nav-item">
+            <a href="#vertex-ai-workbench" class="nav-link">Vertex AI Workbench</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-07-28" class="nav-link">2025-07-28</a>
           </li>

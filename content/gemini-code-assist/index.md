@@ -2,10 +2,6 @@
 
 ## 2025-08-08
 
-### Feature
-
-
-
 ### Quick Preview of chat code suggestions across multiple files
 
 #### VS Code Gemini Code Assist `2.44.0`

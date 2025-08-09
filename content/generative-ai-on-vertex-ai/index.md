@@ -1,5 +1,35 @@
 # Generative AI on Vertex AI
 
+## 2025-08-07
+
+### Feature
+
+**Vertex AI prompt optimizer**
+
+The Vertex AI prompt optimizer is now [generally available](https://cloud.google.com/products?e=13802955&hl=en#product-launch-stages). For more information, see [Optimize prompts](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-optimizer).
+
+We now offer a [zero-shot prompt optimizer](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-optimizer).
+
+### Feature
+
+**Vertex AI Agent Engine**
+
+You can use your own [custom service account](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/set-up#custom-service-account) for agent identity to manage permissions and access according to your organization's security policies.
+
+### Feature
+
+**Model tuning**
+
+You can now perform supervised fine-tuning on open models such as Llama 3.1. For more information, see [Tune an open model](https://cloud.google.com/vertex-ai/generative-ai/docs/models/open-model-tuning).
+
+---
+## 2025-08-06
+
+### Feature
+
+[OpenAI's gpt-oss](https://console.cloud.google.com/vertex-ai/publishers/openai/model-garden/gpt-oss) models are available through Model Garden.
+
+---
 ## 2025-07-29
 
 ### Announcement

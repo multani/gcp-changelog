@@ -1,5 +1,12 @@
 # Cloud SQL for MySQL
 
+## 2025-08-07
+
+### Changed
+
+Cloud SQL for Enterprise Plus edition supports quality enhancements for [AI-assisted troubleshooting](https://cloud.google.com/sql/docs/mysql/observe-troubleshoot-with-ai). With AI-assisted troubleshooting, you can resolve complex database performance issues like [slow queries](https://cloud.google.com/sql/docs/mysql/troubleshoot-slow-queries) and [high load](https://cloud.google.com/sql/docs/mysql/troubleshoot-high-database-load) for your instances in a guided manner. To use AI-assisted troubleshooting, you need [Gemini Cloud Assist](https://cloud.google.com/gemini/docs/cloud-assist/overview) and [query insights](https://cloud.google.com/sql/docs/mysql/using-query-insights#enable-insights) for Enterprise Plus edition.
+
+---
 ## 2025-08-04
 
 ### Feature

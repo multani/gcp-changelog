@@ -1,5 +1,90 @@
 # Google Kubernetes Engine
 
+## 2025-08-08
+
+### Feature
+
+You can now [customize a node system configuration](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#kubelet-options) with the following new Kubelet, Sysctl, and Linux config options:
+
+* kubeletConfig flags:
+
+  + topologyManager (on GKE versions 1.32.3-gke.1785000 and later)
+  + memoryManager (on GKE versions 1.32.3-gke.1785000 and later)
+  + maxParallelImagePulls (on GKE versions 1.33.1-gke.1918000 and later)
+  + singleProcessOomKill (on GKE versions 1.32.4-gke.1132000, 1.33.0-gke.1748000 and later)
+  + evictionSoft
+  + evictionSoftGracePeriod
+  + evictionMinimumReclaim
+  + evictionMaxPodGracePeriodSeconds
+* sysctl flags:
+
+  + vm.overcommit\_memory
+  + vm.overcommit\_ratio
+  + vm.vfs\_cache\_pressure
+  + vm.dirty\_ratio
+  + vm.dirty\_background\_ratio
+  + vm.dirty\_expire\_centisecs
+  + vm.dirty\_writeback\_centisecs
+  + vm.watermark\_scale\_factor
+  + vm.min\_free\_kbytes
+  + vm.swappiness
+  + fs.nr\_open
+  + fs.file-max
+  + fs.inotify.max\_user\_watches
+  + fs.inotify.max\_user\_instances
+  + fs.aio-max-nr
+  + net.ipv4.tcp\_max\_orphans
+* linuxConfig flags:
+
+  + transparentHugepageEnabled (on GKE versions 1.33.2-gke.4655000 and later)
+  + transparentHugepageDefrag (on GKE versions 1.33.2-gke.4655000 and later)
+
+    ### Feature
+
+    The C4 machine series now has General Availability machine types that support Local SSD storage options. These machine types are available in all GKE versions for Standard mode, and in GKE version 1.33.1-gke.1545000 and later for Autopilot mode. For more information about these machine types, see the "C4 standard with Local SSD" and "C4 highmem with Local SSD" tabs in [C4 machine types](https://cloud.google.com/compute/docs/general-purpose-machines#c4_machine_types).
+
+    ### Feature
+
+    You can now [customize a node system configuration](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#kubelet-options) with the following new Kubelet, Sysctl, and Linux config options:
+
+    - kubeletConfig flags:
+
+      * topologyManager (on GKE versions 1.32.3-gke.1785000 and later)
+      * memoryManager (on GKE versions 1.32.3-gke.1785000 and later)
+      * maxParallelImagePulls (on GKE versions 1.33.1-gke.1918000 and later)
+      * singleProcessOomKill (on GKE versions 1.32.4-gke.1132000, 1.33.0-gke.1748000 and later)
+      * evictionSoft
+      * evictionSoftGracePeriod
+      * evictionMinimumReclaim
+      * evictionMaxPodGracePeriodSeconds
+    - sysctl flags:
+
+      * vm.overcommit\_memory
+      * vm.overcommit\_ratio
+      * vm.vfs\_cache\_pressure
+      * vm.dirty\_ratio
+      * vm.dirty\_background\_ratio
+      * vm.dirty\_expire\_centisecs
+      * vm.dirty\_writeback\_centisecs
+      * vm.watermark\_scale\_factor
+      * vm.min\_free\_kbytes
+      * vm.swappiness
+      * fs.nr\_open
+      * fs.file-max
+      * fs.inotify.max\_user\_watches
+      * fs.inotify.max\_user\_instances
+      * fs.aio-max-nr
+      * net.ipv4.tcp\_max\_orphans
+    - linuxConfig flags:
+
+      * transparentHugepageEnabled (on GKE versions 1.33.2-gke.4655000 and later)
+      * transparentHugepageDefrag (on GKE versions 1.33.2-gke.4655000 and later)
+
+        ### Feature
+
+        The C4 machine series now has General Availability machine types that support Local SSD storage options. These machine types are available in all GKE versions for Standard mode, and in GKE version 1.33.1-gke.1545000 and later for Autopilot mode. For more information about these machine types, see the "C4 standard with Local SSD" and "C4 highmem with Local SSD" tabs in [C4 machine types](https://cloud.google.com/compute/docs/general-purpose-machines#c4_machine_types).
+
+---
 ## 2025-08-06
 
 ### Changed
@@ -289,6 +374,13 @@ multiple days to complete across all Google Cloud zones.
                       - Control planes and nodes with auto-upgrade enabled will be upgraded from version 1.30 to version [1.30.12-gke.1372000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13012) with this release.
                       - Control planes and nodes with auto-upgrade enabled will be upgraded from version 1.31 to version [1.31.10-gke.1067000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13110) with this release.
                       - Control planes and nodes with auto-upgrade enabled will be upgraded from version 1.32 to version [1.32.6-gke.1013000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1326) with this release.
+
+                    Vertex AI
+                    ---------
+
+                    ### Feature
+
+                    [OpenAI's gpt-oss](https://console.cloud.google.com/vertex-ai/publishers/openai/model-garden/gpt-oss) models are available through Model Garden.
 
 ---
 ## 2025-08-05
@@ -841,83 +933,83 @@ In GKE version 1.33.1-gke.1788000 and later, you can target specific reservation
 sub-blocks in a reservation block by using the
 [`reservationSubBlock` field in compute classes](https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#reservationSubBlock).
 
-### Announcement
+### Fixed
 
-#### Control plane datastore maintenance
+**Important:** This note is incorrect. For the correct note, see the entry for
+[August 5, 2025](#csi-fix-20250805).
 
-Starting in May, 2025, Google is performing maintenance on the internal control
-plane datastore for all GKE clusters to improve scalability and
-reliability. We expect to complete these improvements across GKE
-by October, 2025.
+A fix is available for an issue in which the Compute Engine Persistent Disk CSI
+driver failed with an `invalid cpuString` error on GKE nodes that used custom
+machine types. This issue prevented successful attachment and mounting of
+Persistent Disk volumes on affected nodes. The fix is available in the following
+GKE versions:
 
-This maintenance is happening gradually across all GKE clusters,
-and will occur in your clusters only during configured maintenance windows. The
-maintenance process is expected to take approximately 15 minutes to complete
-during your cluster's maintenance window.
+* 1.31.10-gke.1021000 and later
+* 1.32.4-gke.1698000 and later
+* 1.33.1-gke.1386000 and later
 
-**Expected impact**
+  ### Announcement
 
-During the internal control plane datastore maintenance, the
-**Kubernetes API server will be unavailable for 15 minutes**, regardless of
-whether you use a regional cluster or a zonal cluster. During this 15-minute
-period, you won't be able to interact with the Kubernetes API server for your
-cluster.
+  #### Control plane datastore maintenance
 
-Consider the following potential disruptions to your normal workflows during the
-maintenance window for your cluster:
+  Starting in May, 2025, Google is performing maintenance on the internal control
+  plane datastore for all GKE clusters to improve scalability and
+  reliability. We expect to complete these improvements across GKE
+  by October, 2025.
 
-* **Kubernetes API unavailability**: you can't use the `kubectl` tool or any
-  other Kubernetes API client to issue commands to the control plane,
-  regardless of whether the cluster is regional or zonal. Attempts to deploy,
-  modify, or query resources by using the Kubernetes API will fail during this
-  period.
-* **Halted deployments:** automated deployment pipelines (CI/CD) that interact
-  with the Kubernetes API will fail to complete tasks such as deploying or
-  updating applications in the cluster.
-* **Google Cloud console limitations**: operations for the cluster in the
-  Google Cloud console that communicate with the Kubernetes API might fail
-  during the maintenance period.
-* **Delayed control plane automation**: features that are managed by the
-  control plane, such as the cluster autoscaler, Horizontal or Vertical
-  Pod Autoscaling adjustments, or some node auto-repair operations might be
-  paused until the API server is online.
+  This maintenance is happening gradually across all GKE clusters,
+  and will occur in your clusters only during configured maintenance windows. The
+  maintenance process is expected to take approximately 15 minutes to complete
+  during your cluster's maintenance window.
 
-The following resources have no expected impact during the maintenance period:
+  **Expected impact**
 
-* **Running applications**: any running applications and services on your
-  nodes should continue to function without interruptions.
-* **Node pool operations**: existing nodes should remain connected and
-  operational.
-* **Network traffic**: traffic in the data plane, such as traffic to and from
-  your running workloads, shouldn't be affected.
+  During the internal control plane datastore maintenance, the
+  **Kubernetes API server will be unavailable for 15 minutes**, regardless of
+  whether you use a regional cluster or a zonal cluster. During this 15-minute
+  period, you won't be able to interact with the Kubernetes API server for your
+  cluster.
 
-**What you need to do**
+  Consider the following potential disruptions to your normal workflows during the
+  maintenance window for your cluster:
 
-No action is required from you for the maintenance to occur. To plan for this
-maintenance, we recommend that you do the following:
+  + **Kubernetes API unavailability**: you can't use the `kubectl` tool or any
+    other Kubernetes API client to issue commands to the control plane,
+    regardless of whether the cluster is regional or zonal. Attempts to deploy,
+    modify, or query resources by using the Kubernetes API will fail during this
+    period.
+  + **Halted deployments:** automated deployment pipelines (CI/CD) that interact
+    with the Kubernetes API will fail to complete tasks such as deploying or
+    updating applications in the cluster.
+  + **Google Cloud console limitations**: operations for the cluster in the
+    Google Cloud console that communicate with the Kubernetes API might fail
+    during the maintenance period.
+  + **Delayed control plane automation**: features that are managed by the
+    control plane, such as the cluster autoscaler, Horizontal or Vertical
+    Pod Autoscaling adjustments, or some node auto-repair operations might be
+    paused until the API server is online.
 
-* **Review maintenance windows**: review your cluster's
-  [maintenance window and exclusions settings](https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions)
-  and schedule maintenance windows during periods that minimize disruptions to
-  your normal workflows.
-* **Plan for Kubernetes API unavailability**: if you run critical operations
-  in your cluster that require access to the Kubernetes API, avoid scheduling
-  these operations during maintenance windows.
+  The following resources have no expected impact during the maintenance period:
 
-  ### Fixed
+  + **Running applications**: any running applications and services on your
+    nodes should continue to function without interruptions.
+  + **Node pool operations**: existing nodes should remain connected and
+    operational.
+  + **Network traffic**: traffic in the data plane, such as traffic to and from
+    your running workloads, shouldn't be affected.
 
-  **Important:** This note is incorrect. For the correct note, see the entry for
-  [August 5, 2025](#csi-fix-20250805).
+  **What you need to do**
 
-  A fix is available for an issue in which the Compute Engine Persistent Disk CSI
-  driver failed with an `invalid cpuString` error on GKE nodes that used custom
-  machine types. This issue prevented successful attachment and mounting of
-  Persistent Disk volumes on affected nodes. The fix is available in the following
-  GKE versions:
+  No action is required from you for the maintenance to occur. To plan for this
+  maintenance, we recommend that you do the following:
 
-  + 1.31.10-gke.1021000 and later
-  + 1.32.4-gke.1698000 and later
-  + 1.33.1-gke.1386000 and later
+  + **Review maintenance windows**: review your cluster's
+    [maintenance window and exclusions settings](https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions)
+    and schedule maintenance windows during periods that minimize disruptions to
+    your normal workflows.
+  + **Plan for Kubernetes API unavailability**: if you run critical operations
+    in your cluster that require access to the Kubernetes API, avoid scheduling
+    these operations during maintenance windows.
 
     SAP on Google Cloud
     -------------------
@@ -1495,6 +1587,15 @@ For information about the latest known issues, see [Google Distributed Cloud for
 
 ---
 ## 2025-07-21
+
+### Feature
+
+In GKE version 1.33.2-gke.1111000 and later, you can use compute classes to set
+[Kubernetes labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
+on all nodes that are created for that compute class. These labels are applied
+to the corresponding `Node` objects in the Kubernetes API. For more information
+about setting node labels in compute classes, see the
+[ComputeClass custom resource definition](https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#nodepoolconfig).
 
 ### Feature
 

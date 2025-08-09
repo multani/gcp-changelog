@@ -1,5 +1,12 @@
 # Vertex AI
 
+## 2025-08-06
+
+### Feature
+
+[OpenAI's gpt-oss](https://console.cloud.google.com/vertex-ai/publishers/openai/model-garden/gpt-oss) models are available through Model Garden.
+
+---
 ## 2025-07-16
 
 ### Feature

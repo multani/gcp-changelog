@@ -26,9 +26,18 @@
     <updated>2025-08-04T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>| Bug ID | Description |
 | --- | --- |
-| <strong>435620966</strong> | <strong>Fixed a regression that occurred when upgrading from ASM 1.22 to 1.23 that resulted in 503 errors.</strong> |</p>]]></content>
-    <summary>Fixed a regression that occurred when upgrading from ASM 1.22 to 1.23 that resulted in 503 errors.</summary>
-    <title>Fixed: Fixed a regression</title>
+| <strong>435620966</strong> | <strong>Fixed a regression that occurred when upgrading from ASM 1.22 to 1.23 that resulted in 503 errors.</strong> |
+| <strong>422195061</strong> | <strong>Enhanced cache lookup performance.</strong> |
+| <strong>269573358</strong> | <strong>Resolved issue with OASValidation policy schema references for parameters without body validation</strong> The OASValidation policy correctly resolves and validates schemas passed by reference (<code>$ref</code>) for header, path, and query parameters, even when the <ValidateMessageBody> flag is set to <code>false</code>. |
+| <strong>421141062</strong> | <strong>Increased OAS validation limit to 20MB in JSON payloads to prevent validation failures.</strong> |
+| <strong>417200603</strong> | <strong>Improved API connection stability to prevent premature timeouts for long-running requests.</strong> |
+| <strong>423597917</strong> | <strong><code>POST</code> operations for AppGroupApp keys updated</strong> <code>POST</code> operations for AppGroup app keys now insert scopes and attributes instead of appending these values. This behavior is consistent with <code>POST</code> operations for companies in Apigee Edge for Public Cloud. |
+| <strong>390234048</strong> | <strong>Resolved issue resulting in missing fields in API responses for Monetization rate plans</strong> The <code>createdAt</code> and <code>lastModifiedAt</code> fields are now present in responses from the <code>organizations.apiproducts.rateplans</code> API. |
+| <strong>422757662</strong> | <strong>Reverted problematic commit regarding X-b3 trace headers send when using distributed tracing.</strong> |
+| <strong>409048431</strong> | <strong>Fixed a SAML signature verification bypass vulnerability.</strong> |
+| <strong>N/A</strong> | <strong>Updates to security infrastructure and libraries.</strong> |</p>]]></content>
+    <summary>The release notes include several bug fixes and improvements, such as resolving 503 errors during upgrades, enhancing cache performance, and fixing issues with OASValidation policy schema references. Additionally, the OAS validation limit has been increased, API connection stability improved, and POST operations for AppGroup app keys updated for consistency. Monetization rate plan responses now include missing fields, and a SAML signature verification bypass vulnerability has been fixed. Updates to security infrastructure and libraries were also made.</summary>
+    <title>Fixed: Bug Fixes and Performance Improvements</title>
   </entry>
   <entry>
     <author>
@@ -57,9 +66,9 @@
     <published>2025-07-28T00:00:00+00:00</published>
     <updated>2025-07-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>On July 28, 2025, we released an updated version of Apigee (1-15-0-apigee-7).</p>
-<p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>]]></content>
-    <summary>Apigee updated to version 1-15-0-apigee-7.</summary>
-    <title>Announcement: Apigee Release</title>
+<p><strong>Note:</strong> This release has been rolled back to address am issue. See entry for <a href="https://cloud.google.com/apigee/docs/release-notes#August_04_2025">August 4, 2025</a> for the updated version number and payload.</p>]]></content>
+    <summary>Apigee updated. See release notes for details.</summary>
+    <title>Announcement: Apigee Release Update</title>
   </entry>
   <entry>
     <author>

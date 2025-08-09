@@ -13,6 +13,15 @@ On August 4, 2025, we released an updated version of Apigee (1-15-0-apigee-8).
 | Bug ID | Description |
 | --- | --- |
 | **435620966** | **Fixed a regression that occurred when upgrading from ASM 1.22 to 1.23 that resulted in 503 errors.** |
+| **422195061** | **Enhanced cache lookup performance.** |
+| **269573358** | **Resolved issue with OASValidation policy schema references for parameters without body validation** The OASValidation policy correctly resolves and validates schemas passed by reference (`$ref`) for header, path, and query parameters, even when the <ValidateMessageBody> flag is set to `false`. |
+| **421141062** | **Increased OAS validation limit to 20MB in JSON payloads to prevent validation failures.** |
+| **417200603** | **Improved API connection stability to prevent premature timeouts for long-running requests.** |
+| **423597917** | **`POST` operations for AppGroupApp keys updated** `POST` operations for AppGroup app keys now insert scopes and attributes instead of appending these values. This behavior is consistent with `POST` operations for companies in Apigee Edge for Public Cloud. |
+| **390234048** | **Resolved issue resulting in missing fields in API responses for Monetization rate plans** The `createdAt` and `lastModifiedAt` fields are now present in responses from the `organizations.apiproducts.rateplans` API. |
+| **422757662** | **Reverted problematic commit regarding X-b3 trace headers send when using distributed tracing.** |
+| **409048431** | **Fixed a SAML signature verification bypass vulnerability.** |
+| **N/A** | **Updates to security infrastructure and libraries.** |
 
 ---
 ## 2025-07-30
@@ -38,7 +47,7 @@ If you require more time to transition to the Google Cloud console, submit the [
 
 On July 28, 2025, we released an updated version of Apigee (1-15-0-apigee-7).
 
-**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+**Note:** This release has been rolled back to address am issue. See entry for [August 4, 2025](https://cloud.google.com/apigee/docs/release-notes#August_04_2025) for the updated version number and payload.
 
 ### Feature
 

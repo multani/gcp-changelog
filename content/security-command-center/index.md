@@ -1,5 +1,22 @@
 # Security Command Center
 
+## 2025-08-07
+
+### Feature
+
+Risk reports generated and downloaded from Security Command Center include a system attack exposure page that shows the organization's exposure risk over time and lists the projects and resources that have the highest risk.
+
+### Feature
+
+The following [Container Threat Detection](https://cloud.google.com/security-command-center/docs/concepts-container-threat-detection-overview) detectors have been released to [General Availability](https://cloud.google.com/products#product-launch-stages):
+
+* `Execution: Possible Arbitrary Command Execution through CUPS (CVE-2024-47177)`
+* `Execution: Socat Reverse Shell Detected`
+* `Privilege Escalation: Abuse of Sudo For Privilege Escalation (CVE-2019-14287)`
+* `Privilege Escalation: Polkit Local Privilege Escalation Vulnerability (CVE-2021-4034)`
+* `Privilege Escalation: Sudo Potential Privilege Escalation (CVE-2021-3156)`
+
+---
 ## 2025-08-04
 
 ### Changed

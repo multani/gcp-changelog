@@ -2,14 +2,258 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Composer</title>
   <subtitle>Changelog for Google Cloud product: Cloud Composer</subtitle>
-  <updated>2025-07-28T00:00:00+00:00</updated>
+  <updated>2025-08-05T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-composer</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-composer/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-07-28:fixed:0</id>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-08-05:announcement:0</id>
+    <published>2025-08-05T00:00:00+00:00</published>
+    <updated>2025-08-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A new Cloud Composer release has started on <strong>August 05, 2025</strong>. Get ready for
+upcoming changes and features as we roll out the new release to all regions.
+This release is in progress at the moment. Listed changes and features might
+not be available in some regions yet.</p>]]></content>
+    <summary>Cloud Composer release started August 05, 2025.</summary>
+    <title>Announcement: Cloud Composer Release</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-08-05:changed:1</id>
+    <published>2025-08-05T00:00:00+00:00</published>
+    <updated>2025-08-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><em>(Cloud Composer 2)</em> Moved the <code>update_fab_perms</code> option from <code>[webserver]</code> to
+<code>[fab]</code> in the Airflow configuration. The corresponding deprecation warning is
+no longer generated in Airflow web server logs.</p>]]></content>
+    <summary>The `update_fab_perms` option was moved to `[fab]` configuration.</summary>
+    <title>Changed: Cloud Composer 2: FAB Permissions Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-08-05:feature:2</id>
+    <published>2025-08-05T00:00:00+00:00</published>
+    <updated>2025-08-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Added task-level resource consumption
+<a href="https://cloud.google.com/composer/docs/composer-3/monitor-environments">Airflow metrics</a>
+to Cloud Composer.</p>
+<ul>
+<li><code>composer.googleapis.com/workflow/task/cpu_usage</code>: percentage of CPU used by
+  a task.</li>
+<li><code>composer.googleapis.com/workflow/task/cpu_usage</code>: percentage of memory used
+  by a task.</li>
+</ul>
+<p>### Changed</p>
+<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
+  are available in Cloud Composer 3:</p>
+<ul>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-11">composer-3-airflow-2.10.5-build.11</a> (default)</li>
+<li>
+<p><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-31">composer-3-airflow-2.9.3-build.</a></p>
+<h3>Changed</h3>
+<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
+are available in Cloud Composer 2:</p>
+<ul>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-9-airflow-2-10-5">composer-2.13.9-airflow-2.10.5</a> (default)</li>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-9-airflow-2-9-3">composer-2.13.9-airflow-2.9.3</a></li>
+</ul>
+<p>### Deprecated</p>
+<p>Cloud Composer versions 2.8.7 and 2.8.8 have reached their
+  <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>.</p>
+<p>Cloud Load Balancing</p>
+<hr />
+<p>### Feature</p>
+<p>Cross-region internal Application Load Balancers can now route requests for static content to Cloud Storage buckets.</p>
+<p>For more information, see <a href="https://cloud.google.com/load-balancing/docs/l7-internal/setup-cross-region-internal-https-buckets">Set up a cross-region internal Application Load Balancer with Cloud Storage buckets</a>.</p>
+<p>This capability is now in <strong>General Availability</strong>.</p>
+<p>Cloud Monitoring</p>
+<hr />
+<p>### Feature</p>
+<p>You can now use the <a href="https://cloud.google.com/monitoring/api/metrics_gcp_i_o#monitoring/billing/time_series_billed_for_queries_count"><code>time_series_billed_for_queries_count</code></a>
+  metric to estimate charges based on the number of time series that have been
+  queried. For more information, see <a href="https://cloud.google.com/stackdriver/estimating-bills#mon-billable-api-reads">View the number of time series billed
+  for queries</a>.</p>
+<p>Billing by time series queried isn't enforced until October 2, 2025. For
+  more information, see <a href="https://cloud.google.com/stackdriver/pricing#monitoring-pricing-summary">Cloud Monitoring pricing summary</a>.</p>
+<p>Cloud Run</p>
+<hr />
+<p>### Feature</p>
+<p>Support for <a href="https://cloud.google.com/run/docs/configuring/services/manual-scaling">manually scaling your Cloud Run service</a> is now at General Availability (GA).</p>
+<p>Colab Enterprise</p>
+<hr />
+<p>### Feature</p>
+<p><a href="https://cloud.google.com/products#product-launch-stages">Generally available</a>: You can consume reservations with Colab Enterprise runtimes. Reservations of Compute Engine zonal resources help you gain a high level of assurance that your runtimes have the necessary resources to run. For more information, see <a href="https://cloud.google.com/colab/docs/reservations">Use reservations with Colab Enterprise</a>.</p>
+<p>Compute Engine</p>
+<hr />
+<p>### Feature</p>
+<p>For Hyperdisk Throughput, the maximum IOPS for a single volume has increased from 600 MiB/s to 2,400 MiB/s. The maximum IOPS for a single volume has increased from 2,400 IOPS to 9,600 IOPS. Hyperdisk Throughput volumes are designed for cost-sensitive workloads, analytics workloads, and workloads that have sequential I/O and large block sizes. For more information, see <a href="https://cloud.google.com/compute/docs/disks/hd-types/hyperdisk-throughput">About Hyperdisk Throughput</a>.</p>
+<p>### Feature</p>
+<p><strong>Generally Available</strong>: The storage-optimized Z3 machine series offers a bare metal (<code>z3-highmem-192-highlssd-metal</code>) machine type with 192 vCPUs, 1,536 GB of memory, and 72 TiB of Local SSD storage.</p>
+<p>Bare metal instances let you create an instance with direct access to the machine's CPU and memory, without a virtualization layer in the middle. Z3 uses <a href="https://cloud.google.com/titanium">Titanium</a> to deliver more compute and memory resources for your workloads by offloading network and I/O processing from the host hardware. To learn more, see <a href="https://cloud.google.com/compute/docs/storage-optimized-machines#z3_series">Z3 machine series</a>. For information about bare metal instances, including regional availability, see <a href="https://cloud.google.com/compute/docs/instances/bare-metal-instances">Bare metal instances on Compute Engine</a>.</p>
+<p>### Deprecated</p>
+<p>The Compute Engine feature that deploys containers on VMs during VM creation is deprecated. For more information about the alternative solutions for running containers on VMs and MIGs, see <a href="https://cloud.google.com/compute/docs/deprecations/container-startup-agent-on-compute">Compute Engine container startup agent deprecation</a>.</p>
+<p>Database Center</p>
+<hr />
+<p>### Feature</p>
+<p>Database Center offers monitoring support for databases running on
+  Google Compute Engine virtual machines. This feature is in
+  <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.
+  To request access to this feature, visit the
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_6uR6JTpgdtJ-oqQbW8gprcypGQoFcR-CUgydYeBZNtvcaw/viewform">access request page</a>.
+  For more information, see
+  <a href="https://cloud.google.com/database-center/docs/monitor-gce-databases">Monitor databases on Compute Engine virtual machines</a>.</p>
+<p>### Feature</p>
+<p>Database Center supports the analyze system performance feature
+  in the <em>High Resource Utilization</em> recommendation for
+  AlloyDB for PostgreSQL. For more information, see
+  <a href="https://cloud.google.com/database-center/docs/learn-database-products-using-gemini#performance_insights_and_recommendations">Performance insights and recommendations</a>.</p>
+<p>### Changed</p>
+<p>You can monitor the number of new Google Cloud database resources that were
+  added to your fleet over the past 1, 7, or 30 days. For more information, see
+  <a href="https://cloud.google.com/database-center/docs/monitor-gce-databases#view-recently-added-database-resources">View recently added database resources</a>.</p>
+<p>### Changed</p>
+<p>You can enable Gemini chat at the folder level to help you learn about
+  Google Cloud database products. To learn how to enable Gemini
+  chat at the folder level, see
+  <a href="https://cloud.google.com/database-center/docs/learn-database-products-using-gemini#before-you-begin">Before you begin using Gemini chat</a>.</p>
+<p>Google Kubernetes Engine</p>
+<hr />
+<p>### Feature</p>
+<p>The <a href="https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series">M4 machine series</a> is generally available in GKE Standard clusters.</p>
+<p>### Feature</p>
+<p>The <a href="https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series">M4 machine series</a> is generally available in GKE Standard clusters.</p>
+<p>### Fixed</p>
+<p>A fix is available for an issue in which the Compute Engine Persistent Disk CSI
+  driver failed with an <code>invalid cpuString</code> error on GKE nodes that used custom
+  machine types. This issue prevented successful attachment and mounting of
+  Persistent Disk volumes on affected nodes. The fix is available in the following
+  GKE versions:</p>
+<ul>
+<li>1.31.10-gke.1034000 and later</li>
+<li>1.32.4-gke.1698000 and later</li>
+<li>
+<p>1.33.1-gke.1386000 and later</p>
+<h2>Google SecOps</h2>
+<h3>Feature</h3>
+<p><strong>New YARA-L features</strong></p>
+<p>The following capabilities have been added to YARA-L 2.0 to enhance search precision, data analysis, and investigative workflows:</p>
+<ul>
+<li><a href="https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-conditions"><strong>Conditions in UDM search and dashboards</strong></a></li>
+</ul>
+<p>You can now filter aggregates defined in the <code>outcome</code> section using the new <code>condition</code> clause. This gives you more precise control over your results and supports more targeted investigations.</p>
+<ul>
+<li>New functionality includes support for <code>OR</code> and <code>n</code> of <code>[a, b, c.. z]</code> expressions.</li>
+<li>General availability for search and dashboards.</li>
+<li><a href="https://cloud.google.com/chronicle/docs/investigation/deduplication-yaral"><strong>Deduplicate events in searches and dashboards</strong></a></li>
+</ul>
+<p>The new <code>dedup</code> section lets you remove duplicate events after the <code>match</code> clause in both standard UDM searches and YARA-L 2.0 queries.</p>
+<p>General availability for search and dashboards.
++ <a href="https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-metrics-search"><strong>Use metrics functions in UDM searches</strong></a></p>
+<p>You can now apply <code>metrics</code> functions in the <code>outcome</code> section of your search to access aggregated historical data directly in your search queries.</p>
+<ul>
+<li>Uses the same syntax as <code>metrics</code> in rules.</li>
+<li>General availability for search.</li>
+<li><a href="https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-syntax#aggregations"><strong>Increased limits for array and array_distinct</strong></a></li>
+</ul>
+<p>The element limit for <code>array</code> and <code>array_distinct</code> aggregation functions in YARA-L has increased from 25 to 1,000.</p>
+<ul>
+<li>General availability for search and dashboards.</li>
+<li>Private preview for rules.</li>
+<li><strong>Restrict search results using limit</strong></li>
+</ul>
+<p>The <code>limit</code> keyword now lets you restrict the number of results returned by a search. Use this to quickly preview data, optimize performance, or focus on a subset of results.</p>
+<p>General availability for search and dashboards.
++ <a href="https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#earliest"><strong><code>earliest</code></strong></a> and <a href="https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#latest"><strong><code>latest</code></strong></a> <strong>timestamps</strong></p>
+<p>New <code>earliest</code> and <code>latest</code> timestamps let you extract the time range of your data (within microseconds) during aggregation.</p>
+<p>General availability for search.
++ <strong>Layer aggregations and analytics across multi-stage queries</strong></p>
+<p>Recent updates to multi-stage queries let you:</p>
+<ul>
+<li>Layer aggregations and data statistical functions. Calculate baselines, deviations, and trends across multiple stages of data processing.</li>
+<li>Conduct joins both within and across stages.</li>
+</ul>
+<p>Private preview for search and dashboards. Contact your Google SecOps representative to enroll.
++ <strong>Join events, the entity graph, and data tables</strong></p>
+<p>You can now perform Inner joins between events, the entity graph, and data tables. These queries require a <code>match</code> clause for these joins and return results as statistics.</p>
+<p>Private preview for search and dashboards. Contact your Google SecOps representative to enroll.</p>
+<h2>Google SecOps SIEM</h2>
+<h3>Feature</h3>
+<p><strong>New YARA-L features</strong></p>
+<p>The following capabilities have been added to YARA-L 2.0 to enhance search precision, data analysis, and investigative workflows:</p>
+<ul>
+<li><a href="https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-conditions"><strong>Conditions in UDM search and dashboards</strong></a></li>
+</ul>
+<p>You can now filter aggregates defined in the <code>outcome</code> section using the new <code>condition</code> clause. This gives you more precise control over your results and supports more targeted investigations.</p>
+<ul>
+<li>New functionality includes support for <code>OR</code> and <code>n</code> of <code>[a, b, c.. z]</code> expressions.</li>
+<li>General availability for search and dashboards.</li>
+<li><a href="https://cloud.google.com/chronicle/docs/investigation/deduplication-yaral"><strong>Deduplicate events in searches and dashboards</strong></a></li>
+</ul>
+<p>The new <code>dedup</code> section lets you remove duplicate events after the <code>match</code> clause in both standard UDM searches and YARA-L 2.0 queries.</p>
+<p>General availability for search and dashboards.
++ <a href="https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-metrics-search"><strong>Use metrics functions in UDM searches</strong></a></p>
+<p>You can now apply <code>metrics</code> functions in the <code>outcome</code> section of your search to access aggregated historical data directly in your search queries.</p>
+<ul>
+<li>Uses the same syntax as <code>metrics</code> in rules.</li>
+<li>General availability for search.</li>
+<li><a href="https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-syntax#aggregations"><strong>Increased limits for array and array_distinct</strong></a></li>
+</ul>
+<p>The element limit for <code>array</code> and <code>array_distinct</code> aggregation functions in YARA-L has increased from 25 to 1,000.</p>
+<ul>
+<li>General availability for search and dashboards.</li>
+<li>Private preview for rules.</li>
+<li><strong>Restrict search results using limit</strong></li>
+</ul>
+<p>The <code>limit</code> keyword now lets you restrict the number of results returned by a search. Use this to quickly preview data, optimize performance, or focus on a subset of results.</p>
+<p>General availability for search and dashboards.
++ <a href="https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#earliest"><strong><code>earliest</code></strong></a> and <a href="https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#latest"><strong><code>latest</code></strong></a> <strong>timestamps</strong></p>
+<p>New <code>earliest</code> and <code>latest</code> timestamps let you extract the time range of your data (within microseconds) during aggregation.</p>
+<p>General availability for search.
++ <strong>Layer aggregations and analytics across multi-stage queries</strong></p>
+<p>Recent updates to multi-stage queries let you:</p>
+<ul>
+<li>Layer aggregations and data statistical functions. Calculate baselines, deviations, and trends across multiple stages of data processing.</li>
+<li>Conduct joins both within and across stages.</li>
+</ul>
+<p>Private preview for search and dashboards. Contact your Google SecOps representative to enroll.
++ <strong>Join events, the entity graph, and data tables</strong></p>
+<p>You can now perform Inner joins between events, the entity graph, and data tables. These queries require a <code>match</code> clause for these joins and return results as statistics.</p>
+<p>Private preview for search and dashboards. Contact your Google SecOps representative to enroll.</p>
+<h2>Spanner</h2>
+<h3>Feature</h3>
+<p>Columnar engine for Spanner is now in Preview. Columnar engine is a storage technique used with analytics queries to speed up scans. Spanner columnar engine accelerates analytical query performance on live operational data by up to 200 times without affecting transaction workloads. This eliminates the need for ETL into separate data warehouses while maintaining strong consistency. For more information, see the <a href="https://cloud.google.com/spanner/docs/columnar-engine">Columnar engine for Spanner overview</a>.</p>
+<h2>Vertex AI Workbench</h2>
+<h3>Feature</h3>
+<p><a href="https://cloud.google.com/products#product-launch-stages">Generally available</a>: You can consume reservations with Vertex AI Workbench instances. Reservations of Compute Engine zonal resources help you gain a high level of assurance that your jobs have the necessary resources to run. For more information, see <a href="https://cloud.google.com/vertex-ai/docs/workbench/instances/reservations">Use reservations with Vertex AI Workbench instances</a>.</p>
+</li>
+</ul>
+</li>
+</ul>]]></content>
+    <summary>New task-level resource consumption metrics for Airflow tasks have been added, alongside updated Airflow builds for Cloud Composer 3 and Cloud Composer 2.</summary>
+    <title>Feature: Task-level Metrics and Updated Airflow Builds in Cloud Composer</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-07-28:deprecated:0</id>
+    <published>2025-07-28T00:00:00+00:00</published>
+    <updated>2025-07-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud Composer version 2.8.6 has reached its
+<a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>.</p>]]></content>
+    <summary>Cloud Composer version 2.8.6 is deprecated.</summary>
+    <title>Deprecated: Cloud Composer 2.8.6 Deprecation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-07-28:fixed:1</id>
     <published>2025-07-28T00:00:00+00:00</published>
     <updated>2025-07-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed an issue that caused unexpected restarts of Airflow component workloads
@@ -21,7 +265,7 @@ in the environment's cluster.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-07-28:fixed:1</id>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-07-28:fixed:2</id>
     <published>2025-07-28T00:00:00+00:00</published>
     <updated>2025-07-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><em>(Cloud Composer 3)</em> The <code>DAGS_FOLDER</code> reserved environment variable now
@@ -33,7 +277,7 @@ correctly points to the local directory where DAG files are stored.</p>]]></cont
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-07-28:changed:2</id>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-07-28:changed:3</id>
     <published>2025-07-28T00:00:00+00:00</published>
     <updated>2025-07-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
@@ -49,7 +293,7 @@ are available in Cloud Composer 3:</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-07-28:changed:3</id>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-07-28:changed:4</id>
     <published>2025-07-28T00:00:00+00:00</published>
     <updated>2025-07-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
@@ -60,18 +304,6 @@ are available in Cloud Composer 2:</p>
 </ul>]]></content>
     <summary>New images are available for Cloud Composer 2.</summary>
     <title>Changed: New Images Available</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-07-28:deprecated:4</id>
-    <published>2025-07-28T00:00:00+00:00</published>
-    <updated>2025-07-28T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Cloud Composer version 2.8.6 has reached its
-<a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>.</p>]]></content>
-    <summary>Cloud Composer version 2.8.6 is deprecated.</summary>
-    <title>Deprecated: Cloud Composer 2.8.6 Deprecation</title>
   </entry>
   <entry>
     <author>

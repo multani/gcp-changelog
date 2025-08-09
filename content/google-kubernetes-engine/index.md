@@ -84,6 +84,19 @@ You can now [customize a node system configuration](https://cloud.google.com/kub
 
         The C4 machine series now has General Availability machine types that support Local SSD storage options. These machine types are available in all GKE versions for Standard mode, and in GKE version 1.33.1-gke.1545000 and later for Autopilot mode. For more information about these machine types, see the "C4 standard with Local SSD" and "C4 highmem with Local SSD" tabs in [C4 machine types](https://cloud.google.com/compute/docs/general-purpose-machines#c4_machine_types).
 
+        Virtual Private Cloud
+        ---------------------
+
+        ### Feature
+
+        VPC Flow Logs includes metadata annotations for Google services such as Google APIs and VPC-hosted services. The following annotations are available in **General Availability**:
+
+        + `service_name`
+        + `connectivity`
+        + `private_domain`
+
+        These annotations are supported for flows between VMs in VPC networks and Google services and for flows between on-premises endpoints and Google services (through Cloud Interconnect and Cloud VPN). For more information, see [GoogleServiceDetails field format](https://cloud.google.com/vpc/docs/about-flow-logs-records#google-service-details).
+
 ---
 ## 2025-08-06
 

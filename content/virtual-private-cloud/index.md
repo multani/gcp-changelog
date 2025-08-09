@@ -1,5 +1,18 @@
 # Virtual Private Cloud
 
+## 2025-08-08
+
+### Feature
+
+VPC Flow Logs includes metadata annotations for Google services such as Google APIs and VPC-hosted services. The following annotations are available in **General Availability**:
+
+* `service_name`
+* `connectivity`
+* `private_domain`
+
+These annotations are supported for flows between VMs in VPC networks and Google services and for flows between on-premises endpoints and Google services (through Cloud Interconnect and Cloud VPN). For more information, see [GoogleServiceDetails field format](https://cloud.google.com/vpc/docs/about-flow-logs-records#google-service-details).
+
+---
 ## 2025-08-04
 
 ### Feature

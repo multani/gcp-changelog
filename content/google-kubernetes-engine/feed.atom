@@ -105,12 +105,21 @@
 <p>transparentHugepageDefrag (on GKE versions 1.33.2-gke.4655000 and later)</p>
 <h3>Feature</h3>
 <p>The C4 machine series now has General Availability machine types that support Local SSD storage options. These machine types are available in all GKE versions for Standard mode, and in GKE version 1.33.1-gke.1545000 and later for Autopilot mode. For more information about these machine types, see the "C4 standard with Local SSD" and "C4 highmem with Local SSD" tabs in <a href="https://cloud.google.com/compute/docs/general-purpose-machines#c4_machine_types">C4 machine types</a>.</p>
+<h2>Virtual Private Cloud</h2>
+<h3>Feature</h3>
+<p>VPC Flow Logs includes metadata annotations for Google services such as Google APIs and VPC-hosted services. The following annotations are available in <strong>General Availability</strong>:</p>
+<ul>
+<li><code>service_name</code></li>
+<li><code>connectivity</code></li>
+<li><code>private_domain</code></li>
+</ul>
+<p>These annotations are supported for flows between VMs in VPC networks and Google services and for flows between on-premises endpoints and Google services (through Cloud Interconnect and Cloud VPN). For more information, see <a href="https://cloud.google.com/vpc/docs/about-flow-logs-records#google-service-details">GoogleServiceDetails field format</a>.</p>
 </li>
 </ul>
 </li>
 </ul>]]></content>
-    <summary>New options for node system configuration, including Kubelet, Sysctl, and Linux settings.</summary>
-    <title>Feature: Enhanced Node Configuration</title>
+    <summary>New node system configuration options for Kubelet, Sysctl, and Linux are now available, enhancing customization capabilities.</summary>
+    <title>Feature: Enhanced Node System Configuration</title>
   </entry>
   <entry>
     <author>

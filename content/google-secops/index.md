@@ -18,7 +18,7 @@ For details, see [Use the Expression Builder](https://cloud.google.com/chronicle
 
 Agent notifications will alert you to new remote agent version releases and agent downtime based on your permissions and associated environments. Agent notifications are now enabled by default. You can opt out of these notifications at any time from your user preferences.
 
-For details, see [Agent notifications](https://cloud.google.com/chronicle/docs/soar/respond/working-with-remote-agents/what-is-a-remote-agent#agent-notifications).
+For details, see [Agent notifications](https://cloud.google.com/chronicle/docs/soar/working-with-remote-agents/what-is-a-remote-agent#agent-notifications).
 
 ---
 ## 2025-08-08

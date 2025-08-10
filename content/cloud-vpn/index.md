@@ -1,5 +1,18 @@
 # Cloud VPN
 
+## 2025-08-01
+
+### Deprecated
+
+Classic VPN full deprecation update
+
+As of August 1, 2025, dynamic routing or Border Gateway Protocol (BGP) for Classic VPN tunnels is deprecated. If your workloads require BGP for VPN connectivity, you must use HA VPN.
+
+Existing Classic VPN tunnels that use BGP will continue to function. However, they will no longer be supported and will operate without an availability SLA.
+
+For more information, refer to [Classic VPN dynamic routing deprecation](https://cloud.google.com/network-connectivity/docs/vpn/deprecations/classic-vpn-deprecation).
+
+---
 ## 2025-06-12
 
 ### Feature

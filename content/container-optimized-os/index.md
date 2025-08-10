@@ -1,5 +1,73 @@
 # Container Optimized OS
 
+## 2025-08-06
+
+### Changed
+
+
+
+### cos-117-18613-339-26
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.97](https://cos.googlesource.com/third_party/kernel/+/63cd753c2414d04f689ed02a0630d569b6acf634 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18613.339.26/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Fixed an issue where the cpuidle driver selected for some
+machine types would cause inflated reports of high CPU usage.
+
+### Fixed
+
+Updated dev-python/requests to v2.32.4.
+
+### Fixed
+
+Upgraded virtual/logger to v0-r2.
+
+### Security
+
+Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.
+
+### Security
+
+Added support for Nvidia driver version 570.172.08. This fixes CVE-2025-23279.
+
+### Security
+
+Upgraded net-misc/netplan to 1.1.2. This fixes
+CVE-2022-4968.
+
+### Security
+
+Fixed CVE-2024-11584 in cloud-init.
+
+### Security
+
+Fixed CVE-2024-6174 in cloud-init.
+
+### Security
+
+Patched openssl to fix CVE-2023-50782 affecting
+dev-python/cryptography.
+
+### Security
+
+Upgraded dev-libs/glib to 2.82.5. This resolves
+CVE-2024-52533.
+
+### Security
+
+Upgraded dev-vcs/git to version 2.49.1. This fixes CVE-2025-48385, CVE-2025-27613, CVE-2025-27614, CVE-2025-48384, CVE-2025-46835.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811775 -> 811788
+
+---
 ## 2025-07-30
 
 ### cos-dev-125-19175-0-0

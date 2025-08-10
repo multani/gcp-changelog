@@ -1,6 +1,120 @@
 {
   "name": "Container Optimized OS",
   "entries": {
+    "2025-08-06": [
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "Short Title",
+          "summary": "This is a short summary for a title."
+        }
+      },
+      {
+        "kind": "cos-117-18613-339-26",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.97](https://cos.googlesource.com/third_party/kernel/+/63cd753c2414d04f689ed02a0630d569b6acf634 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18613.339.26/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS-6.6.97 release",
+          "summary": "COS-6.6.97 with Docker v24.0.9 and Container-d v1.7.27"
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed an issue where the cpuidle driver selected for some\nmachine types would cause inflated reports of high CPU usage.",
+        "summary": {
+          "title": "Fixed CPU usage inflation",
+          "summary": "CPU usage reports inflated."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated dev-python/requests to v2.32.4.",
+        "summary": {
+          "title": "Fixed: Updated requests library",
+          "summary": "Updated dev-python/requests to v2.32.4."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded virtual/logger to v0-r2.",
+        "summary": {
+          "title": "Logger upgrade",
+          "summary": "Upgraded virtual/logger to v0-r2."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Nvidia driver update fixes security vulnerabilities."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Added support for Nvidia driver version 570.172.08. This fixes CVE-2025-23279.",
+        "summary": {
+          "title": "Security",
+          "summary": "Nvidia driver security update."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded net-misc/netplan to 1.1.2. This fixes\nCVE-2022-4968.",
+        "summary": {
+          "title": "Security update for netplan",
+          "summary": "Upgraded net-misc/netplan to 1.1.2, fixing CVE-2022-4968."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-11584 in cloud-init.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixed CVE-2024-11584 in cloud-init."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-6174 in cloud-init.",
+        "summary": {
+          "title": "Security update",
+          "summary": "Fixed CVE-2024-6174 in cloud-init."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Patched openssl to fix CVE-2023-50782 affecting\ndev-python/cryptography.",
+        "summary": {
+          "title": "Security announcement",
+          "summary": "Patched openssl to fix CVE-2023-50782 affecting dev-python/cryptography."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded dev-libs/glib to 2.82.5. This resolves\nCVE-2024-52533.",
+        "summary": {
+          "title": "Security Update for GLib",
+          "summary": "glib was updated to 2.82.5 to fix CVE-2024-52533."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded dev-vcs/git to version 2.49.1. This fixes CVE-2025-48385, CVE-2025-27613, CVE-2025-27614, CVE-2025-48384, CVE-2025-46835.",
+        "summary": {
+          "title": "Security Update for Git",
+          "summary": "Git version 2.49.1 addresses multiple security vulnerabilities."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811775 -> 811788",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "Runtime sysctl changes: fs.file-max: 811775 -> 811788"
+        }
+      }
+    ],
     "2025-07-30": [
       {
         "kind": "cos-dev-125-19175-0-0",

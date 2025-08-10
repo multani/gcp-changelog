@@ -1,5 +1,22 @@
 # SAP on Google Cloud
 
+## 2025-08-04
+
+### Announcement
+
+**New SAP certifications: Additional C4 machine tpes**
+
+SAP has certified the following Compute Engine C4 machine types with the Intel Granite Rapids CPU platform:
+
+* For use with SAP HANA scale-up (OLTP and OLAP): `c4-highmem-144`, `c4-highmem-288`, and `c4-highmem-288-metal`
+* For use with SAP NetWeaver: `c4-standard-144`, `c4-standard-288`, `c4-standard-288-metal`, `c4-highmem-144`, `c4-highmem-288`, and `c4-highmem-288-metal`
+
+For more information, see the following:
+
+* [C4 general-purpose VM types for SAP HANA](https://cloud.google.com/sap/docs/sap-hana-planning-guide#hana-cert-c4)
+* [Certified machine types for SAP applications](https://cloud.google.com/sap/docs/certifications-sap-apps#sap-certified-vms)
+
+---
 ## 2025-07-30
 
 ### Announcement

@@ -1,5 +1,19 @@
 # Cloud Billing
 
+## 2025-08-08
+
+### Feature
+
+**Personalized saved reports are available in cost Reports.**
+
+For customers who have enabled [Gemini Cloud Assist in Cloud Billing](https://cloud.google.com/billing/docs/how-to/gemini/overview), your custom saved reports that you open frequently now appear in the reports carousel, for quick access. Previously, the reports carousel only provided access to Google-created preset reports.
+
+For more information, see the following topics in the **Reports** dcoumentation:
+
+* [Save and share report views](https://cloud.google.com/billing/docs/how-to/reports#saving-views)
+* [Use preset reports for quick configuration](https://cloud.google.com/billing/docs/how-to/reports#preset_views)
+
+---
 ## 2025-07-16
 
 ### Feature

@@ -1,5 +1,26 @@
 # Google SecOps
 
+## 2025-08-10
+
+### Feature
+
+**Expression Builder enhancements**
+
+The **Expression Builder** has been enhanced with a new set of pre-built filters to help streamline query creation.
+
+We've improved the information within the platform for all filters, both new and existing. The supporting documentation provides clearer descriptions and practical examples for each transformer, making it easier to understand their purpose and syntax.
+
+For details, see [Use the Expression Builder](https://cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/using-the-expression-builder).
+
+### Feature
+
+**Remote agent notifications**
+
+Agent notifications will alert you to new remote agent version releases and agent downtime based on your permissions and associated environments. Agent notifications are now enabled by default. You can opt out of these notifications at any time from your user preferences.
+
+For details, see [Agent notifications](https://cloud.google.com/chronicle/docs/soar/respond/working-with-remote-agents/what-is-a-remote-agent#agent-notifications).
+
+---
 ## 2025-08-08
 
 ### Changed

@@ -1632,6 +1632,16 @@
 
 
 <h1 id="cloud-sql-for-postgresql">Cloud SQL for PostgreSQL</h1>
+<h2 id="2025-08-07">2025-08-07</h2>
+<h3 id="changed">Changed</h3>
+<p>Cloud SQL for Enterprise Plus edition supports quality enhancements for <a href="https://cloud.google.com/sql/docs/postgres/observe-troubleshoot-with-ai">AI-assisted troubleshooting</a>. With AI-assisted troubleshooting, you can resolve complex database performance issues like <a href="https://cloud.google.com/sql/docs/postgres/troubleshoot-slow-queries">slow queries</a> and <a href="https://cloud.google.com/sql/docs/postgres/troubleshoot-high-database-load">high load</a> for your instances in a guided manner. To use AI-assisted troubleshooting, you need <a href="https://cloud.google.com/gemini/docs/cloud-assist/overview">Gemini Cloud Assist</a> and <a href="https://cloud.google.com/sql/docs/postgres/using-query-insights#enable-insights">query insights</a> for Enterprise Plus edition.</p>
+<hr />
+<h2 id="2025-08-04">2025-08-04</h2>
+<h3 id="issue">Issue</h3>
+<p>PostgreSQL has identified a <a href="https://www.postgresql.org/message-id/flat/680bdaf6-f7d1-4536-b580-05c2760c67c6%40deepbluecap.com">bug</a> in <a href="https://www.postgresql.org/about/news/postgresql-175-169-1513-1418-and-1321-released-3072/">PostgreSQL's May 8, 2025 release</a> that is causing logical replication to halt. Cloud SQL for PostgreSQL released <code>[PostgreSQL version].R20250302.00_19</code> on <a href="https://cloud.google.com/sql/docs/postgres/release-notes#May_22_2025">May 22, 2025</a>, which is impacted by this bug.</p>
+<p>If you use logical replication with your Cloud SQL for PostgreSQL instances, then we recommend that you don't update your instances to this version or any self-service maintenance version released after May 22, 2025, due to this PostgreSQL bug. We also recommend not performing a <a href="https://cloud.google.com/sql/docs/postgres/upgrade-major-db-version-inplace">major version upgrade</a> on your instances, since it adopts the latest self-service maintenance version.</p>
+<p>We expect a fix for this issue in the next automatically-scheduled maintenance. For more information about this bug, see <a href="https://www.postgresql.org/message-id/flat/680bdaf6-f7d1-4536-b580-05c2760c67c6%40deepbluecap.com">Logical replication 'invalid memory alloc request size 1585837200' after upgrading to 17.5</a>.</p>
+<hr />
 <h2 id="2025-07-31">2025-07-31</h2>
 <h3 id="feature">Feature</h3>
 <p>Cloud SQL now offers two options of backup services to manage your instance's backups:</p>
@@ -1664,6 +1674,12 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-sql-for-postgresql">Cloud SQL for PostgreSQL</a></li>
+          <li class="nav-item">
+            <a href="#2025-08-07" class="nav-link">2025-08-07</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2025-08-04" class="nav-link">2025-08-04</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-07-31" class="nav-link">2025-07-31</a>
           </li>

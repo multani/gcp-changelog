@@ -1,5 +1,16 @@
 # AI Applications
 
+## 2025-08-06
+
+### Feature
+
+**Vertex AI Search: Advanced autocomplete (GA)**
+
+Use advanced autocomplete to enable autocomplete on blended search apps.
+
+For more information, see [Configure advanced autocomplete](https://cloud.google.com/generative-ai-app-builder/docs/configure-advanced-autocomplete). This feature is in generally available (GA).
+
+---
 ## 2025-08-04
 
 ### Changed

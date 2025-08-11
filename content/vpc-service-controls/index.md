@@ -1,5 +1,23 @@
 # VPC Service Controls
 
+## 2025-08-06
+
+### Feature
+
+[General availability](https://cloud.google.com/products#product-launch-stages) support for the following integration:
+
+* [FleetPackage API](https://cloud.google.com/vpc-service-controls/docs/supported-products#table_fleetpackage)
+
+---
+## 2025-08-04
+
+### Feature
+
+[General availability](https://cloud.google.com/products#product-launch-stages) support for the following integration:
+
+* [Backup for GKE](https://cloud.google.com/vpc-service-controls/docs/supported-products#table_gkebackup)
+
+---
 ## 2025-08-01
 
 ### Feature

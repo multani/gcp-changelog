@@ -744,6 +744,15 @@ multiple days to complete across all Google Cloud zones.
                       - Control planes and nodes with auto-upgrade enabled will be upgraded from version 1.31 to version [1.31.10-gke.1067000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13110) with this release.
                       - Control planes and nodes with auto-upgrade enabled will be upgraded from version 1.32 to version [1.32.6-gke.1013000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1326) with this release.
 
+                    VPC Service Controls
+                    --------------------
+
+                    ### Feature
+
+                    [General availability](https://cloud.google.com/products#product-launch-stages) support for the following integration:
+
+                    + [FleetPackage API](https://cloud.google.com/vpc-service-controls/docs/supported-products#table_fleetpackage)
+
                     Vertex AI
                     ---------
 

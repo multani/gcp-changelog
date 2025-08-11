@@ -63,6 +63,57 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 811775 -> 811788
 
+### cos-109-17800-570-23
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.143](https://cos.googlesource.com/third_party/kernel/+/66208798dd21d4ee2d28f8ea8b9b3a2df63e3f42 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/17800.570.23/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Updated dev-python/requests to v2.32.4.
+
+### Fixed
+
+Upgraded sys-process/lsof to v4.99.5.
+
+### Security
+
+Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.
+
+### Security
+
+Added support for Nvidia driver version 570.172.08. This fixes CVE-2025-23279.
+
+### Security
+
+Upgraded net-misc/netplan to 1.1.2. This fixes
+CVE-2022-4968.
+
+### Security
+
+Fixed CVE-2024-11584 in cloud-init.
+
+### Security
+
+Fixed CVE-2024-6174 in cloud-init.
+
+### Security
+
+Patched openssl to fix CVE-2023-50782 affecting
+dev-python/cryptography.
+
+### Security
+
+Upgraded dev-vcs/git to version 2.49.1. This fixes CVE-2025-48385, CVE-2025-27613, CVE-2025-27614, CVE-2025-48384, CVE-2025-46835.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812262 -> 812283
+
 ---
 ## 2025-07-30
 

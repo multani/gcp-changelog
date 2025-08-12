@@ -1,5 +1,22 @@
 # Apigee Advanced API Security
 
+## 2025-08-11
+
+### Announcement
+
+On August 11, 2025 we released an updated version of Advanced API Security Abuse Detection
+
+**Note:** Rollouts of this release to production instances will begin within two business days and may take four or more business days to complete across all Google Cloud zones. Your instances may not have the feature available until the rollout is complete.
+
+### Feature
+
+**Improved performance when viewing IP address-specific details for abuse detection incidents**
+
+With this release, the IP address detail information for abuse incidents displays more quickly for IP addresses with high traffic volumes, potentially reducing load times from minutes to seconds.
+
+For usage information, see the [Abuse Detection incident detail documentation](https://cloud.google.com/apigee/docs/api-security/abuse-detection#incident-details).
+
+---
 ## 2025-08-06
 
 ### Announcement

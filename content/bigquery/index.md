@@ -1,5 +1,24 @@
 # BigQuery
 
+## 2025-08-11
+
+### Feature
+
+BigQuery [resource utilization charts](https://cloud.google.com/bigquery/docs/admin-resource-charts#view-resource-utilization) are [generally available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+### Feature
+
+You can now use [`WITH` expressions](https://cloud.google.com/bigquery/docs/reference/standard-sql/operators#with_expression) in your GoogleSQL queries to create temporary variables. This feature is [generally available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+### Feature
+
+You can now use [chained function call syntax](https://cloud.google.com/bigquery/docs/reference/standard-sql/functions-reference#chained-function-calls) in GoogleSQL to make deeply nested function calls easier to read. This feature is [generally available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+### Changed
+
+BigQuery data preparations are now represented in the SQLX format and in the pipe query syntax to simplify the CI/CD code review process. For more information, see [Manage data preparations](https://cloud.google.com/bigquery/docs/manage-data-preparations).
+
+---
 ## 2025-08-06
 
 ### Feature

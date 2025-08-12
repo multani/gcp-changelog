@@ -2,9 +2,137 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Storage</title>
   <subtitle>Changelog for Google Cloud product: Cloud Storage</subtitle>
-  <updated>2025-07-08T00:00:00+00:00</updated>
+  <updated>2025-08-11T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-storage</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-storage/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2025-08-11:libraries:0</id>
+    <published>2025-08-11T00:00:00+00:00</published>
+    <updated>2025-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
+<h3>Java</h3>
+<h3>Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
+<h4><a href="https://github.com/googleapis/java-storage/compare/v2.54.0...v2.55.0">2.55.0</a> (2025-08-05)</h4>
+<h5>Features</h5>
+<ul>
+<li>Add new preview Bucket encryption policy configuration (<a href="https://github.com/googleapis/java-storage/issues/3204">#3204</a>) (<a href="https://github.com/googleapis/java-storage/commit/7b250dd53cfa29bbb6a0a4cb4a345aeb2dab5c86">7b250dd</a>)</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.61.0 (<a href="https://github.com/googleapis/java-storage/commit/f98b686ef940879458acb1e56339adf869400b94">f98b686</a>)</li>
+<li>Enable ALTS bound token (for DirectPath) in the grpc channel provider (<a href="https://github.com/googleapis/java-storage/issues/2919">#2919</a>) (<a href="https://github.com/googleapis/java-storage/commit/38d248d9511e808e88c1bac0b6bb2ba54897830d">38d248d</a>)</li>
+</ul>
+<h5>Dependencies</h5>
+<ul>
+<li>Update dependency com.google.cloud:sdk-platform-java-config to v3.51.0 (<a href="https://github.com/googleapis/java-storage/issues/3213">#3213</a>) (<a href="https://github.com/googleapis/java-storage/commit/86ff69788b30d8f82b6b95d010df507093852889">86ff697</a>)</li>
+</ul>]]></content>
+    <summary>A weekly digest of client library updates.</summary>
+    <title>Libraries: Client Library Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2025-08-11:feature:1</id>
+    <published>2025-08-11T00:00:00+00:00</published>
+    <updated>2025-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now use Anywhere Cache in the <code>asia-south1-a</code> zone. For more information, see <a href="https://cloud.google.com/storage/docs/anywhere-cache#supported-locations">Anywhere Cache supported locations</a>.</p>]]></content>
+    <summary>Anywhere Cache is now available in the `asia-south1-a` zone.</summary>
+    <title>Feature: Anywhere Cache available in asia-south1-a</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2025-08-04:libraries:0</id>
+    <published>2025-08-04T00:00:00+00:00</published>
+    <updated>2025-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
+<h3>Java</h3>
+<h3>Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
+<h4><a href="https://github.com/googleapis/java-storage/compare/v2.53.3...v2.54.0">2.54.0</a> (2025-07-24)</h4>
+<h5>Features</h5>
+<ul>
+<li>Add BucketInfo.IpFilter (<a href="https://github.com/googleapis/java-storage/issues/3177">#3177</a>) (<a href="https://github.com/googleapis/java-storage/commit/14a91ec208067e6afc55923cffda5f69aa33d8b4">14a91ec</a>)</li>
+<li>Add default end-to-end checksumming for JournalingBlobWriteSessionConfig <a href="https://github.com/googleapis/java-storage/issues/3180">#3180</a> (<a href="https://github.com/googleapis/java-storage/commit/fa0f6a03380af78e239bd0079267649ba4138f38">fa0f6a0</a>)</li>
+<li>Add default end-to-end crc32c checksumming for several upload methods via grpc transport <a href="https://github.com/googleapis/java-storage/issues/3176">#3176</a> (<a href="https://github.com/googleapis/java-storage/commit/fa0f6a03380af78e239bd0079267649ba4138f38">fa0f6a0</a>)</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.60.2 (<a href="https://github.com/googleapis/java-storage/commit/bd1f199cf57c2b8039c303586d5beac64aeca0ba">bd1f199</a>)</li>
+<li>Give user provided checksum precondition priority for Storage#create methods that accept byte[] <a href="https://github.com/googleapis/java-storage/issues/3182">#3182</a> (<a href="https://github.com/googleapis/java-storage/commit/fa0f6a03380af78e239bd0079267649ba4138f38">fa0f6a0</a>)</li>
+<li>Move crc32c computation before writing to disk for BufferToDiskThenUpload BlobWriteSession config <a href="https://github.com/googleapis/java-storage/issues/3187">#3187</a> (<a href="https://github.com/googleapis/java-storage/commit/fa0f6a03380af78e239bd0079267649ba4138f38">fa0f6a0</a>)</li>
+</ul>
+<h5>Dependencies</h5>
+<ul>
+<li>Update dependency com.google.apis:google-api-services-storage to v1-rev20250718-2.0.0 (<a href="https://github.com/googleapis/java-storage/issues/3203">#3203</a>) (<a href="https://github.com/googleapis/java-storage/commit/18978e4ec54790df2939490ef76fc19b9f72eb04">18978e4</a>)</li>
+<li>Update dependency com.google.cloud:sdk-platform-java-config to v3.50.2 (<a href="https://github.com/googleapis/java-storage/issues/3201">#3201</a>) (<a href="https://github.com/googleapis/java-storage/commit/782c3c416583704a196b17f23e9c12c33659f67d">782c3c4</a>)</li>
+<li>Update googleapis/sdk-platform-java action to v2.60.1 (<a href="https://github.com/googleapis/java-storage/issues/3196">#3196</a>) (<a href="https://github.com/googleapis/java-storage/commit/6ba56e5a4b86a75a9f48beccf79ff6d5fdd3e19f">6ba56e5</a>)</li>
+</ul>]]></content>
+    <summary>Java client library for Cloud Storage: new features and bug fixes.</summary>
+    <title>Libraries: Java Storage Library Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2025-07-28:libraries:0</id>
+    <published>2025-07-28T00:00:00+00:00</published>
+    <updated>2025-07-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
+<h3>Go</h3>
+<h3>Changes for <a href="https://github.com/googleapis/google-cloud-go/tree/main/storage/internal/apiv2">storage/internal/apiv2</a></h3>
+<h4><a href="https://github.com/googleapis/google-cloud-go/compare/storage/v1.55.0...storage/v1.56.0">1.56.0</a> (2025-07-24)</h4>
+<h5>Features</h5>
+<ul>
+<li><strong>storage/control:</strong> Update BUILD configs to support rest transportation for all client (<a href="https://github.com/googleapis/google-cloud-go/commit/116a33ab13c9fac6f6830dded55c24d38504707b">116a33a</a>)</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li><strong>storage:</strong> Avoid integration test segfaults. (<a href="https://github.com/googleapis/google-cloud-go/issues/12419">#12419</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/a9dec0763f85f083cc1da451249caae7ad97d904">a9dec07</a>)</li>
+<li><strong>storage:</strong> Current object generation takeover. (<a href="https://github.com/googleapis/google-cloud-go/issues/12383">#12383</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/9ca8e015405a523bbe68cbff2defbdff3dac0a61">9ca8e01</a>)</li>
+<li><strong>storage:</strong> Fix MultiRangeDownloader deadlock (<a href="https://github.com/googleapis/google-cloud-go/issues/12548">#12548</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/2eb23bb01ffe92c967e772ef66c846357fbf5419">2eb23bb</a>)</li>
+<li><strong>storage:</strong> Remove object length limit for unfinalized reads (<a href="https://github.com/googleapis/google-cloud-go/issues/12489">#12489</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/5566d7dd5cc83afce38821961c447f5945e48456">5566d7d</a>)</li>
+</ul>
+<h5>Performance Improvements</h5>
+<ul>
+<li><strong>storage:</strong> Zero copy for MultiRangeDownloader (<a href="https://github.com/googleapis/google-cloud-go/issues/12542">#12542</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/a5e6a681164d5be62270cde16891685a9f03bb12">a5e6a68</a>)</li>
+</ul>
+<h5>Documentation</h5>
+<ul>
+<li><strong>storage/internal:</strong> Fix broken link for message <code>CustomPlacementConfig</code> (<a href="https://github.com/googleapis/google-cloud-go/commit/96144875e01bfc8a59c2671c6eae87233710cef7">9614487</a>)</li>
+<li><strong>storage:</strong> Fix typo in storage/doc.go (<a href="https://github.com/googleapis/google-cloud-go/issues/12391">#12391</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/bf744088f0ed23ea510b914c994e1754ca1fc7c4">bf74408</a>)</li>
+<li><strong>storage:</strong> Improve error inspection documentation (<a href="https://github.com/googleapis/google-cloud-go/issues/12301">#12301</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/420da1a64ac4040c8b2e6d6f0d66e7633426ac25">420da1a</a>)</li>
+</ul>]]></content>
+    <summary>Go client library updates weekly.</summary>
+    <title>Libraries: Go client library updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2025-07-14:libraries:0</id>
+    <published>2025-07-14T00:00:00+00:00</published>
+    <updated>2025-07-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
+<h3>Java</h3>
+<h3>Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
+<h4><a href="https://github.com/googleapis/java-storage/compare/v2.53.2...v2.53.3">2.53.3</a> (2025-07-09)</h4>
+<h5>Bug Fixes</h5>
+<ul>
+<li>Fix DefaultBlobWriteSessionConfig init to work when grpc classes are excluded (<a href="https://github.com/googleapis/java-storage/issues/3147">#3147</a>) (<a href="https://github.com/googleapis/java-storage/commit/8571ba8eee82d055cdeb5f0b6970d5b814eaa24e">8571ba8</a>)</li>
+</ul>
+<h5>Dependencies</h5>
+<ul>
+<li>Update dependency com.google.apis:google-api-services-storage to v1-rev20250629-2.0.0 (<a href="https://github.com/googleapis/java-storage/issues/3185">#3185</a>) (<a href="https://github.com/googleapis/java-storage/commit/4ce8281246cbe84ed068205532cac4a03853c331">4ce8281</a>)</li>
+<li>Update dependency com.google.cloud:sdk-platform-java-config to v3.50.1 (<a href="https://github.com/googleapis/java-storage/issues/3189">#3189</a>) (<a href="https://github.com/googleapis/java-storage/commit/7fbfb013a8cfb72d49e3d752ad25e73b6ccaab4f">7fbfb01</a>)</li>
+</ul>]]></content>
+    <summary>This release includes a bug fix for DefaultBlobWriteSessionConfig initialization and dependency updates for google-api-services-storage and sdk-platform-java-config.</summary>
+    <title>Libraries: Java client library update for Google Cloud Storage</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

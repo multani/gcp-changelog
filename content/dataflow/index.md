@@ -1,5 +1,14 @@
 # Dataflow
 
+## 2025-08-11
+
+### Feature
+
+Dataflow now automatically detects performance bottlenecks in streaming jobs. You can see the cause of the bottleneck in the **Step Info** panel to help with troubleshooting.
+
+For more information, see [Troubleshoot bottlenecks](https://cloud.google.com/dataflow/docs/guides/troubleshoot-bottlenecks).
+
+---
 ## 2025-06-26
 
 ### Feature

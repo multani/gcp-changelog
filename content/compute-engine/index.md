@@ -1,5 +1,29 @@
 # Compute Engine
 
+## 2025-08-11
+
+### Feature
+
+**Preview**: The
+[G4 accelerator-optimized machine series](https://cloud.google.com/compute/docs/accelerator-optimized-machines#g4-series)
+is designed for graphics-intensive workloads such as NVIDIA Omniverse
+simulations, video transcoding, and virtual desktops. The G4 machine series also
+provides a cost-effective solution for single-host inference and model tuning.
+
+Powered by the 5th Generation AMD EPYC Turin CPU platform and featuring
+[NVIDIA RTX PRO 6000 Blackwell Server Edition](https://www.nvidia.com/en-us/data-center/rtx-pro-6000-blackwell-server-edition/)
+GPUs, the G4 machine series offer significant performance improvements over the
+previous G2 machine series. For available G4
+regions and zones, see
+[GPU regions and zones](https://cloud.google.com/compute/docs/gpus/gpu-regions-zones#view-using-table).
+
+To get started with G4 machine types, contact your Google account team.
+
+### Feature
+
+You can attach up to 128 instances to the same Hyperdisk ML volume whose size is between 2 TiB and 16 TiB. The previous limit was 30. For more information, see [Share a disk between instances](https://cloud.google.com/compute/docs/disks/sharing-disks-between-vms).
+
+---
 ## 2025-08-05
 
 ### Feature

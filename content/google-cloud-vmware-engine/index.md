@@ -1,5 +1,12 @@
 # Google Cloud VMware Engine
 
+## 2025-08-08
+
+### Announcement
+
+VMware Engine `ve2` nodes are now available in the Dammam, KSA (`me-central2`) region.
+
+---
 ## 2025-07-14
 
 ### Announcement

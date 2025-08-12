@@ -1632,8 +1632,18 @@
 
 
 <h1 id="bigquery">BigQuery</h1>
-<h2 id="2025-08-06">2025-08-06</h2>
+<h2 id="2025-08-11">2025-08-11</h2>
 <h3 id="feature">Feature</h3>
+<p>BigQuery <a href="https://cloud.google.com/bigquery/docs/admin-resource-charts#view-resource-utilization">resource utilization charts</a> are <a href="https://cloud.google.com/products/#product-launch-stages">generally available</a> (GA).</p>
+<h3 id="feature_1">Feature</h3>
+<p>You can now use <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/operators#with_expression"><code>WITH</code> expressions</a> in your GoogleSQL queries to create temporary variables. This feature is <a href="https://cloud.google.com/products/#product-launch-stages">generally available</a> (GA).</p>
+<h3 id="feature_2">Feature</h3>
+<p>You can now use <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/functions-reference#chained-function-calls">chained function call syntax</a> in GoogleSQL to make deeply nested function calls easier to read. This feature is <a href="https://cloud.google.com/products/#product-launch-stages">generally available</a> (GA).</p>
+<h3 id="changed">Changed</h3>
+<p>BigQuery data preparations are now represented in the SQLX format and in the pipe query syntax to simplify the CI/CD code review process. For more information, see <a href="https://cloud.google.com/bigquery/docs/manage-data-preparations">Manage data preparations</a>.</p>
+<hr />
+<h2 id="2025-08-06">2025-08-06</h2>
+<h3 id="feature_3">Feature</h3>
 <p>Enabling the advanced runtime now includes <a href="https://cloud.google.com/bigquery/docs/advanced-runtime#short_query_optimizations">short query optimizations</a>. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">preview</a>.</p>
 <hr />
 <h2 id="2025-08-04">2025-08-04</h2>
@@ -1658,15 +1668,15 @@
 <li>Update dependency io.opentelemetry:opentelemetry-context to v1.52.0 (<a href="https://github.com/googleapis/java-bigquery/issues/3904">#3904</a>) (<a href="https://github.com/googleapis/java-bigquery/commit/96c1bae0fcdfdfc2dbb25dcae5007c5d02111a8c">96c1bae</a>)</li>
 <li>Update dependency io.opentelemetry:opentelemetry-exporter-logging to v1.52.0 (<a href="https://github.com/googleapis/java-bigquery/issues/3905">#3905</a>) (<a href="https://github.com/googleapis/java-bigquery/commit/28ee4c941b99b1fe3803aefbe7a8ae57100d76cb">28ee4c9</a>)</li>
 </ul>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>You can now use the new <a href="https://cloud.google.com/bigquery/docs/colab-data-science-agent">Data Science Agent (DSA)</a> for Colab Enterprise and BigQuery to automate exploratory data analysis, perform
 machine learning tasks, and deliver insights all within a
 Colab Enterprise notebook. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">preview</a>.</p>
 <hr />
 <h2 id="2025-07-31">2025-07-31</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p>You can manage data profile scans and data quality scans across your project by using the <strong>Metadata curation</strong> page in the Google Cloud console. For more information, see <a href="https://cloud.google.com/bigquery/docs/data-profile-scan">Profile your data</a> and <a href="https://cloud.google.com/bigquery/docs/data-quality-scan">Scan for data quality issues</a>. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
-<h3 id="changed">Changed</h3>
+<h3 id="changed_1">Changed</h3>
 <p>BigQuery ML has improved throughput by more than 100x for the following
 generative AI functions:</p>
 <ul>
@@ -1681,9 +1691,9 @@ generative AI functions:</p>
 request, but a typical 6-hour job can now process millions of rows. For more
 information, see
 <a href="https://cloud.google.com/bigquery/quotas#generative_ai_functions">Generative AI functions</a>.</p>
-<h3 id="changed_1">Changed</h3>
+<h3 id="changed_2">Changed</h3>
 <p>BigQuery ML now can automatically detect model quota increases in Vertex AI, and automatically adjusts the quota for any BigQuery ML functions that use those models. You no longer need to email the BigQuery ML team to increase model quota.</p>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p>You can now use <a href="https://cloud.google.com/bigquery/docs/continuous-queries-introduction">continuous queries</a> to <a href="https://cloud.google.com/bigquery/docs/export-to-spanner">export BigQuery data to Spanner in real time</a>. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
 <hr />
 <h2 id="2025-07-30">2025-07-30</h2>
@@ -1707,26 +1717,26 @@ information, see
 <ul>
 <li>Specify the inherited-members directive for job classes (<a href="https://github.com/googleapis/python-bigquery/issues/2244">#2244</a>) (<a href="https://github.com/googleapis/python-bigquery/commit/d207f6539b7a4c248a5de5719d7f384abbe20abe">d207f65</a>)</li>
 </ul>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p>You can now associate <a href="https://cloud.google.com/bigquery/docs/column-data-masking#data-policies-on-column">data policies directly on columns</a>. This feature enables direct database administration for controlling access and applying masking and transformation rules at the column level. This feature is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>
 <hr />
 <h2 id="2025-07-22">2025-07-22</h2>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p>You can now use the
 <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/vectorindex_functions#vector_indexstatistics"><code>VECTOR_INDEX.STATISTICS</code> function</a> to calculate how much an indexed table's data has drifted between when a
 vector index was created and the present. If table data has changed enough
 to require a <a href="https://cloud.google.com/bigquery/docs/vector-index#rebuild_a_vector_index">vector index rebuild</a>, you can use the
 <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#alter_vector_index_rebuild_statement"><code>ALTER VECTOR INDEX REBUILD</code> statement</a>
 to rebuild the vector index. This feature is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p><a href="https://cloud.google.com/assured-workloads/access-transparency/docs/supported-services">Access Transparency</a> supports <a href="https://cloud.google.com/bigquery/docs/data-prep-introduction">BigQuery data preparation</a> in the <a href="https://cloud.google.com/products#product-launch-stages">GA</a> stage.</p>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p>The <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#create_external_table_statement"><code>CREATE EXTERNAL TABLE</code></a> and <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/load-statements"><code>LOAD DATA</code></a> statements now support the following options in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>:</p>
 <ul>
 <li><code>null_markers</code>: define the strings that represent <code>NULL</code> values in CSV files.</li>
 <li><code>source_column_match</code>: specify how loaded columns are matched to the schema. You can match columns by position or by name.</li>
 </ul>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_11">Feature</h3>
 <p>You can now use the <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax#match_recognize_clause"><code>MATCH_RECOGNIZE</code> clause</a> in your SQL queries to filter and aggregate matches across rows in a table. This feature is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>
 <hr />
 <h2 id="2025-07-21">2025-07-21</h2>
@@ -1781,26 +1791,26 @@ to rebuild the vector index. This feature is in <a href="https://cloud.google.co
 <ul>
 <li>Improve clarity of "Output Only" fields in Dataset class (<a href="https://github.com/googleapis/python-bigquery/issues/2201">#2201</a>) (<a href="https://github.com/googleapis/python-bigquery/commit/bd5aba8ba40c2f35fb672a68eed11d6baedb304f">bd5aba8</a>)</li>
 </ul>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_12">Feature</h3>
 <p>You can now use the <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/pipe-syntax#distinct_pipe_operator"><code>DISTINCT</code> pipe operator</a> to select distinct rows from a table in your pipe syntax queries. This feature is <a href="https://cloud.google.com/products/#product-launch-stages">generally available</a> (GA).</p>
 <hr />
 <h2 id="2025-07-17">2025-07-17</h2>
-<h3 id="feature_10">Feature</h3>
+<h3 id="feature_13">Feature</h3>
 <p>You can now use the <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/pipe-syntax#with_pipe_operator"><code>WITH</code> pipe operator</a> to define common table expressions in your pipe syntax queries. This feature is <a href="https://cloud.google.com/products/#product-launch-stages">generally available</a> (GA).</p>
-<h3 id="feature_11">Feature</h3>
+<h3 id="feature_14">Feature</h3>
 <p>You can now use <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/pipe-syntax#select_pipe_operator">named windows</a> in your pipe syntax queries. This feature is <a href="https://cloud.google.com/products/#product-launch-stages">generally available</a> (GA).</p>
 <hr />
 <h2 id="2025-07-16">2025-07-16</h2>
-<h3 id="feature_12">Feature</h3>
+<h3 id="feature_15">Feature</h3>
 <p>You can now add comments to <a href="https://cloud.google.com/bigquery/docs/create-notebooks#create-notebook-console">notebooks</a>, <a href="https://cloud.google.com/bigquery/docs/data-canvas#work-with-data-canvas">data canvases</a>, <a href="https://cloud.google.com/bigquery/docs/data-prep-get-suggestions#open-data-prep-editor">data preparation files</a>, or <a href="https://cloud.google.com/bigquery/docs/work-with-saved-queries#create_saved_queries">saved queries</a>. You can also reply to existing comments or get a link to them. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
-<h3 id="feature_13">Feature</h3>
+<h3 id="feature_16">Feature</h3>
 <p>You can now create <a href="https://cloud.google.com/bigquery/docs/create-machine-learning-model-console">BigQuery ML models by using the
 Google Cloud console user interface</a>. This feature is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>
 <hr />
 <h2 id="2025-07-15">2025-07-15</h2>
-<h3 id="feature_14">Feature</h3>
+<h3 id="feature_17">Feature</h3>
 <p>You can now <a href="https://cloud.google.com/bigquery/docs/analytics-hub-cloud-marketplace">commercialize your BigQuery sharing listings on Google Cloud Marketplace</a>. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
-<h3 id="feature_15">Feature</h3>
+<h3 id="feature_18">Feature</h3>
 <p>You can flatten <a href="https://cloud.google.com/bigquery/docs/data-prep-get-suggestions#flatten-json">JSON columns</a> in BigQuery data preparation with a single operation. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
 <hr />
 <h2 id="2025-07-08">2025-07-08</h2>
@@ -1808,16 +1818,16 @@ Google Cloud console user interface</a>. This feature is in <a href="https://clo
 <p>Starting August 1, 2025, GoogleSQL will become the default dialect for queries run from the command line interface (CLI) or API. To use LegacySQL, you will need to explicitly specify it in your requests or <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#alter_project_set_options_statement">set the configuration setting</a> <code>default_sql_dialect_option</code> to <code>'default_legacy_sql'</code> at the project or organization level.</p>
 <hr />
 <h2 id="2025-07-07">2025-07-07</h2>
-<h3 id="feature_16">Feature</h3>
+<h3 id="feature_19">Feature</h3>
 <p>You can now use your Google Account user credentials to authorize the execution of a data preparation in development. For more information, see
 <a href="https://cloud.google.com/bigquery/docs/orchestrate-data-preparations#run-undeployed-manually">Manually run a data preparation in development</a>. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">preview</a>.</p>
 <hr />
 <h2 id="2025-07-01">2025-07-01</h2>
-<h3 id="feature_17">Feature</h3>
+<h3 id="feature_20">Feature</h3>
 <p>You can now <a href="https://cloud.google.com/bigquery/docs/customer-managed-encryption#key_rotation">update a Cloud KMS encryption key</a> by updating the table with the same key. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
-<h3 id="feature_18">Feature</h3>
+<h3 id="feature_21">Feature</h3>
 <p>You can use the <a href="https://cloud.google.com/bigquery/docs/reference/system-variables"><code>@@location</code> system variable</a> to set the location in which to run a query. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
-<h3 id="feature_19">Feature</h3>
+<h3 id="feature_22">Feature</h3>
 <p>BigQuery now supports the following Apache Hadoop migration features in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>:</p>
 <ul>
 <li><a href="https://cloud.google.com/bigquery/docs/hadoop-metadata">Use the <code>dwh-migration-dumper</code> tool to migrate the metadata</a> necessary for a Hadoop permissions and data migration.</li>
@@ -1850,21 +1860,21 @@ Google Cloud console user interface</a>. This feature is in <a href="https://clo
 <li>Update dependency io.opentelemetry:opentelemetry-bom to v1.51.0 (<a href="https://github.com/googleapis/java-bigquery/issues/3840">#3840</a>) (<a href="https://github.com/googleapis/java-bigquery/commit/51321c22778fd41134cc0cdfc70bdc47f05883f1">51321c2</a>)</li>
 <li>Update ossf/scorecard-action action to v2.4.2 (<a href="https://github.com/googleapis/java-bigquery/issues/3810">#3810</a>) (<a href="https://github.com/googleapis/java-bigquery/commit/414f61d7efcfa568c1446bd41945d7a8e2450649">414f61d</a>)</li>
 </ul>
-<h3 id="feature_20">Feature</h3>
+<h3 id="feature_23">Feature</h3>
 <p>You can now <a href="https://cloud.google.com/bigquery/docs/orchestrate-notebooks">create and manage scheduled notebooks</a> using the <strong>Schedule details</strong> pane in BigQuery Studio. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
 <hr />
 <h2 id="2025-06-26">2025-06-26</h2>
-<h3 id="feature_21">Feature</h3>
+<h3 id="feature_24">Feature</h3>
 <p>You can now use the
 use the <code>PARTITION BY</code> clause of the
 <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#create_vector_index_statement"><code>CREATE VECTOR INDEX</code> statement</a> to <a href="https://cloud.google.com/bigquery/docs/vector-index#partitions">partition TreeAH vector indexes</a>. Partitioning enables partition pruning and can decrease I/O costs. This feature is in <a href="https://cloud.google.com/products/#product-launch-stages">preview</a>.</p>
-<h3 id="feature_22">Feature</h3>
+<h3 id="feature_25">Feature</h3>
 <p><a href="https://cloud.google.com/bigquery/docs/search-intro">BigQuery search indexes</a> provide free index management until your organization reaches the <a href="https://cloud.google.com/bigquery/quotas#index_limits">limit</a> in a given region. You can now use the <a href="https://cloud.google.com/bigquery/docs/information-schema-indexes-by-organization"><code>INFORMATION_SCHEMA.SEARCH_INDEXES_BY_ORGANIZATION</code> view</a> to understand your current consumption towards that limit, broken down by projects and tables. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
 <hr />
 <h2 id="2025-06-23">2025-06-23</h2>
-<h3 id="feature_23">Feature</h3>
+<h3 id="feature_26">Feature</h3>
 <p>You can now use the <a href="https://cloud.google.com/bigquery/docs/blms-rest-catalog">Apache Iceberg REST catalog in BigLake metastore</a> to create interoperability between your query engines by allowing your open source engines to access Iceberg data in Cloud Storage. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
-<h3 id="feature_24">Feature</h3>
+<h3 id="feature_27">Feature</h3>
 <p>Colab Enterprise notebooks in BigQuery let you do the following in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>:</p>
 <ul>
 <li><a href="https://cloud.google.com/bigquery/docs/write-sql-gemini#explain_python_code">Explain code with Gemini assistance</a></li>
@@ -1872,21 +1882,21 @@ use the <code>PARTITION BY</code> clause of the
 </ul>
 <hr />
 <h2 id="2025-06-18">2025-06-18</h2>
-<h3 id="feature_25">Feature</h3>
+<h3 id="feature_28">Feature</h3>
 <p>You can now <a href="https://cloud.google.com/bigquery/docs/data-quality-scan">publish the results of a data quality scan as Dataplex Universal Catalog metadata</a>. Previously, data quality scan results were published only to the Google Cloud console. The latest results are saved to the entry that represents the source table. You can view the results in the Google Cloud console. If you want to enable catalog publishing for an existing data quality scan, you must edit the scan and re-enable the publishing option. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
-<h3 id="feature_26">Feature</h3>
+<h3 id="feature_29">Feature</h3>
 <p>You can now use data insights to have Gemini <a href="https://cloud.google.com/bigquery/docs/data-insights">generate table and column descriptions from table metadata</a>. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
 <hr />
 <h2 id="2025-06-16">2025-06-16</h2>
-<h3 id="feature_27">Feature</h3>
-<p>In BigQuery ML, you can now forecast multiple time series at once by using the <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-multivariate-time-series#time_series_id_col"><code>TIME_SERIES_ID_COL</code> option</a> that is available in <code>ARIMA_PLUS_XREG</code> multivariate time series models. Try this feature with the <a href="https://cloud.google.com/bigquery/docs/arima-plus-xreg-multiple-time-series-forecasting-tutorial">Forecast multiple time series with a multivariate model</a> tutorial. This feature is <a href="https://cloud.google.com/products/#product-launch-stages">generally available</a> (GA).</p>
-<h3 id="feature_28">Feature</h3>
-<p>You can now manage <a href="https://cloud.google.com/bigquery/docs/tags">IAM tags</a> on BigQuery datasets and tables using SQL. This feature is <a href="https://cloud.google.com/products/#product-launch-stages">generally available</a> (GA).</p>
-<h3 id="feature_29">Feature</h3>
-<p>The BigQuery migration assessment is now available for workflows that use <a href="https://cloud.google.com/bigquery/docs/migration-assessment#hadoop-cloudera">Cloudera and Apache Hadoop</a>. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
 <h3 id="feature_30">Feature</h3>
-<p>The <a href="https://cloud.google.com/bigquery/docs/merchant-center-best-sellers-schema">Merchant Center best sellers report</a> supports multi-client accounts (MCAs). If you have an MCA, you can use the <code>aggregator_id</code> to query the tables. The <code>BestSellersEntityProductMapping</code> table maps the best-selling entities to the products in the sub-accounts' inventory. This provides a consolidated view of best-selling products, which you can then join with product data for more detailed insights. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
+<p>In BigQuery ML, you can now forecast multiple time series at once by using the <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-multivariate-time-series#time_series_id_col"><code>TIME_SERIES_ID_COL</code> option</a> that is available in <code>ARIMA_PLUS_XREG</code> multivariate time series models. Try this feature with the <a href="https://cloud.google.com/bigquery/docs/arima-plus-xreg-multiple-time-series-forecasting-tutorial">Forecast multiple time series with a multivariate model</a> tutorial. This feature is <a href="https://cloud.google.com/products/#product-launch-stages">generally available</a> (GA).</p>
 <h3 id="feature_31">Feature</h3>
+<p>You can now manage <a href="https://cloud.google.com/bigquery/docs/tags">IAM tags</a> on BigQuery datasets and tables using SQL. This feature is <a href="https://cloud.google.com/products/#product-launch-stages">generally available</a> (GA).</p>
+<h3 id="feature_32">Feature</h3>
+<p>The BigQuery migration assessment is now available for workflows that use <a href="https://cloud.google.com/bigquery/docs/migration-assessment#hadoop-cloudera">Cloudera and Apache Hadoop</a>. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
+<h3 id="feature_33">Feature</h3>
+<p>The <a href="https://cloud.google.com/bigquery/docs/merchant-center-best-sellers-schema">Merchant Center best sellers report</a> supports multi-client accounts (MCAs). If you have an MCA, you can use the <code>aggregator_id</code> to query the tables. The <code>BestSellersEntityProductMapping</code> table maps the best-selling entities to the products in the sub-accounts' inventory. This provides a consolidated view of best-selling products, which you can then join with product data for more detailed insights. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
+<h3 id="feature_34">Feature</h3>
 <p>BigQuery now offers the following Gemini-enhanced SQL translation features:</p>
 <ul>
 <li>Create <a href="https://cloud.google.com/bigquery/docs/config-yaml-translation#ai_yaml_guidelines">Gemini-based configuration YAML files</a> to generate AI suggestions for batch or interactive SQL translations. This feature is now <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</li>
@@ -1895,11 +1905,11 @@ use the <code>PARTITION BY</code> clause of the
 </ul>
 <hr />
 <h2 id="2025-06-12">2025-06-12</h2>
-<h3 id="feature_32">Feature</h3>
+<h3 id="feature_35">Feature</h3>
 <p>Dark theme is now available for BigQuery in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. To enable the dark theme, in the Google Cloud console, click <strong>Settings and utilities &gt; Preferences</strong>. In the navigation menu, click <strong>Appearance</strong>, and then select your color theme and click <strong>Save</strong>.</p>
 <hr />
 <h2 id="2025-06-11">2025-06-11</h2>
-<h3 id="feature_33">Feature</h3>
+<h3 id="feature_36">Feature</h3>
 <p>The following GoogleSQL functions are now available in <a href="https://cloud.google.com/products#product-launch-stages">preview</a>:</p>
 <ul>
 <li>The <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/array_functions#array_first"><code>ARRAY_FIRST</code> function</a> returns the first element of the input array.</li>
@@ -1908,9 +1918,9 @@ use the <code>PARTITION BY</code> clause of the
 </ul>
 <hr />
 <h2 id="2025-06-10">2025-06-10</h2>
-<h3 id="changed_2">Changed</h3>
+<h3 id="changed_3">Changed</h3>
 <p>An updated version of the <a href="https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers#odbc_release_3121009">ODBC driver for BigQuery</a> is now available.</p>
-<h3 id="feature_34">Feature</h3>
+<h3 id="feature_37">Feature</h3>
 <p>For <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/provisioned-throughput/supported-models">supported Gemini models</a>, you can now use <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/provisioned-throughput/overview">Vertex AI Provisioned Throughput</a> with the <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-generate-text#provisioned-throughput"><code>ML.GENERATE_TEXT</code></a>and <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate#provisioned-throughput"><code>AI.GENERATE</code></a> functions to provide consistent high throughput for requests.</p>
 <p>This feature is <a href="https://cloud.google.com/products/#product-launch-stages">generally available</a> (GA).</p>
 <hr />
@@ -1932,19 +1942,19 @@ use the <code>PARTITION BY</code> clause of the
 <li>Update dependency com.google.apis:google-api-services-bigquery to v2-rev20250511-2.0.0 (<a href="https://github.com/googleapis/java-bigquery/issues/3794">#3794</a>) (<a href="https://github.com/googleapis/java-bigquery/commit/d3bf724feef91469b44e1e5068738604d2b3cead">d3bf724</a>)</li>
 <li>Update dependency com.google.cloud:sdk-platform-java-config to v3.49.0 (<a href="https://github.com/googleapis/java-bigquery/issues/3811">#3811</a>) (<a href="https://github.com/googleapis/java-bigquery/commit/2c5ede4b115cf7cdd078d54d29ce93636c1cedf5">2c5ede4</a>)</li>
 </ul>
-<h3 id="feature_35">Feature</h3>
+<h3 id="feature_38">Feature</h3>
 <p>You can reference <a href="https://cloud.google.com/bigquery/docs/materialized-views-create#iceberg">Iceberg external tables in materialized views</a> instead of migrating that data to BigQuery-managed storage. This feature is <a href="https://cloud.google.com/products/#product-launch-stages">generally available</a> (GA).</p>
 <hr />
 <h2 id="2025-06-04">2025-06-04</h2>
-<h3 id="changed_3">Changed</h3>
+<h3 id="changed_4">Changed</h3>
 <p>The organization-level <a href="https://cloud.google.com/bigquery/docs/default-configuration">configuration settings</a> for <code>default_sql_dialect_option</code> and <code>query_runtime</code> are unsupported.</p>
 <hr />
 <h2 id="2025-06-03">2025-06-03</h2>
-<h3 id="feature_36">Feature</h3>
+<h3 id="feature_39">Feature</h3>
 <p>You can now use the <a href="https://cloud.google.com/bigquery/docs/advanced-runtime">BigQuery advanced runtime</a> to improve query execution time and slot usage. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
-<h3 id="feature_37">Feature</h3>
+<h3 id="feature_40">Feature</h3>
 <p>BigQuery tables for Apache Iceberg have been renamed <a href="https://cloud.google.com/bigquery/docs/iceberg-tables">BigLake tables for Apache Iceberg in BigQuery</a>. This feature is now <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
-<h3 id="feature_38">Feature</h3>
+<h3 id="feature_41">Feature</h3>
 <p>BigQuery metastore has been renamed <a href="https://cloud.google.com/bigquery/docs/about-blms">BigLake metastore</a> and is now <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA). The feature formerly known as BigLake metastore has been renamed BigLake metastore (classic).</p>
 <hr />
 <h2 id="2025-06-02">2025-06-02</h2>
@@ -1988,37 +1998,37 @@ use the <code>PARTITION BY</code> clause of the
 <li>Update query.py (<a href="https://github.com/googleapis/python-bigquery/issues/2192">#2192</a>) (<a href="https://github.com/googleapis/python-bigquery/commit/9b5ee78f046d9ca3f758eeca6244b8485fe35875">9b5ee78</a>)</li>
 <li>Use query_and_wait in the array parameters sample (<a href="https://github.com/googleapis/python-bigquery/issues/2202">#2202</a>) (<a href="https://github.com/googleapis/python-bigquery/commit/28a9994792ec90a6a4d16835faf2137c09c0fb02">28a9994</a>)</li>
 </ul>
-<h3 id="feature_39">Feature</h3>
+<h3 id="feature_42">Feature</h3>
 <p>In the navigation menu, you can now go to <strong>Settings</strong> and select <strong>Configuration settings</strong> to <a href="https://cloud.google.com/bigquery/docs/bigquery-web-ui#navigation_menu">customize the BigQuery Studio experience</a> for users within the selected project or organization. This is achieved by showing or hiding user interface elements. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">preview</a>.</p>
-<h3 id="feature_40">Feature</h3>
+<h3 id="feature_43">Feature</h3>
 <p>BigQuery now supports using <a href="https://cloud.google.com/bigquery/docs/spanner-external-datasets">Spanner external datasets</a> with <a href="https://cloud.google.com/bigquery/docs/authorized-views">authorized views</a>, <a href="https://cloud.google.com/bigquery/docs/authorized-routines">authorized routines</a>, and <a href="https://cloud.google.com/bigquery/docs/create-cloud-resource-connection">Cloud resource connections</a>. This feature is <a href="https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages">generally available</a> (GA).</p>
-<h3 id="feature_41">Feature</h3>
+<h3 id="feature_44">Feature</h3>
 <p>The <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#create_external_table_statement"><code>CREATE EXTERNAL TABLE</code></a> and <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/load-statements"><code>LOAD DATA</code></a> statements now support the following options in <a href="https://cloud.google.com/products/#product-launch-stages">preview</a>:</p>
 <ul>
 <li><code>time_zone</code>: specify a time zone to use when loading data</li>
 <li><code>date_format</code>, <code>datetime_format</code>, <code>time_format</code>, and <code>timestamp_format</code>: define how date and time values are formatted in your source files</li>
 </ul>
-<h3 id="feature_42">Feature</h3>
+<h3 id="feature_45">Feature</h3>
 <p>In the BigQuery console, in the <strong>Welcome</strong> tab, you can now try the <a href="https://cloud.google.com/bigquery/docs/bigquery-web-ui#run_spark_notebook_demo_guide">Apache Spark demo notebook</a> that walks you through the basics of Spark notebook and showcases <a href="https://cloud.google.com/bigquery/docs/use-spark">serverless Spark in BigQuery</a>. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
 <hr />
 <h2 id="2025-05-29">2025-05-29</h2>
-<h3 id="feature_43">Feature</h3>
+<h3 id="feature_46">Feature</h3>
 <p>You can now use the <code>dbt-bigquery</code> adapter to run Python code that's defined in BigQuery DataFrames. For more information, see <a href="https://cloud.google.com/bigquery/docs/dataframes-dbt">Use BigQuery DataFrames in dbt</a>. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">preview</a>.</p>
-<h3 id="feature_44">Feature</h3>
+<h3 id="feature_47">Feature</h3>
 <p>You can now use your Google Account user credentials to authorize the creation, scheduling, and running of pipelines as well as the scheduling of notebooks and data preparations. For more information, see <a href="https://cloud.google.com/bigquery/docs/schedule-pipelines#create-schedule">Create a pipeline schedule</a>. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">preview</a>.</p>
-<h3 id="feature_45">Feature</h3>
+<h3 id="feature_48">Feature</h3>
 <p>You can now create <a href="https://cloud.google.com/bigquery/docs/event-driven-transfer">event-driven transfers</a> when transferring data from Cloud Storage to BigQuery. Event-driven transfers can automatically trigger transfer runs when data in your Cloud Storage bucket has been modified or added. This feature is <a href="https://cloud.google.com/products/#product-launch-stages">generally available</a> (GA).</p>
 <hr />
 <h2 id="2025-05-28">2025-05-28</h2>
-<h3 id="feature_46">Feature</h3>
+<h3 id="feature_49">Feature</h3>
 <p>You can now create a <a href="https://cloud.google.com/bigquery/docs/use-spark">serverless Spark session and run PySpark code in a BigQuery notebook</a>. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
-<h3 id="feature_47">Feature</h3>
+<h3 id="feature_50">Feature</h3>
 <p>Column metadata indexing is now available for both <a href="https://cloud.google.com/bigquery/docs/metadata-indexing-managed-tables">BigQuery tables</a> and <a href="https://cloud.google.com/bigquery/docs/metadata-caching-external-tables">external tables</a>. This feature is <a href="https://cloud.google.com/products/#product-launch-stages">generally available</a> (GA).</p>
 <hr />
 <h2 id="2025-05-27">2025-05-27</h2>
-<h3 id="feature_48">Feature</h3>
+<h3 id="feature_51">Feature</h3>
 <p>You can now <a href="https://cloud.google.com/bigquery/docs/analytics-hub-stream-sharing">share Pub/Sub streaming data through BigQuery sharing</a> with additional <a href="https://cloud.google.com/bigquery/docs/reference/analytics-hub">client libraries</a> support and provider usage metrics. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
-<h3 id="feature_49">Feature</h3>
+<h3 id="feature_52">Feature</h3>
 <p>BigQuery offers <a href="https://cloud.google.com/bigquery/docs/running-queries#optional-job-creation">optional job creation mode</a> to speed up small queries that you use in your dashboards, data exploration, and other workflows. This mode automatically optimizes eligible queries and uses a cache to improve latency. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
@@ -2031,6 +2041,9 @@ use the <code>PARTITION BY</code> clause of the
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#bigquery">BigQuery</a></li>
+          <li class="nav-item">
+            <a href="#2025-08-11" class="nav-link">2025-08-11</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-08-06" class="nav-link">2025-08-06</a>
           </li>

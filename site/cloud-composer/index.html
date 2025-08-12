@@ -1740,102 +1740,120 @@ are available in Cloud Composer 2:</p>
 <ul>
 <li>1.31.10-gke.1034000 and later</li>
 <li>1.32.4-gke.1698000 and later</li>
+<li>1.33.1-gke.1386000 and later</li>
+</ul>
+<p>Google SecOps</p>
+<hr />
+<p>### Feature</p>
+<p><strong>New YARA-L features</strong></p>
+<p>The following capabilities have been added to YARA-L 2.0 to enhance search precision, data analysis, and investigative workflows:</p>
+<ul>
 <li>
-<p>1.33.1-gke.1386000 and later</p>
-<h2 id="google-secops">Google SecOps</h2>
-<h3 id="feature_1">Feature</h3>
-<p><strong>New YARA-L features</strong></p>
-<p>The following capabilities have been added to YARA-L 2.0 to enhance search precision, data analysis, and investigative workflows:</p>
-<ul>
-<li><a href="https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-conditions"><strong>Conditions in UDM search and dashboards</strong></a></li>
-</ul>
+<p><a href="https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-conditions"><strong>Conditions in UDM search and dashboards</strong></a></p>
 <p>You can now filter aggregates defined in the <code>outcome</code> section using the new <code>condition</code> clause. This gives you more precise control over your results and supports more targeted investigations.</p>
 <ul>
 <li>New functionality includes support for <code>OR</code> and <code>n</code> of <code>[a, b, c.. z]</code> expressions.</li>
-<li>General availability for search and dashboards.</li>
+<li>General availability for search and dashboards.<ul>
 <li><a href="https://cloud.google.com/chronicle/docs/investigation/deduplication-yaral"><strong>Deduplicate events in searches and dashboards</strong></a></li>
 </ul>
-<p>The new <code>dedup</code> section lets you remove duplicate events after the <code>match</code> clause in both standard UDM searches and YARA-L 2.0 queries.</p>
-<p>General availability for search and dashboards.
-+ <a href="https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-metrics-search"><strong>Use metrics functions in UDM searches</strong></a></p>
-<p>You can now apply <code>metrics</code> functions in the <code>outcome</code> section of your search to access aggregated historical data directly in your search queries.</p>
-<ul>
-<li>Uses the same syntax as <code>metrics</code> in rules.</li>
-<li>General availability for search.</li>
-<li><a href="https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-syntax#aggregations"><strong>Increased limits for array and array_distinct</strong></a></li>
-</ul>
-<p>The element limit for <code>array</code> and <code>array_distinct</code> aggregation functions in YARA-L has increased from 25 to 1,000.</p>
-<ul>
-<li>General availability for search and dashboards.</li>
-<li>Private preview for rules.</li>
-<li><strong>Restrict search results using limit</strong></li>
-</ul>
-<p>The <code>limit</code> keyword now lets you restrict the number of results returned by a search. Use this to quickly preview data, optimize performance, or focus on a subset of results.</p>
-<p>General availability for search and dashboards.
-+ <a href="https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#earliest"><strong><code>earliest</code></strong></a> and <a href="https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#latest"><strong><code>latest</code></strong></a> <strong>timestamps</strong></p>
-<p>New <code>earliest</code> and <code>latest</code> timestamps let you extract the time range of your data (within microseconds) during aggregation.</p>
-<p>General availability for search.
-+ <strong>Layer aggregations and analytics across multi-stage queries</strong></p>
-<p>Recent updates to multi-stage queries let you:</p>
-<ul>
-<li>Layer aggregations and data statistical functions. Calculate baselines, deviations, and trends across multiple stages of data processing.</li>
-<li>Conduct joins both within and across stages.</li>
-</ul>
-<p>Private preview for search and dashboards. Contact your Google SecOps representative to enroll.
-+ <strong>Join events, the entity graph, and data tables</strong></p>
-<p>You can now perform Inner joins between events, the entity graph, and data tables. These queries require a <code>match</code> clause for these joins and return results as statistics.</p>
-<p>Private preview for search and dashboards. Contact your Google SecOps representative to enroll.</p>
-<h2 id="google-secops-siem">Google SecOps SIEM</h2>
-<h3 id="feature_2">Feature</h3>
-<p><strong>New YARA-L features</strong></p>
-<p>The following capabilities have been added to YARA-L 2.0 to enhance search precision, data analysis, and investigative workflows:</p>
-<ul>
-<li><a href="https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-conditions"><strong>Conditions in UDM search and dashboards</strong></a></li>
-</ul>
-<p>You can now filter aggregates defined in the <code>outcome</code> section using the new <code>condition</code> clause. This gives you more precise control over your results and supports more targeted investigations.</p>
-<ul>
-<li>New functionality includes support for <code>OR</code> and <code>n</code> of <code>[a, b, c.. z]</code> expressions.</li>
-<li>General availability for search and dashboards.</li>
-<li><a href="https://cloud.google.com/chronicle/docs/investigation/deduplication-yaral"><strong>Deduplicate events in searches and dashboards</strong></a></li>
-</ul>
-<p>The new <code>dedup</code> section lets you remove duplicate events after the <code>match</code> clause in both standard UDM searches and YARA-L 2.0 queries.</p>
-<p>General availability for search and dashboards.
-+ <a href="https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-metrics-search"><strong>Use metrics functions in UDM searches</strong></a></p>
-<p>You can now apply <code>metrics</code> functions in the <code>outcome</code> section of your search to access aggregated historical data directly in your search queries.</p>
-<ul>
-<li>Uses the same syntax as <code>metrics</code> in rules.</li>
-<li>General availability for search.</li>
-<li><a href="https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-syntax#aggregations"><strong>Increased limits for array and array_distinct</strong></a></li>
-</ul>
-<p>The element limit for <code>array</code> and <code>array_distinct</code> aggregation functions in YARA-L has increased from 25 to 1,000.</p>
-<ul>
-<li>General availability for search and dashboards.</li>
-<li>Private preview for rules.</li>
-<li><strong>Restrict search results using limit</strong></li>
-</ul>
-<p>The <code>limit</code> keyword now lets you restrict the number of results returned by a search. Use this to quickly preview data, optimize performance, or focus on a subset of results.</p>
-<p>General availability for search and dashboards.
-+ <a href="https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#earliest"><strong><code>earliest</code></strong></a> and <a href="https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#latest"><strong><code>latest</code></strong></a> <strong>timestamps</strong></p>
-<p>New <code>earliest</code> and <code>latest</code> timestamps let you extract the time range of your data (within microseconds) during aggregation.</p>
-<p>General availability for search.
-+ <strong>Layer aggregations and analytics across multi-stage queries</strong></p>
-<p>Recent updates to multi-stage queries let you:</p>
-<ul>
-<li>Layer aggregations and data statistical functions. Calculate baselines, deviations, and trends across multiple stages of data processing.</li>
-<li>Conduct joins both within and across stages.</li>
-</ul>
-<p>Private preview for search and dashboards. Contact your Google SecOps representative to enroll.
-+ <strong>Join events, the entity graph, and data tables</strong></p>
-<p>You can now perform Inner joins between events, the entity graph, and data tables. These queries require a <code>match</code> clause for these joins and return results as statistics.</p>
-<p>Private preview for search and dashboards. Contact your Google SecOps representative to enroll.</p>
-<h2 id="spanner">Spanner</h2>
-<h3 id="feature_3">Feature</h3>
-<p>Columnar engine for Spanner is now in Preview. Columnar engine is a storage technique used with analytics queries to speed up scans. Spanner columnar engine accelerates analytical query performance on live operational data by up to 200 times without affecting transaction workloads. This eliminates the need for ETL into separate data warehouses while maintaining strong consistency. For more information, see the <a href="https://cloud.google.com/spanner/docs/columnar-engine">Columnar engine for Spanner overview</a>.</p>
-<h2 id="vertex-ai-workbench">Vertex AI Workbench</h2>
-<h3 id="feature_4">Feature</h3>
-<p><a href="https://cloud.google.com/products#product-launch-stages">Generally available</a>: You can consume reservations with Vertex AI Workbench instances. Reservations of Compute Engine zonal resources help you gain a high level of assurance that your jobs have the necessary resources to run. For more information, see <a href="https://cloud.google.com/vertex-ai/docs/workbench/instances/reservations">Use reservations with Vertex AI Workbench instances</a>.</p>
 </li>
 </ul>
+<p>The new <code>dedup</code> section lets you remove duplicate events after the <code>match</code> clause in both standard UDM searches and YARA-L 2.0 queries.</p>
+<p>General availability for search and dashboards.
+      * <a href="https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-metrics-search"><strong>Use metrics functions in UDM searches</strong></a></p>
+<p>You can now apply <code>metrics</code> functions in the <code>outcome</code> section of your search to access aggregated historical data directly in your search queries.</p>
+<ul>
+<li>Uses the same syntax as <code>metrics</code> in rules.</li>
+<li>General availability for search.<ul>
+<li><a href="https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-syntax#aggregations"><strong>Increased limits for array and array_distinct</strong></a></li>
+</ul>
+</li>
+</ul>
+<p>The element limit for <code>array</code> and <code>array_distinct</code> aggregation functions in YARA-L has increased from 25 to 1,000.</p>
+<ul>
+<li>General availability for search and dashboards.</li>
+<li>Private preview for rules.<ul>
+<li><strong>Restrict search results using limit</strong></li>
+</ul>
+</li>
+</ul>
+<p>The <code>limit</code> keyword now lets you restrict the number of results returned by a search. Use this to quickly preview data, optimize performance, or focus on a subset of results.</p>
+<p>General availability for search and dashboards.
+      * <a href="https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#earliest"><strong><code>earliest</code></strong></a> and <a href="https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#latest"><strong><code>latest</code></strong></a> <strong>timestamps</strong></p>
+<p>New <code>earliest</code> and <code>latest</code> timestamps let you extract the time range of your data (within microseconds) during aggregation.</p>
+<p>General availability for search.
+      * <strong>Layer aggregations and analytics across multi-stage queries</strong></p>
+<p>Recent updates to multi-stage queries let you:</p>
+<ul>
+<li>Layer aggregations and data statistical functions. Calculate baselines, deviations, and trends across multiple stages of data processing.</li>
+<li>Conduct joins both within and across stages.</li>
+</ul>
+<p>Private preview for search and dashboards. Contact your Google SecOps representative to enroll.
+      * <strong>Join events, the entity graph, and data tables</strong></p>
+<p>You can now perform Inner joins between events, the entity graph, and data tables. These queries require a <code>match</code> clause for these joins and return results as statistics.</p>
+<p>Private preview for search and dashboards. Contact your Google SecOps representative to enroll.</p>
+</li>
+</ul>
+<p>Google SecOps SIEM</p>
+<hr />
+<p>### Feature</p>
+<p><strong>New YARA-L features</strong></p>
+<p>The following capabilities have been added to YARA-L 2.0 to enhance search precision, data analysis, and investigative workflows:</p>
+<ul>
+<li>
+<p><a href="https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-conditions"><strong>Conditions in UDM search and dashboards</strong></a></p>
+<p>You can now filter aggregates defined in the <code>outcome</code> section using the new <code>condition</code> clause. This gives you more precise control over your results and supports more targeted investigations.</p>
+<ul>
+<li>New functionality includes support for <code>OR</code> and <code>n</code> of <code>[a, b, c.. z]</code> expressions.</li>
+<li>General availability for search and dashboards.<ul>
+<li><a href="https://cloud.google.com/chronicle/docs/investigation/deduplication-yaral"><strong>Deduplicate events in searches and dashboards</strong></a></li>
+</ul>
+</li>
+</ul>
+<p>The new <code>dedup</code> section lets you remove duplicate events after the <code>match</code> clause in both standard UDM searches and YARA-L 2.0 queries.</p>
+<p>General availability for search and dashboards.
+      * <a href="https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-metrics-search"><strong>Use metrics functions in UDM searches</strong></a></p>
+<p>You can now apply <code>metrics</code> functions in the <code>outcome</code> section of your search to access aggregated historical data directly in your search queries.</p>
+<ul>
+<li>Uses the same syntax as <code>metrics</code> in rules.</li>
+<li>General availability for search.<ul>
+<li><a href="https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-syntax#aggregations"><strong>Increased limits for array and array_distinct</strong></a></li>
+</ul>
+</li>
+</ul>
+<p>The element limit for <code>array</code> and <code>array_distinct</code> aggregation functions in YARA-L has increased from 25 to 1,000.</p>
+<ul>
+<li>General availability for search and dashboards.</li>
+<li>Private preview for rules.<ul>
+<li><strong>Restrict search results using limit</strong></li>
+</ul>
+</li>
+</ul>
+<p>The <code>limit</code> keyword now lets you restrict the number of results returned by a search. Use this to quickly preview data, optimize performance, or focus on a subset of results.</p>
+<p>General availability for search and dashboards.
+      * <a href="https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#earliest"><strong><code>earliest</code></strong></a> and <a href="https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#latest"><strong><code>latest</code></strong></a> <strong>timestamps</strong></p>
+<p>New <code>earliest</code> and <code>latest</code> timestamps let you extract the time range of your data (within microseconds) during aggregation.</p>
+<p>General availability for search.
+      * <strong>Layer aggregations and analytics across multi-stage queries</strong></p>
+<p>Recent updates to multi-stage queries let you:</p>
+<ul>
+<li>Layer aggregations and data statistical functions. Calculate baselines, deviations, and trends across multiple stages of data processing.</li>
+<li>Conduct joins both within and across stages.</li>
+</ul>
+<p>Private preview for search and dashboards. Contact your Google SecOps representative to enroll.
+      * <strong>Join events, the entity graph, and data tables</strong></p>
+<p>You can now perform Inner joins between events, the entity graph, and data tables. These queries require a <code>match</code> clause for these joins and return results as statistics.</p>
+<p>Private preview for search and dashboards. Contact your Google SecOps representative to enroll.</p>
+</li>
+</ul>
+<p>Spanner</p>
+<hr />
+<p>### Feature</p>
+<p>Columnar engine for Spanner is now in Preview. Columnar engine is a storage technique used with analytics queries to speed up scans. Spanner columnar engine accelerates analytical query performance on live operational data by up to 200 times without affecting transaction workloads. This eliminates the need for ETL into separate data warehouses while maintaining strong consistency. For more information, see the <a href="https://cloud.google.com/spanner/docs/columnar-engine">Columnar engine for Spanner overview</a>.</p>
+<p>Vertex AI Workbench</p>
+<hr />
+<p>### Feature</p>
+<p><a href="https://cloud.google.com/products#product-launch-stages">Generally available</a>: You can consume reservations with Vertex AI Workbench instances. Reservations of Compute Engine zonal resources help you gain a high level of assurance that your jobs have the necessary resources to run. For more information, see <a href="https://cloud.google.com/vertex-ai/docs/workbench/instances/reservations">Use reservations with Vertex AI Workbench instances</a>.</p>
 </li>
 </ul>
 <hr />
@@ -1865,7 +1883,7 @@ are available in Cloud Composer 2:</p>
 </ul>
 <hr />
 <h2 id="2025-07-24">2025-07-24</h2>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_1">Feature</h3>
 <p><a href="https://cloud.google.com/composer/docs/composer-3/access-airflow-web-interface#restarting">Web server restarting</a>
 is is now generally available (GA) in Cloud Composer 2 and Cloud Composer 3.</p>
 <hr />
@@ -1898,7 +1916,7 @@ following:</p>
 </ul>
 <hr />
 <h2 id="2025-07-17">2025-07-17</h2>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p><a href="https://cloud.google.com/composer/docs/composer-3/set-up-highly-resilient-environments">Highly resilient environments</a> are now generally available (GA) in Cloud Composer 3.</p>
 <hr />
 <h2 id="2025-07-14">2025-07-14</h2>
@@ -1967,7 +1985,7 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
 </ul>
 <hr />
 <h2 id="2025-06-23">2025-06-23</h2>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>Improved the startup times of Airflow workers for environments that have a large number of custom PyPI packages installed.</p>
 <p>This feature <a href="https://cloud.google.com/composer/docs/release-notes#June_02_2025">was announced previously</a> and is gradually rolling out over several releases. In this release, it's available in asia-east2, asia-northeast3, europe-central2, europe-west9, me-central1, me-west1, northamerica-northeast1, northamerica-northeast2, northamerica-south1, and us-west1 re</p>
 <h3 id="fixed_2">Fixed</h3>
@@ -2013,7 +2031,7 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
 </ul>
 <hr />
 <h2 id="2025-06-13">2025-06-13</h2>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>Cloud Composer pages in the Cloud Console now support the dark color theme. You can switch to the dark theme on the <a href="https://console.cloud.google.com/user-preferences/appearance">Appearance page</a> in the Cloud Console.</p>
 <hr />
 <h2 id="2025-06-10">2025-06-10</h2>
@@ -2037,7 +2055,7 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
 <p>Cloud Composer version 2.8.2 has reached its <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>.</p>
 <hr />
 <h2 id="2025-06-02">2025-06-02</h2>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p>Improved the startup times of Airflow workers for environments that have a large number of custom PyPI packages installed.</p>
 <p>This change rolls out gradually. In this release, it's available in asia-east1, asia-northeast2, asia-south1, europe-north1, europe-west3, us-east1, us-south1, and us-west2 regions.</p>
 <h3 id="changed_18">Changed</h3>
@@ -2065,7 +2083,7 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
 <p>Cloud Composer version 2.8.1 has reached its <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>.</p>
 <hr />
 <h2 id="2025-05-29">2025-05-29</h2>
-<h3 id="feature_10">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p>The <a href="https://cloud.google.com/composer/docs/composer-3/run-local-airflow-environments">Composer Local Development CLI tool</a> is now available in Cloud Composer 3. This tool helps to streamline testing and developing by providing local Airflow environments based on Airflow builds used by Cloud Composer 3.</p>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
@@ -2080,18 +2098,6 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
         <li class="nav-item main"><a class="nav-link" href="#cloud-composer">Cloud Composer</a></li>
           <li class="nav-item">
             <a href="#2025-08-05" class="nav-link">2025-08-05</a>
-          </li>
-          <li class="nav-item">
-            <a href="#google-secops" class="nav-link">Google SecOps</a>
-          </li>
-          <li class="nav-item">
-            <a href="#google-secops-siem" class="nav-link">Google SecOps SIEM</a>
-          </li>
-          <li class="nav-item">
-            <a href="#spanner" class="nav-link">Spanner</a>
-          </li>
-          <li class="nav-item">
-            <a href="#vertex-ai-workbench" class="nav-link">Vertex AI Workbench</a>
           </li>
           <li class="nav-item">
             <a href="#2025-07-28" class="nav-link">2025-07-28</a>

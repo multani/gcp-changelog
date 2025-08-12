@@ -158,131 +158,131 @@ to Cloud Composer.
       * 1.32.4-gke.1698000 and later
       * 1.33.1-gke.1386000 and later
 
-        Google SecOps
-        -------------
+      Google SecOps
+      -------------
 
-        ### Feature
+      ### Feature
 
-        **New YARA-L features**
+      **New YARA-L features**
 
-        The following capabilities have been added to YARA-L 2.0 to enhance search precision, data analysis, and investigative workflows:
+      The following capabilities have been added to YARA-L 2.0 to enhance search precision, data analysis, and investigative workflows:
 
-        + [**Conditions in UDM search and dashboards**](https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-conditions)
+      * [**Conditions in UDM search and dashboards**](https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-conditions)
 
-          You can now filter aggregates defined in the `outcome` section using the new `condition` clause. This gives you more precise control over your results and supports more targeted investigations.
+        You can now filter aggregates defined in the `outcome` section using the new `condition` clause. This gives you more precise control over your results and supports more targeted investigations.
 
-          - New functionality includes support for `OR` and `n` of `[a, b, c.. z]` expressions.
-          - General availability for search and dashboards.
-        + [**Deduplicate events in searches and dashboards**](https://cloud.google.com/chronicle/docs/investigation/deduplication-yaral)
+        + New functionality includes support for `OR` and `n` of `[a, b, c.. z]` expressions.
+        + General availability for search and dashboards.
+      * [**Deduplicate events in searches and dashboards**](https://cloud.google.com/chronicle/docs/investigation/deduplication-yaral)
 
-          The new `dedup` section lets you remove duplicate events after the `match` clause in both standard UDM searches and YARA-L 2.0 queries.
+        The new `dedup` section lets you remove duplicate events after the `match` clause in both standard UDM searches and YARA-L 2.0 queries.
 
-          General availability for search and dashboards.
-        + [**Use metrics functions in UDM searches**](https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-metrics-search)
+        General availability for search and dashboards.
+      * [**Use metrics functions in UDM searches**](https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-metrics-search)
 
-          You can now apply `metrics` functions in the `outcome` section of your search to access aggregated historical data directly in your search queries.
+        You can now apply `metrics` functions in the `outcome` section of your search to access aggregated historical data directly in your search queries.
 
-          - Uses the same syntax as `metrics` in rules.
-          - General availability for search.
-        + [**Increased limits for array and array\_distinct**](https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-syntax#aggregations)
+        + Uses the same syntax as `metrics` in rules.
+        + General availability for search.
+      * [**Increased limits for array and array\_distinct**](https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-syntax#aggregations)
 
-          The element limit for `array` and `array_distinct` aggregation functions in YARA-L has increased from 25 to 1,000.
+        The element limit for `array` and `array_distinct` aggregation functions in YARA-L has increased from 25 to 1,000.
 
-          - General availability for search and dashboards.
-          - Private preview for rules.
-        + **Restrict search results using limit**
+        + General availability for search and dashboards.
+        + Private preview for rules.
+      * **Restrict search results using limit**
 
-          The `limit` keyword now lets you restrict the number of results returned by a search. Use this to quickly preview data, optimize performance, or focus on a subset of results.
+        The `limit` keyword now lets you restrict the number of results returned by a search. Use this to quickly preview data, optimize performance, or focus on a subset of results.
 
-          General availability for search and dashboards.
-        + [**`earliest`**](https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#earliest) and [**`latest`**](https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#latest) **timestamps**
+        General availability for search and dashboards.
+      * [**`earliest`**](https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#earliest) and [**`latest`**](https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#latest) **timestamps**
 
-          New `earliest` and `latest` timestamps let you extract the time range of your data (within microseconds) during aggregation.
+        New `earliest` and `latest` timestamps let you extract the time range of your data (within microseconds) during aggregation.
 
-          General availability for search.
-        + **Layer aggregations and analytics across multi-stage queries**
+        General availability for search.
+      * **Layer aggregations and analytics across multi-stage queries**
 
-          Recent updates to multi-stage queries let you:
+        Recent updates to multi-stage queries let you:
 
-          - Layer aggregations and data statistical functions. Calculate baselines, deviations, and trends across multiple stages of data processing.
-          - Conduct joins both within and across stages.
+        + Layer aggregations and data statistical functions. Calculate baselines, deviations, and trends across multiple stages of data processing.
+        + Conduct joins both within and across stages.
 
-          Private preview for search and dashboards. Contact your Google SecOps representative to enroll.
-        + **Join events, the entity graph, and data tables**
+        Private preview for search and dashboards. Contact your Google SecOps representative to enroll.
+      * **Join events, the entity graph, and data tables**
 
-          You can now perform Inner joins between events, the entity graph, and data tables. These queries require a `match` clause for these joins and return results as statistics.
+        You can now perform Inner joins between events, the entity graph, and data tables. These queries require a `match` clause for these joins and return results as statistics.
 
-          Private preview for search and dashboards. Contact your Google SecOps representative to enroll.
+        Private preview for search and dashboards. Contact your Google SecOps representative to enroll.
 
-        Google SecOps SIEM
-        ------------------
+      Google SecOps SIEM
+      ------------------
 
-        ### Feature
+      ### Feature
 
-        **New YARA-L features**
+      **New YARA-L features**
 
-        The following capabilities have been added to YARA-L 2.0 to enhance search precision, data analysis, and investigative workflows:
+      The following capabilities have been added to YARA-L 2.0 to enhance search precision, data analysis, and investigative workflows:
 
-        + [**Conditions in UDM search and dashboards**](https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-conditions)
+      * [**Conditions in UDM search and dashboards**](https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-conditions)
 
-          You can now filter aggregates defined in the `outcome` section using the new `condition` clause. This gives you more precise control over your results and supports more targeted investigations.
+        You can now filter aggregates defined in the `outcome` section using the new `condition` clause. This gives you more precise control over your results and supports more targeted investigations.
 
-          - New functionality includes support for `OR` and `n` of `[a, b, c.. z]` expressions.
-          - General availability for search and dashboards.
-        + [**Deduplicate events in searches and dashboards**](https://cloud.google.com/chronicle/docs/investigation/deduplication-yaral)
+        + New functionality includes support for `OR` and `n` of `[a, b, c.. z]` expressions.
+        + General availability for search and dashboards.
+      * [**Deduplicate events in searches and dashboards**](https://cloud.google.com/chronicle/docs/investigation/deduplication-yaral)
 
-          The new `dedup` section lets you remove duplicate events after the `match` clause in both standard UDM searches and YARA-L 2.0 queries.
+        The new `dedup` section lets you remove duplicate events after the `match` clause in both standard UDM searches and YARA-L 2.0 queries.
 
-          General availability for search and dashboards.
-        + [**Use metrics functions in UDM searches**](https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-metrics-search)
+        General availability for search and dashboards.
+      * [**Use metrics functions in UDM searches**](https://cloud.google.com/chronicle/docs/investigation/yara-l-2-0-metrics-search)
 
-          You can now apply `metrics` functions in the `outcome` section of your search to access aggregated historical data directly in your search queries.
+        You can now apply `metrics` functions in the `outcome` section of your search to access aggregated historical data directly in your search queries.
 
-          - Uses the same syntax as `metrics` in rules.
-          - General availability for search.
-        + [**Increased limits for array and array\_distinct**](https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-syntax#aggregations)
+        + Uses the same syntax as `metrics` in rules.
+        + General availability for search.
+      * [**Increased limits for array and array\_distinct**](https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-syntax#aggregations)
 
-          The element limit for `array` and `array_distinct` aggregation functions in YARA-L has increased from 25 to 1,000.
+        The element limit for `array` and `array_distinct` aggregation functions in YARA-L has increased from 25 to 1,000.
 
-          - General availability for search and dashboards.
-          - Private preview for rules.
-        + **Restrict search results using limit**
+        + General availability for search and dashboards.
+        + Private preview for rules.
+      * **Restrict search results using limit**
 
-          The `limit` keyword now lets you restrict the number of results returned by a search. Use this to quickly preview data, optimize performance, or focus on a subset of results.
+        The `limit` keyword now lets you restrict the number of results returned by a search. Use this to quickly preview data, optimize performance, or focus on a subset of results.
 
-          General availability for search and dashboards.
-        + [**`earliest`**](https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#earliest) and [**`latest`**](https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#latest) **timestamps**
+        General availability for search and dashboards.
+      * [**`earliest`**](https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#earliest) and [**`latest`**](https://cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#latest) **timestamps**
 
-          New `earliest` and `latest` timestamps let you extract the time range of your data (within microseconds) during aggregation.
+        New `earliest` and `latest` timestamps let you extract the time range of your data (within microseconds) during aggregation.
 
-          General availability for search.
-        + **Layer aggregations and analytics across multi-stage queries**
+        General availability for search.
+      * **Layer aggregations and analytics across multi-stage queries**
 
-          Recent updates to multi-stage queries let you:
+        Recent updates to multi-stage queries let you:
 
-          - Layer aggregations and data statistical functions. Calculate baselines, deviations, and trends across multiple stages of data processing.
-          - Conduct joins both within and across stages.
+        + Layer aggregations and data statistical functions. Calculate baselines, deviations, and trends across multiple stages of data processing.
+        + Conduct joins both within and across stages.
 
-          Private preview for search and dashboards. Contact your Google SecOps representative to enroll.
-        + **Join events, the entity graph, and data tables**
+        Private preview for search and dashboards. Contact your Google SecOps representative to enroll.
+      * **Join events, the entity graph, and data tables**
 
-          You can now perform Inner joins between events, the entity graph, and data tables. These queries require a `match` clause for these joins and return results as statistics.
+        You can now perform Inner joins between events, the entity graph, and data tables. These queries require a `match` clause for these joins and return results as statistics.
 
-          Private preview for search and dashboards. Contact your Google SecOps representative to enroll.
+        Private preview for search and dashboards. Contact your Google SecOps representative to enroll.
 
-        Spanner
-        -------
+      Spanner
+      -------
 
-        ### Feature
+      ### Feature
 
-        Columnar engine for Spanner is now in Preview. Columnar engine is a storage technique used with analytics queries to speed up scans. Spanner columnar engine accelerates analytical query performance on live operational data by up to 200 times without affecting transaction workloads. This eliminates the need for ETL into separate data warehouses while maintaining strong consistency. For more information, see the [Columnar engine for Spanner overview](https://cloud.google.com/spanner/docs/columnar-engine).
+      Columnar engine for Spanner is now in Preview. Columnar engine is a storage technique used with analytics queries to speed up scans. Spanner columnar engine accelerates analytical query performance on live operational data by up to 200 times without affecting transaction workloads. This eliminates the need for ETL into separate data warehouses while maintaining strong consistency. For more information, see the [Columnar engine for Spanner overview](https://cloud.google.com/spanner/docs/columnar-engine).
 
-        Vertex AI Workbench
-        -------------------
+      Vertex AI Workbench
+      -------------------
 
-        ### Feature
+      ### Feature
 
-        [Generally available](https://cloud.google.com/products#product-launch-stages): You can consume reservations with Vertex AI Workbench instances. Reservations of Compute Engine zonal resources help you gain a high level of assurance that your jobs have the necessary resources to run. For more information, see [Use reservations with Vertex AI Workbench instances](https://cloud.google.com/vertex-ai/docs/workbench/instances/reservations).
+      [Generally available](https://cloud.google.com/products#product-launch-stages): You can consume reservations with Vertex AI Workbench instances. Reservations of Compute Engine zonal resources help you gain a high level of assurance that your jobs have the necessary resources to run. For more information, see [Use reservations with Vertex AI Workbench instances](https://cloud.google.com/vertex-ai/docs/workbench/instances/reservations).
 
 ---
 ## 2025-07-28

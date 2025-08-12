@@ -1,5 +1,19 @@
 # Google SecOps SIEM
 
+## 2025-08-10
+
+### Feature
+
+**Updated permissions for accessing product-centric feeds**
+
+If you have assigned **Custom IAM Roles**, you can now grant access to the product-centric feeds by adding the following permissions to the role:
+
+* `chronicle.feedPacks.get`
+* `chronicle.feedPacks.list`
+
+To learn more about how to configure feeds using the product-centric feeds UI, see [Configure feeds by product.](https://cloud.google.com/chronicle/docs/ingestion/ingestion-entities/configure-multiple-feeds)
+
+---
 ## 2025-08-08
 
 ### Changed

@@ -1632,6 +1632,16 @@
 
 
 <h1 id="google-secops-siem">Google SecOps SIEM</h1>
+<h2 id="2025-08-10">2025-08-10</h2>
+<h3 id="feature">Feature</h3>
+<p><strong>Updated permissions for accessing product-centric feeds</strong></p>
+<p>If you have assigned <strong>Custom IAM Roles</strong>, you can now grant access to the product-centric feeds by adding the following permissions to the role:</p>
+<ul>
+<li><code>chronicle.feedPacks.get</code></li>
+<li><code>chronicle.feedPacks.list</code></li>
+</ul>
+<p>To learn more about how to configure feeds using the product-centric feeds UI, see <a href="https://cloud.google.com/chronicle/docs/ingestion/ingestion-entities/configure-multiple-feeds">Configure feeds by product.</a></p>
+<hr />
 <h2 id="2025-08-08">2025-08-08</h2>
 <h3 id="changed">Changed</h3>
 <p>Google SecOps has updated the list of supported default parsers. Parsers are updated gradually, so it might take one to four days before you see the changes reflected in your region.</p>
@@ -1807,7 +1817,7 @@
 <p>For a list of supported log types and details about default parser changes, see <a href="https://cloud.google.com/chronicle/docs/ingestion/parser-list/supported-default-parsers">Supported log types and default parsers</a>.</p>
 <hr />
 <h2 id="2025-08-05">2025-08-05</h2>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_1">Feature</h3>
 <p><strong>New YARA-L features</strong></p>
 <p>The following capabilities have been added to YARA-L 2.0 to enhance search precision, data analysis, and investigative workflows:</p>
 <ul>
@@ -1858,17 +1868,17 @@
 <p>Password Breach Event By Admin User</p>
 <p>Phishing Navigation Event Containing Suspicious Parameters In Chrome Management</p>
 <p>Chrome Password Event on Newly Observed Domain in Environment</p>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p><a href="https://cloud.google.com/chronicle/docs/event-processing/auto-extraction">Auto Extraction</a> supports XML formatted logs in addition to JSON formatted logs. This enhancement will be available starting this week.</p>
 <hr />
 <h2 id="2025-07-22">2025-07-22</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p><strong>Silent Host Monitoring</strong></p>
 <p>New configuration options are now available for Silent Host Monitoring. You can now define detection rule-based Silent Host Monitoring in SecOps using UDM fields or labels, configurable within a specified time window.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/ingestion/silent-host-monitoring">Silent host monitoring</a>.</p>
 <hr />
 <h2 id="2025-07-21">2025-07-21</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p><strong>New parser documentation now available</strong></p>
 <p>New parser documentation is available to help you ingest and normalize logs from the following sources:</p>
 <p><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tomcat">Collect Apache Tomcat logs</a></p>
@@ -1901,7 +1911,7 @@
 <p><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/trellix-ips">Collect Trellix IPS logs</a></p>
 <hr />
 <h2 id="2025-07-07">2025-07-07</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p><strong>Dashboards for enhanced visualizations and threat hunting</strong></p>
 <p>You can now use the Google SecOps Dashboards to enhance data visualization, investigations, and threat hunting.</p>
 <p>Key capabilities include:</p>
@@ -2130,16 +2140,16 @@
 <p><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/trend-micro-vision-one-workbench">Collect Trend Micro Vision One Workbench logs</a></p>
 <hr />
 <h2 id="2025-06-19">2025-06-19</h2>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p><strong>Product Centric Feed Management</strong></p>
 <p>This feature is currently in Preview.</p>
 <p>You can now configure multiple log-type feeds for the same product type on a single page. This new product-led experience simplifies the feed configuration flow and provides additional in-product guidance. For more information, see <a href="https://cloud.google.com/chronicle/docs/ingestion/ingestion-entities/configure-multiple-feeds">Configure feeds by product</a>.</p>
 <hr />
 <h2 id="2025-06-18">2025-06-18</h2>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p>You can now remove existing UDM field mappings by using parser extensions in Google SecOps.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/event-processing/using-parser-extensions#remove_udm_field_mappings_using_parser_extensions">Remove UDM field mappings using parser extensions</a> and <a href="https://cloud.google.com/chronicle/docs/event-processing/parser-extension-examples#code_snippet_remove_existing_mappings">Code snippet - Remove existing mappings</a></p>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p>New data ingestion and health dashboard widgets are now available.</p>
 <ul>
 <li><strong>Silent host monitoring</strong>: displays hosts that were active in the last 7 days, but haven't reported recently, including a count of days since their last ingestion.</li>
@@ -2329,6 +2339,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-secops-siem">Google SecOps SIEM</a></li>
+          <li class="nav-item">
+            <a href="#2025-08-10" class="nav-link">2025-08-10</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-08-08" class="nav-link">2025-08-08</a>
           </li>

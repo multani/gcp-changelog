@@ -2,13 +2,6 @@
 
 ## 2025-08-05
 
-### Announcement
-
-A new Cloud Composer release has started on **August 05, 2025**. Get ready for
-upcoming changes and features as we roll out the new release to all regions.
-This release is in progress at the moment. Listed changes and features might
-not be available in some regions yet.
-
 ### Changed
 
 *(Cloud Composer 2)* Moved the `update_fab_perms` option from `[webserver]` to
@@ -32,7 +25,7 @@ to Cloud Composer.
   are available in Cloud Composer 3:
 
   + [composer-3-airflow-2.10.5-build.11](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-11) (default)
-  + [composer-3-airflow-2.9.3-build.](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-31)
+  + [composer-3-airflow-2.9.3-build.31](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-31)
 
     ### Changed
 
@@ -287,11 +280,6 @@ to Cloud Composer.
 ---
 ## 2025-07-28
 
-### Deprecated
-
-Cloud Composer version 2.8.6 has reached its
-[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support).
-
 ### Fixed
 
 Fixed an issue that caused unexpected restarts of Airflow component workloads
@@ -317,6 +305,11 @@ are available in Cloud Composer 2:
 
 * [composer-2.13.8-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-13-8-airflow-2-10-5) (default)
 * [composer-2.13.8-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-13-8-airflow-2-9-3)
+
+### Deprecated
+
+Cloud Composer version 2.8.6 has reached its
+[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support).
 
 ---
 ## 2025-07-24

@@ -1,5 +1,20 @@
 # Gemini Code Assist
 
+## 2025-08-12
+
+### Feature
+
+
+
+### Configure Gemini Code Assist code customization in the Google Cloud Console
+
+You can now set up and manage code customization within the Google Cloud Console,
+including creating a code repository index, adding repositories to be indexed,
+and managing repository groups for granular access control. For more information,
+see
+[Configure Gemini Code Assist code customization](https://cloud.google.com/gemini/docs/codeassist/code-customization).
+
+---
 ## 2025-08-08
 
 ### Quick Preview of chat code suggestions across multiple files

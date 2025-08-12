@@ -1,5 +1,12 @@
 # Google Cloud Architecture Center
 
+## 2025-08-08
+
+### Feature
+
+(New guide) [Best practices for continuous access to Google Cloud](https://cloud.google.com/architecture/security/best-practices-continuous-access-to-google-cloud): Describes best practices for using emergency access and IdP failover to ensure continuous access to Google Cloud.
+
+---
 ## 2025-08-07
 
 ### Changed

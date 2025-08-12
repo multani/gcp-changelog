@@ -1,5 +1,12 @@
 # Google Cloud Armor
 
+## 2025-08-08
+
+### Feature
+
+Cloud Armor supports Autonomous System Numbers (ASNs) in [globally scoped edge security policies](https://cloud.google.com/armor/docs/security-policy-overview#expandable-1) for Media CDN edge cache services in Preview.
+
+---
 ## 2025-07-23
 
 ### Feature

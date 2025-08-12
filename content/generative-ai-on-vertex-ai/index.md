@@ -1,5 +1,12 @@
 # Generative AI on Vertex AI
 
+## 2025-08-08
+
+### Feature
+
+**Gemini 2.5 Flash-Lite** and **Gemini 2.5 Pro** now support supervised fine-tuning. For more information, see [About supervised fine-tuning for Gemini models](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini-supervised-tuning).
+
+---
 ## 2025-08-07
 
 ### Feature

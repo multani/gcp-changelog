@@ -1,5 +1,14 @@
 # Media CDN
 
+## 2025-08-08
+
+### Feature
+
+You can use Autonomous System Numbers (ASN) based rules from Cloud Armor for Media CDN. ASN-based rules allow you to create security policies that specifically permit or deny traffic based on the ASN of the client requesting your content. This feature is in **Preview**.
+
+For more information, see [Google Cloud Armor support](https://cloud.google.com/media-cdn/docs/overview#armor-support).
+
+---
 ## 2025-06-30
 
 ### Announcement

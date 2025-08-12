@@ -1,5 +1,14 @@
 # Cloud SQL for SQL Server
 
+## 2025-08-07
+
+### Feature
+
+Cloud SQL now offers planned maintenance and machine tier upgrades for your Cloud SQL Enterprise plus instances with near-zero downtime for eligible instances.
+
+For more information, see [Maintenance updates on Cloud SQL instances](https://cloud.google.com/sql/docs/sqlserver/maintenance#nearzero).
+
+---
 ## 2025-07-31
 
 ### Feature

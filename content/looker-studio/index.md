@@ -1,5 +1,35 @@
 # Looker Studio
 
+## 2025-08-07
+
+### Feature
+
+**Looker connector enhancements**
+
+Looker connector support for selected [calculated field functions](https://cloud.google.com/looker/docs/studio/limits-of-the-looker-connector) is now [generally available](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+**Conditional formatting in query result chips**
+
+You can now apply conditional formatting to change the background color and text color of query result chips.
+
+### Feature
+
+**Data label improvements for waterfall charts**
+
+Report creators can now specify the position of data labels for waterfall charts along with the level of data label text contrast.
+
+[Learn more about waterfall chart data label options](https://cloud.google.com/looker/docs/studio/waterfall-chart-reference).
+
+### Feature
+
+**Custom columns and custom dimensions in New Search Ads 360 Connector**
+
+The New Search Ads 360 connector now supports custom columns and custom dimensions.
+You can add any of your saved Search Ads 360 custom columns and custom dimensions to Looker Studio reports and join them with other fields in tables and charts.
+
+---
 ## 2025-07-25
 
 ### Announcement

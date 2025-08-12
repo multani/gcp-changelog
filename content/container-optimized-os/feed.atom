@@ -9,21 +9,208 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:cos-117-18613-339-26:0</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:cos-121-18867-199-19:0</id>
     <published>2025-08-06T00:00:00+00:00</published>
     <updated>2025-08-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>|  |  |  |  |
 | --- | --- | --- | --- |
 | Kernel | Docker | Containerd | <a href="https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus">GPU Drivers</a> |
-| <a href="https://cos.googlesource.com/third_party/kernel/+/63cd753c2414d04f689ed02a0630d569b6acf634">COS-6.6.97</a> | v24.0.9 | v1.7.27 | <a href="https://storage.googleapis.com/cos-tools/18613.339.26/lakitu/gpu_driver_versions.textproto">See List</a> |</p>]]></content>
-    <summary>COS-6.6.97 with Docker v24.0.9 and Container-d v1.7.27</summary>
-    <title>cos-117-18613-339-26: COS-6.6.97 release</title>
+| <a href="https://cos.googlesource.com/third_party/kernel/+/18df8a39e6aba5e6b90c546050f17ccbe17296ef">COS-6.6.97</a> | v27.5.1 | v2.0.4 | <a href="https://storage.googleapis.com/cos-tools/18867.199.19/lakitu/gpu_driver_versions.textproto">See List</a> |</p>]]></content>
+    <summary>New COS version available.</summary>
+    <title>cos-121-18867-199-19: COS 18867.199.19</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:1</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:announcement:1</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This is an LTS Refresh release.</p>]]></content>
+    <summary>This is an LTS Refresh release.</summary>
+    <title>Announcement: LTS Release</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:2</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Removed an artifact registry ping that would delay multi-user.target indefinitely for machines with no external IP address.</p>]]></content>
+    <summary>Fixed an issue where an artifact registry ping was delaying multi-user.target for machines without external IP addresses.</summary>
+    <title>Fixed: Resolved artifact registry ping delay</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:3</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.</p>]]></content>
+    <summary>Reverted a containerd change that reduced the default soft file descriptor limit for processes in containers to 1024.</summary>
+    <title>Fixed: Fixed: Soft file descriptor limit reverted</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:4</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded kubernetes to v1.32.4-gke.200.</p>]]></content>
+    <summary>Upgraded Kubernetes to v1.32.4-gke.200.</summary>
+    <title>Fixed: Kubernetes Upgrade</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:5</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded app-admin/google-guest-configs to v20250516.00.</p>]]></content>
+    <summary>v20250516.00</summary>
+    <title>Fixed: Upgraded google-guest-configs</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:6</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded app-containers/docker-credential-helpers to v0.9.3.</p>]]></content>
+    <summary>Upgraded docker-credential-helpers to v0.9.3.</summary>
+    <title>Fixed: Docker Credential Helpers Upgrade</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:7</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded dev-lang/go to v1.23.9.</p>]]></content>
+    <summary>Go upgraded to v1.23.9.</summary>
+    <title>Fixed: Go Upgrade</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:8</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Updated dev-python/requests to v2.32.4.</p>]]></content>
+    <summary>Updated dev-python/requests to v2.32.4.</summary>
+    <title>Fixed: Fixed: Updated requests library</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:9</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded virtual/logger to v0-r2.</p>]]></content>
+    <summary>Upgraded virtual/logger to v0-r2.</summary>
+    <title>Fixed: Logger upgrade</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:10</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded sys-libs/libcap to v2.76.</p>]]></content>
+    <summary>libcap upgraded to v2.76</summary>
+    <title>Fixed: libcap upgrade</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:11</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded sys-process/procps to v4.0.5-r2.</p>]]></content>
+    <summary>Upgraded sys-process/procps to v4.0.5-r2</summary>
+    <title>Fixed: Procps upgrade</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:12</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded dev-db/sqlite to v3.50.1.</p>]]></content>
+    <summary>Upgraded dev-db/sqlite to v3.50.1.</summary>
+    <title>Fixed: SQLite upgrade</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:13</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded sys-libs/libseccomp to v2.6.0-r2.</p>]]></content>
+    <summary>Upgraded sys-libs/libseccomp to v2.6.0-r2.</summary>
+    <title>Fixed: Fixed libseccomp</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:14</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded app-arch/unzip to v6.0_p29.</p>]]></content>
+    <summary>Unzip upgraded to v6.0_p29.</summary>
+    <title>Fixed: Unzip upgrade</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:15</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded dev-libs/expat to v2.7.1.</p>]]></content>
+    <summary>Upgraded expat to v2.7.1.</summary>
+    <title>Fixed: Expat upgrade</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:16</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded net-nds/rpcbind to v1.2.7.</p>]]></content>
+    <summary>Upgraded rpcbind to v1.2.7.</summary>
+    <title>Fixed: rpcbind upgrade</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:17</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded app-arch/gzip to v1.14.</p>]]></content>
+    <summary>Upgraded gzip to v1.14.</summary>
+    <title>Fixed: Gzip upgrade</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:18</id>
     <published>2025-08-06T00:00:00+00:00</published>
     <updated>2025-08-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed an issue where the cpuidle driver selected for some
@@ -35,209 +222,12 @@ machine types would cause inflated reports of high CPU usage.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:2</id>
-    <published>2025-08-06T00:00:00+00:00</published>
-    <updated>2025-08-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Updated dev-python/requests to v2.32.4.</p>]]></content>
-    <summary>Updated dev-python/requests to v2.32.4.</summary>
-    <title>Fixed: Fixed: Updated requests library</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:3</id>
-    <published>2025-08-06T00:00:00+00:00</published>
-    <updated>2025-08-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Upgraded virtual/logger to v0-r2.</p>]]></content>
-    <summary>Upgraded virtual/logger to v0-r2.</summary>
-    <title>Fixed: Logger upgrade</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:4</id>
-    <published>2025-08-06T00:00:00+00:00</published>
-    <updated>2025-08-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.</p>]]></content>
-    <summary>Nvidia driver update fixes security vulnerabilities.</summary>
-    <title>Security: Security Update</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:5</id>
-    <published>2025-08-06T00:00:00+00:00</published>
-    <updated>2025-08-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Added support for Nvidia driver version 570.172.08. This fixes CVE-2025-23279.</p>]]></content>
-    <summary>Nvidia driver security update.</summary>
-    <title>Security: Security</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:6</id>
-    <published>2025-08-06T00:00:00+00:00</published>
-    <updated>2025-08-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Upgraded net-misc/netplan to 1.1.2. This fixes
-CVE-2022-4968.</p>]]></content>
-    <summary>Upgraded net-misc/netplan to 1.1.2, fixing CVE-2022-4968.</summary>
-    <title>Security: Security update for netplan</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:7</id>
-    <published>2025-08-06T00:00:00+00:00</published>
-    <updated>2025-08-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Fixed CVE-2024-11584 in cloud-init.</p>]]></content>
-    <summary>Fixed CVE-2024-11584 in cloud-init.</summary>
-    <title>Security: Security Update</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:8</id>
-    <published>2025-08-06T00:00:00+00:00</published>
-    <updated>2025-08-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Fixed CVE-2024-6174 in cloud-init.</p>]]></content>
-    <summary>Fixed CVE-2024-6174 in cloud-init.</summary>
-    <title>Security: Security update</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:9</id>
-    <published>2025-08-06T00:00:00+00:00</published>
-    <updated>2025-08-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Patched openssl to fix CVE-2023-50782 affecting
-dev-python/cryptography.</p>]]></content>
-    <summary>Patched openssl to fix CVE-2023-50782 affecting dev-python/cryptography.</summary>
-    <title>Security: Security announcement</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:10</id>
-    <published>2025-08-06T00:00:00+00:00</published>
-    <updated>2025-08-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Upgraded dev-libs/glib to 2.82.5. This resolves
-CVE-2024-52533.</p>]]></content>
-    <summary>glib was updated to 2.82.5 to fix CVE-2024-52533.</summary>
-    <title>Security: Security Update for GLib</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:11</id>
-    <published>2025-08-06T00:00:00+00:00</published>
-    <updated>2025-08-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Upgraded dev-vcs/git to version 2.49.1. This fixes CVE-2025-48385, CVE-2025-27613, CVE-2025-27614, CVE-2025-48384, CVE-2025-46835.</p>]]></content>
-    <summary>Git version 2.49.1 addresses multiple security vulnerabilities.</summary>
-    <title>Security: Security Update for Git</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:changed:12</id>
-    <published>2025-08-06T00:00:00+00:00</published>
-    <updated>2025-08-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Runtime sysctl changes:</p>
-<ul>
-<li>Changed: fs.file-max: 811775 -&gt; 811788</li>
-</ul>]]></content>
-    <summary>Runtime sysctl changes: fs.file-max: 811775 -&gt; 811788</summary>
-    <title>Changed: Runtime sysctl changes</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:cos-113-18244-448-20:13</id>
-    <published>2025-08-06T00:00:00+00:00</published>
-    <updated>2025-08-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>|  |  |  |  |
-| --- | --- | --- | --- |
-| Kernel | Docker | Containerd | <a href="https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus">GPU Drivers</a> |
-| <a href="https://cos.googlesource.com/third_party/kernel/+/b1a3d1b003be6fec7ba7dea5a6b70bf397c567aa">COS-6.1.144</a> | v24.0.9 | v1.7.27 | <a href="https://storage.googleapis.com/cos-tools/18244.448.20/lakitu/gpu_driver_versions.textproto">See List</a> |</p>]]></content>
-    <summary>A brief overview of container runtimes and GPU driver information for COS-6.1.144.</summary>
-    <title>cos-113-18244-448-20: COS Release Notes</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:14</id>
-    <published>2025-08-06T00:00:00+00:00</published>
-    <updated>2025-08-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Updated dev-python/requests to v2.32.4.</p>]]></content>
-    <summary>Updated dev-python/requests to v2.32.4.</summary>
-    <title>Fixed: Fixed: Updated requests library</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:15</id>
-    <published>2025-08-06T00:00:00+00:00</published>
-    <updated>2025-08-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Upgraded virtual/logger to v0-r2.</p>]]></content>
-    <summary>Upgraded virtual/logger to v0-r2.</summary>
-    <title>Fixed: Logger upgrade</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:16</id>
-    <published>2025-08-06T00:00:00+00:00</published>
-    <updated>2025-08-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Upgraded sys-process/lsof to v4.99.5.</p>]]></content>
-    <summary>Upgraded sys-process/lsof to v4.99.5.</summary>
-    <title>Fixed: Fixed sys-process/lsof upgrade</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:17</id>
-    <published>2025-08-06T00:00:00+00:00</published>
-    <updated>2025-08-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.</p>]]></content>
-    <summary>Nvidia driver update fixes security vulnerabilities.</summary>
-    <title>Security: Security Update</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:18</id>
-    <published>2025-08-06T00:00:00+00:00</published>
-    <updated>2025-08-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Added support for Nvidia driver version 570.172.08. This fixes CVE-2025-23279.</p>]]></content>
-    <summary>Nvidia driver security update.</summary>
-    <title>Security: Security</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
     <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:19</id>
     <published>2025-08-06T00:00:00+00:00</published>
     <updated>2025-08-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Upgraded net-misc/netplan to 1.1.2. This fixes
-CVE-2022-4968.</p>]]></content>
-    <summary>Upgraded net-misc/netplan to 1.1.2, fixing CVE-2022-4968.</summary>
-    <title>Security: Security update for netplan</title>
+    <content type="html"><![CDATA[<p>Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.</p>]]></content>
+    <summary>Nvidia driver update fixes security vulnerabilities.</summary>
+    <title>Security: Security Update</title>
   </entry>
   <entry>
     <author>
@@ -246,9 +236,9 @@ CVE-2022-4968.</p>]]></content>
     <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:20</id>
     <published>2025-08-06T00:00:00+00:00</published>
     <updated>2025-08-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Fixed CVE-2024-11584 in cloud-init.</p>]]></content>
-    <summary>Fixed CVE-2024-11584 in cloud-init.</summary>
-    <title>Security: Security Update</title>
+    <content type="html"><![CDATA[<p>Added support for Nvidia driver version 570.172.08. This fixes CVE-2025-23279.</p>]]></content>
+    <summary>Nvidia driver security update.</summary>
+    <title>Security: Security</title>
   </entry>
   <entry>
     <author>
@@ -257,9 +247,10 @@ CVE-2022-4968.</p>]]></content>
     <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:21</id>
     <published>2025-08-06T00:00:00+00:00</published>
     <updated>2025-08-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Fixed CVE-2024-6174 in cloud-init.</p>]]></content>
-    <summary>Fixed CVE-2024-6174 in cloud-init.</summary>
-    <title>Security: Security update</title>
+    <content type="html"><![CDATA[<p>Upgraded net-misc/netplan to 1.1.2. This fixes
+CVE-2022-4968.</p>]]></content>
+    <summary>Upgraded net-misc/netplan to 1.1.2, fixing CVE-2022-4968.</summary>
+    <title>Security: Security update for netplan</title>
   </entry>
   <entry>
     <author>
@@ -268,9 +259,10 @@ CVE-2022-4968.</p>]]></content>
     <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:22</id>
     <published>2025-08-06T00:00:00+00:00</published>
     <updated>2025-08-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Fixed CVE-2024-52533 in dev-libs/glib.</p>]]></content>
-    <summary>A security fix for CVE-2024-52533 has been released.</summary>
-    <title>Security: Security Update</title>
+    <content type="html"><![CDATA[<p>Upgraded dev-libs/glib to 2.82.5. This resolves
+CVE-2024-52533.</p>]]></content>
+    <summary>glib was updated to 2.82.5 to fix CVE-2024-52533.</summary>
+    <title>Security: Security Update for GLib</title>
   </entry>
   <entry>
     <author>
@@ -287,7 +279,310 @@ CVE-2022-4968.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:changed:24</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:24</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded sqlite to v3.50.2. This resolves CVE-2025-6965.</p>]]></content>
+    <summary>Upgraded sqlite to v3.50.2.</summary>
+    <title>Security: Security Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:changed:25</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Runtime sysctl changes:</p>
+<ul>
+<li>Changed: fs.file-max: 811826 -&gt; 811817</li>
+</ul>]]></content>
+    <summary>fs.file-max changed from 811826 to 811817.</summary>
+    <title>Changed: Runtime sysctl changes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:cos-117-18613-339-26:26</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | <a href="https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus">GPU Drivers</a> |
+| <a href="https://cos.googlesource.com/third_party/kernel/+/63cd753c2414d04f689ed02a0630d569b6acf634">COS-6.6.97</a> | v24.0.9 | v1.7.27 | <a href="https://storage.googleapis.com/cos-tools/18613.339.26/lakitu/gpu_driver_versions.textproto">See List</a> |</p>]]></content>
+    <summary>COS-6.6.97 with Docker v24.0.9 and Container-d v1.7.27</summary>
+    <title>cos-117-18613-339-26: COS-6.6.97 release</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:27</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed an issue where the cpuidle driver selected for some
+machine types would cause inflated reports of high CPU usage.</p>]]></content>
+    <summary>CPU usage reports inflated.</summary>
+    <title>Fixed: Fixed CPU usage inflation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:28</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Updated dev-python/requests to v2.32.4.</p>]]></content>
+    <summary>Updated dev-python/requests to v2.32.4.</summary>
+    <title>Fixed: Fixed: Updated requests library</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:29</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded virtual/logger to v0-r2.</p>]]></content>
+    <summary>Upgraded virtual/logger to v0-r2.</summary>
+    <title>Fixed: Logger upgrade</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:30</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.</p>]]></content>
+    <summary>Nvidia driver update fixes security vulnerabilities.</summary>
+    <title>Security: Security Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:31</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Added support for Nvidia driver version 570.172.08. This fixes CVE-2025-23279.</p>]]></content>
+    <summary>Nvidia driver security update.</summary>
+    <title>Security: Security</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:32</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded net-misc/netplan to 1.1.2. This fixes
+CVE-2022-4968.</p>]]></content>
+    <summary>Upgraded net-misc/netplan to 1.1.2, fixing CVE-2022-4968.</summary>
+    <title>Security: Security update for netplan</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:33</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed CVE-2024-11584 in cloud-init.</p>]]></content>
+    <summary>Fixed CVE-2024-11584 in cloud-init.</summary>
+    <title>Security: Security Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:34</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed CVE-2024-6174 in cloud-init.</p>]]></content>
+    <summary>Fixed CVE-2024-6174 in cloud-init.</summary>
+    <title>Security: Security update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:35</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Patched openssl to fix CVE-2023-50782 affecting
+dev-python/cryptography.</p>]]></content>
+    <summary>Patched openssl to fix CVE-2023-50782 affecting dev-python/cryptography.</summary>
+    <title>Security: Security announcement</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:36</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded dev-libs/glib to 2.82.5. This resolves
+CVE-2024-52533.</p>]]></content>
+    <summary>glib was updated to 2.82.5 to fix CVE-2024-52533.</summary>
+    <title>Security: Security Update for GLib</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:37</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded dev-vcs/git to version 2.49.1. This fixes CVE-2025-48385, CVE-2025-27613, CVE-2025-27614, CVE-2025-48384, CVE-2025-46835.</p>]]></content>
+    <summary>Git version 2.49.1 addresses multiple security vulnerabilities.</summary>
+    <title>Security: Security Update for Git</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:changed:38</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Runtime sysctl changes:</p>
+<ul>
+<li>Changed: fs.file-max: 811775 -&gt; 811788</li>
+</ul>]]></content>
+    <summary>Runtime sysctl changes: fs.file-max: 811775 -&gt; 811788</summary>
+    <title>Changed: Runtime sysctl changes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:cos-113-18244-448-20:39</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | <a href="https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus">GPU Drivers</a> |
+| <a href="https://cos.googlesource.com/third_party/kernel/+/b1a3d1b003be6fec7ba7dea5a6b70bf397c567aa">COS-6.1.144</a> | v24.0.9 | v1.7.27 | <a href="https://storage.googleapis.com/cos-tools/18244.448.20/lakitu/gpu_driver_versions.textproto">See List</a> |</p>]]></content>
+    <summary>A brief overview of container runtimes and GPU driver information for COS-6.1.144.</summary>
+    <title>cos-113-18244-448-20: COS Release Notes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:40</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Updated dev-python/requests to v2.32.4.</p>]]></content>
+    <summary>Updated dev-python/requests to v2.32.4.</summary>
+    <title>Fixed: Fixed: Updated requests library</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:41</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded virtual/logger to v0-r2.</p>]]></content>
+    <summary>Upgraded virtual/logger to v0-r2.</summary>
+    <title>Fixed: Logger upgrade</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:42</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded sys-process/lsof to v4.99.5.</p>]]></content>
+    <summary>Upgraded sys-process/lsof to v4.99.5.</summary>
+    <title>Fixed: Fixed sys-process/lsof upgrade</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:43</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.</p>]]></content>
+    <summary>Nvidia driver update fixes security vulnerabilities.</summary>
+    <title>Security: Security Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:44</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Added support for Nvidia driver version 570.172.08. This fixes CVE-2025-23279.</p>]]></content>
+    <summary>Nvidia driver security update.</summary>
+    <title>Security: Security</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:45</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded net-misc/netplan to 1.1.2. This fixes
+CVE-2022-4968.</p>]]></content>
+    <summary>Upgraded net-misc/netplan to 1.1.2, fixing CVE-2022-4968.</summary>
+    <title>Security: Security update for netplan</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:46</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed CVE-2024-11584 in cloud-init.</p>]]></content>
+    <summary>Fixed CVE-2024-11584 in cloud-init.</summary>
+    <title>Security: Security Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:47</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed CVE-2024-6174 in cloud-init.</p>]]></content>
+    <summary>Fixed CVE-2024-6174 in cloud-init.</summary>
+    <title>Security: Security update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:48</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed CVE-2024-52533 in dev-libs/glib.</p>]]></content>
+    <summary>A security fix for CVE-2024-52533 has been released.</summary>
+    <title>Security: Security Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:49</id>
+    <published>2025-08-06T00:00:00+00:00</published>
+    <updated>2025-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded dev-vcs/git to version 2.49.1. This fixes CVE-2025-48385, CVE-2025-27613, CVE-2025-27614, CVE-2025-48384, CVE-2025-46835.</p>]]></content>
+    <summary>Git version 2.49.1 addresses multiple security vulnerabilities.</summary>
+    <title>Security: Security Update for Git</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:changed:50</id>
     <published>2025-08-06T00:00:00+00:00</published>
     <updated>2025-08-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Runtime sysctl changes:</p>
@@ -301,7 +596,7 @@ CVE-2022-4968.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:cos-109-17800-570-23:25</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:cos-109-17800-570-23:51</id>
     <published>2025-08-06T00:00:00+00:00</published>
     <updated>2025-08-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>|  |  |  |  |
@@ -315,7 +610,7 @@ CVE-2022-4968.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:26</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:52</id>
     <published>2025-08-06T00:00:00+00:00</published>
     <updated>2025-08-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Updated dev-python/requests to v2.32.4.</p>]]></content>
@@ -326,7 +621,7 @@ CVE-2022-4968.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:27</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:fixed:53</id>
     <published>2025-08-06T00:00:00+00:00</published>
     <updated>2025-08-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Upgraded sys-process/lsof to v4.99.5.</p>]]></content>
@@ -337,7 +632,7 @@ CVE-2022-4968.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:28</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:54</id>
     <published>2025-08-06T00:00:00+00:00</published>
     <updated>2025-08-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.</p>]]></content>
@@ -348,7 +643,7 @@ CVE-2022-4968.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:29</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:55</id>
     <published>2025-08-06T00:00:00+00:00</published>
     <updated>2025-08-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Added support for Nvidia driver version 570.172.08. This fixes CVE-2025-23279.</p>]]></content>
@@ -359,7 +654,7 @@ CVE-2022-4968.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:30</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:56</id>
     <published>2025-08-06T00:00:00+00:00</published>
     <updated>2025-08-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Upgraded net-misc/netplan to 1.1.2. This fixes
@@ -371,7 +666,7 @@ CVE-2022-4968.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:31</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:57</id>
     <published>2025-08-06T00:00:00+00:00</published>
     <updated>2025-08-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed CVE-2024-11584 in cloud-init.</p>]]></content>
@@ -382,7 +677,7 @@ CVE-2022-4968.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:32</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:58</id>
     <published>2025-08-06T00:00:00+00:00</published>
     <updated>2025-08-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed CVE-2024-6174 in cloud-init.</p>]]></content>
@@ -393,7 +688,7 @@ CVE-2022-4968.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:33</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:59</id>
     <published>2025-08-06T00:00:00+00:00</published>
     <updated>2025-08-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Patched openssl to fix CVE-2023-50782 affecting
@@ -405,7 +700,7 @@ dev-python/cryptography.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:34</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:security:60</id>
     <published>2025-08-06T00:00:00+00:00</published>
     <updated>2025-08-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Upgraded dev-vcs/git to version 2.49.1. This fixes CVE-2025-48385, CVE-2025-27613, CVE-2025-27614, CVE-2025-48384, CVE-2025-46835.</p>]]></content>
@@ -416,7 +711,7 @@ dev-python/cryptography.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:changed:35</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-06:changed:61</id>
     <published>2025-08-06T00:00:00+00:00</published>
     <updated>2025-08-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Runtime sysctl changes:</p>

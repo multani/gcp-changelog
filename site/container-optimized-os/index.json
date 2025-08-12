@@ -3,6 +3,214 @@
   "entries": {
     "2025-08-06": [
       {
+        "kind": "cos-121-18867-199-19",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.97](https://cos.googlesource.com/third_party/kernel/+/18df8a39e6aba5e6b90c546050f17ccbe17296ef ) | v27.5.1 | v2.0.4 | [See List](https://storage.googleapis.com/cos-tools/18867.199.19/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 18867.199.19",
+          "summary": "New COS version available."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "This is an LTS Refresh release.",
+        "summary": {
+          "title": "LTS Release",
+          "summary": "This is an LTS Refresh release."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Removed an artifact registry ping that would delay multi-user.target indefinitely for machines with no external IP address.",
+        "summary": {
+          "title": "Resolved artifact registry ping delay",
+          "summary": "Fixed an issue where an artifact registry ping was delaying multi-user.target for machines without external IP addresses."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.",
+        "summary": {
+          "title": "Fixed: Soft file descriptor limit reverted",
+          "summary": "Reverted a containerd change that reduced the default soft file descriptor limit for processes in containers to 1024."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded kubernetes to v1.32.4-gke.200.",
+        "summary": {
+          "title": "Kubernetes Upgrade",
+          "summary": "Upgraded Kubernetes to v1.32.4-gke.200."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/google-guest-configs to v20250516.00.",
+        "summary": {
+          "title": "Upgraded google-guest-configs",
+          "summary": "v20250516.00"
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-containers/docker-credential-helpers to v0.9.3.",
+        "summary": {
+          "title": "Docker Credential Helpers Upgrade",
+          "summary": "Upgraded docker-credential-helpers to v0.9.3."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-lang/go to v1.23.9.",
+        "summary": {
+          "title": "Go Upgrade",
+          "summary": "Go upgraded to v1.23.9."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated dev-python/requests to v2.32.4.",
+        "summary": {
+          "title": "Fixed: Updated requests library",
+          "summary": "Updated dev-python/requests to v2.32.4."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded virtual/logger to v0-r2.",
+        "summary": {
+          "title": "Logger upgrade",
+          "summary": "Upgraded virtual/logger to v0-r2."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-libs/libcap to v2.76.",
+        "summary": {
+          "title": "libcap upgrade",
+          "summary": "libcap upgraded to v2.76"
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-process/procps to v4.0.5-r2.",
+        "summary": {
+          "title": "Procps upgrade",
+          "summary": "Upgraded sys-process/procps to v4.0.5-r2"
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-db/sqlite to v3.50.1.",
+        "summary": {
+          "title": "SQLite upgrade",
+          "summary": "Upgraded dev-db/sqlite to v3.50.1."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-libs/libseccomp to v2.6.0-r2.",
+        "summary": {
+          "title": "Fixed libseccomp",
+          "summary": "Upgraded sys-libs/libseccomp to v2.6.0-r2."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-arch/unzip to v6.0\\_p29.",
+        "summary": {
+          "title": "Unzip upgrade",
+          "summary": "Unzip upgraded to v6.0_p29."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/expat to v2.7.1.",
+        "summary": {
+          "title": "Expat upgrade",
+          "summary": "Upgraded expat to v2.7.1."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-nds/rpcbind to v1.2.7.",
+        "summary": {
+          "title": "rpcbind upgrade",
+          "summary": "Upgraded rpcbind to v1.2.7."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-arch/gzip to v1.14.",
+        "summary": {
+          "title": "Gzip upgrade",
+          "summary": "Upgraded gzip to v1.14."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed an issue where the cpuidle driver selected for some\nmachine types would cause inflated reports of high CPU usage.",
+        "summary": {
+          "title": "Fixed CPU usage inflation",
+          "summary": "CPU usage reports inflated."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Nvidia driver update fixes security vulnerabilities."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Added support for Nvidia driver version 570.172.08. This fixes CVE-2025-23279.",
+        "summary": {
+          "title": "Security",
+          "summary": "Nvidia driver security update."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded net-misc/netplan to 1.1.2. This fixes\nCVE-2022-4968.",
+        "summary": {
+          "title": "Security update for netplan",
+          "summary": "Upgraded net-misc/netplan to 1.1.2, fixing CVE-2022-4968."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded dev-libs/glib to 2.82.5. This resolves\nCVE-2024-52533.",
+        "summary": {
+          "title": "Security Update for GLib",
+          "summary": "glib was updated to 2.82.5 to fix CVE-2024-52533."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded dev-vcs/git to version 2.49.1. This fixes CVE-2025-48385, CVE-2025-27613, CVE-2025-27614, CVE-2025-48384, CVE-2025-46835.",
+        "summary": {
+          "title": "Security Update for Git",
+          "summary": "Git version 2.49.1 addresses multiple security vulnerabilities."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded sqlite to v3.50.2. This resolves CVE-2025-6965.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Upgraded sqlite to v3.50.2."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811826 -> 811817",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "fs.file-max changed from 811826 to 811817."
+        }
+      },
+      {
         "kind": "cos-117-18613-339-26",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.97](https://cos.googlesource.com/third_party/kernel/+/63cd753c2414d04f689ed02a0630d569b6acf634 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18613.339.26/lakitu/gpu_driver_versions.textproto) |",
         "summary": {

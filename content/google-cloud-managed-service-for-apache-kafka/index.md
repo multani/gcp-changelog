@@ -1,5 +1,12 @@
 # Google Cloud Managed Service for Apache Kafka
 
+## 2025-07-15
+
+### Feature
+
+The Google Cloud Managed Service for Apache Kafka service creates new brokers automatically based on the memory and vCPU configuration of the cluster. When you update a cluster's size, the service now performs a safety check to verify that individual brokers have sufficient capacity for their portion of the traffic. For more information, see [Update the memory and vCPUs](https://cloud.google.com/managed-service-for-apache-kafka/docs/update-cluster#update-memory-vCPUs).
+
+---
 ## 2025-07-09
 
 ### Feature

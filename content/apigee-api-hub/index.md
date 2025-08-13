@@ -1,5 +1,18 @@
 # Apigee API hub
 
+## 2025-08-12
+
+### Feature
+
+**API observations in API hub ([Preview](https://cloud.google.com/products#product-launch-stages))**
+
+API observations in API hub helps you tackle the challenges of API undocumented and unmanaged APIs in your API infrastructure. It leverages Apigee [shadow API discovery](https://cloud.google.com/apigee/docs/api-observation/shadow-api-discovery) and uses automated discovery processes to bring all your APIs, **across Google Cloud projects**, into a unified, managed view.
+
+For more information, see [API observations in API hub](https://cloud.google.com/apigee/docs/apihub/api-observation-overview).
+
+**Note:** Rollouts of this feature will begin today, and may take five or more business days to be completed across all Google Cloud zones. You may not be able to view or use API observations until the rollout is complete. 
+
+---
 ## 2025-07-31
 
 ### Feature

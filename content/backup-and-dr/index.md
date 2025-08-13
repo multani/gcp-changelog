@@ -1,5 +1,14 @@
 # Backup and DR
 
+## 2025-08-12
+
+### Announcement
+
+Announcing the General Availability (GA) of Backup Vault support for independent Persistent Disks and Hyperdisks!
+
+This new capability empowers you to protect application data, databases, and file shares stored on individual disks (where a full VM backup is not required) — all within a secure, immutable, logically air-gapped vault designed to withstand malicious deletion and advanced threats like ransomware.
+
+---
 ## 2025-07-31
 
 ### Announcement

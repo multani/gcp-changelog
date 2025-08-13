@@ -1,5 +1,12 @@
 # BigQuery
 
+## 2025-08-12
+
+### Feature
+
+You can now [save query results to Cloud Storage](https://cloud.google.com/bigquery/docs/export-file#saving-query-results-to-cloud-storage). This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+---
 ## 2025-08-11
 
 ### Feature

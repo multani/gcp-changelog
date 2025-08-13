@@ -1,5 +1,12 @@
 # Cloud Storage
 
+## 2025-08-12
+
+### Feature
+
+You can now use Anywhere Cache in the `asia-south1-b` and `asia-south1-c` zones. For more information, see [Anywhere Cache supported locations](https://cloud.google.com/storage/docs/anywhere-cache#supported-locations).
+
+---
 ## 2025-08-11
 
 ### Libraries

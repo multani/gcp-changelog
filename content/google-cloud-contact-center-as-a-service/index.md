@@ -1,5 +1,20 @@
 # Google Cloud Contact Center as a Service
 
+## 2025-08-11
+
+### Announcement
+
+**Availability in three additional regions**
+
+Google Cloud CCaaS is now available in the following three additional regions:
+
+* northamerica-northeast2 (Toronto)
+* us-east4 (Virginia)
+* me-west1 (Tel Aviv)
+
+In each of these regions, Workforce Management is available and advanced reporting isn't available. For more information, see [Google Cloud regions](https://cloud.google.com/contact-center/ccai-platform/docs/localities#regions).
+
+---
 ## 2025-07-24
 
 ### Announcement

@@ -1,5 +1,30 @@
 # Dataproc
 
+## 2025-08-12
+
+### Announcement
+
+New [Dataproc Serverless for Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
+
+* 1.2.56
+* 2.2.56
+* 2.3.7
+
+### Feature
+
+**Dataproc on Compute Engine**: **[Sharing checkpoint diagnostic data:](https://cloud.google.com/dataproc/docs/support/diagnose-clusters#enable_and_share_checkpoint_diagnostic_data)** Setting the [`dataproc:diagnostic.capture.access=GOOGLE_DATAPROC_DIAGNOSE`](https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/cluster-properties#dataproc_service_properties_table) property during cluster creation shares all of the [temp bucket](https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/staging-bucket) contents with Google Cloud support if [uniform bucket-level access](https://cloud.google.com/storage/docs/uniform-bucket-level-access) is enabled on temp bucket. If object-level access control is in effect on the temp bucket, only the [checkpoint diagnostic data folder](https://cloud.google.com/dataproc/docs/support/diagnose-clusters#checkpoint_data_location) corresponding to the cluster in Cloud Storage is shared.
+
+---
+## 2025-08-11
+
+### Announcement
+
+New [Dataproc on Compute Engine subminor image versions](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):
+
+* 2.1.93-debian11, 2.1.93-rocky8, 2.1.93-ubuntu20, 2.1.93-ubuntu20-arm
+* 2.2.61-debian12, 2.2.61-rocky9, 2.2.61-ubuntu22
+
+---
 ## 2025-07-31
 
 ### Announcement

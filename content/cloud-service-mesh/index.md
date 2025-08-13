@@ -1,5 +1,16 @@
 # Cloud Service Mesh
 
+## 2025-08-12
+
+### Announcement
+
+The following images are now rolling out for managed Cloud Service Mesh:
+
+* 1.21.5-asm.55 is rolling out to the rapid release channel.
+* 1.20.8-asm.48 is rolling out to the regular release channel.
+* 1.19.10-asm.48 is rolling out to the stable release channel.
+
+---
 ## 2025-07-25
 
 ### Feature

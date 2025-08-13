@@ -1,6 +1,40 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2025-08-12": [
+      {
+        "kind": "Feature",
+        "content": "Starting with GKE version 1.33.1-gke.1231000, you can view\nKubeRay Operator addon logs. These logs are available by default in\nCloud Logging when the Ray operator addon is enabled in GKE.\nThis integration helps you to monitor and debug the Ray Operator. Previously,\naccessing these logs required more complex steps. To view the logs, navigate to\nCloud Logging Logs Explorer in the Google Cloud console and run a query to filter\nfor the Ray Operator logs for your specific cluster.\n\nFor more information, see [View Ray Operator logs on GKE](https://cloud.google.com/kubernetes-engine/docs/add-on/ray-on-gke/how-to/view-ray-operator-logs).",
+        "summary": {
+          "title": "KubeRay Operator Logs",
+          "summary": "View KubeRay Operator addon logs in Cloud Logging."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Starting on August 1, 2025, the Performance HorizontalPodAutoscaler profile is\nenabled by default for GKE Standard clusters that run\nGKE version 1.33.2-gke.4605000 and later and meet all of the\n[Performance profile requirements](https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#requirements_2).\nThe Performance profile improves the reaction time, speed, and scalability of\nthe Horizontal Pod Autoscaler. You can optionally\n[disable the Performance profile](https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#disable_the_performance_hpa_profile).",
+        "summary": {
+          "title": "GKE Horizontal Pod Autoscaler Performance Profile Enabled by Default",
+          "summary": "The Horizontal Pod Autoscaler performance profile is now the default for GKE Standard clusters on version 1.33.2-gke.4605000 and later. This change enhances the autoscaler's reaction time, speed, and scalability. You can disable this profile if needed."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Starting with GKE version 1.33.1-gke.1231000, you can view\nKubeRay Operator addon logs. These logs are available by default in\nCloud Logging when the Ray operator addon is enabled in GKE.\nThis integration helps you to monitor and debug the Ray Operator. Previously,\naccessing these logs required more complex steps. To view the logs, navigate to\nCloud Logging Logs Explorer in the Google Cloud console and run a query to filter\nfor the Ray Operator logs for your specific cluster.\n\nFor more information, see [View Ray Operator logs on GKE](https://cloud.google.com/kubernetes-engine/docs/add-on/ray-on-gke/how-to/view-ray-operator-logs).",
+        "summary": {
+          "title": "KubeRay Operator Logs Available",
+          "summary": "View KubeRay Operator addon logs in Cloud Logging."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Starting on August 1, 2025, the Performance HorizontalPodAutoscaler profile is\nenabled by default for GKE Standard clusters that run\nGKE version 1.33.2-gke.4605000 and later and meet all of the\n[Performance profile requirements](https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#requirements_2).\nThe Performance profile improves the reaction time, speed, and scalability of\nthe Horizontal Pod Autoscaler. You can optionally\n[disable the Performance profile](https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#disable_the_performance_hpa_profile).",
+        "summary": {
+          "title": "GKE Performance Profile Update",
+          "summary": "The GKE Horizontal Pod Autoscaler now defaults to the Performance profile for enhanced scalability and reaction time on supported versions."
+        }
+      }
+    ],
     "2025-08-08": [
       {
         "kind": "Feature",
@@ -188,6 +222,14 @@
       },
       {
         "kind": "Feature",
+        "content": "In GKE version 1.33.1-gke.1788000 and later, you can target specific reservation\nsub-blocks in a reservation block by using the\n[`reservationSubBlock` field in compute classes](https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#reservationSubBlock).",
+        "summary": {
+          "title": "GKE Feature Update",
+          "summary": "Target specific reservation sub-blocks in GKE."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "In GKE version 1.32.2-gke.1359000 and later, you can now configure\n[collection scheduling](https://cloud.google.com/kubernetes-engine/docs/concepts/tpus#collection-scheduling)\nfor single-host and multi-host TPU node pools by using\n[compute classes](https://cloud.google.com/kubernetes-engine/docs/concepts/about-custom-compute-classes).\nCollection scheduling lets you set a Service Level Objective (SLO) for your TPU\nworkloads.",
         "summary": {
           "title": "TPU Collection Scheduling",
@@ -203,11 +245,11 @@
         }
       },
       {
-        "kind": "Feature",
-        "content": "In GKE version 1.33.1-gke.1788000 and later, you can target specific reservation\nsub-blocks in a reservation block by using the\n[`reservationSubBlock` field in compute classes](https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#reservationSubBlock).",
+        "kind": "Announcement",
+        "content": "#### Control plane datastore maintenance\n\nStarting in May, 2025, Google is performing maintenance on the internal control\nplane datastore for all GKE clusters to improve scalability and\nreliability. We expect to complete these improvements across GKE\nby October, 2025.\n\nThis maintenance is happening gradually across all GKE clusters,\nand will occur in your clusters only during configured maintenance windows. The\nmaintenance process is expected to take approximately 15 minutes to complete\nduring your cluster's maintenance window.\n\n**Expected impact**\n\nDuring the internal control plane datastore maintenance, the\n**Kubernetes API server will be unavailable for 15 minutes**, regardless of\nwhether you use a regional cluster or a zonal cluster. During this 15-minute\nperiod, you won't be able to interact with the Kubernetes API server for your\ncluster.\n\nConsider the following potential disruptions to your normal workflows during the\nmaintenance window for your cluster:\n\n* **Kubernetes API unavailability**: you can't use the `kubectl` tool or any\n  other Kubernetes API client to issue commands to the control plane,\n  regardless of whether the cluster is regional or zonal. Attempts to deploy,\n  modify, or query resources by using the Kubernetes API will fail during this\n  period.\n* **Halted deployments:** automated deployment pipelines (CI/CD) that interact\n  with the Kubernetes API will fail to complete tasks such as deploying or\n  updating applications in the cluster.\n* **Google Cloud console limitations**: operations for the cluster in the\n  Google Cloud console that communicate with the Kubernetes API might fail\n  during the maintenance period.\n* **Delayed control plane automation**: features that are managed by the\n  control plane, such as the cluster autoscaler, Horizontal or Vertical\n  Pod Autoscaling adjustments, or some node auto-repair operations might be\n  paused until the API server is online.\n\nThe following resources have no expected impact during the maintenance period:\n\n* **Running applications**: any running applications and services on your\n  nodes should continue to function without interruptions.\n* **Node pool operations**: existing nodes should remain connected and\n  operational.\n* **Network traffic**: traffic in the data plane, such as traffic to and from\n  your running workloads, shouldn't be affected.\n\n**What you need to do**\n\nNo action is required from you for the maintenance to occur. To plan for this\nmaintenance, we recommend that you do the following:\n\n* **Review maintenance windows**: review your cluster's\n  [maintenance window and exclusions settings](https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions)\n  and schedule maintenance windows during periods that minimize disruptions to\n  your normal workflows.\n* **Plan for Kubernetes API unavailability**: if you run critical operations\n  in your cluster that require access to the Kubernetes API, avoid scheduling\n  these operations during maintenance windows.",
         "summary": {
-          "title": "GKE Feature Update",
-          "summary": "Target specific reservation sub-blocks in GKE."
+          "title": "GKE Control Plane Datastore Maintenance",
+          "summary": "Maintenance on internal control plane datastore for GKE clusters to improve scalability and reliability. The Kubernetes API server will be unavailable for 15 minutes during the maintenance window. Running applications and network traffic will not be affected. No action is required from you, but review your maintenance windows and plan for API unavailability."
         }
       },
       {
@@ -216,14 +258,6 @@
         "summary": {
           "title": "Persistent Disk CSI driver error fixed",
           "summary": "Persistent Disk CSI driver invalid CPU error fixed in GKE."
-        }
-      },
-      {
-        "kind": "Announcement",
-        "content": "#### Control plane datastore maintenance\n\nStarting in May, 2025, Google is performing maintenance on the internal control\nplane datastore for all GKE clusters to improve scalability and\nreliability. We expect to complete these improvements across GKE\nby October, 2025.\n\nThis maintenance is happening gradually across all GKE clusters,\nand will occur in your clusters only during configured maintenance windows. The\nmaintenance process is expected to take approximately 15 minutes to complete\nduring your cluster's maintenance window.\n\n**Expected impact**\n\nDuring the internal control plane datastore maintenance, the\n**Kubernetes API server will be unavailable for 15 minutes**, regardless of\nwhether you use a regional cluster or a zonal cluster. During this 15-minute\nperiod, you won't be able to interact with the Kubernetes API server for your\ncluster.\n\nConsider the following potential disruptions to your normal workflows during the\nmaintenance window for your cluster:\n\n* **Kubernetes API unavailability**: you can't use the `kubectl` tool or any\n  other Kubernetes API client to issue commands to the control plane,\n  regardless of whether the cluster is regional or zonal. Attempts to deploy,\n  modify, or query resources by using the Kubernetes API will fail during this\n  period.\n* **Halted deployments:** automated deployment pipelines (CI/CD) that interact\n  with the Kubernetes API will fail to complete tasks such as deploying or\n  updating applications in the cluster.\n* **Google Cloud console limitations**: operations for the cluster in the\n  Google Cloud console that communicate with the Kubernetes API might fail\n  during the maintenance period.\n* **Delayed control plane automation**: features that are managed by the\n  control plane, such as the cluster autoscaler, Horizontal or Vertical\n  Pod Autoscaling adjustments, or some node auto-repair operations might be\n  paused until the API server is online.\n\nThe following resources have no expected impact during the maintenance period:\n\n* **Running applications**: any running applications and services on your\n  nodes should continue to function without interruptions.\n* **Node pool operations**: existing nodes should remain connected and\n  operational.\n* **Network traffic**: traffic in the data plane, such as traffic to and from\n  your running workloads, shouldn't be affected.\n\n**What you need to do**\n\nNo action is required from you for the maintenance to occur. To plan for this\nmaintenance, we recommend that you do the following:\n\n* **Review maintenance windows**: review your cluster's\n  [maintenance window and exclusions settings](https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions)\n  and schedule maintenance windows during periods that minimize disruptions to\n  your normal workflows.\n* **Plan for Kubernetes API unavailability**: if you run critical operations\n  in your cluster that require access to the Kubernetes API, avoid scheduling\n  these operations during maintenance windows.",
-        "summary": {
-          "title": "GKE Control Plane Datastore Maintenance",
-          "summary": "Maintenance on internal control plane datastore for GKE clusters to improve scalability and reliability. The Kubernetes API server will be unavailable for 15 minutes during the maintenance window. Running applications and network traffic will not be affected. No action is required from you, but review your maintenance windows and plan for API unavailability."
         }
       }
     ],

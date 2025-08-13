@@ -1,5 +1,52 @@
 # Google Kubernetes Engine
 
+## 2025-08-12
+
+### Feature
+
+Starting with GKE version 1.33.1-gke.1231000, you can view
+KubeRay Operator addon logs. These logs are available by default in
+Cloud Logging when the Ray operator addon is enabled in GKE.
+This integration helps you to monitor and debug the Ray Operator. Previously,
+accessing these logs required more complex steps. To view the logs, navigate to
+Cloud Logging Logs Explorer in the Google Cloud console and run a query to filter
+for the Ray Operator logs for your specific cluster.
+
+For more information, see [View Ray Operator logs on GKE](https://cloud.google.com/kubernetes-engine/docs/add-on/ray-on-gke/how-to/view-ray-operator-logs).
+
+### Feature
+
+Starting on August 1, 2025, the Performance HorizontalPodAutoscaler profile is
+enabled by default for GKE Standard clusters that run
+GKE version 1.33.2-gke.4605000 and later and meet all of the
+[Performance profile requirements](https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#requirements_2).
+The Performance profile improves the reaction time, speed, and scalability of
+the Horizontal Pod Autoscaler. You can optionally
+[disable the Performance profile](https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#disable_the_performance_hpa_profile).
+
+### Feature
+
+Starting with GKE version 1.33.1-gke.1231000, you can view
+KubeRay Operator addon logs. These logs are available by default in
+Cloud Logging when the Ray operator addon is enabled in GKE.
+This integration helps you to monitor and debug the Ray Operator. Previously,
+accessing these logs required more complex steps. To view the logs, navigate to
+Cloud Logging Logs Explorer in the Google Cloud console and run a query to filter
+for the Ray Operator logs for your specific cluster.
+
+For more information, see [View Ray Operator logs on GKE](https://cloud.google.com/kubernetes-engine/docs/add-on/ray-on-gke/how-to/view-ray-operator-logs).
+
+### Feature
+
+Starting on August 1, 2025, the Performance HorizontalPodAutoscaler profile is
+enabled by default for GKE Standard clusters that run
+GKE version 1.33.2-gke.4605000 and later and meet all of the
+[Performance profile requirements](https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#requirements_2).
+The Performance profile improves the reaction time, speed, and scalability of
+the Horizontal Pod Autoscaler. You can optionally
+[disable the Performance profile](https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#disable_the_performance_hpa_profile).
+
+---
 ## 2025-08-08
 
 ### Feature
@@ -750,6 +797,12 @@ workloads.
 
 ### Feature
 
+In GKE version 1.33.1-gke.1788000 and later, you can target specific reservation
+sub-blocks in a reservation block by using the
+[`reservationSubBlock` field in compute classes](https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#reservationSubBlock).
+
+### Feature
+
 In GKE version 1.32.2-gke.1359000 and later, you can now configure
 [collection scheduling](https://cloud.google.com/kubernetes-engine/docs/concepts/tpus#collection-scheduling)
 for single-host and multi-host TPU node pools by using
@@ -763,27 +816,6 @@ In GKE version 1.33.2-gke.1335000 and later, the
 [GKE Gateway controller](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api#gateway_controller)
 supports
 [Gateway API v1.3 CRDs](https://gateway-api.sigs.k8s.io/implementations/v1.3/).
-
-### Feature
-
-In GKE version 1.33.1-gke.1788000 and later, you can target specific reservation
-sub-blocks in a reservation block by using the
-[`reservationSubBlock` field in compute classes](https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#reservationSubBlock).
-
-### Fixed
-
-**Important:** This note is incorrect. For the correct note, see the entry for
-[August 5, 2025](#csi-fix-20250805).
-
-A fix is available for an issue in which the Compute Engine Persistent Disk CSI
-driver failed with an `invalid cpuString` error on GKE nodes that used custom
-machine types. This issue prevented successful attachment and mounting of
-Persistent Disk volumes on affected nodes. The fix is available in the following
-GKE versions:
-
-* 1.31.10-gke.1021000 and later
-* 1.32.4-gke.1698000 and later
-* 1.33.1-gke.1386000 and later
 
 ### Announcement
 
@@ -847,6 +879,21 @@ maintenance, we recommend that you do the following:
 * **Plan for Kubernetes API unavailability**: if you run critical operations
   in your cluster that require access to the Kubernetes API, avoid scheduling
   these operations during maintenance windows.
+
+### Fixed
+
+**Important:** This note is incorrect. For the correct note, see the entry for
+[August 5, 2025](#csi-fix-20250805).
+
+A fix is available for an issue in which the Compute Engine Persistent Disk CSI
+driver failed with an `invalid cpuString` error on GKE nodes that used custom
+machine types. This issue prevented successful attachment and mounting of
+Persistent Disk volumes on affected nodes. The fix is available in the following
+GKE versions:
+
+* 1.31.10-gke.1021000 and later
+* 1.32.4-gke.1698000 and later
+* 1.33.1-gke.1386000 and later
 
 ---
 ## 2025-07-25

@@ -1,5 +1,55 @@
 # Google SecOps SIEM
 
+## 2025-08-13
+
+### Announcement
+
+**New parser documentation now available**
+
+New parser documentation is available to help you ingest and normalize logs from the following sources:
+
+* [Collect Anomali ThreatStream IOC logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/anomali-threatstream-ioc)
+* [Collect Cisco Application Control Engine (ACE)](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-ace)
+* [Collect Cisco Firepower NGFW logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-firepower-firewall)
+* [Collect Cisco Firewall Service Module (FWSM)](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-fwsm)
+* [Collect Cisco IronPort logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-ironport)
+* [Collect Cisco PIX logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-pix-firewall)
+* [Collect Cisco Prime logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-prime)
+* [Collect Cisco Wireless Intrusion Prevention System (WIPS) logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-wips)
+* [Collect Cisco Wireless LAN Controller (WLC) logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-wireless)
+* [Collect Cisco Wireless Security Management (WiSM) logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-wsm)
+* [Collect Cloudian HyperStore logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cloudian-hs)
+* [Collect CrushFTP logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/crushftp)
+* [Collect Delinea Distributed Engine logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/delinea-de)
+* [Collect Duo User context logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/duo-user)
+* [Collect ExtraHop DNS logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/extrahop-dns)
+* [Collect ExtraHop RevealX logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/extrahop-revealx)
+* [Collect Extreme Networks switch logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/extreme-switch)
+* [Collect Extreme Networks Wireless logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/extreme-wireless)
+* [Collect MuleSoft Anypoint logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/mulesoft-anypoint)
+* [Collect Palo Alto Prisma SD-WAN logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/pan-prisma-sd-wan)
+* [Collect Recorded Future IOC logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/recorded-future-ioc)
+* [Collect Veeam logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/veeam)
+* [Collect Veridium ID logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/veridium-id)
+* [Collect VMware Tanzu logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-tanzu)
+* [Collect VMware vCenter logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-vcenter)
+* [Collect VMware vRealize logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-vrealize)
+* [Collect VMware vSphere logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-vsphere)
+* [Collect VSFTPD logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vsftpd)
+* [Collect VyOS logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vyos)
+* [Collect Workday audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/workday-audit)
+* [Collect Yamaha router logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/yamaha-router)
+
+---
+## 2025-08-12
+
+### Changed
+
+**Data RBAC self-service enablement**
+
+Data RBAC now includes a self-service option for direct enablement. This makes the initial onboarding process faster and simpler. For details, see [Configure data RBAC for users](https://cloud.google.com/chronicle/docs/administration/configure-datarbac-users).
+
+---
 ## 2025-08-10
 
 ### Feature

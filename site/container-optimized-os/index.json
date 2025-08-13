@@ -1,6 +1,560 @@
 {
   "name": "Container Optimized OS",
   "entries": {
+    "2025-08-12": [
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "Short Title",
+          "summary": "This is a short summary for a title."
+        }
+      },
+      {
+        "kind": "cos-dev-129-19226-0-0",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.41](https://cos.googlesource.com/third_party/kernel/+/0c333f6a7b49b4a001ab23fca27c39d4f694ebcd ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19226.0.0/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS Version Update",
+          "summary": "COS-6.12.41 with Docker v27.5.1 and Containerd v2.1.3."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated containerd to v2.1.3.",
+        "summary": {
+          "title": "containerd update",
+          "summary": "Updated containerd to v2.1.3."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added NVIDIA GPU driver's R580 branch. Updated the LATEST GPU driver label to version 580.65.06.",
+        "summary": {
+          "title": "New NVIDIA GPU Driver",
+          "summary": "NVIDIA GPU driver's R580 branch added. LATEST GPU driver label updated to version 580.65.06."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Removed the cloud-final.service dependency on multi-user.target which could delay cloud-init user-data scripts indefinitely when long-running startup scripts are used.",
+        "summary": {
+          "title": "Cloud-init performance improvement",
+          "summary": "Removed cloud-final.service dependency on multi-user.target."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Enabled hardware optimized SHA256 algorithms for x86 machines with SSSE3 and AVX/AVX2 instructions and ARM64 machines with SHA-NI and ARMv8 Crypto Extensions.",
+        "summary": {
+          "title": "SHA256 Hardware Acceleration",
+          "summary": "Hardware optimized SHA256 algorithms enabled for x86 machines with SSSE3 and AVX/AVX2 instructions and ARM64 machines with SHA-NI and ARMv8 Crypto Extensions."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated app-admin/node-problem-detector to 0.8.21.",
+        "summary": {
+          "title": "Fixed node-problem-detector",
+          "summary": "Updated node-problem-detector to 0.8.21."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated app-containers/cni-plugins to 1.7.1.",
+        "summary": {
+          "title": "Fixed",
+          "summary": "Updated app-containers/cni-plugins to 1.7.1."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Removed an artifact registry ping that would delay multi-user.target indefinitely for machines with no external IP address.",
+        "summary": {
+          "title": "Resolved artifact registry ping delay",
+          "summary": "Fixed an issue where an artifact registry ping was causing delays for multi-user.target."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.",
+        "summary": {
+          "title": "Fixed: containerd file descriptor limit",
+          "summary": "containerd file descriptor limit increased to 1024."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/google-guest-configs to v20250718.00.",
+        "summary": {
+          "title": "Guest Config Update",
+          "summary": "Guest config updated."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/google-breakpad to v2025.07.23.214511-r244.",
+        "summary": {
+          "title": "Fixed chromeos-base/google-breakpad upgrade",
+          "summary": "Upgraded google-breakpad to v2025.07.23.214511-r244."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/minijail to v18-r168.",
+        "summary": {
+          "title": "ChromeOS minijail upgrade",
+          "summary": "minijail upgraded to v18-r168."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/openssl to 3.5.1.",
+        "summary": {
+          "title": "OpenSSL upgrade",
+          "summary": "Upgraded openssl to 3.5.1."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-lang/go to v1.23.11.",
+        "summary": {
+          "title": "Go Upgrade",
+          "summary": "Go is upgraded to v1.23.11."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/shill-client to v0.0.1-r4879.",
+        "summary": {
+          "title": "Fixed shill client",
+          "summary": "ChromeOS shill client upgraded."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated dev-python/requests to v2.32.4.",
+        "summary": {
+          "title": "Requests library updated",
+          "summary": "Updated dev-python/requests to v2.32.4."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-misc/openssh to 10.0\\_p1.",
+        "summary": {
+          "title": "Openssh upgrade",
+          "summary": "Fixed a bug in openssh."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-db/sqlite to v3.50.3.",
+        "summary": {
+          "title": "Sqlite upgrade",
+          "summary": "Upgraded dev-db/sqlite to v3.50.3."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded virtual/logger to v0-r2.",
+        "summary": {
+          "title": "Virtual/Logger Upgrade",
+          "summary": "Upgraded virtual/logger to v0-r2."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/pv to v1.9.34.",
+        "summary": {
+          "title": "Short summary",
+          "summary": "pv was upgraded to v1.9.34."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/sudo to v1.9.17\\_p2.",
+        "summary": {
+          "title": "Sudo",
+          "summary": "Fixed sudo."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-process/lsof to v4.99.5.",
+        "summary": {
+          "title": "Fixed sys-process/lsof upgrade",
+          "summary": "Upgraded sys-process/lsof to v4.99.5."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.",
+        "summary": {
+          "title": "Fixed file descriptor limit",
+          "summary": "Reverted a containerd change that reduced the default soft file descriptor limit for processes in containers to 1024."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed an issue where the cpuidle driver selected for some\nmachine types would cause inflated reports of high CPU usage.",
+        "summary": {
+          "title": "CPU Usage Issue Fixed",
+          "summary": "cpuidle driver caused inflated CPU usage reports."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.",
+        "summary": {
+          "title": "Nvidia Driver Update",
+          "summary": "Fixed security vulnerabilities."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Added support for Nvidia driver version 570.172.08. This fixes CVE-2025-23279.",
+        "summary": {
+          "title": "Security update for Nvidia drivers",
+          "summary": "Nvidia driver update fixes security vulnerability."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded net-misc/netplan to 1.1.2. This fixes\nCVE-2022-4968.",
+        "summary": {
+          "title": "Security update for netplan",
+          "summary": "Fixes CVE-2022-4968"
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-8058 in glibc.",
+        "summary": {
+          "title": "Security update",
+          "summary": "Fixed CVE-2025-8058 in glibc."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded dev-libs/glib to 2.82.5. This resolves\nCVE-2024-52533.",
+        "summary": {
+          "title": "Security Update for GLib",
+          "summary": "Upgraded dev-libs/glib to 2.82.5 to resolve CVE-2024-52533."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded urllib3 to version 1.26.18. This fixes CVE-2021-33503, CVE-2023-43804, and CVE-2023-45803.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Upgraded urllib3 to version 1.26.18, fixing multiple CVEs."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded dev-vcs/git to version 2.49.1. This fixes CVE-2025-48385, CVE-2025-27613, CVE-2025-27614, CVE-2025-48384, CVE-2025-46835.",
+        "summary": {
+          "title": "Git upgrade",
+          "summary": "Git security update"
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811510 -> 811531",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "Runtime sysctl changes: fs.file-max changed from 811510 to 811531."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "Short Title",
+          "summary": "This is a short summary for the title."
+        }
+      },
+      {
+        "kind": "cos-117-18613-339-32",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.97](https://cos.googlesource.com/third_party/kernel/+/e7e2af87d8c4a74a002a0fe2313d4ce03aab53a2 ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.339.32/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 18613.339.32 Release Notes",
+          "summary": "Container-Optimized OS 18613.339.32 release with updated Kernel, Docker, Containerd, and GPU drivers."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added NVIDIA GPU driver's R580 branch. Updated the LATEST GPU driver label to version 580.65.06.",
+        "summary": {
+          "title": "NVIDIA Driver Update",
+          "summary": "Updated to the latest NVIDIA GPU driver."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated app-admin/node-problem-detector to 0.8.21.",
+        "summary": {
+          "title": "Fixed: Updated node-problem-detector",
+          "summary": "Updated node-problem-detector to 0.8.21."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated containerd to v1.7.28.",
+        "summary": {
+          "title": "containerd update",
+          "summary": "containerd updated to v1.7.28"
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated dev-python/requests to v2.32.4.",
+        "summary": {
+          "title": "Requests library update",
+          "summary": "Updated dev-python/requests to v2.32.4."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded virtual/logger to v0-r2.",
+        "summary": {
+          "title": "Virtual/Logger Upgrade",
+          "summary": "Upgraded virtual/logger to v0-r2."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed an issue where the cpuidle driver selected for some\nmachine types would cause inflated reports of high CPU usage.",
+        "summary": {
+          "title": "Fixed CPU usage reporting",
+          "summary": "cpuidle driver caused inflated CPU usage reports."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Nvidia driver update fixes security vulnerabilities."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Added support for Nvidia driver version 570.172.08. This fixes CVE-2025-23279.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Nvidia driver update addresses security vulnerability."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded net-misc/netplan to 1.1.2. This fixes\nCVE-2022-4968.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixes CVE-2022-4968"
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-11584 in cloud-init.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixed CVE-2024-11584 in cloud-init."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-6174 in cloud-init.",
+        "summary": {
+          "title": "Security update",
+          "summary": "CVE-2024-6174 fix in cloud-init."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-8058 in glibc.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "CVE-2025-8058 fixed in glibc."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Patched openssl to fix CVE-2023-50782 affecting\ndev-python/crytography.",
+        "summary": {
+          "title": "Security update for openssl",
+          "summary": "Patched openssl to fix CVE-2023-50782 affecting dev-python/crytography."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded dev-libs/glib to 2.82.5. This resolves\nCVE-2024-52533.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Resolved CVE-2024-52533 by upgrading dev-libs/glib."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded urllib3 to version 1.26.18. This fixes CVE-2021-33503, CVE-2023-43804, and CVE-2023-45803.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Upgraded urllib3 to fix security vulnerabilities."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded dev-vcs/git to version 2.49.1. This fixes CVE-2025-48385, CVE-2025-27613, CVE-2025-27614, CVE-2025-48384, CVE-2025-46835.",
+        "summary": {
+          "title": "Security Update: Git",
+          "summary": "Git upgrade to 2.49.1 addresses multiple security vulnerabilities."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-bfebdb8 in the kernel.",
+        "summary": {
+          "title": "Kernel Security Fix",
+          "summary": "Fixed KCTF-bfebdb8 in the kernel."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811775 -> 811765",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "fs.file-max changed from 811775 to 811765."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "Short Title",
+          "summary": "This is a short summary."
+        }
+      },
+      {
+        "kind": "cos-113-18244-448-22",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.144](https://cos.googlesource.com/third_party/kernel/+/e127a59f9a0efe8569de3ebdd6f9149a89b5a076 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.448.22/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS Release Notes",
+          "summary": "COS 113-18244-448-22: Kernel, Docker, Containerd, and GPU Driver updates."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated dev-python/requests to v2.32.4.",
+        "summary": {
+          "title": "Requests library updated",
+          "summary": "Updated dev-python/requests to v2.32.4."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded virtual/logger to v0-r2.",
+        "summary": {
+          "title": "Upgraded virtual/logger",
+          "summary": "Upgraded virtual/logger to v0-r2."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-process/lsof to v4.99.5.",
+        "summary": {
+          "title": "lsof upgrade",
+          "summary": "lsof v4.99.5 has been upgraded."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.",
+        "summary": {
+          "title": "Nvidia Driver Security Fixes",
+          "summary": "Security update for Nvidia drivers."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Added support for Nvidia driver version 570.172.08. This fixes CVE-2025-23279.",
+        "summary": {
+          "title": "Security update for Nvidia drivers",
+          "summary": "Nvidia driver update fixes a security vulnerability."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded net-misc/netplan to 1.1.2. This fixes\nCVE-2022-4968.",
+        "summary": {
+          "title": "Security Update for Netplan",
+          "summary": "Netplan upgraded to 1.1.2, patching CVE-2022-4968."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-11584 in cloud-init.",
+        "summary": {
+          "title": "Security Fix in cloud-init",
+          "summary": "Fixed CVE-2024-11584 in cloud-init."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-6174 in cloud-init.",
+        "summary": {
+          "title": "Security: CVE-2024-6174 Fix",
+          "summary": "Fixed CVE-2024-6174 in cloud-init."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-52533 in dev-libs/glib.",
+        "summary": {
+          "title": "Security update for glib",
+          "summary": "Fixed CVE-2024-52533 in dev-libs/glib."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-8058 in glibc.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixed CVE-2025-8058 in glibc."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded urllib3 to version 1.26.18. This fixes CVE-2021-33503, CVE-2023-43804, and CVE-2023-45803.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Security update: Upgraded urllib3 to fix CVEs."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded dev-vcs/git to version 2.49.1. This fixes CVE-2025-48385, CVE-2025-27613, CVE-2025-27614, CVE-2025-48384, CVE-2025-46835.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Git upgrade fixes multiple CVEs."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-bfebdb8 in the kernel.",
+        "summary": {
+          "title": "Kernel Security Fix",
+          "summary": "Fixed KCTF-bfebdb8 in the kernel."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 812027 -> 812031",
+        "summary": {
+          "title": "Runtime Sysctl fs.file-max Update",
+          "summary": "The runtime sysctl value fs.file-max has been updated from 812027 to 812031."
+        }
+      }
+    ],
     "2025-08-06": [
       {
         "kind": "cos-121-18867-199-19",

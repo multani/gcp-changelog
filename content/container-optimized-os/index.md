@@ -1,5 +1,307 @@
 # Container Optimized OS
 
+## 2025-08-12
+
+### Changed
+
+
+
+### cos-dev-129-19226-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.41](https://cos.googlesource.com/third_party/kernel/+/0c333f6a7b49b4a001ab23fca27c39d4f694ebcd ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19226.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated containerd to v2.1.3.
+
+### Feature
+
+Added NVIDIA GPU driver's R580 branch. Updated the LATEST GPU driver label to version 580.65.06.
+
+### Feature
+
+Removed the cloud-final.service dependency on multi-user.target which could delay cloud-init user-data scripts indefinitely when long-running startup scripts are used.
+
+### Feature
+
+Enabled hardware optimized SHA256 algorithms for x86 machines with SSSE3 and AVX/AVX2 instructions and ARM64 machines with SHA-NI and ARMv8 Crypto Extensions.
+
+### Fixed
+
+Updated app-admin/node-problem-detector to 0.8.21.
+
+### Fixed
+
+Updated app-containers/cni-plugins to 1.7.1.
+
+### Fixed
+
+Removed an artifact registry ping that would delay multi-user.target indefinitely for machines with no external IP address.
+
+### Fixed
+
+Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20250718.00.
+
+### Fixed
+
+Upgraded chromeos-base/google-breakpad to v2025.07.23.214511-r244.
+
+### Fixed
+
+Upgraded chromeos-base/minijail to v18-r168.
+
+### Fixed
+
+Upgraded dev-libs/openssl to 3.5.1.
+
+### Fixed
+
+Upgraded dev-lang/go to v1.23.11.
+
+### Fixed
+
+Upgraded chromeos-base/shill-client to v0.0.1-r4879.
+
+### Fixed
+
+Updated dev-python/requests to v2.32.4.
+
+### Fixed
+
+Upgraded net-misc/openssh to 10.0\_p1.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.50.3.
+
+### Fixed
+
+Upgraded virtual/logger to v0-r2.
+
+### Fixed
+
+Upgraded sys-apps/pv to v1.9.34.
+
+### Fixed
+
+Upgraded app-admin/sudo to v1.9.17\_p2.
+
+### Fixed
+
+Upgraded sys-process/lsof to v4.99.5.
+
+### Fixed
+
+Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.
+
+### Fixed
+
+Fixed an issue where the cpuidle driver selected for some
+machine types would cause inflated reports of high CPU usage.
+
+### Security
+
+Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.
+
+### Security
+
+Added support for Nvidia driver version 570.172.08. This fixes CVE-2025-23279.
+
+### Security
+
+Upgraded net-misc/netplan to 1.1.2. This fixes
+CVE-2022-4968.
+
+### Security
+
+Fixed CVE-2025-8058 in glibc.
+
+### Security
+
+Upgraded dev-libs/glib to 2.82.5. This resolves
+CVE-2024-52533.
+
+### Security
+
+Upgraded urllib3 to version 1.26.18. This fixes CVE-2021-33503, CVE-2023-43804, and CVE-2023-45803.
+
+### Security
+
+Upgraded dev-vcs/git to version 2.49.1. This fixes CVE-2025-48385, CVE-2025-27613, CVE-2025-27614, CVE-2025-48384, CVE-2025-46835.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811510 -> 811531
+
+### Changed
+
+
+
+### cos-117-18613-339-32
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.97](https://cos.googlesource.com/third_party/kernel/+/e7e2af87d8c4a74a002a0fe2313d4ce03aab53a2 ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.339.32/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Added NVIDIA GPU driver's R580 branch. Updated the LATEST GPU driver label to version 580.65.06.
+
+### Fixed
+
+Updated app-admin/node-problem-detector to 0.8.21.
+
+### Fixed
+
+Updated containerd to v1.7.28.
+
+### Fixed
+
+Updated dev-python/requests to v2.32.4.
+
+### Fixed
+
+Upgraded virtual/logger to v0-r2.
+
+### Fixed
+
+Fixed an issue where the cpuidle driver selected for some
+machine types would cause inflated reports of high CPU usage.
+
+### Security
+
+Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.
+
+### Security
+
+Added support for Nvidia driver version 570.172.08. This fixes CVE-2025-23279.
+
+### Security
+
+Upgraded net-misc/netplan to 1.1.2. This fixes
+CVE-2022-4968.
+
+### Security
+
+Fixed CVE-2024-11584 in cloud-init.
+
+### Security
+
+Fixed CVE-2024-6174 in cloud-init.
+
+### Security
+
+Fixed CVE-2025-8058 in glibc.
+
+### Security
+
+Patched openssl to fix CVE-2023-50782 affecting
+dev-python/crytography.
+
+### Security
+
+Upgraded dev-libs/glib to 2.82.5. This resolves
+CVE-2024-52533.
+
+### Security
+
+Upgraded urllib3 to version 1.26.18. This fixes CVE-2021-33503, CVE-2023-43804, and CVE-2023-45803.
+
+### Security
+
+Upgraded dev-vcs/git to version 2.49.1. This fixes CVE-2025-48385, CVE-2025-27613, CVE-2025-27614, CVE-2025-48384, CVE-2025-46835.
+
+### Security
+
+Fixed KCTF-bfebdb8 in the kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811775 -> 811765
+
+### Changed
+
+
+
+### cos-113-18244-448-22
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.144](https://cos.googlesource.com/third_party/kernel/+/e127a59f9a0efe8569de3ebdd6f9149a89b5a076 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.448.22/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Updated dev-python/requests to v2.32.4.
+
+### Fixed
+
+Upgraded virtual/logger to v0-r2.
+
+### Fixed
+
+Upgraded sys-process/lsof to v4.99.5.
+
+### Security
+
+Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.
+
+### Security
+
+Added support for Nvidia driver version 570.172.08. This fixes CVE-2025-23279.
+
+### Security
+
+Upgraded net-misc/netplan to 1.1.2. This fixes
+CVE-2022-4968.
+
+### Security
+
+Fixed CVE-2024-11584 in cloud-init.
+
+### Security
+
+Fixed CVE-2024-6174 in cloud-init.
+
+### Security
+
+Fixed CVE-2024-52533 in dev-libs/glib.
+
+### Security
+
+Fixed CVE-2025-8058 in glibc.
+
+### Security
+
+Upgraded urllib3 to version 1.26.18. This fixes CVE-2021-33503, CVE-2023-43804, and CVE-2023-45803.
+
+### Security
+
+Upgraded dev-vcs/git to version 2.49.1. This fixes CVE-2025-48385, CVE-2025-27613, CVE-2025-27614, CVE-2025-48384, CVE-2025-46835.
+
+### Security
+
+Fixed KCTF-bfebdb8 in the kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812027 -> 812031
+
+---
 ## 2025-08-06
 
 ### cos-121-18867-199-19

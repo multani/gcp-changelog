@@ -1,5 +1,26 @@
 # Apigee UI
 
+## 2025-08-12
+
+### Announcement
+
+On August 12, 2025, we released an updated version of the Apigee UI.
+
+### Feature
+
+**Added path column to Debug transaction table**
+
+A new column has been added to the [transactions table](https://cloud.google.com/apigee/docs/api-platform/debug/trace#create) in the Debug view that specifies the path that was used by the transaction to call the proxy.
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| **421974963** | **Adjusted tooltip positions in Debug sequence view** The tooltips for response items in the Debug sequence view now appear at the bottom of the element, so as not to block the elements above. |
+| **421975987** | **You can no longer pan away from the graph in the Debug canvas** The Debug canvas is now restricted and will no longer allow you to pan away from the graph. The scroll wheel on the mouse can now also be used to zoom in and out of the graph. |
+| **421975987** | **Debug canvas no longer automatically centers when event elements are clicked** When clicking an element in the Debug canvas the canvas will no longer automatically center on the selected item. |
+
+---
 ## 2025-07-30
 
 ### Announcement

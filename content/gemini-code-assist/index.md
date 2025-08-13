@@ -2,10 +2,6 @@
 
 ## 2025-08-12
 
-### Feature
-
-
-
 ### Configure Gemini Code Assist code customization in the Google Cloud Console
 
 You can now set up and manage code customization within the Google Cloud Console,

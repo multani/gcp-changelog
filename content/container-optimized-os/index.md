@@ -2,6 +2,166 @@
 
 ## 2025-08-12
 
+### cos-121-18867-199-28
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.97](https://cos.googlesource.com/third_party/kernel/+/0eae577cf6b3f6844e1328ed3d4643f7f44dfc19 ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.199.28/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Added NVIDIA GPU driver's R580 branch. Updated the LATEST GPU driver label to version 580.65.06.
+
+### Feature
+
+Removed the cloud-final.service dependency on multi-user.target which could delay cloud-init user-data scripts indefinitely when long-running startup scripts are used.
+
+### Fixed
+
+Updated app-admin/node-problem-detector to 0.8.21.
+
+### Fixed
+
+Updated app-containers/cni-plugins to 1.7.1.
+
+### Fixed
+
+Updated containerd to v2.0.6.
+
+### Fixed
+
+Removed an artifact registry ping that would delay multi-user.target indefinitely for machines with no external IP address.
+
+### Fixed
+
+Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.
+
+### Fixed
+
+LTS Refresh from main-R121 to release-R121
+
+### Fixed
+
+kubernetes 1.32.4-gke.200
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20250516.00.
+
+### Fixed
+
+Upgraded app-containers/docker-credential-helpers to v0.9.3.
+
+### Fixed
+
+LTS Refresh from main-R121 to release-R121
+
+### Fixed
+
+Upgraded dev-lang/go to v1.23.9.
+
+### Fixed
+
+Upgraded sys-apps/pv to v1.9.34.
+
+### Fixed
+
+Updated dev-python/requests to v2.32.4.
+
+### Fixed
+
+Upgraded virtual/logger to v0-r2.
+
+### Fixed
+
+LTS Refresh from main-R121 to release-R121
+
+### Fixed
+
+Upgraded sys-libs/libcap to v2.76.
+
+### Fixed
+
+Upgraded sys-process/procps to v4.0.5-r2.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.50.1.
+
+### Fixed
+
+Upgraded sys-libs/libseccomp to v2.6.0-r2.
+
+### Fixed
+
+Upgraded app-arch/unzip to v6.0\_p29.
+
+### Fixed
+
+Upgraded dev-libs/expat to v2.7.1.
+
+### Fixed
+
+Upgraded net-nds/rpcbind to v1.2.7.
+
+### Fixed
+
+Upgraded app-arch/gzip to v1.14.
+
+### Fixed
+
+Fixed an issue where the cpuidle driver selected for some
+machine types would cause inflated reports of high CPU usage.
+
+### Fixed
+
+LTS Refresh from main-R121-cos-6.6 to release-R121-cos-6.6
+
+### Security
+
+Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.
+
+### Security
+
+Added support for Nvidia driver version 570.172.08. This fixes CVE-2025-23279.
+
+### Security
+
+Upgraded net-misc/netplan to 1.1.2. This fixes
+CVE-2022-4968.
+
+### Security
+
+Fixed CVE-2025-8058 in glibc.
+
+### Security
+
+Upgraded dev-libs/glib to 2.82.5. This resolves
+CVE-2024-52533.
+
+### Security
+
+Upgraded urllib3 to version 1.26.18. This fixes CVE-2021-33503, CVE-2023-43804, and CVE-2023-45803.
+
+### Security
+
+Upgraded dev-vcs/git to version 2.49.1. This fixes CVE-2025-48385, CVE-2025-27613, CVE-2025-27614, CVE-2025-48384, CVE-2025-46835.
+
+### Security
+
+Upgraded sqlite to v3.50.2. This resolves CVE-2025-6965.
+
+### Security
+
+Fixed KCTF-bfebdb8 in the kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811826 -> 811817
+
 ### cos-dev-129-19226-0-0
 
 |  |  |  |  |

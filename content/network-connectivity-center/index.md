@@ -1,5 +1,15 @@
 # Network Connectivity Center
 
+## 2025-08-13
+
+### Changed
+
+[Site-to-site data transfer locations](https://cloud.google.com/network-connectivity/docs/network-connectivity-center/concepts/locations) in the following countries have been added to Network Connectivity Center:
+
+* Qatar
+* Switzerland
+
+---
 ## 2025-06-26
 
 ### Feature

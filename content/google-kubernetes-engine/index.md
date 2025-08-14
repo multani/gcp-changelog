@@ -797,6 +797,13 @@ workloads.
 
 ### Feature
 
+In GKE version 1.33.2-gke.1335000 and later, the
+[GKE Gateway controller](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api#gateway_controller)
+supports
+[Gateway API v1.3 CRDs](https://gateway-api.sigs.k8s.io/implementations/v1.3/).
+
+### Feature
+
 In GKE version 1.33.1-gke.1788000 and later, you can target specific reservation
 sub-blocks in a reservation block by using the
 [`reservationSubBlock` field in compute classes](https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#reservationSubBlock).
@@ -809,13 +816,6 @@ for single-host and multi-host TPU node pools by using
 [compute classes](https://cloud.google.com/kubernetes-engine/docs/concepts/about-custom-compute-classes).
 Collection scheduling lets you set a Service Level Objective (SLO) for your TPU
 workloads.
-
-### Feature
-
-In GKE version 1.33.2-gke.1335000 and later, the
-[GKE Gateway controller](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api#gateway_controller)
-supports
-[Gateway API v1.3 CRDs](https://gateway-api.sigs.k8s.io/implementations/v1.3/).
 
 ### Announcement
 

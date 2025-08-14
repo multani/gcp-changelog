@@ -4,7 +4,7 @@
 
 ### Feature
 
-Cloud SQL now supports Private Service Connect (PSC) outbound connectivity. With PSC outbound connectivity, you can attach a PSC interface to your existing Cloud SQL PSC-enabled instances to allow your instances to make outbound connections to your network. This is required for [homogeneous migrations using Database Migration Service](https://cloud.google.com/database-migration/docs/heterogeneous-migrations). For more information, see [PSC outbound connections](https://cloud.google.com/sql/docs/sqlserver/about-private-service-connect#psc-outbound).
+Cloud SQL now supports Private Service Connect (PSC) outbound connectivity. With PSC outbound connectivity, you can attach a PSC interface to your existing Cloud SQL PSC-enabled instances to allow your instances to make outbound connections to your network. For more information, see [PSC outbound connections](https://cloud.google.com/sql/docs/sqlserver/about-private-service-connect#psc-outbound).
 
 ---
 ## 2025-08-07

@@ -6,7 +6,7 @@
 
 **API observations in API hub ([Preview](https://cloud.google.com/products#product-launch-stages))**
 
-API observations in API hub helps you tackle the challenges of API undocumented and unmanaged APIs in your API infrastructure. It leverages Apigee [shadow API discovery](https://cloud.google.com/apigee/docs/api-observation/shadow-api-discovery) and uses automated discovery processes to bring all your APIs, **across Google Cloud projects**, into a unified, managed view.
+API observations in API hub helps you tackle the challenges of undocumented and unmanaged APIs in your API infrastructure. It leverages Apigee [shadow API discovery](https://cloud.google.com/apigee/docs/api-observation/shadow-api-discovery) and uses automated discovery processes to bring all your APIs, **across Google Cloud projects**, into a unified, managed view.
 
 For more information, see [API observations in API hub](https://cloud.google.com/apigee/docs/apihub/api-observation-overview).
 

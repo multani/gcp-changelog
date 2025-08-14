@@ -1,5 +1,12 @@
 # Secure Source Manager
 
+## 2025-08-04
+
+### Announcement
+
+Secure Source Manager is now [generally available](https://cloud.google.com/products#product-launch-stages) for all customers.
+
+---
 ## 2025-07-08
 
 ### Changed

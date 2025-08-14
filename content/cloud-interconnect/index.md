@@ -1,5 +1,16 @@
 # Cloud Interconnect
 
+## 2025-08-13
+
+### Feature
+
+Cross-Site Interconnect ([Preview](https://cloud.google.com/products#product-launch-stages)) support is available in the following colocation facilities:
+
+* Global Switch Singapore, Singapore
+
+For more information, see the [Locations table](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/cross-site-locations#locations-table) and [Global Locations](https://cloud.google.com/about/locations).
+
+---
 ## 2025-08-08
 
 ### Feature

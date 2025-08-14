@@ -1,5 +1,14 @@
 # Google Cloud Contact Center as a Service
 
+## 2025-08-13
+
+### Announcement
+
+**Check the version number of your instance**
+
+You can now check the version number of your instance and compare it with the version numbers of the updates and patches that Google announces in these release notes. In this way you can know which capabilities are available in your instance. For more information, see [Check the version number of your instance](https://cloud.google.com/contact-center/ccai-platform/docs/get-started#check_the_version_number_of_your_instance).
+
+---
 ## 2025-08-11
 
 ### Announcement

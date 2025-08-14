@@ -1,5 +1,12 @@
 # Security Command Center
 
+## 2025-08-12
+
+### Feature
+
+[Data Security Posture Management (DSPM)](https://cloud.google.com/security-command-center/docs/dspm-data-security) lets you define, deploy, monitor, and audit data security postures for your Google Cloud environment. This product is available in [Preview](https://cloud.google.com/products#product-launch-stages) to the Security Command Center Enterprise tier.
+
+---
 ## 2025-08-07
 
 ### Feature

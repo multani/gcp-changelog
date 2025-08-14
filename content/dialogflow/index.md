@@ -1,5 +1,19 @@
 # Dialogflow
 
+## 2025-08-07
+
+### Deprecated
+
+**Dialogflow CX and Vertex AI**: The `gemini-1.0-pro`, `gemini-1.5-pro` and `gemini-1.5-flash` models will be deprecated on **September 1, 2025** and automatically upgraded to the `gemini-2.0-flash-001` model. This change applies to Vertex AI agents and the following Conversational Agents generative features:
+
+* Playbooks
+* Data stores
+* Generators
+* Generative Fallback
+
+After the upgrade on September 1, 2024, `gemini-2.0-flash-001` will be automatically selected in the console. We recommend that you upgrade to the new model early to allow enough time for testing and to ensure that your solution works as intended.
+
+---
 ## 2025-07-31
 
 ### Feature

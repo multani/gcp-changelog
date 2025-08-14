@@ -1,5 +1,30 @@
 # Google SecOps Marketplace
 
+## 2025-08-13
+
+### Feature
+
+New **CyberArk Credential Provider** integration
+
+### Changed
+
+**Jira**: Version 47.0
+
+* Updated timestamp processing logic in the following jobs:
+
+  + **Sync Comments**
+  + **Sync Closure**
+* Updated logic for processing closed tickets in the following job:
+
+  + **Sync Closure**
+
+### Changed
+
+**Microsoft Graph Mail**: Version 29.0
+
+* **Integration**: Updated dependencies.
+
+---
 ## 2025-08-04
 
 ### Feature

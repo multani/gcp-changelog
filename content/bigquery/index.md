@@ -1,5 +1,12 @@
 # BigQuery
 
+## 2025-08-13
+
+### Feature
+
+You can aggregate table data with Gemini assistance in your [BigQuery data preparations](https://cloud.google.com/bigquery/docs/data-prep-get-suggestions). Aggregations in data preparations are in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-08-12
 
 ### Feature

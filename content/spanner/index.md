@@ -1,5 +1,14 @@
 # Spanner
 
+## 2025-08-13
+
+### Feature
+
+Spanner offers a predefined library of over [80 MySQL functions](https://cloud.google.com/spanner/docs/reference/mysql/user_defined_functions_all) that you can install in a database. These functions let you perform operations that are common in the MySQL environments directly with Spanner. They can help reduce the changes required when migrating workloads from MySQL to Spanner.
+
+These functions are packaged as user-defined functions that can be installed from an open-source DDL script hosted on GitHub. For more information, see [Install MySQL functions in Spanner](https://cloud.google.com/spanner/docs/install-mysql-functions).
+
+---
 ## 2025-08-05
 
 ### Feature

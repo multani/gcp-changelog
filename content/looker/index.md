@@ -1,5 +1,160 @@
 # Looker
 
+## 2025-08-13
+
+### Announcement
+
+**Looker 25.14** is expected to include the following changes, features, and fixes:
+
+* Expected Looker (original) deployment start: **Monday, August 18, 2025**
+* Expected Looker (original) final deployment and download available: **Thursday, August 28, 2025**
+* Expected Looker (Google Cloud core) deployment start: **Monday, August 18, 2025**
+* Expected Looker (Google Cloud core) final deployment: **Monday, September 1, 2025**
+
+### Feature
+
+For projects that are enabled for the [New LookML Runtime](https://cloud.google.com/looker/docs/reference/param-manifest-new-lookml-runtime), the [`synonyms` parameter](https://cloud.google.com/looker/docs/reference/param-field) is now supported. The `synonyms` parameter lets LookML developers provide additional context about their data that will help [Conversational Analytics](https://cloud.google.com/looker/docs/studio/conversational-analytics) and other features to answer questions more accurately.
+
+### Feature
+
+The [API Usage Hourly System Activity Explore](https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#api_usage_hourly) is now available. This Explore provides a detailed, hourly summary of the volume and performance of API calls that are made to your Looker instance.
+
+### Feature
+
+Denodo 9 databases are now supported.
+
+### Feature
+
+The Maria JDBC Driver has been updated to version 3.5.3.
+
+### Feature
+
+The Athena driver has been updated to version 2.2.1.
+
+### Feature
+
+The Databricks JDBC driver has been upgraded to version 2.7.3.
+
+### Feature
+
+A new JavaScript event, [`dashboard:tile:merge`](https://cloud.google.com/looker/docs/embedded-javascript-events#dashboardtilemerge), has been added.
+
+### Feature
+
+Looker now displays a notice to instance admins if the instance license has been revoked. Admins will have 14 days to correct any problems before the instance will be shut down.
+
+### Feature
+
+The following [Looker events](https://cloud.google.com/looker/docs/events) are now visible in the [System Activity Events Explore](https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#event):
+
+* `create_project`
+* `delete_project`
+* `update_project`
+* `create_git_deploy_key`
+* `delete_repository_credential`
+* `update_repository_credential`
+
+### Feature
+
+A new Customer Engineer Advanced Editor [default role](https://cloud.google.com/looker/docs/admin-panel-users-roles#customer_engineer_advanced_editor) has been added and can be used to [grant support access](https://cloud.google.com/looker/docs/admin-panel-general-support-access) to Google Cloud customer engineers.
+
+### Feature
+
+The [Query Concurrency System Activity Explore](https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#query_concurrency) is now available. This Explore can help you identify periods of high load and investigate performance bottlenecks that are related to database connection limits. **Note:** This feature was included in the Looker 25.12 release notes but its launch was delayed.
+
+### Feature
+
+New visualizations have been added to the [Database Performance dashboard](https://cloud.google.com/looker/docs/system-activity-dashboards#database_performance) and the [Instance Performance dashboard](https://cloud.google.com/looker/docs/system-activity-dashboards#instance_performance) in System Activity.
+
+### Fixed
+
+Looker 25.14 contains the following accessibility improvements:
+
+* ARIA labels have been added to iframes that contain custom visualizations.
+* ARIA labels have been added to legends on visualizations.
+* ARIA labels have been added to modals.
+* ARIA labels have been added to the Looker page header and logo.
+* ARIA labels have been added to untitled dashboard tiles.
+* Keyboard focus has been improved on modals.
+* Text contrast has been increased on banners.
+* Dashboard filters stay in focus while users are typing.
+* Users can use the Explore from here link in a drill menu by using the keyboard.
+* Users can interact with Single Value visualizations by using the keyboard.
+* PDF rendering progress messages have been updated to better integrate with screen readers.
+
+### Fixed
+
+The LookML validation spinner now correctly stops if there is an error with the server's validation process.
+
+### Fixed
+
+An issue has been fixed where a route that wasn't intended for embedding was allowed to be embedded. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where "Create view from table" would fail if it was initiated from a LookML subfolder. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where color palettes with Japanese labels could not be added or removed. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where getting LookML for dashboards wouldn't preserve all query filters even if they overlapped with dashboard-level filters. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where `include` statements for empty folders that used single-slash syntax returned an unrecognized project reference error. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where multiple tooltips could be displayed at once. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where project names weren't fully sanitized. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where projects that have not been deployed to production wouldn't appear in a user's list of available projects. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where removing fields from embedded dashboard tiles could become impossible. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where resetting a project's git connection and attempting to use a bare repo would fail. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where sorting a pivoted column in the drill modal could sort all pivoted columns instead of just the selected one. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where special characters such as slashes, ampersands, and question marks were allowed in BigQuery and Spanner connection names. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the HTTP error codes for moving and copying dashboards and Looks could return 422 when they should return 404. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the last accessed time for Looks that were saved to a dashboard as Looks wasn't updated when the dashboard was accessed. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the MoreVert button would not be disabled when no options were available in the menu. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the new dashboard name wasn't preserved when a LookML dashboard was copied to a folder. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where unfavoriting a dashboard or Look on a board would not persist. This feature now performs as expected.
+
+---
 ## 2025-07-25
 
 ### Announcement
@@ -35,7 +190,7 @@ For faster response time for queries in BigQuery, Looker will execute BigQuery q
 
 ### Feature
 
-The [Query Concurrency System Activity Explore](https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#query_concurrency) is now available. This Explore can help you identify periods of high load and investigate performance bottlenecks that are related to database connection limits.
+The [Query Concurrency System Activity Explore](https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#query_concurrency) is now available. This Explore can help you identify periods of high load and investigate performance bottlenecks that are related to database connection limits. **Note:** This feature launch was delayed and is now available in Looker 25.14. This item was updated on August 13, 2025.
 
 ### Fixed
 

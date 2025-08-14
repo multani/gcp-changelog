@@ -3,14 +3,6 @@
   "entries": {
     "2025-08-12": [
       {
-        "kind": "Changed",
-        "content": "",
-        "summary": {
-          "title": "Short Title",
-          "summary": "This is a short summary for a title."
-        }
-      },
-      {
         "kind": "cos-dev-129-19226-0-0",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.41](https://cos.googlesource.com/third_party/kernel/+/0c333f6a7b49b4a001ab23fca27c39d4f694ebcd ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19226.0.0/lakitu/gpu_driver_versions.textproto) |",
         "summary": {
@@ -190,8 +182,8 @@
         "kind": "Fixed",
         "content": "Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.",
         "summary": {
-          "title": "Fixed file descriptor limit",
-          "summary": "Reverted a containerd change that reduced the default soft file descriptor limit for processes in containers to 1024."
+          "title": "Fixed: containerd file descriptor limit",
+          "summary": "containerd file descriptor limit increased to 1024."
         }
       },
       {
@@ -267,14 +259,6 @@
         }
       },
       {
-        "kind": "Changed",
-        "content": "",
-        "summary": {
-          "title": "Short Title",
-          "summary": "This is a short summary for the title."
-        }
-      },
-      {
         "kind": "cos-117-18613-339-32",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.97](https://cos.googlesource.com/third_party/kernel/+/e7e2af87d8c4a74a002a0fe2313d4ce03aab53a2 ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.339.32/lakitu/gpu_driver_versions.textproto) |",
         "summary": {
@@ -286,15 +270,15 @@
         "kind": "Feature",
         "content": "Added NVIDIA GPU driver's R580 branch. Updated the LATEST GPU driver label to version 580.65.06.",
         "summary": {
-          "title": "NVIDIA Driver Update",
-          "summary": "Updated to the latest NVIDIA GPU driver."
+          "title": "New NVIDIA GPU Driver",
+          "summary": "NVIDIA GPU driver's R580 branch added. LATEST GPU driver label updated to version 580.65.06."
         }
       },
       {
         "kind": "Fixed",
         "content": "Updated app-admin/node-problem-detector to 0.8.21.",
         "summary": {
-          "title": "Fixed: Updated node-problem-detector",
+          "title": "Fixed node-problem-detector",
           "summary": "Updated node-problem-detector to 0.8.21."
         }
       },
@@ -310,7 +294,7 @@
         "kind": "Fixed",
         "content": "Updated dev-python/requests to v2.32.4.",
         "summary": {
-          "title": "Requests library update",
+          "title": "Requests library updated",
           "summary": "Updated dev-python/requests to v2.32.4."
         }
       },
@@ -326,7 +310,7 @@
         "kind": "Fixed",
         "content": "Fixed an issue where the cpuidle driver selected for some\nmachine types would cause inflated reports of high CPU usage.",
         "summary": {
-          "title": "Fixed CPU usage reporting",
+          "title": "CPU Usage Issue Fixed",
           "summary": "cpuidle driver caused inflated CPU usage reports."
         }
       },
@@ -334,23 +318,23 @@
         "kind": "Security",
         "content": "Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.",
         "summary": {
-          "title": "Security Update",
-          "summary": "Nvidia driver update fixes security vulnerabilities."
+          "title": "Nvidia Driver Update",
+          "summary": "Fixed security vulnerabilities."
         }
       },
       {
         "kind": "Security",
         "content": "Added support for Nvidia driver version 570.172.08. This fixes CVE-2025-23279.",
         "summary": {
-          "title": "Security Update",
-          "summary": "Nvidia driver update addresses security vulnerability."
+          "title": "Security update for Nvidia drivers",
+          "summary": "Nvidia driver update fixes security vulnerability."
         }
       },
       {
         "kind": "Security",
         "content": "Upgraded net-misc/netplan to 1.1.2. This fixes\nCVE-2022-4968.",
         "summary": {
-          "title": "Security Update",
+          "title": "Security update for netplan",
           "summary": "Fixes CVE-2022-4968"
         }
       },
@@ -374,8 +358,8 @@
         "kind": "Security",
         "content": "Fixed CVE-2025-8058 in glibc.",
         "summary": {
-          "title": "Security Update",
-          "summary": "CVE-2025-8058 fixed in glibc."
+          "title": "Security update",
+          "summary": "Fixed CVE-2025-8058 in glibc."
         }
       },
       {
@@ -390,8 +374,8 @@
         "kind": "Security",
         "content": "Upgraded dev-libs/glib to 2.82.5. This resolves\nCVE-2024-52533.",
         "summary": {
-          "title": "Security Update",
-          "summary": "Resolved CVE-2024-52533 by upgrading dev-libs/glib."
+          "title": "Security Update for GLib",
+          "summary": "Upgraded dev-libs/glib to 2.82.5 to resolve CVE-2024-52533."
         }
       },
       {
@@ -399,15 +383,15 @@
         "content": "Upgraded urllib3 to version 1.26.18. This fixes CVE-2021-33503, CVE-2023-43804, and CVE-2023-45803.",
         "summary": {
           "title": "Security Update",
-          "summary": "Upgraded urllib3 to fix security vulnerabilities."
+          "summary": "Upgraded urllib3 to version 1.26.18, fixing multiple CVEs."
         }
       },
       {
         "kind": "Security",
         "content": "Upgraded dev-vcs/git to version 2.49.1. This fixes CVE-2025-48385, CVE-2025-27613, CVE-2025-27614, CVE-2025-48384, CVE-2025-46835.",
         "summary": {
-          "title": "Security Update: Git",
-          "summary": "Git upgrade to 2.49.1 addresses multiple security vulnerabilities."
+          "title": "Git upgrade",
+          "summary": "Git security update"
         }
       },
       {
@@ -424,14 +408,6 @@
         "summary": {
           "title": "Runtime sysctl changes",
           "summary": "fs.file-max changed from 811775 to 811765."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "",
-        "summary": {
-          "title": "Short Title",
-          "summary": "This is a short summary."
         }
       },
       {
@@ -454,7 +430,7 @@
         "kind": "Fixed",
         "content": "Upgraded virtual/logger to v0-r2.",
         "summary": {
-          "title": "Upgraded virtual/logger",
+          "title": "Virtual/Logger Upgrade",
           "summary": "Upgraded virtual/logger to v0-r2."
         }
       },
@@ -462,16 +438,16 @@
         "kind": "Fixed",
         "content": "Upgraded sys-process/lsof to v4.99.5.",
         "summary": {
-          "title": "lsof upgrade",
-          "summary": "lsof v4.99.5 has been upgraded."
+          "title": "Fixed sys-process/lsof upgrade",
+          "summary": "Upgraded sys-process/lsof to v4.99.5."
         }
       },
       {
         "kind": "Security",
         "content": "Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.",
         "summary": {
-          "title": "Nvidia Driver Security Fixes",
-          "summary": "Security update for Nvidia drivers."
+          "title": "Nvidia Driver Update",
+          "summary": "Fixed security vulnerabilities."
         }
       },
       {
@@ -479,22 +455,22 @@
         "content": "Added support for Nvidia driver version 570.172.08. This fixes CVE-2025-23279.",
         "summary": {
           "title": "Security update for Nvidia drivers",
-          "summary": "Nvidia driver update fixes a security vulnerability."
+          "summary": "Nvidia driver update fixes security vulnerability."
         }
       },
       {
         "kind": "Security",
         "content": "Upgraded net-misc/netplan to 1.1.2. This fixes\nCVE-2022-4968.",
         "summary": {
-          "title": "Security Update for Netplan",
-          "summary": "Netplan upgraded to 1.1.2, patching CVE-2022-4968."
+          "title": "Security update for netplan",
+          "summary": "Fixes CVE-2022-4968"
         }
       },
       {
         "kind": "Security",
         "content": "Fixed CVE-2024-11584 in cloud-init.",
         "summary": {
-          "title": "Security Fix in cloud-init",
+          "title": "Security Update",
           "summary": "Fixed CVE-2024-11584 in cloud-init."
         }
       },
@@ -502,8 +478,8 @@
         "kind": "Security",
         "content": "Fixed CVE-2024-6174 in cloud-init.",
         "summary": {
-          "title": "Security: CVE-2024-6174 Fix",
-          "summary": "Fixed CVE-2024-6174 in cloud-init."
+          "title": "Security update",
+          "summary": "CVE-2024-6174 fix in cloud-init."
         }
       },
       {
@@ -518,7 +494,7 @@
         "kind": "Security",
         "content": "Fixed CVE-2025-8058 in glibc.",
         "summary": {
-          "title": "Security Update",
+          "title": "Security update",
           "summary": "Fixed CVE-2025-8058 in glibc."
         }
       },
@@ -527,15 +503,15 @@
         "content": "Upgraded urllib3 to version 1.26.18. This fixes CVE-2021-33503, CVE-2023-43804, and CVE-2023-45803.",
         "summary": {
           "title": "Security Update",
-          "summary": "Security update: Upgraded urllib3 to fix CVEs."
+          "summary": "Upgraded urllib3 to version 1.26.18, fixing multiple CVEs."
         }
       },
       {
         "kind": "Security",
         "content": "Upgraded dev-vcs/git to version 2.49.1. This fixes CVE-2025-48385, CVE-2025-27613, CVE-2025-27614, CVE-2025-48384, CVE-2025-46835.",
         "summary": {
-          "title": "Security Update",
-          "summary": "Git upgrade fixes multiple CVEs."
+          "title": "Git upgrade",
+          "summary": "Git security update"
         }
       },
       {

@@ -2,10 +2,6 @@
 
 ## 2025-08-12
 
-### Changed
-
-
-
 ### cos-dev-129-19226-0-0
 
 |  |  |  |  |
@@ -142,10 +138,6 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 811510 -> 811531
 
-### Changed
-
-
-
 ### cos-117-18613-339-32
 
 |  |  |  |  |
@@ -230,10 +222,6 @@ Fixed KCTF-bfebdb8 in the kernel.
 Runtime sysctl changes:
 
 * Changed: fs.file-max: 811775 -> 811765
-
-### Changed
-
-
 
 ### cos-113-18244-448-22
 

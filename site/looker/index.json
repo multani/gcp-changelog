@@ -1,6 +1,264 @@
 {
   "name": "Looker",
   "entries": {
+    "2025-08-13": [
+      {
+        "kind": "Announcement",
+        "content": "**Looker 25.14** is expected to include the following changes, features, and fixes:\n\n* Expected Looker (original) deployment start: **Monday, August 18, 2025**\n* Expected Looker (original) final deployment and download available: **Thursday, August 28, 2025**\n* Expected Looker (Google Cloud core) deployment start: **Monday, August 18, 2025**\n* Expected Looker (Google Cloud core) final deployment: **Monday, September 1, 2025**",
+        "summary": {
+          "title": "Looker 25.14 Release",
+          "summary": "Looker 25.14 Release"
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "For projects that are enabled for the [New LookML Runtime](https://cloud.google.com/looker/docs/reference/param-manifest-new-lookml-runtime), the [`synonyms` parameter](https://cloud.google.com/looker/docs/reference/param-field) is now supported. The `synonyms` parameter lets LookML developers provide additional context about their data that will help [Conversational Analytics](https://cloud.google.com/looker/docs/studio/conversational-analytics) and other features to answer questions more accurately.",
+        "summary": {
+          "title": "New LookML Runtime Synonyms Support",
+          "summary": "Synonyms parameter now supported for LookML projects enabled for the New LookML Runtime."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [API Usage Hourly System Activity Explore](https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#api_usage_hourly) is now available. This Explore provides a detailed, hourly summary of the volume and performance of API calls that are made to your Looker instance.",
+        "summary": {
+          "title": "New Looker API Usage Report",
+          "summary": "The API Usage Hourly System Activity Explore is now available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Denodo 9 databases are now supported.",
+        "summary": {
+          "title": "Denodo 9 Support",
+          "summary": "Denodo 9 databases are now supported."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The Maria JDBC Driver has been updated to version 3.5.3.",
+        "summary": {
+          "title": "Maria JDBC Driver Update",
+          "summary": "Maria JDBC Driver updated to 3.5.3"
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The Athena driver has been updated to version 2.2.1.",
+        "summary": {
+          "title": "Athena driver update",
+          "summary": "The Athena driver is updated to version 2.2.1."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The Databricks JDBC driver has been upgraded to version 2.7.3.",
+        "summary": {
+          "title": "Databricks driver update",
+          "summary": "Databricks JDBC driver upgraded to 2.7.3."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "A new JavaScript event, [`dashboard:tile:merge`](https://cloud.google.com/looker/docs/embedded-javascript-events#dashboardtilemerge), has been added.",
+        "summary": {
+          "title": "New JavaScript Event",
+          "summary": "A new JavaScript event, dashboard:tile:merge, has been added."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Looker now displays a notice to instance admins if the instance license has been revoked. Admins will have 14 days to correct any problems before the instance will be shut down.",
+        "summary": {
+          "title": "Looker Instance License Revocation",
+          "summary": "Instance license revocation notice."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The following [Looker events](https://cloud.google.com/looker/docs/events) are now visible in the [System Activity Events Explore](https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#event):\n\n* `create_project`\n* `delete_project`\n* `update_project`\n* `create_git_deploy_key`\n* `delete_repository_credential`\n* `update_repository_credential`",
+        "summary": {
+          "title": "New Project Events",
+          "summary": "New project events are available in the System Activity Events Explore."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "A new Customer Engineer Advanced Editor [default role](https://cloud.google.com/looker/docs/admin-panel-users-roles#customer_engineer_advanced_editor) has been added and can be used to [grant support access](https://cloud.google.com/looker/docs/admin-panel-general-support-access) to Google Cloud customer engineers.",
+        "summary": {
+          "title": "New Role Added",
+          "summary": "A new role, Customer Engineer Advanced Editor, is available to grant support access to Google Cloud customer engineers."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [Query Concurrency System Activity Explore](https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#query_concurrency) is now available. This Explore can help you identify periods of high load and investigate performance bottlenecks that are related to database connection limits. **Note:** This feature was included in the Looker 25.12 release notes but its launch was delayed.",
+        "summary": {
+          "title": "Query Concurrency System Activity Explore Now Available",
+          "summary": "Identify high load periods and investigate performance bottlenecks related to database connection limits."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New visualizations have been added to the [Database Performance dashboard](https://cloud.google.com/looker/docs/system-activity-dashboards#database_performance) and the [Instance Performance dashboard](https://cloud.google.com/looker/docs/system-activity-dashboards#instance_performance) in System Activity.",
+        "summary": {
+          "title": "New visualizations in System Activity",
+          "summary": "New visualizations are now available in the System Activity dashboards."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Looker 25.14 contains the following accessibility improvements:\n\n* ARIA labels have been added to iframes that contain custom visualizations.\n* ARIA labels have been added to legends on visualizations.\n* ARIA labels have been added to modals.\n* ARIA labels have been added to the Looker page header and logo.\n* ARIA labels have been added to untitled dashboard tiles.\n* Keyboard focus has been improved on modals.\n* Text contrast has been increased on banners.\n* Dashboard filters stay in focus while users are typing.\n* Users can use the Explore from here link in a drill menu by using the keyboard.\n* Users can interact with Single Value visualizations by using the keyboard.\n* PDF rendering progress messages have been updated to better integrate with screen readers.",
+        "summary": {
+          "title": "Looker 25.14 release notes",
+          "summary": "Looker 25.14: Accessibility Improvements"
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The LookML validation spinner now correctly stops if there is an error with the server's validation process.",
+        "summary": {
+          "title": "LookML Validation Fix",
+          "summary": "LookML validation spinner stops on server error."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where a route that wasn't intended for embedding was allowed to be embedded. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed: Route Embedding",
+          "summary": "Route embedding fixed."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where \"Create view from table\" would fail if it was initiated from a LookML subfolder. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed: \"Create view from table\" issue in LookML subfolders",
+          "summary": "The \"Create view from table\" feature now works correctly, even when initiated from a LookML subfolder."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where color palettes with Japanese labels could not be added or removed. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed: Color Palette Issue",
+          "summary": "Japanese labels for color palettes fixed."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where getting LookML for dashboards wouldn't preserve all query filters even if they overlapped with dashboard-level filters. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed: LookML dashboard filters",
+          "summary": "LookML dashboards now preserve all query filters."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where `include` statements for empty folders that used single-slash syntax returned an unrecognized project reference error. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed: Include statements for empty folders",
+          "summary": "`include` statements for empty folders with single-slash syntax now work correctly, resolving an unrecognized project reference error."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where multiple tooltips could be displayed at once. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed: Multiple Tooltips Issue",
+          "summary": "Multiple tooltips displayed at once have been fixed."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where project names weren't fully sanitized. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed project name sanitization",
+          "summary": "Project names are now fully sanitized."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where projects that have not been deployed to production wouldn't appear in a user's list of available projects. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed project visibility",
+          "summary": "Projects not deployed to production now appear in the user's project list."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where removing fields from embedded dashboard tiles could become impossible. This feature now performs as expected.",
+        "summary": {
+          "title": "Issue Fix",
+          "summary": "Fix for embedded dashboard tile field removal."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where resetting a project's git connection and attempting to use a bare repo would fail. This feature now performs as expected.",
+        "summary": {
+          "title": "Git Connection Fix",
+          "summary": "Fixed an issue with bare repo git connections."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where sorting a pivoted column in the drill modal could sort all pivoted columns instead of just the selected one. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed: Sorting Issue in Drill Modal",
+          "summary": "Sorting pivoted columns in drill modal now works correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where special characters such as slashes, ampersands, and question marks were allowed in BigQuery and Spanner connection names. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed: Special characters in connection names",
+          "summary": "Special characters are no longer allowed in BigQuery and Spanner connection names."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the HTTP error codes for moving and copying dashboards and Looks could return 422 when they should return 404. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed: HTTP error codes for dashboard and Look operations",
+          "summary": "HTTP error codes for moving and copying dashboards and Looks now return 404 as expected, instead of 422."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the last accessed time for Looks that were saved to a dashboard as Looks wasn't updated when the dashboard was accessed. This feature now performs as expected.",
+        "summary": {
+          "title": "Look Last Accessed Time Update",
+          "summary": "Looks that were saved to a dashboard were not updating their last accessed time. This has been fixed."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the MoreVert button would not be disabled when no options were available in the menu. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed: MoreVert Button Behavior",
+          "summary": "The MoreVert button is now correctly disabled when no menu options are available."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the new dashboard name wasn't preserved when a LookML dashboard was copied to a folder. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed: Dashboard name preservation",
+          "summary": "Dashboard name preserved after copying LookML dashboard to a folder."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where unfavoriting a dashboard or Look on a board would not persist. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed unfavoriting issue",
+          "summary": "Unfavoriting dashboards and Looks on a board now persists."
+        }
+      }
+    ],
     "2025-07-25": [
       {
         "kind": "Announcement",
@@ -46,10 +304,10 @@
       },
       {
         "kind": "Feature",
-        "content": "The [Query Concurrency System Activity Explore](https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#query_concurrency) is now available. This Explore can help you identify periods of high load and investigate performance bottlenecks that are related to database connection limits.",
+        "content": "The [Query Concurrency System Activity Explore](https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#query_concurrency) is now available. This Explore can help you identify periods of high load and investigate performance bottlenecks that are related to database connection limits. **Note:** This feature launch was delayed and is now available in Looker 25.14. This item was updated on August 13, 2025.",
         "summary": {
-          "title": "New Query Concurrency System Activity Explore Available",
-          "summary": "Identify high load periods and investigate performance bottlenecks related to database connection limits."
+          "title": "New Feature: Query Concurrency",
+          "summary": "Query concurrency is now available to help identify load periods and investigate performance bottlenecks."
         }
       },
       {

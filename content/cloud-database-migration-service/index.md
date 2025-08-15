@@ -1,5 +1,16 @@
 # Cloud Database Migration Service
 
+## 2025-08-14
+
+### Feature
+
+Database Migration Service now supports Private Service Connect interfaces for network connectivity in homogeneous Cloud SQL for MySQL, Cloud SQL for PostgreSQL, and AlloyDB for PostgreSQL migrations. For more information, see the following pages:
+
+* [Networking methods in homogeneous Cloud SQL for MySQL migrations](https://cloud.google.com/database-migration/docs/mysql/networking-methods)
+* [Networking methods in homogeneous Cloud SQL for PostgreSQL migrations](https://cloud.google.com/database-migration/docs/postgres/networking-methods)
+* [Networking methods in homogeneous AlloyDB for PostgreSQL migrations](https://cloud.google.com/database-migration/docs/postgresql-to-alloydb/networking-methods)
+
+---
 ## 2025-06-30
 
 ### Announcement

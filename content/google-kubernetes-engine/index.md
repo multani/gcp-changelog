@@ -1,5 +1,22 @@
 # Google Kubernetes Engine
 
+## 2025-08-14
+
+### Feature
+
+You can now configure GKE clusters to have a default compute
+class in GKE versions 1.33.1-gke.1744000 or later. For more
+details, see the
+[default custom compute class documentation](https://cloud.google.com/kubernetes-engine/docs/how-to/run-pods-default-compute-classes).
+
+### Feature
+
+You can now configure GKE clusters to have a default compute
+class in GKE versions 1.33.1-gke.1744000 or later. For more
+details, see the
+[default custom compute class documentation](https://cloud.google.com/kubernetes-engine/docs/how-to/run-pods-default-compute-classes).
+
+---
 ## 2025-08-12
 
 ### Feature
@@ -138,7 +155,7 @@ The C4 machine series now has General Availability machine types that support Lo
 
 #### (2025-R33) Version updates
 
-**Note:** Your clusters might not have these versions available.
+**Note**: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
 multiple days to complete across all Google Cloud zones.
 
@@ -171,7 +188,7 @@ multiple days to complete across all Google Cloud zones.
 
 #### (2025-R33) Version updates
 
-**Note:** Your clusters might not have these versions available.
+**Note**: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
 multiple days to complete across all Google Cloud zones.
 
@@ -205,7 +222,7 @@ multiple days to complete across all Google Cloud zones.
 
 #### (2025-R33) Version updates
 
-**Note:** Your clusters might not have these versions available.
+**Note**: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
 multiple days to complete across all Google Cloud zones.
 
@@ -232,7 +249,7 @@ multiple days to complete across all Google Cloud zones.
 
 #### (2025-R33) Version updates
 
-**Note:** Your clusters might not have these versions available.
+**Note**: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
 multiple days to complete across all Google Cloud zones.
 
@@ -257,7 +274,7 @@ multiple days to complete across all Google Cloud zones.
 
 #### (2025-R33) Version updates
 
-**Note:** Your clusters might not have these versions available.
+**Note**: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
 multiple days to complete across all Google Cloud zones.
 
@@ -461,7 +478,7 @@ GKE versions:
 
 #### (2025-R32) Version updates
 
-**Note:** Your clusters might not have these versions available.
+**Note**: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
 multiple days to complete across all Google Cloud zones.
 
@@ -497,7 +514,7 @@ multiple days to complete across all Google Cloud zones.
 
 #### (2025-R32) Version updates
 
-**Note:** Your clusters might not have these versions available.
+**Note**: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
 multiple days to complete across all Google Cloud zones.
 
@@ -534,7 +551,7 @@ multiple days to complete across all Google Cloud zones.
 
 #### (2025-R32) Version updates
 
-**Note:** Your clusters might not have these versions available.
+**Note**: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
 multiple days to complete across all Google Cloud zones.
 
@@ -561,7 +578,7 @@ multiple days to complete across all Google Cloud zones.
 
 #### (2025-R32) Version updates
 
-**Note:** Your clusters might not have these versions available.
+**Note**: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
 multiple days to complete across all Google Cloud zones.
 
@@ -589,7 +606,7 @@ multiple days to complete across all Google Cloud zones.
 
 #### (2025-R32) Version updates
 
-**Note:** Your clusters might not have these versions available.
+**Note**: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
 multiple days to complete across all Google Cloud zones.
 
@@ -902,7 +919,7 @@ GKE versions:
 
 #### (2025-R31) Version updates
 
-**Note:** Your clusters might not have these versions available.
+**Note**: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
 multiple days to complete across all Google Cloud zones.
 
@@ -958,7 +975,7 @@ multiple days to complete across all Google Cloud zones.
 
 #### (2025-R31) Version updates
 
-**Note:** Your clusters might not have these versions available.
+**Note**: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
 multiple days to complete across all Google Cloud zones.
 
@@ -1008,7 +1025,7 @@ multiple days to complete across all Google Cloud zones.
 
 #### (2025-R31) Version updates
 
-**Note:** Your clusters might not have these versions available.
+**Note**: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
 multiple days to complete across all Google Cloud zones.
 
@@ -1055,7 +1072,7 @@ multiple days to complete across all Google Cloud zones.
 
 #### (2025-R31) Version updates
 
-**Note:** Your clusters might not have these versions available.
+**Note**: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
 multiple days to complete across all Google Cloud zones.
 
@@ -1099,7 +1116,7 @@ multiple days to complete across all Google Cloud zones.
 
 #### (2025-R31) Version updates
 
-**Note:** Your clusters might not have these versions available.
+**Note**: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
 multiple days to complete across all Google Cloud zones.
 

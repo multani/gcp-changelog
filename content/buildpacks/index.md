@@ -1,0 +1,11 @@
+# Buildpacks
+
+## 2025-08-14
+
+### Feature
+
+The Python buildpack supports Cloud Run source deployments for modern web frameworks such as [FastAPI](https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-fastapi-service.md), [Gradio](https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-gradio-service), and [Streamlit](https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-streamlit-service).
+
+For Python version 3.13 and later, the Python buildpack sets the default entrypoint for [Cloud Run source deployments](https://cloud.google.com/run/docs/deploying-source-code) based on the web server or framework configuration in your `requirements.txt` file. For more information, see [Build a Python application](https://cloud.google.com/docs/buildpacks/python#entrypoint).
+
+---

@@ -1,5 +1,12 @@
 # Google Cloud VMware Engine
 
+## 2025-08-14
+
+### Announcement
+
+VMware Engine `v2` nodes are now available in the Santiago, Chile (`southamerica-west1-b`) zone in the Santiago region (`southamerica-west1`) region.
+
+---
 ## 2025-08-08
 
 ### Announcement

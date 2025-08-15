@@ -1,5 +1,65 @@
 # Looker Studio
 
+## 2025-08-14
+
+### Feature
+
+**Background colors for bar and column chart labels**
+
+You can now set a data-label background color for any bar-label-position option for column and bar charts.
+
+[Learn more about data labels for bar charts and column charts](https://cloud.google.com/looker/docs/studio/bar-chart-and-column-chart-reference#data-label).
+
+### Announcement
+
+**Partner connection launch update**
+
+The following partner connectors have been added to the [Looker Studio Connector Gallery](https://lookerstudio.google.com/data):
+
+* [快客-Thread 社群洞察](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbx-5v5c23SZHmYYdn8rtPMdrtp2AR6pZkv0Etf04ubhuWVDKLpWn-Pae_ASAwrt9jHM) by 黑客數位
+* [Beeswax](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbzWMxaRfmrDUBM8W6RYqnzetrRWMr2SQOYJrb861wWO8NfknNcOXge1pAlczWzJtxdNvQ) by Supermetrics
+* [PrestaShop](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbwr_429EhHgwlwhLOW3nejQC6WyQv_NGynlq7pl9zzsj0K25Yv00w8oJsWmAfidKqRt9A) by Supermetrics
+* [Moloco DSP](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbx58ajkmtC2EAZGCi15-6BA7JKOnT4rlKZ-VUN8DT1dFzVgaUGKO8U8D48Hu8lSrdm1Eg) by Supermetrics
+* [Google Merchant Center](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbz5TU7acC_WVTZl-kwkt2YDVIU4rtcbjvf4xgu6TiplRk47ZNEe-C1ZgGLmsZbOGIsA1Q) by Power My Analytics
+* [Shopee Commerce](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbzKH1iA7BPT-zrgf0V1bgGab2bSEQ8qYmjs-s_5bzZOX_67nVJv47zdA6hvZ_FZce9plw) by Supermetrics
+* [Ad & Analytics Datastore](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbyngerwlFcmxNb8g4LxrYEicQdYhEux4MhAqN45XL7U-UZTdAoja__n9xCxBqNm76Q) by ReportDash
+* [WooCommerce AppiWorks](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbw9YFaxOvx3lAcvDFh7sZCAIKZ0nT_CglD5PqkrpVZgUxdIaYN-83HVt2hoCDCL6fU) by Jivrus Technologies
+* [快客-Threads 社群洞察](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbwWt-0PJVJFUj5cCF2fUhukdIWCLbmgWcrtfd7NO28jMQTs3yhGEq7bjMPlzeyrD6q8) by 黑客數位
+* [快客-META 社群串接](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbyDyKIBhESiCiYzKL02Sz_hp-vtoXosSP5G5k9FEzqq6ruEVVh0e7AnW8YhqtB5PPo-) by 黑客數位
+* [快客-GSC 串接](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbwupviNFLmEC_0AIs2h6kvd6ifnYU4Qu6aYvnc584isNINAIROrLuZPY4IPwgoCWRhj) by 黑客數位
+* [快客-LINE Lap 串接](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbz2CiCtnLB2HbXvYbWkY2Btf9Lrkr2QZHsgsx7z60eY6CmOABAdQhuEwG-QLg3wuvPoNw) by 黑客數位
+* [Odoo Expense AppiWorks](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbxc76_HThU2ehU6JPBbyZAo40P4LQlNfbKKEtCcq2nHXu8TLbDxQIW-D7RcA14YJd18wg) by Jivrus Technologies
+* [Facebook Ads](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbzJb-naOdFHqAyDt5fmEmOPFopqAZHtoo1sNDQZyy_vGf6o43H5rnN3hG3pFkrEZfJaQw) by AlkhwarizmiMetrics
+* [Salesforce](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbzGGmFRG-H_tCX5GCiWTq_25S0uhoBzuuOJYOX5U9Y1_Gzgd4H81cq_uH69gOiRNXm7hg) by Power My Analytics
+* [Google My Business](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbzvalrID7qdJPwE_OUddBcD_jnXhAm41NVD2wc44FeH0ni3EqVpI3MBJWQ8TtZWzeJ5) by Master Metrics
+* [Azure Table](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbwu9gC-ppIJ_krBx2WjplRWcaY_Ebv1K4o4n3NvUd22b5TzoF742n7SN1C2CG88KiHf) by Windsor.ai
+* [快客-META串接](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbwmgGYSudETSGmrsNkLf89mI2vSwJQ3BMI3lb-x6wOW1XtPIkduF24SBc8mWUef4IkV) by 黑客數
+* [Instagram Business Insights](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbzWDrMXgZfi7e_jQpUnRscxLoeleFLlu4M4L3uVoq2-pqc0_9tCbIiQH6EwfkVwKZiV) by AlkhwarizmiMetrics
+* [Deputy](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbzFPblJ7VhZ91weXvyjuWTS6SxSEw8ry_-2-5MekXCgLnE2Y3ZjHPmycvSwodxzQqLI) by smblytics LLC
+* [Onfleet](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbyQ9Vf3ofsv2ZHjPaPQn4RGVsXHQdtYHpMW39gMOlKXI_FwnMQhsVZb-lvwkW3y2ysK) by mblytics LLC
+* [Yoom](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbyhQ9KGAIgFDilNDduQdEh719X1lYIKn3VITLQErLJX2ahCs8z8oFs5I0KsCbH1fuNDwA) by Yoom Inc.
+* [Shopify - Cratos.ai](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbym5Xi083ojxkJNBG5sDPsaF4VDpOa4wMOTmdMmcNSNxy7lNcc7djjfALIJAXoWzZui) by Cratos.ai
+* [Snapchat Ads - Cratos.ai](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbyBjDhWfO87jav7CkYjHN7JU7sbITii4HG-pmKVob4Z6xJPk3g10GqFHrHt4yHXJ2AwWA) by Cratos.ai
+* [Linkedin Ads - Cratos.ai](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbyyGddnNyWxhQ1aNunXbaW_9IQsEpcKmI2Ts6fqK0Rdbv2iBjZtIgGTey2GGadjvcpYXA) by Cratos.ai
+* [Google My Business - Free](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbyR64HkgLS64iITb4Oq9YkP1Qd4vkMszYP4UyrsOQ4VyqORSX7PhTZyGVptdcyxsx8) by Data Bloo
+* [STAT Rankings: Site](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbxGFCBfCYbIMo87BcSR8EGdL9xanIkn_nPOovl3C4U8H8WUjXQ9aQYRpYmUiMu1Yn0dHw) by Moz, Inc.
+* [STAT Ranking Distrib: Site](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbyqBusDrpHK7NWZOSnxVJwO_jekZGhbDveAVVVcPz2pmykQ1iymQJbSTMMq2--8bwv8) by Moz, Inc.
+* [STAT SoV: Site](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbzQtHLKe_ChzC2BE03mJLcMoGu7wHdVX-haKLXzlaSUsnfOHIvRaX88JQ_xpJgBg2eemA) by Moz, Inc.
+* [STAT Rankings: Tag](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbwBovDqr6J8xdsOw5_RUXemk1AQeU41G40K2Kdl0qzp5-woliEJy_JZvmMeLh_itOkxkQ) by Moz, Inc.
+* [STAT Ranking Distrib: Tag](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbyLjP87uj3RJnDLAWa9ceKIwseVguTV5t-FhTGCF92n3XiZFrUmoNWFZO2rOveecWm91g) by Moz, Inc.
+* [STAT SoV: Tag](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbwk-PW71bJXDM9TbBRTj8s4Dz9YVzdYd2n0y4MPQ-7l2ZzzDg-apv2o8CTiuAJOHaPtbg) by Moz, Inc.
+* [Zid Stores](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbx0VcwERl2DTT4XR6YJDLIDMYggvyNMYuZs0LHBXEbiRrkCqqsIK-ih4HyZ4utYwkH_) by AlkhwarizmiMetrics
+* [Tiktok Ads - Cratos.ai](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbyj9tISTP01rOX26y-yu79goaB2uh8--kv_3M19_EPac2x5vAhXLXd1BCS1cx0JCvXY) by Cratos.ai
+* [Plausible Analytics](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbz88iSK4B6V-VoaiwocFu2dDp3CBRM0arAZoDjQ97SroAt9RtzgS6z3UCxpjJDi0ieVjQ) by Plausible Analytics
+* [Salla Stores](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbyYmQrwSV6AICXJKLmAcQiMjNPz1rj1DCB9VYpqTcfMvEmXs8fOnuXGamX_RYhTQ65K) by AlkhwarizmiMetrics
+* [LinkedIn Ads](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycby_34rTtFWxsR2u7JKQWRoPrnDAIyjP0qknJ-RxfCBBCzzAxy15VnPR7GdLQRUWwptX) by AlkhwarizmiMetrics
+* [TikTok GMV](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbw9I9a9u4dmSgcWI88Z9-89Wyz0_qML732iTmuEfIvsTtsenM89w48OcJmQO4v0cw8R) by Catchr
+* [Xandr](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbyTBLL1tEFu2iaRmgl0ZeSe2142Ql_bWKgFTnkSfot1J9hQsXZM0gS0hM3ccLmzvYLf) by Catchr
+* [Google DV 360](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbxAg51dlRGm7mBH5nk7j-v2ZOYai1c88sasjQMoA1Xk1CTQl8XsRUaYfav_REulWBWw) by Catchr
+* [Facebook Page Insights](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbwu4mqzjaqv2vElxmwWqu_akTZw5In1CImb3tmcBhpSdbaVwOkfpX4DraiyJSu6_L9H) by AlkhwarizmiMetrics
+* [Kommo](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbwrRFH5keyxT6tMTfVlO0V3aHBqE97VYsdti4Dy_5EtAMlDBZGV4nswb7j5Q42y-iNLsQ) by Master Metrics
+
+---
 ## 2025-08-07
 
 ### Feature

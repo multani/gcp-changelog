@@ -41,6 +41,7 @@
 - [Batch](batch/index.md)
 - [BigQuery](bigquery/index.md)
 - [Bigtable](bigtable/index.md)
+- [Buildpacks](buildpacks/index.md)
 - [Certificate Authority Service](certificate-authority-service/index.md)
 - [Cloud Asset Inventory](cloud-asset-inventory/index.md)
 - [Cloud Billing](cloud-billing/index.md)

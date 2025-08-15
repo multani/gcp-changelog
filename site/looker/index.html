@@ -1724,6 +1724,8 @@
 <p>An issue has been fixed where the new dashboard name wasn't preserved when a LookML dashboard was copied to a folder. This feature now performs as expected.</p>
 <h3 id="fixed_18">Fixed</h3>
 <p>An issue has been fixed where unfavoriting a dashboard or Look on a board would not persist. This feature now performs as expected.</p>
+<h3 id="feature_12">Feature</h3>
+<p><a href="https://cloud.google.com/looker/docs/connected-sheets">Connected Sheets</a> can now <a href="https://cloud.google.com/looker/docs/looker-core-connect-to-private-ip-lsp-looker-reports#connect-looker-core-reports">connect to a Looker (Google Cloud core) private IP instance by using the Looker instance ID</a>. <strong>Note:</strong> This item was added on August 14, 2025.</p>
 <hr />
 <h2 id="2025-07-25">2025-07-25</h2>
 <h3 id="announcement_1">Announcement</h3>
@@ -1744,11 +1746,11 @@
 </ul>
 <h3 id="breaking">Breaking</h3>
 <p>Because of security concerns, text tiles no longer support the <code>form</code> and <code>input</code> Markdown elements.</p>
-<h3 id="feature_12">Feature</h3>
-<p>The Oracle JDBC driver has been updated to version 19.25.</p>
 <h3 id="feature_13">Feature</h3>
-<p>For faster response time for queries in BigQuery, Looker will execute BigQuery queries by using <a href="https://cloud.google.com/bigquery/docs/reference/rest/v2/jobs/query#jobcreationmode"><code>jobCreationMode=JOB_CREATION_OPTIONAL</code></a>. If BigQuery can return immediate results, it will run the query without creating a job, so the record in the Looker query history will have a BigQuery query ID instead of a BigQuery job ID. See the <a href="https://cloud.google.com/looker/docs/query-performance-metrics#bigquery_bi_engine_metrics">Understanding query performance metrics</a> documentation page for more information about the BigQuery BI Engine metrics.</p>
+<p>The Oracle JDBC driver has been updated to version 19.25.</p>
 <h3 id="feature_14">Feature</h3>
+<p>For faster response time for queries in BigQuery, Looker will execute BigQuery queries by using <a href="https://cloud.google.com/bigquery/docs/reference/rest/v2/jobs/query#jobcreationmode"><code>jobCreationMode=JOB_CREATION_OPTIONAL</code></a>. If BigQuery can return immediate results, it will run the query without creating a job, so the record in the Looker query history will have a BigQuery query ID instead of a BigQuery job ID. See the <a href="https://cloud.google.com/looker/docs/query-performance-metrics#bigquery_bi_engine_metrics">Understanding query performance metrics</a> documentation page for more information about the BigQuery BI Engine metrics.</p>
+<h3 id="feature_15">Feature</h3>
 <p>The <a href="https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#query_concurrency">Query Concurrency System Activity Explore</a> is now available. This Explore can help you identify periods of high load and investigate performance bottlenecks that are related to database connection limits. <strong>Note:</strong> This feature launch was delayed and is now available in Looker 25.14. This item was updated on August 13, 2025.</p>
 <h3 id="fixed_19">Fixed</h3>
 <p>Looker 25.12 contains the following accessibility improvements:</p>
@@ -1814,13 +1816,13 @@
 <p>An issue has been fixed where installing multiple drivers for the same database type on a customer-hosted instance could cause Looker to display an error. This feature now performs as expected.</p>
 <hr />
 <h2 id="2025-06-30">2025-06-30</h2>
-<h3 id="feature_15">Feature</h3>
-<p>The Fast Dev Mode Transition feature is out of Labs and is now generally available. The Fast Dev Mode Transition feature improves the performance of <a href="https://cloud.google.com/looker/docs/dev-mode-prod-mode#development_mode">Development Mode</a> on your instance by loading LookML projects in read-only mode until a developer clicks the <a href="https://cloud.google.com/looker/docs/git-command-reference#create-developer-copy">Create Developer Copy</a> button for the project. <strong>Note:</strong> This item was added on July 8, 2025.</p>
 <h3 id="feature_16">Feature</h3>
+<p>The Fast Dev Mode Transition feature is out of Labs and is now generally available. The Fast Dev Mode Transition feature improves the performance of <a href="https://cloud.google.com/looker/docs/dev-mode-prod-mode#development_mode">Development Mode</a> on your instance by loading LookML projects in read-only mode until a developer clicks the <a href="https://cloud.google.com/looker/docs/git-command-reference#create-developer-copy">Create Developer Copy</a> button for the project. <strong>Note:</strong> This item was added on July 8, 2025.</p>
+<h3 id="feature_17">Feature</h3>
 <p>The Fast Dev Mode Transition feature is now available for Looker (Google Cloud core). The Fast Dev Mode Transition feature improves the performance of <a href="https://cloud.google.com/looker/docs/dev-mode-prod-mode#development_mode">Development Mode</a> on your instance by loading LookML projects in read-only mode until a developer clicks the <a href="https://cloud.google.com/looker/docs/git-command-reference#create-developer-copy">Create Developer Copy</a> button for the project. <strong>Note:</strong> This item was added on July 8, 2025.</p>
 <hr />
 <h2 id="2025-06-24">2025-06-24</h2>
-<h3 id="feature_17">Feature</h3>
+<h3 id="feature_18">Feature</h3>
 <p>The following feature is generally available for Looker reports:</p>
 <ul>
 <li>The Looker connector can now connect to a <a href="https://cloud.google.com/looker/docs/looker-core-networking-options#private_ip_connections">private IP (private services access) only</a> Looker (Google Cloud core) instance or to a <a href="https://cloud.google.com/looker/docs/looker-core-networking-options#psc">private IP (Private Service Connect)</a> Looker (Google Cloud core) instance <a href="https://cloud.google.com/looker/docs/looker-core-connect-to-private-ip-lsp-sil">using the Looker instance ID</a>.</li>
@@ -1843,21 +1845,21 @@
 <li>Support for additional Looker embedded content has been added for Looker reports and query visualizations.</li>
 </ul>
 <p><strong>Note:</strong> This item was added on June 13, 2025.</p>
-<h3 id="feature_18">Feature</h3>
-<p>For period-over-period (PoP) measures, a new subparameter, <a href="https://cloud.google.com/looker/docs/period-over-period#value_to_date"><code>value_to_date</code></a>, is available. When a PoP measure is defined with <code>value_to_date:yes</code>, Looker will calculate the amount of time in the current timeframe at the time that the query is run and apply that amount of time when it calculates the values for previous periods.</p>
 <h3 id="feature_19">Feature</h3>
-<p>The Firebolt JDBC driver has been updated to version 3.5.0.</p>
+<p>For period-over-period (PoP) measures, a new subparameter, <a href="https://cloud.google.com/looker/docs/period-over-period#value_to_date"><code>value_to_date</code></a>, is available. When a PoP measure is defined with <code>value_to_date:yes</code>, Looker will calculate the amount of time in the current timeframe at the time that the query is run and apply that amount of time when it calculates the values for previous periods.</p>
 <h3 id="feature_20">Feature</h3>
-<p>The Hive JDBC driver has been updated to version 4.0.1.</p>
+<p>The Firebolt JDBC driver has been updated to version 3.5.0.</p>
 <h3 id="feature_21">Feature</h3>
-<p>The MS SQL JDBC driver has been updated to version 12.10.0.</p>
+<p>The Hive JDBC driver has been updated to version 4.0.1.</p>
 <h3 id="feature_22">Feature</h3>
-<p>The Teradata JDBC driver has been updated to version 20.00.00.45.</p>
+<p>The MS SQL JDBC driver has been updated to version 12.10.0.</p>
 <h3 id="feature_23">Feature</h3>
-<p>The Vertica JDBC driver has been updated to version 24.2.0-1.</p>
+<p>The Teradata JDBC driver has been updated to version 20.00.00.45.</p>
 <h3 id="feature_24">Feature</h3>
-<p>The new Content Guardrails admin panel lets Looker admins limit both the ability for users to add or execute merged results queries on dashboards and the use of the dashboard auto-refresh option. Limiting merged results queries and dashboard auto-refreshes can reduce the number of queries that are sent to the database and improve dashboard performance. <strong>Note:</strong> This item was added on June 12, 2025.</p>
+<p>The Vertica JDBC driver has been updated to version 24.2.0-1.</p>
 <h3 id="feature_25">Feature</h3>
+<p>The new Content Guardrails admin panel lets Looker admins limit both the ability for users to add or execute merged results queries on dashboards and the use of the dashboard auto-refresh option. Limiting merged results queries and dashboard auto-refreshes can reduce the number of queries that are sent to the database and improve dashboard performance. <strong>Note:</strong> This item was added on June 12, 2025.</p>
+<h3 id="feature_26">Feature</h3>
 <p>The Looker <a href="https://cloud.google.com/looker/docs/continuous-integration">Continuous Integration (CI)</a> features let you run tests on your LookML project to deliver more reliable, efficient, and user-friendly data experiences. You can use the CI validators to catch issues with SQL, data test, content, and LookML before they hit production to verify your LookML and prevent query errors for your users. You can also configure the CI validators to run automatically when a pull request is submitted to your LookML repository. <strong>Note:</strong> This item was added on June 23, 2025.</p>
 <h3 id="fixed_48">Fixed</h3>
 <p>This release contains the following accessibility improvements:</p>
@@ -1904,11 +1906,11 @@
 <p>An issue has been fixed where changes to PDT override settings would not be saved. This feature now performs as expected.</p>
 <h3 id="fixed_67">Fixed</h3>
 <p>An issue has been fixed where PDTs could fail to rebuild with the following error message: <code>undefined method trace_id_hex</code>. This feature now performs as expected.</p>
-<h3 id="feature_26">Feature</h3>
+<h3 id="feature_27">Feature</h3>
 <p>You can now <a href="https://cloud.google.com/looker/docs/embed-reports">embed Looker reports</a> on Looker (original) instances when Looker reports and the Embed Looker reports Labs features are enabled for your instance. Looker reports are available in preview.</p>
 <h3 id="fixed_68">Fixed</h3>
 <p>An issue has been fixed where LDAP authentication could fail with the following error message: <code>no implicit conversion of Hash into String</code>. This feature now performs as expected.</p>
-<h3 id="feature_27">Feature</h3>
+<h3 id="feature_28">Feature</h3>
 <p>The <a href="https://cloud.google.com/looker/docs/studio/conversational-analytics-code-interpreter">Code Interpreter in Conversational Analytics</a> is now available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. The Code Interpreter translates your natural language questions into Python code and executes that code to provide advanced analysis and visualizations. The Code Interpreter is disabled by default. Admins of Looker (Google Cloud core) instances can manage enablement for the Code Interpreter on the <a href="https://cloud.google.com/looker/docs/looker-core-admin-gemini#enable-ci-core">Gemini in Looker admin page</a>. <strong>Note:</strong> This item was added on June 23, 2025.</p>
 <hr />
 <h2 id="2025-06-09">2025-06-09</h2>
@@ -1920,7 +1922,7 @@
 </ul>
 <p>Instances that are hosted in the <a href="https://cloud.google.com/looker/docs/looker-original-locations">EMEA region</a> and those that are enrolled in Looker's <a href="https://cloud.google.com/looker/docs/standard-extended-support-release-program-overview">Extended Support Release (ESR) program</a> are exempt from automatic enablement.</p>
 <p>Looker admins can still manage Gemini in Looker enablement manually on the <a href="https://cloud.google.com/looker/docs/admin-panel-platform-gil">Gemini in Looker</a> page in the Admin panel.</p>
-<h3 id="feature_28">Feature</h3>
+<h3 id="feature_29">Feature</h3>
 <p>When the <a href="https://cloud.google.com/looker/docs/admin-panel-general-settings#gemini_default_enablement">Automated Gemini in Looker enablement and user management</a> setting is enabled, the Gemini Default Users group
 is created automatically for instances that use an <a href="https://cloud.google.com/looker/docs/access-levels#open_and_closed_systems_of_access_to_folders">open system configuration</a>. The Gemini Default Users group is populated automatically with all existing users and any new users who are added to the instance.</p>
 <hr /></div>

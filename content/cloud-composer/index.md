@@ -51,19 +51,6 @@ to Cloud Composer.
 
       This capability is now in **General Availability**.
 
-      Cloud Monitoring
-      ----------------
-
-      ### Feature
-
-      You can now use the [`time_series_billed_for_queries_count`](https://cloud.google.com/monitoring/api/metrics_gcp_i_o#monitoring/billing/time_series_billed_for_queries_count)
-      metric to estimate charges based on the number of time series that have been
-      queried. For more information, see [View the number of time series billed
-      for queries](https://cloud.google.com/stackdriver/estimating-bills#mon-billable-api-reads).
-
-      Billing by time series queried isn't enforced until October 2, 2025. For
-      more information, see [Cloud Monitoring pricing summary](https://cloud.google.com/stackdriver/pricing#monitoring-pricing-summary).
-
       Cloud Run
       ---------
 

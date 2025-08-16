@@ -1,5 +1,26 @@
 # Generative AI on Vertex AI
 
+## 2025-08-14
+
+### Announcement
+
+**Imagen**
+
+Imagen 4 is Generally Available.
+
+Imagen 4 introduces the following models:
+
+* [Imagen 4 Generate](https://cloud.google.com/vertex-ai/generative-ai/docs/models/imagen/4-0-generate-001)
+* [Imagen 4 Fast Generate](https://cloud.google.com/vertex-ai/generative-ai/docs/models/imagen/4-0-fast-generate-001)
+* [Imagen 4 Ultra Generate](https://cloud.google.com/vertex-ai/generative-ai/docs/models/imagen/4-0-ultra-generate-001)
+
+For more information, see [Generate images using text prompts](https://cloud.google.com/vertex-ai/generative-ai/docs/image/generate-images) and [Image generation API](https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/imagen-api).
+
+### Feature
+
+[Gemma 3 270M](https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/gemma3;publisherModelVersion=gemma-3-270m-it), [Wan 2.2](https://console.cloud.google.com/vertex-ai/publishers/wan-ai/model-garden/wan2-2) and [Wan 2.1](https://console.cloud.google.com/vertex-ai/publishers/wan-ai/model-garden/wan2-1) models are available through Model Garden.
+
+---
 ## 2025-08-08
 
 ### Feature
@@ -35,6 +56,13 @@ You can now perform supervised fine-tuning on open models such as Llama 3.1. For
 ### Feature
 
 [OpenAI's gpt-oss](https://console.cloud.google.com/vertex-ai/publishers/openai/model-garden/gpt-oss) models are available through Model Garden.
+
+### Feature
+
+**Imagen**
+
+Virtual try-on lets you generate virtual try-on images from an image of a
+person and product photos that you provide, and is available in Preview. For more information, see [Generate Virtual Try-On Images](https://cloud.google.com/vertex-ai/generative-ai/docs/image/generate-virtual-try-on-images) and [Virtual Try-On API](https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/virtual-try-on-api).
 
 ---
 ## 2025-07-29

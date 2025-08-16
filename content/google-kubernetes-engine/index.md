@@ -1,5 +1,46 @@
 # Google Kubernetes Engine
 
+## 2025-08-15
+
+### Feature
+
+For clusters enrolled in the Extended channel, you can now use
+[Gateway](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api)
+with GKE version 1.30 or later, or
+[customized sysctl configuration options](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options).
+
+### Feature
+
+You can now receive a patch version in a release channel as soon as the version
+is available and before GKE sets the version as an auto-upgrade
+target in the channel by using *accelerated patch auto-upgrades*. Receiving
+patch versions earlier can help accelerate auto-upgrade timelines for patches,
+especially for use cases such as accelerating your compliance with security
+requirements.
+
+For more information, see
+[Accelerated patch auto-upgrades](https://cloud.google.com/kubernetes-engine/docs/concepts/release-channels#accelerated-patch).
+
+### Feature
+
+For clusters enrolled in the Extended channel, you can now use
+[Gateway](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api)
+with GKE version 1.30 or later, or
+[customized sysctl configuration options](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options).
+
+### Feature
+
+You can now receive a patch version in a release channel as soon as the version
+is available and before GKE sets the version as an auto-upgrade
+target in the channel by using *accelerated patch auto-upgrades*. Receiving
+patch versions earlier can help accelerate auto-upgrade timelines for patches,
+especially for use cases such as accelerating your compliance with security
+requirements.
+
+For more information, see
+[Accelerated patch auto-upgrades](https://cloud.google.com/kubernetes-engine/docs/concepts/release-channels#accelerated-patch).
+
+---
 ## 2025-08-14
 
 ### Feature
@@ -404,6 +445,10 @@ The C4 machine series now has General Availability machine types that support Lo
 
 ### Feature
 
+The C4 machine series now has General Availability machine types that support Local SSD storage options. These machine types are available in all GKE versions for Standard mode, and in GKE version 1.33.1-gke.1545000 and later for Autopilot mode. For more information about these machine types, see the "C4 standard with Local SSD" and "C4 highmem with Local SSD" tabs in [C4 machine types](https://cloud.google.com/compute/docs/general-purpose-machines#c4_machine_types).
+
+### Feature
+
 You can now [customize a node system configuration](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#kubelet-options) with the following new Kubelet, Sysctl, and Linux config options:
 
 * kubeletConfig flags:
@@ -438,10 +483,6 @@ You can now [customize a node system configuration](https://cloud.google.com/kub
 
   + transparentHugepageEnabled (on GKE versions 1.33.2-gke.4655000 and later)
   + transparentHugepageDefrag (on GKE versions 1.33.2-gke.4655000 and later)
-
-### Feature
-
-The C4 machine series now has General Availability machine types that support Local SSD storage options. These machine types are available in all GKE versions for Standard mode, and in GKE version 1.33.1-gke.1545000 and later for Autopilot mode. For more information about these machine types, see the "C4 standard with Local SSD" and "C4 highmem with Local SSD" tabs in [C4 machine types](https://cloud.google.com/compute/docs/general-purpose-machines#c4_machine_types).
 
 ---
 ## 2025-08-06
@@ -1087,6 +1128,15 @@ multiple days to complete across all Google Cloud zones.
 
 ### Feature
 
+In GKE version 1.32.2-gke.1359000 and later, you can now configure
+[collection scheduling](https://cloud.google.com/kubernetes-engine/docs/concepts/tpus#collection-scheduling)
+for single-host and multi-host TPU node pools by using
+[compute classes](https://cloud.google.com/kubernetes-engine/docs/concepts/about-custom-compute-classes).
+Collection scheduling lets you set a Service Level Objective (SLO) for your TPU
+workloads.
+
+### Feature
+
 In GKE version 1.33.2-gke.1335000 and later, the
 [GKE Gateway controller](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api#gateway_controller)
 supports
@@ -1097,15 +1147,6 @@ supports
 In GKE version 1.33.1-gke.1788000 and later, you can target specific reservation
 sub-blocks in a reservation block by using the
 [`reservationSubBlock` field in compute classes](https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#reservationSubBlock).
-
-### Feature
-
-In GKE version 1.32.2-gke.1359000 and later, you can now configure
-[collection scheduling](https://cloud.google.com/kubernetes-engine/docs/concepts/tpus#collection-scheduling)
-for single-host and multi-host TPU node pools by using
-[compute classes](https://cloud.google.com/kubernetes-engine/docs/concepts/about-custom-compute-classes).
-Collection scheduling lets you set a Service Level Objective (SLO) for your TPU
-workloads.
 
 ### Feature
 

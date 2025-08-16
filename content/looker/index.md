@@ -29,11 +29,11 @@ The Maria JDBC Driver has been updated to version 3.5.3.
 
 ### Feature
 
-The Athena driver has been updated to version 2.2.1.
+The Athena driver has been updated to version 2.2.1. **Note**: This change was made in Looker 25.10.
 
 ### Feature
 
-The Databricks JDBC driver has been upgraded to version 2.7.3.
+The Databricks JDBC driver has been upgraded to version 2.7.3. **Note**: This change was made in Looker 25.10.
 
 ### Feature
 

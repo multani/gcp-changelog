@@ -1,5 +1,12 @@
 # Spanner
 
+## 2025-08-14
+
+### Feature
+
+You can now use [cross region federated queries](https://cloud.google.com/bigquery/docs/spanner-federated-queries#cross_region_queries) to query Spanner tables from regions other than the source BigQuery region. These cross region queries incur additional [Spanner network egress charges](https://cloud.google.com/spanner/pricing#network). This feature is [generally available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+---
 ## 2025-08-13
 
 ### Feature

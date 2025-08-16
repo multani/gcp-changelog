@@ -2,18 +2,10 @@
 
 ## 2025-08-15
 
-### Fixed
-
-
-
 ### Numerous IDE performance improvements
 
 Numerous improvements to VS Code Gemini Code Assist performance, including
 reductions in CPU usage, memory usage, and extension slowdown.
-
-### Feature
-
-
 
 ### Release channel name in VS Code chat banner
 
@@ -22,10 +14,6 @@ opted into an experimental channel and are using a Standard or Enterprise
 license.
 
 ![Release channel name in VS Code chat banner.](https://cloud.google.com/gemini/images/release-notes-images/vscode-release-channel-info.png)
-
-### Feature
-
-
 
 ### Delete prompt and response pair in IntelliJ
 

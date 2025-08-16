@@ -1,5 +1,21 @@
 # Cloud Run
 
+## 2025-08-14
+
+### Feature
+
+The Python buildpack supports Cloud Run source deployments for modern web frameworks such as [FastAPI](https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-fastapi-service.md), [Gradio](https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-gradio-service), and [Streamlit](https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-streamlit-service).
+
+For Python version 3.13 and later, the Python buildpack sets the default entrypoint for [Cloud Run source deployments](https://cloud.google.com/run/docs/deploying-source-code) based on the web server or framework configuration in your `requirements.txt` file. For more information, see [Build a Python application](https://cloud.google.com/docs/buildpacks/python#entrypoint).
+
+---
+## 2025-08-13
+
+### Feature
+
+You can set multiple environment variables using the `.env` file (Preview). For more information, see [Configure environment variables for services](https://cloud.google.com/run/docs/configuring/services/environment-variables.md#set_multiple_environment_variables), [jobs](https://cloud.google.com/run/docs/configuring/jobs/environment-variables.md#set_multiple_environment_variables), and [worker pools](https://cloud.google.com/run/docs/configuring/workerpools/environment-variables.md#set_multiple_environment_variables).
+
+---
 ## 2025-08-05
 
 ### Feature

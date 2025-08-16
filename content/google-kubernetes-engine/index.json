@@ -1,6 +1,40 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2025-08-15": [
+      {
+        "kind": "Feature",
+        "content": "For clusters enrolled in the Extended channel, you can now use\n[Gateway](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api)\nwith GKE version 1.30 or later, or\n[customized sysctl configuration options](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options).",
+        "summary": {
+          "title": "Gateway for Extended Channel",
+          "summary": "Gateway now available for Extended channel clusters."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now receive a patch version in a release channel as soon as the version\nis available and before GKE sets the version as an auto-upgrade\ntarget in the channel by using *accelerated patch auto-upgrades*. Receiving\npatch versions earlier can help accelerate auto-upgrade timelines for patches,\nespecially for use cases such as accelerating your compliance with security\nrequirements.\n\nFor more information, see\n[Accelerated patch auto-upgrades](https://cloud.google.com/kubernetes-engine/docs/concepts/release-channels#accelerated-patch).",
+        "summary": {
+          "title": "Accelerated Patch Auto-Upgrades",
+          "summary": "Accelerated patch auto-upgrades are now available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "For clusters enrolled in the Extended channel, you can now use\n[Gateway](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api)\nwith GKE version 1.30 or later, or\n[customized sysctl configuration options](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options).",
+        "summary": {
+          "title": "New GKE Features",
+          "summary": "GKE Extended channel now supports Gateway and customized sysctl configuration."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now receive a patch version in a release channel as soon as the version\nis available and before GKE sets the version as an auto-upgrade\ntarget in the channel by using *accelerated patch auto-upgrades*. Receiving\npatch versions earlier can help accelerate auto-upgrade timelines for patches,\nespecially for use cases such as accelerating your compliance with security\nrequirements.\n\nFor more information, see\n[Accelerated patch auto-upgrades](https://cloud.google.com/kubernetes-engine/docs/concepts/release-channels#accelerated-patch).",
+        "summary": {
+          "title": "Accelerated patch auto-upgrades",
+          "summary": "Accelerated patch auto-upgrades are now available."
+        }
+      }
+    ],
     "2025-08-14": [
       {
         "kind": "Feature",
@@ -120,18 +154,18 @@
       },
       {
         "kind": "Feature",
-        "content": "You can now [customize a node system configuration](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#kubelet-options) with the following new Kubelet, Sysctl, and Linux config options:\n\n* kubeletConfig flags:\n\n  + topologyManager (on GKE versions 1.32.3-gke.1785000 and later)\n  + memoryManager (on GKE versions 1.32.3-gke.1785000 and later)\n  + maxParallelImagePulls (on GKE versions 1.33.1-gke.1918000 and later)\n  + singleProcessOomKill (on GKE versions 1.32.4-gke.1132000, 1.33.0-gke.1748000 and later)\n  + evictionSoft\n  + evictionSoftGracePeriod\n  + evictionMinimumReclaim\n  + evictionMaxPodGracePeriodSeconds\n* sysctl flags:\n\n  + vm.overcommit\\_memory\n  + vm.overcommit\\_ratio\n  + vm.vfs\\_cache\\_pressure\n  + vm.dirty\\_ratio\n  + vm.dirty\\_background\\_ratio\n  + vm.dirty\\_expire\\_centisecs\n  + vm.dirty\\_writeback\\_centisecs\n  + vm.watermark\\_scale\\_factor\n  + vm.min\\_free\\_kbytes\n  + vm.swappiness\n  + fs.nr\\_open\n  + fs.file-max\n  + fs.inotify.max\\_user\\_watches\n  + fs.inotify.max\\_user\\_instances\n  + fs.aio-max-nr\n  + net.ipv4.tcp\\_max\\_orphans\n* linuxConfig flags:\n\n  + transparentHugepageEnabled (on GKE versions 1.33.2-gke.4655000 and later)\n  + transparentHugepageDefrag (on GKE versions 1.33.2-gke.4655000 and later)",
-        "summary": {
-          "title": "Node System Configuration Options",
-          "summary": "New options available for Kubelet, Sysctl, and Linux config. Customize node system configuration."
-        }
-      },
-      {
-        "kind": "Feature",
         "content": "The C4 machine series now has General Availability machine types that support Local SSD storage options. These machine types are available in all GKE versions for Standard mode, and in GKE version 1.33.1-gke.1545000 and later for Autopilot mode. For more information about these machine types, see the \"C4 standard with Local SSD\" and \"C4 highmem with Local SSD\" tabs in [C4 machine types](https://cloud.google.com/compute/docs/general-purpose-machines#c4_machine_types).",
         "summary": {
           "title": "C4 machine types now support Local SSD",
           "summary": "New C4 machine types with Local SSD are now available for GKE."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now [customize a node system configuration](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#kubelet-options) with the following new Kubelet, Sysctl, and Linux config options:\n\n* kubeletConfig flags:\n\n  + topologyManager (on GKE versions 1.32.3-gke.1785000 and later)\n  + memoryManager (on GKE versions 1.32.3-gke.1785000 and later)\n  + maxParallelImagePulls (on GKE versions 1.33.1-gke.1918000 and later)\n  + singleProcessOomKill (on GKE versions 1.32.4-gke.1132000, 1.33.0-gke.1748000 and later)\n  + evictionSoft\n  + evictionSoftGracePeriod\n  + evictionMinimumReclaim\n  + evictionMaxPodGracePeriodSeconds\n* sysctl flags:\n\n  + vm.overcommit\\_memory\n  + vm.overcommit\\_ratio\n  + vm.vfs\\_cache\\_pressure\n  + vm.dirty\\_ratio\n  + vm.dirty\\_background\\_ratio\n  + vm.dirty\\_expire\\_centisecs\n  + vm.dirty\\_writeback\\_centisecs\n  + vm.watermark\\_scale\\_factor\n  + vm.min\\_free\\_kbytes\n  + vm.swappiness\n  + fs.nr\\_open\n  + fs.file-max\n  + fs.inotify.max\\_user\\_watches\n  + fs.inotify.max\\_user\\_instances\n  + fs.aio-max-nr\n  + net.ipv4.tcp\\_max\\_orphans\n* linuxConfig flags:\n\n  + transparentHugepageEnabled (on GKE versions 1.33.2-gke.4655000 and later)\n  + transparentHugepageDefrag (on GKE versions 1.33.2-gke.4655000 and later)",
+        "summary": {
+          "title": "Node System Configuration Options",
+          "summary": "New options available for Kubelet, Sysctl, and Linux config. Customize node system configuration."
         }
       }
     ],
@@ -264,6 +298,14 @@
     "2025-07-28": [
       {
         "kind": "Feature",
+        "content": "In GKE version 1.32.2-gke.1359000 and later, you can now configure\n[collection scheduling](https://cloud.google.com/kubernetes-engine/docs/concepts/tpus#collection-scheduling)\nfor single-host and multi-host TPU node pools by using\n[compute classes](https://cloud.google.com/kubernetes-engine/docs/concepts/about-custom-compute-classes).\nCollection scheduling lets you set a Service Level Objective (SLO) for your TPU\nworkloads.",
+        "summary": {
+          "title": "TPU Collection Scheduling",
+          "summary": "TPU collection scheduling for GKE"
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "In GKE version 1.33.2-gke.1335000 and later, the\n[GKE Gateway controller](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api#gateway_controller)\nsupports\n[Gateway API v1.3 CRDs](https://gateway-api.sigs.k8s.io/implementations/v1.3/).",
         "summary": {
           "title": "GKE Gateway API Update",
@@ -276,14 +318,6 @@
         "summary": {
           "title": "GKE Feature Update",
           "summary": "Target specific reservation sub-blocks in GKE."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "In GKE version 1.32.2-gke.1359000 and later, you can now configure\n[collection scheduling](https://cloud.google.com/kubernetes-engine/docs/concepts/tpus#collection-scheduling)\nfor single-host and multi-host TPU node pools by using\n[compute classes](https://cloud.google.com/kubernetes-engine/docs/concepts/about-custom-compute-classes).\nCollection scheduling lets you set a Service Level Objective (SLO) for your TPU\nworkloads.",
-        "summary": {
-          "title": "TPU Collection Scheduling",
-          "summary": "TPU collection scheduling for GKE"
         }
       },
       {

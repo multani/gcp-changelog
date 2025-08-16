@@ -1,5 +1,12 @@
 # Vertex AI
 
+## 2025-08-14
+
+### Feature
+
+[Gemma 3 270M](https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/gemma3;publisherModelVersion=gemma-3-270m-it), [Wan 2.2](https://console.cloud.google.com/vertex-ai/publishers/wan-ai/model-garden/wan2-2) and [Wan 2.1](https://console.cloud.google.com/vertex-ai/publishers/wan-ai/model-garden/wan2-1) models are available through Model Garden.
+
+---
 ## 2025-08-06
 
 ### Feature

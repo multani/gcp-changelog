@@ -1,6 +1,26 @@
 {
   "name": "Cloud Run",
   "entries": {
+    "2025-08-14": [
+      {
+        "kind": "Feature",
+        "content": "The Python buildpack supports Cloud Run source deployments for modern web frameworks such as [FastAPI](https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-fastapi-service.md), [Gradio](https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-gradio-service), and [Streamlit](https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-streamlit-service).\n\nFor Python version 3.13 and later, the Python buildpack sets the default entrypoint for [Cloud Run source deployments](https://cloud.google.com/run/docs/deploying-source-code) based on the web server or framework configuration in your `requirements.txt` file. For more information, see [Build a Python application](https://cloud.google.com/docs/buildpacks/python#entrypoint).",
+        "summary": {
+          "title": "Python Buildpack Update",
+          "summary": "New buildpack for Python supports Cloud Run source deployments with modern web frameworks."
+        }
+      }
+    ],
+    "2025-08-13": [
+      {
+        "kind": "Feature",
+        "content": "You can set multiple environment variables using the `.env` file (Preview). For more information, see [Configure environment variables for services](https://cloud.google.com/run/docs/configuring/services/environment-variables.md#set_multiple_environment_variables), [jobs](https://cloud.google.com/run/docs/configuring/jobs/environment-variables.md#set_multiple_environment_variables), and [worker pools](https://cloud.google.com/run/docs/configuring/workerpools/environment-variables.md#set_multiple_environment_variables).",
+        "summary": {
+          "title": "New feature: Set multiple environment variables",
+          "summary": "Set multiple environment variables using the .env file."
+        }
+      }
+    ],
     "2025-08-05": [
       {
         "kind": "Feature",

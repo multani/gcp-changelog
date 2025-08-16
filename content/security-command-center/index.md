@@ -1,5 +1,12 @@
 # Security Command Center
 
+## 2025-08-14
+
+### Feature
+
+You can use customer-managed encryption keys (CMEKs) to protect data at rest in Security Command Center. This feature is available in General Availability. For more information, see [Enable CMEK for Security Command Center](https://cloud.google.com/security-command-center/docs/cmek).
+
+---
 ## 2025-08-12
 
 ### Feature

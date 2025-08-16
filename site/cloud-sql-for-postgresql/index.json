@@ -1,6 +1,32 @@
 {
   "name": "Cloud SQL for PostgreSQL",
   "entries": {
+    "2025-08-15": [
+      {
+        "kind": "Feature",
+        "content": "Now you can use [Private Service Connect backends](https://cloud.google.com/sql/docs/postgres/about-private-service-connect#psc-backend), as an alternative to Private Service Connect endpoints, to access Cloud SQL instances.",
+        "summary": {
+          "title": "Private Service Connect Backends for Cloud SQL",
+          "summary": "Private Service Connect backends are now available as an alternative to Private Service Connect endpoints for accessing Cloud SQL instances."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Now you can create an IPv6 endpoint for Private Service Connect (PSC) connections. For more information, see [Connect to an instance using Private Service Connect](https://cloud.google.com/sql/docs/postgres/configure-private-service-connect#create-psc-endpoint).",
+        "summary": {
+          "title": "New IPv6 Support for PSC",
+          "summary": "Create an IPv6 endpoint for Private Service Connect."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "You can no longer set a deny maintenance period for instances that are running a maintenance version older than 12 months. To update your instance, [perform self-service maintenance](https://cloud.google.com/sql/docs/postgres/self-service-maintenance) or wait until the [next maintenance window](https://cloud.google.com/sql/docs/postgres/set-maintenance-window#find-maintenance-api) to update your instance automatically. For more information about maintenance, see [Maintenance updates on Cloud SQL instances](https://cloud.google.com/sql/docs/postgres/maintenance).",
+        "summary": {
+          "title": "Maintenance Update",
+          "summary": "Instances running an old maintenance version can no longer have a deny maintenance period set. Update your instance via self-service maintenance or wait for the next automatic update."
+        }
+      }
+    ],
     "2025-08-13": [
       {
         "kind": "Feature",

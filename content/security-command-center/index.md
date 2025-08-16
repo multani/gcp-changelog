@@ -1,5 +1,12 @@
 # Security Command Center
 
+## 2025-08-15
+
+### Feature
+
+[AI Protection](https://cloud.google.com/security-command-center/docs/ai-protection-overview) helps you manage the security posture of your AI workloads by detecting threats and helping you to mitigate risks to your AI asset inventory. This product is available in [Preview](https://cloud.google.com/products#product-launch-stages) to the Security Command Center Enterprise tier.
+
+---
 ## 2025-08-14
 
 ### Feature

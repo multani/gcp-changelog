@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: Carbon Footprint</title>
+  <subtitle>Changelog for Google Cloud product: Carbon Footprint</subtitle>
+  <updated>2025-08-14T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:carbon-footprint</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/carbon-footprint/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:carbon-footprint:2025-08-14:changed:0</id>
+    <published>2025-08-14T00:00:00+00:00</published>
+    <updated>2025-08-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>For the July 2025 semi-annual methodology refresh (released in mid-August 2025), we implemented the following improvements and updated the carbon model to version 14:</p>
+<p><strong>Updating Scope 1 &amp; 3 emissions from Google's corporate footprint</strong>:</p>
+<ul>
+<li>Updated Scope 1 &amp; 3 allocation factors using latest Google company-wide data from <a href="https://www.sustainability.google/reports/google-2025-environmental-report/">2025 Google Environmental Report</a>. See the <a href="https://cloud.google.com/carbon-footprint/docs/methodology#non-electricity-allocation">non-electricity emission sources section of methodology documentation</a> on how we apply these Scope 1 &amp; 3 emissions across Google products and services.</li>
+</ul>
+<p><strong>Updating inputs for Scope 2 market-based emissions calculation from Google's corporate footprint</strong>:</p>
+<ul>
+<li>Updated <strong>annual</strong> renewable electricity percentage from Google's clean energy procurement, in accordance with <a href="https://www.sustainability.google/reports/google-2025-environmental-report/">2025 Google Environmental Report</a>, as an input for Scope 2 market-based emissions.</li>
+<li>Updated annual emissions factors from latest government sources, in accordance with <a href="https://www.sustainability.google/reports/google-2025-environmental-report/">2025 Google Environmental Report</a>, as an input for Scope 2 market-based emissions. Note that Scope 2 location-based emissions are estimated using <strong>hourly</strong> greenhouse gas emissions factors. Read more about the difference in methodology between Scope 2 location-based and market-based emissions in the <a href="https://cloud.google.com/carbon-footprint/docs/methodology#market-based-allocation">methodology document</a>.</li>
+</ul>
+<p><strong>Improving data accuracy</strong>:</p>
+<ul>
+<li>A data issue impacting Cloud Run emissions calculations for March 2025 has been resolved. Incorrect carbon footprint data were generated for some Cloud Run SKUs due to a bug in our data processing logic, resulting in inflated carbon emission figures for affected users.</li>
+<li>To correct your historical data, please <a href="https://cloud.google.com/bigquery/docs/working-with-transfers#manually_trigger_a_transfer_or_backfill">run a backfill</a> for March 2025 in your carbon footprint export. Due to a half-month lag in our data release, you will need to backfill the data for April 15, 2025, which will then update the March 2025 data in your BigQuery table. Data for all other periods remains unaffected.</li>
+</ul>
+<p><strong>Updating service coverage</strong>:</p>
+<ul>
+<li>Integration Connectors and Application Integration were removed from <a href="https://cloud.google.com/carbon-footprint/docs/covered-services">covered services</a> of Carbon Footprint, due to potential mis-attribution of carbon to these services. We are actively investigating and working on the improvements. Once internal data mapping improves for a service, we plan to add it back.</li>
+</ul>
+<p><strong>Deprecating carbon offsets fields from schema</strong>:</p>
+<ul>
+<li>The <code>carbon_offsets_kgCO2e</code> and <code>carbon_footprint_total_kgCO2e.after_offsets</code> fields have been deprecated in the Carbon Footprint <a href="https://cloud.google.com/carbon-footprint/docs/data-schema">schema</a> due to Google's strategic shift from traditional carbon offsets to a direct focus on carbon removal technologies and projects. If you have already set up an <a href="https://cloud.google.com/carbon-footprint/docs/export">export</a>, these two fields have been set to NULL and will not be updated.</li>
+<li>This change is in line with Google's evolving strategy for achieving its net-zero climate goals with more robust and impactful climate solutions such as carbon removal technologies. Read more about <a href="https://blog.google/outreach-initiatives/sustainability/our-progress-to-accelerate-carbon-removal-solutions/">Google's progress to accelerate carbon removal solutions</a>.</li>
+</ul>]]></content>
+    <summary>This update includes improvements to carbon accounting, including updated emissions data and calculations based on the latest Google Environmental Report. We've also resolved a data issue affecting Cloud Run, updated service coverage, and deprecated certain carbon offset fields in the schema.</summary>
+    <title>Changed: Carbon Footprint Methodology Update</title>
+  </entry>
+</feed>

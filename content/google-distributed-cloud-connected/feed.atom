@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: Google Distributed Cloud connected</title>
+  <subtitle>Changelog for Google Cloud product: Google Distributed Cloud connected</subtitle>
+  <updated>2025-08-15T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-distributed-cloud-connected/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-08-15:announcement:0</id>
+    <published>2025-08-15T00:00:00+00:00</published>
+    <updated>2025-08-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This is a minor release of Google Distributed Cloud connected (version 1.10.0).</p>]]></content>
+    <summary>A minor release of Google Distributed Cloud connected.</summary>
+    <title>Announcement: Google Distributed Cloud connected 1.10.0</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-08-15:feature:1</id>
+    <published>2025-08-15T00:00:00+00:00</published>
+    <updated>2025-08-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following new functionality has been introduced in this release of Google Distributed Cloud connected:</p>
+<ul>
+<li><strong>Pause and resume cluster software upgrades.</strong> Software upgrades for your Google Distributed Cloud connected clusters now automatically pause when a maintenance window ends and automatically resume when the next maintenance window starts. For more information, see <a href="https://cloud.google.com/distributed-cloud/edge/latest/docs/availability">Availability best practices</a>.</li>
+<li><strong>VM management in Cloud Console for GDCc servers.</strong> You can now manage virtual machine workloads running on your Google Distributed Cloud connected servers deployments through the Cloud Console. For more information, see <a href="https://cloud.google.com/distributed-cloud/edge/latest/docs/vm-servers">Manage virtual machines on Distributed Cloud connected servers</a>.</li>
+<li><strong>Kernel memory accounting control.</strong> You can now configure the <code>NodeSystemConfigUpdate</code> Network Function operator resource to exclude kernel-space memory from Pod memory usage calculation. For more information, see <a href="https://cloud.google.com/distributed-cloud/edge/latest/docs/network-function#NodeSystemConfigUpdate"><code>NodeSystemConfigUpdate</code> resource</a>.</li>
+<li><strong>Configurable per-node subnet mask size.</strong> The <code>Network</code> Network Function operator resource now allows you to configure the subnet mask size for each node. For more information, see <a href="https://cloud.google.com/distributed-cloud/edge/latest/docs/network-function#Network"><code>Network</code> resource</a>.</li>
+<li><strong>Raw workload log export.</strong> You can now access raw (unprocessed and untagged) workload logs for your Pods for export to your own log processor. For more information, see <a href="https://cloud.google.com/distributed-cloud/edge/latest/docs/logs-metrics#collect_raw_workload_logs_for_external_processing">Collect raw workload logs for external processing</a>.</li>
+</ul>]]></content>
+    <summary>New features for Google Distributed Cloud connected: pause/resume cluster software upgrades, VM management in Cloud Console, kernel memory accounting control, configurable per-node subnet mask size, and raw workload log export.</summary>
+    <title>Feature: New Features in Google Distributed Cloud Connected</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-08-15:changed:2</id>
+    <published>2025-08-15T00:00:00+00:00</published>
+    <updated>2025-08-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following changes to existing functionality have been introduced in this release of Google Distributed Cloud connected:</p>
+<ul>
+<li><strong>Reduced minimum internet connection bandwidth requirement.</strong> The minimum internet connection bandwidth required by Google Distributed Cloud connected to function reliably has been reduced. For more information, see <a href="https://cloud.google.com/distributed-cloud/edge/latest/docs/requirements#internet-bandwidth">Internet connection bandwidth</a>.</li>
+</ul>]]></content>
+    <summary>The minimum internet connection bandwidth requirement for Google Distributed Cloud connected has been reduced. For more details, refer to the documentation on internet connection bandwidth.</summary>
+    <title>Changed: Reduced Bandwidth Requirement</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-08-15:security:3</id>
+    <published>2025-08-15T00:00:00+00:00</published>
+    <updated>2025-08-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Security mitigations for the following vulnerabilities have been implemented in this release of Google Distributed Cloud connected:</p>
+<ul>
+<li><strong>OS layer security mitigations:</strong> CVE-2024-56664, CVE-2024-56658, CVE-2023-52664, CVE-2024-27010, CVE-2024-56647, CVE-2024-53091.</li>
+<li><strong>GDC software-only security mitigations:</strong> All mitigations listed in the <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">GDC software-only release notes</a> from version <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities#1.30">1.30.500</a> up to version <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities#1.31">1.31.400</a> (inclusive).</li>
+</ul>]]></content>
+    <summary>Security patches for OS and GDC software.</summary>
+    <title>Security: Security Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-08-15:libraries:4</id>
+    <published>2025-08-15T00:00:00+00:00</published>
+    <updated>2025-08-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following Google Distributed Cloud connected components have been updated:</p>
+<ul>
+<li><strong>EdgeOS kernel</strong> has been updated to version 5.15.177.</li>
+<li><strong>GDC software-only has been updated</strong> from version 1.30.500 to version 1.31.400. (This component was formerly known as GKE on Bare Metal and as Anthos Clusters on Bare Metal.)</li>
+<li><strong>Kubernetes</strong> has been updated from version 1.30 to version 1.31.</li>
+<li><strong>Symcloud Storage</strong> has been updated from version 5.4.14 to version 5.4.16.</li>
+</ul>]]></content>
+    <summary>EdgeOS kernel, GDC software-only, Kubernetes, and Symcloud Storage have been updated.</summary>
+    <title>Libraries: Component Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-08-15:fixed:5</id>
+    <published>2025-08-15T00:00:00+00:00</published>
+    <updated>2025-08-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues have been resolved in this release of Google Distributed Cloud connected:</p>
+<ul>
+<li><strong>Storage is now freed immediately upon cluster deletion.</strong> After deleting a cluster, the storage used by that cluster is now freed up immediately. You no longer have to manually delete all persistent volumes in a cluster before deleting the cluster itself.</li>
+<li><strong>Virtual machine workloads no longer fail to restart or migrate if DHCP server address changes.</strong> If you are using DHCP to assign IP addresses to your virtual machine workloads and the IP address of your DHCP server changes, your virtual machine workloads now automatically restart and successfully complete migration.</li>
+</ul>]]></content>
+    <summary>Storage freed immediately after cluster deletion and VMs restart/migrate even if DHCP server address changes.</summary>
+    <title>Fixed: Resolved issues in Google Distributed Cloud connected</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-08-15:issue:6</id>
+    <published>2025-08-15T00:00:00+00:00</published>
+    <updated>2025-08-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release of Google Distributed Cloud connected contains the following known issues:</p>
+<ul>
+<li><strong>Machines can experience intermittent connectivity loss.</strong> Google Distributed Cloud connected machines can experience intermittent connectivity loss due to a rare condition that can occur with fleet credential management. To remedy this issue, contact <a href="https://cloud.google.com/distributed-cloud/edge/latest/docs/getting-support">Google Support</a>.</li>
+<li><strong>The <code>anthos-multinet</code> container might take up to two hours to fully start.</strong> You might intermittently experience a slower than normal startup for the <code>anthos-multinet</code> container (up to two hours). To remedy this issue, contact <a href="https://cloud.google.com/distributed-cloud/edge/latest/docs/getting-support">Google Support</a>.</li>
+<li><strong>Virtual machine workloads cannot coexist on the same virtual network with Pods that use DHCP for IP address assignment.</strong> This is because virtual machine workloads need the <code>IPAMMode</code> parameter set to <code>external</code> to use DHCP, while Pods need the <code>IPAMMode</code> parameter set to <code>internal</code> to use DHCP. Pods with static IP address are not affected by this. This behavior is by design.</li>
+</ul>]]></content>
+    <summary>Intermittent connectivity loss and slow container startup.</summary>
+    <title>Issue: Known Issues in Google Distributed Cloud Connected</title>
+  </entry>
+</feed>

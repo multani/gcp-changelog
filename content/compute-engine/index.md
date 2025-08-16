@@ -1,5 +1,21 @@
 # Compute Engine
 
+## 2025-08-14
+
+### Feature
+
+**Public Preview**: You can now access the Compute Engine alpha API at the project level through a self-service process. By enabling the alpha API, you can use the Google Cloud console, gcloud CLI, API, and Terraform to view and manage Preview features. For more information, see [Use the Compute Engine alpha API](https://cloud.google.com/compute/docs/reference/rest/alpha).
+
+---
+## 2025-08-13
+
+### Feature
+
+**Generally available:** License Manager is now generally available. License Manager lets you subscribe, manage, and track your third-party license usage on Google Cloud. As an administrator, you can use License Manager to offer per-user licensing products, like Microsoft Office, to your users with no long-term commitments and no overhead of managing compliance.
+
+For more information, see [About License Manager](https://cloud.google.com/compute/docs/instances/windows/license-manager).
+
+---
 ## 2025-08-11
 
 ### Feature

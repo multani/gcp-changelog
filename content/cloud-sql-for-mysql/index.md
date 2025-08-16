@@ -1,5 +1,20 @@
 # Cloud SQL for MySQL
 
+## 2025-08-15
+
+### Feature
+
+Now you can use [Private Service Connect backends](https://cloud.google.com/sql/docs/mysql/about-private-service-connect#psc-backend), as an alternative to Private Service Connect endpoints, to access Cloud SQL instances.
+
+### Feature
+
+Now you can create an IPv6 endpoint for Private Service Connect (PSC) connections. For more information, see [Connect to an instance using Private Service Connect](https://cloud.google.com/sql/docs/mysql/configure-private-service-connect#create-psc-endpoint).
+
+### Deprecated
+
+You can no longer set a deny maintenance period for instances that are running a maintenance version older than 12 months. To update your instance, [perform self-service maintenance](https://cloud.google.com/sql/docs/mysql/self-service-maintenance) or wait until the [next maintenance window](https://cloud.google.com/sql/docs/mysql/set-maintenance-window#find-maintenance-api) to update your instance automatically. For more information about maintenance, see [Maintenance updates on Cloud SQL instances](https://cloud.google.com/sql/docs/mysql/maintenance).
+
+---
 ## 2025-08-13
 
 ### Feature

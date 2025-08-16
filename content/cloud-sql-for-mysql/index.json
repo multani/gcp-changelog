@@ -1,6 +1,32 @@
 {
   "name": "Cloud SQL for MySQL",
   "entries": {
+    "2025-08-15": [
+      {
+        "kind": "Feature",
+        "content": "Now you can use [Private Service Connect backends](https://cloud.google.com/sql/docs/mysql/about-private-service-connect#psc-backend), as an alternative to Private Service Connect endpoints, to access Cloud SQL instances.",
+        "summary": {
+          "title": "New Private Service Connect Option for Cloud SQL",
+          "summary": "Private Service Connect backends are now available as an alternative to endpoints for Cloud SQL instance access."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Now you can create an IPv6 endpoint for Private Service Connect (PSC) connections. For more information, see [Connect to an instance using Private Service Connect](https://cloud.google.com/sql/docs/mysql/configure-private-service-connect#create-psc-endpoint).",
+        "summary": {
+          "title": "IPv6 Endpoint for PSC",
+          "summary": "Create an IPv6 endpoint for Private Service Connect connections."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "You can no longer set a deny maintenance period for instances that are running a maintenance version older than 12 months. To update your instance, [perform self-service maintenance](https://cloud.google.com/sql/docs/mysql/self-service-maintenance) or wait until the [next maintenance window](https://cloud.google.com/sql/docs/mysql/set-maintenance-window#find-maintenance-api) to update your instance automatically. For more information about maintenance, see [Maintenance updates on Cloud SQL instances](https://cloud.google.com/sql/docs/mysql/maintenance).",
+        "summary": {
+          "title": "Maintenance Update",
+          "summary": "Deny maintenance periods are no longer available for instances with older maintenance versions."
+        }
+      }
+    ],
     "2025-08-13": [
       {
         "kind": "Feature",

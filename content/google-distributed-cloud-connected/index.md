@@ -1,0 +1,56 @@
+# Google Distributed Cloud connected
+
+## 2025-08-15
+
+### Announcement
+
+This is a minor release of Google Distributed Cloud connected (version 1.10.0).
+
+### Feature
+
+The following new functionality has been introduced in this release of Google Distributed Cloud connected:
+
+* **Pause and resume cluster software upgrades.** Software upgrades for your Google Distributed Cloud connected clusters now automatically pause when a maintenance window ends and automatically resume when the next maintenance window starts. For more information, see [Availability best practices](https://cloud.google.com/distributed-cloud/edge/latest/docs/availability).
+* **VM management in Cloud Console for GDCc servers.** You can now manage virtual machine workloads running on your Google Distributed Cloud connected servers deployments through the Cloud Console. For more information, see [Manage virtual machines on Distributed Cloud connected servers](https://cloud.google.com/distributed-cloud/edge/latest/docs/vm-servers).
+* **Kernel memory accounting control.** You can now configure the `NodeSystemConfigUpdate` Network Function operator resource to exclude kernel-space memory from Pod memory usage calculation. For more information, see [`NodeSystemConfigUpdate` resource](https://cloud.google.com/distributed-cloud/edge/latest/docs/network-function#NodeSystemConfigUpdate).
+* **Configurable per-node subnet mask size.** The `Network` Network Function operator resource now allows you to configure the subnet mask size for each node. For more information, see [`Network` resource](https://cloud.google.com/distributed-cloud/edge/latest/docs/network-function#Network).
+* **Raw workload log export.** You can now access raw (unprocessed and untagged) workload logs for your Pods for export to your own log processor. For more information, see [Collect raw workload logs for external processing](https://cloud.google.com/distributed-cloud/edge/latest/docs/logs-metrics#collect_raw_workload_logs_for_external_processing).
+
+### Changed
+
+The following changes to existing functionality have been introduced in this release of Google Distributed Cloud connected:
+
+* **Reduced minimum internet connection bandwidth requirement.** The minimum internet connection bandwidth required by Google Distributed Cloud connected to function reliably has been reduced. For more information, see [Internet connection bandwidth](https://cloud.google.com/distributed-cloud/edge/latest/docs/requirements#internet-bandwidth).
+
+### Security
+
+Security mitigations for the following vulnerabilities have been implemented in this release of Google Distributed Cloud connected:
+
+* **OS layer security mitigations:** CVE-2024-56664, CVE-2024-56658, CVE-2023-52664, CVE-2024-27010, CVE-2024-56647, CVE-2024-53091.
+* **GDC software-only security mitigations:** All mitigations listed in the [GDC software-only release notes](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities) from version [1.30.500](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities#1.30) up to version [1.31.400](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities#1.31) (inclusive).
+
+### Libraries
+
+The following Google Distributed Cloud connected components have been updated:
+
+* **EdgeOS kernel** has been updated to version 5.15.177.
+* **GDC software-only has been updated** from version 1.30.500 to version 1.31.400. (This component was formerly known as GKE on Bare Metal and as Anthos Clusters on Bare Metal.)
+* **Kubernetes** has been updated from version 1.30 to version 1.31.
+* **Symcloud Storage** has been updated from version 5.4.14 to version 5.4.16.
+
+### Fixed
+
+The following issues have been resolved in this release of Google Distributed Cloud connected:
+
+* **Storage is now freed immediately upon cluster deletion.** After deleting a cluster, the storage used by that cluster is now freed up immediately. You no longer have to manually delete all persistent volumes in a cluster before deleting the cluster itself.
+* **Virtual machine workloads no longer fail to restart or migrate if DHCP server address changes.** If you are using DHCP to assign IP addresses to your virtual machine workloads and the IP address of your DHCP server changes, your virtual machine workloads now automatically restart and successfully complete migration.
+
+### Issue
+
+This release of Google Distributed Cloud connected contains the following known issues:
+
+* **Machines can experience intermittent connectivity loss.** Google Distributed Cloud connected machines can experience intermittent connectivity loss due to a rare condition that can occur with fleet credential management. To remedy this issue, contact [Google Support](https://cloud.google.com/distributed-cloud/edge/latest/docs/getting-support).
+* **The `anthos-multinet` container might take up to two hours to fully start.** You might intermittently experience a slower than normal startup for the `anthos-multinet` container (up to two hours). To remedy this issue, contact [Google Support](https://cloud.google.com/distributed-cloud/edge/latest/docs/getting-support).
+* **Virtual machine workloads cannot coexist on the same virtual network with Pods that use DHCP for IP address assignment.** This is because virtual machine workloads need the `IPAMMode` parameter set to `external` to use DHCP, while Pods need the `IPAMMode` parameter set to `internal` to use DHCP. Pods with static IP address are not affected by this. This behavior is by design.
+
+---

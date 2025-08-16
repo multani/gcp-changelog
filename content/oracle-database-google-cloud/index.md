@@ -1,5 +1,12 @@
 # Oracle Database@Google Cloud
 
+## 2025-08-14
+
+### Feature
+
+Oracle Database@Google Cloud introduces ODB Networks and ODB Subnets, which let you connect your Oracle Database@Google Cloud resources in the Oracle Cloud Infrastructure (OCI) child site with your Google Cloud VPC network. This feature is [generally available (GA)](https://cloud.google.com/products#product-launch-stages). For information about deployment options, see [Set up Oracle Database@Google Cloud environment](https://cloud.google.com/oracle/database/docs/setup-oracle-database-environment), and to learn how to create ODB Networks and Subnets, see [Create ODB Networks and ODB Subnets](https://cloud.google.com/oracle/database/docs/create-odb-network).
+
+---
 ## 2025-08-04
 
 ### Feature

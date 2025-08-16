@@ -7,6 +7,17 @@
 [Gemma 3 270M](https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/gemma3;publisherModelVersion=gemma-3-270m-it), [Wan 2.2](https://console.cloud.google.com/vertex-ai/publishers/wan-ai/model-garden/wan2-2) and [Wan 2.1](https://console.cloud.google.com/vertex-ai/publishers/wan-ai/model-garden/wan2-1) models are available through Model Garden.
 
 ---
+## 2025-08-13
+
+### Feature
+
+OpenAI's [gpt-oss-120b](https://cloud.google.com/vertex-ai/generative-ai/docs/maas/openai/gpt-oss-120b) and [gpt-oss-20b](https://cloud.google.com/vertex-ai/generative-ai/docs/maas/openai/gpt-oss-20b) are available as Model as a Service (MaaS) models in Model Garden.
+
+### Feature
+
+[Qwen3 Coder](https://cloud.google.com/vertex-ai/generative-ai/docs/maas/qwen/qwen3-coder) and [Qwen3 235B](https://cloud.google.com/vertex-ai/generative-ai/docs/maas/qwen/qwen3-235b) are available as Model as a Service (MaaS) models in Model Garden.
+
+---
 ## 2025-08-06
 
 ### Feature

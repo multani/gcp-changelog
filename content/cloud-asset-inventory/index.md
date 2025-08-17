@@ -1,5 +1,18 @@
 # Cloud Asset Inventory
 
+## 2025-08-13
+
+### Feature
+
+The following resource types are now publicly available through the [ExportAssets](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/exportAssets), [ListAssets](https://cloud.google.com/asset-inventory/docs/listing-assets), [BatchGetAssetsHistory](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/batchGetAssetsHistory), [QueryAssets](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/queryAssets), [Feed](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/feeds), and Search ([SearchAllResources](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllResources), [SearchAllIamPolicies](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllIamPolicies)) APIs.
+
+* Cloud Speech-to-Text
+  + `speech.googleapis.com/Endpoint`
+  + `speech.googleapis.com/Model`
+* Looker
+  + `looker.googleapis.com/Backup`
+
+---
 ## 2025-08-04
 
 ### Feature

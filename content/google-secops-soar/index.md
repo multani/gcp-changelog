@@ -1,5 +1,12 @@
 # Google SecOps SOAR
 
+## 2025-08-16
+
+### Announcement
+
+[Release 6.3.57](https://cloud.google.com/chronicle/docs/soar/release-notes#August_10_2025) is now available for all regions.
+
+---
 ## 2025-08-10
 
 ### Announcement

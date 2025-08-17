@@ -1,5 +1,12 @@
 # Secure Source Manager
 
+## 2025-08-14
+
+### Changed
+
+Integrated data loss prevention (DLP) is now [generally available](https://cloud.google.com/products#product-launch-stages)
+
+---
 ## 2025-08-04
 
 ### Announcement

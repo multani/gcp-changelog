@@ -1,5 +1,23 @@
 # Sensitive Data Protection
 
+## 2025-08-15
+
+### Feature
+
+The `AUSTRIA_SOCIAL_SECURITY_NUMBER` infoType detector is available in all regions. For more information about all built-in infoTypes, see the [InfoType detector reference](https://cloud.google.com/dlp/docs/infotypes-reference).
+
+### Feature
+
+During discovery operations, Sensitive Data Protection scans the contents of various archive files. For a list of supported file types, see [Supported file clusters in discovery operations](https://cloud.google.com/sensitive-data-protection/docs/supported-file-types#file_clusters).
+
+---
+## 2025-08-13
+
+### Feature
+
+You can configure Sensitive Data Protection to save the findings from an inspection job to a Cloud Storage bucket or folder. For more information, see [Save findings to Cloud Storage](https://cloud.google.com/sensitive-data-protection/docs/concepts-actions#save-findings-cloud-storage).
+
+---
 ## 2025-08-04
 
 ### Feature

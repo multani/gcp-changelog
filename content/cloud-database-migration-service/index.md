@@ -1,5 +1,12 @@
 # Cloud Database Migration Service
 
+## 2025-08-18
+
+### Feature
+
+Database Migration Service for homogeneous PostgreSQL migrations to AlloyDB for PostgreSQL now supports PostgreSQL version 17. For more information, see [Supported source and destination databases](https://cloud.google.com/database-migration/docs/supported-databases).
+
+---
 ## 2025-08-14
 
 ### Feature

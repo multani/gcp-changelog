@@ -29,6 +29,14 @@ New [Dataproc Serverless for Spark runtime versions](https://cloud.google.com/da
 * 2.2.56
 * 2.3.7
 
+### Feature
+
+**Dataproc on Compute Engine: Image versions `2.2` and `2.3`**: The [Iceberg optional component](https://cloud.google.com/dataproc/docs/concepts/components/iceberg) supports the BigLake Iceberg REST catalog.
+
+### Feature
+
+**Dataproc on Compute Engine**: **[Sharing checkpoint diagnostic data:](https://cloud.google.com/dataproc/docs/support/diagnose-clusters#enable_and_share_checkpoint_diagnostic_data)** Setting the [`dataproc:diagnostic.capture.access=GOOGLE_DATAPROC_DIAGNOSE`](https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/cluster-properties#dataproc_service_properties_table) property during cluster creation shares all of the [temp bucket](https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/staging-bucket) contents with Google Cloud support if [uniform bucket-level access](https://cloud.google.com/storage/docs/uniform-bucket-level-access) is enabled on temp bucket. If object-level access control is in effect on the temp bucket, only the [checkpoint diagnostic data folder](https://cloud.google.com/dataproc/docs/support/diagnose-clusters#checkpoint_data_location) corresponding to the cluster in Cloud Storage is shared.
+
 ---
 ## 2025-08-11
 

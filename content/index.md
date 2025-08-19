@@ -75,6 +75,7 @@
 - [Compute Engine](compute-engine/index.md)
 - [Confidential VM](confidential-vm/index.md)
 - [Config Connector](config-connector/index.md)
+- [Config Controller](config-controller/index.md)
 - [Contact Center AI Insights](contact-center-ai-insights/index.md)
 - [Container Optimized OS](container-optimized-os/index.md)
 - [Database Center](database-center/index.md)

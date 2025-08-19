@@ -1,5 +1,39 @@
 # BigQuery
 
+## 2025-08-18
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Java
+
+### Changes for [google-cloud-bigquery](https://github.com/googleapis/java-bigquery)
+
+#### [2.54.1](https://github.com/googleapis/java-bigquery/compare/v2.54.0...v2.54.1) (2025-08-13)
+
+##### Bug Fixes
+
+* Adapt graalvm config to arrow update ([#3928](https://github.com/googleapis/java-bigquery/issues/3928)) ([ecfabc4](https://github.com/googleapis/java-bigquery/commit/ecfabc4b70922d0e697699ec5508a7328cadacf8))
+
+##### Dependencies
+
+* Update dependency com.google.cloud:sdk-platform-java-config to v3.51.0 ([#3924](https://github.com/googleapis/java-bigquery/issues/3924)) ([cb66be5](https://github.com/googleapis/java-bigquery/commit/cb66be596d1bfd0a5aed75f5a0e36d80269c7f6a))
+
+### Feature
+
+In the BigQuery console, you can now use the **Reference** panel to do the following:
+
+* In the query editor, you can use the [Reference panel](https://cloud.google.com/bigquery/docs/running-queries#use-reference-panel) to preview the schema details of tables, snapshots, views, and materialized views, or open these resources in a new tab. You can also use the panel to construct new queries or edit existing queries by inserting query snippets or field names.
+* In the notebook editor, you can use the [Reference panel](https://cloud.google.com/bigquery/docs/create-notebooks#create-notebook-console) to preview the schema details of tables, snapshots, views, or materialized views, or open these resources in a new tab.
+
+This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+### Feature
+
+When you use the Data Science Agent in BigQuery, you can now use the [table selector](https://cloud.google.com/bigquery/docs/colab-data-science-agent#analyze-table) to choose one or more BigQuery tables to analyze. The Data Science Agent is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-08-14
 
 ### Feature

@@ -107,6 +107,14 @@
         }
       },
       {
+        "kind": "Feature",
+        "content": "[Period-over-period measures](https://cloud.google.com/looker/docs/period-over-period) are now supported for MySQL 8.0.12+ connections to Looker. **Note:** This item was added on August 18, 2025.",
+        "summary": {
+          "title": "New Feature: Period-over-Period Measures for MySQL",
+          "summary": "Period-over-period measures are now supported for MySQL 8.0.12+ connections."
+        }
+      },
+      {
         "kind": "Fixed",
         "content": "Looker 25.14 contains the following accessibility improvements:\n\n* ARIA labels have been added to iframes that contain custom visualizations.\n* ARIA labels have been added to legends on visualizations.\n* ARIA labels have been added to modals.\n* ARIA labels have been added to the Looker page header and logo.\n* ARIA labels have been added to untitled dashboard tiles.\n* Keyboard focus has been improved on modals.\n* Text contrast has been increased on banners.\n* Dashboard filters stay in focus while users are typing.\n* Users can use the Explore from here link in a drill menu by using the keyboard.\n* Users can interact with Single Value visualizations by using the keyboard.\n* PDF rendering progress messages have been updated to better integrate with screen readers.",
         "summary": {
@@ -316,6 +324,14 @@
         "summary": {
           "title": "New Feature: Query Concurrency",
           "summary": "Query concurrency is now available to help identify load periods and investigate performance bottlenecks."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where certain API calls would fail to time out and would instead run indefinitely. **Note:** This item was added August 18, 2025.",
+        "summary": {
+          "title": "Fixed indefinite API calls",
+          "summary": "API calls no longer run indefinitely."
         }
       },
       {

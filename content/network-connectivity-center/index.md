@@ -1,5 +1,14 @@
 # Network Connectivity Center
 
+## 2025-08-18
+
+### Feature
+
+You can allow the exchange of
+[privately used public IPv4 addresses](https://cloud.google.com/network-connectivity/docs/network-connectivity-center/concepts/vpc-spokes-overview#privately-used-public-ip-addresses) with
+VPC spokes and producer VPC spokes.
+
+---
 ## 2025-08-13
 
 ### Changed

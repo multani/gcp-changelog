@@ -66,6 +66,10 @@ The [Query Concurrency System Activity Explore](https://cloud.google.com/looker/
 
 New visualizations have been added to the [Database Performance dashboard](https://cloud.google.com/looker/docs/system-activity-dashboards#database_performance) and the [Instance Performance dashboard](https://cloud.google.com/looker/docs/system-activity-dashboards#instance_performance) in System Activity.
 
+### Feature
+
+[Period-over-period measures](https://cloud.google.com/looker/docs/period-over-period) are now supported for MySQL 8.0.12+ connections to Looker. **Note:** This item was added on August 18, 2025.
+
 ### Fixed
 
 Looker 25.14 contains the following accessibility improvements:
@@ -195,6 +199,10 @@ For faster response time for queries in BigQuery, Looker will execute BigQuery q
 ### Feature
 
 The [Query Concurrency System Activity Explore](https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#query_concurrency) is now available. This Explore can help you identify periods of high load and investigate performance bottlenecks that are related to database connection limits. **Note:** This feature launch was delayed and is now available in Looker 25.14. This item was updated on August 13, 2025.
+
+### Fixed
+
+An issue has been fixed where certain API calls would fail to time out and would instead run indefinitely. **Note:** This item was added August 18, 2025.
 
 ### Fixed
 

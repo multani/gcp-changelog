@@ -1004,7 +1004,7 @@ Updated the NVIDIA GPU driver policy for New Feature Branch (NFB) drivers. The L
 
 ### Changed
 
-Upgraded nvidia-container-toolkit to v1.17.8.
+Upgraded nvidia-container-toolkit to v1.17.8. This fixes CVE-2025-23266.
 
 ### Changed
 

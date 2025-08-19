@@ -1,5 +1,30 @@
 # Cloud Storage
 
+## 2025-08-18
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Python
+
+### Changes for [google-cloud-storage](https://github.com/googleapis/python-storage)
+
+#### [3.3.0](https://github.com/googleapis/python-storage/compare/v3.2.0...v3.3.0) (2025-08-05)
+
+##### Features
+
+* Add support for bucket IP filter ([#1516](https://github.com/googleapis/python-storage/issues/1516)) ([a29073c](https://github.com/googleapis/python-storage/commit/a29073cf58df9c5667305e05c6378284057cda23))
+
+##### Bug Fixes
+
+* Add logs on AssertionError for issue [#1512](https://github.com/googleapis/python-storage/issues/1512) ([#1518](https://github.com/googleapis/python-storage/issues/1518)) ([6a9923e](https://github.com/googleapis/python-storage/commit/6a9923e4fc944f7a7c3906eb7800d23677bd2481))
+
+##### Documentation
+
+* Update the documentation of move\_blob function ([#1507](https://github.com/googleapis/python-storage/issues/1507)) ([72252e9](https://github.com/googleapis/python-storage/commit/72252e940909ce2e3da9cfd80f5b7b43a026f45c))
+
+---
 ## 2025-08-12
 
 ### Feature

@@ -1433,6 +1433,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Organization policy <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../organization-policy/" class="dropdown-item">Organization Policy</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Policy controller <b class="caret"></b>
                         </a>
 
@@ -1680,12 +1692,32 @@
 
 
 <h1 id="resource-manager">Resource Manager</h1>
-<h2 id="2025-07-01">2025-07-01</h2>
+<h2 id="2025-08-18">2025-08-18</h2>
 <h3 id="feature">Feature</h3>
+<p>You can use custom constraints with Organization Policy to provide more granular control over specific fields for some Backup for GKE resources. For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke/how-to/create-custom-constraints">Manage Backup for GKE resources using custom constraints</a>. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a>.</p>
+<h3 id="feature_1">Feature</h3>
+<p>You can now use organization policy conditions to match a tag key. This lets you enable or
+disable enforcement against all resources with that tag key, regardless of what
+tag value is attached. For more information, see <a href="https://cloud.google.com/resource-manager/docs/organization-policy/tags-organization-policy">Setting an organization policy with tags</a>.</p>
+<hr />
+<h2 id="2025-07-25">2025-07-25</h2>
+<h3 id="issue">Issue</h3>
+<p>Organization policies in dry-run mode are reporting inconsistent results for the following <a href="https://cloud.google.com/resource-manager/docs/organization-policy/overview#managed_constraints">managed constraints</a>:</p>
+<ul>
+<li><code>constraints/compute.managed.restrictProtocolForwardingCreationForTypes</code></li>
+<li><code>constraints/iam.managed.allowedPolicyMembers</code></li>
+<li><code>constraints/essentialcontacts.managed.allowedContactDomains</code></li>
+<li><code>constraints/compute.managed.blockPreviewFeatures</code></li>
+</ul>
+<p>If a resource inherited an organization policy in dry-run mode that uses any of these managed constraints, that dry-run policy was evaluated without using the parameters specified in the live policy. Normally, an organization policy in dry-run mode that's inherited on a resource is overridden by the live organization policy set directly on that same resource. Not evaluating the live organization policy parameters in the inherited organization policy in dry-run mode led to inconsistent results.</p>
+<p>Our engineering team is working to resolve this issue.</p>
+<hr />
+<h2 id="2025-07-01">2025-07-01</h2>
+<h3 id="feature_2">Feature</h3>
 <p><a href="https://cloud.google.com/policy-intelligence/docs/test-organization-policies">Policy Simulator for Organization Policy</a> is now <a href="https://cloud.google.com/products#product-launch-stages">generally available (GA)</a>.</p>
 <hr />
 <h2 id="2025-06-13">2025-06-13</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>Custom organization policies are now generally available for some API Keys. For more information, see <a href="https://cloud.google.com/api-keys/docs/custom-constraints">Creating and managing custom constraints</a>.</p>
 <hr />
 <h2 id="2025-06-10">2025-06-10</h2>
@@ -1702,6 +1734,12 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#resource-manager">Resource Manager</a></li>
+          <li class="nav-item">
+            <a href="#2025-08-18" class="nav-link">2025-08-18</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2025-07-25" class="nav-link">2025-07-25</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-07-01" class="nav-link">2025-07-01</a>
           </li>

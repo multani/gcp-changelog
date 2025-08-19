@@ -1,5 +1,20 @@
 # Contact Center AI Insights
 
+## 2025-08-15
+
+### Feature
+
+Quality AI offers the virtual agent platform to help with quality management for virtual agents. The [virtual agent platform](https://cloud.google.com/contact-center/insights/docs/virtual-agent-platform) presents data for the following metrics, aggregated across all an agent's conversations:
+
+* Rate of escalation to a human agent
+* Latencies with respect to operations that an agent performs
+* Customer sentiments
+
+### Feature
+
+Conversational Insights offers conversation **datasets** in preview. Choose from your existing history or upload new conversations to curate customized [datasets](https://cloud.google.com/contact-center/insights/docs/datasets) to test and evaluate the results of Agent Assist summarization.
+
+---
 ## 2025-07-18
 
 ### Feature

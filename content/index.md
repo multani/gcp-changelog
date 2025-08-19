@@ -117,6 +117,7 @@
 - [Network Connectivity Center](network-connectivity-center/index.md)
 - [Network Security Integration](network-security-integration/index.md)
 - [Oracle Database@Google Cloud](oracle-database-google-cloud/index.md)
+- [Organization Policy](organization-policy/index.md)
 - [Policy Controller](policy-controller/index.md)
 - [Policy Intelligence](policy-intelligence/index.md)
 - [Pub/Sub](pub-sub/index.md)

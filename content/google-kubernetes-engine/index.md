@@ -445,10 +445,6 @@ The C4 machine series now has General Availability machine types that support Lo
 
 ### Feature
 
-The C4 machine series now has General Availability machine types that support Local SSD storage options. These machine types are available in all GKE versions for Standard mode, and in GKE version 1.33.1-gke.1545000 and later for Autopilot mode. For more information about these machine types, see the "C4 standard with Local SSD" and "C4 highmem with Local SSD" tabs in [C4 machine types](https://cloud.google.com/compute/docs/general-purpose-machines#c4_machine_types).
-
-### Feature
-
 You can now [customize a node system configuration](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#kubelet-options) with the following new Kubelet, Sysctl, and Linux config options:
 
 * kubeletConfig flags:
@@ -483,6 +479,10 @@ You can now [customize a node system configuration](https://cloud.google.com/kub
 
   + transparentHugepageEnabled (on GKE versions 1.33.2-gke.4655000 and later)
   + transparentHugepageDefrag (on GKE versions 1.33.2-gke.4655000 and later)
+
+### Feature
+
+The C4 machine series now has General Availability machine types that support Local SSD storage options. These machine types are available in all GKE versions for Standard mode, and in GKE version 1.33.1-gke.1545000 and later for Autopilot mode. For more information about these machine types, see the "C4 standard with Local SSD" and "C4 highmem with Local SSD" tabs in [C4 machine types](https://cloud.google.com/compute/docs/general-purpose-machines#c4_machine_types).
 
 ---
 ## 2025-08-06

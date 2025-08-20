@@ -154,18 +154,18 @@
       },
       {
         "kind": "Feature",
-        "content": "The C4 machine series now has General Availability machine types that support Local SSD storage options. These machine types are available in all GKE versions for Standard mode, and in GKE version 1.33.1-gke.1545000 and later for Autopilot mode. For more information about these machine types, see the \"C4 standard with Local SSD\" and \"C4 highmem with Local SSD\" tabs in [C4 machine types](https://cloud.google.com/compute/docs/general-purpose-machines#c4_machine_types).",
-        "summary": {
-          "title": "C4 machine types now support Local SSD",
-          "summary": "New C4 machine types with Local SSD are now available for GKE."
-        }
-      },
-      {
-        "kind": "Feature",
         "content": "You can now [customize a node system configuration](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#kubelet-options) with the following new Kubelet, Sysctl, and Linux config options:\n\n* kubeletConfig flags:\n\n  + topologyManager (on GKE versions 1.32.3-gke.1785000 and later)\n  + memoryManager (on GKE versions 1.32.3-gke.1785000 and later)\n  + maxParallelImagePulls (on GKE versions 1.33.1-gke.1918000 and later)\n  + singleProcessOomKill (on GKE versions 1.32.4-gke.1132000, 1.33.0-gke.1748000 and later)\n  + evictionSoft\n  + evictionSoftGracePeriod\n  + evictionMinimumReclaim\n  + evictionMaxPodGracePeriodSeconds\n* sysctl flags:\n\n  + vm.overcommit\\_memory\n  + vm.overcommit\\_ratio\n  + vm.vfs\\_cache\\_pressure\n  + vm.dirty\\_ratio\n  + vm.dirty\\_background\\_ratio\n  + vm.dirty\\_expire\\_centisecs\n  + vm.dirty\\_writeback\\_centisecs\n  + vm.watermark\\_scale\\_factor\n  + vm.min\\_free\\_kbytes\n  + vm.swappiness\n  + fs.nr\\_open\n  + fs.file-max\n  + fs.inotify.max\\_user\\_watches\n  + fs.inotify.max\\_user\\_instances\n  + fs.aio-max-nr\n  + net.ipv4.tcp\\_max\\_orphans\n* linuxConfig flags:\n\n  + transparentHugepageEnabled (on GKE versions 1.33.2-gke.4655000 and later)\n  + transparentHugepageDefrag (on GKE versions 1.33.2-gke.4655000 and later)",
         "summary": {
           "title": "Node System Configuration Options",
           "summary": "New options available for Kubelet, Sysctl, and Linux config. Customize node system configuration."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The C4 machine series now has General Availability machine types that support Local SSD storage options. These machine types are available in all GKE versions for Standard mode, and in GKE version 1.33.1-gke.1545000 and later for Autopilot mode. For more information about these machine types, see the \"C4 standard with Local SSD\" and \"C4 highmem with Local SSD\" tabs in [C4 machine types](https://cloud.google.com/compute/docs/general-purpose-machines#c4_machine_types).",
+        "summary": {
+          "title": "C4 machine types now support Local SSD",
+          "summary": "New C4 machine types with Local SSD are now available for GKE."
         }
       }
     ],

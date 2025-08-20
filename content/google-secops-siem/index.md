@@ -1,5 +1,18 @@
 # Google SecOps SIEM
 
+## 2025-08-19
+
+### Announcement
+
+**Reference lists retiring**
+
+The reference list functionality is being phased out of the Google SecOps platform.
+
+* **October 2025**: You'll no longer be able to create new reference lists. Instead, use data tables to provide expanded functionality.
+* **Migration period**: All existing reference lists will be automatically migrated to data tables. During this migration period, you can continue to use your existing reference lists without changes.
+* **September 2026**: The legacy reference list functionality will be fully retired from the platform. After that date, all data will be available only through the data table interface.
+
+---
 ## 2025-08-13
 
 ### Announcement

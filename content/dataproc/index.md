@@ -1,5 +1,17 @@
 # Dataproc
 
+## 2025-08-19
+
+### Announcement
+
+New [Dataproc on Compute Engine subminor image versions](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):
+
+* 2.0.146-debian10, 2.0.146-ubuntu18, 2.0.146-rocky8,
+* 2.1.95-debian11, 2.1.95-ubuntu20, 2.1.95-ubuntu20-arm, 2.1.95-rocky8
+* 2.2.63-debian12, 2.2.63-ubuntu22, 2.2.63-ubuntu22-arm, 2.2.63-rocky9
+* 2.3.9-debian12, 2.3.9-ubuntu22, 2.3.9-ubuntu22-arm, 2.3.9-ml-ubuntu22, 2.3.9-rocky9
+
+---
 ## 2025-08-14
 
 ### Announcement

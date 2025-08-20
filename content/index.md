@@ -34,6 +34,7 @@
 - [App Engine standard environment Python](app-engine-standard-environment-python/index.md)
 - [App Engine standard environment Ruby](app-engine-standard-environment-ruby/index.md)
 - [App Hub](app-hub/index.md)
+- [Application Integration](application-integration/index.md)
 - [Artifact Registry](artifact-registry/index.md)
 - [Assured Workloads](assured-workloads/index.md)
 - [Backup and DR](backup-and-dr/index.md)

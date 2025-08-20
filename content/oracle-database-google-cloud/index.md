@@ -1,5 +1,14 @@
 # Oracle Database@Google Cloud
 
+## 2025-08-19
+
+### Feature
+
+For Exadata Database Service, Oracle Database@Google Cloud supports region `northamerica-northeast1` (Montréal, Québec, Canada, North America).
+
+For a full list of supported locations, see [Regional availability](https://cloud.google.com/oracle/database/docs/available-configurations#regions)
+
+---
 ## 2025-08-14
 
 ### Feature

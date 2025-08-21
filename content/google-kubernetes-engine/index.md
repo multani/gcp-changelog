@@ -1,5 +1,20 @@
 # Google Kubernetes Engine
 
+## 2025-08-20
+
+### Fixed
+
+A fix is available for an issue where the `device-fs-monitor` component in the
+Node Problem Detector generated false `ReadOnlyLocalSSDDetected` warnings on
+nodes that did not have local SSDs. This could cause customer confusion and
+distracting warnings.
+
+The fix is available in the following GKE versions:
+
+* 1.32.6-gke.1096000 and later
+* 1.33.0-gke.1712000 and later
+
+---
 ## 2025-08-15
 
 ### Feature

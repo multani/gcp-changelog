@@ -1,5 +1,30 @@
 # Google SecOps SIEM
 
+## 2025-08-20
+
+### Changed
+
+**New rules added to rule pack**
+
+Curated Detections has been enhanced with additional Chrome Enterprise Premium Browser Threat detections. The following rules have been added to the rule pack:
+
+* Dangerous Download with Matching Hashes by multiple users in Chrome Management
+* GTI High Severity File Download Event in Chrome Management
+* GTI Medium Severity File Download Event in Chrome Management
+* GTI Low Severity File Download Event in Chrome Management
+* Safe-browsing High Severity File Download Event in Chrome Management
+* Multiple Dangerous Download Events by same user in Chrome Management
+* Url Event to Newly Created Domain in Chrome Management
+
+### Feature
+
+**Composite detections are now generally available**
+
+The [composite detections](https://cloud.google.com/chronicle/docs/secops/release-notes#April_23_2025) feature is now in General Availability. Composite detections lets you link multiple YARA-L rules to detect complex, multistage threats. This capability enhances detection by correlating alerts that individual rules might not detect.
+
+For more information, see [Overview of composite detections](https://cloud.google.com/chronicle/docs/detection/composite-detections).
+
+---
 ## 2025-08-19
 
 ### Announcement

@@ -1,5 +1,25 @@
 # Google SecOps Marketplace
 
+## 2025-08-20
+
+### Changed
+
+**CrowdStrike Falcon**: Version 63.0
+
+* Updated processing of On-Demand Scan alerts in the following connector:
+
+  + **Crowdstrike Falcon - Alerts Connector**
+
+### Changed
+
+**Google Chronicle**: Version
+
+* Added support for aggregated searches in the following action:
+
+  **Note:** The action is only supported with the integration's Chronicle API configuration.
+  + **Execute UDM Query**
+
+---
 ## 2025-08-13
 
 ### Feature

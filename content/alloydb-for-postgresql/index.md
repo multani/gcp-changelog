@@ -1,5 +1,12 @@
 # AlloyDB for PostgreSQL
 
+## 2025-08-20
+
+### Feature
+
+You can save and manage your SQL scripts in AlloyDB Studio. This feature is in [Preview](https://cloud.google.com/products#product-launch-stages). For more information, see [Saved queries overview](https://cloud.google.com/alloydb/docs/saved-queries).
+
+---
 ## 2025-07-29
 
 ### Feature

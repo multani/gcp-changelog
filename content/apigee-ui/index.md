@@ -1,5 +1,18 @@
 # Apigee UI
 
+## 2025-08-20
+
+### Announcement
+
+On August 20, 2025, we released an updated version of the Apigee UI.
+
+### Feature
+
+**Added Name column to API Products table**
+
+Added a column to the [API Products table](https://cloud.google.com/apigee/docs/api-platform/publish/create-api-products#productdetails) to display the product name. You can now filter and sort by the product name. The link to the API product detail page is now in the **Name** column instead of the **Display Name** column.
+
+---
 ## 2025-08-12
 
 ### Announcement

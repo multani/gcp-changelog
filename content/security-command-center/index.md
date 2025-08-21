@@ -1,5 +1,12 @@
 # Security Command Center
 
+## 2025-08-20
+
+### Changed
+
+[Issues, chokepoints (for Google Cloud), and predefined security graph rules](https://cloud.google.com/security-command-center/docs/issues-overview) have been released to [General Availability](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-08-15
 
 ### Feature

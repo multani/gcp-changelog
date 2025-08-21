@@ -394,6 +394,16 @@ the Horizontal Pod Autoscaler. You can optionally
 
 ### Feature
 
+Starting on August 1, 2025, the Performance HorizontalPodAutoscaler profile is
+enabled by default for GKE Standard clusters that run
+GKE version 1.33.2-gke.4605000 and later and meet all of the
+[Performance profile requirements](https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#requirements_2).
+The Performance profile improves the reaction time, speed, and scalability of
+the Horizontal Pod Autoscaler. You can optionally
+[disable the Performance profile](https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#disable_the_performance_hpa_profile).
+
+### Feature
+
 Starting with GKE version 1.33.1-gke.1231000, you can view
 KubeRay Operator addon logs. These logs are available by default in
 Cloud Logging when the Ray operator addon is enabled in GKE.
@@ -403,16 +413,6 @@ Cloud Logging Logs Explorer in the Google Cloud console and run a query to filte
 for the Ray Operator logs for your specific cluster.
 
 For more information, see [View Ray Operator logs on GKE](https://cloud.google.com/kubernetes-engine/docs/add-on/ray-on-gke/how-to/view-ray-operator-logs).
-
-### Feature
-
-Starting on August 1, 2025, the Performance HorizontalPodAutoscaler profile is
-enabled by default for GKE Standard clusters that run
-GKE version 1.33.2-gke.4605000 and later and meet all of the
-[Performance profile requirements](https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#requirements_2).
-The Performance profile improves the reaction time, speed, and scalability of
-the Horizontal Pod Autoscaler. You can optionally
-[disable the Performance profile](https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#disable_the_performance_hpa_profile).
 
 ---
 ## 2025-08-08

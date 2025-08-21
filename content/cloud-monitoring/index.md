@@ -1,5 +1,25 @@
 # Cloud Monitoring
 
+## 2025-08-21
+
+### Feature
+
+The following infrastructure is now integrated with Application Monitoring,
+which is in public preview.
+
+* AlloyDB for PostgreSQL clusters and services
+* Bigtable clusters and services
+* Dataproc Metastore services
+* Cloud Deploy delivery pipelines
+* Firestore databases
+* Secret Manager secrets
+
+To learn more, see
+[Application Monitoring overview](https://cloud.google.com/monitoring/docs/about-application-monitoring)
+and
+[Supported infrastructure](https://cloud.google.com/monitoring/docs/application-monitoring-services).
+
+---
 ## 2025-08-05
 
 ### Feature

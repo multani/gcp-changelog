@@ -1704,25 +1704,29 @@
 
 
 <h1 id="cloud-sql-for-sql-server">Cloud SQL for SQL Server</h1>
-<h2 id="2025-08-15">2025-08-15</h2>
+<h2 id="2025-08-21">2025-08-21</h2>
 <h3 id="feature">Feature</h3>
-<p>Now you can use <a href="https://cloud.google.com/sql/docs/sqlserver/about-private-service-connect#psc-backend">Private Service Connect backends</a>, as an alternative to Private Service Connect endpoints, to access Cloud SQL instances.</p>
+<p>You can save and manage SQL queries in Cloud SQL Studio. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. For more information, see <a href="https://cloud.google.com/sql/docs/sqlserver/saved-queries">Saved queries overview</a>.</p>
+<hr />
+<h2 id="2025-08-15">2025-08-15</h2>
 <h3 id="feature_1">Feature</h3>
+<p>Now you can use <a href="https://cloud.google.com/sql/docs/sqlserver/about-private-service-connect#psc-backend">Private Service Connect backends</a>, as an alternative to Private Service Connect endpoints, to access Cloud SQL instances.</p>
+<h3 id="feature_2">Feature</h3>
 <p>Now you can create an IPv6 endpoint for Private Service Connect (PSC) connections. For more information, see <a href="https://cloud.google.com/sql/docs/sqlserver/configure-private-service-connect#create-psc-endpoint">Connect to an instance using Private Service Connect</a>.</p>
 <h3 id="deprecated">Deprecated</h3>
 <p>You can no longer set a deny maintenance period for instances that are running a maintenance version older than 12 months. To update your instance, <a href="https://cloud.google.com/sql/docs/sqlserver/self-service-maintenance">perform self-service maintenance</a> or wait until the <a href="https://cloud.google.com/sql/docs/sqlserver/set-maintenance-window#find-maintenance-api">next maintenance window</a> to update your instance automatically. For more information about maintenance, see <a href="https://cloud.google.com/sql/docs/sqlserver/maintenance">Maintenance updates on Cloud SQL instances</a>.</p>
 <hr />
 <h2 id="2025-08-13">2025-08-13</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>Cloud SQL now supports Private Service Connect (PSC) outbound connectivity. With PSC outbound connectivity, you can attach a PSC interface to your existing Cloud SQL PSC-enabled instances to allow your instances to make outbound connections to your network. For more information, see <a href="https://cloud.google.com/sql/docs/sqlserver/about-private-service-connect#psc-outbound">PSC outbound connections</a>.</p>
 <hr />
 <h2 id="2025-08-07">2025-08-07</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>Cloud SQL now offers planned maintenance and machine tier upgrades for your Cloud SQL Enterprise plus instances with near-zero downtime for eligible instances.</p>
 <p>For more information, see <a href="https://cloud.google.com/sql/docs/sqlserver/maintenance#nearzero">Maintenance updates on Cloud SQL instances</a>.</p>
 <hr />
 <h2 id="2025-07-31">2025-07-31</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p>Cloud SQL now offers two options of backup services to manage your instance's backups:</p>
 <ul>
 <li><strong>Enhanced backups</strong> (<a href="https://cloud.google.com/products?#product-launch-stages">Preview</a>): backups are managed and stored in a centralized backup management project that leverages the <a href="https://cloud.google.com/backup-disaster-recovery">Backup and DR service</a>, and provides enforced retention, granular scheduling, and longer retention.</li>
@@ -1732,11 +1736,11 @@
 <p>For more information about the available options and their limitations, see <a href="https://cloud.google.com/sql/docs/sqlserver/backup-recovery/backups#backup-options">Backup options</a>.</p>
 <hr />
 <h2 id="2025-07-08">2025-07-08</h2>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p>Cloud SQL for SQL Server now offers Active Directory support for write endpoints. For more information, see <a href="https://cloud.google.com/sql/docs/sqlserver/configure-private-ip#cross-forest-trusts">Write endpoints across forests</a>.</p>
 <hr />
 <h2 id="2025-05-28">2025-05-28</h2>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p>Cloud SQL for SQL Server now offers the maximum server memory recommender.</p>
 <p>Database instances running with an allocation of memory that's either too low or too high might experience performance issues.</p>
 <p>The <code>max server memory (mb)</code> flag limits the amount of memory that Cloud SQL can allocate for its internal pools. You can manually set a value for this flag, or omit the flag and let Cloud SQL manage memory limits for you automatically.</p>
@@ -1752,6 +1756,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-sql-for-sql-server">Cloud SQL for SQL Server</a></li>
+          <li class="nav-item">
+            <a href="#2025-08-21" class="nav-link">2025-08-21</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-08-15" class="nav-link">2025-08-15</a>
           </li>

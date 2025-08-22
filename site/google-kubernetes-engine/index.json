@@ -1,6 +1,48 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2025-08-21": [
+      {
+        "kind": "Feature",
+        "content": "The [M4 machine series](https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series)\nis generally available in GKE Autopilot clusters with\nversion 1.33.4-gke.1013000 or later. For more information, see M4 in\n[Resource requests in Autopilot](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests).",
+        "summary": {
+          "title": "M4 machine series",
+          "summary": "M4 machine series available in GKE Autopilot"
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Starting with GKE version 1.33.2-gke.1240000 and later, you can\nnow specify the network service tier (Standard or Premium) for ephemeral IP\naddresses used by the `gke-l7-regional-external-managed` GatewayClass. This\nGatewayClass configures Regional External Application Load Balancers for single\nclusters.\n\nFor more information, see [Configure network tier for Gateway IP addresses](https://cloud.google.com/kubernetes-engine/docs/how-to/deploying-gateways#configure-network-tier).",
+        "summary": {
+          "title": "Network Tier Selection for Gateway Resources",
+          "summary": "You can now select network tiers for ephemeral IPs."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [M4 machine series](https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series)\nis generally available in GKE Autopilot clusters with\nversion 1.33.4-gke.1013000 or later. For more information, see M4 in\n[Resource requests in Autopilot](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests).",
+        "summary": {
+          "title": "New M4 machines for GKE Autopilot",
+          "summary": "M4 machine series now available in GKE Autopilot."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Starting with GKE version 1.33.2-gke.1240000 and later, you can\nnow specify the network service tier (Standard or Premium) for ephemeral IP\naddresses used by the `gke-l7-regional-external-managed` GatewayClass. This\nGatewayClass configures Regional External Application Load Balancers for single\nclusters.\n\nFor more information, see [Configure network tier for Gateway IP addresses](https://cloud.google.com/kubernetes-engine/docs/how-to/deploying-gateways#configure-network-tier).",
+        "summary": {
+          "title": "Network Service Tier Selection for GatewayClass",
+          "summary": "You can now choose network service tiers for ephemeral IP addresses for the gke-l7-regional-external-managed GatewayClass."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Starting in GKE 1.33.3-gke.1136000, the validation of the\nHealthCheckPolicy CRD is now performed earlier by GKE Gateway.\nHence, certain invalid policies are now rejected by `kubectl`. The resulting\nerror message will specify why the policy is invalid.",
+        "summary": {
+          "title": "GKE Gateway HealthCheckPolicy Validation Update",
+          "summary": "GKE Gateway now validates HealthCheckPolicy CRD earlier, rejecting invalid policies."
+        }
+      }
+    ],
     "2025-08-20": [
       {
         "kind": "Fixed",
@@ -30,18 +72,18 @@
       },
       {
         "kind": "Feature",
-        "content": "For clusters enrolled in the Extended channel, you can now use\n[Gateway](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api)\nwith GKE version 1.30 or later, or\n[customized sysctl configuration options](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options).",
-        "summary": {
-          "title": "Gateway for Extended Channel",
-          "summary": "Gateway now available for Extended channel clusters."
-        }
-      },
-      {
-        "kind": "Feature",
         "content": "You can now receive a patch version in a release channel as soon as the version\nis available and before GKE sets the version as an auto-upgrade\ntarget in the channel by using *accelerated patch auto-upgrades*. Receiving\npatch versions earlier can help accelerate auto-upgrade timelines for patches,\nespecially for use cases such as accelerating your compliance with security\nrequirements.\n\nFor more information, see\n[Accelerated patch auto-upgrades](https://cloud.google.com/kubernetes-engine/docs/concepts/release-channels#accelerated-patch).",
         "summary": {
           "title": "Accelerated Patch Auto-Upgrades",
           "summary": "Accelerated patch auto-upgrades are now available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "For clusters enrolled in the Extended channel, you can now use\n[Gateway](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api)\nwith GKE version 1.30 or later, or\n[customized sysctl configuration options](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options).",
+        "summary": {
+          "title": "Gateway for Extended Channel",
+          "summary": "Gateway now available for Extended channel clusters."
         }
       }
     ],
@@ -130,18 +172,18 @@
       },
       {
         "kind": "Feature",
-        "content": "Starting on August 1, 2025, the Performance HorizontalPodAutoscaler profile is\nenabled by default for GKE Standard clusters that run\nGKE version 1.33.2-gke.4605000 and later and meet all of the\n[Performance profile requirements](https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#requirements_2).\nThe Performance profile improves the reaction time, speed, and scalability of\nthe Horizontal Pod Autoscaler. You can optionally\n[disable the Performance profile](https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#disable_the_performance_hpa_profile).",
-        "summary": {
-          "title": "GKE Horizontal Pod Autoscaler Performance Profile Enabled by Default",
-          "summary": "The Horizontal Pod Autoscaler performance profile is now the default for GKE Standard clusters on version 1.33.2-gke.4605000 and later. This change enhances the autoscaler's reaction time, speed, and scalability. You can disable this profile if needed."
-        }
-      },
-      {
-        "kind": "Feature",
         "content": "Starting with GKE version 1.33.1-gke.1231000, you can view\nKubeRay Operator addon logs. These logs are available by default in\nCloud Logging when the Ray operator addon is enabled in GKE.\nThis integration helps you to monitor and debug the Ray Operator. Previously,\naccessing these logs required more complex steps. To view the logs, navigate to\nCloud Logging Logs Explorer in the Google Cloud console and run a query to filter\nfor the Ray Operator logs for your specific cluster.\n\nFor more information, see [View Ray Operator logs on GKE](https://cloud.google.com/kubernetes-engine/docs/add-on/ray-on-gke/how-to/view-ray-operator-logs).",
         "summary": {
           "title": "KubeRay Operator Logs",
           "summary": "View KubeRay Operator addon logs in Cloud Logging."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Starting on August 1, 2025, the Performance HorizontalPodAutoscaler profile is\nenabled by default for GKE Standard clusters that run\nGKE version 1.33.2-gke.4605000 and later and meet all of the\n[Performance profile requirements](https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#requirements_2).\nThe Performance profile improves the reaction time, speed, and scalability of\nthe Horizontal Pod Autoscaler. You can optionally\n[disable the Performance profile](https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#disable_the_performance_hpa_profile).",
+        "summary": {
+          "title": "GKE Horizontal Pod Autoscaler Performance Profile Enabled by Default",
+          "summary": "The Horizontal Pod Autoscaler performance profile is now the default for GKE Standard clusters on version 1.33.2-gke.4605000 and later. This change enhances the autoscaler's reaction time, speed, and scalability. You can disable this profile if needed."
         }
       }
     ],
@@ -308,14 +350,6 @@
     "2025-07-28": [
       {
         "kind": "Feature",
-        "content": "In GKE version 1.32.2-gke.1359000 and later, you can now configure\n[collection scheduling](https://cloud.google.com/kubernetes-engine/docs/concepts/tpus#collection-scheduling)\nfor single-host and multi-host TPU node pools by using\n[compute classes](https://cloud.google.com/kubernetes-engine/docs/concepts/about-custom-compute-classes).\nCollection scheduling lets you set a Service Level Objective (SLO) for your TPU\nworkloads.",
-        "summary": {
-          "title": "TPU Collection Scheduling",
-          "summary": "TPU collection scheduling for GKE"
-        }
-      },
-      {
-        "kind": "Feature",
         "content": "In GKE version 1.33.2-gke.1335000 and later, the\n[GKE Gateway controller](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api#gateway_controller)\nsupports\n[Gateway API v1.3 CRDs](https://gateway-api.sigs.k8s.io/implementations/v1.3/).",
         "summary": {
           "title": "GKE Gateway API Update",
@@ -328,6 +362,14 @@
         "summary": {
           "title": "GKE Feature Update",
           "summary": "Target specific reservation sub-blocks in GKE."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "In GKE version 1.32.2-gke.1359000 and later, you can now configure\n[collection scheduling](https://cloud.google.com/kubernetes-engine/docs/concepts/tpus#collection-scheduling)\nfor single-host and multi-host TPU node pools by using\n[compute classes](https://cloud.google.com/kubernetes-engine/docs/concepts/about-custom-compute-classes).\nCollection scheduling lets you set a Service Level Objective (SLO) for your TPU\nworkloads.",
+        "summary": {
+          "title": "TPU Collection Scheduling",
+          "summary": "TPU collection scheduling for GKE"
         }
       },
       {

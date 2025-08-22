@@ -10,6 +10,30 @@
 
   + **Crowdstrike Falcon - Alerts Connector**
 
+### Changed
+
+**Google Chronicle**: Version 64.0
+
+* Added support for aggregated searches in the following action:
+
+  + **Execute UDM Query**
+
+### Changed
+
+**Microsoft Graph Mail**: Version 30.0
+
+* Improved handling of `Case Name Template` in the following connector:
+
+  + **Microsoft Graph Mail - Microsoft Graph Mail Connector**
+
+### Changed
+
+**Microsoft Graph Mail Delegated**: Version 6.0
+
+* Improved handling of `Case Name Template` in the following connector:
+
+  + **Microsoft Graph Mail Delegated - Microsoft Graph Mail Delegated Connector**
+
 ---
 ## 2025-08-13
 

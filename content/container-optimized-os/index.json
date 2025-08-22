@@ -1,6 +1,1474 @@
 {
   "name": "Container Optimized OS",
   "entries": {
+    "2025-08-18": [
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "Empty Content",
+          "summary": "The provided content is empty, so no summary can be generated."
+        }
+      },
+      {
+        "kind": "cos-beta-125-19216-0-12",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.41](https://cos.googlesource.com/third_party/kernel/+/cb97b1d56434861bfcd63c64497d0b8580f58508 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19216.0.12/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS Version Update",
+          "summary": "COS-6.12.41 with Docker v27.5.1 and Containerd v2.1.3."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated containerd to v2.1.3.",
+        "summary": {
+          "title": "containerd update",
+          "summary": "Updated containerd to v2.1.3."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated the NVIDIA GPU driver policy for New Feature Branch (NFB) drivers. The LATEST tag has been updated to point to the stable 570.133.20 Production Branch. The 575.57.08 NFB driver remains available for development and testing but must now be selected by its specific version number.Removed 575.57.08 NFB driver support for NVIDIA\\_GB200 machine.",
+        "summary": {
+          "title": "NVIDIA GPU Driver Update",
+          "summary": "NVIDIA GPU driver policy updated: LATEST tag now points to stable Production Branch drivers. Specific version numbers must be used for NFB drivers, and support for NVIDIA_GB200 has been removed for 575.57.08 NFB driver."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Upgraded nvidia-container-toolkit to v1.17.8. This fixes CVE-2025-23266.",
+        "summary": {
+          "title": "Upgraded nvidia-container-toolkit",
+          "summary": "Upgraded nvidia-container-toolkit to v1.17.8."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated cos-gpu-installer to v2.5.5.",
+        "summary": {
+          "title": "cos-gpu-installer updated",
+          "summary": "Updated cos-gpu-installer to v2.5.5."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Upgraded the Linux kernel to version 6.12.",
+        "summary": {
+          "title": "Linux Kernel Update",
+          "summary": "Upgraded the Linux kernel to version 6.12."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Upgrade dpdk-kmods to 9b182be2ee4b.",
+        "summary": {
+          "title": "Upgrade dpdk-kmods",
+          "summary": "Upgrade dpdk-kmods to 9b182be2ee4b."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Added support for 7th generation TPU devices.",
+        "summary": {
+          "title": "TPU devices generation 7 supported",
+          "summary": "TPU devices generation 7 supported"
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Patched a null ptr exception bug in NVIDIA 570.124.06 OSS driver.",
+        "summary": {
+          "title": "NVIDIA Driver Update",
+          "summary": "Fixed a bug in the NVIDIA driver."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "iptables-restore.service to start after ipset.service.",
+        "summary": {
+          "title": "iptables-restore.service start order change",
+          "summary": "iptables-restore.service starts after ipset.service."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Fixed an issue that resulted in missing grub boot measurements in some machine configurations.",
+        "summary": {
+          "title": "Grub Boot Measurements",
+          "summary": "Fixed missing grub boot measurements."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated Python to v3.11.",
+        "summary": {
+          "title": "Python 3.11 Update",
+          "summary": "Updated Python to v3.11."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Upgraded app-containers/docker to v27.5.1, Upgraded app-containers/docker-test to v27.5.1, Upgraded app-containers/docker-cli to v27.5.1.",
+        "summary": {
+          "title": "Docker Update",
+          "summary": "Docker updated to v27.5.1"
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated the default tag of the GPU driver supporting the NVIDIA H200 GPU device to 570.86.15.",
+        "summary": {
+          "title": "GPU Driver Update",
+          "summary": "Updated GPU driver tag to 570.86.15."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Upgrade cloud-init to v24.4.1.",
+        "summary": {
+          "title": "Cloud-init upgrade",
+          "summary": "Upgrade cloud-init to v24.4.1."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Backported support for AMD SEV-SNP SVSM vTPM driver and\nconfigfs-tsm addition for extended attestation protocol.",
+        "summary": {
+          "title": "AMD SEV-SNP SVSM vTPM Driver and TSM Addition",
+          "summary": "Backported support for AMD SEV-SNP SVSM vTPM driver and configfs-tsm addition for extended attestation protocol."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added ARM support for the Lustre v2.14.0 drivers.",
+        "summary": {
+          "title": "New ARM Support",
+          "summary": "ARM support for Lustre v2.14.0 drivers."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added NVIDIA 570.133.20 vGPU driver.",
+        "summary": {
+          "title": "NVIDIA driver update",
+          "summary": "NVIDIA vGPU driver updated."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added support for Nvidia driver version 575.57.08. Added support for NVIDIA\\_RTX\\_PRO\\_6000 devices.",
+        "summary": {
+          "title": "Nvidia Driver and Device Support Update",
+          "summary": "Nvidia driver version 575.57.08 and NVIDIA RTX PRO 6000 devices are now supported."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Supported NVIDIA MFT Tools on COS.",
+        "summary": {
+          "title": "NVIDIA MFT Tools on COS",
+          "summary": "Supported NVIDIA MFT tools on COS."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Injected IMEX channel char device for GB200 GPUs.",
+        "summary": {
+          "title": "Injected IMEX channel char device for GB200 GPUs",
+          "summary": "Injected IMEX channel char device for GB200 GPUs."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Fixed an issue in containerd that potentially breaks metric collection.",
+        "summary": {
+          "title": "Containerd Metric Collection Fix",
+          "summary": "Fixed an issue in containerd that could break metric collection."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Fixed an issue in containerd that prevented some v2 shims from shutting down properly.",
+        "summary": {
+          "title": "Containerd v2 Shim Shutdown Fix",
+          "summary": "Containerd fix for v2 shims."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added support for NVIDIA GB200 GPU with 570.124.06 GPU driver. This driver version has been assigned the latest, default, and R570 tags for this GPU type.",
+        "summary": {
+          "title": "New GPU Driver Support",
+          "summary": "NVIDIA GB200 GPU support added."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Add support for iRDMA devices.",
+        "summary": {
+          "title": "iRDMA device support",
+          "summary": "Add support for iRDMA devices."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Updated cos-gpu-installer to v2.4.8: Add the -skip-nvidia-smi flag to disable the execution of nvidia-smi verification during gpu driver installation.",
+        "summary": {
+          "title": "Updated cos-gpu-installer",
+          "summary": "The cos-gpu-installer has been updated to v2.4.8. This update introduces a new flag, -skip-nvidia-smi, which allows users to bypass the nvidia-smi verification during the GPU driver installation process."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Applied Intel patches to add iRDMA support in the Linux kernel.",
+        "summary": {
+          "title": "iRDMA Support in Linux Kernel",
+          "summary": "iRDMA support added to Linux kernel."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Removed an artifact registry ping that would delay multi-user.target indefinitely for machines with no external IP address.",
+        "summary": {
+          "title": "Improved startup performance",
+          "summary": "Fixed an issue where an artifact registry ping could indefinitely delay multi-user.target on machines without an external IP address."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.",
+        "summary": {
+          "title": "Fixed: File descriptor limit reverted",
+          "summary": "Reverted a containerd change that reduced the default soft file descriptor limit for processes in containers to 1024."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/google-guest-configs to v20250718.00.",
+        "summary": {
+          "title": "Fixed: google-guest-configs update",
+          "summary": "v20250718.00 update for google-guest-configs."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for the Lustre 2.14.0\\_p212 drivers.",
+        "summary": {
+          "title": "Lustre driver update",
+          "summary": "Added support for Lustre 2.14.0_p212 drivers."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed docker MTU mismatch.",
+        "summary": {
+          "title": "Fixed docker MTU mismatch",
+          "summary": "Fixed docker MTU mismatch."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Increased kdump memory reservation.",
+        "summary": {
+          "title": "Increased kdump memory reservation",
+          "summary": "Increased kdump memory reservation."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed issue where modinfo could not display module signatures.",
+        "summary": {
+          "title": "Modinfo module signatures fixed",
+          "summary": "Fixed issue where modinfo could not display module signatures."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/google-guest-agent to v20250418.00.",
+        "summary": {
+          "title": "Guest Agent Update",
+          "summary": "App-admin/google-guest-agent upgraded to v20250418.00."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/makedumpfile to v1.7.7.",
+        "summary": {
+          "title": "Makedumpfile upgrade",
+          "summary": "Upgraded makedumpfile to v1.7.7."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Modified toolbox to use unified cgroup hierarchy mode instead of hybrid mode when possible.",
+        "summary": {
+          "title": "Fixed: Toolbox cgroup hierarchy",
+          "summary": "Unified cgroup hierarchy mode is now used instead of hybrid mode."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-containers/docker-credential-helpers to v0.9.3.",
+        "summary": {
+          "title": "Docker credential helpers upgraded",
+          "summary": "Upgraded docker-credential-helpers to v0.9.3."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed EINTR error in app-container/cni-plugins.",
+        "summary": {
+          "title": "Fixed EINTR error",
+          "summary": "Fixed EINTR error in app-container/cni-plugins."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-auth/pambase to v20250228.",
+        "summary": {
+          "title": "pambase upgrade",
+          "summary": "pambase was upgraded."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Disabled martian logging for ConnectX-7 network cards. These cards only communicate locally, but martian logging during communications with the host can lead to a race condition which causes GID table construction to sometimes fail.",
+        "summary": {
+          "title": "Fixed: Martian logging issue",
+          "summary": "Martian logging disabled for ConnectX-7 network cards to prevent GID table construction failures."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-containers/runc to v1.2.5, Upgraded app-containers/runc-test to v1.2.5.",
+        "summary": {
+          "title": "Fixed runc upgrade",
+          "summary": "Upgraded runc and runc-test to v1.2.5."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/node-problem-detector to v0.8.20.",
+        "summary": {
+          "title": "App-admin/node-problem-detector Upgrade",
+          "summary": "The app-admin/node-problem-detector was updated to v0.8.20."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/fluent-bit to v3.2.5.",
+        "summary": {
+          "title": "fluent-bit upgrade",
+          "summary": "fluent-bit v3.2.5 is now available."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/google-breakpad to v2025.07.23.214511-r244.",
+        "summary": {
+          "title": "Upgrade Complete",
+          "summary": "Upgraded google-breakpad to a new version."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/minijail to v18-r168.",
+        "summary": {
+          "title": "Fixed",
+          "summary": "minijail upgrade"
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/openssl to 3.5.1.",
+        "summary": {
+          "title": "OpenSSL Upgrade",
+          "summary": "Upgraded openssl to 3.5.1."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-lang/go to v1.23.11.",
+        "summary": {
+          "title": "Go upgrade",
+          "summary": "Go upgraded to v1.23.11."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/shill-client to v0.0.1-r4879.",
+        "summary": {
+          "title": "Fixed: shill-client upgrade",
+          "summary": "ChromeOS shill-client upgraded."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/chromeos-common-script to v0.0.1-r667.",
+        "summary": {
+          "title": "Fixed: chromeos-script upgrade",
+          "summary": "Upgraded chromeos-base/chromeos-common-script to v0.0.1-r667."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/session\\_manager-client to v0.0.1-r2830.",
+        "summary": {
+          "title": "Fixed session-manager-client",
+          "summary": "Upgraded session-manager-client"
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/power\\_manager-client to v0.0.1-r2969.",
+        "summary": {
+          "title": "Power Manager Client Upgrade",
+          "summary": "The power manager client has been upgraded."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/debugd-client to v0.0.1-r2734.",
+        "summary": {
+          "title": "Debugd-client upgrade",
+          "summary": "The debugd-client has been upgraded."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/rootdev to v0.0.1-r51.",
+        "summary": {
+          "title": "Rootdev Upgrade",
+          "summary": "sys-apps/rootdev upgraded to v0.0.1-r51."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/dbus to v1.16.2-r197.",
+        "summary": {
+          "title": "DBus Upgrade",
+          "summary": "Upgraded dbus to v1.16.2-r197."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-benchmarks/microbenchmarks to v0.0.1-r20.",
+        "summary": {
+          "title": "App-benchmarks/microbenchmarks upgraded",
+          "summary": "Upgraded app-benchmarks/microbenchmarks to v0.0.1-r20."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/update\\_engine-client to v0.0.1-r2480.",
+        "summary": {
+          "title": "Fixed update_engine-client",
+          "summary": "Upgraded update_engine-client to v0.0.1-r2480."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated dev-python/requests to v2.32.4.",
+        "summary": {
+          "title": "Fixed",
+          "summary": "Updated requests to v2.32.4."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-misc/openssh to 10.0\\_p1.",
+        "summary": {
+          "title": "OpenSSH Upgrade",
+          "summary": "Upgraded OpenSSH to 10.0_p1."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-db/sqlite to v3.50.3.",
+        "summary": {
+          "title": "Sqlite upgrade",
+          "summary": "Upgraded sqlite to v3.50.3."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded virtual/logger to v0-r2.",
+        "summary": {
+          "title": "Virtual/Logger Upgrade",
+          "summary": "Upgraded virtual/logger to v0-r2."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/pv to v1.9.34.",
+        "summary": {
+          "title": "Fixed pv upgrade",
+          "summary": "Upgraded pv to v1.9.34."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/sudo to v1.9.17\\_p2.",
+        "summary": {
+          "title": "Sudo Upgrade",
+          "summary": "Sudo upgraded to v1.9.17_p2"
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-process/lsof to v4.99.5.",
+        "summary": {
+          "title": "Lsof upgrade",
+          "summary": "Lsof package upgraded to v4.99.5."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated app-misc/jq to v1.8.1.",
+        "summary": {
+          "title": "jq update",
+          "summary": "Updated app-misc/jq to v1.8.1."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/less to v679.",
+        "summary": {
+          "title": "Fixed sys-apps/less upgrade",
+          "summary": "Upgraded less to v679."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-process/procps to v4.0.5-r2.",
+        "summary": {
+          "title": "Fixed sys-process/procps upgrade",
+          "summary": "Upgraded sys-process/procps to v4.0.5-r2."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-libs/libcap to v2.76.",
+        "summary": {
+          "title": "Fixed libcap",
+          "summary": "Upgraded libcap to v2.76."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/ethtool to version 6.11.",
+        "summary": {
+          "title": "Ethtool upgrade",
+          "summary": "Ethtool upgraded to version 6.11."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-arch/gzip to v1.14.",
+        "summary": {
+          "title": "Gzip upgrade",
+          "summary": "Upgraded app-arch/gzip to v1.14."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-dns/libidn2 to v2.3.8.",
+        "summary": {
+          "title": "libidn2 upgrade",
+          "summary": "libidn2 package updated to version 2.3.8."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/grep to v3.12.",
+        "summary": {
+          "title": "grep upgrade",
+          "summary": "Upgraded grep to v3.12."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/diffutils to v3.11-r2.",
+        "summary": {
+          "title": "diffutils upgrade",
+          "summary": "Upgraded diffutils to v3.11-r2."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-nds/rpcbind to v1.2.7.",
+        "summary": {
+          "title": "Fixed rpcbind upgrade",
+          "summary": "Upgraded rpcbind"
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-misc/rsync to v3.4.1.",
+        "summary": {
+          "title": "rsync upgrade",
+          "summary": "rsync 3.4.1 upgrade"
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/nss to v3.110.",
+        "summary": {
+          "title": "NSS Upgrade",
+          "summary": "Upgraded NSS to v3.110."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-libs/libseccomp to v2.6.0-r2.",
+        "summary": {
+          "title": "libseccomp upgrade",
+          "summary": "Upgraded libseccomp to v2.6.0-r2."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/expat to v2.7.1.",
+        "summary": {
+          "title": "Expat Upgrade",
+          "summary": "Expat C library upgraded to v2.7.1."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-arch/unzip to v6.0\\_p29.",
+        "summary": {
+          "title": "Unzip Upgrade",
+          "summary": "Unzip upgraded to v6.0_p29."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/acl to v2.3.2-r2.",
+        "summary": {
+          "title": "ACL Upgrade",
+          "summary": "ACL package upgraded to v2.3.2-r2."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated dev-python/s3transfer to v0.11.4.",
+        "summary": {
+          "title": "Fixed dev-python/s3transfer",
+          "summary": "Updated dev-python/s3transfer to v0.11.4."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated dev-python/botocore to v1.37.9.",
+        "summary": {
+          "title": "Botocore Update",
+          "summary": "Botocore was updated to v1.37.9."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated dev-python/python-dateutil to v2.9.0.",
+        "summary": {
+          "title": "Fixed python-dateutil",
+          "summary": "Updated python-dateutil to v2.9.0."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/which to v2.23.",
+        "summary": {
+          "title": "Fixed",
+          "summary": "Upgraded which to v2.23."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/double-conversion to v3.3.1.",
+        "summary": {
+          "title": "Double-conversion upgrade",
+          "summary": "Upgraded double-conversion to v3.3.1."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-misc/socat to v1.8.0.3.",
+        "summary": {
+          "title": "Socat upgrade",
+          "summary": "Socat upgraded to v1.8.0.3."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/hwdata to v0.391.",
+        "summary": {
+          "title": "hwdata upgrade",
+          "summary": "Upgraded hwdata to v0.391."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sysram to version 6.12-0.",
+        "summary": {
+          "title": "Sysram Upgrade",
+          "summary": "Upgraded sysram to version 6.12-0."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.",
+        "summary": {
+          "title": "Nvidia Driver Update",
+          "summary": "Security update for Nvidia driver."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Added support for Nvidia driver version 570.172.08. This fixes CVE-2025-23279.",
+        "summary": {
+          "title": "Nvidia Driver Security Update",
+          "summary": "This security update addresses CVE-2025-23279."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded net-misc/netplan to v1.1.2. This fixes\nCVE-2022-4968.",
+        "summary": {
+          "title": "Netplan update",
+          "summary": "Security fix for netplan."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-6174 and CVE-2024-11584 in cloud-init.",
+        "summary": {
+          "title": "Security Updates",
+          "summary": "Fixed CVE-2024-6174 and CVE-2024-11584."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-47273 in dev-python/setuptools.",
+        "summary": {
+          "title": "Security update for setuptools",
+          "summary": "Fixed CVE-2025-47273 in setuptools."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated systemd to v254.26. This resolves CVE-2025-4598.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Updated systemd to v254.26 to resolve CVE-2025-4598."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated apparmor to v3.1.6. This fixes CVE-2016-1585.",
+        "summary": {
+          "title": "Security update",
+          "summary": "AppArmor updated to v3.1.6, fixing CVE-2016-1585."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Update NVIDIA GPU drivers to v535.247.01 for default/ R535\nand v570.133.20 for latest/R570. This resolves CVE‑2025‑23244.",
+        "summary": {
+          "title": "Security Update for NVIDIA GPU Drivers",
+          "summary": "NVIDIA GPU driver update resolves a security vulnerability."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-8058 in glibc.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixed CVE-2025-8058 in glibc."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded dev-libs/glib to 2.82.5. This resolves\nCVE-2024-52533.",
+        "summary": {
+          "title": "Security Update for glib",
+          "summary": "Upgraded dev-libs/glib to 2.82.5 to resolve CVE-2024-52533."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Patched openssl to fix CVE-2023-50782 affecting\ndev-python/crytography.",
+        "summary": {
+          "title": "Security update",
+          "summary": "Patched openssl to fix CVE-2023-50782."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated dev-go/net in policy manager to v0.39.0. This fixes CVE-2025-22870.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixes CVE-2025-22870 in dev-go/net."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded dev-go/crypto to v0.35.0. This fixes CVE-2025-22869.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "New security fixes for dev-go/crypto."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated dev-go/oauth2 to v0.27.0. Fixes CVE-2025-22868.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Updated dev-go/oauth2 to v0.27.0. Fixes CVE-2025-22868."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-13176 in dev-libs/openssl.",
+        "summary": {
+          "title": "Security",
+          "summary": "OpenSSL vulnerability fixed."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-0395 in sys-libs/glibc.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixed CVE-2025-0395 in sys-libs/glibc."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-9287 in dev-lang/python.",
+        "summary": {
+          "title": "Security update for python",
+          "summary": "Fixed CVE-2024-9287 in python."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-0840 in binutils.",
+        "summary": {
+          "title": "Security fix",
+          "summary": "Fixed CVE-2025-0840 in binutils."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Binutils-libs upgrade. Fixes CVEs."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded dev-vcs/git to version 2.49.1. This fixes CVE-2025-48385, CVE-2025-27613, CVE-2025-27614, CVE-2025-48384, CVE-2025-46835.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Git upgrade fixes security vulnerabilities."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-26130 in dev-python/cryptography.",
+        "summary": {
+          "title": "Security update",
+          "summary": "CVE-2024-26130 fixed in dev-python/cryptography."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated app-editors/nano to v8.5. This resolves\nCVE-2024-5742.",
+        "summary": {
+          "title": "Nano editor updated",
+          "summary": "Updated app-editors/nano to v8.5 to resolve CVE-2024-5742."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded vim, vim-core to\nversion 9.1.1500. This fixes CVE-2025-26603, CVE-2025-27423,\nCVE-2025-29768, CVE-2025-1215, CVE-2025-24014, CVE-2025-22134.",
+        "summary": {
+          "title": "Vim security update",
+          "summary": "Vim security update"
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgrade libarchive to v3.8.1. This fixes CVE-2025-5914.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "CVE-2025-5914 fixed by upgrading libarchive to v3.8.1."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded elfutils to v0.193. This fixes CVE-2025-1365, CVE-2025-1371, CVE-2025-1372, and CVE-2025-1377.",
+        "summary": {
+          "title": "Elfutils Security Fixes",
+          "summary": "Security update for elfutils."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-23337 in app-misc/jq.",
+        "summary": {
+          "title": "Security Update for JQ",
+          "summary": "Fixed CVE-2024-23337 in jq."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded net-misc/curl to v8.12.1. This fixes CVE-2025-0167.",
+        "summary": {
+          "title": "Security update for curl",
+          "summary": "Upgraded curl to v8.12.1, fixing CVE-2025-0167."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-46836 in sys-apps/net-tools",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixed CVE-2025-46836 in sys-apps/net-tools"
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-20250-3198 in sys-libs/bintuils-libs.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixed CVE-20250-3198 in sys-libs/bintuils-libs."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fix CVE-2025-32414, CVE-2025-32415 in dev-libs/libxml2.",
+        "summary": {
+          "title": "Security update",
+          "summary": "Fixes for libxml2 vulnerabilities"
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-32728 in net-misc/openssh.",
+        "summary": {
+          "title": "OpenSSH Security Fix",
+          "summary": "Security update for OpenSSH."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-53427 in app-misc/jq.",
+        "summary": {
+          "title": "Security",
+          "summary": "Fixed CVE-2024-53427 in app-misc/jq."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-31498 in net-dns/c-ares.",
+        "summary": {
+          "title": "Security update for c-ares",
+          "summary": "Fixed CVE-2025-31498 in net-dns/c-ares."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-48615 in app-arch/libarchive.",
+        "summary": {
+          "title": "Security update for libarchive",
+          "summary": "Fixed CVE-2024-48615 in app-arch/libarchive."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded net-misc/wget to v1.25.0. This fixes CVE-2024-10524.",
+        "summary": {
+          "title": "wget Security Update",
+          "summary": "Fixed CVE-2024-10524 in wget."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded dev-libs/libxml2 to v1.12.10. Fixes CVE-2025-27113.",
+        "summary": {
+          "title": "libxml2 Security Fix",
+          "summary": "Security update for libxml2."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Added: kernel.apparmor\\_restrict\\_unprivileged\\_unconfined: 0\n* Added: kernel.core\\_file\\_note\\_size\\_limit: 4194304\n* Added: kernel.core\\_sort\\_vma: 0\n* Added: net.ipv4.fib\\_multipath\\_hash\\_seed: 0\n* Added: net.ipv4.tcp\\_pingpong\\_thresh: 1\n* Added: net.ipv6.conf.all.ra\\_honor\\_pio\\_life: 0\n* Added: net.ipv6.conf.all.ra\\_honor\\_pio\\_pflag: 0\n* Added: net.ipv6.conf.all.regen\\_min\\_advance: 2\n* Added: net.ipv6.conf.default.ra\\_honor\\_pio\\_life: 0\n* Added: net.ipv6.conf.default.ra\\_honor\\_pio\\_pflag: 0\n* Added: net.ipv6.conf.default.regen\\_min\\_advance: 2\n* Added: net.ipv6.conf.docker0.ra\\_honor\\_pio\\_life: 0\n* Added: net.ipv6.conf.docker0.ra\\_honor\\_pio\\_pflag: 0\n* Added: net.ipv6.conf.docker0.regen\\_min\\_advance: 2\n* Added: net.ipv6.conf.eth0.ra\\_honor\\_pio\\_life: 0\n* Added: net.ipv6.conf.eth0.ra\\_honor\\_pio\\_pflag: 0\n* Added: net.ipv6.conf.eth0.regen\\_min\\_advance: 2\n* Added: net.ipv6.conf.lo.ra\\_honor\\_pio\\_life: 0\n* Added: net.ipv6.conf.lo.ra\\_honor\\_pio\\_pflag: 0\n* Added: net.ipv6.conf.lo.regen\\_min\\_advance: 2\n* Added: vm.enable\\_soft\\_offline: 1\n* Changed: fs.epoll.max\\_user\\_watches: 1809007 -> 1808517\n* Changed: fs.fanotify.max\\_user\\_marks: 67544 -> 68412\n* Changed: fs.file-max: 811774 -> 811484\n* Changed: fs.inotify.max\\_user\\_watches: 63425 -> 64189\n* Changed: kernel.threads-max: 63487 -> 63178\n* Changed: net.ipv4.tcp\\_mem: 94041 125391 188082 -> 94017 125357 188034\n* Changed: net.ipv4.udp\\_mem: 188085 250783 376170 -> 188034 250715 376068\n* Changed: user.max\\_cgroup\\_namespaces: 31743 -> 31589\n* Changed: user.max\\_fanotify\\_marks: 67544 -> 68412\n* Changed: user.max\\_inotify\\_watches: 63425 -> 64189\n* Changed: user.max\\_ipc\\_namespaces: 31743 -> 31589\n* Changed: user.max\\_mnt\\_namespaces: 31743 -> 31589\n* Changed: user.max\\_net\\_namespaces: 31743 -> 31589\n* Changed: user.max\\_pid\\_namespaces: 31743 -> 31589\n* Changed: user.max\\_time\\_namespaces: 31743 -> 31589\n* Changed: user.max\\_user\\_namespaces: 31743 -> 31589\n* Changed: user.max\\_uts\\_namespaces: 31743 -> 31589\n* Changed: vm.lowmem\\_reserve\\_ratio: 256 256 32 0 0 -> 256 256 32 0\n* Deleted: kernel.sched\\_child\\_runs\\_first: 0",
+        "summary": {
+          "title": "Runtime Sysctl Updates",
+          "summary": "Runtime sysctl settings were updated, including additions, changes, and a deletion."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "Short Title",
+          "summary": "This is a short summary."
+        }
+      },
+      {
+        "kind": "cos-dev-129-19246-0-0",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.41](https://cos.googlesource.com/third_party/kernel/+/ef55a40bd2b3af2acd1197d83f203f892d717819 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19246.0.0/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS-6.12.41",
+          "summary": "New COS version released."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Backported support for AMD SEV-SNP SVSM vTPM driver and\nconfigfs-tsm addition for extended attestation protocol.",
+        "summary": {
+          "title": "AMD SEV-SNP SVSM vTPM Driver and Configfs-TSM Addition",
+          "summary": "Backported support for AMD SEV-SNP SVSM vTPM driver and configfs-tsm addition for extended attestation protocol."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Enabled the google-guest-agent's network management functionality.",
+        "summary": {
+          "title": "Network Management Enabled",
+          "summary": "Google guest agent network management enabled."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added ConnectX-8 RDMA support.",
+        "summary": {
+          "title": "ConnectX-8 RDMA Support",
+          "summary": "ConnectX-8 RDMA support added."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/google-guest-configs to v20250807.00.",
+        "summary": {
+          "title": "App-admin/google-guest-configs Upgrade",
+          "summary": "App-admin/google-guest-configs upgraded to v20250807.00."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/chromeos-common-script to v0.0.1-r668.",
+        "summary": {
+          "title": "Fixed chromeos-base/chromeos-common-script",
+          "summary": "Upgraded chromeos-base/chromeos-common-script to v0.0.1-r668."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-lang/go to v1.23.12.",
+        "summary": {
+          "title": "Go upgrade",
+          "summary": "Go upgraded to v1.23.12."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-db/sqlite to v3.50.4.",
+        "summary": {
+          "title": "SQLite Upgrade",
+          "summary": "Upgraded SQLite to v3.50.4."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-nds/rpcbind to v1.2.8.",
+        "summary": {
+          "title": "RPCBind Upgrade",
+          "summary": "Upgraded rpcbind to v1.2.8."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/gentoo-functions to v1.7.4.",
+        "summary": {
+          "title": "gentoo-functions upgrade",
+          "summary": "Upgraded gentoo-functions to v1.7.4."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.",
+        "summary": {
+          "title": "Security Update: Binutils-libs",
+          "summary": "Binutils-libs updated to 2.45, patching critical CVEs."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-01d3c84 in the Linux kernel.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixed KCTF-01d3c84 in the Linux kernel."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "Short Title",
+          "summary": "This is a short summary."
+        }
+      },
+      {
+        "kind": "cos-113-18244-448-29",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.144](https://cos.googlesource.com/third_party/kernel/+/4a14d0356f04e4dc9ad84328ced11962da997611 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.448.29/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS Version Update",
+          "summary": "COS-6.1.144 with Docker v24.0.9 and Container-v1.7.27"
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added NVIDIA GPU driver's R580 branch. Updated the LATEST GPU driver label to version 580.65.06.",
+        "summary": {
+          "title": "New NVIDIA GPU Driver Version Available",
+          "summary": "NVIDIA GPU driver's R580 branch added. LATEST GPU driver label updated to version 580.65.06."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.",
+        "summary": {
+          "title": "binutils-libs Security Update",
+          "summary": "Security update for binutils-libs."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-01d3c84 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "Fixed KCTF-01d3c84 in the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-38499 in the linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "Security fix for CVE-2025-38499 in Linux kernel."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added NVIDIA GPU driver's R580 branch. Updated the LATEST GPU driver label to version 580.65.06.",
+        "summary": {
+          "title": "NVIDIA Driver Update",
+          "summary": "NVIDIA GPU driver's R580 branch added. LATEST GPU driver label updated to version 580.65.06."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.",
+        "summary": {
+          "title": "Security",
+          "summary": "Security update for binutils-libs."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-01d3c84 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "Fixed KCTF-01d3c84 in the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-38499 in the linux kernel.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixed CVE-2025-38499 in the linux kernel."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 812031 -> 812040",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "fs.file-max changed from 812031 to 812040."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "Short Title",
+          "summary": "This is a short summary."
+        }
+      },
+      {
+        "kind": "cos-109-17800-570-33",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.143](https://cos.googlesource.com/third_party/kernel/+/32eebab8d4fc97eb69fe095c4737e578f395ea56 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/17800.570.33/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 109-17800-570-33 Release",
+          "summary": "COS-6.1.143 with Docker v24.0.9 and Containerd v1.7.27, including GPU drivers."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added NVIDIA GPU driver's R580 branch. Updated the LATEST GPU driver label to version 580.65.06.",
+        "summary": {
+          "title": "NVIDIA GPU Driver Update",
+          "summary": "Added NVIDIA GPU driver's R580 branch and updated the LATEST GPU driver label to version 580.65.06."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.",
+        "summary": {
+          "title": "security update",
+          "summary": "security update for binutils-libs"
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-01d3c84 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "Fixed KCTF-01d3c84 in the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-38499 in the Linux kernel.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixed CVE-2025-38499 in the Linux kernel."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added NVIDIA GPU driver's R580 branch. Updated the LATEST GPU driver label to version 580.65.06.",
+        "summary": {
+          "title": "NVIDIA GPU Driver Update",
+          "summary": "NVIDIA GPU driver's R580 branch added."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.",
+        "summary": {
+          "title": "Security Update: binutils-libs to 2.45",
+          "summary": "Upgraded binutils-libs to 2.45, fixing CVE-2025-8224, CVE-2025-8225, and CVE-2025-1153."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-01d3c84 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "Fixed KCTF-01d3c84 in the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-38499 in the linux kernel.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixed CVE-2025-38499 in the linux kernel."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 812266 -> 812258",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "fs.file-max changed to 812258"
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "Short Title",
+          "summary": "This is a short summary."
+        }
+      },
+      {
+        "kind": "cos-121-18867-199-38",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.97](https://cos.googlesource.com/third_party/kernel/+/503b48dcd05d72cc3993836ba04c998694445289 ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.199.38/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 18867.199.38",
+          "summary": "A new COS version is available."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.",
+        "summary": {
+          "title": "Security Update for binutils-libs",
+          "summary": "Upgraded binutils-libs to version 2.45 to fix security vulnerabilities."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-01d3c84 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "Fixed KCTF-01d3c84 in the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Security update for binutils-libs."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-01d3c84 in the Linux kernel.",
+        "summary": {
+          "title": "Security Fix",
+          "summary": "Fixed KCTF-01d3c84 in the Linux kernel."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811774 -> 811736",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "fs.file-max changed from 811774 to 811736."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "Product Update",
+          "summary": "The product is now available."
+        }
+      },
+      {
+        "kind": "cos-117-18613-339-39",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.97](https://cos.googlesource.com/third_party/kernel/+/4388aee252f712d6c58566a5e41a11c7e938827e ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.339.39/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS Version Update",
+          "summary": "COS-6.6.97 with Docker v24.0.9, Containerd v1.7.28, and GPU Drivers."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.",
+        "summary": {
+          "title": "Security Update for Binutils-libs",
+          "summary": "Updated binutils-libs to version 2.45, addressing critical vulnerabilities CVE-2025-8224, CVE-2025-8225, and CVE-2025-1153."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-01d3c84 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security fix",
+          "summary": "Fixed KCTF-01d3c84 in the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Upgraded binutils-libs to 2.45 to fix security vulnerabilities."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-01d3c84 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "Fixed KCTF-01d3c84 in the Linux kernel."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811830 -> 811771",
+        "summary": {
+          "title": "Runtime sysctl fs.file-max change",
+          "summary": "Runtime sysctl changes: fs.file-max changed from 811830 to 811771."
+        }
+      }
+    ],
+    "2025-08-14": [
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": " ",
+          "summary": " "
+        }
+      },
+      {
+        "kind": "cos-121-18867-199-34",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.97](https://cos.googlesource.com/third_party/kernel/+/bfd3481379d56d24f2ab0fa617f940470828d303 ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.199.34/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS Version 6.6.97",
+          "summary": "COS-6.6.97 with Docker v27.5.1 and Containerd v2.0.6."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-38499 in the linux kernel.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "Fixed CVE-2025-38499 in the linux kernel."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811817 -> 811774",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "Runtime sysctl changes: fs.file-max: 811817 -> 811774"
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "Short Title",
+          "summary": "This is a short summary."
+        }
+      },
+      {
+        "kind": "cos-117-18613-339-36",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.97](https://cos.googlesource.com/third_party/kernel/+/466a913740c9a1e7249f9f8efda9f3c9b32367b2 ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.339.36/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS Announcement",
+          "summary": "Docker, Containerd, and GPU driver updates for COS."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-38499 in the linux kernel.",
+        "summary": {
+          "title": "Security Fix",
+          "summary": "Fixed CVE-2025-38499 in the linux kernel."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811765 -> 811830",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "Runtime sysctl changes: fs.file-max: 811765 -> 811830"
+        }
+      }
+    ],
     "2025-08-12": [
       {
         "kind": "cos-121-18867-199-28",

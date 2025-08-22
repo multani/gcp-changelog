@@ -1,5 +1,19 @@
 # Cloud Run
 
+## 2025-08-21
+
+### Feature
+
+Support for [Go 1.25 runtime](https://cloud.google.com/run/docs/runtime-support#go) is in [General Availability (GA)](https://cloud.google.com/products?e=48754805&hl=en#product-launch-stages).
+
+---
+## 2025-08-20
+
+### Feature
+
+For Cloud Run source deployed services and functions with [GPU enabled](https://cloud.google.com/run/docs/configuring/services/gpu), Cloud Run defaults to using Cloud Build's `e2-highcpu-8` machine type for the build process when you use the `gcloud beta run` command (Preview). This change allows for higher CPU support and faster build times, and also leads to a moderate increase in the overall cost of your service.
+
+---
 ## 2025-08-14
 
 ### Feature

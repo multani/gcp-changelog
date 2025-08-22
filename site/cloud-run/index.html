@@ -1704,73 +1704,81 @@
 
 
 <h1 id="cloud-run">Cloud Run</h1>
-<h2 id="2025-08-14">2025-08-14</h2>
+<h2 id="2025-08-21">2025-08-21</h2>
 <h3 id="feature">Feature</h3>
+<p>Support for <a href="https://cloud.google.com/run/docs/runtime-support#go">Go 1.25 runtime</a> is in <a href="https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages">General Availability (GA)</a>.</p>
+<hr />
+<h2 id="2025-08-20">2025-08-20</h2>
+<h3 id="feature_1">Feature</h3>
+<p>For Cloud Run source deployed services and functions with <a href="https://cloud.google.com/run/docs/configuring/services/gpu">GPU enabled</a>, Cloud Run defaults to using Cloud Build's <code>e2-highcpu-8</code> machine type for the build process when you use the <code>gcloud beta run</code> command (Preview). This change allows for higher CPU support and faster build times, and also leads to a moderate increase in the overall cost of your service.</p>
+<hr />
+<h2 id="2025-08-14">2025-08-14</h2>
+<h3 id="feature_2">Feature</h3>
 <p>The Python buildpack supports Cloud Run source deployments for modern web frameworks such as <a href="https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-fastapi-service.md">FastAPI</a>, <a href="https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-gradio-service">Gradio</a>, and <a href="https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-streamlit-service">Streamlit</a>.</p>
 <p>For Python version 3.13 and later, the Python buildpack sets the default entrypoint for <a href="https://cloud.google.com/run/docs/deploying-source-code">Cloud Run source deployments</a> based on the web server or framework configuration in your <code>requirements.txt</code> file. For more information, see <a href="https://cloud.google.com/docs/buildpacks/python#entrypoint">Build a Python application</a>.</p>
 <hr />
 <h2 id="2025-08-13">2025-08-13</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>You can set multiple environment variables using the <code>.env</code> file (Preview). For more information, see <a href="https://cloud.google.com/run/docs/configuring/services/environment-variables.md#set_multiple_environment_variables">Configure environment variables for services</a>, <a href="https://cloud.google.com/run/docs/configuring/jobs/environment-variables.md#set_multiple_environment_variables">jobs</a>, and <a href="https://cloud.google.com/run/docs/configuring/workerpools/environment-variables.md#set_multiple_environment_variables">worker pools</a>.</p>
 <hr />
 <h2 id="2025-08-05">2025-08-05</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>Support for <a href="https://cloud.google.com/run/docs/configuring/services/manual-scaling">manually scaling your Cloud Run service</a> is now at General Availability (GA).</p>
 <hr />
 <h2 id="2025-07-30">2025-07-30</h2>
-<h3 id="feature_3">Feature</h3>
-<p>Support for <a href="https://cloud.google.com/run/docs/runtime-support#go">Go 1.24 runtime</a> is in <a href="https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages">General Availability (GA)</a>.</p>
-<h3 id="feature_4">Feature</h3>
-<p>Support for <a href="https://cloud.google.com/run/docs/runtime-support#go">Go 1.25 runtime</a> is in <a href="https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages">Preview</a>. This runtime is available for early testers using existing <a href="https://go.dev/dl/#unstable">release candidates</a>.</p>
 <h3 id="feature_5">Feature</h3>
+<p>Support for <a href="https://cloud.google.com/run/docs/runtime-support#go">Go 1.24 runtime</a> is in <a href="https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages">General Availability (GA)</a>.</p>
+<h3 id="feature_6">Feature</h3>
+<p>Support for <a href="https://cloud.google.com/run/docs/runtime-support#go">Go 1.25 runtime</a> is in <a href="https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages">Preview</a>. This runtime is available for early testers using existing <a href="https://go.dev/dl/#unstable">release candidates</a>.</p>
+<h3 id="feature_7">Feature</h3>
 <p>Support for <a href="https://cloud.google.com/run/docs/runtime-support#node.js">Node.js 24 runtime</a> is in <a href="https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages">Preview</a>. Node.js 24 is in the Current release state and enters long-term support (LTS) in October 2025. For more information, see <a href="https://nodejs.org/en/blog/release/v24.0.0">Node.js v24.0.0 (Current)</a> in the Node.js website.</p>
 <hr />
 <h2 id="2025-07-16">2025-07-16</h2>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p>You can <a href="https://cloud.google.com/run/docs/securing/ingress">disable the built-in <code>run.app</code> URL</a> of a Cloud Run service to ensure that traffic can only ingress through paths that you've explicitly configured (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).</p>
 <hr />
 <h2 id="2025-07-15">2025-07-15</h2>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p>Compute flexible committed use discounts (CUDs) have expanded to also cover your Cloud Billing account's spend across Cloud Run services with request-based billing and Cloud Run functions.</p>
 <p>The <a href="https://cloud.google.com/docs/cuds-multiprice">improved spend-based CUD experience</a> is available without requiring an opt-in for new users or users who don't have an active spend-based CUD.</p>
 <p>To learn more about how opting into the new model affects your flexible CUDs, see <a href="https://cloud.google.com/run/cud">Committed use discounts</a>.</p>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p>Support for the <a href="https://cloud.google.com/run/docs/runtime-support#go">Go 1.24 runtime</a> is in <a href="https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages">Preview</a>.</p>
 <hr />
 <h2 id="2025-06-30">2025-06-30</h2>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_11">Feature</h3>
 <p>You can <a href="https://cloud.google.com/run/docs/configuring/max-instances#service-vs-revision-level">apply maximum instance configuration</a> at the service level (in Preview).</p>
 <hr />
 <h2 id="2025-06-25">2025-06-25</h2>
-<h3 id="feature_10">Feature</h3>
+<h3 id="feature_12">Feature</h3>
 <p>Cloud Run <a href="https://cloud.google.com/run/docs/deploy-worker-pools">worker pools</a> are now available (Preview). Worker pools are specifically designed for non-request workloads.</p>
 <hr />
 <h2 id="2025-06-24">2025-06-24</h2>
-<h3 id="feature_11">Feature</h3>
+<h3 id="feature_13">Feature</h3>
 <p>A new region is now available for <a href="https://cloud.google.com/run/docs/configuring/services/gpu#supported-regions">Cloud Run GPUs</a>: <code>us-east4</code>.</p>
 <hr />
 <h2 id="2025-06-17">2025-06-17</h2>
-<h3 id="feature_12">Feature</h3>
+<h3 id="feature_14">Feature</h3>
 <p>Support for the <a href="https://cloud.google.com/run/docs/runtime-support#php">PHP 8.4 runtime</a> is in <a href="https://cloud.google.com/products/?_gl=1*dplot*_ga*MTM2MDk5MzEzMi4xNzQ1ODg0OTY5*_ga_4LYFWVHBEB*MTc0NjE0MTA3Ny4yMi4xLjE3NDYxNDEwOTYuMC4wLjA.#product-launch-stages">General Availability (GA)</a>.</p>
-<h3 id="feature_13">Feature</h3>
+<h3 id="feature_15">Feature</h3>
 <p>Support for the <a href="https://cloud.google.com/run/docs/runtime-support#ruby">Ruby 3.4 runtime</a> is in <a href="https://cloud.google.com/products/?_gl=1*dplot*_ga*MTM2MDk5MzEzMi4xNzQ1ODg0OTY5*_ga_4LYFWVHBEB*MTc0NjE0MTA3Ny4yMi4xLjE3NDYxNDEwOTYuMC4wLjA.#product-launch-stages">General Availability (GA)</a>.</p>
 <hr />
 <h2 id="2025-06-16">2025-06-16</h2>
-<h3 id="feature_14">Feature</h3>
+<h3 id="feature_16">Feature</h3>
 <p>You can <a href="https://cloud.google.com/run/docs/configuring/jobs/gpu">configure GPU</a> in your Cloud Run job (Preview).</p>
 <hr />
 <h2 id="2025-06-09">2025-06-09</h2>
-<h3 id="feature_15">Feature</h3>
+<h3 id="feature_17">Feature</h3>
 <p>You can <a href="https://cloud.google.com/run/docs/securing/managing-access#conditions">use request host and request path in IAM Conditions</a> when defining access control for invoking Cloud Run services.</p>
 <hr />
 <h2 id="2025-05-30">2025-05-30</h2>
-<h3 id="feature_16">Feature</h3>
+<h3 id="feature_18">Feature</h3>
 <p>For Java Cloud Run functions that use <code>functions-framework</code> version 1.4.0 or later, you
 can now use the logging class <code>java.util.logging.Logger</code> to add a <a href="https://cloud.google.com/run/docs/runtimes/java#execution_id">unique execution
 ID</a> to log outputs.</p>
 <hr />
 <h2 id="2025-05-28">2025-05-28</h2>
-<h3 id="feature_17">Feature</h3>
+<h3 id="feature_19">Feature</h3>
 <p>Multiple regions now benefit from enhanced responsiveness for latency-sensitive applications for <a href="https://cloud.google.com/run/docs/triggering/https-request#url">Cloud Run service URLs</a>.</p>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
@@ -1783,6 +1791,12 @@ ID</a> to log outputs.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-run">Cloud Run</a></li>
+          <li class="nav-item">
+            <a href="#2025-08-21" class="nav-link">2025-08-21</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2025-08-20" class="nav-link">2025-08-20</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-08-14" class="nav-link">2025-08-14</a>
           </li>

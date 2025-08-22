@@ -1,5 +1,49 @@
 # Google Kubernetes Engine
 
+## 2025-08-21
+
+### Feature
+
+The [M4 machine series](https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series)
+is generally available in GKE Autopilot clusters with
+version 1.33.4-gke.1013000 or later. For more information, see M4 in
+[Resource requests in Autopilot](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests).
+
+### Feature
+
+Starting with GKE version 1.33.2-gke.1240000 and later, you can
+now specify the network service tier (Standard or Premium) for ephemeral IP
+addresses used by the `gke-l7-regional-external-managed` GatewayClass. This
+GatewayClass configures Regional External Application Load Balancers for single
+clusters.
+
+For more information, see [Configure network tier for Gateway IP addresses](https://cloud.google.com/kubernetes-engine/docs/how-to/deploying-gateways#configure-network-tier).
+
+### Feature
+
+The [M4 machine series](https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series)
+is generally available in GKE Autopilot clusters with
+version 1.33.4-gke.1013000 or later. For more information, see M4 in
+[Resource requests in Autopilot](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests).
+
+### Feature
+
+Starting with GKE version 1.33.2-gke.1240000 and later, you can
+now specify the network service tier (Standard or Premium) for ephemeral IP
+addresses used by the `gke-l7-regional-external-managed` GatewayClass. This
+GatewayClass configures Regional External Application Load Balancers for single
+clusters.
+
+For more information, see [Configure network tier for Gateway IP addresses](https://cloud.google.com/kubernetes-engine/docs/how-to/deploying-gateways#configure-network-tier).
+
+### Changed
+
+Starting in GKE 1.33.3-gke.1136000, the validation of the
+HealthCheckPolicy CRD is now performed earlier by GKE Gateway.
+Hence, certain invalid policies are now rejected by `kubectl`. The resulting
+error message will specify why the policy is invalid.
+
+---
 ## 2025-08-20
 
 ### Fixed
@@ -38,13 +82,6 @@ For more information, see
 
 ### Feature
 
-For clusters enrolled in the Extended channel, you can now use
-[Gateway](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api)
-with GKE version 1.30 or later, or
-[customized sysctl configuration options](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options).
-
-### Feature
-
 You can now receive a patch version in a release channel as soon as the version
 is available and before GKE sets the version as an auto-upgrade
 target in the channel by using *accelerated patch auto-upgrades*. Receiving
@@ -54,6 +91,13 @@ requirements.
 
 For more information, see
 [Accelerated patch auto-upgrades](https://cloud.google.com/kubernetes-engine/docs/concepts/release-channels#accelerated-patch).
+
+### Feature
+
+For clusters enrolled in the Extended channel, you can now use
+[Gateway](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api)
+with GKE version 1.30 or later, or
+[customized sysctl configuration options](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options).
 
 ---
 ## 2025-08-14
@@ -394,16 +438,6 @@ the Horizontal Pod Autoscaler. You can optionally
 
 ### Feature
 
-Starting on August 1, 2025, the Performance HorizontalPodAutoscaler profile is
-enabled by default for GKE Standard clusters that run
-GKE version 1.33.2-gke.4605000 and later and meet all of the
-[Performance profile requirements](https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#requirements_2).
-The Performance profile improves the reaction time, speed, and scalability of
-the Horizontal Pod Autoscaler. You can optionally
-[disable the Performance profile](https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#disable_the_performance_hpa_profile).
-
-### Feature
-
 Starting with GKE version 1.33.1-gke.1231000, you can view
 KubeRay Operator addon logs. These logs are available by default in
 Cloud Logging when the Ray operator addon is enabled in GKE.
@@ -413,6 +447,16 @@ Cloud Logging Logs Explorer in the Google Cloud console and run a query to filte
 for the Ray Operator logs for your specific cluster.
 
 For more information, see [View Ray Operator logs on GKE](https://cloud.google.com/kubernetes-engine/docs/add-on/ray-on-gke/how-to/view-ray-operator-logs).
+
+### Feature
+
+Starting on August 1, 2025, the Performance HorizontalPodAutoscaler profile is
+enabled by default for GKE Standard clusters that run
+GKE version 1.33.2-gke.4605000 and later and meet all of the
+[Performance profile requirements](https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#requirements_2).
+The Performance profile improves the reaction time, speed, and scalability of
+the Horizontal Pod Autoscaler. You can optionally
+[disable the Performance profile](https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#disable_the_performance_hpa_profile).
 
 ---
 ## 2025-08-08
@@ -1143,15 +1187,6 @@ multiple days to complete across all Google Cloud zones.
 
 ### Feature
 
-In GKE version 1.32.2-gke.1359000 and later, you can now configure
-[collection scheduling](https://cloud.google.com/kubernetes-engine/docs/concepts/tpus#collection-scheduling)
-for single-host and multi-host TPU node pools by using
-[compute classes](https://cloud.google.com/kubernetes-engine/docs/concepts/about-custom-compute-classes).
-Collection scheduling lets you set a Service Level Objective (SLO) for your TPU
-workloads.
-
-### Feature
-
 In GKE version 1.33.2-gke.1335000 and later, the
 [GKE Gateway controller](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api#gateway_controller)
 supports
@@ -1162,6 +1197,15 @@ supports
 In GKE version 1.33.1-gke.1788000 and later, you can target specific reservation
 sub-blocks in a reservation block by using the
 [`reservationSubBlock` field in compute classes](https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#reservationSubBlock).
+
+### Feature
+
+In GKE version 1.32.2-gke.1359000 and later, you can now configure
+[collection scheduling](https://cloud.google.com/kubernetes-engine/docs/concepts/tpus#collection-scheduling)
+for single-host and multi-host TPU node pools by using
+[compute classes](https://cloud.google.com/kubernetes-engine/docs/concepts/about-custom-compute-classes).
+Collection scheduling lets you set a Service Level Objective (SLO) for your TPU
+workloads.
 
 ### Feature
 

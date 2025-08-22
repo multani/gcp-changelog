@@ -1,5 +1,12 @@
 # App Engine flexible environment Go
 
+## 2025-08-21
+
+### Feature
+
+Support for [Go 1.25 runtime](https://cloud.google.com/appengine/docs/flexible/go/runtime) is in [General Availability (GA)](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2025-08-07
 
 ### Feature

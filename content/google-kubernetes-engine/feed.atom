@@ -2,9 +2,83 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2025-08-20T00:00:00+00:00</updated>
+  <updated>2025-08-21T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:feature:0</id>
+    <published>2025-08-21T00:00:00+00:00</published>
+    <updated>2025-08-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series">M4 machine series</a>
+is generally available in GKE Autopilot clusters with
+version 1.33.4-gke.1013000 or later. For more information, see M4 in
+<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests">Resource requests in Autopilot</a>.</p>]]></content>
+    <summary>M4 machine series available in GKE Autopilot</summary>
+    <title>Feature: M4 machine series</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:feature:1</id>
+    <published>2025-08-21T00:00:00+00:00</published>
+    <updated>2025-08-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Starting with GKE version 1.33.2-gke.1240000 and later, you can
+now specify the network service tier (Standard or Premium) for ephemeral IP
+addresses used by the <code>gke-l7-regional-external-managed</code> GatewayClass. This
+GatewayClass configures Regional External Application Load Balancers for single
+clusters.</p>
+<p>For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/deploying-gateways#configure-network-tier">Configure network tier for Gateway IP addresses</a>.</p>]]></content>
+    <summary>You can now select network tiers for ephemeral IPs.</summary>
+    <title>Feature: Network Tier Selection for Gateway Resources</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:feature:2</id>
+    <published>2025-08-21T00:00:00+00:00</published>
+    <updated>2025-08-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series">M4 machine series</a>
+is generally available in GKE Autopilot clusters with
+version 1.33.4-gke.1013000 or later. For more information, see M4 in
+<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests">Resource requests in Autopilot</a>.</p>]]></content>
+    <summary>M4 machine series now available in GKE Autopilot.</summary>
+    <title>Feature: New M4 machines for GKE Autopilot</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:feature:3</id>
+    <published>2025-08-21T00:00:00+00:00</published>
+    <updated>2025-08-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Starting with GKE version 1.33.2-gke.1240000 and later, you can
+now specify the network service tier (Standard or Premium) for ephemeral IP
+addresses used by the <code>gke-l7-regional-external-managed</code> GatewayClass. This
+GatewayClass configures Regional External Application Load Balancers for single
+clusters.</p>
+<p>For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/deploying-gateways#configure-network-tier">Configure network tier for Gateway IP addresses</a>.</p>]]></content>
+    <summary>You can now choose network service tiers for ephemeral IP addresses for the gke-l7-regional-external-managed GatewayClass.</summary>
+    <title>Feature: Network Service Tier Selection for GatewayClass</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:changed:4</id>
+    <published>2025-08-21T00:00:00+00:00</published>
+    <updated>2025-08-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Starting in GKE 1.33.3-gke.1136000, the validation of the
+HealthCheckPolicy CRD is now performed earlier by GKE Gateway.
+Hence, certain invalid policies are now rejected by <code>kubectl</code>. The resulting
+error message will specify why the policy is invalid.</p>]]></content>
+    <summary>GKE Gateway now validates HealthCheckPolicy CRD earlier, rejecting invalid policies.</summary>
+    <title>Changed: GKE Gateway HealthCheckPolicy Validation Update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -63,20 +137,6 @@ requirements.</p>
     <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-15:feature:2</id>
     <published>2025-08-15T00:00:00+00:00</published>
     <updated>2025-08-15T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>For clusters enrolled in the Extended channel, you can now use
-<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api">Gateway</a>
-with GKE version 1.30 or later, or
-<a href="https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options">customized sysctl configuration options</a>.</p>]]></content>
-    <summary>Gateway now available for Extended channel clusters.</summary>
-    <title>Feature: Gateway for Extended Channel</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-15:feature:3</id>
-    <published>2025-08-15T00:00:00+00:00</published>
-    <updated>2025-08-15T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>You can now receive a patch version in a release channel as soon as the version
 is available and before GKE sets the version as an auto-upgrade
 target in the channel by using <em>accelerated patch auto-upgrades</em>. Receiving
@@ -87,6 +147,20 @@ requirements.</p>
 <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/release-channels#accelerated-patch">Accelerated patch auto-upgrades</a>.</p>]]></content>
     <summary>Accelerated patch auto-upgrades are now available.</summary>
     <title>Feature: Accelerated Patch Auto-Upgrades</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-15:feature:3</id>
+    <published>2025-08-15T00:00:00+00:00</published>
+    <updated>2025-08-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>For clusters enrolled in the Extended channel, you can now use
+<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api">Gateway</a>
+with GKE version 1.30 or later, or
+<a href="https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options">customized sysctl configuration options</a>.</p>]]></content>
+    <summary>Gateway now available for Extended channel clusters.</summary>
+    <title>Feature: Gateway for Extended Channel</title>
   </entry>
   <entry>
     <author>
@@ -487,23 +561,6 @@ the Horizontal Pod Autoscaler. You can optionally
     <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-12:feature:2</id>
     <published>2025-08-12T00:00:00+00:00</published>
     <updated>2025-08-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Starting on August 1, 2025, the Performance HorizontalPodAutoscaler profile is
-enabled by default for GKE Standard clusters that run
-GKE version 1.33.2-gke.4605000 and later and meet all of the
-<a href="https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#requirements_2">Performance profile requirements</a>.
-The Performance profile improves the reaction time, speed, and scalability of
-the Horizontal Pod Autoscaler. You can optionally
-<a href="https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#disable_the_performance_hpa_profile">disable the Performance profile</a>.</p>]]></content>
-    <summary>The Horizontal Pod Autoscaler performance profile is now the default for GKE Standard clusters on version 1.33.2-gke.4605000 and later. This change enhances the autoscaler's reaction time, speed, and scalability. You can disable this profile if needed.</summary>
-    <title>Feature: GKE Horizontal Pod Autoscaler Performance Profile Enabled by Default</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-12:feature:3</id>
-    <published>2025-08-12T00:00:00+00:00</published>
-    <updated>2025-08-12T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Starting with GKE version 1.33.1-gke.1231000, you can view
 KubeRay Operator addon logs. These logs are available by default in
 Cloud Logging when the Ray operator addon is enabled in GKE.
@@ -514,6 +571,23 @@ for the Ray Operator logs for your specific cluster.</p>
 <p>For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/add-on/ray-on-gke/how-to/view-ray-operator-logs">View Ray Operator logs on GKE</a>.</p>]]></content>
     <summary>View KubeRay Operator addon logs in Cloud Logging.</summary>
     <title>Feature: KubeRay Operator Logs</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-12:feature:3</id>
+    <published>2025-08-12T00:00:00+00:00</published>
+    <updated>2025-08-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Starting on August 1, 2025, the Performance HorizontalPodAutoscaler profile is
+enabled by default for GKE Standard clusters that run
+GKE version 1.33.2-gke.4605000 and later and meet all of the
+<a href="https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#requirements_2">Performance profile requirements</a>.
+The Performance profile improves the reaction time, speed, and scalability of
+the Horizontal Pod Autoscaler. You can optionally
+<a href="https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#disable_the_performance_hpa_profile">disable the Performance profile</a>.</p>]]></content>
+    <summary>The Horizontal Pod Autoscaler performance profile is now the default for GKE Standard clusters on version 1.33.2-gke.4605000 and later. This change enhances the autoscaler's reaction time, speed, and scalability. You can disable this profile if needed.</summary>
+    <title>Feature: GKE Horizontal Pod Autoscaler Performance Profile Enabled by Default</title>
   </entry>
   <entry>
     <author>
@@ -1372,22 +1446,6 @@ multiple days to complete across all Google Cloud zones.</p>
     <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-07-28:feature:0</id>
     <published>2025-07-28T00:00:00+00:00</published>
     <updated>2025-07-28T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>In GKE version 1.32.2-gke.1359000 and later, you can now configure
-<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/tpus#collection-scheduling">collection scheduling</a>
-for single-host and multi-host TPU node pools by using
-<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/about-custom-compute-classes">compute classes</a>.
-Collection scheduling lets you set a Service Level Objective (SLO) for your TPU
-workloads.</p>]]></content>
-    <summary>TPU collection scheduling for GKE</summary>
-    <title>Feature: TPU Collection Scheduling</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-07-28:feature:1</id>
-    <published>2025-07-28T00:00:00+00:00</published>
-    <updated>2025-07-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>In GKE version 1.33.2-gke.1335000 and later, the
 <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api#gateway_controller">GKE Gateway controller</a>
 supports
@@ -1399,7 +1457,7 @@ supports
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-07-28:feature:2</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-07-28:feature:1</id>
     <published>2025-07-28T00:00:00+00:00</published>
     <updated>2025-07-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>In GKE version 1.33.1-gke.1788000 and later, you can target specific reservation
@@ -1407,6 +1465,22 @@ sub-blocks in a reservation block by using the
 <a href="https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#reservationSubBlock"><code>reservationSubBlock</code> field in compute classes</a>.</p>]]></content>
     <summary>Target specific reservation sub-blocks in GKE.</summary>
     <title>Feature: GKE Feature Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-07-28:feature:2</id>
+    <published>2025-07-28T00:00:00+00:00</published>
+    <updated>2025-07-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>In GKE version 1.32.2-gke.1359000 and later, you can now configure
+<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/tpus#collection-scheduling">collection scheduling</a>
+for single-host and multi-host TPU node pools by using
+<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/about-custom-compute-classes">compute classes</a>.
+Collection scheduling lets you set a Service Level Objective (SLO) for your TPU
+workloads.</p>]]></content>
+    <summary>TPU collection scheduling for GKE</summary>
+    <title>Feature: TPU Collection Scheduling</title>
   </entry>
   <entry>
     <author>

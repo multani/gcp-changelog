@@ -1,5 +1,829 @@
 # Container Optimized OS
 
+## 2025-08-18
+
+### Changed
+
+
+
+### cos-beta-125-19216-0-12
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.41](https://cos.googlesource.com/third_party/kernel/+/cb97b1d56434861bfcd63c64497d0b8580f58508 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19216.0.12/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated containerd to v2.1.3.
+
+### Changed
+
+Updated the NVIDIA GPU driver policy for New Feature Branch (NFB) drivers. The LATEST tag has been updated to point to the stable 570.133.20 Production Branch. The 575.57.08 NFB driver remains available for development and testing but must now be selected by its specific version number.Removed 575.57.08 NFB driver support for NVIDIA\_GB200 machine.
+
+### Changed
+
+Upgraded nvidia-container-toolkit to v1.17.8. This fixes CVE-2025-23266.
+
+### Changed
+
+Updated cos-gpu-installer to v2.5.5.
+
+### Changed
+
+Upgraded the Linux kernel to version 6.12.
+
+### Changed
+
+Upgrade dpdk-kmods to 9b182be2ee4b.
+
+### Changed
+
+Added support for 7th generation TPU devices.
+
+### Changed
+
+Patched a null ptr exception bug in NVIDIA 570.124.06 OSS driver.
+
+### Changed
+
+iptables-restore.service to start after ipset.service.
+
+### Changed
+
+Fixed an issue that resulted in missing grub boot measurements in some machine configurations.
+
+### Changed
+
+Updated Python to v3.11.
+
+### Changed
+
+Upgraded app-containers/docker to v27.5.1, Upgraded app-containers/docker-test to v27.5.1, Upgraded app-containers/docker-cli to v27.5.1.
+
+### Changed
+
+Updated the default tag of the GPU driver supporting the NVIDIA H200 GPU device to 570.86.15.
+
+### Changed
+
+Upgrade cloud-init to v24.4.1.
+
+### Feature
+
+Backported support for AMD SEV-SNP SVSM vTPM driver and
+configfs-tsm addition for extended attestation protocol.
+
+### Feature
+
+Added ARM support for the Lustre v2.14.0 drivers.
+
+### Feature
+
+Added NVIDIA 570.133.20 vGPU driver.
+
+### Feature
+
+Added support for Nvidia driver version 575.57.08. Added support for NVIDIA\_RTX\_PRO\_6000 devices.
+
+### Feature
+
+Supported NVIDIA MFT Tools on COS.
+
+### Feature
+
+Injected IMEX channel char device for GB200 GPUs.
+
+### Feature
+
+Fixed an issue in containerd that potentially breaks metric collection.
+
+### Feature
+
+Fixed an issue in containerd that prevented some v2 shims from shutting down properly.
+
+### Feature
+
+Added support for NVIDIA GB200 GPU with 570.124.06 GPU driver. This driver version has been assigned the latest, default, and R570 tags for this GPU type.
+
+### Feature
+
+Add support for iRDMA devices.
+
+### Feature
+
+Updated cos-gpu-installer to v2.4.8: Add the -skip-nvidia-smi flag to disable the execution of nvidia-smi verification during gpu driver installation.
+
+### Feature
+
+Applied Intel patches to add iRDMA support in the Linux kernel.
+
+### Fixed
+
+Removed an artifact registry ping that would delay multi-user.target indefinitely for machines with no external IP address.
+
+### Fixed
+
+Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20250718.00.
+
+### Fixed
+
+Added support for the Lustre 2.14.0\_p212 drivers.
+
+### Fixed
+
+Fixed docker MTU mismatch.
+
+### Fixed
+
+Increased kdump memory reservation.
+
+### Fixed
+
+Fixed issue where modinfo could not display module signatures.
+
+### Fixed
+
+Upgraded app-admin/google-guest-agent to v20250418.00.
+
+### Fixed
+
+Upgraded sys-apps/makedumpfile to v1.7.7.
+
+### Fixed
+
+Modified toolbox to use unified cgroup hierarchy mode instead of hybrid mode when possible.
+
+### Fixed
+
+Upgraded app-containers/docker-credential-helpers to v0.9.3.
+
+### Fixed
+
+Fixed EINTR error in app-container/cni-plugins.
+
+### Fixed
+
+Upgraded sys-auth/pambase to v20250228.
+
+### Fixed
+
+Disabled martian logging for ConnectX-7 network cards. These cards only communicate locally, but martian logging during communications with the host can lead to a race condition which causes GID table construction to sometimes fail.
+
+### Fixed
+
+Upgraded app-containers/runc to v1.2.5, Upgraded app-containers/runc-test to v1.2.5.
+
+### Fixed
+
+Upgraded app-admin/node-problem-detector to v0.8.20.
+
+### Fixed
+
+Upgraded app-admin/fluent-bit to v3.2.5.
+
+### Fixed
+
+Upgraded chromeos-base/google-breakpad to v2025.07.23.214511-r244.
+
+### Fixed
+
+Upgraded chromeos-base/minijail to v18-r168.
+
+### Fixed
+
+Upgraded dev-libs/openssl to 3.5.1.
+
+### Fixed
+
+Upgraded dev-lang/go to v1.23.11.
+
+### Fixed
+
+Upgraded chromeos-base/shill-client to v0.0.1-r4879.
+
+### Fixed
+
+Upgraded chromeos-base/chromeos-common-script to v0.0.1-r667.
+
+### Fixed
+
+Upgraded chromeos-base/session\_manager-client to v0.0.1-r2830.
+
+### Fixed
+
+Upgraded chromeos-base/power\_manager-client to v0.0.1-r2969.
+
+### Fixed
+
+Upgraded chromeos-base/debugd-client to v0.0.1-r2734.
+
+### Fixed
+
+Upgraded sys-apps/rootdev to v0.0.1-r51.
+
+### Fixed
+
+Upgraded sys-apps/dbus to v1.16.2-r197.
+
+### Fixed
+
+Upgraded app-benchmarks/microbenchmarks to v0.0.1-r20.
+
+### Fixed
+
+Upgraded chromeos-base/update\_engine-client to v0.0.1-r2480.
+
+### Fixed
+
+Updated dev-python/requests to v2.32.4.
+
+### Fixed
+
+Upgraded net-misc/openssh to 10.0\_p1.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.50.3.
+
+### Fixed
+
+Upgraded virtual/logger to v0-r2.
+
+### Fixed
+
+Upgraded sys-apps/pv to v1.9.34.
+
+### Fixed
+
+Upgraded app-admin/sudo to v1.9.17\_p2.
+
+### Fixed
+
+Upgraded sys-process/lsof to v4.99.5.
+
+### Fixed
+
+Updated app-misc/jq to v1.8.1.
+
+### Fixed
+
+Upgraded sys-apps/less to v679.
+
+### Fixed
+
+Upgraded sys-process/procps to v4.0.5-r2.
+
+### Fixed
+
+Upgraded sys-libs/libcap to v2.76.
+
+### Fixed
+
+Upgraded sys-apps/ethtool to version 6.11.
+
+### Fixed
+
+Upgraded app-arch/gzip to v1.14.
+
+### Fixed
+
+Upgraded net-dns/libidn2 to v2.3.8.
+
+### Fixed
+
+Upgraded sys-apps/grep to v3.12.
+
+### Fixed
+
+Upgraded sys-apps/diffutils to v3.11-r2.
+
+### Fixed
+
+Upgraded net-nds/rpcbind to v1.2.7.
+
+### Fixed
+
+Upgraded net-misc/rsync to v3.4.1.
+
+### Fixed
+
+Upgraded dev-libs/nss to v3.110.
+
+### Fixed
+
+Upgraded sys-libs/libseccomp to v2.6.0-r2.
+
+### Fixed
+
+Upgraded dev-libs/expat to v2.7.1.
+
+### Fixed
+
+Upgraded app-arch/unzip to v6.0\_p29.
+
+### Fixed
+
+Upgraded sys-apps/acl to v2.3.2-r2.
+
+### Fixed
+
+Updated dev-python/s3transfer to v0.11.4.
+
+### Fixed
+
+Updated dev-python/botocore to v1.37.9.
+
+### Fixed
+
+Updated dev-python/python-dateutil to v2.9.0.
+
+### Fixed
+
+Upgraded sys-apps/which to v2.23.
+
+### Fixed
+
+Upgraded dev-libs/double-conversion to v3.3.1.
+
+### Fixed
+
+Upgraded net-misc/socat to v1.8.0.3.
+
+### Fixed
+
+Upgraded sys-apps/hwdata to v0.391.
+
+### Fixed
+
+Upgraded sysram to version 6.12-0.
+
+### Security
+
+Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.
+
+### Security
+
+Added support for Nvidia driver version 570.172.08. This fixes CVE-2025-23279.
+
+### Security
+
+Upgraded net-misc/netplan to v1.1.2. This fixes
+CVE-2022-4968.
+
+### Security
+
+Fixed CVE-2024-6174 and CVE-2024-11584 in cloud-init.
+
+### Security
+
+Fixed CVE-2025-47273 in dev-python/setuptools.
+
+### Security
+
+Updated systemd to v254.26. This resolves CVE-2025-4598.
+
+### Security
+
+Updated apparmor to v3.1.6. This fixes CVE-2016-1585.
+
+### Security
+
+Update NVIDIA GPU drivers to v535.247.01 for default/ R535
+and v570.133.20 for latest/R570. This resolves CVE‑2025‑23244.
+
+### Security
+
+Fixed CVE-2025-8058 in glibc.
+
+### Security
+
+Upgraded dev-libs/glib to 2.82.5. This resolves
+CVE-2024-52533.
+
+### Security
+
+Patched openssl to fix CVE-2023-50782 affecting
+dev-python/crytography.
+
+### Security
+
+Updated dev-go/net in policy manager to v0.39.0. This fixes CVE-2025-22870.
+
+### Security
+
+Upgraded dev-go/crypto to v0.35.0. This fixes CVE-2025-22869.
+
+### Security
+
+Updated dev-go/oauth2 to v0.27.0. Fixes CVE-2025-22868.
+
+### Security
+
+Fixed CVE-2024-13176 in dev-libs/openssl.
+
+### Security
+
+Fixed CVE-2025-0395 in sys-libs/glibc.
+
+### Security
+
+Fixed CVE-2024-9287 in dev-lang/python.
+
+### Security
+
+Fixed CVE-2025-0840 in binutils.
+
+### Security
+
+Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.
+
+### Security
+
+Upgraded dev-vcs/git to version 2.49.1. This fixes CVE-2025-48385, CVE-2025-27613, CVE-2025-27614, CVE-2025-48384, CVE-2025-46835.
+
+### Security
+
+Fixed CVE-2024-26130 in dev-python/cryptography.
+
+### Security
+
+Updated app-editors/nano to v8.5. This resolves
+CVE-2024-5742.
+
+### Security
+
+Upgraded vim, vim-core to
+version 9.1.1500. This fixes CVE-2025-26603, CVE-2025-27423,
+CVE-2025-29768, CVE-2025-1215, CVE-2025-24014, CVE-2025-22134.
+
+### Security
+
+Upgrade libarchive to v3.8.1. This fixes CVE-2025-5914.
+
+### Security
+
+Upgraded elfutils to v0.193. This fixes CVE-2025-1365, CVE-2025-1371, CVE-2025-1372, and CVE-2025-1377.
+
+### Security
+
+Fixed CVE-2024-23337 in app-misc/jq.
+
+### Security
+
+Upgraded net-misc/curl to v8.12.1. This fixes CVE-2025-0167.
+
+### Security
+
+Fixed CVE-2025-46836 in sys-apps/net-tools
+
+### Security
+
+Fixed CVE-20250-3198 in sys-libs/bintuils-libs.
+
+### Security
+
+Fix CVE-2025-32414, CVE-2025-32415 in dev-libs/libxml2.
+
+### Security
+
+Fixed CVE-2025-32728 in net-misc/openssh.
+
+### Security
+
+Fixed CVE-2024-53427 in app-misc/jq.
+
+### Security
+
+Fixed CVE-2025-31498 in net-dns/c-ares.
+
+### Security
+
+Fixed CVE-2024-48615 in app-arch/libarchive.
+
+### Security
+
+Upgraded net-misc/wget to v1.25.0. This fixes CVE-2024-10524.
+
+### Security
+
+Upgraded dev-libs/libxml2 to v1.12.10. Fixes CVE-2025-27113.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Added: kernel.apparmor\_restrict\_unprivileged\_unconfined: 0
+* Added: kernel.core\_file\_note\_size\_limit: 4194304
+* Added: kernel.core\_sort\_vma: 0
+* Added: net.ipv4.fib\_multipath\_hash\_seed: 0
+* Added: net.ipv4.tcp\_pingpong\_thresh: 1
+* Added: net.ipv6.conf.all.ra\_honor\_pio\_life: 0
+* Added: net.ipv6.conf.all.ra\_honor\_pio\_pflag: 0
+* Added: net.ipv6.conf.all.regen\_min\_advance: 2
+* Added: net.ipv6.conf.default.ra\_honor\_pio\_life: 0
+* Added: net.ipv6.conf.default.ra\_honor\_pio\_pflag: 0
+* Added: net.ipv6.conf.default.regen\_min\_advance: 2
+* Added: net.ipv6.conf.docker0.ra\_honor\_pio\_life: 0
+* Added: net.ipv6.conf.docker0.ra\_honor\_pio\_pflag: 0
+* Added: net.ipv6.conf.docker0.regen\_min\_advance: 2
+* Added: net.ipv6.conf.eth0.ra\_honor\_pio\_life: 0
+* Added: net.ipv6.conf.eth0.ra\_honor\_pio\_pflag: 0
+* Added: net.ipv6.conf.eth0.regen\_min\_advance: 2
+* Added: net.ipv6.conf.lo.ra\_honor\_pio\_life: 0
+* Added: net.ipv6.conf.lo.ra\_honor\_pio\_pflag: 0
+* Added: net.ipv6.conf.lo.regen\_min\_advance: 2
+* Added: vm.enable\_soft\_offline: 1
+* Changed: fs.epoll.max\_user\_watches: 1809007 -> 1808517
+* Changed: fs.fanotify.max\_user\_marks: 67544 -> 68412
+* Changed: fs.file-max: 811774 -> 811484
+* Changed: fs.inotify.max\_user\_watches: 63425 -> 64189
+* Changed: kernel.threads-max: 63487 -> 63178
+* Changed: net.ipv4.tcp\_mem: 94041 125391 188082 -> 94017 125357 188034
+* Changed: net.ipv4.udp\_mem: 188085 250783 376170 -> 188034 250715 376068
+* Changed: user.max\_cgroup\_namespaces: 31743 -> 31589
+* Changed: user.max\_fanotify\_marks: 67544 -> 68412
+* Changed: user.max\_inotify\_watches: 63425 -> 64189
+* Changed: user.max\_ipc\_namespaces: 31743 -> 31589
+* Changed: user.max\_mnt\_namespaces: 31743 -> 31589
+* Changed: user.max\_net\_namespaces: 31743 -> 31589
+* Changed: user.max\_pid\_namespaces: 31743 -> 31589
+* Changed: user.max\_time\_namespaces: 31743 -> 31589
+* Changed: user.max\_user\_namespaces: 31743 -> 31589
+* Changed: user.max\_uts\_namespaces: 31743 -> 31589
+* Changed: vm.lowmem\_reserve\_ratio: 256 256 32 0 0 -> 256 256 32 0
+* Deleted: kernel.sched\_child\_runs\_first: 0
+
+### Changed
+
+
+
+### cos-dev-129-19246-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.41](https://cos.googlesource.com/third_party/kernel/+/ef55a40bd2b3af2acd1197d83f203f892d717819 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19246.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Backported support for AMD SEV-SNP SVSM vTPM driver and
+configfs-tsm addition for extended attestation protocol.
+
+### Feature
+
+Enabled the google-guest-agent's network management functionality.
+
+### Feature
+
+Added ConnectX-8 RDMA support.
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20250807.00.
+
+### Fixed
+
+Upgraded chromeos-base/chromeos-common-script to v0.0.1-r668.
+
+### Fixed
+
+Upgraded dev-lang/go to v1.23.12.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.50.4.
+
+### Fixed
+
+Upgraded net-nds/rpcbind to v1.2.8.
+
+### Fixed
+
+Upgraded sys-apps/gentoo-functions to v1.7.4.
+
+### Security
+
+Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.
+
+### Security
+
+Fixed KCTF-01d3c84 in the Linux kernel.
+
+### Changed
+
+
+
+### cos-113-18244-448-29
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.144](https://cos.googlesource.com/third_party/kernel/+/4a14d0356f04e4dc9ad84328ced11962da997611 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.448.29/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Added NVIDIA GPU driver's R580 branch. Updated the LATEST GPU driver label to version 580.65.06.
+
+### Security
+
+Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.
+
+### Security
+
+Fixed KCTF-01d3c84 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38499 in the linux kernel.
+
+### Feature
+
+Added NVIDIA GPU driver's R580 branch. Updated the LATEST GPU driver label to version 580.65.06.
+
+### Security
+
+Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.
+
+### Security
+
+Fixed KCTF-01d3c84 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38499 in the linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812031 -> 812040
+
+### Changed
+
+
+
+### cos-109-17800-570-33
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.143](https://cos.googlesource.com/third_party/kernel/+/32eebab8d4fc97eb69fe095c4737e578f395ea56 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/17800.570.33/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Added NVIDIA GPU driver's R580 branch. Updated the LATEST GPU driver label to version 580.65.06.
+
+### Security
+
+Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.
+
+### Security
+
+Fixed KCTF-01d3c84 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38499 in the Linux kernel.
+
+### Feature
+
+Added NVIDIA GPU driver's R580 branch. Updated the LATEST GPU driver label to version 580.65.06.
+
+### Security
+
+Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.
+
+### Security
+
+Fixed KCTF-01d3c84 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38499 in the linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812266 -> 812258
+
+### Changed
+
+
+
+### cos-121-18867-199-38
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.97](https://cos.googlesource.com/third_party/kernel/+/503b48dcd05d72cc3993836ba04c998694445289 ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.199.38/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.
+
+### Security
+
+Fixed KCTF-01d3c84 in the Linux kernel.
+
+### Security
+
+Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.
+
+### Security
+
+Fixed KCTF-01d3c84 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811774 -> 811736
+
+### Changed
+
+
+
+### cos-117-18613-339-39
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.97](https://cos.googlesource.com/third_party/kernel/+/4388aee252f712d6c58566a5e41a11c7e938827e ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.339.39/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.
+
+### Security
+
+Fixed KCTF-01d3c84 in the Linux kernel.
+
+### Security
+
+Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.
+
+### Security
+
+Fixed KCTF-01d3c84 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811830 -> 811771
+
+---
+## 2025-08-14
+
+### Changed
+
+
+
+### cos-121-18867-199-34
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.97](https://cos.googlesource.com/third_party/kernel/+/bfd3481379d56d24f2ab0fa617f940470828d303 ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.199.34/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-38499 in the linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811817 -> 811774
+
+### Changed
+
+
+
+### cos-117-18613-339-36
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.97](https://cos.googlesource.com/third_party/kernel/+/466a913740c9a1e7249f9f8efda9f3c9b32367b2 ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.339.36/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-38499 in the linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811765 -> 811830
+
+---
 ## 2025-08-12
 
 ### cos-121-18867-199-28

@@ -1,5 +1,12 @@
 # Cloud SQL for SQL Server
 
+## 2025-08-21
+
+### Feature
+
+You can save and manage SQL queries in Cloud SQL Studio. This feature is in [Preview](https://cloud.google.com/products#product-launch-stages). For more information, see [Saved queries overview](https://cloud.google.com/sql/docs/sqlserver/saved-queries).
+
+---
 ## 2025-08-15
 
 ### Feature

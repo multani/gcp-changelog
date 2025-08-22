@@ -68,7 +68,14 @@ New visualizations have been added to the [Database Performance dashboard](https
 
 ### Feature
 
-[Period-over-period measures](https://cloud.google.com/looker/docs/period-over-period) are now supported for MySQL 8.0.12+ connections to Looker. **Note:** This item was added on August 18, 2025.
+The following updates have been made for [Period-over-period (PoP) measures](https://cloud.google.com/looker/docs/period-over-period):
+
+* The PoP measure feature is out of Preview and is now generally available. **Note:** This item was added on August 21, 2025.
+* PoP measures are now supported for MySQL 8.0.12+ connections to Looker. **Note:** This item was added on August 18, 2025.
+* You can now specify the following types of measures in the PoP measure's [`based_on`](https://cloud.google.com/looker/docs/period-over-period#based_on) parameter: [`list`](https://cloud.google.com/looker/docs/reference/param-measure-types#list), [`median`](https://cloud.google.com/looker/docs/reference/param-measure-types#median), [`median_distinct`](https://cloud.google.com/looker/docs/reference/param-measure-types#median_distinct), [`number`](https://cloud.google.com/looker/docs/reference/param-measure-types#number), [`percentile`](https://cloud.google.com/looker/docs/reference/param-measure-types#percentile), [`percentile_distinct`](https://cloud.google.com/looker/docs/reference/param-measure-types#percentile_distinct). **Note:** This item was added on August 21, 2025.
+* For queries with PoP measures and time-based filters, in order to calculate data for the PoP measure Looker now automatically retrieves an extra time period of the coarsest time granularity in the query. (Previously, the user was required to adjust the granularity of time-based filters in order to account for the PoP measure calculations.) **Note:** This item was added on August 21, 2025.
+* For queries with PoP measures, if no time-based dimensions are included in the query from the Explore's field picker, Looker can now infer the time period from time-based dimensions in the Explore's filters. (Previously, for queries with PoP measures, the user was required to specify a time-based dimension from the Explore's field picker.) See [Requirements for Explore queries with PoP measures](https://cloud.google.com/looker/docs/period-over-period#explore-requirements) for more information. **Note:** This item was added on August 21, 2025.
+* PoP measures are now supported with [Connected Sheets](https://cloud.google.com/looker/docs/connected-sheets). **Note:** This item was added on August 21, 2025.
 
 ### Fixed
 

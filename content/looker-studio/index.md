@@ -1,5 +1,50 @@
 # Looker Studio
 
+## 2025-08-21
+
+### Feature
+
+**Sort table charts by up to 10 fields**
+
+Report creators can now set up to sort 10 fields for table charts, including fields that are not selected in the chart.
+
+[Learn more about sorting table charts.](https://cloud.google.com/looker/docs/studio/table-reference#sort)
+
+### Feature
+
+**Looker connector respects LookML `value_format` property**
+
+When you're using the Looker connector, value formats that you apply using the `value_format` LookML property will now be displayed in Looker Studio reports. You can
+[view and edit the value format](https://cloud.google.com/looker/docs/studio/format-fields-in-reports) as usual.
+
+Note that the syntax for
+[conditional formatting using `value_format`](https://cloud.google.com/looker/docs/best-practices/how-to-conditional-formatting-with-value_format)
+is not supported in Looker Studio.
+
+### Announcement
+
+**Partner connection launch update**
+
+The following partner connectors have been added to the [Looker Studio Connector Gallery](https://lookerstudio.google.com/data):
+
+* [Shopify](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbz4pWVRzSmsZW5GTiNRCIpoht5cIvXdVKZZOaqxEfn0o2AeiUu03FvmuF2eVjLf9g) by Master Metrics
+* [Tienda Nube](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbzy6be4NcuLE1dPNEEe2lYloTtOeTMKKdg1PiNUhSsBKI4WHNdeDlzvUnP0x-IJMU5C1w) by Master Metrics
+* [Google Merchant Center](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbyH7vTUbfM8dee-rd81Kz_26ocBFSoYk5ashmL-iS_DTHOKC3VpV6jYDioapM0VnW9-) by Dataslayer
+* [Google Keyword Planner](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbx_qZeerLIkOSSKF4qfh_DHegtRtfqY3LkNIZ2iDck99LOu4kASb5tGYMuWEwDCXjhOAA) by Dataslayer
+* [Mangools SERPWatcher](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbxuzqyOw81C5Sx4fgdVOKzlbb0x69yG8KMDB1TBeAjkYZ9RAZKYRAsFsuSmlo7yiUa1) by Mangools.com
+* [Pipedrive](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbzc5VI3ryJ9r5Co7W6gNhHWCQ60p5rgv1JQkaHTHwSLaDvVDunEAFY2ey0RhRvWBhez) by Master Metrics
+* [Facebook ads](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbyJwICE7-IUO7G-yqJH4iITJdy-qiBwP7GR3BNaVMczYA5Gl1nTBCBmvKVnE5grXZEJLg) by Middly
+* [Google Merchant Center](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbzwXq_I2JzUW7fP30S8Yt3yw4uuL7a-42QA01Gs9iffFzmS-M7tTkqGqJUiGVO-MogMXQ) by Windsor.ai
+* [FB Page Data with AI](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbx-evkBGl7tOmW2bcZI8uRyXRN8ptAeJTS2DBG0ohaevHOGEDtcdw50vdZOOh3eedHzYw) by Picometrics
+* [LinkedIn Ads with AI](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbwXBQ2mJsc6zzvMRDCWF7FjFJ6ZM3uI8WEx7pRrJw_pYTBdVTOqeUK4Z0fw6xVlLEr5dw) by Picometrics
+* [快客-GA4串接](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbwtc-WNl6I2iqns2CQpY34pAYt06imqcWEwsOnrbTkQUPMj0SS1lEdvl1m5tVG0Aat2gQ) by 黑客數位
+* [seoClarity Keyword Tags](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbwUeVIqa3zSmvfOllVOl1UxuyyXWDA3QyBIteGXbgtk6QpfCEBCiz-rVQqHRi1BWhuKtA) by seoClarity
+* [GA4 with AI insights](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbwobh-FYFmkvolmDFbwiNe4In4bCXdbybZqmVk0AvwD8HXpZUY_d9Vf3tEqpsytvx_A) by Picometrics
+* [Tracktest Company Results](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbxz_-3GaMOZCSqIWbgkUYHVw90nLr5UnEEN3lOzaM9w6wlnRX6SerL_rAYqogqJ6Dk) by Tracktest s.r.o.
+* [快客-GAds 串接](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycby-veEILFCeH1iAWDuRoS4nECtdAcd7AIQetfQw0uwf8qTgqB_eHdqBtzXj-_t9RHjD) by 黑客數位
+* [Salesforce](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbze1haIhtOD6hugcWx0fXEkHzvhUfppQtMxgsotU8BBGq0KdBziOvaYWx-5cQGWBxkmBA) by Adzviser
+
+---
 ## 2025-08-14
 
 ### Feature

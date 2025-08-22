@@ -1,5 +1,12 @@
 # Agent Assist
 
+## 2025-08-21
+
+### Deprecated
+
+[**Article suggestion**](https://cloud.google.com/agent-assist/docs/article-suggestion) and [**FAQ Assist**](https://cloud.google.com/agent-assist/docs/faq) are no longer in use and you can't create new conversation profiles for them. These two features will be permanently removed on March 1, 2026. Refer to [Generative knowledge assist](https://cloud.google.com/agent-assist/docs/generative-knowledge-assist) for an alternative.
+
+---
 ## 2025-07-28
 
 ### Feature

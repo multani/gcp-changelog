@@ -6,7 +6,7 @@
 
 New [Dataproc on Compute Engine subminor image versions](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):
 
-* 2.0.146-debian10, 2.0.146-ubuntu18, 2.0.146-rocky8,
+* 2.0.146-debian10, 2.0.146-ubuntu18, 2.0.146-rocky8
 * 2.1.95-debian11, 2.1.95-ubuntu20, 2.1.95-ubuntu20-arm, 2.1.95-rocky8
 * 2.2.63-debian12, 2.2.63-ubuntu22, 2.2.63-ubuntu22-arm, 2.2.63-rocky9
 * 2.3.9-debian12, 2.3.9-ubuntu22, 2.3.9-ubuntu22-arm, 2.3.9-ml-ubuntu22, 2.3.9-rocky9
@@ -29,7 +29,7 @@ New [Dataproc Serverless for Spark runtime versions](https://cloud.google.com/da
 
 New [Dataproc on Compute Engine subminor image versions](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):
 
-* 2.0.145-debian10, 2.0.145-ubuntu18, 2.0.145-rocky8,
+* 2.0.145-debian10, 2.0.145-ubuntu18, 2.0.145-rocky8
 * 2.1.94-debian11, 2.1.94-ubuntu20, 2.1.94-ubuntu20-arm, 2.1.94-rocky8
 * 2.2.62-debian12, 2.2.62-ubuntu22, 2.2.62-ubuntu22-arm, 2.2.62-rocky9
 * 2.3.8-debian12, 2.3.8-ubuntu22, 2.3.8-ubuntu22-arm, 2.3.8-ml-ubuntu22, 2.3.8-rocky9
@@ -58,7 +58,7 @@ New [Dataproc Serverless for Spark runtime versions](https://cloud.google.com/da
 New [Dataproc on Compute Engine subminor image versions](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):
 
 * 2.1.93-debian11, 2.1.93-rocky8, 2.1.93-ubuntu20, 2.1.93-ubuntu20-arm
-* 2.2.61-debian12, 2.2.61-rocky9, 2.2.61-ubuntu22
+* 2.2.61-debian12, 2.2.61-rocky9, 2.2.61-ubuntu22, 2.2.61-ubuntu22-arm
 
 ---
 ## 2025-07-31
@@ -83,7 +83,7 @@ New [Dataproc Serverless for Spark runtime versions](https://cloud.google.com/da
 
 New [Dataproc on Compute Engine subminor image versions](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):
 
-`2.3.7-debian12`, `2.3.7-ubuntu22`, `2.3.7-ml-ubuntu22`, and `2.3.7-rocky9`.
+`2.3.7-debian12`, `2.3.7-ubuntu22`, `2.3.7-ubuntu22-arm`, `2.3.7-ml-ubuntu22`, and `2.3.7-rocky9`
 
 The `2.3.7-ml-ubuntu22` image extends the 2.3 base image with [ML-specific libraries](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-2.3#image_version_23_machine_learning_ml_components).
 

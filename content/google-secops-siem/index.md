@@ -1,5 +1,12 @@
 # Google SecOps SIEM
 
+## 2025-08-21
+
+### Feature
+
+[Enhanced curated detections](https://cloud.google.com/chronicle/docs/detection/use-curated-detections) has been enhanced with composite detection content for Mandiant Hunt Cloud Classification, including AWS, GCP, and Azure. This rule pack is available for Mandiant Threat Defense (MTD) customers with a Google Security Operations Enterprise or Enterprise Plus license.
+
+---
 ## 2025-08-20
 
 ### Changed

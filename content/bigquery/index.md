@@ -1,5 +1,21 @@
 # BigQuery
 
+## 2025-08-21
+
+### Announcement
+
+Starting September 25, 2025, the BigQuery Data Transfer Service for third-party SAAS and database connectors will update to a consumption-based pricing model. With this new pricing model, you will be charged based on the compute resources consumed by your data transfers, measured in slot-hours. For more information, see [Data Transfer Service pricing](https://cloud.google.com/bigquery/pricing#section-5). This pricing update applies to the following third-party connectors when they are [generally available (GA)](https://cloud.google.com/products#product-launch-stages):
+
+* [Facebook Ads](https://cloud.google.com/bigquery/docs/facebook-ads-transfer)
+* [MySQL](https://cloud.google.com/bigquery/docs/mysql-transfer)
+* [Oracle](https://cloud.google.com/bigquery/docs/oracle-transfer)
+* [PostgreSQL](https://cloud.google.com/bigquery/docs/postgresql-transfer)
+* [Salesforce](https://cloud.google.com/bigquery/docs/salesforce-transfer)
+* [Salesforce Marketing Cloud](https://cloud.google.com/bigquery/docs/sfmc-transfer)
+* [ServiceNow](https://cloud.google.com/bigquery/docs/servicenow-transfer)
+* Other third-party connectors planned for future releases
+
+---
 ## 2025-08-18
 
 ### Libraries

@@ -1,5 +1,12 @@
 # Google Cloud Architecture Center
 
+## 2025-08-21
+
+### Feature
+
+(New guide) [Oracle PeopleSoft on Compute Engine with Oracle Exadata](https://cloud.google.com/architecture/oracle-peoplesoft-with-oci-exadata): Shows how to build the infrastructure to run Oracle PeopleSoft applications with OCI Exadata databases in Google Cloud.
+
+---
 ## 2025-08-08
 
 ### Feature

@@ -128,29 +128,6 @@ to Cloud Composer.
       chat at the folder level, see
       [Before you begin using Gemini chat](https://cloud.google.com/database-center/docs/learn-database-products-using-gemini#before-you-begin).
 
-      Google Kubernetes Engine
-      ------------------------
-
-      ### Feature
-
-      The [M4 machine series](https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series) is generally available in GKE Standard clusters.
-
-      ### Feature
-
-      The [M4 machine series](https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series) is generally available in GKE Standard clusters.
-
-      ### Fixed
-
-      A fix is available for an issue in which the Compute Engine Persistent Disk CSI
-      driver failed with an `invalid cpuString` error on GKE nodes that used custom
-      machine types. This issue prevented successful attachment and mounting of
-      Persistent Disk volumes on affected nodes. The fix is available in the following
-      GKE versions:
-
-      * 1.31.10-gke.1034000 and later
-      * 1.32.4-gke.1698000 and later
-      * 1.33.1-gke.1386000 and later
-
       Google SecOps
       -------------
 

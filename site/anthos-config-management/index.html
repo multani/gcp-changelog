@@ -1704,8 +1704,19 @@
 
 
 <h1 id="anthos-config-management">Anthos Config Management</h1>
-<h2 id="2025-07-24">2025-07-24</h2>
+<h2 id="2025-08-21">2025-08-21</h2>
+<h3 id="announcement">Announcement</h3>
+<p>Announcing experimental features: help shape the future of Config Sync features by providing direct feedback.</p>
+<ul>
+<li>Introducing PostSync, a feature that lets you run custom actions like cleanup scripts or notifications right after your configurations are synced. We're looking for your feedback to shape its future! Check out the <a href="https://github.com/GoogleContainerTools/kpt-config-sync/discussions/1830">Post Sync discussion</a> to share your thoughts, suggestions, and bug reports before December 1, 2025.</li>
+</ul>
+<h3 id="feature">Feature</h3>
+<p>Config Sync now supports syncing from Secure Source Manager git repositories. For more information, see <a href="https://cloud.google.com/kubernetes-engine/enterprise/config-sync/docs/how-to/installing-config-sync#git-creds-secret">Grant access to Git</a>.</p>
 <h3 id="changed">Changed</h3>
+<p>Addressed multiple Common Vulnerabilities and Exposures (CVEs) by updating dependencies.</p>
+<hr />
+<h2 id="2025-07-24">2025-07-24</h2>
+<h3 id="changed_1">Changed</h3>
 <p>Addressed multiple Common Vulnerabilities and Exposures (CVEs) by updating dependencies.</p>
 <h3 id="fixed">Fixed</h3>
 <p>Updated the git-sync image from v4.3.0 to v4.4.2, which fixes an issue that could cause the git-sync container to crash loop. For more information see <a href="https://github.com/kubernetes/git-sync/releases">git-sync releases</a>.</p>
@@ -1715,7 +1726,7 @@
 <p>Fixed an issue where Config Sync waited longer than intended between retry attempts after failing to sync from Helm and OCI sources.</p>
 <hr />
 <h2 id="2025-06-26">2025-06-26</h2>
-<h3 id="changed_1">Changed</h3>
+<h3 id="changed_2">Changed</h3>
 <p>Addressed multiple Common Vulnerabilities and Exposures (CVEs) by updating dependencies.</p>
 <h3 id="fixed_3">Fixed</h3>
 <p>Fixed an issue with the nomos CLI which prevented setting up autocomplete by using the <code>nomos completion</code> command. For more information see <a href="https://cloud.google.com/kubernetes-engine/enterprise/config-sync/docs/how-to/nomos-command">Use the nomos command-line tool</a>.</p>
@@ -1723,7 +1734,7 @@
 <p>Fixed an issue which prevented a resource conflict metric from being recorded in rare cases.</p>
 <hr />
 <h2 id="2025-05-29">2025-05-29</h2>
-<h3 id="changed_2">Changed</h3>
+<h3 id="changed_3">Changed</h3>
 <p>Addressed multiple Common Vulnerabilities and Exposures (CVEs) by updating dependencies.</p>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
@@ -1736,6 +1747,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#anthos-config-management">Anthos Config Management</a></li>
+          <li class="nav-item">
+            <a href="#2025-08-21" class="nav-link">2025-08-21</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-07-24" class="nav-link">2025-07-24</a>
           </li>

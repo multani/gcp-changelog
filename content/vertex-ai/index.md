@@ -1,5 +1,21 @@
 # Vertex AI
 
+## 2025-08-21
+
+### Feature
+
+**Vertex AI Agent Engine**
+
+Agent Engine now supports the following enterprise security features:
+
+* You can now deploy your agents in a private VPC environment, configuring a Private Service Connect interface, to ensure data privacy and meet security and compliance requirements. For more information, see [Configure Private Service Connect interface](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/deploy#psc-i).
+* You can now use your own [customer-managed encryption keys (CMEK)](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/manage/access#cmek) to protect data at rest.
+* You can now specify [customized resource controls](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/deploy#customized-resource-controls), such as the minimum and maximum number of application instances, resource limits for each container, and concurrency for each container.
+* As a part of Vertex AI Platform, Vertex AI Agent Engine now supports [HIPAA](https://cloud.google.com/security/compliance/hipaa) workloads.
+
+For more information, see [Agent Engine overview](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/overview#enterprise_security).
+
+---
 ## 2025-08-14
 
 ### Feature

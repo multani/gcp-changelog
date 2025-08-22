@@ -2,10 +2,6 @@
 
 ## 2025-08-18
 
-### Changed
-
-
-
 ### cos-beta-125-19216-0-12
 
 |  |  |  |  |
@@ -558,10 +554,6 @@ Runtime sysctl changes:
 * Changed: vm.lowmem\_reserve\_ratio: 256 256 32 0 0 -> 256 256 32 0
 * Deleted: kernel.sched\_child\_runs\_first: 0
 
-### Changed
-
-
-
 ### cos-dev-129-19246-0-0
 
 |  |  |  |  |
@@ -614,10 +606,6 @@ Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-20
 
 Fixed KCTF-01d3c84 in the Linux kernel.
 
-### Changed
-
-
-
 ### cos-113-18244-448-29
 
 |  |  |  |  |
@@ -662,10 +650,6 @@ Fixed CVE-2025-38499 in the linux kernel.
 Runtime sysctl changes:
 
 * Changed: fs.file-max: 812031 -> 812040
-
-### Changed
-
-
 
 ### cos-109-17800-570-33
 
@@ -712,10 +696,6 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 812266 -> 812258
 
-### Changed
-
-
-
 ### cos-121-18867-199-38
 
 |  |  |  |  |
@@ -744,10 +724,6 @@ Fixed KCTF-01d3c84 in the Linux kernel.
 Runtime sysctl changes:
 
 * Changed: fs.file-max: 811774 -> 811736
-
-### Changed
-
-
 
 ### cos-117-18613-339-39
 
@@ -781,10 +757,6 @@ Runtime sysctl changes:
 ---
 ## 2025-08-14
 
-### Changed
-
-
-
 ### cos-121-18867-199-34
 
 |  |  |  |  |
@@ -801,10 +773,6 @@ Fixed CVE-2025-38499 in the linux kernel.
 Runtime sysctl changes:
 
 * Changed: fs.file-max: 811817 -> 811774
-
-### Changed
-
-
 
 ### cos-117-18613-339-36
 

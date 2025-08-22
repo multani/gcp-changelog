@@ -1,5 +1,13 @@
 # Dataproc
 
+## 2025-08-21
+
+### Fixed
+
+**Serverless for Apache Spark:** Fixed a bug in Dataproc Batches that occasionally caused higher latency.
+before an application was started.
+
+---
 ## 2025-08-19
 
 ### Announcement

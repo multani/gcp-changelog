@@ -1,5 +1,24 @@
 # Apigee API hub
 
+## 2025-08-22
+
+### Feature
+
+**Deprovision API hub in the UI**
+
+You can now deprovision an API hub instance from the **API hub > Settings > Actions** page in the Google Cloud console.
+
+For more information, see [Deprovision Apigee API hub](https://cloud.google.com/apigee/docs/apihub/deprovision).
+
+### Feature
+
+**Create and delete custom plugins in the UI**
+
+You can now create and delete custom plugins from the **API hub > Settings > Plugins** page in the Google Cloud console.
+
+For more information, see [Create custom plugins](https://cloud.google.com/apigee/docs/apihub/create-custom-plugins) and [Manage custom plugins](https://cloud.google.com/apigee/docs/apihub/manage-custom-plugins).
+
+---
 ## 2025-08-12
 
 ### Feature

@@ -1,5 +1,13 @@
 # Dataform
 
+## 2025-08-21
+
+### Security
+
+A security vulnerability was discovered in the Dataform API. This vulnerability could potentially allow unauthorized access to customer code repositories and data. For more information, see
+[GCP-2025-045 security bulletin](https://cloud.google.com/dataform/docs/security-bulletins#gcp-2025-045).
+
+---
 ## 2025-07-14
 
 ### Feature

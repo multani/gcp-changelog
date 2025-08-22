@@ -1,5 +1,12 @@
 # BigQuery
 
+## 2025-08-22
+
+### Feature
+
+Multi-statement transactions are now available for [BigLake Iceberg tables in BigQuery](https://cloud.google.com/bigquery/docs/iceberg-tables#use_multi-statement_transactions). This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-08-21
 
 ### Announcement

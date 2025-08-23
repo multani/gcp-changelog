@@ -131,6 +131,7 @@
 - [Service Extensions](service-extensions/index.md)
 - [Spanner](spanner/index.md)
 - [Text-to-Speech](text-to-speech/index.md)
+- [Transcoder API](transcoder-api/index.md)
 - [VPC Service Controls](vpc-service-controls/index.md)
 - [Vertex AI](vertex-ai/index.md)
 - [Vertex AI Workbench](vertex-ai-workbench/index.md)

@@ -1,5 +1,12 @@
 # Secure Source Manager
 
+## 2025-08-21
+
+### Feature
+
+You can now use a Google-managed certificate when you create a [create a Private Service Connect Secure Source Manager instance](https://cloud.google.com/secure-source-manager/docs/create-private-service-connect-instance#create-private-service-connect-instance).
+
+---
 ## 2025-08-14
 
 ### Changed

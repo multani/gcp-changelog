@@ -1,5 +1,19 @@
 # NetApp Volumes
 
+## 2025-08-19
+
+### Changed
+
+Large capacity volumes now support a maximum capacity of 3 PiB. For more information, see [Large capacity volumes](https://cloud.google.com/netapp/volumes/docs/configure-and-use/volumes/overview#large-capacity-volumes).
+
+---
+## 2025-08-07
+
+### Changed
+
+For the Flex service level, the storage pool and volume now support a maximum capacity of 300 TiB. For more information, see [Service levels](https://cloud.google.com/netapp/volumes/docs/discover/service-levels).
+
+---
 ## 2025-07-31
 
 ### Feature

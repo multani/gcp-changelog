@@ -1,5 +1,15 @@
 # Cloud Monitoring
 
+## 2025-08-25
+
+### Feature
+
+Your Application Monitoring dashboards will display latency, error rates, and
+traffic level for workloads deployed on Google Kubernetes Engine, when you
+instrument your application with OpenTelemetry. To learn more, see
+[Instrument an application for Application Monitoring](https://cloud.google.com/monitoring/docs/instrument-for-application-monitoring).
+
+---
 ## 2025-08-21
 
 ### Feature

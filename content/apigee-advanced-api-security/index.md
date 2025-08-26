@@ -38,6 +38,21 @@ See the [Shadow API Discovery overview](https://cloud.google.com/apigee/docs/api
 **Note:** Data residency is not currently supported for Shadow API Discovery. See [data residency compatibility](https://cloud.google.com/apigee/docs/api-platform/get-started/drz-concepts#data-residency-compatibility).
 
 ---
+## 2025-08-04
+
+### Announcement
+
+On August 4, 2025 we announced new functionality in Advanced API Security Abuse Detection.
+
+### Feature
+
+**Terraform support for configuring Advanced API Security**
+
+We have expanded our Terraform support for Advanced API Security, enabling you to automate the management of your security posture. You can now use Terraform to manage add-on enablement for [Subscription](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/apigee_addons_config) and [PAYG](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/apigee_environment_addons_config) environments, create [Risk Assessment security profiles](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/apigee_security_profile_v2) and [monitoring conditions](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/apigee_security_monitoring_condition), [configure IP address resolution](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/apigee_environment#client_ip_resolution_config-1), and [create security actions](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/apigee_security_action).
+
+For information, see [Configure Advanced API Security using Terraform](https://cloud.google.com/apigee/docs/api-security/enable-security#configure-advanced-api-security-using-terraform).
+
+---
 ## 2025-07-14
 
 ### Announcement

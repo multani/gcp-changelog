@@ -545,6 +545,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Capacity planner <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../capacity-planner/" class="dropdown-item">Capacity Planner</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Carbon footprint <b class="caret"></b>
                         </a>
 
@@ -1716,26 +1728,31 @@
 
 
 <h1 id="spanner">Spanner</h1>
-<h2 id="2025-08-14">2025-08-14</h2>
+<h2 id="2025-08-25">2025-08-25</h2>
 <h3 id="feature">Feature</h3>
+<p>You can now terminate multiple active queries in your Spanner instance. Active queries are long-running queries that might affect the performance of your instance. Monitoring these queries can help you identify causes of instance latency and high CPU usage. Terminating queries might help free up resources and reduce the load on your instance.</p>
+<p>For more information, see <a href="https://cloud.google.com/spanner/docs/monitor-active-queries#terminate-query">Monitor active queries</a>.</p>
+<hr />
+<h2 id="2025-08-14">2025-08-14</h2>
+<h3 id="feature_1">Feature</h3>
 <p>You can now use <a href="https://cloud.google.com/bigquery/docs/spanner-federated-queries#cross_region_queries">cross region federated queries</a> to query Spanner tables from regions other than the source BigQuery region. These cross region queries incur additional <a href="https://cloud.google.com/spanner/pricing#network">Spanner network egress charges</a>. This feature is <a href="https://cloud.google.com/products/#product-launch-stages">generally available</a> (GA).</p>
 <hr />
 <h2 id="2025-08-13">2025-08-13</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>Spanner offers a predefined library of over <a href="https://cloud.google.com/spanner/docs/reference/mysql/user_defined_functions_all">80 MySQL functions</a> that you can install in a database. These functions let you perform operations that are common in the MySQL environments directly with Spanner. They can help reduce the changes required when migrating workloads from MySQL to Spanner.</p>
 <p>These functions are packaged as user-defined functions that can be installed from an open-source DDL script hosted on GitHub. For more information, see <a href="https://cloud.google.com/spanner/docs/install-mysql-functions">Install MySQL functions in Spanner</a>.</p>
 <hr />
 <h2 id="2025-08-05">2025-08-05</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>Columnar engine for Spanner is now in Preview. Columnar engine is a storage technique used with analytics queries to speed up scans. Spanner columnar engine accelerates analytical query performance on live operational data by up to 200 times without affecting transaction workloads. This eliminates the need for ETL into separate data warehouses while maintaining strong consistency. For more information, see the <a href="https://cloud.google.com/spanner/docs/columnar-engine">Columnar engine for Spanner overview</a>.</p>
 <hr />
 <h2 id="2025-08-01">2025-08-01</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>When you create the free trial instance using the Google Cloud console, Spanner creates and preloads it with a sample database for an ecommerce store. You can use the free trial instance to explore the dataset and learn about Spanner capabilities with pre-loaded queries.</p>
 <p>For more information, see <a href="https://cloud.google.com/spanner/docs/free-trial-instance">Spanner free trial instances</a>.</p>
 <hr />
 <h2 id="2025-07-31">2025-07-31</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p>You can use <a href="https://cloud.google.com/bigquery/docs/continuous-queries-introduction">continuous queries</a> to <a href="https://cloud.google.com/bigquery/docs/export-to-spanner">export BigQuery data into Spanner in real time</a>. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">preview</a>.</p>
 <h3 id="libraries">Libraries</h3>
 <p>A monthly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
@@ -1782,7 +1799,7 @@
 </ul>
 <hr />
 <h2 id="2025-07-14">2025-07-14</h2>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p><a href="https://cloud.google.com/spanner/docs/databoost/databoost-overview">Spanner Data Boost</a> supports data stored on hard disk drives (HDD). This feature is <a href="https://cloud.google.com/products/#product-launch-stages">generally available</a> (GA).</p>
 <hr />
 <h2 id="2025-07-01">2025-07-01</h2>
@@ -1790,7 +1807,7 @@
 <p>The performance of the <code>ANY</code> and the <a href="https://cloud.google.com/spanner/docs/graph/work-with-paths#any-shortest"><code>ANY SHORTEST</code></a> algorithms have been improved. These algorithms are used to find Spanner Graph paths. For more information, see <a href="https://cloud.google.com/spanner/docs/graph/queries-overview#any-and-any-shortest-paths"><code>ANY</code> and <code>ANY SHORTEST</code> paths</a>.</p>
 <hr />
 <h2 id="2025-06-30">2025-06-30</h2>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p>Spanner supports the following new client-side metrics to the Spanner API frontend (AFE) and Google frontend (GFE) for Java and Go applications:</p>
 <ul>
 <li>AFE connectivity error count</li>
@@ -1800,7 +1817,7 @@
 </ul>
 <p>These metrics can be used with server-side metrics to enable faster troubleshooting of performance and latency issues. For more information, see
 <a href="https://cloud.google.com/spanner/docs/client-side-metrics-descriptions">Client-side metrics descriptions</a>.</p>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p>To troubleshoot or understand your Spanner queries better, you can download and save your <a href="https://cloud.google.com/spanner/docs/query-execution-plans">query execution plan</a> as a JSON file. You can now use the content of this file to see a visualization of the query execution plan in Spanner Studio. For more information, see <a href="https://cloud.google.com/spanner/docs/tune-query-with-visualizer#visual-plan-tour">Take a tour of the query plan visualizer</a>.</p>
 <h3 id="libraries_1">Libraries</h3>
 <p>A monthly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
@@ -1861,19 +1878,19 @@
 </ul>
 <hr />
 <h2 id="2025-06-24">2025-06-24</h2>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p>You can directly connect and interact with your Spanner database using the Spanner CLI, an interactive shell for Spanner that is built into the Google Cloud CLI. You can use the Spanner CLI to start an interactive session and automate SQL executions from the shell or an input file. This feature is available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. For more information, see <a href="https://cloud.google.com/spanner/docs/spanner-cli">Spanner CLI quickstart</a>.</p>
 <hr />
 <h2 id="2025-06-20">2025-06-20</h2>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p>A new free trial creation work flow makes it easier to start your Spanner free trial. With a free trial instance, you can learn and explore Spanner for 90 days at no cost. You can create relational (GoogleSQL and PostgreSQL) databases and deploy NoSQL models (Spanner Graph, Vector search, and Full-text search) in a single, fully managed database. For more information, see <a href="https://cloud.google.com/spanner/docs/free-trial-instance">Spanner free trial instances overview</a>.</p>
 <hr />
 <h2 id="2025-06-11">2025-06-11</h2>
-<h3 id="feature_10">Feature</h3>
+<h3 id="feature_11">Feature</h3>
 <p>Column operations statistics are <a href="https://cloud.google.com/products#product-launch-stages">generally available</a>. They help you get insights into and monitor the usage of columns in your database. For more information, see <a href="https://cloud.google.com/spanner/docs/introspection/column-operations-statistics">Column operations statistics</a>.</p>
 <hr />
 <h2 id="2025-06-02">2025-06-02</h2>
-<h3 id="feature_11">Feature</h3>
+<h3 id="feature_12">Feature</h3>
 <p>BigQuery now supports using <a href="https://cloud.google.com/bigquery/docs/spanner-external-datasets">Spanner external datasets</a> with <a href="https://cloud.google.com/bigquery/docs/authorized-views">authorized views</a>, <a href="https://cloud.google.com/bigquery/docs/authorized-routines">authorized routines</a>, and <a href="https://cloud.google.com/bigquery/docs/create-cloud-resource-connection">Cloud resource connections</a>. This feature is <a href="https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages">generally available</a> (GA).</p>
 <h3 id="libraries_2">Libraries</h3>
 <p>A monthly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
@@ -2013,7 +2030,7 @@
 </ul>
 <hr />
 <h2 id="2025-05-27">2025-05-27</h2>
-<h3 id="feature_12">Feature</h3>
+<h3 id="feature_13">Feature</h3>
 <p>Spanner now supports <a href="https://cloud.google.com/bigquery/docs/spanner-federated-queries#cross_region_queries">cross regional federated queries</a> from BigQuery, which allows BigQuery users to query Spanner tables from regions other than their BigQuery region. Users will not incur any Spanner <a href="https://cloud.google.com/spanner/pricing#network">network egress charges</a> during the preview period. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
@@ -2026,6 +2043,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#spanner">Spanner</a></li>
+          <li class="nav-item">
+            <a href="#2025-08-25" class="nav-link">2025-08-25</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-08-14" class="nav-link">2025-08-14</a>
           </li>

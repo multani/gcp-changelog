@@ -43,6 +43,7 @@
 - [BigQuery](bigquery/index.md)
 - [Bigtable](bigtable/index.md)
 - [Buildpacks](buildpacks/index.md)
+- [Capacity Planner](capacity-planner/index.md)
 - [Carbon Footprint](carbon-footprint/index.md)
 - [Certificate Authority Service](certificate-authority-service/index.md)
 - [Cloud Asset Inventory](cloud-asset-inventory/index.md)

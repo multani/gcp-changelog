@@ -2,6 +2,14 @@
 
 ## 2025-08-25
 
+### Feature
+
+You can use the [`ST_REGIONSTATS` geography function](https://cloud.google.com/bigquery/docs/reference/standard-sql/geography_functions#st_regionstats) to combine raster data using Earth Engine with your vector data stored in BigQuery. For more information, see [Work with raster data](https://cloud.google.com/bigquery/docs/raster-data) and try the tutorial that shows you how to [use raster data to analyze global temperature](https://cloud.google.com/bigquery/docs/raster-tutorial-weather). This feature is [generally available](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+You can now use data insights to have Gemini [generate table and column descriptions from table metadata](https://cloud.google.com/bigquery/docs/data-insights). This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
 ### Libraries
 
 A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).

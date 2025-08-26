@@ -1,5 +1,14 @@
 # Spanner
 
+## 2025-08-25
+
+### Feature
+
+You can now terminate multiple active queries in your Spanner instance. Active queries are long-running queries that might affect the performance of your instance. Monitoring these queries can help you identify causes of instance latency and high CPU usage. Terminating queries might help free up resources and reduce the load on your instance.
+
+For more information, see [Monitor active queries](https://cloud.google.com/spanner/docs/monitor-active-queries#terminate-query).
+
+---
 ## 2025-08-14
 
 ### Feature

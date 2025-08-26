@@ -1,5 +1,12 @@
 # Sensitive Data Protection
 
+## 2025-08-25
+
+### Feature
+
+The `DOCUMENT_TYPE/FINANCE/INVOICE` and `DOCUMENT_TYPE/MEDICAL/RECORD` infoType detectors are available in `global` and the `asia`, `europe`, and `us` multi-regions. For more information about all infoTypes, see [InfoType detector reference](https://cloud.google.com/sensitive-data-protection/docs/infotypes-reference).
+
+---
 ## 2025-08-15
 
 ### Feature

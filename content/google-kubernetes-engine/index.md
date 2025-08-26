@@ -1,5 +1,26 @@
 # Google Kubernetes Engine
 
+## 2025-08-25
+
+### Feature
+
+In GKE version 1.33 and later, the Horizontal Pod Autoscaler
+has been re-architected for improved performance and scalability. This update
+enables a consistent 15-second recalculation period and supports up to 5,000 HPA
+objects per cluster.
+
+For more information see, [Horizontal Pod autoscaling](https://cloud.google.com/kubernetes-engine/docs/concepts/horizontalpodautoscaler#scalability).
+
+### Feature
+
+In GKE version 1.33 and later, the Horizontal Pod Autoscaler
+has been re-architected for improved performance and scalability. This update
+enables a consistent 15-second recalculation period and supports up to 5,000 HPA
+objects per cluster.
+
+For more information see, [Horizontal Pod autoscaling](https://cloud.google.com/kubernetes-engine/docs/concepts/horizontalpodautoscaler#scalability).
+
+---
 ## 2025-08-21
 
 ### Feature
@@ -411,6 +432,13 @@ For more information, see
 
 ### Feature
 
+For clusters enrolled in the Extended channel, you can now use
+[Gateway](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api)
+with GKE version 1.30 or later, or
+[customized sysctl configuration options](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options).
+
+### Feature
+
 You can now receive a patch version in a release channel as soon as the version
 is available and before GKE sets the version as an auto-upgrade
 target in the channel by using *accelerated patch auto-upgrades*. Receiving
@@ -420,13 +448,6 @@ requirements.
 
 For more information, see
 [Accelerated patch auto-upgrades](https://cloud.google.com/kubernetes-engine/docs/concepts/release-channels#accelerated-patch).
-
-### Feature
-
-For clusters enrolled in the Extended channel, you can now use
-[Gateway](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api)
-with GKE version 1.30 or later, or
-[customized sysctl configuration options](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options).
 
 ---
 ## 2025-08-14

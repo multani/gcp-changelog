@@ -1,5 +1,14 @@
 # Network Connectivity Center
 
+## 2025-08-25
+
+### Feature
+
+[IPv4 and IPv6 address range filtering for VPC spokes](https://cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/working-with-hubs-spokes#update-spoke-ipv4) is available in [GA](https://cloud.google.com/products#product-launch-stages).
+
+This feature lets you change IPv4 and IPv6 address ranges for VPC spokes that are exported to a hub.
+
+---
 ## 2025-08-18
 
 ### Feature

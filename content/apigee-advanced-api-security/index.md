@@ -1,5 +1,22 @@
 # Apigee Advanced API Security
 
+## 2025-08-25
+
+### Announcement
+
+On August 25, 2025 we released an updated version of Advanced API Security
+
+**Note:** Rollouts of this release to production instances will begin within two business days and may take four or more business days to complete across all Google Cloud zones. Your instances may not have the feature available until the rollout is complete.
+
+### Feature
+
+**Additional details and explanations for incidents and traffic identified as anomalous in Abuse Detection Advanced Anomaly Detection**
+
+Starting with this release, additional details are available for anomalies detected in incidents and detected traffic, including details on why traffic was flagged as anomalous, the days and times it triggered, time series charts showing anomalous traffic spikes, and direct links to the Google Cloud Logging for events.
+
+See the [Abuse detection "Details view"](https://cloud.google.com/apigee/docs/api-security/abuse-detection#details-view) for more information.
+
+---
 ## 2025-08-11
 
 ### Announcement

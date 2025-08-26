@@ -1,5 +1,14 @@
 # VPC Service Controls
 
+## 2025-08-18
+
+### Feature
+
+[General availability](https://cloud.google.com/products#product-launch-stages) support for the following integration:
+
+* [Secure Web Proxy](https://cloud.google.com/vpc-service-controls/docs/supported-products#table_swp)
+
+---
 ## 2025-08-06
 
 ### Feature

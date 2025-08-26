@@ -1728,20 +1728,29 @@
 
 
 <h1 id="apigee-advanced-api-security">Apigee Advanced API Security</h1>
-<h2 id="2025-08-11">2025-08-11</h2>
+<h2 id="2025-08-25">2025-08-25</h2>
 <h3 id="announcement">Announcement</h3>
-<p>On August 11, 2025 we released an updated version of Advanced API Security Abuse Detection</p>
+<p>On August 25, 2025 we released an updated version of Advanced API Security</p>
 <p><strong>Note:</strong> Rollouts of this release to production instances will begin within two business days and may take four or more business days to complete across all Google Cloud zones. Your instances may not have the feature available until the rollout is complete.</p>
 <h3 id="feature">Feature</h3>
+<p><strong>Additional details and explanations for incidents and traffic identified as anomalous in Abuse Detection Advanced Anomaly Detection</strong></p>
+<p>Starting with this release, additional details are available for anomalies detected in incidents and detected traffic, including details on why traffic was flagged as anomalous, the days and times it triggered, time series charts showing anomalous traffic spikes, and direct links to the Google Cloud Logging for events.</p>
+<p>See the <a href="https://cloud.google.com/apigee/docs/api-security/abuse-detection#details-view">Abuse detection "Details view"</a> for more information.</p>
+<hr />
+<h2 id="2025-08-11">2025-08-11</h2>
+<h3 id="announcement_1">Announcement</h3>
+<p>On August 11, 2025 we released an updated version of Advanced API Security Abuse Detection</p>
+<p><strong>Note:</strong> Rollouts of this release to production instances will begin within two business days and may take four or more business days to complete across all Google Cloud zones. Your instances may not have the feature available until the rollout is complete.</p>
+<h3 id="feature_1">Feature</h3>
 <p><strong>Improved performance when viewing IP address-specific details for abuse detection incidents</strong></p>
 <p>With this release, the IP address detail information for abuse incidents displays more quickly for IP addresses with high traffic volumes, potentially reducing load times from minutes to seconds.</p>
 <p>For usage information, see the <a href="https://cloud.google.com/apigee/docs/api-security/abuse-detection#incident-details">Abuse Detection incident detail documentation</a>.</p>
 <hr />
 <h2 id="2025-08-06">2025-08-06</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p>On August 6, 2025 we released an updated version of Advanced API Security</p>
 <p><strong>Note:</strong> Rollouts of this release to production instances will begin within two business days and may take four or more business days to complete across all Google Cloud zones. Your instances may not have the feature available until the rollout is complete.</p>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p><strong>Availability of Shadow API Discovery for APIs in any Google Cloud project</strong></p>
 <p>Using Shadow API Discovery, you can find undocumented/shadow APIs in your existing cloud infrastructure. Shadow APIs pose a security risk to your system, since they might be unsecured, unmonitored, and unmaintained.</p>
 <p>With this release, you can configure and run API observation jobs in any Google Cloud project, without needing to provision Apigee in that project. You can also centrally view the results of API observation jobs and compare discovered API endpoints and operations to APIs cataloged in API hub to identify shadow APIs.</p>
@@ -1749,45 +1758,45 @@
 <p><strong>Note:</strong> Data residency is not currently supported for Shadow API Discovery. See <a href="https://cloud.google.com/apigee/docs/api-platform/get-started/drz-concepts#data-residency-compatibility">data residency compatibility</a>.</p>
 <hr />
 <h2 id="2025-08-04">2025-08-04</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p>On August 4, 2025 we announced new functionality in Advanced API Security Abuse Detection.</p>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p><strong>Terraform support for configuring Advanced API Security</strong></p>
 <p>We have expanded our Terraform support for Advanced API Security, enabling you to automate the management of your security posture. You can now use Terraform to manage add-on enablement for <a href="https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/apigee_addons_config">Subscription</a> and <a href="https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/apigee_environment_addons_config">PAYG</a> environments, create <a href="https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/apigee_security_profile_v2">Risk Assessment security profiles</a> and <a href="https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/apigee_security_monitoring_condition">monitoring conditions</a>, <a href="https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/apigee_environment#client_ip_resolution_config-1">configure IP address resolution</a>, and <a href="https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/apigee_security_action">create security actions</a>.</p>
 <p>For information, see <a href="https://cloud.google.com/apigee/docs/api-security/enable-security#configure-advanced-api-security-using-terraform">Configure Advanced API Security using Terraform</a>.</p>
 <hr />
 <h2 id="2025-07-14">2025-07-14</h2>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p>On July 14, 2025 we released an updated version of Advanced API Security</p>
 <p><strong>Note:</strong> Rollouts of this release to production instances will begin within two business days and may take four or more business days to complete across all Google Cloud zones. Your instances may not have the feature available until the rollout is complete.</p>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p><strong>Support for editing and deleting security actions</strong></p>
 <p>With this release you can edit and delete existing security actions using either the UI or the Apigee Management APIs.</p>
 <p>For usage information, see the <a href="https://cloud.google.com/apigee/docs/api-security/security-actions">security actions documentation</a>.</p>
 <hr />
 <h2 id="2025-07-01">2025-07-01</h2>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p>On July 1, 2025 we released a new version of Advanced API Security Abuse Detection.</p>
 <p><strong>Note:</strong> Rollouts of this release to production instances will begin within two business days and may take four or more business days to complete across all Google Cloud zones. Your instances may not have the feature available until the rollout is complete.</p>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p><strong>Support for AppGroups in Abuse Detection attributes</strong></p>
 <p>Abuse Detection incidents and detected traffic now show information on AppGroups and AppGroup apps when the AppGroup is part of the request or traffic.</p>
 <p><strong>Note:</strong> This functionality is not available in Apigee hybrid at this time.</p>
 <p>For usage information, see the <a href="https://cloud.google.com/apigee/docs/api-security/abuse-detection#incident-details">Abuse Detection documentation</a>.</p>
 <hr />
 <h2 id="2025-06-16">2025-06-16</h2>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_6">Announcement</h3>
 <p>On June 16, 2025 we released a new version of Advanced API Security Abuse Detection.</p>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p><strong>API address drill down details are now available in the preview release of Advanced API Security Abuse Detection incidents in the detected traffic tab.</strong></p>
 <p>This new functionality shows details related to specific API addresses when viewing detected abuse in detected traffic.</p>
 <p>For usage information, see the <a href="https://cloud.google.com/apigee/docs/api-security/abuse-detection#incident-details">Abuse Detection customer documentation</a> for incident details.</p>
 <hr />
 <h2 id="2025-06-04">2025-06-04</h2>
-<h3 id="announcement_6">Announcement</h3>
+<h3 id="announcement_7">Announcement</h3>
 <p>On June 4, 2025 we released an update to the Anomaly Detection model in Advanced API Security Abuse Detection.</p>
 <p><strong>Note:</strong> Rollouts of this release to production instances will begin within two business days and may take four or more business days to complete across all Google Cloud zones. Your instances may not have the feature available until the rollout is complete.</p>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p><strong>New model for Abuse Detection's Advanced Anomaly Detection rule</strong></p>
 <p>With this release, we introduced a new and improved machine learning model for anomaly detection in Advanced API Security. This new model includes the following improvements:</p>
 <ul>
@@ -1803,9 +1812,9 @@
 <p>For more information on this model and on Abuse Detection, see <a href="https://cloud.google.com/apigee/docs/api-security/abuse-detection">Abuse Detection customer documentation</a>, including <a href="https://cloud.google.com/apigee/docs/api-security/detection-rules">Detection rules</a>.</p>
 <hr />
 <h2 id="2025-05-27">2025-05-27</h2>
-<h3 id="announcement_7">Announcement</h3>
+<h3 id="announcement_8">Announcement</h3>
 <p>On May 27, 2025 we released an updated version of Apigee Advanced API Security.</p>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p>With this release, Advanced API Security expands its runtime region support to include <code>africa-south1</code> (Johannesburg).</p>
 <p>For a list of supported regions, see <a href="https://cloud.google.com/apigee/docs/locations">Apigee locations</a>.</p>
 <hr /></div>
@@ -1819,6 +1828,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#apigee-advanced-api-security">Apigee Advanced API Security</a></li>
+          <li class="nav-item">
+            <a href="#2025-08-25" class="nav-link">2025-08-25</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-08-11" class="nav-link">2025-08-11</a>
           </li>

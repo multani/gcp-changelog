@@ -1,5 +1,91 @@
 # Container Optimized OS
 
+## 2025-08-25
+
+### Changed
+
+
+
+### cos-121-18867-199-43
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.97](https://cos.googlesource.com/third_party/kernel/+/deeeb8e797576b7e1e58e75b8b6d20d26d3ea7ab ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.199.43/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Disabled DNSSEC by default for COS TPU VMs.
+
+### Feature
+
+Added IPv6 support for machines using the IDPF driver.
+
+### Fixed
+
+Added support for the Lustre 2.14.0\_p216 drivers.
+
+### Security
+
+Fixed KCTF-abad3d0 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811736 -> 811817
+
+### Changed
+
+
+
+### cos-dev-129-19251-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.42](https://cos.googlesource.com/third_party/kernel/+/bb106cd2966ddeca447529bc878f7ec95ed4e9c2 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19251.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Added support for the Lustre 2.14.0\_p216 drivers.
+
+### Security
+
+Fixed KCTF-abad3d0 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811494 -> 811419
+
+### Changed
+
+
+
+### cos-113-18244-448-33
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.144](https://cos.googlesource.com/third_party/kernel/+/be0696379db5a3b49f401e243d019e6df00a0504 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.448.33/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Disabled DNSSEC by default for COS TPU VMs.
+
+### Security
+
+Fixed KCTF-abad3d0 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812040 -> 812035
+
+---
 ## 2025-08-18
 
 ### cos-beta-125-19216-0-12

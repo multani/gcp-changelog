@@ -1,5 +1,14 @@
 # Generative AI on Vertex AI
 
+## 2025-08-26
+
+### Announcement
+
+**Gemini 2.5 Flash Image Preview**
+
+[Gemini 2.5 Flash Image](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash#image-generation) (`gemini-2.5-flash-image-preview`) is available in [Preview](https://cloud.google.com/products#product-launch-stages). Gemini 2.5 Flash Image Preview supports additional image generation and editing features such as [image generation from multiple reference images](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-generation#image-generation) and [improved multi-turn image editing](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-editing#multi-turn-editing).
+
+---
 ## 2025-08-21
 
 ### Feature

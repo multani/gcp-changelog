@@ -3,6 +3,7 @@
 - [AI Applications](ai-applications/index.md)
 - [AI Hypercomputer](ai-hypercomputer/index.md)
 - [API Gateway](api-gateway/index.md)
+- [Access Approval](access-approval/index.md)
 - [Access Transparency](access-transparency/index.md)
 - [Agent Assist](agent-assist/index.md)
 - [AlloyDB Omni](alloydb-omni/index.md)

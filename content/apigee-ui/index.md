@@ -1,5 +1,29 @@
 # Apigee UI
 
+## 2025-08-26
+
+### Announcement
+
+On August 26, 2025, we released an updated version of the Apigee UI.
+
+### Feature
+
+**Debug view settings are now retained when switching between transactions**
+
+When switching between transactions in the debug view the following view settings are now retained:
+
+* The state of the expand all toggle
+* The zoom level of the graph
+* The positioning of the viewport in the graph (best effort). This may be modified due to discrepancies in between the transactions
+* The search filter. The active match will go into an indeterminate when switching transactions.
+
+### Feature
+
+**Added Display name column to Apps table**
+
+Added a column to the [Apps table](https://cloud.google.com/apigee/docs/api-platform/publish/creating-apps-surface-your-api#register) to show the App display name separate from the App name. The **App name** column will no longer show the display name if one is set. Instead the display name will appear in the new **Display name** column. You can also now filter by the **App name** and **Display name** independently.
+
+---
 ## 2025-08-20
 
 ### Announcement

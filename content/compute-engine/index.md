@@ -1,5 +1,19 @@
 # Compute Engine
 
+## 2025-08-26
+
+### Feature
+
+**Generally available**: You can create instances that use only IPv6 IP addresses. For more information, see [Create an IPv6-only instance](https://cloud.google.com/compute/docs/instances/create-ipv6-instance#create-vm-ipv6-only).
+
+---
+## 2025-08-20
+
+### Feature
+
+You can use instant snapshots to back up Extreme Persistent Disk volumes. For more information, see [About instant snapshots](https://cloud.google.com/compute/docs/disks/instant-snapshots).
+
+---
 ## 2025-08-14
 
 ### Feature

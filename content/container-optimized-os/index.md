@@ -2,9 +2,59 @@
 
 ## 2025-08-25
 
+### cos-beta-125-19216-0-24
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.41](https://cos.googlesource.com/third_party/kernel/+/02d39c3c0c9c42945d7d727b09fd66a344ac6fb8 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19216.0.24/lakitu/gpu_driver_versions.textproto) |
+
 ### Changed
 
+Added kernel support for bare-metal on the NVIDIA Grace platform.
 
+### Feature
+
+Added TDX RTMR support.
+
+### Feature
+
+Removed the cloud-final.service dependency on multi-user.target which could delay cloud-init user-data scripts indefinitely when long-running startup scripts are used.
+
+### Feature
+
+Disabled DNSSEC by default for COS TPU VMs.
+
+### Feature
+
+Added IPv6 support for machines using the IDPF driver.
+
+### Feature
+
+Enabled the google-guest-agent's network management functionality.
+
+### Feature
+
+Added ConnectX-8 RDMA support.
+
+### Fixed
+
+Installed app-misc/c\_rehash.
+
+### Fixed
+
+Fixed an issue where cpusets cgroups did not work with
+cgroup v1 enabled.
+
+### Security
+
+Fixed KCTF-abad3d0 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811484 -> 811541
 
 ### cos-121-18867-199-43
 
@@ -35,9 +85,34 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 811736 -> 811817
 
+### cos-117-18613-339-44
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.97](https://cos.googlesource.com/third_party/kernel/+/dbb5daa347de068ce303416670bb9f859074ea88 ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.339.44/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Disabled DNSSEC by default for COS TPU VMs.
+
+### Feature
+
+Added IPv6 support for machines using the IDPF driver.
+
+### Fixed
+
+Added support for the Lustre 2.14.0\_p216 drivers.
+
+### Security
+
+Fixed KCTF-abad3d0 in the Linux kernel.
+
 ### Changed
 
+Runtime sysctl changes:
 
+* Changed: fs.file-max: 811771 -> 811728
 
 ### cos-dev-129-19251-0-0
 
@@ -60,10 +135,6 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 811494 -> 811419
 
-### Changed
-
-
-
 ### cos-113-18244-448-33
 
 |  |  |  |  |
@@ -84,6 +155,27 @@ Fixed KCTF-abad3d0 in the Linux kernel.
 Runtime sysctl changes:
 
 * Changed: fs.file-max: 812040 -> 812035
+
+### cos-109-17800-570-37
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.143](https://cos.googlesource.com/third_party/kernel/+/69a4dc1bdd77106e675905e62d935738f80567d2 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/17800.570.37/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Disabled DNSSEC by default for COS TPU VMs.
+
+### Security
+
+Fixed KCTF-abad3d0 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812258 -> 812214
 
 ---
 ## 2025-08-18

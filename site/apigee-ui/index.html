@@ -1397,6 +1397,30 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Memorystore for memcached <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../memorystore-for-memcached/" class="dropdown-item">Memorystore for Memcached</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Memorystore for redis <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../memorystore-for-redis/" class="dropdown-item">Memorystore for Redis</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Migrate to virtual machines <b class="caret"></b>
                         </a>
 
@@ -1740,17 +1764,33 @@
 
 
 <h1 id="apigee-ui">Apigee UI</h1>
-<h2 id="2025-08-20">2025-08-20</h2>
+<h2 id="2025-08-26">2025-08-26</h2>
 <h3 id="announcement">Announcement</h3>
-<p>On August 20, 2025, we released an updated version of the Apigee UI.</p>
+<p>On August 26, 2025, we released an updated version of the Apigee UI.</p>
 <h3 id="feature">Feature</h3>
+<p><strong>Debug view settings are now retained when switching between transactions</strong></p>
+<p>When switching between transactions in the debug view the following view settings are now retained:</p>
+<ul>
+<li>The state of the expand all toggle</li>
+<li>The zoom level of the graph</li>
+<li>The positioning of the viewport in the graph (best effort). This may be modified due to discrepancies in between the transactions</li>
+<li>The search filter. The active match will go into an indeterminate when switching transactions.</li>
+</ul>
+<h3 id="feature_1">Feature</h3>
+<p><strong>Added Display name column to Apps table</strong></p>
+<p>Added a column to the <a href="https://cloud.google.com/apigee/docs/api-platform/publish/creating-apps-surface-your-api#register">Apps table</a> to show the App display name separate from the App name. The <strong>App name</strong> column will no longer show the display name if one is set. Instead the display name will appear in the new <strong>Display name</strong> column. You can also now filter by the <strong>App name</strong> and <strong>Display name</strong> independently.</p>
+<hr />
+<h2 id="2025-08-20">2025-08-20</h2>
+<h3 id="announcement_1">Announcement</h3>
+<p>On August 20, 2025, we released an updated version of the Apigee UI.</p>
+<h3 id="feature_2">Feature</h3>
 <p><strong>Added Name column to API Products table</strong></p>
 <p>Added a column to the <a href="https://cloud.google.com/apigee/docs/api-platform/publish/create-api-products#productdetails">API Products table</a> to display the product name. You can now filter and sort by the product name. The link to the API product detail page is now in the <strong>Name</strong> column instead of the <strong>Display Name</strong> column.</p>
 <hr />
 <h2 id="2025-08-12">2025-08-12</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p>On August 12, 2025, we released an updated version of the Apigee UI.</p>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p><strong>Added path column to Debug transaction table</strong></p>
 <p>A new column has been added to the <a href="https://cloud.google.com/apigee/docs/api-platform/debug/trace#create">transactions table</a> in the Debug view that specifies the path that was used by the transaction to call the proxy.</p>
 <h3 id="fixed">Fixed</h3>
@@ -1778,7 +1818,7 @@
 </table>
 <hr />
 <h2 id="2025-07-30">2025-07-30</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p>On July 30, 2025 we began redirecting the following Apigee Classic UI navigation items to Apigee UI in the Google Cloud console:</p>
 <ul>
 <li>Develop &gt; API Proxies</li>
@@ -1790,7 +1830,7 @@
 <p>If you require more time to transition to the Google Cloud console, submit the <a href="https://docs.google.com/forms/d/e/1FAIpQLSedFe2Pj2f9B8YxD7cgWOyf8-IjRA8IhRZpZ2jXMZ9DU1uz1g/viewform">exception request form</a> by Aug 15, 2025.</p>
 <hr />
 <h2 id="2025-07-29">2025-07-29</h2>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p>On July 29, 2025 we removed the <strong>Switch to Classic</strong> option from the following Apigee UI in the Google Cloud console pages:</p>
 <ul>
 <li>API Proxy</li>
@@ -1803,7 +1843,7 @@
 <p>If you require more time to transition to the Google Cloud console, submit the <a href="https://docs.google.com/forms/d/e/1FAIpQLSedFe2Pj2f9B8YxD7cgWOyf8-IjRA8IhRZpZ2jXMZ9DU1uz1g/viewform">exception request form</a> by Aug 15, 2025.</p>
 <hr />
 <h2 id="2025-07-24">2025-07-24</h2>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p>On July 24, 2025 we began redirecting the following Apigee Classic UI navigation items to Apigee UI in the Google Cloud console:</p>
 <ul>
 <li>Publish &gt; Portals</li>
@@ -1813,7 +1853,7 @@
 <p>If you require more time to transition to the Google Cloud console, submit the <a href="https://docs.google.com/forms/d/e/1FAIpQLSedFe2Pj2f9B8YxD7cgWOyf8-IjRA8IhRZpZ2jXMZ9DU1uz1g/viewform">exception request form</a> by Aug 15, 2025.</p>
 <hr />
 <h2 id="2025-06-25">2025-06-25</h2>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_6">Announcement</h3>
 <p>On June 25, 2025 we began redirecting the following Apigee Classic UI navigation items to Apigee UI in the Google Cloud console:</p>
 <ul>
 <li>Publish &gt; API products</li>
@@ -1829,7 +1869,7 @@
 <p>If you require more time to transition to the Google Cloud console, submit the <a href="https://docs.google.com/forms/d/e/1FAIpQLSedFe2Pj2f9B8YxD7cgWOyf8-IjRA8IhRZpZ2jXMZ9DU1uz1g/viewform">exception request form</a> by Aug 15, 2025.</p>
 <hr />
 <h2 id="2025-06-17">2025-06-17</h2>
-<h3 id="announcement_6">Announcement</h3>
+<h3 id="announcement_7">Announcement</h3>
 <p>On June 17, 2025 we began redirecting the following Apigee Classic UI navigation items to Apigee UI in the Google Cloud console:</p>
 <ul>
 <li>Publish &gt; Monetization</li>
@@ -1846,7 +1886,7 @@
 <p>If you require more time to transition to the Google Cloud console, submit the <a href="https://docs.google.com/forms/d/e/1FAIpQLSedFe2Pj2f9B8YxD7cgWOyf8-IjRA8IhRZpZ2jXMZ9DU1uz1g/viewform">exception request form</a> by Aug 15, 2025.</p>
 <hr />
 <h2 id="2025-05-29">2025-05-29</h2>
-<h3 id="announcement_7">Announcement</h3>
+<h3 id="announcement_8">Announcement</h3>
 <p>On May 29, 2025 we announced the shutdown schedule for the Apigee Classic UI.</p>
 <h3 id="deprecated">Deprecated</h3>
 <p>The Apigee Classic UI will be shutdown as of August 29, 2025.</p>
@@ -1864,6 +1904,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#apigee-ui">Apigee UI</a></li>
+          <li class="nav-item">
+            <a href="#2025-08-26" class="nav-link">2025-08-26</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-08-20" class="nav-link">2025-08-20</a>
           </li>

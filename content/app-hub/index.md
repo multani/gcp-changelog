@@ -1,5 +1,47 @@
 # App Hub
 
+## 2025-08-25
+
+### Feature
+
+App Hub supports resources from the following sources in [Preview](https://cloud.google.com/products#product-launch-stages):
+
+* Vertex AI
+  + Pipeline job
+  + Custom job
+  + Hyperparameter tuning job
+  + Index
+  + Index endpoint
+  + NAS job
+  + Model deployment monitoring job
+* Compute Engine
+  + Autoscaler
+  + Commitment
+  + Disk
+  + Regional disk
+  + Instance template
+  + Regional instance template
+  + License
+  + Node group
+  + Image
+  + Resource policy
+  + Reservation
+  + Node template
+  + Router
+  + Snapshot
+  + Route
+  + Subnetwork
+  + Global public delegated prefix
+  + Public delegated prefix
+* Dataflow
+  + Job
+* Datastream
+  + Stream
+* Cloud DNS
+  + Managed zone
+  + Policy
+
+---
 ## 2025-07-30
 
 ### Feature

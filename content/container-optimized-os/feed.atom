@@ -9,18 +9,146 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:changed:0</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:cos-beta-125-19216-0-24:0</id>
     <published>2025-08-25T00:00:00+00:00</published>
     <updated>2025-08-25T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[]]></content>
-    <summary>New features available.</summary>
-    <title>Changed: New features</title>
+    <content type="html"><![CDATA[<p>|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | <a href="https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus">GPU Drivers</a> |
+| <a href="https://cos.googlesource.com/third_party/kernel/+/02d39c3c0c9c42945d7d727b09fd66a344ac6fb8">COS-6.12.41</a> | v27.5.1 | v2.1.3 | <a href="https://storage.googleapis.com/cos-tools/19216.0.24/lakitu/gpu_driver_versions.textproto">See List</a> |</p>]]></content>
+    <summary>The latest COS image includes updated Kernel, Docker, and Containerd versions, along with GPU driver support. See the list for specific GPU driver versions.</summary>
+    <title>cos-beta-125-19216-0-24: COS-6.12.41 GPU Driver Update</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:cos-121-18867-199-43:1</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:changed:1</id>
+    <published>2025-08-25T00:00:00+00:00</published>
+    <updated>2025-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Added kernel support for bare-metal on the NVIDIA Grace platform.</p>]]></content>
+    <summary>Added kernel support for bare-metal on the NVIDIA Grace platform.</summary>
+    <title>Changed: kernel support for bare-metal on NVIDIA Grace</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:feature:2</id>
+    <published>2025-08-25T00:00:00+00:00</published>
+    <updated>2025-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Added TDX RTMR support.</p>]]></content>
+    <summary>Added TDX RTMR support.</summary>
+    <title>Feature: TDX RTMR Support Added</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:feature:3</id>
+    <published>2025-08-25T00:00:00+00:00</published>
+    <updated>2025-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Removed the cloud-final.service dependency on multi-user.target which could delay cloud-init user-data scripts indefinitely when long-running startup scripts are used.</p>]]></content>
+    <summary>Removed cloud-final.service dependency on multi-user.target to prevent indefinite delays in user-data script execution.</summary>
+    <title>Feature: Cloud-init feature update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:feature:4</id>
+    <published>2025-08-25T00:00:00+00:00</published>
+    <updated>2025-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Disabled DNSSEC by default for COS TPU VMs.</p>]]></content>
+    <summary>Disabled DNSSEC by default for COS TPU VMs.</summary>
+    <title>Feature: Disabled DNSSEC by default for COS TPU VMs</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:feature:5</id>
+    <published>2025-08-25T00:00:00+00:00</published>
+    <updated>2025-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Added IPv6 support for machines using the IDPF driver.</p>]]></content>
+    <summary>We've added IPv6 support for machines using the IDPF driver.</summary>
+    <title>Feature: IPv6 Support Added</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:feature:6</id>
+    <published>2025-08-25T00:00:00+00:00</published>
+    <updated>2025-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Enabled the google-guest-agent's network management functionality.</p>]]></content>
+    <summary>The network management functionality of the Google Guest Agent has been successfully enabled.</summary>
+    <title>Feature: Google Guest Agent Network Management Enabled</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:feature:7</id>
+    <published>2025-08-25T00:00:00+00:00</published>
+    <updated>2025-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Added ConnectX-8 RDMA support.</p>]]></content>
+    <summary>RDMA ConnectX-8 support has been added. This feature enhances network performance.</summary>
+    <title>Feature: RDMA ConnectX-8 Support Added</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:fixed:8</id>
+    <published>2025-08-25T00:00:00+00:00</published>
+    <updated>2025-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Installed app-misc/c_rehash.</p>]]></content>
+    <summary>The c_rehash tool has been successfully installed.</summary>
+    <title>Fixed: c_rehash installed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:fixed:9</id>
+    <published>2025-08-25T00:00:00+00:00</published>
+    <updated>2025-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed an issue where cpusets cgroups did not work with
+cgroup v1 enabled.</p>]]></content>
+    <summary>CPUsets cgroups now function correctly with cgroup v1 enabled.</summary>
+    <title>Fixed: CPUsets cgroups fix</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:security:10</id>
+    <published>2025-08-25T00:00:00+00:00</published>
+    <updated>2025-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed KCTF-abad3d0 in the Linux kernel.</p>]]></content>
+    <summary>Security update: KCTF-abad3d0 vulnerability in the Linux kernel has been resolved.</summary>
+    <title>Security: Fixed KCTF-abad3d0 in Linux kernel</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:changed:11</id>
+    <published>2025-08-25T00:00:00+00:00</published>
+    <updated>2025-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Runtime sysctl changes:</p>
+<ul>
+<li>Changed: fs.file-max: 811484 -&gt; 811541</li>
+</ul>]]></content>
+    <summary>Runtime sysctl changes: fs.file-max changed from 811484 to 811541.</summary>
+    <title>Changed: Runtime sysctl changes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:cos-121-18867-199-43:12</id>
     <published>2025-08-25T00:00:00+00:00</published>
     <updated>2025-08-25T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>|  |  |  |  |
@@ -34,7 +162,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:feature:2</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:feature:13</id>
     <published>2025-08-25T00:00:00+00:00</published>
     <updated>2025-08-25T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Disabled DNSSEC by default for COS TPU VMs.</p>]]></content>
@@ -45,7 +173,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:feature:3</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:feature:14</id>
     <published>2025-08-25T00:00:00+00:00</published>
     <updated>2025-08-25T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Added IPv6 support for machines using the IDPF driver.</p>]]></content>
@@ -56,7 +184,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:fixed:4</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:fixed:15</id>
     <published>2025-08-25T00:00:00+00:00</published>
     <updated>2025-08-25T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Added support for the Lustre 2.14.0_p216 drivers.</p>]]></content>
@@ -67,7 +195,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:security:5</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:security:16</id>
     <published>2025-08-25T00:00:00+00:00</published>
     <updated>2025-08-25T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed KCTF-abad3d0 in the Linux kernel.</p>]]></content>
@@ -78,7 +206,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:changed:6</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:changed:17</id>
     <published>2025-08-25T00:00:00+00:00</published>
     <updated>2025-08-25T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Runtime sysctl changes:</p>
@@ -92,18 +220,79 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:changed:7</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:cos-117-18613-339-44:18</id>
     <published>2025-08-25T00:00:00+00:00</published>
     <updated>2025-08-25T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[]]></content>
-    <summary>New features are available.</summary>
-    <title>Changed: New features</title>
+    <content type="html"><![CDATA[<p>|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | <a href="https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus">GPU Drivers</a> |
+| <a href="https://cos.googlesource.com/third_party/kernel/+/dbb5daa347de068ce303416670bb9f859074ea88">COS-6.6.97</a> | v24.0.9 | v1.7.28 | <a href="https://storage.googleapis.com/cos-tools/18613.339.44/lakitu/gpu_driver_versions.textproto">See List</a> |</p>]]></content>
+    <summary>This update includes new versions of the Kernel, Docker, and Containerd, along with updated GPU drivers.</summary>
+    <title>cos-117-18613-339-44: Container-Optimized OS GPU Driver Update</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:cos-dev-129-19251-0-0:8</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:feature:19</id>
+    <published>2025-08-25T00:00:00+00:00</published>
+    <updated>2025-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Disabled DNSSEC by default for COS TPU VMs.</p>]]></content>
+    <summary>Disabled DNSSEC by default for COS TPU VMs.</summary>
+    <title>Feature: Disabled DNSSEC by default for COS TPU VMs</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:feature:20</id>
+    <published>2025-08-25T00:00:00+00:00</published>
+    <updated>2025-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Added IPv6 support for machines using the IDPF driver.</p>]]></content>
+    <summary>We've added IPv6 support for machines using the IDPF driver.</summary>
+    <title>Feature: IPv6 Support Added</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:fixed:21</id>
+    <published>2025-08-25T00:00:00+00:00</published>
+    <updated>2025-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Added support for the Lustre 2.14.0_p216 drivers.</p>]]></content>
+    <summary>Added support for Lustre 2.14.0_p216 drivers.</summary>
+    <title>Fixed: Lustre 2.14.0_p216 Drivers Added</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:security:22</id>
+    <published>2025-08-25T00:00:00+00:00</published>
+    <updated>2025-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed KCTF-abad3d0 in the Linux kernel.</p>]]></content>
+    <summary>Security update: KCTF-abad3d0 vulnerability in the Linux kernel has been resolved.</summary>
+    <title>Security: Fixed KCTF-abad3d0 in Linux kernel</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:changed:23</id>
+    <published>2025-08-25T00:00:00+00:00</published>
+    <updated>2025-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Runtime sysctl changes:</p>
+<ul>
+<li>Changed: fs.file-max: 811771 -&gt; 811728</li>
+</ul>]]></content>
+    <summary>fs.file-max changed from 811771 to 811728.</summary>
+    <title>Changed: Runtime sysctl changes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:cos-dev-129-19251-0-0:24</id>
     <published>2025-08-25T00:00:00+00:00</published>
     <updated>2025-08-25T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>|  |  |  |  |
@@ -117,29 +306,29 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:fixed:9</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:fixed:25</id>
     <published>2025-08-25T00:00:00+00:00</published>
     <updated>2025-08-25T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Added support for the Lustre 2.14.0_p216 drivers.</p>]]></content>
-    <summary>Support for Lustre 2.14.0_p216 drivers has been implemented.</summary>
-    <title>Fixed: Lustre 2.14.0_p216 Driver Support Added</title>
+    <summary>Added support for Lustre 2.14.0_p216 drivers.</summary>
+    <title>Fixed: Lustre 2.14.0_p216 Drivers Added</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:security:10</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:security:26</id>
     <published>2025-08-25T00:00:00+00:00</published>
     <updated>2025-08-25T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed KCTF-abad3d0 in the Linux kernel.</p>]]></content>
-    <summary>Security fix applied to the Linux kernel.</summary>
-    <title>Security: Fixed KCTF-abad3d0 in Linux</title>
+    <summary>Security update: KCTF-abad3d0 vulnerability in the Linux kernel has been resolved.</summary>
+    <title>Security: Fixed KCTF-abad3d0 in Linux kernel</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:changed:11</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:changed:27</id>
     <published>2025-08-25T00:00:00+00:00</published>
     <updated>2025-08-25T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Runtime sysctl changes:</p>
@@ -153,18 +342,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:changed:12</id>
-    <published>2025-08-25T00:00:00+00:00</published>
-    <updated>2025-08-25T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[]]></content>
-    <summary>New features are available.</summary>
-    <title>Changed: New features</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:cos-113-18244-448-33:13</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:cos-113-18244-448-33:28</id>
     <published>2025-08-25T00:00:00+00:00</published>
     <updated>2025-08-25T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>|  |  |  |  |
@@ -178,29 +356,29 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:feature:14</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:feature:29</id>
     <published>2025-08-25T00:00:00+00:00</published>
     <updated>2025-08-25T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Disabled DNSSEC by default for COS TPU VMs.</p>]]></content>
-    <summary>DNSSEC is now disabled by default for COS TPU VMs.</summary>
-    <title>Feature: Disabled DNSSEC by default for COS TPU VMs.</title>
+    <summary>Disabled DNSSEC by default for COS TPU VMs.</summary>
+    <title>Feature: Disabled DNSSEC by default for COS TPU VMs</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:security:15</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:security:30</id>
     <published>2025-08-25T00:00:00+00:00</published>
     <updated>2025-08-25T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed KCTF-abad3d0 in the Linux kernel.</p>]]></content>
-    <summary>Fixed KCTF-abad3d0 in the Linux kernel.</summary>
-    <title>Security: Fixed KCTF-abad3d0</title>
+    <summary>Security update: KCTF-abad3d0 vulnerability in the Linux kernel has been resolved.</summary>
+    <title>Security: Fixed KCTF-abad3d0 in Linux kernel</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:changed:16</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:changed:31</id>
     <published>2025-08-25T00:00:00+00:00</published>
     <updated>2025-08-25T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Runtime sysctl changes:</p>
@@ -208,6 +386,56 @@
 <li>Changed: fs.file-max: 812040 -&gt; 812035</li>
 </ul>]]></content>
     <summary>fs.file-max changed from 812040 to 812035.</summary>
+    <title>Changed: Runtime sysctl changes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:cos-109-17800-570-37:32</id>
+    <published>2025-08-25T00:00:00+00:00</published>
+    <updated>2025-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | <a href="https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus">GPU Drivers</a> |
+| <a href="https://cos.googlesource.com/third_party/kernel/+/69a4dc1bdd77106e675905e62d935738f80567d2">COS-6.1.143</a> | v24.0.9 | v1.7.27 | <a href="https://storage.googleapis.com/cos-tools/17800.570.37/lakitu/gpu_driver_versions.textproto">See List</a> |</p>]]></content>
+    <summary>New COS version available.</summary>
+    <title>cos-109-17800-570-37: COS-109-17800-570-37</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:feature:33</id>
+    <published>2025-08-25T00:00:00+00:00</published>
+    <updated>2025-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Disabled DNSSEC by default for COS TPU VMs.</p>]]></content>
+    <summary>Disabled DNSSEC by default for COS TPU VMs.</summary>
+    <title>Feature: Disabled DNSSEC by default for COS TPU VMs</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:security:34</id>
+    <published>2025-08-25T00:00:00+00:00</published>
+    <updated>2025-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed KCTF-abad3d0 in the Linux kernel.</p>]]></content>
+    <summary>Security update: KCTF-abad3d0 vulnerability in the Linux kernel has been resolved.</summary>
+    <title>Security: Fixed KCTF-abad3d0 in Linux kernel</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-08-25:changed:35</id>
+    <published>2025-08-25T00:00:00+00:00</published>
+    <updated>2025-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Runtime sysctl changes:</p>
+<ul>
+<li>Changed: fs.file-max: 812258 -&gt; 812214</li>
+</ul>]]></content>
+    <summary>fs.file-max changed from 812258 to 812214.</summary>
     <title>Changed: Runtime sysctl changes</title>
   </entry>
   <entry>

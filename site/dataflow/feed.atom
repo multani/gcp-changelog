@@ -2,9 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Dataflow</title>
   <subtitle>Changelog for Google Cloud product: Dataflow</subtitle>
-  <updated>2025-08-11T00:00:00+00:00</updated>
+  <updated>2025-08-26T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:dataflow</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/dataflow/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataflow:2025-08-26:fixed:0</id>
+    <published>2025-08-26T00:00:00+00:00</published>
+    <updated>2025-08-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Dataflow <a href="https://cloud.google.com/dataflow/docs/runner-v2">Runner v2</a> fixes an issue that could cause data discrepancies when using splittable DoFns, particularly when processing large datasets as side inputs. This fix ensures that all data is accurately processed and transmitted within the pipeline. This improvement is available in recent Dataflow service releases, and is automatically enabled when using Dataflow Runner v2.</p>
+<p><strong>Note:</strong> After this fix, pipelines that previously experienced data loss due to this issue might consume more resources (such as CPU, memory, and processing time) because more data is being processed. This increase in resource usage is expected and reflects the correct behavior of the pipeline.</p>]]></content>
+    <summary>Runner v2 resolves data discrepancies with splittable DoFns and large side inputs. Data is now processed and transmitted accurately.</summary>
+    <title>Fixed: Dataflow Runner v2 Fixes Data Discrepancies</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

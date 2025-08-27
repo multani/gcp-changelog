@@ -1,5 +1,14 @@
 # Dataflow
 
+## 2025-08-26
+
+### Fixed
+
+Dataflow [Runner v2](https://cloud.google.com/dataflow/docs/runner-v2) fixes an issue that could cause data discrepancies when using splittable DoFns, particularly when processing large datasets as side inputs. This fix ensures that all data is accurately processed and transmitted within the pipeline. This improvement is available in recent Dataflow service releases, and is automatically enabled when using Dataflow Runner v2.
+
+**Note:** After this fix, pipelines that previously experienced data loss due to this issue might consume more resources (such as CPU, memory, and processing time) because more data is being processed. This increase in resource usage is expected and reflects the correct behavior of the pipeline.
+
+---
 ## 2025-08-11
 
 ### Feature

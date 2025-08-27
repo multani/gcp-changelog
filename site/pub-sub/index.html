@@ -1397,6 +1397,30 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Memorystore for memcached <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../memorystore-for-memcached/" class="dropdown-item">Memorystore for Memcached</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Memorystore for redis <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../memorystore-for-redis/" class="dropdown-item">Memorystore for Redis</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Migrate to virtual machines <b class="caret"></b>
                         </a>
 
@@ -1740,8 +1764,29 @@
 
 
 <h1 id="pubsub">Pub/Sub</h1>
-<h2 id="2025-08-11">2025-08-11</h2>
+<h2 id="2025-08-25">2025-08-25</h2>
 <h3 id="libraries">Libraries</h3>
+<p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
+<h3 id="java">Java</h3>
+<h3 id="changes-for-google-cloud-pubsub">Changes for <a href="https://github.com/googleapis/java-pubsub">google-cloud-pubsub</a></h3>
+<h4 id="11413-2025-08-19"><a href="https://github.com/googleapis/java-pubsub/compare/v1.141.2...v1.141.3">1.141.3</a> (2025-08-19)</h4>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li>Use the system executor instead of a separate thread pool for EOD ack/modack callbacks (<a href="https://github.com/googleapis/java-pubsub/issues/2526">#2526</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/ffeb017a58ca486688105738f180d70df33a74de">ffeb017</a>)</li>
+</ul>
+<h5 id="dependencies">Dependencies</h5>
+<ul>
+<li>Update actions/checkout action to v5 (<a href="https://github.com/googleapis/java-pubsub/issues/2520">#2520</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/409398a40f71866d5a84b4542d582777ee240a08">409398a</a>)</li>
+<li>Update dependency com.google.cloud:google-cloud-bigquery to v2.54.1 (<a href="https://github.com/googleapis/java-pubsub/issues/2523">#2523</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/0678a74dc22f73cd8ec8c4893c1a8dd60449b128">0678a74</a>)</li>
+<li>Update dependency com.google.cloud:google-cloud-core to v2.60.0 (<a href="https://github.com/googleapis/java-pubsub/issues/2527">#2527</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/0166e21012f0bc2ccb2e832d6f27e60ad3382456">0166e21</a>)</li>
+<li>Update dependency com.google.cloud:google-cloud-storage to v2.55.0 (<a href="https://github.com/googleapis/java-pubsub/issues/2517">#2517</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/b67acf1294249be308568f49f287897ae55ced08">b67acf1</a>)</li>
+<li>Update dependency com.google.cloud:sdk-platform-java-config to v3.52.0 (<a href="https://github.com/googleapis/java-pubsub/issues/2528">#2528</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/e424d11ffe0fbe242c59dec44ac1af2f9bd80173">e424d11</a>)</li>
+<li>Update dependency com.google.protobuf:protobuf-java-util to v4.32.0 (<a href="https://github.com/googleapis/java-pubsub/issues/2524">#2524</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/44ff0873171f8fe2e7cd79b4550f8ec94ea2c99a">44ff087</a>)</li>
+<li>Update dependency org.assertj:assertj-core to v3.27.4 (<a href="https://github.com/googleapis/java-pubsub/issues/2518">#2518</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/67695bc50eafc475866eb6c300b3359083ecfe00">67695bc</a>)</li>
+</ul>
+<hr />
+<h2 id="2025-08-11">2025-08-11</h2>
+<h3 id="libraries_1">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="nodejs">Node.js</h3>
 <h3 id="changes-for-google-cloudpubsub">Changes for <a href="https://github.com/googleapis/nodejs-pubsub">@google-cloud/pubsub</a></h3>
@@ -1751,15 +1796,15 @@
 <li>Ad-hoc, targeted debug logging (<a href="https://github.com/googleapis/nodejs-pubsub/issues/2062">#2062</a>) (<a href="https://github.com/googleapis/nodejs-pubsub/commit/dce83c71bba54388334f4f73115e7b8da6fbdb67">dce83c7</a>)</li>
 <li>Add timeout option and graceful shutdown to Subscription.close() (<a href="https://github.com/googleapis/nodejs-pubsub/issues/2068">#2068</a>) (<a href="https://github.com/googleapis/nodejs-pubsub/commit/8dee0248081f7156e42d79c6067902583586faf2">8dee024</a>)</li>
 </ul>
-<h3 id="java">Java</h3>
-<h3 id="changes-for-google-cloud-pubsub">Changes for <a href="https://github.com/googleapis/java-pubsub">google-cloud-pubsub</a></h3>
+<h3 id="java_1">Java</h3>
+<h3 id="changes-for-google-cloud-pubsub_1">Changes for <a href="https://github.com/googleapis/java-pubsub">google-cloud-pubsub</a></h3>
 <h4 id="11412-2025-08-05"><a href="https://github.com/googleapis/java-pubsub/compare/v1.141.1...v1.141.2">1.141.2</a> (2025-08-05)</h4>
-<h5 id="bug-fixes">Bug Fixes</h5>
+<h5 id="bug-fixes_1">Bug Fixes</h5>
 <ul>
 <li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.61.0 (<a href="https://github.com/googleapis/java-pubsub/commit/42eb5992557457a5ae4512334267113266c220ac">42eb599</a>)</li>
 <li>Use a separate cached thread pool for handling ack and modack response callback for EOD-enabled subscriptions (<a href="https://github.com/googleapis/java-pubsub/issues/2505">#2505</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/224c269e3bd0ae4cfc4b24ac85495911b8e2b90c">224c269</a>)</li>
 </ul>
-<h5 id="dependencies">Dependencies</h5>
+<h5 id="dependencies_1">Dependencies</h5>
 <ul>
 <li>Update dependency com.google.cloud:google-cloud-bigquery to v2.54.0 (<a href="https://github.com/googleapis/java-pubsub/issues/2506">#2506</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/6bf8e62b1144568292e832dc8031a70a2c5b9ad7">6bf8e62</a>)</li>
 <li>Update dependency com.google.cloud:google-cloud-core to v2.59.0 (<a href="https://github.com/googleapis/java-pubsub/issues/2507">#2507</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/070cf07b1d529c34d4f633b37ce1d35d14768325">070cf07</a>)</li>
@@ -1769,7 +1814,7 @@
 </ul>
 <hr />
 <h2 id="2025-08-04">2025-08-04</h2>
-<h3 id="libraries_1">Libraries</h3>
+<h3 id="libraries_2">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="go">Go</h3>
 <h3 id="changes-for-pubsubapiv1">Changes for <a href="https://github.com/googleapis/google-cloud-go/tree/main/pubsub/apiv1">pubsub/apiv1</a></h3>
@@ -1778,7 +1823,7 @@
 <ul>
 <li><strong>pubsub/v2:</strong> Add new v2 library (<a href="https://github.com/googleapis/google-cloud-go/issues/12218">#12218</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/c798f62f908140686b8e2a365cccf9608fb5ab95">c798f62</a>)</li>
 </ul>
-<h5 id="bug-fixes_1">Bug Fixes</h5>
+<h5 id="bug-fixes_2">Bug Fixes</h5>
 <ul>
 <li><strong>pubsub:</strong> Update google.golang.org/api to 0.229.0 (<a href="https://github.com/googleapis/google-cloud-go/commit/3319672f3dba84a7150772ccb5433e02dab7e201">3319672</a>)</li>
 </ul>
@@ -1786,15 +1831,15 @@
 <ul>
 <li><strong>pubsub:</strong> Add docs comment to MaxOutstandingBytes (<a href="https://github.com/googleapis/google-cloud-go/issues/12601">#12601</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/76ddb3498f2c986b156abaeaf7efeab1c9490725">76ddb34</a>)</li>
 </ul>
-<h3 id="java_1">Java</h3>
-<h3 id="changes-for-google-cloud-pubsub_1">Changes for <a href="https://github.com/googleapis/java-pubsub">google-cloud-pubsub</a></h3>
+<h3 id="java_2">Java</h3>
+<h3 id="changes-for-google-cloud-pubsub_2">Changes for <a href="https://github.com/googleapis/java-pubsub">google-cloud-pubsub</a></h3>
 <h4 id="11411-2025-07-28"><a href="https://github.com/googleapis/java-pubsub/compare/v1.141.0...v1.141.1">1.141.1</a> (2025-07-28)</h4>
-<h5 id="bug-fixes_2">Bug Fixes</h5>
+<h5 id="bug-fixes_3">Bug Fixes</h5>
 <ul>
 <li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.60.2 (<a href="https://github.com/googleapis/java-pubsub/commit/7afae21e5e3df16742646363ca199ec14c42bc21">7afae21</a>)</li>
 <li>Remove element_count_limit and request_byte_limit from pubsub_gapic.yaml (<a href="https://github.com/googleapis/java-pubsub/commit/7afae21e5e3df16742646363ca199ec14c42bc21">7afae21</a>)</li>
 </ul>
-<h5 id="dependencies_1">Dependencies</h5>
+<h5 id="dependencies_2">Dependencies</h5>
 <ul>
 <li>Update dependency com.google.cloud:google-cloud-bigquery to v2.53.0 (<a href="https://github.com/googleapis/java-pubsub/issues/2489">#2489</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/5a454b9c36419dcfaf79edb1ec1d066b20836f87">5a454b9</a>)</li>
 <li>Update dependency com.google.cloud:google-cloud-core to v2.58.2 (<a href="https://github.com/googleapis/java-pubsub/issues/2493">#2493</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/9a1c17e50e5fc9a807532d289a7f6e8b5d412f59">9a1c17e</a>)</li>
@@ -1803,22 +1848,22 @@
 <li>Update dependency org.xerial.snappy:snappy-java to v1.1.10.8 (<a href="https://github.com/googleapis/java-pubsub/issues/2492">#2492</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/a55e214ffad8371eb82a1d49b8b1eadcacf15392">a55e214</a>)</li>
 </ul>
 <h3 id="python">Python</h3>
-<h3 id="changes-for-google-cloud-pubsub_2">Changes for <a href="https://github.com/googleapis/python-pubsub">google-cloud-pubsub</a></h3>
+<h3 id="changes-for-google-cloud-pubsub_3">Changes for <a href="https://github.com/googleapis/python-pubsub">google-cloud-pubsub</a></h3>
 <h4 id="2311-2025-07-28"><a href="https://github.com/googleapis/python-pubsub/compare/v2.31.0...v2.31.1">2.31.1</a> (2025-07-28)</h4>
-<h5 id="bug-fixes_3">Bug Fixes</h5>
+<h5 id="bug-fixes_4">Bug Fixes</h5>
 <ul>
 <li>Change Log Severities for Terminated Streams (<a href="https://github.com/googleapis/python-pubsub/issues/1433">#1433</a>) (<a href="https://github.com/googleapis/python-pubsub/commit/3a3aa79040d656a3391a153386ec662d002f9368">3a3aa79</a>)</li>
 <li>Propagate Otel Context to Subscriber Callback if Provided (<a href="https://github.com/googleapis/python-pubsub/issues/1429">#1429</a>) (<a href="https://github.com/googleapis/python-pubsub/commit/b0f6f49f65752e88523f9c4209366d2a18140416">b0f6f49</a>)</li>
 </ul>
 <hr />
 <h2 id="2025-07-31">2025-07-31</h2>
-<h3 id="libraries_2">Libraries</h3>
+<h3 id="libraries_3">Libraries</h3>
 <p>General availability: The Ruby Pub/Sub client library has a new major version. For more information on how to migrate from v2 to v3, see the <a href="https://github.com/googleapis/google-cloud-ruby/blob/main/google-cloud-pubsub/MIGRATION_GUIDE.md">Migration guide</a>.</p>
 <h3 id="deprecated">Deprecated</h3>
 <p><strong>Deprecated:</strong> The v2 Pub/Sub Ruby client library, <a href="https://rubygems.org/gems/google-cloud-pubsub/versions/2.23.0">google-cloud-pubsub/v2.x</a>, is now deprecated. Effective July 31st, 2026, this version will no longer receive security or bug fixes. To receive new features, <a href="https://github.com/googleapis/google-cloud-ruby/blob/main/google-cloud-pubsub/MIGRATION_GUIDE.md">migrate</a> to the newest version, <a href="https://rubygems.org/gems/google-cloud-pubsub/versions/3.0.0">google-cloud-pubsub/v3.x</a>.</p>
 <hr />
 <h2 id="2025-07-21">2025-07-21</h2>
-<h3 id="libraries_3">Libraries</h3>
+<h3 id="libraries_4">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="go_1">Go</h3>
 <h3 id="changes-for-pubsubapiv1_1">Changes for <a href="https://github.com/googleapis/google-cloud-go/tree/main/pubsub/apiv1">pubsub/apiv1</a></h3>
@@ -1838,19 +1883,19 @@
 <li><strong>pubsub/v2:</strong> Standardize spelling of "acknowledgment" in Pub/Sub protos (<a href="https://github.com/googleapis/google-cloud-go/commit/d8ae6874a54b48fce49968664f14db63c055c6e2">d8ae687</a>)</li>
 <li><strong>pubsub/v2:</strong> Update v2 package docs with migration guide (<a href="https://github.com/googleapis/google-cloud-go/issues/12564">#12564</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/5ef606838a84f1c56225fc4e33f4ee394eb34725">5ef6068</a>)</li>
 </ul>
-<h3 id="java_2">Java</h3>
-<h3 id="changes-for-google-cloud-pubsub_3">Changes for <a href="https://github.com/googleapis/java-pubsub">google-cloud-pubsub</a></h3>
+<h3 id="java_3">Java</h3>
+<h3 id="changes-for-google-cloud-pubsub_4">Changes for <a href="https://github.com/googleapis/java-pubsub">google-cloud-pubsub</a></h3>
 <h4 id="11410-2025-07-11"><a href="https://github.com/googleapis/java-pubsub/compare/v1.140.2...v1.141.0">1.141.0</a> (2025-07-11)</h4>
 <h5 id="features_3">Features</h5>
 <ul>
 <li>Add MessageTransformationFailureReason to IngestionFailureEvent (<a href="https://github.com/googleapis/java-pubsub/commit/8271399cc6348f69ba034b676cce2aa7592122a4">8271399</a>)</li>
 <li>Next release from main branch is 1.141.0 (<a href="https://github.com/googleapis/java-pubsub/issues/2481">#2481</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/bd9f3850efa77ce759b4f281aecd9645666cb0f7">bd9f385</a>)</li>
 </ul>
-<h5 id="bug-fixes_4">Bug Fixes</h5>
+<h5 id="bug-fixes_5">Bug Fixes</h5>
 <ul>
 <li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.60.1 (<a href="https://github.com/googleapis/java-pubsub/commit/c9ef2cda2c6ad20d5e57fe3ccf69f845f7ef36b7">c9ef2cd</a>)</li>
 </ul>
-<h5 id="dependencies_2">Dependencies</h5>
+<h5 id="dependencies_3">Dependencies</h5>
 <ul>
 <li>Update dependency com.google.cloud:google-cloud-bigquery to v2.52.0 (<a href="https://github.com/googleapis/java-pubsub/issues/2467">#2467</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/fe08a6f1f6ee18e97c752f82786016999f6ab12c">fe08a6f</a>)</li>
 <li>Update dependency com.google.cloud:google-cloud-core to v2.58.1 (<a href="https://github.com/googleapis/java-pubsub/issues/2476">#2476</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/96a23544fce609c7b19a00638a767926c304d3f8">96a2354</a>)</li>
@@ -1861,33 +1906,33 @@
 </ul>
 <hr />
 <h2 id="2025-07-15">2025-07-15</h2>
-<h3 id="libraries_4">Libraries</h3>
+<h3 id="libraries_5">Libraries</h3>
 <p>General availability: The Go Pub/Sub client library has a new major version. For more information on how to migrate from v1 to v2, see the <a href="https://github.com/googleapis/google-cloud-go/blob/main/pubsub/MIGRATING.md">Migration guide</a>.</p>
 <h3 id="deprecated_1">Deprecated</h3>
 <p><strong>Deprecated:</strong> The v1 Pub/Sub Go client library, <a href="http://cloud.google.com/go/pubsub">cloud.google.com/go/pubsub</a>, is now deprecated. Effective July 31st, 2026, this library will no longer receive security or bug fixes. To receive new features, <a href="https://github.com/googleapis/google-cloud-go/blob/main/pubsub/MIGRATING.md">migrate</a> to the newest version, <a href="http://cloud.google.com/go/pubsub/v2">cloud.google.com/go/pubsub/v2</a>.</p>
 <hr />
 <h2 id="2025-07-14">2025-07-14</h2>
-<h3 id="libraries_5">Libraries</h3>
+<h3 id="libraries_6">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="python_1">Python</h3>
-<h3 id="changes-for-google-cloud-pubsub_4">Changes for <a href="https://github.com/googleapis/python-pubsub">google-cloud-pubsub</a></h3>
+<h3 id="changes-for-google-cloud-pubsub_5">Changes for <a href="https://github.com/googleapis/python-pubsub">google-cloud-pubsub</a></h3>
 <h4 id="2310-2025-06-26"><a href="https://github.com/googleapis/python-pubsub/compare/v2.30.0...v2.31.0">2.31.0</a> (2025-06-26)</h4>
 <h5 id="features_4">Features</h5>
 <ul>
 <li>Add MessageTransformationFailureReason to IngestionFailureEvent (<a href="https://github.com/googleapis/python-pubsub/issues/1427">#1427</a>) (<a href="https://github.com/googleapis/python-pubsub/commit/8ab13e1b71c151f0146548e7224dd38c9d719a88">8ab13e1</a>)</li>
 </ul>
-<h5 id="bug-fixes_5">Bug Fixes</h5>
+<h5 id="bug-fixes_6">Bug Fixes</h5>
 <ul>
 <li>Surface Fatal Stream Errors to Future; Adjust Retryable Error Codes (<a href="https://github.com/googleapis/python-pubsub/issues/1422">#1422</a>) (<a href="https://github.com/googleapis/python-pubsub/commit/e081beb29056035304d365ec9c50fa7ffbac6886">e081beb</a>)</li>
 </ul>
 <hr />
 <h2 id="2025-06-30">2025-06-30</h2>
-<h3 id="libraries_6">Libraries</h3>
+<h3 id="libraries_7">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
-<h3 id="java_3">Java</h3>
-<h3 id="changes-for-google-cloud-pubsub_5">Changes for <a href="https://github.com/googleapis/java-pubsub">google-cloud-pubsub</a></h3>
+<h3 id="java_4">Java</h3>
+<h3 id="changes-for-google-cloud-pubsub_6">Changes for <a href="https://github.com/googleapis/java-pubsub">google-cloud-pubsub</a></h3>
 <h4 id="11402-2025-06-25"><a href="https://github.com/googleapis/java-pubsub/compare/v1.140.1...v1.140.2">1.140.2</a> (2025-06-25)</h4>
-<h5 id="dependencies_3">Dependencies</h5>
+<h5 id="dependencies_4">Dependencies</h5>
 <ul>
 <li>Update dependency com.google.cloud:google-cloud-bigquery to v2.51.0 (<a href="https://github.com/googleapis/java-pubsub/issues/2457">#2457</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/d74215a6f1e641ba75997e2e43bef348fb9c4a3c">d74215a</a>)</li>
 <li>Update dependency com.google.cloud:google-cloud-core to v2.58.0 (<a href="https://github.com/googleapis/java-pubsub/issues/2443">#2443</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/d4599d93b780b6ef20ad44582aeb8c1cd35f99d4">d4599d9</a>)</li>
@@ -1901,7 +1946,7 @@
 </ul>
 <hr />
 <h2 id="2025-06-16">2025-06-16</h2>
-<h3 id="libraries_7">Libraries</h3>
+<h3 id="libraries_8">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="nodejs_1">Node.js</h3>
 <h3 id="changes-for-google-cloudpubsub_1">Changes for <a href="https://github.com/googleapis/nodejs-pubsub">@google-cloud/pubsub</a></h3>
@@ -1911,7 +1956,7 @@
 <li>Add SchemaViolationReason to IngestionFailureEvent (<a href="https://github.com/googleapis/nodejs-pubsub/issues/2045">#2045</a>) (<a href="https://github.com/googleapis/nodejs-pubsub/commit/3348e3e6195405608e380e5291e6107bcba855cb">3348e3e</a>)</li>
 <li>Use specific W3CTraceContextPropagator for OTel (<a href="https://github.com/googleapis/nodejs-pubsub/issues/2036">#2036</a>) (<a href="https://github.com/googleapis/nodejs-pubsub/commit/c9a9656b8ae4b6e26c0a90c6ea53f5387e1bb846">c9a9656</a>)</li>
 </ul>
-<h5 id="bug-fixes_6">Bug Fixes</h5>
+<h5 id="bug-fixes_7">Bug Fixes</h5>
 <ul>
 <li><strong>deps:</strong> Update dependency @opentelemetry/semantic-conventions to ~1.33.0 (<a href="https://github.com/googleapis/nodejs-pubsub/issues/2038">#2038</a>) (<a href="https://github.com/googleapis/nodejs-pubsub/commit/4eb46c56a941cfb4616785269cc97d9eeca7f174">4eb46c5</a>)</li>
 <li><strong>deps:</strong> Update dependency @opentelemetry/semantic-conventions to ~1.34.0 (<a href="https://github.com/googleapis/nodejs-pubsub/issues/2048">#2048</a>) (<a href="https://github.com/googleapis/nodejs-pubsub/commit/1072c2ddbe2445bac92328e58fbf76e45b464e50">1072c2d</a>)</li>
@@ -1919,7 +1964,7 @@
 <li>Set messaging.operation in createAttributes (<a href="https://github.com/googleapis/nodejs-pubsub/issues/2030">#2030</a>) (<a href="https://github.com/googleapis/nodejs-pubsub/commit/b8d513a3901ae6c160c3f797ed0a41fc0d697fac">b8d513a</a>)</li>
 </ul>
 <h3 id="python_2">Python</h3>
-<h3 id="changes-for-google-cloud-pubsub_6">Changes for <a href="https://github.com/googleapis/python-pubsub">google-cloud-pubsub</a></h3>
+<h3 id="changes-for-google-cloud-pubsub_7">Changes for <a href="https://github.com/googleapis/python-pubsub">google-cloud-pubsub</a></h3>
 <h4 id="2300-2025-06-07"><a href="https://github.com/googleapis/python-pubsub/compare/v2.29.1...v2.30.0">2.30.0</a> (2025-06-07)</h4>
 <h5 id="features_6">Features</h5>
 <ul>
@@ -1927,18 +1972,18 @@
 </ul>
 <hr />
 <h2 id="2025-06-09">2025-06-09</h2>
-<h3 id="libraries_8">Libraries</h3>
+<h3 id="libraries_9">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="go_2">Go</h3>
 <h3 id="changes-for-pubsubapiv1_2">Changes for <a href="https://github.com/googleapis/google-cloud-go/tree/main/pubsub/apiv1">pubsub/apiv1</a></h3>
-<h3 id="java_4">Java</h3>
-<h3 id="changes-for-google-cloud-pubsub_7">Changes for <a href="https://github.com/googleapis/java-pubsub">google-cloud-pubsub</a></h3>
+<h3 id="java_5">Java</h3>
+<h3 id="changes-for-google-cloud-pubsub_8">Changes for <a href="https://github.com/googleapis/java-pubsub">google-cloud-pubsub</a></h3>
 <h4 id="11401-2025-06-05"><a href="https://github.com/googleapis/java-pubsub/compare/v1.140.0...v1.140.1">1.140.1</a> (2025-06-05)</h4>
-<h5 id="bug-fixes_7">Bug Fixes</h5>
+<h5 id="bug-fixes_8">Bug Fixes</h5>
 <ul>
 <li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.59.0 (<a href="https://github.com/googleapis/java-pubsub/commit/0eece5012fbaf887a5c062beba433dbb30edbf43">0eece50</a>)</li>
 </ul>
-<h5 id="dependencies_4">Dependencies</h5>
+<h5 id="dependencies_5">Dependencies</h5>
 <ul>
 <li>Update dependency com.google.cloud:sdk-platform-java-config to v3.49.0 (<a href="https://github.com/googleapis/java-pubsub/issues/2448">#2448</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/d89a14d6569fc914d877cc24d66c42684a812eba">d89a14d</a>)</li>
 </ul>
@@ -1947,7 +1992,7 @@
 <ul>
 <li>Add SchemaViolationReason to IngestionFailureEvent (<a href="https://github.com/googleapis/java-pubsub/commit/21cc3764aaa6fc05eb4a5078a72dae30694fba91">21cc376</a>)</li>
 </ul>
-<h5 id="dependencies_5">Dependencies</h5>
+<h5 id="dependencies_6">Dependencies</h5>
 <ul>
 <li>Update dependency com.google.cloud:google-cloud-bigquery to v2.50.1 (<a href="https://github.com/googleapis/java-pubsub/issues/2435">#2435</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/b37c5573e1d0d7eada4ce4ec6a052521ea11cff1">b37c557</a>)</li>
 <li>Update dependency com.google.cloud:google-cloud-storage to v2.52.3 (<a href="https://github.com/googleapis/java-pubsub/issues/2436">#2436</a>) (<a href="https://github.com/googleapis/java-pubsub/commit/4f309d151d4bd584a33a0bb8882d0614a1b9d533">4f309d1</a>)</li>
@@ -1962,12 +2007,12 @@
 </ul>
 <hr />
 <h2 id="2025-06-02">2025-06-02</h2>
-<h3 id="libraries_9">Libraries</h3>
+<h3 id="libraries_10">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="python_3">Python</h3>
-<h3 id="changes-for-google-cloud-pubsub_8">Changes for <a href="https://github.com/googleapis/python-pubsub">google-cloud-pubsub</a></h3>
+<h3 id="changes-for-google-cloud-pubsub_9">Changes for <a href="https://github.com/googleapis/python-pubsub">google-cloud-pubsub</a></h3>
 <h4 id="2291-2025-05-23"><a href="https://github.com/googleapis/python-pubsub/compare/v2.29.0...v2.29.1">2.29.1</a> (2025-05-23)</h4>
-<h5 id="bug-fixes_8">Bug Fixes</h5>
+<h5 id="bug-fixes_9">Bug Fixes</h5>
 <ul>
 <li>Remove setup.cfg configuration for creating universal wheels (<a href="https://github.com/googleapis/python-pubsub/issues/1376">#1376</a>) (<a href="https://github.com/googleapis/python-pubsub/commit/60639c4928105ae8a72c8e37b1f48f75cc2ffcc3">60639c4</a>)</li>
 </ul>
@@ -1990,6 +2035,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#pubsub">Pub/Sub</a></li>
+          <li class="nav-item">
+            <a href="#2025-08-25" class="nav-link">2025-08-25</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-08-11" class="nav-link">2025-08-11</a>
           </li>

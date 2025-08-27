@@ -8,6 +8,12 @@
 
 [Gemini 2.5 Flash Image](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash#image-generation) (`gemini-2.5-flash-image-preview`) is available in [Preview](https://cloud.google.com/products#product-launch-stages). Gemini 2.5 Flash Image Preview supports additional image generation and editing features such as [image generation from multiple reference images](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-generation#image-generation) and [improved multi-turn image editing](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-editing#multi-turn-editing).
 
+### Feature
+
+**Vertex AI model tuning and Gen AI evaluation service**
+
+Vertex AI model tuning now supports integration with the Gen AI evaluation service in Preview. You can automatically run evaluations on your tuned models and intermediate checkpoints. For more information, see [Create a tuning job](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini-use-supervised-tuning#create_a_text_model_supervised_tuning_job).
+
 ---
 ## 2025-08-21
 

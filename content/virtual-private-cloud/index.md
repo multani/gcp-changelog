@@ -1,5 +1,20 @@
 # Virtual Private Cloud
 
+## 2025-08-26
+
+### Feature
+
+IPv6-only subnets and instances are available in **General Availability**. For more information, see the following:
+
+* [Add an IPv6-only subnet](https://cloud.google.com/vpc/docs/create-modify-vpc-networks#add-subnet-ipv6-only)
+* [Create an IPv6-only instance](https://cloud.google.com/compute/docs/instances/create-ipv6-instance#create-vm-ipv6-only)
+* [Configure IPv6-only subnets and instances with DNS64 and NAT64](https://cloud.google.com/vpc/docs/connect-ipv6-to-ipv4)
+
+You can also use an IPv6-only NAT subnet to [publish a service with Private Service Connect](https://cloud.google.com/vpc/docs/configure-private-service-connect-producer#publish-service).
+
+For information about which services support IPv6-only configurations, see [IPv6 support in Google Cloud](https://cloud.google.com/vpc/docs/ipv6-support).
+
+---
 ## 2025-08-08
 
 ### Feature

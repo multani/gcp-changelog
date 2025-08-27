@@ -1,5 +1,23 @@
 # Cloud Load Balancing
 
+## 2025-08-26
+
+### Feature
+
+The internal and external passthrough Network Load Balancers now support load balancing to unmanaged instance groups comprised of IPv6-only VM instances.
+
+Protocol forwarding also supports IPv6-only target instances.
+
+For more details, see the following pages:
+
+* [Protocol forwarding overview](https://cloud.google.com/load-balancing/docs/protocol-forwarding)
+* [Backend service-based external passthrough Network Load Balancer overview](https://cloud.google.com/load-balancing/docs/network/networklb-backend-service)
+* [Internal passthrough Network Load Balancer overview](https://cloud.google.com/load-balancing/docs/internal)
+* [Set up an internal passthrough Network Load Balancer with IPv6-only subnets and backends](https://cloud.google.com/load-balancing/docs/internal/setting-up-internal#configure-ipv6-only)
+
+This feature is available in **General Availability**.
+
+---
 ## 2025-08-05
 
 ### Feature

@@ -63,6 +63,7 @@
 - [Cloud Location Finder](cloud-location-finder/index.md)
 - [Cloud Logging](cloud-logging/index.md)
 - [Cloud Monitoring](cloud-monitoring/index.md)
+- [Cloud NAT](cloud-nat/index.md)
 - [Cloud NGFW](cloud-ngfw/index.md)
 - [Cloud Run](cloud-run/index.md)
 - [Cloud Run functions](cloud-run-functions/index.md)

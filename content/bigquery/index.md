@@ -1,5 +1,12 @@
 # BigQuery
 
+## 2025-08-26
+
+### Feature
+
+You can [deduplicate table data](https://cloud.google.com/bigquery/docs/data-prep-get-suggestions#deduplicate) with Gemini assistance in your [BigQuery data preparations](https://cloud.google.com/bigquery/docs/data-prep-introduction). Deduplication is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-08-25
 
 ### Feature

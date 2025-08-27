@@ -1,5 +1,14 @@
 # Apigee Integrated Portal
 
+## 2025-08-25
+
+### Announcement
+
+On August 25, 2025 we released a new version of the Apigee integrated portal.
+
+This release includes general improvements to performance and availability.
+
+---
 ## 2025-07-24
 
 ### Announcement

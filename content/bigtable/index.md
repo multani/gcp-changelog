@@ -1,5 +1,15 @@
 # Bigtable
 
+## 2025-08-28
+
+### Announcement
+
+Bigtable tools are available in [Agent Development Kit (ADK)](https://google.github.io/adk-docs/). With these tools, you can build AI agents that can interact with Bigtable data and metadata in the following ways:
+
+* Obtain metadata about Bigtable tables and instances.
+* Execute LLM-powered SQL queries.
+
+---
 ## 2025-08-25
 
 ### Libraries

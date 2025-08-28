@@ -1,5 +1,26 @@
 # Google SecOps Marketplace
 
+## 2025-08-27
+
+### Feature
+
+**Google Workspace**: Version 20.0
+
+* The following new actions have been added:
+
+  + **Block Extension**
+  + **Delete Extension**
+  + **Get Extension Details**
+  + **Get Host Browser Details**
+  + **Search User Activity Events**
+
+### Changed
+
+**Google Threat Intelligence**: Version 3.0
+
+* **Integration:** Updated authentication flow.
+
+---
 ## 2025-08-20
 
 ### Changed

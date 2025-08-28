@@ -485,6 +485,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Audit manager <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../audit-manager/" class="dropdown-item">Audit Manager</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Backup and dr <b class="caret"></b>
                         </a>
 
@@ -1776,8 +1788,14 @@
 
 
 <h1 id="ai-applications">AI Applications</h1>
-<h2 id="2025-08-06">2025-08-06</h2>
+<h2 id="2025-08-13">2025-08-13</h2>
 <h3 id="feature">Feature</h3>
+<p><strong>Vertex AI Search: Custom ranking of search results (GA)</strong></p>
+<p>You can modify the ranking behavior of your search app using custom ranking. Custom ranking lets you provide a <a href="https://cloud.google.com/generative-ai-app-builder/docs/reference/rest/v1/projects.locations.collections.dataStores.servingConfigs/search#body.request_body.FIELDS.ranking_expression">mathematical expression</a> that relies on a set of model-computed signals (such as semantic relevance score and keyword similarity score) and document-based signals (such as a custom field like distance or document age). The resulting ranking of the search results is more considered and likely matches a user's needs better than a purely embedding-based ranking.</p>
+<p>For more information, see <a href="https://cloud.google.com/generative-ai-app-builder/docs/custom-ranking">Customize search results ranking</a>.</p>
+<hr />
+<h2 id="2025-08-06">2025-08-06</h2>
+<h3 id="feature_1">Feature</h3>
 <p><strong>Vertex AI Search: Advanced autocomplete (GA)</strong></p>
 <p>Use advanced autocomplete to enable autocomplete on blended search apps.</p>
 <p>For more information, see <a href="https://cloud.google.com/generative-ai-app-builder/docs/configure-advanced-autocomplete">Configure advanced autocomplete</a>. This feature is in generally available (GA).</p>
@@ -1802,13 +1820,13 @@
 <p>For more information, see <a href="https://cloud.google.com/generative-ai-app-builder/quotas">Quotas</a>.</p>
 <hr />
 <h2 id="2025-07-02">2025-07-02</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p><strong>Vertex AI Search: Search for an exact match (GA)</strong></p>
 <p>To search for an exact match, you can enclose your search query in double quotes (<code>"</code>). For example, when you search for <code>"Mary had a little lamb"</code>, Vertex AI Search looks for the phrase exactly as it is. It doesn't return search results that contain <code>Mary had lamb</code>, which has missing words; or <code>a little lamb had Mary</code>, which has the words in a different order.</p>
 <p>This feature is Generally available when you use the <a href="https://cloud.google.com/generative-ai-app-builder/docs/reference/rest/v1/projects.locations.collections.engines.servingConfigs/search"><code>engines.servingConfigs.search</code></a> method to get search results for <a href="https://cloud.google.com/generative-ai-app-builder/docs/preview-search-results">custom data</a>, <a href="https://cloud.google.com/generative-ai-app-builder/docs/get-media-search-results">media data</a>, and <a href="https://cloud.google.com/generative-ai-app-builder/docs/search-hc-data">healthcare data</a>.</p>
 <hr />
 <h2 id="2025-06-26">2025-06-26</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p><strong>Vertex AI Search: gemini-2.5-flash/answer_gen/v1 model</strong></p>
 <p>You can generate answers with the Gemini 2.5 Flash (<code>gemini-2.5-flash</code>) model. This model is tuned to address context-based question and answering tasks.</p>
 <p>For more information, see <a href="https://cloud.google.com/generative-ai-app-builder/docs/answer-generation-models">Answer generation model versions and lifecycle</a>.</p>
@@ -1819,13 +1837,13 @@
 <p>The vertical-agnostic apps, formerly known as <em>generic</em> search and recommendations, are renamed to <em>custom</em> search and recommendations. You'll see this new name in the product console and the documentation set. The functionality and the endpoints remain the same.</p>
 <hr />
 <h2 id="2025-06-06">2025-06-06</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p><strong>Vertex AI Search: Skip layout parsing for types of HTML content (GA)</strong></p>
 <p>The <a href="https://cloud.google.com/generative-ai-app-builder/docs/parse-chunk-documents#layout-parsing">layout parser</a> can skip parsing specific types of HTML content. By excluding less relevant content such as boilerplate, you can improve data quality. The layout parser can exclude based on HTML tags and IDs and on CSS classes.</p>
 <p>This feature is generally available (GA) and accessible only through the API. For more information, see <a href="https://cloud.google.com/generative-ai-app-builder/docs/parse-chunk-documents#exclude-html-content">Exclude HTML content</a>.</p>
 <hr />
 <h2 id="2025-05-29">2025-05-29</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p><strong>Vertex AI Search: Adjust autocomplete settings to reduce risk of PII leaks (Public preview)</strong></p>
 <p>If you use either the search history or user events model for autocomplete suggestions and you have concerns about your users entering their personally identifiable information (PII) as search queries, then see <a href="https://cloud.google.com/generative-ai-app-builder/docs/configure-autocomplete#update-thresholds">Reduce the risk of returning suggestions that contain PII</a>.</p>
 <p>This feature is in Public preview.</p>
@@ -1840,6 +1858,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#ai-applications">AI Applications</a></li>
+          <li class="nav-item">
+            <a href="#2025-08-13" class="nav-link">2025-08-13</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-08-06" class="nav-link">2025-08-06</a>
           </li>

@@ -1,5 +1,16 @@
 # AI Applications
 
+## 2025-08-13
+
+### Feature
+
+**Vertex AI Search: Custom ranking of search results (GA)**
+
+You can modify the ranking behavior of your search app using custom ranking. Custom ranking lets you provide a [mathematical expression](https://cloud.google.com/generative-ai-app-builder/docs/reference/rest/v1/projects.locations.collections.dataStores.servingConfigs/search#body.request_body.FIELDS.ranking_expression) that relies on a set of model-computed signals (such as semantic relevance score and keyword similarity score) and document-based signals (such as a custom field like distance or document age). The resulting ranking of the search results is more considered and likely matches a user's needs better than a purely embedding-based ranking.
+
+For more information, see [Customize search results ranking](https://cloud.google.com/generative-ai-app-builder/docs/custom-ranking).
+
+---
 ## 2025-08-06
 
 ### Feature

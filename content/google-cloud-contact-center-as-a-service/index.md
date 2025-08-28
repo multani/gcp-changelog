@@ -1,5 +1,111 @@
 # Google Cloud Contact Center as a Service
 
+## 2025-08-27
+
+### Announcement
+
+**Portal version 3.39 pre-release notes**
+
+Here are the pre-release notes for portal version 3.39. When we release version 3.39, we expect the new capabilities to be as shown here.
+
+### Feature
+
+**Destination queue name and session history is available in the agent adapter**
+
+The agent adapter now displays the destination queue during transfers and deflections for IVR calls. The agent adapter also displays transfer history in the **Call details** and **Chat details** tabs.
+
+User experience changes:
+
+* The **Call details** and **Chat details** tabs in the agent adapter have a new **Transfer History** section.
+* The chat pane in the chat adapter has a new **Transfers** button that opens the **Tranfer History** pane.
+
+Adminstrators: There's a new checkbox at **Settings > Operation Management > Transfer history** for turning on transfer history in the agent adapter.
+
+### Feature
+
+**Improved controls over the ordering of key-value pairs in the agent adapter and CRM records**
+
+Google Cloud CCaaS has improved controls over the ordering of the key-value pairs that appear in the agent adapter and in CRM records. Here's how the ordering controls work:
+
+* **Virtual agents**: When you configure session variables, you can use the new `display_order_in_adapter` property to specify the order that the session variables appear in the agent adapter and in CRM records.
+* **Web SDK**: Web SDK custom data is displayed in the agent adapter and CRM records in the order that the key-value pairs appear in the JSON custom data file.
+
+### Feature
+
+**Virtual agents for the SMS channel**
+
+Virtual agents are now available for the SMS channel. This lets you create virtual agents and assign them to SMS queues, offering virtual agent support to end-users in SMS chat sessions.
+
+### Feature
+
+**Search in the email channel**
+
+Agents can now search for emails in the agent adapter by keyword, session ID, or subject.
+
+### Feature
+
+**Cancel scheduled calls with the callback calls API**
+
+You can now use the callback calls API to cancel a single scheduled callback call or a list of calls.
+
+### Fixed
+
+The following issues were addressed in this release:
+
+* Fixed an issue where incoming chats took precedence over the in-progress chat.
+
+  **User experience change**: When a new chat appears in the agent adapter, it no longer takes focus away from the in-progress chat. The in-progress retains focus.
+* Fixed a web SDK issue where sensitive data sent by an end-user was redacted for both the end-user and the agent, instead of just for the agent.
+* Fixed an issue where the contact list in the agent adapter wouldn't load the full list of contacts.
+* Fixed an issue where an agent clicking an email in the agent adapter returned an **Email Not Found** error.
+* Fixed an issue where managers assigned to multiple teams were unable to view agent statistics for every team they were assigned to.
+* Fixed an issue for ServiceNow users where `call_duration` was using the earliest `connected_at` time instead of the latest `connected_at` time, causing call durations to appear longer than they actually were.
+* Fixed an issue in the **Settings > Developer Settings > External Storage** pane where language checkboxes were associated with the **Co-browse Recordings** checkbox instead of the **Session Data Feed** checkbox.
+
+  **Administrators**: In the **Settings > Developer Settings > External Storage** pane, the languages checkboxes have moved from the **Co-browse Recordings** checkbox to the **Session Data Feed** checkbox.
+* Fixed an issue where agent-initiated outbound calls were using the default number for the selected queue instead of the number chosen by the agent.
+* Fixed an issue where the downloaded session chat data report contained an extra quotation mark.
+* Fixed an issue where users received an email telling them to create a password after Single Sign-On (SSO) was turned on.
+* Fixed an issue where SSO configuration settings in the user's instance were deleted after they turned off SSO.
+* Fixed an issue where an administrator couldn't configure agent status restrictions without exposing them to agents.
+* Fixed an issue where custom contact lists could only be replaced, and not removed, after they were assigned to a team.
+* Fixed an issue where the inheritance indicator and **Reset to parent** button was missing from the queue level **Contact List Management** pane.
+* Fixed an issue where the SMS and Web chat availability preferences in the agent adapter were the reverse of how they were configured.
+* Fixed an issue where queue transfer restrictions were not saved after being configured.
+* Fixed an issue that occured when a user attempted to name a new queue. The name field abruptly lost focus after the first character, forcing the user to enter the queue name again.
+* Fixed an issue where creating an instance would time out and fail.
+* Fixed an issue that prevented reports from being downloaded.
+* Fixed an issue where the chat history for blended SMS sessions failed to save.
+* Fixed an issue where the **Transfer failed** message didn't appear. This occurred when an agent failed to pick up a tranferred call before the transferred call expiration time expired.
+* Fixed an issue where IVR call recordings failed to save or were corrupted. This resulted in recordings that were only one second long, were saved in the wrong format, or weren't saved at all.
+* Fixed an issue where completed chat sessions appeared in the chats waiting area of agent desktop.
+* Fixed an issue for CRM users with voicemails that are attached directly to tickets. An incorrect "External Storage must be configured" warning appeared when configuring voicemail options for IVR queues.
+* Fixed an issue where transfer restrictions that were configured and saved for a web queue did not appear correctly the next time the **Transfer Restrictions** pane for that queue was viewed.
+* Fixed an issue where the unread message count in the chat pane was inconsistent when viewing it from multiple browser tabs.
+* Fixed an issue in virtual assistant reporting where the `finish_reason` property was incorrectly assigned to the `undefined` value. Now the `finish_reason` property is assigned to descriptive values that describe the reason for the conclusion of the chat session.
+* Fixed an issue where PDF transcripts of chat sessions contained malformed links.
+* Fixed an issue in historical reports where the fields in the **Failed Reason Description** column were blank.
+* Fixed an issue where CSAT scores were missing from some advanced reporting dashboards.
+* Fixed an issue for HubSpot users that caused long delays in case creation for inbound calls.
+* Fixed an issue where the photo and video files that the agent provided in pre-session Smart Actions didn't appear in the CRM.
+* Fixed an issue where agents in `Unavailable` status couldn't see waiting web chats.
+* Fixed an issue where HTML was not rendering properly in virtual agent messages in the agent adapter
+* Fixed an issue where agents were not switching into `Wrap-up Exceeded` status after a breakthrough call.
+* Fixed an agent deskop issue where administrators were unable to assign announcements to some teams or agents.
+* Fixed an agent desktop issue where agents couldn't copy text to the clipboard from an agent desktop custom panel.
+* Fixed an agent desktop issue where the term "Anonymous User" wasn't being translated into French.
+* Fixed an issue where the `UJET_ID` and `ANI` variables weren't passed correctly for SIP calls.
+* Fixed an issue where the chat adapter froze when agents switched between chats.
+* Fixed an issue on the **Agents** page of the Google Cloud CCaaS portal where administrators couldn't switch between session types.
+* Fixed an issue where a newly added Agent Assist platform displayed as `Invalid` even though it was valid.
+* Fixed an issue for Salesforce users where the call button didn't work when an agent attempted to call a number that was attached to a record for a previous call.
+* Fixed an issue where audio files with accented characters in their file names failed to play back when using a storage proxy.
+* Fixed an agent desktop issue where the `UJET_ID` variable in the custom URL for a custom panel wasn't being passed correctly.
+* Fixed an issue where calls originating from a native campaign generated two CRM tickets for the same interaction.
+* Fixed latency issues with web SDK Telnyx calls.
+* Fixed an issue where outbound Bring Your Own Carrier (BYOC) calls used a number other than the one agents selected in the agent adapter.
+
+---
 ## 2025-08-20
 
 ### Announcement

@@ -2,9 +2,68 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Data Fusion</title>
   <subtitle>Changelog for Google Cloud product: Cloud Data Fusion</subtitle>
-  <updated>2025-07-25T00:00:00+00:00</updated>
+  <updated>2025-08-27T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-data-fusion</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-data-fusion/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-data-fusion:2025-08-27:feature:0</id>
+    <published>2025-08-27T00:00:00+00:00</published>
+    <updated>2025-08-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud Data Fusion version 6.11.1 is <a href="https://cloud.google.com/products#product-launch-stages">generally available (GA)</a>. This release includes the following features:</p>
+<ul>
+<li>Added support for HTTP access tokens (Bearer authentication) in Bitbucket Server for <a href="https://cloud.google.com/data-fusion/docs/how-to/source-control-management">source control management</a> (<a href="https://cdap.atlassian.net/browse/CDAP-21049">CDAP-21049</a>).</li>
+<li>A new API is available to retrieve the application count for each namespace (<a href="https://cdap.atlassian.net/browse/CDAP-21161">CDAP-21161</a>).</li>
+</ul>]]></content>
+    <summary>Cloud Data Fusion version 6.11.1 is now generally available. This release adds support for HTTP access tokens in Bitbucket Server for source control management and introduces a new API to retrieve application counts per namespace.</summary>
+    <title>Feature: Cloud Data Fusion 6.11.1</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-data-fusion:2025-08-27:changed:1</id>
+    <published>2025-08-27T00:00:00+00:00</published>
+    <updated>2025-08-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Changes in Cloud Data Fusion 6.11.1:</p>
+<ul>
+<li>The Java runtime environment is upgraded from Java 8 to Java 11 (<a href="https://cdap.atlassian.net/browse/CDAP-21184">CDAP-21184</a>).</li>
+<li>To create ephemeral Dataproc clusters, Cloud Data Fusion uses the Dataproc 2.3 image by default (<a href="https://cdap.atlassian.net/browse/CDAP-21187">CDAP-21187</a>).</li>
+<li>The pipeline JSON size limit for creating new pipelines and importing pipelines as JSON is increased to 5MB (previously 2MB) (<CDAP-21194>).</li>
+<li>On the Pipeline details page, the inbound triggers sidebar features a paginated list of pipelines where you can select the pipelines you want to add to the trigger. Additionally, a refresh button is added to update the existing list of triggers and pipelines (<a href="https://cdap.atlassian.net/browse/CDAP-21195">CDAP-21195</a>).</li>
+</ul>]]></content>
+    <summary>Cloud Data Fusion 6.11.1 is now available. This release includes an upgrade to Java 11, updated Dataproc image defaults for ephemeral clusters, an increased pipeline JSON size limit to 5MB, and enhancements to the pipeline details page for inbound triggers.</summary>
+    <title>Changed: Cloud Data Fusion 6.11.1 Release Notes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-data-fusion:2025-08-27:fixed:2</id>
+    <published>2025-08-27T00:00:00+00:00</published>
+    <updated>2025-08-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed in Cloud Data Fusion 6.11.1:</p>
+<ul>
+<li>To prevent storage issues on static Dataproc clusters, temporary pipeline data is automatically deleted after a successful run (<a href="https://cdap.atlassian.net/browse/CDAP-21076">CDAP-21076</a>).</li>
+<li>Fixed an issue that prevented <a href="https://github.com/data-integrations/wrangler/blob/develop/wrangler-core/src/main/java/io/cdap/wrangler/expression/EL.java">Expression Language (EL)</a> from being used within user-defined directives (<a href="https://cdap.atlassian.net/browse/CDAP-21204">CDAP-21204</a>).</li>
+<li>Fixed an issue where a pipeline would fail when reading an encrypted file from Cloud Storage using Tink (<a href="https://cdap.atlassian.net/browse/PLUGIN-1717">PLUGIN-1717</a>).</li>
+</ul>]]></content>
+    <summary>Temporary pipeline data is now automatically deleted after a successful run to prevent storage issues on static Dataproc clusters. Additionally, Expression Language can now be used within user-defined directives, and an issue with reading encrypted files from Cloud Storage using Tink has been resolved.</summary>
+    <title>Fixed: Temporary pipeline data is automatically deleted after a successful run</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-data-fusion:2025-08-27:deprecated:3</id>
+    <published>2025-08-27T00:00:00+00:00</published>
+    <updated>2025-08-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Dataproc 2.1 is no longer supported in Cloud Data Fusion version 6.11.1 and later.</p>]]></content>
+    <summary>Dataproc 2.1 is no longer supported starting with Cloud Data Fusion version 6.11.1.</summary>
+    <title>Deprecated: Dataproc 2.1 Deprecation</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

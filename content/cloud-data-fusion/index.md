@@ -1,5 +1,36 @@
 # Cloud Data Fusion
 
+## 2025-08-27
+
+### Feature
+
+Cloud Data Fusion version 6.11.1 is [generally available (GA)](https://cloud.google.com/products#product-launch-stages). This release includes the following features:
+
+* Added support for HTTP access tokens (Bearer authentication) in Bitbucket Server for [source control management](https://cloud.google.com/data-fusion/docs/how-to/source-control-management) ([CDAP-21049](https://cdap.atlassian.net/browse/CDAP-21049)).
+* A new API is available to retrieve the application count for each namespace ([CDAP-21161](https://cdap.atlassian.net/browse/CDAP-21161)).
+
+### Changed
+
+Changes in Cloud Data Fusion 6.11.1:
+
+* The Java runtime environment is upgraded from Java 8 to Java 11 ([CDAP-21184](https://cdap.atlassian.net/browse/CDAP-21184)).
+* To create ephemeral Dataproc clusters, Cloud Data Fusion uses the Dataproc 2.3 image by default ([CDAP-21187](https://cdap.atlassian.net/browse/CDAP-21187)).
+* The pipeline JSON size limit for creating new pipelines and importing pipelines as JSON is increased to 5MB (previously 2MB) (<CDAP-21194>).
+* On the Pipeline details page, the inbound triggers sidebar features a paginated list of pipelines where you can select the pipelines you want to add to the trigger. Additionally, a refresh button is added to update the existing list of triggers and pipelines ([CDAP-21195](https://cdap.atlassian.net/browse/CDAP-21195)).
+
+### Fixed
+
+Fixed in Cloud Data Fusion 6.11.1:
+
+* To prevent storage issues on static Dataproc clusters, temporary pipeline data is automatically deleted after a successful run ([CDAP-21076](https://cdap.atlassian.net/browse/CDAP-21076)).
+* Fixed an issue that prevented [Expression Language (EL)](https://github.com/data-integrations/wrangler/blob/develop/wrangler-core/src/main/java/io/cdap/wrangler/expression/EL.java) from being used within user-defined directives ([CDAP-21204](https://cdap.atlassian.net/browse/CDAP-21204)).
+* Fixed an issue where a pipeline would fail when reading an encrypted file from Cloud Storage using Tink ([PLUGIN-1717](https://cdap.atlassian.net/browse/PLUGIN-1717)).
+
+### Deprecated
+
+Dataproc 2.1 is no longer supported in Cloud Data Fusion version 6.11.1 and later.
+
+---
 ## 2025-07-25
 
 ### Feature

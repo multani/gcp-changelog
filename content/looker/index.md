@@ -167,7 +167,7 @@ An issue has been fixed where unfavoriting a dashboard or Look on a board would 
 
 ### Feature
 
-[Connected Sheets](https://cloud.google.com/looker/docs/connected-sheets) can now [connect to a Looker (Google Cloud core) private IP instance by using the Looker instance ID](https://cloud.google.com/looker/docs/looker-core-connect-to-private-ip-lsp-looker-reports#connect-looker-core-reports). **Note:** This item was added on August 14, 2025.
+**Note:** This item was removed on August 27, 2025.
 
 ---
 ## 2025-07-25

@@ -485,6 +485,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Audit manager <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../audit-manager/" class="dropdown-item">Audit Manager</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Backup and dr <b class="caret"></b>
                         </a>
 
@@ -1776,16 +1788,41 @@
 
 
 <h1 id="cloud-data-fusion">Cloud Data Fusion</h1>
-<h2 id="2025-07-25">2025-07-25</h2>
+<h2 id="2025-08-27">2025-08-27</h2>
 <h3 id="feature">Feature</h3>
+<p>Cloud Data Fusion version 6.11.1 is <a href="https://cloud.google.com/products#product-launch-stages">generally available (GA)</a>. This release includes the following features:</p>
+<ul>
+<li>Added support for HTTP access tokens (Bearer authentication) in Bitbucket Server for <a href="https://cloud.google.com/data-fusion/docs/how-to/source-control-management">source control management</a> (<a href="https://cdap.atlassian.net/browse/CDAP-21049">CDAP-21049</a>).</li>
+<li>A new API is available to retrieve the application count for each namespace (<a href="https://cdap.atlassian.net/browse/CDAP-21161">CDAP-21161</a>).</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<p>Changes in Cloud Data Fusion 6.11.1:</p>
+<ul>
+<li>The Java runtime environment is upgraded from Java 8 to Java 11 (<a href="https://cdap.atlassian.net/browse/CDAP-21184">CDAP-21184</a>).</li>
+<li>To create ephemeral Dataproc clusters, Cloud Data Fusion uses the Dataproc 2.3 image by default (<a href="https://cdap.atlassian.net/browse/CDAP-21187">CDAP-21187</a>).</li>
+<li>The pipeline JSON size limit for creating new pipelines and importing pipelines as JSON is increased to 5MB (previously 2MB) (<CDAP-21194>).</li>
+<li>On the Pipeline details page, the inbound triggers sidebar features a paginated list of pipelines where you can select the pipelines you want to add to the trigger. Additionally, a refresh button is added to update the existing list of triggers and pipelines (<a href="https://cdap.atlassian.net/browse/CDAP-21195">CDAP-21195</a>).</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<p>Fixed in Cloud Data Fusion 6.11.1:</p>
+<ul>
+<li>To prevent storage issues on static Dataproc clusters, temporary pipeline data is automatically deleted after a successful run (<a href="https://cdap.atlassian.net/browse/CDAP-21076">CDAP-21076</a>).</li>
+<li>Fixed an issue that prevented <a href="https://github.com/data-integrations/wrangler/blob/develop/wrangler-core/src/main/java/io/cdap/wrangler/expression/EL.java">Expression Language (EL)</a> from being used within user-defined directives (<a href="https://cdap.atlassian.net/browse/CDAP-21204">CDAP-21204</a>).</li>
+<li>Fixed an issue where a pipeline would fail when reading an encrypted file from Cloud Storage using Tink (<a href="https://cdap.atlassian.net/browse/PLUGIN-1717">PLUGIN-1717</a>).</li>
+</ul>
+<h3 id="deprecated">Deprecated</h3>
+<p>Dataproc 2.1 is no longer supported in Cloud Data Fusion version 6.11.1 and later.</p>
+<hr />
+<h2 id="2025-07-25">2025-07-25</h2>
+<h3 id="feature_1">Feature</h3>
 <p>You can now attach tags to Cloud Data Fusion instances during instance creation. This ensures immediate metadata for better organization, cost tracking, and policy automation. For more information, see <a href="https://cloud.google.com/data-fusion/docs/how-to/control-access-with-tags#add-tags">Attach tags during instance creation</a>.</p>
 <hr />
 <h2 id="2025-07-23">2025-07-23</h2>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_1">Fixed</h3>
 <p>The Cloud Data Fusion version 6.10.1.5 patch revision is generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>). 6.10.1.5 includes reliability fixes.</p>
 <hr />
 <h2 id="2025-07-20">2025-07-20</h2>
-<h3 id="changed">Changed</h3>
+<h3 id="changed_1">Changed</h3>
 <p>The SAP ODP plugin version 0.12 is available in Cloud Data Fusion version 6.10 and later. This release includes the following changes:</p>
 <ul>
 <li>Support for old SAP ODP RFCs is removed to align with SAP Note 3255746.</li>
@@ -1795,7 +1832,7 @@
 <p><strong>Note:</strong> This release is backward compatible.</p>
 <hr />
 <h2 id="2025-07-16">2025-07-16</h2>
-<h3 id="changed_1">Changed</h3>
+<h3 id="changed_2">Changed</h3>
 <p>The Oracle plugin version 1.12.3 is available in Cloud Data Fusion (via Hub) versions 6.11.0 and later, and 1.11.8 is available in Cloud Data Fusion (via Hub) version 6.10.</p>
 <p>This release provides backward compatibility for recent schema changes, including the following:</p>
 <ul>
@@ -1805,14 +1842,14 @@
 <p>To address backward compatibility for these changes, two new hidden fields are introduced in Oracle batch source configurations: <code>treatPrecisionlessNumAsDeci</code> and <code>treatAsOldTimestamp</code>. Both flags default to <code>false</code>. To enable these flags, edit the respective values in your exported connection JSON (if using connections) or pipeline JSON (if not using connections) before re-importing or re-deploying (<a href="https://cdap.atlassian.net/browse/PLUGIN-1893">PLUGIN-1893</a>).</p>
 <hr />
 <h2 id="2025-06-12">2025-06-12</h2>
-<h3 id="changed_2">Changed</h3>
+<h3 id="changed_3">Changed</h3>
 <p>The Elasticsearch plugin version 1.11.0 is available in Cloud Data Fusion version 6.11.0. This release includes the following change:</p>
 <ul>
 <li>Upgraded Hadoop version for Elasticsearch plugin compatibility (<a href="https://cdap.atlassian.net/browse/PLUGIN-1881">PLUGIN-1881</a>).</li>
 </ul>
 <hr />
 <h2 id="2025-06-11">2025-06-11</h2>
-<h3 id="changed_3">Changed</h3>
+<h3 id="changed_4">Changed</h3>
 <p>The HTTP plugin version 1.4.4 is available in Cloud Data Fusion version 6.10.1. This release includes the following changes:</p>
 <ul>
 <li>Implemented the Client Credentials Grant flow for HTTP OAuth2, enabling authorized clients to securely access data using the <code>client_credentials</code> grant type. Client credentials can be passed through Basic Authentication header, in the request body, or as query parameters (<a href="https://cdap.atlassian.net/browse/PLUGIN-1872">PLUGIN-1872</a>).</li>
@@ -1820,11 +1857,11 @@
 </ul>
 <hr />
 <h2 id="2025-06-09">2025-06-09</h2>
-<h3 id="changed_4">Changed</h3>
+<h3 id="changed_5">Changed</h3>
 <p>Cloud Data Fusion is available in the <code>northamerica-south1</code> (Mexico) region. For more information, see <a href="https://cloud.google.com/data-fusion/pricing">Pricing</a>.</p>
 <hr />
 <h2 id="2025-06-02">2025-06-02</h2>
-<h3 id="changed_5">Changed</h3>
+<h3 id="changed_6">Changed</h3>
 <p>The <a href="https://cloud.google.com/data-fusion/docs/how-to/configure-salesforce-batch-source">Salesforce plugin</a> version 1.6.10 is available in Cloud Data Fusion versions 6.10.1 and 6.11.0. This release includes the following changes:</p>
 <ul>
 <li>Upgraded Salesforce API version from 53.0 to 62.0 (<a href="https://cdap.atlassian.net/browse/PLUGIN-1891">PLUGIN-1891</a>).</li>
@@ -1841,6 +1878,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-data-fusion">Cloud Data Fusion</a></li>
+          <li class="nav-item">
+            <a href="#2025-08-27" class="nav-link">2025-08-27</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-07-25" class="nav-link">2025-07-25</a>
           </li>

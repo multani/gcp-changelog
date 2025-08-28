@@ -38,6 +38,7 @@
 - [Application Integration](application-integration/index.md)
 - [Artifact Registry](artifact-registry/index.md)
 - [Assured Workloads](assured-workloads/index.md)
+- [Audit Manager](audit-manager/index.md)
 - [Backup and DR](backup-and-dr/index.md)
 - [Backup for GKE](backup-for-gke/index.md)
 - [Batch](batch/index.md)

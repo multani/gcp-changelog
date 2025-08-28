@@ -1,5 +1,20 @@
 # Gemini Code Assist
 
+## 2025-08-27
+
+### Fixed
+
+
+
+### Change in telemetry setting behavior for VS Code Gemini Code Assist
+
+Gemini Code Assist telemetry log settings now override the VS Code telemetry
+setting. For example, if the Gemini Code Assist telemetry log setting is turned
+on but the VS Code telemetry setting is turned off, then telemetry data is still
+collected. For more information, see
+[Configure Gemini for Google Cloud logs](https://cloud.google.com/gemini/docs/configure-logging).
+
+---
 ## 2025-08-15
 
 ### Numerous IDE performance improvements
@@ -95,6 +110,22 @@ you're currently working in.
 ---
 ## 2025-07-31
 
+### Use Gemini Code Assist agent mode in IntelliJ (Preview)
+
+![IntelliJ Gemini Code Assist agent mode in action](https://cloud.google.com/gemini/images/release-notes-images/intellij-agent-mode-in-action.gif)
+
+#### Stay in control with interactive reviews and approvals
+
+You can use Gemini Code Assist chat in agent mode to complete complex,
+multi-step tasks and goals with complete control over every change. Before
+making any modifications, the agent will present a plan for your review. You can
+edit, ask for changes, approve, or deny any suggested changes. This
+collaborative approach combines the power of AI with your expertise, resulting
+in better code and a more efficient workflow.
+
+To get started with agent mode, restart your IDE and follow the instructions in
+[Use agentic chat as a pair programmer](https://cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer).
+
 ### Auto Approve mode lets the agent act on your behalf (Preview)
 
 Enable auto approve mode to let the agent act on your behalf. Once the agent is
@@ -129,22 +160,6 @@ glance. These features give you unparalleled control and a more efficient way to
 refine AI-suggested code.
 
 ![Agent mode diff view in VS Code](https://cloud.google.com/gemini/images/release-notes-images/vscode-agent-mode-diff-view.png)
-
-### Use Gemini Code Assist agent mode in IntelliJ (Preview)
-
-![IntelliJ Gemini Code Assist agent mode in action](https://cloud.google.com/gemini/images/release-notes-images/intellij-agent-mode-in-action.gif)
-
-#### Stay in control with interactive reviews and approvals
-
-You can use Gemini Code Assist chat in agent mode to complete complex,
-multi-step tasks and goals with complete control over every change. Before
-making any modifications, the agent will present a plan for your review. You can
-edit, ask for changes, approve, or deny any suggested changes. This
-collaborative approach combines the power of AI with your expertise, resulting
-in better code and a more efficient workflow.
-
-To get started with agent mode, restart your IDE and follow the instructions in
-[Use agentic chat as a pair programmer](https://cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer).
 
 ---
 ## 2025-07-28

@@ -1,5 +1,19 @@
 # SAP on Google Cloud
 
+## 2025-08-27
+
+### Announcement
+
+**New SAP certifications: Additional M4 memory-optimized machine types**
+
+For use with SAP HANA scale-up (OLAP and OLTP) and SAP NetWeaver workloads, SAP has certified the `m4-hypermem` Compute Engine memory-optimized machine types with 16, 32, and 64 vCPUs.
+
+For more information, see:
+
+* [M4 memory-optimized machine types for SAP HANA](https://cloud.google.com/sap/docs/sap-hana-planning-guide#m4-memory-optimized)
+* [Certified machine types for SAP applications](https://cloud.google.com/sap/docs/certifications-sap-apps#sap-certified-vms)
+
+---
 ## 2025-08-04
 
 ### Announcement

@@ -2,10 +2,6 @@
 
 ## 2025-08-27
 
-### Fixed
-
-
-
 ### Change in telemetry setting behavior for VS Code Gemini Code Assist
 
 Gemini Code Assist telemetry log settings now override the VS Code telemetry

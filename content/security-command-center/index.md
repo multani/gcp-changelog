@@ -1,5 +1,12 @@
 # Security Command Center
 
+## 2025-08-27
+
+### Changed
+
+Compliance Manager (available in [Preview](https://cloud.google.com/products#product-launch-stages)) now lets you [remove resources from deployed frameworks](/security-command-center/docs/compliance-manager-apply-framework#remove-resource-assignments).
+
+---
 ## 2025-08-20
 
 ### Changed

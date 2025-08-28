@@ -104,6 +104,7 @@ The following issues were addressed in this release:
 * Fixed an issue where calls originating from a native campaign generated two CRM tickets for the same interaction.
 * Fixed latency issues with web SDK Telnyx calls.
 * Fixed an issue where outbound Bring Your Own Carrier (BYOC) calls used a number other than the one agents selected in the agent adapter.
+* Fixed a Telnyx chatbot worker failure issue where background jobs related to call processing and chatbot escalations were failing and consuming excessive system resources.
 
 ---
 ## 2025-08-20

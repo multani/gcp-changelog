@@ -1,5 +1,12 @@
 # Dataflow
 
+## 2025-08-27
+
+### Feature
+
+Dataflow supports Cloud TPUs, Google's custom-designed AI accelerators that are optimized for large-scale AI/ML workloads. This feature lets you accelerate inference workloads on frameworks like PyTorch, JAX, and TensorFlow. This feature is [generally available](https://cloud.google.com/products#product-launch-stages) with an allowlist. For more information, see [Dataflow support for TPUs](https://cloud.google.com/dataflow/docs/tpu/tpu-support).
+
+---
 ## 2025-08-26
 
 ### Fixed

@@ -1,5 +1,31 @@
 # Apigee X
 
+## 2025-08-27
+
+### Announcement
+
+On August 27, 2025, we released an updated version of Apigee (1-15-0-apigee-9).
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+### Security
+
+| Bug ID | Description |
+| --- | --- |
+| **427752569** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:  * [CVE-2025-22872](https://nvd.nist.gov/vuln/detail/CVE-2025-22872) * [CVE-2025-22870](https://nvd.nist.gov/vuln/detail/CVE-2025-22870) * [CVE-2025-22868](https://nvd.nist.gov/vuln/detail/CVE-2025-22868) * [CVE-2025-22869](https://nvd.nist.gov/vuln/detail/CVE-2025-22869) |
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| **420901514** | **Enhanced WebSocket authentication.** |
+| **429245088** | **Implemented option to override endpoints in the PublishMessage policy.** |
+| **405039175** | **Resolved issue causing duplicate x-b3-\* headers when Distributed Trace is enabled.** |
+| **378686709** | **Resolved issue causing unexpected `404` errors when using wildcards in proxy basepaths.** |
+| **429245268** | **Implemented option to override endpoints in the MessageLogging policy.** |
+| **N/A** | **Updates to security infrastructure and libraries.** |
+
+---
 ## 2025-08-04
 
 ### Announcement

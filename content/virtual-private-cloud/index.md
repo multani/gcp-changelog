@@ -14,6 +14,10 @@ You can also use an IPv6-only NAT subnet to [publish a service with Private Serv
 
 For information about which services support IPv6-only configurations, see [IPv6 support in Google Cloud](https://cloud.google.com/vpc/docs/ipv6-support).
 
+### Feature
+
+VPC Flow Logs supports logging for [RDMA flows over Converged Ethernet](https://cloud.google.com/vpc/docs/rdma-network-profiles#overview), such as GPU-to-GPU flows from A3 Ultra, A4, and A4X VMs. This feature is available in **General Availability**. For more information, see [About VPC Flow Logs records](https://cloud.google.com/vpc/docs/about-flow-logs-records).
+
 ---
 ## 2025-08-08
 

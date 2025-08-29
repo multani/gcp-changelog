@@ -1,5 +1,43 @@
 # Google Kubernetes Engine
 
+## 2025-08-28
+
+### Security
+
+GKE version 1.33.0-gke.1276000 and later remediate a low severity
+vulnerability, in which an attacker with the ability to patch Node resources by
+using the Kubernetes API could change specific node labels in clusters that use
+Workload Identity Federation for GKE. This could result in the attacker gaining
+access to node metadata, such as the IAM service account.
+To remediate this
+vulnerability, a validation policy is enforced that prevents unauthorized
+modifications to the node labels that control metadata protection.
+
+### Feature
+
+You can now run GPU workloads on Confidential GKE Nodes with the A3 High
+machine type and NVIDIA H100 GPUs. This feature is available in
+GKE version 1.32.2-gke.1297000 and later for manual GPU driver
+installation, and in version 1.33.3-gke.1392000 and later for automatic driver
+installation. This enables stronger data protection and integrity for
+GPU-accelerated computations running within GKE clusters and
+nodes. This feature is in General Availability.
+
+For more information, see [Encrypt GPU workload data in use with Confidential GKE Nodes](https://cloud.google.com/kubernetes-engine/docs/how-to/gpus-confidential-nodes).
+
+### Feature
+
+You can now run GPU workloads on Confidential GKE Nodes with the A3 High
+machine type and NVIDIA H100 GPUs. This feature is available in
+GKE version 1.32.2-gke.1297000 and later for manual GPU driver
+installation, and in version 1.33.3-gke.1392000 and later for automatic driver
+installation. This enables stronger data protection and integrity for
+GPU-accelerated computations running within GKE clusters and
+nodes. This feature is in General Availability.
+
+For more information, see [Encrypt GPU workload data in use with Confidential GKE Nodes](https://cloud.google.com/kubernetes-engine/docs/how-to/gpus-confidential-nodes).
+
+---
 ## 2025-08-27
 
 ### Changed
@@ -346,13 +384,6 @@ For more information, see [Configure network tier for Gateway IP addresses](http
 
 ### Feature
 
-The [M4 machine series](https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series)
-is generally available in GKE Autopilot clusters with
-version 1.33.4-gke.1013000 or later. For more information, see M4 in
-[Resource requests in Autopilot](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests).
-
-### Feature
-
 Starting with GKE version 1.33.2-gke.1240000 and later, you can
 now specify the network service tier (Standard or Premium) for ephemeral IP
 addresses used by the `gke-l7-regional-external-managed` GatewayClass. This
@@ -360,6 +391,13 @@ GatewayClass configures Regional External Application Load Balancers for single
 clusters.
 
 For more information, see [Configure network tier for Gateway IP addresses](https://cloud.google.com/kubernetes-engine/docs/how-to/deploying-gateways#configure-network-tier).
+
+### Feature
+
+The [M4 machine series](https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series)
+is generally available in GKE Autopilot clusters with
+version 1.33.4-gke.1013000 or later. For more information, see M4 in
+[Resource requests in Autopilot](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests).
 
 ### Changed
 
@@ -1117,6 +1155,10 @@ the Horizontal Pod Autoscaler. You can optionally
 
 ### Feature
 
+The C4 machine series now has General Availability machine types that support Local SSD storage options. These machine types are available in all GKE versions for Standard mode, and in GKE version 1.33.1-gke.1545000 and later for Autopilot mode. For more information about these machine types, see the "C4 standard with Local SSD" and "C4 highmem with Local SSD" tabs in [C4 machine types](https://cloud.google.com/compute/docs/general-purpose-machines#c4_machine_types).
+
+### Feature
+
 You can now [customize a node system configuration](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#kubelet-options) with the following new Kubelet, Sysctl, and Linux config options:
 
 * kubeletConfig flags:
@@ -1151,10 +1193,6 @@ You can now [customize a node system configuration](https://cloud.google.com/kub
 
   + transparentHugepageEnabled (on GKE versions 1.33.2-gke.4655000 and later)
   + transparentHugepageDefrag (on GKE versions 1.33.2-gke.4655000 and later)
-
-### Feature
-
-The C4 machine series now has General Availability machine types that support Local SSD storage options. These machine types are available in all GKE versions for Standard mode, and in GKE version 1.33.1-gke.1545000 and later for Autopilot mode. For more information about these machine types, see the "C4 standard with Local SSD" and "C4 highmem with Local SSD" tabs in [C4 machine types](https://cloud.google.com/compute/docs/general-purpose-machines#c4_machine_types).
 
 ### Feature
 

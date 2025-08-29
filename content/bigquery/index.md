@@ -1,5 +1,12 @@
 # BigQuery
 
+## 2025-08-28
+
+### Feature
+
+For additional layers of security and control, you can now use query templates to predefine and limit the queries that can be run in data clean rooms. For more information, see [Use query templates](https://cloud.google.com/bigquery/docs/query-templates). This feature is in [preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-08-26
 
 ### Feature

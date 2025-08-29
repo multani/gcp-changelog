@@ -1,5 +1,18 @@
 # Compute Engine
 
+## 2025-08-28
+
+### Feature
+
+**Generally available:** [M4 memory-optimized hypermem VMs](https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series) are now generally available. These smaller machine types expand the memory-optimized family to allow for greater flexibility in matching your specific application needs. Hypermem VMs have a GB/vCPU ratio of 15.5:1 and are offered in the following sizes:
+
+* m4-hypermem-16
+* m4-hypermem-32
+* m4-hypermem-64
+
+See the [Regions and zones](https://cloud.google.com/compute/docs/regions-zones) page to learn where you can create M4 VMs.
+
+---
 ## 2025-08-26
 
 ### Feature

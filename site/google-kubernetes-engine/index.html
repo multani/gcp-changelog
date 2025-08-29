@@ -1788,6 +1788,35 @@
 
 
 <h1 id="google-kubernetes-engine">Google Kubernetes Engine</h1>
+<h2 id="2025-08-28">2025-08-28</h2>
+<h3 id="security">Security</h3>
+<p>GKE version 1.33.0-gke.1276000 and later remediate a low severity
+vulnerability, in which an attacker with the ability to patch Node resources by
+using the Kubernetes API could change specific node labels in clusters that use
+Workload Identity Federation for GKE. This could result in the attacker gaining
+access to node metadata, such as the IAM service account.
+To remediate this
+vulnerability, a validation policy is enforced that prevents unauthorized
+modifications to the node labels that control metadata protection.</p>
+<h3 id="feature">Feature</h3>
+<p>You can now run GPU workloads on Confidential GKE Nodes with the A3 High
+machine type and NVIDIA H100 GPUs. This feature is available in
+GKE version 1.32.2-gke.1297000 and later for manual GPU driver
+installation, and in version 1.33.3-gke.1392000 and later for automatic driver
+installation. This enables stronger data protection and integrity for
+GPU-accelerated computations running within GKE clusters and
+nodes. This feature is in General Availability.</p>
+<p>For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/gpus-confidential-nodes">Encrypt GPU workload data in use with Confidential GKE Nodes</a>.</p>
+<h3 id="feature_1">Feature</h3>
+<p>You can now run GPU workloads on Confidential GKE Nodes with the A3 High
+machine type and NVIDIA H100 GPUs. This feature is available in
+GKE version 1.32.2-gke.1297000 and later for manual GPU driver
+installation, and in version 1.33.3-gke.1392000 and later for automatic driver
+installation. This enables stronger data protection and integrity for
+GPU-accelerated computations running within GKE clusters and
+nodes. This feature is in General Availability.</p>
+<p>For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/gpus-confidential-nodes">Encrypt GPU workload data in use with Confidential GKE Nodes</a>.</p>
+<hr />
 <h2 id="2025-08-27">2025-08-27</h2>
 <h3 id="changed">Changed</h3>
 <h4 id="2025-r36-version-updates">(2025-R36) Version updates</h4>
@@ -2072,13 +2101,13 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 <hr />
 <h2 id="2025-08-25">2025-08-25</h2>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>In GKE version 1.33 and later, the Horizontal Pod Autoscaler
 has been re-architected for improved performance and scalability. This update
 enables a consistent 15-second recalculation period and supports up to 5,000 HPA
 objects per cluster.</p>
 <p>For more information see, <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/horizontalpodautoscaler#scalability">Horizontal Pod autoscaling</a>.</p>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>In GKE version 1.33 and later, the Horizontal Pod Autoscaler
 has been re-architected for improved performance and scalability. This update
 enables a consistent 15-second recalculation period and supports up to 5,000 HPA
@@ -2086,18 +2115,6 @@ objects per cluster.</p>
 <p>For more information see, <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/horizontalpodautoscaler#scalability">Horizontal Pod autoscaling</a>.</p>
 <hr />
 <h2 id="2025-08-21">2025-08-21</h2>
-<h3 id="feature_2">Feature</h3>
-<p>The <a href="https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series">M4 machine series</a>
-is generally available in GKE Autopilot clusters with
-version 1.33.4-gke.1013000 or later. For more information, see M4 in
-<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests">Resource requests in Autopilot</a>.</p>
-<h3 id="feature_3">Feature</h3>
-<p>Starting with GKE version 1.33.2-gke.1240000 and later, you can
-now specify the network service tier (Standard or Premium) for ephemeral IP
-addresses used by the <code>gke-l7-regional-external-managed</code> GatewayClass. This
-GatewayClass configures Regional External Application Load Balancers for single
-clusters.</p>
-<p>For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/deploying-gateways#configure-network-tier">Configure network tier for Gateway IP addresses</a>.</p>
 <h3 id="feature_4">Feature</h3>
 <p>The <a href="https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series">M4 machine series</a>
 is generally available in GKE Autopilot clusters with
@@ -2110,6 +2127,18 @@ addresses used by the <code>gke-l7-regional-external-managed</code> GatewayClass
 GatewayClass configures Regional External Application Load Balancers for single
 clusters.</p>
 <p>For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/deploying-gateways#configure-network-tier">Configure network tier for Gateway IP addresses</a>.</p>
+<h3 id="feature_6">Feature</h3>
+<p>Starting with GKE version 1.33.2-gke.1240000 and later, you can
+now specify the network service tier (Standard or Premium) for ephemeral IP
+addresses used by the <code>gke-l7-regional-external-managed</code> GatewayClass. This
+GatewayClass configures Regional External Application Load Balancers for single
+clusters.</p>
+<p>For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/deploying-gateways#configure-network-tier">Configure network tier for Gateway IP addresses</a>.</p>
+<h3 id="feature_7">Feature</h3>
+<p>The <a href="https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series">M4 machine series</a>
+is generally available in GKE Autopilot clusters with
+version 1.33.4-gke.1013000 or later. For more information, see M4 in
+<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests">Resource requests in Autopilot</a>.</p>
 <h3 id="changed_6">Changed</h3>
 <h4 id="2025-r35-version-updates">(2025-R35) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
@@ -2438,20 +2467,6 @@ distracting warnings.</p>
 </ul>
 <hr />
 <h2 id="2025-08-15">2025-08-15</h2>
-<h3 id="feature_6">Feature</h3>
-<p>For clusters enrolled in the Extended channel, you can now use
-<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api">Gateway</a>
-with GKE version 1.30 or later, or
-<a href="https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options">customized sysctl configuration options</a>.</p>
-<h3 id="feature_7">Feature</h3>
-<p>You can now receive a patch version in a release channel as soon as the version
-is available and before GKE sets the version as an auto-upgrade
-target in the channel by using <em>accelerated patch auto-upgrades</em>. Receiving
-patch versions earlier can help accelerate auto-upgrade timelines for patches,
-especially for use cases such as accelerating your compliance with security
-requirements.</p>
-<p>For more information, see
-<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/release-channels#accelerated-patch">Accelerated patch auto-upgrades</a>.</p>
 <h3 id="feature_8">Feature</h3>
 <p>For clusters enrolled in the Extended channel, you can now use
 <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api">Gateway</a>
@@ -2466,14 +2481,28 @@ especially for use cases such as accelerating your compliance with security
 requirements.</p>
 <p>For more information, see
 <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/release-channels#accelerated-patch">Accelerated patch auto-upgrades</a>.</p>
+<h3 id="feature_10">Feature</h3>
+<p>For clusters enrolled in the Extended channel, you can now use
+<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api">Gateway</a>
+with GKE version 1.30 or later, or
+<a href="https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options">customized sysctl configuration options</a>.</p>
+<h3 id="feature_11">Feature</h3>
+<p>You can now receive a patch version in a release channel as soon as the version
+is available and before GKE sets the version as an auto-upgrade
+target in the channel by using <em>accelerated patch auto-upgrades</em>. Receiving
+patch versions earlier can help accelerate auto-upgrade timelines for patches,
+especially for use cases such as accelerating your compliance with security
+requirements.</p>
+<p>For more information, see
+<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/release-channels#accelerated-patch">Accelerated patch auto-upgrades</a>.</p>
 <hr />
 <h2 id="2025-08-14">2025-08-14</h2>
-<h3 id="feature_10">Feature</h3>
+<h3 id="feature_12">Feature</h3>
 <p>You can now configure GKE clusters to have a default compute
 class in GKE versions 1.33.1-gke.1744000 or later. For more
 details, see the
 <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/run-pods-default-compute-classes">default custom compute class documentation</a>.</p>
-<h3 id="feature_11">Feature</h3>
+<h3 id="feature_13">Feature</h3>
 <p>You can now configure GKE clusters to have a default compute
 class in GKE versions 1.33.1-gke.1744000 or later. For more
 details, see the
@@ -2755,23 +2784,6 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 <hr />
 <h2 id="2025-08-12">2025-08-12</h2>
-<h3 id="feature_12">Feature</h3>
-<p>Starting with GKE version 1.33.1-gke.1231000, you can view
-KubeRay Operator addon logs. These logs are available by default in
-Cloud Logging when the Ray operator addon is enabled in GKE.
-This integration helps you to monitor and debug the Ray Operator. Previously,
-accessing these logs required more complex steps. To view the logs, navigate to
-Cloud Logging Logs Explorer in the Google Cloud console and run a query to filter
-for the Ray Operator logs for your specific cluster.</p>
-<p>For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/add-on/ray-on-gke/how-to/view-ray-operator-logs">View Ray Operator logs on GKE</a>.</p>
-<h3 id="feature_13">Feature</h3>
-<p>Starting on August 1, 2025, the Performance HorizontalPodAutoscaler profile is
-enabled by default for GKE Standard clusters that run
-GKE version 1.33.2-gke.4605000 and later and meet all of the
-<a href="https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#requirements_2">Performance profile requirements</a>.
-The Performance profile improves the reaction time, speed, and scalability of
-the Horizontal Pod Autoscaler. You can optionally
-<a href="https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#disable_the_performance_hpa_profile">disable the Performance profile</a>.</p>
 <h3 id="feature_14">Feature</h3>
 <p>Starting with GKE version 1.33.1-gke.1231000, you can view
 KubeRay Operator addon logs. These logs are available by default in
@@ -2789,56 +2801,28 @@ GKE version 1.33.2-gke.4605000 and later and meet all of the
 The Performance profile improves the reaction time, speed, and scalability of
 the Horizontal Pod Autoscaler. You can optionally
 <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#disable_the_performance_hpa_profile">disable the Performance profile</a>.</p>
+<h3 id="feature_16">Feature</h3>
+<p>Starting with GKE version 1.33.1-gke.1231000, you can view
+KubeRay Operator addon logs. These logs are available by default in
+Cloud Logging when the Ray operator addon is enabled in GKE.
+This integration helps you to monitor and debug the Ray Operator. Previously,
+accessing these logs required more complex steps. To view the logs, navigate to
+Cloud Logging Logs Explorer in the Google Cloud console and run a query to filter
+for the Ray Operator logs for your specific cluster.</p>
+<p>For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/add-on/ray-on-gke/how-to/view-ray-operator-logs">View Ray Operator logs on GKE</a>.</p>
+<h3 id="feature_17">Feature</h3>
+<p>Starting on August 1, 2025, the Performance HorizontalPodAutoscaler profile is
+enabled by default for GKE Standard clusters that run
+GKE version 1.33.2-gke.4605000 and later and meet all of the
+<a href="https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#requirements_2">Performance profile requirements</a>.
+The Performance profile improves the reaction time, speed, and scalability of
+the Horizontal Pod Autoscaler. You can optionally
+<a href="https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#disable_the_performance_hpa_profile">disable the Performance profile</a>.</p>
 <hr />
 <h2 id="2025-08-08">2025-08-08</h2>
-<h3 id="feature_16">Feature</h3>
-<p>You can now <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#kubelet-options">customize a node system configuration</a> with the following new Kubelet, Sysctl, and Linux config options:</p>
-<ul>
-<li>
-<p>kubeletConfig flags:</p>
-</li>
-<li>
-<p>topologyManager (on GKE versions 1.32.3-gke.1785000 and later)</p>
-</li>
-<li>memoryManager (on GKE versions 1.32.3-gke.1785000 and later)</li>
-<li>maxParallelImagePulls (on GKE versions 1.33.1-gke.1918000 and later)</li>
-<li>singleProcessOomKill (on GKE versions 1.32.4-gke.1132000, 1.33.0-gke.1748000 and later)</li>
-<li>evictionSoft</li>
-<li>evictionSoftGracePeriod</li>
-<li>evictionMinimumReclaim</li>
-<li>evictionMaxPodGracePeriodSeconds</li>
-<li>
-<p>sysctl flags:</p>
-</li>
-<li>
-<p>vm.overcommit_memory</p>
-</li>
-<li>vm.overcommit_ratio</li>
-<li>vm.vfs_cache_pressure</li>
-<li>vm.dirty_ratio</li>
-<li>vm.dirty_background_ratio</li>
-<li>vm.dirty_expire_centisecs</li>
-<li>vm.dirty_writeback_centisecs</li>
-<li>vm.watermark_scale_factor</li>
-<li>vm.min_free_kbytes</li>
-<li>vm.swappiness</li>
-<li>fs.nr_open</li>
-<li>fs.file-max</li>
-<li>fs.inotify.max_user_watches</li>
-<li>fs.inotify.max_user_instances</li>
-<li>fs.aio-max-nr</li>
-<li>net.ipv4.tcp_max_orphans</li>
-<li>
-<p>linuxConfig flags:</p>
-</li>
-<li>
-<p>transparentHugepageEnabled (on GKE versions 1.33.2-gke.4655000 and later)</p>
-</li>
-<li>transparentHugepageDefrag (on GKE versions 1.33.2-gke.4655000 and later)</li>
-</ul>
-<h3 id="feature_17">Feature</h3>
-<p>The C4 machine series now has General Availability machine types that support Local SSD storage options. These machine types are available in all GKE versions for Standard mode, and in GKE version 1.33.1-gke.1545000 and later for Autopilot mode. For more information about these machine types, see the "C4 standard with Local SSD" and "C4 highmem with Local SSD" tabs in <a href="https://cloud.google.com/compute/docs/general-purpose-machines#c4_machine_types">C4 machine types</a>.</p>
 <h3 id="feature_18">Feature</h3>
+<p>The C4 machine series now has General Availability machine types that support Local SSD storage options. These machine types are available in all GKE versions for Standard mode, and in GKE version 1.33.1-gke.1545000 and later for Autopilot mode. For more information about these machine types, see the "C4 standard with Local SSD" and "C4 highmem with Local SSD" tabs in <a href="https://cloud.google.com/compute/docs/general-purpose-machines#c4_machine_types">C4 machine types</a>.</p>
+<h3 id="feature_19">Feature</h3>
 <p>You can now <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#kubelet-options">customize a node system configuration</a> with the following new Kubelet, Sysctl, and Linux config options:</p>
 <ul>
 <li>
@@ -2883,7 +2867,52 @@ the Horizontal Pod Autoscaler. You can optionally
 </li>
 <li>transparentHugepageDefrag (on GKE versions 1.33.2-gke.4655000 and later)</li>
 </ul>
-<h3 id="feature_19">Feature</h3>
+<h3 id="feature_20">Feature</h3>
+<p>You can now <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#kubelet-options">customize a node system configuration</a> with the following new Kubelet, Sysctl, and Linux config options:</p>
+<ul>
+<li>
+<p>kubeletConfig flags:</p>
+</li>
+<li>
+<p>topologyManager (on GKE versions 1.32.3-gke.1785000 and later)</p>
+</li>
+<li>memoryManager (on GKE versions 1.32.3-gke.1785000 and later)</li>
+<li>maxParallelImagePulls (on GKE versions 1.33.1-gke.1918000 and later)</li>
+<li>singleProcessOomKill (on GKE versions 1.32.4-gke.1132000, 1.33.0-gke.1748000 and later)</li>
+<li>evictionSoft</li>
+<li>evictionSoftGracePeriod</li>
+<li>evictionMinimumReclaim</li>
+<li>evictionMaxPodGracePeriodSeconds</li>
+<li>
+<p>sysctl flags:</p>
+</li>
+<li>
+<p>vm.overcommit_memory</p>
+</li>
+<li>vm.overcommit_ratio</li>
+<li>vm.vfs_cache_pressure</li>
+<li>vm.dirty_ratio</li>
+<li>vm.dirty_background_ratio</li>
+<li>vm.dirty_expire_centisecs</li>
+<li>vm.dirty_writeback_centisecs</li>
+<li>vm.watermark_scale_factor</li>
+<li>vm.min_free_kbytes</li>
+<li>vm.swappiness</li>
+<li>fs.nr_open</li>
+<li>fs.file-max</li>
+<li>fs.inotify.max_user_watches</li>
+<li>fs.inotify.max_user_instances</li>
+<li>fs.aio-max-nr</li>
+<li>net.ipv4.tcp_max_orphans</li>
+<li>
+<p>linuxConfig flags:</p>
+</li>
+<li>
+<p>transparentHugepageEnabled (on GKE versions 1.33.2-gke.4655000 and later)</p>
+</li>
+<li>transparentHugepageDefrag (on GKE versions 1.33.2-gke.4655000 and later)</li>
+</ul>
+<h3 id="feature_21">Feature</h3>
 <p>The C4 machine series now has General Availability machine types that support Local SSD storage options. These machine types are available in all GKE versions for Standard mode, and in GKE version 1.33.1-gke.1545000 and later for Autopilot mode. For more information about these machine types, see the "C4 standard with Local SSD" and "C4 highmem with Local SSD" tabs in <a href="https://cloud.google.com/compute/docs/general-purpose-machines#c4_machine_types">C4 machine types</a>.</p>
 <hr />
 <h2 id="2025-08-06">2025-08-06</h2>
@@ -3166,9 +3195,9 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 <hr />
 <h2 id="2025-08-05">2025-08-05</h2>
-<h3 id="feature_20">Feature</h3>
+<h3 id="feature_22">Feature</h3>
 <p>The <a href="https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series">M4 machine series</a> is generally available in GKE Standard clusters.</p>
-<h3 id="feature_21">Feature</h3>
+<h3 id="feature_23">Feature</h3>
 <p>The <a href="https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series">M4 machine series</a> is generally available in GKE Standard clusters.</p>
 <h3 id="fixed_1">Fixed</h3>
 <p>A fix is available for an issue in which the Compute Engine Persistent Disk CSI
@@ -3478,32 +3507,32 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 <hr />
 <h2 id="2025-07-28">2025-07-28</h2>
-<h3 id="feature_22">Feature</h3>
+<h3 id="feature_24">Feature</h3>
 <p>In GKE version 1.33.2-gke.1335000 and later, the
 <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api#gateway_controller">GKE Gateway controller</a>
 supports
 <a href="https://gateway-api.sigs.k8s.io/implementations/v1.3/">Gateway API v1.3 CRDs</a>.</p>
-<h3 id="feature_23">Feature</h3>
+<h3 id="feature_25">Feature</h3>
 <p>In GKE version 1.33.1-gke.1788000 and later, you can target specific reservation
 sub-blocks in a reservation block by using the
 <a href="https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#reservationSubBlock"><code>reservationSubBlock</code> field in compute classes</a>.</p>
-<h3 id="feature_24">Feature</h3>
+<h3 id="feature_26">Feature</h3>
 <p>In GKE version 1.32.2-gke.1359000 and later, you can now configure
 <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/tpus#collection-scheduling">collection scheduling</a>
 for single-host and multi-host TPU node pools by using
 <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/about-custom-compute-classes">compute classes</a>.
 Collection scheduling lets you set a Service Level Objective (SLO) for your TPU
 workloads.</p>
-<h3 id="feature_25">Feature</h3>
+<h3 id="feature_27">Feature</h3>
 <p>In GKE version 1.33.2-gke.1335000 and later, the
 <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api#gateway_controller">GKE Gateway controller</a>
 supports
 <a href="https://gateway-api.sigs.k8s.io/implementations/v1.3/">Gateway API v1.3 CRDs</a>.</p>
-<h3 id="feature_26">Feature</h3>
+<h3 id="feature_28">Feature</h3>
 <p>In GKE version 1.33.1-gke.1788000 and later, you can target specific reservation
 sub-blocks in a reservation block by using the
 <a href="https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#reservationSubBlock"><code>reservationSubBlock</code> field in compute classes</a>.</p>
-<h3 id="feature_27">Feature</h3>
+<h3 id="feature_29">Feature</h3>
 <p>In GKE version 1.32.2-gke.1359000 and later, you can now configure
 <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/tpus#collection-scheduling">collection scheduling</a>
 for single-host and multi-host TPU node pools by using
@@ -4063,14 +4092,14 @@ multiple days to complete across all Google Cloud zones.</p>
 <p>For information about the latest known issues, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for bare metal known issues</a> in the Troubleshooting section.</p>
 <hr />
 <h2 id="2025-07-21">2025-07-21</h2>
-<h3 id="feature_28">Feature</h3>
+<h3 id="feature_30">Feature</h3>
 <p>In GKE version 1.33.2-gke.1111000 and later, you can use compute classes to set
 <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/">Kubernetes labels</a>
 on all nodes that are created for that compute class. These labels are applied
 to the corresponding <code>Node</code> objects in the Kubernetes API. For more information
 about setting node labels in compute classes, see the
 <a href="https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#nodepoolconfig">ComputeClass custom resource definition</a>.</p>
-<h3 id="feature_29">Feature</h3>
+<h3 id="feature_31">Feature</h3>
 <p>In GKE version 1.33.2-gke.1111000 and later, you can use compute classes to set
 <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/">Kubernetes labels</a>
 on all nodes that are created for that compute class. These labels are applied
@@ -4743,7 +4772,7 @@ zones.</p>
 </ul>
 <hr />
 <h2 id="2025-06-25">2025-06-25</h2>
-<h3 id="feature_30">Feature</h3>
+<h3 id="feature_32">Feature</h3>
 <p>The C4D machine series is generally available in GKE. The following version requirements apply:</p>
 <ul>
 <li>Standard clusters:</li>
@@ -4755,7 +4784,7 @@ zones.</p>
 </ul>
 <p>You can use the C4D machine series with Confidential GKE Nodes and in compact placement policies in Autopilot and Standard clusters.</p>
 <p>For more information, see <a href="https://cloud.google.com/compute/docs/general-purpose-machines#c4d_series">C4D machine series</a>.</p>
-<h3 id="feature_31">Feature</h3>
+<h3 id="feature_33">Feature</h3>
 <p>The C4D machine series is generally available in GKE. The following version requirements apply:</p>
 <ul>
 <li>Standard clusters:</li>
@@ -5068,9 +5097,9 @@ zones.</p>
 </ul>
 <hr />
 <h2 id="2025-06-16">2025-06-16</h2>
-<h3 id="feature_32">Feature</h3>
+<h3 id="feature_34">Feature</h3>
 <p>For clusters running GKE version 1.32.4-gke.1236000 or later, the cluster autoscaler can scale down nodes by evicting Pods in the kube-system namespace that have no Pod Disruption Budget (PDB) set and have been running for at least one hour.</p>
-<h3 id="feature_33">Feature</h3>
+<h3 id="feature_35">Feature</h3>
 <p>For clusters running GKE version 1.32.4-gke.1236000 or later, the cluster autoscaler can scale down nodes by evicting Pods in the kube-system namespace that have no Pod Disruption Budget (PDB) set and have been running for at least one hour.</p>
 <hr />
 <h2 id="2025-06-12">2025-06-12</h2>
@@ -5401,13 +5430,13 @@ zones.</p>
 </ul>
 <hr />
 <h2 id="2025-06-10">2025-06-10</h2>
-<h3 id="feature_34">Feature</h3>
-<p>GKE now reports CPU and memory requests and limits <a href="https://cloud.google.com/monitoring/api/metrics_kubernetes#kubernetes-kubernetes">metrics</a> for Kubernetes-native <a href="https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/">sidecar containers</a> starting from GKE version 1.32.4-gke.1106006.</p>
-<h3 id="feature_35">Feature</h3>
-<p>Flex-start provisioning mode on GKE now supports TPUs in single-host node pools. Flex-start makes accessing highly-demanded accelerators, like TPU v5e, v5p, and Trillium easier while optimizing their utilization. To learn more, see <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/dws">About GPU and TPU provisioning with flex-start provisioning mode</a>.</p>
 <h3 id="feature_36">Feature</h3>
 <p>GKE now reports CPU and memory requests and limits <a href="https://cloud.google.com/monitoring/api/metrics_kubernetes#kubernetes-kubernetes">metrics</a> for Kubernetes-native <a href="https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/">sidecar containers</a> starting from GKE version 1.32.4-gke.1106006.</p>
 <h3 id="feature_37">Feature</h3>
+<p>Flex-start provisioning mode on GKE now supports TPUs in single-host node pools. Flex-start makes accessing highly-demanded accelerators, like TPU v5e, v5p, and Trillium easier while optimizing their utilization. To learn more, see <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/dws">About GPU and TPU provisioning with flex-start provisioning mode</a>.</p>
+<h3 id="feature_38">Feature</h3>
+<p>GKE now reports CPU and memory requests and limits <a href="https://cloud.google.com/monitoring/api/metrics_kubernetes#kubernetes-kubernetes">metrics</a> for Kubernetes-native <a href="https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/">sidecar containers</a> starting from GKE version 1.32.4-gke.1106006.</p>
+<h3 id="feature_39">Feature</h3>
 <p>Flex-start provisioning mode on GKE now supports TPUs in single-host node pools. Flex-start makes accessing highly-demanded accelerators, like TPU v5e, v5p, and Trillium easier while optimizing their utilization. To learn more, see <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/dws">About GPU and TPU provisioning with flex-start provisioning mode</a>.</p>
 <hr />
 <h2 id="2025-06-05">2025-06-05</h2>
@@ -6050,13 +6079,13 @@ zones.</p>
 <li>Control planes and nodes with auto-upgrade enabled in the Extended channel will be upgraded from version 1.31 to version <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v1318">1.31.8-gke.1045000</a> with this release.</li>
 <li>Control planes and nodes with auto-upgrade enabled in the Extended channel will be upgraded from version 1.32 to version <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1324">1.32.4-gke.1106006</a> with this release.</li>
 </ul>
-<h3 id="feature_38">Feature</h3>
+<h3 id="feature_40">Feature</h3>
 <p>GKE now provides insights and recommendations that help you to <a href="https://cloud.google.com/kubernetes-engine/docs/troubleshooting/scalability#identify-fix-etcd-usage">identify and remediate</a> clusters where the etcd cluster state database size is approaching the limit. Implementing the recommendation helps you to keep your clusters stable and performant.</p>
 <hr />
 <h2 id="2025-05-27">2025-05-27</h2>
-<h3 id="feature_39">Feature</h3>
+<h3 id="feature_41">Feature</h3>
 <p>In GKE version 1.32.2-gke.1297000 and later, you can run GPU workloads on Confidential GKE Nodes with the <a href="https://cloud.google.com/compute/docs/accelerator-optimized-machines#a3-standard-vms">A3 High machine type</a> and NVIDIA H100 GPUs. This enables stronger data protection and integrity for GPU-accelerated computations running within GKE clusters and nodes. This feature is available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/gpus-confidential-nodes">Encrypt GPU workload data in use with Confidential GKE Nodes</a>.</p>
-<h3 id="feature_40">Feature</h3>
+<h3 id="feature_42">Feature</h3>
 <p>In GKE version 1.32.2-gke.1297000 and later, you can use the Intel TDX and AMD SEV-SNP <a href="https://cloud.google.com/confidential-computing/confidential-vm/docs/confidential-vm-overview">Confidential Computing technologies</a> with Confidential GKE Nodes. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">General Availability</a>. Use Confidential GKE Nodes to encrypt your workload data in-use through Compute Engine Confidential VMs for data and code confidentiality and integrity. For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/confidential-gke-nodes">Encrypt workload data in-use with Confidential GKE Nodes</a>.</p>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
@@ -6069,6 +6098,9 @@ zones.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-kubernetes-engine">Google Kubernetes Engine</a></li>
+          <li class="nav-item">
+            <a href="#2025-08-28" class="nav-link">2025-08-28</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-08-27" class="nav-link">2025-08-27</a>
           </li>

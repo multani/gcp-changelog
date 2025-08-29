@@ -2,9 +2,168 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps</subtitle>
-  <updated>2025-08-21T00:00:00+00:00</updated>
+  <updated>2025-08-28T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2025-08-28:changed:0</id>
+    <published>2025-08-28T00:00:00+00:00</published>
+    <updated>2025-08-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Composite detections for MITRE ATT&amp;CK</strong></p>
+<p>The <a href="https://cloud.google.com/chronicle/docs/detection/use-curated-detections">Curated Detections</a> feature has been enhanced with new <a href="https://cloud.google.com/chronicle/docs/detection/composite-rules">composite rules</a> that define chains of MITRE ATT&amp;CK tactics and techniques.</p>
+<p>These powerful new rule packs are now in public preview for customers with a <a href="https://cloud.google.com/security/products/security-operations">Google SecOps Enterprise or Enterprise Plus license</a>.</p>
+<p>To learn more, a companion blog post will be published on the <a href="https://security.googlecloudcommunity.com/">Google Security Cloud Community</a> on September 9, 2025.</p>]]></content>
+    <summary>New composite rules have been added to Curated Detections, defining chains of MITRE ATT&amp;CK tactics and techniques. These are available in public preview for specific license holders.</summary>
+    <title>Changed: Composite Detections for MITRE ATT&amp;CK</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2025-08-27:changed:0</id>
+    <published>2025-08-27T00:00:00+00:00</published>
+    <updated>2025-08-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google SecOps has updated the list of supported default parsers. Parsers are updated gradually, so it might take one to four days before you see the changes reflected in your region.</p>
+<p>The following supported default parsers have been updated. Each parser is listed by product name and <code>log_type</code> value, where applicable. This list includes both released default parsers and pending parser updates.</p>
+<ul>
+<li>A10 Load Balancer (<code>A10_LOAD_BALANCER</code>)</li>
+<li>AIX system (<code>AIX_SYSTEM</code>)</li>
+<li>Apache (<code>APACHE</code>)</li>
+<li>Arcsight CEF (<code>ARCSIGHT_CEF</code>)</li>
+<li>Aruba Switch (<code>ARUBA_SWITCH</code>)</li>
+<li>Aruba (<code>ARUBA_WIRELESS</code>)</li>
+<li>Attivo Networks (<code>ATTIVO</code>)</li>
+<li>Auth0 (<code>AUTH_ZERO</code>)</li>
+<li>Amazon VPC Transit Gateway Flow Logs (<code>AWS_VPC_TRANSIT_GATEWAY</code>)</li>
+<li>AWS WAF (<code>AWS_WAF</code>)</li>
+<li>Azure AD (<code>AZURE_AD</code>)</li>
+<li>Azure AD Organizational Context (<code>AZURE_AD_CONTEXT</code>)</li>
+<li>Azure Firewall (<code>AZURE_FIREWALL</code>)</li>
+<li>Azure Front Door (<code>AZURE_FRONT_DOOR</code>)</li>
+<li>Carbon Black App Control (<code>CB_APP_CONTROL</code>)</li>
+<li>None (<code>CHROME_MANAGEMENT</code>)</li>
+<li>Cisco ASA (<code>CISCO_ASA_FIREWALL</code>)</li>
+<li>Cisco DNA Center Platform (<code>CISCO_DNAC</code>)</li>
+<li>Cisco Email Security (<code>CISCO_EMAIL_SECURITY</code>)</li>
+<li>Cisco Firepower NGFW (<code>CISCO_FIREPOWER_FIREWALL</code>)</li>
+<li>Cisco Internetwork Operating System (<code>CISCO_IOS</code>)</li>
+<li>Cisco IronPort (<code>CISCO_IRONPORT</code>)</li>
+<li>Cisco ISE (<code>CISCO_ISE</code>)</li>
+<li>Cisco Router (<code>CISCO_ROUTER</code>)</li>
+<li>Cisco vManage SD-WAN (<code>CISCO_SDWAN</code>)</li>
+<li>Cisco Switch (<code>CISCO_SWITCH</code>)</li>
+<li>Cisco Umbrella Audit (<code>CISCO_UMBRELLA_AUDIT</code>)</li>
+<li>Cisco VCS Expressway (<code>CISCO_VCS</code>)</li>
+<li>Cisco WSA (<code>CISCO_WSA</code>)</li>
+<li>Citrix Netscaler (<code>CITRIX_NETSCALER</code>)</li>
+<li>Claroty Xdome (<code>CLAROTY_XDOME</code>)</li>
+<li>HP Aruba (ClearPass) (<code>CLEARPASS</code>)</li>
+<li>Cloudflare (<code>CLOUDFLARE</code>)</li>
+<li>Cloudflare WAF (<code>CLOUDFLARE_WAF</code>)</li>
+<li>Corelight (<code>CORELIGHT</code>)</li>
+<li>Palo Alto Cortex XDR Alerts (<code>CORTEX_XDR</code>)</li>
+<li>CrowdStrike Alerts API (<code>CS_ALERTS</code>)</li>
+<li>CrowdStrike Detection Monitoring (<code>CS_DETECTS</code>)</li>
+<li>CrowdStrike Falcon (<code>CS_EDR</code>)</li>
+<li>CrowdStrike Falcon Stream (<code>CS_STREAM</code>)</li>
+<li>Cyberark Privilege Cloud (<code>CYBERARK_PRIVILEGE_CLOUD</code>)</li>
+<li>Darktrace (<code>DARKTRACE</code>)</li>
+<li>Datadog (<code>DATADOG</code>)</li>
+<li>Elastic Defend (<code>ELASTIC_DEFEND</code>)</li>
+<li>F5 ASM (<code>F5_ASM</code>)</li>
+<li>F5 Distributed Cloud Services (<code>F5_DCS</code>)</li>
+<li>F5 Silverline (<code>F5_SILVERLINE</code>)</li>
+<li>Fidelis Network (<code>FIDELIS_NETWORK</code>)</li>
+<li>FireEye (<code>FIREEYE_ALERT</code>)</li>
+<li>FireEye NX (<code>FIREEYE_NX</code>)</li>
+<li>Forcepoint DLP (<code>FORCEPOINT_DLP</code>)</li>
+<li>ForgeRock Identity Cloud (<code>FORGEROCK_IDENTITY_CLOUD</code>)</li>
+<li>FortiGate (<code>FORTINET_FIREWALL</code>)</li>
+<li>Cloud SQL (<code>GCP_CLOUDSQL</code>)</li>
+<li>Google Cloud DNS Threat Detector (<code>GCP_DNS_ATD</code>)</li>
+<li>Cloud Load Balancing (<code>GCP_LOADBALANCING</code>)</li>
+<li>None (<code>GCP_SECURITYCENTER_THREAT</code>)</li>
+<li>VPC Flow Logs (<code>GCP_VPC_FLOW</code>)</li>
+<li>AWS GuardDuty (<code>GUARDDUTY</code>)</li>
+<li>IBM-i Operating System (<code>IBM_I</code>)</li>
+<li>Imperva (<code>IMPERVA_WAF</code>)</li>
+<li>Infoblox DHCP (<code>INFOBLOX_DHCP</code>)</li>
+<li>Jamf Protect Telemetry V2 (<code>JAMF_TELEMETRY_V2</code>)</li>
+<li>Kemp Load Balancer (<code>KEMP_LOADBALANCER</code>)</li>
+<li>Kubernetes Node (<code>KUBERNETES_NODE</code>)</li>
+<li>ManageEngine AD360 (<code>MANAGE_ENGINE_AD360</code>)</li>
+<li>McAfee ePolicy Orchestrator (<code>MCAFEE_EPO</code>)</li>
+<li>McAfee IPS (<code>MCAFEE_IPS</code>)</li>
+<li>Medigate IoT (<code>MEDIGATE_IOT</code>)</li>
+<li>Microsoft Defender for Endpoint (<code>MICROSOFT_DEFENDER_ENDPOINT</code>)</li>
+<li>Microsoft Graph API Alerts (<code>MICROSOFT_GRAPH_ALERT</code>)</li>
+<li>Microsoft Sentinel (<code>MICROSOFT_SENTINEL</code>)</li>
+<li>Microsoft SQL Server (<code>MICROSOFT_SQL</code>)</li>
+<li>Mikrotik Router (<code>MIKROTIK_ROUTER</code>)</li>
+<li>Netskope V2 (<code>NETSKOPE_ALERT_V2</code>)</li>
+<li>Netskope Web Proxy (<code>NETSKOPE_WEBPROXY</code>)</li>
+<li>Unix system (<code>NIX_SYSTEM</code>)</li>
+<li>Oracle Cloud Infrastructure VCN Flow Logs (<code>OCI_FLOW</code>)</li>
+<li>Office 365 (<code>OFFICE_365</code>)</li>
+<li>Office 365 Message Trace (<code>OFFICE_365_MESSAGETRACE</code>)</li>
+<li>Okta (<code>OKTA</code>)</li>
+<li>Okta Scaleft (<code>OKTA_SCALEFT</code>)</li>
+<li>Oracle (<code>ORACLE_DB</code>)</li>
+<li>Orca Cloud Security Platform (<code>ORCA</code>)</li>
+<li>Proofpoint Threat Response (<code>PROOFPOINT_TRAP</code>)</li>
+<li>Quest Active Directory (<code>QUEST_AD</code>)</li>
+<li>Radware Web Application Firewall (<code>RADWARE_FIREWALL</code>)</li>
+<li>Red Hat OpenShift (<code>REDHAT_OPENSHIFT</code>)</li>
+<li>Symantec Endpoint Protection (<code>SEP</code>)</li>
+<li>Silverfort Authentication Platform (<code>SILVERFORT</code>)</li>
+<li>Squid Web Proxy (<code>SQUID_WEBPROXY</code>)</li>
+<li>STIX Threat Intelligence (<code>STIX</code>)</li>
+<li>Symantec DLP (<code>SYMANTEC_DLP</code>)</li>
+<li>Sysdig (<code>SYSDIG</code>)</li>
+<li>Tenable Security Center (<code>TENABLE_SC</code>)</li>
+<li>Trend Micro (<code>TIPPING_POINT</code>)</li>
+<li>Trellix HX Event Streamer (<code>TRELLIX_HX_ES</code>)</li>
+<li>Trend Micro Apex one (<code>TRENDMICRO_APEX_ONE</code>)</li>
+<li>Trend Micro Vision One Activity (<code>TRENDMICRO_VISION_ONE_ACTIVITY</code>)</li>
+<li>Trend Micro Vision One (<code>TRENDMICRO_VISION_ONE</code>)</li>
+<li>Trend Micro Vision One Workbench (<code>TRENDMICRO_VISION_ONE_WORKBENCH</code>)</li>
+<li>Ubiquiti UniFi Switch (<code>UBIQUITI_SWITCH</code>)</li>
+<li>Cisco Umbrella DNS (<code>UMBRELLA_DNS</code>)</li>
+<li>Cisco Umbrella IP (<code>UMBRELLA_IP</code>)</li>
+<li>Varonis (<code>VARONIS</code>)</li>
+<li>Vectra XDR (<code>VECTRA_XDR</code>)</li>
+<li>VMware vCenter (<code>VMWARE_VCENTER</code>)</li>
+<li>VMware vRealize Suite (VMware Aria) (<code>VMWARE_VREALIZE</code>)</li>
+<li>Windows Event (<code>WINEVTLOG</code>)</li>
+<li>Windows Event (XML) (<code>WINEVTLOG_XML</code>)</li>
+<li>Zscaler CASB (<code>ZSCALER_CASB</code>)</li>
+<li>ZScaler Deception (<code>ZSCALER_DECEPTION</code>)</li>
+<li>Zscaler DLP (<code>ZSCALER_DLP</code>)</li>
+<li>ZScaler DNS (<code>ZSCALER_DNS</code>)</li>
+<li>ZScaler NGFW (<code>ZSCALER_FIREWALL</code>)</li>
+<li>Zscaler Internet Access Audit Logs (<code>ZSCALER_INTERNET_ACCESS</code>)</li>
+<li>Zscaler Tunnel (<code>ZSCALER_TUNNEL</code>)</li>
+<li>Zscaler (<code>ZSCALER_WEBPROXY</code>)</li>
+<li>Zscaler Secure Private Access Audit Logs (<code>ZSCALER_ZPA_AUDIT</code>)</li>
+<li>Zscaler Private Access (<code>ZSCALER_ZPA</code>)</li>
+</ul>
+<p>The following log types were added without a default parser. Each parser is listed by product name and <code>log_type</code> value, where applicable.</p>
+<ul>
+<li>Alicloud ApsaraDB (<code>ALICLOUD_APSARADB</code>)</li>
+<li>AliCloud Firewall (<code>ALICLOUD_FIREWALL</code>)</li>
+<li>AuthMind (<code>AUTHMIND</code>)</li>
+<li>Microsoft Entra Recommendations (<code>MS_ENTRA_RECOMMENDATIONS</code>)</li>
+<li>Palo Alto Networks Prisma Access (<code>PAN_PRISMA_ACCESS</code>)</li>
+<li>Trellix Malware Analysis (<code>TRELLIX_AX</code>)</li>
+<li>Everfox ULTRA (<code>ULTRA</code>)</li>
+<li>ZScaler NSS VM (<code>ZSCALER_NSS_VM</code>)</li>
+</ul>]]></content>
+    <summary>Google SecOps has updated its supported parsers. Please note that these changes may take one to four days to reflect in your region.</summary>
+    <title>Changed: Parser Updates</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

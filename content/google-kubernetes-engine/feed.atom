@@ -2,9 +2,63 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2025-08-27T00:00:00+00:00</updated>
+  <updated>2025-08-28T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-28:security:0</id>
+    <published>2025-08-28T00:00:00+00:00</published>
+    <updated>2025-08-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>GKE version 1.33.0-gke.1276000 and later remediate a low severity
+vulnerability, in which an attacker with the ability to patch Node resources by
+using the Kubernetes API could change specific node labels in clusters that use
+Workload Identity Federation for GKE. This could result in the attacker gaining
+access to node metadata, such as the IAM service account.
+To remediate this
+vulnerability, a validation policy is enforced that prevents unauthorized
+modifications to the node labels that control metadata protection.</p>]]></content>
+    <summary>GKE versions 1.33.0-gke.1276000 and later address a vulnerability where an attacker could access node metadata by modifying node labels via the Kubernetes API. A new validation policy prevents unauthorized label changes to protect metadata.</summary>
+    <title>Security: Security Update for GKE Workload Identity Federation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-28:feature:1</id>
+    <published>2025-08-28T00:00:00+00:00</published>
+    <updated>2025-08-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now run GPU workloads on Confidential GKE Nodes with the A3 High
+machine type and NVIDIA H100 GPUs. This feature is available in
+GKE version 1.32.2-gke.1297000 and later for manual GPU driver
+installation, and in version 1.33.3-gke.1392000 and later for automatic driver
+installation. This enables stronger data protection and integrity for
+GPU-accelerated computations running within GKE clusters and
+nodes. This feature is in General Availability.</p>
+<p>For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/gpus-confidential-nodes">Encrypt GPU workload data in use with Confidential GKE Nodes</a>.</p>]]></content>
+    <summary>You can now run GPU workloads on Confidential GKE Nodes with the A3 High machine type and NVIDIA H100 GPUs. This feature is available in GKE version 1.32.2-gke.1297000 and later for manual GPU driver installation, and in version 1.33.3-gke.1392000 and later for automatic driver installation. This enables stronger data protection and integrity for GPU-accelerated computations running within GKE clusters and nodes. This feature is in General Availability.</summary>
+    <title>Feature: Run GPU workloads on Confidential GKE Nodes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-28:feature:2</id>
+    <published>2025-08-28T00:00:00+00:00</published>
+    <updated>2025-08-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now run GPU workloads on Confidential GKE Nodes with the A3 High
+machine type and NVIDIA H100 GPUs. This feature is available in
+GKE version 1.32.2-gke.1297000 and later for manual GPU driver
+installation, and in version 1.33.3-gke.1392000 and later for automatic driver
+installation. This enables stronger data protection and integrity for
+GPU-accelerated computations running within GKE clusters and
+nodes. This feature is in General Availability.</p>
+<p>For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/gpus-confidential-nodes">Encrypt GPU workload data in use with Confidential GKE Nodes</a>.</p>]]></content>
+    <summary>You can now run GPU workloads on Confidential GKE Nodes with the A3 High machine type and NVIDIA H100 GPUs. This feature is available in GKE version 1.32.2-gke.1297000 and later for manual GPU driver installation, and in version 1.33.3-gke.1392000 and later for automatic driver installation. This enables stronger data protection and integrity for GPU-accelerated computations running within GKE clusters and nodes. This feature is in General Availability.</summary>
+    <title>Feature: Run GPU workloads on Confidential GKE Nodes</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -407,20 +461,6 @@ clusters.</p>
     <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:feature:2</id>
     <published>2025-08-21T00:00:00+00:00</published>
     <updated>2025-08-21T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The <a href="https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series">M4 machine series</a>
-is generally available in GKE Autopilot clusters with
-version 1.33.4-gke.1013000 or later. For more information, see M4 in
-<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests">Resource requests in Autopilot</a>.</p>]]></content>
-    <summary>M4 machine series available in GKE Autopilot</summary>
-    <title>Feature: M4 machine series</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:feature:3</id>
-    <published>2025-08-21T00:00:00+00:00</published>
-    <updated>2025-08-21T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Starting with GKE version 1.33.2-gke.1240000 and later, you can
 now specify the network service tier (Standard or Premium) for ephemeral IP
 addresses used by the <code>gke-l7-regional-external-managed</code> GatewayClass. This
@@ -429,6 +469,20 @@ clusters.</p>
 <p>For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/deploying-gateways#configure-network-tier">Configure network tier for Gateway IP addresses</a>.</p>]]></content>
     <summary>You can now select network tiers for ephemeral IPs.</summary>
     <title>Feature: Network Tier Selection for Gateway Resources</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:feature:3</id>
+    <published>2025-08-21T00:00:00+00:00</published>
+    <updated>2025-08-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series">M4 machine series</a>
+is generally available in GKE Autopilot clusters with
+version 1.33.4-gke.1013000 or later. For more information, see M4 in
+<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests">Resource requests in Autopilot</a>.</p>]]></content>
+    <summary>M4 machine series available in GKE Autopilot</summary>
+    <title>Feature: M4 machine series</title>
   </entry>
   <entry>
     <author>
@@ -1324,6 +1378,17 @@ the Horizontal Pod Autoscaler. You can optionally
     <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-08:feature:0</id>
     <published>2025-08-08T00:00:00+00:00</published>
     <updated>2025-08-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The C4 machine series now has General Availability machine types that support Local SSD storage options. These machine types are available in all GKE versions for Standard mode, and in GKE version 1.33.1-gke.1545000 and later for Autopilot mode. For more information about these machine types, see the "C4 standard with Local SSD" and "C4 highmem with Local SSD" tabs in <a href="https://cloud.google.com/compute/docs/general-purpose-machines#c4_machine_types">C4 machine types</a>.</p>]]></content>
+    <summary>New C4 machine types with Local SSD are now available for GKE.</summary>
+    <title>Feature: C4 machine types now support Local SSD</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-08:feature:1</id>
+    <published>2025-08-08T00:00:00+00:00</published>
+    <updated>2025-08-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>You can now <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#kubelet-options">customize a node system configuration</a> with the following new Kubelet, Sysctl, and Linux config options:</p>
 <ul>
 <li>
@@ -1370,17 +1435,6 @@ the Horizontal Pod Autoscaler. You can optionally
 </ul>]]></content>
     <summary>New options available for Kubelet, Sysctl, and Linux config. Customize node system configuration.</summary>
     <title>Feature: Node System Configuration Options</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-08:feature:1</id>
-    <published>2025-08-08T00:00:00+00:00</published>
-    <updated>2025-08-08T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The C4 machine series now has General Availability machine types that support Local SSD storage options. These machine types are available in all GKE versions for Standard mode, and in GKE version 1.33.1-gke.1545000 and later for Autopilot mode. For more information about these machine types, see the "C4 standard with Local SSD" and "C4 highmem with Local SSD" tabs in <a href="https://cloud.google.com/compute/docs/general-purpose-machines#c4_machine_types">C4 machine types</a>.</p>]]></content>
-    <summary>New C4 machine types with Local SSD are now available for GKE.</summary>
-    <title>Feature: C4 machine types now support Local SSD</title>
   </entry>
   <entry>
     <author>

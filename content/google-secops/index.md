@@ -1,5 +1,159 @@
 # Google SecOps
 
+## 2025-08-28
+
+### Changed
+
+**Composite detections for MITRE ATT&CK**
+
+The [Curated Detections](https://cloud.google.com/chronicle/docs/detection/use-curated-detections) feature has been enhanced with new [composite rules](https://cloud.google.com/chronicle/docs/detection/composite-rules) that define chains of MITRE ATT&CK tactics and techniques.
+
+These powerful new rule packs are now in public preview for customers with a [Google SecOps Enterprise or Enterprise Plus license](https://cloud.google.com/security/products/security-operations).
+
+To learn more, a companion blog post will be published on the [Google Security Cloud Community](https://security.googlecloudcommunity.com/) on September 9, 2025.
+
+---
+## 2025-08-27
+
+### Changed
+
+Google SecOps has updated the list of supported default parsers. Parsers are updated gradually, so it might take one to four days before you see the changes reflected in your region.
+
+The following supported default parsers have been updated. Each parser is listed by product name and `log_type` value, where applicable. This list includes both released default parsers and pending parser updates.
+
+* A10 Load Balancer (`A10_LOAD_BALANCER`)
+* AIX system (`AIX_SYSTEM`)
+* Apache (`APACHE`)
+* Arcsight CEF (`ARCSIGHT_CEF`)
+* Aruba Switch (`ARUBA_SWITCH`)
+* Aruba (`ARUBA_WIRELESS`)
+* Attivo Networks (`ATTIVO`)
+* Auth0 (`AUTH_ZERO`)
+* Amazon VPC Transit Gateway Flow Logs (`AWS_VPC_TRANSIT_GATEWAY`)
+* AWS WAF (`AWS_WAF`)
+* Azure AD (`AZURE_AD`)
+* Azure AD Organizational Context (`AZURE_AD_CONTEXT`)
+* Azure Firewall (`AZURE_FIREWALL`)
+* Azure Front Door (`AZURE_FRONT_DOOR`)
+* Carbon Black App Control (`CB_APP_CONTROL`)
+* None (`CHROME_MANAGEMENT`)
+* Cisco ASA (`CISCO_ASA_FIREWALL`)
+* Cisco DNA Center Platform (`CISCO_DNAC`)
+* Cisco Email Security (`CISCO_EMAIL_SECURITY`)
+* Cisco Firepower NGFW (`CISCO_FIREPOWER_FIREWALL`)
+* Cisco Internetwork Operating System (`CISCO_IOS`)
+* Cisco IronPort (`CISCO_IRONPORT`)
+* Cisco ISE (`CISCO_ISE`)
+* Cisco Router (`CISCO_ROUTER`)
+* Cisco vManage SD-WAN (`CISCO_SDWAN`)
+* Cisco Switch (`CISCO_SWITCH`)
+* Cisco Umbrella Audit (`CISCO_UMBRELLA_AUDIT`)
+* Cisco VCS Expressway (`CISCO_VCS`)
+* Cisco WSA (`CISCO_WSA`)
+* Citrix Netscaler (`CITRIX_NETSCALER`)
+* Claroty Xdome (`CLAROTY_XDOME`)
+* HP Aruba (ClearPass) (`CLEARPASS`)
+* Cloudflare (`CLOUDFLARE`)
+* Cloudflare WAF (`CLOUDFLARE_WAF`)
+* Corelight (`CORELIGHT`)
+* Palo Alto Cortex XDR Alerts (`CORTEX_XDR`)
+* CrowdStrike Alerts API (`CS_ALERTS`)
+* CrowdStrike Detection Monitoring (`CS_DETECTS`)
+* CrowdStrike Falcon (`CS_EDR`)
+* CrowdStrike Falcon Stream (`CS_STREAM`)
+* Cyberark Privilege Cloud (`CYBERARK_PRIVILEGE_CLOUD`)
+* Darktrace (`DARKTRACE`)
+* Datadog (`DATADOG`)
+* Elastic Defend (`ELASTIC_DEFEND`)
+* F5 ASM (`F5_ASM`)
+* F5 Distributed Cloud Services (`F5_DCS`)
+* F5 Silverline (`F5_SILVERLINE`)
+* Fidelis Network (`FIDELIS_NETWORK`)
+* FireEye (`FIREEYE_ALERT`)
+* FireEye NX (`FIREEYE_NX`)
+* Forcepoint DLP (`FORCEPOINT_DLP`)
+* ForgeRock Identity Cloud (`FORGEROCK_IDENTITY_CLOUD`)
+* FortiGate (`FORTINET_FIREWALL`)
+* Cloud SQL (`GCP_CLOUDSQL`)
+* Google Cloud DNS Threat Detector (`GCP_DNS_ATD`)
+* Cloud Load Balancing (`GCP_LOADBALANCING`)
+* None (`GCP_SECURITYCENTER_THREAT`)
+* VPC Flow Logs (`GCP_VPC_FLOW`)
+* AWS GuardDuty (`GUARDDUTY`)
+* IBM-i Operating System (`IBM_I`)
+* Imperva (`IMPERVA_WAF`)
+* Infoblox DHCP (`INFOBLOX_DHCP`)
+* Jamf Protect Telemetry V2 (`JAMF_TELEMETRY_V2`)
+* Kemp Load Balancer (`KEMP_LOADBALANCER`)
+* Kubernetes Node (`KUBERNETES_NODE`)
+* ManageEngine AD360 (`MANAGE_ENGINE_AD360`)
+* McAfee ePolicy Orchestrator (`MCAFEE_EPO`)
+* McAfee IPS (`MCAFEE_IPS`)
+* Medigate IoT (`MEDIGATE_IOT`)
+* Microsoft Defender for Endpoint (`MICROSOFT_DEFENDER_ENDPOINT`)
+* Microsoft Graph API Alerts (`MICROSOFT_GRAPH_ALERT`)
+* Microsoft Sentinel (`MICROSOFT_SENTINEL`)
+* Microsoft SQL Server (`MICROSOFT_SQL`)
+* Mikrotik Router (`MIKROTIK_ROUTER`)
+* Netskope V2 (`NETSKOPE_ALERT_V2`)
+* Netskope Web Proxy (`NETSKOPE_WEBPROXY`)
+* Unix system (`NIX_SYSTEM`)
+* Oracle Cloud Infrastructure VCN Flow Logs (`OCI_FLOW`)
+* Office 365 (`OFFICE_365`)
+* Office 365 Message Trace (`OFFICE_365_MESSAGETRACE`)
+* Okta (`OKTA`)
+* Okta Scaleft (`OKTA_SCALEFT`)
+* Oracle (`ORACLE_DB`)
+* Orca Cloud Security Platform (`ORCA`)
+* Proofpoint Threat Response (`PROOFPOINT_TRAP`)
+* Quest Active Directory (`QUEST_AD`)
+* Radware Web Application Firewall (`RADWARE_FIREWALL`)
+* Red Hat OpenShift (`REDHAT_OPENSHIFT`)
+* Symantec Endpoint Protection (`SEP`)
+* Silverfort Authentication Platform (`SILVERFORT`)
+* Squid Web Proxy (`SQUID_WEBPROXY`)
+* STIX Threat Intelligence (`STIX`)
+* Symantec DLP (`SYMANTEC_DLP`)
+* Sysdig (`SYSDIG`)
+* Tenable Security Center (`TENABLE_SC`)
+* Trend Micro (`TIPPING_POINT`)
+* Trellix HX Event Streamer (`TRELLIX_HX_ES`)
+* Trend Micro Apex one (`TRENDMICRO_APEX_ONE`)
+* Trend Micro Vision One Activity (`TRENDMICRO_VISION_ONE_ACTIVITY`)
+* Trend Micro Vision One (`TRENDMICRO_VISION_ONE`)
+* Trend Micro Vision One Workbench (`TRENDMICRO_VISION_ONE_WORKBENCH`)
+* Ubiquiti UniFi Switch (`UBIQUITI_SWITCH`)
+* Cisco Umbrella DNS (`UMBRELLA_DNS`)
+* Cisco Umbrella IP (`UMBRELLA_IP`)
+* Varonis (`VARONIS`)
+* Vectra XDR (`VECTRA_XDR`)
+* VMware vCenter (`VMWARE_VCENTER`)
+* VMware vRealize Suite (VMware Aria) (`VMWARE_VREALIZE`)
+* Windows Event (`WINEVTLOG`)
+* Windows Event (XML) (`WINEVTLOG_XML`)
+* Zscaler CASB (`ZSCALER_CASB`)
+* ZScaler Deception (`ZSCALER_DECEPTION`)
+* Zscaler DLP (`ZSCALER_DLP`)
+* ZScaler DNS (`ZSCALER_DNS`)
+* ZScaler NGFW (`ZSCALER_FIREWALL`)
+* Zscaler Internet Access Audit Logs (`ZSCALER_INTERNET_ACCESS`)
+* Zscaler Tunnel (`ZSCALER_TUNNEL`)
+* Zscaler (`ZSCALER_WEBPROXY`)
+* Zscaler Secure Private Access Audit Logs (`ZSCALER_ZPA_AUDIT`)
+* Zscaler Private Access (`ZSCALER_ZPA`)
+
+The following log types were added without a default parser. Each parser is listed by product name and `log_type` value, where applicable.
+
+* Alicloud ApsaraDB (`ALICLOUD_APSARADB`)
+* AliCloud Firewall (`ALICLOUD_FIREWALL`)
+* AuthMind (`AUTHMIND`)
+* Microsoft Entra Recommendations (`MS_ENTRA_RECOMMENDATIONS`)
+* Palo Alto Networks Prisma Access (`PAN_PRISMA_ACCESS`)
+* Trellix Malware Analysis (`TRELLIX_AX`)
+* Everfox ULTRA (`ULTRA`)
+* ZScaler NSS VM (`ZSCALER_NSS_VM`)
+
+---
 ## 2025-08-21
 
 ### Feature

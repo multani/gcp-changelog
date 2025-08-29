@@ -192,6 +192,7 @@ The following issues were addressed in this release:
 * Fixed an issue where deltacast selected the agent with the longest time in the Available status instead of the agent with the longest time since their last customer interaction.
 * Fixed an issue where escalations from a virtual agent to a human agent failed, and audio from the last agent response before human agent escalation was truncated.
 * Fixed an issue where transcriptions weren't being created for IVR calls.
+* Fixed an issue where agents could become stuck in wrap-up status, particularly with concurrent calls or quick callbacks.
 
 ---
 ## 2025-08-13

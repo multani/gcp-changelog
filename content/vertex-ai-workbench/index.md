@@ -1,5 +1,20 @@
 # Vertex AI Workbench
 
+## 2025-08-29
+
+### Feature
+
+**M132 release**
+
+The M132 release of Vertex AI Workbench instances includes the following:
+
+* The new scheduler Jupyter plugin (`scheduler-jupyter-plugin`) is now preinstalled in the Jupyterlab 4 environment, with support for both the Cloud Composer and Vertex AI notebook schedulers.
+* Updated the Dataproc JupyterLab plugin (`dataproc-jupyter-plugin`) to version 0.1.90.
+* Patched bugs related to the managed end user credentials feature (Preview), resolving an incompatibility with listing Dataproc remote kernels.
+* Patched a bug that caused instances with disabled proxy access to get stuck in provisioning.
+* Removed the archived Debian 11 backports repository, resolving an issue with running `apt update` within the instance.
+
+---
 ## 2025-08-05
 
 ### Feature

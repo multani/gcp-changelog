@@ -1,5 +1,38 @@
 # Gemini Code Assist
 
+## 2025-08-29
+
+### Feature
+
+
+
+### Full Remote Codebase Awareness
+
+Comprehensive understanding of your entire remote codebase directly within the
+chat interface. This new capability improves the quality of suggestions and
+answers to general questions about your project. To use it, ask an abstract
+question about your remote context, such as "What does this repository do?" and
+Gemini uses its deep knowledge of the codebase to provide a detailed and
+accurate response. For more information, see
+[Code customization overview](https://cloud.google.com/gemini/docs/codeassist/code-customization-overview).
+
+### Feature
+
+
+
+### Get suggestions from your documentation stored in Markdown files
+
+Gemini Code Assist code customization can now index and understand your
+organization's internal documentation, stored in Markdown files. This means that
+when you ask a question or request a code snippet, Gemini will use the context
+available in your team's documentation to provide more accurate and tailored
+responses, improving both the quality of the suggestions and the overall
+relevance of the information you receive. To take advantage of this, ask a
+question that is related to the context available in your remote Markdown files,
+and Gemini will use that knowledge to assist you. For more information, see
+[Code customization overview](https://cloud.google.com/gemini/docs/codeassist/code-customization-overview).
+
+---
 ## 2025-08-27
 
 ### Change in telemetry setting behavior for VS Code Gemini Code Assist
@@ -63,6 +96,23 @@ suggestion selected by default.
 ---
 ## 2025-08-01
 
+### Clickable filenames in chat output
+
+#### IntelliJ Gemini Code Assist `1.23.3`
+
+IntelliJ Gemini Code Assist provides clickable filenames when it references a
+file in your workspace as part of its chat response. Clicking the filename opens
+the file in your workspace.
+
+### Chat banner shows release channel information
+
+#### IntelliJ Gemini Code Assist `1.23.3`
+
+The IntelliJ Gemini Code Assist chat banner shows the release channel that
+you're currently working in.
+
+![IntelliJ Gemini Code Assist chat banner shows release channel info.](https://cloud.google.com/gemini/images/release-notes-images/intellij-release-channel-info.png)
+
 ### View code diff in IntelliJ chat
 
 #### IntelliJ Gemini Code Assist `1.23.3`
@@ -85,23 +135,6 @@ suggestions. You have the option to accept a single code change or all suggested
 changes.
 
 ![Structured chat edits in IntelliJ Gemini Code Assist](https://cloud.google.com/gemini/images/release-notes-images/intellij-structured-chat-edits.png)
-
-### Clickable filenames in chat output
-
-#### IntelliJ Gemini Code Assist `1.23.3`
-
-IntelliJ Gemini Code Assist provides clickable filenames when it references a
-file in your workspace as part of its chat response. Clicking the filename opens
-the file in your workspace.
-
-### Chat banner shows release channel information
-
-#### IntelliJ Gemini Code Assist `1.23.3`
-
-The IntelliJ Gemini Code Assist chat banner shows the release channel that
-you're currently working in.
-
-![IntelliJ Gemini Code Assist chat banner shows release channel info.](https://cloud.google.com/gemini/images/release-notes-images/intellij-release-channel-info.png)
 
 ---
 ## 2025-07-31

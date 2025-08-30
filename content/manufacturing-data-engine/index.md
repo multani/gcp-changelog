@@ -2,10 +2,6 @@
 
 ## 2025-08-29
 
-### Announcement
-
-
-
 ### Release 1.5.1
 
 This release is a **critical update** if you have an existing deployment of MDE version 1.5.0. This release resolves a bug regarding materialization of metadata instances created prior to MDE 1.5.0. This release also includes other minor improvements and bug fixes.

@@ -1,5 +1,19 @@
 # Google Kubernetes Engine
 
+## 2025-08-29
+
+### Fixed
+
+A fix is available for an issue with Cloud Storage FUSE CSI driver that could
+cause Pod to be stuck during startup after a node restart event.
+Cloud Storage FUSE CSI driver now gracefully handles a node restart behavior.
+
+The fix is available in the following GKE versions:
+
+* 1.32.6-gke.1125000 and later
+* 1.33.1-gke.1959000 and later
+
+---
 ## 2025-08-28
 
 ### Security
@@ -384,6 +398,13 @@ For more information, see [Configure network tier for Gateway IP addresses](http
 
 ### Feature
 
+The [M4 machine series](https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series)
+is generally available in GKE Autopilot clusters with
+version 1.33.4-gke.1013000 or later. For more information, see M4 in
+[Resource requests in Autopilot](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests).
+
+### Feature
+
 Starting with GKE version 1.33.2-gke.1240000 and later, you can
 now specify the network service tier (Standard or Premium) for ephemeral IP
 addresses used by the `gke-l7-regional-external-managed` GatewayClass. This
@@ -391,13 +412,6 @@ GatewayClass configures Regional External Application Load Balancers for single
 clusters.
 
 For more information, see [Configure network tier for Gateway IP addresses](https://cloud.google.com/kubernetes-engine/docs/how-to/deploying-gateways#configure-network-tier).
-
-### Feature
-
-The [M4 machine series](https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series)
-is generally available in GKE Autopilot clusters with
-version 1.33.4-gke.1013000 or later. For more information, see M4 in
-[Resource requests in Autopilot](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests).
 
 ### Changed
 

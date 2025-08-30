@@ -1,5 +1,16 @@
 # Capacity Planner
 
+## 2025-08-29
+
+### Announcement
+
+[Capacity Planner](https://cloud.google.com/capacity-planner/docs/overview) is available in [Preview](https://cloud.google.com/products#product-launch-stages)!
+
+### Feature
+
+Reference documentation has been added for the REST Capacity Planner API. For more information, see [Authenticate to Capacity Planner](https://cloud.google.com/capacity-planner/docs/authentication) and the [REST API reference overview](https://cloud.google.com/capacity-planner/docs/reference/rest).
+
+---
 ## 2025-08-25
 
 ### Feature

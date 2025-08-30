@@ -1,6 +1,24 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
+    "2025-08-29": [
+      {
+        "kind": "Announcement",
+        "content": "**Mobile SDK 2.14 pre-release notes**\n\nHere are the pre-release notes for Mobile SDK 2.14. When we release version 2.14, we expect the new capabilities to be as shown here.\n\n* Android SDK and iOS SDK:\n\n  + Support for virtual agent to virtual agent chat transfers by queue.\n  + Support for hiding the download transcript button in the options menu, the post-chat screen, or both.\n  + Improved accessibility, including better navigation and screen reader support.\n* Android SDK:\n\n  + Support for hiding the SDK using the `Ujet.hideSDK()` method.\n  + New event types: `MessageLinkClicked` and `QuickReplyClicked`.\n\nTo support the new virtual agent chat transfer capabilities of this release, we've added a new configuration setting in the Google Cloud CCaaS portal. You can use this setting to hide transfer system messages in chat sessions with virtual agent to virtual agent transfers.\n\n**Administrators**: In the **Settings > Chat > Web & Mobile Chat Settings** pane, there's a new **Transfers** checkbox.",
+        "summary": {
+          "title": "Mobile SDK 2.14",
+          "summary": "New version of the Mobile SDK includes support for virtual agent transfers, improved accessibility, and new event types."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed an issue where the Android SDK wouldn't minimize when an end-user clicked a deep link.",
+        "summary": {
+          "title": "Android SDK minimized",
+          "summary": "The Android SDK now correctly minimizes when a user clicks a deep link."
+        }
+      }
+    ],
     "2025-08-27": [
       {
         "kind": "Announcement",

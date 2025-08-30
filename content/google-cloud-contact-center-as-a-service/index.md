@@ -1,5 +1,32 @@
 # Google Cloud Contact Center as a Service
 
+## 2025-08-29
+
+### Announcement
+
+**Mobile SDK 2.14 pre-release notes**
+
+Here are the pre-release notes for Mobile SDK 2.14. When we release version 2.14, we expect the new capabilities to be as shown here.
+
+* Android SDK and iOS SDK:
+
+  + Support for virtual agent to virtual agent chat transfers by queue.
+  + Support for hiding the download transcript button in the options menu, the post-chat screen, or both.
+  + Improved accessibility, including better navigation and screen reader support.
+* Android SDK:
+
+  + Support for hiding the SDK using the `Ujet.hideSDK()` method.
+  + New event types: `MessageLinkClicked` and `QuickReplyClicked`.
+
+To support the new virtual agent chat transfer capabilities of this release, we've added a new configuration setting in the Google Cloud CCaaS portal. You can use this setting to hide transfer system messages in chat sessions with virtual agent to virtual agent transfers.
+
+**Administrators**: In the **Settings > Chat > Web & Mobile Chat Settings** pane, there's a new **Transfers** checkbox.
+
+### Fixed
+
+Fixed an issue where the Android SDK wouldn't minimize when an end-user clicked a deep link.
+
+---
 ## 2025-08-27
 
 ### Announcement

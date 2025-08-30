@@ -2,9 +2,52 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Storage</title>
   <subtitle>Changelog for Google Cloud product: Cloud Storage</subtitle>
-  <updated>2025-08-18T00:00:00+00:00</updated>
+  <updated>2025-08-28T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-storage</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-storage/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2025-08-28:changed:0</id>
+    <published>2025-08-28T00:00:00+00:00</published>
+    <updated>2025-08-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Beginning October 31, 2025, if you set an object's <code>age</code> condition to a value of <code>0</code> when setting Object Lifecycle Management rules, the condition is satisfied at midnight UTC after the object is created, which helps reduce unintended data loss. To learn more about the <code>age</code> condition, see <a href="https://cloud.google.com/storage/docs/lifecycle#conditions">Lifecycle conditions</a>.</p>]]></content>
+    <summary>The object's age condition now satisfies at midnight UTC after the object is created when set to 0, reducing unintended data loss.</summary>
+    <title>Changed: Object age condition changed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2025-08-25:libraries:0</id>
+    <published>2025-08-25T00:00:00+00:00</published>
+    <updated>2025-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
+<h3>Node.js</h3>
+<h3>Changes for <a href="https://github.com/googleapis/nodejs-storage">@google-cloud/storage</a></h3>
+<h4><a href="https://github.com/googleapis/nodejs-storage/compare/v7.16.0...v7.17.0">7.17.0</a> (2025-08-18)</h4>
+<h5>Features</h5>
+<ul>
+<li>Add CSEK to download (<a href="https://github.com/googleapis/nodejs-storage/issues/2604">#2604</a>) (<a href="https://github.com/googleapis/nodejs-storage/commit/cacc0be49a4fe81c384180bdfd77820b6b3f3001">cacc0be</a>)</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li>Propagate errors when using pipelines (<a href="https://github.com/googleapis/nodejs-storage/issues/2560">#2560</a>) (<a href="https://github.com/googleapis/nodejs-storage/issues/2624">#2624</a>) (<a href="https://github.com/googleapis/nodejs-storage/commit/a43b4904ecf2ebacde22bc6efbdcf97ac886e28d">a43b490</a>)</li>
+<li>Typo correction (<a href="https://github.com/googleapis/nodejs-storage/issues/2610">#2610</a>) (<a href="https://github.com/googleapis/nodejs-storage/commit/9cae69cc280227737b5a1a1476eae1b2612b162b">9cae69c</a>)</li>
+</ul>
+<h3>Go</h3>
+<h3>Changes for <a href="https://github.com/googleapis/google-cloud-go/tree/main/storage/internal/apiv2">storage/internal/apiv2</a></h3>
+<h4><a href="https://github.com/googleapis/google-cloud-go/compare/storage/v1.56.0...storage/v1.56.1">1.56.1</a> (2025-08-19)</h4>
+<h5>Bug Fixes</h5>
+<ul>
+<li><strong>storage:</strong> Fix redirect logic in MRD (<a href="https://github.com/googleapis/google-cloud-go/issues/12733">#12733</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/9f369f931853220550cabb3d67a5a5d3d9e137ba">9f369f9</a>)</li>
+<li><strong>storage:</strong> Pass all user options to NewService (<a href="https://github.com/googleapis/google-cloud-go/issues/12615">#12615</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/77cdb832a374eba29e4de7699324a87f1d20eea3">77cdb83</a>)</li>
+<li><strong>storage:</strong> ZB Reader redirect support (<a href="https://github.com/googleapis/google-cloud-go/issues/12703">#12703</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/3c7ea5ceb199d5787d36bf8f415f028bea66e3b5">3c7ea5c</a>)</li>
+</ul>]]></content>
+    <summary>This is a weekly digest of client library updates, including new features and bug fixes for Node.js and Go.</summary>
+    <title>Libraries: Client Library Updates</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

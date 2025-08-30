@@ -2,10 +2,6 @@
 
 ## 2025-08-29
 
-### Feature
-
-
-
 ### Full Remote Codebase Awareness
 
 Comprehensive understanding of your entire remote codebase directly within the
@@ -15,10 +11,6 @@ question about your remote context, such as "What does this repository do?" and
 Gemini uses its deep knowledge of the codebase to provide a detailed and
 accurate response. For more information, see
 [Code customization overview](https://cloud.google.com/gemini/docs/codeassist/code-customization-overview).
-
-### Feature
-
-
 
 ### Get suggestions from your documentation stored in Markdown files
 

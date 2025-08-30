@@ -1,5 +1,12 @@
 # Cloud SQL for SQL Server
 
+## 2025-08-29
+
+### Feature
+
+[`Max degree of parallelism (MAXDOP)`](https://cloud.google.com/sql/docs/sqlserver/flags#max-degree-of-parallelism) is a Microsoft database flag available for use in Cloud SQL for SQL Server. This flag lets you limit the maximum number of threads used when running a single query in a parallel plan.
+
+---
 ## 2025-08-21
 
 ### Feature

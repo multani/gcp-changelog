@@ -1,6 +1,16 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2025-08-29": [
+      {
+        "kind": "Fixed",
+        "content": "A fix is available for an issue with Cloud Storage FUSE CSI driver that could\ncause Pod to be stuck during startup after a node restart event.\nCloud Storage FUSE CSI driver now gracefully handles a node restart behavior.\n\nThe fix is available in the following GKE versions:\n\n* 1.32.6-gke.1125000 and later\n* 1.33.1-gke.1959000 and later",
+        "summary": {
+          "title": "Cloud Storage FUSE CSI driver issue fixed",
+          "summary": "A fix is available for an issue with Cloud Storage FUSE CSI driver that could cause Pod to be stuck during startup after a node restart event."
+        }
+      }
+    ],
     "2025-08-28": [
       {
         "kind": "Security",
@@ -114,18 +124,18 @@
       },
       {
         "kind": "Feature",
-        "content": "Starting with GKE version 1.33.2-gke.1240000 and later, you can\nnow specify the network service tier (Standard or Premium) for ephemeral IP\naddresses used by the `gke-l7-regional-external-managed` GatewayClass. This\nGatewayClass configures Regional External Application Load Balancers for single\nclusters.\n\nFor more information, see [Configure network tier for Gateway IP addresses](https://cloud.google.com/kubernetes-engine/docs/how-to/deploying-gateways#configure-network-tier).",
-        "summary": {
-          "title": "Network Tier Selection for Gateway Resources",
-          "summary": "You can now select network tiers for ephemeral IPs."
-        }
-      },
-      {
-        "kind": "Feature",
         "content": "The [M4 machine series](https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series)\nis generally available in GKE Autopilot clusters with\nversion 1.33.4-gke.1013000 or later. For more information, see M4 in\n[Resource requests in Autopilot](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests).",
         "summary": {
           "title": "M4 machine series",
           "summary": "M4 machine series available in GKE Autopilot"
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Starting with GKE version 1.33.2-gke.1240000 and later, you can\nnow specify the network service tier (Standard or Premium) for ephemeral IP\naddresses used by the `gke-l7-regional-external-managed` GatewayClass. This\nGatewayClass configures Regional External Application Load Balancers for single\nclusters.\n\nFor more information, see [Configure network tier for Gateway IP addresses](https://cloud.google.com/kubernetes-engine/docs/how-to/deploying-gateways#configure-network-tier).",
+        "summary": {
+          "title": "Network Tier Selection for Gateway Resources",
+          "summary": "You can now select network tiers for ephemeral IPs."
         }
       },
       {

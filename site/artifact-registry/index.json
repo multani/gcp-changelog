@@ -1,6 +1,16 @@
 {
   "name": "Artifact Registry",
   "entries": {
+    "2025-08-29": [
+      {
+        "kind": "Changed",
+        "content": "The Container Analysis API now supports the option of returning partial results during region-down failure conditions when listing notes, listing occurrences, or generating vulnerability summaries. For more information, view the `returnPartialSuccess` parameter for the following requests:\n\n* [v1.projects.locations.notes.list](https://cloud.google.com/artifact-analysis/docs/reference/rest/v1/projects.locations.notes/list)\n* [v1.projects.locations.occurrences.getVulnerabilitySummary](https://cloud.google.com/artifact-analysis/docs/reference/rest/v1/projects.locations.occurrences/getVulnerabilitySummary)\n* [v1.projects.locations.occurrences.list](https://cloud.google.com/artifact-analysis/docs/reference/rest/v1/projects.locations.occurrences/list)\n* [v1.projects.notes.list](https://cloud.google.com/artifact-analysis/docs/reference/rest/v1/projects.notes/list)\n* [v1.projects.occurrences.getVulnerabilitySummary](https://cloud.google.com/artifact-analysis/docs/reference/rest/v1/projects.occurrences/getVulnerabilitySummary)\n* [v1.projects.occurrences.list](https://cloud.google.com/artifact-analysis/docs/reference/rest/v1/projects.occurrences/list)\n* [v1beta1.projects.locations.notes.list](https://cloud.google.com/artifact-analysis/docs/reference/rest/v1beta1/projects.locations.notes/list)\n* [v1beta1.projects.locations.occurrences.getVulnerabilitySummary](https://cloud.google.com/artifact-analysis/docs/reference/rest/v1beta1/projects.locations.occurrences/getVulnerabilitySummary)\n* [v1beta1.projects.locations.occurrences.list](https://cloud.google.com/artifact-analysis/docs/reference/rest/v1beta1/projects.locations.occurrences/list)\n* [v1beta1.projects.notes.list](https://cloud.google.com/artifact-analysis/docs/reference/rest/v1beta1/projects.notes/list)\n* [v1beta1.projects.occurrences.getVulnerabilitySummary](https://cloud.google.com/artifact-analysis/docs/reference/rest/v1beta1/projects.occurrences/getVulnerabilitySummary)\n* [v1beta1.projects.occurrences.list](https://cloud.google.com/artifact-analysis/docs/reference/rest/v1beta1/projects.occurrences/list)",
+        "summary": {
+          "title": "Partial results for Container Analysis API",
+          "summary": "The Container Analysis API now supports partial results when encountering regional failures during note and occurrence listings, and vulnerability summary generation. This enhancement aims to improve reliability by allowing operations to complete even if some data cannot be retrieved."
+        }
+      }
+    ],
     "2025-06-25": [
       {
         "kind": "Announcement",

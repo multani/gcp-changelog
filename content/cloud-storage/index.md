@@ -1,5 +1,46 @@
 # Cloud Storage
 
+## 2025-08-28
+
+### Changed
+
+Beginning October 31, 2025, if you set an object's `age` condition to a value of `0` when setting Object Lifecycle Management rules, the condition is satisfied at midnight UTC after the object is created, which helps reduce unintended data loss. To learn more about the `age` condition, see [Lifecycle conditions](https://cloud.google.com/storage/docs/lifecycle#conditions).
+
+---
+## 2025-08-25
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Node.js
+
+### Changes for [@google-cloud/storage](https://github.com/googleapis/nodejs-storage)
+
+#### [7.17.0](https://github.com/googleapis/nodejs-storage/compare/v7.16.0...v7.17.0) (2025-08-18)
+
+##### Features
+
+* Add CSEK to download ([#2604](https://github.com/googleapis/nodejs-storage/issues/2604)) ([cacc0be](https://github.com/googleapis/nodejs-storage/commit/cacc0be49a4fe81c384180bdfd77820b6b3f3001))
+
+##### Bug Fixes
+
+* Propagate errors when using pipelines ([#2560](https://github.com/googleapis/nodejs-storage/issues/2560)) ([#2624](https://github.com/googleapis/nodejs-storage/issues/2624)) ([a43b490](https://github.com/googleapis/nodejs-storage/commit/a43b4904ecf2ebacde22bc6efbdcf97ac886e28d))
+* Typo correction ([#2610](https://github.com/googleapis/nodejs-storage/issues/2610)) ([9cae69c](https://github.com/googleapis/nodejs-storage/commit/9cae69cc280227737b5a1a1476eae1b2612b162b))
+
+### Go
+
+### Changes for [storage/internal/apiv2](https://github.com/googleapis/google-cloud-go/tree/main/storage/internal/apiv2)
+
+#### [1.56.1](https://github.com/googleapis/google-cloud-go/compare/storage/v1.56.0...storage/v1.56.1) (2025-08-19)
+
+##### Bug Fixes
+
+* **storage:** Fix redirect logic in MRD ([#12733](https://github.com/googleapis/google-cloud-go/issues/12733)) ([9f369f9](https://github.com/googleapis/google-cloud-go/commit/9f369f931853220550cabb3d67a5a5d3d9e137ba))
+* **storage:** Pass all user options to NewService ([#12615](https://github.com/googleapis/google-cloud-go/issues/12615)) ([77cdb83](https://github.com/googleapis/google-cloud-go/commit/77cdb832a374eba29e4de7699324a87f1d20eea3))
+* **storage:** ZB Reader redirect support ([#12703](https://github.com/googleapis/google-cloud-go/issues/12703)) ([3c7ea5c](https://github.com/googleapis/google-cloud-go/commit/3c7ea5ceb199d5787d36bf8f415f028bea66e3b5))
+
+---
 ## 2025-08-18
 
 ### Libraries

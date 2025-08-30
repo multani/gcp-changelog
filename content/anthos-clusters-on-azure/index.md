@@ -1,5 +1,18 @@
 # Anthos clusters on Azure
 
+## 2025-08-29
+
+### Issue
+
+The following Kubernetes versions are retired and are no longer available for creating new clusters:
+
+* 1.31.4-gke.500
+* 1.30.8-gke.100
+* 1.29.12-gke.100
+
+To create a cluster, use another available Kubernetes version.
+
+---
 ## 2025-07-10
 
 ### Announcement

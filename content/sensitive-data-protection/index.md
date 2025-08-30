@@ -1,5 +1,12 @@
 # Sensitive Data Protection
 
+## 2025-08-29
+
+### Announcement
+
+The August 25 release note announcing the release of the `DOCUMENT_TYPE/FINANCE/INVOICE` and `DOCUMENT_TYPE/MEDICAL/RECORD` infoType detectors was published in error. These infotypes are not available.
+
+---
 ## 2025-08-25
 
 ### Feature

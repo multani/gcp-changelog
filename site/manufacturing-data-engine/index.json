@@ -1,0 +1,55 @@
+{
+  "name": "Manufacturing Data Engine",
+  "entries": {
+    "2025-08-29": [
+      {
+        "kind": "Announcement",
+        "content": "",
+        "summary": {
+          "title": "Google Cloud",
+          "summary": "Google Cloud is a suite of cloud computing services that offers solutions for computing, data storage, data analytics, and machine learning, with physical Google infrastructure."
+        }
+      },
+      {
+        "kind": "Release 1.5.1",
+        "content": "This release is a **critical update** if you have an existing deployment of MDE version 1.5.0. This release resolves a bug regarding materialization of metadata instances created prior to MDE 1.5.0. This release also includes other minor improvements and bug fixes.",
+        "summary": {
+          "title": "Release 1.5.1",
+          "summary": "Critical update for MDE 1.5.0 users. Addresses metadata materialization bug and includes minor improvements."
+        }
+      },
+      {
+        "kind": "Libraries",
+        "content": "**Release signature**\n\n```\nb0fc163\n1.5.1\nffb87d39d343c20abebd2f52df74a2d3\n\n```",
+        "summary": {
+          "title": "Libraries",
+          "summary": "Release signature b0fc163 1.5.1 ffb87d39d343c20abebd2f52df74a2d3"
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "* **Fix (417666631):** Fixed an issue with metadata materialization for metadata instances that had been created prior to migrating to MDE 1.5.0.\n* **Fix (420921890):** Fixed an error when attempting to update an instance tag metadata and saved it for instances that had been created prior to migrating to MDE 1.5.0.\n* **Fix (423535516)**: Fixed inconsistent API response codes when trying to delete non-existing entities.\n* **Fix (383519276)**: Fixed missing fields in MDE logging and added more details to make troubleshooting easier.\n* **Fix (424077359)**: Fixed instance bucket creation through API. It now adds default `createdTime` as the time when the API call was received.\n* **Fix (422991109 and 424084607)**: Fixed `ghost` deletion of Types and Metadata Buckets after removing a configuration package.\n* **Fix (423859259)**: Fixed removal of BigQuery views when a Type is manually deleted.\n* **Fix (406803212)**: Fixed wrong version materialization on MDE system tables.\n* **Fix (407015039)**: Fixed `Delete` button in MDE UI when the system is in PROD mode (Production mode).\n* **Fix (435653743)**: Fixed missing Grafana Terraform module.",
+        "summary": {
+          "title": "Resolved various issues for improved stability",
+          "summary": "Several issues have been resolved, including problems with metadata materialization, instance tag updates, API response codes, MDE logging, instance bucket creation, ghost deletion of Types and Metadata Buckets, removal of BigQuery views, MDE system tables versioning, the Delete button in MDE UI, and the Grafana Terraform module."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "* **Improvement (427447932)**: Brought Docker images to versions without vulnerabilities reported at the time of the release.\n* **Improvement (361290775)**: Modified Terraform deployment scripts to enforce TLS v1.2 for an external MDE UI Load Balancer.",
+        "summary": {
+          "title": "Security Improvements",
+          "summary": "Docker images updated to remove vulnerabilities. Terraform scripts updated to enforce TLS v1.2 for external MDE UI Load Balancer."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "* **Improvement (407009198)**: Improved the error handling when `upload` and `parsing` configuration packages.\n* **Improvement (423531705):** Improved MDE logging for BigQuery sink related operations.\n* **Improvement (423530033):** Improved manifest validation on configuration package uploads.\n* **Improvement (423554635)**: Added `CreatedAt` column with default sorting on the MDE UI configuration packages page.\n* **Improvement (430962108):** Added more sorting options on the MDE UI *Configurations* and *Metadata Instances* pages.\n* **Improvement (423531714)**: Various improvements on Helm charts, including image tag management, and k8s secrets/configmaps.\n* **Improvement (407037164)**: More descriptive message added to MDE UI to confirm Type deletion.",
+        "summary": {
+          "title": "Configuration package improvements",
+          "summary": "Error handling for upload and parsing configuration packages has been improved. Logging for BigQuery sink operations and manifest validation on uploads have also been enhanced. Additionally, new sorting options and a 'CreatedAt' column have been added to the MDE UI."
+        }
+      }
+    ]
+  }
+}

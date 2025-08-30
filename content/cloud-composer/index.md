@@ -579,6 +579,13 @@ are available in Cloud Composer 3:
 
     You can now use a Google-managed certificate when you create a [create a Private Service Connect Secure Source Manager instance](https://cloud.google.com/secure-source-manager/docs/create-private-service-connect-instance#create-private-service-connect-instance).
 
+    Text-to-Speech
+    --------------
+
+    ### Changed
+
+    Chirp 3: Instant custom voice supports new input audio encodings `PCM`, `MP3`, and `M4A`, with any sample rate. For more information, see the [Chirp 3: Instant custom voice](https://cloud.google.com/text-to-speech/docs/chirp3-instant-custom-voice) page.
+
     Transcoder API
     --------------
 

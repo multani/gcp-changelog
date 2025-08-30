@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: Manufacturing Data Engine</title>
+  <subtitle>Changelog for Google Cloud product: Manufacturing Data Engine</subtitle>
+  <updated>2025-08-29T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:manufacturing-data-engine</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/manufacturing-data-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:manufacturing-data-engine:2025-08-29:announcement:0</id>
+    <published>2025-08-29T00:00:00+00:00</published>
+    <updated>2025-08-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary>Google Cloud is a suite of cloud computing services that offers solutions for computing, data storage, data analytics, and machine learning, with physical Google infrastructure.</summary>
+    <title>Announcement: Google Cloud</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:manufacturing-data-engine:2025-08-29:release 1.5.1:1</id>
+    <published>2025-08-29T00:00:00+00:00</published>
+    <updated>2025-08-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release is a <strong>critical update</strong> if you have an existing deployment of MDE version 1.5.0. This release resolves a bug regarding materialization of metadata instances created prior to MDE 1.5.0. This release also includes other minor improvements and bug fixes.</p>]]></content>
+    <summary>Critical update for MDE 1.5.0 users. Addresses metadata materialization bug and includes minor improvements.</summary>
+    <title>Release 1.5.1: Release 1.5.1</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:manufacturing-data-engine:2025-08-29:libraries:2</id>
+    <published>2025-08-29T00:00:00+00:00</published>
+    <updated>2025-08-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Release signature</strong></p>
+<p>```
+b0fc163
+1.5.1
+ffb87d39d343c20abebd2f52df74a2d3</p>
+<p>```</p>]]></content>
+    <summary>Release signature b0fc163 1.5.1 ffb87d39d343c20abebd2f52df74a2d3</summary>
+    <title>Libraries: Libraries</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:manufacturing-data-engine:2025-08-29:fixed:3</id>
+    <published>2025-08-29T00:00:00+00:00</published>
+    <updated>2025-08-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>Fix (417666631):</strong> Fixed an issue with metadata materialization for metadata instances that had been created prior to migrating to MDE 1.5.0.</li>
+<li><strong>Fix (420921890):</strong> Fixed an error when attempting to update an instance tag metadata and saved it for instances that had been created prior to migrating to MDE 1.5.0.</li>
+<li><strong>Fix (423535516)</strong>: Fixed inconsistent API response codes when trying to delete non-existing entities.</li>
+<li><strong>Fix (383519276)</strong>: Fixed missing fields in MDE logging and added more details to make troubleshooting easier.</li>
+<li><strong>Fix (424077359)</strong>: Fixed instance bucket creation through API. It now adds default <code>createdTime</code> as the time when the API call was received.</li>
+<li><strong>Fix (422991109 and 424084607)</strong>: Fixed <code>ghost</code> deletion of Types and Metadata Buckets after removing a configuration package.</li>
+<li><strong>Fix (423859259)</strong>: Fixed removal of BigQuery views when a Type is manually deleted.</li>
+<li><strong>Fix (406803212)</strong>: Fixed wrong version materialization on MDE system tables.</li>
+<li><strong>Fix (407015039)</strong>: Fixed <code>Delete</code> button in MDE UI when the system is in PROD mode (Production mode).</li>
+<li><strong>Fix (435653743)</strong>: Fixed missing Grafana Terraform module.</li>
+</ul>]]></content>
+    <summary>Several issues have been resolved, including problems with metadata materialization, instance tag updates, API response codes, MDE logging, instance bucket creation, ghost deletion of Types and Metadata Buckets, removal of BigQuery views, MDE system tables versioning, the Delete button in MDE UI, and the Grafana Terraform module.</summary>
+    <title>Fixed: Resolved various issues for improved stability</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:manufacturing-data-engine:2025-08-29:security:4</id>
+    <published>2025-08-29T00:00:00+00:00</published>
+    <updated>2025-08-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>Improvement (427447932)</strong>: Brought Docker images to versions without vulnerabilities reported at the time of the release.</li>
+<li><strong>Improvement (361290775)</strong>: Modified Terraform deployment scripts to enforce TLS v1.2 for an external MDE UI Load Balancer.</li>
+</ul>]]></content>
+    <summary>Docker images updated to remove vulnerabilities. Terraform scripts updated to enforce TLS v1.2 for external MDE UI Load Balancer.</summary>
+    <title>Security: Security Improvements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:manufacturing-data-engine:2025-08-29:changed:5</id>
+    <published>2025-08-29T00:00:00+00:00</published>
+    <updated>2025-08-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>Improvement (407009198)</strong>: Improved the error handling when <code>upload</code> and <code>parsing</code> configuration packages.</li>
+<li><strong>Improvement (423531705):</strong> Improved MDE logging for BigQuery sink related operations.</li>
+<li><strong>Improvement (423530033):</strong> Improved manifest validation on configuration package uploads.</li>
+<li><strong>Improvement (423554635)</strong>: Added <code>CreatedAt</code> column with default sorting on the MDE UI configuration packages page.</li>
+<li><strong>Improvement (430962108):</strong> Added more sorting options on the MDE UI <em>Configurations</em> and <em>Metadata Instances</em> pages.</li>
+<li><strong>Improvement (423531714)</strong>: Various improvements on Helm charts, including image tag management, and k8s secrets/configmaps.</li>
+<li><strong>Improvement (407037164)</strong>: More descriptive message added to MDE UI to confirm Type deletion.</li>
+</ul>]]></content>
+    <summary>Error handling for upload and parsing configuration packages has been improved. Logging for BigQuery sink operations and manifest validation on uploads have also been enhanced. Additionally, new sorting options and a 'CreatedAt' column have been added to the MDE UI.</summary>
+    <title>Changed: Configuration package improvements</title>
+  </entry>
+</feed>

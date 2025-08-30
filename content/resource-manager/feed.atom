@@ -2,9 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Resource Manager</title>
   <subtitle>Changelog for Google Cloud product: Resource Manager</subtitle>
-  <updated>2025-08-18T00:00:00+00:00</updated>
+  <updated>2025-08-28T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:resource-manager</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/resource-manager/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:resource-manager:2025-08-28:fixed:0</id>
+    <published>2025-08-28T00:00:00+00:00</published>
+    <updated>2025-08-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Certain Organization Policy <a href="https://cloud.google.com/resource-manager/docs/organization-policy/overview#managed-constraints">managed constraints</a> that were released on August 21, 2025 were not functioning as intended. The Organization Policy Service evaluated these constraints as if the <code>effectiveInstanceMetadata</code> field of the resources that they were enforced on was empty, causing them to always evaluate to either allow or deny access to the resource.</p>
+<p>The following managed constraints were evaluated to always allow creation of resources where they were enforced:</p>
+<ul>
+<li><code>constraints/compute.managed.disableGuestAttributesAccess</code></li>
+<li><code>constraints/compute.managed.disableSerialPortAccess</code></li>
+<li><code>constraints/compute.managed.disableSerialPortLogging</code></li>
+</ul>
+<p>The following managed constraints were evaluated to always block creation of resources where they were enforced:</p>
+<ul>
+<li><code>constraints/compute.managed.disallowGlobalDns</code></li>
+<li><code>constraints/compute.managed.requireOsConfig</code></li>
+<li><code>constraints/compute.managed.requireOsLogin</code></li>
+</ul>
+<p>This issue has been corrected, and these constraints now properly evaluate the <code>effectiveInstanceMetadata</code> field to determine whether resource creation should be allowed or blocked.</p>]]></content>
+    <summary>Certain Organization Policy managed constraints released on August 21, 2025, had a bug and were not functioning as intended. This has now been corrected and the constraints are working as expected.</summary>
+    <title>Fixed: Organization Policy Constraints Fixed</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

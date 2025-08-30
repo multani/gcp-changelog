@@ -115,6 +115,7 @@
 - [Identity and Access Management](identity-and-access-management/index.md)
 - [Looker](looker/index.md)
 - [Looker Studio](looker-studio/index.md)
+- [Manufacturing Data Engine](manufacturing-data-engine/index.md)
 - [Media CDN](media-cdn/index.md)
 - [Memorystore for Memcached](memorystore-for-memcached/index.md)
 - [Memorystore for Redis](memorystore-for-redis/index.md)

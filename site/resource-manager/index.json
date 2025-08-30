@@ -1,6 +1,16 @@
 {
   "name": "Resource Manager",
   "entries": {
+    "2025-08-28": [
+      {
+        "kind": "Fixed",
+        "content": "Certain Organization Policy [managed constraints](https://cloud.google.com/resource-manager/docs/organization-policy/overview#managed-constraints) that were released on August 21, 2025 were not functioning as intended. The Organization Policy Service evaluated these constraints as if the `effectiveInstanceMetadata` field of the resources that they were enforced on was empty, causing them to always evaluate to either allow or deny access to the resource.\n\nThe following managed constraints were evaluated to always allow creation of resources where they were enforced:\n\n* `constraints/compute.managed.disableGuestAttributesAccess`\n* `constraints/compute.managed.disableSerialPortAccess`\n* `constraints/compute.managed.disableSerialPortLogging`\n\nThe following managed constraints were evaluated to always block creation of resources where they were enforced:\n\n* `constraints/compute.managed.disallowGlobalDns`\n* `constraints/compute.managed.requireOsConfig`\n* `constraints/compute.managed.requireOsLogin`\n\nThis issue has been corrected, and these constraints now properly evaluate the `effectiveInstanceMetadata` field to determine whether resource creation should be allowed or blocked.",
+        "summary": {
+          "title": "Organization Policy Constraints Fixed",
+          "summary": "Certain Organization Policy managed constraints released on August 21, 2025, had a bug and were not functioning as intended. This has now been corrected and the constraints are working as expected."
+        }
+      }
+    ],
     "2025-08-18": [
       {
         "kind": "Feature",

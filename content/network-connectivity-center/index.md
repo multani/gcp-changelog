@@ -1,5 +1,15 @@
 # Network Connectivity Center
 
+## 2025-08-29
+
+### Feature
+
+Static routes for Network Connectivity Center are available in [GA](https://cloud.google.com/products#product-launch-stages).
+
+You can use static routes to define the next hop along the path that network traffic takes to reach a given destination. For more information about using static routes with Network Connectivity Center, see the
+[Static routes overview](https://cloud.google.com/network-connectivity/docs/network-connectivity-center/concepts/static-routes-overview).
+
+---
 ## 2025-08-25
 
 ### Feature

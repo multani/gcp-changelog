@@ -1409,6 +1409,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Manufacturing data engine <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../manufacturing-data-engine/" class="dropdown-item">Manufacturing Data Engine</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Media cdn <b class="caret"></b>
                         </a>
 
@@ -1788,6 +1800,23 @@
 
 
 <h1 id="resource-manager">Resource Manager</h1>
+<h2 id="2025-08-28">2025-08-28</h2>
+<h3 id="fixed">Fixed</h3>
+<p>Certain Organization Policy <a href="https://cloud.google.com/resource-manager/docs/organization-policy/overview#managed-constraints">managed constraints</a> that were released on August 21, 2025 were not functioning as intended. The Organization Policy Service evaluated these constraints as if the <code>effectiveInstanceMetadata</code> field of the resources that they were enforced on was empty, causing them to always evaluate to either allow or deny access to the resource.</p>
+<p>The following managed constraints were evaluated to always allow creation of resources where they were enforced:</p>
+<ul>
+<li><code>constraints/compute.managed.disableGuestAttributesAccess</code></li>
+<li><code>constraints/compute.managed.disableSerialPortAccess</code></li>
+<li><code>constraints/compute.managed.disableSerialPortLogging</code></li>
+</ul>
+<p>The following managed constraints were evaluated to always block creation of resources where they were enforced:</p>
+<ul>
+<li><code>constraints/compute.managed.disallowGlobalDns</code></li>
+<li><code>constraints/compute.managed.requireOsConfig</code></li>
+<li><code>constraints/compute.managed.requireOsLogin</code></li>
+</ul>
+<p>This issue has been corrected, and these constraints now properly evaluate the <code>effectiveInstanceMetadata</code> field to determine whether resource creation should be allowed or blocked.</p>
+<hr />
 <h2 id="2025-08-18">2025-08-18</h2>
 <h3 id="feature">Feature</h3>
 <p>You can use custom constraints with Organization Policy to provide more granular control over specific fields for some Backup for GKE resources. For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke/how-to/create-custom-constraints">Manage Backup for GKE resources using custom constraints</a>. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a>.</p>
@@ -1830,6 +1859,9 @@ tag value is attached. For more information, see <a href="https://cloud.google.c
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#resource-manager">Resource Manager</a></li>
+          <li class="nav-item">
+            <a href="#2025-08-28" class="nav-link">2025-08-28</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-08-18" class="nav-link">2025-08-18</a>
           </li>

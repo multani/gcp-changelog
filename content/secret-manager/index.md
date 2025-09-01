@@ -1,5 +1,14 @@
 # Secret Manager
 
+## 2025-09-01
+
+### Feature
+
+**Automatic secret rotation with the Secret Manager add-on for Google Kubernetes Engine (GKE)**: You can configure the Secret Manager add-on to automatically rotate secrets so that secrets updated in Secret Manager after initial pod deployment are automatically and periodically pushed to the pod. This feature is now Generally available (GA).
+
+For more information, see [Configure automatic rotation of secrets](https://cloud.google.com/secret-manager/docs/secret-manager-managed-csi-component#configure_automatic_rotation_of_secrets).
+
+---
 ## 2025-07-09
 
 ### Feature

@@ -28,7 +28,7 @@ Fixed in Cloud Data Fusion 6.11.1:
 
 ### Deprecated
 
-Dataproc 2.1 is no longer supported in Cloud Data Fusion version 6.11.1 and later.
+Dataproc 2.0 is no longer supported in Cloud Data Fusion version 6.11.1 and later.
 
 ---
 ## 2025-07-25

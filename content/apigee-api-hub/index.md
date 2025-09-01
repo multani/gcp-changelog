@@ -1,5 +1,16 @@
 # Apigee API hub
 
+## 2025-09-01
+
+### Changed
+
+**New API versions view**
+
+API version information is now available as a separate tab in the **API details** page. You can view your API version details, copy API ID, create new API versions and more using the API versions tab.
+
+For more information, see [Manage versions](https://cloud.google.com/apigee/docs/apihub/manage-versions).
+
+---
 ## 2025-08-22
 
 ### Feature

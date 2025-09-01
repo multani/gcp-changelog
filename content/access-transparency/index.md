@@ -1,5 +1,12 @@
 # Access Transparency
 
+## 2025-08-18
+
+### Feature
+
+Access Transparency supports Firebase Data Connect in the GA stage.
+
+---
 ## 2025-08-04
 
 ### Feature

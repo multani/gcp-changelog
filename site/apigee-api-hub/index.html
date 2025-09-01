@@ -1800,6 +1800,12 @@
 
 
 <h1 id="apigee-api-hub">Apigee API hub</h1>
+<h2 id="2025-09-01">2025-09-01</h2>
+<h3 id="changed">Changed</h3>
+<p><strong>New API versions view</strong></p>
+<p>API version information is now available as a separate tab in the <strong>API details</strong> page. You can view your API version details, copy API ID, create new API versions and more using the API versions tab.</p>
+<p>For more information, see <a href="https://cloud.google.com/apigee/docs/apihub/manage-versions">Manage versions</a>.</p>
+<hr />
 <h2 id="2025-08-22">2025-08-22</h2>
 <h3 id="feature">Feature</h3>
 <p><strong>Deprovision API hub in the UI</strong></p>
@@ -1839,17 +1845,17 @@
 <p><strong>Default Apigee plugin instance not auto-created during runtime attachment</strong></p>
 <p><strong>Issue:</strong> When provisioning API hub as part of Apigee provisioning, the default <code>Apigee X and hybrid</code> plugin instance is not automatically created. This prevents API proxies from being auto-registered.</p>
 <p><strong>Workaround:</strong> You can manually attach an Apigee runtime instance and import the Apigee assets. See <a href="https://cloud.google.com/apigee/docs/apihub/auto-register-apigee-proxies#attach-a-runtime-project">Attach a runtime project</a>.</p>
-<h3 id="changed">Changed</h3>
+<h3 id="changed_1">Changed</h3>
 <p><strong>Delete plugin instance changes</strong></p>
 <p>API hub no longer retains any ingested metadata from a plugin after its deletion. Deleting a plugin instance also permanently deletes all the associated API data from API hub.</p>
 <p>For more information, see <a href="https://cloud.google.com/apigee/docs/apihub/manage-plugin-instances#delete-plugin-instance">Delete a plugin instance</a>.</p>
-<h3 id="changed_1">Changed</h3>
+<h3 id="changed_2">Changed</h3>
 <p><strong>Provisioning changes and Apigee API proxy registration</strong></p>
 <p>API hub changed how it registers API proxies from Apigee and how it creates default plugin instances during provisioning.</p>
 <p>API hub now automatically creates a default <code>Apigee X and hybrid</code> plugin instance and auto-registers API proxies only when you provision it as part of Apigee provisioning.</p>
 <p>If you provision API hub directly from the API hub UI, API hub does not automatically create a default plugin instance, nor does it auto-register proxies.</p>
 <p>For more information, see <a href="https://cloud.google.com/apigee/docs/apihub/auto-register-apigee-proxies#project-associations-and-plugins">Project attachments and plugins</a>.</p>
-<h3 id="changed_2">Changed</h3>
+<h3 id="changed_3">Changed</h3>
 <p><strong>New tutorial: Enrich API data in API hub</strong></p>
 <p>A new tutorial is available for enriching API data in Apigee API hub.</p>
 <p>It shows you how to use API hub's custom curation features to automatically fetch OpenAPI specifications from a Cloud Storage bucket and associate them with their corresponding Apigee API proxies. The custom curation logic is defined using an integration in Application Integration.</p>
@@ -1863,17 +1869,17 @@
 <p>If your existing projects use these attributes in filtered search queries, we recommend updating them. To ensure your searches continue to work, use the <code>Source project</code> and <code>Source environment</code> fields as alternatives.</p>
 <hr />
 <h2 id="2025-07-22">2025-07-22</h2>
-<h3 id="changed_3">Changed</h3>
+<h3 id="changed_4">Changed</h3>
 <p><strong>API hub provisioning now enables Apigee API</strong></p>
 <p>When you provision API hub, it now enables the Apigee API (<code>apigee.googleapis.com</code>) in your Google Cloud project. If Apigee isn't already provisioned, an Apigee organization is also automatically created in your project as part of the provisioning process.</p>
 <p>API hub remains a free service. Enabling the Apigee API has no additional pricing or billing implications for your project.</p>
 <p>For more information, see <a href="https://cloud.google.com/apigee/docs/apihub/provision">Provision API hub in the Cloud console</a>.</p>
-<h3 id="changed_4">Changed</h3>
+<h3 id="changed_5">Changed</h3>
 <p><strong>API hub deprovisioning changes</strong></p>
 <p>Deprovisioning an API hub instance now also deletes any associated Apigee organizations from your Google Cloud project, provided those Apigee organizations have no Apigee instances.</p>
 <p>If you deprovision an API hub instance, you can reprovision it later, but you'll need to wait 7 days before you can do so.</p>
 <p>For more information, see <a href="https://cloud.google.com/apigee/docs/apihub/deprovision">Deprovision Apigee API hub</a>.</p>
-<h3 id="changed_5">Changed</h3>
+<h3 id="changed_6">Changed</h3>
 <p><strong>VPC Service Controls (VPC-SC) is GA</strong></p>
 <p>VPC Service Controls in API hub is now <a href="https://cloud.google.com/products#product-launch-stages">GA</a>.</p>
 <p>For more information, see <a href="https://cloud.google.com/apigee/docs/apihub/vpc-service-control">VPC Service Controls for API hub</a>.</p>
@@ -1888,11 +1894,11 @@
 <p>When creating new instances of the <strong>Apigee X and hybrid</strong> plugin, you must now provide a source project ID. This source project ID is the Google Cloud project from which the plugin will import data.</p>
 <p>This is a breaking change and will affect any existing API calls that create these plugins without explicitly providing this ID.</p>
 <p><strong>Action Required:</strong> Update your API calls to include the appropriate source project ID when creating new Apigee X and hybrid plugins. Failing to do so will result in creation errors.</p>
-<h3 id="changed_6">Changed</h3>
+<h3 id="changed_7">Changed</h3>
 <p><strong>Edit plugin instances changes</strong></p>
 <p>You can now change or modify the name and curation logic of your plugin instance.</p>
 <p>For more information, see <a href="https://cloud.google.com/apigee/docs/apihub/manage-plugin-instances#edit-plugin-instance">Edit a plugin instance</a>.</p>
-<h3 id="changed_7">Changed</h3>
+<h3 id="changed_8">Changed</h3>
 <p><strong>Resource URI format for Apigee deployments</strong></p>
 <p>To ensure optimal functionality and consistency while creating or updating <strong>Apigee</strong> deployments, we now recommend that the <strong>Resource URI</strong> conforms to the following format:
 <code>organizations/([^/]+)/environments/([^/]+)/apis/([^/]+)$</code></p>
@@ -1922,6 +1928,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#apigee-api-hub">Apigee API hub</a></li>
+          <li class="nav-item">
+            <a href="#2025-09-01" class="nav-link">2025-09-01</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-08-22" class="nav-link">2025-08-22</a>
           </li>

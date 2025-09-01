@@ -1,5 +1,12 @@
 # NetApp Volumes
 
+## 2025-08-25
+
+### Feature
+
+Google Cloud NetApp Volumes now supports the external replication feature in allow-listed General Availability (GA) for Standard, Premium, and Extreme service levels. This feature uses bi-directional SnapMirror to replicate data between ONTAP-based systems and NetApp Volumes. For more information, see [About external replication](https://cloud.google.com/netapp/volumes/docs/protect-data/replicate-ontap/overview#about_external_replication).
+
+---
 ## 2025-08-19
 
 ### Changed

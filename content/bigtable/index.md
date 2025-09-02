@@ -1,5 +1,22 @@
 # Bigtable
 
+## 2025-09-01
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Java
+
+### Changes for [google-cloud-bigtable](https://github.com/googleapis/java-bigtable)
+
+#### [2.65.1](https://github.com/googleapis/java-bigtable/compare/v2.65.0...v2.65.1) (2025-08-27)
+
+##### Dependencies
+
+* Update shared dependencies ([#2664](https://github.com/googleapis/java-bigtable/issues/2664)) ([841318b](https://github.com/googleapis/java-bigtable/commit/841318b2248dcda89d8482bc2e84c838bd8be8d0))
+
+---
 ## 2025-08-28
 
 ### Announcement

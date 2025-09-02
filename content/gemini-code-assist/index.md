@@ -1,5 +1,17 @@
 # Gemini Code Assist
 
+## 2025-09-02
+
+### Feature
+
+
+
+### Create and manage multiple chats in IntelliJ
+
+You can [create and manage multiple chats](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#create_multiple_chats) in IntelliJ Gemini Code Assist.
+Each chat contains its own context separate from other chats.
+
+---
 ## 2025-08-29
 
 ### Full Remote Codebase Awareness

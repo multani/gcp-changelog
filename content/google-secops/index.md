@@ -1,5 +1,20 @@
 # Google SecOps
 
+## 2025-08-29
+
+### Changed
+
+**MITRE ATT&CK coverage dashboard is now available**
+
+**This feature is currently in Preview.**
+
+The new [MITRE ATT&CK coverage dashboard](https://cloud.google.com/chronicle/docs/detection/mitre-dashboard) lets you measure your security posture against the MITRE ATT&CK framework, helping you:
+
+* Assess threat coverage
+* Identify gaps
+* Prioritize security efforts
+
+---
 ## 2025-08-28
 
 ### Changed

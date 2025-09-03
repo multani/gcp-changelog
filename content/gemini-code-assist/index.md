@@ -1,5 +1,22 @@
 # Gemini Code Assist
 
+## 2025-09-03
+
+### Feature
+
+
+
+### Mention a remote repository to prioritize context
+
+You can now start your prompt with the `@` symbol and select a specific
+remote repository from a list to ensure Gemini prioritizes that context. This
+feature is designed to give you more relevant and precise suggestions by
+explicitly directing Gemini's focus to the codebase you care about most,
+allowing you to get more tailored and accurate results. For more information,
+see
+[Code customization overview](https://cloud.google.com/gemini/docs/codeassist/code-customization-overview).
+
+---
 ## 2025-09-02
 
 ### Create and manage multiple chats in IntelliJ

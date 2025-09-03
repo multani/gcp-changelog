@@ -114,6 +114,7 @@
 - [Google SecOps SIEM](google-secops-siem/index.md)
 - [Google SecOps SOAR](google-secops-soar/index.md)
 - [Identity and Access Management](identity-and-access-management/index.md)
+- [Live Stream API](live-stream-api/index.md)
 - [Looker](looker/index.md)
 - [Looker Studio](looker-studio/index.md)
 - [Manufacturing Data Engine](manufacturing-data-engine/index.md)

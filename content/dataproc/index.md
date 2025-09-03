@@ -1,5 +1,12 @@
 # Dataproc
 
+## 2025-09-02
+
+### Feature
+
+[Multi-tenant clusters](https://cloud.google.com/dataproc/docs/concepts/iam/sa-multi-tenancy) are now available in Preview. Many data engineers and scientists can share a multi-tenant cluster to execute their workloads in isolation from each other.
+
+---
 ## 2025-08-29
 
 ### Announcement
@@ -27,8 +34,7 @@ New [Dataproc Serverless for Spark runtime versions](https://cloud.google.com/da
 
 ### Fixed
 
-**Serverless for Apache Spark:** Fixed a bug in Dataproc Batches that occasionally caused higher latency.
-before an application was started.
+**Serverless for Apache Spark:** Fixed a bug in Dataproc Batches that occasionally caused higher latency before an application was started.
 
 ---
 ## 2025-08-19

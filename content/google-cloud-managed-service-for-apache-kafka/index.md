@@ -1,5 +1,12 @@
 # Google Cloud Managed Service for Apache Kafka
 
+## 2025-09-02
+
+### Feature
+
+Managed Service for Apache Kafka now supports [HIPAA Compliance on Google Cloud](https://cloud.google.com/security/compliance/hipaa).
+
+---
 ## 2025-07-15
 
 ### Feature

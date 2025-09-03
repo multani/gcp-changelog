@@ -1,5 +1,12 @@
 # Security Command Center
 
+## 2025-09-02
+
+### Feature
+
+Vulnerability assessment for Google Cloud supports scanning disks configured with customer-managed encryption keys (CMEK) for projects that are outside of VPC Service Control perimeters. For more information about how to scan disks configured with CMEK, see [Run Vulnerability Scans for CMEK disks](https://cloud.google.com/security-command-center/docs/vulnerability-assessment-google-cloud#run-cmek-vulns).
+
+---
 ## 2025-08-27
 
 ### Changed

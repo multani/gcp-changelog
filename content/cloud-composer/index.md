@@ -124,8 +124,7 @@ are available in Cloud Composer 3:
 
     ### Fixed
 
-    **Serverless for Apache Spark:** Fixed a bug in Dataproc Batches that occasionally caused higher latency.
-    before an application was started.
+    **Serverless for Apache Spark:** Fixed a bug in Dataproc Batches that occasionally caused higher latency before an application was started.
 
     Generative AI on Vertex AI
     --------------------------

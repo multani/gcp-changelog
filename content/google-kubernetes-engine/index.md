@@ -1,5 +1,32 @@
 # Google Kubernetes Engine
 
+## 2025-09-02
+
+### Announcement
+
+Features that were part of GKE Enterprise are now available as part of the standard GKE offering, or offered as standalone SKUs.
+
+The following advanced multi-cluster management and networking features are included in the GKE offering at no additional cost:
+
+* Fleet dashboard
+* Multi-team Management
+* Config Sync
+* Config Controller
+* Managed Policy Controller
+* Connect Gateway
+* Network Function Optimizer
+* Fully Qualified Domain Name (FQDN) Network Policy
+* Inter-node Transparent Encryption
+
+The following GKE Enterprise features continue to be available using their current standalone SKUs. If you are using any of these features, your billing is automatically transitioned to the corresponding standalone SKU.
+
+* Managed Cloud Service Mesh
+* Multicluster Gateways; Multicluster Ingress
+* Binary Authorization
+* Advanced Vulnerability Scanning
+* GKE Extended Support (LTS)
+
+---
 ## 2025-08-29
 
 ### Fixed

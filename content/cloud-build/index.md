@@ -1,5 +1,12 @@
 # Cloud Build
 
+## 2025-09-02
+
+### Feature
+
+Dark theme is now available for Cloud Build. To enable the dark theme, in the Google Cloud console, click **Settings and utilities** > **Preferences**. In the navigation menu, click **Appearance**, and then select your color theme and click **Save**.
+
+---
 ## 2025-08-15
 
 ### Feature

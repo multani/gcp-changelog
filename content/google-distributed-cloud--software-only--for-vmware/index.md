@@ -1,5 +1,39 @@
 # Google Distributed Cloud (software only) for VMware
 
+## 2025-09-02
+
+### Announcement
+
+Google Distributed Cloud (software only) for VMware 1.33.0-gke.799 is now available for [download](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads). To upgrade, see [Upgrade a cluster](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading). Google Distributed Cloud 1.33.0-gke.799 runs on Kubernetes v1.33.2-gke.700.
+
+If you are using a third-party storage vendor, check the [GDC Ready storage partners](https://cloud.google.com/anthos/docs/resources/partner-storage) document to make sure the storage vendor has already passed the qualification for this release.
+
+After a release, it takes approximately 7 to 14 days for the version to become available for use with [GKE On-Prem API clients](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools): the Google Cloud console, the gcloud CLI, and Terraform.
+
+### Changed
+
+* GA: Changed the cluster creation process so that all new clusters are [advanced clusters](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/concepts/advanced-clusters). Additionally, all cluster upgrades to 1.33 are automatically converted to advanced clusters.
+* Upgraded the `etcd` component to version 3.4.33.
+
+### Feature
+
+* GA: Enabled the `vsphere-metrics-exporter` component for advanced clusters. This exporter provides greater visibility into the VMware vSphere environment by collecting key performance and health metrics.
+* GA: Added support for VM-Host affinity groups in advanced clusters. This feature allows for the creation of rules that constrain cluster nodes to run on specific, predefined groups of hosts.
+* GA: Added support for automatic node resizing in advanced clusters. This feature optimizes resource use by automatically adjusting the CPU and memory allocated to control plane nodes in response to workload demands.
+* Public Preview: Added support for Virtual Machine (VM) tracking using vSphere
+  tags in advanced clusters. This feature simplifies resource management by
+  automatically applying identifying tags to cluster VMs.
+* GA: Introduced an Envoy proxy sidecar to the GKE Identity Service for clusters
+  that use Controlplane V2. This change enhances the security, reliability, and
+  performance of the authentication service.
+
+### Fixed
+
+The following issues were fixed in 1.33.0-gke.799:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
+
+---
 ## 2025-08-28
 
 ### Announcement
@@ -47,6 +81,12 @@ The following issues were fixed in 1.30.1200-gke.63:
 ---
 ## 2025-08-08
 
+### Fixed
+
+The following issues were fixed in 1.32.300-gke.85:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
+
 ### Announcement
 
 Google Distributed Cloud (software only) for VMware 1.32.300-gke.85 is now available for [download](/kubernetes-engine/distributed-cloud/vmware/docs/downloads). To upgrade, see [Upgrade a cluster](/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading). Google Distributed Cloud 1.32.300-gke.85 runs on Kubernetes v1.32.6-gke.200.
@@ -54,12 +94,6 @@ Google Distributed Cloud (software only) for VMware 1.32.300-gke.85 is now avail
 If you are using a third-party storage vendor, check the [GDC Ready storage partners](/anthos/docs/resources/partner-storage) document to make sure the storage vendor has already passed the qualification for this release.
 
 After a release, it takes approximately 7 to 14 days for the version to become available for use with [GKE On-Prem API clients](/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools): the Google Cloud console, the gcloud CLI, and Terraform.
-
-### Fixed
-
-The following issues were fixed in 1.32.300-gke.85:
-
-* Fixed vulnerabilities listed in [Vulnerability fixes](/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
 
 ---
 ## 2025-08-04

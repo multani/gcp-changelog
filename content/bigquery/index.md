@@ -1,5 +1,63 @@
 # BigQuery
 
+## 2025-09-02
+
+### Feature
+
+You can now create a [remote model based on an open embedding model from Vertex Model Garden or Hugging Face that is deployed to Vertex AI](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-remote-model-open). Options include E5 Embedding and other leading open embedding generation models. You can then use the [`ML.GENERATE_EMBEDDING` function](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-generate-embedding) with this remote model to generate embeddings.
+
+Try this feature with the [Generate text embeddings by using an open model and the `ML.GENERATE_EMBEDDING` function](https://cloud.google.com/bigquery/docs/generate-text-embedding-tutorial-open-models) tutorial.
+
+This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+You can now create a [remote model](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-remote-model) based on the Vertex AI `gemini-embedding-001` model. You can then use the [`ML.GENERATE_EMBEDDING` function](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-generate-embedding) with this remote model to generate embeddings. This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+You can now reference BigQuery ML and DataFrames in your [prompts](https://cloud.google.com/bigquery/docs/colab-data-science-agent#sample-prompts) when you use the [Data Science Agent](https://cloud.google.com/bigquery/docs/colab-data-science-agent) in a BigQuery notebook. The Data Science Agent is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+You can now configure listings for multiple regions for shared datasets and linked dataset replicas in BigQuery sharing. For more information, see [Create a listing](https://cloud.google.com/bigquery/docs/analytics-hub-manage-listings#create_a_listing). This feature is in [preview](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+You can now enable the automatic selection of a processing location in your pipeline configurations. For more information, see [Create pipelines](https://cloud.google.com/bigquery/docs/create-pipelines). This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+---
+## 2025-09-01
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Go
+
+### Changes for [bigquery/storage/apiv1beta1](https://github.com/googleapis/google-cloud-go/tree/main/bigquery/storage/apiv1beta1)
+
+#### [1.70.0](https://github.com/googleapis/google-cloud-go/compare/bigquery/v1.69.0...bigquery/v1.70.0) (2025-08-28)
+
+##### Features
+
+* **bigquery/reservation:** Add Reservation.max\_slots field to Reservation proto, indicating the total max number of slots this reservation can use up to ([f1de706](https://github.com/googleapis/google-cloud-go/commit/f1de7062db662aa6dfbf1e8cd2f0ac5df678e76d))
+* **bigquery/reservation:** Add Reservation.scaling\_mode field and its corresponding enum message ScalingMode. This field should be used together with Reservation.max\_slots ([f1de706](https://github.com/googleapis/google-cloud-go/commit/f1de7062db662aa6dfbf1e8cd2f0ac5df678e76d))
+* **bigquery/storage/managedwriter:** Allow overriding proto conversion mapping ([#12579](https://github.com/googleapis/google-cloud-go/issues/12579)) ([ce9d29b](https://github.com/googleapis/google-cloud-go/commit/ce9d29bf2ca22877c64c9eea5b5c6489de141cc5)), refs [#12578](https://github.com/googleapis/google-cloud-go/issues/12578)
+* **bigquery:** Add load/extract job completion ratio ([#12471](https://github.com/googleapis/google-cloud-go/issues/12471)) ([3dab483](https://github.com/googleapis/google-cloud-go/commit/3dab483ad579c65ce520d6d9a2f8ad738ad68c9c))
+* **bigquery:** Load job and external table opts for custom time format, null markers and source column match ([#12470](https://github.com/googleapis/google-cloud-go/issues/12470)) ([67b0320](https://github.com/googleapis/google-cloud-go/commit/67b0320a54be1ba7bc64eeee47a9afff14faac5f))
+
+### Java
+
+### Changes for [google-cloud-bigquery](https://github.com/googleapis/java-bigquery)
+
+#### [2.54.2](https://github.com/googleapis/java-bigquery/compare/v2.54.1...v2.54.2) (2025-08-26)
+
+##### Dependencies
+
+* Update dependency com.google.cloud:sdk-platform-java-config to v3.52.0 ([#3939](https://github.com/googleapis/java-bigquery/issues/3939)) ([794bf83](https://github.com/googleapis/java-bigquery/commit/794bf83e84efc0712638bebde5158777b9c89397))
+
+---
 ## 2025-08-28
 
 ### Feature

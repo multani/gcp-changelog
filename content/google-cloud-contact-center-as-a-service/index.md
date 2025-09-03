@@ -1,26 +1,31 @@
 # Google Cloud Contact Center as a Service
 
-## 2025-08-29
+## 2025-09-02
 
 ### Announcement
 
-**Mobile SDK 2.14 pre-release notes**
+**Mobile SDK 2.14 is released**
 
-Here are the pre-release notes for Mobile SDK 2.14. When we release version 2.14, we expect the new capabilities to be as shown here.
+Mobile SDK 2.14 includes the following updates:
 
 * Android SDK and iOS SDK:
 
   + Support for virtual agent to virtual agent chat transfers by queue.
-  + Support for hiding the download transcript button in the options menu, the post-chat screen, or both.
+  + Support for hiding the download transcript button in the options menu, the post-chat screen, or both. For the Android SDK, see [SDK configuration](https://cloud.google.com/contact-center/ccai-platform/docs/android-sdk-guide#sdk-configuration). For the iOS SDK, see [Show or hide the download transcript button](https://cloud.google.com/contact-center/ccai-platform/docs/ios-sdk-guide#show-or-hide-download-transcript-button).
   + Improved accessibility, including better navigation and screen reader support.
 * Android SDK:
 
-  + Support for hiding the SDK using the `Ujet.hideSDK()` method.
+  + Support for hiding the SDK using the `Ujet.hideSDK()` method. For more information, see [Hide the SDK](https://cloud.google.com/contact-center/ccai-platform/docs/android-sdk-guide#hide-sdk).
   + New event types: `MessageLinkClicked` and `QuickReplyClicked`.
 
 To support the new virtual agent chat transfer capabilities of this release, we've added a new configuration setting in the Google Cloud CCaaS portal. You can use this setting to hide transfer system messages in chat sessions with virtual agent to virtual agent transfers.
 
 **Administrators**: In the **Settings > Chat > Web & Mobile Chat Settings** pane, there's a new **Transfers** checkbox.
+
+For more information, see [Hide transfer messages in chat sessions](https://cloud.google.com/contact-center/ccai-platform/docs/va-to-va-transfers#hide-transfer-messages-in-chat-sessions).
+
+---
+## 2025-08-29
 
 ### Fixed
 
@@ -198,7 +203,7 @@ The following issues were addressed in this release:
 
 * Fixed an issue where a blank error message box appeared in the agent adapter when a call connected.
 * Fixed an issue where the notification icon for a new message or event in the chat adapter didn't clear after the agent viewed the message or event.
-* Fixed a Conversational Insights issue where conversation recordings were split into a file for the human agent segment and a file for the virtual agent segment. Now all call segments are aggregated into a single recording file, which is more useful for conversational analysis.
+* ~~Fixed a Conversational Insights issue where conversation recordings were split into a file for the human agent segment and a file for the virtual agent segment. Now all call segments are aggregated into a single recording file, which is more useful for conversational analysis.~~
 * Fixed an issue where a single call was being reported as two separate calls after the following occurred: (1) A call was escalated from a virtual agent to a queue, (2) An agent clicked **Answer** in the agent adapter, and (3) The end-user hung up before the countdown was complete.
 * Fixed an issue where agents were unsure whether their action of declining a call was taking effect. Now, after an agent declines a call, the **Decline** button changes to **Declining...**, the **Answer** button is deactivated, and a message displays indicating that the call was declined.
 * Fixed the message that appeared in the agent adapter when an agent left a multi-party session. Instead of saying that the session will be tranferred to the remaining agents(s), the message now says that the session will be transferred to the remaining participant(s). This is because the remaining participants might not be agents.

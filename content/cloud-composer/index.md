@@ -170,23 +170,6 @@ are available in Cloud Composer 3:
 
     For more information, see [Configure network tier for Gateway IP addresses](https://cloud.google.com/kubernetes-engine/docs/how-to/deploying-gateways#configure-network-tier).
 
-    ### Feature
-
-    The [M4 machine series](https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series)
-    is generally available in GKE Autopilot clusters with
-    version 1.33.4-gke.1013000 or later. For more information, see M4 in
-    [Resource requests in Autopilot](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests).
-
-    ### Feature
-
-    Starting with GKE version 1.33.2-gke.1240000 and later, you can
-    now specify the network service tier (Standard or Premium) for ephemeral IP
-    addresses used by the `gke-l7-regional-external-managed` GatewayClass. This
-    GatewayClass configures Regional External Application Load Balancers for single
-    clusters.
-
-    For more information, see [Configure network tier for Gateway IP addresses](https://cloud.google.com/kubernetes-engine/docs/how-to/deploying-gateways#configure-network-tier).
-
     ### Changed
 
     #### (2025-R35) Version updates
@@ -744,10 +727,6 @@ are available in Cloud Composer 3:
 
       Google Kubernetes Engine
       ------------------------
-
-      ### Feature
-
-      The [M4 machine series](https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series) is generally available in GKE Standard clusters.
 
       ### Feature
 

@@ -1,5 +1,12 @@
 # Dataform
 
+## 2025-09-02
+
+### Feature
+
+Dataform now automatically selects a processing location based on the datasets referenced in your SQL queries. This makes setting the default location optional in your workflow configurations. For more information, see [About repository settings](https://cloud.google.com/dataform/docs/manage-repository#repository-settings). This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+---
 ## 2025-08-21
 
 ### Security

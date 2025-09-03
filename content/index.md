@@ -56,6 +56,7 @@
 - [Cloud DNS](cloud-dns/index.md)
 - [Cloud Data Fusion](cloud-data-fusion/index.md)
 - [Cloud Database Migration Service](cloud-database-migration-service/index.md)
+- [Cloud Deploy](cloud-deploy/index.md)
 - [Cloud Healthcare API](cloud-healthcare-api/index.md)
 - [Cloud Interconnect](cloud-interconnect/index.md)
 - [Cloud Key Management Service](cloud-key-management-service/index.md)

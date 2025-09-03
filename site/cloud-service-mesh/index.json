@@ -1,6 +1,16 @@
 {
   "name": "Cloud Service Mesh",
   "entries": {
+    "2025-09-02": [
+      {
+        "kind": "Security",
+        "content": "**1.26.4-asm.1 is now available for in-cluster Cloud Service Mesh.**\n\nThis patch release contains a fix for a [use-after-free (UAF) vulnerability in the DNS cache](https://www.cve.org/CVERecord?id=CVE-2025-54588). For more information, see the [security bulletin](https://cloud.google.com/service-mesh/docs/security-bulletins#gcp-2025-048).\n\nOnly clusters running in-cluster Cloud Service Mesh version 1.26 are affected. If you are running an earlier in-cluster version or managed Cloud Service Mesh, you are not affected and do not need to take any action.\n\nFor details on upgrading Cloud Service Mesh, refer to [Upgrade Cloud Service Mesh](https://cloud.google.com/service-mesh/docs/upgrade/upgrade).",
+        "summary": {
+          "title": "Security Update for Cloud Service Mesh",
+          "summary": "A new patch release, 1.26.4-asm.1, is available for in-cluster Cloud Service Mesh. This update addresses a critical use-after-free vulnerability in the DNS cache (CVE-2025-54588)."
+        }
+      }
+    ],
     "2025-08-12": [
       {
         "kind": "Announcement",

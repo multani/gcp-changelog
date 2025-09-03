@@ -2,18 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2025-08-29T00:00:00+00:00</updated>
+  <updated>2025-09-02T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-08-29:announcement:0</id>
-    <published>2025-08-29T00:00:00+00:00</published>
-    <updated>2025-08-29T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Mobile SDK 2.14 pre-release notes</strong></p>
-<p>Here are the pre-release notes for Mobile SDK 2.14. When we release version 2.14, we expect the new capabilities to be as shown here.</p>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-09-02:announcement:0</id>
+    <published>2025-09-02T00:00:00+00:00</published>
+    <updated>2025-09-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Mobile SDK 2.14 is released</strong></p>
+<p>Mobile SDK 2.14 includes the following updates:</p>
 <ul>
 <li>
 <p>Android SDK and iOS SDK:</p>
@@ -21,26 +21,27 @@
 <li>
 <p>Support for virtual agent to virtual agent chat transfers by queue.</p>
 </li>
-<li>Support for hiding the download transcript button in the options menu, the post-chat screen, or both.</li>
+<li>Support for hiding the download transcript button in the options menu, the post-chat screen, or both. For the Android SDK, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/android-sdk-guide#sdk-configuration">SDK configuration</a>. For the iOS SDK, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/ios-sdk-guide#show-or-hide-download-transcript-button">Show or hide the download transcript button</a>.</li>
 <li>Improved accessibility, including better navigation and screen reader support.</li>
 <li>
 <p>Android SDK:</p>
 </li>
 <li>
-<p>Support for hiding the SDK using the <code>Ujet.hideSDK()</code> method.</p>
+<p>Support for hiding the SDK using the <code>Ujet.hideSDK()</code> method. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/android-sdk-guide#hide-sdk">Hide the SDK</a>.</p>
 </li>
 <li>New event types: <code>MessageLinkClicked</code> and <code>QuickReplyClicked</code>.</li>
 </ul>
 <p>To support the new virtual agent chat transfer capabilities of this release, we've added a new configuration setting in the Google Cloud CCaaS portal. You can use this setting to hide transfer system messages in chat sessions with virtual agent to virtual agent transfers.</p>
-<p><strong>Administrators</strong>: In the <strong>Settings &gt; Chat &gt; Web &amp; Mobile Chat Settings</strong> pane, there's a new <strong>Transfers</strong> checkbox.</p>]]></content>
-    <summary>New version of the Mobile SDK includes support for virtual agent transfers, improved accessibility, and new event types.</summary>
-    <title>Announcement: Mobile SDK 2.14</title>
+<p><strong>Administrators</strong>: In the <strong>Settings &gt; Chat &gt; Web &amp; Mobile Chat Settings</strong> pane, there's a new <strong>Transfers</strong> checkbox.</p>
+<p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/va-to-va-transfers#hide-transfer-messages-in-chat-sessions">Hide transfer messages in chat sessions</a>.</p>]]></content>
+    <summary>The latest Mobile SDK 2.14 is here, bringing enhanced features like virtual agent transfers and improved accessibility. Key updates include support for chat transfers by queue, options to hide the download transcript button, and better screen reader compatibility. The Android SDK also gains a new method to hide the SDK and supports new event types for link and quick reply clicks.</summary>
+    <title>Announcement: Mobile SDK 2.14 Released</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-08-29:fixed:1</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-08-29:fixed:0</id>
     <published>2025-08-29T00:00:00+00:00</published>
     <updated>2025-08-29T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed an issue where the Android SDK wouldn't minimize when an end-user clicked a deep link.</p>]]></content>
@@ -295,7 +296,7 @@
 <ul>
 <li>Fixed an issue where a blank error message box appeared in the agent adapter when a call connected.</li>
 <li>Fixed an issue where the notification icon for a new message or event in the chat adapter didn't clear after the agent viewed the message or event.</li>
-<li>Fixed a Conversational Insights issue where conversation recordings were split into a file for the human agent segment and a file for the virtual agent segment. Now all call segments are aggregated into a single recording file, which is more useful for conversational analysis.</li>
+<li>~~Fixed a Conversational Insights issue where conversation recordings were split into a file for the human agent segment and a file for the virtual agent segment. Now all call segments are aggregated into a single recording file, which is more useful for conversational analysis.~~</li>
 <li>Fixed an issue where a single call was being reported as two separate calls after the following occurred: (1) A call was escalated from a virtual agent to a queue, (2) An agent clicked <strong>Answer</strong> in the agent adapter, and (3) The end-user hung up before the countdown was complete.</li>
 <li>Fixed an issue where agents were unsure whether their action of declining a call was taking effect. Now, after an agent declines a call, the <strong>Decline</strong> button changes to <strong>Declining...</strong>, the <strong>Answer</strong> button is deactivated, and a message displays indicating that the call was declined.</li>
 <li>Fixed the message that appeared in the agent adapter when an agent left a multi-party session. Instead of saying that the session will be tranferred to the remaining agents(s), the message now says that the session will be transferred to the remaining participant(s). This is because the remaining participants might not be agents.</li>
@@ -318,8 +319,8 @@
 <li>Fixed an issue where transcriptions weren't being created for IVR calls.</li>
 <li>Fixed an issue where agents could become stuck in wrap-up status, particularly with concurrent calls or quick callbacks.</li>
 </ul>]]></content>
-    <summary>This release addresses multiple bugs and usability issues, including problems with call handling, notifications, recording aggregation, agent status, and data reporting. Enhancements have been made to the agent adapter, chat functionality, and SDK integrations for a more stable and efficient user experience.</summary>
-    <title>Fixed: Resolved various issues for improved performance</title>
+    <summary>This release addresses various issues, including problems with error messages, notification icons, call handling, agent status visibility, and data discrepancies. Enhancements were made to call recording aggregation, agent status updates, and multi-party session messaging. Specific fixes were implemented for chat transcript downloads, web SDK behavior, and integrations with Hubspot and Salesforce. Additionally, security vulnerabilities and issues with virtual agent escalations and call transcriptions have been resolved.</summary>
+    <title>Fixed: Bug Fixes and Improvements</title>
   </entry>
   <entry>
     <author>

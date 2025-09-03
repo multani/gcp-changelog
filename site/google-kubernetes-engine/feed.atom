@@ -27,7 +27,25 @@ Cloud Storage FUSE CSI driver now gracefully handles a node restart behavior.</p
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-28:security:0</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-28:feature:0</id>
+    <published>2025-08-28T00:00:00+00:00</published>
+    <updated>2025-08-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now run GPU workloads on Confidential GKE Nodes with the A3 High
+machine type and NVIDIA H100 GPUs. This feature is available in
+GKE version 1.32.2-gke.1297000 and later for manual GPU driver
+installation, and in version 1.33.3-gke.1392000 and later for automatic driver
+installation. This enables stronger data protection and integrity for
+GPU-accelerated computations running within GKE clusters and
+nodes. This feature is in General Availability.</p>
+<p>For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/gpus-confidential-nodes">Encrypt GPU workload data in use with Confidential GKE Nodes</a>.</p>]]></content>
+    <summary>You can now run GPU workloads on Confidential GKE Nodes with the A3 High machine type and NVIDIA H100 GPUs. This feature is available in GKE version 1.32.2-gke.1297000 and later for manual GPU driver installation, and in version 1.33.3-gke.1392000 and later for automatic driver installation. This enables stronger data protection and integrity for GPU-accelerated computations running within GKE clusters and nodes. This feature is in General Availability.</summary>
+    <title>Feature: Run GPU workloads on Confidential GKE Nodes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-28:security:1</id>
     <published>2025-08-28T00:00:00+00:00</published>
     <updated>2025-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>GKE version 1.33.0-gke.1276000 and later remediate a low severity
@@ -40,42 +58,6 @@ vulnerability, a validation policy is enforced that prevents unauthorized
 modifications to the node labels that control metadata protection.</p>]]></content>
     <summary>GKE versions 1.33.0-gke.1276000 and later address a vulnerability where an attacker could access node metadata by modifying node labels via the Kubernetes API. A new validation policy prevents unauthorized label changes to protect metadata.</summary>
     <title>Security: Security Update for GKE Workload Identity Federation</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-28:feature:1</id>
-    <published>2025-08-28T00:00:00+00:00</published>
-    <updated>2025-08-28T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>You can now run GPU workloads on Confidential GKE Nodes with the A3 High
-machine type and NVIDIA H100 GPUs. This feature is available in
-GKE version 1.32.2-gke.1297000 and later for manual GPU driver
-installation, and in version 1.33.3-gke.1392000 and later for automatic driver
-installation. This enables stronger data protection and integrity for
-GPU-accelerated computations running within GKE clusters and
-nodes. This feature is in General Availability.</p>
-<p>For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/gpus-confidential-nodes">Encrypt GPU workload data in use with Confidential GKE Nodes</a>.</p>]]></content>
-    <summary>You can now run GPU workloads on Confidential GKE Nodes with the A3 High machine type and NVIDIA H100 GPUs. This feature is available in GKE version 1.32.2-gke.1297000 and later for manual GPU driver installation, and in version 1.33.3-gke.1392000 and later for automatic driver installation. This enables stronger data protection and integrity for GPU-accelerated computations running within GKE clusters and nodes. This feature is in General Availability.</summary>
-    <title>Feature: Run GPU workloads on Confidential GKE Nodes</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-28:feature:2</id>
-    <published>2025-08-28T00:00:00+00:00</published>
-    <updated>2025-08-28T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>You can now run GPU workloads on Confidential GKE Nodes with the A3 High
-machine type and NVIDIA H100 GPUs. This feature is available in
-GKE version 1.32.2-gke.1297000 and later for manual GPU driver
-installation, and in version 1.33.3-gke.1392000 and later for automatic driver
-installation. This enables stronger data protection and integrity for
-GPU-accelerated computations running within GKE clusters and
-nodes. This feature is in General Availability.</p>
-<p>For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/gpus-confidential-nodes">Encrypt GPU workload data in use with Confidential GKE Nodes</a>.</p>]]></content>
-    <summary>You can now run GPU workloads on Confidential GKE Nodes with the A3 High machine type and NVIDIA H100 GPUs. This feature is available in GKE version 1.32.2-gke.1297000 and later for manual GPU driver installation, and in version 1.33.3-gke.1392000 and later for automatic driver installation. This enables stronger data protection and integrity for GPU-accelerated computations running within GKE clusters and nodes. This feature is in General Availability.</summary>
-    <title>Feature: Run GPU workloads on Confidential GKE Nodes</title>
   </entry>
   <entry>
     <author>
@@ -431,21 +413,6 @@ objects per cluster.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-25:feature:1</id>
-    <published>2025-08-25T00:00:00+00:00</published>
-    <updated>2025-08-25T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>In GKE version 1.33 and later, the Horizontal Pod Autoscaler
-has been re-architected for improved performance and scalability. This update
-enables a consistent 15-second recalculation period and supports up to 5,000 HPA
-objects per cluster.</p>
-<p>For more information see, <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/horizontalpodautoscaler#scalability">Horizontal Pod autoscaling</a>.</p>]]></content>
-    <summary>The Horizontal Pod Autoscaler in GKE 1.33+ has been re-architected for better performance and scalability, with a 15-second recalculation period and support for up to 5,000 HPA objects per cluster.</summary>
-    <title>Feature: Improved HPA performance</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
     <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:feature:0</id>
     <published>2025-08-21T00:00:00+00:00</published>
     <updated>2025-08-21T00:00:00+00:00</updated>
@@ -476,37 +443,7 @@ clusters.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:feature:2</id>
-    <published>2025-08-21T00:00:00+00:00</published>
-    <updated>2025-08-21T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The <a href="https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series">M4 machine series</a>
-is generally available in GKE Autopilot clusters with
-version 1.33.4-gke.1013000 or later. For more information, see M4 in
-<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests">Resource requests in Autopilot</a>.</p>]]></content>
-    <summary>M4 machine series available in GKE Autopilot</summary>
-    <title>Feature: M4 machine series</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:feature:3</id>
-    <published>2025-08-21T00:00:00+00:00</published>
-    <updated>2025-08-21T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Starting with GKE version 1.33.2-gke.1240000 and later, you can
-now specify the network service tier (Standard or Premium) for ephemeral IP
-addresses used by the <code>gke-l7-regional-external-managed</code> GatewayClass. This
-GatewayClass configures Regional External Application Load Balancers for single
-clusters.</p>
-<p>For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/deploying-gateways#configure-network-tier">Configure network tier for Gateway IP addresses</a>.</p>]]></content>
-    <summary>You can now select network tiers for ephemeral IPs.</summary>
-    <title>Feature: Network Tier Selection for Gateway Resources</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:changed:4</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:changed:2</id>
     <published>2025-08-21T00:00:00+00:00</published>
     <updated>2025-08-21T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<h4>(2025-R35) Version updates</h4>
@@ -671,7 +608,7 @@ multiple days to complete across all Google Cloud zones.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:changed:5</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:changed:3</id>
     <published>2025-08-21T00:00:00+00:00</published>
     <updated>2025-08-21T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Starting in GKE 1.33.3-gke.1136000, the validation of the
@@ -685,7 +622,7 @@ error message will specify why the policy is invalid.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:changed:6</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:changed:4</id>
     <published>2025-08-21T00:00:00+00:00</published>
     <updated>2025-08-21T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<h4>(2025-R35) Version updates</h4>
@@ -726,7 +663,7 @@ multiple days to complete across all Google Cloud zones.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:changed:7</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:changed:5</id>
     <published>2025-08-21T00:00:00+00:00</published>
     <updated>2025-08-21T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<h4>(2025-R35) Version updates</h4>
@@ -775,7 +712,7 @@ multiple days to complete across all Google Cloud zones.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:changed:8</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:changed:6</id>
     <published>2025-08-21T00:00:00+00:00</published>
     <updated>2025-08-21T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<h4>(2025-R35) Version updates</h4>
@@ -817,7 +754,7 @@ multiple days to complete across all Google Cloud zones.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:changed:9</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:changed:7</id>
     <published>2025-08-21T00:00:00+00:00</published>
     <updated>2025-08-21T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<h4>(2025-R35) Version updates</h4>
@@ -850,7 +787,7 @@ multiple days to complete across all Google Cloud zones.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:changed:10</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-21:changed:8</id>
     <published>2025-08-21T00:00:00+00:00</published>
     <updated>2025-08-21T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<h4>(2025-R35) Version updates</h4>
@@ -934,67 +871,7 @@ requirements.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-15:feature:2</id>
-    <published>2025-08-15T00:00:00+00:00</published>
-    <updated>2025-08-15T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>For clusters enrolled in the Extended channel, you can now use
-<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api">Gateway</a>
-with GKE version 1.30 or later, or
-<a href="https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options">customized sysctl configuration options</a>.</p>]]></content>
-    <summary>Gateway now available for Extended channel clusters.</summary>
-    <title>Feature: Gateway for Extended Channel</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-15:feature:3</id>
-    <published>2025-08-15T00:00:00+00:00</published>
-    <updated>2025-08-15T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>You can now receive a patch version in a release channel as soon as the version
-is available and before GKE sets the version as an auto-upgrade
-target in the channel by using <em>accelerated patch auto-upgrades</em>. Receiving
-patch versions earlier can help accelerate auto-upgrade timelines for patches,
-especially for use cases such as accelerating your compliance with security
-requirements.</p>
-<p>For more information, see
-<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/release-channels#accelerated-patch">Accelerated patch auto-upgrades</a>.</p>]]></content>
-    <summary>Accelerated patch auto-upgrades are now available.</summary>
-    <title>Feature: Accelerated Patch Auto-Upgrades</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-14:feature:0</id>
-    <published>2025-08-14T00:00:00+00:00</published>
-    <updated>2025-08-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>You can now configure GKE clusters to have a default compute
-class in GKE versions 1.33.1-gke.1744000 or later. For more
-details, see the
-<a href="https://cloud.google.com/kubernetes-engine/docs/how-to/run-pods-default-compute-classes">default custom compute class documentation</a>.</p>]]></content>
-    <summary>Configure GKE clusters with a default compute class for GKE versions 1.33.1-gke.1744000 and later.</summary>
-    <title>Feature: New Feature: Default Compute Class Configuration in GKE</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-14:feature:1</id>
-    <published>2025-08-14T00:00:00+00:00</published>
-    <updated>2025-08-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>You can now configure GKE clusters to have a default compute
-class in GKE versions 1.33.1-gke.1744000 or later. For more
-details, see the
-<a href="https://cloud.google.com/kubernetes-engine/docs/how-to/run-pods-default-compute-classes">default custom compute class documentation</a>.</p>]]></content>
-    <summary>Configure GKE clusters with a default compute class for GKE versions 1.33.1-gke.1744000 and later.</summary>
-    <title>Feature: New Feature: Default Compute Class Configuration in GKE</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-14:changed:2</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-14:changed:0</id>
     <published>2025-08-14T00:00:00+00:00</published>
     <updated>2025-08-14T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<h4>(2025-R34) Version updates</h4>
@@ -1034,7 +911,21 @@ multiple days to complete across all Google Cloud zones.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-14:changed:3</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-14:feature:1</id>
+    <published>2025-08-14T00:00:00+00:00</published>
+    <updated>2025-08-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now configure GKE clusters to have a default compute
+class in GKE versions 1.33.1-gke.1744000 or later. For more
+details, see the
+<a href="https://cloud.google.com/kubernetes-engine/docs/how-to/run-pods-default-compute-classes">default custom compute class documentation</a>.</p>]]></content>
+    <summary>Configure GKE clusters with a default compute class for GKE versions 1.33.1-gke.1744000 and later.</summary>
+    <title>Feature: New Feature: Default Compute Class Configuration in GKE</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-14:changed:2</id>
     <published>2025-08-14T00:00:00+00:00</published>
     <updated>2025-08-14T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<h4>(2025-R34) Version updates</h4>
@@ -1076,7 +967,7 @@ multiple days to complete across all Google Cloud zones.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-14:changed:4</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-14:changed:3</id>
     <published>2025-08-14T00:00:00+00:00</published>
     <updated>2025-08-14T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<h4>(2025-R34) Version updates</h4>
@@ -1110,7 +1001,7 @@ multiple days to complete across all Google Cloud zones.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-14:changed:5</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-14:changed:4</id>
     <published>2025-08-14T00:00:00+00:00</published>
     <updated>2025-08-14T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<h4>(2025-R34) Version updates</h4>
@@ -1142,7 +1033,7 @@ multiple days to complete across all Google Cloud zones.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-14:changed:6</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-14:changed:5</id>
     <published>2025-08-14T00:00:00+00:00</published>
     <updated>2025-08-14T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<h4>(2025-R34) Version updates</h4>
@@ -1175,7 +1066,7 @@ multiple days to complete across all Google Cloud zones.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-14:changed:7</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-14:changed:6</id>
     <published>2025-08-14T00:00:00+00:00</published>
     <updated>2025-08-14T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<h4>(2025-R34) Version updates</h4>
@@ -1358,41 +1249,6 @@ the Horizontal Pod Autoscaler. You can optionally
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-12:feature:2</id>
-    <published>2025-08-12T00:00:00+00:00</published>
-    <updated>2025-08-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Starting with GKE version 1.33.1-gke.1231000, you can view
-KubeRay Operator addon logs. These logs are available by default in
-Cloud Logging when the Ray operator addon is enabled in GKE.
-This integration helps you to monitor and debug the Ray Operator. Previously,
-accessing these logs required more complex steps. To view the logs, navigate to
-Cloud Logging Logs Explorer in the Google Cloud console and run a query to filter
-for the Ray Operator logs for your specific cluster.</p>
-<p>For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/add-on/ray-on-gke/how-to/view-ray-operator-logs">View Ray Operator logs on GKE</a>.</p>]]></content>
-    <summary>View KubeRay Operator addon logs in Cloud Logging.</summary>
-    <title>Feature: KubeRay Operator Logs</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-12:feature:3</id>
-    <published>2025-08-12T00:00:00+00:00</published>
-    <updated>2025-08-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Starting on August 1, 2025, the Performance HorizontalPodAutoscaler profile is
-enabled by default for GKE Standard clusters that run
-GKE version 1.33.2-gke.4605000 and later and meet all of the
-<a href="https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#requirements_2">Performance profile requirements</a>.
-The Performance profile improves the reaction time, speed, and scalability of
-the Horizontal Pod Autoscaler. You can optionally
-<a href="https://cloud.google.com/kubernetes-engine/docs/how-to/horizontal-pod-autoscaling#disable_the_performance_hpa_profile">disable the Performance profile</a>.</p>]]></content>
-    <summary>The Horizontal Pod Autoscaler performance profile is now the default for GKE Standard clusters on version 1.33.2-gke.4605000 and later. This change enhances the autoscaler's reaction time, speed, and scalability. You can disable this profile if needed.</summary>
-    <title>Feature: GKE Horizontal Pod Autoscaler Performance Profile Enabled by Default</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
     <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-08:feature:0</id>
     <published>2025-08-08T00:00:00+00:00</published>
     <updated>2025-08-08T00:00:00+00:00</updated>
@@ -1453,71 +1309,6 @@ the Horizontal Pod Autoscaler. You can optionally
 </ul>]]></content>
     <summary>New options available for Kubelet, Sysctl, and Linux config. Customize node system configuration.</summary>
     <title>Feature: Node System Configuration Options</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-08:feature:2</id>
-    <published>2025-08-08T00:00:00+00:00</published>
-    <updated>2025-08-08T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>You can now <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#kubelet-options">customize a node system configuration</a> with the following new Kubelet, Sysctl, and Linux config options:</p>
-<ul>
-<li>
-<p>kubeletConfig flags:</p>
-</li>
-<li>
-<p>topologyManager (on GKE versions 1.32.3-gke.1785000 and later)</p>
-</li>
-<li>memoryManager (on GKE versions 1.32.3-gke.1785000 and later)</li>
-<li>maxParallelImagePulls (on GKE versions 1.33.1-gke.1918000 and later)</li>
-<li>singleProcessOomKill (on GKE versions 1.32.4-gke.1132000, 1.33.0-gke.1748000 and later)</li>
-<li>evictionSoft</li>
-<li>evictionSoftGracePeriod</li>
-<li>evictionMinimumReclaim</li>
-<li>evictionMaxPodGracePeriodSeconds</li>
-<li>
-<p>sysctl flags:</p>
-</li>
-<li>
-<p>vm.overcommit_memory</p>
-</li>
-<li>vm.overcommit_ratio</li>
-<li>vm.vfs_cache_pressure</li>
-<li>vm.dirty_ratio</li>
-<li>vm.dirty_background_ratio</li>
-<li>vm.dirty_expire_centisecs</li>
-<li>vm.dirty_writeback_centisecs</li>
-<li>vm.watermark_scale_factor</li>
-<li>vm.min_free_kbytes</li>
-<li>vm.swappiness</li>
-<li>fs.nr_open</li>
-<li>fs.file-max</li>
-<li>fs.inotify.max_user_watches</li>
-<li>fs.inotify.max_user_instances</li>
-<li>fs.aio-max-nr</li>
-<li>net.ipv4.tcp_max_orphans</li>
-<li>
-<p>linuxConfig flags:</p>
-</li>
-<li>
-<p>transparentHugepageEnabled (on GKE versions 1.33.2-gke.4655000 and later)</p>
-</li>
-<li>transparentHugepageDefrag (on GKE versions 1.33.2-gke.4655000 and later)</li>
-</ul>]]></content>
-    <summary>New options available for Kubelet, Sysctl, and Linux config. Customize node system configuration.</summary>
-    <title>Feature: Node System Configuration Options</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-08:feature:3</id>
-    <published>2025-08-08T00:00:00+00:00</published>
-    <updated>2025-08-08T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The C4 machine series now has General Availability machine types that support Local SSD storage options. These machine types are available in all GKE versions for Standard mode, and in GKE version 1.33.1-gke.1545000 and later for Autopilot mode. For more information about these machine types, see the "C4 standard with Local SSD" and "C4 highmem with Local SSD" tabs in <a href="https://cloud.google.com/compute/docs/general-purpose-machines#c4_machine_types">C4 machine types</a>.</p>]]></content>
-    <summary>New C4 machine types with Local SSD are now available for GKE.</summary>
-    <title>Feature: C4 machine types now support Local SSD</title>
   </entry>
   <entry>
     <author>
@@ -1865,18 +1656,7 @@ multiple days to complete across all Google Cloud zones.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-05:feature:1</id>
-    <published>2025-08-05T00:00:00+00:00</published>
-    <updated>2025-08-05T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The <a href="https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series">M4 machine series</a> is generally available in GKE Standard clusters.</p>]]></content>
-    <summary>M4 machine series now available in GKE Standard.</summary>
-    <title>Feature: M4 GKE Availability</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-05:fixed:2</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-05:fixed:1</id>
     <published>2025-08-05T00:00:00+00:00</published>
     <updated>2025-08-05T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>A fix is available for an issue in which the Compute Engine Persistent Disk CSI

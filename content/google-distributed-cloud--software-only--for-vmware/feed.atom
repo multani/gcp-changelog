@@ -2,9 +2,71 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Distributed Cloud (software only) for VMware</title>
   <subtitle>Changelog for Google Cloud product: Google Distributed Cloud (software only) for VMware</subtitle>
-  <updated>2025-08-28T00:00:00+00:00</updated>
+  <updated>2025-09-02T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-distributed-cloud--software-only--for-vmware/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2025-09-02:announcement:0</id>
+    <published>2025-09-02T00:00:00+00:00</published>
+    <updated>2025-09-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for VMware 1.33.0-gke.799 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading">Upgrade a cluster</a>. Google Distributed Cloud 1.33.0-gke.799 runs on Kubernetes v1.33.2-gke.700.</p>
+<p>If you are using a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">GDC Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become available for use with <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>]]></content>
+    <summary>The new version of Google Distributed Cloud for VMware (1.33.0-gke.799) is now available for download. This release runs on Kubernetes v1.33.2-gke.700. For upgrades, please refer to the provided documentation. It is recommended to check the GDC Ready storage partners list if you are using a third-party storage vendor. Please note that it may take 7-14 days for the new version to be available through Google Cloud console, gcloud CLI, and Terraform.</summary>
+    <title>Announcement: Google Distributed Cloud for VMware 1.33.0-gke.799 Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2025-09-02:changed:1</id>
+    <published>2025-09-02T00:00:00+00:00</published>
+    <updated>2025-09-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>GA: Changed the cluster creation process so that all new clusters are <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/concepts/advanced-clusters">advanced clusters</a>. Additionally, all cluster upgrades to 1.33 are automatically converted to advanced clusters.</li>
+<li>Upgraded the <code>etcd</code> component to version 3.4.33.</li>
+</ul>]]></content>
+    <summary>All new clusters are advanced clusters. Upgrades to 1.33 are automatically converted to advanced clusters. The etcd component has been upgraded to version 3.4.33.</summary>
+    <title>Changed: New advanced clusters</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2025-09-02:feature:2</id>
+    <published>2025-09-02T00:00:00+00:00</published>
+    <updated>2025-09-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>GA: Enabled the <code>vsphere-metrics-exporter</code> component for advanced clusters. This exporter provides greater visibility into the VMware vSphere environment by collecting key performance and health metrics.</li>
+<li>GA: Added support for VM-Host affinity groups in advanced clusters. This feature allows for the creation of rules that constrain cluster nodes to run on specific, predefined groups of hosts.</li>
+<li>GA: Added support for automatic node resizing in advanced clusters. This feature optimizes resource use by automatically adjusting the CPU and memory allocated to control plane nodes in response to workload demands.</li>
+<li>Public Preview: Added support for Virtual Machine (VM) tracking using vSphere
+  tags in advanced clusters. This feature simplifies resource management by
+  automatically applying identifying tags to cluster VMs.</li>
+<li>GA: Introduced an Envoy proxy sidecar to the GKE Identity Service for clusters
+  that use Controlplane V2. This change enhances the security, reliability, and
+  performance of the authentication service.</li>
+</ul>]]></content>
+    <summary>Advanced clusters now support VM-Host affinity, automatic node resizing, and the vsphere-metrics-exporter for better VMware visibility. VM tracking with vSphere tags is in public preview. Envoy proxy enhances GKE Identity Service security.</summary>
+    <title>Feature: New features for advanced clusters</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2025-09-02:fixed:3</id>
+    <published>2025-09-02T00:00:00+00:00</published>
+    <updated>2025-09-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were fixed in 1.33.0-gke.799:</p>
+<ul>
+<li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
+</ul>]]></content>
+    <summary>Fixed vulnerabilities listed in Vulnerability fixes documentation.</summary>
+    <title>Fixed: Fixed vulnerabilities</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -76,20 +138,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2025-08-08:announcement:0</id>
-    <published>2025-08-08T00:00:00+00:00</published>
-    <updated>2025-08-08T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for VMware 1.32.300-gke.85 is now available for <a href="/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To upgrade, see <a href="/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading">Upgrade a cluster</a>. Google Distributed Cloud 1.32.300-gke.85 runs on Kubernetes v1.32.6-gke.200.</p>
-<p>If you are using a third-party storage vendor, check the <a href="/anthos/docs/resources/partner-storage">GDC Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release.</p>
-<p>After a release, it takes approximately 7 to 14 days for the version to become available for use with <a href="/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>]]></content>
-    <summary>The latest version of Google Distributed Cloud for VMware is now available. This release runs on Kubernetes v1.32.6-gke.200. Please check storage partner compatibility and be aware that it may take 7-14 days for the new version to be accessible via Google Cloud console, gcloud CLI, and Terraform.</summary>
-    <title>Announcement: Google Distributed Cloud for VMware 1.32.300-gke.85 Release</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2025-08-08:fixed:1</id>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2025-08-08:fixed:0</id>
     <published>2025-08-08T00:00:00+00:00</published>
     <updated>2025-08-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The following issues were fixed in 1.32.300-gke.85:</p>
@@ -98,6 +147,19 @@
 </ul>]]></content>
     <summary>Resolved security vulnerabilities.</summary>
     <title>Fixed: Fixed vulnerabilities</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2025-08-08:announcement:1</id>
+    <published>2025-08-08T00:00:00+00:00</published>
+    <updated>2025-08-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for VMware 1.32.300-gke.85 is now available for <a href="/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To upgrade, see <a href="/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading">Upgrade a cluster</a>. Google Distributed Cloud 1.32.300-gke.85 runs on Kubernetes v1.32.6-gke.200.</p>
+<p>If you are using a third-party storage vendor, check the <a href="/anthos/docs/resources/partner-storage">GDC Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become available for use with <a href="/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>]]></content>
+    <summary>The latest version of Google Distributed Cloud for VMware is now available. This release runs on Kubernetes v1.32.6-gke.200. Please check storage partner compatibility and be aware that it may take 7-14 days for the new version to be accessible via Google Cloud console, gcloud CLI, and Terraform.</summary>
+    <title>Announcement: Google Distributed Cloud for VMware 1.32.300-gke.85 Release</title>
   </entry>
   <entry>
     <author>

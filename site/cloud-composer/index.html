@@ -689,6 +689,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Cloud deploy <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../cloud-deploy/" class="dropdown-item">Cloud Deploy</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Cloud dns <b class="caret"></b>
                         </a>
 
@@ -1905,18 +1917,6 @@ addresses used by the <code>gke-l7-regional-external-managed</code> GatewayClass
 GatewayClass configures Regional External Application Load Balancers for single
 clusters.</p>
 <p>For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/deploying-gateways#configure-network-tier">Configure network tier for Gateway IP addresses</a>.</p>
-<h3 id="feature_11">Feature</h3>
-<p>The <a href="https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series">M4 machine series</a>
-is generally available in GKE Autopilot clusters with
-version 1.33.4-gke.1013000 or later. For more information, see M4 in
-<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests">Resource requests in Autopilot</a>.</p>
-<h3 id="feature_12">Feature</h3>
-<p>Starting with GKE version 1.33.2-gke.1240000 and later, you can
-now specify the network service tier (Standard or Premium) for ephemeral IP
-addresses used by the <code>gke-l7-regional-external-managed</code> GatewayClass. This
-GatewayClass configures Regional External Application Load Balancers for single
-clusters.</p>
-<p>For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/deploying-gateways#configure-network-tier">Configure network tier for Gateway IP addresses</a>.</p>
 <h3 id="changed_3">Changed</h3>
 <h4 id="2025-r35-version-updates">(2025-R35) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
@@ -2212,17 +2212,17 @@ multiple days to complete across all Google Cloud zones.
   * Control planes and nodes with auto-upgrade enabled in the Stable channel will be upgraded from version 1.31 to version <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13110">1.31.10-gke.1067000</a> with this release.
   * Control planes and nodes with auto-upgrade enabled in the Stable channel will be upgraded from version 1.32 to version <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1326">1.32.6-gke.1060000</a> with this release.</p>
 <h2 id="google-secops">Google SecOps</h2>
-<h3 id="feature_13">Feature</h3>
+<h3 id="feature_11">Feature</h3>
 <p><a href="https://cloud.google.com/chronicle/docs/detection/use-curated-detections">Enhanced curated detections</a> has been enhanced with composite detection content for Mandiant Hunt Cloud Classification, including AWS, GCP, and Azure. This rule pack is available for Mandiant Threat Defense (MTD) customers with a Google Security Operations Enterprise or Enterprise Plus license.</p>
 <h2 id="google-secops-siem">Google SecOps SIEM</h2>
-<h3 id="feature_14">Feature</h3>
+<h3 id="feature_12">Feature</h3>
 <p><a href="https://cloud.google.com/chronicle/docs/detection/use-curated-detections">Enhanced curated detections</a> has been enhanced with composite detection content for Mandiant Hunt Cloud Classification, including AWS, GCP, and Azure. This rule pack is available for Mandiant Threat Defense (MTD) customers with a Google Security Operations Enterprise or Enterprise Plus license.</p>
 <h2 id="looker-studio">Looker Studio</h2>
-<h3 id="feature_15">Feature</h3>
+<h3 id="feature_13">Feature</h3>
 <p><strong>Sort table charts by up to 10 fields</strong></p>
 <p>Report creators can now set up to sort 10 fields for table charts, including fields that are not selected in the chart.</p>
 <p><a href="https://cloud.google.com/looker/docs/studio/table-reference#sort">Learn more about sorting table charts.</a></p>
-<h3 id="feature_16">Feature</h3>
+<h3 id="feature_14">Feature</h3>
 <p><strong>Looker connector respects LookML <code>value_format</code> property</strong></p>
 <p>When you're using the Looker connector, value formats that you apply using the <code>value_format</code> LookML property will now be displayed in Looker Studio reports. You can
 <a href="https://cloud.google.com/looker/docs/studio/format-fields-in-reports">view and edit the value format</a> as usual.</p>
@@ -2251,18 +2251,18 @@ is not supported in Looker Studio.</p>
 <li><a href="https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbze1haIhtOD6hugcWx0fXEkHzvhUfppQtMxgsotU8BBGq0KdBziOvaYWx-5cQGWBxkmBA">Salesforce</a> by Adzviser</li>
 </ul>
 <h2 id="secure-source-manager">Secure Source Manager</h2>
-<h3 id="feature_17">Feature</h3>
+<h3 id="feature_15">Feature</h3>
 <p>You can now use a Google-managed certificate when you create a <a href="https://cloud.google.com/secure-source-manager/docs/create-private-service-connect-instance#create-private-service-connect-instance">create a Private Service Connect Secure Source Manager instance</a>.</p>
 <h2 id="text-to-speech">Text-to-Speech</h2>
 <h3 id="changed_10">Changed</h3>
 <p>Chirp 3: Instant custom voice supports new input audio encodings <code>PCM</code>, <code>MP3</code>, and <code>M4A</code>, with any sample rate. For more information, see the <a href="https://cloud.google.com/text-to-speech/docs/chirp3-instant-custom-voice">Chirp 3: Instant custom voice</a> page.</p>
 <h2 id="transcoder-api">Transcoder API</h2>
-<h3 id="feature_18">Feature</h3>
+<h3 id="feature_16">Feature</h3>
 <p>You can automatically generate subtitle from your input video. For more information, see <a href="https://cloud.google.com/transcoder/docs/how-to/configure-auto-generated-subtitles">Configure automatically generated subtitles</a>.</p>
-<h3 id="feature_19">Feature</h3>
+<h3 id="feature_17">Feature</h3>
 <p>You can process videos with significant number of missing frame by using the <code>fill_content_gaps</code> field. For more information, see <a href="https://cloud.google.com/transcoder/docs/troubleshooting#quality-issues">troubleshooting guide</a></p>
 <h2 id="vertex-ai">Vertex AI</h2>
-<h3 id="feature_20">Feature</h3>
+<h3 id="feature_18">Feature</h3>
 <p><strong>Vertex AI Agent Engine</strong></p>
 <p>Agent Engine now supports the following enterprise security features:</p>
 <ul>
@@ -2297,7 +2297,7 @@ are available in Cloud Composer 3:</p>
 <p><em>(Cloud Composer 2)</em> Moved the <code>update_fab_perms</code> option from <code>[webserver]</code> to
 <code>[fab]</code> in the Airflow configuration. The corresponding deprecation warning is
 no longer generated in Airflow web server logs.</p>
-<h3 id="feature_21">Feature</h3>
+<h3 id="feature_19">Feature</h3>
 <p>Added task-level resource consumption
 <a href="https://cloud.google.com/composer/docs/composer-3/monitor-environments">Airflow metrics</a>
 to Cloud Composer.</p>
@@ -2365,8 +2365,6 @@ to Cloud Composer.</p>
   <a href="https://cloud.google.com/database-center/docs/learn-database-products-using-gemini#before-you-begin">Before you begin using Gemini chat</a>.</p>
 <p>Google Kubernetes Engine</p>
 <hr />
-<p>### Feature</p>
-<p>The <a href="https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series">M4 machine series</a> is generally available in GKE Standard clusters.</p>
 <p>### Feature</p>
 <p>The <a href="https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series">M4 machine series</a> is generally available in GKE Standard clusters.</p>
 <p>### Fixed</p>
@@ -2521,7 +2519,7 @@ are available in Cloud Composer 2:</p>
 <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>.</p>
 <hr />
 <h2 id="2025-07-24">2025-07-24</h2>
-<h3 id="feature_22">Feature</h3>
+<h3 id="feature_20">Feature</h3>
 <p><a href="https://cloud.google.com/composer/docs/composer-3/access-airflow-web-interface#restarting">Web server restarting</a>
 is is now generally available (GA) in Cloud Composer 2 and Cloud Composer 3.</p>
 <hr />
@@ -2554,7 +2552,7 @@ following:</p>
 </ul>
 <hr />
 <h2 id="2025-07-17">2025-07-17</h2>
-<h3 id="feature_23">Feature</h3>
+<h3 id="feature_21">Feature</h3>
 <p><a href="https://cloud.google.com/composer/docs/composer-3/set-up-highly-resilient-environments">Highly resilient environments</a> are now generally available (GA) in Cloud Composer 3.</p>
 <hr />
 <h2 id="2025-07-14">2025-07-14</h2>
@@ -2623,7 +2621,7 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
 </ul>
 <hr />
 <h2 id="2025-06-23">2025-06-23</h2>
-<h3 id="feature_24">Feature</h3>
+<h3 id="feature_22">Feature</h3>
 <p>Improved the startup times of Airflow workers for environments that have a large number of custom PyPI packages installed.</p>
 <p>This feature <a href="https://cloud.google.com/composer/docs/release-notes#June_02_2025">was announced previously</a> and is gradually rolling out over several releases. In this release, it's available in asia-east2, asia-northeast3, europe-central2, europe-west9, me-central1, me-west1, northamerica-northeast1, northamerica-northeast2, northamerica-south1, and us-west1 re</p>
 <h3 id="fixed_4">Fixed</h3>
@@ -2669,7 +2667,7 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
 </ul>
 <hr />
 <h2 id="2025-06-13">2025-06-13</h2>
-<h3 id="feature_25">Feature</h3>
+<h3 id="feature_23">Feature</h3>
 <p>Cloud Composer pages in the Cloud Console now support the dark color theme. You can switch to the dark theme on the <a href="https://console.cloud.google.com/user-preferences/appearance">Appearance page</a> in the Cloud Console.</p>
 <hr />
 <h2 id="2025-06-10">2025-06-10</h2>
@@ -2693,7 +2691,7 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
 <p>Cloud Composer version 2.8.2 has reached its <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>.</p>
 <hr />
 <h2 id="2025-06-02">2025-06-02</h2>
-<h3 id="feature_26">Feature</h3>
+<h3 id="feature_24">Feature</h3>
 <p>Improved the startup times of Airflow workers for environments that have a large number of custom PyPI packages installed.</p>
 <p>This change rolls out gradually. In this release, it's available in asia-east1, asia-northeast2, asia-south1, europe-north1, europe-west3, us-east1, us-south1, and us-west2 regions.</p>
 <h3 id="changed_29">Changed</h3>
@@ -2721,7 +2719,7 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
 <p>Cloud Composer version 2.8.1 has reached its <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>.</p>
 <hr />
 <h2 id="2025-05-29">2025-05-29</h2>
-<h3 id="feature_27">Feature</h3>
+<h3 id="feature_25">Feature</h3>
 <p>The <a href="https://cloud.google.com/composer/docs/composer-3/run-local-airflow-environments">Composer Local Development CLI tool</a> is now available in Cloud Composer 3. This tool helps to streamline testing and developing by providing local Airflow environments based on Airflow builds used by Cloud Composer 3.</p>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">

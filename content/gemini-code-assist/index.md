@@ -2,10 +2,6 @@
 
 ## 2025-09-03
 
-### Feature
-
-
-
 ### Mention a remote repository to prioritize context
 
 You can now start your prompt with the `@` symbol and select a specific

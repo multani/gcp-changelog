@@ -2,10 +2,6 @@
 
 ## 2025-09-04
 
-### Feature
-
-
-
 ### Monitor Gemini Code Assist usage
 
 You can now monitor your organization's usage of Gemini Code Assist with a

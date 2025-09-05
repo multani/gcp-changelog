@@ -1,5 +1,20 @@
 # BigQuery
 
+## 2025-09-03
+
+### Feature
+
+BigQuery now supports [soft failover](https://cloud.google.com/bigquery/docs/managed-disaster-recovery) with managed disaster recovery. This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+### Feature
+
+You can [flatten records](https://cloud.google.com/bigquery/docs/data-prep-get-suggestions#flatten-records) in [BigQuery data preparation](https://cloud.google.com/bigquery/docs/data-prep-introduction) with a single operation. This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+### Feature
+
+The `INFORMATION_SCHEMA.RESERVATIONS_TIMELINE` view now includes the [`per_second_details` schema field](https://cloud.google.com/bigquery/docs/information-schema-reservation-timeline#schema). This new field provides information regarding reservation capacity and usage on a per-second basis, and also includes details on autoscale utilization. This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+---
 ## 2025-09-02
 
 ### Feature

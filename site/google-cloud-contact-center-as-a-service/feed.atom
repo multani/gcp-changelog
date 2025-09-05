@@ -190,9 +190,12 @@
 * Fixed an issue where calls originating from a native campaign generated two CRM tickets for the same interaction.
 * Fixed latency issues with web SDK Telnyx calls.
 * Fixed an issue where outbound Bring Your Own Carrier (BYOC) calls used a number other than the one agents selected in the agent adapter.
-* Fixed a Telnyx chatbot worker failure issue where background jobs related to call processing and chatbot escalations were failing and consuming excessive system resources.</p>]]></content>
-    <summary>This release addresses various issues, including chat prioritization, data redaction in the web SDK, contact list loading, email errors, manager statistics, call duration calculations, external storage configurations, outbound call numbers, report formatting, password reset emails, SSO settings, agent status restrictions, custom contact list management, queue transfer restrictions, queue naming, instance creation timeouts, report downloads, chat history saving, transfer failure messages, IVR recording issues, chat session display, voicemail warnings for CRM users, transfer restriction display, unread message counts, virtual assistant reporting, PDF transcript links, historical report fields, CSAT scores, HubSpot case creation delays, Smart Action file display, agent status visibility, HTML rendering in virtual agent messages, wrap-up status, announcement assignments, clipboard functionality, language translations, SIP call variables, chat adapter freezing, session type switching, Agent Assist platform display, Salesforce call button issues, audio file playback, custom panel variables, CRM ticket creation for native campaigns, and Telnyx call latency and chatbot worker failures.</summary>
-    <title>Fixed: Bug Fixes and Improvements</title>
+* Fixed a Telnyx chatbot worker failure issue where background jobs related to call processing and chatbot escalations were failing and consuming excessive system resources.
+* Fixed an issue where calls to the bulk user upload endpoint returned a success status even when the uploads failed.
+* Fixed an issue in the chat waiting field of the agent desktop when multiple chats were in wrap-up. Instead of displaying <strong>Wrap-up in progress</strong> for all sessions in wrap-up, some sessions displayed <strong>Auto answered</strong>.
+* Fixed an issue in the queue group dashboard where the <strong>Callbacks waiting</strong> tile incorrectly included callbacks that were completed, abandoned, or failed.</p>]]></content>
+    <summary>This release addresses numerous bugs and user experience improvements, including fixes for chat prioritization, data redaction, contact list loading, error handling, and reporting accuracy. Administrators and agents will benefit from improved stability and functionality across the platform.</summary>
+    <title>Fixed: Resolved various issues</title>
   </entry>
   <entry>
     <author>

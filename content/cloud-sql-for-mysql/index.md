@@ -1,5 +1,21 @@
 # Cloud SQL for MySQL
 
+## 2025-09-03
+
+### Feature
+
+Cloud SQL Managed Connection Pooling is now generally available ([GA](https://cloud.google.com/products#product-launch-stages)). Managed Connection Pooling lets you scale your workloads by optimizing resource utilization for Cloud SQL instances using pooling.
+
+For more information, see [Managed Connection Pooling overview](https://cloud.google.com/sql/docs/mysql/managed-connection-pooling).
+
+### Feature
+
+You can now enable your instance to take a final backup at instance deletion and define its retention period by setting the final backup [instance setting](https://cloud.google.com/sql/docs/mysql/instance-settings).
+
+You can also create a [custom organization policy](https://cloud.google.com/sql/docs/mysql/org-policy/custom-org-policy) to define final backup instance settings.
+For more information, see [Final backup](https://cloud.google.com/sql/docs/mysql/backup-recovery/backups#final-backup).
+
+---
 ## 2025-08-21
 
 ### Feature
@@ -26,7 +42,7 @@ You can no longer set a deny maintenance period for instances that are running a
 
 ### Feature
 
-Cloud SQL now supports Private Service Connect (PSC) outbound connectivity. With PSC outbound connectivity, you can attach a PSC interface to your existing Cloud SQL PSC-enabled instances to allow your instances to make outbound connections to your network. This is required for [homogeneous migrations using Database Migration Service](https://cloud.google.com/database-migration/docs/homogeneous-migrations). For more information, see [PSC outbound connections](https://cloud.google.com/sql/docs/mysql/about-private-service-connect#psc-outbound).
+Cloud SQL now supports Private Service Connect (PSC) outbound connectivity. With PSC outbound connectivity, you can attach a PSC interface to your existing Cloud SQL PSC-enabled instances to allow your instances to make outbound connections to your network. This is required for [homogeneous migrations](https://cloud.google.com/database-migration/docs/homogeneous-migrations) to PSC-enabled Cloud SQL instances using [Database Migration Service](https://cloud.google.com/database-migration/docs). For more information, see [PSC outbound connections](https://cloud.google.com/sql/docs/mysql/about-private-service-connect#psc-outbound).
 
 ---
 ## 2025-08-07

@@ -1,5 +1,15 @@
 # Cloud SQL for SQL Server
 
+## 2025-09-03
+
+### Feature
+
+You can now enable your instance to take a final backup at instance deletion and define its retention period by setting the final backup [instance setting](https://cloud.google.com/sql/docs/sqlserver/instance-settings).
+
+You can also create a [custom organization policy](https://cloud.google.com/sql/docs/sqlserver/org-policy/custom-org-policy) to define final backup instance settings.
+For more information, see [Final backup](https://cloud.google.com/sql/docs/sqlserver/backup-recovery/backups#final-backup).
+
+---
 ## 2025-08-29
 
 ### Feature

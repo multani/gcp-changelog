@@ -1,5 +1,20 @@
 # Apigee X
 
+## 2025-09-03
+
+### Announcement
+
+On September 3, 2025, we released an updated version of Apigee.
+
+### Feature
+
+**Apigee Server-Sent Events (SSE) and EventFlows are supported for use with the Apigee Extension Processor.**
+
+The Apigee SSE feature enables continuous response streaming from server-sent event (SSE) endpoints to clients in real time. To learn more about this feature, see [Streaming server-sent events](https://cloud.google.com/apigee/docs/api-platform/develop/server-sent-events).
+
+The Apigee Extension Processor is a [traffic extension](https://cloud.google.com/service-extensions/docs/overview#integration-lb) that lets you use Cloud Load Balancing to send callouts from the data processing path of the application load balancer to the Apigee Extension Processor. To learn more, see the [Apigee Extension Processor overview](https://cloud.google.com/apigee/docs/api-platform/service-extensions/extension-processor-overview).
+
+---
 ## 2025-08-27
 
 ### Announcement

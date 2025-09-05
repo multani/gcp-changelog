@@ -1,5 +1,12 @@
 # Cloud Run
 
+## 2025-09-03
+
+### Feature
+
+You can [configure GPU](https://cloud.google.com/run/docs/configuring/workerpools/gpu) in your Cloud Run worker pool (Preview).
+
+---
 ## 2025-08-21
 
 ### Feature

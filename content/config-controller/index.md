@@ -1,5 +1,12 @@
 # Config Controller
 
+## 2025-09-02
+
+### Announcement
+
+Config Controller is now available as part of the standard GKE offering and no longer requires GKE Enterprise. For more details on the removal of GKE Enterprise, see the [GKE release notes](https://cloud.google.com/kubernetes-engine/docs/release-notes#September_02_2025).
+
+---
 ## 2025-08-14
 
 ### Changed

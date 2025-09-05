@@ -1,5 +1,20 @@
 # Gemini Code Assist
 
+## 2025-09-04
+
+### Feature
+
+
+
+### Monitor Gemini Code Assist usage
+
+You can now monitor your organization's usage of Gemini Code Assist with a
+dashboard that is automatically available when you enable and use Gemini Code
+Assist. The dashboard includes some of the most important metrics, giving you a
+quick way to view aggregated usage data. For more information, see
+[Monitor Gemini Code Assist usage](https://cloud.google.com/gemini/docs/codeassist/monitor-gemini-code-assist).
+
+---
 ## 2025-09-03
 
 ### Mention a remote repository to prioritize context
@@ -19,6 +34,12 @@ see
 
 You can [create and manage multiple chats](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#create_multiple_chats) in IntelliJ Gemini Code Assist.
 Each chat contains its own context separate from other chats.
+
+### Edit a prior prompt in IntelliJ
+
+You can [edit a prior prompt](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#edit_a_prior_prompt)
+in IntelliJ Gemini Code Assist and receive a regenerated response based on your
+edited prompt.
 
 ---
 ## 2025-08-29

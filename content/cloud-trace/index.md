@@ -7,8 +7,8 @@
 You can now create and manage the trace scope programmatically. This feature
 is in Public Preview. For more information, see the following documents:
 
-* [Create and manage trace scopes](/trace/docs/trace-scope/create-and-manage)
-* [Trace scopes API overview](/stackdriver/docs/reference/observability/api/rest/v1/projects.locations.traceScopes)
+* [Create and manage trace scopes](https://cloud.google.com/trace/docs/trace-scope/create-and-manage)
+* [Trace scopes API overview](https://cloud.google.com/stackdriver/docs/reference/observability/api/rest/v1/projects.locations.traceScopes)
 
 ---
 ## 2025-07-17

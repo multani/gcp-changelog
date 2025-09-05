@@ -2,9 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for PostgreSQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for PostgreSQL</subtitle>
-  <updated>2025-08-21T00:00:00+00:00</updated>
+  <updated>2025-09-03T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-postgresql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2025-09-03:feature:0</id>
+    <published>2025-09-03T00:00:00+00:00</published>
+    <updated>2025-09-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now enable your instance to take a final backup at instance deletion and define its retention period by setting the final backup <a href="https://cloud.google.com/sql/docs/postgres/instance-settings">instance setting</a>.</p>
+<p>You can also create a <a href="https://cloud.google.com/sql/docs/postgres/org-policy/custom-org-policy">custom organization policy</a> to define final backup instance settings.
+For more information, see <a href="https://cloud.google.com/sql/docs/postgres/backup-recovery/backups#final-backup">Final backup</a>.</p>]]></content>
+    <summary>You can now enable your instance to take a final backup at instance deletion and define its retention period.</summary>
+    <title>Feature: Instance deletion backups</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -56,9 +69,9 @@
     <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2025-08-13:feature:0</id>
     <published>2025-08-13T00:00:00+00:00</published>
     <updated>2025-08-13T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Cloud SQL now supports Private Service Connect (PSC) outbound connectivity. With PSC outbound connectivity, you can attach a PSC interface to your existing Cloud SQL PSC-enabled instances to allow your instances to make outbound connections to your network. This is required for <a href="https://cloud.google.com/database-migration/docs/homogeneous-migrations">homogeneous migrations using Database Migration Service</a>. For more information, see <a href="https://cloud.google.com/sql/docs/postgres/about-private-service-connect#psc-outbound">PSC outbound connections</a>.</p>]]></content>
-    <summary>Cloud SQL now supports Private Service Connect (PSC) outbound connectivity. This allows Cloud SQL instances to connect to your network.</summary>
-    <title>Feature: Cloud SQL PSC Outbound Connectivity</title>
+    <content type="html"><![CDATA[<p>Cloud SQL now supports Private Service Connect (PSC) outbound connectivity. With PSC outbound connectivity, you can attach a PSC interface to your existing Cloud SQL PSC-enabled instances to allow your instances to make outbound connections to your network. This is required for <a href="https://cloud.google.com/database-migration/docs/homogeneous-migrations">homogeneous migrations</a> to PSC-enabled Cloud SQL instances using <a href="https://cloud.google.com/database-migration/docs">Database Migration Service</a>. For more information, see <a href="https://cloud.google.com/sql/docs/postgres/about-private-service-connect#psc-outbound">PSC outbound connections</a>.</p>]]></content>
+    <summary>Cloud SQL now supports Private Service Connect (PSC) outbound connectivity, enabling instances to connect to your network. This feature is essential for homogeneous migrations to PSC-enabled Cloud SQL instances using Database Migration Service.</summary>
+    <title>Feature: Cloud SQL Private Service Connect Outbound Connectivity</title>
   </entry>
   <entry>
     <author>

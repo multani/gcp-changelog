@@ -137,6 +137,9 @@ The following issues were addressed in this release:
 * Fixed latency issues with web SDK Telnyx calls.
 * Fixed an issue where outbound Bring Your Own Carrier (BYOC) calls used a number other than the one agents selected in the agent adapter.
 * Fixed a Telnyx chatbot worker failure issue where background jobs related to call processing and chatbot escalations were failing and consuming excessive system resources.
+* Fixed an issue where calls to the bulk user upload endpoint returned a success status even when the uploads failed.
+* Fixed an issue in the chat waiting field of the agent desktop when multiple chats were in wrap-up. Instead of displaying **Wrap-up in progress** for all sessions in wrap-up, some sessions displayed **Auto answered**.
+* Fixed an issue in the queue group dashboard where the **Callbacks waiting** tile incorrectly included callbacks that were completed, abandoned, or failed.
 
 ---
 ## 2025-08-20

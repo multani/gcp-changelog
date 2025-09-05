@@ -1,5 +1,12 @@
 # Sensitive Data Protection
 
+## 2025-09-02
+
+### Feature
+
+When configuring schedules for Cloud Storage data discovery, you can select data based on specific tags. For more information, see [Profile Cloud Storage data in an organization or folder](https://cloud.google.com/sensitive-data-protection/docs/profile-org-folder-cloud-storage) or [Profile Cloud Storage data in a single project](https://cloud.google.com/sensitive-data-protection/docs/profile-project-cloud-storage).
+
+---
 ## 2025-08-29
 
 ### Announcement

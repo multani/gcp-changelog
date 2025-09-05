@@ -1,5 +1,18 @@
 # Document AI
 
+## 2025-08-29
+
+### Feature
+
+Derived entity and signature detection are now supported in [Custom Extractor](https://cloud.google.com/document-ai/docs/ce-with-genai) models `pretrained-foundation-model-v1.4-2025-02-05` as General Availability [(GA)](https://cloud.google.com/products/#product-launch-stages), and `pretrained-foundation-model-v1.5-2025-05-05` and `pretrained-foundation-model-v1.5-pro-2025-06-20` as Preview.
+
+Signature detection lets you identify hand-written signatures by using visual cues in the document. Derived entity detection lets you deduce entities by inference without requiring the value to be explicitly present in the text. You can use this feature to deduce the country in an address, counting items in a table, or detecting if an ID is fake.
+
+These can be enabled in the console when creating new labels or by using the [`DocumentSchema.EntityType`](https://cloud.google.com/document-ai/docs/reference/rpc/google.cloud.documentai.v1#entitytype) resource in the API.
+
+For more information, read [Custom extractor with derived fields](https://cloud.google.com/document-ai/docs/ce-derived-signature), and [choose label attributes](https://cloud.google.com/document-ai/docs/create-dataset#choose_label_attributes).
+
+---
 ## 2025-07-22
 
 ### Feature

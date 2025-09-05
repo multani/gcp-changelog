@@ -132,6 +132,7 @@
 - [Policy Intelligence](policy-intelligence/index.md)
 - [Pub/Sub](pub-sub/index.md)
 - [Resource Manager](resource-manager/index.md)
+- [Retail API](retail-api/index.md)
 - [SAP on Google Cloud](sap-on-google-cloud/index.md)
 - [Secret Manager](secret-manager/index.md)
 - [Secure Source Manager](secure-source-manager/index.md)

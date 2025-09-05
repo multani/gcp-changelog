@@ -1,5 +1,16 @@
 # SAP on Google Cloud
 
+## 2025-09-02
+
+### Deprecated
+
+**Support for version 2 of Google Cloud's Agent for SAP has ended**
+
+Support for version 2 of Google Cloud's Agent for SAP ended on July 31, 2025.
+
+If you're using version 2 of the agent, then we strongly recommend that you update to using a supported version as soon as possible. For information about how to update the agent, see [Update Google Cloud's Agent for SAP](https://cloud.google.com/sap/docs/agent-for-sap/latest/operations#agent4sap-update).
+
+---
 ## 2025-08-27
 
 ### Announcement

@@ -5,19 +5,19 @@
 ### Announcement
 
 Google Distributed Cloud for bare metal 1.33.0-gke.799 is now available for
-[download](/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads). To
+[download](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads). To
 upgrade, see [Upgrade
-clusters](/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade).
+clusters](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade).
 Google Distributed Cloud for bare metal 1.33.0-gke.799 runs on Kubernetes
 v1.33.2-gke.700.
 
 After a release, it takes approximately 7 to 14 days for the version to become
 available for installations or upgrades with the [GKE On-Prem API
-clients](/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools):
+clients](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools):
 the Google Cloud console, the gcloud CLI, and Terraform.
 
 If you use a third-party storage vendor, check the [Ready storage
-partners](/anthos/docs/resources/partner-storage) document to make sure the
+partners](https://cloud.google.com/anthos/docs/resources/partner-storage) document to make sure the
 storage vendor has already passed the qualification for this release of Google
 Distributed Cloud for bare metal.
 
@@ -27,14 +27,15 @@ The following features were added in 1.33.0-gke.799:
 
 * **GA**: Introduced an Envoy sidecar into the GKE Identity Service to
   increase security, reliability, and performance.
-* **GA**: Added support for the Ubuntu 24.04 LTS operating system with the 6.8
-  kernel.
+* **GA**: Added support for the Ubuntu 24.04 LTS operating system with Linux
+  kernel versions, such as 6.8 and 6.11. Support for Linux kernel 6.14 is
+  explicitly excluded.
 * **GA**: Added the ability to override the cluster-level pod density setting
   for individual node pools.
 * **Preview**: Added Node Agent to give you the ability to transition from
   using Ansible over SSH for cluster operations to a more secure, agent-based
   model. Added [`bmctl
-  nodeagent`](/kubernetes-engine/distributed-cloud/bare-metal/docs/reference/bmctl#nodeagent)
+  nodeagent`](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/reference/bmctl#nodeagent)
   commands to provide a straightforward and reliable process of migrating
   existing clusters to use Node Agent.
 * **Preview**: Added a bundled version of the [NVIDIA GPU Operator](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/index.html#about-the-nvidia-gpu-operator)
@@ -58,7 +59,7 @@ The following features were added in 1.33.0-gke.799:
   directly upgrade your cluster control plane nodes (and entire cluster if
   worker node pools aren't pinned at a lower version) to two minor versions
   above the current version. Added the [`bmctl upgrade
-  intermediate-version`](/kubernetes-engine/distributed-cloud/bare-metal/docs/reference/bmctl#upgrade_intermediate-version)
+  intermediate-version`](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/reference/bmctl#upgrade_intermediate-version)
   to print the intermediate version for a skip minor version upgrade.
 * Surface failures from node pool status to the `RecentFailures` field in
   cluster status.
@@ -77,7 +78,7 @@ The following functional changes were made in 1.33.0-gke.799:
   operator to be more responsive to cluster events.
 * Updated the validation checks for cluster upgrades to enforce the [cluster
   version skew
-  rules](/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade-lifecycle#version_skew)
+  rules](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade-lifecycle#version_skew)
   for user clusters. If the upgrade version information for a user cluster
   doesn't comply with the version skew rules, the upgrade is halted.
 * Updated health checks and upgrade preflight checks to inspect for kubeadm
@@ -107,11 +108,11 @@ The following issues were fixed in 1.33.0-gke.799:
 * Fixed an issue where the CronJob for periodic health checks wasn't updating
   after configuration changes.
 * Fixed vulnerabilities listed in [Vulnerability
-  fixes](/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
+  fixes](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
 
 ### Issue
 
-For information about the latest known issues, see [Google Distributed Cloud for bare metal known issues](/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues) in the Troubleshooting section.
+For information about the latest known issues, see [Google Distributed Cloud for bare metal known issues](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues) in the Troubleshooting section.
 
 ---
 ## 2025-08-28
@@ -119,19 +120,19 @@ For information about the latest known issues, see [Google Distributed Cloud for
 ### Announcement
 
 Google Distributed Cloud for bare metal 1.32.400-gke.68 is now available for
-[download](/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads).
+[download](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads).
 To upgrade, see [Upgrade
-clusters](/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade).
+clusters](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade).
 Google Distributed Cloud for bare metal 1.32.400-gke.68 runs on Kubernetes
 v1.32.7-gke.200.
 
 After a release, it takes approximately 7 to 14 days for the version to become
 available for installations or upgrades with the [GKE On-Prem API
-clients](/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools):
+clients](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools):
 the Google Cloud console, the gcloud CLI, and Terraform.
 
 If you use a third-party storage vendor, check the [Ready storage
-partners](/anthos/docs/resources/partner-storage)
+partners](https://cloud.google.com/anthos/docs/resources/partner-storage)
 document to make sure the storage vendor has already passed the qualification
 for this release of Google Distributed Cloud for bare metal.
 
@@ -142,13 +143,13 @@ The following issues were fixed in 1.32.400-gke.68:
 * Fixed an issue that caused the Ansible playbook for handling
   Customer-Acquired Licenses (CAL) to fail and not complete.
 * Fixed vulnerabilities listed in [Vulnerability
-  fixes](/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
+  fixes](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
 
 ### Issue
 
 For information about the latest known issues, see [Google Distributed Cloud for
 bare metal known
-issues](/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues)
+issues](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues)
 in the Troubleshooting section.
 
 ---
@@ -224,29 +225,29 @@ For information about the latest known issues, see [Google Distributed Cloud for
 
 ### Announcement
 
-Google Distributed Cloud for bare metal 1.32.300-gke.85 is now available for [download](/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads). To upgrade, see [Upgrade clusters](/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade). Google Distributed Cloud for bare metal 1.32.300-gke.85 runs on Kubernetes v1.32.4-gke.1000.
+Google Distributed Cloud for bare metal 1.32.300-gke.85 is now available for [download](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads). To upgrade, see [Upgrade clusters](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade). Google Distributed Cloud for bare metal 1.32.300-gke.85 runs on Kubernetes v1.32.4-gke.1000.
 
-After a release, it takes approximately 7 to 14 days for the version to become available for installations or upgrades with the [GKE On-Prem API clients](/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools): the Google Cloud console, the gcloud CLI, and Terraform.
+After a release, it takes approximately 7 to 14 days for the version to become available for installations or upgrades with the [GKE On-Prem API clients](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools): the Google Cloud console, the gcloud CLI, and Terraform.
 
-If you use a third-party storage vendor, check the [Ready storage partners](/anthos/docs/resources/partner-storage) document to make sure the storage vendor has already passed the qualification for this release of Google Distributed Cloud for bare metal.
+If you use a third-party storage vendor, check the [Ready storage partners](https://cloud.google.com/anthos/docs/resources/partner-storage) document to make sure the storage vendor has already passed the qualification for this release of Google Distributed Cloud for bare metal.
 
 ### Changed
 
 The following functional change was made in 1.32.300-gke.85:
 
-* Updated the validation checks for cluster upgrades to enforce the [cluster version skew rules](/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade-lifecycle#version_skew) for user clusters. If the upgrade version information for a user cluster doesn't comply with the version skew rules, the upgrade is halted.
+* Updated the validation checks for cluster upgrades to enforce the [cluster version skew rules](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade-lifecycle#version_skew) for user clusters. If the upgrade version information for a user cluster doesn't comply with the version skew rules, the upgrade is halted.
 
 ### Fixed
 
 The following issues were fixed in 1.32.300-gke.85:
 
-* Fixed a [known issue](/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues#keepalived-config-issue) where Keepalived failover is blocked when the corresponding HAProxy instance is unreachable. This issue prevented the control plane VIP from being made available on a new, healthy node.
+* Fixed a [known issue](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues#keepalived-config-issue) where Keepalived failover is blocked when the corresponding HAProxy instance is unreachable. This issue prevented the control plane VIP from being made available on a new, healthy node.
 * Fixed an issue where the CronJob for periodic health checks wasn't updating after configuration changes.
-* Fixed vulnerabilities listed in [Vulnerability fixes](/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
 
 ### Issue
 
-For information about the latest known issues, see [Google Distributed Cloud for bare metal known issues](/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues) in the Troubleshooting section.
+For information about the latest known issues, see [Google Distributed Cloud for bare metal known issues](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues) in the Troubleshooting section.
 
 ---
 ## 2025-08-04

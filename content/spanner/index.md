@@ -1,5 +1,17 @@
 # Spanner
 
+## 2025-09-03
+
+### Feature
+
+You can import your own data into a Spanner database by using a CSV file, a MySQL dump file, or a PostgreSQL dump file.
+
+Additionally, you can populate new databases in an existing Spanner instance from sample datasets that
+help you explore Spanner capabilities such as its relational model, full-text search, vector search, or Spanner Graph.
+
+For more information, see [Create and manage databases](https://cloud.google.com/spanner/docs/create-manage-databases).
+
+---
 ## 2025-08-29
 
 ### Libraries

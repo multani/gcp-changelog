@@ -13,21 +13,21 @@
     <published>2025-09-02T00:00:00+00:00</published>
     <updated>2025-09-02T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Google Distributed Cloud for bare metal 1.33.0-gke.799 is now available for
-<a href="/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>. To
-upgrade, see <a href="/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade
+<a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>. To
+upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade
 clusters</a>.
 Google Distributed Cloud for bare metal 1.33.0-gke.799 runs on Kubernetes
 v1.33.2-gke.700.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become
-available for installations or upgrades with the <a href="/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools">GKE On-Prem API
+available for installations or upgrades with the <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools">GKE On-Prem API
 clients</a>:
 the Google Cloud console, the gcloud CLI, and Terraform.</p>
-<p>If you use a third-party storage vendor, check the <a href="/anthos/docs/resources/partner-storage">Ready storage
+<p>If you use a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">Ready storage
 partners</a> document to make sure the
 storage vendor has already passed the qualification for this release of Google
 Distributed Cloud for bare metal.</p>]]></content>
-    <summary>Google Distributed Cloud for bare metal 1.33.0-gke.799 has been released and is available for download and upgrade. This version runs on Kubernetes v1.33.2-gke.700. Please check storage partner qualifications if you use a third-party storage vendor.</summary>
-    <title>Announcement: Google Distributed Cloud for bare metal 1.33.0-gke.799 Available</title>
+    <summary>Google Distributed Cloud for bare metal 1.33.0-gke.799 has been released. You can download it and upgrade your clusters. This version runs on Kubernetes v1.33.2-gke.700. Please check the Ready storage partners document if you use a third-party storage vendor.</summary>
+    <title>Announcement: Google Distributed Cloud for bare metal 1.33.0-gke.799 is available</title>
   </entry>
   <entry>
     <author>
@@ -40,13 +40,14 @@ Distributed Cloud for bare metal.</p>]]></content>
 <ul>
 <li><strong>GA</strong>: Introduced an Envoy sidecar into the GKE Identity Service to
   increase security, reliability, and performance.</li>
-<li><strong>GA</strong>: Added support for the Ubuntu 24.04 LTS operating system with the 6.8
-  kernel.</li>
+<li><strong>GA</strong>: Added support for the Ubuntu 24.04 LTS operating system with Linux
+  kernel versions, such as 6.8 and 6.11. Support for Linux kernel 6.14 is
+  explicitly excluded.</li>
 <li><strong>GA</strong>: Added the ability to override the cluster-level pod density setting
   for individual node pools.</li>
 <li><strong>Preview</strong>: Added Node Agent to give you the ability to transition from
   using Ansible over SSH for cluster operations to a more secure, agent-based
-  model. Added <a href="/kubernetes-engine/distributed-cloud/bare-metal/docs/reference/bmctl#nodeagent"><code>bmctl
+  model. Added <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/reference/bmctl#nodeagent"><code>bmctl
   nodeagent</code></a>
   commands to provide a straightforward and reliable process of migrating
   existing clusters to use Node Agent.</li>
@@ -70,7 +71,7 @@ Distributed Cloud for bare metal.</p>]]></content>
 <li><strong>Preview</strong>: Added support for skip minor version cluster upgrades. You can
   directly upgrade your cluster control plane nodes (and entire cluster if
   worker node pools aren't pinned at a lower version) to two minor versions
-  above the current version. Added the <a href="/kubernetes-engine/distributed-cloud/bare-metal/docs/reference/bmctl#upgrade_intermediate-version"><code>bmctl upgrade
+  above the current version. Added the <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/reference/bmctl#upgrade_intermediate-version"><code>bmctl upgrade
   intermediate-version</code></a>
   to print the intermediate version for a skip minor version upgrade.</li>
 <li>Surface failures from node pool status to the <code>RecentFailures</code> field in
@@ -78,8 +79,8 @@ Distributed Cloud for bare metal.</p>]]></content>
 <li>Surface failures from failed preflight checks triggered by the cluster
   controller to the <code>RecentFailures</code> field in cluster status.</li>
 </ul>]]></content>
-    <summary>The latest update introduces several new features, including enhanced security with an Envoy sidecar, support for Ubuntu 24.04 LTS, and the ability to override pod density settings. It also adds a Node Agent for more secure cluster operations, a bundled NVIDIA GPU Operator, Dynamic Resource Allocation for GPUs, and vertical Pod autoscaling for efficient resource management. Additionally, skip minor version cluster upgrades are now supported, and failure information is more readily available in cluster status.</summary>
-    <title>Feature: New features in 1.33.0-gke.799</title>
+    <summary>The latest release introduces an Envoy sidecar for enhanced security and performance, adds support for Ubuntu 24.04 LTS, and allows overriding pod density settings. Preview features include a Node Agent for secure cluster operations, NVIDIA GPU Operator integration, Dynamic Resource Allocation for GPUs, vertical Pod autoscaling, and support for skipping minor version upgrades.</summary>
+    <title>Feature: New Features in GKE Identity Service 1.33.0-gke.799</title>
   </entry>
   <entry>
     <author>
@@ -96,7 +97,7 @@ Distributed Cloud for bare metal.</p>]]></content>
   in Debian nodes.</li>
 <li>Cluster manifests are deployed using a Kubernetes job, allowing the cluster
   operator to be more responsive to cluster events.</li>
-<li>Updated the validation checks for cluster upgrades to enforce the <a href="/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade-lifecycle#version_skew">cluster
+<li>Updated the validation checks for cluster upgrades to enforce the <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade-lifecycle#version_skew">cluster
   version skew
   rules</a>
   for user clusters. If the upgrade version information for a user cluster
@@ -114,8 +115,8 @@ Distributed Cloud for bare metal.</p>]]></content>
 <li>Increased the RSA key size for Cluster API certifications to 4096 bits for
   improved security.</li>
 </ul>]]></content>
-    <summary>This release enhances logging, node security, and cluster management. It includes updated etcd and Ansible versions, improved security with larger RSA keys, and enforces version skew rules for upgrades. Support for RHEL 8.8 and Ubuntu 20.04 LTS has been removed.</summary>
-    <title>Changed: Release 1.33.0-gke.799: Key Updates</title>
+    <summary>Version 1.33.0-gke.799 includes changes to logging, ARP cache, cluster manifest deployment, and updated validation for cluster upgrades. It also features updated health checks, an etcd upgrade, and improved security with larger RSA keys. Support for RHEL 8.8 and Ubuntu 20.04 LTS has been removed.</summary>
+    <title>Changed: New release available</title>
   </entry>
   <entry>
     <author>
@@ -135,11 +136,11 @@ Distributed Cloud for bare metal.</p>]]></content>
   checks for nodes that are in maintenance mode.</li>
 <li>Fixed an issue where the CronJob for periodic health checks wasn't updating
   after configuration changes.</li>
-<li>Fixed vulnerabilities listed in <a href="/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">Vulnerability
+<li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">Vulnerability
   fixes</a>.</li>
 </ul>]]></content>
-    <summary>Version 1.33.0-gke.799 addresses several issues, including cluster instability with GPUs during restores, failures in Cloud Audit Logging handling, nodes getting stuck in maintenance mode, and outdated CronJobs for health checks. It also includes various vulnerability fixes.</summary>
-    <title>Fixed: Fixed cluster instability and other issues</title>
+    <summary>This release addresses several critical issues, including instability when restoring clusters with GPUs, failures in Cloud Audit Logging Ansible playbooks, nodes getting stuck in maintenance mode, and outdated CronJob configurations for health checks. Vulnerabilities have also been fixed.</summary>
+    <title>Fixed: Fixed instability issues with cluster restores and improved health checks</title>
   </entry>
   <entry>
     <author>
@@ -148,8 +149,8 @@ Distributed Cloud for bare metal.</p>]]></content>
     <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2025-09-02:issue:4</id>
     <published>2025-09-02T00:00:00+00:00</published>
     <updated>2025-09-02T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>For information about the latest known issues, see <a href="/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for bare metal known issues</a> in the Troubleshooting section.</p>]]></content>
-    <summary>For the latest known issues, refer to the Google Distributed Cloud for bare metal known issues documentation.</summary>
+    <content type="html"><![CDATA[<p>For information about the latest known issues, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for bare metal known issues</a> in the Troubleshooting section.</p>]]></content>
+    <summary>Refer to the Google Distributed Cloud for bare metal known issues page for the latest information.</summary>
     <title>Issue: Known Issues</title>
   </entry>
   <entry>
@@ -160,21 +161,21 @@ Distributed Cloud for bare metal.</p>]]></content>
     <published>2025-08-28T00:00:00+00:00</published>
     <updated>2025-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Google Distributed Cloud for bare metal 1.32.400-gke.68 is now available for
-<a href="/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>.
-To upgrade, see <a href="/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade
+<a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>.
+To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade
 clusters</a>.
 Google Distributed Cloud for bare metal 1.32.400-gke.68 runs on Kubernetes
 v1.32.7-gke.200.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become
-available for installations or upgrades with the <a href="/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools">GKE On-Prem API
+available for installations or upgrades with the <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools">GKE On-Prem API
 clients</a>:
 the Google Cloud console, the gcloud CLI, and Terraform.</p>
-<p>If you use a third-party storage vendor, check the <a href="/anthos/docs/resources/partner-storage">Ready storage
+<p>If you use a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">Ready storage
 partners</a>
 document to make sure the storage vendor has already passed the qualification
 for this release of Google Distributed Cloud for bare metal.</p>]]></content>
-    <summary>Google Distributed Cloud for bare metal 1.32.400-gke.68 is now available. Upgrade instructions and compatibility information can be found in the release notes.</summary>
-    <title>Announcement: New Version Available</title>
+    <summary>Google Distributed Cloud for bare metal 1.32.400-gke.68 has been released and is available for download. This version runs on Kubernetes v1.32.7-gke.200. Please check the documentation for upgrade instructions and ensure your third-party storage vendor is qualified for this release before upgrading.</summary>
+    <title>Announcement: Google Distributed Cloud for bare metal 1.32.400-gke.68 is available</title>
   </entry>
   <entry>
     <author>
@@ -187,11 +188,11 @@ for this release of Google Distributed Cloud for bare metal.</p>]]></content>
 <ul>
 <li>Fixed an issue that caused the Ansible playbook for handling
   Customer-Acquired Licenses (CAL) to fail and not complete.</li>
-<li>Fixed vulnerabilities listed in <a href="/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">Vulnerability
+<li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">Vulnerability
   fixes</a>.</li>
 </ul>]]></content>
-    <summary>The latest release fixes an issue with the Ansible playbook for Customer-Acquired Licenses and addresses various security vulnerabilities.</summary>
-    <title>Fixed: Fixed CAL and vulnerability issues</title>
+    <summary>This release addresses issues with the Ansible playbook for Customer-Acquired Licenses and includes various security vulnerability fixes.</summary>
+    <title>Fixed: Bug fixes in 1.32.400-gke.68</title>
   </entry>
   <entry>
     <author>
@@ -200,11 +201,11 @@ for this release of Google Distributed Cloud for bare metal.</p>]]></content>
     <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2025-08-28:issue:2</id>
     <published>2025-08-28T00:00:00+00:00</published>
     <updated>2025-08-28T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>For information about the latest known issues, see <a href="/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for
+    <content type="html"><![CDATA[<p>For information about the latest known issues, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for
 bare metal known
 issues</a>
 in the Troubleshooting section.</p>]]></content>
-    <summary>Refer to the troubleshooting section for the latest known issues with Google Distributed Cloud for bare metal.</summary>
+    <summary>For information about the latest known issues, see Google Distributed Cloud for bare metal known issues in the Troubleshooting section.</summary>
     <title>Issue: Known Issues</title>
   </entry>
   <entry>
@@ -324,11 +325,11 @@ in the Troubleshooting section.</p>]]></content>
     <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2025-08-08:announcement:1</id>
     <published>2025-08-08T00:00:00+00:00</published>
     <updated>2025-08-08T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Google Distributed Cloud for bare metal 1.32.300-gke.85 is now available for <a href="/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>. To upgrade, see <a href="/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade clusters</a>. Google Distributed Cloud for bare metal 1.32.300-gke.85 runs on Kubernetes v1.32.4-gke.1000.</p>
-<p>After a release, it takes approximately 7 to 14 days for the version to become available for installations or upgrades with the <a href="/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
-<p>If you use a third-party storage vendor, check the <a href="/anthos/docs/resources/partner-storage">Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release of Google Distributed Cloud for bare metal.</p>]]></content>
-    <summary>Google Distributed Cloud for bare metal 1.32.300-gke.85 is now available. This version runs on Kubernetes v1.32.4-gke.1000. Upgrades can be performed by following the provided documentation. Please note that it may take 7-14 days for this version to be available through GKE On-Prem API clients. Additionally, verify third-party storage vendor compatibility with this release.</summary>
-    <title>Announcement: Google Distributed Cloud for bare metal 1.32.300-gke.85 released</title>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud for bare metal 1.32.300-gke.85 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade clusters</a>. Google Distributed Cloud for bare metal 1.32.300-gke.85 runs on Kubernetes v1.32.4-gke.1000.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become available for installations or upgrades with the <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
+<p>If you use a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release of Google Distributed Cloud for bare metal.</p>]]></content>
+    <summary>Google Distributed Cloud for bare metal 1.32.300-gke.85 is now available. Upgrade instructions and further details can be found in the documentation.</summary>
+    <title>Announcement: New release available</title>
   </entry>
   <entry>
     <author>
@@ -339,10 +340,10 @@ in the Troubleshooting section.</p>]]></content>
     <updated>2025-08-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The following functional change was made in 1.32.300-gke.85:</p>
 <ul>
-<li>Updated the validation checks for cluster upgrades to enforce the <a href="/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade-lifecycle#version_skew">cluster version skew rules</a> for user clusters. If the upgrade version information for a user cluster doesn't comply with the version skew rules, the upgrade is halted.</li>
+<li>Updated the validation checks for cluster upgrades to enforce the <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade-lifecycle#version_skew">cluster version skew rules</a> for user clusters. If the upgrade version information for a user cluster doesn't comply with the version skew rules, the upgrade is halted.</li>
 </ul>]]></content>
-    <summary>Cluster upgrade validation now enforces version skew rules for user clusters, halting upgrades that do not comply.</summary>
-    <title>Changed: Cluster Upgrade Validation Update</title>
+    <summary>Cluster upgrade validation has been updated to enforce version skew rules. Upgrades will be halted if the user cluster version does not comply.</summary>
+    <title>Changed: Cluster upgrade validation updated</title>
   </entry>
   <entry>
     <author>
@@ -353,11 +354,11 @@ in the Troubleshooting section.</p>]]></content>
     <updated>2025-08-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The following issues were fixed in 1.32.300-gke.85:</p>
 <ul>
-<li>Fixed a <a href="/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues#keepalived-config-issue">known issue</a> where Keepalived failover is blocked when the corresponding HAProxy instance is unreachable. This issue prevented the control plane VIP from being made available on a new, healthy node.</li>
+<li>Fixed a <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues#keepalived-config-issue">known issue</a> where Keepalived failover is blocked when the corresponding HAProxy instance is unreachable. This issue prevented the control plane VIP from being made available on a new, healthy node.</li>
 <li>Fixed an issue where the CronJob for periodic health checks wasn't updating after configuration changes.</li>
-<li>Fixed vulnerabilities listed in <a href="/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">Vulnerability fixes</a>.</li>
+<li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>]]></content>
-    <summary>Resolved Keepalived failover blockage and CronJob update issues.</summary>
+    <summary>This release resolves an issue with Keepalived failover and ensures CronJob health checks update correctly after configuration changes.</summary>
     <title>Fixed: Keepalived and CronJob Fixes</title>
   </entry>
   <entry>
@@ -367,8 +368,8 @@ in the Troubleshooting section.</p>]]></content>
     <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2025-08-08:issue:4</id>
     <published>2025-08-08T00:00:00+00:00</published>
     <updated>2025-08-08T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>For information about the latest known issues, see <a href="/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for bare metal known issues</a> in the Troubleshooting section.</p>]]></content>
-    <summary>For information about the latest known issues, see the Google Distributed Cloud for bare metal known issues documentation in the Troubleshooting section.</summary>
+    <content type="html"><![CDATA[<p>For information about the latest known issues, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for bare metal known issues</a> in the Troubleshooting section.</p>]]></content>
+    <summary>This document outlines the known issues for Google Distributed Cloud for bare metal.</summary>
     <title>Issue: Known Issues</title>
   </entry>
   <entry>

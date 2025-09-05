@@ -1,5 +1,18 @@
 # Carbon Footprint
 
+## 2025-09-03
+
+### Announcement
+
+We recently released a new technical paper, ["Measuring the Environmental Impact of Delivering AI at Google Scale"](https://arxiv.org/abs/2508.15734) and [blogpost](https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference). This research establishes a more comprehensive methodology for measuring the energy, emissions, and water consumption of AI inference in a live production environment. Our goal is to promote greater transparency and encourage the industry to align on more standardized, comprehensive measurement frameworks.
+
+Currently, the data in Google Cloud Carbon Footprint for AI services does not fully reflect this comprehensive approach, which we believe is the most transparent environmental impact assessment from AI labs today. To better align with this new, more detailed methodology, we will be updating our carbon accounting pipeline for services that use AI, such as Vertex AI.
+
+The new methodology provides a more accurate and complete picture of the environmental impact of AI services. We anticipate that this change, which will be implemented during our next semi-annual methodology refresh, may result in an increase in the emissions data for some of our Cloud AI services. However, we believe this move to more actionable data will enable us to more readily incentivize and track optimizations for these AI services.
+
+The updated data will be released with the January 2026 methodology refresh, which is expected to be available in mid-February 2026. We believe this is an important step toward providing you with the most accurate and actionable data possible to manage your cloud usage more sustainably.
+
+---
 ## 2025-08-14
 
 ### Changed

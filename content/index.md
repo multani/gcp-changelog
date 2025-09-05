@@ -77,6 +77,7 @@
 - [Cloud Trace](cloud-trace/index.md)
 - [Cloud VPN](cloud-vpn/index.md)
 - [Cloud Workstations](cloud-workstations/index.md)
+- [Cluster Toolkit](cluster-toolkit/index.md)
 - [Colab Enterprise](colab-enterprise/index.md)
 - [Compute Engine](compute-engine/index.md)
 - [Confidential VM](confidential-vm/index.md)

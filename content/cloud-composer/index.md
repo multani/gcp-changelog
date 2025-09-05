@@ -73,7 +73,7 @@ no longer generated in Airflow web server logs.
 
 ### Feature
 
-Added task-level resource consumption
+*(Airflow 2.10.5 only)* Added task-level resource consumption
 [Airflow metrics](https://cloud.google.com/composer/docs/composer-3/monitor-environments)
 to Cloud Composer.
 

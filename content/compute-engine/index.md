@@ -1,5 +1,25 @@
 # Compute Engine
 
+## 2025-09-04
+
+### Feature
+
+Hyperdisk Balanced High Availability (Hyperdisk Balanced HA) volumes attached to C3 instances have increased performance limits for several C3 machine types. The new limits for the updated machine types are as follows:
+
+* `c3-*-8`: 50,000 IOPS and 800 MiB/s of throughput
+* `c3-*-22`: 120,000 IOPS and 1,800 MiB/s of throughput
+* `c3-*-44`: 160,000 IOPS and 2,400 MiB/s of throughput
+* `c3-*-88`: 160,000 IOPS and 4,800 MiB/s of throughput
+* `c3-*-176`: 160,000 IOPS and 10,000 MiB/s of throughput
+* `c3-*-192`: 160,000 IOPS and 10,000 MiB/s of throughput
+
+For more information, see [Performance limits when attached to an instance](https://cloud.google.com/compute/docs/disks/hd-types/hyperdisk-balanced-ha#perf-limits).
+
+### Feature
+
+**Generally available**: [Windows OS images](https://cloud.google.com/compute/docs/images/os-details#network-features) have been updated with a new version of the gVNIC driver. Third generation and later compute instances that use these updated Windows OS images support up to [200 Gbps networking bandwidth](https://cloud.google.com/compute/docs/network-bandwidth#summary-table) and [Jumbo frames](https://cloud.google.com/compute/docs/network-bandwidth#jumbo-mtu).
+
+---
 ## 2025-08-28
 
 ### Feature

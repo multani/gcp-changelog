@@ -1,5 +1,12 @@
 # NetApp Volumes
 
+## 2025-09-05
+
+### Feature
+
+The auto-tiering feature for the Flex service level is now generally available for custom-performance Flex zonal pools. For more information, see [Manage auto-tiering](https://cloud.google.com/netapp/volumes/docs/configure-and-use/volumes/manage-auto-tiering).
+
+---
 ## 2025-08-25
 
 ### Feature

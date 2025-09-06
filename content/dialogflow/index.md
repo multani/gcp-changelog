@@ -1,5 +1,32 @@
 # Dialogflow
 
+## 2025-09-04
+
+### Announcement
+
+**Dialogflow CX (Conversational Agents)**: *This is a correction of the release note posted on [August 7, 2025](https://cloud.google.com/dialogflow/docs/release-notes#August_07_2025)*. All deactivated models are now automatically upgraded to model `gemini- 2.5-flash` with the exception of **generative fallback**, which is automatically upgraded to `gemini-2.5-flash-lite`.
+
+### Feature
+
+**Dialogflow CX (Conversational Agents)**: The following regions are now available:
+
+* `asia-southeast2`
+* `europe-west4`
+* `europe-west6`
+
+### Feature
+
+**Dalogflow CX (Conversational Agents)**: New prompt security controls are available in **agent settings**. See the [agent settings documentation](https://docs.google.com/document/d/1JsI5akdrE0jeut-dTS1niBWCycpa3JbnzzwELtAicxA/edit?resourcekey=0-fW6C0xA5t-bEBypItPV3XA&tab=t.0) for details.
+
+### Feature
+
+**Dialogflow CX (Conversational Agents)** The [model](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions) `gemini-2.5-flash-lite` is now available in all regions, and `gemini-2.5-flash` is now GA. These changes apply to the following features:
+
+* Generators
+* Playbooks
+* Data store tools
+
+---
 ## 2025-08-07
 
 ### Deprecated

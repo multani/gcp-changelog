@@ -1,5 +1,32 @@
 # Apigee X
 
+## 2025-09-04
+
+### Announcement
+
+On September 4, 2025, we released an updated version of Apigee.
+
+### Feature
+
+**Apigee policies for LLM/GenAI workloads are Generally Available (GA)**
+
+Four new Apigee policies supporting LLM/GenAI workloads are now [GA](https://cloud.google.com/products#product-launch-stages):
+
+* [SemanticCacheLookup policy](https://cloud.google.com/apigee/docs/api-platform/reference/policies/semantic-cache-lookup-policy)
+* [SemanticCachePopulate policy](https://cloud.google.com/apigee/docs/api-platform/reference/policies/semantic-cache-populate-policy)
+* [SanitizeUserPrompt](https://cloud.google.com/apigee/docs/api-platform/reference/policies/sanitize-user-prompt-policy)
+* [SanitizeModelResponse](https://cloud.google.com/apigee/docs/api-platform/reference/policies/sanitize-user-prompt-policy)
+
+The Apigee semantic caching policies enable intelligent response reuse based on semantic similarity. Using these policies in your Apigee API proxies can minimize redundant backend API calls, reduce latency, and lower operational costs. With this release, the semantic caching policies support URL templating, enabling the use of variables for AI model endpoint values.
+
+The Model Armor policies protect your AI applications by sanitizing user prompts to and responses from large language models (LLMs). Using these policies in your Apigee API proxies can mitigate the risks associated with LLM usage by leveraging Model Armor to detect prompt injection, prevent jailbreak attacks, apply responsible AI filters, filter malicious URLs, and protect sensitive data.
+
+For more information on using these policies in your Apigee API proxies, see:
+
+* [Get started with semantic caching policies](https://cloud.google.com/apigee/docs/api-platform/tutorials/using-semantic-caching-policies)
+* [Get started with Apigee Model Armor policies](https://cloud.google.com/apigee/docs/api-platform/tutorials/using-model-armor-policies)
+
+---
 ## 2025-09-03
 
 ### Announcement

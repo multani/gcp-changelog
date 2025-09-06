@@ -1860,16 +1860,36 @@
 
 
 <h1 id="apigee-x">Apigee X</h1>
-<h2 id="2025-09-03">2025-09-03</h2>
+<h2 id="2025-09-04">2025-09-04</h2>
 <h3 id="announcement">Announcement</h3>
-<p>On September 3, 2025, we released an updated version of Apigee.</p>
+<p>On September 4, 2025, we released an updated version of Apigee.</p>
 <h3 id="feature">Feature</h3>
+<p><strong>Apigee policies for LLM/GenAI workloads are Generally Available (GA)</strong></p>
+<p>Four new Apigee policies supporting LLM/GenAI workloads are now <a href="https://cloud.google.com/products#product-launch-stages">GA</a>:</p>
+<ul>
+<li><a href="https://cloud.google.com/apigee/docs/api-platform/reference/policies/semantic-cache-lookup-policy">SemanticCacheLookup policy</a></li>
+<li><a href="https://cloud.google.com/apigee/docs/api-platform/reference/policies/semantic-cache-populate-policy">SemanticCachePopulate policy</a></li>
+<li><a href="https://cloud.google.com/apigee/docs/api-platform/reference/policies/sanitize-user-prompt-policy">SanitizeUserPrompt</a></li>
+<li><a href="https://cloud.google.com/apigee/docs/api-platform/reference/policies/sanitize-user-prompt-policy">SanitizeModelResponse</a></li>
+</ul>
+<p>The Apigee semantic caching policies enable intelligent response reuse based on semantic similarity. Using these policies in your Apigee API proxies can minimize redundant backend API calls, reduce latency, and lower operational costs. With this release, the semantic caching policies support URL templating, enabling the use of variables for AI model endpoint values.</p>
+<p>The Model Armor policies protect your AI applications by sanitizing user prompts to and responses from large language models (LLMs). Using these policies in your Apigee API proxies can mitigate the risks associated with LLM usage by leveraging Model Armor to detect prompt injection, prevent jailbreak attacks, apply responsible AI filters, filter malicious URLs, and protect sensitive data.</p>
+<p>For more information on using these policies in your Apigee API proxies, see:</p>
+<ul>
+<li><a href="https://cloud.google.com/apigee/docs/api-platform/tutorials/using-semantic-caching-policies">Get started with semantic caching policies</a></li>
+<li><a href="https://cloud.google.com/apigee/docs/api-platform/tutorials/using-model-armor-policies">Get started with Apigee Model Armor policies</a></li>
+</ul>
+<hr />
+<h2 id="2025-09-03">2025-09-03</h2>
+<h3 id="announcement_1">Announcement</h3>
+<p>On September 3, 2025, we released an updated version of Apigee.</p>
+<h3 id="feature_1">Feature</h3>
 <p><strong>Apigee Server-Sent Events (SSE) and EventFlows are supported for use with the Apigee Extension Processor.</strong></p>
 <p>The Apigee SSE feature enables continuous response streaming from server-sent event (SSE) endpoints to clients in real time. To learn more about this feature, see <a href="https://cloud.google.com/apigee/docs/api-platform/develop/server-sent-events">Streaming server-sent events</a>.</p>
 <p>The Apigee Extension Processor is a <a href="https://cloud.google.com/service-extensions/docs/overview#integration-lb">traffic extension</a> that lets you use Cloud Load Balancing to send callouts from the data processing path of the application load balancer to the Apigee Extension Processor. To learn more, see the <a href="https://cloud.google.com/apigee/docs/api-platform/service-extensions/extension-processor-overview">Apigee Extension Processor overview</a>.</p>
 <hr />
 <h2 id="2025-08-27">2025-08-27</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p>On August 27, 2025, we released an updated version of Apigee (1-15-0-apigee-9).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
 <h3 id="security">Security</h3>
@@ -1924,10 +1944,10 @@
 </table>
 <hr />
 <h2 id="2025-08-04">2025-08-04</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p>On August 4, 2025, we released an updated version of Apigee (1-15-0-apigee-8).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p><strong>Server-sent events and EventFlows are <a href="https://cloud.google.com/products#product-launch-stages">Generally Available (GA)</a></strong></p>
 <p>Apigee supports continuous response streaming from server-sent event (SSE) endpoints to clients in real time. The Apigee SSE feature is useful for handling large language model (LLM) APIs that operate most effectively by streaming their responses back to the client. SSE streaming reduces latency, and clients can receive response data as soon as it is generated by an LLM. This feature supports the use of AI agents that operate in real time environments, such as customer service bots or workflow orchestrators. For more information, see <a href="https://cloud.google.com/apigee/docs/api-platform/develop/server-sent-events">Streaming server-sent events</a>.</p>
 <p>Streaming from SSE endpoints is available in Apigee and in Apigee hybrid v1.15.0 and newer.</p>
@@ -1984,7 +2004,7 @@
 </table>
 <hr />
 <h2 id="2025-07-30">2025-07-30</h2>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p>On July 30, 2025 we began redirecting the following Apigee Classic UI navigation items to Apigee UI in the Google Cloud console:</p>
 <ul>
 <li>Develop &gt; API Proxies</li>
@@ -1996,10 +2016,10 @@
 <p>If you require more time to transition to the Google Cloud console, submit the <a href="https://docs.google.com/forms/d/e/1FAIpQLSedFe2Pj2f9B8YxD7cgWOyf8-IjRA8IhRZpZ2jXMZ9DU1uz1g/viewform">exception request form</a> by Aug 15, 2025.</p>
 <hr />
 <h2 id="2025-07-28">2025-07-28</h2>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p>On July 28, 2025, we released an updated version of Apigee (1-15-0-apigee-7).</p>
 <p><strong>Note:</strong> This release has been rolled back to address am issue. See entry for <a href="https://cloud.google.com/apigee/docs/release-notes#August_04_2025">August 4, 2025</a> for the updated version number and payload.</p>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p><strong>Server-sent events and EventFlows are <a href="https://cloud.google.com/products#product-launch-stages">Generally Available (GA)</a></strong></p>
 <p>Apigee supports continuous response streaming from server-sent event (SSE) endpoints to clients in real time. The Apigee SSE feature is useful for handling large language model (LLM) APIs that operate most effectively by streaming their responses back to the client. SSE streaming reduces latency, and clients can receive response data as soon as it is generated by an LLM. This feature supports the use of AI agents that operate in real time environments, such as customer service bots or workflow orchestrators. For more information, see <a href="https://cloud.google.com/apigee/docs/api-platform/develop/server-sent-events">Streaming server-sent events</a>.</p>
 <p>Streaming from SSE endpoints is available in Apigee and in Apigee hybrid v1.15.0 and newer.</p>
@@ -2052,7 +2072,7 @@
 </table>
 <hr />
 <h2 id="2025-07-24">2025-07-24</h2>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_6">Announcement</h3>
 <p>On July 24, 2025 we began redirecting the following Apigee Classic UI navigation items to Apigee UI in the Google Cloud console:</p>
 <ul>
 <li>Publish &gt; Portals</li>
@@ -2062,9 +2082,9 @@
 <p>If you require more time to transition to the Google Cloud console, submit the <a href="https://docs.google.com/forms/d/e/1FAIpQLSedFe2Pj2f9B8YxD7cgWOyf8-IjRA8IhRZpZ2jXMZ9DU1uz1g/viewform">exception request form</a> by Aug 15, 2025.</p>
 <hr />
 <h2 id="2025-06-03">2025-06-03</h2>
-<h3 id="announcement_6">Announcement</h3>
+<h3 id="announcement_7">Announcement</h3>
 <p>On June 3, 2025, we released an updated version of Apigee.</p>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p><strong>Apigee API hub is enabled for new Apigee organizations in supported regions.</strong></p>
 <p>With this release, we are enabling <a href="https://cloud.google.com/apigee/docs/apihub/what-is-api-hub">Apigee API hub</a> for new Apigee organizations <a href="https://cloud.google.com/apigee/docs/locations#available-apigee-api-analytics-regions">in regions where API hub is supported</a>. All new Apigee organizations, including hybrid organizations, that select an API hub-supported region <em>for their Apigee Analytics region</em> during provisioning will have access to API hub features at no additional cost.</p>
 <p>API hub allows you to view, organize, and manage all of the APIs in your Apigee organization in one central location. To learn more, see <a href="https://cloud.google.com/apigee/docs/apihub/what-is-api-hub">What is Apigee API hub?</a></p>
@@ -2076,10 +2096,10 @@
 <p>Contact <a href="https://cloud.google.com/apigee/docs/support/getting-started-with-support">Google Cloud Support</a> for questions or assistance.</p>
 <hr />
 <h2 id="2025-06-02">2025-06-02</h2>
-<h3 id="announcement_7">Announcement</h3>
+<h3 id="announcement_8">Announcement</h3>
 <p>On June 2, 2025, we released an updated version of Apigee (1-15-0-apigee-5).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p><strong>New flow variables available for VerifyAPIKey policy</strong></p>
 <p>Two new flow variables have been added to the <a href="https://cloud.google.com/apigee/docs/api-platform/reference/policies/verify-api-key-policy">VerifyAPIKey</a> policy.</p>
 <ul>
@@ -2155,17 +2175,17 @@
 <li>Update query.py (<a href="https://github.com/googleapis/python-bigquery/issues/2192">#2192</a>) (<a href="https://github.com/googleapis/python-bigquery/commit/9b5ee78f046d9ca3f758eeca6244b8485fe35875">9b5ee78</a>)</li>
 <li>Use query_and_wait in the array parameters sample (<a href="https://github.com/googleapis/python-bigquery/issues/2202">#2202</a>) (<a href="https://github.com/googleapis/python-bigquery/commit/28a9994792ec90a6a4d16835faf2137c09c0fb02">28a9994</a>)</li>
 </ul>
-<h3 id="feature_5">Feature</h3>
-<p>In the navigation menu, you can now go to <strong>Settings</strong> and select <strong>Configuration settings</strong> to <a href="https://cloud.google.com/bigquery/docs/bigquery-web-ui#navigation_menu">customize the BigQuery Studio experience</a> for users within the selected project or organization. This is achieved by showing or hiding user interface elements. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">preview</a>.</p>
 <h3 id="feature_6">Feature</h3>
-<p>BigQuery now supports using <a href="https://cloud.google.com/bigquery/docs/spanner-external-datasets">Spanner external datasets</a> with <a href="https://cloud.google.com/bigquery/docs/authorized-views">authorized views</a>, <a href="https://cloud.google.com/bigquery/docs/authorized-routines">authorized routines</a>, and <a href="https://cloud.google.com/bigquery/docs/create-cloud-resource-connection">Cloud resource connections</a>. This feature is <a href="https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages">generally available</a> (GA).</p>
+<p>In the navigation menu, you can now go to <strong>Settings</strong> and select <strong>Configuration settings</strong> to <a href="https://cloud.google.com/bigquery/docs/bigquery-web-ui#navigation_menu">customize the BigQuery Studio experience</a> for users within the selected project or organization. This is achieved by showing or hiding user interface elements. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">preview</a>.</p>
 <h3 id="feature_7">Feature</h3>
+<p>BigQuery now supports using <a href="https://cloud.google.com/bigquery/docs/spanner-external-datasets">Spanner external datasets</a> with <a href="https://cloud.google.com/bigquery/docs/authorized-views">authorized views</a>, <a href="https://cloud.google.com/bigquery/docs/authorized-routines">authorized routines</a>, and <a href="https://cloud.google.com/bigquery/docs/create-cloud-resource-connection">Cloud resource connections</a>. This feature is <a href="https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages">generally available</a> (GA).</p>
+<h3 id="feature_8">Feature</h3>
 <p>The <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#create_external_table_statement"><code>CREATE EXTERNAL TABLE</code></a> and <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/load-statements"><code>LOAD DATA</code></a> statements now support the following options in <a href="https://cloud.google.com/products/#product-launch-stages">preview</a>:</p>
 <ul>
 <li><code>time_zone</code>: specify a time zone to use when loading data</li>
 <li><code>date_format</code>, <code>datetime_format</code>, <code>time_format</code>, and <code>timestamp_format</code>: define how date and time values are formatted in your source files</li>
 </ul>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p>In the BigQuery console, in the <strong>Welcome</strong> tab, you can now try the <a href="https://cloud.google.com/bigquery/docs/bigquery-web-ui#run_spark_notebook_demo_guide">Apache Spark demo notebook</a> that walks you through the basics of Spark notebook and showcases <a href="https://cloud.google.com/bigquery/docs/use-spark">serverless Spark in BigQuery</a>. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
 <h2 id="bigtable">Bigtable</h2>
 <h3 id="libraries_1">Libraries</h3>
@@ -2178,7 +2198,7 @@
 <li>Add full support for the universe domain (<a href="https://github.com/googleapis/nodejs-bigtable/issues/1604">#1604</a>) (<a href="https://github.com/googleapis/nodejs-bigtable/commit/4562e2329e734c0c9d9f00cfa83aa2be13e9a7fe">4562e23</a>)</li>
 </ul>
 <h2 id="cloud-composer">Cloud Composer</h2>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p>Improved the startup times of Airflow workers for environments that have a large number of custom PyPI packages installed.</p>
 <p>This change rolls out gradually. In this release, it's available in asia-east1, asia-northeast2, asia-south1, europe-north1, europe-west3, us-east1, us-south1, and us-west2 regions.</p>
 <h3 id="changed">Changed</h3>
@@ -2212,7 +2232,7 @@
 <li>Added a retry mechanism for all Salesforce API calls from the Salesforce plugin (<a href="https://cdap.atlassian.net/browse/PLUGIN-1892">PLUGIN-1892</a>).</li>
 </ul>
 <h2 id="cloud-monitoring">Cloud Monitoring</h2>
-<h3 id="feature_10">Feature</h3>
+<h3 id="feature_11">Feature</h3>
 <p>You can now add treemap widgets to your custom dashboards. Treemaps display the
 most recent value of aggregated data as a series of nested rectangles, the
 color saturation of a rectangle is proportional to the represented value.
@@ -2247,7 +2267,7 @@ For more information, see the following:</p>
 <li><strong>storage/internal:</strong> Add note that managedFolders are supported for GetIamPolicy and SetIamPolicy (<a href="https://github.com/googleapis/google-cloud-go/commit/d8ae6874a54b48fce49968664f14db63c055c6e2">d8ae687</a>)</li>
 </ul>
 <h2 id="compute-engine">Compute Engine</h2>
-<h3 id="feature_11">Feature</h3>
+<h3 id="feature_12">Feature</h3>
 <p><strong>Preview</strong>: The general-purpose C4D machine series offers bare metal (<code>-metal</code>) machine types with 384 vCPUs. Bare metal instances let you create an instance with direct access to the machine's CPU and memory, without a virtualization layer in the middle. To learn more, see <a href="https://cloud.google.com/compute/docs/general-purpose-machines#c4d_series">C4D machine series</a>. For information about bare metal instances, including regional availability, see <a href="https://cloud.google.com/compute/docs/instances/bare-metal-instances">Bare metal instances on Compute Engine</a>.</p>
 <h2 id="container-optimized-os">Container Optimized OS</h2>
 <h3 id="changed_6">Changed</h3>
@@ -2285,9 +2305,9 @@ new services like <code>google-guest-compat-manager.service</code> and
 <code>gce_compat_metadata_script_runner</code>.</p>
 <h3 id="changed_8">Changed</h3>
 <p>Updated the Linux kernel to v6.6.92.</p>
-<h3 id="feature_12">Feature</h3>
-<p>Supported NVIDIA MFT Tools.</p>
 <h3 id="feature_13">Feature</h3>
+<p>Supported NVIDIA MFT Tools.</p>
+<h3 id="feature_14">Feature</h3>
 <p>Injected IMEX channel char device for GB200 GPUs.</p>
 <h3 id="fixed_5">Fixed</h3>
 <p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
@@ -2482,7 +2502,7 @@ new services like <code>google-guest-compat-manager.service</code> and
 <h3 id="security_19">Security</h3>
 <p>Fixed KCTF-8478a72 in the Linux kernel.</p>
 <h2 id="google-cloud-architecture-center">Google Cloud Architecture Center</h2>
-<h3 id="feature_14">Feature</h3>
+<h3 id="feature_15">Feature</h3>
 <p>(New guide) <a href="https://cloud.google.com/architecture/optimize-ai-ml-workloads-managed-lustre">Optimize AI and ML workloads with Google Cloud Managed Lustre</a>: Shows how to use Managed Lustre to optimize the performance of AI and ML workloads.</p>
 <h2 id="policy-controller">Policy Controller</h2>
 <h3 id="changed_14">Changed</h3>
@@ -2503,10 +2523,10 @@ new services like <code>google-guest-compat-manager.service</code> and
 <li>Update documentation for JavaScriptUDF to indicate that the <code>message_id</code> metadata field is optional instead of required (<a href="https://github.com/googleapis/python-pubsub/issues/1380">#1380</a>) (<a href="https://github.com/googleapis/python-pubsub/commit/be9005412fea06bea917c8b6861546b7e6c62a1e">be90054</a>)</li>
 <li>Update readme links (<a href="https://github.com/googleapis/python-pubsub/issues/1409">#1409</a>) (<a href="https://github.com/googleapis/python-pubsub/commit/77ba05d4ba5b84a25c1a07c5397bbc184fa6041d">77ba05d</a>)</li>
 </ul>
-<h3 id="feature_15">Feature</h3>
+<h3 id="feature_16">Feature</h3>
 <p>General availability: Pub/Sub now offers Single Message Transforms (SMTs) that enable lightweight modifications to message data and attributes directly within Pub/Sub. SMTs can be set as properties of topics or subscriptions. The change is being rolled out in a phased manner over the rest of the week. For more information about SMTs, see <a href="https://cloud.google.com/pubsub/docs/smts/smts-overview">Single Message Transforms (SMTs) overview</a>.</p>
 <h2 id="spanner">Spanner</h2>
-<h3 id="feature_16">Feature</h3>
+<h3 id="feature_17">Feature</h3>
 <p>BigQuery now supports using <a href="https://cloud.google.com/bigquery/docs/spanner-external-datasets">Spanner external datasets</a> with <a href="https://cloud.google.com/bigquery/docs/authorized-views">authorized views</a>, <a href="https://cloud.google.com/bigquery/docs/authorized-routines">authorized routines</a>, and <a href="https://cloud.google.com/bigquery/docs/create-cloud-resource-connection">Cloud resource connections</a>. This feature is <a href="https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages">generally available</a> (GA).</p>
 <h3 id="libraries_4">Libraries</h3>
 <p>A monthly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
@@ -2646,9 +2666,9 @@ new services like <code>google-guest-compat-manager.service</code> and
 </ul>
 <hr />
 <h2 id="2025-05-30">2025-05-30</h2>
-<h3 id="announcement_8">Announcement</h3>
+<h3 id="announcement_9">Announcement</h3>
 <p>On May 30, 2025 we released an updated version of Apigee.</p>
-<h3 id="feature_17">Feature</h3>
+<h3 id="feature_18">Feature</h3>
 <p><strong>Announcing the general availability of Gemini Code Assist API development features in Apigee</strong></p>
 <p>With this functionality, you can accelerate your API development lifecycle within VS Code using Gemini Code Assist in Apigee. This feature allows you to use natural language prompts to design, create, iterate, and manage OpenAPI specifications with the following capabilities:</p>
 <ul>
@@ -2661,11 +2681,11 @@ new services like <code>google-guest-compat-manager.service</code> and
 <p>For more information and usage instructions, see <a href="https://cloud.google.com/apigee/docs/api-platform/local-development/vscode/develop-design-edit-apis">Designing and editing APIs</a>, <a href="https://cloud.google.com/apigee/docs/api-platform/local-development/vscode/tutorial-gemini">Tutorial: Use Gemini Code Assist to design, develop, and test APIs in Apigee</a>, and <a href="https://cloud.google.com/apigee/docs/api-platform/local-development/setup">Setting up Apigee API Management in Cloud Code for VS Code</a>.</p>
 <hr />
 <h2 id="2025-05-29">2025-05-29</h2>
-<h3 id="announcement_9">Announcement</h3>
-<p>On May 29, 2025 we announced the shutdown schedule for the Apigee Classic UI.</p>
 <h3 id="announcement_10">Announcement</h3>
+<p>On May 29, 2025 we announced the shutdown schedule for the Apigee Classic UI.</p>
+<h3 id="announcement_11">Announcement</h3>
 <p>On May 29, 2025, we released an updated version of Apigee.</p>
-<h3 id="feature_18">Feature</h3>
+<h3 id="feature_19">Feature</h3>
 <p><strong>Public Preview: Apigee Extension Processor support for request and response body processing</strong></p>
 <p>When creating a load balancer service extension, you can customize the behavior of the extension processor proxy to support request body processing, response body processing, or a combination of the two.</p>
 <p>For more information, see <a href="https://cloud.google.com/apigee/docs/api-platform/service-extensions/extension-processor-quickstart#create-lb-ext">Get started with the Apigee Extension Processor</a>.</p>
@@ -2685,6 +2705,9 @@ new services like <code>google-guest-compat-manager.service</code> and
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#apigee-x">Apigee X</a></li>
+          <li class="nav-item">
+            <a href="#2025-09-04" class="nav-link">2025-09-04</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-09-03" class="nav-link">2025-09-03</a>
           </li>

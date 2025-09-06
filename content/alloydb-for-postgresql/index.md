@@ -16,6 +16,13 @@ Access to this [Preview](https://cloud.google.com/products#product-launch-stages
 feature no longer requires a signup.
 
 ---
+## 2025-09-02
+
+### Feature
+
+You can create [organization policies with custom constraints](https://cloud.google.com/alloydb/docs/org-policy) for AlloyDB backups and clusters, and a custom constraint with any field for an AlloyDB instance. This feature is generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
+
+---
 ## 2025-08-20
 
 ### Feature

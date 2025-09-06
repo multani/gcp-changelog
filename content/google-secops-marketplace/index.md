@@ -1,5 +1,16 @@
 # Google SecOps Marketplace
 
+## 2025-09-03
+
+### Changed
+
+**Google Threat Intelligence**: Version 3.0
+
+* Extended supported filters in the following connector:
+
+  + **Google Threat Intelligence - ASM Issues Connector**
+
+---
 ## 2025-08-27
 
 ### Feature

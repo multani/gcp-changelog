@@ -114,6 +114,7 @@
 - [Google SecOps Marketplace](google-secops-marketplace/index.md)
 - [Google SecOps SIEM](google-secops-siem/index.md)
 - [Google SecOps SOAR](google-secops-soar/index.md)
+- [Guest Environment](guest-environment/index.md)
 - [Identity and Access Management](identity-and-access-management/index.md)
 - [Live Stream API](live-stream-api/index.md)
 - [Looker](looker/index.md)

@@ -1,6 +1,168 @@
 {
   "name": "Container Optimized OS",
   "entries": {
+    "2025-09-02": [
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "New features available",
+          "summary": "We're excited to announce new features have been added to our platform. These updates are designed to enhance your experience and provide more functionality."
+        }
+      },
+      {
+        "kind": "cos-beta-125-19216-0-33",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.41](https://cos.googlesource.com/third_party/kernel/+/63514cac0bb36911759fd907b87c654e5fed76d7 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19216.0.33/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS-6.12.41 update",
+          "summary": "This release includes updates to the kernel, Docker, and Containerd. GPU driver information is also available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added iRDMA support in the Linux kernel.",
+        "summary": {
+          "title": "iRDMA support in Linux kernel",
+          "summary": "iRDMA support has been added to the Linux kernel."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Enabled dynamic vlan configuration for non-primary NICs.",
+        "summary": {
+          "title": "Dynamic VLANs for Additional NICs",
+          "summary": "You can now configure dynamic VLANs for non-primary network interfaces. This enhances network flexibility and management for your resources."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for the Lustre 2.14.0\\_p216 drivers.",
+        "summary": {
+          "title": "Lustre 2.14.0_p216 Driver Support Added",
+          "summary": "Support for Lustre 2.14.0_p216 drivers has been successfully added."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/file to v5.46-r3.",
+        "summary": {
+          "title": "File package upgraded",
+          "summary": "The file package has been upgraded to version 5.46-r3."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/hwdata to v0.398.",
+        "summary": {
+          "title": "Upgraded hwdata to v0.398",
+          "summary": "The hwdata package has been updated to version 0.398."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-6052 in dev-libs/glib.",
+        "summary": {
+          "title": "Security fix for CVE-2025-6052",
+          "summary": "A security vulnerability (CVE-2025-6052) in the dev-libs/glib library has been resolved."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-aba0c94 in the Linux kernel.",
+        "summary": {
+          "title": "Fixed KCTF-aba0c94",
+          "summary": "A security vulnerability in the Linux kernel has been resolved."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-62708b9 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "A security vulnerability in the Linux kernel has been resolved."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-6db015f in the Linux kernel.",
+        "summary": {
+          "title": "Security Fix in Linux Kernel",
+          "summary": "A security vulnerability (KCTF-6db015f) in the Linux kernel has been resolved."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811541 -> 811504",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "The runtime sysctl parameters, specifically fs.file-max, have been updated from 811541 to 811504."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "New features available",
+          "summary": "We're excited to announce new features that enhance user experience and productivity. These updates include improved navigation, advanced search capabilities, and personalized dashboards. Explore the latest enhancements today!"
+        }
+      },
+      {
+        "kind": "cos-121-18867-199-52",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.97](https://cos.googlesource.com/third_party/kernel/+/e6bcea4bc13acfe8bb9c88cc70784179495c68da ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.199.52/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "GPU Driver Support in Container-Optimized OS",
+          "summary": "Container-Optimized OS 6.6.97 now includes updated Docker (v27.5.1) and Containerd (v2.0.6) versions. This release also provides support for GPU drivers, with details available via the provided links."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/hwdata to v0.398.",
+        "summary": {
+          "title": "Upgraded hwdata to v0.398",
+          "summary": "The hwdata package has been upgraded to version 0.398."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-6052 in dev-libs/glib.",
+        "summary": {
+          "title": "Security Fix for CVE-2025-6052",
+          "summary": "A security vulnerability (CVE-2025-6052) in the dev-libs/glib library has been addressed. This update ensures the security of our systems by patching this known issue."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-aba0c94 in the Linux kernel.",
+        "summary": {
+          "title": "Security fix for Linux kernel",
+          "summary": "A security vulnerability in the Linux kernel has been resolved."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-62708b9 in the Linux kernel.",
+        "summary": {
+          "title": "Security Fix in Linux Kernel",
+          "summary": "A security vulnerability (KCTF-62708b9) in the Linux kernel has been resolved."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-6db015f in the Linux kernel.",
+        "summary": {
+          "title": "Security update",
+          "summary": "A security vulnerability in the Linux kernel has been fixed."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811817 -> 811774",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "fs.file-max changed from 811817 to 811774."
+        }
+      }
+    ],
     "2025-08-25": [
       {
         "kind": "cos-beta-125-19216-0-24",
@@ -1290,6 +1452,14 @@
         "summary": {
           "title": "Runtime Sysctl Updates",
           "summary": "Runtime sysctl settings were updated, including additions, changes, and a deletion."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Enabled the Btrfs kernel module.",
+        "summary": {
+          "title": "Btrfs kernel module enabled",
+          "summary": "The Btrfs kernel module has been enabled."
         }
       },
       {

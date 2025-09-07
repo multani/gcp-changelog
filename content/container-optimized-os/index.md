@@ -1,5 +1,98 @@
 # Container Optimized OS
 
+## 2025-09-02
+
+### Changed
+
+
+
+### cos-beta-125-19216-0-33
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.41](https://cos.googlesource.com/third_party/kernel/+/63514cac0bb36911759fd907b87c654e5fed76d7 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19216.0.33/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Added iRDMA support in the Linux kernel.
+
+### Feature
+
+Enabled dynamic vlan configuration for non-primary NICs.
+
+### Fixed
+
+Added support for the Lustre 2.14.0\_p216 drivers.
+
+### Fixed
+
+Upgraded sys-apps/file to v5.46-r3.
+
+### Fixed
+
+Upgraded sys-apps/hwdata to v0.398.
+
+### Security
+
+Fixed CVE-2025-6052 in dev-libs/glib.
+
+### Security
+
+Fixed KCTF-aba0c94 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-62708b9 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-6db015f in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811541 -> 811504
+
+### Changed
+
+
+
+### cos-121-18867-199-52
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.97](https://cos.googlesource.com/third_party/kernel/+/e6bcea4bc13acfe8bb9c88cc70784179495c68da ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.199.52/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Upgraded sys-apps/hwdata to v0.398.
+
+### Security
+
+Fixed CVE-2025-6052 in dev-libs/glib.
+
+### Security
+
+Fixed KCTF-aba0c94 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-62708b9 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-6db015f in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811817 -> 811774
+
+---
 ## 2025-08-25
 
 ### cos-beta-125-19216-0-24
@@ -731,6 +824,10 @@ Runtime sysctl changes:
 * Changed: user.max\_uts\_namespaces: 31743 -> 31589
 * Changed: vm.lowmem\_reserve\_ratio: 256 256 32 0 0 -> 256 256 32 0
 * Deleted: kernel.sched\_child\_runs\_first: 0
+
+### Feature
+
+Enabled the Btrfs kernel module.
 
 ### cos-dev-129-19246-0-0
 

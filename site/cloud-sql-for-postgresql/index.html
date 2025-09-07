@@ -1709,6 +1709,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Secure web proxy <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../secure-web-proxy/" class="dropdown-item">Secure Web Proxy</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Security command center <b class="caret"></b>
                         </a>
 
@@ -1872,6 +1884,11 @@
 
 
 <h1 id="cloud-sql-for-postgresql">Cloud SQL for PostgreSQL</h1>
+<h2 id="2025-09-04">2025-09-04</h2>
+<h3 id="changed">Changed</h3>
+<p>The release note on <a href="https://cloud.google.com/sql/docs/postgres/release-notes#August_13_2025">August 13, 2025</a> regarding Private Service Connect (PSC) outbound connectivity has been updated.</p>
+<p>PSC outbound connectivity is required for <a href="https://cloud.google.com/database-migration/docs/homogeneous-migrations">homogeneous migrations</a> to PSC-enabled Cloud SQL instances using <a href="https://cloud.google.com/database-migration/docs">Database Migration Service</a>. For more information, see <a href="https://cloud.google.com/sql/docs/postgres/about-private-service-connect#psc-outbound">PSC outbound connections</a>.</p>
+<hr />
 <h2 id="2025-09-03">2025-09-03</h2>
 <h3 id="feature">Feature</h3>
 <p>You can now enable your instance to take a final backup at instance deletion and define its retention period by setting the final backup <a href="https://cloud.google.com/sql/docs/postgres/instance-settings">instance setting</a>.</p>
@@ -1895,7 +1912,7 @@ For more information, see <a href="https://cloud.google.com/sql/docs/postgres/ba
 <p>Cloud SQL now supports Private Service Connect (PSC) outbound connectivity. With PSC outbound connectivity, you can attach a PSC interface to your existing Cloud SQL PSC-enabled instances to allow your instances to make outbound connections to your network. This is required for <a href="https://cloud.google.com/database-migration/docs/homogeneous-migrations">homogeneous migrations</a> to PSC-enabled Cloud SQL instances using <a href="https://cloud.google.com/database-migration/docs">Database Migration Service</a>. For more information, see <a href="https://cloud.google.com/sql/docs/postgres/about-private-service-connect#psc-outbound">PSC outbound connections</a>.</p>
 <hr />
 <h2 id="2025-08-07">2025-08-07</h2>
-<h3 id="changed">Changed</h3>
+<h3 id="changed_1">Changed</h3>
 <p>Cloud SQL for Enterprise Plus edition supports quality enhancements for <a href="https://cloud.google.com/sql/docs/postgres/observe-troubleshoot-with-ai">AI-assisted troubleshooting</a>. With AI-assisted troubleshooting, you can resolve complex database performance issues like <a href="https://cloud.google.com/sql/docs/postgres/troubleshoot-slow-queries">slow queries</a> and <a href="https://cloud.google.com/sql/docs/postgres/troubleshoot-high-database-load">high load</a> for your instances in a guided manner. To use AI-assisted troubleshooting, you need <a href="https://cloud.google.com/gemini/docs/cloud-assist/overview">Gemini Cloud Assist</a> and <a href="https://cloud.google.com/sql/docs/postgres/using-query-insights#enable-insights">query insights</a> for Enterprise Plus edition.</p>
 <hr />
 <h2 id="2025-08-04">2025-08-04</h2>
@@ -1936,6 +1953,9 @@ For more information, see <a href="https://cloud.google.com/sql/docs/postgres/ba
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-sql-for-postgresql">Cloud SQL for PostgreSQL</a></li>
+          <li class="nav-item">
+            <a href="#2025-09-04" class="nav-link">2025-09-04</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-09-03" class="nav-link">2025-09-03</a>
           </li>

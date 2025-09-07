@@ -139,6 +139,7 @@
 - [SAP on Google Cloud](sap-on-google-cloud/index.md)
 - [Secret Manager](secret-manager/index.md)
 - [Secure Source Manager](secure-source-manager/index.md)
+- [Secure Web Proxy](secure-web-proxy/index.md)
 - [Security Command Center](security-command-center/index.md)
 - [Sensitive Data Protection](sensitive-data-protection/index.md)
 - [Service Extensions](service-extensions/index.md)

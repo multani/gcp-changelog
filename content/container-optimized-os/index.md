@@ -121,6 +121,27 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 811817 -> 811774
 
+### cos-109-17800-570-40
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.143](https://cos.googlesource.com/third_party/kernel/+/7ee6ea59a506ec4129b6bd62e046f8d180705344 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/17800.570.40/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed KCTF-62708b9 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-aba0c94 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812214 -> 812262
+
 ---
 ## 2025-08-25
 

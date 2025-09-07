@@ -2,10 +2,6 @@
 
 ## 2025-09-02
 
-### Changed
-
-
-
 ### cos-beta-125-19216-0-33
 
 |  |  |  |  |
@@ -55,9 +51,42 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 811541 -> 811504
 
+### cos-117-18613-339-52
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.97](https://cos.googlesource.com/third_party/kernel/+/8336c891d963e19a50f4bd8fc085852b3153ec4d ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.339.52/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Upgraded sys-apps/hwdata to v0.398.
+
+### Fixed
+
+Upgraded sys-apps/file to v5.46-r3.
+
+### Security
+
+Fixed CVE-2025-6052 in dev-libs/glib.
+
+### Security
+
+Fixed KCTF-aba0c94 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-62708b9 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-6db015f in the Linux kernel.
+
 ### Changed
 
+Runtime sysctl changes:
 
+* Changed: fs.file-max: 811728 -> 811812
 
 ### cos-121-18867-199-52
 

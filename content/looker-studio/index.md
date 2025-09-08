@@ -10,6 +10,8 @@ Report creators can now set up to sort 10 fields for table charts, including fie
 
 [Learn more about sorting table charts.](https://cloud.google.com/looker/docs/studio/table-reference#sort)
 
+**NOTE: This feature was not released on 8/21, and will instead be included in a later release.**
+
 ### Feature
 
 **Looker connector respects LookML `value_format` property**

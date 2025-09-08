@@ -1,5 +1,55 @@
 # Google SecOps SIEM
 
+## 2025-09-05
+
+### Changed
+
+**Advanced filtering in Alerts and Search**
+
+This update significantly enhances filtering capabilities across the platform, resolving some bugs and providing more granular control over your queries. You can now filter by any field in the detection object. You can also filter by nested fields from the events and entities within a detection.
+
+---
+## 2025-09-04
+
+### Changed
+
+**Override the default time zone for forwarder logs**
+
+Google SecOps now lets you override the default time zone for your logs when creating or configuring a forwarder.
+
+To know more, see [Add collector information](https://cloud.google.com/chronicle/docs/install/forwarder-management-configurations#add-collectors).
+
+### Announcement
+
+**Improvements to Okta parser and Symantec Endpoint Protection parser**
+
+These changes are currently in Preview.
+
+The Okta parser and the Symantec Endpoint Protection parser are now more efficient, and have increased log-field coverage and more-accurate log-field mappings. The changes include new UDM fields and changes to field mappings. For relevant details on the Okta parser, see [UDM mapping table](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/okta#udm_mapping_table) and [UDM mapping delta reference](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/okta#udm_mapping_delta_reference). For relevant details on the Symantec Endpoint Protection parser, see [Collect Symantec Endpoint Protection logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-endpoint-protection#udm_mapping_table) and [UDM mapping delta reference](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-endpoint-protection#udm-mapping-delta).
+
+We advise you to opt-in and get these new versions.
+
+### Announcement
+
+**Removed CBN alerts functionality from all prebuilt parsers**
+
+As part of deprecating the Configuration Based Normalization (CBN) alerts functionality, all [prebuilt parsers](https://cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#types_of_parsers) that included the CBN alerts functionality were updated, and the functionality was removed.
+
+**Note:** For information about how you can migrate CBN alerts to YARA-L detection alerts, see [Migrate CBN alerts to YARA-L detection rule alerts](https://cloud.google.com/chronicle/docs/detection/migrate-cbn-alerts)
+
+---
+## 2025-09-03
+
+### Changed
+
+**Extended match window for multi-event rules**
+
+You can now configure rules to analyze data over a longer period. The maximum match window for these rules has been extended to 14 days. The run frequency for multi-event rules is automatically set based on the rule's match window:
+
+* For a window size of 1 to 48 hours, the run frequency is 1 hour.
+* For a window size greater than 48 hours, the run frequency is 24 hours.
+
+---
 ## 2025-08-29
 
 ### Changed

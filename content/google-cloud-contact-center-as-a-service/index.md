@@ -1,5 +1,22 @@
 # Google Cloud Contact Center as a Service
 
+## 2025-09-04
+
+### Announcement
+
+**Agent desktop is GA**
+
+Agent desktop is now [generally available (GA)](https://cloud.google.com/products?e=48754805&hl=en#product-launch-stages). Agent desktop is a customizable interface that provides agents quick access to the information and tools they need to handle customer sessions. The desktop layout includes the agent adapter as well as configurable panels that display information or tools. You can configure a distinct desktop layout for each session type: inbound calls, outbound calls, or chats. You can then can configure which desktop layout that an agent sees when they answer an inbound call, place an outbound call, or handle a chat. You can also configure announcements to communicate updates, alerts, and other important information directly to agents. For more information, see [Agent desktop](https://cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-overview).
+
+The agent desktop provides the following capabilities:
+
+* **Create desktop layouts**. With agent desktop, you can create customized desktop layouts for different use cases for your human agents. These include receiving inbound calls, placing outbound calls, and handling chat sessions. Your layouts can contain call adapters, chat adapters, and wide variety of panels for other capabilities such as live transcripts, knowledge assist, disposition codes, and session data feeds. You can also configure custom panels to use as widgets that you can drag into panels. For more information, see [Create desktop layouts](https://cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-create-desktop-layouts).
+* **Configure custom panels**. A custom panel displays one or more URLs for external resources. These can be documentation, tools, or other resources. A custom panel appears as a widget in the desktop layout builder. Then, when you create desktop layouts, you can drag widgets into panels. For more information, see [Configure custom panels](https://cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-configure-widgets).
+* **Use widgets**. Widgets are containers of specific functionality that you can drag into panels in the desktop layout builder. The desktop layout builder comes with a number of pre-defined widgets, such as **Session Data Feed**, **Dispostion Codes and Notes**, **Knowledge Assist**, and **Live Transcript**.
+* **Configure desktop layouts for agents**. You can configure which desktop layout that agents see when they answer an inbound call, place an outbound call, or handle a chat. You can configure this globally, at the queue level, and at the team level. Queue-level layout settings take priority over global settings. Team-level settings take priority over both queue-level settings and default settings. For more information, see [Configure desktop layouts for agents](https://cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-set-desktop-layouts).
+* **Configure announcements**. With announcements, you can communicate updates, alerts, and other important information directly to agents. Announcements appear in the agent desktop as notification banners that persist until the agent dismisses them. Announcements also appear in the agent's announcement list. For more information, see [Configure announcements](https://cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-configure-announcements).
+
+---
 ## 2025-09-02
 
 ### Announcement
@@ -79,6 +96,14 @@ Agents can now search for emails in the agent adapter by keyword, session ID, or
 **Cancel scheduled calls with the callback calls API**
 
 You can now use the callback calls API to cancel a single scheduled callback call or a list of calls.
+
+### Feature
+
+**New advanced reporting dashboards**
+
+The following new advanced reporting dashboard is available:
+
+* **Deflections**. Get deflection information by queue and for your entire contact center. For more information, see [Deflections dashboards](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-deflections).
 
 ### Fixed
 
@@ -199,6 +224,18 @@ Generative knowledge assist is now available in the agent adapter.
 Starting with version 3.37, web SDK releases align with portal releases and share the same version number.
 
 Web SDK version 3.37 includes the following update: we've improved the accessibily of the web SDK to be in compliance with the European Accessibility Act.
+
+### Feature
+
+**New advanced reporting dashboards**
+
+The following new advanced reporting dashboards are available:
+
+* **Missed interactions**. Get data on missed interactions to help you optimize operations. For more information, see [Missed interactions dashboards](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-missed-interactions).
+* **Failed sessions**. Get insight into why your sessions are failing. For more information, see [Failed sessions dashboards](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-failed-sessions).
+* **Screen share**. Get data on your agents' Screen Share interactions with end-users. For more information, see [Screen shared dashboards](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-screenshare).
+* **CSAT**. Get insights into the customer satisfaction (CSAT) ratings that end-users give to their sessions with agents. For more information, see [CSAT dashboards](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-csat).
+* **Dispositions**. Get disposition information to gain insights into common end-user issues and concerns. For more information, see [Dispositions dashboards](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-dispositions).
 
 ### Fixed
 

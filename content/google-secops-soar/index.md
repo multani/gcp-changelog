@@ -1,5 +1,37 @@
 # Google SecOps SOAR
 
+## 2025-09-07
+
+### Announcement
+
+Release 6.3.61 is being rolled out to the first phase of regions, as outlined in our [Google SecOps release plan](https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains the following features:
+
+### Feature
+
+**Advanced job scheduling**
+
+The job scheduling functionality has been enhanced with advanced options. This functionality provides more precise control and flexible, calendar-like scheduling for your scripts.
+
+For more information, see [Configure a new job with advanced scheduling](https://cloud.devsite.corp.google.com/chronicle/docs/soar/respond/jobs-scheduler/writing-jobs#advanced-scheduling).
+
+### Feature
+
+**Use custom fields in the Close Case dialog**
+
+Administrators can now add custom fields to the **Close Case** dialog. This new functionality provides a more streamlined workflow and replaces the **Dynamic Fields** feature.
+
+For more information, see [Use custom fields in the Close Case dialog](https://cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/custom-fields-in-case-closure).
+
+---
+## 2025-09-06
+
+### Announcement
+
+[Release 6.3.60](https://cloud.google.com/chronicle/docs/soar/release-notes#August_31_2025) is now available for all regions.
+
+---
 ## 2025-08-31
 
 ### Announcement

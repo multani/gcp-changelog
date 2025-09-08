@@ -23,9 +23,9 @@ For more information, see [Use custom fields in the Close Case dialog](https://c
 
 ### Changed
 
-**Advanced filtering in Alerts and Search**
+**Advanced filtering in alerts and search results**
 
-This update significantly enhances filtering capabilities across the platform, resolving some bugs and providing more granular control over your queries. You can now filter by any field in the detection object. You can also filter by nested fields from the events and entities within a detection.
+You can now filter alerts and search results by any field in the detection object. This update provides more granular control over your queries, letting you filter by nested fields from events and entities within a detection.
 
 ---
 ## 2025-09-04
@@ -38,23 +38,24 @@ Google SecOps now lets you override the default time zone for your logs when you
 
 For details, see [Add collector configuration](https://cloud.google.com/chronicle/docs/install/forwarder-management-configurations#add-collectors).
 
-### Announcement
+### Changed
 
-**Improvements to Okta parser and Symantec Endpoint Protection parser**
+**Improved Okta and Symantec Endpoint Protection parsers**
 
 These changes are currently in Preview.
 
-The Okta parser and the Symantec Endpoint Protection parser are now more efficient, and have increased log-field coverage and more-accurate log-field mappings. The changes include new UDM fields and changes to field mappings. For relevant details on the Okta parser, see [UDM mapping table](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/okta#udm_mapping_table) and [UDM mapping delta reference](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/okta#udm_mapping_delta_reference). For relevant details on the Symantec Endpoint Protection parser, see [Collect Symantec Endpoint Protection logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-endpoint-protection#udm_mapping_table) and [UDM mapping delta reference](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-endpoint-protection#udm-mapping-delta).
+The Okta and Symantec Endpoint Protection parsers are now more efficient, with increased log-field coverage and more-accurate log-field mappings. These changes include new UDM fields and updated field mappings. We advise you to opt-in and get these new versions.
 
-We advise you to opt-in and get these new versions.
+* For details on the Okta parser, see [UDM mapping table](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/okta#udm_mapping_table) and [UDM mapping delta reference](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/okta#udm_mapping_delta_reference).
+* For details on the Symantec Endpoint Protection parser, see [Collect Symantec Endpoint Protection logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-endpoint-protection#udm_mapping_table) and [UDM mapping delta reference](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-endpoint-protection#udm-mapping-delta).
 
 ### Announcement
 
-**Removed CBN alerts functionality from all prebuilt parsers**
+**CBN alerts functionality removed from all prebuilt parsers**
 
 As part of deprecating the Configuration Based Normalization (CBN) alerts functionality, all [prebuilt parsers](https://cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#types_of_parsers) that included the CBN alerts functionality were updated, and the functionality was removed.
 
-**Note:** For information about how you can migrate CBN alerts to YARA-L detection alerts, see [Migrate CBN alerts to YARA-L detection rule alerts](https://cloud.google.com/chronicle/docs/detection/migrate-cbn-alerts)
+**Note:** For information about how you can migrate CBN alerts to YARA-L detection alerts, see [Migrate CBN alerts to YARA-L detection rule alerts](https://cloud.google.com/chronicle/docs/detection/migrate-cbn-alerts).
 
 ---
 ## 2025-09-03

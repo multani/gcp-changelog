@@ -12,10 +12,10 @@
     <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-09-05:changed:0</id>
     <published>2025-09-05T00:00:00+00:00</published>
     <updated>2025-09-05T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Advanced filtering in Alerts and Search</strong></p>
-<p>This update significantly enhances filtering capabilities across the platform, resolving some bugs and providing more granular control over your queries. You can now filter by any field in the detection object. You can also filter by nested fields from the events and entities within a detection.</p>]]></content>
-    <summary>Enhanced filtering options are now available for alerts and search.</summary>
-    <title>Changed: Advanced Filtering</title>
+    <content type="html"><![CDATA[<p><strong>Advanced filtering in alerts and search results</strong></p>
+<p>You can now filter alerts and search results by any field in the detection object. This update provides more granular control over your queries, letting you filter by nested fields from events and entities within a detection.</p>]]></content>
+    <summary>Filter alerts and search results by any field in the detection object for more granular control.</summary>
+    <title>Changed: Advanced filtering</title>
   </entry>
   <entry>
     <author>
@@ -34,15 +34,18 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-09-04:announcement:1</id>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-09-04:changed:1</id>
     <published>2025-09-04T00:00:00+00:00</published>
     <updated>2025-09-04T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Improvements to Okta parser and Symantec Endpoint Protection parser</strong></p>
+    <content type="html"><![CDATA[<p><strong>Improved Okta and Symantec Endpoint Protection parsers</strong></p>
 <p>These changes are currently in Preview.</p>
-<p>The Okta parser and the Symantec Endpoint Protection parser are now more efficient, and have increased log-field coverage and more-accurate log-field mappings. The changes include new UDM fields and changes to field mappings. For relevant details on the Okta parser, see <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/okta#udm_mapping_table">UDM mapping table</a> and <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/okta#udm_mapping_delta_reference">UDM mapping delta reference</a>. For relevant details on the Symantec Endpoint Protection parser, see <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-endpoint-protection#udm_mapping_table">Collect Symantec Endpoint Protection logs</a> and <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-endpoint-protection#udm-mapping-delta">UDM mapping delta reference</a>.</p>
-<p>We advise you to opt-in and get these new versions.</p>]]></content>
-    <summary>The Okta and Symantec Endpoint Protection parsers have been enhanced for greater efficiency, broader log-field coverage, and more accurate mappings. These improvements include new UDM fields and updated mappings. We recommend opting in to these changes.</summary>
-    <title>Announcement: Okta and Symantec Endpoint Protection Parser Improvements</title>
+<p>The Okta and Symantec Endpoint Protection parsers are now more efficient, with increased log-field coverage and more-accurate log-field mappings. These changes include new UDM fields and updated field mappings. We advise you to opt-in and get these new versions.</p>
+<ul>
+<li>For details on the Okta parser, see <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/okta#udm_mapping_table">UDM mapping table</a> and <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/okta#udm_mapping_delta_reference">UDM mapping delta reference</a>.</li>
+<li>For details on the Symantec Endpoint Protection parser, see <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-endpoint-protection#udm_mapping_table">Collect Symantec Endpoint Protection logs</a> and <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-endpoint-protection#udm-mapping-delta">UDM mapping delta reference</a>.</li>
+</ul>]]></content>
+    <summary>The Okta and Symantec Endpoint Protection parsers have been updated to be more efficient, with better log-field coverage and accuracy. These improvements include new UDM fields and updated mappings.</summary>
+    <title>Changed: Improved Okta and Symantec Endpoint Protection parsers</title>
   </entry>
   <entry>
     <author>
@@ -51,11 +54,11 @@
     <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-09-04:announcement:2</id>
     <published>2025-09-04T00:00:00+00:00</published>
     <updated>2025-09-04T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Removed CBN alerts functionality from all prebuilt parsers</strong></p>
+    <content type="html"><![CDATA[<p><strong>CBN alerts functionality removed from all prebuilt parsers</strong></p>
 <p>As part of deprecating the Configuration Based Normalization (CBN) alerts functionality, all <a href="https://cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#types_of_parsers">prebuilt parsers</a> that included the CBN alerts functionality were updated, and the functionality was removed.</p>
-<p><strong>Note:</strong> For information about how you can migrate CBN alerts to YARA-L detection alerts, see <a href="https://cloud.google.com/chronicle/docs/detection/migrate-cbn-alerts">Migrate CBN alerts to YARA-L detection rule alerts</a></p>]]></content>
-    <summary>CBN alerts functionality has been removed from all prebuilt parsers as part of its deprecation. For migration guidance, refer to the documentation on transitioning CBN alerts to YARA-L detection rules.</summary>
-    <title>Announcement: Removed CBN alerts functionality</title>
+<p><strong>Note:</strong> For information about how you can migrate CBN alerts to YARA-L detection alerts, see <a href="https://cloud.google.com/chronicle/docs/detection/migrate-cbn-alerts">Migrate CBN alerts to YARA-L detection rule alerts</a>.</p>]]></content>
+    <summary>The CBN alerts functionality has been removed from all prebuilt parsers as part of the deprecation of this feature. Users are advised to migrate existing CBN alerts to YARA-L detection alerts.</summary>
+    <title>Announcement: CBN alerts functionality removed from prebuilt parsers</title>
   </entry>
   <entry>
     <author>

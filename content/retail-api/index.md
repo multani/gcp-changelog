@@ -1,5 +1,16 @@
 # Retail API
 
+## 2025-09-05
+
+### Feature
+
+**Vertex AI Search for commerce: Conversational product filtering**
+
+As part of Search for commerce's Guided search package, `ConversationalSearchSpec` sits on top of the Vertex AI Search for commerce. When coverage parameters are met, Search for commerce users can enable this feature in the console or by setting the `followup_conversation_requested` flag to `true` in the search service interface. Conversational product filtering uses an LLM-generated question for each catalog attribute where `allowed_in_conversation` field is enabled.
+
+For more information, see [Conversational product filtering](https://cloud.google.com/retail/docs/conversational-filtering).
+
+---
 ## 2025-09-03
 
 ### Feature

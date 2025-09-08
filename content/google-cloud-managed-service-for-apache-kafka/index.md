@@ -1,5 +1,12 @@
 # Google Cloud Managed Service for Apache Kafka
 
+## 2025-09-04
+
+### Feature
+
+Integration with [VPC Service Controls](https://cloud.google.com/vpc-service-controls/docs/supported-products#table_managed_kafka) is in [preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-09-02
 
 ### Feature

@@ -13,11 +13,11 @@ This update significantly enhances filtering capabilities across the platform, r
 
 ### Changed
 
-**Override the default time zone for forwarder logs**
+**Time zone override for forwarder logs**
 
-Google SecOps now lets you override the default time zone for your logs when creating or configuring a forwarder.
+Google SecOps now lets you override the default time zone for your logs when you create or configure a forwarder.
 
-To know more, see [Add collector information](https://cloud.google.com/chronicle/docs/install/forwarder-management-configurations#add-collectors).
+For details, see [Add collector configuration](https://cloud.google.com/chronicle/docs/install/forwarder-management-configurations#add-collectors).
 
 ### Announcement
 

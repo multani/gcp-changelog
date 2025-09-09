@@ -49,7 +49,7 @@ New parser documentation is available to help you ingest and normalize logs from
 
 The job scheduling functionality has been enhanced with advanced options. This functionality provides more precise control and flexible, calendar-like scheduling for your scripts.
 
-For more information, see [Configure a new job with advanced scheduling](https://cloud.devsite.corp.google.com/chronicle/docs/soar/respond/jobs-scheduler/writing-jobs#advanced-scheduling).
+For more information, see [Configure a new job with advanced scheduling](https://cloud.google.com/chronicle/docs/soar/respond/jobs-scheduler/writing-jobs#advanced-scheduling).
 
 ### Feature
 

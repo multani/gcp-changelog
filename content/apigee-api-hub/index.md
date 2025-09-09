@@ -10,6 +10,20 @@ You can now enable and disable semantic search from the **API hub > Settings> Ac
 
 For more information, see [Enable and disable semantic search](https://cloud.google.com/apigee/docs/apihub/search-apis#enable-semantic-search).
 
+### Changed
+
+**Automatic discovery of OpenAPI Spec from Apigee proxy resources**
+
+API hub now automatically discovers and ingests valid OpenAPI specifications when they are included in an Apigee API proxy resource. This applies to all new and existing Apigee and Apigee hybrid runtime projects that are attached in API hub.
+
+For more information, see [Auto-discovery of OpenAPI specs from Apigee proxies](https://cloud.google.com/apigee/docs/apihub/auto-register-apigee-proxies#auto-oas-discovery).
+
+### Deprecated
+
+**Deprecation of Vertex AI Extensions in API hub**
+
+The Vertex AI Extensions feature is no longer supported in API hub as of **September 8, 2025**.
+
 ---
 ## 2025-09-01
 

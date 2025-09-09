@@ -1,5 +1,16 @@
 # Apigee Integrated Portal
 
+## 2025-09-08
+
+### Announcement
+
+On September 8, 2025 we released a new version of the Apigee integrated portal.
+
+### Feature
+
+Workforce Identity Federation users can now manage Integrated Portals using the Apigee Cloud console. This previous limitation has been removed from [Accessing features only available in the Classic Apigee UI](https://cloud.google.com/apigee/docs/api-platform/system-administration/workforce-identity-federation-apigee#accessing-features-only-available-in-the-classic-apigee-ui).
+
+---
 ## 2025-08-25
 
 ### Announcement

@@ -1,5 +1,14 @@
 # Cloud SQL for MySQL
 
+## 2025-09-04
+
+### Changed
+
+The release note on [August 13, 2025](https://cloud.google.com/sql/docs/mysql/release-notes#August_13_2025) regarding Private Service Connect (PSC) outbound connectivity has been updated.
+
+PSC outbound connectivity is required for [homogeneous migrations](https://cloud.google.com/database-migration/docs/homogeneous-migrations) to PSC-enabled Cloud SQL instances using [Database Migration Service](https://cloud.google.com/database-migration/docs). For more information, see [PSC outbound connections](https://cloud.google.com/sql/docs/mysql/about-private-service-connect#psc-outbound).
+
+---
 ## 2025-09-03
 
 ### Feature

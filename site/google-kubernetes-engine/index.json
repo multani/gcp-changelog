@@ -1,6 +1,16 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2025-09-08": [
+      {
+        "kind": "Feature",
+        "content": "Starting with GKE version 1.33.4-gke.1036000, `ComputeClass` supports the following new `sysctls` configurations:\n\n* kernel.shmmni\n* kernel.shmmax\n* kernel.shmall\n* net.core.rmem\\_default\n* net.netfilter.nf\\_conntrack\\_max\n* net.netfilter.nf\\_conntrack\\_buckets\n* net.netfilter.nf\\_conntrack\\_tcp\\_timeout\\_close\\_wait\n* net.netfilter.nf\\_conntrack\\_tcp\\_timeout\\_time\\_wait\n* net.netfilter.nf\\_conntrack\\_tcp\\_timeout\\_time\\_wait\n* net.netfilter.nf\\_conntrack\\_acct\n* vm.dirty\\_background\\_ratio\n* vm.dirty\\_writeback\\_centisecs\n* vm.overcommit\\_memory\n* vm.overcommit\\_ratio\n* vm.vfs\\_cache\\_pressure\n* fs.aio-max-nr\n* fs.file-max\n* fs.inotify.max\\_user\\_instances\n* fs.inotify.max\\_user\\_watches\n* fs.nr\\_open\n\nFor more information, see the [ComputeClass CRD reference](https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#sysctls).",
+        "summary": {
+          "title": "New sysctl configurations supported for ComputeClass",
+          "summary": "GKE version 1.33.4-gke.1036000 introduces support for numerous new sysctl configurations within ComputeClass, enhancing flexibility and control over cluster performance. This update allows for finer-grained tuning of various kernel and networking parameters."
+        }
+      }
+    ],
     "2025-09-04": [
       {
         "kind": "Changed",
@@ -302,18 +312,18 @@
     "2025-08-15": [
       {
         "kind": "Feature",
-        "content": "For clusters enrolled in the Extended channel, you can now use\n[Gateway](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api)\nwith GKE version 1.30 or later, or\n[customized sysctl configuration options](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options).",
-        "summary": {
-          "title": "Gateway for Extended Channel",
-          "summary": "Gateway now available for Extended channel clusters."
-        }
-      },
-      {
-        "kind": "Feature",
         "content": "You can now receive a patch version in a release channel as soon as the version\nis available and before GKE sets the version as an auto-upgrade\ntarget in the channel by using *accelerated patch auto-upgrades*. Receiving\npatch versions earlier can help accelerate auto-upgrade timelines for patches,\nespecially for use cases such as accelerating your compliance with security\nrequirements.\n\nFor more information, see\n[Accelerated patch auto-upgrades](https://cloud.google.com/kubernetes-engine/docs/concepts/release-channels#accelerated-patch).",
         "summary": {
           "title": "Accelerated Patch Auto-Upgrades",
           "summary": "Accelerated patch auto-upgrades are now available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "For clusters enrolled in the Extended channel, you can now use\n[Gateway](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api)\nwith GKE version 1.30 or later, or\n[customized sysctl configuration options](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options).",
+        "summary": {
+          "title": "Gateway for Extended Channel",
+          "summary": "Gateway now available for Extended channel clusters."
         }
       }
     ],

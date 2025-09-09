@@ -1,5 +1,35 @@
 # Google Kubernetes Engine
 
+## 2025-09-08
+
+### Feature
+
+Starting with GKE version 1.33.4-gke.1036000, `ComputeClass` supports the following new `sysctls` configurations:
+
+* kernel.shmmni
+* kernel.shmmax
+* kernel.shmall
+* net.core.rmem\_default
+* net.netfilter.nf\_conntrack\_max
+* net.netfilter.nf\_conntrack\_buckets
+* net.netfilter.nf\_conntrack\_tcp\_timeout\_close\_wait
+* net.netfilter.nf\_conntrack\_tcp\_timeout\_time\_wait
+* net.netfilter.nf\_conntrack\_tcp\_timeout\_time\_wait
+* net.netfilter.nf\_conntrack\_acct
+* vm.dirty\_background\_ratio
+* vm.dirty\_writeback\_centisecs
+* vm.overcommit\_memory
+* vm.overcommit\_ratio
+* vm.vfs\_cache\_pressure
+* fs.aio-max-nr
+* fs.file-max
+* fs.inotify.max\_user\_instances
+* fs.inotify.max\_user\_watches
+* fs.nr\_open
+
+For more information, see the [ComputeClass CRD reference](https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#sysctls).
+
+---
 ## 2025-09-04
 
 ### Changed
@@ -1104,13 +1134,6 @@ The fix is available in the following GKE versions:
 
 ### Feature
 
-For clusters enrolled in the Extended channel, you can now use
-[Gateway](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api)
-with GKE version 1.30 or later, or
-[customized sysctl configuration options](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options).
-
-### Feature
-
 You can now receive a patch version in a release channel as soon as the version
 is available and before GKE sets the version as an auto-upgrade
 target in the channel by using *accelerated patch auto-upgrades*. Receiving
@@ -1120,6 +1143,13 @@ requirements.
 
 For more information, see
 [Accelerated patch auto-upgrades](https://cloud.google.com/kubernetes-engine/docs/concepts/release-channels#accelerated-patch).
+
+### Feature
+
+For clusters enrolled in the Extended channel, you can now use
+[Gateway](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api)
+with GKE version 1.30 or later, or
+[customized sysctl configuration options](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options).
 
 ---
 ## 2025-08-14

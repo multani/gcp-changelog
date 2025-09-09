@@ -1444,6 +1444,10 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 811510 -> 811531
 
+### Feature
+
+Enabled the Btrfs kernel module.
+
 ### cos-117-18613-339-32
 
 |  |  |  |  |

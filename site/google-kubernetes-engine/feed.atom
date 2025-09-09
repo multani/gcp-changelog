@@ -2,9 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2025-09-04T00:00:00+00:00</updated>
+  <updated>2025-09-08T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-08:feature:0</id>
+    <published>2025-09-08T00:00:00+00:00</published>
+    <updated>2025-09-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Starting with GKE version 1.33.4-gke.1036000, <code>ComputeClass</code> supports the following new <code>sysctls</code> configurations:</p>
+<ul>
+<li>kernel.shmmni</li>
+<li>kernel.shmmax</li>
+<li>kernel.shmall</li>
+<li>net.core.rmem_default</li>
+<li>net.netfilter.nf_conntrack_max</li>
+<li>net.netfilter.nf_conntrack_buckets</li>
+<li>net.netfilter.nf_conntrack_tcp_timeout_close_wait</li>
+<li>net.netfilter.nf_conntrack_tcp_timeout_time_wait</li>
+<li>net.netfilter.nf_conntrack_tcp_timeout_time_wait</li>
+<li>net.netfilter.nf_conntrack_acct</li>
+<li>vm.dirty_background_ratio</li>
+<li>vm.dirty_writeback_centisecs</li>
+<li>vm.overcommit_memory</li>
+<li>vm.overcommit_ratio</li>
+<li>vm.vfs_cache_pressure</li>
+<li>fs.aio-max-nr</li>
+<li>fs.file-max</li>
+<li>fs.inotify.max_user_instances</li>
+<li>fs.inotify.max_user_watches</li>
+<li>fs.nr_open</li>
+</ul>
+<p>For more information, see the <a href="https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#sysctls">ComputeClass CRD reference</a>.</p>]]></content>
+    <summary>GKE version 1.33.4-gke.1036000 introduces support for numerous new sysctl configurations within ComputeClass, enhancing flexibility and control over cluster performance. This update allows for finer-grained tuning of various kernel and networking parameters.</summary>
+    <title>Feature: New sysctl configurations supported for ComputeClass</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -1301,20 +1335,6 @@ distracting warnings.</p>
     <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-15:feature:0</id>
     <published>2025-08-15T00:00:00+00:00</published>
     <updated>2025-08-15T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>For clusters enrolled in the Extended channel, you can now use
-<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api">Gateway</a>
-with GKE version 1.30 or later, or
-<a href="https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options">customized sysctl configuration options</a>.</p>]]></content>
-    <summary>Gateway now available for Extended channel clusters.</summary>
-    <title>Feature: Gateway for Extended Channel</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-15:feature:1</id>
-    <published>2025-08-15T00:00:00+00:00</published>
-    <updated>2025-08-15T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>You can now receive a patch version in a release channel as soon as the version
 is available and before GKE sets the version as an auto-upgrade
 target in the channel by using <em>accelerated patch auto-upgrades</em>. Receiving
@@ -1325,6 +1345,20 @@ requirements.</p>
 <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/release-channels#accelerated-patch">Accelerated patch auto-upgrades</a>.</p>]]></content>
     <summary>Accelerated patch auto-upgrades are now available.</summary>
     <title>Feature: Accelerated Patch Auto-Upgrades</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-08-15:feature:1</id>
+    <published>2025-08-15T00:00:00+00:00</published>
+    <updated>2025-08-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>For clusters enrolled in the Extended channel, you can now use
+<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api">Gateway</a>
+with GKE version 1.30 or later, or
+<a href="https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options">customized sysctl configuration options</a>.</p>]]></content>
+    <summary>Gateway now available for Extended channel clusters.</summary>
+    <title>Feature: Gateway for Extended Channel</title>
   </entry>
   <entry>
     <author>

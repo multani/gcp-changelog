@@ -1,31 +1,65 @@
 {
   "name": "Cloud Composer",
   "entries": {
-    "2025-08-21": [
+    "2025-09-03": [
       {
-        "kind": "Feature",
-        "content": "Improved the startup times of Airflow workers for environments that have a\nlarge number of custom PyPI packages installed.\n\nThis feature was\n[announced previously](https://cloud.google.com/composer/docs/release-notes#June_02_2025)\nand has finished gradually rolling out to all regions supported by\nCloud Composer.",
+        "kind": "Announcement",
+        "content": "A new Cloud Composer release has started on **September 03, 2025**. Get ready\nfor upcoming changes and features as we roll out the new release to all regions.\nThis release is in progress at the moment. Listed changes and features might\nnot be available in some regions yet.",
         "summary": {
-          "title": "Faster Airflow Worker Startups",
-          "summary": "Airflow worker startup times have been improved, especially for environments with many custom PyPI packages. This enhancement is now available in all supported Cloud Composer regions."
+          "title": "Cloud Composer Release",
+          "summary": "A new Cloud Composer release is now rolling out with new features and changes."
         }
       },
       {
-        "kind": "Fixed",
-        "content": "Airflow UI now shows the correct value of the `[core]dags_folder` Airflow\nconfiguration option.",
+        "kind": "Feature",
+        "content": "*(Cloud Composer 2)* Cloud Composer's high availability infrastructure was\nenhanced to provide greater resilience against zonal outages. This change rolls\nout gradually over several releases to all regions supported by\nCloud Composer 2.",
         "summary": {
-          "title": "Airflow UI DAGs Folder Value Fixed",
-          "summary": "The Airflow UI now correctly displays the value of the `[core]dags_folder` configuration option."
+          "title": "Cloud Composer 2 High Availability",
+          "summary": "Cloud Composer 2 now offers enhanced high availability infrastructure to better withstand zonal outages. This improvement is being rolled out across all supported regions."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "*(Available without upgrading)* Cloud Composer 3 now supports DNS resolution\nfor\n[regional service endpoints](https://cloud.google.com/vpc/docs/regional-service-endpoints).\nYou can now reach regional service endpoints from\nDAGs in your environment. This change is available in Public IP environments\nwithout additional configuration. For Private IP environments, an environment\nmust be\n[connected to a VPC network](https://cloud.google.com/composer/docs/composer-3/connect-vpc-network)\nwhere private endpoints are configured.",
+        "summary": {
+          "title": "Cloud Composer 3 Now Supports DNS Resolution for Regional Service Endpoints",
+          "summary": "Cloud Composer 3 now supports DNS resolution for regional service endpoints, allowing you to reach them from your DAGs. This feature is available in Public IP environments without extra configuration and in Private IP environments when connected to a VPC network with private endpoints configured."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now check if a Cloud Composer 2 environment's configuration\n[is compatible with Cloud Composer 3](https://cloud.google.com/composer/docs/composer-2/upgrade-environments#major-version-upgrade).\nWe recommend doing this check before migrating to Cloud Composer 3.",
+        "summary": {
+          "title": "Cloud Composer 3 Upgrade Compatibility Check",
+          "summary": "Check your Cloud Composer 2 environment's configuration for compatibility with Cloud Composer 3 before upgrading."
         }
       },
       {
         "kind": "Changed",
-        "content": "*(Airflow 2.10.5)* The `apache-airflow-providers-google` package was upgraded to version 17.1.0 in Cloud Composer 2 images and Cloud Composer 3 builds.\n\nFor more information about changes, see the [apache-airflow-providers-google changelog](https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html) from version 15.1.0 to version 17.1.0.",
+        "content": "New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Cloud Composer 3:\n\n* [composer-3-airflow-2.10.5-build.13](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-13) (default)\n* [composer-3-airflow-2.9.3-build.33](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-33)",
         "summary": {
-          "title": "Airflow providers google package upgraded",
-          "summary": "The apache-airflow-providers-google package has been upgraded to version 17.1.0."
+          "title": "New Airflow builds available",
+          "summary": "New Airflow builds are available for Cloud Composer 3, including the default composer-3-airflow-2.10.5-build.13 and composer-3-airflow-2.9.3-build.33."
         }
       },
+      {
+        "kind": "Changed",
+        "content": "New [images](https://cloud.google.com/composer/docs/composer-versions#images-composer-2)\nare available in Cloud Composer 2:\n\n* [composer-2.14.1-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-14-1-airflow-2-10-5) (default)\n* [composer-2.14.1-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-14-1-airflow-2-9-3)",
+        "summary": {
+          "title": "New images available",
+          "summary": "New images for Cloud Composer 2 are now available. The default image is composer-2.14.1-airflow-2.10.5, and composer-2.14.1-airflow-2.9.3 is also available."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "The following Cloud Composer versions and builds have reached their\n[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-2.9.2-\\* and composer-2.9.3-\\*.",
+        "summary": {
+          "title": "Cloud Composer Versions Deprecation",
+          "summary": "Certain versions of Cloud Composer, specifically composer-2.9.2-* and composer-2.9.3-*, are no longer supported. This announcement serves as a notification for users of these versions."
+        }
+      }
+    ],
+    "2025-08-21": [
       {
         "kind": "Changed",
         "content": "*(Airflow 2.10.5)* The `apache-airflow-providers-cncf-kubernetes` package was [upgraded to version 10.7.0](https://airflow.apache.org/docs/apache-airflow-providers-cncf-kubernetes/stable/changelog.html) from version 10.6.1. For changes in other packages, see the [preinstalled packages changelog](https://cloud.google.com/composer/docs/versions-packages).",
@@ -56,6 +90,30 @@
         "summary": {
           "title": "Cloud Composer Versions Deprecation",
           "summary": "Certain Cloud Composer versions are no longer supported. Please update to a supported version."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Improved the startup times of Airflow workers for environments that have a\nlarge number of custom PyPI packages installed.\n\nThis feature was\n[announced previously](https://cloud.google.com/composer/docs/release-notes#June_02_2025)\nand has finished gradually rolling out to all regions supported by\nCloud Composer.",
+        "summary": {
+          "title": "Faster Airflow Worker Startups",
+          "summary": "Airflow worker startup times have been improved, especially for environments with many custom PyPI packages. This enhancement is now available in all supported Cloud Composer regions."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Airflow UI now shows the correct value of the `[core]dags_folder` Airflow\nconfiguration option.",
+        "summary": {
+          "title": "Airflow UI DAGs Folder Value Fixed",
+          "summary": "The Airflow UI now correctly displays the value of the `[core]dags_folder` configuration option."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "*(Airflow 2.10.5)* The `apache-airflow-providers-google` package was upgraded to version 17.1.0 in Cloud Composer 2 images and Cloud Composer 3 builds.\n\nFor more information about changes, see the [apache-airflow-providers-google changelog](https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html) from version 15.1.0 to version 17.1.0.",
+        "summary": {
+          "title": "Airflow providers google package upgraded",
+          "summary": "The apache-airflow-providers-google package has been upgraded to version 17.1.0."
         }
       }
     ],

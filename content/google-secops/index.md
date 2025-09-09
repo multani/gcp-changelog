@@ -1,5 +1,46 @@
 # Google SecOps
 
+## 2025-09-08
+
+### Announcement
+
+**New parser documentation now available**
+
+New parser documentation is available to help you ingest and normalize logs from the following sources:
+
+[Collect Akamai Cloud Monitor logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/akamai-cm)   
+[Collect Akamai DataStream 2 logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/akamai-ds2)   
+[Collect Aware audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aware-audit)   
+[Collect AWS API Gateway access logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aws-api-gateway)   
+[Collect AWS VPC Transit Gateway flow logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aws-vpc-tgflow)   
+[Collect Bitwarden Enterprise event logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/bitwarden-ent-event)   
+[Collect Box Collaboration JSON logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/box-collaboration-json)   
+[Collect Censys logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/censys)   
+[Collect Code42 Incydr core datasets](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/code42-incydr)   
+[Collect CSV Custom IOC files](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/csv-custom-ioc)   
+[Collect Deep Instinct EDR logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/deep-ins-edr)   
+[Collect DigiCert audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/digicert-audit)   
+[Collect DomainTools Iris Investigate results](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/dt-iris-investigate)   
+[Collect Duo administrator logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/duo-admin)   
+[Collect Duo authentication logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/duo-auth)   
+[Collect Duo entity context logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/duo-entity)   
+[Collect Google Cloud Abuse Events logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-abuse-events)   
+[Collect Harness IO audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/harness-io-audit)   
+[Collect HPE Aruba Networking Central logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/hpe-anc)   
+[Collect Jamf Pro context logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/jamf-pro-context)   
+[Collect PingOne Advanced Identity Cloud logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/pingone-advanced-identity)   
+[Collect Slack audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/slack-audit)   
+[Collect Snyk group-level audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/snyk-group-audit)   
+[Collect Snyk group-level audit and issues logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/snyk-group-issues)   
+[Collect Venafi Zero Touch PKI logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/venafi-ztpki)   
+[Collect Veritas NetBackup logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/veritas-netbackup)   
+[Collect VMware AirWatch logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-airwatch)   
+[Collect VMware Avi Load Balancer WAF logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-avilb-waf)   
+[Collect VMware Horizon logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-horizon)   
+[Collect VMware VeloCloud SD-WAN logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-velocloud-sdwan)   
+[Collect Zoom operation logs](https://www.google.com/search?q=https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zoom-operations)
+
+---
 ## 2025-09-07
 
 ### Feature

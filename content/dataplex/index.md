@@ -1,5 +1,12 @@
 # Dataplex
 
+## 2025-09-03
+
+### Feature
+
+[Semantic search](https://cloud.google.com/dataplex/docs/search-assets) in Dataplex Universal Catalog is available in [preview](https://cloud.google.com/products#product-launch-stages). Semantic search extends keyword search to support natural language queries. It lets you find resources using everyday language, eliminating the need for complex syntax.
+
+---
 ## 2025-06-18
 
 ### Feature

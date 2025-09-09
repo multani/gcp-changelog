@@ -1,5 +1,14 @@
 # Cloud SQL for PostgreSQL
 
+## 2025-09-08
+
+### Feature
+
+You can have Cloud SQL create a [Private Service Connect](https://cloud.google.com/sql/docs/postgres/about-private-service-connect#psc-endpoint) endpoint automatically. You can use this endpoint to access Cloud SQL instances through a VPC network. For more information, see [Create a Private Service Connect endpoint automatically](https://cloud.google.com/sql/docs/postgres/configure-private-service-connect#create-endpoint-automatically).
+
+This feature is now generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
+
+---
 ## 2025-09-04
 
 ### Changed

@@ -1,5 +1,14 @@
 # Looker Studio
 
+## 2025-08-28
+
+### Feature
+
+**Vertical stacking in responsive reports**
+
+Responsive reports now support vertical stacking. You can add multiple components to a column within a section.
+
+---
 ## 2025-08-21
 
 ### Feature

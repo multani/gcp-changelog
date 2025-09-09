@@ -1,5 +1,16 @@
 # Apigee API hub
 
+## 2025-09-08
+
+### Feature
+
+**Enable and disable semantic search**
+
+You can now enable and disable semantic search from the **API hub > Settings> Actions** page in the Google Cloud console.
+
+For more information, see [Enable and disable semantic search](https://cloud.google.com/apigee/docs/apihub/search-apis#enable-semantic-search).
+
+---
 ## 2025-09-01
 
 ### Changed

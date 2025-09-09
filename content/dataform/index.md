@@ -1,5 +1,12 @@
 # Dataform
 
+## 2025-09-08
+
+### Feature
+
+You can now [update an incremental table schema without a full table refresh](https://cloud.google.com/dataform/docs/#change-schema-without-refresh). This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-09-02
 
 ### Feature

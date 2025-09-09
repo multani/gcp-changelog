@@ -1,5 +1,36 @@
 # Dataproc
 
+## 2025-09-08
+
+### Announcement
+
+Announcing the [Preview release](https://cloud.google.com/products#product-launch-stages) of [Dataproc on Compute Engine image version 3.0](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-3.0):
+
+* Spark 4.0.0
+* Hadoop 3.4.1
+* Hive 4.1.0
+* Tez 0.10.5
+* Cloud Storage Connector 3.1.4
+* Conda 24.11
+* Java 17
+* Python 3.11
+* R 4.3
+* Scala 2.13
+
+### Announcement
+
+Announcing the [Preview release](https://cloud.google.com/products#product-launch-stages) of [Serverless for Apache Spark 3.0 runtime](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-3.0):
+
+* Spark 4.0.0
+* BigQuery Spark Connector 0.42.3
+* Cloud Storage Connector 3.1.5
+* Conda 25.3.0
+* Java 17
+* Python 3.12
+* R 4.4
+* Scala 2.13
+
+---
 ## 2025-09-02
 
 ### Feature

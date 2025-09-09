@@ -101,6 +101,7 @@
 - [Gemini Code Assist](gemini-code-assist/index.md)
 - [Gemini on GDC API on GDC connected](gemini-on-gdc-api-on-gdc-connected/index.md)
 - [Generative AI on Vertex AI](generative-ai-on-vertex-ai/index.md)
+- [Google Agentspace](google-agentspace/index.md)
 - [Google Cloud Architecture Center](google-cloud-architecture-center/index.md)
 - [Google Cloud Armor](google-cloud-armor/index.md)
 - [Google Cloud Contact Center as a Service](google-cloud-contact-center-as-a-service/index.md)

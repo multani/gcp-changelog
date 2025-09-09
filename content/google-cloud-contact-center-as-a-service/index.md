@@ -165,6 +165,9 @@ The following issues were addressed in this release:
 * Fixed an issue where calls to the bulk user upload endpoint returned a success status even when the uploads failed.
 * Fixed an issue in the chat waiting field of the agent desktop when multiple chats were in wrap-up. Instead of displaying **Wrap-up in progress** for all sessions in wrap-up, some sessions displayed **Auto answered**.
 * Fixed an issue in the queue group dashboard where the **Callbacks waiting** tile incorrectly included callbacks that were completed, abandoned, or failed.
+* Fixed an issue that caused inbound calls to disconnect if they were routed to an agent with a disabled microphone.
+* Fixed an issue for HubSpot users where logging the "call started" event (`create_activity`) in the ticket was delayed.
+* Fixed an issue in the agent adapter for French (Canada) where where words weren't translated or were translated incorrectly.
 
 ---
 ## 2025-08-20

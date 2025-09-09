@@ -38,7 +38,7 @@ The following issues were fixed in 1.33.0-gke.799:
 
 ### Announcement
 
-Google Distributed Cloud (software only) for VMware 1.32.400-gke.68 is now available for [download](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads). To upgrade, see [Upgrade a cluster](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading). Google Distributed Cloud 1.31.800-gke.32 runs on Kubernetes v1.32.7-gke.200.
+Google Distributed Cloud (software only) for VMware 1.32.400-gke.68 is now available for [download](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads). To upgrade, see [Upgrade a cluster](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading). Google Distributed Cloud 1.32.400-gke.68 runs on Kubernetes v1.32.7-gke.200.
 
 If you are using a third-party storage vendor, check the [GDC Ready storage partners](https://cloud.google.com/anthos/docs/resources/partner-storage) document to make sure the storage vendor has already passed the qualification for this release.
 

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: Google Agentspace</title>
+  <subtitle>Changelog for Google Cloud product: Google Agentspace</subtitle>
+  <updated>2025-09-05T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:google-agentspace</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-agentspace/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-agentspace:2025-09-05:feature:0</id>
+    <published>2025-09-05T00:00:00+00:00</published>
+    <updated>2025-09-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google NotebookLM Enterprise: Notebook creation and management using the API (GA)</strong></p>
+<p>Use standalone APIs to programmatically create and manage your notebooks. For more information, see <a href="https://cloud.google.com/agentspace/notebooklm-enterprise/docs/api-notebooks">Create and manage notebooks using the API</a>.</p>]]></content>
+    <summary>Programmatically create and manage notebooks with NotebookLM Enterprise API.</summary>
+    <title>Feature: NotebookLM Enterprise API</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-agentspace:2025-08-28:feature:0</id>
+    <published>2025-08-28T00:00:00+00:00</published>
+    <updated>2025-08-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google NotebookLM Enterprise: Generate podcasts using the Podcast API (GA with allowlist)</strong></p>
+<p>Use a standalone API to programmatically generate NotebookLM-style podcasts. No data store required; provide the source content directly to the <a href="https://cloud.google.com/agentspace/docs/reference/rest/v1/projects.locations.podcasts.operations">Podcast API</a>.</p>
+<p>This feature is available to select Google Cloud customers (GA with allowlist). For more information, see <a href="https://cloud.google.com/agentspace/notebooklm-enterprise/docs/podcast-api">Generate podcasts (API method)</a>.</p>]]></content>
+    <summary>A new API allows you to programmatically generate podcasts using NotebookLM-style content. No data store is needed, as you can provide source content directly to the Podcast API. This feature is available to select Google Cloud customers.</summary>
+    <title>Feature: Generate podcasts programmatically</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-agentspace:2025-08-21:breaking:0</id>
+    <published>2025-08-21T00:00:00+00:00</published>
+    <updated>2025-08-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Full sync in SharePoint connector to avoid duplicate documents</strong></p>
+<p>Because of a change that tries to optimize the sync performance, performing an incremental sync in a <a href="https://cloud.google.com/agentspace/docs/connect-sharepoint-online">SharePoint connector data store</a> can cause duplicate documents for <code>file</code> entity types. This is applicable to all SharePoint connectors created before August 21, 2025, that contain <code>file</code> entity types.</p>
+<p>As a one-time solution, you can avoid duplication by either running a full sync manually or waiting for the next scheduled full sync. After performing the full sync, you can perform incremental syncs without generating any duplicate documents.</p>]]></content>
+    <summary>Avoid duplicate documents in SharePoint connector with a full sync.</summary>
+    <title>Breaking: SharePoint Connector Duplicates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-agentspace:2025-08-18:feature:0</id>
+    <published>2025-08-18T00:00:00+00:00</published>
+    <updated>2025-08-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Agentspace: Export analytics</strong></p>
+<p>Export metrics to a BigQuery table in your Google Cloud project using the <code>analytics:exportMetrics</code> method.</p>
+<p>For more information, see <a href="https://cloud.google.com/agentspace/docs/view-analytics#export_metrics">View and export analytics data</a>.</p>]]></content>
+    <summary>Export metrics to a BigQuery table using the `analytics:exportMetrics` method.</summary>
+    <title>Feature: Google Agentspace: Export analytics</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-agentspace:2025-08-12:feature:0</id>
+    <published>2025-08-12T00:00:00+00:00</published>
+    <updated>2025-08-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Agentspace: Custom starter prompts for no-code agents</strong></p>
+<p>You can add starter prompts to no-code agents. Starter prompts guide users on how to interact with the agent. See <a href="https://cloud.google.com/agentspace/docs/agent-designer">Create a no-code agent with Agent Designer</a>.</p>]]></content>
+    <summary>You can now add starter prompts to no-code agents. Starter prompts guide users on how to interact with the agent.</summary>
+    <title>Feature: No-code agent starter prompts</title>
+  </entry>
+</feed>

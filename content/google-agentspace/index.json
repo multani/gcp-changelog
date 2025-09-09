@@ -1,0 +1,55 @@
+{
+  "name": "Google Agentspace",
+  "entries": {
+    "2025-09-05": [
+      {
+        "kind": "Feature",
+        "content": "**Google NotebookLM Enterprise: Notebook creation and management using the API (GA)**\n\nUse standalone APIs to programmatically create and manage your notebooks. For more information, see [Create and manage notebooks using the API](https://cloud.google.com/agentspace/notebooklm-enterprise/docs/api-notebooks).",
+        "summary": {
+          "title": "NotebookLM Enterprise API",
+          "summary": "Programmatically create and manage notebooks with NotebookLM Enterprise API."
+        }
+      }
+    ],
+    "2025-08-28": [
+      {
+        "kind": "Feature",
+        "content": "**Google NotebookLM Enterprise: Generate podcasts using the Podcast API (GA with allowlist)**\n\nUse a standalone API to programmatically generate NotebookLM-style podcasts. No data store required; provide the source content directly to the [Podcast API](https://cloud.google.com/agentspace/docs/reference/rest/v1/projects.locations.podcasts.operations).\n\nThis feature is available to select Google Cloud customers (GA with allowlist). For more information, see [Generate podcasts (API method)](https://cloud.google.com/agentspace/notebooklm-enterprise/docs/podcast-api).",
+        "summary": {
+          "title": "Generate podcasts programmatically",
+          "summary": "A new API allows you to programmatically generate podcasts using NotebookLM-style content. No data store is needed, as you can provide source content directly to the Podcast API. This feature is available to select Google Cloud customers."
+        }
+      }
+    ],
+    "2025-08-21": [
+      {
+        "kind": "Breaking",
+        "content": "**Full sync in SharePoint connector to avoid duplicate documents**\n\nBecause of a change that tries to optimize the sync performance, performing an incremental sync in a [SharePoint connector data store](https://cloud.google.com/agentspace/docs/connect-sharepoint-online) can cause duplicate documents for `file` entity types. This is applicable to all SharePoint connectors created before August 21, 2025, that contain `file` entity types.\n\nAs a one-time solution, you can avoid duplication by either running a full sync manually or waiting for the next scheduled full sync. After performing the full sync, you can perform incremental syncs without generating any duplicate documents.",
+        "summary": {
+          "title": "SharePoint Connector Duplicates",
+          "summary": "Avoid duplicate documents in SharePoint connector with a full sync."
+        }
+      }
+    ],
+    "2025-08-18": [
+      {
+        "kind": "Feature",
+        "content": "**Google Agentspace: Export analytics**\n\nExport metrics to a BigQuery table in your Google Cloud project using the `analytics:exportMetrics` method.\n\nFor more information, see [View and export analytics data](https://cloud.google.com/agentspace/docs/view-analytics#export_metrics).",
+        "summary": {
+          "title": "Google Agentspace: Export analytics",
+          "summary": "Export metrics to a BigQuery table using the `analytics:exportMetrics` method."
+        }
+      }
+    ],
+    "2025-08-12": [
+      {
+        "kind": "Feature",
+        "content": "**Google Agentspace: Custom starter prompts for no-code agents**\n\nYou can add starter prompts to no-code agents. Starter prompts guide users on how to interact with the agent. See [Create a no-code agent with Agent Designer](https://cloud.google.com/agentspace/docs/agent-designer).",
+        "summary": {
+          "title": "No-code agent starter prompts",
+          "summary": "You can now add starter prompts to no-code agents. Starter prompts guide users on how to interact with the agent."
+        }
+      }
+    ]
+  }
+}

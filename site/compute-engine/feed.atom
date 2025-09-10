@@ -2,9 +2,55 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Compute Engine</title>
   <subtitle>Changelog for Google Cloud product: Compute Engine</subtitle>
-  <updated>2025-09-04T00:00:00+00:00</updated>
+  <updated>2025-09-09T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:compute-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/compute-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2025-09-09:changed:0</id>
+    <published>2025-09-09T00:00:00+00:00</published>
+    <updated>2025-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Hyperdisk Balanced High Availability disks are available in all regions.
+Hyperdisk Balanced High Availability disks synchronously replicate disk data from one zone to another. Cross-zonal replication provides data protection in the unlikely event of a zonal outage. For more information, see <a href="https://cloud.google.com/compute/docs/disks/hd-types/hyperdisk-balanced-ha">About Hyperdisk Balanced High Availability</a>.</p>]]></content>
+    <summary>Hyperdisk Balanced High Availability disks now offer cross-zonal data replication in all regions, ensuring data protection against zonal outages.</summary>
+    <title>Changed: Hyperdisk Balanced Availability Now in All Regions</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2025-09-09:feature:1</id>
+    <published>2025-09-09T00:00:00+00:00</published>
+    <updated>2025-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Preview:</strong> Eight new organization policy constraints are available to help you
+enforce security best practices for Compute Engine virtual machine (VM)
+instances.</p>
+<p>These <a href="https://cloud.google.com/resource-manager/docs/organization-policy/using-constraints#managed-constraints">managed constraints</a>
+simplify governance for common security scenarios and integrate with safe
+rollout tools like
+<a href="https://cloud.google.com/resource-manager/docs/organization-policy/dry-run-policy">dry-run</a>
+and
+<a href="https://cloud.google.com/policy-intelligence/docs/test-organization-policies">simulation</a>,
+letting you test their impact before enforcement.</p>
+<p>The new constraints are as follows:</p>
+<ul>
+<li><code>compute.managed.disableNestedVirtualization</code></li>
+<li><code>compute.managed.disableSerialPortAccess</code></li>
+<li><code>compute.managed.disableSerialPortLogging</code></li>
+<li><code>compute.managed.disallowGlobalDns</code></li>
+<li><code>compute.managed.requireOsConfig</code></li>
+<li><code>compute.managed.requireOsLogin</code></li>
+<li><code>compute.managed.vmCanIpForward</code></li>
+<li><code>compute.managed.vmExternalIpAccess</code></li>
+</ul>
+<p>These constraints can evaluate metadata values at the <a href="https://cloud.google.com/compute/docs/metadata/overview#metadata-directories">VM instance, project, or
+zonal level</a>. For more information about these managed constraints, see <a href="https://cloud.google.com/resource-manager/docs/organization-policy/org-policy-constraints#managed-constraints">Managed
+Constraints</a> in the Resource Manager documentation.</p>]]></content>
+    <summary>Eight new organization policy constraints are now available to help enforce security best practices for Compute Engine virtual machine (VM) instances. These managed constraints simplify governance for common security scenarios and integrate with safe rollout tools, allowing you to test their impact before enforcement.</summary>
+    <title>Feature: New Organization Policy Constraints for Compute Engine VMs</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

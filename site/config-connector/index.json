@@ -1,6 +1,40 @@
 {
   "name": "Config Connector",
   "entries": {
+    "2025-09-03": [
+      {
+        "kind": "Announcement",
+        "content": "Config Connector version 1.134.0 is now available.",
+        "summary": {
+          "title": "New Config Connector Version",
+          "summary": "The latest version of Config Connector is now available."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Improved reconciliation by migrating the following resources from the Terraform-based or DCL-based controller to the new direct controller. These resources are migrated automatically and you no longer need to apply the `opt-in` annotation to enable the direct controller:\n\n* [`CloudIdentityGroup`](https://cloud.google.com/config-connector/docs/reference/resource-docs/cloudidentity/cloudidentitygroup)\n* [`CloudIdentityMembership`](https://cloud.google.com/config-connector/docs/reference/resource-docs/cloudidentity/cloudidentitymembership)",
+        "summary": {
+          "title": "Cloud Identity Resources Now Use Direct Controller",
+          "summary": "The Cloud Identity Group and Cloud Identity Membership resources have been migrated to the new direct controller. This migration is automatic and the `opt-in` annotation is no longer required."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "New Fields:\n\n* `ContainerCluster`: DNS endpoint is supported in ContainerCluster.",
+        "summary": {
+          "title": "DNS Endpoint Support in ContainerCluster",
+          "summary": "The ContainerCluster now supports DNS endpoints."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Bug Fixes:\n\n* `ConfigConnectorContext`:\n  + [PR#4995](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/4995): `status.observedGeneration` is now being set on the ConfigConnectorContext.\n  + [PR#4657](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/4657): Added `spec.managerNamespace`.\n* `SQLInstance`:\n  + [PR#4838](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/4838): Fixed bug in SQLInstance `maintenanceVersion` UPDATE operation\n  + [PR#4843](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/4843): Set status on acquisition for SQLInstance controller\n  + [PR#4857](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/4857): Support SQLInstance `maintenanceVersion` in CREATE operation",
+        "summary": {
+          "title": "Config Connector Updates",
+          "summary": "The latest release includes fixes for ConfigConnectorContext and SQLInstance, addressing observed generation, manager namespace, maintenance version updates, and status setting during acquisition."
+        }
+      }
+    ],
     "2025-07-30": [
       {
         "kind": "Announcement",

@@ -1,5 +1,16 @@
 # Agent Assist
 
+## 2025-09-09
+
+### Feature
+
+Agent assist offers [**Summarization automatic evaluation**](https://cloud.google.com/agent-assist/docs/summarization-autoeval-guide). This feature assesses the quality of AI-generated summaries based on the following three metrics:
+
+* Accuracy
+* Completeness
+* Adherence
+
+---
 ## 2025-08-21
 
 ### Deprecated

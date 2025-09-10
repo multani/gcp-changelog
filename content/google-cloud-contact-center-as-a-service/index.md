@@ -167,6 +167,7 @@ The following issues were addressed in this release:
 * Fixed an issue in the queue group dashboard where the **Callbacks waiting** tile incorrectly included callbacks that were completed, abandoned, or failed.
 * Fixed an issue that caused inbound calls to disconnect if they were routed to an agent with a disabled microphone.
 * Fixed an issue for HubSpot users where logging the "call started" event (`create_activity`) in the ticket was delayed.
+* Fixed an issue that prevented transferred calls from being routed to available agents.
 * Fixed an issue in the agent adapter for French (Canada) where where words weren't translated or were translated incorrectly.
 
 ---

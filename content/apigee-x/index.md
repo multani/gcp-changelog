@@ -1,5 +1,20 @@
 # Apigee X
 
+## 2025-09-09
+
+### Announcement
+
+On September 9, 2025, we released an updated version of Apigee (1-16-0-apigee-1).
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+### Changed
+
+| Bug ID | Description |
+| --- | --- |
+| **N/A** | **Updates to security infrastructure and libraries.** |
+
+---
 ## 2025-09-04
 
 ### Announcement

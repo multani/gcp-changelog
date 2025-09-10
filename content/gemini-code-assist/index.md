@@ -1,5 +1,28 @@
 # Gemini Code Assist
 
+## 2025-09-09
+
+### Feature
+
+
+
+### Add terminal output to context in IntelliJ
+
+You can [attach terminal output to the chat context](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#prompt_with_selected_terminal_output_using_chat) with IntelliJ
+Gemini Code Assist. You can now ask Gemini Code Assist questions about terminal
+commands and output.
+
+### Feature
+
+
+
+### Regenerate a prompt response in IntelliJ
+
+You can [regenerate a prompt response](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#regenerate_a_prompt_response)
+to your most recent prompt, where Gemini Code Assist re-evaluates your prompt
+and provides a new response.
+
+---
 ## 2025-09-04
 
 ### Monitor Gemini Code Assist usage
@@ -76,11 +99,6 @@ collected. For more information, see
 ---
 ## 2025-08-15
 
-### Numerous IDE performance improvements
-
-Numerous improvements to VS Code Gemini Code Assist performance, including
-reductions in CPU usage, memory usage, and extension slowdown.
-
 ### Release channel name in VS Code chat banner
 
 VS Code Gemini Code Assist shows the configured **Release Channel** when you're
@@ -97,6 +115,11 @@ allowing you to remove a single prompt and response within a chat, while
 maintaining the rest of your chat history with Gemini Code Assist.
 
 ![Delete prompt and response pair in IntelliJ Gemini Code Assist.](https://cloud.google.com/gemini/images/intellij-delete-prompt-response-pair.png)
+
+### Numerous IDE performance improvements
+
+Numerous improvements to VS Code Gemini Code Assist performance, including
+reductions in CPU usage, memory usage, and extension slowdown.
 
 ---
 ## 2025-08-12

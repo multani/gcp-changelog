@@ -1,5 +1,14 @@
 # Cloud Data Fusion
 
+## 2025-08-28
+
+### Changed
+
+The ServiceNow plugin version 1.2.7 is available in Cloud Data Fusion version 6.10.1. This release includes the following change:
+
+* Fixed an issue related to schema backward compatibility while upgrading from plugin version 1.1.0 ([PLUGIN-1902](https://cdap.atlassian.net/browse/PLUGIN-1902)).
+
+---
 ## 2025-08-27
 
 ### Feature

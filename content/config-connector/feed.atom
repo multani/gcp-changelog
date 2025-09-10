@@ -2,9 +2,69 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Config Connector</title>
   <subtitle>Changelog for Google Cloud product: Config Connector</subtitle>
-  <updated>2025-07-30T00:00:00+00:00</updated>
+  <updated>2025-09-03T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:config-connector</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/config-connector/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-09-03:announcement:0</id>
+    <published>2025-09-03T00:00:00+00:00</published>
+    <updated>2025-09-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.134.0 is now available.</p>]]></content>
+    <summary>The latest version of Config Connector is now available.</summary>
+    <title>Announcement: New Config Connector Version</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-09-03:changed:1</id>
+    <published>2025-09-03T00:00:00+00:00</published>
+    <updated>2025-09-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Improved reconciliation by migrating the following resources from the Terraform-based or DCL-based controller to the new direct controller. These resources are migrated automatically and you no longer need to apply the <code>opt-in</code> annotation to enable the direct controller:</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/cloudidentity/cloudidentitygroup"><code>CloudIdentityGroup</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/cloudidentity/cloudidentitymembership"><code>CloudIdentityMembership</code></a></li>
+</ul>]]></content>
+    <summary>The Cloud Identity Group and Cloud Identity Membership resources have been migrated to the new direct controller. This migration is automatic and the `opt-in` annotation is no longer required.</summary>
+    <title>Changed: Cloud Identity Resources Now Use Direct Controller</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-09-03:changed:2</id>
+    <published>2025-09-03T00:00:00+00:00</published>
+    <updated>2025-09-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Fields:</p>
+<ul>
+<li><code>ContainerCluster</code>: DNS endpoint is supported in ContainerCluster.</li>
+</ul>]]></content>
+    <summary>The ContainerCluster now supports DNS endpoints.</summary>
+    <title>Changed: DNS Endpoint Support in ContainerCluster</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-09-03:fixed:3</id>
+    <published>2025-09-03T00:00:00+00:00</published>
+    <updated>2025-09-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Bug Fixes:</p>
+<ul>
+<li><code>ConfigConnectorContext</code>:</li>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/4995">PR#4995</a>: <code>status.observedGeneration</code> is now being set on the ConfigConnectorContext.</li>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/4657">PR#4657</a>: Added <code>spec.managerNamespace</code>.</li>
+<li><code>SQLInstance</code>:</li>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/4838">PR#4838</a>: Fixed bug in SQLInstance <code>maintenanceVersion</code> UPDATE operation</li>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/4843">PR#4843</a>: Set status on acquisition for SQLInstance controller</li>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/4857">PR#4857</a>: Support SQLInstance <code>maintenanceVersion</code> in CREATE operation</li>
+</ul>]]></content>
+    <summary>The latest release includes fixes for ConfigConnectorContext and SQLInstance, addressing observed generation, manager namespace, maintenance version updates, and status setting during acquisition.</summary>
+    <title>Fixed: Config Connector Updates</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

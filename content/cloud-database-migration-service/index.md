@@ -1,5 +1,17 @@
 # Cloud Database Migration Service
 
+## 2025-09-05
+
+### Feature
+
+Database Migration Service for heterogeneous Oracle and SQL Server migrations now supports table-level observability features. In addition to metrics aggregated for the whole database, you can now monitor the migration progress individually for each table. For more information, see the monitoring pages for your scenario:
+
+* [Migration job metrics for Oracle to Cloud SQL for PostgreSQL](https://cloud.google.com/database-migration/docs/oracle-to-postgresql/migration-job-metrics)
+* [Migration job metrics for Oracle to AlloyDB for PostgreSQL](https://cloud.google.com/database-migration/docs/oracle-to-alloydb/migration-job-metrics)
+* [Migration job metrics for SQL Server to Cloud SQL for PostgreSQL](https://cloud.google.com/database-migration/docs/sqlserver-to-csql-pgsql/migration-job-metrics)
+* [Migration job metrics for SQL Server to AlloyDB for PostgreSQL](https://cloud.google.com/database-migration/docs/sqlserver-to-alloydb/migration-job-metrics)
+
+---
 ## 2025-08-18
 
 ### Feature

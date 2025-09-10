@@ -1,5 +1,20 @@
 # BigQuery
 
+## 2025-09-09
+
+### Feature
+
+The [batch](https://cloud.google.com/bigquery/docs/batch-sql-translator) and [interactive translators](https://cloud.google.com/bigquery/docs/interactive-sql-translator) now caches your metadata, which can improve latency when you run a SQL translation. This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+### Changed
+
+You can now perform [supervised tuning](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-remote-model#supervised_tuning) on a BigQuery ML [remote model](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-remote-model) based on a Vertex AI `gemini-2.5-pro` or `gemini-2.5-flash-lite` model.
+
+### Feature
+
+You can configure reusable, default Cloud resource connections in a project. [Default connections](https://cloud.google.com/bigquery/docs/default-connections) are [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+---
 ## 2025-09-08
 
 ### Feature

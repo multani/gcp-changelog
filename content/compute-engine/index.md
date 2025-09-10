@@ -1,5 +1,42 @@
 # Compute Engine
 
+## 2025-09-09
+
+### Changed
+
+Hyperdisk Balanced High Availability disks are available in all regions.
+Hyperdisk Balanced High Availability disks synchronously replicate disk data from one zone to another. Cross-zonal replication provides data protection in the unlikely event of a zonal outage. For more information, see [About Hyperdisk Balanced High Availability](https://cloud.google.com/compute/docs/disks/hd-types/hyperdisk-balanced-ha).
+
+### Feature
+
+**Preview:** Eight new organization policy constraints are available to help you
+enforce security best practices for Compute Engine virtual machine (VM)
+instances.
+
+These [managed constraints](https://cloud.google.com/resource-manager/docs/organization-policy/using-constraints#managed-constraints)
+simplify governance for common security scenarios and integrate with safe
+rollout tools like
+[dry-run](https://cloud.google.com/resource-manager/docs/organization-policy/dry-run-policy)
+and
+[simulation](https://cloud.google.com/policy-intelligence/docs/test-organization-policies),
+letting you test their impact before enforcement.
+
+The new constraints are as follows:
+
+* `compute.managed.disableNestedVirtualization`
+* `compute.managed.disableSerialPortAccess`
+* `compute.managed.disableSerialPortLogging`
+* `compute.managed.disallowGlobalDns`
+* `compute.managed.requireOsConfig`
+* `compute.managed.requireOsLogin`
+* `compute.managed.vmCanIpForward`
+* `compute.managed.vmExternalIpAccess`
+
+These constraints can evaluate metadata values at the [VM instance, project, or
+zonal level](https://cloud.google.com/compute/docs/metadata/overview#metadata-directories). For more information about these managed constraints, see [Managed
+Constraints](https://cloud.google.com/resource-manager/docs/organization-policy/org-policy-constraints#managed-constraints) in the Resource Manager documentation.
+
+---
 ## 2025-09-04
 
 ### Feature

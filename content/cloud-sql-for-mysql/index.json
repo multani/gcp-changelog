@@ -1,6 +1,24 @@
 {
   "name": "Cloud SQL for MySQL",
   "entries": {
+    "2025-09-08": [
+      {
+        "kind": "Feature",
+        "content": "Cloud SQL read pools are now generally available and provide operational simplicity and scaling for your read workloads.\n\nRead pools provide a single endpoint in front of up to 20 read pool nodes and automatically load balance traffic.\n\nYou can scale your read pool in several ways:\n\n* **Scale in or out**: scale load balancing capacity horizontally by modifying the number of read pool nodes in the read pool. Each read pool supports up to 20 read pool nodes.\n* **Scale up or down**: scale load balancing capacity vertically by modifying the machine type associated with a read pool node. Once defined, configuration is uniformly applied across each read pool node in the read pool.\n\nFor more information, see\n[About read pools](https://cloud.google.com/sql/docs/mysql/about-read-pools).",
+        "summary": {
+          "title": "Cloud SQL read pools now available",
+          "summary": "Cloud SQL read pools are now generally available, offering a simplified way to scale read workloads. They provide a single endpoint that load balances traffic across up to 20 nodes, which can be scaled horizontally or vertically."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can have Cloud SQL create a [Private Service Connect](https://cloud.google.com/sql/docs/mysql/about-private-service-connect#psc-endpoint) endpoint automatically. You can use this endpoint to access Cloud SQL instances through a VPC network. For more information, see [Create a Private Service Connect endpoint automatically](https://cloud.google.com/sql/docs/mysql/configure-private-service-connect#create-endpoint-automatically).\n\nThis feature is now generally available ([GA](https://cloud.google.com/products#product-launch-stages)).",
+        "summary": {
+          "title": "Private Service Connect endpoint for Cloud SQL",
+          "summary": "A new feature allows for the automatic creation of Private Service Connect endpoints for Cloud SQL instances, enabling access through VPC networks. This feature is now generally available."
+        }
+      }
+    ],
     "2025-09-04": [
       {
         "kind": "Changed",

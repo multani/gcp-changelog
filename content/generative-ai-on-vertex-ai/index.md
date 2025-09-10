@@ -1,5 +1,16 @@
 # Generative AI on Vertex AI
 
+## 2025-09-09
+
+### Feature
+
+[EmbeddingGemma](https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/embeddinggemma) and [DeepSeek-V3.1](https://console.cloud.google.com/vertex-ai/publishers/deepseek-ai/model-garden/deepseek-v3-1) models are available through Model Garden.
+
+### Feature
+
+[AI Singapore's SEA-LION V4 models](https://console.cloud.google.com/vertex-ai/publishers/aisingapore/model-garden/gemma-sea-lion-v4) are available through Model Garden. They are open models for Southeast Asian languages, built by leveraging Vertex Model Development Service for enhanced training efficiency and model accuracy.
+
+---
 ## 2025-08-26
 
 ### Announcement

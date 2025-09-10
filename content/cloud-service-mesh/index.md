@@ -1,5 +1,69 @@
 # Cloud Service Mesh
 
+## 2025-09-09
+
+### Security
+
+The managed Cloud Service Mesh rollouts [previously announced](https://cloud.google.com/service-mesh/docs/release-notes#August_12_2025) address the following vulnerabilities. While the managed data plane automatically updates Envoy Proxies by restarting workloads, you must manually restart any StatefulSets and Jobs.
+
+**1.21.5-asm.55**
+
+| Name | Envoy Proxy | Envoy Proxy distroless | Control plane |
+| --- | --- | --- | --- |
+| [CVE-2025-32462](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-32462) | Yes | - | - |
+| [CVE-2025-4877](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-4877) | Yes | - | - |
+| [CVE-2025-3576](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-3576) | Yes | - | - |
+| [CVE-2025-4802](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-4802) | Yes | - | - |
+| [CVE-2025-4878](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-4878) | Yes | - | - |
+| [CVE-2025-5318](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-5318) | Yes | - | - |
+| [CVE-2025-6020](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-6020) | Yes | - | - |
+| [CVE-2025-46836](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-46836) | Yes | - | - |
+| [CVE-2025-4598](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-4598) | Yes | - | - |
+| [CVE-2024-56406](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2024-56406) | Yes | - | - |
+| [CVE-2025-30258](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-30258) | Yes | - | - |
+| [CVE-2025-5372](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-5372) | Yes | - | - |
+| [CVE-2025-1372](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-1372) | Yes | - | - |
+| [CVE-2025-1377](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-1377) | Yes | - | - |
+| [CVE-2023-4039](https://security-tracker.debian.org/tracker/CVE-2023-4039) | - | Yes | - |
+
+**1.20.8-asm.48**
+
+| Name | Envoy Proxy | Envoy Proxy distroless | Control plane |
+| --- | --- | --- | --- |
+| [CVE-2025-32462](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-32462) | Yes | - | - |
+| [CVE-2025-4877](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-4877) | Yes | - | - |
+| [CVE-2025-3576](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-3576) | Yes | - | - |
+| [CVE-2025-4802](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-4802) | Yes | - | - |
+| [CVE-2025-4878](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-4878) | Yes | - | - |
+| [CVE-2025-5318](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-5318) | Yes | - | - |
+| [CVE-2025-6020](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-6020) | Yes | - | - |
+| [CVE-2025-46836](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-46836) | Yes | - | - |
+| [CVE-2025-4598](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-4598) | Yes | - | - |
+| [CVE-2024-56406](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2024-56406) | Yes | - | - |
+| [CVE-2025-30258](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-30258) | Yes | - | - |
+| [CVE-2025-5372](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-5372) | Yes | - | - |
+| [CVE-2025-1372](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-1372) | Yes | - | - |
+| [CVE-2025-1377](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-1377) | Yes | - | - |
+
+**1.19.10-asm.48**
+
+| Name | Envoy Proxy | Envoy Proxy distroless | Control plane |
+| --- | --- | --- | --- |
+| [CVE-2025-32462](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-32462) | Yes | - | - |
+| [CVE-2025-22872](https://github.com/advisories/GHSA-vvgc-356p-c3xw) | Yes | Yes | Yes |
+| [CVE-2025-4877](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-4877) | Yes | - | - |
+| [CVE-2025-3576](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-3576) | Yes | - | - |
+| [CVE-2025-4802](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-4802) | Yes | - | - |
+| [CVE-2025-4878](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-4878) | Yes | - | - |
+| [CVE-2025-5318](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-5318) | Yes | - | - |
+| [CVE-2025-6020](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-6020) | Yes | - | - |
+| [CVE-2025-46836](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-46836) | Yes | - | - |
+| [CVE-2025-4598](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-4598) | Yes | - | - |
+| [CVE-2024-56406](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2024-56406) | Yes | - | - |
+| [CVE-2025-30258](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-30258) | Yes | - | - |
+| [CVE-2025-5372](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-5372) | Yes | - | - |
+
+---
 ## 2025-09-02
 
 ### Security

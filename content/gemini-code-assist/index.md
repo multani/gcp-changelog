@@ -2,19 +2,11 @@
 
 ## 2025-09-09
 
-### Feature
-
-
-
 ### Add terminal output to context in IntelliJ
 
 You can [attach terminal output to the chat context](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#prompt_with_selected_terminal_output_using_chat) with IntelliJ
 Gemini Code Assist. You can now ask Gemini Code Assist questions about terminal
 commands and output.
-
-### Feature
-
-
 
 ### Regenerate a prompt response in IntelliJ
 

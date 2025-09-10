@@ -30,6 +30,12 @@ Announcing the [Preview release](https://cloud.google.com/products#product-launc
 * R 4.4
 * Scala 2.13
 
+### Announcement
+
+New [Dataproc on Compute Engine subminor image versions](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):
+
+* 2.3.11-debian12, 2.3.11-ubuntu22, 2.3.11-ubuntu22-arm, 2.3.11-ml-ubuntu22, 2.3.11-rocky9
+
 ---
 ## 2025-09-02
 

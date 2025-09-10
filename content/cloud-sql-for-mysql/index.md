@@ -1,5 +1,28 @@
 # Cloud SQL for MySQL
 
+## 2025-09-08
+
+### Feature
+
+Cloud SQL read pools are now generally available and provide operational simplicity and scaling for your read workloads.
+
+Read pools provide a single endpoint in front of up to 20 read pool nodes and automatically load balance traffic.
+
+You can scale your read pool in several ways:
+
+* **Scale in or out**: scale load balancing capacity horizontally by modifying the number of read pool nodes in the read pool. Each read pool supports up to 20 read pool nodes.
+* **Scale up or down**: scale load balancing capacity vertically by modifying the machine type associated with a read pool node. Once defined, configuration is uniformly applied across each read pool node in the read pool.
+
+For more information, see
+[About read pools](https://cloud.google.com/sql/docs/mysql/about-read-pools).
+
+### Feature
+
+You can have Cloud SQL create a [Private Service Connect](https://cloud.google.com/sql/docs/mysql/about-private-service-connect#psc-endpoint) endpoint automatically. You can use this endpoint to access Cloud SQL instances through a VPC network. For more information, see [Create a Private Service Connect endpoint automatically](https://cloud.google.com/sql/docs/mysql/configure-private-service-connect#create-endpoint-automatically).
+
+This feature is now generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
+
+---
 ## 2025-09-04
 
 ### Changed

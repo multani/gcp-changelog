@@ -1,5 +1,14 @@
 # Cloud DNS
 
+## 2025-08-29
+
+### Feature
+
+Monitoring your internet-bound DNS queries for malicious activity using advanced threat detection from DNS Armor is now available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [Advanced threat detection overview](https://cloud.google.com/dns/docs/threat-detection).
+
+---
 ## 2025-08-26
 
 ### Feature

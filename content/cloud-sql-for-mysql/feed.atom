@@ -2,9 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for MySQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for MySQL</subtitle>
-  <updated>2025-09-04T00:00:00+00:00</updated>
+  <updated>2025-09-08T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-mysql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2025-09-08:feature:0</id>
+    <published>2025-09-08T00:00:00+00:00</published>
+    <updated>2025-09-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud SQL read pools are now generally available and provide operational simplicity and scaling for your read workloads.</p>
+<p>Read pools provide a single endpoint in front of up to 20 read pool nodes and automatically load balance traffic.</p>
+<p>You can scale your read pool in several ways:</p>
+<ul>
+<li><strong>Scale in or out</strong>: scale load balancing capacity horizontally by modifying the number of read pool nodes in the read pool. Each read pool supports up to 20 read pool nodes.</li>
+<li><strong>Scale up or down</strong>: scale load balancing capacity vertically by modifying the machine type associated with a read pool node. Once defined, configuration is uniformly applied across each read pool node in the read pool.</li>
+</ul>
+<p>For more information, see
+<a href="https://cloud.google.com/sql/docs/mysql/about-read-pools">About read pools</a>.</p>]]></content>
+    <summary>Cloud SQL read pools are now generally available, offering a simplified way to scale read workloads. They provide a single endpoint that load balances traffic across up to 20 nodes, which can be scaled horizontally or vertically.</summary>
+    <title>Feature: Cloud SQL read pools now available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2025-09-08:feature:1</id>
+    <published>2025-09-08T00:00:00+00:00</published>
+    <updated>2025-09-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can have Cloud SQL create a <a href="https://cloud.google.com/sql/docs/mysql/about-private-service-connect#psc-endpoint">Private Service Connect</a> endpoint automatically. You can use this endpoint to access Cloud SQL instances through a VPC network. For more information, see <a href="https://cloud.google.com/sql/docs/mysql/configure-private-service-connect#create-endpoint-automatically">Create a Private Service Connect endpoint automatically</a>.</p>
+<p>This feature is now generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).</p>]]></content>
+    <summary>A new feature allows for the automatic creation of Private Service Connect endpoints for Cloud SQL instances, enabling access through VPC networks. This feature is now generally available.</summary>
+    <title>Feature: Private Service Connect endpoint for Cloud SQL</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

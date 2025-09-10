@@ -1,5 +1,12 @@
 # Access Transparency
 
+## 2025-09-02
+
+### Feature
+
+Access Transparency supports Web Risk in the GA stage.
+
+---
 ## 2025-08-18
 
 ### Feature

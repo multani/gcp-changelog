@@ -1,5 +1,25 @@
 # Vertex AI
 
+## 2025-09-10
+
+### Feature
+
+**Vertex AI Agent Engine**
+
+Agent Engine now supports the following features:
+
+* Agent Engine **Code Execution**, now in Preview, lets your agent run code in an isolated sandbox environment. For more information, see [Code Execution](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/code-execution/overview).
+* You can now develop, deploy, and use agents that support the **Agent-to-Agent (A2A) protocol** on Agent Engine. For more information, see [Develop an Agent2Agent agent](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/develop/a2a).
+* Agent Engine now supports **bidirectional streaming**. For more information, see [Bidirectional streaming](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/bidirectional-streaming).
+* The [Agent Engine page](https://console.cloud.google.com/vertex-ai/agents/agent-engines) in the Cloud Console UI now has a new **Memory Bank** tab for displaying and managing memories.
+
+### Breaking
+
+**Vertex AI Agent Engine**
+
+In version `v1.112.0` of the Vertex AI SDK for Python, the `agent_engines` module has been refactored to a [client-based design](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/overview#migration). For information about updating your existing code to the new design, see the [Migration guide](https://cloud.google.com/vertex-ai/generative-ai/docs/deprecations/agent-engine-migration).
+
+---
 ## 2025-09-09
 
 ### Feature

@@ -1,5 +1,12 @@
 # Resource Manager
 
+## 2025-09-10
+
+### Feature
+
+**Designate project environments with tags**: You can now use tags to visually distinguish projects based on their environment—such as production, staging, or development—directly within the Google Cloud console. This new visual indicator helps prevent errors and improves awareness when you're working in sensitive environments. For information, see [Designate project environments with tags](https://cloud.google.com/resource-manager/docs/creating-managing-projects#designate_project_environments_with_tags).
+
+---
 ## 2025-09-09
 
 ### Feature

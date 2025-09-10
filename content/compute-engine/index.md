@@ -1,5 +1,12 @@
 # Compute Engine
 
+## 2025-09-10
+
+### Feature
+
+**Generally available**: The [accelerator-optimized A4X machine type](https://cloud.google.com/compute/docs/accelerator-optimized-machines#a4x-vms), the first GPU VM to run on Arm, is available on Compute Engine. The A4X machine series has the NVIDIA GB200 Grace Blackwell Superchips attached and runs on the NVIDIA GB200 NVL72 platform. Use this machine type to run your large artificial intelligence (AI) models, machine learning (ML), and high performance computing (HPC) workloads. The A4X machine type is currently available in the `us-central1-a` zone.
+
+---
 ## 2025-09-09
 
 ### Changed

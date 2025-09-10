@@ -1,5 +1,30 @@
 # Gemini Code Assist
 
+## 2025-09-10
+
+### Feature
+
+
+
+### Deploy apps to Cloud Run in Gemini Code Assist agent mode (Preview)
+
+Leverage the power of Gemini CLI extensions in VS Code Gemini Code Assist agent
+mode with the `/deploy` custom slash command. The `/deploy` command lets you deploy
+your existing web application to Cloud Run directly from agent mode. `/deploy`
+takes care of what used to be a multi-step process of building, containerizing,
+pushing, and configuring, and then returns a public URL for your live
+application.
+
+![Use the /deploy command to deploy to Cloud Run](https://cloud.google.com/gemini/images/release-notes-images/vscode-agent-mode-deploy.gif)
+
+To get started using the `/deploy` command, create a web application
+in your workspace, install the
+[Cloud Run MCP server](https://github.com/GoogleCloudPlatform/cloud-run-mcp),
+turn on agent mode, and then type `/deploy`. Your app is deployed in minutes and
+accessible through a public URL. For more information, see
+[Use commands](https://cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer#use-commands).
+
+---
 ## 2025-09-09
 
 ### Add terminal output to context in IntelliJ
@@ -91,6 +116,11 @@ collected. For more information, see
 ---
 ## 2025-08-15
 
+### Numerous IDE performance improvements
+
+Numerous improvements to VS Code Gemini Code Assist performance, including
+reductions in CPU usage, memory usage, and extension slowdown.
+
 ### Release channel name in VS Code chat banner
 
 VS Code Gemini Code Assist shows the configured **Release Channel** when you're
@@ -107,11 +137,6 @@ allowing you to remove a single prompt and response within a chat, while
 maintaining the rest of your chat history with Gemini Code Assist.
 
 ![Delete prompt and response pair in IntelliJ Gemini Code Assist.](https://cloud.google.com/gemini/images/intellij-delete-prompt-response-pair.png)
-
-### Numerous IDE performance improvements
-
-Numerous improvements to VS Code Gemini Code Assist performance, including
-reductions in CPU usage, memory usage, and extension slowdown.
 
 ---
 ## 2025-08-12

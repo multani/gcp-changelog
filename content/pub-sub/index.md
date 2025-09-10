@@ -1,5 +1,36 @@
 # Pub/Sub
 
+## 2025-09-08
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Go
+
+### Changes for [pubsub/apiv1](https://github.com/googleapis/google-cloud-go/tree/main/pubsub/apiv1)
+
+#### [2.0.1](https://github.com/googleapis/google-cloud-go/compare/pubsub/v2/v2.0.0...pubsub/v2/v2.0.1) (2025-09-03)
+
+##### Bug Fixes
+
+* **pubsub/v2:** Update flowcontrol metrics even when disabled ([#12590](https://github.com/googleapis/google-cloud-go/issues/12590)) ([c153495](https://github.com/googleapis/google-cloud-go/commit/c1534952c4a6c3a52dd9e3aab295d27d4107016c))
+
+##### Documentation
+
+* **pubsub/v2:** Move wiki to package doc ([#12605](https://github.com/googleapis/google-cloud-go/issues/12605)) ([3de795e](https://github.com/googleapis/google-cloud-go/commit/3de795ecaf1782df76d9ac49499988369601d334))
+
+#### [1.50.1](https://github.com/googleapis/google-cloud-go/compare/pubsub/v1.50.0...pubsub/v1.50.1) (2025-09-04)
+
+##### Bug Fixes
+
+* **pubsub/v2:** Update flowcontrol metrics even when disabled ([#12590](https://github.com/googleapis/google-cloud-go/issues/12590)) ([c153495](https://github.com/googleapis/google-cloud-go/commit/c1534952c4a6c3a52dd9e3aab295d27d4107016c))
+
+##### Documentation
+
+* **pubsub:** Update migration docs with seek ([#12642](https://github.com/googleapis/google-cloud-go/issues/12642)) ([40538c3](https://github.com/googleapis/google-cloud-go/commit/40538c3a8cbbd9a54deb6cdb204809d487aef21b))
+
+---
 ## 2025-08-25
 
 ### Libraries

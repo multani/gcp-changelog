@@ -1,5 +1,12 @@
 # Security Command Center
 
+## 2025-09-10
+
+### Feature
+
+[Cloud Run Threat Detection](https://cloud.google.com/security-command-center/docs/cloud-run-threat-detection-overview) is available in [General Availability](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-09-08
 
 ### Feature

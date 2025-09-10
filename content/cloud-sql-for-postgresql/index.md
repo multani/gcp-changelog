@@ -1,6 +1,38 @@
 # Cloud SQL for PostgreSQL
 
+## 2025-09-09
+
+### Feature
+
+The rollout of the following extension versions is complete:
+
+**Extensions and plugins**
+
+* `pg_ivm` is upgraded from 1.9 to 1.11.
+* `pg_background` is upgraded from 1.2 to 1.3.
+* `google_ml_integration` is upgraded from 1.4.2 to 1.4.3.
+
+To use these versions of the extensions, update your instance to [`PostgreSQL version].R20250727.00_14`.
+If you use a maintenance window, then the updates to the minor, extension, and plugin versions happen according to the timeframe that you set in the window. Otherwise, the updates occur within the next few weeks.
+
+For more information on checking your maintenance version, see [Self-service maintenance](https://cloud.google.com/sql/docs/postgres/self-service-maintenance). To find your maintenance window or to manage maintenance updates, see [Find and set maintenance windows](https://cloud.google.com/sql/docs/postgres/set-maintenance-window).
+
+---
 ## 2025-09-08
+
+### Feature
+
+Cloud SQL read pools are now generally available and provide operational simplicity and scaling for your read workloads.
+
+Read pools provide a single endpoint in front of up to 20 read pool nodes and automatically load balance traffic.
+
+You can scale your read pool in several ways:
+
+* **Scale in or out**: scale load balancing capacity horizontally by modifying the number of read pool nodes in the read pool. Each read pool supports up to 20 read pool nodes.
+* **Scale up or down**: scale load balancing capacity vertically by modifying the machine type associated with a read pool node. Once defined, configuration is uniformly applied across each read pool node in the read pool.
+
+For more information, see
+[About read pools](https://cloud.google.com/sql/docs/postgres/about-read-pools).
 
 ### Feature
 

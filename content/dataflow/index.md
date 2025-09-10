@@ -1,5 +1,12 @@
 # Dataflow
 
+## 2025-09-08
+
+### Feature
+
+Dataflow now supports using [secure tags](https://cloud.google.com/firewall/docs/tags-firewalls-overview) to set firewall rules on worker VMs. For more information, see [Use secure tags with Dataflow](https://cloud.google.com/dataflow/docs/guides/routes-firewall#secure_tags).
+
+---
 ## 2025-08-27
 
 ### Feature

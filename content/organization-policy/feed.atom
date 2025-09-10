@@ -2,9 +2,54 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Organization Policy</title>
   <subtitle>Changelog for Google Cloud product: Organization Policy</subtitle>
-  <updated>2025-08-28T00:00:00+00:00</updated>
+  <updated>2025-09-09T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:organization-policy</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/organization-policy/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:organization-policy:2025-09-09:feature:0</id>
+    <published>2025-09-09T00:00:00+00:00</published>
+    <updated>2025-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Preview:</strong> Eight new organization policy constraints are available to help you
+enforce security best practices for Compute Engine virtual machine (VM)
+instances.</p>
+<p>These <a href="https://cloud.google.com/resource-manager/docs/organization-policy/using-constraints#managed-constraints">managed constraints</a>
+simplify governance for common security scenarios and integrate with safe
+rollout tools like
+<a href="https://cloud.google.com/resource-manager/docs/organization-policy/dry-run-policy">dry-run</a>
+and
+<a href="https://cloud.google.com/policy-intelligence/docs/test-organization-policies">simulation</a>,
+letting you test their impact before enforcement.</p>
+<p>The new constraints are as follows:</p>
+<ul>
+<li><code>compute.managed.disableNestedVirtualization</code></li>
+<li><code>compute.managed.disableSerialPortAccess</code></li>
+<li><code>compute.managed.disableSerialPortLogging</code></li>
+<li><code>compute.managed.disallowGlobalDns</code></li>
+<li><code>compute.managed.requireOsConfig</code></li>
+<li><code>compute.managed.requireOsLogin</code></li>
+<li><code>compute.managed.vmCanIpForward</code></li>
+<li><code>compute.managed.vmExternalIpAccess</code></li>
+</ul>
+<p>These constraints can evaluate metadata values at the <a href="https://cloud.google.com/compute/docs/metadata/overview#metadata-directories">VM instance, project, or
+zonal level</a>. For more information about these managed constraints, see <a href="https://cloud.google.com/resource-manager/docs/organization-policy/org-policy-constraints#managed-constraints">Managed
+Constraints</a> in the Resource Manager documentation.</p>]]></content>
+    <summary>Preview: Eight new organization policy constraints are available to help you enforce security best practices for Compute Engine virtual machine (VM) instances. These managed constraints simplify governance for common security scenarios and integrate with safe rollout tools like dry-run and simulation, letting you test their impact before enforcement.</summary>
+    <title>Feature: New Organization Policy Constraints for Compute Engine</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:organization-policy:2025-09-08:feature:0</id>
+    <published>2025-09-08T00:00:00+00:00</published>
+    <updated>2025-09-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can use custom constraints with Organization Policy to provide more granular control over specific fields for some Cloud Deploy resources. For more information, see <a href="https://cloud.google.com/deploy/docs/custom-org-policy">Use custom organization policies</a>.</p>]]></content>
+    <summary>Organization Policy now supports custom constraints for finer control over Cloud Deploy resources.</summary>
+    <title>Feature: New Custom Constraints in Cloud Deploy</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,12 @@
 # Model Armor
 
+## 2025-09-08
+
+### Feature
+
+The Model Armor monitoring dashboard provides a centralized view to track interactions and violations within your projects. This feature is available in [Preview](https://cloud.google.com/products#product-launch-stages). For more information, see [View the monitoring dashboard](https://cloud.google.com/security-command-center/docs/model-armor-monitoring-dashboard).
+
+---
 ## 2025-08-04
 
 ### Changed

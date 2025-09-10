@@ -2,14 +2,53 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for PostgreSQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for PostgreSQL</subtitle>
-  <updated>2025-09-08T00:00:00+00:00</updated>
+  <updated>2025-09-09T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-postgresql/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2025-09-09:feature:0</id>
+    <published>2025-09-09T00:00:00+00:00</published>
+    <updated>2025-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The rollout of the following extension versions is complete:</p>
+<p><strong>Extensions and plugins</strong></p>
+<ul>
+<li><code>pg_ivm</code> is upgraded from 1.9 to 1.11.</li>
+<li><code>pg_background</code> is upgraded from 1.2 to 1.3.</li>
+<li><code>google_ml_integration</code> is upgraded from 1.4.2 to 1.4.3.</li>
+</ul>
+<p>To use these versions of the extensions, update your instance to [<code>PostgreSQL version].R20250727.00_14</code>.
+If you use a maintenance window, then the updates to the minor, extension, and plugin versions happen according to the timeframe that you set in the window. Otherwise, the updates occur within the next few weeks.</p>
+<p>For more information on checking your maintenance version, see <a href="https://cloud.google.com/sql/docs/postgres/self-service-maintenance">Self-service maintenance</a>. To find your maintenance window or to manage maintenance updates, see <a href="https://cloud.google.com/sql/docs/postgres/set-maintenance-window">Find and set maintenance windows</a>.</p>]]></content>
+    <summary>New versions of pg_ivm, pg_background, and google_ml_integration extensions are now available. Update your instance to PostgreSQL version R20250727.00_14 to use them.</summary>
+    <title>Feature: New Extension Versions Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
     <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2025-09-08:feature:0</id>
+    <published>2025-09-08T00:00:00+00:00</published>
+    <updated>2025-09-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud SQL read pools are now generally available and provide operational simplicity and scaling for your read workloads.</p>
+<p>Read pools provide a single endpoint in front of up to 20 read pool nodes and automatically load balance traffic.</p>
+<p>You can scale your read pool in several ways:</p>
+<ul>
+<li><strong>Scale in or out</strong>: scale load balancing capacity horizontally by modifying the number of read pool nodes in the read pool. Each read pool supports up to 20 read pool nodes.</li>
+<li><strong>Scale up or down</strong>: scale load balancing capacity vertically by modifying the machine type associated with a read pool node. Once defined, configuration is uniformly applied across each read pool node in the read pool.</li>
+</ul>
+<p>For more information, see
+<a href="https://cloud.google.com/sql/docs/postgres/about-read-pools">About read pools</a>.</p>]]></content>
+    <summary>Read pools for Cloud SQL are now generally available, offering a simplified way to scale read workloads with automatic load balancing across up to 20 nodes. You can scale capacity by adding or removing nodes or by adjusting the machine type for vertical scaling.</summary>
+    <title>Feature: Cloud SQL Read Pools Now Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2025-09-08:feature:1</id>
     <published>2025-09-08T00:00:00+00:00</published>
     <updated>2025-09-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>You can have Cloud SQL create a <a href="https://cloud.google.com/sql/docs/postgres/about-private-service-connect#psc-endpoint">Private Service Connect</a> endpoint automatically. You can use this endpoint to access Cloud SQL instances through a VPC network. For more information, see <a href="https://cloud.google.com/sql/docs/postgres/configure-private-service-connect#create-endpoint-automatically">Create a Private Service Connect endpoint automatically</a>.</p>

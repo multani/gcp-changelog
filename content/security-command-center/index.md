@@ -1,5 +1,21 @@
 # Security Command Center
 
+## 2025-09-08
+
+### Feature
+
+The Model Armor monitoring dashboard provides a centralized view to track interactions and violations within your projects. This feature is available in [Preview](https://cloud.google.com/products#product-launch-stages). For more information, see [View the monitoring dashboard](https://cloud.google.com/security-command-center/docs/model-armor-monitoring-dashboard).
+
+### Changed
+
+Multiple pages in Security Command Center Premium have been improved:
+
+* The [Risk overview](https://cloud.google.com/security-command-center/docs/assess-risk#threats) page is enhanced to provide a view of threats, vulnerabilities, and misconfigurations.
+* The [Findings page](https://cloud.google.com/security-command-center/docs/review-manage-findings#edit-finding-query) includes predefined filter views for vulnerabilities and identity findings.
+* Information previously on the Threats page is available in the [Threats dashboard](https://cloud.google.com/security-command-center/docs/assess-risk#threats) on the Risk overview page.
+* Information previously on the Vulnerabilities page is now available on the [Vulnerabilities dashboard](https://cloud.google.com/security-command-center/docs/assess-risk#vulnerabilities) on the Risk overview page.
+
+---
 ## 2025-09-02
 
 ### Feature

@@ -1,6 +1,26 @@
 {
   "name": "Resource Manager",
   "entries": {
+    "2025-09-09": [
+      {
+        "kind": "Feature",
+        "content": "**Preview:** Eight new organization policy constraints are available to help you\nenforce security best practices for Compute Engine virtual machine (VM)\ninstances.\n\nThese [managed constraints](https://cloud.google.com/resource-manager/docs/organization-policy/using-constraints#managed-constraints)\nsimplify governance for common security scenarios and integrate with safe\nrollout tools like\n[dry-run](https://cloud.google.com/resource-manager/docs/organization-policy/dry-run-policy)\nand\n[simulation](https://cloud.google.com/policy-intelligence/docs/test-organization-policies),\nletting you test their impact before enforcement.\n\nThe new constraints are as follows:\n\n* `compute.managed.disableNestedVirtualization`\n* `compute.managed.disableSerialPortAccess`\n* `compute.managed.disableSerialPortLogging`\n* `compute.managed.disallowGlobalDns`\n* `compute.managed.requireOsConfig`\n* `compute.managed.requireOsLogin`\n* `compute.managed.vmCanIpForward`\n* `compute.managed.vmExternalIpAccess`\n\nThese constraints can evaluate metadata values at the [VM instance, project, or\nzonal level](https://cloud.google.com/compute/docs/metadata/overview#metadata-directories). For more information about these managed constraints, see [Managed\nConstraints](https://cloud.google.com/resource-manager/docs/organization-policy/org-policy-constraints#managed-constraints) in the Resource Manager documentation.",
+        "summary": {
+          "title": "New Organization Policy Constraints for Compute Engine",
+          "summary": "Eight new organization policy constraints are now available to help enforce security best practices for Compute Engine virtual machine (VM) instances. These managed constraints simplify governance for common security scenarios and integrate with safe rollout tools, allowing you to test their impact before enforcement."
+        }
+      }
+    ],
+    "2025-09-08": [
+      {
+        "kind": "Feature",
+        "content": "You can use custom constraints with Organization Policy to provide more granular control over specific fields for some Cloud Deploy resources. For more information, see [Use custom organization policies](https://cloud.google.com/deploy/docs/custom-org-policy).",
+        "summary": {
+          "title": "Custom Constraints in Cloud Deploy",
+          "summary": "You can now use custom constraints with Organization Policy for more granular control over specific fields in Cloud Deploy resources."
+        }
+      }
+    ],
     "2025-08-28": [
       {
         "kind": "Fixed",

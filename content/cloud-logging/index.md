@@ -1,5 +1,22 @@
 # Cloud Logging
 
+## 2025-09-08
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Node.js
+
+### Changes for [@google-cloud/logging](https://github.com/googleapis/nodejs-logging)
+
+#### [11.2.1](https://github.com/googleapis/nodejs-logging/compare/v11.2.0...v11.2.1) (2025-09-03)
+
+##### Bug Fixes
+
+* **logging:** Specifying resourceNames should fetch logs only from those resources ([#1597](https://github.com/googleapis/nodejs-logging/issues/1597)) ([ff7899f](https://github.com/googleapis/nodejs-logging/commit/ff7899f5e91da6540d3f68476b2d9acd58ff0993))
+
+---
 ## 2025-08-25
 
 ### Libraries

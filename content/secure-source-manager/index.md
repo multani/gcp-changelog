@@ -1,5 +1,12 @@
 # Secure Source Manager
 
+## 2025-09-10
+
+### Announcement
+
+Secure Source Manager is [compliant with the Health Insurance Portability and Accountability Act](https://cloud.google.com/security/compliance/hipaa) (HIPAA), and is also [FedRAMP High compliant](https://cloud.google.com/security/compliance/fedramp).
+
+---
 ## 2025-08-21
 
 ### Feature

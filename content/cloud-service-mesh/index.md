@@ -1,5 +1,44 @@
 # Cloud Service Mesh
 
+## 2025-09-10
+
+### Announcement
+
+1.26.4-asm.1 in-cluster Cloud Service Mesh already includes the fixes for these CVEs.
+
+### Announcement
+
+**1.25.4-asm.0 is now available for in-cluster Cloud Service Mesh.**
+
+You can now download 1.25.4-asm.0 for in-cluster Cloud Service Mesh. It includes the features of [Istio 1.25.4](https://istio.io/latest/news/releases/1.25.x/announcing-1.25.4/) subject to the list of [supported features](https://cloud.google.com/service-mesh/v1.25/docs/supported-features-in-cluster). Cloud Service Mesh version 1.25.4-asm.0 uses envoy v1.33.8-dev.
+
+For details on upgrading Cloud Service Mesh, see [Upgrade Cloud Service Mesh](https://cloud.google.com/service-mesh/v1.25/docs/upgrade/upgrade).
+
+### Announcement
+
+**1.24.6-asm.12 is now available for in-cluster Cloud Service Mesh.**
+
+You can now download 1.24.6-asm.12 for in-cluster Cloud Service Mesh. It includes the features of [Istio 1.24.6](https://istio.io/latest/news/releases/1.24.x/announcing-1.24.6/) subject to the list of [supported features](https://cloud.google.com/service-mesh/v1.24/docs/supported-features-in-cluster). Cloud Service Mesh version 1.24.6-asm.12 uses envoy v1.33.8-dev.
+
+For details on upgrading Cloud Service Mesh, see [Upgrade Cloud Service Mesh](https://cloud.google.com/service-mesh/v1.24/docs/upgrade/upgrade).
+
+### Fixed
+
+These patches address the following CVEs:
+
+|  |  |  |  |  |
+| --- | --- | --- | --- | --- |
+| CVE | Proxy | Control Plane | CNI | Distroless |
+| [CVE-2025-32990](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2025-32990) | Yes | Yes | Yes | - |
+| [CVE-2025-32988](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2025-32988) | Yes | Yes | Yes | - |
+| [CVE-2025-40909](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2025-40909) | Yes | Yes | Yes | - |
+| [CVE-2025-32989](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2025-32989) | Yes | Yes | Yes | - |
+| [CVE-2025-47268](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2025-47268) | Yes | Yes | Yes | - |
+| [CVE-2025-5702](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2025-5702) | Yes | Yes | Yes | - |
+| [CVE-2025-6395](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2025-6395) | Yes | Yes | Yes | - |
+| [CVE-2025-48964](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2025-48964) | Yes | Yes | Yes | - |
+
+---
 ## 2025-09-09
 
 ### Security

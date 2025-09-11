@@ -1,5 +1,16 @@
 # Cloud Run
 
+## 2025-09-10
+
+### Feature
+
+You can deploy and configure a [multi-region service](https://cloud.google.com/run/docs/multiple-regions#deploy) from a single gcloud CLI command or by using a YAML or Terraform file (GA).
+
+### Feature
+
+[Cloud Run Threat Detection](https://cloud.google.com/run/docs/securing/cloud-run-threat-detection) is available in [General Availability](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-09-03
 
 ### Feature

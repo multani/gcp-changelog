@@ -1,5 +1,69 @@
 # Gemini Code Assist
 
+## 2025-09-11
+
+### Feature
+
+
+
+### Introducing Release Channels in Gemini Code Assist
+
+We're rolling out Release Channels in Gemini Code Assist Standard and Enterprise
+to give you more control over the features and models you access, helping us
+deliver new capabilities faster. This means direct access to our latest features,
+minimizing the need for sign-ups.
+
+You can choose between the Preview Channel for early access to cutting-edge
+features (no SLA) or the GA Channel for stable, fully supported features with a
+standard Google Cloud SLA. Project leads and administrators can easily configure
+these settings at the Google Cloud Platform project level within the Admin for
+Gemini settings, making it simple to opt in your entire team to the Preview
+channel if desired. Note that at launch, the two release channels have
+identical features. For more information, see
+[Configure Gemini Code Assist release channels](https://cloud.google.com/gemini/docs/codeassist/configure-release-channels).
+
+![Configure a Gemini Code Assist release channel in the Google Cloud console](https://cloud.google.com/gemini/images/release-notes-images/gemini-code-assist-release-channel-setting.png)
+
+### Fixed
+
+
+
+### Performance and stability improvements for VS Code
+
+Numerous performance and stability improvements have been made to the Gemini
+Code Assist extension, further reducing extension crashes and related adverse
+functional events.
+
+### Feature
+
+
+
+### Edit a prior prompt in VS Code
+
+You can [edit a prior prompt](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#edit_a_prior_prompt) in Gemini Code Assist and receive a regenerated
+response based on your edited prompt.
+
+### Feature
+
+
+
+### Regenerate a prompt response in VS Code
+
+You can [regenerate a prompt response](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#regenerate_a_prompt_response) to your most recent prompt, where
+Gemini Code Assist re-evaluates your prompt and provides a new response.
+
+### Feature
+
+
+
+### Delete prompt and response pair in VS Code
+
+You can [delete your prompt and Gemini's response to that prompt](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#delete_prompt_and_response_pairs) in your chat with
+Gemini Code Assist. This works as an alternative to deleting your entire chat
+history, allowing you to remove a single prompt and response within a chat,
+while maintaining the rest of your chat history with Gemini Code Assist.
+
+---
 ## 2025-09-10
 
 ### Deploy apps to Cloud Run in Gemini Code Assist agent mode (Preview)

@@ -1,5 +1,447 @@
 # Assured Workloads
 
+## 2025-09-05
+
+### Feature
+
+The [Data Boundary for Impact Level 4 (IL4)](https://cloud.google.com/assured-workloads/docs/control-packages#il4) supports the following products:
+
+* External passthrough Network Load Balancer
+* Identity-Aware Proxy (IAP)
+* Internal passthrough Network Load balancer
+* Regional external Application Load Balancer
+* Regional external proxy Network Load Balancer
+* Regional internal Application Load Balancer
+* Regional internal proxy Network Load Balancer
+* Speech-to-Text
+
+The [Data Boundary for Impact Level 5 (IL5)](https://cloud.google.com/assured-workloads/docs/control-packages#il5) now supports the following products:
+
+* External passthrough Network Load Balancer
+* Identity-Aware Proxy (IAP)
+* Internal passthrough Network Load balancer
+* Regional external Application Load Balancer
+* Regional external proxy Network Load Balancer
+* Regional internal Application Load Balancer
+* Regional internal proxy Network Load Balancer
+* Speech-to-Text
+
+See [Supported products by control package](https://cloud.google.com/assured-workloads/docs/supported-products) for more information.
+
+### Feature
+
+The [IRS 1075 control package](https://cloud.google.com/assured-workloads/docs/control-packages#irs-1075) supports the following products:
+
+* App Hub
+* Cloud Asset Inventory
+* Cloud Deploy
+* Database Center
+* Key Access Justifications
+* Model Armor
+* Network Connectivity Center
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+* Workforce Identity Federation
+
+---
+## 2025-08-15
+
+### Feature
+
+The [Australia Data Boundary](https://cloud.google.com/assured-workloads/docs/control-packages/australia-data-boundary) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Text-to-Speech
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+### Feature
+
+The [Australia Data Boundary and Support](https://cloud.google.com/assured-workloads/docs/control-packages/australia-data-boundary-support) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Text-to-Speech
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+### Feature
+
+The [Brazil Data Boundary](https://cloud.google.com/assured-workloads/docs/control-packages/brazil-data-boundary) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Text-to-Speech
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+### Feature
+
+The [Canada Data Boundary](https://cloud.google.com/assured-workloads/docs/control-packages/canada-data-boundary) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Text-to-Speech
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+### Feature
+
+The [Canada Data Boundary and Support](https://cloud.google.com/assured-workloads/docs/control-packages/canada-data-boundary-support) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Text-to-Speech
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+### Feature
+
+The [Chile Data Boundary](https://cloud.google.com/assured-workloads/docs/control-packages/chile-data-boundary) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Text-to-Speech
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+### Feature
+
+The [EU Data Boundary](https://cloud.google.com/assured-workloads/docs/control-packages/eu-data-boundary) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Google Agentspace
+* Model Armor
+* Text-to-Speech
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+### Feature
+
+The [EU Data Boundary and Support](https://cloud.google.com/assured-workloads/docs/control-packages/eu-data-boundary-support) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Google Agentspace
+* Model Armor
+* Text-to-Speech
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+### Feature
+
+The [Hong Kong Data Boundary](https://cloud.google.com/assured-workloads/docs/control-packages/hong-kong-data-boundary) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Text-to-Speech
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+### Feature
+
+The [India Data Boundary](https://cloud.google.com/assured-workloads/docs/control-packages/india-data-boundary) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Text-to-Speech
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+### Feature
+
+The [Indonesia Data Boundary](https://cloud.google.com/assured-workloads/docs/control-packages/indonesia-data-boundary) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Text-to-Speech
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+### Feature
+
+The [Israel Data Boundary](https://cloud.google.com/assured-workloads/docs/control-packages/israel-data-boundary) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Text-to-Speech
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+### Feature
+
+The [Israel Data Boundary and Support](https://cloud.google.com/assured-workloads/docs/control-packages/israel-data-boundary-support) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Text-to-Speech
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+### Feature
+
+The [Japan Data Boundary](https://cloud.google.com/assured-workloads/docs/control-packages/japan-data-boundary) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Text-to-Speech
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+### Feature
+
+The [Qatar Data Boundary](https://cloud.google.com/assured-workloads/docs/control-packages/qatar-data-boundary) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Text-to-Speech
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+### Feature
+
+The [Singapore Data Boundary](https://cloud.google.com/assured-workloads/docs/control-packages/singapore-data-boundary) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Text-to-Speech
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+### Feature
+
+The [South Africa Data Boundary](https://cloud.google.com/assured-workloads/docs/control-packages/south-africa-data-boundary) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Text-to-Speech
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+### Feature
+
+The [South Korea Data Boundary](https://cloud.google.com/assured-workloads/docs/control-packages/south-korea-data-boundary) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Text-to-Speech
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+### Feature
+
+The [Switzerland Data Boundary](https://cloud.google.com/assured-workloads/docs/control-packages/switzerland-data-boundary) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Text-to-Speech
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+### Feature
+
+The [Taiwan Data Boundary](https://cloud.google.com/assured-workloads/docs/control-packages/taiwan-data-boundary) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Text-to-Speech
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+### Feature
+
+The [UK Data Boundary](https://cloud.google.com/assured-workloads/docs/control-packages/uk-data-boundary) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Text-to-Speech
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+### Feature
+
+The [US Data Boundary](https://cloud.google.com/assured-workloads/docs/control-packages/us-data-boundary) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Google Agentspace
+* Model Armor
+* Text-to-Speech
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+### Feature
+
+The [US Data Boundary and Support](https://cloud.google.com/assured-workloads/docs/control-packages/us-data-boundary-support) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Google Agentspace
+* Model Armor
+* Text-to-Speech
+* Vertex AI Batch prediction
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+### Feature
+
+The [Data Boundary for Canada Protected B](https://cloud.google.com/assured-workloads/docs/control-packages/canada-protected-b) control package supports the following products:
+
+* Binary Authorization
+* Cloud Asset Inventory
+* Database Center
+* Text-to-Speech
+* Vertex AI Model Monitoring
+* Vertex AI Model Registry
+* Vertex AI Pipelines
+* Vertex AI Training
+* Web Risk
+
+---
 ## 2025-07-17
 
 ### Feature

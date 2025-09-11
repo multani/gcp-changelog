@@ -1,5 +1,31 @@
 # Database Center
 
+## 2025-09-02
+
+### Feature
+
+You can create alerting policies for new database resources and signals, using
+filters to restrict the monitored metric data. This feature lets you get
+detailed insights into the health of your database fleet and troubleshoot
+issues. You can filter data based on metric labels, such as signal type, or by
+resource labels, such as the resource's location or name. For more information,
+see
+[Metrics and alerting policy filters](https://cloud.google.com/database-center/docs/metrics).
+
+### Feature
+
+The following performance recommendations and insights are available in
+Database Center:
+
+* Replication lag for Bigtable.
+* Outdated client for Bigtable.
+* Connections burdening disk for Cloud SQL for SQL Server.
+* Location org policy not satisfied for Spanner.
+
+For more information, see
+[Supported health issues](https://cloud.google.com/database-center/docs/database-health-issues#health-issue-categories).
+
+---
 ## 2025-08-05
 
 ### Feature

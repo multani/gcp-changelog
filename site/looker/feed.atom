@@ -2,9 +2,397 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Looker</title>
   <subtitle>Changelog for Google Cloud product: Looker</subtitle>
-  <updated>2025-08-13T00:00:00+00:00</updated>
+  <updated>2025-09-10T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:looker</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/looker/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:announcement:0</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Looker 25.16</strong> is expected to include the following changes, features, and fixes:</p>
+<ul>
+<li>Expected Looker (original) deployment start: <strong>Monday, September 15, 2025</strong></li>
+<li>Expected Looker (original) final deployment and download available: <strong>Thursday, September 25, 2025</strong></li>
+<li>Expected Looker (Google Cloud core) deployment start: <strong>Monday, September 15, 2025</strong></li>
+<li>Expected Looker (Google Cloud core) final deployment: <strong>Monday, September 29, 2025</strong></li>
+</ul>]]></content>
+    <summary>The Looker 25.16 release is scheduled for September 2025, with deployments for both Looker (original) and Looker (Google Cloud core) beginning on September 15th. Final deployments and downloads will be available through September 29th.</summary>
+    <title>Announcement: Looker 25.16 Release</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:breaking:1</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Looker no longer supports connections to Firebolt.</p>]]></content>
+    <summary>Looker has ended support for Firebolt connections.</summary>
+    <title>Breaking: Looker and Firebolt</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:feature:2</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Suggest queries now respect the concurrency limit in the connection configuration.</p>]]></content>
+    <summary>Suggest queries now respect the concurrency limit in the connection configuration.</summary>
+    <title>Feature: Suggest queries now respect the concurrency limit</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:feature:3</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Spanner JDBC Driver has been updated to version 2.32.1. This driver is used for connections to <a href="https://cloud.google.com/looker/docs/db-config-cloud-spanner">Google Spanner</a>.</p>]]></content>
+    <summary>The Spanner JDBC Driver has been updated to version 2.32.1.</summary>
+    <title>Feature: Spanner JDBC Driver Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:feature:4</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://cloud.google.com/looker/docs/excel-connector">Looker-Excel Connector</a> is now generally available. When your Looker admin enables the Looker-Excel Connector on the BI Connections admin page, Looker Explores display the Open in Excel option in the Explore gear menu. This option downloads the Explore results to a Windows PC in a format that Microsoft Excel recognizes.</p>]]></content>
+    <summary>The Looker-Excel Connector is now generally available. Admins can enable this feature in Looker to allow users to download Explore results directly to Microsoft Excel.</summary>
+    <title>Feature: Looker-Excel Connector Now Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:5</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Looker 25.16 contains the following accessibility improvements:</p>
+<ul>
+<li>Improved keyboard navigation for embed folders.</li>
+<li>Added ARIA labels to filter drop-down menu items.</li>
+<li>Added ARIA labels to schedule options.</li>
+<li>Added focus rings to navigation links.</li>
+<li>Improved VoiceOver support for filter navigation.</li>
+<li>Added the ability for users to close modals by using the Esc key. Users will be prevented from closing modals this way if there are unsaved changes in the modal.</li>
+</ul>]]></content>
+    <summary>Looker 25.16 includes several accessibility enhancements, such as improved keyboard navigation, ARIA labels for filters and schedules, better VoiceOver support, and the ability to close modals with the Esc key.</summary>
+    <title>Fixed: Accessibility Improvements in Looker 25.16</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:6</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>When you upload a p12 file to a database connection, Looker now checks that it is a valid file before completing the upload.</p>]]></content>
+    <summary>Looker now validates p12 files during database connection uploads to ensure they are valid before completing the process.</summary>
+    <title>Fixed: P12 validation improved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:7</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where adding multiple filters to the same field could cause filter conditions to overwrite each other. This feature now performs as expected.</p>]]></content>
+    <summary>Multiple filters on the same field no longer overwrite each other.</summary>
+    <title>Fixed: Fixed filter bug</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:8</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where changing the size of a visualization could cause the visualization to flicker. This feature now performs as expected.</p>]]></content>
+    <summary>The visualization flickering issue that occurred when resizing has been resolved. The feature now functions correctly.</summary>
+    <title>Fixed: Visualization flickering issue fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:9</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where users could enter color codes that were longer than six characters when they were updating custom color collections. This feature now performs as expected.</p>]]></content>
+    <summary>Users can no longer enter color codes longer than six characters when updating custom color collections. This resolves a previous issue and ensures the feature functions correctly.</summary>
+    <title>Fixed: Fixed color code length issue</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:10</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where Explore drill links would not open correctly if cookieless embed was enabled. This feature now performs as expected.</p>]]></content>
+    <summary>Explore drill links now open correctly with cookieless embed enabled.</summary>
+    <title>Fixed: Explore drill links fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:11</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where generating a view inside a folder could fail if the folder's name contained special characters. This feature now performs as expected.</p>]]></content>
+    <summary>Generating a view inside a folder with special characters in its name will now work as expected.</summary>
+    <title>Fixed: View generation with special characters fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:12</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where generating an embed URL from a LookML dashboard could fail with the following error: <code>'models' param cannot be converted to an array of String</code>. This feature now performs as expected.</p>]]></content>
+    <summary>The issue where generating an embed URL from a LookML dashboard could fail with an error has been resolved. The feature now works correctly.</summary>
+    <title>Fixed: Embed URL generation fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:13</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where loading JavaScript files for custom visualizations could take more than one second. This feature now performs as expected.</p>]]></content>
+    <summary>The loading time for JavaScript files used in custom visualizations has been improved and now performs as expected.</summary>
+    <title>Fixed: JavaScript loading time improved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:14</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where non-admin users were unable to select a project when they added a connection. This feature now performs as expected.</p>]]></content>
+    <summary>Non-admin users can now select projects when adding connections. This issue is resolved and the feature functions correctly.</summary>
+    <title>Fixed: Project Selection Issue Fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:15</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where scheduled deliveries could fail with the following error message: <code>Async delivery failed due to errors Internal server error. [Google Cloud Storage] undefined</code>. This feature now performs as expected.</p>]]></content>
+    <summary>The issue causing scheduled deliveries to fail with a Google Cloud Storage error has been resolved. Deliveries will now proceed as expected.</summary>
+    <title>Fixed: Scheduled deliveries issue fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:16</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where subtotal rows could fail to appear in downloaded result sets. This feature now performs as expected.</p>]]></content>
+    <summary>An issue where subtotal rows failed to appear in downloaded result sets has been resolved. The feature now functions correctly.</summary>
+    <title>Fixed: Subtotal Rows Issue Fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:17</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the OAuth client secret could not be updated in the Connections page. This feature now performs as expected.</p>]]></content>
+    <summary>The issue preventing updates to the OAuth client secret on the Connections page has been resolved. This functionality now operates correctly.</summary>
+    <title>Fixed: OAuth Client Secret Update Fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:18</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where total references and row total references in table calculations could return the following error if there was no data: <code>Field either does not exist in the current query or is a measure.</code> This feature now performs as expected.</p>]]></content>
+    <summary>An issue causing errors in table calculations with no data has been resolved. Total references and row total references now function correctly.</summary>
+    <title>Fixed: Fixed: Table Calculation Error</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:19</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where updating a Spanner connection could fail to save changes. This feature now performs as expected.</p>]]></content>
+    <summary>An issue where updating a Spanner connection could fail to save changes has been resolved. The feature now performs as expected.</summary>
+    <title>Fixed: Spanner connection update issue fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:20</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where users with only the <code>embed_browse_spaces</code> permission could be incorrectly classified as Standard users instead of Viewer users. This feature now performs as expected.</p>]]></content>
+    <summary>Users with embed_browse_spaces permission are now correctly classified as Viewer users.</summary>
+    <title>Fixed: Permissions issue fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:21</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where using the <code>matches_filter</code> function in custom filters could return an error. This feature now performs as expected.</p>]]></content>
+    <summary>The matches_filter function in custom filters previously returned an error, but this has now been resolved and the feature functions as expected.</summary>
+    <title>Fixed: matches_filter function fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:22</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where visualizations could render twice when they were first loaded on an Explore or a dashboard. This feature now performs as expected.</p>]]></content>
+    <summary>An issue where visualizations rendered twice on initial load has been fixed. The feature now functions as expected.</summary>
+    <title>Fixed: Visualizations rendering correctly</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:23</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Athena JDBC driver version has been downgraded from 2.2.1 to 2.1.5 to fix an issue with result set streaming. This feature now performs as expected. The Athena JDBC driver is used for connections to <a href="https://cloud.google.com/looker/docs/db-config-amazon-athena">Amazon Athena</a>.</p>]]></content>
+    <summary>The Athena JDBC driver has been downgraded to version 2.1.5, resolving a result set streaming issue. The feature now works correctly.</summary>
+    <title>Fixed: Athena JDBC driver issue fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:24</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Dashboards that are not configured to run on load no longer show past query results when you revisit the dashboard in the same browser session. You must click the Load button to run the queries again.</p>]]></content>
+    <summary>Dashboards not set to run on load will not display old results when revisited. Users must click 'Load' to refresh queries.</summary>
+    <title>Fixed: Dashboards no longer show stale data</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:25</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the Collapse subtotal toggle on table visualizations was unresponsive. This feature now performs as expected.</p>]]></content>
+    <summary>The collapse subtotal toggle on table visualizations was unresponsive and has now been fixed. The feature is working as expected.</summary>
+    <title>Fixed: Collapse Subtotal Toggle Fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:26</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where updating a customer-hosted instance could fail with the following error message: <code>Data import is in progress and some features will not be available</code>. This feature now performs as expected.</p>]]></content>
+    <summary>The issue where updating a customer-hosted instance failed with the 'Data import is in progress' error has been resolved. The feature now functions correctly.</summary>
+    <title>Fixed: Update issue fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:27</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where SQL Runner could fail to return new results after running a second query. This feature now performs as expected.</p>]]></content>
+    <summary>The SQL Runner now correctly displays new results after executing a second query, resolving a previous issue.</summary>
+    <title>Fixed: SQL Runner performance improved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:feature:28</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A new Labs feature, Favoriting LookML Dashboards, enables LookML dashboards to be <a href="https://cloud.google.com/looker/docs/finding-content#navigating_to_content_in_folders">marked as favorites</a> causing the LookML dashboards to appear on the Looker Favorites tab.</p>]]></content>
+    <summary>You can now favorite LookML dashboards so they appear on the Looker Favorites tab.</summary>
+    <title>Feature: Favoriting LookML Dashboards</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:feature:29</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Full Screen Visualizations Labs feature is now generally available. You can turn it on and off on the Admin - General page.</p>]]></content>
+    <summary>The Full Screen Visualizations Labs feature has been released and is now generally available. You can enable or disable this feature through the Admin - General settings page.</summary>
+    <title>Feature: Full Screen Visualizations Now Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:30</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where updating the Host URL in the Admin - Settings page could fail to be saved. This feature now performs as expected.</p>]]></content>
+    <summary>The issue where updating the Host URL in the Admin - Settings page failed to save has been resolved. This feature now works correctly.</summary>
+    <title>Fixed: Host URL update issue fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:fixed:31</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where visualization templates could be edited by API users without the need for the <code>explore</code> permission.</p>]]></content>
+    <summary>Users with API access could edit visualization templates without the required explore permission. This has now been fixed.</summary>
+    <title>Fixed: Visualization templates editable without explore permission</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:feature:32</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Looker (Google Cloud core) 90-day trial instances are now available.</p>]]></content>
+    <summary>Looker instances with a 90-day trial are now available.</summary>
+    <title>Feature: Looker 90-day trial instances</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-09-10:feature:33</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Full Screen Visualizations feature is now generally available. You can turn it on and off on the Admin - General page.</p>]]></content>
+    <summary>The new Full Screen Visualizations feature is now generally available. You can enable or disable this feature on the Admin - General page.</summary>
+    <title>Feature: Full Screen Visualizations Now Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -62,8 +450,8 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-08-13:feature:4</id>
     <published>2025-08-13T00:00:00+00:00</published>
     <updated>2025-08-13T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The Maria JDBC Driver has been updated to version 3.5.3.</p>]]></content>
-    <summary>Maria JDBC Driver updated to 3.5.3</summary>
+    <content type="html"><![CDATA[<p>The Maria JDBC Driver has been updated to version 3.5.3. This driver is used for connections to <a href="https://cloud.google.com/looker/docs/db-config-mysql-mariadb-singlestore">MySQL, MySQL 8.0.12+, MariaDB, SingleStore, SingleStore 7+</a>, <a href="https://cloud.google.com/looker/docs/db-config-amazon-aurora-mysql">Amazon Aurora MySQL</a>, <a href="https://cloud.google.com/looker/docs/db-config-google-cloud-sql">Google Cloud SQL</a>, and HyperSQL. <strong>NOTE:</strong> This item was updated on September 10, 2025.</p>]]></content>
+    <summary>The Maria JDBC Driver has been updated to version 3.5.3, supporting various database connections.</summary>
     <title>Feature: Maria JDBC Driver Update</title>
   </entry>
   <entry>
@@ -73,8 +461,8 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-08-13:feature:5</id>
     <published>2025-08-13T00:00:00+00:00</published>
     <updated>2025-08-13T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The Athena driver has been updated to version 2.2.1. <strong>Note</strong>: This change was made in Looker 25.10. This item was updated on August 18, 2025.</p>]]></content>
-    <summary>The Athena driver is now at version 2.2.1.</summary>
+    <content type="html"><![CDATA[<p>The Athena driver has been updated to version 2.2.1. This driver is used for connections to <a href="https://cloud.google.com/looker/docs/db-config-amazon-athena">Amazon Athena</a>. <strong>Note</strong>: This change was made in Looker 25.10. This item was updated on August 18, 2025. <strong>NOTE:</strong> This item was updated on September 10, 2025.</p>]]></content>
+    <summary>The Athena driver has been updated to version 2.2.1. This change was made in Looker 25.10.</summary>
     <title>Feature: Athena driver updated</title>
   </entry>
   <entry>
@@ -84,9 +472,10 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-08-13:feature:6</id>
     <published>2025-08-13T00:00:00+00:00</published>
     <updated>2025-08-13T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The Databricks JDBC driver has been upgraded to version 2.7.3. <strong>Note</strong>: This change was made in Looker 25.10. This item was updated on August 18, 2025.</p>]]></content>
-    <summary>The Databricks JDBC driver has been upgraded to version 2.7.3.</summary>
-    <title>Feature: Databricks JDBC driver updated</title>
+    <content type="html"><![CDATA[<p>The Databricks JDBC driver has been upgraded to version 2.7.3. This driver is used for connections to <a href="https://cloud.google.com/looker/docs/db-config-databricks">Databricks</a>.
+<strong>Note</strong>: This change was made in Looker 25.10. This item was updated on August 18, 2025 and September 10, 2025.</p>]]></content>
+    <summary>The Databricks JDBC driver has been updated to version 2.7.3. This update is relevant for users connecting to Databricks. The change was implemented in Looker version 25.10.</summary>
+    <title>Feature: Databricks JDBC Driver Update</title>
   </entry>
   <entry>
     <author>

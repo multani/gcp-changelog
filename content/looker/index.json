@@ -1,6 +1,280 @@
 {
   "name": "Looker",
   "entries": {
+    "2025-09-10": [
+      {
+        "kind": "Announcement",
+        "content": "**Looker 25.16** is expected to include the following changes, features, and fixes:\n\n* Expected Looker (original) deployment start: **Monday, September 15, 2025**\n* Expected Looker (original) final deployment and download available: **Thursday, September 25, 2025**\n* Expected Looker (Google Cloud core) deployment start: **Monday, September 15, 2025**\n* Expected Looker (Google Cloud core) final deployment: **Monday, September 29, 2025**",
+        "summary": {
+          "title": "Looker 25.16 Release",
+          "summary": "The Looker 25.16 release is scheduled for September 2025, with deployments for both Looker (original) and Looker (Google Cloud core) beginning on September 15th. Final deployments and downloads will be available through September 29th."
+        }
+      },
+      {
+        "kind": "Breaking",
+        "content": "Looker no longer supports connections to Firebolt.",
+        "summary": {
+          "title": "Looker and Firebolt",
+          "summary": "Looker has ended support for Firebolt connections."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Suggest queries now respect the concurrency limit in the connection configuration.",
+        "summary": {
+          "title": "Suggest queries now respect the concurrency limit",
+          "summary": "Suggest queries now respect the concurrency limit in the connection configuration."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The Spanner JDBC Driver has been updated to version 2.32.1. This driver is used for connections to [Google Spanner](https://cloud.google.com/looker/docs/db-config-cloud-spanner).",
+        "summary": {
+          "title": "Spanner JDBC Driver Update",
+          "summary": "The Spanner JDBC Driver has been updated to version 2.32.1."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [Looker-Excel Connector](https://cloud.google.com/looker/docs/excel-connector) is now generally available. When your Looker admin enables the Looker-Excel Connector on the BI Connections admin page, Looker Explores display the Open in Excel option in the Explore gear menu. This option downloads the Explore results to a Windows PC in a format that Microsoft Excel recognizes.",
+        "summary": {
+          "title": "Looker-Excel Connector Now Available",
+          "summary": "The Looker-Excel Connector is now generally available. Admins can enable this feature in Looker to allow users to download Explore results directly to Microsoft Excel."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Looker 25.16 contains the following accessibility improvements:\n\n* Improved keyboard navigation for embed folders.\n* Added ARIA labels to filter drop-down menu items.\n* Added ARIA labels to schedule options.\n* Added focus rings to navigation links.\n* Improved VoiceOver support for filter navigation.\n* Added the ability for users to close modals by using the Esc key. Users will be prevented from closing modals this way if there are unsaved changes in the modal.",
+        "summary": {
+          "title": "Accessibility Improvements in Looker 25.16",
+          "summary": "Looker 25.16 includes several accessibility enhancements, such as improved keyboard navigation, ARIA labels for filters and schedules, better VoiceOver support, and the ability to close modals with the Esc key."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "When you upload a p12 file to a database connection, Looker now checks that it is a valid file before completing the upload.",
+        "summary": {
+          "title": "P12 validation improved",
+          "summary": "Looker now validates p12 files during database connection uploads to ensure they are valid before completing the process."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where adding multiple filters to the same field could cause filter conditions to overwrite each other. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed filter bug",
+          "summary": "Multiple filters on the same field no longer overwrite each other."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where changing the size of a visualization could cause the visualization to flicker. This feature now performs as expected.",
+        "summary": {
+          "title": "Visualization flickering issue fixed",
+          "summary": "The visualization flickering issue that occurred when resizing has been resolved. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where users could enter color codes that were longer than six characters when they were updating custom color collections. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed color code length issue",
+          "summary": "Users can no longer enter color codes longer than six characters when updating custom color collections. This resolves a previous issue and ensures the feature functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where Explore drill links would not open correctly if cookieless embed was enabled. This feature now performs as expected.",
+        "summary": {
+          "title": "Explore drill links fixed",
+          "summary": "Explore drill links now open correctly with cookieless embed enabled."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where generating a view inside a folder could fail if the folder's name contained special characters. This feature now performs as expected.",
+        "summary": {
+          "title": "View generation with special characters fixed",
+          "summary": "Generating a view inside a folder with special characters in its name will now work as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where generating an embed URL from a LookML dashboard could fail with the following error: `'models' param cannot be converted to an array of String`. This feature now performs as expected.",
+        "summary": {
+          "title": "Embed URL generation fixed",
+          "summary": "The issue where generating an embed URL from a LookML dashboard could fail with an error has been resolved. The feature now works correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where loading JavaScript files for custom visualizations could take more than one second. This feature now performs as expected.",
+        "summary": {
+          "title": "JavaScript loading time improved",
+          "summary": "The loading time for JavaScript files used in custom visualizations has been improved and now performs as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where non-admin users were unable to select a project when they added a connection. This feature now performs as expected.",
+        "summary": {
+          "title": "Project Selection Issue Fixed",
+          "summary": "Non-admin users can now select projects when adding connections. This issue is resolved and the feature functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where scheduled deliveries could fail with the following error message: `Async delivery failed due to errors Internal server error. [Google Cloud Storage] undefined`. This feature now performs as expected.",
+        "summary": {
+          "title": "Scheduled deliveries issue fixed",
+          "summary": "The issue causing scheduled deliveries to fail with a Google Cloud Storage error has been resolved. Deliveries will now proceed as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where subtotal rows could fail to appear in downloaded result sets. This feature now performs as expected.",
+        "summary": {
+          "title": "Subtotal Rows Issue Fixed",
+          "summary": "An issue where subtotal rows failed to appear in downloaded result sets has been resolved. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the OAuth client secret could not be updated in the Connections page. This feature now performs as expected.",
+        "summary": {
+          "title": "OAuth Client Secret Update Fixed",
+          "summary": "The issue preventing updates to the OAuth client secret on the Connections page has been resolved. This functionality now operates correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where total references and row total references in table calculations could return the following error if there was no data: `Field either does not exist in the current query or is a measure.` This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed: Table Calculation Error",
+          "summary": "An issue causing errors in table calculations with no data has been resolved. Total references and row total references now function correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where updating a Spanner connection could fail to save changes. This feature now performs as expected.",
+        "summary": {
+          "title": "Spanner connection update issue fixed",
+          "summary": "An issue where updating a Spanner connection could fail to save changes has been resolved. The feature now performs as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where users with only the `embed_browse_spaces` permission could be incorrectly classified as Standard users instead of Viewer users. This feature now performs as expected.",
+        "summary": {
+          "title": "Permissions issue fixed",
+          "summary": "Users with embed_browse_spaces permission are now correctly classified as Viewer users."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where using the `matches_filter` function in custom filters could return an error. This feature now performs as expected.",
+        "summary": {
+          "title": "matches_filter function fixed",
+          "summary": "The matches_filter function in custom filters previously returned an error, but this has now been resolved and the feature functions as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where visualizations could render twice when they were first loaded on an Explore or a dashboard. This feature now performs as expected.",
+        "summary": {
+          "title": "Visualizations rendering correctly",
+          "summary": "An issue where visualizations rendered twice on initial load has been fixed. The feature now functions as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The Athena JDBC driver version has been downgraded from 2.2.1 to 2.1.5 to fix an issue with result set streaming. This feature now performs as expected. The Athena JDBC driver is used for connections to [Amazon Athena](https://cloud.google.com/looker/docs/db-config-amazon-athena).",
+        "summary": {
+          "title": "Athena JDBC driver issue fixed",
+          "summary": "The Athena JDBC driver has been downgraded to version 2.1.5, resolving a result set streaming issue. The feature now works correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Dashboards that are not configured to run on load no longer show past query results when you revisit the dashboard in the same browser session. You must click the Load button to run the queries again.",
+        "summary": {
+          "title": "Dashboards no longer show stale data",
+          "summary": "Dashboards not set to run on load will not display old results when revisited. Users must click 'Load' to refresh queries."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the Collapse subtotal toggle on table visualizations was unresponsive. This feature now performs as expected.",
+        "summary": {
+          "title": "Collapse Subtotal Toggle Fixed",
+          "summary": "The collapse subtotal toggle on table visualizations was unresponsive and has now been fixed. The feature is working as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where updating a customer-hosted instance could fail with the following error message: `Data import is in progress and some features will not be available`. This feature now performs as expected.",
+        "summary": {
+          "title": "Update issue fixed",
+          "summary": "The issue where updating a customer-hosted instance failed with the 'Data import is in progress' error has been resolved. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where SQL Runner could fail to return new results after running a second query. This feature now performs as expected.",
+        "summary": {
+          "title": "SQL Runner performance improved",
+          "summary": "The SQL Runner now correctly displays new results after executing a second query, resolving a previous issue."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "A new Labs feature, Favoriting LookML Dashboards, enables LookML dashboards to be [marked as favorites](https://cloud.google.com/looker/docs/finding-content#navigating_to_content_in_folders) causing the LookML dashboards to appear on the Looker Favorites tab.",
+        "summary": {
+          "title": "Favoriting LookML Dashboards",
+          "summary": "You can now favorite LookML dashboards so they appear on the Looker Favorites tab."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The Full Screen Visualizations Labs feature is now generally available. You can turn it on and off on the Admin - General page.",
+        "summary": {
+          "title": "Full Screen Visualizations Now Available",
+          "summary": "The Full Screen Visualizations Labs feature has been released and is now generally available. You can enable or disable this feature through the Admin - General settings page."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where updating the Host URL in the Admin - Settings page could fail to be saved. This feature now performs as expected.",
+        "summary": {
+          "title": "Host URL update issue fixed",
+          "summary": "The issue where updating the Host URL in the Admin - Settings page failed to save has been resolved. This feature now works correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where visualization templates could be edited by API users without the need for the `explore` permission.",
+        "summary": {
+          "title": "Visualization templates editable without explore permission",
+          "summary": "Users with API access could edit visualization templates without the required explore permission. This has now been fixed."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Looker (Google Cloud core) 90-day trial instances are now available.",
+        "summary": {
+          "title": "Looker 90-day trial instances",
+          "summary": "Looker instances with a 90-day trial are now available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The Full Screen Visualizations feature is now generally available. You can turn it on and off on the Admin - General page.",
+        "summary": {
+          "title": "Full Screen Visualizations Now Available",
+          "summary": "The new Full Screen Visualizations feature is now generally available. You can enable or disable this feature on the Admin - General page."
+        }
+      }
+    ],
     "2025-08-13": [
       {
         "kind": "Announcement",
@@ -36,26 +310,26 @@
       },
       {
         "kind": "Feature",
-        "content": "The Maria JDBC Driver has been updated to version 3.5.3.",
+        "content": "The Maria JDBC Driver has been updated to version 3.5.3. This driver is used for connections to [MySQL, MySQL 8.0.12+, MariaDB, SingleStore, SingleStore 7+](https://cloud.google.com/looker/docs/db-config-mysql-mariadb-singlestore), [Amazon Aurora MySQL](https://cloud.google.com/looker/docs/db-config-amazon-aurora-mysql), [Google Cloud SQL](https://cloud.google.com/looker/docs/db-config-google-cloud-sql), and HyperSQL. **NOTE:** This item was updated on September 10, 2025.",
         "summary": {
           "title": "Maria JDBC Driver Update",
-          "summary": "Maria JDBC Driver updated to 3.5.3"
+          "summary": "The Maria JDBC Driver has been updated to version 3.5.3, supporting various database connections."
         }
       },
       {
         "kind": "Feature",
-        "content": "The Athena driver has been updated to version 2.2.1. **Note**: This change was made in Looker 25.10. This item was updated on August 18, 2025.",
+        "content": "The Athena driver has been updated to version 2.2.1. This driver is used for connections to [Amazon Athena](https://cloud.google.com/looker/docs/db-config-amazon-athena). **Note**: This change was made in Looker 25.10. This item was updated on August 18, 2025. **NOTE:** This item was updated on September 10, 2025.",
         "summary": {
           "title": "Athena driver updated",
-          "summary": "The Athena driver is now at version 2.2.1."
+          "summary": "The Athena driver has been updated to version 2.2.1. This change was made in Looker 25.10."
         }
       },
       {
         "kind": "Feature",
-        "content": "The Databricks JDBC driver has been upgraded to version 2.7.3. **Note**: This change was made in Looker 25.10. This item was updated on August 18, 2025.",
+        "content": "The Databricks JDBC driver has been upgraded to version 2.7.3. This driver is used for connections to [Databricks](https://cloud.google.com/looker/docs/db-config-databricks).\n**Note**: This change was made in Looker 25.10. This item was updated on August 18, 2025 and September 10, 2025.",
         "summary": {
-          "title": "Databricks JDBC driver updated",
-          "summary": "The Databricks JDBC driver has been upgraded to version 2.7.3."
+          "title": "Databricks JDBC Driver Update",
+          "summary": "The Databricks JDBC driver has been updated to version 2.7.3. This update is relevant for users connecting to Databricks. The change was implemented in Looker version 25.10."
         }
       },
       {

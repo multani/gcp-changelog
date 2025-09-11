@@ -1,5 +1,156 @@
 # Looker
 
+## 2025-09-10
+
+### Announcement
+
+**Looker 25.16** is expected to include the following changes, features, and fixes:
+
+* Expected Looker (original) deployment start: **Monday, September 15, 2025**
+* Expected Looker (original) final deployment and download available: **Thursday, September 25, 2025**
+* Expected Looker (Google Cloud core) deployment start: **Monday, September 15, 2025**
+* Expected Looker (Google Cloud core) final deployment: **Monday, September 29, 2025**
+
+### Breaking
+
+Looker no longer supports connections to Firebolt.
+
+### Feature
+
+Suggest queries now respect the concurrency limit in the connection configuration.
+
+### Feature
+
+The Spanner JDBC Driver has been updated to version 2.32.1. This driver is used for connections to [Google Spanner](https://cloud.google.com/looker/docs/db-config-cloud-spanner).
+
+### Feature
+
+The [Looker-Excel Connector](https://cloud.google.com/looker/docs/excel-connector) is now generally available. When your Looker admin enables the Looker-Excel Connector on the BI Connections admin page, Looker Explores display the Open in Excel option in the Explore gear menu. This option downloads the Explore results to a Windows PC in a format that Microsoft Excel recognizes.
+
+### Fixed
+
+Looker 25.16 contains the following accessibility improvements:
+
+* Improved keyboard navigation for embed folders.
+* Added ARIA labels to filter drop-down menu items.
+* Added ARIA labels to schedule options.
+* Added focus rings to navigation links.
+* Improved VoiceOver support for filter navigation.
+* Added the ability for users to close modals by using the Esc key. Users will be prevented from closing modals this way if there are unsaved changes in the modal.
+
+### Fixed
+
+When you upload a p12 file to a database connection, Looker now checks that it is a valid file before completing the upload.
+
+### Fixed
+
+An issue has been fixed where adding multiple filters to the same field could cause filter conditions to overwrite each other. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where changing the size of a visualization could cause the visualization to flicker. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where users could enter color codes that were longer than six characters when they were updating custom color collections. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where Explore drill links would not open correctly if cookieless embed was enabled. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where generating a view inside a folder could fail if the folder's name contained special characters. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where generating an embed URL from a LookML dashboard could fail with the following error: `'models' param cannot be converted to an array of String`. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where loading JavaScript files for custom visualizations could take more than one second. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where non-admin users were unable to select a project when they added a connection. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where scheduled deliveries could fail with the following error message: `Async delivery failed due to errors Internal server error. [Google Cloud Storage] undefined`. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where subtotal rows could fail to appear in downloaded result sets. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the OAuth client secret could not be updated in the Connections page. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where total references and row total references in table calculations could return the following error if there was no data: `Field either does not exist in the current query or is a measure.` This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where updating a Spanner connection could fail to save changes. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where users with only the `embed_browse_spaces` permission could be incorrectly classified as Standard users instead of Viewer users. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where using the `matches_filter` function in custom filters could return an error. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where visualizations could render twice when they were first loaded on an Explore or a dashboard. This feature now performs as expected.
+
+### Fixed
+
+The Athena JDBC driver version has been downgraded from 2.2.1 to 2.1.5 to fix an issue with result set streaming. This feature now performs as expected. The Athena JDBC driver is used for connections to [Amazon Athena](https://cloud.google.com/looker/docs/db-config-amazon-athena).
+
+### Fixed
+
+Dashboards that are not configured to run on load no longer show past query results when you revisit the dashboard in the same browser session. You must click the Load button to run the queries again.
+
+### Fixed
+
+An issue has been fixed where the Collapse subtotal toggle on table visualizations was unresponsive. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where updating a customer-hosted instance could fail with the following error message: `Data import is in progress and some features will not be available`. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where SQL Runner could fail to return new results after running a second query. This feature now performs as expected.
+
+### Feature
+
+A new Labs feature, Favoriting LookML Dashboards, enables LookML dashboards to be [marked as favorites](https://cloud.google.com/looker/docs/finding-content#navigating_to_content_in_folders) causing the LookML dashboards to appear on the Looker Favorites tab.
+
+### Feature
+
+The Full Screen Visualizations Labs feature is now generally available. You can turn it on and off on the Admin - General page.
+
+### Fixed
+
+An issue has been fixed where updating the Host URL in the Admin - Settings page could fail to be saved. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where visualization templates could be edited by API users without the need for the `explore` permission.
+
+### Feature
+
+Looker (Google Cloud core) 90-day trial instances are now available.
+
+### Feature
+
+The Full Screen Visualizations feature is now generally available. You can turn it on and off on the Admin - General page.
+
+---
 ## 2025-08-13
 
 ### Announcement
@@ -25,15 +176,16 @@ Denodo 9 databases are now supported.
 
 ### Feature
 
-The Maria JDBC Driver has been updated to version 3.5.3.
+The Maria JDBC Driver has been updated to version 3.5.3. This driver is used for connections to [MySQL, MySQL 8.0.12+, MariaDB, SingleStore, SingleStore 7+](https://cloud.google.com/looker/docs/db-config-mysql-mariadb-singlestore), [Amazon Aurora MySQL](https://cloud.google.com/looker/docs/db-config-amazon-aurora-mysql), [Google Cloud SQL](https://cloud.google.com/looker/docs/db-config-google-cloud-sql), and HyperSQL. **NOTE:** This item was updated on September 10, 2025.
 
 ### Feature
 
-The Athena driver has been updated to version 2.2.1. **Note**: This change was made in Looker 25.10. This item was updated on August 18, 2025.
+The Athena driver has been updated to version 2.2.1. This driver is used for connections to [Amazon Athena](https://cloud.google.com/looker/docs/db-config-amazon-athena). **Note**: This change was made in Looker 25.10. This item was updated on August 18, 2025. **NOTE:** This item was updated on September 10, 2025.
 
 ### Feature
 
-The Databricks JDBC driver has been upgraded to version 2.7.3. **Note**: This change was made in Looker 25.10. This item was updated on August 18, 2025.
+The Databricks JDBC driver has been upgraded to version 2.7.3. This driver is used for connections to [Databricks](https://cloud.google.com/looker/docs/db-config-databricks).
+**Note**: This change was made in Looker 25.10. This item was updated on August 18, 2025 and September 10, 2025.
 
 ### Feature
 

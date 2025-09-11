@@ -1,5 +1,12 @@
 # BigQuery
 
+## 2025-09-10
+
+### Feature
+
+You can [load files from Cloud Storage in BigQuery data preparations](https://cloud.google.com/bigquery/docs/data-prep-get-suggestions#create-new-from-gcs). This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-09-09
 
 ### Feature

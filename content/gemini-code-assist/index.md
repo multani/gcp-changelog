@@ -2,10 +2,6 @@
 
 ## 2025-09-10
 
-### Feature
-
-
-
 ### Deploy apps to Cloud Run in Gemini Code Assist agent mode (Preview)
 
 Leverage the power of Gemini CLI extensions in VS Code Gemini Code Assist agent

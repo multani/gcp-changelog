@@ -1,5 +1,16 @@
 # BigQuery
 
+## 2025-09-11
+
+### Feature
+
+Use the [BigQuery migration assessment for Informatica](https://cloud.google.com/bigquery/docs/migration-assessment) to assess the complexity of migrating data from your Informatica platform to BigQuery. This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+Gemini now recommends natural language prompts for you in the [SQL generation tool](https://cloud.google.com/bigquery/docs/write-sql-gemini#generate_a_sql_query). This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-09-10
 
 ### Feature

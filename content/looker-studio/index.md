@@ -1,5 +1,53 @@
 # Looker Studio
 
+## 2025-09-11
+
+### Changed
+
+**Looker Studio Explorer (beta) feature deprecation**
+
+The Looker Studio Explorer (beta) feature is being deprecated and will no longer be available.
+
+**NO ACTION is required**. Existing explorations that were created with the Explorer will be converted to reports automatically.
+
+[Learn more about the deprecation timeline and details](https://cloud.google.com/looker/docs/studio/explorer-sunset).
+
+### Breaking
+
+**Hyperlinks and images are disabled for data sources that use Viewer's Credentials**
+
+When you enable [Viewer's Credentials](https://cloud.google.com/looker/docs/studio/data-credentials-article#viewers-credentials) for a data source, Looker Studio won't render hyperlinks or images in dimensions from that data source.
+
+This limitation does not apply if the report creator and the viewer are members of the same [team workspace](https://cloud.google.com/looker/docs/studio/about-team-workspaces).
+
+### Feature
+
+**Treemap chart improvements**
+
+Improvements to Treemap charts include the following:
+
+* A new [**Fields** section in the **Setup** tab](https://cloud.google.com/looker/docs/studio/treemap-reference#fields) that lets report editors specify a dimension or a metric to use as the basis for chart coloring
+* New [color options](https://cloud.google.com/looker/docs/studio/treemap-reference#color-by) that are based on the selection in the **Fields** section
+* A new [**Border radius** setting](https://cloud.google.com/looker/docs/studio/treemap-reference#treemap) that lets report editors control the border radius of tree branches
+* A new [**Label** section in the **Style** tab](https://cloud.google.com/looker/docs/studio/treemap-reference#treemap)
+
+### Changed
+
+**[Pro feature] Number of scheduled reports increased to 200**
+
+You can create a maximum of 200 schedules per Looker Studio Pro report.
+
+### Feature
+
+**Partner connection launch update**
+
+The following partner connectors have been added to the [Looker Studio Connector Gallery](https://lookerstudio.google.com/data):
+
+* [HubSpot](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbzLO9Joey9S8pWji3AEcDzMS9uNL_mEoeIk9-DVmnigCmRYFZZQ4EOs-vWQwHrWkytM) by Adzviser. Sources: Hubspot
+* [Amazon Seller Central](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbw_WtmPOiq-SvHp8iyukc_tof6n9ln77qpYFnPFxLktTiNGruZPAq_DAqUZceUZIB167w) by Adzviser. Sources: Amazon
+* [Amazon Ads](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbzjoSyVodFAKjAGzL8OEPMRQz58veiyWlEhih2FoDvkE2bspkh-XpoOH_G-i_aEx7YoTw) by Adzviser. Sources: Amazon Ads
+
+---
 ## 2025-08-28
 
 ### Feature

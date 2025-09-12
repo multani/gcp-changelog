@@ -2,9 +2,51 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Document AI</title>
   <subtitle>Changelog for Google Cloud product: Document AI</subtitle>
-  <updated>2025-08-29T00:00:00+00:00</updated>
+  <updated>2025-09-10T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:document-ai</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/document-ai/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:document-ai:2025-09-10:deprecated:0</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Custom Extractor version <a href="https://cloud.google.com/document-ai/docs/processors-list#processor_cde"><code>pretrained-foundation-model-v1.4-2025-02-05</code></a> will no longer be accessible on <strong>February 5, 2026</strong>.</p>
+<p>To avoid service disruptions, migrate to a later version such as <code>pretrained-foundation-model-v1.5-2025-05-05</code> or <code>pretrained-foundation-model-v1.5-pro-2025-06-20</code>. To learn more about the migration process, refer to our <a href="https://cloud.google.com/document-ai/docs/manage-processor-versions">Manage processor versions</a> documentation.</p>]]></content>
+    <summary>The Custom Extractor version pretrained-foundation-model-v1.4-2025-02-05 will be deprecated on February 5, 2026. Please migrate to a newer version to avoid service disruptions.</summary>
+    <title>Deprecated: Deprecated Custom Extractor Version</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:document-ai:2025-09-09:announcement:0</id>
+    <published>2025-09-09T00:00:00+00:00</published>
+    <updated>2025-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Document AI supports <a href="https://cloud.google.com/document-ai/quotas#service_tiers">two service tiers</a> and associated quotas: provisioned and best effort tiers.</p>
+<p>The base is <strong>provisioned tier</strong> quota, which provides 120 pages per minute for Gemini 2.0 and 2.5 Flash LLM and 30 pages per minute for Gemini 2.5 Pro LLM.</p>
+<p>If you require more volume, <strong>best effort tier</strong> quota provides 120 pages per minute for Gemini 2.0 and 2.5 Flash and 60 pages per minute for Gemini 2.5 Pro, and is only used once the
+provisioned quota has been exhausted. This applies to quotas <code>BestEffortOnlineProcessDocumentPagesPerMinutePerProjectUS</code>, and <code>EU</code>, and
+<code>best_effort_online_process_document_pages_us</code> and <code>eu</code> in the console.</p>
+<p>Best effort can get up to 240 pages per minute for <a href="https://cloud.google.com/document-ai/docs/ce-with-genai">custom data extractor models</a>
+v1.4 and v1.5 with a quota increase request (QIR). You can make a QIR by contacting your sales team representative.</p>
+<p>There is no service level agreement <a href="https://cloud.google.com/document-ai/sla">(SLA)</a> for best effort tier.</p>]]></content>
+    <summary>Document AI offers provisioned and best effort service tiers with different page-per-minute quotas for Gemini models. Best effort tiers can be increased for custom models with a QIR, but have no SLA.</summary>
+    <title>Announcement: Document AI Service Tiers</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:document-ai:2025-09-03:feature:0</id>
+    <published>2025-09-03T00:00:00+00:00</published>
+    <updated>2025-09-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Custom extractor model <code>pretrained-foundation-model-v1.5-pro-2025-06-20</code> is available as General Availability (<a href="https://cloud.google.com/products/#product-launch-stages">GA</a>).</p>
+<p>For more information about available models, see the <a href="https://cloud.google.com/document-ai/docs/ce-with-genai">custom extractor</a> page.</p>]]></content>
+    <summary>The custom extractor model `pretrained-foundation-model-v1.5-pro-2025-06-20` has reached General Availability.</summary>
+    <title>Feature: Custom Extractor Model Now Generally Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

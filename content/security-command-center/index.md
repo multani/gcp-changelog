@@ -1,5 +1,12 @@
 # Security Command Center
 
+## 2025-09-11
+
+### Feature
+
+Assured Open Source Software (Assured OSS) now supports Go packages. For more information, see [Download Go packages using direct repository access](https://cloud.google.com/security-command-center/docs/aoss-download-go-packages).
+
+---
 ## 2025-09-10
 
 ### Feature

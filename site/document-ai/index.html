@@ -473,6 +473,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Assured open source software <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../assured-open-source-software/" class="dropdown-item">Assured Open Source Software</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Assured workloads <b class="caret"></b>
                         </a>
 
@@ -1896,42 +1908,63 @@
 
 
 <h1 id="document-ai">Document AI</h1>
-<h2 id="2025-08-29">2025-08-29</h2>
+<h2 id="2025-09-10">2025-09-10</h2>
+<h3 id="deprecated">Deprecated</h3>
+<p>Custom Extractor version <a href="https://cloud.google.com/document-ai/docs/processors-list#processor_cde"><code>pretrained-foundation-model-v1.4-2025-02-05</code></a> will no longer be accessible on <strong>February 5, 2026</strong>.</p>
+<p>To avoid service disruptions, migrate to a later version such as <code>pretrained-foundation-model-v1.5-2025-05-05</code> or <code>pretrained-foundation-model-v1.5-pro-2025-06-20</code>. To learn more about the migration process, refer to our <a href="https://cloud.google.com/document-ai/docs/manage-processor-versions">Manage processor versions</a> documentation.</p>
+<hr />
+<h2 id="2025-09-09">2025-09-09</h2>
+<h3 id="announcement">Announcement</h3>
+<p>Document AI supports <a href="https://cloud.google.com/document-ai/quotas#service_tiers">two service tiers</a> and associated quotas: provisioned and best effort tiers.</p>
+<p>The base is <strong>provisioned tier</strong> quota, which provides 120 pages per minute for Gemini 2.0 and 2.5 Flash LLM and 30 pages per minute for Gemini 2.5 Pro LLM.</p>
+<p>If you require more volume, <strong>best effort tier</strong> quota provides 120 pages per minute for Gemini 2.0 and 2.5 Flash and 60 pages per minute for Gemini 2.5 Pro, and is only used once the
+provisioned quota has been exhausted. This applies to quotas <code>BestEffortOnlineProcessDocumentPagesPerMinutePerProjectUS</code>, and <code>EU</code>, and
+<code>best_effort_online_process_document_pages_us</code> and <code>eu</code> in the console.</p>
+<p>Best effort can get up to 240 pages per minute for <a href="https://cloud.google.com/document-ai/docs/ce-with-genai">custom data extractor models</a>
+v1.4 and v1.5 with a quota increase request (QIR). You can make a QIR by contacting your sales team representative.</p>
+<p>There is no service level agreement <a href="https://cloud.google.com/document-ai/sla">(SLA)</a> for best effort tier.</p>
+<hr />
+<h2 id="2025-09-03">2025-09-03</h2>
 <h3 id="feature">Feature</h3>
+<p>Custom extractor model <code>pretrained-foundation-model-v1.5-pro-2025-06-20</code> is available as General Availability (<a href="https://cloud.google.com/products/#product-launch-stages">GA</a>).</p>
+<p>For more information about available models, see the <a href="https://cloud.google.com/document-ai/docs/ce-with-genai">custom extractor</a> page.</p>
+<hr />
+<h2 id="2025-08-29">2025-08-29</h2>
+<h3 id="feature_1">Feature</h3>
 <p>Derived entity and signature detection are now supported in <a href="https://cloud.google.com/document-ai/docs/ce-with-genai">Custom Extractor</a> models <code>pretrained-foundation-model-v1.4-2025-02-05</code> as General Availability <a href="https://cloud.google.com/products/#product-launch-stages">(GA)</a>, and <code>pretrained-foundation-model-v1.5-2025-05-05</code> and <code>pretrained-foundation-model-v1.5-pro-2025-06-20</code> as Preview.</p>
 <p>Signature detection lets you identify hand-written signatures by using visual cues in the document. Derived entity detection lets you deduce entities by inference without requiring the value to be explicitly present in the text. You can use this feature to deduce the country in an address, counting items in a table, or detecting if an ID is fake.</p>
 <p>These can be enabled in the console when creating new labels or by using the <a href="https://cloud.google.com/document-ai/docs/reference/rpc/google.cloud.documentai.v1#entitytype"><code>DocumentSchema.EntityType</code></a> resource in the API.</p>
 <p>For more information, read <a href="https://cloud.google.com/document-ai/docs/ce-derived-signature">Custom extractor with derived fields</a>, and <a href="https://cloud.google.com/document-ai/docs/create-dataset#choose_label_attributes">choose label attributes</a>.</p>
 <hr />
 <h2 id="2025-07-22">2025-07-22</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p><a href="https://cloud.google.com/document-ai/docs/ce-with-genai">Custom extractor</a> model <a href="https://cloud.google.com/document-ai/docs/processors-list#processor_cde"><code>pretrained-foundation-model-v1.5-pro-2025-06-20</code></a> powered by Gemini 2.5 Pro is in <a href="https://cloud.google.com/products/#product-launch-stages">Public Preview</a>. It has ML processing available for US and EU regions, and 30 page per minute processing requests.</p>
 <p>For more information, see <a href="https://cloud.google.com/document-ai/docs/manage-processor-versions#import">Managing processor versions</a>.</p>
 <hr />
 <h2 id="2025-07-04">2025-07-04</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>Document AI now supports <a href="https://cloud.google.com/iam/docs/overview">Identity and Access Management</a> (IAM) deny policies. These policies allow you to define deny rules that prevent certain principals from using certain permissions to access Google Cloud resources, regardless of the roles they're granted.</p>
 <p>For more information, read <a href="https://cloud.google.com/iam/docs/deny-overview">Deny policy</a> overview and <a href="https://cloud.google.com/document-ai/docs/security">Document AI security and compliance</a>.</p>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>Document AI <a href="https://cloud.google.com/vpc-service-controls/docs/overview">VPC service controls</a> (VPC-SC) integration now supports identity groups.</p>
 <p>For more information on setting up VPC-SC identity groups, read <a href="https://cloud.google.com/vpc-service-controls/docs/configure-identity-groups">Configure identity groups and third-party identities in ingress and egress rules</a>.</p>
 <hr />
 <h2 id="2025-07-03">2025-07-03</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p>The Document AI CDE processor now supports merging the child entities of nested entities that extend across several pages. This is supported in custom extractor model <a href="https://cloud.google.com/document-ai/docs/processors-list#processor_cde"><code>pretrained-foundation-model-v1.5-2025-05-05</code></a>.</p>
 <p>This change is automatically present in existing and newly created processors.</p>
 <p>For customers with existing v1.5 processors to make use of this feature, you must relabel the nested entities in different pages.</p>
 <p>To learn more about the labeling process, refer to our <a href="https://cloud.google.com/document-ai/docs/label-documents">Label documents</a> documentation.</p>
 <hr />
 <h2 id="2025-06-30">2025-06-30</h2>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p><a href="https://cloud.google.com/document-ai/docs/ce-with-genai">Custom Extractor</a> model <a href="https://cloud.google.com/document-ai/docs/processors-list#processor_cde"><code>pretrained-foundation-model-v1.5-2025-05-05</code></a> is in General Availability (<a href="https://cloud.google.com/products/#product-launch-stages">GA</a>) and has fine-tuning available for the US and EU.</p>
 <p>From version v1.4 and later, we will use a new quota for online processing called <a href="https://cloud.google.com/document-ai/quotas#quotas_list"><code>Number of online process document pages per minute per processor type and model version</code></a>. This quota will be enforced at a per-page and per-foundation model level. There will be no change to the batch processing quota.</p>
 <p>These can be enabled in the console when creating labels and by using the <a href="https://cloud.google.com/document-ai/docs/reference/rpc/google.cloud.documentai.v1#entitytype"><code>DocumentSchema.EntityType</code></a>.</p>
 <p>For more information, read <a href="https://cloud.google.com/document-ai/docs/manage-processor-versions#import">Managing processor versions</a>.</p>
 <hr />
 <h2 id="2025-06-19">2025-06-19</h2>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p>We've increased the maximum file size for <a href="https://cloud.google.com/document-ai/docs/reference/rest/v1/projects.locations.processors/process">online processing</a> requests from 20 MB to 40 MB. This applies to all types of processors.</p>
 <p>For more information, see the Document AI <a href="https://cloud.google.com/document-ai/limits#content_limits">limits</a> page.</p>
 <hr /></div>
@@ -1945,6 +1978,15 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#document-ai">Document AI</a></li>
+          <li class="nav-item">
+            <a href="#2025-09-10" class="nav-link">2025-09-10</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2025-09-09" class="nav-link">2025-09-09</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2025-09-03" class="nav-link">2025-09-03</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-08-29" class="nav-link">2025-08-29</a>
           </li>

@@ -37,6 +37,17 @@ New [Dataproc on Compute Engine subminor image versions](https://cloud.google.co
 * 2.3.11-debian12, 2.3.11-ubuntu22, 2.3.11-ubuntu22-arm, 2.3.11-ml-ubuntu22, 2.3.11-rocky9
 
 ---
+## 2025-09-05
+
+### Announcement
+
+New [Dataproc Serverless for Spark runtime versions:](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions)
+
+* 1.2.60
+* 2.2.60
+* 2.3.11
+
+---
 ## 2025-09-02
 
 ### Feature
@@ -54,6 +65,14 @@ New [Dataproc on Compute Engine subminor image versions](https://cloud.google.co
 * 2.1.96-debian11, 2.1.96-ubuntu20, 2.1.96-ubuntu20-arm, 2.1.96-rocky8
 * 2.2.64-debian12, 2.2.64-ubuntu22, 2.2.64-ubuntu22-arm, 2.2.64-rocky9
 * 2.3.10-debian12, 2.3.10-ubuntu22, 2.3.10-ubuntu22-arm, 2.3.10-ml-ubuntu22, 2.3.10-rocky9
+
+### Announcement
+
+New [Dataproc Serverless for Spark runtime versions:](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions)
+
+* 1.2.59
+* 2.2.59
+* 2.3.10
 
 ---
 ## 2025-08-22

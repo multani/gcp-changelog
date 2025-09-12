@@ -1,5 +1,17 @@
 # Google Agentspace
 
+## 2025-09-11
+
+### Changed
+
+**Google Agentspace: Interface updates**
+
+* The LLM model selector has moved from the search bar to directly below the product logo in the top-left corner.
+* The web grounding tool and source has been renamed *Google Search* and *Enterprise web search,* depending on the type of web grounding configured.
+* The *Sources* button in the search bar has been renamed *Data.*
+* The *Data* menu (formerly *Sources*) now shows which sources are selected.
+
+---
 ## 2025-09-05
 
 ### Feature

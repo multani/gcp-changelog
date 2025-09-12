@@ -1,5 +1,12 @@
 # Google Cloud Architecture Center
 
+## 2025-09-11
+
+### Feature
+
+[RAG infrastructure for generative AI using Google Agentspace and Vertex AI](https://cloud.google.com/architecture/rag-genai-agentspace-vertexai): Design infrastructure for a generative AI application with retrieval-augmented generation (RAG) using Google Agentspace and Vertex AI.
+
+---
 ## 2025-08-21
 
 ### Feature

@@ -37,6 +37,7 @@
 - [App Hub](app-hub/index.md)
 - [Application Integration](application-integration/index.md)
 - [Artifact Registry](artifact-registry/index.md)
+- [Assured Open Source Software](assured-open-source-software/index.md)
 - [Assured Workloads](assured-workloads/index.md)
 - [Audit Manager](audit-manager/index.md)
 - [Backup and DR](backup-and-dr/index.md)

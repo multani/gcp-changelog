@@ -1,6 +1,24 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2025-09-11": [
+      {
+        "kind": "Feature",
+        "content": "GKE now provisions fast-starting nodes, which have significantly lower startup time, in Autopilot mode for G2 nodes with NVIDIA L4 GPUs. Fast-starting nodes are in Public Preview for clusters in the Rapid channel, and are available on a best-effort basis when workloads use compatible configurations. For more information, see [About quicker workload startup with fast-starting nodes](https://cloud.google.com/kubernetes-engine/docs/concepts/fast-starting-nodes).",
+        "summary": {
+          "title": "Fast-starting nodes for G2 GKE Autopilot with NVIDIA L4 GPUs",
+          "summary": "GKE Autopilot now supports fast-starting nodes for G2 instances with NVIDIA L4 GPUs. This feature significantly reduces node startup time, allowing for quicker deployment of your workloads. It is available in Public Preview for clusters in the Rapid channel with compatible configurations."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The accelerator-optimized A4X VM, an exascale platform based on [NVIDIA GB200 NVL72](https://www.nvidia.com/en-us/data-center/gb200-nvl72/), is now Generally Available on GKE. A4X is the first GPU VM to run on Arm with the NVIDIA GB200 Grace Blackwell Superchips. You can use A4X to run your large artificial intelligence (AI) models, machine learning (ML), and high performance computing (HPC) workloads. The A4X machine type is available as `a4x-highgpu-4g` in the us-central1-a zone with the following GKE versions or later:\n\n* GKE Standard: 1.32.4-gke.1106000\n* GKE Autopilot: 1.33.2-gke.1134000\n\nTo create GKE clusters with A4X, see the following instructions:\n\n* To quickly deploy production-ready clusters, see [Create an AI-optimized GKE cluster with default configuration](https://cloud.google.com/ai-hypercomputer/docs/create/gke-ai-hypercompute).\n* For precise customization or expansion of existing production GKE environments, see [Create a custom AI-optimized GKE cluster which uses A4X](https://cloud.google.com/ai-hypercomputer/docs/create/gke-ai-hypercompute-custom-a4x).",
+        "summary": {
+          "title": "A4X VM on GKE",
+          "summary": "The new A4X VM, powered by NVIDIA GB200 NVL72, is now available on GKE. This Arm-based VM is ideal for large AI, ML, and HPC workloads."
+        }
+      }
+    ],
     "2025-09-08": [
       {
         "kind": "Feature",
@@ -12,6 +30,14 @@
       }
     ],
     "2025-09-04": [
+      {
+        "kind": "Deprecated",
+        "content": "**Deprecated in 1.34**\n\nThe [v1beta1](https://github.com/kubernetes/kubelet/tree/v0.34.0/pkg/apis/dra/v1beta1) gRPC API between the Kubelet and DRA drivers is deprecated in this release in favor of the [v1](https://github.com/kubernetes/kubelet/tree/v0.34.0/pkg/apis/dra/v1) API. This API will continue to function but we recommend that all drivers move to the v1 API to prepare for the eventual removal of the v1beta1 API.",
+        "summary": {
+          "title": "DRA API Deprecation",
+          "summary": "The v1beta1 DRA API is deprecated in favor of v1. Drivers should migrate to the v1 API."
+        }
+      },
       {
         "kind": "Changed",
         "content": "**CNI spec version for GKE Dataplane V2 updated to v1.1.0**\n\nStarting with GKE patch version 1.34, clusters using [GKE Dataplane V2](https://cloud.google.com/kubernetes-engine/docs/concepts/dataplane-v2) are being updated from [CNI spec](https://www.cni.dev/docs/spec/) v0.3.1 to v1.1.0.\n\nAction required: If you use your own CNI plugins in your GKE cluster (such as self-managed open-source Istio), you must upgrade them\nto a version compatible with CNI spec v1.1.0 to prevent errors.",
@@ -34,14 +60,6 @@
         "summary": {
           "title": "containerd 2.1 and VPA updates",
           "summary": "GKE nodes are upgraded to containerd 2.1, bringing performance improvements like faster image downloads. Additionally, a new In-Place Or Recreate mode for Vertical Pod Autoscaler (VPA) is available in Public Preview, enabling automatic rightsizing of workloads, often without Pod recreation, ensuring service continuity and cost reduction."
-        }
-      },
-      {
-        "kind": "Deprecated",
-        "content": "**Deprecated in 1.34**\n\nThe [v1beta1](https://github.com/kubernetes/kubelet/tree/v0.34.0/pkg/apis/dra/v1beta1) gRPC API between the Kubelet and DRA drivers is deprecated in this release in favor of the [v1](https://github.com/kubernetes/kubelet/tree/v0.34.0/pkg/apis/dra/v1) API. This API will continue to function but we recommend that all drivers move to the v1 API to prepare for the eventual removal of the v1beta1 API.",
-        "summary": {
-          "title": "DRA API Deprecation",
-          "summary": "The v1beta1 DRA API is deprecated in favor of v1. Drivers should migrate to the v1 API."
         }
       },
       {
@@ -228,18 +246,18 @@
     "2025-08-21": [
       {
         "kind": "Feature",
-        "content": "The [M4 machine series](https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series)\nis generally available in GKE Autopilot clusters with\nversion 1.33.4-gke.1013000 or later. For more information, see M4 in\n[Resource requests in Autopilot](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests).",
-        "summary": {
-          "title": "M4 machine series",
-          "summary": "M4 machine series available in GKE Autopilot"
-        }
-      },
-      {
-        "kind": "Feature",
         "content": "Starting with GKE version 1.33.2-gke.1240000 and later, you can\nnow specify the network service tier (Standard or Premium) for ephemeral IP\naddresses used by the `gke-l7-regional-external-managed` GatewayClass. This\nGatewayClass configures Regional External Application Load Balancers for single\nclusters.\n\nFor more information, see [Configure network tier for Gateway IP addresses](https://cloud.google.com/kubernetes-engine/docs/how-to/deploying-gateways#configure-network-tier).",
         "summary": {
           "title": "Network Tier Selection for Gateway Resources",
           "summary": "You can now select network tiers for ephemeral IPs."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [M4 machine series](https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series)\nis generally available in GKE Autopilot clusters with\nversion 1.33.4-gke.1013000 or later. For more information, see M4 in\n[Resource requests in Autopilot](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests).",
+        "summary": {
+          "title": "M4 machine series",
+          "summary": "M4 machine series available in GKE Autopilot"
         }
       },
       {
@@ -312,18 +330,18 @@
     "2025-08-15": [
       {
         "kind": "Feature",
-        "content": "You can now receive a patch version in a release channel as soon as the version\nis available and before GKE sets the version as an auto-upgrade\ntarget in the channel by using *accelerated patch auto-upgrades*. Receiving\npatch versions earlier can help accelerate auto-upgrade timelines for patches,\nespecially for use cases such as accelerating your compliance with security\nrequirements.\n\nFor more information, see\n[Accelerated patch auto-upgrades](https://cloud.google.com/kubernetes-engine/docs/concepts/release-channels#accelerated-patch).",
-        "summary": {
-          "title": "Accelerated Patch Auto-Upgrades",
-          "summary": "Accelerated patch auto-upgrades are now available."
-        }
-      },
-      {
-        "kind": "Feature",
         "content": "For clusters enrolled in the Extended channel, you can now use\n[Gateway](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api)\nwith GKE version 1.30 or later, or\n[customized sysctl configuration options](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options).",
         "summary": {
           "title": "Gateway for Extended Channel",
           "summary": "Gateway now available for Extended channel clusters."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now receive a patch version in a release channel as soon as the version\nis available and before GKE sets the version as an auto-upgrade\ntarget in the channel by using *accelerated patch auto-upgrades*. Receiving\npatch versions earlier can help accelerate auto-upgrade timelines for patches,\nespecially for use cases such as accelerating your compliance with security\nrequirements.\n\nFor more information, see\n[Accelerated patch auto-upgrades](https://cloud.google.com/kubernetes-engine/docs/concepts/release-channels#accelerated-patch).",
+        "summary": {
+          "title": "Accelerated Patch Auto-Upgrades",
+          "summary": "Accelerated patch auto-upgrades are now available."
         }
       }
     ],

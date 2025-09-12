@@ -1968,10 +1968,19 @@
 <p><strong>Cancel scheduled calls with the callback calls API</strong></p>
 <p>You can now use the callback calls API to cancel a single scheduled callback call or a list of calls.</p>
 <h3 id="feature_5">Feature</h3>
-<p><strong>New advanced reporting dashboards</strong></p>
-<p>The following new advanced reporting dashboard is available:</p>
+<p><strong>Advanced reporting dashboard updates</strong></p>
+<p>We've made the following updates to the advanced reporting dashboards:</p>
 <ul>
-<li><strong>Deflections</strong>. Get deflection information by queue and for your entire contact center. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-deflections">Deflections dashboards</a>.</li>
+<li>
+<p><strong>Queue Group Performance</strong>: Information is split into three new tabs:</p>
+</li>
+<li>
+<p><strong>All</strong>: Contains <strong>Queue Group Performance Calls</strong> and <strong>Queue Group Performance Chats</strong> tables.</p>
+</li>
+<li><strong>Calls</strong>: Contains metrics tiles and a <strong>Live Data</strong> table for calls.</li>
+<li><strong>Chats</strong>: Contains metrics tiles and tables for <strong>Live Data</strong> and <strong>Historical Data</strong> for calls.</li>
+<li><strong>Virtual Agent</strong>: The virtual agent metrics table on both the <strong>Virtual Agent - Calls</strong> and <strong>Virtual Agent - Chats</strong> dashboards contains a new <strong>Interaction outcome</strong> column.</li>
+<li><strong>All Interactions Chat</strong>: In the <strong>All Chat Interactions (Historical)</strong> table, if you configure chat transcript storage for your CRM, the values in the <strong>Chat ID</strong> column become links to the chat transcripts.</li>
 </ul>
 <h3 id="fixed_1">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
@@ -2034,7 +2043,9 @@
 * Fixed an issue that caused inbound calls to disconnect if they were routed to an agent with a disabled microphone.
 * Fixed an issue for HubSpot users where logging the "call started" event (<code>create_activity</code>) in the ticket was delayed.
 * Fixed an issue that prevented transferred calls from being routed to available agents.
-* Fixed an issue in the agent adapter for French (Canada) where where words weren't translated or were translated incorrectly.</p>
+* Fixed an issue in the agent adapter for French (Canada) where where words weren't translated or were translated incorrectly.
+* Fixed an issue in call queue metrics where the failed reason description for voice-scheduled mobile calls was not appearing.
+* Fixed an issue with custom advanced reporting dashboards where CSAT ratings were being grouped incorrectly.</p>
 <hr />
 <h2 id="2025-08-20">2025-08-20</h2>
 <h3 id="announcement_3">Announcement</h3>

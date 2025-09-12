@@ -1,5 +1,24 @@
 # Google Kubernetes Engine
 
+## 2025-09-11
+
+### Feature
+
+GKE now provisions fast-starting nodes, which have significantly lower startup time, in Autopilot mode for G2 nodes with NVIDIA L4 GPUs. Fast-starting nodes are in Public Preview for clusters in the Rapid channel, and are available on a best-effort basis when workloads use compatible configurations. For more information, see [About quicker workload startup with fast-starting nodes](https://cloud.google.com/kubernetes-engine/docs/concepts/fast-starting-nodes).
+
+### Feature
+
+The accelerator-optimized A4X VM, an exascale platform based on [NVIDIA GB200 NVL72](https://www.nvidia.com/en-us/data-center/gb200-nvl72/), is now Generally Available on GKE. A4X is the first GPU VM to run on Arm with the NVIDIA GB200 Grace Blackwell Superchips. You can use A4X to run your large artificial intelligence (AI) models, machine learning (ML), and high performance computing (HPC) workloads. The A4X machine type is available as `a4x-highgpu-4g` in the us-central1-a zone with the following GKE versions or later:
+
+* GKE Standard: 1.32.4-gke.1106000
+* GKE Autopilot: 1.33.2-gke.1134000
+
+To create GKE clusters with A4X, see the following instructions:
+
+* To quickly deploy production-ready clusters, see [Create an AI-optimized GKE cluster with default configuration](https://cloud.google.com/ai-hypercomputer/docs/create/gke-ai-hypercompute).
+* For precise customization or expansion of existing production GKE environments, see [Create a custom AI-optimized GKE cluster which uses A4X](https://cloud.google.com/ai-hypercomputer/docs/create/gke-ai-hypercompute-custom-a4x).
+
+---
 ## 2025-09-08
 
 ### Feature
@@ -32,6 +51,12 @@ For more information, see the [ComputeClass CRD reference](https://cloud.google.
 ---
 ## 2025-09-04
 
+### Deprecated
+
+**Deprecated in 1.34**
+
+The [v1beta1](https://github.com/kubernetes/kubelet/tree/v0.34.0/pkg/apis/dra/v1beta1) gRPC API between the Kubelet and DRA drivers is deprecated in this release in favor of the [v1](https://github.com/kubernetes/kubelet/tree/v0.34.0/pkg/apis/dra/v1) API. This API will continue to function but we recommend that all drivers move to the v1 API to prepare for the eventual removal of the v1beta1 API.
+
 ### Changed
 
 **CNI spec version for GKE Dataplane V2 updated to v1.1.0**
@@ -53,12 +78,6 @@ Kubernetes 1.34 is now available in the Rapid channel. For more information abou
 
 * **containerd 2.1:** GKE nodes are now upgraded to containerd 2.1. This release includes performance improvements such as faster image downloads. For a complete list of changes, see the official [containerd 2.1 release notes](https://github.com/containerd/containerd/releases/tag/v2.1.0).
 * **VPA InPlaceOrRecreate**: This version introduces a [new InPlaceOrRecreate mode in Vertical Pod Autoscaler (VPA)](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler/enhancements/4016-in-place-updates-support) (Public Preview) powered by In-Place Pod Resize (IPPR/IPPU) that allows automatically rightsizing workloads often without recreating the Pod. This mode ensures seamless service continuity while minimizing costs during idle periods. If you haven't used VPA with your workloads before, enable Vertical Pod Autoscaler on your cluster and then create a VPA Object for a workload.
-
-### Deprecated
-
-**Deprecated in 1.34**
-
-The [v1beta1](https://github.com/kubernetes/kubelet/tree/v0.34.0/pkg/apis/dra/v1beta1) gRPC API between the Kubelet and DRA drivers is deprecated in this release in favor of the [v1](https://github.com/kubernetes/kubelet/tree/v0.34.0/pkg/apis/dra/v1) API. This API will continue to function but we recommend that all drivers move to the v1 API to prepare for the eventual removal of the v1beta1 API.
 
 ### Feature
 
@@ -763,13 +782,6 @@ For more information see, [Horizontal Pod autoscaling](https://cloud.google.com/
 
 ### Feature
 
-The [M4 machine series](https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series)
-is generally available in GKE Autopilot clusters with
-version 1.33.4-gke.1013000 or later. For more information, see M4 in
-[Resource requests in Autopilot](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests).
-
-### Feature
-
 Starting with GKE version 1.33.2-gke.1240000 and later, you can
 now specify the network service tier (Standard or Premium) for ephemeral IP
 addresses used by the `gke-l7-regional-external-managed` GatewayClass. This
@@ -777,6 +789,13 @@ GatewayClass configures Regional External Application Load Balancers for single
 clusters.
 
 For more information, see [Configure network tier for Gateway IP addresses](https://cloud.google.com/kubernetes-engine/docs/how-to/deploying-gateways#configure-network-tier).
+
+### Feature
+
+The [M4 machine series](https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series)
+is generally available in GKE Autopilot clusters with
+version 1.33.4-gke.1013000 or later. For more information, see M4 in
+[Resource requests in Autopilot](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-resource-requests).
 
 ### Changed
 
@@ -1134,6 +1153,13 @@ The fix is available in the following GKE versions:
 
 ### Feature
 
+For clusters enrolled in the Extended channel, you can now use
+[Gateway](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api)
+with GKE version 1.30 or later, or
+[customized sysctl configuration options](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options).
+
+### Feature
+
 You can now receive a patch version in a release channel as soon as the version
 is available and before GKE sets the version as an auto-upgrade
 target in the channel by using *accelerated patch auto-upgrades*. Receiving
@@ -1143,13 +1169,6 @@ requirements.
 
 For more information, see
 [Accelerated patch auto-upgrades](https://cloud.google.com/kubernetes-engine/docs/concepts/release-channels#accelerated-patch).
-
-### Feature
-
-For clusters enrolled in the Extended channel, you can now use
-[Gateway](https://cloud.google.com/kubernetes-engine/docs/concepts/gateway-api)
-with GKE version 1.30 or later, or
-[customized sysctl configuration options](https://cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#sysctl-options).
 
 ---
 ## 2025-08-14

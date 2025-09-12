@@ -2,10 +2,6 @@
 
 ## 2025-09-11
 
-### Feature
-
-
-
 ### Introducing Release Channels in Gemini Code Assist
 
 We're rolling out Release Channels in Gemini Code Assist Standard and Enterprise
@@ -24,37 +20,21 @@ identical features. For more information, see
 
 ![Configure a Gemini Code Assist release channel in the Google Cloud console](https://cloud.google.com/gemini/images/release-notes-images/gemini-code-assist-release-channel-setting.png)
 
-### Fixed
-
-
-
 ### Performance and stability improvements for VS Code
 
 Numerous performance and stability improvements have been made to the Gemini
 Code Assist extension, further reducing extension crashes and related adverse
 functional events.
 
-### Feature
-
-
-
 ### Edit a prior prompt in VS Code
 
 You can [edit a prior prompt](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#edit_a_prior_prompt) in Gemini Code Assist and receive a regenerated
 response based on your edited prompt.
 
-### Feature
-
-
-
 ### Regenerate a prompt response in VS Code
 
 You can [regenerate a prompt response](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#regenerate_a_prompt_response) to your most recent prompt, where
 Gemini Code Assist re-evaluates your prompt and provides a new response.
-
-### Feature
-
-
 
 ### Delete prompt and response pair in VS Code
 

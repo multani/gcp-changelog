@@ -99,11 +99,17 @@ You can now use the callback calls API to cancel a single scheduled callback cal
 
 ### Feature
 
-**New advanced reporting dashboards**
+**Advanced reporting dashboard updates**
 
-The following new advanced reporting dashboard is available:
+We've made the following updates to the advanced reporting dashboards:
 
-* **Deflections**. Get deflection information by queue and for your entire contact center. For more information, see [Deflections dashboards](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-deflections).
+* **Queue Group Performance**: Information is split into three new tabs:
+
+  + **All**: Contains **Queue Group Performance Calls** and **Queue Group Performance Chats** tables.
+  + **Calls**: Contains metrics tiles and a **Live Data** table for calls.
+  + **Chats**: Contains metrics tiles and tables for **Live Data** and **Historical Data** for calls.
+* **Virtual Agent**: The virtual agent metrics table on both the **Virtual Agent - Calls** and **Virtual Agent - Chats** dashboards contains a new **Interaction outcome** column.
+* **All Interactions Chat**: In the **All Chat Interactions (Historical)** table, if you configure chat transcript storage for your CRM, the values in the **Chat ID** column become links to the chat transcripts.
 
 ### Fixed
 
@@ -169,6 +175,8 @@ The following issues were addressed in this release:
 * Fixed an issue for HubSpot users where logging the "call started" event (`create_activity`) in the ticket was delayed.
 * Fixed an issue that prevented transferred calls from being routed to available agents.
 * Fixed an issue in the agent adapter for French (Canada) where where words weren't translated or were translated incorrectly.
+* Fixed an issue in call queue metrics where the failed reason description for voice-scheduled mobile calls was not appearing.
+* Fixed an issue with custom advanced reporting dashboards where CSAT ratings were being grouped incorrectly.
 
 ---
 ## 2025-08-20

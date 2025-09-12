@@ -157,13 +157,22 @@
     <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-08-27:feature:6</id>
     <published>2025-08-27T00:00:00+00:00</published>
     <updated>2025-08-27T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>New advanced reporting dashboards</strong></p>
-<p>The following new advanced reporting dashboard is available:</p>
+    <content type="html"><![CDATA[<p><strong>Advanced reporting dashboard updates</strong></p>
+<p>We've made the following updates to the advanced reporting dashboards:</p>
 <ul>
-<li><strong>Deflections</strong>. Get deflection information by queue and for your entire contact center. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-deflections">Deflections dashboards</a>.</li>
+<li>
+<p><strong>Queue Group Performance</strong>: Information is split into three new tabs:</p>
+</li>
+<li>
+<p><strong>All</strong>: Contains <strong>Queue Group Performance Calls</strong> and <strong>Queue Group Performance Chats</strong> tables.</p>
+</li>
+<li><strong>Calls</strong>: Contains metrics tiles and a <strong>Live Data</strong> table for calls.</li>
+<li><strong>Chats</strong>: Contains metrics tiles and tables for <strong>Live Data</strong> and <strong>Historical Data</strong> for calls.</li>
+<li><strong>Virtual Agent</strong>: The virtual agent metrics table on both the <strong>Virtual Agent - Calls</strong> and <strong>Virtual Agent - Chats</strong> dashboards contains a new <strong>Interaction outcome</strong> column.</li>
+<li><strong>All Interactions Chat</strong>: In the <strong>All Chat Interactions (Historical)</strong> table, if you configure chat transcript storage for your CRM, the values in the <strong>Chat ID</strong> column become links to the chat transcripts.</li>
 </ul>]]></content>
-    <summary>New advanced reporting dashboards for contact center deflections are now available.</summary>
-    <title>Feature: Deflections dashboards</title>
+    <summary>New tabs for Queue Group Performance (All, Calls, Chats), an Interaction outcome column for Virtual Agent metrics, and chat transcript links in All Chat Interactions.</summary>
+    <title>Feature: Advanced reporting dashboard updates</title>
   </entry>
   <entry>
     <author>
@@ -232,8 +241,10 @@
 * Fixed an issue that caused inbound calls to disconnect if they were routed to an agent with a disabled microphone.
 * Fixed an issue for HubSpot users where logging the "call started" event (<code>create_activity</code>) in the ticket was delayed.
 * Fixed an issue that prevented transferred calls from being routed to available agents.
-* Fixed an issue in the agent adapter for French (Canada) where where words weren't translated or were translated incorrectly.</p>]]></content>
-    <summary>This release addresses numerous issues, including improvements to chat handling, data redaction, contact list loading, and error handling for emails and call durations. It also includes fixes for user experience, administrator settings, and reporting accuracy.</summary>
+* Fixed an issue in the agent adapter for French (Canada) where where words weren't translated or were translated incorrectly.
+* Fixed an issue in call queue metrics where the failed reason description for voice-scheduled mobile calls was not appearing.
+* Fixed an issue with custom advanced reporting dashboards where CSAT ratings were being grouped incorrectly.</p>]]></content>
+    <summary>This release addresses numerous bugs and usability improvements across the platform, including fixes for chat prioritization, data redaction, contact list loading, email errors, manager statistics, call duration calculations, external storage configurations, outbound call numbers, report formatting, SSO issues, agent status restrictions, contact list management, SMS and web chat availability, transfer restrictions, queue naming, instance creation timeouts, report downloads, chat history saving, transfer failure messages, IVR recording issues, chat session display, voicemail warnings, transfer restriction display, unread message counts, virtual assistant reporting, chat transcript formatting, historical report fields, CSAT scores, CRM case creation delays, media file display, agent status visibility, HTML rendering, agent status transitions, announcement assignments, clipboard functionality, translation errors, SIP call variables, chat adapter freezing, session type switching, Agent Assist platform display, Salesforce call button issues, audio file playback, custom panel URLs, CRM ticket creation, Telnyx call latency, BYOC call numbers, Telnyx chatbot worker failures, bulk user upload status, chat waiting field display, queue group dashboard metrics, inbound call disconnections, HubSpot ticket logging, transferred call routing, French (Canada) translations, call queue metrics, and custom advanced reporting dashboards.</summary>
     <title>Fixed: Resolved Various Issues</title>
   </entry>
   <entry>

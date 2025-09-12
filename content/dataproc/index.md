@@ -25,7 +25,7 @@ Announcing the [Preview release](https://cloud.google.com/products#product-launc
 * BigQuery Spark Connector 0.42.3
 * Cloud Storage Connector 3.1.5
 * Conda 25.3.0
-* Java 17
+* Java 21
 * Python 3.12
 * R 4.4
 * Scala 2.13

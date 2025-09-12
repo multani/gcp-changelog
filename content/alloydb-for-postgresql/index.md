@@ -1,5 +1,20 @@
 # AlloyDB for PostgreSQL
 
+## 2025-09-11
+
+### Feature
+
+AlloyDB supports
+[C4A Arm VMs](https://cloud.google.com/compute/docs/general-purpose-machines#c4a_series)
+on Google's custom-built Axion processors. C4A VMs are available as predefined
+configurations from 1, 4, 8, 16, 32, 48, 64, and 72 vCPUs, up to 576 GB of DDR5
+memory. C4A machines are available in
+[limited regions](https://cloud.google.com/alloydb/docs/cluster-create#expandable-1).
+For more information, see
+[Considerations when using the C4A Axion-based machine series](https://cloud.google.com/alloydb/docs/cluster-create#considerations-c4a).
+This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+---
 ## 2025-09-04
 
 ### Feature

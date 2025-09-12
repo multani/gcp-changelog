@@ -1,6 +1,24 @@
 {
   "name": "Guest Environment",
   "entries": {
+    "2025-09-09": [
+      {
+        "kind": "Feature",
+        "content": "Version 20250907.00 of the guest agent, which introduces the plugin-based\narchitecture to Enterprise Linux 8 operating systems, is now available. For more\ninformation about the plugin-based architecture, see [Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).\n\nWith this version, the plugin-based guest agent is now also available for the\nfollowing operating systems:\n\n* Red Hat Enterprise Linux (RHEL) 8\n* Rocky Linux 8\n* CentOS Stream 8\n* Oracle Linux 8\n* AlmaLinux 8",
+        "summary": {
+          "title": "New plugin-based guest agent for Enterprise Linux 8",
+          "summary": "Version 20250907.00 of the guest agent is now available for Enterprise Linux 8 operating systems, introducing a new plugin-based architecture. This update supports RHEL 8, Rocky Linux 8, CentOS Stream 8, Oracle Linux 8, and AlmaLinux 8."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Version `20250907.00` includes the following fixes for issues found in guest\nagent version `20250901.00`:\n\n* Corrects an issue in the OS Login module that was incorrectly handling\n  optional runtime systemd dependencies and causing an error log.\n* Fixes a bug that could cause the metadata SSH key module to enter an infinite\n  loop when setting up SSH keys. This occurred if an initial setup attempt failed\n  and the metadata server returned the SSH keys in a different order on a\n  subsequent retry.",
+        "summary": {
+          "title": "Guest agent fixes",
+          "summary": "Version 20250907.00 addresses issues in the OS Login module and the metadata SSH key module."
+        }
+      }
+    ],
     "2025-09-03": [
       {
         "kind": "Announcement",

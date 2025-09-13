@@ -1,5 +1,20 @@
 # Carbon Footprint
 
+## 2025-09-12
+
+### Fixed
+
+We have corrected an issue affecting the market-based Scope 2 emissions for the europe-west2 (London) region in the July 2025 Carbon Footprint data.
+
+In the [July 2025 methodology update](https://cloud.google.com/carbon-footprint/docs/release-notes#August_14_2025), renewable energy coverage was misapplied to the Scope 2 market-based emissions in the europe-west2 (London) region. This resulted in non-zero Scope 2 market-based emissions for europe-west2. This inconsistency arose from evolving RE100 market-boundary guidance following Brexit. While RE100 guidance excludes the UK from the EU market-boundary post-Brexit, it allows for the use of previously purchased EU energy attribute certificates (EACs) with sufficiently close vintages to be applied against UK consumption in 2024. Google's application of these EACs to UK consumption results in zero Scope 2 market-based emissions in the europe-west2 (London).
+
+We have corrected our data to align with the RE100 market boundaries guidance and our corporate environmental reporting of matched renewable energy. Scope 2 market-based emissions for europe-west2 are now correctly reported as zero for July 2025, using 2024 renewable energy coverage consistent with Google's environmental report.
+
+* To correct your historical data, please [run a backfill](https://cloud.google.com/bigquery/docs/working-with-transfers#manually_trigger_a_transfer_or_backfill) for July 2025 in your carbon footprint export. Due to a half-month lag in our data release, you will need to backfill the data for August 15, 2025, which will then update the July 2025 data in your BigQuery table.
+
+Data for August 2025, available on September 15, 2025, will automatically reflect this correction. Data for all previous periods remains unaffected.
+
+---
 ## 2025-09-03
 
 ### Announcement

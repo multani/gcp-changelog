@@ -1908,6 +1908,12 @@
 
 
 <h1 id="cloud-load-balancing">Cloud Load Balancing</h1>
+<h2 id="2025-09-12">2025-09-12</h2>
+<h3 id="changed">Changed</h3>
+<p>The global and classic external Application Load Balancers implemented on Google Front-Ends (GFEs) now support HTTP/1.0 explicitly as a protocol during ALPN (Application-Layer Protocol Negotiation) negotiation.</p>
+<p>Previously, when the GFEs didn't support HTTP/1.0 explicitly, the GFE would return an <code>SSL_TLSEXT_ERR_NOACK</code> response, disable ALPN, and fall back to using HTTP/1 as the default application protocol. After this change, GFEs will instead return <code>HTTP/1.0</code>, which provides clients with positive confirmation that their advertised <code>HTTP/1.0</code> was accepted.</p>
+<p>You are not expected to make any changes with this update. If a TLS handshake with HTTP/1.0 is unsuccessful, please contact <a href="https://cloud.google.com/load-balancing/docs/getting-support">support</a>.</p>
+<hr />
 <h2 id="2025-08-26">2025-08-26</h2>
 <h3 id="feature">Feature</h3>
 <p>The internal and external passthrough Network Load Balancers now support load balancing to unmanaged instance groups comprised of IPv6-only VM instances.</p>
@@ -1928,7 +1934,7 @@
 <p>This capability is now in <strong>General Availability</strong>.</p>
 <hr />
 <h2 id="2025-07-30">2025-07-30</h2>
-<h3 id="changed">Changed</h3>
+<h3 id="changed_1">Changed</h3>
 <p><strong>Starting October 15, 2025, the global and classic external Application Load Balancers are improving HTTP header handling for headers with obs-fold values to comply with the <a href="https://www.rfc-editor.org/rfc/rfc9112.html#section-5.2">RFC 9112</a> standard</strong></p>
 <p>Previously, these load balancers would forward HTTP headers with obs-fold values (those split across multiple lines, with subsequent lines starting with a space or a tab) without any changes. Starting October 15, 2025, each obs-fold will be replaced with one or more space characters (SP octets) before forwarding the message upstream. This ensures that the header is correctly interpreted as a single line, as required by the HTTP specification.</p>
 <p><strong>What you need to do</strong></p>
@@ -2007,6 +2013,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-load-balancing">Cloud Load Balancing</a></li>
+          <li class="nav-item">
+            <a href="#2025-09-12" class="nav-link">2025-09-12</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-08-26" class="nav-link">2025-08-26</a>
           </li>

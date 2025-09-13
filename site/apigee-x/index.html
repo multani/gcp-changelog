@@ -1908,11 +1908,16 @@
 
 
 <h1 id="apigee-x">Apigee X</h1>
+<h2 id="2025-09-11">2025-09-11</h2>
+<h3 id="changed">Changed</h3>
+<p><strong>API hub navigation update</strong></p>
+<p>The <strong>API hub</strong> section is now moved to the top level of the Apigee left navigation menu. This change improves discoverability and access to the API hub features.</p>
+<hr />
 <h2 id="2025-09-09">2025-09-09</h2>
 <h3 id="announcement">Announcement</h3>
 <p>On September 9, 2025, we released an updated version of Apigee (1-16-0-apigee-1).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
-<h3 id="changed">Changed</h3>
+<h3 id="changed_1">Changed</h3>
 <table>
 <thead>
 <tr>
@@ -2269,22 +2274,22 @@
 <h3 id="feature_10">Feature</h3>
 <p>Improved the startup times of Airflow workers for environments that have a large number of custom PyPI packages installed.</p>
 <p>This change rolls out gradually. In this release, it's available in asia-east1, asia-northeast2, asia-south1, europe-north1, europe-west3, us-east1, us-south1, and us-west2 regions.</p>
-<h3 id="changed_1">Changed</h3>
-<p><em>(Cloud Composer 3)</em> If a VPC network is attached to an environment, then all DNS addresses accessed by the Airflow components of the environment are resolved using the Cloud DNS configuration of the VPC network. In particular, Airflow workers that execute DAGs will resolve DNS addresses in this way.</p>
 <h3 id="changed_2">Changed</h3>
+<p><em>(Cloud Composer 3)</em> If a VPC network is attached to an environment, then all DNS addresses accessed by the Airflow components of the environment are resolved using the Cloud DNS configuration of the VPC network. In particular, Airflow workers that execute DAGs will resolve DNS addresses in this way.</p>
+<h3 id="changed_3">Changed</h3>
 <p><em>(Cloud Composer 3)</em> All newly created private DNS zones are immediately visible to a Cloud Composer environment. Previously, re-attaching a VPC network was required.</p>
 <h3 id="fixed_4">Fixed</h3>
 <p><em>(Cloud Composer 3)</em> It's now possible to use <a href="http://cloud.google.com/dns/docs/zones/cross-project-binding">zones with cross-project binding</a>. Before this change, cross-project bound zones weren't supported in Cloud Composer 3.</p>
-<h3 id="changed_3">Changed</h3>
+<h3 id="changed_4">Changed</h3>
 <p><em>(Cloud Composer 2)</em> In Cloud Composer versions 2.11.5 and later, log processing is switching to using OpenTelemetry instead of Fluentd.</p>
 <p>This change was <a href="https://cloud.google.com/composer/docs/release-notes#May_14_2025">announced previously</a> and is gradually rolling out over several releases. In this release, it's available in the following regions: asia-east1, asia-east2, asia-northeast2, asia-northeast3, asia-south2, asia-southeast2, australia-southeast1, australia-southeast2, europe-central2, europe-north1, europe-north2, europe-southwest1, europe-west, europe-west10, europe-west12, europe-west6, europe-west8, europe-west9, me-central1, me-central2, me-west1, northamerica-northeast2, northamerica-south1, southamerica-east1, southamerica-west1, us-east5, us-south1, us-west, and us-west3.</p>
-<h3 id="changed_4">Changed</h3>
+<h3 id="changed_5">Changed</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a> are available in Cloud Composer 3:</p>
 <ul>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-5">composer-3-airflow-2.10.5-build.5</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-25">composer-3-airflow-2.9.3-build.25</a></li>
 </ul>
-<h3 id="changed_5">Changed</h3>
+<h3 id="changed_6">Changed</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a> are available in Cloud Composer 2:</p>
 <ul>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-3-airflow-2-10-5">composer-2.13.3-airflow-2.10.5</a> (default)</li>
@@ -2293,7 +2298,7 @@
 <h3 id="deprecated">Deprecated</h3>
 <p>Cloud Composer version 2.8.1 has reached its <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>.</p>
 <h2 id="cloud-data-fusion">Cloud Data Fusion</h2>
-<h3 id="changed_6">Changed</h3>
+<h3 id="changed_7">Changed</h3>
 <p>The <a href="https://cloud.google.com/data-fusion/docs/how-to/configure-salesforce-batch-source">Salesforce plugin</a> version 1.6.10 is available in Cloud Data Fusion versions 6.10.1 and 6.11.0. This release includes the following changes:</p>
 <ul>
 <li>Upgraded Salesforce API version from 53.0 to 62.0 (<a href="https://cdap.atlassian.net/browse/PLUGIN-1891">PLUGIN-1891</a>).</li>
@@ -2338,7 +2343,7 @@ For more information, see the following:</p>
 <h3 id="feature_12">Feature</h3>
 <p><strong>Preview</strong>: The general-purpose C4D machine series offers bare metal (<code>-metal</code>) machine types with 384 vCPUs. Bare metal instances let you create an instance with direct access to the machine's CPU and memory, without a virtualization layer in the middle. To learn more, see <a href="https://cloud.google.com/compute/docs/general-purpose-machines#c4d_series">C4D machine series</a>. For information about bare metal instances, including regional availability, see <a href="https://cloud.google.com/compute/docs/instances/bare-metal-instances">Bare metal instances on Compute Engine</a>.</p>
 <h2 id="container-optimized-os">Container Optimized OS</h2>
-<h3 id="changed_7">Changed</h3>
+<h3 id="changed_8">Changed</h3>
 <h3 id="cos-dev-125-19071-0-0">cos-dev-125-19071-0-0</h3>
 <table>
 <thead>
@@ -2364,14 +2369,14 @@ For more information, see the following:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="changed_8">Changed</h3>
+<h3 id="changed_9">Changed</h3>
 <p>Upgraded google-guest-agent to 20250327.00. This included
 new services like <code>google-guest-compat-manager.service</code> and
 <code>google-guest-agent-manager.service</code> and new binaries like
 <code>google_guest_compat_manager</code>, <code>gce_metadata_script_runner</code>,
 <code>google_guest_agent_manager</code>, <code>ggactl_plugin_cleanup</code> and
 <code>gce_compat_metadata_script_runner</code>.</p>
-<h3 id="changed_9">Changed</h3>
+<h3 id="changed_10">Changed</h3>
 <p>Updated the Linux kernel to v6.6.92.</p>
 <h3 id="feature_13">Feature</h3>
 <p>Supported NVIDIA MFT Tools.</p>
@@ -2415,13 +2420,13 @@ new services like <code>google-guest-compat-manager.service</code> and
 <p>Fixed CVE-20250-3198 in sys-libs/bintuils-libs.</p>
 <h3 id="security_5">Security</h3>
 <p>Fixed KCTF-3f98113 in the Linux kernel.</p>
-<h3 id="changed_10">Changed</h3>
+<h3 id="changed_11">Changed</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 811729 -&gt; 811798</li>
 <li>Changed: net.ipv6.conf.docker0.mtu: 1500 -&gt; 1460</li>
 </ul>
-<h3 id="changed_11">Changed</h3>
+<h3 id="changed_12">Changed</h3>
 <h3 id="cos-117-18613-263-24">cos-117-18613-263-24</h3>
 <table>
 <thead>
@@ -2459,7 +2464,7 @@ new services like <code>google-guest-compat-manager.service</code> and
 <p>Fixed KCTF-3f98113 in the Linux kernel.</p>
 <h3 id="security_9">Security</h3>
 <p>Fixed KCTF-8478a72 in the Linux kernel.</p>
-<h3 id="changed_12">Changed</h3>
+<h3 id="changed_13">Changed</h3>
 <h3 id="cos-113-18244-382-29">cos-113-18244-382-29</h3>
 <table>
 <thead>
@@ -2497,7 +2502,7 @@ new services like <code>google-guest-compat-manager.service</code> and
 <p>Fixed KCTF-3f98113 in the Linux kernel.</p>
 <h3 id="security_13">Security</h3>
 <p>Fixed KCTF-8478a72 in the Linux kernel.</p>
-<h3 id="changed_13">Changed</h3>
+<h3 id="changed_14">Changed</h3>
 <h3 id="cos-121-18867-90-38">cos-121-18867-90-38</h3>
 <table>
 <thead>
@@ -2533,7 +2538,7 @@ new services like <code>google-guest-compat-manager.service</code> and
 <p>Fixed KCTF-3f98113 in the Linux kernel.</p>
 <h3 id="security_16">Security</h3>
 <p>Fixed KCTF-8478a72 in the Linux kernel.</p>
-<h3 id="changed_14">Changed</h3>
+<h3 id="changed_15">Changed</h3>
 <h3 id="cos-109-17800-519-18">cos-109-17800-519-18</h3>
 <table>
 <thead>
@@ -2573,7 +2578,7 @@ new services like <code>google-guest-compat-manager.service</code> and
 <h3 id="feature_15">Feature</h3>
 <p>(New guide) <a href="https://cloud.google.com/architecture/optimize-ai-ml-workloads-managed-lustre">Optimize AI and ML workloads with Google Cloud Managed Lustre</a>: Shows how to use Managed Lustre to optimize the performance of AI and ML workloads.</p>
 <h2 id="policy-controller">Policy Controller</h2>
-<h3 id="changed_15">Changed</h3>
+<h3 id="changed_16">Changed</h3>
 <p>Policy Controller version 1.20.4 is now available.</p>
 <h2 id="pubsub">Pub/Sub</h2>
 <h3 id="libraries_3">Libraries</h3>
@@ -2773,6 +2778,9 @@ new services like <code>google-guest-compat-manager.service</code> and
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#apigee-x">Apigee X</a></li>
+          <li class="nav-item">
+            <a href="#2025-09-11" class="nav-link">2025-09-11</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-09-09" class="nav-link">2025-09-09</a>
           </li>

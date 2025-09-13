@@ -175,8 +175,9 @@ The following issues were addressed in this release:
 * Fixed an issue for HubSpot users where logging the "call started" event (`create_activity`) in the ticket was delayed.
 * Fixed an issue that prevented transferred calls from being routed to available agents.
 * Fixed an issue in the agent adapter for French (Canada) where where words weren't translated or were translated incorrectly.
-* Fixed an issue in call queue metrics where the failed reason description for voice-scheduled mobile calls was not appearing.
-* Fixed an issue with custom advanced reporting dashboards where CSAT ratings were being grouped incorrectly.
+* Fixed an issue in call queue reporting where the Failed Reason Description for voice-scheduled mobile calls was not appearing.
+* Fixed an advanced reporting issue where CSAT ratings were not appearing correctly when creating custom dashboards.
+* Fixed an advanced reporting issue where callbacks waiting metrics didn't match in the following dashboards: **Queue Groups Dashboard Calls** and **Queued Calls Status Dashboard**.
 
 ---
 ## 2025-08-20

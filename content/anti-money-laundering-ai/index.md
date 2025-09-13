@@ -1,5 +1,16 @@
 # Anti Money Laundering AI
 
+## 2025-09-03
+
+### Announcement
+
+New minor engine versions released for retail line of business within the v004 tuning version. This extends support for the major version and includes no significant changes compared to the previous minor version.
+
+### Announcement
+
+New minor engine version released for commercial line of business within the v004 tuning version. This extends support for the major version and includes no significant changes versus the previous minor version.
+
+---
 ## 2025-07-10
 
 ### Announcement

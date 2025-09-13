@@ -1,5 +1,18 @@
 # Apigee API hub
 
+## 2025-09-11
+
+### Changed
+
+**API hub navigation update**
+
+The **API hub** section is now moved to the top level of the Apigee left navigation menu. This change improves discoverability and access to the API hub features.
+
+### Libraries
+
+Updated Go client library. For more information, see [apihub: v0.2.0](https://github.com/googleapis/google-cloud-go/releases/tag/apihub/v0.2.0).
+
+---
 ## 2025-09-08
 
 ### Feature

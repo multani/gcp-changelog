@@ -1,5 +1,14 @@
 # Apigee X
 
+## 2025-09-11
+
+### Changed
+
+**API hub navigation update**
+
+The **API hub** section is now moved to the top level of the Apigee left navigation menu. This change improves discoverability and access to the API hub features.
+
+---
 ## 2025-09-09
 
 ### Announcement

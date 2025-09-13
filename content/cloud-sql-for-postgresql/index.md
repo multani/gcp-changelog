@@ -1,5 +1,14 @@
 # Cloud SQL for PostgreSQL
 
+## 2025-09-12
+
+### Feature
+
+If a specific active query is blocked or running much longer than expected, it can block other dependent queries. Cloud SQL for PostgreSQL offers an optional feature that lets you terminate specific long-running or blocked active queries.
+
+For more information, see [Blocked active queries (Preview)](https://cloud.google.com/sql/docs/postgres/monitor-active-queries#blocked-active-queries).
+
+---
 ## 2025-09-09
 
 ### Feature

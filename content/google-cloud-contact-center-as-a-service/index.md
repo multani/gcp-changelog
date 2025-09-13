@@ -99,17 +99,11 @@ You can now use the callback calls API to cancel a single scheduled callback cal
 
 ### Feature
 
-**Advanced reporting dashboard updates**
+**New advanced reporting dashboards**
 
-We've made the following updates to the advanced reporting dashboards:
+The following new advanced reporting dashboard is available:
 
-* **Queue Group Performance**: Information is split into three new tabs:
-
-  + **All**: Contains **Queue Group Performance Calls** and **Queue Group Performance Chats** tables.
-  + **Calls**: Contains metrics tiles and a **Live Data** table for calls.
-  + **Chats**: Contains metrics tiles and tables for **Live Data** and **Historical Data** for calls.
-* **Virtual Agent**: The virtual agent metrics table on both the **Virtual Agent - Calls** and **Virtual Agent - Chats** dashboards contains a new **Interaction outcome** column.
-* **All Interactions Chat**: In the **All Chat Interactions (Historical)** table, if you configure chat transcript storage for your CRM, the values in the **Chat ID** column become links to the chat transcripts.
+* **Deflections**. Get deflection information by queue and for your entire contact center. For more information, see [Deflections dashboards](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-deflections).
 
 ### Fixed
 

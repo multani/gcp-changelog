@@ -10,6 +10,10 @@ Use the [BigQuery migration assessment for Informatica](https://cloud.google.com
 
 Gemini now recommends natural language prompts for you in the [SQL generation tool](https://cloud.google.com/bigquery/docs/write-sql-gemini#generate_a_sql_query). This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
 
+### Feature
+
+When you use the [Data Science Agent](https://cloud.google.com/bigquery/docs/colab-data-science-agent) in BigQuery, you can now use the Apache Spark or PySpark keywords in your prompt. The Data Science Agent is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
 ---
 ## 2025-09-10
 

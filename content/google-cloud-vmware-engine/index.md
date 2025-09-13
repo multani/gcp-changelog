@@ -1,5 +1,12 @@
 # Google Cloud VMware Engine
 
+## 2025-09-11
+
+### Feature
+
+You can now use Privileged Access Manager (PAM) to accelerate the deletion of "soft deleted" private clouds. For more information, see the documentation on how to [delete a private cloud](https://cloud.google.com/vmware-engine/docs/private-clouds/howto-delete-private-cloud).
+
+---
 ## 2025-08-28
 
 ### Announcement

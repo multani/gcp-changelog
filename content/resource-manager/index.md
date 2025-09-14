@@ -1,5 +1,12 @@
 # Resource Manager
 
+## 2025-09-11
+
+### Feature
+
+You can use custom constraints with Organization Policy to provide more granular control over specific fields for some Live Stream API resources. For more information, see [Use custom custom constraints](https://cloud.google.com/livestream/docs/custom-constraints).
+
+---
 ## 2025-09-10
 
 ### Feature

@@ -1,5 +1,30 @@
 # Security Command Center
 
+## 2025-09-12
+
+### Changed
+
+Security Command Center has improved the automatic selection of resources when
+running attack path simulations using the default high-value resource set.
+
+[Risk
+Engine](https://cloud.google.com/security-command-center/docs/attack-exposure-supported-features)
+uses heuristics to identify resources used for non-production purposes. To help
+ensure that you have information about the most important assets, Risk Engine
+calculates the attack exposure score for all other resources in the default high-value resource set
+before calculating the attack exposure score for these non-production resources.
+
+To customize the high-value
+resource set, see [Define and manage your high-value resource
+set](https://cloud.google.com/security-command-center/docs/attack-exposure-define-high-value-resource-set).
+For information about Risk Engine, see [Attack exposure scores and attack
+paths](https://cloud.google.com/security-command-center/docs/attack-exposure-learn).
+
+### Changed
+
+Security Command Center changed how Google Cloud subnets are handled when running [attack path simulations](https://cloud.google.com/security-command-center/docs/attack-exposure-learn). The result is that attack paths are more accurate in relation to networking. Certain customers with specific Google Cloud subnet configurations, for example, when a VPC connector accesses a subnetwork, may see significant changes to toxic combinations, chokepoints, and attack exposure scores.
+
+---
 ## 2025-09-11
 
 ### Feature

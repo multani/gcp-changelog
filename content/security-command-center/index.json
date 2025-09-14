@@ -1,6 +1,24 @@
 {
   "name": "Security Command Center",
   "entries": {
+    "2025-09-12": [
+      {
+        "kind": "Changed",
+        "content": "Security Command Center has improved the automatic selection of resources when\nrunning attack path simulations using the default high-value resource set.\n\n[Risk\nEngine](https://cloud.google.com/security-command-center/docs/attack-exposure-supported-features)\nuses heuristics to identify resources used for non-production purposes. To help\nensure that you have information about the most important assets, Risk Engine\ncalculates the attack exposure score for all other resources in the default high-value resource set\nbefore calculating the attack exposure score for these non-production resources.\n\nTo customize the high-value\nresource set, see [Define and manage your high-value resource\nset](https://cloud.google.com/security-command-center/docs/attack-exposure-define-high-value-resource-set).\nFor information about Risk Engine, see [Attack exposure scores and attack\npaths](https://cloud.google.com/security-command-center/docs/attack-exposure-learn).",
+        "summary": {
+          "title": "Improved resource selection for attack path simulations",
+          "summary": "Attack path simulations now have improved automatic selection of resources, prioritizing high-value assets by default. This enhancement ensures that critical resources are analyzed first in attack exposure scoring."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Security Command Center changed how Google Cloud subnets are handled when running [attack path simulations](https://cloud.google.com/security-command-center/docs/attack-exposure-learn). The result is that attack paths are more accurate in relation to networking. Certain customers with specific Google Cloud subnet configurations, for example, when a VPC connector accesses a subnetwork, may see significant changes to toxic combinations, chokepoints, and attack exposure scores.",
+        "summary": {
+          "title": "Security Command Center: Network path simulations updated",
+          "summary": "Attack path simulations in Security Command Center have been updated to improve accuracy regarding Google Cloud subnets and networking. Customers with specific VPC configurations may notice changes in attack exposure scores."
+        }
+      }
+    ],
     "2025-09-11": [
       {
         "kind": "Feature",

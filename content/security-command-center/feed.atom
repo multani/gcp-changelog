@@ -2,9 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Security Command Center</title>
   <subtitle>Changelog for Google Cloud product: Security Command Center</subtitle>
-  <updated>2025-09-11T00:00:00+00:00</updated>
+  <updated>2025-09-12T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:security-command-center</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/security-command-center/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:security-command-center:2025-09-12:changed:0</id>
+    <published>2025-09-12T00:00:00+00:00</published>
+    <updated>2025-09-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Security Command Center has improved the automatic selection of resources when
+running attack path simulations using the default high-value resource set.</p>
+<p><a href="https://cloud.google.com/security-command-center/docs/attack-exposure-supported-features">Risk
+Engine</a>
+uses heuristics to identify resources used for non-production purposes. To help
+ensure that you have information about the most important assets, Risk Engine
+calculates the attack exposure score for all other resources in the default high-value resource set
+before calculating the attack exposure score for these non-production resources.</p>
+<p>To customize the high-value
+resource set, see <a href="https://cloud.google.com/security-command-center/docs/attack-exposure-define-high-value-resource-set">Define and manage your high-value resource
+set</a>.
+For information about Risk Engine, see <a href="https://cloud.google.com/security-command-center/docs/attack-exposure-learn">Attack exposure scores and attack
+paths</a>.</p>]]></content>
+    <summary>Attack path simulations now have improved automatic selection of resources, prioritizing high-value assets by default. This enhancement ensures that critical resources are analyzed first in attack exposure scoring.</summary>
+    <title>Changed: Improved resource selection for attack path simulations</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:security-command-center:2025-09-12:changed:1</id>
+    <published>2025-09-12T00:00:00+00:00</published>
+    <updated>2025-09-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Security Command Center changed how Google Cloud subnets are handled when running <a href="https://cloud.google.com/security-command-center/docs/attack-exposure-learn">attack path simulations</a>. The result is that attack paths are more accurate in relation to networking. Certain customers with specific Google Cloud subnet configurations, for example, when a VPC connector accesses a subnetwork, may see significant changes to toxic combinations, chokepoints, and attack exposure scores.</p>]]></content>
+    <summary>Attack path simulations in Security Command Center have been updated to improve accuracy regarding Google Cloud subnets and networking. Customers with specific VPC configurations may notice changes in attack exposure scores.</summary>
+    <title>Changed: Security Command Center: Network path simulations updated</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

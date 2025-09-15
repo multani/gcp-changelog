@@ -4,10 +4,10 @@
     "2025-09-12": [
       {
         "kind": "Changed",
-        "content": "The global and classic external Application Load Balancers implemented on Google Front-Ends (GFEs) now support HTTP/1.0 explicitly as a protocol during ALPN (Application-Layer Protocol Negotiation) negotiation.\n\nPreviously, when the GFEs didn't support HTTP/1.0 explicitly, the GFE would return an `SSL_TLSEXT_ERR_NOACK` response, disable ALPN, and fall back to using HTTP/1 as the default application protocol. After this change, GFEs will instead return `HTTP/1.0`, which provides clients with positive confirmation that their advertised `HTTP/1.0` was accepted.\n\nYou are not expected to make any changes with this update. If a TLS handshake with HTTP/1.0 is unsuccessful, please contact [support](https://cloud.google.com/load-balancing/docs/getting-support).",
+        "content": "The global and classic external Application Load Balancers implemented on Google Front-Ends (GFEs) now support HTTP/1.0 explicitly as a protocol during ALPN (Application-Layer Protocol Negotiation) negotiation.\n\nPreviously, when the GFEs didn't support HTTP/1.0 explicitly, the GFE would return an `SSL_TLSEXT_ERR_NOACK` response, disable ALPN, and fall back to using HTTP/1 (which includes HTTP/1.0 and HTTP/1.1) as the default application protocol. After this change, GFEs will instead return `HTTP/1.0`, which provides clients with positive confirmation that their advertised `HTTP/1.0` was accepted.\n\nYou are not expected to make any changes with this update. If a TLS handshake with HTTP/1.0 is unsuccessful, please contact [support](https://cloud.google.com/load-balancing/docs/getting-support).",
         "summary": {
-          "title": "HTTP/1.0 support for external Application Load Balancers",
-          "summary": "External Application Load Balancers now explicitly support HTTP/1.0 during ALPN negotiation. Previously, unsupported HTTP/1.0 requests would fall back to HTTP/1. Now, clients receive positive confirmation when HTTP/1.0 is accepted. No action is required from users."
+          "title": "HTTP/1.0 Support Added to Load Balancers",
+          "summary": "Global and classic external Application Load Balancers now explicitly support HTTP/1.0 during ALPN negotiation. Previously, unsupported protocols would cause a fallback to HTTP/1. No changes are expected with this update."
         }
       }
     ],

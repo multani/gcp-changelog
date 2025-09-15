@@ -13,10 +13,10 @@
     <published>2025-09-12T00:00:00+00:00</published>
     <updated>2025-09-12T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The global and classic external Application Load Balancers implemented on Google Front-Ends (GFEs) now support HTTP/1.0 explicitly as a protocol during ALPN (Application-Layer Protocol Negotiation) negotiation.</p>
-<p>Previously, when the GFEs didn't support HTTP/1.0 explicitly, the GFE would return an <code>SSL_TLSEXT_ERR_NOACK</code> response, disable ALPN, and fall back to using HTTP/1 as the default application protocol. After this change, GFEs will instead return <code>HTTP/1.0</code>, which provides clients with positive confirmation that their advertised <code>HTTP/1.0</code> was accepted.</p>
+<p>Previously, when the GFEs didn't support HTTP/1.0 explicitly, the GFE would return an <code>SSL_TLSEXT_ERR_NOACK</code> response, disable ALPN, and fall back to using HTTP/1 (which includes HTTP/1.0 and HTTP/1.1) as the default application protocol. After this change, GFEs will instead return <code>HTTP/1.0</code>, which provides clients with positive confirmation that their advertised <code>HTTP/1.0</code> was accepted.</p>
 <p>You are not expected to make any changes with this update. If a TLS handshake with HTTP/1.0 is unsuccessful, please contact <a href="https://cloud.google.com/load-balancing/docs/getting-support">support</a>.</p>]]></content>
-    <summary>External Application Load Balancers now explicitly support HTTP/1.0 during ALPN negotiation. Previously, unsupported HTTP/1.0 requests would fall back to HTTP/1. Now, clients receive positive confirmation when HTTP/1.0 is accepted. No action is required from users.</summary>
-    <title>Changed: HTTP/1.0 support for external Application Load Balancers</title>
+    <summary>Global and classic external Application Load Balancers now explicitly support HTTP/1.0 during ALPN negotiation. Previously, unsupported protocols would cause a fallback to HTTP/1. No changes are expected with this update.</summary>
+    <title>Changed: HTTP/1.0 Support Added to Load Balancers</title>
   </entry>
   <entry>
     <author>

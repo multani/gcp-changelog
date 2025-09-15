@@ -1,5 +1,18 @@
 # Cloud Monitoring
 
+## 2025-09-15
+
+### Feature
+
+When viewing a chart, you can now open a flyout that displays the chart and
+related log entries. To explore your metric and log data in more detail,
+you can then use the toolbars and menus in the flyout. To learn more,
+see the following:
+
+* [Correlate metric and log data](https://cloud.google.com/monitoring/charts/working-with-charts#correlate-telemetry)
+* [Explore application telemetry](https://cloud.google.com/monitoring/docs/application-monitoring#explore-application)
+
+---
 ## 2025-08-25
 
 ### Feature

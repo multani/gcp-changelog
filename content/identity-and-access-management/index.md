@@ -1,5 +1,18 @@
 # Identity and Access Management
 
+## 2025-09-12
+
+### Feature
+
+IAM offers predefined roles that are tailored to specific job functions. These roles cover all of the permissions that a user might need to perform their job. This feature is [generally available](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [Predefined roles for job functions](https://cloud.google.com/iam/docs/job-functions/roles-for-job-functions).
+
+### Feature
+
+Permission errors in the Google Cloud console contain actionable steps for remediation. For more information, see [Troubleshoot permission error messages](https://cloud.google.com/iam/docs/permission-error-messages).
+
+---
 ## 2025-07-21
 
 ### Feature

@@ -1,5 +1,12 @@
 # Google Cloud Managed Service for Apache Kafka
 
+## 2025-09-09
+
+### Feature
+
+General availability: You can now use mutual TLS (mTLS) for certificate-based authentication with your Managed Service for Apache Kafka brokers. This feature is available for clusters created after June 24, 2025. For more information, see [Authentication types for Kafka brokers](https://cloud.google.com/managed-service-for-apache-kafka/docs/authn-types-kafka).
+
+---
 ## 2025-09-04
 
 ### Feature

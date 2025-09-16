@@ -1,5 +1,27 @@
 # Google SecOps SOAR
 
+## 2025-09-16
+
+### Announcement
+
+**Migrate SOAR to Google Cloud**
+
+All customers and partners are being migrated from SOAR to Google Cloud. For more information, see [SOAR migration overview](https://cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp) and [FAQ](https://cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-soar-faq).
+
+### Announcement
+
+Release 6.3.62 is being rolled out to the first phase of regions as listed [here](https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains internal and customer bug fixes.
+
+---
+## 2025-09-15
+
+### Announcement
+
+[Release 6.3.61](https://cloud.google.com/chronicle/docs/soar/release-notes?hl=en#September_07_2025) is now available for all regions.
+
+---
 ## 2025-09-07
 
 ### Announcement

@@ -1,5 +1,55 @@
 # BigQuery
 
+## 2025-09-15
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Java
+
+### Changes for [google-cloud-bigquery](https://github.com/googleapis/java-bigquery)
+
+#### [2.55.0](https://github.com/googleapis/java-bigquery/compare/v2.54.2...v2.55.0) (2025-09-12)
+
+##### Features
+
+* **bigquery:** Add custom ExceptionHandler to BigQueryOptions ([#3937](https://github.com/googleapis/java-bigquery/issues/3937)) ([de0914d](https://github.com/googleapis/java-bigquery/commit/de0914ddbccf988294d50faf56a515e58ab3505d))
+
+##### Dependencies
+
+* Update dependency com.google.cloud:google-cloud-bigquerystorage-bom to v3.17.0 ([#3954](https://github.com/googleapis/java-bigquery/issues/3954)) ([e73deed](https://github.com/googleapis/java-bigquery/commit/e73deed9c68a45023d02b40144c304329d6b5829))
+* Update dependency com.google.cloud:sdk-platform-java-config to v3.52.1 ([#3952](https://github.com/googleapis/java-bigquery/issues/3952)) ([79b7557](https://github.com/googleapis/java-bigquery/commit/79b7557501d318fd92b90a681036fe6a1aa1bac4))
+
+### Python
+
+### Changes for [google-cloud-bigquery](https://github.com/googleapis/python-bigquery)
+
+#### [3.37.0](https://github.com/googleapis/python-bigquery/compare/v3.36.0...v3.37.0) (2025-09-08)
+
+##### Features
+
+* Updates to fastpath query execution ([#2268](https://github.com/googleapis/python-bigquery/issues/2268)) ([ef2740a](https://github.com/googleapis/python-bigquery/commit/ef2740a158199633b5543a7b6eb19587580792cd))
+
+##### Bug Fixes
+
+* Remove deepcopy while setting properties for \_QueryResults ([#2280](https://github.com/googleapis/python-bigquery/issues/2280)) ([33ea296](https://github.com/googleapis/python-bigquery/commit/33ea29616c06a2e2a106a785d216e784737ae386))
+
+##### Documentation
+
+* Clarify that the presence of `XyzJob.errors` doesn't necessarily mean that the job has not completed or was unsuccessful ([#2278](https://github.com/googleapis/python-bigquery/issues/2278)) ([6e88d7d](https://github.com/googleapis/python-bigquery/commit/6e88d7dbe42ebfc35986da665d656b49ac481db4))
+* Clarify the api\_method arg for client.query() ([#2277](https://github.com/googleapis/python-bigquery/issues/2277)) ([8a13c12](https://github.com/googleapis/python-bigquery/commit/8a13c12905ffcb3dbb6086a61df37556f0c2cd31))
+
+### Feature
+
+In the BigQuery Studio, in the Explorer pane, you can now [open saved queries in Connected Sheets](https://cloud.google.com/bigquery/docs/manage-saved-queries#open-saved-queries-in-sheets). This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+### Feature
+
+You can now enable the [BigQuery advanced runtime](https://cloud.google.com/bigquery/docs/advanced-runtime) to improve query execution time and slot usage. This feature is [generally available](https://cloud.google.com/products/#product-launch-stages) (GA).
+Between September 15, 2025 and early 2026, the BigQuery advanced runtime will become the default runtime for all projects.
+
+---
 ## 2025-09-11
 
 ### Feature

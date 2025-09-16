@@ -2,9 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Compute Engine</title>
   <subtitle>Changelog for Google Cloud product: Compute Engine</subtitle>
-  <updated>2025-09-12T00:00:00+00:00</updated>
+  <updated>2025-09-15T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:compute-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/compute-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2025-09-15:feature:0</id>
+    <published>2025-09-15T00:00:00+00:00</published>
+    <updated>2025-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Generally available</strong>: You can decrease a Compute Engine instance shutdown time by skipping the guest OS shutdown. This action speeds up an instance stop or deletion operation to release resources and quota faster. However, as abrupt guest OS shutdowns may cause data loss or corrupt file system data, we recommend that you skip a guest OS shutdown only when you delete instances, or when you stop instances which boot disks you don't plan to reuse. For more information, see <a href="https://cloud.google.com/compute/docs/instances/decrease-shutdown-time">Decrease Compute Engine instances shutdown time</a>.</p>]]></content>
+    <summary>You can now skip the guest OS shutdown to decrease Compute Engine instance shutdown time, which speeds up instance stop or deletion operations. Use this feature cautiously to avoid data loss.</summary>
+    <title>Feature: Faster instance shutdown</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

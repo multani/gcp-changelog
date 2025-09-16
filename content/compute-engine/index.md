@@ -1,5 +1,12 @@
 # Compute Engine
 
+## 2025-09-15
+
+### Feature
+
+**Generally available**: You can decrease a Compute Engine instance shutdown time by skipping the guest OS shutdown. This action speeds up an instance stop or deletion operation to release resources and quota faster. However, as abrupt guest OS shutdowns may cause data loss or corrupt file system data, we recommend that you skip a guest OS shutdown only when you delete instances, or when you stop instances which boot disks you don't plan to reuse. For more information, see [Decrease Compute Engine instances shutdown time](https://cloud.google.com/compute/docs/instances/decrease-shutdown-time).
+
+---
 ## 2025-09-12
 
 ### Feature

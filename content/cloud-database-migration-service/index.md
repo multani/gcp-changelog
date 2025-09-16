@@ -1,5 +1,17 @@
 # Cloud Database Migration Service
 
+## 2025-09-15
+
+### Announcement
+
+Gemini-powered conversion features for heterogeneous migrations
+in Database Migration Service are now generally available
+([GA](https://cloud.google.com/products#product-launch-stages)).
+
+For more information, see
+[Accelerate code and schema conversion with Gemini](https://cloud.google.com/database-migration/docs/convert-sql-with-dms#gemini-conversion).
+
+---
 ## 2025-09-05
 
 ### Feature

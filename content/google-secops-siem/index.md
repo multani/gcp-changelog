@@ -1,5 +1,16 @@
 # Google SecOps SIEM
 
+## 2025-09-10
+
+### Feature
+
+**View data retention start date**
+
+You can now view the start date for your account's data retention period. A new, read-only page, **Data Retention**, is available under **SIEM Settings**. This page also shows the start date for your Google SecOps account's data retention period.
+
+For more information, see [View data retention in your Google SecOps account](https://cloud.google.com/chronicle/docs/about/data-retention).
+
+---
 ## 2025-09-08
 
 ### Announcement

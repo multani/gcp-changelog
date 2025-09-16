@@ -1,5 +1,12 @@
 # Service Extensions
 
+## 2025-09-15
+
+### Feature
+
+To protect AI workloads, you can [configure traffic extensions to call the Model Armor service](https://cloud.google.com/service-extensions/docs/configure-extensions-to-google-services#configure-traffic-ma) on supported Application Load Balancers. This feature is in **General Availability**.
+
+---
 ## 2025-07-24
 
 ### Feature

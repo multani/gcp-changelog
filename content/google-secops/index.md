@@ -1,5 +1,29 @@
 # Google SecOps
 
+## 2025-09-11
+
+### Feature
+
+**SecOps Labs**
+
+This feature is in preview.
+
+You can now configure and run Google SecOps Gemini and other intelligence *experiments* without disrupting your existing production systems—and benefit from their output. The experiments comply with the Role-Based Access Control (RBAC) configuration of your environment, and they have streamlined configurations with clear actionable results and output.
+
+For details, see [Use Gemini and other experiments in Google SecOps](https://cloud.google.com/chronicle/docs/secops/google-secops-labs).
+
+---
+## 2025-09-10
+
+### Feature
+
+**View data retention start date**
+
+You can now view the start date for your account's data retention period. A new, read-only page, **Data Retention**, is available under **SIEM Settings**. This page also shows the start date for your Google SecOps account's data retention period.
+
+For more information, see [View data retention in your Google SecOps account](https://cloud.google.com/chronicle/docs/about/data-retention).
+
+---
 ## 2025-09-08
 
 ### Announcement

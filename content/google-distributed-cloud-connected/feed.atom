@@ -2,14 +2,155 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Distributed Cloud connected</title>
   <subtitle>Changelog for Google Cloud product: Google Distributed Cloud connected</subtitle>
-  <updated>2025-08-15T00:00:00+00:00</updated>
+  <updated>2025-09-15T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-distributed-cloud-connected/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-08-15:announcement:0</id>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-09-15:announcement:0</id>
+    <published>2025-09-15T00:00:00+00:00</published>
+    <updated>2025-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This is a minor release of Google Distributed Cloud connected (version 1.11.0).</p>]]></content>
+    <summary>A minor update for Google Distributed Cloud connected is now available.</summary>
+    <title>Announcement: Minor Release</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-09-15:feature:1</id>
+    <published>2025-09-15T00:00:00+00:00</published>
+    <updated>2025-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following new functionality has been introduced in this release of Google Distributed Cloud connected:</p>
+<ul>
+<li><strong>Backup for VM workloads on GDC connected servers.</strong> You can now backup and restore virtual machine workloads on your Google Distributed Cloud connected servers deployment, including scheduling. For more information, see <a href="https://cloud.google.com/distributed-cloud/edge/latest/docs/vm-servers#back_up_a_virtual_machine">Back up a virtual machine</a>.</li>
+<li><strong>Configurable runtime class for container workloads.</strong> As part of gVisor integration in Google Distributed Cloud connected, you can now specify the default runtime class for container workloads at both Pod and cluster level. Cluster-level runtime class selection is a preview-level feature. For more information, see <a href="https://cloud.google.com/distributed-cloud/edge/latest/docs/deploy#runtime-class">Configure the runtime class for a Pod</a>.</li>
+<li><strong>Island mode networking.</strong> Google Distributed Cloud connected now supports <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/reference/flat-vs-island-network">island mode networking</a> on secondary network interfaces. For more information, see <a href="https://cloud.google.com/distributed-cloud/edge/latest/docs/networking#island-mode">(Optional) Configure island mode</a>.</li>
+<li><strong><code>AppArmor</code> sandboxing audit logs for VM workloads.</strong> Google Distributed Cloud connected now lets you enable audit logs for virtual machine workloads sandboxed using <code>AppArmor</code> policies. To enable audit log emission on an existing virtual machine workload, restart the corresponding virtual machine. For more information, see <a href="https://cloud.google.com/distributed-cloud/edge/latest/docs/vm-servers#view_apparmor_sandboxing_audit_logs">View AppArmor sandboxing audit logs</a>.</li>
+<li><strong>CoreDNS resolution for secondary networks.</strong> Google Distributed Cloud connected now supports specifying a CIDR block for use with secondary networks at both Pod and cluster level. This allows for CoreDNS resolution on secondary network interfaces. For more information, see <a href="https://cloud.google.com/distributed-cloud/edge/latest/docs/network-function#Network"><code>Network</code> resource</a>.</li>
+<li><strong>Access clusters through Connect Gateway.</strong> You can now access your Google Distributed Cloud connected clusters through Connect Gateway. For more information, see <a href="https://cloud.google.com/distributed-cloud/edge/latest/docs/clusters#gateway">Obtain cluster credentials through Connect Gateway</a>.</li>
+<li><strong>VNC support for accessing VM workloads through Connect Gateway.</strong> You can now use VNC to access your virtual machine workloads through Connect Gateway.</li>
+</ul>]]></content>
+    <summary>Google Distributed Cloud connected has released a new update featuring VM backup and restore, configurable runtime classes for containers, island mode networking, AppArmor audit logs for VMs, CoreDNS resolution for secondary networks, and improved cluster access via Connect Gateway, including VNC support for VM workloads.</summary>
+    <title>Feature: New Features in Google Distributed Cloud Connected</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-09-15:security:2</id>
+    <published>2025-09-15T00:00:00+00:00</published>
+    <updated>2025-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Security mitigations for the following vulnerabilities have been implemented in this release of Google Distributed Cloud connected:</p>
+<ul>
+<li><strong>OS layer security mitigations:</strong> CVE-2025-31498, CVE-2024-48615, CVE-2016-1585.</li>
+<li><strong>GDC software-only security mitigations:</strong> All mitigations listed in the <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">GDC software-only release notes</a> up to version <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities#1.32">1.32.100</a> (inclusive).</li>
+</ul>]]></content>
+    <summary>This release includes security mitigations for OS and GDC software vulnerabilities.</summary>
+    <title>Security: Security Updates in Google Distributed Cloud</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-09-15:libraries:3</id>
+    <published>2025-09-15T00:00:00+00:00</published>
+    <updated>2025-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following Google Distributed Cloud connected components have been updated:</p>
+<ul>
+<li><strong>GDC software-only has been updated</strong> to version 1.32.100. (This component was formerly known as GKE on Bare Metal and as Anthos Clusters on Bare Metal.)</li>
+<li><strong>Kubernetes</strong> has been updated to version 1.32.4-gke.200.</li>
+</ul>]]></content>
+    <summary>New versions of GDC software-only and Kubernetes are now available.</summary>
+    <title>Libraries: GDC Connected Components Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-09-15:fixed:4</id>
+    <published>2025-09-15T00:00:00+00:00</published>
+    <updated>2025-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues have been resolved in this release of Google Distributed Cloud connected:</p>
+<ul>
+<li><strong>Machines no longer experience intermittent connectivity loss.</strong> Google Distributed Cloud connected machines no longer experience intermittent connectivity loss; the underlying rare condition that can occur with fleet credential management has been resolved.</li>
+<li><strong>VNC sessions through Connect Gateway are now more resilient.</strong> The stability of VNC sessions to virtual machine workloads through Connect Gateway has been improved.</li>
+</ul>]]></content>
+    <summary>Google Distributed Cloud connected machines no longer experience intermittent connectivity loss due to a rare condition with fleet credential management. VNC sessions to virtual machine workloads through Connect Gateway have also been improved for stability.</summary>
+    <title>Fixed: Intermittent connectivity loss and VNC session stability improvements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-09-15:issue:5</id>
+    <published>2025-09-15T00:00:00+00:00</published>
+    <updated>2025-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release of Google Distributed Cloud connected contains the following known issues:</p>
+<ul>
+<li><strong>The <code>gvisor</code> runtime class is incompatible with Symcloud Storage persistent volumes in block mode.</strong> If you set a workload that uses Symcloud Storage persistent volumes in block mode to use the <code>gvisor</code> runtime class, the workload fails. Symcloud Storage persistent volumes in filesystem mode are not affected.</li>
+<li><strong>Cilium does not differentiate between TCP and UDP protocols.</strong> Cilium does not differentiate between TCP and UDP protocols for services that use both protocols on the same port number and routes traffic for both protocols to the same backend pods. This can render such services non-functional. To work around this issue, use a different port for each protocol.</li>
+<li><strong>Overlapping the Pod and cluster CIDR blocks for secondary networks causes network failure.</strong> If you specify overlapping CIDR blocks for Pods and clusters using the <code>annotations.networking.gke.io/gdce-pod-cidr</code> and <code>annotations.networking.gke.io/gke-gateway-clusterip-cidr</code> annotations in the <code>Network</code> resource, the Google Distributed Cloud connected virtual networking subsystem might behave erratically, including loss of connectivity. Follow the guidelines in <a href="https://cloud.google.com/distributed-cloud/edge/latest/docs/networking#island-mode">(Optional) Configure island mode</a> to prevent this issue.</li>
+<li><strong>The <code>anthos-multinet</code> container might take up to two hours to fully start.</strong> You might intermittently experience a slower than normal startup for the <code>anthos-multinet</code> container (up to two hours). To remedy this issue, contact <a href="https://cloud.google.com/distributed-cloud/edge/latest/docs/getting-support">Google Support</a>.</li>
+</ul>]]></content>
+    <summary>Google Distributed Cloud connected has a few known issues. The gvisor runtime class is incompatible with Symcloud Storage persistent volumes in block mode. Cilium does not differentiate between TCP and UDP protocols on the same port. Overlapping Pod and cluster CIDR blocks for secondary networks can cause network failure. The anthos-multinet container may take up to two hours to start.</summary>
+    <title>Issue: Known Issues in Google Distributed Cloud</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-08-15:libraries:0</id>
+    <published>2025-08-15T00:00:00+00:00</published>
+    <updated>2025-08-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following Google Distributed Cloud connected components have been updated:</p>
+<ul>
+<li><strong>EdgeOS kernel</strong> has been updated to version 5.15.177.</li>
+<li><strong>GDC software-only has been updated</strong> from version 1.30.500 to version 1.31.400. (This component was formerly known as GKE on Bare Metal and as Anthos Clusters on Bare Metal.)</li>
+<li><strong>Kubernetes</strong> has been updated from version 1.30 to version 1.31.</li>
+<li><strong>Symcloud Storage</strong> has been updated from version 5.4.14 to version 5.4.16.</li>
+</ul>]]></content>
+    <summary>EdgeOS kernel, GDC software-only, Kubernetes, and Symcloud Storage have been updated.</summary>
+    <title>Libraries: Component Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-08-15:fixed:1</id>
+    <published>2025-08-15T00:00:00+00:00</published>
+    <updated>2025-08-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues have been resolved in this release of Google Distributed Cloud connected:</p>
+<ul>
+<li><strong>Storage is now freed immediately upon cluster deletion.</strong> After deleting a cluster, the storage used by that cluster is now freed up immediately. You no longer have to manually delete all persistent volumes in a cluster before deleting the cluster itself.</li>
+<li><strong>Virtual machine workloads no longer fail to restart or migrate if DHCP server address changes.</strong> If you are using DHCP to assign IP addresses to your virtual machine workloads and the IP address of your DHCP server changes, your virtual machine workloads now automatically restart and successfully complete migration.</li>
+</ul>]]></content>
+    <summary>Storage freed immediately after cluster deletion and VMs restart/migrate even if DHCP server address changes.</summary>
+    <title>Fixed: Resolved issues in Google Distributed Cloud connected</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-08-15:issue:2</id>
+    <published>2025-08-15T00:00:00+00:00</published>
+    <updated>2025-08-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release of Google Distributed Cloud connected contains the following known issues:</p>
+<ul>
+<li><strong>Machines can experience intermittent connectivity loss.</strong> Google Distributed Cloud connected machines can experience intermittent connectivity loss due to a rare condition that can occur with fleet credential management. To remedy this issue, contact <a href="https://cloud.google.com/distributed-cloud/edge/latest/docs/getting-support">Google Support</a>.</li>
+<li><strong>The <code>anthos-multinet</code> container might take up to two hours to fully start.</strong> You might intermittently experience a slower than normal startup for the <code>anthos-multinet</code> container (up to two hours). To remedy this issue, contact <a href="https://cloud.google.com/distributed-cloud/edge/latest/docs/getting-support">Google Support</a>.</li>
+<li><strong>Virtual machine workloads cannot coexist on the same virtual network with Pods that use DHCP for IP address assignment.</strong> This is because virtual machine workloads need the <code>IPAMMode</code> parameter set to <code>external</code> to use DHCP, while Pods need the <code>IPAMMode</code> parameter set to <code>internal</code> to use DHCP. Pods with static IP address are not affected by this. This behavior is by design.</li>
+</ul>]]></content>
+    <summary>Intermittent connectivity loss and slow container startup.</summary>
+    <title>Issue: Known Issues in Google Distributed Cloud Connected</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-08-15:announcement:3</id>
     <published>2025-08-15T00:00:00+00:00</published>
     <updated>2025-08-15T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>This is a minor release of Google Distributed Cloud connected (version 1.10.0).</p>]]></content>
@@ -20,7 +161,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-08-15:feature:1</id>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-08-15:feature:4</id>
     <published>2025-08-15T00:00:00+00:00</published>
     <updated>2025-08-15T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The following new functionality has been introduced in this release of Google Distributed Cloud connected:</p>
@@ -38,7 +179,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-08-15:changed:2</id>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-08-15:changed:5</id>
     <published>2025-08-15T00:00:00+00:00</published>
     <updated>2025-08-15T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The following changes to existing functionality have been introduced in this release of Google Distributed Cloud connected:</p>
@@ -52,7 +193,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-08-15:security:3</id>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-08-15:security:6</id>
     <published>2025-08-15T00:00:00+00:00</published>
     <updated>2025-08-15T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Security mitigations for the following vulnerabilities have been implemented in this release of Google Distributed Cloud connected:</p>
@@ -62,53 +203,5 @@
 </ul>]]></content>
     <summary>Security patches for OS and GDC software.</summary>
     <title>Security: Security Update</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-08-15:libraries:4</id>
-    <published>2025-08-15T00:00:00+00:00</published>
-    <updated>2025-08-15T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The following Google Distributed Cloud connected components have been updated:</p>
-<ul>
-<li><strong>EdgeOS kernel</strong> has been updated to version 5.15.177.</li>
-<li><strong>GDC software-only has been updated</strong> from version 1.30.500 to version 1.31.400. (This component was formerly known as GKE on Bare Metal and as Anthos Clusters on Bare Metal.)</li>
-<li><strong>Kubernetes</strong> has been updated from version 1.30 to version 1.31.</li>
-<li><strong>Symcloud Storage</strong> has been updated from version 5.4.14 to version 5.4.16.</li>
-</ul>]]></content>
-    <summary>EdgeOS kernel, GDC software-only, Kubernetes, and Symcloud Storage have been updated.</summary>
-    <title>Libraries: Component Updates</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-08-15:fixed:5</id>
-    <published>2025-08-15T00:00:00+00:00</published>
-    <updated>2025-08-15T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The following issues have been resolved in this release of Google Distributed Cloud connected:</p>
-<ul>
-<li><strong>Storage is now freed immediately upon cluster deletion.</strong> After deleting a cluster, the storage used by that cluster is now freed up immediately. You no longer have to manually delete all persistent volumes in a cluster before deleting the cluster itself.</li>
-<li><strong>Virtual machine workloads no longer fail to restart or migrate if DHCP server address changes.</strong> If you are using DHCP to assign IP addresses to your virtual machine workloads and the IP address of your DHCP server changes, your virtual machine workloads now automatically restart and successfully complete migration.</li>
-</ul>]]></content>
-    <summary>Storage freed immediately after cluster deletion and VMs restart/migrate even if DHCP server address changes.</summary>
-    <title>Fixed: Resolved issues in Google Distributed Cloud connected</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-distributed-cloud-connected:2025-08-15:issue:6</id>
-    <published>2025-08-15T00:00:00+00:00</published>
-    <updated>2025-08-15T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>This release of Google Distributed Cloud connected contains the following known issues:</p>
-<ul>
-<li><strong>Machines can experience intermittent connectivity loss.</strong> Google Distributed Cloud connected machines can experience intermittent connectivity loss due to a rare condition that can occur with fleet credential management. To remedy this issue, contact <a href="https://cloud.google.com/distributed-cloud/edge/latest/docs/getting-support">Google Support</a>.</li>
-<li><strong>The <code>anthos-multinet</code> container might take up to two hours to fully start.</strong> You might intermittently experience a slower than normal startup for the <code>anthos-multinet</code> container (up to two hours). To remedy this issue, contact <a href="https://cloud.google.com/distributed-cloud/edge/latest/docs/getting-support">Google Support</a>.</li>
-<li><strong>Virtual machine workloads cannot coexist on the same virtual network with Pods that use DHCP for IP address assignment.</strong> This is because virtual machine workloads need the <code>IPAMMode</code> parameter set to <code>external</code> to use DHCP, while Pods need the <code>IPAMMode</code> parameter set to <code>internal</code> to use DHCP. Pods with static IP address are not affected by this. This behavior is by design.</li>
-</ul>]]></content>
-    <summary>Intermittent connectivity loss and slow container startup.</summary>
-    <title>Issue: Known Issues in Google Distributed Cloud Connected</title>
   </entry>
 </feed>

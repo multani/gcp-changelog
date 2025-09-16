@@ -1,5 +1,12 @@
 # Security Command Center
 
+## 2025-09-15
+
+### Feature
+
+[Model Armor integration with Google Kubernetes Engine](https://cloud.google.com/security-command-center/docs/model-armor-gke-integration) is available in [General Availability](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-09-12
 
 ### Changed

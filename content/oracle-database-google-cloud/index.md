@@ -1,5 +1,12 @@
 # Oracle Database@Google Cloud
 
+## 2025-09-15
+
+### Feature
+
+Oracle Database@Google Cloud supports Oracle Base Database Service, which lets you [create DB systems through Google Cloud Console and Google Cloud API](https://cloud.google.com/oracle/database/docs/create-base-db-system). This feature is [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-09-10
 
 ### Feature

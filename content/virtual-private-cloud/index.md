@@ -1,5 +1,12 @@
 # Virtual Private Cloud
 
+## 2025-09-12
+
+### Feature
+
+You can create a VPC network that supports RDMA over [Falcon transport](https://cloud.google.com/blog/topics/systems/introducing-falcon-a-reliable-low-latency-hardware-transport), which lets you run AI and high performance computing (HPC) workloads on VM instances that have the `IRDMA` network interface type in Google Cloud, such as H4D instances. This feature is available in **Preview**. For more information, see [RDMA network profiles](https://cloud.google.com/vpc/docs/rdma-network-profiles).
+
+---
 ## 2025-08-26
 
 ### Feature

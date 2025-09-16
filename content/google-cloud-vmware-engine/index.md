@@ -1,5 +1,15 @@
 # Google Cloud VMware Engine
 
+## 2025-09-15
+
+### Announcement
+
+VMware Engine `ve2` nodes are now available in the following additional region and zone:
+
+* The Milan, Italy, Europe region (`europe-west8-a`).
+* The Melbourne, Australia (`australia-southeast2-b`) zone in the Melbourne, Australia region (`australia-southeast2`).
+
+---
 ## 2025-09-11
 
 ### Feature

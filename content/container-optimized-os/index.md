@@ -2,10 +2,6 @@
 
 ## 2025-09-16
 
-### Changed
-
-
-
 ### cos-121-18867-199-65
 
 |  |  |  |  |
@@ -87,9 +83,86 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 811788 -> 811710
 
+### cos-117-18613-339-65
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.97](https://cos.googlesource.com/third_party/kernel/+/125bc228c1f1f826079ca5f36f78bb09932bb486 ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.339.65/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Added GDRCopy kernel module for NVIDIA drivers.
+
+### Feature
+
+Added support for NVIDIA MFT Tools on arm64.
+
+### Security
+
+Fixed CVE-2025-38588 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38622 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38608 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38587 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38527 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38571 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38572 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38566 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38568 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38565 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38639 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38645 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38640 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38528 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38539 in the Linux kernel.
+
 ### Changed
 
+Runtime sysctl changes:
 
+* Changed: fs.file-max: 811749 -> 811774
 
 ### cos-beta-125-19216-0-47
 
@@ -164,9 +237,151 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 811507 -> 811500
 
+### cos-113-18244-448-43
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.144](https://cos.googlesource.com/third_party/kernel/+/e585ffc1d4d502fa00b73b252e2d9076f070513d ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.448.43/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Added GDRCopy kernel module for NVIDIA drivers.
+
+### Feature
+
+Added IPv6 support for machines using the IDPF driver.
+
+### Security
+
+Fixed CVE-2025-38608 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38639 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38572 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38553 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38550 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38588 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38587 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38527 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38622 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38528 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38563 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38565 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38539 in the Linux kernel.
+
 ### Changed
 
+Runtime sysctl changes:
 
+* Changed: fs.file-max: 812017 -> 811983
+
+### cos-109-17800-570-46
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.143](https://cos.googlesource.com/third_party/kernel/+/21a09914420b38facc9d5d41d6790e66c9786c31 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/17800.570.46/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Added GDRCopy kernel module for NVIDIA drivers.
+
+### Security
+
+Fixed CVE-2025-38608 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38639 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38622 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38572 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38588 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38565 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38587 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38539 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38645 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38528 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38527 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38553 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38550 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38563 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812270 -> 812272
 
 ### cos-dev-129-19279-0-0
 

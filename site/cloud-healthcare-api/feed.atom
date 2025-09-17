@@ -2,9 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Healthcare API</title>
   <subtitle>Changelog for Google Cloud product: Cloud Healthcare API</subtitle>
-  <updated>2025-08-26T00:00:00+00:00</updated>
+  <updated>2025-09-12T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-healthcare-api</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-healthcare-api/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-healthcare-api:2025-09-12:feature:0</id>
+    <published>2025-09-12T00:00:00+00:00</published>
+    <updated>2025-09-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><code>Accept-Encoding</code> compression headers on DICOM frame requests that contain
+  uncompressed pixel data (as defined by the DICOM transfer syntax) are now
+  supported and can return compressed results</li>
+</ul>
+<p><strong>Note</strong>: For very large downlinks and very large files where downlink vastly
+outpaces compression speed, latency may slightly increase. Compression can be
+disabled by not including the header in these cases.</p>]]></content>
+    <summary>`Accept-Encoding` headers are now supported for DICOM frame requests with uncompressed pixel data, allowing for compressed results.</summary>
+    <title>Feature: DICOM Compression Support</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

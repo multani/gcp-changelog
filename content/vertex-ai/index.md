@@ -1,5 +1,16 @@
 # Vertex AI
 
+## 2025-09-15
+
+### Feature
+
+**Vector Search indexes optimized for storage (Preview)**
+
+Storage-optimized Vector Search offers a cost-effective solution for searching massive datasets. This new tier is ideal for large-scale RAG and semantic search applications, and simplifies development with a new auto-tuning feature that eliminates the need to manage the underlying index configuration. This feature is available in Preview.
+
+For more information, see [Storage-optimized Vector Search](https://cloud.google.com/vertex-ai/docs/vector-search/storage-optimized-vector-search).
+
+---
 ## 2025-09-10
 
 ### Feature

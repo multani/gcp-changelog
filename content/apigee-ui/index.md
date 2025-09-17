@@ -1,5 +1,18 @@
 # Apigee UI
 
+## 2025-09-14
+
+### Announcement
+
+On September 14, 2025, we released an updated version of the Apigee UI.
+
+### Feature
+
+**Added icon to proxy and sharedflow editor to mark unused policies**
+
+If a policy has yet to be [attached to any flow](https://cloud.google.com/apigee/docs/api-platform/develop/attaching-and-configuring-policies-management-ui#attaching-a-policy-to-a-flow) in the configuration, an icon now displays next to that policy in the Proxy Editor side navigation to signify that the policy is currently unused in the proxy or sharedflow.
+
+---
 ## 2025-08-26
 
 ### Announcement

@@ -1,5 +1,203 @@
 # Container Optimized OS
 
+## 2025-09-16
+
+### Changed
+
+
+
+### cos-121-18867-199-65
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.105](https://cos.googlesource.com/third_party/kernel/+/6b5ca3235d0b2ee0728b27431e9c285a91583f4c ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.199.65/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Added GDRCopy kernel module for NVIDIA drivers.
+
+### Feature
+
+Added support for NVIDIA MFT Tools on arm64.
+
+### Fixed
+
+Updated the Linux kernel to v6.6.105.
+
+### Security
+
+Fixed CVE-2025-39782 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38608 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38622 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38639 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38572 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38588 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38349 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38550 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38568 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38645 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38640 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38528 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38563 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38539 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811788 -> 811710
+
+### Changed
+
+
+
+### cos-beta-125-19216-0-47
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.41](https://cos.googlesource.com/third_party/kernel/+/fcd7852f14840b42feeae954c5e2b8d5b3da6958 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19216.0.47/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Fixed a kernel bug which caused boot to fail for n4 machine types.
+
+### Feature
+
+Added GDRCopy kernel module for NVIDIA drivers.
+
+### Feature
+
+Added support for NVIDIA MFT Tools on arm64.
+
+### Security
+
+Fixed CVE-2025-38640 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38614 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38587 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38588 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38572 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38622 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38608 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38565 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38645 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38571 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38568 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38639 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811507 -> 811500
+
+### Changed
+
+
+
+### cos-dev-129-19279-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.46](https://cos.googlesource.com/third_party/kernel/+/345ad6a408b0f8b808d2818aafac95e470de47c1 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19279.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Fixed a kernel bug which caused boot to fail for n4 machine types.
+
+### Changed
+
+Updated the Linux kernel to v6.12.46.
+
+### Feature
+
+Added GDRCopy kernel module for NVIDIA drivers.
+
+### Feature
+
+Added support for NVIDIA MFT Tools on arm64.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811510 -> 811423
+
+---
 ## 2025-09-08
 
 ### cos-dev-129-19271-0-0

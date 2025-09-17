@@ -6,6 +6,20 @@
 
 [Model Armor integration with Google Kubernetes Engine](https://cloud.google.com/security-command-center/docs/model-armor-gke-integration) is available in [General Availability](https://cloud.google.com/products#product-launch-stages).
 
+### Changed
+
+The **Findings** page in Security Command Center has been improved.
+
+* With Security Command Center Premium and Enterprise, the page includes the following predefined filter views that return a specific category of findings.
+
+  + Premium service tier: **All Findings**, **Vulnerabilities**, **Identity**, and **Threats**.
+  + Enterprise service tier: **All Findings**, **Vulnerabilities**, **Identity**, **Data**, and **Code**.
+* With Security Command Center Enterprise, the page includes a
+  selector to filter by cloud provider: Google Cloud, Amazon Web Service (AWS), and Microsoft Azure.
+
+For more information, see [Review and manage
+findings](https://cloud.google.com/security-command-center/docs/review-manage-findings#use_predefined_filter_views).
+
 ---
 ## 2025-09-12
 

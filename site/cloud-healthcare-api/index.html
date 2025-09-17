@@ -1908,8 +1908,19 @@
 
 
 <h1 id="cloud-healthcare-api">Cloud Healthcare API</h1>
-<h2 id="2025-08-26">2025-08-26</h2>
+<h2 id="2025-09-12">2025-09-12</h2>
 <h3 id="feature">Feature</h3>
+<ul>
+<li><code>Accept-Encoding</code> compression headers on DICOM frame requests that contain
+  uncompressed pixel data (as defined by the DICOM transfer syntax) are now
+  supported and can return compressed results</li>
+</ul>
+<p><strong>Note</strong>: For very large downlinks and very large files where downlink vastly
+outpaces compression speed, latency may slightly increase. Compression can be
+disabled by not including the header in these cases.</p>
+<hr />
+<h2 id="2025-08-26">2025-08-26</h2>
+<h3 id="feature_1">Feature</h3>
 <p><strong>Preview:</strong> Cloud Healthcare API has launched DICOM Updates and Patches. This
 allows customers to update their DICOM data in-place. For more information, see
 <a href="https://cloud.google.com/healthcare-api/docs/how-tos/dicom-update-patch">Update and patch DICOM studies, series, and instances</a>.</p>
@@ -1930,6 +1941,9 @@ on May 27, 2026. For more information, see
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-healthcare-api">Cloud Healthcare API</a></li>
+          <li class="nav-item">
+            <a href="#2025-09-12" class="nav-link">2025-09-12</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-08-26" class="nav-link">2025-08-26</a>
           </li>

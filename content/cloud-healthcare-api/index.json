@@ -1,6 +1,16 @@
 {
   "name": "Cloud Healthcare API",
   "entries": {
+    "2025-09-12": [
+      {
+        "kind": "Feature",
+        "content": "* `Accept-Encoding` compression headers on DICOM frame requests that contain\n  uncompressed pixel data (as defined by the DICOM transfer syntax) are now\n  supported and can return compressed results\n\n**Note**: For very large downlinks and very large files where downlink vastly\noutpaces compression speed, latency may slightly increase. Compression can be\ndisabled by not including the header in these cases.",
+        "summary": {
+          "title": "DICOM Compression Support",
+          "summary": "`Accept-Encoding` headers are now supported for DICOM frame requests with uncompressed pixel data, allowing for compressed results."
+        }
+      }
+    ],
     "2025-08-26": [
       {
         "kind": "Feature",

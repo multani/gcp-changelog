@@ -1,5 +1,12 @@
 # Google Cloud Architecture Center
 
+## 2025-09-16
+
+### Feature
+
+(New guide) [Multi-agent AI system in Google Cloud](https://cloud.google.com/architecture/multiagent-ai-system): A reference architecture to help you design robust multi-agent AI systems in Google Cloud.
+
+---
 ## 2025-09-11
 
 ### Feature

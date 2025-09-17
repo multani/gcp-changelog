@@ -1,13 +1,13 @@
 {
   "name": "Application Integration",
   "entries": {
-    "2025-09-16": [
+    "2025-09-10": [
       {
         "kind": "Changed",
-        "content": "**Salesforce connected app requires installation for OAuth 2.0 authentication**\n\nA new security requirement from Salesforce restricts the use of uninstalled connected apps. To ensure your Salesforce trigger remain functional, all users must install connected app in your Salesforce account.\n\nWhen establishing a new Salesforce trigger using OAuth 2.0 authentication, you are now required to install the [connected app](https://help.salesforce.com/s/articleView?language=en_US&id=xcloud.connected_app_create.htm&type=5) within your Salesforce account. This step is also necessary for existing triggers using OAuth 2.0 authentication if the connected app is not already installed, as failure to do so may cause them to stop working.\n\nFor more information, see Install the [OAuth connected app](https://cloud.google.com/application-integration/docs/configure-salesforce-trigger#post-setup).",
+        "content": "**Connected app requires installation for OAuth 2.0 authentication in Salesforce trigger**\n\nTo configure a Salesforce trigger that uses OAuth 2.0 authentication, you must install the relevant [connected app](https://help.salesforce.com/s/articleView?id=xcloud.connected_app_create.htm&type=5) in your Salesforce account.\n\nFor more information, see [Install the OAuth connected app](https://cloud.google.com/application-integration/docs/configure-salesforce-trigger#post-setup).",
         "summary": {
-          "title": "Salesforce Connected App Update",
-          "summary": "A Salesforce connected app must be installed for OAuth 2.0 authentication to ensure your Salesforce triggers continue to work. This applies to new and existing triggers if the app is not already installed."
+          "title": "Salesforce Connected App Requirement",
+          "summary": "A connected app must be installed in Salesforce for OAuth 2.0 authentication in Salesforce triggers."
         }
       }
     ],
@@ -21,13 +21,13 @@
         }
       }
     ],
-    "2025-09-10": [
+    "2025-09-16": [
       {
         "kind": "Changed",
-        "content": "**Connected app requires installation for OAuth 2.0 authentication in Salesforce trigger**\n\nTo configure a Salesforce trigger that uses OAuth 2.0 authentication, you must install the relevant [connected app](https://help.salesforce.com/s/articleView?id=xcloud.connected_app_create.htm&type=5) in your Salesforce account.\n\nFor more information, see [Install the OAuth connected app](https://cloud.google.com/application-integration/docs/configure-salesforce-trigger#post-setup).",
+        "content": "**Salesforce connected app requires installation for OAuth 2.0 authentication**\n\nA new security requirement from Salesforce restricts the use of uninstalled connected apps. To ensure your Salesforce trigger remain functional, all users must install connected app in your Salesforce account.\n\nWhen establishing a new Salesforce trigger using OAuth 2.0 authentication, you are now required to install the [connected app](https://help.salesforce.com/s/articleView?language=en_US&id=xcloud.connected_app_create.htm&type=5) within your Salesforce account. This step is also necessary for existing triggers using OAuth 2.0 authentication if the connected app is not already installed, as failure to do so may cause them to stop working.\n\nFor more information, see Install the [OAuth connected app](https://cloud.google.com/application-integration/docs/configure-salesforce-trigger#post-setup).",
         "summary": {
-          "title": "Salesforce Connected App Requirement",
-          "summary": "A connected app must be installed in Salesforce for OAuth 2.0 authentication in Salesforce triggers."
+          "title": "Salesforce Connected App Update",
+          "summary": "A Salesforce connected app must be installed for OAuth 2.0 authentication to ensure your Salesforce triggers continue to work. This applies to new and existing triggers if the app is not already installed."
         }
       }
     ]

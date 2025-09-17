@@ -1,5 +1,14 @@
 # Generative AI on Vertex AI
 
+## 2025-09-15
+
+### Changed
+
+**Imagen**
+
+We improved Imagen's virtual try-on model, `virtual-try-on-preview-08-04`, so that it is better at preserving the person's body shape and preserving the garment product's identity.
+
+---
 ## 2025-09-10
 
 ### Feature

@@ -1,5 +1,12 @@
 # BigQuery
 
+## 2025-09-16
+
+### Feature
+
+You can now [access snapshots of Apache Iceberg external tables](https://cloud.google.com/bigquery/docs/iceberg-external-tables#query_historical_data) that are retained in your Iceberg metadata by using the `FOR SYSTEM_TIME AS OF` clause. This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+---
 ## 2025-09-15
 
 ### Libraries

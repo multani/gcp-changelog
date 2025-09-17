@@ -1,5 +1,16 @@
 # Retail API
 
+## 2025-09-15
+
+### Feature
+
+**Vertex AI Search for commerce: Additional languages added to search (GA)**
+
+Additional languages, including Urdu and Serbian (Cyrillic), are supported in Vertex AI Search for commerce.
+
+For a list of the languages supported, see [Supported world languages](https://cloud.google.com/retail/docs/supported-languages#search-languages).
+
+---
 ## 2025-09-05
 
 ### Feature

@@ -4,7 +4,7 @@
 
 ### Feature
 
-Version 20250907.00 of the guest agent, which introduces the plugin-based
+Version `20250907.00` of the guest agent, which introduces the plugin-based
 architecture to Enterprise Linux 8 operating systems, is now available. For more
 information about the plugin-based architecture, see [Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).
 

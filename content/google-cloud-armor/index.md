@@ -1,5 +1,12 @@
 # Google Cloud Armor
 
+## 2025-09-16
+
+### Feature
+
+Cloud Armor support for [organization-scoped address groups](https://cloud.google.com/armor/docs/address-groups-overview#organization-scoped-address-group) for security policies is Generally Available.
+
+---
 ## 2025-08-08
 
 ### Feature

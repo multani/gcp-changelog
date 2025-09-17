@@ -13,7 +13,7 @@
 
 **Preview**: H4D VMs, designed for high performance computing (HPC) workloads, are now in preview. Based on 5th generation AMD EPYC Turin with Cloud RDMA 200 Gbps networking, H4D VMs offer 192 cores (SMT disabled), up to 1,488 GB of memory, and 3,750 GiB of Local SSD. H4D is optimized for tightly-coupled applications that scale across multiple nodes and offers RDMA-enabled 200 Gbps networking.
 
-For more information, see [H4D machine series](https://cloud.google.com/compute/docs/hpc-optimized-machines#h4d_series).
+For more information, see [H4D machine series](https://cloud.google.com/compute/docs/compute-optimized-machines#h4d_series).
 
 ---
 ## 2025-09-10

@@ -1,5 +1,12 @@
 # Oracle Database@Google Cloud
 
+## 2025-09-16
+
+### Feature
+
+Oracle Database@Google Cloud introduces zones in existing supported regions. You can select a zone for Exadata Infrastructure instances, VM clusters, ODB Networks, and DB systems while provisioning these resources. This feature is [generally available (GA)](https://cloud.google.com/products#product-launch-stages). See [Supported regions and zones](https://cloud.google.com/oracle/database/docs/regions-and-zones).
+
+---
 ## 2025-09-15
 
 ### Feature

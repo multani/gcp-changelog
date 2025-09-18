@@ -1,5 +1,12 @@
 # Text-to-Speech
 
+## 2025-09-15
+
+### Changed
+
+Chirp 3: HD voices is available on the `asia-northeast1` endpoint. For more information, see [Chirp 3: HD voices](https://cloud.google.com/text-to-speech/docs/chirp3-hd).
+
+---
 ## 2025-08-27
 
 ### Changed

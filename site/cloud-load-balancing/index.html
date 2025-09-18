@@ -1908,6 +1908,10 @@
 
 
 <h1 id="cloud-load-balancing">Cloud Load Balancing</h1>
+<h2 id="2025-09-17">2025-09-17</h2>
+<h3 id="security">Security</h3>
+<p>A security fix was made which changes the behavior of requests and responses sent with the <code>Transfer-Encoding: Chunked</code> header to be more RFC 9112 compliant. The <a href="https://datatracker.ietf.org/doc/html/rfc9112#name-chunked-transfer-coding">RFC states</a> that both the <code>chunked_body</code> and the <code>last-chunk</code> fields must end in <code>CRLF</code>. This is now enforced.</p>
+<hr />
 <h2 id="2025-09-12">2025-09-12</h2>
 <h3 id="changed">Changed</h3>
 <p>The global and classic external Application Load Balancers implemented on Google Front-Ends (GFEs) now support HTTP/1.0 explicitly as a protocol during ALPN (Application-Layer Protocol Negotiation) negotiation.</p>
@@ -2013,6 +2017,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-load-balancing">Cloud Load Balancing</a></li>
+          <li class="nav-item">
+            <a href="#2025-09-17" class="nav-link">2025-09-17</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-09-12" class="nav-link">2025-09-12</a>
           </li>

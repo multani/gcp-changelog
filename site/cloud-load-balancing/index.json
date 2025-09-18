@@ -1,6 +1,16 @@
 {
   "name": "Cloud Load Balancing",
   "entries": {
+    "2025-09-17": [
+      {
+        "kind": "Security",
+        "content": "A security fix was made which changes the behavior of requests and responses sent with the `Transfer-Encoding: Chunked` header to be more RFC 9112 compliant. The [RFC states](https://datatracker.ietf.org/doc/html/rfc9112#name-chunked-transfer-coding) that both the `chunked_body` and the `last-chunk` fields must end in `CRLF`. This is now enforced.",
+        "summary": {
+          "title": "Security fix for Chunked Transfer Encoding",
+          "summary": "A security fix has been implemented to enhance compliance with RFC 9112 for requests and responses using the `Transfer-Encoding: Chunked` header. This update ensures that both `chunked_body` and `last-chunk` fields correctly terminate with CRLF as mandated by the RFC."
+        }
+      }
+    ],
     "2025-09-12": [
       {
         "kind": "Changed",

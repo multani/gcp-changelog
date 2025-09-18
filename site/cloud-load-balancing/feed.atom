@@ -2,9 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Load Balancing</title>
   <subtitle>Changelog for Google Cloud product: Cloud Load Balancing</subtitle>
-  <updated>2025-09-12T00:00:00+00:00</updated>
+  <updated>2025-09-17T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-load-balancing</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-load-balancing/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-load-balancing:2025-09-17:security:0</id>
+    <published>2025-09-17T00:00:00+00:00</published>
+    <updated>2025-09-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A security fix was made which changes the behavior of requests and responses sent with the <code>Transfer-Encoding: Chunked</code> header to be more RFC 9112 compliant. The <a href="https://datatracker.ietf.org/doc/html/rfc9112#name-chunked-transfer-coding">RFC states</a> that both the <code>chunked_body</code> and the <code>last-chunk</code> fields must end in <code>CRLF</code>. This is now enforced.</p>]]></content>
+    <summary>A security fix has been implemented to enhance compliance with RFC 9112 for requests and responses using the `Transfer-Encoding: Chunked` header. This update ensures that both `chunked_body` and `last-chunk` fields correctly terminate with CRLF as mandated by the RFC.</summary>
+    <title>Security: Security fix for Chunked Transfer Encoding</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

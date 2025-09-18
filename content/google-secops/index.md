@@ -1,5 +1,14 @@
 # Google SecOps
 
+## 2025-09-16
+
+### Announcement
+
+**Migrate SOAR to Google Cloud**
+
+We're actively migrating all SOAR customers and partners to their respective Google Cloud projects. This migration unifies your SOAR experience with your existing cloud environment. For more information, see [SOAR migration overview](https://cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp) and [FAQ](https://cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-soar-faq).
+
+---
 ## 2025-09-11
 
 ### Feature

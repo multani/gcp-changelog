@@ -1,6 +1,16 @@
 {
   "name": "Cloud SQL for PostgreSQL",
   "entries": {
+    "2025-09-17": [
+      {
+        "kind": "Feature",
+        "content": "The rollout of the following minor version upgrades is complete:\n\n**Minor versions**\n\n* 13.21 is upgraded to 13.22.\n* 14.18 is upgraded to 14.19.\n* 15.13 is upgraded to 15.14.\n* 16.9 is upgraded to 16.10.\n* 17.5 is upgraded to 17.6.\n\nCloud SQL for PostgreSQL adds support for the following extensions:\n\n**Extensions**\n\n* `plpgsql_check 2.8` is available for PostgreSQL version 14 and later.\n* `roaringbitmap 0.5` is available for PostgreSQL version 12 and later.\n\nTo use these minor versions and the new extensions, update your instance to `[PostgreSQL version].R20250727.00_23`.\n\nIf you use a maintenance window, then the updates to the minor, extension, and plugin versions happen according to the timeframe that you set in the window. Otherwise, the updates occur within the next few weeks.\n\nFor more information on checking your maintenance version, see [Self-service maintenance](https://cloud.google.com/sql/docs/postgres/self-service-maintenance). To find your maintenance window or to manage maintenance updates, see [Find and set maintenance windows](https://cloud.google.com/sql/docs/postgres/set-maintenance-window).",
+        "summary": {
+          "title": "New PostgreSQL Versions and Extensions Available",
+          "summary": "Minor version upgrades for PostgreSQL are complete, and new extensions like plpgsql_check and roaringbitmap are now supported. Update your instance to access these features."
+        }
+      }
+    ],
     "2025-09-12": [
       {
         "kind": "Feature",

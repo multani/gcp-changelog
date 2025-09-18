@@ -1,5 +1,106 @@
 # Cloud Storage
 
+## 2025-09-17
+
+### Feature
+
+The `bucket_attributes_view` and `bucket_attributes_latest_snapshot_view` tables in [Storage Insights datasets](https://cloud.google.com/storage/docs/insights/datasets) are updated with two new fields: `objectCount` and `totalSize`. `objectCount` reflects the total number of objects in the bucket and `totalSize` reflects the total size of the bucket in bytes. The tables are automatically updated with the new fields in all existing datasets and are included in all new dataset configurations.
+
+---
+## 2025-09-15
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Node.js
+
+### Changes for [@google-cloud/storage](https://github.com/googleapis/nodejs-storage)
+
+#### [7.17.1](https://github.com/googleapis/nodejs-storage/compare/v7.17.0...v7.17.1) (2025-08-27)
+
+##### Bug Fixes
+
+* Respect useAuthWithCustomEndpoint flag for resumable uploads ([#2637](https://github.com/googleapis/nodejs-storage/issues/2637)) ([707b4f2](https://github.com/googleapis/nodejs-storage/commit/707b4f2fe1d67878bcd8f1434e4cbb57c951994e))
+
+### Java
+
+### Changes for [google-cloud-storage](https://github.com/googleapis/java-storage)
+
+#### [2.57.0](https://github.com/googleapis/java-storage/compare/v2.56.0...v2.57.0) (2025-09-09)
+
+##### Features
+
+* Add BlobInfo.ObjectContexts ([#3259](https://github.com/googleapis/java-storage/issues/3259)) ([485aefd](https://github.com/googleapis/java-storage/commit/485aefd3047c52c98d8bd913033c8aee1473e988))
+
+##### Bug Fixes
+
+* **deps:** Update the Java code generator (gapic-generator-java) to 2.62.1 ([0e348db](https://github.com/googleapis/java-storage/commit/0e348dbee247e1e65713d0155e1aa29ae5c5e0e4))
+* Update BlobAppendableUpload implementation to periodically flush for large writes ([#3278](https://github.com/googleapis/java-storage/issues/3278)) ([d0ffe18](https://github.com/googleapis/java-storage/commit/d0ffe18084b32936c889bb280005294c7ae7064d))
+* Update otel integration to properly activate span context for lazy RPCs such as reads & writes pt.2 ([#3277](https://github.com/googleapis/java-storage/issues/3277)) ([3240f67](https://github.com/googleapis/java-storage/commit/3240f67c192a855c92256526aeb2fa689ea15445))
+
+##### Dependencies
+
+* Update dependency com.google.cloud:sdk-platform-java-config to v3.52.1 ([#3280](https://github.com/googleapis/java-storage/issues/3280)) ([d046ea3](https://github.com/googleapis/java-storage/commit/d046ea3da19288b64c48300bdd4f94a0ebf35458))
+* Update googleapis/sdk-platform-java action to v2.62.1 ([#3281](https://github.com/googleapis/java-storage/issues/3281)) ([c9078bb](https://github.com/googleapis/java-storage/commit/c9078bb98e3999234f95ab2e4c842c9dd7191c3d))
+
+---
+## 2025-09-10
+
+### Feature
+
+Cloud Storage FUSE now supports buffered reads, which can improve sequential read performance for large files by two to five times. When enabled, Cloud Storage FUSE asynchronously prefetches parts of a file into an in-memory buffer, allowing subsequent reads to be served from the buffer instead of requiring network calls.
+
+To learn more about buffered reads, see [Enable buffered reads](https://cloud.google.com/storage/docs/cloud-storage-fuse/performance#enable-buffered-reads).
+
+---
+## 2025-09-01
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Java
+
+### Changes for [google-cloud-storage](https://github.com/googleapis/java-storage)
+
+#### [2.56.0](https://github.com/googleapis/java-storage/compare/v2.55.0...v2.56.0) (2025-08-25)
+
+##### Features
+
+* *breaking behavior* rewrite Storage.blobAppendableUpload to be non-blocking and have improved throughput ([#3231](https://github.com/googleapis/java-storage/issues/3231)) ([7bd73d3](https://github.com/googleapis/java-storage/commit/7bd73d3104f5c47299f5a9c8d68dec82933eeda5))
+* Add AppendableUploadWriteableByteChannel#flush() ([#3261](https://github.com/googleapis/java-storage/issues/3261)) ([950c56f](https://github.com/googleapis/java-storage/commit/950c56f0e622d75faff51257d5cbc9f3ddc7e1ce))
+* Add MinFlushSizeFlushPolicy#withMaxPendingBytes(long) ([#3231](https://github.com/googleapis/java-storage/issues/3231)) ([7bd73d3](https://github.com/googleapis/java-storage/commit/7bd73d3104f5c47299f5a9c8d68dec82933eeda5))
+* Add StorageChannelUtils to provide helper methods to perform blocking read/write to/from non-blocking channels ([#3231](https://github.com/googleapis/java-storage/issues/3231)) ([7bd73d3](https://github.com/googleapis/java-storage/commit/7bd73d3104f5c47299f5a9c8d68dec82933eeda5))
+
+##### Bug Fixes
+
+* Make FlushPolicy${Min,Max}FlushSizeFlushPolicy constructors private ([#3217](https://github.com/googleapis/java-storage/issues/3217)) ([7bd73d3](https://github.com/googleapis/java-storage/commit/7bd73d3104f5c47299f5a9c8d68dec82933eeda5))
+* Update BlobAppendableUploadConfig and FlushPolicy.MinFlushSizeFlushPolicy to default to 4MiB minFlushSize and 16MiB maxPendingBytes ([#3249](https://github.com/googleapis/java-storage/issues/3249)) ([7bd73d3](https://github.com/googleapis/java-storage/commit/7bd73d3104f5c47299f5a9c8d68dec82933eeda5))
+* Update otel integration to properly activate span context for lazy RPCs such as reads & writes ([#3255](https://github.com/googleapis/java-storage/issues/3255)) ([d6587f4](https://github.com/googleapis/java-storage/commit/d6587f42b65a586a2e3f30e0559975801726a812))
+
+##### Dependencies
+
+* Update actions/checkout action to v5 ([#3239](https://github.com/googleapis/java-storage/issues/3239)) ([33f024b](https://github.com/googleapis/java-storage/commit/33f024b1ae094bf3e3605e1a835cb55eb5c9e750))
+* Update dependency com.google.apis:google-api-services-storage to v1-rev20250815-2.0.0 ([#3245](https://github.com/googleapis/java-storage/issues/3245)) ([87afe1a](https://github.com/googleapis/java-storage/commit/87afe1ac5f500053e4c0639d5b824304d03796f4))
+* Update dependency com.google.cloud:sdk-platform-java-config to v3.52.0 ([#3250](https://github.com/googleapis/java-storage/issues/3250)) ([0782e62](https://github.com/googleapis/java-storage/commit/0782e62fc9534e3cecfaaa4d78b58904ecf699d6))
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Python
+
+### Changes for [google-cloud-storage](https://github.com/googleapis/python-storage)
+
+#### [3.3.1](https://github.com/googleapis/python-storage/compare/v3.3.0...v3.3.1) (2025-08-25)
+
+##### Bug Fixes
+
+* Provide option to user to set entire object checksum at "initiate a resumable upload session" and send the same.([#1525](https://github.com/googleapis/python-storage/issues/1525)) ([a8109e0](https://github.com/googleapis/python-storage/commit/a8109e0d02c62542f1bea20373b53864fb776caa))
+* Send part's checksum for XML MPU part upload ([#1529](https://github.com/googleapis/python-storage/issues/1529)) ([2ad77c7](https://github.com/googleapis/python-storage/commit/2ad77c7d949e84c515c051a0fd4b37b822788dd8))
+
+---
 ## 2025-08-28
 
 ### Changed

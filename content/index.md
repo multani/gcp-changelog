@@ -91,6 +91,7 @@
 - [Dataform](dataform/index.md)
 - [Dataplex](dataplex/index.md)
 - [Dataproc](dataproc/index.md)
+- [Dataproc Metastore](dataproc-metastore/index.md)
 - [Datastream](datastream/index.md)
 - [Deep Learning VM Images](deep-learning-vm-images/index.md)
 - [Dialogflow](dialogflow/index.md)

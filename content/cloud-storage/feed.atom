@@ -2,9 +2,120 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Storage</title>
   <subtitle>Changelog for Google Cloud product: Cloud Storage</subtitle>
-  <updated>2025-08-28T00:00:00+00:00</updated>
+  <updated>2025-09-17T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-storage</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-storage/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2025-09-17:feature:0</id>
+    <published>2025-09-17T00:00:00+00:00</published>
+    <updated>2025-09-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <code>bucket_attributes_view</code> and <code>bucket_attributes_latest_snapshot_view</code> tables in <a href="https://cloud.google.com/storage/docs/insights/datasets">Storage Insights datasets</a> are updated with two new fields: <code>objectCount</code> and <code>totalSize</code>. <code>objectCount</code> reflects the total number of objects in the bucket and <code>totalSize</code> reflects the total size of the bucket in bytes. The tables are automatically updated with the new fields in all existing datasets and are included in all new dataset configurations.</p>]]></content>
+    <summary>The Storage Insights datasets now include object count and total size fields, providing more detailed bucket information.</summary>
+    <title>Feature: Storage Insights Datasets Updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2025-09-15:libraries:0</id>
+    <published>2025-09-15T00:00:00+00:00</published>
+    <updated>2025-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
+<h3>Node.js</h3>
+<h3>Changes for <a href="https://github.com/googleapis/nodejs-storage">@google-cloud/storage</a></h3>
+<h4><a href="https://github.com/googleapis/nodejs-storage/compare/v7.17.0...v7.17.1">7.17.1</a> (2025-08-27)</h4>
+<h5>Bug Fixes</h5>
+<ul>
+<li>Respect useAuthWithCustomEndpoint flag for resumable uploads (<a href="https://github.com/googleapis/nodejs-storage/issues/2637">#2637</a>) (<a href="https://github.com/googleapis/nodejs-storage/commit/707b4f2fe1d67878bcd8f1434e4cbb57c951994e">707b4f2</a>)</li>
+</ul>
+<h3>Java</h3>
+<h3>Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
+<h4><a href="https://github.com/googleapis/java-storage/compare/v2.56.0...v2.57.0">2.57.0</a> (2025-09-09)</h4>
+<h5>Features</h5>
+<ul>
+<li>Add BlobInfo.ObjectContexts (<a href="https://github.com/googleapis/java-storage/issues/3259">#3259</a>) (<a href="https://github.com/googleapis/java-storage/commit/485aefd3047c52c98d8bd913033c8aee1473e988">485aefd</a>)</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.62.1 (<a href="https://github.com/googleapis/java-storage/commit/0e348dbee247e1e65713d0155e1aa29ae5c5e0e4">0e348db</a>)</li>
+<li>Update BlobAppendableUpload implementation to periodically flush for large writes (<a href="https://github.com/googleapis/java-storage/issues/3278">#3278</a>) (<a href="https://github.com/googleapis/java-storage/commit/d0ffe18084b32936c889bb280005294c7ae7064d">d0ffe18</a>)</li>
+<li>Update otel integration to properly activate span context for lazy RPCs such as reads &amp; writes pt.2 (<a href="https://github.com/googleapis/java-storage/issues/3277">#3277</a>) (<a href="https://github.com/googleapis/java-storage/commit/3240f67c192a855c92256526aeb2fa689ea15445">3240f67</a>)</li>
+</ul>
+<h5>Dependencies</h5>
+<ul>
+<li>Update dependency com.google.cloud:sdk-platform-java-config to v3.52.1 (<a href="https://github.com/googleapis/java-storage/issues/3280">#3280</a>) (<a href="https://github.com/googleapis/java-storage/commit/d046ea3da19288b64c48300bdd4f94a0ebf35458">d046ea3</a>)</li>
+<li>Update googleapis/sdk-platform-java action to v2.62.1 (<a href="https://github.com/googleapis/java-storage/issues/3281">#3281</a>) (<a href="https://github.com/googleapis/java-storage/commit/c9078bb98e3999234f95ab2e4c842c9dd7191c3d">c9078bb</a>)</li>
+</ul>]]></content>
+    <summary>A weekly digest of client library updates including new features and bug fixes for Node.js and Java.</summary>
+    <title>Libraries: Client Library Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2025-09-10:feature:0</id>
+    <published>2025-09-10T00:00:00+00:00</published>
+    <updated>2025-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud Storage FUSE now supports buffered reads, which can improve sequential read performance for large files by two to five times. When enabled, Cloud Storage FUSE asynchronously prefetches parts of a file into an in-memory buffer, allowing subsequent reads to be served from the buffer instead of requiring network calls.</p>
+<p>To learn more about buffered reads, see <a href="https://cloud.google.com/storage/docs/cloud-storage-fuse/performance#enable-buffered-reads">Enable buffered reads</a>.</p>]]></content>
+    <summary>Cloud Storage FUSE now supports buffered reads, improving sequential read performance for large files by two to five times by prefetching data into memory.</summary>
+    <title>Feature: Buffered reads in Cloud Storage FUSE</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2025-09-01:libraries:0</id>
+    <published>2025-09-01T00:00:00+00:00</published>
+    <updated>2025-09-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
+<h3>Java</h3>
+<h3>Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
+<h4><a href="https://github.com/googleapis/java-storage/compare/v2.55.0...v2.56.0">2.56.0</a> (2025-08-25)</h4>
+<h5>Features</h5>
+<ul>
+<li><em>breaking behavior</em> rewrite Storage.blobAppendableUpload to be non-blocking and have improved throughput (<a href="https://github.com/googleapis/java-storage/issues/3231">#3231</a>) (<a href="https://github.com/googleapis/java-storage/commit/7bd73d3104f5c47299f5a9c8d68dec82933eeda5">7bd73d3</a>)</li>
+<li>Add AppendableUploadWriteableByteChannel#flush() (<a href="https://github.com/googleapis/java-storage/issues/3261">#3261</a>) (<a href="https://github.com/googleapis/java-storage/commit/950c56f0e622d75faff51257d5cbc9f3ddc7e1ce">950c56f</a>)</li>
+<li>Add MinFlushSizeFlushPolicy#withMaxPendingBytes(long) (<a href="https://github.com/googleapis/java-storage/issues/3231">#3231</a>) (<a href="https://github.com/googleapis/java-storage/commit/7bd73d3104f5c47299f5a9c8d68dec82933eeda5">7bd73d3</a>)</li>
+<li>Add StorageChannelUtils to provide helper methods to perform blocking read/write to/from non-blocking channels (<a href="https://github.com/googleapis/java-storage/issues/3231">#3231</a>) (<a href="https://github.com/googleapis/java-storage/commit/7bd73d3104f5c47299f5a9c8d68dec82933eeda5">7bd73d3</a>)</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li>Make FlushPolicy${Min,Max}FlushSizeFlushPolicy constructors private (<a href="https://github.com/googleapis/java-storage/issues/3217">#3217</a>) (<a href="https://github.com/googleapis/java-storage/commit/7bd73d3104f5c47299f5a9c8d68dec82933eeda5">7bd73d3</a>)</li>
+<li>Update BlobAppendableUploadConfig and FlushPolicy.MinFlushSizeFlushPolicy to default to 4MiB minFlushSize and 16MiB maxPendingBytes (<a href="https://github.com/googleapis/java-storage/issues/3249">#3249</a>) (<a href="https://github.com/googleapis/java-storage/commit/7bd73d3104f5c47299f5a9c8d68dec82933eeda5">7bd73d3</a>)</li>
+<li>Update otel integration to properly activate span context for lazy RPCs such as reads &amp; writes (<a href="https://github.com/googleapis/java-storage/issues/3255">#3255</a>) (<a href="https://github.com/googleapis/java-storage/commit/d6587f42b65a586a2e3f30e0559975801726a812">d6587f4</a>)</li>
+</ul>
+<h5>Dependencies</h5>
+<ul>
+<li>Update actions/checkout action to v5 (<a href="https://github.com/googleapis/java-storage/issues/3239">#3239</a>) (<a href="https://github.com/googleapis/java-storage/commit/33f024b1ae094bf3e3605e1a835cb55eb5c9e750">33f024b</a>)</li>
+<li>Update dependency com.google.apis:google-api-services-storage to v1-rev20250815-2.0.0 (<a href="https://github.com/googleapis/java-storage/issues/3245">#3245</a>) (<a href="https://github.com/googleapis/java-storage/commit/87afe1ac5f500053e4c0639d5b824304d03796f4">87afe1a</a>)</li>
+<li>Update dependency com.google.cloud:sdk-platform-java-config to v3.52.0 (<a href="https://github.com/googleapis/java-storage/issues/3250">#3250</a>) (<a href="https://github.com/googleapis/java-storage/commit/0782e62fc9534e3cecfaaa4d78b58904ecf699d6">0782e62</a>)</li>
+</ul>]]></content>
+    <summary>This release introduces non-blocking operations for Storage.blobAppendableUpload, improving throughput and performance. It also includes enhancements to the AppendableUploadWriteableByteChannel and introduces helper methods for non-blocking channel operations. Several bug fixes and dependency updates are also part of this release.</summary>
+    <title>Libraries: Java client library for Google Cloud Storage updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2025-09-01:libraries:1</id>
+    <published>2025-09-01T00:00:00+00:00</published>
+    <updated>2025-09-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
+<h3>Python</h3>
+<h3>Changes for <a href="https://github.com/googleapis/python-storage">google-cloud-storage</a></h3>
+<h4><a href="https://github.com/googleapis/python-storage/compare/v3.3.0...v3.3.1">3.3.1</a> (2025-08-25)</h4>
+<h5>Bug Fixes</h5>
+<ul>
+<li>Provide option to user to set entire object checksum at "initiate a resumable upload session" and send the same.(<a href="https://github.com/googleapis/python-storage/issues/1525">#1525</a>) (<a href="https://github.com/googleapis/python-storage/commit/a8109e0d02c62542f1bea20373b53864fb776caa">a8109e0</a>)</li>
+<li>Send part's checksum for XML MPU part upload (<a href="https://github.com/googleapis/python-storage/issues/1529">#1529</a>) (<a href="https://github.com/googleapis/python-storage/commit/2ad77c7d949e84c515c051a0fd4b37b822788dd8">2ad77c7</a>)</li>
+</ul>]]></content>
+    <summary>This is a weekly digest of client library updates. The latest update includes bug fixes for google-cloud-storage, specifically addressing checksums for resumable uploads and XML MPU part uploads.</summary>
+    <title>Libraries: Client Library Updates</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

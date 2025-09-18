@@ -1,5 +1,12 @@
 # Compute Engine
 
+## 2025-09-17
+
+### Changed
+
+Compute Engine enforces limits to the total baseline performance that a project's Hyperdisk Balanced and Hyperdisk Balanced High Availability disks that are in the same zone can consume at the same time. The aggregate baseline performance limit is 50 GiB/s of throughput and 500,000 IOPS, and it only applies to baseline performance. For a detailed explanation, see [Concurrent consumption limits for baseline performance](https://cloud.google.com/compute/docs/disks/hyperdisk-performance#baseline_consumption_limits).
+
+---
 ## 2025-09-15
 
 ### Feature

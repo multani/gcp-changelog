@@ -1,5 +1,18 @@
 # Cloud Service Mesh
 
+## 2025-09-17
+
+### Announcement
+
+The following rollouts have completed for managed Cloud Service Mesh:
+
+* 1.21.5-asm.55 has rolled out to the rapid release channel.
+* 1.20.8-asm.48 has rolled out to the regular release channel.
+* 1.19.10-asm.48 has rolled out to the stable release channel.
+
+While the managed data plane automatically updates Envoy Proxies by restarting workloads, you must manually restart any StatefulSets and Jobs.
+
+---
 ## 2025-09-10
 
 ### Announcement

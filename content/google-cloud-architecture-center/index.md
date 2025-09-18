@@ -1,5 +1,12 @@
 # Google Cloud Architecture Center
 
+## 2025-09-17
+
+### Feature
+
+(New guide) [VPC Network Peering Cross-Cloud Network with NVAs and regional affinity](https://cloud.google.com/architecture/ccn-distributed-apps-design/ccn-nva-ra): Describes how to deploy network virtual appliances (NVAs) in a single-region Cross-Cloud Network architecture.
+
+---
 ## 2025-09-16
 
 ### Feature

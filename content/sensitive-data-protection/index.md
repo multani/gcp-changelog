@@ -1,5 +1,12 @@
 # Sensitive Data Protection
 
+## 2025-09-08
+
+### Fixed
+
+Fixed the issue preventing Sensitive Data Protection from detecting sensitive data in the headers and footers of certain rich document types.
+
+---
 ## 2025-09-02
 
 ### Feature

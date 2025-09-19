@@ -6,11 +6,11 @@
 
 **Salesforce connected app requires installation for OAuth 2.0 authentication**
 
-A new security requirement from Salesforce restricts the use of uninstalled connected apps. To ensure your Salesforce trigger remain functional, all users must install connected app in your Salesforce account.
+A new security requirement from Salesforce restricts the use of uninstalled connected apps. To ensure your Salesforce triggers remain functional, you must install the [connected app](https://help.salesforce.com/s/articleView?id=xcloud.connected_app_create.htm&type=5) in your Salesforce account.
 
-When establishing a new Salesforce trigger using OAuth 2.0 authentication, you are now required to install the [connected app](https://help.salesforce.com/s/articleView?language=en_US&id=xcloud.connected_app_create.htm&type=5) within your Salesforce account. This step is also necessary for existing triggers using OAuth 2.0 authentication if the connected app is not already installed, as failure to do so may cause them to stop working.
+When establishing a new Salesforce trigger using OAuth 2.0 authentication, you are now required to install the connected app within your Salesforce account. This step is also necessary for existing triggers using OAuth 2.0 authentication if the connected app is not already installed, as failure to do so may cause them to stop working.
 
-For more information, see Install the [OAuth connected app](https://cloud.google.com/application-integration/docs/configure-salesforce-trigger#post-setup).
+For more information, see [Install the OAuth 2.0 connected app](https://cloud.google.com/application-integration/docs/configure-salesforce-trigger#post-setup).
 
 ---
 ## 2025-09-10

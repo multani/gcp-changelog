@@ -1,5 +1,16 @@
 # Vertex AI Workbench
 
+## 2025-09-17
+
+### Feature
+
+**M133 release**
+
+The M133 release of Vertex AI Workbench instances includes the following:
+
+* Patched an incompatibility with the Dataproc JupyterLab plugin (`dataproc-jupyter-plugin`) and instances with end-user credentials enabled.
+
+---
 ## 2025-08-29
 
 ### Feature

@@ -356,6 +356,13 @@ For more information, see the [ComputeClass CRD reference](https://cloud.google.
 ---
 ## 2025-09-04
 
+### Changed
+
+**Other changes in 1.34**
+
+* **containerd 2.1:** GKE nodes are now upgraded to containerd 2.1. This release includes performance improvements such as faster image downloads. For a complete list of changes, see the official [containerd 2.1 release notes](https://github.com/containerd/containerd/releases/tag/v2.1.0).
+* **VPA InPlaceOrRecreate**: This version introduces a [new InPlaceOrRecreate mode in Vertical Pod Autoscaler (VPA)](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler/enhancements/4016-in-place-updates-support) (Public Preview) powered by In-Place Pod Resize (IPPR/IPPU) that allows automatically rightsizing workloads often without recreating the Pod. This mode ensures seamless service continuity while minimizing costs during idle periods. If you haven't used VPA with your workloads before, enable Vertical Pod Autoscaler on your cluster and then create a VPA Object for a workload.
+
 ### Deprecated
 
 **Deprecated in 1.34**
@@ -376,13 +383,6 @@ to a version compatible with CNI spec v1.1.0 to prevent errors.
 **Kubernetes 1.34 is now available in the Rapid channel**
 
 Kubernetes 1.34 is now available in the Rapid channel. For more information about the content of Kubernetes 1.34, read the [Kubernetes 1.34 Release Notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#changelog-since-v1330).
-
-### Changed
-
-**Other changes in 1.34**
-
-* **containerd 2.1:** GKE nodes are now upgraded to containerd 2.1. This release includes performance improvements such as faster image downloads. For a complete list of changes, see the official [containerd 2.1 release notes](https://github.com/containerd/containerd/releases/tag/v2.1.0).
-* **VPA InPlaceOrRecreate**: This version introduces a [new InPlaceOrRecreate mode in Vertical Pod Autoscaler (VPA)](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler/enhancements/4016-in-place-updates-support) (Public Preview) powered by In-Place Pod Resize (IPPR/IPPU) that allows automatically rightsizing workloads often without recreating the Pod. This mode ensures seamless service continuity while minimizing costs during idle periods. If you haven't used VPA with your workloads before, enable Vertical Pod Autoscaler on your cluster and then create a VPA Object for a workload.
 
 ### Feature
 

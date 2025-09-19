@@ -1,5 +1,12 @@
 # Model Armor
 
+## 2025-09-16
+
+### Feature
+
+Model Armor is integrated with Google Agentspace to provide greater insights and enhanced security of your agent interactions by default. For more information, see [Integration with Google Agentspace](https://cloud.google.com/security-command-center/docs/model-armor-agentspace-integration).
+
+---
 ## 2025-09-15
 
 ### Feature

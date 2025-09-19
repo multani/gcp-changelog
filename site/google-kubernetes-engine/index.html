@@ -2248,10 +2248,16 @@ multiple days to complete across all Google Cloud zones.</p>
 <p>For more information, see the <a href="https://cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#sysctls">ComputeClass CRD reference</a>.</p>
 <hr />
 <h2 id="2025-09-04">2025-09-04</h2>
+<h3 id="changed_6">Changed</h3>
+<p><strong>Other changes in 1.34</strong></p>
+<ul>
+<li><strong>containerd 2.1:</strong> GKE nodes are now upgraded to containerd 2.1. This release includes performance improvements such as faster image downloads. For a complete list of changes, see the official <a href="https://github.com/containerd/containerd/releases/tag/v2.1.0">containerd 2.1 release notes</a>.</li>
+<li><strong>VPA InPlaceOrRecreate</strong>: This version introduces a <a href="https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler/enhancements/4016-in-place-updates-support">new InPlaceOrRecreate mode in Vertical Pod Autoscaler (VPA)</a> (Public Preview) powered by In-Place Pod Resize (IPPR/IPPU) that allows automatically rightsizing workloads often without recreating the Pod. This mode ensures seamless service continuity while minimizing costs during idle periods. If you haven't used VPA with your workloads before, enable Vertical Pod Autoscaler on your cluster and then create a VPA Object for a workload.</li>
+</ul>
 <h3 id="deprecated">Deprecated</h3>
 <p><strong>Deprecated in 1.34</strong></p>
 <p>The <a href="https://github.com/kubernetes/kubelet/tree/v0.34.0/pkg/apis/dra/v1beta1">v1beta1</a> gRPC API between the Kubelet and DRA drivers is deprecated in this release in favor of the <a href="https://github.com/kubernetes/kubelet/tree/v0.34.0/pkg/apis/dra/v1">v1</a> API. This API will continue to function but we recommend that all drivers move to the v1 API to prepare for the eventual removal of the v1beta1 API.</p>
-<h3 id="changed_6">Changed</h3>
+<h3 id="changed_7">Changed</h3>
 <p><strong>CNI spec version for GKE Dataplane V2 updated to v1.1.0</strong></p>
 <p>Starting with GKE patch version 1.34, clusters using <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/dataplane-v2">GKE Dataplane V2</a> are being updated from <a href="https://www.cni.dev/docs/spec/">CNI spec</a> v0.3.1 to v1.1.0.</p>
 <p>Action required: If you use your own CNI plugins in your GKE cluster (such as self-managed open-source Istio), you must upgrade them
@@ -2259,12 +2265,6 @@ to a version compatible with CNI spec v1.1.0 to prevent errors.</p>
 <h3 id="announcement">Announcement</h3>
 <p><strong>Kubernetes 1.34 is now available in the Rapid channel</strong></p>
 <p>Kubernetes 1.34 is now available in the Rapid channel. For more information about the content of Kubernetes 1.34, read the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#changelog-since-v1330">Kubernetes 1.34 Release Notes</a>.</p>
-<h3 id="changed_7">Changed</h3>
-<p><strong>Other changes in 1.34</strong></p>
-<ul>
-<li><strong>containerd 2.1:</strong> GKE nodes are now upgraded to containerd 2.1. This release includes performance improvements such as faster image downloads. For a complete list of changes, see the official <a href="https://github.com/containerd/containerd/releases/tag/v2.1.0">containerd 2.1 release notes</a>.</li>
-<li><strong>VPA InPlaceOrRecreate</strong>: This version introduces a <a href="https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler/enhancements/4016-in-place-updates-support">new InPlaceOrRecreate mode in Vertical Pod Autoscaler (VPA)</a> (Public Preview) powered by In-Place Pod Resize (IPPR/IPPU) that allows automatically rightsizing workloads often without recreating the Pod. This mode ensures seamless service continuity while minimizing costs during idle periods. If you haven't used VPA with your workloads before, enable Vertical Pod Autoscaler on your cluster and then create a VPA Object for a workload.</li>
-</ul>
 <h3 id="feature_3">Feature</h3>
 <p><strong>New features in Kubernetes 1.34</strong></p>
 <ul>

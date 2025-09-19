@@ -97,14 +97,6 @@ Agents can now search for emails in the agent adapter by keyword, session ID, or
 
 You can now use the callback calls API to cancel a single scheduled callback call or a list of calls.
 
-### Feature
-
-**New advanced reporting dashboards**
-
-The following new advanced reporting dashboard is available:
-
-* **Deflections**. Get deflection information by queue and for your entire contact center. For more information, see [Deflections dashboards](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-deflections).
-
 ### Fixed
 
 The following issues were addressed in this release:

@@ -1,5 +1,21 @@
 # Gemini Code Assist
 
+## 2025-09-18
+
+### Feature
+
+
+
+### See code customization status directly in IDE
+
+You'll now get a one-time notification the first time code customization is
+enabled for you, so you know right away that the feature is active.
+Additionally, you can now check the status of code customization directly by
+clicking on the Gemini icon in your IDE. This makes it simple to confirm that
+the feature is configured correctly and ready to go. For more information, see
+[Code customization overview](https://cloud.google.com/gemini/docs/codeassist/code-customization-overview).
+
+---
 ## 2025-09-11
 
 ### Introducing Release Channels in Gemini Code Assist

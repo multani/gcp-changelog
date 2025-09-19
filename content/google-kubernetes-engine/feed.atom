@@ -413,7 +413,22 @@ multiple days to complete across all Google Cloud zones.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-04:deprecated:0</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-04:changed:0</id>
+    <published>2025-09-04T00:00:00+00:00</published>
+    <updated>2025-09-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Other changes in 1.34</strong></p>
+<ul>
+<li><strong>containerd 2.1:</strong> GKE nodes are now upgraded to containerd 2.1. This release includes performance improvements such as faster image downloads. For a complete list of changes, see the official <a href="https://github.com/containerd/containerd/releases/tag/v2.1.0">containerd 2.1 release notes</a>.</li>
+<li><strong>VPA InPlaceOrRecreate</strong>: This version introduces a <a href="https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler/enhancements/4016-in-place-updates-support">new InPlaceOrRecreate mode in Vertical Pod Autoscaler (VPA)</a> (Public Preview) powered by In-Place Pod Resize (IPPR/IPPU) that allows automatically rightsizing workloads often without recreating the Pod. This mode ensures seamless service continuity while minimizing costs during idle periods. If you haven't used VPA with your workloads before, enable Vertical Pod Autoscaler on your cluster and then create a VPA Object for a workload.</li>
+</ul>]]></content>
+    <summary>GKE nodes are upgraded to containerd 2.1, bringing performance improvements like faster image downloads. Additionally, a new In-Place Or Recreate mode for Vertical Pod Autoscaler (VPA) is available in Public Preview, enabling automatic rightsizing of workloads, often without Pod recreation, ensuring service continuity and cost reduction.</summary>
+    <title>Changed: containerd 2.1 and VPA updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-04:deprecated:1</id>
     <published>2025-09-04T00:00:00+00:00</published>
     <updated>2025-09-04T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Deprecated in 1.34</strong></p>
@@ -425,7 +440,7 @@ multiple days to complete across all Google Cloud zones.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-04:changed:1</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-04:changed:2</id>
     <published>2025-09-04T00:00:00+00:00</published>
     <updated>2025-09-04T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>CNI spec version for GKE Dataplane V2 updated to v1.1.0</strong></p>
@@ -439,28 +454,13 @@ to a version compatible with CNI spec v1.1.0 to prevent errors.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-04:announcement:2</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-04:announcement:3</id>
     <published>2025-09-04T00:00:00+00:00</published>
     <updated>2025-09-04T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Kubernetes 1.34 is now available in the Rapid channel</strong></p>
 <p>Kubernetes 1.34 is now available in the Rapid channel. For more information about the content of Kubernetes 1.34, read the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#changelog-since-v1330">Kubernetes 1.34 Release Notes</a>.</p>]]></content>
     <summary>Kubernetes 1.34 has been released and is now available in the Rapid channel. Read the release notes for details.</summary>
     <title>Announcement: Kubernetes 1.34 Available</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-04:changed:3</id>
-    <published>2025-09-04T00:00:00+00:00</published>
-    <updated>2025-09-04T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Other changes in 1.34</strong></p>
-<ul>
-<li><strong>containerd 2.1:</strong> GKE nodes are now upgraded to containerd 2.1. This release includes performance improvements such as faster image downloads. For a complete list of changes, see the official <a href="https://github.com/containerd/containerd/releases/tag/v2.1.0">containerd 2.1 release notes</a>.</li>
-<li><strong>VPA InPlaceOrRecreate</strong>: This version introduces a <a href="https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler/enhancements/4016-in-place-updates-support">new InPlaceOrRecreate mode in Vertical Pod Autoscaler (VPA)</a> (Public Preview) powered by In-Place Pod Resize (IPPR/IPPU) that allows automatically rightsizing workloads often without recreating the Pod. This mode ensures seamless service continuity while minimizing costs during idle periods. If you haven't used VPA with your workloads before, enable Vertical Pod Autoscaler on your cluster and then create a VPA Object for a workload.</li>
-</ul>]]></content>
-    <summary>GKE nodes are upgraded to containerd 2.1, bringing performance improvements like faster image downloads. Additionally, a new In-Place Or Recreate mode for Vertical Pod Autoscaler (VPA) is available in Public Preview, enabling automatic rightsizing of workloads, often without Pod recreation, ensuring service continuity and cost reduction.</summary>
-    <title>Changed: containerd 2.1 and VPA updates</title>
   </entry>
   <entry>
     <author>

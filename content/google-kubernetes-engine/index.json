@@ -79,6 +79,14 @@
     ],
     "2025-09-04": [
       {
+        "kind": "Changed",
+        "content": "**Other changes in 1.34**\n\n* **containerd 2.1:** GKE nodes are now upgraded to containerd 2.1. This release includes performance improvements such as faster image downloads. For a complete list of changes, see the official [containerd 2.1 release notes](https://github.com/containerd/containerd/releases/tag/v2.1.0).\n* **VPA InPlaceOrRecreate**: This version introduces a [new InPlaceOrRecreate mode in Vertical Pod Autoscaler (VPA)](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler/enhancements/4016-in-place-updates-support) (Public Preview) powered by In-Place Pod Resize (IPPR/IPPU) that allows automatically rightsizing workloads often without recreating the Pod. This mode ensures seamless service continuity while minimizing costs during idle periods. If you haven't used VPA with your workloads before, enable Vertical Pod Autoscaler on your cluster and then create a VPA Object for a workload.",
+        "summary": {
+          "title": "containerd 2.1 and VPA updates",
+          "summary": "GKE nodes are upgraded to containerd 2.1, bringing performance improvements like faster image downloads. Additionally, a new In-Place Or Recreate mode for Vertical Pod Autoscaler (VPA) is available in Public Preview, enabling automatic rightsizing of workloads, often without Pod recreation, ensuring service continuity and cost reduction."
+        }
+      },
+      {
         "kind": "Deprecated",
         "content": "**Deprecated in 1.34**\n\nThe [v1beta1](https://github.com/kubernetes/kubelet/tree/v0.34.0/pkg/apis/dra/v1beta1) gRPC API between the Kubelet and DRA drivers is deprecated in this release in favor of the [v1](https://github.com/kubernetes/kubelet/tree/v0.34.0/pkg/apis/dra/v1) API. This API will continue to function but we recommend that all drivers move to the v1 API to prepare for the eventual removal of the v1beta1 API.",
         "summary": {
@@ -100,14 +108,6 @@
         "summary": {
           "title": "Kubernetes 1.34 Available",
           "summary": "Kubernetes 1.34 has been released and is now available in the Rapid channel. Read the release notes for details."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "**Other changes in 1.34**\n\n* **containerd 2.1:** GKE nodes are now upgraded to containerd 2.1. This release includes performance improvements such as faster image downloads. For a complete list of changes, see the official [containerd 2.1 release notes](https://github.com/containerd/containerd/releases/tag/v2.1.0).\n* **VPA InPlaceOrRecreate**: This version introduces a [new InPlaceOrRecreate mode in Vertical Pod Autoscaler (VPA)](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler/enhancements/4016-in-place-updates-support) (Public Preview) powered by In-Place Pod Resize (IPPR/IPPU) that allows automatically rightsizing workloads often without recreating the Pod. This mode ensures seamless service continuity while minimizing costs during idle periods. If you haven't used VPA with your workloads before, enable Vertical Pod Autoscaler on your cluster and then create a VPA Object for a workload.",
-        "summary": {
-          "title": "containerd 2.1 and VPA updates",
-          "summary": "GKE nodes are upgraded to containerd 2.1, bringing performance improvements like faster image downloads. Additionally, a new In-Place Or Recreate mode for Vertical Pod Autoscaler (VPA) is available in Public Preview, enabling automatic rightsizing of workloads, often without Pod recreation, ensuring service continuity and cost reduction."
         }
       },
       {

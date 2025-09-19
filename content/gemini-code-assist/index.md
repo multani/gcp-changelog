@@ -2,10 +2,6 @@
 
 ## 2025-09-18
 
-### Feature
-
-
-
 ### See code customization status directly in IDE
 
 You'll now get a one-time notification the first time code customization is

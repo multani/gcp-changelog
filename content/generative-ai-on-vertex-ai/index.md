@@ -1,5 +1,21 @@
 # Generative AI on Vertex AI
 
+## 2025-09-18
+
+### Changed
+
+**Grounding with Google Maps**
+
+Grounding with Google Maps has implemented the following changes:
+
+* Removed the following fields from the API response:
+  + `grounding_chunk.maps.text`
+  + `grounding_chunk.maps.place_answer_sources.review_snippets.author_attribution`
+  + `grounding_chunk.maps.place_answer_sources.flag_content_uri`
+  + `grounding_chunk.maps.place_answer_sources.review_snippets.flag_content_uri`
+* The widget context token is only returned when the optional `widget_token_enable` input flag is set.
+
+---
 ## 2025-09-15
 
 ### Changed

@@ -1,5 +1,12 @@
 # Sensitive Data Protection
 
+## 2025-09-19
+
+### Feature
+
+When you inspect a BigQuery table for sensitive data, you can send the inspection findings to Dataplex Universal Catalog. For more information, see [Send inspection results to Dataplex Universal Catalog as aspects](https://cloud.google.com/sensitive-data-protection/docs/add-aspects-inspection-job).
+
+---
 ## 2025-09-08
 
 ### Fixed

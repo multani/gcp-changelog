@@ -1,5 +1,19 @@
 # Access Transparency
 
+## 2025-09-10
+
+### Feature
+
+Access Transparency supports Chrome Enterprise Premium secure gateway in the GA stage.
+
+---
+## 2025-09-08
+
+### Feature
+
+Image streaming is generally available [(GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-09-02
 
 ### Feature

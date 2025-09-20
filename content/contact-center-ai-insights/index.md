@@ -1,5 +1,21 @@
 # Contact Center AI Insights
 
+## 2025-09-17
+
+### Changed
+
+Conversational Insights offers the following subscriptions:
+
+* **Standard edition** provides a suite of tools to analyze customer service conversations.
+* **Enterprise edition** includes the standard edition tools and Quality AI.
+* **Standalone Quality AI** provides only automated evaluation tools.
+
+[Pricing](https://cloud.google.com/contact-center/insights/docs/pricing) is based on how you interact with your customers:
+
+* **Chat** conversations are billed per message.
+* **Voice** conversations are billed per minute.
+
+---
 ## 2025-08-15
 
 ### Feature

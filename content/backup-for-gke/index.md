@@ -1,5 +1,15 @@
 # Backup for GKE
 
+## 2025-09-16
+
+### Feature
+
+Backup for GKE now supports restoring disks in pre-existing Storage Pools for Hyperdisk Balanced and Hyperdisk Throughput volumes. This feature is available in clusters running the following GKE versions:
+
+* 1.33: Versions `1.33.4-gke.1245000` and later
+* 1.34 and later: All versions from `1.34.0-gke.1532000` onwards
+
+---
 ## 2025-08-20
 
 ### Feature

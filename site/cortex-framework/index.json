@@ -1,0 +1,55 @@
+{
+  "name": "Cortex Framework",
+  "entries": {
+    "2025-09-19": [
+      {
+        "kind": "Changed",
+        "content": "* **1-Click Deployer**: 1-Click deployer now deploys the\n  [Sustainability](https://cloud.google.com/cortex/docs/dun-and-bradstreet) module when SAP ECC or S/4 is selected.\n* **SAP**:\n  + The CDC script now considers the `L` flag alongside `I` and `U` when\n    determining which records are updated in the raw dataset. This is to account\n    for situations where the pipeline is somehow re-configured after data load,\n    but the CDC dataset can still be reused to avoid re-processing existing data.\n  + Column names in `StockInHand` views (ECC and S/4) for `MATNR` and\n    `WERKS` have been aligned with other views to be `MaterialNumber_MATNR`\n    and `Plant_WERKS`. Previous column names `ArticleNumber_MATNR` and\n    `Site_WERKS` still exist for compatibility reasons, but will be removed in\n    a future release. Customers are advised to change their upstream consumption assets accordingly.\n  + Column names in `SalesOrders_V2` views (ECC and S/4) for `ERDAT` and\n    `ERZET` have been aligned to new names `SalesDocumentCreationDate_ERDAT`,\n    `SalesOrderItemCreationDate_ERDAT`, `SalesOrderCreationTime_ERZET` and\n    `SalesDocumentItemCreationTime_ERZET` to account for the correct\n    granularity of their source table (either `VBAP` or `VBAK`) . Previous\n    column names `CreationDate_ERDAT` and `CreationTime_ERZET` still exist for\n    compatibility reasons, but will eventually be removed in a future release.\n    Customers are advised to change their upstream consumption assets\n    accordingly. Also, Sales Order Item level calendar dimensions are now added\n    by default.\n  + Column names in `Deliveries` view for `VGBEL`, `VGPOS`, and `XBLNR` are\n    updated to `InternalReferenceDocumentNumber_VGBEL`,\n    `InternalReferenceDocumentItem_VGPOS` `ExternalReferenceDocumentNumber_XBLNR`\n    for more clarity. Previous column names `SalesOrderNumber_VGBEL`,\n    `SalesOrderItem_VGPOS`, and `ReferenceDocumentNumber_XBLNR` still exist for\n    compatibility reasons, but will eventually be removed in a future release.\n    Customers are advised to change their upstream consumption assets\n    accordingly.\n  + Sales Order Item level calendar dimensions are now added by default.\n  + In `AccountingDocuments` view as well as the downstream\n    `AccountingDocumentsReceivables` views, `DoubtfulReceivables`, and\n    `DaysInArrear` metrics are now positive instead of negative to align with\n    [official SAP guidelines](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/3cb1182b4a184bdd93f8d62e3f1f0741/39a73b581aee2160e10000000a44147b.html).\n  + `SalesFulfillment` and `SalesFulfillment_PerOrder` views are updated\n    to use `SalesOrders_V2` instead of `SalesOrders` view as their upstream\n    source for both ECC and S/4. The view signatures are unchanged.\n  + ERD for both [ECC](https://cloud.google.com/cortex/docs/operational-sap#sap-ecc) and\n    [S/4](https://cloud.google.com/cortex/docs/operational-sap#sap-s4-hana) have been cleaned up and\n    updated based on the latest changes.\n* **Marketing**: Cortex for Meridian reporting views adapted to TikTok, Meta,\n  and YouTube (DV360) to focus on top of the funnel marketing campaigns. Search\n  Ads data is skipped from aggregates as higher quality data is now available from\n  Marketing Mix Modeling (MMM) Data Platform.",
+        "summary": {
+          "title": "SAP and Marketing Updates",
+          "summary": "The 1-Click Deployer now includes the Sustainability module for SAP ECC and S/4. Several SAP views have updated column names for clarity and alignment with SAP guidelines, including StockInHand, SalesOrders_V2, Deliveries, and AccountingDocuments. Sales Fulfillment views now use SalesOrders_V2 as their source. Marketing reporting views for TikTok, Meta, and YouTube have been adapted, and Search Ads data is now excluded from aggregates."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "* **SAP**:\n  + `Qty` field data type in `StockInHand` views (ECC and S/4) has been\n    changed from `STRING` to `NUMERIC`.\n  + Currency conversion and currency decimal shift in `PurchaseDocuments_Flow`\n    views (ECC and S/4) now align with the logic implemented in all other SAP\n    reporting views.\n  + Fixed incorrect GR quantity caused by an incorrect `JOIN` condition.\n  + Removed an excessive `LEFT JOIN` in the Unit of Measure Function and View\n    Utility code to avoid possible duplicate rows.\n  + Cleaned up unnecessary date casting and `ORDER BY` clauses in some views\n    to improve performance.\n* **Salesforce (SFDC):**\n  + Currency conversion logic is now updated to account for possible source\n    currency fields that are not corporate currency in the objects\n    (for example, `Opportunities`).\n  + Updated ERD to include proper linkage to calendar dimension.",
+        "summary": {
+          "title": "SAP and Salesforce fixes",
+          "summary": "This release includes several fixes for SAP and Salesforce modules. Key updates include data type changes for the Qty field in StockInHand views, improved currency conversion logic in PurchaseDocuments_Flow views and Salesforce opportunities, and performance enhancements through code cleanup and optimized JOIN conditions. Additionally, the ERD has been updated for better calendar dimension linkage."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "* **SAP**: The views `GLDocumentsHdr` and `RegionsMD` are now removed as\n  they are no longer relevant.",
+        "summary": {
+          "title": "SAP Views Removed",
+          "summary": "The SAP views GLDocumentsHdr and RegionsMD have been removed as they are no longer relevant."
+        }
+      },
+      {
+        "kind": "Issue",
+        "content": "* **Oracle** builds may time out when using a private worker pool created\n  with default parameters.",
+        "summary": {
+          "title": "Oracle builds may time out",
+          "summary": "Oracle builds may time out when using a private worker pool with default parameters."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "",
+        "summary": {
+          "title": "New Features Announcement",
+          "summary": "We're excited to announce new features that will enhance your experience. Explore the latest updates designed to improve efficiency and productivity."
+        }
+      },
+      {
+        "kind": "Release 6.3.2",
+        "content": "",
+        "summary": {
+          "title": "Release 6.3.2",
+          "summary": "We are happy to announce the release of version 6.3.2. This release includes important security patches and performance improvements. We recommend all users to update to this version at their earliest convenience."
+        }
+      }
+    ]
+  }
+}

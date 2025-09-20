@@ -1,5 +1,19 @@
 # Spanner
 
+## 2025-09-17
+
+### Feature
+
+Spanner Graph support of schemaless schemas is [generally available](https://cloud.google.com/products#product-launch-stages) (GA). For more information, see [Manage schemaless data with Spanner Graph](https://cloud.google.com/spanner/docs/graph/manage-schemaless-data).
+
+---
+## 2025-09-15
+
+### Feature
+
+The Cassandra interface for Spanner is now generally available. The Cassandra interface lets you take advantage of Spanner's fully managed, scalable, and highly available infrastructure using familiar Cassandra tools and syntax. For more information, see [Cassandra interface](https://cloud.google.com/spanner/docs/non-relational/cassandra-overview), [Migrate from Cassandra to Spanner](https://cloud.google.com/spanner/docs/non-relational/migrate-from-cassandra-to-spanner), and [Connect to Spanner using the Cassandra interface](https://cloud.google.com/spanner/docs/non-relational/connect-cassandra-adapter).
+
+---
 ## 2025-09-03
 
 ### Feature

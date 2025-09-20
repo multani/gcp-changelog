@@ -2,9 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Guest Environment</title>
   <subtitle>Changelog for Google Cloud product: Guest Environment</subtitle>
-  <updated>2025-09-09T00:00:00+00:00</updated>
+  <updated>2025-09-18T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:guest-environment</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/guest-environment/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2025-09-18:feature:0</id>
+    <published>2025-09-18T00:00:00+00:00</published>
+    <updated>2025-09-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20250918.01</code> of the guest agent is now available. This guest agent
+version introduces the plugin-based architecture to the following Debian and
+Enterprise Linux 10 operating systems:</p>
+<ul>
+<li>Red Hat Enterprise Linux (RHEL) 10</li>
+<li>Rocky Linux 10</li>
+<li>CentOS Stream 10</li>
+<li>Debian 13</li>
+</ul>
+<p>For more information about the plugin-based architecture, see
+<a href="https://cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>]]></content>
+    <summary>The new guest agent version 20250918.01 is available and introduces a plugin-based architecture for RHEL 10, Rocky Linux 10, CentOS Stream 10, and Debian 13.</summary>
+    <title>Feature: Guest agent plugin architecture</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2025-09-18:fixed:1</id>
+    <published>2025-09-18T00:00:00+00:00</published>
+    <updated>2025-09-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20250918.01</code> includes the following fixes for issues found in
+plugin-based architecture. For more information about the plugin-based
+architecture, see <a href="https://cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>
+<ul>
+<li>Corrects an issue in the OS Login module that was incorrectly writing <code>perm_denied=die</code>
+  <a href="https://en.wikipedia.org/wiki/Pluggable_Authentication_Module">PAM</a> module
+  configuration when two-factor authentication isn't enabled.</li>
+<li>Fixes an issue in the metadata-based SSH module where re-adding a user didn't
+  add the user to the sudoers group.</li>
+</ul>]]></content>
+    <summary>This release includes fixes for the OS Login and metadata-based SSH modules.</summary>
+    <title>Fixed: Version 20250918.01 Release Notes</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

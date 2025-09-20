@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: Cortex Framework</title>
+  <subtitle>Changelog for Google Cloud product: Cortex Framework</subtitle>
+  <updated>2025-09-19T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:cortex-framework</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cortex-framework/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cortex-framework:2025-09-19:changed:0</id>
+    <published>2025-09-19T00:00:00+00:00</published>
+    <updated>2025-09-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>1-Click Deployer</strong>: 1-Click deployer now deploys the
+  <a href="https://cloud.google.com/cortex/docs/dun-and-bradstreet">Sustainability</a> module when SAP ECC or S/4 is selected.</li>
+<li><strong>SAP</strong>:</li>
+<li>The CDC script now considers the <code>L</code> flag alongside <code>I</code> and <code>U</code> when
+    determining which records are updated in the raw dataset. This is to account
+    for situations where the pipeline is somehow re-configured after data load,
+    but the CDC dataset can still be reused to avoid re-processing existing data.</li>
+<li>Column names in <code>StockInHand</code> views (ECC and S/4) for <code>MATNR</code> and
+    <code>WERKS</code> have been aligned with other views to be <code>MaterialNumber_MATNR</code>
+    and <code>Plant_WERKS</code>. Previous column names <code>ArticleNumber_MATNR</code> and
+    <code>Site_WERKS</code> still exist for compatibility reasons, but will be removed in
+    a future release. Customers are advised to change their upstream consumption assets accordingly.</li>
+<li>Column names in <code>SalesOrders_V2</code> views (ECC and S/4) for <code>ERDAT</code> and
+    <code>ERZET</code> have been aligned to new names <code>SalesDocumentCreationDate_ERDAT</code>,
+    <code>SalesOrderItemCreationDate_ERDAT</code>, <code>SalesOrderCreationTime_ERZET</code> and
+    <code>SalesDocumentItemCreationTime_ERZET</code> to account for the correct
+    granularity of their source table (either <code>VBAP</code> or <code>VBAK</code>) . Previous
+    column names <code>CreationDate_ERDAT</code> and <code>CreationTime_ERZET</code> still exist for
+    compatibility reasons, but will eventually be removed in a future release.
+    Customers are advised to change their upstream consumption assets
+    accordingly. Also, Sales Order Item level calendar dimensions are now added
+    by default.</li>
+<li>Column names in <code>Deliveries</code> view for <code>VGBEL</code>, <code>VGPOS</code>, and <code>XBLNR</code> are
+    updated to <code>InternalReferenceDocumentNumber_VGBEL</code>,
+    <code>InternalReferenceDocumentItem_VGPOS</code> <code>ExternalReferenceDocumentNumber_XBLNR</code>
+    for more clarity. Previous column names <code>SalesOrderNumber_VGBEL</code>,
+    <code>SalesOrderItem_VGPOS</code>, and <code>ReferenceDocumentNumber_XBLNR</code> still exist for
+    compatibility reasons, but will eventually be removed in a future release.
+    Customers are advised to change their upstream consumption assets
+    accordingly.</li>
+<li>Sales Order Item level calendar dimensions are now added by default.</li>
+<li>In <code>AccountingDocuments</code> view as well as the downstream
+    <code>AccountingDocumentsReceivables</code> views, <code>DoubtfulReceivables</code>, and
+    <code>DaysInArrear</code> metrics are now positive instead of negative to align with
+    <a href="https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/3cb1182b4a184bdd93f8d62e3f1f0741/39a73b581aee2160e10000000a44147b.html">official SAP guidelines</a>.</li>
+<li><code>SalesFulfillment</code> and <code>SalesFulfillment_PerOrder</code> views are updated
+    to use <code>SalesOrders_V2</code> instead of <code>SalesOrders</code> view as their upstream
+    source for both ECC and S/4. The view signatures are unchanged.</li>
+<li>ERD for both <a href="https://cloud.google.com/cortex/docs/operational-sap#sap-ecc">ECC</a> and
+    <a href="https://cloud.google.com/cortex/docs/operational-sap#sap-s4-hana">S/4</a> have been cleaned up and
+    updated based on the latest changes.</li>
+<li><strong>Marketing</strong>: Cortex for Meridian reporting views adapted to TikTok, Meta,
+  and YouTube (DV360) to focus on top of the funnel marketing campaigns. Search
+  Ads data is skipped from aggregates as higher quality data is now available from
+  Marketing Mix Modeling (MMM) Data Platform.</li>
+</ul>]]></content>
+    <summary>The 1-Click Deployer now includes the Sustainability module for SAP ECC and S/4. Several SAP views have updated column names for clarity and alignment with SAP guidelines, including StockInHand, SalesOrders_V2, Deliveries, and AccountingDocuments. Sales Fulfillment views now use SalesOrders_V2 as their source. Marketing reporting views for TikTok, Meta, and YouTube have been adapted, and Search Ads data is now excluded from aggregates.</summary>
+    <title>Changed: SAP and Marketing Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cortex-framework:2025-09-19:fixed:1</id>
+    <published>2025-09-19T00:00:00+00:00</published>
+    <updated>2025-09-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>SAP</strong>:</li>
+<li><code>Qty</code> field data type in <code>StockInHand</code> views (ECC and S/4) has been
+    changed from <code>STRING</code> to <code>NUMERIC</code>.</li>
+<li>Currency conversion and currency decimal shift in <code>PurchaseDocuments_Flow</code>
+    views (ECC and S/4) now align with the logic implemented in all other SAP
+    reporting views.</li>
+<li>Fixed incorrect GR quantity caused by an incorrect <code>JOIN</code> condition.</li>
+<li>Removed an excessive <code>LEFT JOIN</code> in the Unit of Measure Function and View
+    Utility code to avoid possible duplicate rows.</li>
+<li>Cleaned up unnecessary date casting and <code>ORDER BY</code> clauses in some views
+    to improve performance.</li>
+<li><strong>Salesforce (SFDC):</strong></li>
+<li>Currency conversion logic is now updated to account for possible source
+    currency fields that are not corporate currency in the objects
+    (for example, <code>Opportunities</code>).</li>
+<li>Updated ERD to include proper linkage to calendar dimension.</li>
+</ul>]]></content>
+    <summary>This release includes several fixes for SAP and Salesforce modules. Key updates include data type changes for the Qty field in StockInHand views, improved currency conversion logic in PurchaseDocuments_Flow views and Salesforce opportunities, and performance enhancements through code cleanup and optimized JOIN conditions. Additionally, the ERD has been updated for better calendar dimension linkage.</summary>
+    <title>Fixed: SAP and Salesforce fixes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cortex-framework:2025-09-19:deprecated:2</id>
+    <published>2025-09-19T00:00:00+00:00</published>
+    <updated>2025-09-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>SAP</strong>: The views <code>GLDocumentsHdr</code> and <code>RegionsMD</code> are now removed as
+  they are no longer relevant.</li>
+</ul>]]></content>
+    <summary>The SAP views GLDocumentsHdr and RegionsMD have been removed as they are no longer relevant.</summary>
+    <title>Deprecated: SAP Views Removed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cortex-framework:2025-09-19:issue:3</id>
+    <published>2025-09-19T00:00:00+00:00</published>
+    <updated>2025-09-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>Oracle</strong> builds may time out when using a private worker pool created
+  with default parameters.</li>
+</ul>]]></content>
+    <summary>Oracle builds may time out when using a private worker pool with default parameters.</summary>
+    <title>Issue: Oracle builds may time out</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cortex-framework:2025-09-19:announcement:4</id>
+    <published>2025-09-19T00:00:00+00:00</published>
+    <updated>2025-09-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary>We're excited to announce new features that will enhance your experience. Explore the latest updates designed to improve efficiency and productivity.</summary>
+    <title>Announcement: New Features Announcement</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cortex-framework:2025-09-19:release 6.3.2:5</id>
+    <published>2025-09-19T00:00:00+00:00</published>
+    <updated>2025-09-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary>We are happy to announce the release of version 6.3.2. This release includes important security patches and performance improvements. We recommend all users to update to this version at their earliest convenience.</summary>
+    <title>Release 6.3.2: Release 6.3.2</title>
+  </entry>
+</feed>

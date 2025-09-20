@@ -79,10 +79,6 @@
 * **Oracle** builds may time out when using a private worker pool created
   with default parameters.
 
-### Announcement
-
-
-
 ### Release 6.3.2
 
 

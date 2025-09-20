@@ -27,6 +27,14 @@ The Spanner JDBC Driver has been updated to version 2.32.1. This driver is used 
 
 The [Looker-Excel Connector](https://cloud.google.com/looker/docs/excel-connector) is now generally available. When your Looker admin enables the Looker-Excel Connector on the BI Connections admin page, Looker Explores display the Open in Excel option in the Explore gear menu. This option downloads the Explore results to a Windows PC in a format that Microsoft Excel recognizes.
 
+### Feature
+
+The [Looker–Power BI Connector](https://cloud.google.com/looker/docs/powerbi-connector) is now supported for [customer-hosted Looker instances](https://cloud.google.com/looker/docs/customer-hosted-installation-steps) and for Looker (Google Cloud core) instances that use [private connections](https://cloud.google.com/looker/docs/looker-core-networking-options#private_ip_connections). **Note:** This item was added on September 19, 2025.
+
+### Feature
+
+The [Looker–Tableau BI Connector](https://cloud.google.com/looker/docs/tableau-connector) is now supported for [customer-hosted Looker instances](https://cloud.google.com/looker/docs/customer-hosted-installation-steps) and for Looker (Google Cloud core) instances that use [private connections](https://cloud.google.com/looker/docs/looker-core-networking-options#private_ip_connections). **Note:** This item was added on September 19, 2025.
+
 ### Fixed
 
 Looker 25.16 contains the following accessibility improvements:

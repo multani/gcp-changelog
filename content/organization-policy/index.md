@@ -1,5 +1,14 @@
 # Organization Policy
 
+## 2025-09-18
+
+### Feature
+
+Select Cloud Load Balancing resources let you use custom constraints to define your own restrictions on Google Cloud services. To learn which load balancing resources support custom constraints and to view sample use cases, see [Manage Cloud Load Balancing resources using custom constraints](https://cloud.google.com/load-balancing/docs/custom-constraints).
+
+This feature is available in **General Availability**.
+
+---
 ## 2025-09-11
 
 ### Feature

@@ -16,7 +16,7 @@
 
 ### Feature
 
-**Dalogflow CX (Conversational Agents)**: New prompt security controls are available in **agent settings**. See the [agent settings documentation](https://docs.google.com/document/d/1JsI5akdrE0jeut-dTS1niBWCycpa3JbnzzwELtAicxA/edit?resourcekey=0-fW6C0xA5t-bEBypItPV3XA&tab=t.0) for details.
+**Dialogflow CX (Conversational Agents)**: New prompt security controls are available in **agent settings**. See the [agent settings documentation](https://cloud.google.com/dialogflow/cx/docs/concept/agent-settings#settings-generative-prompt-security) for details.
 
 ### Feature
 

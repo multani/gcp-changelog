@@ -1,5 +1,24 @@
 # Google Agentspace
 
+## 2025-09-24
+
+### Feature
+
+**Google Agentspace: Knowledge base filter for catalog entities in ServiceNow connectors (GA)**
+
+In your ServiceNow connectors, you can filter your knowledge base entities by catalog IDs. This lets you selectively ingest only those catalog entities whose `catalogSysId` matches the filter.
+If no values are specified, then the connector ingests all catalog entities. This feature is Generally available (GA).
+
+For information about ServiceNow connectors, see [Connect ServiceNow](https://cloud.google.com/agentspace/docs/connect-servicenow).
+
+### Changed
+
+**Google Agentspace: Interface updates**
+
+* File uploads can be canceled at any time.
+* The Star and Share buttons now appear after a user has initiated a session by submitting a prompt.
+
+---
 ## 2025-09-23
 
 ### Breaking

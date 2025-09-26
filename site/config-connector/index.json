@@ -1,6 +1,24 @@
 {
   "name": "Config Connector",
   "entries": {
+    "2025-09-24": [
+      {
+        "kind": "Announcement",
+        "content": "Config Connector version 1.134.1 is now available.",
+        "summary": {
+          "title": "Config Connector v1.134.1 Available",
+          "summary": "Config Connector version 1.134.1 has been released."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Bug Fixes:\n\n* [#5230](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/5230): Fixed an issue that could lead to premature certificate rotation by ensuring errors are not swallowed when reading a Secret.\n* [#5231](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/5231): Add more verbose logging during certificate validation to assist with debugging.",
+        "summary": {
+          "title": "Fixed premature certificate rotation",
+          "summary": "Resolved an issue causing premature certificate rotation by preventing errors from being swallowed during Secret reading. Added more verbose logging for certificate validation to aid debugging."
+        }
+      }
+    ],
     "2025-09-22": [
       {
         "kind": "Announcement",

@@ -1,18 +1,27 @@
 # Google Cloud Contact Center as a Service
 
+## 2025-09-25
+
+### Announcement
+
+**Web SDK version 2 will be shut down on June 26, 2026**
+
+On June 26, 2025, we announced the launch of [Web SDK version 3](https://cloud.google.com/contact-center/ccai-platform/docs/release-notes#June_26_2025). Starting on **June 26, 2026**, the web SDK v2 will no longer function. Be sure to [update your website](https://cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-upgrade) to use the web SDK v3 before that date to avoid breaking your integration with the web SDK. We are no longer adding new features to the web SDK v2.
+
+---
 ## 2025-09-04
 
 ### Announcement
 
 **Agent desktop is GA**
 
-Agent desktop is now [generally available (GA)](https://cloud.google.com/products?e=48754805&hl=en#product-launch-stages). Agent desktop is a customizable interface that provides agents quick access to the information and tools they need to handle customer sessions. The desktop layout includes the agent adapter as well as configurable panels that display information or tools. You can configure a distinct desktop layout for each session type: inbound calls, outbound calls, or chats. You can then can configure which desktop layout that an agent sees when they answer an inbound call, place an outbound call, or handle a chat. You can also configure announcements to communicate updates, alerts, and other important information directly to agents. For more information, see [Agent desktop](https://cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-overview).
+Agent desktop is now [generally available (GA)](https://cloud.google.com/products?e=48754805&hl=en#product-launch-stages). Agent desktop is a customizable interface that provides agents quick access to the information and tools they need to handle customer sessions. The desktop layout includes the agent adapter as well as configurable panels that display information or tools. You can configure a distinct desktop layout for each session type: inbound calls, outbound calls, or chats. You can then configure which desktop layout that an agent sees when they answer an inbound call, place an outbound call, or handle a chat. You can also configure announcements to communicate updates, alerts, and other important information directly to agents. For more information, see [Agent desktop](https://cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-overview).
 
 The agent desktop provides the following capabilities:
 
-* **Create desktop layouts**. With agent desktop, you can create customized desktop layouts for different use cases for your human agents. These include receiving inbound calls, placing outbound calls, and handling chat sessions. Your layouts can contain call adapters, chat adapters, and wide variety of panels for other capabilities such as live transcripts, knowledge assist, disposition codes, and session data feeds. You can also configure custom panels to use as widgets that you can drag into panels. For more information, see [Create desktop layouts](https://cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-create-desktop-layouts).
+* **Create desktop layouts**. With agent desktop, you can create customized desktop layouts for different use cases for your human agents. These include receiving inbound calls, placing outbound calls, and handling chat sessions. Your layouts can contain call adapters, chat adapters, and a wide variety of panels for other capabilities such as live transcripts, knowledge assist, disposition codes, and session data feeds. You can also configure custom panels to use as widgets that you can drag into panels. For more information, see [Create desktop layouts](https://cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-create-desktop-layouts).
 * **Configure custom panels**. A custom panel displays one or more URLs for external resources. These can be documentation, tools, or other resources. A custom panel appears as a widget in the desktop layout builder. Then, when you create desktop layouts, you can drag widgets into panels. For more information, see [Configure custom panels](https://cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-configure-widgets).
-* **Use widgets**. Widgets are containers of specific functionality that you can drag into panels in the desktop layout builder. The desktop layout builder comes with a number of pre-defined widgets, such as **Session Data Feed**, **Dispostion Codes and Notes**, **Knowledge Assist**, and **Live Transcript**.
+* **Use widgets**. Widgets are containers of specific functionality that you can drag into panels in the desktop layout builder. The desktop layout builder comes with a number of pre-defined widgets, such as **Session Data Feed**, **Disposition Codes and Notes**, **Knowledge Assist**, and **Live Transcript**.
 * **Configure desktop layouts for agents**. You can configure which desktop layout that agents see when they answer an inbound call, place an outbound call, or handle a chat. You can configure this globally, at the queue level, and at the team level. Queue-level layout settings take priority over global settings. Team-level settings take priority over both queue-level settings and default settings. For more information, see [Configure desktop layouts for agents](https://cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-set-desktop-layouts).
 * **Configure announcements**. With announcements, you can communicate updates, alerts, and other important information directly to agents. Announcements appear in the agent desktop as notification banners that persist until the agent dismisses them. Announcements also appear in the agent's announcement list. For more information, see [Configure announcements](https://cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-configure-announcements).
 
@@ -33,7 +42,7 @@ Mobile SDK 2.14 includes the following updates:
 * Android SDK:
 
   + Support for hiding the SDK using the `Ujet.hideSDK()` method. For more information, see [Hide the SDK](https://cloud.google.com/contact-center/ccai-platform/docs/android-sdk-guide#hide-sdk).
-  + New event types: `MessageLinkClicked` and `QuickReplyClicked`.
+  + New event types: `MessageLinkClicked` and `QuickReplyClicked`. For more information, see [Event Notifications](https://cloud.google.com/contact-center/ccai-platform/docs/android-sdk-guide#UUID-b0019caa-2311-8ca3-64d7-f181ea921d77).
 
 To support the new virtual agent chat transfer capabilities of this release, we've added a new configuration setting in the Google Cloud CCaaS portal. You can use this setting to hide transfer system messages in chat sessions with virtual agent to virtual agent transfers.
 
@@ -66,9 +75,9 @@ The agent adapter now displays the destination queue during transfers and deflec
 User experience changes:
 
 * The **Call details** and **Chat details** tabs in the agent adapter have a new **Transfer History** section.
-* The chat pane in the chat adapter has a new **Transfers** button that opens the **Tranfer History** pane.
+* The chat pane in the chat adapter has a new **Transfers** button that opens the **Transfer History** pane.
 
-Adminstrators: There's a new checkbox at **Settings > Operation Management > Transfer history** for turning on transfer history in the agent adapter.
+Administrators: There's a new checkbox at **Settings > Operation Management > Transfer history** for turning on transfer history in the agent adapter.
 
 ### Feature
 
@@ -178,11 +187,11 @@ The following issues were addressed in this release:
 * Fixed an issue where the inheritance indicator and **Reset to parent** button was missing from the queue level **Contact List Management** pane.
 * Fixed an issue where the SMS and Web chat availability preferences in the agent adapter were the reverse of how they were configured.
 * Fixed an issue where queue transfer restrictions were not saved after being configured.
-* Fixed an issue that occured when a user attempted to name a new queue. The name field abruptly lost focus after the first character, forcing the user to enter the queue name again.
+* Fixed an issue that occurred when a user attempted to name a new queue. The name field abruptly lost focus after the first character, forcing the user to enter the queue name again.
 * Fixed an issue where creating an instance would time out and fail.
 * Fixed an issue that prevented reports from being downloaded.
 * Fixed an issue where the chat history for blended SMS sessions failed to save.
-* Fixed an issue where the **Transfer failed** message didn't appear. This occurred when an agent failed to pick up a tranferred call before the transferred call expiration time expired.
+* Fixed an issue where the **Transfer failed** message didn't appear. This occurred when an agent failed to pick up a transferred call before the transferred call expiration time expired.
 * Fixed an issue where IVR call recordings failed to save or were corrupted. This resulted in recordings that were only one second long, were saved in the wrong format, or weren't saved at all.
 * Fixed an issue where completed chat sessions appeared in the chats waiting area of agent desktop.
 * Fixed an issue for CRM users with voicemails that are attached directly to tickets. An incorrect "External Storage must be configured" warning appeared when configuring voicemail options for IVR queues.
@@ -197,7 +206,7 @@ The following issues were addressed in this release:
 * Fixed an issue where agents in `Unavailable` status couldn't see waiting web chats.
 * Fixed an issue where HTML was not rendering properly in virtual agent messages in the agent adapter
 * Fixed an issue where agents were not switching into `Wrap-up Exceeded` status after a breakthrough call.
-* Fixed an agent deskop issue where administrators were unable to assign announcements to some teams or agents.
+* Fixed an agent desktop issue where administrators were unable to assign announcements to some teams or agents.
 * Fixed an agent desktop issue where agents couldn't copy text to the clipboard from an agent desktop custom panel.
 * Fixed an agent desktop issue where the term "Anonymous User" wasn't being translated into French.
 * Fixed an issue where the `UJET_ID` and `ANI` variables weren't passed correctly for SIP calls.
@@ -217,7 +226,7 @@ The following issues were addressed in this release:
 * Fixed an issue that caused inbound calls to disconnect if they were routed to an agent with a disabled microphone.
 * Fixed an issue for HubSpot users where logging the "call started" event (`create_activity`) in the ticket was delayed.
 * Fixed an issue that prevented transferred calls from being routed to available agents.
-* Fixed an issue in the agent adapter for French (Canada) where where words weren't translated or were translated incorrectly.
+* Fixed an issue in the agent adapter for French (Canada) where words weren't translated or were translated incorrectly.
 * Fixed an issue in call queue reporting where the Failed Reason Description for voice-scheduled mobile calls was not appearing.
 * Fixed an advanced reporting issue where CSAT ratings were not appearing correctly when creating custom dashboards.
 * Fixed an advanced reporting issue where callbacks waiting metrics didn't match in the following dashboards: **Queue Groups Dashboard Calls** and **Queued Calls Status Dashboard**.

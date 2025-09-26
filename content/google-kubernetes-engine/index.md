@@ -1,5 +1,48 @@
 # Google Kubernetes Engine
 
+## 2025-09-25
+
+### Feature
+
+You can now let GKE auto-create node pools with ComputeClasses without having to enable node auto-provisioning for the entire cluster. This provides more granular control over auto-created node pools, enabling you to target specific workloads and optimize resource usage. For more information, see
+[Node auto-provisioning and ComputeClasses](https://cloud.google.com/kubernetes-engine/docs/concepts/about-custom-compute-classes#autoprovisioning-and-compute-classes).
+
+To use this feature, your cluster must meet both of the following requirements:
+
+* Enrolled in the Rapid release channel.
+* Running GKE version 1.33.3-gke.1136000 or later.
+
+### Feature
+
+GKE Standard clusters now support Autopilot features, including the container-optimized compute platform and fully managed nodes, letting you use Autopilot's advantages without migrating to a dedicated Autopilot cluster. For more information, see [Run Autopilot workloads in GKE Standard clusters](https://cloud.google.com/kubernetes-engine/docs/how-to/autopilot-classes-standard-clusters).
+
+To use these features, your cluster must meet the following requirements:
+
+* Enrolled in the Rapid release channel.
+* Running GKE version 1.33.1-gke.1107000 or later.
+
+### Issue
+
+**Issue with A4X machine type compatibility on certain GKE versions**
+
+Certain GKE versions are not compatible with the A4X machine type. The issue is that a Container-Optimized OS (COS) image that these GKE versions depend on was not built as a multi-architecture image. This incompatibility causes an `exec format` error on the Arm-based A4X machines. The issue affects GKE versions 1.33.2-gke.1377000 or later, and any versions earlier than 1.33.4-gke.1036000.
+
+---
+## 2025-09-23
+
+### Changed
+
+The following metrics are now only billed through Cloud Monitoring. If you were using any of these features through GKE Enterprise, your billing is automatically transitioned to the Cloud Monitoring SKU.
+
+These metrics use [Google Cloud Managed Service for Prometheus](https://cloud.google.com/stackdriver/docs/managed-prometheus) to load metrics into Cloud Monitoring. The Cloud Monitoring charges for the ingestion of these metrics are based on the number of samples ingested. For more information, see [Cloud Monitoring pricing](https://cloud.google.com/stackdriver/pricing#monitoring-pricing-summary).
+
+* [Control Plane Metrics](https://cloud.google.com/kubernetes-engine/docs/how-to/control-plane-metrics)
+* [Kube State Metrics](https://cloud.google.com/kubernetes-engine/docs/how-to/kube-state-metrics)
+* [cAdvisor/Kubelet Metrics](https://cloud.google.com/kubernetes-engine/docs/how-to/cadvisor-kubelet-metrics)
+* [Config Sync Metrics](https://cloud.google.com/kubernetes-engine/enterprise/config-sync/docs/how-to/monitoring-config-sync)
+* [Policy Controller Metrics](https://cloud.google.com/kubernetes-engine/enterprise/policy-controller/docs/how-to/policy-controller-metrics)
+
+---
 ## 2025-09-18
 
 ### Changed
@@ -316,10 +359,14 @@ GKE now provisions fast-starting nodes, which have significantly lower startup t
 
 ### Feature
 
-The accelerator-optimized A4X VM, an exascale platform based on [NVIDIA GB200 NVL72](https://www.nvidia.com/en-us/data-center/gb200-nvl72/), is now Generally Available on GKE. A4X is the first GPU VM to run on Arm with the NVIDIA GB200 Grace Blackwell Superchips. You can use A4X to run your large artificial intelligence (AI) models, machine learning (ML), and high performance computing (HPC) workloads. The A4X machine type is available as `a4x-highgpu-4g` in the us-central1-a zone with the following GKE versions or later:
+The accelerator-optimized A4X VM, an exascale platform based on [NVIDIA GB200 NVL72](https://www.nvidia.com/en-us/data-center/gb200-nvl72/), is now Generally Available on GKE. A4X is the first GPU VM to run on Arm with the NVIDIA GB200 Grace Blackwell Superchips. You can use A4X to run your large artificial intelligence (AI) models, machine learning (ML), and high performance computing (HPC) workloads.
 
-* GKE Standard: 1.32.4-gke.1106000
-* GKE Autopilot: 1.33.2-gke.1134000
+**Important:** Updated on September 25, 2025. The GKE version support for the A4X machine series in this feature note was listed incorrectly. For more information, see the **Issue** published on [September 25, 2025](https://cloud.google.com/kubernetes-engine/docs/release-notes#September_25_2025). The correct versions are now listed as follows.
+
+The A4X machine type is available as `a4x-highgpu-4g` in the us-central1-a zone with the following GKE versions:
+
+* For GKE Standard 1.32, use 1.32.8-gke.1108000 or later.
+* For GKE Autopilot 1.33, use 1.33.4-gke.1036000 or later.
 
 To create GKE clusters with A4X, see the following instructions:
 
@@ -664,6 +711,12 @@ For more information, see the [ComputeClass CRD reference](https://cloud.google.
 ---
 ## 2025-09-04
 
+### Announcement
+
+**Kubernetes 1.34 is now available in the Rapid channel**
+
+Kubernetes 1.34 is now available in the Rapid channel. For more information about the content of Kubernetes 1.34, read the [Kubernetes 1.34 Release Notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#changelog-since-v1330).
+
 ### Changed
 
 **Other changes in 1.34**
@@ -685,12 +738,6 @@ Starting with GKE patch version 1.34, clusters using [GKE Dataplane V2](https://
 
 Action required: If you use your own CNI plugins in your GKE cluster (such as self-managed open-source Istio), you must upgrade them
 to a version compatible with CNI spec v1.1.0 to prevent errors.
-
-### Announcement
-
-**Kubernetes 1.34 is now available in the Rapid channel**
-
-Kubernetes 1.34 is now available in the Rapid channel. For more information about the content of Kubernetes 1.34, read the [Kubernetes 1.34 Release Notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#changelog-since-v1330).
 
 ### Feature
 

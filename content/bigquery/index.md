@@ -1,6 +1,41 @@
 # BigQuery
 
+## 2025-09-25
+
+### Feature
+
+The
+[`ARRAY_FIRST`](https://cloud.google.com/bigquery/docs/reference/standard-sql/array_functions#array_first),
+[`ARRAY_LAST`](https://cloud.google.com/bigquery/docs/reference/standard-sql/array_functions#array_last),
+and
+[`ARRAY_SLICE`](https://cloud.google.com/bigquery/docs/reference/standard-sql/array_functions#array_slice)
+GoogleSQL functions are now
+[generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+### Feature
+
+BigQuery [data
+canvas](https://cloud.google.com/bigquery/docs/data-canvas#destination_node) now
+supports destination table nodes. Destination table nodes let you persist query
+results to a new or existing table. This feature is [generally
+available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+---
 ## 2025-09-24
+
+### Feature
+
+BigQuery ML now supports
+[visualization of model monitoring metrics](https://cloud.google.com/bigquery/docs/model-monitoring-overview#monitoring_visualization).
+This feature lets you use charts and graphs to
+[analyze model monitoring function output](https://cloud.google.com/vertex-ai/docs/model-monitoring/run-monitoring-job#analyze_monitoring_job_results).
+You can use metric visualization with the
+[`ML.VALIDATE_DATA_SKEW`](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-validate-data-skew)
+and
+[`ML.VALIDATE_DATA_DRIFT`](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-validate-data-drift)
+functions. This feature is
+[generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
 
 ### Feature
 

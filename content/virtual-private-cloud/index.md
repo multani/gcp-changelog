@@ -1,5 +1,18 @@
 # Virtual Private Cloud
 
+## 2025-09-25
+
+### Feature
+
+The following features of VPC Flow Logs are available in **General Availability** through the Network Management API:
+
+* [Enabling VPC Flow Logs for an organization](https://cloud.google.com/vpc/docs/using-flow-logs#enable-organization)
+* [Enabling VPC Flow Logs for a VPC network](https://cloud.google.com/vpc/docs/using-flow-logs#enable-network)
+* [Enabling VPC Flow Logs for a subnet](https://cloud.google.com/vpc/docs/using-flow-logs#network-management)
+
+For more information, see [Supported configurations](https://cloud.google.com/vpc/docs/flow-logs#configurations).
+
+---
 ## 2025-09-23
 
 ### Feature

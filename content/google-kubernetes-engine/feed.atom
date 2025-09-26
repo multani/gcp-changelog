@@ -2,9 +2,73 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2025-09-18T00:00:00+00:00</updated>
+  <updated>2025-09-25T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-25:feature:0</id>
+    <published>2025-09-25T00:00:00+00:00</published>
+    <updated>2025-09-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now let GKE auto-create node pools with ComputeClasses without having to enable node auto-provisioning for the entire cluster. This provides more granular control over auto-created node pools, enabling you to target specific workloads and optimize resource usage. For more information, see
+<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/about-custom-compute-classes#autoprovisioning-and-compute-classes">Node auto-provisioning and ComputeClasses</a>.</p>
+<p>To use this feature, your cluster must meet both of the following requirements:</p>
+<ul>
+<li>Enrolled in the Rapid release channel.</li>
+<li>Running GKE version 1.33.3-gke.1136000 or later.</li>
+</ul>]]></content>
+    <summary>GKE now supports auto-creating node pools with ComputeClasses without cluster-wide node auto-provisioning, offering granular control and optimized resource usage. This feature requires GKE version 1.33.3-gke.1136000+ on the Rapid release channel.</summary>
+    <title>Feature: GKE Node Pools with ComputeClasses</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-25:feature:1</id>
+    <published>2025-09-25T00:00:00+00:00</published>
+    <updated>2025-09-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>GKE Standard clusters now support Autopilot features, including the container-optimized compute platform and fully managed nodes, letting you use Autopilot's advantages without migrating to a dedicated Autopilot cluster. For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/autopilot-classes-standard-clusters">Run Autopilot workloads in GKE Standard clusters</a>.</p>
+<p>To use these features, your cluster must meet the following requirements:</p>
+<ul>
+<li>Enrolled in the Rapid release channel.</li>
+<li>Running GKE version 1.33.1-gke.1107000 or later.</li>
+</ul>]]></content>
+    <summary>GKE Standard clusters now support Autopilot features like a managed compute platform and nodes. This allows you to leverage Autopilot benefits without migrating to a separate Autopilot cluster. Ensure your cluster is on the Rapid release channel and running GKE version 1.33.1-gke.1107000 or later.</summary>
+    <title>Feature: GKE Standard Autopilot Features</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-25:issue:2</id>
+    <published>2025-09-25T00:00:00+00:00</published>
+    <updated>2025-09-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Issue with A4X machine type compatibility on certain GKE versions</strong></p>
+<p>Certain GKE versions are not compatible with the A4X machine type. The issue is that a Container-Optimized OS (COS) image that these GKE versions depend on was not built as a multi-architecture image. This incompatibility causes an <code>exec format</code> error on the Arm-based A4X machines. The issue affects GKE versions 1.33.2-gke.1377000 or later, and any versions earlier than 1.33.4-gke.1036000.</p>]]></content>
+    <summary>Certain GKE versions have compatibility issues with the A4X machine type due to a COS image limitation, causing 'exec format' errors on Arm-based machines. This affects specific GKE version ranges.</summary>
+    <title>Issue: A4X Machine Type Incompatibility</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-23:changed:0</id>
+    <published>2025-09-23T00:00:00+00:00</published>
+    <updated>2025-09-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following metrics are now only billed through Cloud Monitoring. If you were using any of these features through GKE Enterprise, your billing is automatically transitioned to the Cloud Monitoring SKU.</p>
+<p>These metrics use <a href="https://cloud.google.com/stackdriver/docs/managed-prometheus">Google Cloud Managed Service for Prometheus</a> to load metrics into Cloud Monitoring. The Cloud Monitoring charges for the ingestion of these metrics are based on the number of samples ingested. For more information, see <a href="https://cloud.google.com/stackdriver/pricing#monitoring-pricing-summary">Cloud Monitoring pricing</a>.</p>
+<ul>
+<li><a href="https://cloud.google.com/kubernetes-engine/docs/how-to/control-plane-metrics">Control Plane Metrics</a></li>
+<li><a href="https://cloud.google.com/kubernetes-engine/docs/how-to/kube-state-metrics">Kube State Metrics</a></li>
+<li><a href="https://cloud.google.com/kubernetes-engine/docs/how-to/cadvisor-kubelet-metrics">cAdvisor/Kubelet Metrics</a></li>
+<li><a href="https://cloud.google.com/kubernetes-engine/enterprise/config-sync/docs/how-to/monitoring-config-sync">Config Sync Metrics</a></li>
+<li><a href="https://cloud.google.com/kubernetes-engine/enterprise/policy-controller/docs/how-to/policy-controller-metrics">Policy Controller Metrics</a></li>
+</ul>]]></content>
+    <summary>Certain Prometheus metrics previously available through GKE Enterprise are now exclusively billed via Cloud Monitoring. This change affects Control Plane, Kube State, cAdvisor/Kubelet, Config Sync, and Policy Controller metrics. Billing is automatically transitioned, with charges based on the number of samples ingested into Cloud Monitoring, following the standard Cloud Monitoring pricing. For more details, refer to the Cloud Monitoring pricing page.</summary>
+    <title>Changed: Billing for Prometheus metrics transitioned to Cloud Monitoring</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -362,18 +426,20 @@ multiple days to complete across all Google Cloud zones.</p>
     <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-11:feature:1</id>
     <published>2025-09-11T00:00:00+00:00</published>
     <updated>2025-09-11T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The accelerator-optimized A4X VM, an exascale platform based on <a href="https://www.nvidia.com/en-us/data-center/gb200-nvl72/">NVIDIA GB200 NVL72</a>, is now Generally Available on GKE. A4X is the first GPU VM to run on Arm with the NVIDIA GB200 Grace Blackwell Superchips. You can use A4X to run your large artificial intelligence (AI) models, machine learning (ML), and high performance computing (HPC) workloads. The A4X machine type is available as <code>a4x-highgpu-4g</code> in the us-central1-a zone with the following GKE versions or later:</p>
+    <content type="html"><![CDATA[<p>The accelerator-optimized A4X VM, an exascale platform based on <a href="https://www.nvidia.com/en-us/data-center/gb200-nvl72/">NVIDIA GB200 NVL72</a>, is now Generally Available on GKE. A4X is the first GPU VM to run on Arm with the NVIDIA GB200 Grace Blackwell Superchips. You can use A4X to run your large artificial intelligence (AI) models, machine learning (ML), and high performance computing (HPC) workloads.</p>
+<p><strong>Important:</strong> Updated on September 25, 2025. The GKE version support for the A4X machine series in this feature note was listed incorrectly. For more information, see the <strong>Issue</strong> published on <a href="https://cloud.google.com/kubernetes-engine/docs/release-notes#September_25_2025">September 25, 2025</a>. The correct versions are now listed as follows.</p>
+<p>The A4X machine type is available as <code>a4x-highgpu-4g</code> in the us-central1-a zone with the following GKE versions:</p>
 <ul>
-<li>GKE Standard: 1.32.4-gke.1106000</li>
-<li>GKE Autopilot: 1.33.2-gke.1134000</li>
+<li>For GKE Standard 1.32, use 1.32.8-gke.1108000 or later.</li>
+<li>For GKE Autopilot 1.33, use 1.33.4-gke.1036000 or later.</li>
 </ul>
 <p>To create GKE clusters with A4X, see the following instructions:</p>
 <ul>
 <li>To quickly deploy production-ready clusters, see <a href="https://cloud.google.com/ai-hypercomputer/docs/create/gke-ai-hypercompute">Create an AI-optimized GKE cluster with default configuration</a>.</li>
 <li>For precise customization or expansion of existing production GKE environments, see <a href="https://cloud.google.com/ai-hypercomputer/docs/create/gke-ai-hypercompute-custom-a4x">Create a custom AI-optimized GKE cluster which uses A4X</a>.</li>
 </ul>]]></content>
-    <summary>The new A4X VM, powered by NVIDIA GB200 NVL72, is now available on GKE. This Arm-based VM is ideal for large AI, ML, and HPC workloads.</summary>
-    <title>Feature: A4X VM on GKE</title>
+    <summary>The new accelerator-optimized A4X VM is now available on GKE, offering a powerful platform for large AI, ML, and HPC workloads. It is the first GPU VM to run on Arm with NVIDIA GB200 Grace Blackwell Superchips, providing enhanced performance for demanding computations.</summary>
+    <title>Feature: New Arm-based GPU VM for AI and ML workloads</title>
   </entry>
   <entry>
     <author>
@@ -752,7 +818,19 @@ multiple days to complete across all Google Cloud zones.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-04:changed:0</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-04:announcement:0</id>
+    <published>2025-09-04T00:00:00+00:00</published>
+    <updated>2025-09-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Kubernetes 1.34 is now available in the Rapid channel</strong></p>
+<p>Kubernetes 1.34 is now available in the Rapid channel. For more information about the content of Kubernetes 1.34, read the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#changelog-since-v1330">Kubernetes 1.34 Release Notes</a>.</p>]]></content>
+    <summary>Kubernetes 1.34 has been released and is now available in the Rapid channel. Read the release notes for details.</summary>
+    <title>Announcement: Kubernetes 1.34 Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-04:changed:1</id>
     <published>2025-09-04T00:00:00+00:00</published>
     <updated>2025-09-04T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Other changes in 1.34</strong></p>
@@ -767,7 +845,7 @@ multiple days to complete across all Google Cloud zones.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-04:deprecated:1</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-04:deprecated:2</id>
     <published>2025-09-04T00:00:00+00:00</published>
     <updated>2025-09-04T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Deprecated in 1.34</strong></p>
@@ -779,7 +857,7 @@ multiple days to complete across all Google Cloud zones.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-04:changed:2</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-04:changed:3</id>
     <published>2025-09-04T00:00:00+00:00</published>
     <updated>2025-09-04T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>CNI spec version for GKE Dataplane V2 updated to v1.1.0</strong></p>
@@ -788,18 +866,6 @@ multiple days to complete across all Google Cloud zones.</p>
 to a version compatible with CNI spec v1.1.0 to prevent errors.</p>]]></content>
     <summary>The CNI spec version for GKE Dataplane V2 has been updated to v1.1.0 starting with GKE patch version 1.34. This update affects clusters using GKE Dataplane V2.</summary>
     <title>Changed: CNI spec version updated</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-04:announcement:3</id>
-    <published>2025-09-04T00:00:00+00:00</published>
-    <updated>2025-09-04T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Kubernetes 1.34 is now available in the Rapid channel</strong></p>
-<p>Kubernetes 1.34 is now available in the Rapid channel. For more information about the content of Kubernetes 1.34, read the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#changelog-since-v1330">Kubernetes 1.34 Release Notes</a>.</p>]]></content>
-    <summary>Kubernetes 1.34 has been released and is now available in the Rapid channel. Read the release notes for details.</summary>
-    <title>Announcement: Kubernetes 1.34 Available</title>
   </entry>
   <entry>
     <author>

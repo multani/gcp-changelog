@@ -1,6 +1,42 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2025-09-25": [
+      {
+        "kind": "Feature",
+        "content": "You can now let GKE auto-create node pools with ComputeClasses without having to enable node auto-provisioning for the entire cluster. This provides more granular control over auto-created node pools, enabling you to target specific workloads and optimize resource usage. For more information, see\n[Node auto-provisioning and ComputeClasses](https://cloud.google.com/kubernetes-engine/docs/concepts/about-custom-compute-classes#autoprovisioning-and-compute-classes).\n\nTo use this feature, your cluster must meet both of the following requirements:\n\n* Enrolled in the Rapid release channel.\n* Running GKE version 1.33.3-gke.1136000 or later.",
+        "summary": {
+          "title": "GKE Node Pools with ComputeClasses",
+          "summary": "GKE now supports auto-creating node pools with ComputeClasses without cluster-wide node auto-provisioning, offering granular control and optimized resource usage. This feature requires GKE version 1.33.3-gke.1136000+ on the Rapid release channel."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "GKE Standard clusters now support Autopilot features, including the container-optimized compute platform and fully managed nodes, letting you use Autopilot's advantages without migrating to a dedicated Autopilot cluster. For more information, see [Run Autopilot workloads in GKE Standard clusters](https://cloud.google.com/kubernetes-engine/docs/how-to/autopilot-classes-standard-clusters).\n\nTo use these features, your cluster must meet the following requirements:\n\n* Enrolled in the Rapid release channel.\n* Running GKE version 1.33.1-gke.1107000 or later.",
+        "summary": {
+          "title": "GKE Standard Autopilot Features",
+          "summary": "GKE Standard clusters now support Autopilot features like a managed compute platform and nodes. This allows you to leverage Autopilot benefits without migrating to a separate Autopilot cluster. Ensure your cluster is on the Rapid release channel and running GKE version 1.33.1-gke.1107000 or later."
+        }
+      },
+      {
+        "kind": "Issue",
+        "content": "**Issue with A4X machine type compatibility on certain GKE versions**\n\nCertain GKE versions are not compatible with the A4X machine type. The issue is that a Container-Optimized OS (COS) image that these GKE versions depend on was not built as a multi-architecture image. This incompatibility causes an `exec format` error on the Arm-based A4X machines. The issue affects GKE versions 1.33.2-gke.1377000 or later, and any versions earlier than 1.33.4-gke.1036000.",
+        "summary": {
+          "title": "A4X Machine Type Incompatibility",
+          "summary": "Certain GKE versions have compatibility issues with the A4X machine type due to a COS image limitation, causing 'exec format' errors on Arm-based machines. This affects specific GKE version ranges."
+        }
+      }
+    ],
+    "2025-09-23": [
+      {
+        "kind": "Changed",
+        "content": "The following metrics are now only billed through Cloud Monitoring. If you were using any of these features through GKE Enterprise, your billing is automatically transitioned to the Cloud Monitoring SKU.\n\nThese metrics use [Google Cloud Managed Service for Prometheus](https://cloud.google.com/stackdriver/docs/managed-prometheus) to load metrics into Cloud Monitoring. The Cloud Monitoring charges for the ingestion of these metrics are based on the number of samples ingested. For more information, see [Cloud Monitoring pricing](https://cloud.google.com/stackdriver/pricing#monitoring-pricing-summary).\n\n* [Control Plane Metrics](https://cloud.google.com/kubernetes-engine/docs/how-to/control-plane-metrics)\n* [Kube State Metrics](https://cloud.google.com/kubernetes-engine/docs/how-to/kube-state-metrics)\n* [cAdvisor/Kubelet Metrics](https://cloud.google.com/kubernetes-engine/docs/how-to/cadvisor-kubelet-metrics)\n* [Config Sync Metrics](https://cloud.google.com/kubernetes-engine/enterprise/config-sync/docs/how-to/monitoring-config-sync)\n* [Policy Controller Metrics](https://cloud.google.com/kubernetes-engine/enterprise/policy-controller/docs/how-to/policy-controller-metrics)",
+        "summary": {
+          "title": "Billing for Prometheus metrics transitioned to Cloud Monitoring",
+          "summary": "Certain Prometheus metrics previously available through GKE Enterprise are now exclusively billed via Cloud Monitoring. This change affects Control Plane, Kube State, cAdvisor/Kubelet, Config Sync, and Policy Controller metrics. Billing is automatically transitioned, with charges based on the number of samples ingested into Cloud Monitoring, following the standard Cloud Monitoring pricing. For more details, refer to the Cloud Monitoring pricing page."
+        }
+      }
+    ],
     "2025-09-18": [
       {
         "kind": "Changed",
@@ -62,10 +98,10 @@
       },
       {
         "kind": "Feature",
-        "content": "The accelerator-optimized A4X VM, an exascale platform based on [NVIDIA GB200 NVL72](https://www.nvidia.com/en-us/data-center/gb200-nvl72/), is now Generally Available on GKE. A4X is the first GPU VM to run on Arm with the NVIDIA GB200 Grace Blackwell Superchips. You can use A4X to run your large artificial intelligence (AI) models, machine learning (ML), and high performance computing (HPC) workloads. The A4X machine type is available as `a4x-highgpu-4g` in the us-central1-a zone with the following GKE versions or later:\n\n* GKE Standard: 1.32.4-gke.1106000\n* GKE Autopilot: 1.33.2-gke.1134000\n\nTo create GKE clusters with A4X, see the following instructions:\n\n* To quickly deploy production-ready clusters, see [Create an AI-optimized GKE cluster with default configuration](https://cloud.google.com/ai-hypercomputer/docs/create/gke-ai-hypercompute).\n* For precise customization or expansion of existing production GKE environments, see [Create a custom AI-optimized GKE cluster which uses A4X](https://cloud.google.com/ai-hypercomputer/docs/create/gke-ai-hypercompute-custom-a4x).",
+        "content": "The accelerator-optimized A4X VM, an exascale platform based on [NVIDIA GB200 NVL72](https://www.nvidia.com/en-us/data-center/gb200-nvl72/), is now Generally Available on GKE. A4X is the first GPU VM to run on Arm with the NVIDIA GB200 Grace Blackwell Superchips. You can use A4X to run your large artificial intelligence (AI) models, machine learning (ML), and high performance computing (HPC) workloads.\n\n**Important:** Updated on September 25, 2025. The GKE version support for the A4X machine series in this feature note was listed incorrectly. For more information, see the **Issue** published on [September 25, 2025](https://cloud.google.com/kubernetes-engine/docs/release-notes#September_25_2025). The correct versions are now listed as follows.\n\nThe A4X machine type is available as `a4x-highgpu-4g` in the us-central1-a zone with the following GKE versions:\n\n* For GKE Standard 1.32, use 1.32.8-gke.1108000 or later.\n* For GKE Autopilot 1.33, use 1.33.4-gke.1036000 or later.\n\nTo create GKE clusters with A4X, see the following instructions:\n\n* To quickly deploy production-ready clusters, see [Create an AI-optimized GKE cluster with default configuration](https://cloud.google.com/ai-hypercomputer/docs/create/gke-ai-hypercompute).\n* For precise customization or expansion of existing production GKE environments, see [Create a custom AI-optimized GKE cluster which uses A4X](https://cloud.google.com/ai-hypercomputer/docs/create/gke-ai-hypercompute-custom-a4x).",
         "summary": {
-          "title": "A4X VM on GKE",
-          "summary": "The new A4X VM, powered by NVIDIA GB200 NVL72, is now available on GKE. This Arm-based VM is ideal for large AI, ML, and HPC workloads."
+          "title": "New Arm-based GPU VM for AI and ML workloads",
+          "summary": "The new accelerator-optimized A4X VM is now available on GKE, offering a powerful platform for large AI, ML, and HPC workloads. It is the first GPU VM to run on Arm with NVIDIA GB200 Grace Blackwell Superchips, providing enhanced performance for demanding computations."
         }
       },
       {
@@ -129,6 +165,14 @@
     ],
     "2025-09-04": [
       {
+        "kind": "Announcement",
+        "content": "**Kubernetes 1.34 is now available in the Rapid channel**\n\nKubernetes 1.34 is now available in the Rapid channel. For more information about the content of Kubernetes 1.34, read the [Kubernetes 1.34 Release Notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#changelog-since-v1330).",
+        "summary": {
+          "title": "Kubernetes 1.34 Available",
+          "summary": "Kubernetes 1.34 has been released and is now available in the Rapid channel. Read the release notes for details."
+        }
+      },
+      {
         "kind": "Changed",
         "content": "**Other changes in 1.34**\n\n* **containerd 2.1:** GKE nodes are now upgraded to containerd 2.1. This release includes performance improvements such as faster image downloads. For a complete list of changes, see the official [containerd 2.1 release notes](https://github.com/containerd/containerd/releases/tag/v2.1.0).\n* **VPA InPlaceOrRecreate**: This version introduces a [new InPlaceOrRecreate mode in Vertical Pod Autoscaler (VPA)](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler/enhancements/4016-in-place-updates-support) (Public Preview) powered by In-Place Pod Resize (IPPR/IPPU) that allows automatically rightsizing workloads often without recreating the Pod. This mode ensures seamless service continuity while minimizing costs during idle periods. If you haven't used VPA with your workloads before, enable Vertical Pod Autoscaler on your cluster and then create a VPA Object for a workload.",
         "summary": {
@@ -150,14 +194,6 @@
         "summary": {
           "title": "CNI spec version updated",
           "summary": "The CNI spec version for GKE Dataplane V2 has been updated to v1.1.0 starting with GKE patch version 1.34. This update affects clusters using GKE Dataplane V2."
-        }
-      },
-      {
-        "kind": "Announcement",
-        "content": "**Kubernetes 1.34 is now available in the Rapid channel**\n\nKubernetes 1.34 is now available in the Rapid channel. For more information about the content of Kubernetes 1.34, read the [Kubernetes 1.34 Release Notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#changelog-since-v1330).",
-        "summary": {
-          "title": "Kubernetes 1.34 Available",
-          "summary": "Kubernetes 1.34 has been released and is now available in the Rapid channel. Read the release notes for details."
         }
       },
       {

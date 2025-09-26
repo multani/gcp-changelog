@@ -2,10 +2,6 @@
 
 ## 2025-09-24
 
-### Announcement
-
-
-
 ### Apigee Operator for Kubernetes for Apigee Hybrid (Preview)
 
 On September 24, 2025 we released the Apigee Operator for Kubernetes for Apigee Hybrid 1.15.0 and newer.

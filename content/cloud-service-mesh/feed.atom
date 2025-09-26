@@ -2,9 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Service Mesh</title>
   <subtitle>Changelog for Google Cloud product: Cloud Service Mesh</subtitle>
-  <updated>2025-09-17T00:00:00+00:00</updated>
+  <updated>2025-09-25T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-service-mesh</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-service-mesh/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2025-09-25:deprecated:0</id>
+    <published>2025-09-25T00:00:00+00:00</published>
+    <updated>2025-09-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Support for the following features will end on <strong>March 17, 2027</strong>:</p>
+<ul>
+<li><a href="https://cloud.google.com/kubernetes-engine/multi-cloud/docs/aws/deprecations/deprecation-announcement">GKE on AWS</a></li>
+<li><a href="https://cloud.google.com/kubernetes-engine/multi-cloud/docs/azure/deprecations/deprecation-announcement">GKE on Azure</a></li>
+<li>EKS Attached Clusters on AWS</li>
+<li>Azure Attached Clusters with AKS</li>
+</ul>
+<p>Note that there are no changes to the other features of GKE attached clusters or Google Distributed Cloud (software only or air-gapped),</p>
+<p>You must migrate to an alternative service mesh solution or an alternative Istio-based solution using your existing CSM configuration files by March 17, 2027.</p>]]></content>
+    <summary>Support for GKE on AWS, GKE on Azure, EKS Attached Clusters, and Azure Attached Clusters will end on March 17, 2027. Users must migrate to an alternative service mesh solution by this date. Other GKE attached clusters and Google Distributed Cloud features remain unaffected.</summary>
+    <title>Deprecated: GKE Multi-Cloud and Attached Clusters Deprecation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2025-09-23:announcement:0</id>
+    <published>2025-09-23T00:00:00+00:00</published>
+    <updated>2025-09-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>1.27.1-asm.2 is now available for in-cluster Cloud Service Mesh.</strong></p>
+<p>You can now download 1.27.1-asm.2 for in-cluster Cloud Service Mesh. It includes the features of <a href="https://istio.io/latest/news/releases/1.27.x/announcing-1.27/">Istio 1.27.1</a> subject to the list of <a href="https://cloud.google.com/service-mesh/docs/supported-features-in-cluster">supported features</a>.</p>
+<p>The following environment variables and annotations are not supported:</p>
+<ul>
+<li><code>ENVOY_STATUS_PORT_ENABLE_PROXY_PROTOCOL</code></li>
+<li><code>PILOT_DNS_CARES_UDP_MAX_QUERIES</code></li>
+<li><code>PILOT_IP_AUTOALLOCATE_IPV4_PREFIX</code> and <code>PILOT_IP_AUTOALLOCATE_IPV6_PREFIX</code></li>
+<li><code>sidecar.istio.io/bootstrapOverride</code></li>
+</ul>
+<p>For details on upgrading Cloud Service Mesh, see <a href="https://cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service Mesh version 1.27.1-asm.2 uses Envoy v 1.35.3-dev.</p>]]></content>
+    <summary>A new version of Cloud Service Mesh, 1.27.1-asm.2, is now available for in-cluster deployments. This release includes features from Istio 1.27.1, with specific supported features and a list of unsupported environment variables and annotations. For upgrade instructions, refer to the provided documentation.</summary>
+    <title>Announcement: Cloud Service Mesh 1.27.1-asm.2 Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

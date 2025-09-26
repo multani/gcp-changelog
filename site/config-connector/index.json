@@ -1,6 +1,48 @@
 {
   "name": "Config Connector",
   "entries": {
+    "2025-09-22": [
+      {
+        "kind": "Announcement",
+        "content": "Config Connector version 1.135.0 is now available.",
+        "summary": {
+          "title": "Config Connector v1.135.0",
+          "summary": "The latest version of Config Connector has been released."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "New Beta Resources (Direct Reconciler):\n\n* `AssetSavedQuery`\n* `PubSubSnapshot`",
+        "summary": {
+          "title": "New Beta Resources",
+          "summary": "New beta resources are now available: AssetSavedQuery and PubSubSnapshot."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Modified Beta Reconciliation:\nWe migrated the following resources from the Terraform-based or DCL-based controller to the new Direct Controller.\n\n* `VMWareEngineExternalAddress`",
+        "summary": {
+          "title": "VMWareEngineExternalAddress Migration",
+          "summary": "The VMWareEngineExternalAddress resource has been migrated to the new Direct Controller."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Fields:\n\n* `AlloyDBCluster`\n  + Added `spec.databaseVersion` field",
+        "summary": {
+          "title": "New Database Version Field",
+          "summary": "A new field, `spec.databaseVersion`, has been added to AlloyDBCluster."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Bug Fixes:\n\n* [PR#5009](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/5009)\n  Fix the nil pointer dereference error in AlloyDB direct controller",
+        "summary": {
+          "title": "AlloyDB direct controller fix",
+          "summary": "Fixed a nil pointer dereference error in the AlloyDB direct controller."
+        }
+      }
+    ],
     "2025-09-03": [
       {
         "kind": "Announcement",

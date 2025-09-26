@@ -1,5 +1,12 @@
 # Google Cloud Managed Service for Apache Kafka
 
+## 2025-09-17
+
+### Feature
+
+Managed Service for Apache Kafka now supports [Organization Policy Service custom constraints](https://cloud.google.com/managed-service-for-apache-kafka/docs/custom-constraints). Custom constraints allow you to restrict specific operations on Managed Service for Apache Kafka resources.
+
+---
 ## 2025-09-09
 
 ### Feature

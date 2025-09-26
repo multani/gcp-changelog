@@ -1,5 +1,17 @@
 # Artifact Registry
 
+## 2025-09-23
+
+### Feature
+
+Layer-based scanning for Artifact Analysis is in [Preview](https://cloud.google.com/products#product-launch-stages). You can view vulnerability metadata for a specific layer of your image digest in the GCloud CLI. For more information, see the following topics:
+
+* [View layer metadata for Go images](https://cloud.google.com/artifact-analysis/docs/scan-go-automatically#layer-gcloud)
+* [View layer metadata for Java images](https://cloud.google.com/artifact-analysis/docs/scan-java-automatically#layer-gcloud)
+* [View layer metadata for Node.js images](https://cloud.google.com/artifact-analysis/docs/scan-nodejs-automatically#layer-gcloud)
+* [View layer metadata for Python images](https://cloud.google.com/artifact-analysis/docs/scan-python-automatically#layer-gcloud)
+
+---
 ## 2025-08-29
 
 ### Changed

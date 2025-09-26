@@ -1,5 +1,12 @@
 # Dataflow
 
+## 2025-09-24
+
+### Feature
+
+For jobs that use GPUs, Dataflow now supports the flex-start provisioning model. This flex-start provisioning model can improve your ability to get access to constrained GPU resources for short-duration workloads. This feature is available in Preview and is for batch pipelines only. For more information, see [Configure a provisioning model](https://cloud.google.com/dataflow/docs/gpu/use-gpus#optional_configure_a_provisioning_model).
+
+---
 ## 2025-09-08
 
 ### Feature
@@ -11,7 +18,15 @@ Dataflow now supports using [secure tags](https://cloud.google.com/firewall/docs
 
 ### Feature
 
-Dataflow supports Cloud TPUs, Google's custom-designed AI accelerators that are optimized for large-scale AI/ML workloads. This feature lets you accelerate inference workloads on frameworks like PyTorch, JAX, and TensorFlow. This feature is [generally available](https://cloud.google.com/products#product-launch-stages) with an allowlist. For more information, see [Dataflow support for TPUs](https://cloud.google.com/dataflow/docs/tpu/tpu-support).
+Dataflow supports TPUs, Google's custom-designed AI accelerators that are optimized for large-scale AI/ML workloads. This feature lets you accelerate inference workloads on frameworks like PyTorch, JAX, and TensorFlow. This feature is [generally available](https://cloud.google.com/products#product-launch-stages) with an allowlist. For more information, see [Dataflow support for TPUs](https://cloud.google.com/dataflow/docs/tpu/tpu-support).
+
+### Feature
+
+Dataflow supports [*specifically targeted* reservations](https://cloud.google.com/compute/docs/instances/reservations-overview#consumption-type) for pipelines using accelerators (GPUs or TPUs). This functionality is generally available with an allowlist. For more information, see [Use Compute Engine reservations with Dataflow](https://cloud.google.com/dataflow/docs/guides/compute-engine-reservations.md#reservations-accelerators).
+
+### Changed
+
+Dataflow supports NVIDIA® H100 and NVIDIA® H100 Mega GPU types. For more information, see [Dataflow support for GPUs](https://cloud.google.com/dataflow/docs/gpu/gpu-support).
 
 ---
 ## 2025-08-26

@@ -1,5 +1,27 @@
 # Cloud SQL for PostgreSQL
 
+## 2025-09-25
+
+### Feature
+
+Cloud SQL Managed Connection Pooling is now generally available ([GA](https://cloud.google.com/products#product-launch-stages)). Managed Connection Pooling lets you scale your workloads by optimizing resource utilization for Cloud SQL instances using pooling. You can now also use [IAM authentication](https://cloud.google.com/sql/docs/postgres/iam-authentication) to secure connections when using Managed Connection Pooling.
+
+For more information, see [Managed Connection Pooling overview](https://cloud.google.com/sql/docs/postgres/managed-connection-pooling).
+
+---
+## 2025-09-23
+
+### Feature
+
+You can now provision, manage and query your databases using the dedicated Gemini CLI extension for Cloud SQL for PostgreSQL. The extension provides full lifecycle control of your database—from provisioning instances, to exploring schemas and troubleshooting issues—from your command-line interface.
+
+For more information, see [Use Cloud SQL for PostgreSQL with MCP, Gemini CLI, and other agents](https://cloud.google.com/sql/docs/postgres/pre-built-tools-with-mcp-toolbox).
+
+### Feature
+
+You can now retain point-in-time recovery (PITR) logs for an instance after its deletion for a specified retention period. These logs can be used to restore the deleted instance to a specific point in time. For more information, see [Restore a deleted instance using PITR](https://cloud.google.com/sql/docs/postgres/backup-recovery/restore#deleted-instance).
+
+---
 ## 2025-09-17
 
 ### Feature

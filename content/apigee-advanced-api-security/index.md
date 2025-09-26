@@ -1,5 +1,43 @@
 # Apigee Advanced API Security
 
+## 2025-09-19
+
+### Announcement
+
+On September 19, 2025 we released an updated version of Advanced API Security
+
+**Note:** Rollouts of this release to production instances will begin within two business days and may take four or more business days to complete across all Google Cloud zones. Your instances may not have the feature available until the rollout is complete.
+
+### Feature
+
+**New security actions status icons and "expired" note in the security actions UI**
+
+This release adds security status icons to the Apigee UI to make it easier to see, at a glance, whether a security action is enabled, disabled, or paused, and an "expired" note when an action is expired.
+
+The status icons display next to the action's status in the security actions list and in the security action details page.
+
+For information on security actions and security action statuses, see the [Security Actions customer documentation](https://cloud.google.com/apigee/docs/api-security/security-actions).
+
+---
+## 2025-09-18
+
+### Announcement
+
+On September 18, 2025 we released an updated version of Advanced API Security
+
+**Note:** Rollouts of this release to production instances will begin within two business days and may take four or more business days to complete across all Google Cloud zones. Your instances may not have the feature available until the rollout is complete.
+
+### Feature
+
+**Improvements to the Abuse Detection incident model**
+
+This release includes improvements to the incident model, including lower noise and higher accuracy for abuse detection incidents.
+
+**Note: This feature is not currently available to customers with VPC-SC enabled.**
+
+For information on abuse detection incidents, see the [Abuse Detection customer documentation](https://cloud.google.com/apigee/docs/api-security/abuse-detection#incidents).
+
+---
 ## 2025-08-25
 
 ### Announcement

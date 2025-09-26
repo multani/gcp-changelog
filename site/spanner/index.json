@@ -1,6 +1,52 @@
 {
   "name": "Spanner",
   "entries": {
+    "2025-09-25": [
+      {
+        "kind": "Feature",
+        "content": "The Cassandra interface for Spanner is now generally available. The Cassandra interface lets you take advantage of Spanner's fully managed, scalable, and highly available infrastructure using familiar Cassandra tools and syntax. For more information, see [Cassandra interface](https://cloud.google.com/spanner/docs/non-relational/cassandra-overview), [Migrate from Cassandra to Spanner](https://cloud.google.com/spanner/docs/non-relational/migrate-from-cassandra-to-spanner), and [Connect to Spanner using the Cassandra interface](https://cloud.google.com/spanner/docs/non-relational/connect-cassandra-adapter).",
+        "summary": {
+          "title": "Cassandra interface for Spanner now available",
+          "summary": "The Cassandra interface for Spanner is now generally available, allowing you to leverage Spanner's robust infrastructure with familiar Cassandra tools and syntax."
+        }
+      }
+    ],
+    "2025-09-23": [
+      {
+        "kind": "Feature",
+        "content": "You can now use [read lease](https://cloud.google.com/spanner/docs/read-lease) regions to reduce latency for strong reads in multi-region or dual-region instances. Read leases use designated non-leader, read-write or read-only regions to serve strong reads locally, eliminating the network round trip to the leader region that is typically required. This feature is [generally available](https://cloud.google.com/products/#product-launch-stages) (GA).",
+        "summary": {
+          "title": "Read leases for reduced latency",
+          "summary": "Reduce latency for strong reads with read leases. This feature is now generally available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now use the dedicated [Gemini CLI extension for Spanner](https://cloud.google.com/spanner/docs/pre-built-tools-with-mcp-toolbox) to execute SQL statements and query your Spanner instance using natural language controls.",
+        "summary": {
+          "title": "Gemini CLI extension for Spanner",
+          "summary": "Query your Spanner instance using natural language."
+        }
+      }
+    ],
+    "2025-09-22": [
+      {
+        "kind": "Feature",
+        "content": "You can now run federated queries against [PostgreSQL dialect databases in Spanner](https://cloud.google.com/spanner/docs/reference/postgresql/overview) using [BigQuery external datasets](https://cloud.google.com/bigquery/docs/spanner-external-datasets) using GoogleSQL; this includes [cross-region federated queries](https://cloud.google.com/bigquery/docs/spanner-federated-queries#cross_region_queries). This feature is [generally available](https://cloud.google.com/products/#product-launch-stages) (GA).",
+        "summary": {
+          "title": "Spanner PostgreSQL dialect databases now available for BigQuery external datasets",
+          "summary": "You can now run federated queries against PostgreSQL dialect databases in Spanner using BigQuery external datasets. This feature is now generally available and supports cross-region queries."
+        }
+      },
+      {
+        "kind": "Libraries",
+        "content": "A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).\n\n### Python\n\n### Changes for [google-cloud-spanner](https://github.com/googleapis/python-spanner)\n\n#### [3.58.0](https://github.com/googleapis/python-spanner/compare/v3.57.0...v3.58.0) (2025-09-10)\n\n##### Features\n\n* **spanner:** Support setting read lock mode ([#1404](https://github.com/googleapis/python-spanner/issues/1404)) ([ee24c6e](https://github.com/googleapis/python-spanner/commit/ee24c6ee2643bc74d52e9f0a924b80a830fa2697))\n\n##### Dependencies\n\n* Remove Python 3.7 and 3.8 as supported runtimes ([#1395](https://github.com/googleapis/python-spanner/issues/1395)) ([fc93792](https://github.com/googleapis/python-spanner/commit/fc9379232224f56d29d2e36559a756c05a5478ff))",
+        "summary": {
+          "title": "Python client library updates",
+          "summary": "A weekly digest of client library updates from across the Cloud SDK, including new features and dependency changes."
+        }
+      }
+    ],
     "2025-09-17": [
       {
         "kind": "Feature",
@@ -8,16 +54,6 @@
         "summary": {
           "title": "Spanner Graph Schemaless Support is Now GA",
           "summary": "Spanner Graph now supports schemaless schemas, which is now generally available. This feature allows for more flexible data management."
-        }
-      }
-    ],
-    "2025-09-15": [
-      {
-        "kind": "Feature",
-        "content": "The Cassandra interface for Spanner is now generally available. The Cassandra interface lets you take advantage of Spanner's fully managed, scalable, and highly available infrastructure using familiar Cassandra tools and syntax. For more information, see [Cassandra interface](https://cloud.google.com/spanner/docs/non-relational/cassandra-overview), [Migrate from Cassandra to Spanner](https://cloud.google.com/spanner/docs/non-relational/migrate-from-cassandra-to-spanner), and [Connect to Spanner using the Cassandra interface](https://cloud.google.com/spanner/docs/non-relational/connect-cassandra-adapter).",
-        "summary": {
-          "title": "Cassandra interface for Spanner now available",
-          "summary": "The Cassandra interface for Spanner is now generally available. This feature allows you to leverage Spanner's robust infrastructure with familiar Cassandra tools and syntax."
         }
       }
     ],
@@ -48,6 +84,16 @@
         "summary": {
           "title": "Terminate Multiple Queries",
           "summary": "You can now terminate multiple active queries in your Spanner instance to improve performance."
+        }
+      }
+    ],
+    "2025-09-15": [
+      {
+        "kind": "Feature",
+        "content": "The Cassandra interface for Spanner is now generally available. The Cassandra interface lets you take advantage of Spanner's fully managed, scalable, and highly available infrastructure using familiar Cassandra tools and syntax. For more information, see [Cassandra interface](https://cloud.google.com/spanner/docs/non-relational/cassandra-overview), [Migrate from Cassandra to Spanner](https://cloud.google.com/spanner/docs/non-relational/migrate-from-cassandra-to-spanner), and [Connect to Spanner using the Cassandra interface](https://cloud.google.com/spanner/docs/non-relational/connect-cassandra-adapter).",
+        "summary": {
+          "title": "Cassandra interface for Spanner now available",
+          "summary": "The Cassandra interface for Spanner is now generally available. This feature allows you to leverage Spanner's robust infrastructure with familiar Cassandra tools and syntax."
         }
       }
     ],

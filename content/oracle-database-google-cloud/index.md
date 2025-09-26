@@ -1,5 +1,12 @@
 # Oracle Database@Google Cloud
 
+## 2025-09-23
+
+### Feature
+
+Oracle Database@Google Cloud supports Exadata Database Service on Exascale Infrastructure, which lets you [create and manage Exascale VM Clusters and Exascale Storage Vaults](https://cloud.google.com/oracle/database/docs/create-exascale-clusters). This feature is [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-09-16
 
 ### Feature

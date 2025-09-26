@@ -1,5 +1,12 @@
 # Eventarc
 
+## 2025-09-24
+
+### Feature
+
+Eventarc Advanced support for [publishing events from multiple projects](https://cloud.google.com/eventarc/advanced/docs/publish-events/publish-events-google-sources#multiple-projects) is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-08-01
 
 ### Announcement

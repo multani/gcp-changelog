@@ -221,6 +221,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Apigee apim operator <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../apigee-apim-operator/" class="dropdown-item">Apigee APIM Operator</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Apigee hybrid <b class="caret"></b>
                         </a>
 
@@ -1001,6 +1013,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Confidential space <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../confidential-space/" class="dropdown-item">Confidential Space</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Confidential vm <b class="caret"></b>
                         </a>
 
@@ -1068,6 +1092,18 @@
                             
   <li>
     <a href="../cortex-framework/" class="dropdown-item">Cortex Framework</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Data transfer essentials <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../data-transfer-essentials/" class="dropdown-item">Data Transfer Essentials</a>
   </li>
                         </ul>
                       </li>
@@ -1476,6 +1512,18 @@
                             
   <li>
     <a href="../identity-and-access-management/" class="dropdown-item">Identity and Access Management</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Identity aware proxy <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../identity-aware-proxy/" class="dropdown-item">Identity-Aware Proxy</a>
   </li>
                         </ul>
                       </li>
@@ -1932,6 +1980,12 @@
 
 
 <h1 id="google-agentspace">Google Agentspace</h1>
+<h2 id="2025-09-23">2025-09-23</h2>
+<h3 id="breaking">Breaking</h3>
+<p><strong>Google Agentspace: Change in ACLs for incidents in ServiceNow</strong></p>
+<p>The access-control list (ACL) behavior for ServiceNow incidents has significantly changed, from too permissive to least-privilege behavior. This change drastically reduces the possibility of data leaks, but might be too restrictive for your needs.</p>
+<p>For more information about ServiceNow, see <a href="https://cloud.google.com/agentspace/docs/connect-servicenow">Connect ServiceNow</a> and <a href="https://cloud.google.com/agentspace/docs/assistant-actions-servicenow">Add ServiceNow actions</a>.</p>
+<hr />
 <h2 id="2025-09-15">2025-09-15</h2>
 <h3 id="feature">Feature</h3>
 <p><strong>Google Agentspace and Google NotebookLM Enterprise: Model Armor</strong></p>
@@ -1974,7 +2028,7 @@
 <p>This feature is available to select Google Cloud customers (GA with allowlist). For more information, see <a href="https://cloud.google.com/agentspace/notebooklm-enterprise/docs/podcast-api">Generate podcasts (API method)</a>.</p>
 <hr />
 <h2 id="2025-08-21">2025-08-21</h2>
-<h3 id="breaking">Breaking</h3>
+<h3 id="breaking_1">Breaking</h3>
 <p><strong>Full sync in SharePoint connector to avoid duplicate documents</strong></p>
 <p>Because of a change that tries to optimize the sync performance, performing an incremental sync in a <a href="https://cloud.google.com/agentspace/docs/connect-sharepoint-online">SharePoint connector data store</a> can cause duplicate documents for <code>file</code> entity types. This is applicable to all SharePoint connectors created before August 21, 2025, that contain <code>file</code> entity types.</p>
 <p>As a one-time solution, you can avoid duplication by either running a full sync manually or waiting for the next scheduled full sync. After performing the full sync, you can perform incremental syncs without generating any duplicate documents.</p>
@@ -2000,6 +2054,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-agentspace">Google Agentspace</a></li>
+          <li class="nav-item">
+            <a href="#2025-09-23" class="nav-link">2025-09-23</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-09-15" class="nav-link">2025-09-15</a>
           </li>

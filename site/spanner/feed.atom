@@ -2,9 +2,75 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Spanner</title>
   <subtitle>Changelog for Google Cloud product: Spanner</subtitle>
-  <updated>2025-09-17T00:00:00+00:00</updated>
+  <updated>2025-09-25T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:spanner</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/spanner/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2025-09-25:feature:0</id>
+    <published>2025-09-25T00:00:00+00:00</published>
+    <updated>2025-09-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Cassandra interface for Spanner is now generally available. The Cassandra interface lets you take advantage of Spanner's fully managed, scalable, and highly available infrastructure using familiar Cassandra tools and syntax. For more information, see <a href="https://cloud.google.com/spanner/docs/non-relational/cassandra-overview">Cassandra interface</a>, <a href="https://cloud.google.com/spanner/docs/non-relational/migrate-from-cassandra-to-spanner">Migrate from Cassandra to Spanner</a>, and <a href="https://cloud.google.com/spanner/docs/non-relational/connect-cassandra-adapter">Connect to Spanner using the Cassandra interface</a>.</p>]]></content>
+    <summary>The Cassandra interface for Spanner is now generally available, allowing you to leverage Spanner's robust infrastructure with familiar Cassandra tools and syntax.</summary>
+    <title>Feature: Cassandra interface for Spanner now available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2025-09-23:feature:0</id>
+    <published>2025-09-23T00:00:00+00:00</published>
+    <updated>2025-09-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now use <a href="https://cloud.google.com/spanner/docs/read-lease">read lease</a> regions to reduce latency for strong reads in multi-region or dual-region instances. Read leases use designated non-leader, read-write or read-only regions to serve strong reads locally, eliminating the network round trip to the leader region that is typically required. This feature is <a href="https://cloud.google.com/products/#product-launch-stages">generally available</a> (GA).</p>]]></content>
+    <summary>Reduce latency for strong reads with read leases. This feature is now generally available.</summary>
+    <title>Feature: Read leases for reduced latency</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2025-09-23:feature:1</id>
+    <published>2025-09-23T00:00:00+00:00</published>
+    <updated>2025-09-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now use the dedicated <a href="https://cloud.google.com/spanner/docs/pre-built-tools-with-mcp-toolbox">Gemini CLI extension for Spanner</a> to execute SQL statements and query your Spanner instance using natural language controls.</p>]]></content>
+    <summary>Query your Spanner instance using natural language.</summary>
+    <title>Feature: Gemini CLI extension for Spanner</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2025-09-22:feature:0</id>
+    <published>2025-09-22T00:00:00+00:00</published>
+    <updated>2025-09-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now run federated queries against <a href="https://cloud.google.com/spanner/docs/reference/postgresql/overview">PostgreSQL dialect databases in Spanner</a> using <a href="https://cloud.google.com/bigquery/docs/spanner-external-datasets">BigQuery external datasets</a> using GoogleSQL; this includes <a href="https://cloud.google.com/bigquery/docs/spanner-federated-queries#cross_region_queries">cross-region federated queries</a>. This feature is <a href="https://cloud.google.com/products/#product-launch-stages">generally available</a> (GA).</p>]]></content>
+    <summary>You can now run federated queries against PostgreSQL dialect databases in Spanner using BigQuery external datasets. This feature is now generally available and supports cross-region queries.</summary>
+    <title>Feature: Spanner PostgreSQL dialect databases now available for BigQuery external datasets</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2025-09-22:libraries:1</id>
+    <published>2025-09-22T00:00:00+00:00</published>
+    <updated>2025-09-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
+<h3>Python</h3>
+<h3>Changes for <a href="https://github.com/googleapis/python-spanner">google-cloud-spanner</a></h3>
+<h4><a href="https://github.com/googleapis/python-spanner/compare/v3.57.0...v3.58.0">3.58.0</a> (2025-09-10)</h4>
+<h5>Features</h5>
+<ul>
+<li><strong>spanner:</strong> Support setting read lock mode (<a href="https://github.com/googleapis/python-spanner/issues/1404">#1404</a>) (<a href="https://github.com/googleapis/python-spanner/commit/ee24c6ee2643bc74d52e9f0a924b80a830fa2697">ee24c6e</a>)</li>
+</ul>
+<h5>Dependencies</h5>
+<ul>
+<li>Remove Python 3.7 and 3.8 as supported runtimes (<a href="https://github.com/googleapis/python-spanner/issues/1395">#1395</a>) (<a href="https://github.com/googleapis/python-spanner/commit/fc9379232224f56d29d2e36559a756c05a5478ff">fc93792</a>)</li>
+</ul>]]></content>
+    <summary>A weekly digest of client library updates from across the Cloud SDK, including new features and dependency changes.</summary>
+    <title>Libraries: Python client library updates</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -15,17 +81,6 @@
     <content type="html"><![CDATA[<p>Spanner Graph support of schemaless schemas is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA). For more information, see <a href="https://cloud.google.com/spanner/docs/graph/manage-schemaless-data">Manage schemaless data with Spanner Graph</a>.</p>]]></content>
     <summary>Spanner Graph now supports schemaless schemas, which is now generally available. This feature allows for more flexible data management.</summary>
     <title>Feature: Spanner Graph Schemaless Support is Now GA</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:spanner:2025-09-15:feature:0</id>
-    <published>2025-09-15T00:00:00+00:00</published>
-    <updated>2025-09-15T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The Cassandra interface for Spanner is now generally available. The Cassandra interface lets you take advantage of Spanner's fully managed, scalable, and highly available infrastructure using familiar Cassandra tools and syntax. For more information, see <a href="https://cloud.google.com/spanner/docs/non-relational/cassandra-overview">Cassandra interface</a>, <a href="https://cloud.google.com/spanner/docs/non-relational/migrate-from-cassandra-to-spanner">Migrate from Cassandra to Spanner</a>, and <a href="https://cloud.google.com/spanner/docs/non-relational/connect-cassandra-adapter">Connect to Spanner using the Cassandra interface</a>.</p>]]></content>
-    <summary>The Cassandra interface for Spanner is now generally available. This feature allows you to leverage Spanner's robust infrastructure with familiar Cassandra tools and syntax.</summary>
-    <title>Feature: Cassandra interface for Spanner now available</title>
   </entry>
   <entry>
     <author>
@@ -167,6 +222,17 @@ This version is retracted due to https://github.com/googleapis/google-cloud-go/i
 <p>For more information, see <a href="https://cloud.google.com/spanner/docs/monitor-active-queries#terminate-query">Monitor active queries</a>.</p>]]></content>
     <summary>You can now terminate multiple active queries in your Spanner instance to improve performance.</summary>
     <title>Feature: Terminate Multiple Queries</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2025-09-15:feature:0</id>
+    <published>2025-09-15T00:00:00+00:00</published>
+    <updated>2025-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Cassandra interface for Spanner is now generally available. The Cassandra interface lets you take advantage of Spanner's fully managed, scalable, and highly available infrastructure using familiar Cassandra tools and syntax. For more information, see <a href="https://cloud.google.com/spanner/docs/non-relational/cassandra-overview">Cassandra interface</a>, <a href="https://cloud.google.com/spanner/docs/non-relational/migrate-from-cassandra-to-spanner">Migrate from Cassandra to Spanner</a>, and <a href="https://cloud.google.com/spanner/docs/non-relational/connect-cassandra-adapter">Connect to Spanner using the Cassandra interface</a>.</p>]]></content>
+    <summary>The Cassandra interface for Spanner is now generally available. This feature allows you to leverage Spanner's robust infrastructure with familiar Cassandra tools and syntax.</summary>
+    <title>Feature: Cassandra interface for Spanner now available</title>
   </entry>
   <entry>
     <author>

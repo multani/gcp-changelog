@@ -1,6 +1,16 @@
 {
   "name": "Dataflow",
   "entries": {
+    "2025-09-24": [
+      {
+        "kind": "Feature",
+        "content": "For jobs that use GPUs, Dataflow now supports the flex-start provisioning model. This flex-start provisioning model can improve your ability to get access to constrained GPU resources for short-duration workloads. This feature is available in Preview and is for batch pipelines only. For more information, see [Configure a provisioning model](https://cloud.google.com/dataflow/docs/gpu/use-gpus#optional_configure_a_provisioning_model).",
+        "summary": {
+          "title": "Dataflow GPU Access",
+          "summary": "Dataflow now supports flex-start provisioning for GPU jobs, improving access to scarce GPU resources for short-term workloads. This feature is in Preview and intended for batch pipelines."
+        }
+      }
+    ],
     "2025-09-08": [
       {
         "kind": "Feature",
@@ -14,10 +24,26 @@
     "2025-08-27": [
       {
         "kind": "Feature",
-        "content": "Dataflow supports Cloud TPUs, Google's custom-designed AI accelerators that are optimized for large-scale AI/ML workloads. This feature lets you accelerate inference workloads on frameworks like PyTorch, JAX, and TensorFlow. This feature is [generally available](https://cloud.google.com/products#product-launch-stages) with an allowlist. For more information, see [Dataflow support for TPUs](https://cloud.google.com/dataflow/docs/tpu/tpu-support).",
+        "content": "Dataflow supports TPUs, Google's custom-designed AI accelerators that are optimized for large-scale AI/ML workloads. This feature lets you accelerate inference workloads on frameworks like PyTorch, JAX, and TensorFlow. This feature is [generally available](https://cloud.google.com/products#product-launch-stages) with an allowlist. For more information, see [Dataflow support for TPUs](https://cloud.google.com/dataflow/docs/tpu/tpu-support).",
         "summary": {
           "title": "Dataflow TPU Support",
-          "summary": "Dataflow now supports Cloud TPUs for accelerated AI/ML workloads."
+          "summary": "Accelerate your AI/ML inference workloads with TPUs on Dataflow. Generally available with an allowlist."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Dataflow supports [*specifically targeted* reservations](https://cloud.google.com/compute/docs/instances/reservations-overview#consumption-type) for pipelines using accelerators (GPUs or TPUs). This functionality is generally available with an allowlist. For more information, see [Use Compute Engine reservations with Dataflow](https://cloud.google.com/dataflow/docs/guides/compute-engine-reservations.md#reservations-accelerators).",
+        "summary": {
+          "title": "Dataflow now supports reservations for pipelines with accelerators.",
+          "summary": "Dataflow now generally available supports [*specifically targeted* reservations](https://cloud.google.com/compute/docs/instances/reservations-overview#consumption_type) for pipelines using accelerators (GPUs or TPUs). For more information, see [Use Compute Engine reservations with Dataflow](https://cloud.google.com/dataflow/docs/guides/compute-engine-reservations.md#reservations-accelerators)."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Dataflow supports NVIDIA® H100 and NVIDIA® H100 Mega GPU types. For more information, see [Dataflow support for GPUs](https://cloud.google.com/dataflow/docs/gpu/gpu-support).",
+        "summary": {
+          "title": "NVIDIA GPU Support in Dataflow",
+          "summary": "Dataflow now supports NVIDIA H100 and H100 Mega GPUs, enhancing processing capabilities. For detailed information, refer to the official documentation on GPU support."
         }
       }
     ],

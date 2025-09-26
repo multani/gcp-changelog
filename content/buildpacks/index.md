@@ -1,5 +1,12 @@
 # Buildpacks
 
+## 2025-09-18
+
+### Feature
+
+Ubuntu 24 builder with the `google-24` stack is available for Google Cloud's Buildpacks. For more information, see [Builders](https://cloud.google.com/docs/buildpacks/builders) and [Use a specific builder](https://cloud.google.com/docs/buildpacks/use-a-specific-builder).
+
+---
 ## 2025-08-14
 
 ### Feature

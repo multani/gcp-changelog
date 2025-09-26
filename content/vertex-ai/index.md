@@ -1,5 +1,12 @@
 # Vertex AI
 
+## 2025-09-22
+
+### Feature
+
+[DeepSeek-V3.1-Terminus](https://console.cloud.google.com/vertex-ai/publishers/deepseek-ai/model-garden/deepseek-v3-1;publisherModelVersion=deepseek-v3-1-terminus) is available through Model Garden.
+
+---
 ## 2025-09-15
 
 ### Feature

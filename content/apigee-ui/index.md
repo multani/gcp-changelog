@@ -1,5 +1,18 @@
 # Apigee UI
 
+## 2025-09-19
+
+### Announcement
+
+On September 19, 2025, we released an updated version of the Apigee UI.
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| 444579842 | **Fixed browser hang issue when uploading large bundles**. Fixed an issue where the browser would hang when creating a new proxy or proxy revision from a large uploaded zip bundle. |
+
+---
 ## 2025-09-14
 
 ### Announcement

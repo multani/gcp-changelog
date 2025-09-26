@@ -1,5 +1,24 @@
 # Identity and Access Management
 
+## 2025-09-24
+
+### Feature
+
+[Privileged Access Manager (PAM)](https://cloud.google.com/iam/docs/pam-overview) now offers the following features in [preview](https://cloud.google.com/products#product-launch-stages):
+
+* [Multi-level and multi-party approvals](https://cloud.google.com/iam/docs/pam-overview#mp-approvals)
+* [Scope customization](https://cloud.google.com/iam/docs/pam-overview#customize-scope)
+* [Service account approvals](https://cloud.google.com/iam/docs/pam-overview#ser-acc-approvals)
+* [Inheritance support](https://cloud.google.com/iam/docs/pam-overview#inheritance-support)
+* [Notification preferences customization](https://cloud.google.com/iam/docs/pam-overview#customize-settings)
+
+### Changed
+
+Notification emails for grant activation or denial no longer include approver details.
+
+To view the approver details, navigate to the **IAM & Admin > Privileged Access Manager > Grants** page on the Google Cloud Console.
+
+---
 ## 2025-09-12
 
 ### Feature

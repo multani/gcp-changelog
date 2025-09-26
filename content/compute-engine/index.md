@@ -1,5 +1,21 @@
 # Compute Engine
 
+## 2025-09-22
+
+### Feature
+
+**Generally available**: You can create and use Flex-start VMs. Flex-start VMs are virtual machine (VM) instances that can run for up to seven days, and that use the flex-start provisioning model. This model provisions resources from a secure pool of capacity, increasing your chances of obtaining high-demand resources like GPUs. These features make Flex-start VMs suitable for short-duration workloads that can start at any time, such as the following:
+
+* Small model pre-training
+* Model fine-tuning
+* High performance computing (HPC) simulation
+* Batch inference
+
+You can create standalone Flex-start VMs, or add Flex-start VMs all at once to a managed instance group (MIG) by using resize requests. Based on the machine type that your Flex-start VMs use, you get discounts for vCPUs, memory, and any attached GPUs.
+
+For more information, see [About Flex-start VMs](https://cloud.google.com/compute/docs/instances/about-flex-start-vms).
+
+---
 ## 2025-09-17
 
 ### Changed

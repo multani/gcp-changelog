@@ -1,5 +1,19 @@
 # Cloud Run
 
+## 2025-09-24
+
+### Feature
+
+Support for setting multiple environment variables using the `.env` file is in General Availability (GA). For more information, see [Configure environment variables for services](https://cloud.google.com/run/docs/configuring/services/environment-variables.md#set_multiple_environment_variables), [jobs](https://cloud.google.com/run/docs/configuring/jobs/environment-variables.md#set_multiple_environment_variables), and [worker pools](https://cloud.google.com/run/docs/configuring/workerpools/environment-variables.md#set_multiple_environment_variables).
+
+---
+## 2025-09-23
+
+### Feature
+
+You can specify mount options when you configure Cloud Storage volume mounts for Cloud Run [services](https://cloud.google.com/run/docs/configuring/services/cloud-storage-volume-mounts), [jobs](https://cloud.google.com/run/docs/configuring/jobs/cloud-storage-volume-mounts), and [worker pools](https://cloud.google.com/run/docs/configuring/workerpools/cloud-storage-volume-mounts). (GA)
+
+---
 ## 2025-09-10
 
 ### Feature

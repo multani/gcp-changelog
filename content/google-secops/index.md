@@ -1,5 +1,14 @@
 # Google SecOps
 
+## 2025-09-23
+
+### Changed
+
+**Transport-layer migration for third-party API feeds**
+
+Google SecOps is migrating the transport layer for third-party API feeds to a new platform to improve performance and reliability. This migration will be completed in phases and is expected to finish by the end of October 2025. The migration should not impact any existing or new, third-party API feeds. If you experience any unexpected issues with your feeds during the migration, contact your Google SecOps representative.
+
+---
 ## 2025-09-16
 
 ### Announcement

@@ -16,18 +16,19 @@ New [Dataproc on Compute Engine subminor image versions](https://cloud.google.co
 
 ### Announcement
 
-New [Serverless for Apache Spark runtime versions:](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions)
+New [Serverless for Apache Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
 
 * 1.2.61
 * 2.2.61
 * 2.3.12
+* 3.0.0-RC4
 
 ---
 ## 2025-09-08
 
 ### Announcement
 
-Announcing the [Preview release](https://cloud.google.com/products#product-launch-stages) of [Dataproc on Compute Engine image version 3.0](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-3.0):
+Announcing the [Preview release](https://cloud.google.com/products#product-launch-stages) of [Dataproc on Compute Engine image version 3.0.0-RC1](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-3.0):
 
 * Spark 4.0.0
 * Hadoop 3.4.1
@@ -42,7 +43,7 @@ Announcing the [Preview release](https://cloud.google.com/products#product-launc
 
 ### Announcement
 
-Announcing the [Preview release](https://cloud.google.com/products#product-launch-stages) of [Serverless for Apache Spark 3.0 runtime](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-3.0):
+Announcing the [Preview release](https://cloud.google.com/products#product-launch-stages) of [Serverless for Apache Spark 3.0.0-RC3 runtime](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-3.0):
 
 * Spark 4.0.0
 * BigQuery Spark Connector 0.42.3

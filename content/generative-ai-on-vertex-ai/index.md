@@ -1,5 +1,48 @@
 # Generative AI on Vertex AI
 
+## 2025-09-25
+
+### Announcement
+
+New preview models for [**Gemini 2.5 Flash**](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash#2.5-flash-preview) and [**2.5 Flash-Lite**](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash-lite#2.5-flash-lite-preview) are now available. These models are available at the following versioned endpoints:
+
+* `gemini-2.5-flash-preview-09-2025`
+* `gemini-2.5-flash-lite-preview-09-2025`
+
+---
+## 2025-09-24
+
+### Deprecated
+
+Access to Gemini's 1.5 models has been discontinued. For more information, see our [Model versions](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions) page.
+
+---
+## 2025-09-23
+
+### Announcement
+
+**Gemini 2.5 Flash with Live API Native Audio Preview**
+
+[**Gemini 2.5 Flash with Live API Native Audio**](cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash) (`gemini-live-2.5-flash-preview-native-audio-09-2025`) is available in [Preview](https://cloud.google.com/products#product-launch-stages). A single, unified model processes audio input and generates audio output directly, eliminating separate text-to-speech/speech-to-text conversions. This results in-low latency, high-quality, and incredibly human-like conversations. New features and capabilities include:
+
+* **Improved Barge-in:** Interrupt Gemini more naturally and reliably, even in loud and noisy environments.
+* **Robust Function Calling:** We've improved the triggering rate, allowing Gemini to successfully execute the functions you define with greater precision.
+* **Accurate Transcription:** The accuracy of audio-to-text transcription has been significantly enhanced.
+* **Seamless Multilingual Support:** Speak to Gemini in multiple languages, and it will effortlessly switch between them without any pre-configuration. Language is no longer a barrier!
+* **Enhanced Audio Quality:** Experience a dramatically improved audio quality that truly feels like speaking with a person.
+* **Proactive Audio:** Define Gemini's expertise and set conditions for when it should respond. Gemini can act as a "silent listener," only chiming in when the conversation touches upon its designated area of expertise.
+* **Affective Dialog:** Gemini can adapt and adjust its generated voice to match the emotional tone of the speaker, creating more empathetic and natural interactions.
+
+[Watch our comprehensive demo](https://youtu.be/ZsB33Tr-P3c) to see these features in action, including seamless language switching, expert mode, emotionally aware responses, memory recall, and interactive screen sharing for engineering tasks – all demonstrated directly within Vertex AI Studio without writing a single line of code!
+
+---
+## 2025-09-22
+
+### Feature
+
+[DeepSeek-V3.1-Terminus](https://console.cloud.google.com/vertex-ai/publishers/deepseek-ai/model-garden/deepseek-v3-1;publisherModelVersion=deepseek-v3-1-terminus) is available through Model Garden.
+
+---
 ## 2025-09-18
 
 ### Changed
@@ -14,6 +57,8 @@ Grounding with Google Maps has implemented the following changes:
   + `grounding_chunk.maps.place_answer_sources.flag_content_uri`
   + `grounding_chunk.maps.place_answer_sources.review_snippets.flag_content_uri`
 * The widget context token is only returned when the optional `widget_token_enable` input flag is set.
+
+To learn more, see [Grounding with Google Maps](https://cloud.google.com/vertex-ai/generative-ai/docs/grounding/grounding-with-google-maps).
 
 ---
 ## 2025-09-15
@@ -67,6 +112,17 @@ Veo 3 support for short-duration videos is [generally available](https://cloud.g
 * [Generate videos with Veo on Vertex AI from text prompts](https://cloud.google.com/vertex-ai/generative-ai/docs/video/generate-videos-from-text)
 * [Generate videos with Veo on Vertex AI from an image](https://cloud.google.com/vertex-ai/generative-ai/docs/video/generate-videos-from-an-image)
 * [Veo on Vertex AI video generation API](https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/veo-video-generation)
+
+---
+## 2025-09-03
+
+### Changed
+
+**Vertex AI RAG Engine: Managed Database (Spanner)**
+
+Customers will be charged for the use of a Google-managed Spanner instance that's provisioned in a Google tenant project, using standard Spanner SKUs.
+
+For more information, see [Vertex AI RAG Engine billing](https://cloud.google.com/vertex-ai/generative-ai/docs/rag-engine/rag-engine-billing).
 
 ---
 ## 2025-08-26

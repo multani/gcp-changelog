@@ -1,13 +1,53 @@
 {
   "name": "Generative AI on Vertex AI",
   "entries": {
+    "2025-09-25": [
+      {
+        "kind": "Announcement",
+        "content": "New preview models for [**Gemini 2.5 Flash**](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash#2.5-flash-preview) and [**2.5 Flash-Lite**](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash-lite#2.5-flash-lite-preview) are now available. These models are available at the following versioned endpoints:\n\n* `gemini-2.5-flash-preview-09-2025`\n* `gemini-2.5-flash-lite-preview-09-2025`",
+        "summary": {
+          "title": "New Gemini Models Available",
+          "summary": "New preview models for Gemini 2.5 Flash and 2.5 Flash-Lite are now accessible through specific versioned endpoints."
+        }
+      }
+    ],
+    "2025-09-24": [
+      {
+        "kind": "Deprecated",
+        "content": "Access to Gemini's 1.5 models has been discontinued. For more information, see our [Model versions](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions) page.",
+        "summary": {
+          "title": "Gemini 1.5 models access discontinued",
+          "summary": "Access to Gemini 1.5 models has been discontinued. Please refer to the Model versions page for more information."
+        }
+      }
+    ],
+    "2025-09-23": [
+      {
+        "kind": "Announcement",
+        "content": "**Gemini 2.5 Flash with Live API Native Audio Preview**\n\n[**Gemini 2.5 Flash with Live API Native Audio**](cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash) (`gemini-live-2.5-flash-preview-native-audio-09-2025`) is available in [Preview](https://cloud.google.com/products#product-launch-stages). A single, unified model processes audio input and generates audio output directly, eliminating separate text-to-speech/speech-to-text conversions. This results in-low latency, high-quality, and incredibly human-like conversations. New features and capabilities include:\n\n* **Improved Barge-in:** Interrupt Gemini more naturally and reliably, even in loud and noisy environments.\n* **Robust Function Calling:** We've improved the triggering rate, allowing Gemini to successfully execute the functions you define with greater precision.\n* **Accurate Transcription:** The accuracy of audio-to-text transcription has been significantly enhanced.\n* **Seamless Multilingual Support:** Speak to Gemini in multiple languages, and it will effortlessly switch between them without any pre-configuration. Language is no longer a barrier!\n* **Enhanced Audio Quality:** Experience a dramatically improved audio quality that truly feels like speaking with a person.\n* **Proactive Audio:** Define Gemini's expertise and set conditions for when it should respond. Gemini can act as a \"silent listener,\" only chiming in when the conversation touches upon its designated area of expertise.\n* **Affective Dialog:** Gemini can adapt and adjust its generated voice to match the emotional tone of the speaker, creating more empathetic and natural interactions.\n\n[Watch our comprehensive demo](https://youtu.be/ZsB33Tr-P3c) to see these features in action, including seamless language switching, expert mode, emotionally aware responses, memory recall, and interactive screen sharing for engineering tasks – all demonstrated directly within Vertex AI Studio without writing a single line of code!",
+        "summary": {
+          "title": "Gemini 2.5 Flash: Real-time Audio Conversations",
+          "summary": "Gemini 2.5 Flash now supports native audio processing for low-latency, human-like conversations. Key features include improved barge-in, robust function calling, accurate transcription, seamless multilingual support, enhanced audio quality, proactive audio responses, and affective dialog for emotionally resonant interactions."
+        }
+      }
+    ],
+    "2025-09-22": [
+      {
+        "kind": "Feature",
+        "content": "[DeepSeek-V3.1-Terminus](https://console.cloud.google.com/vertex-ai/publishers/deepseek-ai/model-garden/deepseek-v3-1;publisherModelVersion=deepseek-v3-1-terminus) is available through Model Garden.",
+        "summary": {
+          "title": "DeepSeek-V3.1-Terminus Now Available",
+          "summary": "The new DeepSeek-V3.1-Terminus model is now accessible via Model Garden."
+        }
+      }
+    ],
     "2025-09-18": [
       {
         "kind": "Changed",
-        "content": "**Grounding with Google Maps**\n\nGrounding with Google Maps has implemented the following changes:\n\n* Removed the following fields from the API response:\n  + `grounding_chunk.maps.text`\n  + `grounding_chunk.maps.place_answer_sources.review_snippets.author_attribution`\n  + `grounding_chunk.maps.place_answer_sources.flag_content_uri`\n  + `grounding_chunk.maps.place_answer_sources.review_snippets.flag_content_uri`\n* The widget context token is only returned when the optional `widget_token_enable` input flag is set.",
+        "content": "**Grounding with Google Maps**\n\nGrounding with Google Maps has implemented the following changes:\n\n* Removed the following fields from the API response:\n  + `grounding_chunk.maps.text`\n  + `grounding_chunk.maps.place_answer_sources.review_snippets.author_attribution`\n  + `grounding_chunk.maps.place_answer_sources.flag_content_uri`\n  + `grounding_chunk.maps.place_answer_sources.review_snippets.flag_content_uri`\n* The widget context token is only returned when the optional `widget_token_enable` input flag is set.\n\nTo learn more, see [Grounding with Google Maps](https://cloud.google.com/vertex-ai/generative-ai/docs/grounding/grounding-with-google-maps).",
         "summary": {
-          "title": "Grounding with Google Maps: API Update",
-          "summary": "We've updated the Grounding with Google Maps API. Some fields have been removed from the API response, and the widget context token is now conditional."
+          "title": "Google Maps Grounding Update",
+          "summary": "The Google Maps grounding feature has been updated. Several fields have been removed from the API response, and the widget context token is now only returned when the `widget_token_enable` flag is set."
         }
       }
     ],
@@ -64,6 +104,16 @@
         "summary": {
           "title": "Veo 3 Video Generation Now Available",
           "summary": "Veo 3 now supports short-duration video generation. Create 4, 6, or 8 second videos using text or image prompts."
+        }
+      }
+    ],
+    "2025-09-03": [
+      {
+        "kind": "Changed",
+        "content": "**Vertex AI RAG Engine: Managed Database (Spanner)**\n\nCustomers will be charged for the use of a Google-managed Spanner instance that's provisioned in a Google tenant project, using standard Spanner SKUs.\n\nFor more information, see [Vertex AI RAG Engine billing](https://cloud.google.com/vertex-ai/generative-ai/docs/rag-engine/rag-engine-billing).",
+        "summary": {
+          "title": "Vertex AI RAG Engine: Managed Database (Spanner)",
+          "summary": "Spanner is now available as a managed database for the Vertex AI RAG Engine. Billing will follow standard Spanner SKUs."
         }
       }
     ],

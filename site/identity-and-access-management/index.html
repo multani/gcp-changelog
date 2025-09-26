@@ -221,6 +221,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Apigee apim operator <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../apigee-apim-operator/" class="dropdown-item">Apigee APIM Operator</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Apigee hybrid <b class="caret"></b>
                         </a>
 
@@ -1001,6 +1013,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Confidential space <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../confidential-space/" class="dropdown-item">Confidential Space</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Confidential vm <b class="caret"></b>
                         </a>
 
@@ -1068,6 +1092,18 @@
                             
   <li>
     <a href="../cortex-framework/" class="dropdown-item">Cortex Framework</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Data transfer essentials <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../data-transfer-essentials/" class="dropdown-item">Data Transfer Essentials</a>
   </li>
                         </ul>
                       </li>
@@ -1476,6 +1512,18 @@
                             
   <li>
     <a href="./" class="dropdown-item active">Identity and Access Management</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Identity aware proxy <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../identity-aware-proxy/" class="dropdown-item">Identity-Aware Proxy</a>
   </li>
                         </ul>
                       </li>
@@ -1902,7 +1950,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" rel="prev" href="../live-stream-api/">
+                  <a class="nav-link" rel="prev" href="../identity-aware-proxy/">
                     Next <i class="fa fa-arrow-right"></i>
                   </a>
                 </li>
@@ -1932,24 +1980,38 @@
 
 
 <h1 id="identity-and-access-management">Identity and Access Management</h1>
-<h2 id="2025-09-12">2025-09-12</h2>
+<h2 id="2025-09-24">2025-09-24</h2>
 <h3 id="feature">Feature</h3>
+<p><a href="https://cloud.google.com/iam/docs/pam-overview">Privileged Access Manager (PAM)</a> now offers the following features in <a href="https://cloud.google.com/products#product-launch-stages">preview</a>:</p>
+<ul>
+<li><a href="https://cloud.google.com/iam/docs/pam-overview#mp-approvals">Multi-level and multi-party approvals</a></li>
+<li><a href="https://cloud.google.com/iam/docs/pam-overview#customize-scope">Scope customization</a></li>
+<li><a href="https://cloud.google.com/iam/docs/pam-overview#ser-acc-approvals">Service account approvals</a></li>
+<li><a href="https://cloud.google.com/iam/docs/pam-overview#inheritance-support">Inheritance support</a></li>
+<li><a href="https://cloud.google.com/iam/docs/pam-overview#customize-settings">Notification preferences customization</a></li>
+</ul>
+<h3 id="changed">Changed</h3>
+<p>Notification emails for grant activation or denial no longer include approver details.</p>
+<p>To view the approver details, navigate to the <strong>IAM &amp; Admin &gt; Privileged Access Manager &gt; Grants</strong> page on the Google Cloud Console.</p>
+<hr />
+<h2 id="2025-09-12">2025-09-12</h2>
+<h3 id="feature_1">Feature</h3>
 <p>IAM offers predefined roles that are tailored to specific job functions. These roles cover all of the permissions that a user might need to perform their job. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a>.</p>
 <p>For more information, see <a href="https://cloud.google.com/iam/docs/job-functions/roles-for-job-functions">Predefined roles for job functions</a>.</p>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>Permission errors in the Google Cloud console contain actionable steps for remediation. For more information, see <a href="https://cloud.google.com/iam/docs/permission-error-messages">Troubleshoot permission error messages</a>.</p>
 <hr />
 <h2 id="2025-07-21">2025-07-21</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>You can ask Gemini for predefined role suggestions using the IAM role picker in the Google Cloud Console. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">preview</a>.</p>
 <p>For more information, see <a href="https://cloud.google.com/iam/docs/role-picker-gemini">Get predefined role suggestions with Gemini assistance</a>.</p>
 <hr />
 <h2 id="2025-06-13">2025-06-13</h2>
-<h3 id="changed">Changed</h3>
+<h3 id="changed_1">Changed</h3>
 <p>Conditions that check the tags for a resource can also check other attributes, such as the resource name of the timestamp of the request. This feature is available in Preview. For more information, see <a href="https://cloud.google.com/iam/docs/conditions-attribute-reference#resource-tags">Resource tags</a>.</p>
 <hr />
 <h2 id="2025-05-28">2025-05-28</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>Workforce Identity Federation supports <a href="https://cloud.google.com/iam/docs/workforce-identity-federation#detailed-audit-logging">detailed audit logging</a>, which you can use to troubleshoot attribute mapping issues. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a>.</p>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
@@ -1962,6 +2024,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#identity-and-access-management">Identity and Access Management</a></li>
+          <li class="nav-item">
+            <a href="#2025-09-24" class="nav-link">2025-09-24</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-09-12" class="nav-link">2025-09-12</a>
           </li>

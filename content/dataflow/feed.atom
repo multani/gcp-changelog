@@ -2,9 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Dataflow</title>
   <subtitle>Changelog for Google Cloud product: Dataflow</subtitle>
-  <updated>2025-09-08T00:00:00+00:00</updated>
+  <updated>2025-09-24T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:dataflow</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/dataflow/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataflow:2025-09-24:feature:0</id>
+    <published>2025-09-24T00:00:00+00:00</published>
+    <updated>2025-09-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>For jobs that use GPUs, Dataflow now supports the flex-start provisioning model. This flex-start provisioning model can improve your ability to get access to constrained GPU resources for short-duration workloads. This feature is available in Preview and is for batch pipelines only. For more information, see <a href="https://cloud.google.com/dataflow/docs/gpu/use-gpus#optional_configure_a_provisioning_model">Configure a provisioning model</a>.</p>]]></content>
+    <summary>Dataflow now supports flex-start provisioning for GPU jobs, improving access to scarce GPU resources for short-term workloads. This feature is in Preview and intended for batch pipelines.</summary>
+    <title>Feature: Dataflow GPU Access</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -23,9 +34,31 @@
     <id>urn:github:multani:gcp-changelog:dataflow:2025-08-27:feature:0</id>
     <published>2025-08-27T00:00:00+00:00</published>
     <updated>2025-08-27T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Dataflow supports Cloud TPUs, Google's custom-designed AI accelerators that are optimized for large-scale AI/ML workloads. This feature lets you accelerate inference workloads on frameworks like PyTorch, JAX, and TensorFlow. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> with an allowlist. For more information, see <a href="https://cloud.google.com/dataflow/docs/tpu/tpu-support">Dataflow support for TPUs</a>.</p>]]></content>
-    <summary>Dataflow now supports Cloud TPUs for accelerated AI/ML workloads.</summary>
+    <content type="html"><![CDATA[<p>Dataflow supports TPUs, Google's custom-designed AI accelerators that are optimized for large-scale AI/ML workloads. This feature lets you accelerate inference workloads on frameworks like PyTorch, JAX, and TensorFlow. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> with an allowlist. For more information, see <a href="https://cloud.google.com/dataflow/docs/tpu/tpu-support">Dataflow support for TPUs</a>.</p>]]></content>
+    <summary>Accelerate your AI/ML inference workloads with TPUs on Dataflow. Generally available with an allowlist.</summary>
     <title>Feature: Dataflow TPU Support</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataflow:2025-08-27:feature:1</id>
+    <published>2025-08-27T00:00:00+00:00</published>
+    <updated>2025-08-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Dataflow supports <a href="https://cloud.google.com/compute/docs/instances/reservations-overview#consumption-type"><em>specifically targeted</em> reservations</a> for pipelines using accelerators (GPUs or TPUs). This functionality is generally available with an allowlist. For more information, see <a href="https://cloud.google.com/dataflow/docs/guides/compute-engine-reservations.md#reservations-accelerators">Use Compute Engine reservations with Dataflow</a>.</p>]]></content>
+    <summary>Dataflow now generally available supports [*specifically targeted* reservations](https://cloud.google.com/compute/docs/instances/reservations-overview#consumption_type) for pipelines using accelerators (GPUs or TPUs). For more information, see [Use Compute Engine reservations with Dataflow](https://cloud.google.com/dataflow/docs/guides/compute-engine-reservations.md#reservations-accelerators).</summary>
+    <title>Feature: Dataflow now supports reservations for pipelines with accelerators.</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataflow:2025-08-27:changed:2</id>
+    <published>2025-08-27T00:00:00+00:00</published>
+    <updated>2025-08-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Dataflow supports NVIDIA® H100 and NVIDIA® H100 Mega GPU types. For more information, see <a href="https://cloud.google.com/dataflow/docs/gpu/gpu-support">Dataflow support for GPUs</a>.</p>]]></content>
+    <summary>Dataflow now supports NVIDIA H100 and H100 Mega GPUs, enhancing processing capabilities. For detailed information, refer to the official documentation on GPU support.</summary>
+    <title>Changed: NVIDIA GPU Support in Dataflow</title>
   </entry>
   <entry>
     <author>

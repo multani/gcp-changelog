@@ -1,5 +1,48 @@
 # Spanner
 
+## 2025-09-25
+
+### Feature
+
+The Cassandra interface for Spanner is now generally available. The Cassandra interface lets you take advantage of Spanner's fully managed, scalable, and highly available infrastructure using familiar Cassandra tools and syntax. For more information, see [Cassandra interface](https://cloud.google.com/spanner/docs/non-relational/cassandra-overview), [Migrate from Cassandra to Spanner](https://cloud.google.com/spanner/docs/non-relational/migrate-from-cassandra-to-spanner), and [Connect to Spanner using the Cassandra interface](https://cloud.google.com/spanner/docs/non-relational/connect-cassandra-adapter).
+
+---
+## 2025-09-23
+
+### Feature
+
+You can now use [read lease](https://cloud.google.com/spanner/docs/read-lease) regions to reduce latency for strong reads in multi-region or dual-region instances. Read leases use designated non-leader, read-write or read-only regions to serve strong reads locally, eliminating the network round trip to the leader region that is typically required. This feature is [generally available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+### Feature
+
+You can now use the dedicated [Gemini CLI extension for Spanner](https://cloud.google.com/spanner/docs/pre-built-tools-with-mcp-toolbox) to execute SQL statements and query your Spanner instance using natural language controls.
+
+---
+## 2025-09-22
+
+### Feature
+
+You can now run federated queries against [PostgreSQL dialect databases in Spanner](https://cloud.google.com/spanner/docs/reference/postgresql/overview) using [BigQuery external datasets](https://cloud.google.com/bigquery/docs/spanner-external-datasets) using GoogleSQL; this includes [cross-region federated queries](https://cloud.google.com/bigquery/docs/spanner-federated-queries#cross_region_queries). This feature is [generally available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Python
+
+### Changes for [google-cloud-spanner](https://github.com/googleapis/python-spanner)
+
+#### [3.58.0](https://github.com/googleapis/python-spanner/compare/v3.57.0...v3.58.0) (2025-09-10)
+
+##### Features
+
+* **spanner:** Support setting read lock mode ([#1404](https://github.com/googleapis/python-spanner/issues/1404)) ([ee24c6e](https://github.com/googleapis/python-spanner/commit/ee24c6ee2643bc74d52e9f0a924b80a830fa2697))
+
+##### Dependencies
+
+* Remove Python 3.7 and 3.8 as supported runtimes ([#1395](https://github.com/googleapis/python-spanner/issues/1395)) ([fc93792](https://github.com/googleapis/python-spanner/commit/fc9379232224f56d29d2e36559a756c05a5478ff))
+
+---
 ## 2025-09-17
 
 ### Feature

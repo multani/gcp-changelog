@@ -1,5 +1,18 @@
 # Cloud SQL for SQL Server
 
+## 2025-09-23
+
+### Feature
+
+You can now provision, manage and query your databases using the dedicated Gemini CLI extension for Cloud SQL for SQL Server. The extension provides full lifecycle control of your database—from provisioning instances, to exploring schemas and troubleshooting issues—from your command-line interface.
+
+For more information, see [Use Cloud SQL for SQL Server with MCP, Gemini CLI, and other agents](https://cloud.google.com/sql/docs/sqlserver/pre-built-tools-with-mcp-toolbox).
+
+### Feature
+
+You can now retain point-in-time recovery (PITR) logs for an instance after its deletion for a specified retention period. These logs can be used to restore the deleted instance to a specific point in time. For more information, see [Restore a deleted instance using PITR](https://cloud.google.com/sql/docs/sqlserver/backup-recovery/restore#deleted-instance).
+
+---
 ## 2025-09-08
 
 ### Feature

@@ -1,5 +1,12 @@
 # Firestore
 
+## 2025-09-23
+
+### Feature
+
+You can now query your databases and update data using the [dedicated Gemini CLI extension for Firestore](https://cloud.google.com/firestore/native/docs/connect-ide-using-mcp-toolbox#about-gemini-cli-extension). This feature is available in beta.
+
+---
 ## 2025-09-02
 
 ### Feature

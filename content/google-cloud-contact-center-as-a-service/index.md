@@ -97,6 +97,63 @@ Agents can now search for emails in the agent adapter by keyword, session ID, or
 
 You can now use the callback calls API to cancel a single scheduled callback call or a list of calls.
 
+### Feature
+
+**Mid-session authentication is supported by all CRM types**
+
+Mid-session authentication is supported by all CRM types, not just custom CRMs. For more information, see [Mid-Session authentication by API](https://cloud.google.com/contact-center/ccai-platform/docs/mid-session-authentication-apps-api).
+
+### Feature
+
+**New advanced reporting dashboards**
+
+The following new advanced reporting dashboard is available:
+
+* **Deflections**. Get deflection information by queue and for your entire contact center. For more information, see [Deflections dashboards](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-deflections).
+* **Agent activity timeline**. See the historical activity for an agent.
+
+### Feature
+
+**Advanced reporting dashboard updates**
+
+We've made the following updates to the advanced reporting dashboards:
+
+* **Queue Group Dashboards All dashboard**: The tiles and tables on this dashboard have been replaced with the following tables:
+
+  + **Queue Group Performance Calls**: displays detailed performance information for calls by queue group.
+  + **Queue Group Performance Chats**: displays detailed performance information for chats by queue group.
+* **Virtual agent dashboards**: On both the **Virtual Agent Dashboard Calls** and **Virtual Agent Dashboard Chats** dashboards, the virtual agent metrics table contains a new **Interaction Outcome** column.
+* **All Interactions - Chat dashboard**: In the **All Chat Interactions (Historical)** table, if you configure chat transcript storage for your CRM, the values in the **Chat ID** column become links to the chat transcripts.
+* **Additional dashboards with advanced capabilities**: the following dashboards now appear on the **Advanced Reporting Landing Page**. This means you can use them to create new custom dashboards or create Looks to link to custom dashboards.
+
+  **Performance**
+
+  + **Dispositions / Calls**
+  + **Dispositions / Chats**
+  + **Deflections / Calls**
+  + **Deflections / Chats**
+  + **CSAT / Calls**
+  + **CSAT / Chats**
+  + **Co-browse / Calls**
+  + **Co-browse / Chats**
+  + **Failed / Calls**
+  + **Failed / Chats**
+  + **Missed / Calls**
+  + **Missed / Chats**
+
+  **Agent Reporting**
+
+  + **Agent Activity Timeline**
+
+  **Monitoring Dashboards**
+
+  + **Calls Connected**
+  + **Chats Connected**
+  + **Calls Queued**
+  + **Chats Queued**
+
+  For more information, see [Advanced capabilities](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-advanced-capabilities).
+
 ### Fixed
 
 The following issues were addressed in this release:

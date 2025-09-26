@@ -1,6 +1,34 @@
 {
   "name": "BigQuery",
   "entries": {
+    "2025-09-24": [
+      {
+        "kind": "Feature",
+        "content": "For command-line users, BigQuery is now integrated with the Gemini CLI to provide an agentic CLI experience. Using the dedicated [Gemini CLI extensions for BigQuery](https://cloud.google.com/bigquery/docs/develop-with-gemini-cli), you can search, explore, analyze, and gain insights from your data by asking natural language questions, generating forecasts, and running contribution analysis directly from the command line. This feature is available in beta.",
+        "summary": {
+          "title": "BigQuery Now Integrates with Gemini CLI",
+          "summary": "BigQuery now offers an agentic CLI experience through integration with the Gemini CLI. This allows users to interact with their data using natural language commands for tasks like searching, analysis, and forecasting directly from the command line. This feature is currently in beta."
+        }
+      }
+    ],
+    "2025-09-22": [
+      {
+        "kind": "Feature",
+        "content": "You can now run federated queries against [PostgreSQL dialect databases in Spanner](https://cloud.google.com/spanner/docs/reference/postgresql/overview) using [BigQuery external datasets](https://cloud.google.com/bigquery/docs/spanner-external-datasets) with GoogleSQL; this includes [cross-region federated queries](https://cloud.google.com/bigquery/docs/spanner-federated-queries#cross_region_queries). This feature is [generally available](https://cloud.google.com/products/#product-launch-stages) (GA).",
+        "summary": {
+          "title": "Federated queries for PostgreSQL in Spanner are now available",
+          "summary": "You can now run federated queries against PostgreSQL dialect databases in Spanner using BigQuery external datasets with GoogleSQL. This feature is generally available and supports cross-region queries."
+        }
+      },
+      {
+        "kind": "Libraries",
+        "content": "### Python\n\n#### [3.38.0](https://github.com/googleapis/python-bigquery/compare/v3.37.0...v3.38.0) (2025-09-15)\n\n##### Features\n\n* Add additional query stats ([#2270](https://github.com/googleapis/python-bigquery/issues/2270)) ([7b1b718](https://github.com/googleapis/python-bigquery/commit/7b1b718123afd80c0f68212946e4179bcd6db67f))",
+        "summary": {
+          "title": "Python BigQuery Client Library v3.38.0",
+          "summary": "The latest Python BigQuery client library (v3.38.0) now includes additional query statistics, enhancing data analysis capabilities."
+        }
+      }
+    ],
     "2025-09-16": [
       {
         "kind": "Feature",
@@ -29,14 +57,6 @@
     ],
     "2025-09-15": [
       {
-        "kind": "Libraries",
-        "content": "A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).\n\n### Java\n\n### Changes for [google-cloud-bigquery](https://github.com/googleapis/java-bigquery)\n\n#### [2.55.0](https://github.com/googleapis/java-bigquery/compare/v2.54.2...v2.55.0) (2025-09-12)\n\n##### Features\n\n* **bigquery:** Add custom ExceptionHandler to BigQueryOptions ([#3937](https://github.com/googleapis/java-bigquery/issues/3937)) ([de0914d](https://github.com/googleapis/java-bigquery/commit/de0914ddbccf988294d50faf56a515e58ab3505d))\n\n##### Dependencies\n\n* Update dependency com.google.cloud:google-cloud-bigquerystorage-bom to v3.17.0 ([#3954](https://github.com/googleapis/java-bigquery/issues/3954)) ([e73deed](https://github.com/googleapis/java-bigquery/commit/e73deed9c68a45023d02b40144c304329d6b5829))\n* Update dependency com.google.cloud:sdk-platform-java-config to v3.52.1 ([#3952](https://github.com/googleapis/java-bigquery/issues/3952)) ([79b7557](https://github.com/googleapis/java-bigquery/commit/79b7557501d318fd92b90a681036fe6a1aa1bac4))\n\n### Python\n\n### Changes for [google-cloud-bigquery](https://github.com/googleapis/python-bigquery)\n\n#### [3.37.0](https://github.com/googleapis/python-bigquery/compare/v3.36.0...v3.37.0) (2025-09-08)\n\n##### Features\n\n* Updates to fastpath query execution ([#2268](https://github.com/googleapis/python-bigquery/issues/2268)) ([ef2740a](https://github.com/googleapis/python-bigquery/commit/ef2740a158199633b5543a7b6eb19587580792cd))\n\n##### Bug Fixes\n\n* Remove deepcopy while setting properties for \\_QueryResults ([#2280](https://github.com/googleapis/python-bigquery/issues/2280)) ([33ea296](https://github.com/googleapis/python-bigquery/commit/33ea29616c06a2e2a106a785d216e784737ae386))\n\n##### Documentation\n\n* Clarify that the presence of `XyzJob.errors` doesn't necessarily mean that the job has not completed or was unsuccessful ([#2278](https://github.com/googleapis/python-bigquery/issues/2278)) ([6e88d7d](https://github.com/googleapis/python-bigquery/commit/6e88d7dbe42ebfc35986da665d656b49ac481db4))\n* Clarify the api\\_method arg for client.query() ([#2277](https://github.com/googleapis/python-bigquery/issues/2277)) ([8a13c12](https://github.com/googleapis/python-bigquery/commit/8a13c12905ffcb3dbb6086a61df37556f0c2cd31))",
-        "summary": {
-          "title": "Client Library Updates",
-          "summary": "This is a weekly digest of client library updates, including new features and bug fixes for Java and Python."
-        }
-      },
-      {
         "kind": "Feature",
         "content": "In the BigQuery Studio, in the Explorer pane, you can now [open saved queries in Connected Sheets](https://cloud.google.com/bigquery/docs/manage-saved-queries#open-saved-queries-in-sheets). This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).",
         "summary": {
@@ -50,6 +70,22 @@
         "summary": {
           "title": "BigQuery Advanced Runtime Now Generally Available",
           "summary": "BigQuery's advanced runtime is now generally available, offering improved query execution time and slot usage. This feature will become the default for all projects between September 2025 and early 2026."
+        }
+      },
+      {
+        "kind": "Libraries",
+        "content": "### Java\n\n#### [2.55.0](https://github.com/googleapis/java-bigquery/compare/v2.54.2...v2.55.0) (2025-09-12)\n\n##### Features\n\n* **bigquery:** Add custom ExceptionHandler to BigQueryOptions ([#3937](https://github.com/googleapis/java-bigquery/issues/3937)) ([de0914d](https://github.com/googleapis/java-bigquery/commit/de0914ddbccf988294d50faf56a515e58ab3505d))\n\n##### Dependencies\n\n* Update dependency com.google.cloud:google-cloud-bigquerystorage-bom to v3.17.0 ([#3954](https://github.com/googleapis/java-bigquery/issues/3954)) ([e73deed](https://github.com/googleapis/java-bigquery/commit/e73deed9c68a45023d02b40144c304329d6b5829))\n* Update dependency com.google.cloud:sdk-platform-java-config to v3.52.1 ([#3952](https://github.com/googleapis/java-bigquery/issues/3952)) ([79b7557](https://github.com/googleapis/java-bigquery/commit/79b7557501d318fd92b90a681036fe6a1aa1bac4))",
+        "summary": {
+          "title": "Java library updates",
+          "summary": "The Java library has been updated with a new ExceptionHandler for BigQueryOptions."
+        }
+      },
+      {
+        "kind": "Libraries",
+        "content": "### Python\n\n#### [3.37.0](https://github.com/googleapis/python-bigquery/compare/v3.36.0...v3.37.0) (2025-09-08)\n\n##### Features\n\n* Updates to fastpath query execution ([#2268](https://github.com/googleapis/python-bigquery/issues/2268)) ([ef2740a](https://github.com/googleapis/python-bigquery/commit/ef2740a158199633b5543a7b6eb19587580792cd))\n\n##### Bug Fixes\n\n* Remove deepcopy while setting properties for \\_QueryResults ([#2280](https://github.com/googleapis/python-bigquery/issues/2280)) ([33ea296](https://github.com/googleapis/python-bigquery/commit/33ea29616c06a2e2a106a785d216e784737ae386))\n\n##### Documentation\n\n* Clarify that the presence of `XyzJob.errors` doesn't necessarily mean that the job has not completed or was unsuccessful ([#2278](https://github.com/googleapis/python-bigquery/issues/2278)) ([6e88d7d](https://github.com/googleapis/python-bigquery/commit/6e88d7dbe42ebfc35986da665d656b49ac481db4))\n* Clarify the api\\_method arg for client.query() ([#2277](https://github.com/googleapis/python-bigquery/issues/2277)) ([8a13c12](https://github.com/googleapis/python-bigquery/commit/8a13c12905ffcb3dbb6086a61df37556f0c2cd31))",
+        "summary": {
+          "title": "Python 3.37.0 Release",
+          "summary": "The new Python library version includes updates to fastpath query execution and bug fixes for query results. Documentation has also been improved for clarity on job completion and the `client.query()` method."
         }
       }
     ],
@@ -212,10 +248,18 @@
     "2025-09-01": [
       {
         "kind": "Libraries",
-        "content": "A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).\n\n### Go\n\n### Changes for [bigquery/storage/apiv1beta1](https://github.com/googleapis/google-cloud-go/tree/main/bigquery/storage/apiv1beta1)\n\n#### [1.70.0](https://github.com/googleapis/google-cloud-go/compare/bigquery/v1.69.0...bigquery/v1.70.0) (2025-08-28)\n\n##### Features\n\n* **bigquery/reservation:** Add Reservation.max\\_slots field to Reservation proto, indicating the total max number of slots this reservation can use up to ([f1de706](https://github.com/googleapis/google-cloud-go/commit/f1de7062db662aa6dfbf1e8cd2f0ac5df678e76d))\n* **bigquery/reservation:** Add Reservation.scaling\\_mode field and its corresponding enum message ScalingMode. This field should be used together with Reservation.max\\_slots ([f1de706](https://github.com/googleapis/google-cloud-go/commit/f1de7062db662aa6dfbf1e8cd2f0ac5df678e76d))\n* **bigquery/storage/managedwriter:** Allow overriding proto conversion mapping ([#12579](https://github.com/googleapis/google-cloud-go/issues/12579)) ([ce9d29b](https://github.com/googleapis/google-cloud-go/commit/ce9d29bf2ca22877c64c9eea5b5c6489de141cc5)), refs [#12578](https://github.com/googleapis/google-cloud-go/issues/12578)\n* **bigquery:** Add load/extract job completion ratio ([#12471](https://github.com/googleapis/google-cloud-go/issues/12471)) ([3dab483](https://github.com/googleapis/google-cloud-go/commit/3dab483ad579c65ce520d6d9a2f8ad738ad68c9c))\n* **bigquery:** Load job and external table opts for custom time format, null markers and source column match ([#12470](https://github.com/googleapis/google-cloud-go/issues/12470)) ([67b0320](https://github.com/googleapis/google-cloud-go/commit/67b0320a54be1ba7bc64eeee47a9afff14faac5f))\n\n### Java\n\n### Changes for [google-cloud-bigquery](https://github.com/googleapis/java-bigquery)\n\n#### [2.54.2](https://github.com/googleapis/java-bigquery/compare/v2.54.1...v2.54.2) (2025-08-26)\n\n##### Dependencies\n\n* Update dependency com.google.cloud:sdk-platform-java-config to v3.52.0 ([#3939](https://github.com/googleapis/java-bigquery/issues/3939)) ([794bf83](https://github.com/googleapis/java-bigquery/commit/794bf83e84efc0712638bebde5158777b9c89397))",
+        "content": "### Go\n\n#### [1.70.0](https://github.com/googleapis/google-cloud-go/compare/bigquery/v1.69.0...bigquery/v1.70.0) (2025-08-28)\n\n##### Features\n\n* **bigquery/reservation:** Add Reservation.max\\_slots field to Reservation proto, indicating the total max number of slots this reservation can use up to ([f1de706](https://github.com/googleapis/google-cloud-go/commit/f1de7062db662aa6dfbf1e8cd2f0ac5df678e76d))\n* **bigquery/reservation:** Add Reservation.scaling\\_mode field and its corresponding enum message ScalingMode. This field should be used together with Reservation.max\\_slots ([f1de706](https://github.com/googleapis/google-cloud-go/commit/f1de7062db662aa6dfbf1e8cd2f0ac5df678e76d))\n* **bigquery/storage/managedwriter:** Allow overriding proto conversion mapping ([#12579](https://github.com/googleapis/google-cloud-go/issues/12579)) ([ce9d29b](https://github.com/googleapis/google-cloud-go/commit/ce9d29bf2ca22877c64c9eea5b5c6489de141cc5)), refs [#12578](https://github.com/googleapis/google-cloud-go/issues/12578)\n* **bigquery:** Add load/extract job completion ratio ([#12471](https://github.com/googleapis/google-cloud-go/issues/12471)) ([3dab483](https://github.com/googleapis/google-cloud-go/commit/3dab483ad579c65ce520d6d9a2f8ad738ad68c9c))\n* **bigquery:** Load job and external table opts for custom time format, null markers and source column match ([#12470](https://github.com/googleapis/google-cloud-go/issues/12470)) ([67b0320](https://github.com/googleapis/google-cloud-go/commit/67b0320a54be1ba7bc64eeee47a9afff14faac5f))",
         "summary": {
-          "title": "Go and Java client library updates",
-          "summary": "This release includes updates to the Go client library with new features for BigQuery reservations and storage, as well as improvements to load/extract job handling. The Java client library for BigQuery has also been updated with dependency changes."
+          "title": "New features for Go libraries",
+          "summary": "This release introduces significant enhancements to the Go libraries, including new fields for Reservation proto to manage slot capacity and scaling, improved proto conversion mapping in managed writer, and added options for load and extract jobs to handle custom time formats and null markers."
+        }
+      },
+      {
+        "kind": "Libraries",
+        "content": "### Java\n\n#### [2.54.2](https://github.com/googleapis/java-bigquery/compare/v2.54.1...v2.54.2) (2025-08-26)\n\n##### Dependencies\n\n* Update dependency com.google.cloud:sdk-platform-java-config to v3.52.0 ([#3939](https://github.com/googleapis/java-bigquery/issues/3939)) ([794bf83](https://github.com/googleapis/java-bigquery/commit/794bf83e84efc0712638bebde5158777b9c89397))",
+        "summary": {
+          "title": "New Java Library Version",
+          "summary": "A new version of the Java library is available."
         }
       }
     ],
@@ -258,10 +302,10 @@
       },
       {
         "kind": "Libraries",
-        "content": "A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).\n\n### Python\n\n### Changes for [google-cloud-bigquery](https://github.com/googleapis/python-bigquery)\n\n#### [3.36.0](https://github.com/googleapis/python-bigquery/compare/v3.35.1...v3.36.0) (2025-08-20)\n\n##### Features\n\n* Add created/started/ended properties to RowIterator. ([#2260](https://github.com/googleapis/python-bigquery/issues/2260)) ([0a95b24](https://github.com/googleapis/python-bigquery/commit/0a95b24192395cc3ccf801aa9bc318999873a2bf))\n* Retry query jobs if `jobBackendError` or `jobInternalError` are encountered ([#2256](https://github.com/googleapis/python-bigquery/issues/2256)) ([3deff1d](https://github.com/googleapis/python-bigquery/commit/3deff1d963980800e8b79fa3aaf5b712d4fd5062))\n\n##### Documentation\n\n* Add a TROUBLESHOOTING.md file with tips for logging ([#2262](https://github.com/googleapis/python-bigquery/issues/2262)) ([b684832](https://github.com/googleapis/python-bigquery/commit/b68483227693ea68f6b12eacca2be1803cffb1d1))\n* Update README to break infinite redirect loop ([#2254](https://github.com/googleapis/python-bigquery/issues/2254)) ([8f03166](https://github.com/googleapis/python-bigquery/commit/8f031666114a826da2ad965f8ecd4727466cb480))",
+        "content": "### Python\n\n#### [3.36.0](https://github.com/googleapis/python-bigquery/compare/v3.35.1...v3.36.0) (2025-08-20)\n\n##### Features\n\n* Add created/started/ended properties to RowIterator. ([#2260](https://github.com/googleapis/python-bigquery/issues/2260)) ([0a95b24](https://github.com/googleapis/python-bigquery/commit/0a95b24192395cc3ccf801aa9bc318999873a2bf))\n* Retry query jobs if `jobBackendError` or `jobInternalError` are encountered ([#2256](https://github.com/googleapis/python-bigquery/issues/2256)) ([3deff1d](https://github.com/googleapis/python-bigquery/commit/3deff1d963980800e8b79fa3aaf5b712d4fd5062))\n\n##### Documentation\n\n* Add a TROUBLESHOOTING.md file with tips for logging ([#2262](https://github.com/googleapis/python-bigquery/issues/2262)) ([b684832](https://github.com/googleapis/python-bigquery/commit/b68483227693ea68f6b12eacca2be1803cffb1d1))\n* Update README to break infinite redirect loop ([#2254](https://github.com/googleapis/python-bigquery/issues/2254)) ([8f03166](https://github.com/googleapis/python-bigquery/commit/8f031666114a826da2ad965f8ecd4727466cb480))",
         "summary": {
-          "title": "Client Library Updates",
-          "summary": "Stay updated with the latest from our client libraries."
+          "title": "New Python library features",
+          "summary": "The latest Python library release includes enhancements to the RowIterator with new properties and improved retry logic for query jobs. Documentation has also been updated with troubleshooting tips and README improvements."
         }
       }
     ],

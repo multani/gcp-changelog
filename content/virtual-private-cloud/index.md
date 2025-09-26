@@ -1,5 +1,12 @@
 # Virtual Private Cloud
 
+## 2025-09-23
+
+### Feature
+
+Service producers can publish services that are hosted on [cross-region internal Application Load Balancers](https://cloud.google.com/load-balancing/docs/l7-internal). This feature is available in **General Availability**. For more information, see [Publish services by using Private Service Connect](https://cloud.google.com/vpc/docs/configure-private-service-connect-producer).
+
+---
 ## 2025-09-12
 
 ### Feature

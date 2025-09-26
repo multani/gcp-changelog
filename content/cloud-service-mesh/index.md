@@ -1,5 +1,39 @@
 # Cloud Service Mesh
 
+## 2025-09-25
+
+### Deprecated
+
+Support for the following features will end on **March 17, 2027**:
+
+* [GKE on AWS](https://cloud.google.com/kubernetes-engine/multi-cloud/docs/aws/deprecations/deprecation-announcement)
+* [GKE on Azure](https://cloud.google.com/kubernetes-engine/multi-cloud/docs/azure/deprecations/deprecation-announcement)
+* EKS Attached Clusters on AWS
+* Azure Attached Clusters with AKS
+
+Note that there are no changes to the other features of GKE attached clusters or Google Distributed Cloud (software only or air-gapped),
+
+You must migrate to an alternative service mesh solution or an alternative Istio-based solution using your existing CSM configuration files by March 17, 2027.
+
+---
+## 2025-09-23
+
+### Announcement
+
+**1.27.1-asm.2 is now available for in-cluster Cloud Service Mesh.**
+
+You can now download 1.27.1-asm.2 for in-cluster Cloud Service Mesh. It includes the features of [Istio 1.27.1](https://istio.io/latest/news/releases/1.27.x/announcing-1.27/) subject to the list of [supported features](https://cloud.google.com/service-mesh/docs/supported-features-in-cluster).
+
+The following environment variables and annotations are not supported:
+
+* `ENVOY_STATUS_PORT_ENABLE_PROXY_PROTOCOL`
+* `PILOT_DNS_CARES_UDP_MAX_QUERIES`
+* `PILOT_IP_AUTOALLOCATE_IPV4_PREFIX` and `PILOT_IP_AUTOALLOCATE_IPV6_PREFIX`
+* `sidecar.istio.io/bootstrapOverride`
+
+For details on upgrading Cloud Service Mesh, see [Upgrade Cloud Service Mesh](https://cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service Mesh version 1.27.1-asm.2 uses Envoy v 1.35.3-dev.
+
+---
 ## 2025-09-17
 
 ### Announcement

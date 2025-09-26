@@ -221,6 +221,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Apigee apim operator <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../apigee-apim-operator/" class="dropdown-item">Apigee APIM Operator</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Apigee hybrid <b class="caret"></b>
                         </a>
 
@@ -1001,6 +1013,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Confidential space <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../confidential-space/" class="dropdown-item">Confidential Space</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Confidential vm <b class="caret"></b>
                         </a>
 
@@ -1068,6 +1092,18 @@
                             
   <li>
     <a href="../cortex-framework/" class="dropdown-item">Cortex Framework</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Data transfer essentials <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../data-transfer-essentials/" class="dropdown-item">Data Transfer Essentials</a>
   </li>
                         </ul>
                       </li>
@@ -1476,6 +1512,18 @@
                             
   <li>
     <a href="../identity-and-access-management/" class="dropdown-item">Identity and Access Management</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Identity aware proxy <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../identity-aware-proxy/" class="dropdown-item">Identity-Aware Proxy</a>
   </li>
                         </ul>
                       </li>
@@ -1932,8 +1980,33 @@
 
 
 <h1 id="cloud-service-mesh">Cloud Service Mesh</h1>
-<h2 id="2025-09-17">2025-09-17</h2>
+<h2 id="2025-09-25">2025-09-25</h2>
+<h3 id="deprecated">Deprecated</h3>
+<p>Support for the following features will end on <strong>March 17, 2027</strong>:</p>
+<ul>
+<li><a href="https://cloud.google.com/kubernetes-engine/multi-cloud/docs/aws/deprecations/deprecation-announcement">GKE on AWS</a></li>
+<li><a href="https://cloud.google.com/kubernetes-engine/multi-cloud/docs/azure/deprecations/deprecation-announcement">GKE on Azure</a></li>
+<li>EKS Attached Clusters on AWS</li>
+<li>Azure Attached Clusters with AKS</li>
+</ul>
+<p>Note that there are no changes to the other features of GKE attached clusters or Google Distributed Cloud (software only or air-gapped),</p>
+<p>You must migrate to an alternative service mesh solution or an alternative Istio-based solution using your existing CSM configuration files by March 17, 2027.</p>
+<hr />
+<h2 id="2025-09-23">2025-09-23</h2>
 <h3 id="announcement">Announcement</h3>
+<p><strong>1.27.1-asm.2 is now available for in-cluster Cloud Service Mesh.</strong></p>
+<p>You can now download 1.27.1-asm.2 for in-cluster Cloud Service Mesh. It includes the features of <a href="https://istio.io/latest/news/releases/1.27.x/announcing-1.27/">Istio 1.27.1</a> subject to the list of <a href="https://cloud.google.com/service-mesh/docs/supported-features-in-cluster">supported features</a>.</p>
+<p>The following environment variables and annotations are not supported:</p>
+<ul>
+<li><code>ENVOY_STATUS_PORT_ENABLE_PROXY_PROTOCOL</code></li>
+<li><code>PILOT_DNS_CARES_UDP_MAX_QUERIES</code></li>
+<li><code>PILOT_IP_AUTOALLOCATE_IPV4_PREFIX</code> and <code>PILOT_IP_AUTOALLOCATE_IPV6_PREFIX</code></li>
+<li><code>sidecar.istio.io/bootstrapOverride</code></li>
+</ul>
+<p>For details on upgrading Cloud Service Mesh, see <a href="https://cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service Mesh version 1.27.1-asm.2 uses Envoy v 1.35.3-dev.</p>
+<hr />
+<h2 id="2025-09-17">2025-09-17</h2>
+<h3 id="announcement_1">Announcement</h3>
 <p>The following rollouts have completed for managed Cloud Service Mesh:</p>
 <ul>
 <li>1.21.5-asm.55 has rolled out to the rapid release channel.</li>
@@ -1943,13 +2016,13 @@
 <p>While the managed data plane automatically updates Envoy Proxies by restarting workloads, you must manually restart any StatefulSets and Jobs.</p>
 <hr />
 <h2 id="2025-09-10">2025-09-10</h2>
-<h3 id="announcement_1">Announcement</h3>
-<p>1.26.4-asm.1 in-cluster Cloud Service Mesh already includes the fixes for these CVEs.</p>
 <h3 id="announcement_2">Announcement</h3>
+<p>1.26.4-asm.1 in-cluster Cloud Service Mesh already includes the fixes for these CVEs.</p>
+<h3 id="announcement_3">Announcement</h3>
 <p><strong>1.25.4-asm.0 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>You can now download 1.25.4-asm.0 for in-cluster Cloud Service Mesh. It includes the features of <a href="https://istio.io/latest/news/releases/1.25.x/announcing-1.25.4/">Istio 1.25.4</a> subject to the list of <a href="https://cloud.google.com/service-mesh/v1.25/docs/supported-features-in-cluster">supported features</a>. Cloud Service Mesh version 1.25.4-asm.0 uses envoy v1.33.8-dev.</p>
 <p>For details on upgrading Cloud Service Mesh, see <a href="https://cloud.google.com/service-mesh/v1.25/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>.</p>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p><strong>1.24.6-asm.12 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>You can now download 1.24.6-asm.12 for in-cluster Cloud Service Mesh. It includes the features of <a href="https://istio.io/latest/news/releases/1.24.x/announcing-1.24.6/">Istio 1.24.6</a> subject to the list of <a href="https://cloud.google.com/service-mesh/v1.24/docs/supported-features-in-cluster">supported features</a>. Cloud Service Mesh version 1.24.6-asm.12 uses envoy v1.33.8-dev.</p>
 <p>For details on upgrading Cloud Service Mesh, see <a href="https://cloud.google.com/service-mesh/v1.24/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>.</p>
@@ -2335,7 +2408,7 @@
 <p>For details on upgrading Cloud Service Mesh, refer to <a href="https://cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>.</p>
 <hr />
 <h2 id="2025-08-12">2025-08-12</h2>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p>The following images are now rolling out for managed Cloud Service Mesh:</p>
 <ul>
 <li>1.21.5-asm.55 is rolling out to the rapid release channel.</li>
@@ -2352,7 +2425,7 @@
 <p>Managed Cloud Service Mesh will start using proxy version <code>csm_mesh_proxy.20250623b_RC00</code> for Gateway API on GKE clusters. This proxy version maps closest to Envoy version 1.35. This change is rolling out to all release channels.</p>
 <hr />
 <h2 id="2025-07-16">2025-07-16</h2>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_6">Announcement</h3>
 <p><strong>1.26.0-asm.11 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>You can now download 1.26.0-asm.11 for in-cluster Cloud Service Mesh. It includes the features of <a href="https://istio.io/latest/news/releases/1.26.x/announcing-1.26/">Istio 1.26.0</a> subject to the list of <a href="https://cloud.google.com/service-mesh/docs/supported-features-in-cluster">supported features</a>.</p>
 <p>The following environment variables and annotations are not supported:</p>
@@ -2367,23 +2440,23 @@
 </ul>
 <p>The <code>ENABLE_AUTO_SNI</code> flag is still supported to stay aligned with the legacy behavior.</p>
 <p>For details on upgrading Cloud Service Mesh, see <a href="https://cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service Mesh version 1.26.0-asm.11 uses Envoy v1.34.2-dev.</p>
-<h3 id="announcement_6">Announcement</h3>
-<p>In-cluster Cloud Service Mesh 1.23 is no longer supported. For more information and to view the earliest end-of-life dates for other versions, see <a href="https://cloud.google.com/service-mesh/docs/supported-features-in-cluster#supported_versions">Supported versions</a>.</p>
 <h3 id="announcement_7">Announcement</h3>
+<p>In-cluster Cloud Service Mesh 1.23 is no longer supported. For more information and to view the earliest end-of-life dates for other versions, see <a href="https://cloud.google.com/service-mesh/docs/supported-features-in-cluster#supported_versions">Supported versions</a>.</p>
+<h3 id="announcement_8">Announcement</h3>
 <p><strong>1.25.3-asm.11 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>You can now download 1.25.3-asm.11 for in-cluster Cloud Service Mesh. It includes the features of <a href="https://istio.io/latest/news/releases/1.25.x/announcing-1.25.3/">Istio 1.25.3</a> subject to the list of <a href="https://cloud.google.com/service-mesh/docs/supported-features-in-cluster">supported features</a>. Cloud Service Mesh version 1.25.3-asm.11 uses envoy v1.33.4-dev.</p>
 <p>For details on upgrading Cloud Service Mesh, see <a href="https://cloud.google.com/service-mesh/v1.25/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>.</p>
-<h3 id="announcement_8">Announcement</h3>
+<h3 id="announcement_9">Announcement</h3>
 <p><strong>1.24.6-asm.9 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>You can now download 1.24.6-asm.9 for in-cluster Cloud Service Mesh. It includes the features of <a href="https://istio.io/latest/news/releases/1.24.x/announcing-1.24.6/">Istio 1.24.6</a> subject to the list of <a href="https://cloud.google.com/service-mesh/v1.24/docs/supported-features-in-cluster">supported features</a>. Cloud Service Mesh version 1.24.6-asm.9 uses envoy v1.32.7-dev.</p>
 <p>For details on upgrading Cloud Service Mesh, see <a href="https://cloud.google.com/service-mesh/v1.24/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>.</p>
 <hr />
 <h2 id="2025-07-09">2025-07-09</h2>
-<h3 id="announcement_9">Announcement</h3>
+<h3 id="announcement_10">Announcement</h3>
 <p><strong>1.25.3-asm.8 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>You can now download 1.25.3-asm.8 for in-cluster Cloud Service Mesh. It includes the features of <a href="https://istio.io/latest/news/releases/1.25.x/announcing-1.25.3/">Istio 1.25.3</a> subject to the list of <a href="https://cloud.google.com/service-mesh/docs/supported-features-in-cluster">supported features</a>. Cloud Service Mesh version 1.25.3-asm.8 uses envoy v1.33.4-dev.</p>
 <p>For details on upgrading Cloud Service Mesh, see <a href="https://cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>.</p>
-<h3 id="announcement_10">Announcement</h3>
+<h3 id="announcement_11">Announcement</h3>
 <p><strong>1.24.6-asm.4 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>You can now download 1.24.6-asm.4 for in-cluster Cloud Service Mesh. It includes the features of <a href="https://istio.io/latest/news/releases/1.24.x/announcing-1.24.6/">Istio 1.24.6</a> subject to the list of <a href="https://cloud.google.com/service-mesh/v1.24/docs/supported-features-in-cluster">supported features</a>. Cloud Service Mesh version 1.24.6-asm.4 uses envoy v1.32.7-dev.</p>
 <p>For details on upgrading Cloud Service Mesh, see <a href="https://cloud.google.com/service-mesh/v1.24/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>.</p>
@@ -2416,6 +2489,12 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-service-mesh">Cloud Service Mesh</a></li>
+          <li class="nav-item">
+            <a href="#2025-09-25" class="nav-link">2025-09-25</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2025-09-23" class="nav-link">2025-09-23</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-09-17" class="nav-link">2025-09-17</a>
           </li>

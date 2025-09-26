@@ -1,5 +1,14 @@
 # VPC Service Controls
 
+## 2025-09-18
+
+### Feature
+
+[General availability](https://cloud.google.com/products#product-launch-stages) support for the following integration:
+
+* [Personalized Service Health](https://cloud.google.com/vpc-service-controls/docs/supported-products#table_service_health)
+
+---
 ## 2025-09-03
 
 ### Feature

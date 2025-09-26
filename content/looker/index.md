@@ -1,5 +1,12 @@
 # Looker
 
+## 2025-09-23
+
+### Feature
+
+You can now [connect to your Looker instance with the Gemini CLI](https://cloud.google.com/looker/docs/connect-ide-to-looker-using-mcp-toolbox) using a dedicated [Gemini extension](https://github.com/gemini-cli-extensions/looker). The Gemini extension can run queries, create Looks and dashboards, and retrieve elements of your LookML models.
+
+---
 ## 2025-09-10
 
 ### Announcement

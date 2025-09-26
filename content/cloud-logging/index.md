@@ -1,5 +1,12 @@
 # Cloud Logging
 
+## 2025-09-22
+
+### Announcement
+
+Cloud Logging has removed the quota for write requests per minute, which has been replaced by volume-based regional quotas. We've also removed the references to August dates for the removal of the old quota from the public documentation. For more information, see [Logging API quotas and limits](https://cloud.google.com/logging/quotas#api-limits).
+
+---
 ## 2025-09-15
 
 ### Libraries

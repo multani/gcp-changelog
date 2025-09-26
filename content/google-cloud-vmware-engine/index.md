@@ -1,5 +1,25 @@
 # Google Cloud VMware Engine
 
+## 2025-09-24
+
+### Announcement
+
+All 3-year [Committed Use Discounts (CUDs)](https://cloud.google.com/docs/cuds) for VMware Engine `ve1` SKUs are now End-of-Sale across all regions where the service is available.
+
+The following specific 3-year commitments are impacted by this change:
+
+* 3-year commitment (monthly payments), Fully Licensed Pricing - "postpaid"
+* 3-year commitment (upfront payments), Fully Licensed Pricing - "prepay"
+* 3-year commitment (monthly payments), Fully Licensed convertible commitment - "postpaid"
+* 3-year commitment (upfront payments), Fully Licensed convertible commitment - "prepay"
+* 3-year commitment (monthly payments), Portable License Pricing - "postpaid"
+* 3-year commitment (upfront payments), Portable License Pricing - "prepay"
+* 3-year commitment (monthly payments), Protected License Pricing - "postpaid"
+* 3-year commitment (upfront payments), Protected License Pricing - "prepay"
+
+Refer to [VMware Engine node types](https://cloud.google.com/vmware-engine/docs/concepts-node-types) for the regional availability of `ve1` SKUs.
+
+---
 ## 2025-09-15
 
 ### Announcement

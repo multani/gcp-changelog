@@ -1,5 +1,16 @@
 # Google Agentspace
 
+## 2025-09-23
+
+### Breaking
+
+**Google Agentspace: Change in ACLs for incidents in ServiceNow**
+
+The access-control list (ACL) behavior for ServiceNow incidents has significantly changed, from too permissive to least-privilege behavior. This change drastically reduces the possibility of data leaks, but might be too restrictive for your needs.
+
+For more information about ServiceNow, see [Connect ServiceNow](https://cloud.google.com/agentspace/docs/connect-servicenow) and [Add ServiceNow actions](https://cloud.google.com/agentspace/docs/assistant-actions-servicenow).
+
+---
 ## 2025-09-15
 
 ### Feature

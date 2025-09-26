@@ -1,5 +1,29 @@
 # BigQuery
 
+## 2025-09-24
+
+### Feature
+
+For command-line users, BigQuery is now integrated with the Gemini CLI to provide an agentic CLI experience. Using the dedicated [Gemini CLI extensions for BigQuery](https://cloud.google.com/bigquery/docs/develop-with-gemini-cli), you can search, explore, analyze, and gain insights from your data by asking natural language questions, generating forecasts, and running contribution analysis directly from the command line. This feature is available in beta.
+
+---
+## 2025-09-22
+
+### Feature
+
+You can now run federated queries against [PostgreSQL dialect databases in Spanner](https://cloud.google.com/spanner/docs/reference/postgresql/overview) using [BigQuery external datasets](https://cloud.google.com/bigquery/docs/spanner-external-datasets) with GoogleSQL; this includes [cross-region federated queries](https://cloud.google.com/bigquery/docs/spanner-federated-queries#cross_region_queries). This feature is [generally available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+### Libraries
+
+### Python
+
+#### [3.38.0](https://github.com/googleapis/python-bigquery/compare/v3.37.0...v3.38.0) (2025-09-15)
+
+##### Features
+
+* Add additional query stats ([#2270](https://github.com/googleapis/python-bigquery/issues/2270)) ([7b1b718](https://github.com/googleapis/python-bigquery/commit/7b1b718123afd80c0f68212946e4179bcd6db67f))
+
+---
 ## 2025-09-16
 
 ### Feature
@@ -17,13 +41,18 @@ You can use the [`JSON_KEYS` function](https://cloud.google.com/bigquery/docs/re
 ---
 ## 2025-09-15
 
+### Feature
+
+In the BigQuery Studio, in the Explorer pane, you can now [open saved queries in Connected Sheets](https://cloud.google.com/bigquery/docs/manage-saved-queries#open-saved-queries-in-sheets). This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+### Feature
+
+You can now enable the [BigQuery advanced runtime](https://cloud.google.com/bigquery/docs/advanced-runtime) to improve query execution time and slot usage. This feature is [generally available](https://cloud.google.com/products/#product-launch-stages) (GA).
+Between September 15, 2025 and early 2026, the BigQuery advanced runtime will become the default runtime for all projects.
+
 ### Libraries
 
-A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
-
 ### Java
-
-### Changes for [google-cloud-bigquery](https://github.com/googleapis/java-bigquery)
 
 #### [2.55.0](https://github.com/googleapis/java-bigquery/compare/v2.54.2...v2.55.0) (2025-09-12)
 
@@ -36,9 +65,9 @@ A weekly digest of client library updates from across the [Cloud SDK](https://cl
 * Update dependency com.google.cloud:google-cloud-bigquerystorage-bom to v3.17.0 ([#3954](https://github.com/googleapis/java-bigquery/issues/3954)) ([e73deed](https://github.com/googleapis/java-bigquery/commit/e73deed9c68a45023d02b40144c304329d6b5829))
 * Update dependency com.google.cloud:sdk-platform-java-config to v3.52.1 ([#3952](https://github.com/googleapis/java-bigquery/issues/3952)) ([79b7557](https://github.com/googleapis/java-bigquery/commit/79b7557501d318fd92b90a681036fe6a1aa1bac4))
 
-### Python
+### Libraries
 
-### Changes for [google-cloud-bigquery](https://github.com/googleapis/python-bigquery)
+### Python
 
 #### [3.37.0](https://github.com/googleapis/python-bigquery/compare/v3.36.0...v3.37.0) (2025-09-08)
 
@@ -54,15 +83,6 @@ A weekly digest of client library updates from across the [Cloud SDK](https://cl
 
 * Clarify that the presence of `XyzJob.errors` doesn't necessarily mean that the job has not completed or was unsuccessful ([#2278](https://github.com/googleapis/python-bigquery/issues/2278)) ([6e88d7d](https://github.com/googleapis/python-bigquery/commit/6e88d7dbe42ebfc35986da665d656b49ac481db4))
 * Clarify the api\_method arg for client.query() ([#2277](https://github.com/googleapis/python-bigquery/issues/2277)) ([8a13c12](https://github.com/googleapis/python-bigquery/commit/8a13c12905ffcb3dbb6086a61df37556f0c2cd31))
-
-### Feature
-
-In the BigQuery Studio, in the Explorer pane, you can now [open saved queries in Connected Sheets](https://cloud.google.com/bigquery/docs/manage-saved-queries#open-saved-queries-in-sheets). This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
-
-### Feature
-
-You can now enable the [BigQuery advanced runtime](https://cloud.google.com/bigquery/docs/advanced-runtime) to improve query execution time and slot usage. This feature is [generally available](https://cloud.google.com/products/#product-launch-stages) (GA).
-Between September 15, 2025 and early 2026, the BigQuery advanced runtime will become the default runtime for all projects.
 
 ---
 ## 2025-09-11
@@ -163,11 +183,7 @@ You can now enable the automatic selection of a processing location in your pipe
 
 ### Libraries
 
-A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
-
 ### Go
-
-### Changes for [bigquery/storage/apiv1beta1](https://github.com/googleapis/google-cloud-go/tree/main/bigquery/storage/apiv1beta1)
 
 #### [1.70.0](https://github.com/googleapis/google-cloud-go/compare/bigquery/v1.69.0...bigquery/v1.70.0) (2025-08-28)
 
@@ -179,9 +195,9 @@ A weekly digest of client library updates from across the [Cloud SDK](https://cl
 * **bigquery:** Add load/extract job completion ratio ([#12471](https://github.com/googleapis/google-cloud-go/issues/12471)) ([3dab483](https://github.com/googleapis/google-cloud-go/commit/3dab483ad579c65ce520d6d9a2f8ad738ad68c9c))
 * **bigquery:** Load job and external table opts for custom time format, null markers and source column match ([#12470](https://github.com/googleapis/google-cloud-go/issues/12470)) ([67b0320](https://github.com/googleapis/google-cloud-go/commit/67b0320a54be1ba7bc64eeee47a9afff14faac5f))
 
-### Java
+### Libraries
 
-### Changes for [google-cloud-bigquery](https://github.com/googleapis/java-bigquery)
+### Java
 
 #### [2.54.2](https://github.com/googleapis/java-bigquery/compare/v2.54.1...v2.54.2) (2025-08-26)
 
@@ -216,11 +232,7 @@ You can now use data insights to have Gemini [generate table and column descript
 
 ### Libraries
 
-A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
-
 ### Python
-
-### Changes for [google-cloud-bigquery](https://github.com/googleapis/python-bigquery)
 
 #### [3.36.0](https://github.com/googleapis/python-bigquery/compare/v3.35.1...v3.36.0) (2025-08-20)
 

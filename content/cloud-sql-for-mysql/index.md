@@ -1,5 +1,32 @@
 # Cloud SQL for MySQL
 
+## 2025-09-25
+
+### Feature
+
+Cloud SQL for MySQL now supports minor version 8.0.43. To upgrade your existing instance to the new version, see [Upgrade the database minor version](https://cloud.google.com/sql/docs/mysql/upgrade-minor-db-version).
+
+---
+## 2025-09-24
+
+### Feature
+
+Cloud SQL for MySQL 8.4.5 is upgraded to MySQL 8.4.6. For more information, see the [MySQL 8.4.6 Release Notes](https://dev.mysql.com/doc/relnotes/mysql/8.4/en/news-8-4-6.html).
+
+---
+## 2025-09-23
+
+### Feature
+
+You can now provision, manage and query your databases using the dedicated Gemini CLI extension for Cloud SQL for MySQL. The extension provides full lifecycle control of your database—from provisioning instances, to exploring schemas and troubleshooting issues—from your command-line interface.
+
+For more information, see [Use Cloud SQL for MySQL with MCP, Gemini CLI, and other agents](https://cloud.google.com/sql/docs/mysql/pre-built-tools-with-mcp-toolbox).
+
+### Feature
+
+You can now retain point-in-time recovery (PITR) logs for an instance after its deletion for a specified retention period. These logs can be used to restore the deleted instance to a specific point in time. For more information, see [Restore a deleted instance using PITR](https://cloud.google.com/sql/docs/mysql/backup-recovery/restore#deleted-instance).
+
+---
 ## 2025-09-08
 
 ### Feature

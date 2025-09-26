@@ -1,5 +1,40 @@
 # Config Connector
 
+## 2025-09-22
+
+### Announcement
+
+Config Connector version 1.135.0 is now available.
+
+### Changed
+
+New Beta Resources (Direct Reconciler):
+
+* `AssetSavedQuery`
+* `PubSubSnapshot`
+
+### Changed
+
+Modified Beta Reconciliation:
+We migrated the following resources from the Terraform-based or DCL-based controller to the new Direct Controller.
+
+* `VMWareEngineExternalAddress`
+
+### Feature
+
+New Fields:
+
+* `AlloyDBCluster`
+  + Added `spec.databaseVersion` field
+
+### Fixed
+
+Bug Fixes:
+
+* [PR#5009](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/5009)
+  Fix the nil pointer dereference error in AlloyDB direct controller
+
+---
 ## 2025-09-03
 
 ### Announcement

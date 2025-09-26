@@ -1,5 +1,23 @@
 # Apigee hybrid
 
+## 2025-09-24
+
+### Announcement
+
+
+
+### Apigee Operator for Kubernetes for Apigee Hybrid (Preview)
+
+On September 24, 2025 we released the Apigee Operator for Kubernetes for Apigee Hybrid 1.15.0 and newer.
+
+The Apigee Operator for Kubernetes allows you to perform API management tasks, such as defining API products and operations, using Kubernetes tools. This preview release allows you to integrate this capability with your Apigee hybrid (v1.15.0 or newer) installation.
+
+For more information, see:
+
+* [Apigee Operator for Kubernetes overview](https://cloud.google.com/apigee/docs/api-platform/apigee-kubernetes/apigee-apim-operator-overview)
+* [Install the Apigee Operator for Kubernetes for Apigee hybrid](https://cloud.google.com/apigee/docs/api-platform/apigee-kubernetes/apigee-apim-operator-install-hybrid)
+
+---
 ## 2025-07-09
 
 ### hybrid v1.13.4

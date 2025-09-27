@@ -1,5 +1,12 @@
 # Dataplex
 
+## 2025-09-23
+
+### Feature
+
+You can now connect your Dataplex Universal Catalog instance to your favorite developer tools, such as the Gemini CLI and other IDEs. This integration enables AI-driven data discovery and asset management directly within your development environment. For more information, see [Use Dataplex Universal Catalog with MCP, Gemini, and other agents](https://cloud.google.com/dataplex/docs/pre-built-tools-with-mcp-toolbox).
+
+---
 ## 2025-09-03
 
 ### Feature

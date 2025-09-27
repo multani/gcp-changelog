@@ -2,10 +2,6 @@
 
 ## 2025-09-26
 
-### Feature
-
-
-
 ### Next Edit Predictions in VS Code (Preview)
 
 [Next Edit Predictions](https://cloud.google.com/gemini/docs/codeassist/write-code-gemini#use_next_edit_predictions),
@@ -24,10 +20,6 @@ in your IDE to get started.
 ---
 ## 2025-09-23
 
-### Feature
-
-
-
 ### Inline diff is generally available (GA) for VS Code
 
 [Inline diff](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#view_code_diffs)
@@ -44,20 +36,12 @@ instead of the inline diff.
 
 ![Inline diff in VS Code Gemini Code Assist.](https://cloud.google.com/gemini/images/release-notes-images/vscode-inline-diff.gif)
 
-### Feature
-
-
-
 ### Revert to a checkpoint in IntelliJ (GA)
 
 [Reverting to a checkpoint for chat code suggestions](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#revert_to_a_checkpoint_in_chat)
 with IntelliJ Gemini Code Assist is now generally available. Reverting to a
 checkpoint lets you revert affected source files to a point before any code
 suggestions were applied.
-
-### Feature
-
-
 
 ### Access saved prompts in the Prompt Library
 
@@ -69,10 +53,6 @@ To view the Prompt Library settings, go to **Settings** > **Tools** >
 **Gemini** > **Prompt Library**.
 
 ![Saved prompt in Prompt Library in IntelliJ Gemini Code Assist.](https://cloud.google.com/gemini/images/release-notes-images/intellij-saved-prompt.png)
-
-### Feature
-
-
 
 ### Copy sign-in link
 

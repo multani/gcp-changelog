@@ -1,5 +1,14 @@
 # Google Cloud VMware Engine
 
+## 2025-09-26
+
+### Announcement
+
+VMware Engine `ve2` nodes are now available in the following additional region:
+
+* Doha, Qatar (`me-central1`, `v-zone-a`)
+
+---
 ## 2025-09-24
 
 ### Announcement

@@ -11,11 +11,7 @@ Cloud Logging has removed the quota for write requests per minute, which has bee
 
 ### Libraries
 
-A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
-
 ### Java
-
-### Changes for [google-cloud-logging](https://github.com/googleapis/java-logging)
 
 #### [3.23.4](https://github.com/googleapis/java-logging/compare/v3.23.3...v3.23.4) (2025-09-11)
 
@@ -33,11 +29,7 @@ A weekly digest of client library updates from across the [Cloud SDK](https://cl
 
 ### Libraries
 
-A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
-
 ### Node.js
-
-### Changes for [@google-cloud/logging](https://github.com/googleapis/nodejs-logging)
 
 #### [11.2.1](https://github.com/googleapis/nodejs-logging/compare/v11.2.0...v11.2.1) (2025-09-03)
 
@@ -50,11 +42,7 @@ A weekly digest of client library updates from across the [Cloud SDK](https://cl
 
 ### Libraries
 
-A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
-
 ### Java
-
-### Changes for [google-cloud-logging](https://github.com/googleapis/java-logging)
 
 #### [3.23.3](https://github.com/googleapis/java-logging/compare/v3.23.2...v3.23.3) (2025-08-20)
 

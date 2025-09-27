@@ -1,5 +1,14 @@
 # Google Agentspace
 
+## 2025-09-26
+
+### Feature
+
+**Google Agentspace: Manage image and video generation on the web app**
+
+By default, image and video generation are enabled in the Agentspace web app. To turn off these features, admins must navigate to the **Configurations > Feature Management** tab, and turn off the **Enable video generation** and **Enable image generation** options.
+
+---
 ## 2025-09-24
 
 ### Feature

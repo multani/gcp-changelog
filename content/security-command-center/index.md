@@ -1,100 +1,162 @@
 # Security Command Center
 
+## 2025-09-23
+
+### Feature
+
+[Bulk export findings to BigQuery](https://cloud.google.com/security-command-center/docs/bulk-exports-to-big-query)
+is available in [General Availability](https://cloud.google.com/products#product-launch-stages).
+Bulk exports are supported for organizations, projects, and folders.
+
+### Changed
+
+The upgraded model for the prompt injection and jailbreak detection filter is
+available in EU multi-region. This model has improved detection rates across several
+attack vectors, including the following:
+
+* Do Anything Now prompts
+* System instruction manipulation
+* Unauthorized action execution
+* Sensitive information retrieval
+
+---
+## 2025-09-22
+
+### Feature
+
+[Graph search](https://cloud.google.com/security-command-center/docs/graph-search) lets you explore the security graph
+using custom queries. This product is available in [Preview](https://cloud.google.com/products#product-launch-stages)
+in the Security Command Center Enterprise tier.
+
+---
 ## 2025-09-16
 
 ### Feature
 
-Model Armor is integrated with Google Agentspace to provide greater insights and enhanced security of your agent interactions by default. For more information, see [Integration with Google Agentspace](https://cloud.google.com/security-command-center/docs/model-armor-agentspace-integration).
+Model Armor is integrated with Google Agentspace to provide greater
+insights and enhanced security of your agent interactions by default. For more
+information, see
+[Integration with Google Agentspace](https://cloud.google.com/security-command-center/docs/model-armor-agentspace-integration).
 
 ---
 ## 2025-09-15
 
 ### Feature
 
-[Model Armor integration with Google Kubernetes Engine](https://cloud.google.com/security-command-center/docs/model-armor-gke-integration) is available in [General Availability](https://cloud.google.com/products#product-launch-stages).
+[Model Armor integration with Google Kubernetes Engine](https://cloud.google.com/security-command-center/docs/model-armor-gke-integration)
+is available in
+[General Availability](https://cloud.google.com/products#product-launch-stages).
 
 ### Changed
 
 The **Findings** page in Security Command Center has been improved.
 
-* With Security Command Center Premium and Enterprise, the page includes the following predefined filter views that return a specific category of findings.
+* With Security Command Center Premium and Enterprise, the page includes the following
+  predefined filter views that return a specific category of findings.
 
-  + Premium service tier: **All Findings**, **Vulnerabilities**, **Identity**, and **Threats**.
-  + Enterprise service tier: **All Findings**, **Vulnerabilities**, **Identity**, **Data**, and **Code**.
-* With Security Command Center Enterprise, the page includes a
-  selector to filter by cloud provider: Google Cloud, Amazon Web Service (AWS), and Microsoft Azure.
+  + Premium service tier: **All Findings**, **Vulnerabilities**, **Identity**,
+    and **Threats**.
+  + Enterprise service tier: **All Findings**, **Vulnerabilities**,
+    **Identity**, **Data**, and **Code**.
+* With Security Command Center Enterprise, the page includes a selector to filter by cloud
+  provider: Google Cloud, Amazon Web Service (AWS), and Microsoft Azure.
 
-For more information, see [Review and manage
-findings](https://cloud.google.com/security-command-center/docs/review-manage-findings#use_predefined_filter_views).
+For more information, see
+[Review and manage findings](https://cloud.google.com/security-command-center/docs/review-manage-findings#use_predefined_filter_views).
 
 ---
 ## 2025-09-12
 
 ### Changed
 
-Security Command Center has improved the automatic selection of resources when
-running attack path simulations using the default high-value resource set.
+Security Command Center has improved the automatic selection of resources when running
+attack path simulations using the default high-value resource set.
 
-[Risk
-Engine](https://cloud.google.com/security-command-center/docs/attack-exposure-supported-features)
-uses heuristics to identify resources used for non-production purposes. To help
+[Risk Engine](https://cloud.google.com/security-command-center/docs/attack-exposure-supported-features) uses
+heuristics to identify resources used for non-production purposes. To help
 ensure that you have information about the most important assets, Risk Engine
-calculates the attack exposure score for all other resources in the default high-value resource set
-before calculating the attack exposure score for these non-production resources.
+calculates the attack exposure score for all other resources in the default
+high-value resource set before calculating the attack exposure score for these
+non-production resources.
 
-To customize the high-value
-resource set, see [Define and manage your high-value resource
-set](https://cloud.google.com/security-command-center/docs/attack-exposure-define-high-value-resource-set).
-For information about Risk Engine, see [Attack exposure scores and attack
-paths](https://cloud.google.com/security-command-center/docs/attack-exposure-learn).
+To customize the high-value resource set, see
+[Define and manage your high-value resource set](https://cloud.google.com/security-command-center/docs/attack-exposure-define-high-value-resource-set).
+For information about Risk Engine, see
+[Attack exposure scores and attack paths](https://cloud.google.com/security-command-center/docs/attack-exposure-learn).
 
 ### Changed
 
-Security Command Center changed how Google Cloud subnets are handled when running [attack path simulations](https://cloud.google.com/security-command-center/docs/attack-exposure-learn). The result is that attack paths are more accurate in relation to networking. Certain customers with specific Google Cloud subnet configurations, for example, when a VPC connector accesses a subnetwork, may see significant changes to toxic combinations, chokepoints, and attack exposure scores.
+Security Command Center changed how Google Cloud subnets are handled when running
+[attack path simulations](https://cloud.google.com/security-command-center/docs/attack-exposure-learn). The result
+is that attack paths are more accurate in relation to networking. Certain
+customers with specific Google Cloud subnet configurations, for example, when a
+VPC connector accesses a subnetwork, may see significant changes to toxic
+combinations, chokepoints, and attack exposure scores.
 
 ---
 ## 2025-09-11
 
 ### Feature
 
-Assured Open Source Software (Assured OSS) now supports Go packages. For more information, see [Download Go packages using direct repository access](https://cloud.google.com/security-command-center/docs/aoss-download-go-packages).
+Assured Open Source Software (Assured OSS) now supports Go packages. For more information,
+see
+[Download Go packages using direct repository access](https://cloud.google.com/security-command-center/docs/aoss-download-go-packages).
 
 ---
 ## 2025-09-10
 
 ### Feature
 
-[Cloud Run Threat Detection](https://cloud.google.com/security-command-center/docs/cloud-run-threat-detection-overview) is available in [General Availability](https://cloud.google.com/products#product-launch-stages).
+[Cloud Run Threat Detection](https://cloud.google.com/security-command-center/docs/cloud-run-threat-detection-overview)
+is available in
+[General Availability](https://cloud.google.com/products#product-launch-stages).
 
 ---
 ## 2025-09-08
 
 ### Feature
 
-The Model Armor monitoring dashboard provides a centralized view to track interactions and violations within your projects. This feature is available in [Preview](https://cloud.google.com/products#product-launch-stages). For more information, see [View the monitoring dashboard](https://cloud.google.com/security-command-center/docs/model-armor-monitoring-dashboard).
+The Model Armor monitoring dashboard provides a centralized view to
+track interactions and violations within your projects. This feature is
+available in [Preview](https://cloud.google.com/products#product-launch-stages).
+For more information, see
+[View the monitoring dashboard](https://cloud.google.com/security-command-center/docs/model-armor-monitoring-dashboard).
 
 ### Changed
 
 Multiple pages in Security Command Center Premium have been improved:
 
-* The [Risk overview](https://cloud.google.com/security-command-center/docs/assess-risk#threats) page is enhanced to provide a view of threats, vulnerabilities, and misconfigurations.
-* The [Findings page](https://cloud.google.com/security-command-center/docs/review-manage-findings#edit-finding-query) includes predefined filter views for vulnerabilities and identity findings.
-* Information previously on the Threats page is available in the [Threats dashboard](https://cloud.google.com/security-command-center/docs/assess-risk#threats) on the Risk overview page.
-* Information previously on the Vulnerabilities page is now available on the [Vulnerabilities dashboard](https://cloud.google.com/security-command-center/docs/assess-risk#vulnerabilities) on the Risk overview page.
+* The [Risk overview](https://cloud.google.com/security-command-center/docs/assess-risk#threats) page is enhanced to
+  provide a view of threats, vulnerabilities, and misconfigurations.
+* The
+  [Findings page](https://cloud.google.com/security-command-center/docs/review-manage-findings#edit-finding-query)
+  includes predefined filter views for vulnerabilities and identity findings.
+* Information previously on the Threats page is available in the
+  [Threats dashboard](https://cloud.google.com/security-command-center/docs/assess-risk#threats) on the Risk
+  overview page.
+* Information previously on the Vulnerabilities page is now available on the
+  [Vulnerabilities dashboard](https://cloud.google.com/security-command-center/docs/assess-risk#vulnerabilities) on
+  the Risk overview page.
 
 ---
 ## 2025-09-02
 
 ### Feature
 
-Vulnerability assessment for Google Cloud supports scanning disks configured with customer-managed encryption keys (CMEK) for projects that are outside of VPC Service Control perimeters. For more information about how to scan disks configured with CMEK, see [Run Vulnerability Scans for CMEK disks](https://cloud.google.com/security-command-center/docs/vulnerability-assessment-google-cloud#run-cmek-vulns).
+Vulnerability assessment for Google Cloud supports scanning disks configured
+with customer-managed encryption keys (CMEK) for projects that are outside of
+VPC Service Controls perimeters. For more information about how to scan disks
+configured with CMEK, see
+[Run Vulnerability Scans for CMEK disks](https://cloud.google.com/security-command-center/docs/vulnerability-assessment-google-cloud#run-cmek-vulns).
 
 ---
 ## 2025-08-27
 
 ### Changed
 
-Compliance Manager (available in [Preview](https://cloud.google.com/products#product-launch-stages)) now lets you [remove resources from deployed frameworks](https://cloud.google.com/security-command-center/docs/compliance-manager-apply-framework#remove-resource-assignments).
+Compliance Manager (available in
+[Preview](https://cloud.google.com/products#product-launch-stages)) now lets you
+[remove resources from deployed frameworks](https://cloud.google.com/security-command-center/docs/compliance-manager-apply-framework#remove-resource-assignments).
 
 ---
 ## 2025-08-20

@@ -1,5 +1,86 @@
 # Gemini Code Assist
 
+## 2025-09-26
+
+### Feature
+
+
+
+### Next Edit Predictions in VS Code (Preview)
+
+[Next Edit Predictions](https://cloud.google.com/gemini/docs/codeassist/write-code-gemini#use_next_edit_predictions),
+which predicts the next code suggestions throughout the code file that you're
+currently in, are now available in VS Code Gemini Code Assist, in
+[Preview](https://cloud.google.com/terms/service-terms).
+
+You can cycle through multiple suggestions, dismiss suggestions, or ignore them
+and continue coding.
+
+[Enable Next Edit Predictions](https://cloud.google.com/gemini/docs/codeassist/write-code-gemini#use_next_edit_predictions)
+in your IDE to get started.
+
+![Next Edit Predictions in VS Code Gemini Code Assist.](https://cloud.google.com/gemini/images/release-notes-images/vscode-next-edit.gif)
+
+---
+## 2025-09-23
+
+### Feature
+
+
+
+### Inline diff is generally available (GA) for VS Code
+
+[Inline diff](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#view_code_diffs)
+is generally available for VS Code Gemini Code Assist. With the inline diff
+view, chat generated code suggestions are visually highlighted directly in your
+editor—green for additions, red for deletions. This feature boosts productivity
+by offering immediate visibility on modifications, streamlining reviews, and
+enabling precise control over integrating new code, all without leaving your
+current view.
+
+If preferred, you can also
+[change the diff view settings to have a side-by-side diff window](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#change_diff_view_settings)
+instead of the inline diff.
+
+![Inline diff in VS Code Gemini Code Assist.](https://cloud.google.com/gemini/images/release-notes-images/vscode-inline-diff.gif)
+
+### Feature
+
+
+
+### Revert to a checkpoint in IntelliJ (GA)
+
+[Reverting to a checkpoint for chat code suggestions](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#revert_to_a_checkpoint_in_chat)
+with IntelliJ Gemini Code Assist is now generally available. Reverting to a
+checkpoint lets you revert affected source files to a point before any code
+suggestions were applied.
+
+### Feature
+
+
+
+### Access saved prompts in the Prompt Library
+
+You can [access saved prompts](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#create_custom_commands)
+in the Prompt Library when you type `@` in Gemini chat and select the prompt you
+want.
+
+To view the Prompt Library settings, go to **Settings** > **Tools** >
+**Gemini** > **Prompt Library**.
+
+![Saved prompt in Prompt Library in IntelliJ Gemini Code Assist.](https://cloud.google.com/gemini/images/release-notes-images/intellij-saved-prompt.png)
+
+### Feature
+
+
+
+### Copy sign-in link
+
+As an alternative to clicking **Sign in** when signing into your Google Account
+to use IntelliJ Gemini Code Assist, you can [click **Copy link**](https://cloud.google.com/gemini/docs/discover/set-up-gemini#sign-in-select-gcp-project)
+and manually paste the link in your browser's URL bar.
+
+---
 ## 2025-09-18
 
 ### See code customization status directly in IDE
@@ -13,6 +94,13 @@ the feature is configured correctly and ready to go. For more information, see
 
 ---
 ## 2025-09-11
+
+### Delete prompt and response pair in VS Code
+
+You can [delete your prompt and Gemini's response to that prompt](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#delete_prompt_and_response_pairs) in your chat with
+Gemini Code Assist. This works as an alternative to deleting your entire chat
+history, allowing you to remove a single prompt and response within a chat,
+while maintaining the rest of your chat history with Gemini Code Assist.
 
 ### Introducing Release Channels in Gemini Code Assist
 
@@ -47,13 +135,6 @@ response based on your edited prompt.
 
 You can [regenerate a prompt response](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#regenerate_a_prompt_response) to your most recent prompt, where
 Gemini Code Assist re-evaluates your prompt and provides a new response.
-
-### Delete prompt and response pair in VS Code
-
-You can [delete your prompt and Gemini's response to that prompt](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#delete_prompt_and_response_pairs) in your chat with
-Gemini Code Assist. This works as an alternative to deleting your entire chat
-history, allowing you to remove a single prompt and response within a chat,
-while maintaining the rest of your chat history with Gemini Code Assist.
 
 ---
 ## 2025-09-10

@@ -1,5 +1,36 @@
 # AlloyDB for PostgreSQL
 
+## 2025-09-24
+
+### Feature
+
+You can [create and manage query plan patches](https://cloud.google.com/alloydb/docs/create-manage-query-plan-patches). Query plan patches let you specify the details of the execution plan of your queries. This feature is [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
+## 2025-09-23
+
+### Feature
+
+You can now provision, manage, and query your databases using the [dedicated Gemini CLI extensions for AlloyDB](https://cloud.google.com/alloydb/docs/connect-ide-using-mcp-toolbox#connect-alloydb-gemini-cli-extension). The extensions provide full lifecycle control of your database - from provisioning instances to exploring schemas and troubleshooting issues. This feature is available in beta.
+
+---
+## 2025-09-22
+
+### Feature
+
+The available memory metric now accurately reflects the memory available to
+AlloyDB by taking into consideration usable memory from the OS page cache. This
+improvement can lead to a lower value of the metric, which you might notice
+when you update your version to PG 17 or later. This feature is generally
+available ([GA](https://cloud.google.com/products#product-launch-stages))
+and is available for AlloyDB for PostgreSQL version 17 and later. For more information,
+see [System insights metrics reference](https://cloud.google.com/alloydb/docs/reference/system-insights-metrics).
+
+### Feature
+
+Database server compatibility with PostgreSQL version 17 is now generally available ([GA](https://cloud.google.com/products#product-launch-stages)). You can [create AlloyDB clusters](https://cloud.google.com/alloydb/docs/cluster-create#procedure) with PostgreSQL 17 compatibility.
+
+---
 ## 2025-09-11
 
 ### Feature

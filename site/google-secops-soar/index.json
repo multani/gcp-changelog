@@ -1,6 +1,88 @@
 {
   "name": "Google SecOps SOAR",
   "entries": {
+    "2025-09-17": [
+      {
+        "kind": "Feature",
+        "content": "**SentinelOneV2**: Version 41.0\n\n* The following new action has been added:\n\n  + **Update Alert**\n* The following new connector has been added:\n\n  + **SentinelOne - Alert Connector**\n* A new predefined widget has been added to the following action:\n\n  + **Update Alert**",
+        "summary": {
+          "title": "New features in SentinelOneV2",
+          "summary": "SentinelOneV2 version 41.0 introduces a new Update Alert action and a SentinelOne - Alert Connector. Additionally, a predefined widget has been added for the Update Alert action."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Google Threat Intelligence**: Version 4.0\n\n* The following new action has been added:\n\n  + **Set DTM Alert Analysis**",
+        "summary": {
+          "title": "New DTM Alert Analysis Feature",
+          "summary": "A new feature, Set DTM Alert Analysis, has been added to Google Threat Intelligence Version 4.0. This enhancement allows for more detailed analysis of DTM alerts."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Palo Alto Cortex XDR**: Version 18.0\n\n* The following new actions have been added:\n\n  + **Add Comment To Incident**\n  + **Execute XQL Search**\n  + **Get Incident Details**",
+        "summary": {
+          "title": "Palo Alto Cortex XDR 18.0 Update",
+          "summary": "The new version of Palo Alto Cortex XDR, 18.0, introduces powerful new incident management features. You can now add comments directly to incidents, execute XQL searches for deeper analysis, and retrieve detailed incident information."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Google Threat Intelligence**: Version 4.0\n\n* Updated the processing of the threat actor entity in the following action:\n\n  + **Enrich Entities**\n* Updated the predefined widget in the following actions:\n\n  (REGRESSIVE) The widget now works with GTI information. To see the changes, the widget must be re-added to the existing views in playbooks.\n\n  + **Enrich Entities**\n  + **Enrich IOCs**\n* Added JSON samples to the following action:\n\n  + **Enrich Entities**",
+        "summary": {
+          "title": "Google Threat Intelligence Update",
+          "summary": "Version 4.0 of Google Threat Intelligence has been released, featuring updates to the Enrich Entities and Enrich IOCs actions. This includes enhanced threat actor entity processing, updated predefined widgets (which may require re-adding to existing views), and the addition of JSON samples for the Enrich Entities action."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Trend Vision One**: Version 6.0\n\n* Added support for Agent UUID in the following actions:\n\n  + **Enrich Entities**\n  + **Execute Custom Script**\n  + **Isolate Endpoint**\n  + **Unisolate Endpoint**",
+        "summary": {
+          "title": "Trend Vision One 6.0 Update",
+          "summary": "Version 6.0 of Trend Vision One now supports Agent UUID for actions like Enrich Entities, Execute Custom Script, Isolate Endpoint, and Unisolate Endpoint."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Splunk**: Version 58.0\n\n* Updated the alert processing logic in the following connector:\n\n  + **Splunk ES - Notable Events Connector**",
+        "summary": {
+          "title": "Splunk ES Notable Events Connector Update",
+          "summary": "Splunk ES Notable Events Connector: Alert processing logic updated in version 58.0."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Jira**: Version 48.0\n\n* **Integration**: Updated the SDK version.",
+        "summary": {
+          "title": "SDK Version Update",
+          "summary": "The SDK version has been updated for Version 48.0."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Added the ability to modify the `API Root` and `Login API Root` in the following integrations:\n\n* **Azure Active Directory**: Version 18.0\n* **Azure AD Identity Protection**: Version 7.0\n* **Microsoft Teams**: Version 28.0",
+        "summary": {
+          "title": "Azure AD integrations updated",
+          "summary": "The Azure Active Directory, Azure AD Identity Protection, and Microsoft Teams integrations have been updated. You can now modify the API Root and Login API Root for these integrations."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Vertex AI**: Version 4.0\n\n* **Integration**: Increased the default timeout for API requests.",
+        "summary": {
+          "title": "Vertex AI API timeout increased",
+          "summary": "The default timeout for API requests in Vertex AI has been increased."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Microsoft Azure Sentinel**: Version 56.0\n\n* Updated mapping for the `ScheduledAlert` event types in the following connector:\n\n  + **Microsoft Azure Sentinel Incident Connector v2**",
+        "summary": {
+          "title": "Azure Sentinel Update",
+          "summary": "A new version of the Microsoft Azure Sentinel Incident Connector v2 is available, featuring updated mapping for ScheduledAlert event types."
+        }
+      }
+    ],
     "2025-09-16": [
       {
         "kind": "Announcement",
@@ -65,6 +147,16 @@
         }
       }
     ],
+    "2025-09-03": [
+      {
+        "kind": "Changed",
+        "content": "**Google Threat Intelligence**: Version 3.0\n\n* Extended supported filters in the following connector:\n\n  + **Google Threat Intelligence - ASM Issues Connector**",
+        "summary": {
+          "title": "Google Threat Intelligence Update",
+          "summary": "Version 3.0 of Google Threat Intelligence is now available, featuring extended supported filters in the ASM Issues Connector."
+        }
+      }
+    ],
     "2025-08-31": [
       {
         "kind": "Announcement",
@@ -82,6 +174,24 @@
         "summary": {
           "title": "Release 6.3.59 Available",
           "summary": "The latest release, version 6.3.59, is now available in all regions."
+        }
+      }
+    ],
+    "2025-08-27": [
+      {
+        "kind": "Feature",
+        "content": "**Google Workspace**: Version 20.0\n\n* The following new actions have been added:\n\n  + **Block Extension**\n  + **Delete Extension**\n  + **Get Extension Details**\n  + **Get Host Browser Details**\n  + **Search User Activity Events**",
+        "summary": {
+          "title": "New Actions Available for Google Workspace",
+          "summary": "Google Workspace now includes new actions: Block Extension, Delete Extension, Get Extension Details, Get Host Browser Details, and Search User Activity Events."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Google Threat Intelligence**: Version 3.0\n\n* **Integration:** Updated authentication flow.",
+        "summary": {
+          "title": "Google Threat Intelligence Update",
+          "summary": "Version 3.0 of Google Threat Intelligence is here, featuring an updated authentication flow."
         }
       }
     ],

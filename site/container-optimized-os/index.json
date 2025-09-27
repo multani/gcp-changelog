@@ -1,6 +1,456 @@
 {
   "name": "Container Optimized OS",
   "entries": {
+    "2025-09-24": [
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "New features available",
+          "summary": "We're excited to announce new features that enhance user experience and productivity. Explore the latest updates today!"
+        }
+      },
+      {
+        "kind": "cos-beta-125-19216-0-53",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.46](https://cos.googlesource.com/third_party/kernel/+/6963667c07329fd67fdfa97b2c039c916e93a348 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19216.0.53/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS-6.12.46 Announcement",
+          "summary": "New version of COS available with updates to Kernel, Docker, and Containerd. Includes GPU driver information."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated cos-gpu-installer to v2.5.7.",
+        "summary": {
+          "title": "Updated cos-gpu-installer to v2.5.7.",
+          "summary": "The cos-gpu-installer has been updated to version 2.5.7."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added support for the fwctl subsystem and the Mellanox fwctl driver for ARM64.",
+        "summary": {
+          "title": "ARM64 Support for Mellanox fwctl",
+          "summary": "The fwctl subsystem and Mellanox fwctl driver now support ARM64 architecture."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for NVIDIA driver v580.82.07.\nUpdated all latest driver version and default driver\nversions for NVIDIA\\_GB200 and NVIDIA\\_B200 to v580.82.07.",
+        "summary": {
+          "title": "NVIDIA Driver Update",
+          "summary": "NVIDIA driver v580.82.07 is now supported, with updates to the latest and default versions for NVIDIA_GB200 and NVIDIA_B200."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/libxslt to version 1.1.43-r1.",
+        "summary": {
+          "title": "libxslt upgrade",
+          "summary": "libxslt was updated to version 1.1.43-r1."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated the Linux kernel to v6.12.46.",
+        "summary": {
+          "title": "Linux Kernel Update",
+          "summary": "Linux kernel updated to v6.12.46."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded dev-libs/libxml2 to version 2.13.9. This fixes\nCVE-2025-9714.",
+        "summary": {
+          "title": "Security Update for libxml2",
+          "summary": "libxml2 has been updated to version 2.13.9 to address CVE-2025-9714."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811500 -> 811534",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "Runtime sysctl has been updated. The fs.file-max value changed from 811500 to 811534."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Enabled Coherent Driver Memory Management by default when installing GPU drivers on GB2000.",
+        "summary": {
+          "title": "Coherent Driver Memory Management Enabled",
+          "summary": "Coherent Driver Memory Management is now enabled by default for GPU driver installations on GB2000."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "New features available",
+          "summary": "We're excited to announce new features that enhance user experience and productivity. Explore the latest updates designed to streamline your workflow."
+        }
+      },
+      {
+        "kind": "cos-117-18613-339-70",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.105](https://cos.googlesource.com/third_party/kernel/+/6132d6c35a2b10e178a2cc0eb1df4f55ed0bea3e ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.339.70/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container-Optimized OS GPU Driver Update",
+          "summary": "New GPU driver versions are available for Container-Optimized OS, supporting Kernel 6.6.105, Docker 24.0.9, and Containerd 1.7.28."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated cos-gpu-installer to v2.5.7.",
+        "summary": {
+          "title": "Updated cos-gpu-installer to v2.5.7.",
+          "summary": "The cos-gpu-installer has been updated to version 2.5.7."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated golang.org/x/crypto in google-osconfig-agent to v0.31.0.",
+        "summary": {
+          "title": "Updated crypto package",
+          "summary": "The golang.org/x/crypto package within the google-osconfig-agent has been updated to version 0.31.0."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for NVIDIA driver v580.82.07.\nUpdated all latest driver version and default driver\nversions for NVIDIA\\_GB200 and NVIDIA\\_B200 to v580.82.07.",
+        "summary": {
+          "title": "NVIDIA Driver Update",
+          "summary": "NVIDIA driver support updated to v580.82.07 for GB200 and B200 models."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/libxslt to version 1.1.43-r1.",
+        "summary": {
+          "title": "libxslt upgrade",
+          "summary": "libxslt was updated to version 1.1.43-r1."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated the Linux kernel to v6.6.105.",
+        "summary": {
+          "title": "Linux Kernel Update",
+          "summary": "The Linux kernel has been updated to v6.6.105."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded dev-libs/libxml2 to version 2.13.9. This fixes\nCVE-2025-9714.",
+        "summary": {
+          "title": "Security Update for libxml2",
+          "summary": "libxml2 has been updated to version 2.13.9 to address CVE-2025-9714."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811774 -> 811794",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "fs.file-max changed from 811774 to 811794."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Enabled Coherent Driver Memory Management by default when installing GPU drivers on GB2000.",
+        "summary": {
+          "title": "Coherent Driver Memory Management Enabled",
+          "summary": "Coherent Driver Memory Management is now enabled by default for GPU driver installations on GB2000."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "New features available",
+          "summary": "We're excited to announce new features have been added to our platform. These updates are designed to enhance your experience and provide more functionality."
+        }
+      },
+      {
+        "kind": "cos-113-18244-448-50",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.151](https://cos.googlesource.com/third_party/kernel/+/cf1698d307efdf83b0d49811c6702f5c476d3347 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.448.50/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS-113-18244-448-50 Release",
+          "summary": "New COS version available. Includes Docker v24.0.9, Containerd v1.7.27, and updated GPU driver support."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated cos-gpu-installer to v2.5.7.",
+        "summary": {
+          "title": "Updated cos-gpu-installer to v2.5.7.",
+          "summary": "The cos-gpu-installer has been updated to version 2.5.7."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated golang.org/x/crypto in google-guest-agent to v0.31.0.",
+        "summary": {
+          "title": "Updated crypto package",
+          "summary": "The golang.org/x/crypto package within the google-guest-agent has been updated to version v0.31.0."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated golang.org/x/crypto in google-osconfig-agent to v0.31.0.",
+        "summary": {
+          "title": "Updated crypto package",
+          "summary": "The golang.org/x/crypto package within the google-osconfig-agent has been updated to version 0.31.0."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/libxslt to version 1.1.43-r1.",
+        "summary": {
+          "title": "libxslt upgrade",
+          "summary": "libxslt was updated to version 1.1.43-r1."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated the Linux kernel to v6.1.151.",
+        "summary": {
+          "title": "Linux Kernel Update",
+          "summary": "The Linux kernel has been updated to v6.1.151."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded dev-libs/libxml2 to version 2.13.9. This fixes\nCVE-2025-9714.",
+        "summary": {
+          "title": "Security Update for libxml2",
+          "summary": "libxml2 has been updated to version 2.13.9, addressing CVE-2025-9714."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811983 -> 812054",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "fs.file-max changed from 811983 to 812054."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Enabled Coherent Driver Memory Management by default when installing GPU drivers on GB2000.",
+        "summary": {
+          "title": "Coherent Driver Memory Management Enabled",
+          "summary": "Coherent Driver Memory Management is now enabled by default for GPU driver installations on GB2000."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "New features available",
+          "summary": "We're excited to announce new features that enhance user experience and productivity. Explore the latest updates to streamline your workflows and discover innovative solutions."
+        }
+      },
+      {
+        "kind": "cos-dev-129-19284-0-0",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.47](https://cos.googlesource.com/third_party/kernel/+/cae186e568245769d61ab1cff0f14366822276c7 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19284.0.0/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS-6.12.47 GPU Drivers",
+          "summary": "New GPU drivers are available for COS-6.12.47, including updates for Docker and Containerd."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated cos-gpu-installer to v2.5.7.",
+        "summary": {
+          "title": "Updated cos-gpu-installer to v2.5.7.",
+          "summary": "The cos-gpu-installer has been updated to version 2.5.7."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated the Linux kernel to v6.12.47.",
+        "summary": {
+          "title": "Linux Kernel Update",
+          "summary": "The Linux kernel has been updated to version 6.12.47."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for NVIDIA driver v580.82.07.\nUpdated all latest driver version and default driver\nversions for NVIDIA\\_GB200 and NVIDIA\\_B200 to v580.82.07.",
+        "summary": {
+          "title": "NVIDIA Driver Update",
+          "summary": "NVIDIA driver updated to v580.82.07 for GB200 and B200 models."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/libxslt to version 1.1.43-r1.",
+        "summary": {
+          "title": "libxslt upgrade",
+          "summary": "libxslt was upgraded to version 1.1.43-r1."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded dev-libs/libxml2 to version 2.13.9. This fixes\nCVE-2025-9714, CVE-2025-32415 and CVE-2025-32414.",
+        "summary": {
+          "title": "Security Update for libxml2",
+          "summary": "The libxml2 library has been updated to version 2.13.9, addressing critical security vulnerabilities CVE-2025-9714, CVE-2025-32415, and CVE-2025-32414."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811423 -> 811483\n* Changed: net.ipv4.udp\\_mem: 188034 250715 376068 -> 188034 250714 376068",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "fs.file-max changed from 811423 to 811483. net.ipv4.udp_mem changed from 188034 250715 376068 to 188034 250714 376068."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Enabled Coherent Driver Memory Management by default when installing GPU drivers on GB2000.",
+        "summary": {
+          "title": "Coherent Driver Memory Management Enabled",
+          "summary": "Coherent Driver Memory Management is now enabled by default for GPU driver installations on GB2000."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "Updated Documentation",
+          "summary": "The documentation has been updated to reflect the latest changes."
+        }
+      },
+      {
+        "kind": "cos-109-17800-570-50",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.151](https://cos.googlesource.com/third_party/kernel/+/a4114b18351d2a6e0d84a3c7b02e4513ced87fcf ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/17800.570.50/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container-Optimized OS 17800.570.50",
+          "summary": "The latest Container-Optimized OS release 17800.570.50 includes updates to the Kernel, Docker, and Containerd. GPU driver information is also available."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated cos-gpu-installer to v2.5.7.",
+        "summary": {
+          "title": "Updated cos-gpu-installer to v2.5.7.",
+          "summary": "The cos-gpu-installer has been updated to version 2.5.7."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated golang.org/x/crypto in google-osconfig-agent to v0.31.0.",
+        "summary": {
+          "title": "Updated crypto package",
+          "summary": "The golang.org/x/crypto package has been updated to v0.31.0 in the google-osconfig-agent."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/libxslt to version 1.1.43-r1.",
+        "summary": {
+          "title": "libxslt upgrade",
+          "summary": "libxslt was updated to version 1.1.43-r1."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated the Linux kernel to v6.1.151.",
+        "summary": {
+          "title": "Linux Kernel Update",
+          "summary": "The Linux kernel has been updated to version 6.1.151."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded dev-libs/libxml2 to version 2.13.9. This fixes\nCVE-2025-9714.",
+        "summary": {
+          "title": "Security Update for libxml2",
+          "summary": "libxml2 has been updated to version 2.13.9, addressing CVE-2025-9714."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 812272 -> 812258",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "fs.file-max changed from 812272 to 812258."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Enabled Coherent Driver Memory Management by default when installing GPU drivers on GB2000.",
+        "summary": {
+          "title": "Coherent Driver Memory Management Enabled",
+          "summary": "Coherent Driver Memory Management is now enabled by default for GPU driver installations on GB2000."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "New features",
+          "summary": "New features are available!"
+        }
+      },
+      {
+        "kind": "cos-121-18867-199-73",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.105](https://cos.googlesource.com/third_party/kernel/+/6b5ca3235d0b2ee0728b27431e9c285a91583f4c ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.199.73/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 105 GPU Drivers",
+          "summary": "Updated GPU drivers available for COS 6.6.105."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated cos-gpu-installer to v2.5.7.",
+        "summary": {
+          "title": "Updated cos-gpu-installer to v2.5.7",
+          "summary": "The cos-gpu-installer has been updated to version 2.5.7."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for NVIDIA driver v580.82.07. Updated all latest driver version and default driver versions for NVIDIA\\_GB200 and NVIDIA\\_B200 to v580.82.07.",
+        "summary": {
+          "title": "NVIDIA Driver Update",
+          "summary": "NVIDIA driver support has been updated to v580.82.07 for both latest and default versions, including NVIDIA_GB200 and NVIDIA_B200."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/libxslt to version 1.1.43-r1.",
+        "summary": {
+          "title": "libxslt upgrade",
+          "summary": "libxslt was updated to version 1.1.43-r1."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded dev-libs/libxml2 to version 2.13.9. This fixes\nCVE-2025-9714.",
+        "summary": {
+          "title": "Security Update for libxml2",
+          "summary": "The libxml2 package has been updated to version 2.13.9 to address a security vulnerability (CVE-2025-9714)."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811710 -> 811752",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "fs.file-max changed from 811710 to 811752."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Enabled Coherent Driver Memory Management by default when installing GPU drivers on GB2000.",
+        "summary": {
+          "title": "Coherent Driver Memory Management Enabled",
+          "summary": "Coherent Driver Memory Management is now enabled by default for GPU driver installations on GB2000."
+        }
+      }
+    ],
     "2025-09-16": [
       {
         "kind": "cos-121-18867-199-65",

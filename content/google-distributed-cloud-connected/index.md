@@ -4,7 +4,9 @@
 
 ### Announcement
 
-This is a minor release of Google Distributed Cloud connected (version 1.11.0).
+This is a minor release of Google Distributed Cloud connected (version 1.11.0). Google Distributed Cloud software updates
+roll out gradually across regions. The latest version might not be immediately available on your Google Distributed Cloud
+connected deployment.
 
 ### Feature
 

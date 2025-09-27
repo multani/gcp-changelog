@@ -9,7 +9,155 @@
 Google SecOps is migrating the transport layer for third-party API feeds to a new platform to improve performance and reliability. This migration will be completed in phases and is expected to finish by the end of October 2025. The migration should not impact any existing or new, third-party API feeds. If you experience any unexpected issues with your feeds during the migration, contact your Google SecOps representative.
 
 ---
+## 2025-09-17
+
+### Feature
+
+**SentinelOneV2**: Version 41.0
+
+* The following new action has been added:
+
+  + **Update Alert**
+* The following new connector has been added:
+
+  + **SentinelOne - Alert Connector**
+* A new predefined widget has been added to the following action:
+
+  + **Update Alert**
+
+### Feature
+
+**Google Threat Intelligence**: Version 4.0
+
+* The following new action has been added:
+
+  + **Set DTM Alert Analysis**
+
+### Feature
+
+**Palo Alto Cortex XDR**: Version 18.0
+
+* The following new actions have been added:
+
+  + **Add Comment To Incident**
+  + **Execute XQL Search**
+  + **Get Incident Details**
+
+### Changed
+
+**Google Threat Intelligence**: Version 4.0
+
+* Updated the processing of the threat actor entity in the following action:
+
+  + **Enrich Entities**
+* Updated the predefined widget in the following actions:
+
+  (REGRESSIVE) The widget now works with GTI information. To see the changes, the widget must be re-added to the existing views in playbooks.
+
+  + **Enrich Entities**
+  + **Enrich IOCs**
+* Added JSON samples to the following action:
+
+  + **Enrich Entities**
+
+### Changed
+
+**Trend Vision One**: Version 6.0
+
+* Added support for Agent UUID in the following actions:
+
+  + **Enrich Entities**
+  + **Execute Custom Script**
+  + **Isolate Endpoint**
+  + **Unisolate Endpoint**
+
+### Changed
+
+**Splunk**: Version 58.0
+
+* Updated the alert processing logic in the following connector:
+
+  + **Splunk ES - Notable Events Connector**
+
+### Changed
+
+**Jira**: Version 48.0
+
+* **Integration**: Updated the SDK version.
+
+### Changed
+
+Added the ability to modify the `API Root` and `Login API Root` in the following integrations:
+
+* **Azure Active Directory**: Version 18.0
+* **Azure AD Identity Protection**: Version 7.0
+* **Microsoft Teams**: Version 28.0
+
+### Changed
+
+**Vertex AI**: Version 4.0
+
+* **Integration**: Increased the default timeout for API requests.
+
+### Changed
+
+**Microsoft Azure Sentinel**: Version 56.0
+
+* Updated mapping for the `ScheduledAlert` event types in the following connector:
+
+  + **Microsoft Azure Sentinel Incident Connector v2**
+
+---
+## 2025-09-16
+
+### Announcement
+
+**Migrate SOAR to Google Cloud**
+
+We're actively migrating all SOAR customers and partners to their respective Google Cloud projects. This migration unifies your SOAR experience with your existing cloud environment. For more information, see [SOAR migration overview](https://cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp) and [FAQ](https://cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-soar-faq).
+
+### Announcement
+
+**Migrate SOAR to Google Cloud**
+
+All customers and partners are being migrated from SOAR to Google Cloud. For more information, see [SOAR migration overview](https://cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp) and [FAQ](https://cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-soar-faq).
+
+### Announcement
+
+Release 6.3.62 is being rolled out to the first phase of regions as listed [here](https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains internal and customer bug fixes.
+
+---
+## 2025-09-15
+
+### Announcement
+
+[Release 6.3.61](https://cloud.google.com/chronicle/docs/soar/release-notes?hl=en#September_07_2025) is now available for all regions.
+
+---
+## 2025-09-11
+
+### Feature
+
+**SecOps Labs**
+
+This feature is in preview.
+
+You can now configure and run Google SecOps Gemini and other intelligence *experiments* without disrupting your existing production systems—and benefit from their output. The experiments comply with the Role-Based Access Control (RBAC) configuration of your environment, and they have streamlined configurations with clear actionable results and output.
+
+For details, see [Use Gemini and other experiments in Google SecOps](https://cloud.google.com/chronicle/docs/secops/google-secops-labs).
+
+---
 ## 2025-09-10
+
+### Feature
+
+**View data retention start date**
+
+You can now view the start date for your account's data retention period. A new, read-only page, **Data Retention**, is available under **SIEM Settings**. This page also shows the start date for your Google SecOps account's data retention period.
+
+For more information, see [View data retention in your Google SecOps account](https://cloud.google.com/chronicle/docs/about/data-retention).
 
 ### Feature
 
@@ -60,6 +208,92 @@ New parser documentation is available to help you ingest and normalize logs from
 [Collect VMware VeloCloud SD-WAN logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-velocloud-sdwan)   
 [Collect Zoom operation logs](https://www.google.com/search?q=https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zoom-operations)
 
+### Announcement
+
+**New parser documentation now available**
+
+New parser documentation is available to help you ingest and normalize logs from the following sources:
+
+[Collect Akamai Cloud Monitor logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/akamai-cm)   
+[Collect Akamai DataStream 2 logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/akamai-ds2)   
+[Collect Aware audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aware-audit)   
+[Collect AWS API Gateway access logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aws-api-gateway)   
+[Collect AWS VPC Transit Gateway flow logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aws-vpc-tgflow)   
+[Collect Bitwarden Enterprise event logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/bitwarden-ent-event)   
+[Collect Box Collaboration JSON logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/box-collaboration-json)   
+[Collect Censys logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/censys)   
+[Collect Code42 Incydr core datasets](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/code42-incydr)   
+[Collect CSV Custom IOC files](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/csv-custom-ioc)   
+[Collect Deep Instinct EDR logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/deep-ins-edr)   
+[Collect DigiCert audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/digicert-audit)   
+[Collect DomainTools Iris Investigate results](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/dt-iris-investigate)   
+[Collect Duo administrator logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/duo-admin)   
+[Collect Duo authentication logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/duo-auth)   
+[Collect Duo entity context logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/duo-entity)   
+[Collect Google Cloud Abuse Events logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-abuse-events)   
+[Collect Harness IO audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/harness-io-audit)   
+[Collect HPE Aruba Networking Central logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/hpe-anc)   
+[Collect Jamf Pro context logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/jamf-pro-context)   
+[Collect PingOne Advanced Identity Cloud logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/pingone-advanced-identity)   
+[Collect Slack audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/slack-audit)   
+[Collect Snyk group-level audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/snyk-group-audit)   
+[Collect Snyk group-level audit and issues logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/snyk-group-issues)   
+[Collect Venafi Zero Touch PKI logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/venafi-ztpki)   
+[Collect Veritas NetBackup logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/veritas-netbackup)   
+[Collect VMware AirWatch logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-airwatch)   
+[Collect VMware Avi Load Balancer WAF logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-avilb-waf)   
+[Collect VMware Horizon logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-horizon)   
+[Collect VMware VeloCloud SD-WAN logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-velocloud-sdwan)   
+[Collect Zoom operation logs](https://www.google.com/search?q=https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zoom-operations)
+
+---
+## 2025-09-07
+
+### Feature
+
+**Advanced job scheduling**
+
+The job scheduling functionality has been enhanced with advanced options. This functionality provides more precise control and flexible, calendar-like scheduling for your scripts.
+
+For more information, see [Configure a new job with advanced scheduling](https://cloud.google.com/chronicle/docs/soar/respond/jobs-scheduler/writing-jobs#advanced-scheduling).
+
+### Feature
+
+**Use custom fields in the Close Case dialog**
+
+Administrators can now add custom fields to the **Close Case** dialog. This new functionality provides a more streamlined workflow and replaces the **Dynamic Fields** feature.
+
+For more information, see [Use custom fields in the Close Case dialog](https://cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/custom-fields-in-case-closure).
+
+### Announcement
+
+Release 6.3.61 is being rolled out to the first phase of regions, as outlined in our [Google SecOps release plan](https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains the following features:
+
+### Feature
+
+**Advanced job scheduling**
+
+The job scheduling functionality has been enhanced with advanced options. This functionality provides more precise control and flexible, calendar-like scheduling for your scripts.
+
+For more information, see [Configure a new job with advanced scheduling](https://cloud.google.com/chronicle/docs/soar/respond/jobs-scheduler/writing-jobs#advanced-scheduling).
+
+### Feature
+
+**Use custom fields in the Close Case dialog**
+
+Administrators can now add custom fields to the **Close Case** dialog. This new functionality provides a more streamlined workflow and replaces the **Dynamic Fields** feature.
+
+For more information, see [Use custom fields in the Close Case dialog](https://cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/custom-fields-in-case-closure).
+
+---
+## 2025-09-06
+
+### Announcement
+
+[Release 6.3.60](https://cloud.google.com/chronicle/docs/soar/release-notes#August_31_2025) is now available for all regions.
+
 ---
 ## 2025-09-05
 
@@ -69,8 +303,41 @@ New parser documentation is available to help you ingest and normalize logs from
 
 You can now filter alerts and search results by any field in the detection object. This update provides more granular control over your queries, letting you filter by nested fields from events and entities within a detection.
 
+### Changed
+
+**Advanced filtering in alerts and search results**
+
+You can now filter alerts and search results by any field in the detection object. This update provides more granular control over your queries, letting you filter by nested fields from events and entities within a detection.
+
 ---
 ## 2025-09-04
+
+### Changed
+
+**Time zone override for forwarder logs**
+
+Google SecOps now lets you override the default time zone for your logs when you create or configure a forwarder.
+
+For details, see [Add collector configuration](https://cloud.google.com/chronicle/docs/install/forwarder-management-configurations#add-collectors).
+
+### Changed
+
+**Improved Okta and Symantec Endpoint Protection parsers**
+
+These changes are currently in Preview.
+
+The Okta and Symantec Endpoint Protection parsers are now more efficient, with increased log-field coverage and more-accurate log-field mappings. These changes include new UDM fields and updated field mappings. We advise you to opt-in and get these new versions.
+
+* For details on the Okta parser, see [UDM mapping table](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/okta#udm_mapping_table) and [UDM mapping delta reference](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/okta#udm_mapping_delta_reference).
+* For details on the Symantec Endpoint Protection parser, see [Collect Symantec Endpoint Protection logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-endpoint-protection#udm_mapping_table) and [UDM mapping delta reference](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-endpoint-protection#udm-mapping-delta).
+
+### Announcement
+
+**CBN alerts functionality removed from all prebuilt parsers**
+
+As part of deprecating the Configuration Based Normalization (CBN) alerts functionality, all [prebuilt parsers](https://cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#types_of_parsers) that included the CBN alerts functionality were updated, and the functionality was removed.
+
+**Note:** For information about how you can migrate CBN alerts to YARA-L detection alerts, see [Migrate CBN alerts to YARA-L detection rule alerts](https://cloud.google.com/chronicle/docs/detection/migrate-cbn-alerts).
 
 ### Changed
 
@@ -111,8 +378,53 @@ You can now configure rules to analyze data over a longer period. The maximum ma
 * For a window size of 1 to 48 hours, the run frequency is 1 hour.
 * For a window size greater than 48 hours, the run frequency is 24 hours.
 
+### Changed
+
+**Extended match window for multi-event rules**
+
+You can now configure rules to analyze data over a longer period. The maximum match window for these rules has been extended to 14 days. The run frequency for multi-event rules is automatically set based on the rule's match window:
+
+* For a window size of 1 to 48 hours, the run frequency is 1 hour.
+* For a window size greater than 48 hours, the run frequency is 24 hours.
+
+### Changed
+
+**Google Threat Intelligence**: Version 3.0
+
+* Extended supported filters in the following connector:
+
+  + **Google Threat Intelligence - ASM Issues Connector**
+
+---
+## 2025-08-31
+
+### Announcement
+
+Release 6.3.60 is being rolled out to the first phase of regions as listed [here](https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains internal and customer bug fixes.
+
+---
+## 2025-08-30
+
+### Announcement
+
+[Release 6.3.59](https://cloud.google.com/chronicle/docs/soar/release-notes#August_23_2025) is now available for all regions.
+
 ---
 ## 2025-08-29
+
+### Changed
+
+**MITRE ATT&CK coverage dashboard is now available**
+
+**This feature is currently in Preview.**
+
+The new [MITRE ATT&CK coverage dashboard](https://cloud.google.com/chronicle/docs/detection/mitre-dashboard) lets you measure your security posture against the MITRE ATT&CK framework, helping you:
+
+* Assess threat coverage
+* Identify gaps
+* Prioritize security efforts
 
 ### Changed
 
@@ -139,8 +451,30 @@ These powerful new rule packs are now in public preview for customers with a [Go
 
 To learn more, a companion blog post will be published on the [Google Security Cloud Community](https://security.googlecloudcommunity.com/) on September 9, 2025.
 
+### Changed
+
+**Composite detections for MITRE ATT&CK**
+
+The [Curated Detections](https://cloud.google.com/chronicle/docs/detection/use-curated-detections) feature has been enhanced with new [composite rules](https://cloud.google.com/chronicle/docs/detection/composite-rules) that define chains of MITRE ATT&CK tactics and techniques.
+
+These powerful new rule packs are now in public preview for customers with a [Google SecOps Enterprise or Enterprise Plus license](https://cloud.google.com/security/products/security-operations).
+
+To learn more, a companion blog post will be published on the [Google Security Cloud Community](https://security.googlecloudcommunity.com/) on September 9, 2025.
+
 ---
 ## 2025-08-27
+
+### Feature
+
+**Google Workspace**: Version 20.0
+
+* The following new actions have been added:
+
+  + **Block Extension**
+  + **Delete Extension**
+  + **Get Extension Details**
+  + **Get Host Browser Details**
+  + **Search User Activity Events**
 
 ### Changed
 
@@ -279,6 +613,150 @@ The following log types were added without a default parser. Each parser is list
 * Trellix Malware Analysis (`TRELLIX_AX`)
 * Everfox ULTRA (`ULTRA`)
 * ZScaler NSS VM (`ZSCALER_NSS_VM`)
+
+### Changed
+
+Google SecOps has updated the list of supported default parsers. Parsers are updated gradually, so it might take one to four days before you see the changes reflected in your region.
+
+The following supported default parsers have been updated. Each parser is listed by product name and `log_type` value, where applicable. This list includes both released default parsers and pending parser updates.
+
+* A10 Load Balancer (`A10_LOAD_BALANCER`)
+* AIX system (`AIX_SYSTEM`)
+* Apache (`APACHE`)
+* Arcsight CEF (`ARCSIGHT_CEF`)
+* Aruba Switch (`ARUBA_SWITCH`)
+* Aruba (`ARUBA_WIRELESS`)
+* Attivo Networks (`ATTIVO`)
+* Auth0 (`AUTH_ZERO`)
+* Amazon VPC Transit Gateway Flow Logs (`AWS_VPC_TRANSIT_GATEWAY`)
+* AWS WAF (`AWS_WAF`)
+* Azure AD (`AZURE_AD`)
+* Azure AD Organizational Context (`AZURE_AD_CONTEXT`)
+* Azure Firewall (`AZURE_FIREWALL`)
+* Azure Front Door (`AZURE_FRONT_DOOR`)
+* Carbon Black App Control (`CB_APP_CONTROL`)
+* None (`CHROME_MANAGEMENT`)
+* Cisco ASA (`CISCO_ASA_FIREWALL`)
+* Cisco DNA Center Platform (`CISCO_DNAC`)
+* Cisco Email Security (`CISCO_EMAIL_SECURITY`)
+* Cisco Firepower NGFW (`CISCO_FIREPOWER_FIREWALL`)
+* Cisco Internetwork Operating System (`CISCO_IOS`)
+* Cisco IronPort (`CISCO_IRONPORT`)
+* Cisco ISE (`CISCO_ISE`)
+* Cisco Router (`CISCO_ROUTER`)
+* Cisco vManage SD-WAN (`CISCO_SDWAN`)
+* Cisco Switch (`CISCO_SWITCH`)
+* Cisco Umbrella Audit (`CISCO_UMBRELLA_AUDIT`)
+* Cisco VCS Expressway (`CISCO_VCS`)
+* Cisco WSA (`CISCO_WSA`)
+* Citrix Netscaler (`CITRIX_NETSCALER`)
+* Claroty Xdome (`CLAROTY_XDOME`)
+* HP Aruba (ClearPass) (`CLEARPASS`)
+* Cloudflare (`CLOUDFLARE`)
+* Cloudflare WAF (`CLOUDFLARE_WAF`)
+* Corelight (`CORELIGHT`)
+* Palo Alto Cortex XDR Alerts (`CORTEX_XDR`)
+* CrowdStrike Alerts API (`CS_ALERTS`)
+* CrowdStrike Detection Monitoring (`CS_DETECTS`)
+* CrowdStrike Falcon (`CS_EDR`)
+* CrowdStrike Falcon Stream (`CS_STREAM`)
+* Cyberark Privilege Cloud (`CYBERARK_PRIVILEGE_CLOUD`)
+* Darktrace (`DARKTRACE`)
+* Datadog (`DATADOG`)
+* Elastic Defend (`ELASTIC_DEFEND`)
+* F5 ASM (`F5_ASM`)
+* F5 Distributed Cloud Services (`F5_DCS`)
+* F5 Silverline (`F5_SILVERLINE`)
+* Fidelis Network (`FIDELIS_NETWORK`)
+* FireEye (`FIREEYE_ALERT`)
+* FireEye NX (`FIREEYE_NX`)
+* Forcepoint DLP (`FORCEPOINT_DLP`)
+* ForgeRock Identity Cloud (`FORGEROCK_IDENTITY_CLOUD`)
+* FortiGate (`FORTINET_FIREWALL`)
+* Cloud SQL (`GCP_CLOUDSQL`)
+* Google Cloud DNS Threat Detector (`GCP_DNS_ATD`)
+* Cloud Load Balancing (`GCP_LOADBALANCING`)
+* None (`GCP_SECURITYCENTER_THREAT`)
+* VPC Flow Logs (`GCP_VPC_FLOW`)
+* AWS GuardDuty (`GUARDDUTY`)
+* IBM-i Operating System (`IBM_I`)
+* Imperva (`IMPERVA_WAF`)
+* Infoblox DHCP (`INFOBLOX_DHCP`)
+* Jamf Protect Telemetry V2 (`JAMF_TELEMETRY_V2`)
+* Kemp Load Balancer (`KEMP_LOADBALANCER`)
+* Kubernetes Node (`KUBERNETES_NODE`)
+* ManageEngine AD360 (`MANAGE_ENGINE_AD360`)
+* McAfee ePolicy Orchestrator (`MCAFEE_EPO`)
+* McAfee IPS (`MCAFEE_IPS`)
+* Medigate IoT (`MEDIGATE_IOT`)
+* Microsoft Defender for Endpoint (`MICROSOFT_DEFENDER_ENDPOINT`)
+* Microsoft Graph API Alerts (`MICROSOFT_GRAPH_ALERT`)
+* Microsoft Sentinel (`MICROSOFT_SENTINEL`)
+* Microsoft SQL Server (`MICROSOFT_SQL`)
+* Mikrotik Router (`MIKROTIK_ROUTER`)
+* Netskope V2 (`NETSKOPE_ALERT_V2`)
+* Netskope Web Proxy (`NETSKOPE_WEBPROXY`)
+* Unix system (`NIX_SYSTEM`)
+* Oracle Cloud Infrastructure VCN Flow Logs (`OCI_FLOW`)
+* Office 365 (`OFFICE_365`)
+* Office 365 Message Trace (`OFFICE_365_MESSAGETRACE`)
+* Okta (`OKTA`)
+* Okta Scaleft (`OKTA_SCALEFT`)
+* Oracle (`ORACLE_DB`)
+* Orca Cloud Security Platform (`ORCA`)
+* Proofpoint Threat Response (`PROOFPOINT_TRAP`)
+* Quest Active Directory (`QUEST_AD`)
+* Radware Web Application Firewall (`RADWARE_FIREWALL`)
+* Red Hat OpenShift (`REDHAT_OPENSHIFT`)
+* Symantec Endpoint Protection (`SEP`)
+* Silverfort Authentication Platform (`SILVERFORT`)
+* Squid Web Proxy (`SQUID_WEBPROXY`)
+* STIX Threat Intelligence (`STIX`)
+* Symantec DLP (`SYMANTEC_DLP`)
+* Sysdig (`SYSDIG`)
+* Tenable Security Center (`TENABLE_SC`)
+* Trend Micro (`TIPPING_POINT`)
+* Trellix HX Event Streamer (`TRELLIX_HX_ES`)
+* Trend Micro Apex one (`TRENDMICRO_APEX_ONE`)
+* Trend Micro Vision One Activity (`TRENDMICRO_VISION_ONE_ACTIVITY`)
+* Trend Micro Vision One (`TRENDMICRO_VISION_ONE`)
+* Trend Micro Vision One Workbench (`TRENDMICRO_VISION_ONE_WORKBENCH`)
+* Ubiquiti UniFi Switch (`UBIQUITI_SWITCH`)
+* Cisco Umbrella DNS (`UMBRELLA_DNS`)
+* Cisco Umbrella IP (`UMBRELLA_IP`)
+* Varonis (`VARONIS`)
+* Vectra XDR (`VECTRA_XDR`)
+* VMware vCenter (`VMWARE_VCENTER`)
+* VMware vRealize Suite (VMware Aria) (`VMWARE_VREALIZE`)
+* Windows Event (`WINEVTLOG`)
+* Windows Event (XML) (`WINEVTLOG_XML`)
+* Zscaler CASB (`ZSCALER_CASB`)
+* ZScaler Deception (`ZSCALER_DECEPTION`)
+* Zscaler DLP (`ZSCALER_DLP`)
+* ZScaler DNS (`ZSCALER_DNS`)
+* ZScaler NGFW (`ZSCALER_FIREWALL`)
+* Zscaler Internet Access Audit Logs (`ZSCALER_INTERNET_ACCESS`)
+* Zscaler Tunnel (`ZSCALER_TUNNEL`)
+* Zscaler (`ZSCALER_WEBPROXY`)
+* Zscaler Secure Private Access Audit Logs (`ZSCALER_ZPA_AUDIT`)
+* Zscaler Private Access (`ZSCALER_ZPA`)
+
+The following log types were added without a default parser. Each parser is listed by product name and `log_type` value, where applicable.
+
+* Alicloud ApsaraDB (`ALICLOUD_APSARADB`)
+* AliCloud Firewall (`ALICLOUD_FIREWALL`)
+* AuthMind (`AUTHMIND`)
+* Microsoft Entra Recommendations (`MS_ENTRA_RECOMMENDATIONS`)
+* Palo Alto Networks Prisma Access (`PAN_PRISMA_ACCESS`)
+* Trellix Malware Analysis (`TRELLIX_AX`)
+* Everfox ULTRA (`ULTRA`)
+* ZScaler NSS VM (`ZSCALER_NSS_VM`)
+
+### Changed
+
+**Google Threat Intelligence**: Version 3.0
+
+* **Integration:** Updated authentication flow.
 
 ---
 ## 2025-08-21

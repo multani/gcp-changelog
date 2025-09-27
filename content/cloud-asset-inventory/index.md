@@ -1,5 +1,23 @@
 # Cloud Asset Inventory
 
+## 2025-09-15
+
+### Feature
+
+The following resource types are publicly available through the [ExportAssets](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/exportAssets), [ListAssets](https://cloud.google.com/asset-inventory/docs/listing-assets), [BatchGetAssetsHistory](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/batchGetAssetsHistory), [QueryAssets](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/queryAssets), [Feed](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/feeds), and Search ([SearchAllResources](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllResources), [SearchAllIamPolicies](https://cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllIamPolicies)) APIs.
+
+* Identity and Access Management
+
+  + `iam.googleapis.com/OauthClient`
+  + `iam.googleapis.com/OauthClientCredential`
+  + `iam.googleapis.com/WorkforcePool`
+  + `iam.googleapis.com/WorkforcePoolProvider`
+  + `iam.googleapis.com/WorkforcePoolProviderKey`
+  + `iam.googleapis.com/WorkloadIdentityPool`
+  + `iam.googleapis.com/WorkloadIdentityPoolProvider`
+  + `iam.googleapis.com/WorkloadIdentityPoolProviderKey`
+
+---
 ## 2025-08-13
 
 ### Feature

@@ -1,107 +1,135 @@
 {
   "name": "Security Command Center",
   "entries": {
+    "2025-09-23": [
+      {
+        "kind": "Feature",
+        "content": "[Bulk export findings to BigQuery](https://cloud.google.com/security-command-center/docs/bulk-exports-to-big-query)\nis available in [General Availability](https://cloud.google.com/products#product-launch-stages).\nBulk exports are supported for organizations, projects, and folders.",
+        "summary": {
+          "title": "Bulk export findings to BigQuery",
+          "summary": "You can now bulk export findings to BigQuery. This feature is supported for organizations, projects, and folders."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "The upgraded model for the prompt injection and jailbreak detection filter is\navailable in EU multi-region. This model has improved detection rates across several\nattack vectors, including the following:\n\n* Do Anything Now prompts\n* System instruction manipulation\n* Unauthorized action execution\n* Sensitive information retrieval",
+        "summary": {
+          "title": "Upgraded prompt injection and jailbreak detection model now available",
+          "summary": "A new, upgraded model for prompt injection and jailbreak detection is now available in the EU multi-region. This model offers improved detection rates for various attack vectors."
+        }
+      }
+    ],
+    "2025-09-22": [
+      {
+        "kind": "Feature",
+        "content": "[Graph search](https://cloud.google.com/security-command-center/docs/graph-search) lets you explore the security graph\nusing custom queries. This product is available in [Preview](https://cloud.google.com/products#product-launch-stages)\nin the Security Command Center Enterprise tier.",
+        "summary": {
+          "title": "Graph Search for Security Insights",
+          "summary": "Explore your security data with custom queries using Graph Search, now in Preview for Security Command Center Enterprise users."
+        }
+      }
+    ],
     "2025-09-16": [
       {
         "kind": "Feature",
-        "content": "Model Armor is integrated with Google Agentspace to provide greater insights and enhanced security of your agent interactions by default. For more information, see [Integration with Google Agentspace](https://cloud.google.com/security-command-center/docs/model-armor-agentspace-integration).",
+        "content": "Model Armor is integrated with Google Agentspace to provide greater\ninsights and enhanced security of your agent interactions by default. For more\ninformation, see\n[Integration with Google Agentspace](https://cloud.google.com/security-command-center/docs/model-armor-agentspace-integration).",
         "summary": {
           "title": "Model Armor and Agentspace Integration",
-          "summary": "Model Armor now integrates with Google Agentspace for improved agent interaction insights and security."
+          "summary": "Model Armor now integrates with Google Agentspace, offering enhanced security and insights into agent interactions by default."
         }
       }
     ],
     "2025-09-15": [
       {
         "kind": "Feature",
-        "content": "[Model Armor integration with Google Kubernetes Engine](https://cloud.google.com/security-command-center/docs/model-armor-gke-integration) is available in [General Availability](https://cloud.google.com/products#product-launch-stages).",
+        "content": "[Model Armor integration with Google Kubernetes Engine](https://cloud.google.com/security-command-center/docs/model-armor-gke-integration)\nis available in\n[General Availability](https://cloud.google.com/products#product-launch-stages).",
         "summary": {
-          "title": "Model Armor integration with Google Kubernetes Engine now in General Availability",
-          "summary": "Model Armor integration with Google Kubernetes Engine is now available in General Availability."
+          "title": "Model Armor now available for GKE",
+          "summary": "Model Armor integration with Google Kubernetes Engine is now generally available."
         }
       },
       {
         "kind": "Changed",
-        "content": "The **Findings** page in Security Command Center has been improved.\n\n* With Security Command Center Premium and Enterprise, the page includes the following predefined filter views that return a specific category of findings.\n\n  + Premium service tier: **All Findings**, **Vulnerabilities**, **Identity**, and **Threats**.\n  + Enterprise service tier: **All Findings**, **Vulnerabilities**, **Identity**, **Data**, and **Code**.\n* With Security Command Center Enterprise, the page includes a\n  selector to filter by cloud provider: Google Cloud, Amazon Web Service (AWS), and Microsoft Azure.\n\nFor more information, see [Review and manage\nfindings](https://cloud.google.com/security-command-center/docs/review-manage-findings#use_predefined_filter_views).",
+        "content": "The **Findings** page in Security Command Center has been improved.\n\n* With Security Command Center Premium and Enterprise, the page includes the following\n  predefined filter views that return a specific category of findings.\n\n  + Premium service tier: **All Findings**, **Vulnerabilities**, **Identity**,\n    and **Threats**.\n  + Enterprise service tier: **All Findings**, **Vulnerabilities**,\n    **Identity**, **Data**, and **Code**.\n* With Security Command Center Enterprise, the page includes a selector to filter by cloud\n  provider: Google Cloud, Amazon Web Service (AWS), and Microsoft Azure.\n\nFor more information, see\n[Review and manage findings](https://cloud.google.com/security-command-center/docs/review-manage-findings#use_predefined_filter_views).",
         "summary": {
           "title": "Security Command Center Findings Page Updates",
-          "summary": "The Findings page in Security Command Center has been updated with new predefined filter views for Premium and Enterprise users, including options like Vulnerabilities, Identity, and Threats. The Enterprise tier also adds filtering by cloud provider (Google Cloud, AWS, Azure)."
+          "summary": "The Findings page in Security Command Center has been updated with new predefined filter views for Premium and Enterprise users, including options for All Findings, Vulnerabilities, Identity, Threats, Data, and Code. The Enterprise tier also adds a cloud provider filter for Google Cloud, AWS, and Azure."
         }
       }
     ],
     "2025-09-12": [
       {
         "kind": "Changed",
-        "content": "Security Command Center has improved the automatic selection of resources when\nrunning attack path simulations using the default high-value resource set.\n\n[Risk\nEngine](https://cloud.google.com/security-command-center/docs/attack-exposure-supported-features)\nuses heuristics to identify resources used for non-production purposes. To help\nensure that you have information about the most important assets, Risk Engine\ncalculates the attack exposure score for all other resources in the default high-value resource set\nbefore calculating the attack exposure score for these non-production resources.\n\nTo customize the high-value\nresource set, see [Define and manage your high-value resource\nset](https://cloud.google.com/security-command-center/docs/attack-exposure-define-high-value-resource-set).\nFor information about Risk Engine, see [Attack exposure scores and attack\npaths](https://cloud.google.com/security-command-center/docs/attack-exposure-learn).",
+        "content": "Security Command Center has improved the automatic selection of resources when running\nattack path simulations using the default high-value resource set.\n\n[Risk Engine](https://cloud.google.com/security-command-center/docs/attack-exposure-supported-features) uses\nheuristics to identify resources used for non-production purposes. To help\nensure that you have information about the most important assets, Risk Engine\ncalculates the attack exposure score for all other resources in the default\nhigh-value resource set before calculating the attack exposure score for these\nnon-production resources.\n\nTo customize the high-value resource set, see\n[Define and manage your high-value resource set](https://cloud.google.com/security-command-center/docs/attack-exposure-define-high-value-resource-set).\nFor information about Risk Engine, see\n[Attack exposure scores and attack paths](https://cloud.google.com/security-command-center/docs/attack-exposure-learn).",
         "summary": {
           "title": "Improved resource selection for attack path simulations",
-          "summary": "Attack path simulations now have improved automatic selection of resources, prioritizing high-value assets by default. This enhancement ensures that critical resources are analyzed first in attack exposure scoring."
+          "summary": "Security Command Center now offers enhanced automatic selection of resources for attack path simulations by refining the default high-value resource set. This update improves the accuracy of attack exposure scoring for critical assets."
         }
       },
       {
         "kind": "Changed",
-        "content": "Security Command Center changed how Google Cloud subnets are handled when running [attack path simulations](https://cloud.google.com/security-command-center/docs/attack-exposure-learn). The result is that attack paths are more accurate in relation to networking. Certain customers with specific Google Cloud subnet configurations, for example, when a VPC connector accesses a subnetwork, may see significant changes to toxic combinations, chokepoints, and attack exposure scores.",
+        "content": "Security Command Center changed how Google Cloud subnets are handled when running\n[attack path simulations](https://cloud.google.com/security-command-center/docs/attack-exposure-learn). The result\nis that attack paths are more accurate in relation to networking. Certain\ncustomers with specific Google Cloud subnet configurations, for example, when a\nVPC connector accesses a subnetwork, may see significant changes to toxic\ncombinations, chokepoints, and attack exposure scores.",
         "summary": {
-          "title": "Security Command Center: Network path simulations updated",
-          "summary": "Attack path simulations in Security Command Center have been updated to improve accuracy regarding Google Cloud subnets and networking. Customers with specific VPC configurations may notice changes in attack exposure scores."
+          "title": "Security Command Center subnet handling updated",
+          "summary": "Attack path accuracy improved for Google Cloud subnets in Security Command Center. Customers with specific configurations may see changes in exposure scores."
         }
       }
     ],
     "2025-09-11": [
       {
         "kind": "Feature",
-        "content": "Assured Open Source Software (Assured OSS) now supports Go packages. For more information, see [Download Go packages using direct repository access](https://cloud.google.com/security-command-center/docs/aoss-download-go-packages).",
+        "content": "Assured Open Source Software (Assured OSS) now supports Go packages. For more information,\nsee\n[Download Go packages using direct repository access](https://cloud.google.com/security-command-center/docs/aoss-download-go-packages).",
         "summary": {
-          "title": "Go packages now supported by Assured OSS",
-          "summary": "Assured Open Source Software (Assured OSS) now supports Go packages. You can now download Go packages using direct repository access. Learn more about how to use this feature in our documentation."
+          "title": "Go Packages Now Supported by Assured OSS",
+          "summary": "Assured Open Source Software now supports Go packages, allowing for direct repository access downloads."
         }
       }
     ],
     "2025-09-10": [
       {
         "kind": "Feature",
-        "content": "[Cloud Run Threat Detection](https://cloud.google.com/security-command-center/docs/cloud-run-threat-detection-overview) is available in [General Availability](https://cloud.google.com/products#product-launch-stages).",
+        "content": "[Cloud Run Threat Detection](https://cloud.google.com/security-command-center/docs/cloud-run-threat-detection-overview)\nis available in\n[General Availability](https://cloud.google.com/products#product-launch-stages).",
         "summary": {
           "title": "Cloud Run Threat Detection Now Generally Available",
-          "summary": "Cloud Run Threat Detection is now available in General Availability. This feature enhances the security of your Cloud Run services by proactively identifying and alerting you to potential threats."
+          "summary": "We're happy to announce that Cloud Run Threat Detection is now available in General Availability. This feature helps you secure your Cloud Run services by detecting and alerting on potential threats."
         }
       }
     ],
     "2025-09-08": [
       {
         "kind": "Feature",
-        "content": "The Model Armor monitoring dashboard provides a centralized view to track interactions and violations within your projects. This feature is available in [Preview](https://cloud.google.com/products#product-launch-stages). For more information, see [View the monitoring dashboard](https://cloud.google.com/security-command-center/docs/model-armor-monitoring-dashboard).",
+        "content": "The Model Armor monitoring dashboard provides a centralized view to\ntrack interactions and violations within your projects. This feature is\navailable in [Preview](https://cloud.google.com/products#product-launch-stages).\nFor more information, see\n[View the monitoring dashboard](https://cloud.google.com/security-command-center/docs/model-armor-monitoring-dashboard).",
         "summary": {
           "title": "Model Armor Monitoring Dashboard",
-          "summary": "A new dashboard is available to track project interactions and violations."
+          "summary": "A new dashboard is available to track interactions and violations."
         }
       },
       {
         "kind": "Changed",
-        "content": "Multiple pages in Security Command Center Premium have been improved:\n\n* The [Risk overview](https://cloud.google.com/security-command-center/docs/assess-risk#threats) page is enhanced to provide a view of threats, vulnerabilities, and misconfigurations.\n* The [Findings page](https://cloud.google.com/security-command-center/docs/review-manage-findings#edit-finding-query) includes predefined filter views for vulnerabilities and identity findings.\n* Information previously on the Threats page is available in the [Threats dashboard](https://cloud.google.com/security-command-center/docs/assess-risk#threats) on the Risk overview page.\n* Information previously on the Vulnerabilities page is now available on the [Vulnerabilities dashboard](https://cloud.google.com/security-command-center/docs/assess-risk#vulnerabilities) on the Risk overview page.",
+        "content": "Multiple pages in Security Command Center Premium have been improved:\n\n* The [Risk overview](https://cloud.google.com/security-command-center/docs/assess-risk#threats) page is enhanced to\n  provide a view of threats, vulnerabilities, and misconfigurations.\n* The\n  [Findings page](https://cloud.google.com/security-command-center/docs/review-manage-findings#edit-finding-query)\n  includes predefined filter views for vulnerabilities and identity findings.\n* Information previously on the Threats page is available in the\n  [Threats dashboard](https://cloud.google.com/security-command-center/docs/assess-risk#threats) on the Risk\n  overview page.\n* Information previously on the Vulnerabilities page is now available on the\n  [Vulnerabilities dashboard](https://cloud.google.com/security-command-center/docs/assess-risk#vulnerabilities) on\n  the Risk overview page.",
         "summary": {
           "title": "Security Command Center Premium Updates",
-          "summary": "The Risk overview, Findings, and Threats pages in Security Command Center Premium have been improved to offer a better view of threats, vulnerabilities, and misconfigurations. New filter views for vulnerabilities and identity findings are now available on the Findings page."
+          "summary": "Key pages in Security Command Center Premium have been updated to offer a more integrated view of security posture. The Risk overview page now includes enhanced dashboards for threats, vulnerabilities, and misconfigurations. Additionally, the Findings page features new predefined filters for easier analysis of security data."
         }
       }
     ],
     "2025-09-02": [
       {
         "kind": "Feature",
-        "content": "Vulnerability assessment for Google Cloud supports scanning disks configured with customer-managed encryption keys (CMEK) for projects that are outside of VPC Service Control perimeters. For more information about how to scan disks configured with CMEK, see [Run Vulnerability Scans for CMEK disks](https://cloud.google.com/security-command-center/docs/vulnerability-assessment-google-cloud#run-cmek-vulns).",
+        "content": "Vulnerability assessment for Google Cloud supports scanning disks configured\nwith customer-managed encryption keys (CMEK) for projects that are outside of\nVPC Service Controls perimeters. For more information about how to scan disks\nconfigured with CMEK, see\n[Run Vulnerability Scans for CMEK disks](https://cloud.google.com/security-command-center/docs/vulnerability-assessment-google-cloud#run-cmek-vulns).",
         "summary": {
-          "title": "Vulnerability assessment for CMEK disks",
-          "summary": "Vulnerability assessment now supports scanning disks encrypted with customer-managed encryption keys (CMEK) for projects outside of VPC Service Controls."
+          "title": "Vulnerability Assessment for CMEK Disks",
+          "summary": "Vulnerability assessment now supports scanning disks encrypted with customer-managed encryption keys (CMEK), even for projects outside of VPC Service Controls perimeters."
         }
       }
     ],
     "2025-08-27": [
       {
         "kind": "Changed",
-        "content": "Compliance Manager (available in [Preview](https://cloud.google.com/products#product-launch-stages)) now lets you [remove resources from deployed frameworks](https://cloud.google.com/security-command-center/docs/compliance-manager-apply-framework#remove-resource-assignments).",
+        "content": "Compliance Manager (available in\n[Preview](https://cloud.google.com/products#product-launch-stages)) now lets you\n[remove resources from deployed frameworks](https://cloud.google.com/security-command-center/docs/compliance-manager-apply-framework#remove-resource-assignments).",
         "summary": {
           "title": "Compliance Manager: Resource Removal",
-          "summary": "You can now remove resources from deployed frameworks in Compliance Manager."
+          "summary": "Compliance Manager now allows you to remove resources from deployed frameworks."
         }
       }
     ],

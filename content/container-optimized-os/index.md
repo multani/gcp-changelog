@@ -1,5 +1,275 @@
 # Container Optimized OS
 
+## 2025-09-24
+
+### Changed
+
+
+
+### cos-beta-125-19216-0-53
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.46](https://cos.googlesource.com/third_party/kernel/+/6963667c07329fd67fdfa97b2c039c916e93a348 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19216.0.53/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated cos-gpu-installer to v2.5.7.
+
+### Feature
+
+Added support for the fwctl subsystem and the Mellanox fwctl driver for ARM64.
+
+### Fixed
+
+Added support for NVIDIA driver v580.82.07.
+Updated all latest driver version and default driver
+versions for NVIDIA\_GB200 and NVIDIA\_B200 to v580.82.07.
+
+### Fixed
+
+Upgraded dev-libs/libxslt to version 1.1.43-r1.
+
+### Fixed
+
+Updated the Linux kernel to v6.12.46.
+
+### Security
+
+Upgraded dev-libs/libxml2 to version 2.13.9. This fixes
+CVE-2025-9714.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811500 -> 811534
+
+### Changed
+
+Enabled Coherent Driver Memory Management by default when installing GPU drivers on GB2000.
+
+### Changed
+
+
+
+### cos-117-18613-339-70
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.105](https://cos.googlesource.com/third_party/kernel/+/6132d6c35a2b10e178a2cc0eb1df4f55ed0bea3e ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.339.70/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated cos-gpu-installer to v2.5.7.
+
+### Fixed
+
+Updated golang.org/x/crypto in google-osconfig-agent to v0.31.0.
+
+### Fixed
+
+Added support for NVIDIA driver v580.82.07.
+Updated all latest driver version and default driver
+versions for NVIDIA\_GB200 and NVIDIA\_B200 to v580.82.07.
+
+### Fixed
+
+Upgraded dev-libs/libxslt to version 1.1.43-r1.
+
+### Fixed
+
+Updated the Linux kernel to v6.6.105.
+
+### Security
+
+Upgraded dev-libs/libxml2 to version 2.13.9. This fixes
+CVE-2025-9714.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811774 -> 811794
+
+### Changed
+
+Enabled Coherent Driver Memory Management by default when installing GPU drivers on GB2000.
+
+### Changed
+
+
+
+### cos-113-18244-448-50
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.151](https://cos.googlesource.com/third_party/kernel/+/cf1698d307efdf83b0d49811c6702f5c476d3347 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.448.50/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated cos-gpu-installer to v2.5.7.
+
+### Fixed
+
+Updated golang.org/x/crypto in google-guest-agent to v0.31.0.
+
+### Fixed
+
+Updated golang.org/x/crypto in google-osconfig-agent to v0.31.0.
+
+### Fixed
+
+Upgraded dev-libs/libxslt to version 1.1.43-r1.
+
+### Fixed
+
+Updated the Linux kernel to v6.1.151.
+
+### Security
+
+Upgraded dev-libs/libxml2 to version 2.13.9. This fixes
+CVE-2025-9714.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811983 -> 812054
+
+### Changed
+
+Enabled Coherent Driver Memory Management by default when installing GPU drivers on GB2000.
+
+### Changed
+
+
+
+### cos-dev-129-19284-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.47](https://cos.googlesource.com/third_party/kernel/+/cae186e568245769d61ab1cff0f14366822276c7 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19284.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated cos-gpu-installer to v2.5.7.
+
+### Changed
+
+Updated the Linux kernel to v6.12.47.
+
+### Fixed
+
+Added support for NVIDIA driver v580.82.07.
+Updated all latest driver version and default driver
+versions for NVIDIA\_GB200 and NVIDIA\_B200 to v580.82.07.
+
+### Fixed
+
+Upgraded dev-libs/libxslt to version 1.1.43-r1.
+
+### Security
+
+Upgraded dev-libs/libxml2 to version 2.13.9. This fixes
+CVE-2025-9714, CVE-2025-32415 and CVE-2025-32414.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811423 -> 811483
+* Changed: net.ipv4.udp\_mem: 188034 250715 376068 -> 188034 250714 376068
+
+### Changed
+
+Enabled Coherent Driver Memory Management by default when installing GPU drivers on GB2000.
+
+### Changed
+
+
+
+### cos-109-17800-570-50
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.151](https://cos.googlesource.com/third_party/kernel/+/a4114b18351d2a6e0d84a3c7b02e4513ced87fcf ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/17800.570.50/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated cos-gpu-installer to v2.5.7.
+
+### Fixed
+
+Updated golang.org/x/crypto in google-osconfig-agent to v0.31.0.
+
+### Fixed
+
+Upgraded dev-libs/libxslt to version 1.1.43-r1.
+
+### Fixed
+
+Updated the Linux kernel to v6.1.151.
+
+### Security
+
+Upgraded dev-libs/libxml2 to version 2.13.9. This fixes
+CVE-2025-9714.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812272 -> 812258
+
+### Changed
+
+Enabled Coherent Driver Memory Management by default when installing GPU drivers on GB2000.
+
+### Changed
+
+
+
+### cos-121-18867-199-73
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.105](https://cos.googlesource.com/third_party/kernel/+/6b5ca3235d0b2ee0728b27431e9c285a91583f4c ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.199.73/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated cos-gpu-installer to v2.5.7.
+
+### Fixed
+
+Added support for NVIDIA driver v580.82.07. Updated all latest driver version and default driver versions for NVIDIA\_GB200 and NVIDIA\_B200 to v580.82.07.
+
+### Fixed
+
+Upgraded dev-libs/libxslt to version 1.1.43-r1.
+
+### Security
+
+Upgraded dev-libs/libxml2 to version 2.13.9. This fixes
+CVE-2025-9714.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811710 -> 811752
+
+### Changed
+
+Enabled Coherent Driver Memory Management by default when installing GPU drivers on GB2000.
+
+---
 ## 2025-09-16
 
 ### cos-121-18867-199-65

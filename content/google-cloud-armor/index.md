@@ -1,5 +1,16 @@
 # Google Cloud Armor
 
+## 2025-09-24
+
+### Feature
+
+Cloud Armor's support for Network Threat Intelligence (NTI) in [globally scoped edge security policies](https://cloud.google.com/armor/docs/security-policy-overview#expandable-1) for Media CDN edge cache services is Generally Available.
+
+### Feature
+
+Cloud Armor's support for Autonomous System Numbers (ASNs) in [globally scoped edge security policies](https://cloud.google.com/armor/docs/security-policy-overview#expandable-1) for Media CDN edge cache services is Generally Available.
+
+---
 ## 2025-09-16
 
 ### Feature

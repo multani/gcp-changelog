@@ -1980,6 +1980,124 @@
 
 
 <h1 id="google-secops-soar">Google SecOps SOAR</h1>
+<h2 id="2025-09-17">2025-09-17</h2>
+<h3 id="feature">Feature</h3>
+<p><strong>SentinelOneV2</strong>: Version 41.0</p>
+<ul>
+<li>
+<p>The following new action has been added:</p>
+</li>
+<li>
+<p><strong>Update Alert</strong></p>
+</li>
+<li>
+<p>The following new connector has been added:</p>
+</li>
+<li>
+<p><strong>SentinelOne - Alert Connector</strong></p>
+</li>
+<li>
+<p>A new predefined widget has been added to the following action:</p>
+</li>
+<li>
+<p><strong>Update Alert</strong></p>
+</li>
+</ul>
+<h3 id="feature_1">Feature</h3>
+<p><strong>Google Threat Intelligence</strong>: Version 4.0</p>
+<ul>
+<li>
+<p>The following new action has been added:</p>
+</li>
+<li>
+<p><strong>Set DTM Alert Analysis</strong></p>
+</li>
+</ul>
+<h3 id="feature_2">Feature</h3>
+<p><strong>Palo Alto Cortex XDR</strong>: Version 18.0</p>
+<ul>
+<li>
+<p>The following new actions have been added:</p>
+</li>
+<li>
+<p><strong>Add Comment To Incident</strong></p>
+</li>
+<li><strong>Execute XQL Search</strong></li>
+<li><strong>Get Incident Details</strong></li>
+</ul>
+<h3 id="changed">Changed</h3>
+<p><strong>Google Threat Intelligence</strong>: Version 4.0</p>
+<ul>
+<li>
+<p>Updated the processing of the threat actor entity in the following action:</p>
+</li>
+<li>
+<p><strong>Enrich Entities</strong></p>
+</li>
+<li>Updated the predefined widget in the following actions:</li>
+</ul>
+<p>(REGRESSIVE) The widget now works with GTI information. To see the changes, the widget must be re-added to the existing views in playbooks.</p>
+<ul>
+<li><strong>Enrich Entities</strong></li>
+<li><strong>Enrich IOCs</strong></li>
+<li>
+<p>Added JSON samples to the following action:</p>
+</li>
+<li>
+<p><strong>Enrich Entities</strong></p>
+</li>
+</ul>
+<h3 id="changed_1">Changed</h3>
+<p><strong>Trend Vision One</strong>: Version 6.0</p>
+<ul>
+<li>
+<p>Added support for Agent UUID in the following actions:</p>
+</li>
+<li>
+<p><strong>Enrich Entities</strong></p>
+</li>
+<li><strong>Execute Custom Script</strong></li>
+<li><strong>Isolate Endpoint</strong></li>
+<li><strong>Unisolate Endpoint</strong></li>
+</ul>
+<h3 id="changed_2">Changed</h3>
+<p><strong>Splunk</strong>: Version 58.0</p>
+<ul>
+<li>
+<p>Updated the alert processing logic in the following connector:</p>
+</li>
+<li>
+<p><strong>Splunk ES - Notable Events Connector</strong></p>
+</li>
+</ul>
+<h3 id="changed_3">Changed</h3>
+<p><strong>Jira</strong>: Version 48.0</p>
+<ul>
+<li><strong>Integration</strong>: Updated the SDK version.</li>
+</ul>
+<h3 id="changed_4">Changed</h3>
+<p>Added the ability to modify the <code>API Root</code> and <code>Login API Root</code> in the following integrations:</p>
+<ul>
+<li><strong>Azure Active Directory</strong>: Version 18.0</li>
+<li><strong>Azure AD Identity Protection</strong>: Version 7.0</li>
+<li><strong>Microsoft Teams</strong>: Version 28.0</li>
+</ul>
+<h3 id="changed_5">Changed</h3>
+<p><strong>Vertex AI</strong>: Version 4.0</p>
+<ul>
+<li><strong>Integration</strong>: Increased the default timeout for API requests.</li>
+</ul>
+<h3 id="changed_6">Changed</h3>
+<p><strong>Microsoft Azure Sentinel</strong>: Version 56.0</p>
+<ul>
+<li>
+<p>Updated mapping for the <code>ScheduledAlert</code> event types in the following connector:</p>
+</li>
+<li>
+<p><strong>Microsoft Azure Sentinel Incident Connector v2</strong></p>
+</li>
+</ul>
+<hr />
 <h2 id="2025-09-16">2025-09-16</h2>
 <h3 id="announcement">Announcement</h3>
 <p><strong>Migrate SOAR to Google Cloud</strong></p>
@@ -1996,11 +2114,11 @@
 <h3 id="announcement_3">Announcement</h3>
 <p>Release 6.3.61 is being rolled out to the first phase of regions, as outlined in our <a href="https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">Google SecOps release plan</a>.</p>
 <p>This release contains the following features:</p>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p><strong>Advanced job scheduling</strong></p>
 <p>The job scheduling functionality has been enhanced with advanced options. This functionality provides more precise control and flexible, calendar-like scheduling for your scripts.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/soar/respond/jobs-scheduler/writing-jobs#advanced-scheduling">Configure a new job with advanced scheduling</a>.</p>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p><strong>Use custom fields in the Close Case dialog</strong></p>
 <p>Administrators can now add custom fields to the <strong>Close Case</strong> dialog. This new functionality provides a more streamlined workflow and replaces the <strong>Dynamic Fields</strong> feature.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/custom-fields-in-case-closure">Use custom fields in the Close Case dialog</a>.</p>
@@ -2008,6 +2126,18 @@
 <h2 id="2025-09-06">2025-09-06</h2>
 <h3 id="announcement_4">Announcement</h3>
 <p><a href="https://cloud.google.com/chronicle/docs/soar/release-notes#August_31_2025">Release 6.3.60</a> is now available for all regions.</p>
+<hr />
+<h2 id="2025-09-03">2025-09-03</h2>
+<h3 id="changed_7">Changed</h3>
+<p><strong>Google Threat Intelligence</strong>: Version 3.0</p>
+<ul>
+<li>
+<p>Extended supported filters in the following connector:</p>
+</li>
+<li>
+<p><strong>Google Threat Intelligence - ASM Issues Connector</strong></p>
+</li>
+</ul>
 <hr />
 <h2 id="2025-08-31">2025-08-31</h2>
 <h3 id="announcement_5">Announcement</h3>
@@ -2017,6 +2147,27 @@
 <h2 id="2025-08-30">2025-08-30</h2>
 <h3 id="announcement_6">Announcement</h3>
 <p><a href="https://cloud.google.com/chronicle/docs/soar/release-notes#August_23_2025">Release 6.3.59</a> is now available for all regions.</p>
+<hr />
+<h2 id="2025-08-27">2025-08-27</h2>
+<h3 id="feature_5">Feature</h3>
+<p><strong>Google Workspace</strong>: Version 20.0</p>
+<ul>
+<li>
+<p>The following new actions have been added:</p>
+</li>
+<li>
+<p><strong>Block Extension</strong></p>
+</li>
+<li><strong>Delete Extension</strong></li>
+<li><strong>Get Extension Details</strong></li>
+<li><strong>Get Host Browser Details</strong></li>
+<li><strong>Search User Activity Events</strong></li>
+</ul>
+<h3 id="changed_8">Changed</h3>
+<p><strong>Google Threat Intelligence</strong>: Version 3.0</p>
+<ul>
+<li><strong>Integration:</strong> Updated authentication flow.</li>
+</ul>
 <hr />
 <h2 id="2025-08-23">2025-08-23</h2>
 <h3 id="announcement_7">Announcement</h3>
@@ -2040,12 +2191,12 @@
 <h3 id="announcement_11">Announcement</h3>
 <p>Release 6.3.57 is being rolled out to the first phase of regions, as outlined in our <a href="https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">Google SecOps release plan</a>.</p>
 <p>This release contains the following features:</p>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p><strong>Expression Builder enhancements</strong></p>
 <p>The <strong>Expression Builder</strong> has been enhanced with a new set of pre-built filters to help streamline query creation.</p>
 <p>We've improved the information within the platform for all filters, both new and existing. The supporting documentation provides clearer descriptions and practical examples for each transformer, making it easier to understand their purpose and syntax.</p>
 <p>For details, see <a href="https://cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/using-the-expression-builder">Use the Expression Builder</a>.</p>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p><strong>Remote agent notifications</strong></p>
 <p>Agent notifications will alert you to new remote agent version releases and agent downtime based on your permissions and associated environments. Agent notifications are now enabled by default. You can opt out of these notifications at any time from your user preferences.</p>
 <p>For details, see <a href="https://cloud.google.com/chronicle/docs/soar/working-with-remote-agents/what-is-a-remote-agent#agent-notifications">Agent notifications</a>.</p>
@@ -2058,12 +2209,12 @@
 <h3 id="announcement_13">Announcement</h3>
 <p>Release 6.3.56 is rolling out to the first phase of regions, as outlined in our <a href="https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">Google SecOps release plan</a>.</p>
 <p>This release includes the following features:</p>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p><strong>Automated retries for failed playbook actions</strong></p>
 <p>This feature is in Preview.</p>
 <p>Playbook functionality now supports automatic retries for individual actions that encounter temporary issues, such as network outages, API rate limits, or service unavailability. You can define the number of retry attempts and the intervals between retries directly at the step level within playbooks.</p>
 <p>For more information on configuring and using action retries, see <a href="https://cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/retry-actions">Configure action retries in playbooks</a>.</p>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p><strong>Custom Fields Form widget is now supported in Playbook View</strong></p>
 <p>The <strong>Custom Fields Form</strong> widget is now supported in Playbook View.</p>
 <hr />
@@ -2075,12 +2226,12 @@
 <h3 id="announcement_15">Announcement</h3>
 <p>Release 6.3.55 is being rolled out to the first phase of regions, as outlined in our <a href="https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">Google SecOps release plan</a>.</p>
 <p>This release contains the following features:</p>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p><strong>Automate tasks with Playbook Loops</strong></p>
 <p>This feature is in Preview.</p>
 <p>Playbook functionality has been enhanced to include <strong>Playbook Loops</strong>. This feature update lets playbooks iterate over lists or entities, performing one or more actions for each item. It streamlines automation by eliminating the need for duplicated steps or custom actions when processing multiple items. You can configure Playbook Loops directly within a playbook or inside a playbook block.</p>
 <p>For setup instructions and use case examples , see <a href="https://cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/playbook-loops">Automate tasks with Playbook Loops</a>.</p>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_11">Feature</h3>
 <p><strong>Playbook Simulator enhancements for loops</strong></p>
 <p>The Playbook Simulator now supports visualization and debugging of playbooks that contain loops. This lets you clearly see and navigate through each loop iteration within the simulator viewer.</p>
 <p>Additionally, the step display order has been updated to show actions from top to bottom (oldest at the top, newest at the bottom), with automatic scrolling to the most recent activity.</p>
@@ -2112,7 +2263,7 @@
 <h3 id="announcement_21">Announcement</h3>
 <p>Release 6.3.52 is being rolled out to the first phase of regions as listed <a href="https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
 <p>This release contains the following feature:</p>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_12">Feature</h3>
 <p><strong>Share Case Queue Filters</strong></p>
 <p>You can now share case queue filters with other users. These filters can be saved with specific criteria, such as assignee roles, and shared with individual users, SOC roles, or all users in your organization for quick access.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/apply-and-save-filters">Apply and save filters</a>.</p>
@@ -2125,7 +2276,7 @@
 <h3 id="announcement_23">Announcement</h3>
 <p>Release 6.3.51 is being rolled out to the first phase of regions as listed <a href="https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
 <p>This release contains the following change.</p>
-<h3 id="changed">Changed</h3>
+<h3 id="changed_9">Changed</h3>
 <p><strong>Bulk Playbook Duplication Behavior Updated</strong></p>
 <p>When duplicating playbooks in bulk, the original selection is now preserved. Newly created copies are no longer automatically selected in the platform.</p>
 <hr />
@@ -2158,13 +2309,13 @@
 <h2 id="2025-06-07">2025-06-07</h2>
 <h3 id="announcement_30">Announcement</h3>
 <p>Release 6.3.48 is being rolled out to the first phase of regions.</p>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_13">Feature</h3>
 <p><strong>Playbook Permissions: Support for API Key Roles</strong></p>
 <p>The platform has been updated to extend playbook permissions to also support the SOC Roles associated with API keys, in addition to the user SOC Roles.</p>
 <p>This enhancement affects how integrations using API keys interact with playbooks that have specific permission configurations. For example, GitSync now uses this capability to synchronize playbooks with restricted permissions.</p>
 <p>For more information on how playbook permissions work with users and API keys, see <a href="http://cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/playbook-permissions">Playbook permissions</a>.</p>
 <p>For specific instructions on configuring GitSync with restricted playbooks, see <a href="https://cloud.google.com/chronicle/docs/soar/marketplace/power-ups/gitsync#work-with-playbook-permissions">GitSync - Work with playbook permissions</a>.</p>
-<h3 id="feature_10">Feature</h3>
+<h3 id="feature_14">Feature</h3>
 <p><strong>Advanced Reports: Case Custom Fields</strong></p>
 <p>Advanced Reports (Looker) has been enhanced to include support for custom fields created for Cases.</p>
 <p>This enhancement allows users to leverage organization-specific data captured in custom fields to gain deeper insights and create tailored visualizations within Looker reports. Specific LookML formulas and filtering guidance are now available.</p>
@@ -2181,6 +2332,9 @@
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-secops-soar">Google SecOps SOAR</a></li>
           <li class="nav-item">
+            <a href="#2025-09-17" class="nav-link">2025-09-17</a>
+          </li>
+          <li class="nav-item">
             <a href="#2025-09-16" class="nav-link">2025-09-16</a>
           </li>
           <li class="nav-item">
@@ -2193,10 +2347,16 @@
             <a href="#2025-09-06" class="nav-link">2025-09-06</a>
           </li>
           <li class="nav-item">
+            <a href="#2025-09-03" class="nav-link">2025-09-03</a>
+          </li>
+          <li class="nav-item">
             <a href="#2025-08-31" class="nav-link">2025-08-31</a>
           </li>
           <li class="nav-item">
             <a href="#2025-08-30" class="nav-link">2025-08-30</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2025-08-27" class="nav-link">2025-08-27</a>
           </li>
           <li class="nav-item">
             <a href="#2025-08-23" class="nav-link">2025-08-23</a>

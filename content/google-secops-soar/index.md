@@ -1,5 +1,104 @@
 # Google SecOps SOAR
 
+## 2025-09-17
+
+### Feature
+
+**SentinelOneV2**: Version 41.0
+
+* The following new action has been added:
+
+  + **Update Alert**
+* The following new connector has been added:
+
+  + **SentinelOne - Alert Connector**
+* A new predefined widget has been added to the following action:
+
+  + **Update Alert**
+
+### Feature
+
+**Google Threat Intelligence**: Version 4.0
+
+* The following new action has been added:
+
+  + **Set DTM Alert Analysis**
+
+### Feature
+
+**Palo Alto Cortex XDR**: Version 18.0
+
+* The following new actions have been added:
+
+  + **Add Comment To Incident**
+  + **Execute XQL Search**
+  + **Get Incident Details**
+
+### Changed
+
+**Google Threat Intelligence**: Version 4.0
+
+* Updated the processing of the threat actor entity in the following action:
+
+  + **Enrich Entities**
+* Updated the predefined widget in the following actions:
+
+  (REGRESSIVE) The widget now works with GTI information. To see the changes, the widget must be re-added to the existing views in playbooks.
+
+  + **Enrich Entities**
+  + **Enrich IOCs**
+* Added JSON samples to the following action:
+
+  + **Enrich Entities**
+
+### Changed
+
+**Trend Vision One**: Version 6.0
+
+* Added support for Agent UUID in the following actions:
+
+  + **Enrich Entities**
+  + **Execute Custom Script**
+  + **Isolate Endpoint**
+  + **Unisolate Endpoint**
+
+### Changed
+
+**Splunk**: Version 58.0
+
+* Updated the alert processing logic in the following connector:
+
+  + **Splunk ES - Notable Events Connector**
+
+### Changed
+
+**Jira**: Version 48.0
+
+* **Integration**: Updated the SDK version.
+
+### Changed
+
+Added the ability to modify the `API Root` and `Login API Root` in the following integrations:
+
+* **Azure Active Directory**: Version 18.0
+* **Azure AD Identity Protection**: Version 7.0
+* **Microsoft Teams**: Version 28.0
+
+### Changed
+
+**Vertex AI**: Version 4.0
+
+* **Integration**: Increased the default timeout for API requests.
+
+### Changed
+
+**Microsoft Azure Sentinel**: Version 56.0
+
+* Updated mapping for the `ScheduledAlert` event types in the following connector:
+
+  + **Microsoft Azure Sentinel Incident Connector v2**
+
+---
 ## 2025-09-16
 
 ### Announcement
@@ -54,6 +153,17 @@ For more information, see [Use custom fields in the Close Case dialog](https://c
 [Release 6.3.60](https://cloud.google.com/chronicle/docs/soar/release-notes#August_31_2025) is now available for all regions.
 
 ---
+## 2025-09-03
+
+### Changed
+
+**Google Threat Intelligence**: Version 3.0
+
+* Extended supported filters in the following connector:
+
+  + **Google Threat Intelligence - ASM Issues Connector**
+
+---
 ## 2025-08-31
 
 ### Announcement
@@ -68,6 +178,27 @@ This release contains internal and customer bug fixes.
 ### Announcement
 
 [Release 6.3.59](https://cloud.google.com/chronicle/docs/soar/release-notes#August_23_2025) is now available for all regions.
+
+---
+## 2025-08-27
+
+### Feature
+
+**Google Workspace**: Version 20.0
+
+* The following new actions have been added:
+
+  + **Block Extension**
+  + **Delete Extension**
+  + **Get Extension Details**
+  + **Get Host Browser Details**
+  + **Search User Activity Events**
+
+### Changed
+
+**Google Threat Intelligence**: Version 3.0
+
+* **Integration:** Updated authentication flow.
 
 ---
 ## 2025-08-23

@@ -1,5 +1,27 @@
 # Assured Workloads
 
+## 2025-09-10
+
+### Feature
+
+Access Approval supports Chrome Enterprise Premium secure gateway in the GA stage.
+
+### Feature
+
+Access Transparency supports Chrome Enterprise Premium secure gateway in the GA stage.
+
+---
+## 2025-09-08
+
+### Feature
+
+Image streaming is generally available [(GA)](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+Image streaming is generally available [(GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-09-05
 
 ### Feature
@@ -47,6 +69,17 @@ The [IRS 1075 control package](https://cloud.google.com/assured-workloads/docs/c
 * Vertex AI Training
 * Web Risk
 * Workforce Identity Federation
+
+---
+## 2025-09-02
+
+### Feature
+
+Access Approval supports Web Risk in the GA stage.
+
+### Feature
+
+Access Transparency supports Web Risk in the GA stage.
 
 ---
 ## 2025-08-15

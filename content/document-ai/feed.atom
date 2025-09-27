@@ -2,9 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Document AI</title>
   <subtitle>Changelog for Google Cloud product: Document AI</subtitle>
-  <updated>2025-09-10T00:00:00+00:00</updated>
+  <updated>2025-09-26T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:document-ai</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/document-ai/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:document-ai:2025-09-26:feature:0</id>
+    <published>2025-09-26T00:00:00+00:00</published>
+    <updated>2025-09-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://cloud.google.com/document-ai/docs/ce-with-genai">custom extractor</a> model
+<code>pretrained-foundation-model-v1.5.1-2025-08-07</code> with improved adaptive few-shot
+learning is available as Release Candidate
+(<a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>).</p>]]></content>
+    <summary>A new version of the custom extractor model, pretrained-foundation-model-v1.5.1-2025-08-07, is now available as a Release Candidate. This update features improved adaptive few-shot learning.</summary>
+    <title>Feature: New AI Model Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:document-ai:2025-09-23:feature:0</id>
+    <published>2025-09-23T00:00:00+00:00</published>
+    <updated>2025-09-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://cloud.google.com/document-ai/docs/custom-classifier">Custom classifier</a>
+model <a href="https://cloud.google.com/document-ai/docs/custom-classifier#models"><code>pretrained-classifier-v1.5-2025-08-05</code></a>
+powered by Gemini 2.5 Flash is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>. It has ML
+processing available for US and EU regions and 30-page-per-minute processing
+requests.</p>
+<p>Unlike the prior custom classifier, which used classical
+machine learning, this version features a new platform. It accommodates:</p>
+<ul>
+<li>High accuracy immediately, based on the document classes you define.</li>
+<li>Few-shot learning to further improve accuracy.</li>
+<li>Use of descriptions when labeling for more context and insight for document classes.</li>
+<li>More accurate results with the same training dataset on the fine-tuned generative AI model, compared to the trained version.</li>
+<li>Autolabeling documents for fine-tuning and evaluation.</li>
+<li>Generative AI to fine-tune and heighten accuracy.</li>
+</ul>
+<p>For more information on processor versions, see <a href="https://cloud.google.com/document-ai/docs/manage-processor-versions">Managing processor
+versions</a>.</p>]]></content>
+    <summary>A new custom classifier powered by Gemini 2.5 Flash is now in preview. It offers improved accuracy and features like few-shot learning and autolabeling.</summary>
+    <title>Feature: Custom Classifier</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -13,9 +54,12 @@
     <published>2025-09-10T00:00:00+00:00</published>
     <updated>2025-09-10T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Custom Extractor version <a href="https://cloud.google.com/document-ai/docs/processors-list#processor_cde"><code>pretrained-foundation-model-v1.4-2025-02-05</code></a> will no longer be accessible on <strong>February 5, 2026</strong>.</p>
-<p>To avoid service disruptions, migrate to a later version such as <code>pretrained-foundation-model-v1.5-2025-05-05</code> or <code>pretrained-foundation-model-v1.5-pro-2025-06-20</code>. To learn more about the migration process, refer to our <a href="https://cloud.google.com/document-ai/docs/manage-processor-versions">Manage processor versions</a> documentation.</p>]]></content>
-    <summary>The Custom Extractor version pretrained-foundation-model-v1.4-2025-02-05 will be deprecated on February 5, 2026. Please migrate to a newer version to avoid service disruptions.</summary>
-    <title>Deprecated: Deprecated Custom Extractor Version</title>
+<p>To avoid service disruptions, migrate to a later version such as
+<code>pretrained-foundation-model-v1.5-2025-05-05</code> or <code>pretrained-foundation-model-v1.5-pro-2025-06-20</code>.
+To learn more about the migration process, refer to <a href="https://cloud.google.com/document-ai/docs/manage-processor-versions">Manage processor
+versions</a>.</p>]]></content>
+    <summary>Custom Extractor version `pretrained-foundation-model-v1.4-2025-02-05` will be deprecated on February 5, 2026. Please migrate to a newer version like `pretrained-foundation-model-v1.5-2025-05-05` or `pretrained-foundation-model-v1.5-pro-2025-06-20` to avoid service disruption. For more details on migration, refer to the documentation on managing processor versions.</summary>
+    <title>Deprecated: Custom Extractor v1.4 Deprecation</title>
   </entry>
   <entry>
     <author>
@@ -24,15 +68,23 @@
     <id>urn:github:multani:gcp-changelog:document-ai:2025-09-09:announcement:0</id>
     <published>2025-09-09T00:00:00+00:00</published>
     <updated>2025-09-09T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Document AI supports <a href="https://cloud.google.com/document-ai/quotas#service_tiers">two service tiers</a> and associated quotas: provisioned and best effort tiers.</p>
-<p>The base is <strong>provisioned tier</strong> quota, which provides 120 pages per minute for Gemini 2.0 and 2.5 Flash LLM and 30 pages per minute for Gemini 2.5 Pro LLM.</p>
-<p>If you require more volume, <strong>best effort tier</strong> quota provides 120 pages per minute for Gemini 2.0 and 2.5 Flash and 60 pages per minute for Gemini 2.5 Pro, and is only used once the
-provisioned quota has been exhausted. This applies to quotas <code>BestEffortOnlineProcessDocumentPagesPerMinutePerProjectUS</code>, and <code>EU</code>, and
-<code>best_effort_online_process_document_pages_us</code> and <code>eu</code> in the console.</p>
-<p>Best effort can get up to 240 pages per minute for <a href="https://cloud.google.com/document-ai/docs/ce-with-genai">custom data extractor models</a>
-v1.4 and v1.5 with a quota increase request (QIR). You can make a QIR by contacting your sales team representative.</p>
-<p>There is no service level agreement <a href="https://cloud.google.com/document-ai/sla">(SLA)</a> for best effort tier.</p>]]></content>
-    <summary>Document AI offers provisioned and best effort service tiers with different page-per-minute quotas for Gemini models. Best effort tiers can be increased for custom models with a QIR, but have no SLA.</summary>
+    <content type="html"><![CDATA[<p>Document AI supports <a href="https://cloud.google.com/document-ai/quotas#service_tiers">two service tiers</a>
+and associated quotas: provisioned and best effort tiers.</p>
+<p>The base is the provisioned tier quota, which provides 120 pages per minute for
+Gemini 2.0 and 2.5 Flash LLM and 30 pages per minute for Gemini
+2.5 Pro LLM.</p>
+<p>If you require more volume, best effort tier quota provides 120 pages per
+minute for Gemini 2.0 2.5 Flash and 60 pages per minute for
+Gemini 2.5 Pro. It's only used when the provisioned quota has been
+exhausted. This applies to quotas <code>BestEffortOnlineProcessDocumentPagesPerMinutePerProjectUS</code>
+and <code>EU</code>, as well as <code>best_effort_online_process_document_pages_us</code> and <code>eu</code> in the console.</p>
+<p>Best effort can get up to 240 pages per minute for <a href="https://cloud.google.com/document-ai/docs/ce-with-genai">custom data extractor
+models</a>
+v1.4 and v1.5 with a quota increase request (QIR). You can make a QIR by
+contacting your sales team representative.</p>
+<p>There is no service level agreement <a href="https://cloud.google.com/document-ai/sla">(SLA)</a>
+for best effort tier.</p>]]></content>
+    <summary>Document AI offers provisioned and best effort service tiers with different quotas for Gemini LLM versions. The provisioned tier provides base quotas, while the best effort tier offers higher volumes when needed, especially for custom models, but without an SLA.</summary>
     <title>Announcement: Document AI Service Tiers</title>
   </entry>
   <entry>
@@ -42,10 +94,12 @@ v1.4 and v1.5 with a quota increase request (QIR). You can make a QIR by contact
     <id>urn:github:multani:gcp-changelog:document-ai:2025-09-03:feature:0</id>
     <published>2025-09-03T00:00:00+00:00</published>
     <updated>2025-09-03T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Custom extractor model <code>pretrained-foundation-model-v1.5-pro-2025-06-20</code> is available as General Availability (<a href="https://cloud.google.com/products/#product-launch-stages">GA</a>).</p>
-<p>For more information about available models, see the <a href="https://cloud.google.com/document-ai/docs/ce-with-genai">custom extractor</a> page.</p>]]></content>
-    <summary>The custom extractor model `pretrained-foundation-model-v1.5-pro-2025-06-20` has reached General Availability.</summary>
-    <title>Feature: Custom Extractor Model Now Generally Available</title>
+    <content type="html"><![CDATA[<p>Custom extractor model <code>pretrained-foundation-model-v1.5-pro-2025-06-20</code> is
+available as General Availability (<a href="https://cloud.google.com/products/#product-launch-stages">GA</a>).</p>
+<p>For more information about available models, see the <a href="https://cloud.google.com/document-ai/docs/ce-with-genai">custom
+extractor</a> page.</p>]]></content>
+    <summary>The custom extractor model `pretrained-foundation-model-v1.5-pro-2025-06-20` has reached General Availability. This powerful new model enhances document processing capabilities.</summary>
+    <title>Feature: Custom Extractor Model Now Available</title>
   </entry>
   <entry>
     <author>
@@ -54,12 +108,24 @@ v1.4 and v1.5 with a quota increase request (QIR). You can make a QIR by contact
     <id>urn:github:multani:gcp-changelog:document-ai:2025-08-29:feature:0</id>
     <published>2025-08-29T00:00:00+00:00</published>
     <updated>2025-08-29T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Derived entity and signature detection are now supported in <a href="https://cloud.google.com/document-ai/docs/ce-with-genai">Custom Extractor</a> models <code>pretrained-foundation-model-v1.4-2025-02-05</code> as General Availability <a href="https://cloud.google.com/products/#product-launch-stages">(GA)</a>, and <code>pretrained-foundation-model-v1.5-2025-05-05</code> and <code>pretrained-foundation-model-v1.5-pro-2025-06-20</code> as Preview.</p>
-<p>Signature detection lets you identify hand-written signatures by using visual cues in the document. Derived entity detection lets you deduce entities by inference without requiring the value to be explicitly present in the text. You can use this feature to deduce the country in an address, counting items in a table, or detecting if an ID is fake.</p>
-<p>These can be enabled in the console when creating new labels or by using the <a href="https://cloud.google.com/document-ai/docs/reference/rpc/google.cloud.documentai.v1#entitytype"><code>DocumentSchema.EntityType</code></a> resource in the API.</p>
-<p>For more information, read <a href="https://cloud.google.com/document-ai/docs/ce-derived-signature">Custom extractor with derived fields</a>, and <a href="https://cloud.google.com/document-ai/docs/create-dataset#choose_label_attributes">choose label attributes</a>.</p>]]></content>
-    <summary>Derived entity and signature detection are now available for Custom Extractor models. These features can help you identify handwritten signatures and deduce entities by inference, improving document analysis.</summary>
-    <title>Feature: New features for Custom Extractor models</title>
+    <content type="html"><![CDATA[<p>Derived entity and signature detection are now supported in <a href="https://cloud.google.com/document-ai/docs/ce-with-genai">Custom
+Extractor</a> models <code>pretrained-foundation-model-v1.4-2025-02-05</code>
+as General Availability <a href="https://cloud.google.com/products/#product-launch-stages">(GA)</a>
+and <code>pretrained-foundation-model-v1.5-2025-05-05</code>, as well as <code>pretrained-foundation-model-v1.5-pro-2025-06-20</code>
+as Preview.</p>
+<p>Signature detection lets you identify handwritten signatures by using visual
+cues in the document. Derived entity detection lets you deduce entities by
+inference without requiring the value to be explicitly present in the text. You
+can use this feature to deduce the country in an address, counting items in a
+table, or detecting if an ID is fake.</p>
+<p>These can be enabled in the console when creating labels or by using the
+<a href="https://cloud.google.com/document-ai/docs/reference/rpc/google.cloud.documentai.v1#entitytype"><code>DocumentSchema.EntityType</code></a>
+resource in the API.</p>
+<p>For more information, read <a href="https://cloud.google.com/document-ai/docs/ce-derived-signature">Custom extractor with derived
+fields</a> and <a href="https://cloud.google.com/document-ai/docs/create-dataset#choose_label_attributes">choose label
+attributes</a>.</p>]]></content>
+    <summary>Derived entity and signature detection are now supported in Custom Extractor models as General Availability and Preview. Signature detection identifies handwritten signatures, while derived entity detection deduces entities by inference. These features can be enabled in the console or via the API.</summary>
+    <title>Feature: Derived Entity and Signature Detection Now Available for Custom Extractor Models</title>
   </entry>
   <entry>
     <author>

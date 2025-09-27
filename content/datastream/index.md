@@ -1,5 +1,12 @@
 # Datastream
 
+## 2025-09-23
+
+### Feature
+
+Datastream support for MongoDB as a source is now [generally available (GA)](https://cloud.google.com/products/#product-launch-stages). For more information, see [the documentation](https://cloud.google.com/datastream/docs/sources-mongodb).
+
+---
 ## 2025-06-30
 
 ### Feature

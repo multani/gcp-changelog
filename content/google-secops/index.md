@@ -1,5 +1,38 @@
 # Google SecOps
 
+## 2025-09-28
+
+### Feature
+
+**Podman support for Remote Agents**
+
+You can now install a Remote Agent using Podman. This new functionality provides a streamlined deployment workflow—a lightweight alternative to existing installation methods.
+For details, see [Deploy an agent with Podman](https://cloud.google.com/chronicle/docs/soar/working-with-remote-agents/deploy-agent-with-podman).
+
+### Feature
+
+**Debian support for remote agents**
+
+You can now install a Remote Agent using Debian. This new functionality provides a streamlined deployment workflow—an alternative to existing installation methods.
+For details, see [Deploy an agent with Debian](https://cloud.google.com/chronicle/docs/soar/working-with-remote-agents/create-agent-with-installer-on-debian).
+
+### Announcement
+
+Remote Agent, Release 2.5.0 contains the following changes:
+
+### Changed
+
+**Increased Alert Trimming limit for Remote Agent**
+
+The default setting for Alert Trimming has been increased to 25 MB.
+
+### Changed
+
+**Publisher Connector package size limit enforced**
+
+The maximum allowed size for a Publisher's Connector Package is now limited to 25 MB.
+
+---
 ## 2025-09-23
 
 ### Changed
@@ -87,19 +120,19 @@ New parser documentation is available to help you ingest and normalize logs from
 
 ### Feature
 
-**Advanced job scheduling**
-
-The job scheduling functionality has been enhanced with advanced options. This functionality provides more precise control and flexible, calendar-like scheduling for your scripts.
-
-For more information, see [Configure a new job with advanced scheduling](https://cloud.google.com/chronicle/docs/soar/respond/jobs-scheduler/writing-jobs#advanced-scheduling).
-
-### Feature
-
 **Use custom fields in the Close Case dialog**
 
 Administrators can now add custom fields to the **Close Case** dialog. This new functionality provides a more streamlined workflow and replaces the **Dynamic Fields** feature.
 
 For more information, see [Use custom fields in the Close Case dialog](https://cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/custom-fields-in-case-closure).
+
+### Feature
+
+**Advanced job scheduling**
+
+The job scheduling functionality has been enhanced with advanced options. This functionality provides more precise control and flexible, calendar-like scheduling for your scripts.
+
+For more information, see [Configure a new job with advanced scheduling](https://cloud.google.com/chronicle/docs/soar/respond/jobs-scheduler/writing-jobs#advanced-scheduling).
 
 ---
 ## 2025-09-05

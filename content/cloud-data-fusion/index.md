@@ -1,5 +1,16 @@
 # Cloud Data Fusion
 
+## 2025-09-09
+
+### Changed
+
+The Salesforce plugin version 1.7.0 is available in Cloud Data Fusion version 6.8.0 and later. This release includes the following change:
+
+* Upgrade of Salesforce Bulk API V1 version from 62.0 to 64.0 ([PLUGIN-1926](https://cdap.atlassian.net/browse/PLUGIN-1926)).
+
+Salesforce has deprecated certain fields in the API version 64.0. Upgrading to Salesforce plugin version 1.7.0 might cause pipelines that use these fields, to fail. To ensure your pipelines continue to work, you must manually update your pipeline schema to either load a new schema or remove the deprecated fields. For more information, see [Prerequisites for upgrading to Salesforce plugin version 1.7.0](https://cloud.google.com/data-fusion/docs/how-to/configure-salesforce-batch-source#upgrade-prereq).
+
+---
 ## 2025-08-28
 
 ### Changed

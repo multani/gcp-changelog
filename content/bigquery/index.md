@@ -1,5 +1,15 @@
 # BigQuery
 
+## 2025-09-29
+
+### Announcement
+
+[History-based query optimizations](https://cloud.google.com/bigquery/docs/history-based-optimizations)
+are now enabled by default. If history-based optimizations have been previously
+disabled, you can [re-enable history-based optimizations](https://cloud.google.com/bigquery/docs/history-based-optimizations#enable-history-based-optimization)
+for your project or organization.
+
+---
 ## 2025-09-25
 
 ### Feature
@@ -78,12 +88,12 @@ You can use the [`JSON_KEYS` function](https://cloud.google.com/bigquery/docs/re
 
 ### Feature
 
-In the BigQuery Studio, in the Explorer pane, you can now [open saved queries in Connected Sheets](https://cloud.google.com/bigquery/docs/manage-saved-queries#open-saved-queries-in-sheets). This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+You can now enable the [BigQuery advanced runtime](https://cloud.google.com/bigquery/docs/advanced-runtime) to improve query execution time and slot usage. This feature is [generally available](https://cloud.google.com/products/#product-launch-stages) (GA).
+Between September 15, 2025 and early 2026, the BigQuery advanced runtime will become the default runtime for all projects.
 
 ### Feature
 
-You can now enable the [BigQuery advanced runtime](https://cloud.google.com/bigquery/docs/advanced-runtime) to improve query execution time and slot usage. This feature is [generally available](https://cloud.google.com/products/#product-launch-stages) (GA).
-Between September 15, 2025 and early 2026, the BigQuery advanced runtime will become the default runtime for all projects.
+In the BigQuery Studio, in the Explorer pane, you can now [open saved queries in Connected Sheets](https://cloud.google.com/bigquery/docs/manage-saved-queries#open-saved-queries-in-sheets). This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
 
 ### Libraries
 

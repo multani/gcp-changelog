@@ -1,5 +1,18 @@
 # Gemini Code Assist
 
+## 2025-09-29
+
+### Feature
+
+
+
+### Add code snippets to the chat context
+
+You can now select, attach, and direct Gemini to focus on code snippets with
+IntelliJ Gemini Code Assist. [Code snippet selection](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#add_selected_code_snippets_to_context)
+enables discrete analysis of smaller code blocks instead of entire files.
+
+---
 ## 2025-09-26
 
 ### Next Edit Predictions in VS Code (Preview)
@@ -75,6 +88,11 @@ the feature is configured correctly and ready to go. For more information, see
 ---
 ## 2025-09-11
 
+### Regenerate a prompt response in VS Code
+
+You can [regenerate a prompt response](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#regenerate_a_prompt_response) to your most recent prompt, where
+Gemini Code Assist re-evaluates your prompt and provides a new response.
+
 ### Delete prompt and response pair in VS Code
 
 You can [delete your prompt and Gemini's response to that prompt](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#delete_prompt_and_response_pairs) in your chat with
@@ -110,11 +128,6 @@ functional events.
 
 You can [edit a prior prompt](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#edit_a_prior_prompt) in Gemini Code Assist and receive a regenerated
 response based on your edited prompt.
-
-### Regenerate a prompt response in VS Code
-
-You can [regenerate a prompt response](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#regenerate_a_prompt_response) to your most recent prompt, where
-Gemini Code Assist re-evaluates your prompt and provides a new response.
 
 ---
 ## 2025-09-10

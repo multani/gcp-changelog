@@ -2,9 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Data Fusion</title>
   <subtitle>Changelog for Google Cloud product: Cloud Data Fusion</subtitle>
-  <updated>2025-08-28T00:00:00+00:00</updated>
+  <updated>2025-09-09T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-data-fusion</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-data-fusion/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-data-fusion:2025-09-09:changed:0</id>
+    <published>2025-09-09T00:00:00+00:00</published>
+    <updated>2025-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Salesforce plugin version 1.7.0 is available in Cloud Data Fusion version 6.8.0 and later. This release includes the following change:</p>
+<ul>
+<li>Upgrade of Salesforce Bulk API V1 version from 62.0 to 64.0 (<a href="https://cdap.atlassian.net/browse/PLUGIN-1926">PLUGIN-1926</a>).</li>
+</ul>
+<p>Salesforce has deprecated certain fields in the API version 64.0. Upgrading to Salesforce plugin version 1.7.0 might cause pipelines that use these fields, to fail. To ensure your pipelines continue to work, you must manually update your pipeline schema to either load a new schema or remove the deprecated fields. For more information, see <a href="https://cloud.google.com/data-fusion/docs/how-to/configure-salesforce-batch-source#upgrade-prereq">Prerequisites for upgrading to Salesforce plugin version 1.7.0</a>.</p>]]></content>
+    <summary>New version of the Salesforce plugin available. Please check prerequisites to ensure pipeline compatibility.</summary>
+    <title>Changed: Salesforce Plugin Update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

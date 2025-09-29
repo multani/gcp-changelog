@@ -2,6 +2,46 @@
 
 ## 2025-09-28
 
+### Announcement
+
+**Update CrowdStrike API permissions before decommission**
+
+CrowdStrike is decommissioning its Detects API on September 30, 2025. This API has
+been replaced by the Alerts API. To ensure that your data feeds continue without
+interruption, you may need to update your API permissions.
+
+This change impacts you if your Google SecOps tenant meets both of the following conditions:
+
+* You use the CrowdStrike Detection Monitoring API connector, which ingests the `CS_DETECTS` log type.
+* The CrowdStrike API client configured for that feed lacks the permissions to read alerts Read.
+
+To prevent disruption to your CrowdStrike data ingestion, you must update your API
+client permissions before September 30, 2025.
+Follow the instructions in [Migrate from CrowdStrike Detects API to Alerts API](https://cloud.google.com/chronicle/docs/detection/migrate-detects-api-to-alerts-api)
+to migrate your configuration to use the Alerts API.
+
+For more details, see [CrowdStrike’s official decommissioning notice](https://supportportal.crowdstrike.com/s/article/Tech-Alert-30-Day-Notice-Planned-Decommission-Announcement-of-the-DetectionSummaryEvent-and-detects-API).
+
+### Announcement
+
+**Update CrowdStrike API permissions before decommission**
+
+CrowdStrike is decommissioning its Detects API on September 30, 2025. This API
+has been replaced by the Alerts API. To ensure that your data feeds continue without
+interruption, you may need to update your API permissions.
+
+This change impacts you if your Google SecOps tenant meets both of the following conditions:
+
+* You use the CrowdStrike Detection Monitoring API connector, which ingests the `CS_DETECTS` log type.
+* The CrowdStrike API client configured for that feed lacks the permissions to read alerts Read.
+
+To prevent disruption to your CrowdStrike data ingestion, you must update your API
+client permissions before September 30, 2025.
+Follow the instructions in [Migrate from CrowdStrike Detects API to Alerts API](https://cloud.google.com/chronicle/docs/detection/migrate-detects-api-to-alerts-api)
+to migrate your configuration to use the Alerts API.
+
+For more details, see [CrowdStrike’s official decommissioning notice](https://supportportal.crowdstrike.com/s/article/Tech-Alert-30-Day-Notice-Planned-Decommission-Announcement-of-the-DetectionSummaryEvent-and-detects-API).
+
 ### Feature
 
 **Podman support for Remote Agents**
@@ -76,6 +116,70 @@ The maximum allowed size for a Publisher's Connector Package is now limited to 2
 ### Announcement
 
 [Release 6.3.62](https://cloud.google.com/chronicle/docs/soar/release-notes#September_16_2025) is now available for all regions.
+
+---
+## 2025-09-25
+
+### Feature
+
+New **Apache Kafka** integration
+
+### Feature
+
+**Microsoft Azure Sentinel**: Version 57.0
+
+* The following new job has been added:
+
+  + **Sync Incidents**
+
+### Changed
+
+**Any.Run**: Version 8.0
+
+* Updated the available privacy settings in the following actions:
+
+  + **Analyze URL**
+  + **Analyze File URL**
+  + **Analyze File**
+
+### Changed
+
+**CrowdStrike Falcon**: Version 64.0
+
+* Updated timeout handling in the following connector:
+
+  + **Crowdstrike Falcon - Streaming Events Connector**
+* **Integration**: Updated authentication to support multi-tenancy execution.
+
+### Changed
+
+**Google Workspace**: Version 21.0
+
+* Expanded capabilities of the following action:
+
+  + **List OU Of Account**
+* Updated processing of the organization unit inside the following actions:
+
+  + **Block Extension**
+  + **Delete Extension**
+  + **List OU Of Account**
+
+### Changed
+
+**Google Chronicle**: Version 65.0
+
+* Updated the filtering mechanism of the following action:
+
+  + **Get Data Tables**
+
+### Changed
+
+**Orca Security**: Version 12.0
+
+* **Integration**: (REGRESSIVE) Updated to support the latest API version.
+
+  Ontology has been updated. Overwrite current ontology mapping to align
+  with the new API Alert structure.
 
 ---
 ## 2025-09-23
@@ -284,7 +388,7 @@ New parser documentation is available to help you ingest and normalize logs from
 [Collect VMware Avi Load Balancer WAF logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-avilb-waf)   
 [Collect VMware Horizon logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-horizon)   
 [Collect VMware VeloCloud SD-WAN logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-velocloud-sdwan)   
-[Collect Zoom operation logs](https://www.google.com/search?q=https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zoom-operations)
+[Collect Zoom operation logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zoom-operations)
 
 ### Announcement
 
@@ -322,18 +426,10 @@ New parser documentation is available to help you ingest and normalize logs from
 [Collect VMware Avi Load Balancer WAF logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-avilb-waf)   
 [Collect VMware Horizon logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-horizon)   
 [Collect VMware VeloCloud SD-WAN logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-velocloud-sdwan)   
-[Collect Zoom operation logs](https://www.google.com/search?q=https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zoom-operations)
+[Collect Zoom operation logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zoom-operations)
 
 ---
 ## 2025-09-07
-
-### Feature
-
-**Use custom fields in the Close Case dialog**
-
-Administrators can now add custom fields to the **Close Case** dialog. This new functionality provides a more streamlined workflow and replaces the **Dynamic Fields** feature.
-
-For more information, see [Use custom fields in the Close Case dialog](https://cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/custom-fields-in-case-closure).
 
 ### Feature
 
@@ -342,6 +438,14 @@ For more information, see [Use custom fields in the Close Case dialog](https://c
 The job scheduling functionality has been enhanced with advanced options. This functionality provides more precise control and flexible, calendar-like scheduling for your scripts.
 
 For more information, see [Configure a new job with advanced scheduling](https://cloud.google.com/chronicle/docs/soar/respond/jobs-scheduler/writing-jobs#advanced-scheduling).
+
+### Feature
+
+**Use custom fields in the Close Case dialog**
+
+Administrators can now add custom fields to the **Close Case** dialog. This new functionality provides a more streamlined workflow and replaces the **Dynamic Fields** feature.
+
+For more information, see [Use custom fields in the Close Case dialog](https://cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/custom-fields-in-case-closure).
 
 ### Announcement
 

@@ -1981,6 +1981,21 @@
 
 <h1 id="google-secops">Google SecOps</h1>
 <h2 id="2025-09-28">2025-09-28</h2>
+<h3 id="announcement">Announcement</h3>
+<p><strong>Update CrowdStrike API permissions before decommission</strong></p>
+<p>CrowdStrike is decommissioning its Detects API on September 30, 2025. This API
+has been replaced by the Alerts API. To ensure that your data feeds continue without
+interruption, you may need to update your API permissions.</p>
+<p>This change impacts you if your Google SecOps tenant meets both of the following conditions:</p>
+<ul>
+<li>You use the CrowdStrike Detection Monitoring API connector, which ingests the <code>CS_DETECTS</code> log type.</li>
+<li>The CrowdStrike API client configured for that feed lacks the permissions to read alerts Read.</li>
+</ul>
+<p>To prevent disruption to your CrowdStrike data ingestion, you must update your API
+client permissions before September 30, 2025.
+Follow the instructions in <a href="https://cloud.google.com/chronicle/docs/detection/migrate-detects-api-to-alerts-api">Migrate from CrowdStrike Detects API to Alerts API</a>
+to migrate your configuration to use the Alerts API.</p>
+<p>For more details, see <a href="https://supportportal.crowdstrike.com/s/article/Tech-Alert-30-Day-Notice-Planned-Decommission-Announcement-of-the-DetectionSummaryEvent-and-detects-API">CrowdStrike’s official decommissioning notice</a>.</p>
 <h3 id="feature">Feature</h3>
 <p><strong>Podman support for Remote Agents</strong></p>
 <p>You can now install a Remote Agent using Podman. This new functionality provides a streamlined deployment workflow—a lightweight alternative to existing installation methods.
@@ -1989,7 +2004,7 @@ For details, see <a href="https://cloud.google.com/chronicle/docs/soar/working-w
 <p><strong>Debian support for remote agents</strong></p>
 <p>You can now install a Remote Agent using Debian. This new functionality provides a streamlined deployment workflow—an alternative to existing installation methods.
 For details, see <a href="https://cloud.google.com/chronicle/docs/soar/working-with-remote-agents/create-agent-with-installer-on-debian">Deploy an agent with Debian</a>.</p>
-<h3 id="announcement">Announcement</h3>
+<h3 id="announcement_1">Announcement</h3>
 <p>Remote Agent, Release 2.5.0 contains the following changes:</p>
 <h3 id="changed">Changed</h3>
 <p><strong>Increased Alert Trimming limit for Remote Agent</strong></p>
@@ -2004,7 +2019,7 @@ For details, see <a href="https://cloud.google.com/chronicle/docs/soar/working-w
 <p>Google SecOps is migrating the transport layer for third-party API feeds to a new platform to improve performance and reliability. This migration will be completed in phases and is expected to finish by the end of October 2025. The migration should not impact any existing or new, third-party API feeds. If you experience any unexpected issues with your feeds during the migration, contact your Google SecOps representative.</p>
 <hr />
 <h2 id="2025-09-16">2025-09-16</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p><strong>Migrate SOAR to Google Cloud</strong></p>
 <p>We're actively migrating all SOAR customers and partners to their respective Google Cloud projects. This migration unifies your SOAR experience with your existing cloud environment. For more information, see <a href="https://cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp">SOAR migration overview</a> and <a href="https://cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-soar-faq">FAQ</a>.</p>
 <hr />
@@ -2022,7 +2037,7 @@ For details, see <a href="https://cloud.google.com/chronicle/docs/soar/working-w
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/about/data-retention">View data retention in your Google SecOps account</a>.</p>
 <hr />
 <h2 id="2025-09-08">2025-09-08</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p><strong>New parser documentation now available</strong></p>
 <p>New parser documentation is available to help you ingest and normalize logs from the following sources:</p>
 <p><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/akamai-cm">Collect Akamai Cloud Monitor logs</a> <br />
@@ -2055,17 +2070,17 @@ For details, see <a href="https://cloud.google.com/chronicle/docs/soar/working-w
 <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-avilb-waf">Collect VMware Avi Load Balancer WAF logs</a> <br />
 <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-horizon">Collect VMware Horizon logs</a> <br />
 <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-velocloud-sdwan">Collect VMware VeloCloud SD-WAN logs</a> <br />
-<a href="https://www.google.com/search?q=https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zoom-operations">Collect Zoom operation logs</a></p>
+<a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zoom-operations">Collect Zoom operation logs</a></p>
 <hr />
 <h2 id="2025-09-07">2025-09-07</h2>
 <h3 id="feature_4">Feature</h3>
-<p><strong>Use custom fields in the Close Case dialog</strong></p>
-<p>Administrators can now add custom fields to the <strong>Close Case</strong> dialog. This new functionality provides a more streamlined workflow and replaces the <strong>Dynamic Fields</strong> feature.</p>
-<p>For more information, see <a href="https://cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/custom-fields-in-case-closure">Use custom fields in the Close Case dialog</a>.</p>
-<h3 id="feature_5">Feature</h3>
 <p><strong>Advanced job scheduling</strong></p>
 <p>The job scheduling functionality has been enhanced with advanced options. This functionality provides more precise control and flexible, calendar-like scheduling for your scripts.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/soar/respond/jobs-scheduler/writing-jobs#advanced-scheduling">Configure a new job with advanced scheduling</a>.</p>
+<h3 id="feature_5">Feature</h3>
+<p><strong>Use custom fields in the Close Case dialog</strong></p>
+<p>Administrators can now add custom fields to the <strong>Close Case</strong> dialog. This new functionality provides a more streamlined workflow and replaces the <strong>Dynamic Fields</strong> feature.</p>
+<p>For more information, see <a href="https://cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/custom-fields-in-case-closure">Use custom fields in the Close Case dialog</a>.</p>
 <hr />
 <h2 id="2025-09-05">2025-09-05</h2>
 <h3 id="changed_3">Changed</h3>
@@ -2085,7 +2100,7 @@ For details, see <a href="https://cloud.google.com/chronicle/docs/soar/working-w
 <li>For details on the Okta parser, see <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/okta#udm_mapping_table">UDM mapping table</a> and <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/okta#udm_mapping_delta_reference">UDM mapping delta reference</a>.</li>
 <li>For details on the Symantec Endpoint Protection parser, see <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-endpoint-protection#udm_mapping_table">Collect Symantec Endpoint Protection logs</a> and <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-endpoint-protection#udm-mapping-delta">UDM mapping delta reference</a>.</li>
 </ul>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p><strong>CBN alerts functionality removed from all prebuilt parsers</strong></p>
 <p>As part of deprecating the Configuration Based Normalization (CBN) alerts functionality, all <a href="https://cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#types_of_parsers">prebuilt parsers</a> that included the CBN alerts functionality were updated, and the functionality was removed.</p>
 <p><strong>Note:</strong> For information about how you can migrate CBN alerts to YARA-L detection alerts, see <a href="https://cloud.google.com/chronicle/docs/detection/migrate-cbn-alerts">Migrate CBN alerts to YARA-L detection rule alerts</a>.</p>
@@ -2278,7 +2293,7 @@ For details, see <a href="https://cloud.google.com/chronicle/docs/soar/working-w
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/detection/composite-detections">Overview of composite detections</a>.</p>
 <hr />
 <h2 id="2025-08-19">2025-08-19</h2>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p><strong>Reference lists retiring</strong></p>
 <p>The reference list functionality is being phased out of the Google SecOps platform.</p>
 <ul>
@@ -2288,7 +2303,7 @@ For details, see <a href="https://cloud.google.com/chronicle/docs/soar/working-w
 </ul>
 <hr />
 <h2 id="2025-08-13">2025-08-13</h2>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_6">Announcement</h3>
 <p><strong>New parser documentation now available</strong></p>
 <p>New parser documentation is available to help you ingest and normalize logs from the following sources:</p>
 <ul>
@@ -2331,7 +2346,7 @@ For details, see <a href="https://cloud.google.com/chronicle/docs/soar/working-w
 <p>Data RBAC now includes a self-service option for direct enablement. This makes the initial onboarding process faster and simpler. For details, see <a href="https://cloud.google.com/chronicle/docs/administration/configure-datarbac-users">Configure data RBAC for users</a>.</p>
 <hr />
 <h2 id="2025-08-10">2025-08-10</h2>
-<h3 id="announcement_6">Announcement</h3>
+<h3 id="announcement_7">Announcement</h3>
 <p><strong>New permissions for Content Hub</strong></p>
 <p>To access all modules in the Content Hub, you must set the correct IAM role permissions.</p>
 <p>For full details, see <a href="https://cloud.google.com/chronicle/docs/secops/content_hub">Google SecOps Content Hub overview</a>.</p>
@@ -2829,12 +2844,12 @@ For details, see <a href="https://cloud.google.com/chronicle/docs/soar/working-w
 </ul>
 <hr />
 <h2 id="2025-06-26">2025-06-26</h2>
-<h3 id="announcement_7">Announcement</h3>
+<h3 id="announcement_8">Announcement</h3>
 <p><strong>Premium <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fw">Fortinet Firewall parser</a> now available as Release Candidate</strong></p>
 <p>This enhanced parser is available as a <strong>Release Candidate</strong> for the next 3 months. To opt in and begin testing it, go to <strong>SIEM Settings &gt; Parsers</strong>. We encourage you to try it out and evaluate the improvements before it becomes the default.</p>
 <hr />
 <h2 id="2025-06-23">2025-06-23</h2>
-<h3 id="announcement_8">Announcement</h3>
+<h3 id="announcement_9">Announcement</h3>
 <p><strong>New parser documentation now available</strong></p>
 <p>New parser documentation is available to help you ingest and normalize logs from the following sources:</p>
 <p><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/beyond-trust-beyondinsight">Collect BeyondTrust BeyondInsight logs</a></p>
@@ -2911,7 +2926,7 @@ For details, see <a href="https://cloud.google.com/chronicle/docs/soar/working-w
 </ul>
 <hr />
 <h2 id="2025-06-16">2025-06-16</h2>
-<h3 id="announcement_9">Announcement</h3>
+<h3 id="announcement_10">Announcement</h3>
 <p>The Release Candidate period of the following premium parsers has been extended from the end of May to the week of July 21, 2025:</p>
 <ul>
 <li>Crowdstrike Detection Monitoring (CS_DETECTS)</li>
@@ -2934,7 +2949,7 @@ For details, see <a href="https://cloud.google.com/chronicle/docs/soar/working-w
 <p>For more information on how to use custom fields in Advanced Reports, see <a href="https://cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/adding-custom-fields#use-custom-fields-in-advanced-reports">Use Custom Fields in Advanced Reports</a>.</p>
 <hr />
 <h2 id="2025-06-04">2025-06-04</h2>
-<h3 id="announcement_10">Announcement</h3>
+<h3 id="announcement_11">Announcement</h3>
 <p>The following parser documentation is now available:</p>
 <p><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/abnormal-security">Collect Abnormal Security logs</a></p>
 <p><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/apache-cassandra">Collect Apache Cassandra logs</a></p>

@@ -1,5 +1,69 @@
 # Google SecOps Marketplace
 
+## 2025-09-25
+
+### Feature
+
+New **Apache Kafka** integration
+
+### Feature
+
+**Microsoft Azure Sentinel**: Version 57.0
+
+* The following new job has been added:
+
+  + **Sync Incidents**
+
+### Changed
+
+**Any.Run**: Version 8.0
+
+* Updated the available privacy settings in the following actions:
+
+  + **Analyze URL**
+  + **Analyze File URL**
+  + **Analyze File**
+
+### Changed
+
+**CrowdStrike Falcon**: Version 64.0
+
+* Updated timeout handling in the following connector:
+
+  + **Crowdstrike Falcon - Streaming Events Connector**
+* **Integration**: Updated authentication to support multi-tenancy execution.
+
+### Changed
+
+**Google Workspace**: Version 21.0
+
+* Expanded capabilities of the following action:
+
+  + **List OU Of Account**
+* Updated processing of the organization unit inside the following actions:
+
+  + **Block Extension**
+  + **Delete Extension**
+  + **List OU Of Account**
+
+### Changed
+
+**Google Chronicle**: Version 65.0
+
+* Updated the filtering mechanism of the following action:
+
+  + **Get Data Tables**
+
+### Changed
+
+**Orca Security**: Version 12.0
+
+* **Integration**: (REGRESSIVE) Updated to support the latest API version.
+
+  Ontology has been updated. Overwrite current ontology mapping to align
+  with the new API Alert structure.
+
+---
 ## 2025-09-17
 
 ### Feature

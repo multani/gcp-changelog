@@ -2,10 +2,6 @@
 
 ## 2025-09-29
 
-### Announcement
-
-
-
 ### hybrid v1.14.3
 
 On September 29, 2025 we released an updated version of the Apigee hybrid software, 1.14.3.

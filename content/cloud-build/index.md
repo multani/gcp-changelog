@@ -1,5 +1,14 @@
 # Cloud Build
 
+## 2025-09-29
+
+### Feature
+
+Developer Connect build triggers are now [generally available](https://cloud.google.com/products/#product-launch-stages).
+
+You can now create build triggers that build from [repositories connected to Developer Connect](https://cloud.google.com/build/docs/triggers#devcon-triggers) using the Google Cloud Console, `gcloud`, the Cloud Build API, and Terraform.
+
+---
 ## 2025-09-02
 
 ### Feature

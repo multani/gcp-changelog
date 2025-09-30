@@ -1980,20 +1980,24 @@
 
 
 <h1 id="cloud-sql-for-postgresql">Cloud SQL for PostgreSQL</h1>
-<h2 id="2025-09-25">2025-09-25</h2>
+<h2 id="2025-09-29">2025-09-29</h2>
 <h3 id="feature">Feature</h3>
+<p>You can now <a href="https://cloud.google.com/sql/docs/postgres/write-sql-gemini#fix-query">use Gemini's capabilities to fix errors in a query within Cloud SQL Studio</a> (<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>).</p>
+<hr />
+<h2 id="2025-09-25">2025-09-25</h2>
+<h3 id="feature_1">Feature</h3>
 <p>Cloud SQL Managed Connection Pooling is now generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>). Managed Connection Pooling lets you scale your workloads by optimizing resource utilization for Cloud SQL instances using pooling. You can now also use <a href="https://cloud.google.com/sql/docs/postgres/iam-authentication">IAM authentication</a> to secure connections when using Managed Connection Pooling.</p>
 <p>For more information, see <a href="https://cloud.google.com/sql/docs/postgres/managed-connection-pooling">Managed Connection Pooling overview</a>.</p>
 <hr />
 <h2 id="2025-09-23">2025-09-23</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>You can now provision, manage and query your databases using the dedicated Gemini CLI extension for Cloud SQL for PostgreSQL. The extension provides full lifecycle control of your database—from provisioning instances, to exploring schemas and troubleshooting issues—from your command-line interface.</p>
 <p>For more information, see <a href="https://cloud.google.com/sql/docs/postgres/pre-built-tools-with-mcp-toolbox">Use Cloud SQL for PostgreSQL with MCP, Gemini CLI, and other agents</a>.</p>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>You can now retain point-in-time recovery (PITR) logs for an instance after its deletion for a specified retention period. These logs can be used to restore the deleted instance to a specific point in time. For more information, see <a href="https://cloud.google.com/sql/docs/postgres/backup-recovery/restore#deleted-instance">Restore a deleted instance using PITR</a>.</p>
 <hr />
 <h2 id="2025-09-17">2025-09-17</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>The rollout of the following minor version upgrades is complete:</p>
 <p><strong>Minor versions</strong></p>
 <ul>
@@ -2014,12 +2018,12 @@
 <p>For more information on checking your maintenance version, see <a href="https://cloud.google.com/sql/docs/postgres/self-service-maintenance">Self-service maintenance</a>. To find your maintenance window or to manage maintenance updates, see <a href="https://cloud.google.com/sql/docs/postgres/set-maintenance-window">Find and set maintenance windows</a>.</p>
 <hr />
 <h2 id="2025-09-12">2025-09-12</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p>If a specific active query is blocked or running much longer than expected, it can block other dependent queries. Cloud SQL for PostgreSQL offers an optional feature that lets you terminate specific long-running or blocked active queries.</p>
 <p>For more information, see <a href="https://cloud.google.com/sql/docs/postgres/monitor-active-queries#blocked-active-queries">Blocked active queries (Preview)</a>.</p>
 <hr />
 <h2 id="2025-09-09">2025-09-09</h2>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p>The rollout of the following extension versions is complete:</p>
 <p><strong>Extensions and plugins</strong></p>
 <ul>
@@ -2032,7 +2036,7 @@ If you use a maintenance window, then the updates to the minor, extension, and p
 <p>For more information on checking your maintenance version, see <a href="https://cloud.google.com/sql/docs/postgres/self-service-maintenance">Self-service maintenance</a>. To find your maintenance window or to manage maintenance updates, see <a href="https://cloud.google.com/sql/docs/postgres/set-maintenance-window">Find and set maintenance windows</a>.</p>
 <hr />
 <h2 id="2025-09-08">2025-09-08</h2>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p>Cloud SQL read pools are now generally available and provide operational simplicity and scaling for your read workloads.</p>
 <p>Read pools provide a single endpoint in front of up to 20 read pool nodes and automatically load balance traffic.</p>
 <p>You can scale your read pool in several ways:</p>
@@ -2042,7 +2046,7 @@ If you use a maintenance window, then the updates to the minor, extension, and p
 </ul>
 <p>For more information, see
 <a href="https://cloud.google.com/sql/docs/postgres/about-read-pools">About read pools</a>.</p>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p>You can have Cloud SQL create a <a href="https://cloud.google.com/sql/docs/postgres/about-private-service-connect#psc-endpoint">Private Service Connect</a> endpoint automatically. You can use this endpoint to access Cloud SQL instances through a VPC network. For more information, see <a href="https://cloud.google.com/sql/docs/postgres/configure-private-service-connect#create-endpoint-automatically">Create a Private Service Connect endpoint automatically</a>.</p>
 <p>This feature is now generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).</p>
 <hr />
@@ -2052,25 +2056,25 @@ If you use a maintenance window, then the updates to the minor, extension, and p
 <p>PSC outbound connectivity is required for <a href="https://cloud.google.com/database-migration/docs/homogeneous-migrations">homogeneous migrations</a> to PSC-enabled Cloud SQL instances using <a href="https://cloud.google.com/database-migration/docs">Database Migration Service</a>. For more information, see <a href="https://cloud.google.com/sql/docs/postgres/about-private-service-connect#psc-outbound">PSC outbound connections</a>.</p>
 <hr />
 <h2 id="2025-09-03">2025-09-03</h2>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p>You can now enable your instance to take a final backup at instance deletion and define its retention period by setting the final backup <a href="https://cloud.google.com/sql/docs/postgres/instance-settings">instance setting</a>.</p>
 <p>You can also create a <a href="https://cloud.google.com/sql/docs/postgres/org-policy/custom-org-policy">custom organization policy</a> to define final backup instance settings.
 For more information, see <a href="https://cloud.google.com/sql/docs/postgres/backup-recovery/backups#final-backup">Final backup</a>.</p>
 <hr />
 <h2 id="2025-08-21">2025-08-21</h2>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p>You can save and manage SQL queries in Cloud SQL Studio. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. For more information, see <a href="https://cloud.google.com/sql/docs/postgres/saved-queries">Saved queries overview</a>.</p>
 <hr />
 <h2 id="2025-08-15">2025-08-15</h2>
-<h3 id="feature_10">Feature</h3>
-<p>Now you can use <a href="https://cloud.google.com/sql/docs/postgres/about-private-service-connect#psc-backend">Private Service Connect backends</a>, as an alternative to Private Service Connect endpoints, to access Cloud SQL instances.</p>
 <h3 id="feature_11">Feature</h3>
+<p>Now you can use <a href="https://cloud.google.com/sql/docs/postgres/about-private-service-connect#psc-backend">Private Service Connect backends</a>, as an alternative to Private Service Connect endpoints, to access Cloud SQL instances.</p>
+<h3 id="feature_12">Feature</h3>
 <p>Now you can create an IPv6 endpoint for Private Service Connect (PSC) connections. For more information, see <a href="https://cloud.google.com/sql/docs/postgres/configure-private-service-connect#create-psc-endpoint">Connect to an instance using Private Service Connect</a>.</p>
 <h3 id="deprecated">Deprecated</h3>
 <p>You can no longer set a deny maintenance period for instances that are running a maintenance version older than 12 months. To update your instance, <a href="https://cloud.google.com/sql/docs/postgres/self-service-maintenance">perform self-service maintenance</a> or wait until the <a href="https://cloud.google.com/sql/docs/postgres/set-maintenance-window#find-maintenance-api">next maintenance window</a> to update your instance automatically. For more information about maintenance, see <a href="https://cloud.google.com/sql/docs/postgres/maintenance">Maintenance updates on Cloud SQL instances</a>.</p>
 <hr />
 <h2 id="2025-08-13">2025-08-13</h2>
-<h3 id="feature_12">Feature</h3>
+<h3 id="feature_13">Feature</h3>
 <p>Cloud SQL now supports Private Service Connect (PSC) outbound connectivity. With PSC outbound connectivity, you can attach a PSC interface to your existing Cloud SQL PSC-enabled instances to allow your instances to make outbound connections to your network. This is required for <a href="https://cloud.google.com/database-migration/docs/homogeneous-migrations">homogeneous migrations</a> to PSC-enabled Cloud SQL instances using <a href="https://cloud.google.com/database-migration/docs">Database Migration Service</a>. For more information, see <a href="https://cloud.google.com/sql/docs/postgres/about-private-service-connect#psc-outbound">PSC outbound connections</a>.</p>
 <hr />
 <h2 id="2025-08-07">2025-08-07</h2>
@@ -2084,7 +2088,7 @@ For more information, see <a href="https://cloud.google.com/sql/docs/postgres/ba
 <p>We expect a fix for this issue in the next automatically-scheduled maintenance. For more information about this bug, see <a href="https://www.postgresql.org/message-id/flat/680bdaf6-f7d1-4536-b580-05c2760c67c6%40deepbluecap.com">Logical replication 'invalid memory alloc request size 1585837200' after upgrading to 17.5</a>.</p>
 <hr />
 <h2 id="2025-07-31">2025-07-31</h2>
-<h3 id="feature_13">Feature</h3>
+<h3 id="feature_14">Feature</h3>
 <p>Cloud SQL now offers two options of backup services to manage your instance's backups:</p>
 <ul>
 <li><strong>Enhanced backups</strong> (<a href="https://cloud.google.com/products?#product-launch-stages">Preview</a>): backups are managed and stored in a centralized backup management project that leverages the <a href="https://cloud.google.com/backup-disaster-recovery">Backup and DR service</a>, and provides enforced retention, granular scheduling, and longer retention.</li>
@@ -2094,13 +2098,13 @@ For more information, see <a href="https://cloud.google.com/sql/docs/postgres/ba
 <p>For more information about the available options and their limitations, see <a href="https://cloud.google.com/sql/docs/postgres/backup-recovery/backups#backup-options">Backup options</a>.</p>
 <hr />
 <h2 id="2025-07-02">2025-07-02</h2>
-<h3 id="feature_14">Feature</h3>
+<h3 id="feature_15">Feature</h3>
 <p>The write endpoint feature for Cloud SQL Enterprise Plus edition instances is now <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA). This endpoint is a global domain name service (DNS) name and resolves to the IP address of the current primary Cloud SQL instance that's enabled with private services access.</p>
 <p>By using a write endpoint, you can avoid having to make application connection changes after performing a switchover or replica failover operation to test or mitigate a region failure.</p>
 <p>For more information, see <a href="https://cloud.google.com/sql/docs/postgres/connect-to-instance-using-write-endpoint">Connect to an instance using a write endpoint</a>.</p>
 <hr />
 <h2 id="2025-07-01">2025-07-01</h2>
-<h3 id="feature_15">Feature</h3>
+<h3 id="feature_16">Feature</h3>
 <p>The write endpoint feature for Cloud SQL Enterprise Plus edition instances is now <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA). This endpoint is a global domain name service (DNS) name and resolves to the IP address of the current primary Cloud SQL instance that's enabled with private services access.</p>
 <p>By using a write endpoint, you can avoid having to make application connection changes after performing a switchover or replica failover operation to test or mitigate a regional failure.</p>
 <p>For more information, see <a href="https://cloud.google.com/sql/docs/postgres/connect-to-instance-using-write-endpoint">Connect to an instance using a write endpoint</a>.</p>
@@ -2115,6 +2119,9 @@ For more information, see <a href="https://cloud.google.com/sql/docs/postgres/ba
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-sql-for-postgresql">Cloud SQL for PostgreSQL</a></li>
+          <li class="nav-item">
+            <a href="#2025-09-29" class="nav-link">2025-09-29</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-09-25" class="nav-link">2025-09-25</a>
           </li>

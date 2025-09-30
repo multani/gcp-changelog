@@ -1,5 +1,27 @@
 # Identity and Access Management
 
+## 2025-09-26
+
+### Changed
+
+For Privileged Access Manager, notification emails for grant activation, activation failure,
+or denial no longer include approver details.
+
+To learn how to view the approver details, see [Check grant status](https://cloud.google.com/iam/docs/pam-request-temporary-elevated-access#check-status).
+
+### Feature
+
+[Privileged Access Manager (PAM)](https://cloud.google.com/iam/docs/pam-overview)
+offers the following features in [preview](https://cloud.google.com/products#product-launch-stages):
+
+* [Multi-level and multi-party approvals](https://cloud.google.com/iam/docs/pam-overview#mp-approvals)
+* [Scope customization](https://cloud.google.com/iam/docs/pam-overview#customize-scope)
+* [Service account approvals](https://cloud.google.com/iam/docs/pam-overview#ser-acc-approvals)
+* [Inheritance support](https://cloud.google.com/iam/docs/pam-overview#inheritance-support)
+* [Notification preferences customization](https://cloud.google.com/iam/docs/pam-overview#customize-settings)
+* [Grant withdrawal](https://cloud.google.com/iam/docs/pam-overview#grant-withdrawal)
+
+---
 ## 2025-09-24
 
 ### Feature

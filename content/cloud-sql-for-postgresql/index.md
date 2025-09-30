@@ -1,5 +1,12 @@
 # Cloud SQL for PostgreSQL
 
+## 2025-09-29
+
+### Feature
+
+You can now [use Gemini's capabilities to fix errors in a query within Cloud SQL Studio](https://cloud.google.com/sql/docs/postgres/write-sql-gemini#fix-query) ([Preview](https://cloud.google.com/products#product-launch-stages)).
+
+---
 ## 2025-09-25
 
 ### Feature

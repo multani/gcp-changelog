@@ -1,5 +1,17 @@
 # Virtual Private Cloud
 
+## 2025-09-26
+
+### Feature
+
+The following features of VPC Flow Logs are available in **General Availability**:
+
+* Logging for [RDMA over Falcon transport](https://cloud.google.com/vpc/docs/rdma-network-profiles#overview)
+* Enhanced round-trip time precision for TCP and Falcon traffic
+
+For more information, see [About VPC Flow Logs records](https://cloud.google.com/vpc/docs/about-flow-logs-records#record_format).
+
+---
 ## 2025-09-25
 
 ### Feature

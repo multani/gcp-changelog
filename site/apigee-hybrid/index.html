@@ -1980,6 +1980,118 @@
 
 
 <h1 id="apigee-hybrid">Apigee hybrid</h1>
+<h2 id="2025-09-29">2025-09-29</h2>
+<h3 id="announcement">Announcement</h3>
+<h3 id="hybrid-v1143">hybrid v1.14.3</h3>
+<p>On September 29, 2025 we released an updated version of the Apigee hybrid software, 1.14.3.</p>
+<ul>
+<li>For information on upgrading, see <a href="https://cloud.google.com/apigee/docs/hybrid/v1.14/upgrade">Upgrading Apigee hybrid to version 1.14</a>.</li>
+<li>For information on new installations, see <a href="https://cloud.google.com/apigee/docs/hybrid/v1.14/big-picture">The big picture</a>.</li>
+</ul>
+<p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
+<h3 id="fixed">Fixed</h3>
+<table>
+<thead>
+<tr>
+<th>Bug ID</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>423597917</strong></td>
+<td><strong>Post of an <a href="https://cloud.google.com/apigee/docs/reference/apis/apigee/rest/v1/organizations.appgroups.apps.keys/updateAppGroupAppKey"><code>AppGroupAppKey</code></a> scopes should result in insert operation instead of update.</strong></td>
+</tr>
+<tr>
+<td><strong>409048431</strong></td>
+<td><strong>Fixes a vulnerability which could allow a SAML signature verification to be bypassed.</strong></td>
+</tr>
+<tr>
+<td><strong>395272878</strong></td>
+<td><strong>Separate Forward proxy support for <code>googleapis.com</code> and <code>non-googleapis.com</code> runtime traffic.</strong></td>
+</tr>
+<tr>
+<td><strong>378686709</strong></td>
+<td><strong>The use of wildcards (*) in Apigee proxy basepaths would conflict with other explicit basepaths, resulting in a 404 error.</strong> To apply this fix, follow the procedure in <a href="https://cloud.google.com/apigee/docs/release/known-issues#378686709">Known issue 378686709</a>.</td>
+</tr>
+<tr>
+<td><strong>367815792</strong></td>
+<td><strong>Two new Flow Variables: <code>app_group_app</code> and <code>app_group_name</code> have been added to VerifyApiKey and Access Token policy.</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="security">Security</h3>
+<table>
+<thead>
+<tr>
+<th>Bug ID</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>433952146</strong></td>
+<td><strong>Security fix.</strong>  This addresses the following vulnerability:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-6763">CVE-2024-6763</a></td>
+</tr>
+<tr>
+<td><strong>433951774</strong></td>
+<td><strong>Security fix.</strong>  This addresses the following vulnerability:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-7254">CVE-2024-7254</a></td>
+</tr>
+<tr>
+<td><strong>433950558</strong></td>
+<td><strong>Security fix.</strong>  This addresses the following vulnerability:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-47554">CVE-2024-47554</a></td>
+</tr>
+<tr>
+<td><strong>433950370</strong></td>
+<td><strong>Security fix.</strong>  This addresses the following vulnerability:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-25193">CVE-2025-25193</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-asm-ingress</code>.</strong>  This addresses the following vulnerability:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-22871">CVE-2025-22871</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-asm-istiod</code>.</strong>  This addresses the following vulnerability:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-22871">CVE-2025-22871</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-envoy</code>.</strong>  This addresses the following vulnerability:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-0395">CVE-2025-0395</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-fluent-bit</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-32990">CVE-2025-32990</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-32988">CVE-2025-32988</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-hybrid-cassandra</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-23015">CVE-2025-23015</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-22871">CVE-2025-22871</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-24970">CVE-2025-24970</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-hybrid-cassandra-client</code>.</strong>  This addresses the following vulnerability:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-22871">CVE-2025-22871</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-kube-rbac-proxy</code>.</strong>  This addresses the following vulnerability:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-22871">CVE-2025-22871</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-mart-server</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/2025-48924">CVE-2025-48924</a> * <a href="https://nvd.nist.gov/vuln/detail/2025-48795">CVE-2025-48795</a> * <a href="https://nvd.nist.gov/vuln/detail/2025-48734">CVE-2025-48734</a> * <a href="https://nvd.nist.gov/vuln/detail/2025-24970">CVE-2025-24970</a> * <a href="https://nvd.nist.gov/vuln/detail/2024-47554">CVE-2024-47554</a> * <a href="https://nvd.nist.gov/vuln/detail/2024-47535">CVE-2024-47535</a> * <a href="https://nvd.nist.gov/vuln/detail/2024-13009">CVE-2024-13009</a> * <a href="https://nvd.nist.gov/vuln/detail/2024-8184">CVE-2024-8184</a> * <a href="https://nvd.nist.gov/vuln/detail/2024-7254">CVE-2024-7254</a> * <a href="https://nvd.nist.gov/vuln/detail/2024-6763">CVE-2024-6763</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-operators</code>.</strong>  This addresses the following vulnerability:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-22871">CVE-2025-22871</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-stackdriver-logging-agent</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-43857">CVE-2025-43857</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-41946">CVE-2024-41946</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-41123">CVE-2024-41123</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-25062">CVE-2024-25062</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-42915">CVE-2023-42915</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-33953">CVE-2023-33953</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-34169">CVE-2022-34169</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-32511">CVE-2022-32511</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-32207">CVE-2022-32207</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-29181">CVE-2022-29181</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-28739">CVE-2022-28739</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-27782">CVE-2022-27782</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-24839">CVE-2022-24839</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-24836">CVE-2022-24836</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-23308">CVE-2022-23308</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-0759">CVE-2022-0759</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-41819">CVE-2021-41819</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-41817">CVE-2021-41817</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-4044">CVE-2021-4044</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-3518">CVE-2021-3518</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-3517">CVE-2021-3517</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-32740">CVE-2021-32740</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-32066">CVE-2021-32066</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-31799">CVE-2021-31799</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-30560">CVE-2021-30560</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-28966">CVE-2021-28966</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-28965">CVE-2021-28965</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-23214">CVE-2021-23214</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-22926">CVE-2021-22926</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2020-7595">CVE-2020-7595</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2020-25695">CVE-2020-25695</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2020-25694">CVE-2020-25694</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2020-25613">CVE-2020-25613</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2019-9193">CVE-2019-9193</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2019-3881">CVE-2019-3881</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2019-20388">CVE-2019-20388</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2019-10211">CVE-2019-10211</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2019-10210">CVE-2019-10210</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2019-10128">CVE-2019-10128</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2019-10127">CVE-2019-10127</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25032">CVE-2018-25032</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2018-1115">CVE-2018-1115</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2018-10915">CVE-2018-10915</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2018-1058">CVE-2018-1058</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2018-1053">CVE-2018-1053</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2017-7546">CVE-2017-7546</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2017-7486">CVE-2017-7486</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2017-7484">CVE-2017-7484</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2017-17405">CVE-2017-17405</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2017-15098">CVE-2017-15098</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2017-14798">CVE-2017-14798</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2016-7954">CVE-2016-7954</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2016-7048">CVE-2016-7048</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2016-5424">CVE-2016-5424</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2016-5423">CVE-2016-5423</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2016-0766">CVE-2016-0766</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2015-3167">CVE-2015-3167</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2015-3166">CVE-2015-3166</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2015-0244">CVE-2015-0244</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2015-0243">CVE-2015-0243</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2015-0242">CVE-2015-0242</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2015-0241">CVE-2015-0241</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-watcher</code>.</strong>  This addresses the following vulnerability:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-22871">CVE-2025-22871</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
 <h2 id="2025-09-24">2025-09-24</h2>
 <h3 id="apigee-operator-for-kubernetes-for-apigee-hybrid-preview">Apigee Operator for Kubernetes for Apigee Hybrid (Preview)</h3>
 <p>On September 24, 2025 we released the Apigee Operator for Kubernetes for Apigee Hybrid 1.15.0 and newer.</p>
@@ -1999,7 +2111,7 @@
 </ul>
 <p><strong>Note:</strong> if you are upgrading to Apigee hybrid version 1.13.4 from version 1.13.2 or earlier, see <a href="https://cloud.google.com/apigee/docs/hybrid/v1.13/upgrade#recommended-actions-upgrade-1133">APPENDIX: Validate policies after upgrade to 1.13.3 or later</a> for steps to address stricter class instantiation checks introduced in <a href="https://cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1133">version 1.13.3</a>.
 <strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_1">Fixed</h3>
 <table>
 <thead>
 <tr>
@@ -2026,7 +2138,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="security">Security</h3>
+<h3 id="security_1">Security</h3>
 <table>
 <thead>
 <tr>
@@ -2071,7 +2183,7 @@
 </table>
 <hr />
 <h2 id="2025-06-04">2025-06-04</h2>
-<h3 id="announcement">Announcement</h3>
+<h3 id="announcement_1">Announcement</h3>
 <h3 id="hybrid-v1150">hybrid v1.15.0</h3>
 <p>On June 4, 2025 we released an updated version of the Apigee hybrid software, 1.15.0.</p>
 <ul>
@@ -2082,7 +2194,7 @@
 <h3 id="feature">Feature</h3>
 <p><strong>Large message payload support in Apigee hybrid</strong></p>
 <p>Apigee now supports message payloads up to 30MB. You configure support for large message payloads in Apigee hybrid for individual environments or for your whole installation. See <a href="https://cloud.google.com/apigee/docs/hybrid/v1.15/configure-large-payload-support">Configure large message payload support in Apigee hybrid</a>.</p>
-<h3 id="fixed_1">Fixed</h3>
+<h3 id="fixed_2">Fixed</h3>
 <table>
 <thead>
 <tr>
@@ -2137,7 +2249,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="security_1">Security</h3>
+<h3 id="security_2">Security</h3>
 <p><strong>Fixed in this release</strong></p>
 <table>
 <thead>
@@ -2233,7 +2345,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="security_2">Security</h3>
+<h3 id="security_3">Security</h3>
 <p><strong>Fixed since last minor release</strong></p>
 <table>
 <thead>
@@ -2351,7 +2463,7 @@
 </table>
 <hr />
 <h2 id="2025-05-29">2025-05-29</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p>On May 29, 2025 we announced the shutdown schedule for the Apigee Classic UI.</p>
 <h3 id="deprecated">Deprecated</h3>
 <p>The Apigee Classic UI will be shutdown as of August 29, 2025.</p>
@@ -2369,6 +2481,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#apigee-hybrid">Apigee hybrid</a></li>
+          <li class="nav-item">
+            <a href="#2025-09-29" class="nav-link">2025-09-29</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-09-24" class="nav-link">2025-09-24</a>
           </li>

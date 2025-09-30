@@ -1,5 +1,12 @@
 # Spanner
 
+## 2025-09-29
+
+### Feature
+
+You can now create BigQuery [non-incremental materialized views over Spanner data](https://cloud.google.com/bigquery/docs/materialized-views-create#spanner) to improve query performance by periodically caching results. This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2025-09-25
 
 ### Feature

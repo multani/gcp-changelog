@@ -1,5 +1,13 @@
 # Dataplex
 
+## 2025-09-29
+
+### Feature
+
+Column-level lineage is generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
+The feature provides a granular view of your data by tracking the flow between individual columns within tables. You can perform functions such as root cause analysis, impact analysis, and data source verification for specific columns. Column-level lineage is only supported for BigQuery jobs. For more information about column-level lineage, see [Column-level lineage](https://cloud.google.com/dataplex/docs/lineage-views#column-level-lineage).
+
+---
 ## 2025-09-23
 
 ### Feature

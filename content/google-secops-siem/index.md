@@ -4,6 +4,38 @@
 
 ### Announcement
 
+**Forwarder component: end-of-life and migration**
+
+The forwarder component is being phased out of the Google SecOps platform and will reach end-of-life (EOL) in January 2027. This impact will change all any data collection pipelines that currently use the forwarder.
+
+**Action required**: If you're currently using the forwarder component, you must migrate your data collection workflows to an alternative mechanism before April 1, 2027. You'll need to use another data pipeline management application for log ingestion.
+
+We recommend that you migrate to the [Bindplane OpenTelemetry (OTel) collector](https://cloud.google.com/chronicle/docs/ingestion/use-bindplane-agent), which provides a scalable, open-standard solution for log and metric ingestion.
+
+The following are key dates to note:
+
+* **Apr 1, 2026**: New Google SecOps customers cannot use the forwarder component.
+* **Jan 1, 2027**: The forwarder is officially EOL. No further patches, including security patches, will be released.
+* **Apr 1, 2027**: Data is no longer allowed to be ingested from the forwarder component.
+
+### Announcement
+
+**Forwarder component: end-of-life and migration**
+
+The forwarder component is being phased out of the Google SecOps platform and will reach end-of-life (EOL) in January 2027. This impact will change all any data collection pipelines that currently use the forwarder.
+
+**Action required**: If you're currently using the forwarder component, you must migrate your data collection workflows to an alternative mechanism before April 1, 2027. You'll need to use another data pipeline management application for log ingestion.
+
+We recommend that you migrate to the [Bindplane OpenTelemetry (OTel) collector](https://cloud.google.com/chronicle/docs/ingestion/use-bindplane-agent), which provides a scalable, open-standard solution for log and metric ingestion.
+
+The following are key dates to note:
+
+* **Apr 1, 2026**: New Google SecOps customers cannot use the forwarder component.
+* **Jan 1, 2027**: The forwarder is officially EOL. No further patches, including security patches, will be released.
+* **Apr 1, 2027**: Data is no longer allowed to be ingested from the forwarder component.
+
+### Announcement
+
 **Update CrowdStrike API permissions before decommission**
 
 CrowdStrike is decommissioning its Detects API on September 30, 2025. This API has

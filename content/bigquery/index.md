@@ -2,6 +2,13 @@
 
 ## 2025-09-29
 
+### Feature
+
+You can now create BigQuery
+[non-incremental materialized views over Spanner data](https://cloud.google.com/bigquery/docs/materialized-views-create#spanner)
+to improve query performance by periodically caching results.
+This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
 ### Announcement
 
 [History-based query optimizations](https://cloud.google.com/bigquery/docs/history-based-optimizations)
@@ -88,12 +95,12 @@ You can use the [`JSON_KEYS` function](https://cloud.google.com/bigquery/docs/re
 
 ### Feature
 
-You can now enable the [BigQuery advanced runtime](https://cloud.google.com/bigquery/docs/advanced-runtime) to improve query execution time and slot usage. This feature is [generally available](https://cloud.google.com/products/#product-launch-stages) (GA).
-Between September 15, 2025 and early 2026, the BigQuery advanced runtime will become the default runtime for all projects.
+In the BigQuery Studio, in the Explorer pane, you can now [open saved queries in Connected Sheets](https://cloud.google.com/bigquery/docs/manage-saved-queries#open-saved-queries-in-sheets). This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
 
 ### Feature
 
-In the BigQuery Studio, in the Explorer pane, you can now [open saved queries in Connected Sheets](https://cloud.google.com/bigquery/docs/manage-saved-queries#open-saved-queries-in-sheets). This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+You can now enable the [BigQuery advanced runtime](https://cloud.google.com/bigquery/docs/advanced-runtime) to improve query execution time and slot usage. This feature is [generally available](https://cloud.google.com/products/#product-launch-stages) (GA).
+Between September 15, 2025 and early 2026, the BigQuery advanced runtime will become the default runtime for all projects.
 
 ### Libraries
 

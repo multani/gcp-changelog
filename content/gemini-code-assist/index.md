@@ -2,10 +2,6 @@
 
 ## 2025-09-29
 
-### Feature
-
-
-
 ### Add code snippets to the chat context
 
 You can now select, attach, and direct Gemini to focus on code snippets with

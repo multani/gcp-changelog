@@ -1,5 +1,13 @@
 # Security Command Center
 
+## 2025-09-27
+
+### Feature
+
+Model Armor limits the maximum input size for files and text to 4 MB,
+automatically skipping any content that exceeds this threshold.
+
+---
 ## 2025-09-23
 
 ### Feature

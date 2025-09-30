@@ -1980,6 +1980,24 @@
 
 
 <h1 id="alloydb-for-postgresql">AlloyDB for PostgreSQL</h1>
+<h2 id="2025-09-29">2025-09-29</h2>
+<h3 id="announcement">Announcement</h3>
+<p>The <code>alloydb_scann</code> extension version <code>0.1.3</code> is updated to include the following vector search improvements in (<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>):</p>
+<ul>
+<li>You can now <a href="https://cloud.google.com/alloydb/docs/ai/create-scann-index">automatically create ScaNN indexes</a> that are optimized for search performance or for a balance between index build times and search performance with the auto index feature.</li>
+<li>AlloyDB AI's <a href="https://cloud.google.com/alloydb/docs/ai/adaptive-filtering">adaptive filtering</a> for filtered vector searches now dynamically switches between pre-filtering and inline filtering. This enhancement further optimizes query performance by allowing the query optimizer to dynamically choose the most efficient filtering strategy. For more information, see <a href="https://cloud.google.com/alloydb/docs/ai/activate-adaptive-filtering">Activate adaptive filtering in AlloyDB AI</a>.</li>
+<li>AlloyDB AI now <a href="https://cloud.google.com/alloydb/docs/columnar-engine/configure#configure-index-cache">integrates ScaNN indexes with the columnar engine</a>. You can now accelerate your vector similarity search by <a href="https://cloud.google.com/alloydb/docs/columnar-engine/manage-content-manually#manage-index-cache">loading ScaNN indexes into the columnar engine</a>.</li>
+<li>The <code>alloydb_scann</code> extension now provides a satisfy limit feature that improves query recall for vector searches. If a search returns fewer results than specified in the <code>LIMIT</code> clause, the scan continues until the <code>LIMIT</code> is met or a configured upper bound is reached. To enable this feature, set the <a href="https://cloud.google.com/alloydb/docs/reference/ai/scann-index-reference#scann-satisfy-limit"><code>scann.satisfy_limit</code></a> flag to <code>relaxed order</code>. You can also use the <a href="https://cloud.google.com/alloydb/docs/reference/ai/scann-index-reference#scann-max-pct-leaves-to-search"><code>scann.max_pct_leaves_to_search</code></a> flag to configure the upper bound for the search.</li>
+<li>You can enable vector search index recommendations for Scalable Nearest Neighbors (ScaNN) indexes using the AlloyDB index advisor. For more information, see <a href="https://cloud.google.com/alloydb/docs/use-index-advisor-with-query-insights#enable-extensions">Use the AlloyDB index advisor with query insights</a> or <a href="https://cloud.google.com/alloydb/docs/use-index-advisor#view-recommendations">View the index advisor's index recommendations</a>.</li>
+<li>
+<p>You can configure automatic index maintenance using the following flags:</p>
+</li>
+<li>
+<p><a href="https://cloud.google.com/alloydb/docs/reference/alloydb-flags#scann.max_background_workers"><code>scann.max_background_workers</code></a> flag to control the number of background workers and increase throughput across multiple indexes.</p>
+</li>
+<li><a href="https://cloud.google.com/alloydb/docs/reference/alloydb-flags#scann.maintenance_background_naptime_s"><code>scann.maintenance_background_naptime_s</code></a> flag to control the minimum delay between maintenance runs.</li>
+</ul>
+<hr />
 <h2 id="2025-09-24">2025-09-24</h2>
 <h3 id="feature">Feature</h3>
 <p>You can <a href="https://cloud.google.com/alloydb/docs/create-manage-query-plan-patches">create and manage query plan patches</a>. Query plan patches let you specify the details of the execution plan of your queries. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available (GA)</a>.</p>
@@ -2039,7 +2057,7 @@ You can <a href="https://cloud.google.com/alloydb/docs/cluster-create#procedure"
 with PostgreSQL 17 compatibility.</p>
 <hr />
 <h2 id="2025-07-23">2025-07-23</h2>
-<h3 id="announcement">Announcement</h3>
+<h3 id="announcement_1">Announcement</h3>
 <p><a href="https://cloud.google.com/alloydb/omni/current/docs">AlloyDB Omni</a>
 version 16.8.0 is generally available
 (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>). Version 16.8.0
@@ -2058,7 +2076,7 @@ includes the following features and changes:</p>
 <li><a href="https://en.wikipedia.org/wiki/Active_Directory">Active Directory</a> authentication integration is generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>), providing robust user authentication for your database clusters. For more information, see <a href="https://cloud.google.com/alloydb/omni/16.8.0/docs/integrate-active-directory">Integrate Active Directory with AlloyDB Omni</a>.</li>
 <li>Active Directory group-based authorization is available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>, enabling granular permission management based on your Active Directory groups. For more information, see <a href="https://cloud.google.com/alloydb/omni/16.8.0/docs/integrate-ad-group-support-alloydb-omni">Integrate Active Directory group support with AlloyDB Omni</a>.</li>
 </ul>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p><a href="https://cloud.google.com/alloydb/omni/current/docs">AlloyDB Omni</a>
 version 15.12.0 is generally available
 (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>). Version 15.12.0
@@ -2073,7 +2091,7 @@ includes the following features and changes:</p>
   more information, see
   <a href="https://cloud.google.com/alloydb/omni/15.12.0/docs/columnar-engine/configure">Configure the columnar engine in AlloyDB Omni</a>.</li>
 </ul>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p>The <a href="https://cloud.google.com/alloydb/omni/current/docs/deploy-kubernetes">AlloyDB Omni Kubernetes operator</a> version 1.5.0 is generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>) and includes the following features and bug fixes:</p>
 <ul>
 <li>You can install the operator using the <a href="https://olm.operatorframework.io/">Operator Lifecycle Manager (OLM)</a> for Kubernetes and OpenShift environments. See "Install the AlloyDB Omni operator" for AlloyDB Omni <a href="https://cloud.google.com/alloydb/omni/15.12.0/docs/deploy-kubernetes#olm">15.12.0</a> and <a href="https://cloud.google.com/alloydb/omni/16.8.0/docs/deploy-kubernetes#olm">16.8.0</a> for details.</li>
@@ -2139,6 +2157,9 @@ generally available
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#alloydb-for-postgresql">AlloyDB for PostgreSQL</a></li>
+          <li class="nav-item">
+            <a href="#2025-09-29" class="nav-link">2025-09-29</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-09-24" class="nav-link">2025-09-24</a>
           </li>

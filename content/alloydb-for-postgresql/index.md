@@ -1,5 +1,22 @@
 # AlloyDB for PostgreSQL
 
+## 2025-09-29
+
+### Announcement
+
+The `alloydb_scann` extension version `0.1.3` is updated to include the following vector search improvements in ([Preview](https://cloud.google.com/products#product-launch-stages)):
+
+* You can now [automatically create ScaNN indexes](https://cloud.google.com/alloydb/docs/ai/create-scann-index) that are optimized for search performance or for a balance between index build times and search performance with the auto index feature.
+* AlloyDB AI's [adaptive filtering](https://cloud.google.com/alloydb/docs/ai/adaptive-filtering) for filtered vector searches now dynamically switches between pre-filtering and inline filtering. This enhancement further optimizes query performance by allowing the query optimizer to dynamically choose the most efficient filtering strategy. For more information, see [Activate adaptive filtering in AlloyDB AI](https://cloud.google.com/alloydb/docs/ai/activate-adaptive-filtering).
+* AlloyDB AI now [integrates ScaNN indexes with the columnar engine](https://cloud.google.com/alloydb/docs/columnar-engine/configure#configure-index-cache). You can now accelerate your vector similarity search by [loading ScaNN indexes into the columnar engine](https://cloud.google.com/alloydb/docs/columnar-engine/manage-content-manually#manage-index-cache).
+* The `alloydb_scann` extension now provides a satisfy limit feature that improves query recall for vector searches. If a search returns fewer results than specified in the `LIMIT` clause, the scan continues until the `LIMIT` is met or a configured upper bound is reached. To enable this feature, set the [`scann.satisfy_limit`](https://cloud.google.com/alloydb/docs/reference/ai/scann-index-reference#scann-satisfy-limit) flag to `relaxed order`. You can also use the [`scann.max_pct_leaves_to_search`](https://cloud.google.com/alloydb/docs/reference/ai/scann-index-reference#scann-max-pct-leaves-to-search) flag to configure the upper bound for the search.
+* You can enable vector search index recommendations for Scalable Nearest Neighbors (ScaNN) indexes using the AlloyDB index advisor. For more information, see [Use the AlloyDB index advisor with query insights](https://cloud.google.com/alloydb/docs/use-index-advisor-with-query-insights#enable-extensions) or [View the index advisor's index recommendations](https://cloud.google.com/alloydb/docs/use-index-advisor#view-recommendations).
+* You can configure automatic index maintenance using the following flags:
+
+  + [`scann.max_background_workers`](https://cloud.google.com/alloydb/docs/reference/alloydb-flags#scann.max_background_workers) flag to control the number of background workers and increase throughput across multiple indexes.
+  + [`scann.maintenance_background_naptime_s`](https://cloud.google.com/alloydb/docs/reference/alloydb-flags#scann.maintenance_background_naptime_s) flag to control the minimum delay between maintenance runs.
+
+---
 ## 2025-09-24
 
 ### Feature

@@ -1,5 +1,36 @@
 # Cloud Service Mesh
 
+## 2025-09-29
+
+### Announcement
+
+CNI/managed data plane controller version 1.23.6-asm.15 is rolling out to all release channels.
+
+### Fixed
+
+|  |  |  |
+| --- | --- | --- |
+| **CVE** | **CNI** | **MDP Controller** |
+| [CVE-2025-4802](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2025-4802) | Yes | Yes |
+| [CVE-2023-29383](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-29383) | Yes | Yes |
+| [CVE-2024-56406](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2024-56406) | Yes | Yes |
+| [CVE-2023-7008](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-7008) | Yes | Yes |
+| [CVE-2025-1377](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2025-1377) | Yes | Yes |
+| [CVE-2023-4039](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-4039) | Yes | Yes |
+| [CVE-2025-46836](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2025-46836) | Yes | Yes |
+| [CVE-2023-50495]( http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-50495) | Yes | Yes |
+| [CVE-2025-4598](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2025-4598) | Yes | Yes |
+| [CVE-2025-3576](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2025-3576) | Yes | Yes |
+| [CVE-2025-30258](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2025-30258) | Yes | Yes |
+| [CVE-2017-11164](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2017-11164) | Yes | Yes |
+| [CVE-2022-41409](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-41409) | Yes | Yes |
+| [CVE-2025-1372](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2025-1372) | Yes | Yes |
+| [CVE-2022-27943]( http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-27943) | Yes | Yes |
+| [CVE-2022-4899](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-4899) | Yes | Yes |
+| [CVE-2023-34969](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-34969) | Yes | Yes |
+| [CVE-2023-45918](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-45918) | Yes | Yes |
+
+---
 ## 2025-09-25
 
 ### Deprecated

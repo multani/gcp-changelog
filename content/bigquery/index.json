@@ -4,10 +4,26 @@
     "2025-09-29": [
       {
         "kind": "Feature",
+        "content": "To simplify access management for your Iceberg tables, you\ncan use [credential vending mode with the Apache Iceberg REST catalog](https://cloud.google.com/bigquery/docs/blms-rest-catalog) in BigLake metastore. Credential vending removes\nthe need for catalog users to have direct access to Cloud Storage buckets. This\nfeature is in [Preview](https://cloud.google.com/products/#product-launch-stages).",
+        "summary": {
+          "title": "Access management for Iceberg tables",
+          "summary": "BigLake metastore now supports credential vending mode with the Apache Iceberg REST catalog. This simplifies access management for Iceberg tables by removing the need for direct Cloud Storage bucket access for catalog users. This feature is currently in Preview."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "You can now create BigQuery\n[non-incremental materialized views over Spanner data](https://cloud.google.com/bigquery/docs/materialized-views-create#spanner)\nto improve query performance by periodically caching results.\nThis feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).",
         "summary": {
           "title": "BigQuery now supports materialized views over Spanner data",
           "summary": "BigQuery now supports materialized views over Spanner data. This feature, currently in Preview, allows you to improve query performance by periodically caching results from Spanner. This enables faster data analysis and reporting on your Spanner datasets directly within BigQuery."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "BigQuery data preparation supports unnesting arrays, which expands each\narray element into its own row for easier analysis. For more information, see\n[Unnest arrays](https://cloud.google.com/bigquery/docs/data-prep-get-suggestions#unnest-arrays).\nThis feature is [generally\navailable](https://cloud.google.com/products#product-launch-stages) (GA).",
+        "summary": {
+          "title": "Unnest Arrays in BigQuery",
+          "summary": "BigQuery now supports unnesting arrays, transforming each array element into a separate row for simplified analysis. This feature is now generally available."
         }
       },
       {
@@ -76,14 +92,6 @@
     "2025-09-16": [
       {
         "kind": "Feature",
-        "content": "You can now [access snapshots of Apache Iceberg external tables](https://cloud.google.com/bigquery/docs/iceberg-external-tables#query_historical_data) that are retained in your Iceberg metadata by using the `FOR SYSTEM_TIME AS OF` clause. This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).",
-        "summary": {
-          "title": "Access historical data of external tables",
-          "summary": "Query historical data of external tables using the `FOR SYSTEM_TIME AS OF` clause."
-        }
-      },
-      {
-        "kind": "Feature",
         "content": "You can use the [`JSON_KEYS` function](https://cloud.google.com/bigquery/docs/reference/standard-sql/json_functions#json_keys) to extract unique JSON keys from a JSON expression, and you can specify a [mode](https://cloud.google.com/bigquery/docs/reference/standard-sql/json_functions#JSONPath_mode) for some JSON functions that take a JSONPath to allow more flexibility in how the path matches the JSON structure. These features are [generally available](https://cloud.google.com/products#product-launch-stages) (GA).",
         "summary": {
           "title": "JSON Functions Now Generally Available",
@@ -96,6 +104,14 @@
         "summary": {
           "title": "SQL code completion is now available for all BigQuery projects.",
           "summary": "SQL code completion is now available for all BigQuery projects. You can learn how to enable and activate Gemini in BigQuery features by visiting the Set up Gemini in BigQuery documentation. This feature is currently in preview."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now [access snapshots of Apache Iceberg external tables](https://cloud.google.com/bigquery/docs/iceberg-external-tables#query_historical_data) that are retained in your Iceberg metadata by using the `FOR SYSTEM_TIME AS OF` clause. This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).",
+        "summary": {
+          "title": "Access historical data of external tables",
+          "summary": "Query historical data of external tables using the `FOR SYSTEM_TIME AS OF` clause."
         }
       }
     ],

@@ -4,10 +4,25 @@
 
 ### Feature
 
+To simplify access management for your Iceberg tables, you
+can use [credential vending mode with the Apache Iceberg REST catalog](https://cloud.google.com/bigquery/docs/blms-rest-catalog) in BigLake metastore. Credential vending removes
+the need for catalog users to have direct access to Cloud Storage buckets. This
+feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
 You can now create BigQuery
 [non-incremental materialized views over Spanner data](https://cloud.google.com/bigquery/docs/materialized-views-create#spanner)
 to improve query performance by periodically caching results.
 This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+BigQuery data preparation supports unnesting arrays, which expands each
+array element into its own row for easier analysis. For more information, see
+[Unnest arrays](https://cloud.google.com/bigquery/docs/data-prep-get-suggestions#unnest-arrays).
+This feature is [generally
+available](https://cloud.google.com/products#product-launch-stages) (GA).
 
 ### Announcement
 
@@ -80,15 +95,15 @@ You can now run federated queries against [PostgreSQL dialect databases in Spann
 
 ### Feature
 
-You can now [access snapshots of Apache Iceberg external tables](https://cloud.google.com/bigquery/docs/iceberg-external-tables#query_historical_data) that are retained in your Iceberg metadata by using the `FOR SYSTEM_TIME AS OF` clause. This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
-
-### Feature
-
 You can use the [`JSON_KEYS` function](https://cloud.google.com/bigquery/docs/reference/standard-sql/json_functions#json_keys) to extract unique JSON keys from a JSON expression, and you can specify a [mode](https://cloud.google.com/bigquery/docs/reference/standard-sql/json_functions#JSONPath_mode) for some JSON functions that take a JSONPath to allow more flexibility in how the path matches the JSON structure. These features are [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
 
 ### Feature
 
 [SQL code completion](https://cloud.google.com/bigquery/docs/write-sql-gemini) is now available for all BigQuery projects. To learn how to enable and activate Gemini in BigQuery features, see [Set up Gemini in BigQuery](https://cloud.google.com/gemini/docs/bigquery/set-up-gemini). This feature is available in [preview](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+You can now [access snapshots of Apache Iceberg external tables](https://cloud.google.com/bigquery/docs/iceberg-external-tables#query_historical_data) that are retained in your Iceberg metadata by using the `FOR SYSTEM_TIME AS OF` clause. This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
 
 ---
 ## 2025-09-15

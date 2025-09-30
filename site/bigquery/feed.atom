@@ -12,6 +12,20 @@
     <id>urn:github:multani:gcp-changelog:bigquery:2025-09-29:feature:0</id>
     <published>2025-09-29T00:00:00+00:00</published>
     <updated>2025-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>To simplify access management for your Iceberg tables, you
+can use <a href="https://cloud.google.com/bigquery/docs/blms-rest-catalog">credential vending mode with the Apache Iceberg REST catalog</a> in BigLake metastore. Credential vending removes
+the need for catalog users to have direct access to Cloud Storage buckets. This
+feature is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>]]></content>
+    <summary>BigLake metastore now supports credential vending mode with the Apache Iceberg REST catalog. This simplifies access management for Iceberg tables by removing the need for direct Cloud Storage bucket access for catalog users. This feature is currently in Preview.</summary>
+    <title>Feature: Access management for Iceberg tables</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-09-29:feature:1</id>
+    <published>2025-09-29T00:00:00+00:00</published>
+    <updated>2025-09-29T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>You can now create BigQuery
 <a href="https://cloud.google.com/bigquery/docs/materialized-views-create#spanner">non-incremental materialized views over Spanner data</a>
 to improve query performance by periodically caching results.
@@ -23,7 +37,22 @@ This feature is in <a href="https://cloud.google.com/products/#product-launch-st
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:bigquery:2025-09-29:announcement:1</id>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-09-29:feature:2</id>
+    <published>2025-09-29T00:00:00+00:00</published>
+    <updated>2025-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>BigQuery data preparation supports unnesting arrays, which expands each
+array element into its own row for easier analysis. For more information, see
+<a href="https://cloud.google.com/bigquery/docs/data-prep-get-suggestions#unnest-arrays">Unnest arrays</a>.
+This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally
+available</a> (GA).</p>]]></content>
+    <summary>BigQuery now supports unnesting arrays, transforming each array element into a separate row for simplified analysis. This feature is now generally available.</summary>
+    <title>Feature: Unnest Arrays in BigQuery</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-09-29:announcement:3</id>
     <published>2025-09-29T00:00:00+00:00</published>
     <updated>2025-09-29T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><a href="https://cloud.google.com/bigquery/docs/history-based-optimizations">History-based query optimizations</a>
@@ -131,17 +160,6 @@ functions. This feature is
     <id>urn:github:multani:gcp-changelog:bigquery:2025-09-16:feature:0</id>
     <published>2025-09-16T00:00:00+00:00</published>
     <updated>2025-09-16T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>You can now <a href="https://cloud.google.com/bigquery/docs/iceberg-external-tables#query_historical_data">access snapshots of Apache Iceberg external tables</a> that are retained in your Iceberg metadata by using the <code>FOR SYSTEM_TIME AS OF</code> clause. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>]]></content>
-    <summary>Query historical data of external tables using the `FOR SYSTEM_TIME AS OF` clause.</summary>
-    <title>Feature: Access historical data of external tables</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:bigquery:2025-09-16:feature:1</id>
-    <published>2025-09-16T00:00:00+00:00</published>
-    <updated>2025-09-16T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>You can use the <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/json_functions#json_keys"><code>JSON_KEYS</code> function</a> to extract unique JSON keys from a JSON expression, and you can specify a <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/json_functions#JSONPath_mode">mode</a> for some JSON functions that take a JSONPath to allow more flexibility in how the path matches the JSON structure. These features are <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>]]></content>
     <summary>BigQuery's JSON_KEYS function and JSONPath mode are now generally available, offering enhanced flexibility for extracting JSON data.</summary>
     <title>Feature: JSON Functions Now Generally Available</title>
@@ -150,12 +168,23 @@ functions. This feature is
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:bigquery:2025-09-16:feature:2</id>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-09-16:feature:1</id>
     <published>2025-09-16T00:00:00+00:00</published>
     <updated>2025-09-16T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><a href="https://cloud.google.com/bigquery/docs/write-sql-gemini">SQL code completion</a> is now available for all BigQuery projects. To learn how to enable and activate Gemini in BigQuery features, see <a href="https://cloud.google.com/gemini/docs/bigquery/set-up-gemini">Set up Gemini in BigQuery</a>. This feature is available in <a href="https://cloud.google.com/products#product-launch-stages">preview</a>.</p>]]></content>
     <summary>SQL code completion is now available for all BigQuery projects. You can learn how to enable and activate Gemini in BigQuery features by visiting the Set up Gemini in BigQuery documentation. This feature is currently in preview.</summary>
     <title>Feature: SQL code completion is now available for all BigQuery projects.</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-09-16:feature:2</id>
+    <published>2025-09-16T00:00:00+00:00</published>
+    <updated>2025-09-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now <a href="https://cloud.google.com/bigquery/docs/iceberg-external-tables#query_historical_data">access snapshots of Apache Iceberg external tables</a> that are retained in your Iceberg metadata by using the <code>FOR SYSTEM_TIME AS OF</code> clause. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>]]></content>
+    <summary>Query historical data of external tables using the `FOR SYSTEM_TIME AS OF` clause.</summary>
+    <title>Feature: Access historical data of external tables</title>
   </entry>
   <entry>
     <author>

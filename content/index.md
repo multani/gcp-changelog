@@ -74,6 +74,7 @@
 - [Cloud SQL for MySQL](cloud-sql-for-mysql/index.md)
 - [Cloud SQL for PostgreSQL](cloud-sql-for-postgresql/index.md)
 - [Cloud SQL for SQL Server](cloud-sql-for-sql-server/index.md)
+- [Cloud Scheduler](cloud-scheduler/index.md)
 - [Cloud Service Mesh](cloud-service-mesh/index.md)
 - [Cloud Storage](cloud-storage/index.md)
 - [Cloud Trace](cloud-trace/index.md)

@@ -1,5 +1,14 @@
 # Text-to-Speech
 
+## 2025-09-30
+
+### Announcement
+
+Gemini-TTS is [generally available (GA)](https://cloud.google.com/products?e=48754805#product-launch-stages) and provides support for 30 voices and over 70 locales. You can synthesize single or multi-speaker speech from short snippets to long-form narratives. You can precisely dictate style, accent, pace, tone, and even emotional expression using natural-language prompts.
+
+For more information, see [Gemini TTS](https://cloud.google.com/text-to-speech/docs/gemini-tts). Give it a try in [Media Studio](https://console.cloud.google.com/vertex-ai/studio/media/generate;tab=audio).
+
+---
 ## 2025-09-15
 
 ### Changed

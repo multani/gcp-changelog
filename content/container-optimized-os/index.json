@@ -1,6 +1,288 @@
 {
   "name": "Container Optimized OS",
   "entries": {
+    "2025-09-29": [
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "New features",
+          "summary": "New features have been added to the platform."
+        }
+      },
+      {
+        "kind": "cos-beta-125-19216-0-62",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.46](https://cos.googlesource.com/third_party/kernel/+/96bbdbf724fadf236b71f17314bc6e716a7e2031 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19216.0.62/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS-6.12.46-27.5.1-2.1.3",
+          "summary": "New COS release available. Includes updates to Kernel, Docker, and Containerd. GPU drivers also updated."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated app-admin/node-problem-detector to v0.8.21.",
+        "summary": {
+          "title": "Node Problem Detector updated",
+          "summary": "Node Problem Detector has been updated to version 0.8.21."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated golang.org/x/oauth2, golang.org/x/net,\ngolang.org/x/crypto, and github.com/golang-jwt/jwt/v5 in Docker.",
+        "summary": {
+          "title": "Updated security libraries",
+          "summary": "Security libraries including oauth2, net, crypto, and jwt have been updated."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-39882 in the Linux kernel.",
+        "summary": {
+          "title": "Security update for Linux kernel",
+          "summary": "A security vulnerability (CVE-2025-39882) in the Linux kernel has been addressed. This update ensures the ongoing security and stability of your systems."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-0aeb54a in the Linux Kernel.",
+        "summary": {
+          "title": "Fixed KCTF-0aeb54a",
+          "summary": "Security fix for Linux Kernel vulnerability KCTF-0aeb54a."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-39884 in the Linux kernel.",
+        "summary": {
+          "title": "Fixed CVE-2025-39884 in Linux kernel",
+          "summary": "A security vulnerability (CVE-2025-39884) in the Linux kernel has been addressed. This fix enhances the overall security of systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-40300 in the Linux kernel.",
+        "summary": {
+          "title": "Fixed CVE-2025-40300",
+          "summary": "A vulnerability in the Linux kernel, CVE-2025-40300, has been addressed. This fix enhances the security of systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-39881 in the Linux kernel.",
+        "summary": {
+          "title": "Fixed CVE-2025-39881 in the Linux kernel.",
+          "summary": "The Linux kernel has been updated to address a security vulnerability identified as CVE-2025-39881."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-39883 in the Linux kernel.",
+        "summary": {
+          "title": "Security Update for Linux Kernel",
+          "summary": "A security vulnerability in the Linux kernel has been addressed."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "New features available",
+          "summary": "We're excited to announce new features are now available, enhancing your experience and productivity."
+        }
+      },
+      {
+        "kind": "cos-dev-129-19290-0-0",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.48](https://cos.googlesource.com/third_party/kernel/+/062ea04d39b48ae7b92268575cd91677e97dd59d ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19290.0.0/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container-Optimized OS 19290.0.0",
+          "summary": "COS 19290.0.0 includes updates to the kernel, Docker, and Containerd. It also features GPU driver support."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated the Linux kernel to v6.12.48.",
+        "summary": {
+          "title": "Linux Kernel Update",
+          "summary": "The Linux kernel has been updated to version 6.12.48."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added CPU balloon support for ARM CPUs.",
+        "summary": {
+          "title": "CPU Balloon Support for ARM",
+          "summary": "CPU ballooning is now supported for ARM CPUs."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added support for the fwctl subsystem and the Mellanox fwctl driver for ARM64.",
+        "summary": {
+          "title": "ARM64 Support for Mellanox fwctl",
+          "summary": "Added support for the fwctl subsystem and the Mellanox fwctl driver for ARM64."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-auth/pambase to v20250906.",
+        "summary": {
+          "title": "Upgraded pambase",
+          "summary": "pambase was upgraded to v20250906."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/google-guest-configs to v20250913.00.",
+        "summary": {
+          "title": "Guest Configs Updated",
+          "summary": "The app-admin/google-guest-configs package has been upgraded to version v20250913.00."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/expat to v2.7.2.",
+        "summary": {
+          "title": "expat upgrade",
+          "summary": "expat was upgraded to v2.7.2"
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated golang.org/x/oauth2, golang.org/x/net, golang.org/x/crypto, and github.com/golang-jwt/jwt/v5 in Docker.",
+        "summary": {
+          "title": "Updated security libraries",
+          "summary": "Security libraries including oauth2, net, crypto, and jwt have been updated."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "New Features Available",
+          "summary": "We're excited to announce new features have been added to our platform. These updates are designed to enhance your experience and provide more functionality."
+        }
+      },
+      {
+        "kind": "cos-113-18244-448-58",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.151](https://cos.googlesource.com/third_party/kernel/+/cdea5873474cabb0b26402f65fdcc1df608af567 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.448.58/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "New COS Image Release",
+          "summary": "A new version of the COS image is available, including updates to the kernel, Docker, and Containerd. GPU driver information is also included."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for NVIDIA driver v580.82.07.\nUpdated all latest driver version and default driver\nversions for NVIDIA\\_B200 to v580.82.07.",
+        "summary": {
+          "title": "NVIDIA Driver Update",
+          "summary": "NVIDIA driver updated to v580.82.07 for NVIDIA_B200."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated dev-python/jinja to v3.1.6. This resolves\nCVE-2024-56326, CVE-2024-56201 and CVE-2025-27516.",
+        "summary": {
+          "title": "Jinja Update",
+          "summary": "Updated Jinja to v3.1.6 to address security vulnerabilities."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-0aeb54a in the Linux Kernel.",
+        "summary": {
+          "title": "Fixed KCTF-0aeb54a",
+          "summary": "Security update for Linux Kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-39881 in the Linux kernel.",
+        "summary": {
+          "title": "Security update for Linux kernel",
+          "summary": "A security vulnerability (CVE-2025-39881) in the Linux kernel has been fixed."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-39883 in the Linux kernel.",
+        "summary": {
+          "title": "Security Update for Linux Kernel",
+          "summary": "A fix has been released for CVE-2025-39883 in the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-40300 in the Linux kernel.",
+        "summary": {
+          "title": "Security Update for Linux Kernel",
+          "summary": "A vulnerability in the Linux kernel has been addressed. This fix resolves CVE-2025-40300."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "New features available",
+          "summary": "New features are now available. We have added new functionalities to improve user experience. Visit our website for more details."
+        }
+      },
+      {
+        "kind": "cos-121-18867-199-80",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.105](https://cos.googlesource.com/third_party/kernel/+/0e0315b16868f789862900711ad3d92750ea17c5 ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.199.80/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS-121-18867-199-80",
+          "summary": "New COS version released with updates to Kernel, Docker, and Containerd. Includes GPU driver information."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated golang.org/x/oauth2, golang.org/x/net,\ngolang.org/x/crypto, and github.com/golang-jwt/jwt/v5 in Docker.",
+        "summary": {
+          "title": "Updated security libraries",
+          "summary": "Updated security libraries in Docker."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated dev-python/jinja to v3.1.6. This resolves\nCVE-2024-56326, CVE-2024-56201 and CVE-2025-27516.",
+        "summary": {
+          "title": "Security Update for Jinja",
+          "summary": "The Jinja library has been updated to version 3.1.6 to address critical security vulnerabilities CVE-2024-56326, CVE-2024-56201, and CVE-2025-27516. This update is crucial for maintaining the security of your applications."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-0aeb54a in the Linux Kernel.",
+        "summary": {
+          "title": "Security Fix in Linux Kernel",
+          "summary": "A security vulnerability (KCTF-0aeb54a) in the Linux Kernel has been fixed."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-39881 in the Linux kernel.",
+        "summary": {
+          "title": "Security Update for Linux Kernel",
+          "summary": "A security vulnerability in the Linux kernel has been addressed. This fix resolves CVE-2025-39881, enhancing system security."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-39883 in the Linux kernel.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "A security vulnerability in the Linux kernel has been fixed."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-40300 in the Linux kernel.",
+        "summary": {
+          "title": "Security update for Linux kernel",
+          "summary": "A security vulnerability (CVE-2025-40300) in the Linux kernel has been fixed."
+        }
+      }
+    ],
     "2025-09-24": [
       {
         "kind": "cos-beta-125-19216-0-53",

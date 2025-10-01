@@ -2,9 +2,197 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Spanner</title>
   <subtitle>Changelog for Google Cloud product: Spanner</subtitle>
-  <updated>2025-09-29T00:00:00+00:00</updated>
+  <updated>2025-09-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:spanner</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/spanner/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2025-09-30:libraries:0</id>
+    <published>2025-09-30T00:00:00+00:00</published>
+    <updated>2025-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A monthly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
+<h3>Go</h3>
+<h3>Changes for <a href="https://github.com/googleapis/google-cloud-go/tree/main/spanner/admin/database/apiv1">spanner/admin/database/apiv1</a></h3>
+<h4><a href="https://github.com/googleapis/google-cloud-go/compare/spanner/v1.84.1...spanner/v1.85.0">1.85.0</a> (2025-08-28)</h4>
+<h5>Features</h5>
+<ul>
+<li><strong>spanner:</strong> Enable multiplex sessions by default for all operations (<a href="https://github.com/googleapis/google-cloud-go/issues/12734">#12734</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/0491ba6f258600cc518a5a2c274caa0fb6105c8a">0491ba6</a>)</li>
+</ul>
+<h5>Performance Improvements</h5>
+<ul>
+<li><strong>spanner:</strong> Improve mutationProto allocations and performance (<a href="https://github.com/googleapis/google-cloud-go/issues/12740">#12740</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/2a4add5405205fea315b17e4f70096d4be78b506">2a4add5</a>)</li>
+</ul>
+<h4><a href="https://github.com/googleapis/google-cloud-go/compare/spanner/v1.85.0...spanner/v1.85.1">1.85.1</a> (2025-09-12)</h4>
+<h5>Bug Fixes</h5>
+<ul>
+<li><strong>spanner:</strong> Disable afe_connectivity_error_count metric (<a href="https://github.com/googleapis/google-cloud-go/issues/12866">#12866</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/baab714b87311822a7c8c5202430a0cd7e11cc7d">baab714</a>)</li>
+</ul>
+<h5>Documentation</h5>
+<ul>
+<li><strong>spanner:</strong> A comment for enum Kind is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for enum Priority is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for enum value LOCK_HINT_EXCLUSIVE in enum LockHint is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for enum value LOCK_HINT_UNSPECIFIED in enum LockHint is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for enum value ORDER_BY_PRIMARY_KEY in enum OrderBy is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for enum value ORDER_BY_UNSPECIFIED in enum OrderBy is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for enum value PROFILE in enum QueryMode is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for enum value SERIALIZABLE in enum IsolationLevel is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field approximate_last_use_time in message .google.spanner.v1.Session is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field auto_failover_disabled in message .google.spanner.v1.DirectedReadOptions is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field columns in message .google.spanner.v1.Mutation is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field data_boost_enabled in message .google.spanner.v1.ExecuteSqlRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field data_boost_enabled in message .google.spanner.v1.ReadRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field exclude_replicas in message .google.spanner.v1.DirectedReadOptions is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field exclude_txn_from_change_streams in message .google.spanner.v1.BatchWriteRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field include_replicas in message .google.spanner.v1.DirectedReadOptions is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field index in message .google.spanner.v1.PlanNode is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field insert_or_update in message .google.spanner.v1.Mutation is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field key_set in message .google.spanner.v1.Mutation is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field key_set in message .google.spanner.v1.PartitionReadRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field key_set in message .google.spanner.v1.ReadRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field kind in message .google.spanner.v1.PlanNode is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field last_statement in message .google.spanner.v1.ExecuteSqlRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field last_statements in message .google.spanner.v1.ExecuteBatchDmlRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field limit in message .google.spanner.v1.ReadRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field location in message .google.spanner.v1.DirectedReadOptions is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field max_commit_delay in message .google.spanner.v1.CommitRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field max_partitions in message .google.spanner.v1.PartitionOptions is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field multiplexed in message .google.spanner.v1.Session is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field mutation_key in message .google.spanner.v1.BeginTransactionRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field optimizer_statistics_package in message .google.spanner.v1.ExecuteSqlRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field optimizer_version in message .google.spanner.v1.ExecuteSqlRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field order_by in message .google.spanner.v1.ReadRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field param_types in message .google.spanner.v1.ExecuteBatchDmlRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field param_types in message .google.spanner.v1.ExecuteSqlRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field param_types in message .google.spanner.v1.PartitionQueryRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field params in message .google.spanner.v1.ExecuteBatchDmlRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field params in message .google.spanner.v1.ExecuteSqlRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field params in message .google.spanner.v1.PartitionQueryRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field partition_size_bytes in message .google.spanner.v1.PartitionOptions is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field partition_token in message .google.spanner.v1.ExecuteSqlRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field partition_token in message .google.spanner.v1.Partition is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field partition_token in message .google.spanner.v1.ReadRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field plan_nodes in message .google.spanner.v1.QueryPlan is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field precommit_token in message .google.spanner.v1.CommitRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field precommit_token in message .google.spanner.v1.ExecuteBatchDmlResponse is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field ranges in message .google.spanner.v1.KeySet is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field replace in message .google.spanner.v1.Mutation is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field request_options in message .google.spanner.v1.BeginTransactionRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field request_tag in message .google.spanner.v1.RequestOptions is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field return_commit_stats in message .google.spanner.v1.CommitRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field seqno in message .google.spanner.v1.ExecuteBatchDmlRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field seqno in message .google.spanner.v1.ExecuteSqlRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field session_count in message .google.spanner.v1.BatchCreateSessionsRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field session_template in message .google.spanner.v1.BatchCreateSessionsRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field short_representation in message .google.spanner.v1.PlanNode is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field single_use_transaction in message .google.spanner.v1.CommitRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field sql in message .google.spanner.v1.PartitionQueryRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field transaction in message .google.spanner.v1.ExecuteSqlRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field transaction in message .google.spanner.v1.PartitionQueryRequest is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field transaction_tag in message .google.spanner.v1.RequestOptions is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field values in message .google.spanner.v1.Mutation is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for field variable in message .google.spanner.v1.PlanNode is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for message DirectedReadOptions is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for message DirectedReadOptions is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for message DirectedReadOptions is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for message Mutation is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for message PartitionOptions is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for message PlanNode is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for method BatchWrite in service Spanner is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for method Commit in service Spanner is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for method CreateSession in service Spanner is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for method DeleteSession in service Spanner is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for method ExecuteSql in service Spanner is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for method ExecuteStreamingSql in service Spanner is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for method GetSession in service Spanner is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for method PartitionQuery in service Spanner is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for method PartitionRead in service Spanner is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for method Read in service Spanner is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+<li><strong>spanner:</strong> A comment for method Rollback in service Spanner is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/51583bd5c9b886d22b45da092dc8311422b8b5ac">51583bd</a>)</li>
+</ul>
+<h3>Java</h3>
+<h3>Changes for <a href="https://github.com/googleapis/java-spanner">google-cloud-spanner</a></h3>
+<h4><a href="https://github.com/googleapis/java-spanner/compare/v6.98.1...v6.99.0">6.99.0</a> (2025-08-26)</h4>
+<h5>Features</h5>
+<ul>
+<li>Support read lock mode for R/W transactions (<a href="https://github.com/googleapis/java-spanner/issues/4010">#4010</a>) (<a href="https://github.com/googleapis/java-spanner/commit/7d752d686e638b6266aab3a5188c01641d2f9adc">7d752d6</a>)</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.62.0 (<a href="https://github.com/googleapis/java-spanner/commit/52c68db5c75f24a066c2e828ed79917c824f699b">52c68db</a>)</li>
+<li>GetCommitResponse() should return error if tx has not committed (<a href="https://github.com/googleapis/java-spanner/issues/4021">#4021</a>) (<a href="https://github.com/googleapis/java-spanner/commit/a2c179f2e7c19d295bdbf9cf1bbd1c5562dd9e21">a2c179f</a>)</li>
+</ul>
+<h5>Dependencies</h5>
+<ul>
+<li>Update dependency com.google.cloud:sdk-platform-java-config to v3.52.0 (<a href="https://github.com/googleapis/java-spanner/issues/4024">#4024</a>) (<a href="https://github.com/googleapis/java-spanner/commit/7e3294f6d42bddb4cfff67334118f615c90c3bb7">7e3294f</a>)</li>
+</ul>
+<h4><a href="https://github.com/googleapis/java-spanner/compare/v6.99.0...v6.100.0">6.100.0</a> (2025-09-11)</h4>
+<h5>Features</h5>
+<ul>
+<li>Read_lock_mode support for connections (<a href="https://github.com/googleapis/java-spanner/issues/4031">#4031</a>) (<a href="https://github.com/googleapis/java-spanner/commit/261abb4b9c5ff00fac2d816a31926b23264657c4">261abb4</a>)</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.62.1 (<a href="https://github.com/googleapis/java-spanner/commit/e9773a7aa27a414d56093b4e09e0f197a07b5980">e9773a7</a>)</li>
+<li>Disable afe_connectivity_error_count metric (<a href="https://github.com/googleapis/java-spanner/issues/4041">#4041</a>) (<a href="https://github.com/googleapis/java-spanner/commit/f89c1c0517ba6b895f405b0085b8df41aac952be">f89c1c0</a>)</li>
+<li>Skip session delete in case of multiplexed sessions (<a href="https://github.com/googleapis/java-spanner/issues/4029">#4029</a>) (<a href="https://github.com/googleapis/java-spanner/commit/8bcb09d141fe986c92ccacbaa9a45302c5c8e79d">8bcb09d</a>)</li>
+</ul>
+<h5>Dependencies</h5>
+<ul>
+<li>Update dependency com.google.cloud:sdk-platform-java-config to v3.52.1 (<a href="https://github.com/googleapis/java-spanner/issues/4034">#4034</a>) (<a href="https://github.com/googleapis/java-spanner/commit/13bfa7c68c7ea887e679fb5504dceb85cbb43cb9">13bfa7c</a>)</li>
+</ul>
+<h5>Documentation</h5>
+<ul>
+<li>A comment for field <code>ranges</code> in message <code>.google.spanner.v1.KeySet</code> is changed (<a href="https://github.com/googleapis/java-spanner/commit/e9773a7aa27a414d56093b4e09e0f197a07b5980">e9773a7</a>)</li>
+</ul>
+<h4><a href="https://github.com/googleapis/java-spanner/compare/v6.101.0...v6.101.1">6.101.1</a> (2025-09-26)</h4>
+<h5>Bug Fixes</h5>
+<ul>
+<li>Potential NullPointerException in LocalConnectionChecker (<a href="https://github.com/googleapis/java-spanner/issues/4092">#4092</a>) (<a href="https://github.com/googleapis/java-spanner/commit/3b9f597ba60199a16556824568b24908ce938a69">3b9f597</a>)</li>
+</ul>
+<h4><a href="https://github.com/googleapis/java-spanner/compare/v6.100.0...v6.101.0">6.101.0</a> (2025-09-26)</h4>
+<h5>Features</h5>
+<ul>
+<li>Add transaction_timeout connection property (<a href="https://github.com/googleapis/java-spanner/issues/4056">#4056</a>) (<a href="https://github.com/googleapis/java-spanner/commit/cdc52d49b39c57e7255f4e09fb33a41f4810397d">cdc52d4</a>)</li>
+<li>TPC support (<a href="https://github.com/googleapis/java-spanner/issues/4055">#4055</a>) (<a href="https://github.com/googleapis/java-spanner/commit/7625cce9ad48b14a1cff9c2ede86a066ea292bef">7625cce</a>)</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.62.2 (<a href="https://github.com/googleapis/java-spanner/commit/8d6cbf6bea9cbd823b8f0070516e34b4d8428e87">8d6cbf6</a>)</li>
+<li>Potential NullPointerException in Value#hashCode (<a href="https://github.com/googleapis/java-spanner/issues/4046">#4046</a>) (<a href="https://github.com/googleapis/java-spanner/commit/74abb341e2ea42bbf0a2de4ec3e3555335b5fd9f">74abb34</a>)</li>
+<li>Recalculate remaining statement timeout after retry (<a href="https://github.com/googleapis/java-spanner/issues/4053">#4053</a>) (<a href="https://github.com/googleapis/java-spanner/commit/5e26596f4f9c924260da0908920854d8ddfc626b">5e26596</a>)</li>
+</ul>
+<h5>Dependencies</h5>
+<ul>
+<li>Update dependency com.google.cloud:sdk-platform-java-config to v3.52.2 (<a href="https://github.com/googleapis/java-spanner/issues/4057">#4057</a>) (<a href="https://github.com/googleapis/java-spanner/commit/d782aff63ff81e1b760690d4dee3e566028d522e">d782aff</a>)</li>
+</ul>
+<h3>Node.js</h3>
+<h3>Changes for <a href="https://github.com/googleapis/nodejs-spanner">@google-cloud/spanner</a></h3>
+<h4><a href="https://github.com/googleapis/nodejs-spanner/compare/v8.1.0...v8.2.0">8.2.0</a> (2025-08-26)</h4>
+<h5>Features</h5>
+<ul>
+<li><strong>spanner:</strong> Add support for multiplexed session for r/w transactions (<a href="https://github.com/googleapis/nodejs-spanner/issues/2351">#2351</a>) (<a href="https://github.com/googleapis/nodejs-spanner/commit/6a9f1a2b2c0dad955593571c71e9d4b6c9e7eeee">6a9f1a2</a>)</li>
+<li><strong>spanner:</strong> Support setting read lock mode (<a href="https://github.com/googleapis/nodejs-spanner/issues/2388">#2388</a>) (<a href="https://github.com/googleapis/nodejs-spanner/commit/bd66f61f3ecac65678d31cbc841c11cd0fb7c3da">bd66f61</a>)</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li><strong>deps:</strong> Add uuid to dependencies (<a href="https://github.com/googleapis/nodejs-spanner/issues/2376">#2376</a>) (<a href="https://github.com/googleapis/nodejs-spanner/commit/0b2060b4ad7302ab23ac757e79fe760e34e81083">0b2060b</a>)</li>
+<li><strong>deps:</strong> Update dependency @grpc/proto-loader to ^0.8.0 (<a href="https://github.com/googleapis/nodejs-spanner/issues/2354">#2354</a>) (<a href="https://github.com/googleapis/nodejs-spanner/commit/75dc4daf114cbc4eb4669ed6cb042af051cdce63">75dc4da</a>)</li>
+<li><strong>deps:</strong> Update dependency google-gax to v5.0.1 (<a href="https://github.com/googleapis/nodejs-spanner/issues/2362">#2362</a>) (<a href="https://github.com/googleapis/nodejs-spanner/commit/922347014ac3966ec4a48116b61ba4850edf0b50">9223470</a>)</li>
+<li>Provide option to disable built in metrics (<a href="https://github.com/googleapis/nodejs-spanner/issues/2380">#2380</a>) (<a href="https://github.com/googleapis/nodejs-spanner/commit/b378e2ed6739acf76f3f3f27090311129dd83473">b378e2e</a>)</li>
+<li>Race condition among transactions when running parallely (<a href="https://github.com/googleapis/nodejs-spanner/issues/2369">#2369</a>) (<a href="https://github.com/googleapis/nodejs-spanner/commit/f8b6f6340f4f04e04213fdf0a9665d643f474eeb">f8b6f63</a>)</li>
+</ul>
+<h4><a href="https://github.com/googleapis/nodejs-spanner/compare/v8.2.0...v8.2.1">8.2.1</a> (2025-09-12)</h4>
+<h5>Bug Fixes</h5>
+<ul>
+<li><strong>deps:</strong> Update dependency google-gax to v5.0.3 (<a href="https://github.com/googleapis/nodejs-spanner/issues/2371">#2371</a>) (<a href="https://github.com/googleapis/nodejs-spanner/commit/8a175e2e5cc8d0ed81faee7b24b59b5026758a59">8a175e2</a>)</li>
+<li>Disable afe_connectivity_error_count metric (<a href="https://github.com/googleapis/nodejs-spanner/commit/af72d707c8857d5596bd2b93830e52c8e152967f">af72d70</a>)</li>
+</ul>]]></content>
+    <summary>This release includes updates for Go, Java, and Node.js client libraries. Key changes include enhanced transaction support, performance improvements, and bug fixes.</summary>
+    <title>Libraries: Client Library Updates</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

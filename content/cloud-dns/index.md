@@ -1,5 +1,14 @@
 # Cloud DNS
 
+## 2025-09-30
+
+### Feature
+
+[Alias records](https://cloud.google.com/dns/docs/records-overview#alias-records) are available in [GA](https://cloud.google.com/products#product-launch-stages).
+
+This custom record type provides CNAME-like functionality at the zone apex, mapping the apex domain name to a canonical target.
+
+---
 ## 2025-08-29
 
 ### Feature

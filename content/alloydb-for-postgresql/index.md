@@ -1,5 +1,15 @@
 # AlloyDB for PostgreSQL
 
+## 2025-09-30
+
+### Feature
+
+You can enable [`alloydb.enable_cache_aware_costing`](https://cloud.google.com/alloydb/docs/reference/alloydb-flags#alloydb.enable_cache_aware_costing) to turn on
+cache awareness for AlloyDB for PostgreSQL's query planner. This improves index
+scan query plans for query performance and reduces IO costs. This feature
+is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-09-29
 
 ### Announcement

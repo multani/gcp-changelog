@@ -4,14 +4,14 @@
 
 ### Feature
 
-Agent Assist offers a **bidirectional API** for next-generation audio and multi-modal experiences in both Conversational Agents and Agent Assist. The [`BiDiStreamingAnalyzeContent` API](https://cloud.google.com/agent-assist/docs/bidi-stream-api) facilitates the streaming of audio data and returns either transcriptions or human agent suggestions to you.
+Agent Assist offers a bidirectional API for next-generation audio and multi-modal experiences in both Conversational Agents and Agent Assist. The [`BiDiStreamingAnalyzeContent` API](https://cloud.google.com/agent-assist/docs/bidi-stream-api) facilitates the streaming of audio data and returns either transcriptions or human agent suggestions to you.
 
 ---
 ## 2025-09-09
 
 ### Feature
 
-Agent assist offers [**Summarization automatic evaluation**](https://cloud.google.com/agent-assist/docs/summarization-autoeval-guide) in preview. This feature evaluates the quality of AI-generated summaries based on the following three metrics:
+Agent assist offers [summarization automatic evaluation](https://cloud.google.com/agent-assist/docs/summarization-autoeval-guide) in preview. This feature evaluates the quality of AI-generated summaries based on the following three metrics:
 
 * Accuracy
 * Completeness

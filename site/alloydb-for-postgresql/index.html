@@ -881,6 +881,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Cloud scheduler <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../cloud-scheduler/" class="dropdown-item">Cloud Scheduler</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Cloud service mesh <b class="caret"></b>
                         </a>
 
@@ -1980,6 +1992,13 @@
 
 
 <h1 id="alloydb-for-postgresql">AlloyDB for PostgreSQL</h1>
+<h2 id="2025-09-30">2025-09-30</h2>
+<h3 id="feature">Feature</h3>
+<p>You can enable <a href="https://cloud.google.com/alloydb/docs/reference/alloydb-flags#alloydb.enable_cache_aware_costing"><code>alloydb.enable_cache_aware_costing</code></a> to turn on
+cache awareness for AlloyDB for PostgreSQL's query planner. This improves index
+scan query plans for query performance and reduces IO costs. This feature
+is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
+<hr />
 <h2 id="2025-09-29">2025-09-29</h2>
 <h3 id="announcement">Announcement</h3>
 <p>The <code>alloydb_scann</code> extension version <code>0.1.3</code> is updated to include the following vector search improvements in (<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>):</p>
@@ -1999,15 +2018,15 @@
 </ul>
 <hr />
 <h2 id="2025-09-24">2025-09-24</h2>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_1">Feature</h3>
 <p>You can <a href="https://cloud.google.com/alloydb/docs/create-manage-query-plan-patches">create and manage query plan patches</a>. Query plan patches let you specify the details of the execution plan of your queries. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available (GA)</a>.</p>
 <hr />
 <h2 id="2025-09-23">2025-09-23</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>You can now provision, manage, and query your databases using the <a href="https://cloud.google.com/alloydb/docs/connect-ide-using-mcp-toolbox#connect-alloydb-gemini-cli-extension">dedicated Gemini CLI extensions for AlloyDB</a>. The extensions provide full lifecycle control of your database - from provisioning instances to exploring schemas and troubleshooting issues. This feature is available in beta.</p>
 <hr />
 <h2 id="2025-09-22">2025-09-22</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>The available memory metric now accurately reflects the memory available to
 AlloyDB by taking into consideration usable memory from the OS page cache. This
 improvement can lead to a lower value of the metric, which you might notice
@@ -2015,11 +2034,11 @@ when you update your version to PG 17 or later. This feature is generally
 available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>)
 and is available for AlloyDB for PostgreSQL version 17 and later. For more information,
 see <a href="https://cloud.google.com/alloydb/docs/reference/system-insights-metrics">System insights metrics reference</a>.</p>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>Database server compatibility with PostgreSQL version 17 is now generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>). You can <a href="https://cloud.google.com/alloydb/docs/cluster-create#procedure">create AlloyDB clusters</a> with PostgreSQL 17 compatibility.</p>
 <hr />
 <h2 id="2025-09-11">2025-09-11</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p>AlloyDB supports
 <a href="https://cloud.google.com/compute/docs/general-purpose-machines#c4a_series">C4A Arm VMs</a>
 on Google's custom-built Axion processors. C4A VMs are available as predefined
@@ -2031,9 +2050,9 @@ For more information, see
 This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
 <hr />
 <h2 id="2025-09-04">2025-09-04</h2>
-<h3 id="feature_5">Feature</h3>
-<p><a href="https://cloud.google.com/alloydb/docs/parameterized-secure-views-overview">Parameterized secure views</a> in AlloyDB for PostgreSQL enhance data security and row access control while using SQL, providing a new secure interface for application developers. Access to this <a href="https://cloud.google.com/products#product-launch-stages">Preview</a> feature no longer requires a signup.</p>
 <h3 id="feature_6">Feature</h3>
+<p><a href="https://cloud.google.com/alloydb/docs/parameterized-secure-views-overview">Parameterized secure views</a> in AlloyDB for PostgreSQL enhance data security and row access control while using SQL, providing a new secure interface for application developers. Access to this <a href="https://cloud.google.com/products#product-launch-stages">Preview</a> feature no longer requires a signup.</p>
+<h3 id="feature_7">Feature</h3>
 <p><a href="https://cloud.google.com/alloydb/docs/ai/natural-language-overview">AlloyDB AI natural language</a>
 delivers secure and accurate responses for
 application end user natural language questions. Natural language offers
@@ -2042,15 +2061,15 @@ Access to this <a href="https://cloud.google.com/products#product-launch-stages"
 feature no longer requires a signup.</p>
 <hr />
 <h2 id="2025-09-02">2025-09-02</h2>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p>You can create <a href="https://cloud.google.com/alloydb/docs/org-policy">organization policies with custom constraints</a> for AlloyDB backups and clusters, and a custom constraint with any field for an AlloyDB instance. This feature is generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).</p>
 <hr />
 <h2 id="2025-08-20">2025-08-20</h2>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p>You can save and manage your SQL scripts in AlloyDB Studio. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. For more information, see <a href="https://cloud.google.com/alloydb/docs/saved-queries">Saved queries overview</a>.</p>
 <hr />
 <h2 id="2025-07-29">2025-07-29</h2>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p>Database server compatibility with PostgreSQL version 17 is now available in
 <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.
 You can <a href="https://cloud.google.com/alloydb/docs/cluster-create#procedure">create AlloyDB clusters</a>
@@ -2111,11 +2130,11 @@ includes the following features and changes:</p>
 </ul>
 <hr />
 <h2 id="2025-07-14">2025-07-14</h2>
-<h3 id="feature_10">Feature</h3>
+<h3 id="feature_11">Feature</h3>
 <p>You can now create an AlloyDB instance with a specific IP address range using the Google Cloud CLI, Terraform, or REST API. You can also override IP address range allocations configured during cluster creation. For more information, see <a href="https://cloud.google.com/alloydb/docs/cluster-create#ip-instance">Create an instance with a specific IP address range</a>. This feature is generally available <a href="https://cloud.google.com/products#product-launch-stages">GA</a>.</p>
 <hr />
 <h2 id="2025-06-17">2025-06-17</h2>
-<h3 id="feature_11">Feature</h3>
+<h3 id="feature_12">Feature</h3>
 <p>You can use the columnar engine to improve the performance of vector similarity
 searches, specifically K-Nearest Neighbor (KNN) searches, when combined with
 highly-selective predicate filtering. For more information, see
@@ -2123,15 +2142,15 @@ highly-selective predicate filtering. For more information, see
 <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
 <hr />
 <h2 id="2025-06-02">2025-06-02</h2>
-<h3 id="feature_12">Feature</h3>
+<h3 id="feature_13">Feature</h3>
 <p>You can let <a href="https://cloud.google.com/alloydb/docs/configure-private-service-connect#create_the_endpoint_automatically">AlloyDB automatically create Private Service Connect endpoints</a>
 for authorized projects when you create Private Service Connect-enabled
 instances, based on your defined service connection policy. This feature is generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).</p>
-<h3 id="feature_13">Feature</h3>
+<h3 id="feature_14">Feature</h3>
 <p>You can create AlloyDB clusters with <a href="https://cloud.google.com/alloydb/docs/configure-private-service-connect#create_the_endpoint_automatically">Private Services Connect</a> through the Google Cloud console.</p>
 <hr />
 <h2 id="2025-05-29">2025-05-29</h2>
-<h3 id="feature_14">Feature</h3>
+<h3 id="feature_15">Feature</h3>
 <p>You can now
 <a href="https://cloud.google.com/alloydb/docs/instance-start-stop-restart">start, stop, and restart your primary and read pool AlloyDB instances</a>
 using the Google Cloud console and the Google Cloud CLI. This feature is
@@ -2139,7 +2158,7 @@ generally available
 (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).</p>
 <hr />
 <h2 id="2025-05-27">2025-05-27</h2>
-<h3 id="feature_15">Feature</h3>
+<h3 id="feature_16">Feature</h3>
 <p>The <a href="/alloydb/omni/current/docs/deploy-kubernetes">AlloyDB Omni Kubernetes</a> operator version 1.4.1 is generally available (GA) and includes the following bug fixes:</p>
 <ul>
 <li>Fix for overriding replication related parameters. This fix lets you override the <code>wal_keep_size</code> value. For more information, see <a href="/alloydb/omni/current/docs/cross-data-center-replication/work-with-cross-data-center-replication">Work with cross-data-center replication</a>. This fix requires database version 15.7.1 or later.</li>
@@ -2157,6 +2176,9 @@ generally available
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#alloydb-for-postgresql">AlloyDB for PostgreSQL</a></li>
+          <li class="nav-item">
+            <a href="#2025-09-30" class="nav-link">2025-09-30</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-09-29" class="nav-link">2025-09-29</a>
           </li>

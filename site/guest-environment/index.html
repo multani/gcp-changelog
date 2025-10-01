@@ -881,6 +881,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Cloud scheduler <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../cloud-scheduler/" class="dropdown-item">Cloud Scheduler</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Cloud service mesh <b class="caret"></b>
                         </a>
 
@@ -1980,6 +1992,18 @@
 
 
 <h1 id="guest-environment">Guest Environment</h1>
+<h2 id="2025-09-30">2025-09-30</h2>
+<h3 id="fixed">Fixed</h3>
+<p>Version <code>20250930.01</code> includes the following fixes for issues found in the
+plugin-based architecture. For more information about the plugin-based
+architecture, see <a href="https://cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>
+<ul>
+<li>Fixes an issue where the networking module incorrectly added routes when
+  <code>ip_forwarding</code> and <code>target_instance_ips</code> settings were disabled in <code>/etc/default/instance_configs.cfg</code>.</li>
+<li>Prevents unnecessary error logs in the OS Login module caused by attempts to
+  read a non-existent file.</li>
+</ul>
+<hr />
 <h2 id="2025-09-26">2025-09-26</h2>
 <h3 id="feature">Feature</h3>
 <p>Version <code>20250926.00</code> of the guest agent is now available. This guest agent
@@ -2000,7 +2024,7 @@ Enterprise Linux 10 operating systems:</p>
 </ul>
 <p>For more information about the plugin-based architecture, see
 <a href="https://cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_1">Fixed</h3>
 <p>Version <code>20250918.01</code> includes the following fixes for issues found in
 plugin-based architecture. For more information about the plugin-based
 architecture, see <a href="https://cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>
@@ -2026,7 +2050,7 @@ following operating systems:</p>
 <li>Oracle Linux 8</li>
 <li>AlmaLinux 8</li>
 </ul>
-<h3 id="fixed_1">Fixed</h3>
+<h3 id="fixed_2">Fixed</h3>
 <p>Version <code>20250907.00</code> includes the following fixes for issues found in guest
 agent version <code>20250901.00</code>:</p>
 <ul>
@@ -2074,7 +2098,7 @@ the following updates:</p>
 * The guest agent updates the metadata script runner and the Authorized Keys
   binary (Windows only) to use the new, configurable logging framework.
   Compatibility managers are included to facilitate the migration.</p>
-<h3 id="fixed_2">Fixed</h3>
+<h3 id="fixed_3">Fixed</h3>
 <p>An issue is fixed where network routes were not consistently applied
 (<a href="https://github.com/GoogleCloudPlatform/guest-agent/issues/516">GitHub Issue #516</a>).
 The system now consistently applies network routes by monitoring the route table
@@ -2090,6 +2114,9 @@ and re-adding routes when they disappear.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#guest-environment">Guest Environment</a></li>
+          <li class="nav-item">
+            <a href="#2025-09-30" class="nav-link">2025-09-30</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-09-26" class="nav-link">2025-09-26</a>
           </li>

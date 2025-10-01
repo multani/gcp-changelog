@@ -2,9 +2,100 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Storage</title>
   <subtitle>Changelog for Google Cloud product: Cloud Storage</subtitle>
-  <updated>2025-09-17T00:00:00+00:00</updated>
+  <updated>2025-09-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-storage</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-storage/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2025-09-30:feature:0</id>
+    <published>2025-09-30T00:00:00+00:00</published>
+    <updated>2025-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://cloud.google.com/storage/docs/object-contexts">Object contexts</a> are now available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. Object contexts let you attach contextual
+information to your objects to help you manage and discover data.</p>]]></content>
+    <summary>Object contexts are now available in preview. This feature allows you to attach contextual information to your objects, enhancing data management and discovery.</summary>
+    <title>Feature: Object Contexts Now in Preview</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2025-09-29:libraries:0</id>
+    <published>2025-09-29T00:00:00+00:00</published>
+    <updated>2025-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
+<h3>Go</h3>
+<h3>Changes for <a href="https://github.com/googleapis/google-cloud-go/tree/main/storage/internal/apiv2">storage/internal/apiv2</a></h3>
+<h4><a href="https://github.com/googleapis/google-cloud-go/compare/storage/v1.56.1...storage/v1.57.0">1.57.0</a> (2025-09-23)</h4>
+<h5>Features</h5>
+<ul>
+<li><strong>storage/control:</strong> Add new GetIamPolicy, SetIamPolicy, and TestIamPermissions RPCs (<a href="https://github.com/googleapis/google-cloud-go/commit/d73f9123be77bb3278f48d510cd0fb22feb605bc">d73f912</a>)</li>
+<li><strong>storage:</strong> Post support dynamic key name (<a href="https://github.com/googleapis/google-cloud-go/issues/12677">#12677</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/9e761f961a2c4351b3e0793ed655314ac5853903">9e761f9</a>)</li>
+<li><strong>storage:</strong> WithMeterProvider allows custom meter provider configuration (<a href="https://github.com/googleapis/google-cloud-go/issues/12668">#12668</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/7f574b01e0b454c1ef5c13e6a58075e394ee990d">7f574b0</a>)</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li><strong>storage:</strong> Free buffers in Bidi Reader (<a href="https://github.com/googleapis/google-cloud-go/issues/12839">#12839</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/bc247fdc3f5234a8bd6934e58d5b0b578f1335cb">bc247fd</a>)</li>
+<li><strong>storage:</strong> Make Writer thread-safe. (<a href="https://github.com/googleapis/google-cloud-go/issues/12753">#12753</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/9ea380bea5b980a9054d201be4f315a195da2182">9ea380b</a>)</li>
+<li><strong>storage:</strong> No progress report for oneshot write (<a href="https://github.com/googleapis/google-cloud-go/issues/12746">#12746</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/b97c286ec369a10a81b1a8a3a1aae18b46d2dfbc">b97c286</a>)</li>
+</ul>
+<h5>Performance Improvements</h5>
+<ul>
+<li><strong>storage:</strong> Pipeline gRPC writes (<a href="https://github.com/googleapis/google-cloud-go/issues/12422">#12422</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/1f2c5fe2843724302086fe04cb8dab8b515969c5">1f2c5fe</a>)</li>
+</ul>
+<h3>Java</h3>
+<h3>Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
+<h4><a href="https://github.com/googleapis/java-storage/compare/v2.57.0...v2.58.0">2.58.0</a> (2025-09-23)</h4>
+<h5>Features</h5>
+<ul>
+<li><strong>storagecontrol:</strong> Add GetIamPolicy, SetIamPolicy, and TestIamPermissions RPCs (<a href="https://github.com/googleapis/java-storage/commit/c884551048a323f2a3fd7aaf4fce469d4d4f543e">c884551</a>)</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.62.2 (<a href="https://github.com/googleapis/java-storage/commit/984f8ca23a38c7a892a2256a694b72431e44aa27">984f8ca</a>)</li>
+<li>Fix appendable upload finalization race condition (<a href="https://github.com/googleapis/java-storage/issues/3295">#3295</a>) (<a href="https://github.com/googleapis/java-storage/commit/485be184c08c7b857d8c9a9443f32903df879b23">485be18</a>)</li>
+<li>Fix IllegalMonitorStateException thrown from BlobAppendableUpload.isOpen() (<a href="https://github.com/googleapis/java-storage/issues/3302">#3302</a>) (<a href="https://github.com/googleapis/java-storage/commit/aa904688b784d7427454318196ef88628e415246">aa90468</a>)</li>
+<li>Update object context diff logic to be shallow rather than deep (<a href="https://github.com/googleapis/java-storage/issues/3287">#3287</a>) (<a href="https://github.com/googleapis/java-storage/commit/2fd15f69e93a3df2b8dbbd4f08edd07c087e957c">2fd15f6</a>)</li>
+</ul>
+<h5>Dependencies</h5>
+<ul>
+<li>Update dependency com.google.cloud:sdk-platform-java-config to v3.52.2 (<a href="https://github.com/googleapis/java-storage/issues/3298">#3298</a>) (<a href="https://github.com/googleapis/java-storage/commit/1489f3a74c8a27f0888c40600c83adedcfd9a9ec">1489f3a</a>)</li>
+<li>Update googleapis/sdk-platform-java action to v2.62.2 (<a href="https://github.com/googleapis/java-storage/issues/3299">#3299</a>) (<a href="https://github.com/googleapis/java-storage/commit/c3b05ac8798140f9ddcab098948a3a2f3638dc6b">c3b05ac</a>)</li>
+</ul>]]></content>
+    <summary>This is a weekly digest of client library updates for Google Cloud, including new features and bug fixes for Go and Java.</summary>
+    <title>Libraries: Client Library Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2025-09-22:libraries:0</id>
+    <published>2025-09-22T00:00:00+00:00</published>
+    <updated>2025-09-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
+<h3>Go</h3>
+<h3>Changes for <a href="https://github.com/googleapis/google-cloud-go/tree/main/storage/internal/apiv2">storage/internal/apiv2</a></h3>
+<h4><a href="https://github.com/googleapis/google-cloud-go/compare/storage/v1.56.1...storage/v1.56.2">1.56.2</a> (2025-09-15)</h4>
+<h5>Bug Fixes</h5>
+<ul>
+<li><strong>storage:</strong> Free buffers in Bidi Reader (<a href="https://github.com/googleapis/google-cloud-go/issues/12839">#12839</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/10c8faccc2dae2a8177ff30ab16d67413df9f536">10c8fac</a>)</li>
+</ul>
+<h3>Python</h3>
+<h3>Changes for <a href="https://github.com/googleapis/python-storage">google-cloud-storage</a></h3>
+<h4><a href="https://github.com/googleapis/python-storage/compare/v3.3.1...v3.4.0">3.4.0</a> (2025-09-15)</h4>
+<h5>Features</h5>
+<ul>
+<li><strong>experimental:</strong> Add async grpc client (<a href="https://github.com/googleapis/python-storage/issues/1537">#1537</a>) (<a href="https://github.com/googleapis/python-storage/commit/ac57b8d819a49aef0ed0cb5bb630bf11012f43e3">ac57b8d</a>)</li>
+<li><strong>experimental:</strong> Add grpc client (<a href="https://github.com/googleapis/python-storage/issues/1533">#1533</a>) (<a href="https://github.com/googleapis/python-storage/commit/5674587f2aa347ec2787f2bc1e847eaa294bc1ca">5674587</a>)</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li>GAPIC generation failed with 'Directory not empty' (<a href="https://github.com/googleapis/python-storage/issues/1542">#1542</a>) (<a href="https://github.com/googleapis/python-storage/commit/c80d8207a8661b84c56cd66bb34de7b5704675b8">c80d820</a>)</li>
+</ul>]]></content>
+    <summary>This is a weekly digest of client library updates. The Go client library for storage/internal/apiv2 has a bug fix for buffer handling. The Python google-cloud-storage library has new experimental features including async gRPC client support and a new gRPC client, along with a fix for a GAPIC generation issue.</summary>
+    <title>Libraries: Client Library Updates Digest</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

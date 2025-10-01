@@ -1,5 +1,166 @@
 # Container Optimized OS
 
+## 2025-09-29
+
+### Changed
+
+
+
+### cos-beta-125-19216-0-62
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.46](https://cos.googlesource.com/third_party/kernel/+/96bbdbf724fadf236b71f17314bc6e716a7e2031 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19216.0.62/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Updated app-admin/node-problem-detector to v0.8.21.
+
+### Fixed
+
+Updated golang.org/x/oauth2, golang.org/x/net,
+golang.org/x/crypto, and github.com/golang-jwt/jwt/v5 in Docker.
+
+### Security
+
+Fixed CVE-2025-39882 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-0aeb54a in the Linux Kernel.
+
+### Security
+
+Fixed CVE-2025-39884 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40300 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39881 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39883 in the Linux kernel.
+
+### Changed
+
+
+
+### cos-dev-129-19290-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.48](https://cos.googlesource.com/third_party/kernel/+/062ea04d39b48ae7b92268575cd91677e97dd59d ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19290.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated the Linux kernel to v6.12.48.
+
+### Feature
+
+Added CPU balloon support for ARM CPUs.
+
+### Feature
+
+Added support for the fwctl subsystem and the Mellanox fwctl driver for ARM64.
+
+### Fixed
+
+Upgraded sys-auth/pambase to v20250906.
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20250913.00.
+
+### Fixed
+
+Upgraded dev-libs/expat to v2.7.2.
+
+### Fixed
+
+Updated golang.org/x/oauth2, golang.org/x/net, golang.org/x/crypto, and github.com/golang-jwt/jwt/v5 in Docker.
+
+### Changed
+
+
+
+### cos-113-18244-448-58
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.151](https://cos.googlesource.com/third_party/kernel/+/cdea5873474cabb0b26402f65fdcc1df608af567 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.448.58/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Added support for NVIDIA driver v580.82.07.
+Updated all latest driver version and default driver
+versions for NVIDIA\_B200 to v580.82.07.
+
+### Security
+
+Updated dev-python/jinja to v3.1.6. This resolves
+CVE-2024-56326, CVE-2024-56201 and CVE-2025-27516.
+
+### Security
+
+Fixed KCTF-0aeb54a in the Linux Kernel.
+
+### Security
+
+Fixed CVE-2025-39881 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39883 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40300 in the Linux kernel.
+
+### Changed
+
+
+
+### cos-121-18867-199-80
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.105](https://cos.googlesource.com/third_party/kernel/+/0e0315b16868f789862900711ad3d92750ea17c5 ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.199.80/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Updated golang.org/x/oauth2, golang.org/x/net,
+golang.org/x/crypto, and github.com/golang-jwt/jwt/v5 in Docker.
+
+### Security
+
+Updated dev-python/jinja to v3.1.6. This resolves
+CVE-2024-56326, CVE-2024-56201 and CVE-2025-27516.
+
+### Security
+
+Fixed KCTF-0aeb54a in the Linux Kernel.
+
+### Security
+
+Fixed CVE-2025-39881 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39883 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40300 in the Linux kernel.
+
+---
 ## 2025-09-24
 
 ### cos-beta-125-19216-0-53

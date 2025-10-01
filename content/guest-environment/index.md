@@ -1,5 +1,19 @@
 # Guest Environment
 
+## 2025-09-30
+
+### Fixed
+
+Version `20250930.01` includes the following fixes for issues found in the
+plugin-based architecture. For more information about the plugin-based
+architecture, see [Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).
+
+* Fixes an issue where the networking module incorrectly added routes when
+  `ip_forwarding` and `target_instance_ips` settings were disabled in `/etc/default/instance_configs.cfg`.
+* Prevents unnecessary error logs in the OS Login module caused by attempts to
+  read a non-existent file.
+
+---
 ## 2025-09-26
 
 ### Feature

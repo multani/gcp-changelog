@@ -2,9 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Guest Environment</title>
   <subtitle>Changelog for Google Cloud product: Guest Environment</subtitle>
-  <updated>2025-09-26T00:00:00+00:00</updated>
+  <updated>2025-09-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:guest-environment</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/guest-environment/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2025-09-30:fixed:0</id>
+    <published>2025-09-30T00:00:00+00:00</published>
+    <updated>2025-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20250930.01</code> includes the following fixes for issues found in the
+plugin-based architecture. For more information about the plugin-based
+architecture, see <a href="https://cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>
+<ul>
+<li>Fixes an issue where the networking module incorrectly added routes when
+  <code>ip_forwarding</code> and <code>target_instance_ips</code> settings were disabled in <code>/etc/default/instance_configs.cfg</code>.</li>
+<li>Prevents unnecessary error logs in the OS Login module caused by attempts to
+  read a non-existent file.</li>
+</ul>]]></content>
+    <summary>Version 20250930.01 includes fixes for the plugin-based architecture. It addresses an issue with incorrect route additions in the networking module and prevents unnecessary error logs in the OS Login module.</summary>
+    <title>Fixed: Guest agent fixes</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

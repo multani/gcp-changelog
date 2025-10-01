@@ -2,10 +2,6 @@
 
 ## 2025-09-29
 
-### Changed
-
-
-
 ### cos-beta-125-19216-0-62
 
 |  |  |  |  |
@@ -46,10 +42,6 @@ Fixed CVE-2025-39881 in the Linux kernel.
 
 Fixed CVE-2025-39883 in the Linux kernel.
 
-### Changed
-
-
-
 ### cos-dev-129-19290-0-0
 
 |  |  |  |  |
@@ -85,10 +77,6 @@ Upgraded dev-libs/expat to v2.7.2.
 
 Updated golang.org/x/oauth2, golang.org/x/net, golang.org/x/crypto, and github.com/golang-jwt/jwt/v5 in Docker.
 
-### Changed
-
-
-
 ### cos-113-18244-448-58
 
 |  |  |  |  |
@@ -122,10 +110,6 @@ Fixed CVE-2025-39883 in the Linux kernel.
 ### Security
 
 Fixed CVE-2025-40300 in the Linux kernel.
-
-### Changed
-
-
 
 ### cos-121-18867-199-80
 

@@ -69,6 +69,21 @@ The default setting for Alert Trimming has been increased to 25 MB.
 The maximum allowed size for a Publisher's Connector Package is now limited to 25 MB.
 
 ---
+## 2025-09-27
+
+### Feature
+
+**Use joins in YARA-L Search queries**
+
+These changes are currently in Preview.
+
+You can now use joins in statistical Search queries that include a `match` section
+to correlate data from multiple sources. This feature lets you link related
+sources directly within a single query.
+
+For more information, see [Use joins in Search](https://cloud.google.com/chronicle/docs/investigation/search-joins).
+
+---
 ## 2025-09-23
 
 ### Changed

@@ -77,6 +77,39 @@ Upgraded dev-libs/expat to v2.7.2.
 
 Updated golang.org/x/oauth2, golang.org/x/net, golang.org/x/crypto, and github.com/golang-jwt/jwt/v5 in Docker.
 
+### cos-117-18613-339-77
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.105](https://cos.googlesource.com/third_party/kernel/+/38b7911a3e469f3db4aeeb6e29daae6617e47384 ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.339.77/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Updated golang.org/x/crypto, golang.org/x/net,
+golang.org/x/oauth2, and github.com/golang-jwt/jwt/v4 in Docker.
+
+### Security
+
+Updated dev-python/jinja to v3.1.6. This resolves
+CVE-2024-56326, CVE-2024-56201 and CVE-2025-27516.
+
+### Security
+
+Fixed KCTF-0aeb54a in the Linux Kernel.
+
+### Security
+
+Fixed CVE-2025-39881 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39883 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40300 in the Linux kernel.
+
 ### cos-113-18244-448-58
 
 |  |  |  |  |

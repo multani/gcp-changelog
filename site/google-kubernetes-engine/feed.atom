@@ -2,9 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2025-09-29T00:00:00+00:00</updated>
+  <updated>2025-10-01T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-10-01:feature:0</id>
+    <published>2025-10-01T00:00:00+00:00</published>
+    <updated>2025-10-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/verticalpodautoscaler#inplaceorrecreate_mode"><code>InPlaceOrRecreate</code></a> mode for Vertical Pod Autoscaler (VPA) is now available for Public Preview in GKE.</p>
+<p>This mode uses <a href="https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler/enhancements/4016-in-place-updates-support">In-Place Pod Resize (IPPR/IPPU)</a>, which allows VPA to automatically adjust workload resources, without requiring Pod recreation. This seamless rightsizing capability helps ensure better service continuity and helps minimize costs by optimizing resource allocation, particularly during idle periods.</p>
+<p>VPA is enabled by default in Autopilot clusters. For Standard clusters, you must first enable VPA. For more information on configuring a VPA object, see
+<a href="https://cloud.google.com/kubernetes-engine/docs/how-to/vertical-pod-autoscaling#gcloud">Set Pod resource requests automatically</a>.</p>]]></content>
+    <summary>The InPlaceOrRecreate mode for Vertical Pod Autoscaler (VPA) is now in Public Preview for GKE. This feature allows VPA to adjust workload resources without recreating pods, ensuring better service continuity and cost optimization.</summary>
+    <title>Feature: VPA In-Place Resize Now in Public Preview</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -1222,6 +1236,17 @@ to a version compatible with CNI spec v1.1.0 to prevent errors.</p>]]></content>
     <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-04:feature:4</id>
     <published>2025-09-04T00:00:00+00:00</published>
     <updated>2025-09-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>GKE alpha clusters enable all alpha and the default beta feature gates, which help you to test and validate upcoming Kubernetes capabilities. You can now modify the feature gates to enable or disable differently from the default values, which provides more granular control when leveraging these experimental features. Note that alpha clusters shouldn't be used for production workloads to ensure that your workloads remain stable and performant. For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/alpha-clusters">Alpha clusters</a>.</p>]]></content>
+    <summary>Enable and control experimental Kubernetes features with GKE alpha clusters. Use for testing, not production.</summary>
+    <title>Feature: GKE Alpha Clusters</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-04:feature:5</id>
+    <published>2025-09-04T00:00:00+00:00</published>
+    <updated>2025-09-04T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>New features in Kubernetes 1.34</strong></p>
 <ul>
 <li>The <a href="https://kubernetes.io/docs/concepts/scheduling-eviction/dynamic-resource-allocation/#api">Kubernetes Dynamic Resource Allocation (DRA) APIs</a> are now generally available. For more information about using DRA in GKE, see <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/about-dynamic-resource-allocation">About dynamic resource allocation in GKE</a>. The Prioritized list and Admin access features have been promoted to beta and will be enabled by default. The kubelet API has been updated to report status on resources allocated through DRA.</li>
@@ -1236,23 +1261,12 @@ to a version compatible with CNI spec v1.1.0 to prevent errors.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-04:feature:5</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-04:feature:6</id>
     <published>2025-09-04T00:00:00+00:00</published>
     <updated>2025-09-04T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>On clusters with GKE Dataplane V2 that are on GKE version 1.34 and later, the <a href="https://www.cni.dev/plugins/current/main/ptp">ptp plugin</a> is removed from the Container Network Interface (CNI) path. Pods that are created on new nodes have interfaces named <code>lxc[INTERFACE_HASH]</code> instead of <code>gke[INTERFACE_HASH]</code>. Additionally, the CNI configuration is moving from the <code>netd</code> DaemonSet to the <code>cni-writer</code> container in the <code>anetd</code> DaemonSet. For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/dataplane-v2#introduction">Overview of GKE Dataplane V2</a>.</p>]]></content>
     <summary>The PTP plugin has been removed from the CNI path for GKE Dataplane V2 on GKE 1.34+. Pod interfaces will now be named lxc[INTERFACE_HASH] and CNI configuration is moving to the cni-writer container.</summary>
     <title>Feature: GKE Dataplane V2: CNI Path Update</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-09-04:feature:6</id>
-    <published>2025-09-04T00:00:00+00:00</published>
-    <updated>2025-09-04T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>GKE alpha clusters enable all alpha and the default beta feature gates, which help you to test and validate upcoming Kubernetes capabilities. You can now modify the feature gates to enable or disable differently from the default values, which provides more granular control when leveraging these experimental features. Note that alpha clusters shouldn't be used for production workloads to ensure that your workloads remain stable and performant. For more information, see <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/alpha-clusters">Alpha clusters</a>.</p>]]></content>
-    <summary>Enable and control experimental Kubernetes features with GKE alpha clusters. Use for testing, not production.</summary>
-    <title>Feature: GKE Alpha Clusters</title>
   </entry>
   <entry>
     <author>

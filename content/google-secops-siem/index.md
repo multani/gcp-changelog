@@ -145,6 +145,30 @@ The maximum allowed size for a Publisher's Connector Package is now limited to 2
 ---
 ## 2025-09-27
 
+### Feature
+
+**Use joins in YARA-L Search queries**
+
+These changes are currently in Preview.
+
+You can now use joins in statistical Search queries that include a `match` section
+to correlate data from multiple sources. This feature lets you link related
+sources directly within a single query.
+
+For more information, see [Use joins in Search](https://cloud.google.com/chronicle/docs/investigation/search-joins).
+
+### Feature
+
+**Use joins in YARA-L Search queries**
+
+These changes are currently in Preview.
+
+You can now use joins in statistical Search queries that include a `match` section
+to correlate data from multiple sources. This feature lets you link related
+sources directly within a single query.
+
+For more information, see [Use joins in Search](https://cloud.google.com/chronicle/docs/investigation/search-joins).
+
 ### Announcement
 
 [Release 6.3.62](https://cloud.google.com/chronicle/docs/soar/release-notes#September_16_2025) is now available for all regions.

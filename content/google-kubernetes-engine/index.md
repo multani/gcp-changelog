@@ -1,5 +1,17 @@
 # Google Kubernetes Engine
 
+## 2025-10-01
+
+### Feature
+
+The [`InPlaceOrRecreate`](https://cloud.google.com/kubernetes-engine/docs/concepts/verticalpodautoscaler#inplaceorrecreate_mode) mode for Vertical Pod Autoscaler (VPA) is now available for Public Preview in GKE.
+
+This mode uses [In-Place Pod Resize (IPPR/IPPU)](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler/enhancements/4016-in-place-updates-support), which allows VPA to automatically adjust workload resources, without requiring Pod recreation. This seamless rightsizing capability helps ensure better service continuity and helps minimize costs by optimizing resource allocation, particularly during idle periods.
+
+VPA is enabled by default in Autopilot clusters. For Standard clusters, you must first enable VPA. For more information on configuring a VPA object, see
+[Set Pod resource requests automatically](https://cloud.google.com/kubernetes-engine/docs/how-to/vertical-pod-autoscaling#gcloud).
+
+---
 ## 2025-09-29
 
 ### Changed
@@ -1059,6 +1071,10 @@ to a version compatible with CNI spec v1.1.0 to prevent errors.
 
 ### Feature
 
+GKE alpha clusters enable all alpha and the default beta feature gates, which help you to test and validate upcoming Kubernetes capabilities. You can now modify the feature gates to enable or disable differently from the default values, which provides more granular control when leveraging these experimental features. Note that alpha clusters shouldn't be used for production workloads to ensure that your workloads remain stable and performant. For more information, see [Alpha clusters](https://cloud.google.com/kubernetes-engine/docs/concepts/alpha-clusters).
+
+### Feature
+
 **New features in Kubernetes 1.34**
 
 * The [Kubernetes Dynamic Resource Allocation (DRA) APIs](https://kubernetes.io/docs/concepts/scheduling-eviction/dynamic-resource-allocation/#api) are now generally available. For more information about using DRA in GKE, see [About dynamic resource allocation in GKE](https://cloud.google.com/kubernetes-engine/docs/concepts/about-dynamic-resource-allocation). The Prioritized list and Admin access features have been promoted to beta and will be enabled by default. The kubelet API has been updated to report status on resources allocated through DRA.
@@ -1069,10 +1085,6 @@ to a version compatible with CNI spec v1.1.0 to prevent errors.
 ### Feature
 
 On clusters with GKE Dataplane V2 that are on GKE version 1.34 and later, the [ptp plugin](https://www.cni.dev/plugins/current/main/ptp) is removed from the Container Network Interface (CNI) path. Pods that are created on new nodes have interfaces named `lxc[INTERFACE_HASH]` instead of `gke[INTERFACE_HASH]`. Additionally, the CNI configuration is moving from the `netd` DaemonSet to the `cni-writer` container in the `anetd` DaemonSet. For more information, see [Overview of GKE Dataplane V2](https://cloud.google.com/kubernetes-engine/docs/concepts/dataplane-v2#introduction).
-
-### Feature
-
-GKE alpha clusters enable all alpha and the default beta feature gates, which help you to test and validate upcoming Kubernetes capabilities. You can now modify the feature gates to enable or disable differently from the default values, which provides more granular control when leveraging these experimental features. Note that alpha clusters shouldn't be used for production workloads to ensure that your workloads remain stable and performant. For more information, see [Alpha clusters](https://cloud.google.com/kubernetes-engine/docs/concepts/alpha-clusters).
 
 ---
 ## 2025-09-03

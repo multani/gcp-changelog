@@ -1,6 +1,16 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2025-10-01": [
+      {
+        "kind": "Feature",
+        "content": "The [`InPlaceOrRecreate`](https://cloud.google.com/kubernetes-engine/docs/concepts/verticalpodautoscaler#inplaceorrecreate_mode) mode for Vertical Pod Autoscaler (VPA) is now available for Public Preview in GKE.\n\nThis mode uses [In-Place Pod Resize (IPPR/IPPU)](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler/enhancements/4016-in-place-updates-support), which allows VPA to automatically adjust workload resources, without requiring Pod recreation. This seamless rightsizing capability helps ensure better service continuity and helps minimize costs by optimizing resource allocation, particularly during idle periods.\n\nVPA is enabled by default in Autopilot clusters. For Standard clusters, you must first enable VPA. For more information on configuring a VPA object, see\n[Set Pod resource requests automatically](https://cloud.google.com/kubernetes-engine/docs/how-to/vertical-pod-autoscaling#gcloud).",
+        "summary": {
+          "title": "VPA In-Place Resize Now in Public Preview",
+          "summary": "The InPlaceOrRecreate mode for Vertical Pod Autoscaler (VPA) is now in Public Preview for GKE. This feature allows VPA to adjust workload resources without recreating pods, ensuring better service continuity and cost optimization."
+        }
+      }
+    ],
     "2025-09-29": [
       {
         "kind": "Changed",
@@ -256,6 +266,14 @@
       },
       {
         "kind": "Feature",
+        "content": "GKE alpha clusters enable all alpha and the default beta feature gates, which help you to test and validate upcoming Kubernetes capabilities. You can now modify the feature gates to enable or disable differently from the default values, which provides more granular control when leveraging these experimental features. Note that alpha clusters shouldn't be used for production workloads to ensure that your workloads remain stable and performant. For more information, see [Alpha clusters](https://cloud.google.com/kubernetes-engine/docs/concepts/alpha-clusters).",
+        "summary": {
+          "title": "GKE Alpha Clusters",
+          "summary": "Enable and control experimental Kubernetes features with GKE alpha clusters. Use for testing, not production."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "**New features in Kubernetes 1.34**\n\n* The [Kubernetes Dynamic Resource Allocation (DRA) APIs](https://kubernetes.io/docs/concepts/scheduling-eviction/dynamic-resource-allocation/#api) are now generally available. For more information about using DRA in GKE, see [About dynamic resource allocation in GKE](https://cloud.google.com/kubernetes-engine/docs/concepts/about-dynamic-resource-allocation). The Prioritized list and Admin access features have been promoted to beta and will be enabled by default. The kubelet API has been updated to report status on resources allocated through DRA.\n* [The Sleep Action for Pod prestop lifecycle hook](https://github.com/kubernetes/enhancements/issues/3960) is now GA. This can be used to delay Pod termination for graceful shutdown.\n* [Streaming List Response Encoding](https://github.com/kubernetes/enhancements/issues/5116) is now GA. It enables efficient handling of requests for large object collections, improving API server reliability and performance.\n* [In-Place Pod Resize](https://github.com/kubernetes/enhancements/issues/1287), which was in beta, is now improved by adding support for decreasing memory limits with best-effort OOM protection. Improved deferred resize retries are also added, which are now prioritized and more responsive to resources becoming available. A new `ResizeCompleted` event records when a resize is completed.",
         "summary": {
           "title": "Kubernetes 1.34: New Features",
@@ -268,14 +286,6 @@
         "summary": {
           "title": "GKE Dataplane V2: CNI Path Update",
           "summary": "The PTP plugin has been removed from the CNI path for GKE Dataplane V2 on GKE 1.34+. Pod interfaces will now be named lxc[INTERFACE_HASH] and CNI configuration is moving to the cni-writer container."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "GKE alpha clusters enable all alpha and the default beta feature gates, which help you to test and validate upcoming Kubernetes capabilities. You can now modify the feature gates to enable or disable differently from the default values, which provides more granular control when leveraging these experimental features. Note that alpha clusters shouldn't be used for production workloads to ensure that your workloads remain stable and performant. For more information, see [Alpha clusters](https://cloud.google.com/kubernetes-engine/docs/concepts/alpha-clusters).",
-        "summary": {
-          "title": "GKE Alpha Clusters",
-          "summary": "Enable and control experimental Kubernetes features with GKE alpha clusters. Use for testing, not production."
         }
       }
     ],

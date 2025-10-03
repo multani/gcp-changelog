@@ -1,5 +1,23 @@
 # Looker
 
+## 2025-10-02
+
+### Feature
+
+The `sql_preamble` parameter now [supports Liquid statements](https://cloud.google.com/looker/docs/reference/param-explore-sql-preamble#using_liquid_in_sql_preamble). This update is supported on Looker 25.12 and later versions.
+
+---
+## 2025-09-30
+
+### Feature
+
+The following features are now available for use with Conversational Analytics:
+
+* New model-specific Looker permissions are available to [manage](https://cloud.google.com/looker/docs/admin-panel-users-roles#gemini_ca_agent_manager) and [use](https://cloud.google.com/looker/docs/admin-panel-users-roles#gemini_ca_agent_user) the [Conversational Analytics data agents](https://cloud.google.com/looker/docs/studio/conversational-data-agents-looker) that are created to chat with Looker Explores. You can grant these to users as part of a custom role, or use one of two new default roles, [Conversational Analytics Agent Manager](https://cloud.google.com/looker/docs/admin-panel-users-roles#conversational_analytics_agent_manager) and [Conversational Analytics User](https://cloud.google.com/looker/docs/admin-panel-users-roles#conversational_analytics_user), to manage and use agents, respectively.
+* You can now select up to five Looker Explores as data sources for a data agent.
+* You can now [share data agents](https://cloud.google.com/looker/docs/studio/conversational-data-agents-looker#share-data-agents) to let other users chat with your agent and its Explores.
+
+---
 ## 2025-09-23
 
 ### Feature

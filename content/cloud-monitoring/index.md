@@ -1,5 +1,28 @@
 # Cloud Monitoring
 
+## 2025-10-02
+
+### Feature
+
+Application Monitoring is now
+[generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+Application Monitoring lets you monitor the resources and infrastructure from
+the perspective of an [App Hub](https://cloud.google.com/app-hub/docs/overview) application. The
+out-of-the-box dashboards that Application Monitoring creates can help you
+understand how your application's resources are performing, and they can help
+you diagnose issues.
+
+* [Application Monitoring overview](https://cloud.google.com/monitoring/docs/about-application-monitoring)
+  provides a brief overview of this feature.
+* [Set up application monitoring](https://cloud.google.com/monitoring/docs/setup-application-monitoring)
+  describes how to configure an observability scope so that you have an
+  aggregated view of your log, metric, and trace data.
+* [View application telemetry](https://cloud.google.com/monitoring/docs/application-monitoring)
+  describes the labels attached to your telemetry data and provides guidance
+  about how to explore the OOTB dashboards.
+* [Supported infrastructure](https://cloud.google.com/monitoring/docs/application-monitoring-services).
+
+---
 ## 2025-09-15
 
 ### Feature

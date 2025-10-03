@@ -1,6 +1,32 @@
 {
   "name": "Google Distributed Cloud (software only) for bare metal",
   "entries": {
+    "2025-10-02": [
+      {
+        "kind": "Announcement",
+        "content": "Google Distributed Cloud for bare metal 1.33.100-gke.89 is now available for\n[download](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads). To\nupgrade, see [Upgrade\nclusters](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade).\nDistributed Cloud for bare metal 1.33.100-gke.89 runs on\nKubernetes v1.33.4-gke.900.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for installations or upgrades with the [GKE On-Prem API\nclients](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools):\nthe Google Cloud console, the gcloud CLI, and Terraform.\n\nIf you use a third-party storage vendor, check the [Ready storage\npartners](https://cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage) document\nto make sure the storage vendor has already passed the qualification for this\nrelease of Distributed Cloud for bare metal.",
+        "summary": {
+          "title": "New release of Google Distributed Cloud for bare metal",
+          "summary": "Google Distributed Cloud for bare metal 1.33.100-gke.89 is now available. This version runs on Kubernetes v1.33.4-gke.900."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.33.100-gke.89:\n\n* Fixed an issue where the cluster restore process leaves the Kubelet\n  certificate files as regular files instead of symbolic links, preventing\n  certificate rotation.\n* Fixed the `etcd-cleanup` job timeout issue caused by the use of incorrect\n  certificates.\n* This patch release doesn't include new [fixes for specific, externally-cited\n  vulnerabilities](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).",
+        "summary": {
+          "title": "Cluster restore process issue resolved",
+          "summary": "The cluster restore process has been fixed to correctly handle Kubelet certificate files, ensuring proper certificate rotation. Additionally, the etcd-cleanup job timeout issue caused by incorrect certificates has been resolved."
+        }
+      },
+      {
+        "kind": "Issue",
+        "content": "For information about the latest known issues, see [Google Distributed Cloud for\nbare metal known\nissues](https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues)\nin the Troubleshooting section.",
+        "summary": {
+          "title": "Known Issues",
+          "summary": "Please refer to the Google Distributed Cloud for bare metal known issues page for the latest information."
+        }
+      }
+    ],
     "2025-09-24": [
       {
         "kind": "Announcement",

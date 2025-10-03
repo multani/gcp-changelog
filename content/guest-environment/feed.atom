@@ -9,6 +9,36 @@
     <author>
       <name>Google Cloud</name>
     </author>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2025-09-03:feature:0</id>
+    <published>2025-09-03T00:00:00+00:00</published>
+    <updated>2025-09-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>With the introduction of the plugin-based architecture, the guest agent includes
+the following updates:</p>
+<ul>
+<li>A new command-line tool, <code>ggactl_plugin</code>, is available to manage and restart
+  the guest agent core plugin. To restart the agent, run:</li>
+</ul>
+<p>```
+  ggactl_plugin coreplugin restart</p>
+<p>```</p>
+<p>For more information, see <a href="https://cloud.google.com/compute/docs/images/manage-guest-agent#restart-guest-agent">Restarting the guest agent</a>.
+* All guest agent components now use a new logging framework. This framework
+  lets you set the logging level in the
+  <a href="https://cloud.google.com/compute/docs/images/manage-guest-agent#update-guest-agent-config">guest agent configuration file</a>.
+  For more information about the logging options, see <a href="https://cloud.google.com/compute/docs/images/manage-guest-agent#core">core settings</a>
+  in the configuration options table.
+* The workload refresh service <code>gce-workload-cert-refresher</code> is now part of the
+  guest agent's core plugin. It is no longer a separate systemd service.
+* The guest agent updates the metadata script runner and the Authorized Keys
+  binary (Windows only) to use the new, configurable logging framework.
+  Compatibility managers are included to facilitate the migration.</p>]]></content>
+    <summary>The guest agent now features a plugin-based architecture, including a new command-line tool `ggactl_plugin` for managing the core plugin. It also incorporates a new logging framework allowing configurable log levels and integrates the workload refresh service into the core plugin.</summary>
+    <title>Feature: New Plugin-Based Architecture for Guest Agent</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
     <id>urn:github:multani:gcp-changelog:guest-environment:2025-09-30:fixed:0</id>
     <published>2025-09-30T00:00:00+00:00</published>
     <updated>2025-09-30T00:00:00+00:00</updated>
@@ -120,72 +150,5 @@ agent version <code>20250901.00</code>:</p>
 </ul>]]></content>
     <summary>Version 20250907.00 addresses issues in the OS Login module and the metadata SSH key module.</summary>
     <title>Fixed: Guest agent fixes</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:guest-environment:2025-09-03:announcement:0</id>
-    <published>2025-09-03T00:00:00+00:00</published>
-    <updated>2025-09-03T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Starting with version <code>20250901.00</code>, the guest agent is migrated to a new
-plugin-based architecture to improve modularity. You can revert to the previous
-version by setting the metadata attribute <code>enable-guest-agent-core-plugin</code> to
-<code>FALSE</code>. For more information about the plugin-based architecture, see
-<a href="https://cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>
-<p>This plugin-based guest agent is available for the following operating systems:</p>
-<ul>
-<li>Red Hat Enterprise Linux (RHEL) 9</li>
-<li>Rocky Linux 9</li>
-<li>CentOS Stream 9</li>
-<li>Oracle Linux 9</li>
-<li>AlmaLinux 9</li>
-</ul>]]></content>
-    <summary>The guest agent has been updated to a new plugin-based architecture starting with version 20250901.00. This change enhances modularity. You can revert to the previous version by setting the metadata attribute `enable-guest-agent-core-plugin` to `FALSE`.</summary>
-    <title>Announcement: New Guest Agent Architecture</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:guest-environment:2025-09-03:feature:1</id>
-    <published>2025-09-03T00:00:00+00:00</published>
-    <updated>2025-09-03T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>With the introduction of the plugin-based architecture, the guest agent includes
-the following updates:</p>
-<ul>
-<li>A new command-line tool, <code>ggactl_plugin</code>, is available to manage and restart
-  the guest agent core plugin. To restart the agent, run:</li>
-</ul>
-<p>```
-  ggactl_plugin coreplugin restart</p>
-<p>```</p>
-<p>For more information, see <a href="https://cloud.google.com/compute/docs/images/manage-guest-agent#restart-guest-agent">Restarting the guest agent</a>.
-* All guest agent components now use a new logging framework. This framework
-  lets you set the logging level in the
-  <a href="https://cloud.google.com/compute/docs/images/manage-guest-agent#update-guest-agent-config">guest agent configuration file</a>.
-  For more information about the logging options, see <a href="https://cloud.google.com/compute/docs/images/manage-guest-agent#core">core settings</a>
-  in the configuration options table.
-* The workload refresh service <code>gce-workload-cert-refresher</code> is now part of the
-  guest agent's core plugin. It is no longer a separate systemd service.
-* The guest agent updates the metadata script runner and the Authorized Keys
-  binary (Windows only) to use the new, configurable logging framework.
-  Compatibility managers are included to facilitate the migration.</p>]]></content>
-    <summary>The guest agent now features a plugin-based architecture, including a new command-line tool `ggactl_plugin` for managing the core plugin. It also incorporates a new logging framework allowing configurable log levels and integrates the workload refresh service into the core plugin.</summary>
-    <title>Feature: New Plugin-Based Architecture for Guest Agent</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:guest-environment:2025-09-03:fixed:2</id>
-    <published>2025-09-03T00:00:00+00:00</published>
-    <updated>2025-09-03T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>An issue is fixed where network routes were not consistently applied
-(<a href="https://github.com/GoogleCloudPlatform/guest-agent/issues/516">GitHub Issue #516</a>).
-The system now consistently applies network routes by monitoring the route table
-and re-adding routes when they disappear.</p>]]></content>
-    <summary>An issue is fixed where network routes were not consistently applied. The system now consistently applies network routes by monitoring the route table and re-adding routes when they disappear.</summary>
-    <title>Fixed: Network routes are now consistently applied</title>
   </entry>
 </feed>

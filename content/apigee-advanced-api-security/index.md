@@ -1,5 +1,26 @@
 # Apigee Advanced API Security
 
+## 2025-10-02
+
+### Announcement
+
+On October 2, 2025 we released an updated version of Advanced API Security Abuse Detection
+
+**Note:** Rollouts of this release to production instances will begin within two business days and may take four or more business days to complete across all Google Cloud zones. Your instances may not have the feature available until the rollout is complete.
+
+### Feature
+
+**Introduction of exclusion lists for Abuse Detection and incidents**
+
+You can now specify CIDR ranges and IP addresses to exclude from future incident reports. Use this feature to exclude traffic known to be safe, such as requests related to automated testing.
+
+The new functionality includes the ability to create and manage multiple "exclusion lists" which define traffic to exclude and the reasons it is excluded.
+
+**Note:** Exclusion lists are not available for VPC-SC customers at this time.
+
+For usage information, see [Exclude traffic from abuse detection](https://cloud.google.com/apigee/docs/api-security/abuse-detection#exclude-traffic-from-abuse-detection) in the documentation.
+
+---
 ## 2025-09-19
 
 ### Announcement

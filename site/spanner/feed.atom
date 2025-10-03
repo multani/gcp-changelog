@@ -2,9 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Spanner</title>
   <subtitle>Changelog for Google Cloud product: Spanner</subtitle>
-  <updated>2025-09-30T00:00:00+00:00</updated>
+  <updated>2025-10-02T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:spanner</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/spanner/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2025-10-02:feature:0</id>
+    <published>2025-10-02T00:00:00+00:00</published>
+    <updated>2025-10-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now use repeatable read isolation (in <a href="https://cloud.google.com/products#product-launch-stages0">Preview</a>) to reduce latency and transaction abort rates for workloads that have many reads contending with fewer writes. For more information, see <a href="https://cloud.google.com/spanner/docs/isolation-levels#repeatable-read">Repeatable read isolation</a>.</p>]]></content>
+    <summary>Reduce latency and transaction abort rates with repeatable read isolation.</summary>
+    <title>Feature: Repeatable read isolation preview</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2025-10-01:feature:0</id>
+    <published>2025-10-01T00:00:00+00:00</published>
+    <updated>2025-10-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://cloud.google.com/spanner/docs/spanner-cli">Spanner CLI</a> is generally available. Bundled with gcloud, you can use the Spanner command-line interface to open an interactive session or automate SQL executions from the shell or an input file.</p>]]></content>
+    <summary>The Spanner CLI is now generally available. Use it to open an interactive session or automate SQL executions from the shell or an input file.</summary>
+    <title>Feature: Spanner CLI Now Generally Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -203,6 +225,28 @@
     <content type="html"><![CDATA[<p>You can now create BigQuery <a href="https://cloud.google.com/bigquery/docs/materialized-views-create#spanner">non-incremental materialized views over Spanner data</a> to improve query performance by periodically caching results. This feature is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>]]></content>
     <summary>BigQuery now supports non-incremental materialized views over Spanner data, enhancing query performance through result caching. This feature is currently in Preview.</summary>
     <title>Feature: BigQuery Materialized Views over Spanner Data</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2025-09-29:libraries:1</id>
+    <published>2025-09-29T00:00:00+00:00</published>
+    <updated>2025-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
+<h3>Go</h3>
+<h3>Changes for <a href="https://github.com/googleapis/google-cloud-go/tree/main/spanner/admin/database/apiv1">spanner/admin/database/apiv1</a></h3>
+<h4><a href="https://github.com/googleapis/google-cloud-go/compare/spanner/v1.85.1...spanner/v1.86.0">1.86.0</a> (2025-09-26)</h4>
+<h5>Features</h5>
+<ul>
+<li><strong>spanner:</strong> Support "readOnly" column tag parsing for Go struct operations (<a href="https://github.com/googleapis/google-cloud-go/issues/12895">#12895</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/003abca9172082ad1f2fbcc9b37639f389ade8ee">003abca</a>)</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li><strong>spanner:</strong> Use fresh context for rollback (<a href="https://github.com/googleapis/google-cloud-go/issues/12897">#12897</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/99c7eeb6ff95af9c967c78764069f752d3c26d34">99c7eeb</a>)</li>
+</ul>]]></content>
+    <summary>Weekly updates for the Go client library for Spanner, including support for readOnly column tag parsing and fresh context for rollback.</summary>
+    <title>Libraries: Go client library updates for Spanner</title>
   </entry>
   <entry>
     <author>

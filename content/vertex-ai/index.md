@@ -1,5 +1,12 @@
 # Vertex AI
 
+## 2025-09-30
+
+### Feature
+
+[DeepSeek-V3.2-Exp](https://console.cloud.google.com/vertex-ai/publishers/deepseek-ai/model-garden/deepseek-v3-2) is available through Model Garden.
+
+---
 ## 2025-09-22
 
 ### Feature

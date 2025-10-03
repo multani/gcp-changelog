@@ -1,5 +1,12 @@
 # Agent Assist
 
+## 2025-10-01
+
+### Deprecated
+
+[Smart compose](https://cloud.google.com/agent-assist/priv/docs/smart-compose) is no longer in use and will be permanently removed in October 2025. Refer to [Generative smart reply](https://cloud.google.com/agent-assist/priv/docs/generative-smart-reply) for an alternative.
+
+---
 ## 2025-09-23
 
 ### Feature

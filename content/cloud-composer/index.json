@@ -1,23 +1,81 @@
 {
   "name": "Cloud Composer",
   "entries": {
-    "2025-09-11": [
+    "2025-09-30": [
       {
         "kind": "Announcement",
-        "content": "A new Cloud Composer release has started on **September 11, 2025**. Get ready\nfor upcoming changes and features as we roll out the new release to all regions.\nThis release is in progress at the moment. Listed changes and features might\nnot be available in some regions yet.",
+        "content": "A new Cloud Composer release has started on **September 30, 2025**. Get ready\nfor upcoming changes and features as we roll out the new release to all regions.\nThis release is in progress at the moment. Listed changes and features might\nnot be available in some regions yet.",
         "summary": {
           "title": "Cloud Composer Release",
-          "summary": "A new release of Cloud Composer is rolling out starting September 11, 2025. This release includes new features and changes that will be available in all regions."
+          "summary": "A new release of Cloud Composer started on September 30, 2025, bringing upcoming changes and features. The rollout is currently in progress across all regions, though some features may not be available in all locations yet."
         }
       },
       {
         "kind": "Fixed",
-        "content": "Fixed an issue where values of Airflow configuration options were evaluated\nbefore being set. As a result, the actual value was set to the evaluated result.",
+        "content": "The `GCE_METADATA_TIMEOUT` environment variable is changed to reserved. This\nchange addresses an issue where setting a low timeout value disrupted the\nenvironment's operations that relied on the metadata server.",
         "summary": {
-          "title": "Configuration options evaluation fixed",
-          "summary": "An issue where Airflow configuration option values were evaluated before being set has been resolved. The configuration options will now be set to their correct values."
+          "title": "Metadata server timeout is now reserved",
+          "summary": "The GCE_METADATA_TIMEOUT environment variable has been changed to reserved. This resolves an issue where a low timeout value could disrupt operations reliant on the metadata server."
         }
       },
+      {
+        "kind": "Fixed",
+        "content": "DAG UI now correctly generates error messages about malformed serialized DAG.",
+        "summary": {
+          "title": "Malformed DAGs now show errors",
+          "summary": "The DAG UI has been updated to correctly generate error messages when encountering malformed serialized DAGs."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "*(Airflow 2.10.5)* The `apache-airflow-providers-google` package was upgraded\nto version 17.2.0 in Cloud Composer 2 images and Cloud Composer 3 builds.\n\nFor more information about changes, see the\n[apache-airflow-providers-google changelog](https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html) from version 17.1.0 to\nversion 17.2.0.",
+        "summary": {
+          "title": "Airflow package upgraded",
+          "summary": "The apache-airflow-providers-google package has been upgraded to version 17.2.0."
+        }
+      },
+      {
+        "kind": "Issue",
+        "content": "*(Airflow 2.10.5)* CloudComposerDAGRunSensor is broken in the\n`apache-airflow-providers-google` package version 17.2.0. This package is used\nby Cloud Composer versions and builds with Airflow 2.10.5 available in this\nrelease. If your DAGs use this sensor, we recommend you postpone upgrading\nuntil the issue is resolved.",
+        "summary": {
+          "title": "Cloud Composer Issue",
+          "summary": "Cloud Composer 2.10.5 users: CloudComposerDAGRunSensor in apache-airflow-providers-google v17.2.0 is broken. Please postpone upgrades if your DAGs use this sensor."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "*(Airflow 2.10.5)* The `apache-airflow-providers-cncf-kubernetes` package was\n[upgraded to version 10.8.0](https://airflow.apache.org/docs/apache-airflow-providers-cncf-kubernetes/stable/changelog.html)\nfrom version 10.7.0. For changes in other packages, see the\n[preinstalled packages changelog](https://cloud.google.com/composer/docs/versions-packages).",
+        "summary": {
+          "title": "Airflow Kubernetes Provider Updated",
+          "summary": "The apache-airflow-providers-cncf-kubernetes package has been upgraded to version 10.8.0."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Cloud Composer 3:\n\n* [composer-3-airflow-2.10.5-build.15](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-15) (default)\n* [composer-3-airflow-2.9.3-build.35](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-35)",
+        "summary": {
+          "title": "New Airflow builds available",
+          "summary": "New Airflow builds are available for Cloud Composer 3, including composer-3-airflow-2.10.5-build.15 (default) and composer-3-airflow-2.9.3-build.35."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "New [images](https://cloud.google.com/composer/docs/composer-versions#images-composer-2)\nare available in Cloud Composer 2:\n\n* [composer-2.14.4-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-14-4-airflow-2-10-5) (default)\n* [composer-2.14.4-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-14-4-airflow-2-9-3)",
+        "summary": {
+          "title": "New images available for Cloud Composer 2",
+          "summary": "New images are available for Cloud Composer 2, including composer-2.14.4-airflow-2.10.5 (default) and composer-2.14.4-airflow-2.9.3."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "The following Cloud Composer versions and builds have reached their\n[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-2.9.4-\\*, and composer-3-airflow-2.9.1 builds from build.0 to build.7.",
+        "summary": {
+          "title": "Cloud Composer Versions Deprecation",
+          "summary": "Certain Cloud Composer versions and builds, specifically composer-2.9.4-* and composer-3-airflow-2.9.1 builds from build.0 to build.7, have reached their end of support."
+        }
+      }
+    ],
+    "2025-09-11": [
       {
         "kind": "Fixed",
         "content": "Fixed Airflow logs not exporting to Cloud Logging because of a GKE version\nmismatch between Airflow worker and GKE Control plane nodes.",
@@ -41,17 +99,17 @@
           "title": "New images available for Cloud Composer 2",
           "summary": "New images are available for Cloud Composer 2, including composer-2.14.2-airflow-2.10.5 (default) and composer-2.14.2-airflow-2.9.3."
         }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed an issue where values of Airflow configuration options were evaluated\nbefore being set. As a result, the actual value was set to the evaluated result.",
+        "summary": {
+          "title": "Configuration options evaluation fixed",
+          "summary": "An issue where Airflow configuration option values were evaluated before being set has been resolved. The configuration options will now be set to their correct values."
+        }
       }
     ],
     "2025-09-03": [
-      {
-        "kind": "Deprecated",
-        "content": "The following Cloud Composer versions and builds have reached their\n[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-2.9.2-\\* and composer-2.9.3-\\*.",
-        "summary": {
-          "title": "Cloud Composer Versions Deprecation",
-          "summary": "Certain versions of Cloud Composer, specifically composer-2.9.2-* and composer-2.9.3-*, are no longer supported. This announcement serves as a notification for users of these versions."
-        }
-      },
       {
         "kind": "Feature",
         "content": "*(Cloud Composer 2)* Cloud Composer's high availability infrastructure was\nenhanced to provide greater resilience against zonal outages. This change rolls\nout gradually over several releases to all regions supported by\nCloud Composer 2.",
@@ -90,6 +148,14 @@
         "summary": {
           "title": "New images available",
           "summary": "New images for Cloud Composer 2 are now available. The default image is composer-2.14.1-airflow-2.10.5, and composer-2.14.1-airflow-2.9.3 is also available."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "The following Cloud Composer versions and builds have reached their\n[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-2.9.2-\\* and composer-2.9.3-\\*.",
+        "summary": {
+          "title": "Cloud Composer Versions Deprecation",
+          "summary": "Certain versions of Cloud Composer, specifically composer-2.9.2-* and composer-2.9.3-*, are no longer supported. This announcement serves as a notification for users of these versions."
         }
       }
     ],

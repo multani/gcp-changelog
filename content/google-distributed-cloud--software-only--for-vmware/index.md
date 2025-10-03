@@ -1,12 +1,29 @@
 # Google Distributed Cloud (software only) for VMware
 
+## 2025-10-02
+
+### Announcement
+
+Google Distributed Cloud (software only) for VMware 1.33.100-gke.89 is now available for [download](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads). To upgrade, see [Upgrade a cluster](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading). Distributed Cloud 1.33.100-gke.89 runs on Kubernetes v1.33.4-gke.900.
+
+If you are using a third-party storage vendor, check the [GDC Ready storage partners](https://cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage) document to make sure the storage vendor has already passed the qualification for this release.
+
+After a release, it takes approximately 7 to 14 days for the version to become available for use with [GKE On-Prem API clients](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools): the Google Cloud console, the gcloud CLI, and Terraform.
+
+### Fixed
+
+The following issues were fixed in 1.33.100-gke.89:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
+
+---
 ## 2025-09-24
 
 ### Announcement
 
-Google Distributed Cloud (software only) for VMware 1.32.500-gke.48 is now available for [download](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads). To upgrade, see [Upgrade a cluster](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading). Google Distributed Cloud 1.32.500-gke.48 runs on Kubernetes v1.32.8-gke.500.
+Google Distributed Cloud (software only) for VMware 1.32.500-gke.48 is now available for [download](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads). To upgrade, see [Upgrade a cluster](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading). Distributed Cloud 1.32.500-gke.48 runs on Kubernetes v1.32.8-gke.500.
 
-If you are using a third-party storage vendor, check the [GDC Ready storage partners](https://cloud.google.com/anthos/docs/resources/partner-storage) document to make sure the storage vendor has already passed the qualification for this release.
+If you are using a third-party storage vendor, check the [GDC Ready storage partners](https://cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage) document to make sure the storage vendor has already passed the qualification for this release.
 
 After a release, it takes approximately 7 to 14 days for the version to become available for use with [GKE On-Prem API clients](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools): the Google Cloud console, the gcloud CLI, and Terraform.
 
@@ -21,9 +38,9 @@ The following issues were fixed in 1.32.500-gke.48:
 
 ### Announcement
 
-Google Distributed Cloud (software only) for VMware 1.31.900-gke.38 is now available for [download](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads). To upgrade, see [Upgrade a cluster](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading). Google Distributed Cloud 1.31.900-gke.38 runs on Kubernetes v1.31.12-gke.200.
+Google Distributed Cloud (software only) for VMware 1.31.900-gke.38 is now available for [download](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads). To upgrade, see [Upgrade a cluster](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading). Distributed Cloud 1.31.900-gke.38 runs on Kubernetes v1.31.12-gke.200.
 
-If you are using a third-party storage vendor, check the [GDC Ready storage partners](https://cloud.google.com/anthos/docs/resources/partner-storage) document to make sure the storage vendor has already passed the qualification for this release.
+If you are using a third-party storage vendor, check the [GDC Ready storage partners](https://cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage) document to make sure the storage vendor has already passed the qualification for this release.
 
 After a release, it takes approximately 7 to 14 days for the version to become available for use with [GKE On-Prem API clients](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools): the Google Cloud console, the gcloud CLI, and Terraform.
 
@@ -38,9 +55,9 @@ The following issues were fixed in 1.31.900-gke.38:
 
 ### Announcement
 
-Google Distributed Cloud (software only) for VMware 1.33.0-gke.799 is now available for [download](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads). To upgrade, see [Upgrade a cluster](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading). Google Distributed Cloud 1.33.0-gke.799 runs on Kubernetes v1.33.2-gke.700.
+Google Distributed Cloud (software only) for VMware 1.33.0-gke.799 is now available for [download](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads). To upgrade, see [Upgrade a cluster](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading). Distributed Cloud 1.33.0-gke.799 runs on Kubernetes v1.33.2-gke.700.
 
-If you are using a third-party storage vendor, check the [GDC Ready storage partners](https://cloud.google.com/anthos/docs/resources/partner-storage) document to make sure the storage vendor has already passed the qualification for this release.
+If you are using a third-party storage vendor, check the [GDC Ready storage partners](https://cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage) document to make sure the storage vendor has already passed the qualification for this release.
 
 After a release, it takes approximately 7 to 14 days for the version to become available for use with [GKE On-Prem API clients](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools): the Google Cloud console, the gcloud CLI, and Terraform.
 

@@ -1,5 +1,19 @@
 # Spanner
 
+## 2025-10-02
+
+### Feature
+
+You can now use repeatable read isolation (in [Preview](https://cloud.google.com/products#product-launch-stages0)) to reduce latency and transaction abort rates for workloads that have many reads contending with fewer writes. For more information, see [Repeatable read isolation](https://cloud.google.com/spanner/docs/isolation-levels#repeatable-read).
+
+---
+## 2025-10-01
+
+### Feature
+
+The [Spanner CLI](https://cloud.google.com/spanner/docs/spanner-cli) is generally available. Bundled with gcloud, you can use the Spanner command-line interface to open an interactive session or automate SQL executions from the shell or an input file.
+
+---
 ## 2025-09-30
 
 ### Libraries
@@ -203,6 +217,24 @@ A monthly digest of client library updates from across the [Cloud SDK](https://c
 ### Feature
 
 You can now create BigQuery [non-incremental materialized views over Spanner data](https://cloud.google.com/bigquery/docs/materialized-views-create#spanner) to improve query performance by periodically caching results. This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Go
+
+### Changes for [spanner/admin/database/apiv1](https://github.com/googleapis/google-cloud-go/tree/main/spanner/admin/database/apiv1)
+
+#### [1.86.0](https://github.com/googleapis/google-cloud-go/compare/spanner/v1.85.1...spanner/v1.86.0) (2025-09-26)
+
+##### Features
+
+* **spanner:** Support "readOnly" column tag parsing for Go struct operations ([#12895](https://github.com/googleapis/google-cloud-go/issues/12895)) ([003abca](https://github.com/googleapis/google-cloud-go/commit/003abca9172082ad1f2fbcc9b37639f389ade8ee))
+
+##### Bug Fixes
+
+* **spanner:** Use fresh context for rollback ([#12897](https://github.com/googleapis/google-cloud-go/issues/12897)) ([99c7eeb](https://github.com/googleapis/google-cloud-go/commit/99c7eeb6ff95af9c967c78764069f752d3c26d34))
 
 ---
 ## 2025-09-25

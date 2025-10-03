@@ -1,5 +1,23 @@
 # Gemini Code Assist
 
+## 2025-10-02
+
+### Deprecated
+
+
+
+### Gemini Code Assist tools are deprecated and replaced by agent mode (Preview)
+
+Gemini Code Assist tools are deprecated and will be removed on October 14, 2025.
+Gemini Code Assist tools are replaced by Gemini Code Assist agent mode. After
+October 14, 2025, using the `@` symbol followed by the name of a tool won't
+connect to Gemini Code Assist tools.
+
+Agent mode in Gemini Code Assist can connect to external services using Model
+Context Protocol (MCP) servers. For more information, read
+[Configure MCP servers](https://cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer#configure-mcp-servers).
+
+---
 ## 2025-09-29
 
 ### Add code snippets to the chat context
@@ -84,6 +102,11 @@ the feature is configured correctly and ready to go. For more information, see
 ---
 ## 2025-09-11
 
+### Edit a prior prompt in VS Code
+
+You can [edit a prior prompt](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#edit_a_prior_prompt) in Gemini Code Assist and receive a regenerated
+response based on your edited prompt.
+
 ### Regenerate a prompt response in VS Code
 
 You can [regenerate a prompt response](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#regenerate_a_prompt_response) to your most recent prompt, where
@@ -119,11 +142,6 @@ identical features. For more information, see
 Numerous performance and stability improvements have been made to the Gemini
 Code Assist extension, further reducing extension crashes and related adverse
 functional events.
-
-### Edit a prior prompt in VS Code
-
-You can [edit a prior prompt](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#edit_a_prior_prompt) in Gemini Code Assist and receive a regenerated
-response based on your edited prompt.
 
 ---
 ## 2025-09-10

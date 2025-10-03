@@ -1,5 +1,12 @@
 # Oracle Database@Google Cloud
 
+## 2025-10-01
+
+### Feature
+
+Oracle Database@Google Cloud supports [customer-managed encryption keys (CMEK)](https://cloud.google.com/oracle/database/docs/cmek) using Cloud Key Management Service. You can [enable CMEK on Exadata VM Clusters and Autonomous Databases](https://cloud.google.com/oracle/database/docs/use-cmek). This feature is [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-09-29
 
 ### Feature

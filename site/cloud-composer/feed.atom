@@ -2,40 +2,141 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Composer</title>
   <subtitle>Changelog for Google Cloud product: Cloud Composer</subtitle>
-  <updated>2025-09-11T00:00:00+00:00</updated>
+  <updated>2025-09-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-composer</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-composer/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-11:announcement:0</id>
-    <published>2025-09-11T00:00:00+00:00</published>
-    <updated>2025-09-11T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>A new Cloud Composer release has started on <strong>September 11, 2025</strong>. Get ready
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-30:announcement:0</id>
+    <published>2025-09-30T00:00:00+00:00</published>
+    <updated>2025-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A new Cloud Composer release has started on <strong>September 30, 2025</strong>. Get ready
 for upcoming changes and features as we roll out the new release to all regions.
 This release is in progress at the moment. Listed changes and features might
 not be available in some regions yet.</p>]]></content>
-    <summary>A new release of Cloud Composer is rolling out starting September 11, 2025. This release includes new features and changes that will be available in all regions.</summary>
+    <summary>A new release of Cloud Composer started on September 30, 2025, bringing upcoming changes and features. The rollout is currently in progress across all regions, though some features may not be available in all locations yet.</summary>
     <title>Announcement: Cloud Composer Release</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-11:fixed:1</id>
-    <published>2025-09-11T00:00:00+00:00</published>
-    <updated>2025-09-11T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Fixed an issue where values of Airflow configuration options were evaluated
-before being set. As a result, the actual value was set to the evaluated result.</p>]]></content>
-    <summary>An issue where Airflow configuration option values were evaluated before being set has been resolved. The configuration options will now be set to their correct values.</summary>
-    <title>Fixed: Configuration options evaluation fixed</title>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-30:fixed:1</id>
+    <published>2025-09-30T00:00:00+00:00</published>
+    <updated>2025-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <code>GCE_METADATA_TIMEOUT</code> environment variable is changed to reserved. This
+change addresses an issue where setting a low timeout value disrupted the
+environment's operations that relied on the metadata server.</p>]]></content>
+    <summary>The GCE_METADATA_TIMEOUT environment variable has been changed to reserved. This resolves an issue where a low timeout value could disrupt operations reliant on the metadata server.</summary>
+    <title>Fixed: Metadata server timeout is now reserved</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-11:fixed:2</id>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-30:fixed:2</id>
+    <published>2025-09-30T00:00:00+00:00</published>
+    <updated>2025-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>DAG UI now correctly generates error messages about malformed serialized DAG.</p>]]></content>
+    <summary>The DAG UI has been updated to correctly generate error messages when encountering malformed serialized DAGs.</summary>
+    <title>Fixed: Malformed DAGs now show errors</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-30:changed:3</id>
+    <published>2025-09-30T00:00:00+00:00</published>
+    <updated>2025-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><em>(Airflow 2.10.5)</em> The <code>apache-airflow-providers-google</code> package was upgraded
+to version 17.2.0 in Cloud Composer 2 images and Cloud Composer 3 builds.</p>
+<p>For more information about changes, see the
+<a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html">apache-airflow-providers-google changelog</a> from version 17.1.0 to
+version 17.2.0.</p>]]></content>
+    <summary>The apache-airflow-providers-google package has been upgraded to version 17.2.0.</summary>
+    <title>Changed: Airflow package upgraded</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-30:issue:4</id>
+    <published>2025-09-30T00:00:00+00:00</published>
+    <updated>2025-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><em>(Airflow 2.10.5)</em> CloudComposerDAGRunSensor is broken in the
+<code>apache-airflow-providers-google</code> package version 17.2.0. This package is used
+by Cloud Composer versions and builds with Airflow 2.10.5 available in this
+release. If your DAGs use this sensor, we recommend you postpone upgrading
+until the issue is resolved.</p>]]></content>
+    <summary>Cloud Composer 2.10.5 users: CloudComposerDAGRunSensor in apache-airflow-providers-google v17.2.0 is broken. Please postpone upgrades if your DAGs use this sensor.</summary>
+    <title>Issue: Cloud Composer Issue</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-30:changed:5</id>
+    <published>2025-09-30T00:00:00+00:00</published>
+    <updated>2025-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><em>(Airflow 2.10.5)</em> The <code>apache-airflow-providers-cncf-kubernetes</code> package was
+<a href="https://airflow.apache.org/docs/apache-airflow-providers-cncf-kubernetes/stable/changelog.html">upgraded to version 10.8.0</a>
+from version 10.7.0. For changes in other packages, see the
+<a href="https://cloud.google.com/composer/docs/versions-packages">preinstalled packages changelog</a>.</p>]]></content>
+    <summary>The apache-airflow-providers-cncf-kubernetes package has been upgraded to version 10.8.0.</summary>
+    <title>Changed: Airflow Kubernetes Provider Updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-30:changed:6</id>
+    <published>2025-09-30T00:00:00+00:00</published>
+    <updated>2025-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
+are available in Cloud Composer 3:</p>
+<ul>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-15">composer-3-airflow-2.10.5-build.15</a> (default)</li>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-35">composer-3-airflow-2.9.3-build.35</a></li>
+</ul>]]></content>
+    <summary>New Airflow builds are available for Cloud Composer 3, including composer-3-airflow-2.10.5-build.15 (default) and composer-3-airflow-2.9.3-build.35.</summary>
+    <title>Changed: New Airflow builds available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-30:changed:7</id>
+    <published>2025-09-30T00:00:00+00:00</published>
+    <updated>2025-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
+are available in Cloud Composer 2:</p>
+<ul>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-14-4-airflow-2-10-5">composer-2.14.4-airflow-2.10.5</a> (default)</li>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-14-4-airflow-2-9-3">composer-2.14.4-airflow-2.9.3</a></li>
+</ul>]]></content>
+    <summary>New images are available for Cloud Composer 2, including composer-2.14.4-airflow-2.10.5 (default) and composer-2.14.4-airflow-2.9.3.</summary>
+    <title>Changed: New images available for Cloud Composer 2</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-30:deprecated:8</id>
+    <published>2025-09-30T00:00:00+00:00</published>
+    <updated>2025-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following Cloud Composer versions and builds have reached their
+<a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
+composer-2.9.4-*, and composer-3-airflow-2.9.1 builds from build.0 to build.7.</p>]]></content>
+    <summary>Certain Cloud Composer versions and builds, specifically composer-2.9.4-* and composer-3-airflow-2.9.1 builds from build.0 to build.7, have reached their end of support.</summary>
+    <title>Deprecated: Cloud Composer Versions Deprecation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-11:fixed:0</id>
     <published>2025-09-11T00:00:00+00:00</published>
     <updated>2025-09-11T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed Airflow logs not exporting to Cloud Logging because of a GKE version
@@ -47,7 +148,7 @@ mismatch between Airflow worker and GKE Control plane nodes.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-11:changed:3</id>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-11:changed:1</id>
     <published>2025-09-11T00:00:00+00:00</published>
     <updated>2025-09-11T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
@@ -63,7 +164,7 @@ are available in Cloud Composer 3:</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-11:changed:4</id>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-11:changed:2</id>
     <published>2025-09-11T00:00:00+00:00</published>
     <updated>2025-09-11T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
@@ -79,20 +180,19 @@ are available in Cloud Composer 2:</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-03:deprecated:0</id>
-    <published>2025-09-03T00:00:00+00:00</published>
-    <updated>2025-09-03T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The following Cloud Composer versions and builds have reached their
-<a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
-composer-2.9.2-* and composer-2.9.3-*.</p>]]></content>
-    <summary>Certain versions of Cloud Composer, specifically composer-2.9.2-* and composer-2.9.3-*, are no longer supported. This announcement serves as a notification for users of these versions.</summary>
-    <title>Deprecated: Cloud Composer Versions Deprecation</title>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-11:fixed:3</id>
+    <published>2025-09-11T00:00:00+00:00</published>
+    <updated>2025-09-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed an issue where values of Airflow configuration options were evaluated
+before being set. As a result, the actual value was set to the evaluated result.</p>]]></content>
+    <summary>An issue where Airflow configuration option values were evaluated before being set has been resolved. The configuration options will now be set to their correct values.</summary>
+    <title>Fixed: Configuration options evaluation fixed</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-03:feature:1</id>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-03:feature:0</id>
     <published>2025-09-03T00:00:00+00:00</published>
     <updated>2025-09-03T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><em>(Cloud Composer 2)</em> Cloud Composer's high availability infrastructure was
@@ -106,7 +206,7 @@ Cloud Composer 2.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-03:feature:2</id>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-03:feature:1</id>
     <published>2025-09-03T00:00:00+00:00</published>
     <updated>2025-09-03T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><em>(Available without upgrading)</em> Cloud Composer 3 now supports DNS resolution
@@ -125,7 +225,7 @@ where private endpoints are configured.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-03:feature:3</id>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-03:feature:2</id>
     <published>2025-09-03T00:00:00+00:00</published>
     <updated>2025-09-03T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>You can now check if a Cloud Composer 2 environment's configuration
@@ -138,7 +238,7 @@ We recommend doing this check before migrating to Cloud Composer 3.</p>]]></cont
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-03:changed:4</id>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-03:changed:3</id>
     <published>2025-09-03T00:00:00+00:00</published>
     <updated>2025-09-03T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
@@ -154,7 +254,7 @@ are available in Cloud Composer 3:</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-03:changed:5</id>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-03:changed:4</id>
     <published>2025-09-03T00:00:00+00:00</published>
     <updated>2025-09-03T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
@@ -165,6 +265,19 @@ are available in Cloud Composer 2:</p>
 </ul>]]></content>
     <summary>New images for Cloud Composer 2 are now available. The default image is composer-2.14.1-airflow-2.10.5, and composer-2.14.1-airflow-2.9.3 is also available.</summary>
     <title>Changed: New images available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-09-03:deprecated:5</id>
+    <published>2025-09-03T00:00:00+00:00</published>
+    <updated>2025-09-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following Cloud Composer versions and builds have reached their
+<a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
+composer-2.9.2-* and composer-2.9.3-*.</p>]]></content>
+    <summary>Certain versions of Cloud Composer, specifically composer-2.9.2-* and composer-2.9.3-*, are no longer supported. This announcement serves as a notification for users of these versions.</summary>
+    <title>Deprecated: Cloud Composer Versions Deprecation</title>
   </entry>
   <entry>
     <author>

@@ -1,6 +1,16 @@
 {
   "name": "Guest Environment",
   "entries": {
+    "2025-09-03": [
+      {
+        "kind": "Feature",
+        "content": "With the introduction of the plugin-based architecture, the guest agent includes\nthe following updates:\n\n* A new command-line tool, `ggactl_plugin`, is available to manage and restart\n  the guest agent core plugin. To restart the agent, run:\n\n  ```\n  ggactl_plugin coreplugin restart\n\n  ```\n\n  For more information, see [Restarting the guest agent](https://cloud.google.com/compute/docs/images/manage-guest-agent#restart-guest-agent).\n* All guest agent components now use a new logging framework. This framework\n  lets you set the logging level in the\n  [guest agent configuration file](https://cloud.google.com/compute/docs/images/manage-guest-agent#update-guest-agent-config).\n  For more information about the logging options, see [core settings](https://cloud.google.com/compute/docs/images/manage-guest-agent#core)\n  in the configuration options table.\n* The workload refresh service `gce-workload-cert-refresher` is now part of the\n  guest agent's core plugin. It is no longer a separate systemd service.\n* The guest agent updates the metadata script runner and the Authorized Keys\n  binary (Windows only) to use the new, configurable logging framework.\n  Compatibility managers are included to facilitate the migration.",
+        "summary": {
+          "title": "New Plugin-Based Architecture for Guest Agent",
+          "summary": "The guest agent now features a plugin-based architecture, including a new command-line tool `ggactl_plugin` for managing the core plugin. It also incorporates a new logging framework allowing configurable log levels and integrates the workload refresh service into the core plugin."
+        }
+      }
+    ],
     "2025-09-30": [
       {
         "kind": "Fixed",
@@ -54,32 +64,6 @@
         "summary": {
           "title": "Guest agent fixes",
           "summary": "Version 20250907.00 addresses issues in the OS Login module and the metadata SSH key module."
-        }
-      }
-    ],
-    "2025-09-03": [
-      {
-        "kind": "Announcement",
-        "content": "Starting with version `20250901.00`, the guest agent is migrated to a new\nplugin-based architecture to improve modularity. You can revert to the previous\nversion by setting the metadata attribute `enable-guest-agent-core-plugin` to\n`FALSE`. For more information about the plugin-based architecture, see\n[Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).\n\nThis plugin-based guest agent is available for the following operating systems:\n\n* Red Hat Enterprise Linux (RHEL) 9\n* Rocky Linux 9\n* CentOS Stream 9\n* Oracle Linux 9\n* AlmaLinux 9",
-        "summary": {
-          "title": "New Guest Agent Architecture",
-          "summary": "The guest agent has been updated to a new plugin-based architecture starting with version 20250901.00. This change enhances modularity. You can revert to the previous version by setting the metadata attribute `enable-guest-agent-core-plugin` to `FALSE`."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "With the introduction of the plugin-based architecture, the guest agent includes\nthe following updates:\n\n* A new command-line tool, `ggactl_plugin`, is available to manage and restart\n  the guest agent core plugin. To restart the agent, run:\n\n  ```\n  ggactl_plugin coreplugin restart\n\n  ```\n\n  For more information, see [Restarting the guest agent](https://cloud.google.com/compute/docs/images/manage-guest-agent#restart-guest-agent).\n* All guest agent components now use a new logging framework. This framework\n  lets you set the logging level in the\n  [guest agent configuration file](https://cloud.google.com/compute/docs/images/manage-guest-agent#update-guest-agent-config).\n  For more information about the logging options, see [core settings](https://cloud.google.com/compute/docs/images/manage-guest-agent#core)\n  in the configuration options table.\n* The workload refresh service `gce-workload-cert-refresher` is now part of the\n  guest agent's core plugin. It is no longer a separate systemd service.\n* The guest agent updates the metadata script runner and the Authorized Keys\n  binary (Windows only) to use the new, configurable logging framework.\n  Compatibility managers are included to facilitate the migration.",
-        "summary": {
-          "title": "New Plugin-Based Architecture for Guest Agent",
-          "summary": "The guest agent now features a plugin-based architecture, including a new command-line tool `ggactl_plugin` for managing the core plugin. It also incorporates a new logging framework allowing configurable log levels and integrates the workload refresh service into the core plugin."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "An issue is fixed where network routes were not consistently applied\n([GitHub Issue #516](https://github.com/GoogleCloudPlatform/guest-agent/issues/516)).\nThe system now consistently applies network routes by monitoring the route table\nand re-adding routes when they disappear.",
-        "summary": {
-          "title": "Network routes are now consistently applied",
-          "summary": "An issue is fixed where network routes were not consistently applied. The system now consistently applies network routes by monitoring the route table and re-adding routes when they disappear."
         }
       }
     ]

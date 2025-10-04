@@ -1,5 +1,28 @@
 # Looker Studio
 
+## 2025-10-02
+
+### Feature
+
+**Double-click to resize chart margins**
+
+You can now double-click the chart boundaries of a time, a bar, a line, an area, or a scatter chart to reset the boundaries to their default settings.
+
+### Feature
+
+**More data from Google Ads**
+
+You can visualize the following fields using the the [Google Ads connector](https://cloud.google.com/looker/docs/studio/connect-to-google-ads):
+
+* Conversions (by conv. date)
+* Conv. value (by conv. date)
+* All conv. (by conv. date)
+* All conv. value (by conv. date)
+* New vs. returning customers
+* Gross profit
+* Gross profit margin
+
+---
 ## 2025-09-25
 
 ### Feature

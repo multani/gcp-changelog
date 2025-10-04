@@ -2016,6 +2016,17 @@
 
 
 <h1 id="sensitive-data-protection">Sensitive Data Protection</h1>
+<h2 id="2025-10-02">2025-10-02</h2>
+<h3 id="breaking">Breaking</h3>
+<p>This is an addition to the May 1 release note announcing the deprecation of the
+ability to send inspection and discovery results from Sensitive Data Protection
+to Data Catalog.</p>
+<p>If you have workflows that create inspection jobs or job triggers and set the
+deprecated
+<a href="https://cloud.google.com/sensitive-data-protection/docs/reference/rest/v2/Action#publishfindingstoclouddatacatalog"><code>PublishFindingsToCloudDataCatalog</code></a>
+action, you must update those workflows by January 30, 2026. On or after this
+date, new jobs and job triggers that are created by those workflows will fail.</p>
+<hr />
 <h2 id="2025-09-22">2025-09-22</h2>
 <h3 id="feature">Feature</h3>
 <p>The <code>DOCUMENT_TYPE/FINANCE/INVOICE</code> and <code>DOCUMENT_TYPE/MEDICAL/RECORD</code> infoType detectors are available in <code>global</code> and the <code>asia</code>, <code>europe</code>, and <code>us</code> multi-regions. For more information about all infoTypes, see <a href="https://cloud.google.com/sensitive-data-protection/docs/infotypes-reference">InfoType detector reference</a>.</p>
@@ -2105,6 +2116,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#sensitive-data-protection">Sensitive Data Protection</a></li>
+          <li class="nav-item">
+            <a href="#2025-10-02" class="nav-link">2025-10-02</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-09-22" class="nav-link">2025-09-22</a>
           </li>

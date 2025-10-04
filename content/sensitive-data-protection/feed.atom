@@ -2,9 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Sensitive Data Protection</title>
   <subtitle>Changelog for Google Cloud product: Sensitive Data Protection</subtitle>
-  <updated>2025-09-22T00:00:00+00:00</updated>
+  <updated>2025-10-02T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:sensitive-data-protection</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/sensitive-data-protection/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:sensitive-data-protection:2025-10-02:breaking:0</id>
+    <published>2025-10-02T00:00:00+00:00</published>
+    <updated>2025-10-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This is an addition to the May 1 release note announcing the deprecation of the
+ability to send inspection and discovery results from Sensitive Data Protection
+to Data Catalog.</p>
+<p>If you have workflows that create inspection jobs or job triggers and set the
+deprecated
+<a href="https://cloud.google.com/sensitive-data-protection/docs/reference/rest/v2/Action#publishfindingstoclouddatacatalog"><code>PublishFindingsToCloudDataCatalog</code></a>
+action, you must update those workflows by January 30, 2026. On or after this
+date, new jobs and job triggers that are created by those workflows will fail.</p>]]></content>
+    <summary>The ability to send inspection and discovery results from Sensitive Data Protection to Data Catalog is being deprecated. Update workflows using the 'PublishFindingsToCloudDataCatalog' action by January 30, 2026, to avoid job failures.</summary>
+    <title>Breaking: Sensitive Data Protection: Data Catalog Integration Deprecation</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

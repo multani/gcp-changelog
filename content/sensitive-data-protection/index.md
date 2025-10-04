@@ -1,5 +1,20 @@
 # Sensitive Data Protection
 
+## 2025-10-02
+
+### Breaking
+
+This is an addition to the May 1 release note announcing the deprecation of the
+ability to send inspection and discovery results from Sensitive Data Protection
+to Data Catalog.
+
+If you have workflows that create inspection jobs or job triggers and set the
+deprecated
+[`PublishFindingsToCloudDataCatalog`](https://cloud.google.com/sensitive-data-protection/docs/reference/rest/v2/Action#publishfindingstoclouddatacatalog)
+action, you must update those workflows by January 30, 2026. On or after this
+date, new jobs and job triggers that are created by those workflows will fail.
+
+---
 ## 2025-09-22
 
 ### Feature

@@ -1,5 +1,24 @@
 # Google Agentspace
 
+## 2025-10-02
+
+### Feature
+
+**Google Agentspace: Configure prompt chips**
+
+You can create, delete, edit, and enable or disable Google-provided and custom prompts that provide better guidance to your users.
+
+For more information, see [Configure prompt chips](https://cloud.google.com/agentspace/docs/configure-prompt-chips).
+
+### Feature
+
+**Google Agentspace: Generate images using Nano Banana (GA)**
+
+Image generation and editing with Nano Banana (Gemini 2.5 Flash Image) is generally available (GA) in Google Agentspace across Global, EU, and US multi-regions.
+
+For more information on generating images, see [Generate an image](https://cloud.google.com/agentspace/docs/assistant-analyze#generate_an_image).
+
+---
 ## 2025-09-26
 
 ### Feature

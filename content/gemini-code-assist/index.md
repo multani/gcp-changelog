@@ -2,10 +2,6 @@
 
 ## 2025-10-02
 
-### Deprecated
-
-
-
 ### Gemini Code Assist tools are deprecated and replaced by agent mode (Preview)
 
 Gemini Code Assist tools are deprecated and will be removed on October 14, 2025.

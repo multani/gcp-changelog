@@ -14,6 +14,17 @@
 [DeepSeek-V3.1-Terminus](https://console.cloud.google.com/vertex-ai/publishers/deepseek-ai/model-garden/deepseek-v3-1;publisherModelVersion=deepseek-v3-1-terminus) is available through Model Garden.
 
 ---
+## 2025-09-17
+
+### Feature
+
+**M133 release**
+
+The M133 release of Vertex AI Workbench instances includes the following:
+
+* Patched an incompatibility with the Dataproc JupyterLab plugin (`dataproc-jupyter-plugin`) and instances with end-user credentials enabled.
+
+---
 ## 2025-09-15
 
 ### Feature

@@ -1,5 +1,12 @@
 # Access Transparency
 
+## 2025-10-01
+
+### Feature
+
+Certificate Manager is generally available [(GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-09-10
 
 ### Feature

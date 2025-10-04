@@ -2,9 +2,52 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for PostgreSQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for PostgreSQL</subtitle>
-  <updated>2025-09-29T00:00:00+00:00</updated>
+  <updated>2025-10-03T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-postgresql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2025-10-03:feature:0</id>
+    <published>2025-10-03T00:00:00+00:00</published>
+    <updated>2025-10-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud SQL for PostgreSQL now supports PostgreSQL version 18 in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
+<p>PostgreSQL 18 is a newly supported version. We strongly recommend that you review the changes in the release and validate the readiness of your instance thoroughly prior to upgrading your instance to this version.</p>
+<p>The following information applies to flags and extensions for PostgreSQL 18:</p>
+<p><strong>Flags</strong></p>
+<p>The following new flags are available for PostgreSQL 18 only:</p>
+<ul>
+<li><code>autovacuum_vacuum_max_threshold</code></li>
+<li><code>autovacuum_worker_slots</code></li>
+<li><code>enable_distinct_reordering</code></li>
+<li><code>enable_self_join_elimitation</code></li>
+<li><code>io_max_concurrency</code></li>
+<li><code>io_method</code></li>
+<li><code>io_workers</code></li>
+<li><code>log_lock_failures</code></li>
+<li><code>max_active_replecation_origins</code></li>
+<li><code>track_cost_delay_timing</code></li>
+<li><code>vacuum_max_eager_freeze_failure_rate</code></li>
+<li><code>vacuum_truncate</code></li>
+</ul>
+<p>For more information, see <a href="https://cloud.google.com/sql/docs/postgres/flags">Configure database flags</a>.</p>
+<p><strong>Extensions</strong></p>
+<p>The following extensions aren't available for PostgreSQL 18:</p>
+<ul>
+<li><code>pgRouting</code></li>
+<li><code>plpgsql_check</code></li>
+<li><code>pg_hint_plan</code></li>
+<li><code>pgrouting</code></li>
+<li><code>anonymizer</code></li>
+<li><code>pg_wait_sampling</code></li>
+<li><code>tds_fdw</code></li>
+</ul>
+<p>For more information, see <a href="https://cloud.google.com/sql/docs/postgres/extensions">Configure PostgreSQL extensions</a>.</p>
+<p>To create a new instance using PostgreSQL 18, see <a href="https://cloud.google.com/sql/docs/postgres/create-instance">Create instances</a>.</p>]]></content>
+    <summary>Cloud SQL for PostgreSQL now supports PostgreSQL version 18 in preview. Review changes and test thoroughly before upgrading.</summary>
+    <title>Feature: Cloud SQL for PostgreSQL 18 Now Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

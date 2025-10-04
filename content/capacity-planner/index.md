@@ -1,5 +1,18 @@
 # Capacity Planner
 
+## 2025-10-03
+
+### Feature
+
+**Preview:** Capacity Planner supports the following:
+
+* Usage and forecast data for Hyperdisk volumes
+* Usage and forecast data for Persistent Disk and Hyperdisk volume IOPS and throughput
+* Usage data for Spot VMs
+
+For more information, see [View usage and forecast data](https://cloud.google.com/capacity-planner/docs/view-data).
+
+---
 ## 2025-08-29
 
 ### Announcement

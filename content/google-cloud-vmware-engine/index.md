@@ -1,5 +1,18 @@
 # Google Cloud VMware Engine
 
+## 2025-10-03
+
+### Announcement
+
+This is to notify you about upcoming changes in licensing model with Google Cloud VMware Engine following [Broadcom's recent announcement](https://blogs.vmware.com/cloud-foundation/2025/08/29/vmware-cloud-foundation-cloud-on-your-terms/) to move to a "bring your own" subscription model for VMware Cloud Foundation (VCF).
+
+You can renew or add additional capacity of VMware Engine nodes with VCF-license included until **October 15, 2025**. After that, Google Cloud will not be able to sell new VMware Engine VCF license-included nodes. You can buy new VMware Engine BYOL nodes and use them with "bring your own" VCF subscriptions (purchased by you from Broadcom) for new capacity after **October 15, 2025**.
+
+For any questions, please reach out to your Google Cloud sales team, who can help review your specific scenarios, discuss the implications of these changes for your organization, and help you manage this transition.
+
+For more details, see the [October 3, 2025](https://cloud.google.com/vmware-engine/docs/service-announcements#2025-10-03) service announcement.
+
+---
 ## 2025-09-26
 
 ### Announcement

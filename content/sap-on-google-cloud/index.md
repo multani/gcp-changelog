@@ -1,5 +1,19 @@
 # SAP on Google Cloud
 
+## 2025-10-03
+
+### Announcement
+
+**New SAP certification for operating system: RHEL for SAP 9.6**
+
+For use with SAP HANA and SAP NetWeaver on Google Cloud, SAP has certified the operating system Red Hat Enterprise Linux (RHEL) for SAP 9.6.
+
+For more information about SAP-certified operating systems, see:
+
+* [Certified operating systems for SAP HANA](https://cloud.google.com/sap/docs/sap-hana-os-support#quick_reference_table)
+* [Certified operating systems for SAP NetWeaver](https://cloud.google.com/sap/docs/netweaver-os-support#quick_reference_table)
+
+---
 ## 2025-09-02
 
 ### Deprecated

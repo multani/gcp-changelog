@@ -1,5 +1,51 @@
 # Cloud SQL for PostgreSQL
 
+## 2025-10-03
+
+### Feature
+
+Cloud SQL for PostgreSQL now supports PostgreSQL version 18 in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+PostgreSQL 18 is a newly supported version. We strongly recommend that you review the changes in the release and validate the readiness of your instance thoroughly prior to upgrading your instance to this version.
+
+The following information applies to flags and extensions for PostgreSQL 18:
+
+**Flags**
+
+The following new flags are available for PostgreSQL 18 only:
+
+* `autovacuum_vacuum_max_threshold`
+* `autovacuum_worker_slots`
+* `enable_distinct_reordering`
+* `enable_self_join_elimitation`
+* `io_max_concurrency`
+* `io_method`
+* `io_workers`
+* `log_lock_failures`
+* `max_active_replecation_origins`
+* `track_cost_delay_timing`
+* `vacuum_max_eager_freeze_failure_rate`
+* `vacuum_truncate`
+
+For more information, see [Configure database flags](https://cloud.google.com/sql/docs/postgres/flags).
+
+**Extensions**
+
+The following extensions aren't available for PostgreSQL 18:
+
+* `pgRouting`
+* `plpgsql_check`
+* `pg_hint_plan`
+* `pgrouting`
+* `anonymizer`
+* `pg_wait_sampling`
+* `tds_fdw`
+
+For more information, see [Configure PostgreSQL extensions](https://cloud.google.com/sql/docs/postgres/extensions).
+
+To create a new instance using PostgreSQL 18, see [Create instances](https://cloud.google.com/sql/docs/postgres/create-instance).
+
+---
 ## 2025-09-29
 
 ### Feature

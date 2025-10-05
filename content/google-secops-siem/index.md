@@ -1,5 +1,21 @@
 # Google SecOps SIEM
 
+## 2025-10-05
+
+### Announcement
+
+Release 6.3.64 is being rolled out to the first phase of regions as listed [here](https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains internal and customer bug fixes.
+
+---
+## 2025-10-04
+
+### Announcement
+
+[Release 6.3.63](https://cloud.google.com/chronicle/docs/soar/release-notes#September_28_2025) is now available for all regions.
+
+---
 ## 2025-09-28
 
 ### Announcement

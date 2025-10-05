@@ -1,5 +1,16 @@
 # Generative AI on Vertex AI
 
+## 2025-10-02
+
+### Feature
+
+**Google Gen AI SDK in C# Preview**
+
+[Preview](https://cloud.google.com/products#product-launch-stages): The Google Gen AI SDK is available in C#. See [googleapis/dotnet-genai](https://github.com/googleapis/dotnet-genai).
+
+This release includes support for `GenerateContentAsync`, `GenerateContentStreamAsync`, `GenerateImagesAsync`, and three Live APIs, which includes `SendClientContentAsync`, `SendRealtimeInputAsync`, and `SendToolResponseAsync`.
+
+---
 ## 2025-09-30
 
 ### Feature

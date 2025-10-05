@@ -1,5 +1,45 @@
 # Google SecOps
 
+## 2025-10-05
+
+### Announcement
+
+**New parser documentation now available**
+
+New parser documentation is available to help you ingest and normalize logs from the following sources:
+
+* [Collect AlphaSOC alert logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/asoc-alert)
+* [Collect AlphaSOC alert logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/rippling-activitylogs)
+* [Collect Cisco vManage SD-WAN logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-sdwan)
+* [Collect Citrix Analytics logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-analytics)
+* [Collect Citrix Monitor Service logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-ms)
+* [Collect Citrix StoreFront logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-storefront)
+* [Collect Delinea SSO logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/delinea-sso)
+* [Collect SailPoint IAM logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sailpoint-iam)
+* [Collect Sentry logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sentry)
+* [Collect Snipe-IT logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/snipe-it)
+* [Collect Sophos AV logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-av)
+* [Collect Sophos Capsule8 logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-cap8)
+* [Collect Sophos DHCP logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-dhcp)
+* [Collect Sophos Intercept EDR logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-edr)
+* [Collect Swimlane Platform logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/swimlane)
+* [Collect Symantec WSS logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-wss)
+* [Collect Tailscale logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tailscale)
+* [Collect Tanium Asset logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-asset)
+* [Collect Tanium audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-audit)
+* [Collect Tanium Comply logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-comply)
+* [Collect Tanium Discover logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-discover)
+* [Collect Tanium Insight logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-insight)
+* [Collect Tanium Integrity Monitor logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-im)
+* [Collect Tanium Patch logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-patch)
+* [Collect Tanium Question logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-question)
+* [Collect Tanium Reveal logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-reveal)
+* [Collect Tanium Stream logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-stream)
+* [Collect Tanium Threat Response logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-tr)
+* [Collect TeamViewer logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/teamviewer)
+* [Collect Tines audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tines)
+
+---
 ## 2025-09-28
 
 ### Announcement

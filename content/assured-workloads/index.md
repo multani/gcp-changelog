@@ -11,6 +11,17 @@ Certificate Manager is generally available [(GA)](https://cloud.google.com/produ
 Certificate Manager is generally available [(GA)](https://cloud.google.com/products#product-launch-stages).
 
 ---
+## 2025-09-25
+
+### Feature
+
+Cloud TPU is generally available [(GA)](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+Cloud TPU is generally available [(GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-09-10
 
 ### Feature

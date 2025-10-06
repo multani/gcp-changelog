@@ -1,5 +1,20 @@
 # Dataform
 
+## 2025-10-06
+
+### Feature
+
+You can now set the priority of BigQuery jobs in Dataform
+to run queries as interactive jobs that start running as quickly as possible
+or as batch jobs with lower priority. For more information, see
+[Create a workflow configuration](https://cloud.google.com/dataform/docs/schedule-runs#create-workflow-configuration)
+and
+[InvocationConfig](https://cloud.google.com/dataform/reference/rest/v1/InvocationConfig).
+This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2025-09-08
 
 ### Feature

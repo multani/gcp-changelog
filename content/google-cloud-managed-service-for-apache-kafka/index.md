@@ -1,5 +1,12 @@
 # Google Cloud Managed Service for Apache Kafka
 
+## 2025-10-01
+
+### Feature
+
+Support for Kafka Connect is now [generally available](https://cloud.google.com/products#product-launch-stages) (GA). Kafka Connect lets you stream data at scale between Managed Service for Apache Kafka clusters and other systems, such as external Kafka deployments, BigQuery, Cloud Storage, or Pub/Sub. For more information, see [Kafka Connect overview](https://cloud.google.com/managed-service-for-apache-kafka/docs/kafka-connect-overview).
+
+---
 ## 2025-09-24
 
 ### Feature

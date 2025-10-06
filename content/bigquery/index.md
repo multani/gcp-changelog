@@ -76,10 +76,6 @@ available](https://cloud.google.com/products#product-launch-stages) (GA).
 
 ### Feature
 
-For command-line users, BigQuery is now integrated with the Gemini CLI to provide an agentic CLI experience. Using the dedicated [Gemini CLI extensions for BigQuery](https://cloud.google.com/bigquery/docs/develop-with-gemini-cli), you can search, explore, analyze, and gain insights from your data by asking natural language questions, generating forecasts, and running contribution analysis directly from the command line. This feature is available in beta.
-
-### Feature
-
 BigQuery ML now supports
 [visualization of model monitoring metrics](https://cloud.google.com/bigquery/docs/model-monitoring-overview#monitoring_visualization).
 This feature lets you use charts and graphs to
@@ -91,6 +87,10 @@ and
 functions. This feature is
 [generally available](https://cloud.google.com/products/#product-launch-stages)
 (GA).
+
+### Feature
+
+For command-line users, BigQuery is now integrated with the Gemini CLI to provide an agentic CLI experience. Using the dedicated [Gemini CLI extensions for BigQuery](https://cloud.google.com/bigquery/docs/develop-with-gemini-cli), you can search, explore, analyze, and gain insights from your data by asking natural language questions, generating forecasts, and running contribution analysis directly from the command line. This feature is available in beta.
 
 ---
 ## 2025-09-22

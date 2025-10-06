@@ -23,7 +23,29 @@ version introduces the plugin-based architecture to Debian 12.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:guest-environment:2025-09-09:fixed:0</id>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2025-09-09:feature:0</id>
+    <published>2025-09-09T00:00:00+00:00</published>
+    <updated>2025-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20250907.00</code> of the guest agent, which introduces the plugin-based
+architecture to Enterprise Linux 8 operating systems, is now available. For more
+information about the plugin-based architecture, see <a href="https://cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>
+<p>With this version, the plugin-based guest agent is now also available for the
+following operating systems:</p>
+<ul>
+<li>Red Hat Enterprise Linux (RHEL) 8</li>
+<li>Rocky Linux 8</li>
+<li>CentOS Stream 8</li>
+<li>Oracle Linux 8</li>
+<li>AlmaLinux 8</li>
+</ul>]]></content>
+    <summary>The new version of the guest agent (20250907.00) is available for Enterprise Linux 8 operating systems, including RHEL, Rocky Linux, CentOS Stream, Oracle Linux, and AlmaLinux. This release introduces a plugin-based architecture, allowing for more modular and flexible agent functionality.</summary>
+    <title>Feature: Guest agent plugin-based architecture now available for Enterprise Linux 8</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2025-09-09:fixed:1</id>
     <published>2025-09-09T00:00:00+00:00</published>
     <updated>2025-09-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Version <code>20250907.00</code> includes the following fixes for issues found in guest
@@ -68,6 +90,20 @@ the following updates:</p>
   Compatibility managers are included to facilitate the migration.</p>]]></content>
     <summary>The guest agent now features a plugin-based architecture, including a new command-line tool `ggactl_plugin` for managing the core plugin. It also incorporates a new logging framework allowing configurable log levels and integrates the workload refresh service into the core plugin.</summary>
     <title>Feature: New Plugin-Based Architecture for Guest Agent</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2025-09-03:fixed:1</id>
+    <published>2025-09-03T00:00:00+00:00</published>
+    <updated>2025-09-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue is fixed where network routes were not consistently applied
+(<a href="https://github.com/GoogleCloudPlatform/guest-agent/issues/516">GitHub Issue #516</a>).
+The system now consistently applies network routes by monitoring the route table
+and re-adding routes when they disappear.</p>]]></content>
+    <summary>An issue is fixed where network routes were not consistently applied. The system now consistently applies network routes by monitoring the route table and re-adding routes when they disappear.</summary>
+    <title>Fixed: Network routes are now consistently applied</title>
   </entry>
   <entry>
     <author>

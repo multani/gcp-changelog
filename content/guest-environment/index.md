@@ -56,6 +56,21 @@ architecture, see [Guest agent](https://cloud.google.com/compute/docs/images/gue
 ---
 ## 2025-09-09
 
+### Feature
+
+Version `20250907.00` of the guest agent, which introduces the plugin-based
+architecture to Enterprise Linux 8 operating systems, is now available. For more
+information about the plugin-based architecture, see [Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).
+
+With this version, the plugin-based guest agent is now also available for the
+following operating systems:
+
+* Red Hat Enterprise Linux (RHEL) 8
+* Rocky Linux 8
+* CentOS Stream 8
+* Oracle Linux 8
+* AlmaLinux 8
+
 ### Fixed
 
 Version `20250907.00` includes the following fixes for issues found in guest
@@ -95,5 +110,12 @@ the following updates:
 * The guest agent updates the metadata script runner and the Authorized Keys
   binary (Windows only) to use the new, configurable logging framework.
   Compatibility managers are included to facilitate the migration.
+
+### Fixed
+
+An issue is fixed where network routes were not consistently applied
+([GitHub Issue #516](https://github.com/GoogleCloudPlatform/guest-agent/issues/516)).
+The system now consistently applies network routes by monitoring the route table
+and re-adding routes when they disappear.
 
 ---

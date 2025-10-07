@@ -1,5 +1,250 @@
 # Container Optimized OS
 
+## 2025-10-06
+
+### Changed
+
+
+
+### cos-beta-125-19216-0-76
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.46](https://cos.googlesource.com/third_party/kernel/+/63e0810f15dbfa9fb8126501f54ab3cfb234ca55 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19216.0.76/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Configured the cos-gpu-installer to use R580 drivers as the
+default GPU drivers.
+
+### Fixed
+
+Add support for NVIDIA MFT Tools v4.33.0.
+
+### Security
+
+Updated dev-python/urllib3 to v1.26.18 and fixed CVE-2025-50181.
+
+### Security
+
+Updated dev-python/jinja to v3.1.6. This resolves
+CVE-2024-56326, CVE-2024-56201 and CVE-2025-27516.
+
+### Security
+
+Fixed CVE-2025-39913 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39914 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39911 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39926 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39917 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-22106 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-1b34cbb in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39886 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811504 -> 811450
+
+### Changed
+
+
+
+### cos-121-18867-199-88
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.105](https://cos.googlesource.com/third_party/kernel/+/b1375912423c5d03f213ed57baff26d12a3d6d79 ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.199.88/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Add support for NVIDIA MFT Tools v4.33.0.
+
+### Security
+
+Fixed CVE-2025-50181 in dev-python/urllib3.
+
+### Security
+
+Fixed CVE-2025-39914 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39913 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39911 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-22106 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-1b34cbb in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39882 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39886 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811826 -> 811724
+
+### Changed
+
+
+
+### cos-117-18613-339-84
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.105](https://cos.googlesource.com/third_party/kernel/+/82b411b602e6c923c1828944e6d849ba41f1eaa1 ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.339.84/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Add support for NVIDIA MFT Tools v4.33.0.
+
+### Security
+
+Fixed CVE-2025-50181 in dev-python/urllib3.
+
+### Security
+
+Fixed CVE-2025-39914 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39913 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39911 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-22106 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-1b34cbb in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39882 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39886 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811817 -> 811788
+
+### Changed
+
+
+
+### cos-dev-129-19302-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.49](https://cos.googlesource.com/third_party/kernel/+/bca084acf36df7105bde6e24bdee99b4cc82df6b ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19302.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated the Linux kernel to v6.12.49.
+
+### Feature
+
+Configured the cos-gpu-installer to use R580 drivers as the
+default GPU drivers.
+
+### Fixed
+
+Add support for NVIDIA MFT Tools v4.33.0.
+
+### Security
+
+Updated dev-python/jinja to v3.1.6. This resolves
+CVE-2024-56326, CVE-2024-56201 and CVE-2025-27516.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811490 -> 811493
+* Changed: net.ipv4.udp\_mem: 188034 250715 376068 -> 188034 250714 376068
+
+### Changed
+
+
+
+### cos-113-18244-448-63
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.151](https://cos.googlesource.com/third_party/kernel/+/9264165a8b85e3d390b9b1627029eb486d0b5a77 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.448.63/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-50181 in dev-python/urllib3.
+
+### Security
+
+Fixed CVE-2025-39914 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39913 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-1b34cbb in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812039 -> 811950
+
+---
 ## 2025-09-29
 
 ### cos-beta-125-19216-0-62

@@ -1,5 +1,12 @@
 # Bigtable
 
+## 2025-10-06
+
+### Feature
+
+You can optimize storage with Bigtable [tiered storage](https://cloud.google.com/bigtable/docs/tiered-storage), reduce storage costs, and retain data for longer. This feature is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-09-29
 
 ### Libraries

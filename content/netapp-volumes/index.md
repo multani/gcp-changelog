@@ -4,11 +4,14 @@
 
 ### Feature
 
-Google Cloud NetApp Volumes now supports the FlexCache feature in allow-listed General Availability (GA) for the Premium and Extreme service levels. For more information, see [FlexCache](https://cloud.google.com/netapp/volumes/docs/discover/features#flexcache).
+Selective file restore feature is now generally available for Google Cloud NetApp Volumes, supporting the Standard, Premium, and Extreme service levels. For more information, see [Selective file restore](https://cloud.google.com/netapp/volumes/docs/protect-data/about-backups#selective_file_restore).
+
+---
+## 2025-09-24
 
 ### Feature
 
-Selective file restore feature is now generally available for Google Cloud NetApp Volumes, supporting the Standard, Premium, and Extreme service levels. For more information, see [Selective file restore](https://cloud.google.com/netapp/volumes/docs/protect-data/about-backups#selective_file_restore).
+Google Cloud NetApp Volumes now supports the FlexCache feature in allow-listed General Availability (GA) for the Premium and Extreme service levels. For more information, see [FlexCache](https://cloud.google.com/netapp/volumes/docs/discover/features#flexcache).
 
 ---
 ## 2025-09-05

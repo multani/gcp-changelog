@@ -1,5 +1,12 @@
 # Access Approval
 
+## 2025-10-03
+
+### Feature
+
+NCC Gateway is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-10-01
 
 ### Feature

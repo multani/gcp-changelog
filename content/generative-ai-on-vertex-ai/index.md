@@ -1,6 +1,31 @@
 # Generative AI on Vertex AI
 
+## 2025-10-06
+
+### Changed
+
+**Updated pricing for Vertex AI Agent Engine**: Starting on **November 6, 2025**, Vertex AI Agent Engine Runtime will start charging for runtime usage for the following regions:
+
+* `asia-southeast1` (Singapore)
+* `australia-southeast2` (Melbourne)
+* `europe-west2` (London)
+* `europe-west3` (Frankfurt)
+* `europe-west4` (Netherlands)
+
+For more details, see [Pricing](https://cloud.google.com/vertex-ai/pricing#agent_engine) for Vertex AI Agent Engine.
+
+### Feature
+
+**Access Transparency for Vertex AI Agent Engine**: Access Transparency is now available for Vertex AI Agent Engine. For more information, see the overview for [Enterprise security](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/overview#enterprise_security).
+
+---
 ## 2025-10-02
+
+### Announcement
+
+**[Gemini 2.5 Flash Image](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash#image-generation)** (`gemini-2.5-flash-image`) is now generally available. This GA release includes support for additional image generation and editing features such as [image generation from multiple reference images](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-generation#image-generation), [improved multi-turn image editing](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-editing#multi-turn-editing), and [support for batch predictions](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/batch-prediction-gemini).
+
+See [Gemini 2.5 Flash Image](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash#image) for more information.
 
 ### Feature
 

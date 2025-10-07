@@ -1,5 +1,12 @@
 # Cloud Run
 
+## 2025-10-06
+
+### Feature
+
+Support for [applying maximum instance configuration](https://cloud.google.com/run/docs/configuring/max-instances#service-vs-revision-level) at the service level is in General Availability (GA).
+
+---
 ## 2025-09-24
 
 ### Feature

@@ -1,5 +1,17 @@
 # Cloud CDN
 
+## 2025-10-07
+
+### Feature
+
+Cloud CDN provides predefined dashboards that are enabled by default for a quick
+insight into system health and performance. These dashboards display key metrics
+that enable you to monitor traffic distribution and cache effectiveness without
+manual configuration. This feature is **Generally Available**.
+
+For more information, see [Predefined dashboards](https://cloud.google.com/cdn/docs/logging#predefined-cdn-dashboards).
+
+---
 ## 2025-06-23
 
 ### Feature

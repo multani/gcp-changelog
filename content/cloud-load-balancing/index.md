@@ -1,5 +1,19 @@
 # Cloud Load Balancing
 
+## 2025-10-06
+
+### Feature
+
+Percentage-based request mirroring is now supported for the global and regional external Application Load Balancers (classic is not supported). By default, the mirrored backend service receives all requests, even if the original traffic is being split between multiple weighted backend services. You
+can now configure the mirrored backend service to receive only a percentage of the
+requests by using the `mirrorPercent` flag to specify the percentage of
+requests to be mirrored, expressed as a value between 0 and 100.0.
+
+For an example, see [Set up traffic management for regional external Application Load Balancers](https://cloud.google.com/load-balancing/docs/https/setting-up-reg-traffic-mgmt#mirror_traffic).
+
+This feature is available in **General availability**.
+
+---
 ## 2025-09-17
 
 ### Security

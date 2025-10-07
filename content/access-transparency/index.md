@@ -1,5 +1,12 @@
 # Access Transparency
 
+## 2025-10-06
+
+### Feature
+
+Vertex AI Agent Engine is generally available [(GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-10-01
 
 ### Feature

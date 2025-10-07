@@ -1,6 +1,48 @@
 {
   "name": "BigQuery",
   "entries": {
+    "2025-10-06": [
+      {
+        "kind": "Feature",
+        "content": "The [`INFORMATION_SCHEMA.SHARED_DATASET_USAGE` view](https://cloud.google.com/bigquery/docs/information-schema-shared-dataset-usage#schema)\nnow includes the following schema fields to support usage metrics for\nexternal tables and routines:\n\n* `shared_resource_id`: the ID of the queried resource\n* `shared_resource_type`: the type of the queried resource\n* `referenced_tables`: Contains `project_id`,\n  `dataset_id`, `table_id`, and `processed_bytes`\n  fields of the base table.\n\nThese fields are\n[generally available](https://cloud.google.com/products#product-launch-stages) (GA).",
+        "summary": {
+          "title": "New Usage Metrics for External Tables and Routines",
+          "summary": "The INFORMATION_SCHEMA.SHARED_DATASET_USAGE view now includes new schema fields (shared_resource_id, shared_resource_type, referenced_tables) to support usage metrics for external tables and routines. These fields are now generally available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The BigQuery Data Transfer Service can now [transfer reporting data from Google Analytics 4](https://cloud.google.com/bigquery/docs/google-analytics-4-transfer)\ninto BigQuery. You can also include custom reports from\nGoogle Analytics 4 in your data transfer. This feature is\n[generally available](https://cloud.google.com/products#product-launch-stages) (GA).",
+        "summary": {
+          "title": "Google Analytics 4 data now available in BigQuery",
+          "summary": "You can now transfer your Google Analytics 4 reporting data into BigQuery using the BigQuery Data Transfer Service. This includes the ability to transfer custom reports. This feature is now generally available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The BigQuery Data Transfer Service can now transfer data from the\nfollowing data sources:\n\n* [PayPal](https://cloud.google.com/bigquery/docs/paypal-transfer)\n* [Stripe](https://cloud.google.com/bigquery/docs/stripe-transfer)\n\nTransfers from these data sources are supported in [preview](https://cloud.google.com/products/#product-launch-stages).",
+        "summary": {
+          "title": "New data sources for BigQuery Data Transfer Service",
+          "summary": "The BigQuery Data Transfer Service now supports data transfers from PayPal and Stripe. These new transfer options are currently in preview."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now set the priority of BigQuery jobs initiated by\nDataform workflows to run queries as interactive jobs that start\nrunning as quickly as possible or as batch jobs with lower priority. For more\ninformation, see\n[Create a pipeline schedule](https://cloud.google.com/bigquery/docs/schedule-pipelines#create-schedule)\nand\n[InvocationConfig](https://cloud.google.com/dataform/reference/rest/v1/InvocationConfig).\nThis feature is\n[generally available](https://cloud.google.com/products#product-launch-stages)\n(GA).",
+        "summary": {
+          "title": "Set BigQuery job priority for Dataform workflows",
+          "summary": "You can now set the priority of BigQuery jobs initiated by Dataform workflows to run queries as interactive jobs that start running as quickly as possible or as batch jobs with lower priority."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "Starting March 17, 2026, the BigQuery Data Transfer Service will require the\n`bigquery.datasets.setIamPolicy` and the `bigquery.datasets.getIamPolicy`\npermissions on the target dataset to create or update a transfer configuration.\nFor more information, see [Changes to dataset-level access controls](https://cloud.google.com/bigquery/docs/dataset-access-control).",
+        "summary": {
+          "title": "BigQuery IAM Update",
+          "summary": "The BigQuery Data Transfer Service will require updated IAM permissions for transfers starting March 17, 2026. Ensure your configurations are updated accordingly. For more details, see the official documentation."
+        }
+      }
+    ],
     "2025-10-02": [
       {
         "kind": "Feature",

@@ -1,5 +1,60 @@
 # BigQuery
 
+## 2025-10-06
+
+### Feature
+
+The [`INFORMATION_SCHEMA.SHARED_DATASET_USAGE` view](https://cloud.google.com/bigquery/docs/information-schema-shared-dataset-usage#schema)
+now includes the following schema fields to support usage metrics for
+external tables and routines:
+
+* `shared_resource_id`: the ID of the queried resource
+* `shared_resource_type`: the type of the queried resource
+* `referenced_tables`: Contains `project_id`,
+  `dataset_id`, `table_id`, and `processed_bytes`
+  fields of the base table.
+
+These fields are
+[generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+### Feature
+
+The BigQuery Data Transfer Service can now [transfer reporting data from Google Analytics 4](https://cloud.google.com/bigquery/docs/google-analytics-4-transfer)
+into BigQuery. You can also include custom reports from
+Google Analytics 4 in your data transfer. This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+### Feature
+
+The BigQuery Data Transfer Service can now transfer data from the
+following data sources:
+
+* [PayPal](https://cloud.google.com/bigquery/docs/paypal-transfer)
+* [Stripe](https://cloud.google.com/bigquery/docs/stripe-transfer)
+
+Transfers from these data sources are supported in [preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+You can now set the priority of BigQuery jobs initiated by
+Dataform workflows to run queries as interactive jobs that start
+running as quickly as possible or as batch jobs with lower priority. For more
+information, see
+[Create a pipeline schedule](https://cloud.google.com/bigquery/docs/schedule-pipelines#create-schedule)
+and
+[InvocationConfig](https://cloud.google.com/dataform/reference/rest/v1/InvocationConfig).
+This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+### Announcement
+
+Starting March 17, 2026, the BigQuery Data Transfer Service will require the
+`bigquery.datasets.setIamPolicy` and the `bigquery.datasets.getIamPolicy`
+permissions on the target dataset to create or update a transfer configuration.
+For more information, see [Changes to dataset-level access controls](https://cloud.google.com/bigquery/docs/dataset-access-control).
+
+---
 ## 2025-10-02
 
 ### Feature

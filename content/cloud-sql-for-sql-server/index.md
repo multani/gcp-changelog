@@ -1,5 +1,29 @@
 # Cloud SQL for SQL Server
 
+## 2025-10-06
+
+### Feature
+
+You can now use [advanced disaster recovery (DR)](https://cloud.google.com/sql/docs/sqlserver/intro-to-cloud-sql-disaster-recovery#advanced-dr) for your Private Service Connect (PSC) enabled Cloud SQL Enterprise Plus edition instances. With advanced DR, you can:
+
+* Designate a cross-region disaster recovery (DR) replica
+* Perform a cross-region replica failover for disaster recovery
+* Restore your original deployment by using zero-data loss switchover
+
+You can also use switchover to simulate disaster recovery without data loss. For more information, see
+[Use advanced disaster recovery (DR)](https://cloud.google.com/sql/docs/sqlserver/use-advanced-disaster-recovery)
+. This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
+## 2025-09-29
+
+### Feature
+
+You can now [use Gemini's capabilities to fix errors in a query within Cloud SQL Studio](https://cloud.google.com/sql/docs/sqlserver/write-sql-gemini#fix-query) ([Preview](https://cloud.google.com/products#product-launch-stages)).
+
+---
 ## 2025-09-23
 
 ### Feature

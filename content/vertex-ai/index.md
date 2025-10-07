@@ -47,7 +47,7 @@ Agent Engine now supports the following features:
 * Agent Engine **Code Execution**, now in Preview, lets your agent run code in an isolated sandbox environment. For more information, see [Code Execution](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/code-execution/overview).
 * You can now develop, deploy, and use agents that support the **Agent-to-Agent (A2A) protocol** on Agent Engine. For more information, see [Develop an Agent2Agent agent](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/develop/a2a).
 * Agent Engine now supports **bidirectional streaming**. For more information, see [Bidirectional streaming](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/bidirectional-streaming).
-* The [Agent Engine page](https://console.cloud.google.com/vertex-ai/agents/agent-engines) in the Cloud Console UI now has a new **Memory Bank** tab for displaying and managing memories.
+* The [Vertex AI Agent Engine page](https://console.cloud.google.com/vertex-ai/agents/agent-engines) in the Google Cloud console has a **Memory Bank** tab for displaying and managing memories.
 
 ### Breaking
 
@@ -64,7 +64,7 @@ In version `v1.112.0` of the Vertex AI SDK for Python, the `agent_engines` modul
 
 ### Feature
 
-[AI Singapore's SEA-LION V4 models](https://console.cloud.google.com/vertex-ai/publishers/aisingapore/model-garden/gemma-sea-lion-v4) are available through Model Garden. They are open models for Southeast Asian languages, built by leveraging Vertex Model Development Service for enhanced training efficiency and model accuracy.
+[AI Singapore's SEA-LION V4 models](https://console.cloud.google.com/vertex-ai/publishers/aisingapore/model-garden/gemma-sea-lion-v4) are available through Model Garden. They are open models for Southeast Asian languages, built by leveraging Vertex AI Model Development Service for enhanced training efficiency and model accuracy.
 
 ---
 ## 2025-08-21

@@ -2,9 +2,96 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: BigQuery</title>
   <subtitle>Changelog for Google Cloud product: BigQuery</subtitle>
-  <updated>2025-10-02T00:00:00+00:00</updated>
+  <updated>2025-10-06T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:bigquery</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/bigquery/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-10-06:feature:0</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://cloud.google.com/bigquery/docs/information-schema-shared-dataset-usage#schema"><code>INFORMATION_SCHEMA.SHARED_DATASET_USAGE</code> view</a>
+now includes the following schema fields to support usage metrics for
+external tables and routines:</p>
+<ul>
+<li><code>shared_resource_id</code>: the ID of the queried resource</li>
+<li><code>shared_resource_type</code>: the type of the queried resource</li>
+<li><code>referenced_tables</code>: Contains <code>project_id</code>,
+  <code>dataset_id</code>, <code>table_id</code>, and <code>processed_bytes</code>
+  fields of the base table.</li>
+</ul>
+<p>These fields are
+<a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>]]></content>
+    <summary>The INFORMATION_SCHEMA.SHARED_DATASET_USAGE view now includes new schema fields (shared_resource_id, shared_resource_type, referenced_tables) to support usage metrics for external tables and routines. These fields are now generally available.</summary>
+    <title>Feature: New Usage Metrics for External Tables and Routines</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-10-06:feature:1</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The BigQuery Data Transfer Service can now <a href="https://cloud.google.com/bigquery/docs/google-analytics-4-transfer">transfer reporting data from Google Analytics 4</a>
+into BigQuery. You can also include custom reports from
+Google Analytics 4 in your data transfer. This feature is
+<a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>]]></content>
+    <summary>You can now transfer your Google Analytics 4 reporting data into BigQuery using the BigQuery Data Transfer Service. This includes the ability to transfer custom reports. This feature is now generally available.</summary>
+    <title>Feature: Google Analytics 4 data now available in BigQuery</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-10-06:feature:2</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The BigQuery Data Transfer Service can now transfer data from the
+following data sources:</p>
+<ul>
+<li><a href="https://cloud.google.com/bigquery/docs/paypal-transfer">PayPal</a></li>
+<li><a href="https://cloud.google.com/bigquery/docs/stripe-transfer">Stripe</a></li>
+</ul>
+<p>Transfers from these data sources are supported in <a href="https://cloud.google.com/products/#product-launch-stages">preview</a>.</p>]]></content>
+    <summary>The BigQuery Data Transfer Service now supports data transfers from PayPal and Stripe. These new transfer options are currently in preview.</summary>
+    <title>Feature: New data sources for BigQuery Data Transfer Service</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-10-06:feature:3</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now set the priority of BigQuery jobs initiated by
+Dataform workflows to run queries as interactive jobs that start
+running as quickly as possible or as batch jobs with lower priority. For more
+information, see
+<a href="https://cloud.google.com/bigquery/docs/schedule-pipelines#create-schedule">Create a pipeline schedule</a>
+and
+<a href="https://cloud.google.com/dataform/reference/rest/v1/InvocationConfig">InvocationConfig</a>.
+This feature is
+<a href="https://cloud.google.com/products#product-launch-stages">generally available</a>
+(GA).</p>]]></content>
+    <summary>You can now set the priority of BigQuery jobs initiated by Dataform workflows to run queries as interactive jobs that start running as quickly as possible or as batch jobs with lower priority.</summary>
+    <title>Feature: Set BigQuery job priority for Dataform workflows</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-10-06:announcement:4</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Starting March 17, 2026, the BigQuery Data Transfer Service will require the
+<code>bigquery.datasets.setIamPolicy</code> and the <code>bigquery.datasets.getIamPolicy</code>
+permissions on the target dataset to create or update a transfer configuration.
+For more information, see <a href="https://cloud.google.com/bigquery/docs/dataset-access-control">Changes to dataset-level access controls</a>.</p>]]></content>
+    <summary>The BigQuery Data Transfer Service will require updated IAM permissions for transfers starting March 17, 2026. Ensure your configurations are updated accordingly. For more details, see the official documentation.</summary>
+    <title>Announcement: BigQuery IAM Update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

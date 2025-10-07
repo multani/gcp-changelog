@@ -90,6 +90,29 @@ This release contains internal and customer bug fixes.
 [Release 6.3.63](https://cloud.google.com/chronicle/docs/soar/release-notes#September_28_2025) is now available for all regions.
 
 ---
+## 2025-10-03
+
+### Changed
+
+**Customer-managed encryption key compliance now includes support for data tables**
+
+Google SecOps has expanded its coverage of Customer-Managed Encryption Key
+(CMEK) compliance to now include support for data tables.
+
+For more information, see
+[CMEK for Google SecOps](https://cloud.google.com/chronicle/docs/secops/cmek_for_secops).
+
+### Changed
+
+**Customer-managed encryption key compliance now includes support for data tables**
+
+Google SecOps has expanded its coverage of Customer-Managed Encryption Key
+(CMEK) compliance to now include support for data tables.
+
+For more information, see
+[CMEK for Google SecOps](https://cloud.google.com/chronicle/docs/secops/cmek_for_secops).
+
+---
 ## 2025-09-28
 
 ### Announcement

@@ -1,5 +1,15 @@
 # AlloyDB for PostgreSQL
 
+## 2025-10-06
+
+### Feature
+
+AlloyDB supports the `tds_fdw` extension, which provides a foreign data wrapper
+for accessing databases—such as Microsoft SQL Server and Sybase—that
+use the Tabular Data Stream (TDS) protocol. For more information, see [Supported database extensions](https://cloud.google.com/alloydb/docs/reference/extensions). This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+---
 ## 2025-09-30
 
 ### Feature

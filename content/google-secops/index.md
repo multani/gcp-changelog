@@ -40,6 +40,19 @@ New parser documentation is available to help you ingest and normalize logs from
 * [Collect Tines audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tines)
 
 ---
+## 2025-10-03
+
+### Changed
+
+**Customer-managed encryption key compliance now includes support for data tables**
+
+Google SecOps has expanded its coverage of Customer-Managed Encryption Key
+(CMEK) compliance to now include support for data tables.
+
+For more information, see
+[CMEK for Google SecOps](https://cloud.google.com/chronicle/docs/secops/cmek_for_secops).
+
+---
 ## 2025-09-28
 
 ### Announcement

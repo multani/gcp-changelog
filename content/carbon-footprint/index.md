@@ -1,5 +1,19 @@
 # Carbon Footprint
 
+## 2025-10-01
+
+### Feature
+
+Cloud Carbon Footprint launched an improved data export experience in the Cloud Carbon console, now available in Experimental Preview.
+
+When you click **Data export** on the Cloud Carbon console Ul for a given billing account, you can now see Carbon Footprint exports that you have access to for that billing account, in addition to the ability to create a new data export. This feature helps you better manage your Carbon Footprint exports in BigQuery. [Read more](https://cloud.google.com/carbon-footprint/docs/export#manage) for details.
+
+In some cases, the list of exports may not be complete for the following reasons:
+
+* **Permissions**: The export was configured in a project that you don't have permission to view.
+* **Performance Optimization**: To optimize performance and prevent latency when you have access to a very large number of projects, the search may not display exports in all projects.
+
+---
 ## 2025-09-12
 
 ### Fixed

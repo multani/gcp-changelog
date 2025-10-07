@@ -1,5 +1,141 @@
 # Looker
 
+## 2025-10-06
+
+### Announcement
+
+**Looker 25.18** is expected to include the following changes, features, and fixes:
+
+* Expected Looker (original) deployment start: **Tuesday, October 7, 2025**
+* Expected Looker (original) final deployment and download available: **Thursday, October 16, 2025**
+* Expected Looker (Google Cloud core) deployment start: **Tuesday, October 7, 2025**
+* Expected Looker (Google Cloud core) final deployment: **Monday, October 20, 2025**
+
+### Feature
+
+You can now set the Auto Resize Value setting on single value visualizations. This setting has no effect if the Smart Single Value Text Size setting is enabled on the Admin > General Settings page.
+
+### Feature
+
+The Athena JDBC driver version has been upgraded from 2.1.5 to 2.2.2. The Athena JDBC driver is used for connections to [Amazon Athena](https://cloud.google.com/looker/docs/db-config-amazon-athena).
+
+### Feature
+
+Looker admins can no longer create or edit individual users' API keys. Instead, from the Admin > Users page, admins can enable users to manage their own API keys. Once a user has API key management enabled, they can create, view, edit, and delete their API keys from their Looker account page.
+
+### Fixed
+
+Looker 25.18 contains the following accessibility improvements:
+
+* You can navigate drill menus by using a keyboard.
+* When you select a button toggle with a keyboard, the focus ring uses more contrasting colors.
+* You can switch button toggles on or off by using the Enter key.
+* When you use a keyboard to select a Look, dashboard, or folder that's inside a folder, a focus ring will appear around the selected item.
+* You can now use a keyboard to edit boards.
+* You can now use the keyboard to access LookML field definitions in the field picker.
+* The Alerts dialog is now compatible with screen readers.
+* The Series tab of the visualization editor is now compatible with screen readers.
+* Tile notes are now added to ARIA descriptions.
+* Actions for pivot columns are now accessible with a keyboard.
+* The color contrast has been improved on large text boxes such as the custom filter editor.
+* The options in the visualization settings panel now have names that can be read by screen readers.
+* The state of expanded dialogs on the Explore page, such as the field picker and visualization settings panel, can now be read by screen readers.
+
+### Fixed
+
+An issue has been fixed where, when dashboard filters were updated, column widths could resize on table visualizations that included pivoted values. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where non-string values that were entered in the expression element of the `dynamic_fields` section of a LookML dashboard could cause the LookML validator to crash. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where subtotal values could display incorrect values after a filter was added or updated. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where, when dashboard filters were updated, table visualizations could get incorrectly cropped to exclude the Total row and scroll bar. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the Collapse Subtotal toggle wasn't collapsing subtotals on table visualizations. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the maximum column limit warning could obscure the contents of a visualization. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where users couldn't sort tables that included pivoted values. This feature now performs as expected.
+
+### Fixed
+
+LookML dashboards that aren't deployed to production can no longer be moved into folders other than the LookML Dashboards folder.
+
+### Fixed
+
+LookML project parse errors now include the LookML file path as well as the line number of the error.
+
+### Fixed
+
+An issue has been fixed where Databricks connections that used OAuth could not be saved if the password field was blank. You can now use OAuth without entering a password on the connections page.
+
+### Fixed
+
+An issue has been fixed where users were sometimes unable to add line breaks to table calculations. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where certain countries would not be displayed when a custom TopoJSON file was used. The following country names are now supported:
+
+* Czechia for Czech Republic
+* Eswatini for Swaziland
+* Brunei Darussalam for Brunei
+* North Macedonia for Macedonia
+* Timor-Leste for East Timor
+
+### Feature
+
+The Prerender iframes for custom visualizations feature is now out of Labs and generally available on the Admin > Content Guardrails page.
+
+### Feature
+
+The Smart single value text size feature is now out of Labs and generally available on the Admin > General Settings page.
+
+### Feature
+
+The API endpoint `search_lookml_dashboards` is now out of Labs and generally available. This endpoint is similar to the `search_dashboards` endpoint except that it searches LookML dashboards instead of user-defined dashboards.
+
+### Feature
+
+The Data History Playback Labs feature is is now out of Labs and generally available on the Admin > Settings page.
+
+### Feature
+
+The Reduce Filter Queries Labs feature is now is now out of Labs and generally available on the Admin > Settings page.
+
+### Feature
+
+The Prerender iframes for custom visualizations feature is now generally available on the Admin > Content Guardrails page.
+
+### Feature
+
+The Smart single value text size feature is now generally available on the Admin > General Settings page.
+
+### Feature
+
+The API endpoint `search_lookml_dashboards` is now generally available. This endpoint is similar to the `search_dashboards` endpoint except that it searches LookML dashboards instead of user-defined dashboards.
+
+### Feature
+
+The Data History Playback feature is now generally available on the Admin > Settings page.
+
+### Feature
+
+The Reduce Filter Queries feature is now generally available on the Admin > Settings page
+
+---
 ## 2025-10-02
 
 ### Feature

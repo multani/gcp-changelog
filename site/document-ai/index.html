@@ -2016,20 +2016,29 @@
 
 
 <h1 id="document-ai">Document AI</h1>
-<h2 id="2025-09-26">2025-09-26</h2>
+<h2 id="2025-10-06">2025-10-06</h2>
 <h3 id="feature">Feature</h3>
-<p><a href="https://cloud.google.com/document-ai/docs/ce-with-genai">custom extractor</a> model
+<p><a href="https://cloud.google.com/document-ai/docs/ce-with-genai">Custom extractor</a> model
 <code>pretrained-foundation-model-v1.5.1-2025-08-07</code> with improved adaptive few-shot
 learning is available as Release Candidate
 (<a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>).</p>
+<hr />
+<h2 id="2025-09-26">2025-09-26</h2>
+<h3 id="announcement">Announcement</h3>
+<p>Capacity reservation is available for Document AI in
+<a href="https://cloud.google.com/products/#product-launch-stages">preview</a>. This lets you
+grant capacity to selected processors and maintain a steady real-time, high-volume
+processing flow for document processing requests.</p>
+<p>For the necessary steps, read <a href="https://cloud.google.com/document-ai/quotas#capacity-reservation">make a capacity reservation
+request</a>.</p>
 <hr />
 <h2 id="2025-09-23">2025-09-23</h2>
 <h3 id="feature_1">Feature</h3>
 <p><a href="https://cloud.google.com/document-ai/docs/custom-classifier">Custom classifier</a>
 model <a href="https://cloud.google.com/document-ai/docs/custom-classifier#models"><code>pretrained-classifier-v1.5-2025-08-05</code></a>
-powered by Gemini 2.5 Flash is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>. It has ML
-processing available for US and EU regions and 30-page-per-minute processing
-requests.</p>
+powered by Gemini 2.5 Flash is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>. It has ML processing available for US and EU regions, a
+maximum page limit of <a href="https://cloud.google.com/document-ai/limits#classification_processors">30</a> pages,
+and processing requests of <a href="https://cloud.google.com/document-ai/quotas#service_tiers">120</a> pages per minute.</p>
 <p>Unlike the prior custom classifier, which used classical
 machine learning, this version features a new platform. It accommodates:</p>
 <ul>
@@ -2048,21 +2057,21 @@ versions</a>.</p>
 <p>Custom Extractor version <a href="https://cloud.google.com/document-ai/docs/processors-list#processor_cde"><code>pretrained-foundation-model-v1.4-2025-02-05</code></a> will no longer be accessible on <strong>February 5, 2026</strong>.</p>
 <p>To avoid service disruptions, migrate to a later version such as
 <code>pretrained-foundation-model-v1.5-2025-05-05</code> or <code>pretrained-foundation-model-v1.5-pro-2025-06-20</code>.
-To learn more about the migration process, refer to <a href="https://cloud.google.com/document-ai/docs/manage-processor-versions">Manage processor
-versions</a>.</p>
+To learn more about the migration process, refer to our <a href="https://cloud.google.com/document-ai/docs/manage-processor-versions">Manage processor
+versions</a> documentation.</p>
 <hr />
 <h2 id="2025-09-09">2025-09-09</h2>
-<h3 id="announcement">Announcement</h3>
+<h3 id="announcement_1">Announcement</h3>
 <p>Document AI supports <a href="https://cloud.google.com/document-ai/quotas#service_tiers">two service tiers</a>
 and associated quotas: provisioned and best effort tiers.</p>
-<p>The base is the provisioned tier quota, which provides 120 pages per minute for
+<p>The base is <strong>provisioned tier</strong> quota, which provides 120 pages per minute for
 Gemini 2.0 and 2.5 Flash LLM and 30 pages per minute for Gemini
 2.5 Pro LLM.</p>
-<p>If you require more volume, best effort tier quota provides 120 pages per
+<p>If you require more volume, <strong>best effort tier</strong> quota provides 120 pages per
 minute for Gemini 2.0 2.5 Flash and 60 pages per minute for
-Gemini 2.5 Pro. It's only used when the provisioned quota has been
-exhausted. This applies to quotas <code>BestEffortOnlineProcessDocumentPagesPerMinutePerProjectUS</code>
-and <code>EU</code>, as well as <code>best_effort_online_process_document_pages_us</code> and <code>eu</code> in the console.</p>
+Gemini 2.5 Pro, and is only used once the provisioned quota has been
+exhausted. This applies to quotas <code>BestEffortOnlineProcessDocumentPagesPerMinutePerProjectUS</code>,
+and <code>EU</code>, and <code>best_effort_online_process_document_pages_us</code> and <code>eu</code> in the console.</p>
 <p>Best effort can get up to 240 pages per minute for <a href="https://cloud.google.com/document-ai/docs/ce-with-genai">custom data extractor
 models</a>
 v1.4 and v1.5 with a quota increase request (QIR). You can make a QIR by
@@ -2138,6 +2147,9 @@ attributes</a>.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#document-ai">Document AI</a></li>
+          <li class="nav-item">
+            <a href="#2025-10-06" class="nav-link">2025-10-06</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-09-26" class="nav-link">2025-09-26</a>
           </li>

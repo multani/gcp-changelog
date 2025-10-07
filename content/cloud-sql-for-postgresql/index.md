@@ -1,5 +1,12 @@
 # Cloud SQL for PostgreSQL
 
+## 2025-10-06
+
+### Feature
+
+You can now assess the upgrade readiness of your Cloud SQL for PostgreSQL instances before a major version upgrade by running a precheck. This precheck either confirms your instance can be upgraded, or lists issues and their solutions that need to be fixed prior to upgrading. For more information, see [Assess upgrade readiness for your instance](https://cloud.google.com/sql/docs/postgres/upgrade-major-db-version-inplace#precheck).
+
+---
 ## 2025-10-03
 
 ### Feature

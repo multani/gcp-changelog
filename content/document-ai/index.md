@@ -1,13 +1,26 @@
 # Document AI
 
-## 2025-09-26
+## 2025-10-06
 
 ### Feature
 
-[custom extractor](https://cloud.google.com/document-ai/docs/ce-with-genai) model
+[Custom extractor](https://cloud.google.com/document-ai/docs/ce-with-genai) model
 `pretrained-foundation-model-v1.5.1-2025-08-07` with improved adaptive few-shot
 learning is available as Release Candidate
 ([Preview](https://cloud.google.com/products/#product-launch-stages)).
+
+---
+## 2025-09-26
+
+### Announcement
+
+Capacity reservation is available for Document AI in
+[preview](https://cloud.google.com/products/#product-launch-stages). This lets you
+grant capacity to selected processors and maintain a steady real-time, high-volume
+processing flow for document processing requests.
+
+For the necessary steps, read [make a capacity reservation
+request](https://cloud.google.com/document-ai/quotas#capacity-reservation).
 
 ---
 ## 2025-09-23
@@ -16,9 +29,9 @@ learning is available as Release Candidate
 
 [Custom classifier](https://cloud.google.com/document-ai/docs/custom-classifier)
 model [`pretrained-classifier-v1.5-2025-08-05`](https://cloud.google.com/document-ai/docs/custom-classifier#models)
-powered by Gemini 2.5 Flash is in [Preview](https://cloud.google.com/products/#product-launch-stages). It has ML
-processing available for US and EU regions and 30-page-per-minute processing
-requests.
+powered by Gemini 2.5 Flash is in [Preview](https://cloud.google.com/products/#product-launch-stages). It has ML processing available for US and EU regions, a
+maximum page limit of [30](https://cloud.google.com/document-ai/limits#classification_processors) pages,
+and processing requests of [120](https://cloud.google.com/document-ai/quotas#service_tiers) pages per minute.
 
 Unlike the prior custom classifier, which used classical
 machine learning, this version features a new platform. It accommodates:
@@ -42,8 +55,8 @@ Custom Extractor version [`pretrained-foundation-model-v1.4-2025-02-05`](https:/
 
 To avoid service disruptions, migrate to a later version such as
 `pretrained-foundation-model-v1.5-2025-05-05` or `pretrained-foundation-model-v1.5-pro-2025-06-20`.
-To learn more about the migration process, refer to [Manage processor
-versions](https://cloud.google.com/document-ai/docs/manage-processor-versions).
+To learn more about the migration process, refer to our [Manage processor
+versions](https://cloud.google.com/document-ai/docs/manage-processor-versions) documentation.
 
 ---
 ## 2025-09-09
@@ -53,15 +66,15 @@ versions](https://cloud.google.com/document-ai/docs/manage-processor-versions).
 Document AI supports [two service tiers](https://cloud.google.com/document-ai/quotas#service_tiers)
 and associated quotas: provisioned and best effort tiers.
 
-The base is the provisioned tier quota, which provides 120 pages per minute for
+The base is **provisioned tier** quota, which provides 120 pages per minute for
 Gemini 2.0 and 2.5 Flash LLM and 30 pages per minute for Gemini
 2.5 Pro LLM.
 
-If you require more volume, best effort tier quota provides 120 pages per
+If you require more volume, **best effort tier** quota provides 120 pages per
 minute for Gemini 2.0 2.5 Flash and 60 pages per minute for
-Gemini 2.5 Pro. It's only used when the provisioned quota has been
-exhausted. This applies to quotas `BestEffortOnlineProcessDocumentPagesPerMinutePerProjectUS`
-and `EU`, as well as `best_effort_online_process_document_pages_us` and `eu` in the console.
+Gemini 2.5 Pro, and is only used once the provisioned quota has been
+exhausted. This applies to quotas `BestEffortOnlineProcessDocumentPagesPerMinutePerProjectUS`,
+and `EU`, and `best_effort_online_process_document_pages_us` and `eu` in the console.
 
 Best effort can get up to 240 pages per minute for [custom data extractor
 models](https://cloud.google.com/document-ai/docs/ce-with-genai)

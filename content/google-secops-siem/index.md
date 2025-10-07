@@ -1,5 +1,20 @@
 # Google SecOps SIEM
 
+## 2025-10-06
+
+### Feature
+
+**Advanced BigQuery Export**
+
+This feature is in preview.
+
+This feature is available for Google SecOps Enterprise Plus customers only.
+
+Advanced BigQuery Export automatically provisions and manages essential Google SecOps datasets in a secure, Google-managed BigQuery project. You gain secure, read-only access to this data through a BigQuery linked dataset, which appears directly in your own Google Cloud project. This functionality lets you query your security data as if it were stored locally, but without the overhead of managing the data pipeline or storage.
+
+For details, see [Use Advanced BigQuery Export](https://cloud.google.com/chronicle/docs/reports/bigquery-export).
+
+---
 ## 2025-10-05
 
 ### Announcement

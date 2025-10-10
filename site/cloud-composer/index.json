@@ -1,15 +1,17 @@
 {
   "name": "Cloud Composer",
   "entries": {
-    "2025-09-30": [
+    "2025-10-09": [
       {
-        "kind": "Announcement",
-        "content": "A new Cloud Composer release has started on **September 30, 2025**. Get ready\nfor upcoming changes and features as we roll out the new release to all regions.\nThis release is in progress at the moment. Listed changes and features might\nnot be available in some regions yet.",
+        "kind": "Feature",
+        "content": "[Upgrade checks](https://cloud.google.com/composer/docs/composer-3/upgrade-environments#upgrade-check)\nare now generally available (GA) in Cloud Composer 3 and Cloud Composer 2.",
         "summary": {
-          "title": "Cloud Composer Release",
-          "summary": "A new release of Cloud Composer started on September 30, 2025, bringing upcoming changes and features. The rollout is currently in progress across all regions, though some features may not be available in all locations yet."
+          "title": "Upgrade Checks Now GA",
+          "summary": "Upgrade checks are now generally available for Cloud Composer 3 and 2."
         }
-      },
+      }
+    ],
+    "2025-09-30": [
       {
         "kind": "Fixed",
         "content": "The `GCE_METADATA_TIMEOUT` environment variable is changed to reserved. This\nchange addresses an issue where setting a low timeout value disrupted the\nenvironment's operations that relied on the metadata server.",
@@ -77,14 +79,6 @@
     ],
     "2025-09-11": [
       {
-        "kind": "Fixed",
-        "content": "Fixed Airflow logs not exporting to Cloud Logging because of a GKE version\nmismatch between Airflow worker and GKE Control plane nodes.",
-        "summary": {
-          "title": "Airflow logs export fixed",
-          "summary": "The issue preventing Airflow logs from exporting to Cloud Logging has been resolved. This was caused by a GKE version mismatch between Airflow worker and GKE Control plane nodes."
-        }
-      },
-      {
         "kind": "Changed",
         "content": "New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Cloud Composer 3:\n\n* [composer-3-airflow-2.10.5-build.14](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-14) (default)\n* [composer-3-airflow-2.9.3-build.34](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-34)",
         "summary": {
@@ -106,6 +100,14 @@
         "summary": {
           "title": "Configuration options evaluation fixed",
           "summary": "An issue where Airflow configuration option values were evaluated before being set has been resolved. The configuration options will now be set to their correct values."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed Airflow logs not exporting to Cloud Logging because of a GKE version\nmismatch between Airflow worker and GKE Control plane nodes.",
+        "summary": {
+          "title": "Airflow logs export fixed",
+          "summary": "The issue preventing Airflow logs from exporting to Cloud Logging has been resolved. This was caused by a GKE version mismatch between Airflow worker and GKE Control plane nodes."
         }
       }
     ],

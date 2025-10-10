@@ -1,5 +1,23 @@
 # Google Cloud Architecture Center
 
+## 2025-10-08
+
+### Feature
+
+(New guide) [Choose a design pattern for your agentic AI system](https://cloud.google.com/architecture/choose-design-pattern-agentic-ai-system): Learn how to select an agent design pattern to build your agentic AI system.
+
+---
+## 2025-09-22
+
+### Changed
+
+[Design storage for AI and ML workloads in Google Cloud](https://cloud.google.com/architecture/ai-ml/storage-for-ai-ml): Updated storage recommendations for training and serving workflows. Revised the scaling capacity and performance tiers for Managed Lustre.
+
+### Changed
+
+[Design an optimal storage strategy for your cloud workload](https://cloud.google.com/architecture/storage-advisor): Revised the scaling capacity and performance tiers for Managed Lustre.
+
+---
 ## 2025-09-17
 
 ### Feature

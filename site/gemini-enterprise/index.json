@@ -1,0 +1,89 @@
+{
+  "name": "Gemini Enterprise",
+  "entries": {
+    "2025-10-02": [
+      {
+        "kind": "Feature",
+        "content": "**Google Agentspace: Configure prompt chips**\n\nYou can create, delete, edit, and enable or disable Google-provided and custom prompts that provide better guidance to your users.\n\nFor more information, see [Configure prompt chips](https://cloud.google.com/agentspace/docs/configure-prompt-chips).",
+        "summary": {
+          "title": "Prompt Chips Configuration",
+          "summary": "New feature allows configuring prompt chips for better user guidance."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Google Agentspace: Generate images using Nano Banana (GA)**\n\nImage generation and editing with Nano Banana (Gemini 2.5 Flash Image) is generally available (GA) in Google Agentspace across Global, EU, and US multi-regions.\n\nFor more information on generating images, see [Generate an image](https://cloud.google.com/agentspace/docs/assistant-analyze#generate_an_image).",
+        "summary": {
+          "title": "Nano Banana Image Generation Now Available",
+          "summary": "Image generation and editing with Nano Banana is now generally available in Google Agentspace. You can use this feature across Global, EU, and US multi-regions."
+        }
+      }
+    ],
+    "2025-09-26": [
+      {
+        "kind": "Feature",
+        "content": "**Google Agentspace: Manage image and video generation on the web app**\n\nBy default, image and video generation are enabled in the Agentspace web app. To turn off these features, admins must navigate to the **Configurations > Feature Management** tab, and turn off the **Enable video generation** and **Enable image generation** options.",
+        "summary": {
+          "title": "Image and Video Generation Now Available in Agentspace",
+          "summary": "Admins can now manage image and video generation features directly within the Agentspace web app via the Configurations > Feature Management tab. By default, these features are enabled."
+        }
+      }
+    ],
+    "2025-09-24": [
+      {
+        "kind": "Feature",
+        "content": "**Google Agentspace: Knowledge base filter for catalog entities in ServiceNow connectors (GA)**\n\nIn your ServiceNow connectors, you can filter your knowledge base entities by catalog IDs. This lets you selectively ingest only those catalog entities whose `catalogSysId` matches the filter.\nIf no values are specified, then the connector ingests all catalog entities. This feature is Generally available (GA).\n\nFor information about ServiceNow connectors, see [Connect ServiceNow](https://cloud.google.com/agentspace/docs/connect-servicenow).",
+        "summary": {
+          "title": "ServiceNow Knowledge Base Filter",
+          "summary": "Filter your ServiceNow knowledge base entities by catalog ID to selectively ingest data. If no catalog IDs are specified, all entities will be ingested. This feature is now Generally Available."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Google Agentspace: Interface updates**\n\n* File uploads can be canceled at any time.\n* The Star and Share buttons now appear after a user has initiated a session by submitting a prompt.",
+        "summary": {
+          "title": "File uploads can be canceled",
+          "summary": "Users can now cancel file uploads at any time. Star and Share buttons are visible after submitting a prompt."
+        }
+      }
+    ],
+    "2025-09-23": [
+      {
+        "kind": "Breaking",
+        "content": "**Google Agentspace: Change in ACLs for incidents in ServiceNow**\n\nThe access-control list (ACL) behavior for ServiceNow incidents has significantly changed, from too permissive to least-privilege behavior. This change drastically reduces the possibility of data leaks, but might be too restrictive for your needs.\n\nFor more information about ServiceNow, see [Connect ServiceNow](https://cloud.google.com/agentspace/docs/connect-servicenow) and [Add ServiceNow actions](https://cloud.google.com/agentspace/docs/assistant-actions-servicenow).",
+        "summary": {
+          "title": "ServiceNow Incidents: New ACL Policy",
+          "summary": "A new, more restrictive ACL policy is now in effect for ServiceNow incidents, enhancing data security by adopting a least-privilege approach. This change aims to minimize data leak risks but may require adjustments to your existing configurations."
+        }
+      }
+    ],
+    "2025-09-15": [
+      {
+        "kind": "Feature",
+        "content": "**Google Agentspace and Google NotebookLM Enterprise: Model Armor**\n\nModel Armor helps proactively screen prompts and responses within Agentspace apps and NotebookLM Enterprise instances. For more information on how administrators can enable this feature, see:\n\n* [Enable Model Armor in Google Agentspace](https://cloud.google.com/agentspace/docs/enable-model-armor)\n* [Enable Model Armor in NotebookLM Enterprise](https://cloud.google.com/agentspace/notebooklm-enterprise/docs/enable-model-armor)",
+        "summary": {
+          "title": "Model Armor",
+          "summary": "Introducing Model Armor, a new feature to help proactively screen prompts and responses."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Google Agentspace: Real-time sync (Public preview)**\n\nReal-time sync uses webhooks to receive notifications when data is created, updated, and deleted in a third-party data source. Notifications typically arrive within minutes of the event. The following data stores support real-time sync:\n\n* [Jira Cloud](https://cloud.google.com/agentspace/agentspace-enterprise/docs/connect-jira-cloud#enable_real-time_sync)\n* [Confluence Cloud](https://cloud.google.com/agentspace/agentspace-enterprise/docs/connect-confluence-cloud#enable_real-time_sync)\n* [Microsoft OneDrive](https://cloud.google.com/agentspace/agentspace-enterprise/docs/connect-onedrive#real-time-sync)\n* [Microsoft SharePoint Online](https://cloud.google.com/agentspace/agentspace-enterprise/docs/connect-sharepoint-online#real-time-sync)\n* [ServiceNow](https://cloud.google.com/agentspace/agentspace-enterprise/docs/connect-servicenow#real-time-sync)\n\nSupport for real-time sync for these data stores is in Public preview.",
+        "summary": {
+          "title": "Real-time sync for Agentspace",
+          "summary": "New feature for Agentspace allows real-time data synchronization with popular tools like Jira, Confluence, OneDrive, SharePoint, and ServiceNow. Receive instant notifications for data changes."
+        }
+      }
+    ],
+    "2025-09-11": [
+      {
+        "kind": "Changed",
+        "content": "**Google Agentspace: Interface updates**\n\n* The LLM model selector has moved from the search bar to directly below the product logo in the top-left corner.\n* The web grounding tool and source has been renamed *Google Search* and *Enterprise web search,* depending on the type of web grounding configured.\n* The *Sources* button in the search bar has been renamed *Data.*\n* The *Data* menu (formerly *Sources*) now shows which sources are selected.",
+        "summary": {
+          "title": "Interface Updates",
+          "summary": "The LLM model selector is now below the product logo. Web grounding tools and sources have been renamed. The Sources button is now called Data and the Data menu shows selected sources."
+        }
+      }
+    ]
+  }
+}

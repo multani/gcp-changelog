@@ -1,5 +1,24 @@
 # SAP on Google Cloud
 
+## 2025-10-08
+
+### Announcement
+
+**BigQuery Connector for SAP version 2.10**
+
+Version 2.10 of the BigQuery Connector for SAP is generally available (GA). This version resolves the non-ASCII character handling issue in CDC replication through Pub/Sub and enhances server-side error handling.
+
+For more information, see [What's new with BigQuery Connector for SAP](https://cloud.google.com/sap/docs/bq-connector/whats-new#version-2-10).
+
+### Announcement
+
+**ABAP SDK for Google Cloud version 1.12 (On-premises or any cloud edition)**
+
+Version 1.12 of the on-premises or any cloud edition of the ABAP SDK for Google Cloud is generally available (GA). This version lets you integrate Gemma models into your ABAP applications. In addition, the SDK improves your interaction with Gemini models by letting you control the randomness of the model's output and gain insight into the model's reasoning.
+
+For more information, see [What's new with the on-premises or any cloud edition of the ABAP SDK for Google Cloud](https://cloud.google.com/sap/docs/abap-sdk/on-premises-or-any-cloud/whats-new#version-1-12).
+
+---
 ## 2025-10-03
 
 ### Announcement

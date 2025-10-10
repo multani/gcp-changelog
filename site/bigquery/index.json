@@ -1,23 +1,77 @@
 {
   "name": "BigQuery",
   "entries": {
+    "2025-10-09": [
+      {
+        "kind": "Feature",
+        "content": "You can [allocate idle slots fairly](https://cloud.google.com/bigquery/docs/slots#fairness) across\nreservations within a single admin project. This ensures each reservation\nreceives an approximately equal share of available capacity. This feature is now\n[generally available](https://cloud.google.com/products#product-launch-stages)\n(GA).",
+        "summary": {
+          "title": "Fair sharing of idle slots across reservations",
+          "summary": "Idle slots can now be allocated fairly across reservations within an admin project, ensuring each reservation gets an equal share of available capacity. This feature is now generally available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can set a [maximum slot\nlimit](https://cloud.google.com/bigquery/docs/reservations-workload-management#predictable) for a\nreservation. You can configure the maximum reservation size when creating or\nupdating a reservation. This feature is now [generally\navailable](https://cloud.google.com/products#product-launch-stages) (GA).",
+        "summary": {
+          "title": "Maximum Slot Limit for Reservations Now Available",
+          "summary": "You can now configure a maximum slot limit for your reservations, allowing for better workload management. This feature is now generally available for both creation and updates."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "[Security, privacy, and compliance for Gemini in\nBigQuery](https://cloud.google.com/gemini/docs/bigquery/security-privacy-compliance) details how\ncustomer data is protected and processed by Gemini in BigQuery.",
+        "summary": {
+          "title": "Security for Gemini in BigQuery",
+          "summary": "Learn how customer data is protected and processed by Gemini in BigQuery."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "An updated version of the [ODBC driver for BigQuery](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers#odbc_release_3151022) is now available.",
+        "summary": {
+          "title": "ODBC driver updated",
+          "summary": "The latest version of the ODBC driver for BigQuery has been released."
+        }
+      }
+    ],
+    "2025-10-08": [
+      {
+        "kind": "Breaking",
+        "content": "The [default limit of `QueryUsagePerDay`](https://cloud.google.com/bigquery/quotas#query_jobs) for\non-demand pricing has changed. The default limit of all new projects is now 200\nTiB. For existing projects, the default limit has been set based on your\nproject's usage over the last 30 days. Projects that have [custom cost\ncontrols](https://cloud.google.com/bigquery/docs/custom-quotas) configured or that use\n[reservations](https://cloud.google.com/bigquery/docs/reservations-workload-management) aren't affected.\nIf the new limit might affect your workload, create a [custom cost\ncontrol](https://cloud.google.com/bigquery/docs/custom-quotas) based on your workload needs.",
+        "summary": {
+          "title": "Daily Query Limit Increased",
+          "summary": "The default daily query limit for on-demand pricing has been raised to 200 TiB for new projects. Existing projects will have limits adjusted based on recent usage. This change does not affect projects with custom cost controls or reservations."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can set [labels](https://cloud.google.com/bigquery/docs/labels-intro) on reservations. These labels\ncan be used to organize your reservations and for billing analysis. This feature\nis [generally\navailable](https://cloud.google.com/products#product-launch-stages) (GA).",
+        "summary": {
+          "title": "Labels on reservations are now available",
+          "summary": "You can now add labels to your reservations for better organization and billing analysis. This feature is generally available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can [specify which reservation a query uses at\nruntime](https://cloud.google.com/bigquery/docs/reservations-workload-management#flexible), and [set IAM\npolicies directly on\nreservations](https://cloud.google.com/bigquery/docs/reservations-workload-management#securable). This\nprovides more flexibility and fine-grained control over resource management.\nThis feature is [generally\navailable](https://cloud.google.com/products#product-launch-stages) (GA).",
+        "summary": {
+          "title": "Control BigQuery Reservations",
+          "summary": "You can now specify which reservation a query uses at runtime and set IAM policies directly on reservations. This provides more flexibility and fine-grained control over resource management. This feature is generally available."
+        }
+      }
+    ],
+    "2025-10-07": [
+      {
+        "kind": "Announcement",
+        "content": "As of February 25, 2025, enhancements to the [workload management\nautoscaler](https://cloud.google.com/bigquery/docs/slots-autoscaling-intro) that were announced on [July\n31, 2024](https://cloud.google.com/bigquery/docs/release-notes#July_31_2024) have rolled out to all users.\nThese enhancements are [generally\navailable](https://cloud.google.com/products#product-launch-stages) (GA).",
+        "summary": {
+          "title": "Workload Management Autoscaler Enhancements Now GA",
+          "summary": "Enhancements to the workload management autoscaler, announced on July 31, 2024, are now generally available as of February 25, 2025."
+        }
+      }
+    ],
     "2025-10-06": [
-      {
-        "kind": "Feature",
-        "content": "The [`INFORMATION_SCHEMA.SHARED_DATASET_USAGE` view](https://cloud.google.com/bigquery/docs/information-schema-shared-dataset-usage#schema)\nnow includes the following schema fields to support usage metrics for\nexternal tables and routines:\n\n* `shared_resource_id`: the ID of the queried resource\n* `shared_resource_type`: the type of the queried resource\n* `referenced_tables`: Contains `project_id`,\n  `dataset_id`, `table_id`, and `processed_bytes`\n  fields of the base table.\n\nThese fields are\n[generally available](https://cloud.google.com/products#product-launch-stages) (GA).",
-        "summary": {
-          "title": "New Usage Metrics for External Tables and Routines",
-          "summary": "The INFORMATION_SCHEMA.SHARED_DATASET_USAGE view now includes new schema fields (shared_resource_id, shared_resource_type, referenced_tables) to support usage metrics for external tables and routines. These fields are now generally available."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "The BigQuery Data Transfer Service can now [transfer reporting data from Google Analytics 4](https://cloud.google.com/bigquery/docs/google-analytics-4-transfer)\ninto BigQuery. You can also include custom reports from\nGoogle Analytics 4 in your data transfer. This feature is\n[generally available](https://cloud.google.com/products#product-launch-stages) (GA).",
-        "summary": {
-          "title": "Google Analytics 4 data now available in BigQuery",
-          "summary": "You can now transfer your Google Analytics 4 reporting data into BigQuery using the BigQuery Data Transfer Service. This includes the ability to transfer custom reports. This feature is now generally available."
-        }
-      },
       {
         "kind": "Feature",
         "content": "The BigQuery Data Transfer Service can now transfer data from the\nfollowing data sources:\n\n* [PayPal](https://cloud.google.com/bigquery/docs/paypal-transfer)\n* [Stripe](https://cloud.google.com/bigquery/docs/stripe-transfer)\n\nTransfers from these data sources are supported in [preview](https://cloud.google.com/products/#product-launch-stages).",
@@ -32,6 +86,22 @@
         "summary": {
           "title": "Set BigQuery job priority for Dataform workflows",
           "summary": "You can now set the priority of BigQuery jobs initiated by Dataform workflows to run queries as interactive jobs that start running as quickly as possible or as batch jobs with lower priority."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [`INFORMATION_SCHEMA.SHARED_DATASET_USAGE` view](https://cloud.google.com/bigquery/docs/information-schema-shared-dataset-usage#schema)\nnow includes the following schema fields to support usage metrics for\nexternal tables and routines:\n\n* `shared_resource_id`: the ID of the queried resource\n* `shared_resource_type`: the type of the queried resource\n* `referenced_tables`: Contains `project_id`,\n  `dataset_id`, `table_id`, and `processed_bytes`\n  fields of the base table.\n\nThese fields are\n[generally available](https://cloud.google.com/products#product-launch-stages) (GA).",
+        "summary": {
+          "title": "New Usage Metrics for External Tables and Routines",
+          "summary": "The INFORMATION_SCHEMA.SHARED_DATASET_USAGE view now includes new schema fields (shared_resource_id, shared_resource_type, referenced_tables) to support usage metrics for external tables and routines. These fields are now generally available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The BigQuery Data Transfer Service can now [transfer reporting data from Google Analytics 4](https://cloud.google.com/bigquery/docs/google-analytics-4-transfer)\ninto BigQuery. You can also include custom reports from\nGoogle Analytics 4 in your data transfer. This feature is\n[generally available](https://cloud.google.com/products#product-launch-stages) (GA).",
+        "summary": {
+          "title": "Google Analytics 4 data now available in BigQuery",
+          "summary": "You can now transfer your Google Analytics 4 reporting data into BigQuery using the BigQuery Data Transfer Service. This includes the ability to transfer custom reports. This feature is now generally available."
         }
       },
       {

@@ -1,5 +1,35 @@
 # Compute Engine
 
+## 2025-10-06
+
+### Changed
+
+The Google Cloud optimized (`-optimized-gcp`) and accelerated
+(`optimized-gcp-nvidia-*`) versions of the Rocky Linux images now include the
+[CIQ SIG/Cloud Next repository](https://docs.ciq.com/rlc/ciq-sig-cloud-next/).
+This repository provides a cloud-optimized kernel. Additionally, the accelerated
+images now also include the [CIQ SIG/Cloud Next Nonfree
+repository](https://gitlab.com/ctrl-iq-public/sig-cloud-next/next-nonfree),
+which provides access to proprietary GPU drivers for the cloud-optimized kernel.
+
+This update is applied to images created on or after September 12, 2025.
+
+For more information about Rocky Linux OS images, see [Rocky
+Linux](https://cloud.google.com/compute/docs/images/os-details#rocky_linux) on
+the operating system details page.
+
+---
+## 2025-09-26
+
+### Feature
+
+Version `20250926.00` of the guest agent is now available. This guest agent
+version introduces the plugin-based architecture to Debian 12.
+
+For more information about the plugin-based architecture, see
+[Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).
+
+---
 ## 2025-09-22
 
 ### Feature
@@ -47,6 +77,33 @@ For more information, see [H4D machine series](https://cloud.google.com/compute/
 
 ---
 ## 2025-09-09
+
+### Feature
+
+Version `20250907.00` of the guest agent, which introduces the plugin-based
+architecture to Enterprise Linux 8 operating systems, is now available. For more
+information about the plugin-based architecture, see [Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).
+
+With this version, the plugin-based guest agent is now also available for the
+following operating systems:
+
+* Red Hat Enterprise Linux (RHEL) 8
+* Rocky Linux 8
+* CentOS Stream 8
+* Oracle Linux 8
+* AlmaLinux 8
+
+### Fixed
+
+Version `20250907.00` includes the following fixes for issues found in guest
+agent version `20250901.00`:
+
+* Corrects an issue in the OS Login module that was incorrectly handling
+  optional runtime systemd dependencies and causing an error log.
+* Fixes a bug that could cause the metadata SSH key module to enter an infinite
+  loop when setting up SSH keys. This occurred if an initial setup attempt failed
+  and the metadata server returned the SSH keys in a different order on a
+  subsequent retry.
 
 ### Changed
 

@@ -1,5 +1,43 @@
 # Security Command Center
 
+## 2025-10-10
+
+### Feature
+
+[Correlated Threats](https://cloud.google.com/security-command-center/docs/correlated-threats-overview) is available
+in [Preview](https://cloud.google.com/products#product-launch-stages). This
+feature combines related threat findings together by using the security graph,
+helping you to prioritize and respond to active threats.
+
+---
+## 2025-10-07
+
+### Changed
+
+Google Cloud console pages for all Security Command Center tiers have been enhanced.
+
+* The following changes were made to all service tiers—Standard, Premium,
+  and Enterprise:
+
+  + You can refresh findings in the **Finding query results** panel.
+  + The **JSON** tab on the detail pane of the **Findings** page displays the raw
+    findings JSON object, making it compatible with APIs.
+  + Autocompletion of a query in the **Findings** page query editor is improved.
+  + The **Findings > Quick filters** panel shows default
+    values if there is an error fetching results.
+  + The **Findings > Quick filters** panel shows separate
+    **State** and **Mute** filter sections.
+* The following changes were made to the Enterprise service tier:
+
+  + Added support for the **Vulnerabilities** page.
+  + Added support for security marks.
+  + Added support for the **Threats** dashboard on the **Risk overview** page.
+  + The finding detail panel on the **Issues** page is updated. Open the panel
+    using the **View details** button when viewing a toxic combination issue type.
+  + Additional query operators and query functions are available.
+  + The opt-out banner is no longer available.
+
+---
 ## 2025-09-27
 
 ### Feature

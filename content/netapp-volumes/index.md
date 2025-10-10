@@ -1,5 +1,12 @@
 # NetApp Volumes
 
+## 2025-10-01
+
+### Feature
+
+The manual QoS feature is now generally available for Google Cloud NetApp Volumes, supporting the Standard, Premium, and Extreme service levels. For more information, see [Manual QoS](https://cloud.google.com/netapp/volumes/docs/performance/optimize-performance#manual_qos).
+
+---
 ## 2025-09-26
 
 ### Feature

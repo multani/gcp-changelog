@@ -2,9 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Looker</title>
   <subtitle>Changelog for Google Cloud product: Looker</subtitle>
-  <updated>2025-10-06T00:00:00+00:00</updated>
+  <updated>2025-10-08T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:looker</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/looker/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-08:feature:0</id>
+    <published>2025-10-08T00:00:00+00:00</published>
+    <updated>2025-10-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Conversational Analytics in Looker</strong></p>
+<p>The following features are now available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a> for use with <a href="https://cloud.google.com/looker/docs/studio/conversational-analytics-looker">Conversational Analytics in Looker</a> instances that are running Looker 25.18 or later:</p>
+<ul>
+<li>New model-specific Looker permissions are available to manage and use the <a href="https://cloud.google.com/looker/docs/studio/conversational-data-agents-looker#before-you-begin">Conversational Analytics data agents</a> that are created to chat with Looker Explores. You can grant these permissions to users as part of a <a href="https://cloud.google.com/looker/docs/admin-panel-users-roles#create-custom-roles">custom role</a>, or use one of two new <a href="https://cloud.google.com/looker/docs/admin-panel-users-roles#default_roles">default roles</a>, <strong>Conversational Analytics Agent Manager</strong> and <strong>Conversational Analytics User</strong>, to manage and use agents, respectively.</li>
+<li>You can now select up to five Looker Explores as data sources for a data agent in Looker.</li>
+<li>You can now <a href="https://cloud.google.com/looker/docs/studio/conversational-data-agents-looker#share-data-agents">share data agents</a> to let other users chat with your agent and its Explores.</li>
+</ul>
+<p>(This release note was updated on October 9, 2025 to correct the Looker version for this release.)</p>]]></content>
+    <summary>New features are available for Conversational Analytics in Looker, including model-specific permissions for data agents, the ability to select up to five Looker Explores as data sources for a data agent, and the option to share data agents with other users.</summary>
+    <title>Feature: New features for Conversational Analytics in Looker</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -48,12 +66,12 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:3</id>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:changed:3</id>
     <published>2025-10-06T00:00:00+00:00</published>
     <updated>2025-10-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Looker admins can no longer create or edit individual users' API keys. Instead, from the Admin &gt; Users page, admins can enable users to manage their own API keys. Once a user has API key management enabled, they can create, view, edit, and delete their API keys from their Looker account page.</p>]]></content>
-    <summary>Admins can now enable users to manage their own API keys, simplifying the process and enhancing security.</summary>
-    <title>Feature: User API Key Management</title>
+    <content type="html"><![CDATA[<p>Conversational Analytics users with the <code>save_agents</code> permission can now <a href="https://cloud.google.com/looker/docs/studio/conversational-data-agents-looker">share data agents</a>, which lets other users chat with the data agent and its Explores. (This release note was added on October 9, 2025.)</p>]]></content>
+    <summary>Users with the necessary permissions can now share data agents, allowing others to interact with them and their associated Explores.</summary>
+    <title>Changed: Data agents can now be shared</title>
   </entry>
   <entry>
     <author>
@@ -227,61 +245,6 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:17</id>
     <published>2025-10-06T00:00:00+00:00</published>
     <updated>2025-10-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The Prerender iframes for custom visualizations feature is now out of Labs and generally available on the Admin &gt; Content Guardrails page.</p>]]></content>
-    <summary>Prerender iframes for custom visualizations are now generally available.</summary>
-    <title>Feature: Prerender iframes for custom visualizations</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:18</id>
-    <published>2025-10-06T00:00:00+00:00</published>
-    <updated>2025-10-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The Smart single value text size feature is now out of Labs and generally available on the Admin &gt; General Settings page.</p>]]></content>
-    <summary>The Smart single value text size feature is no longer in Labs and is now generally available. You can find this feature on the Admin &gt; General Settings page.</summary>
-    <title>Feature: Smart single value text size feature is now generally available</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:19</id>
-    <published>2025-10-06T00:00:00+00:00</published>
-    <updated>2025-10-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The API endpoint <code>search_lookml_dashboards</code> is now out of Labs and generally available. This endpoint is similar to the <code>search_dashboards</code> endpoint except that it searches LookML dashboards instead of user-defined dashboards.</p>]]></content>
-    <summary>The search_lookml_dashboards API endpoint is now generally available. This feature allows you to search LookML dashboards.</summary>
-    <title>Feature: LookML Dashboards Search API Now Generally Available</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:20</id>
-    <published>2025-10-06T00:00:00+00:00</published>
-    <updated>2025-10-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The Data History Playback Labs feature is is now out of Labs and generally available on the Admin &gt; Settings page.</p>]]></content>
-    <summary>The Data History Playback feature has been released from Labs and is now generally available. You can find it on the Admin &gt; Settings page.</summary>
-    <title>Feature: Data History Playback Now Generally Available</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:21</id>
-    <published>2025-10-06T00:00:00+00:00</published>
-    <updated>2025-10-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The Reduce Filter Queries Labs feature is now is now out of Labs and generally available on the Admin &gt; Settings page.</p>]]></content>
-    <summary>The Reduce Filter Queries feature has been released from Labs and is now generally available on the Admin &gt; Settings page.</summary>
-    <title>Feature: Reduce Filter Queries Now Generally Available</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:22</id>
-    <published>2025-10-06T00:00:00+00:00</published>
-    <updated>2025-10-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The Prerender iframes for custom visualizations feature is now generally available on the Admin &gt; Content Guardrails page.</p>]]></content>
     <summary>The Prerender iframes for custom visualizations feature is now generally available.</summary>
     <title>Feature: Prerender iframes for custom visualizations</title>
@@ -290,7 +253,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:23</id>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:18</id>
     <published>2025-10-06T00:00:00+00:00</published>
     <updated>2025-10-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The Smart single value text size feature is now generally available on the Admin &gt; General Settings page.</p>]]></content>
@@ -301,7 +264,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:24</id>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:19</id>
     <published>2025-10-06T00:00:00+00:00</published>
     <updated>2025-10-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The API endpoint <code>search_lookml_dashboards</code> is now generally available. This endpoint is similar to the <code>search_dashboards</code> endpoint except that it searches LookML dashboards instead of user-defined dashboards.</p>]]></content>
@@ -312,7 +275,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:25</id>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:20</id>
     <published>2025-10-06T00:00:00+00:00</published>
     <updated>2025-10-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The Data History Playback feature is now generally available on the Admin &gt; Settings page.</p>]]></content>
@@ -323,12 +286,78 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:26</id>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:21</id>
     <published>2025-10-06T00:00:00+00:00</published>
     <updated>2025-10-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The Reduce Filter Queries feature is now generally available on the Admin &gt; Settings page</p>]]></content>
     <summary>The Reduce Filter Queries feature is now available on the Admin &gt; Settings page.</summary>
     <title>Feature: Reduce Filter Queries</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:22</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Looker admins can no longer create or edit individual users' API keys. Instead, from the Admin &gt; Users page, admins can enable users to manage their own API keys. Once a user has API key management enabled, they can create, view, edit, and delete their API keys from their Looker account page. <strong>Note:</strong> This item was changed on October 9, 2025 to specify that it supports Looker (Google Cloud core) only.</p>]]></content>
+    <summary>Admins can now enable users to manage their own API keys, enhancing security and user control.</summary>
+    <title>Feature: User API Key Management</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:23</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Prerender iframes for custom visualizations feature is now out of Labs and generally available on the Admin &gt; Content Guardrails page.</p>]]></content>
+    <summary>Prerender iframes for custom visualizations are now generally available.</summary>
+    <title>Feature: Prerender iframes for custom visualizations</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:24</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Smart single value text size feature is now out of Labs and generally available on the Admin &gt; General Settings page.</p>]]></content>
+    <summary>The Smart single value text size feature is no longer in Labs and is now generally available. You can find this feature on the Admin &gt; General Settings page.</summary>
+    <title>Feature: Smart single value text size feature is now generally available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:25</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The API endpoint <code>search_lookml_dashboards</code> is now out of Labs and generally available. This endpoint is similar to the <code>search_dashboards</code> endpoint except that it searches LookML dashboards instead of user-defined dashboards.</p>]]></content>
+    <summary>The search_lookml_dashboards API endpoint is now generally available. This feature allows you to search LookML dashboards.</summary>
+    <title>Feature: LookML Dashboards Search API Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:26</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Data History Playback Labs feature is is now out of Labs and generally available on the Admin &gt; Settings page.</p>]]></content>
+    <summary>The Data History Playback feature has been released from Labs and is now generally available. You can find it on the Admin &gt; Settings page.</summary>
+    <title>Feature: Data History Playback Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:27</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Reduce Filter Queries Labs feature is now is now out of Labs and generally available on the Admin &gt; Settings page.</p>]]></content>
+    <summary>The Reduce Filter Queries feature has been released from Labs and is now generally available on the Admin &gt; Settings page.</summary>
+    <title>Feature: Reduce Filter Queries Now Generally Available</title>
   </entry>
   <entry>
     <author>
@@ -348,13 +377,14 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-09-30:feature:0</id>
     <published>2025-09-30T00:00:00+00:00</published>
     <updated>2025-09-30T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The following features are now available for use with Conversational Analytics:</p>
+    <content type="html"><![CDATA[<p>The following features are coming soon for use with Conversational Analytics:</p>
 <ul>
 <li>New model-specific Looker permissions are available to <a href="https://cloud.google.com/looker/docs/admin-panel-users-roles#gemini_ca_agent_manager">manage</a> and <a href="https://cloud.google.com/looker/docs/admin-panel-users-roles#gemini_ca_agent_user">use</a> the <a href="https://cloud.google.com/looker/docs/studio/conversational-data-agents-looker">Conversational Analytics data agents</a> that are created to chat with Looker Explores. You can grant these to users as part of a custom role, or use one of two new default roles, <a href="https://cloud.google.com/looker/docs/admin-panel-users-roles#conversational_analytics_agent_manager">Conversational Analytics Agent Manager</a> and <a href="https://cloud.google.com/looker/docs/admin-panel-users-roles#conversational_analytics_user">Conversational Analytics User</a>, to manage and use agents, respectively.</li>
 <li>You can now select up to five Looker Explores as data sources for a data agent.</li>
 <li>You can now <a href="https://cloud.google.com/looker/docs/studio/conversational-data-agents-looker#share-data-agents">share data agents</a> to let other users chat with your agent and its Explores.</li>
-</ul>]]></content>
-    <summary>New model-specific Looker permissions allow for managing and using Conversational Analytics data agents. You can now select up to five Looker Explores as data sources for a data agent and share these agents with other users.</summary>
+</ul>
+<p><strong>Note:</strong> This release note was published prematurely and amended on October 8, 2025 to reflect that these features are coming soon.</p>]]></content>
+    <summary>New model-specific Looker permissions are available to manage and use the Conversational Analytics data agents that are created to chat with Looker Explores. You can now select up to five Looker Explores as data sources for a data agent and share data agents to let other users chat with your agent and its Explores.</summary>
     <title>Feature: New features for Conversational Analytics</title>
   </entry>
   <entry>

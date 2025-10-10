@@ -1,5 +1,33 @@
 # Vertex AI Workbench
 
+## 2025-10-09
+
+### Feature
+
+**M134 release**
+
+The M134 release of Vertex AI Workbench instances includes the following:
+
+* Patched a regression with custom notebook metrics reporting (for example,
+  `jupyterlab_kernels` and `docker_status metrics`).
+* Updated the Dataproc JupyterLab plugin (`dataproc-jupyter-plugin`) to
+  version 0.1.92.
+* When using Google Cloud CLI commands, the `project` and `region` properties
+  are preset.
+
+---
+## 2025-10-01
+
+### Feature
+
+[Generally available (GA)](https://cloud.google.com/products/#product-launch-stages):
+You can use [Workforce Identity Federation](https://cloud.google.com/iam/docs/workforce-identity-federation)
+with Vertex AI Workbench instances. Workforce Identity Federation lets
+you create and manage Vertex AI Workbench instances with credentials
+provided by an external identity provider (IdP). For more information, see
+[Create an instance with third party credentials](https://cloud.google.com/vertex-ai/docs/workbench/instances/create-third-party-instance).
+
+---
 ## 2025-09-17
 
 ### Feature

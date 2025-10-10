@@ -27,6 +27,20 @@ A weekly digest of client library updates from across the [Cloud SDK](https://cl
 * Update dependency com.google.protobuf:protobuf-java-util to v4.32.1 ([#2551](https://github.com/googleapis/java-pubsub/issues/2551)) ([49722cb](https://github.com/googleapis/java-pubsub/commit/49722cb65e3b7cad01cf4389e1cf716a6ac1eb03))
 * Update googleapis/sdk-platform-java action to v2.62.2 ([#2559](https://github.com/googleapis/java-pubsub/issues/2559)) ([3f1d901](https://github.com/googleapis/java-pubsub/commit/3f1d90186899efe035179363408979a372e85a56))
 
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Go
+
+### Changes for [pubsub/apiv1](https://github.com/googleapis/google-cloud-go/tree/main/pubsub/apiv1)
+
+#### [2.1.0](https://github.com/googleapis/google-cloud-go/compare/pubsub/v2/v2.0.1...pubsub/v2/v2.1.0) (2025-09-25)
+
+##### Features
+
+* **pubsub/v2:** Add subscriber shutdown options ([#12829](https://github.com/googleapis/google-cloud-go/issues/12829)) ([14c3887](https://github.com/googleapis/google-cloud-go/commit/14c3887819c7bfdf3de661ec807fa82b6bb3183e))
+
 ---
 ## 2025-09-15
 

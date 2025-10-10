@@ -2,9 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Compute Engine</title>
   <subtitle>Changelog for Google Cloud product: Compute Engine</subtitle>
-  <updated>2025-09-22T00:00:00+00:00</updated>
+  <updated>2025-10-06T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:compute-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/compute-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2025-10-06:changed:0</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Google Cloud optimized (<code>-optimized-gcp</code>) and accelerated
+(<code>optimized-gcp-nvidia-*</code>) versions of the Rocky Linux images now include the
+<a href="https://docs.ciq.com/rlc/ciq-sig-cloud-next/">CIQ SIG/Cloud Next repository</a>.
+This repository provides a cloud-optimized kernel. Additionally, the accelerated
+images now also include the <a href="https://gitlab.com/ctrl-iq-public/sig-cloud-next/next-nonfree">CIQ SIG/Cloud Next Nonfree
+repository</a>,
+which provides access to proprietary GPU drivers for the cloud-optimized kernel.</p>
+<p>This update is applied to images created on or after September 12, 2025.</p>
+<p>For more information about Rocky Linux OS images, see <a href="https://cloud.google.com/compute/docs/images/os-details#rocky_linux">Rocky
+Linux</a> on
+the operating system details page.</p>]]></content>
+    <summary>Rocky Linux images for Google Cloud now include cloud-optimized kernels and proprietary GPU drivers for accelerated images. This update applies to images created after September 12, 2025.</summary>
+    <title>Changed: New Rocky Linux Images Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2025-09-26:feature:0</id>
+    <published>2025-09-26T00:00:00+00:00</published>
+    <updated>2025-09-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20250926.00</code> of the guest agent is now available. This guest agent
+version introduces the plugin-based architecture to Debian 12.</p>
+<p>For more information about the plugin-based architecture, see
+<a href="https://cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>]]></content>
+    <summary>A new version of the guest agent is now available, introducing a plugin-based architecture for Debian 12.</summary>
+    <title>Feature: New Guest Agent Version Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -73,7 +108,49 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:compute-engine:2025-09-09:changed:0</id>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2025-09-09:feature:0</id>
+    <published>2025-09-09T00:00:00+00:00</published>
+    <updated>2025-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20250907.00</code> of the guest agent, which introduces the plugin-based
+architecture to Enterprise Linux 8 operating systems, is now available. For more
+information about the plugin-based architecture, see <a href="https://cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>
+<p>With this version, the plugin-based guest agent is now also available for the
+following operating systems:</p>
+<ul>
+<li>Red Hat Enterprise Linux (RHEL) 8</li>
+<li>Rocky Linux 8</li>
+<li>CentOS Stream 8</li>
+<li>Oracle Linux 8</li>
+<li>AlmaLinux 8</li>
+</ul>]]></content>
+    <summary>The new version of the guest agent introduces a plugin-based architecture for Enterprise Linux 8 systems.</summary>
+    <title>Feature: Guest agent plugin architecture for Enterprise Linux 8</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2025-09-09:fixed:1</id>
+    <published>2025-09-09T00:00:00+00:00</published>
+    <updated>2025-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20250907.00</code> includes the following fixes for issues found in guest
+agent version <code>20250901.00</code>:</p>
+<ul>
+<li>Corrects an issue in the OS Login module that was incorrectly handling
+  optional runtime systemd dependencies and causing an error log.</li>
+<li>Fixes a bug that could cause the metadata SSH key module to enter an infinite
+  loop when setting up SSH keys. This occurred if an initial setup attempt failed
+  and the metadata server returned the SSH keys in a different order on a
+  subsequent retry.</li>
+</ul>]]></content>
+    <summary>A new version of the guest agent is available with fixes for OS Login and metadata SSH key issues.</summary>
+    <title>Fixed: Guest agent update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2025-09-09:changed:2</id>
     <published>2025-09-09T00:00:00+00:00</published>
     <updated>2025-09-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Hyperdisk Balanced High Availability disks are available in all regions.
@@ -85,7 +162,7 @@ Hyperdisk Balanced High Availability disks synchronously replicate disk data fro
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:compute-engine:2025-09-09:feature:1</id>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2025-09-09:feature:3</id>
     <published>2025-09-09T00:00:00+00:00</published>
     <updated>2025-09-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Preview:</strong> Eight new organization policy constraints are available to help you

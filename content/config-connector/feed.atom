@@ -2,9 +2,92 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Config Connector</title>
   <subtitle>Changelog for Google Cloud product: Config Connector</subtitle>
-  <updated>2025-09-24T00:00:00+00:00</updated>
+  <updated>2025-10-07T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:config-connector</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/config-connector/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-10-07:announcement:0</id>
+    <published>2025-10-07T00:00:00+00:00</published>
+    <updated>2025-10-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.136.1 is now available.</p>]]></content>
+    <summary>Config Connector version 1.136.1 has been released.</summary>
+    <title>Announcement: Config Connector v1.136.1 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-10-07:changed:1</id>
+    <published>2025-10-07T00:00:00+00:00</published>
+    <updated>2025-10-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Beta Resources (Direct Reconciler):</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/asset/assetfeed"><code>AssetFeed</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/bigqueryreservation/bigqueryreservationassignment"><code>BigQueryReservationAssignment</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/clouddeploy/clouddeploydeliverypipeline"><code>CloudDeployDeliveryPipeline</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/composer/composerenvironment"><code>ComposerEnvironment</code></a></li>
+</ul>]]></content>
+    <summary>New beta resources are available for direct reconciler, including AssetFeed, BigQueryReservationAssignment, CloudDeployDeliveryPipeline, and ComposerEnvironment.</summary>
+    <title>Changed: New Beta Resources</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-10-07:feature:2</id>
+    <published>2025-10-07T00:00:00+00:00</published>
+    <updated>2025-10-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Fields:</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/composer/composerenvironment"><code>ComposerEnvironment</code></a></li>
+<li>Added <code>spec.storageConfig</code> field.</li>
+<li>Added <code>spec.config.workloadsConfig.dagProcessor</code> field.</li>
+<li>Added <code>spec.config.workloadsConfig.triggerer</code> field.</li>
+<li>Added <code>spec.config.softwareConfig.webServerPluginsMode</code> field.</li>
+<li>Added <code>spec.config.softwareConfig.cloudDataLineageIntegration</code> field.</li>
+</ul>]]></content>
+    <summary>The Composer Environment resource has been updated with new fields including `spec.storageConfig`, `spec.config.workloadsConfig.dagProcessor`, `spec.config.workloadsConfig.triggerer`, `spec.config.softwareConfig.webServerPluginsMode`, and `spec.config.softwareConfig.cloudDataLineageIntegration`.</summary>
+    <title>Feature: New Fields for Composer Environment</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-10-07:changed:3</id>
+    <published>2025-10-07T00:00:00+00:00</published>
+    <updated>2025-10-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Reconciliation Improvements:</p>
+<ul>
+<li>Introduced <a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/blob/master/docs/designs/stateful-reconciliation-with-cookie.md">Stateful Reconciliation for Direct Controllers</a>. With stateful reconciliation, the direct controller stores a hash of the last successfully applied <code>.spec</code> in the resource's <code>.status</code>. This provides a lightweight, GitOps-safe record when a user has modified the desired state of the resource.</li>
+</ul>]]></content>
+    <summary>Stateful reconciliation is now available for direct controllers, storing a hash of the last applied spec for GitOps safety.</summary>
+    <title>Changed: Stateful Reconciliation Introduced</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-10-07:fixed:4</id>
+    <published>2025-10-07T00:00:00+00:00</published>
+    <updated>2025-10-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Bug Fixes:</p>
+<ul>
+<li>Added support for checking <code>etag</code> in spec for alpha resources.</li>
+<li>Fixed an issue where <code>CloudIdentityMembership</code> roles comparison would fail.</li>
+<li>Fixed a bug where the wrong GVK was reported in IAM controller.</li>
+<li>Fixed a bug where errors were swallowed when reading a Secret.</li>
+<li>Fixed an issue with LRO endTime in mockgcp.</li>
+<li>Fixed a bug in the <code>etag</code> mapper.</li>
+<li>Fixed a bug in the mapper generator for slice and single object map.</li>
+<li>Fixed a bug in the mapper generator for OneOf if the input is not proto.Message.</li>
+<li>Fixed an import for refs in the same package in <code>controllerbuilder</code>.</li>
+</ul>]]></content>
+    <summary>Multiple bugs have been fixed, including issues with etag checking, role comparison, GVK reporting, secret handling, LRO endTime, and mapper generators. Support for checking etag in spec for alpha resources has also been added.</summary>
+    <title>Fixed: Bug Fixes</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

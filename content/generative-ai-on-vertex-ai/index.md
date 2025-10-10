@@ -1,5 +1,31 @@
 # Generative AI on Vertex AI
 
+## 2025-10-09
+
+### Changed
+
+**Imagen**
+
+Imagen's virtual try-on model, `virtual-try-on-preview-08-04`
+was updated on September 30, 2025, to more accurately preserve the person's
+body shape and preserve the garment's identity.
+
+---
+## 2025-10-07
+
+### Feature
+
+The following Qwen models are available in [Model Garden](https://console.cloud.google.com/vertex-ai/publishers/qwen/model-garden/qwen-image):
+
+* Qwen-Image
+* Qwen-Image-Edit
+* Qwen-Image-Edit-2509
+
+### Feature
+
+**Save and share prompts in Vertex AI Studio**: You can now save and share prompts in Vertex AI Studio. Sharing prompts lets you collaborate with team members, ensure consistency, and build a library of effective prompts for various tasks. For more information, see [Save and share prompts](https://cloud.google.com/vertex-ai/generative-ai/docs/prompt-sharing).
+
+---
 ## 2025-10-06
 
 ### Changed
@@ -19,11 +45,22 @@ For more details, see [Pricing](https://cloud.google.com/vertex-ai/pricing#agent
 **Access Transparency for Vertex AI Agent Engine**: Access Transparency is now available for Vertex AI Agent Engine. For more information, see the overview for [Enterprise security](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/overview#enterprise_security).
 
 ---
+## 2025-10-03
+
+### Feature
+
+**Prompt management**
+
+Vertex AI offers tooling to help manage prompts and prompt versions. In addition to the prompt management capabilities in Vertex AI Studio, prompts can be stored and versioned using the Vertex AI SDK.
+
+For more information, see the [Prompt management](https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/prompt-classes) API reference.
+
+---
 ## 2025-10-02
 
 ### Announcement
 
-**[Gemini 2.5 Flash Image](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash#image-generation)** (`gemini-2.5-flash-image`) is now generally available. This GA release includes support for additional image generation and editing features such as [image generation from multiple reference images](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-generation#image-generation), [improved multi-turn image editing](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-editing#multi-turn-editing), and [support for batch predictions](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/batch-prediction-gemini).
+**[Gemini 2.5 Flash Image](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash#image-generation)** (`gemini-2.5-flash-image`) is now generally available. This GA release adds support for aspect ratio controls, image-only response modality, regional endpoints, [support for batch predictions](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/batch-prediction-gemini), [image generation from multiple reference images](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-generation#image-generation), and [improved multi-turn image editing](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-editing#multi-turn-editing).
 
 See [Gemini 2.5 Flash Image](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash#image) for more information.
 
@@ -137,11 +174,11 @@ In version `v1.112.0` of the Vertex AI SDK for Python, the `agent_engines` modul
 
 ### Feature
 
-[EmbeddingGemma](https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/embeddinggemma) and [DeepSeek-V3.1](https://console.cloud.google.com/vertex-ai/publishers/deepseek-ai/model-garden/deepseek-v3-1) models are available through Model Garden.
+[AI Singapore's SEA-LION V4 models](https://console.cloud.google.com/vertex-ai/publishers/aisingapore/model-garden/gemma-sea-lion-v4) are available through Model Garden. They are open models for Southeast Asian languages, built by leveraging Vertex Model Development Service for enhanced training efficiency and model accuracy.
 
 ### Feature
 
-[AI Singapore's SEA-LION V4 models](https://console.cloud.google.com/vertex-ai/publishers/aisingapore/model-garden/gemma-sea-lion-v4) are available through Model Garden. They are open models for Southeast Asian languages, built by leveraging Vertex Model Development Service for enhanced training efficiency and model accuracy.
+[EmbeddingGemma](https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/embeddinggemma) and [DeepSeek-V3.1](https://console.cloud.google.com/vertex-ai/publishers/deepseek-ai/model-garden/deepseek-v3-1) models are available through Model Garden.
 
 ---
 ## 2025-09-08

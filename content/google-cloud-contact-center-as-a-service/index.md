@@ -1,5 +1,199 @@
 # Google Cloud Contact Center as a Service
 
+## 2025-10-09
+
+### Announcement
+
+**Version 3.39 is released**
+
+All release notes published on this date are part of version 3.39.
+
+The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see [Deployment schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**Destination queue name and session history is available in the agent adapter**
+
+The agent adapter now displays the destination queue during transfers and deflections for IVR calls. The agent adapter also displays transfer history in the **Call details** and **Chat details** tabs.
+
+User experience changes:
+
+* The **Call details** and **Chat details** tabs in the agent adapter have a new **Transfer History** section.
+* The chat pane in the chat adapter has a new **Transfers** button that opens the **Transfer History** pane.
+
+Administrators: There's a new checkbox at **Settings > Operation Management > Transfer history** for turning on transfer history in the agent adapter.
+
+For more information, see [Transfer history and queue information in the agent adapter](https://cloud.google.com/contact-center/ccai-platform/docs/queue-info-transfer-history-agent-adapter).
+
+### Feature
+
+**Improved controls over the ordering of key-value pairs in the agent adapter and CRM records**
+
+Google Cloud CCaaS has improved controls over the ordering of the key-value pairs that appear in the agent adapter and in CRM records. Here's how the ordering controls work:
+
+* **Virtual agents**: When you configure session variables, you can use the new `display_order_in_adapter` property to specify the order that the session variables appear in the agent adapter and in CRM records. For more information, see [Capture from intent response](https://cloud.google.com/contact-center/ccai-platform/docs/va-custom-payload#capture_from_intent_response).
+* **Web SDK**: Web SDK custom data is displayed in the agent adapter and CRM records in the order that the key-value pairs appear in the JSON custom data file. For more information about JSON custom data files, see [Chat unsigned custom data](https://cloud.google.com/contact-center/ccai-platform/docs/web-sdk#chat-unsigned-custom-data).
+
+### Feature
+
+**Virtual agents for the SMS channel**
+
+Virtual agents are now available for the SMS channel. This lets you create virtual agents and assign them to SMS queues, offering virtual agent support to end-users in SMS chat sessions. For more information, see [Virtual agents for SMS](https://cloud.google.com/contact-center/ccai-platform/docs/virtual-agents-for-sms).
+
+### Feature
+
+**Search in the email channel**
+
+Agents can now search for emails in the agent adapter by keyword, session ID, or subject. For more information, see [Search for emails](https://cloud.google.com/contact-center/ccai-platform/docs/email-adapter#search-for-emails).
+
+### Feature
+
+**Cancel scheduled calls with the callback calls API**
+
+You can now use the callback calls API to cancel a single scheduled callback call or a list of calls. For more information, see [Callback call API](https://cloud.google.com/contact-center/ccai-platform/docs/callback-call-api).
+
+### Feature
+
+**Mid-session authentication is supported by all CRM types**
+
+Mid-session authentication is supported by all CRM types, not just custom CRMs. For more information, see [Mid-Session authentication by API](https://cloud.google.com/contact-center/ccai-platform/docs/mid-session-authentication-apps-api).
+
+### Feature
+
+**New advanced reporting dashboards**
+
+The following new advanced reporting dashboard is available:
+
+* **Deflections**. Get deflection information by queue and for your entire contact center. For more information, see [Deflections dashboards](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-deflections).
+* **Agent activity timeline**. See the historical activity for an agent. For more information, see [Agent activity timeline dashboard](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-agent-activity-timeline).
+
+### Feature
+
+**Advanced reporting dashboard updates**
+
+We've made the following updates to the advanced reporting dashboards:
+
+* **Queue Group Dashboards All dashboard**: The tiles and tables on this dashboard have been replaced with the following tables:
+
+  + **Queue Group Performance Calls**: displays detailed performance information for calls by queue group.
+  + **Queue Group Performance Chats**: displays detailed performance information for chats by queue group.
+
+  For more information, see [Queue Group Dashboards All](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-group-perf#queue-group-dashboards-all).
+* **Queue interval dashboards**: The **Queue Interval - Calls** and **Queue Interval - Chats** dashboards have a new **Total Queue Entries** column in the table tile. This is the sum of all inbound interactions that have entered a queue, excluding transfers.
+
+  For more information, see [Queue interval dashboards](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-interval).
+* **Virtual agent dashboards**: On both the **Virtual Agent Dashboard Calls** and **Virtual Agent Dashboard Chats** dashboards, the virtual agent metrics table contains a new **Interaction Outcome** column.
+
+  For more information, see [Virtual agent dashboards](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-virtual-agent).
+* **All Interactions - Chat dashboard**: In the **All Chat Interactions (Historical)** table, if you configure chat transcript storage for your CRM, the values in the **Chat ID** column become links to the chat transcripts.
+
+  For more information, see [All interactions dashboards](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-all-interactions).
+* **New metrics in the Call Queue Metrics (Historical) Explore**: We've added the following two metrics to the **Call Queue Metrics (Historical)** Explore:
+
+  + **CSL %**: Custom Service Level. This is calculated as follows: The number of queued interactions within SLA / The number of queued interactions answered.
+  + **Total Queued Answered**: The number of queued interactions answered by a human agent.
+
+  For information about metrics in an Explore, see [Create a new metrics tile in a dashboard](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-add-tiles-to-dashboard#create_a_new_metrics_tile_in_a_dashboard).
+* **Additional dashboards with advanced capabilities**: the following dashboards now appear on the **Advanced Reporting Landing Page**. This means you can use them to create new custom dashboards or create Looks to link to custom dashboards.
+
+  **Performance**
+
+  + **Dispositions / Calls**
+  + **Dispositions / Chats**
+  + **Deflections / Calls**
+  + **Deflections / Chats**
+  + **CSAT / Calls**
+  + **CSAT / Chats**
+  + **Co-browse / Calls**
+  + **Co-browse / Chats**
+  + **Failed / Calls**
+  + **Failed / Chats**
+  + **Missed / Calls**
+  + **Missed / Chats**
+
+  **Agent Reporting**
+
+  + **Agent Activity Timeline**
+
+  **Monitoring Dashboards**
+
+  + **Calls Connected**
+  + **Chats Connected**
+  + **Calls Queued**
+  + **Chats Queued**
+
+  For more information, see [Advanced capabilities](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-advanced-capabilities).
+
+### Fixed
+
+The following issues were addressed in this release:
+
+* Fixed an issue where incoming chats took precedence over the in-progress chat.
+
+  **User experience change**: When a new chat appears in the agent adapter, it no longer takes focus away from the in-progress chat. The in-progress retains focus.
+* Fixed a web SDK issue where sensitive data sent by an end-user was redacted for both the end-user and the agent, instead of just for the agent.
+* Fixed an issue where the contact list in the agent adapter wouldn't load the full list of contacts.
+* Fixed an issue where an agent clicking an email in the agent adapter returned an **Email Not Found** error.
+* Fixed an issue where managers assigned to multiple teams were unable to view agent statistics for every team they were assigned to.
+* Fixed an issue for ServiceNow users where `call_duration` was using the earliest `connected_at` time instead of the latest `connected_at` time, causing call durations to appear longer than they actually were.
+* Fixed an issue in the **Settings > Developer Settings > External Storage** pane where language checkboxes were associated with the **Co-browse Recordings** checkbox instead of the **Session Data Feed** checkbox.
+
+  **Administrators**: In the **Settings > Developer Settings > External Storage** pane, the languages checkboxes have moved from the **Co-browse Recordings** checkbox to the **Session Data Feed** checkbox.
+* Fixed an issue where agent-initiated outbound calls were using the default number for the selected queue instead of the number chosen by the agent.
+* Fixed an issue where the downloaded session chat data report contained an extra quotation mark.
+* Fixed an issue where users received an email telling them to create a password after Single Sign-On (SSO) was turned on.
+* Fixed an issue where SSO configuration settings in the user's instance were deleted after they turned off SSO.
+* Fixed an issue where an administrator couldn't configure agent status restrictions without exposing them to agents.
+* Fixed an issue where custom contact lists could only be replaced, and not removed, after they were assigned to a team.
+* Fixed an issue where the inheritance indicator and **Reset to parent** button was missing from the queue level **Contact List Management** pane.
+* Fixed an issue where the SMS and Web chat availability preferences in the agent adapter were the reverse of how they were configured.
+* Fixed an issue where queue transfer restrictions were not saved after being configured.
+* Fixed an issue that occurred when a user attempted to name a new queue. The name field abruptly lost focus after the first character, forcing the user to enter the queue name again.
+* Fixed an issue where creating an instance would time out and fail.
+* Fixed an issue that prevented reports from being downloaded.
+* Fixed an issue where the chat history for blended SMS sessions failed to save.
+* Fixed an issue where the **Transfer failed** message didn't appear. This occurred when an agent failed to pick up a transferred call before the transferred call expiration time expired.
+* Fixed an issue where IVR call recordings failed to save or were corrupted. This resulted in recordings that were only one second long, were saved in the wrong format, or weren't saved at all.
+* Fixed an issue where completed chat sessions appeared in the chats waiting area of agent desktop.
+* Fixed an issue for CRM users with voicemails that are attached directly to tickets. An incorrect "External Storage must be configured" warning appeared when configuring voicemail options for IVR queues.
+* Fixed an issue where transfer restrictions that were configured and saved for a web queue did not appear correctly the next time the **Transfer Restrictions** pane for that queue was viewed.
+* Fixed an issue where the unread message count in the chat pane was inconsistent when viewing it from multiple browser tabs.
+* Fixed an issue in virtual assistant reporting where the `finish_reason` property was incorrectly assigned to the `undefined` value. Now the `finish_reason` property is assigned to descriptive values that describe the reason for the conclusion of the chat session.
+* Fixed an issue where PDF transcripts of chat sessions contained malformed links.
+* Fixed an issue in historical reports where the fields in the **Failed Reason Description** column were blank.
+* Fixed an issue where CSAT scores were missing from some advanced reporting dashboards.
+* Fixed an issue for HubSpot users that caused long delays in case creation for inbound calls.
+* Fixed an issue where the photo and video files that the agent provided in pre-session Smart Actions didn't appear in the CRM.
+* Fixed an issue where agents in `Unavailable` status couldn't see waiting web chats.
+* Fixed an issue where HTML was not rendering properly in virtual agent messages in the agent adapter
+* Fixed an issue where agents were not switching into `Wrap-up Exceeded` status after a breakthrough call.
+* Fixed an agent desktop issue where administrators were unable to assign announcements to some teams or agents.
+* Fixed an agent desktop issue where agents couldn't copy text to the clipboard from an agent desktop custom panel.
+* Fixed an agent desktop issue where the term "Anonymous User" wasn't being translated into French.
+* Fixed an issue where the `UJET_ID` and `ANI` variables weren't passed correctly for SIP calls.
+* Fixed an issue where the chat adapter froze when agents switched between chats.
+* Fixed an issue on the **Agents** page of the Google Cloud CCaaS portal where administrators couldn't switch between session types.
+* Fixed an issue where a newly added Agent Assist platform displayed as `Invalid` even though it was valid.
+* Fixed an issue for Salesforce users where the call button didn't work when an agent attempted to call a number that was attached to a record for a previous call.
+* Fixed an issue where audio files with accented characters in their file names failed to play back when using a storage proxy.
+* Fixed an agent desktop issue where the `UJET_ID` variable in the custom URL for a custom panel wasn't being passed correctly.
+* Fixed an issue where calls originating from a native campaign generated two CRM tickets for the same interaction.
+* Fixed latency issues with web SDK Telnyx calls.
+* Fixed an issue where outbound Bring Your Own Carrier (BYOC) calls used a number other than the one agents selected in the agent adapter.
+* Fixed a Telnyx chatbot worker failure issue where background jobs related to call processing and chatbot escalations were failing and consuming excessive system resources.
+* Fixed an issue where calls to the bulk user upload endpoint returned a success status even when the uploads failed.
+* Fixed an issue in the chat waiting field of the agent desktop when multiple chats were in wrap-up. Instead of displaying **Wrap-up in progress** for all sessions in wrap-up, some sessions displayed **Auto answered**.
+* Fixed an issue in the queue group dashboard where the **Callbacks waiting** tile incorrectly included callbacks that were completed, abandoned, or failed.
+* Fixed an issue that caused inbound calls to disconnect if they were routed to an agent with a disabled microphone.
+* Fixed an issue for HubSpot users where logging the "call started" event (`create_activity`) in the ticket was delayed.
+* Fixed an issue that prevented transferred calls from being routed to available agents.
+* Fixed an issue in the agent adapter for French (Canada) where words weren't translated or were translated incorrectly.
+* Fixed an issue in call queue reporting where the Failed Reason Description for voice-scheduled mobile calls was not appearing.
+* Fixed an issue that prevented external chat transcripts from being passed into new chat sessions.
+* Fixed an advanced reporting issue where CSAT ratings were not appearing correctly when creating custom dashboards.
+* Fixed an advanced reporting issue where callbacks waiting metrics didn't match in the following dashboards: **Queue Groups Dashboard Calls** and **Queued Calls Status Dashboard**.
+
+---
 ## 2025-09-25
 
 ### Announcement

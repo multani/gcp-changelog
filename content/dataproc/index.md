@@ -1,5 +1,36 @@
 # Dataproc
 
+## 2025-10-06
+
+### Changed
+
+**Dataproc on Compute Engine:** The following diagnostic properties are now enabled by default for new Dataproc clusters created with **2.0+** image versions:
+
+* `dataproc:diagnostic.capture.enabled`: Collects [checkpoint diagnostic data](https://cloud.google.com/dataproc/docs/support/diagnose-clusters#checkpoint_diagnostic_data) in the cluster [temp bucket](https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/staging-bucket).
+* `dataproc:dataproc.logging.extended.enabled`: Collects logs for the [Knox, Zeppelin, Ranger-usersync, Jupyter\_notebook, Jupyter\_kernel\_gateway components](https://cloud.google.com/dataproc/docs/concepts/components/overview) and the [Spark History-Server](https://cloud.google.com/dataproc/docs/concepts/jobs/history-server) in [Cloud Logging](https://cloud.google.com/dataproc/docs/guides/logging#cluster-logs).
+* `dataproc:dataproc.logging.syslog.enabled`: Collects VM syslogs in [Cloud Logging](https://cloud.google.com/dataproc/docs/guides/logging#cluster-logs).
+
+**Note:** To disable any of these features, set the corresponding property to `false` during cluster creation.
+
+To continue using the [Ops Agent](https://cloud.google.com/stackdriver/docs/solutions/agents/ops-agent) initialization action [`opsagent.sh`](https://github.com/GoogleCloudDataproc/initialization-actions/blob/main/opsagent/opsagent.sh) to ingest syslogs from Dataproc cluster nodes, do one of the following:
+
+* **Recommended:** Use [`opsagent_nosyslog.sh`](https://github.com/GoogleCloudDataproc/initialization-actions/blob/main/opsagent/opsagent_nosyslog.sh) since
+  VM syslogs are emitted by default from Dataproc clusters.
+* Set the `dataproc:dataproc.logging.syslog.enabled=false` and continue using [`opsagent.sh`](https://github.com/GoogleCloudDataproc/initialization-actions/blob/main/opsagent/opsagent.sh)
+  to ingest syslogs.
+
+### Announcement
+
+New [Serverless for Apache Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
+
+* 2.3.13
+* 3.0.0-RC5
+
+### Changed
+
+**Serverless for Apache Spark:** Upgraded Apache Spark to version [3.5.3](https://spark.apache.org/releases/spark-release-3-5-3.html) in the latest [2.3](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_23) Serverless for Apache Spark runtime versions.
+
+---
 ## 2025-10-03
 
 ### Announcement

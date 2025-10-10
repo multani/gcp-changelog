@@ -1,5 +1,52 @@
 # Config Connector
 
+## 2025-10-07
+
+### Announcement
+
+Config Connector version 1.136.1 is now available.
+
+### Changed
+
+New Beta Resources (Direct Reconciler):
+
+* [`AssetFeed`](https://cloud.google.com/config-connector/docs/reference/resource-docs/asset/assetfeed)
+* [`BigQueryReservationAssignment`](https://cloud.google.com/config-connector/docs/reference/resource-docs/bigqueryreservation/bigqueryreservationassignment)
+* [`CloudDeployDeliveryPipeline`](https://cloud.google.com/config-connector/docs/reference/resource-docs/clouddeploy/clouddeploydeliverypipeline)
+* [`ComposerEnvironment`](https://cloud.google.com/config-connector/docs/reference/resource-docs/composer/composerenvironment)
+
+### Feature
+
+New Fields:
+
+* [`ComposerEnvironment`](https://cloud.google.com/config-connector/docs/reference/resource-docs/composer/composerenvironment)
+  + Added `spec.storageConfig` field.
+  + Added `spec.config.workloadsConfig.dagProcessor` field.
+  + Added `spec.config.workloadsConfig.triggerer` field.
+  + Added `spec.config.softwareConfig.webServerPluginsMode` field.
+  + Added `spec.config.softwareConfig.cloudDataLineageIntegration` field.
+
+### Changed
+
+Reconciliation Improvements:
+
+* Introduced [Stateful Reconciliation for Direct Controllers](https://github.com/GoogleCloudPlatform/k8s-config-connector/blob/master/docs/designs/stateful-reconciliation-with-cookie.md). With stateful reconciliation, the direct controller stores a hash of the last successfully applied `.spec` in the resource's `.status`. This provides a lightweight, GitOps-safe record when a user has modified the desired state of the resource.
+
+### Fixed
+
+Bug Fixes:
+
+* Added support for checking `etag` in spec for alpha resources.
+* Fixed an issue where `CloudIdentityMembership` roles comparison would fail.
+* Fixed a bug where the wrong GVK was reported in IAM controller.
+* Fixed a bug where errors were swallowed when reading a Secret.
+* Fixed an issue with LRO endTime in mockgcp.
+* Fixed a bug in the `etag` mapper.
+* Fixed a bug in the mapper generator for slice and single object map.
+* Fixed a bug in the mapper generator for OneOf if the input is not proto.Message.
+* Fixed an import for refs in the same package in `controllerbuilder`.
+
+---
 ## 2025-09-24
 
 ### Announcement

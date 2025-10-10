@@ -1,6 +1,32 @@
 {
   "name": "Dataproc",
   "entries": {
+    "2025-10-06": [
+      {
+        "kind": "Changed",
+        "content": "**Dataproc on Compute Engine:** The following diagnostic properties are now enabled by default for new Dataproc clusters created with **2.0+** image versions:\n\n* `dataproc:diagnostic.capture.enabled`: Collects [checkpoint diagnostic data](https://cloud.google.com/dataproc/docs/support/diagnose-clusters#checkpoint_diagnostic_data) in the cluster [temp bucket](https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/staging-bucket).\n* `dataproc:dataproc.logging.extended.enabled`: Collects logs for the [Knox, Zeppelin, Ranger-usersync, Jupyter\\_notebook, Jupyter\\_kernel\\_gateway components](https://cloud.google.com/dataproc/docs/concepts/components/overview) and the [Spark History-Server](https://cloud.google.com/dataproc/docs/concepts/jobs/history-server) in [Cloud Logging](https://cloud.google.com/dataproc/docs/guides/logging#cluster-logs).\n* `dataproc:dataproc.logging.syslog.enabled`: Collects VM syslogs in [Cloud Logging](https://cloud.google.com/dataproc/docs/guides/logging#cluster-logs).\n\n**Note:** To disable any of these features, set the corresponding property to `false` during cluster creation.\n\nTo continue using the [Ops Agent](https://cloud.google.com/stackdriver/docs/solutions/agents/ops-agent) initialization action [`opsagent.sh`](https://github.com/GoogleCloudDataproc/initialization-actions/blob/main/opsagent/opsagent.sh) to ingest syslogs from Dataproc cluster nodes, do one of the following:\n\n* **Recommended:** Use [`opsagent_nosyslog.sh`](https://github.com/GoogleCloudDataproc/initialization-actions/blob/main/opsagent/opsagent_nosyslog.sh) since\n  VM syslogs are emitted by default from Dataproc clusters.\n* Set the `dataproc:dataproc.logging.syslog.enabled=false` and continue using [`opsagent.sh`](https://github.com/GoogleCloudDataproc/initialization-actions/blob/main/opsagent/opsagent.sh)\n  to ingest syslogs.",
+        "summary": {
+          "title": "New diagnostic properties enabled by default",
+          "summary": "Diagnostic properties for enhanced data collection are now enabled by default for new Dataproc clusters with image version 2.0+. These properties facilitate the collection of checkpoint diagnostic data and extended logs for various components, including syslogs, into Cloud Logging. To disable these features, set the corresponding property to false during cluster creation. If you are using the Ops Agent, it is recommended to switch to opsagent_nosyslog.sh due to default syslog collection."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "New [Serverless for Apache Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):\n\n* 2.3.13\n* 3.0.0-RC5",
+        "summary": {
+          "title": "New Spark Runtime Versions",
+          "summary": "New serverless Spark runtime versions are available: 2.3.13 and 3.0.0-RC5."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Serverless for Apache Spark:** Upgraded Apache Spark to version [3.5.3](https://spark.apache.org/releases/spark-release-3-5-3.html) in the latest [2.3](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_23) Serverless for Apache Spark runtime versions.",
+        "summary": {
+          "title": "Apache Spark 3.5.3 is now available",
+          "summary": "The latest Serverless for Apache Spark runtime (2.3) now supports Apache Spark 3.5.3."
+        }
+      }
+    ],
     "2025-10-03": [
       {
         "kind": "Announcement",

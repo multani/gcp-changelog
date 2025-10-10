@@ -1,5 +1,14 @@
 # Cloud Logging
 
+## 2025-10-09
+
+### Feature
+
+The query builder in the Log Analytics page is
+[generally available](https://cloud.google.com/products#product-launch-stages) (GA). For more
+information, see [Build, edit, and run a query](https://cloud.google.com/logging/docs/analyze/query-and-view#query-builder).
+
+---
 ## 2025-09-22
 
 ### Announcement

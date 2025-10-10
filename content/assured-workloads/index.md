@@ -29,6 +29,25 @@ Certificate Manager is generally available [(GA)](https://cloud.google.com/produ
 Certificate Manager is generally available [(GA)](https://cloud.google.com/products#product-launch-stages).
 
 ---
+## 2025-09-26
+
+### Feature
+
+Memorystore for Redis Cluster is generally available [(GA)](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+Memorystore for Valkey is generally available [(GA)](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+Memorystore for Redis Cluster is generally available [(GA)](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+Memorystore for Valkey is generally available [(GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-09-25
 
 ### Feature

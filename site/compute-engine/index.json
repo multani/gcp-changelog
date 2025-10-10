@@ -1,6 +1,26 @@
 {
   "name": "Compute Engine",
   "entries": {
+    "2025-10-06": [
+      {
+        "kind": "Changed",
+        "content": "The Google Cloud optimized (`-optimized-gcp`) and accelerated\n(`optimized-gcp-nvidia-*`) versions of the Rocky Linux images now include the\n[CIQ SIG/Cloud Next repository](https://docs.ciq.com/rlc/ciq-sig-cloud-next/).\nThis repository provides a cloud-optimized kernel. Additionally, the accelerated\nimages now also include the [CIQ SIG/Cloud Next Nonfree\nrepository](https://gitlab.com/ctrl-iq-public/sig-cloud-next/next-nonfree),\nwhich provides access to proprietary GPU drivers for the cloud-optimized kernel.\n\nThis update is applied to images created on or after September 12, 2025.\n\nFor more information about Rocky Linux OS images, see [Rocky\nLinux](https://cloud.google.com/compute/docs/images/os-details#rocky_linux) on\nthe operating system details page.",
+        "summary": {
+          "title": "New Rocky Linux Images Available",
+          "summary": "Rocky Linux images for Google Cloud now include cloud-optimized kernels and proprietary GPU drivers for accelerated images. This update applies to images created after September 12, 2025."
+        }
+      }
+    ],
+    "2025-09-26": [
+      {
+        "kind": "Feature",
+        "content": "Version `20250926.00` of the guest agent is now available. This guest agent\nversion introduces the plugin-based architecture to Debian 12.\n\nFor more information about the plugin-based architecture, see\n[Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).",
+        "summary": {
+          "title": "New Guest Agent Version Available",
+          "summary": "A new version of the guest agent is now available, introducing a plugin-based architecture for Debian 12."
+        }
+      }
+    ],
     "2025-09-22": [
       {
         "kind": "Feature",
@@ -52,6 +72,22 @@
       }
     ],
     "2025-09-09": [
+      {
+        "kind": "Feature",
+        "content": "Version `20250907.00` of the guest agent, which introduces the plugin-based\narchitecture to Enterprise Linux 8 operating systems, is now available. For more\ninformation about the plugin-based architecture, see [Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).\n\nWith this version, the plugin-based guest agent is now also available for the\nfollowing operating systems:\n\n* Red Hat Enterprise Linux (RHEL) 8\n* Rocky Linux 8\n* CentOS Stream 8\n* Oracle Linux 8\n* AlmaLinux 8",
+        "summary": {
+          "title": "Guest agent plugin architecture for Enterprise Linux 8",
+          "summary": "The new version of the guest agent introduces a plugin-based architecture for Enterprise Linux 8 systems."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Version `20250907.00` includes the following fixes for issues found in guest\nagent version `20250901.00`:\n\n* Corrects an issue in the OS Login module that was incorrectly handling\n  optional runtime systemd dependencies and causing an error log.\n* Fixes a bug that could cause the metadata SSH key module to enter an infinite\n  loop when setting up SSH keys. This occurred if an initial setup attempt failed\n  and the metadata server returned the SSH keys in a different order on a\n  subsequent retry.",
+        "summary": {
+          "title": "Guest agent update",
+          "summary": "A new version of the guest agent is available with fixes for OS Login and metadata SSH key issues."
+        }
+      },
       {
         "kind": "Changed",
         "content": "Hyperdisk Balanced High Availability disks are available in all regions.\nHyperdisk Balanced High Availability disks synchronously replicate disk data from one zone to another. Cross-zonal replication provides data protection in the unlikely event of a zonal outage. For more information, see [About Hyperdisk Balanced High Availability](https://cloud.google.com/compute/docs/disks/hd-types/hyperdisk-balanced-ha).",

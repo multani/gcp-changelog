@@ -1,5 +1,39 @@
 # Gemini Code Assist
 
+## 2025-10-08
+
+### Feature
+
+
+
+### Next Edit Predictions in IntelliJ (Preview)
+
+[Next Edit Predictions](https://cloud.google.com/gemini/docs/codeassist/write-code-gemini#use_next_edit_predictions),
+which predicts the next code suggestions throughout the code file that you're
+currently in, are now available in IntelliJ Gemini Code Assist, in
+[Preview](https://cloud.google.com/terms/service-terms).
+
+You can cycle through multiple suggestions, dismiss suggestions, or ignore them
+and continue coding.
+
+[Enable Next Edit Predictions](https://cloud.google.com/gemini/docs/codeassist/write-code-gemini#use_next_edit_predictions)
+in your IDE to get started.
+
+![Next Edit Predictions in IntelliJ Gemini Code Assist.](https://cloud.google.com/gemini/images/release-notes-images/intellij-next-edit.gif)
+
+### Feature
+
+
+
+### Chat code suggestion preview in IntelliJ
+
+Chat code suggestions are [displayed in a preview block](https://cloud.google.com/gemini/docs/codeassist/chat-gemini#configure_code_preview_pane)
+by default with IntelliJ Gemini Code Assist, improving the readability of
+generated chat responses.
+
+![Chat code suggestion preview in IntelliJ Gemini Code Assist.](https://cloud.google.com/gemini/images/release-notes-images/intellij-code-suggestion-preview.png)
+
+---
 ## 2025-10-02
 
 ### Gemini Code Assist tools are deprecated and replaced by agent mode (Preview)

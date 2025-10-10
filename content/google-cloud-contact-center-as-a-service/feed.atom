@@ -2,9 +2,258 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2025-09-25T00:00:00+00:00</updated>
+  <updated>2025-10-09T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-10-09:announcement:0</id>
+    <published>2025-10-09T00:00:00+00:00</published>
+    <updated>2025-10-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Version 3.39 is released</strong></p>
+<p>All release notes published on this date are part of version 3.39.</p>
+<p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>]]></content>
+    <summary>Version 3.39 has been released, including all release notes published on this date. The update timing depends on your chosen deployment schedule.</summary>
+    <title>Announcement: Version 3.39 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-10-09:feature:1</id>
+    <published>2025-10-09T00:00:00+00:00</published>
+    <updated>2025-10-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Destination queue name and session history is available in the agent adapter</strong></p>
+<p>The agent adapter now displays the destination queue during transfers and deflections for IVR calls. The agent adapter also displays transfer history in the <strong>Call details</strong> and <strong>Chat details</strong> tabs.</p>
+<p>User experience changes:</p>
+<ul>
+<li>The <strong>Call details</strong> and <strong>Chat details</strong> tabs in the agent adapter have a new <strong>Transfer History</strong> section.</li>
+<li>The chat pane in the chat adapter has a new <strong>Transfers</strong> button that opens the <strong>Transfer History</strong> pane.</li>
+</ul>
+<p>Administrators: There's a new checkbox at <strong>Settings &gt; Operation Management &gt; Transfer history</strong> for turning on transfer history in the agent adapter.</p>
+<p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/queue-info-transfer-history-agent-adapter">Transfer history and queue information in the agent adapter</a>.</p>]]></content>
+    <summary>The agent adapter now shows destination queue names during transfers and deflections. Additionally, transfer history is available in the Call details and Chat details tabs, providing a clearer view of call progression. Administrators can enable this feature via settings.</summary>
+    <title>Feature: Agent Adapter Enhancements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-10-09:feature:2</id>
+    <published>2025-10-09T00:00:00+00:00</published>
+    <updated>2025-10-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Improved controls over the ordering of key-value pairs in the agent adapter and CRM records</strong></p>
+<p>Google Cloud CCaaS has improved controls over the ordering of the key-value pairs that appear in the agent adapter and in CRM records. Here's how the ordering controls work:</p>
+<ul>
+<li><strong>Virtual agents</strong>: When you configure session variables, you can use the new <code>display_order_in_adapter</code> property to specify the order that the session variables appear in the agent adapter and in CRM records. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/va-custom-payload#capture_from_intent_response">Capture from intent response</a>.</li>
+<li><strong>Web SDK</strong>: Web SDK custom data is displayed in the agent adapter and CRM records in the order that the key-value pairs appear in the JSON custom data file. For more information about JSON custom data files, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/web-sdk#chat-unsigned-custom-data">Chat unsigned custom data</a>.</li>
+</ul>]]></content>
+    <summary>You can now control the order of key-value pairs in the agent adapter and CRM records for virtual agents and Web SDK custom data.</summary>
+    <title>Feature: Improved Key-Value Pair Ordering</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-10-09:feature:3</id>
+    <published>2025-10-09T00:00:00+00:00</published>
+    <updated>2025-10-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Virtual agents for the SMS channel</strong></p>
+<p>Virtual agents are now available for the SMS channel. This lets you create virtual agents and assign them to SMS queues, offering virtual agent support to end-users in SMS chat sessions. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/virtual-agents-for-sms">Virtual agents for SMS</a>.</p>]]></content>
+    <summary>Virtual agents can now be used for the SMS channel. You can create virtual agents and assign them to SMS queues to provide support to end-users in SMS chat sessions.</summary>
+    <title>Feature: Virtual Agents for SMS</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-10-09:feature:4</id>
+    <published>2025-10-09T00:00:00+00:00</published>
+    <updated>2025-10-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Search in the email channel</strong></p>
+<p>Agents can now search for emails in the agent adapter by keyword, session ID, or subject. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/email-adapter#search-for-emails">Search for emails</a>.</p>]]></content>
+    <summary>Agents can now search emails using keywords, session ID, or subject.</summary>
+    <title>Feature: Email Search Feature</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-10-09:feature:5</id>
+    <published>2025-10-09T00:00:00+00:00</published>
+    <updated>2025-10-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Cancel scheduled calls with the callback calls API</strong></p>
+<p>You can now use the callback calls API to cancel a single scheduled callback call or a list of calls. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/callback-call-api">Callback call API</a>.</p>]]></content>
+    <summary>You can now cancel scheduled calls using the callback calls API.</summary>
+    <title>Feature: Cancel scheduled calls</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-10-09:feature:6</id>
+    <published>2025-10-09T00:00:00+00:00</published>
+    <updated>2025-10-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Mid-session authentication is supported by all CRM types</strong></p>
+<p>Mid-session authentication is supported by all CRM types, not just custom CRMs. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/mid-session-authentication-apps-api">Mid-Session authentication by API</a>.</p>]]></content>
+    <summary>Mid-session authentication is now available for all CRM types, not limited to custom CRMs.</summary>
+    <title>Feature: Mid-session authentication for all CRMs</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-10-09:feature:7</id>
+    <published>2025-10-09T00:00:00+00:00</published>
+    <updated>2025-10-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>New advanced reporting dashboards</strong></p>
+<p>The following new advanced reporting dashboard is available:</p>
+<ul>
+<li><strong>Deflections</strong>. Get deflection information by queue and for your entire contact center. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-deflections">Deflections dashboards</a>.</li>
+<li><strong>Agent activity timeline</strong>. See the historical activity for an agent. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-agent-activity-timeline">Agent activity timeline dashboard</a>.</li>
+</ul>]]></content>
+    <summary>Check out the new advanced reporting dashboards for Deflections and Agent Activity Timeline to gain deeper insights into your contact center operations.</summary>
+    <title>Feature: New Reporting Dashboards Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-10-09:feature:8</id>
+    <published>2025-10-09T00:00:00+00:00</published>
+    <updated>2025-10-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Advanced reporting dashboard updates</strong></p>
+<p>We've made the following updates to the advanced reporting dashboards:</p>
+<ul>
+<li>
+<p><strong>Queue Group Dashboards All dashboard</strong>: The tiles and tables on this dashboard have been replaced with the following tables:</p>
+</li>
+<li>
+<p><strong>Queue Group Performance Calls</strong>: displays detailed performance information for calls by queue group.</p>
+</li>
+<li><strong>Queue Group Performance Chats</strong>: displays detailed performance information for chats by queue group.</li>
+</ul>
+<p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-group-perf#queue-group-dashboards-all">Queue Group Dashboards All</a>.
+* <strong>Queue interval dashboards</strong>: The <strong>Queue Interval - Calls</strong> and <strong>Queue Interval - Chats</strong> dashboards have a new <strong>Total Queue Entries</strong> column in the table tile. This is the sum of all inbound interactions that have entered a queue, excluding transfers.</p>
+<p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-interval">Queue interval dashboards</a>.
+* <strong>Virtual agent dashboards</strong>: On both the <strong>Virtual Agent Dashboard Calls</strong> and <strong>Virtual Agent Dashboard Chats</strong> dashboards, the virtual agent metrics table contains a new <strong>Interaction Outcome</strong> column.</p>
+<p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-virtual-agent">Virtual agent dashboards</a>.
+* <strong>All Interactions - Chat dashboard</strong>: In the <strong>All Chat Interactions (Historical)</strong> table, if you configure chat transcript storage for your CRM, the values in the <strong>Chat ID</strong> column become links to the chat transcripts.</p>
+<p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-all-interactions">All interactions dashboards</a>.
+* <strong>New metrics in the Call Queue Metrics (Historical) Explore</strong>: We've added the following two metrics to the <strong>Call Queue Metrics (Historical)</strong> Explore:</p>
+<ul>
+<li><strong>CSL %</strong>: Custom Service Level. This is calculated as follows: The number of queued interactions within SLA / The number of queued interactions answered.</li>
+<li><strong>Total Queued Answered</strong>: The number of queued interactions answered by a human agent.</li>
+</ul>
+<p>For information about metrics in an Explore, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-add-tiles-to-dashboard#create_a_new_metrics_tile_in_a_dashboard">Create a new metrics tile in a dashboard</a>.
+* <strong>Additional dashboards with advanced capabilities</strong>: the following dashboards now appear on the <strong>Advanced Reporting Landing Page</strong>. This means you can use them to create new custom dashboards or create Looks to link to custom dashboards.</p>
+<p><strong>Performance</strong></p>
+<ul>
+<li><strong>Dispositions / Calls</strong></li>
+<li><strong>Dispositions / Chats</strong></li>
+<li><strong>Deflections / Calls</strong></li>
+<li><strong>Deflections / Chats</strong></li>
+<li><strong>CSAT / Calls</strong></li>
+<li><strong>CSAT / Chats</strong></li>
+<li><strong>Co-browse / Calls</strong></li>
+<li><strong>Co-browse / Chats</strong></li>
+<li><strong>Failed / Calls</strong></li>
+<li><strong>Failed / Chats</strong></li>
+<li><strong>Missed / Calls</strong></li>
+<li><strong>Missed / Chats</strong></li>
+</ul>
+<p><strong>Agent Reporting</strong></p>
+<ul>
+<li><strong>Agent Activity Timeline</strong></li>
+</ul>
+<p><strong>Monitoring Dashboards</strong></p>
+<ul>
+<li><strong>Calls Connected</strong></li>
+<li><strong>Chats Connected</strong></li>
+<li><strong>Calls Queued</strong></li>
+<li><strong>Chats Queued</strong></li>
+</ul>
+<p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-advanced-capabilities">Advanced capabilities</a>.</p>]]></content>
+    <summary>The advanced reporting dashboards have been updated with new and improved features, including enhanced queue group and interval dashboards, new metrics for virtual agents and call queues, and additional advanced dashboards for performance and agent reporting.</summary>
+    <title>Feature: Updated Reporting Dashboards</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-10-09:fixed:9</id>
+    <published>2025-10-09T00:00:00+00:00</published>
+    <updated>2025-10-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were addressed in this release:</p>
+<ul>
+<li>Fixed an issue where incoming chats took precedence over the in-progress chat.</li>
+</ul>
+<p><strong>User experience change</strong>: When a new chat appears in the agent adapter, it no longer takes focus away from the in-progress chat. The in-progress retains focus.
+* Fixed a web SDK issue where sensitive data sent by an end-user was redacted for both the end-user and the agent, instead of just for the agent.
+* Fixed an issue where the contact list in the agent adapter wouldn't load the full list of contacts.
+* Fixed an issue where an agent clicking an email in the agent adapter returned an <strong>Email Not Found</strong> error.
+* Fixed an issue where managers assigned to multiple teams were unable to view agent statistics for every team they were assigned to.
+* Fixed an issue for ServiceNow users where <code>call_duration</code> was using the earliest <code>connected_at</code> time instead of the latest <code>connected_at</code> time, causing call durations to appear longer than they actually were.
+* Fixed an issue in the <strong>Settings &gt; Developer Settings &gt; External Storage</strong> pane where language checkboxes were associated with the <strong>Co-browse Recordings</strong> checkbox instead of the <strong>Session Data Feed</strong> checkbox.</p>
+<p><strong>Administrators</strong>: In the <strong>Settings &gt; Developer Settings &gt; External Storage</strong> pane, the languages checkboxes have moved from the <strong>Co-browse Recordings</strong> checkbox to the <strong>Session Data Feed</strong> checkbox.
+* Fixed an issue where agent-initiated outbound calls were using the default number for the selected queue instead of the number chosen by the agent.
+* Fixed an issue where the downloaded session chat data report contained an extra quotation mark.
+* Fixed an issue where users received an email telling them to create a password after Single Sign-On (SSO) was turned on.
+* Fixed an issue where SSO configuration settings in the user's instance were deleted after they turned off SSO.
+* Fixed an issue where an administrator couldn't configure agent status restrictions without exposing them to agents.
+* Fixed an issue where custom contact lists could only be replaced, and not removed, after they were assigned to a team.
+* Fixed an issue where the inheritance indicator and <strong>Reset to parent</strong> button was missing from the queue level <strong>Contact List Management</strong> pane.
+* Fixed an issue where the SMS and Web chat availability preferences in the agent adapter were the reverse of how they were configured.
+* Fixed an issue where queue transfer restrictions were not saved after being configured.
+* Fixed an issue that occurred when a user attempted to name a new queue. The name field abruptly lost focus after the first character, forcing the user to enter the queue name again.
+* Fixed an issue where creating an instance would time out and fail.
+* Fixed an issue that prevented reports from being downloaded.
+* Fixed an issue where the chat history for blended SMS sessions failed to save.
+* Fixed an issue where the <strong>Transfer failed</strong> message didn't appear. This occurred when an agent failed to pick up a transferred call before the transferred call expiration time expired.
+* Fixed an issue where IVR call recordings failed to save or were corrupted. This resulted in recordings that were only one second long, were saved in the wrong format, or weren't saved at all.
+* Fixed an issue where completed chat sessions appeared in the chats waiting area of agent desktop.
+* Fixed an issue for CRM users with voicemails that are attached directly to tickets. An incorrect "External Storage must be configured" warning appeared when configuring voicemail options for IVR queues.
+* Fixed an issue where transfer restrictions that were configured and saved for a web queue did not appear correctly the next time the <strong>Transfer Restrictions</strong> pane for that queue was viewed.
+* Fixed an issue where the unread message count in the chat pane was inconsistent when viewing it from multiple browser tabs.
+* Fixed an issue in virtual assistant reporting where the <code>finish_reason</code> property was incorrectly assigned to the <code>undefined</code> value. Now the <code>finish_reason</code> property is assigned to descriptive values that describe the reason for the conclusion of the chat session.
+* Fixed an issue where PDF transcripts of chat sessions contained malformed links.
+* Fixed an issue in historical reports where the fields in the <strong>Failed Reason Description</strong> column were blank.
+* Fixed an issue where CSAT scores were missing from some advanced reporting dashboards.
+* Fixed an issue for HubSpot users that caused long delays in case creation for inbound calls.
+* Fixed an issue where the photo and video files that the agent provided in pre-session Smart Actions didn't appear in the CRM.
+* Fixed an issue where agents in <code>Unavailable</code> status couldn't see waiting web chats.
+* Fixed an issue where HTML was not rendering properly in virtual agent messages in the agent adapter
+* Fixed an issue where agents were not switching into <code>Wrap-up Exceeded</code> status after a breakthrough call.
+* Fixed an agent desktop issue where administrators were unable to assign announcements to some teams or agents.
+* Fixed an agent desktop issue where agents couldn't copy text to the clipboard from an agent desktop custom panel.
+* Fixed an agent desktop issue where the term "Anonymous User" wasn't being translated into French.
+* Fixed an issue where the <code>UJET_ID</code> and <code>ANI</code> variables weren't passed correctly for SIP calls.
+* Fixed an issue where the chat adapter froze when agents switched between chats.
+* Fixed an issue on the <strong>Agents</strong> page of the Google Cloud CCaaS portal where administrators couldn't switch between session types.
+* Fixed an issue where a newly added Agent Assist platform displayed as <code>Invalid</code> even though it was valid.
+* Fixed an issue for Salesforce users where the call button didn't work when an agent attempted to call a number that was attached to a record for a previous call.
+* Fixed an issue where audio files with accented characters in their file names failed to play back when using a storage proxy.
+* Fixed an agent desktop issue where the <code>UJET_ID</code> variable in the custom URL for a custom panel wasn't being passed correctly.
+* Fixed an issue where calls originating from a native campaign generated two CRM tickets for the same interaction.
+* Fixed latency issues with web SDK Telnyx calls.
+* Fixed an issue where outbound Bring Your Own Carrier (BYOC) calls used a number other than the one agents selected in the agent adapter.
+* Fixed a Telnyx chatbot worker failure issue where background jobs related to call processing and chatbot escalations were failing and consuming excessive system resources.
+* Fixed an issue where calls to the bulk user upload endpoint returned a success status even when the uploads failed.
+* Fixed an issue in the chat waiting field of the agent desktop when multiple chats were in wrap-up. Instead of displaying <strong>Wrap-up in progress</strong> for all sessions in wrap-up, some sessions displayed <strong>Auto answered</strong>.
+* Fixed an issue in the queue group dashboard where the <strong>Callbacks waiting</strong> tile incorrectly included callbacks that were completed, abandoned, or failed.
+* Fixed an issue that caused inbound calls to disconnect if they were routed to an agent with a disabled microphone.
+* Fixed an issue for HubSpot users where logging the "call started" event (<code>create_activity</code>) in the ticket was delayed.
+* Fixed an issue that prevented transferred calls from being routed to available agents.
+* Fixed an issue in the agent adapter for French (Canada) where words weren't translated or were translated incorrectly.
+* Fixed an issue in call queue reporting where the Failed Reason Description for voice-scheduled mobile calls was not appearing.
+* Fixed an issue that prevented external chat transcripts from being passed into new chat sessions.
+* Fixed an advanced reporting issue where CSAT ratings were not appearing correctly when creating custom dashboards.
+* Fixed an advanced reporting issue where callbacks waiting metrics didn't match in the following dashboards: <strong>Queue Groups Dashboard Calls</strong> and <strong>Queued Calls Status Dashboard</strong>.</p>]]></content>
+    <summary>This release addresses numerous bugs and user experience improvements across the platform. Key fixes include improved chat handling, accurate data redaction, contact list loading, and error resolution for email and call duration tracking. Administrator settings for external storage and agent statistics have also been refined. Additionally, several issues related to Single Sign-On, queue management, and reporting accuracy have been resolved, ensuring a more stable and efficient user experience.</summary>
+    <title>Fixed: Resolved various issues</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,40 @@
 # Google SecOps
 
+## 2025-10-09
+
+### Feature
+
+**Customize Events table columns in Search**
+
+You can now specify which columns appear in the **Events** table on the
+**Search** page and in tables within your dashboard widgets. Use the `select`
+and `unselect` keywords to define the displayed columns.
+
+For more information, see [Control columns using select and unselect keywords](https://cloud.google.com/chronicle/docs/investigation/select-unselect).
+
+---
+## 2025-10-08
+
+### Feature
+
+**Multi-stage queries in YARA-L**
+
+This feature is currently in Preview.
+
+Multi-stage queries in YARA-L are now available as a Preview feature. Multi-stage queries in YARA-L let you feed the output of one query stage directly into the input of a subsequent stage. This process gives you greater control over data transformation than single, monolithic query. They are supported in both **Dashboards** and **Search**. Multi-stage queries can contain between 1 and 4 named stages, in addition to a root stage.
+
+For more information, see [Create multi-stage queries in YARA-L](https://cloud.google.com/chronicle/docs/investigation/multi-stage-yaral).
+
+---
+## 2025-10-07
+
+### Announcement
+
+**Azure AD Organizational Context default parser rollback**
+
+The recent update to the pre-built Azure AD Organizational Context (`AZURE_AD_CONTEXT`) parser has been rolled back. This action was necessary to resolve a performance degradation issue that was introduced in the latest parser version. For more information about the exact changes and rollback timeline, see the [change log for the pre-built parser](https://cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage_parser_updates).
+
+---
 ## 2025-10-06
 
 ### Feature
@@ -66,6 +101,19 @@ Google SecOps has expanded its coverage of Customer-Managed Encryption Key
 
 For more information, see
 [CMEK for Google SecOps](https://cloud.google.com/chronicle/docs/secops/cmek_for_secops).
+
+---
+## 2025-09-30
+
+### Feature
+
+**Customize Events table columns in Search**
+
+You can now specify which columns appear in the **Events** table on the
+**Search** page and in **tables** within your **dashboard widgets**. Use the `select`
+and `unselect` keywords to define the displayed columns.
+
+For more information, see [Control columns using select and unselect keywords](https://cloud.google.com/chronicle/docs/investigation/select-unselect).
 
 ---
 ## 2025-09-28

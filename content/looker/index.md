@@ -1,5 +1,20 @@
 # Looker
 
+## 2025-10-08
+
+### Feature
+
+**Conversational Analytics in Looker**
+
+The following features are now available in [Preview](https://cloud.google.com/products#product-launch-stages) for use with [Conversational Analytics in Looker](https://cloud.google.com/looker/docs/studio/conversational-analytics-looker) instances that are running Looker 25.18 or later:
+
+* New model-specific Looker permissions are available to manage and use the [Conversational Analytics data agents](https://cloud.google.com/looker/docs/studio/conversational-data-agents-looker#before-you-begin) that are created to chat with Looker Explores. You can grant these permissions to users as part of a [custom role](https://cloud.google.com/looker/docs/admin-panel-users-roles#create-custom-roles), or use one of two new [default roles](https://cloud.google.com/looker/docs/admin-panel-users-roles#default_roles), **Conversational Analytics Agent Manager** and **Conversational Analytics User**, to manage and use agents, respectively.
+* You can now select up to five Looker Explores as data sources for a data agent in Looker.
+* You can now [share data agents](https://cloud.google.com/looker/docs/studio/conversational-data-agents-looker#share-data-agents) to let other users chat with your agent and its Explores.
+
+(This release note was updated on October 9, 2025 to correct the Looker version for this release.)
+
+---
 ## 2025-10-06
 
 ### Announcement
@@ -19,9 +34,9 @@ You can now set the Auto Resize Value setting on single value visualizations. Th
 
 The Athena JDBC driver version has been upgraded from 2.1.5 to 2.2.2. The Athena JDBC driver is used for connections to [Amazon Athena](https://cloud.google.com/looker/docs/db-config-amazon-athena).
 
-### Feature
+### Changed
 
-Looker admins can no longer create or edit individual users' API keys. Instead, from the Admin > Users page, admins can enable users to manage their own API keys. Once a user has API key management enabled, they can create, view, edit, and delete their API keys from their Looker account page.
+Conversational Analytics users with the `save_agents` permission can now [share data agents](https://cloud.google.com/looker/docs/studio/conversational-data-agents-looker), which lets other users chat with the data agent and its Explores. (This release note was added on October 9, 2025.)
 
 ### Fixed
 
@@ -97,26 +112,6 @@ An issue has been fixed where certain countries would not be displayed when a cu
 
 ### Feature
 
-The Prerender iframes for custom visualizations feature is now out of Labs and generally available on the Admin > Content Guardrails page.
-
-### Feature
-
-The Smart single value text size feature is now out of Labs and generally available on the Admin > General Settings page.
-
-### Feature
-
-The API endpoint `search_lookml_dashboards` is now out of Labs and generally available. This endpoint is similar to the `search_dashboards` endpoint except that it searches LookML dashboards instead of user-defined dashboards.
-
-### Feature
-
-The Data History Playback Labs feature is is now out of Labs and generally available on the Admin > Settings page.
-
-### Feature
-
-The Reduce Filter Queries Labs feature is now is now out of Labs and generally available on the Admin > Settings page.
-
-### Feature
-
 The Prerender iframes for custom visualizations feature is now generally available on the Admin > Content Guardrails page.
 
 ### Feature
@@ -135,6 +130,30 @@ The Data History Playback feature is now generally available on the Admin > Sett
 
 The Reduce Filter Queries feature is now generally available on the Admin > Settings page
 
+### Feature
+
+Looker admins can no longer create or edit individual users' API keys. Instead, from the Admin > Users page, admins can enable users to manage their own API keys. Once a user has API key management enabled, they can create, view, edit, and delete their API keys from their Looker account page. **Note:** This item was changed on October 9, 2025 to specify that it supports Looker (Google Cloud core) only.
+
+### Feature
+
+The Prerender iframes for custom visualizations feature is now out of Labs and generally available on the Admin > Content Guardrails page.
+
+### Feature
+
+The Smart single value text size feature is now out of Labs and generally available on the Admin > General Settings page.
+
+### Feature
+
+The API endpoint `search_lookml_dashboards` is now out of Labs and generally available. This endpoint is similar to the `search_dashboards` endpoint except that it searches LookML dashboards instead of user-defined dashboards.
+
+### Feature
+
+The Data History Playback Labs feature is is now out of Labs and generally available on the Admin > Settings page.
+
+### Feature
+
+The Reduce Filter Queries Labs feature is now is now out of Labs and generally available on the Admin > Settings page.
+
 ---
 ## 2025-10-02
 
@@ -147,11 +166,13 @@ The `sql_preamble` parameter now [supports Liquid statements](https://cloud.goog
 
 ### Feature
 
-The following features are now available for use with Conversational Analytics:
+The following features are coming soon for use with Conversational Analytics:
 
 * New model-specific Looker permissions are available to [manage](https://cloud.google.com/looker/docs/admin-panel-users-roles#gemini_ca_agent_manager) and [use](https://cloud.google.com/looker/docs/admin-panel-users-roles#gemini_ca_agent_user) the [Conversational Analytics data agents](https://cloud.google.com/looker/docs/studio/conversational-data-agents-looker) that are created to chat with Looker Explores. You can grant these to users as part of a custom role, or use one of two new default roles, [Conversational Analytics Agent Manager](https://cloud.google.com/looker/docs/admin-panel-users-roles#conversational_analytics_agent_manager) and [Conversational Analytics User](https://cloud.google.com/looker/docs/admin-panel-users-roles#conversational_analytics_user), to manage and use agents, respectively.
 * You can now select up to five Looker Explores as data sources for a data agent.
 * You can now [share data agents](https://cloud.google.com/looker/docs/studio/conversational-data-agents-looker#share-data-agents) to let other users chat with your agent and its Explores.
+
+**Note:** This release note was published prematurely and amended on October 8, 2025 to reflect that these features are coming soon.
 
 ---
 ## 2025-09-23

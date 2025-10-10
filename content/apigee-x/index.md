@@ -1,5 +1,27 @@
 # Apigee X
 
+## 2025-10-09
+
+### Deprecated
+
+**Deprecation of the Gemini Code Assist `@Apigee` tool.**
+
+The Gemini Code Assist `@Apigee` tool is deprecated and will be shut down as of October 14, 2025.
+
+See [Gemini Code Assist @Apigee tool deprecation](https://cloud.google.com/apigee/docs/deprecations/apigee-tool) for information.
+
+---
+## 2025-10-07
+
+### Breaking
+
+**Previously unreported customer DNS misconfigurations now result in DNS errors**
+
+Apigee removed the automatic DNS fallback functionality that was in 1-16-0-apigee-2. This removal surfaces customer DNS misconfigurations that previously did not show as DNS errors.
+
+See [Known Issue 445936920](https://cloud.google.com/apigee/docs/release/known-issues#445936920).
+
+---
 ## 2025-09-12
 
 ### Announcement

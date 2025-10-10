@@ -1,5 +1,16 @@
 # Bigtable
 
+## 2025-10-07
+
+### Feature
+
+The [Cassandra-Bigtable proxy adapter](https://cloud.google.com/bigtable/docs/migrate-from-cassandra), which lets you connect your Apache Cassandra-based applications to Bigtable, is generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
+
+### Feature
+
+You can connect to Bigtable from Java applications and other reporting tools that support a generic JDBC adapter by using the [Bigtable JDBC driver](https://cloud.google.com/bigtable/docs/reference/jdbc). This feature is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-10-06
 
 ### Feature

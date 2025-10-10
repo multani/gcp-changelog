@@ -1,13 +1,14 @@
 # Cloud Composer
 
+## 2025-10-09
+
+### Feature
+
+[Upgrade checks](https://cloud.google.com/composer/docs/composer-3/upgrade-environments#upgrade-check)
+are now generally available (GA) in Cloud Composer 3 and Cloud Composer 2.
+
+---
 ## 2025-09-30
-
-### Announcement
-
-A new Cloud Composer release has started on **September 30, 2025**. Get ready
-for upcoming changes and features as we roll out the new release to all regions.
-This release is in progress at the moment. Listed changes and features might
-not be available in some regions yet.
 
 ### Fixed
 
@@ -68,11 +69,6 @@ composer-2.9.4-\*, and composer-3-airflow-2.9.1 builds from build.0 to build.7.
 ---
 ## 2025-09-11
 
-### Fixed
-
-Fixed Airflow logs not exporting to Cloud Logging because of a GKE version
-mismatch between Airflow worker and GKE Control plane nodes.
-
 ### Changed
 
 New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3)
@@ -93,6 +89,11 @@ are available in Cloud Composer 2:
 
 Fixed an issue where values of Airflow configuration options were evaluated
 before being set. As a result, the actual value was set to the evaluated result.
+
+### Fixed
+
+Fixed Airflow logs not exporting to Cloud Logging because of a GKE version
+mismatch between Airflow worker and GKE Control plane nodes.
 
 ---
 ## 2025-09-03

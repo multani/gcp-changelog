@@ -1301,6 +1301,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Gemini enterprise <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../gemini-enterprise/" class="dropdown-item">Gemini Enterprise</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Gemini on gdc api on gdc connected <b class="caret"></b>
                         </a>
 
@@ -1536,6 +1548,18 @@
                             
   <li>
     <a href="../identity-aware-proxy/" class="dropdown-item">Identity-Aware Proxy</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Kf <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../kf/" class="dropdown-item">Kf</a>
   </li>
                         </ul>
                       </li>
@@ -2016,10 +2040,50 @@
 
 
 <h1 id="config-connector">Config Connector</h1>
-<h2 id="2025-09-24">2025-09-24</h2>
+<h2 id="2025-10-07">2025-10-07</h2>
 <h3 id="announcement">Announcement</h3>
-<p>Config Connector version 1.134.1 is now available.</p>
+<p>Config Connector version 1.136.1 is now available.</p>
+<h3 id="changed">Changed</h3>
+<p>New Beta Resources (Direct Reconciler):</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/asset/assetfeed"><code>AssetFeed</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/bigqueryreservation/bigqueryreservationassignment"><code>BigQueryReservationAssignment</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/clouddeploy/clouddeploydeliverypipeline"><code>CloudDeployDeliveryPipeline</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/composer/composerenvironment"><code>ComposerEnvironment</code></a></li>
+</ul>
+<h3 id="feature">Feature</h3>
+<p>New Fields:</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/composer/composerenvironment"><code>ComposerEnvironment</code></a></li>
+<li>Added <code>spec.storageConfig</code> field.</li>
+<li>Added <code>spec.config.workloadsConfig.dagProcessor</code> field.</li>
+<li>Added <code>spec.config.workloadsConfig.triggerer</code> field.</li>
+<li>Added <code>spec.config.softwareConfig.webServerPluginsMode</code> field.</li>
+<li>Added <code>spec.config.softwareConfig.cloudDataLineageIntegration</code> field.</li>
+</ul>
+<h3 id="changed_1">Changed</h3>
+<p>Reconciliation Improvements:</p>
+<ul>
+<li>Introduced <a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/blob/master/docs/designs/stateful-reconciliation-with-cookie.md">Stateful Reconciliation for Direct Controllers</a>. With stateful reconciliation, the direct controller stores a hash of the last successfully applied <code>.spec</code> in the resource's <code>.status</code>. This provides a lightweight, GitOps-safe record when a user has modified the desired state of the resource.</li>
+</ul>
 <h3 id="fixed">Fixed</h3>
+<p>Bug Fixes:</p>
+<ul>
+<li>Added support for checking <code>etag</code> in spec for alpha resources.</li>
+<li>Fixed an issue where <code>CloudIdentityMembership</code> roles comparison would fail.</li>
+<li>Fixed a bug where the wrong GVK was reported in IAM controller.</li>
+<li>Fixed a bug where errors were swallowed when reading a Secret.</li>
+<li>Fixed an issue with LRO endTime in mockgcp.</li>
+<li>Fixed a bug in the <code>etag</code> mapper.</li>
+<li>Fixed a bug in the mapper generator for slice and single object map.</li>
+<li>Fixed a bug in the mapper generator for OneOf if the input is not proto.Message.</li>
+<li>Fixed an import for refs in the same package in <code>controllerbuilder</code>.</li>
+</ul>
+<hr />
+<h2 id="2025-09-24">2025-09-24</h2>
+<h3 id="announcement_1">Announcement</h3>
+<p>Config Connector version 1.134.1 is now available.</p>
+<h3 id="fixed_1">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/5230">#5230</a>: Fixed an issue that could lead to premature certificate rotation by ensuring errors are not swallowed when reading a Secret.</li>
@@ -2027,27 +2091,27 @@
 </ul>
 <hr />
 <h2 id="2025-09-22">2025-09-22</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p>Config Connector version 1.135.0 is now available.</p>
-<h3 id="changed">Changed</h3>
+<h3 id="changed_2">Changed</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
 <ul>
 <li><code>AssetSavedQuery</code></li>
 <li><code>PubSubSnapshot</code></li>
 </ul>
-<h3 id="changed_1">Changed</h3>
+<h3 id="changed_3">Changed</h3>
 <p>Modified Beta Reconciliation:
 We migrated the following resources from the Terraform-based or DCL-based controller to the new Direct Controller.</p>
 <ul>
 <li><code>VMWareEngineExternalAddress</code></li>
 </ul>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_1">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><code>AlloyDBCluster</code></li>
 <li>Added <code>spec.databaseVersion</code> field</li>
 </ul>
-<h3 id="fixed_1">Fixed</h3>
+<h3 id="fixed_2">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/5009">PR#5009</a>
@@ -2055,20 +2119,20 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 </ul>
 <hr />
 <h2 id="2025-09-03">2025-09-03</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p>Config Connector version 1.134.0 is now available.</p>
-<h3 id="changed_2">Changed</h3>
+<h3 id="changed_4">Changed</h3>
 <p>Improved reconciliation by migrating the following resources from the Terraform-based or DCL-based controller to the new direct controller. These resources are migrated automatically and you no longer need to apply the <code>opt-in</code> annotation to enable the direct controller:</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/cloudidentity/cloudidentitygroup"><code>CloudIdentityGroup</code></a></li>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/cloudidentity/cloudidentitymembership"><code>CloudIdentityMembership</code></a></li>
 </ul>
-<h3 id="changed_3">Changed</h3>
+<h3 id="changed_5">Changed</h3>
 <p>New Fields:</p>
 <ul>
 <li><code>ContainerCluster</code>: DNS endpoint is supported in ContainerCluster.</li>
 </ul>
-<h3 id="fixed_2">Fixed</h3>
+<h3 id="fixed_3">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li><code>ConfigConnectorContext</code>:</li>
@@ -2081,21 +2145,21 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 </ul>
 <hr />
 <h2 id="2025-07-30">2025-07-30</h2>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p>Config Connector version 1.133.0 is now available.</p>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/docs/reference/resource-docs/apigateway/apigatewayapi.md"><code>APIGatewayAPI</code></a></li>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/docs/reference/resource-docs/apphub/apphubapplication.md"><code>AppHubApplication</code></a></li>
 <li><code>StorageAnywhereCache</code></li>
 </ul>
-<h3 id="changed_4">Changed</h3>
+<h3 id="changed_6">Changed</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
 <ul>
 <li><code>BigtableLogicalView</code></li>
 </ul>
-<h3 id="changed_5">Changed</h3>
+<h3 id="changed_7">Changed</h3>
 <p>Reconciliation Improvements</p>
 <p>Added support for direct reconciliation to more resources, with opt-in behaviour. The API is backward compatible. The following resources now have direct reconciliation support</p>
 <ul>
@@ -2103,7 +2167,7 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 <li>Use the <code>alpha.cnrm.cloud.google.com/reconciler: direct</code> annotation on the <code>BigQueryTable</code> CR object to opt-in the direct controller.</li>
 <li>The direct controller also supports adding BigQueryDataPolicies directly to BigQueryTable columns within <code>spec.schema</code>.</li>
 </ul>
-<h3 id="fixed_3">Fixed</h3>
+<h3 id="fixed_4">Fixed</h3>
 <ul>
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/4808">PR#4808</a>
   filtered out Kubernetes labels that are invalid for Google Cloud in the
@@ -2112,9 +2176,9 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 </ul>
 <hr />
 <h2 id="2025-07-14">2025-07-14</h2>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p>Config Connector version 1.132.1 is now available.</p>
-<h3 id="changed_6">Changed</h3>
+<h3 id="changed_8">Changed</h3>
 <p>Reconciliation Improvements:</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/spanner/spannerinstance">SpannerInstance</a></li>
@@ -2131,9 +2195,9 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 </ul>
 <hr />
 <h2 id="2025-06-10">2025-06-10</h2>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_6">Announcement</h3>
 <p>Config Connector version 1.132.0 is now available.</p>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/speech/speechcustomclass"><code>SpeechCustomClass</code></a></li>
@@ -2142,7 +2206,7 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/notebooks/notebookinstance"><code>VertexAINotebooksInstance</code></a></li>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/vertexai/vertexaimetadatastore"><code>VertexAIMetadataStore</code></a></li>
 </ul>
-<h3 id="changed_7">Changed</h3>
+<h3 id="changed_9">Changed</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
 <ul>
 <li><code>OrgPolicyPolicy</code></li>
@@ -2150,7 +2214,7 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 <li><code>SpeechRecognizer</code></li>
 <li><code>StorageAnywhereCache</code></li>
 </ul>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/spanner/spannerinstance">SpannerInstance</a>
@@ -2172,6 +2236,9 @@ We migrated the following resources from the Terraform-based or DCL-based contro
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#config-connector">Config Connector</a></li>
+          <li class="nav-item">
+            <a href="#2025-10-07" class="nav-link">2025-10-07</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-09-24" class="nav-link">2025-09-24</a>
           </li>

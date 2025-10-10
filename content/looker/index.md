@@ -1,5 +1,20 @@
 # Looker
 
+## 2025-10-10
+
+### Feature
+
+**Conversational Analytics in Looker**
+
+The following features are available in [Preview](https://cloud.google.com/products#product-launch-stages) for use with [Conversational Analytics in Looker](https://cloud.google.com/looker/docs/studio/conversational-analytics-looker) instances that are running Looker 25.18.9 or later:
+
+* New model-specific Looker permissions are available to manage and use the [Conversational Analytics data agents](https://cloud.google.com/looker/docs/studio/conversational-data-agents-looker#before-you-begin) that are created to chat with Looker Explores. You can grant these permissions to users as part of a [custom role](https://cloud.google.com/looker/docs/admin-panel-users-roles#create-custom-roles), or use one of two new [default roles](https://cloud.google.com/looker/docs/admin-panel-users-roles#default_roles), **Conversational Analytics Agent Manager** and **Conversational Analytics User**, to manage and use agents, respectively.
+* You can now select up to five Looker Explores as data sources for a data agent in Looker.
+* You can now [share data agents](https://cloud.google.com/looker/docs/studio/conversational-data-agents-looker#share-data-agents) to let other users chat with your agent and its Explores.
+
+(This release note was updated on October 9, 2025 to correct the Looker version for this release.)
+
+---
 ## 2025-10-08
 
 ### Feature

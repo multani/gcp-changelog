@@ -2,10 +2,6 @@
 
 ## 2025-10-07
 
-### Announcement
-
-
-
 ### hybrid v1.14.3
 
 On October 7, 2025 we released an enhancement to Apigee hybrid version 1.14.3, recurring, top-up, and setup fees for Apigee hybrid monetization.

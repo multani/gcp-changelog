@@ -2,10 +2,6 @@
 
 ## 2025-10-08
 
-### Feature
-
-
-
 ### Next Edit Predictions in IntelliJ (Preview)
 
 [Next Edit Predictions](https://cloud.google.com/gemini/docs/codeassist/write-code-gemini#use_next_edit_predictions),
@@ -20,10 +16,6 @@ and continue coding.
 in your IDE to get started.
 
 ![Next Edit Predictions in IntelliJ Gemini Code Assist.](https://cloud.google.com/gemini/images/release-notes-images/intellij-next-edit.gif)
-
-### Feature
-
-
 
 ### Chat code suggestion preview in IntelliJ
 

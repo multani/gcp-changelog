@@ -2,9 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Build</title>
   <subtitle>Changelog for Google Cloud product: Cloud Build</subtitle>
-  <updated>2025-09-29T00:00:00+00:00</updated>
+  <updated>2025-10-09T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-build</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-build/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-build:2025-10-09:changed:0</id>
+    <published>2025-10-09T00:00:00+00:00</published>
+    <updated>2025-10-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Service Account User role has been removed from the Cloud Build Permissions page in the Google Cloud Console. Instead, when you enable certain roles on your Cloud Build service account, you can configure your Cloud Build Service account to impersonate the service account of the managed services related to those roles. This configuration lets you deploy builds using managed services while maintaining minimal permissions. For more information, see <a href="https://cloud.google.com/build/docs/deploying-builds/cb-sa-imp">Configure Cloud Build service account impersonation for managed services</a>.</p>
+<p>In addition, the Cloud Build Permissions page in the Google Cloud Console will only show the <a href="https://cloud.google.com/build/docs/cloud-build-service-account#about_legacy">legacy Cloud Build service account</a> if your organization's policy allows it.</p>]]></content>
+    <summary>The Service Account User role is no longer available on the Cloud Build Permissions page. You can now configure your Cloud Build service account to impersonate the service account of managed services, allowing for more granular control and enhanced security during deployments. Legacy service account visibility is now subject to organization policy.</summary>
+    <title>Changed: Cloud Build Service Account Permissions Updated</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

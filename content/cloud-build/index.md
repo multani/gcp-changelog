@@ -1,5 +1,14 @@
 # Cloud Build
 
+## 2025-10-09
+
+### Changed
+
+The Service Account User role has been removed from the Cloud Build Permissions page in the Google Cloud Console. Instead, when you enable certain roles on your Cloud Build service account, you can configure your Cloud Build Service account to impersonate the service account of the managed services related to those roles. This configuration lets you deploy builds using managed services while maintaining minimal permissions. For more information, see [Configure Cloud Build service account impersonation for managed services](https://cloud.google.com/build/docs/deploying-builds/cb-sa-imp).
+
+In addition, the Cloud Build Permissions page in the Google Cloud Console will only show the [legacy Cloud Build service account](https://cloud.google.com/build/docs/cloud-build-service-account#about_legacy) if your organization's policy allows it.
+
+---
 ## 2025-09-29
 
 ### Feature

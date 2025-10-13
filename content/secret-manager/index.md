@@ -1,5 +1,14 @@
 # Secret Manager
 
+## 2025-10-13
+
+### Feature
+
+**Preview:** Integrated secret synchronization feature is now available in preview. You can automatically synchronize secrets from Secret Manager into Kubernetes Secret objects within your Google Kubernetes Engine (GKE) clusters. This process allows applications to access secrets from Secret Manager using standard Kubernetes methods, such as environment variables or volume mounts. Applications that are already configured to read secrets from Kubernetes Secret object can now seamlessly read secrets in Secret Manager.
+
+For more information, see [Synchronize secrets to Kubernetes Secrets](https://cloud.google.com/secret-manager/docs/sync-k8-secrets).
+
+---
 ## 2025-09-01
 
 ### Feature

@@ -2,9 +2,139 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee hybrid</title>
   <subtitle>Changelog for Google Cloud product: Apigee hybrid</subtitle>
-  <updated>2025-10-07T00:00:00+00:00</updated>
+  <updated>2025-10-12T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-hybrid</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-hybrid/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2025-10-12:announcement:0</id>
+    <published>2025-10-12T00:00:00+00:00</published>
+    <updated>2025-10-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary>Discover the latest features designed to enhance your experience. We've added new tools and improved existing ones to make your workflow smoother and more efficient.</summary>
+    <title>Announcement: New features are available!</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2025-10-12:hybrid v1.15.1:1</id>
+    <published>2025-10-12T00:00:00+00:00</published>
+    <updated>2025-10-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On October 12, 2025 we released an updated version of the Apigee hybrid software, 1.15.1.</p>
+<ul>
+<li>For information on upgrading, see <a href="https://cloud.google.com/apigee/docs/hybrid/v1.15/upgrade">Upgrading Apigee hybrid to version 1.15</a>.</li>
+<li>For information on new installations, see <a href="https://cloud.google.com/apigee/docs/hybrid/v1.15/big-picture">The big picture</a>.</li>
+</ul>
+<p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>]]></content>
+    <summary>A new version of Apigee hybrid, 1.15.1, has been released.</summary>
+    <title>hybrid v1.15.1: Apigee hybrid 1.15.1 released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2025-10-12:feature:2</id>
+    <published>2025-10-12T00:00:00+00:00</published>
+    <updated>2025-10-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Recurring, top-up, and setup fees for Apigee hybrid monetization</strong></p>
+<p>Apigee hybrid now supports recurring, top-up, and setup fees for monetization. For information see <a href="https://cloud.google.com/apigee/docs/hybrid/v1.15/monetization-for-hybrid">Enabling monetization for Apigee hybrid</a>.</p>]]></content>
+    <summary>Apigee hybrid now supports recurring, top-up, and setup fees for monetization.</summary>
+    <title>Feature: Recurring, top-up, and setup fees for Apigee hybrid monetization</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2025-10-12:feature:3</id>
+    <published>2025-10-12T00:00:00+00:00</published>
+    <updated>2025-10-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Apigee policies for LLM/GenAI workloads</strong></p>
+<p>Apigee hybrid now supports the following Apigee policies with support for LLM/GenAI workloads.</p>
+<ul>
+<li><a href="https://cloud.google.com/apigee/docs/api-platform/reference/policies/semantic-cache-lookup-policy">SemanticCacheLookup policy</a></li>
+<li><a href="https://cloud.google.com/apigee/docs/api-platform/reference/policies/semantic-cache-populate-policy">SemanticCachePopulate policy</a></li>
+<li><a href="https://cloud.google.com/apigee/docs/api-platform/reference/policies/sanitize-user-prompt-policy">SanitizeUserPrompt</a></li>
+<li><a href="https://cloud.google.com/apigee/docs/api-platform/reference/policies/sanitize-user-prompt-policy">SanitizeModelResponse</a></li>
+</ul>
+<p>The Apigee semantic caching policies enable intelligent response reuse based on semantic similarity. Using these policies in your Apigee API proxies can minimize redundant backend API calls, reduce latency, and lower operational costs. With this release, the semantic caching policies support URL templating, enabling the use of variables for AI model endpoint values.</p>
+<p>The Model Armor policies protect your AI applications by sanitizing user prompts to and responses from large language models (LLMs). Using these policies in your Apigee API proxies can mitigate the risks associated with LLM usage by leveraging Model Armor to detect prompt injection, prevent jailbreak attacks, apply responsible AI filters, filter malicious URLs, and protect sensitive data.</p>
+<p><strong>Note:</strong> In Apigee hybrid, this feature has the following limitations:</p>
+<ul>
+<li>Support for these policies is limited to installations on Google Cloud Platform.</li>
+<li>Apigee hybrid does not support forward proxy with these policies.</li>
+</ul>
+<p>For more information on using these policies in your Apigee API proxies, see:</p>
+<ul>
+<li><a href="https://cloud.google.com/apigee/docs/api-platform/tutorials/using-semantic-caching-policies">Get started with semantic caching policies</a></li>
+<li><a href="https://cloud.google.com/apigee/docs/api-platform/tutorials/using-model-armor-policies">Get started with Apigee Model Armor policies</a></li>
+</ul>]]></content>
+    <summary>Apigee hybrid now supports new policies for LLM/GenAI workloads, including Semantic Cache and Model Armor policies. These policies enhance AI application security and efficiency by enabling intelligent response reuse and protecting against prompt injection and other risks. Support is limited to installations on Google Cloud Platform.</summary>
+    <title>Feature: New policies for LLM/GenAI workloads</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2025-10-12:fixed:4</id>
+    <published>2025-10-12T00:00:00+00:00</published>
+    <updated>2025-10-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| <strong>445912919</strong> | <strong>Unused files and folders have been removed from the Apigee hybrid Helm charts to prevent potential security exposure and streamline the product installation and upgrade process.</strong> |
+| <strong>442501403</strong> | <strong>Fixed an issue that caused incorrect target latency metrics in Apigee Analytics when a <code>TargetEndpoint</code> is configured with a <code>&lt;LoadBalancer&gt;</code>.</strong> |
+| <strong>437999897</strong> | <strong>Reduced the log level for failed geo IP lookups to address excessive log messages for private IP addresses.</strong> |
+| <strong>431930277</strong>, <strong>395272878</strong> | <strong>When the configuration property <a href="https://cloud.google.com/apigee/docs/hybrid/v1.15/config-prop-ref#envs-managementcallsskipproxy"><code>envs.managementCallsSkipProxy</code></a> is set to <code>true</code> via helm for environment-level forward proxy, trace and analytics (which use <code>googleapis.com</code>) will skip forward proxy.</strong> |
+| <strong>423597917</strong> | <strong>Post of an <a href="https://cloud.google.com/apigee/docs/reference/apis/apigee/rest/v1/organizations.appgroups.apps.keys/updateAppGroupAppKey"><code>AppGroupAppKey</code></a> scopes should result in insert operation instead of update.</strong> |
+| <strong>419578402</strong> | <strong>Mint-Mart forward proxy compatible.</strong> |
+| <strong>412740465</strong> | <strong>Fixed issue where zipkin headers were not generated by Apigee Ingress Gateway.</strong> |
+| <strong>409048431</strong> | <strong>Fixes a vulnerability which could allow a SAML signature verification to be bypassed.</strong> |
+| <strong>378686709</strong> | <strong>The use of wildcards (*) in Apigee proxy basepaths would conflict with other explicit basepaths, resulting in a 404 error.</strong> To apply this fix, follow the procedure in <a href="https://cloud.google.com/apigee/docs/release/known-issues#378686709">Known issue 378686709</a>. |
+| <strong>367815792</strong> | <strong>Two new Flow Variables: <code>app_group_app</code> and <code>app_group_name</code> have been added to VerifyApiKey and Access Token policy.</strong> |</p>]]></content>
+    <summary>This release includes several fixes for Apigee Hybrid, addressing issues related to security, metrics, logging, configuration, and API behavior. Key fixes include removing unused files from Helm charts, correcting target latency metrics, reducing log levels for geo IP lookups, and resolving conflicts with proxy basepaths.</summary>
+    <title>Fixed: Apigee Hybrid Fixes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2025-10-12:security:5</id>
+    <published>2025-10-12T00:00:00+00:00</published>
+    <updated>2025-10-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| <strong>448498138</strong> | <strong>Security fixes for <code>apigee-runtime</code>.</strong>  This addresses the following vulnerability:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-40094">CVE-2024-40094</a> |
+| <strong>447367372</strong> | <strong>Security fixes for <code>apigee-runtime</code>.</strong>  This addresses the following vulnerability:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-58057">CVE-2025-58057</a> |
+| <strong>418557195</strong> | <strong>Security fixes for <code>apigee-fluent-bit</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-24528">CVE-2025-24528</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-4207">CVE-2025-4207</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-1390">CVE-2025-1390</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-26462">CVE-2024-26462</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-13176">CVE-2024-13176</a> |
+| <strong>N/A</strong> | <strong>Security fixes for <code>apigee-fluent-bit</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-32990">CVE-2025-32990</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-32988">CVE-2025-32988</a> |
+| <strong>N/A</strong> | <strong>Security fixes for <code>apigee-hybrid-cassandra</code>.</strong>  This addresses the following vulnerability:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-23015">CVE-2025-23015</a> |
+| <strong>N/A</strong> | <strong>Security fixes for <code>apigee-mart-server</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-58057">CVE-2025-58057</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-58056">CVE-2025-58056</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-55163">CVE-2025-55163</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-48924">CVE-2025-48924</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-48795">CVE-2025-48795</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-48734">CVE-2025-48734</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-24970">CVE-2025-24970</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-47554">CVE-2024-47554</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-47535">CVE-2024-47535</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-13009">CVE-2024-13009</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-8184">CVE-2024-8184</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-7254">CVE-2024-7254</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-6763">CVE-2024-6763</a> |
+| <strong>N/A</strong> | <strong>Security fixes for <code>apigee-stackdriver-logging-agent</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-58767">CVE-2025-58767</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-24294">CVE-2025-24294</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-33953">CVE-2023-33953</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-32511">CVE-2022-32511</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-29181">CVE-2022-29181</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-24839">CVE-2022-24839</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-24836">CVE-2022-24836</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-0759">CVE-2022-0759</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-41817">CVE-2021-41817</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-31799">CVE-2021-31799</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-30560">CVE-2021-30560</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-28965">CVE-2021-28965</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-23214">CVE-2021-23214</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2020-25695">CVE-2020-25695</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2020-25694">CVE-2020-25694</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2020-25613">CVE-2020-25613</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2019-3881">CVE-2019-3881</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2018-25032">CVE-2018-25032</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2018-1115">CVE-2018-1115</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2018-10915">CVE-2018-10915</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2018-1058">CVE-2018-1058</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2018-1053">CVE-2018-1053</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2017-7546">CVE-2017-7546</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2017-7484">CVE-2017-7484</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2017-15098">CVE-2017-15098</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2017-14798">CVE-2017-14798</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2016-7954">CVE-2016-7954</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2016-7048">CVE-2016-7048</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2016-5424">CVE-2016-5424</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2016-5423">CVE-2016-5423</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2016-0766">CVE-2016-0766</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2015-3167">CVE-2015-3167</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2015-3166">CVE-2015-3166</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2015-0244">CVE-2015-0244</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2015-0243">CVE-2015-0243</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2015-0241">CVE-2015-0241</a> |</p>]]></content>
+    <summary>This release includes critical security fixes for apigee-runtime, apigee-fluent-bit, apigee-hybrid-cassandra, apigee-mart-server, and apigee-stackdriver-logging-agent. These updates address multiple vulnerabilities, including CVE-2024-40094, CVE-2025-58057, and others, to enhance the security of your Apigee environment.</summary>
+    <title>Security: Security Updates for Apigee Components</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2025-10-12:changed:6</id>
+    <published>2025-10-12T00:00:00+00:00</published>
+    <updated>2025-10-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Documentation change</strong></p>
+<p>The following documents have been changed or introduced to align the Apigee hybrid installation guides with the supported methods for service account authentication:</p>
+<ul>
+<li><a href="https://cloud.google.com/apigee/docs/hybrid/v1.15/sa-authentication-methods">Service account authentication methods in Apigee hybrid</a> - A new overview topic for service account authentication.</li>
+<li><a href="https://cloud.google.com/apigee/docs/hybrid/v1.15/storing-sa-keys-in-k8s-secrets">Storing service account keys in Kubernetes secrets</a> - A new topic.</li>
+<li><a href="https://cloud.google.com/apigee/docs/hybrid/v1.15/install-service-accounts">Step 4: Create service accounts</a> - Rewritten to accommodate all supported methods of service account authentication.</li>
+<li><a href="https://cloud.google.com/apigee/docs/hybrid/v1.15/install-sa-authentication">Step 5: Set up service account authentication</a> - A new topic on configuring authentication after creating service accounts.</li>
+<li><a href="https://cloud.google.com/apigee/docs/hybrid/v1.15/install-create-overrides">Step 7: Create the overrides</a> and <a href="https://cloud.google.com/apigee/docs/hybrid/v1.15/install-helm-charts">Step 11: Install Apigee hybrid Using Helm</a> - Topics revised to provide templates, examples, and procedures for each supported type of service account authentication.</li>
+<li><strong>Step 11(Optional): Configure Workload Identity</strong> - Topic removed. The procedures are included in <a href="https://cloud.google.com/apigee/docs/hybrid/v1.15/install-helm-charts.html#wif-for-gke">Step 11: Install Apigee hybrid Using Helm: WIF for GKE</a></li>
+</ul>]]></content>
+    <summary>Documentation for Apigee hybrid has been updated to align with supported service account authentication methods. This includes new and revised topics covering service account key storage, creation, and authentication setup. The Workload Identity configuration has been integrated into the Helm installation topic.</summary>
+    <title>Changed: Apigee hybrid service account authentication updated</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

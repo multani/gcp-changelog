@@ -1,15 +1,497 @@
 {
   "name": "Container Optimized OS",
   "entries": {
-    "2025-10-09": [
+    "2025-10-13": [
       {
         "kind": "Changed",
         "content": "",
         "summary": {
-          "title": "New Features Available",
-          "summary": "We're excited to announce new features that will enhance your experience. These updates are designed to improve efficiency and provide more value."
+          "title": "New Features",
+          "summary": "We're excited to announce new features to improve your experience. These updates include enhanced performance and new functionalities designed to streamline your workflow. Explore the latest additions and discover how they can benefit you."
         }
       },
+      {
+        "kind": "cos-dev-129-19319-0-0",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.50](https://cos.googlesource.com/third_party/kernel/+/3c1532a68eb1ef3c5e11dc5b860713612086c4ce ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19319.0.0/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS Announcement",
+          "summary": "New COS version available. Includes updates to Kernel, Docker, and Containerd. GPU driver information is also updated."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated the Linux kernel to v6.12.50.",
+        "summary": {
+          "title": "Linux Kernel Updated",
+          "summary": "The Linux kernel has been updated to v6.12.50."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added support for NVIDIA driver v580.95.05. Updated all latest driver version and default driver versions for NVIDIA\\_GB200 and NVIDIA\\_B200 to v580.95.05.",
+        "summary": {
+          "title": "NVIDIA Driver Update",
+          "summary": "NVIDIA driver updated to v580.95.05 for GB200 and B200."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-containers/docker-credential-helpers to v0.9.4.",
+        "summary": {
+          "title": "Docker credential helpers updated",
+          "summary": "Docker credential helpers have been updated to version 0.9.4."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated toolbox container image tag to v20251002.",
+        "summary": {
+          "title": "Toolbox container image updated",
+          "summary": "The toolbox container image tag has been updated to v20251002."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/google-breakpad to v2025.10.06.205107-r254.",
+        "summary": {
+          "title": "ChromeOS Breakpad Upgrade",
+          "summary": "ChromeOS Breakpad has been upgraded to version 2025.10.06.205107-r254."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/expat to v2.7.3.",
+        "summary": {
+          "title": "expat v2.7.3 upgrade",
+          "summary": "The dev-libs/expat package has been upgraded to version 2.7.3."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/hwdata to v0.399.",
+        "summary": {
+          "title": "Upgraded hwdata to v0.399",
+          "summary": "The hwdata package has been updated to version 0.399."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-libs/libtirpc to v1.3.7.",
+        "summary": {
+          "title": "libtirpc upgrade",
+          "summary": "The net-libs/libtirpc package has been upgraded to version 1.3.7."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Partially fixed an issue where excessive contention among writeback kworkers when switching a large number of inodes between cgroups could lead to system unresponsiveness.",
+        "summary": {
+          "title": "System responsiveness improved",
+          "summary": "Addressed an issue causing system unresponsiveness due to writeback kworker contention when handling numerous inode switches between cgroups."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded open-vm-tools to 13.0.5. This fixes CVE-2025-41244 in anthos variant.",
+        "summary": {
+          "title": "Security Update for Anthos",
+          "summary": "We have upgraded open-vm-tools to version 13.0.5, addressing CVE-2025-41244 in the Anthos variant."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-11081, CVE-2025-11082 and CVE-2025-11083 in sys-libs/binutils-libs.",
+        "summary": {
+          "title": "Security Updates for Binutils",
+          "summary": "Security vulnerabilities CVE-2025-11081, CVE-2025-11082, and CVE-2025-11083 have been fixed in sys-libs/binutils-libs. This update ensures the security and integrity of the system."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated dev-python/urllib3 to v2.5.0. This resolves\nCVE-2025-50181.",
+        "summary": {
+          "title": "Security Update for urllib3",
+          "summary": "The urllib3 library has been updated to version 2.5.0, addressing a security vulnerability (CVE-2025-50181)."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated sys-apps/coreutils to v9.5. This resolves\nCVE-2024-0684.",
+        "summary": {
+          "title": "Security update for coreutils",
+          "summary": "Updated sys-apps/coreutils to v9.5 to resolve CVE-2024-0684."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-134121b in the Linux kernel.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "A security vulnerability in the Linux kernel has been addressed."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811493 -> 811438\n* Changed: net.ipv4.udp\\_mem: 188034 250714 376068 -> 188034 250715 376068",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "Runtime sysctl parameters fs.file-max and net.ipv4.udp_mem have been updated."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "New Features",
+          "summary": "We're excited to announce new features to improve your experience. These updates are designed to streamline workflows and enhance performance. Explore the latest enhancements today!"
+        }
+      },
+      {
+        "kind": "cos-121-18867-199-98",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.105](https://cos.googlesource.com/third_party/kernel/+/45bce2b8e465ad477610e2c5d7562a63161c2e93 ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.199.98/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "New COS Announcement",
+          "summary": "We are announcing a new COS version: cos-121-18867-199-98. This version includes updates to the Kernel, Docker, Containerd, and GPU Drivers."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added support for NVIDIA driver v580.95.05. Updated all latest driver version and default driver versions for NVIDIA\\_GB200 and NVIDIA\\_B200 to v580.95.05.",
+        "summary": {
+          "title": "NVIDIA Driver Update",
+          "summary": "NVIDIA driver updated to v580.95.05 for GB200 and B200 instances."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/node-problem-detector to v0.8.22.",
+        "summary": {
+          "title": "Node Problem Detector upgraded",
+          "summary": "The node-problem-detector has been upgraded to v0.8.22."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated toolbox container image tag to v20251002.",
+        "summary": {
+          "title": "Updated toolbox container image tag",
+          "summary": "The toolbox container image tag has been updated to v20251002."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/hwdata to v0.399.",
+        "summary": {
+          "title": "Upgraded hwdata package",
+          "summary": "The hwdata package has been updated to version 0.399."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Partially fixed an issue where excessive contention among writeback kworkers when switching a large number of inodes between cgroups could lead to system unresponsiveness.",
+        "summary": {
+          "title": "Writeback kworker contention fixed",
+          "summary": "Resolved an issue causing system unresponsiveness due to excessive contention among writeback kworkers when handling a large number of inode switches between cgroups."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-41244 in app-emulation/open-vm-tools in\nanthos variant.",
+        "summary": {
+          "title": "Fixed vulnerability in open-vm-tools",
+          "summary": "A security vulnerability (CVE-2025-41244) in app-emulation/open-vm-tools has been addressed in the Anthos variant."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-11081, CVE-2025-11082 and CVE-2025-11083 in sys-libs/binutils-libs.",
+        "summary": {
+          "title": "Security Updates",
+          "summary": "Fixed multiple CVEs in binutils-libs."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-23143 in the Linux kernel.",
+        "summary": {
+          "title": "Security Update for Linux Kernel",
+          "summary": "A critical vulnerability in the Linux kernel, CVE-2025-23143, has been successfully fixed."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-39947 in the Linux kernel.",
+        "summary": {
+          "title": "Security Update for Linux Kernel",
+          "summary": "A security vulnerability (CVE-2025-39947) in the Linux kernel has been addressed. This update ensures the security and integrity of systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-134121b in the Linux kernel.",
+        "summary": {
+          "title": "Security Fix in Linux Kernel",
+          "summary": "A security vulnerability, KCTF-134121b, has been addressed in the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-39931 in the Linux kernel.",
+        "summary": {
+          "title": "Security update for Linux kernel",
+          "summary": "A security vulnerability in the Linux kernel has been fixed."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-39953 in the Linux kernel.",
+        "summary": {
+          "title": "Fixed Linux Kernel Vulnerability",
+          "summary": "A critical vulnerability in the Linux kernel has been resolved."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811724 -> 811792",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "The maximum number of files the system can have open has been increased from 811724 to 811792."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "New features are available!",
+          "summary": "We are happy to announce that new features are available now. We have improved the performance and added new functionalities to make your experience even better. Visit our website to learn more about the updates and how to use them."
+        }
+      },
+      {
+        "kind": "cos-125-19216-0-87",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.46](https://cos.googlesource.com/third_party/kernel/+/5ee1685d45ceceb19bdc81e90ae4e54c24ab561a ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19216.0.87/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container-Optimized OS 19216.0.87 Release",
+          "summary": "This release includes updates to the kernel, Docker, and Containerd, along with GPU driver information."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added support for NVIDIA driver v580.95.05. Updated all latest driver version and default driver versions for NVIDIA\\_GB200 and NVIDIA\\_B200 to v580.95.05.",
+        "summary": {
+          "title": "NVIDIA Driver Update",
+          "summary": "NVIDIA driver updated to v580.95.05 for GB200 and B200 instances."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/node-problem-detector to v0.8.22.",
+        "summary": {
+          "title": "Node Problem Detector upgraded",
+          "summary": "The node-problem-detector has been upgraded to v0.8.22."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/hwdata to v0.399.",
+        "summary": {
+          "title": "Upgraded hwdata",
+          "summary": "hwdata package has been updated to version 0.399."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Partially fixed an issue where excessive contention among writeback kworkers when switching a large number of inodes between cgroups could lead to system unresponsiveness.",
+        "summary": {
+          "title": "Writeback kworker contention issue resolved",
+          "summary": "The system is no longer unresponsive due to excessive writeback kworker contention when switching a large number of inodes between cgroups."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-11081, CVE-2025-11082 and CVE-2025-11083 in sys-libs/binutils-libs.",
+        "summary": {
+          "title": "Security updates for binutils-libs",
+          "summary": "Resolved CVE-2025-11081, CVE-2025-11082, and CVE-2025-11083 in sys-libs/binutils-libs."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-39931 in the Linux kernel.",
+        "summary": {
+          "title": "Security Update for Linux Kernel",
+          "summary": "A security vulnerability (CVE-2025-39931) in the Linux kernel has been resolved."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-39953 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A security vulnerability in the Linux kernel has been addressed."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-39947 in the Linux kernel.",
+        "summary": {
+          "title": "Fixed Linux Kernel Vulnerability",
+          "summary": "A security vulnerability in the Linux kernel has been addressed."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811500 -> 811514",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "fs.file-max changed from 811500 to 811514."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "New features available",
+          "summary": "We're excited to announce new features have been added to our platform. These updates are designed to improve your experience and provide more functionality."
+        }
+      },
+      {
+        "kind": "cos-113-18244-448-73",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.151](https://cos.googlesource.com/third_party/kernel/+/5d50d9defad33f7338599079ca039107113994b5 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.448.73/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS-113-18244-448-73",
+          "summary": "New COS version available. Includes updates to Kernel, Docker, Containerd, and GPU Drivers."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated toolbox container image tag to v20251002.",
+        "summary": {
+          "title": "Toolbox container image updated",
+          "summary": "The toolbox container image was updated to v20251002."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/hwdata to v0.399.",
+        "summary": {
+          "title": "Upgraded hwdata",
+          "summary": "The hwdata package has been updated to version 0.399."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-11081, CVE-2025-11082 and CVE-2025-11083 in sys-libs/binutils-libs.",
+        "summary": {
+          "title": "Security updates for binutils-libs",
+          "summary": "We have fixed CVE-2025-11081, CVE-2025-11082 and CVE-2025-11083 in sys-libs/binutils-libs."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-23143 in the Linux kernel.",
+        "summary": {
+          "title": "Fixed CVE-2025-23143 in Linux kernel",
+          "summary": "A security vulnerability in the Linux kernel, CVE-2025-23143, has been addressed. The fix ensures improved security for systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-134121b in the Linux kernel.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "A security issue in the Linux kernel has been resolved."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-39931 in the Linux kernel.",
+        "summary": {
+          "title": "Security update for Linux kernel",
+          "summary": "A security vulnerability in the Linux kernel has been fixed."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-39953 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A security vulnerability in the Linux kernel has been addressed."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811950 -> 812035",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "fs.file-max changed from 811950 to 812035."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "New features",
+          "summary": "New features have been added to the platform."
+        }
+      },
+      {
+        "kind": "cos-117-18613-339-97",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.105](https://cos.googlesource.com/third_party/kernel/+/66eb292ddbb8ce45011021bc66763a342024033e ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.339.97/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS-117-18613-339-97",
+          "summary": "New COS version 6.6.105 released with Docker v24.0.9 and Containerd v1.7.28."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added support for NVIDIA driver v580.95.05. Updated all latest driver version and default driver versions for NVIDIA\\_GB200 and NVIDIA\\_B200 to v580.95.05.",
+        "summary": {
+          "title": "NVIDIA Driver Update",
+          "summary": "NVIDIA drivers updated to v580.95.05 for GB200 and B200 instances."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/node-problem-detector to v0.8.22.",
+        "summary": {
+          "title": "Node Problem Detector upgraded",
+          "summary": "Node Problem Detector has been upgraded to v0.8.22."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-11081, CVE-2025-11082 and CVE-2025-11083 in sys-libs/binutils-libs.",
+        "summary": {
+          "title": "Security Updates for binutils-libs",
+          "summary": "We have released security updates for sys-libs/binutils-libs, addressing CVE-2025-11081, CVE-2025-11082, and CVE-2025-11083. Please update to the latest version to ensure your systems are protected."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-23143 in the Linux kernel.",
+        "summary": {
+          "title": "Security update for Linux kernel",
+          "summary": "A security vulnerability in the Linux kernel has been fixed."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-39947 in the Linux kernel.",
+        "summary": {
+          "title": "Security update for Linux kernel",
+          "summary": "A critical vulnerability (CVE-2025-39947) in the Linux kernel has been successfully patched. This update addresses a security flaw that could have had significant implications."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811755 -> 811830",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "fs.file-max changed from 811755 to 811830."
+        }
+      }
+    ],
+    "2025-10-09": [
       {
         "kind": "cos-117-18613-339-89",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.105](https://cos.googlesource.com/third_party/kernel/+/2ffcc1008ec07bc0d54abf1e34ffa84d16b697cb ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.339.89/lakitu/gpu_driver_versions.textproto) |",
@@ -75,14 +557,6 @@
         }
       },
       {
-        "kind": "Changed",
-        "content": "",
-        "summary": {
-          "title": "New Features Announced",
-          "summary": "We're excited to announce new features!"
-        }
-      },
-      {
         "kind": "cos-125-19216-0-80",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.46](https://cos.googlesource.com/third_party/kernel/+/499c3487fad22aa2a6160db596030afb3de49edd ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19216.0.80/lakitu/gpu_driver_versions.textproto) |",
         "summary": {
@@ -102,8 +576,8 @@
         "kind": "Security",
         "content": "Fixed KCTF-134121b in the Linux kernel.",
         "summary": {
-          "title": "Security update for Linux kernel",
-          "summary": "A security issue in the Linux kernel has been resolved. This fix addresses vulnerability KCTF-134121b."
+          "title": "Security Update",
+          "summary": "A security vulnerability in the Linux kernel has been addressed."
         }
       },
       {

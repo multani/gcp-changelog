@@ -1,10 +1,282 @@
 # Container Optimized OS
 
-## 2025-10-09
+## 2025-10-13
 
 ### Changed
 
 
+
+### cos-dev-129-19319-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.50](https://cos.googlesource.com/third_party/kernel/+/3c1532a68eb1ef3c5e11dc5b860713612086c4ce ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19319.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated the Linux kernel to v6.12.50.
+
+### Feature
+
+Added support for NVIDIA driver v580.95.05. Updated all latest driver version and default driver versions for NVIDIA\_GB200 and NVIDIA\_B200 to v580.95.05.
+
+### Fixed
+
+Upgraded app-containers/docker-credential-helpers to v0.9.4.
+
+### Fixed
+
+Updated toolbox container image tag to v20251002.
+
+### Fixed
+
+Upgraded chromeos-base/google-breakpad to v2025.10.06.205107-r254.
+
+### Fixed
+
+Upgraded dev-libs/expat to v2.7.3.
+
+### Fixed
+
+Upgraded sys-apps/hwdata to v0.399.
+
+### Fixed
+
+Upgraded net-libs/libtirpc to v1.3.7.
+
+### Fixed
+
+Partially fixed an issue where excessive contention among writeback kworkers when switching a large number of inodes between cgroups could lead to system unresponsiveness.
+
+### Security
+
+Upgraded open-vm-tools to 13.0.5. This fixes CVE-2025-41244 in anthos variant.
+
+### Security
+
+Fixed CVE-2025-11081, CVE-2025-11082 and CVE-2025-11083 in sys-libs/binutils-libs.
+
+### Security
+
+Updated dev-python/urllib3 to v2.5.0. This resolves
+CVE-2025-50181.
+
+### Security
+
+Updated sys-apps/coreutils to v9.5. This resolves
+CVE-2024-0684.
+
+### Security
+
+Fixed KCTF-134121b in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811493 -> 811438
+* Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 188034 250715 376068
+
+### Changed
+
+
+
+### cos-121-18867-199-98
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.105](https://cos.googlesource.com/third_party/kernel/+/45bce2b8e465ad477610e2c5d7562a63161c2e93 ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.199.98/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Added support for NVIDIA driver v580.95.05. Updated all latest driver version and default driver versions for NVIDIA\_GB200 and NVIDIA\_B200 to v580.95.05.
+
+### Fixed
+
+Upgraded app-admin/node-problem-detector to v0.8.22.
+
+### Fixed
+
+Updated toolbox container image tag to v20251002.
+
+### Fixed
+
+Upgraded sys-apps/hwdata to v0.399.
+
+### Fixed
+
+Partially fixed an issue where excessive contention among writeback kworkers when switching a large number of inodes between cgroups could lead to system unresponsiveness.
+
+### Security
+
+Fixed CVE-2025-41244 in app-emulation/open-vm-tools in
+anthos variant.
+
+### Security
+
+Fixed CVE-2025-11081, CVE-2025-11082 and CVE-2025-11083 in sys-libs/binutils-libs.
+
+### Security
+
+Fixed CVE-2025-23143 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39947 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-134121b in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39931 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39953 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811724 -> 811792
+
+### Changed
+
+
+
+### cos-125-19216-0-87
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.46](https://cos.googlesource.com/third_party/kernel/+/5ee1685d45ceceb19bdc81e90ae4e54c24ab561a ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19216.0.87/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Added support for NVIDIA driver v580.95.05. Updated all latest driver version and default driver versions for NVIDIA\_GB200 and NVIDIA\_B200 to v580.95.05.
+
+### Fixed
+
+Upgraded app-admin/node-problem-detector to v0.8.22.
+
+### Fixed
+
+Upgraded sys-apps/hwdata to v0.399.
+
+### Fixed
+
+Partially fixed an issue where excessive contention among writeback kworkers when switching a large number of inodes between cgroups could lead to system unresponsiveness.
+
+### Security
+
+Fixed CVE-2025-11081, CVE-2025-11082 and CVE-2025-11083 in sys-libs/binutils-libs.
+
+### Security
+
+Fixed CVE-2025-39931 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39953 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39947 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811500 -> 811514
+
+### Changed
+
+
+
+### cos-113-18244-448-73
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.151](https://cos.googlesource.com/third_party/kernel/+/5d50d9defad33f7338599079ca039107113994b5 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.448.73/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Updated toolbox container image tag to v20251002.
+
+### Fixed
+
+Upgraded sys-apps/hwdata to v0.399.
+
+### Security
+
+Fixed CVE-2025-11081, CVE-2025-11082 and CVE-2025-11083 in sys-libs/binutils-libs.
+
+### Security
+
+Fixed CVE-2025-23143 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-134121b in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39931 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39953 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811950 -> 812035
+
+### Changed
+
+
+
+### cos-117-18613-339-97
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.105](https://cos.googlesource.com/third_party/kernel/+/66eb292ddbb8ce45011021bc66763a342024033e ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.339.97/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Added support for NVIDIA driver v580.95.05. Updated all latest driver version and default driver versions for NVIDIA\_GB200 and NVIDIA\_B200 to v580.95.05.
+
+### Fixed
+
+Upgraded app-admin/node-problem-detector to v0.8.22.
+
+### Security
+
+Fixed CVE-2025-11081, CVE-2025-11082 and CVE-2025-11083 in sys-libs/binutils-libs.
+
+### Security
+
+Fixed CVE-2025-23143 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39947 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811755 -> 811830
+
+---
+## 2025-10-09
 
 ### cos-117-18613-339-89
 
@@ -42,10 +314,6 @@ Fixed CVE-2025-39931 in the Linux kernel.
 Runtime sysctl changes:
 
 * Changed: fs.file-max: 811788 -> 811755
-
-### Changed
-
-
 
 ### cos-125-19216-0-80
 

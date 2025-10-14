@@ -75,6 +75,13 @@ available](https://cloud.google.com/products#product-launch-stages) (GA).
 
 ### Feature
 
+The BigQuery Data Transfer Service can now [transfer reporting data from Google Analytics 4](https://cloud.google.com/bigquery/docs/google-analytics-4-transfer)
+into BigQuery. You can also include custom reports from
+Google Analytics 4 in your data transfer. This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+### Feature
+
 The BigQuery Data Transfer Service can now transfer data from the
 following data sources:
 
@@ -109,13 +116,6 @@ external tables and routines:
   fields of the base table.
 
 These fields are
-[generally available](https://cloud.google.com/products#product-launch-stages) (GA).
-
-### Feature
-
-The BigQuery Data Transfer Service can now [transfer reporting data from Google Analytics 4](https://cloud.google.com/bigquery/docs/google-analytics-4-transfer)
-into BigQuery. You can also include custom reports from
-Google Analytics 4 in your data transfer. This feature is
 [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
 
 ### Announcement

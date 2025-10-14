@@ -187,7 +187,7 @@ The following features are coming soon for use with Conversational Analytics:
 * You can now select up to five Looker Explores as data sources for a data agent.
 * You can now [share data agents](https://cloud.google.com/looker/docs/studio/conversational-data-agents-looker#share-data-agents) to let other users chat with your agent and its Explores.
 
-**Note:** This release note was published prematurely and amended on October 8, 2025 to reflect that these features are coming soon.
+**Note:** This release note was published prematurely. It was amended on October 8, 2025 to reflect that these features are coming soon and amended on October 14, 2025 to indicate that the features [have been launched](https://cloud.google.com/looker/docs/release-notes#October_10_2025).
 
 ---
 ## 2025-09-23

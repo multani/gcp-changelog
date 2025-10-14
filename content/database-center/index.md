@@ -1,5 +1,18 @@
 # Database Center
 
+## 2025-10-10
+
+### Feature
+
+You can monitor the inventory, metrics, and alerts for Oracle Database@Google Cloud
+databases using Database Center. For more information, see
+[Metrics and alerting policy filters](https://cloud.google.com/database-center/docs/metrics).
+Oracle Database@Google Cloud support in Database Center is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+During Preview, you can't monitor health issues for Oracle Database@Google Cloud
+databases.
+
+---
 ## 2025-09-02
 
 ### Feature

@@ -19,6 +19,31 @@ Linux](https://cloud.google.com/compute/docs/images/os-details#rocky_linux) on
 the operating system details page.
 
 ---
+## 2025-10-02
+
+### Feature
+
+Version `20250930.01` of the guest agent, which introduces the plugin-based
+architecture to Debian 11, is now available.
+
+For more information about the plugin-based architecture, see
+[Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).
+
+---
+## 2025-09-30
+
+### Fixed
+
+Version `20250930.01` includes the following fixes for issues found in the
+plugin-based architecture. For more information about the plugin-based
+architecture, see [Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).
+
+* Fixes an issue where the networking module incorrectly added routes when
+  `ip_forwarding` and `target_instance_ips` settings were disabled in `/etc/default/instance_configs.cfg`.
+* Prevents unnecessary error logs in the OS Login module caused by attempts to
+  read a non-existent file.
+
+---
 ## 2025-09-26
 
 ### Feature
@@ -44,6 +69,35 @@ For more information about the plugin-based architecture, see
 You can create standalone Flex-start VMs, or add Flex-start VMs all at once to a managed instance group (MIG) by using resize requests. Based on the machine type that your Flex-start VMs use, you get discounts for vCPUs, memory, and any attached GPUs.
 
 For more information, see [About Flex-start VMs](https://cloud.google.com/compute/docs/instances/about-flex-start-vms).
+
+---
+## 2025-09-18
+
+### Feature
+
+Version `20250918.01` of the guest agent is now available. This guest agent
+version introduces the plugin-based architecture to the following Debian and
+Enterprise Linux 10 operating systems:
+
+* Red Hat Enterprise Linux (RHEL) 10
+* Rocky Linux 10
+* CentOS Stream 10
+* Debian 13
+
+For more information about the plugin-based architecture, see
+[Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).
+
+### Fixed
+
+Version `20250918.01` includes the following fixes for issues found in
+plugin-based architecture. For more information about the plugin-based
+architecture, see [Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).
+
+* Corrects an issue in the OS Login module that was incorrectly writing `perm_denied=die`
+  [PAM](https://en.wikipedia.org/wiki/Pluggable_Authentication_Module) module
+  configuration when two-factor authentication isn't enabled.
+* Fixes an issue in the metadata-based SSH module where re-adding a user didn't
+  add the user to the sudoers group.
 
 ---
 ## 2025-09-17

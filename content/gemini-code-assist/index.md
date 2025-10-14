@@ -1,5 +1,22 @@
 # Gemini Code Assist
 
+## 2025-10-13
+
+### Feature
+
+
+
+### Enterprise version of Gemini Code Assist on GitHub (Preview)
+
+* Gemini Code Assist on GitHub provides Gemini-powered reviews of pull requests
+  in your GitHub repositories.
+* The [enterprise version](https://developers.google.com/gemini-code-assist/docs/review-github-code#versions)
+  enables consolidated control of Gemini Code Assist reviews across multiple
+  repositories, provides increased quotas, supports GitHub Enterprise Cloud and
+  GitHub Enterprise Server, and operates under the Google Cloud Terms of
+  Service.
+
+---
 ## 2025-10-08
 
 ### Next Edit Predictions in IntelliJ (Preview)

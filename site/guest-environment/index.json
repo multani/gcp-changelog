@@ -1,6 +1,26 @@
 {
   "name": "Guest Environment",
   "entries": {
+    "2025-10-02": [
+      {
+        "kind": "Feature",
+        "content": "Version `20250930.01` of the guest agent, which introduces the plugin-based\narchitecture to Debian 11, is now available.\n\nFor more information about the plugin-based architecture, see\n[Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).",
+        "summary": {
+          "title": "Guest agent plugin architecture for Debian 11",
+          "summary": "The latest version of the guest agent (20250930.01) now supports a plugin-based architecture on Debian 11."
+        }
+      }
+    ],
+    "2025-09-30": [
+      {
+        "kind": "Fixed",
+        "content": "Version `20250930.01` includes the following fixes for issues found in the\nplugin-based architecture. For more information about the plugin-based\narchitecture, see [Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).\n\n* Fixes an issue where the networking module incorrectly added routes when\n  `ip_forwarding` and `target_instance_ips` settings were disabled in `/etc/default/instance_configs.cfg`.\n* Prevents unnecessary error logs in the OS Login module caused by attempts to\n  read a non-existent file.",
+        "summary": {
+          "title": "Guest agent fixes",
+          "summary": "Version 20250930.01 includes fixes for the plugin-based architecture. It addresses an issue with incorrect route additions in the networking module and prevents unnecessary error logs in the OS Login module."
+        }
+      }
+    ],
     "2025-09-26": [
       {
         "kind": "Feature",
@@ -8,6 +28,24 @@
         "summary": {
           "title": "New guest agent version available",
           "summary": "A new version of the guest agent is available, bringing the plugin-based architecture to Debian 12."
+        }
+      }
+    ],
+    "2025-09-18": [
+      {
+        "kind": "Feature",
+        "content": "Version `20250918.01` of the guest agent is now available. This guest agent\nversion introduces the plugin-based architecture to the following Debian and\nEnterprise Linux 10 operating systems:\n\n* Red Hat Enterprise Linux (RHEL) 10\n* Rocky Linux 10\n* CentOS Stream 10\n* Debian 13\n\nFor more information about the plugin-based architecture, see\n[Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).",
+        "summary": {
+          "title": "Guest agent plugin architecture",
+          "summary": "The new guest agent version 20250918.01 is available and introduces a plugin-based architecture for RHEL 10, Rocky Linux 10, CentOS Stream 10, and Debian 13."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Version `20250918.01` includes the following fixes for issues found in\nplugin-based architecture. For more information about the plugin-based\narchitecture, see [Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).\n\n* Corrects an issue in the OS Login module that was incorrectly writing `perm_denied=die`\n  [PAM](https://en.wikipedia.org/wiki/Pluggable_Authentication_Module) module\n  configuration when two-factor authentication isn't enabled.\n* Fixes an issue in the metadata-based SSH module where re-adding a user didn't\n  add the user to the sudoers group.",
+        "summary": {
+          "title": "Version 20250918.01 Release Notes",
+          "summary": "This release includes fixes for the OS Login and metadata-based SSH modules."
         }
       }
     ],
@@ -44,34 +82,6 @@
         "summary": {
           "title": "Network routes are now consistently applied",
           "summary": "An issue is fixed where network routes were not consistently applied. The system now consistently applies network routes by monitoring the route table and re-adding routes when they disappear."
-        }
-      }
-    ],
-    "2025-09-30": [
-      {
-        "kind": "Fixed",
-        "content": "Version `20250930.01` includes the following fixes for issues found in the\nplugin-based architecture. For more information about the plugin-based\narchitecture, see [Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).\n\n* Fixes an issue where the networking module incorrectly added routes when\n  `ip_forwarding` and `target_instance_ips` settings were disabled in `/etc/default/instance_configs.cfg`.\n* Prevents unnecessary error logs in the OS Login module caused by attempts to\n  read a non-existent file.",
-        "summary": {
-          "title": "Guest agent fixes",
-          "summary": "Version 20250930.01 includes fixes for the plugin-based architecture. It addresses an issue with incorrect route additions in the networking module and prevents unnecessary error logs in the OS Login module."
-        }
-      }
-    ],
-    "2025-09-18": [
-      {
-        "kind": "Feature",
-        "content": "Version `20250918.01` of the guest agent is now available. This guest agent\nversion introduces the plugin-based architecture to the following Debian and\nEnterprise Linux 10 operating systems:\n\n* Red Hat Enterprise Linux (RHEL) 10\n* Rocky Linux 10\n* CentOS Stream 10\n* Debian 13\n\nFor more information about the plugin-based architecture, see\n[Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).",
-        "summary": {
-          "title": "Guest agent plugin architecture",
-          "summary": "The new guest agent version 20250918.01 is available and introduces a plugin-based architecture for RHEL 10, Rocky Linux 10, CentOS Stream 10, and Debian 13."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "Version `20250918.01` includes the following fixes for issues found in\nplugin-based architecture. For more information about the plugin-based\narchitecture, see [Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).\n\n* Corrects an issue in the OS Login module that was incorrectly writing `perm_denied=die`\n  [PAM](https://en.wikipedia.org/wiki/Pluggable_Authentication_Module) module\n  configuration when two-factor authentication isn't enabled.\n* Fixes an issue in the metadata-based SSH module where re-adding a user didn't\n  add the user to the sudoers group.",
-        "summary": {
-          "title": "Version 20250918.01 Release Notes",
-          "summary": "This release includes fixes for the OS Login and metadata-based SSH modules."
         }
       }
     ]

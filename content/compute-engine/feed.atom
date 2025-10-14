@@ -30,6 +30,39 @@ the operating system details page.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2025-10-02:feature:0</id>
+    <published>2025-10-02T00:00:00+00:00</published>
+    <updated>2025-10-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20250930.01</code> of the guest agent, which introduces the plugin-based
+architecture to Debian 11, is now available.</p>
+<p>For more information about the plugin-based architecture, see
+<a href="https://cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>]]></content>
+    <summary>Version 20250930.01 of the guest agent is now available for Debian 11, introducing a new plugin-based architecture. This update enhances flexibility and modularity for managing guest environments.</summary>
+    <title>Feature: New Plugin Architecture for Debian 11 Guest Agent</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2025-09-30:fixed:0</id>
+    <published>2025-09-30T00:00:00+00:00</published>
+    <updated>2025-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20250930.01</code> includes the following fixes for issues found in the
+plugin-based architecture. For more information about the plugin-based
+architecture, see <a href="https://cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>
+<ul>
+<li>Fixes an issue where the networking module incorrectly added routes when
+  <code>ip_forwarding</code> and <code>target_instance_ips</code> settings were disabled in <code>/etc/default/instance_configs.cfg</code>.</li>
+<li>Prevents unnecessary error logs in the OS Login module caused by attempts to
+  read a non-existent file.</li>
+</ul>]]></content>
+    <summary>Version 20250930.01 resolves an issue with incorrect route additions in the networking module when specific configurations were disabled. It also prevents unnecessary error logs in the OS Login module by addressing attempts to read non-existent files.</summary>
+    <title>Fixed: Fixed networking and OS Login issues</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
     <id>urn:github:multani:gcp-changelog:compute-engine:2025-09-26:feature:0</id>
     <published>2025-09-26T00:00:00+00:00</published>
     <updated>2025-09-26T00:00:00+00:00</updated>
@@ -58,6 +91,47 @@ version introduces the plugin-based architecture to Debian 12.</p>
 <p>For more information, see <a href="https://cloud.google.com/compute/docs/instances/about-flex-start-vms">About Flex-start VMs</a>.</p>]]></content>
     <summary>Introducing Flex-start VMs, a new VM instance type suitable for short-duration, flexible workloads. These VMs run for up to seven days, utilize a flex-start provisioning model for better access to high-demand resources like GPUs, and offer discounts on vCPUs, memory, and GPUs. They can be created standalone or added to managed instance groups and are ideal for tasks such as small model pre-training, fine-tuning, HPC simulations, and batch inference.</summary>
     <title>Feature: Flex-start VMs Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2025-09-18:feature:0</id>
+    <published>2025-09-18T00:00:00+00:00</published>
+    <updated>2025-09-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20250918.01</code> of the guest agent is now available. This guest agent
+version introduces the plugin-based architecture to the following Debian and
+Enterprise Linux 10 operating systems:</p>
+<ul>
+<li>Red Hat Enterprise Linux (RHEL) 10</li>
+<li>Rocky Linux 10</li>
+<li>CentOS Stream 10</li>
+<li>Debian 13</li>
+</ul>
+<p>For more information about the plugin-based architecture, see
+<a href="https://cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>]]></content>
+    <summary>Version 20250918.01 of the guest agent is now available, introducing a plugin-based architecture for RHEL 10, Rocky Linux 10, CentOS Stream 10, and Debian 13.</summary>
+    <title>Feature: New Guest Agent Version Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2025-09-18:fixed:1</id>
+    <published>2025-09-18T00:00:00+00:00</published>
+    <updated>2025-09-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20250918.01</code> includes the following fixes for issues found in
+plugin-based architecture. For more information about the plugin-based
+architecture, see <a href="https://cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>
+<ul>
+<li>Corrects an issue in the OS Login module that was incorrectly writing <code>perm_denied=die</code>
+  <a href="https://en.wikipedia.org/wiki/Pluggable_Authentication_Module">PAM</a> module
+  configuration when two-factor authentication isn't enabled.</li>
+<li>Fixes an issue in the metadata-based SSH module where re-adding a user didn't
+  add the user to the sudoers group.</li>
+</ul>]]></content>
+    <summary>Version 20250918.01 fixes issues in the OS Login and metadata-based SSH modules.</summary>
+    <title>Fixed: Guest agent fixes</title>
   </entry>
   <entry>
     <author>

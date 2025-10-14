@@ -1,5 +1,16 @@
 # Guest Environment
 
+## 2025-10-02
+
+### Feature
+
+Version `20250930.01` of the guest agent, which introduces the plugin-based
+architecture to Debian 11, is now available.
+
+For more information about the plugin-based architecture, see
+[Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).
+
+---
 ## 2025-09-30
 
 ### Fixed

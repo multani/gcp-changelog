@@ -2,10 +2,6 @@
 
 ## 2025-10-13
 
-### Feature
-
-
-
 ### Enterprise version of Gemini Code Assist on GitHub (Preview)
 
 * Gemini Code Assist on GitHub provides Gemini-powered reviews of pull requests

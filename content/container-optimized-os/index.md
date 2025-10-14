@@ -1,5 +1,79 @@
 # Container Optimized OS
 
+## 2025-10-09
+
+### Changed
+
+
+
+### cos-117-18613-339-89
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.105](https://cos.googlesource.com/third_party/kernel/+/2ffcc1008ec07bc0d54abf1e34ffa84d16b697cb ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.339.89/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Updated toolbox container image tag to v20251002.
+
+### Fixed
+
+Upgraded sys-apps/hwdata to v0.399.
+
+### Fixed
+
+Partially fixed the system not responding caused by excessive contention among writeback kworkers when switching a large number of inodes between cgroups.
+
+### Security
+
+Fixed KCTF-134121b in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39953 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39931 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811788 -> 811755
+
+### Changed
+
+
+
+### cos-125-19216-0-80
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.46](https://cos.googlesource.com/third_party/kernel/+/499c3487fad22aa2a6160db596030afb3de49edd ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19216.0.80/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+Promoted Milestone 125 to stable.
+
+### Security
+
+Fixed KCTF-134121b in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811450 -> 811500
+* Changed: net.ipv4.udp\_mem: 188034 250715 376068 -> 188034 250714 376068
+
+### Changed
+
+Updated toolbox container image tag to v20251002.
+
+---
 ## 2025-10-06
 
 ### cos-beta-125-19216-0-76

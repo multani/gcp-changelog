@@ -1,5 +1,38 @@
 # Bigtable
 
+## 2025-10-13
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Java
+
+### Changes for [google-cloud-bigtable](https://github.com/googleapis/java-bigtable)
+
+#### [2.67.1](https://github.com/googleapis/java-bigtable/compare/v2.67.0...v2.67.1) (2025-10-08)
+
+##### Dependencies
+
+* Update shared dependencies ([#2686](https://github.com/googleapis/java-bigtable/issues/2686)) ([d7eaa02](https://github.com/googleapis/java-bigtable/commit/d7eaa02d89a63d9f9197d26e430267eff200b126))
+
+### Python
+
+### Changes for [google-cloud-bigtable](https://github.com/googleapis/python-bigtable)
+
+#### [2.33.0](https://github.com/googleapis/python-bigtable/compare/v2.32.0...v2.33.0) (2025-10-06)
+
+##### Features
+
+* Add support for Proto and Enum types ([#1202](https://github.com/googleapis/python-bigtable/issues/1202)) ([34ceb86](https://github.com/googleapis/python-bigtable/commit/34ceb86007db08d453fa25cca4968d5b498ffcd6))
+* Expose universe\_domain for tpc ([#1150](https://github.com/googleapis/python-bigtable/issues/1150)) ([451fd97](https://github.com/googleapis/python-bigtable/commit/451fd97e435218ffed47d39423680ffc4feccac4))
+
+##### Bug Fixes
+
+* Fix instance registration cleanup on early iterator termination ([#1216](https://github.com/googleapis/python-bigtable/issues/1216)) ([bbfd746](https://github.com/googleapis/python-bigtable/commit/bbfd746c61a6362efa42c7899ec3e34ceb541c83))
+* Refactor channel refresh ([#1174](https://github.com/googleapis/python-bigtable/issues/1174)) ([6fa3008](https://github.com/googleapis/python-bigtable/commit/6fa30084058bc34d4487d1fee5c87d7795ff167a))
+
+---
 ## 2025-10-07
 
 ### Feature

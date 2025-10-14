@@ -1,5 +1,12 @@
 # Dataproc
 
+## 2025-10-13
+
+### Announcement
+
+**Serverless for Apache Spark:** Runtimes rollout with Apache Spark upgrade to version [3.5.3](https://spark.apache.org/releases/spark-release-3-5-3.html) in the latest [1.2](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_12) and [2.2](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_22) Serverless for Apache Spark runtime versions has started and is expected to finish by October 16th.
+
+---
 ## 2025-10-06
 
 ### Changed

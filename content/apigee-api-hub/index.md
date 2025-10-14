@@ -1,5 +1,16 @@
 # Apigee API hub
 
+## 2025-09-14
+
+### Changed
+
+**New MCP API style system attribute**
+
+The system-defined API style attribute now includes a new value: **MCP**. This lets you classify and govern APIs based on the latest Model Context Protocol (MCP) standards.
+
+For more information, see [System attributes](https://cloud.google.com/apigee/docs/apihub/manage-attributes#system-attributes).
+
+---
 ## 2025-09-11
 
 ### Changed

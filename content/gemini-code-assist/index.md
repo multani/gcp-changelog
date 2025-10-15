@@ -1,5 +1,29 @@
 # Gemini Code Assist
 
+## 2025-10-14
+
+### Breaking
+
+
+
+### Gemini Code Assist tools are no longer available and are replaced by agent mode (Preview)
+
+Effective October 14, 2025, Gemini Code Assist tools are no longer available.
+This completes the deprecation process that was
+[announced](#October_02_2025) on October 2, 2025.
+
+Using the `@` symbol followed by the name of a tool no longer connects to
+Gemini Code Assist tools.
+
+To connect to external services, use Model Context Protocol (MCP) servers
+in Gemini Code Assist [agent mode](https://cloud.google.com/gemini/docs/codeassist/agent-mode).
+
+For more information, see:
+
+* [Configure MCP servers](https://cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer#configure-mcp-servers)
+* [Gemini feature deprecations](https://cloud.google.com/gemini/docs/deprecations/features)
+
+---
 ## 2025-10-13
 
 ### Enterprise version of Gemini Code Assist on GitHub (Preview)

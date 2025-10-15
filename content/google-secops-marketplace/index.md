@@ -1,5 +1,46 @@
 # Google SecOps Marketplace
 
+## 2025-10-09
+
+### Changed
+
+**Google Workspace**: Version 22.0
+
+* Updated the action description to reflect that the action deletes the
+  extension from the blocklist rather than deleting the extension from the
+  organizational unit in the following action:
+
+  + **Delete Extension**
+
+### Changed
+
+**Google Chronicle**: Version 66.0
+
+* Updated processing of reference list rows in the following action:
+
+  + **Get Reference Lists**
+
+### Changed
+
+**Google Threat Intelligence**: Version 5.0
+
+* Added ability to filter by issue name in the following connector:
+
+  + **Google Threat Intelligence - ASM Issues Connector**
+* Added ability to filter events in the following connector:
+
+  + **Google Threat Intelligence - DTM Alerts Connector**
+
+### Changed
+
+**Microsoft Teams**: Version 29.0
+
+* Refactored action logic in the following actions:
+
+  + **Get Authorization**
+  + **Generate Token**
+
+---
 ## 2025-09-25
 
 ### Feature
@@ -48,20 +89,20 @@ New **Apache Kafka** integration
 
 ### Changed
 
-**Google Chronicle**: Version 65.0
-
-* Updated the filtering mechanism of the following action:
-
-  + **Get Data Tables**
-
-### Changed
-
 **Orca Security**: Version 12.0
 
 * **Integration**: (REGRESSIVE) Updated to support the latest API version.
 
   Ontology has been updated. Overwrite current ontology mapping to align
-  with the new API Alert structure.
+  with the new API alert structure.
+
+### Changed
+
+**Google Chronicle**: Version 65.0
+
+* Updated the filtering mechanism of the following action:
+
+  + **Get Data Tables**
 
 ---
 ## 2025-09-17

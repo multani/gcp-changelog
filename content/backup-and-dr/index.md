@@ -1,5 +1,12 @@
 # Backup and DR
 
+## 2025-10-14
+
+### Feature
+
+You can now set up backup vault specific workload quotas for critical resources like data sources, backups, backup plans, and backup plan associations. Until now these quotas were set up only at the project level, not at the workload level.
+
+---
 ## 2025-08-12
 
 ### Announcement

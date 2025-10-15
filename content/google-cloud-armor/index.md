@@ -1,5 +1,12 @@
 # Google Cloud Armor
 
+## 2025-10-15
+
+### Feature
+
+Cloud Armor's [Hierarchical security policies](https://cloud.google.com/armor/docs/hierarchical-policies-overview) that facilitate centralized control, enhanced consistency, operational efficiency, and effective delegation of security policy management is Generally Available.
+
+---
 ## 2025-09-24
 
 ### Feature

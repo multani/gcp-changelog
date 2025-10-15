@@ -1,6 +1,40 @@
 {
   "name": "Google SecOps Marketplace",
   "entries": {
+    "2025-10-09": [
+      {
+        "kind": "Changed",
+        "content": "**Google Workspace**: Version 22.0\n\n* Updated the action description to reflect that the action deletes the\n  extension from the blocklist rather than deleting the extension from the\n  organizational unit in the following action:\n\n  + **Delete Extension**",
+        "summary": {
+          "title": "Extension update",
+          "summary": "The 'Delete Extension' action in Google Workspace has been updated. It now removes the extension from the blocklist, instead of deleting it from the organizational unit."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Google Chronicle**: Version 66.0\n\n* Updated processing of reference list rows in the following action:\n\n  + **Get Reference Lists**",
+        "summary": {
+          "title": "Google Chronicle Update",
+          "summary": "Version 66.0 of Google Chronicle has been released. This update includes changes to how reference list rows are processed in the Get Reference Lists action."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Google Threat Intelligence**: Version 5.0\n\n* Added ability to filter by issue name in the following connector:\n\n  + **Google Threat Intelligence - ASM Issues Connector**\n* Added ability to filter events in the following connector:\n\n  + **Google Threat Intelligence - DTM Alerts Connector**",
+        "summary": {
+          "title": "Google Threat Intelligence Update",
+          "summary": "New filtering options available for ASM Issues and DTM Alerts connectors."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Microsoft Teams**: Version 29.0\n\n* Refactored action logic in the following actions:\n\n  + **Get Authorization**\n  + **Generate Token**",
+        "summary": {
+          "title": "Microsoft Teams Update",
+          "summary": "Microsoft Teams has been updated to version 29.0. This update includes refactored action logic for the Get Authorization and Generate Token actions."
+        }
+      }
+    ],
     "2025-09-25": [
       {
         "kind": "Feature",
@@ -44,18 +78,18 @@
       },
       {
         "kind": "Changed",
-        "content": "**Google Chronicle**: Version 65.0\n\n* Updated the filtering mechanism of the following action:\n\n  + **Get Data Tables**",
+        "content": "**Orca Security**: Version 12.0\n\n* **Integration**: (REGRESSIVE) Updated to support the latest API version.\n\n  Ontology has been updated. Overwrite current ontology mapping to align\n  with the new API alert structure.",
         "summary": {
-          "title": "Google Chronicle v65.0 Update",
-          "summary": "Version 65.0 of Google Chronicle includes an updated filtering mechanism for the Get Data Tables action."
+          "title": "Orca Security 12.0",
+          "summary": "Orca Security version 12.0 has been released with an updated integration to support the latest API version. The ontology has been modified to align with the new API alert structure, and users should overwrite their current ontology mapping."
         }
       },
       {
         "kind": "Changed",
-        "content": "**Orca Security**: Version 12.0\n\n* **Integration**: (REGRESSIVE) Updated to support the latest API version.\n\n  Ontology has been updated. Overwrite current ontology mapping to align\n  with the new API Alert structure.",
+        "content": "**Google Chronicle**: Version 65.0\n\n* Updated the filtering mechanism of the following action:\n\n  + **Get Data Tables**",
         "summary": {
-          "title": "Orca Security 12.0 Release",
-          "summary": ""
+          "title": "Google Chronicle v65.0 Update",
+          "summary": "Version 65.0 of Google Chronicle includes an updated filtering mechanism for the Get Data Tables action."
         }
       }
     ],

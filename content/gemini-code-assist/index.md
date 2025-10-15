@@ -2,10 +2,6 @@
 
 ## 2025-10-14
 
-### Breaking
-
-
-
 ### Gemini Code Assist tools are no longer available and are replaced by agent mode (Preview)
 
 Effective October 14, 2025, Gemini Code Assist tools are no longer available.

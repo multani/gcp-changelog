@@ -1,5 +1,17 @@
 # BigQuery
 
+## 2025-10-15
+
+### Feature
+
+You can use the `dbt-bigquery` adapter to run Python code that's defined in
+BigQuery DataFrames. For more information, see
+[Use BigQuery DataFrames in dbt](https://cloud.google.com/bigquery/docs/dataframes-dbt).
+This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2025-10-14
 
 ### Feature
@@ -54,6 +66,16 @@ An updated version of the [ODBC driver for BigQuery](https://cloud.google.com/bi
 ---
 ## 2025-10-08
 
+### Feature
+
+You can [specify which reservation a query uses at
+runtime](https://cloud.google.com/bigquery/docs/reservations-workload-management#flexible), and [set IAM
+policies directly on
+reservations](https://cloud.google.com/bigquery/docs/reservations-workload-management#securable). This
+provides more flexibility and fine-grained control over resource management.
+This feature is [generally
+available](https://cloud.google.com/products#product-launch-stages) (GA).
+
 ### Breaking
 
 The [default limit of `QueryUsagePerDay`](https://cloud.google.com/bigquery/quotas#query_jobs) for
@@ -70,16 +92,6 @@ control](https://cloud.google.com/bigquery/docs/custom-quotas) based on your wor
 You can set [labels](https://cloud.google.com/bigquery/docs/labels-intro) on reservations. These labels
 can be used to organize your reservations and for billing analysis. This feature
 is [generally
-available](https://cloud.google.com/products#product-launch-stages) (GA).
-
-### Feature
-
-You can [specify which reservation a query uses at
-runtime](https://cloud.google.com/bigquery/docs/reservations-workload-management#flexible), and [set IAM
-policies directly on
-reservations](https://cloud.google.com/bigquery/docs/reservations-workload-management#securable). This
-provides more flexibility and fine-grained control over resource management.
-This feature is [generally
 available](https://cloud.google.com/products#product-launch-stages) (GA).
 
 ---

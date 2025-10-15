@@ -1,6 +1,16 @@
 {
   "name": "BigQuery",
   "entries": {
+    "2025-10-15": [
+      {
+        "kind": "Feature",
+        "content": "You can use the `dbt-bigquery` adapter to run Python code that's defined in\nBigQuery DataFrames. For more information, see\n[Use BigQuery DataFrames in dbt](https://cloud.google.com/bigquery/docs/dataframes-dbt).\nThis feature is\n[generally available](https://cloud.google.com/products#product-launch-stages)\n(GA).",
+        "summary": {
+          "title": "Run dbt Python code in BigQuery",
+          "summary": "BigQuery DataFrames are now generally available for use with the `dbt-bigquery` adapter. This allows you to run Python code defined in BigQuery DataFrames directly within dbt."
+        }
+      }
+    ],
     "2025-10-14": [
       {
         "kind": "Feature",
@@ -63,6 +73,14 @@
     ],
     "2025-10-08": [
       {
+        "kind": "Feature",
+        "content": "You can [specify which reservation a query uses at\nruntime](https://cloud.google.com/bigquery/docs/reservations-workload-management#flexible), and [set IAM\npolicies directly on\nreservations](https://cloud.google.com/bigquery/docs/reservations-workload-management#securable). This\nprovides more flexibility and fine-grained control over resource management.\nThis feature is [generally\navailable](https://cloud.google.com/products#product-launch-stages) (GA).",
+        "summary": {
+          "title": "Control BigQuery Reservations",
+          "summary": "You can now specify which reservation a query uses at runtime and set IAM policies directly on reservations. This provides more flexibility and fine-grained control over resource management. This feature is generally available."
+        }
+      },
+      {
         "kind": "Breaking",
         "content": "The [default limit of `QueryUsagePerDay`](https://cloud.google.com/bigquery/quotas#query_jobs) for\non-demand pricing has changed. The default limit of all new projects is now 200\nTiB. For existing projects, the default limit has been set based on your\nproject's usage over the last 30 days. Projects that have [custom cost\ncontrols](https://cloud.google.com/bigquery/docs/custom-quotas) configured or that use\n[reservations](https://cloud.google.com/bigquery/docs/reservations-workload-management) aren't affected.\nIf the new limit might affect your workload, create a [custom cost\ncontrol](https://cloud.google.com/bigquery/docs/custom-quotas) based on your workload needs.",
         "summary": {
@@ -76,14 +94,6 @@
         "summary": {
           "title": "Labels on reservations are now available",
           "summary": "You can now add labels to your reservations for better organization and billing analysis. This feature is generally available."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "You can [specify which reservation a query uses at\nruntime](https://cloud.google.com/bigquery/docs/reservations-workload-management#flexible), and [set IAM\npolicies directly on\nreservations](https://cloud.google.com/bigquery/docs/reservations-workload-management#securable). This\nprovides more flexibility and fine-grained control over resource management.\nThis feature is [generally\navailable](https://cloud.google.com/products#product-launch-stages) (GA).",
-        "summary": {
-          "title": "Control BigQuery Reservations",
-          "summary": "You can now specify which reservation a query uses at runtime and set IAM policies directly on reservations. This provides more flexibility and fine-grained control over resource management. This feature is generally available."
         }
       }
     ],

@@ -1,5 +1,16 @@
 # Apigee X
 
+## 2025-10-14
+
+### Deprecated
+
+**Removal of deprecated Gemini Code Assist `@Apigee` tool.**
+
+The Gemini Code Assist `@Apigee` tool is shut down as of October 14, 2025.
+
+See [Gemini Code Assist @Apigee tool deprecation](https://cloud.google.com/apigee/docs/deprecations/apigee-tool) for information.
+
+---
 ## 2025-10-09
 
 ### Deprecated

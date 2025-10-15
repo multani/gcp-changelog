@@ -1,5 +1,12 @@
 # Google SecOps
 
+## 2025-10-15
+
+### Deprecated
+
+The Netskope v1 API feed has been deprecated by Netskope. If you are using the Netskope REST API v1 with Google SecOps, you must switch to the Netskope REST API v2.
+
+---
 ## 2025-10-09
 
 ### Feature

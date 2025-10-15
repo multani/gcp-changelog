@@ -1,5 +1,25 @@
 # Google Kubernetes Engine
 
+## 2025-10-14
+
+### Issue
+
+In GKE versions 1.32.4-gke.1029000 and later, MountVolume calls
+for network file system (NFS) volumes might fail with the following error:
+`mount.nfs:rpc.statd is not running but is required for remote locking`.
+
+This failure can occur if a Pod mounting an NFS volume runs on the same node as
+an NFS server Pod, and the NFS server Pod starts before the client Pod attempts
+to mount the volume. This scenario causes a conflict over the `rpcbind` service,
+which prevents the service from starting correctly on the node for the client
+Pod, leading to the mount failure.
+
+As a workaround, deploy [this
+DaemonSet](https://github.com/GoogleCloudPlatform/kubernetes-engine-samples/blob/main/troubleshooting/nfs-mount-workaround/daemonset.yaml)
+on all nodes where you mount the NFS volumes. The DaemonSet ensures that
+the required services start correctly.
+
+---
 ## 2025-10-09
 
 ### Feature

@@ -1,6 +1,80 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
+    "2025-10-14": [
+      {
+        "kind": "Announcement",
+        "content": "**Portal version 3.40 pre-release notes**\n\nHere are the pre-release notes for portal version 3.40. When we release version 3.40, we expect the new capabilities to be as shown here.",
+        "summary": {
+          "title": "Portal Version 3.40 Pre-Release Notes",
+          "summary": "Pre-release notes for version 3.40 of the portal are now available, detailing expected new capabilities upon release."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**New variables for custom lookup URLs**\n\nWe've added the following five variables for custom lookup URLs:\n\n* **CUSTOMER\\_PHONE\\_NUMBER**: the end-user's phone number\n* **SUPPORT\\_PHONE\\_NUMBER**: your call center's phone number that an end-user calls in on\n* **OUTBOUND\\_NUMBER**: the phone number an agent uses when making an outbound call\n* **SESSION\\_ID**: the session ID\n* **CUSTOM\\_AGENT\\_ID**: an optional agent ID",
+        "summary": {
+          "title": "New variables for custom lookup URLs",
+          "summary": "We've added five new variables for custom lookup URLs: CUSTOMER_PHONE_NUMBER, SUPPORT_PHONE_NUMBER, OUTBOUND_NUMBER, SESSION_ID, and CUSTOM_AGENT_ID."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Agent desktop maintains state after refresh**\n\nWhile you're using the agent desktop, if you refresh your browser, the agent desktop now maintains its state. This means that active conversations, finished tabs, and recently closed sessions remain as they were before the refresh.",
+        "summary": {
+          "title": "Agent desktop state maintained after refresh",
+          "summary": "The agent desktop now preserves its state even when the browser is refreshed. Active conversations, closed tabs, and recently ended sessions will remain as they were prior to the refresh."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Search in email channel by email address and name**\n\nAgents can now search for email sessions by email address and name in the email adapter.\n\nUser experience change: The search pane in the email adapter includes two new fields: **Email Address** and **Name**.",
+        "summary": {
+          "title": "Email Search Enhancement",
+          "summary": "You can now search for email sessions using the sender's email address and name in the email adapter."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Customize the color of the Start Screen Share button**\n\nYou can now control the color of the **Start Screen Share** button to match the color palette of your brand.",
+        "summary": {
+          "title": "Customize Button Color",
+          "summary": "You can now customize the color of the Start Screen Share button."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**The europe-west4 and europe-west6 regions are available for Agent Assist conversation profiles**\n\nThe `europe-west4` and `europe-west6` regions are now available when you create an Agent Assist conversation profile for a Dialogflow CX virtual agent. For more information, see [Create conversation profile for Dialogflow CX virtual agents](https://cloud.google.com/contact-center/ccai-platform/docs/create-a-dialogflow-agent#create-cp).",
+        "summary": {
+          "title": "Agent Assist now available in europe-west4 and europe-west6",
+          "summary": "Agent Assist conversation profiles can now be created in the europe-west4 and europe-west6 regions for Dialogflow CX virtual agents."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Web SDK: Support for hiding the download transcript option**\n\nYou can now configure the web SDK to do the following on the end-user's chat screen:\n\n* Hide the **Download transcript** menu option during a chat session\n* Hide the **Download transcript** button after a chat session ends",
+        "summary": {
+          "title": "Download Transcript Hidden",
+          "summary": "Users can now hide the download transcript option in the web SDK."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Web SDK: Support for hiding the Start a new conversation button**\n\nYou can now configure the web SDK to hide the **Start a new conversation** button on the end-user's chat screen after the session ends.",
+        "summary": {
+          "title": "Start a new conversation button support",
+          "summary": "The web SDK now supports hiding the \"Start a new conversation\" button after a chat session ends."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were addressed in this release:\n\n* Fixed an issue that prevented administrators from configuring virtual agents on the top level for IVR queues.\n* Fixed an issue where attempting to configure automatic redirection settings for the top level of an IVR queue returned an error.\n* Fixed in issue that caused incorrect agent monitoring and reporting data when a virtual agent escalated a call to a queue in a different language.\n* Fixed issue for HubSpot users where the call adapter got stuck on a non-functional reconnect page after a session expired.\n* Fixed an issue for HubSpot users where the **Delay call record creation until the call is connected to agent** checkbox didn't appear in the **CRM Record Creation Details** pane.\n* Fixed an issue that prevented agents from ending direct SMS chat sessions.\n* Fixed an issue for Microsoft Windows 11 users that prevented agents from entering Japanese characters in the chat screen during chat sessions and into the notes during wrap-up.\n* Fixed an issue where SDK custom data that was passed using the web SDK didn't appear in the agent adapter.\n* Fixed an issue that prevented custom links entered in the chat adapter from being converted into clickable links.\n* Fixed an issue in the chat screen of the chat adapter where the **Missed target response time** message was partially obscured by the formatting toolbar.\n* Fixed an issue where agents couldn't initiate a callback to a missed agent-to-agent call from the **History** tab of the agent adapter.\n* Fixed an issue where predictive outbound calling campaigns stalled and incorrectly moved contacts to the **Redialed** list before retrying them. This prevented the campaigns from completing successfully.\n* Fixed an issue in the **Call Details** pane where the **Recording Message Sequence** settings were incorrectly inactive when the **Play Call Recording Messages** checkboxes were cleared.\n\n  Administrators: In the **Call Details** pane, we changed **Recording Message Sequence** to **Recording Message Sequence for Outbound Calls** for clarity.\n* Fixed an issue where the customized greeting for an automatic redirection rule didn't play for calls that entered the queue using a Direct Access Phone (DAP) number.\n* Fixed an issue that occurred when a call was made from the global contact list. On the **Details** tab of the call adapter, the destination name didn't display. Instead, the destination phone number displayed.\n* Fixed an agent desktop issue where an agent status that was configured with a role restriction mistakenly appeared in the status list for a user assigned to that restricted role.\n* Fixed an issue where searching for an inbound-only queue on the **Phone Number Management** page failed to return a result.\n* Fixed an issue that caused queue duration and wait duration to be reported as `0`. This occurred when the **Call Service Level Target** on a queue settings page was set to a number that exceeded the maximum allowed limit.\n* Fixed an issue where a team assigned to a preference profile added only 1 user to the profile's users count, instead of adding the total number of users on the team.\n* Fixed an issue where agents were timed out for inactivity while composing an email in the email adapter.\n* Fixed an issue where users with a custom role were unable to save changes in the **Chat Settings** pane, even when their role had **View** and **Edit** permissions.\n* Fixed an issue that occurred after an agent configured their own hours of operation settings in the agent adapter. Those settings didn't appear for administrators in the agent's user profile on the **Settings > Users & Team > Manage Users & Teams** page. This prevented the administrator from making other edits to the agent's profile without overwriting the agent's hours of operation settings.\n* Fixed an issue where CRM tickets weren't created for some calls.\n* Fixed an issue where outbound SIP calls incorrectly appended data parameters, causing calls to fail.",
+        "summary": {
+          "title": "Bug Fixes and Improvements",
+          "summary": "This release addresses various issues, including problems with virtual agent configuration, call redirection errors, agent monitoring inaccuracies, and usability improvements for HubSpot and Windows 11 users. It also resolves issues related to call recording, chat sessions, predictive dialing, and user role permissions."
+        }
+      }
+    ],
     "2025-10-09": [
       {
         "kind": "Announcement",

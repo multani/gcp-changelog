@@ -2040,6 +2040,21 @@
 
 
 <h1 id="google-kubernetes-engine">Google Kubernetes Engine</h1>
+<h2 id="2025-10-14">2025-10-14</h2>
+<h3 id="issue">Issue</h3>
+<p>In GKE versions 1.32.4-gke.1029000 and later, MountVolume calls
+for network file system (NFS) volumes might fail with the following error:
+<code>mount.nfs:rpc.statd is not running but is required for remote locking</code>.</p>
+<p>This failure can occur if a Pod mounting an NFS volume runs on the same node as
+an NFS server Pod, and the NFS server Pod starts before the client Pod attempts
+to mount the volume. This scenario causes a conflict over the <code>rpcbind</code> service,
+which prevents the service from starting correctly on the node for the client
+Pod, leading to the mount failure.</p>
+<p>As a workaround, deploy <a href="https://github.com/GoogleCloudPlatform/kubernetes-engine-samples/blob/main/troubleshooting/nfs-mount-workaround/daemonset.yaml">this
+DaemonSet</a>
+on all nodes where you mount the NFS volumes. The DaemonSet ensures that
+the required services start correctly.</p>
+<hr />
 <h2 id="2025-10-09">2025-10-09</h2>
 <h3 id="feature">Feature</h3>
 <p>For AI models deployed on a GKE cluster, you can view details
@@ -3078,7 +3093,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li>Enrolled in the Rapid release channel.</li>
 <li>Running GKE version 1.33.1-gke.1107000 or later.</li>
 </ul>
-<h3 id="issue">Issue</h3>
+<h3 id="issue_1">Issue</h3>
 <p><strong>Issue with A4X machine type compatibility on certain GKE versions</strong></p>
 <p>Certain GKE versions are not compatible with the A4X machine type. The issue is that a Container-Optimized OS (COS) image that these GKE versions depend on was not built as a multi-architecture image. This incompatibility causes an <code>exec format</code> error on the Arm-based A4X machines. The issue affects GKE versions 1.33.2-gke.1377000 or later, and any versions earlier than 1.33.4-gke.1036000.</p>
 <hr />
@@ -6241,7 +6256,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
-<h3 id="issue_1">Issue</h3>
+<h3 id="issue_2">Issue</h3>
 <p>For information about the latest known issues, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for bare metal known issues</a> in the Troubleshooting section.</p>
 <hr />
 <h2 id="2025-07-21">2025-07-21</h2>
@@ -6281,7 +6296,7 @@ about setting node labels in compute classes, see the
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
-<h3 id="issue_2">Issue</h3>
+<h3 id="issue_3">Issue</h3>
 <p>For information about the latest known issues, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for bare metal known issues</a> in the Troubleshooting section.</p>
 <hr />
 <h2 id="2025-07-16">2025-07-16</h2>
@@ -8251,6 +8266,9 @@ zones.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-kubernetes-engine">Google Kubernetes Engine</a></li>
+          <li class="nav-item">
+            <a href="#2025-10-14" class="nav-link">2025-10-14</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-10-09" class="nav-link">2025-10-09</a>
           </li>

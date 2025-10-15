@@ -1,6 +1,32 @@
 {
   "name": "BigQuery",
   "entries": {
+    "2025-10-14": [
+      {
+        "kind": "Feature",
+        "content": "You can now use [SQL cells](https://cloud.google.com/bigquery/docs/create-notebooks#cells) to write,\nedit, and run SQL queries on your BigQuery data directly from your\nnotebooks. This feature is in\n[Preview](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "SQL cells in notebooks",
+          "summary": "You can now write, edit, and run SQL queries on your BigQuery data directly from your notebooks using SQL cells. This feature is in Preview."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "The BigQuery Data Transfer API (bigquerydatatransfer.googleapis.com) is now\nenabled by default for every new Google Cloud project. This feature is\n[generally available](https://cloud.google.com/products#product-launch-stages)\n(GA).",
+        "summary": {
+          "title": "BigQuery Data Transfer API Now Enabled by Default",
+          "summary": "The BigQuery Data Transfer API is now generally available and enabled by default for all new Google Cloud projects."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now [embed natural language as comments in existing SQL to refine and\ntransform your code](https://cloud.google.com/bigquery/docs/write-sql-gemini#generate_sql_from_a_comment).\nThis feature is [preview](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "SQL comments powered by Gemini",
+          "summary": "You can now use natural language comments in your SQL code to refine and transform it. This new feature is in preview."
+        }
+      }
+    ],
     "2025-10-09": [
       {
         "kind": "Feature",
@@ -74,6 +100,14 @@
     "2025-10-06": [
       {
         "kind": "Feature",
+        "content": "The [`INFORMATION_SCHEMA.SHARED_DATASET_USAGE` view](https://cloud.google.com/bigquery/docs/information-schema-shared-dataset-usage#schema)\nnow includes the following schema fields to support usage metrics for\nexternal tables and routines:\n\n* `shared_resource_id`: the ID of the queried resource\n* `shared_resource_type`: the type of the queried resource\n* `referenced_tables`: Contains `project_id`,\n  `dataset_id`, `table_id`, and `processed_bytes`\n  fields of the base table.\n\nThese fields are\n[generally available](https://cloud.google.com/products#product-launch-stages) (GA).",
+        "summary": {
+          "title": "New Usage Metrics for External Tables and Routines",
+          "summary": "The INFORMATION_SCHEMA.SHARED_DATASET_USAGE view now includes new schema fields (shared_resource_id, shared_resource_type, referenced_tables) to support usage metrics for external tables and routines. These fields are now generally available."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "The BigQuery Data Transfer Service can now [transfer reporting data from Google Analytics 4](https://cloud.google.com/bigquery/docs/google-analytics-4-transfer)\ninto BigQuery. You can also include custom reports from\nGoogle Analytics 4 in your data transfer. This feature is\n[generally available](https://cloud.google.com/products#product-launch-stages) (GA).",
         "summary": {
           "title": "Google Analytics 4 data now available in BigQuery",
@@ -94,14 +128,6 @@
         "summary": {
           "title": "Set BigQuery job priority for Dataform workflows",
           "summary": "You can now set the priority of BigQuery jobs initiated by Dataform workflows to run queries as interactive jobs that start running as quickly as possible or as batch jobs with lower priority."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "The [`INFORMATION_SCHEMA.SHARED_DATASET_USAGE` view](https://cloud.google.com/bigquery/docs/information-schema-shared-dataset-usage#schema)\nnow includes the following schema fields to support usage metrics for\nexternal tables and routines:\n\n* `shared_resource_id`: the ID of the queried resource\n* `shared_resource_type`: the type of the queried resource\n* `referenced_tables`: Contains `project_id`,\n  `dataset_id`, `table_id`, and `processed_bytes`\n  fields of the base table.\n\nThese fields are\n[generally available](https://cloud.google.com/products#product-launch-stages) (GA).",
-        "summary": {
-          "title": "New Usage Metrics for External Tables and Routines",
-          "summary": "The INFORMATION_SCHEMA.SHARED_DATASET_USAGE view now includes new schema fields (shared_resource_id, shared_resource_type, referenced_tables) to support usage metrics for external tables and routines. These fields are now generally available."
         }
       },
       {

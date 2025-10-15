@@ -2,9 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: BigQuery</title>
   <subtitle>Changelog for Google Cloud product: BigQuery</subtitle>
-  <updated>2025-10-09T00:00:00+00:00</updated>
+  <updated>2025-10-14T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:bigquery</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/bigquery/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-10-14:feature:0</id>
+    <published>2025-10-14T00:00:00+00:00</published>
+    <updated>2025-10-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now use <a href="https://cloud.google.com/bigquery/docs/create-notebooks#cells">SQL cells</a> to write,
+edit, and run SQL queries on your BigQuery data directly from your
+notebooks. This feature is in
+<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>]]></content>
+    <summary>You can now write, edit, and run SQL queries on your BigQuery data directly from your notebooks using SQL cells. This feature is in Preview.</summary>
+    <title>Feature: SQL cells in notebooks</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-10-14:announcement:1</id>
+    <published>2025-10-14T00:00:00+00:00</published>
+    <updated>2025-10-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The BigQuery Data Transfer API (bigquerydatatransfer.googleapis.com) is now
+enabled by default for every new Google Cloud project. This feature is
+<a href="https://cloud.google.com/products#product-launch-stages">generally available</a>
+(GA).</p>]]></content>
+    <summary>The BigQuery Data Transfer API is now generally available and enabled by default for all new Google Cloud projects.</summary>
+    <title>Announcement: BigQuery Data Transfer API Now Enabled by Default</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-10-14:feature:2</id>
+    <published>2025-10-14T00:00:00+00:00</published>
+    <updated>2025-10-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now <a href="https://cloud.google.com/bigquery/docs/write-sql-gemini#generate_sql_from_a_comment">embed natural language as comments in existing SQL to refine and
+transform your code</a>.
+This feature is <a href="https://cloud.google.com/products#product-launch-stages">preview</a>.</p>]]></content>
+    <summary>You can now use natural language comments in your SQL code to refine and transform it. This new feature is in preview.</summary>
+    <title>Feature: SQL comments powered by Gemini</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -130,6 +171,28 @@ available</a> (GA).</p>]]></content>
     <id>urn:github:multani:gcp-changelog:bigquery:2025-10-06:feature:0</id>
     <published>2025-10-06T00:00:00+00:00</published>
     <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://cloud.google.com/bigquery/docs/information-schema-shared-dataset-usage#schema"><code>INFORMATION_SCHEMA.SHARED_DATASET_USAGE</code> view</a>
+now includes the following schema fields to support usage metrics for
+external tables and routines:</p>
+<ul>
+<li><code>shared_resource_id</code>: the ID of the queried resource</li>
+<li><code>shared_resource_type</code>: the type of the queried resource</li>
+<li><code>referenced_tables</code>: Contains <code>project_id</code>,
+  <code>dataset_id</code>, <code>table_id</code>, and <code>processed_bytes</code>
+  fields of the base table.</li>
+</ul>
+<p>These fields are
+<a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>]]></content>
+    <summary>The INFORMATION_SCHEMA.SHARED_DATASET_USAGE view now includes new schema fields (shared_resource_id, shared_resource_type, referenced_tables) to support usage metrics for external tables and routines. These fields are now generally available.</summary>
+    <title>Feature: New Usage Metrics for External Tables and Routines</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-10-06:feature:1</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The BigQuery Data Transfer Service can now <a href="https://cloud.google.com/bigquery/docs/google-analytics-4-transfer">transfer reporting data from Google Analytics 4</a>
 into BigQuery. You can also include custom reports from
 Google Analytics 4 in your data transfer. This feature is
@@ -141,7 +204,7 @@ Google Analytics 4 in your data transfer. This feature is
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:bigquery:2025-10-06:feature:1</id>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-10-06:feature:2</id>
     <published>2025-10-06T00:00:00+00:00</published>
     <updated>2025-10-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The BigQuery Data Transfer Service can now transfer data from the
@@ -158,7 +221,7 @@ following data sources:</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:bigquery:2025-10-06:feature:2</id>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-10-06:feature:3</id>
     <published>2025-10-06T00:00:00+00:00</published>
     <updated>2025-10-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>You can now set the priority of BigQuery jobs initiated by
@@ -173,28 +236,6 @@ This feature is
 (GA).</p>]]></content>
     <summary>You can now set the priority of BigQuery jobs initiated by Dataform workflows to run queries as interactive jobs that start running as quickly as possible or as batch jobs with lower priority.</summary>
     <title>Feature: Set BigQuery job priority for Dataform workflows</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:bigquery:2025-10-06:feature:3</id>
-    <published>2025-10-06T00:00:00+00:00</published>
-    <updated>2025-10-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The <a href="https://cloud.google.com/bigquery/docs/information-schema-shared-dataset-usage#schema"><code>INFORMATION_SCHEMA.SHARED_DATASET_USAGE</code> view</a>
-now includes the following schema fields to support usage metrics for
-external tables and routines:</p>
-<ul>
-<li><code>shared_resource_id</code>: the ID of the queried resource</li>
-<li><code>shared_resource_type</code>: the type of the queried resource</li>
-<li><code>referenced_tables</code>: Contains <code>project_id</code>,
-  <code>dataset_id</code>, <code>table_id</code>, and <code>processed_bytes</code>
-  fields of the base table.</li>
-</ul>
-<p>These fields are
-<a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>]]></content>
-    <summary>The INFORMATION_SCHEMA.SHARED_DATASET_USAGE view now includes new schema fields (shared_resource_id, shared_resource_type, referenced_tables) to support usage metrics for external tables and routines. These fields are now generally available.</summary>
-    <title>Feature: New Usage Metrics for External Tables and Routines</title>
   </entry>
   <entry>
     <author>

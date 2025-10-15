@@ -1,5 +1,28 @@
 # BigQuery
 
+## 2025-10-14
+
+### Feature
+
+You can now use [SQL cells](https://cloud.google.com/bigquery/docs/create-notebooks#cells) to write,
+edit, and run SQL queries on your BigQuery data directly from your
+notebooks. This feature is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+### Announcement
+
+The BigQuery Data Transfer API (bigquerydatatransfer.googleapis.com) is now
+enabled by default for every new Google Cloud project. This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+### Feature
+
+You can now [embed natural language as comments in existing SQL to refine and
+transform your code](https://cloud.google.com/bigquery/docs/write-sql-gemini#generate_sql_from_a_comment).
+This feature is [preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-10-09
 
 ### Feature
@@ -75,6 +98,21 @@ available](https://cloud.google.com/products#product-launch-stages) (GA).
 
 ### Feature
 
+The [`INFORMATION_SCHEMA.SHARED_DATASET_USAGE` view](https://cloud.google.com/bigquery/docs/information-schema-shared-dataset-usage#schema)
+now includes the following schema fields to support usage metrics for
+external tables and routines:
+
+* `shared_resource_id`: the ID of the queried resource
+* `shared_resource_type`: the type of the queried resource
+* `referenced_tables`: Contains `project_id`,
+  `dataset_id`, `table_id`, and `processed_bytes`
+  fields of the base table.
+
+These fields are
+[generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+### Feature
+
 The BigQuery Data Transfer Service can now [transfer reporting data from Google Analytics 4](https://cloud.google.com/bigquery/docs/google-analytics-4-transfer)
 into BigQuery. You can also include custom reports from
 Google Analytics 4 in your data transfer. This feature is
@@ -102,21 +140,6 @@ and
 This feature is
 [generally available](https://cloud.google.com/products#product-launch-stages)
 (GA).
-
-### Feature
-
-The [`INFORMATION_SCHEMA.SHARED_DATASET_USAGE` view](https://cloud.google.com/bigquery/docs/information-schema-shared-dataset-usage#schema)
-now includes the following schema fields to support usage metrics for
-external tables and routines:
-
-* `shared_resource_id`: the ID of the queried resource
-* `shared_resource_type`: the type of the queried resource
-* `referenced_tables`: Contains `project_id`,
-  `dataset_id`, `table_id`, and `processed_bytes`
-  fields of the base table.
-
-These fields are
-[generally available](https://cloud.google.com/products#product-launch-stages) (GA).
 
 ### Announcement
 

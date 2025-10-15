@@ -2,9 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2025-10-09T00:00:00+00:00</updated>
+  <updated>2025-10-14T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-10-14:issue:0</id>
+    <published>2025-10-14T00:00:00+00:00</published>
+    <updated>2025-10-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>In GKE versions 1.32.4-gke.1029000 and later, MountVolume calls
+for network file system (NFS) volumes might fail with the following error:
+<code>mount.nfs:rpc.statd is not running but is required for remote locking</code>.</p>
+<p>This failure can occur if a Pod mounting an NFS volume runs on the same node as
+an NFS server Pod, and the NFS server Pod starts before the client Pod attempts
+to mount the volume. This scenario causes a conflict over the <code>rpcbind</code> service,
+which prevents the service from starting correctly on the node for the client
+Pod, leading to the mount failure.</p>
+<p>As a workaround, deploy <a href="https://github.com/GoogleCloudPlatform/kubernetes-engine-samples/blob/main/troubleshooting/nfs-mount-workaround/daemonset.yaml">this
+DaemonSet</a>
+on all nodes where you mount the NFS volumes. The DaemonSet ensures that
+the required services start correctly.</p>]]></content>
+    <summary>NFS volume mounts may fail in GKE versions 1.32.4-gke.1029000 and later due to a conflict with the rpcbind service when an NFS server Pod starts before a client Pod on the same node. A workaround is available via a DaemonSet that ensures necessary services start correctly.</summary>
+    <title>Issue: NFS Mounts Failing</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

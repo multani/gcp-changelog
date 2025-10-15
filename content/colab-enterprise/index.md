@@ -1,5 +1,17 @@
 # Colab Enterprise
 
+## 2025-10-14
+
+### Feature
+
+**SQL cells**
+
+[Preview](https://cloud.google.com/products#product-launch-stages): You can
+use SQL cells to write, edit, and run SQL queries directly from your
+Colab Enterprise notebooks. For more information, see
+[Use SQL cells](https://cloud.google.com/colab/docs/sql-cells).
+
+---
 ## 2025-10-07
 
 ### Feature

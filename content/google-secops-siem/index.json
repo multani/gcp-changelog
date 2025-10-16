@@ -3,6 +3,70 @@
   "entries": {
     "2025-10-15": [
       {
+        "kind": "Feature",
+        "content": "**CrowdStrike Falcon**: Version 66.0\n\n* The following new action has been added:\n\n  + **Get Alert Details**",
+        "summary": {
+          "title": "CrowdStrike Falcon v66.0: New Alert Details Action",
+          "summary": "Version 66.0 of CrowdStrike Falcon introduces a new 'Get Alert Details' action."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Azure Active Directory**: Version 19.0\n\n* Improved performance by implementing a direct API filter query for group name\n  searches, which avoids fetching all groups and significantly reduces execution\n  time in large-group environments, in the following action:\n\n  + **List Members in Group**",
+        "summary": {
+          "title": "Azure Active Directory v19.0 Performance Update",
+          "summary": "The latest update to Azure Active Directory (v19.0) enhances the 'List Members in Group' action. Performance has been significantly improved by optimizing group name searches with a direct API filter query, reducing execution time, especially in environments with many groups."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**CrowdStrike Falcon**: Version 66.0\n\n* Updated entity processing logic in the following actions:\n\n  + **Contain Endpoint**\n  + **Download File**\n  + **Execute Command**\n  + **Get Host Information**\n  + **Lift Contained Endpoint**\n  + **List Host Vulnerabilities**\n  + **On-Demand Scan**\n  + **Run Script**",
+        "summary": {
+          "title": "CrowdStrike Falcon v66.0 Update",
+          "summary": "The CrowdStrike Falcon platform has been updated to version 66.0. This release includes changes to the entity processing logic for several actions, enhancing the platform's capabilities."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated dependencies in the following integrations:\n\n* **Microsoft Teams**: Version 30.0\n* **Microsoft Graph Mail Delegated**: Version 8.0\n* **Exchange**: Version 114.0\n* **Case Federation**: Version 5.0\n* **Azure Security Center**: Version 12.0",
+        "summary": {
+          "title": "Updated Integrations",
+          "summary": "Dependencies have been updated across several integrations, including Microsoft Teams, Microsoft Graph Mail Delegated, Exchange, Case Federation, and Azure Security Center."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Microsoft Teams**: Version 30.0\n\n* **Integration**: Fixed an issue with the special characters in the query\n  parameters.",
+        "summary": {
+          "title": "Microsoft Teams Update",
+          "summary": "Version 30.0 of Microsoft Teams is now available. This update includes a fix for an issue with special characters in query parameters for improved integration."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Okta**: Version 10.0\n\n* Updated the pagination processing mechanism in the following actions:\n\n  + **List Users**\n  + **Add Group**\n  + **Get Group**\n  + **List Providers**",
+        "summary": {
+          "title": "Okta 10.0 Update",
+          "summary": "Okta version 10.0 includes updates to pagination processing for List Users, Add Group, Get Group, and List Providers actions."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**ThreatQ**: Version 15.0\n\n* Updated the API request payload to align with a change in the ThreatQ API in\n  the following actions:\n\n  + **Enrich IP**\n  + **Enrich URL**\n  + **Enrich Email**\n  + **Enrich Hash**\n  + **Enrich CVE**",
+        "summary": {
+          "title": "ThreatQ v15.0 API Update",
+          "summary": "The ThreatQ API has been updated in version 15.0. This change affects the API request payload for the Enrich IP, Enrich URL, Enrich Email, Enrich Hash, and Enrich CVE actions."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**UrlScan.io**: Version 26.0\n\n* Added ability to scan domains and IPs in the following action:\n\n  + **URL Check**",
+        "summary": {
+          "title": "UrlScan.io v26.0",
+          "summary": "UrlScan.io has been updated to version 26.0. This new version includes the ability to scan domains and IPs within the URL Check action."
+        }
+      },
+      {
         "kind": "Deprecated",
         "content": "The Netskope v1 API feed has been deprecated by Netskope. If you are using the Netskope REST API v1 with Google SecOps, you must switch to the Netskope REST API v2.",
         "summary": {
@@ -22,22 +86,6 @@
     "2025-10-09": [
       {
         "kind": "Changed",
-        "content": "**Google Workspace**: Version 22.0\n\n* Updated the action description to reflect that the action deletes the\n  extension from the blocklist rather than deleting the extension from the\n  organizational unit in the following action:\n\n  + **Delete Extension**",
-        "summary": {
-          "title": "Extension unblocked",
-          "summary": "The 'Delete Extension' action in Google Workspace now unblocks extensions instead of deleting them from organizational units."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "**Google Chronicle**: Version 66.0\n\n* Updated processing of reference list rows in the following action:\n\n  + **Get Reference Lists**",
-        "summary": {
-          "title": "Google Chronicle Update",
-          "summary": "Version 66.0 of Google Chronicle has been released, featuring an update to the processing of reference list rows within the Get Reference Lists action."
-        }
-      },
-      {
-        "kind": "Changed",
         "content": "**Google Threat Intelligence**: Version 5.0\n\n* Added ability to filter by issue name in the following connector:\n\n  + **Google Threat Intelligence - ASM Issues Connector**\n* Added ability to filter events in the following connector:\n\n  + **Google Threat Intelligence - DTM Alerts Connector**",
         "summary": {
           "title": "Google Threat Intelligence Update",
@@ -50,6 +98,22 @@
         "summary": {
           "title": "Microsoft Teams Update",
           "summary": "Microsoft Teams has been updated to version 29.0. Key actions like Get Authorization and Generate Token have been refactored."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Google Workspace**: Version 22.0\n\n* Updated the action description to reflect that the action deletes the\n  extension from the blocklist rather than deleting the extension from the\n  organizational unit in the following action:\n\n  + **Delete Extension**",
+        "summary": {
+          "title": "Extension unblocked",
+          "summary": "The 'Delete Extension' action in Google Workspace now unblocks extensions instead of deleting them from organizational units."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Google Chronicle**: Version 66.0\n\n* Updated processing of reference list rows in the following action:\n\n  + **Get Reference Lists**",
+        "summary": {
+          "title": "Google Chronicle Update",
+          "summary": "Version 66.0 of Google Chronicle has been released, featuring an update to the processing of reference list rows within the Get Reference Lists action."
         }
       },
       {

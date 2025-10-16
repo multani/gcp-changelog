@@ -2,6 +2,88 @@
 
 ## 2025-10-15
 
+### Feature
+
+**CrowdStrike Falcon**: Version 66.0
+
+* The following new action has been added:
+
+  + **Get Alert Details**
+
+### Changed
+
+**Azure Active Directory**: Version 19.0
+
+* Improved performance by implementing a direct API filter query for group name
+  searches, which avoids fetching all groups and significantly reduces execution
+  time in large-group environments, in the following action:
+
+  + **List Members in Group**
+
+### Changed
+
+**CrowdStrike Falcon**: Version 66.0
+
+* Updated entity processing logic in the following actions:
+
+  + **Contain Endpoint**
+  + **Download File**
+  + **Execute Command**
+  + **Get Host Information**
+  + **Lift Contained Endpoint**
+  + **List Host Vulnerabilities**
+  + **On-Demand Scan**
+  + **Run Script**
+
+### Changed
+
+Updated dependencies in the following integrations:
+
+* **Microsoft Teams**: Version 30.0
+* **Microsoft Graph Mail Delegated**: Version 8.0
+* **Exchange**: Version 114.0
+* **Case Federation**: Version 5.0
+* **Azure Security Center**: Version 12.0
+
+### Changed
+
+**Microsoft Teams**: Version 30.0
+
+* **Integration**: Fixed an issue with the special characters in the query
+  parameters.
+
+### Changed
+
+**Okta**: Version 10.0
+
+* Updated the pagination processing mechanism in the following actions:
+
+  + **List Users**
+  + **Add Group**
+  + **Get Group**
+  + **List Providers**
+
+### Changed
+
+**ThreatQ**: Version 15.0
+
+* Updated the API request payload to align with a change in the ThreatQ API in
+  the following actions:
+
+  + **Enrich IP**
+  + **Enrich URL**
+  + **Enrich Email**
+  + **Enrich Hash**
+  + **Enrich CVE**
+
+### Changed
+
+**UrlScan.io**: Version 26.0
+
+* Added ability to scan domains and IPs in the following action:
+
+  + **URL Check**
+
 ### Deprecated
 
 The Netskope v1 API feed has been deprecated by Netskope. If you are using the Netskope REST API v1 with Google SecOps, you must switch to the Netskope REST API v2.
@@ -12,24 +94,6 @@ The Netskope v1 API feed has been deprecated by Netskope. If you are using the N
 
 ---
 ## 2025-10-09
-
-### Changed
-
-**Google Workspace**: Version 22.0
-
-* Updated the action description to reflect that the action deletes the
-  extension from the blocklist rather than deleting the extension from the
-  organizational unit in the following action:
-
-  + **Delete Extension**
-
-### Changed
-
-**Google Chronicle**: Version 66.0
-
-* Updated processing of reference list rows in the following action:
-
-  + **Get Reference Lists**
 
 ### Changed
 
@@ -50,6 +114,24 @@ The Netskope v1 API feed has been deprecated by Netskope. If you are using the N
 
   + **Get Authorization**
   + **Generate Token**
+
+### Changed
+
+**Google Workspace**: Version 22.0
+
+* Updated the action description to reflect that the action deletes the
+  extension from the blocklist rather than deleting the extension from the
+  organizational unit in the following action:
+
+  + **Delete Extension**
+
+### Changed
+
+**Google Chronicle**: Version 66.0
+
+* Updated processing of reference list rows in the following action:
+
+  + **Get Reference Lists**
 
 ### Feature
 

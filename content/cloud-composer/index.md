@@ -1,5 +1,46 @@
 # Cloud Composer
 
+## 2025-10-10
+
+### Announcement
+
+A new Cloud Composer release has started on **October 10, 2025**. Get ready
+for upcoming changes and features as we roll out the new release to all regions.
+This release is in progress at the moment. Listed changes and features might
+not be available in some regions yet.
+
+### Fixed
+
+*(Cloud Composer 2 versions from 2.12.0 to 2.12.3)* Fixed a problem where
+Airflow components in the environment's cluster were running out of ephemeral
+storage. This change rolls out gradually over several releases to all regions
+supported by Cloud Composer 2.
+
+### Changed
+
+New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3)
+are available in Cloud Composer 3:
+
+* [composer-3-airflow-2.10.5-build.16](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-16) (default)
+* [composer-3-airflow-2.9.3-build.36](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-36)
+
+### Changed
+
+New [images](https://cloud.google.com/composer/docs/composer-versions#images-composer-2)
+are available in Cloud Composer 2:
+
+* [composer-2.14.4-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-14-4-airflow-2-10-5) (default)
+* [composer-2.14.4-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-14-4-airflow-2-9-3)
+
+### Deprecated
+
+The following Cloud Composer versions and builds have reached their
+[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):
+composer-2.9.6-\*, composer-3-airflow-2.7.3-build.17,
+composer-3-airflow-2.7.3-build.18, composer-3-airflow-2.9.1-build.8, and
+composer-3-airflow-2.9.1-build.9.
+
+---
 ## 2025-10-09
 
 ### Feature
@@ -64,7 +105,8 @@ are available in Cloud Composer 2:
 
 The following Cloud Composer versions and builds have reached their
 [end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):
-composer-2.9.4-\*, and composer-3-airflow-2.9.1 builds from build.0 to build.7.
+composer-2.9.4-\*, composer-3-airflow-2.9.1 builds from build.0 to build.7, and
+composer-3-airflow-2.7.3-build.16.
 
 ---
 ## 2025-09-11

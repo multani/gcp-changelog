@@ -98,10 +98,6 @@ The following Qwen models are available in [Model Garden](https://console.cloud.
 
 **Save and share prompts in Vertex AI Studio**: You can now save and share prompts in Vertex AI Studio. Sharing prompts lets you collaborate with team members, ensure consistency, and build a library of effective prompts for various tasks. For more information, see [Save and share prompts](https://cloud.google.com/vertex-ai/generative-ai/docs/prompt-sharing).
 
-### Feature
-
-**Save and share prompts in Vertex AI Studio**: You can now save and share prompts in Vertex AI Studio. Sharing prompts lets you collaborate with team members, ensure consistency, and build a library of effective prompts for various tasks. For more information, see [Save and share prompts](https://cloud.google.com/vertex-ai/generative-ai/docs/prompt-sharing).
-
 ---
 ## 2025-10-06
 

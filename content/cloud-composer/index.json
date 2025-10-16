@@ -1,6 +1,48 @@
 {
   "name": "Cloud Composer",
   "entries": {
+    "2025-10-10": [
+      {
+        "kind": "Announcement",
+        "content": "A new Cloud Composer release has started on **October 10, 2025**. Get ready\nfor upcoming changes and features as we roll out the new release to all regions.\nThis release is in progress at the moment. Listed changes and features might\nnot be available in some regions yet.",
+        "summary": {
+          "title": "Cloud Composer Release",
+          "summary": "A new Cloud Composer release is now live!"
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "*(Cloud Composer 2 versions from 2.12.0 to 2.12.3)* Fixed a problem where\nAirflow components in the environment's cluster were running out of ephemeral\nstorage. This change rolls out gradually over several releases to all regions\nsupported by Cloud Composer 2.",
+        "summary": {
+          "title": "Ephemeral storage issue fixed in Cloud Composer 2",
+          "summary": "A storage issue affecting Airflow components in Cloud Composer 2 environments has been resolved. This fix addresses problems where components ran out of ephemeral storage."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Cloud Composer 3:\n\n* [composer-3-airflow-2.10.5-build.16](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-16) (default)\n* [composer-3-airflow-2.9.3-build.36](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-36)",
+        "summary": {
+          "title": "Airflow builds updated",
+          "summary": "New Airflow builds for Cloud Composer 3 are now available."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "New [images](https://cloud.google.com/composer/docs/composer-versions#images-composer-2)\nare available in Cloud Composer 2:\n\n* [composer-2.14.4-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-14-4-airflow-2-10-5) (default)\n* [composer-2.14.4-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-14-4-airflow-2-9-3)",
+        "summary": {
+          "title": "New Images Available",
+          "summary": "New images are available for Cloud Composer 2, including composer-2.14.4-airflow-2.10.5 (default) and composer-2.14.4-airflow-2.9.3."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "The following Cloud Composer versions and builds have reached their\n[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-2.9.6-\\*, composer-3-airflow-2.7.3-build.17,\ncomposer-3-airflow-2.7.3-build.18, composer-3-airflow-2.9.1-build.8, and\ncomposer-3-airflow-2.9.1-build.9.",
+        "summary": {
+          "title": "Cloud Composer Versions End of Support",
+          "summary": "Certain Cloud Composer versions are no longer supported. Please update to a supported version to avoid disruptions."
+        }
+      }
+    ],
     "2025-10-09": [
       {
         "kind": "Feature",
@@ -70,10 +112,10 @@
       },
       {
         "kind": "Deprecated",
-        "content": "The following Cloud Composer versions and builds have reached their\n[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-2.9.4-\\*, and composer-3-airflow-2.9.1 builds from build.0 to build.7.",
+        "content": "The following Cloud Composer versions and builds have reached their\n[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-2.9.4-\\*, composer-3-airflow-2.9.1 builds from build.0 to build.7, and\ncomposer-3-airflow-2.7.3-build.16.",
         "summary": {
-          "title": "Cloud Composer Versions Deprecation",
-          "summary": "Certain Cloud Composer versions and builds, specifically composer-2.9.4-* and composer-3-airflow-2.9.1 builds from build.0 to build.7, have reached their end of support."
+          "title": "Cloud Composer versions deprecated",
+          "summary": "Certain Cloud Composer versions are no longer supported. Please update to a supported version."
         }
       }
     ],

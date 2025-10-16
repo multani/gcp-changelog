@@ -1,5 +1,78 @@
 # Generative AI on Vertex AI
 
+## 2025-10-15
+
+### Feature
+
+**Anthropic's Claude Haiku 4.5**
+
+You can use Anthropic's
+[Claude Haiku 4.5](https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/claude/haiku-4-5)
+in Model Garden.
+
+### Feature
+
+**Veo video generation**
+
+Veo 3.1 is available in Preview, and introduces the following models:
+
+* [Veo
+  3.1 preview](https://cloud.google.com/vertex-ai/generative-ai/docs/models/veo/3-1-generate-preview)
+* [Veo 3.1
+  Fast preview](https://cloud.google.com/vertex-ai/generative-ai/docs/models/veo/3-1-fast-generate-preview).
+
+For more information, see the following:
+
+* [Generate videos with Veo on Vertex AI](https://cloud.google.com/vertex-ai/generative-ai/docs/video/overview)
+* [Generate Veo videos from text prompts](https://cloud.google.com/vertex-ai/generative-ai/docs/video/generate-videos-from-text)
+* [Generate Veo videos from an image](https://cloud.google.com/vertex-ai/generative-ai/docs/video/generate-videos-from-an-image)
+* [Generate Veo videos using first and last frames](https://cloud.google.com/vertex-ai/generative-ai/docs/video/generate-videos-from-first-and-last-frames)
+* [Direct Veo using a reference image](https://cloud.google.com/vertex-ai/generative-ai/docs/video/use-reference-images-to-guide-video-generation)
+* [Veo video generation API](https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/veo-video-generation)
+
+### Feature
+
+**Veo video generation**
+
+Veo 2 supports adding and removing objects from videos in Preview.
+
+For more information about Veo 2, see [Veo 2
+Preview](https://cloud.google.com/vertex-ai/generative-ai/docs/models/veo/2-0-generate-preview)
+
+For more information about adding and removing objects, see the following:
+
+* [Insert objects into Veo videos](https://cloud.google.com/vertex-ai/generative-ai/docs/video/insert-objects-into-videos)
+* [Remove objects from Veo videos](https://cloud.google.com/vertex-ai/generative-ai/docs/video/remove-objects-from-videos)
+* [Veo video generation API](https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/veo-video-generation)
+
+---
+## 2025-10-14
+
+### Deprecated
+
+**Imagen subject and style fine-tuning**
+
+Imagen subject model and style model tuning will be removed on
+December 31, 2025. We recommend that you use [Gemini 2.5 Flash Image](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash-image), which supports most use cases that require
+fine-tuning. For more information, see  [Edit images with
+Gemini](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-editing).
+
+### Deprecated
+
+**Imagen 4 preview models**
+
+The following Imagen 4 preview models will be removed on
+November 30, 2025 :
+`imagen-4.0-generate-preview-06-06`,
+`imagen-4.0-ultra-generate-preview-06-06`, and
+`imagen-4.0-fast-generate-preview-06-06`. To avoid service
+disruption, migrate all workflows that use Imagen 4 preview models before
+November 30, 2025 , 2025, to the following Imagen 4 Generally
+Available models: `imagen-4.0-generate-001`,
+`imagen-4.0-ultra-generate-001`,
+`imagen-4.0-fast-generate-001`.
+
+---
 ## 2025-10-09
 
 ### Changed
@@ -20,6 +93,10 @@ The following Qwen models are available in [Model Garden](https://console.cloud.
 * Qwen-Image
 * Qwen-Image-Edit
 * Qwen-Image-Edit-2509
+
+### Feature
+
+**Save and share prompts in Vertex AI Studio**: You can now save and share prompts in Vertex AI Studio. Sharing prompts lets you collaborate with team members, ensure consistency, and build a library of effective prompts for various tasks. For more information, see [Save and share prompts](https://cloud.google.com/vertex-ai/generative-ai/docs/prompt-sharing).
 
 ### Feature
 

@@ -1,13 +1,47 @@
 {
   "name": "Generative AI on Vertex AI",
   "entries": {
-    "2025-10-09": [
+    "2025-10-15": [
       {
-        "kind": "Changed",
-        "content": "**Imagen**\n\nImagen's virtual try-on model, `virtual-try-on-preview-08-04`\nwas updated on September 30, 2025, to more accurately preserve the person's\nbody shape and preserve the garment's identity.",
+        "kind": "Feature",
+        "content": "**Anthropic's Claude Haiku 4.5**\n\nYou can use Anthropic's\n[Claude Haiku 4.5](https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/claude/haiku-4-5)\nin Model Garden.",
         "summary": {
-          "title": "Imagen Virtual Try-On Model Updated",
-          "summary": "The Imagen virtual try-on model has been updated to improve body shape preservation and garment identity accuracy."
+          "title": "Claude Haiku 4.5 Now Available",
+          "summary": "Anthropic's Claude Haiku 4.5 is now accessible through Model Garden."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Veo video generation**\n\nVeo 3.1 is available in Preview, and introduces the following models:\n\n* [Veo\n  3.1 preview](https://cloud.google.com/vertex-ai/generative-ai/docs/models/veo/3-1-generate-preview)\n* [Veo 3.1\n  Fast preview](https://cloud.google.com/vertex-ai/generative-ai/docs/models/veo/3-1-fast-generate-preview).\n\nFor more information, see the following:\n\n* [Generate videos with Veo on Vertex AI](https://cloud.google.com/vertex-ai/generative-ai/docs/video/overview)\n* [Generate Veo videos from text prompts](https://cloud.google.com/vertex-ai/generative-ai/docs/video/generate-videos-from-text)\n* [Generate Veo videos from an image](https://cloud.google.com/vertex-ai/generative-ai/docs/video/generate-videos-from-an-image)\n* [Generate Veo videos using first and last frames](https://cloud.google.com/vertex-ai/generative-ai/docs/video/generate-videos-from-first-and-last-frames)\n* [Direct Veo using a reference image](https://cloud.google.com/vertex-ai/generative-ai/docs/video/use-reference-images-to-guide-video-generation)\n* [Veo video generation API](https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/veo-video-generation)",
+        "summary": {
+          "title": "Veo 3.1 Available in Preview",
+          "summary": "Veo 3.1 is now available in preview, offering enhanced video generation capabilities."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Veo video generation**\n\nVeo 2 supports adding and removing objects from videos in Preview.\n\nFor more information about Veo 2, see [Veo 2\nPreview](https://cloud.google.com/vertex-ai/generative-ai/docs/models/veo/2-0-generate-preview)\n\nFor more information about adding and removing objects, see the following:\n\n* [Insert objects into Veo videos](https://cloud.google.com/vertex-ai/generative-ai/docs/video/insert-objects-into-videos)\n* [Remove objects from Veo videos](https://cloud.google.com/vertex-ai/generative-ai/docs/video/remove-objects-from-videos)\n* [Veo video generation API](https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/veo-video-generation)",
+        "summary": {
+          "title": "Veo video generation",
+          "summary": "Veo 2 now allows you to add and remove objects from videos during the preview phase."
+        }
+      }
+    ],
+    "2025-10-14": [
+      {
+        "kind": "Deprecated",
+        "content": "**Imagen subject and style fine-tuning**\n\nImagen subject model and style model tuning will be removed on\nDecember 31, 2025. We recommend that you use [Gemini 2.5 Flash Image](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash-image), which supports most use cases that require\nfine-tuning. For more information, see  [Edit images with\nGemini](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-editing).",
+        "summary": {
+          "title": "Imagen fine-tuning deprecation",
+          "summary": "The Imagen subject and style fine-tuning features will be removed on December 31, 2025. Please migrate to Gemini 2.5 Flash Image for supported use cases."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "**Imagen 4 preview models**\n\nThe following Imagen 4 preview models will be removed on\nNovember 30, 2025 :\n`imagen-4.0-generate-preview-06-06`,\n`imagen-4.0-ultra-generate-preview-06-06`, and\n`imagen-4.0-fast-generate-preview-06-06`. To avoid service\ndisruption, migrate all workflows that use Imagen 4 preview models before\nNovember 30, 2025 , 2025, to the following Imagen 4 Generally\nAvailable models: `imagen-4.0-generate-001`,\n`imagen-4.0-ultra-generate-001`,\n`imagen-4.0-fast-generate-001`.",
+        "summary": {
+          "title": "Imagen 4 preview models removal",
+          "summary": "The Imagen 4 preview models will be removed on November 30, 2025. Please migrate to the Imagen 4 Generally Available models to avoid service disruption."
         }
       }
     ],
@@ -18,6 +52,14 @@
         "summary": {
           "title": "New Image Models Available",
           "summary": "We are excited to announce the release of new Qwen image models, including Qwen-Image, Qwen-Image-Edit, and Qwen-Image-Edit-2509, now accessible through Model Garden."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Save and share prompts in Vertex AI Studio**: You can now save and share prompts in Vertex AI Studio. Sharing prompts lets you collaborate with team members, ensure consistency, and build a library of effective prompts for various tasks. For more information, see [Save and share prompts](https://cloud.google.com/vertex-ai/generative-ai/docs/prompt-sharing).",
+        "summary": {
+          "title": "Save and share prompts in Vertex AI Studio",
+          "summary": "Users can now save and share prompts in Vertex AI Studio. This feature enhances collaboration and helps build a library of effective prompts."
         }
       },
       {
@@ -142,6 +184,16 @@
         "summary": {
           "title": "Imagen model update",
           "summary": "The Imagen virtual try-on model has been updated to better preserve body shape and garment identity."
+        }
+      }
+    ],
+    "2025-10-09": [
+      {
+        "kind": "Changed",
+        "content": "**Imagen**\n\nImagen's virtual try-on model, `virtual-try-on-preview-08-04`\nwas updated on September 30, 2025, to more accurately preserve the person's\nbody shape and preserve the garment's identity.",
+        "summary": {
+          "title": "Imagen Virtual Try-On Model Updated",
+          "summary": "The Imagen virtual try-on model has been updated to improve body shape preservation and garment identity accuracy."
         }
       }
     ],

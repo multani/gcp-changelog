@@ -4,6 +4,14 @@
 
 ### Feature
 
+You can
+[visualize your geospatial query results](https://cloud.google.com/bigquery/docs/geospatial-visualize)
+on an interactive map in BigQuery Studio. This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+### Feature
+
 You can use the `dbt-bigquery` adapter to run Python code that's defined in
 BigQuery DataFrames. For more information, see
 [Use BigQuery DataFrames in dbt](https://cloud.google.com/bigquery/docs/dataframes-dbt).
@@ -68,6 +76,13 @@ An updated version of the [ODBC driver for BigQuery](https://cloud.google.com/bi
 
 ### Feature
 
+You can set [labels](https://cloud.google.com/bigquery/docs/labels-intro) on reservations. These labels
+can be used to organize your reservations and for billing analysis. This feature
+is [generally
+available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+### Feature
+
 You can [specify which reservation a query uses at
 runtime](https://cloud.google.com/bigquery/docs/reservations-workload-management#flexible), and [set IAM
 policies directly on
@@ -86,13 +101,6 @@ controls](https://cloud.google.com/bigquery/docs/custom-quotas) configured or th
 [reservations](https://cloud.google.com/bigquery/docs/reservations-workload-management) aren't affected.
 If the new limit might affect your workload, create a [custom cost
 control](https://cloud.google.com/bigquery/docs/custom-quotas) based on your workload needs.
-
-### Feature
-
-You can set [labels](https://cloud.google.com/bigquery/docs/labels-intro) on reservations. These labels
-can be used to organize your reservations and for billing analysis. This feature
-is [generally
-available](https://cloud.google.com/products#product-launch-stages) (GA).
 
 ---
 ## 2025-10-07

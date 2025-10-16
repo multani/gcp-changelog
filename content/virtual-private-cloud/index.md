@@ -1,5 +1,14 @@
 # Virtual Private Cloud
 
+## 2025-10-15
+
+### Feature
+
+Private Service Connect health is available in **Preview**.
+
+Private Service Connect health lets service producers define health states to support automatic cross-region failover for consumers that use Private Service Connect backends. For more information, see [About Private Service Connect health for automatic cross-region failover](https://cloud.google.com/vpc/docs/about-private-service-connect-health).
+
+---
 ## 2025-09-26
 
 ### Feature

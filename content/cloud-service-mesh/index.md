@@ -1,5 +1,84 @@
 # Cloud Service Mesh
 
+## 2025-10-15
+
+### Announcement
+
+**1.25.5-asm.7 is now available for in-cluster Cloud Service Mesh.**
+
+You can now download 1.25.5-asm.7 for in-cluster Cloud Service Mesh. It includes the features of [Istio 1.25.5](https://istio.io/latest/news/releases/1.25.x/announcing-1.25.5/) subject to the list of [supported features](https://cloud.google.com/service-mesh/v1.25/docs/supported-features-in-cluster). Cloud Service Mesh version 1.25.5-asm.7 uses envoy v1.33.10-dev.
+
+For details on upgrading Cloud Service Mesh, see [Upgrade Cloud Service Mesh](https://cloud.google.com/service-mesh/v1.25/docs/upgrade/upgrade).
+
+### Fixed
+
+1.25.5-asm.7 includes the fixes for the following CVEs:
+
+| CVE | Proxy | Control Plane | CNI | Distroless |
+| --- | --- | --- | --- | --- |
+| [CVE-2025-6297](https://ubuntu.com/security/CVE-2025-6297) | Yes | Yes | Yes | - |
+| [CVE-2024-10963](https://ubuntu.com/security/CVE-2024-10963) | Yes | Yes | Yes | - |
+| [CVE-2025-4802](https://security-tracker.debian.org/tracker/CVE-2025-4802) | - | - | - | Yes |
+| [CVE-2025-8058](https://ubuntu.com/security/CVE-2025-8058) | Yes | Yes | Yes | Yes |
+
+### Announcement
+
+**1.26.4-asm.7 is now available for in-cluster Cloud Service Mesh.**
+
+You can now download 1.26.4-asm.7 for in-cluster Cloud Service Mesh. It includes the features of [Istio 1.26.4](https://istio.io/latest/news/releases/1.26.x/announcing-1.26.4/) subject to the list of [supported features](https://cloud.google.com/service-mesh/docs/supported-features-in-cluster).
+
+For details on upgrading Cloud Service Mesh, see [Upgrade Cloud Service Mesh](https://cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service Mesh version 1.26.4-asm.7 uses Envoy v1.34.8-dev.
+
+### Fixed
+
+1.26.4-asm.7 includes the fixes for the following CVEs:
+
+| CVE | Proxy | Control Plane | CNI | Distroless |
+| --- | --- | --- | --- | --- |
+| [CVE-2024-10963](https://ubuntu.com/security/CVE-2024-10963) | Yes | Yes | Yes | - |
+| [CVE-2025-8058](https://ubuntu.com/security/CVE-2025-8058) | Yes | Yes | Yes | Yes |
+| [CVE-2025-4802](https://security-tracker.debian.org/tracker/CVE-2025-4802) | - | - | - | Yes |
+
+### Announcement
+
+**1.27.1-asm.5 is now available for in-cluster Cloud Service Mesh.**
+
+You can now download 1.27.1-asm.5 for in-cluster Cloud Service Mesh. It includes the features of [Istio 1.27.1](https://istio.io/latest/news/releases/1.27.x/announcing-1.27/) subject to the list of [supported features](https://cloud.google.com/service-mesh/docs/supported-features-in-cluster).
+
+For details on upgrading Cloud Service Mesh, see [Upgrade Cloud Service Mesh](https://cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service Mesh version 1.27.1-asm.5 uses Envoy v1.35.4-dev.
+
+### Fixed
+
+1.27.1-asm.5 includes the fixes for the following CVEs:
+
+| CVE | Proxy | Control Plane | CNI | Distroless |
+| --- | --- | --- | --- | --- |
+| [CVE-2025-6297](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2025-6297) | Yes | Yes | Yes | - |
+| [CVE-2024-10963](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2024-10963) | Yes | Yes | Yes | - |
+| [CVE-2025-9230](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2025-9230 ) | Yes | Yes | Yes | - |
+| [CVE-2025-8058](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2025-8058) | Yes | Yes | Yes | Yes |
+| [CVE-2025-4802](https://security-tracker.debian.org/tracker/CVE-2025-4802 ) | - | - | - | Yes |
+
+### Announcement
+
+In-cluster Cloud Service Mesh 1.24 is no longer supported. For more information and to view the earliest end-of-life dates for other versions, see [Supported versions](https://cloud.google.com/service-mesh/docs/supported-features-in-cluster#supported_versions).
+
+---
+## 2025-09-30
+
+### Feature
+
+You can now configure traffic routing using [Cloud Service Mesh service routing APIs](https://cloud.google.com/service-mesh/docs/configure-cloud-service-mesh-for-cloud-run) between Cloud Run and Cloud Run, Google Kubernetes Engine, and Google Compute Engine services. (GA).
+
+### Changed
+
+Managed Cloud Service Mesh with a TD control plane in the Rapid release channel will start using proxy images with an [internal envoy version](https://cloud.google.com/service-mesh/docs/supported-features-managed#base_images).
+
+All features supported by Managed (TD) control planes are supported by this proxy. To identify which proxy version is used in a cluster, see [Identify the proxy versions used in the cluster](https://cloud.google.com/service-mesh/docs/troubleshooting/troubleshoot-proxy#identify_the_proxy_version_used_in_the_cluster).
+
+This release uses the version `csm_istio_proxy_20250611.00_p0`. More details about the proxy version can be found on the [Versions](https://cloud.google.com/service-mesh/versions) page.
+
+---
 ## 2025-09-29
 
 ### Announcement

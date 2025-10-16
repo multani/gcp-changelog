@@ -45,7 +45,7 @@
 
 ### Announcement
 
-Release 6.3.64 is being rolled out to the first phase of regions as listed [here](https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+Release 6.3.63 is being rolled out to the first phase of regions as listed [here](https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
 
 This release contains internal and customer bug fixes.
 
@@ -54,14 +54,14 @@ This release contains internal and customer bug fixes.
 
 ### Announcement
 
-[Release 6.3.63](https://cloud.google.com/chronicle/docs/soar/release-notes#September_28_2025) is now available for all regions.
+[Release 6.3.62](https://cloud.google.com/chronicle/docs/soar/release-notes#September_28_2025) is now available for all regions.
 
 ---
 ## 2025-09-28
 
 ### Announcement
 
-Release 6.3.63 is being rolled out to the first phase of regions, as outlined in our [Google SecOps release plan](https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+Release 6.3.62 is being rolled out to the first phase of regions, as outlined in our [Google SecOps release plan](https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
 
 This release contains the following changes:
 
@@ -102,7 +102,7 @@ The maximum allowed size for a Publisher's Connector Package is now limited to 2
 
 ### Announcement
 
-[Release 6.3.62](https://cloud.google.com/chronicle/docs/soar/release-notes#September_16_2025) is now available for all regions.
+[Release 6.3.61](https://cloud.google.com/chronicle/docs/soar/release-notes#September_16_2025) is now available for all regions.
 
 ---
 ## 2025-09-25
@@ -278,7 +278,7 @@ All customers and partners are being migrated from SOAR to Google Cloud. For mor
 
 ### Announcement
 
-Release 6.3.62 is being rolled out to the first phase of regions as listed [here](https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+Release 6.3.61 is being rolled out to the first phase of regions as listed [here](https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
 
 This release contains internal and customer bug fixes.
 
@@ -287,7 +287,7 @@ This release contains internal and customer bug fixes.
 
 ### Announcement
 
-[Release 6.3.61](https://cloud.google.com/chronicle/docs/soar/release-notes?hl=en#September_07_2025) is now available for all regions.
+[Release 6.3.60](https://cloud.google.com/chronicle/docs/soar/release-notes#September_07_2025) is now available for all regions.
 
 ---
 ## 2025-09-07

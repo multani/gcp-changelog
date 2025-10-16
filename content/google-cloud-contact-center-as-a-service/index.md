@@ -1,5 +1,23 @@
 # Google Cloud Contact Center as a Service
 
+## 2025-10-15
+
+### Announcement
+
+**Mobile SDK patch 2.14.1 is released**
+
+This patch adds the `didHandleUjetError` function to the iOS SDK. The `didHandleUjetError` function can listen for and handle the following errors:
+
+* `networkError`
+* `authenticationError`
+* `authenticationJwtError`
+* `voipConnectionError`
+* `voipLibraryNotFound`
+* `chatLibraryNotFound`
+
+For more information, see [Fallback](https://cloud.google.com/contact-center/ccai-platform/docs/ios-sdk-guide#fallback).
+
+---
 ## 2025-10-14
 
 ### Announcement
@@ -91,6 +109,7 @@ The following issues were addressed in this release:
 * Fixed an issue that occurred after an agent configured their own hours of operation settings in the agent adapter. Those settings didn't appear for administrators in the agent's user profile on the **Settings > Users & Team > Manage Users & Teams** page. This prevented the administrator from making other edits to the agent's profile without overwriting the agent's hours of operation settings.
 * Fixed an issue where CRM tickets weren't created for some calls.
 * Fixed an issue where outbound SIP calls incorrectly appended data parameters, causing calls to fail.
+* Fixed a Web SDK security vulnerability associated with DOMPurify.
 
 ---
 ## 2025-10-09

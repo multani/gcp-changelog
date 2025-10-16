@@ -2,9 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2025-10-14T00:00:00+00:00</updated>
+  <updated>2025-10-15T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-10-15:announcement:0</id>
+    <published>2025-10-15T00:00:00+00:00</published>
+    <updated>2025-10-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Mobile SDK patch 2.14.1 is released</strong></p>
+<p>This patch adds the <code>didHandleUjetError</code> function to the iOS SDK. The <code>didHandleUjetError</code> function can listen for and handle the following errors:</p>
+<ul>
+<li><code>networkError</code></li>
+<li><code>authenticationError</code></li>
+<li><code>authenticationJwtError</code></li>
+<li><code>voipConnectionError</code></li>
+<li><code>voipLibraryNotFound</code></li>
+<li><code>chatLibraryNotFound</code></li>
+</ul>
+<p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/ios-sdk-guide#fallback">Fallback</a>.</p>]]></content>
+    <summary>A new patch for the Mobile SDK, version 2.14.1, is now available. This update includes the `didHandleUjetError` function for the iOS SDK, which allows for handling various network and authentication-related errors. More details can be found in the documentation.</summary>
+    <title>Announcement: Mobile SDK patch 2.14.1 released</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -147,9 +168,10 @@
 * Fixed an issue where users with a custom role were unable to save changes in the <strong>Chat Settings</strong> pane, even when their role had <strong>View</strong> and <strong>Edit</strong> permissions.
 * Fixed an issue that occurred after an agent configured their own hours of operation settings in the agent adapter. Those settings didn't appear for administrators in the agent's user profile on the <strong>Settings &gt; Users &amp; Team &gt; Manage Users &amp; Teams</strong> page. This prevented the administrator from making other edits to the agent's profile without overwriting the agent's hours of operation settings.
 * Fixed an issue where CRM tickets weren't created for some calls.
-* Fixed an issue where outbound SIP calls incorrectly appended data parameters, causing calls to fail.</p>]]></content>
-    <summary>This release addresses various issues, including problems with virtual agent configuration, call redirection errors, agent monitoring inaccuracies, and usability improvements for HubSpot and Windows 11 users. It also resolves issues related to call recording, chat sessions, predictive dialing, and user role permissions.</summary>
-    <title>Fixed: Bug Fixes and Improvements</title>
+* Fixed an issue where outbound SIP calls incorrectly appended data parameters, causing calls to fail.
+* Fixed a Web SDK security vulnerability associated with DOMPurify.</p>]]></content>
+    <summary>This release addresses numerous issues, including problems with virtual agent configuration, call redirection errors, inaccurate reporting data, HubSpot integration glitches, SMS chat session management, character input on Windows 11, SDK data display, link conversion in chat, obscured messages, missed call callbacks, predictive calling campaign failures, and recording message settings. It also resolves issues with customized greetings, destination name display, agent status visibility, queue searches, duration reporting, team user counts, agent inactivity timeouts, custom role permissions, hours of operation settings, CRM ticket creation, outbound SIP call failures, and a Web SDK security vulnerability.</summary>
+    <title>Fixed: Resolved Issues in Recent Update</title>
   </entry>
   <entry>
     <author>

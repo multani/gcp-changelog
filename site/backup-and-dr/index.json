@@ -1,6 +1,48 @@
 {
   "name": "Backup and DR",
   "entries": {
+    "2025-10-15": [
+      {
+        "kind": "Announcement",
+        "content": "Guardrails have been defined for each backup/recovery appliance to specify the number of supported job slots, ensuring smooth parallel backup and mount jobs.",
+        "summary": {
+          "title": "Backup/Recovery Appliance Guardrails",
+          "summary": "Guardrails are in place for each backup/recovery appliance to manage job slots, ensuring efficient parallel operations."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Backup and DR users can now create multi-region backup vaults as necessary to support different resource type requirements.",
+        "summary": {
+          "title": "Multi-region backup vaults",
+          "summary": "Users can now create multi-region backup vaults to support different resource types."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "There is a new backup vault-level parameter, settable only at creation time, that determines whether the enforced retention period for incoming backups will be set to match the incoming expiry dates for the respective backups or whether the enforced retention period for all incoming backups will simply be set to match the backup vault-level enforced retention period. This enables different enforced retention periods for different backup cadences, while also enabling protection into a single backup vault.",
+        "summary": {
+          "title": "New Backup Retention Parameter",
+          "summary": "A new parameter allows setting enforced retention periods at backup creation time, enabling flexible retention policies within a single vault."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "Launched FedRAMP High Compliance (R2303) for Assured Workloads, restricting non-compliant features of Backup and DR for Self Managed Storage within Assured Workload environments. This enhances your workload security and compliance with stringent security requirements.",
+        "summary": {
+          "title": "FedRAMP High Compliance for Assured Workloads",
+          "summary": "Backup and DR for Self Managed Storage in Assured Workloads now complies with FedRAMP High (R2303). Non-compliant features are restricted, enhancing workload security and adherence to strict security standards."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "Introducing notifications and alerts for the following critical events:\n\n* Processes not running on a backup/recovery appliance\n* Expired certificates\n* No jobs running on a backup/recovery appliance\n* CPU and memory usage exceeding threshold values\n* Backup/recovery appliance appliance version out of support\n* Backup/recovery appliance updates available\n\nYou can subscribe to these events and configure email alerts.",
+        "summary": {
+          "title": "Critical Event Alerts",
+          "summary": "Stay informed about critical events with our new notifications and alerts system. Configure email alerts for key issues like process failures, expired certificates, and resource usage."
+        }
+      }
+    ],
     "2025-10-14": [
       {
         "kind": "Feature",

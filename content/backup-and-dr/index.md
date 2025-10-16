@@ -1,5 +1,37 @@
 # Backup and DR
 
+## 2025-10-15
+
+### Announcement
+
+Guardrails have been defined for each backup/recovery appliance to specify the number of supported job slots, ensuring smooth parallel backup and mount jobs.
+
+### Feature
+
+Backup and DR users can now create multi-region backup vaults as necessary to support different resource type requirements.
+
+### Announcement
+
+There is a new backup vault-level parameter, settable only at creation time, that determines whether the enforced retention period for incoming backups will be set to match the incoming expiry dates for the respective backups or whether the enforced retention period for all incoming backups will simply be set to match the backup vault-level enforced retention period. This enables different enforced retention periods for different backup cadences, while also enabling protection into a single backup vault.
+
+### Announcement
+
+Launched FedRAMP High Compliance (R2303) for Assured Workloads, restricting non-compliant features of Backup and DR for Self Managed Storage within Assured Workload environments. This enhances your workload security and compliance with stringent security requirements.
+
+### Announcement
+
+Introducing notifications and alerts for the following critical events:
+
+* Processes not running on a backup/recovery appliance
+* Expired certificates
+* No jobs running on a backup/recovery appliance
+* CPU and memory usage exceeding threshold values
+* Backup/recovery appliance appliance version out of support
+* Backup/recovery appliance updates available
+
+You can subscribe to these events and configure email alerts.
+
+---
 ## 2025-10-14
 
 ### Feature

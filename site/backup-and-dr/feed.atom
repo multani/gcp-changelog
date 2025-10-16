@@ -2,9 +2,73 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Backup and DR</title>
   <subtitle>Changelog for Google Cloud product: Backup and DR</subtitle>
-  <updated>2025-10-14T00:00:00+00:00</updated>
+  <updated>2025-10-15T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:backup-and-dr</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/backup-and-dr/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:backup-and-dr:2025-10-15:announcement:0</id>
+    <published>2025-10-15T00:00:00+00:00</published>
+    <updated>2025-10-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Guardrails have been defined for each backup/recovery appliance to specify the number of supported job slots, ensuring smooth parallel backup and mount jobs.</p>]]></content>
+    <summary>Guardrails are in place for each backup/recovery appliance to manage job slots, ensuring efficient parallel operations.</summary>
+    <title>Announcement: Backup/Recovery Appliance Guardrails</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:backup-and-dr:2025-10-15:feature:1</id>
+    <published>2025-10-15T00:00:00+00:00</published>
+    <updated>2025-10-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Backup and DR users can now create multi-region backup vaults as necessary to support different resource type requirements.</p>]]></content>
+    <summary>Users can now create multi-region backup vaults to support different resource types.</summary>
+    <title>Feature: Multi-region backup vaults</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:backup-and-dr:2025-10-15:announcement:2</id>
+    <published>2025-10-15T00:00:00+00:00</published>
+    <updated>2025-10-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>There is a new backup vault-level parameter, settable only at creation time, that determines whether the enforced retention period for incoming backups will be set to match the incoming expiry dates for the respective backups or whether the enforced retention period for all incoming backups will simply be set to match the backup vault-level enforced retention period. This enables different enforced retention periods for different backup cadences, while also enabling protection into a single backup vault.</p>]]></content>
+    <summary>A new parameter allows setting enforced retention periods at backup creation time, enabling flexible retention policies within a single vault.</summary>
+    <title>Announcement: New Backup Retention Parameter</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:backup-and-dr:2025-10-15:announcement:3</id>
+    <published>2025-10-15T00:00:00+00:00</published>
+    <updated>2025-10-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Launched FedRAMP High Compliance (R2303) for Assured Workloads, restricting non-compliant features of Backup and DR for Self Managed Storage within Assured Workload environments. This enhances your workload security and compliance with stringent security requirements.</p>]]></content>
+    <summary>Backup and DR for Self Managed Storage in Assured Workloads now complies with FedRAMP High (R2303). Non-compliant features are restricted, enhancing workload security and adherence to strict security standards.</summary>
+    <title>Announcement: FedRAMP High Compliance for Assured Workloads</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:backup-and-dr:2025-10-15:announcement:4</id>
+    <published>2025-10-15T00:00:00+00:00</published>
+    <updated>2025-10-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Introducing notifications and alerts for the following critical events:</p>
+<ul>
+<li>Processes not running on a backup/recovery appliance</li>
+<li>Expired certificates</li>
+<li>No jobs running on a backup/recovery appliance</li>
+<li>CPU and memory usage exceeding threshold values</li>
+<li>Backup/recovery appliance appliance version out of support</li>
+<li>Backup/recovery appliance updates available</li>
+</ul>
+<p>You can subscribe to these events and configure email alerts.</p>]]></content>
+    <summary>Stay informed about critical events with our new notifications and alerts system. Configure email alerts for key issues like process failures, expired certificates, and resource usage.</summary>
+    <title>Announcement: Critical Event Alerts</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

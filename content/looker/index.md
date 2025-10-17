@@ -12,7 +12,7 @@ The following features are available in [Preview](https://cloud.google.com/produ
 * You can now select up to five Looker Explores as data sources for a data agent in Looker.
 * You can now [share data agents](https://cloud.google.com/looker/docs/studio/conversational-data-agents-looker#share-data-agents) to let other users chat with your agent and its Explores.
 
-(This release note was updated on October 9, 2025 to correct the Looker version for this release.)
+(This release note was updated on October 10, 2025 to correct the Looker version for this release.)
 
 ---
 ## 2025-10-08
@@ -143,7 +143,7 @@ The Data History Playback feature is now generally available on the Admin > Sett
 
 ### Feature
 
-The Reduce Filter Queries feature is now generally available on the Admin > Settings page
+The Reduce Filter Queries feature is now generally available on the Admin > Settings page.
 
 ### Feature
 

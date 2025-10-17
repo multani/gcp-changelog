@@ -2,9 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee X</title>
   <subtitle>Changelog for Google Cloud product: Apigee X</subtitle>
-  <updated>2025-10-14T00:00:00+00:00</updated>
+  <updated>2025-10-16T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-x</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-x/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2025-10-16:announcement:0</id>
+    <published>2025-10-16T00:00:00+00:00</published>
+    <updated>2025-10-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On October 16, 2025, we released an updated version of Apigee (1-16-0-apigee-3).</p>
+<p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>]]></content>
+    <summary>An updated version of Apigee (1-16-0-apigee-3) was released on October 16, 2025. Rollouts have begun and may take several business days to complete across all Google Cloud zones.</summary>
+    <title>Announcement: Apigee Update Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2025-10-16:fixed:1</id>
+    <published>2025-10-16T00:00:00+00:00</published>
+    <updated>2025-10-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| <strong>442501403</strong> | <strong>Fixed an issue that caused incorrect target latency metrics in Apigee Analytics when a TargetEndpoint is configured with a <LoadBalancer>.</strong> |
+| <strong>437999897</strong> | <strong>Reduced the log level for failed geo IP lookups to address excessive log messages for private IP addresses.</strong> |
+| <strong>436323210</strong> | <strong>Fixed ingress cert keys to allow both <code>tls.key</code>/<code>key</code> and <code>tls.crt</code>/<code>cert</code>.</strong> |
+| <strong>N/A</strong> | <strong>Updates to security infrastructure and libraries.</strong> |</p>]]></content>
+    <summary>Resolved incorrect target latency metrics in Apigee Analytics. Reduced log level for geo IP lookups to prevent excessive messages for private IPs. Updated ingress cert key handling and security infrastructure.</summary>
+    <title>Fixed: Apigee Analytics Metrics and Logging Improvements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2025-10-16:security:2</id>
+    <published>2025-10-16T00:00:00+00:00</published>
+    <updated>2025-10-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| <strong>440419558, 433759657</strong> | <strong>Security fix for Apigee infrastructure.</strong> This addresses the following vulnerabilities:   * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-22868">CVE-2025-22868</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-48924">CVE-2025-48924</a> <strong>Note</strong>: This fix updates a Java library that is included in Apigee. Reliance on Java libraries that are included with Apigee is not supported. Those libraries are for Apigee product functionality only, and there's no guarantee that a library will be available from release to release. For more information, see <a href="https://cloud.google.com/apigee/docs/api-platform/reference/policies/java-callout-policy#Restrictions">Restrictions</a>. |</p>]]></content>
+    <summary>A security fix has been released for the Apigee infrastructure, addressing vulnerabilities CVE-2025-22868 and CVE-2025-48924. This update affects a Java library included with Apigee. It is important to note that reliance on these included Java libraries is not supported and they are intended solely for Apigee product functionality.</summary>
+    <title>Security: Security fix for Apigee</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

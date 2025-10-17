@@ -1,5 +1,52 @@
 # Cloud Storage
 
+## 2025-10-13
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Node.js
+
+### Changes for [@google-cloud/storage](https://github.com/googleapis/nodejs-storage)
+
+#### [7.17.2](https://github.com/googleapis/nodejs-storage/compare/v7.17.1...v7.17.2) (2025-10-06)
+
+##### Bug Fixes
+
+* Common Service: should retry a request failed ([#2652](https://github.com/googleapis/nodejs-storage/issues/2652)) ([b38b5d2](https://github.com/googleapis/nodejs-storage/commit/b38b5d221f2cb72658c1eb4a726315ab395a542c))
+* Implement path containment to prevent traversal attacks ([#2654](https://github.com/googleapis/nodejs-storage/issues/2654)) ([08d7abf](https://github.com/googleapis/nodejs-storage/commit/08d7abf32dd365b24ce34c66174be06c30bfce8f))
+
+### Java
+
+### Changes for [google-cloud-storage](https://github.com/googleapis/java-storage)
+
+#### [2.58.1](https://github.com/googleapis/java-storage/compare/v2.58.0...v2.58.1) (2025-10-06)
+
+##### Bug Fixes
+
+* **deps:** Update the Java code generator (gapic-generator-java) to 2.62.3 ([ba84793](https://github.com/googleapis/java-storage/commit/ba847937e553f6a47aa459f634f63ed42310762d))
+* Update BlobReadSession ScatteringByteChannel projection to use less CPU ([#3324](https://github.com/googleapis/java-storage/issues/3324)) ([678fecc](https://github.com/googleapis/java-storage/commit/678feccc972e557380e9ba5fcd52be099440197d))
+* Update DefaultRetryContext to trap and forward RejectedExceptionException to onFailure ([#3327](https://github.com/googleapis/java-storage/issues/3327)) ([1be31bd](https://github.com/googleapis/java-storage/commit/1be31bdfbc0283733e86b049d3be1911db50fb96))
+* Update PCU request building logic to properly clear crc32c and md5 ([#3323](https://github.com/googleapis/java-storage/issues/3323)) ([4da9f31](https://github.com/googleapis/java-storage/commit/4da9f3108d27f5c2ed3cc39eec161651f421e4db))
+
+##### Dependencies
+
+* Update dependency com.google.apis:google-api-services-storage to v1-rev20250925-2.0.0 ([#3313](https://github.com/googleapis/java-storage/issues/3313)) ([ab310eb](https://github.com/googleapis/java-storage/commit/ab310eb5af51ed332329abd6c3441d18f9965571))
+* Update dependency com.google.cloud:sdk-platform-java-config to v3.52.3 ([#3325](https://github.com/googleapis/java-storage/issues/3325)) ([4d3e3be](https://github.com/googleapis/java-storage/commit/4d3e3be27811ad92becc93321048c4268cec2fcf))
+* Update googleapis/sdk-platform-java action to v2.62.3 ([#3322](https://github.com/googleapis/java-storage/issues/3322)) ([a5808ea](https://github.com/googleapis/java-storage/commit/a5808ea168a81f07040276c1a05da67108fda37f))
+
+### Python
+
+### Changes for [google-cloud-storage](https://github.com/googleapis/python-storage)
+
+#### [3.4.1](https://github.com/googleapis/python-storage/compare/v3.4.0...v3.4.1) (2025-10-08)
+
+##### Bug Fixes
+
+* Fixes [#1561](https://github.com/googleapis/python-storage/issues/1561) by adding an option to specify the entire object checksum for resumable uploads via the `upload_from_string`, `upload_from_file`, and `upload_from_filename` methods ([acb918e](https://github.com/googleapis/python-storage/commit/acb918e20f7092e13d72fc63fe4ae2560bfecd40))
+
+---
 ## 2025-09-30
 
 ### Feature

@@ -2040,13 +2040,48 @@
 
 
 <h1 id="cloud-storage">Cloud Storage</h1>
+<h2 id="2025-10-13">2025-10-13</h2>
+<h3 id="libraries">Libraries</h3>
+<p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
+<h3 id="nodejs">Node.js</h3>
+<h3 id="changes-for-google-cloudstorage">Changes for <a href="https://github.com/googleapis/nodejs-storage">@google-cloud/storage</a></h3>
+<h4 id="7172-2025-10-06"><a href="https://github.com/googleapis/nodejs-storage/compare/v7.17.1...v7.17.2">7.17.2</a> (2025-10-06)</h4>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li>Common Service: should retry a request failed (<a href="https://github.com/googleapis/nodejs-storage/issues/2652">#2652</a>) (<a href="https://github.com/googleapis/nodejs-storage/commit/b38b5d221f2cb72658c1eb4a726315ab395a542c">b38b5d2</a>)</li>
+<li>Implement path containment to prevent traversal attacks (<a href="https://github.com/googleapis/nodejs-storage/issues/2654">#2654</a>) (<a href="https://github.com/googleapis/nodejs-storage/commit/08d7abf32dd365b24ce34c66174be06c30bfce8f">08d7abf</a>)</li>
+</ul>
+<h3 id="java">Java</h3>
+<h3 id="changes-for-google-cloud-storage">Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
+<h4 id="2581-2025-10-06"><a href="https://github.com/googleapis/java-storage/compare/v2.58.0...v2.58.1">2.58.1</a> (2025-10-06)</h4>
+<h5 id="bug-fixes_1">Bug Fixes</h5>
+<ul>
+<li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.62.3 (<a href="https://github.com/googleapis/java-storage/commit/ba847937e553f6a47aa459f634f63ed42310762d">ba84793</a>)</li>
+<li>Update BlobReadSession ScatteringByteChannel projection to use less CPU (<a href="https://github.com/googleapis/java-storage/issues/3324">#3324</a>) (<a href="https://github.com/googleapis/java-storage/commit/678feccc972e557380e9ba5fcd52be099440197d">678fecc</a>)</li>
+<li>Update DefaultRetryContext to trap and forward RejectedExceptionException to onFailure (<a href="https://github.com/googleapis/java-storage/issues/3327">#3327</a>) (<a href="https://github.com/googleapis/java-storage/commit/1be31bdfbc0283733e86b049d3be1911db50fb96">1be31bd</a>)</li>
+<li>Update PCU request building logic to properly clear crc32c and md5 (<a href="https://github.com/googleapis/java-storage/issues/3323">#3323</a>) (<a href="https://github.com/googleapis/java-storage/commit/4da9f3108d27f5c2ed3cc39eec161651f421e4db">4da9f31</a>)</li>
+</ul>
+<h5 id="dependencies">Dependencies</h5>
+<ul>
+<li>Update dependency com.google.apis:google-api-services-storage to v1-rev20250925-2.0.0 (<a href="https://github.com/googleapis/java-storage/issues/3313">#3313</a>) (<a href="https://github.com/googleapis/java-storage/commit/ab310eb5af51ed332329abd6c3441d18f9965571">ab310eb</a>)</li>
+<li>Update dependency com.google.cloud:sdk-platform-java-config to v3.52.3 (<a href="https://github.com/googleapis/java-storage/issues/3325">#3325</a>) (<a href="https://github.com/googleapis/java-storage/commit/4d3e3be27811ad92becc93321048c4268cec2fcf">4d3e3be</a>)</li>
+<li>Update googleapis/sdk-platform-java action to v2.62.3 (<a href="https://github.com/googleapis/java-storage/issues/3322">#3322</a>) (<a href="https://github.com/googleapis/java-storage/commit/a5808ea168a81f07040276c1a05da67108fda37f">a5808ea</a>)</li>
+</ul>
+<h3 id="python">Python</h3>
+<h3 id="changes-for-google-cloud-storage_1">Changes for <a href="https://github.com/googleapis/python-storage">google-cloud-storage</a></h3>
+<h4 id="341-2025-10-08"><a href="https://github.com/googleapis/python-storage/compare/v3.4.0...v3.4.1">3.4.1</a> (2025-10-08)</h4>
+<h5 id="bug-fixes_2">Bug Fixes</h5>
+<ul>
+<li>Fixes <a href="https://github.com/googleapis/python-storage/issues/1561">#1561</a> by adding an option to specify the entire object checksum for resumable uploads via the <code>upload_from_string</code>, <code>upload_from_file</code>, and <code>upload_from_filename</code> methods (<a href="https://github.com/googleapis/python-storage/commit/acb918e20f7092e13d72fc63fe4ae2560bfecd40">acb918e</a>)</li>
+</ul>
+<hr />
 <h2 id="2025-09-30">2025-09-30</h2>
 <h3 id="feature">Feature</h3>
 <p><a href="https://cloud.google.com/storage/docs/object-contexts">Object contexts</a> are now available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. Object contexts let you attach contextual
 information to your objects to help you manage and discover data.</p>
 <hr />
 <h2 id="2025-09-29">2025-09-29</h2>
-<h3 id="libraries">Libraries</h3>
+<h3 id="libraries_1">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="go">Go</h3>
 <h3 id="changes-for-storageinternalapiv2">Changes for <a href="https://github.com/googleapis/google-cloud-go/tree/main/storage/internal/apiv2">storage/internal/apiv2</a></h3>
@@ -2057,7 +2092,7 @@ information to your objects to help you manage and discover data.</p>
 <li><strong>storage:</strong> Post support dynamic key name (<a href="https://github.com/googleapis/google-cloud-go/issues/12677">#12677</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/9e761f961a2c4351b3e0793ed655314ac5853903">9e761f9</a>)</li>
 <li><strong>storage:</strong> WithMeterProvider allows custom meter provider configuration (<a href="https://github.com/googleapis/google-cloud-go/issues/12668">#12668</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/7f574b01e0b454c1ef5c13e6a58075e394ee990d">7f574b0</a>)</li>
 </ul>
-<h5 id="bug-fixes">Bug Fixes</h5>
+<h5 id="bug-fixes_3">Bug Fixes</h5>
 <ul>
 <li><strong>storage:</strong> Free buffers in Bidi Reader (<a href="https://github.com/googleapis/google-cloud-go/issues/12839">#12839</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/bc247fdc3f5234a8bd6934e58d5b0b578f1335cb">bc247fd</a>)</li>
 <li><strong>storage:</strong> Make Writer thread-safe. (<a href="https://github.com/googleapis/google-cloud-go/issues/12753">#12753</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/9ea380bea5b980a9054d201be4f315a195da2182">9ea380b</a>)</li>
@@ -2067,45 +2102,45 @@ information to your objects to help you manage and discover data.</p>
 <ul>
 <li><strong>storage:</strong> Pipeline gRPC writes (<a href="https://github.com/googleapis/google-cloud-go/issues/12422">#12422</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/1f2c5fe2843724302086fe04cb8dab8b515969c5">1f2c5fe</a>)</li>
 </ul>
-<h3 id="java">Java</h3>
-<h3 id="changes-for-google-cloud-storage">Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
+<h3 id="java_1">Java</h3>
+<h3 id="changes-for-google-cloud-storage_2">Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
 <h4 id="2580-2025-09-23"><a href="https://github.com/googleapis/java-storage/compare/v2.57.0...v2.58.0">2.58.0</a> (2025-09-23)</h4>
 <h5 id="features_1">Features</h5>
 <ul>
 <li><strong>storagecontrol:</strong> Add GetIamPolicy, SetIamPolicy, and TestIamPermissions RPCs (<a href="https://github.com/googleapis/java-storage/commit/c884551048a323f2a3fd7aaf4fce469d4d4f543e">c884551</a>)</li>
 </ul>
-<h5 id="bug-fixes_1">Bug Fixes</h5>
+<h5 id="bug-fixes_4">Bug Fixes</h5>
 <ul>
 <li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.62.2 (<a href="https://github.com/googleapis/java-storage/commit/984f8ca23a38c7a892a2256a694b72431e44aa27">984f8ca</a>)</li>
 <li>Fix appendable upload finalization race condition (<a href="https://github.com/googleapis/java-storage/issues/3295">#3295</a>) (<a href="https://github.com/googleapis/java-storage/commit/485be184c08c7b857d8c9a9443f32903df879b23">485be18</a>)</li>
 <li>Fix IllegalMonitorStateException thrown from BlobAppendableUpload.isOpen() (<a href="https://github.com/googleapis/java-storage/issues/3302">#3302</a>) (<a href="https://github.com/googleapis/java-storage/commit/aa904688b784d7427454318196ef88628e415246">aa90468</a>)</li>
 <li>Update object context diff logic to be shallow rather than deep (<a href="https://github.com/googleapis/java-storage/issues/3287">#3287</a>) (<a href="https://github.com/googleapis/java-storage/commit/2fd15f69e93a3df2b8dbbd4f08edd07c087e957c">2fd15f6</a>)</li>
 </ul>
-<h5 id="dependencies">Dependencies</h5>
+<h5 id="dependencies_1">Dependencies</h5>
 <ul>
 <li>Update dependency com.google.cloud:sdk-platform-java-config to v3.52.2 (<a href="https://github.com/googleapis/java-storage/issues/3298">#3298</a>) (<a href="https://github.com/googleapis/java-storage/commit/1489f3a74c8a27f0888c40600c83adedcfd9a9ec">1489f3a</a>)</li>
 <li>Update googleapis/sdk-platform-java action to v2.62.2 (<a href="https://github.com/googleapis/java-storage/issues/3299">#3299</a>) (<a href="https://github.com/googleapis/java-storage/commit/c3b05ac8798140f9ddcab098948a3a2f3638dc6b">c3b05ac</a>)</li>
 </ul>
 <hr />
 <h2 id="2025-09-22">2025-09-22</h2>
-<h3 id="libraries_1">Libraries</h3>
+<h3 id="libraries_2">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="go_1">Go</h3>
 <h3 id="changes-for-storageinternalapiv2_1">Changes for <a href="https://github.com/googleapis/google-cloud-go/tree/main/storage/internal/apiv2">storage/internal/apiv2</a></h3>
 <h4 id="1562-2025-09-15"><a href="https://github.com/googleapis/google-cloud-go/compare/storage/v1.56.1...storage/v1.56.2">1.56.2</a> (2025-09-15)</h4>
-<h5 id="bug-fixes_2">Bug Fixes</h5>
+<h5 id="bug-fixes_5">Bug Fixes</h5>
 <ul>
 <li><strong>storage:</strong> Free buffers in Bidi Reader (<a href="https://github.com/googleapis/google-cloud-go/issues/12839">#12839</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/10c8faccc2dae2a8177ff30ab16d67413df9f536">10c8fac</a>)</li>
 </ul>
-<h3 id="python">Python</h3>
-<h3 id="changes-for-google-cloud-storage_1">Changes for <a href="https://github.com/googleapis/python-storage">google-cloud-storage</a></h3>
+<h3 id="python_1">Python</h3>
+<h3 id="changes-for-google-cloud-storage_3">Changes for <a href="https://github.com/googleapis/python-storage">google-cloud-storage</a></h3>
 <h4 id="340-2025-09-15"><a href="https://github.com/googleapis/python-storage/compare/v3.3.1...v3.4.0">3.4.0</a> (2025-09-15)</h4>
 <h5 id="features_2">Features</h5>
 <ul>
 <li><strong>experimental:</strong> Add async grpc client (<a href="https://github.com/googleapis/python-storage/issues/1537">#1537</a>) (<a href="https://github.com/googleapis/python-storage/commit/ac57b8d819a49aef0ed0cb5bb630bf11012f43e3">ac57b8d</a>)</li>
 <li><strong>experimental:</strong> Add grpc client (<a href="https://github.com/googleapis/python-storage/issues/1533">#1533</a>) (<a href="https://github.com/googleapis/python-storage/commit/5674587f2aa347ec2787f2bc1e847eaa294bc1ca">5674587</a>)</li>
 </ul>
-<h5 id="bug-fixes_3">Bug Fixes</h5>
+<h5 id="bug-fixes_6">Bug Fixes</h5>
 <ul>
 <li>GAPIC generation failed with 'Directory not empty' (<a href="https://github.com/googleapis/python-storage/issues/1542">#1542</a>) (<a href="https://github.com/googleapis/python-storage/commit/c80d8207a8661b84c56cd66bb34de7b5704675b8">c80d820</a>)</li>
 </ul>
@@ -2115,29 +2150,29 @@ information to your objects to help you manage and discover data.</p>
 <p>The <code>bucket_attributes_view</code> and <code>bucket_attributes_latest_snapshot_view</code> tables in <a href="https://cloud.google.com/storage/docs/insights/datasets">Storage Insights datasets</a> are updated with two new fields: <code>objectCount</code> and <code>totalSize</code>. <code>objectCount</code> reflects the total number of objects in the bucket and <code>totalSize</code> reflects the total size of the bucket in bytes. The tables are automatically updated with the new fields in all existing datasets and are included in all new dataset configurations.</p>
 <hr />
 <h2 id="2025-09-15">2025-09-15</h2>
-<h3 id="libraries_2">Libraries</h3>
+<h3 id="libraries_3">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
-<h3 id="nodejs">Node.js</h3>
-<h3 id="changes-for-google-cloudstorage">Changes for <a href="https://github.com/googleapis/nodejs-storage">@google-cloud/storage</a></h3>
+<h3 id="nodejs_1">Node.js</h3>
+<h3 id="changes-for-google-cloudstorage_1">Changes for <a href="https://github.com/googleapis/nodejs-storage">@google-cloud/storage</a></h3>
 <h4 id="7171-2025-08-27"><a href="https://github.com/googleapis/nodejs-storage/compare/v7.17.0...v7.17.1">7.17.1</a> (2025-08-27)</h4>
-<h5 id="bug-fixes_4">Bug Fixes</h5>
+<h5 id="bug-fixes_7">Bug Fixes</h5>
 <ul>
 <li>Respect useAuthWithCustomEndpoint flag for resumable uploads (<a href="https://github.com/googleapis/nodejs-storage/issues/2637">#2637</a>) (<a href="https://github.com/googleapis/nodejs-storage/commit/707b4f2fe1d67878bcd8f1434e4cbb57c951994e">707b4f2</a>)</li>
 </ul>
-<h3 id="java_1">Java</h3>
-<h3 id="changes-for-google-cloud-storage_2">Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
+<h3 id="java_2">Java</h3>
+<h3 id="changes-for-google-cloud-storage_4">Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
 <h4 id="2570-2025-09-09"><a href="https://github.com/googleapis/java-storage/compare/v2.56.0...v2.57.0">2.57.0</a> (2025-09-09)</h4>
 <h5 id="features_3">Features</h5>
 <ul>
 <li>Add BlobInfo.ObjectContexts (<a href="https://github.com/googleapis/java-storage/issues/3259">#3259</a>) (<a href="https://github.com/googleapis/java-storage/commit/485aefd3047c52c98d8bd913033c8aee1473e988">485aefd</a>)</li>
 </ul>
-<h5 id="bug-fixes_5">Bug Fixes</h5>
+<h5 id="bug-fixes_8">Bug Fixes</h5>
 <ul>
 <li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.62.1 (<a href="https://github.com/googleapis/java-storage/commit/0e348dbee247e1e65713d0155e1aa29ae5c5e0e4">0e348db</a>)</li>
 <li>Update BlobAppendableUpload implementation to periodically flush for large writes (<a href="https://github.com/googleapis/java-storage/issues/3278">#3278</a>) (<a href="https://github.com/googleapis/java-storage/commit/d0ffe18084b32936c889bb280005294c7ae7064d">d0ffe18</a>)</li>
 <li>Update otel integration to properly activate span context for lazy RPCs such as reads &amp; writes pt.2 (<a href="https://github.com/googleapis/java-storage/issues/3277">#3277</a>) (<a href="https://github.com/googleapis/java-storage/commit/3240f67c192a855c92256526aeb2fa689ea15445">3240f67</a>)</li>
 </ul>
-<h5 id="dependencies_1">Dependencies</h5>
+<h5 id="dependencies_2">Dependencies</h5>
 <ul>
 <li>Update dependency com.google.cloud:sdk-platform-java-config to v3.52.1 (<a href="https://github.com/googleapis/java-storage/issues/3280">#3280</a>) (<a href="https://github.com/googleapis/java-storage/commit/d046ea3da19288b64c48300bdd4f94a0ebf35458">d046ea3</a>)</li>
 <li>Update googleapis/sdk-platform-java action to v2.62.1 (<a href="https://github.com/googleapis/java-storage/issues/3281">#3281</a>) (<a href="https://github.com/googleapis/java-storage/commit/c9078bb98e3999234f95ab2e4c842c9dd7191c3d">c9078bb</a>)</li>
@@ -2149,10 +2184,10 @@ information to your objects to help you manage and discover data.</p>
 <p>To learn more about buffered reads, see <a href="https://cloud.google.com/storage/docs/cloud-storage-fuse/performance#enable-buffered-reads">Enable buffered reads</a>.</p>
 <hr />
 <h2 id="2025-09-01">2025-09-01</h2>
-<h3 id="libraries_3">Libraries</h3>
+<h3 id="libraries_4">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
-<h3 id="java_2">Java</h3>
-<h3 id="changes-for-google-cloud-storage_3">Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
+<h3 id="java_3">Java</h3>
+<h3 id="changes-for-google-cloud-storage_5">Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
 <h4 id="2560-2025-08-25"><a href="https://github.com/googleapis/java-storage/compare/v2.55.0...v2.56.0">2.56.0</a> (2025-08-25)</h4>
 <h5 id="features_4">Features</h5>
 <ul>
@@ -2161,24 +2196,24 @@ information to your objects to help you manage and discover data.</p>
 <li>Add MinFlushSizeFlushPolicy#withMaxPendingBytes(long) (<a href="https://github.com/googleapis/java-storage/issues/3231">#3231</a>) (<a href="https://github.com/googleapis/java-storage/commit/7bd73d3104f5c47299f5a9c8d68dec82933eeda5">7bd73d3</a>)</li>
 <li>Add StorageChannelUtils to provide helper methods to perform blocking read/write to/from non-blocking channels (<a href="https://github.com/googleapis/java-storage/issues/3231">#3231</a>) (<a href="https://github.com/googleapis/java-storage/commit/7bd73d3104f5c47299f5a9c8d68dec82933eeda5">7bd73d3</a>)</li>
 </ul>
-<h5 id="bug-fixes_6">Bug Fixes</h5>
+<h5 id="bug-fixes_9">Bug Fixes</h5>
 <ul>
 <li>Make FlushPolicy${Min,Max}FlushSizeFlushPolicy constructors private (<a href="https://github.com/googleapis/java-storage/issues/3217">#3217</a>) (<a href="https://github.com/googleapis/java-storage/commit/7bd73d3104f5c47299f5a9c8d68dec82933eeda5">7bd73d3</a>)</li>
 <li>Update BlobAppendableUploadConfig and FlushPolicy.MinFlushSizeFlushPolicy to default to 4MiB minFlushSize and 16MiB maxPendingBytes (<a href="https://github.com/googleapis/java-storage/issues/3249">#3249</a>) (<a href="https://github.com/googleapis/java-storage/commit/7bd73d3104f5c47299f5a9c8d68dec82933eeda5">7bd73d3</a>)</li>
 <li>Update otel integration to properly activate span context for lazy RPCs such as reads &amp; writes (<a href="https://github.com/googleapis/java-storage/issues/3255">#3255</a>) (<a href="https://github.com/googleapis/java-storage/commit/d6587f42b65a586a2e3f30e0559975801726a812">d6587f4</a>)</li>
 </ul>
-<h5 id="dependencies_2">Dependencies</h5>
+<h5 id="dependencies_3">Dependencies</h5>
 <ul>
 <li>Update actions/checkout action to v5 (<a href="https://github.com/googleapis/java-storage/issues/3239">#3239</a>) (<a href="https://github.com/googleapis/java-storage/commit/33f024b1ae094bf3e3605e1a835cb55eb5c9e750">33f024b</a>)</li>
 <li>Update dependency com.google.apis:google-api-services-storage to v1-rev20250815-2.0.0 (<a href="https://github.com/googleapis/java-storage/issues/3245">#3245</a>) (<a href="https://github.com/googleapis/java-storage/commit/87afe1ac5f500053e4c0639d5b824304d03796f4">87afe1a</a>)</li>
 <li>Update dependency com.google.cloud:sdk-platform-java-config to v3.52.0 (<a href="https://github.com/googleapis/java-storage/issues/3250">#3250</a>) (<a href="https://github.com/googleapis/java-storage/commit/0782e62fc9534e3cecfaaa4d78b58904ecf699d6">0782e62</a>)</li>
 </ul>
-<h3 id="libraries_4">Libraries</h3>
+<h3 id="libraries_5">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
-<h3 id="python_1">Python</h3>
-<h3 id="changes-for-google-cloud-storage_4">Changes for <a href="https://github.com/googleapis/python-storage">google-cloud-storage</a></h3>
+<h3 id="python_2">Python</h3>
+<h3 id="changes-for-google-cloud-storage_6">Changes for <a href="https://github.com/googleapis/python-storage">google-cloud-storage</a></h3>
 <h4 id="331-2025-08-25"><a href="https://github.com/googleapis/python-storage/compare/v3.3.0...v3.3.1">3.3.1</a> (2025-08-25)</h4>
-<h5 id="bug-fixes_7">Bug Fixes</h5>
+<h5 id="bug-fixes_10">Bug Fixes</h5>
 <ul>
 <li>Provide option to user to set entire object checksum at "initiate a resumable upload session" and send the same.(<a href="https://github.com/googleapis/python-storage/issues/1525">#1525</a>) (<a href="https://github.com/googleapis/python-storage/commit/a8109e0d02c62542f1bea20373b53864fb776caa">a8109e0</a>)</li>
 <li>Send part's checksum for XML MPU part upload (<a href="https://github.com/googleapis/python-storage/issues/1529">#1529</a>) (<a href="https://github.com/googleapis/python-storage/commit/2ad77c7d949e84c515c051a0fd4b37b822788dd8">2ad77c7</a>)</li>
@@ -2189,16 +2224,16 @@ information to your objects to help you manage and discover data.</p>
 <p>Beginning October 31, 2025, if you set an object's <code>age</code> condition to a value of <code>0</code> when setting Object Lifecycle Management rules, the condition is satisfied at midnight UTC after the object is created, which helps reduce unintended data loss. To learn more about the <code>age</code> condition, see <a href="https://cloud.google.com/storage/docs/lifecycle#conditions">Lifecycle conditions</a>.</p>
 <hr />
 <h2 id="2025-08-25">2025-08-25</h2>
-<h3 id="libraries_5">Libraries</h3>
+<h3 id="libraries_6">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
-<h3 id="nodejs_1">Node.js</h3>
-<h3 id="changes-for-google-cloudstorage_1">Changes for <a href="https://github.com/googleapis/nodejs-storage">@google-cloud/storage</a></h3>
+<h3 id="nodejs_2">Node.js</h3>
+<h3 id="changes-for-google-cloudstorage_2">Changes for <a href="https://github.com/googleapis/nodejs-storage">@google-cloud/storage</a></h3>
 <h4 id="7170-2025-08-18"><a href="https://github.com/googleapis/nodejs-storage/compare/v7.16.0...v7.17.0">7.17.0</a> (2025-08-18)</h4>
 <h5 id="features_5">Features</h5>
 <ul>
 <li>Add CSEK to download (<a href="https://github.com/googleapis/nodejs-storage/issues/2604">#2604</a>) (<a href="https://github.com/googleapis/nodejs-storage/commit/cacc0be49a4fe81c384180bdfd77820b6b3f3001">cacc0be</a>)</li>
 </ul>
-<h5 id="bug-fixes_8">Bug Fixes</h5>
+<h5 id="bug-fixes_11">Bug Fixes</h5>
 <ul>
 <li>Propagate errors when using pipelines (<a href="https://github.com/googleapis/nodejs-storage/issues/2560">#2560</a>) (<a href="https://github.com/googleapis/nodejs-storage/issues/2624">#2624</a>) (<a href="https://github.com/googleapis/nodejs-storage/commit/a43b4904ecf2ebacde22bc6efbdcf97ac886e28d">a43b490</a>)</li>
 <li>Typo correction (<a href="https://github.com/googleapis/nodejs-storage/issues/2610">#2610</a>) (<a href="https://github.com/googleapis/nodejs-storage/commit/9cae69cc280227737b5a1a1476eae1b2612b162b">9cae69c</a>)</li>
@@ -2206,7 +2241,7 @@ information to your objects to help you manage and discover data.</p>
 <h3 id="go_2">Go</h3>
 <h3 id="changes-for-storageinternalapiv2_2">Changes for <a href="https://github.com/googleapis/google-cloud-go/tree/main/storage/internal/apiv2">storage/internal/apiv2</a></h3>
 <h4 id="1561-2025-08-19"><a href="https://github.com/googleapis/google-cloud-go/compare/storage/v1.56.0...storage/v1.56.1">1.56.1</a> (2025-08-19)</h4>
-<h5 id="bug-fixes_9">Bug Fixes</h5>
+<h5 id="bug-fixes_12">Bug Fixes</h5>
 <ul>
 <li><strong>storage:</strong> Fix redirect logic in MRD (<a href="https://github.com/googleapis/google-cloud-go/issues/12733">#12733</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/9f369f931853220550cabb3d67a5a5d3d9e137ba">9f369f9</a>)</li>
 <li><strong>storage:</strong> Pass all user options to NewService (<a href="https://github.com/googleapis/google-cloud-go/issues/12615">#12615</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/77cdb832a374eba29e4de7699324a87f1d20eea3">77cdb83</a>)</li>
@@ -2214,16 +2249,16 @@ information to your objects to help you manage and discover data.</p>
 </ul>
 <hr />
 <h2 id="2025-08-18">2025-08-18</h2>
-<h3 id="libraries_6">Libraries</h3>
+<h3 id="libraries_7">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
-<h3 id="python_2">Python</h3>
-<h3 id="changes-for-google-cloud-storage_5">Changes for <a href="https://github.com/googleapis/python-storage">google-cloud-storage</a></h3>
+<h3 id="python_3">Python</h3>
+<h3 id="changes-for-google-cloud-storage_7">Changes for <a href="https://github.com/googleapis/python-storage">google-cloud-storage</a></h3>
 <h4 id="330-2025-08-05"><a href="https://github.com/googleapis/python-storage/compare/v3.2.0...v3.3.0">3.3.0</a> (2025-08-05)</h4>
 <h5 id="features_6">Features</h5>
 <ul>
 <li>Add support for bucket IP filter (<a href="https://github.com/googleapis/python-storage/issues/1516">#1516</a>) (<a href="https://github.com/googleapis/python-storage/commit/a29073cf58df9c5667305e05c6378284057cda23">a29073c</a>)</li>
 </ul>
-<h5 id="bug-fixes_10">Bug Fixes</h5>
+<h5 id="bug-fixes_13">Bug Fixes</h5>
 <ul>
 <li>Add logs on AssertionError for issue <a href="https://github.com/googleapis/python-storage/issues/1512">#1512</a> (<a href="https://github.com/googleapis/python-storage/issues/1518">#1518</a>) (<a href="https://github.com/googleapis/python-storage/commit/6a9923e4fc944f7a7c3906eb7800d23677bd2481">6a9923e</a>)</li>
 </ul>
@@ -2237,21 +2272,21 @@ information to your objects to help you manage and discover data.</p>
 <p>You can now use Anywhere Cache in the <code>asia-south1-b</code> and <code>asia-south1-c</code> zones. For more information, see <a href="https://cloud.google.com/storage/docs/anywhere-cache#supported-locations">Anywhere Cache supported locations</a>.</p>
 <hr />
 <h2 id="2025-08-11">2025-08-11</h2>
-<h3 id="libraries_7">Libraries</h3>
+<h3 id="libraries_8">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
-<h3 id="java_3">Java</h3>
-<h3 id="changes-for-google-cloud-storage_6">Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
+<h3 id="java_4">Java</h3>
+<h3 id="changes-for-google-cloud-storage_8">Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
 <h4 id="2550-2025-08-05"><a href="https://github.com/googleapis/java-storage/compare/v2.54.0...v2.55.0">2.55.0</a> (2025-08-05)</h4>
 <h5 id="features_7">Features</h5>
 <ul>
 <li>Add new preview Bucket encryption policy configuration (<a href="https://github.com/googleapis/java-storage/issues/3204">#3204</a>) (<a href="https://github.com/googleapis/java-storage/commit/7b250dd53cfa29bbb6a0a4cb4a345aeb2dab5c86">7b250dd</a>)</li>
 </ul>
-<h5 id="bug-fixes_11">Bug Fixes</h5>
+<h5 id="bug-fixes_14">Bug Fixes</h5>
 <ul>
 <li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.61.0 (<a href="https://github.com/googleapis/java-storage/commit/f98b686ef940879458acb1e56339adf869400b94">f98b686</a>)</li>
 <li>Enable ALTS bound token (for DirectPath) in the grpc channel provider (<a href="https://github.com/googleapis/java-storage/issues/2919">#2919</a>) (<a href="https://github.com/googleapis/java-storage/commit/38d248d9511e808e88c1bac0b6bb2ba54897830d">38d248d</a>)</li>
 </ul>
-<h5 id="dependencies_3">Dependencies</h5>
+<h5 id="dependencies_4">Dependencies</h5>
 <ul>
 <li>Update dependency com.google.cloud:sdk-platform-java-config to v3.51.0 (<a href="https://github.com/googleapis/java-storage/issues/3213">#3213</a>) (<a href="https://github.com/googleapis/java-storage/commit/86ff69788b30d8f82b6b95d010df507093852889">86ff697</a>)</li>
 </ul>
@@ -2259,10 +2294,10 @@ information to your objects to help you manage and discover data.</p>
 <p>You can now use Anywhere Cache in the <code>asia-south1-a</code> zone. For more information, see <a href="https://cloud.google.com/storage/docs/anywhere-cache#supported-locations">Anywhere Cache supported locations</a>.</p>
 <hr />
 <h2 id="2025-08-04">2025-08-04</h2>
-<h3 id="libraries_8">Libraries</h3>
+<h3 id="libraries_9">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
-<h3 id="java_4">Java</h3>
-<h3 id="changes-for-google-cloud-storage_7">Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
+<h3 id="java_5">Java</h3>
+<h3 id="changes-for-google-cloud-storage_9">Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
 <h4 id="2540-2025-07-24"><a href="https://github.com/googleapis/java-storage/compare/v2.53.3...v2.54.0">2.54.0</a> (2025-07-24)</h4>
 <h5 id="features_8">Features</h5>
 <ul>
@@ -2270,13 +2305,13 @@ information to your objects to help you manage and discover data.</p>
 <li>Add default end-to-end checksumming for JournalingBlobWriteSessionConfig <a href="https://github.com/googleapis/java-storage/issues/3180">#3180</a> (<a href="https://github.com/googleapis/java-storage/commit/fa0f6a03380af78e239bd0079267649ba4138f38">fa0f6a0</a>)</li>
 <li>Add default end-to-end crc32c checksumming for several upload methods via grpc transport <a href="https://github.com/googleapis/java-storage/issues/3176">#3176</a> (<a href="https://github.com/googleapis/java-storage/commit/fa0f6a03380af78e239bd0079267649ba4138f38">fa0f6a0</a>)</li>
 </ul>
-<h5 id="bug-fixes_12">Bug Fixes</h5>
+<h5 id="bug-fixes_15">Bug Fixes</h5>
 <ul>
 <li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.60.2 (<a href="https://github.com/googleapis/java-storage/commit/bd1f199cf57c2b8039c303586d5beac64aeca0ba">bd1f199</a>)</li>
 <li>Give user provided checksum precondition priority for Storage#create methods that accept byte[] <a href="https://github.com/googleapis/java-storage/issues/3182">#3182</a> (<a href="https://github.com/googleapis/java-storage/commit/fa0f6a03380af78e239bd0079267649ba4138f38">fa0f6a0</a>)</li>
 <li>Move crc32c computation before writing to disk for BufferToDiskThenUpload BlobWriteSession config <a href="https://github.com/googleapis/java-storage/issues/3187">#3187</a> (<a href="https://github.com/googleapis/java-storage/commit/fa0f6a03380af78e239bd0079267649ba4138f38">fa0f6a0</a>)</li>
 </ul>
-<h5 id="dependencies_4">Dependencies</h5>
+<h5 id="dependencies_5">Dependencies</h5>
 <ul>
 <li>Update dependency com.google.apis:google-api-services-storage to v1-rev20250718-2.0.0 (<a href="https://github.com/googleapis/java-storage/issues/3203">#3203</a>) (<a href="https://github.com/googleapis/java-storage/commit/18978e4ec54790df2939490ef76fc19b9f72eb04">18978e4</a>)</li>
 <li>Update dependency com.google.cloud:sdk-platform-java-config to v3.50.2 (<a href="https://github.com/googleapis/java-storage/issues/3201">#3201</a>) (<a href="https://github.com/googleapis/java-storage/commit/782c3c416583704a196b17f23e9c12c33659f67d">782c3c4</a>)</li>
@@ -2284,7 +2319,7 @@ information to your objects to help you manage and discover data.</p>
 </ul>
 <hr />
 <h2 id="2025-07-28">2025-07-28</h2>
-<h3 id="libraries_9">Libraries</h3>
+<h3 id="libraries_10">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="go_3">Go</h3>
 <h3 id="changes-for-storageinternalapiv2_3">Changes for <a href="https://github.com/googleapis/google-cloud-go/tree/main/storage/internal/apiv2">storage/internal/apiv2</a></h3>
@@ -2293,7 +2328,7 @@ information to your objects to help you manage and discover data.</p>
 <ul>
 <li><strong>storage/control:</strong> Update BUILD configs to support rest transportation for all client (<a href="https://github.com/googleapis/google-cloud-go/commit/116a33ab13c9fac6f6830dded55c24d38504707b">116a33a</a>)</li>
 </ul>
-<h5 id="bug-fixes_13">Bug Fixes</h5>
+<h5 id="bug-fixes_16">Bug Fixes</h5>
 <ul>
 <li><strong>storage:</strong> Avoid integration test segfaults. (<a href="https://github.com/googleapis/google-cloud-go/issues/12419">#12419</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/a9dec0763f85f083cc1da451249caae7ad97d904">a9dec07</a>)</li>
 <li><strong>storage:</strong> Current object generation takeover. (<a href="https://github.com/googleapis/google-cloud-go/issues/12383">#12383</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/9ca8e015405a523bbe68cbff2defbdff3dac0a61">9ca8e01</a>)</li>
@@ -2312,16 +2347,16 @@ information to your objects to help you manage and discover data.</p>
 </ul>
 <hr />
 <h2 id="2025-07-14">2025-07-14</h2>
-<h3 id="libraries_10">Libraries</h3>
+<h3 id="libraries_11">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
-<h3 id="java_5">Java</h3>
-<h3 id="changes-for-google-cloud-storage_8">Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
+<h3 id="java_6">Java</h3>
+<h3 id="changes-for-google-cloud-storage_10">Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
 <h4 id="2533-2025-07-09"><a href="https://github.com/googleapis/java-storage/compare/v2.53.2...v2.53.3">2.53.3</a> (2025-07-09)</h4>
-<h5 id="bug-fixes_14">Bug Fixes</h5>
+<h5 id="bug-fixes_17">Bug Fixes</h5>
 <ul>
 <li>Fix DefaultBlobWriteSessionConfig init to work when grpc classes are excluded (<a href="https://github.com/googleapis/java-storage/issues/3147">#3147</a>) (<a href="https://github.com/googleapis/java-storage/commit/8571ba8eee82d055cdeb5f0b6970d5b814eaa24e">8571ba8</a>)</li>
 </ul>
-<h5 id="dependencies_5">Dependencies</h5>
+<h5 id="dependencies_6">Dependencies</h5>
 <ul>
 <li>Update dependency com.google.apis:google-api-services-storage to v1-rev20250629-2.0.0 (<a href="https://github.com/googleapis/java-storage/issues/3185">#3185</a>) (<a href="https://github.com/googleapis/java-storage/commit/4ce8281246cbe84ed068205532cac4a03853c331">4ce8281</a>)</li>
 <li>Update dependency com.google.cloud:sdk-platform-java-config to v3.50.1 (<a href="https://github.com/googleapis/java-storage/issues/3189">#3189</a>) (<a href="https://github.com/googleapis/java-storage/commit/7fbfb013a8cfb72d49e3d752ad25e73b6ccaab4f">7fbfb01</a>)</li>
@@ -2332,10 +2367,10 @@ information to your objects to help you manage and discover data.</p>
 <p>You can now create caches with Anywhere Cache in the <code>us-west3-a</code>, <code>us-west3-b</code>, and <code>us-west3-c</code> zones. For more information about supported locations for Anywhere Cache, see <a href="https://cloud.google.com/storage/docs/anywhere-cache#supported-locations">Supported locations</a>.</p>
 <hr />
 <h2 id="2025-07-07">2025-07-07</h2>
-<h3 id="libraries_11">Libraries</h3>
+<h3 id="libraries_12">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
-<h3 id="python_3">Python</h3>
-<h3 id="changes-for-google-cloud-storage_9">Changes for <a href="https://github.com/googleapis/python-storage">google-cloud-storage</a></h3>
+<h3 id="python_4">Python</h3>
+<h3 id="changes-for-google-cloud-storage_11">Changes for <a href="https://github.com/googleapis/python-storage">google-cloud-storage</a></h3>
 <h4 id="320-2025-07-04"><a href="https://github.com/googleapis/python-storage/compare/v3.1.1...v3.2.0">3.2.0</a> (2025-07-04)</h4>
 <h5 id="features_10">Features</h5>
 <ul>
@@ -2347,41 +2382,41 @@ information to your objects to help you manage and discover data.</p>
 <p><a href="https://cloud.google.com/storage/docs/ip-filtering-overview">Bucket IP filtering</a> for Cloud Storage is now generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>). Bucket IP filtering provides enhanced control over access to your data, allowing you to restrict incoming requests to your Cloud Storage buckets based on their source IP addresses or their Google Cloud Virtual Private Cloud.</p>
 <hr />
 <h2 id="2025-06-30">2025-06-30</h2>
-<h3 id="libraries_12">Libraries</h3>
+<h3 id="libraries_13">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
-<h3 id="java_6">Java</h3>
-<h3 id="changes-for-google-cloud-storage_10">Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
+<h3 id="java_7">Java</h3>
+<h3 id="changes-for-google-cloud-storage_12">Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
 <h4 id="2532-2025-06-25"><a href="https://github.com/googleapis/java-storage/compare/v2.53.1...v2.53.2">2.53.2</a> (2025-06-25)</h4>
-<h5 id="bug-fixes_15">Bug Fixes</h5>
+<h5 id="bug-fixes_18">Bug Fixes</h5>
 <ul>
 <li>Fix Journaling BlobWriteSessionConfig to properly handle multiple consecutive retries (<a href="https://github.com/googleapis/java-storage/issues/3166">#3166</a>) (<a href="https://github.com/googleapis/java-storage/commit/895bfbda902a77d16a33fe5238349a6b3d397c10">895bfbd</a>)</li>
 </ul>
-<h5 id="dependencies_6">Dependencies</h5>
+<h5 id="dependencies_7">Dependencies</h5>
 <ul>
 <li>Update dependency com.google.cloud.opentelemetry:exporter-trace to v0.36.0 (<a href="https://github.com/googleapis/java-storage/issues/3162">#3162</a>) (<a href="https://github.com/googleapis/java-storage/commit/41a1030a2e77036cf961a16d472068b07e624192">41a1030</a>)</li>
 <li>Update sdk-platform-java dependencies (<a href="https://github.com/googleapis/java-storage/issues/3164">#3164</a>) (<a href="https://github.com/googleapis/java-storage/commit/c22a1319d8e2d92beeb03abac6bf2af8d09d49ee">c22a131</a>)</li>
 </ul>
 <hr />
 <h2 id="2025-06-23">2025-06-23</h2>
-<h3 id="libraries_13">Libraries</h3>
+<h3 id="libraries_14">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
-<h3 id="java_7">Java</h3>
-<h3 id="changes-for-google-cloud-storage_11">Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
+<h3 id="java_8">Java</h3>
+<h3 id="changes-for-google-cloud-storage_13">Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
 <h4 id="2531-2025-06-18"><a href="https://github.com/googleapis/java-storage/compare/v2.53.0...v2.53.1">2.53.1</a> (2025-06-18)</h4>
-<h5 id="bug-fixes_16">Bug Fixes</h5>
+<h5 id="bug-fixes_19">Bug Fixes</h5>
 <ul>
 <li>Cancel the future in RemoteStorageHelper#forceDelete when TimeoutException happens (<a href="https://github.com/googleapis/java-storage/issues/3136">#3136</a>) (<a href="https://github.com/googleapis/java-storage/commit/e6007d56e8801be65209cb5761f62749369425c9">e6007d5</a>)</li>
 <li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.59.0 (<a href="https://github.com/googleapis/java-storage/commit/7dba9f09f100062cc8c04e5a2735a4349d8e7ed1">7dba9f0</a>)</li>
 </ul>
-<h5 id="dependencies_7">Dependencies</h5>
+<h5 id="dependencies_8">Dependencies</h5>
 <ul>
 <li>Update dependency com.google.apis:google-api-services-storage to v1-rev20250605-2.0.0 (<a href="https://github.com/googleapis/java-storage/issues/3143">#3143</a>) (<a href="https://github.com/googleapis/java-storage/commit/17a80d8b49fef65557215b310895b0f08ee25235">17a80d8</a>)</li>
 <li>Update sdk-platform-java dependencies (<a href="https://github.com/googleapis/java-storage/issues/3152">#3152</a>) (<a href="https://github.com/googleapis/java-storage/commit/2f78192d97e9d3ca29c97a52a66a074777dce196">2f78192</a>)</li>
 </ul>
-<h3 id="python_4">Python</h3>
-<h3 id="changes-for-google-cloud-storage_12">Changes for <a href="https://github.com/googleapis/python-storage">google-cloud-storage</a></h3>
+<h3 id="python_5">Python</h3>
+<h3 id="changes-for-google-cloud-storage_14">Changes for <a href="https://github.com/googleapis/python-storage">google-cloud-storage</a></h3>
 <h4 id="311-2025-06-13"><a href="https://github.com/googleapis/python-storage/compare/v3.1.0...v3.1.1">3.1.1</a> (2025-06-13)</h4>
-<h5 id="bug-fixes_17">Bug Fixes</h5>
+<h5 id="bug-fixes_20">Bug Fixes</h5>
 <ul>
 <li>Add a check for partial response data (<a href="https://github.com/googleapis/python-storage/issues/1487">#1487</a>) (<a href="https://github.com/googleapis/python-storage/commit/7e0412a4fdfedcaa4683d5ef7d9155d5d58efa11">7e0412a</a>)</li>
 <li>Add trove classifier for Python 3.13 (<a href="https://github.com/googleapis/python-storage/commit/01009164beaab8931a1e1684966e3060edcf77b7">0100916</a>)</li>
@@ -2405,10 +2440,10 @@ information to your objects to help you manage and discover data.</p>
 <p>Cloud Storage FUSE version 3.0 is now available with new features and enhancements designed to improve performance and simplify configuration. Improvements include <a href="https://cloud.google.com/storage/docs/cloud-storage-fuse/automated-configurations">automated configurations for high-performance machines</a>, a comprehensive <a href="https://cloud.google.com/storage/docs/cloud-storage-fuse/performance">performance tuning guide</a> to help optimize performance, and the new <a href="https://cloud.google.com/storage/docs/cloud-storage-fuse/cli-options#write-global-max-blocks"><code>global-max-blocks</code> configuration option</a>, which gives you granular control over streaming write operations.</p>
 <hr />
 <h2 id="2025-06-09">2025-06-09</h2>
-<h3 id="libraries_14">Libraries</h3>
+<h3 id="libraries_15">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
-<h3 id="java_8">Java</h3>
-<h3 id="changes-for-google-cloud-storage_13">Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
+<h3 id="java_9">Java</h3>
+<h3 id="changes-for-google-cloud-storage_15">Changes for <a href="https://github.com/googleapis/java-storage">google-cloud-storage</a></h3>
 <h4 id="2530-2025-06-04"><a href="https://github.com/googleapis/java-storage/compare/v2.52.3...v2.53.0">2.53.0</a> (2025-06-04)</h4>
 <h5 id="features_11">Features</h5>
 <ul>
@@ -2416,11 +2451,11 @@ information to your objects to help you manage and discover data.</p>
 <li><strong>storagecontrol:</strong> Add Anywhere cache control APIs (<a href="https://github.com/googleapis/java-storage/commit/06572b7ced2829cdc00bf648521c024a52d93b3a">06572b7</a>)</li>
 <li><strong>storagecontrol:</strong> Add Client Libraries Storage IntelligenceConfig (<a href="https://github.com/googleapis/java-storage/commit/06572b7ced2829cdc00bf648521c024a52d93b3a">06572b7</a>)</li>
 </ul>
-<h5 id="bug-fixes_18">Bug Fixes</h5>
+<h5 id="bug-fixes_21">Bug Fixes</h5>
 <ul>
 <li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.58.0 (<a href="https://github.com/googleapis/java-storage/commit/06572b7ced2829cdc00bf648521c024a52d93b3a">06572b7</a>)</li>
 </ul>
-<h5 id="dependencies_8">Dependencies</h5>
+<h5 id="dependencies_9">Dependencies</h5>
 <ul>
 <li>Update dependency com.google.apis:google-api-services-storage to v1-rev20250521-2.0.0 (<a href="https://github.com/googleapis/java-storage/issues/3118">#3118</a>) (<a href="https://github.com/googleapis/java-storage/commit/e1be49e6c987daccf9542c15c6ba418c007d2fb7">e1be49e</a>)</li>
 <li>Update dependency com.google.apis:google-api-services-storage to v1-rev20250524-2.0.0 (<a href="https://github.com/googleapis/java-storage/issues/3127">#3127</a>) (<a href="https://github.com/googleapis/java-storage/commit/2a4499d1686e93e8495f29b5198488d166caaa06">2a4499d</a>)</li>
@@ -2438,7 +2473,7 @@ information to your objects to help you manage and discover data.</p>
 <p>The limit for the maximum number of prefixes and suffixes when using <a href="https://cloud.google.com/storage/docs/lifecycle#matchesprefix-suffix">matchesPrefix and matchesSuffix lifecycle conditions</a> across all rules on a bucket is increased from 50 to 1,000. For more information, see <a href="https://cloud.google.com/storage/quotas#buckets">Quotas and limits</a>.</p>
 <hr />
 <h2 id="2025-06-02">2025-06-02</h2>
-<h3 id="libraries_15">Libraries</h3>
+<h3 id="libraries_16">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="go_4">Go</h3>
 <h3 id="changes-for-storageinternalapiv2_4">Changes for <a href="https://github.com/googleapis/google-cloud-go/tree/main/storage/internal/apiv2">storage/internal/apiv2</a></h3>
@@ -2449,7 +2484,7 @@ information to your objects to help you manage and discover data.</p>
 <li><strong>storage/internal:</strong> Add IpFilter to Bucket (<a href="https://github.com/googleapis/google-cloud-go/issues/12309">#12309</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/d8ae6874a54b48fce49968664f14db63c055c6e2">d8ae687</a>)</li>
 <li><strong>storage/internal:</strong> Add Object.Retention message (<a href="https://github.com/googleapis/google-cloud-go/commit/d8ae6874a54b48fce49968664f14db63c055c6e2">d8ae687</a>)</li>
 </ul>
-<h5 id="bug-fixes_19">Bug Fixes</h5>
+<h5 id="bug-fixes_22">Bug Fixes</h5>
 <ul>
 <li><strong>storage:</strong> Add EnableNewAuthLibrary internalOption to HTTP newClient (<a href="https://github.com/googleapis/google-cloud-go/issues/12320">#12320</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/0036073affee5451894654a983fba6b2638433cb">0036073</a>)</li>
 <li><strong>storage:</strong> Migrate oauth2/google usages to cloud.google.com/go/auth (<a href="https://github.com/googleapis/google-cloud-go/issues/11191">#11191</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/3a22349c1ba6a192d70269f77e5804a9957aa572">3a22349</a>)</li>
@@ -2473,6 +2508,9 @@ information to your objects to help you manage and discover data.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-storage">Cloud Storage</a></li>
+          <li class="nav-item">
+            <a href="#2025-10-13" class="nav-link">2025-10-13</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-09-30" class="nav-link">2025-09-30</a>
           </li>

@@ -2040,8 +2040,15 @@
 
 
 <h1 id="compute-engine">Compute Engine</h1>
-<h2 id="2025-10-06">2025-10-06</h2>
+<h2 id="2025-10-16">2025-10-16</h2>
 <h3 id="changed">Changed</h3>
+<p>Starting with SUSE Linux Enterprise Server (SLES) 16, including variants for SAP,
+the default file system for the root partition (<code>/</code>) is <a href="https://en.wikipedia.org/wiki/Btrfs">Btrfs</a>
+changing from the previous default of XFS. For more information, see <a href="https://documentation.suse.com/sles/15-SP7/html/SLES-all/cha-filesystems.html#sec-filesystems-major-btrfs-suse">File systems in SLES</a>
+in the SUSE documentation.</p>
+<hr />
+<h2 id="2025-10-06">2025-10-06</h2>
+<h3 id="changed_1">Changed</h3>
 <p>The Google Cloud optimized (<code>-optimized-gcp</code>) and accelerated
 (<code>optimized-gcp-nvidia-*</code>) versions of the Rocky Linux images now include the
 <a href="https://docs.ciq.com/rlc/ciq-sig-cloud-next/">CIQ SIG/Cloud Next repository</a>.
@@ -2118,7 +2125,7 @@ architecture, see <a href="https://cloud.google.com/compute/docs/images/guest-ag
 </ul>
 <hr />
 <h2 id="2025-09-17">2025-09-17</h2>
-<h3 id="changed_1">Changed</h3>
+<h3 id="changed_2">Changed</h3>
 <p>Compute Engine enforces limits to the total baseline performance that a project's Hyperdisk Balanced and Hyperdisk Balanced High Availability disks that are in the same zone can consume at the same time. The aggregate baseline performance limit is 50 GiB/s of throughput and 500,000 IOPS, and it only applies to baseline performance. For a detailed explanation, see <a href="https://cloud.google.com/compute/docs/disks/hyperdisk-performance#baseline_consumption_limits">Concurrent consumption limits for baseline performance</a>.</p>
 <hr />
 <h2 id="2025-09-15">2025-09-15</h2>
@@ -2159,7 +2166,7 @@ agent version <code>20250901.00</code>:</p>
   and the metadata server returned the SSH keys in a different order on a
   subsequent retry.</li>
 </ul>
-<h3 id="changed_2">Changed</h3>
+<h3 id="changed_3">Changed</h3>
 <p>Hyperdisk Balanced High Availability disks are available in all regions.
 Hyperdisk Balanced High Availability disks synchronously replicate disk data from one zone to another. Cross-zonal replication provides data protection in the unlikely event of a zonal outage. For more information, see <a href="https://cloud.google.com/compute/docs/disks/hd-types/hyperdisk-balanced-ha">About Hyperdisk Balanced High Availability</a>.</p>
 <h3 id="feature_8">Feature</h3>
@@ -2272,10 +2279,10 @@ regions and zones, see
 <p>For more information, about the attached Local SSD disks, see <a href="https://cloud.google.com/compute/docs/disks/local-ssd#lssd_disks_fixed">Machine types that automatically attach Local SSD disks</a>.</p>
 <hr />
 <h2 id="2025-07-25">2025-07-25</h2>
-<h3 id="changed_3">Changed</h3>
+<h3 id="changed_4">Changed</h3>
 <p>Hyperdisk Extreme is available in all regions and zones.
 For more information, see <a href="https://cloud.google.com/compute/docs/disks/hd-types/hyperdisk-extreme">About Hyperdisk Extreme</a>.</p>
-<h3 id="changed_4">Changed</h3>
+<h3 id="changed_5">Changed</h3>
 <p>You can now resize Hyperdisk Balanced volumes twice within a 4-hour window. For more information, see <a href="https://cloud.google.com/compute/docs/disks/modify-hyperdisks#capacity_changes">Capacity changes</a>.</p>
 <hr />
 <h2 id="2025-07-24">2025-07-24</h2>
@@ -2283,7 +2290,7 @@ For more information, see <a href="https://cloud.google.com/compute/docs/disks/h
 <p><strong>Generally available</strong>: The general-purpose C4 machine series now supports Hyperdisk Balanced High Availability. For more information, see <a href="https://cloud.google.com/compute/docs/general-purpose-machines#supported_disk_types_for_c4">Supported disk types for C4</a>.</p>
 <hr />
 <h2 id="2025-07-23">2025-07-23</h2>
-<h3 id="changed_5">Changed</h3>
+<h3 id="changed_6">Changed</h3>
 <p>When a regional Persistent Disk volume is fully replicated, Compute Engine now refreshes its replica recovery checkpoint every 15 minutes.</p>
 <p>Learn more about <a href="https://cloud.google.com/compute/docs/disks/about-regional-persistent-disk#repd-replica-recovery-checkpoint">Regional Persistent Disk replica recovery checkpoints</a> and <a href="https://cloud.google.com/compute/docs/disks/repd-failover#recover-repd-using-checkpoint">how to use checkpoints to recover a degraded disk</a>.</p>
 <hr />
@@ -2307,7 +2314,7 @@ For more information, see <a href="https://cloud.google.com/compute/docs/disks/h
 <p>For more information, see <a href="https://cloud.google.com/compute/docs/disks/sharing-disks-between-vms">Share disks between instances</a>.</p>
 <hr />
 <h2 id="2025-07-15">2025-07-15</h2>
-<h3 id="changed_6">Changed</h3>
+<h3 id="changed_7">Changed</h3>
 <p>Compute flexible committed use discounts (CUDs) offer expanded coverage by
 supporting the following resources and services:</p>
 <ul>
@@ -2396,7 +2403,7 @@ in, see
 <p>A vulnerability (CVE-2025-2884) affecting Shielded VMs using virtual Trusted Platform Module (vTPM) was discovered and is being addressed. For more information, see the <a href="https://cloud.google.com/compute/docs/security-bulletins#gcp-2025-031">GCP-2025-031 security bulletin</a>.</p>
 <hr />
 <h2 id="2025-06-06">2025-06-06</h2>
-<h3 id="changed_7">Changed</h3>
+<h3 id="changed_8">Changed</h3>
 <p><strong>Generally available</strong>: The <a href="https://cloud.google.com/compute/docs/monitor-security-risks-console">Security Risk Overview dashboard for Compute Engine</a> is generally available. In addition, it provides a <strong>Top CVE findings</strong> table that lists the most severe CVEs that affect your Compute Engine instances.</p>
 <hr />
 <h2 id="2025-06-04">2025-06-04</h2>
@@ -2421,6 +2428,9 @@ in, see
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#compute-engine">Compute Engine</a></li>
+          <li class="nav-item">
+            <a href="#2025-10-16" class="nav-link">2025-10-16</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-10-06" class="nav-link">2025-10-06</a>
           </li>

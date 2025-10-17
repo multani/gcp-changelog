@@ -1,5 +1,27 @@
 # Apigee API hub
 
+## 2025-10-16
+
+### Changed
+
+**Create and manage API operations in the UI**
+
+You can now create and manage API operations for your API versions from the **API details** page in the Google Cloud console.
+
+For more information, see [Manage operations](https://cloud.google.com/apigee/docs/apihub/manage-operations).
+
+---
+## 2025-10-14
+
+### Changed
+
+**New MCP API style system attribute**
+
+The system-defined API style attribute now includes a new value: **MCP**. This lets you classify and govern APIs based on the latest Model Context Protocol (MCP) standards.
+
+For more information, see [System attributes](https://cloud.google.com/apigee/docs/apihub/manage-attributes#system-attributes).
+
+---
 ## 2025-09-14
 
 ### Changed

@@ -1,5 +1,14 @@
 # Security Command Center
 
+## 2025-10-16
+
+### Changed
+
+Security Command Center and [attack path simulations](https://cloud.google.com/security-command-center/docs/attack-exposure-learn)
+use Compute Engine and Google Kubernetes Engine operating system and software
+vulnerabilities to detect toxic combinations and chokepoints.
+
+---
 ## 2025-10-10
 
 ### Feature

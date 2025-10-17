@@ -1,5 +1,17 @@
 # Generative AI on Vertex AI
 
+## 2025-10-16
+
+### Feature
+
+**vLLM TPU**
+
+[vLLM TPU](https://cloud.google.com/vertex-ai/generative-ai/docs/open-models/vllm/use-vllm-tpu), a
+highly-efficient serving framework for large language models (LLM) that's
+optimized for [Cloud TPU](https://cloud.google.com/tpu) hardware, is available through
+Model Garden.
+
+---
 ## 2025-10-15
 
 ### Feature

@@ -1,5 +1,15 @@
 # Compute Engine
 
+## 2025-10-16
+
+### Changed
+
+Starting with SUSE Linux Enterprise Server (SLES) 16, including variants for SAP,
+the default file system for the root partition (`/`) is [Btrfs](https://en.wikipedia.org/wiki/Btrfs)
+changing from the previous default of XFS. For more information, see [File systems in SLES](https://documentation.suse.com/sles/15-SP7/html/SLES-all/cha-filesystems.html#sec-filesystems-major-btrfs-suse)
+in the SUSE documentation.
+
+---
 ## 2025-10-06
 
 ### Changed

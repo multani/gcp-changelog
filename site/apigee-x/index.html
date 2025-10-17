@@ -2040,6 +2040,53 @@
 
 
 <h1 id="apigee-x">Apigee X</h1>
+<h2 id="2025-10-16">2025-10-16</h2>
+<h3 id="announcement">Announcement</h3>
+<p>On October 16, 2025, we released an updated version of Apigee (1-16-0-apigee-3).</p>
+<p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
+<h3 id="fixed">Fixed</h3>
+<table>
+<thead>
+<tr>
+<th>Bug ID</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>442501403</strong></td>
+<td><strong>Fixed an issue that caused incorrect target latency metrics in Apigee Analytics when a TargetEndpoint is configured with a <LoadBalancer>.</strong></td>
+</tr>
+<tr>
+<td><strong>437999897</strong></td>
+<td><strong>Reduced the log level for failed geo IP lookups to address excessive log messages for private IP addresses.</strong></td>
+</tr>
+<tr>
+<td><strong>436323210</strong></td>
+<td><strong>Fixed ingress cert keys to allow both <code>tls.key</code>/<code>key</code> and <code>tls.crt</code>/<code>cert</code>.</strong></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Updates to security infrastructure and libraries.</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="security">Security</h3>
+<table>
+<thead>
+<tr>
+<th>Bug ID</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>440419558, 433759657</strong></td>
+<td><strong>Security fix for Apigee infrastructure.</strong> This addresses the following vulnerabilities:   * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-22868">CVE-2025-22868</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-48924">CVE-2025-48924</a> <strong>Note</strong>: This fix updates a Java library that is included in Apigee. Reliance on Java libraries that are included with Apigee is not supported. Those libraries are for Apigee product functionality only, and there's no guarantee that a library will be available from release to release. For more information, see <a href="https://cloud.google.com/apigee/docs/api-platform/reference/policies/java-callout-policy#Restrictions">Restrictions</a>.</td>
+</tr>
+</tbody>
+</table>
+<hr />
 <h2 id="2025-10-14">2025-10-14</h2>
 <h3 id="deprecated">Deprecated</h3>
 <p><strong>Removal of deprecated Gemini Code Assist <code>@Apigee</code> tool.</strong></p>
@@ -2059,10 +2106,10 @@
 <p>See <a href="https://cloud.google.com/apigee/docs/release/known-issues#445936920">Known Issue 445936920</a>.</p>
 <hr />
 <h2 id="2025-09-12">2025-09-12</h2>
-<h3 id="announcement">Announcement</h3>
+<h3 id="announcement_1">Announcement</h3>
 <p>On September 12, 2025, we released an updated version of Apigee (1-16-0-apigee-2).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
-<h3 id="security">Security</h3>
+<h3 id="security_1">Security</h3>
 <table>
 <thead>
 <tr>
@@ -2084,7 +2131,7 @@
 <p>The <strong>API hub</strong> section is now moved to the top level of the Apigee left navigation menu. This change improves discoverability and access to the API hub features.</p>
 <hr />
 <h2 id="2025-09-09">2025-09-09</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p>On September 9, 2025, we released an updated version of Apigee (1-16-0-apigee-1).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
 <h3 id="changed_1">Changed</h3>
@@ -2104,7 +2151,7 @@
 </table>
 <hr />
 <h2 id="2025-09-04">2025-09-04</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p>On September 4, 2025, we released an updated version of Apigee.</p>
 <h3 id="feature">Feature</h3>
 <p><strong>Apigee policies for LLM/GenAI workloads are Generally Available (GA)</strong></p>
@@ -2124,7 +2171,7 @@
 </ul>
 <hr />
 <h2 id="2025-09-03">2025-09-03</h2>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p>On September 3, 2025, we released an updated version of Apigee.</p>
 <h3 id="feature_1">Feature</h3>
 <p><strong>Apigee Server-Sent Events (SSE) and EventFlows are supported for use with the Apigee Extension Processor.</strong></p>
@@ -2132,10 +2179,10 @@
 <p>The Apigee Extension Processor is a <a href="https://cloud.google.com/service-extensions/docs/overview#integration-lb">traffic extension</a> that lets you use Cloud Load Balancing to send callouts from the data processing path of the application load balancer to the Apigee Extension Processor. To learn more, see the <a href="https://cloud.google.com/apigee/docs/api-platform/service-extensions/extension-processor-overview">Apigee Extension Processor overview</a>.</p>
 <hr />
 <h2 id="2025-08-27">2025-08-27</h2>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p>On August 27, 2025, we released an updated version of Apigee (1-15-0-apigee-9).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
-<h3 id="security_1">Security</h3>
+<h3 id="security_2">Security</h3>
 <table>
 <thead>
 <tr>
@@ -2150,7 +2197,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_1">Fixed</h3>
 <table>
 <thead>
 <tr>
@@ -2187,14 +2234,14 @@
 </table>
 <hr />
 <h2 id="2025-08-04">2025-08-04</h2>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_6">Announcement</h3>
 <p>On August 4, 2025, we released an updated version of Apigee (1-15-0-apigee-8).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
 <h3 id="feature_2">Feature</h3>
 <p><strong>Server-sent events and EventFlows are <a href="https://cloud.google.com/products#product-launch-stages">Generally Available (GA)</a></strong></p>
 <p>Apigee supports continuous response streaming from server-sent event (SSE) endpoints to clients in real time. The Apigee SSE feature is useful for handling large language model (LLM) APIs that operate most effectively by streaming their responses back to the client. SSE streaming reduces latency, and clients can receive response data as soon as it is generated by an LLM. This feature supports the use of AI agents that operate in real time environments, such as customer service bots or workflow orchestrators. For more information, see <a href="https://cloud.google.com/apigee/docs/api-platform/develop/server-sent-events">Streaming server-sent events</a>.</p>
 <p>Streaming from SSE endpoints is available in Apigee and in Apigee hybrid v1.15.0 and newer.</p>
-<h3 id="fixed_1">Fixed</h3>
+<h3 id="fixed_2">Fixed</h3>
 <table>
 <thead>
 <tr>
@@ -2247,7 +2294,7 @@
 </table>
 <hr />
 <h2 id="2025-07-30">2025-07-30</h2>
-<h3 id="announcement_6">Announcement</h3>
+<h3 id="announcement_7">Announcement</h3>
 <p>On July 30, 2025 we began redirecting the following Apigee Classic UI navigation items to Apigee UI in the Google Cloud console:</p>
 <ul>
 <li>Develop &gt; API Proxies</li>
@@ -2259,14 +2306,14 @@
 <p>If you require more time to transition to the Google Cloud console, submit the <a href="https://docs.google.com/forms/d/e/1FAIpQLSedFe2Pj2f9B8YxD7cgWOyf8-IjRA8IhRZpZ2jXMZ9DU1uz1g/viewform">exception request form</a> by Aug 15, 2025.</p>
 <hr />
 <h2 id="2025-07-28">2025-07-28</h2>
-<h3 id="announcement_7">Announcement</h3>
+<h3 id="announcement_8">Announcement</h3>
 <p>On July 28, 2025, we released an updated version of Apigee (1-15-0-apigee-7).</p>
 <p><strong>Note:</strong> This release has been rolled back to address am issue. See entry for <a href="https://cloud.google.com/apigee/docs/release-notes#August_04_2025">August 4, 2025</a> for the updated version number and payload.</p>
 <h3 id="feature_3">Feature</h3>
 <p><strong>Server-sent events and EventFlows are <a href="https://cloud.google.com/products#product-launch-stages">Generally Available (GA)</a></strong></p>
 <p>Apigee supports continuous response streaming from server-sent event (SSE) endpoints to clients in real time. The Apigee SSE feature is useful for handling large language model (LLM) APIs that operate most effectively by streaming their responses back to the client. SSE streaming reduces latency, and clients can receive response data as soon as it is generated by an LLM. This feature supports the use of AI agents that operate in real time environments, such as customer service bots or workflow orchestrators. For more information, see <a href="https://cloud.google.com/apigee/docs/api-platform/develop/server-sent-events">Streaming server-sent events</a>.</p>
 <p>Streaming from SSE endpoints is available in Apigee and in Apigee hybrid v1.15.0 and newer.</p>
-<h3 id="fixed_2">Fixed</h3>
+<h3 id="fixed_3">Fixed</h3>
 <table>
 <thead>
 <tr>
@@ -2315,7 +2362,7 @@
 </table>
 <hr />
 <h2 id="2025-07-24">2025-07-24</h2>
-<h3 id="announcement_8">Announcement</h3>
+<h3 id="announcement_9">Announcement</h3>
 <p>On July 24, 2025 we began redirecting the following Apigee Classic UI navigation items to Apigee UI in the Google Cloud console:</p>
 <ul>
 <li>Publish &gt; Portals</li>
@@ -2325,7 +2372,7 @@
 <p>If you require more time to transition to the Google Cloud console, submit the <a href="https://docs.google.com/forms/d/e/1FAIpQLSedFe2Pj2f9B8YxD7cgWOyf8-IjRA8IhRZpZ2jXMZ9DU1uz1g/viewform">exception request form</a> by Aug 15, 2025.</p>
 <hr />
 <h2 id="2025-06-03">2025-06-03</h2>
-<h3 id="announcement_9">Announcement</h3>
+<h3 id="announcement_10">Announcement</h3>
 <p>On June 3, 2025, we released an updated version of Apigee.</p>
 <h3 id="feature_4">Feature</h3>
 <p><strong>Apigee API hub is enabled for new Apigee organizations in supported regions.</strong></p>
@@ -2339,7 +2386,7 @@
 <p>Contact <a href="https://cloud.google.com/apigee/docs/support/getting-started-with-support">Google Cloud Support</a> for questions or assistance.</p>
 <hr />
 <h2 id="2025-06-02">2025-06-02</h2>
-<h3 id="announcement_10">Announcement</h3>
+<h3 id="announcement_11">Announcement</h3>
 <p>On June 2, 2025, we released an updated version of Apigee (1-15-0-apigee-5).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
 <h3 id="feature_5">Feature</h3>
@@ -2350,7 +2397,7 @@
 <li><code>app_group_name</code></li>
 </ul>
 <p>To learn more, see <a href="https://cloud.google.com/apigee/docs/api-platform/fundamentals/introduction-flow-variables">Using flow variables</a>.</p>
-<h3 id="fixed_3">Fixed</h3>
+<h3 id="fixed_4">Fixed</h3>
 <table>
 <thead>
 <tr>
@@ -2448,7 +2495,7 @@
 <p><em>(Cloud Composer 3)</em> If a VPC network is attached to an environment, then all DNS addresses accessed by the Airflow components of the environment are resolved using the Cloud DNS configuration of the VPC network. In particular, Airflow workers that execute DAGs will resolve DNS addresses in this way.</p>
 <h3 id="changed_3">Changed</h3>
 <p><em>(Cloud Composer 3)</em> All newly created private DNS zones are immediately visible to a Cloud Composer environment. Previously, re-attaching a VPC network was required.</p>
-<h3 id="fixed_4">Fixed</h3>
+<h3 id="fixed_5">Fixed</h3>
 <p><em>(Cloud Composer 3)</em> It's now possible to use <a href="http://cloud.google.com/dns/docs/zones/cross-project-binding">zones with cross-project binding</a>. Before this change, cross-project bound zones weren't supported in Cloud Composer 3.</p>
 <h3 id="changed_4">Changed</h3>
 <p><em>(Cloud Composer 2)</em> In Cloud Composer versions 2.11.5 and later, log processing is switching to using OpenTelemetry instead of Fluentd.</p>
@@ -2552,43 +2599,43 @@ new services like <code>google-guest-compat-manager.service</code> and
 <p>Supported NVIDIA MFT Tools.</p>
 <h3 id="feature_14">Feature</h3>
 <p>Injected IMEX channel char device for GB200 GPUs.</p>
-<h3 id="fixed_5">Fixed</h3>
-<p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
 <h3 id="fixed_6">Fixed</h3>
-<p>Upgraded app-admin/google-guest-configs to v20250516.00.</p>
+<p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
 <h3 id="fixed_7">Fixed</h3>
-<p>Fixed docker MTU mismatch.</p>
+<p>Upgraded app-admin/google-guest-configs to v20250516.00.</p>
 <h3 id="fixed_8">Fixed</h3>
-<p>Upgraded chromeos-base/chromeos-common-script to v0.0.1-r665.</p>
+<p>Fixed docker MTU mismatch.</p>
 <h3 id="fixed_9">Fixed</h3>
-<p>Upgraded chromeos-base/google-breakpad to v2025.05.22.184901-r240.</p>
+<p>Upgraded chromeos-base/chromeos-common-script to v0.0.1-r665.</p>
 <h3 id="fixed_10">Fixed</h3>
-<p>Upgraded chromeos-base/session_manager-client to v0.0.1-r2830.</p>
+<p>Upgraded chromeos-base/google-breakpad to v2025.05.22.184901-r240.</p>
 <h3 id="fixed_11">Fixed</h3>
-<p>Upgraded chromeos-base/power_manager-client to v0.0.1-r2969.</p>
+<p>Upgraded chromeos-base/session_manager-client to v0.0.1-r2830.</p>
 <h3 id="fixed_12">Fixed</h3>
-<p>Upgraded chromeos-base/shill-client to v0.0.1-r4866.</p>
+<p>Upgraded chromeos-base/power_manager-client to v0.0.1-r2969.</p>
 <h3 id="fixed_13">Fixed</h3>
-<p>Upgraded chromeos-base/debugd-client to v0.0.1-r2734.</p>
+<p>Upgraded chromeos-base/shill-client to v0.0.1-r4866.</p>
 <h3 id="fixed_14">Fixed</h3>
-<p>Upgraded sys-apps/rootdev to v0.0.1-r51.</p>
+<p>Upgraded chromeos-base/debugd-client to v0.0.1-r2734.</p>
 <h3 id="fixed_15">Fixed</h3>
-<p>Upgraded dev-lang/go to v1.23.9.</p>
+<p>Upgraded sys-apps/rootdev to v0.0.1-r51.</p>
 <h3 id="fixed_16">Fixed</h3>
-<p>Upgraded sys-apps/dbus to v1.16.2-r197.</p>
+<p>Upgraded dev-lang/go to v1.23.9.</p>
 <h3 id="fixed_17">Fixed</h3>
-<p>Upgraded sys-apps/less to v678.</p>
+<p>Upgraded sys-apps/dbus to v1.16.2-r197.</p>
 <h3 id="fixed_18">Fixed</h3>
+<p>Upgraded sys-apps/less to v678.</p>
+<h3 id="fixed_19">Fixed</h3>
 <p>Upgraded dev-db/sqlite to v3.49.2.</p>
-<h3 id="security_2">Security</h3>
-<p>Fixed CVE-2024-23337 in app-misc/jq.</p>
 <h3 id="security_3">Security</h3>
-<p>Upgraded net-misc/curl to version 8.12.1. This fixes CVE-2025-0167.</p>
+<p>Fixed CVE-2024-23337 in app-misc/jq.</p>
 <h3 id="security_4">Security</h3>
-<p>Fixed CVE-2025-46836 in sys-apps/net-tools</p>
+<p>Upgraded net-misc/curl to version 8.12.1. This fixes CVE-2025-0167.</p>
 <h3 id="security_5">Security</h3>
-<p>Fixed CVE-20250-3198 in sys-libs/bintuils-libs.</p>
+<p>Fixed CVE-2025-46836 in sys-apps/net-tools</p>
 <h3 id="security_6">Security</h3>
+<p>Fixed CVE-20250-3198 in sys-libs/bintuils-libs.</p>
+<h3 id="security_7">Security</h3>
 <p>Fixed KCTF-3f98113 in the Linux kernel.</p>
 <h3 id="changed_11">Changed</h3>
 <p>Runtime sysctl changes:</p>
@@ -2622,17 +2669,17 @@ new services like <code>google-guest-compat-manager.service</code> and
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_19">Fixed</h3>
-<p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
 <h3 id="fixed_20">Fixed</h3>
+<p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
+<h3 id="fixed_21">Fixed</h3>
 <p>Upgraded sys-apps/less to v678.</p>
-<h3 id="security_7">Security</h3>
-<p>Fixed CVE-2024-23337 in app-misc/jq.</p>
 <h3 id="security_8">Security</h3>
-<p>Fixed CVE-2024-43840 in the Linux kernel.</p>
+<p>Fixed CVE-2024-23337 in app-misc/jq.</p>
 <h3 id="security_9">Security</h3>
-<p>Fixed KCTF-3f98113 in the Linux kernel.</p>
+<p>Fixed CVE-2024-43840 in the Linux kernel.</p>
 <h3 id="security_10">Security</h3>
+<p>Fixed KCTF-3f98113 in the Linux kernel.</p>
+<h3 id="security_11">Security</h3>
 <p>Fixed KCTF-8478a72 in the Linux kernel.</p>
 <h3 id="changed_13">Changed</h3>
 <h3 id="cos-113-18244-382-29">cos-113-18244-382-29</h3>
@@ -2660,17 +2707,17 @@ new services like <code>google-guest-compat-manager.service</code> and
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_21">Fixed</h3>
-<p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
 <h3 id="fixed_22">Fixed</h3>
+<p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
+<h3 id="fixed_23">Fixed</h3>
 <p>Upgraded sys-apps/less to v678.</p>
-<h3 id="security_11">Security</h3>
-<p>Fixed CVE-2024-23337 in app-misc/jq.</p>
 <h3 id="security_12">Security</h3>
-<p>Fixed CVE-2024-36927 in the Linux kernel.</p>
+<p>Fixed CVE-2024-23337 in app-misc/jq.</p>
 <h3 id="security_13">Security</h3>
-<p>Fixed KCTF-3f98113 in the Linux kernel.</p>
+<p>Fixed CVE-2024-36927 in the Linux kernel.</p>
 <h3 id="security_14">Security</h3>
+<p>Fixed KCTF-3f98113 in the Linux kernel.</p>
+<h3 id="security_15">Security</h3>
 <p>Fixed KCTF-8478a72 in the Linux kernel.</p>
 <h3 id="changed_14">Changed</h3>
 <h3 id="cos-121-18867-90-38">cos-121-18867-90-38</h3>
@@ -2698,15 +2745,15 @@ new services like <code>google-guest-compat-manager.service</code> and
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_23">Fixed</h3>
-<p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
 <h3 id="fixed_24">Fixed</h3>
+<p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
+<h3 id="fixed_25">Fixed</h3>
 <p>Upgraded sys-apps/less to v678.</p>
-<h3 id="security_15">Security</h3>
-<p>Fixed CVE-2024-23337 in app-misc/jq.</p>
 <h3 id="security_16">Security</h3>
-<p>Fixed KCTF-3f98113 in the Linux kernel.</p>
+<p>Fixed CVE-2024-23337 in app-misc/jq.</p>
 <h3 id="security_17">Security</h3>
+<p>Fixed KCTF-3f98113 in the Linux kernel.</p>
+<h3 id="security_18">Security</h3>
 <p>Fixed KCTF-8478a72 in the Linux kernel.</p>
 <h3 id="changed_15">Changed</h3>
 <h3 id="cos-109-17800-519-18">cos-109-17800-519-18</h3>
@@ -2734,15 +2781,15 @@ new services like <code>google-guest-compat-manager.service</code> and
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_25">Fixed</h3>
-<p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
 <h3 id="fixed_26">Fixed</h3>
+<p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
+<h3 id="fixed_27">Fixed</h3>
 <p>Upgraded sys-apps/less to v678.</p>
-<h3 id="security_18">Security</h3>
-<p>Fixed CVE-2024-26783 in the Linux kernel.</p>
 <h3 id="security_19">Security</h3>
-<p>Fixed KCTF-3f98113 in the Linux kernel.</p>
+<p>Fixed CVE-2024-26783 in the Linux kernel.</p>
 <h3 id="security_20">Security</h3>
+<p>Fixed KCTF-3f98113 in the Linux kernel.</p>
+<h3 id="security_21">Security</h3>
 <p>Fixed KCTF-8478a72 in the Linux kernel.</p>
 <h2 id="google-cloud-architecture-center">Google Cloud Architecture Center</h2>
 <h3 id="feature_15">Feature</h3>
@@ -2909,7 +2956,7 @@ new services like <code>google-guest-compat-manager.service</code> and
 </ul>
 <hr />
 <h2 id="2025-05-30">2025-05-30</h2>
-<h3 id="announcement_11">Announcement</h3>
+<h3 id="announcement_12">Announcement</h3>
 <p>On May 30, 2025 we released an updated version of Apigee.</p>
 <h3 id="feature_18">Feature</h3>
 <p><strong>Announcing the general availability of Gemini Code Assist API development features in Apigee</strong></p>
@@ -2924,9 +2971,9 @@ new services like <code>google-guest-compat-manager.service</code> and
 <p>For more information and usage instructions, see <a href="https://cloud.google.com/apigee/docs/api-platform/local-development/vscode/develop-design-edit-apis">Designing and editing APIs</a>, <a href="https://cloud.google.com/apigee/docs/api-platform/local-development/vscode/tutorial-gemini">Tutorial: Use Gemini Code Assist to design, develop, and test APIs in Apigee</a>, and <a href="https://cloud.google.com/apigee/docs/api-platform/local-development/setup">Setting up Apigee API Management in Cloud Code for VS Code</a>.</p>
 <hr />
 <h2 id="2025-05-29">2025-05-29</h2>
-<h3 id="announcement_12">Announcement</h3>
-<p>On May 29, 2025 we announced the shutdown schedule for the Apigee Classic UI.</p>
 <h3 id="announcement_13">Announcement</h3>
+<p>On May 29, 2025 we announced the shutdown schedule for the Apigee Classic UI.</p>
+<h3 id="announcement_14">Announcement</h3>
 <p>On May 29, 2025, we released an updated version of Apigee.</p>
 <h3 id="feature_19">Feature</h3>
 <p><strong>Public Preview: Apigee Extension Processor support for request and response body processing</strong></p>
@@ -2948,6 +2995,9 @@ new services like <code>google-guest-compat-manager.service</code> and
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#apigee-x">Apigee X</a></li>
+          <li class="nav-item">
+            <a href="#2025-10-16" class="nav-link">2025-10-16</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-10-14" class="nav-link">2025-10-14</a>
           </li>

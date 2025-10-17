@@ -2040,6 +2040,53 @@
 
 
 <h1 id="apigee-apim-operator">Apigee APIM Operator</h1>
+<h2 id="2025-10-16">2025-10-16</h2>
+<h3 id="announcement">Announcement</h3>
+<p>On October 16, 2025, we released an updated version of Apigee (1-16-0-apigee-3).</p>
+<p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
+<h3 id="fixed">Fixed</h3>
+<table>
+<thead>
+<tr>
+<th>Bug ID</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>442501403</strong></td>
+<td><strong>Fixed an issue that caused incorrect target latency metrics in Apigee Analytics when a TargetEndpoint is configured with a <LoadBalancer>.</strong></td>
+</tr>
+<tr>
+<td><strong>437999897</strong></td>
+<td><strong>Reduced the log level for failed geo IP lookups to address excessive log messages for private IP addresses.</strong></td>
+</tr>
+<tr>
+<td><strong>436323210</strong></td>
+<td><strong>Fixed ingress cert keys to allow both <code>tls.key</code>/<code>key</code> and <code>tls.crt</code>/<code>cert</code>.</strong></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Updates to security infrastructure and libraries.</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="security">Security</h3>
+<table>
+<thead>
+<tr>
+<th>Bug ID</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>440419558, 433759657</strong></td>
+<td><strong>Security fix for Apigee infrastructure.</strong> This addresses the following vulnerabilities:   * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-22868">CVE-2025-22868</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-48924">CVE-2025-48924</a> <strong>Note</strong>: This fix updates a Java library that is included in Apigee. Reliance on Java libraries that are included with Apigee is not supported. Those libraries are for Apigee product functionality only, and there's no guarantee that a library will be available from release to release. For more information, see <a href="https://cloud.google.com/apigee/docs/api-platform/reference/policies/java-callout-policy#Restrictions">Restrictions</a>.</td>
+</tr>
+</tbody>
+</table>
+<hr />
 <h2 id="2025-10-14">2025-10-14</h2>
 <h3 id="deprecated">Deprecated</h3>
 <p><strong>Removal of deprecated Gemini Code Assist <code>@Apigee</code> tool.</strong></p>
@@ -2059,7 +2106,7 @@
 <p>See <a href="https://cloud.google.com/apigee/docs/release/known-issues#445936920">Known Issue 445936920</a>.</p>
 <hr />
 <h2 id="2025-09-24">2025-09-24</h2>
-<h3 id="announcement">Announcement</h3>
+<h3 id="announcement_1">Announcement</h3>
 <p>On September 24, 2025, we released an updated version of Apigee.</p>
 <h3 id="feature">Feature</h3>
 <p><strong>ApigeeBackendService for the Apigee Operator for Kubernetes (GA)</strong></p>
@@ -2069,10 +2116,10 @@
 <p>To learn more, see <a href="https://cloud.google.com/apigee/docs/api-platform/apigee-kubernetes/apigee-apim-operator-apigeebackendservice">Create an ApigeeBackendService</a>.</p>
 <hr />
 <h2 id="2025-09-12">2025-09-12</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p>On September 12, 2025, we released an updated version of Apigee (1-16-0-apigee-2).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
-<h3 id="security">Security</h3>
+<h3 id="security_1">Security</h3>
 <table>
 <thead>
 <tr>
@@ -2094,7 +2141,7 @@
 <p>The <strong>API hub</strong> section is now moved to the top level of the Apigee left navigation menu. This change improves discoverability and access to the API hub features.</p>
 <hr />
 <h2 id="2025-09-09">2025-09-09</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p>On September 9, 2025, we released an updated version of Apigee (1-16-0-apigee-1).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
 <h3 id="changed_1">Changed</h3>
@@ -2123,6 +2170,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#apigee-apim-operator">Apigee APIM Operator</a></li>
+          <li class="nav-item">
+            <a href="#2025-10-16" class="nav-link">2025-10-16</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-10-14" class="nav-link">2025-10-14</a>
           </li>

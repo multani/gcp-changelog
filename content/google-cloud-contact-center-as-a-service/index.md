@@ -110,6 +110,7 @@ The following issues were addressed in this release:
 * Fixed an issue where CRM tickets weren't created for some calls.
 * Fixed an issue where outbound SIP calls incorrectly appended data parameters, causing calls to fail.
 * Fixed a Web SDK security vulnerability associated with DOMPurify.
+* Fixed an issue where chat metadata wasn't saved to external storage. This occurred when an end-user ended a chat after escalating from a virtual agent but before being connected to a human agent.
 
 ---
 ## 2025-10-09

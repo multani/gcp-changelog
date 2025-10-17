@@ -1,6 +1,24 @@
 {
   "name": "BigQuery",
   "entries": {
+    "2025-10-16": [
+      {
+        "kind": "Feature",
+        "content": "The following features are now [generally available](https://cloud.google.com/products/#product-launch-stages) (GA) in BigQuery Studio:\n\n* To streamline resource discovery and access, the [left Explorer\n  pane](https://cloud.google.com/bigquery/docs/bigquery-web-ui#explorer_panel) has been reorganized\n  into three sections: Explorer, Classic Explorer, and Git repository. You can\n  still use the Classic Explorer, which provides the complete resources tree.\n* In the Explorer pane, you can use the [search\n  feature](https://cloud.google.com/bigquery/docs/bigquery-web-ui#explorer_pane) to find BigQuery\n  resources in your organization. The results appear in a new tab in the\n  details pane. You can use filters to narrow your search.\n* You can access job histories by clicking [Job\n  history](https://cloud.google.com/bigquery/docs/managing-jobs) in the Explorer pane. A new tab opens\n  that displays a list of job histories. BigQuery Studio no longer has a\n  bottom pane for job history.\n* To reduce tab proliferation, clicking a resource opens it within the same\n  tab. To open the resource in a separate tab, press `Ctrl` (or\n  `Command` on macOS) and click the resource. To prevent the current\n  tab from getting its content replaced, double-click the tab. The name\n  changes from italicized to regular font. If you still\n  lose your resource, you can click tab\\_recent Recent tabs in the\n  details pane to find the resource.\n* You can use breadcrumbs to navigate through different tabs and\n  resources in the details pane.\n* In the Home tab, the [What's new section](https://cloud.google.com/bigquery/docs/bigquery-web-ui#welcome_tab)\n  contains a list of new capabilities and changes to the BigQuery Studio.\n* The notebook action bar is consolidated by default to give you more screen\n  space for writing code.",
+        "summary": {
+          "title": "BigQuery Studio Enhancements",
+          "summary": "BigQuery Studio now offers a reorganized Explorer pane with improved resource discovery and search functionality. Job histories are now accessible via the Explorer pane, and resources open in the same tab by default to reduce clutter, with options to open in new tabs or access recent tabs. Breadcrumbs aid navigation, and the 'What's new' section is available on the Home tab. The notebook action bar is also consolidated for more coding space."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now access repositories by clicking Repositories in the Explorer pane.\nA new tab opens that displays a list of repositories. The Explorer pane no\nlonger has a bottom pane for repositories. When you open a workspace in a\nrepository, it opens in the Git repository pane in the left pane. These\nfeatures are available in BigQuery Studio in\n[preview](https://cloud.google.com/products/#product-launch-stages).",
+        "summary": {
+          "title": "Repositories Accessible via Explorer Pane",
+          "summary": "Repositories can now be accessed by clicking 'Repositories' in the Explorer pane, opening a new tab with a list of repositories. The bottom pane for repositories has been removed from the Explorer pane. Workspaces within a repository now open in the Git repository pane in the left pane. These features are available in BigQuery Studio in preview."
+        }
+      }
+    ],
     "2025-10-15": [
       {
         "kind": "Feature",
@@ -47,6 +65,14 @@
     ],
     "2025-10-09": [
       {
+        "kind": "Changed",
+        "content": "An updated version of the [ODBC driver for BigQuery](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers#odbc_release_3151022) is now available.",
+        "summary": {
+          "title": "ODBC driver updated",
+          "summary": "The latest version of the ODBC driver for BigQuery has been released."
+        }
+      },
+      {
         "kind": "Feature",
         "content": "You can [allocate idle slots fairly](https://cloud.google.com/bigquery/docs/slots#fairness) across\nreservations within a single admin project. This ensures each reservation\nreceives an approximately equal share of available capacity. This feature is now\n[generally available](https://cloud.google.com/products#product-launch-stages)\n(GA).",
         "summary": {
@@ -69,17 +95,17 @@
           "title": "Security for Gemini in BigQuery",
           "summary": "Learn how customer data is protected and processed by Gemini in BigQuery."
         }
-      },
-      {
-        "kind": "Changed",
-        "content": "An updated version of the [ODBC driver for BigQuery](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers#odbc_release_3151022) is now available.",
-        "summary": {
-          "title": "ODBC driver updated",
-          "summary": "The latest version of the ODBC driver for BigQuery has been released."
-        }
       }
     ],
     "2025-10-08": [
+      {
+        "kind": "Breaking",
+        "content": "The [default limit of `QueryUsagePerDay`](https://cloud.google.com/bigquery/quotas#query_jobs) for\non-demand pricing has changed. The default limit of all new projects is now 200\nTiB. For existing projects, the default limit has been set based on your\nproject's usage over the last 30 days. Projects that have [custom cost\ncontrols](https://cloud.google.com/bigquery/docs/custom-quotas) configured or that use\n[reservations](https://cloud.google.com/bigquery/docs/reservations-workload-management) aren't affected.\nIf the new limit might affect your workload, create a [custom cost\ncontrol](https://cloud.google.com/bigquery/docs/custom-quotas) based on your workload needs.",
+        "summary": {
+          "title": "Daily Query Limit Increased",
+          "summary": "The default daily query limit for on-demand pricing has been raised to 200 TiB for new projects. Existing projects will have limits adjusted based on recent usage. This change does not affect projects with custom cost controls or reservations."
+        }
+      },
       {
         "kind": "Feature",
         "content": "You can set [labels](https://cloud.google.com/bigquery/docs/labels-intro) on reservations. These labels\ncan be used to organize your reservations and for billing analysis. This feature\nis [generally\navailable](https://cloud.google.com/products#product-launch-stages) (GA).",
@@ -94,14 +120,6 @@
         "summary": {
           "title": "Control BigQuery Reservations",
           "summary": "You can now specify which reservation a query uses at runtime and set IAM policies directly on reservations. This provides more flexibility and fine-grained control over resource management. This feature is generally available."
-        }
-      },
-      {
-        "kind": "Breaking",
-        "content": "The [default limit of `QueryUsagePerDay`](https://cloud.google.com/bigquery/quotas#query_jobs) for\non-demand pricing has changed. The default limit of all new projects is now 200\nTiB. For existing projects, the default limit has been set based on your\nproject's usage over the last 30 days. Projects that have [custom cost\ncontrols](https://cloud.google.com/bigquery/docs/custom-quotas) configured or that use\n[reservations](https://cloud.google.com/bigquery/docs/reservations-workload-management) aren't affected.\nIf the new limit might affect your workload, create a [custom cost\ncontrol](https://cloud.google.com/bigquery/docs/custom-quotas) based on your workload needs.",
-        "summary": {
-          "title": "Daily Query Limit Increased",
-          "summary": "The default daily query limit for on-demand pricing has been raised to 200 TiB for new projects. Existing projects will have limits adjusted based on recent usage. This change does not affect projects with custom cost controls or reservations."
         }
       }
     ],

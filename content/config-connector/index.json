@@ -1,6 +1,56 @@
 {
   "name": "Config Connector",
   "entries": {
+    "2025-10-16": [
+      {
+        "kind": "Announcement",
+        "content": "Config Connector version 1.137.0 is now available.",
+        "summary": {
+          "title": "Config Connector v1.137.0 Available",
+          "summary": "Config Connector version 1.137.0 has been released."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "New Beta Resources (Direct Reconciler):\n\n* `DocumentAIProcessorVersion`\n* `EssentialContactsContact`\n* `BigQueryBigLakeTable`\n* `BackupDRBackupPlan`",
+        "summary": {
+          "title": "New Beta Resources",
+          "summary": "We are introducing new beta resources: DocumentAIProcessorVersion, EssentialContactsContact, BigQueryBigLakeTable, and BackupDRBackupPlan."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "New Alpha Resources (Direct Reconciler):\n\n* `BigtableMaterializedView`",
+        "summary": {
+          "title": "New Alpha Resources (Direct Reconciler)",
+          "summary": "New Alpha Resources (Direct Reconciler) including BigtableMaterializedView are now available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Fields:\n\n* `BigtableMaterializedView`: Added `spec.sourceTableRef` and `spec.definition`.\n* `BackupDRBackupPlan`: Added `spec.backupConfig.retentionPeriodDays` and `spec.backupConfig.backupWindow`.\n* `MemorystoreInstance`: Added support for `MEMCACHE` and `REDIS` instance types.",
+        "summary": {
+          "title": "New fields and instance types supported",
+          "summary": "Added new fields to BigtableMaterializedView and BackupDRBackupPlan, and introduced support for MEMCACHE and REDIS instance types in MemorystoreInstance."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Reconciliation Improvements:\n\n* Enabled opt-in for IAM partial policy management.\n* Enabled server-side apply for KMS resources.\n* Improved reconciliation for `BigtableLogicalView` by using deep reflection.\n* Improved reconciliation for `FirestoreDatabase` with identity pattern and export support.\n* Improved reconciliation for `RunJob` with export support.\n* Unified `ComputeTargetTCPProxy` direct API and controller.",
+        "summary": {
+          "title": "Reconciliation Improvements",
+          "summary": "Opt-in for IAM partial policy management and server-side apply for KMS resources are now enabled. Reconciliation has been enhanced for Bigtable, Firestore, and RunJob resources, with unified direct API and controller for ComputeTargetTCPProxy."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Bug Fixes:\n\n* Fixed an issue where `ComputeBackendService` backends were not sorted.\n* Fixed an issue where `CloudFunctionsFunction` runtime was not a supported value.\n* Fixed an issue with labels for `BackupDRBackupPlan`.\n* Fixed an issue with labels for `RunJob`.\n* Fixed a fuzzing issue for `FirestoreField`.\n* Fixed an issue with `KMSCryptoKey` import.\n* Fixed a flakiness issue in the `MonitoringDashboard` fuzzer.\n* Fixed a flakiness issue in tests.\n* Fixed an issue with bad labels in tests.\n* Fixed an issue with `etag` in direct reconciliation.",
+        "summary": {
+          "title": "Fixed an issue with etag in direct reconciliation.",
+          "summary": "This release includes several bug fixes. Notably, we resolved an issue with sorting for ComputeBackendService backends and corrected unsupported runtime values for CloudFunctionsFunction. Additionally, label-related issues for BackupDRBackupPlan and RunJob have been addressed, along with a fuzzing issue for FirestoreField and an import problem for KMSCryptoKey."
+        }
+      }
+    ],
     "2025-10-07": [
       {
         "kind": "Announcement",

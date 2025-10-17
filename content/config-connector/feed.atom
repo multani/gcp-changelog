@@ -2,9 +2,109 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Config Connector</title>
   <subtitle>Changelog for Google Cloud product: Config Connector</subtitle>
-  <updated>2025-10-07T00:00:00+00:00</updated>
+  <updated>2025-10-16T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:config-connector</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/config-connector/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-10-16:announcement:0</id>
+    <published>2025-10-16T00:00:00+00:00</published>
+    <updated>2025-10-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.137.0 is now available.</p>]]></content>
+    <summary>Config Connector version 1.137.0 has been released.</summary>
+    <title>Announcement: Config Connector v1.137.0 Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-10-16:changed:1</id>
+    <published>2025-10-16T00:00:00+00:00</published>
+    <updated>2025-10-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Beta Resources (Direct Reconciler):</p>
+<ul>
+<li><code>DocumentAIProcessorVersion</code></li>
+<li><code>EssentialContactsContact</code></li>
+<li><code>BigQueryBigLakeTable</code></li>
+<li><code>BackupDRBackupPlan</code></li>
+</ul>]]></content>
+    <summary>We are introducing new beta resources: DocumentAIProcessorVersion, EssentialContactsContact, BigQueryBigLakeTable, and BackupDRBackupPlan.</summary>
+    <title>Changed: New Beta Resources</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-10-16:changed:2</id>
+    <published>2025-10-16T00:00:00+00:00</published>
+    <updated>2025-10-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Alpha Resources (Direct Reconciler):</p>
+<ul>
+<li><code>BigtableMaterializedView</code></li>
+</ul>]]></content>
+    <summary>New Alpha Resources (Direct Reconciler) including BigtableMaterializedView are now available.</summary>
+    <title>Changed: New Alpha Resources (Direct Reconciler)</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-10-16:feature:3</id>
+    <published>2025-10-16T00:00:00+00:00</published>
+    <updated>2025-10-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Fields:</p>
+<ul>
+<li><code>BigtableMaterializedView</code>: Added <code>spec.sourceTableRef</code> and <code>spec.definition</code>.</li>
+<li><code>BackupDRBackupPlan</code>: Added <code>spec.backupConfig.retentionPeriodDays</code> and <code>spec.backupConfig.backupWindow</code>.</li>
+<li><code>MemorystoreInstance</code>: Added support for <code>MEMCACHE</code> and <code>REDIS</code> instance types.</li>
+</ul>]]></content>
+    <summary>Added new fields to BigtableMaterializedView and BackupDRBackupPlan, and introduced support for MEMCACHE and REDIS instance types in MemorystoreInstance.</summary>
+    <title>Feature: New fields and instance types supported</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-10-16:changed:4</id>
+    <published>2025-10-16T00:00:00+00:00</published>
+    <updated>2025-10-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Reconciliation Improvements:</p>
+<ul>
+<li>Enabled opt-in for IAM partial policy management.</li>
+<li>Enabled server-side apply for KMS resources.</li>
+<li>Improved reconciliation for <code>BigtableLogicalView</code> by using deep reflection.</li>
+<li>Improved reconciliation for <code>FirestoreDatabase</code> with identity pattern and export support.</li>
+<li>Improved reconciliation for <code>RunJob</code> with export support.</li>
+<li>Unified <code>ComputeTargetTCPProxy</code> direct API and controller.</li>
+</ul>]]></content>
+    <summary>Opt-in for IAM partial policy management and server-side apply for KMS resources are now enabled. Reconciliation has been enhanced for Bigtable, Firestore, and RunJob resources, with unified direct API and controller for ComputeTargetTCPProxy.</summary>
+    <title>Changed: Reconciliation Improvements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-10-16:fixed:5</id>
+    <published>2025-10-16T00:00:00+00:00</published>
+    <updated>2025-10-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Bug Fixes:</p>
+<ul>
+<li>Fixed an issue where <code>ComputeBackendService</code> backends were not sorted.</li>
+<li>Fixed an issue where <code>CloudFunctionsFunction</code> runtime was not a supported value.</li>
+<li>Fixed an issue with labels for <code>BackupDRBackupPlan</code>.</li>
+<li>Fixed an issue with labels for <code>RunJob</code>.</li>
+<li>Fixed a fuzzing issue for <code>FirestoreField</code>.</li>
+<li>Fixed an issue with <code>KMSCryptoKey</code> import.</li>
+<li>Fixed a flakiness issue in the <code>MonitoringDashboard</code> fuzzer.</li>
+<li>Fixed a flakiness issue in tests.</li>
+<li>Fixed an issue with bad labels in tests.</li>
+<li>Fixed an issue with <code>etag</code> in direct reconciliation.</li>
+</ul>]]></content>
+    <summary>This release includes several bug fixes. Notably, we resolved an issue with sorting for ComputeBackendService backends and corrected unsupported runtime values for CloudFunctionsFunction. Additionally, label-related issues for BackupDRBackupPlan and RunJob have been addressed, along with a fuzzing issue for FirestoreField and an import problem for KMSCryptoKey.</summary>
+    <title>Fixed: Fixed an issue with etag in direct reconciliation.</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

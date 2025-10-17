@@ -1,5 +1,21 @@
 # Looker Studio
 
+## 2025-10-16
+
+### Feature
+
+**Pro feature: Share and schedule reports with Slack**
+
+You can now [send Looker Studio reports to Slack channels and Slack users](https://cloud.google.com/looker/docs/studio/slack) on your Slack workspaces.
+This feature is only available to Looker Studio Pro users, and is available in Preview.
+
+### Feature
+
+**Vertical stacking in responsive reports**
+
+Responsive reports now support vertical stacking. You can add multiple components to a column within a section. [Learn more about creating responsive reports](https://cloud.google.com/looker/docs/studio/create-a-responsive-report).
+
+---
 ## 2025-10-02
 
 ### Feature

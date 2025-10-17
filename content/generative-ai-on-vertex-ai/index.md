@@ -57,17 +57,23 @@ For more information about adding and removing objects, see the following:
 * [Remove objects from Veo videos](https://cloud.google.com/vertex-ai/generative-ai/docs/video/remove-objects-from-videos)
 * [Veo video generation API](https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/veo-video-generation)
 
+### Feature
+
+**Veo video generation**
+
+Veo 2 supports adding and removing objects from videos in Preview.
+
+For more information about Veo 2, see [Veo 2
+Preview](https://cloud.google.com/vertex-ai/generative-ai/docs/models/veo/2-0-generate-preview)
+
+For more information about adding and removing objects, see the following:
+
+* [Insert objects into Veo videos](https://cloud.google.com/vertex-ai/generative-ai/docs/video/insert-objects-into-videos)
+* [Remove objects from Veo videos](https://cloud.google.com/vertex-ai/generative-ai/docs/video/remove-objects-from-videos)
+* [Veo video generation API](https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/veo-video-generation)
+
 ---
 ## 2025-10-14
-
-### Deprecated
-
-**Imagen subject and style fine-tuning**
-
-Imagen subject model and style model tuning will be removed on
-December 31, 2025. We recommend that you use [Gemini 2.5 Flash Image](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash-image), which supports most use cases that require
-fine-tuning. For more information, see  [Edit images with
-Gemini](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-editing).
 
 ### Deprecated
 
@@ -129,6 +135,10 @@ For more details, see [Pricing](https://cloud.google.com/vertex-ai/pricing#agent
 
 **Access Transparency for Vertex AI Agent Engine**: Access Transparency is now available for Vertex AI Agent Engine. For more information, see the overview for [Enterprise security](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/overview#enterprise_security).
 
+### Feature
+
+**Access Transparency for Vertex AI Agent Engine**: Access Transparency is now available for Vertex AI Agent Engine. For more information, see the overview for [Enterprise security](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/overview#enterprise_security).
+
 ---
 ## 2025-10-03
 
@@ -142,6 +152,12 @@ For more information, see the [Prompt management](https://cloud.google.com/verte
 
 ---
 ## 2025-10-02
+
+### Announcement
+
+**[Gemini 2.5 Flash Image](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash#image-generation)** (`gemini-2.5-flash-image`) is now generally available. This GA release adds support for aspect ratio controls, image-only response modality, regional endpoints, [support for batch predictions](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/batch-prediction-gemini), [image generation from multiple reference images](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-generation#image-generation), and [improved multi-turn image editing](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-editing#multi-turn-editing).
+
+See [Gemini 2.5 Flash Image](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash#image) for more information.
 
 ### Announcement
 

@@ -4,21 +4,9 @@
 
 ### Announcement
 
-Guardrails have been defined for each backup/recovery appliance to specify the number of supported job slots, ensuring smooth parallel backup and mount jobs.
+Backup and DR Service 11.0.16.253 is now available to update your backup/recovery appliances. Refer to these [instructions](https://cloud.google.com/backup-disaster-recovery/docs/configuration/update-appliance) to update your appliance.
 
-### Feature
-
-Backup and DR users can now create multi-region backup vaults as necessary to support different resource type requirements.
-
-### Announcement
-
-There is a new backup vault-level parameter, settable only at creation time, that determines whether the enforced retention period for incoming backups will be set to match the incoming expiry dates for the respective backups or whether the enforced retention period for all incoming backups will simply be set to match the backup vault-level enforced retention period. This enables different enforced retention periods for different backup cadences, while also enabling protection into a single backup vault.
-
-### Announcement
-
-Launched FedRAMP High Compliance (R2303) for Assured Workloads, restricting non-compliant features of Backup and DR for Self Managed Storage within Assured Workload environments. This enhances your workload security and compliance with stringent security requirements.
-
-### Announcement
+* Guardrails have been defined for each backup/recovery appliance to specify the number of supported job slots, ensuring smooth parallel backup and mount jobs.
 
 Introducing notifications and alerts for the following critical events:
 

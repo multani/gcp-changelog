@@ -1,5 +1,15 @@
 # Cloud Service Mesh
 
+## 2025-10-16
+
+### Announcement
+
+The promotion of [1.21 to the Rapid release channel](https://cloud.google.com/service-mesh/docs/release-notes#May_06_2025) included upstream breaking changes to [ExternalName](https://istio.io/latest/news/releases/1.21.x/announcing-1.21/upgrade-notes/#externalname-support-changes) and [auto-sni](https://istio.io/latest/news/releases/1.21.x/announcing-1.21/upgrade-notes/#default-value-of-the-feature-flag-enable_auto_sni-to-true) when using the `ISTIOD` [implementation](https://cloud.google.com/service-mesh/docs/check-control-plane-implementation). After considering the impact on customers, we have decided to restore the previous behavior from 1.20 and earlier for managed Cloud Service Mesh clusters using the `ISTIOD` implementation to match Rapid clusters using the `TRAFFIC_DIRECTOR` implementation. These changes are rolling out to the Rapid release channel in version 1.21.5-asm.55 or later.
+
+* If you are using an `ExternalName` service in the Rapid channel without a port description, the `ExternalName` service will not be translated into `Cluster` in the Envoy configuration. If the `ExternalName` service is a destination of `VirtualService` or `ExternalName` service is used with `REGISTRY_ONLY` mode, you must specify the port in the service like in 1.20 and earlier.
+* If you have an external service multiplexing traffic based on SNI but the corresponding `DestinationRule` doesn't have an explicit SNI, you must [set SNI properly](https://cloud.google.com/service-mesh/docs/troubleshooting/troubleshoot-security#explicit_sni_setup).
+
+---
 ## 2025-10-15
 
 ### Announcement

@@ -78,7 +78,7 @@ In-cluster Cloud Service Mesh 1.24 is no longer supported. For more information 
 
 ### Feature
 
-You can now configure traffic routing using [Cloud Service Mesh service routing APIs](https://cloud.google.com/service-mesh/docs/configure-cloud-service-mesh-for-cloud-run) between Cloud Run and Cloud Run, Google Kubernetes Engine, and Google Compute Engine services. (GA).
+You can now configure traffic routing using [Cloud Service Mesh service routing APIs](https://cloud.google.com/service-mesh/docs/configure-cloud-service-mesh-for-cloud-run#service_to_service) between Cloud Run and Cloud Run, Google Kubernetes Engine, and Google Compute Engine services. (GA).
 
 ### Changed
 

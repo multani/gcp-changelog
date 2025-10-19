@@ -135,6 +135,7 @@
 - [Media CDN](media-cdn/index.md)
 - [Memorystore for Memcached](memorystore-for-memcached/index.md)
 - [Memorystore for Redis](memorystore-for-redis/index.md)
+- [Memorystore for Redis Cluster](memorystore-for-redis-cluster/index.md)
 - [Migrate to Virtual Machines](migrate-to-virtual-machines/index.md)
 - [Model Armor](model-armor/index.md)
 - [NetApp Volumes](netapp-volumes/index.md)

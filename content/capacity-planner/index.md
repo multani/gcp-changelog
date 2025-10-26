@@ -10,7 +10,7 @@
 * Usage and forecast data for Persistent Disk and Hyperdisk volume IOPS and throughput
 * Usage data for Spot VMs
 
-For more information, see [View usage and forecast data](https://cloud.google.com/capacity-planner/docs/view-data).
+For more information, see [View usage and forecast data](https://docs.cloud.google.com/capacity-planner/docs/view-data).
 
 ---
 ## 2025-08-29

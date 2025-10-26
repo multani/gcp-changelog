@@ -1,23 +1,51 @@
 {
   "name": "Cloud SQL for PostgreSQL",
   "entries": {
+    "2025-10-23": [
+      {
+        "kind": "Feature",
+        "content": "Cloud SQL now proactively detects and works to cancel high memory usage\nconnections to prevent out-of-memory (OOM) failures. For more information,\nsee [Cancelled queries due to high memory usage](https://cloud.google.com/sql/docs/postgres/manage-memory-usage-best-practices#cancelled-query).",
+        "summary": {
+          "title": "Cloud SQL Prevents OOM Failures",
+          "summary": "Cloud SQL now proactively detects and works to cancel high memory usage connections to prevent out-of-memory (OOM) failures."
+        }
+      }
+    ],
+    "2025-10-17": [
+      {
+        "kind": "Feature",
+        "content": "Cloud SQL Enterprise edition now supports a new machine series called the N4 machine series. This machine series provides balanced price-to-performance and uses the Hyperdisk Balanced storage. You can create custom machine types for the N4 machine series with up to 80 vCPUs and up to 640 GB memory. The N4 machine series is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).\n\nFor more information about the N4 machine series and its availability, see [Machine series overview](https://docs.cloud.google.com/sql/docs/postgres/machine-series-overview).",
+        "summary": {
+          "title": "Introducing the N4 Machine Series for Cloud SQL Enterprise Edition",
+          "summary": "Cloud SQL Enterprise Edition now supports the new N4 machine series, offering balanced price-to-performance with Hyperdisk Balanced storage. You can create custom machine types with up to 80 vCPUs and 640 GB memory. This feature is now generally available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [C4A machine series](https://docs.cloud.google.com/sql/docs/postgres/machine-series-overview#c4a) is now [generally available](https://cloud.google.com/products#product-launch-stages) (GA).\n\nThe C4A machine series is supported for Cloud SQL Enterprise Plus edition instances, and provides optimized price-performance and delivers predictable high performance for high demand Cloud SQL workloads. It uses the Hyperdisk Balanced storage.\n\nFor more information about the C4A machine series and its availability, see [Machine series overview](https://docs.cloud.google.com/sql/docs/postgres/machine-series-overview).",
+        "summary": {
+          "title": "C4A machine series now generally available",
+          "summary": "The C4A machine series is now generally available for Cloud SQL Enterprise Plus edition, offering optimized price-performance for demanding workloads."
+        }
+      }
+    ],
     "2025-10-06": [
       {
         "kind": "Feature",
-        "content": "You can now assess the upgrade readiness of your Cloud SQL for PostgreSQL instances before a major version upgrade by running a precheck. This precheck either confirms your instance can be upgraded, or lists issues and their solutions that need to be fixed prior to upgrading. For more information, see [Assess upgrade readiness for your instance](https://cloud.google.com/sql/docs/postgres/upgrade-major-db-version-inplace#precheck).",
+        "content": "You can now assess the upgrade readiness of your Cloud SQL for PostgreSQL instances before a major version upgrade by running a precheck. This precheck either confirms your instance can be upgraded, or lists issues and their solutions that need to be fixed prior to upgrading. For more information, see [Assess upgrade readiness for your instance](https://docs.cloud.google.com/sql/docs/postgres/upgrade-major-db-version-inplace#precheck).",
         "summary": {
-          "title": "Cloud SQL for PostgreSQL Precheck",
-          "summary": "Assess your Cloud SQL for PostgreSQL instance's upgrade readiness before a major version upgrade with the new precheck feature. This tool confirms if your instance is ready or provides specific issues and solutions to address before proceeding."
+          "title": "Cloud SQL precheck tool",
+          "summary": "A new precheck tool is available for Cloud SQL for PostgreSQL to assess upgrade readiness before a major version upgrade."
         }
       }
     ],
     "2025-10-03": [
       {
         "kind": "Feature",
-        "content": "Cloud SQL for PostgreSQL now supports PostgreSQL version 18 in [Preview](https://cloud.google.com/products#product-launch-stages).\n\nPostgreSQL 18 is a newly supported version. We strongly recommend that you review the changes in the release and validate the readiness of your instance thoroughly prior to upgrading your instance to this version.\n\nThe following information applies to flags and extensions for PostgreSQL 18:\n\n**Flags**\n\nThe following new flags are available for PostgreSQL 18 only:\n\n* `autovacuum_vacuum_max_threshold`\n* `autovacuum_worker_slots`\n* `enable_distinct_reordering`\n* `enable_self_join_elimitation`\n* `io_max_concurrency`\n* `io_method`\n* `io_workers`\n* `log_lock_failures`\n* `max_active_replecation_origins`\n* `track_cost_delay_timing`\n* `vacuum_max_eager_freeze_failure_rate`\n* `vacuum_truncate`\n\nFor more information, see [Configure database flags](https://cloud.google.com/sql/docs/postgres/flags).\n\n**Extensions**\n\nThe following extensions aren't available for PostgreSQL 18:\n\n* `pgRouting`\n* `plpgsql_check`\n* `pg_hint_plan`\n* `pgrouting`\n* `anonymizer`\n* `pg_wait_sampling`\n* `tds_fdw`\n\nFor more information, see [Configure PostgreSQL extensions](https://cloud.google.com/sql/docs/postgres/extensions).\n\nTo create a new instance using PostgreSQL 18, see [Create instances](https://cloud.google.com/sql/docs/postgres/create-instance).",
+        "content": "Cloud SQL for PostgreSQL now supports PostgreSQL version 18 in [Preview](https://cloud.google.com/products#product-launch-stages).\n\nPostgreSQL 18 is a newly supported version. We strongly recommend that you review the changes in the release and validate the readiness of your instance thoroughly prior to upgrading your instance to this version.\n\nThe following information applies to flags and extensions for PostgreSQL 18:\n\n**Flags**\n\nThe following new flags are available for PostgreSQL 18 only:\n\n* `autovacuum_vacuum_max_threshold`\n* `autovacuum_worker_slots`\n* `enable_distinct_reordering`\n* `enable_self_join_elimitation`\n* `io_max_concurrency`\n* `io_method`\n* `io_workers`\n* `log_lock_failures`\n* `max_active_replecation_origins`\n* `track_cost_delay_timing`\n* `vacuum_max_eager_freeze_failure_rate`\n* `vacuum_truncate`\n\nFor more information, see [Configure database flags](https://docs.cloud.google.com/sql/docs/postgres/flags).\n\n**Extensions**\n\nThe following extensions aren't available for PostgreSQL 18:\n\n* `pgRouting`\n* `plpgsql_check`\n* `pg_hint_plan`\n* `pgrouting`\n* `anonymizer`\n* `pg_wait_sampling`\n* `tds_fdw`\n\nFor more information, see [Configure PostgreSQL extensions](https://docs.cloud.google.com/sql/docs/postgres/extensions).\n\nTo create a new instance using PostgreSQL 18, see [Create instances](https://docs.cloud.google.com/sql/docs/postgres/create-instance).",
         "summary": {
-          "title": "Cloud SQL for PostgreSQL 18 Now Available",
-          "summary": "Cloud SQL for PostgreSQL now supports PostgreSQL version 18 in preview. Review changes and test thoroughly before upgrading."
+          "title": "PostgreSQL 18 now available in preview",
+          "summary": "Cloud SQL for PostgreSQL now supports PostgreSQL version 18 in preview. It is recommended to review changes and validate instance readiness before upgrading."
         }
       }
     ],

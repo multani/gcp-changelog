@@ -4,9 +4,9 @@
 
 ### Changed
 
-The Service Account User role has been removed from the Cloud Build Permissions page in the Google Cloud Console. Instead, when you enable certain roles on your Cloud Build service account, you can configure your Cloud Build Service account to impersonate the service account of the managed services related to those roles. This configuration lets you deploy builds using managed services while maintaining minimal permissions. For more information, see [Configure Cloud Build service account impersonation for managed services](https://cloud.google.com/build/docs/deploying-builds/cb-sa-imp).
+The Service Account User role has been removed from the Cloud Build Permissions page in the Google Cloud Console. Instead, when you enable certain roles on your Cloud Build service account, you can configure your Cloud Build Service account to impersonate the service account of the managed services related to those roles. This configuration lets you deploy builds using managed services while maintaining minimal permissions. For more information, see [Configure Cloud Build service account impersonation for managed services](https://docs.cloud.google.com/build/docs/deploying-builds/cb-sa-imp).
 
-In addition, the Cloud Build Permissions page in the Google Cloud Console will only show the [legacy Cloud Build service account](https://cloud.google.com/build/docs/cloud-build-service-account#about_legacy) if your organization's policy allows it.
+In addition, the Cloud Build Permissions page in the Google Cloud Console will only show the [legacy Cloud Build service account](https://docs.cloud.google.com/build/docs/cloud-build-service-account#about_legacy) if your organization's policy allows it.
 
 ---
 ## 2025-09-29
@@ -15,7 +15,7 @@ In addition, the Cloud Build Permissions page in the Google Cloud Console will o
 
 Developer Connect build triggers are now [generally available](https://cloud.google.com/products/#product-launch-stages).
 
-You can now create build triggers that build from [repositories connected to Developer Connect](https://cloud.google.com/build/docs/triggers#devcon-triggers) using the Google Cloud Console, `gcloud`, the Cloud Build API, and Terraform.
+You can now create build triggers that build from [repositories connected to Developer Connect](https://docs.cloud.google.com/build/docs/triggers#devcon-triggers) using the Google Cloud Console, `gcloud`, the Cloud Build API, and Terraform.
 
 ---
 ## 2025-09-02

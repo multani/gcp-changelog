@@ -4,7 +4,7 @@
 
 ### Announcement
 
-Backup and DR Service 11.0.16.253 is now available to update your backup/recovery appliances. Refer to these [instructions](https://cloud.google.com/backup-disaster-recovery/docs/configuration/update-appliance) to update your appliance.
+Backup and DR Service 11.0.16.253 is now available to update your backup/recovery appliances. Refer to these [instructions](https://docs.cloud.google.com/backup-disaster-recovery/docs/configuration/update-appliance) to update your appliance.
 
 * Guardrails have been defined for each backup/recovery appliance to specify the number of supported job slots, ensuring smooth parallel backup and mount jobs.
 

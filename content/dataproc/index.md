@@ -1,10 +1,40 @@
 # Dataproc
 
+## 2025-10-22
+
+### Announcement
+
+Announcing the General Availability (GA) of [Lightning Engine for Google Cloud Serverless for Apache Spark](https://cloud.google.com/dataproc-serverless/docs/guides/lightning-engine). Lightning Engine is a [high-performance query accelerator](https://cloud.google.com/blog/products/data-analytics/introducing-lightning-engine-for-apache-spark) that delivers up to 4.3x faster performance for Spark workloads compared to open-source Spark, as measured on TPC-H-like benchmarks.
+
+For more details on enabling Lightning Engine and its advanced features like Native Query Execution (NQE), see [the official documentation](https://cloud.google.com/dataproc-serverless/docs/guides/lightning-engine).
+
+### Changed
+
+**Serverless for Apache Spark:** With the Lightning Engine GA release, the property to enable [Native Query Execution (NQE) feature](https://cloud.google.com/dataproc-serverless/docs/guides/lightning-engine#native_query_execution) has been updated.
+
+In order to use Lightning Engine, submit your jobs in the Premium tier. Under Lightning Engine, if you would like to use the NQE feature, set the new flag: [`spark.dataproc.lightningEngine.runtime=native`](https://cloud.google.com/dataproc-serverless/docs/concepts/properties#engine_and_runtime_properties). Users are encouraged to try this feature to explore the full potential of Lightning Engine.
+
+For backward compatibility, the legacy property that was used to enable NQE `spark.dataproc.runtimeEngine=native` will continue to be honored in the existing runtimes 1.2, 2.2 and 2.3, but it's not supported in future releases (3.0+ runtimes).
+
+---
+## 2025-10-16
+
+### Announcement
+
+New [Serverless for Apache Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
+
+* 3.0.0-RC6
+
+### Changed
+
+**Dataproc on Compute Engine**: The default image version of premium tier clusters is now **2.3**.
+
+---
 ## 2025-10-13
 
 ### Announcement
 
-**Serverless for Apache Spark:** Runtimes rollout with Apache Spark upgrade to version [3.5.3](https://spark.apache.org/releases/spark-release-3-5-3.html) in the latest [1.2](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_12) and [2.2](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_22) Serverless for Apache Spark runtime versions has started and is expected to finish by October 16th.
+**Serverless for Apache Spark:** Runtimes rollout with Apache Spark upgrade to version [3.5.3](https://spark.apache.org/releases/spark-release-3-5-3.html) in the latest [1.2](https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_12) and [2.2](https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_22) Serverless for Apache Spark runtime versions has started and is expected to finish by October 16th.
 
 ---
 ## 2025-10-06
@@ -13,13 +43,13 @@
 
 **Dataproc on Compute Engine:** The following diagnostic properties are now enabled by default for new Dataproc clusters created with **2.0+** image versions:
 
-* `dataproc:diagnostic.capture.enabled`: Collects [checkpoint diagnostic data](https://cloud.google.com/dataproc/docs/support/diagnose-clusters#checkpoint_diagnostic_data) in the cluster [temp bucket](https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/staging-bucket).
-* `dataproc:dataproc.logging.extended.enabled`: Collects logs for the [Knox, Zeppelin, Ranger-usersync, Jupyter\_notebook, Jupyter\_kernel\_gateway components](https://cloud.google.com/dataproc/docs/concepts/components/overview) and the [Spark History-Server](https://cloud.google.com/dataproc/docs/concepts/jobs/history-server) in [Cloud Logging](https://cloud.google.com/dataproc/docs/guides/logging#cluster-logs).
-* `dataproc:dataproc.logging.syslog.enabled`: Collects VM syslogs in [Cloud Logging](https://cloud.google.com/dataproc/docs/guides/logging#cluster-logs).
+* `dataproc:diagnostic.capture.enabled`: Collects [checkpoint diagnostic data](https://docs.cloud.google.com/dataproc/docs/support/diagnose-clusters#checkpoint_diagnostic_data) in the cluster [temp bucket](https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/staging-bucket).
+* `dataproc:dataproc.logging.extended.enabled`: Collects logs for the [Knox, Zeppelin, Ranger-usersync, Jupyter\_notebook, Jupyter\_kernel\_gateway components](https://cloud.google.com/dataproc/docs/concepts/components/overview) and the [Spark History-Server](https://docs.cloud.google.com/dataproc/docs/concepts/jobs/history-server) in [Cloud Logging](https://docs.cloud.google.com/dataproc/docs/guides/logging#cluster-logs).
+* `dataproc:dataproc.logging.syslog.enabled`: Collects VM syslogs in [Cloud Logging](https://docs.cloud.google.com/dataproc/docs/guides/logging#cluster-logs).
 
 **Note:** To disable any of these features, set the corresponding property to `false` during cluster creation.
 
-To continue using the [Ops Agent](https://cloud.google.com/stackdriver/docs/solutions/agents/ops-agent) initialization action [`opsagent.sh`](https://github.com/GoogleCloudDataproc/initialization-actions/blob/main/opsagent/opsagent.sh) to ingest syslogs from Dataproc cluster nodes, do one of the following:
+To continue using the [Ops Agent](https://docs.cloud.google.com/stackdriver/docs/solutions/agents/ops-agent) initialization action [`opsagent.sh`](https://github.com/GoogleCloudDataproc/initialization-actions/blob/main/opsagent/opsagent.sh) to ingest syslogs from Dataproc cluster nodes, do one of the following:
 
 * **Recommended:** Use [`opsagent_nosyslog.sh`](https://github.com/GoogleCloudDataproc/initialization-actions/blob/main/opsagent/opsagent_nosyslog.sh) since
   VM syslogs are emitted by default from Dataproc clusters.
@@ -28,21 +58,21 @@ To continue using the [Ops Agent](https://cloud.google.com/stackdriver/docs/solu
 
 ### Announcement
 
-New [Serverless for Apache Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
+New [Serverless for Apache Spark runtime versions](https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
 
 * 2.3.13
 * 3.0.0-RC5
 
 ### Changed
 
-**Serverless for Apache Spark:** Upgraded Apache Spark to version [3.5.3](https://spark.apache.org/releases/spark-release-3-5-3.html) in the latest [2.3](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_23) Serverless for Apache Spark runtime versions.
+**Serverless for Apache Spark:** Upgraded Apache Spark to version [3.5.3](https://spark.apache.org/releases/spark-release-3-5-3.html) in the latest [2.3](https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_23) Serverless for Apache Spark runtime versions.
 
 ---
 ## 2025-10-03
 
 ### Announcement
 
-New [Dataproc on Compute Engine subminor image versions](https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):
+New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):
 
 * 2.0.150-debian10, 2.0.150-ubuntu18, 2.0.150-rocky8
 * 2.1.99-debian11, 2.1.99-ubuntu20, 2.1.99-ubuntu20-arm, 2.1.99-rocky8

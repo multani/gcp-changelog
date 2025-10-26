@@ -1,6 +1,110 @@
 # Google SecOps SOAR
 
+## 2025-10-26
+
+### Announcement
+
+Release 6.3.65 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains the following changes:
+
+### Feature
+
+**Delete high-load environments**
+
+You can now easily delete environments with heavy loads directly from the platform.
+
+---
+## 2025-10-25
+
+### Announcement
+
+[Release 6.3.64](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#October_19_2025) is now available for all regions.
+
+---
+## 2025-10-22
+
+### Feature
+
+**SentinelOneV2**: Version 42.0
+
+* The following new actions have been added:
+
+  + **Create Device Control Rule**
+  + **Delete Device Control Rule**
+  + **Update Device Control Rule**
+
+### Changed
+
+**CrowdStrike Falcon**: Version 67.0
+
+* Fixed a bug where the Contains filter would fail to find hosts when the
+  `Max Hosts To Return` limit was applied in the following action:
+
+  + **List Host**
+
+### Changed
+
+**CSV**: Version 34.0
+
+* Fixed a bug that caused inconsistent column order for the same JSON input by
+  stabilizing the order based on the keys of the first object in the list in the
+  following action:
+
+  + **Save Json to CSV**
+
+### Changed
+
+**DomainTools**: Version 8.0
+
+* Extended capabilities in the following action:
+
+  + **Get Domain Risk**
+* Added support for the domain entity type in the following actions:
+
+  + **Get Domain Profile**
+  + **Get Domain Risk**
+  + **Reverse Domain**
+
+---
+## 2025-10-19
+
+### Announcement
+
+Release 6.3.64 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains internal and customer bug fixes.
+
+---
+## 2025-10-18
+
+### Announcement
+
+[Release 6.3.63](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#October_05_2025) is now available for all regions.
+
+---
 ## 2025-10-15
+
+### Changed
+
+**ThreatQ**: Version 15.0
+
+* Updated the API request payload to align with a change in the ThreatQ API in
+  the following actions:
+
+  + **Enrich IP**
+  + **Enrich URL**
+  + **Enrich Email**
+  + **Enrich Hash**
+  + **Enrich CVE**
+
+### Changed
+
+**UrlScan.io**: Version 26.0
+
+* Added ability to scan domains and IPs in the following action:
+
+  + **URL Check**
 
 ### Feature
 
@@ -63,29 +167,26 @@ Updated dependencies in the following integrations:
   + **Get Group**
   + **List Providers**
 
-### Changed
-
-**ThreatQ**: Version 15.0
-
-* Updated the API request payload to align with a change in the ThreatQ API in
-  the following actions:
-
-  + **Enrich IP**
-  + **Enrich URL**
-  + **Enrich Email**
-  + **Enrich Hash**
-  + **Enrich CVE**
-
-### Changed
-
-**UrlScan.io**: Version 26.0
-
-* Added ability to scan domains and IPs in the following action:
-
-  + **URL Check**
-
 ---
 ## 2025-10-09
+
+### Changed
+
+**Google Workspace**: Version 22.0
+
+* Updated the action description to reflect that the action deletes the
+  extension from the blocklist rather than deleting the extension from the
+  organizational unit in the following action:
+
+  + **Delete Extension**
+
+### Changed
+
+**Google Chronicle**: Version 66.0
+
+* Updated processing of reference list rows in the following action:
+
+  + **Get Reference Lists**
 
 ### Changed
 
@@ -107,30 +208,12 @@ Updated dependencies in the following integrations:
   + **Get Authorization**
   + **Generate Token**
 
-### Changed
-
-**Google Workspace**: Version 22.0
-
-* Updated the action description to reflect that the action deletes the
-  extension from the blocklist rather than deleting the extension from the
-  organizational unit in the following action:
-
-  + **Delete Extension**
-
-### Changed
-
-**Google Chronicle**: Version 66.0
-
-* Updated processing of reference list rows in the following action:
-
-  + **Get Reference Lists**
-
 ---
 ## 2025-10-05
 
 ### Announcement
 
-Release 6.3.63 is being rolled out to the first phase of regions as listed [here](https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+Release 6.3.63 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
 
 This release contains internal and customer bug fixes.
 
@@ -139,14 +222,14 @@ This release contains internal and customer bug fixes.
 
 ### Announcement
 
-[Release 6.3.62](https://cloud.google.com/chronicle/docs/soar/release-notes#September_28_2025) is now available for all regions.
+[Release 6.3.62](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#September_28_2025) is now available for all regions.
 
 ---
 ## 2025-09-28
 
 ### Announcement
 
-Release 6.3.62 is being rolled out to the first phase of regions, as outlined in our [Google SecOps release plan](https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+Release 6.3.62 is being rolled out to the first phase of regions, as outlined in our [Google SecOps release plan](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
 
 This release contains the following changes:
 
@@ -156,7 +239,7 @@ This release contains the following changes:
 
 You can now install a Remote Agent using Podman. This new functionality provides a streamlined deployment workflow—a lightweight alternative to existing installation methods.
 
-For more information, see [Deploy an agent with Podman](https://cloud.google.com/chronicle/docs/soar/working-with-remote-agents/deploy-agent-with-podman).
+For more information, see [Deploy an agent with Podman](https://docs.cloud.google.com/chronicle/docs/soar/working-with-remote-agents/deploy-agent-with-podman).
 
 ### Feature
 
@@ -164,7 +247,7 @@ For more information, see [Deploy an agent with Podman](https://cloud.google.com
 
 You can now install a Remote Agent using Debian. This new functionality provides a streamlined deployment workflow—an alternative to existing installation methods.
 
-For more information, see [Deploy an agent with Debian](https://cloud.google.com/chronicle/docs/soar/working-with-remote-agents/create-agent-with-installer-on-debian).
+For more information, see [Deploy an agent with Debian](https://docs.cloud.google.com/chronicle/docs/soar/working-with-remote-agents/create-agent-with-installer-on-debian).
 
 ### Announcement
 
@@ -187,7 +270,7 @@ The maximum allowed size for a Publisher's Connector Package is now limited to 2
 
 ### Announcement
 
-[Release 6.3.61](https://cloud.google.com/chronicle/docs/soar/release-notes#September_16_2025) is now available for all regions.
+[Release 6.3.61](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#September_16_2025) is now available for all regions.
 
 ---
 ## 2025-09-25

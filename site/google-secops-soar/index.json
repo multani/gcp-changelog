@@ -1,7 +1,105 @@
 {
   "name": "Google SecOps SOAR",
   "entries": {
+    "2025-10-26": [
+      {
+        "kind": "Announcement",
+        "content": "Release 6.3.65 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).\n\nThis release contains the following changes:",
+        "summary": {
+          "title": "New Release Available",
+          "summary": "Release 6.3.65 is now live in initial regions. Check the documentation for details."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Delete high-load environments**\n\nYou can now easily delete environments with heavy loads directly from the platform.",
+        "summary": {
+          "title": "Delete high-load environments",
+          "summary": "Easily delete high-load environments directly from the platform."
+        }
+      }
+    ],
+    "2025-10-25": [
+      {
+        "kind": "Announcement",
+        "content": "[Release 6.3.64](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#October_19_2025) is now available for all regions.",
+        "summary": {
+          "title": "Release 6.3.64 Now Available",
+          "summary": "The latest update, Release 6.3.64, has been successfully deployed and is now accessible across all regions."
+        }
+      }
+    ],
+    "2025-10-22": [
+      {
+        "kind": "Feature",
+        "content": "**SentinelOneV2**: Version 42.0\n\n* The following new actions have been added:\n\n  + **Create Device Control Rule**\n  + **Delete Device Control Rule**\n  + **Update Device Control Rule**",
+        "summary": {
+          "title": "New Device Control Features",
+          "summary": "Version 42.0 of SentinelOne introduces new capabilities for managing device control rules, including options to create, delete, and update them."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**CrowdStrike Falcon**: Version 67.0\n\n* Fixed a bug where the Contains filter would fail to find hosts when the\n  `Max Hosts To Return` limit was applied in the following action:\n\n  + **List Host**",
+        "summary": {
+          "title": "CrowdStrike Falcon 67.0 Update",
+          "summary": "Version 67.0 of CrowdStrike Falcon addresses a bug affecting host searches with the Contains filter when the Max Hosts To Return limit was active. This fix ensures accurate host retrieval in the List Host action."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**CSV**: Version 34.0\n\n* Fixed a bug that caused inconsistent column order for the same JSON input by\n  stabilizing the order based on the keys of the first object in the list in the\n  following action:\n\n  + **Save Json to CSV**",
+        "summary": {
+          "title": "CSV Version 34.0 Update",
+          "summary": "The latest update to CSV (version 34.0) includes a fix for inconsistent column order in the Save JSON to CSV action. The column order will now be stable, based on the keys of the first JSON object."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**DomainTools**: Version 8.0\n\n* Extended capabilities in the following action:\n\n  + **Get Domain Risk**\n* Added support for the domain entity type in the following actions:\n\n  + **Get Domain Profile**\n  + **Get Domain Risk**\n  + **Reverse Domain**",
+        "summary": {
+          "title": "DomainTools 8.0 Update",
+          "summary": "Version 8.0 of DomainTools brings enhanced capabilities to the 'Get Domain Risk' action and adds support for the domain entity type across 'Get Domain Profile', 'Get Domain Risk', and 'Reverse Domain' actions."
+        }
+      }
+    ],
+    "2025-10-19": [
+      {
+        "kind": "Announcement",
+        "content": "Release 6.3.64 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).\n\nThis release contains internal and customer bug fixes.",
+        "summary": {
+          "title": "Release 6.3.64 Now Available",
+          "summary": "The new release 6.3.64 is now being rolled out to initial regions. This update includes important bug fixes for our users."
+        }
+      }
+    ],
+    "2025-10-18": [
+      {
+        "kind": "Announcement",
+        "content": "[Release 6.3.63](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#October_05_2025) is now available for all regions.",
+        "summary": {
+          "title": "Release 6.3.63 Available",
+          "summary": "The latest update, Release 6.3.63, has been successfully deployed and is now accessible across all regions."
+        }
+      }
+    ],
     "2025-10-15": [
+      {
+        "kind": "Changed",
+        "content": "**ThreatQ**: Version 15.0\n\n* Updated the API request payload to align with a change in the ThreatQ API in\n  the following actions:\n\n  + **Enrich IP**\n  + **Enrich URL**\n  + **Enrich Email**\n  + **Enrich Hash**\n  + **Enrich CVE**",
+        "summary": {
+          "title": "ThreatQ v15.0 API Update",
+          "summary": "The API request payload has been updated to match recent changes in the ThreatQ API for Enrich IP, Enrich URL, Enrich Email, Enrich Hash, and Enrich CVE actions."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**UrlScan.io**: Version 26.0\n\n* Added ability to scan domains and IPs in the following action:\n\n  + **URL Check**",
+        "summary": {
+          "title": "UrlScan.io v26.0",
+          "summary": "UrlScan.io has been updated to version 26.0. This new version includes the ability to scan domains and IPs within the URL Check action."
+        }
+      },
       {
         "kind": "Feature",
         "content": "**CrowdStrike Falcon**: Version 66.0\n\n* The following new action has been added:\n\n  + **Get Alert Details**",
@@ -49,41 +147,9 @@
           "title": "Okta 10.0 Release",
           "summary": "Okta has released version 10.0, featuring updates to pagination processing in the List Users, Add Group, Get Group, and List Providers actions."
         }
-      },
-      {
-        "kind": "Changed",
-        "content": "**ThreatQ**: Version 15.0\n\n* Updated the API request payload to align with a change in the ThreatQ API in\n  the following actions:\n\n  + **Enrich IP**\n  + **Enrich URL**\n  + **Enrich Email**\n  + **Enrich Hash**\n  + **Enrich CVE**",
-        "summary": {
-          "title": "ThreatQ v15.0 API Update",
-          "summary": "The API request payload has been updated to match recent changes in the ThreatQ API for Enrich IP, Enrich URL, Enrich Email, Enrich Hash, and Enrich CVE actions."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "**UrlScan.io**: Version 26.0\n\n* Added ability to scan domains and IPs in the following action:\n\n  + **URL Check**",
-        "summary": {
-          "title": "UrlScan.io v26.0",
-          "summary": "UrlScan.io has been updated to version 26.0. This new version includes the ability to scan domains and IPs within the URL Check action."
-        }
       }
     ],
     "2025-10-09": [
-      {
-        "kind": "Changed",
-        "content": "**Google Threat Intelligence**: Version 5.0\n\n* Added ability to filter by issue name in the following connector:\n\n  + **Google Threat Intelligence - ASM Issues Connector**\n* Added ability to filter events in the following connector:\n\n  + **Google Threat Intelligence - DTM Alerts Connector**",
-        "summary": {
-          "title": "Google Threat Intelligence Update",
-          "summary": "Version 5.0 of Google Threat Intelligence now includes filtering by issue name in the ASM Issues Connector and event filtering in the DTM Alerts Connector."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "**Microsoft Teams**: Version 29.0\n\n* Refactored action logic in the following actions:\n\n  + **Get Authorization**\n  + **Generate Token**",
-        "summary": {
-          "title": "Microsoft Teams Update",
-          "summary": "The Microsoft Teams app has been updated to version 29.0. This update includes refactoring of the action logic for 'Get Authorization' and 'Generate Token' actions."
-        }
-      },
       {
         "kind": "Changed",
         "content": "**Google Workspace**: Version 22.0\n\n* Updated the action description to reflect that the action deletes the\n  extension from the blocklist rather than deleting the extension from the\n  organizational unit in the following action:\n\n  + **Delete Extension**",
@@ -99,22 +165,38 @@
           "title": "Google Chronicle Update",
           "summary": "Version 66.0 of Google Chronicle has been released. This update includes changes to how reference lists are processed in the Get Reference Lists action."
         }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Google Threat Intelligence**: Version 5.0\n\n* Added ability to filter by issue name in the following connector:\n\n  + **Google Threat Intelligence - ASM Issues Connector**\n* Added ability to filter events in the following connector:\n\n  + **Google Threat Intelligence - DTM Alerts Connector**",
+        "summary": {
+          "title": "Google Threat Intelligence Update",
+          "summary": "Version 5.0 of Google Threat Intelligence now includes filtering by issue name in the ASM Issues Connector and event filtering in the DTM Alerts Connector."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Microsoft Teams**: Version 29.0\n\n* Refactored action logic in the following actions:\n\n  + **Get Authorization**\n  + **Generate Token**",
+        "summary": {
+          "title": "Microsoft Teams Update",
+          "summary": "The Microsoft Teams app has been updated to version 29.0. This update includes refactoring of the action logic for 'Get Authorization' and 'Generate Token' actions."
+        }
       }
     ],
     "2025-10-05": [
       {
         "kind": "Announcement",
-        "content": "Release 6.3.63 is being rolled out to the first phase of regions as listed [here](https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).\n\nThis release contains internal and customer bug fixes.",
+        "content": "Release 6.3.63 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).\n\nThis release contains internal and customer bug fixes.",
         "summary": {
           "title": "Release 6.3.63 Rollout",
-          "summary": "The new release 6.3.63 is now available in initial regions. This update includes various bug fixes for both internal systems and customers."
+          "summary": "Release 6.3.63 is now available in initial regions. This update includes important bug fixes for our users."
         }
       }
     ],
     "2025-10-04": [
       {
         "kind": "Announcement",
-        "content": "[Release 6.3.62](https://cloud.google.com/chronicle/docs/soar/release-notes#September_28_2025) is now available for all regions.",
+        "content": "[Release 6.3.62](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#September_28_2025) is now available for all regions.",
         "summary": {
           "title": "Release 6.3.62 Available",
           "summary": "The latest update, Release 6.3.62, has been successfully deployed and is now accessible across all regions."
@@ -124,26 +206,26 @@
     "2025-09-28": [
       {
         "kind": "Announcement",
-        "content": "Release 6.3.62 is being rolled out to the first phase of regions, as outlined in our [Google SecOps release plan](https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).\n\nThis release contains the following changes:",
+        "content": "Release 6.3.62 is being rolled out to the first phase of regions, as outlined in our [Google SecOps release plan](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).\n\nThis release contains the following changes:",
         "summary": {
           "title": "Release 6.3.62 Rollout",
-          "summary": "Release 6.3.62 is now live in initial regions, following the Google SecOps release plan."
+          "summary": "Release 6.3.62 is now available in initial regions, following the established release plan. This update includes several important changes."
         }
       },
       {
         "kind": "Feature",
-        "content": "**Podman support for Remote Agents**\n\nYou can now install a Remote Agent using Podman. This new functionality provides a streamlined deployment workflow—a lightweight alternative to existing installation methods.\n\nFor more information, see [Deploy an agent with Podman](https://cloud.google.com/chronicle/docs/soar/working-with-remote-agents/deploy-agent-with-podman).",
+        "content": "**Podman support for Remote Agents**\n\nYou can now install a Remote Agent using Podman. This new functionality provides a streamlined deployment workflow—a lightweight alternative to existing installation methods.\n\nFor more information, see [Deploy an agent with Podman](https://docs.cloud.google.com/chronicle/docs/soar/working-with-remote-agents/deploy-agent-with-podman).",
         "summary": {
-          "title": "Podman Support for Remote Agents",
-          "summary": "A new feature allows remote agents to be installed using Podman, offering a streamlined and lightweight deployment alternative."
+          "title": "Podman support for Remote Agents",
+          "summary": "Install a Remote Agent using Podman for a streamlined, lightweight deployment."
         }
       },
       {
         "kind": "Feature",
-        "content": "**Deploy an agent with Debian**\n\nYou can now install a Remote Agent using Debian. This new functionality provides a streamlined deployment workflow—an alternative to existing installation methods.\n\nFor more information, see [Deploy an agent with Debian](https://cloud.google.com/chronicle/docs/soar/working-with-remote-agents/create-agent-with-installer-on-debian).",
+        "content": "**Deploy an agent with Debian**\n\nYou can now install a Remote Agent using Debian. This new functionality provides a streamlined deployment workflow—an alternative to existing installation methods.\n\nFor more information, see [Deploy an agent with Debian](https://docs.cloud.google.com/chronicle/docs/soar/working-with-remote-agents/create-agent-with-installer-on-debian).",
         "summary": {
           "title": "Agent Deployment on Debian",
-          "summary": "A new feature allows deploying a Remote Agent using Debian, offering a streamlined alternative to current installation methods."
+          "summary": "A new feature allows for streamlined agent deployment using Debian."
         }
       },
       {
@@ -174,10 +256,10 @@
     "2025-09-27": [
       {
         "kind": "Announcement",
-        "content": "[Release 6.3.61](https://cloud.google.com/chronicle/docs/soar/release-notes#September_16_2025) is now available for all regions.",
+        "content": "[Release 6.3.61](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#September_16_2025) is now available for all regions.",
         "summary": {
-          "title": "Release 6.3.61 Now Available",
-          "summary": "The latest release, version 6.3.61, has been made available for all regions."
+          "title": "Release 6.3.61 Available",
+          "summary": "The latest release, version 6.3.61, is now available for all regions. This update includes important changes and improvements."
         }
       }
     ],

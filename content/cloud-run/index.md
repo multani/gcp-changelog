@@ -1,10 +1,29 @@
 # Cloud Run
 
+## 2025-10-21
+
+### Feature
+
+Support for [configuring GPU](https://docs.cloud.google.com/run/docs/configuring/jobs/gpu)
+for your Cloud Run job is in General Availability (GA).
+
+### Feature
+
+[Direct VPC egress](https://docs.cloud.google.com/run/docs/configuring/vpc-direct-vpc) now supports [Private NAT](https://docs.cloud.google.com/nat/docs/private-nat) (GA).
+
+---
+## 2025-10-20
+
+### Feature
+
+Direct VPC egress now supports [VPC Flow Logs](https://docs.cloud.google.com/vpc/docs/about-flow-logs-records) (Preview).
+
+---
 ## 2025-10-06
 
 ### Feature
 
-Support for [applying maximum instance configuration](https://cloud.google.com/run/docs/configuring/max-instances#service-vs-revision-level) at the service level is in General Availability (GA).
+Support for [applying maximum instance configuration](https://docs.cloud.google.com/run/docs/configuring/max-instances#service-vs-revision-level) at the service level is in General Availability (GA).
 
 ---
 ## 2025-09-24

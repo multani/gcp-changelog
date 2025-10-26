@@ -10,7 +10,7 @@ You can renew or add additional capacity of VMware Engine nodes with VCF-license
 
 For any questions, please reach out to your Google Cloud sales team, who can help review your specific scenarios, discuss the implications of these changes for your organization, and help you manage this transition.
 
-For more details, see the [October 3, 2025](https://cloud.google.com/vmware-engine/docs/service-announcements#2025-10-03) service announcement.
+For more details, see the [October 3, 2025](https://docs.cloud.google.com/vmware-engine/docs/service-announcements#2025-10-03) service announcement.
 
 ---
 ## 2025-09-26

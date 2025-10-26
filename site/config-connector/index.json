@@ -53,6 +53,14 @@
     ],
     "2025-10-07": [
       {
+        "kind": "Fixed",
+        "content": "Bug Fixes:\n\n* Added support for checking `etag` in spec for alpha resources.\n* Fixed an issue where `CloudIdentityMembership` roles comparison would fail.\n* Fixed a bug where the wrong GVK was reported in IAM controller.\n* Fixed a bug where errors were swallowed when reading a Secret.\n* Fixed an issue with LRO endTime in mockgcp.\n* Fixed a bug in the `etag` mapper.\n* Fixed a bug in the mapper generator for slice and single object map.\n* Fixed a bug in the mapper generator for OneOf if the input is not proto.Message.\n* Fixed an import for refs in the same package in `controllerbuilder`.",
+        "summary": {
+          "title": "Bug Fixes",
+          "summary": "Multiple bugs have been fixed, including issues with etag checking, role comparison, GVK reporting, secret handling, LRO endTime, and mapper generators. Support for checking etag in spec for alpha resources has also been added."
+        }
+      },
+      {
         "kind": "Announcement",
         "content": "Config Connector version 1.136.1 is now available.",
         "summary": {
@@ -62,18 +70,18 @@
       },
       {
         "kind": "Changed",
-        "content": "New Beta Resources (Direct Reconciler):\n\n* [`AssetFeed`](https://cloud.google.com/config-connector/docs/reference/resource-docs/asset/assetfeed)\n* [`BigQueryReservationAssignment`](https://cloud.google.com/config-connector/docs/reference/resource-docs/bigqueryreservation/bigqueryreservationassignment)\n* [`CloudDeployDeliveryPipeline`](https://cloud.google.com/config-connector/docs/reference/resource-docs/clouddeploy/clouddeploydeliverypipeline)\n* [`ComposerEnvironment`](https://cloud.google.com/config-connector/docs/reference/resource-docs/composer/composerenvironment)",
+        "content": "New Beta Resources (Direct Reconciler):\n\n* [`AssetFeed`](https://docs.cloud.google.com/config-connector/docs/reference/resource-docs/asset/assetfeed)\n* [`BigQueryReservationAssignment`](https://docs.cloud.google.com/config-connector/docs/reference/resource-docs/bigqueryreservation/bigqueryreservationassignment)\n* [`CloudDeployDeliveryPipeline`](https://docs.cloud.google.com/config-connector/docs/reference/resource-docs/clouddeploy/clouddeploydeliverypipeline)\n* [`ComposerEnvironment`](https://docs.cloud.google.com/config-connector/docs/reference/resource-docs/composer/composerenvironment)",
         "summary": {
           "title": "New Beta Resources",
-          "summary": "New beta resources are available for direct reconciler, including AssetFeed, BigQueryReservationAssignment, CloudDeployDeliveryPipeline, and ComposerEnvironment."
+          "summary": "We are introducing new beta resources for direct reconciler, including AssetFeed, BigQueryReservationAssignment, CloudDeployDeliveryPipeline, and ComposerEnvironment."
         }
       },
       {
         "kind": "Feature",
-        "content": "New Fields:\n\n* [`ComposerEnvironment`](https://cloud.google.com/config-connector/docs/reference/resource-docs/composer/composerenvironment)\n  + Added `spec.storageConfig` field.\n  + Added `spec.config.workloadsConfig.dagProcessor` field.\n  + Added `spec.config.workloadsConfig.triggerer` field.\n  + Added `spec.config.softwareConfig.webServerPluginsMode` field.\n  + Added `spec.config.softwareConfig.cloudDataLineageIntegration` field.",
+        "content": "New Fields:\n\n* [`ComposerEnvironment`](https://docs.cloud.google.com/config-connector/docs/reference/resource-docs/composer/composerenvironment)\n  + Added `spec.storageConfig` field.\n  + Added `spec.config.workloadsConfig.dagProcessor` field.\n  + Added `spec.config.workloadsConfig.triggerer` field.\n  + Added `spec.config.softwareConfig.webServerPluginsMode` field.\n  + Added `spec.config.softwareConfig.cloudDataLineageIntegration` field.",
         "summary": {
           "title": "New Fields for Composer Environment",
-          "summary": "The Composer Environment resource has been updated with new fields including `spec.storageConfig`, `spec.config.workloadsConfig.dagProcessor`, `spec.config.workloadsConfig.triggerer`, `spec.config.softwareConfig.webServerPluginsMode`, and `spec.config.softwareConfig.cloudDataLineageIntegration`."
+          "summary": "The Composer Environment resource has been updated with new fields including spec.storageConfig, spec.config.workloadsConfig.dagProcessor, spec.config.workloadsConfig.triggerer, spec.config.softwareConfig.webServerPluginsMode, and spec.config.softwareConfig.cloudDataLineageIntegration."
         }
       },
       {
@@ -82,14 +90,6 @@
         "summary": {
           "title": "Stateful Reconciliation Introduced",
           "summary": "Stateful reconciliation is now available for direct controllers, storing a hash of the last applied spec for GitOps safety."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "Bug Fixes:\n\n* Added support for checking `etag` in spec for alpha resources.\n* Fixed an issue where `CloudIdentityMembership` roles comparison would fail.\n* Fixed a bug where the wrong GVK was reported in IAM controller.\n* Fixed a bug where errors were swallowed when reading a Secret.\n* Fixed an issue with LRO endTime in mockgcp.\n* Fixed a bug in the `etag` mapper.\n* Fixed a bug in the mapper generator for slice and single object map.\n* Fixed a bug in the mapper generator for OneOf if the input is not proto.Message.\n* Fixed an import for refs in the same package in `controllerbuilder`.",
-        "summary": {
-          "title": "Bug Fixes",
-          "summary": "Multiple bugs have been fixed, including issues with etag checking, role comparison, GVK reporting, secret handling, LRO endTime, and mapper generators. Support for checking etag in spec for alpha resources has also been added."
         }
       }
     ],

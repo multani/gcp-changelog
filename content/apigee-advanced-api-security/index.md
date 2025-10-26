@@ -18,7 +18,7 @@ The new functionality includes the ability to create and manage multiple "exclus
 
 **Note:** Exclusion lists are not available for VPC-SC customers at this time.
 
-For usage information, see [Exclude traffic from abuse detection](https://cloud.google.com/apigee/docs/api-security/abuse-detection#exclude-traffic-from-abuse-detection) in the documentation.
+For usage information, see [Exclude traffic from abuse detection](https://docs.cloud.google.com/apigee/docs/api-security/abuse-detection#exclude-traffic-from-abuse-detection) in the documentation.
 
 ---
 ## 2025-09-19

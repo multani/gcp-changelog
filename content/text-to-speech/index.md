@@ -1,5 +1,19 @@
 # Text-to-Speech
 
+## 2025-10-21
+
+### Changed
+
+Chirp 3: instant custom voice now supports voice cloning key generation in the `eu` and `us` regions. For more information, see the [Chirp 3: instant custom voice](https://docs.cloud.google.com/text-to-speech/docs/chirp3-instant-custom-voice#use_chirp_3_hd_voice_controls) page.
+
+---
+## 2025-10-17
+
+### Feature
+
+Chirp 3 HD now supports speech synthesis using SSML input. Supported SSML tags are: `<phoneme>`, `<p>`, `<s>`, `<sub>`, and `<say-as>`. For more information, see [Chirp 3 HD: SSML support](https://cloud.google.com/text-to-speech/docs/chirp3-hd#chirp3-hd-ssml).
+
+---
 ## 2025-09-30
 
 ### Announcement

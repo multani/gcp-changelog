@@ -1,5 +1,59 @@
 # Container Optimized OS
 
+## 2025-10-17
+
+### Changed
+
+
+
+### cos-125-19216-0-94
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.46](https://cos.googlesource.com/third_party/kernel/+/50e2212a52072ff4b0d0c40457be44291865fa70 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19216.0.94/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Updated the dump capture kernel to v6.12.52.
+
+### Fixed
+
+Added task information collection to sosreports.
+
+### Fixed
+
+Updated golang.org/x/crypto, golang.org/x/net, and
+golang.org/x/oauth2 in kubelet and kubectl.
+
+### Security
+
+Fixed CVE-2025-41244 in app-emulation/open-vm-tools.
+
+### Security
+
+Fixed KCTF-6bb73db in the Linux Kernel.
+
+### Security
+
+Fixed CVE-2025-39963 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39965 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39961 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811514 -> 811534
+* Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 188034 250715 376068
+
+---
 ## 2025-10-13
 
 ### cos-dev-129-19319-0-0

@@ -1,5 +1,13 @@
 # Cloud NAT
 
+## 2025-10-21
+
+### Feature
+
+Private NAT supports Cloud Run in **General Availability**. For more
+information, see [Supported resources](https://docs.cloud.google.com/nat/docs/overview#supported-resources).
+
+---
 ## 2025-09-23
 
 ### Feature

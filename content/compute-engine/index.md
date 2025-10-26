@@ -1,5 +1,88 @@
 # Compute Engine
 
+## 2025-10-21
+
+### Fixed
+
+Version `20251009.01` of the guest agent, announced in the [October 20, 2025 release notes](https://docs.cloud.google.com/compute/docs/images/guest-environment/release-notes#October_20_2025), has been rolled back. This version introduced the plugin-based architecture to Windows but contained a bug in the [WSFC module](https://docs.cloud.google.com/compute/docs/images/guest-agent-functions#windows-failover).
+To resolve this issue, guest agent version `20251011.00` is now available for Windows, which excludes the new plugin-based architecture.
+
+### Feature
+
+**Generally available**: You can use future reservations to request to reserve
+capacity starting on a specific date up to one year in the future. For more
+information, see
+[About future reservation requests](https://docs.cloud.google.com/ai-hypercomputer/docs/reserve-capacity).
+
+### Changed
+
+The kernel `dist-tag` that supports the Rocky Linux Optimized and Accelerator images on Compute Engine is being updated from `elX_ycld_next` to `elX_y_ciq` as part of the consolidation of CIQ's kernel trees. There are no changes to Secure Boot or GPG signing keys.
+
+For example, `6.12.0-55.32.1.el10_0cld_next.2.1` to `6.12.0-55.39.1.el10_0_ciq.2.1`, where the `cld_next` tag is swapped with `ciq`.
+
+This change affects the Rocky Linux 8, 9, and 10 optimized and accelerator images in an upcoming kernel update over the next month. The major version 8 and 9 kernels now include FIPS 140-3 patches as part of CIQ's ongoing FIPS 140-3 validation efforts for Rocky Linux. These patches have no effect if FIPS mode is not enabled. There are no code changes to the major version 10 kernel.
+
+The kernel source tree is available at CIQ's [kernel-src-tree](https://github.com/ctrliq/kernel-src-tree) GitHub repository.
+
+---
+## 2025-10-20
+
+### Feature
+
+Version `20251009.01` of the guest agent, which introduces the plugin-based
+architecture to Windows, is now available.
+
+For more information about the plugin-based architecture, see
+[Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).
+
+### Security
+
+A vulnerability affecting AMD Zen 5 processors (Turin) was discovered and is
+being addressed. For more information, see the
+[GCP-2025-058 security bulletin](https://docs.cloud.google.com/compute/docs/security-bulletins#gcp-2025-058).
+
+### Feature
+
+**Generally Available**: The G4
+[accelerator-optimized machine series](https://docs.cloud.google.com/compute/docs/accelerator-optimized-machines#g4-series)
+is designed for graphics-intensive workloads such as NVIDIA Omniverse simulations,
+video transcoding, and virtual desktops. The G4 machine series also provides a
+cost-effective solution for single-host inference and model tuning.
+The G4 machine series is now available in the following regions and zones:
+
+* APAC
+  + Jurong West, Singapore: `asia-southeast1-b`
+* Europe:
+  + Eemshaven, Netherlands: `europe-west4-a`
+* North America
+  + Council Bluffs, Iowa: `us-central1-b`
+  + Ashburn, Virginia: `us-east4-c`
+  + Columbus, Ohio: `us-east5-c`
+
+To get started with G4 machine types, see
+[Create a G2 or G4 instance](https://docs.cloud.google.com/compute/docs/gpus/create-gpu-vm-g-series).
+
+---
+## 2025-10-18
+
+### Feature
+
+**Generally Available**: You can now access the Compute Engine alpha API at the
+project level through a self-service process. By enabling the alpha API, you can
+use the Google Cloud console, Google Cloud CLI, API, and Terraform to view and manage
+Preview features. For more information, see [Use the Compute Engine alpha API](https://docs.cloud.google.com/compute/docs/reference/rest/alpha).
+
+---
+## 2025-10-17
+
+### Feature
+
+**Generally Available**: You can now access the Compute Engine alpha API at the
+project level through a self-service process. By enabling the alpha API, you can
+use the Google Cloud console, Google Cloud CLI, API, and Terraform to view and manage
+Preview features. For more information, see [Use the Compute Engine alpha API](https://docs.cloud.google.com/compute/docs/reference/rest/alpha).
+
+---
 ## 2025-10-16
 
 ### Changed
@@ -25,7 +108,7 @@ which provides access to proprietary GPU drivers for the cloud-optimized kernel.
 This update is applied to images created on or after September 12, 2025.
 
 For more information about Rocky Linux OS images, see [Rocky
-Linux](https://cloud.google.com/compute/docs/images/os-details#rocky_linux) on
+Linux](https://docs.cloud.google.com/compute/docs/images/os-details#rocky_linux) on
 the operating system details page.
 
 ---

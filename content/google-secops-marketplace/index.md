@@ -1,6 +1,72 @@
 # Google SecOps Marketplace
 
+## 2025-10-22
+
+### Feature
+
+**SentinelOneV2**: Version 42.0
+
+* The following new actions have been added:
+
+  + **Create Device Control Rule**
+  + **Delete Device Control Rule**
+  + **Update Device Control Rule**
+
+### Changed
+
+**CrowdStrike Falcon**: Version 67.0
+
+* Fixed a bug where the Contains filter would fail to find hosts when the
+  `Max Hosts To Return` limit was applied in the following action:
+
+  + **List Host**
+
+### Changed
+
+**CSV**: Version 34.0
+
+* Fixed a bug that caused inconsistent column order for the same JSON input by
+  stabilizing the order based on the keys of the first object in the list in the
+  following action:
+
+  + **Save Json to CSV**
+
+### Changed
+
+**DomainTools**: Version 8.0
+
+* Extended capabilities in the following action:
+
+  + **Get Domain Risk**
+* Added support for the domain entity type in the following actions:
+
+  + **Get Domain Profile**
+  + **Get Domain Risk**
+  + **Reverse Domain**
+
+---
 ## 2025-10-15
+
+### Changed
+
+**ThreatQ**: Version 15.0
+
+* Updated the API request payload to align with a change in the ThreatQ API in
+  the following actions:
+
+  + **Enrich IP**
+  + **Enrich URL**
+  + **Enrich Email**
+  + **Enrich Hash**
+  + **Enrich CVE**
+
+### Changed
+
+**UrlScan.io**: Version 26.0
+
+* Added ability to scan domains and IPs in the following action:
+
+  + **URL Check**
 
 ### Feature
 
@@ -63,29 +129,26 @@ Updated dependencies in the following integrations:
   + **Get Group**
   + **List Providers**
 
-### Changed
-
-**ThreatQ**: Version 15.0
-
-* Updated the API request payload to align with a change in the ThreatQ API in
-  the following actions:
-
-  + **Enrich IP**
-  + **Enrich URL**
-  + **Enrich Email**
-  + **Enrich Hash**
-  + **Enrich CVE**
-
-### Changed
-
-**UrlScan.io**: Version 26.0
-
-* Added ability to scan domains and IPs in the following action:
-
-  + **URL Check**
-
 ---
 ## 2025-10-09
+
+### Changed
+
+**Google Workspace**: Version 22.0
+
+* Updated the action description to reflect that the action deletes the
+  extension from the blocklist rather than deleting the extension from the
+  organizational unit in the following action:
+
+  + **Delete Extension**
+
+### Changed
+
+**Google Chronicle**: Version 66.0
+
+* Updated processing of reference list rows in the following action:
+
+  + **Get Reference Lists**
 
 ### Changed
 
@@ -106,24 +169,6 @@ Updated dependencies in the following integrations:
 
   + **Get Authorization**
   + **Generate Token**
-
-### Changed
-
-**Google Workspace**: Version 22.0
-
-* Updated the action description to reflect that the action deletes the
-  extension from the blocklist rather than deleting the extension from the
-  organizational unit in the following action:
-
-  + **Delete Extension**
-
-### Changed
-
-**Google Chronicle**: Version 66.0
-
-* Updated processing of reference list rows in the following action:
-
-  + **Get Reference Lists**
 
 ---
 ## 2025-09-25

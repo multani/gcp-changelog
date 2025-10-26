@@ -2,9 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Virtual Private Cloud</title>
   <subtitle>Changelog for Google Cloud product: Virtual Private Cloud</subtitle>
-  <updated>2025-10-15T00:00:00+00:00</updated>
+  <updated>2025-10-24T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:virtual-private-cloud</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/virtual-private-cloud/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:virtual-private-cloud:2025-10-24:feature:0</id>
+    <published>2025-10-24T00:00:00+00:00</published>
+    <updated>2025-10-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can view IP address utilization when you
+<a href="https://cloud.google.com/vpc/docs/create-modify-vpc-networks#listing_existing_subnets">list</a>
+or
+<a href="https://cloud.google.com/vpc/docs/create-modify-vpc-networks#describing_an_existing_subnet">describe</a>
+subnets. IP address utilization displays the number of free
+and allocated IP addresses in a subnet. This feature is available in
+<strong>General Availability</strong>.</p>]]></content>
+    <summary>You can now view IP address utilization, which shows the number of free and allocated IP addresses, when you list or describe subnets. This feature is available in General Availability.</summary>
+    <title>Feature: IP Address Utilization Viewable for Subnets</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:virtual-private-cloud:2025-10-20:feature:0</id>
+    <published>2025-10-20T00:00:00+00:00</published>
+    <updated>2025-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>VPC Flow Logs supports logging for Cloud Run resources that are configured with
+<a href="https://docs.cloud.google.com/run/docs/configuring/vpc-direct-vpc">Direct VPC egress</a>. This feature is
+available in <strong>General Availability</strong>.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/vpc/docs/about-traffic-flows#serverless-flows">Serverless flows</a> and
+<a href="https://docs.cloud.google.com/vpc/docs/about-flow-logs-records#serverless-details">ServerlessDetails field format</a>.</p>]]></content>
+    <summary>You can now use VPC Flow Logs with Cloud Run resources when using Direct VPC egress. This feature, now in General Availability, provides valuable insights into your network traffic. For more details, refer to the documentation on serverless flows and the ServerlessDetails field format.</summary>
+    <title>Feature: VPC Flow Logs Now Available for Cloud Run with Direct VPC Egress</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -13,9 +46,9 @@
     <published>2025-10-15T00:00:00+00:00</published>
     <updated>2025-10-15T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Private Service Connect health is available in <strong>Preview</strong>.</p>
-<p>Private Service Connect health lets service producers define health states to support automatic cross-region failover for consumers that use Private Service Connect backends. For more information, see <a href="https://cloud.google.com/vpc/docs/about-private-service-connect-health">About Private Service Connect health for automatic cross-region failover</a>.</p>]]></content>
-    <summary>Private Service Connect health is now available in Preview. This feature allows service producers to define health states, enabling automatic cross-region failover for Private Service Connect consumers.</summary>
-    <title>Feature: Private Service Connect health in Preview</title>
+<p>Private Service Connect health lets service producers define health states to support automatic cross-region failover for consumers that use Private Service Connect backends. For more information, see <a href="https://docs.cloud.google.com/vpc/docs/about-private-service-connect-health">About Private Service Connect health for automatic cross-region failover</a>.</p>]]></content>
+    <summary>Google Cloud's Private Service Connect health feature is now available in Preview. This feature allows service producers to define health states, enabling automatic cross-region failover for consumers using Private Service Connect backends.</summary>
+    <title>Feature: Private Service Connect health now in Preview</title>
   </entry>
   <entry>
     <author>
@@ -26,11 +59,11 @@
     <updated>2025-09-26T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The following features of VPC Flow Logs are available in <strong>General Availability</strong>:</p>
 <ul>
-<li>Logging for <a href="https://cloud.google.com/vpc/docs/rdma-network-profiles#overview">RDMA over Falcon transport</a></li>
+<li>Logging for <a href="https://docs.cloud.google.com/vpc/docs/rdma-network-profiles#overview">RDMA over Falcon transport</a></li>
 <li>Enhanced round-trip time precision for TCP and Falcon traffic</li>
 </ul>
-<p>For more information, see <a href="https://cloud.google.com/vpc/docs/about-flow-logs-records#record_format">About VPC Flow Logs records</a>.</p>]]></content>
-    <summary>VPC Flow Logs have reached General Availability, now supporting RDMA over Falcon transport and offering enhanced round-trip time precision for TCP and Falcon traffic.</summary>
+<p>For more information, see <a href="https://docs.cloud.google.com/vpc/docs/about-flow-logs-records#record_format">About VPC Flow Logs records</a>.</p>]]></content>
+    <summary>VPC Flow Logs are now in General Availability, including logging for RDMA over Falcon transport and enhanced round-trip time precision for TCP and Falcon traffic.</summary>
     <title>Feature: VPC Flow Logs Now Generally Available</title>
   </entry>
   <entry>

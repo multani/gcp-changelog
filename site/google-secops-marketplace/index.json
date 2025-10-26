@@ -1,7 +1,57 @@
 {
   "name": "Google SecOps Marketplace",
   "entries": {
+    "2025-10-22": [
+      {
+        "kind": "Feature",
+        "content": "**SentinelOneV2**: Version 42.0\n\n* The following new actions have been added:\n\n  + **Create Device Control Rule**\n  + **Delete Device Control Rule**\n  + **Update Device Control Rule**",
+        "summary": {
+          "title": "New Device Control Features in SentinelOneV2",
+          "summary": "SentinelOneV2 version 42.0 introduces new capabilities for managing device control. Users can now create, delete, and update device control rules directly."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**CrowdStrike Falcon**: Version 67.0\n\n* Fixed a bug where the Contains filter would fail to find hosts when the\n  `Max Hosts To Return` limit was applied in the following action:\n\n  + **List Host**",
+        "summary": {
+          "title": "CrowdStrike Falcon v67.0 Update",
+          "summary": "Version 67.0 of CrowdStrike Falcon has been released. This update includes a fix for the Contains filter bug when the Max Hosts To Return limit is applied to the List Host action."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**CSV**: Version 34.0\n\n* Fixed a bug that caused inconsistent column order for the same JSON input by\n  stabilizing the order based on the keys of the first object in the list in the\n  following action:\n\n  + **Save Json to CSV**",
+        "summary": {
+          "title": "CSV Version 34.0",
+          "summary": "The latest update for CSV, version 34.0, resolves an issue with inconsistent column order in JSON to CSV conversions. The column order is now stabilized based on the keys of the first JSON object."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**DomainTools**: Version 8.0\n\n* Extended capabilities in the following action:\n\n  + **Get Domain Risk**\n* Added support for the domain entity type in the following actions:\n\n  + **Get Domain Profile**\n  + **Get Domain Risk**\n  + **Reverse Domain**",
+        "summary": {
+          "title": "DomainTools 8.0",
+          "summary": "DomainTools 8.0 has been released with extended capabilities for Get Domain Risk and added support for the domain entity type in Get Domain Profile, Get Domain Risk, and Reverse Domain actions."
+        }
+      }
+    ],
     "2025-10-15": [
+      {
+        "kind": "Changed",
+        "content": "**ThreatQ**: Version 15.0\n\n* Updated the API request payload to align with a change in the ThreatQ API in\n  the following actions:\n\n  + **Enrich IP**\n  + **Enrich URL**\n  + **Enrich Email**\n  + **Enrich Hash**\n  + **Enrich CVE**",
+        "summary": {
+          "title": "ThreatQ v15.0 Update",
+          "summary": "The API request payload has been updated for several actions, including Enrich IP, URL, Email, Hash, and CVE, to align with recent changes in the ThreatQ API."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**UrlScan.io**: Version 26.0\n\n* Added ability to scan domains and IPs in the following action:\n\n  + **URL Check**",
+        "summary": {
+          "title": "UrlScan.io - Version 26.0",
+          "summary": "UrlScan.io has been updated to version 26.0. This update adds the functionality to scan domains and IPs within the URL Check action."
+        }
+      },
       {
         "kind": "Feature",
         "content": "**CrowdStrike Falcon**: Version 66.0\n\n* The following new action has been added:\n\n  + **Get Alert Details**",
@@ -49,41 +99,9 @@
           "title": "Okta 10.0 Release",
           "summary": "Okta version 10.0 has been released, featuring updates to the pagination processing for List Users, Add Group, Get Group, and List Providers actions."
         }
-      },
-      {
-        "kind": "Changed",
-        "content": "**ThreatQ**: Version 15.0\n\n* Updated the API request payload to align with a change in the ThreatQ API in\n  the following actions:\n\n  + **Enrich IP**\n  + **Enrich URL**\n  + **Enrich Email**\n  + **Enrich Hash**\n  + **Enrich CVE**",
-        "summary": {
-          "title": "ThreatQ v15.0 Update",
-          "summary": "The API request payload has been updated for several actions, including Enrich IP, URL, Email, Hash, and CVE, to align with recent changes in the ThreatQ API."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "**UrlScan.io**: Version 26.0\n\n* Added ability to scan domains and IPs in the following action:\n\n  + **URL Check**",
-        "summary": {
-          "title": "UrlScan.io - Version 26.0",
-          "summary": "UrlScan.io has been updated to version 26.0. This update adds the functionality to scan domains and IPs within the URL Check action."
-        }
       }
     ],
     "2025-10-09": [
-      {
-        "kind": "Changed",
-        "content": "**Google Threat Intelligence**: Version 5.0\n\n* Added ability to filter by issue name in the following connector:\n\n  + **Google Threat Intelligence - ASM Issues Connector**\n* Added ability to filter events in the following connector:\n\n  + **Google Threat Intelligence - DTM Alerts Connector**",
-        "summary": {
-          "title": "Google Threat Intelligence Update",
-          "summary": "New filtering options available for ASM Issues and DTM Alerts connectors."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "**Microsoft Teams**: Version 29.0\n\n* Refactored action logic in the following actions:\n\n  + **Get Authorization**\n  + **Generate Token**",
-        "summary": {
-          "title": "Microsoft Teams Update",
-          "summary": "Microsoft Teams has been updated to version 29.0. This update includes refactored action logic for the Get Authorization and Generate Token actions."
-        }
-      },
       {
         "kind": "Changed",
         "content": "**Google Workspace**: Version 22.0\n\n* Updated the action description to reflect that the action deletes the\n  extension from the blocklist rather than deleting the extension from the\n  organizational unit in the following action:\n\n  + **Delete Extension**",
@@ -98,6 +116,22 @@
         "summary": {
           "title": "Google Chronicle Update",
           "summary": "Version 66.0 of Google Chronicle has been released. This update includes changes to how reference list rows are processed in the Get Reference Lists action."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Google Threat Intelligence**: Version 5.0\n\n* Added ability to filter by issue name in the following connector:\n\n  + **Google Threat Intelligence - ASM Issues Connector**\n* Added ability to filter events in the following connector:\n\n  + **Google Threat Intelligence - DTM Alerts Connector**",
+        "summary": {
+          "title": "Google Threat Intelligence Update",
+          "summary": "New filtering options available for ASM Issues and DTM Alerts connectors."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Microsoft Teams**: Version 29.0\n\n* Refactored action logic in the following actions:\n\n  + **Get Authorization**\n  + **Generate Token**",
+        "summary": {
+          "title": "Microsoft Teams Update",
+          "summary": "Microsoft Teams has been updated to version 29.0. This update includes refactored action logic for the Get Authorization and Generate Token actions."
         }
       }
     ],

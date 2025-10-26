@@ -9,7 +9,7 @@ can now configure the mirrored backend service to receive only a percentage of t
 requests by using the `mirrorPercent` flag to specify the percentage of
 requests to be mirrored, expressed as a value between 0 and 100.0.
 
-For an example, see [Set up traffic management for regional external Application Load Balancers](https://cloud.google.com/load-balancing/docs/https/setting-up-reg-traffic-mgmt#mirror_traffic).
+For an example, see [Set up traffic management for regional external Application Load Balancers](https://docs.cloud.google.com/load-balancing/docs/https/setting-up-reg-traffic-mgmt#mirror_traffic).
 
 This feature is available in **General availability**.
 

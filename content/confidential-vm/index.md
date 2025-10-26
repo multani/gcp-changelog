@@ -1,5 +1,14 @@
 # Confidential VM
 
+## 2025-10-20
+
+### Security
+
+A vulnerability affecting AMD Zen 5 processors (Turin) was discovered and is
+being addressed. For more information, see the
+[GCP-2025-058 security bulletin](https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/security-bulletins#gcp-2025-058).
+
+---
 ## 2025-07-31
 
 ### Feature

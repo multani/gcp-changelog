@@ -12,48 +12,48 @@
       },
       {
         "kind": "Fixed",
-        "content": "| Bug ID | Description |\n| --- | --- |\n| **442501403** | **Fixed an issue that caused incorrect target latency metrics in Apigee Analytics when a TargetEndpoint is configured with a <LoadBalancer>.** |\n| **437999897** | **Reduced the log level for failed geo IP lookups to address excessive log messages for private IP addresses.** |\n| **436323210** | **Fixed ingress cert keys to allow both `tls.key`/`key` and `tls.crt`/`cert`.** |\n| **N/A** | **Updates to security infrastructure and libraries.** |",
+        "content": "| Bug ID | Description |\n| --- | --- |\n| **442501403** | **Fixed an issue that caused incorrect target latency metrics in Apigee Analytics when a TargetEndpoint is configured with a <LoadBalancer>.** |\n| **437999897** | **Reduced the log level for failed geo IP lookups to address excessive log messages for private IP addresses.** |\n| **436323210** | **Fixed ingress cert keys to allow both `tls.key`/`key` and `tls.crt`/`cert`.** |\n| **438192028** | **Updated the geolocation database to mitigate stale IP-to-location mappings.** |\n| **N/A** | **Updates to security infrastructure and libraries.** |",
         "summary": {
-          "title": "Apigee Analytics Latency Metrics",
-          "summary": "Fixed an issue with incorrect target latency metrics in Apigee Analytics when a TargetEndpoint uses a LoadBalancer."
+          "title": "Apigee Analytics and Security Updates",
+          "summary": "Resolved incorrect target latency metrics in Apigee Analytics, reduced excessive logging for private IPs, updated ingress cert key handling, and improved geolocation data accuracy. Security infrastructure and libraries have also been updated."
         }
       },
       {
         "kind": "Security",
-        "content": "| Bug ID | Description |\n| --- | --- |\n| **440419558, 433759657** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2025-22868](https://nvd.nist.gov/vuln/detail/CVE-2025-22868) * [CVE-2025-48924](https://nvd.nist.gov/vuln/detail/CVE-2025-48924) **Note**: This fix updates a Java library that is included in Apigee. Reliance on Java libraries that are included with Apigee is not supported. Those libraries are for Apigee product functionality only, and there's no guarantee that a library will be available from release to release. For more information, see [Restrictions](https://cloud.google.com/apigee/docs/api-platform/reference/policies/java-callout-policy#Restrictions). |",
+        "content": "| Bug ID | Description |\n| --- | --- |\n| **440419558, 433759657** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2025-22868](https://nvd.nist.gov/vuln/detail/CVE-2025-22868) * [CVE-2025-48924](https://nvd.nist.gov/vuln/detail/CVE-2025-48924) **Note**: This fix updates a Java library that is included in Apigee. Reliance on Java libraries that are included with Apigee is not supported. Those libraries are for Apigee product functionality only, and there's no guarantee that a library will be available from release to release. For more information, see [Restrictions](https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/java-callout-policy#Restrictions). |",
         "summary": {
           "title": "Security fix for Apigee",
-          "summary": "A security fix has been released for Apigee infrastructure to address critical vulnerabilities CVE-2025-22868 and CVE-2025-48924."
+          "summary": "A security fix has been released for Apigee infrastructure, addressing vulnerabilities CVE-2025-22868 and CVE-2025-48924. This update affects a Java library used within Apigee."
         }
       }
     ],
     "2025-10-14": [
       {
         "kind": "Deprecated",
-        "content": "**Removal of deprecated Gemini Code Assist `@Apigee` tool.**\n\nThe Gemini Code Assist `@Apigee` tool is shut down as of October 14, 2025.\n\nSee [Gemini Code Assist @Apigee tool deprecation](https://cloud.google.com/apigee/docs/deprecations/apigee-tool) for information.",
+        "content": "**Removal of deprecated Gemini Code Assist `@Apigee` tool.**\n\nThe Gemini Code Assist `@Apigee` tool is shut down as of October 14, 2025.\n\nSee [Gemini Code Assist @Apigee tool deprecation](https://docs.cloud.google.com/apigee/docs/deprecations/apigee-tool) for information.",
         "summary": {
-          "title": "Gemini Code Assist @Apigee tool shut down",
-          "summary": "The Gemini Code Assist @Apigee tool has been shut down as of October 14, 2025. For more details, please refer to the deprecation information."
+          "title": "Gemini Code Assist @Apigee Tool Shut Down",
+          "summary": "The Gemini Code Assist @Apigee tool has been shut down as of October 14, 2025. For more details, please refer to the deprecation documentation."
         }
       }
     ],
     "2025-10-09": [
       {
         "kind": "Deprecated",
-        "content": "**Deprecation of the Gemini Code Assist `@Apigee` tool.**\n\nThe Gemini Code Assist `@Apigee` tool is deprecated and will be shut down as of October 14, 2025.\n\nSee [Gemini Code Assist @Apigee tool deprecation](https://cloud.google.com/apigee/docs/deprecations/apigee-tool) for information.",
+        "content": "**Deprecation of the Gemini Code Assist `@Apigee` tool.**\n\nThe Gemini Code Assist `@Apigee` tool is deprecated and will be shut down as of October 14, 2025.\n\nSee [Gemini Code Assist @Apigee tool deprecation](https://docs.cloud.google.com/apigee/docs/deprecations/apigee-tool) for information.",
         "summary": {
           "title": "Gemini Code Assist @Apigee tool deprecated",
-          "summary": "The Gemini Code Assist @Apigee tool is going away on October 14, 2025."
+          "summary": "The Gemini Code Assist @Apigee tool is deprecated and will be shut down on October 14, 2025. For more information, see the deprecation details."
         }
       }
     ],
     "2025-10-07": [
       {
         "kind": "Breaking",
-        "content": "**Previously unreported customer DNS misconfigurations now result in DNS errors**\n\nApigee removed the automatic DNS fallback functionality that was in 1-16-0-apigee-2. This removal surfaces customer DNS misconfigurations that previously did not show as DNS errors.\n\nSee [Known Issue 445936920](https://cloud.google.com/apigee/docs/release/known-issues#445936920).",
+        "content": "**Previously unreported customer DNS misconfigurations now result in DNS errors**\n\nApigee removed the automatic DNS fallback functionality that was in 1-16-0-apigee-2. This removal surfaces customer DNS misconfigurations that previously did not show as DNS errors.\n\nSee [Known Issue 445936920](https://docs.cloud.google.com/apigee/docs/release/known-issues#445936920).",
         "summary": {
-          "title": "DNS Misconfigurations Cause Errors",
-          "summary": "Previously hidden DNS misconfigurations are now causing errors following the removal of automatic DNS fallback in Apigee version 1-16-0-apigee-2."
+          "title": "DNS Errors Due to Misconfigurations",
+          "summary": "A recent change in Apigee has exposed previously hidden DNS misconfigurations, leading to new DNS errors for customers."
         }
       }
     ],

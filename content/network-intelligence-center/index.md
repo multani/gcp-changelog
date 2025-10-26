@@ -4,7 +4,7 @@
 
 ### Deprecated
 
-The following insight types and subtypes are no longer supported in [Network Analyzer](https://cloud.google.com/network-intelligence-center/docs/network-analyzer/overview):
+The following insight types and subtypes are no longer supported in [Network Analyzer](https://docs.cloud.google.com/network-intelligence-center/docs/network-analyzer/overview):
 
 * Recommender insight type and subtypes:
   + `google.networkanalyzer.managedservices.cloudSqlInsight`, including `BLOCKED_BY_EGRESS_FIREWALL`, `BLOCKED_BY_ROUTING_ISSUE`, and `INSTANCE_NOT_RUNNING`

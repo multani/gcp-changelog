@@ -2,9 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Generative AI on Vertex AI</title>
   <subtitle>Changelog for Google Cloud product: Generative AI on Vertex AI</subtitle>
-  <updated>2025-10-16T00:00:00+00:00</updated>
+  <updated>2025-10-23T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:generative-ai-on-vertex-ai</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/generative-ai-on-vertex-ai/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:generative-ai-on-vertex-ai:2025-10-23:feature:0</id>
+    <published>2025-10-23T00:00:00+00:00</published>
+    <updated>2025-10-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following models are available through Model Garden:</p>
+<ul>
+<li><a href="https://console.cloud.google.com/vertex-ai/publishers/deepseek-ai/model-garden/deepseek-ocr">DeepSeek-OCR</a></li>
+<li><a href="https://console.cloud.google.com/vertex-ai/publishers/qwen/model-garden/qwen3-vl">Qwen3-VL</a></li>
+<li><a href="https://console.cloud.google.com/vertex-ai/model-garden/google/earth-ai">Earth AI</a></li>
+</ul>]]></content>
+    <summary>Explore the latest additions to Model Garden, including DeepSeek-OCR, Qwen3-VL, and Earth AI.</summary>
+    <title>Feature: New models available in Model Garden</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:generative-ai-on-vertex-ai:2025-10-21:security:0</id>
+    <published>2025-10-21T00:00:00+00:00</published>
+    <updated>2025-10-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On September 23, 2025, we discovered a technical issue in
+the Vertex AI API that resulted in a limited amount of responses
+being misrouted between recipients for certain third-party models
+when using streaming requests. This issue is now resolved.
+Google models, e.g. Gemini, were not impacted.</p>
+<p>Some internal proxies did not properly handle HTTP requests that
+have an <code>Expect: 100-continue</code> header, resulting in
+a desynchronization in a streaming response connection, where
+a response intended for one request was instead delivered as
+the response for a subsequent request.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/security-bulletins#gcp-2025-059">Security bulletins</a>.</p>]]></content>
+    <summary>A technical issue affecting Vertex AI API's streaming requests for certain third-party models has been resolved. The problem, caused by internal proxies mismanaging 'Expect: 100-continue' headers, led to a limited misrouting of responses. Google's models were not impacted. For details, refer to the security bulletin.</summary>
+    <title>Security: Security Update: Vertex AI API Issue Resolved</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -12,12 +50,26 @@
     <id>urn:github:multani:gcp-changelog:generative-ai-on-vertex-ai:2025-10-16:feature:0</id>
     <published>2025-10-16T00:00:00+00:00</published>
     <updated>2025-10-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Mistral's Codestral 2</strong></p>
+<p>You can use Mistral's
+<a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/partner-models/mistral/codestral-2">Codestral 2</a>
+in Model Garden.</p>]]></content>
+    <summary>Discover Mistral's Codestral 2, a powerful new coding model, now accessible through Google Cloud's Model Garden. This feature enhances your coding experience with advanced capabilities.</summary>
+    <title>Feature: Codestral 2 Now Available in Model Garden</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:generative-ai-on-vertex-ai:2025-10-16:feature:1</id>
+    <published>2025-10-16T00:00:00+00:00</published>
+    <updated>2025-10-16T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>vLLM TPU</strong></p>
-<p><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/open-models/vllm/use-vllm-tpu">vLLM TPU</a>, a
+<p><a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/open-models/vllm/use-vllm-tpu">vLLM TPU</a>, a
 highly-efficient serving framework for large language models (LLM) that's
-optimized for <a href="https://cloud.google.com/tpu">Cloud TPU</a> hardware, is available through
+optimized for <a href="https://docs.cloud.google.com/tpu">Cloud TPU</a> hardware, is available through
 Model Garden.</p>]]></content>
-    <summary>vLLM TPU is a new serving framework optimized for Cloud TPU hardware, now available through Model Garden.</summary>
+    <summary>vLLM TPU is now available on Model Garden.</summary>
     <title>Feature: vLLM TPU</title>
   </entry>
   <entry>
@@ -29,7 +81,7 @@ Model Garden.</p>]]></content>
     <updated>2025-10-15T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Anthropic's Claude Haiku 4.5</strong></p>
 <p>You can use Anthropic's
-<a href="https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/claude/haiku-4-5">Claude Haiku 4.5</a>
+<a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/partner-models/claude/haiku-4-5">Claude Haiku 4.5</a>
 in Model Garden.</p>]]></content>
     <summary>Anthropic's Claude Haiku 4.5 is now accessible through Model Garden.</summary>
     <title>Feature: Claude Haiku 4.5 Now Available</title>
@@ -51,15 +103,15 @@ in Model Garden.</p>]]></content>
 </ul>
 <p>For more information, see the following:</p>
 <ul>
-<li><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/video/overview">Generate videos with Veo on Vertex AI</a></li>
-<li><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/video/generate-videos-from-text">Generate Veo videos from text prompts</a></li>
-<li><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/video/generate-videos-from-an-image">Generate Veo videos from an image</a></li>
-<li><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/video/generate-videos-from-first-and-last-frames">Generate Veo videos using first and last frames</a></li>
-<li><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/video/use-reference-images-to-guide-video-generation">Direct Veo using a reference image</a></li>
-<li><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/veo-video-generation">Veo video generation API</a></li>
+<li><a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/overview">Generate videos with Veo on Vertex AI</a></li>
+<li><a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/generate-videos-from-text">Generate Veo videos from text prompts</a></li>
+<li><a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/generate-videos-from-an-image">Generate Veo videos from an image</a></li>
+<li><a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/generate-videos-from-first-and-last-frames">Generate Veo videos using first and last frames</a></li>
+<li><a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/use-reference-images-to-guide-video-generation">Direct Veo using a reference image</a></li>
+<li><a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/model-reference/veo-video-generation">Veo video generation API</a></li>
 </ul>]]></content>
-    <summary>Veo 3.1 is now available in preview, offering enhanced video generation capabilities.</summary>
-    <title>Feature: Veo 3.1 Available in Preview</title>
+    <summary>Veo 3.1 is now available in Preview, offering enhanced video generation capabilities. Explore the new Veo 3.1 and Veo 3.1 Fast models for your creative projects.</summary>
+    <title>Feature: Veo 3.1 now in Preview</title>
   </entry>
   <entry>
     <author>
@@ -70,42 +122,37 @@ in Model Garden.</p>]]></content>
     <updated>2025-10-15T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Veo video generation</strong></p>
 <p>Veo 2 supports adding and removing objects from videos in Preview.</p>
-<p>For more information about Veo 2, see <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/models/veo/2-0-generate-preview">Veo 2
+<p>For more information about Veo 2, see <a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/veo/2-0-generate-preview">Veo 2
 Preview</a></p>
 <p>For more information about adding and removing objects, see the following:</p>
 <ul>
-<li><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/video/insert-objects-into-videos">Insert objects into Veo videos</a></li>
-<li><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/video/remove-objects-from-videos">Remove objects from Veo videos</a></li>
-<li><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/veo-video-generation">Veo video generation API</a></li>
+<li><a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/insert-objects-into-videos">Insert objects into Veo videos</a></li>
+<li><a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/remove-objects-from-videos">Remove objects from Veo videos</a></li>
+<li><a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/model-reference/veo-video-generation">Veo video generation API</a></li>
 </ul>]]></content>
-    <summary>Veo 2 now allows you to add and remove objects from videos during the preview phase.</summary>
-    <title>Feature: Veo video generation</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:generative-ai-on-vertex-ai:2025-10-15:feature:3</id>
-    <published>2025-10-15T00:00:00+00:00</published>
-    <updated>2025-10-15T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Veo video generation</strong></p>
-<p>Veo 2 supports adding and removing objects from videos in Preview.</p>
-<p>For more information about Veo 2, see <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/models/veo/2-0-generate-preview">Veo 2
-Preview</a></p>
-<p>For more information about adding and removing objects, see the following:</p>
-<ul>
-<li><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/video/insert-objects-into-videos">Insert objects into Veo videos</a></li>
-<li><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/video/remove-objects-from-videos">Remove objects from Veo videos</a></li>
-<li><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/veo-video-generation">Veo video generation API</a></li>
-</ul>]]></content>
-    <summary>Veo 2 now allows you to add and remove objects from videos during the preview phase.</summary>
-    <title>Feature: Veo video generation</title>
+    <summary>Veo 2 now supports adding and removing objects in videos during preview.</summary>
+    <title>Feature: Veo Video Generation</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
     <id>urn:github:multani:gcp-changelog:generative-ai-on-vertex-ai:2025-10-14:deprecated:0</id>
+    <published>2025-10-14T00:00:00+00:00</published>
+    <updated>2025-10-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Imagen subject and style fine-tuning</strong></p>
+<p>Imagen subject model and style model tuning will be removed on
+December 31, 2025. We recommend that you use <a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash-image">Gemini 2.5 Flash Image</a>, which supports most use cases that require
+fine-tuning. For more information, see  <a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-editing">Edit images with
+Gemini</a>.</p>]]></content>
+    <summary>Imagen subject and style fine-tuning will be removed on December 31, 2025. Please migrate to Gemini 2.5 Flash Image for continued support.</summary>
+    <title>Deprecated: Imagen models deprecation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:generative-ai-on-vertex-ai:2025-10-14:deprecated:1</id>
     <published>2025-10-14T00:00:00+00:00</published>
     <updated>2025-10-14T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Imagen 4 preview models</strong></p>
@@ -143,6 +190,17 @@ body shape and preserve the garment's identity.</p>]]></content>
     <id>urn:github:multani:gcp-changelog:generative-ai-on-vertex-ai:2025-10-07:feature:0</id>
     <published>2025-10-07T00:00:00+00:00</published>
     <updated>2025-10-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Save and share prompts in Vertex AI Studio</strong>: You can now save and share prompts in Vertex AI Studio. Sharing prompts lets you collaborate with team members, ensure consistency, and build a library of effective prompts for various tasks. For more information, see <a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/prompt-sharing">Save and share prompts</a>.</p>]]></content>
+    <summary>You can now save and share prompts in Vertex AI Studio. This feature facilitates collaboration and helps build a library of effective prompts.</summary>
+    <title>Feature: Save and Share Prompts</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:generative-ai-on-vertex-ai:2025-10-07:feature:1</id>
+    <published>2025-10-07T00:00:00+00:00</published>
+    <updated>2025-10-07T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The following Qwen models are available in <a href="https://console.cloud.google.com/vertex-ai/publishers/qwen/model-garden/qwen-image">Model Garden</a>:</p>
 <ul>
 <li>Qwen-Image</li>
@@ -156,12 +214,17 @@ body shape and preserve the garment's identity.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:generative-ai-on-vertex-ai:2025-10-07:feature:1</id>
+    <id>urn:github:multani:gcp-changelog:generative-ai-on-vertex-ai:2025-10-07:announcement:2</id>
     <published>2025-10-07T00:00:00+00:00</published>
     <updated>2025-10-07T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Save and share prompts in Vertex AI Studio</strong>: You can now save and share prompts in Vertex AI Studio. Sharing prompts lets you collaborate with team members, ensure consistency, and build a library of effective prompts for various tasks. For more information, see <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/prompt-sharing">Save and share prompts</a>.</p>]]></content>
-    <summary>Users can now save and share prompts in Vertex AI Studio. This feature enhances collaboration and helps build a library of effective prompts.</summary>
-    <title>Feature: Save and share prompts in Vertex AI Studio</title>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/computer-use">Gemini 2.5 Computer Use model and tool</a> (<code>gemini-2.5-computer-use-preview-10-2025</code>) is now available in Preview. The Computer Use model and tool lets you enable your applications to interact with and automate tasks in the browser. With the Computer Use model and tool, you can build agents that can:</p>
+<ul>
+<li>Automate repetitive data entry or form filling on websites.</li>
+<li>Navigate websites to gather information.</li>
+<li>Assist users by performing sequences of actions in web applications.</li>
+</ul>]]></content>
+    <summary>The Gemini 2.5 Computer Use model is available in preview, enabling applications to automate browser tasks like form filling and data gathering.</summary>
+    <title>Announcement: Gemini 2.5 Computer Use Model Now in Preview</title>
   </entry>
   <entry>
     <author>
@@ -189,7 +252,7 @@ body shape and preserve the garment's identity.</p>]]></content>
     <id>urn:github:multani:gcp-changelog:generative-ai-on-vertex-ai:2025-10-06:feature:1</id>
     <published>2025-10-06T00:00:00+00:00</published>
     <updated>2025-10-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Access Transparency for Vertex AI Agent Engine</strong>: Access Transparency is now available for Vertex AI Agent Engine. For more information, see the overview for <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/overview#enterprise_security">Enterprise security</a>.</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>Access Transparency for Vertex AI Agent Engine</strong>: Access Transparency is now available for Vertex AI Agent Engine. For more information, see the overview for <a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/overview#enterprise_security">Enterprise security</a>.</p>]]></content>
     <summary>Access Transparency is now available for Vertex AI Agent Engine.</summary>
     <title>Feature: Access Transparency for Vertex AI Agent Engine</title>
   </entry>
@@ -197,12 +260,14 @@ body shape and preserve the garment's identity.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:generative-ai-on-vertex-ai:2025-10-06:feature:2</id>
-    <published>2025-10-06T00:00:00+00:00</published>
-    <updated>2025-10-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Access Transparency for Vertex AI Agent Engine</strong>: Access Transparency is now available for Vertex AI Agent Engine. For more information, see the overview for <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/overview#enterprise_security">Enterprise security</a>.</p>]]></content>
-    <summary>Access Transparency is now available for Vertex AI Agent Engine.</summary>
-    <title>Feature: Access Transparency for Vertex AI Agent Engine</title>
+    <id>urn:github:multani:gcp-changelog:generative-ai-on-vertex-ai:2025-10-03:feature:0</id>
+    <published>2025-10-03T00:00:00+00:00</published>
+    <updated>2025-10-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Prompt management</strong></p>
+<p>Vertex AI offers tooling to help manage prompts and prompt versions. In addition to the prompt management capabilities in Vertex AI Studio, prompts can be stored and versioned using the Vertex AI SDK.</p>
+<p>For more information, see the <a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/model-reference/prompt-classes">Prompt management</a> API reference.</p>]]></content>
+    <summary>Manage and version your prompts with Vertex AI.</summary>
+    <title>Feature: Prompt Management</title>
   </entry>
   <entry>
     <author>
@@ -211,28 +276,16 @@ body shape and preserve the garment's identity.</p>]]></content>
     <id>urn:github:multani:gcp-changelog:generative-ai-on-vertex-ai:2025-10-02:announcement:0</id>
     <published>2025-10-02T00:00:00+00:00</published>
     <updated>2025-10-02T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash#image-generation">Gemini 2.5 Flash Image</a></strong> (<code>gemini-2.5-flash-image</code>) is now generally available. This GA release adds support for aspect ratio controls, image-only response modality, regional endpoints, <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/batch-prediction-gemini">support for batch predictions</a>, <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-generation#image-generation">image generation from multiple reference images</a>, and <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-editing#multi-turn-editing">improved multi-turn image editing</a>.</p>
-<p>See <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash#image">Gemini 2.5 Flash Image</a> for more information.</p>]]></content>
-    <summary>Gemini 2.5 Flash Image has reached general availability, introducing new features like aspect ratio controls, image-only responses, regional endpoints, batch prediction support, multi-reference image generation, and enhanced multi-turn image editing.</summary>
-    <title>Announcement: Gemini 2.5 Flash Image is Now Generally Available</title>
+    <content type="html"><![CDATA[<p><strong><a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash#image-generation">Gemini 2.5 Flash Image</a></strong> (<code>gemini-2.5-flash-image</code>) is now generally available. This GA release adds support for aspect ratio controls, image-only response modality, regional endpoints, <a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/multimodal/batch-prediction-gemini">support for batch predictions</a>, <a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-generation#image-generation">image generation from multiple reference images</a>, and <a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-editing#multi-turn-editing">improved multi-turn image editing</a>.</p>
+<p>See <a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash#image">Gemini 2.5 Flash Image</a> for more information.</p>]]></content>
+    <summary>Gemini 2.5 Flash Image has reached general availability, introducing features like aspect ratio controls, image-only responses, regional endpoints, batch predictions, multi-reference image generation, and enhanced multi-turn image editing.</summary>
+    <title>Announcement: Gemini 2.5 Flash Image Now Generally Available</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:generative-ai-on-vertex-ai:2025-10-02:announcement:1</id>
-    <published>2025-10-02T00:00:00+00:00</published>
-    <updated>2025-10-02T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash#image-generation">Gemini 2.5 Flash Image</a></strong> (<code>gemini-2.5-flash-image</code>) is now generally available. This GA release adds support for aspect ratio controls, image-only response modality, regional endpoints, <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/batch-prediction-gemini">support for batch predictions</a>, <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-generation#image-generation">image generation from multiple reference images</a>, and <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-editing#multi-turn-editing">improved multi-turn image editing</a>.</p>
-<p>See <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash#image">Gemini 2.5 Flash Image</a> for more information.</p>]]></content>
-    <summary>Gemini 2.5 Flash Image has reached general availability, introducing new features like aspect ratio controls, image-only responses, regional endpoints, batch prediction support, multi-reference image generation, and enhanced multi-turn image editing.</summary>
-    <title>Announcement: Gemini 2.5 Flash Image is Now Generally Available</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:generative-ai-on-vertex-ai:2025-10-02:feature:2</id>
+    <id>urn:github:multani:gcp-changelog:generative-ai-on-vertex-ai:2025-10-02:feature:1</id>
     <published>2025-10-02T00:00:00+00:00</published>
     <updated>2025-10-02T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Google Gen AI SDK in C# Preview</strong></p>
@@ -343,19 +396,6 @@ body shape and preserve the garment's identity.</p>]]></content>
 <p>We improved Imagen's virtual try-on model, <code>virtual-try-on-preview-08-04</code>, so that it is better at preserving the person's body shape and preserving the garment product's identity.</p>]]></content>
     <summary>The Imagen virtual try-on model has been updated to better preserve body shape and garment identity.</summary>
     <title>Changed: Imagen model update</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:generative-ai-on-vertex-ai:2025-10-03:feature:0</id>
-    <published>2025-10-03T00:00:00+00:00</published>
-    <updated>2025-10-03T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Prompt management</strong></p>
-<p>Vertex AI offers tooling to help manage prompts and prompt versions. In addition to the prompt management capabilities in Vertex AI Studio, prompts can be stored and versioned using the Vertex AI SDK.</p>
-<p>For more information, see the <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/prompt-classes">Prompt management</a> API reference.</p>]]></content>
-    <summary>Manage your prompts and their versions with Vertex AI tooling.</summary>
-    <title>Feature: Prompt Management</title>
   </entry>
   <entry>
     <author>

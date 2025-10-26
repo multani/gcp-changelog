@@ -15,13 +15,14 @@ On October 16, 2025, we released an updated version of Apigee (1-16-0-apigee-3).
 | **442501403** | **Fixed an issue that caused incorrect target latency metrics in Apigee Analytics when a TargetEndpoint is configured with a <LoadBalancer>.** |
 | **437999897** | **Reduced the log level for failed geo IP lookups to address excessive log messages for private IP addresses.** |
 | **436323210** | **Fixed ingress cert keys to allow both `tls.key`/`key` and `tls.crt`/`cert`.** |
+| **438192028** | **Updated the geolocation database to mitigate stale IP-to-location mappings.** |
 | **N/A** | **Updates to security infrastructure and libraries.** |
 
 ### Security
 
 | Bug ID | Description |
 | --- | --- |
-| **440419558, 433759657** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2025-22868](https://nvd.nist.gov/vuln/detail/CVE-2025-22868) * [CVE-2025-48924](https://nvd.nist.gov/vuln/detail/CVE-2025-48924) **Note**: This fix updates a Java library that is included in Apigee. Reliance on Java libraries that are included with Apigee is not supported. Those libraries are for Apigee product functionality only, and there's no guarantee that a library will be available from release to release. For more information, see [Restrictions](https://cloud.google.com/apigee/docs/api-platform/reference/policies/java-callout-policy#Restrictions). |
+| **440419558, 433759657** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2025-22868](https://nvd.nist.gov/vuln/detail/CVE-2025-22868) * [CVE-2025-48924](https://nvd.nist.gov/vuln/detail/CVE-2025-48924) **Note**: This fix updates a Java library that is included in Apigee. Reliance on Java libraries that are included with Apigee is not supported. Those libraries are for Apigee product functionality only, and there's no guarantee that a library will be available from release to release. For more information, see [Restrictions](https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/java-callout-policy#Restrictions). |
 
 ---
 ## 2025-10-14
@@ -32,7 +33,7 @@ On October 16, 2025, we released an updated version of Apigee (1-16-0-apigee-3).
 
 The Gemini Code Assist `@Apigee` tool is shut down as of October 14, 2025.
 
-See [Gemini Code Assist @Apigee tool deprecation](https://cloud.google.com/apigee/docs/deprecations/apigee-tool) for information.
+See [Gemini Code Assist @Apigee tool deprecation](https://docs.cloud.google.com/apigee/docs/deprecations/apigee-tool) for information.
 
 ---
 ## 2025-10-09
@@ -43,7 +44,7 @@ See [Gemini Code Assist @Apigee tool deprecation](https://cloud.google.com/apige
 
 The Gemini Code Assist `@Apigee` tool is deprecated and will be shut down as of October 14, 2025.
 
-See [Gemini Code Assist @Apigee tool deprecation](https://cloud.google.com/apigee/docs/deprecations/apigee-tool) for information.
+See [Gemini Code Assist @Apigee tool deprecation](https://docs.cloud.google.com/apigee/docs/deprecations/apigee-tool) for information.
 
 ---
 ## 2025-10-07
@@ -54,7 +55,7 @@ See [Gemini Code Assist @Apigee tool deprecation](https://cloud.google.com/apige
 
 Apigee removed the automatic DNS fallback functionality that was in 1-16-0-apigee-2. This removal surfaces customer DNS misconfigurations that previously did not show as DNS errors.
 
-See [Known Issue 445936920](https://cloud.google.com/apigee/docs/release/known-issues#445936920).
+See [Known Issue 445936920](https://docs.cloud.google.com/apigee/docs/release/known-issues#445936920).
 
 ---
 ## 2025-09-24

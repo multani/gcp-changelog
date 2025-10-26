@@ -1,10 +1,36 @@
 # Cloud SQL for PostgreSQL
 
+## 2025-10-23
+
+### Feature
+
+Cloud SQL now proactively detects and works to cancel high memory usage
+connections to prevent out-of-memory (OOM) failures. For more information,
+see [Cancelled queries due to high memory usage](https://cloud.google.com/sql/docs/postgres/manage-memory-usage-best-practices#cancelled-query).
+
+---
+## 2025-10-17
+
+### Feature
+
+Cloud SQL Enterprise edition now supports a new machine series called the N4 machine series. This machine series provides balanced price-to-performance and uses the Hyperdisk Balanced storage. You can create custom machine types for the N4 machine series with up to 80 vCPUs and up to 640 GB memory. The N4 machine series is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+For more information about the N4 machine series and its availability, see [Machine series overview](https://docs.cloud.google.com/sql/docs/postgres/machine-series-overview).
+
+### Feature
+
+The [C4A machine series](https://docs.cloud.google.com/sql/docs/postgres/machine-series-overview#c4a) is now [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+The C4A machine series is supported for Cloud SQL Enterprise Plus edition instances, and provides optimized price-performance and delivers predictable high performance for high demand Cloud SQL workloads. It uses the Hyperdisk Balanced storage.
+
+For more information about the C4A machine series and its availability, see [Machine series overview](https://docs.cloud.google.com/sql/docs/postgres/machine-series-overview).
+
+---
 ## 2025-10-06
 
 ### Feature
 
-You can now assess the upgrade readiness of your Cloud SQL for PostgreSQL instances before a major version upgrade by running a precheck. This precheck either confirms your instance can be upgraded, or lists issues and their solutions that need to be fixed prior to upgrading. For more information, see [Assess upgrade readiness for your instance](https://cloud.google.com/sql/docs/postgres/upgrade-major-db-version-inplace#precheck).
+You can now assess the upgrade readiness of your Cloud SQL for PostgreSQL instances before a major version upgrade by running a precheck. This precheck either confirms your instance can be upgraded, or lists issues and their solutions that need to be fixed prior to upgrading. For more information, see [Assess upgrade readiness for your instance](https://docs.cloud.google.com/sql/docs/postgres/upgrade-major-db-version-inplace#precheck).
 
 ---
 ## 2025-10-03
@@ -34,7 +60,7 @@ The following new flags are available for PostgreSQL 18 only:
 * `vacuum_max_eager_freeze_failure_rate`
 * `vacuum_truncate`
 
-For more information, see [Configure database flags](https://cloud.google.com/sql/docs/postgres/flags).
+For more information, see [Configure database flags](https://docs.cloud.google.com/sql/docs/postgres/flags).
 
 **Extensions**
 
@@ -48,9 +74,9 @@ The following extensions aren't available for PostgreSQL 18:
 * `pg_wait_sampling`
 * `tds_fdw`
 
-For more information, see [Configure PostgreSQL extensions](https://cloud.google.com/sql/docs/postgres/extensions).
+For more information, see [Configure PostgreSQL extensions](https://docs.cloud.google.com/sql/docs/postgres/extensions).
 
-To create a new instance using PostgreSQL 18, see [Create instances](https://cloud.google.com/sql/docs/postgres/create-instance).
+To create a new instance using PostgreSQL 18, see [Create instances](https://docs.cloud.google.com/sql/docs/postgres/create-instance).
 
 ---
 ## 2025-09-29

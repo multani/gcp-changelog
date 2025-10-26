@@ -54,18 +54,18 @@
     "2025-10-07": [
       {
         "kind": "hybrid v1.14.3",
-        "content": "On October 7, 2025 we released an enhancement to Apigee hybrid version 1.14.3, recurring, top-up, and setup fees for Apigee hybrid monetization.\n\n**Note:** This is an enhancement to an existing release.\n\n* For complete information on the contents of the v1.14.3 release, see [Apigee hybrid v1.14.3 release notes](https://cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143).",
+        "content": "On October 7, 2025 we released an enhancement to Apigee hybrid version 1.14.3, recurring, top-up, and setup fees for Apigee hybrid monetization.\n\n**Note:** This is an enhancement to an existing release.\n\n* For complete information on the contents of the v1.14.3 release, see [Apigee hybrid v1.14.3 release notes](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143).",
         "summary": {
           "title": "Apigee hybrid monetization enhancements",
-          "summary": "An enhancement to Apigee hybrid 1.14.3 has been released, including updates to monetization features."
+          "summary": "New recurring, top-up, and setup fees for Apigee hybrid monetization are now available as part of an enhancement to version 1.14.3."
         }
       },
       {
         "kind": "Feature",
-        "content": "**Recurring, top-up, and setup fees for Apigee hybrid monetization**\n\nApigee hybrid now supports recurring, top-up, and setup fees for monetization. For information see [Enabling monetization for Apigee hybrid](https://cloud.google.com/apigee/docs/hybrid/v1.14/monetization-for-hybrid).",
+        "content": "**Recurring, top-up, and setup fees for Apigee hybrid monetization**\n\nApigee hybrid now supports recurring, top-up, and setup fees for monetization. For information see [Enabling monetization for Apigee hybrid](https://docs.cloud.google.com/apigee/docs/hybrid/v1.14/monetization-for-hybrid).",
         "summary": {
           "title": "Apigee hybrid monetization updates",
-          "summary": "Apigee hybrid now supports recurring, top-up, and setup fees."
+          "summary": "Apigee hybrid now supports recurring, top-up, and setup fees for monetization."
         }
       },
       {
@@ -80,18 +80,18 @@
     "2025-09-29": [
       {
         "kind": "hybrid v1.14.3",
-        "content": "On September 29, 2025 we released an updated version of the Apigee hybrid software, 1.14.3.\n\n* For information on upgrading, see [Upgrading Apigee hybrid to version 1.14](https://cloud.google.com/apigee/docs/hybrid/v1.14/upgrade).\n* For information on new installations, see [The big picture](https://cloud.google.com/apigee/docs/hybrid/v1.14/big-picture).\n\n**Note:** This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).",
+        "content": "On September 29, 2025 we released an updated version of the Apigee hybrid software, 1.14.3.\n\n* For information on upgrading, see [Upgrading Apigee hybrid to version 1.14](https://docs.cloud.google.com/apigee/docs/hybrid/v1.14/upgrade).\n* For information on new installations, see [The big picture](https://docs.cloud.google.com/apigee/docs/hybrid/v1.14/big-picture).\n\n**Note:** This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).",
         "summary": {
-          "title": "Apigee hybrid 1.14.3 release",
-          "summary": "A new version of Apigee hybrid, 1.14.3, was released on September 29, 2025. This release includes important updates and is a patch release. For detailed information on upgrading or new installations, please refer to the provided documentation links."
+          "title": "Apigee hybrid v1.14.3 release",
+          "summary": "A new version of Apigee hybrid, v1.14.3, was released on September 29, 2025. This patch release includes updated container images integrated with the Apigee hybrid Helm charts, simplifying the upgrade process."
         }
       },
       {
         "kind": "Fixed",
-        "content": "| Bug ID | Description |\n| --- | --- |\n| **423597917** | **Post of an [`AppGroupAppKey`](https://cloud.google.com/apigee/docs/reference/apis/apigee/rest/v1/organizations.appgroups.apps.keys/updateAppGroupAppKey) scopes should result in insert operation instead of update.** |\n| **420675540** | **Fixed Cassandra based replication for runtime contracts in synchronizer.** |\n| **416634326** | **Presence of istio.io Custom Resource Definitions (CRDs) in an Apigee hybrid cluster could cause failure in apigee-ingressgateway-manager pods.** |\n| **414499328** | **`ApigeeTelemetry` could become stuck in `creating` state** |\n| **412740465** | **Fixed issue where zipkin headers were not generated by Apigee Ingress Gateway.** |\n| **409048431** | **Fixes a vulnerability which could allow a SAML signature verification to be bypassed.** |\n| **395272878** | **Separate Forward proxy support for `googleapis.com` and `non-googleapis.com` runtime traffic.** |\n| **378686709** | **The use of wildcards (\\*) in Apigee proxy basepaths would conflict with other explicit basepaths, resulting in a 404 error.** To apply this fix, follow the procedure in [Known issue 378686709](https://cloud.google.com/apigee/docs/release/known-issues#378686709). |\n| **367815792** | **Two new Flow Variables: `app_group_app` and `app_group_name` have been added to VerifyApiKey and Access Token policy.** |",
+        "content": "| Bug ID | Description |\n| --- | --- |\n| **423597917** | **Post of an [`AppGroupAppKey`](https://docs.cloud.google.com/apigee/docs/reference/apis/apigee/rest/v1/organizations.appgroups.apps.keys/updateAppGroupAppKey) scopes should result in insert operation instead of update.** |\n| **420675540** | **Fixed Cassandra based replication for runtime contracts in synchronizer.** |\n| **416634326** | **Presence of istio.io Custom Resource Definitions (CRDs) in an Apigee hybrid cluster could cause failure in apigee-ingressgateway-manager pods.** |\n| **414499328** | **`ApigeeTelemetry` could become stuck in `creating` state** |\n| **412740465** | **Fixed issue where zipkin headers were not generated by Apigee Ingress Gateway.** |\n| **409048431** | **Fixes a vulnerability which could allow a SAML signature verification to be bypassed.** |\n| **395272878** | **Separate Forward proxy support for `googleapis.com` and `non-googleapis.com` runtime traffic.** |\n| **378686709** | **The use of wildcards (\\*) in Apigee proxy basepaths would conflict with other explicit basepaths, resulting in a 404 error.** To apply this fix, follow the procedure in [Known issue 378686709](https://docs.cloud.google.com/apigee/docs/release/known-issues#378686709). |\n| **367815792** | **Two new Flow Variables: `app_group_app` and `app_group_name` have been added to VerifyApiKey and Access Token policy.** |",
         "summary": {
-          "title": "Apigee Fixes",
-          "summary": "This release includes several fixes for Apigee, addressing issues with app key creation, Cassandra replication, ingress gateway behavior, telemetry, SAML signature verification, and wildcard basepaths. Additionally, new flow variables have been added to the VerifyApiKey and Access Token policies."
+          "title": "Bug Fixes",
+          "summary": "This release includes several bug fixes, including issues with app key creation, Cassandra replication, Apigee hybrid cluster stability, telemetry services, zipkin header generation, SAML signature verification, forward proxy support, and wildcard basepaths in proxies. Additionally, two new flow variables, app_group_app and app_group_name, have been added to the VerifyApiKey and Access Token policies."
         }
       },
       {

@@ -1,22 +1,75 @@
 # Security Command Center
 
+## 2025-10-21
+
+### Changed
+
+The release note for Security Command Center and [attack path simulations](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-learn),
+published on October 16, 2025, was updated to clarify that
+[attack path simulations](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-learn)
+use Compute Engine and Google Kubernetes Engine OS and software
+vulnerability *findings* to detect toxic combinations and
+chokepoints.
+
+---
+## 2025-10-20
+
+### Feature
+
+[Container image vulnerability findings](https://docs.cloud.google.com/security-command-center/docs/concepts-security-sources#ar-vuln-assessment)
+has been released to [General
+Availability](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-10-16
 
 ### Changed
 
-Security Command Center and [attack path simulations](https://cloud.google.com/security-command-center/docs/attack-exposure-learn)
+Security Command Center and [attack path simulations](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-learn)
 use Compute Engine and Google Kubernetes Engine operating system and software
 vulnerabilities to detect toxic combinations and chokepoints.
+
+**UPDATE**: [Attack path simulations](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-learn)
+analyze OS and software vulnerability findings for Compute Engine and
+Google Kubernetes Engine resources to detect toxic combinations and chokepoints.
+
+---
+## 2025-10-15
+
+### Changed
+
+The following features in Compliance Manager are available in [General
+Availability](https://cloud.google.com/products#product-launch-stages):
+
+* [Applying and updating built-in frameworks and cloud
+  controls](https://docs.cloud.google.com/security-command-center/docs/compliance-manager-apply-framework)
+* Creating, applying, and editing custom frameworks and cloud controls
+* [Support for VPC Service Control
+  perimeters](https://docs.cloud.google.com/security-command-center/docs/compliance-manager-configure-vpc-sc)
+* [Audit logging](https://docs.cloud.google.com/security-command-center/docs/compliance-manager-audit-logging)
+* [Client
+  libraries](https://docs.cloud.google.com/security-command-center/docs/reference/cloudsecuritycompliance/libraries)
+* [REST APIs](https://docs.cloud.google.com/security-command-center/docs/reference/cloudsecuritycompliance/rest)
 
 ---
 ## 2025-10-10
 
 ### Feature
 
-[Correlated Threats](https://cloud.google.com/security-command-center/docs/correlated-threats-overview) is available
+[Correlated Threats](https://docs.cloud.google.com/security-command-center/docs/correlated-threats-overview) is available
 in [Preview](https://cloud.google.com/products#product-launch-stages). This
 feature combines related threat findings together by using the security graph,
 helping you to prioritize and respond to active threats.
+
+---
+## 2025-10-09
+
+### Feature
+
+Data Security Posture Management (available in [Preview](https://cloud.google.com/products#product-launch-stages)) lets you deploy frameworks with advanced data
+security cloud controls to app-enabled folders. For more information, see
+[Deploy advanced data security cloud
+controls](https://docs.cloud.google.com/security-command-center/docs/dspm-use-data-security#deploy-advanced-data-security-cloud-controls).
 
 ---
 ## 2025-10-07

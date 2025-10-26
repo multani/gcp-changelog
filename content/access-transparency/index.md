@@ -1,5 +1,21 @@
 # Access Transparency
 
+## 2025-10-14
+
+### Feature
+
+Google Cloud Managed Service for Apache Kafka is generally available
+[(GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
+## 2025-10-13
+
+### Feature
+
+IAM System for Cross-domain Identity Management (SCIM) Service is available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-10-08
 
 ### Feature

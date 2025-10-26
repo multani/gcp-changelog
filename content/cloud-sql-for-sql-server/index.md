@@ -1,5 +1,14 @@
 # Cloud SQL for SQL Server
 
+## 2025-10-17
+
+### Feature
+
+Cloud SQL Enterprise edition now supports a new machine series called the N4 machine series. This machine series provides balanced price-to-performance and uses the Hyperdisk Balanced storage. You can create custom machine types for the N4 machine series with up to 80 vCPUs and up to 640 GB memory. The N4 machine series is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+For more information about the N4 machine series and its availability, see [Machine series overview](https://docs.cloud.google.com/sql/docs/sqlserver/machine-series-overview).
+
+---
 ## 2025-10-06
 
 ### Feature

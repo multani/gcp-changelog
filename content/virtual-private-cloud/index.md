@@ -1,12 +1,38 @@
 # Virtual Private Cloud
 
+## 2025-10-24
+
+### Feature
+
+You can view IP address utilization when you
+[list](https://cloud.google.com/vpc/docs/create-modify-vpc-networks#listing_existing_subnets)
+or
+[describe](https://cloud.google.com/vpc/docs/create-modify-vpc-networks#describing_an_existing_subnet)
+subnets. IP address utilization displays the number of free
+and allocated IP addresses in a subnet. This feature is available in
+**General Availability**.
+
+---
+## 2025-10-20
+
+### Feature
+
+VPC Flow Logs supports logging for Cloud Run resources that are configured with
+[Direct VPC egress](https://docs.cloud.google.com/run/docs/configuring/vpc-direct-vpc). This feature is
+available in **General Availability**.
+
+For more information, see
+[Serverless flows](https://docs.cloud.google.com/vpc/docs/about-traffic-flows#serverless-flows) and
+[ServerlessDetails field format](https://docs.cloud.google.com/vpc/docs/about-flow-logs-records#serverless-details).
+
+---
 ## 2025-10-15
 
 ### Feature
 
 Private Service Connect health is available in **Preview**.
 
-Private Service Connect health lets service producers define health states to support automatic cross-region failover for consumers that use Private Service Connect backends. For more information, see [About Private Service Connect health for automatic cross-region failover](https://cloud.google.com/vpc/docs/about-private-service-connect-health).
+Private Service Connect health lets service producers define health states to support automatic cross-region failover for consumers that use Private Service Connect backends. For more information, see [About Private Service Connect health for automatic cross-region failover](https://docs.cloud.google.com/vpc/docs/about-private-service-connect-health).
 
 ---
 ## 2025-09-26
@@ -15,10 +41,10 @@ Private Service Connect health lets service producers define health states to su
 
 The following features of VPC Flow Logs are available in **General Availability**:
 
-* Logging for [RDMA over Falcon transport](https://cloud.google.com/vpc/docs/rdma-network-profiles#overview)
+* Logging for [RDMA over Falcon transport](https://docs.cloud.google.com/vpc/docs/rdma-network-profiles#overview)
 * Enhanced round-trip time precision for TCP and Falcon traffic
 
-For more information, see [About VPC Flow Logs records](https://cloud.google.com/vpc/docs/about-flow-logs-records#record_format).
+For more information, see [About VPC Flow Logs records](https://docs.cloud.google.com/vpc/docs/about-flow-logs-records#record_format).
 
 ---
 ## 2025-09-25

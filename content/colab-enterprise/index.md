@@ -1,5 +1,19 @@
 # Colab Enterprise
 
+## 2025-10-20
+
+### Feature
+
+**Visualization cells**
+
+[Preview](https://cloud.google.com/products#product-launch-stages): You can
+use visualization cells to generate interactive and editable visualizations
+from within a Colab Enterprise notebook. You can configure the
+chart type, aggregation, colors, labels, and other aspects of the
+visualization to help you explore data and discover insights. For more
+information, see [Use visualization cells](https://docs.cloud.google.com/colab/docs/visualization-cells).
+
+---
 ## 2025-10-14
 
 ### Feature
@@ -9,7 +23,7 @@
 [Preview](https://cloud.google.com/products#product-launch-stages): You can
 use SQL cells to write, edit, and run SQL queries directly from your
 Colab Enterprise notebooks. For more information, see
-[Use SQL cells](https://cloud.google.com/colab/docs/sql-cells).
+[Use SQL cells](https://docs.cloud.google.com/colab/docs/sql-cells).
 
 ---
 ## 2025-10-07
@@ -23,7 +37,7 @@ use a post-startup script to perform tasks after the startup process
 of your Colab Enterprise runtime. For example, you can use
 a post-startup script to install specific packages or make specific
 changes to your runtime's VM. For more information, see
-[Use a post-startup script](https://cloud.google.com/colab/docs/post-startup-script).
+[Use a post-startup script](https://docs.cloud.google.com/colab/docs/post-startup-script).
 
 ---
 ## 2025-08-05

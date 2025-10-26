@@ -1397,6 +1397,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Google cloud marketplace <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../google-cloud-marketplace/" class="dropdown-item">Google Cloud Marketplace</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Google cloud marketplace partners <b class="caret"></b>
                         </a>
 
@@ -1656,6 +1668,18 @@
                             
   <li>
     <a href="../memorystore-for-redis-cluster/" class="dropdown-item">Memorystore for Redis Cluster</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Memorystore for valkey <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../memorystore-for-valkey/" class="dropdown-item">Memorystore for Valkey</a>
   </li>
                         </ul>
                       </li>
@@ -1925,6 +1949,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Speech to text <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../speech-to-text/" class="dropdown-item">Speech-to-Text</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Text to speech <b class="caret"></b>
                         </a>
 
@@ -2078,6 +2114,10 @@
 <td><strong>Fixed ingress cert keys to allow both <code>tls.key</code>/<code>key</code> and <code>tls.crt</code>/<code>cert</code>.</strong></td>
 </tr>
 <tr>
+<td><strong>438192028</strong></td>
+<td><strong>Updated the geolocation database to mitigate stale IP-to-location mappings.</strong></td>
+</tr>
+<tr>
 <td><strong>N/A</strong></td>
 <td><strong>Updates to security infrastructure and libraries.</strong></td>
 </tr>
@@ -2094,7 +2134,7 @@
 <tbody>
 <tr>
 <td><strong>440419558, 433759657</strong></td>
-<td><strong>Security fix for Apigee infrastructure.</strong> This addresses the following vulnerabilities:   * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-22868">CVE-2025-22868</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-48924">CVE-2025-48924</a> <strong>Note</strong>: This fix updates a Java library that is included in Apigee. Reliance on Java libraries that are included with Apigee is not supported. Those libraries are for Apigee product functionality only, and there's no guarantee that a library will be available from release to release. For more information, see <a href="https://cloud.google.com/apigee/docs/api-platform/reference/policies/java-callout-policy#Restrictions">Restrictions</a>.</td>
+<td><strong>Security fix for Apigee infrastructure.</strong> This addresses the following vulnerabilities:   * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-22868">CVE-2025-22868</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-48924">CVE-2025-48924</a> <strong>Note</strong>: This fix updates a Java library that is included in Apigee. Reliance on Java libraries that are included with Apigee is not supported. Those libraries are for Apigee product functionality only, and there's no guarantee that a library will be available from release to release. For more information, see <a href="https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/java-callout-policy#Restrictions">Restrictions</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -2103,19 +2143,19 @@
 <h3 id="deprecated">Deprecated</h3>
 <p><strong>Removal of deprecated Gemini Code Assist <code>@Apigee</code> tool.</strong></p>
 <p>The Gemini Code Assist <code>@Apigee</code> tool is shut down as of October 14, 2025.</p>
-<p>See <a href="https://cloud.google.com/apigee/docs/deprecations/apigee-tool">Gemini Code Assist @Apigee tool deprecation</a> for information.</p>
+<p>See <a href="https://docs.cloud.google.com/apigee/docs/deprecations/apigee-tool">Gemini Code Assist @Apigee tool deprecation</a> for information.</p>
 <hr />
 <h2 id="2025-10-09">2025-10-09</h2>
 <h3 id="deprecated_1">Deprecated</h3>
 <p><strong>Deprecation of the Gemini Code Assist <code>@Apigee</code> tool.</strong></p>
 <p>The Gemini Code Assist <code>@Apigee</code> tool is deprecated and will be shut down as of October 14, 2025.</p>
-<p>See <a href="https://cloud.google.com/apigee/docs/deprecations/apigee-tool">Gemini Code Assist @Apigee tool deprecation</a> for information.</p>
+<p>See <a href="https://docs.cloud.google.com/apigee/docs/deprecations/apigee-tool">Gemini Code Assist @Apigee tool deprecation</a> for information.</p>
 <hr />
 <h2 id="2025-10-07">2025-10-07</h2>
 <h3 id="breaking">Breaking</h3>
 <p><strong>Previously unreported customer DNS misconfigurations now result in DNS errors</strong></p>
 <p>Apigee removed the automatic DNS fallback functionality that was in 1-16-0-apigee-2. This removal surfaces customer DNS misconfigurations that previously did not show as DNS errors.</p>
-<p>See <a href="https://cloud.google.com/apigee/docs/release/known-issues#445936920">Known Issue 445936920</a>.</p>
+<p>See <a href="https://docs.cloud.google.com/apigee/docs/release/known-issues#445936920">Known Issue 445936920</a>.</p>
 <hr />
 <h2 id="2025-09-24">2025-09-24</h2>
 <h3 id="announcement_1">Announcement</h3>

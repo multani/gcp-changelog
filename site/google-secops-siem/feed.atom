@@ -2,14 +2,242 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps SIEM</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps SIEM</subtitle>
-  <updated>2025-10-15T00:00:00+00:00</updated>
+  <updated>2025-10-26T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops-siem</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops-siem/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-15:feature:0</id>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-26:announcement:0</id>
+    <published>2025-10-26T00:00:00+00:00</published>
+    <updated>2025-10-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Release 6.3.65 is being rolled out to the first phase of regions as listed <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
+<p>This release contains the following changes:</p>]]></content>
+    <summary>Release 6.3.65 is now available in initial regions. Find the list of regions here: https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release</summary>
+    <title>Announcement: Release 6.3.65 Rollout</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-26:feature:1</id>
+    <published>2025-10-26T00:00:00+00:00</published>
+    <updated>2025-10-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Delete high-load environments</strong></p>
+<p>You can now easily delete environments with heavy loads directly from the platform.</p>]]></content>
+    <summary>Easily delete high-load environments directly from the platform.</summary>
+    <title>Feature: Delete high-load environments</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-25:announcement:0</id>
+    <published>2025-10-25T00:00:00+00:00</published>
+    <updated>2025-10-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#October_19_2025">Release 6.3.64</a> is now available for all regions.</p>]]></content>
+    <summary>The latest update, Release 6.3.64, has been successfully rolled out across all regions.</summary>
+    <title>Announcement: Release 6.3.64 Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-22:feature:0</id>
+    <published>2025-10-22T00:00:00+00:00</published>
+    <updated>2025-10-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>SentinelOneV2</strong>: Version 42.0</p>
+<ul>
+<li>
+<p>The following new actions have been added:</p>
+</li>
+<li>
+<p><strong>Create Device Control Rule</strong></p>
+</li>
+<li><strong>Delete Device Control Rule</strong></li>
+<li><strong>Update Device Control Rule</strong></li>
+</ul>]]></content>
+    <summary>SentinelOneV2 version 42.0 introduces new device control capabilities. You can now create, delete, and update device control rules directly.</summary>
+    <title>Feature: New Device Control Features in SentinelOneV2</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-22:changed:1</id>
+    <published>2025-10-22T00:00:00+00:00</published>
+    <updated>2025-10-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>CrowdStrike Falcon</strong>: Version 67.0</p>
+<ul>
+<li>
+<p>Fixed a bug where the Contains filter would fail to find hosts when the
+  <code>Max Hosts To Return</code> limit was applied in the following action:</p>
+</li>
+<li>
+<p><strong>List Host</strong></p>
+</li>
+</ul>]]></content>
+    <summary>This update addresses a bug affecting host searches with the Contains filter when the Max Hosts To Return limit was active. The issue has been resolved in the List Host action.</summary>
+    <title>Changed: CrowdStrike Falcon v67.0 Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-22:changed:2</id>
+    <published>2025-10-22T00:00:00+00:00</published>
+    <updated>2025-10-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>CSV</strong>: Version 34.0</p>
+<ul>
+<li>
+<p>Fixed a bug that caused inconsistent column order for the same JSON input by
+  stabilizing the order based on the keys of the first object in the list in the
+  following action:</p>
+</li>
+<li>
+<p><strong>Save Json to CSV</strong></p>
+</li>
+</ul>]]></content>
+    <summary>The latest update to our CSV functionality addresses a bug that caused inconsistent column order. The order is now stabilized based on the keys of the first JSON object in a list, ensuring predictable results when using the Save JSON to CSV action.</summary>
+    <title>Changed: CSV Version 34.0</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-22:changed:3</id>
+    <published>2025-10-22T00:00:00+00:00</published>
+    <updated>2025-10-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>DomainTools</strong>: Version 8.0</p>
+<ul>
+<li>
+<p>Extended capabilities in the following action:</p>
+</li>
+<li>
+<p><strong>Get Domain Risk</strong></p>
+</li>
+<li>
+<p>Added support for the domain entity type in the following actions:</p>
+</li>
+<li>
+<p><strong>Get Domain Profile</strong></p>
+</li>
+<li><strong>Get Domain Risk</strong></li>
+<li><strong>Reverse Domain</strong></li>
+</ul>]]></content>
+    <summary>DomainTools has released version 8.0, introducing extended capabilities for the Get Domain Risk action and adding support for the domain entity type in Get Domain Profile, Get Domain Risk, and Reverse Domain actions.</summary>
+    <title>Changed: DomainTools 8.0 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-22:feature:4</id>
+    <published>2025-10-22T00:00:00+00:00</published>
+    <updated>2025-10-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong><code>earliest</code> and <code>latest</code> functions supported in Rules and Dashboards</strong></p>
+<p>The <code>earliest</code> and <code>latest</code> YARA-L functions for statistics and aggregations
+are now supported in Rules and Dashboards, in addition to Search.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#earliest">earliest</a> and <a href="https://docs.cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#latest">latest</a>.</p>]]></content>
+    <summary>The earliest and latest YARA-L functions are now supported in Rules and Dashboards, expanding their usability beyond Search. This feature allows for more advanced statistical analysis and aggregations directly within these tools.</summary>
+    <title>Feature: New Functions Available for Rules and Dashboards</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-21:announcement:0</id>
+    <published>2025-10-21T00:00:00+00:00</published>
+    <updated>2025-10-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Premium <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fw">Fortinet Firewall parser</a> now available as Release Candidate</strong></p>
+<p>This enhanced parser is available as a <strong>Release Candidate</strong> for the next 2 months. To opt in and begin testing it, go to <strong>SIEM Settings &gt; Parsers</strong>. We encourage you to try it out and evaluate the improvements before it becomes the default.</p>]]></content>
+    <summary>The premium Fortinet Firewall parser is now available as a Release Candidate for two months. You can opt in to test it via SIEM Settings &gt; Parsers. We encourage you to evaluate the improvements before it becomes the default.</summary>
+    <title>Announcement: Fortinet Firewall parser now available as Release Candidate</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-21:announcement:1</id>
+    <published>2025-10-21T00:00:00+00:00</published>
+    <updated>2025-10-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Premium <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fw">Fortinet Firewall parser</a> now available as Release Candidate</strong></p>
+<p>This enhanced parser is available as a <strong>Release Candidate</strong> for the next 2 months. To opt in and begin testing it, go to <strong>SIEM Settings &gt; Parsers</strong>. We encourage you to try it out and evaluate the improvements before it becomes the default.</p>]]></content>
+    <summary>A new version of the Fortinet Firewall parser is now available as a Release Candidate. You can test it for the next 2 months via SIEM Settings &gt; Parsers. We encourage you to try it out and evaluate the improvements before it becomes the default.</summary>
+    <title>Announcement: Fortinet Firewall parser now available as Release Candidate</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-19:announcement:0</id>
+    <published>2025-10-19T00:00:00+00:00</published>
+    <updated>2025-10-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Release 6.3.64 is being rolled out to the first phase of regions as listed <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
+<p>This release contains internal and customer bug fixes.</p>]]></content>
+    <summary>The new release 6.3.64 is now available in initial regions. This update includes various bug fixes for both internal systems and our users.</summary>
+    <title>Announcement: Release 6.3.64 Rolling Out</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-18:announcement:0</id>
+    <published>2025-10-18T00:00:00+00:00</published>
+    <updated>2025-10-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#October_05_2025">Release 6.3.63</a> is now available for all regions.</p>]]></content>
+    <summary>The latest release, version 6.3.63, has been rolled out and is now accessible in all regions.</summary>
+    <title>Announcement: Release 6.3.63 Now Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-15:changed:0</id>
+    <published>2025-10-15T00:00:00+00:00</published>
+    <updated>2025-10-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>ThreatQ</strong>: Version 15.0</p>
+<ul>
+<li>
+<p>Updated the API request payload to align with a change in the ThreatQ API in
+  the following actions:</p>
+</li>
+<li>
+<p><strong>Enrich IP</strong></p>
+</li>
+<li><strong>Enrich URL</strong></li>
+<li><strong>Enrich Email</strong></li>
+<li><strong>Enrich Hash</strong></li>
+<li><strong>Enrich CVE</strong></li>
+</ul>]]></content>
+    <summary>The ThreatQ API has been updated in version 15.0. This change affects the API request payload for the Enrich IP, Enrich URL, Enrich Email, Enrich Hash, and Enrich CVE actions.</summary>
+    <title>Changed: ThreatQ v15.0 API Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-15:changed:1</id>
+    <published>2025-10-15T00:00:00+00:00</published>
+    <updated>2025-10-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>UrlScan.io</strong>: Version 26.0</p>
+<ul>
+<li>
+<p>Added ability to scan domains and IPs in the following action:</p>
+</li>
+<li>
+<p><strong>URL Check</strong></p>
+</li>
+</ul>]]></content>
+    <summary>UrlScan.io has been updated to version 26.0. This new version includes the ability to scan domains and IPs within the URL Check action.</summary>
+    <title>Changed: UrlScan.io v26.0</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-15:feature:2</id>
     <published>2025-10-15T00:00:00+00:00</published>
     <updated>2025-10-15T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>CrowdStrike Falcon</strong>: Version 66.0</p>
@@ -28,7 +256,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-15:changed:1</id>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-15:changed:3</id>
     <published>2025-10-15T00:00:00+00:00</published>
     <updated>2025-10-15T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Azure Active Directory</strong>: Version 19.0</p>
@@ -49,7 +277,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-15:changed:2</id>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-15:changed:4</id>
     <published>2025-10-15T00:00:00+00:00</published>
     <updated>2025-10-15T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>CrowdStrike Falcon</strong>: Version 66.0</p>
@@ -75,7 +303,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-15:changed:3</id>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-15:changed:5</id>
     <published>2025-10-15T00:00:00+00:00</published>
     <updated>2025-10-15T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Updated dependencies in the following integrations:</p>
@@ -93,7 +321,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-15:changed:4</id>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-15:changed:6</id>
     <published>2025-10-15T00:00:00+00:00</published>
     <updated>2025-10-15T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Microsoft Teams</strong>: Version 30.0</p>
@@ -108,7 +336,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-15:changed:5</id>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-15:changed:7</id>
     <published>2025-10-15T00:00:00+00:00</published>
     <updated>2025-10-15T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Okta</strong>: Version 10.0</p>
@@ -125,49 +353,6 @@
 </ul>]]></content>
     <summary>Okta version 10.0 includes updates to pagination processing for List Users, Add Group, Get Group, and List Providers actions.</summary>
     <title>Changed: Okta 10.0 Update</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-15:changed:6</id>
-    <published>2025-10-15T00:00:00+00:00</published>
-    <updated>2025-10-15T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>ThreatQ</strong>: Version 15.0</p>
-<ul>
-<li>
-<p>Updated the API request payload to align with a change in the ThreatQ API in
-  the following actions:</p>
-</li>
-<li>
-<p><strong>Enrich IP</strong></p>
-</li>
-<li><strong>Enrich URL</strong></li>
-<li><strong>Enrich Email</strong></li>
-<li><strong>Enrich Hash</strong></li>
-<li><strong>Enrich CVE</strong></li>
-</ul>]]></content>
-    <summary>The ThreatQ API has been updated in version 15.0. This change affects the API request payload for the Enrich IP, Enrich URL, Enrich Email, Enrich Hash, and Enrich CVE actions.</summary>
-    <title>Changed: ThreatQ v15.0 API Update</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-15:changed:7</id>
-    <published>2025-10-15T00:00:00+00:00</published>
-    <updated>2025-10-15T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>UrlScan.io</strong>: Version 26.0</p>
-<ul>
-<li>
-<p>Added ability to scan domains and IPs in the following action:</p>
-</li>
-<li>
-<p><strong>URL Check</strong></p>
-</li>
-</ul>]]></content>
-    <summary>UrlScan.io has been updated to version 26.0. This new version includes the ability to scan domains and IPs within the URL Check action.</summary>
-    <title>Changed: UrlScan.io v26.0</title>
   </entry>
   <entry>
     <author>
@@ -198,6 +383,46 @@
     <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-09:changed:0</id>
     <published>2025-10-09T00:00:00+00:00</published>
     <updated>2025-10-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Workspace</strong>: Version 22.0</p>
+<ul>
+<li>
+<p>Updated the action description to reflect that the action deletes the
+  extension from the blocklist rather than deleting the extension from the
+  organizational unit in the following action:</p>
+</li>
+<li>
+<p><strong>Delete Extension</strong></p>
+</li>
+</ul>]]></content>
+    <summary>The 'Delete Extension' action in Google Workspace now unblocks extensions instead of deleting them from organizational units.</summary>
+    <title>Changed: Extension unblocked</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-09:changed:1</id>
+    <published>2025-10-09T00:00:00+00:00</published>
+    <updated>2025-10-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Chronicle</strong>: Version 66.0</p>
+<ul>
+<li>
+<p>Updated processing of reference list rows in the following action:</p>
+</li>
+<li>
+<p><strong>Get Reference Lists</strong></p>
+</li>
+</ul>]]></content>
+    <summary>Version 66.0 of Google Chronicle has been released, featuring an update to the processing of reference list rows within the Get Reference Lists action.</summary>
+    <title>Changed: Google Chronicle Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-09:changed:2</id>
+    <published>2025-10-09T00:00:00+00:00</published>
+    <updated>2025-10-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Google Threat Intelligence</strong>: Version 5.0</p>
 <ul>
 <li>
@@ -220,7 +445,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-09:changed:1</id>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-09:changed:3</id>
     <published>2025-10-09T00:00:00+00:00</published>
     <updated>2025-10-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Microsoft Teams</strong>: Version 29.0</p>
@@ -240,85 +465,15 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-09:changed:2</id>
-    <published>2025-10-09T00:00:00+00:00</published>
-    <updated>2025-10-09T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Google Workspace</strong>: Version 22.0</p>
-<ul>
-<li>
-<p>Updated the action description to reflect that the action deletes the
-  extension from the blocklist rather than deleting the extension from the
-  organizational unit in the following action:</p>
-</li>
-<li>
-<p><strong>Delete Extension</strong></p>
-</li>
-</ul>]]></content>
-    <summary>The 'Delete Extension' action in Google Workspace now unblocks extensions instead of deleting them from organizational units.</summary>
-    <title>Changed: Extension unblocked</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-09:changed:3</id>
-    <published>2025-10-09T00:00:00+00:00</published>
-    <updated>2025-10-09T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Google Chronicle</strong>: Version 66.0</p>
-<ul>
-<li>
-<p>Updated processing of reference list rows in the following action:</p>
-</li>
-<li>
-<p><strong>Get Reference Lists</strong></p>
-</li>
-</ul>]]></content>
-    <summary>Version 66.0 of Google Chronicle has been released, featuring an update to the processing of reference list rows within the Get Reference Lists action.</summary>
-    <title>Changed: Google Chronicle Update</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-09:feature:4</id>
-    <published>2025-10-09T00:00:00+00:00</published>
-    <updated>2025-10-09T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Customize Events table columns in Search</strong></p>
-<p>You can now specify which columns appear in the <strong>Events</strong> table on the
-<strong>Search</strong> page and in tables within your dashboard widgets. Use the <code>select</code>
-and <code>unselect</code> keywords to define the displayed columns.</p>
-<p>For more information, see <a href="https://cloud.google.com/chronicle/docs/investigation/select-unselect">Control columns using select and unselect keywords</a>.</p>]]></content>
-    <summary>You can now customize the columns displayed in the Events table on the Search page and in dashboard widgets using the select and unselect keywords.</summary>
-    <title>Feature: Customize Events table columns in Search</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-09:feature:5</id>
-    <published>2025-10-09T00:00:00+00:00</published>
-    <updated>2025-10-09T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Customize Events table columns in Search</strong></p>
-<p>You can now specify which columns appear in the <strong>Events</strong> table on the
-<strong>Search</strong> page and in tables within your dashboard widgets. Use the <code>select</code>
-and <code>unselect</code> keywords to define the displayed columns.</p>
-<p>For more information, see <a href="https://cloud.google.com/chronicle/docs/investigation/select-unselect">Control columns using select and unselect keywords</a>.</p>]]></content>
-    <summary>You can now customize the columns displayed in the Events table on the Search page and in dashboard widgets using the select and unselect keywords.</summary>
-    <title>Feature: Customize Events table columns in Search</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
     <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-08:feature:0</id>
     <published>2025-10-08T00:00:00+00:00</published>
     <updated>2025-10-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Multi-stage queries in YARA-L</strong></p>
 <p>This feature is currently in Preview.</p>
 <p>Multi-stage queries in YARA-L are now available as a Preview feature. Multi-stage queries in YARA-L let you feed the output of one query stage directly into the input of a subsequent stage. This process gives you greater control over data transformation than single, monolithic query. They are supported in both <strong>Dashboards</strong> and <strong>Search</strong>. Multi-stage queries can contain between 1 and 4 named stages, in addition to a root stage.</p>
-<p>For more information, see <a href="https://cloud.google.com/chronicle/docs/investigation/multi-stage-yaral">Create multi-stage queries in YARA-L</a>.</p>]]></content>
-    <summary>You can now use multi-stage YARA-L queries in Dashboards and Search. This feature allows the output of one query stage to be used as input for the next, giving you more control over data transformation.</summary>
-    <title>Feature: Multi-stage YARA-L Queries Now in Preview</title>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/multi-stage-yaral">Create multi-stage queries in YARA-L</a>.</p>]]></content>
+    <summary>Introducing multi-stage queries in YARA-L, now in Preview. This feature allows the output of one query stage to be used as input for another, offering enhanced control over data transformation. Supported in Dashboards and Search, these queries can include up to four named stages plus a root stage.</summary>
+    <title>Feature: Multi-stage Queries in YARA-L</title>
   </entry>
   <entry>
     <author>
@@ -330,33 +485,75 @@ and <code>unselect</code> keywords to define the displayed columns.</p>
     <content type="html"><![CDATA[<p><strong>Multi-stage queries in YARA-L</strong></p>
 <p>This feature is currently in Preview.</p>
 <p>Multi-stage queries in YARA-L are now available as a Preview feature. Multi-stage queries in YARA-L let you feed the output of one query stage directly into the input of a subsequent stage. This process gives you greater control over data transformation than single, monolithic query. They are supported in both <strong>Dashboards</strong> and <strong>Search</strong>. Multi-stage queries can contain between 1 and 4 named stages, in addition to a root stage.</p>
-<p>For more information, see <a href="https://cloud.google.com/chronicle/docs/investigation/multi-stage-yaral">Create multi-stage queries in YARA-L</a>.</p>]]></content>
-    <summary>You can now use multi-stage YARA-L queries in Dashboards and Search. This feature allows the output of one query stage to be used as input for the next, giving you more control over data transformation.</summary>
-    <title>Feature: Multi-stage YARA-L Queries Now in Preview</title>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/multi-stage-yaral">Create multi-stage queries in YARA-L</a>.</p>]]></content>
+    <summary>You can now use multi-stage queries in YARA-L, a feature that allows the output of one query stage to be used as input for another. This provides enhanced control over data transformation compared to single, monolithic queries. The feature is available in both Dashboards and Search and supports up to four named stages plus a root stage.</summary>
+    <title>Feature: Multi-stage YARA-L queries now in Preview</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-07:announcement:0</id>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-07:feature:0</id>
     <published>2025-10-07T00:00:00+00:00</published>
     <updated>2025-10-07T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Azure AD Organizational Context default parser rollback</strong></p>
-<p>The recent update to the pre-built Azure AD Organizational Context (<code>AZURE_AD_CONTEXT</code>) parser has been rolled back. This action was necessary to resolve a performance degradation issue that was introduced in the latest parser version. For more information about the exact changes and rollback timeline, see the <a href="https://cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage_parser_updates">change log for the pre-built parser</a>.</p>]]></content>
-    <summary>The recent update to the Azure AD Organizational Context parser has been rolled back due to performance issues. For more details, please refer to the change log.</summary>
-    <title>Announcement: Azure AD Organizational Context Parser Rolled Back</title>
+    <content type="html"><![CDATA[<p><strong>Manage parser versions</strong></p>
+<p>This feature is in preview.</p>
+<p>You now have granular control over how new pre-built parser versions are deployed within your environment.</p>
+<p>This feature lets you manage parser updates by taking the following actions:</p>
+<ul>
+<li>Opt in or opt out of automatic parser updates.</li>
+<li>Review and compare the processing logic between different parser versions.</li>
+<li>Manually update a parser to a newer version.</li>
+<li>Revert to a previously deployed, stable parser version.</li>
+</ul>
+<p>For details, see <a href="https://docs.cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage-parser-versions">Manage prebuilt parser versions</a>.</p>]]></content>
+    <summary>Gain granular control over parser updates, with options to opt in/out of automatic updates, review logic, and manually update or revert versions.</summary>
+    <title>Feature: Manage parser versions</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-07:announcement:1</id>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-07:feature:1</id>
+    <published>2025-10-07T00:00:00+00:00</published>
+    <updated>2025-10-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Manage parser versions</strong></p>
+<p>This feature is in preview.</p>
+<p>You now have granular control over how new pre-built parser versions are deployed within your environment.</p>
+<p>This feature lets you manage parser updates by taking the following actions:</p>
+<ul>
+<li>Opt in or opt out of automatic parser updates.</li>
+<li>Review and compare the processing logic between different parser versions.</li>
+<li>Manually update a parser to a newer version.</li>
+<li>Revert to a previously deployed, stable parser version.</li>
+</ul>
+<p>For details, see <a href="https://docs.cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage-parser-versions">Manage prebuilt parser versions</a>.</p>]]></content>
+    <summary>Control your parser updates by opting in or out of automatic updates, reviewing logic, and manually updating or reverting to previous versions.</summary>
+    <title>Feature: Manage parser versions</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-07:announcement:2</id>
     <published>2025-10-07T00:00:00+00:00</published>
     <updated>2025-10-07T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Azure AD Organizational Context default parser rollback</strong></p>
-<p>The recent update to the pre-built Azure AD Organizational Context (<code>AZURE_AD_CONTEXT</code>) parser has been rolled back. This action was necessary to resolve a performance degradation issue that was introduced in the latest parser version. For more information about the exact changes and rollback timeline, see the <a href="https://cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage_parser_updates">change log for the pre-built parser</a>.</p>]]></content>
-    <summary>The recent update to the Azure AD Organizational Context parser has been rolled back due to performance issues. For more details, please refer to the change log.</summary>
-    <title>Announcement: Azure AD Organizational Context Parser Rolled Back</title>
+<p>The recent update to the pre-built Azure AD Organizational Context (<code>AZURE_AD_CONTEXT</code>) parser has been rolled back. This action was necessary to resolve a performance degradation issue that was introduced in the latest parser version. For more information about the exact changes and rollback timeline, see the <a href="https://docs.cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage_parser_updates">change log for the pre-built parser</a>.</p>]]></content>
+    <summary>The Azure AD Organizational Context parser has been rolled back due to performance issues.</summary>
+    <title>Announcement: Azure AD Organizational Context parser rollback</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-07:announcement:3</id>
+    <published>2025-10-07T00:00:00+00:00</published>
+    <updated>2025-10-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Azure AD Organizational Context default parser rollback</strong></p>
+<p>The recent update to the pre-built Azure AD Organizational Context (<code>AZURE_AD_CONTEXT</code>) parser has been rolled back. This action was necessary to resolve a performance degradation issue that was introduced in the latest parser version. For more information about the exact changes and rollback timeline, see the <a href="https://docs.cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage_parser_updates">change log for the pre-built parser</a>.</p>]]></content>
+    <summary>The Azure AD Organizational Context parser has been rolled back due to performance issues.</summary>
+    <title>Announcement: Azure AD Organizational Context parser rollback</title>
   </entry>
   <entry>
     <author>
@@ -369,8 +566,8 @@ and <code>unselect</code> keywords to define the displayed columns.</p>
 <p>This feature is in preview.</p>
 <p>This feature is available for Google SecOps Enterprise Plus customers only.</p>
 <p>Advanced BigQuery Export automatically provisions and manages essential Google SecOps datasets in a secure, Google-managed BigQuery project. You gain secure, read-only access to this data through a BigQuery linked dataset, which appears directly in your own Google Cloud project. This functionality lets you query your security data as if it were stored locally, but without the overhead of managing the data pipeline or storage.</p>
-<p>For details, see <a href="https://cloud.google.com/chronicle/docs/reports/bigquery-export">Use Advanced BigQuery Export</a>.</p>]]></content>
-    <summary>Securely access your Google SecOps data in BigQuery. This feature automatically provisions and manages datasets, providing read-only access within your own Google Cloud project without pipeline management overhead.</summary>
+<p>For details, see <a href="https://docs.cloud.google.com/chronicle/docs/reports/bigquery-export">Use Advanced BigQuery Export</a>.</p>]]></content>
+    <summary>Automatically provision and manage essential Google SecOps datasets in BigQuery. Gain secure, read-only access to your security data in your own Google Cloud project without managing data pipelines or storage.</summary>
     <title>Feature: Advanced BigQuery Export</title>
   </entry>
   <entry>
@@ -383,39 +580,39 @@ and <code>unselect</code> keywords to define the displayed columns.</p>
     <content type="html"><![CDATA[<p><strong>New parser documentation now available</strong></p>
 <p>New parser documentation is available to help you ingest and normalize logs from the following sources:</p>
 <ul>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/asoc-alert">Collect AlphaSOC alert logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/rippling-activitylogs">Collect AlphaSOC alert logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-sdwan">Collect Cisco vManage SD-WAN logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-analytics">Collect Citrix Analytics logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-ms">Collect Citrix Monitor Service logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-storefront">Collect Citrix StoreFront logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/delinea-sso">Collect Delinea SSO logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sailpoint-iam">Collect SailPoint IAM logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sentry">Collect Sentry logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/snipe-it">Collect Snipe-IT logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-av">Collect Sophos AV logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-cap8">Collect Sophos Capsule8 logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-dhcp">Collect Sophos DHCP logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-edr">Collect Sophos Intercept EDR logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/swimlane">Collect Swimlane Platform logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-wss">Collect Symantec WSS logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tailscale">Collect Tailscale logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-asset">Collect Tanium Asset logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-audit">Collect Tanium audit logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-comply">Collect Tanium Comply logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-discover">Collect Tanium Discover logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-insight">Collect Tanium Insight logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-im">Collect Tanium Integrity Monitor logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-patch">Collect Tanium Patch logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-question">Collect Tanium Question logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-reveal">Collect Tanium Reveal logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-stream">Collect Tanium Stream logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-tr">Collect Tanium Threat Response logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/teamviewer">Collect TeamViewer logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tines">Collect Tines audit logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/asoc-alert">Collect AlphaSOC alert logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/rippling-activitylogs">Collect AlphaSOC alert logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-sdwan">Collect Cisco vManage SD-WAN logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-analytics">Collect Citrix Analytics logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-ms">Collect Citrix Monitor Service logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-storefront">Collect Citrix StoreFront logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/delinea-sso">Collect Delinea SSO logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sailpoint-iam">Collect SailPoint IAM logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sentry">Collect Sentry logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/snipe-it">Collect Snipe-IT logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-av">Collect Sophos AV logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-cap8">Collect Sophos Capsule8 logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-dhcp">Collect Sophos DHCP logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-edr">Collect Sophos Intercept EDR logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/swimlane">Collect Swimlane Platform logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-wss">Collect Symantec WSS logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tailscale">Collect Tailscale logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-asset">Collect Tanium Asset logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-audit">Collect Tanium audit logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-comply">Collect Tanium Comply logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-discover">Collect Tanium Discover logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-insight">Collect Tanium Insight logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-im">Collect Tanium Integrity Monitor logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-patch">Collect Tanium Patch logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-question">Collect Tanium Question logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-reveal">Collect Tanium Reveal logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-stream">Collect Tanium Stream logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-tr">Collect Tanium Threat Response logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/teamviewer">Collect TeamViewer logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tines">Collect Tines audit logs</a></li>
 </ul>]]></content>
-    <summary>New documentation is now available to help you ingest and normalize logs from various sources. This includes detailed guides for collecting logs from AlphaSOC, Cisco, Citrix, Delinea, SailPoint, Sentry, Snipe-IT, Sophos, Swimlane, Symantec, Tailscale, Tanium, TeamViewer, and Tines.</summary>
-    <title>Announcement: New parser documentation available</title>
+    <summary>New documentation is now available to help you ingest and normalize logs from various sources, including AlphaSOC, Cisco, Citrix, Delinea, SailPoint, Sentry, Snipe-IT, Sophos, Swimlane, Symantec, Tailscale, Tanium, TeamViewer, and Tines.</summary>
+    <title>Announcement: New Parser Documentation Available</title>
   </entry>
   <entry>
     <author>
@@ -427,39 +624,39 @@ and <code>unselect</code> keywords to define the displayed columns.</p>
     <content type="html"><![CDATA[<p><strong>New parser documentation now available</strong></p>
 <p>New parser documentation is available to help you ingest and normalize logs from the following sources:</p>
 <ul>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/asoc-alert">Collect AlphaSOC alert logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/rippling-activitylogs">Collect AlphaSOC alert logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-sdwan">Collect Cisco vManage SD-WAN logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-analytics">Collect Citrix Analytics logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-ms">Collect Citrix Monitor Service logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-storefront">Collect Citrix StoreFront logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/delinea-sso">Collect Delinea SSO logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sailpoint-iam">Collect SailPoint IAM logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sentry">Collect Sentry logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/snipe-it">Collect Snipe-IT logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-av">Collect Sophos AV logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-cap8">Collect Sophos Capsule8 logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-dhcp">Collect Sophos DHCP logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-edr">Collect Sophos Intercept EDR logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/swimlane">Collect Swimlane Platform logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-wss">Collect Symantec WSS logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tailscale">Collect Tailscale logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-asset">Collect Tanium Asset logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-audit">Collect Tanium audit logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-comply">Collect Tanium Comply logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-discover">Collect Tanium Discover logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-insight">Collect Tanium Insight logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-im">Collect Tanium Integrity Monitor logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-patch">Collect Tanium Patch logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-question">Collect Tanium Question logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-reveal">Collect Tanium Reveal logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-stream">Collect Tanium Stream logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-tr">Collect Tanium Threat Response logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/teamviewer">Collect TeamViewer logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tines">Collect Tines audit logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/asoc-alert">Collect AlphaSOC alert logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/rippling-activitylogs">Collect AlphaSOC alert logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-sdwan">Collect Cisco vManage SD-WAN logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-analytics">Collect Citrix Analytics logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-ms">Collect Citrix Monitor Service logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-storefront">Collect Citrix StoreFront logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/delinea-sso">Collect Delinea SSO logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sailpoint-iam">Collect SailPoint IAM logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sentry">Collect Sentry logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/snipe-it">Collect Snipe-IT logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-av">Collect Sophos AV logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-cap8">Collect Sophos Capsule8 logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-dhcp">Collect Sophos DHCP logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-edr">Collect Sophos Intercept EDR logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/swimlane">Collect Swimlane Platform logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-wss">Collect Symantec WSS logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tailscale">Collect Tailscale logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-asset">Collect Tanium Asset logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-audit">Collect Tanium audit logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-comply">Collect Tanium Comply logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-discover">Collect Tanium Discover logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-insight">Collect Tanium Insight logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-im">Collect Tanium Integrity Monitor logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-patch">Collect Tanium Patch logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-question">Collect Tanium Question logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-reveal">Collect Tanium Reveal logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-stream">Collect Tanium Stream logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-tr">Collect Tanium Threat Response logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/teamviewer">Collect TeamViewer logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tines">Collect Tines audit logs</a></li>
 </ul>]]></content>
-    <summary>New documentation is now available to help you ingest and normalize logs from various sources. This includes detailed guides for collecting logs from AlphaSOC, Cisco, Citrix, Delinea, SailPoint, Sentry, Snipe-IT, Sophos, Swimlane, Symantec, Tailscale, Tanium, TeamViewer, and Tines.</summary>
-    <title>Announcement: New parser documentation available</title>
+    <summary>New documentation is now available to assist with ingesting and normalizing logs from various sources. This includes detailed guides for collecting logs from services such as AlphaSOC, Cisco vManage, Citrix, Delinea, SailPoint, Sentry, Sophos, and many more.</summary>
+    <title>Announcement: New Parser Documentation Available</title>
   </entry>
   <entry>
     <author>
@@ -468,10 +665,10 @@ and <code>unselect</code> keywords to define the displayed columns.</p>
     <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-05:announcement:2</id>
     <published>2025-10-05T00:00:00+00:00</published>
     <updated>2025-10-05T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Release 6.3.63 is being rolled out to the first phase of regions as listed <a href="https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
+    <content type="html"><![CDATA[<p>Release 6.3.63 is being rolled out to the first phase of regions as listed <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
 <p>This release contains internal and customer bug fixes.</p>]]></content>
-    <summary>Release 6.3.63 is now available in initial regions. This update includes important bug fixes for both internal systems and customers.</summary>
-    <title>Announcement: Release 6.3.63 Rollout</title>
+    <summary>The latest release, version 6.3.63, is now being deployed in the initial set of regions. This update includes various bug fixes for both internal systems and our customers.</summary>
+    <title>Announcement: Release 6.3.63 Rolling Out</title>
   </entry>
   <entry>
     <author>
@@ -480,8 +677,8 @@ and <code>unselect</code> keywords to define the displayed columns.</p>
     <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-10-04:announcement:0</id>
     <published>2025-10-04T00:00:00+00:00</published>
     <updated>2025-10-04T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><a href="https://cloud.google.com/chronicle/docs/soar/release-notes#September_28_2025">Release 6.3.62</a> is now available for all regions.</p>]]></content>
-    <summary>The latest release, version 6.3.62, is now available in all regions.</summary>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#September_28_2025">Release 6.3.62</a> is now available for all regions.</p>]]></content>
+    <summary>The latest release, version 6.3.62, is now available in all regions. This update includes improvements and new features for our users.</summary>
     <title>Announcement: Release 6.3.62 Available</title>
   </entry>
   <entry>
@@ -495,9 +692,9 @@ and <code>unselect</code> keywords to define the displayed columns.</p>
 <p>Google SecOps has expanded its coverage of Customer-Managed Encryption Key
 (CMEK) compliance to now include support for data tables.</p>
 <p>For more information, see
-<a href="https://cloud.google.com/chronicle/docs/secops/cmek_for_secops">CMEK for Google SecOps</a>.</p>]]></content>
-    <summary>Google SecOps now supports Customer-Managed Encryption Key (CMEK) compliance for data tables. This expansion enhances security and compliance for your data within Google SecOps.</summary>
-    <title>Changed: Customer-managed encryption key compliance now includes support for data tables</title>
+<a href="https://docs.cloud.google.com/chronicle/docs/secops/cmek_for_secops">CMEK for Google SecOps</a>.</p>]]></content>
+    <summary>Google SecOps now supports Customer-Managed Encryption Key (CMEK) compliance for data tables. This expansion enhances security and compliance for your data. For more details, refer to the CMEK for Google SecOps documentation.</summary>
+    <title>Changed: Customer-Managed Encryption Key Compliance</title>
   </entry>
   <entry>
     <author>
@@ -510,9 +707,9 @@ and <code>unselect</code> keywords to define the displayed columns.</p>
 <p>Google SecOps has expanded its coverage of Customer-Managed Encryption Key
 (CMEK) compliance to now include support for data tables.</p>
 <p>For more information, see
-<a href="https://cloud.google.com/chronicle/docs/secops/cmek_for_secops">CMEK for Google SecOps</a>.</p>]]></content>
-    <summary>Google SecOps now supports Customer-Managed Encryption Key (CMEK) compliance for data tables. This expansion enhances security and compliance for your data within Google SecOps.</summary>
-    <title>Changed: Customer-managed encryption key compliance now includes support for data tables</title>
+<a href="https://docs.cloud.google.com/chronicle/docs/secops/cmek_for_secops">CMEK for Google SecOps</a>.</p>]]></content>
+    <summary>Google SecOps now supports Customer-Managed Encryption Keys (CMEK) for data tables, enhancing compliance capabilities.</summary>
+    <title>Changed: Customer-Managed Encryption Key Compliance Extended to Data Tables</title>
   </entry>
   <entry>
     <author>
@@ -525,8 +722,8 @@ and <code>unselect</code> keywords to define the displayed columns.</p>
 <p>You can now specify which columns appear in the <strong>Events</strong> table on the
 <strong>Search</strong> page and in <strong>tables</strong> within your <strong>dashboard widgets</strong>. Use the <code>select</code>
 and <code>unselect</code> keywords to define the displayed columns.</p>
-<p>For more information, see <a href="https://cloud.google.com/chronicle/docs/investigation/select-unselect">Control columns using select and unselect keywords</a>.</p>]]></content>
-    <summary>You can now choose which columns appear in the Events table on the Search page and in tables within your dashboard widgets. Use the select and unselect keywords to define the displayed columns.</summary>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/select-unselect">Control columns using select and unselect keywords</a>.</p>]]></content>
+    <summary>You can now specify which columns appear in the Events table on the Search page and in tables within your dashboard widgets. Use the `select` and `unselect` keywords to define the displayed columns.</summary>
     <title>Feature: Customize Events table columns in Search</title>
   </entry>
   <entry>
@@ -540,8 +737,8 @@ and <code>unselect</code> keywords to define the displayed columns.</p>
 <p>You can now specify which columns appear in the <strong>Events</strong> table on the
 <strong>Search</strong> page and in <strong>tables</strong> within your <strong>dashboard widgets</strong>. Use the <code>select</code>
 and <code>unselect</code> keywords to define the displayed columns.</p>
-<p>For more information, see <a href="https://cloud.google.com/chronicle/docs/investigation/select-unselect">Control columns using select and unselect keywords</a>.</p>]]></content>
-    <summary>You can now choose which columns appear in the Events table on the Search page and in tables within your dashboard widgets. Use the select and unselect keywords to define the displayed columns.</summary>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/select-unselect">Control columns using select and unselect keywords</a>.</p>]]></content>
+    <summary>Control which columns appear in the Events table on the Search page and in dashboard widgets using select and unselect keywords.</summary>
     <title>Feature: Customize Events table columns in Search</title>
   </entry>
   <entry>
@@ -554,15 +751,15 @@ and <code>unselect</code> keywords to define the displayed columns.</p>
     <content type="html"><![CDATA[<p><strong>Forwarder component: end-of-life and migration</strong></p>
 <p>The forwarder component is being phased out of the Google SecOps platform and will reach end-of-life (EOL) in January 2027. This impact will change all any data collection pipelines that currently use the forwarder.</p>
 <p><strong>Action required</strong>: If you're currently using the forwarder component, you must migrate your data collection workflows to an alternative mechanism before April 1, 2027. You'll need to use another data pipeline management application for log ingestion.</p>
-<p>We recommend that you migrate to the <a href="https://cloud.google.com/chronicle/docs/ingestion/use-bindplane-agent">Bindplane OpenTelemetry (OTel) collector</a>, which provides a scalable, open-standard solution for log and metric ingestion.</p>
+<p>We recommend that you migrate to the <a href="https://docs.cloud.google.com/chronicle/docs/ingestion/use-bindplane-agent">Bindplane OpenTelemetry (OTel) collector</a>, which provides a scalable, open-standard solution for log and metric ingestion.</p>
 <p>The following are key dates to note:</p>
 <ul>
 <li><strong>Apr 1, 2026</strong>: New Google SecOps customers cannot use the forwarder component.</li>
 <li><strong>Jan 1, 2027</strong>: The forwarder is officially EOL. No further patches, including security patches, will be released.</li>
 <li><strong>Apr 1, 2027</strong>: Data is no longer allowed to be ingested from the forwarder component.</li>
 </ul>]]></content>
-    <summary>The forwarder component is being phased out and will reach end-of-life in January 2027. Users must migrate data collection workflows to an alternative before April 1, 2027.</summary>
-    <title>Announcement: Forwarder Component End-of-Life</title>
+    <summary>The forwarder component is being phased out and will reach end-of-life in January 2027. Action is required to migrate data collection workflows to an alternative mechanism before April 1, 2027.</summary>
+    <title>Announcement: Forwarder component EOL</title>
   </entry>
   <entry>
     <author>
@@ -574,14 +771,14 @@ and <code>unselect</code> keywords to define the displayed columns.</p>
     <content type="html"><![CDATA[<p><strong>Forwarder component: end-of-life and migration</strong></p>
 <p>The forwarder component is being phased out of the Google SecOps platform and will reach end-of-life (EOL) in January 2027. This impact will change all any data collection pipelines that currently use the forwarder.</p>
 <p><strong>Action required</strong>: If you're currently using the forwarder component, you must migrate your data collection workflows to an alternative mechanism before April 1, 2027. You'll need to use another data pipeline management application for log ingestion.</p>
-<p>We recommend that you migrate to the <a href="https://cloud.google.com/chronicle/docs/ingestion/use-bindplane-agent">Bindplane OpenTelemetry (OTel) collector</a>, which provides a scalable, open-standard solution for log and metric ingestion.</p>
+<p>We recommend that you migrate to the <a href="https://docs.cloud.google.com/chronicle/docs/ingestion/use-bindplane-agent">Bindplane OpenTelemetry (OTel) collector</a>, which provides a scalable, open-standard solution for log and metric ingestion.</p>
 <p>The following are key dates to note:</p>
 <ul>
 <li><strong>Apr 1, 2026</strong>: New Google SecOps customers cannot use the forwarder component.</li>
 <li><strong>Jan 1, 2027</strong>: The forwarder is officially EOL. No further patches, including security patches, will be released.</li>
 <li><strong>Apr 1, 2027</strong>: Data is no longer allowed to be ingested from the forwarder component.</li>
 </ul>]]></content>
-    <summary>The forwarder component is being phased out and will reach end-of-life in January 2027. Users must migrate data collection workflows to an alternative before April 1, 2027.</summary>
+    <summary>The forwarder component will be phased out by January 2027. Please migrate your data collection workflows to an alternative solution before April 1, 2027.</summary>
     <title>Announcement: Forwarder Component End-of-Life</title>
   </entry>
   <entry>
@@ -602,11 +799,11 @@ interruption, you may need to update your API permissions.</p>
 </ul>
 <p>To prevent disruption to your CrowdStrike data ingestion, you must update your API
 client permissions before September 30, 2025.
-Follow the instructions in <a href="https://cloud.google.com/chronicle/docs/detection/migrate-detects-api-to-alerts-api">Migrate from CrowdStrike Detects API to Alerts API</a>
+Follow the instructions in <a href="https://docs.cloud.google.com/chronicle/docs/detection/migrate-detects-api-to-alerts-api">Migrate from CrowdStrike Detects API to Alerts API</a>
 to migrate your configuration to use the Alerts API.</p>
 <p>For more details, see <a href="https://supportportal.crowdstrike.com/s/article/Tech-Alert-30-Day-Notice-Planned-Decommission-Announcement-of-the-DetectionSummaryEvent-and-detects-API">CrowdStrike’s official decommissioning notice</a>.</p>]]></content>
-    <summary>The CrowdStrike Detects API is being decommissioned on September 30, 2025, and replaced by the Alerts API. Update your API permissions to avoid data interruption if you use the CrowdStrike Detection Monitoring API connector with the CS_DETECTS log type and your API client lacks read alerts permission.</summary>
-    <title>Announcement: CrowdStrike API Update Required</title>
+    <summary>CrowdStrike is decommissioning its Detects API on September 30, 2025, replaced by the Alerts API. Update your API permissions before this date to avoid data interruption if you use the CrowdStrike Detection Monitoring API connector and your client lacks alert read permissions. Refer to Google Cloud documentation for migration instructions.</summary>
+    <title>Announcement: CrowdStrike API Update</title>
   </entry>
   <entry>
     <author>
@@ -626,10 +823,10 @@ interruption, you may need to update your API permissions.</p>
 </ul>
 <p>To prevent disruption to your CrowdStrike data ingestion, you must update your API
 client permissions before September 30, 2025.
-Follow the instructions in <a href="https://cloud.google.com/chronicle/docs/detection/migrate-detects-api-to-alerts-api">Migrate from CrowdStrike Detects API to Alerts API</a>
+Follow the instructions in <a href="https://docs.cloud.google.com/chronicle/docs/detection/migrate-detects-api-to-alerts-api">Migrate from CrowdStrike Detects API to Alerts API</a>
 to migrate your configuration to use the Alerts API.</p>
 <p>For more details, see <a href="https://supportportal.crowdstrike.com/s/article/Tech-Alert-30-Day-Notice-Planned-Decommission-Announcement-of-the-DetectionSummaryEvent-and-detects-API">CrowdStrike’s official decommissioning notice</a>.</p>]]></content>
-    <summary>CrowdStrike is decommissioning its Detects API on September 30, 2025. Update your API permissions to use the Alerts API and prevent data ingestion disruption.</summary>
+    <summary>CrowdStrike is decommissioning its Detects API on September 30, 2025, and replacing it with the Alerts API. If you use the CrowdStrike Detection Monitoring API connector and your API client lacks permissions to read alerts, you must update your permissions before the deadline to avoid data ingestion disruption.</summary>
     <title>Announcement: CrowdStrike API Update Required</title>
   </entry>
   <entry>
@@ -641,8 +838,8 @@ to migrate your configuration to use the Alerts API.</p>
     <updated>2025-09-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Podman support for Remote Agents</strong></p>
 <p>You can now install a Remote Agent using Podman. This new functionality provides a streamlined deployment workflow—a lightweight alternative to existing installation methods.
-For details, see <a href="https://cloud.google.com/chronicle/docs/soar/working-with-remote-agents/deploy-agent-with-podman">Deploy an agent with Podman</a>.</p>]]></content>
-    <summary>Install a Remote Agent using Podman for a streamlined deployment.</summary>
+For details, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/working-with-remote-agents/deploy-agent-with-podman">Deploy an agent with Podman</a>.</p>]]></content>
+    <summary>Deploy remote agents using Podman for a streamlined, lightweight installation. See the documentation for details.</summary>
     <title>Feature: Podman support for Remote Agents</title>
   </entry>
   <entry>
@@ -654,9 +851,9 @@ For details, see <a href="https://cloud.google.com/chronicle/docs/soar/working-w
     <updated>2025-09-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Debian support for remote agents</strong></p>
 <p>You can now install a Remote Agent using Debian. This new functionality provides a streamlined deployment workflow—an alternative to existing installation methods.
-For details, see <a href="https://cloud.google.com/chronicle/docs/soar/working-with-remote-agents/create-agent-with-installer-on-debian">Deploy an agent with Debian</a>.</p>]]></content>
-    <summary>Debian is now supported for remote agents, offering a simpler deployment option.</summary>
-    <title>Feature: Remote Agent Debian Support</title>
+For details, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/working-with-remote-agents/create-agent-with-installer-on-debian">Deploy an agent with Debian</a>.</p>]]></content>
+    <summary>Install a Remote Agent using Debian for a streamlined deployment.</summary>
+    <title>Feature: Remote Agent on Debian</title>
   </entry>
   <entry>
     <author>
@@ -700,10 +897,10 @@ For details, see <a href="https://cloud.google.com/chronicle/docs/soar/working-w
     <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-09-28:announcement:9</id>
     <published>2025-09-28T00:00:00+00:00</published>
     <updated>2025-09-28T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Release 6.3.62 is being rolled out to the first phase of regions, as outlined in our <a href="https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">Google SecOps release plan</a>.</p>
+    <content type="html"><![CDATA[<p>Release 6.3.62 is being rolled out to the first phase of regions, as outlined in our <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">Google SecOps release plan</a>.</p>
 <p>This release contains the following changes:</p>]]></content>
-    <summary>The new release 6.3.62 is now available in initial regions, following the established release plan. This update includes several important changes.</summary>
-    <title>Announcement: Release 6.3.62 Rollout</title>
+    <summary>The new release 6.3.62 is now available in initial regions.</summary>
+    <title>Announcement: Release 6.3.62 Rolling Out</title>
   </entry>
   <entry>
     <author>
@@ -714,9 +911,9 @@ For details, see <a href="https://cloud.google.com/chronicle/docs/soar/working-w
     <updated>2025-09-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Podman support for Remote Agents</strong></p>
 <p>You can now install a Remote Agent using Podman. This new functionality provides a streamlined deployment workflow—a lightweight alternative to existing installation methods.</p>
-<p>For more information, see <a href="https://cloud.google.com/chronicle/docs/soar/working-with-remote-agents/deploy-agent-with-podman">Deploy an agent with Podman</a>.</p>]]></content>
-    <summary>Deploy remote agents using Podman for a streamlined, lightweight alternative to existing installation methods.</summary>
-    <title>Feature: Podman Support for Remote Agents</title>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/working-with-remote-agents/deploy-agent-with-podman">Deploy an agent with Podman</a>.</p>]]></content>
+    <summary>Install a Remote Agent using Podman for a streamlined, lightweight deployment.</summary>
+    <title>Feature: Podman support for Remote Agents</title>
   </entry>
   <entry>
     <author>
@@ -727,9 +924,9 @@ For details, see <a href="https://cloud.google.com/chronicle/docs/soar/working-w
     <updated>2025-09-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Deploy an agent with Debian</strong></p>
 <p>You can now install a Remote Agent using Debian. This new functionality provides a streamlined deployment workflow—an alternative to existing installation methods.</p>
-<p>For more information, see <a href="https://cloud.google.com/chronicle/docs/soar/working-with-remote-agents/create-agent-with-installer-on-debian">Deploy an agent with Debian</a>.</p>]]></content>
-    <summary>You can now install a Remote Agent using Debian. This new functionality provides a streamlined deployment workflow—an alternative to existing installation methods.</summary>
-    <title>Feature: Deploy an agent with Debian</title>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/working-with-remote-agents/create-agent-with-installer-on-debian">Deploy an agent with Debian</a>.</p>]]></content>
+    <summary>Install a Remote Agent using Debian for streamlined deployment.</summary>
+    <title>Feature: Deploy Agent on Debian</title>
   </entry>
   <entry>
     <author>
@@ -778,8 +975,8 @@ For details, see <a href="https://cloud.google.com/chronicle/docs/soar/working-w
 <p>You can now use joins in statistical Search queries that include a <code>match</code> section
 to correlate data from multiple sources. This feature lets you link related
 sources directly within a single query.</p>
-<p>For more information, see <a href="https://cloud.google.com/chronicle/docs/investigation/search-joins">Use joins in Search</a>.</p>]]></content>
-    <summary>Correlate data from multiple sources using joins in statistical Search queries.</summary>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/search-joins">Use joins in Search</a>.</p>]]></content>
+    <summary>Correlate data from multiple sources using joins in YARA-L Search queries. This feature allows you to link related sources directly within a single query.</summary>
     <title>Feature: Use joins in YARA-L Search queries</title>
   </entry>
   <entry>
@@ -794,8 +991,8 @@ sources directly within a single query.</p>
 <p>You can now use joins in statistical Search queries that include a <code>match</code> section
 to correlate data from multiple sources. This feature lets you link related
 sources directly within a single query.</p>
-<p>For more information, see <a href="https://cloud.google.com/chronicle/docs/investigation/search-joins">Use joins in Search</a>.</p>]]></content>
-    <summary>Correlate data from multiple sources using joins in statistical Search queries.</summary>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/search-joins">Use joins in Search</a>.</p>]]></content>
+    <summary>Correlate data from multiple sources using joins in YARA-L Search queries. Link related sources directly within a single query.</summary>
     <title>Feature: Use joins in YARA-L Search queries</title>
   </entry>
   <entry>
@@ -805,9 +1002,9 @@ sources directly within a single query.</p>
     <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-09-27:announcement:2</id>
     <published>2025-09-27T00:00:00+00:00</published>
     <updated>2025-09-27T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><a href="https://cloud.google.com/chronicle/docs/soar/release-notes#September_16_2025">Release 6.3.61</a> is now available for all regions.</p>]]></content>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#September_16_2025">Release 6.3.61</a> is now available for all regions.</p>]]></content>
     <summary>The latest update, Release 6.3.61, has been successfully deployed and is now accessible across all regions.</summary>
-    <title>Announcement: Release 6.3.61 Now Available</title>
+    <title>Announcement: Release 6.3.61 Available</title>
   </entry>
   <entry>
     <author>

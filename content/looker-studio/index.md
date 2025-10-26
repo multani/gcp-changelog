@@ -13,7 +13,7 @@ This feature is only available to Looker Studio Pro users, and is available in P
 
 **Vertical stacking in responsive reports**
 
-Responsive reports now support vertical stacking. You can add multiple components to a column within a section. [Learn more about creating responsive reports](https://cloud.google.com/looker/docs/studio/create-a-responsive-report).
+Responsive reports now support vertical stacking. You can add multiple components to a column within a section. [Learn more about creating responsive reports](https://docs.cloud.google.com/looker/docs/studio/create-a-responsive-report).
 
 ---
 ## 2025-10-02
@@ -28,7 +28,7 @@ You can now double-click the chart boundaries of a time, a bar, a line, an area,
 
 **More data from Google Ads**
 
-You can visualize the following fields using the the [Google Ads connector](https://cloud.google.com/looker/docs/studio/connect-to-google-ads):
+You can visualize the following fields using the the [Google Ads connector](https://docs.cloud.google.com/looker/docs/studio/connect-to-google-ads):
 
 * Conversions (by conv. date)
 * Conv. value (by conv. date)

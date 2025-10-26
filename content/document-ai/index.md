@@ -4,7 +4,7 @@
 
 ### Feature
 
-[Custom extractor](https://cloud.google.com/document-ai/docs/ce-with-genai) model
+[Custom extractor](https://docs.cloud.google.com/document-ai/docs/ce-with-genai) model
 `pretrained-foundation-model-v1.5.1-2025-08-07` with improved adaptive few-shot
 learning is available as Release Candidate
 ([Preview](https://cloud.google.com/products/#product-launch-stages)).

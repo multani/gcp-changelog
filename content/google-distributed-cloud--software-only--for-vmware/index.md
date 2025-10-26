@@ -6,44 +6,44 @@
 
 Google Distributed Cloud (software only) for VMware 1.31.1000-gke.44 is
 available for
-[download](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads). To
+[download](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads). To
 upgrade, see [Upgrade a
-cluster](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading).
+cluster](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading).
 Distributed Cloud 1.31.1000-gke.44 runs on Kubernetes
 v1.31.12-gke.600.
 
 If you are using a third-party storage vendor, check the [GDC Ready storage
-partners](https://cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage) document
+partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage) document
 to make sure the storage vendor has already passed the qualification for this
 release.
 
 After a release, it takes approximately 7 to 14 days for the version to become
 available for use with [GKE On-Prem API
-clients](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools):
+clients](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools):
 the Google Cloud console, the gcloud CLI, and Terraform.
 
 ### Fixed
 
 The following issues were fixed in 1.31.1000-gke.44:
 
-* Fixed vulnerabilities listed in [Vulnerability fixes](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
 
 ---
 ## 2025-10-02
 
 ### Announcement
 
-Google Distributed Cloud (software only) for VMware 1.33.100-gke.89 is now available for [download](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads). To upgrade, see [Upgrade a cluster](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading). Distributed Cloud 1.33.100-gke.89 runs on Kubernetes v1.33.4-gke.900.
+Google Distributed Cloud (software only) for VMware 1.33.100-gke.89 is now available for [download](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads). To upgrade, see [Upgrade a cluster](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading). Distributed Cloud 1.33.100-gke.89 runs on Kubernetes v1.33.4-gke.900.
 
-If you are using a third-party storage vendor, check the [GDC Ready storage partners](https://cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage) document to make sure the storage vendor has already passed the qualification for this release.
+If you are using a third-party storage vendor, check the [GDC Ready storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage) document to make sure the storage vendor has already passed the qualification for this release.
 
-After a release, it takes approximately 7 to 14 days for the version to become available for use with [GKE On-Prem API clients](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools): the Google Cloud console, the gcloud CLI, and Terraform.
+After a release, it takes approximately 7 to 14 days for the version to become available for use with [GKE On-Prem API clients](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools): the Google Cloud console, the gcloud CLI, and Terraform.
 
 ### Fixed
 
 The following issues were fixed in 1.33.100-gke.89:
 
-* Fixed vulnerabilities listed in [Vulnerability fixes](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
 
 ---
 ## 2025-09-24

@@ -21,11 +21,11 @@ The M134 release of Vertex AI Workbench instances includes the following:
 ### Feature
 
 [Generally available (GA)](https://cloud.google.com/products/#product-launch-stages):
-You can use [Workforce Identity Federation](https://cloud.google.com/iam/docs/workforce-identity-federation)
+You can use [Workforce Identity Federation](https://docs.cloud.google.com/iam/docs/workforce-identity-federation)
 with Vertex AI Workbench instances. Workforce Identity Federation lets
 you create and manage Vertex AI Workbench instances with credentials
 provided by an external identity provider (IdP). For more information, see
-[Create an instance with third party credentials](https://cloud.google.com/vertex-ai/docs/workbench/instances/create-third-party-instance).
+[Create an instance with third party credentials](https://docs.cloud.google.com/vertex-ai/docs/workbench/instances/create-third-party-instance).
 
 ---
 ## 2025-09-17

@@ -10,7 +10,7 @@ On October 7, 2025, we released an updated version of the Apigee UI.
 
 **Output from print statements is now displayed in the Debug session viewer**  
   
-A new option has been added to the transaction navigation table header in the Debug session viewer that opens the **Transaction output** window. The **Transaction output** window displays `print()` output from either *all transactions* in the debug session, or a *specific transaction* from the session. See [Creating a debug session](https://cloud.google.com/apigee/docs/api-platform/debug/trace#create) for details.
+A new option has been added to the transaction navigation table header in the Debug session viewer that opens the **Transaction output** window. The **Transaction output** window displays `print()` output from either *all transactions* in the debug session, or a *specific transaction* from the session. See [Creating a debug session](https://docs.cloud.google.com/apigee/docs/api-platform/debug/trace#create) for details.
 
 ---
 ## 2025-09-24

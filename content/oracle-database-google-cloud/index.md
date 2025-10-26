@@ -1,10 +1,36 @@
 # Oracle Database@Google Cloud
 
+## 2025-10-09
+
+### Feature
+
+Oracle Database@Google Cloud adds the following regions and zones for its services:
+
+* Exadata Database Service
+
+  + `europe-west2-a-r1` (London, Europe)
+  + `europe-west3-a-r2` (Frankfurt, Europe)
+* Exadata Database Service on Exascale infrastructure
+
+  + `asia-northeast1-a-r1` (Tokyo, Asia Pacific)
+  + `europe-west3-b-r1` (Frankfurt, Europe)
+* Base Database Service
+
+  + `asia-northeast1-a-r1` (Tokyo, Asia Pacific)
+  + `europe-west3-b-r1` (Frankfurt, Europe)
+* Autonomous Database Service
+
+  + `australia-southeast2` (Melbourne, Asia Pacific)
+  + `us-central1` (Iowa, North America)
+
+For a full list of supported locations, see [Supported regions and zones](https://docs.cloud.google.com/oracle/database/docs/regions-and-zones).
+
+---
 ## 2025-10-01
 
 ### Feature
 
-Oracle Database@Google Cloud supports [customer-managed encryption keys (CMEK)](https://cloud.google.com/oracle/database/docs/cmek) using Cloud Key Management Service. You can [enable CMEK on Exadata VM Clusters and Autonomous Databases](https://cloud.google.com/oracle/database/docs/use-cmek). This feature is [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+Oracle Database@Google Cloud supports [customer-managed encryption keys (CMEK)](https://docs.cloud.google.com/oracle/database/docs/cmek) using Cloud Key Management Service. You can [enable CMEK on Exadata VM Clusters and Autonomous Databases](https://docs.cloud.google.com/oracle/database/docs/use-cmek). This feature is [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
 
 ---
 ## 2025-09-29
@@ -13,7 +39,7 @@ Oracle Database@Google Cloud supports [customer-managed encryption keys (CMEK)](
 
 For Exadata Database Service, Oracle Database@Google Cloud supports region `australia-southeast2` (Melbourne, Australia).
 
-For a full list of supported locations, see [Regional availability](https://cloud.google.com/oracle/database/docs/available-configurations#regions)
+For a full list of supported locations, see [Regional availability](https://docs.cloud.google.com/oracle/database/docs/available-configurations#regions)
 
 ---
 ## 2025-09-23

@@ -7,7 +7,7 @@
 You can now use custom constraints with Organization Policy to provide more
 granular control over specific fields for some Dataform
 resources. For more information, see
-[Create custom organization policy constraints](https://cloud.google.com/dataform/docs/create-custom-constraints).
+[Create custom organization policy constraints](https://docs.cloud.google.com/dataform/docs/create-custom-constraints).
 This feature is
 [generally available](https://cloud.google.com/products#product-launch-stages)
 (GA).
@@ -17,9 +17,9 @@ This feature is
 You can now set the priority of BigQuery jobs in Dataform
 to run queries as interactive jobs that start running as quickly as possible
 or as batch jobs with lower priority. For more information, see
-[Create a workflow configuration](https://cloud.google.com/dataform/docs/schedule-runs#create-workflow-configuration)
+[Create a workflow configuration](https://docs.cloud.google.com/dataform/docs/schedule-runs#create-workflow-configuration)
 and
-[InvocationConfig](https://cloud.google.com/dataform/reference/rest/v1/InvocationConfig).
+[InvocationConfig](https://docs.cloud.google.com/dataform/reference/rest/v1/InvocationConfig).
 This feature is
 [generally available](https://cloud.google.com/products#product-launch-stages)
 (GA).

@@ -4,14 +4,14 @@
 
 ### Feature
 
-The manual QoS feature is now generally available for Google Cloud NetApp Volumes, supporting the Standard, Premium, and Extreme service levels. For more information, see [Manual QoS](https://cloud.google.com/netapp/volumes/docs/performance/optimize-performance#manual_qos).
+The manual QoS feature is now generally available for Google Cloud NetApp Volumes, supporting the Standard, Premium, and Extreme service levels. For more information, see [Manual QoS](https://docs.cloud.google.com/netapp/volumes/docs/performance/optimize-performance#manual_qos).
 
 ---
 ## 2025-09-26
 
 ### Feature
 
-Selective file restore feature is now generally available for Google Cloud NetApp Volumes, supporting the Standard, Premium, and Extreme service levels. For more information, see [Selective file restore](https://cloud.google.com/netapp/volumes/docs/protect-data/about-backups#selective_file_restore).
+Selective file restore feature is now generally available for Google Cloud NetApp Volumes, supporting the Standard, Premium, and Extreme service levels. For more information, see [Selective file restore](https://docs.cloud.google.com/netapp/volumes/docs/protect-data/about-backups#selective_file_restore).
 
 ---
 ## 2025-09-24

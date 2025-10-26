@@ -1,5 +1,13 @@
 # Migrate to Virtual Machines
 
+## 2025-10-16
+
+### Feature
+
+Migrate to Virtual Machines now supports all available versions of AlmaLinux
+EL 8 and 9.
+
+---
 ## 2025-08-25
 
 ### Feature

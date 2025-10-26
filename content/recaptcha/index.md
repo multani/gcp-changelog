@@ -1,5 +1,13 @@
 # reCAPTCHA
 
+## 2025-10-22
+
+### Changed
+
+reCAPTCHA Mobile SDK v18.8.1 is available for iOS. This version fixes an issue
+with iOS 26 screen time showing use from recaptcha.net
+
+---
 ## 2025-09-17
 
 ### Changed

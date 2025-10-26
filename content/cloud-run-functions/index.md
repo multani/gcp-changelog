@@ -4,14 +4,14 @@
 
 ### Feature
 
-Cloud Run functions (1st gen) supports the [Node.js 22 runtime](https://cloud.google.com/functions/docs/runtime-support#node.js) at the [General Availability release level](https://cloud.google.com/products/#product-launch-stages).
+Cloud Run functions (1st gen) supports the [Node.js 22 runtime](https://docs.cloud.google.com/functions/docs/runtime-support#node.js) at the [General Availability release level](https://cloud.google.com/products/#product-launch-stages).
 
 ---
 ## 2025-10-01
 
 ### Feature
 
-Cloud Run functions now provides an [upgrade tool](https://cloud.google.com/functions/1stgendocs/migrating/upgrade-gen1-functions) for upgrading 1st gen functions to Cloud Run. This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+Cloud Run functions now provides an [upgrade tool](https://docs.cloud.google.com/functions/1stgendocs/migrating/upgrade-gen1-functions) for upgrading 1st gen functions to Cloud Run. This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
 
 ---
 ## 2025-08-21

@@ -2,9 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Guest Environment</title>
   <subtitle>Changelog for Google Cloud product: Guest Environment</subtitle>
-  <updated>2025-10-02T00:00:00+00:00</updated>
+  <updated>2025-10-21T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:guest-environment</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/guest-environment/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2025-10-21:fixed:0</id>
+    <published>2025-10-21T00:00:00+00:00</published>
+    <updated>2025-10-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20251009.01</code> of the guest agent, announced in the <a href="https://docs.cloud.google.com/compute/docs/images/guest-environment/release-notes#October_20_2025">October 20, 2025 release notes</a>, has been rolled back. This version introduced the plugin-based architecture to Windows but contained a bug in the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent-functions#windows-failover">WSFC module</a>.
+To resolve this issue, guest agent version <code>20251011.00</code> is now available for Windows, which excludes the new plugin-based architecture.</p>]]></content>
+    <summary>Version 20251009.01 of the guest agent has been rolled back. A bug in the WSFC module prevented the new plugin-based architecture for Windows from working correctly. Version 20251011.00 is now available to resolve this issue.</summary>
+    <title>Fixed: Guest agent rolled back due to WSFC module bug</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2025-10-20:feature:0</id>
+    <published>2025-10-20T00:00:00+00:00</published>
+    <updated>2025-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20251009.01</code> of the guest agent, which introduces the plugin-based
+architecture to Windows, is now available.</p>
+<p>For more information about the plugin-based architecture, see
+<a href="https://cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>]]></content>
+    <summary>Version 20251009.01 of the guest agent is now available, introducing a new plugin-based architecture for Windows.</summary>
+    <title>Feature: Guest agent plugin architecture for Windows</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

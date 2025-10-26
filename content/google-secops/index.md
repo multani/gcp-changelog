@@ -1,5 +1,14 @@
 # Google SecOps
 
+## 2025-10-21
+
+### Announcement
+
+**Premium [Fortinet Firewall parser](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fw) now available as Release Candidate**
+
+This enhanced parser is available as a **Release Candidate** for the next 2 months. To opt in and begin testing it, go to **SIEM Settings > Parsers**. We encourage you to try it out and evaluate the improvements before it becomes the default.
+
+---
 ## 2025-10-15
 
 ### Deprecated
@@ -30,16 +39,33 @@ This feature is currently in Preview.
 
 Multi-stage queries in YARA-L are now available as a Preview feature. Multi-stage queries in YARA-L let you feed the output of one query stage directly into the input of a subsequent stage. This process gives you greater control over data transformation than single, monolithic query. They are supported in both **Dashboards** and **Search**. Multi-stage queries can contain between 1 and 4 named stages, in addition to a root stage.
 
-For more information, see [Create multi-stage queries in YARA-L](https://cloud.google.com/chronicle/docs/investigation/multi-stage-yaral).
+For more information, see [Create multi-stage queries in YARA-L](https://docs.cloud.google.com/chronicle/docs/investigation/multi-stage-yaral).
 
 ---
 ## 2025-10-07
+
+### Feature
+
+**Manage parser versions**
+
+This feature is in preview.
+
+You now have granular control over how new pre-built parser versions are deployed within your environment.
+
+This feature lets you manage parser updates by taking the following actions:
+
+* Opt in or opt out of automatic parser updates.
+* Review and compare the processing logic between different parser versions.
+* Manually update a parser to a newer version.
+* Revert to a previously deployed, stable parser version.
+
+For details, see [Manage prebuilt parser versions](https://docs.cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage-parser-versions).
 
 ### Announcement
 
 **Azure AD Organizational Context default parser rollback**
 
-The recent update to the pre-built Azure AD Organizational Context (`AZURE_AD_CONTEXT`) parser has been rolled back. This action was necessary to resolve a performance degradation issue that was introduced in the latest parser version. For more information about the exact changes and rollback timeline, see the [change log for the pre-built parser](https://cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage_parser_updates).
+The recent update to the pre-built Azure AD Organizational Context (`AZURE_AD_CONTEXT`) parser has been rolled back. This action was necessary to resolve a performance degradation issue that was introduced in the latest parser version. For more information about the exact changes and rollback timeline, see the [change log for the pre-built parser](https://docs.cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage_parser_updates).
 
 ---
 ## 2025-10-06
@@ -54,7 +80,7 @@ This feature is available for Google SecOps Enterprise Plus customers only.
 
 Advanced BigQuery Export automatically provisions and manages essential Google SecOps datasets in a secure, Google-managed BigQuery project. You gain secure, read-only access to this data through a BigQuery linked dataset, which appears directly in your own Google Cloud project. This functionality lets you query your security data as if it were stored locally, but without the overhead of managing the data pipeline or storage.
 
-For details, see [Use Advanced BigQuery Export](https://cloud.google.com/chronicle/docs/reports/bigquery-export).
+For details, see [Use Advanced BigQuery Export](https://docs.cloud.google.com/chronicle/docs/reports/bigquery-export).
 
 ---
 ## 2025-10-05
@@ -65,36 +91,36 @@ For details, see [Use Advanced BigQuery Export](https://cloud.google.com/chronic
 
 New parser documentation is available to help you ingest and normalize logs from the following sources:
 
-* [Collect AlphaSOC alert logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/asoc-alert)
-* [Collect AlphaSOC alert logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/rippling-activitylogs)
-* [Collect Cisco vManage SD-WAN logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-sdwan)
-* [Collect Citrix Analytics logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-analytics)
-* [Collect Citrix Monitor Service logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-ms)
-* [Collect Citrix StoreFront logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-storefront)
-* [Collect Delinea SSO logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/delinea-sso)
-* [Collect SailPoint IAM logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sailpoint-iam)
-* [Collect Sentry logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sentry)
-* [Collect Snipe-IT logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/snipe-it)
-* [Collect Sophos AV logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-av)
-* [Collect Sophos Capsule8 logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-cap8)
-* [Collect Sophos DHCP logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-dhcp)
-* [Collect Sophos Intercept EDR logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-edr)
-* [Collect Swimlane Platform logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/swimlane)
-* [Collect Symantec WSS logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-wss)
-* [Collect Tailscale logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tailscale)
-* [Collect Tanium Asset logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-asset)
-* [Collect Tanium audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-audit)
-* [Collect Tanium Comply logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-comply)
-* [Collect Tanium Discover logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-discover)
-* [Collect Tanium Insight logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-insight)
-* [Collect Tanium Integrity Monitor logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-im)
-* [Collect Tanium Patch logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-patch)
-* [Collect Tanium Question logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-question)
-* [Collect Tanium Reveal logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-reveal)
-* [Collect Tanium Stream logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-stream)
-* [Collect Tanium Threat Response logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-tr)
-* [Collect TeamViewer logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/teamviewer)
-* [Collect Tines audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tines)
+* [Collect AlphaSOC alert logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/asoc-alert)
+* [Collect AlphaSOC alert logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/rippling-activitylogs)
+* [Collect Cisco vManage SD-WAN logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-sdwan)
+* [Collect Citrix Analytics logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-analytics)
+* [Collect Citrix Monitor Service logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-ms)
+* [Collect Citrix StoreFront logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-storefront)
+* [Collect Delinea SSO logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/delinea-sso)
+* [Collect SailPoint IAM logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sailpoint-iam)
+* [Collect Sentry logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sentry)
+* [Collect Snipe-IT logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/snipe-it)
+* [Collect Sophos AV logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-av)
+* [Collect Sophos Capsule8 logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-cap8)
+* [Collect Sophos DHCP logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-dhcp)
+* [Collect Sophos Intercept EDR logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-edr)
+* [Collect Swimlane Platform logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/swimlane)
+* [Collect Symantec WSS logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-wss)
+* [Collect Tailscale logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tailscale)
+* [Collect Tanium Asset logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-asset)
+* [Collect Tanium audit logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-audit)
+* [Collect Tanium Comply logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-comply)
+* [Collect Tanium Discover logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-discover)
+* [Collect Tanium Insight logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-insight)
+* [Collect Tanium Integrity Monitor logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-im)
+* [Collect Tanium Patch logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-patch)
+* [Collect Tanium Question logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-question)
+* [Collect Tanium Reveal logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-reveal)
+* [Collect Tanium Stream logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-stream)
+* [Collect Tanium Threat Response logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-tr)
+* [Collect TeamViewer logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/teamviewer)
+* [Collect Tines audit logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tines)
 
 ---
 ## 2025-10-03
@@ -107,7 +133,7 @@ Google SecOps has expanded its coverage of Customer-Managed Encryption Key
 (CMEK) compliance to now include support for data tables.
 
 For more information, see
-[CMEK for Google SecOps](https://cloud.google.com/chronicle/docs/secops/cmek_for_secops).
+[CMEK for Google SecOps](https://docs.cloud.google.com/chronicle/docs/secops/cmek_for_secops).
 
 ---
 ## 2025-09-30
@@ -120,7 +146,7 @@ You can now specify which columns appear in the **Events** table on the
 **Search** page and in **tables** within your **dashboard widgets**. Use the `select`
 and `unselect` keywords to define the displayed columns.
 
-For more information, see [Control columns using select and unselect keywords](https://cloud.google.com/chronicle/docs/investigation/select-unselect).
+For more information, see [Control columns using select and unselect keywords](https://docs.cloud.google.com/chronicle/docs/investigation/select-unselect).
 
 ---
 ## 2025-09-28
@@ -133,7 +159,7 @@ The forwarder component is being phased out of the Google SecOps platform and wi
 
 **Action required**: If you're currently using the forwarder component, you must migrate your data collection workflows to an alternative mechanism before April 1, 2027. You'll need to use another data pipeline management application for log ingestion.
 
-We recommend that you migrate to the [Bindplane OpenTelemetry (OTel) collector](https://cloud.google.com/chronicle/docs/ingestion/use-bindplane-agent), which provides a scalable, open-standard solution for log and metric ingestion.
+We recommend that you migrate to the [Bindplane OpenTelemetry (OTel) collector](https://docs.cloud.google.com/chronicle/docs/ingestion/use-bindplane-agent), which provides a scalable, open-standard solution for log and metric ingestion.
 
 The following are key dates to note:
 
@@ -156,7 +182,7 @@ This change impacts you if your Google SecOps tenant meets both of the following
 
 To prevent disruption to your CrowdStrike data ingestion, you must update your API
 client permissions before September 30, 2025.
-Follow the instructions in [Migrate from CrowdStrike Detects API to Alerts API](https://cloud.google.com/chronicle/docs/detection/migrate-detects-api-to-alerts-api)
+Follow the instructions in [Migrate from CrowdStrike Detects API to Alerts API](https://docs.cloud.google.com/chronicle/docs/detection/migrate-detects-api-to-alerts-api)
 to migrate your configuration to use the Alerts API.
 
 For more details, see [CrowdStrike’s official decommissioning notice](https://supportportal.crowdstrike.com/s/article/Tech-Alert-30-Day-Notice-Planned-Decommission-Announcement-of-the-DetectionSummaryEvent-and-detects-API).
@@ -166,14 +192,14 @@ For more details, see [CrowdStrike’s official decommissioning notice](https://
 **Podman support for Remote Agents**
 
 You can now install a Remote Agent using Podman. This new functionality provides a streamlined deployment workflow—a lightweight alternative to existing installation methods.
-For details, see [Deploy an agent with Podman](https://cloud.google.com/chronicle/docs/soar/working-with-remote-agents/deploy-agent-with-podman).
+For details, see [Deploy an agent with Podman](https://docs.cloud.google.com/chronicle/docs/soar/working-with-remote-agents/deploy-agent-with-podman).
 
 ### Feature
 
 **Debian support for remote agents**
 
 You can now install a Remote Agent using Debian. This new functionality provides a streamlined deployment workflow—an alternative to existing installation methods.
-For details, see [Deploy an agent with Debian](https://cloud.google.com/chronicle/docs/soar/working-with-remote-agents/create-agent-with-installer-on-debian).
+For details, see [Deploy an agent with Debian](https://docs.cloud.google.com/chronicle/docs/soar/working-with-remote-agents/create-agent-with-installer-on-debian).
 
 ### Announcement
 
@@ -204,7 +230,7 @@ You can now use joins in statistical Search queries that include a `match` secti
 to correlate data from multiple sources. This feature lets you link related
 sources directly within a single query.
 
-For more information, see [Use joins in Search](https://cloud.google.com/chronicle/docs/investigation/search-joins).
+For more information, see [Use joins in Search](https://docs.cloud.google.com/chronicle/docs/investigation/search-joins).
 
 ---
 ## 2025-09-23

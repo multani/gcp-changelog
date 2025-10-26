@@ -1,5 +1,15 @@
 # AI Hypercomputer
 
+## 2025-10-21
+
+### Feature
+
+**Generally available**: You can use future reservations in
+AI Hypercomputer to request to reserve capacity starting on a specific
+date up to one year in the future. For more information, see
+[Reserve capacity](https://docs.cloud.google.com/ai-hypercomputer/docs/reserve-capacity).
+
+---
 ## 2025-09-10
 
 ### Feature

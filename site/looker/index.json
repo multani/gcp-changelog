@@ -1,13 +1,41 @@
 {
   "name": "Looker",
   "entries": {
+    "2025-10-23": [
+      {
+        "kind": "Feature",
+        "content": "**Conversational Analytics in Looker**\n\nThe following features are available in [Preview](https://cloud.google.com/products#product-launch-stages) for use with [Conversational Analytics in Looker](https://docs.cloud.google.com/looker/docs/conversational-analytics-overview) instances that are running Looker 25.18 or later:\n\n* [Event and event attribute information](https://docs.cloud.google.com/looker/docs/events) is now available in [System Activity Explores](https://docs.cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#system_activity_explores).\n* A [Conversational Analytics System Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational_analytics) is now available to surface usage data for Conversational Analytics features in Looker, including the most popular data agents, the most popular Explores that are used in conversations, and the most active users.",
+        "summary": {
+          "title": "Conversational Analytics Now Available",
+          "summary": "Conversational Analytics in Looker is now available in preview. This feature allows users to access event and event attribute information in System Activity Explores and provides a new dashboard to track usage data for Conversational Analytics features."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Looker now supports [cloning a public Git repository using an `https://` URL](https://docs.cloud.google.com/looker/docs/create-projects#cloning_a_public_git_repository_from_the_new_project_page). Looker does not support cloning Git repositories using `git://` URLs.",
+        "summary": {
+          "title": "Git repository cloning support",
+          "summary": "Looker now supports cloning public Git repositories from the new project page using an https:// URL."
+        }
+      }
+    ],
+    "2025-10-21": [
+      {
+        "kind": "Feature",
+        "content": "The new [Looker Status Dashboard](https://status.cloud.google.com/looker) provides real-time updates about service availability or disruptions for [Looker-hosted instances](https://cloud.google.com/looker/docs/choosing-hosting-option#looker-hosted-pros-cons). For more information, see the [Monitor Looker status](https://docs.cloud.google.com/looker/docs/status-dashboard-help) documentation page.",
+        "summary": {
+          "title": "Looker Status Dashboard",
+          "summary": "A new dashboard provides real-time updates on Looker service availability and disruptions."
+        }
+      }
+    ],
     "2025-10-10": [
       {
         "kind": "Feature",
-        "content": "**Conversational Analytics in Looker**\n\nThe following features are available in [Preview](https://cloud.google.com/products#product-launch-stages) for use with [Conversational Analytics in Looker](https://cloud.google.com/looker/docs/studio/conversational-analytics-looker) instances that are running Looker 25.18.9 or later:\n\n* New model-specific Looker permissions are available to manage and use the [Conversational Analytics data agents](https://cloud.google.com/looker/docs/studio/conversational-data-agents-looker#before-you-begin) that are created to chat with Looker Explores. You can grant these permissions to users as part of a [custom role](https://cloud.google.com/looker/docs/admin-panel-users-roles#create-custom-roles), or use one of two new [default roles](https://cloud.google.com/looker/docs/admin-panel-users-roles#default_roles), **Conversational Analytics Agent Manager** and **Conversational Analytics User**, to manage and use agents, respectively.\n* You can now select up to five Looker Explores as data sources for a data agent in Looker.\n* You can now [share data agents](https://cloud.google.com/looker/docs/studio/conversational-data-agents-looker#share-data-agents) to let other users chat with your agent and its Explores.\n\n(This release note was updated on October 10, 2025 to correct the Looker version for this release.)",
+        "content": "**Conversational Analytics in Looker**\n\nThe following features are available in [Preview](https://cloud.google.com/products#product-launch-stages) for use with [Conversational Analytics in Looker](https://docs.cloud.google.com/looker/docs/studio/conversational-analytics-looker) instances that are running Looker 25.18.9 or later:\n\n* New model-specific Looker permissions are available to manage and use the [Conversational Analytics data agents](https://docs.cloud.google.com/looker/docs/studio/conversational-data-agents-looker#before-you-begin) that are created to chat with Looker Explores. You can grant these permissions to users as part of a [custom role](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#create-custom-roles), or use one of two new [default roles](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#default_roles), **Conversational Analytics Agent Manager** and **Conversational Analytics User**, to manage and use agents, respectively.\n* You can now select up to five Looker Explores as data sources for a data agent in Looker.\n* Users with the `admin_agents` permission can now [share data agents](https://docs.cloud.google.com/looker/docs/studio/conversational-data-agents-looker#share-data-agents) to let other users chat with your agent and its Explores. Starting in Looker 25.18.10, users with either the `save_agents` or the `admin_agents` permission can share data agents with other users.\n\n(This release note was updated on October 10, 2025 to correct the Looker version for this release. This release note was updated on October 23, 2025 to correct the Looker version for data agent sharing permissions.)",
         "summary": {
           "title": "Conversational Analytics in Looker",
-          "summary": "New features for Conversational Analytics in Looker are now available in Preview. Manage data agents with new Looker permissions, select up to five Explores as data sources, and share data agents with other users."
+          "summary": "Introducing new features for Conversational Analytics in Looker, now in Preview. This update includes enhanced model-specific permissions for data agents, allowing up to five Looker Explores as data sources. Additionally, data agents can now be shared, enabling collaboration and broader access to insights."
         }
       }
     ],
@@ -21,6 +49,14 @@
         }
       },
       {
+        "kind": "Changed",
+        "content": "Conversational Analytics users with the `save_agents` permission can now [share data agents](https://docs.cloud.google.com/looker/docs/studio/conversational-data-agents-looker), which lets other users chat with the data agent and its Explores. (This release note was added on October 9, 2025.)",
+        "summary": {
+          "title": "Data agents can now be shared",
+          "summary": "Users with the necessary permissions can now share data agents, enabling others to interact with the agent and its associated Explores."
+        }
+      },
+      {
         "kind": "Feature",
         "content": "You can now set the Auto Resize Value setting on single value visualizations. This setting has no effect if the Smart Single Value Text Size setting is enabled on the Admin > General Settings page.",
         "summary": {
@@ -30,42 +66,10 @@
       },
       {
         "kind": "Feature",
-        "content": "The Athena JDBC driver version has been upgraded from 2.1.5 to 2.2.2. The Athena JDBC driver is used for connections to [Amazon Athena](https://cloud.google.com/looker/docs/db-config-amazon-athena).",
+        "content": "The Athena JDBC driver version has been upgraded from 2.1.5 to 2.2.2. The Athena JDBC driver is used for connections to [Amazon Athena](https://docs.cloud.google.com/looker/docs/db-config-amazon-athena).",
         "summary": {
-          "title": "Athena JDBC driver updated",
-          "summary": "The Athena JDBC driver has been updated to version 2.2.2."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "Conversational Analytics users with the `save_agents` permission can now [share data agents](https://cloud.google.com/looker/docs/studio/conversational-data-agents-looker), which lets other users chat with the data agent and its Explores. (This release note was added on October 9, 2025.)",
-        "summary": {
-          "title": "Data agents can now be shared",
-          "summary": "Users with the necessary permissions can now share data agents, allowing others to interact with them and their associated Explores."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "Looker 25.18 contains the following accessibility improvements:\n\n* You can navigate drill menus by using a keyboard.\n* When you select a button toggle with a keyboard, the focus ring uses more contrasting colors.\n* You can switch button toggles on or off by using the Enter key.\n* When you use a keyboard to select a Look, dashboard, or folder that's inside a folder, a focus ring will appear around the selected item.\n* You can now use a keyboard to edit boards.\n* You can now use the keyboard to access LookML field definitions in the field picker.\n* The Alerts dialog is now compatible with screen readers.\n* The Series tab of the visualization editor is now compatible with screen readers.\n* Tile notes are now added to ARIA descriptions.\n* Actions for pivot columns are now accessible with a keyboard.\n* The color contrast has been improved on large text boxes such as the custom filter editor.\n* The options in the visualization settings panel now have names that can be read by screen readers.\n* The state of expanded dialogs on the Explore page, such as the field picker and visualization settings panel, can now be read by screen readers.",
-        "summary": {
-          "title": "Looker 25.18: Accessibility Improvements",
-          "summary": "Looker 25.18 includes several keyboard navigation and screen reader compatibility enhancements, making the platform more accessible."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "An issue has been fixed where, when dashboard filters were updated, column widths could resize on table visualizations that included pivoted values. This feature now performs as expected.",
-        "summary": {
-          "title": "Table visualizations with pivoted values now display column widths correctly after dashboard filter updates.",
-          "summary": "Pivoted values in table visualizations no longer cause column widths to resize unexpectedly when dashboard filters are updated. This issue has been resolved, and the feature now functions as intended."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "An issue has been fixed where non-string values that were entered in the expression element of the `dynamic_fields` section of a LookML dashboard could cause the LookML validator to crash. This feature now performs as expected.",
-        "summary": {
-          "title": "LookML Validator Fix",
-          "summary": "Non-string values in dynamic fields no longer cause validator crashes."
+          "title": "Athena JDBC Driver Update",
+          "summary": "The Athena JDBC driver has been upgraded to version 2.2.2."
         }
       },
       {
@@ -149,6 +153,30 @@
         }
       },
       {
+        "kind": "Fixed",
+        "content": "Looker 25.18 contains the following accessibility improvements:\n\n* You can navigate drill menus by using a keyboard.\n* When you select a button toggle with a keyboard, the focus ring uses more contrasting colors.\n* You can switch button toggles on or off by using the Enter key.\n* When you use a keyboard to select a Look, dashboard, or folder that's inside a folder, a focus ring will appear around the selected item.\n* You can now use a keyboard to edit boards.\n* You can now use the keyboard to access LookML field definitions in the field picker.\n* The Alerts dialog is now compatible with screen readers.\n* The Series tab of the visualization editor is now compatible with screen readers.\n* Tile notes are now added to ARIA descriptions.\n* Actions for pivot columns are now accessible with a keyboard.\n* The color contrast has been improved on large text boxes such as the custom filter editor.\n* The options in the visualization settings panel now have names that can be read by screen readers.\n* The state of expanded dialogs on the Explore page, such as the field picker and visualization settings panel, can now be read by screen readers.",
+        "summary": {
+          "title": "Looker 25.18: Accessibility Improvements",
+          "summary": "Looker 25.18 includes several keyboard navigation and screen reader compatibility enhancements, making the platform more accessible."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where, when dashboard filters were updated, column widths could resize on table visualizations that included pivoted values. This feature now performs as expected.",
+        "summary": {
+          "title": "Table visualizations with pivoted values now display column widths correctly after dashboard filter updates.",
+          "summary": "Pivoted values in table visualizations no longer cause column widths to resize unexpectedly when dashboard filters are updated. This issue has been resolved, and the feature now functions as intended."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where non-string values that were entered in the expression element of the `dynamic_fields` section of a LookML dashboard could cause the LookML validator to crash. This feature now performs as expected.",
+        "summary": {
+          "title": "LookML Validator Fix",
+          "summary": "Non-string values in dynamic fields no longer cause validator crashes."
+        }
+      },
+      {
         "kind": "Feature",
         "content": "The Prerender iframes for custom visualizations feature is now generally available on the Admin > Content Guardrails page.",
         "summary": {
@@ -189,11 +217,11 @@
         }
       },
       {
-        "kind": "Feature",
-        "content": "Looker admins can no longer create or edit individual users' API keys. Instead, from the Admin > Users page, admins can enable users to manage their own API keys. Once a user has API key management enabled, they can create, view, edit, and delete their API keys from their Looker account page. **Note:** This item was changed on October 9, 2025 to specify that it supports Looker (Google Cloud core) only.",
+        "kind": "Breaking",
+        "content": "Looker admins can no longer create or edit individual users' API keys. Instead, from the Admin > Users page, admins can enable users to manage their own API keys. Once a user has API key management enabled, they can create, view, edit, and delete their API keys from their Looker account page. **Note:** This item was changed on October 9, 2025 to specify that it supports Looker (Google Cloud core) only, and it was changed again on October 22, 2025 to indicate that it's a breaking change.",
         "summary": {
-          "title": "User API Key Management",
-          "summary": "Admins can now enable users to manage their own API keys, enhancing security and user control."
+          "title": "API key management changes for Looker admins",
+          "summary": "Looker admins can no longer manage individual users' API keys. Users can now manage their own API keys from their account page after admins enable this feature."
         }
       },
       {
@@ -240,20 +268,20 @@
     "2025-10-02": [
       {
         "kind": "Feature",
-        "content": "The `sql_preamble` parameter now [supports Liquid statements](https://cloud.google.com/looker/docs/reference/param-explore-sql-preamble#using_liquid_in_sql_preamble). This update is supported on Looker 25.12 and later versions.",
+        "content": "The `sql_preamble` parameter now [supports Liquid statements](https://docs.cloud.google.com/looker/docs/reference/param-explore-sql-preamble#using_liquid_in_sql_preamble). This update is supported on Looker 25.12 and later versions.",
         "summary": {
           "title": "Liquid statements support in sql_preamble",
-          "summary": "The sql_preamble parameter now supports Liquid statements for Looker versions 25.12 and later."
+          "summary": "The sql_preamble parameter now supports Liquid statements on Looker 25.12 and later versions."
         }
       }
     ],
     "2025-09-30": [
       {
         "kind": "Feature",
-        "content": "The following features are coming soon for use with Conversational Analytics:\n\n* New model-specific Looker permissions are available to [manage](https://cloud.google.com/looker/docs/admin-panel-users-roles#gemini_ca_agent_manager) and [use](https://cloud.google.com/looker/docs/admin-panel-users-roles#gemini_ca_agent_user) the [Conversational Analytics data agents](https://cloud.google.com/looker/docs/studio/conversational-data-agents-looker) that are created to chat with Looker Explores. You can grant these to users as part of a custom role, or use one of two new default roles, [Conversational Analytics Agent Manager](https://cloud.google.com/looker/docs/admin-panel-users-roles#conversational_analytics_agent_manager) and [Conversational Analytics User](https://cloud.google.com/looker/docs/admin-panel-users-roles#conversational_analytics_user), to manage and use agents, respectively.\n* You can now select up to five Looker Explores as data sources for a data agent.\n* You can now [share data agents](https://cloud.google.com/looker/docs/studio/conversational-data-agents-looker#share-data-agents) to let other users chat with your agent and its Explores.\n\n**Note:** This release note was published prematurely. It was amended on October 8, 2025 to reflect that these features are coming soon and amended on October 14, 2025 to indicate that the features [have been launched](https://cloud.google.com/looker/docs/release-notes#October_10_2025).",
+        "content": "The following features are coming soon for use with Conversational Analytics:\n\n* New model-specific Looker permissions are available to [manage](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#gemini_ca_agent_manager) and [use](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#gemini_ca_agent_user) the [Conversational Analytics data agents](https://docs.cloud.google.com/looker/docs/studio/conversational-data-agents-looker) that are created to chat with Looker Explores. You can grant these to users as part of a custom role, or use one of two new default roles, [Conversational Analytics Agent Manager](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#conversational_analytics_agent_manager) and [Conversational Analytics User](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#conversational_analytics_user), to manage and use agents, respectively.\n* You can now select up to five Looker Explores as data sources for a data agent.\n* You can now [share data agents](https://docs.cloud.google.com/looker/docs/studio/conversational-data-agents-looker#share-data-agents) to let other users chat with your agent and its Explores.\n\n**Note:** This release note was published prematurely. It was amended on October 8, 2025 to reflect that these features are coming soon and amended on October 14, 2025 to indicate that the features [have been launched](https://docs.cloud.google.com/looker/docs/release-notes#October_10_2025).",
         "summary": {
-          "title": "New features for conversational analytics",
-          "summary": "New model-specific Looker permissions allow you to manage and use conversational analytics data agents. You can now select up to five Looker Explores as data sources for a data agent and share data agents with other users."
+          "title": "New features for Conversational Analytics",
+          "summary": "New model-specific Looker permissions are available to manage and use Conversational Analytics data agents. You can now select up to five Looker Explores as data sources for a data agent and share data agents with other users."
         }
       }
     ],

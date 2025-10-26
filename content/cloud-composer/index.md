@@ -2,13 +2,6 @@
 
 ## 2025-10-10
 
-### Announcement
-
-A new Cloud Composer release has started on **October 10, 2025**. Get ready
-for upcoming changes and features as we roll out the new release to all regions.
-This release is in progress at the moment. Listed changes and features might
-not be available in some regions yet.
-
 ### Fixed
 
 *(Cloud Composer 2 versions from 2.12.0 to 2.12.3)* Fixed a problem where
@@ -98,8 +91,8 @@ are available in Cloud Composer 3:
 New [images](https://cloud.google.com/composer/docs/composer-versions#images-composer-2)
 are available in Cloud Composer 2:
 
-* [composer-2.14.4-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-14-4-airflow-2-10-5) (default)
-* [composer-2.14.4-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-14-4-airflow-2-9-3)
+* [composer-2.14.3-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-14-3-airflow-2-10-5) (default)
+* [composer-2.14.3-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-14-3-airflow-2-9-3)
 
 ### Deprecated
 

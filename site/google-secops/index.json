@@ -1,6 +1,16 @@
 {
   "name": "Google SecOps",
   "entries": {
+    "2025-10-21": [
+      {
+        "kind": "Announcement",
+        "content": "**Premium [Fortinet Firewall parser](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fw) now available as Release Candidate**\n\nThis enhanced parser is available as a **Release Candidate** for the next 2 months. To opt in and begin testing it, go to **SIEM Settings > Parsers**. We encourage you to try it out and evaluate the improvements before it becomes the default.",
+        "summary": {
+          "title": "Fortinet Firewall parser now Release Candidate",
+          "summary": "The premium Fortinet Firewall parser is now available as a Release Candidate. You can opt in to test it via SIEM Settings > Parsers. We encourage your feedback before it becomes the default."
+        }
+      }
+    ],
     "2025-10-15": [
       {
         "kind": "Deprecated",
@@ -11,107 +21,105 @@
         }
       }
     ],
-    "2025-10-09": [
-      {
-        "kind": "Feature",
-        "content": "**Customize Events table columns in Search**\n\nYou can now specify which columns appear in the **Events** table on the\n**Search** page and in tables within your dashboard widgets. Use the `select`\nand `unselect` keywords to define the displayed columns.\n\nFor more information, see [Control columns using select and unselect keywords](https://cloud.google.com/chronicle/docs/investigation/select-unselect).",
-        "summary": {
-          "title": "Customize Events table columns in Search",
-          "summary": "You can now customize the columns displayed in the Events table on the Search page and in dashboard widgets using the `select` and `unselect` keywords."
-        }
-      }
-    ],
     "2025-10-08": [
       {
         "kind": "Feature",
-        "content": "**Multi-stage queries in YARA-L**\n\nThis feature is currently in Preview.\n\nMulti-stage queries in YARA-L are now available as a Preview feature. Multi-stage queries in YARA-L let you feed the output of one query stage directly into the input of a subsequent stage. This process gives you greater control over data transformation than single, monolithic query. They are supported in both **Dashboards** and **Search**. Multi-stage queries can contain between 1 and 4 named stages, in addition to a root stage.\n\nFor more information, see [Create multi-stage queries in YARA-L](https://cloud.google.com/chronicle/docs/investigation/multi-stage-yaral).",
+        "content": "**Multi-stage queries in YARA-L**\n\nThis feature is currently in Preview.\n\nMulti-stage queries in YARA-L are now available as a Preview feature. Multi-stage queries in YARA-L let you feed the output of one query stage directly into the input of a subsequent stage. This process gives you greater control over data transformation than single, monolithic query. They are supported in both **Dashboards** and **Search**. Multi-stage queries can contain between 1 and 4 named stages, in addition to a root stage.\n\nFor more information, see [Create multi-stage queries in YARA-L](https://docs.cloud.google.com/chronicle/docs/investigation/multi-stage-yaral).",
         "summary": {
-          "title": "Multi-stage YARA-L queries now in Preview",
-          "summary": "You can now use multi-stage queries in YARA-L, a new Preview feature. This allows the output of one query to be used as input for another, giving you more control over data transformation. Multi-stage queries support between 1 and 4 named stages plus a root stage and are available in Dashboards and Search."
+          "title": "Multi-stage YARA-L queries",
+          "summary": "You can now use multi-stage queries in YARA-L, a feature that allows you to chain query outputs as inputs for subsequent stages. This provides enhanced control over data transformation and is available in both Dashboards and Search."
         }
       }
     ],
     "2025-10-07": [
       {
+        "kind": "Feature",
+        "content": "**Manage parser versions**\n\nThis feature is in preview.\n\nYou now have granular control over how new pre-built parser versions are deployed within your environment.\n\nThis feature lets you manage parser updates by taking the following actions:\n\n* Opt in or opt out of automatic parser updates.\n* Review and compare the processing logic between different parser versions.\n* Manually update a parser to a newer version.\n* Revert to a previously deployed, stable parser version.\n\nFor details, see [Manage prebuilt parser versions](https://docs.cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage-parser-versions).",
+        "summary": {
+          "title": "Manage parser versions",
+          "summary": "Control your parser deployments with new management features."
+        }
+      },
+      {
         "kind": "Announcement",
-        "content": "**Azure AD Organizational Context default parser rollback**\n\nThe recent update to the pre-built Azure AD Organizational Context (`AZURE_AD_CONTEXT`) parser has been rolled back. This action was necessary to resolve a performance degradation issue that was introduced in the latest parser version. For more information about the exact changes and rollback timeline, see the [change log for the pre-built parser](https://cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage_parser_updates).",
+        "content": "**Azure AD Organizational Context default parser rollback**\n\nThe recent update to the pre-built Azure AD Organizational Context (`AZURE_AD_CONTEXT`) parser has been rolled back. This action was necessary to resolve a performance degradation issue that was introduced in the latest parser version. For more information about the exact changes and rollback timeline, see the [change log for the pre-built parser](https://docs.cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage_parser_updates).",
         "summary": {
           "title": "Azure AD Organizational Context parser rollback",
-          "summary": "The Azure AD Organizational Context parser has been rolled back due to performance issues. See the change log for details."
+          "summary": "The recent update to the Azure AD Organizational Context parser has been rolled back due to performance issues."
         }
       }
     ],
     "2025-10-06": [
       {
         "kind": "Feature",
-        "content": "**Advanced BigQuery Export**\n\nThis feature is in preview.\n\nThis feature is available for Google SecOps Enterprise Plus customers only.\n\nAdvanced BigQuery Export automatically provisions and manages essential Google SecOps datasets in a secure, Google-managed BigQuery project. You gain secure, read-only access to this data through a BigQuery linked dataset, which appears directly in your own Google Cloud project. This functionality lets you query your security data as if it were stored locally, but without the overhead of managing the data pipeline or storage.\n\nFor details, see [Use Advanced BigQuery Export](https://cloud.google.com/chronicle/docs/reports/bigquery-export).",
+        "content": "**Advanced BigQuery Export**\n\nThis feature is in preview.\n\nThis feature is available for Google SecOps Enterprise Plus customers only.\n\nAdvanced BigQuery Export automatically provisions and manages essential Google SecOps datasets in a secure, Google-managed BigQuery project. You gain secure, read-only access to this data through a BigQuery linked dataset, which appears directly in your own Google Cloud project. This functionality lets you query your security data as if it were stored locally, but without the overhead of managing the data pipeline or storage.\n\nFor details, see [Use Advanced BigQuery Export](https://docs.cloud.google.com/chronicle/docs/reports/bigquery-export).",
         "summary": {
           "title": "Advanced BigQuery Export",
-          "summary": "Automatically provision and manage essential Google SecOps datasets in BigQuery. Gain secure, read-only access to your security data in your own Google Cloud project without managing data pipelines or storage."
+          "summary": "Securely export and query your security data in BigQuery without managing pipelines."
         }
       }
     ],
     "2025-10-05": [
       {
         "kind": "Announcement",
-        "content": "**New parser documentation now available**\n\nNew parser documentation is available to help you ingest and normalize logs from the following sources:\n\n* [Collect AlphaSOC alert logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/asoc-alert)\n* [Collect AlphaSOC alert logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/rippling-activitylogs)\n* [Collect Cisco vManage SD-WAN logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-sdwan)\n* [Collect Citrix Analytics logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-analytics)\n* [Collect Citrix Monitor Service logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-ms)\n* [Collect Citrix StoreFront logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-storefront)\n* [Collect Delinea SSO logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/delinea-sso)\n* [Collect SailPoint IAM logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sailpoint-iam)\n* [Collect Sentry logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sentry)\n* [Collect Snipe-IT logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/snipe-it)\n* [Collect Sophos AV logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-av)\n* [Collect Sophos Capsule8 logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-cap8)\n* [Collect Sophos DHCP logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-dhcp)\n* [Collect Sophos Intercept EDR logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-edr)\n* [Collect Swimlane Platform logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/swimlane)\n* [Collect Symantec WSS logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-wss)\n* [Collect Tailscale logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tailscale)\n* [Collect Tanium Asset logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-asset)\n* [Collect Tanium audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-audit)\n* [Collect Tanium Comply logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-comply)\n* [Collect Tanium Discover logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-discover)\n* [Collect Tanium Insight logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-insight)\n* [Collect Tanium Integrity Monitor logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-im)\n* [Collect Tanium Patch logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-patch)\n* [Collect Tanium Question logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-question)\n* [Collect Tanium Reveal logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-reveal)\n* [Collect Tanium Stream logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-stream)\n* [Collect Tanium Threat Response logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-tr)\n* [Collect TeamViewer logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/teamviewer)\n* [Collect Tines audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tines)",
+        "content": "**New parser documentation now available**\n\nNew parser documentation is available to help you ingest and normalize logs from the following sources:\n\n* [Collect AlphaSOC alert logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/asoc-alert)\n* [Collect AlphaSOC alert logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/rippling-activitylogs)\n* [Collect Cisco vManage SD-WAN logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-sdwan)\n* [Collect Citrix Analytics logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-analytics)\n* [Collect Citrix Monitor Service logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-ms)\n* [Collect Citrix StoreFront logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-storefront)\n* [Collect Delinea SSO logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/delinea-sso)\n* [Collect SailPoint IAM logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sailpoint-iam)\n* [Collect Sentry logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sentry)\n* [Collect Snipe-IT logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/snipe-it)\n* [Collect Sophos AV logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-av)\n* [Collect Sophos Capsule8 logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-cap8)\n* [Collect Sophos DHCP logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-dhcp)\n* [Collect Sophos Intercept EDR logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-edr)\n* [Collect Swimlane Platform logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/swimlane)\n* [Collect Symantec WSS logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-wss)\n* [Collect Tailscale logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tailscale)\n* [Collect Tanium Asset logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-asset)\n* [Collect Tanium audit logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-audit)\n* [Collect Tanium Comply logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-comply)\n* [Collect Tanium Discover logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-discover)\n* [Collect Tanium Insight logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-insight)\n* [Collect Tanium Integrity Monitor logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-im)\n* [Collect Tanium Patch logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-patch)\n* [Collect Tanium Question logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-question)\n* [Collect Tanium Reveal logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-reveal)\n* [Collect Tanium Stream logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-stream)\n* [Collect Tanium Threat Response logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-tr)\n* [Collect TeamViewer logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/teamviewer)\n* [Collect Tines audit logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tines)",
         "summary": {
           "title": "New Parser Documentation Available",
-          "summary": "New documentation is now available to help you ingest and normalize logs from various sources. Check out the latest updates to streamline your data ingestion process."
+          "summary": "New parser documentation is now available to assist with ingesting and normalizing logs from various sources. This includes documentation for collecting logs from AlphaSOC, Cisco, Citrix, Delinea, SailPoint, Sentry, Snipe-IT, Sophos, Swimlane, Symantec, Tailscale, Tanium, TeamViewer, and Tines."
         }
       }
     ],
     "2025-10-03": [
       {
         "kind": "Changed",
-        "content": "**Customer-managed encryption key compliance now includes support for data tables**\n\nGoogle SecOps has expanded its coverage of Customer-Managed Encryption Key\n(CMEK) compliance to now include support for data tables.\n\nFor more information, see\n[CMEK for Google SecOps](https://cloud.google.com/chronicle/docs/secops/cmek_for_secops).",
+        "content": "**Customer-managed encryption key compliance now includes support for data tables**\n\nGoogle SecOps has expanded its coverage of Customer-Managed Encryption Key\n(CMEK) compliance to now include support for data tables.\n\nFor more information, see\n[CMEK for Google SecOps](https://docs.cloud.google.com/chronicle/docs/secops/cmek_for_secops).",
         "summary": {
-          "title": "Customer-Managed Encryption Key Compliance Extended to Data Tables",
-          "summary": "Google SecOps now supports Customer-Managed Encryption Key (CMEK) compliance for data tables, enhancing data protection capabilities."
+          "title": "Customer-managed encryption key compliance now includes support for data tables",
+          "summary": "Google SecOps now supports customer-managed encryption keys (CMEK) for data tables, enhancing compliance for your security operations data."
         }
       }
     ],
     "2025-09-30": [
       {
         "kind": "Feature",
-        "content": "**Customize Events table columns in Search**\n\nYou can now specify which columns appear in the **Events** table on the\n**Search** page and in **tables** within your **dashboard widgets**. Use the `select`\nand `unselect` keywords to define the displayed columns.\n\nFor more information, see [Control columns using select and unselect keywords](https://cloud.google.com/chronicle/docs/investigation/select-unselect).",
+        "content": "**Customize Events table columns in Search**\n\nYou can now specify which columns appear in the **Events** table on the\n**Search** page and in **tables** within your **dashboard widgets**. Use the `select`\nand `unselect` keywords to define the displayed columns.\n\nFor more information, see [Control columns using select and unselect keywords](https://docs.cloud.google.com/chronicle/docs/investigation/select-unselect).",
         "summary": {
           "title": "Customize Events table columns in Search",
-          "summary": "You can now customize the columns displayed in the Events table on the Search page and in dashboard widgets using 'select' and 'unselect' keywords."
+          "summary": "You can now customize the columns displayed in the Events table on the Search page and in dashboard widgets using the `select` and `unselect` keywords."
         }
       }
     ],
     "2025-09-28": [
       {
         "kind": "Announcement",
-        "content": "**Forwarder component: end-of-life and migration**\n\nThe forwarder component is being phased out of the Google SecOps platform and will reach end-of-life (EOL) in January 2027. This impact will change all any data collection pipelines that currently use the forwarder.\n\n**Action required**: If you're currently using the forwarder component, you must migrate your data collection workflows to an alternative mechanism before April 1, 2027. You'll need to use another data pipeline management application for log ingestion.\n\nWe recommend that you migrate to the [Bindplane OpenTelemetry (OTel) collector](https://cloud.google.com/chronicle/docs/ingestion/use-bindplane-agent), which provides a scalable, open-standard solution for log and metric ingestion.\n\nThe following are key dates to note:\n\n* **Apr 1, 2026**: New Google SecOps customers cannot use the forwarder component.\n* **Jan 1, 2027**: The forwarder is officially EOL. No further patches, including security patches, will be released.\n* **Apr 1, 2027**: Data is no longer allowed to be ingested from the forwarder component.",
+        "content": "**Forwarder component: end-of-life and migration**\n\nThe forwarder component is being phased out of the Google SecOps platform and will reach end-of-life (EOL) in January 2027. This impact will change all any data collection pipelines that currently use the forwarder.\n\n**Action required**: If you're currently using the forwarder component, you must migrate your data collection workflows to an alternative mechanism before April 1, 2027. You'll need to use another data pipeline management application for log ingestion.\n\nWe recommend that you migrate to the [Bindplane OpenTelemetry (OTel) collector](https://docs.cloud.google.com/chronicle/docs/ingestion/use-bindplane-agent), which provides a scalable, open-standard solution for log and metric ingestion.\n\nThe following are key dates to note:\n\n* **Apr 1, 2026**: New Google SecOps customers cannot use the forwarder component.\n* **Jan 1, 2027**: The forwarder is officially EOL. No further patches, including security patches, will be released.\n* **Apr 1, 2027**: Data is no longer allowed to be ingested from the forwarder component.",
         "summary": {
-          "title": "Forwarder Component End-of-Life",
-          "summary": "The forwarder component will be phased out by January 2027. All users must migrate data collection to alternative mechanisms by April 1, 2027. Bindplane OpenTelemetry (OTel) collector is recommended."
+          "title": "Forwarder Component EOL",
+          "summary": "The forwarder component will be end-of-life in January 2027. All users must migrate data collection to an alternative before April 1, 2027. New customers cannot use the forwarder starting April 1, 2026."
         }
       },
       {
         "kind": "Announcement",
-        "content": "**Update CrowdStrike API permissions before decommission**\n\nCrowdStrike is decommissioning its Detects API on September 30, 2025. This API\nhas been replaced by the Alerts API. To ensure that your data feeds continue without\ninterruption, you may need to update your API permissions.\n\nThis change impacts you if your Google SecOps tenant meets both of the following conditions:\n\n* You use the CrowdStrike Detection Monitoring API connector, which ingests the `CS_DETECTS` log type.\n* The CrowdStrike API client configured for that feed lacks the permissions to read alerts Read.\n\nTo prevent disruption to your CrowdStrike data ingestion, you must update your API\nclient permissions before September 30, 2025.\nFollow the instructions in [Migrate from CrowdStrike Detects API to Alerts API](https://cloud.google.com/chronicle/docs/detection/migrate-detects-api-to-alerts-api)\nto migrate your configuration to use the Alerts API.\n\nFor more details, see [CrowdStrike’s official decommissioning notice](https://supportportal.crowdstrike.com/s/article/Tech-Alert-30-Day-Notice-Planned-Decommission-Announcement-of-the-DetectionSummaryEvent-and-detects-API).",
+        "content": "**Update CrowdStrike API permissions before decommission**\n\nCrowdStrike is decommissioning its Detects API on September 30, 2025. This API\nhas been replaced by the Alerts API. To ensure that your data feeds continue without\ninterruption, you may need to update your API permissions.\n\nThis change impacts you if your Google SecOps tenant meets both of the following conditions:\n\n* You use the CrowdStrike Detection Monitoring API connector, which ingests the `CS_DETECTS` log type.\n* The CrowdStrike API client configured for that feed lacks the permissions to read alerts Read.\n\nTo prevent disruption to your CrowdStrike data ingestion, you must update your API\nclient permissions before September 30, 2025.\nFollow the instructions in [Migrate from CrowdStrike Detects API to Alerts API](https://docs.cloud.google.com/chronicle/docs/detection/migrate-detects-api-to-alerts-api)\nto migrate your configuration to use the Alerts API.\n\nFor more details, see [CrowdStrike’s official decommissioning notice](https://supportportal.crowdstrike.com/s/article/Tech-Alert-30-Day-Notice-Planned-Decommission-Announcement-of-the-DetectionSummaryEvent-and-detects-API).",
         "summary": {
-          "title": "CrowdStrike API Update Required",
-          "summary": "CrowdStrike is decommissioning its Detects API on September 30, 2025, replaced by the Alerts API. Update your API permissions to avoid data feed interruptions."
+          "title": "CrowdStrike API Update",
+          "summary": "The CrowdStrike Detects API will be decommissioned on September 30, 2025, and replaced by the Alerts API. If you use the CrowdStrike Detection Monitoring API connector and your API client lacks permissions to read alerts, you must update your API permissions before the decommission date to avoid data ingestion disruption. Please refer to the provided documentation for migration instructions."
         }
       },
       {
         "kind": "Feature",
-        "content": "**Podman support for Remote Agents**\n\nYou can now install a Remote Agent using Podman. This new functionality provides a streamlined deployment workflow—a lightweight alternative to existing installation methods.\nFor details, see [Deploy an agent with Podman](https://cloud.google.com/chronicle/docs/soar/working-with-remote-agents/deploy-agent-with-podman).",
+        "content": "**Podman support for Remote Agents**\n\nYou can now install a Remote Agent using Podman. This new functionality provides a streamlined deployment workflow—a lightweight alternative to existing installation methods.\nFor details, see [Deploy an agent with Podman](https://docs.cloud.google.com/chronicle/docs/soar/working-with-remote-agents/deploy-agent-with-podman).",
         "summary": {
           "title": "Podman support for Remote Agents",
-          "summary": "Install a Remote Agent using Podman for a streamlined deployment. This offers a lightweight alternative to current installation methods."
+          "summary": "Install a Remote Agent using Podman for a streamlined, lightweight deployment."
         }
       },
       {
         "kind": "Feature",
-        "content": "**Debian support for remote agents**\n\nYou can now install a Remote Agent using Debian. This new functionality provides a streamlined deployment workflow—an alternative to existing installation methods.\nFor details, see [Deploy an agent with Debian](https://cloud.google.com/chronicle/docs/soar/working-with-remote-agents/create-agent-with-installer-on-debian).",
+        "content": "**Debian support for remote agents**\n\nYou can now install a Remote Agent using Debian. This new functionality provides a streamlined deployment workflow—an alternative to existing installation methods.\nFor details, see [Deploy an agent with Debian](https://docs.cloud.google.com/chronicle/docs/soar/working-with-remote-agents/create-agent-with-installer-on-debian).",
         "summary": {
-          "title": "Remote Agent Debian Support",
-          "summary": "Debian is now supported for installing Remote Agents, offering a simpler deployment option."
+          "title": "Debian support for remote agents",
+          "summary": "Install a Remote Agent using Debian for a streamlined deployment."
         }
       },
       {
@@ -142,10 +150,20 @@
     "2025-09-27": [
       {
         "kind": "Feature",
-        "content": "**Use joins in YARA-L Search queries**\n\nThese changes are currently in Preview.\n\nYou can now use joins in statistical Search queries that include a `match` section\nto correlate data from multiple sources. This feature lets you link related\nsources directly within a single query.\n\nFor more information, see [Use joins in Search](https://cloud.google.com/chronicle/docs/investigation/search-joins).",
+        "content": "**Use joins in YARA-L Search queries**\n\nThese changes are currently in Preview.\n\nYou can now use joins in statistical Search queries that include a `match` section\nto correlate data from multiple sources. This feature lets you link related\nsources directly within a single query.\n\nFor more information, see [Use joins in Search](https://docs.cloud.google.com/chronicle/docs/investigation/search-joins).",
         "summary": {
           "title": "Use joins in YARA-L Search queries",
-          "summary": "Correlate data from multiple sources using joins in statistical Search queries."
+          "summary": "Correlate data from multiple sources using joins in YARA-L Search queries. This feature allows you to link related sources directly within a single query."
+        }
+      }
+    ],
+    "2025-10-09": [
+      {
+        "kind": "Feature",
+        "content": "**Customize Events table columns in Search**\n\nYou can now specify which columns appear in the **Events** table on the\n**Search** page and in tables within your dashboard widgets. Use the `select`\nand `unselect` keywords to define the displayed columns.\n\nFor more information, see [Control columns using select and unselect keywords](https://cloud.google.com/chronicle/docs/investigation/select-unselect).",
+        "summary": {
+          "title": "Customize Events table columns in Search",
+          "summary": "You can now customize the columns displayed in the Events table on the Search page and in dashboard widgets using the `select` and `unselect` keywords."
         }
       }
     ],

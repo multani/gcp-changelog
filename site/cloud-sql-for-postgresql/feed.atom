@@ -2,9 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for PostgreSQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for PostgreSQL</subtitle>
-  <updated>2025-10-06T00:00:00+00:00</updated>
+  <updated>2025-10-23T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-postgresql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2025-10-23:feature:0</id>
+    <published>2025-10-23T00:00:00+00:00</published>
+    <updated>2025-10-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud SQL now proactively detects and works to cancel high memory usage
+connections to prevent out-of-memory (OOM) failures. For more information,
+see <a href="https://cloud.google.com/sql/docs/postgres/manage-memory-usage-best-practices#cancelled-query">Cancelled queries due to high memory usage</a>.</p>]]></content>
+    <summary>Cloud SQL now proactively detects and works to cancel high memory usage connections to prevent out-of-memory (OOM) failures.</summary>
+    <title>Feature: Cloud SQL Prevents OOM Failures</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2025-10-17:feature:0</id>
+    <published>2025-10-17T00:00:00+00:00</published>
+    <updated>2025-10-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud SQL Enterprise edition now supports a new machine series called the N4 machine series. This machine series provides balanced price-to-performance and uses the Hyperdisk Balanced storage. You can create custom machine types for the N4 machine series with up to 80 vCPUs and up to 640 GB memory. The N4 machine series is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
+<p>For more information about the N4 machine series and its availability, see <a href="https://docs.cloud.google.com/sql/docs/postgres/machine-series-overview">Machine series overview</a>.</p>]]></content>
+    <summary>Cloud SQL Enterprise Edition now supports the new N4 machine series, offering balanced price-to-performance with Hyperdisk Balanced storage. You can create custom machine types with up to 80 vCPUs and 640 GB memory. This feature is now generally available.</summary>
+    <title>Feature: Introducing the N4 Machine Series for Cloud SQL Enterprise Edition</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2025-10-17:feature:1</id>
+    <published>2025-10-17T00:00:00+00:00</published>
+    <updated>2025-10-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/sql/docs/postgres/machine-series-overview#c4a">C4A machine series</a> is now <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
+<p>The C4A machine series is supported for Cloud SQL Enterprise Plus edition instances, and provides optimized price-performance and delivers predictable high performance for high demand Cloud SQL workloads. It uses the Hyperdisk Balanced storage.</p>
+<p>For more information about the C4A machine series and its availability, see <a href="https://docs.cloud.google.com/sql/docs/postgres/machine-series-overview">Machine series overview</a>.</p>]]></content>
+    <summary>The C4A machine series is now generally available for Cloud SQL Enterprise Plus edition, offering optimized price-performance for demanding workloads.</summary>
+    <title>Feature: C4A machine series now generally available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -12,9 +50,9 @@
     <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2025-10-06:feature:0</id>
     <published>2025-10-06T00:00:00+00:00</published>
     <updated>2025-10-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>You can now assess the upgrade readiness of your Cloud SQL for PostgreSQL instances before a major version upgrade by running a precheck. This precheck either confirms your instance can be upgraded, or lists issues and their solutions that need to be fixed prior to upgrading. For more information, see <a href="https://cloud.google.com/sql/docs/postgres/upgrade-major-db-version-inplace#precheck">Assess upgrade readiness for your instance</a>.</p>]]></content>
-    <summary>Assess your Cloud SQL for PostgreSQL instance's upgrade readiness before a major version upgrade with the new precheck feature. This tool confirms if your instance is ready or provides specific issues and solutions to address before proceeding.</summary>
-    <title>Feature: Cloud SQL for PostgreSQL Precheck</title>
+    <content type="html"><![CDATA[<p>You can now assess the upgrade readiness of your Cloud SQL for PostgreSQL instances before a major version upgrade by running a precheck. This precheck either confirms your instance can be upgraded, or lists issues and their solutions that need to be fixed prior to upgrading. For more information, see <a href="https://docs.cloud.google.com/sql/docs/postgres/upgrade-major-db-version-inplace#precheck">Assess upgrade readiness for your instance</a>.</p>]]></content>
+    <summary>A new precheck tool is available for Cloud SQL for PostgreSQL to assess upgrade readiness before a major version upgrade.</summary>
+    <title>Feature: Cloud SQL precheck tool</title>
   </entry>
   <entry>
     <author>
@@ -42,7 +80,7 @@
 <li><code>vacuum_max_eager_freeze_failure_rate</code></li>
 <li><code>vacuum_truncate</code></li>
 </ul>
-<p>For more information, see <a href="https://cloud.google.com/sql/docs/postgres/flags">Configure database flags</a>.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/postgres/flags">Configure database flags</a>.</p>
 <p><strong>Extensions</strong></p>
 <p>The following extensions aren't available for PostgreSQL 18:</p>
 <ul>
@@ -54,10 +92,10 @@
 <li><code>pg_wait_sampling</code></li>
 <li><code>tds_fdw</code></li>
 </ul>
-<p>For more information, see <a href="https://cloud.google.com/sql/docs/postgres/extensions">Configure PostgreSQL extensions</a>.</p>
-<p>To create a new instance using PostgreSQL 18, see <a href="https://cloud.google.com/sql/docs/postgres/create-instance">Create instances</a>.</p>]]></content>
-    <summary>Cloud SQL for PostgreSQL now supports PostgreSQL version 18 in preview. Review changes and test thoroughly before upgrading.</summary>
-    <title>Feature: Cloud SQL for PostgreSQL 18 Now Available</title>
+<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/postgres/extensions">Configure PostgreSQL extensions</a>.</p>
+<p>To create a new instance using PostgreSQL 18, see <a href="https://docs.cloud.google.com/sql/docs/postgres/create-instance">Create instances</a>.</p>]]></content>
+    <summary>Cloud SQL for PostgreSQL now supports PostgreSQL version 18 in preview. It is recommended to review changes and validate instance readiness before upgrading.</summary>
+    <title>Feature: PostgreSQL 18 now available in preview</title>
   </entry>
   <entry>
     <author>

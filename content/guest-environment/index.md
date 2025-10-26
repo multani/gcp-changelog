@@ -1,5 +1,24 @@
 # Guest Environment
 
+## 2025-10-21
+
+### Fixed
+
+Version `20251009.01` of the guest agent, announced in the [October 20, 2025 release notes](https://docs.cloud.google.com/compute/docs/images/guest-environment/release-notes#October_20_2025), has been rolled back. This version introduced the plugin-based architecture to Windows but contained a bug in the [WSFC module](https://docs.cloud.google.com/compute/docs/images/guest-agent-functions#windows-failover).
+To resolve this issue, guest agent version `20251011.00` is now available for Windows, which excludes the new plugin-based architecture.
+
+---
+## 2025-10-20
+
+### Feature
+
+Version `20251009.01` of the guest agent, which introduces the plugin-based
+architecture to Windows, is now available.
+
+For more information about the plugin-based architecture, see
+[Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).
+
+---
 ## 2025-10-02
 
 ### Feature

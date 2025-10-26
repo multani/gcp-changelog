@@ -1,5 +1,22 @@
 # Cloud SQL for MySQL
 
+## 2025-10-17
+
+### Feature
+
+Cloud SQL Enterprise edition now supports a new machine series called the N4 machine series. This machine series provides balanced price-to-performance and uses the Hyperdisk Balanced storage. You can create custom machine types for the N4 machine series with up to 80 vCPUs and up to 640 GB memory. The N4 machine series is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+For more information about the N4 machine series and its availability, see [Machine series overview](https://docs.cloud.google.com/sql/docs/mysql/machine-series-overview).
+
+### Feature
+
+The [C4A machine series](https://docs.cloud.google.com/sql/docs/mysql/machine-series-overview#c4a) is now [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+The C4A machine series is supported for Cloud SQL Enterprise Plus edition instances, and provides optimized price-performance and delivers predictable high performance for high demand Cloud SQL workloads. It uses the Hyperdisk Balanced storage.
+
+For more information about the C4A machine series and its availability, see [Machine series overview](https://docs.cloud.google.com/sql/docs/mysql/machine-series-overview).
+
+---
 ## 2025-09-29
 
 ### Feature

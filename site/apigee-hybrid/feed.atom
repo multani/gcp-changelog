@@ -137,9 +137,9 @@
     <content type="html"><![CDATA[<p>On October 7, 2025 we released an enhancement to Apigee hybrid version 1.14.3, recurring, top-up, and setup fees for Apigee hybrid monetization.</p>
 <p><strong>Note:</strong> This is an enhancement to an existing release.</p>
 <ul>
-<li>For complete information on the contents of the v1.14.3 release, see <a href="https://cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143">Apigee hybrid v1.14.3 release notes</a>.</li>
+<li>For complete information on the contents of the v1.14.3 release, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143">Apigee hybrid v1.14.3 release notes</a>.</li>
 </ul>]]></content>
-    <summary>An enhancement to Apigee hybrid 1.14.3 has been released, including updates to monetization features.</summary>
+    <summary>New recurring, top-up, and setup fees for Apigee hybrid monetization are now available as part of an enhancement to version 1.14.3.</summary>
     <title>hybrid v1.14.3: Apigee hybrid monetization enhancements</title>
   </entry>
   <entry>
@@ -150,8 +150,8 @@
     <published>2025-10-07T00:00:00+00:00</published>
     <updated>2025-10-07T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Recurring, top-up, and setup fees for Apigee hybrid monetization</strong></p>
-<p>Apigee hybrid now supports recurring, top-up, and setup fees for monetization. For information see <a href="https://cloud.google.com/apigee/docs/hybrid/v1.14/monetization-for-hybrid">Enabling monetization for Apigee hybrid</a>.</p>]]></content>
-    <summary>Apigee hybrid now supports recurring, top-up, and setup fees.</summary>
+<p>Apigee hybrid now supports recurring, top-up, and setup fees for monetization. For information see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.14/monetization-for-hybrid">Enabling monetization for Apigee hybrid</a>.</p>]]></content>
+    <summary>Apigee hybrid now supports recurring, top-up, and setup fees for monetization.</summary>
     <title>Feature: Apigee hybrid monetization updates</title>
   </entry>
   <entry>
@@ -176,12 +176,12 @@
     <updated>2025-09-29T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>On September 29, 2025 we released an updated version of the Apigee hybrid software, 1.14.3.</p>
 <ul>
-<li>For information on upgrading, see <a href="https://cloud.google.com/apigee/docs/hybrid/v1.14/upgrade">Upgrading Apigee hybrid to version 1.14</a>.</li>
-<li>For information on new installations, see <a href="https://cloud.google.com/apigee/docs/hybrid/v1.14/big-picture">The big picture</a>.</li>
+<li>For information on upgrading, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.14/upgrade">Upgrading Apigee hybrid to version 1.14</a>.</li>
+<li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.14/big-picture">The big picture</a>.</li>
 </ul>
-<p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>]]></content>
-    <summary>A new version of Apigee hybrid, 1.14.3, was released on September 29, 2025. This release includes important updates and is a patch release. For detailed information on upgrading or new installations, please refer to the provided documentation links.</summary>
-    <title>hybrid v1.14.3: Apigee hybrid 1.14.3 release</title>
+<p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>]]></content>
+    <summary>A new version of Apigee hybrid, v1.14.3, was released on September 29, 2025. This patch release includes updated container images integrated with the Apigee hybrid Helm charts, simplifying the upgrade process.</summary>
+    <title>hybrid v1.14.3: Apigee hybrid v1.14.3 release</title>
   </entry>
   <entry>
     <author>
@@ -192,17 +192,17 @@
     <updated>2025-09-29T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>| Bug ID | Description |
 | --- | --- |
-| <strong>423597917</strong> | <strong>Post of an <a href="https://cloud.google.com/apigee/docs/reference/apis/apigee/rest/v1/organizations.appgroups.apps.keys/updateAppGroupAppKey"><code>AppGroupAppKey</code></a> scopes should result in insert operation instead of update.</strong> |
+| <strong>423597917</strong> | <strong>Post of an <a href="https://docs.cloud.google.com/apigee/docs/reference/apis/apigee/rest/v1/organizations.appgroups.apps.keys/updateAppGroupAppKey"><code>AppGroupAppKey</code></a> scopes should result in insert operation instead of update.</strong> |
 | <strong>420675540</strong> | <strong>Fixed Cassandra based replication for runtime contracts in synchronizer.</strong> |
 | <strong>416634326</strong> | <strong>Presence of istio.io Custom Resource Definitions (CRDs) in an Apigee hybrid cluster could cause failure in apigee-ingressgateway-manager pods.</strong> |
 | <strong>414499328</strong> | <strong><code>ApigeeTelemetry</code> could become stuck in <code>creating</code> state</strong> |
 | <strong>412740465</strong> | <strong>Fixed issue where zipkin headers were not generated by Apigee Ingress Gateway.</strong> |
 | <strong>409048431</strong> | <strong>Fixes a vulnerability which could allow a SAML signature verification to be bypassed.</strong> |
 | <strong>395272878</strong> | <strong>Separate Forward proxy support for <code>googleapis.com</code> and <code>non-googleapis.com</code> runtime traffic.</strong> |
-| <strong>378686709</strong> | <strong>The use of wildcards (*) in Apigee proxy basepaths would conflict with other explicit basepaths, resulting in a 404 error.</strong> To apply this fix, follow the procedure in <a href="https://cloud.google.com/apigee/docs/release/known-issues#378686709">Known issue 378686709</a>. |
+| <strong>378686709</strong> | <strong>The use of wildcards (*) in Apigee proxy basepaths would conflict with other explicit basepaths, resulting in a 404 error.</strong> To apply this fix, follow the procedure in <a href="https://docs.cloud.google.com/apigee/docs/release/known-issues#378686709">Known issue 378686709</a>. |
 | <strong>367815792</strong> | <strong>Two new Flow Variables: <code>app_group_app</code> and <code>app_group_name</code> have been added to VerifyApiKey and Access Token policy.</strong> |</p>]]></content>
-    <summary>This release includes several fixes for Apigee, addressing issues with app key creation, Cassandra replication, ingress gateway behavior, telemetry, SAML signature verification, and wildcard basepaths. Additionally, new flow variables have been added to the VerifyApiKey and Access Token policies.</summary>
-    <title>Fixed: Apigee Fixes</title>
+    <summary>This release includes several bug fixes, including issues with app key creation, Cassandra replication, Apigee hybrid cluster stability, telemetry services, zipkin header generation, SAML signature verification, forward proxy support, and wildcard basepaths in proxies. Additionally, two new flow variables, app_group_app and app_group_name, have been added to the VerifyApiKey and Access Token policies.</summary>
+    <title>Fixed: Bug Fixes</title>
   </entry>
   <entry>
     <author>

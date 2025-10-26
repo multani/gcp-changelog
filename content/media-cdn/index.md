@@ -8,7 +8,7 @@ Media CDN supports multipart range requests, which enable users to request
 multiple non-contiguous segments of a file in a single HTTP request.
 This feature is in **Preview**.
 
-For more information, see [Multipart range requests](https://cloud.google.com/media-cdn/docs/caching#multipart-range-requests).
+For more information, see [Multipart range requests](https://docs.cloud.google.com/media-cdn/docs/caching#multipart-range-requests).
 
 ---
 ## 2025-09-24

@@ -164,7 +164,7 @@ are now supported in Rules and Dashboards, in addition to Search.</p>
     <updated>2025-10-21T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Premium <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fw">Fortinet Firewall parser</a> now available as Release Candidate</strong></p>
 <p>This enhanced parser is available as a <strong>Release Candidate</strong> for the next 2 months. To opt in and begin testing it, go to <strong>SIEM Settings &gt; Parsers</strong>. We encourage you to try it out and evaluate the improvements before it becomes the default.</p>]]></content>
-    <summary>A new version of the Fortinet Firewall parser is now available as a Release Candidate. You can test it for the next 2 months via SIEM Settings &gt; Parsers. We encourage you to try it out and evaluate the improvements before it becomes the default.</summary>
+    <summary>The premium Fortinet Firewall parser is now available as a Release Candidate for two months. You can opt in to test it via SIEM Settings &gt; Parsers. We encourage you to evaluate the improvements before it becomes the default.</summary>
     <title>Announcement: Fortinet Firewall parser now available as Release Candidate</title>
   </entry>
   <entry>
@@ -486,8 +486,8 @@ are now supported in Rules and Dashboards, in addition to Search.</p>
 <p>This feature is currently in Preview.</p>
 <p>Multi-stage queries in YARA-L are now available as a Preview feature. Multi-stage queries in YARA-L let you feed the output of one query stage directly into the input of a subsequent stage. This process gives you greater control over data transformation than single, monolithic query. They are supported in both <strong>Dashboards</strong> and <strong>Search</strong>. Multi-stage queries can contain between 1 and 4 named stages, in addition to a root stage.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/multi-stage-yaral">Create multi-stage queries in YARA-L</a>.</p>]]></content>
-    <summary>You can now use multi-stage queries in YARA-L, a feature that allows the output of one query stage to be used as input for another. This provides enhanced control over data transformation compared to single, monolithic queries. The feature is available in both Dashboards and Search and supports up to four named stages plus a root stage.</summary>
-    <title>Feature: Multi-stage YARA-L queries now in Preview</title>
+    <summary>Introducing multi-stage queries in YARA-L, now in Preview. This feature allows the output of one query stage to be used as input for another, offering enhanced control over data transformation. Supported in Dashboards and Search, these queries can include up to four named stages plus a root stage.</summary>
+    <title>Feature: Multi-stage Queries in YARA-L</title>
   </entry>
   <entry>
     <author>
@@ -528,7 +528,7 @@ are now supported in Rules and Dashboards, in addition to Search.</p>
 <li>Revert to a previously deployed, stable parser version.</li>
 </ul>
 <p>For details, see <a href="https://docs.cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage-parser-versions">Manage prebuilt parser versions</a>.</p>]]></content>
-    <summary>Control your parser updates by opting in or out of automatic updates, reviewing logic, and manually updating or reverting to previous versions.</summary>
+    <summary>Gain granular control over parser updates, with options to opt in/out of automatic updates, review logic, and manually update or revert versions.</summary>
     <title>Feature: Manage parser versions</title>
   </entry>
   <entry>
@@ -655,7 +655,7 @@ are now supported in Rules and Dashboards, in addition to Search.</p>
 <li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/teamviewer">Collect TeamViewer logs</a></li>
 <li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tines">Collect Tines audit logs</a></li>
 </ul>]]></content>
-    <summary>New documentation is now available to assist with ingesting and normalizing logs from various sources. This includes detailed guides for collecting logs from services such as AlphaSOC, Cisco vManage, Citrix, Delinea, SailPoint, Sentry, Sophos, and many more.</summary>
+    <summary>New documentation is now available to help you ingest and normalize logs from various sources, including AlphaSOC, Cisco, Citrix, Delinea, SailPoint, Sentry, Snipe-IT, Sophos, Swimlane, Symantec, Tailscale, Tanium, TeamViewer, and Tines.</summary>
     <title>Announcement: New Parser Documentation Available</title>
   </entry>
   <entry>
@@ -708,8 +708,8 @@ are now supported in Rules and Dashboards, in addition to Search.</p>
 (CMEK) compliance to now include support for data tables.</p>
 <p>For more information, see
 <a href="https://docs.cloud.google.com/chronicle/docs/secops/cmek_for_secops">CMEK for Google SecOps</a>.</p>]]></content>
-    <summary>Google SecOps now supports Customer-Managed Encryption Keys (CMEK) for data tables, enhancing compliance capabilities.</summary>
-    <title>Changed: Customer-Managed Encryption Key Compliance Extended to Data Tables</title>
+    <summary>Google SecOps now supports Customer-Managed Encryption Key (CMEK) compliance for data tables. This expansion enhances security and compliance for your data. For more details, refer to the CMEK for Google SecOps documentation.</summary>
+    <title>Changed: Customer-Managed Encryption Key Compliance</title>
   </entry>
   <entry>
     <author>
@@ -738,7 +738,7 @@ and <code>unselect</code> keywords to define the displayed columns.</p>
 <strong>Search</strong> page and in <strong>tables</strong> within your <strong>dashboard widgets</strong>. Use the <code>select</code>
 and <code>unselect</code> keywords to define the displayed columns.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/select-unselect">Control columns using select and unselect keywords</a>.</p>]]></content>
-    <summary>Control which columns appear in the Events table on the Search page and in dashboard widgets using select and unselect keywords.</summary>
+    <summary>You can now specify which columns appear in the Events table on the Search page and in tables within your dashboard widgets. Use the `select` and `unselect` keywords to define the displayed columns.</summary>
     <title>Feature: Customize Events table columns in Search</title>
   </entry>
   <entry>
@@ -778,8 +778,8 @@ and <code>unselect</code> keywords to define the displayed columns.</p>
 <li><strong>Jan 1, 2027</strong>: The forwarder is officially EOL. No further patches, including security patches, will be released.</li>
 <li><strong>Apr 1, 2027</strong>: Data is no longer allowed to be ingested from the forwarder component.</li>
 </ul>]]></content>
-    <summary>The forwarder component will be phased out by January 2027. Please migrate your data collection workflows to an alternative solution before April 1, 2027.</summary>
-    <title>Announcement: Forwarder Component End-of-Life</title>
+    <summary>The forwarder component is being phased out and will reach end-of-life in January 2027. Action is required to migrate data collection workflows to an alternative mechanism before April 1, 2027.</summary>
+    <title>Announcement: Forwarder component EOL</title>
   </entry>
   <entry>
     <author>
@@ -992,7 +992,7 @@ sources directly within a single query.</p>
 to correlate data from multiple sources. This feature lets you link related
 sources directly within a single query.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/search-joins">Use joins in Search</a>.</p>]]></content>
-    <summary>Correlate data from multiple sources using joins in YARA-L Search queries. Link related sources directly within a single query.</summary>
+    <summary>Correlate data from multiple sources using joins in YARA-L Search queries. This feature allows you to link related sources directly within a single query.</summary>
     <title>Feature: Use joins in YARA-L Search queries</title>
   </entry>
   <entry>

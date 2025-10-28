@@ -26,6 +26,18 @@ pipelines to ingest data into BigQuery. This feature is in
 
 ### Feature
 
+The administrative jobs explorer now includes a [job details
+page](https://docs.cloud.google.com/bigquery/docs/admin-jobs-explorer#get-job-details) to help you diagnose
+and troubleshoot queries. The **Performance** tab compiles query information
+including the execution graph, SQL text, execution history, performance
+variance, and system load during execution. You can also [compare two
+jobs](https://docs.cloud.google.com/bigquery/docs/admin-jobs-explorer#compare-jobs) to identify discrepancies
+and potential areas to improve query performance.
+
+This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
 You can now use the Apache Arrow format to
 [stream data to BigQuery with the Storage Write API](https://docs.cloud.google.com/bigquery/docs/write-api#arrow-handling).
 This feature is

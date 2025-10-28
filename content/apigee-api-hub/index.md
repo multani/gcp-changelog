@@ -1,5 +1,28 @@
 # Apigee API hub
 
+## 2025-10-28
+
+### Feature
+
+**API insights in API hub**
+
+API insights is now available in API hub, providing a unified view of your API traffic and performance across all connected gateways. With API insights, you can gain a holistic understanding of your API ecosystem's health and quickly identify areas for optimization.
+
+Currently, API insights supports data sources from Apigee, Apigee hybrid, Apigee Edge Public Cloud, and Apigee Edge Private Cloud (OPDK).
+
+For more information, see [API insights overview](https://cloud.google.com/apigee/docs/apihub/api-insights-overview).
+
+### Feature
+
+**Detailed API resource insights**
+
+A new **Insights** tab is now available on the API details page, providing API-centric analytics to help you understand usage patterns and performance for each of your APIs.
+
+You can now analyze key metrics such as total traffic, average TPS, request/response latencies, and more, directly from the API details page.
+
+For more information, see [View API resource insights](https://cloud.google.com/apigee/docs/apihub/view-api-resource-insights).
+
+---
 ## 2025-10-16
 
 ### Changed

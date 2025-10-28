@@ -1,5 +1,23 @@
 # Google Kubernetes Engine
 
+## 2025-10-28
+
+### Feature
+
+Autoscaled blue-green upgrades are a type of node upgrade strategy that
+maximizes the amount of time before disruption-intolerant workloads are evicted,
+while minimizing cost. This feature is available in Preview for
+GKE Standard node pools. For more information, see
+[Autoscaled blue-green upgrades](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/node-pool-upgrade-strategies#autoscaled-blue-green-upgrade-strategy).
+
+### Feature
+
+You can use the G4 VM, powered by NVIDIA's RTX PRO 6000 GPUs, with
+GKE Autopilot in version 1.34.1-gke.1829001 or later. To
+get started, see [Deploy GPU workloads in
+Autopilot](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/autopilot-gpus).
+
+---
 ## 2025-10-22
 
 ### Changed

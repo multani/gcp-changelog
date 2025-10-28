@@ -1,5 +1,22 @@
 # Confidential VM
 
+## 2025-10-27
+
+### Breaking
+
+Following a firmware update, Confidential VM instances with AMD SEV-SNP generate v4
+attestation reports. Attestation report parsers that are designed for v3
+attestation reports might break.
+
+Customers using [`go-sev-guest`](https://github.com/google/go-sev-guest) to
+parse attestation reports can resolve attestation failures by updating to
+`go-sev-guest` v0.14.0 or above.
+
+If you're writing your own parser, the attestation report format is defined by
+the
+[SEV Secure Nested Paging Firmware ABI Specification](https://www.amd.com/en/developer/sev.html).
+
+---
 ## 2025-10-20
 
 ### Security

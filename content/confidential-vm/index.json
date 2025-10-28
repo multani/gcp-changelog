@@ -1,6 +1,16 @@
 {
   "name": "Confidential VM",
   "entries": {
+    "2025-10-27": [
+      {
+        "kind": "Breaking",
+        "content": "Following a firmware update, Confidential VM instances with AMD SEV-SNP generate v4\nattestation reports. Attestation report parsers that are designed for v3\nattestation reports might break.\n\nCustomers using [`go-sev-guest`](https://github.com/google/go-sev-guest) to\nparse attestation reports can resolve attestation failures by updating to\n`go-sev-guest` v0.14.0 or above.\n\nIf you're writing your own parser, the attestation report format is defined by\nthe\n[SEV Secure Nested Paging Firmware ABI Specification](https://www.amd.com/en/developer/sev.html).",
+        "summary": {
+          "title": "Confidential VM instances with AMD SEV-SNP generate v4 attestation reports",
+          "summary": "Confidential VM instances with AMD SEV-SNP now generate v4 attestation reports. This may break existing attestation report parsers. Update to go-sev-guest v0.14.0 or above if you are using this library. For custom parsers, refer to the SEV Secure Nested Paging Firmware ABI Specification."
+        }
+      }
+    ],
     "2025-10-20": [
       {
         "kind": "Security",

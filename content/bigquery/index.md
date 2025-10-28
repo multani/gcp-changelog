@@ -114,6 +114,17 @@ This feature is
 
 ### Feature
 
+You can now use [visualization cells](https://docs.cloud.google.com/bigquery/docs/create-notebooks#cells) to
+automatically
+[generate a visualization](https://docs.cloud.google.com/bigquery/docs/visualize-data-colab)
+of any DataFrame in your notebook.
+You can customize the columns, chart type, aggregations, colors , labels, and
+title.
+
+This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
 In BigQuery ML, you can now fully manage open models as Vertex AI endpoints.
 BigQuery-managed open models offer the following benefits:
 
@@ -123,17 +134,6 @@ BigQuery-managed open models offer the following benefits:
 * [Customize model deployment machine types](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-remote-model-open#machine-type)
   or reserve open model resources by
   [using Compute Engine reservations](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-remote-model-open#reservation-affinity)
-
-This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
-
-### Feature
-
-You can now use [visualization cells](https://docs.cloud.google.com/bigquery/docs/create-notebooks#cells) to
-automatically
-[generate a visualization](https://docs.cloud.google.com/bigquery/docs/visualize-data-colab)
-of any DataFrame in your notebook.
-You can customize the columns, chart type, aggregations, colors , labels, and
-title.
 
 This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
 

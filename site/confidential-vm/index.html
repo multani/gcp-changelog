@@ -2088,6 +2088,18 @@
 
 
 <h1 id="confidential-vm">Confidential VM</h1>
+<h2 id="2025-10-27">2025-10-27</h2>
+<h3 id="breaking">Breaking</h3>
+<p>Following a firmware update, Confidential VM instances with AMD SEV-SNP generate v4
+attestation reports. Attestation report parsers that are designed for v3
+attestation reports might break.</p>
+<p>Customers using <a href="https://github.com/google/go-sev-guest"><code>go-sev-guest</code></a> to
+parse attestation reports can resolve attestation failures by updating to
+<code>go-sev-guest</code> v0.14.0 or above.</p>
+<p>If you're writing your own parser, the attestation report format is defined by
+the
+<a href="https://www.amd.com/en/developer/sev.html">SEV Secure Nested Paging Firmware ABI Specification</a>.</p>
+<hr />
 <h2 id="2025-10-20">2025-10-20</h2>
 <h3 id="security">Security</h3>
 <p>A vulnerability affecting AMD Zen 5 processors (Turin) was discovered and is
@@ -2130,6 +2142,9 @@ being addressed. For more information, see the
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#confidential-vm">Confidential VM</a></li>
+          <li class="nav-item">
+            <a href="#2025-10-27" class="nav-link">2025-10-27</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-10-20" class="nav-link">2025-10-20</a>
           </li>

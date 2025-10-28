@@ -2,9 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Confidential VM</title>
   <subtitle>Changelog for Google Cloud product: Confidential VM</subtitle>
-  <updated>2025-10-20T00:00:00+00:00</updated>
+  <updated>2025-10-27T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:confidential-vm</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/confidential-vm/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:confidential-vm:2025-10-27:breaking:0</id>
+    <published>2025-10-27T00:00:00+00:00</published>
+    <updated>2025-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Following a firmware update, Confidential VM instances with AMD SEV-SNP generate v4
+attestation reports. Attestation report parsers that are designed for v3
+attestation reports might break.</p>
+<p>Customers using <a href="https://github.com/google/go-sev-guest"><code>go-sev-guest</code></a> to
+parse attestation reports can resolve attestation failures by updating to
+<code>go-sev-guest</code> v0.14.0 or above.</p>
+<p>If you're writing your own parser, the attestation report format is defined by
+the
+<a href="https://www.amd.com/en/developer/sev.html">SEV Secure Nested Paging Firmware ABI Specification</a>.</p>]]></content>
+    <summary>Confidential VM instances with AMD SEV-SNP now generate v4 attestation reports. This may break existing attestation report parsers. Update to go-sev-guest v0.14.0 or above if you are using this library. For custom parsers, refer to the SEV Secure Nested Paging Firmware ABI Specification.</summary>
+    <title>Breaking: Confidential VM instances with AMD SEV-SNP generate v4 attestation reports</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

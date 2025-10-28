@@ -1,6 +1,69 @@
 # Cloud Composer
 
+## 2025-10-22
+
+### Announcement
+
+A new Cloud Composer release has started on **October 22, 2025**. Get ready
+for upcoming changes and features as we roll out the new release to all regions.
+This release is in progress at the moment. Listed changes and features might
+not be available in some regions yet.
+
+### Changed
+
+The default value of the
+[`NO_PROXY`](https://cloud.google.com/composer/docs/composer-3/change-networking-type#proxy-variables)
+environment variable now includes the IP address of the environment's cluster
+Compute Engine metadata server.
+
+### Changed
+
+*(Airflow 2.10.5)* The `apache-airflow-providers-google` package was upgraded to version 18.0.0 in Cloud Composer 2 images and Cloud Composer 3 builds.
+
+For more information about changes, see the
+[apache-airflow-providers-google changelog](https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html)
+from version 17.2.0 to version 18.0.0.
+
+### Changed
+
+*(Airflow 2.10.5)* The `apache-airflow-providers-cncf-kubernetes` package was
+[upgraded to version 10.8.2](https://airflow.apache.org/docs/apache-airflow-providers-cncf-kubernetes/stable/changelog.html).
+For changes in other packages, see the
+[preinstalled packages changelog](https://cloud.google.com/composer/docs/versions-packages).
+
+### Changed
+
+New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3)
+are available in Cloud Composer 3:
+
+* [composer-3-airflow-2.10.5-build.17](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-17) (default)
+* [composer-3-airflow-2.9.3-build.37](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-37)
+
+### Changed
+
+New [images](https://cloud.google.com/composer/docs/composer-versions#images-composer-2)
+are available in Cloud Composer 2:
+
+* [composer-2.15.0-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-15-0-airflow-2-10-5) (default)
+* [composer-2.15.0-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-15-0-airflow-2-9-3)
+
+### Deprecated
+
+The following Cloud Composer versions and builds have reached their
+[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):
+composer-3-airflow-2.7.3-build.20, composer-3-airflow-2.7.3-build.19,
+composer-2.9.8-\*, composer-2.9.7-\*.
+
+---
 ## 2025-10-10
+
+### Deprecated
+
+The following Cloud Composer versions and builds have reached their
+[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):
+composer-2.9.6-\*, composer-3-airflow-2.7.3-build.17,
+composer-3-airflow-2.7.3-build.18, composer-3-airflow-2.9.1-build.8, and
+composer-3-airflow-2.9.1-build.9.
 
 ### Fixed
 
@@ -24,14 +87,6 @@ are available in Cloud Composer 2:
 
 * [composer-2.14.4-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-14-4-airflow-2-10-5) (default)
 * [composer-2.14.4-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-14-4-airflow-2-9-3)
-
-### Deprecated
-
-The following Cloud Composer versions and builds have reached their
-[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):
-composer-2.9.6-\*, composer-3-airflow-2.7.3-build.17,
-composer-3-airflow-2.7.3-build.18, composer-3-airflow-2.9.1-build.8, and
-composer-3-airflow-2.9.1-build.9.
 
 ---
 ## 2025-10-09

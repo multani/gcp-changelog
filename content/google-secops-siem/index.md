@@ -1,5 +1,32 @@
 # Google SecOps SIEM
 
+## 2025-10-27
+
+### Announcement
+
+**New rules for Chrome Enterprise Premium**
+
+Curated Detections has been enhanced with additional Chrome Enterprise Premium Browser Threat detections.
+The following rules have been added to the rulepack:
+
+* Archive Exfiltration Event to Non-Google Websites
+* Google Chrome Navigation Event to Shortened URLs
+* Suspicious Download from Filehosting or Chat Platform in Chrome Management
+* Chrome Suspicious Download Event from Newly Observed Domain in Environment
+
+### Announcement
+
+**New rules for Chrome Enterprise Premium**
+
+Curated Detections has been enhanced with additional Chrome Enterprise Premium Browser Threat detections.
+The following rules have been added to the rulepack:
+
+* Archive Exfiltration Event to Non-Google Websites
+* Google Chrome Navigation Event to Shortened URLs
+* Suspicious Download from Filehosting or Chat Platform in Chrome Management
+* Chrome Suspicious Download Event from Newly Observed Domain in Environment
+
+---
 ## 2025-10-26
 
 ### Announcement

@@ -2,9 +2,60 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: BigQuery</title>
   <subtitle>Changelog for Google Cloud product: BigQuery</subtitle>
-  <updated>2025-10-23T00:00:00+00:00</updated>
+  <updated>2025-10-27T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:bigquery</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/bigquery/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-10-27:feature:0</id>
+    <published>2025-10-27T00:00:00+00:00</published>
+    <updated>2025-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>BigQuery now offers the following
+<a href="https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#managed_ai_functions">managed AI functions</a>
+that use Gemini to help you filter, join, rank, and classify your data:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-if"><code>AI.IF</code></a>:
+  Filter and join text or multimodal data based on a condition described in natural language.</li>
+<li><a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-score"><code>AI.SCORE</code></a>:
+  Rate text or multimodal input to rank your data by quality, similarity, or other criteria.</li>
+<li><a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-classify"><code>AI.CLASSIFY</code></a>:
+  Classify text into user-defined categories.</li>
+</ul>
+<p>These functions are in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>]]></content>
+    <summary>BigQuery now offers managed AI functions that leverage Gemini for data manipulation tasks like filtering, joining, ranking, and classification.</summary>
+    <title>Feature: Introducing AI Functions in BigQuery</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-10-27:feature:1</id>
+    <published>2025-10-27T00:00:00+00:00</published>
+    <updated>2025-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now <a href="https://docs.cloud.google.com/bigquery/docs/data-engineering-agent-pipelines">use the Data Engineering Agent</a>
+to use Gemini in BigQuery to build and modify data
+pipelines to ingest data into BigQuery. This feature is in
+<a href="https://cloud.google.com/products/#product-launch-stages">preview</a>.</p>]]></content>
+    <summary>Use the new Data Engineering Agent with Gemini in BigQuery to build and modify data pipelines for ingesting data.</summary>
+    <title>Feature: Introducing the Data Engineering Agent</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-10-27:feature:2</id>
+    <published>2025-10-27T00:00:00+00:00</published>
+    <updated>2025-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now use the Apache Arrow format to
+<a href="https://docs.cloud.google.com/bigquery/docs/write-api#arrow-handling">stream data to BigQuery with the Storage Write API</a>.
+This feature is
+<a href="https://cloud.google.com/products/#product-launch-stages">generally available</a>
+(GA).</p>]]></content>
+    <summary>You can now use the Apache Arrow format to stream data to BigQuery with the Storage Write API. This feature is now generally available.</summary>
+    <title>Feature: Apache Arrow format support for BigQuery Storage Write API</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -102,23 +153,6 @@ This feature is
     <id>urn:github:multani:gcp-changelog:bigquery:2025-10-20:feature:0</id>
     <published>2025-10-20T00:00:00+00:00</published>
     <updated>2025-10-20T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>You can now use <a href="https://docs.cloud.google.com/bigquery/docs/create-notebooks#cells">visualization cells</a> to
-automatically
-<a href="https://docs.cloud.google.com/bigquery/docs/visualize-data-colab">generate a visualization</a>
-of any DataFrame in your notebook.
-You can customize the columns, chart type, aggregations, colors , labels, and
-title.</p>
-<p>This feature is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>]]></content>
-    <summary>Generate visualizations from DataFrames in your notebook.</summary>
-    <title>Feature: Visualization cells</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:bigquery:2025-10-20:feature:1</id>
-    <published>2025-10-20T00:00:00+00:00</published>
-    <updated>2025-10-20T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>In BigQuery ML, you can now fully manage open models as Vertex AI endpoints.
 BigQuery-managed open models offer the following benefits:</p>
 <ul>
@@ -132,6 +166,23 @@ BigQuery-managed open models offer the following benefits:</p>
 <p>This feature is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>]]></content>
     <summary>BigQuery ML now supports managing open models as Vertex AI endpoints, offering benefits like SQL-based resource management, cost-saving auto-undeployment, and customizable deployment options.</summary>
     <title>Feature: Manage open models in BigQuery ML</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-10-20:feature:1</id>
+    <published>2025-10-20T00:00:00+00:00</published>
+    <updated>2025-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now use <a href="https://docs.cloud.google.com/bigquery/docs/create-notebooks#cells">visualization cells</a> to
+automatically
+<a href="https://docs.cloud.google.com/bigquery/docs/visualize-data-colab">generate a visualization</a>
+of any DataFrame in your notebook.
+You can customize the columns, chart type, aggregations, colors , labels, and
+title.</p>
+<p>This feature is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>]]></content>
+    <summary>Generate visualizations from DataFrames in your notebook.</summary>
+    <title>Feature: Visualization cells</title>
   </entry>
   <entry>
     <author>
@@ -194,14 +245,13 @@ features are available in BigQuery Studio in
     <id>urn:github:multani:gcp-changelog:bigquery:2025-10-15:feature:0</id>
     <published>2025-10-15T00:00:00+00:00</published>
     <updated>2025-10-15T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>You can use the <code>dbt-bigquery</code> adapter to run Python code that's defined in
-BigQuery DataFrames. For more information, see
-<a href="https://docs.cloud.google.com/bigquery/docs/dataframes-dbt">Use BigQuery DataFrames in dbt</a>.
-This feature is
+    <content type="html"><![CDATA[<p>You can
+<a href="https://docs.cloud.google.com/bigquery/docs/geospatial-visualize">visualize your geospatial query results</a>
+on an interactive map in BigQuery Studio. This feature is
 <a href="https://cloud.google.com/products#product-launch-stages">generally available</a>
 (GA).</p>]]></content>
-    <summary>You can now use the dbt-bigquery adapter to execute Python code defined in BigQuery DataFrames. This feature is generally available.</summary>
-    <title>Feature: Run Python code in BigQuery using dbt</title>
+    <summary>Visualize your geospatial query results on an interactive map in BigQuery Studio.</summary>
+    <title>Feature: Geospatial query results visualization</title>
   </entry>
   <entry>
     <author>
@@ -210,13 +260,14 @@ This feature is
     <id>urn:github:multani:gcp-changelog:bigquery:2025-10-15:feature:1</id>
     <published>2025-10-15T00:00:00+00:00</published>
     <updated>2025-10-15T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>You can
-<a href="https://docs.cloud.google.com/bigquery/docs/geospatial-visualize">visualize your geospatial query results</a>
-on an interactive map in BigQuery Studio. This feature is
+    <content type="html"><![CDATA[<p>You can use the <code>dbt-bigquery</code> adapter to run Python code that's defined in
+BigQuery DataFrames. For more information, see
+<a href="https://docs.cloud.google.com/bigquery/docs/dataframes-dbt">Use BigQuery DataFrames in dbt</a>.
+This feature is
 <a href="https://cloud.google.com/products#product-launch-stages">generally available</a>
 (GA).</p>]]></content>
-    <summary>Visualize your geospatial query results on an interactive map in BigQuery Studio.</summary>
-    <title>Feature: Geospatial query results visualization</title>
+    <summary>You can now use the dbt-bigquery adapter to execute Python code defined in BigQuery DataFrames. This feature is generally available.</summary>
+    <title>Feature: Run Python code in BigQuery using dbt</title>
   </entry>
   <entry>
     <author>

@@ -1,5 +1,12 @@
 # Sensitive Data Protection
 
+## 2025-10-27
+
+### Feature
+
+The `NEW_ZEALAND_DRIVERS_LICENSE_NUMBER` infoType detector is available in all regions. For more information about all built-in infoTypes, see the [InfoType detector reference](https://cloud.google.com/dlp/docs/infotypes-reference).
+
+---
 ## 2025-10-10
 
 ### Feature

@@ -1,5 +1,13 @@
 # Firestore
 
+## 2025-10-27
+
+### Feature
+
+The [database clone feature](https://docs.cloud.google.com/firestore/native/docs/manage-databases#clone-database) is now
+supported at the General Availability ([GA](https://cloud.google.com/products#product-launch-stages)) level.
+
+---
 ## 2025-09-23
 
 ### Feature

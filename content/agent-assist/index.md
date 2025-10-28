@@ -1,5 +1,16 @@
 # Agent Assist
 
+## 2025-10-21
+
+### Feature
+
+Agent Assist offers summarization automatic evaluation in GA. This feature evaluates the quality of AI-generated summaries based on accuracy, completeness, and adherence. [Summarization autoevaluation](https://cloud.google.com/agent-assist/docs/summarization-autoeval-metrics) is available in the following regions:
+
+* `us-central1`
+* `us-west1`
+* `global`
+
+---
 ## 2025-10-09
 
 ### Feature

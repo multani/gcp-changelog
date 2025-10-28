@@ -1,5 +1,12 @@
 # Cloud Storage
 
+## 2025-10-23
+
+### Feature
+
+You can now use [Storage batch operations](https://cloud.google.com/storage/docs/batch-operations/overview) to create and manage [retention configurations](https://cloud.google.com/storage/docs/metadata#retention-config) for objects in bulk using the `PutMetadata` transformation.
+
+---
 ## 2025-10-13
 
 ### Libraries

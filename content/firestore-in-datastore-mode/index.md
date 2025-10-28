@@ -1,5 +1,31 @@
 # Firestore in Datastore mode
 
+## 2025-10-27
+
+### Feature
+
+The [database clone feature](https://docs.cloud.google.com/datastore/docs/manage-databases#clone-database) is now
+supported at the General Availability ([GA](https://cloud.google.com/products#product-launch-stages)) level.
+
+### Libraries
+
+A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+
+### Java
+
+### Changes for [google-cloud-datastore](https://github.com/googleapis/java-datastore)
+
+#### [2.32.3](https://github.com/googleapis/java-datastore/compare/v2.32.2...v2.32.3) (2025-10-20)
+
+##### Bug Fixes
+
+* **deps:** Update the Java code generator (gapic-generator-java) to 2.63.0 ([b9b95cb](https://github.com/googleapis/java-datastore/commit/b9b95cb0b08ec393f714f885e511443c1e044a0e))
+
+##### Dependencies
+
+* Update dependency com.google.cloud:sdk-platform-java-config to v3.53.0 ([#1980](https://github.com/googleapis/java-datastore/issues/1980)) ([1520b7c](https://github.com/googleapis/java-datastore/commit/1520b7c4ac51139c1c8809a4ead990d558f6c705))
+
+---
 ## 2025-10-06
 
 ### Libraries

@@ -1,5 +1,16 @@
 # AlloyDB for PostgreSQL
 
+## 2025-10-27
+
+### Feature
+
+AlloyDB supports configuring Authorized Networks for Public IP without any
+CIDR-range restrictions. Use custom organization policies to limit the size
+and number of Authorized Networks. See [Supported custom constraints and
+operations](https://cloud.google.com/alloydb/docs/alloydb-custom-constraints#supported-custom-constraints-operations)
+for examples.
+
+---
 ## 2025-10-06
 
 ### Feature

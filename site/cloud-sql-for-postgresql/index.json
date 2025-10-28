@@ -1,6 +1,16 @@
 {
   "name": "Cloud SQL for PostgreSQL",
   "entries": {
+    "2025-10-27": [
+      {
+        "kind": "Feature",
+        "content": "The rollout of the following extension versions and plugin versions is underway:\n\n**Extensions and plugins**\n\n* `pg_squeeze` is upgraded from 1.8 to 1.9 for PostgreSQL version\n  13 and later.\n* `pg_cron` is upgraded from 1.6.4 to 1.6.7 for PostgreSQL version\n  10 and later.\n* `postgis` is upgraded from 3.5.2 to 3.6.0 for PostgreSQL version\n  13 and later.\n* `rdkit` is upgraded from 4.6.1 to 4.7.0.\n\nTo use these versions of the extensions and plugins, update your instance to\n`[PostgreSQL version].R20251004.01_07`.\n\nIf you use a maintenance window, then the updates to the minor, extension, and\nplugin versions happen according to the timeframe that you set in the window.\nOtherwise, the updates occur within the next few weeks.\n\nFor more information on checking your maintenance version, see\n[Self-service maintenance](https://docs.cloud.google.com/sql/docs/postgres/self-service-maintenance). To find\nyour maintenance window or to manage maintenance updates, see\n[Find and set maintenance windows](https://docs.cloud.google.com/sql/docs/postgres/set-maintenance-window).",
+        "summary": {
+          "title": "New extensions and plugins versions released",
+          "summary": "We are excited to announce the release of updated versions for several popular extensions and plugins, including pg_squeeze, pg_cron, postgis, and rdkit. To take advantage of these updates, please ensure your instance is running on version [PostgreSQL version].R20251004.01_07. Updates will be applied automatically during your scheduled maintenance window, or within the next few weeks if no window is set."
+        }
+      }
+    ],
     "2025-10-23": [
       {
         "kind": "Feature",

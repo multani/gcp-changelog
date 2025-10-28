@@ -1,5 +1,20 @@
 # Bigtable
 
+## 2025-10-27
+
+### Feature
+
+Bigtable provides vector and key-value store integrations for LangChain, an LLM orchestration framework.
+For more information, see [Build LLM-powered applications using LangChain](https://cloud.google.com/bigtable/docs/langchain) and [Perform Maximal Marginal Relevance search with LangChain on Bigtable](https://cloud.google.com/bigtable/docs/mmr-vector-search).
+
+---
+## 2025-10-20
+
+### Feature
+
+You can [save queries](https://cloud.google.com/bigtable/docs/manage-data-using-console#save-query) and then [view and manage](https://cloud.google.com/bigtable/docs/manage-data-using-console#view_and_manage_saved_queries) the saved queries in Bigtable Studio. This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-10-13
 
 ### Libraries

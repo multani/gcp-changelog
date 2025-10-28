@@ -1,5 +1,38 @@
 # BigQuery
 
+## 2025-10-27
+
+### Feature
+
+BigQuery now offers the following
+[managed AI functions](https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#managed_ai_functions)
+that use Gemini to help you filter, join, rank, and classify your data:
+
+* [`AI.IF`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-if):
+  Filter and join text or multimodal data based on a condition described in natural language.
+* [`AI.SCORE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-score):
+  Rate text or multimodal input to rank your data by quality, similarity, or other criteria.
+* [`AI.CLASSIFY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-classify):
+  Classify text into user-defined categories.
+
+These functions are in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+You can now [use the Data Engineering Agent](https://docs.cloud.google.com/bigquery/docs/data-engineering-agent-pipelines)
+to use Gemini in BigQuery to build and modify data
+pipelines to ingest data into BigQuery. This feature is in
+[preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+You can now use the Apache Arrow format to
+[stream data to BigQuery with the Storage Write API](https://docs.cloud.google.com/bigquery/docs/write-api#arrow-handling).
+This feature is
+[generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
+
+---
 ## 2025-10-23
 
 ### Feature
@@ -69,17 +102,6 @@ This feature is
 
 ### Feature
 
-You can now use [visualization cells](https://docs.cloud.google.com/bigquery/docs/create-notebooks#cells) to
-automatically
-[generate a visualization](https://docs.cloud.google.com/bigquery/docs/visualize-data-colab)
-of any DataFrame in your notebook.
-You can customize the columns, chart type, aggregations, colors , labels, and
-title.
-
-This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
-
-### Feature
-
 In BigQuery ML, you can now fully manage open models as Vertex AI endpoints.
 BigQuery-managed open models offer the following benefits:
 
@@ -89,6 +111,17 @@ BigQuery-managed open models offer the following benefits:
 * [Customize model deployment machine types](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-remote-model-open#machine-type)
   or reserve open model resources by
   [using Compute Engine reservations](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-remote-model-open#reservation-affinity)
+
+This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+You can now use [visualization cells](https://docs.cloud.google.com/bigquery/docs/create-notebooks#cells) to
+automatically
+[generate a visualization](https://docs.cloud.google.com/bigquery/docs/visualize-data-colab)
+of any DataFrame in your notebook.
+You can customize the columns, chart type, aggregations, colors , labels, and
+title.
 
 This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
 
@@ -139,18 +172,18 @@ features are available in BigQuery Studio in
 
 ### Feature
 
-You can use the `dbt-bigquery` adapter to run Python code that's defined in
-BigQuery DataFrames. For more information, see
-[Use BigQuery DataFrames in dbt](https://docs.cloud.google.com/bigquery/docs/dataframes-dbt).
-This feature is
+You can
+[visualize your geospatial query results](https://docs.cloud.google.com/bigquery/docs/geospatial-visualize)
+on an interactive map in BigQuery Studio. This feature is
 [generally available](https://cloud.google.com/products#product-launch-stages)
 (GA).
 
 ### Feature
 
-You can
-[visualize your geospatial query results](https://docs.cloud.google.com/bigquery/docs/geospatial-visualize)
-on an interactive map in BigQuery Studio. This feature is
+You can use the `dbt-bigquery` adapter to run Python code that's defined in
+BigQuery DataFrames. For more information, see
+[Use BigQuery DataFrames in dbt](https://docs.cloud.google.com/bigquery/docs/dataframes-dbt).
+This feature is
 [generally available](https://cloud.google.com/products#product-launch-stages)
 (GA).
 

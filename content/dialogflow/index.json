@@ -1,6 +1,58 @@
 {
   "name": "Dialogflow",
   "entries": {
+    "2025-10-23": [
+      {
+        "kind": "Feature",
+        "content": "**Conversational Agents (Dialogflow CX)**:The [Block none](https://cloud.google.com/dialogflow/cx/docs/concept/agent-settings) safety feature in agent settings is no longer restricted access.",
+        "summary": {
+          "title": "Dialogflow CX: Safety Feature Now Widely Available",
+          "summary": "The safety feature in agent settings for Dialogflow CX, previously with restricted access, is now available to all users. This enhancement aims to provide broader access to robust safety controls within conversational agent development."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Conversational Agents (Dialogflow CX)**: The **Entity Types** console menu now allows you to set a page size for entity entries and excluded phrases. Pagination options are automatically displayed if there are more than 10 items listed.",
+        "summary": {
+          "title": "Entity Types Pagination",
+          "summary": "Set a page size for entity entries and excluded phrases in Dialogflow CX's Entity Types console. Pagination appears automatically for more than 10 items."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Conversational Agents (Dialogflow CX)**: You can now configure service account authorization for both tools and webhooks. See the [reference documentation](https://cloud.google.com/dialogflow/cx/docs/reference/rpc/google.cloud.dialogflow.cx.v3#serviceaccountauthconfig) for details.",
+        "summary": {
+          "title": "Service account authorization for Dialogflow CX",
+          "summary": "You can now configure service account authorization for tools and webhooks in Dialogflow CX."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Conversational Agents (Dialogflow CX)**: New fields `temperature`, `input_token_limit` and `output_token_limit` are now available for [`LlmModelSettings`](https://cloud.google.com/dialogflow/cx/docs/reference/rpc/google.cloud.dialogflow.cx.v3beta1#llmmodelsettings) in the v3beta1 API. This allows you to adjust the model per playbook.",
+        "summary": {
+          "title": "New LLM Settings in Dialogflow CX",
+          "summary": "Dialogflow CX now offers new fields like temperature, input, and output token limits for LlmModelSettings in the v3beta1 API, enabling per-playbook model adjustments."
+        }
+      }
+    ],
+    "2025-10-16": [
+      {
+        "kind": "Deprecated",
+        "content": "**Dialogflow CX (Conversational Agents)**: The [Dialogflow CX console](https://dialogflow.cloud.google.com/cx/projects) will be deprecated on **October 31, 2025**. After that date all users will be automatically routed to the [Conversational Agents console](https://conversational-agents.cloud.google.com/projects).",
+        "summary": {
+          "title": "Dialogflow CX Console Deprecation",
+          "summary": "The Dialogflow CX console is being deprecated on October 31, 2025. Users will be automatically redirected to the Conversational Agents console after this date."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Dialogflow CX (Conversational Agents)**: The default models for data stores and playbooks have been upgraded as follows:\n\n* Data stores\n\n  + Default voice mode summarization from `gemini-2.0-flash-lite-001` to `gemini-2.5-flash-lite`.\n  + Default text mode summarization from `gemini-2.0-flash-001` to `gemini-2.5-flash`.\n  + Default text mode rewriter from `gemini-2.0-flash-lite-001` to `gemini-2.5-flash-lite`.\n* Playbooks:\n\n  + All newly-created playbooks use default model `gemini-2.5-flash`.",
+        "summary": {
+          "title": "Dialogflow CX Model Upgrades",
+          "summary": "Models for data stores and playbooks in Dialogflow CX have been updated. This includes upgrades to default summarization and rewriter models for data stores, and a new default model for playbooks."
+        }
+      }
+    ],
     "2025-09-04": [
       {
         "kind": "Announcement",

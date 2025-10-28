@@ -1,5 +1,44 @@
 # Dialogflow
 
+## 2025-10-23
+
+### Feature
+
+**Conversational Agents (Dialogflow CX)**:The [Block none](https://cloud.google.com/dialogflow/cx/docs/concept/agent-settings) safety feature in agent settings is no longer restricted access.
+
+### Feature
+
+**Conversational Agents (Dialogflow CX)**: The **Entity Types** console menu now allows you to set a page size for entity entries and excluded phrases. Pagination options are automatically displayed if there are more than 10 items listed.
+
+### Feature
+
+**Conversational Agents (Dialogflow CX)**: You can now configure service account authorization for both tools and webhooks. See the [reference documentation](https://cloud.google.com/dialogflow/cx/docs/reference/rpc/google.cloud.dialogflow.cx.v3#serviceaccountauthconfig) for details.
+
+### Feature
+
+**Conversational Agents (Dialogflow CX)**: New fields `temperature`, `input_token_limit` and `output_token_limit` are now available for [`LlmModelSettings`](https://cloud.google.com/dialogflow/cx/docs/reference/rpc/google.cloud.dialogflow.cx.v3beta1#llmmodelsettings) in the v3beta1 API. This allows you to adjust the model per playbook.
+
+---
+## 2025-10-16
+
+### Deprecated
+
+**Dialogflow CX (Conversational Agents)**: The [Dialogflow CX console](https://dialogflow.cloud.google.com/cx/projects) will be deprecated on **October 31, 2025**. After that date all users will be automatically routed to the [Conversational Agents console](https://conversational-agents.cloud.google.com/projects).
+
+### Changed
+
+**Dialogflow CX (Conversational Agents)**: The default models for data stores and playbooks have been upgraded as follows:
+
+* Data stores
+
+  + Default voice mode summarization from `gemini-2.0-flash-lite-001` to `gemini-2.5-flash-lite`.
+  + Default text mode summarization from `gemini-2.0-flash-001` to `gemini-2.5-flash`.
+  + Default text mode rewriter from `gemini-2.0-flash-lite-001` to `gemini-2.5-flash-lite`.
+* Playbooks:
+
+  + All newly-created playbooks use default model `gemini-2.5-flash`.
+
+---
 ## 2025-09-04
 
 ### Announcement

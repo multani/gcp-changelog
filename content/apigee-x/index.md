@@ -1,5 +1,24 @@
 # Apigee X
 
+## 2025-10-27
+
+### Announcement
+
+On October 27, 2025, we released an updated version of Apigee.
+
+### Feature
+
+**Introduction of the `target.evaluated.url` flow variable**
+
+This release includes a new flow variable, `target.evaluated.url`,
+which should be used instead of the `target.url` flow variable in
+cases when the URL is dynamically constructed based on user input.
+
+For more information, see the
+[target flow variables](https://docs.cloud.google.com/apigee/docs/api-platform/reference/variables-reference#target)
+documentation.
+
+---
 ## 2025-10-16
 
 ### Announcement

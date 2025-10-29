@@ -1,5 +1,12 @@
 # Service Extensions
 
+## 2025-10-28
+
+### Feature
+
+[Authorization extensions](https://docs.cloud.google.com/service-extensions/docs/lb-extensions-overview#authorization-extensions) help you configure Cloud Load Balancing authorization policies to use custom authorization engines. This feature is in **General Availability**.
+
+---
 ## 2025-09-15
 
 ### Feature

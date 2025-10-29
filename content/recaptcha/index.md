@@ -1,5 +1,13 @@
 # reCAPTCHA
 
+## 2025-10-28
+
+### Feature
+
+reCAPTCHA policy-based challenge keys are available in [GA](https://cloud.google.com/products#product-launch-stages). With policy-based challenge keys, you can configure reCAPTCHA to deterministically trigger CAPTCHA challenges based on a score threshold and challenge difficulty.
+For more information about the policy-based challenge keys, see [reCAPTCHA keys overview](https://docs.cloud.google.com/recaptcha/docs/keys).
+
+---
 ## 2025-10-22
 
 ### Changed

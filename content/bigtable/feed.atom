@@ -2,9 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Bigtable</title>
   <subtitle>Changelog for Google Cloud product: Bigtable</subtitle>
-  <updated>2025-10-27T00:00:00+00:00</updated>
+  <updated>2025-10-28T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:bigtable</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/bigtable/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigtable:2025-10-28:feature:0</id>
+    <published>2025-10-28T00:00:00+00:00</published>
+    <updated>2025-10-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can use Cloud KMS Autokey in the Google Cloud console to automate the creation and use of <a href="https://cloud.google.com/bigtable/docs/cmek">customer-managed encryption keys (CMEK)</a> in Bigtable clusters.</p>]]></content>
+    <summary>Automate the creation and use of customer-managed encryption keys (CMEK) in Bigtable clusters using Cloud KMS Autokey directly within the Google Cloud console.</summary>
+    <title>Feature: Cloud KMS Autokey for Bigtable</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -16,6 +27,43 @@
 For more information, see <a href="https://cloud.google.com/bigtable/docs/langchain">Build LLM-powered applications using LangChain</a> and <a href="https://cloud.google.com/bigtable/docs/mmr-vector-search">Perform Maximal Marginal Relevance search with LangChain on Bigtable</a>.</p>]]></content>
     <summary>Bigtable now integrates with LangChain, a popular framework for building LLM-powered applications. This feature allows for seamless use of Bigtable as both a vector store and a key-value store within LangChain.</summary>
     <title>Feature: LangChain Integrations for Bigtable</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigtable:2025-10-27:libraries:1</id>
+    <published>2025-10-27T00:00:00+00:00</published>
+    <updated>2025-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
+<h3>Java</h3>
+<h3>Changes for <a href="https://github.com/googleapis/java-bigtable">google-cloud-bigtable</a></h3>
+<h4><a href="https://github.com/googleapis/java-bigtable/compare/v2.67.1...v2.68.0">2.68.0</a> (2025-10-22)</h4>
+<h5>Features</h5>
+<ul>
+<li>Add Type API updates needed to support structured keys in materialized views (<a href="https://github.com/googleapis/java-bigtable/commit/469290eb188ce7155abc81d4fec9dd8319851cd9">469290e</a>)</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li>Add ReadRows/SampleRowKeys bindings for materialized views (<a href="https://github.com/googleapis/java-bigtable/commit/469290eb188ce7155abc81d4fec9dd8319851cd9">469290e</a>)</li>
+<li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.62.3 (<a href="https://github.com/googleapis/java-bigtable/commit/469290eb188ce7155abc81d4fec9dd8319851cd9">469290e</a>)</li>
+<li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.63.0 (<a href="https://github.com/googleapis/java-bigtable/commit/ed6c03ff50f42a06472f5be781b68937f48228d1">ed6c03f</a>)</li>
+<li>Don't use String.format in Preconditions messages (<a href="https://github.com/googleapis/java-bigtable/issues/2691">#2691</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/62a18128d8ec65484509dde6cd0c2b0322890cc9">62a1812</a>)</li>
+<li>Fixed the bigtableadmin API name for snippet region tags and possibly other GAPIC attributes (<a href="https://github.com/googleapis/java-bigtable/commit/469290eb188ce7155abc81d4fec9dd8319851cd9">469290e</a>)</li>
+</ul>
+<h5>Dependencies</h5>
+<ul>
+<li>Update shared dependencies (<a href="https://github.com/googleapis/java-bigtable/issues/2697">#2697</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/611ad208359e3c1f2e675d5e4e8c8ade3616b02b">611ad20</a>)</li>
+</ul>
+<h3>Python</h3>
+<h3>Changes for <a href="https://github.com/googleapis/python-bigtable">google-cloud-bigtable</a></h3>
+<h4><a href="https://github.com/googleapis/python-bigtable/compare/v2.33.0...v2.34.0">2.34.0</a> (2025-10-16)</h4>
+<h5>Features</h5>
+<ul>
+<li>Add support for Python 3.14 (<a href="https://github.com/googleapis/python-bigtable/issues/1217">#1217</a>) (<a href="https://github.com/googleapis/python-bigtable/commit/263332af71a229cb4fa598008a708137086a6f67">263332a</a>)</li>
+</ul>]]></content>
+    <summary>This is a weekly digest of client library updates. This week, the Java client library for Bigtable has been updated with features for structured keys in materialized views and several bug fixes. The Python client library for Bigtable now supports Python 3.14.</summary>
+    <title>Libraries: Java and Python client library updates</title>
   </entry>
   <entry>
     <author>

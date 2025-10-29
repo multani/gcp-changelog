@@ -1,5 +1,21 @@
 # Google SecOps
 
+## 2025-10-28
+
+### Feature
+
+**Risk-based alerting with entity-only rules**
+
+With the new `ENTITY_RISK_CHANGE` UDM event type, you can now write YARA-L
+detection rules that trigger independently of ingested events. This capability
+lets you focus specifically on changes in an entity's risk score, significantly
+decreasing the time required for Google Security Operations to detect and alert
+on shifting entity risk levels.
+
+For more information, see
+[Risk-based alerting with entity-only rules](https://docs.cloud.google.com/chronicle/docs/detection/risk-based-alerting).
+
+---
 ## 2025-10-27
 
 ### Announcement

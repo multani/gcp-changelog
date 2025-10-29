@@ -1,5 +1,30 @@
 # Cloud Load Balancing
 
+## 2025-10-28
+
+### Feature
+
+Application Load Balancers support authorization policies that let you
+establish access control checks for incoming traffic.
+
+For details, see
+[Authorization policy overview](https://docs.cloud.google.com/load-balancing/docs/auth-policy/auth-policy-overview).
+
+This feature is in **General availability**.
+
+### Feature
+
+Both internal passthrough Network Load Balancers and external passthrough Network Load Balancers now support load balancing to managed
+instance groups (MIGs) comprised of IPv6-only VM instances.
+
+For more details, see the following pages:
+
+* [Set up an external passthrough Network Load Balancer with a backend service](https://docs.cloud.google.com/load-balancing/docs/network/setting-up-network-backend-service)
+* [Set up an internal passthrough Network Load Balancer with VM instance group backends](https://docs.cloud.google.com/load-balancing/docs/internal/setting-up-internal)
+
+This feature is now in **General availability**.
+
+---
 ## 2025-10-06
 
 ### Feature

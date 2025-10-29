@@ -1,6 +1,16 @@
 {
   "name": "Cloud SQL for MySQL",
   "entries": {
+    "2025-10-28": [
+      {
+        "kind": "Feature",
+        "content": "Cloud SQL has enhanced the optimized writes feature, which includes\nan improved crash recovery algorithm to reduce crash recovery time and utilizes\nunused disk I/O throughput adaptively to accelerate buffer pool warm-up.\nThe optimized writes feature provides a set of write performance improvements\nthat adjust MySQL configurations dynamically based on workload demand and\nunderlying infrastructure.\n\nBy default these improvements are enabled for all new\nCloud SQL Enterprise Plus edition instances that you create or that you upgrade\nto from Cloud SQL Enterprise edition.\n\nFor more information about optimized writes, see\n[Configure database flags](https://docs.cloud.google.com/sql/docs/mysql/flags#tips-optimized-write).",
+        "summary": {
+          "title": "Optimized Writes in Cloud SQL",
+          "summary": "Cloud SQL's optimized writes feature now offers faster crash recovery and adaptive buffer pool warm-up. These performance enhancements are enabled by default for new Enterprise Plus instances."
+        }
+      }
+    ],
     "2025-10-17": [
       {
         "kind": "Feature",

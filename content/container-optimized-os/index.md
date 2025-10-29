@@ -2,10 +2,6 @@
 
 ## 2025-10-27
 
-### Changed
-
-
-
 ### cos-121-18867-294-2
 
 |  |  |  |  |
@@ -72,10 +68,6 @@ Fixed CVE-2025-11495 in binutils-libs.
 ### Security
 
 Fixed CVE-2025-11412 in binutils-libs.
-
-### Changed
-
-
 
 ### cos-113-18244-521-7
 
@@ -144,10 +136,6 @@ Fixed CVE-2025-39998 in the Linux kernel.
 
 Fixed CVE-2025-39996 in the Linux kernel.
 
-### Changed
-
-
-
 ### cos-dev-129-19340-0-0
 
 |  |  |  |  |
@@ -186,10 +174,6 @@ Upgraded sys-apps/pv to v1.9.44.
 ### Security
 
 Fixed CVE-2025-11413 and CVE-2025-11414 in binutils-libs.
-
-### Changed
-
-
 
 ### cos-117-18613-439-9
 
@@ -230,10 +214,6 @@ Fixed CVE-2025-11495 in binutils-libs.
 
 Fixed CVE-2025-11412 in binutils-libs.
 
-### Changed
-
-
-
 ### cos-125-19216-0-115
 
 |  |  |  |  |
@@ -263,10 +243,6 @@ Fixed CVE-2025-11413, CVE-2025-11414 in binutils-libs.
 
 ---
 ## 2025-10-24
-
-### Changed
-
-
 
 ### cos-125-19216-0-110
 
@@ -325,10 +301,6 @@ Runtime sysctl changes:
 
 * Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 188034 250715 376068
 
-### Changed
-
-
-
 ### cos-dev-129-19334-0-0
 
 |  |  |  |  |
@@ -382,10 +354,6 @@ Fixed CVE-2025-11412 in binutils-libs.
 
 ---
 ## 2025-10-20
-
-### Changed
-
-
 
 ### cos-117-18613-439-2
 
@@ -461,10 +429,6 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 811830 -> 811764
 
-### Changed
-
-
-
 ### cos-121-18867-199-105
 
 |  |  |  |  |
@@ -535,10 +499,6 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 811792 -> 811798
 
-### Changed
-
-
-
 ### cos-125-19216-0-100
 
 |  |  |  |  |
@@ -605,10 +565,6 @@ Runtime sysctl changes:
 * Changed: fs.file-max: 811534 -> 811421
 * Changed: net.ipv4.udp\_mem: 188034 250715 376068 -> 188034 250714 376068
 
-### Changed
-
-
-
 ### cos-dev-129-19326-0-0
 
 |  |  |  |  |
@@ -642,10 +598,6 @@ Fixed KCTF-6bb73db in the Linux Kernel.
 Runtime sysctl changes:
 
 * Changed: fs.file-max: 811438 -> 811426
-
-### Changed
-
-
 
 ### cos-113-18244-448-79
 

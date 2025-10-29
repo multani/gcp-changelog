@@ -16,7 +16,7 @@ HostFactory connectors for Google Compute Engine and Google Kubernetes Engine
 (GKE), which can be deployed through Cluster Toolkit to extend your on-premises
 cluster or run entirely within Google Cloud. For more information, see [Run IBM
 Spectrum Symphony
-workloads](https://cloud.google.com/cluster-toolkit/docs/ibm-symphony/ibm-symphony).
+workloads](https://docs.cloud.google.com/compute/docs/instances/ibm-symphony).
 
 ---
 ## 2025-09-19

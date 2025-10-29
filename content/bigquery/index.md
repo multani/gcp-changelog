@@ -1,5 +1,34 @@
 # BigQuery
 
+## 2025-10-28
+
+### Feature
+
+The BigQuery Data Transfer Service can now transfer data from the
+following data sources:
+
+* [Facebook Ads](https://docs.cloud.google.com/bigquery/docs/facebook-ads-transfer)
+* [Salesforce](https://docs.cloud.google.com/bigquery/docs/salesforce-transfer)
+* [Salesforce Marketing Cloud](https://docs.cloud.google.com/bigquery/docs/sfmc-transfer)
+* [ServiceNow](https://docs.cloud.google.com/bigquery/docs/servicenow-transfer)
+
+Transfers from these data sources are now [generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+### Feature
+
+Subscriber email logging lets you log the principal identifiers of users
+who execute jobs and queries against linked datasets. You can enable
+logging at the
+[listing level](https://cloud.google.com/bigquery/docs/analytics-hub-manage-listings#create_a_listing)
+and the
+[data exchange level](https://cloud.google.com/bigquery/docs/analytics-hub-manage-exchanges#create-exchange).
+The logged data is available in the `job_principal_subject` field of the
+[`INFORMATION_SCHEMA.SHARED_DATASET_USAGE` view](https://docs.cloud.google.com/bigquery/docs/information-schema-shared-dataset-usage).
+This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-10-27
 
 ### Feature

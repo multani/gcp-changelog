@@ -1,5 +1,19 @@
 # Spanner
 
+## 2025-10-21
+
+### Feature
+
+[Schema object drop protection](https://cloud.google.com/spanner/docs/schema-drop-protection) is now generally available. This feature protects schema objects such as tables, indexes, and columns from accidental deletion.
+
+---
+## 2025-10-20
+
+### Feature
+
+You can now use the GoogleSQL [`ML.PREDICT` function](https://cloud.google.com/spanner/docs/reference/standard-sql/ml-functions#mlpredict) to convert your natural language query text into an embedding and perform approximate nearest neighbors (ANN) vector search.
+
+---
 ## 2025-10-02
 
 ### Feature

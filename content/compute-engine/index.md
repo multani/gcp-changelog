@@ -1,5 +1,16 @@
 # Compute Engine
 
+## 2025-10-28
+
+### Feature
+
+**Generally available**: You can create managed instance groups (MIGs) comprised
+of IPv6-only VM instances.
+
+For more information, see
+[Basic scenarios for creating managed instance groups (MIGs)](https://docs.cloud.google.com/compute/docs/instance-groups/creating-groups-of-managed-instances).
+
+---
 ## 2025-10-21
 
 ### Fixed

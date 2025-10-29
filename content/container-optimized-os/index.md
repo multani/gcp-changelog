@@ -1,5 +1,684 @@
 # Container Optimized OS
 
+## 2025-10-27
+
+### Changed
+
+
+
+### cos-121-18867-294-2
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/51d5c624a0a37c8501fb3a2ed66f0a2dee6ac48a ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.294.2/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This is an [LTS Refresh release](https://cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases).
+
+### Changed
+
+Updated app-containers/runc to v1.2.7.
+
+### Fixed
+
+Reduced gcr\_wait\_online retry gap.
+
+### Fixed
+
+Upgraded sys-auth/pambase to v20250906.
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20250805.00.
+
+### Fixed
+
+Upgraded dev-lang/go to v1.23.12.
+
+### Fixed
+
+Upgraded sys-apps/hwdata to v0.400.
+
+### Fixed
+
+Upgraded sys-apps/pv to v1.9.42.
+
+### Fixed
+
+Upgraded sys-apps/less to v685.
+
+### Fixed
+
+Upgraded dev-libs/expat to v2.7.3.
+
+### Fixed
+
+Upgraded app-admin/sudo to v1.9.17\_p2.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.50.3.
+
+### Security
+
+Fixed CVE-2025-11494 in binutils-libs.
+
+### Security
+
+Fixed CVE-2025-11495 in binutils-libs.
+
+### Security
+
+Fixed CVE-2025-11412 in binutils-libs.
+
+### Changed
+
+
+
+### cos-113-18244-521-7
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/f6bca56e79efabbe59c0c87c7f5bffc7c98a8358 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.7/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This is an [LTS Refresh release](https://cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases).
+
+### Changed
+
+Updated app-containers/runc to v1.2.7.
+
+### Fixed
+
+Added support for NVIDIA driver v535.274.02 and v570.195.03. Updated default driver version to v535.274.02 for devices using 535 as the default driver. Updated the default driver version to v570.195.03 for NVIDIA\_H200.
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20250805.00.
+
+### Fixed
+
+Upgraded net-nds/rpcbind to v1.2.8.
+
+### Fixed
+
+Upgraded sys-apps/less to v685.
+
+### Fixed
+
+Upgraded sys-apps/hwdata to v0.400.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.50.3.
+
+### Fixed
+
+Upgraded app-admin/sudo to v1.9.17\_p2.
+
+### Security
+
+Fixed CVE-2025-11413 and CVE-2025-11414 in binutils-libs.
+
+### Security
+
+Fixed CVE-2025-11494 in binutils-libs.
+
+### Security
+
+Fixed CVE-2025-11495 in binutils-libs.
+
+### Security
+
+Fixed CVE-2025-11412 in binutils-libs.
+
+### Security
+
+Fixed CVE-2025-39998 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39996 in the Linux kernel.
+
+### Changed
+
+
+
+### cos-dev-129-19340-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.54](https://cos.googlesource.com/third_party/kernel/+/cfe88d85f71d7502f55ff3e7ceebcb6c65f8b5bb ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19340.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated cos-gpu-installer to v2.5.9. This adds support for installing drivers for GB 300 devices.
+
+### Changed
+
+Updated the Linux kernel to v6.12.54.
+
+### Feature
+
+Added GB300 support to cos-extensions.
+
+### Fixed
+
+Added support for NVIDIA driver v535.274.02 and v570.195.03.
+
+### Fixed
+
+Upgraded chromeos-base/google-breakpad to v2025.10.16.221019-r255.
+
+### Fixed
+
+Upgraded sys-apps/less to v685.
+
+### Fixed
+
+Upgraded sys-apps/pv to v1.9.44.
+
+### Security
+
+Fixed CVE-2025-11413 and CVE-2025-11414 in binutils-libs.
+
+### Changed
+
+
+
+### cos-117-18613-439-9
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/4c5be9a246727bd6ede85b46b5df0625cb5ee48e ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.439.9/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated app-containers/runc to v1.2.7.
+
+### Fixed
+
+Added support for NVIDIA driver v535.274.02 and v570.195.03.
+
+### Fixed
+
+Upgraded sys-apps/hwdata to v0.400.
+
+### Fixed
+
+Upgraded sys-apps/less to v685.
+
+### Security
+
+Fixed CVE-2025-11413 and CVE-2025-11414 in binutils-libs.
+
+### Security
+
+Fixed CVE-2025-11494 in binutils-libs.
+
+### Security
+
+Fixed CVE-2025-11495 in binutils-libs.
+
+### Security
+
+Fixed CVE-2025-11412 in binutils-libs.
+
+### Changed
+
+
+
+### cos-125-19216-0-115
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.46](https://cos.googlesource.com/third_party/kernel/+/6bf8e7e2ed9d2fd0a8381ab1bd6e659b24b01807 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19216.0.115/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated cos-gpu-installer to v2.5.9. This adds support for installing drivers for GB 300 devices.
+
+### Feature
+
+Added GB300 support to cos-extensions.
+
+### Fixed
+
+Added support for NVIDIA driver v535.274.02 and v570.195.03.
+
+### Fixed
+
+Upgraded sys-apps/pv to v1.9.44.
+
+### Security
+
+Fixed CVE-2025-11413, CVE-2025-11414 in binutils-libs.
+
+---
+## 2025-10-24
+
+### Changed
+
+
+
+### cos-125-19216-0-110
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.46](https://cos.googlesource.com/third_party/kernel/+/6bf8e7e2ed9d2fd0a8381ab1bd6e659b24b01807 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19216.0.110/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated cos-gpu-installer to v2.5.8.
+
+### Changed
+
+Added support for A4X-Max NICs.
+
+### Changed
+
+Updated app-containers/runc to v1.2.7.
+
+### Feature
+
+Added support for NVIDIA GB300 devices.
+
+### Fixed
+
+Reduced gcr\_wait\_online retry gap.
+
+### Fixed
+
+Upgraded sys-apps/less to v685.
+
+### Fixed
+
+Upgraded sys-apps/pv to v1.9.42.
+
+### Fixed
+
+Upgraded sys-apps/hwdata to v0.400.
+
+### Security
+
+Fixed CVE-2025-11494 in binutils-libs.
+
+### Security
+
+Fixed CVE-2025-11495 in binutils-libs.
+
+### Security
+
+Fixed CVE-2025-11412 in binutils-libs.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 188034 250715 376068
+
+### Changed
+
+
+
+### cos-dev-129-19334-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.53](https://cos.googlesource.com/third_party/kernel/+/873f2db84b5c40b7a0efab7db35eff2471f51e16 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19334.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated cos-gpu-installer to v2.5.8.
+
+### Changed
+
+Added support for A4X-Max NICs.
+
+### Changed
+
+Updated app-containers/runc to v1.2.7.
+
+### Feature
+
+Added support for NVIDIA GB300 devices.
+
+### Fixed
+
+Upgraded sys-auth/pambase to v20251013.
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20251014.00.
+
+### Fixed
+
+Upgraded sys-apps/hwdata to v0.400.
+
+### Fixed
+
+Upgraded sys-apps/pv to v1.9.42.
+
+### Security
+
+Fixed CVE-2025-11494 in binutils-libs.
+
+### Security
+
+Fixed CVE-2025-11495 in binutils-libs.
+
+### Security
+
+Fixed CVE-2025-11412 in binutils-libs.
+
+---
+## 2025-10-20
+
+### Changed
+
+
+
+### cos-117-18613-439-2
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/4c5be9a246727bd6ede85b46b5df0625cb5ee48e ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.439.2/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This is an [LTS Refresh release](https://cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases).
+
+### Fixed
+
+Reduced gcr\_wait\_online retry gap.
+
+### Fixed
+
+Added task information collection to sosreports.
+
+### Fixed
+
+Updated golang.org/x/crypto, golang.org/x/net, and
+golang.org/x/oauth2 in kubelet and kubectl.
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20250805.00.
+
+### Fixed
+
+Upgraded dev-lang/go to v1.23.12.
+
+### Fixed
+
+Upgraded sys-apps/gentoo-functions to v1.7.4.
+
+### Fixed
+
+Upgraded net-nds/rpcbind to v1.2.8.
+
+### Fixed
+
+Upgraded dev-libs/expat to v2.7.3.
+
+### Fixed
+
+Upgraded app-admin/sudo to v1.9.17\_p2.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.50.3.
+
+### Security
+
+Fixed CVE-2025-41244 in app-emulation/open-vm-tools.
+
+### Security
+
+Fixed KCTF-6bb73db in the Linux Kernel.
+
+### Security
+
+Fixed KCTF-cd8ae32 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39961 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811830 -> 811764
+
+### Changed
+
+
+
+### cos-121-18867-199-105
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.105](https://cos.googlesource.com/third_party/kernel/+/0fa56c0469c8f8bfc8ec24e71a3ae959d3b750d3 ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.199.105/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Added task information collection to sosreports.
+
+### Fixed
+
+Updated golang.org/x/crypto, golang.org/x/net, and
+golang.org/x/oauth2 in kubelet and kubectl.
+
+### Security
+
+Fixed CVE-2025-39970 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39975 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39968 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39998 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39971 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39972 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39969 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39980 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39977 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-6bb73db in the Linux Kernel.
+
+### Security
+
+Fixed CVE-2025-39961 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-cd8ae32 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811792 -> 811798
+
+### Changed
+
+
+
+### cos-125-19216-0-100
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.46](https://cos.googlesource.com/third_party/kernel/+/6bf8e7e2ed9d2fd0a8381ab1bd6e659b24b01807 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19216.0.100/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-39992 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39990 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39998 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38322 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39977 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39973 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39969 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39940 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39971 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39972 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39975 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39980 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39984 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811534 -> 811421
+* Changed: net.ipv4.udp\_mem: 188034 250715 376068 -> 188034 250714 376068
+
+### Changed
+
+
+
+### cos-dev-129-19326-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.53](https://cos.googlesource.com/third_party/kernel/+/873f2db84b5c40b7a0efab7db35eff2471f51e16 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19326.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated the Linux kernel to v6.12.53.
+
+### Fixed
+
+Reduced gcr\_wait\_online retry gap.
+
+### Fixed
+
+Updated the dump capture kernel to v6.12.52.
+
+### Fixed
+
+Updated golang.org/x/crypto, golang.org/x/net, and
+golang.org/x/oauth2 in kubelet and kubectl.
+
+### Security
+
+Fixed KCTF-6bb73db in the Linux Kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811438 -> 811426
+
+### Changed
+
+
+
+### cos-113-18244-448-79
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.151](https://cos.googlesource.com/third_party/kernel/+/231e818dc133cd66210c238e1b21898bf6ffc3c6 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.448.79/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Reduced gcr\_wait\_online retry gap.
+
+### Fixed
+
+Added task information collection to sosreports.
+
+### Security
+
+Fixed CVE-2025-41244 in app-emulation/open-vm-tools.
+
+### Security
+
+Fixed CVE-2025-39977 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39980 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-6bb73db in the Linux Kernel.
+
+---
 ## 2025-10-17
 
 ### cos-125-19216-0-94

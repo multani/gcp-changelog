@@ -164,6 +164,7 @@
 - [Transcoder API](transcoder-api/index.md)
 - [VPC Service Controls](vpc-service-controls/index.md)
 - [Vertex AI](vertex-ai/index.md)
+- [Vertex AI Agent Builder](vertex-ai-agent-builder/index.md)
 - [Vertex AI Search](vertex-ai-search/index.md)
 - [Vertex AI Workbench](vertex-ai-workbench/index.md)
 - [Virtual Private Cloud](virtual-private-cloud/index.md)

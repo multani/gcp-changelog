@@ -1,5 +1,20 @@
 # Cloud Healthcare API
 
+## 2025-10-23
+
+### Feature
+
+* A new application has been added to the Cloud Console under "Healthcare",
+  called "DICOM Studio"
+* This new application provides a web interface for exploring DICOM Stores
+  in the Cloud Healthcare API similar to "FHIR Viewer".
+  + Search and find studies, series, and instances in any DICOM Store using our DICOM Web API
+  + View studies, series and instance metadata
+  + Edit studies, series and instance metadata
+  + Perform CRUD operations (Delete) on studies, series and instances
+  + View studies, series and instance images via a transcoded image preview
+
+---
 ## 2025-10-09
 
 ### Feature

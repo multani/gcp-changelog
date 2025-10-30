@@ -15,26 +15,26 @@ Agent Assist offers summarization automatic evaluation in GA. This feature evalu
 
 ### Feature
 
-Agent assist offers [AI coach](https://cloud.google.com/agent-assist/docs/ai-coach-overview) in GA. AI coach automatically suggests responses to an agent during a customer service conversation. AI coach is available in all Google Cloud [languages](https://cloud.google.com/agent-assist/docs/languages) and [regions](https://cloud.google.com/agent-assist/docs/regionalization).
+Agent assist offers [AI coach](https://docs.cloud.google.com/agent-assist/docs/ai-coach-overview) in GA. AI coach automatically suggests responses to an agent during a customer service conversation. AI coach is available in all Google Cloud [languages](https://docs.cloud.google.com/agent-assist/docs/languages) and [regions](https://docs.cloud.google.com/agent-assist/docs/regionalization).
 
 ### Feature
 
-[OpenAPI and Integration Connectors tools](https://cloud.google.com/agent-assist/docs/tools) are generally available in Agent Assist. Google Cloud enables the use of this external API and data source to improve Agent Assist integrations.
+[OpenAPI and Integration Connectors tools](https://docs.cloud.google.com/agent-assist/docs/tools) are generally available in Agent Assist. Google Cloud enables the use of this external API and data source to improve Agent Assist integrations.
 
 ### Feature
 
-Agent Assist offers the following functions in addition to [generative knowledge assist](https://cloud.google.com/agent-assist/docs/generative-knowledge-assist) features:
+Agent Assist offers the following functions in addition to [generative knowledge assist](https://docs.cloud.google.com/agent-assist/docs/generative-knowledge-assist) features:
 
-* Apply [document and safety filters](https://cloud.google.com/agent-assist/docs/ka-filters).
-* [Configure Pub/Sub notifications](https://cloud.google.com/agent-assist/docs/pubsub-notifications) for empty suggestions.
-* [Troubleshoot knowledge assist features](https://cloud.google.com/agent-assist/docs/troubleshoot-ka).
+* Apply [document and safety filters](https://docs.cloud.google.com/agent-assist/docs/ka-filters).
+* [Configure Pub/Sub notifications](https://docs.cloud.google.com/agent-assist/docs/pubsub-notifications) for empty suggestions.
+* [Troubleshoot knowledge assist features](https://docs.cloud.google.com/agent-assist/docs/troubleshoot-ka).
 
 ---
 ## 2025-10-01
 
 ### Deprecated
 
-[Smart compose](https://cloud.google.com/agent-assist/priv/docs/smart-compose) is no longer in use and will be permanently removed in October 2025. Refer to [Generative smart reply](https://cloud.google.com/agent-assist/priv/docs/generative-smart-reply) for an alternative.
+[Smart compose](https://docs.cloud.google.com/agent-assist/priv/docs/smart-compose) is no longer in use and will be permanently removed in October 2025. Refer to [Generative smart reply](https://docs.cloud.google.com/agent-assist/priv/docs/generative-smart-reply) for an alternative.
 
 ---
 ## 2025-09-23

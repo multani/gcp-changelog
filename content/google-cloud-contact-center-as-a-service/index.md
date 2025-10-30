@@ -4,9 +4,9 @@
 
 ### Announcement
 
-**Advanced reporting dashboards version 3.40 pre-release notes**
+**Advanced reporting dashboards version 3.40**
 
-Here are the pre-release notes for version 3.40 of the advanced reporting dashboards. When we release version 3.40, we expect the new capabilities to be as shown here.
+We've released version 3.40 of the advanced reporting dashboards.
 
 ### Feature
 
@@ -22,7 +22,7 @@ We've added a new **Audit log** dashboard to help you track changes to the confi
 
 ### Fixed
 
-The following issues were addressed in this release:
+We addressed the following issues in this release:
 
 * Fixed an issue that caused the **Agent Activity Timeline** dashboard to display inaccurate or incomplete data.
 * Fixed an issue on the **Virtual Agent - Calls** dashboard where the **Virtual Agent Name** and **Queue** filters didn't display available values.
@@ -31,7 +31,6 @@ The following issues were addressed in this release:
 * Fixed an issue on the **Virtual Agent - Chats** dashboard where the **Date** filter was incorrectly labeled **Time Range**.
 * Fixed an issue on the **Abandons - Calls** dashboard where **Customer ANI** values weren't appearing in the **Queue Abandon Details** and **IVR Abandon Details** tables despite the customer signing the waiver.
 * Fixed an issue on the **Agent Activity Timeline** dashboard where the **Agent Name** filter wasn't working properly.
-* Fixed an issue in advanced reporting where the queue groups dashboard failed to display data for users with a custom role assigned to a queue or queue group.
 
 ---
 ## 2025-10-15

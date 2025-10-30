@@ -1,5 +1,18 @@
 # Virtual Private Cloud
 
+## 2025-10-29
+
+### Feature
+
+You can specify a `/96` IPv6 address range when reserving static regional IPv6
+addresses. For more information, see the following:
+
+* [Reserve a static internal IP address](https://docs.cloud.google.com/vpc/docs/reserve-static-internal-ip-address)
+* [Reserve a static external IP address](https://docs.cloud.google.com/vpc/docs/reserve-static-external-ip-address)
+
+This feature is available in **General Availability**.
+
+---
 ## 2025-10-24
 
 ### Feature

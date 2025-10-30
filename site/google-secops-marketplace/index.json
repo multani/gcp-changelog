@@ -1,23 +1,73 @@
 {
   "name": "Google SecOps Marketplace",
   "entries": {
-    "2025-10-22": [
+    "2025-10-29": [
       {
-        "kind": "Feature",
-        "content": "**SentinelOneV2**: Version 42.0\n\n* The following new actions have been added:\n\n  + **Create Device Control Rule**\n  + **Delete Device Control Rule**\n  + **Update Device Control Rule**",
+        "kind": "Changed",
+        "content": "**CSV**: Version 35.0\n\n* Updated file path processing logic in the following connector:\n\n  + **CSV Connector**",
         "summary": {
-          "title": "New Device Control Features in SentinelOneV2",
-          "summary": "SentinelOneV2 version 42.0 introduces new capabilities for managing device control. Users can now create, delete, and update device control rules directly."
+          "title": "CSV Connector Update",
+          "summary": "The CSV connector has been updated with new file path processing logic."
         }
       },
       {
         "kind": "Changed",
-        "content": "**CrowdStrike Falcon**: Version 67.0\n\n* Fixed a bug where the Contains filter would fail to find hosts when the\n  `Max Hosts To Return` limit was applied in the following action:\n\n  + **List Host**",
+        "content": "**CrowdStrike Falcon**: Version 68.0\n\n* Update the following action to check if there is an existing identical running\n  scan for a provided hostname before creating a new one:\n\n  + **On-Demand Scan**",
         "summary": {
-          "title": "CrowdStrike Falcon v67.0 Update",
-          "summary": "Version 67.0 of CrowdStrike Falcon has been released. This update includes a fix for the Contains filter bug when the Max Hosts To Return limit is applied to the List Host action."
+          "title": "CrowdStrike Falcon v68.0: On-Demand Scan Update",
+          "summary": "CrowdStrike Falcon version 68.0 includes an update to the On-Demand Scan feature. The system will now check for existing identical running scans on a provided hostname before initiating a new one."
         }
       },
+      {
+        "kind": "Changed",
+        "content": "**Exchange**: Version 115.0\n\n* Updated the file management logic in the following action:\n\n  + **Download Attachments**",
+        "summary": {
+          "title": "Exchange 115.0",
+          "summary": "Version 115.0 of Exchange is here, with an update to the Download Attachments action's file management logic."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Microsoft Graph Mail**: Version 32.0\n\n* Updated the file management logic in the following action:\n\n  + **Download Attachments from Email**",
+        "summary": {
+          "title": "Microsoft Graph Mail v32.0 Update",
+          "summary": "The Microsoft Graph Mail V32.0 update introduces changes to file management, specifically enhancing the 'Download Attachments from Email' action."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Microsoft Graph Mail Delegated**: Version 9.0\n\n* Updated the file management logic in the following action:\n\n  + **Download Attachments from Email**",
+        "summary": {
+          "title": "Microsoft Graph Mail Delegated - Version 9.0",
+          "summary": "The Download Attachments from Email action has been updated with new file management logic."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Palo Alto Cortex XDR**: Version 19.0\n\n* Updated incident processing logic in the following action:\n\n  + **Get Incident Details**\n* Added new filtering options, the ability to create a SecOps alert for every\n  Palo Alto XDR alert, and the ability to track updates to an incident in the\n  following connector:\n\n  + **Palo Alto Cortex XDR Connector**",
+        "summary": {
+          "title": "Palo Alto Cortex XDR - New Version",
+          "summary": "Version 19.0 of Palo Alto Cortex XDR has been released with updated incident processing logic for 'Get Incident Details'. The Palo Alto Cortex XDR Connector now supports new filtering options, SecOps alert creation for every XDR alert, and incident update tracking."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Tanium**: Version 15.0\n\n* (REGRESSIVE) Updated JSON result to return data for multiple columns in the\n  following action:\n\n  + **Get Question Results**",
+        "summary": {
+          "title": "Tanium 15.0 Update",
+          "summary": "The Tanium 15.0 update includes changes to the 'Get Question Results' action, now returning data for multiple columns in JSON format."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**ZScaler**: Version 10.0\n\n* Added support for domain entity type in the following actions:\n\n  + **Add to Whitelist**\n  + **Lookup Entity**",
+        "summary": {
+          "title": "ZScaler 10.0 Update",
+          "summary": "Version 10.0 of ZScaler now supports the domain entity type for Whitelist and Lookup Entity actions."
+        }
+      }
+    ],
+    "2025-10-22": [
       {
         "kind": "Changed",
         "content": "**CSV**: Version 34.0\n\n* Fixed a bug that caused inconsistent column order for the same JSON input by\n  stabilizing the order based on the keys of the first object in the list in the\n  following action:\n\n  + **Save Json to CSV**",
@@ -33,25 +83,25 @@
           "title": "DomainTools 8.0",
           "summary": "DomainTools 8.0 has been released with extended capabilities for Get Domain Risk and added support for the domain entity type in Get Domain Profile, Get Domain Risk, and Reverse Domain actions."
         }
+      },
+      {
+        "kind": "Feature",
+        "content": "**SentinelOneV2**: Version 42.0\n\n* The following new actions have been added:\n\n  + **Create Device Control Rule**\n  + **Delete Device Control Rule**\n  + **Update Device Control Rule**",
+        "summary": {
+          "title": "New Device Control Features in SentinelOneV2",
+          "summary": "SentinelOneV2 version 42.0 introduces new capabilities for managing device control. Users can now create, delete, and update device control rules directly."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**CrowdStrike Falcon**: Version 67.0\n\n* Fixed a bug where the Contains filter would fail to find hosts when the\n  `Max Hosts To Return` limit was applied in the following action:\n\n  + **List Host**",
+        "summary": {
+          "title": "CrowdStrike Falcon v67.0 Update",
+          "summary": "Version 67.0 of CrowdStrike Falcon has been released. This update includes a fix for the Contains filter bug when the Max Hosts To Return limit is applied to the List Host action."
+        }
       }
     ],
     "2025-10-15": [
-      {
-        "kind": "Changed",
-        "content": "**ThreatQ**: Version 15.0\n\n* Updated the API request payload to align with a change in the ThreatQ API in\n  the following actions:\n\n  + **Enrich IP**\n  + **Enrich URL**\n  + **Enrich Email**\n  + **Enrich Hash**\n  + **Enrich CVE**",
-        "summary": {
-          "title": "ThreatQ v15.0 Update",
-          "summary": "The API request payload has been updated for several actions, including Enrich IP, URL, Email, Hash, and CVE, to align with recent changes in the ThreatQ API."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "**UrlScan.io**: Version 26.0\n\n* Added ability to scan domains and IPs in the following action:\n\n  + **URL Check**",
-        "summary": {
-          "title": "UrlScan.io - Version 26.0",
-          "summary": "UrlScan.io has been updated to version 26.0. This update adds the functionality to scan domains and IPs within the URL Check action."
-        }
-      },
       {
         "kind": "Feature",
         "content": "**CrowdStrike Falcon**: Version 66.0\n\n* The following new action has been added:\n\n  + **Get Alert Details**",
@@ -98,6 +148,22 @@
         "summary": {
           "title": "Okta 10.0 Release",
           "summary": "Okta version 10.0 has been released, featuring updates to the pagination processing for List Users, Add Group, Get Group, and List Providers actions."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**ThreatQ**: Version 15.0\n\n* Updated the API request payload to align with a change in the ThreatQ API in\n  the following actions:\n\n  + **Enrich IP**\n  + **Enrich URL**\n  + **Enrich Email**\n  + **Enrich Hash**\n  + **Enrich CVE**",
+        "summary": {
+          "title": "ThreatQ v15.0 Update",
+          "summary": "The API request payload has been updated for several actions, including Enrich IP, URL, Email, Hash, and CVE, to align with recent changes in the ThreatQ API."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**UrlScan.io**: Version 26.0\n\n* Added ability to scan domains and IPs in the following action:\n\n  + **URL Check**",
+        "summary": {
+          "title": "UrlScan.io - Version 26.0",
+          "summary": "UrlScan.io has been updated to version 26.0. This update adds the functionality to scan domains and IPs within the URL Check action."
         }
       }
     ],

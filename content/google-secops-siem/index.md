@@ -74,6 +74,34 @@
   + **Add to Whitelist**
   + **Lookup Entity**
 
+### Feature
+
+**Improved support for Chrome Enterprise Premium**
+
+This feature is currently in Preview.
+
+An improved integration for Chrome Enterprise Premium is now available that includes:
+
+* Streamlined connection to Google SecOps, using recommended security defaults
+* Enhanced log events with Google Safe Browsing context
+* Updated parser and integration documentation: [Collect Google Chrome logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/chrome-management)
+* Curated dashboards for Chrome Enterprise Premium
+* Google Workspace SOAR actions to manage Chrome extension blocklist policies ([Block Extension](https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#block_extension) and [Delete Extension](https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#delete_extension))
+
+### Feature
+
+**Improved Support for Chrome Enterprise Premium**
+
+This feature is currently in Preview.
+
+An improved integration for Chrome Enterprise Premium is now available that includes:
+
+* Streamlined connection to Google SecOps, leveraging recommended security defaults.
+* Enhanced log events with Google Safe Browsing context.
+* Updated parser and integration documentation: [Collect Google Chrome logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/chrome-management).
+* Curated dashboards for Chrome Enterprise Premium.
+* Google Workspace SOAR actions to manage Chrome extension blocklist policies ([Block Extension](https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#block_extension) and [Delete Extension](https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#delete_extension)).
+
 ---
 ## 2025-10-28
 

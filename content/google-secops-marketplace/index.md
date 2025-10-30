@@ -1,25 +1,81 @@
 # Google SecOps Marketplace
 
-## 2025-10-22
-
-### Feature
-
-**SentinelOneV2**: Version 42.0
-
-* The following new actions have been added:
-
-  + **Create Device Control Rule**
-  + **Delete Device Control Rule**
-  + **Update Device Control Rule**
+## 2025-10-29
 
 ### Changed
 
-**CrowdStrike Falcon**: Version 67.0
+**CSV**: Version 35.0
 
-* Fixed a bug where the Contains filter would fail to find hosts when the
-  `Max Hosts To Return` limit was applied in the following action:
+* Updated file path processing logic in the following connector:
 
-  + **List Host**
+  + **CSV Connector**
+
+### Changed
+
+**CrowdStrike Falcon**: Version 68.0
+
+* Update the following action to check if there is an existing identical running
+  scan for a provided hostname before creating a new one:
+
+  + **On-Demand Scan**
+
+### Changed
+
+**Exchange**: Version 115.0
+
+* Updated the file management logic in the following action:
+
+  + **Download Attachments**
+
+### Changed
+
+**Microsoft Graph Mail**: Version 32.0
+
+* Updated the file management logic in the following action:
+
+  + **Download Attachments from Email**
+
+### Changed
+
+**Microsoft Graph Mail Delegated**: Version 9.0
+
+* Updated the file management logic in the following action:
+
+  + **Download Attachments from Email**
+
+### Changed
+
+**Palo Alto Cortex XDR**: Version 19.0
+
+* Updated incident processing logic in the following action:
+
+  + **Get Incident Details**
+* Added new filtering options, the ability to create a SecOps alert for every
+  Palo Alto XDR alert, and the ability to track updates to an incident in the
+  following connector:
+
+  + **Palo Alto Cortex XDR Connector**
+
+### Changed
+
+**Tanium**: Version 15.0
+
+* (REGRESSIVE) Updated JSON result to return data for multiple columns in the
+  following action:
+
+  + **Get Question Results**
+
+### Changed
+
+**ZScaler**: Version 10.0
+
+* Added support for domain entity type in the following actions:
+
+  + **Add to Whitelist**
+  + **Lookup Entity**
+
+---
+## 2025-10-22
 
 ### Changed
 
@@ -44,29 +100,27 @@
   + **Get Domain Risk**
   + **Reverse Domain**
 
+### Feature
+
+**SentinelOneV2**: Version 42.0
+
+* The following new actions have been added:
+
+  + **Create Device Control Rule**
+  + **Delete Device Control Rule**
+  + **Update Device Control Rule**
+
+### Changed
+
+**CrowdStrike Falcon**: Version 67.0
+
+* Fixed a bug where the Contains filter would fail to find hosts when the
+  `Max Hosts To Return` limit was applied in the following action:
+
+  + **List Host**
+
 ---
 ## 2025-10-15
-
-### Changed
-
-**ThreatQ**: Version 15.0
-
-* Updated the API request payload to align with a change in the ThreatQ API in
-  the following actions:
-
-  + **Enrich IP**
-  + **Enrich URL**
-  + **Enrich Email**
-  + **Enrich Hash**
-  + **Enrich CVE**
-
-### Changed
-
-**UrlScan.io**: Version 26.0
-
-* Added ability to scan domains and IPs in the following action:
-
-  + **URL Check**
 
 ### Feature
 
@@ -128,6 +182,27 @@ Updated dependencies in the following integrations:
   + **Add Group**
   + **Get Group**
   + **List Providers**
+
+### Changed
+
+**ThreatQ**: Version 15.0
+
+* Updated the API request payload to align with a change in the ThreatQ API in
+  the following actions:
+
+  + **Enrich IP**
+  + **Enrich URL**
+  + **Enrich Email**
+  + **Enrich Hash**
+  + **Enrich CVE**
+
+### Changed
+
+**UrlScan.io**: Version 26.0
+
+* Added ability to scan domains and IPs in the following action:
+
+  + **URL Check**
 
 ---
 ## 2025-10-09

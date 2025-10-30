@@ -1937,6 +1937,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Service usage <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../service-usage/" class="dropdown-item">Service Usage</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Spanner <b class="caret"></b>
                         </a>
 
@@ -2100,31 +2112,101 @@
 
 
 <h1 id="google-secops-marketplace">Google SecOps Marketplace</h1>
-<h2 id="2025-10-22">2025-10-22</h2>
-<h3 id="feature">Feature</h3>
-<p><strong>SentinelOneV2</strong>: Version 42.0</p>
-<ul>
-<li>
-<p>The following new actions have been added:</p>
-</li>
-<li>
-<p><strong>Create Device Control Rule</strong></p>
-</li>
-<li><strong>Delete Device Control Rule</strong></li>
-<li><strong>Update Device Control Rule</strong></li>
-</ul>
+<h2 id="2025-10-29">2025-10-29</h2>
 <h3 id="changed">Changed</h3>
-<p><strong>CrowdStrike Falcon</strong>: Version 67.0</p>
+<p><strong>CSV</strong>: Version 35.0</p>
 <ul>
 <li>
-<p>Fixed a bug where the Contains filter would fail to find hosts when the
-  <code>Max Hosts To Return</code> limit was applied in the following action:</p>
+<p>Updated file path processing logic in the following connector:</p>
 </li>
 <li>
-<p><strong>List Host</strong></p>
+<p><strong>CSV Connector</strong></p>
 </li>
 </ul>
 <h3 id="changed_1">Changed</h3>
+<p><strong>CrowdStrike Falcon</strong>: Version 68.0</p>
+<ul>
+<li>
+<p>Update the following action to check if there is an existing identical running
+  scan for a provided hostname before creating a new one:</p>
+</li>
+<li>
+<p><strong>On-Demand Scan</strong></p>
+</li>
+</ul>
+<h3 id="changed_2">Changed</h3>
+<p><strong>Exchange</strong>: Version 115.0</p>
+<ul>
+<li>
+<p>Updated the file management logic in the following action:</p>
+</li>
+<li>
+<p><strong>Download Attachments</strong></p>
+</li>
+</ul>
+<h3 id="changed_3">Changed</h3>
+<p><strong>Microsoft Graph Mail</strong>: Version 32.0</p>
+<ul>
+<li>
+<p>Updated the file management logic in the following action:</p>
+</li>
+<li>
+<p><strong>Download Attachments from Email</strong></p>
+</li>
+</ul>
+<h3 id="changed_4">Changed</h3>
+<p><strong>Microsoft Graph Mail Delegated</strong>: Version 9.0</p>
+<ul>
+<li>
+<p>Updated the file management logic in the following action:</p>
+</li>
+<li>
+<p><strong>Download Attachments from Email</strong></p>
+</li>
+</ul>
+<h3 id="changed_5">Changed</h3>
+<p><strong>Palo Alto Cortex XDR</strong>: Version 19.0</p>
+<ul>
+<li>
+<p>Updated incident processing logic in the following action:</p>
+</li>
+<li>
+<p><strong>Get Incident Details</strong></p>
+</li>
+<li>
+<p>Added new filtering options, the ability to create a SecOps alert for every
+  Palo Alto XDR alert, and the ability to track updates to an incident in the
+  following connector:</p>
+</li>
+<li>
+<p><strong>Palo Alto Cortex XDR Connector</strong></p>
+</li>
+</ul>
+<h3 id="changed_6">Changed</h3>
+<p><strong>Tanium</strong>: Version 15.0</p>
+<ul>
+<li>
+<p>(REGRESSIVE) Updated JSON result to return data for multiple columns in the
+  following action:</p>
+</li>
+<li>
+<p><strong>Get Question Results</strong></p>
+</li>
+</ul>
+<h3 id="changed_7">Changed</h3>
+<p><strong>ZScaler</strong>: Version 10.0</p>
+<ul>
+<li>
+<p>Added support for domain entity type in the following actions:</p>
+</li>
+<li>
+<p><strong>Add to Whitelist</strong></p>
+</li>
+<li><strong>Lookup Entity</strong></li>
+</ul>
+<hr />
+<h2 id="2025-10-22">2025-10-22</h2>
+<h3 id="changed_8">Changed</h3>
 <p><strong>CSV</strong>: Version 34.0</p>
 <ul>
 <li>
@@ -2136,7 +2218,7 @@
 <p><strong>Save Json to CSV</strong></p>
 </li>
 </ul>
-<h3 id="changed_2">Changed</h3>
+<h3 id="changed_9">Changed</h3>
 <p><strong>DomainTools</strong>: Version 8.0</p>
 <ul>
 <li>
@@ -2154,33 +2236,31 @@
 <li><strong>Get Domain Risk</strong></li>
 <li><strong>Reverse Domain</strong></li>
 </ul>
+<h3 id="feature">Feature</h3>
+<p><strong>SentinelOneV2</strong>: Version 42.0</p>
+<ul>
+<li>
+<p>The following new actions have been added:</p>
+</li>
+<li>
+<p><strong>Create Device Control Rule</strong></p>
+</li>
+<li><strong>Delete Device Control Rule</strong></li>
+<li><strong>Update Device Control Rule</strong></li>
+</ul>
+<h3 id="changed_10">Changed</h3>
+<p><strong>CrowdStrike Falcon</strong>: Version 67.0</p>
+<ul>
+<li>
+<p>Fixed a bug where the Contains filter would fail to find hosts when the
+  <code>Max Hosts To Return</code> limit was applied in the following action:</p>
+</li>
+<li>
+<p><strong>List Host</strong></p>
+</li>
+</ul>
 <hr />
 <h2 id="2025-10-15">2025-10-15</h2>
-<h3 id="changed_3">Changed</h3>
-<p><strong>ThreatQ</strong>: Version 15.0</p>
-<ul>
-<li>
-<p>Updated the API request payload to align with a change in the ThreatQ API in
-  the following actions:</p>
-</li>
-<li>
-<p><strong>Enrich IP</strong></p>
-</li>
-<li><strong>Enrich URL</strong></li>
-<li><strong>Enrich Email</strong></li>
-<li><strong>Enrich Hash</strong></li>
-<li><strong>Enrich CVE</strong></li>
-</ul>
-<h3 id="changed_4">Changed</h3>
-<p><strong>UrlScan.io</strong>: Version 26.0</p>
-<ul>
-<li>
-<p>Added ability to scan domains and IPs in the following action:</p>
-</li>
-<li>
-<p><strong>URL Check</strong></p>
-</li>
-</ul>
 <h3 id="feature_1">Feature</h3>
 <p><strong>CrowdStrike Falcon</strong>: Version 66.0</p>
 <ul>
@@ -2191,7 +2271,7 @@
 <p><strong>Get Alert Details</strong></p>
 </li>
 </ul>
-<h3 id="changed_5">Changed</h3>
+<h3 id="changed_11">Changed</h3>
 <p><strong>Azure Active Directory</strong>: Version 19.0</p>
 <ul>
 <li>
@@ -2203,7 +2283,7 @@
 <p><strong>List Members in Group</strong></p>
 </li>
 </ul>
-<h3 id="changed_6">Changed</h3>
+<h3 id="changed_12">Changed</h3>
 <p><strong>CrowdStrike Falcon</strong>: Version 66.0</p>
 <ul>
 <li>
@@ -2220,7 +2300,7 @@
 <li><strong>On-Demand Scan</strong></li>
 <li><strong>Run Script</strong></li>
 </ul>
-<h3 id="changed_7">Changed</h3>
+<h3 id="changed_13">Changed</h3>
 <p>Updated dependencies in the following integrations:</p>
 <ul>
 <li><strong>Microsoft Teams</strong>: Version 30.0</li>
@@ -2229,13 +2309,13 @@
 <li><strong>Case Federation</strong>: Version 5.0</li>
 <li><strong>Azure Security Center</strong>: Version 12.0</li>
 </ul>
-<h3 id="changed_8">Changed</h3>
+<h3 id="changed_14">Changed</h3>
 <p><strong>Microsoft Teams</strong>: Version 30.0</p>
 <ul>
 <li><strong>Integration</strong>: Fixed an issue with the special characters in the query
   parameters.</li>
 </ul>
-<h3 id="changed_9">Changed</h3>
+<h3 id="changed_15">Changed</h3>
 <p><strong>Okta</strong>: Version 10.0</p>
 <ul>
 <li>
@@ -2248,9 +2328,34 @@
 <li><strong>Get Group</strong></li>
 <li><strong>List Providers</strong></li>
 </ul>
+<h3 id="changed_16">Changed</h3>
+<p><strong>ThreatQ</strong>: Version 15.0</p>
+<ul>
+<li>
+<p>Updated the API request payload to align with a change in the ThreatQ API in
+  the following actions:</p>
+</li>
+<li>
+<p><strong>Enrich IP</strong></p>
+</li>
+<li><strong>Enrich URL</strong></li>
+<li><strong>Enrich Email</strong></li>
+<li><strong>Enrich Hash</strong></li>
+<li><strong>Enrich CVE</strong></li>
+</ul>
+<h3 id="changed_17">Changed</h3>
+<p><strong>UrlScan.io</strong>: Version 26.0</p>
+<ul>
+<li>
+<p>Added ability to scan domains and IPs in the following action:</p>
+</li>
+<li>
+<p><strong>URL Check</strong></p>
+</li>
+</ul>
 <hr />
 <h2 id="2025-10-09">2025-10-09</h2>
-<h3 id="changed_10">Changed</h3>
+<h3 id="changed_18">Changed</h3>
 <p><strong>Google Workspace</strong>: Version 22.0</p>
 <ul>
 <li>
@@ -2262,7 +2367,7 @@
 <p><strong>Delete Extension</strong></p>
 </li>
 </ul>
-<h3 id="changed_11">Changed</h3>
+<h3 id="changed_19">Changed</h3>
 <p><strong>Google Chronicle</strong>: Version 66.0</p>
 <ul>
 <li>
@@ -2272,7 +2377,7 @@
 <p><strong>Get Reference Lists</strong></p>
 </li>
 </ul>
-<h3 id="changed_12">Changed</h3>
+<h3 id="changed_20">Changed</h3>
 <p><strong>Google Threat Intelligence</strong>: Version 5.0</p>
 <ul>
 <li>
@@ -2288,7 +2393,7 @@
 <p><strong>Google Threat Intelligence - DTM Alerts Connector</strong></p>
 </li>
 </ul>
-<h3 id="changed_13">Changed</h3>
+<h3 id="changed_21">Changed</h3>
 <p><strong>Microsoft Teams</strong>: Version 29.0</p>
 <ul>
 <li>
@@ -2313,7 +2418,7 @@
 <p><strong>Sync Incidents</strong></p>
 </li>
 </ul>
-<h3 id="changed_14">Changed</h3>
+<h3 id="changed_22">Changed</h3>
 <p><strong>Any.Run</strong>: Version 8.0</p>
 <ul>
 <li>
@@ -2325,7 +2430,7 @@
 <li><strong>Analyze File URL</strong></li>
 <li><strong>Analyze File</strong></li>
 </ul>
-<h3 id="changed_15">Changed</h3>
+<h3 id="changed_23">Changed</h3>
 <p><strong>CrowdStrike Falcon</strong>: Version 64.0</p>
 <ul>
 <li>
@@ -2336,7 +2441,7 @@
 </li>
 <li><strong>Integration</strong>: Updated authentication to support multi-tenancy execution.</li>
 </ul>
-<h3 id="changed_16">Changed</h3>
+<h3 id="changed_24">Changed</h3>
 <p><strong>Google Workspace</strong>: Version 21.0</p>
 <ul>
 <li>
@@ -2354,14 +2459,14 @@
 <li><strong>Delete Extension</strong></li>
 <li><strong>List OU Of Account</strong></li>
 </ul>
-<h3 id="changed_17">Changed</h3>
+<h3 id="changed_25">Changed</h3>
 <p><strong>Orca Security</strong>: Version 12.0</p>
 <ul>
 <li><strong>Integration</strong>: (REGRESSIVE) Updated to support the latest API version.</li>
 </ul>
 <p>Ontology has been updated. Overwrite current ontology mapping to align
   with the new API alert structure.</p>
-<h3 id="changed_18">Changed</h3>
+<h3 id="changed_26">Changed</h3>
 <p><strong>Google Chronicle</strong>: Version 65.0</p>
 <ul>
 <li>
@@ -2417,7 +2522,7 @@
 <li><strong>Execute XQL Search</strong></li>
 <li><strong>Get Incident Details</strong></li>
 </ul>
-<h3 id="changed_19">Changed</h3>
+<h3 id="changed_27">Changed</h3>
 <p><strong>Google Threat Intelligence</strong>: Version 4.0</p>
 <ul>
 <li>
@@ -2439,7 +2544,7 @@
 <p><strong>Enrich Entities</strong></p>
 </li>
 </ul>
-<h3 id="changed_20">Changed</h3>
+<h3 id="changed_28">Changed</h3>
 <p><strong>Trend Vision One</strong>: Version 6.0</p>
 <ul>
 <li>
@@ -2452,7 +2557,7 @@
 <li><strong>Isolate Endpoint</strong></li>
 <li><strong>Unisolate Endpoint</strong></li>
 </ul>
-<h3 id="changed_21">Changed</h3>
+<h3 id="changed_29">Changed</h3>
 <p><strong>Splunk</strong>: Version 58.0</p>
 <ul>
 <li>
@@ -2462,24 +2567,24 @@
 <p><strong>Splunk ES - Notable Events Connector</strong></p>
 </li>
 </ul>
-<h3 id="changed_22">Changed</h3>
+<h3 id="changed_30">Changed</h3>
 <p><strong>Jira</strong>: Version 48.0</p>
 <ul>
 <li><strong>Integration</strong>: Updated the SDK version.</li>
 </ul>
-<h3 id="changed_23">Changed</h3>
+<h3 id="changed_31">Changed</h3>
 <p>Added the ability to modify the <code>API Root</code> and <code>Login API Root</code> in the following integrations:</p>
 <ul>
 <li><strong>Azure Active Directory</strong>: Version 18.0</li>
 <li><strong>Azure AD Identity Protection</strong>: Version 7.0</li>
 <li><strong>Microsoft Teams</strong>: Version 28.0</li>
 </ul>
-<h3 id="changed_24">Changed</h3>
+<h3 id="changed_32">Changed</h3>
 <p><strong>Vertex AI</strong>: Version 4.0</p>
 <ul>
 <li><strong>Integration</strong>: Increased the default timeout for API requests.</li>
 </ul>
-<h3 id="changed_25">Changed</h3>
+<h3 id="changed_33">Changed</h3>
 <p><strong>Microsoft Azure Sentinel</strong>: Version 56.0</p>
 <ul>
 <li>
@@ -2491,7 +2596,7 @@
 </ul>
 <hr />
 <h2 id="2025-09-03">2025-09-03</h2>
-<h3 id="changed_26">Changed</h3>
+<h3 id="changed_34">Changed</h3>
 <p><strong>Google Threat Intelligence</strong>: Version 3.0</p>
 <ul>
 <li>
@@ -2517,14 +2622,14 @@
 <li><strong>Get Host Browser Details</strong></li>
 <li><strong>Search User Activity Events</strong></li>
 </ul>
-<h3 id="changed_27">Changed</h3>
+<h3 id="changed_35">Changed</h3>
 <p><strong>Google Threat Intelligence</strong>: Version 3.0</p>
 <ul>
 <li><strong>Integration:</strong> Updated authentication flow.</li>
 </ul>
 <hr />
 <h2 id="2025-08-20">2025-08-20</h2>
-<h3 id="changed_28">Changed</h3>
+<h3 id="changed_36">Changed</h3>
 <p><strong>CrowdStrike Falcon</strong>: Version 63.0</p>
 <ul>
 <li>
@@ -2534,7 +2639,7 @@
 <p><strong>Crowdstrike Falcon - Alerts Connector</strong></p>
 </li>
 </ul>
-<h3 id="changed_29">Changed</h3>
+<h3 id="changed_37">Changed</h3>
 <p><strong>Google Chronicle</strong>: Version 64.0</p>
 <ul>
 <li>
@@ -2544,7 +2649,7 @@
 <p><strong>Execute UDM Query</strong></p>
 </li>
 </ul>
-<h3 id="changed_30">Changed</h3>
+<h3 id="changed_38">Changed</h3>
 <p><strong>Microsoft Graph Mail</strong>: Version 30.0</p>
 <ul>
 <li>
@@ -2554,7 +2659,7 @@
 <p><strong>Microsoft Graph Mail - Microsoft Graph Mail Connector</strong></p>
 </li>
 </ul>
-<h3 id="changed_31">Changed</h3>
+<h3 id="changed_39">Changed</h3>
 <p><strong>Microsoft Graph Mail Delegated</strong>: Version 6.0</p>
 <ul>
 <li>
@@ -2568,7 +2673,7 @@
 <h2 id="2025-08-13">2025-08-13</h2>
 <h3 id="feature_8">Feature</h3>
 <p>New <strong>CyberArk Credential Provider</strong> integration</p>
-<h3 id="changed_32">Changed</h3>
+<h3 id="changed_40">Changed</h3>
 <p><strong>Jira</strong>: Version 47.0</p>
 <ul>
 <li>
@@ -2585,7 +2690,7 @@
 <p><strong>Sync Closure</strong></p>
 </li>
 </ul>
-<h3 id="changed_33">Changed</h3>
+<h3 id="changed_41">Changed</h3>
 <p><strong>Microsoft Graph Mail</strong>: Version 29.0</p>
 <ul>
 <li><strong>Integration</strong>: Updated dependencies.</li>
@@ -2603,17 +2708,17 @@
 </li>
 <li><strong>Enrich Entities</strong></li>
 </ul>
-<h3 id="changed_34">Changed</h3>
+<h3 id="changed_42">Changed</h3>
 <p><strong>Case Federation</strong>: Version 4.0</p>
 <ul>
 <li><strong>Integration:</strong> Refactored the code.</li>
 </ul>
-<h3 id="changed_35">Changed</h3>
+<h3 id="changed_43">Changed</h3>
 <p><strong>Gmail</strong>: Version 5.0</p>
 <ul>
 <li><strong>Integration</strong>: Improved error handling.</li>
 </ul>
-<h3 id="changed_36">Changed</h3>
+<h3 id="changed_44">Changed</h3>
 <p><strong>Google Chronicle</strong>: Version 63.0</p>
 <ul>
 <li>
@@ -2624,7 +2729,7 @@
 </li>
 <li><strong>Enrich IP</strong></li>
 </ul>
-<h3 id="changed_37">Changed</h3>
+<h3 id="changed_45">Changed</h3>
 <p><strong>QRadar</strong>: Version 60.0</p>
 <ul>
 <li>
@@ -2634,7 +2739,7 @@
 <p><strong>Qradar - Baseline Offenses Connector</strong></p>
 </li>
 </ul>
-<h3 id="changed_38">Changed</h3>
+<h3 id="changed_46">Changed</h3>
 <p><strong>SentinelOneV2</strong>: Version 40.0</p>
 <ul>
 <li>
@@ -2665,7 +2770,7 @@
 <li><strong>Resume Case SLA</strong></li>
 <li><strong>Pause Case SLA</strong></li>
 </ul>
-<h3 id="changed_39">Changed</h3>
+<h3 id="changed_47">Changed</h3>
 <p><strong>Sophos</strong>: Version 18.0</p>
 <p>Added ability to work with new authentication method in the following action:</p>
 <ul>
@@ -2686,12 +2791,12 @@
 <li><strong>Is Value In Data Table</strong></li>
 <li><strong>Add Rows To Data Table</strong></li>
 </ul>
-<h3 id="changed_40">Changed</h3>
+<h3 id="changed_48">Changed</h3>
 <p><strong>Azure Security Center</strong>: Version 11.0</p>
 <ul>
 <li><strong>Integration</strong>: Refactored the integration code to support the updated API.</li>
 </ul>
-<h3 id="changed_41">Changed</h3>
+<h3 id="changed_49">Changed</h3>
 <p><strong>Mandiant Threat Intelligence</strong>: Version 14.0</p>
 <ul>
 <li>
@@ -2701,7 +2806,7 @@
 <p><strong>Enrich Entities</strong></p>
 </li>
 </ul>
-<h3 id="changed_42">Changed</h3>
+<h3 id="changed_50">Changed</h3>
 <p><strong>Microsoft Azure Sentinel</strong>: Version 55.0</p>
 <ul>
 <li>
@@ -2711,7 +2816,7 @@
 <p><strong>Microsoft Azure Sentinel - Incident Connector v2</strong></p>
 </li>
 </ul>
-<h3 id="changed_43">Changed</h3>
+<h3 id="changed_51">Changed</h3>
 <p><strong>MySQL</strong>: Version 5.0</p>
 <ul>
 <li>
@@ -2723,7 +2828,7 @@
 </ul>
 <hr />
 <h2 id="2025-07-09">2025-07-09</h2>
-<h3 id="changed_44">Changed</h3>
+<h3 id="changed_52">Changed</h3>
 <p><strong>BMC Remedy ITSM</strong>: Version 9.0</p>
 <ul>
 <li>
@@ -2733,7 +2838,7 @@
 <p><strong>Create Incident</strong></p>
 </li>
 </ul>
-<h3 id="changed_45">Changed</h3>
+<h3 id="changed_53">Changed</h3>
 <p><strong>ServiceNow</strong>: Version 58.0</p>
 <ul>
 <li>
@@ -2743,7 +2848,7 @@
 <p><strong>ServiceNow - ServiceNow Connector</strong></p>
 </li>
 </ul>
-<h3 id="changed_46">Changed</h3>
+<h3 id="changed_54">Changed</h3>
 <p><strong>Siemplify</strong>: Version 93.0</p>
 <ul>
 <li>
@@ -2766,7 +2871,7 @@
 <p><strong>Send SSF to Okta</strong></p>
 </li>
 </ul>
-<h3 id="changed_47">Changed</h3>
+<h3 id="changed_55">Changed</h3>
 <p><strong>CrowdStrike Falcon</strong>: Version 62.0</p>
 <ul>
 <li>
@@ -2776,7 +2881,7 @@
 <p><strong>List Hosts</strong></p>
 </li>
 </ul>
-<h3 id="changed_48">Changed</h3>
+<h3 id="changed_56">Changed</h3>
 <p><strong>Google Chronicle</strong>: Version 61.0</p>
 <ul>
 <li>
@@ -2786,14 +2891,14 @@
 <p><strong>Execute UDM Query</strong></p>
 </li>
 </ul>
-<h3 id="changed_49">Changed</h3>
+<h3 id="changed_57">Changed</h3>
 <p><strong>Vertex AI</strong>: Version 3.0</p>
 <ul>
 <li><strong>Integration</strong>: Updated the handling of non-Google models.</li>
 </ul>
 <hr />
 <h2 id="2025-06-27">2025-06-27</h2>
-<h3 id="changed_50">Changed</h3>
+<h3 id="changed_58">Changed</h3>
 <p><strong>Siemplify</strong>: Version 92.0</p>
 <ul>
 <li>
@@ -2807,13 +2912,13 @@
 </ul>
 <hr />
 <h2 id="2025-06-25">2025-06-25</h2>
-<h3 id="changed_51">Changed</h3>
+<h3 id="changed_59">Changed</h3>
 <p>Refactored the code to work with updated API in the following integrations:</p>
 <ul>
 <li><strong>Case Federation</strong>: Version 3.0</li>
 <li><strong>Siemplify</strong>: Version 91.0</li>
 </ul>
-<h3 id="changed_52">Changed</h3>
+<h3 id="changed_60">Changed</h3>
 <p><strong>Microsoft Azure Sentinel</strong>: Version 54.0</p>
 <ul>
 <li>
@@ -2824,7 +2929,7 @@
 </li>
 <li><strong>Microsoft Azure Sentinel - Incident Tracking Connector</strong></li>
 </ul>
-<h3 id="changed_53">Changed</h3>
+<h3 id="changed_61">Changed</h3>
 <p><strong>SentinelOneV2</strong>: Version 39.0</p>
 <ul>
 <li>
@@ -2834,7 +2939,7 @@
 <p><strong>SentinelOneV2 - Threats Connector</strong></p>
 </li>
 </ul>
-<h3 id="changed_54">Changed</h3>
+<h3 id="changed_62">Changed</h3>
 <p><strong>Siemplify</strong>: Version 91.0</p>
 <ul>
 <li>
@@ -2846,7 +2951,7 @@
 </ul>
 <hr />
 <h2 id="2025-06-18">2025-06-18</h2>
-<h3 id="changed_55">Changed</h3>
+<h3 id="changed_63">Changed</h3>
 <p><strong>Google Chronicle</strong>: Version 60.0</p>
 <ul>
 <li>
@@ -2856,7 +2961,7 @@
 <p><strong>Google Chronicle - Alerts Connector</strong></p>
 </li>
 </ul>
-<h3 id="changed_56">Changed</h3>
+<h3 id="changed_64">Changed</h3>
 <p><strong>Microsoft Teams</strong>: Version 27.0</p>
 <ul>
 <li><strong>Integration</strong>: Refactored the code to work with updated API.</li>
@@ -2867,7 +2972,7 @@
 <p>New <strong>Akamai</strong> integration</p>
 <h3 id="feature_14">Feature</h3>
 <p>New <strong>Google Threat Intelligence</strong> integration</p>
-<h3 id="changed_57">Changed</h3>
+<h3 id="changed_65">Changed</h3>
 <p><strong>Darktrace</strong>: Version 18.0</p>
 <ul>
 <li>
@@ -2877,7 +2982,7 @@
 <p><strong>Darktrace - Model Breaches Connector</strong></p>
 </li>
 </ul>
-<h3 id="changed_58">Changed</h3>
+<h3 id="changed_66">Changed</h3>
 <p>Refactored the code to work with updated API in the following integrations:</p>
 <ul>
 <li><strong>Exchange</strong>: Version 113.0</li>
@@ -2894,7 +2999,7 @@
 </ul>
 <hr />
 <h2 id="2025-06-04">2025-06-04</h2>
-<h3 id="changed_59">Changed</h3>
+<h3 id="changed_67">Changed</h3>
 <p>Refactored the code to work with updated API in the following integrations:</p>
 <ul>
 <li><strong>BMC Remedy ITSM</strong>: Version 8.0</li>
@@ -2904,19 +3009,19 @@
 <li><strong>Service Desk Plus V3</strong>: Version 6.0</li>
 <li><strong>Vertex AI</strong>: Version 2.0</li>
 </ul>
-<h3 id="changed_60">Changed</h3>
+<h3 id="changed_68">Changed</h3>
 <p><strong>Google Chronicle</strong>: Version 59.0</p>
 <ul>
 <li>Updated the API root to be configurable in IDE in the following connector:</li>
 <li><strong>Google Chronicle - Chronicle Alerts Connector</strong></li>
 </ul>
-<h3 id="changed_61">Changed</h3>
+<h3 id="changed_69">Changed</h3>
 <p><strong>Nmap</strong>: Version 2.0</p>
 <ul>
 <li>Updated JSON Result structure in the following action:</li>
 <li><strong>Scan Entities</strong></li>
 </ul>
-<h3 id="changed_62">Changed</h3>
+<h3 id="changed_70">Changed</h3>
 <p><strong>Vertex AI</strong>: Version 2.0</p>
 <ul>
 <li>Fixed non-Google models that weren't working</li>
@@ -2932,6 +3037,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-secops-marketplace">Google SecOps Marketplace</a></li>
+          <li class="nav-item">
+            <a href="#2025-10-29" class="nav-link">2025-10-29</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-10-22" class="nav-link">2025-10-22</a>
           </li>

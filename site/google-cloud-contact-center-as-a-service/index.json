@@ -1,21 +1,21 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
-    "2025-10-21": [
+    "2025-10-30": [
       {
         "kind": "Announcement",
         "content": "**Advanced reporting dashboards version 3.40**\n\nWe've released version 3.40 of the advanced reporting dashboards.",
         "summary": {
-          "title": "Advanced reporting dashboards",
-          "summary": "New version 3.40 of advanced reporting dashboards released."
+          "title": "Advanced reporting dashboards v3.40",
+          "summary": "Version 3.40 of the advanced reporting dashboards has been released."
         }
       },
       {
         "kind": "Feature",
         "content": "**New Agent Preference table in the Agent Availability dashboard**\n\nWe've added a new **Agent Preference** table to the **Agent Availability** dashboard. This table can help you ensure that queues have properly skilled agents assigned to them. It can also help identify agents who improperly change their availability filters. For more information, see [Agent availability dashboard](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-agent-availability).",
         "summary": {
-          "title": "Agent Preference Table Added",
-          "summary": "A new Agent Preference table is now available in the Agent Availability dashboard. This feature helps ensure correct agent skills are assigned to queues and identifies improper use of availability filters."
+          "title": "Agent Availability Dashboard Update",
+          "summary": "A new Agent Preference table has been added to the Agent Availability dashboard. This feature helps ensure correct agent skill assignment to queues and identifies misuse of availability filters."
         }
       },
       {
@@ -23,15 +23,15 @@
         "content": "**New Audit Log dashboard**\n\nWe've added a new **Audit log** dashboard to help you track changes to the configuration of your instance. The dashboard tracks changes to the settings on the **Developer Settings** page, and displays information such as the type of change, who made the change, and when. This dashboard is similar in format to the advanced reporting dashboards, but you can't save it as a new dashboard. You access the **Audit Log** dashboard from the **Settings** menu. For more information, see [Audit log dashboard](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-audit-log).",
         "summary": {
           "title": "Audit Log Dashboard",
-          "summary": "Track configuration changes with the new Audit Log dashboard. See who changed what and when, with a format similar to advanced reporting."
+          "summary": "Track configuration changes with the new Audit Log dashboard. See what changed, who changed it, and when. Access it from the Settings menu."
         }
       },
       {
         "kind": "Fixed",
-        "content": "We addressed the following issues in this release:\n\n* Fixed an issue that caused the **Agent Activity Timeline** dashboard to display inaccurate or incomplete data.\n* Fixed an issue on the **Virtual Agent - Calls** dashboard where the **Virtual Agent Name** and **Queue** filters didn't display available values.\n* Fixed an issue on the **Dispositions - Chats** dashboard that prevented the **Agent Email**, **Agent ID**, and **Location** filters from displaying available values.\n* Fixed an issue on the **Virtual Agent - Chats** dashboard that prevented the **Virtual Agent Name** filter from displaying available values.\n* Fixed an issue on the **Virtual Agent - Chats** dashboard where the **Date** filter was incorrectly labeled **Time Range**.\n* Fixed an issue on the **Abandons - Calls** dashboard where **Customer ANI** values weren't appearing in the **Queue Abandon Details** and **IVR Abandon Details** tables despite the customer signing the waiver.\n* Fixed an issue on the **Agent Activity Timeline** dashboard where the **Agent Name** filter wasn't working properly.",
+        "content": "We addressed the following issues in this release:\n\n* Fixed an issue where the queue groups dashboard failed to display data for users with a custom role assigned to a queue or queue group.\n* Fixed an issue that caused the **Agent Activity Timeline** dashboard to display inaccurate or incomplete data.\n* Fixed an issue on the **Virtual Agent - Calls** dashboard where the **Virtual Agent Name** and **Queue** filters didn't display available values.\n* Fixed an issue on the **Dispositions - Chats** dashboard that prevented the **Agent Email**, **Agent ID**, and **Location** filters from displaying available values.\n* Fixed an issue on the **Virtual Agent - Chats** dashboard that prevented the **Virtual Agent Name** filter from displaying available values.\n* Fixed an issue on the **Virtual Agent - Chats** dashboard where the **Date** filter was incorrectly labeled **Time Range**.\n* Fixed an issue on the **Abandons - Calls** dashboard where **Customer ANI** values weren't appearing in the **Queue Abandon Details** and **IVR Abandon Details** tables despite the customer signing the waiver.\n* Fixed an issue on the **Agent Activity Timeline** dashboard where the **Agent Name** filter wasn't working properly.",
         "summary": {
-          "title": "Agent Activity Timeline and Dashboard Filters",
-          "summary": "This release resolves several issues, including inaccurate data on the Agent Activity Timeline dashboard and problems with filters on various dashboards such as Virtual Agent - Calls, Dispositions - Chats, and Virtual Agent - Chats. Additionally, it corrects an issue with the Date filter's label and ensures Customer ANI values are displayed correctly in abandon details tables."
+          "title": "Dashboard Fixes",
+          "summary": "Various dashboard issues have been resolved, including problems with data display, filter functionality, and data accuracy across multiple dashboards such as Queue Groups, Agent Activity Timeline, Virtual Agent, and Dispositions."
         }
       }
     ],
@@ -198,6 +198,40 @@
         "summary": {
           "title": "Resolved various issues",
           "summary": "This release addresses numerous bugs and user experience improvements across the platform. Key fixes include improved chat handling, accurate data redaction, contact list loading, and error resolution for email and call duration tracking. Administrator settings for external storage and agent statistics have also been refined. Additionally, several issues related to Single Sign-On, queue management, and reporting accuracy have been resolved, ensuring a more stable and efficient user experience."
+        }
+      }
+    ],
+    "2025-10-21": [
+      {
+        "kind": "Announcement",
+        "content": "**Advanced reporting dashboards version 3.40**\n\nWe've released version 3.40 of the advanced reporting dashboards.",
+        "summary": {
+          "title": "Advanced reporting dashboards",
+          "summary": "New version 3.40 of advanced reporting dashboards released."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**New Agent Preference table in the Agent Availability dashboard**\n\nWe've added a new **Agent Preference** table to the **Agent Availability** dashboard. This table can help you ensure that queues have properly skilled agents assigned to them. It can also help identify agents who improperly change their availability filters. For more information, see [Agent availability dashboard](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-agent-availability).",
+        "summary": {
+          "title": "Agent Preference Table Added",
+          "summary": "A new Agent Preference table is now available in the Agent Availability dashboard. This feature helps ensure correct agent skills are assigned to queues and identifies improper use of availability filters."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**New Audit Log dashboard**\n\nWe've added a new **Audit log** dashboard to help you track changes to the configuration of your instance. The dashboard tracks changes to the settings on the **Developer Settings** page, and displays information such as the type of change, who made the change, and when. This dashboard is similar in format to the advanced reporting dashboards, but you can't save it as a new dashboard. You access the **Audit Log** dashboard from the **Settings** menu. For more information, see [Audit log dashboard](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-audit-log).",
+        "summary": {
+          "title": "Audit Log Dashboard",
+          "summary": "Track configuration changes with the new Audit Log dashboard. See who changed what and when, with a format similar to advanced reporting."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "We addressed the following issues in this release:\n\n* Fixed an issue that caused the **Agent Activity Timeline** dashboard to display inaccurate or incomplete data.\n* Fixed an issue on the **Virtual Agent - Calls** dashboard where the **Virtual Agent Name** and **Queue** filters didn't display available values.\n* Fixed an issue on the **Dispositions - Chats** dashboard that prevented the **Agent Email**, **Agent ID**, and **Location** filters from displaying available values.\n* Fixed an issue on the **Virtual Agent - Chats** dashboard that prevented the **Virtual Agent Name** filter from displaying available values.\n* Fixed an issue on the **Virtual Agent - Chats** dashboard where the **Date** filter was incorrectly labeled **Time Range**.\n* Fixed an issue on the **Abandons - Calls** dashboard where **Customer ANI** values weren't appearing in the **Queue Abandon Details** and **IVR Abandon Details** tables despite the customer signing the waiver.\n* Fixed an issue on the **Agent Activity Timeline** dashboard where the **Agent Name** filter wasn't working properly.",
+        "summary": {
+          "title": "Agent Activity Timeline and Dashboard Filters",
+          "summary": "This release resolves several issues, including inaccurate data on the Agent Activity Timeline dashboard and problems with filters on various dashboards such as Virtual Agent - Calls, Dispositions - Chats, and Virtual Agent - Chats. Additionally, it corrects an issue with the Date filter's label and ensures Customer ANI values are displayed correctly in abandon details tables."
         }
       }
     ],

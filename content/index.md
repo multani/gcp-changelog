@@ -158,6 +158,7 @@
 - [Security Command Center](security-command-center/index.md)
 - [Sensitive Data Protection](sensitive-data-protection/index.md)
 - [Service Extensions](service-extensions/index.md)
+- [Service Usage](service-usage/index.md)
 - [Spanner](spanner/index.md)
 - [Speech-to-Text](speech-to-text/index.md)
 - [Text-to-Speech](text-to-speech/index.md)

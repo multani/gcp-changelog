@@ -1,5 +1,19 @@
 # AlloyDB for PostgreSQL
 
+## 2025-10-30
+
+### Feature
+
+AlloyDB offers enhanced backups
+([Preview](https://cloud.google.com/products#product-launch-stages))
+that integrate a cluster's backup operations with the Google Cloud
+[Backup and DR Service](https://cloud.google.com/backup-disaster-recovery/docs/concepts/backup-dr).
+This integration provides vaulted backups data with retention lock enforcement,
+and it uses the Backup and DR Service control plane for centralized policy
+management and advanced scheduling for AlloyDB clusters. For more information,
+see [Manage enhanced backups](https://cloud.google.com/alloydb/docs/backup/manage-enhanced-backups).
+
+---
 ## 2025-10-27
 
 ### Feature

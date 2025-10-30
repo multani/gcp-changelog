@@ -1,5 +1,25 @@
 # Apigee X
 
+## 2025-10-29
+
+### Announcement
+
+On October 29, 2025, we released an updated version of Apigee.
+
+### Feature
+
+**Support for API-product scoped quotas**
+
+You can now set quotas at the API product level to limit the number of requests
+all API proxies in the API product can process within a specified time frame.
+See
+[Configuring the quota policy to use API product quota settings](https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/quota-policy#configuring-the-quota-policy-to-use-api-product-quota-settings)
+for information and instructions.
+
+NOTE: API product-scoped quotas are not supported in Apigee hybrid
+at this time.
+
+---
 ## 2025-10-27
 
 ### Announcement

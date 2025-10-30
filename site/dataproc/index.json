@@ -19,6 +19,16 @@
         }
       }
     ],
+    "2025-10-20": [
+      {
+        "kind": "Announcement",
+        "content": "New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):\n\n* 2.0.152-debian10, 2.0.152-ubuntu18, 2.0.152-rocky8\n* 2.1.101-debian11, 2.1.101-ubuntu20, 2.1.101-ubuntu20-arm, 2.1.101-rocky8\n* 2.2.69-debian12, 2.2.69-ubuntu22, 2.2.69-ubuntu22-arm, 2.2.69-rocky9\n* 2.3.16-debian12, 2.3.16-ubuntu22, 2.3.16-ubuntu22-arm, 2.3.16-ml-ubuntu22, 2.3.16-rocky9",
+        "summary": {
+          "title": "New Dataproc image versions released",
+          "summary": "New image versions for Dataproc on Compute Engine are now available, including updates for 2.0, 2.1, 2.2, and 2.3 series. These updates support various operating systems like Debian, Ubuntu, and Rocky Linux, with some versions offering ARM support and specialized ML images."
+        }
+      }
+    ],
     "2025-10-16": [
       {
         "kind": "Announcement",
@@ -37,6 +47,24 @@
         }
       }
     ],
+    "2025-10-14": [
+      {
+        "kind": "Announcement",
+        "content": "New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):\n\n* 2.0.151-debian10, 2.0.151-ubuntu18, 2.0.151-rocky8\n* 2.1.100-debian11, 2.1.100-ubuntu20, 2.1.100-ubuntu20-arm, 2.1.100-rocky8\n* 2.2.68-debian12, 2.2.68-ubuntu22, 2.2.68-ubuntu22-arm, 2.2.68-rocky9\n* 2.3.15-debian12, 2.3.15-ubuntu22, 2.3.15-ubuntu22-arm, 2.3.15-ml-ubuntu22, 2.3.15-rocky9",
+        "summary": {
+          "title": "New Dataproc Image Versions Available",
+          "summary": "New subminor image versions for Dataproc on Compute Engine are now available, including updates for Debian, Ubuntu, and Rocky Linux."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed startup race condition in [multi-tenant clusters](https://docs.cloud.google.com/dataproc/docs/concepts/iam/sa-multi-tenancy) using the `dataproc:pip.packages` property that could cause authentication failures while starting Jupyter notebook kernels.",
+        "summary": {
+          "title": "Startup race condition fixed",
+          "summary": "The startup race condition in multi-tenant clusters has been fixed. This resolves authentication failures that could occur when starting Jupyter notebook kernels."
+        }
+      }
+    ],
     "2025-10-13": [
       {
         "kind": "Announcement",
@@ -48,6 +76,14 @@
       }
     ],
     "2025-10-06": [
+      {
+        "kind": "Changed",
+        "content": "**Serverless for Apache Spark:** Upgraded Apache Spark to version [3.5.3](https://spark.apache.org/releases/spark-release-3-5-3.html) in the latest [2.3](https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_23) Serverless for Apache Spark runtime versions.",
+        "summary": {
+          "title": "Upgraded Apache Spark runtime to 3.5.3",
+          "summary": "The Serverless for Apache Spark runtime has been upgraded to version 3.5.3. This update is available in the latest runtime version 2.3."
+        }
+      },
       {
         "kind": "Changed",
         "content": "**Dataproc on Compute Engine:** The following diagnostic properties are now enabled by default for new Dataproc clusters created with **2.0+** image versions:\n\n* `dataproc:diagnostic.capture.enabled`: Collects [checkpoint diagnostic data](https://docs.cloud.google.com/dataproc/docs/support/diagnose-clusters#checkpoint_diagnostic_data) in the cluster [temp bucket](https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/staging-bucket).\n* `dataproc:dataproc.logging.extended.enabled`: Collects logs for the [Knox, Zeppelin, Ranger-usersync, Jupyter\\_notebook, Jupyter\\_kernel\\_gateway components](https://cloud.google.com/dataproc/docs/concepts/components/overview) and the [Spark History-Server](https://docs.cloud.google.com/dataproc/docs/concepts/jobs/history-server) in [Cloud Logging](https://docs.cloud.google.com/dataproc/docs/guides/logging#cluster-logs).\n* `dataproc:dataproc.logging.syslog.enabled`: Collects VM syslogs in [Cloud Logging](https://docs.cloud.google.com/dataproc/docs/guides/logging#cluster-logs).\n\n**Note:** To disable any of these features, set the corresponding property to `false` during cluster creation.\n\nTo continue using the [Ops Agent](https://docs.cloud.google.com/stackdriver/docs/solutions/agents/ops-agent) initialization action [`opsagent.sh`](https://github.com/GoogleCloudDataproc/initialization-actions/blob/main/opsagent/opsagent.sh) to ingest syslogs from Dataproc cluster nodes, do one of the following:\n\n* **Recommended:** Use [`opsagent_nosyslog.sh`](https://github.com/GoogleCloudDataproc/initialization-actions/blob/main/opsagent/opsagent_nosyslog.sh) since\n  VM syslogs are emitted by default from Dataproc clusters.\n* Set the `dataproc:dataproc.logging.syslog.enabled=false` and continue using [`opsagent.sh`](https://github.com/GoogleCloudDataproc/initialization-actions/blob/main/opsagent/opsagent.sh)\n  to ingest syslogs.",
@@ -62,14 +98,6 @@
         "summary": {
           "title": "New Spark Versions",
           "summary": "Check out the latest updates to serverless Spark runtimes!"
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "**Serverless for Apache Spark:** Upgraded Apache Spark to version [3.5.3](https://spark.apache.org/releases/spark-release-3-5-3.html) in the latest [2.3](https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_23) Serverless for Apache Spark runtime versions.",
-        "summary": {
-          "title": "Upgraded Apache Spark runtime to 3.5.3",
-          "summary": "The Serverless for Apache Spark runtime has been upgraded to version 3.5.3. This update is available in the latest runtime version 2.3."
         }
       }
     ],

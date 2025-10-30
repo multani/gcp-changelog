@@ -2121,8 +2121,17 @@
 <p>A monthly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="go">Go</h3>
 <h3 id="changes-for-spanneradmindatabaseapiv1">Changes for <a href="https://github.com/googleapis/google-cloud-go/tree/main/spanner/admin/database/apiv1">spanner/admin/database/apiv1</a></h3>
-<h4 id="1850-2025-08-28"><a href="https://github.com/googleapis/google-cloud-go/compare/spanner/v1.84.1...spanner/v1.85.0">1.85.0</a> (2025-08-28)</h4>
+<h4 id="1860-2025-09-26"><a href="https://github.com/googleapis/google-cloud-go/compare/spanner/v1.85.1...spanner/v1.86.0">1.86.0</a> (2025-09-26)</h4>
 <h5 id="features">Features</h5>
+<ul>
+<li><strong>spanner:</strong> Support "readOnly" column tag parsing for Go struct operations (<a href="https://github.com/googleapis/google-cloud-go/issues/12895">#12895</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/003abca9172082ad1f2fbcc9b37639f389ade8ee">003abca</a>)</li>
+</ul>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>spanner:</strong> Use fresh context for rollback (<a href="https://github.com/googleapis/google-cloud-go/issues/12897">#12897</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/99c7eeb6ff95af9c967c78764069f752d3c26d34">99c7eeb</a>)</li>
+</ul>
+<h4 id="1850-2025-08-28"><a href="https://github.com/googleapis/google-cloud-go/compare/spanner/v1.84.1...spanner/v1.85.0">1.85.0</a> (2025-08-28)</h4>
+<h5 id="features_1">Features</h5>
 <ul>
 <li><strong>spanner:</strong> Enable multiplex sessions by default for all operations (<a href="https://github.com/googleapis/google-cloud-go/issues/12734">#12734</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/0491ba6f258600cc518a5a2c274caa0fb6105c8a">0491ba6</a>)</li>
 </ul>
@@ -2131,7 +2140,7 @@
 <li><strong>spanner:</strong> Improve mutationProto allocations and performance (<a href="https://github.com/googleapis/google-cloud-go/issues/12740">#12740</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/2a4add5405205fea315b17e4f70096d4be78b506">2a4add5</a>)</li>
 </ul>
 <h4 id="1851-2025-09-12"><a href="https://github.com/googleapis/google-cloud-go/compare/spanner/v1.85.0...spanner/v1.85.1">1.85.1</a> (2025-09-12)</h4>
-<h5 id="bug-fixes">Bug Fixes</h5>
+<h5 id="bug-fixes_1">Bug Fixes</h5>
 <ul>
 <li><strong>spanner:</strong> Disable afe_connectivity_error_count metric (<a href="https://github.com/googleapis/google-cloud-go/issues/12866">#12866</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/baab714b87311822a7c8c5202430a0cd7e11cc7d">baab714</a>)</li>
 </ul>
@@ -2221,11 +2230,11 @@
 <h3 id="java">Java</h3>
 <h3 id="changes-for-google-cloud-spanner">Changes for <a href="https://github.com/googleapis/java-spanner">google-cloud-spanner</a></h3>
 <h4 id="6990-2025-08-26"><a href="https://github.com/googleapis/java-spanner/compare/v6.98.1...v6.99.0">6.99.0</a> (2025-08-26)</h4>
-<h5 id="features_1">Features</h5>
+<h5 id="features_2">Features</h5>
 <ul>
 <li>Support read lock mode for R/W transactions (<a href="https://github.com/googleapis/java-spanner/issues/4010">#4010</a>) (<a href="https://github.com/googleapis/java-spanner/commit/7d752d686e638b6266aab3a5188c01641d2f9adc">7d752d6</a>)</li>
 </ul>
-<h5 id="bug-fixes_1">Bug Fixes</h5>
+<h5 id="bug-fixes_2">Bug Fixes</h5>
 <ul>
 <li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.62.0 (<a href="https://github.com/googleapis/java-spanner/commit/52c68db5c75f24a066c2e828ed79917c824f699b">52c68db</a>)</li>
 <li>GetCommitResponse() should return error if tx has not committed (<a href="https://github.com/googleapis/java-spanner/issues/4021">#4021</a>) (<a href="https://github.com/googleapis/java-spanner/commit/a2c179f2e7c19d295bdbf9cf1bbd1c5562dd9e21">a2c179f</a>)</li>
@@ -2235,11 +2244,11 @@
 <li>Update dependency com.google.cloud:sdk-platform-java-config to v3.52.0 (<a href="https://github.com/googleapis/java-spanner/issues/4024">#4024</a>) (<a href="https://github.com/googleapis/java-spanner/commit/7e3294f6d42bddb4cfff67334118f615c90c3bb7">7e3294f</a>)</li>
 </ul>
 <h4 id="61000-2025-09-11"><a href="https://github.com/googleapis/java-spanner/compare/v6.99.0...v6.100.0">6.100.0</a> (2025-09-11)</h4>
-<h5 id="features_2">Features</h5>
+<h5 id="features_3">Features</h5>
 <ul>
 <li>Read_lock_mode support for connections (<a href="https://github.com/googleapis/java-spanner/issues/4031">#4031</a>) (<a href="https://github.com/googleapis/java-spanner/commit/261abb4b9c5ff00fac2d816a31926b23264657c4">261abb4</a>)</li>
 </ul>
-<h5 id="bug-fixes_2">Bug Fixes</h5>
+<h5 id="bug-fixes_3">Bug Fixes</h5>
 <ul>
 <li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.62.1 (<a href="https://github.com/googleapis/java-spanner/commit/e9773a7aa27a414d56093b4e09e0f197a07b5980">e9773a7</a>)</li>
 <li>Disable afe_connectivity_error_count metric (<a href="https://github.com/googleapis/java-spanner/issues/4041">#4041</a>) (<a href="https://github.com/googleapis/java-spanner/commit/f89c1c0517ba6b895f405b0085b8df41aac952be">f89c1c0</a>)</li>
@@ -2254,17 +2263,17 @@
 <li>A comment for field <code>ranges</code> in message <code>.google.spanner.v1.KeySet</code> is changed (<a href="https://github.com/googleapis/java-spanner/commit/e9773a7aa27a414d56093b4e09e0f197a07b5980">e9773a7</a>)</li>
 </ul>
 <h4 id="61011-2025-09-26"><a href="https://github.com/googleapis/java-spanner/compare/v6.101.0...v6.101.1">6.101.1</a> (2025-09-26)</h4>
-<h5 id="bug-fixes_3">Bug Fixes</h5>
+<h5 id="bug-fixes_4">Bug Fixes</h5>
 <ul>
 <li>Potential NullPointerException in LocalConnectionChecker (<a href="https://github.com/googleapis/java-spanner/issues/4092">#4092</a>) (<a href="https://github.com/googleapis/java-spanner/commit/3b9f597ba60199a16556824568b24908ce938a69">3b9f597</a>)</li>
 </ul>
 <h4 id="61010-2025-09-26"><a href="https://github.com/googleapis/java-spanner/compare/v6.100.0...v6.101.0">6.101.0</a> (2025-09-26)</h4>
-<h5 id="features_3">Features</h5>
+<h5 id="features_4">Features</h5>
 <ul>
 <li>Add transaction_timeout connection property (<a href="https://github.com/googleapis/java-spanner/issues/4056">#4056</a>) (<a href="https://github.com/googleapis/java-spanner/commit/cdc52d49b39c57e7255f4e09fb33a41f4810397d">cdc52d4</a>)</li>
 <li>TPC support (<a href="https://github.com/googleapis/java-spanner/issues/4055">#4055</a>) (<a href="https://github.com/googleapis/java-spanner/commit/7625cce9ad48b14a1cff9c2ede86a066ea292bef">7625cce</a>)</li>
 </ul>
-<h5 id="bug-fixes_4">Bug Fixes</h5>
+<h5 id="bug-fixes_5">Bug Fixes</h5>
 <ul>
 <li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.62.2 (<a href="https://github.com/googleapis/java-spanner/commit/8d6cbf6bea9cbd823b8f0070516e34b4d8428e87">8d6cbf6</a>)</li>
 <li>Potential NullPointerException in Value#hashCode (<a href="https://github.com/googleapis/java-spanner/issues/4046">#4046</a>) (<a href="https://github.com/googleapis/java-spanner/commit/74abb341e2ea42bbf0a2de4ec3e3555335b5fd9f">74abb34</a>)</li>
@@ -2277,12 +2286,12 @@
 <h3 id="nodejs">Node.js</h3>
 <h3 id="changes-for-google-cloudspanner">Changes for <a href="https://github.com/googleapis/nodejs-spanner">@google-cloud/spanner</a></h3>
 <h4 id="820-2025-08-26"><a href="https://github.com/googleapis/nodejs-spanner/compare/v8.1.0...v8.2.0">8.2.0</a> (2025-08-26)</h4>
-<h5 id="features_4">Features</h5>
+<h5 id="features_5">Features</h5>
 <ul>
 <li><strong>spanner:</strong> Add support for multiplexed session for r/w transactions (<a href="https://github.com/googleapis/nodejs-spanner/issues/2351">#2351</a>) (<a href="https://github.com/googleapis/nodejs-spanner/commit/6a9f1a2b2c0dad955593571c71e9d4b6c9e7eeee">6a9f1a2</a>)</li>
 <li><strong>spanner:</strong> Support setting read lock mode (<a href="https://github.com/googleapis/nodejs-spanner/issues/2388">#2388</a>) (<a href="https://github.com/googleapis/nodejs-spanner/commit/bd66f61f3ecac65678d31cbc841c11cd0fb7c3da">bd66f61</a>)</li>
 </ul>
-<h5 id="bug-fixes_5">Bug Fixes</h5>
+<h5 id="bug-fixes_6">Bug Fixes</h5>
 <ul>
 <li><strong>deps:</strong> Add uuid to dependencies (<a href="https://github.com/googleapis/nodejs-spanner/issues/2376">#2376</a>) (<a href="https://github.com/googleapis/nodejs-spanner/commit/0b2060b4ad7302ab23ac757e79fe760e34e81083">0b2060b</a>)</li>
 <li><strong>deps:</strong> Update dependency @grpc/proto-loader to ^0.8.0 (<a href="https://github.com/googleapis/nodejs-spanner/issues/2354">#2354</a>) (<a href="https://github.com/googleapis/nodejs-spanner/commit/75dc4daf114cbc4eb4669ed6cb042af051cdce63">75dc4da</a>)</li>
@@ -2291,28 +2300,26 @@
 <li>Race condition among transactions when running parallely (<a href="https://github.com/googleapis/nodejs-spanner/issues/2369">#2369</a>) (<a href="https://github.com/googleapis/nodejs-spanner/commit/f8b6f6340f4f04e04213fdf0a9665d643f474eeb">f8b6f63</a>)</li>
 </ul>
 <h4 id="821-2025-09-12"><a href="https://github.com/googleapis/nodejs-spanner/compare/v8.2.0...v8.2.1">8.2.1</a> (2025-09-12)</h4>
-<h5 id="bug-fixes_6">Bug Fixes</h5>
+<h5 id="bug-fixes_7">Bug Fixes</h5>
 <ul>
 <li><strong>deps:</strong> Update dependency google-gax to v5.0.3 (<a href="https://github.com/googleapis/nodejs-spanner/issues/2371">#2371</a>) (<a href="https://github.com/googleapis/nodejs-spanner/commit/8a175e2e5cc8d0ed81faee7b24b59b5026758a59">8a175e2</a>)</li>
 <li>Disable afe_connectivity_error_count metric (<a href="https://github.com/googleapis/nodejs-spanner/commit/af72d707c8857d5596bd2b93830e52c8e152967f">af72d70</a>)</li>
+</ul>
+<h3 id="python">Python</h3>
+<h3 id="changes-for-google-cloud-spanner_1">Changes for <a href="https://github.com/googleapis/python-spanner">google-cloud-spanner</a></h3>
+<h4 id="3580-2025-09-10"><a href="https://github.com/googleapis/python-spanner/compare/v3.57.0...v3.58.0">3.58.0</a> (2025-09-10)</h4>
+<h5 id="features_6">Features</h5>
+<ul>
+<li><strong>spanner:</strong> Support setting read lock mode (<a href="https://github.com/googleapis/python-spanner/issues/1404">#1404</a>) (<a href="https://github.com/googleapis/python-spanner/commit/ee24c6ee2643bc74d52e9f0a924b80a830fa2697">ee24c6e</a>)</li>
+</ul>
+<h5 id="dependencies_3">Dependencies</h5>
+<ul>
+<li>Remove Python 3.7 and 3.8 as supported runtimes (<a href="https://github.com/googleapis/python-spanner/issues/1395">#1395</a>) (<a href="https://github.com/googleapis/python-spanner/commit/fc9379232224f56d29d2e36559a756c05a5478ff">fc93792</a>)</li>
 </ul>
 <hr />
 <h2 id="2025-09-29">2025-09-29</h2>
 <h3 id="feature_4">Feature</h3>
 <p>You can now create BigQuery <a href="https://cloud.google.com/bigquery/docs/materialized-views-create#spanner">non-incremental materialized views over Spanner data</a> to improve query performance by periodically caching results. This feature is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>
-<h3 id="libraries_1">Libraries</h3>
-<p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
-<h3 id="go_1">Go</h3>
-<h3 id="changes-for-spanneradmindatabaseapiv1_1">Changes for <a href="https://github.com/googleapis/google-cloud-go/tree/main/spanner/admin/database/apiv1">spanner/admin/database/apiv1</a></h3>
-<h4 id="1860-2025-09-26"><a href="https://github.com/googleapis/google-cloud-go/compare/spanner/v1.85.1...spanner/v1.86.0">1.86.0</a> (2025-09-26)</h4>
-<h5 id="features_5">Features</h5>
-<ul>
-<li><strong>spanner:</strong> Support "readOnly" column tag parsing for Go struct operations (<a href="https://github.com/googleapis/google-cloud-go/issues/12895">#12895</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/003abca9172082ad1f2fbcc9b37639f389ade8ee">003abca</a>)</li>
-</ul>
-<h5 id="bug-fixes_7">Bug Fixes</h5>
-<ul>
-<li><strong>spanner:</strong> Use fresh context for rollback (<a href="https://github.com/googleapis/google-cloud-go/issues/12897">#12897</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/99c7eeb6ff95af9c967c78764069f752d3c26d34">99c7eeb</a>)</li>
-</ul>
 <hr />
 <h2 id="2025-09-25">2025-09-25</h2>
 <h3 id="feature_5">Feature</h3>
@@ -2327,16 +2334,16 @@
 <h2 id="2025-09-22">2025-09-22</h2>
 <h3 id="feature_8">Feature</h3>
 <p>You can now run federated queries against <a href="https://cloud.google.com/spanner/docs/reference/postgresql/overview">PostgreSQL dialect databases in Spanner</a> using <a href="https://cloud.google.com/bigquery/docs/spanner-external-datasets">BigQuery external datasets</a> using GoogleSQL; this includes <a href="https://cloud.google.com/bigquery/docs/spanner-federated-queries#cross_region_queries">cross-region federated queries</a>. This feature is <a href="https://cloud.google.com/products/#product-launch-stages">generally available</a> (GA).</p>
-<h3 id="libraries_2">Libraries</h3>
+<h3 id="libraries_1">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
-<h3 id="python">Python</h3>
-<h3 id="changes-for-google-cloud-spanner_1">Changes for <a href="https://github.com/googleapis/python-spanner">google-cloud-spanner</a></h3>
-<h4 id="3580-2025-09-10"><a href="https://github.com/googleapis/python-spanner/compare/v3.57.0...v3.58.0">3.58.0</a> (2025-09-10)</h4>
-<h5 id="features_6">Features</h5>
+<h3 id="python_1">Python</h3>
+<h3 id="changes-for-google-cloud-spanner_2">Changes for <a href="https://github.com/googleapis/python-spanner">google-cloud-spanner</a></h3>
+<h4 id="3580-2025-09-10_1"><a href="https://github.com/googleapis/python-spanner/compare/v3.57.0...v3.58.0">3.58.0</a> (2025-09-10)</h4>
+<h5 id="features_7">Features</h5>
 <ul>
 <li><strong>spanner:</strong> Support setting read lock mode (<a href="https://github.com/googleapis/python-spanner/issues/1404">#1404</a>) (<a href="https://github.com/googleapis/python-spanner/commit/ee24c6ee2643bc74d52e9f0a924b80a830fa2697">ee24c6e</a>)</li>
 </ul>
-<h5 id="dependencies_3">Dependencies</h5>
+<h5 id="dependencies_4">Dependencies</h5>
 <ul>
 <li>Remove Python 3.7 and 3.8 as supported runtimes (<a href="https://github.com/googleapis/python-spanner/issues/1395">#1395</a>) (<a href="https://github.com/googleapis/python-spanner/commit/fc9379232224f56d29d2e36559a756c05a5478ff">fc93792</a>)</li>
 </ul>
@@ -2357,12 +2364,12 @@ help you explore Spanner capabilities such as its relational model, full-text se
 <p>For more information, see <a href="https://cloud.google.com/spanner/docs/create-manage-databases">Create and manage databases</a>.</p>
 <hr />
 <h2 id="2025-08-29">2025-08-29</h2>
-<h3 id="libraries_3">Libraries</h3>
+<h3 id="libraries_2">Libraries</h3>
 <p>A monthly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
-<h3 id="go_2">Go</h3>
-<h3 id="changes-for-spanneradmindatabaseapiv1_2">Changes for <a href="https://github.com/googleapis/google-cloud-go/tree/main/spanner/admin/database/apiv1">spanner/admin/database/apiv1</a></h3>
+<h3 id="go_1">Go</h3>
+<h3 id="changes-for-spanneradmindatabaseapiv1_1">Changes for <a href="https://github.com/googleapis/google-cloud-go/tree/main/spanner/admin/database/apiv1">spanner/admin/database/apiv1</a></h3>
 <h4 id="1840-2025-08-05"><a href="https://github.com/googleapis/google-cloud-go/compare/spanner/v1.83.0...spanner/v1.84.0">1.84.0</a> (2025-08-05)</h4>
-<h5 id="features_7">Features</h5>
+<h5 id="features_8">Features</h5>
 <ul>
 <li><strong>spanner/adapter:</strong> Add last field in AdaptMessageResponse for internal optimization usage (<a href="https://github.com/googleapis/google-cloud-go/commit/c574e287f49cc1c3b069b35d95b98da2bc9b948f">c574e28</a>)</li>
 <li><strong>spanner/admin/database:</strong> Proto changes for an internal api (<a href="https://github.com/googleapis/google-cloud-go/commit/eeb4b1fe8eb83b73ec31b0bd46e3704bdc0212c3">eeb4b1f</a>)</li>
@@ -2389,7 +2396,7 @@ help you explore Spanner capabilities such as its relational model, full-text se
 <li><strong>spanner:</strong> A comment for message <code>.google.spanner.v1.TransactionOptions</code> is changed (<a href="https://github.com/googleapis/google-cloud-go/commit/ac4970b5a6318dbfcdca7da5ee256852ca49ea23">ac4970b</a>)</li>
 </ul>
 <h4 id="1841-2025-08-06"><a href="https://github.com/googleapis/google-cloud-go/compare/spanner/v1.84.0...spanner/v1.84.1">1.84.1</a> (2025-08-06)</h4>
-<h5 id="features_8">Features</h5>
+<h5 id="features_9">Features</h5>
 <ul>
 <li><strong>spanner:</strong> Release 1.84.1 (<a href="https://github.com/googleapis/google-cloud-go/issues/12663">#12663</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/8b410ec689591a591aecb46831f2f50706cb973f">8b410ec</a>)</li>
 </ul>
@@ -2400,9 +2407,9 @@ help you explore Spanner capabilities such as its relational model, full-text se
 <p><strong>DO NOT USE</strong>
 This version is retracted due to https://github.com/googleapis/google-cloud-go/issues/12659, use version &gt;=v1.84.1</p>
 <h3 id="java_1">Java</h3>
-<h3 id="changes-for-google-cloud-spanner_2">Changes for <a href="https://github.com/googleapis/java-spanner">google-cloud-spanner</a></h3>
+<h3 id="changes-for-google-cloud-spanner_3">Changes for <a href="https://github.com/googleapis/java-spanner">google-cloud-spanner</a></h3>
 <h4 id="6980-2025-07-31"><a href="https://github.com/googleapis/java-spanner/compare/v6.97.1...v6.98.0">6.98.0</a> (2025-07-31)</h4>
-<h5 id="features_9">Features</h5>
+<h5 id="features_10">Features</h5>
 <ul>
 <li>Proto changes for an internal api (<a href="https://github.com/googleapis/java-spanner/commit/675e90b4582b4fc968118121e6c23ec98ee178e9">675e90b</a>)</li>
 <li><strong>spanner:</strong> A new field <code>snapshot_timestamp</code> is added to message <code>.google.spanner.v1.CommitResponse</code> (<a href="https://github.com/googleapis/java-spanner/commit/675e90b4582b4fc968118121e6c23ec98ee178e9">675e90b</a>)</li>
@@ -2413,7 +2420,7 @@ This version is retracted due to https://github.com/googleapis/google-cloud-go/i
 <ul>
 <li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.60.2 (<a href="https://github.com/googleapis/java-spanner/commit/675e90b4582b4fc968118121e6c23ec98ee178e9">675e90b</a>)</li>
 </ul>
-<h5 id="dependencies_4">Dependencies</h5>
+<h5 id="dependencies_5">Dependencies</h5>
 <ul>
 <li>Update dependency com.google.cloud:sdk-platform-java-config to v3.50.2 (<a href="https://github.com/googleapis/java-spanner/issues/4004">#4004</a>) (<a href="https://github.com/googleapis/java-spanner/commit/986c0e07fddecd51cd310a9759ce1d41c1f5c657">986c0e0</a>)</li>
 </ul>
@@ -2423,14 +2430,14 @@ This version is retracted due to https://github.com/googleapis/google-cloud-go/i
 <li>Add missing span.end calls for AsyncTransactionManager (<a href="https://github.com/googleapis/java-spanner/issues/4012">#4012</a>) (<a href="https://github.com/googleapis/java-spanner/commit/1a4adb4d70c3a3822fa6bda93d689f2dae1835fa">1a4adb4</a>)</li>
 <li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.61.0 (<a href="https://github.com/googleapis/java-spanner/commit/8156ef31d93932c14f9fdd13c8c5e5b7ce370ba5">8156ef3</a>)</li>
 </ul>
-<h5 id="dependencies_5">Dependencies</h5>
+<h5 id="dependencies_6">Dependencies</h5>
 <ul>
 <li>Update dependency com.google.cloud:sdk-platform-java-config to v3.51.0 (<a href="https://github.com/googleapis/java-spanner/issues/4013">#4013</a>) (<a href="https://github.com/googleapis/java-spanner/commit/4e90c29ce3447d14411368e45a39c7b0965cb40a">4e90c29</a>)</li>
 </ul>
 <h3 id="nodejs_1">Node.js</h3>
 <h3 id="changes-for-google-cloudspanner_1">Changes for <a href="https://github.com/googleapis/nodejs-spanner">@google-cloud/spanner</a></h3>
 <h4 id="810-2025-07-28"><a href="https://github.com/googleapis/nodejs-spanner/compare/v8.0.0...v8.1.0">8.1.0</a> (2025-07-28)</h4>
-<h5 id="features_10">Features</h5>
+<h5 id="features_11">Features</h5>
 <ul>
 <li>Add Custom OpenTelemetry Exporter in for Service Metrics (<a href="https://github.com/googleapis/nodejs-spanner/issues/2272">#2272</a>) (<a href="https://github.com/googleapis/nodejs-spanner/commit/610d1b989ba186c0758791343deaa7f683c4bd26">610d1b9</a>)</li>
 <li>Add methods from gax to cache proto root and process custom error details (<a href="https://github.com/googleapis/nodejs-spanner/issues/2330">#2330</a>) (<a href="https://github.com/googleapis/nodejs-spanner/commit/1b3931a799bdd052adc91703e59e1d0c83270065">1b3931a</a>)</li>
@@ -2456,10 +2463,10 @@ This version is retracted due to https://github.com/googleapis/google-cloud-go/i
 <ul>
 <li>Skip gRPC trailers for StreamingRead &amp; ExecuteStreamingSql (<a href="https://github.com/googleapis/nodejs-spanner/issues/2313">#2313</a>) (<a href="https://github.com/googleapis/nodejs-spanner/commit/8bd0781e8b434a421f0e0f3395439a5a86c7847c">8bd0781</a>)</li>
 </ul>
-<h3 id="python_1">Python</h3>
-<h3 id="changes-for-google-cloud-spanner_3">Changes for <a href="https://github.com/googleapis/python-spanner">google-cloud-spanner</a></h3>
+<h3 id="python_2">Python</h3>
+<h3 id="changes-for-google-cloud-spanner_4">Changes for <a href="https://github.com/googleapis/python-spanner">google-cloud-spanner</a></h3>
 <h4 id="3570-2025-08-14"><a href="https://github.com/googleapis/python-spanner/compare/v3.56.0...v3.57.0">3.57.0</a> (2025-08-14)</h4>
-<h5 id="features_11">Features</h5>
+<h5 id="features_12">Features</h5>
 <ul>
 <li>Support configuring logger in dbapi kwargs (<a href="https://github.com/googleapis/python-spanner/issues/1400">#1400</a>) (<a href="https://github.com/googleapis/python-spanner/commit/ffa5c9e627583ab0635dcaa5512b6e034d811d86">ffa5c9e</a>)</li>
 </ul>
@@ -2490,21 +2497,21 @@ This version is retracted due to https://github.com/googleapis/google-cloud-go/i
 <h2 id="2025-07-31">2025-07-31</h2>
 <h3 id="feature_17">Feature</h3>
 <p>You can use <a href="https://cloud.google.com/bigquery/docs/continuous-queries-introduction">continuous queries</a> to <a href="https://cloud.google.com/bigquery/docs/export-to-spanner">export BigQuery data into Spanner in real time</a>. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">preview</a>.</p>
-<h3 id="libraries_4">Libraries</h3>
+<h3 id="libraries_3">Libraries</h3>
 <p>A monthly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="java_2">Java</h3>
-<h3 id="changes-for-google-cloud-spanner_4">Changes for <a href="https://github.com/googleapis/java-spanner">google-cloud-spanner</a></h3>
+<h3 id="changes-for-google-cloud-spanner_5">Changes for <a href="https://github.com/googleapis/java-spanner">google-cloud-spanner</a></h3>
 <h4 id="6961-2025-06-30"><a href="https://github.com/googleapis/java-spanner/compare/v6.96.0...v6.96.1">6.96.1</a> (2025-06-30)</h4>
 <h5 id="bug-fixes_12">Bug Fixes</h5>
 <ul>
 <li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.59.0 (<a href="https://github.com/googleapis/java-spanner/commit/2836042217fe29bb967fe892bd6b492391ded95c">2836042</a>)</li>
 </ul>
-<h5 id="dependencies_6">Dependencies</h5>
+<h5 id="dependencies_7">Dependencies</h5>
 <ul>
 <li>Update dependency com.google.cloud:sdk-platform-java-config to v3.50.0 (<a href="https://github.com/googleapis/java-spanner/issues/3925">#3925</a>) (<a href="https://github.com/googleapis/java-spanner/commit/1372bbd82b7828629cbc407b78878469bc477977">1372bbd</a>)</li>
 </ul>
 <h4 id="6970-2025-07-10"><a href="https://github.com/googleapis/java-spanner/compare/v6.96.1...v6.97.0">6.97.0</a> (2025-07-10)</h4>
-<h5 id="features_12">Features</h5>
+<h5 id="features_13">Features</h5>
 <ul>
 <li>Next release from main branch is 6.97.0 (<a href="https://github.com/googleapis/java-spanner/issues/3984">#3984</a>) (<a href="https://github.com/googleapis/java-spanner/commit/5651f6160e1e655f118aa2e7f0203a47cd6914c0">5651f61</a>)</li>
 </ul>
@@ -2514,15 +2521,15 @@ This version is retracted due to https://github.com/googleapis/google-cloud-go/i
 <li>Return non-empty metadata for DataBoost queries (<a href="https://github.com/googleapis/java-spanner/issues/3936">#3936</a>) (<a href="https://github.com/googleapis/java-spanner/commit/79c06848c0ac4eff8410dd3bd63db8675c202d94">79c0684</a>)</li>
 </ul>
 <h4 id="6971-2025-07-15"><a href="https://github.com/googleapis/java-spanner/compare/v6.97.0...v6.97.1">6.97.1</a> (2025-07-15)</h4>
-<h5 id="dependencies_7">Dependencies</h5>
+<h5 id="dependencies_8">Dependencies</h5>
 <ul>
 <li>Update dependency com.google.cloud:sdk-platform-java-config to v3.50.1 (<a href="https://github.com/googleapis/java-spanner/issues/3992">#3992</a>) (<a href="https://github.com/googleapis/java-spanner/commit/69ffd7282220b8b12c6b9b64d8856ff88068ffa2">69ffd72</a>)</li>
 <li>Update googleapis/sdk-platform-java action to v2.60.1 (<a href="https://github.com/googleapis/java-spanner/issues/3926">#3926</a>) (<a href="https://github.com/googleapis/java-spanner/commit/7001b7faaff581e26ec81c4db2c99a1e8726d5eb">7001b7f</a>)</li>
 </ul>
-<h3 id="python_2">Python</h3>
-<h3 id="changes-for-google-cloud-spanner_5">Changes for <a href="https://github.com/googleapis/python-spanner">google-cloud-spanner</a></h3>
+<h3 id="python_3">Python</h3>
+<h3 id="changes-for-google-cloud-spanner_6">Changes for <a href="https://github.com/googleapis/python-spanner">google-cloud-spanner</a></h3>
 <h4 id="3560-2025-07-24"><a href="https://github.com/googleapis/python-spanner/compare/v3.55.0...v3.56.0">3.56.0</a> (2025-07-24)</h4>
-<h5 id="features_13">Features</h5>
+<h5 id="features_14">Features</h5>
 <ul>
 <li>Add support for multiplexed sessions - read/write (<a href="https://github.com/googleapis/python-spanner/issues/1389">#1389</a>) (<a href="https://github.com/googleapis/python-spanner/commit/ce3f2305cd5589e904daa18142fbfeb180f3656a">ce3f230</a>)</li>
 <li>Add support for multiplexed sessions (<a href="https://github.com/googleapis/python-spanner/issues/1383">#1383</a>) (<a href="https://github.com/googleapis/python-spanner/commit/21f5028c3fdf8b8632c1564efbd973b96711d03b">21f5028</a>)</li>
@@ -2555,12 +2562,12 @@ This version is retracted due to https://github.com/googleapis/google-cloud-go/i
 <a href="https://cloud.google.com/spanner/docs/client-side-metrics-descriptions">Client-side metrics descriptions</a>.</p>
 <h3 id="feature_20">Feature</h3>
 <p>To troubleshoot or understand your Spanner queries better, you can download and save your <a href="https://cloud.google.com/spanner/docs/query-execution-plans">query execution plan</a> as a JSON file. You can now use the content of this file to see a visualization of the query execution plan in Spanner Studio. For more information, see <a href="https://cloud.google.com/spanner/docs/tune-query-with-visualizer#visual-plan-tour">Take a tour of the query plan visualizer</a>.</p>
-<h3 id="libraries_5">Libraries</h3>
+<h3 id="libraries_4">Libraries</h3>
 <p>A monthly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
-<h3 id="go_3">Go</h3>
-<h3 id="changes-for-spanneradmindatabaseapiv1_3">Changes for <a href="https://github.com/googleapis/google-cloud-go/tree/main/spanner/admin/database/apiv1">spanner/admin/database/apiv1</a></h3>
+<h3 id="go_2">Go</h3>
+<h3 id="changes-for-spanneradmindatabaseapiv1_2">Changes for <a href="https://github.com/googleapis/google-cloud-go/tree/main/spanner/admin/database/apiv1">spanner/admin/database/apiv1</a></h3>
 <h4 id="1830-2025-06-27"><a href="https://github.com/googleapis/google-cloud-go/compare/spanner/v1.82.0...spanner/v1.83.0">1.83.0</a> (2025-06-27)</h4>
-<h5 id="features_14">Features</h5>
+<h5 id="features_15">Features</h5>
 <ul>
 <li><strong>spanner/spansql:</strong> Add support for TOKENIZE_JSON. (<a href="https://github.com/googleapis/google-cloud-go/issues/12338">#12338</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/72225a52c0f6bc6eac6d4e450dad0b566e79553f">72225a5</a>)</li>
 <li><strong>spanner/spansql:</strong> Support EXISTS in query parsing (<a href="https://github.com/googleapis/google-cloud-go/issues/12439">#12439</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/f5cb67b104e4d99196064fb4474e0644e90c9a00">f5cb67b</a>)</li>
@@ -2573,9 +2580,9 @@ This version is retracted due to https://github.com/googleapis/google-cloud-go/i
 <li><strong>spanner:</strong> Pointer type custom struct decoder (<a href="https://github.com/googleapis/google-cloud-go/issues/12496">#12496</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/ac3cafbac435a3ac98fd4693bac84a3f4a260c5b">ac3cafb</a>)</li>
 </ul>
 <h3 id="java_3">Java</h3>
-<h3 id="changes-for-google-cloud-spanner_6">Changes for <a href="https://github.com/googleapis/java-spanner">google-cloud-spanner</a></h3>
+<h3 id="changes-for-google-cloud-spanner_7">Changes for <a href="https://github.com/googleapis/java-spanner">google-cloud-spanner</a></h3>
 <h4 id="6950-2025-06-05"><a href="https://github.com/googleapis/java-spanner/compare/v6.94.0...v6.95.0">6.95.0</a> (2025-06-05)</h4>
-<h5 id="features_15">Features</h5>
+<h5 id="features_16">Features</h5>
 <ul>
 <li>Enable ALTS hard bound token in DirectPath (<a href="https://github.com/googleapis/java-spanner/issues/3904">#3904</a>) (<a href="https://github.com/googleapis/java-spanner/commit/2b0f2ff214f4b68dd5957bc4280edb713b77a763">2b0f2ff</a>)</li>
 <li>Enable grpc and afe metrics (<a href="https://github.com/googleapis/java-spanner/issues/3896">#3896</a>) (<a href="https://github.com/googleapis/java-spanner/commit/706f794f044c2cb1112cfdae6f379e5f2bc3f26f">706f794</a>)</li>
@@ -2586,18 +2593,18 @@ This version is retracted due to https://github.com/googleapis/google-cloud-go/i
 <ul>
 <li>Directpath_enabled attribute (<a href="https://github.com/googleapis/java-spanner/issues/3897">#3897</a>) (<a href="https://github.com/googleapis/java-spanner/commit/53bc510145921d00bc3df04aa4cf407179ed8d8e">53bc510</a>)</li>
 </ul>
-<h5 id="dependencies_8">Dependencies</h5>
+<h5 id="dependencies_9">Dependencies</h5>
 <ul>
 <li>Update dependency io.opentelemetry:opentelemetry-bom to v1.50.0 (<a href="https://github.com/googleapis/java-spanner/issues/3887">#3887</a>) (<a href="https://github.com/googleapis/java-spanner/commit/94b879c8c1848fa0b14dbe8cda8390cfe9e8fce6">94b879c</a>)</li>
 </ul>
 <h4 id="6951-2025-06-06"><a href="https://github.com/googleapis/java-spanner/compare/v6.95.0...v6.95.1">6.95.1</a> (2025-06-06)</h4>
-<h5 id="dependencies_9">Dependencies</h5>
+<h5 id="dependencies_10">Dependencies</h5>
 <ul>
 <li>Update dependency com.google.cloud:sdk-platform-java-config to v3.49.0 (<a href="https://github.com/googleapis/java-spanner/issues/3909">#3909</a>) (<a href="https://github.com/googleapis/java-spanner/commit/3de8502b98ebb90526fc2339e279f9b710816b3b">3de8502</a>)</li>
 <li>Update googleapis/sdk-platform-java action to v2.59.0 (<a href="https://github.com/googleapis/java-spanner/issues/3910">#3910</a>) (<a href="https://github.com/googleapis/java-spanner/commit/aed8bd6d5a0b1e0dfab345e0de68f285e8b8aedb">aed8bd6</a>)</li>
 </ul>
 <h4 id="6960-2025-06-27"><a href="https://github.com/googleapis/java-spanner/compare/v6.95.1...v6.96.0">6.96.0</a> (2025-06-27)</h4>
-<h5 id="features_16">Features</h5>
+<h5 id="features_17">Features</h5>
 <ul>
 <li>Allow JDBC to configure directpath for connection (<a href="https://github.com/googleapis/java-spanner/issues/3929">#3929</a>) (<a href="https://github.com/googleapis/java-spanner/commit/d754f1f99294d86ec881583f217fa09f291a3d7a">d754f1f</a>)</li>
 <li>Support getOrNull and getOrDefault in Struct (<a href="https://github.com/googleapis/java-spanner/issues/3914">#3914</a>) (<a href="https://github.com/googleapis/java-spanner/commit/1dc5a3ec0ca9ea530e8691df5c2734c0a1ece559">1dc5a3e</a>)</li>
@@ -2628,12 +2635,12 @@ This version is retracted due to https://github.com/googleapis/google-cloud-go/i
 <h2 id="2025-06-02">2025-06-02</h2>
 <h3 id="feature_24">Feature</h3>
 <p>BigQuery now supports using <a href="https://cloud.google.com/bigquery/docs/spanner-external-datasets">Spanner external datasets</a> with <a href="https://cloud.google.com/bigquery/docs/authorized-views">authorized views</a>, <a href="https://cloud.google.com/bigquery/docs/authorized-routines">authorized routines</a>, and <a href="https://cloud.google.com/bigquery/docs/create-cloud-resource-connection">Cloud resource connections</a>. This feature is <a href="https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages">generally available</a> (GA).</p>
-<h3 id="libraries_6">Libraries</h3>
+<h3 id="libraries_5">Libraries</h3>
 <p>A monthly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
-<h3 id="go_4">Go</h3>
-<h3 id="changes-for-spanneradmindatabaseapiv1_4">Changes for <a href="https://github.com/googleapis/google-cloud-go/tree/main/spanner/admin/database/apiv1">spanner/admin/database/apiv1</a></h3>
+<h3 id="go_3">Go</h3>
+<h3 id="changes-for-spanneradmindatabaseapiv1_3">Changes for <a href="https://github.com/googleapis/google-cloud-go/tree/main/spanner/admin/database/apiv1">spanner/admin/database/apiv1</a></h3>
 <h4 id="1810-2025-05-09"><a href="https://github.com/googleapis/google-cloud-go/compare/spanner/v1.80.0...spanner/v1.81.0">1.81.0</a> (2025-05-09)</h4>
-<h5 id="features_17">Features</h5>
+<h5 id="features_18">Features</h5>
 <ul>
 <li><strong>spanner/spansql:</strong> Add support for DROP SEARCH INDEX and ALTER SEARCH INDEX (<a href="https://github.com/googleapis/google-cloud-go/issues/11961">#11961</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/952cd7fd419af9eb74f5d30a111ae936094b0645">952cd7f</a>)</li>
 </ul>
@@ -2642,17 +2649,17 @@ This version is retracted due to https://github.com/googleapis/google-cloud-go/i
 <li><strong>spanner:</strong> Row mismatch in SelectAll using custom type (<a href="https://github.com/googleapis/google-cloud-go/issues/12222">#12222</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/ce6a23a45fe66cc12e1b5014d2d45f1968ddc067">ce6a23a</a>)</li>
 </ul>
 <h4 id="1811-2025-05-15"><a href="https://github.com/googleapis/google-cloud-go/compare/spanner/v1.81.0...spanner/v1.81.1">1.81.1</a> (2025-05-15)</h4>
-<h5 id="features_18">Features</h5>
+<h5 id="features_19">Features</h5>
 <ul>
 <li><strong>spanner:</strong> Add support of AFE and GRPC metrics in client-side metrics (<a href="https://github.com/googleapis/google-cloud-go/issues/12067">#12067</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/7b77038eb4afe31b1a0d42f7c35aeabce0f48810">7b77038</a>)</li>
 </ul>
 <h4 id="1820-2025-05-20"><a href="https://github.com/googleapis/google-cloud-go/compare/spanner/v1.81.1...spanner/v1.82.0">1.82.0</a> (2025-05-20)</h4>
-<h5 id="features_19">Features</h5>
+<h5 id="features_20">Features</h5>
 <ul>
 <li><strong>spanner/admin/database:</strong> Add throughput_mode to UpdateDatabaseDdlRequest to be used by Spanner Migration Tool. See https (<a href="https://github.com/googleapis/google-cloud-go/issues/12287">#12287</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/2a9d8eec71a7e6803eb534287c8d2f64903dcddd">2a9d8ee</a>)</li>
 </ul>
 <h3 id="java_4">Java</h3>
-<h3 id="changes-for-google-cloud-spanner_7">Changes for <a href="https://github.com/googleapis/java-spanner">google-cloud-spanner</a></h3>
+<h3 id="changes-for-google-cloud-spanner_8">Changes for <a href="https://github.com/googleapis/java-spanner">google-cloud-spanner</a></h3>
 <h4 id="6920-2025-04-29"><a href="https://github.com/googleapis/java-spanner/compare/v6.91.1...v6.92.0">6.92.0</a> (2025-04-29)</h4>
 <ul>
 <li><strong>spanner:</strong> Do not export metrics during shutdown if prev export was less than 30 seconds ago (<a href="https://github.com/googleapis/google-cloud-go/issues/12266">#12266</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/8ad75111433be5424f9fff8aafd73463cb467734">8ad7511</a>)</li>
@@ -2660,7 +2667,7 @@ This version is retracted due to https://github.com/googleapis/google-cloud-go/i
   ### Changes for <a href="https://github.com/googleapis/java-spanner">google-cloud-spanner</a>
   #### <a href="https://github.com/googleapis/java-spanner/compare/v6.93.0...v6.94.0">6.94.0</a> (2025-05-21)</li>
 </ul>
-<h5 id="features_20">Features</h5>
+<h5 id="features_21">Features</h5>
 <ul>
 <li>[Internal] client-side metrics for afe latency and connectivity error (<a href="https://github.com/googleapis/java-spanner/issues/3819">#3819</a>) (<a href="https://github.com/googleapis/java-spanner/commit/a8dba0a83939fdbbc324f0a7aa6c44180462fa3a">a8dba0a</a>)</li>
 <li>Support begin with AbortedException for manager interface (<a href="https://github.com/googleapis/java-spanner/issues/3835">#3835</a>) (<a href="https://github.com/googleapis/java-spanner/commit/578311693bed836c8916f4b4ffa0782a468c1af3">5783116</a>)</li>
@@ -2677,7 +2684,7 @@ This version is retracted due to https://github.com/googleapis/google-cloud-go/i
 <li>Non-ASCII Unicode characters in code (<a href="https://github.com/googleapis/java-spanner/issues/3844">#3844</a>) (<a href="https://github.com/googleapis/java-spanner/commit/85a0820505889ae6482a9e4f845cd53430dd6b44">85a0820</a>)</li>
 <li>Only close and return sessions once (<a href="https://github.com/googleapis/java-spanner/issues/3846">#3846</a>) (<a href="https://github.com/googleapis/java-spanner/commit/32b2373d62cac3047d9686c56af278c706d7c488">32b2373</a>)</li>
 </ul>
-<h5 id="dependencies_10">Dependencies</h5>
+<h5 id="dependencies_11">Dependencies</h5>
 <ul>
 <li>Update dependency com.google.cloud:sdk-platform-java-config to v3.46.2 (<a href="https://github.com/googleapis/java-spanner/issues/3836">#3836</a>) (<a href="https://github.com/googleapis/java-spanner/commit/2ee7f971f3374b01d22e5a7f8f2483cf60c3363d">2ee7f97</a>)</li>
 </ul>
@@ -2703,7 +2710,7 @@ This version is retracted due to https://github.com/googleapis/google-cloud-go/i
 <li>remove the arrify package (<a href="https://github.com/googleapis/nodejs-spanner/issues/2292">#2292</a>)</li>
 <li>migrate to Node 18 (<a href="https://github.com/googleapis/nodejs-spanner/issues/2271">#2271</a>)</li>
 </ul>
-<h5 id="features_21">Features</h5>
+<h5 id="features_22">Features</h5>
 <ul>
 <li>Add promise based signatures for createQueryPartitions (<a href="https://github.com/googleapis/nodejs-spanner/issues/2284">#2284</a>) (<a href="https://github.com/googleapis/nodejs-spanner/commit/255d8a6a5749b6a05cd87dd7444cab7dd75d3e42">255d8a6</a>)</li>
 <li>Add promise based signatures on createReadPartitions (<a href="https://github.com/googleapis/nodejs-spanner/issues/2300">#2300</a>) (<a href="https://github.com/googleapis/nodejs-spanner/commit/7b8a1f70f0de3aa5886a2cde9325c9a36222a311">7b8a1f7</a>)</li>
@@ -2720,10 +2727,10 @@ This version is retracted due to https://github.com/googleapis/google-cloud-go/i
 <li>Migrate to Node 18 (<a href="https://github.com/googleapis/nodejs-spanner/issues/2271">#2271</a>) (<a href="https://github.com/googleapis/nodejs-spanner/commit/cab3f229ccb2189bd5af0c25a3006b553f8a5453">cab3f22</a>)</li>
 <li>Remove the arrify package (<a href="https://github.com/googleapis/nodejs-spanner/issues/2292">#2292</a>) (<a href="https://github.com/googleapis/nodejs-spanner/commit/e8f5ca15125d570949769e6e66f0d911cb21f58d">e8f5ca1</a>)</li>
 </ul>
-<h3 id="python_3">Python</h3>
-<h3 id="changes-for-google-cloud-spanner_8">Changes for <a href="https://github.com/googleapis/python-spanner">google-cloud-spanner</a></h3>
+<h3 id="python_4">Python</h3>
+<h3 id="changes-for-google-cloud-spanner_9">Changes for <a href="https://github.com/googleapis/python-spanner">google-cloud-spanner</a></h3>
 <h4 id="3540-2025-04-28"><a href="https://github.com/googleapis/python-spanner/compare/v3.53.0...v3.54.0">3.54.0</a> (2025-04-28)</h4>
-<h5 id="features_22">Features</h5>
+<h5 id="features_23">Features</h5>
 <ul>
 <li>Add interval type support (<a href="https://github.com/googleapis/python-spanner/issues/1340">#1340</a>) (<a href="https://github.com/googleapis/python-spanner/commit/6ca9b43c3038eca1317c7c9b7e3543b5f1bc68ad">6ca9b43</a>)</li>
 <li>Add sample for pre-split feature (<a href="https://github.com/googleapis/python-spanner/issues/1333">#1333</a>) (<a href="https://github.com/googleapis/python-spanner/commit/ca76108809174e4f3eea38d7ac2463d9b4c73304">ca76108</a>)</li>
@@ -2735,7 +2742,7 @@ This version is retracted due to https://github.com/googleapis/google-cloud-go/i
 <li>Improve client-side regex statement parser (<a href="https://github.com/googleapis/python-spanner/issues/1328">#1328</a>) (<a href="https://github.com/googleapis/python-spanner/commit/b3c259deec817812fd8e4940faacf4a927d0d69c">b3c259d</a>)</li>
 </ul>
 <h4 id="3550-2025-05-28"><a href="https://github.com/googleapis/python-spanner/compare/v3.54.0...v3.55.0">3.55.0</a> (2025-05-28)</h4>
-<h5 id="features_23">Features</h5>
+<h5 id="features_24">Features</h5>
 <ul>
 <li>Add a <code>last</code> field in the <code>PartialResultSet</code> (<a href="https://github.com/googleapis/python-spanner/commit/d532d57fd5908ecd7bc9dfff73695715cc4b1ebe">d532d57</a>)</li>
 <li>Add support for multiplexed sessions (<a href="https://github.com/googleapis/python-spanner/issues/1381">#1381</a>) (<a href="https://github.com/googleapis/python-spanner/commit/97d7268ac12a57d9d116ee3d9475580e1e7e07ae">97d7268</a>)</li>

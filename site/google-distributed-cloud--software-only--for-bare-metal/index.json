@@ -1,6 +1,32 @@
 {
   "name": "Google Distributed Cloud (software only) for bare metal",
   "entries": {
+    "2025-10-29": [
+      {
+        "kind": "Announcement",
+        "content": "Google Distributed Cloud for bare metal 1.32.600-gke.53 is now available for\n[download](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads).\nTo upgrade, see [Upgrade\nclusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade).\nGoogle Distributed Cloud for bare metal 1.32.600-gke.53 runs on Kubernetes\nv1.32.9-gke.200.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for installations or upgrades with the [GKE On-Prem API\nclients](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools):\nthe Google Cloud console, the gcloud CLI, and Terraform.\n\nIf you use a third-party storage vendor, check the [Ready storage\npartners](https://docs.cloud.google.com/anthos/docs/resources/partner-storage)\ndocument to make sure the storage vendor has already passed the qualification\nfor this release of Google Distributed Cloud for bare metal.",
+        "summary": {
+          "title": "Google Distributed Cloud for bare metal 1.32.600-gke.53 Now Available",
+          "summary": "Google Distributed Cloud for bare metal 1.32.600-gke.53 has been released. This version runs on Kubernetes v1.32.9-gke.200. Upgrade instructions and compatibility information for storage vendors are available."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.32.600-gke.53:\n\n* Fixed the `etcd-cleanup` job timeout issue caused by the use of incorrect certificates.\n* Fixed vulnerabilities listed in [Vulnerability\n  fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).",
+        "summary": {
+          "title": "Fixed etcd-cleanup job timeout and vulnerabilities",
+          "summary": "The etcd-cleanup job timeout issue caused by incorrect certificates has been resolved. Additionally, vulnerabilities listed in the official documentation have been fixed."
+        }
+      },
+      {
+        "kind": "Issue",
+        "content": "For information about the latest known issues, see [Google Distributed Cloud for\nbare metal known\nissues](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues)\nin the Troubleshooting section.",
+        "summary": {
+          "title": "Known Issues",
+          "summary": "Refer to the Google Distributed Cloud for bare metal known issues page for the latest information."
+        }
+      }
+    ],
     "2025-10-15": [
       {
         "kind": "Announcement",

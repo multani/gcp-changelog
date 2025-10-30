@@ -1,5 +1,19 @@
 # Cloud Load Balancing
 
+## 2025-10-29
+
+### Feature
+
+You can specify a custom ephemeral `/96` IPv6 address range when creating a
+regional IPv6 forwarding rule. For more information, see the following:
+
+* [Internal passthrough Network Load Balancer overview](https://docs.cloud.google.com/load-balancing/docs/internal)
+* [Backend service-based external passthrough Network Load Balancer overview](https://docs.cloud.google.com/load-balancing/docs/network/networklb-backend-service)
+* [Protocol forwarding overview](https://docs.cloud.google.com/load-balancing/docs/protocol-forwarding)
+
+This feature is in **General availability**.
+
+---
 ## 2025-10-28
 
 ### Feature

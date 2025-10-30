@@ -1,5 +1,42 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2025-10-29
+
+### Announcement
+
+Google Distributed Cloud for bare metal 1.32.600-gke.53 is now available for
+[download](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads).
+To upgrade, see [Upgrade
+clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade).
+Google Distributed Cloud for bare metal 1.32.600-gke.53 runs on Kubernetes
+v1.32.9-gke.200.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the [GKE On-Prem API
+clients](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools):
+the Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the [Ready storage
+partners](https://docs.cloud.google.com/anthos/docs/resources/partner-storage)
+document to make sure the storage vendor has already passed the qualification
+for this release of Google Distributed Cloud for bare metal.
+
+### Fixed
+
+The following issues were fixed in 1.32.600-gke.53:
+
+* Fixed the `etcd-cleanup` job timeout issue caused by the use of incorrect certificates.
+* Fixed vulnerabilities listed in [Vulnerability
+  fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
+
+### Issue
+
+For information about the latest known issues, see [Google Distributed Cloud for
+bare metal known
+issues](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues)
+in the Troubleshooting section.
+
+---
 ## 2025-10-15
 
 ### Announcement

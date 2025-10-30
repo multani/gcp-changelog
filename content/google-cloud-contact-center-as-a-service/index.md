@@ -12,13 +12,13 @@ Here are the pre-release notes for version 3.40 of the advanced reporting dashbo
 
 **New Agent Preference table in the Agent Availability dashboard**
 
-We've added a new **Agent Preference** table to the **Agent Availability** dashboard. This table can help you ensure that queues have properly skilled agents assigned to them. It can also help identify agents who improperly change their availability filters.
+We've added a new **Agent Preference** table to the **Agent Availability** dashboard. This table can help you ensure that queues have properly skilled agents assigned to them. It can also help identify agents who improperly change their availability filters. For more information, see [Agent availability dashboard](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-agent-availability).
 
 ### Feature
 
 **New Audit Log dashboard**
 
-We've added a new **Audit log** dashboard to help you track changes to the configuration of your instance. The dashboard tracks changes to the settings on the **Developer Settings** page, and displays information such as the type of change, who made the change, and when. This dashboard is similar in format to the advanced reporting dashboards, but you can't save it as a new dashboard. You access the **Audit Log** dashboard from the **Settings** menu.
+We've added a new **Audit log** dashboard to help you track changes to the configuration of your instance. The dashboard tracks changes to the settings on the **Developer Settings** page, and displays information such as the type of change, who made the change, and when. This dashboard is similar in format to the advanced reporting dashboards, but you can't save it as a new dashboard. You access the **Audit Log** dashboard from the **Settings** menu. For more information, see [Audit log dashboard](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-audit-log).
 
 ### Fixed
 
@@ -31,6 +31,7 @@ The following issues were addressed in this release:
 * Fixed an issue on the **Virtual Agent - Chats** dashboard where the **Date** filter was incorrectly labeled **Time Range**.
 * Fixed an issue on the **Abandons - Calls** dashboard where **Customer ANI** values weren't appearing in the **Queue Abandon Details** and **IVR Abandon Details** tables despite the customer signing the waiver.
 * Fixed an issue on the **Agent Activity Timeline** dashboard where the **Agent Name** filter wasn't working properly.
+* Fixed an issue in advanced reporting where the queue groups dashboard failed to display data for users with a custom role assigned to a queue or queue group.
 
 ---
 ## 2025-10-15

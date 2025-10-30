@@ -17,6 +17,18 @@ In order to use Lightning Engine, submit your jobs in the Premium tier. Under Li
 For backward compatibility, the legacy property that was used to enable NQE `spark.dataproc.runtimeEngine=native` will continue to be honored in the existing runtimes 1.2, 2.2 and 2.3, but it's not supported in future releases (3.0+ runtimes).
 
 ---
+## 2025-10-20
+
+### Announcement
+
+New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):
+
+* 2.0.152-debian10, 2.0.152-ubuntu18, 2.0.152-rocky8
+* 2.1.101-debian11, 2.1.101-ubuntu20, 2.1.101-ubuntu20-arm, 2.1.101-rocky8
+* 2.2.69-debian12, 2.2.69-ubuntu22, 2.2.69-ubuntu22-arm, 2.2.69-rocky9
+* 2.3.16-debian12, 2.3.16-ubuntu22, 2.3.16-ubuntu22-arm, 2.3.16-ml-ubuntu22, 2.3.16-rocky9
+
+---
 ## 2025-10-16
 
 ### Announcement
@@ -30,6 +42,22 @@ New [Serverless for Apache Spark runtime versions](https://cloud.google.com/data
 **Dataproc on Compute Engine**: The default image version of premium tier clusters is now **2.3**.
 
 ---
+## 2025-10-14
+
+### Announcement
+
+New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):
+
+* 2.0.151-debian10, 2.0.151-ubuntu18, 2.0.151-rocky8
+* 2.1.100-debian11, 2.1.100-ubuntu20, 2.1.100-ubuntu20-arm, 2.1.100-rocky8
+* 2.2.68-debian12, 2.2.68-ubuntu22, 2.2.68-ubuntu22-arm, 2.2.68-rocky9
+* 2.3.15-debian12, 2.3.15-ubuntu22, 2.3.15-ubuntu22-arm, 2.3.15-ml-ubuntu22, 2.3.15-rocky9
+
+### Fixed
+
+Fixed startup race condition in [multi-tenant clusters](https://docs.cloud.google.com/dataproc/docs/concepts/iam/sa-multi-tenancy) using the `dataproc:pip.packages` property that could cause authentication failures while starting Jupyter notebook kernels.
+
+---
 ## 2025-10-13
 
 ### Announcement
@@ -38,6 +66,10 @@ New [Serverless for Apache Spark runtime versions](https://cloud.google.com/data
 
 ---
 ## 2025-10-06
+
+### Changed
+
+**Serverless for Apache Spark:** Upgraded Apache Spark to version [3.5.3](https://spark.apache.org/releases/spark-release-3-5-3.html) in the latest [2.3](https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_23) Serverless for Apache Spark runtime versions.
 
 ### Changed
 
@@ -62,10 +94,6 @@ New [Serverless for Apache Spark runtime versions](https://docs.cloud.google.com
 
 * 2.3.13
 * 3.0.0-RC5
-
-### Changed
-
-**Serverless for Apache Spark:** Upgraded Apache Spark to version [3.5.3](https://spark.apache.org/releases/spark-release-3-5-3.html) in the latest [2.3](https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_23) Serverless for Apache Spark runtime versions.
 
 ---
 ## 2025-10-03

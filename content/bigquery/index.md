@@ -1,5 +1,18 @@
 # BigQuery
 
+## 2025-10-29
+
+### Feature
+
+You can now [group
+reservations](https://docs.cloud.google.com/bigquery/docs/reservations-tasks#prioritize_idle_slots_with_reservation_groups)
+together to prioritize idle slot sharing within the group. Reservations within a
+reservation group share idle slots with each other before making them available
+to other reservations in the project, giving you more control over slot
+allocation for high-priority workloads. This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2025-10-28
 
 ### Feature
@@ -89,6 +102,13 @@ BigQuery. To enroll in conversational analytics early access, fill out the
 ---
 ## 2025-10-22
 
+### Issue
+
+Support for
+[table parameters in table-value functions (TVFs)](https://docs.cloud.google.com/bigquery/docs/table-functions#table_parameters)
+has been temporarily disabled. We are working to restore this feature as soon
+as possible.
+
 ### Feature
 
 You can now use custom constraints with Organization Policy to provide more
@@ -97,13 +117,6 @@ resources. For more information, see
 [Manage Sharing data exchanges and listings using custom constraints](https://docs.cloud.google.com/bigquery/docs/analytics-hub-custom-constraints).
 This feature is in
 [preview](https://cloud.google.com/products#product-launch-stages).
-
-### Issue
-
-Support for
-[table parameters in table-value functions (TVFs)](https://docs.cloud.google.com/bigquery/docs/table-functions#table_parameters)
-has been temporarily disabled. We are working to restore this feature as soon
-as possible.
 
 ### Feature
 

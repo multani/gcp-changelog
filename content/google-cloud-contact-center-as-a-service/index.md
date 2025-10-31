@@ -105,6 +105,8 @@ We've added the following five variables for custom lookup URLs:
 * **SESSION\_ID**: the session ID
 * **CUSTOM\_AGENT\_ID**: an optional agent ID
 
+For more information, see [Custom lookup URL configuration](https://docs.cloud.google.com/contact-center/ccai-platform/docs/custom-crm#custom_lookup_url_configuration).
+
 ### Feature
 
 **Agent desktop maintains state after refresh**
@@ -119,11 +121,13 @@ Agents can now search for email sessions by email address and name in the email 
 
 User experience change: The search pane in the email adapter includes two new fields: **Email Address** and **Name**.
 
+For more information, see [Search for emails](https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-adapter#search-for-emails).
+
 ### Feature
 
 **Customize the color of the Start Screen Share button**
 
-You can now control the color of the **Start Screen Share** button to match the color palette of your brand.
+You can now control the color of the **Start Screen Share** button to match the color palette of your brand. For more information, see [Customize the Start Screen Share button](https://docs.cloud.google.com/contact-center/ccai-platform/docs/cobrowse#customize-start-screen-share-button).
 
 ### Feature
 

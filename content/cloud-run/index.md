@@ -1,5 +1,15 @@
 # Cloud Run
 
+## 2025-10-30
+
+### Feature
+
+For Cloud Run source deployed services and functions with [GPU enabled](https://docs.cloud.google.com/run/docs/configuring/services/gpu), Cloud Run defaults to using Cloud Build's `e2-highcpu-8 machine` type for
+the build process when using the gcloud CLI or the Google Cloud console. This
+change allows for higher CPU support and faster build times, and also leads to a
+moderate increase in the overall cost of your service (GA).
+
+---
 ## 2025-10-21
 
 ### Feature

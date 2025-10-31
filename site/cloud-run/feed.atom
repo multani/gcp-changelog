@@ -2,9 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Run</title>
   <subtitle>Changelog for Google Cloud product: Cloud Run</subtitle>
-  <updated>2025-10-21T00:00:00+00:00</updated>
+  <updated>2025-10-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-run</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-run/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-run:2025-10-30:feature:0</id>
+    <published>2025-10-30T00:00:00+00:00</published>
+    <updated>2025-10-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>For Cloud Run source deployed services and functions with <a href="https://docs.cloud.google.com/run/docs/configuring/services/gpu">GPU enabled</a>, Cloud Run defaults to using Cloud Build's <code>e2-highcpu-8 machine</code> type for
+the build process when using the gcloud CLI or the Google Cloud console. This
+change allows for higher CPU support and faster build times, and also leads to a
+moderate increase in the overall cost of your service (GA).</p>]]></content>
+    <summary>Cloud Run now uses a higher CPU machine type for builds on GPU-enabled services, leading to faster build times.</summary>
+    <title>Feature: GPU support for Cloud Run builds</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

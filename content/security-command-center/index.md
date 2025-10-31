@@ -1,5 +1,19 @@
 # Security Command Center
 
+## 2025-10-30
+
+### Feature
+
+In addition to the Enterprise service tier,
+[Issues](https://docs.cloud.google.com/security-command-center/docs/issues-overview) are available on the Security
+Command Center Premium service tier at the organization level. This update includes capabilities such as
+[Toxic Combinations,
+Chokepoints](https://docs.cloud.google.com/security-command-center/docs/toxic-combinations-overview), and [Graph Search](https://docs.cloud.google.com/security-command-center/docs/graph-search)
+([Preview](https://cloud.google.com/products#product-launch-stages)). The
+console navigation has been updated to reflect an **Issues** page for Premium
+tier users.
+
+---
 ## 2025-10-21
 
 ### Changed

@@ -1,5 +1,54 @@
 # Google SecOps SIEM
 
+## 2025-10-30
+
+### Feature
+
+**YARA-L functions**
+
+The following new YARA-L functions are now generally available:
+
+* [strings.ends\_with](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#stringsends_with):
+  Takes two strings (value, suffix) and returns true if the suffix is
+  non-empty and at end-of-value.
+* [strings.split](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#stringssplit): Splits
+  string value using a delimiter argument (by default, a comma).
+* [window.range](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#windowrange): Returns the
+  range of the values input values found.
+
+### Announcement
+
+**Upgraded Chronicle API ingestion methods from alpha to beta**
+
+We've upgraded the Chronicle API ingestion methods from alpha to beta. This upgrade signals API stability and functional completeness, unblocking customer and partner adoption for production integrations.
+
+For more information, see
+[Ingestion methods](https://cloud.google.com/chronicle/docs/reference/ingestion-methods).
+
+### Feature
+
+**YARA-L functions**
+
+The following new YARA-L functions are now generally available:
+
+* [strings.ends\_with](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#stringsends_with):
+  Takes two strings (value, suffix) and returns true if the suffix is
+  non-empty and at end-of-value.
+* [strings.split](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#stringssplit): Splits
+  string value using a delimiter argument (by default, a comma).
+* [window.range](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#windowrange): Returns the
+  range of the values input values found.
+
+### Announcement
+
+**Upgraded Chronicle API ingestion methods from alpha to beta**
+
+We've upgraded the Chronicle API ingestion methods from alpha to beta. This upgrade signals API stability and functional completeness, unblocking customer and partner adoption for production integrations.
+
+For more information, see
+[Ingestion methods](https://cloud.google.com/chronicle/docs/reference/ingestion-methods).
+
+---
 ## 2025-10-29
 
 ### Changed
@@ -96,11 +145,11 @@ This feature is currently in Preview.
 
 An improved integration for Chrome Enterprise Premium is now available that includes:
 
-* Streamlined connection to Google SecOps, leveraging recommended security defaults.
-* Enhanced log events with Google Safe Browsing context.
-* Updated parser and integration documentation: [Collect Google Chrome logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/chrome-management).
-* Curated dashboards for Chrome Enterprise Premium.
-* Google Workspace SOAR actions to manage Chrome extension blocklist policies ([Block Extension](https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#block_extension) and [Delete Extension](https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#delete_extension)).
+* Streamlined connection to Google SecOps, using recommended security defaults
+* Enhanced log events with Google Safe Browsing context
+* Updated parser and integration documentation: [Collect Google Chrome logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/chrome-management)
+* Curated dashboards for Chrome Enterprise Premium
+* Google Workspace SOAR actions to manage Chrome extension blocklist policies ([Block Extension](https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#block_extension) and [Delete Extension](https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#delete_extension))
 
 ---
 ## 2025-10-28

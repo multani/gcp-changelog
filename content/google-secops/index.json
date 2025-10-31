@@ -1,6 +1,34 @@
 {
   "name": "Google SecOps",
   "entries": {
+    "2025-10-30": [
+      {
+        "kind": "Feature",
+        "content": "**YARA-L functions**\n\nThe following new YARA-L functions are now generally available:\n\n* [strings.ends\\_with](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#stringsends_with):\n  Takes two strings (value, suffix) and returns true if the suffix is\n  non-empty and at end-of-value.\n* [strings.split](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#stringssplit): Splits\n  string value using a delimiter argument (by default, a comma).\n* [window.range](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#windowrange): Returns the\n  range of the values input values found.",
+        "summary": {
+          "title": "New YARA-L Functions Available",
+          "summary": "We're excited to announce the general availability of new YARA-L functions: strings.ends_with, strings.split, and window.range. These functions enhance your ability to analyze and process data within YARA-L."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "**Upgraded Chronicle API ingestion methods from alpha to beta**\n\nWe've upgraded the Chronicle API ingestion methods from alpha to beta. This upgrade signals API stability and functional completeness, unblocking customer and partner adoption for production integrations.\n\nFor more information, see\n[Ingestion methods](https://cloud.google.com/chronicle/docs/reference/ingestion-methods).",
+        "summary": {
+          "title": "Chronicle API ingestion methods upgraded to beta",
+          "summary": "The Chronicle API ingestion methods have been upgraded from alpha to beta, indicating improved stability and functionality for production integrations."
+        }
+      }
+    ],
+    "2025-10-29": [
+      {
+        "kind": "Feature",
+        "content": "**Improved Support for Chrome Enterprise Premium**\n\nThis feature is currently in Preview.\n\nAn improved integration for Chrome Enterprise Premium is now available that includes:\n\n* Streamlined connection to Google SecOps, using recommended security defaults\n* Enhanced log events with Google Safe Browsing context\n* Updated parser and integration documentation: [Collect Google Chrome logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/chrome-management)\n* Curated dashboards for Chrome Enterprise Premium\n* Google Workspace SOAR actions to manage Chrome extension blocklist policies ([Block Extension](https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#block_extension) and [Delete Extension](https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#delete_extension))",
+        "summary": {
+          "title": "Improved Chrome Enterprise Premium Support",
+          "summary": "Enhanced integration for Chrome Enterprise Premium now available, featuring streamlined connection to Google SecOps, richer log events with Google Safe Browsing context, updated documentation, curated dashboards, and new Google Workspace SOAR actions for managing Chrome extension policies."
+        }
+      }
+    ],
     "2025-10-28": [
       {
         "kind": "Feature",

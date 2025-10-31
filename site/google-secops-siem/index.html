@@ -2112,6 +2112,42 @@
 
 
 <h1 id="google-secops-siem">Google SecOps SIEM</h1>
+<h2 id="2025-10-30">2025-10-30</h2>
+<h3 id="feature">Feature</h3>
+<p><strong>YARA-L functions</strong></p>
+<p>The following new YARA-L functions are now generally available:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/yara-l/functions#stringsends_with">strings.ends_with</a>:
+  Takes two strings (value, suffix) and returns true if the suffix is
+  non-empty and at end-of-value.</li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/yara-l/functions#stringssplit">strings.split</a>: Splits
+  string value using a delimiter argument (by default, a comma).</li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/yara-l/functions#windowrange">window.range</a>: Returns the
+  range of the values input values found.</li>
+</ul>
+<h3 id="announcement">Announcement</h3>
+<p><strong>Upgraded Chronicle API ingestion methods from alpha to beta</strong></p>
+<p>We've upgraded the Chronicle API ingestion methods from alpha to beta. This upgrade signals API stability and functional completeness, unblocking customer and partner adoption for production integrations.</p>
+<p>For more information, see
+<a href="https://cloud.google.com/chronicle/docs/reference/ingestion-methods">Ingestion methods</a>.</p>
+<h3 id="feature_1">Feature</h3>
+<p><strong>YARA-L functions</strong></p>
+<p>The following new YARA-L functions are now generally available:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/yara-l/functions#stringsends_with">strings.ends_with</a>:
+  Takes two strings (value, suffix) and returns true if the suffix is
+  non-empty and at end-of-value.</li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/yara-l/functions#stringssplit">strings.split</a>: Splits
+  string value using a delimiter argument (by default, a comma).</li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/yara-l/functions#windowrange">window.range</a>: Returns the
+  range of the values input values found.</li>
+</ul>
+<h3 id="announcement_1">Announcement</h3>
+<p><strong>Upgraded Chronicle API ingestion methods from alpha to beta</strong></p>
+<p>We've upgraded the Chronicle API ingestion methods from alpha to beta. This upgrade signals API stability and functional completeness, unblocking customer and partner adoption for production integrations.</p>
+<p>For more information, see
+<a href="https://cloud.google.com/chronicle/docs/reference/ingestion-methods">Ingestion methods</a>.</p>
+<hr />
 <h2 id="2025-10-29">2025-10-29</h2>
 <h3 id="changed">Changed</h3>
 <p><strong>CSV</strong>: Version 35.0</p>
@@ -2204,7 +2240,7 @@
 </li>
 <li><strong>Lookup Entity</strong></li>
 </ul>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p><strong>Improved support for Chrome Enterprise Premium</strong></p>
 <p>This feature is currently in Preview.</p>
 <p>An improved integration for Chrome Enterprise Premium is now available that includes:</p>
@@ -2215,20 +2251,20 @@
 <li>Curated dashboards for Chrome Enterprise Premium</li>
 <li>Google Workspace SOAR actions to manage Chrome extension blocklist policies (<a href="https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#block_extension">Block Extension</a> and <a href="https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#delete_extension">Delete Extension</a>)</li>
 </ul>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p><strong>Improved Support for Chrome Enterprise Premium</strong></p>
 <p>This feature is currently in Preview.</p>
 <p>An improved integration for Chrome Enterprise Premium is now available that includes:</p>
 <ul>
-<li>Streamlined connection to Google SecOps, leveraging recommended security defaults.</li>
-<li>Enhanced log events with Google Safe Browsing context.</li>
-<li>Updated parser and integration documentation: <a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/chrome-management">Collect Google Chrome logs</a>.</li>
-<li>Curated dashboards for Chrome Enterprise Premium.</li>
-<li>Google Workspace SOAR actions to manage Chrome extension blocklist policies (<a href="https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#block_extension">Block Extension</a> and <a href="https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#delete_extension">Delete Extension</a>).</li>
+<li>Streamlined connection to Google SecOps, using recommended security defaults</li>
+<li>Enhanced log events with Google Safe Browsing context</li>
+<li>Updated parser and integration documentation: <a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/chrome-management">Collect Google Chrome logs</a></li>
+<li>Curated dashboards for Chrome Enterprise Premium</li>
+<li>Google Workspace SOAR actions to manage Chrome extension blocklist policies (<a href="https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#block_extension">Block Extension</a> and <a href="https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#delete_extension">Delete Extension</a>)</li>
 </ul>
 <hr />
 <h2 id="2025-10-28">2025-10-28</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p><strong>Risk-based alerting with entity-only rules</strong></p>
 <p>With the new <code>ENTITY_RISK_CHANGE</code> UDM event type, you can now write YARA-L
 detection rules that trigger independently of ingested events. This capability
@@ -2237,7 +2273,7 @@ decreasing the time required for Google Security Operations to detect and alert
 on shifting entity risk levels.</p>
 <p>For more information, see
 <a href="https://docs.cloud.google.com/chronicle/docs/detection/risk-based-alerting">Risk-based alerting with entity-only rules</a>.</p>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p><strong>Risk-based alerting with entity-only rules</strong></p>
 <p>With the new <code>ENTITY_RISK_CHANGE</code> UDM event type, you can now write YARA-L
 detection rules that trigger independently of ingested events. This capability
@@ -2248,7 +2284,7 @@ on shifting entity risk levels.</p>
 <a href="https://docs.cloud.google.com/chronicle/docs/detection/risk-based-alerting">Risk-based alerting with entity-only rules</a>.</p>
 <hr />
 <h2 id="2025-10-27">2025-10-27</h2>
-<h3 id="announcement">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p><strong>New rules for Chrome Enterprise Premium</strong></p>
 <p>Curated Detections has been enhanced with additional Chrome Enterprise Premium Browser Threat detections.
 The following rules have been added to the rulepack:</p>
@@ -2258,7 +2294,7 @@ The following rules have been added to the rulepack:</p>
 <li>Suspicious Download from Filehosting or Chat Platform in Chrome Management</li>
 <li>Chrome Suspicious Download Event from Newly Observed Domain in Environment</li>
 </ul>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p><strong>New rules for Chrome Enterprise Premium</strong></p>
 <p>Curated Detections has been enhanced with additional Chrome Enterprise Premium Browser Threat detections.
 The following rules have been added to the rulepack:</p>
@@ -2270,15 +2306,15 @@ The following rules have been added to the rulepack:</p>
 </ul>
 <hr />
 <h2 id="2025-10-26">2025-10-26</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p>Release 6.3.65 is being rolled out to the first phase of regions as listed <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
 <p>This release contains the following changes:</p>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p><strong>Delete high-load environments</strong></p>
 <p>You can now easily delete environments with heavy loads directly from the platform.</p>
 <hr />
 <h2 id="2025-10-25">2025-10-25</h2>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#October_19_2025">Release 6.3.64</a> is now available for all regions.</p>
 <hr />
 <h2 id="2025-10-22">2025-10-22</h2>
@@ -2312,7 +2348,7 @@ The following rules have been added to the rulepack:</p>
 <li><strong>Get Domain Risk</strong></li>
 <li><strong>Reverse Domain</strong></li>
 </ul>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p><strong>SentinelOneV2</strong>: Version 42.0</p>
 <ul>
 <li>
@@ -2335,31 +2371,31 @@ The following rules have been added to the rulepack:</p>
 <p><strong>List Host</strong></p>
 </li>
 </ul>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p><strong><code>earliest</code> and <code>latest</code> functions supported in Rules and Dashboards</strong></p>
 <p>The <code>earliest</code> and <code>latest</code> YARA-L functions for statistics and aggregations
 are now supported in Rules and Dashboards, in addition to Search.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#earliest">earliest</a> and <a href="https://docs.cloud.google.com/chronicle/docs/investigation/statistics-aggregations-in-udm-search#latest">latest</a>.</p>
 <hr />
 <h2 id="2025-10-21">2025-10-21</h2>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_6">Announcement</h3>
 <p><strong>Premium <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fw">Fortinet Firewall parser</a> now available as Release Candidate</strong></p>
 <p>This enhanced parser is available as a <strong>Release Candidate</strong> for the next 2 months. To opt in and begin testing it, go to <strong>SIEM Settings &gt; Parsers</strong>. We encourage you to try it out and evaluate the improvements before it becomes the default.</p>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_7">Announcement</h3>
 <p><strong>Premium <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fw">Fortinet Firewall parser</a> now available as Release Candidate</strong></p>
 <p>This enhanced parser is available as a <strong>Release Candidate</strong> for the next 2 months. To opt in and begin testing it, go to <strong>SIEM Settings &gt; Parsers</strong>. We encourage you to try it out and evaluate the improvements before it becomes the default.</p>
 <hr />
 <h2 id="2025-10-19">2025-10-19</h2>
-<h3 id="announcement_6">Announcement</h3>
+<h3 id="announcement_8">Announcement</h3>
 <p>Release 6.3.64 is being rolled out to the first phase of regions as listed <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
 <p>This release contains internal and customer bug fixes.</p>
 <hr />
 <h2 id="2025-10-18">2025-10-18</h2>
-<h3 id="announcement_7">Announcement</h3>
+<h3 id="announcement_9">Announcement</h3>
 <p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#October_05_2025">Release 6.3.63</a> is now available for all regions.</p>
 <hr />
 <h2 id="2025-10-15">2025-10-15</h2>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p><strong>CrowdStrike Falcon</strong>: Version 66.0</p>
 <ul>
 <li>
@@ -2508,19 +2544,19 @@ are now supported in Rules and Dashboards, in addition to Search.</p>
 </ul>
 <hr />
 <h2 id="2025-10-08">2025-10-08</h2>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p><strong>Multi-stage queries in YARA-L</strong></p>
 <p>This feature is currently in Preview.</p>
 <p>Multi-stage queries in YARA-L are now available as a Preview feature. Multi-stage queries in YARA-L let you feed the output of one query stage directly into the input of a subsequent stage. This process gives you greater control over data transformation than single, monolithic query. They are supported in both <strong>Dashboards</strong> and <strong>Search</strong>. Multi-stage queries can contain between 1 and 4 named stages, in addition to a root stage.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/multi-stage-yaral">Create multi-stage queries in YARA-L</a>.</p>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_11">Feature</h3>
 <p><strong>Multi-stage queries in YARA-L</strong></p>
 <p>This feature is currently in Preview.</p>
 <p>Multi-stage queries in YARA-L are now available as a Preview feature. Multi-stage queries in YARA-L let you feed the output of one query stage directly into the input of a subsequent stage. This process gives you greater control over data transformation than single, monolithic query. They are supported in both <strong>Dashboards</strong> and <strong>Search</strong>. Multi-stage queries can contain between 1 and 4 named stages, in addition to a root stage.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/multi-stage-yaral">Create multi-stage queries in YARA-L</a>.</p>
 <hr />
 <h2 id="2025-10-07">2025-10-07</h2>
-<h3 id="feature_10">Feature</h3>
+<h3 id="feature_12">Feature</h3>
 <p><strong>Manage parser versions</strong></p>
 <p>This feature is in preview.</p>
 <p>You now have granular control over how new pre-built parser versions are deployed within your environment.</p>
@@ -2532,7 +2568,7 @@ are now supported in Rules and Dashboards, in addition to Search.</p>
 <li>Revert to a previously deployed, stable parser version.</li>
 </ul>
 <p>For details, see <a href="https://docs.cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage-parser-versions">Manage prebuilt parser versions</a>.</p>
-<h3 id="feature_11">Feature</h3>
+<h3 id="feature_13">Feature</h3>
 <p><strong>Manage parser versions</strong></p>
 <p>This feature is in preview.</p>
 <p>You now have granular control over how new pre-built parser versions are deployed within your environment.</p>
@@ -2544,15 +2580,15 @@ are now supported in Rules and Dashboards, in addition to Search.</p>
 <li>Revert to a previously deployed, stable parser version.</li>
 </ul>
 <p>For details, see <a href="https://docs.cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage-parser-versions">Manage prebuilt parser versions</a>.</p>
-<h3 id="announcement_8">Announcement</h3>
+<h3 id="announcement_10">Announcement</h3>
 <p><strong>Azure AD Organizational Context default parser rollback</strong></p>
 <p>The recent update to the pre-built Azure AD Organizational Context (<code>AZURE_AD_CONTEXT</code>) parser has been rolled back. This action was necessary to resolve a performance degradation issue that was introduced in the latest parser version. For more information about the exact changes and rollback timeline, see the <a href="https://docs.cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage_parser_updates">change log for the pre-built parser</a>.</p>
-<h3 id="announcement_9">Announcement</h3>
+<h3 id="announcement_11">Announcement</h3>
 <p><strong>Azure AD Organizational Context default parser rollback</strong></p>
 <p>The recent update to the pre-built Azure AD Organizational Context (<code>AZURE_AD_CONTEXT</code>) parser has been rolled back. This action was necessary to resolve a performance degradation issue that was introduced in the latest parser version. For more information about the exact changes and rollback timeline, see the <a href="https://docs.cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage_parser_updates">change log for the pre-built parser</a>.</p>
 <hr />
 <h2 id="2025-10-06">2025-10-06</h2>
-<h3 id="feature_12">Feature</h3>
+<h3 id="feature_14">Feature</h3>
 <p><strong>Advanced BigQuery Export</strong></p>
 <p>This feature is in preview.</p>
 <p>This feature is available for Google SecOps Enterprise Plus customers only.</p>
@@ -2560,82 +2596,82 @@ are now supported in Rules and Dashboards, in addition to Search.</p>
 <p>For details, see <a href="https://docs.cloud.google.com/chronicle/docs/reports/bigquery-export">Use Advanced BigQuery Export</a>.</p>
 <hr />
 <h2 id="2025-10-05">2025-10-05</h2>
-<h3 id="announcement_10">Announcement</h3>
-<p><strong>New parser documentation now available</strong></p>
-<p>New parser documentation is available to help you ingest and normalize logs from the following sources:</p>
-<ul>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/asoc-alert">Collect AlphaSOC alert logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/rippling-activitylogs">Collect AlphaSOC alert logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-sdwan">Collect Cisco vManage SD-WAN logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-analytics">Collect Citrix Analytics logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-ms">Collect Citrix Monitor Service logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-storefront">Collect Citrix StoreFront logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/delinea-sso">Collect Delinea SSO logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sailpoint-iam">Collect SailPoint IAM logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sentry">Collect Sentry logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/snipe-it">Collect Snipe-IT logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-av">Collect Sophos AV logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-cap8">Collect Sophos Capsule8 logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-dhcp">Collect Sophos DHCP logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-edr">Collect Sophos Intercept EDR logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/swimlane">Collect Swimlane Platform logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-wss">Collect Symantec WSS logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tailscale">Collect Tailscale logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-asset">Collect Tanium Asset logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-audit">Collect Tanium audit logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-comply">Collect Tanium Comply logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-discover">Collect Tanium Discover logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-insight">Collect Tanium Insight logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-im">Collect Tanium Integrity Monitor logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-patch">Collect Tanium Patch logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-question">Collect Tanium Question logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-reveal">Collect Tanium Reveal logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-stream">Collect Tanium Stream logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-tr">Collect Tanium Threat Response logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/teamviewer">Collect TeamViewer logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tines">Collect Tines audit logs</a></li>
-</ul>
-<h3 id="announcement_11">Announcement</h3>
-<p><strong>New parser documentation now available</strong></p>
-<p>New parser documentation is available to help you ingest and normalize logs from the following sources:</p>
-<ul>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/asoc-alert">Collect AlphaSOC alert logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/rippling-activitylogs">Collect AlphaSOC alert logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-sdwan">Collect Cisco vManage SD-WAN logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-analytics">Collect Citrix Analytics logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-ms">Collect Citrix Monitor Service logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-storefront">Collect Citrix StoreFront logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/delinea-sso">Collect Delinea SSO logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sailpoint-iam">Collect SailPoint IAM logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sentry">Collect Sentry logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/snipe-it">Collect Snipe-IT logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-av">Collect Sophos AV logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-cap8">Collect Sophos Capsule8 logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-dhcp">Collect Sophos DHCP logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-edr">Collect Sophos Intercept EDR logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/swimlane">Collect Swimlane Platform logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-wss">Collect Symantec WSS logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tailscale">Collect Tailscale logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-asset">Collect Tanium Asset logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-audit">Collect Tanium audit logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-comply">Collect Tanium Comply logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-discover">Collect Tanium Discover logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-insight">Collect Tanium Insight logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-im">Collect Tanium Integrity Monitor logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-patch">Collect Tanium Patch logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-question">Collect Tanium Question logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-reveal">Collect Tanium Reveal logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-stream">Collect Tanium Stream logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-tr">Collect Tanium Threat Response logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/teamviewer">Collect TeamViewer logs</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tines">Collect Tines audit logs</a></li>
-</ul>
 <h3 id="announcement_12">Announcement</h3>
+<p><strong>New parser documentation now available</strong></p>
+<p>New parser documentation is available to help you ingest and normalize logs from the following sources:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/asoc-alert">Collect AlphaSOC alert logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/rippling-activitylogs">Collect AlphaSOC alert logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-sdwan">Collect Cisco vManage SD-WAN logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-analytics">Collect Citrix Analytics logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-ms">Collect Citrix Monitor Service logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-storefront">Collect Citrix StoreFront logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/delinea-sso">Collect Delinea SSO logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sailpoint-iam">Collect SailPoint IAM logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sentry">Collect Sentry logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/snipe-it">Collect Snipe-IT logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-av">Collect Sophos AV logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-cap8">Collect Sophos Capsule8 logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-dhcp">Collect Sophos DHCP logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-edr">Collect Sophos Intercept EDR logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/swimlane">Collect Swimlane Platform logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-wss">Collect Symantec WSS logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tailscale">Collect Tailscale logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-asset">Collect Tanium Asset logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-audit">Collect Tanium audit logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-comply">Collect Tanium Comply logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-discover">Collect Tanium Discover logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-insight">Collect Tanium Insight logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-im">Collect Tanium Integrity Monitor logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-patch">Collect Tanium Patch logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-question">Collect Tanium Question logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-reveal">Collect Tanium Reveal logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-stream">Collect Tanium Stream logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-tr">Collect Tanium Threat Response logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/teamviewer">Collect TeamViewer logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tines">Collect Tines audit logs</a></li>
+</ul>
+<h3 id="announcement_13">Announcement</h3>
+<p><strong>New parser documentation now available</strong></p>
+<p>New parser documentation is available to help you ingest and normalize logs from the following sources:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/asoc-alert">Collect AlphaSOC alert logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/rippling-activitylogs">Collect AlphaSOC alert logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-sdwan">Collect Cisco vManage SD-WAN logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-analytics">Collect Citrix Analytics logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-ms">Collect Citrix Monitor Service logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/citrix-storefront">Collect Citrix StoreFront logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/delinea-sso">Collect Delinea SSO logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sailpoint-iam">Collect SailPoint IAM logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sentry">Collect Sentry logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/snipe-it">Collect Snipe-IT logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-av">Collect Sophos AV logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-cap8">Collect Sophos Capsule8 logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-dhcp">Collect Sophos DHCP logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sophos-edr">Collect Sophos Intercept EDR logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/swimlane">Collect Swimlane Platform logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-wss">Collect Symantec WSS logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tailscale">Collect Tailscale logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-asset">Collect Tanium Asset logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-audit">Collect Tanium audit logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-comply">Collect Tanium Comply logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-discover">Collect Tanium Discover logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-insight">Collect Tanium Insight logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-im">Collect Tanium Integrity Monitor logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-patch">Collect Tanium Patch logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-question">Collect Tanium Question logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-reveal">Collect Tanium Reveal logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-stream">Collect Tanium Stream logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tanium-tr">Collect Tanium Threat Response logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/teamviewer">Collect TeamViewer logs</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tines">Collect Tines audit logs</a></li>
+</ul>
+<h3 id="announcement_14">Announcement</h3>
 <p>Release 6.3.63 is being rolled out to the first phase of regions as listed <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
 <p>This release contains internal and customer bug fixes.</p>
 <hr />
 <h2 id="2025-10-04">2025-10-04</h2>
-<h3 id="announcement_13">Announcement</h3>
+<h3 id="announcement_15">Announcement</h3>
 <p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#September_28_2025">Release 6.3.62</a> is now available for all regions.</p>
 <hr />
 <h2 id="2025-10-03">2025-10-03</h2>
@@ -2653,13 +2689,13 @@ are now supported in Rules and Dashboards, in addition to Search.</p>
 <a href="https://docs.cloud.google.com/chronicle/docs/secops/cmek_for_secops">CMEK for Google SecOps</a>.</p>
 <hr />
 <h2 id="2025-09-30">2025-09-30</h2>
-<h3 id="feature_13">Feature</h3>
+<h3 id="feature_15">Feature</h3>
 <p><strong>Customize Events table columns in Search</strong></p>
 <p>You can now specify which columns appear in the <strong>Events</strong> table on the
 <strong>Search</strong> page and in <strong>tables</strong> within your <strong>dashboard widgets</strong>. Use the <code>select</code>
 and <code>unselect</code> keywords to define the displayed columns.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/select-unselect">Control columns using select and unselect keywords</a>.</p>
-<h3 id="feature_14">Feature</h3>
+<h3 id="feature_16">Feature</h3>
 <p><strong>Customize Events table columns in Search</strong></p>
 <p>You can now specify which columns appear in the <strong>Events</strong> table on the
 <strong>Search</strong> page and in <strong>tables</strong> within your <strong>dashboard widgets</strong>. Use the <code>select</code>
@@ -2667,29 +2703,29 @@ and <code>unselect</code> keywords to define the displayed columns.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/select-unselect">Control columns using select and unselect keywords</a>.</p>
 <hr />
 <h2 id="2025-09-28">2025-09-28</h2>
-<h3 id="announcement_14">Announcement</h3>
-<p><strong>Forwarder component: end-of-life and migration</strong></p>
-<p>The forwarder component is being phased out of the Google SecOps platform and will reach end-of-life (EOL) in January 2027. This impact will change all any data collection pipelines that currently use the forwarder.</p>
-<p><strong>Action required</strong>: If you're currently using the forwarder component, you must migrate your data collection workflows to an alternative mechanism before April 1, 2027. You'll need to use another data pipeline management application for log ingestion.</p>
-<p>We recommend that you migrate to the <a href="https://docs.cloud.google.com/chronicle/docs/ingestion/use-bindplane-agent">Bindplane OpenTelemetry (OTel) collector</a>, which provides a scalable, open-standard solution for log and metric ingestion.</p>
-<p>The following are key dates to note:</p>
-<ul>
-<li><strong>Apr 1, 2026</strong>: New Google SecOps customers cannot use the forwarder component.</li>
-<li><strong>Jan 1, 2027</strong>: The forwarder is officially EOL. No further patches, including security patches, will be released.</li>
-<li><strong>Apr 1, 2027</strong>: Data is no longer allowed to be ingested from the forwarder component.</li>
-</ul>
-<h3 id="announcement_15">Announcement</h3>
-<p><strong>Forwarder component: end-of-life and migration</strong></p>
-<p>The forwarder component is being phased out of the Google SecOps platform and will reach end-of-life (EOL) in January 2027. This impact will change all any data collection pipelines that currently use the forwarder.</p>
-<p><strong>Action required</strong>: If you're currently using the forwarder component, you must migrate your data collection workflows to an alternative mechanism before April 1, 2027. You'll need to use another data pipeline management application for log ingestion.</p>
-<p>We recommend that you migrate to the <a href="https://docs.cloud.google.com/chronicle/docs/ingestion/use-bindplane-agent">Bindplane OpenTelemetry (OTel) collector</a>, which provides a scalable, open-standard solution for log and metric ingestion.</p>
-<p>The following are key dates to note:</p>
-<ul>
-<li><strong>Apr 1, 2026</strong>: New Google SecOps customers cannot use the forwarder component.</li>
-<li><strong>Jan 1, 2027</strong>: The forwarder is officially EOL. No further patches, including security patches, will be released.</li>
-<li><strong>Apr 1, 2027</strong>: Data is no longer allowed to be ingested from the forwarder component.</li>
-</ul>
 <h3 id="announcement_16">Announcement</h3>
+<p><strong>Forwarder component: end-of-life and migration</strong></p>
+<p>The forwarder component is being phased out of the Google SecOps platform and will reach end-of-life (EOL) in January 2027. This impact will change all any data collection pipelines that currently use the forwarder.</p>
+<p><strong>Action required</strong>: If you're currently using the forwarder component, you must migrate your data collection workflows to an alternative mechanism before April 1, 2027. You'll need to use another data pipeline management application for log ingestion.</p>
+<p>We recommend that you migrate to the <a href="https://docs.cloud.google.com/chronicle/docs/ingestion/use-bindplane-agent">Bindplane OpenTelemetry (OTel) collector</a>, which provides a scalable, open-standard solution for log and metric ingestion.</p>
+<p>The following are key dates to note:</p>
+<ul>
+<li><strong>Apr 1, 2026</strong>: New Google SecOps customers cannot use the forwarder component.</li>
+<li><strong>Jan 1, 2027</strong>: The forwarder is officially EOL. No further patches, including security patches, will be released.</li>
+<li><strong>Apr 1, 2027</strong>: Data is no longer allowed to be ingested from the forwarder component.</li>
+</ul>
+<h3 id="announcement_17">Announcement</h3>
+<p><strong>Forwarder component: end-of-life and migration</strong></p>
+<p>The forwarder component is being phased out of the Google SecOps platform and will reach end-of-life (EOL) in January 2027. This impact will change all any data collection pipelines that currently use the forwarder.</p>
+<p><strong>Action required</strong>: If you're currently using the forwarder component, you must migrate your data collection workflows to an alternative mechanism before April 1, 2027. You'll need to use another data pipeline management application for log ingestion.</p>
+<p>We recommend that you migrate to the <a href="https://docs.cloud.google.com/chronicle/docs/ingestion/use-bindplane-agent">Bindplane OpenTelemetry (OTel) collector</a>, which provides a scalable, open-standard solution for log and metric ingestion.</p>
+<p>The following are key dates to note:</p>
+<ul>
+<li><strong>Apr 1, 2026</strong>: New Google SecOps customers cannot use the forwarder component.</li>
+<li><strong>Jan 1, 2027</strong>: The forwarder is officially EOL. No further patches, including security patches, will be released.</li>
+<li><strong>Apr 1, 2027</strong>: Data is no longer allowed to be ingested from the forwarder component.</li>
+</ul>
+<h3 id="announcement_18">Announcement</h3>
 <p><strong>Update CrowdStrike API permissions before decommission</strong></p>
 <p>CrowdStrike is decommissioning its Detects API on September 30, 2025. This API has
 been replaced by the Alerts API. To ensure that your data feeds continue without
@@ -2704,7 +2740,7 @@ client permissions before September 30, 2025.
 Follow the instructions in <a href="https://docs.cloud.google.com/chronicle/docs/detection/migrate-detects-api-to-alerts-api">Migrate from CrowdStrike Detects API to Alerts API</a>
 to migrate your configuration to use the Alerts API.</p>
 <p>For more details, see <a href="https://supportportal.crowdstrike.com/s/article/Tech-Alert-30-Day-Notice-Planned-Decommission-Announcement-of-the-DetectionSummaryEvent-and-detects-API">CrowdStrike’s official decommissioning notice</a>.</p>
-<h3 id="announcement_17">Announcement</h3>
+<h3 id="announcement_19">Announcement</h3>
 <p><strong>Update CrowdStrike API permissions before decommission</strong></p>
 <p>CrowdStrike is decommissioning its Detects API on September 30, 2025. This API
 has been replaced by the Alerts API. To ensure that your data feeds continue without
@@ -2719,15 +2755,15 @@ client permissions before September 30, 2025.
 Follow the instructions in <a href="https://docs.cloud.google.com/chronicle/docs/detection/migrate-detects-api-to-alerts-api">Migrate from CrowdStrike Detects API to Alerts API</a>
 to migrate your configuration to use the Alerts API.</p>
 <p>For more details, see <a href="https://supportportal.crowdstrike.com/s/article/Tech-Alert-30-Day-Notice-Planned-Decommission-Announcement-of-the-DetectionSummaryEvent-and-detects-API">CrowdStrike’s official decommissioning notice</a>.</p>
-<h3 id="feature_15">Feature</h3>
+<h3 id="feature_17">Feature</h3>
 <p><strong>Podman support for Remote Agents</strong></p>
 <p>You can now install a Remote Agent using Podman. This new functionality provides a streamlined deployment workflow—a lightweight alternative to existing installation methods.
 For details, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/working-with-remote-agents/deploy-agent-with-podman">Deploy an agent with Podman</a>.</p>
-<h3 id="feature_16">Feature</h3>
+<h3 id="feature_18">Feature</h3>
 <p><strong>Debian support for remote agents</strong></p>
 <p>You can now install a Remote Agent using Debian. This new functionality provides a streamlined deployment workflow—an alternative to existing installation methods.
 For details, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/working-with-remote-agents/create-agent-with-installer-on-debian">Deploy an agent with Debian</a>.</p>
-<h3 id="announcement_18">Announcement</h3>
+<h3 id="announcement_20">Announcement</h3>
 <p>Remote Agent, Release 2.5.0 contains the following changes:</p>
 <h3 id="changed_24">Changed</h3>
 <p><strong>Increased Alert Trimming limit for Remote Agent</strong></p>
@@ -2735,18 +2771,18 @@ For details, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/work
 <h3 id="changed_25">Changed</h3>
 <p><strong>Publisher Connector package size limit enforced</strong></p>
 <p>The maximum allowed size for a Publisher's Connector Package is now limited to 25 MB.</p>
-<h3 id="announcement_19">Announcement</h3>
+<h3 id="announcement_21">Announcement</h3>
 <p>Release 6.3.62 is being rolled out to the first phase of regions, as outlined in our <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">Google SecOps release plan</a>.</p>
 <p>This release contains the following changes:</p>
-<h3 id="feature_17">Feature</h3>
+<h3 id="feature_19">Feature</h3>
 <p><strong>Podman support for Remote Agents</strong></p>
 <p>You can now install a Remote Agent using Podman. This new functionality provides a streamlined deployment workflow—a lightweight alternative to existing installation methods.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/working-with-remote-agents/deploy-agent-with-podman">Deploy an agent with Podman</a>.</p>
-<h3 id="feature_18">Feature</h3>
+<h3 id="feature_20">Feature</h3>
 <p><strong>Deploy an agent with Debian</strong></p>
 <p>You can now install a Remote Agent using Debian. This new functionality provides a streamlined deployment workflow—an alternative to existing installation methods.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/working-with-remote-agents/create-agent-with-installer-on-debian">Deploy an agent with Debian</a>.</p>
-<h3 id="announcement_20">Announcement</h3>
+<h3 id="announcement_22">Announcement</h3>
 <p>Remote Agent, Release 2.5.0 contains the following changes:</p>
 <h3 id="changed_26">Changed</h3>
 <p><strong>Increased Alert Trimming limit for Remote Agent</strong></p>
@@ -2756,27 +2792,27 @@ For details, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/work
 <p>The maximum allowed size for a Publisher's Connector Package is now limited to 25 MB.</p>
 <hr />
 <h2 id="2025-09-27">2025-09-27</h2>
-<h3 id="feature_19">Feature</h3>
+<h3 id="feature_21">Feature</h3>
 <p><strong>Use joins in YARA-L Search queries</strong></p>
 <p>These changes are currently in Preview.</p>
 <p>You can now use joins in statistical Search queries that include a <code>match</code> section
 to correlate data from multiple sources. This feature lets you link related
 sources directly within a single query.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/search-joins">Use joins in Search</a>.</p>
-<h3 id="feature_20">Feature</h3>
+<h3 id="feature_22">Feature</h3>
 <p><strong>Use joins in YARA-L Search queries</strong></p>
 <p>These changes are currently in Preview.</p>
 <p>You can now use joins in statistical Search queries that include a <code>match</code> section
 to correlate data from multiple sources. This feature lets you link related
 sources directly within a single query.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/search-joins">Use joins in Search</a>.</p>
-<h3 id="announcement_21">Announcement</h3>
+<h3 id="announcement_23">Announcement</h3>
 <p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#September_16_2025">Release 6.3.61</a> is now available for all regions.</p>
 <hr />
 <h2 id="2025-09-25">2025-09-25</h2>
-<h3 id="feature_21">Feature</h3>
+<h3 id="feature_23">Feature</h3>
 <p>New <strong>Apache Kafka</strong> integration</p>
-<h3 id="feature_22">Feature</h3>
+<h3 id="feature_24">Feature</h3>
 <p><strong>Microsoft Azure Sentinel</strong>: Version 57.0</p>
 <ul>
 <li>
@@ -2851,7 +2887,7 @@ sources directly within a single query.</p>
 <p>Google SecOps is migrating the transport layer for third-party API feeds to a new platform to improve performance and reliability. This migration will be completed in phases and is expected to finish by the end of October 2025. The migration should not impact any existing or new, third-party API feeds. If you experience any unexpected issues with your feeds during the migration, contact your Google SecOps representative.</p>
 <hr />
 <h2 id="2025-09-17">2025-09-17</h2>
-<h3 id="feature_23">Feature</h3>
+<h3 id="feature_25">Feature</h3>
 <p><strong>SentinelOneV2</strong>: Version 41.0</p>
 <ul>
 <li>
@@ -2873,7 +2909,7 @@ sources directly within a single query.</p>
 <p><strong>Update Alert</strong></p>
 </li>
 </ul>
-<h3 id="feature_24">Feature</h3>
+<h3 id="feature_26">Feature</h3>
 <p><strong>Google Threat Intelligence</strong>: Version 4.0</p>
 <ul>
 <li>
@@ -2883,7 +2919,7 @@ sources directly within a single query.</p>
 <p><strong>Set DTM Alert Analysis</strong></p>
 </li>
 </ul>
-<h3 id="feature_25">Feature</h3>
+<h3 id="feature_27">Feature</h3>
 <p><strong>Palo Alto Cortex XDR</strong>: Version 18.0</p>
 <ul>
 <li>
@@ -2969,39 +3005,39 @@ sources directly within a single query.</p>
 </ul>
 <hr />
 <h2 id="2025-09-16">2025-09-16</h2>
-<h3 id="announcement_22">Announcement</h3>
+<h3 id="announcement_24">Announcement</h3>
 <p><strong>Migrate SOAR to Google Cloud</strong></p>
 <p>We're actively migrating all SOAR customers and partners to their respective Google Cloud projects. This migration unifies your SOAR experience with your existing cloud environment. For more information, see <a href="https://cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp">SOAR migration overview</a> and <a href="https://cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-soar-faq">FAQ</a>.</p>
-<h3 id="announcement_23">Announcement</h3>
+<h3 id="announcement_25">Announcement</h3>
 <p><strong>Migrate SOAR to Google Cloud</strong></p>
 <p>All customers and partners are being migrated from SOAR to Google Cloud. For more information, see <a href="https://cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp">SOAR migration overview</a> and <a href="https://cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-soar-faq">FAQ</a>.</p>
-<h3 id="announcement_24">Announcement</h3>
+<h3 id="announcement_26">Announcement</h3>
 <p>Release 6.3.61 is being rolled out to the first phase of regions as listed <a href="https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
 <p>This release contains internal and customer bug fixes.</p>
 <hr />
 <h2 id="2025-09-15">2025-09-15</h2>
-<h3 id="announcement_25">Announcement</h3>
+<h3 id="announcement_27">Announcement</h3>
 <p><a href="https://cloud.google.com/chronicle/docs/soar/release-notes#September_07_2025">Release 6.3.60</a> is now available for all regions.</p>
 <hr />
 <h2 id="2025-09-11">2025-09-11</h2>
-<h3 id="feature_26">Feature</h3>
+<h3 id="feature_28">Feature</h3>
 <p><strong>SecOps Labs</strong></p>
 <p>This feature is in preview.</p>
 <p>You can now configure and run Google SecOps Gemini and other intelligence <em>experiments</em> without disrupting your existing production systems—and benefit from their output. The experiments comply with the Role-Based Access Control (RBAC) configuration of your environment, and they have streamlined configurations with clear actionable results and output.</p>
 <p>For details, see <a href="https://cloud.google.com/chronicle/docs/secops/google-secops-labs">Use Gemini and other experiments in Google SecOps</a>.</p>
 <hr />
 <h2 id="2025-09-10">2025-09-10</h2>
-<h3 id="feature_27">Feature</h3>
+<h3 id="feature_29">Feature</h3>
 <p><strong>View data retention start date</strong></p>
 <p>You can now view the start date for your account's data retention period. A new, read-only page, <strong>Data Retention</strong>, is available under <strong>SIEM Settings</strong>. This page also shows the start date for your Google SecOps account's data retention period.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/about/data-retention">View data retention in your Google SecOps account</a>.</p>
-<h3 id="feature_28">Feature</h3>
+<h3 id="feature_30">Feature</h3>
 <p><strong>View data retention start date</strong></p>
 <p>You can now view the start date for your account's data retention period. A new, read-only page, <strong>Data Retention</strong>, is available under <strong>SIEM Settings</strong>. This page also shows the start date for your Google SecOps account's data retention period.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/about/data-retention">View data retention in your Google SecOps account</a>.</p>
 <hr />
 <h2 id="2025-09-08">2025-09-08</h2>
-<h3 id="announcement_26">Announcement</h3>
+<h3 id="announcement_28">Announcement</h3>
 <p><strong>New parser documentation now available</strong></p>
 <p>New parser documentation is available to help you ingest and normalize logs from the following sources:</p>
 <p><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/akamai-cm">Collect Akamai Cloud Monitor logs</a> <br />
@@ -3035,7 +3071,7 @@ sources directly within a single query.</p>
 <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-horizon">Collect VMware Horizon logs</a> <br />
 <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vmware-velocloud-sdwan">Collect VMware VeloCloud SD-WAN logs</a> <br />
 <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zoom-operations">Collect Zoom operation logs</a></p>
-<h3 id="announcement_27">Announcement</h3>
+<h3 id="announcement_29">Announcement</h3>
 <p><strong>New parser documentation now available</strong></p>
 <p>New parser documentation is available to help you ingest and normalize logs from the following sources:</p>
 <p><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/akamai-cm">Collect Akamai Cloud Monitor logs</a> <br />
@@ -3071,17 +3107,6 @@ sources directly within a single query.</p>
 <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zoom-operations">Collect Zoom operation logs</a></p>
 <hr />
 <h2 id="2025-09-07">2025-09-07</h2>
-<h3 id="feature_29">Feature</h3>
-<p><strong>Advanced job scheduling</strong></p>
-<p>The job scheduling functionality has been enhanced with advanced options. This functionality provides more precise control and flexible, calendar-like scheduling for your scripts.</p>
-<p>For more information, see <a href="https://cloud.google.com/chronicle/docs/soar/respond/jobs-scheduler/writing-jobs#advanced-scheduling">Configure a new job with advanced scheduling</a>.</p>
-<h3 id="feature_30">Feature</h3>
-<p><strong>Use custom fields in the Close Case dialog</strong></p>
-<p>Administrators can now add custom fields to the <strong>Close Case</strong> dialog. This new functionality provides a more streamlined workflow and replaces the <strong>Dynamic Fields</strong> feature.</p>
-<p>For more information, see <a href="https://cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/custom-fields-in-case-closure">Use custom fields in the Close Case dialog</a>.</p>
-<h3 id="announcement_28">Announcement</h3>
-<p>Release 6.3.61 is being rolled out to the first phase of regions, as outlined in our <a href="https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">Google SecOps release plan</a>.</p>
-<p>This release contains the following features:</p>
 <h3 id="feature_31">Feature</h3>
 <p><strong>Advanced job scheduling</strong></p>
 <p>The job scheduling functionality has been enhanced with advanced options. This functionality provides more precise control and flexible, calendar-like scheduling for your scripts.</p>
@@ -3090,9 +3115,20 @@ sources directly within a single query.</p>
 <p><strong>Use custom fields in the Close Case dialog</strong></p>
 <p>Administrators can now add custom fields to the <strong>Close Case</strong> dialog. This new functionality provides a more streamlined workflow and replaces the <strong>Dynamic Fields</strong> feature.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/custom-fields-in-case-closure">Use custom fields in the Close Case dialog</a>.</p>
+<h3 id="announcement_30">Announcement</h3>
+<p>Release 6.3.61 is being rolled out to the first phase of regions, as outlined in our <a href="https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">Google SecOps release plan</a>.</p>
+<p>This release contains the following features:</p>
+<h3 id="feature_33">Feature</h3>
+<p><strong>Advanced job scheduling</strong></p>
+<p>The job scheduling functionality has been enhanced with advanced options. This functionality provides more precise control and flexible, calendar-like scheduling for your scripts.</p>
+<p>For more information, see <a href="https://cloud.google.com/chronicle/docs/soar/respond/jobs-scheduler/writing-jobs#advanced-scheduling">Configure a new job with advanced scheduling</a>.</p>
+<h3 id="feature_34">Feature</h3>
+<p><strong>Use custom fields in the Close Case dialog</strong></p>
+<p>Administrators can now add custom fields to the <strong>Close Case</strong> dialog. This new functionality provides a more streamlined workflow and replaces the <strong>Dynamic Fields</strong> feature.</p>
+<p>For more information, see <a href="https://cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/custom-fields-in-case-closure">Use custom fields in the Close Case dialog</a>.</p>
 <hr />
 <h2 id="2025-09-06">2025-09-06</h2>
-<h3 id="announcement_29">Announcement</h3>
+<h3 id="announcement_31">Announcement</h3>
 <p><a href="https://cloud.google.com/chronicle/docs/soar/release-notes#August_31_2025">Release 6.3.60</a> is now available for all regions.</p>
 <hr />
 <h2 id="2025-09-05">2025-09-05</h2>
@@ -3116,7 +3152,7 @@ sources directly within a single query.</p>
 <li>For details on the Okta parser, see <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/okta#udm_mapping_table">UDM mapping table</a> and <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/okta#udm_mapping_delta_reference">UDM mapping delta reference</a>.</li>
 <li>For details on the Symantec Endpoint Protection parser, see <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-endpoint-protection#udm_mapping_table">Collect Symantec Endpoint Protection logs</a> and <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-endpoint-protection#udm-mapping-delta">UDM mapping delta reference</a>.</li>
 </ul>
-<h3 id="announcement_30">Announcement</h3>
+<h3 id="announcement_32">Announcement</h3>
 <p><strong>CBN alerts functionality removed from all prebuilt parsers</strong></p>
 <p>As part of deprecating the Configuration Based Normalization (CBN) alerts functionality, all <a href="https://cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#types_of_parsers">prebuilt parsers</a> that included the CBN alerts functionality were updated, and the functionality was removed.</p>
 <p><strong>Note:</strong> For information about how you can migrate CBN alerts to YARA-L detection alerts, see <a href="https://cloud.google.com/chronicle/docs/detection/migrate-cbn-alerts">Migrate CBN alerts to YARA-L detection rule alerts</a>.</p>
@@ -3132,7 +3168,7 @@ sources directly within a single query.</p>
 <li>For details on the Okta parser, see <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/okta#udm_mapping_table">UDM mapping table</a> and <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/okta#udm_mapping_delta_reference">UDM mapping delta reference</a>.</li>
 <li>For details on the Symantec Endpoint Protection parser, see <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-endpoint-protection#udm_mapping_table">Collect Symantec Endpoint Protection logs</a> and <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/symantec-endpoint-protection#udm-mapping-delta">UDM mapping delta reference</a>.</li>
 </ul>
-<h3 id="announcement_31">Announcement</h3>
+<h3 id="announcement_33">Announcement</h3>
 <p><strong>CBN alerts functionality removed from all prebuilt parsers</strong></p>
 <p>As part of deprecating the Configuration Based Normalization (CBN) alerts functionality, all <a href="https://cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#types_of_parsers">prebuilt parsers</a> that included the CBN alerts functionality were updated, and the functionality was removed.</p>
 <p><strong>Note:</strong> For information about how you can migrate CBN alerts to YARA-L detection alerts, see <a href="https://cloud.google.com/chronicle/docs/detection/migrate-cbn-alerts">Migrate CBN alerts to YARA-L detection rule alerts</a>.</p>
@@ -3164,12 +3200,12 @@ sources directly within a single query.</p>
 </ul>
 <hr />
 <h2 id="2025-08-31">2025-08-31</h2>
-<h3 id="announcement_32">Announcement</h3>
+<h3 id="announcement_34">Announcement</h3>
 <p>Release 6.3.60 is being rolled out to the first phase of regions as listed <a href="https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
 <p>This release contains internal and customer bug fixes.</p>
 <hr />
 <h2 id="2025-08-30">2025-08-30</h2>
-<h3 id="announcement_33">Announcement</h3>
+<h3 id="announcement_35">Announcement</h3>
 <p><a href="https://cloud.google.com/chronicle/docs/soar/release-notes#August_23_2025">Release 6.3.59</a> is now available for all regions.</p>
 <hr />
 <h2 id="2025-08-29">2025-08-29</h2>
@@ -3205,7 +3241,7 @@ sources directly within a single query.</p>
 <p>To learn more, a companion blog post will be published on the <a href="https://security.googlecloudcommunity.com/">Google Security Cloud Community</a> on September 9, 2025.</p>
 <hr />
 <h2 id="2025-08-27">2025-08-27</h2>
-<h3 id="feature_33">Feature</h3>
+<h3 id="feature_35">Feature</h3>
 <p><strong>Google Workspace</strong>: Version 20.0</p>
 <ul>
 <li>
@@ -3498,7 +3534,7 @@ sources directly within a single query.</p>
 </ul>
 <hr />
 <h2 id="2025-08-21">2025-08-21</h2>
-<h3 id="feature_34">Feature</h3>
+<h3 id="feature_36">Feature</h3>
 <p><a href="https://cloud.google.com/chronicle/docs/detection/use-curated-detections">Enhanced curated detections</a> has been enhanced with composite detection content for Mandiant Hunt Cloud Classification, including AWS, GCP, and Azure. This rule pack is available for Mandiant Threat Defense (MTD) customers with a Google Security Operations Enterprise or Enterprise Plus license.</p>
 <hr />
 <h2 id="2025-08-20">2025-08-20</h2>
@@ -3514,13 +3550,13 @@ sources directly within a single query.</p>
 <li>Multiple Dangerous Download Events by same user in Chrome Management</li>
 <li>Url Event to Newly Created Domain in Chrome Management</li>
 </ul>
-<h3 id="feature_35">Feature</h3>
+<h3 id="feature_37">Feature</h3>
 <p><strong>Composite detections are now generally available</strong></p>
 <p>The <a href="https://cloud.google.com/chronicle/docs/secops/release-notes#April_23_2025">composite detections</a> feature is now in General Availability. Composite detections lets you link multiple YARA-L rules to detect complex, multistage threats. This capability enhances detection by correlating alerts that individual rules might not detect.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/detection/composite-detections">Overview of composite detections</a>.</p>
 <hr />
 <h2 id="2025-08-19">2025-08-19</h2>
-<h3 id="announcement_34">Announcement</h3>
+<h3 id="announcement_36">Announcement</h3>
 <p><strong>Reference lists retiring</strong></p>
 <p>The reference list functionality is being phased out of the Google SecOps platform.</p>
 <ul>
@@ -3530,7 +3566,7 @@ sources directly within a single query.</p>
 </ul>
 <hr />
 <h2 id="2025-08-13">2025-08-13</h2>
-<h3 id="announcement_35">Announcement</h3>
+<h3 id="announcement_37">Announcement</h3>
 <p><strong>New parser documentation now available</strong></p>
 <p>New parser documentation is available to help you ingest and normalize logs from the following sources:</p>
 <ul>
@@ -3573,7 +3609,7 @@ sources directly within a single query.</p>
 <p>Data RBAC now includes a self-service option for direct enablement. This makes the initial onboarding process faster and simpler. For details, see <a href="https://cloud.google.com/chronicle/docs/administration/configure-datarbac-users">Configure data RBAC for users</a>.</p>
 <hr />
 <h2 id="2025-08-10">2025-08-10</h2>
-<h3 id="feature_36">Feature</h3>
+<h3 id="feature_38">Feature</h3>
 <p><strong>Updated permissions for accessing product-centric feeds</strong></p>
 <p>If you have assigned <strong>Custom IAM Roles</strong>, you can now grant access to the product-centric feeds by adding the following permissions to the role:</p>
 <ul>
@@ -3757,7 +3793,7 @@ sources directly within a single query.</p>
 <p>For a list of supported log types and details about default parser changes, see <a href="https://cloud.google.com/chronicle/docs/ingestion/parser-list/supported-default-parsers">Supported log types and default parsers</a>.</p>
 <hr />
 <h2 id="2025-08-05">2025-08-05</h2>
-<h3 id="feature_37">Feature</h3>
+<h3 id="feature_39">Feature</h3>
 <p><strong>New YARA-L features</strong></p>
 <p>The following capabilities have been added to YARA-L 2.0 to enhance search precision, data analysis, and investigative workflows:</p>
 <ul>
@@ -3808,17 +3844,17 @@ sources directly within a single query.</p>
 <p>Password Breach Event By Admin User</p>
 <p>Phishing Navigation Event Containing Suspicious Parameters In Chrome Management</p>
 <p>Chrome Password Event on Newly Observed Domain in Environment</p>
-<h3 id="feature_38">Feature</h3>
+<h3 id="feature_40">Feature</h3>
 <p><a href="https://cloud.google.com/chronicle/docs/event-processing/auto-extraction">Auto Extraction</a> supports XML formatted logs in addition to JSON formatted logs. This enhancement will be available starting this week.</p>
 <hr />
 <h2 id="2025-07-22">2025-07-22</h2>
-<h3 id="feature_39">Feature</h3>
+<h3 id="feature_41">Feature</h3>
 <p><strong>Silent Host Monitoring</strong></p>
 <p>New configuration options are now available for Silent Host Monitoring. You can now define detection rule-based Silent Host Monitoring in SecOps using UDM fields or labels, configurable within a specified time window.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/ingestion/silent-host-monitoring">Silent host monitoring</a>.</p>
 <hr />
 <h2 id="2025-07-21">2025-07-21</h2>
-<h3 id="feature_40">Feature</h3>
+<h3 id="feature_42">Feature</h3>
 <p><strong>New parser documentation now available</strong></p>
 <p>New parser documentation is available to help you ingest and normalize logs from the following sources:</p>
 <p><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tomcat">Collect Apache Tomcat logs</a></p>
@@ -3851,7 +3887,7 @@ sources directly within a single query.</p>
 <p><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/trellix-ips">Collect Trellix IPS logs</a></p>
 <hr />
 <h2 id="2025-07-07">2025-07-07</h2>
-<h3 id="feature_41">Feature</h3>
+<h3 id="feature_43">Feature</h3>
 <p><strong>Dashboards for enhanced visualizations and threat hunting</strong></p>
 <p>You can now use the Google SecOps Dashboards to enhance data visualization, investigations, and threat hunting.</p>
 <p>Key capabilities include:</p>
@@ -4030,12 +4066,12 @@ sources directly within a single query.</p>
 </ul>
 <hr />
 <h2 id="2025-06-26">2025-06-26</h2>
-<h3 id="announcement_36">Announcement</h3>
+<h3 id="announcement_38">Announcement</h3>
 <p><strong>Premium <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fw">Fortinet Firewall parser</a> now available as Release Candidate</strong></p>
 <p>This enhanced parser is available as a <strong>Release Candidate</strong> for the next 3 months. To opt in and begin testing it, go to <strong>SIEM Settings &gt; Parsers</strong>. We encourage you to try it out and evaluate the improvements before it becomes the default.</p>
 <hr />
 <h2 id="2025-06-23">2025-06-23</h2>
-<h3 id="announcement_37">Announcement</h3>
+<h3 id="announcement_39">Announcement</h3>
 <p><strong>New parser documentation now available</strong></p>
 <p>New parser documentation is available to help you ingest and normalize logs from the following sources:</p>
 <p><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/beyond-trust-beyondinsight">Collect BeyondTrust BeyondInsight logs</a></p>
@@ -4080,16 +4116,16 @@ sources directly within a single query.</p>
 <p><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/trend-micro-vision-one-workbench">Collect Trend Micro Vision One Workbench logs</a></p>
 <hr />
 <h2 id="2025-06-19">2025-06-19</h2>
-<h3 id="feature_42">Feature</h3>
+<h3 id="feature_44">Feature</h3>
 <p><strong>Product Centric Feed Management</strong></p>
 <p>This feature is currently in Preview.</p>
 <p>You can now configure multiple log-type feeds for the same product type on a single page. This new product-led experience simplifies the feed configuration flow and provides additional in-product guidance. For more information, see <a href="https://cloud.google.com/chronicle/docs/ingestion/ingestion-entities/configure-multiple-feeds">Configure feeds by product</a>.</p>
 <hr />
 <h2 id="2025-06-18">2025-06-18</h2>
-<h3 id="feature_43">Feature</h3>
+<h3 id="feature_45">Feature</h3>
 <p>You can now remove existing UDM field mappings by using parser extensions in Google SecOps.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/event-processing/using-parser-extensions#remove_udm_field_mappings_using_parser_extensions">Remove UDM field mappings using parser extensions</a> and <a href="https://cloud.google.com/chronicle/docs/event-processing/parser-extension-examples#code_snippet_remove_existing_mappings">Code snippet - Remove existing mappings</a></p>
-<h3 id="feature_44">Feature</h3>
+<h3 id="feature_46">Feature</h3>
 <p>New data ingestion and health dashboard widgets are now available.</p>
 <ul>
 <li><strong>Silent host monitoring</strong>: displays hosts that were active in the last 7 days, but haven't reported recently, including a count of days since their last ingestion.</li>
@@ -4099,7 +4135,7 @@ sources directly within a single query.</p>
 </ul>
 <hr />
 <h2 id="2025-06-16">2025-06-16</h2>
-<h3 id="announcement_38">Announcement</h3>
+<h3 id="announcement_40">Announcement</h3>
 <p>The Release Candidate period of the following premium parsers has been extended from the end of May to the week of July 21, 2025:</p>
 <ul>
 <li>Crowdstrike Detection Monitoring (CS_DETECTS)</li>
@@ -4109,7 +4145,7 @@ sources directly within a single query.</p>
 <p>We recommend that you opt-in early and make any necessary adjustments before these updates become the default.</p>
 <hr />
 <h2 id="2025-06-04">2025-06-04</h2>
-<h3 id="announcement_39">Announcement</h3>
+<h3 id="announcement_41">Announcement</h3>
 <p>The following parser documentation is now available:</p>
 <p><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/abnormal-security">Collect Abnormal Security logs</a></p>
 <p><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/apache-cassandra">Collect Apache Cassandra logs</a></p>
@@ -4279,6 +4315,9 @@ sources directly within a single query.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-secops-siem">Google SecOps SIEM</a></li>
+          <li class="nav-item">
+            <a href="#2025-10-30" class="nav-link">2025-10-30</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-10-29" class="nav-link">2025-10-29</a>
           </li>

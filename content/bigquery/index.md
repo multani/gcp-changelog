@@ -1,5 +1,17 @@
 # BigQuery
 
+## 2025-10-30
+
+### Feature
+
+The
+[Apache Iceberg REST catalog in BigLake metastore](https://docs.cloud.google.com/biglake/docs/blms-rest-catalog)
+is now
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA) with several new features, including BigQuery catalog federation,
+credential vending, and catalog management in the Google Cloud console.
+
+---
 ## 2025-10-29
 
 ### Feature
@@ -102,13 +114,6 @@ BigQuery. To enroll in conversational analytics early access, fill out the
 ---
 ## 2025-10-22
 
-### Issue
-
-Support for
-[table parameters in table-value functions (TVFs)](https://docs.cloud.google.com/bigquery/docs/table-functions#table_parameters)
-has been temporarily disabled. We are working to restore this feature as soon
-as possible.
-
 ### Feature
 
 You can now use custom constraints with Organization Policy to provide more
@@ -117,6 +122,13 @@ resources. For more information, see
 [Manage Sharing data exchanges and listings using custom constraints](https://docs.cloud.google.com/bigquery/docs/analytics-hub-custom-constraints).
 This feature is in
 [preview](https://cloud.google.com/products#product-launch-stages).
+
+### Issue
+
+Support for
+[table parameters in table-value functions (TVFs)](https://docs.cloud.google.com/bigquery/docs/table-functions#table_parameters)
+has been temporarily disabled. We are working to restore this feature as soon
+as possible.
 
 ### Feature
 

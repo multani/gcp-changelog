@@ -1,5 +1,29 @@
 # Cloud Billing
 
+## 2025-10-30
+
+### Feature
+
+**Anomaly Detection is generally available**
+
+View and manage cost spikes that deviate from your typical spend patterns using
+the Anomalies dashboard, which is [generally
+available](https://cloud.google.com/products#product-launch-stages). Each
+anomaly includes a detailed root cause analysis that identifies the top
+services, regions, and SKUs that contributed to the spike.
+
+With this launch, we've added the following features to Anomaly Detection:
+
+* Auto-generated anomaly thresholds that update daily based on your usage
+  patterns.
+* Deviation percentage as a new threshold for you to configure for your
+  anomalies.
+* Email alerts automatically set up for Billing administrators to help you
+  proactively manage your costs.
+
+[Learn more about using Anomaly detection to manage costs](https://cloud.google.com/billing/docs/how-to/manage-anomalies).
+
+---
 ## 2025-08-08
 
 ### Feature

@@ -1,5 +1,12 @@
 # Spanner
 
+## 2025-10-29
+
+### Feature
+
+[Named schemas](https://docs.cloud.google.com/spanner/docs/named-schemas) are supported in Spanner Graph. For more information, see [Spanner Graph schema overview](https://docs.cloud.google.com/spanner/docs/graph/schema-overview).
+
+---
 ## 2025-10-21
 
 ### Feature

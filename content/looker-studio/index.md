@@ -1,5 +1,37 @@
 # Looker Studio
 
+## 2025-10-30
+
+### Feature
+
+**Pro feature: CSV connector enhancement**
+
+Introducing new user experience enhancements for the CSV connector.
+
+[Learn more about the CSV connector](https://cloud.google.com/looker/docs/studio/upload-csv-files-to-looker-studio).
+
+**Note:** This feature is being released gradually. You might not see it right away.
+
+### Feature
+
+**Partner connection launch update**
+
+The following partner connectors have been added to the [Looker Studio Connector Gallery](https://lookerstudio.google.com/data):
+
+* [Spotify Ads](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbwR-miifksERqS7lMjiTazGziKqjKGzDlcgUSIh1pgu9D44oujskaVa_dH3jxk6PzdB) by Dataslayer. Sources: Spotify Ads Studio
+* [Amazon Ads](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbwj34XShbwrvIvD80r4O1hPfJhmIT4MyrufaGLIZ7O1fdKpOngJwRUYELHJ2Kd_7oVCDg) by Dataslayer. Sources: Amazon Ads
+* [Zoho](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbwrDpzIrsawTL3Q5sNb7V4zYeC4YnQmXCVfpZD4jo-KikeRJGKdMIKT18_4uqAG2UtWDQ) by Dataslayer. Sources: Zoho CRM
+* [Lazada Commerce](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbyfT8Zow-HVyofJTbdzC2kQK_cu2GyguqW3Q-jpop9cyD_iqEXx2dfBQWRH54hM77Nxcw) by Supermetrics. Sources: Supermetrics
+* [Google Sheets](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbweOFmmcwVCMX7Ztuf43DFa_ZRlGe-WRx42Q1JIoZRrGQp9IWUvhlNhYHSHPyJtvJZQ) by Porter Metrics. Sources: Google Drive
+* [OWOX Data Marts](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbz6kcYn3qGuG0jVNFjcDnkXvVDiz4hewKdAFjOm-_d4VkKVcBidPjqZO991AvGL3FtM4A) by OWOX. Sources: Owox Data Mart
+* [Close CRM](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbwEEiTbWi5t1uJUGqTfI7V2xTSVJh9Td7FnLDQjE98cX_RwNDTxT_SsGFOx8UJKy0sB) by Supermetrics. Sources: Close
+* [Centra](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbw263f4ssbUAj5tpgK9Pku6eOz35pW80T4lPo46cZBBTYkJ5Wn4i2FvagOlg6sRb6gw) by Supermetrics. Sources: Centra
+* [BMS Monitoring](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbzkOpFnVzObPoimJk0J4gNjhuIeS3s-iUda6mwGwNcjz5m_YdBDfvGC4NW-PiqR7v_p) by BMS. Sources: BMS
+* [Vibe](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbw521HWPONl6boUDoOsBfVdCHGDrw0bIlRWXqgaHeFl1hMNYGxPcHj0bOzt1_zZIMXM) by Supermetrics. Sources: Vibe
+* [Power My Analytics](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbztUN74F880Usj83EIIPIAovGMVTcEPw2BeqezyrIYmoPaxiZTkCAkMZA1izoXyOGwP-Q) by Power My Analytics. Sources: Constant Contact
+* [Zen AI - Meta Ads](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbz_PfwpONjz4jgSbL0olsmjd6uGxKOncqB50HwLSkOcQUnCnBkow3D4dVpnvd62M1R7XQ) by Zen AI. Sources: Facebook Ads
+
+---
 ## 2025-10-16
 
 ### Feature

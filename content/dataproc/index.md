@@ -1,5 +1,31 @@
 # Dataproc
 
+## 2025-10-29
+
+### Breaking
+
+Dataproc on Compute Engine subminor image version
+[`2.3.16`](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-2.3), announced on
+[October 20, 2025](https://docs.cloud.google.com/dataproc/docs/release-notes#October_20_2025)
+has been blocklisted and cannot be used when creating a new cluster.
+
+---
+## 2025-10-28
+
+### Announcement
+
+New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):
+
+* 2.0.153-debian10, 2.0.153-ubuntu18, 2.0.153-rocky8
+* 2.1.102-debian11, 2.1.102-ubuntu20, 2.1.102-ubuntu20-arm, 2.1.102-rocky8
+* 2.2.70-debian12, 2.2.70-ubuntu22, 2.2.70-ubuntu22-arm, 2.2.70-rocky9
+* 2.3.17-debian12, 2.3.17-ubuntu22, 2.3.17-ubuntu22-arm, 2.3.17-ml-ubuntu22, 2.3.17-rocky9
+
+### Fixed
+
+Fixed a Jupyter Kernel Gateway bug that caused failures while restarting kernels.
+
+---
 ## 2025-10-22
 
 ### Announcement
@@ -27,6 +53,12 @@ New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.goog
 * 2.1.101-debian11, 2.1.101-ubuntu20, 2.1.101-ubuntu20-arm, 2.1.101-rocky8
 * 2.2.69-debian12, 2.2.69-ubuntu22, 2.2.69-ubuntu22-arm, 2.2.69-rocky9
 * 2.3.16-debian12, 2.3.16-ubuntu22, 2.3.16-ubuntu22-arm, 2.3.16-ml-ubuntu22, 2.3.16-rocky9
+
+**Note:** Dataproc on Compute Engine subminor image version
+[`2.3.16`](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-2.3)
+was blocklisted on
+[October, 29, 2025](https://docs.cloud.google.com/dataproc/docs/release-notes#October_29_2025),
+and cannot be used when creating a new cluster.
 
 ---
 ## 2025-10-16
@@ -69,10 +101,6 @@ Fixed startup race condition in [multi-tenant clusters](https://docs.cloud.googl
 
 ### Changed
 
-**Serverless for Apache Spark:** Upgraded Apache Spark to version [3.5.3](https://spark.apache.org/releases/spark-release-3-5-3.html) in the latest [2.3](https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_23) Serverless for Apache Spark runtime versions.
-
-### Changed
-
 **Dataproc on Compute Engine:** The following diagnostic properties are now enabled by default for new Dataproc clusters created with **2.0+** image versions:
 
 * `dataproc:diagnostic.capture.enabled`: Collects [checkpoint diagnostic data](https://docs.cloud.google.com/dataproc/docs/support/diagnose-clusters#checkpoint_diagnostic_data) in the cluster [temp bucket](https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/staging-bucket).
@@ -94,6 +122,10 @@ New [Serverless for Apache Spark runtime versions](https://docs.cloud.google.com
 
 * 2.3.13
 * 3.0.0-RC5
+
+### Changed
+
+**Serverless for Apache Spark:** Upgraded Apache Spark to version [3.5.3](https://spark.apache.org/releases/spark-release-3-5-3.html) in the latest [2.3](https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_23) Serverless for Apache Spark runtime versions.
 
 ---
 ## 2025-10-03

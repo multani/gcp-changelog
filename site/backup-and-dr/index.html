@@ -2112,6 +2112,30 @@
 
 
 <h1 id="backup-and-dr">Backup and DR</h1>
+<h2 id="2025-10-30">2025-10-30</h2>
+<h3 id="feature">Feature</h3>
+<p>Announcing the <strong>Public Preview</strong> launch of AlloyDB for PostgreSQL enhanced backups with Backup and DR Service. This enables advanced data protection capabilities offered by Backup and DR Service including backup vault support, granular scheduling through backup plans, and centralized management.</p>
+<h3 id="feature_1">Feature</h3>
+<p>A new backup vault setting, <strong>Prevent deletion for duration specified in backup rule</strong>, is now available. When enabled, this feature locks backups for the exact retention period defined in the associated backup plan, overriding the vault's local minimum retention and preventing manual deletion.</p>
+<hr />
+<h2 id="2025-10-21">2025-10-21</h2>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Resolved a problem with timestamp conversions during recovery range calculations in SAP HANA</li>
+<li>Fixed a bug that prevented the identification of persistent disk names in some SAP HANA environments</li>
+<li>Fixed DB2 restore issue wrt pre-flight checks and instances with a large number of archive logs</li>
+<li>Fixed a logging issue during Postgres upgrades where an incorrect version was displayed after a rollback</li>
+<li>Resolved a restore failure when using a combination of full and incremental backups for SAP ASE</li>
+<li>Fixed a connection leak and an issue with executor service shutdown in the VMware hypervisor integration, improving reliability.</li>
+</ul>
+<h3 id="feature_2">Feature</h3>
+<ul>
+<li>Change Block Tracking (CBT) support has been added for latest kernel versions in RHEL 8.10, 9.2, 9.4 and 9.6.</li>
+<li>Improved alerting for long-running jobs by adding application type and name to the alerts.</li>
+</ul>
+<h3 id="security">Security</h3>
+<p>The following CVEs have been addressed in this release: CVE-2022-1471, CVE-2025-31651, CVE-2025-31650, CVE-2022-42003, CVE-2025-25193, CVE-2024-6763, CVE-2025-52999, CVE-2025-24970, CVE-2025-49125, CVE-2025-48734, CVE-2024-52317, CVE-2025-48988, CVE-2025-46701</p>
+<hr />
 <h2 id="2025-10-15">2025-10-15</h2>
 <h3 id="announcement">Announcement</h3>
 <p>Backup and DR Service 11.0.16.253 is now available to update your backup/recovery appliances. Refer to these <a href="https://docs.cloud.google.com/backup-disaster-recovery/docs/configuration/update-appliance">instructions</a> to update your appliance.</p>
@@ -2130,7 +2154,7 @@
 <p>You can subscribe to these events and configure email alerts.</p>
 <hr />
 <h2 id="2025-10-14">2025-10-14</h2>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>You can now set up backup vault specific workload quotas for critical resources like data sources, backups, backup plans, and backup plan associations. Until now these quotas were set up only at the project level, not at the workload level.</p>
 <hr />
 <h2 id="2025-08-12">2025-08-12</h2>
@@ -2163,6 +2187,12 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#backup-and-dr">Backup and DR</a></li>
+          <li class="nav-item">
+            <a href="#2025-10-30" class="nav-link">2025-10-30</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2025-10-21" class="nav-link">2025-10-21</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-10-15" class="nav-link">2025-10-15</a>
           </li>

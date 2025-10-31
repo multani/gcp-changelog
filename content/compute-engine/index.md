@@ -1,5 +1,23 @@
 # Compute Engine
 
+## 2025-10-30
+
+### Feature
+
+**Generally available**: Dynamic NICs let you add or remove network interfaces
+to or from an instance without having to restart or recreate the instance.
+
+You can also use Dynamic NICs when you need more network interfaces. The
+maximum number of vNICs for most machine types in Google Cloud is 10; however,
+you can configure up to 16 total interfaces by using Dynamic NICs.
+
+For more information, see the following:
+
+* [Multiple network interfaces overview](https://docs.cloud.google.com/vpc/docs/multiple-interfaces-concepts)
+* [Create VM instances with multiple network interfaces](https://docs.cloud.google.com/vpc/docs/create-use-multiple-interfaces)
+* [Add Dynamic NICs to an instance](https://docs.cloud.google.com/vpc/docs/add-dynamic-nics)
+
+---
 ## 2025-10-28
 
 ### Feature

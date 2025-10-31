@@ -2,9 +2,51 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Dataproc</title>
   <subtitle>Changelog for Google Cloud product: Dataproc</subtitle>
-  <updated>2025-10-22T00:00:00+00:00</updated>
+  <updated>2025-10-29T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:dataproc</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/dataproc/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataproc:2025-10-29:breaking:0</id>
+    <published>2025-10-29T00:00:00+00:00</published>
+    <updated>2025-10-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Dataproc on Compute Engine subminor image version
+<a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-2.3"><code>2.3.16</code></a>, announced on
+<a href="https://docs.cloud.google.com/dataproc/docs/release-notes#October_20_2025">October 20, 2025</a>
+has been blocklisted and cannot be used when creating a new cluster.</p>]]></content>
+    <summary>The Dataproc on Compute Engine image version 2.3.16 has been blocklisted and cannot be used for new clusters.</summary>
+    <title>Breaking: Dataproc image version blocklisted</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataproc:2025-10-28:announcement:0</id>
+    <published>2025-10-28T00:00:00+00:00</published>
+    <updated>2025-10-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters">Dataproc on Compute Engine subminor image versions</a>:</p>
+<ul>
+<li>2.0.153-debian10, 2.0.153-ubuntu18, 2.0.153-rocky8</li>
+<li>2.1.102-debian11, 2.1.102-ubuntu20, 2.1.102-ubuntu20-arm, 2.1.102-rocky8</li>
+<li>2.2.70-debian12, 2.2.70-ubuntu22, 2.2.70-ubuntu22-arm, 2.2.70-rocky9</li>
+<li>2.3.17-debian12, 2.3.17-ubuntu22, 2.3.17-ubuntu22-arm, 2.3.17-ml-ubuntu22, 2.3.17-rocky9</li>
+</ul>]]></content>
+    <summary>New image versions for Dataproc on Compute Engine have been released, including updates for 2.0, 2.1, 2.2, and 2.3 series. These updates provide the latest features and security patches for your data processing workloads.</summary>
+    <title>Announcement: New Dataproc image versions available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataproc:2025-10-28:fixed:1</id>
+    <published>2025-10-28T00:00:00+00:00</published>
+    <updated>2025-10-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed a Jupyter Kernel Gateway bug that caused failures while restarting kernels.</p>]]></content>
+    <summary>The issue that caused failures while restarting Jupyter Kernel Gateway has been resolved.</summary>
+    <title>Fixed: Kernels Restarting Fixed</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -43,9 +85,14 @@
 <li>2.1.101-debian11, 2.1.101-ubuntu20, 2.1.101-ubuntu20-arm, 2.1.101-rocky8</li>
 <li>2.2.69-debian12, 2.2.69-ubuntu22, 2.2.69-ubuntu22-arm, 2.2.69-rocky9</li>
 <li>2.3.16-debian12, 2.3.16-ubuntu22, 2.3.16-ubuntu22-arm, 2.3.16-ml-ubuntu22, 2.3.16-rocky9</li>
-</ul>]]></content>
-    <summary>New image versions for Dataproc on Compute Engine are now available, including updates for 2.0, 2.1, 2.2, and 2.3 series. These updates support various operating systems like Debian, Ubuntu, and Rocky Linux, with some versions offering ARM support and specialized ML images.</summary>
-    <title>Announcement: New Dataproc image versions released</title>
+</ul>
+<p><strong>Note:</strong> Dataproc on Compute Engine subminor image version
+<a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-2.3"><code>2.3.16</code></a>
+was blocklisted on
+<a href="https://docs.cloud.google.com/dataproc/docs/release-notes#October_29_2025">October, 29, 2025</a>,
+and cannot be used when creating a new cluster.</p>]]></content>
+    <summary>New subminor image versions for Dataproc on Compute Engine are now available, offering various updates and enhancements. Please note that image version 2.3.16 has been blocklisted and cannot be used for new cluster creation.</summary>
+    <title>Announcement: New Dataproc image versions available</title>
   </entry>
   <entry>
     <author>
@@ -118,17 +165,6 @@
     <id>urn:github:multani:gcp-changelog:dataproc:2025-10-06:changed:0</id>
     <published>2025-10-06T00:00:00+00:00</published>
     <updated>2025-10-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Serverless for Apache Spark:</strong> Upgraded Apache Spark to version <a href="https://spark.apache.org/releases/spark-release-3-5-3.html">3.5.3</a> in the latest <a href="https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_23">2.3</a> Serverless for Apache Spark runtime versions.</p>]]></content>
-    <summary>The Serverless for Apache Spark runtime has been upgraded to version 3.5.3. This update is available in the latest runtime version 2.3.</summary>
-    <title>Changed: Upgraded Apache Spark runtime to 3.5.3</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:dataproc:2025-10-06:changed:1</id>
-    <published>2025-10-06T00:00:00+00:00</published>
-    <updated>2025-10-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Dataproc on Compute Engine:</strong> The following diagnostic properties are now enabled by default for new Dataproc clusters created with <strong>2.0+</strong> image versions:</p>
 <ul>
 <li><code>dataproc:diagnostic.capture.enabled</code>: Collects <a href="https://docs.cloud.google.com/dataproc/docs/support/diagnose-clusters#checkpoint_diagnostic_data">checkpoint diagnostic data</a> in the cluster <a href="https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/staging-bucket">temp bucket</a>.</li>
@@ -150,7 +186,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:dataproc:2025-10-06:announcement:2</id>
+    <id>urn:github:multani:gcp-changelog:dataproc:2025-10-06:announcement:1</id>
     <published>2025-10-06T00:00:00+00:00</published>
     <updated>2025-10-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Serverless for Apache Spark runtime versions</a>:</p>
@@ -160,6 +196,17 @@
 </ul>]]></content>
     <summary>Check out the latest updates to serverless Spark runtimes!</summary>
     <title>Announcement: New Spark Versions</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataproc:2025-10-06:changed:2</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Serverless for Apache Spark:</strong> Upgraded Apache Spark to version <a href="https://spark.apache.org/releases/spark-release-3-5-3.html">3.5.3</a> in the latest <a href="https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_23">2.3</a> Serverless for Apache Spark runtime versions.</p>]]></content>
+    <summary>The Serverless for Apache Spark runtime has been upgraded to version 3.5.3. This update is available in the latest runtime version 2.3.</summary>
+    <title>Changed: Upgraded Apache Spark runtime to 3.5.3</title>
   </entry>
   <entry>
     <author>

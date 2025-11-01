@@ -1,5 +1,12 @@
 # App Engine flexible environment Java
 
+## 2025-10-31
+
+### Feature
+
+Support for [Java 25 runtime](https://docs.cloud.google.com/appengine/docs/flexible/java/runtime) is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-08-07
 
 ### Feature

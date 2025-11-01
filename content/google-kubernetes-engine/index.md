@@ -1,5 +1,16 @@
 # Google Kubernetes Engine
 
+## 2025-10-31
+
+### Feature
+
+The Multi-Cluster Services (MCS) feature has been updated with a finalizer to
+more effectively prevent potential resource leaks and ensure a full cleanup
+during the feature's disablement process. As a result of this improvement, the
+disablement procedure has been updated. For more details on how to disable MCS, see [Disabling
+MCS](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/multi-cluster-services#disabling_mcs).
+
+---
 ## 2025-10-29
 
 ### Changed

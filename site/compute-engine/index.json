@@ -1,6 +1,16 @@
 {
   "name": "Compute Engine",
   "entries": {
+    "2025-10-31": [
+      {
+        "kind": "Fixed",
+        "content": "Version `20251030.02` includes fixes for the plugin-based architecture that is used by guest agent. For more information about the plugin-based architecture, see [Guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent).\n\n* The Clock Skew module no longer causes time inconsistencies on VMs. The agent no longer attempts to synchronize the hardware clock (`hwclock`) when the VM's Real-time Clock (RTC) isn't set to Coordinated Universal Time 0(UTC). For more information about how the guest agent handles clock synchronization, see [Clock Synchronization](https://docs.cloud.google.com/compute/docs/images/guest-agent-functions#clock-synchronization).\n* The [Dynamic VLAN](https://docs.cloud.google.com/network-connectivity/docs/interconnect/how-to/dedicated/creating-vlan-attachments) module now correctly sets up VLAN network interface cards (NICs). Dynamic VLAN connections now initialize reliably.\n* The agent now prevents a race condition in network interface and route setup. Previously, routes were temporarily flushed if they were added before a DHCP lease was acquired. The agent now ensures routes persist correctly, preventing a brief period of missing routes. These routes were previously auto-corrected after approximately one minute.",
+        "summary": {
+          "title": "Guest agent fixes",
+          "summary": "Version 20251030.02 fixes issues with the plugin-based architecture for the guest agent, including the Clock Skew module, Dynamic VLAN setup, and network interface/route setup race conditions."
+        }
+      }
+    ],
     "2025-10-30": [
       {
         "kind": "Feature",
@@ -48,14 +58,6 @@
       }
     ],
     "2025-10-20": [
-      {
-        "kind": "Feature",
-        "content": "Version `20251009.01` of the guest agent, which introduces the plugin-based\narchitecture to Windows, is now available.\n\nFor more information about the plugin-based architecture, see\n[Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).",
-        "summary": {
-          "title": "Guest agent plugin architecture for Windows",
-          "summary": "The new Windows guest agent (version 20251009.01) now supports a plugin-based architecture."
-        }
-      },
       {
         "kind": "Security",
         "content": "A vulnerability affecting AMD Zen 5 processors (Turin) was discovered and is\nbeing addressed. For more information, see the\n[GCP-2025-058 security bulletin](https://docs.cloud.google.com/compute/docs/security-bulletins#gcp-2025-058).",

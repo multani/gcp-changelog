@@ -1,5 +1,12 @@
 # Cloud Run functions
 
+## 2025-10-31
+
+### Feature
+
+Support for [Java 25 runtime](https://docs.cloud.google.com/functions/docs/concepts/execution-environment#java) is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-10-07
 
 ### Feature

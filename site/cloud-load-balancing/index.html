@@ -1781,6 +1781,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Organization policy service <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../organization-policy-service/" class="dropdown-item">Organization Policy Service</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Policy controller <b class="caret"></b>
                         </a>
 
@@ -2146,12 +2158,6 @@ establish access control checks for incoming traffic.</p>
 <a href="https://docs.cloud.google.com/load-balancing/docs/auth-policy/auth-policy-overview">Authorization policy overview</a>.</p>
 <p>This feature is in <strong>General availability</strong>.</p>
 <h3 id="feature_2">Feature</h3>
-<p>Application Load Balancers support authorization policies that let you
-establish access control checks for incoming traffic.</p>
-<p>For details, see
-<a href="https://docs.cloud.google.com/load-balancing/docs/auth-policy/auth-policy-overview">Authorization policy overview</a>.</p>
-<p>This feature is in <strong>General availability</strong>.</p>
-<h3 id="feature_3">Feature</h3>
 <p>Both internal passthrough Network Load Balancers and external passthrough Network Load Balancers support load balancing to managed
 instance groups (MIGs) comprised of IPv6-only VM instances.</p>
 <p>For more details, see the following pages:</p>
@@ -2162,7 +2168,7 @@ instance groups (MIGs) comprised of IPv6-only VM instances.</p>
 <p>This feature is in <strong>General availability</strong>.</p>
 <hr />
 <h2 id="2025-10-06">2025-10-06</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>Percentage-based request mirroring is now supported for the global and regional external Application Load Balancers (classic is not supported). By default, the mirrored backend service receives all requests, even if the original traffic is being split between multiple weighted backend services. You
 can now configure the mirrored backend service to receive only a percentage of the
 requests by using the <code>mirrorPercent</code> flag to specify the percentage of
@@ -2181,7 +2187,7 @@ requests to be mirrored, expressed as a value between 0 and 100.0.</p>
 <p>You are not expected to make any changes with this update. If a TLS handshake with HTTP/1.0 is unsuccessful, please contact <a href="https://cloud.google.com/load-balancing/docs/getting-support">support</a>.</p>
 <hr />
 <h2 id="2025-08-26">2025-08-26</h2>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>The internal and external passthrough Network Load Balancers now support load balancing to unmanaged instance groups comprised of IPv6-only VM instances.</p>
 <p>Protocol forwarding also supports IPv6-only target instances.</p>
 <p>For more details, see the following pages:</p>
@@ -2194,7 +2200,7 @@ requests to be mirrored, expressed as a value between 0 and 100.0.</p>
 <p>This feature is available in <strong>General Availability</strong>.</p>
 <hr />
 <h2 id="2025-08-05">2025-08-05</h2>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p>Cross-region internal Application Load Balancers can now route requests for static content to Cloud Storage buckets.</p>
 <p>For more information, see <a href="https://cloud.google.com/load-balancing/docs/l7-internal/setup-cross-region-internal-https-buckets">Set up a cross-region internal Application Load Balancer with Cloud Storage buckets</a>.</p>
 <p>This capability is now in <strong>General Availability</strong>.</p>
@@ -2209,12 +2215,12 @@ requests to be mirrored, expressed as a value between 0 and 100.0.</p>
 <p>For more information on the HTTP specification regarding headers with obs-fold values, review <a href="https://www.rfc-editor.org/rfc/rfc9112.html#section-5.2">RFC 9112, Section 5.2: Obsolete Line Folding</a>.</p>
 <hr />
 <h2 id="2025-07-28">2025-07-28</h2>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p>Global external Application Load Balancers now support the <a href="https://github.com/FoxIO-LLC/ja4/blob/main/technical_details/JA4.md">JA4 fingerprint</a>. The JA4 fingerprint can be added to a <a href="https://cloud.google.com/load-balancing/docs/https/custom-headers-global?variables#variables">custom request header</a> using the <code>tls_ja4_fingerprint</code> variable.</p>
 <p>This capability is now in <strong>General Availability</strong>.</p>
 <hr />
 <h2 id="2025-07-09">2025-07-09</h2>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p>Application Load Balancers and Proxy Network Load Balancers now support TLS certificates with large key sizes. Previously, these load balancers supported only certificates with RSA-2048 or ECDSA P-256 key types. With this update, you can now use self-managed certificates with RSA-3072, RSA-4096, and ECDSA P-384 keys.</p>
 <p><strong>Key details</strong>:</p>
 <ul>
@@ -2232,14 +2238,14 @@ requests to be mirrored, expressed as a value between 0 and 100.0.</p>
 <p>This capability is now in <strong>General Availability</strong>.</p>
 <hr />
 <h2 id="2025-07-08">2025-07-08</h2>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p>Zonal affinity, configured on the backend service of an internal passthrough Network Load Balancer, lets you limit cross-zone traffic, reduce latency, and improve performance, all while maintaining the benefits of a multi-zonal architecture.</p>
 <p>Internal passthrough Network Load Balancers support three zonal affinity options that offer varying degrees of preference for routing new connections to eligible backends that are in the same zone as a supported client.</p>
 <p>For more information, see <a href="https://cloud.google.com/load-balancing/docs/internal/zonal-affinity">Zonal affinity for internal passthrough Network Load Balancers</a>.</p>
 <p>This feature is in <strong>Preview</strong>.</p>
 <hr />
 <h2 id="2025-06-26">2025-06-26</h2>
-<h3 id="feature_10">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p>In typical HTTPS communication, neither the load balancer nor the backend verify each other's identity, assuming that they are within a secure perimeter and can be trusted. However, when perimeter security needs reinforcement or communication extends beyond the perimeter, backend mTLS becomes essential. Backend mTLS ensures secure communication by requiring both the load balancer and the backend to mutually verify their identities.</p>
 <p>With <em>backend authenticated TLS</em>, the load balancer verifies the backend server's certificate by checking its chain of trust, thereby confirming the backend's identity. Conversely, with <em>backend mTLS</em>, the backend server verifies the client certificate presented by the load balancer. Together, these mechanisms enable backend mTLS, ensuring that both parties validate each other's identity.</p>
 <p>Backend mTLS complements frontend mTLS, which is already generally available (GA).</p>
@@ -2252,16 +2258,16 @@ requests to be mirrored, expressed as a value between 0 and 100.0.</p>
 <p>This capability is in <strong>General Availability</strong> for global external Application Load Balancers.</p>
 <hr />
 <h2 id="2025-06-13">2025-06-13</h2>
-<h3 id="feature_11">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p>Cloud Load Balancing supports load balancing to multi-NIC instances that use <a href="https://cloud.google.com/vpc/docs/multiple-interfaces-concepts">Dynamic NICs</a>.</p>
 <p>This capability is in <strong>Preview</strong>.</p>
 <hr />
 <h2 id="2025-06-03">2025-06-03</h2>
-<h3 id="feature_12">Feature</h3>
+<h3 id="feature_11">Feature</h3>
 <p>Application Load Balancers now support the use of <em>custom metrics</em> that let you configure your load balancer's traffic distribution behavior to be based on metrics specific to your application or infrastructure requirements, rather than Google Cloud's standard utilization or rate-based metrics. Defining custom metrics for your load balancer gives you the flexibility to route application requests to the backend instances and endpoints that are most optimal for your workload.</p>
 <p>For more information, see <a href="https://cloud.google.com/load-balancing/docs/https/applb-custom-metrics">Custom metrics for Application Load Balancers</a>.</p>
 <p>This capability is in <strong>General availability</strong>.</p>
-<h3 id="feature_13">Feature</h3>
+<h3 id="feature_12">Feature</h3>
 <p>Cleartext HTTP/2 over TCP, also known as H2C, lets you use HTTP/2 without TLS. H2C is supported by internal and external Application Load Balancers for both of the following connections:</p>
 <ul>
 <li>Connections between clients and the load balancer. No special configuration is required. Support for this capability is already in <strong>General Availability</strong>.</li>

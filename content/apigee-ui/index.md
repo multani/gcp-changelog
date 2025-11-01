@@ -2,6 +2,10 @@
 
 ## 2025-10-30
 
+### Announcement
+
+On October 30, 2025, we released an updated version of the Apigee UI.
+
 ### Fixed
 
 | Bug ID | Description |
@@ -10,10 +14,6 @@
 
 ---
 ## 2025-10-07
-
-### Announcement
-
-On October 7, 2025, we released an updated version of the Apigee UI.
 
 ### Announcement
 

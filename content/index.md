@@ -146,6 +146,7 @@
 - [Network Security Integration](network-security-integration/index.md)
 - [Oracle Database@Google Cloud](oracle-database-google-cloud/index.md)
 - [Organization Policy](organization-policy/index.md)
+- [Organization Policy Service](organization-policy-service/index.md)
 - [Policy Controller](policy-controller/index.md)
 - [Policy Intelligence](policy-intelligence/index.md)
 - [Pub/Sub](pub-sub/index.md)

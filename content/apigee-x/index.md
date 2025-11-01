@@ -1,5 +1,27 @@
 # Apigee X
 
+## 2025-10-31
+
+### Announcement
+
+On October 31, 2025, we released an updated version of Apigee (1-16-0-apigee-4).
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+### Security
+
+| Bug ID | Description |
+| --- | --- |
+| **452621774, 452381632, 441266643, 448498138** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2025-53864](https://nvd.nist.gov/vuln/detail/CVE-2025-53864) Updated Nimbus JWT library from 9.37.2 to 9.37.4, which introduced changes in behavior including changes to error string verbiage. * [CVE-2025-8916](https://nvd.nist.gov/vuln/detail/CVE-2025-8916) * [CVE-2025-5115](https://nvd.nist.gov/vuln/detail/CVE-2025-5115) * [CVE-2024-40094](https://nvd.nist.gov/vuln/detail/CVE-2024-53864) |
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| **448647917** | **Fixed a issue where non-SSL connections through a forward proxy could be improperly shared.** |
+| **N/A** | **Updates to security, infrastructure, and libraries.** |
+
+---
 ## 2025-10-29
 
 ### Announcement

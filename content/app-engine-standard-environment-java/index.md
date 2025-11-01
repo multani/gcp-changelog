@@ -4,6 +4,10 @@
 
 ### Feature
 
+Support for [Java 25 runtime](https://docs.cloud.google.com/appengine/docs/standard/java-gen2/runtime) is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
 To improve email security and ensure reliable, high-volume email delivery,
 [migrate from the legacy Mail API to an SMTP-based email service](https://docs.cloud.google.com/appengine/migration-center/standard/java/mail-to-smtp), such as SendGrid, Mailgun, or Mailjet (Preview).
 

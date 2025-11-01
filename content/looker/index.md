@@ -1,5 +1,12 @@
 # Looker
 
+## 2025-10-31
+
+### Feature
+
+Looker (Google Cloud core) instances that use Private Service Connect now offer a simplified method for configuring outbound connections to external domains or the Looker Marketplace. For more information, see the [Configure outbound connections](https://cloud.google.com/looker/docs/looker-core-create-psc#configure-outbound) documentation.
+
+---
 ## 2025-10-23
 
 ### Feature

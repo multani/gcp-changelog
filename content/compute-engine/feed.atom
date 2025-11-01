@@ -2,9 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Compute Engine</title>
   <subtitle>Changelog for Google Cloud product: Compute Engine</subtitle>
-  <updated>2025-10-30T00:00:00+00:00</updated>
+  <updated>2025-10-31T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:compute-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/compute-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2025-10-31:fixed:0</id>
+    <published>2025-10-31T00:00:00+00:00</published>
+    <updated>2025-10-31T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20251030.02</code> includes fixes for the plugin-based architecture that is used by guest agent. For more information about the plugin-based architecture, see <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>
+<ul>
+<li>The Clock Skew module no longer causes time inconsistencies on VMs. The agent no longer attempts to synchronize the hardware clock (<code>hwclock</code>) when the VM's Real-time Clock (RTC) isn't set to Coordinated Universal Time 0(UTC). For more information about how the guest agent handles clock synchronization, see <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent-functions#clock-synchronization">Clock Synchronization</a>.</li>
+<li>The <a href="https://docs.cloud.google.com/network-connectivity/docs/interconnect/how-to/dedicated/creating-vlan-attachments">Dynamic VLAN</a> module now correctly sets up VLAN network interface cards (NICs). Dynamic VLAN connections now initialize reliably.</li>
+<li>The agent now prevents a race condition in network interface and route setup. Previously, routes were temporarily flushed if they were added before a DHCP lease was acquired. The agent now ensures routes persist correctly, preventing a brief period of missing routes. These routes were previously auto-corrected after approximately one minute.</li>
+</ul>]]></content>
+    <summary>Version 20251030.02 fixes issues with the plugin-based architecture for the guest agent, including the Clock Skew module, Dynamic VLAN setup, and network interface/route setup race conditions.</summary>
+    <title>Fixed: Guest agent fixes</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -84,21 +100,7 @@ information, see
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:compute-engine:2025-10-20:feature:0</id>
-    <published>2025-10-20T00:00:00+00:00</published>
-    <updated>2025-10-20T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Version <code>20251009.01</code> of the guest agent, which introduces the plugin-based
-architecture to Windows, is now available.</p>
-<p>For more information about the plugin-based architecture, see
-<a href="https://cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>]]></content>
-    <summary>The new Windows guest agent (version 20251009.01) now supports a plugin-based architecture.</summary>
-    <title>Feature: Guest agent plugin architecture for Windows</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:compute-engine:2025-10-20:security:1</id>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2025-10-20:security:0</id>
     <published>2025-10-20T00:00:00+00:00</published>
     <updated>2025-10-20T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>A vulnerability affecting AMD Zen 5 processors (Turin) was discovered and is
@@ -111,7 +113,7 @@ being addressed. For more information, see the
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:compute-engine:2025-10-20:feature:2</id>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2025-10-20:feature:1</id>
     <published>2025-10-20T00:00:00+00:00</published>
     <updated>2025-10-20T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Generally Available</strong>: The G4

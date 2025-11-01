@@ -1,5 +1,14 @@
 # Application Integration
 
+## 2025-10-31
+
+### Feature
+
+**Troubleshoot failed execution logs using AI**
+
+You can now use AI-powered troubleshooting with Google Gemini to analyze failed execution logs, identify root causes, and receive precise, actionable steps to resolve errors. To use this feature, you must enable AI capabilities in your Google Cloud region. For more information, see  [Troubleshoot failed execution logs using AI](https://cloud.google.com/application-integration/docs/troubleshoot-execution-logs-using-AI).
+
+---
 ## 2025-10-10
 
 ### Feature

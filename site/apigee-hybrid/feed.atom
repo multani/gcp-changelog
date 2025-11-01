@@ -72,7 +72,8 @@
     <updated>2025-10-12T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>| Bug ID | Description |
 | --- | --- |
-| <strong>451375397</strong> | <strong>The <code>apigee-pull-push.sh</code> script could return a No such image error message.</strong> |
+| <strong>451841788</strong> | <strong>Apigee hybrid required the <code>mintTaskScheduler.serviceAccountPath</code> property even when Monetization was not enabled.</strong> |
+| <strong>451375397</strong> | <strong>The <code>apigee-pull-push.sh</code> script could return a "No such image error" message.</strong> |
 | <strong>445912919</strong> | <strong>Unused files and folders have been removed from the Apigee hybrid Helm charts to prevent potential security exposure and streamline the product installation and upgrade process.</strong> |
 | <strong>442501403</strong> | <strong>Fixed an issue that caused incorrect target latency metrics in Apigee Analytics when a <code>TargetEndpoint</code> is configured with a <code>&lt;LoadBalancer&gt;</code>.</strong> |
 | <strong>437999897</strong> | <strong>Reduced the log level for failed geo IP lookups to address excessive log messages for private IP addresses.</strong> |
@@ -85,7 +86,7 @@
 | <strong>409048431</strong> | <strong>Fixes a vulnerability which could allow a SAML signature verification to be bypassed.</strong> |
 | <strong>378686709</strong> | <strong>The use of wildcards (*) in Apigee proxy basepaths would conflict with other explicit basepaths, resulting in a 404 error.</strong> To apply this fix, follow the procedure in <a href="https://cloud.google.com/apigee/docs/release/known-issues#378686709">Known issue 378686709</a>. |
 | <strong>367815792</strong> | <strong>Two new Flow Variables: <code>app_group_app</code> and <code>app_group_name</code> have been added to VerifyApiKey and Access Token policy.</strong> |</p>]]></content>
-    <summary>This release includes several fixes for Apigee Hybrid, addressing issues related to scripting errors, security vulnerabilities, metric accuracy, log management, and compatibility. Key fixes include resolving "No such image" errors in scripts, removing unused files from Helm charts, correcting target latency metrics, reducing log levels for geo IP lookups, and ensuring proper handling of forward proxy configurations. Additionally, updates have been made to support correct insert operations for AppGroupAppKey scopes, fix Cassandra-based replication, improve Mint-Mart forward proxy compatibility, resolve issues with istio.io CRDs, ensure zipkin header generation, fix SAML signature verification bypass vulnerabilities, address conflicts with wildcards in proxy basepaths, and add new flow variables to policy. </summary>
+    <summary>This release includes several fixes for Apigee Hybrid, addressing issues with Monetization, deployment scripts, security, metrics, logging, proxy configurations, and more. Key fixes include resolving incorrect target latency metrics, reducing excessive log messages, ensuring proper handling of forward proxy settings, and patching a SAML signature verification vulnerability.</summary>
     <title>Fixed: Apigee Hybrid Fixes</title>
   </entry>
   <entry>

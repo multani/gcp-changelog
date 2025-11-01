@@ -46,7 +46,8 @@ For more information on using these policies in your Apigee API proxies, see:
 
 | Bug ID | Description |
 | --- | --- |
-| **451375397** | **The `apigee-pull-push.sh` script could return a No such image error message.** |
+| **451841788** | **Apigee hybrid required the `mintTaskScheduler.serviceAccountPath` property even when Monetization was not enabled.** |
+| **451375397** | **The `apigee-pull-push.sh` script could return a "No such image error" message.** |
 | **445912919** | **Unused files and folders have been removed from the Apigee hybrid Helm charts to prevent potential security exposure and streamline the product installation and upgrade process.** |
 | **442501403** | **Fixed an issue that caused incorrect target latency metrics in Apigee Analytics when a `TargetEndpoint` is configured with a `<LoadBalancer>`.** |
 | **437999897** | **Reduced the log level for failed geo IP lookups to address excessive log messages for private IP addresses.** |

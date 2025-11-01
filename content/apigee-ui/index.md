@@ -1,6 +1,19 @@
 # Apigee UI
 
+## 2025-10-30
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| 443120120 | **Fixed an issue where an incorrect target URL or cURL command was displayed in the proxy debug properties window.**  New generated debug sessions now contain information in a flow info event that describes the values used by the proxy to call the target endpoint. The debug UI displays these values and uses them to generate the target URL and curl command displayed in the debug properties window when the target request event is selected. If some of the header fields are masked in the debug session, a warning appears next to the **Copy cURL** button. If the headers are truncated due to system limitations, **Copy cURL** is disabled.  Older debug sessions that do not have the new target endpoint information no longer attempt to display the target URL or generate a cURL command as they were unreliable. A dialog is displayed warning you of this when attempting to open older debug sessions. |
+
+---
 ## 2025-10-07
+
+### Announcement
+
+On October 7, 2025, we released an updated version of the Apigee UI.
 
 ### Announcement
 

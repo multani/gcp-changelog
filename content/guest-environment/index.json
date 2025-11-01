@@ -1,6 +1,16 @@
 {
   "name": "Guest Environment",
   "entries": {
+    "2025-10-31": [
+      {
+        "kind": "Fixed",
+        "content": "Version `20251030.02` includes fixes for the plugin-based architecture that is used by guest agent. For more information about the plugin-based architecture, see [Guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent).\n\n* The Clock Skew module no longer causes time inconsistencies on VMs. The agent no longer attempts to synchronize the hardware clock (`hwclock`) when the VM's Real-time Clock (RTC) isn't set to Coordinated Universal Time 0(UTC). For more information about how the guest agent handles clock synchronization, see [Clock Synchronization](https://docs.cloud.google.com/compute/docs/images/guest-agent-functions#clock-synchronization).\n* The [Dynamic VLAN](https://docs.cloud.google.com/network-connectivity/docs/interconnect/how-to/dedicated/creating-vlan-attachments) module now correctly sets up VLAN network interface cards (NICs). Dynamic VLAN connections now initialize reliably.\n* The agent now prevents a race condition in network interface and route setup. Previously, routes were temporarily flushed if they were added before a DHCP lease was acquired. The agent now ensures routes persist correctly, preventing a brief period of missing routes. These routes were previously auto-corrected after approximately one minute.",
+        "summary": {
+          "title": "Guest agent fixes for plugin architecture",
+          "summary": "Version 20251030.02 addresses issues in the guest agent's plugin architecture. Fixes include resolving clock skew, improving Dynamic VLAN setup, and preventing race conditions in network interface and route configuration."
+        }
+      }
+    ],
     "2025-10-21": [
       {
         "kind": "Fixed",
@@ -11,16 +21,6 @@
         }
       }
     ],
-    "2025-10-20": [
-      {
-        "kind": "Feature",
-        "content": "Version `20251009.01` of the guest agent, which introduces the plugin-based\narchitecture to Windows, is now available.\n\nFor more information about the plugin-based architecture, see\n[Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).",
-        "summary": {
-          "title": "Guest agent plugin architecture for Windows",
-          "summary": "Version 20251009.01 of the guest agent is now available, introducing a new plugin-based architecture for Windows."
-        }
-      }
-    ],
     "2025-10-02": [
       {
         "kind": "Feature",
@@ -28,6 +28,16 @@
         "summary": {
           "title": "Guest agent plugin architecture for Debian 11",
           "summary": "The latest version of the guest agent (20250930.01) now supports a plugin-based architecture on Debian 11."
+        }
+      }
+    ],
+    "2025-10-20": [
+      {
+        "kind": "Feature",
+        "content": "Version `20251009.01` of the guest agent, which introduces the plugin-based\narchitecture to Windows, is now available.\n\nFor more information about the plugin-based architecture, see\n[Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).",
+        "summary": {
+          "title": "Guest agent plugin architecture for Windows",
+          "summary": "Version 20251009.01 of the guest agent is now available, introducing a new plugin-based architecture for Windows."
         }
       }
     ],

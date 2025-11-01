@@ -1,5 +1,24 @@
 # Cloud Load Balancing
 
+## 2025-10-31
+
+### Changed
+
+The global and classic external Application Load Balancers implemented on
+Google Front-Ends (GFEs) now reject TLS connections when the client and the load
+balancer support ALPN (Application-Layer Protocol Negotiation), but don't share
+common ALPN protocols.
+
+Previously, if a client proposed a list of application protocols during the TLS
+handshake using the ALPN extension and none were supported by the load balancer,
+ALPN would be deactivated and the connection would default to using HTTP/1 as
+the default application protocol. After this update, the GFE instead returns
+an `SSL_TLSEXT_ERR_ALERT_FATAL` response which causes the load balancer to
+terminate the TLS handshake, and the connection to close. This change ensures
+that an application-layer protocol is always explicitly negotiated between the
+clients and the load balancers that support ALPN.
+
+---
 ## 2025-10-29
 
 ### Feature
@@ -15,6 +34,16 @@ This feature is in **General availability**.
 
 ---
 ## 2025-10-28
+
+### Feature
+
+Application Load Balancers support authorization policies that let you
+establish access control checks for incoming traffic.
+
+For details, see
+[Authorization policy overview](https://docs.cloud.google.com/load-balancing/docs/auth-policy/auth-policy-overview).
+
+This feature is in **General availability**.
 
 ### Feature
 

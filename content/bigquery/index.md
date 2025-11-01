@@ -1,5 +1,14 @@
 # BigQuery
 
+## 2025-10-31
+
+### Feature
+
+We have [increased the row capacity](https://workspaceupdates.googleblog.com/2025/10/powerful-pivot-tables-connected-sheets.html)
+for pivot tables backed by BigQuery in [Connected Sheets](https://docs.cloud.google.com/bigquery/docs/connected-sheets)
+from 100,000 to 200,000 rows.
+
+---
 ## 2025-10-30
 
 ### Feature

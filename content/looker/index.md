@@ -78,6 +78,10 @@ The Athena JDBC driver version has been upgraded from 2.1.5 to 2.2.2. The Athena
 
 ### Fixed
 
+An issue has been fixed where non-string values that were entered in the expression element of the `dynamic_fields` section of a LookML dashboard could cause the LookML validator to crash. This feature now performs as expected.
+
+### Fixed
+
 An issue has been fixed where subtotal values could display incorrect values after a filter was added or updated. This feature now performs as expected.
 
 ### Fixed
@@ -143,10 +147,6 @@ Looker 25.18 contains the following accessibility improvements:
 ### Fixed
 
 An issue has been fixed where, when dashboard filters were updated, column widths could resize on table visualizations that included pivoted values. This feature now performs as expected.
-
-### Fixed
-
-An issue has been fixed where non-string values that were entered in the expression element of the `dynamic_fields` section of a LookML dashboard could cause the LookML validator to crash. This feature now performs as expected.
 
 ### Feature
 

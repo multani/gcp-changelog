@@ -2,9 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee UI</title>
   <subtitle>Changelog for Google Cloud product: Apigee UI</subtitle>
-  <updated>2025-10-07T00:00:00+00:00</updated>
+  <updated>2025-10-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-ui</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-ui/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-ui:2025-10-30:fixed:0</id>
+    <published>2025-10-30T00:00:00+00:00</published>
+    <updated>2025-10-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| 443120120 | <strong>Fixed an issue where an incorrect target URL or cURL command was displayed in the proxy debug properties window.</strong>  New generated debug sessions now contain information in a flow info event that describes the values used by the proxy to call the target endpoint. The debug UI displays these values and uses them to generate the target URL and curl command displayed in the debug properties window when the target request event is selected. If some of the header fields are masked in the debug session, a warning appears next to the <strong>Copy cURL</strong> button. If the headers are truncated due to system limitations, <strong>Copy cURL</strong> is disabled.  Older debug sessions that do not have the new target endpoint information no longer attempt to display the target URL or generate a cURL command as they were unreliable. A dialog is displayed warning you of this when attempting to open older debug sessions. |</p>]]></content>
+    <summary>Resolved an issue with incorrect URL and cURL commands in proxy debug properties. Debug sessions now provide accurate information for target URLs and cURL commands, with warnings for masked or disabled fields.</summary>
+    <title>Fixed: Proxy Debug Properties Update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -20,7 +33,18 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:apigee-ui:2025-10-07:feature:1</id>
+    <id>urn:github:multani:gcp-changelog:apigee-ui:2025-10-07:announcement:1</id>
+    <published>2025-10-07T00:00:00+00:00</published>
+    <updated>2025-10-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On October 7, 2025, we released an updated version of the Apigee UI.</p>]]></content>
+    <summary>An updated version of the Apigee UI was released on October 7, 2025.</summary>
+    <title>Announcement: Updated Apigee UI Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-ui:2025-10-07:feature:2</id>
     <published>2025-10-07T00:00:00+00:00</published>
     <updated>2025-10-07T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Output from print statements is now displayed in the Debug session viewer</strong>  </p>

@@ -1,5 +1,16 @@
 # AlloyDB for PostgreSQL
 
+## 2025-10-31
+
+### Announcement
+
+The `alloydb_scann` extension version `0.1.3` is updated to include the following vector search improvements, which are now Generally Available ([GA](https://cloud.google.com/products#product-launch-stages)):
+
+* The columnar engine now automatically includes vector columns in searches, so you don't need to add them to the table manually.
+  For more information, see [Perform a vector search](https://docs.cloud.google.com/alloydb/docs/ai/perform-vector-search#accelerate-filtered-vector-search).
+* You can use the `pg_stat_ann_index_creation` view for metrics about the number of rows at index creation. For more information, see [Vector index metrics](https://docs.cloud.google.com/alloydb/docs/ai/tune-indexes?resource=scann#vector-index-metrics).
+
+---
 ## 2025-10-30
 
 ### Feature

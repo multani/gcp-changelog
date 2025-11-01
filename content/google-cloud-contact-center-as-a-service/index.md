@@ -1,5 +1,106 @@
 # Google Cloud Contact Center as a Service
 
+## 2025-10-31
+
+### Announcement
+
+**Google Cloud CCaaS 3.40**
+
+We've released version 3.40 of Google Cloud CCaaS, including the web SDK.
+
+The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see [Deployment schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**New variables for custom lookup URLs**
+
+We've added the following five variables for custom lookup URLs:
+
+* **CUSTOMER\_PHONE\_NUMBER**: the end-user's phone number
+* **SUPPORT\_PHONE\_NUMBER**: your call center's phone number that an end-user calls in on
+* **OUTBOUND\_NUMBER**: the phone number an agent uses when making an outbound call
+* **SESSION\_ID**: the session ID
+* **CUSTOM\_AGENT\_ID**: an optional agent ID
+
+For more information, see [Custom lookup URL configuration](https://docs.cloud.google.com/contact-center/ccai-platform/docs/custom-crm#custom_lookup_url_configuration).
+
+### Feature
+
+**Agent desktop maintains state after refresh**
+
+While you're using the agent desktop, if you refresh your browser, the agent desktop now maintains its state. This means that active conversations, finished tabs, and recently closed sessions remain as they were before the refresh.
+
+### Feature
+
+**Search in email channel by email address and name**
+
+Agents can now search for email sessions by email address and name in the email adapter.
+
+User experience change: The search pane in the email adapter includes two new fields: **Email Address** and **Name**.
+
+For more information, see [Search for emails](https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-adapter#search-for-emails).
+
+### Feature
+
+**Customize the color of the Start Screen Share button**
+
+You can now control the color of the **Start Screen Share** button to match the color palette of your brand. For more information, see [Customize the Start Screen Share button](https://docs.cloud.google.com/contact-center/ccai-platform/docs/cobrowse#customize-start-screen-share-button).
+
+### Feature
+
+**The europe-west4 and europe-west6 regions are available for Agent Assist conversation profiles**
+
+The `europe-west4` and `europe-west6` regions are now available when you create an Agent Assist conversation profile for a Dialogflow CX virtual agent. For more information, see [Create conversation profile for Dialogflow CX virtual agents](https://cloud.google.com/contact-center/ccai-platform/docs/create-a-dialogflow-agent#create-cp).
+
+### Feature
+
+**Web SDK: Support for hiding the download transcript option**
+
+You can now configure the web SDK to do the following on the end-user's chat screen:
+
+* [Hide the command to download a transcript during a session](https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-getting-started#hide-command-to-download-transcript-during-session).
+* [Hide the button to download a transcript at the end of a session](https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-getting-started#hide-button-to-download-transcript-at-end-of-session).
+
+### Feature
+
+**Web SDK: Support for hiding the Start a new conversation button**
+
+You can now configure the web SDK to hide the **Start a new conversation** button on the end-user's chat screen after the session ends. For more information, see [Hide the button to download a transcript at the end of a session](https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-getting-started#hide-start-new-conversation-button).
+
+### Fixed
+
+The following issues were addressed in this release:
+
+* Fixed an issue that prevented administrators from configuring virtual agents on the top level for IVR queues.
+* Fixed an issue where attempting to configure automatic redirection settings for the top level of an IVR queue returned an error.
+* Fixed in issue that caused incorrect agent monitoring and reporting data when a virtual agent escalated a call to a queue in a different language.
+* Fixed issue for HubSpot users where the call adapter got stuck on a non-functional reconnect page after a session expired.
+* Fixed an issue for HubSpot users where the **Delay call record creation until the call is connected to agent** checkbox didn't appear in the **CRM Record Creation Details** pane.
+* Fixed an issue that prevented agents from ending direct SMS chat sessions.
+* Fixed an issue for Microsoft Windows 11 users that prevented agents from entering Japanese characters in the chat screen during chat sessions and into the notes during wrap-up.
+* Fixed an issue where SDK custom data that was passed using the web SDK didn't appear in the agent adapter.
+* Fixed an issue that prevented custom links entered in the chat adapter from being converted into clickable links.
+* Fixed an issue in the chat screen of the chat adapter where the **Missed target response time** message was partially obscured by the formatting toolbar.
+* Fixed an issue where agents couldn't initiate a callback to a missed agent-to-agent call from the **History** tab of the agent adapter.
+* Fixed an issue where predictive outbound calling campaigns stalled and incorrectly moved contacts to the **Redialed** list before retrying them. This prevented the campaigns from completing successfully.
+* Fixed an issue in the **Call Details** pane where the **Recording Message Sequence** settings were incorrectly inactive when the **Play Call Recording Messages** checkboxes were cleared.
+
+  Administrators: In the **Call Details** pane, we changed **Recording Message Sequence** to **Recording Message Sequence for Outbound Calls** for clarity.
+* Fixed an issue where the customized greeting for an automatic redirection rule didn't play for calls that entered the queue using a Direct Access Phone (DAP) number.
+* Fixed an issue that occurred when a call was made from the global contact list. On the **Details** tab of the call adapter, the destination name didn't display. Instead, the destination phone number displayed.
+* Fixed an agent desktop issue where an agent status that was configured with a role restriction mistakenly appeared in the status list for a user assigned to that restricted role.
+* Fixed an issue where searching for an inbound-only queue on the **Phone Number Management** page failed to return a result.
+* Fixed an issue that caused queue duration and wait duration to be reported as `0`. This occurred when the **Call Service Level Target** on a queue settings page was set to a number that exceeded the maximum allowed limit.
+* Fixed an issue where a team assigned to a preference profile added only 1 user to the profile's users count, instead of adding the total number of users on the team.
+* Fixed an issue where agents were timed out for inactivity while composing an email in the email adapter.
+* Fixed an issue where users with a custom role were unable to save changes in the **Chat Settings** pane, even when their role had **View** and **Edit** permissions.
+* Fixed an issue that occurred after an agent configured their own hours of operation settings in the agent adapter. Those settings didn't appear for administrators in the agent's user profile on the **Settings > Users & Team > Manage Users & Teams** page. This prevented the administrator from making other edits to the agent's profile without overwriting the agent's hours of operation settings.
+* Fixed an issue where CRM tickets weren't created for some calls.
+* Fixed an issue where outbound SIP calls incorrectly appended data parameters, causing calls to fail.
+* Fixed a Web SDK security vulnerability associated with DOMPurify.
+* Fixed an issue where chat metadata wasn't saved to external storage. This occurred when an end-user ended a chat after escalating from a virtual agent but before being connected to a human agent.
+
+---
 ## 2025-10-30
 
 ### Announcement

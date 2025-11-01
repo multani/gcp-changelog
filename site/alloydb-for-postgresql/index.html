@@ -2112,6 +2112,15 @@
 
 
 <h1 id="alloydb-for-postgresql">AlloyDB for PostgreSQL</h1>
+<h2 id="2025-10-31">2025-10-31</h2>
+<h3 id="announcement">Announcement</h3>
+<p>The <code>alloydb_scann</code> extension version <code>0.1.3</code> is updated to include the following vector search improvements, which are now Generally Available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>):</p>
+<ul>
+<li>The columnar engine now automatically includes vector columns in searches, so you don't need to add them to the table manually.
+  For more information, see <a href="https://docs.cloud.google.com/alloydb/docs/ai/perform-vector-search#accelerate-filtered-vector-search">Perform a vector search</a>.</li>
+<li>You can use the <code>pg_stat_ann_index_creation</code> view for metrics about the number of rows at index creation. For more information, see <a href="https://docs.cloud.google.com/alloydb/docs/ai/tune-indexes?resource=scann#vector-index-metrics">Vector index metrics</a>.</li>
+</ul>
+<hr />
 <h2 id="2025-10-30">2025-10-30</h2>
 <h3 id="feature">Feature</h3>
 <p>AlloyDB offers enhanced backups
@@ -2146,7 +2155,7 @@ scan query plans for query performance and reduces IO costs. This feature
 is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
 <hr />
 <h2 id="2025-09-29">2025-09-29</h2>
-<h3 id="announcement">Announcement</h3>
+<h3 id="announcement_1">Announcement</h3>
 <p>The <code>alloydb_scann</code> extension version <code>0.1.3</code> is updated to include the following vector search improvements in (<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>):</p>
 <ul>
 <li>You can now <a href="https://docs.cloud.google.com/alloydb/docs/ai/create-scann-index">automatically create ScaNN indexes</a> that are optimized for search performance or for a balance between index build times and search performance with the auto index feature.</li>
@@ -2222,7 +2231,7 @@ You can <a href="https://cloud.google.com/alloydb/docs/cluster-create#procedure"
 with PostgreSQL 17 compatibility.</p>
 <hr />
 <h2 id="2025-07-23">2025-07-23</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p><a href="https://cloud.google.com/alloydb/omni/current/docs">AlloyDB Omni</a>
 version 16.8.0 is generally available
 (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>). Version 16.8.0
@@ -2241,7 +2250,7 @@ includes the following features and changes:</p>
 <li><a href="https://en.wikipedia.org/wiki/Active_Directory">Active Directory</a> authentication integration is generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>), providing robust user authentication for your database clusters. For more information, see <a href="https://cloud.google.com/alloydb/omni/16.8.0/docs/integrate-active-directory">Integrate Active Directory with AlloyDB Omni</a>.</li>
 <li>Active Directory group-based authorization is available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>, enabling granular permission management based on your Active Directory groups. For more information, see <a href="https://cloud.google.com/alloydb/omni/16.8.0/docs/integrate-ad-group-support-alloydb-omni">Integrate Active Directory group support with AlloyDB Omni</a>.</li>
 </ul>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p><a href="https://cloud.google.com/alloydb/omni/current/docs">AlloyDB Omni</a>
 version 15.12.0 is generally available
 (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>). Version 15.12.0
@@ -2256,7 +2265,7 @@ includes the following features and changes:</p>
   more information, see
   <a href="https://cloud.google.com/alloydb/omni/15.12.0/docs/columnar-engine/configure">Configure the columnar engine in AlloyDB Omni</a>.</li>
 </ul>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p>The <a href="https://cloud.google.com/alloydb/omni/current/docs/deploy-kubernetes">AlloyDB Omni Kubernetes operator</a> version 1.5.0 is generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>) and includes the following features and bug fixes:</p>
 <ul>
 <li>You can install the operator using the <a href="https://olm.operatorframework.io/">Operator Lifecycle Manager (OLM)</a> for Kubernetes and OpenShift environments. See "Install the AlloyDB Omni operator" for AlloyDB Omni <a href="https://cloud.google.com/alloydb/omni/15.12.0/docs/deploy-kubernetes#olm">15.12.0</a> and <a href="https://cloud.google.com/alloydb/omni/16.8.0/docs/deploy-kubernetes#olm">16.8.0</a> for details.</li>
@@ -2322,6 +2331,9 @@ generally available
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#alloydb-for-postgresql">AlloyDB for PostgreSQL</a></li>
+          <li class="nav-item">
+            <a href="#2025-10-31" class="nav-link">2025-10-31</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-10-30" class="nav-link">2025-10-30</a>
           </li>

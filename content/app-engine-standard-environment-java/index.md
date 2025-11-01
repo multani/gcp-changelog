@@ -1,5 +1,13 @@
 # App Engine standard environment Java
 
+## 2025-10-31
+
+### Feature
+
+To improve email security and ensure reliable, high-volume email delivery,
+[migrate from the legacy Mail API to an SMTP-based email service](https://docs.cloud.google.com/appengine/migration-center/standard/java/mail-to-smtp), such as SendGrid, Mailgun, or Mailjet (Preview).
+
+---
 ## 2025-08-07
 
 ### Feature

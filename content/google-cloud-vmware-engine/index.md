@@ -1,5 +1,12 @@
 # Google Cloud VMware Engine
 
+## 2025-10-31
+
+### Announcement
+
+VMware Engine `ve1` nodes are now available in the Mumbai, India (`asia-south1-b`) zone in the Mumbai region (`asia-south1`).
+
+---
 ## 2025-10-03
 
 ### Announcement

@@ -1,5 +1,24 @@
 # Resource Manager
 
+## 2025-10-30
+
+### Feature
+
+You can use custom constraints with Organization Policy to provide more granular control over specific fields for some Datastream resources. For more information, see [Create custom organization policy constraints](https://docs.cloud.google.com/datastream/docs/custom-constraints). This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+### Feature
+
+You can use custom constraints with Organization Policy to provide more granular control over specific fields for some CA Service resources. For more information, see [Manage CA Service resources using custom constraints](https://docs.cloud.google.com/certificate-authority-service/docs/custom-constraints). This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+### Feature
+
+You can use custom constraints with Organization Policy to provide more granular control over specific fields for some BigQuery sharing resources. For more information, see [Manage Sharing data exchanges and listings using custom constraints](https://docs.cloud.google.com/bigquery/docs/analytics-hub-custom-constraints). This feature is in [preview](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+You can use custom constraints with Organization Policy to provide more granular control over specific fields for managed workload identities. For more information, see [Use custom organization policies for Managed workload identities](https://docs.cloud.google.com/iam/docs/managed-workload-identity-custom-constraints). This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+---
 ## 2025-10-14
 
 ### Feature

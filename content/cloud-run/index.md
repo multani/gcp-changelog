@@ -1,5 +1,12 @@
 # Cloud Run
 
+## 2025-10-31
+
+### Feature
+
+Support for [Java 25 runtime](https://docs.cloud.google.com/run/docs/runtime-support#java) is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-10-30
 
 ### Feature

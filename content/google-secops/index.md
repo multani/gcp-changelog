@@ -1,5 +1,23 @@
 # Google SecOps
 
+## 2025-10-31
+
+### Changed
+
+**Custom log type rename**
+
+From now on, all custom log types will be renamed with the custom suffix to prevent confusion with prebuilt log types. The following custom log types already reflect the new naming convention:
+
+* HUAWEI\_SECMASTER\_CUSTOM
+* GTI\_THREAT\_FEED\_CUSTOM
+* GTI\_IOC\_STREAM\_CUSTOM
+* ABSOLUTE\_SECURE\_ENDPOINT\_CUSTOM
+* GTI\_IOC\_CUSTOM
+* IBM\_ILO\_CUSTOM
+* GCP\_THREATINTEL\_CUSTOM
+* SAP\_ETD\_CUSTOM
+
+---
 ## 2025-10-30
 
 ### Feature

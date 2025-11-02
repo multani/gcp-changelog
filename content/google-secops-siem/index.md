@@ -1,10 +1,52 @@
 # Google SecOps SIEM
 
+## 2025-11-02
+
+### Announcement
+
+Release 6.3.66 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains internal and customer bug fixes.
+
+---
 ## 2025-11-01
 
 ### Announcement
 
 [Release 6.3.65](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#October_26_2025) is now available for all regions.
+
+---
+## 2025-10-31
+
+### Changed
+
+**Custom log type rename**
+
+From now on, all custom log types will be renamed with the custom suffix to prevent confusion with prebuilt log types. The following custom log types already reflect the new naming convention:
+
+* HUAWEI\_SECMASTER\_CUSTOM
+* GTI\_THREAT\_FEED\_CUSTOM
+* GTI\_IOC\_STREAM\_CUSTOM
+* ABSOLUTE\_SECURE\_ENDPOINT\_CUSTOM
+* GTI\_IOC\_CUSTOM
+* IBM\_ILO\_CUSTOM
+* GCP\_THREATINTEL\_CUSTOM
+* SAP\_ETD\_CUSTOM
+
+### Changed
+
+**Custom log type rename**
+
+From now on, all custom log types will be renamed with the custom suffix to prevent confusion with prebuilt log types. The following custom log types already reflect the new naming convention:
+
+* HUAWEI\_SECMASTER\_CUSTOM
+* GTI\_THREAT\_FEED\_CUSTOM
+* GTI\_IOC\_STREAM\_CUSTOM
+* ABSOLUTE\_SECURE\_ENDPOINT\_CUSTOM
+* GTI\_IOC\_CUSTOM
+* IBM\_ILO\_CUSTOM
+* GCP\_THREATINTEL\_CUSTOM
+* SAP\_ETD\_CUSTOM
 
 ---
 ## 2025-10-30

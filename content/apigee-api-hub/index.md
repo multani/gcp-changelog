@@ -1,5 +1,16 @@
 # Apigee API hub
 
+## 2025-11-03
+
+### Issue
+
+**API hub provisioning fails in data residency enabled Apigee organizations**
+
+Currently, API hub can't be provisioned within an Apigee organization that has data residency enabled. Attempts to provision API hub in a data residency-enabled Apigee organization will result in a timeout error.
+
+**Workaround:** There is no workaround available at this time. If your existing Apigee organization has data residency enabled, you will not be able to provision API hub until this limitation is resolved in a future release.
+
+---
 ## 2025-10-28
 
 ### Feature

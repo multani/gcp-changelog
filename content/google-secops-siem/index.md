@@ -259,6 +259,12 @@ The following rules have been added to the rulepack:
 ---
 ## 2025-10-26
 
+### Feature
+
+**Delete high-load SOAR environments**
+
+You can now easily delete environments with heavy loads directly from the platform.
+
 ### Announcement
 
 Release 6.3.65 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).

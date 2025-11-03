@@ -2124,6 +2124,12 @@
 
 
 <h1 id="apigee-api-hub">Apigee API hub</h1>
+<h2 id="2025-11-03">2025-11-03</h2>
+<h3 id="issue">Issue</h3>
+<p><strong>API hub provisioning fails in data residency enabled Apigee organizations</strong></p>
+<p>Currently, API hub can't be provisioned within an Apigee organization that has data residency enabled. Attempts to provision API hub in a data residency-enabled Apigee organization will result in a timeout error.</p>
+<p><strong>Workaround:</strong> There is no workaround available at this time. If your existing Apigee organization has data residency enabled, you will not be able to provision API hub until this limitation is resolved in a future release.</p>
+<hr />
 <h2 id="2025-10-28">2025-10-28</h2>
 <h3 id="feature">Feature</h3>
 <p><strong>API insights in API hub</strong></p>
@@ -2215,7 +2221,7 @@
 <p><strong>Create custom plugins [API only]</strong></p>
 <p>You can now use the <code>Create Plugin</code> API to create custom plugins in API hub. Custom plugins are created manually to connect API hub to a specific API data source.</p>
 <p>For more information, see <a href="https://cloud.google.com/apigee/docs/apihub/create-custom-plugins">Create custom plugins</a>.</p>
-<h3 id="issue">Issue</h3>
+<h3 id="issue_1">Issue</h3>
 <p><strong>Default Apigee plugin instance not auto-created during runtime attachment</strong></p>
 <p><strong>Issue:</strong> When provisioning API hub as part of Apigee provisioning, the default <code>Apigee X and hybrid</code> plugin instance is not automatically created. This prevents API proxies from being auto-registered.</p>
 <p><strong>Workaround:</strong> You can manually attach an Apigee runtime instance and import the Apigee assets. See <a href="https://cloud.google.com/apigee/docs/apihub/auto-register-apigee-proxies#attach-a-runtime-project">Attach a runtime project</a>.</p>
@@ -2302,6 +2308,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#apigee-api-hub">Apigee API hub</a></li>
+          <li class="nav-item">
+            <a href="#2025-11-03" class="nav-link">2025-11-03</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-10-28" class="nav-link">2025-10-28</a>
           </li>

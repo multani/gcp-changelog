@@ -92,6 +92,15 @@ The following rules have been added to the rulepack:
 * Chrome Suspicious Download Event from Newly Observed Domain in Environment
 
 ---
+## 2025-10-26
+
+### Feature
+
+**Delete high-load SOAR environments**
+
+You can now easily delete environments with heavy loads directly from the platform.
+
+---
 ## 2025-10-21
 
 ### Announcement

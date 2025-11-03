@@ -1,6 +1,26 @@
 # Document AI
 
+## 2025-10-31
+
+### Feature
+
+[Custom splitter](https://docs.cloud.google.com/document-ai/docs/custom-splitter) model
+`pretrained-splitter-v1.5-2025-07-14` with zero-shot splitting, classification
+and confidence scores is available as Release Candidate
+([Preview](https://cloud.google.com/products/#product-launch-stages)).
+
+---
 ## 2025-10-06
+
+### Announcement
+
+Capacity reservation is available for Document AI in
+[preview](https://cloud.google.com/products/#product-launch-stages). This lets you
+grant capacity to selected processors and maintain a steady real-time, high-volume
+processing flow for document processing requests.
+
+For the necessary steps, read [make a capacity reservation
+request](https://cloud.google.com/document-ai/quotas#capacity-reservation).
 
 ### Feature
 

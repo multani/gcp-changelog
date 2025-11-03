@@ -1,5 +1,18 @@
 # Media CDN
 
+## 2025-11-03
+
+### Feature
+
+Media CDN supports flexible shielding. You can specify a single
+geographic region for origin shielding. This way, cache fills route through
+this configured region, offering a more efficient configuration for centralized
+origins than the default user-location-based approach.
+This feature is **Generally Available**.
+
+For more information, see [flexible shielding](https://docs.cloud.google.com/media-cdn/docs/origins#flex-shielding).
+
+---
 ## 2025-10-10
 
 ### Feature

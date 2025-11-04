@@ -1,5 +1,16 @@
 # Apigee API hub
 
+## 2025-11-04
+
+### Feature
+
+**Filter APIs by user-defined attributes**
+
+You can now filter APIs using your custom, user-defined attributes from the **APIs** page in the Google Cloud console.
+
+For more information, see [Filter resources based on attributes](https://docs.cloud.google.com/apigee/docs/apihub/manage-attributes#filter-resources).
+
+---
 ## 2025-11-03
 
 ### Issue

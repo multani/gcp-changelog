@@ -1,5 +1,17 @@
 # Compute Engine
 
+## 2025-11-02
+
+### Feature
+
+If ensuring time synchronization with very high accuracy and monitoring the
+accuracy of your time synchronization are important goals for your
+Compute Engine instances, you can sync your VM's clock with its host server's
+clock by using `chrony` and `ptp_kvm`. This configuration is designed to achieve
+accuracy within 1 ms for supported setups. For more information, see
+[Configure accurate time for Compute Engine VMs](https://docs.cloud.google.com/compute/docs/instances/time-synchronization).
+
+---
 ## 2025-10-31
 
 ### Fixed

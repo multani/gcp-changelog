@@ -1,5 +1,13 @@
 # Cloud Healthcare API
 
+## 2025-11-03
+
+### Feature
+
+`VersionedStorageSizeBytes` was added to the output of
+[`GetFhirStoreMetrics`](https://cloud.google.com/healthcare-api/docs/fhir-store-metrics).
+
+---
 ## 2025-10-23
 
 ### Feature

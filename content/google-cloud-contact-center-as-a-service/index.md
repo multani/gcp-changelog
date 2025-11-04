@@ -1,5 +1,90 @@
 # Google Cloud Contact Center as a Service
 
+## 2025-11-03
+
+### Announcement
+
+**Google Cloud CCaaS 3.41 pre-release notes**
+
+Here are the pre-release notes for Google Cloud CCaaS 3.41. When we release version 3.41, we expect the new capabilities to be as shown here.
+
+### Feature
+
+**Nested disposition lists**
+
+You can now organize your disposition lists by grouping them into nested folders, making it easier for agents to find the disposition codes they need. This is available in the agent adapter and the agent desktop.
+
+Administrators: The **Disposition Codes** dialog at **Settings > Operation Management > Wrap-up > Manage Disposition Codes** has a new **Tree** tab.
+
+User experience change: If you've configured nested disposition lists, the **Disposition** screen in the agent adapter displays links to the nested disposition lists.
+
+### Feature
+
+**Skip language selection and IVR menu readout**
+
+You can configure your call flow to skip language selection and the IVR menu readout. Instead, callers get the default language and are routed to the default queue. This creates a faster call connection experience for end-users.
+
+Administrators:
+
+* In the **Settings > Languages & Messages > Languages** pane, there's a new **Skip language selection** option.
+* In the **Settings > Queue > IVR (Interactive Voice Response) > IVR Queue Menu Readout** section, there's a new **Skip IVR Menu readout** option.
+
+### Feature
+
+**Transfer an email session to a queue**
+
+Agents can now transfer an email session to a queue. This resolves the problem of multiple email sessions being created when an agent forwards an email directly to an agent to transfer it.
+
+Administrators: The **General** pane on the **Email** page at **Settings > Email** contains a new **Enable Email Transfer Between Queues** checkbox.
+
+User experience change: In the email adapter, a new **Transfer** button appears when an agent views an assigned email.
+
+### Feature
+
+**Virtual agent to virtual agent direct chat transfers**
+
+You can configure Dialogflow payloads to transfer chat sessions from one virtual agent directly to another virtual agent, using the destination virtual agent's agent ID.
+
+### Feature
+
+**Extensions for support numbers**
+
+You can assign a phone number extension to an agent that an end-user can use to directly call the agent. You can also set up an extension directory that end-users can use to find the extension for an agent that they want to call.
+
+Administrators:
+
+* The **Agent Extensions** pane on the **Call** page at **Settings > Call** contains a new **Consumer to Agent Calls** section.
+* The **Add new menu** dialog at **Settings > Queue > IVR (Interactive Voice Response) > Menu Structure** contains a new **Extension Directory** toggle.
+
+### Fixed
+
+We addressed the following issues in this release:
+
+* Fixed an issue where hyperlinks in the after-hours message of the web SDK were broken.
+* Fixed an issue where the language selector mistakenly appeared in the chat UI.
+* Fixed an issue where an authentication request with an invalid or expired authentication token caused an agent's browser to become unresponsive and crash.
+* Fixed an issue where an end-user using the iOS mobile SDK couldn't play a video that they had sent to an agent during a web chat session.
+* Fixed an issue for Android mobile SDK users where the **Send** icon in the end-user's chat input field didn't appear correctly.
+* Fixed an issue where an instance using an Agent Assist profile with Conversation Summarization disabled incorrectly returned errors.
+* Fixed an issue that caused inaccurate virtual agent chat analytics. Affected metrics included `response_count`, `response_time_total`, `response_time_avg`, and `response_time_max`.
+* Fixed an issue for Microsoft Windows users where the scroll down button in the web chat pane wasn't working correctly.
+* Fixed an issue that occurred after an administrator deactivated the chat channel or the email channel. Instead of sending a single notification email for this change, the system was sending multiple notification emails.
+* Fixed a reporting discrepancy between the **Agent Metrics (Historical)** explore and the **Chat Agent Metrics (Historical)** explore in the advanced reporting dashboards.
+* Fixed an issue in the **Operation Management > Virtual Agent** settings pane. After configuring the virtual agent to assign records to a specific user, subsequent changes to other settings couldn't be saved.
+* Fixed an issue where the `sub_status` property was missing from the session metadata file.
+* Fixed an issue for HubSpot users where the inbound phone number in the call adapter displayed as **null null**.
+* Fixed an issue for Kustomer users that caused calls to be disconnected and the agent to be moved to `Unavailable` status.
+* Fixed an issue where the target response time timer in the chat adapter was resetting when the end-user sent a message instead of when the agent sent a message.
+* Fixed an issue that occurred when agents used the chat adapter to send email addresses containing underscores. The email addresses resolved incorrectly in the end-user's chat pane, breaking the links.
+* Fixed an issue that caused inaccurate chat analytics. Affected metrics included `response_time_total`, `response_time_avg`, and `chat_duration`.
+* Fixed an issue where the queue-level overcapacity callback limit was ignored, and the global setting was enforced instead.
+* Fixed an issue for Kustomer users where the ticket for an outbound call incorrectly showed the recipient's number in the **From** field and left the **To** field blank.
+* Fixed an issue where the agent adapter froze when an agent making an outbound call changed the outbound call number using their favorites list.
+* Fixed an issue that prevented a new chat from appearing in the agent desktop. This occurred when an agent had both the agent desktop and the standard chat adapter open in separate browser tabs.
+* Fixed an issue that caused a significant delay in displaying contact detail information in the call adapter for campaign calls.
+* Fixed an issue where users with read-only roles were able to change settings on the developer settings page.
+
+---
 ## 2025-10-31
 
 ### Announcement

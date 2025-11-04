@@ -1,5 +1,12 @@
 # Bigtable
 
+## 2025-11-03
+
+### Feature
+
+You can use protocol buffer (protobuf) schemas to query individual fields within protobuf messages stored as bytes in Bigtable. First, [create and manage your protobuf schemas](https://docs.cloud.google.com/bigtable/docs/create-manage-protobuf-schemas). Then, [query your protobuf data](https://docs.cloud.google.com/bigtable/docs/query-protobuf-data) using GoogleSQL for Bigtable or BigQuery external tables. This feature is in [Preview](https://cloud.google.com/products?e=48754805&hl=en#product-launch-stages).
+
+---
 ## 2025-10-28
 
 ### Feature

@@ -1,6 +1,64 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
+    "2025-11-03": [
+      {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS 3.41 pre-release notes**\n\nHere are the pre-release notes for Google Cloud CCaaS 3.41. When we release version 3.41, we expect the new capabilities to be as shown here.",
+        "summary": {
+          "title": "Google Cloud CCaaS 3.41 Pre-release Notes",
+          "summary": "New capabilities are coming in version 3.41 of Google Cloud CCaaS. Please review the pre-release notes for details."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Nested disposition lists**\n\nYou can now organize your disposition lists by grouping them into nested folders, making it easier for agents to find the disposition codes they need. This is available in the agent adapter and the agent desktop.\n\nAdministrators: The **Disposition Codes** dialog at **Settings > Operation Management > Wrap-up > Manage Disposition Codes** has a new **Tree** tab.\n\nUser experience change: If you've configured nested disposition lists, the **Disposition** screen in the agent adapter displays links to the nested disposition lists.",
+        "summary": {
+          "title": "Nested Disposition Lists",
+          "summary": "Organize your disposition lists into nested folders for easier agent access."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Skip language selection and IVR menu readout**\n\nYou can configure your call flow to skip language selection and the IVR menu readout. Instead, callers get the default language and are routed to the default queue. This creates a faster call connection experience for end-users.\n\nAdministrators:\n\n* In the **Settings > Languages & Messages > Languages** pane, there's a new **Skip language selection** option.\n* In the **Settings > Queue > IVR (Interactive Voice Response) > IVR Queue Menu Readout** section, there's a new **Skip IVR Menu readout** option.",
+        "summary": {
+          "title": "Faster Call Connections",
+          "summary": "Configure your call flow to bypass language selection and IVR menu readouts. Callers will be connected faster to the default language and queue."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Transfer an email session to a queue**\n\nAgents can now transfer an email session to a queue. This resolves the problem of multiple email sessions being created when an agent forwards an email directly to an agent to transfer it.\n\nAdministrators: The **General** pane on the **Email** page at **Settings > Email** contains a new **Enable Email Transfer Between Queues** checkbox.\n\nUser experience change: In the email adapter, a new **Transfer** button appears when an agent views an assigned email.",
+        "summary": {
+          "title": "Email Session Transfer",
+          "summary": "Agents can now transfer email sessions to a queue, preventing multiple email sessions and streamlining the transfer process. An 'Enable Email Transfer Between Queues' option is available in settings, and a new 'Transfer' button appears for agents in the email adapter."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Virtual agent to virtual agent direct chat transfers**\n\nYou can configure Dialogflow payloads to transfer chat sessions from one virtual agent directly to another virtual agent, using the destination virtual agent's agent ID.",
+        "summary": {
+          "title": "Virtual agent chat transfers",
+          "summary": "Enable direct chat transfers between virtual agents using agent ID configuration."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Extensions for support numbers**\n\nYou can assign a phone number extension to an agent that an end-user can use to directly call the agent. You can also set up an extension directory that end-users can use to find the extension for an agent that they want to call.\n\nAdministrators:\n\n* The **Agent Extensions** pane on the **Call** page at **Settings > Call** contains a new **Consumer to Agent Calls** section.\n* The **Add new menu** dialog at **Settings > Queue > IVR (Interactive Voice Response) > Menu Structure** contains a new **Extension Directory** toggle.",
+        "summary": {
+          "title": "Agent Extensions",
+          "summary": "Assign phone number extensions to agents for direct calls and set up an extension directory."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "We addressed the following issues in this release:\n\n* Fixed an issue where hyperlinks in the after-hours message of the web SDK were broken.\n* Fixed an issue where the language selector mistakenly appeared in the chat UI.\n* Fixed an issue where an authentication request with an invalid or expired authentication token caused an agent's browser to become unresponsive and crash.\n* Fixed an issue where an end-user using the iOS mobile SDK couldn't play a video that they had sent to an agent during a web chat session.\n* Fixed an issue for Android mobile SDK users where the **Send** icon in the end-user's chat input field didn't appear correctly.\n* Fixed an issue where an instance using an Agent Assist profile with Conversation Summarization disabled incorrectly returned errors.\n* Fixed an issue that caused inaccurate virtual agent chat analytics. Affected metrics included `response_count`, `response_time_total`, `response_time_avg`, and `response_time_max`.\n* Fixed an issue for Microsoft Windows users where the scroll down button in the web chat pane wasn't working correctly.\n* Fixed an issue that occurred after an administrator deactivated the chat channel or the email channel. Instead of sending a single notification email for this change, the system was sending multiple notification emails.\n* Fixed a reporting discrepancy between the **Agent Metrics (Historical)** explore and the **Chat Agent Metrics (Historical)** explore in the advanced reporting dashboards.\n* Fixed an issue in the **Operation Management > Virtual Agent** settings pane. After configuring the virtual agent to assign records to a specific user, subsequent changes to other settings couldn't be saved.\n* Fixed an issue where the `sub_status` property was missing from the session metadata file.\n* Fixed an issue for HubSpot users where the inbound phone number in the call adapter displayed as **null null**.\n* Fixed an issue for Kustomer users that caused calls to be disconnected and the agent to be moved to `Unavailable` status.\n* Fixed an issue where the target response time timer in the chat adapter was resetting when the end-user sent a message instead of when the agent sent a message.\n* Fixed an issue that occurred when agents used the chat adapter to send email addresses containing underscores. The email addresses resolved incorrectly in the end-user's chat pane, breaking the links.\n* Fixed an issue that caused inaccurate chat analytics. Affected metrics included `response_time_total`, `response_time_avg`, and `chat_duration`.\n* Fixed an issue where the queue-level overcapacity callback limit was ignored, and the global setting was enforced instead.\n* Fixed an issue for Kustomer users where the ticket for an outbound call incorrectly showed the recipient's number in the **From** field and left the **To** field blank.\n* Fixed an issue where the agent adapter froze when an agent making an outbound call changed the outbound call number using their favorites list.\n* Fixed an issue that prevented a new chat from appearing in the agent desktop. This occurred when an agent had both the agent desktop and the standard chat adapter open in separate browser tabs.\n* Fixed an issue that caused a significant delay in displaying contact detail information in the call adapter for campaign calls.\n* Fixed an issue where users with read-only roles were able to change settings on the developer settings page.",
+        "summary": {
+          "title": "Resolved Issues in Recent Update",
+          "summary": "This release includes fixes for various issues across web and mobile SDKs, agent tools, and reporting. Key fixes involve broken hyperlinks, incorrect language selectors, unresponsive agent browsers due to authentication errors, video playback problems on iOS, display issues with the send icon on Android, and inaccurate virtual agent analytics. Additionally, problems with chat analytics, scroll bar functionality, multiple notification emails, reporting discrepancies, virtual agent settings, missing session metadata, HubSpot and Kustomer integrations, response time timers, email address resolution, overcapacity callback limits, and agent desktop behavior have been resolved."
+        }
+      }
+    ],
     "2025-10-31": [
       {
         "kind": "Announcement",

@@ -1,5 +1,12 @@
 # Sensitive Data Protection
 
+## 2025-11-03
+
+### Feature
+
+The `OBJECT_TYPE/PERSON/PASSPORT` and `OBJECT_TYPE/PERSON/PHOTO_ID_CARD` infoType detectors are available in `global` and the `asia`, `europe`, and `us` multi-regions. For more information about all infoTypes, see [InfoType detector reference](https://cloud.google.com/sensitive-data-protection/docs/infotypes-reference).
+
+---
 ## 2025-10-27
 
 ### Feature

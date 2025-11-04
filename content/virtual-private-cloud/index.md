@@ -1,5 +1,14 @@
 # Virtual Private Cloud
 
+## 2025-11-03
+
+### Feature
+
+VPC Network Peering supports peering connections in consensus mode. This feature
+is available in **General Availability**. For more information, see
+[Connection mode](https://docs.cloud.google.com/vpc/docs/about-peering-connections#connection-mode).
+
+---
 ## 2025-10-30
 
 ### Feature

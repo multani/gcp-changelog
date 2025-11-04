@@ -2,9 +2,131 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2025-10-31T00:00:00+00:00</updated>
+  <updated>2025-11-03T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-03:announcement:0</id>
+    <published>2025-11-03T00:00:00+00:00</published>
+    <updated>2025-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS 3.41 pre-release notes</strong></p>
+<p>Here are the pre-release notes for Google Cloud CCaaS 3.41. When we release version 3.41, we expect the new capabilities to be as shown here.</p>]]></content>
+    <summary>New capabilities are coming in version 3.41 of Google Cloud CCaaS. Please review the pre-release notes for details.</summary>
+    <title>Announcement: Google Cloud CCaaS 3.41 Pre-release Notes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-03:feature:1</id>
+    <published>2025-11-03T00:00:00+00:00</published>
+    <updated>2025-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Nested disposition lists</strong></p>
+<p>You can now organize your disposition lists by grouping them into nested folders, making it easier for agents to find the disposition codes they need. This is available in the agent adapter and the agent desktop.</p>
+<p>Administrators: The <strong>Disposition Codes</strong> dialog at <strong>Settings &gt; Operation Management &gt; Wrap-up &gt; Manage Disposition Codes</strong> has a new <strong>Tree</strong> tab.</p>
+<p>User experience change: If you've configured nested disposition lists, the <strong>Disposition</strong> screen in the agent adapter displays links to the nested disposition lists.</p>]]></content>
+    <summary>Organize your disposition lists into nested folders for easier agent access.</summary>
+    <title>Feature: Nested Disposition Lists</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-03:feature:2</id>
+    <published>2025-11-03T00:00:00+00:00</published>
+    <updated>2025-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Skip language selection and IVR menu readout</strong></p>
+<p>You can configure your call flow to skip language selection and the IVR menu readout. Instead, callers get the default language and are routed to the default queue. This creates a faster call connection experience for end-users.</p>
+<p>Administrators:</p>
+<ul>
+<li>In the <strong>Settings &gt; Languages &amp; Messages &gt; Languages</strong> pane, there's a new <strong>Skip language selection</strong> option.</li>
+<li>In the <strong>Settings &gt; Queue &gt; IVR (Interactive Voice Response) &gt; IVR Queue Menu Readout</strong> section, there's a new <strong>Skip IVR Menu readout</strong> option.</li>
+</ul>]]></content>
+    <summary>Configure your call flow to bypass language selection and IVR menu readouts. Callers will be connected faster to the default language and queue.</summary>
+    <title>Feature: Faster Call Connections</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-03:feature:3</id>
+    <published>2025-11-03T00:00:00+00:00</published>
+    <updated>2025-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Transfer an email session to a queue</strong></p>
+<p>Agents can now transfer an email session to a queue. This resolves the problem of multiple email sessions being created when an agent forwards an email directly to an agent to transfer it.</p>
+<p>Administrators: The <strong>General</strong> pane on the <strong>Email</strong> page at <strong>Settings &gt; Email</strong> contains a new <strong>Enable Email Transfer Between Queues</strong> checkbox.</p>
+<p>User experience change: In the email adapter, a new <strong>Transfer</strong> button appears when an agent views an assigned email.</p>]]></content>
+    <summary>Agents can now transfer email sessions to a queue, preventing multiple email sessions and streamlining the transfer process. An 'Enable Email Transfer Between Queues' option is available in settings, and a new 'Transfer' button appears for agents in the email adapter.</summary>
+    <title>Feature: Email Session Transfer</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-03:feature:4</id>
+    <published>2025-11-03T00:00:00+00:00</published>
+    <updated>2025-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Virtual agent to virtual agent direct chat transfers</strong></p>
+<p>You can configure Dialogflow payloads to transfer chat sessions from one virtual agent directly to another virtual agent, using the destination virtual agent's agent ID.</p>]]></content>
+    <summary>Enable direct chat transfers between virtual agents using agent ID configuration.</summary>
+    <title>Feature: Virtual agent chat transfers</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-03:feature:5</id>
+    <published>2025-11-03T00:00:00+00:00</published>
+    <updated>2025-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Extensions for support numbers</strong></p>
+<p>You can assign a phone number extension to an agent that an end-user can use to directly call the agent. You can also set up an extension directory that end-users can use to find the extension for an agent that they want to call.</p>
+<p>Administrators:</p>
+<ul>
+<li>The <strong>Agent Extensions</strong> pane on the <strong>Call</strong> page at <strong>Settings &gt; Call</strong> contains a new <strong>Consumer to Agent Calls</strong> section.</li>
+<li>The <strong>Add new menu</strong> dialog at <strong>Settings &gt; Queue &gt; IVR (Interactive Voice Response) &gt; Menu Structure</strong> contains a new <strong>Extension Directory</strong> toggle.</li>
+</ul>]]></content>
+    <summary>Assign phone number extensions to agents for direct calls and set up an extension directory.</summary>
+    <title>Feature: Agent Extensions</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-03:fixed:6</id>
+    <published>2025-11-03T00:00:00+00:00</published>
+    <updated>2025-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>We addressed the following issues in this release:</p>
+<ul>
+<li>Fixed an issue where hyperlinks in the after-hours message of the web SDK were broken.</li>
+<li>Fixed an issue where the language selector mistakenly appeared in the chat UI.</li>
+<li>Fixed an issue where an authentication request with an invalid or expired authentication token caused an agent's browser to become unresponsive and crash.</li>
+<li>Fixed an issue where an end-user using the iOS mobile SDK couldn't play a video that they had sent to an agent during a web chat session.</li>
+<li>Fixed an issue for Android mobile SDK users where the <strong>Send</strong> icon in the end-user's chat input field didn't appear correctly.</li>
+<li>Fixed an issue where an instance using an Agent Assist profile with Conversation Summarization disabled incorrectly returned errors.</li>
+<li>Fixed an issue that caused inaccurate virtual agent chat analytics. Affected metrics included <code>response_count</code>, <code>response_time_total</code>, <code>response_time_avg</code>, and <code>response_time_max</code>.</li>
+<li>Fixed an issue for Microsoft Windows users where the scroll down button in the web chat pane wasn't working correctly.</li>
+<li>Fixed an issue that occurred after an administrator deactivated the chat channel or the email channel. Instead of sending a single notification email for this change, the system was sending multiple notification emails.</li>
+<li>Fixed a reporting discrepancy between the <strong>Agent Metrics (Historical)</strong> explore and the <strong>Chat Agent Metrics (Historical)</strong> explore in the advanced reporting dashboards.</li>
+<li>Fixed an issue in the <strong>Operation Management &gt; Virtual Agent</strong> settings pane. After configuring the virtual agent to assign records to a specific user, subsequent changes to other settings couldn't be saved.</li>
+<li>Fixed an issue where the <code>sub_status</code> property was missing from the session metadata file.</li>
+<li>Fixed an issue for HubSpot users where the inbound phone number in the call adapter displayed as <strong>null null</strong>.</li>
+<li>Fixed an issue for Kustomer users that caused calls to be disconnected and the agent to be moved to <code>Unavailable</code> status.</li>
+<li>Fixed an issue where the target response time timer in the chat adapter was resetting when the end-user sent a message instead of when the agent sent a message.</li>
+<li>Fixed an issue that occurred when agents used the chat adapter to send email addresses containing underscores. The email addresses resolved incorrectly in the end-user's chat pane, breaking the links.</li>
+<li>Fixed an issue that caused inaccurate chat analytics. Affected metrics included <code>response_time_total</code>, <code>response_time_avg</code>, and <code>chat_duration</code>.</li>
+<li>Fixed an issue where the queue-level overcapacity callback limit was ignored, and the global setting was enforced instead.</li>
+<li>Fixed an issue for Kustomer users where the ticket for an outbound call incorrectly showed the recipient's number in the <strong>From</strong> field and left the <strong>To</strong> field blank.</li>
+<li>Fixed an issue where the agent adapter froze when an agent making an outbound call changed the outbound call number using their favorites list.</li>
+<li>Fixed an issue that prevented a new chat from appearing in the agent desktop. This occurred when an agent had both the agent desktop and the standard chat adapter open in separate browser tabs.</li>
+<li>Fixed an issue that caused a significant delay in displaying contact detail information in the call adapter for campaign calls.</li>
+<li>Fixed an issue where users with read-only roles were able to change settings on the developer settings page.</li>
+</ul>]]></content>
+    <summary>This release includes fixes for various issues across web and mobile SDKs, agent tools, and reporting. Key fixes involve broken hyperlinks, incorrect language selectors, unresponsive agent browsers due to authentication errors, video playback problems on iOS, display issues with the send icon on Android, and inaccurate virtual agent analytics. Additionally, problems with chat analytics, scroll bar functionality, multiple notification emails, reporting discrepancies, virtual agent settings, missing session metadata, HubSpot and Kustomer integrations, response time timers, email address resolution, overcapacity callback limits, and agent desktop behavior have been resolved.</summary>
+    <title>Fixed: Resolved Issues in Recent Update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

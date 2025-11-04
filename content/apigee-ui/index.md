@@ -1,5 +1,21 @@
 # Apigee UI
 
+## 2025-11-02
+
+### Announcement
+
+On November 2, 2025, we released an updated version of the Apigee UI.
+
+### Deprecated
+
+The Apigee Classic UI shutdown is complete. The shutdown was finalized on
+November 2, 2025, completing the migration of Apigee to the Google Cloud console.
+All Apigee functionality is now available in the Apigee UI in the
+Google Cloud console.
+
+See the [Apigee Classic UI shutdown](https://docs.cloud.google.com/apigee/docs/deprecations/apigee-classic-ui) page for more details.
+
+---
 ## 2025-10-30
 
 ### Announcement

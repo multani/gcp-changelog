@@ -1,6 +1,16 @@
 {
   "name": "Cloud Composer",
   "entries": {
+    "2025-11-05": [
+      {
+        "kind": "Announcement",
+        "content": "We strongly recommend to use\n[highly resilient environments](https://docs.cloud.google.com/composer/docs/composer-3/set-up-highly-resilient-environments)\nfor production use cases. Highly resilient environments provide high\navailability and use built-in redundancy and failover mechanisms to reduce the\nenvironment's susceptibility to zonal failures and single point of failure\noutages.",
+        "summary": {
+          "title": "Highly Resilient Environments",
+          "summary": "For production use cases, highly resilient environments are recommended. They offer high availability and reduce susceptibility to zonal failures."
+        }
+      }
+    ],
     "2025-10-30": [
       {
         "kind": "Announcement",
@@ -72,6 +82,14 @@
     "2025-10-22": [
       {
         "kind": "Changed",
+        "content": "The default value of the\n[`NO_PROXY`](https://cloud.google.com/composer/docs/composer-3/change-networking-type#proxy-variables)\nenvironment variable now includes the IP address of the environment's cluster\nCompute Engine metadata server.",
+        "summary": {
+          "title": "Updated NO_PROXY environment variable",
+          "summary": "The NO_PROXY environment variable now includes the IP address of the environment's cluster Compute Engine metadata server."
+        }
+      },
+      {
+        "kind": "Changed",
         "content": "*(Airflow 2.10.5)* The `apache-airflow-providers-google` package was upgraded to version 18.0.0 in Cloud Composer 2 images and Cloud Composer 3 builds.\n\nFor more information about changes, see the\n[apache-airflow-providers-google changelog](https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html)\nfrom version 17.2.0 to version 18.0.0.",
         "summary": {
           "title": "Google provider package upgraded in Cloud Composer",
@@ -116,14 +134,6 @@
         "summary": {
           "title": "Cloud Composer Release",
           "summary": "A new release of Cloud Composer is rolling out starting October 22, 2025, bringing upcoming changes and features to all regions."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "The default value of the\n[`NO_PROXY`](https://cloud.google.com/composer/docs/composer-3/change-networking-type#proxy-variables)\nenvironment variable now includes the IP address of the environment's cluster\nCompute Engine metadata server.",
-        "summary": {
-          "title": "Updated NO_PROXY environment variable",
-          "summary": "The NO_PROXY environment variable now includes the IP address of the environment's cluster Compute Engine metadata server."
         }
       }
     ],

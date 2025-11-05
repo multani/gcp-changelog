@@ -1,5 +1,12 @@
 # Service Extensions
 
+## 2025-11-05
+
+### Feature
+
+[Cloud Load Balancing callouts](https://docs.cloud.google.com/service-extensions/docs/callouts-overview) have full duplex streaming support.
+
+---
 ## 2025-10-28
 
 ### Feature

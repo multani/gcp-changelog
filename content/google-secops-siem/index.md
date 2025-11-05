@@ -1,5 +1,61 @@
 # Google SecOps SIEM
 
+## 2025-11-05
+
+### Feature
+
+**SentinelOneV2**: Version 43.0
+
+* The following new action has been added:
+
+  + **Get Site Agents**
+
+### Feature
+
+**Palo Alto XDR**: Version 20.0
+
+* The following new action has been added:
+
+  + **Scan Endpoint**
+
+### Changed
+
+**AWS Identity and Access Management**: Version 7.0
+
+* Refactored the following actions:
+
+  + **Create User**
+  + **Create Group**
+  + **Create Policy**
+  + **List Users**
+  + **List Groups**
+  + **List Policies**
+
+### Changed
+
+**Freshworks Freshservice**: Version 15.0
+
+* Added the ability to provide a department in the integration configuration for
+  the following action:
+
+  + **Create Ticket**
+
+### Changed
+
+**Microsoft Teams**: Version 31.0
+
+* **Integration**: Updated the integration's action definitions to meet the new
+  requirements of the IDE.
+
+### Changed
+
+**FortiAnalyzer**: Version 8.0
+
+* Updated search processing logic in the following action:
+
+  + **Search Logs**
+
+---
 ## 2025-11-02
 
 ### Announcement
@@ -102,39 +158,6 @@ For more information, see
 
 ### Changed
 
-**CSV**: Version 35.0
-
-* Updated file path processing logic in the following connector:
-
-  + **CSV Connector**
-
-### Changed
-
-**CrowdStrike Falcon**: Version 68.0
-
-* Update the following action to check if there is an existing identical running
-  scan for a provided hostname before creating a new one:
-
-  + **On-Demand Scan**
-
-### Changed
-
-**Exchange**: Version 115.0
-
-* Updated the file management logic in the following action:
-
-  + **Download Attachments**
-
-### Changed
-
-**Microsoft Graph Mail**: Version 32.0
-
-* Updated the file management logic in the following action:
-
-  + **Download Attachments from Email**
-
-### Changed
-
 **Microsoft Graph Mail Delegated**: Version 9.0
 
 * Updated the file management logic in the following action:
@@ -171,6 +194,39 @@ For more information, see
 
   + **Add to Whitelist**
   + **Lookup Entity**
+
+### Changed
+
+**CSV**: Version 35.0
+
+* Updated file path processing logic in the following connector:
+
+  + **CSV Connector**
+
+### Changed
+
+**CrowdStrike Falcon**: Version 68.0
+
+* Update the following action to check if there is an existing identical running
+  scan for a provided hostname before creating a new one:
+
+  + **On-Demand Scan**
+
+### Changed
+
+**Exchange**: Version 115.0
+
+* Updated the file management logic in the following action:
+
+  + **Download Attachments**
+
+### Changed
+
+**Microsoft Graph Mail**: Version 32.0
+
+* Updated the file management logic in the following action:
+
+  + **Download Attachments from Email**
 
 ### Feature
 
@@ -287,6 +343,25 @@ You can now easily delete environments with heavy loads directly from the platfo
 ---
 ## 2025-10-22
 
+### Feature
+
+**SentinelOneV2**: Version 42.0
+
+* The following new actions have been added:
+
+  + **Create Device Control Rule**
+  + **Delete Device Control Rule**
+  + **Update Device Control Rule**
+
+### Changed
+
+**CrowdStrike Falcon**: Version 67.0
+
+* Fixed a bug where the Contains filter would fail to find hosts when the
+  `Max Hosts To Return` limit was applied in the following action:
+
+  + **List Host**
+
 ### Changed
 
 **CSV**: Version 34.0
@@ -309,25 +384,6 @@ You can now easily delete environments with heavy loads directly from the platfo
   + **Get Domain Profile**
   + **Get Domain Risk**
   + **Reverse Domain**
-
-### Feature
-
-**SentinelOneV2**: Version 42.0
-
-* The following new actions have been added:
-
-  + **Create Device Control Rule**
-  + **Delete Device Control Rule**
-  + **Update Device Control Rule**
-
-### Changed
-
-**CrowdStrike Falcon**: Version 67.0
-
-* Fixed a bug where the Contains filter would fail to find hosts when the
-  `Max Hosts To Return` limit was applied in the following action:
-
-  + **List Host**
 
 ### Feature
 

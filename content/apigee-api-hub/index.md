@@ -32,6 +32,8 @@ API insights is now available in API hub, providing a unified view of your API t
 
 Currently, API insights supports data sources from Apigee, Apigee hybrid, Apigee Edge Public Cloud, and Apigee Edge Private Cloud (OPDK).
 
+**Note:** Data residency (DRZ) and VPC-SC are not supported with API insights at this time.
+
 For more information, see [API insights overview](https://cloud.google.com/apigee/docs/apihub/api-insights-overview).
 
 ### Feature

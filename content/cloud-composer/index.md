@@ -1,5 +1,17 @@
 # Cloud Composer
 
+## 2025-11-05
+
+### Announcement
+
+We strongly recommend to use
+[highly resilient environments](https://docs.cloud.google.com/composer/docs/composer-3/set-up-highly-resilient-environments)
+for production use cases. Highly resilient environments provide high
+availability and use built-in redundancy and failover mechanisms to reduce the
+environment's susceptibility to zonal failures and single point of failure
+outages.
+
+---
 ## 2025-10-30
 
 ### Announcement
@@ -63,6 +75,13 @@ are available in Cloud Composer 2:
 
 ### Changed
 
+The default value of the
+[`NO_PROXY`](https://cloud.google.com/composer/docs/composer-3/change-networking-type#proxy-variables)
+environment variable now includes the IP address of the environment's cluster
+Compute Engine metadata server.
+
+### Changed
+
 *(Airflow 2.10.5)* The `apache-airflow-providers-google` package was upgraded to version 18.0.0 in Cloud Composer 2 images and Cloud Composer 3 builds.
 
 For more information about changes, see the
@@ -105,13 +124,6 @@ A new Cloud Composer release has started on **October 22, 2025**. Get ready
 for upcoming changes and features as we roll out the new release to all regions.
 This release is in progress at the moment. Listed changes and features might
 not be available in some regions yet.
-
-### Changed
-
-The default value of the
-[`NO_PROXY`](https://cloud.google.com/composer/docs/composer-3/change-networking-type#proxy-variables)
-environment variable now includes the IP address of the environment's cluster
-Compute Engine metadata server.
 
 ---
 ## 2025-10-10

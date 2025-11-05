@@ -1,5 +1,13 @@
 # Security Command Center
 
+## 2025-11-03
+
+### Feature
+
+Compliance Manager supports the Security Command Center Premium tier at the
+organization level.
+
+---
 ## 2025-10-30
 
 ### Feature

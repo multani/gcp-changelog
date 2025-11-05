@@ -2,9 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Composer</title>
   <subtitle>Changelog for Google Cloud product: Cloud Composer</subtitle>
-  <updated>2025-10-30T00:00:00+00:00</updated>
+  <updated>2025-11-05T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-composer</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-composer/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-11-05:announcement:0</id>
+    <published>2025-11-05T00:00:00+00:00</published>
+    <updated>2025-11-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>We strongly recommend to use
+<a href="https://docs.cloud.google.com/composer/docs/composer-3/set-up-highly-resilient-environments">highly resilient environments</a>
+for production use cases. Highly resilient environments provide high
+availability and use built-in redundancy and failover mechanisms to reduce the
+environment's susceptibility to zonal failures and single point of failure
+outages.</p>]]></content>
+    <summary>For production use cases, highly resilient environments are recommended. They offer high availability and reduce susceptibility to zonal failures.</summary>
+    <title>Announcement: Highly Resilient Environments</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -124,6 +140,20 @@ are available in Cloud Composer 2:</p>
     <id>urn:github:multani:gcp-changelog:cloud-composer:2025-10-22:changed:0</id>
     <published>2025-10-22T00:00:00+00:00</published>
     <updated>2025-10-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The default value of the
+<a href="https://cloud.google.com/composer/docs/composer-3/change-networking-type#proxy-variables"><code>NO_PROXY</code></a>
+environment variable now includes the IP address of the environment's cluster
+Compute Engine metadata server.</p>]]></content>
+    <summary>The NO_PROXY environment variable now includes the IP address of the environment's cluster Compute Engine metadata server.</summary>
+    <title>Changed: Updated NO_PROXY environment variable</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-10-22:changed:1</id>
+    <published>2025-10-22T00:00:00+00:00</published>
+    <updated>2025-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><em>(Airflow 2.10.5)</em> The <code>apache-airflow-providers-google</code> package was upgraded to version 18.0.0 in Cloud Composer 2 images and Cloud Composer 3 builds.</p>
 <p>For more information about changes, see the
 <a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html">apache-airflow-providers-google changelog</a>
@@ -135,7 +165,7 @@ from version 17.2.0 to version 18.0.0.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-10-22:changed:1</id>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-10-22:changed:2</id>
     <published>2025-10-22T00:00:00+00:00</published>
     <updated>2025-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><em>(Airflow 2.10.5)</em> The <code>apache-airflow-providers-cncf-kubernetes</code> package was
@@ -149,7 +179,7 @@ For changes in other packages, see the
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-10-22:changed:2</id>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-10-22:changed:3</id>
     <published>2025-10-22T00:00:00+00:00</published>
     <updated>2025-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
@@ -165,7 +195,7 @@ are available in Cloud Composer 3:</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-10-22:changed:3</id>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-10-22:changed:4</id>
     <published>2025-10-22T00:00:00+00:00</published>
     <updated>2025-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
@@ -181,7 +211,7 @@ are available in Cloud Composer 2:</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-10-22:deprecated:4</id>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-10-22:deprecated:5</id>
     <published>2025-10-22T00:00:00+00:00</published>
     <updated>2025-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The following Cloud Composer versions and builds have reached their
@@ -195,7 +225,7 @@ composer-2.9.8-*, composer-2.9.7-*.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-10-22:announcement:5</id>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-10-22:announcement:6</id>
     <published>2025-10-22T00:00:00+00:00</published>
     <updated>2025-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>A new Cloud Composer release has started on <strong>October 22, 2025</strong>. Get ready
@@ -204,20 +234,6 @@ This release is in progress at the moment. Listed changes and features might
 not be available in some regions yet.</p>]]></content>
     <summary>A new release of Cloud Composer is rolling out starting October 22, 2025, bringing upcoming changes and features to all regions.</summary>
     <title>Announcement: Cloud Composer Release</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-10-22:changed:6</id>
-    <published>2025-10-22T00:00:00+00:00</published>
-    <updated>2025-10-22T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The default value of the
-<a href="https://cloud.google.com/composer/docs/composer-3/change-networking-type#proxy-variables"><code>NO_PROXY</code></a>
-environment variable now includes the IP address of the environment's cluster
-Compute Engine metadata server.</p>]]></content>
-    <summary>The NO_PROXY environment variable now includes the IP address of the environment's cluster Compute Engine metadata server.</summary>
-    <title>Changed: Updated NO_PROXY environment variable</title>
   </entry>
   <entry>
     <author>

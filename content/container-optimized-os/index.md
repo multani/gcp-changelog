@@ -2,10 +2,6 @@
 
 ## 2025-11-03
 
-### Changed
-
-
-
 ### cos-125-19216-104-3
 
 |  |  |  |  |
@@ -44,10 +40,6 @@ Runtime sysctl changes:
 * Changed: fs.file-max: 811500 -> 811499
 * Changed: net.ipv4.udp\_mem: 188034 250715 376068 -> 188034 250714 376068
 
-### Changed
-
-
-
 ### cos-117-18613-439-12
 
 |  |  |  |  |
@@ -77,10 +69,6 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 811785 -> 811728
 
-### Changed
-
-
-
 ### cos-dev-129-19350-0-0
 
 |  |  |  |  |
@@ -106,10 +94,6 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 811495 -> 811384
 
-### Changed
-
-
-
 ### cos-121-18867-294-8
 
 |  |  |  |  |
@@ -134,10 +118,6 @@ Fixed CVE-2025-38073 in the Linux kernel.
 Runtime sysctl changes:
 
 * Changed: fs.file-max: 811835 -> 811785
-
-### Changed
-
-
 
 ### cos-113-18244-521-8
 

@@ -1,5 +1,18 @@
 # Artifact Registry
 
+## 2025-11-04
+
+### Feature
+
+Artifact Registry support for managing Ruby gems with Artifact Registry
+repositories is in
+[Preview](https://cloud.google.com/products#product-launch-stages). For
+more information, see the following topics:
+
+* [Get started with Ruby gems](https://cloud.google.com/artifact-registry/docs/ruby)
+* [Store Ruby gems in Artifact Registry (Quickstart)](https://cloud.google.com/artifact-registry/docs/ruby/store-ruby)
+
+---
 ## 2025-09-23
 
 ### Feature

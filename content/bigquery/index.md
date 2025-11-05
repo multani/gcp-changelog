@@ -314,11 +314,13 @@ receives an approximately equal share of available capacity. This feature is now
 [generally available](https://cloud.google.com/products#product-launch-stages)
 (GA).
 
-### Announcement
+### Feature
 
-[Security, privacy, and compliance for Gemini in
-BigQuery](https://docs.cloud.google.com/gemini/docs/bigquery/security-privacy-compliance) details how
-customer data is protected and processed by Gemini in BigQuery.
+You can set a [maximum slot
+limit](https://docs.cloud.google.com/bigquery/docs/reservations-workload-management#predictable) for a
+reservation. You can configure the maximum reservation size when creating or
+updating a reservation. This feature is now [generally
+available](https://cloud.google.com/products#product-launch-stages) (GA).
 
 ### Announcement
 

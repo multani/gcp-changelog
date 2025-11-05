@@ -5,7 +5,7 @@
 ### Announcement
 
 All Cloud Composer environment's GKE clusters will receive
-**maintenance exclusions** from November 17, 2025 to December 2, 2025. For more
+**maintenance exclusions** from November 8, 2025 to December 2, 2025. For more
 information, see
 [Maintenance exclusions](https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions).
 

@@ -1,5 +1,12 @@
 # Google Cloud VMware Engine
 
+## 2025-11-04
+
+### Announcement
+
+VMware Engine `ve2` nodes are now available in the London, England, Europe (`europe-west2-b`) zone in the London, England, Europe region (`europe-west2`).
+
+---
 ## 2025-10-31
 
 ### Announcement

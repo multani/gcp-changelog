@@ -1,5 +1,158 @@
 # Container Optimized OS
 
+## 2025-11-03
+
+### Changed
+
+
+
+### cos-125-19216-104-3
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/1abebf8624cc7d4e8a9bb2bccff8f0dc031fd549 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19216.104.3/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This is an LTS refresh release.
+
+### Feature
+
+Fixed a bug in cos-extensions which would cause GB200 and GB300 devices not to be detected in one code path, which would result in Imex channels not being created by default.
+
+### Fixed
+
+Upgraded dev-lang/go to v1.23.12.
+
+### Fixed
+
+Fixed a TCPX bug which would sometimes incorrectly report devices as being missing when route cache entries were missing or invalidated.
+
+### Security
+
+Fixed CVE-2025-40006 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40009 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811500 -> 811499
+* Changed: net.ipv4.udp\_mem: 188034 250715 376068 -> 188034 250714 376068
+
+### Changed
+
+
+
+### cos-117-18613-439-12
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/027b2ab39b4dc72a0bdecc401f67fa816446d703 ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.439.12/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-40070 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40038 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40078 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38073 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811785 -> 811728
+
+### Changed
+
+
+
+### cos-dev-129-19350-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/38ea339c697dd371bf1ca35bb23ca1bf49b19a82 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19350.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated the Linux kernel to v6.12.55.
+
+### Feature
+
+Fixed a bug in cos-extensions which would cause GB200 and GB300 devices not to be detected in one code path, which would result in Imex channels not being created by default.
+
+### Fixed
+
+Fixed a TCPX bug which would sometimes incorrectly report devices as being missing when route cache entries were missing or invalidated.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811495 -> 811384
+
+### Changed
+
+
+
+### cos-121-18867-294-8
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/ff0e042c1b1498588b5d036a61f7d61af2c7bf48 ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.294.8/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Added support for NVIDIA driver v535.274.02 and v570.195.03.
+
+### Security
+
+Fixed CVE-2025-11413,11414 in binutils-libs.
+
+### Security
+
+Fixed CVE-2025-38073 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811835 -> 811785
+
+### Changed
+
+
+
+### cos-113-18244-521-8
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/f6bca56e79efabbe59c0c87c7f5bffc7c98a8358 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.8/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812040 -> 812007
+
+---
 ## 2025-10-27
 
 ### cos-121-18867-294-2

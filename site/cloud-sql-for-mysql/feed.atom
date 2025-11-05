@@ -2,9 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for MySQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for MySQL</subtitle>
-  <updated>2025-10-28T00:00:00+00:00</updated>
+  <updated>2025-11-04T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-mysql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2025-11-04:feature:0</id>
+    <published>2025-11-04T00:00:00+00:00</published>
+    <updated>2025-11-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud SQL now supports the
+<a href="https://docs.cloud.google.com/sql/docs/mysql/upgrade-minor-db-version#auto-upgrade">automatic minor version upgrade</a>
+for Cloud SQL for MySQL 8.0.35 or later instances.
+If your Cloud SQL for MySQL instance is running MySQL 8.0.35 or later, but
+you didn't select a specific minor version when you created the instance (<code>databaseVersion=MYSQL_8_0</code>),
+then your MySQL instance is upgraded automatically to the <a href="https://docs.cloud.google.com/sql/docs/db-versions#database-version-support"><strong>default minor version</strong></a>
+of Cloud SQL for MySQL 8.0 during its <a href="https://docs.cloud.google.com/sql/docs/mysql/maintenance">regular scheduled maintenance update</a>.</p>
+<p>All eligible Cloud SQL for MySQL instances receive the first automatic
+minor version upgrade during the rollout of <a href="https://docs.cloud.google.com/sql/docs/mysql/maintenance-changelog/mysql-8-0#mysql_8_0_%5B18,-26,-27,-28,-30,-31,-32,-33,-34,-35,-36,-37,-39,-40,-41,-42,-43%5D.r20251004.01_07"><code>MYSQL_8_0_[N].R20251004.01_07</code></a>.</p>]]></content>
+    <summary>Cloud SQL for MySQL instances running version 8.0.35 or later can now benefit from automatic minor version upgrades. Eligible instances will receive their first upgrade during the rollout of a specific maintenance update.</summary>
+    <title>Feature: Automatic minor version upgrade for Cloud SQL for MySQL</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

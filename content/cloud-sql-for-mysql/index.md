@@ -1,5 +1,21 @@
 # Cloud SQL for MySQL
 
+## 2025-11-04
+
+### Feature
+
+Cloud SQL now supports the
+[automatic minor version upgrade](https://docs.cloud.google.com/sql/docs/mysql/upgrade-minor-db-version#auto-upgrade)
+for Cloud SQL for MySQL 8.0.35 or later instances.
+If your Cloud SQL for MySQL instance is running MySQL 8.0.35 or later, but
+you didn't select a specific minor version when you created the instance (`databaseVersion=MYSQL_8_0`),
+then your MySQL instance is upgraded automatically to the [**default minor version**](https://docs.cloud.google.com/sql/docs/db-versions#database-version-support)
+of Cloud SQL for MySQL 8.0 during its [regular scheduled maintenance update](https://docs.cloud.google.com/sql/docs/mysql/maintenance).
+
+All eligible Cloud SQL for MySQL instances receive the first automatic
+minor version upgrade during the rollout of [`MYSQL_8_0_[N].R20251004.01_07`](https://docs.cloud.google.com/sql/docs/mysql/maintenance-changelog/mysql-8-0#mysql_8_0_%5B18,-26,-27,-28,-30,-31,-32,-33,-34,-35,-36,-37,-39,-40,-41,-42,-43%5D.r20251004.01_07).
+
+---
 ## 2025-10-28
 
 ### Feature

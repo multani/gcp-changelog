@@ -1,5 +1,12 @@
 # Capacity Planner
 
+## 2025-11-03
+
+### Feature
+
+You can use client libraries to access the Capacity Planner API using C#, Go, Java, Node.js, PHP, Python, or Ruby. For more information, see [Capacity Planner client libraries](https://docs.cloud.google.com/capacity-planner/docs/reference/libraries).
+
+---
 ## 2025-10-03
 
 ### Feature

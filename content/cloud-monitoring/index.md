@@ -1,5 +1,23 @@
 # Cloud Monitoring
 
+## 2025-11-04
+
+### Feature
+
+You can now view the topology for applications that you register with
+App Hub. The topology map provides a graphical view of the
+relationships between the services and workloads in your App Hub
+application. The topology map also displays alerts and traffic latency,
+which can help you understand how
+your application is performing and diagnose issues.
+This feature is in Public Preview.
+
+To learn more, see the following:
+
+* [View application topology](https://docs.cloud.google.com/monitoring/docs/application-topology)
+* [Application Monitoring overview](https://docs.cloud.google.com/monitoring/docs/about-application-monitoring)
+
+---
 ## 2025-10-23
 
 ### Feature

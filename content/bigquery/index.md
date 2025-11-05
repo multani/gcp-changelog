@@ -1,5 +1,23 @@
 # BigQuery
 
+## 2025-11-04
+
+### Feature
+
+You can now use [custom organization policies with the BigQuery migration
+service](https://docs.cloud.google.com/bigquery/docs/migration-custom-org-policies) to allow or deny specific
+operations during a BigQuery migration to meet your organization's compliance
+and security requirements. This includes an option to disable AI suggestions
+during a migration. This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+The local download limit for [exported query results](https://docs.cloud.google.com/bigquery/docs/export-file)
+has increased from 10MB to 1GB. This feature is [generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
+
+---
 ## 2025-10-31
 
 ### Feature
@@ -296,13 +314,11 @@ receives an approximately equal share of available capacity. This feature is now
 [generally available](https://cloud.google.com/products#product-launch-stages)
 (GA).
 
-### Feature
+### Announcement
 
-You can set a [maximum slot
-limit](https://docs.cloud.google.com/bigquery/docs/reservations-workload-management#predictable) for a
-reservation. You can configure the maximum reservation size when creating or
-updating a reservation. This feature is now [generally
-available](https://cloud.google.com/products#product-launch-stages) (GA).
+[Security, privacy, and compliance for Gemini in
+BigQuery](https://docs.cloud.google.com/gemini/docs/bigquery/security-privacy-compliance) details how
+customer data is protected and processed by Gemini in BigQuery.
 
 ### Announcement
 

@@ -4,50 +4,50 @@
     "2025-11-03": [
       {
         "kind": "Announcement",
-        "content": "**Google Cloud CCaaS 3.41 pre-release notes**\n\nHere are the pre-release notes for Google Cloud CCaaS 3.41. When we release version 3.41, we expect the new capabilities to be as shown here.",
+        "content": "**Google Cloud CCaaS 3.41**\n\nWe've released version 3.41 of Google Cloud CCaaS.\n\nThe timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see [Deployment schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).",
         "summary": {
-          "title": "Google Cloud CCaaS 3.41 Pre-release Notes",
-          "summary": "New capabilities are coming in version 3.41 of Google Cloud CCaaS. Please review the pre-release notes for details."
+          "title": "Google Cloud CCaaS 3.41 Released",
+          "summary": "Version 3.41 of Google Cloud CCaaS has been released. The update schedule for your instance will vary based on your chosen deployment plan."
         }
       },
       {
         "kind": "Feature",
-        "content": "**Nested disposition lists**\n\nYou can now organize your disposition lists by grouping them into nested folders, making it easier for agents to find the disposition codes they need. This is available in the agent adapter and the agent desktop.\n\nAdministrators: The **Disposition Codes** dialog at **Settings > Operation Management > Wrap-up > Manage Disposition Codes** has a new **Tree** tab.\n\nUser experience change: If you've configured nested disposition lists, the **Disposition** screen in the agent adapter displays links to the nested disposition lists.",
+        "content": "**Nested disposition lists**\n\nYou can now organize your disposition lists by grouping them into nested folders, making it easier for agents to find the disposition codes they need. This is available in the agent adapter and the agent desktop.\n\nAdministrators: The **Disposition Codes** dialog at **Settings > Operation Management > Wrap-up > Manage Disposition Codes** has a new **Tree** tab.\n\nUser experience change: If you've configured nested disposition lists, the **Disposition** screen in the agent adapter displays links to the nested disposition lists.\n\nFor more information, see [Configure nested disposition lists](https://docs.cloud.google.com/contact-center/ccai-platform/docs/disposition-lists-configure).",
         "summary": {
           "title": "Nested Disposition Lists",
-          "summary": "Organize your disposition lists into nested folders for easier agent access."
+          "summary": "Organize disposition lists into nested folders for easier agent access. Available in agent adapter and desktop."
         }
       },
       {
         "kind": "Feature",
-        "content": "**Skip language selection and IVR menu readout**\n\nYou can configure your call flow to skip language selection and the IVR menu readout. Instead, callers get the default language and are routed to the default queue. This creates a faster call connection experience for end-users.\n\nAdministrators:\n\n* In the **Settings > Languages & Messages > Languages** pane, there's a new **Skip language selection** option.\n* In the **Settings > Queue > IVR (Interactive Voice Response) > IVR Queue Menu Readout** section, there's a new **Skip IVR Menu readout** option.",
+        "content": "**Skip language selection and IVR menu readout**\n\nYou can configure your call flow to skip language selection and the IVR menu readout. Instead, callers get the default language and are routed to the default queue. This creates a faster call connection experience for end-users.\n\nAdministrators:\n\n* In the **Settings > Languages & Messages > Languages** pane, there's a new **Skip language selection** option.\n* In the **Settings > Queue > IVR (Interactive Voice Response) > IVR Queue Menu Readout** section, there's a new **Skip IVR Menu readout** option.\n\nFor more information, see [Configure IVR messages](https://docs.cloud.google.com/contact-center/ccai-platform/docs/customizing_languages_recordings_messages#configure-ivr-messages).",
         "summary": {
-          "title": "Faster Call Connections",
-          "summary": "Configure your call flow to bypass language selection and IVR menu readouts. Callers will be connected faster to the default language and queue."
+          "title": "Skip Language Selection and IVR Menu Readout",
+          "summary": "New feature allows skipping language selection and IVR menu readout for a faster caller experience."
         }
       },
       {
         "kind": "Feature",
-        "content": "**Transfer an email session to a queue**\n\nAgents can now transfer an email session to a queue. This resolves the problem of multiple email sessions being created when an agent forwards an email directly to an agent to transfer it.\n\nAdministrators: The **General** pane on the **Email** page at **Settings > Email** contains a new **Enable Email Transfer Between Queues** checkbox.\n\nUser experience change: In the email adapter, a new **Transfer** button appears when an agent views an assigned email.",
+        "content": "**Transfer an email session to a queue**\n\nAgents can now transfer an email session to a queue. This resolves the problem of multiple email sessions being created when an agent forwards an email directly to an agent to transfer it.\n\nAdministrators: The **General** pane on the **Email** page at **Settings > Email** contains a new **Enable Email Transfer Between Queues** checkbox.\n\nUser experience change: In the email adapter, a new **Transfer** button appears when an agent views an assigned email.\n\nFor more information, see [Let agents transfer email sessions to a queue](https://docs.cloud.google.com/contact-center/ccai-platform/docs/let-agents-transfer-email-sessions-to-a-queue).",
         "summary": {
-          "title": "Email Session Transfer",
-          "summary": "Agents can now transfer email sessions to a queue, preventing multiple email sessions and streamlining the transfer process. An 'Enable Email Transfer Between Queues' option is available in settings, and a new 'Transfer' button appears for agents in the email adapter."
+          "title": "Email session transfer to queue",
+          "summary": "Agents can now transfer email sessions to a queue, preventing multiple email sessions from being created when an agent forwards an email. This feature is available via a new checkbox in the Email settings for administrators and a 'Transfer' button for agents."
         }
       },
       {
         "kind": "Feature",
-        "content": "**Virtual agent to virtual agent direct chat transfers**\n\nYou can configure Dialogflow payloads to transfer chat sessions from one virtual agent directly to another virtual agent, using the destination virtual agent's agent ID.",
+        "content": "**Virtual agent to virtual agent direct chat transfers**\n\nYou can configure Dialogflow payloads to transfer chat sessions from one virtual agent directly to another virtual agent, using the destination virtual agent's agent ID.\n\nFor more information, see [Virtual agent to virtual agent direct transfer](https://docs.cloud.google.com/contact-center/ccai-platform/docs/va-to-va-transfers#va-to-va-direct-transfer).",
         "summary": {
-          "title": "Virtual agent chat transfers",
-          "summary": "Enable direct chat transfers between virtual agents using agent ID configuration."
+          "title": "Virtual agent transfers",
+          "summary": "Transfer chats directly between virtual agents."
         }
       },
       {
         "kind": "Feature",
-        "content": "**Extensions for support numbers**\n\nYou can assign a phone number extension to an agent that an end-user can use to directly call the agent. You can also set up an extension directory that end-users can use to find the extension for an agent that they want to call.\n\nAdministrators:\n\n* The **Agent Extensions** pane on the **Call** page at **Settings > Call** contains a new **Consumer to Agent Calls** section.\n* The **Add new menu** dialog at **Settings > Queue > IVR (Interactive Voice Response) > Menu Structure** contains a new **Extension Directory** toggle.",
+        "content": "**Extensions for support numbers**\n\nYou can assign a phone number extension to an agent that an end-user can use to directly call the agent. You can also set up an extension directory that end-users can use to find the extension for an agent that they want to call.\n\nAdministrators:\n\n* The **Agent Extensions** pane on the **Call** page at **Settings > Call** contains a new **Consumer to Agent Calls** section.\n* The **Add new menu** dialog at **Settings > Queue > IVR (Interactive Voice Response) > Menu Structure** contains a new **Extension Directory** toggle.\n\nFor more information, see [Turn on and configure agent extensions](https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#turn-on-and-configure-agent-extensions).",
         "summary": {
           "title": "Agent Extensions",
-          "summary": "Assign phone number extensions to agents for direct calls and set up an extension directory."
+          "summary": "Assign phone number extensions to agents for direct calling and set up an extension directory."
         }
       },
       {

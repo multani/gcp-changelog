@@ -4,9 +4,11 @@
 
 ### Announcement
 
-**Google Cloud CCaaS 3.41 pre-release notes**
+**Google Cloud CCaaS 3.41**
 
-Here are the pre-release notes for Google Cloud CCaaS 3.41. When we release version 3.41, we expect the new capabilities to be as shown here.
+We've released version 3.41 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see [Deployment schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
 
 ### Feature
 
@@ -17,6 +19,8 @@ You can now organize your disposition lists by grouping them into nested folders
 Administrators: The **Disposition Codes** dialog at **Settings > Operation Management > Wrap-up > Manage Disposition Codes** has a new **Tree** tab.
 
 User experience change: If you've configured nested disposition lists, the **Disposition** screen in the agent adapter displays links to the nested disposition lists.
+
+For more information, see [Configure nested disposition lists](https://docs.cloud.google.com/contact-center/ccai-platform/docs/disposition-lists-configure).
 
 ### Feature
 
@@ -29,6 +33,8 @@ Administrators:
 * In the **Settings > Languages & Messages > Languages** pane, there's a new **Skip language selection** option.
 * In the **Settings > Queue > IVR (Interactive Voice Response) > IVR Queue Menu Readout** section, there's a new **Skip IVR Menu readout** option.
 
+For more information, see [Configure IVR messages](https://docs.cloud.google.com/contact-center/ccai-platform/docs/customizing_languages_recordings_messages#configure-ivr-messages).
+
 ### Feature
 
 **Transfer an email session to a queue**
@@ -39,11 +45,15 @@ Administrators: The **General** pane on the **Email** page at **Settings > Email
 
 User experience change: In the email adapter, a new **Transfer** button appears when an agent views an assigned email.
 
+For more information, see [Let agents transfer email sessions to a queue](https://docs.cloud.google.com/contact-center/ccai-platform/docs/let-agents-transfer-email-sessions-to-a-queue).
+
 ### Feature
 
 **Virtual agent to virtual agent direct chat transfers**
 
 You can configure Dialogflow payloads to transfer chat sessions from one virtual agent directly to another virtual agent, using the destination virtual agent's agent ID.
+
+For more information, see [Virtual agent to virtual agent direct transfer](https://docs.cloud.google.com/contact-center/ccai-platform/docs/va-to-va-transfers#va-to-va-direct-transfer).
 
 ### Feature
 
@@ -55,6 +65,8 @@ Administrators:
 
 * The **Agent Extensions** pane on the **Call** page at **Settings > Call** contains a new **Consumer to Agent Calls** section.
 * The **Add new menu** dialog at **Settings > Queue > IVR (Interactive Voice Response) > Menu Structure** contains a new **Extension Directory** toggle.
+
+For more information, see [Turn on and configure agent extensions](https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#turn-on-and-configure-agent-extensions).
 
 ### Fixed
 

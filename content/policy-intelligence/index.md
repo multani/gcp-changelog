@@ -1,5 +1,15 @@
 # Policy Intelligence
 
+## 2025-11-04
+
+### Feature
+
+You can use Policy Troubleshooter to troubleshoot policies that include bindings
+for [service account principal sets](https://docs.cloud.google.com/iam/docs/principal-identifiers#allow-service-account-principal-sets).
+This feature is available in
+[GA](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-10-22
 
 ### Fixed

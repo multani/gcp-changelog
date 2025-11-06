@@ -2,9 +2,147 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Looker</title>
   <subtitle>Changelog for Google Cloud product: Looker</subtitle>
-  <updated>2025-10-31T00:00:00+00:00</updated>
+  <updated>2025-11-05T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:looker</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/looker/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:breaking:0</id>
+    <published>2025-11-05T00:00:00+00:00</published>
+    <updated>2025-11-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Looker now recognizes results from the <code>YEAR</code> function as a number and not a date in MySQL 8.4. This change replicates the behavior of MySQL 8.0 and earlier.</p>
+<p>To undo this change for a MySQL connection, add the following parameter to the Additional JDBC parameters section: <code>yearIsDateType=true</code></p>]]></content>
+    <summary>Looker now treats YEAR function results as numbers in MySQL 8.4, aligning with earlier versions. To revert this, set `yearIsDateType=true` in your MySQL connection settings.</summary>
+    <title>Breaking: Looker now recognizes YEAR function results as numbers in MySQL 8.4</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:breaking:1</id>
+    <published>2025-11-05T00:00:00+00:00</published>
+    <updated>2025-11-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The System Activity fields <code>sql_query.sql</code> and <code>sql_text.text</code> have been limited to a length of 1.9 MB. Any data beyond the 1.9 MB limit will be truncated.</p>]]></content>
+    <summary>The System Activity fields sql_query.sql and sql_text.text are now limited to 1.9 MB. Data exceeding this limit will be truncated.</summary>
+    <title>Breaking: Activity fields limited</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:feature:2</id>
+    <published>2025-11-05T00:00:00+00:00</published>
+    <updated>2025-11-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/connecting-to-your-db#max_number_of_pdt_builder_connections">Max Number of PDT Builder Connections</a> limit has been increased from 10 to 100.</p>]]></content>
+    <summary>The maximum number of PDT Builder connections has been increased from 10 to 100.</summary>
+    <title>Feature: PDT Builder Connections Limit Increased</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:feature:3</id>
+    <published>2025-11-05T00:00:00+00:00</published>
+    <updated>2025-11-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Looker 25.20 contains the following accessibility improvements:</p>
+<ul>
+<li>The character count for the custom message field of a schedule is now accessible to screen readers.</li>
+<li>The text for errors on custom filters is now accessible to screen readers.</li>
+<li>The list of visualization types in the Visualization section of an Explore is now accessible to screen readers.</li>
+<li>The reload button and corresponding "last refreshed" timestamp on a dashboard are now accessible to screen readers.</li>
+<li>The timezone selector on an Explore is now accessible to screen readers.</li>
+<li>The sort indicators in an Explore are now accessible to screen readers.</li>
+<li>The text formatting options in the Series tab of an Explore are now accessible to screen readers.</li>
+<li>Contrast is improved for elements that are selected when you set up dashboard filters.</li>
+<li>Contrast is improved for fields that are selected when Looker suggests a field name in the table calculations editor.</li>
+<li>Contrast is improved for tabs that are selected on the Schedule Delivery dialog.</li>
+<li>Contrast is improved for radio buttons that are selected on dialogs such as the download dialog.</li>
+<li>Dashboard filter options are no longer incorrectly classified as dialogs.</li>
+<li>The drill links in a single value visualization are now classified as buttons and can be accessed using the keyboard.</li>
+<li>The destination of an alert is now a required field.</li>
+</ul>]]></content>
+    <summary>Looker 25.20 includes several accessibility enhancements, making features like custom messages, error texts, visualization types, dashboard elements, and explore options more accessible to screen readers. Additionally, contrast has been improved in various elements, including dashboard filters, table calculations, and dialog boxes, with several UI elements reclassified for better keyboard navigation and usability.</summary>
+    <title>Feature: Accessibility Improvements in Looker 25.20</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:fixed:4</id>
+    <published>2025-11-05T00:00:00+00:00</published>
+    <updated>2025-11-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where a measure of <code>type: period_over_period</code> could be referenced in the <code>sql</code> parameter for a measure of <code>type: number</code>. Attempting to do so now correctly displays an error in the LookML validator. This feature now performs as expected.</p>]]></content>
+    <summary>The LookML validator now correctly displays an error when a measure of type `period_over_period` is referenced in the `sql` parameter for a measure of type `number`. This resolves a previous issue where such references would not be properly flagged, ensuring the feature now performs as expected.</summary>
+    <title>Fixed: Period Over Period Measure Error Fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:fixed:5</id>
+    <published>2025-11-05T00:00:00+00:00</published>
+    <updated>2025-11-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the <strong>Clear field keep filter</strong> button on an Explore could incorrectly become disabled when a user used the field search bar in the field picker. This feature now performs as expected.</p>]]></content>
+    <summary>The Clear field keep filter button on an Explore can now be used as expected after a fix for an issue where it was incorrectly disabled when using the field search bar.</summary>
+    <title>Fixed: Clear field keep filter button fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:fixed:6</id>
+    <published>2025-11-05T00:00:00+00:00</published>
+    <updated>2025-11-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where SQL Runner could return a <code>NoMethodError</code> when trying to query a LookML model that doesn't exist in the user's development mode. This feature now performs as expected.</p>]]></content>
+    <summary>The SQL Runner 'NoMethodError' issue has been resolved. It now functions correctly when querying non-existent LookML models in development mode.</summary>
+    <title>Fixed: SQL Runner Error Fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:fixed:7</id>
+    <published>2025-11-05T00:00:00+00:00</published>
+    <updated>2025-11-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where disabling the Favoriting LookML Dashboards Labs feature prevented users from moving LookML dashboards in folders. This feature now performs as expected.</p>]]></content>
+    <summary>Users can once again move LookML dashboards between folders after an issue with the Favoriting LookML Dashboards Labs feature has been resolved. The feature now functions correctly.</summary>
+    <title>Fixed: LookML dashboards can now be moved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:feature:8</id>
+    <published>2025-11-05T00:00:00+00:00</published>
+    <updated>2025-11-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Visual Drilling feature is now generally available on the Admin &gt; General Settings page.</p>]]></content>
+    <summary>The new Visual Drilling feature is now generally available on the Admin &gt; General Settings page. This feature provides enhanced capabilities for data exploration and analysis.</summary>
+    <title>Feature: Visual Drilling Now Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:feature:9</id>
+    <published>2025-11-05T00:00:00+00:00</published>
+    <updated>2025-11-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A new Labs feature, Internal Dashboard Theming, lets users apply predefined themes to a Looker dashboard. These themes, which are distinct from the themes that are used for embedded dashboards, can be managed by users with the <code>manage_internal_themes</code> permission.</p>]]></content>
+    <summary>Users can now apply predefined themes to their Looker dashboards with the new Internal Dashboard Theming feature. This allows for easier customization and a more personalized user experience.</summary>
+    <title>Feature: Internal Dashboard Theming</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:feature:10</id>
+    <published>2025-11-05T00:00:00+00:00</published>
+    <updated>2025-11-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Visual Drilling feature is now out of Labs and generally available on the Admin &gt; General Settings page.</p>]]></content>
+    <summary>The Visual Drilling feature has been released from Labs and is now generally available. You can find this new feature on the Admin &gt; General Settings page.</summary>
+    <title>Feature: Visual Drilling Now Generally Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -93,18 +231,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:changed:1</id>
-    <published>2025-10-06T00:00:00+00:00</published>
-    <updated>2025-10-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Conversational Analytics users with the <code>save_agents</code> permission can now <a href="https://docs.cloud.google.com/looker/docs/studio/conversational-data-agents-looker">share data agents</a>, which lets other users chat with the data agent and its Explores. (This release note was added on October 9, 2025.)</p>]]></content>
-    <summary>Users with the necessary permissions can now share data agents, enabling others to interact with the agent and its associated Explores.</summary>
-    <title>Changed: Data agents can now be shared</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:2</id>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:1</id>
     <published>2025-10-06T00:00:00+00:00</published>
     <updated>2025-10-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>You can now set the Auto Resize Value setting on single value visualizations. This setting has no effect if the Smart Single Value Text Size setting is enabled on the Admin &gt; General Settings page.</p>]]></content>
@@ -115,7 +242,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:3</id>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:feature:2</id>
     <published>2025-10-06T00:00:00+00:00</published>
     <updated>2025-10-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The Athena JDBC driver version has been upgraded from 2.1.5 to 2.2.2. The Athena JDBC driver is used for connections to <a href="https://docs.cloud.google.com/looker/docs/db-config-amazon-athena">Amazon Athena</a>.</p>]]></content>
@@ -126,135 +253,18 @@
     <author>
       <name>Google Cloud</name>
     </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:changed:3</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Conversational Analytics users with the <code>save_agents</code> permission can now <a href="https://docs.cloud.google.com/looker/docs/studio/conversational-data-agents-looker">share data agents</a>, which lets other users chat with the data agent and its Explores. (This release note was added on October 9, 2025.)</p>]]></content>
+    <summary>Users with the necessary permissions can now share data agents, enabling others to interact with the agent and its associated Explores.</summary>
+    <title>Changed: Data agents can now be shared</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
     <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:4</id>
-    <published>2025-10-06T00:00:00+00:00</published>
-    <updated>2025-10-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>An issue has been fixed where non-string values that were entered in the expression element of the <code>dynamic_fields</code> section of a LookML dashboard could cause the LookML validator to crash. This feature now performs as expected.</p>]]></content>
-    <summary>Non-string values in dynamic fields no longer cause validator crashes.</summary>
-    <title>Fixed: LookML Validator Fix</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:5</id>
-    <published>2025-10-06T00:00:00+00:00</published>
-    <updated>2025-10-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>An issue has been fixed where subtotal values could display incorrect values after a filter was added or updated. This feature now performs as expected.</p>]]></content>
-    <summary>Subtotal values may have previously displayed incorrectly after filters were applied. This has now been fixed and the feature is working as expected.</summary>
-    <title>Fixed: Subtotal values now display correctly</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:6</id>
-    <published>2025-10-06T00:00:00+00:00</published>
-    <updated>2025-10-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>An issue has been fixed where, when dashboard filters were updated, table visualizations could get incorrectly cropped to exclude the Total row and scroll bar. This feature now performs as expected.</p>]]></content>
-    <summary>Table visualizations in dashboards will no longer be incorrectly cropped when filters are updated. The Total row and scroll bar will now display as expected.</summary>
-    <title>Fixed: Dashboard table visualizations now display correctly</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:7</id>
-    <published>2025-10-06T00:00:00+00:00</published>
-    <updated>2025-10-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>An issue has been fixed where the Collapse Subtotal toggle wasn't collapsing subtotals on table visualizations. This feature now performs as expected.</p>]]></content>
-    <summary>The Collapse Subtotal toggle functionality has been fixed and now correctly collapses subtotals in table visualizations.</summary>
-    <title>Fixed: Collapse Subtotal Toggle Fixed</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:8</id>
-    <published>2025-10-06T00:00:00+00:00</published>
-    <updated>2025-10-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>An issue has been fixed where the maximum column limit warning could obscure the contents of a visualization. This feature now performs as expected.</p>]]></content>
-    <summary>The maximum column limit warning no longer obscures visualizations. This issue is now resolved.</summary>
-    <title>Fixed: Visualization column limit warning fixed</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:9</id>
-    <published>2025-10-06T00:00:00+00:00</published>
-    <updated>2025-10-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>An issue has been fixed where users couldn't sort tables that included pivoted values. This feature now performs as expected.</p>]]></content>
-    <summary>Users can now sort tables with pivoted values as expected. This resolves a previous issue that prevented this functionality.</summary>
-    <title>Fixed: Table sorting with pivoted values fixed</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:10</id>
-    <published>2025-10-06T00:00:00+00:00</published>
-    <updated>2025-10-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>LookML dashboards that aren't deployed to production can no longer be moved into folders other than the LookML Dashboards folder.</p>]]></content>
-    <summary>Fixed an issue where LookML dashboards not deployed to production could be moved to folders other than the LookML Dashboards folder.</summary>
-    <title>Fixed: LookML Dashboards Deployment</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:11</id>
-    <published>2025-10-06T00:00:00+00:00</published>
-    <updated>2025-10-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>LookML project parse errors now include the LookML file path as well as the line number of the error.</p>]]></content>
-    <summary>LookML project parse errors now include the LookML file path and line number.</summary>
-    <title>Fixed: LookML Parse Errors Improved</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:12</id>
-    <published>2025-10-06T00:00:00+00:00</published>
-    <updated>2025-10-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>An issue has been fixed where Databricks connections that used OAuth could not be saved if the password field was blank. You can now use OAuth without entering a password on the connections page.</p>]]></content>
-    <summary>Fixed an issue where Databricks connections using OAuth could not be saved if the password field was blank. Users can now successfully configure these connections without needing to enter a password.</summary>
-    <title>Fixed: Databricks connections with OAuth can now be saved without a password</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:13</id>
-    <published>2025-10-06T00:00:00+00:00</published>
-    <updated>2025-10-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>An issue has been fixed where users were sometimes unable to add line breaks to table calculations. This feature now performs as expected.</p>]]></content>
-    <summary>Users can now add line breaks to table calculations without issues. This feature is working as expected.</summary>
-    <title>Fixed: Line breaks in table calculations fixed</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:14</id>
-    <published>2025-10-06T00:00:00+00:00</published>
-    <updated>2025-10-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>An issue has been fixed where certain countries would not be displayed when a custom TopoJSON file was used. The following country names are now supported:</p>
-<ul>
-<li>Czechia for Czech Republic</li>
-<li>Eswatini for Swaziland</li>
-<li>Brunei Darussalam for Brunei</li>
-<li>North Macedonia for Macedonia</li>
-<li>Timor-Leste for East Timor</li>
-</ul>]]></content>
-    <summary>Fixed an issue where some countries weren't displayed with custom TopoJSON files. Supported country names now include Czechia, Eswatini, Brunei Darussalam, North Macedonia, and Timor-Leste.</summary>
-    <title>Fixed: Country display issue fixed</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:15</id>
     <published>2025-10-06T00:00:00+00:00</published>
     <updated>2025-10-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Looker 25.18 contains the following accessibility improvements:</p>
@@ -280,12 +290,140 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:16</id>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:5</id>
     <published>2025-10-06T00:00:00+00:00</published>
     <updated>2025-10-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where, when dashboard filters were updated, column widths could resize on table visualizations that included pivoted values. This feature now performs as expected.</p>]]></content>
     <summary>Pivoted values in table visualizations no longer cause column widths to resize unexpectedly when dashboard filters are updated. This issue has been resolved, and the feature now functions as intended.</summary>
     <title>Fixed: Table visualizations with pivoted values now display column widths correctly after dashboard filter updates.</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:6</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where non-string values that were entered in the expression element of the <code>dynamic_fields</code> section of a LookML dashboard could cause the LookML validator to crash. This feature now performs as expected.</p>]]></content>
+    <summary>Non-string values in dynamic fields no longer cause validator crashes.</summary>
+    <title>Fixed: LookML Validator Fix</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:7</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where subtotal values could display incorrect values after a filter was added or updated. This feature now performs as expected.</p>]]></content>
+    <summary>Subtotal values may have previously displayed incorrectly after filters were applied. This has now been fixed and the feature is working as expected.</summary>
+    <title>Fixed: Subtotal values now display correctly</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:8</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where, when dashboard filters were updated, table visualizations could get incorrectly cropped to exclude the Total row and scroll bar. This feature now performs as expected.</p>]]></content>
+    <summary>Table visualizations in dashboards will no longer be incorrectly cropped when filters are updated. The Total row and scroll bar will now display as expected.</summary>
+    <title>Fixed: Dashboard table visualizations now display correctly</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:9</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the Collapse Subtotal toggle wasn't collapsing subtotals on table visualizations. This feature now performs as expected.</p>]]></content>
+    <summary>The Collapse Subtotal toggle functionality has been fixed and now correctly collapses subtotals in table visualizations.</summary>
+    <title>Fixed: Collapse Subtotal Toggle Fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:10</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the maximum column limit warning could obscure the contents of a visualization. This feature now performs as expected.</p>]]></content>
+    <summary>The maximum column limit warning no longer obscures visualizations. This issue is now resolved.</summary>
+    <title>Fixed: Visualization column limit warning fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:11</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where users couldn't sort tables that included pivoted values. This feature now performs as expected.</p>]]></content>
+    <summary>Users can now sort tables with pivoted values as expected. This resolves a previous issue that prevented this functionality.</summary>
+    <title>Fixed: Table sorting with pivoted values fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:12</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>LookML dashboards that aren't deployed to production can no longer be moved into folders other than the LookML Dashboards folder.</p>]]></content>
+    <summary>Fixed an issue where LookML dashboards not deployed to production could be moved to folders other than the LookML Dashboards folder.</summary>
+    <title>Fixed: LookML Dashboards Deployment</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:13</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>LookML project parse errors now include the LookML file path as well as the line number of the error.</p>]]></content>
+    <summary>LookML project parse errors now include the LookML file path and line number.</summary>
+    <title>Fixed: LookML Parse Errors Improved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:14</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where Databricks connections that used OAuth could not be saved if the password field was blank. You can now use OAuth without entering a password on the connections page.</p>]]></content>
+    <summary>Fixed an issue where Databricks connections using OAuth could not be saved if the password field was blank. Users can now successfully configure these connections without needing to enter a password.</summary>
+    <title>Fixed: Databricks connections with OAuth can now be saved without a password</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:15</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where users were sometimes unable to add line breaks to table calculations. This feature now performs as expected.</p>]]></content>
+    <summary>Users can now add line breaks to table calculations without issues. This feature is working as expected.</summary>
+    <title>Fixed: Line breaks in table calculations fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-10-06:fixed:16</id>
+    <published>2025-10-06T00:00:00+00:00</published>
+    <updated>2025-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where certain countries would not be displayed when a custom TopoJSON file was used. The following country names are now supported:</p>
+<ul>
+<li>Czechia for Czech Republic</li>
+<li>Eswatini for Swaziland</li>
+<li>Brunei Darussalam for Brunei</li>
+<li>North Macedonia for Macedonia</li>
+<li>Timor-Leste for East Timor</li>
+</ul>]]></content>
+    <summary>Fixed an issue where some countries weren't displayed with custom TopoJSON files. Supported country names now include Czechia, Eswatini, Brunei Darussalam, North Macedonia, and Timor-Leste.</summary>
+    <title>Fixed: Country display issue fixed</title>
   </entry>
   <entry>
     <author>

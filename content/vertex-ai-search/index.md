@@ -1,5 +1,23 @@
 # Vertex AI Search
 
+## 2025-11-05
+
+### Feature
+
+**Vertex AI Search: Layout parser support for DOCX, PPTX, and XLSX (GA)**
+
+With the layout parser, support for parsing DOCX, PPTX, and XLSX file formats is
+Generally Available (GA). Both the layout and digital parsers can parse PDF,
+HTML, DOCX, PPTX, and XLSX files.
+For more information about the parsers, see [Parse and chunk
+documents](https://docs.cloud.google.com/generative-ai-app-builder/docs/parse-chunk-documents).
+
+**Important:** If you have been using the layout parser for these file formats,
+you will now be billed when parsing new documents. For
+information about layout parser pricing, see [Document AI feature
+pricing](https://cloud.google.com/document-ai/pricing).
+
+---
 ## 2025-10-02
 
 ### Changed

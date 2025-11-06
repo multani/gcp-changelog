@@ -1,5 +1,26 @@
 # BigQuery
 
+## 2025-11-05
+
+### Feature
+
+You can now generate [data insights](https://docs.cloud.google.com/bigquery/docs/data-insights#rest) when you
+create a
+[`DataScan`](https://docs.cloud.google.com/dataplex/docs/reference/rest/v1/projects.locations.dataScans)
+using the Dataplex API. This feature is
+[generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
+
+### Feature
+
+You can now
+[generate table and column descriptions](https://docs.cloud.google.com/bigquery/docs/data-insights#generate-column-table-descriptions)
+in all supported Gemini languages when you generate data insights.
+This feature is
+[generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
+
+---
 ## 2025-11-04
 
 ### Feature
@@ -85,21 +106,6 @@ This feature is
 
 ### Feature
 
-BigQuery now offers the following
-[managed AI functions](https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#managed_ai_functions)
-that use Gemini to help you filter, join, rank, and classify your data:
-
-* [`AI.IF`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-if):
-  Filter and join text or multimodal data based on a condition described in natural language.
-* [`AI.SCORE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-score):
-  Rate text or multimodal input to rank your data by quality, similarity, or other criteria.
-* [`AI.CLASSIFY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-classify):
-  Classify text into user-defined categories.
-
-These functions are in [Preview](https://cloud.google.com/products/#product-launch-stages).
-
-### Feature
-
 You can now [use the Data Engineering Agent](https://docs.cloud.google.com/bigquery/docs/data-engineering-agent-pipelines)
 to use Gemini in BigQuery to build and modify data
 pipelines to ingest data into BigQuery. This feature is in
@@ -116,6 +122,21 @@ jobs](https://docs.cloud.google.com/bigquery/docs/admin-jobs-explorer#compare-jo
 and potential areas to improve query performance.
 
 This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+BigQuery now offers the following
+[managed AI functions](https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#managed_ai_functions)
+that use Gemini to help you filter, join, rank, and classify your data:
+
+* [`AI.IF`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-if):
+  Filter and join text or multimodal data based on a condition described in natural language.
+* [`AI.SCORE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-score):
+  Rate text or multimodal input to rank your data by quality, similarity, or other criteria.
+* [`AI.CLASSIFY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-classify):
+  Classify text into user-defined categories.
+
+These functions are in [Preview](https://cloud.google.com/products/#product-launch-stages).
 
 ### Feature
 

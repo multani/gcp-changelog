@@ -1,5 +1,180 @@
 # Container Optimized OS
 
+## 2025-11-05
+
+### Changed
+
+
+
+### cos-117-18613-439-16
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/0ed8bd0d9c0b687b26f66a72743fa7f3f6f8088c ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.439.16/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Fixed bcache latency spikes.
+
+### Security
+
+Fixed CVE-2025-31133, CVE-2025-52565, and CVE-2025-52881 in
+app-containers/runc. There are known reliability issues in these fixes that will be addressed in subsequent releases.
+
+### Security
+
+Fixed CVE-2025-40103 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40105 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40099 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40052 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40040 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40035 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40044 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40049 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811728 -> 811733
+
+### Changed
+
+
+
+### cos-113-18244-521-11
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/75b1ce1ac39b0f103f0777f2199218595c927472 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.11/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-31133, CVE-2025-52565, and CVE-2025-52881 in
+app-containers/runc. There are known reliability issues in these fixes that will be addressed in subsequent releases.
+
+### Security
+
+Fixed CVE-2025-40042 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40049 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40044 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40027 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40035 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40026 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812007 -> 812016
+
+### Changed
+
+
+
+### cos-121-18867-294-12
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/10660c0131fbccaab609fca4aad9a134ebe20adc ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.294.12/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Fixed bcache latency spikes.
+
+### Security
+
+Fixed CVE-2025-31133, CVE-2025-52565, and CVE-2025-52881 in
+app-containers/runc. There are known reliability issues in these fixes that will be addressed in subsequent releases.
+
+### Security
+
+Fixed CVE-2025-40103 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40105 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40099 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40040 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811785 -> 811792
+
+### Changed
+
+
+
+### cos-125-19216-104-5
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/a87c94f53218718f1811c39c2e1a802d36f5e634 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19216.104.5/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Fixed bcache latency spikes.
+
+### Security
+
+Fixed CVE-2025-31133, CVE-2025-52565, and CVE-2025-52881 in
+app-containers/runc. There are known reliability issues in these fixes that will be addressed in subsequent releases.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811499 -> 811455
+
+---
 ## 2025-11-03
 
 ### cos-125-19216-104-3

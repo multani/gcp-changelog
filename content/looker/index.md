@@ -1,5 +1,69 @@
 # Looker
 
+## 2025-11-05
+
+### Breaking
+
+Looker now recognizes results from the `YEAR` function as a number and not a date in MySQL 8.4. This change replicates the behavior of MySQL 8.0 and earlier.
+
+To undo this change for a MySQL connection, add the following parameter to the Additional JDBC parameters section: `yearIsDateType=true`
+
+### Breaking
+
+The System Activity fields `sql_query.sql` and `sql_text.text` have been limited to a length of 1.9 MB. Any data beyond the 1.9 MB limit will be truncated.
+
+### Feature
+
+The [Max Number of PDT Builder Connections](https://docs.cloud.google.com/looker/docs/connecting-to-your-db#max_number_of_pdt_builder_connections) limit has been increased from 10 to 100.
+
+### Feature
+
+Looker 25.20 contains the following accessibility improvements:
+
+* The character count for the custom message field of a schedule is now accessible to screen readers.
+* The text for errors on custom filters is now accessible to screen readers.
+* The list of visualization types in the Visualization section of an Explore is now accessible to screen readers.
+* The reload button and corresponding "last refreshed" timestamp on a dashboard are now accessible to screen readers.
+* The timezone selector on an Explore is now accessible to screen readers.
+* The sort indicators in an Explore are now accessible to screen readers.
+* The text formatting options in the Series tab of an Explore are now accessible to screen readers.
+* Contrast is improved for elements that are selected when you set up dashboard filters.
+* Contrast is improved for fields that are selected when Looker suggests a field name in the table calculations editor.
+* Contrast is improved for tabs that are selected on the Schedule Delivery dialog.
+* Contrast is improved for radio buttons that are selected on dialogs such as the download dialog.
+* Dashboard filter options are no longer incorrectly classified as dialogs.
+* The drill links in a single value visualization are now classified as buttons and can be accessed using the keyboard.
+* The destination of an alert is now a required field.
+
+### Fixed
+
+An issue has been fixed where a measure of `type: period_over_period` could be referenced in the `sql` parameter for a measure of `type: number`. Attempting to do so now correctly displays an error in the LookML validator. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the **Clear field keep filter** button on an Explore could incorrectly become disabled when a user used the field search bar in the field picker. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where SQL Runner could return a `NoMethodError` when trying to query a LookML model that doesn't exist in the user's development mode. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where disabling the Favoriting LookML Dashboards Labs feature prevented users from moving LookML dashboards in folders. This feature now performs as expected.
+
+### Feature
+
+The Visual Drilling feature is now generally available on the Admin > General Settings page.
+
+### Feature
+
+A new Labs feature, Internal Dashboard Theming, lets users apply predefined themes to a Looker dashboard. These themes, which are distinct from the themes that are used for embedded dashboards, can be managed by users with the `manage_internal_themes` permission.
+
+### Feature
+
+The Visual Drilling feature is now out of Labs and generally available on the Admin > General Settings page.
+
+---
 ## 2025-10-31
 
 ### Feature
@@ -71,10 +135,6 @@ The following features are now available in [Preview](https://cloud.google.com/p
 * Expected Looker (Google Cloud core) deployment start: **Tuesday, October 7, 2025**
 * Expected Looker (Google Cloud core) final deployment: **Monday, October 20, 2025**
 
-### Changed
-
-Conversational Analytics users with the `save_agents` permission can now [share data agents](https://docs.cloud.google.com/looker/docs/studio/conversational-data-agents-looker), which lets other users chat with the data agent and its Explores. (This release note was added on October 9, 2025.)
-
 ### Feature
 
 You can now set the Auto Resize Value setting on single value visualizations. This setting has no effect if the Smart Single Value Text Size setting is enabled on the Admin > General Settings page.
@@ -82,6 +142,32 @@ You can now set the Auto Resize Value setting on single value visualizations. Th
 ### Feature
 
 The Athena JDBC driver version has been upgraded from 2.1.5 to 2.2.2. The Athena JDBC driver is used for connections to [Amazon Athena](https://docs.cloud.google.com/looker/docs/db-config-amazon-athena).
+
+### Changed
+
+Conversational Analytics users with the `save_agents` permission can now [share data agents](https://docs.cloud.google.com/looker/docs/studio/conversational-data-agents-looker), which lets other users chat with the data agent and its Explores. (This release note was added on October 9, 2025.)
+
+### Fixed
+
+Looker 25.18 contains the following accessibility improvements:
+
+* You can navigate drill menus by using a keyboard.
+* When you select a button toggle with a keyboard, the focus ring uses more contrasting colors.
+* You can switch button toggles on or off by using the Enter key.
+* When you use a keyboard to select a Look, dashboard, or folder that's inside a folder, a focus ring will appear around the selected item.
+* You can now use a keyboard to edit boards.
+* You can now use the keyboard to access LookML field definitions in the field picker.
+* The Alerts dialog is now compatible with screen readers.
+* The Series tab of the visualization editor is now compatible with screen readers.
+* Tile notes are now added to ARIA descriptions.
+* Actions for pivot columns are now accessible with a keyboard.
+* The color contrast has been improved on large text boxes such as the custom filter editor.
+* The options in the visualization settings panel now have names that can be read by screen readers.
+* The state of expanded dialogs on the Explore page, such as the field picker and visualization settings panel, can now be read by screen readers.
+
+### Fixed
+
+An issue has been fixed where, when dashboard filters were updated, column widths could resize on table visualizations that included pivoted values. This feature now performs as expected.
 
 ### Fixed
 
@@ -132,28 +218,6 @@ An issue has been fixed where certain countries would not be displayed when a cu
 * Brunei Darussalam for Brunei
 * North Macedonia for Macedonia
 * Timor-Leste for East Timor
-
-### Fixed
-
-Looker 25.18 contains the following accessibility improvements:
-
-* You can navigate drill menus by using a keyboard.
-* When you select a button toggle with a keyboard, the focus ring uses more contrasting colors.
-* You can switch button toggles on or off by using the Enter key.
-* When you use a keyboard to select a Look, dashboard, or folder that's inside a folder, a focus ring will appear around the selected item.
-* You can now use a keyboard to edit boards.
-* You can now use the keyboard to access LookML field definitions in the field picker.
-* The Alerts dialog is now compatible with screen readers.
-* The Series tab of the visualization editor is now compatible with screen readers.
-* Tile notes are now added to ARIA descriptions.
-* Actions for pivot columns are now accessible with a keyboard.
-* The color contrast has been improved on large text boxes such as the custom filter editor.
-* The options in the visualization settings panel now have names that can be read by screen readers.
-* The state of expanded dialogs on the Explore page, such as the field picker and visualization settings panel, can now be read by screen readers.
-
-### Fixed
-
-An issue has been fixed where, when dashboard filters were updated, column widths could resize on table visualizations that included pivoted values. This feature now performs as expected.
 
 ### Feature
 

@@ -4,6 +4,14 @@
     "2025-11-04": [
       {
         "kind": "Feature",
+        "content": "**Generally available**: You can verify which reservation a VM is consuming and\nview a list of VMs consuming a reservation. For more information,\nsee [View reservation consumption](https://docs.cloud.google.com/compute/docs/instances/reservations-view#view_reservation_consumption).",
+        "summary": {
+          "title": "Reservation Consumption",
+          "summary": "You can now see which VMs are using a reservation and view a list of VMs using a reservation."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "**Public preview**: You can configure a regional managed instance group (MIG) to\nallow a VM repair in an alternate zone when the MIG can't repair the VM in its\noriginal zone. Repairing a VM in an alternate zone can help to improve your\napplication's resiliency and resource obtainability. For more information, see\n[Repair a VM in an alternate zone](https://docs.cloud.google.com/compute/docs/instance-groups/repair-vm-in-alternate-zone).",
         "summary": {
           "title": "VM Repair in Alternate Zone",
@@ -61,19 +69,19 @@
         }
       },
       {
-        "kind": "Feature",
-        "content": "**Generally available**: You can use future reservations to request to reserve\ncapacity starting on a specific date up to one year in the future. For more\ninformation, see\n[About future reservation requests](https://docs.cloud.google.com/ai-hypercomputer/docs/reserve-capacity).",
-        "summary": {
-          "title": "Future reservations are now generally available",
-          "summary": "You can now use future reservations to request capacity up to one year in advance. This feature allows you to plan and secure resources for your future needs."
-        }
-      },
-      {
         "kind": "Changed",
         "content": "The kernel `dist-tag` that supports the Rocky Linux Optimized and Accelerator images on Compute Engine is being updated from `elX_ycld_next` to `elX_y_ciq` as part of the consolidation of CIQ's kernel trees. There are no changes to Secure Boot or GPG signing keys.\n\nFor example, `6.12.0-55.32.1.el10_0cld_next.2.1` to `6.12.0-55.39.1.el10_0_ciq.2.1`, where the `cld_next` tag is swapped with `ciq`.\n\nThis change affects the Rocky Linux 8, 9, and 10 optimized and accelerator images in an upcoming kernel update over the next month. The major version 8 and 9 kernels now include FIPS 140-3 patches as part of CIQ's ongoing FIPS 140-3 validation efforts for Rocky Linux. These patches have no effect if FIPS mode is not enabled. There are no code changes to the major version 10 kernel.\n\nThe kernel source tree is available at CIQ's [kernel-src-tree](https://github.com/ctrliq/kernel-src-tree) GitHub repository.",
         "summary": {
           "title": "Rocky Linux kernel update",
           "summary": "The kernel dist-tag for Rocky Linux Optimized and Accelerator images on Compute Engine is changing from elX_ycld_next to elX_y_ciq. This update affects Rocky Linux 8, 9, and 10 images over the next month. FIPS 140-3 patches are included in the major version 8 and 9 kernels, with no impact if FIPS mode is not enabled. There are no code changes to the major version 10 kernel."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Generally available**: You can use future reservations to request to reserve\ncapacity starting on a specific date up to one year in the future. For more\ninformation, see\n[About future reservation requests](https://docs.cloud.google.com/ai-hypercomputer/docs/reserve-capacity).",
+        "summary": {
+          "title": "Future reservations are now generally available",
+          "summary": "You can now use future reservations to request capacity up to one year in advance. This feature allows you to plan and secure resources for your future needs."
         }
       }
     ],

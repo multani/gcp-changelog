@@ -1,6 +1,96 @@
 {
   "name": "Looker",
   "entries": {
+    "2025-11-05": [
+      {
+        "kind": "Breaking",
+        "content": "Looker now recognizes results from the `YEAR` function as a number and not a date in MySQL 8.4. This change replicates the behavior of MySQL 8.0 and earlier.\n\nTo undo this change for a MySQL connection, add the following parameter to the Additional JDBC parameters section: `yearIsDateType=true`",
+        "summary": {
+          "title": "Looker now recognizes YEAR function results as numbers in MySQL 8.4",
+          "summary": "Looker now treats YEAR function results as numbers in MySQL 8.4, aligning with earlier versions. To revert this, set `yearIsDateType=true` in your MySQL connection settings."
+        }
+      },
+      {
+        "kind": "Breaking",
+        "content": "The System Activity fields `sql_query.sql` and `sql_text.text` have been limited to a length of 1.9 MB. Any data beyond the 1.9 MB limit will be truncated.",
+        "summary": {
+          "title": "Activity fields limited",
+          "summary": "The System Activity fields sql_query.sql and sql_text.text are now limited to 1.9 MB. Data exceeding this limit will be truncated."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [Max Number of PDT Builder Connections](https://docs.cloud.google.com/looker/docs/connecting-to-your-db#max_number_of_pdt_builder_connections) limit has been increased from 10 to 100.",
+        "summary": {
+          "title": "PDT Builder Connections Limit Increased",
+          "summary": "The maximum number of PDT Builder connections has been increased from 10 to 100."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Looker 25.20 contains the following accessibility improvements:\n\n* The character count for the custom message field of a schedule is now accessible to screen readers.\n* The text for errors on custom filters is now accessible to screen readers.\n* The list of visualization types in the Visualization section of an Explore is now accessible to screen readers.\n* The reload button and corresponding \"last refreshed\" timestamp on a dashboard are now accessible to screen readers.\n* The timezone selector on an Explore is now accessible to screen readers.\n* The sort indicators in an Explore are now accessible to screen readers.\n* The text formatting options in the Series tab of an Explore are now accessible to screen readers.\n* Contrast is improved for elements that are selected when you set up dashboard filters.\n* Contrast is improved for fields that are selected when Looker suggests a field name in the table calculations editor.\n* Contrast is improved for tabs that are selected on the Schedule Delivery dialog.\n* Contrast is improved for radio buttons that are selected on dialogs such as the download dialog.\n* Dashboard filter options are no longer incorrectly classified as dialogs.\n* The drill links in a single value visualization are now classified as buttons and can be accessed using the keyboard.\n* The destination of an alert is now a required field.",
+        "summary": {
+          "title": "Accessibility Improvements in Looker 25.20",
+          "summary": "Looker 25.20 includes several accessibility enhancements, making features like custom messages, error texts, visualization types, dashboard elements, and explore options more accessible to screen readers. Additionally, contrast has been improved in various elements, including dashboard filters, table calculations, and dialog boxes, with several UI elements reclassified for better keyboard navigation and usability."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where a measure of `type: period_over_period` could be referenced in the `sql` parameter for a measure of `type: number`. Attempting to do so now correctly displays an error in the LookML validator. This feature now performs as expected.",
+        "summary": {
+          "title": "Period Over Period Measure Error Fixed",
+          "summary": "The LookML validator now correctly displays an error when a measure of type `period_over_period` is referenced in the `sql` parameter for a measure of type `number`. This resolves a previous issue where such references would not be properly flagged, ensuring the feature now performs as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the **Clear field keep filter** button on an Explore could incorrectly become disabled when a user used the field search bar in the field picker. This feature now performs as expected.",
+        "summary": {
+          "title": "Clear field keep filter button fixed",
+          "summary": "The Clear field keep filter button on an Explore can now be used as expected after a fix for an issue where it was incorrectly disabled when using the field search bar."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where SQL Runner could return a `NoMethodError` when trying to query a LookML model that doesn't exist in the user's development mode. This feature now performs as expected.",
+        "summary": {
+          "title": "SQL Runner Error Fixed",
+          "summary": "The SQL Runner 'NoMethodError' issue has been resolved. It now functions correctly when querying non-existent LookML models in development mode."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where disabling the Favoriting LookML Dashboards Labs feature prevented users from moving LookML dashboards in folders. This feature now performs as expected.",
+        "summary": {
+          "title": "LookML dashboards can now be moved",
+          "summary": "Users can once again move LookML dashboards between folders after an issue with the Favoriting LookML Dashboards Labs feature has been resolved. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The Visual Drilling feature is now generally available on the Admin > General Settings page.",
+        "summary": {
+          "title": "Visual Drilling Now Available",
+          "summary": "The new Visual Drilling feature is now generally available on the Admin > General Settings page. This feature provides enhanced capabilities for data exploration and analysis."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "A new Labs feature, Internal Dashboard Theming, lets users apply predefined themes to a Looker dashboard. These themes, which are distinct from the themes that are used for embedded dashboards, can be managed by users with the `manage_internal_themes` permission.",
+        "summary": {
+          "title": "Internal Dashboard Theming",
+          "summary": "Users can now apply predefined themes to their Looker dashboards with the new Internal Dashboard Theming feature. This allows for easier customization and a more personalized user experience."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The Visual Drilling feature is now out of Labs and generally available on the Admin > General Settings page.",
+        "summary": {
+          "title": "Visual Drilling Now Generally Available",
+          "summary": "The Visual Drilling feature has been released from Labs and is now generally available. You can find this new feature on the Admin > General Settings page."
+        }
+      }
+    ],
     "2025-10-31": [
       {
         "kind": "Feature",
@@ -59,14 +149,6 @@
         }
       },
       {
-        "kind": "Changed",
-        "content": "Conversational Analytics users with the `save_agents` permission can now [share data agents](https://docs.cloud.google.com/looker/docs/studio/conversational-data-agents-looker), which lets other users chat with the data agent and its Explores. (This release note was added on October 9, 2025.)",
-        "summary": {
-          "title": "Data agents can now be shared",
-          "summary": "Users with the necessary permissions can now share data agents, enabling others to interact with the agent and its associated Explores."
-        }
-      },
-      {
         "kind": "Feature",
         "content": "You can now set the Auto Resize Value setting on single value visualizations. This setting has no effect if the Smart Single Value Text Size setting is enabled on the Admin > General Settings page.",
         "summary": {
@@ -80,6 +162,30 @@
         "summary": {
           "title": "Athena JDBC Driver Update",
           "summary": "The Athena JDBC driver has been upgraded to version 2.2.2."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Conversational Analytics users with the `save_agents` permission can now [share data agents](https://docs.cloud.google.com/looker/docs/studio/conversational-data-agents-looker), which lets other users chat with the data agent and its Explores. (This release note was added on October 9, 2025.)",
+        "summary": {
+          "title": "Data agents can now be shared",
+          "summary": "Users with the necessary permissions can now share data agents, enabling others to interact with the agent and its associated Explores."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Looker 25.18 contains the following accessibility improvements:\n\n* You can navigate drill menus by using a keyboard.\n* When you select a button toggle with a keyboard, the focus ring uses more contrasting colors.\n* You can switch button toggles on or off by using the Enter key.\n* When you use a keyboard to select a Look, dashboard, or folder that's inside a folder, a focus ring will appear around the selected item.\n* You can now use a keyboard to edit boards.\n* You can now use the keyboard to access LookML field definitions in the field picker.\n* The Alerts dialog is now compatible with screen readers.\n* The Series tab of the visualization editor is now compatible with screen readers.\n* Tile notes are now added to ARIA descriptions.\n* Actions for pivot columns are now accessible with a keyboard.\n* The color contrast has been improved on large text boxes such as the custom filter editor.\n* The options in the visualization settings panel now have names that can be read by screen readers.\n* The state of expanded dialogs on the Explore page, such as the field picker and visualization settings panel, can now be read by screen readers.",
+        "summary": {
+          "title": "Looker 25.18: Accessibility Improvements",
+          "summary": "Looker 25.18 includes several keyboard navigation and screen reader compatibility enhancements, making the platform more accessible."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where, when dashboard filters were updated, column widths could resize on table visualizations that included pivoted values. This feature now performs as expected.",
+        "summary": {
+          "title": "Table visualizations with pivoted values now display column widths correctly after dashboard filter updates.",
+          "summary": "Pivoted values in table visualizations no longer cause column widths to resize unexpectedly when dashboard filters are updated. This issue has been resolved, and the feature now functions as intended."
         }
       },
       {
@@ -168,22 +274,6 @@
         "summary": {
           "title": "Country display issue fixed",
           "summary": "Fixed an issue where some countries weren't displayed with custom TopoJSON files. Supported country names now include Czechia, Eswatini, Brunei Darussalam, North Macedonia, and Timor-Leste."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "Looker 25.18 contains the following accessibility improvements:\n\n* You can navigate drill menus by using a keyboard.\n* When you select a button toggle with a keyboard, the focus ring uses more contrasting colors.\n* You can switch button toggles on or off by using the Enter key.\n* When you use a keyboard to select a Look, dashboard, or folder that's inside a folder, a focus ring will appear around the selected item.\n* You can now use a keyboard to edit boards.\n* You can now use the keyboard to access LookML field definitions in the field picker.\n* The Alerts dialog is now compatible with screen readers.\n* The Series tab of the visualization editor is now compatible with screen readers.\n* Tile notes are now added to ARIA descriptions.\n* Actions for pivot columns are now accessible with a keyboard.\n* The color contrast has been improved on large text boxes such as the custom filter editor.\n* The options in the visualization settings panel now have names that can be read by screen readers.\n* The state of expanded dialogs on the Explore page, such as the field picker and visualization settings panel, can now be read by screen readers.",
-        "summary": {
-          "title": "Looker 25.18: Accessibility Improvements",
-          "summary": "Looker 25.18 includes several keyboard navigation and screen reader compatibility enhancements, making the platform more accessible."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "An issue has been fixed where, when dashboard filters were updated, column widths could resize on table visualizations that included pivoted values. This feature now performs as expected.",
-        "summary": {
-          "title": "Table visualizations with pivoted values now display column widths correctly after dashboard filter updates.",
-          "summary": "Pivoted values in table visualizations no longer cause column widths to resize unexpectedly when dashboard filters are updated. This issue has been resolved, and the feature now functions as intended."
         }
       },
       {

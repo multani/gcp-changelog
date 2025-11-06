@@ -4,6 +4,12 @@
 
 ### Feature
 
+**Generally available**: You can verify which reservation a VM is consuming and
+view a list of VMs consuming a reservation. For more information,
+see [View reservation consumption](https://docs.cloud.google.com/compute/docs/instances/reservations-view#view_reservation_consumption).
+
+### Feature
+
 **Public preview**: You can configure a regional managed instance group (MIG) to
 allow a VM repair in an alternate zone when the MIG can't repair the VM in its
 original zone. Repairing a VM in an alternate zone can help to improve your
@@ -70,13 +76,6 @@ For more information, see
 Version `20251009.01` of the guest agent, announced in the [October 20, 2025 release notes](https://docs.cloud.google.com/compute/docs/images/guest-environment/release-notes#October_20_2025), has been rolled back. This version introduced the plugin-based architecture to Windows but contained a bug in the [WSFC module](https://docs.cloud.google.com/compute/docs/images/guest-agent-functions#windows-failover).
 To resolve this issue, guest agent version `20251011.00` is now available for Windows, which excludes the new plugin-based architecture.
 
-### Feature
-
-**Generally available**: You can use future reservations to request to reserve
-capacity starting on a specific date up to one year in the future. For more
-information, see
-[About future reservation requests](https://docs.cloud.google.com/ai-hypercomputer/docs/reserve-capacity).
-
 ### Changed
 
 The kernel `dist-tag` that supports the Rocky Linux Optimized and Accelerator images on Compute Engine is being updated from `elX_ycld_next` to `elX_y_ciq` as part of the consolidation of CIQ's kernel trees. There are no changes to Secure Boot or GPG signing keys.
@@ -86,6 +85,13 @@ For example, `6.12.0-55.32.1.el10_0cld_next.2.1` to `6.12.0-55.39.1.el10_0_ciq.2
 This change affects the Rocky Linux 8, 9, and 10 optimized and accelerator images in an upcoming kernel update over the next month. The major version 8 and 9 kernels now include FIPS 140-3 patches as part of CIQ's ongoing FIPS 140-3 validation efforts for Rocky Linux. These patches have no effect if FIPS mode is not enabled. There are no code changes to the major version 10 kernel.
 
 The kernel source tree is available at CIQ's [kernel-src-tree](https://github.com/ctrliq/kernel-src-tree) GitHub repository.
+
+### Feature
+
+**Generally available**: You can use future reservations to request to reserve
+capacity starting on a specific date up to one year in the future. For more
+information, see
+[About future reservation requests](https://docs.cloud.google.com/ai-hypercomputer/docs/reserve-capacity).
 
 ---
 ## 2025-10-20

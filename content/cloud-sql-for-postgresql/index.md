@@ -1,5 +1,41 @@
 # Cloud SQL for PostgreSQL
 
+## 2025-11-05
+
+### Feature
+
+The rollout of the following extension versions, plugin versions, and
+extension support is underway:
+
+**Extensions and plugins**
+
+* `plpgsql_check` is upgraded from 2.8.1 to 2.8.3 for PostgreSQL versions
+  14 and later.
+* `pg_wait_sampling` is upgraded from 1.1.6 to 1.1.9 for PostgreSQL versions
+  13 and later.
+* `tds_fdw` is upgraded from 2.0.4 to 2.0.5.
+
+The following extensions are available for PostgreSQL 18:
+
+* `anon`
+* `pg_hint_plan`
+* `pg_wait_sampling`
+* `plpgsql_check`
+* `tds_fdw`
+
+To use these versions of the extensions and plugins, update your instance to
+`[PostgreSQL version].R20251004.01_14`.
+
+If you use a maintenance window, then the updates to the minor, extension, and
+plugin versions happen according to the timeframe that you set in the window.
+Otherwise, the updates occur within the next few weeks.
+
+For more information on checking your maintenance version, see
+[Self-service maintenance](https://docs.cloud.google.com/sql/docs/postgres/self-service-maintenance). To find
+your maintenance window or to manage maintenance updates, see
+[Find and set maintenance windows](https://docs.cloud.google.com/sql/docs/postgres/set-maintenance-window).
+
+---
 ## 2025-10-27
 
 ### Feature

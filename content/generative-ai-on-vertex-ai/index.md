@@ -1,5 +1,17 @@
 # Generative AI on Vertex AI
 
+## 2025-11-04
+
+### Feature
+
+**MiniMax M2** is available in Model Garden. This model is
+is built for end-to-end development workflows and has strong capabilities
+in planning and executing complex tool-calling tasks. The model is
+optimized to provide a balance of performance, cost, and inference speed.
+MiniMax M2 is available as a managed API in Model Garden. To learn more, see
+[MiniMax M2](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/maas/minimax/minimax-m2).
+
+---
 ## 2025-10-23
 
 ### Feature
@@ -139,15 +151,15 @@ body shape and preserve the garment's identity.
 
 ### Feature
 
-**Save and share prompts in Vertex AI Studio**: You can now save and share prompts in Vertex AI Studio. Sharing prompts lets you collaborate with team members, ensure consistency, and build a library of effective prompts for various tasks. For more information, see [Save and share prompts](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/prompt-sharing).
-
-### Feature
-
 The following Qwen models are available in [Model Garden](https://console.cloud.google.com/vertex-ai/publishers/qwen/model-garden/qwen-image):
 
 * Qwen-Image
 * Qwen-Image-Edit
 * Qwen-Image-Edit-2509
+
+### Feature
+
+**Save and share prompts in Vertex AI Studio**: You can now save and share prompts in Vertex AI Studio. Sharing prompts lets you collaborate with team members, ensure consistency, and build a library of effective prompts for various tasks. For more information, see [Save and share prompts](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/prompt-sharing).
 
 ### Announcement
 

@@ -2,10 +2,6 @@
 
 ## 2025-11-05
 
-### Changed
-
-
-
 ### cos-117-18613-439-16
 
 |  |  |  |  |
@@ -60,10 +56,6 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 811728 -> 811733
 
-### Changed
-
-
-
 ### cos-113-18244-521-11
 
 |  |  |  |  |
@@ -106,10 +98,6 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 812007 -> 812016
 
-### Changed
-
-
-
 ### cos-121-18867-294-12
 
 |  |  |  |  |
@@ -147,10 +135,6 @@ Fixed CVE-2025-40040 in the Linux kernel.
 Runtime sysctl changes:
 
 * Changed: fs.file-max: 811785 -> 811792
-
-### Changed
-
-
 
 ### cos-125-19216-104-5
 

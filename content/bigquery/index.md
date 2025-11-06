@@ -4,6 +4,15 @@
 
 ### Feature
 
+You can use the
+[`MATCH_RECOGNIZE` clause](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax#match_recognize_clause)
+in your SQL queries to filter and aggregate matches across rows in a table.
+This feature is
+[generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
+
+### Feature
+
 You can now generate [data insights](https://docs.cloud.google.com/bigquery/docs/data-insights#rest) when you
 create a
 [`DataScan`](https://docs.cloud.google.com/dataplex/docs/reference/rest/v1/projects.locations.dataScans)
@@ -31,12 +40,6 @@ operations during a BigQuery migration to meet your organization's compliance
 and security requirements. This includes an option to disable AI suggestions
 during a migration. This feature is in
 [Preview](https://cloud.google.com/products/#product-launch-stages).
-
-### Feature
-
-The local download limit for [exported query results](https://docs.cloud.google.com/bigquery/docs/export-file)
-has increased from 10MB to 1GB. This feature is [generally available](https://cloud.google.com/products/#product-launch-stages)
-(GA).
 
 ---
 ## 2025-10-31

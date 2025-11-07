@@ -8,7 +8,7 @@
 
 We've released version 3.41 of Google Cloud CCaaS.
 
-The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see [Deployment schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see [Deployment schedules](https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
 
 ### Feature
 
@@ -105,27 +105,7 @@ We addressed the following issues in this release:
 
 We've released version 3.40 of Google Cloud CCaaS, including the web SDK.
 
-The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see [Deployment schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
-
-### Feature
-
-**New variables for custom lookup URLs**
-
-We've added the following five variables for custom lookup URLs:
-
-* **CUSTOMER\_PHONE\_NUMBER**: the end-user's phone number
-* **SUPPORT\_PHONE\_NUMBER**: your call center's phone number that an end-user calls in on
-* **OUTBOUND\_NUMBER**: the phone number an agent uses when making an outbound call
-* **SESSION\_ID**: the session ID
-* **CUSTOM\_AGENT\_ID**: an optional agent ID
-
-For more information, see [Custom lookup URL configuration](https://docs.cloud.google.com/contact-center/ccai-platform/docs/custom-crm#custom_lookup_url_configuration).
-
-### Feature
-
-**Agent desktop maintains state after refresh**
-
-While you're using the agent desktop, if you refresh your browser, the agent desktop now maintains its state. This means that active conversations, finished tabs, and recently closed sessions remain as they were before the refresh.
+The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see [Deployment schedules](https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
 
 ### Feature
 
@@ -147,7 +127,7 @@ You can now control the color of the **Start Screen Share** button to match the 
 
 **The europe-west4 and europe-west6 regions are available for Agent Assist conversation profiles**
 
-The `europe-west4` and `europe-west6` regions are now available when you create an Agent Assist conversation profile for a Dialogflow CX virtual agent. For more information, see [Create conversation profile for Dialogflow CX virtual agents](https://cloud.google.com/contact-center/ccai-platform/docs/create-a-dialogflow-agent#create-cp).
+The `europe-west4` and `europe-west6` regions are now available when you create an Agent Assist conversation profile for a Dialogflow CX virtual agent. For more information, see [Create conversation profile for Dialogflow CX virtual agents](https://docs.cloud.google.com/contact-center/ccai-platform/docs/create-a-dialogflow-agent#create-cp).
 
 ### Feature
 
@@ -163,6 +143,26 @@ You can now configure the web SDK to do the following on the end-user's chat scr
 **Web SDK: Support for hiding the Start a new conversation button**
 
 You can now configure the web SDK to hide the **Start a new conversation** button on the end-user's chat screen after the session ends. For more information, see [Hide the button to download a transcript at the end of a session](https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-getting-started#hide-start-new-conversation-button).
+
+### Feature
+
+**New variables for custom lookup URLs**
+
+We've added the following five variables for custom lookup URLs:
+
+* **CUSTOMER\_PHONE\_NUMBER**: the end-user's phone number
+* **SUPPORT\_PHONE\_NUMBER**: your call center's phone number that an end-user calls in on
+* **OUTBOUND\_NUMBER**: the phone number an agent uses when making an outbound call
+* **SESSION\_ID**: the session ID
+* **CUSTOM\_AGENT\_ID**: an optional agent ID
+
+For more information, see [Custom lookup URL configuration](https://docs.cloud.google.com/contact-center/ccai-platform/docs/custom-crm#custom_lookup_url_configuration).
+
+### Feature
+
+**Agent desktop maintains state after refresh**
+
+While you're using the agent desktop, if you refresh your browser, the agent desktop now maintains its state. This means that active conversations, finished tabs, and recently closed sessions remain as they were before the refresh.
 
 ### Fixed
 
@@ -280,7 +280,7 @@ This patch adds the `didHandleUjetError` function to the iOS SDK. The `didHandle
 * `voipLibraryNotFound`
 * `chatLibraryNotFound`
 
-For more information, see [Fallback](https://cloud.google.com/contact-center/ccai-platform/docs/ios-sdk-guide#fallback).
+For more information, see [Fallback](https://docs.cloud.google.com/contact-center/ccai-platform/docs/ios-sdk-guide#fallback).
 
 ---
 ## 2025-10-14
@@ -390,7 +390,7 @@ The following issues were addressed in this release:
 
 All release notes published on this date are part of version 3.39.
 
-The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see [Deployment schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see [Deployment schedules](https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
 
 ### Feature
 
@@ -405,7 +405,7 @@ User experience changes:
 
 Administrators: There's a new checkbox at **Settings > Operation Management > Transfer history** for turning on transfer history in the agent adapter.
 
-For more information, see [Transfer history and queue information in the agent adapter](https://cloud.google.com/contact-center/ccai-platform/docs/queue-info-transfer-history-agent-adapter).
+For more information, see [Transfer history and queue information in the agent adapter](https://docs.cloud.google.com/contact-center/ccai-platform/docs/queue-info-transfer-history-agent-adapter).
 
 ### Feature
 
@@ -413,32 +413,32 @@ For more information, see [Transfer history and queue information in the agent a
 
 Google Cloud CCaaS has improved controls over the ordering of the key-value pairs that appear in the agent adapter and in CRM records. Here's how the ordering controls work:
 
-* **Virtual agents**: When you configure session variables, you can use the new `display_order_in_adapter` property to specify the order that the session variables appear in the agent adapter and in CRM records. For more information, see [Capture from intent response](https://cloud.google.com/contact-center/ccai-platform/docs/va-custom-payload#capture_from_intent_response).
-* **Web SDK**: Web SDK custom data is displayed in the agent adapter and CRM records in the order that the key-value pairs appear in the JSON custom data file. For more information about JSON custom data files, see [Chat unsigned custom data](https://cloud.google.com/contact-center/ccai-platform/docs/web-sdk#chat-unsigned-custom-data).
+* **Virtual agents**: When you configure session variables, you can use the new `display_order_in_adapter` property to specify the order that the session variables appear in the agent adapter and in CRM records. For more information, see [Capture from intent response](https://docs.cloud.google.com/contact-center/ccai-platform/docs/va-custom-payload#capture_from_intent_response).
+* **Web SDK**: Web SDK custom data is displayed in the agent adapter and CRM records in the order that the key-value pairs appear in the JSON custom data file. For more information about JSON custom data files, see [Chat unsigned custom data](https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk#chat-unsigned-custom-data).
 
 ### Feature
 
 **Virtual agents for the SMS channel**
 
-Virtual agents are now available for the SMS channel. This lets you create virtual agents and assign them to SMS queues, offering virtual agent support to end-users in SMS chat sessions. For more information, see [Virtual agents for SMS](https://cloud.google.com/contact-center/ccai-platform/docs/virtual-agents-for-sms).
+Virtual agents are now available for the SMS channel. This lets you create virtual agents and assign them to SMS queues, offering virtual agent support to end-users in SMS chat sessions. For more information, see [Virtual agents for SMS](https://docs.cloud.google.com/contact-center/ccai-platform/docs/virtual-agents-for-sms).
 
 ### Feature
 
 **Search in the email channel**
 
-Agents can now search for emails in the agent adapter by keyword, session ID, or subject. For more information, see [Search for emails](https://cloud.google.com/contact-center/ccai-platform/docs/email-adapter#search-for-emails).
+Agents can now search for emails in the agent adapter by keyword, session ID, or subject. For more information, see [Search for emails](https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-adapter#search-for-emails).
 
 ### Feature
 
 **Cancel scheduled calls with the callback calls API**
 
-You can now use the callback calls API to cancel a single scheduled callback call or a list of calls. For more information, see [Callback call API](https://cloud.google.com/contact-center/ccai-platform/docs/callback-call-api).
+You can now use the callback calls API to cancel a single scheduled callback call or a list of calls. For more information, see [Callback call API](https://docs.cloud.google.com/contact-center/ccai-platform/docs/callback-call-api).
 
 ### Feature
 
 **Mid-session authentication is supported by all CRM types**
 
-Mid-session authentication is supported by all CRM types, not just custom CRMs. For more information, see [Mid-Session authentication by API](https://cloud.google.com/contact-center/ccai-platform/docs/mid-session-authentication-apps-api).
+Mid-session authentication is supported by all CRM types, not just custom CRMs. For more information, see [Mid-Session authentication by API](https://docs.cloud.google.com/contact-center/ccai-platform/docs/mid-session-authentication-apps-api).
 
 ### Feature
 
@@ -446,8 +446,8 @@ Mid-session authentication is supported by all CRM types, not just custom CRMs. 
 
 The following new advanced reporting dashboard is available:
 
-* **Deflections**. Get deflection information by queue and for your entire contact center. For more information, see [Deflections dashboards](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-deflections).
-* **Agent activity timeline**. See the historical activity for an agent. For more information, see [Agent activity timeline dashboard](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-agent-activity-timeline).
+* **Deflections**. Get deflection information by queue and for your entire contact center. For more information, see [Deflections dashboards](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-deflections).
+* **Agent activity timeline**. See the historical activity for an agent. For more information, see [Agent activity timeline dashboard](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-agent-activity-timeline).
 
 ### Feature
 
@@ -460,22 +460,22 @@ We've made the following updates to the advanced reporting dashboards:
   + **Queue Group Performance Calls**: displays detailed performance information for calls by queue group.
   + **Queue Group Performance Chats**: displays detailed performance information for chats by queue group.
 
-  For more information, see [Queue Group Dashboards All](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-group-perf#queue-group-dashboards-all).
+  For more information, see [Queue Group Dashboards All](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-group-perf#queue-group-dashboards-all).
 * **Queue interval dashboards**: The **Queue Interval - Calls** and **Queue Interval - Chats** dashboards have a new **Total Queue Entries** column in the table tile. This is the sum of all inbound interactions that have entered a queue, excluding transfers.
 
-  For more information, see [Queue interval dashboards](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-interval).
+  For more information, see [Queue interval dashboards](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-interval).
 * **Virtual agent dashboards**: On both the **Virtual Agent Dashboard Calls** and **Virtual Agent Dashboard Chats** dashboards, the virtual agent metrics table contains a new **Interaction Outcome** column.
 
-  For more information, see [Virtual agent dashboards](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-virtual-agent).
+  For more information, see [Virtual agent dashboards](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-virtual-agent).
 * **All Interactions - Chat dashboard**: In the **All Chat Interactions (Historical)** table, if you configure chat transcript storage for your CRM, the values in the **Chat ID** column become links to the chat transcripts.
 
-  For more information, see [All interactions dashboards](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-all-interactions).
+  For more information, see [All interactions dashboards](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-all-interactions).
 * **New metrics in the Call Queue Metrics (Historical) Explore**: We've added the following two metrics to the **Call Queue Metrics (Historical)** Explore:
 
   + **CSL %**: Custom Service Level. This is calculated as follows: The number of queued interactions within SLA / The number of queued interactions answered.
   + **Total Queued Answered**: The number of queued interactions answered by a human agent.
 
-  For information about metrics in an Explore, see [Create a new metrics tile in a dashboard](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-add-tiles-to-dashboard#create_a_new_metrics_tile_in_a_dashboard).
+  For information about metrics in an Explore, see [Create a new metrics tile in a dashboard](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-add-tiles-to-dashboard#create_a_new_metrics_tile_in_a_dashboard).
 * **Additional dashboards with advanced capabilities**: the following dashboards now appear on the **Advanced Reporting Landing Page**. This means you can use them to create new custom dashboards or create Looks to link to custom dashboards.
 
   **Performance**
@@ -504,7 +504,7 @@ We've made the following updates to the advanced reporting dashboards:
   + **Calls Queued**
   + **Chats Queued**
 
-  For more information, see [Advanced capabilities](https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-advanced-capabilities).
+  For more information, see [Advanced capabilities](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-advanced-capabilities).
 
 ### Fixed
 

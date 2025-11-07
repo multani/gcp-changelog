@@ -1,5 +1,12 @@
 # Agent Assist
 
+## 2025-10-29
+
+### Feature
+
+Agent Assist offers [summarization with custom sections 5.0](https://docs.cloud.google.com/agent-assist/docs/summarization-with-custom-sections) in GA. 5.0 is available in all Agent Assist [regions](https://docs.cloud.google.com/agent-assist/docs/regionalization).
+
+---
 ## 2025-10-21
 
 ### Feature
@@ -11,11 +18,22 @@ Agent Assist offers summarization automatic evaluation in GA. This feature evalu
 * `global`
 
 ---
+## 2025-10-20
+
+### Feature
+
+Agent Assist offers summarization automatic evaluation in GA. This feature assesses the quality of AI-generated summaries based on accuracy, completeness, and adherence. [Summarization autoevaluation](https://docs.cloud.google.com/agent-assist/docs/summarization-autoeval-metrics) is available in the following regions:
+
+* us-central1
+* us-west1
+* global
+
+---
 ## 2025-10-09
 
 ### Feature
 
-Agent assist offers [AI coach](https://docs.cloud.google.com/agent-assist/docs/ai-coach-overview) in GA. AI coach automatically suggests responses to an agent during a customer service conversation. AI coach is available in all Google Cloud [languages](https://docs.cloud.google.com/agent-assist/docs/languages) and [regions](https://docs.cloud.google.com/agent-assist/docs/regionalization).
+Agent Assist offers [AI coach](https://docs.cloud.google.com/agent-assist/docs/ai-coach-overview) in GA. AI coach automatically suggests responses to an agent during a customer service conversation. AI coach is available in all Google Cloud [languages](https://docs.cloud.google.com/agent-assist/docs/languages) and [regions](https://docs.cloud.google.com/agent-assist/docs/regionalization).
 
 ### Feature
 

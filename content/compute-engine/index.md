@@ -1,5 +1,22 @@
 # Compute Engine
 
+## 2025-11-06
+
+### Feature
+
+**Preview**: N4A VMs, powered by Google's next generation Axion processor built
+on the Arm Neoverse N3 platform are in Preview. N4A provides machine types of up
+to 64 vCPUs and 512 GB of DDR5 memory. N4A is available in standard, high-mem,
+high-cpu, and custom machine types with extended memory, with up to 50 Gbps of
+standard networking. These machine types are available in limited
+[regions and zones](https://docs.cloud.google.com/compute/docs/regions-zones). For more information, see
+[N4A machine series](https://docs.cloud.google.com/compute/docs/general-purpose-machines#n4a_series).
+
+To access these VMs, complete
+[this form](https://docs.google.com/forms/d/e/1FAIpQLSddzdVNnkbi5oKB3DURruA28S9MdxdKcvxwuheqojGHCldLRw/viewform),
+or speak to your account team.
+
+---
 ## 2025-11-04
 
 ### Feature
@@ -36,7 +53,7 @@ accuracy within 1 ms for supported setups. For more information, see
 Version `20251030.02` includes fixes for the plugin-based architecture that is used by guest agent. For more information about the plugin-based architecture, see [Guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent).
 
 * The Clock Skew module no longer causes time inconsistencies on VMs. The agent no longer attempts to synchronize the hardware clock (`hwclock`) when the VM's Real-time Clock (RTC) isn't set to Coordinated Universal Time 0(UTC). For more information about how the guest agent handles clock synchronization, see [Clock Synchronization](https://docs.cloud.google.com/compute/docs/images/guest-agent-functions#clock-synchronization).
-* The [Dynamic VLAN](https://docs.cloud.google.com/network-connectivity/docs/interconnect/how-to/dedicated/creating-vlan-attachments) module now correctly sets up VLAN network interface cards (NICs). Dynamic VLAN connections now initialize reliably.
+* The `vlan_setup_enabled` option now correctly sets up Dynamic Network Interfaces (NICs). [Dynamic NICs](https://docs.cloud.google.com/vpc/docs/add-dynamic-nics) now initialize reliably.
 * The agent now prevents a race condition in network interface and route setup. Previously, routes were temporarily flushed if they were added before a DHCP lease was acquired. The agent now ensures routes persist correctly, preventing a brief period of missing routes. These routes were previously auto-corrected after approximately one minute.
 
 ---

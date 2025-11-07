@@ -2124,7 +2124,22 @@
 
 
 <h1 id="bigquery">BigQuery</h1>
+<h2 id="2025-11-06">2025-11-06</h2>
+<h3 id="announcement">Announcement</h3>
+<p>The research paper <a href="https://arxiv.org/abs/2510.24452">ARIMA_PLUS: Large-scale, Accurate, Automatic and
+Interpretable In-Database Time Series Forecasting and Anomaly Detection in
+Google BigQuery</a> is now publicly available.
+This paper describes the algorithms behind the
+<a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-time-series"><code>ARIMA_PLUS</code></a>
+and
+<a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-multivariate-time-series"><code>ARIMA_PLUS_XREG</code></a>
+models for time series forecasting and anomaly detection, and demonstrates the
+high performance, scalability, explainability, and customizability of the
+models.</p>
+<hr />
 <h2 id="2025-11-05">2025-11-05</h2>
+<h3 id="announcement_1">Announcement</h3>
+<p>The <a href="https://docs.cloud.google.com/bigquery/docs/google-ads-transfer">BigQuery Data Transfer Service for Google Ads</a> now supports <a href="https://developers.google.com/google-ads/api/fields/v21/overview">Google Ads API v21</a>.</p>
 <h3 id="feature">Feature</h3>
 <p>You can use the
 <a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax#match_recognize_clause"><code>MATCH_RECOGNIZE</code> clause</a>
@@ -2183,17 +2198,6 @@ allocation for high-priority workloads. This feature is in
 <hr />
 <h2 id="2025-10-28">2025-10-28</h2>
 <h3 id="feature_7">Feature</h3>
-<p>The BigQuery Data Transfer Service can now transfer data from the
-following data sources:</p>
-<ul>
-<li><a href="https://docs.cloud.google.com/bigquery/docs/facebook-ads-transfer">Facebook Ads</a></li>
-<li><a href="https://docs.cloud.google.com/bigquery/docs/salesforce-transfer">Salesforce</a></li>
-<li><a href="https://docs.cloud.google.com/bigquery/docs/sfmc-transfer">Salesforce Marketing Cloud</a></li>
-<li><a href="https://docs.cloud.google.com/bigquery/docs/servicenow-transfer">ServiceNow</a></li>
-</ul>
-<p>Transfers from these data sources are now <a href="https://cloud.google.com/products#product-launch-stages">generally available</a>
-(GA).</p>
-<h3 id="feature_8">Feature</h3>
 <p>Subscriber email logging lets you log the principal identifiers of users
 who execute jobs and queries against linked datasets. You can enable
 logging at the
@@ -2204,23 +2208,20 @@ The logged data is available in the <code>job_principal_subject</code> field of 
 <a href="https://docs.cloud.google.com/bigquery/docs/information-schema-shared-dataset-usage"><code>INFORMATION_SCHEMA.SHARED_DATASET_USAGE</code> view</a>.
 This feature is
 <a href="https://cloud.google.com/products#product-launch-stages">generally available</a>.</p>
+<h3 id="feature_8">Feature</h3>
+<p>The BigQuery Data Transfer Service can now transfer data from the
+following data sources:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/bigquery/docs/facebook-ads-transfer">Facebook Ads</a></li>
+<li><a href="https://docs.cloud.google.com/bigquery/docs/salesforce-transfer">Salesforce</a></li>
+<li><a href="https://docs.cloud.google.com/bigquery/docs/sfmc-transfer">Salesforce Marketing Cloud</a></li>
+<li><a href="https://docs.cloud.google.com/bigquery/docs/servicenow-transfer">ServiceNow</a></li>
+</ul>
+<p>Transfers from these data sources are now <a href="https://cloud.google.com/products#product-launch-stages">generally available</a>
+(GA).</p>
 <hr />
 <h2 id="2025-10-27">2025-10-27</h2>
 <h3 id="feature_9">Feature</h3>
-<p>You can now <a href="https://docs.cloud.google.com/bigquery/docs/data-engineering-agent-pipelines">use the Data Engineering Agent</a>
-to use Gemini in BigQuery to build and modify data
-pipelines to ingest data into BigQuery. This feature is in
-<a href="https://cloud.google.com/products/#product-launch-stages">preview</a>.</p>
-<h3 id="feature_10">Feature</h3>
-<p>The administrative jobs explorer now includes a <a href="https://docs.cloud.google.com/bigquery/docs/admin-jobs-explorer#get-job-details">job details
-page</a> to help you diagnose
-and troubleshoot queries. The <strong>Performance</strong> tab compiles query information
-including the execution graph, SQL text, execution history, performance
-variance, and system load during execution. You can also <a href="https://docs.cloud.google.com/bigquery/docs/admin-jobs-explorer#compare-jobs">compare two
-jobs</a> to identify discrepancies
-and potential areas to improve query performance.</p>
-<p>This feature is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>
-<h3 id="feature_11">Feature</h3>
 <p>BigQuery now offers the following
 <a href="https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#managed_ai_functions">managed AI functions</a>
 that use Gemini to help you filter, join, rank, and classify your data:</p>
@@ -2233,6 +2234,20 @@ that use Gemini to help you filter, join, rank, and classify your data:</p>
   Classify text into user-defined categories.</li>
 </ul>
 <p>These functions are in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>
+<h3 id="feature_10">Feature</h3>
+<p>You can now <a href="https://docs.cloud.google.com/bigquery/docs/data-engineering-agent-pipelines">use the Data Engineering Agent</a>
+to use Gemini in BigQuery to build and modify data
+pipelines to ingest data into BigQuery. This feature is in
+<a href="https://cloud.google.com/products/#product-launch-stages">preview</a>.</p>
+<h3 id="feature_11">Feature</h3>
+<p>The administrative jobs explorer now includes a <a href="https://docs.cloud.google.com/bigquery/docs/admin-jobs-explorer#get-job-details">job details
+page</a> to help you diagnose
+and troubleshoot queries. The <strong>Performance</strong> tab compiles query information
+including the execution graph, SQL text, execution history, performance
+variance, and system load during execution. You can also <a href="https://docs.cloud.google.com/bigquery/docs/admin-jobs-explorer#compare-jobs">compare two
+jobs</a> to identify discrepancies
+and potential areas to improve query performance.</p>
+<p>This feature is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>
 <h3 id="feature_12">Feature</h3>
 <p>You can now use the Apache Arrow format to
 <a href="https://docs.cloud.google.com/bigquery/docs/write-api#arrow-handling">stream data to BigQuery with the Storage Write API</a>.
@@ -2372,7 +2387,7 @@ This feature is
 edit, and run SQL queries on your BigQuery data directly from your
 notebooks. This feature is in
 <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
-<h3 id="announcement">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p>The BigQuery Data Transfer API (bigquerydatatransfer.googleapis.com) is now
 enabled by default for every new Google Cloud project. This feature is
 <a href="https://cloud.google.com/products#product-launch-stages">generally available</a>
@@ -2395,7 +2410,7 @@ limit</a> for a
 reservation. You can configure the maximum reservation size when creating or
 updating a reservation. This feature is now <a href="https://cloud.google.com/products#product-launch-stages">generally
 available</a> (GA).</p>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p><a href="https://docs.cloud.google.com/gemini/docs/bigquery/security-privacy-compliance">Security, privacy, and compliance for Gemini in
 BigQuery</a> details how
 customer data is protected and processed by Gemini in BigQuery.</p>
@@ -2427,7 +2442,7 @@ This feature is <a href="https://cloud.google.com/products#product-launch-stages
 available</a> (GA).</p>
 <hr />
 <h2 id="2025-10-07">2025-10-07</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p>As of February 25, 2025, enhancements to the <a href="https://docs.cloud.google.com/bigquery/docs/slots-autoscaling-intro">workload management
 autoscaler</a> that were announced on <a href="https://docs.cloud.google.com/bigquery/docs/release-notes#July_31_2024">July
 31, 2024</a> have rolled out to all users.
@@ -2472,7 +2487,7 @@ and
 This feature is
 <a href="https://cloud.google.com/products#product-launch-stages">generally available</a>
 (GA).</p>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p>Starting March 17, 2026, the BigQuery Data Transfer Service will require the
 <code>bigquery.datasets.setIamPolicy</code> and the <code>bigquery.datasets.getIamPolicy</code>
 permissions on the target dataset to create or update a transfer configuration.
@@ -2508,7 +2523,7 @@ array element into its own row for easier analysis. For more information, see
 <a href="https://docs.cloud.google.com/bigquery/docs/data-prep-get-suggestions#unnest-arrays">Unnest arrays</a>.
 This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally
 available</a> (GA).</p>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_6">Announcement</h3>
 <p><a href="https://docs.cloud.google.com/bigquery/docs/history-based-optimizations">History-based query optimizations</a>
 are now enabled by default. If history-based optimizations have been previously
 disabled, you can <a href="https://docs.cloud.google.com/bigquery/docs/history-based-optimizations#enable-history-based-optimization">re-enable history-based optimizations</a>
@@ -2702,7 +2717,7 @@ Between September 15, 2025 and early 2026, the BigQuery advanced runtime will be
 <p>Multi-statement transactions are now available for <a href="https://cloud.google.com/bigquery/docs/iceberg-tables#use_multi-statement_transactions">BigLake Iceberg tables in BigQuery</a>. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
 <hr />
 <h2 id="2025-08-21">2025-08-21</h2>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_7">Announcement</h3>
 <p>Starting September 25, 2025, the BigQuery Data Transfer Service for third-party SAAS and database connectors will update to a consumption-based pricing model. With this new pricing model, you will be charged based on the compute resources consumed by your data transfers, measured in slot-hours. For more information, see <a href="https://cloud.google.com/bigquery/pricing#section-5">Data Transfer Service pricing</a>. This pricing update applies to the following third-party connectors when they are <a href="https://cloud.google.com/products#product-launch-stages">generally available (GA)</a>:</p>
 <ul>
 <li><a href="https://cloud.google.com/bigquery/docs/facebook-ads-transfer">Facebook Ads</a></li>
@@ -2818,7 +2833,7 @@ information, see
 <p>You can now use <a href="https://cloud.google.com/bigquery/docs/continuous-queries-introduction">continuous queries</a> to <a href="https://cloud.google.com/bigquery/docs/export-to-spanner">export BigQuery data to Spanner in real time</a>. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
 <hr />
 <h2 id="2025-07-30">2025-07-30</h2>
-<h3 id="announcement_6">Announcement</h3>
+<h3 id="announcement_8">Announcement</h3>
 <p>The Gemini for Google Cloud API (cloudaicompanion.googleapis.com) is now enabled by default for most BigQuery projects. Exceptions include projects where customers have opted out, and those linked to accounts based in EMEA regions including <a href="https://cloud.google.com/bigquery/docs/locations#supported_locations">BigQuery Europe, Middle East, and Africa regions</a>.</p>
 <hr />
 <h2 id="2025-07-28">2025-07-28</h2>
@@ -2935,7 +2950,7 @@ Google Cloud console user interface</a>. This feature is in <a href="https://clo
 <p>You can flatten <a href="https://cloud.google.com/bigquery/docs/data-prep-get-suggestions#flatten-json">JSON columns</a> in BigQuery data preparation with a single operation. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
 <hr />
 <h2 id="2025-07-08">2025-07-08</h2>
-<h3 id="announcement_7">Announcement</h3>
+<h3 id="announcement_9">Announcement</h3>
 <p>Starting August 1, 2025, GoogleSQL will become the default dialect for queries run from the command line interface (CLI) or API. To use LegacySQL, you will need to explicitly specify it in your requests or <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#alter_project_set_options_statement">set the configuration setting</a> <code>default_sql_dialect_option</code> to <code>'default_legacy_sql'</code> at the project or organization level.</p>
 <hr />
 <h2 id="2025-07-07">2025-07-07</h2>
@@ -3162,6 +3177,9 @@ use the <code>PARTITION BY</code> clause of the
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#bigquery">BigQuery</a></li>
+          <li class="nav-item">
+            <a href="#2025-11-06" class="nav-link">2025-11-06</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-11-05" class="nav-link">2025-11-05</a>
           </li>

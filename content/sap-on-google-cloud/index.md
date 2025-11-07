@@ -1,5 +1,21 @@
 # SAP on Google Cloud
 
+## 2025-11-06
+
+### Feature
+
+**Use of Oracle Automatic Storage Management with Oracle Database**
+
+To run Oracle Database with SAP NetWeaver based applications on
+Google Cloud, SAP and Oracle have validated the use of Oracle Automatic
+Storage Management (ASM).
+
+For more information, see the following:
+
+* [Plan Oracle Database implementation for SAP NetWeaver](https://cloud.google.com/sap/docs/oracle-planning)
+* [Deploy Oracle Database for SAP NetWeaver](https://cloud.google.com/sap/docs/oracle-deployment-single-node)
+
+---
 ## 2025-11-04
 
 ### Announcement

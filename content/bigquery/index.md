@@ -1,6 +1,26 @@
 # BigQuery
 
+## 2025-11-06
+
+### Announcement
+
+The research paper [ARIMA\_PLUS: Large-scale, Accurate, Automatic and
+Interpretable In-Database Time Series Forecasting and Anomaly Detection in
+Google BigQuery](https://arxiv.org/abs/2510.24452) is now publicly available.
+This paper describes the algorithms behind the
+[`ARIMA_PLUS`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-time-series)
+and
+[`ARIMA_PLUS_XREG`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-multivariate-time-series)
+models for time series forecasting and anomaly detection, and demonstrates the
+high performance, scalability, explainability, and customizability of the
+models.
+
+---
 ## 2025-11-05
+
+### Announcement
+
+The [BigQuery Data Transfer Service for Google Ads](https://docs.cloud.google.com/bigquery/docs/google-ads-transfer) now supports [Google Ads API v21](https://developers.google.com/google-ads/api/fields/v21/overview).
 
 ### Feature
 
@@ -80,19 +100,6 @@ allocation for high-priority workloads. This feature is in
 
 ### Feature
 
-The BigQuery Data Transfer Service can now transfer data from the
-following data sources:
-
-* [Facebook Ads](https://docs.cloud.google.com/bigquery/docs/facebook-ads-transfer)
-* [Salesforce](https://docs.cloud.google.com/bigquery/docs/salesforce-transfer)
-* [Salesforce Marketing Cloud](https://docs.cloud.google.com/bigquery/docs/sfmc-transfer)
-* [ServiceNow](https://docs.cloud.google.com/bigquery/docs/servicenow-transfer)
-
-Transfers from these data sources are now [generally available](https://cloud.google.com/products#product-launch-stages)
-(GA).
-
-### Feature
-
 Subscriber email logging lets you log the principal identifiers of users
 who execute jobs and queries against linked datasets. You can enable
 logging at the
@@ -104,8 +111,36 @@ The logged data is available in the `job_principal_subject` field of the
 This feature is
 [generally available](https://cloud.google.com/products#product-launch-stages).
 
+### Feature
+
+The BigQuery Data Transfer Service can now transfer data from the
+following data sources:
+
+* [Facebook Ads](https://docs.cloud.google.com/bigquery/docs/facebook-ads-transfer)
+* [Salesforce](https://docs.cloud.google.com/bigquery/docs/salesforce-transfer)
+* [Salesforce Marketing Cloud](https://docs.cloud.google.com/bigquery/docs/sfmc-transfer)
+* [ServiceNow](https://docs.cloud.google.com/bigquery/docs/servicenow-transfer)
+
+Transfers from these data sources are now [generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
 ---
 ## 2025-10-27
+
+### Feature
+
+BigQuery now offers the following
+[managed AI functions](https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#managed_ai_functions)
+that use Gemini to help you filter, join, rank, and classify your data:
+
+* [`AI.IF`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-if):
+  Filter and join text or multimodal data based on a condition described in natural language.
+* [`AI.SCORE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-score):
+  Rate text or multimodal input to rank your data by quality, similarity, or other criteria.
+* [`AI.CLASSIFY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-classify):
+  Classify text into user-defined categories.
+
+These functions are in [Preview](https://cloud.google.com/products/#product-launch-stages).
 
 ### Feature
 
@@ -125,21 +160,6 @@ jobs](https://docs.cloud.google.com/bigquery/docs/admin-jobs-explorer#compare-jo
 and potential areas to improve query performance.
 
 This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
-
-### Feature
-
-BigQuery now offers the following
-[managed AI functions](https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#managed_ai_functions)
-that use Gemini to help you filter, join, rank, and classify your data:
-
-* [`AI.IF`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-if):
-  Filter and join text or multimodal data based on a condition described in natural language.
-* [`AI.SCORE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-score):
-  Rate text or multimodal input to rank your data by quality, similarity, or other criteria.
-* [`AI.CLASSIFY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-classify):
-  Classify text into user-defined categories.
-
-These functions are in [Preview](https://cloud.google.com/products/#product-launch-stages).
 
 ### Feature
 

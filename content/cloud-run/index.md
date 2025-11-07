@@ -1,5 +1,15 @@
 # Cloud Run
 
+## 2025-11-06
+
+### Feature
+
+Use [dual-stack subnets with IPv6](https://docs.cloud.google.com/run/docs/configuring/vpc-dual-stack-subnet)
+to let your Cloud Run resources send IPv4 and internal IPv6 traffic to a VPC
+network with Direct VPC egress, and send external IPv6 traffic to the public
+internet. (GA)
+
+---
 ## 2025-10-31
 
 ### Feature

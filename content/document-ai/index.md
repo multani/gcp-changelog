@@ -1,5 +1,20 @@
 # Document AI
 
+## 2025-11-04
+
+### Feature
+
+Layout parser support for DOCX, PPTX, XLSX and XLSM file types in Document AI
+is in General Availability [(GA)](https://cloud.google.com/products/#product-launch-stages).
+It makes content like paragraphs, tables, lists, and structural elements like
+headings, page headers, and footers easily accessible. It also creates context-aware
+chunks that facilitate information retrieval in a range of generative AI and
+discovery applications.
+
+For more information, see [Process documents with Layout
+Parser](https://cloud.google.com/document-ai/docs/layout-parse-chunk).
+
+---
 ## 2025-10-31
 
 ### Feature

@@ -1,5 +1,16 @@
 # Anthos clusters on AWS
 
+## 2025-11-06
+
+### Announcement
+
+You can now launch clusters with the following Kubernetes versions. Click on the following links to see the release notes associated with these patches:
+
+* [1.33.4-gke.900](https://cloud.google.com/kubernetes-engine/multi-cloud/docs/aws/reference/supported-versions#1334-gke900)
+* [1.32.8-gke.600](https://cloud.google.com/kubernetes-engine/multi-cloud/docs/aws/reference/supported-versions#1328-gke600)
+* [1.31.11-gke.400](https://cloud.google.com/kubernetes-engine/multi-cloud/docs/aws/reference/supported-versions#13111-gke400)
+
+---
 ## 2025-07-10
 
 ### Announcement

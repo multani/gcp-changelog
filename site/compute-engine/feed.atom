@@ -2,9 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Compute Engine</title>
   <subtitle>Changelog for Google Cloud product: Compute Engine</subtitle>
-  <updated>2025-11-04T00:00:00+00:00</updated>
+  <updated>2025-11-06T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:compute-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/compute-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2025-11-06:feature:0</id>
+    <published>2025-11-06T00:00:00+00:00</published>
+    <updated>2025-11-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Preview</strong>: N4A VMs, powered by Google's next generation Axion processor built
+on the Arm Neoverse N3 platform are in Preview. N4A provides machine types of up
+to 64 vCPUs and 512 GB of DDR5 memory. N4A is available in standard, high-mem,
+high-cpu, and custom machine types with extended memory, with up to 50 Gbps of
+standard networking. These machine types are available in limited
+<a href="https://docs.cloud.google.com/compute/docs/regions-zones">regions and zones</a>. For more information, see
+<a href="https://docs.cloud.google.com/compute/docs/general-purpose-machines#n4a_series">N4A machine series</a>.</p>
+<p>To access these VMs, complete
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSddzdVNnkbi5oKB3DURruA28S9MdxdKcvxwuheqojGHCldLRw/viewform">this form</a>,
+or speak to your account team.</p>]]></content>
+    <summary>N4A VMs featuring Google's new Axion processor are now in preview. These VMs offer up to 64 vCPUs and 512 GB of memory, with various configurations available.</summary>
+    <title>Feature: N4A VMs Preview</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -59,11 +79,11 @@ accuracy within 1 ms for supported setups. For more information, see
     <content type="html"><![CDATA[<p>Version <code>20251030.02</code> includes fixes for the plugin-based architecture that is used by guest agent. For more information about the plugin-based architecture, see <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>
 <ul>
 <li>The Clock Skew module no longer causes time inconsistencies on VMs. The agent no longer attempts to synchronize the hardware clock (<code>hwclock</code>) when the VM's Real-time Clock (RTC) isn't set to Coordinated Universal Time 0(UTC). For more information about how the guest agent handles clock synchronization, see <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent-functions#clock-synchronization">Clock Synchronization</a>.</li>
-<li>The <a href="https://docs.cloud.google.com/network-connectivity/docs/interconnect/how-to/dedicated/creating-vlan-attachments">Dynamic VLAN</a> module now correctly sets up VLAN network interface cards (NICs). Dynamic VLAN connections now initialize reliably.</li>
+<li>The <code>vlan_setup_enabled</code> option now correctly sets up Dynamic Network Interfaces (NICs). <a href="https://docs.cloud.google.com/vpc/docs/add-dynamic-nics">Dynamic NICs</a> now initialize reliably.</li>
 <li>The agent now prevents a race condition in network interface and route setup. Previously, routes were temporarily flushed if they were added before a DHCP lease was acquired. The agent now ensures routes persist correctly, preventing a brief period of missing routes. These routes were previously auto-corrected after approximately one minute.</li>
 </ul>]]></content>
-    <summary>Version 20251030.02 fixes issues with the plugin-based architecture for the guest agent, including the Clock Skew module, Dynamic VLAN setup, and network interface/route setup race conditions.</summary>
-    <title>Fixed: Guest agent fixes</title>
+    <summary>Version `20251030.02` includes fixes for the plugin-based architecture used by the guest agent. This release addresses issues with clock skew, VLAN setup, and network route persistence, ensuring more reliable VM operations.</summary>
+    <title>Fixed: Guest Agent Fixes for Plugin Architecture</title>
   </entry>
   <entry>
     <author>

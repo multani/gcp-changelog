@@ -1,5 +1,15 @@
 # NetApp Volumes
 
+## 2025-11-06
+
+### Feature
+
+Google Cloud NetApp Volumes supports the block storage feature with iSCSI
+protocol in allow-listed General Availability (GA) for the Flex service level of
+the **Unified** type. For more information, see
+[Block storage](https://docs.cloud.google.com/netapp/volumes/docs/discover/features#block_storage).
+
+---
 ## 2025-10-01
 
 ### Feature

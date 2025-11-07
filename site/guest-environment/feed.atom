@@ -15,11 +15,11 @@
     <content type="html"><![CDATA[<p>Version <code>20251030.02</code> includes fixes for the plugin-based architecture that is used by guest agent. For more information about the plugin-based architecture, see <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>
 <ul>
 <li>The Clock Skew module no longer causes time inconsistencies on VMs. The agent no longer attempts to synchronize the hardware clock (<code>hwclock</code>) when the VM's Real-time Clock (RTC) isn't set to Coordinated Universal Time 0(UTC). For more information about how the guest agent handles clock synchronization, see <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent-functions#clock-synchronization">Clock Synchronization</a>.</li>
-<li>The <a href="https://docs.cloud.google.com/network-connectivity/docs/interconnect/how-to/dedicated/creating-vlan-attachments">Dynamic VLAN</a> module now correctly sets up VLAN network interface cards (NICs). Dynamic VLAN connections now initialize reliably.</li>
+<li>The <code>vlan_setup_enabled</code> option now correctly sets up Dynamic Network Interfaces (NICs). <a href="https://docs.cloud.google.com/vpc/docs/add-dynamic-nics">Dynamic NICs</a> now initialize reliably.</li>
 <li>The agent now prevents a race condition in network interface and route setup. Previously, routes were temporarily flushed if they were added before a DHCP lease was acquired. The agent now ensures routes persist correctly, preventing a brief period of missing routes. These routes were previously auto-corrected after approximately one minute.</li>
 </ul>]]></content>
-    <summary>Version 20251030.02 addresses issues in the guest agent's plugin architecture. Fixes include resolving clock skew, improving Dynamic VLAN setup, and preventing race conditions in network interface and route configuration.</summary>
-    <title>Fixed: Guest agent fixes for plugin architecture</title>
+    <summary>Version 20251030.02 addresses several issues within the guest agent's plugin-based architecture. Fixes include resolving clock skew on VMs, ensuring reliable dynamic NIC setup, and preventing race conditions in network interface and route configuration.</summary>
+    <title>Fixed: Guest Agent Fixes for Version 20251030.02</title>
   </entry>
   <entry>
     <author>

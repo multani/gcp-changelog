@@ -1,22 +1,33 @@
 # Security Command Center
 
+## 2025-11-06
+
+### Feature
+
+Security Command Center [Risk Engine](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-supported-features)
+supports Cloud Run attack paths for the following high-value
+resources:
+
+* `run.googleapis.com/Job`
+* `run.googleapis.com/Service`
+
+---
 ## 2025-11-03
 
 ### Feature
 
-Compliance Manager supports the Security Command Center Premium tier at the
-organization level.
+[Compliance Manager](https://docs.cloud.google.com/security-command-center/docs/compliance-manager-overview)
+supports the Security Command Center Premium tier at the organization level.
 
 ---
 ## 2025-10-30
 
 ### Feature
 
-In addition to the Enterprise service tier,
-[Issues](https://docs.cloud.google.com/security-command-center/docs/issues-overview) are available on the Security
-Command Center Premium service tier at the organization level. This update includes capabilities such as
-[Toxic Combinations,
-Chokepoints](https://docs.cloud.google.com/security-command-center/docs/toxic-combinations-overview), and [Graph Search](https://docs.cloud.google.com/security-command-center/docs/graph-search)
+In addition to the Enterprise service tier, [Issues](https://docs.cloud.google.com/security-command-center/docs/issues-overview)
+are available on the Security Command Center Premium service tier at the organization level.
+This update includes capabilities such as [Toxic Combinations, Chokepoints](https://docs.cloud.google.com/security-command-center/docs/toxic-combinations-overview),
+and [Graph Search](https://docs.cloud.google.com/security-command-center/docs/graph-search)
 ([Preview](https://cloud.google.com/products#product-launch-stages)). The
 console navigation has been updated to reflect an **Issues** page for Premium
 tier users.
@@ -88,10 +99,9 @@ helping you to prioritize and respond to active threats.
 
 ### Feature
 
-Data Security Posture Management (available in [Preview](https://cloud.google.com/products#product-launch-stages)) lets you deploy frameworks with advanced data
-security cloud controls to app-enabled folders. For more information, see
-[Deploy advanced data security cloud
-controls](https://docs.cloud.google.com/security-command-center/docs/dspm-use-data-security#deploy-advanced-data-security-cloud-controls).
+Data Security Posture Management (available in [Preview](https://cloud.google.com/products#product-launch-stages))
+lets you deploy frameworks with advanced data security cloud controls to
+app-enabled folders. For more information, see [Deploy advanced data security cloud controls](https://docs.cloud.google.com/security-command-center/docs/dspm-use-data-security#deploy-advanced-data-security-cloud-controls).
 
 ---
 ## 2025-10-07

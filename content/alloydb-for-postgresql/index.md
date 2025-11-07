@@ -40,7 +40,7 @@ for examples.
 
 ### Feature
 
-You can now perform [time-series forecasting](https://docs.cloud.google.com/alloydb/docs/ai/perform-time-series-forecasting) in AlloyDB to predict future trends based on your historical data. This feature supports various forecasting models, including TimesFM, and is available in [Preview](https://cloud.google.com/products#product-launch-stages). Note that this gated preview has no upgrade path.
+You can now perform [time-series forecasting](https://docs.cloud.google.com/alloydb/docs/ai/perform-time-series-forecasting) in AlloyDB to predict future trends based on your historical data. This feature supports various forecasting models, including TimesFM, and is available in [Preview](https://cloud.google.com/products#product-launch-stages).
 
 ---
 ## 2025-10-06

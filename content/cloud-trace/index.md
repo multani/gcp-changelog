@@ -1,5 +1,23 @@
 # Cloud Trace
 
+## 2025-11-06
+
+### Feature
+
+You can now collect, view, and analyze prompts and responses from your agentic
+applications when they are built with the Agent Development Kit (ADK).
+This feature is in Public Preview.
+
+[Collect and view multimodal prompts and responses](https://docs.cloud.google.com/trace/docs/collect-view-multimodal-prompts-responses)
+describes how to do the following:
+
+* Configure your project and ADK to collect multimodal data.
+* View a conversation and the multimodal data by using the Trace Explorer.
+* Find log entries that contain references to multimodal data.
+* Query your prompts and responses by using BigQuery.
+* Evaluate your prompts and responses by using the Vertex AI SDK for Python.
+
+---
 ## 2025-08-27
 
 ### Feature

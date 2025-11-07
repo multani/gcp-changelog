@@ -1,5 +1,56 @@
 # Looker Studio
 
+## 2025-11-06
+
+### Feature
+
+**Conditional formatting for bars in bar charts**
+
+You can now use [conditional formatting](https://cloud.google.com/looker/docs/studio/use-conditional-formatting-rules-in-looker-studio) on bar charts that use [modern charts](https://cloud.google.com/looker/docs/studio/modern-charts).
+
+### Feature
+
+**Pro feature: Cloud Audit Logs**
+
+Looker Studio Pro logs are now available in the Logs Explorer within the Google Cloud console.
+
+### Feature
+
+**More data from Google Ads**
+
+You can visualize the following metrics using the [Google Ads connector](https://cloud.google.com/looker/docs/studio/connect-to-google-ads):
+
+* Conversions (Platform comparable)
+* Conv. value (Platform comparable)
+* Conv. value / cost (Platform comparable)
+* Cost / conv. (Platform comparable)
+
+### Feature
+
+**Looker connector enhancements**
+
+The Looker connector now supports query results of up to 75,000 rows. The Looker connector also supports exports of up to 75,000 rows of data.
+
+[Learn more about the limits of the Looker connector.](https://cloud.google.com/looker/docs/studio/limits-of-the-looker-connector)
+
+### Feature
+
+**Partner connection launch update**
+
+The following partner connectors have been added to the [Looker Studio Connector Gallery](https://lookerstudio.google.com/data):
+
+* [Google Ads with AI](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycby3UAD0XBUnkphNODSThkFtLPkcOYkPyjWIQjNRK1uL8lysqeW2JrB3g01ZzpYPrkFG6Q) By Picometrics. Sources: Google Adwords
+* [DataTrue v2](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbwqbL7hblpix15aFjw7cCP-ZQ1OWR1czrR0E27Q2KKZaFrAq3sWpp4Lf5x1QwAI7Ydv) By DataTrue. Sources: DataTrue
+* [Lazada Ads](http://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbyWlSLq6YPAITvM-beqsNtDzfAuy_1vlIJZL3bMN1qWZVAaOwCkVHvJnwvxIMO036Beww) By Supermetrics. Sources: Lazada
+* [OmniWallet](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbyQyXDpWLw4opurQzr6jD4JrKM1xWOJxwzOeOqPynRE97SfyDhesp4uUxg7r98Nj5Bs) By Dataslayer. Sources: OmniWallet
+* [TikTok Shop](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbwWGY9lnaNbN1nmG22dlYdIIdOysS0EoO5VdqQi8X9Xa_dwNLOWQ9-ajvD2DnDzuVuftQ) By Catchr. Sources: Tiktok
+* [Local Viking](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbyCcSPS1Nn4iKuQbg3apV37RGf9XIISNg4A7iN4uuSLrbCxueDqJKDUrz8huOSNAjw) By Local Viking. Sources: Local Viking
+* [Sprout Social](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbz-Z8Q-EA_DZMdtsK2Q8y88wV4YoaO7WbC1ScMVo8AYmAPSxTtLL1zkYe8Dlydc8bPT) By Windsor.ai. Sources: SproutSocial
+* [TikTok Shop](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbwCoQTFhTegtKQC6txTrT2TQW5zIhWq9-pUGfNgCooRgNbP_C3cjP1cb1J8QzBRaFooWg) By Windsor.ai. Sources: Tiktok Shop
+* [Hurma By Hurma](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbx_vskKFf605onuL2BQtYwKFAJ_HtGVRuZNTIdqz-pxqSNNFvEk_rCbVVIQB5HETvsV3Q). Sources: Custom JSON
+* [Google Sheets By Supermetrics](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbywumdWEe4eeYlrrxe36PEX1wbe73Tdv1fklVk_WKgQiLaQuLjqVYAtZwRiAGwylyLR). Sources: Google Drive
+
+---
 ## 2025-10-30
 
 ### Feature

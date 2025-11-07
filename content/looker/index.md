@@ -2,6 +2,15 @@
 
 ## 2025-11-05
 
+### Other
+
+**Looker 25.20** is expected to include the following changes, features, and fixes:
+
+* Expected Looker (original) deployment start: **Thursday, November 6, 2025**
+* Expected Looker (original) final deployment and download available: **Thursday, November 13, 2025**
+* Expected Looker (Google Cloud core) deployment start: **Thursday, November 6, 2025**
+* Expected Looker (Google Cloud core) final deployment: **Tuesday, November 18, 2025**
+
 ### Breaking
 
 Looker now recognizes results from the `YEAR` function as a number and not a date in MySQL 8.4. This change replicates the behavior of MySQL 8.0 and earlier.

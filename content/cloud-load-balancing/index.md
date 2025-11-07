@@ -1,5 +1,18 @@
 # Cloud Load Balancing
 
+## 2025-11-04
+
+### Feature
+
+`GRPC_WITH_TLS` health checks are used for health checking gRPC backends
+with TLS enabled. For more information, see the following:
+
+* [Success criteria for gRPC](https://docs.cloud.google.com/load-balancing/docs/health-check-concepts#criteria-protocol-grpc)
+* [Create health checks](https://docs.cloud.google.com/load-balancing/docs/health-checks#create-hc)
+
+This feature is in **General availability**.
+
+---
 ## 2025-10-31
 
 ### Changed

@@ -19,7 +19,7 @@ To undo this change for a MySQL connection, add the following parameter to the A
 
 ### Breaking
 
-The System Activity fields `sql_query.sql` and `sql_text.text` have been limited to a length of 1.9 MB. Any data beyond the 1.9 MB limit will be truncated.
+When you use [Elite System Activity](https://docs.cloud.google.com/looker/docs/elite-system-activity), the System Activity fields `sql_query.sql` and `sql_text.text` are limited to a length of 1.9 MB. Any data beyond the 1.9 MB limit will be truncated. (This release note was updated on November 10, 2025 to specify Elite System Activity.)
 
 ### Feature
 

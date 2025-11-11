@@ -1,5 +1,14 @@
 # Virtual Private Cloud
 
+## 2025-11-10
+
+### Feature
+
+Service producers can
+[accept or reject connections from individual Private Service Connect endpoints](https://docs.cloud.google.com/vpc/docs/about-controlling-access-published-services#accept-endpoint).
+This feature is available in **Preview**.
+
+---
 ## 2025-11-03
 
 ### Feature

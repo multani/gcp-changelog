@@ -2137,7 +2137,7 @@
 <p>Looker now recognizes results from the <code>YEAR</code> function as a number and not a date in MySQL 8.4. This change replicates the behavior of MySQL 8.0 and earlier.</p>
 <p>To undo this change for a MySQL connection, add the following parameter to the Additional JDBC parameters section: <code>yearIsDateType=true</code></p>
 <h3 id="breaking_1">Breaking</h3>
-<p>The System Activity fields <code>sql_query.sql</code> and <code>sql_text.text</code> have been limited to a length of 1.9 MB. Any data beyond the 1.9 MB limit will be truncated.</p>
+<p>When you use <a href="https://docs.cloud.google.com/looker/docs/elite-system-activity">Elite System Activity</a>, the System Activity fields <code>sql_query.sql</code> and <code>sql_text.text</code> are limited to a length of 1.9 MB. Any data beyond the 1.9 MB limit will be truncated. (This release note was updated on November 10, 2025 to specify Elite System Activity.)</p>
 <h3 id="feature">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/connecting-to-your-db#max_number_of_pdt_builder_connections">Max Number of PDT Builder Connections</a> limit has been increased from 10 to 100.</p>
 <h3 id="feature_1">Feature</h3>

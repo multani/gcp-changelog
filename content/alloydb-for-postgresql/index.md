@@ -1,5 +1,20 @@
 # AlloyDB for PostgreSQL
 
+## 2025-11-10
+
+### Feature
+
+AlloyDB now supports PostgreSQL 17 for migrating from Cloud SQL for PostgreSQL
+to AlloyDB for PostgreSQL using your Cloud SQL for PostgreSQL backup. The size
+limit for these operations is now 15TB. For more information, see
+g4 sync
+[Migrate from Cloud SQL for PostgreSQL to AlloyDB](https://docs.cloud.google.com/alloydb/docs/migrate-cloud-sql-to-alloydb).
+
+### Feature
+
+AlloyDB AI introduces [auto embedding generation](https://docs.cloud.google.com/alloydb/docs/ai/generate-manage-auto-embeddings-for-tables) in [Preview](https://cloud.google.com/products#product-launch-stages). You can now generate large-scale embeddings to leverage in semantic search and Retrieval Augmented Generation (RAG) on text content.
+
+---
 ## 2025-10-31
 
 ### Announcement
@@ -37,6 +52,10 @@ for examples.
 
 ---
 ## 2025-10-23
+
+### Feature
+
+You can now perform [time-series forecasting](https://docs.cloud.google.com/alloydb/docs/ai/perform-time-series-forecasting) in AlloyDB to predict future trends based on your historical data. This feature supports various forecasting models, including TimesFM, and is available in [Preview](https://cloud.google.com/products#product-launch-stages).
 
 ### Feature
 

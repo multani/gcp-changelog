@@ -1,6 +1,40 @@
 {
   "name": "BigQuery",
   "entries": {
+    "2025-11-10": [
+      {
+        "kind": "Feature",
+        "content": "Partitioning is now available for\n[BigLake tables for Apache Iceberg in BigQuery](https://docs.cloud.google.com/bigquery/docs/iceberg-tables#use_partitioning).\nThis feature is in\n[Preview](https://cloud.google.com/products/#product-launch-stages).",
+        "summary": {
+          "title": "Partitioning for BigLake Tables",
+          "summary": "Partitioning is now available for BigLake tables for Apache Iceberg in BigQuery. This feature is currently in Preview."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "BigQuery ML now supports the `TimesFM 2.5`\n[time series foundational model](https://docs.cloud.google.com/bigquery/docs/timesfm-model).\nYou can use the `TimesFM 2.5` model in the\n[`AI.FORECAST`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-forecast),\n[`AI.EVALUATE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-evaluate),\nand\n[`AI.DETECT_ANOMALIES`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-detect-anomalies)\nfunctions to achieve better forecasting accuracy and lower latency.",
+        "summary": {
+          "title": "BigQuery ML Now Supports TimesFM 2.5",
+          "summary": "BigQuery ML has integrated the TimesFM 2.5 foundational model, enhancing forecasting capabilities."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "BigQuery ML now offers the\n[`AI.DETECT_ANOMALIES` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-detect-anomalies).\nUse the `AI.DETECT_ANOMALIES` function with a TimesFM model to\n[detect anomalies](https://docs.cloud.google.com/bigquery/docs/anomaly-detection-overview)\nin time series data, using historical data as a baseline.\nThis feature is in\n[Preview](https://cloud.google.com/products/#product-launch-stages).",
+        "summary": {
+          "title": "AI.DETECT_ANOMALIES function",
+          "summary": "The AI.DETECT_ANOMALIES function is now available in BigQuery ML for detecting anomalies in time series data. It uses historical data as a baseline and is currently in Preview."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can [aggregate](https://docs.cloud.google.com/bigquery/docs/data-prep-get-suggestions#aggregate)\nand [deduplicate](https://docs.cloud.google.com/bigquery/docs/data-prep-get-suggestions#deduplicate)\ntable data with Gemini assistance in your\n[BigQuery data preparations](https://docs.cloud.google.com/bigquery/docs/data-prep-introduction).\nThese features are [generally available](https://docs.cloud.google.com/products#product-launch-stages) (GA).",
+        "summary": {
+          "title": "Aggregate and Deduplicate Table Data",
+          "summary": "You can now aggregate and deduplicate your table data with Gemini assistance in BigQuery data preparations. These features are generally available."
+        }
+      }
+    ],
     "2025-11-06": [
       {
         "kind": "Announcement",
@@ -88,14 +122,6 @@
     "2025-10-28": [
       {
         "kind": "Feature",
-        "content": "Subscriber email logging lets you log the principal identifiers of users\nwho execute jobs and queries against linked datasets. You can enable\nlogging at the\n[listing level](https://cloud.google.com/bigquery/docs/analytics-hub-manage-listings#create_a_listing)\nand the\n[data exchange level](https://cloud.google.com/bigquery/docs/analytics-hub-manage-exchanges#create-exchange).\nThe logged data is available in the `job_principal_subject` field of the\n[`INFORMATION_SCHEMA.SHARED_DATASET_USAGE` view](https://docs.cloud.google.com/bigquery/docs/information-schema-shared-dataset-usage).\nThis feature is\n[generally available](https://cloud.google.com/products#product-launch-stages).",
-        "summary": {
-          "title": "Subscriber email logging",
-          "summary": "Log user identifiers for jobs and queries against linked datasets. Available at listing and data exchange levels."
-        }
-      },
-      {
-        "kind": "Feature",
         "content": "The BigQuery Data Transfer Service can now transfer data from the\nfollowing data sources:\n\n* [Facebook Ads](https://docs.cloud.google.com/bigquery/docs/facebook-ads-transfer)\n* [Salesforce](https://docs.cloud.google.com/bigquery/docs/salesforce-transfer)\n* [Salesforce Marketing Cloud](https://docs.cloud.google.com/bigquery/docs/sfmc-transfer)\n* [ServiceNow](https://docs.cloud.google.com/bigquery/docs/servicenow-transfer)\n\nTransfers from these data sources are now [generally available](https://cloud.google.com/products#product-launch-stages)\n(GA).",
         "summary": {
           "title": "New Data Sources Available in BigQuery Data Transfer Service",
@@ -104,6 +130,14 @@
       }
     ],
     "2025-10-27": [
+      {
+        "kind": "Feature",
+        "content": "BigQuery now offers the following\n[managed AI functions](https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#managed_ai_functions)\nthat use Gemini to help you filter, join, rank, and classify your data:\n\n* [`AI.IF`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-if):\n  Filter and join text or multimodal data based on a condition described in natural language.\n* [`AI.SCORE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-score):\n  Rate text or multimodal input to rank your data by quality, similarity, or other criteria.\n* [`AI.CLASSIFY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-classify):\n  Classify text into user-defined categories.\n\nThese functions are in [Preview](https://cloud.google.com/products/#product-launch-stages).",
+        "summary": {
+          "title": "Introducing AI Functions in BigQuery",
+          "summary": "BigQuery now offers managed AI functions that leverage Gemini for data manipulation tasks like filtering, joining, ranking, and classification."
+        }
+      },
       {
         "kind": "Feature",
         "content": "BigQuery now offers the following\n[managed AI functions](https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#managed_ai_functions)\nthat use Gemini to help you filter, join, rank, and classify your data:\n\n* [`AI.IF`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-if):\n  Filter and join text or multimodal data based on a condition described in natural language.\n* [`AI.SCORE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-score):\n  Rate text or multimodal input to rank your data by quality, similarity, or other criteria.\n* [`AI.CLASSIFY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-classify):\n  Classify text into user-defined categories.\n\nThese functions are in [Preview](https://cloud.google.com/products/#product-launch-stages).",

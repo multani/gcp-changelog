@@ -112,33 +112,8 @@ vulnerabilities to detect toxic combinations and chokepoints.
 analyze OS and software vulnerability findings for Compute Engine and
 Google Kubernetes Engine resources to detect toxic combinations and chokepoints.
 
-### Changed
-
-Security Command Center and [attack path simulations](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-learn)
-use Compute Engine and Google Kubernetes Engine operating system and software
-vulnerabilities to detect toxic combinations and chokepoints.
-
-**UPDATE**: [Attack path simulations](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-learn)
-analyze OS and software vulnerability findings for Compute Engine and
-Google Kubernetes Engine resources to detect toxic combinations and chokepoints.
-
 ---
 ## 2025-10-15
-
-### Changed
-
-The following features in Compliance Manager are available in [General
-Availability](https://cloud.google.com/products#product-launch-stages):
-
-* [Applying and updating built-in frameworks and cloud
-  controls](https://docs.cloud.google.com/security-command-center/docs/compliance-manager-apply-framework)
-* Creating, applying, and editing custom frameworks and cloud controls
-* [Support for VPC Service Control
-  perimeters](https://docs.cloud.google.com/security-command-center/docs/compliance-manager-configure-vpc-sc)
-* [Audit logging](https://docs.cloud.google.com/security-command-center/docs/compliance-manager-audit-logging)
-* [Client
-  libraries](https://docs.cloud.google.com/security-command-center/docs/reference/cloudsecuritycompliance/libraries)
-* [REST APIs](https://docs.cloud.google.com/security-command-center/docs/reference/cloudsecuritycompliance/rest)
 
 ### Changed
 

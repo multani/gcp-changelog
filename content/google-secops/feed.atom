@@ -65,15 +65,22 @@ Rules, Search, and Dashboards.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops:2025-10-30:announcement:0</id>
+    <id>urn:github:multani:gcp-changelog:google-secops:2025-10-30:feature:0</id>
     <published>2025-10-30T00:00:00+00:00</published>
     <updated>2025-10-30T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Upgraded Chronicle API ingestion methods from alpha to beta</strong></p>
-<p>We've upgraded the Chronicle API ingestion methods from alpha to beta. This upgrade signals API stability and functional completeness, unblocking customer and partner adoption for production integrations.</p>
-<p>For more information, see
-<a href="https://cloud.google.com/chronicle/docs/reference/ingestion-methods">Ingestion methods</a>.</p>]]></content>
-    <summary>The Chronicle API ingestion methods have been upgraded from alpha to beta, indicating improved stability and functionality for production integrations.</summary>
-    <title>Announcement: Chronicle API ingestion methods upgraded to beta</title>
+    <content type="html"><![CDATA[<p><strong>YARA-L functions</strong></p>
+<p>The following new YARA-L functions are now generally available:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/yara-l/functions#stringsends_with">strings.ends_with</a>:
+  Takes two strings (value, suffix) and returns true if the suffix is
+  non-empty and at end-of-value.</li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/yara-l/functions#stringssplit">strings.split</a>: Splits
+  string value using a delimiter argument (by default, a comma).</li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/yara-l/functions#windowrange">window.range</a>: Returns the
+  range of the values input values found.</li>
+</ul>]]></content>
+    <summary>Explore new YARA-L functions for enhanced string manipulation and data analysis.</summary>
+    <title>Feature: New YARA-L Functions Available</title>
   </entry>
   <entry>
     <author>
@@ -93,25 +100,27 @@ Rules, Search, and Dashboards.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops:2025-10-28:feature:0</id>
-    <published>2025-10-28T00:00:00+00:00</published>
-    <updated>2025-10-28T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Risk-based alerting with entity-only rules</strong></p>
-<p>With the new <code>ENTITY_RISK_CHANGE</code> UDM event type, you can now write YARA-L
-detection rules that trigger independently of ingested events. This capability
-lets you focus specifically on changes in an entity's risk score, significantly
-decreasing the time required for Google Security Operations to detect and alert
-on shifting entity risk levels.</p>
-<p>For more information, see
-<a href="https://docs.cloud.google.com/chronicle/docs/detection/risk-based-alerting">Risk-based alerting with entity-only rules</a>.</p>]]></content>
-    <summary>Google Security Operations can now detect and alert on shifting entity risk levels more quickly. New detection rules can trigger independently of ingested events, focusing on changes in an entity's risk score.</summary>
-    <title>Feature: New Detection Rules Available</title>
+    <id>urn:github:multani:gcp-changelog:google-secops:2025-10-29:feature:0</id>
+    <published>2025-10-29T00:00:00+00:00</published>
+    <updated>2025-10-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Improved Support for Chrome Enterprise Premium</strong></p>
+<p>This feature is currently in Preview.</p>
+<p>An improved integration for Chrome Enterprise Premium is now available that includes:</p>
+<ul>
+<li>Streamlined connection to Google SecOps, using recommended security defaults</li>
+<li>Enhanced log events with Google Safe Browsing context</li>
+<li>Updated parser and integration documentation: <a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/chrome-management">Collect Google Chrome logs</a></li>
+<li>Curated dashboards for Chrome Enterprise Premium</li>
+<li>Google Workspace SOAR actions to manage Chrome extension blocklist policies (<a href="https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#block_extension">Block Extension</a> and <a href="https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#delete_extension">Delete Extension</a>)</li>
+</ul>]]></content>
+    <summary>Enhanced integration for Chrome Enterprise Premium now available, featuring streamlined connection to Google SecOps, richer log events with Google Safe Browsing context, updated documentation, curated dashboards, and new Google Workspace SOAR actions for managing Chrome extension policies.</summary>
+    <title>Feature: Improved Chrome Enterprise Premium Support</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops:2025-10-28:feature:1</id>
+    <id>urn:github:multani:gcp-changelog:google-secops:2025-10-28:feature:0</id>
     <published>2025-10-28T00:00:00+00:00</published>
     <updated>2025-10-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Risk-based alerting with entity-only rules</strong></p>
@@ -148,19 +157,19 @@ The following rules have been added to the rulepack:</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops:2025-10-21:announcement:0</id>
-    <published>2025-10-21T00:00:00+00:00</published>
-    <updated>2025-10-21T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Premium <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fw">Fortinet Firewall parser</a> now available as Release Candidate</strong></p>
-<p>This enhanced parser is available as a <strong>Release Candidate</strong> for the next 2 months. To opt in and begin testing it, go to <strong>SIEM Settings &gt; Parsers</strong>. We encourage you to try it out and evaluate the improvements before it becomes the default.</p>]]></content>
-    <summary>The premium Fortinet Firewall parser is now available as a Release Candidate. You can opt in to test it via SIEM Settings &gt; Parsers. We encourage your feedback before it becomes the default.</summary>
-    <title>Announcement: Fortinet Firewall parser now Release Candidate</title>
+    <id>urn:github:multani:gcp-changelog:google-secops:2025-10-26:feature:0</id>
+    <published>2025-10-26T00:00:00+00:00</published>
+    <updated>2025-10-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Delete high-load SOAR environments</strong></p>
+<p>You can now easily delete environments with heavy loads directly from the platform.</p>]]></content>
+    <summary>You can now delete high-load SOAR environments directly from the platform.</summary>
+    <title>Feature: Easily delete high-load SOAR environments</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops:2025-10-21:announcement:1</id>
+    <id>urn:github:multani:gcp-changelog:google-secops:2025-10-21:announcement:0</id>
     <published>2025-10-21T00:00:00+00:00</published>
     <updated>2025-10-21T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Premium <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fw">Fortinet Firewall parser</a> now available as Release Candidate</strong></p>
@@ -178,38 +187,6 @@ The following rules have been added to the rulepack:</p>
     <content type="html"><![CDATA[<p>The Netskope v1 API feed has been deprecated by Netskope. If you are using the Netskope REST API v1 with Google SecOps, you must switch to the Netskope REST API v2.</p>]]></content>
     <summary>The Netskope v1 API feed is now deprecated. Users must migrate to Netskope REST API v2 to ensure continued integration with Google SecOps.</summary>
     <title>Deprecated: Netskope v1 API Deprecation</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops:2025-10-29:feature:0</id>
-    <published>2025-10-29T00:00:00+00:00</published>
-    <updated>2025-10-29T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Improved Support for Chrome Enterprise Premium</strong></p>
-<p>This feature is currently in Preview.</p>
-<p>An improved integration for Chrome Enterprise Premium is now available that includes:</p>
-<ul>
-<li>Streamlined connection to Google SecOps, using recommended security defaults</li>
-<li>Enhanced log events with Google Safe Browsing context</li>
-<li>Updated parser and integration documentation: <a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/chrome-management">Collect Google Chrome logs</a></li>
-<li>Curated dashboards for Chrome Enterprise Premium</li>
-<li>Google Workspace SOAR actions to manage Chrome extension blocklist policies (<a href="https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#block_extension">Block Extension</a> and <a href="https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#delete_extension">Delete Extension</a>)</li>
-</ul>]]></content>
-    <summary>Enhanced integration for Chrome Enterprise Premium now available, featuring streamlined connection to Google SecOps, richer log events with Google Safe Browsing context, updated documentation, curated dashboards, and new Google Workspace SOAR actions for managing Chrome extension policies.</summary>
-    <title>Feature: Improved Chrome Enterprise Premium Support</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops:2025-10-26:feature:0</id>
-    <published>2025-10-26T00:00:00+00:00</published>
-    <updated>2025-10-26T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Delete high-load SOAR environments</strong></p>
-<p>You can now easily delete environments with heavy loads directly from the platform.</p>]]></content>
-    <summary>You can now delete high-load SOAR environments directly from the platform.</summary>
-    <title>Feature: Easily delete high-load SOAR environments</title>
   </entry>
   <entry>
     <author>

@@ -1,14 +1,31 @@
 # Backup and DR
 
+## 2025-11-07
+
+### Feature
+
+Announcing the public preview launch of Database Center support for
+resources protected with Backup and DR Service. Database Center is an
+AI-assisted dashboard that highlights fleet-wide data points.The integration is
+designed to provide Database Center users with a single, unified, and
+accurate view of the data protection posture for all databases protected by
+Backup and DR Service.This capability is available today, at no additional cost,
+for all Cloud SQL customers who have protected their databases through
+Backup and DR Service enhanced protection.
+
+---
 ## 2025-10-30
 
 ### Feature
 
-Announcing the **Public Preview** launch of AlloyDB for PostgreSQL enhanced backups with Backup and DR Service. This enables advanced data protection capabilities offered by Backup and DR Service including backup vault support, granular scheduling through backup plans, and centralized management.
+A new backup vault setting, **Prevent deletion for duration specified in backup rule**,
+is now available. When enabled, this feature locks backups for the exact retention
+period defined in the associated backup plan, overriding the vault's local minimum
+retention and preventing manual deletion.
 
 ### Feature
 
-A new backup vault setting, **Prevent deletion for duration specified in backup rule**, is now available. When enabled, this feature locks backups for the exact retention period defined in the associated backup plan, overriding the vault's local minimum retention and preventing manual deletion.
+Announcing the **Public Preview** launch of AlloyDB for PostgreSQL enhanced backups with Backup and DR Service. This enables advanced data protection capabilities offered by Backup and DR Service including backup vault support, granular scheduling through backup plans, and centralized management.
 
 ---
 ## 2025-10-21

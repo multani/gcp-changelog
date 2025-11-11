@@ -9,6 +9,14 @@
           "title": "Nested If Statements",
           "summary": "Introducing nested if statements for more complex logic in Rules, Search, and Dashboards."
         }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Nested if**\n\nYou can now use `if` statements in both the `outcome` and `events` sections and\nalso within the `then` `else` clauses of another `if` statement. This capability\nlets you introduce more complicated logic to your query and is supported in\nRules, Search, and Dashboards.\n\nFor more information, see\n[Use nested if statements for more complex logic](https://docs.cloud.google.com/chronicle/docs/yara-l/nested-if).",
+        "summary": {
+          "title": "Nested If Statements",
+          "summary": "Introducing nested if statements for more complex logic in Rules, Search, and Dashboards."
+        }
       }
     ],
     "2025-11-09": [
@@ -135,14 +143,6 @@
           "title": "Custom log types renamed",
           "summary": "All custom log types have been renamed with a custom suffix to avoid confusion with prebuilt log types. For example, HUAWEI_SECMASTER_CUSTOM is an example of the new naming convention."
         }
-      },
-      {
-        "kind": "Changed",
-        "content": "**Custom log type rename**\n\nFrom now on, all custom log types will be renamed with the custom suffix to prevent confusion with prebuilt log types. The following custom log types already reflect the new naming convention:\n\n* HUAWEI\\_SECMASTER\\_CUSTOM\n* GTI\\_THREAT\\_FEED\\_CUSTOM\n* GTI\\_IOC\\_STREAM\\_CUSTOM\n* ABSOLUTE\\_SECURE\\_ENDPOINT\\_CUSTOM\n* GTI\\_IOC\\_CUSTOM\n* IBM\\_ILO\\_CUSTOM\n* GCP\\_THREATINTEL\\_CUSTOM\n* SAP\\_ETD\\_CUSTOM",
-        "summary": {
-          "title": "Custom log types renamed",
-          "summary": "All custom log types have been renamed with a custom suffix to avoid confusion with prebuilt log types. For example, HUAWEI_SECMASTER_CUSTOM is an example of the new naming convention."
-        }
       }
     ],
     "2025-10-30": [
@@ -163,11 +163,11 @@
         }
       },
       {
-        "kind": "Announcement",
-        "content": "**Upgraded Chronicle API ingestion methods from alpha to beta**\n\nWe've upgraded the Chronicle API ingestion methods from alpha to beta. This upgrade signals API stability and functional completeness, unblocking customer and partner adoption for production integrations.\n\nFor more information, see\n[Ingestion methods](https://cloud.google.com/chronicle/docs/reference/ingestion-methods).",
+        "kind": "Feature",
+        "content": "**YARA-L functions**\n\nThe following new YARA-L functions are now generally available:\n\n* [strings.ends\\_with](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#stringsends_with):\n  Takes two strings (value, suffix) and returns true if the suffix is\n  non-empty and at end-of-value.\n* [strings.split](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#stringssplit): Splits\n  string value using a delimiter argument (by default, a comma).\n* [window.range](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#windowrange): Returns the\n  range of the values input values found.",
         "summary": {
-          "title": "Chronicle API Ingestion Methods Now in Beta",
-          "summary": "The Chronicle API ingestion methods have been upgraded from alpha to beta, indicating increased stability and readiness for production use. This advancement allows customers and partners to proceed with production integrations."
+          "title": "New YARA-L functions available",
+          "summary": "We're excited to announce that several new YARA-L functions are now generally available. These include strings.ends_with for suffix checking, strings.split for string manipulation, and window.range for analyzing value ranges."
         }
       },
       {
@@ -251,17 +251,17 @@
           "title": "Chrome Enterprise Premium Integration",
           "summary": "Enhanced integration for Chrome Enterprise Premium now available, featuring streamlined connection to Google SecOps, richer log events, updated documentation, curated dashboards, and new SOAR actions for managing Chrome extension policies."
         }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Improved Support for Chrome Enterprise Premium**\n\nThis feature is currently in Preview.\n\nAn improved integration for Chrome Enterprise Premium is now available that includes:\n\n* Streamlined connection to Google SecOps, using recommended security defaults\n* Enhanced log events with Google Safe Browsing context\n* Updated parser and integration documentation: [Collect Google Chrome logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/chrome-management)\n* Curated dashboards for Chrome Enterprise Premium\n* Google Workspace SOAR actions to manage Chrome extension blocklist policies ([Block Extension](https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#block_extension) and [Delete Extension](https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#delete_extension))",
+        "summary": {
+          "title": "Improved Chrome Enterprise Premium Support",
+          "summary": "New integration for Chrome Enterprise Premium offers streamlined connection to Google SecOps, enhanced log events with Google Safe Browsing context, updated documentation, curated dashboards, and Google Workspace SOAR actions for managing Chrome extension policies."
+        }
       }
     ],
     "2025-10-28": [
-      {
-        "kind": "Feature",
-        "content": "**Risk-based alerting with entity-only rules**\n\nWith the new `ENTITY_RISK_CHANGE` UDM event type, you can now write YARA-L\ndetection rules that trigger independently of ingested events. This capability\nlets you focus specifically on changes in an entity's risk score, significantly\ndecreasing the time required for Google Security Operations to detect and alert\non shifting entity risk levels.\n\nFor more information, see\n[Risk-based alerting with entity-only rules](https://docs.cloud.google.com/chronicle/docs/detection/risk-based-alerting).",
-        "summary": {
-          "title": "Risk-based alerting",
-          "summary": "New detection rules can trigger independently of ingested events, focusing on entity risk score changes to speed up detection of shifting risk levels."
-        }
-      },
       {
         "kind": "Feature",
         "content": "**Risk-based alerting with entity-only rules**\n\nWith the new `ENTITY_RISK_CHANGE` UDM event type, you can now write YARA-L\ndetection rules that trigger independently of ingested events. This capability\nlets you focus specifically on changes in an entity's risk score, significantly\ndecreasing the time required for Google Security Operations to detect and alert\non shifting entity risk levels.\n\nFor more information, see\n[Risk-based alerting with entity-only rules](https://docs.cloud.google.com/chronicle/docs/detection/risk-based-alerting).",
@@ -287,9 +287,25 @@
           "title": "New Chrome Enterprise Premium Rules",
           "summary": "Enhanced Curated Detections for Chrome Enterprise Premium now include new rules for Archive Exfiltration, Shortened URLs, Suspicious Downloads from Filehosting/Chat Platforms, and Newly Observed Domains."
         }
+      },
+      {
+        "kind": "Announcement",
+        "content": "**New rules for Chrome Enterprise Premium**\n\nCurated Detections has been enhanced with additional Chrome Enterprise Premium Browser Threat detections.\nThe following rules have been added to the rulepack:\n\n* Archive Exfiltration Event to Non-Google Websites\n* Google Chrome Navigation Event to Shortened URLs\n* Suspicious Download from Filehosting or Chat Platform in Chrome Management\n* Chrome Suspicious Download Event from Newly Observed Domain in Environment",
+        "summary": {
+          "title": "New Chrome Enterprise Premium Rules",
+          "summary": "Enhanced Curated Detections for Chrome Enterprise Premium now include new rules for Archive Exfiltration, Shortened URLs, Suspicious Downloads from Filehosting/Chat Platforms, and Newly Observed Domains."
+        }
       }
     ],
     "2025-10-26": [
+      {
+        "kind": "Feature",
+        "content": "**Delete high-load SOAR environments**\n\nYou can now easily delete environments with heavy loads directly from the platform.",
+        "summary": {
+          "title": "Delete high-load SOAR environments",
+          "summary": "Easily delete high-load SOAR environments directly from the platform."
+        }
+      },
       {
         "kind": "Announcement",
         "content": "Release 6.3.65 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).\n\nThis release contains the following changes:",
@@ -318,14 +334,6 @@
       }
     ],
     "2025-10-22": [
-      {
-        "kind": "Changed",
-        "content": "**Integration of GTI score in Applied Threat Intelligence (ATI)**\n\nGoogle SecOps now uses Google Threat Intelligence (GTI) score for prioritization\nin Applied Threat Intelligence (ATI) instead of the IC-score. The GTI score\ndelivers a unified verdict for potential Indicators of Compromise (IoCs) and\naggregates a wealth of threat intelligence data.\n\nFor details, see [Applied Threat Intelligence priority overview](https://docs.cloud.google.com/chronicle/docs/detection/index.md) and\n[Google Threat Intelligence (GTI) score overview](https://docs.cloud.google.com/chronicle/docs/detection/understand-ic-score.md).",
-        "summary": {
-          "title": "GTI score replaces IC-score in ATI",
-          "summary": "Google SecOps now utilizes the Google Threat Intelligence (GTI) score for prioritization within Applied Threat Intelligence (ATI), replacing the previous IC-score. This change aims to enhance threat prioritization by leveraging a unified verdict for potential Indicators of Compromise (IoCs) derived from aggregated threat intelligence data."
-        }
-      },
       {
         "kind": "Changed",
         "content": "**Integration of GTI score in Applied Threat Intelligence (ATI)**\n\nGoogle SecOps now uses Google Threat Intelligence (GTI) score for prioritization\nin Applied Threat Intelligence (ATI) instead of the IC-score. The GTI score\ndelivers a unified verdict for potential Indicators of Compromise (IoCs) and\naggregates a wealth of threat intelligence data.\n\nFor details, see [Applied Threat Intelligence priority overview](https://docs.cloud.google.com/chronicle/docs/detection/index.md) and\n[Google Threat Intelligence (GTI) score overview](https://docs.cloud.google.com/chronicle/docs/detection/understand-ic-score.md).",
@@ -368,14 +376,6 @@
       }
     ],
     "2025-10-21": [
-      {
-        "kind": "Announcement",
-        "content": "**Premium [Fortinet Firewall parser](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fw) now available as Release Candidate**\n\nThis enhanced parser is available as a **Release Candidate** for the next 2 months. To opt in and begin testing it, go to **SIEM Settings > Parsers**. We encourage you to try it out and evaluate the improvements before it becomes the default.",
-        "summary": {
-          "title": "Fortinet Firewall parser now available as Release Candidate",
-          "summary": "The premium Fortinet Firewall parser is now available as a Release Candidate for two months. You can opt in to test it via SIEM Settings > Parsers. We encourage you to evaluate the improvements before it becomes the default."
-        }
-      },
       {
         "kind": "Announcement",
         "content": "**Premium [Fortinet Firewall parser](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fw) now available as Release Candidate**\n\nThis enhanced parser is available as a **Release Candidate** for the next 2 months. To opt in and begin testing it, go to **SIEM Settings > Parsers**. We encourage you to try it out and evaluate the improvements before it becomes the default.",

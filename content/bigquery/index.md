@@ -150,23 +150,21 @@ following data sources:
 Transfers from these data sources are now [generally available](https://cloud.google.com/products#product-launch-stages)
 (GA).
 
----
-## 2025-10-27
-
 ### Feature
 
-BigQuery now offers the following
-[managed AI functions](https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#managed_ai_functions)
-that use Gemini to help you filter, join, rank, and classify your data:
+Subscriber email logging lets you log the principal identifiers of users
+who execute jobs and queries against linked datasets. You can enable
+logging at the
+[listing level](https://cloud.google.com/bigquery/docs/analytics-hub-manage-listings#create_a_listing)
+and the
+[data exchange level](https://cloud.google.com/bigquery/docs/analytics-hub-manage-exchanges#create-exchange).
+The logged data is available in the `job_principal_subject` field of the
+[`INFORMATION_SCHEMA.SHARED_DATASET_USAGE` view](https://docs.cloud.google.com/bigquery/docs/information-schema-shared-dataset-usage).
+This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages).
 
-* [`AI.IF`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-if):
-  Filter and join text or multimodal data based on a condition described in natural language.
-* [`AI.SCORE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-score):
-  Rate text or multimodal input to rank your data by quality, similarity, or other criteria.
-* [`AI.CLASSIFY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-classify):
-  Classify text into user-defined categories.
-
-These functions are in [Preview](https://cloud.google.com/products/#product-launch-stages).
+---
+## 2025-10-27
 
 ### Feature
 

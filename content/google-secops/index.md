@@ -48,14 +48,19 @@ From now on, all custom log types will be renamed with the custom suffix to prev
 ---
 ## 2025-10-30
 
-### Announcement
+### Feature
 
-**Upgraded Chronicle API ingestion methods from alpha to beta**
+**YARA-L functions**
 
-We've upgraded the Chronicle API ingestion methods from alpha to beta. This upgrade signals API stability and functional completeness, unblocking customer and partner adoption for production integrations.
+The following new YARA-L functions are now generally available:
 
-For more information, see
-[Ingestion methods](https://cloud.google.com/chronicle/docs/reference/ingestion-methods).
+* [strings.ends\_with](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#stringsends_with):
+  Takes two strings (value, suffix) and returns true if the suffix is
+  non-empty and at end-of-value.
+* [strings.split](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#stringssplit): Splits
+  string value using a delimiter argument (by default, a comma).
+* [window.range](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#windowrange): Returns the
+  range of the values input values found.
 
 ### Announcement
 
@@ -99,19 +104,6 @@ on shifting entity risk levels.
 For more information, see
 [Risk-based alerting with entity-only rules](https://docs.cloud.google.com/chronicle/docs/detection/risk-based-alerting).
 
-### Feature
-
-**Risk-based alerting with entity-only rules**
-
-With the new `ENTITY_RISK_CHANGE` UDM event type, you can now write YARA-L
-detection rules that trigger independently of ingested events. This capability
-lets you focus specifically on changes in an entity's risk score, significantly
-decreasing the time required for Google Security Operations to detect and alert
-on shifting entity risk levels.
-
-For more information, see
-[Risk-based alerting with entity-only rules](https://docs.cloud.google.com/chronicle/docs/detection/risk-based-alerting).
-
 ---
 ## 2025-10-27
 
@@ -138,12 +130,6 @@ You can now easily delete environments with heavy loads directly from the platfo
 
 ---
 ## 2025-10-21
-
-### Announcement
-
-**Premium [Fortinet Firewall parser](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fw) now available as Release Candidate**
-
-This enhanced parser is available as a **Release Candidate** for the next 2 months. To opt in and begin testing it, go to **SIEM Settings > Parsers**. We encourage you to try it out and evaluate the improvements before it becomes the default.
 
 ### Announcement
 

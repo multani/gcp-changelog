@@ -1,5 +1,36 @@
 # Generative AI on Vertex AI
 
+## 2025-11-07
+
+### Feature
+
+**Vertex AI Agent Engine**
+
+The following features are now available in [Preview](https://cloud.google.com/products#product-launch-stages):
+
+* Configure, manage, and view [observability
+  features](https://docs.cloud.google.com/agent-builder/agent-engine/manage/overview#configure_telemetry_for_your_deployed_agent)
+  such as sessions, traces, logs, and events for your agent in the Google Cloud console.
+* [Use the
+  playground](https://docs.cloud.google.com/agent-builder/agent-engine/use/overview#use-deployed-agents-console)
+  to test and interact with your agent in the Google Cloud console.
+* [Evaluate your agents](https://docs.cloud.google.com/agent-builder/agent-engine/evaluate) using the
+  Gen AI evaluation service's GenAI Client in Vertex AI SDK.
+* [Create and manage memory
+  revisions](https://docs.cloud.google.com/agent-builder/agent-engine/memory-bank/revisions) for Memory Bank.
+* Use Identity Access Management (IAM) to create an [agent
+  identity](https://docs.cloud.google.com/agent-builder/agent-engine/agent-identity) to manage access and
+  authentication when using agents on Vertex AI Agent Engine Runtime.
+
+The following features are now available in [GA](https://cloud.google.com/products#product-launch-stages):
+
+* [Express mode support](https://docs.cloud.google.com/agent-builder/agent-engine/overview#express-mode) for
+  Vertex AI Agent Engine Runtime.
+* Use the new free tier with Vertex AI Agent Engine Runtime. For more
+  information, see
+  [Pricing](https://cloud.google.com/vertex-ai/pricing?#vertex-ai-agent-engine).
+
+---
 ## 2025-11-04
 
 ### Feature
@@ -113,15 +144,6 @@ For more information about adding and removing objects, see the following:
 
 ### Deprecated
 
-**Imagen subject and style fine-tuning**
-
-Imagen subject model and style model tuning will be removed on
-December 31, 2025. We recommend that you use [Gemini 2.5 Flash Image](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash-image), which supports most use cases that require
-fine-tuning. For more information, see  [Edit images with
-Gemini](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-editing).
-
-### Deprecated
-
 **Imagen 4 preview models**
 
 The following Imagen 4 preview models will be removed on
@@ -134,6 +156,15 @@ November 30, 2025 , 2025, to the following Imagen 4 Generally
 Available models: `imagen-4.0-generate-001`,
 `imagen-4.0-ultra-generate-001`,
 `imagen-4.0-fast-generate-001`.
+
+### Deprecated
+
+**Imagen subject and style fine-tuning**
+
+Imagen subject model and style model tuning will be removed on
+December 31, 2025. We recommend that you use [Gemini 2.5 Flash Image](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash-image), which supports most use cases that require
+fine-tuning. For more information, see  [Edit images with
+Gemini](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-editing).
 
 ---
 ## 2025-10-09

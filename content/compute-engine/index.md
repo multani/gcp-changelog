@@ -1,5 +1,22 @@
 # Compute Engine
 
+## 2025-11-07
+
+### Feature
+
+**Generally available**: N4D VMs are powered by the fifth generation AMD EPYC
+Turin processor and
+[Titanium I/O offload processing](https://cloud.google.com/titanium).
+N4D machine types have up to 96 vCPUs and up to 768 GB of DDR5 memory,
+and a max-boost frequency of 4.1 GHz. They are offered in predefined, and
+custom machine types and are available in select
+[regions and zones](https://docs.cloud.google.com/compute/docs/regions-zones).
+
+N4D VM instances support standard networking with up to 50 Gbps of
+networking bandwidth and Hyperdisk storage. For more information, see
+[General-purpose machine types](https://docs.cloud.google.com/compute/docs/general-purpose-machines#n4d_series).
+
+---
 ## 2025-11-06
 
 ### Feature

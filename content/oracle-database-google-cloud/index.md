@@ -1,5 +1,14 @@
 # Oracle Database@Google Cloud
 
+## 2025-11-10
+
+### Feature
+
+For Autonomous Databases, you can [perform a failover](https://docs.cloud.google.com/oracle/database/docs/perform-failover)
+in the event of a disaster in which your primary database becomes inaccessible. This
+feature is [Generally Available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-10-09
 
 ### Feature

@@ -1,5 +1,33 @@
 # Google SecOps
 
+## 2025-11-10
+
+### Feature
+
+**Nested if**
+
+You can now use `if` statements in both the `outcome` and `events` sections and
+also within the `then` `else` clauses of another `if` statement. This capability
+lets you introduce more complicated logic to your query and is supported in
+Rules, Search, and Dashboards.
+
+For more information, see
+[Use nested if statements for more complex logic](https://docs.cloud.google.com/chronicle/docs/yara-l/nested-if).
+
+---
+## 2025-11-07
+
+### Changed
+
+**MITRE ATT&CK coverage dashboard is now available**
+
+The new [MITRE ATT&CK coverage dashboard](https://docs.cloud.google.com/chronicle/docs/detection/mitre-dashboard) lets you measure your security posture against the MITRE ATT&CK framework, helping you:
+
+* Assess threat coverage
+* Identify gaps
+* Prioritize security efforts
+
+---
 ## 2025-10-31
 
 ### Changed
@@ -20,19 +48,14 @@ From now on, all custom log types will be renamed with the custom suffix to prev
 ---
 ## 2025-10-30
 
-### Feature
+### Announcement
 
-**YARA-L functions**
+**Upgraded Chronicle API ingestion methods from alpha to beta**
 
-The following new YARA-L functions are now generally available:
+We've upgraded the Chronicle API ingestion methods from alpha to beta. This upgrade signals API stability and functional completeness, unblocking customer and partner adoption for production integrations.
 
-* [strings.ends\_with](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#stringsends_with):
-  Takes two strings (value, suffix) and returns true if the suffix is
-  non-empty and at end-of-value.
-* [strings.split](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#stringssplit): Splits
-  string value using a delimiter argument (by default, a comma).
-* [window.range](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#windowrange): Returns the
-  range of the values input values found.
+For more information, see
+[Ingestion methods](https://cloud.google.com/chronicle/docs/reference/ingestion-methods).
 
 ### Announcement
 
@@ -76,6 +99,19 @@ on shifting entity risk levels.
 For more information, see
 [Risk-based alerting with entity-only rules](https://docs.cloud.google.com/chronicle/docs/detection/risk-based-alerting).
 
+### Feature
+
+**Risk-based alerting with entity-only rules**
+
+With the new `ENTITY_RISK_CHANGE` UDM event type, you can now write YARA-L
+detection rules that trigger independently of ingested events. This capability
+lets you focus specifically on changes in an entity's risk score, significantly
+decreasing the time required for Google Security Operations to detect and alert
+on shifting entity risk levels.
+
+For more information, see
+[Risk-based alerting with entity-only rules](https://docs.cloud.google.com/chronicle/docs/detection/risk-based-alerting).
+
 ---
 ## 2025-10-27
 
@@ -102,6 +138,12 @@ You can now easily delete environments with heavy loads directly from the platfo
 
 ---
 ## 2025-10-21
+
+### Announcement
+
+**Premium [Fortinet Firewall parser](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fw) now available as Release Candidate**
+
+This enhanced parser is available as a **Release Candidate** for the next 2 months. To opt in and begin testing it, go to **SIEM Settings > Parsers**. We encourage you to try it out and evaluate the improvements before it becomes the default.
 
 ### Announcement
 

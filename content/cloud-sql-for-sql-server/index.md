@@ -1,5 +1,19 @@
 # Cloud SQL for SQL Server
 
+## 2025-10-29
+
+### Feature
+
+You can integrate Cloud SQL for SQL Server with customer-managed Active Directory (CMAD).
+
+CMAD provides capabilities such as authentication and authorization. Joining an
+instance to a CMAD domain lets you sign in using Windows Authentication with an
+AD-based identity.
+
+[Customer-managed Active Directory (CMAD)](https://docs.cloud.google.com/sql/docs/sqlserver/cmad)
+is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+---
 ## 2025-10-17
 
 ### Feature

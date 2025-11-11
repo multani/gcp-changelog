@@ -1,5 +1,12 @@
 # Text-to-Speech
 
+## 2025-11-07
+
+### Changed
+
+Gemini TTS now supports relaxing safety filters for accounts with [monthly invoiced billing](https://docs.cloud.google.com/billing/docs/how-to/invoiced-billing). For more information, see the [Gemini TTS](https://docs.cloud.google.com/text-to-speech/docs/gemini-tts#relaxing_safety_filters) page.
+
+---
 ## 2025-10-21
 
 ### Changed

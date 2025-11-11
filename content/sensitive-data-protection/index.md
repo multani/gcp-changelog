@@ -1,5 +1,25 @@
 # Sensitive Data Protection
 
+## 2025-11-07
+
+### Feature
+
+The following infoType detectors are available in `global` and the `europe` and
+`us` multi-regions:
+
+* `DOCUMENT_TYPE/CONTEXT/FINANCE`
+* `DOCUMENT_TYPE/CONTEXT/HEALTH`
+* `DOCUMENT_TYPE/CONTEXT/LEGAL`
+* `DOCUMENT_TYPE/CONTEXT/OBSCENE`
+* `DOCUMENT_TYPE/CONTEXT/OFFENSIVE`
+* `DOCUMENT_TYPE/CONTEXT/POLITICS`
+* `DOCUMENT_TYPE/CONTEXT/RELIGION`
+* `DOCUMENT_TYPE/CONTEXT/SEXUAL`
+
+For more information about all infoTypes, see [InfoType
+detector reference](https://cloud.google.com/sensitive-data-protection/docs/infotypes-reference).
+
+---
 ## 2025-11-03
 
 ### Feature
@@ -12,6 +32,17 @@ The `OBJECT_TYPE/PERSON/PASSPORT` and `OBJECT_TYPE/PERSON/PHOTO_ID_CARD` infoTyp
 ### Feature
 
 The `NEW_ZEALAND_DRIVERS_LICENSE_NUMBER` infoType detector is available in all regions. For more information about all built-in infoTypes, see the [InfoType detector reference](https://cloud.google.com/dlp/docs/infotypes-reference).
+
+---
+## 2025-10-17
+
+### Feature
+
+Customers with an organization-level activation of Security Command Center
+Premium have an organization-level discovery subscription
+at no charge from Sensitive Data Protection. For more information, see
+[Sensitive data discovery in Security Command Center
+Premium](https://docs.cloud.google.com/security-command-center/docs/activate-sensitive-data-discovery#sensitive-data-discovery-scc-premium).
 
 ---
 ## 2025-10-10

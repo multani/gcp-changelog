@@ -1,5 +1,29 @@
 # Security Command Center
 
+## 2025-11-10
+
+### Feature
+
+[Data Security Posture Management (DSPM)](https://docs.cloud.google.com/security-command-center/docs/compliance-manager/overview) has
+been released to [General
+Availability](https://cloud.google.com/products#product-launch-stages) for the
+Security Command Center Enterprise tier.
+
+---
+## 2025-11-07
+
+### Feature
+
+You can use customer-managed encryption keys (CMEK) organization policies with Security Command Center. For more information see [Use CMEK organization policies with Security Command Center](https://docs.cloud.google.com/security-command-center/docs/cmek#org-policies).
+
+### Feature
+
+The monitoring and auditing capabilities for
+[Compliance Manager](https://docs.cloud.google.com/security-command-center/docs/compliance-manager/overview)
+have been released to [General
+Availability](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-11-06
 
 ### Feature
@@ -52,6 +76,17 @@ chokepoints.
 [Container image vulnerability findings](https://docs.cloud.google.com/security-command-center/docs/concepts-security-sources#ar-vuln-assessment)
 has been released to [General
 Availability](https://cloud.google.com/products#product-launch-stages).
+
+---
+## 2025-10-17
+
+### Feature
+
+Customers with an organization-level activation of Security Command Center
+Premium have an organization-level discovery subscription
+at no charge from Sensitive Data Protection. For more information, see
+[Sensitive data discovery in Security Command Center
+Premium](https://docs.cloud.google.com/security-command-center/docs/activate-sensitive-data-discovery#sensitive-data-discovery-scc-premium).
 
 ---
 ## 2025-10-16

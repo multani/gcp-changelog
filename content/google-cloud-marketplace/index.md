@@ -1,5 +1,16 @@
 # Google Cloud Marketplace
 
+## 2025-11-06
+
+### Changed
+
+You can now offer Terraform Kubernetes apps through Google Cloud Marketplace with
+usage-based pricing, in which customers pay for your app based on measurements
+that you choose, called *metrics*, such as the number of containers or storage
+time. For more information, see
+[Pricing models for Terraform Kubernetes apps](https://docs.cloud.google.com/marketplace/docs/partners/terraform-kubernetes#pricing).
+
+---
 ## 2025-10-06
 
 ### Changed

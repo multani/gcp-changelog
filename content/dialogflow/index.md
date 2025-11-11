@@ -1,5 +1,12 @@
 # Dialogflow
 
+## 2025-11-06
+
+### Feature
+
+**Conversational Agents (Dialogflow CX)**:You can now specify custom voice in the **Conversation profiles** menu in the console.
+
+---
 ## 2025-10-23
 
 ### Feature

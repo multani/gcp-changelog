@@ -1,5 +1,25 @@
 # Apigee Analytics
 
+## 2025-11-10
+
+### Announcement
+
+On November 10, 2025 we released an updated version of Apigee.
+
+### Feature
+
+**Support for new Apigee Analytics regions**
+
+This release introduces Apigee Analytics support for these new regions:
+Hong Kong (`asia-east2`) and São Paulo (`southamerica-east1`).
+
+**NOTE:** Apigee Advanced API Security does not support these new regions at this
+time.
+
+For a list of all of the supported Analytics regions, see
+[Available Apigee API Analytics regions](https://cloud.google.com/apigee/docs/locations#available-apigee-api-analytics-regions).
+
+---
 ## 2025-06-23
 
 ### Announcement

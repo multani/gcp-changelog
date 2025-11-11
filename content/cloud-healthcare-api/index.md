@@ -8,6 +8,13 @@
 [`GetFhirStoreMetrics`](https://cloud.google.com/healthcare-api/docs/fhir-store-metrics).
 
 ---
+## 2025-10-25
+
+### Feature
+
+* The Cloud Healthcare API is now available in the `me-central1` (Qatar) and `me-central2` (KSA) regions.
+
+---
 ## 2025-10-23
 
 ### Feature

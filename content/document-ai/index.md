@@ -1,5 +1,18 @@
 # Document AI
 
+## 2025-11-07
+
+### Feature
+
+[Gemini layout parser](https://docs.cloud.google.com/document-ai/docs/layout-parse-chunk) is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+The Gemini layout parser gives better layout quality on table recognition,
+reading order and text recognition on PDF files. You can enable the feature by
+default by selecting layout parser processor version
+`pretrained-layout-parser-v1.4-2024-08-25`, `pretrained-layout-parser-v1.5-2025-08-25`
+or `pretrained-layout-parser-v1.5-pro-2025-08-25` for your processor.
+
+---
 ## 2025-11-04
 
 ### Feature
@@ -23,6 +36,18 @@ Parser](https://cloud.google.com/document-ai/docs/layout-parse-chunk).
 `pretrained-splitter-v1.5-2025-07-14` with zero-shot splitting, classification
 and confidence scores is available as Release Candidate
 ([Preview](https://cloud.google.com/products/#product-launch-stages)).
+
+---
+## 2025-10-17
+
+### Feature
+
+[Layout parser](https://docs.cloud.google.com/document-ai/docs/layout-parse-chunk) lets you parse images and
+tables as annotations in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+Layout parser can identify if there are images or tables in parsed documents.
+When found, images and tables are annotated as a descriptive block of text with
+the information depicted in the image and table.
 
 ---
 ## 2025-10-06

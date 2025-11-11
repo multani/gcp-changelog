@@ -1,6 +1,16 @@
 {
   "name": "Dataproc",
   "entries": {
+    "2025-11-07": [
+      {
+        "kind": "Announcement",
+        "content": "**Serverless for Apache Spark:** Apache Spark upgrade to version [3.5.3](https://spark.apache.org/releases/spark-release-3-5-3.html)\nfor the [1.2](https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-1.2)\nand [2.2](https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-2.2)\nServerless for Apache Spark runtime versions announced on\n[October 13, 2025](https://docs.cloud.google.com/dataproc/docs/release-notes#October_13_2025)\nhas been rolled back.",
+        "summary": {
+          "title": "Serverless for Apache Spark Upgrade",
+          "summary": "The recent upgrade of Serverless for Apache Spark to version 3.5.3 has been rolled back for runtime versions 1.2 and 2.2. This change was announced on October 13, 2025."
+        }
+      }
+    ],
     "2025-10-29": [
       {
         "kind": "Breaking",
@@ -77,29 +87,29 @@
     ],
     "2025-10-14": [
       {
-        "kind": "Announcement",
-        "content": "New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):\n\n* 2.0.151-debian10, 2.0.151-ubuntu18, 2.0.151-rocky8\n* 2.1.100-debian11, 2.1.100-ubuntu20, 2.1.100-ubuntu20-arm, 2.1.100-rocky8\n* 2.2.68-debian12, 2.2.68-ubuntu22, 2.2.68-ubuntu22-arm, 2.2.68-rocky9\n* 2.3.15-debian12, 2.3.15-ubuntu22, 2.3.15-ubuntu22-arm, 2.3.15-ml-ubuntu22, 2.3.15-rocky9",
-        "summary": {
-          "title": "New Dataproc Image Versions Available",
-          "summary": "New subminor image versions for Dataproc on Compute Engine are now available, including updates for Debian, Ubuntu, and Rocky Linux."
-        }
-      },
-      {
         "kind": "Fixed",
         "content": "Fixed startup race condition in [multi-tenant clusters](https://docs.cloud.google.com/dataproc/docs/concepts/iam/sa-multi-tenancy) using the `dataproc:pip.packages` property that could cause authentication failures while starting Jupyter notebook kernels.",
         "summary": {
           "title": "Startup race condition fixed",
           "summary": "The startup race condition in multi-tenant clusters has been fixed. This resolves authentication failures that could occur when starting Jupyter notebook kernels."
         }
+      },
+      {
+        "kind": "Announcement",
+        "content": "New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):\n\n* 2.0.151-debian10, 2.0.151-ubuntu18, 2.0.151-rocky8\n* 2.1.100-debian11, 2.1.100-ubuntu20, 2.1.100-ubuntu20-arm, 2.1.100-rocky8\n* 2.2.68-debian12, 2.2.68-ubuntu22, 2.2.68-ubuntu22-arm, 2.2.68-rocky9\n* 2.3.15-debian12, 2.3.15-ubuntu22, 2.3.15-ubuntu22-arm, 2.3.15-ml-ubuntu22, 2.3.15-rocky9",
+        "summary": {
+          "title": "New Dataproc Image Versions Available",
+          "summary": "New subminor image versions for Dataproc on Compute Engine are now available, including updates for Debian, Ubuntu, and Rocky Linux."
+        }
       }
     ],
     "2025-10-13": [
       {
         "kind": "Announcement",
-        "content": "**Serverless for Apache Spark:** Runtimes rollout with Apache Spark upgrade to version [3.5.3](https://spark.apache.org/releases/spark-release-3-5-3.html) in the latest [1.2](https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_12) and [2.2](https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_22) Serverless for Apache Spark runtime versions has started and is expected to finish by October 16th.",
+        "content": "**Serverless for Apache Spark:** Runtimes rollout with Apache Spark upgrade to version [3.5.3](https://spark.apache.org/releases/spark-release-3-5-3.html) in the latest [1.2](https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-1.2) and [2.2](https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-2.2) Serverless for Apache Spark runtime versions has started and is expected to finish by October 16th.",
         "summary": {
-          "title": "Apache Spark Runtimes Upgrade",
-          "summary": "New Apache Spark runtimes are rolling out."
+          "title": "Apache Spark Runtimes Rollout",
+          "summary": "New runtimes with Apache Spark 3.5.3 are rolling out for Serverless for Apache Spark. The upgrade is expected to finish by October 16th."
         }
       }
     ],

@@ -11,8 +11,48 @@ availability and use built-in redundancy and failover mechanisms to reduce the
 environment's susceptibility to zonal failures and single point of failure
 outages.
 
+### Announcement
+
+A new Cloud Composer release has started on **November 05, 2025**. Get ready
+for upcoming changes and features as we roll out the new release to all regions.
+This release is in progress at the moment. Listed changes and features might
+not be available in some regions yet.
+
+### Security
+
+Fixed the [CVE-2025-49844](https://www.cve.org/CVERecord?id=CVE-2025-49844)
+vulnerability. The updated version of the environment component that hosts a
+Redis-based task queue is available:
+
+* To apply the fix in Cloud Composer 3, upgrade the Airflow build of your
+  environment to airflow-2.10.5-build.19 or airflow-2.9.3-build.39, or later.
+* To apply the fix in Cloud Composer 2, upgrade your environment to
+  Cloud Composer version 2.15.3, or later.
+
+### Changed
+
+New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3)
+are available in Cloud Composer 3:
+
+* [composer-3-airflow-2.10.5-build.19](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-19) (default)
+* [composer-3-airflow-2.9.3-build.39](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-39)
+
+### Changed
+
+New [images](https://cloud.google.com/composer/docs/composer-versions#images-composer-2)
+are available in Cloud Composer 2:
+
+* [composer-2.15.3-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-15-3-airflow-2-10-5) (default)
+* [composer-2.15.3-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-15-3-airflow-2-9-3)
+
 ---
 ## 2025-10-30
+
+### Deprecated
+
+The following Cloud Composer versions and builds have reached their
+[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):
+composer-3-airflow-2.7.3-build.21 and composer-2.9.9-\*.
 
 ### Announcement
 
@@ -47,12 +87,6 @@ are available in Cloud Composer 2:
 
 * [composer-2.15.2-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-15-2-airflow-2-10-5) (default)
 * [composer-2.15.2-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-15-2-airflow-2-9-3)
-
-### Deprecated
-
-The following Cloud Composer versions and builds have reached their
-[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):
-composer-3-airflow-2.7.3-build.21 and composer-2.9.9-\*.
 
 ---
 ## 2025-10-27
@@ -117,13 +151,6 @@ The following Cloud Composer versions and builds have reached their
 [end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):
 composer-3-airflow-2.7.3-build.20, composer-3-airflow-2.7.3-build.19,
 composer-2.9.8-\*, composer-2.9.7-\*.
-
-### Announcement
-
-A new Cloud Composer release has started on **October 22, 2025**. Get ready
-for upcoming changes and features as we roll out the new release to all regions.
-This release is in progress at the moment. Listed changes and features might
-not be available in some regions yet.
 
 ---
 ## 2025-10-10

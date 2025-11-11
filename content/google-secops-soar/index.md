@@ -1,5 +1,21 @@
 # Google SecOps SOAR
 
+## 2025-11-09
+
+### Announcement
+
+Release 6.3.67 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains internal and customer bug fixes.
+
+---
+## 2025-11-08
+
+### Announcement
+
+[Release 6.3.66](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#November_02_2025) is now available for all regions.
+
+---
 ## 2025-11-05
 
 ### Feature

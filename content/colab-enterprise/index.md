@@ -1,5 +1,13 @@
 # Colab Enterprise
 
+## 2025-11-10
+
+### Feature
+
+The default latest Python version is now 3.12. See
+[Python versions](https://docs.cloud.google.com/colab/docs/runtimes#python).
+
+---
 ## 2025-10-20
 
 ### Feature

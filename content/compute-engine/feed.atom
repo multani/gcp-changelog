@@ -2,9 +2,59 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Compute Engine</title>
   <subtitle>Changelog for Google Cloud product: Compute Engine</subtitle>
-  <updated>2025-11-07T00:00:00+00:00</updated>
+  <updated>2025-11-10T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:compute-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/compute-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2025-11-10:issue:0</id>
+    <published>2025-11-10T00:00:00+00:00</published>
+    <updated>2025-11-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Windows guest agent identifies administrator accounts and groups using
+string matching. Therefore, credential management features only function
+correctly when you use English language names for user accounts and groups,
+for example, <code>Administrators</code>. If you use non-English language names, credential
+management features such as generating or resetting passwords might not function
+as expected. For more information about managing Windows user accounts, see
+<a href="https://docs.cloud.google.com/compute/docs/instances/windows/generating-credentials">Manage accounts and credentials on Windows VMs</a> and
+<a href="https://docs.cloud.google.com/compute/docs/troubleshooting/known-issues#windows-non-english-credentials">Known issues for Windows VM instances</a>.</p>]]></content>
+    <summary>Credential management features may not work correctly with non-English names for Windows user accounts and groups. Use English names like 'Administrators' for these accounts and groups to ensure proper functionality.</summary>
+    <title>Issue: Non-English Names for Windows User Accounts and Groups</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2025-11-10:feature:1</id>
+    <published>2025-11-10T00:00:00+00:00</published>
+    <updated>2025-11-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Generally available</strong>: Two new features that provide better observability for
+Compute Engine reservations and deeper insights into their capacity usage and
+costs:</p>
+<ul>
+<li>A new <code>consumedReservation</code> field in the VM instance details showing the
+  full resource name of the consumed reservation, providing reservation
+  consumption status on VMs and better visibility for resource management and
+  troubleshooting.</li>
+<li>Two new system labels in the BigQuery billing export for instances
+  consuming a reservation and the unused portion of a reservation, providing
+  more detailed cost analysis:</li>
+<li><code>compute.googleapis.com/reservation_name</code>: the short name of the
+    Compute Engine reservation.</li>
+<li><code>compute.googleapis.com/reservation_project_id</code>: the Project ID owning
+    the Compute Engine reservation.</li>
+</ul>
+<p>For more information, see the following:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/billing/docs/how-to/bq-examples#view_consumption_for_a_given_instance">View consumption history for a given instance</a>.</li>
+<li><a href="https://docs.cloud.google.com/billing/docs/how-to/bq-examples#analyze_usage_distribution_for_a_given_reservation">Analyze usage distribution per project for a shared reservation</a>.</li>
+<li><a href="https://docs.cloud.google.com/billing/docs/how-to/bq-examples#list_all_the_instances_consuming_a_reservation">List all the instances consuming a reservation</a>.</li>
+</ul>]]></content>
+    <summary>Two new features are now available for Compute Engine reservations, offering enhanced observability into capacity usage and costs. These include a new 'consumedReservation' field in VM instance details and two new system labels in the BigQuery billing export for more detailed cost analysis.</summary>
+    <title>Feature: New features for Compute Engine reservations</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -16,13 +66,13 @@
 Turin processor and
 <a href="https://cloud.google.com/titanium">Titanium I/O offload processing</a>.
 N4D machine types have up to 96 vCPUs and up to 768 GB of DDR5 memory,
-and a max-boost frequency of 4.1 GHz. They are offered in predefined, and
+and a max-boost frequency of 4.1 GHz. They are offered in predefined and
 custom machine types and are available in select
 <a href="https://docs.cloud.google.com/compute/docs/regions-zones">regions and zones</a>.</p>
 <p>N4D VM instances support standard networking with up to 50 Gbps of
 networking bandwidth and Hyperdisk storage. For more information, see
 <a href="https://docs.cloud.google.com/compute/docs/general-purpose-machines#n4d_series">General-purpose machine types</a>.</p>]]></content>
-    <summary>Introducing N4D VMs, powered by the latest AMD EPYC Turin processor. These VMs offer up to 96 vCPUs, 768 GB of memory, and high networking bandwidth.</summary>
+    <summary>Introducing N4D VMs, powered by 5th gen AMD EPYC Turin processors and Titanium I/O offload. These VMs offer up to 96 vCPUs, 768 GB DDR5 memory, and 4.1 GHz max boost frequency. Available in select regions, they support 50 Gbps networking and Hyperdisk storage.</summary>
     <title>Feature: N4D VMs Now Generally Available</title>
   </entry>
   <entry>
@@ -32,18 +82,10 @@ networking bandwidth and Hyperdisk storage. For more information, see
     <id>urn:github:multani:gcp-changelog:compute-engine:2025-11-06:feature:0</id>
     <published>2025-11-06T00:00:00+00:00</published>
     <updated>2025-11-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Preview</strong>: N4A VMs, powered by Google's next generation Axion processor built
-on the Arm Neoverse N3 platform are in Preview. N4A provides machine types of up
-to 64 vCPUs and 512 GB of DDR5 memory. N4A is available in standard, high-mem,
-high-cpu, and custom machine types with extended memory, with up to 50 Gbps of
-standard networking. These machine types are available in limited
-<a href="https://docs.cloud.google.com/compute/docs/regions-zones">regions and zones</a>. For more information, see
-<a href="https://docs.cloud.google.com/compute/docs/general-purpose-machines#n4a_series">N4A machine series</a>.</p>
-<p>To access these VMs, complete
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSddzdVNnkbi5oKB3DURruA28S9MdxdKcvxwuheqojGHCldLRw/viewform">this form</a>,
-or speak to your account team.</p>]]></content>
-    <summary>N4A VMs featuring Google's new Axion processor are now in preview. These VMs offer up to 64 vCPUs and 512 GB of memory, with various configurations available.</summary>
-    <title>Feature: N4A VMs Preview</title>
+    <content type="html"><![CDATA[<p><strong>Preview</strong>: N4A VMs are powered by Google's next-generation Axion processor, which is built on the Arm Neoverse N3 platform. N4A includes machine types with up to 64 vCPUs and 512 GB of DDR5 memory. N4A is available as standard, high-mem, high-cpu, and custom machine types with extended memory and up to 50 Gbps of standard networking. These machine types are available in limited <a href="https://docs.cloud.google.com/compute/docs/regions-zones">regions and zones</a>. For more information, see <a href="https://docs.cloud.google.com/compute/docs/general-purpose-machines#n4a_series">N4A machine series</a>.</p>
+<p>To access these VMs, complete <a href="https://docs.google.com/forms/d/e/1FAIpQLSddzdVNnkbi5oKB3DURruA28S9MdxdKcvxwuheqojGHCldLRw/viewform">this access request form</a>, or speak to your account team.</p>]]></content>
+    <summary>Google Cloud introduces N4A VMs, powered by the new Arm-based Axion processor. These VMs offer various machine types with up to 64 vCPUs and 512 GB memory, suitable for a range of workloads.</summary>
+    <title>Feature: N4A VMs with Axion Processor Now in Preview</title>
   </entry>
   <entry>
     <author>
@@ -52,10 +94,10 @@ or speak to your account team.</p>]]></content>
     <id>urn:github:multani:gcp-changelog:compute-engine:2025-11-04:feature:0</id>
     <published>2025-11-04T00:00:00+00:00</published>
     <updated>2025-11-04T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Generally available</strong>: You can verify which reservation a VM is consuming and
-view a list of VMs consuming a reservation. For more information,
+    <content type="html"><![CDATA[<p><strong>Generally available</strong>: You can verify which reservation a VM consumes and
+view a list of VMs that consume a reservation. For more information,
 see <a href="https://docs.cloud.google.com/compute/docs/instances/reservations-view#view_reservation_consumption">View reservation consumption</a>.</p>]]></content>
-    <summary>You can now see which VMs are using a reservation and view a list of VMs using a reservation.</summary>
+    <summary>You can now easily check which virtual machines are using a reservation and see a list of all VMs associated with a reservation.</summary>
     <title>Feature: Reservation Consumption</title>
   </entry>
   <entry>
@@ -66,12 +108,12 @@ see <a href="https://docs.cloud.google.com/compute/docs/instances/reservations-v
     <published>2025-11-04T00:00:00+00:00</published>
     <updated>2025-11-04T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Public preview</strong>: You can configure a regional managed instance group (MIG) to
-allow a VM repair in an alternate zone when the MIG can't repair the VM in its
-original zone. Repairing a VM in an alternate zone can help to improve your
+repair a VM in an alternate zone when the MIG can't repair the VM in its
+original zone. Repairing a VM in an alternate zone can improve your
 application's resiliency and resource obtainability. For more information, see
 <a href="https://docs.cloud.google.com/compute/docs/instance-groups/repair-vm-in-alternate-zone">Repair a VM in an alternate zone</a>.</p>]]></content>
-    <summary>A new feature allows regional managed instance groups to repair VMs in an alternate zone, enhancing application resiliency.</summary>
-    <title>Feature: VM Repair in Alternate Zone</title>
+    <summary>VMs in managed instance groups can now be repaired in a different zone if the original zone is unavailable. This improves application resilience and resource availability.</summary>
+    <title>Feature: VM Repair in Alternate Zones</title>
   </entry>
   <entry>
     <author>
@@ -80,14 +122,13 @@ application's resiliency and resource obtainability. For more information, see
     <id>urn:github:multani:gcp-changelog:compute-engine:2025-11-02:feature:0</id>
     <published>2025-11-02T00:00:00+00:00</published>
     <updated>2025-11-02T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>If ensuring time synchronization with very high accuracy and monitoring the
-accuracy of your time synchronization are important goals for your
-Compute Engine instances, you can sync your VM's clock with its host server's
-clock by using <code>chrony</code> and <code>ptp_kvm</code>. This configuration is designed to achieve
-accuracy within 1 ms for supported setups. For more information, see
+    <content type="html"><![CDATA[<p>If you need to synchronize time with high accuracy and monitor its accuracy for
+your Compute Engine instances, you can sync your VM clock with its host
+server clock using <code>chrony</code> and <code>ptp_kvm</code>. This configuration provides accuracy
+within 1 ms for supported setups. For more information, see
 <a href="https://docs.cloud.google.com/compute/docs/instances/time-synchronization">Configure accurate time for Compute Engine VMs</a>.</p>]]></content>
-    <summary>You can now achieve highly accurate time synchronization for your Compute Engine instances using `chrony` and `ptp_kvm`. This feature syncs your VM's clock with its host server's clock, achieving accuracy within 1 ms for supported setups.</summary>
-    <title>Feature: Accurate time synchronization for Compute Engine VMs</title>
+    <summary>Synchronize your Compute Engine VM clock with its host server clock using `chrony` and `ptp_kvm` for high accuracy, within 1 ms for supported setups.</summary>
+    <title>Feature: Accurate Time Synchronization for Compute Engine VMs</title>
   </entry>
   <entry>
     <author>
@@ -113,7 +154,7 @@ accuracy within 1 ms for supported setups. For more information, see
     <published>2025-10-30T00:00:00+00:00</published>
     <updated>2025-10-30T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Generally available</strong>: Dynamic NICs let you add or remove network interfaces
-to or from an instance without having to restart or recreate the instance.</p>
+to or from an instance without restarting or recreating the instance.</p>
 <p>You can also use Dynamic NICs when you need more network interfaces. The
 maximum number of vNICs for most machine types in Google Cloud is 10; however,
 you can configure up to 16 total interfaces by using Dynamic NICs.</p>
@@ -123,8 +164,8 @@ you can configure up to 16 total interfaces by using Dynamic NICs.</p>
 <li><a href="https://docs.cloud.google.com/vpc/docs/create-use-multiple-interfaces">Create VM instances with multiple network interfaces</a></li>
 <li><a href="https://docs.cloud.google.com/vpc/docs/add-dynamic-nics">Add Dynamic NICs to an instance</a></li>
 </ul>]]></content>
-    <summary>Add or remove network interfaces from your instances without any downtime. This feature allows for more network configurations, supporting up to 16 total interfaces on most machine types.</summary>
-    <title>Feature: Dynamic NICs for Instances</title>
+    <summary>Add or remove network interfaces from an instance without restarting.</summary>
+    <title>Feature: Dynamic NICs</title>
   </entry>
   <entry>
     <author>
@@ -133,12 +174,12 @@ you can configure up to 16 total interfaces by using Dynamic NICs.</p>
     <id>urn:github:multani:gcp-changelog:compute-engine:2025-10-28:feature:0</id>
     <published>2025-10-28T00:00:00+00:00</published>
     <updated>2025-10-28T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Generally available</strong>: You can create managed instance groups (MIGs) comprised
+    <content type="html"><![CDATA[<p><strong>Generally available</strong>: You can create managed instance groups (MIGs) that consist
 of IPv6-only VM instances.</p>
 <p>For more information, see
 <a href="https://docs.cloud.google.com/compute/docs/instance-groups/creating-groups-of-managed-instances">Basic scenarios for creating managed instance groups (MIGs)</a>.</p>]]></content>
-    <summary>You can now create managed instance groups (MIGs) that only use IPv6 addresses. This feature is now generally available.</summary>
-    <title>Feature: IPv6-only MIGs are now generally available</title>
+    <summary>You can now create managed instance groups (MIGs) composed entirely of IPv6-only VM instances. This feature is now generally available.</summary>
+    <title>Feature: IPv6-only MIGs now generally available</title>
   </entry>
   <entry>
     <author>
@@ -159,12 +200,12 @@ To resolve this issue, guest agent version <code>20251011.00</code> is now avail
     <id>urn:github:multani:gcp-changelog:compute-engine:2025-10-21:changed:1</id>
     <published>2025-10-21T00:00:00+00:00</published>
     <updated>2025-10-21T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The kernel <code>dist-tag</code> that supports the Rocky Linux Optimized and Accelerator images on Compute Engine is being updated from <code>elX_ycld_next</code> to <code>elX_y_ciq</code> as part of the consolidation of CIQ's kernel trees. There are no changes to Secure Boot or GPG signing keys.</p>
-<p>For example, <code>6.12.0-55.32.1.el10_0cld_next.2.1</code> to <code>6.12.0-55.39.1.el10_0_ciq.2.1</code>, where the <code>cld_next</code> tag is swapped with <code>ciq</code>.</p>
+    <content type="html"><![CDATA[<p>As part of the consolidation of CIQ's kernel trees, the kernel <code>dist-tag</code> that supports the Rocky Linux Optimized and Accelerator images on Compute Engine is changing from <code>elX_ycld_next</code> to <code>elX_y_ciq</code>. There are no changes to Secure Boot or GPG signing keys.</p>
+<p>For example, <code>6.12.0-55.32.1.el10_0cld_next.2.1</code> changes to <code>6.12.0-55.39.1.el10_0_ciq.2.1</code>, where <code>ciq</code> replaces the <code>cld_next</code> tag.</p>
 <p>This change affects the Rocky Linux 8, 9, and 10 optimized and accelerator images in an upcoming kernel update over the next month. The major version 8 and 9 kernels now include FIPS 140-3 patches as part of CIQ's ongoing FIPS 140-3 validation efforts for Rocky Linux. These patches have no effect if FIPS mode is not enabled. There are no code changes to the major version 10 kernel.</p>
-<p>The kernel source tree is available at CIQ's <a href="https://github.com/ctrliq/kernel-src-tree">kernel-src-tree</a> GitHub repository.</p>]]></content>
-    <summary>The kernel dist-tag for Rocky Linux Optimized and Accelerator images on Compute Engine is changing from elX_ycld_next to elX_y_ciq. This update affects Rocky Linux 8, 9, and 10 images over the next month. FIPS 140-3 patches are included in the major version 8 and 9 kernels, with no impact if FIPS mode is not enabled. There are no code changes to the major version 10 kernel.</summary>
-    <title>Changed: Rocky Linux kernel update</title>
+<p>You can find the kernel source tree in the CIQ <a href="https://github.com/ctrliq/kernel-src-tree">kernel-src-tree</a> GitHub repository.</p>]]></content>
+    <summary>The kernel dist-tag for Rocky Linux optimized and accelerator images on Compute Engine is changing from elX_ycld_next to elX_y_ciq as part of CIQ's kernel tree consolidation. This change affects Rocky Linux 8, 9, and 10 images in an upcoming kernel update. Major version 8 and 9 kernels now include FIPS 140-3 patches, which do not affect functionality if FIPS mode is not enabled. There are no code changes to the major version 10 kernel. Secure Boot and GPG signing keys remain unchanged.</summary>
+    <title>Changed: CIQ Kernel Tag Change for Rocky Linux Images</title>
   </entry>
   <entry>
     <author>
@@ -173,12 +214,11 @@ To resolve this issue, guest agent version <code>20251011.00</code> is now avail
     <id>urn:github:multani:gcp-changelog:compute-engine:2025-10-21:feature:2</id>
     <published>2025-10-21T00:00:00+00:00</published>
     <updated>2025-10-21T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Generally available</strong>: You can use future reservations to request to reserve
-capacity starting on a specific date up to one year in the future. For more
-information, see
+    <content type="html"><![CDATA[<p><strong>Generally available</strong>: Future reservations let you reserve capacity for a
+specific date up to one year in advance. For more information, see
 <a href="https://docs.cloud.google.com/ai-hypercomputer/docs/reserve-capacity">About future reservation requests</a>.</p>]]></content>
-    <summary>You can now use future reservations to request capacity up to one year in advance. This feature allows you to plan and secure resources for your future needs.</summary>
-    <title>Feature: Future reservations are now generally available</title>
+    <summary>You can now reserve capacity for a specific date up to one year in advance with future reservations.</summary>
+    <title>Feature: Future reservations</title>
   </entry>
   <entry>
     <author>
@@ -201,11 +241,10 @@ architecture to Windows, is now available.</p>
     <id>urn:github:multani:gcp-changelog:compute-engine:2025-10-20:security:1</id>
     <published>2025-10-20T00:00:00+00:00</published>
     <updated>2025-10-20T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>A vulnerability affecting AMD Zen 5 processors (Turin) was discovered and is
-being addressed. For more information, see the
+    <content type="html"><![CDATA[<p>A vulnerability affecting AMD Zen 5 processors (Turin) is being addressed. For more information, see the
 <a href="https://docs.cloud.google.com/compute/docs/security-bulletins#gcp-2025-058">GCP-2025-058 security bulletin</a>.</p>]]></content>
-    <summary>A security vulnerability has been identified in AMD Zen 5 processors. The issue is currently being addressed to ensure the security of the systems utilizing this hardware.</summary>
-    <title>Security: Security Vulnerability in AMD Zen 5 Processors</title>
+    <summary>A security vulnerability in AMD Zen 5 processors is now being addressed.</summary>
+    <title>Security: AMD Zen 5 Vulnerability Addressed</title>
   </entry>
   <entry>
     <author>
@@ -219,11 +258,11 @@ being addressed. For more information, see the
 is designed for graphics-intensive workloads such as NVIDIA Omniverse simulations,
 video transcoding, and virtual desktops. The G4 machine series also provides a
 cost-effective solution for single-host inference and model tuning.
-The G4 machine series is now available in the following regions and zones:</p>
+The G4 machine series is available in the following regions and zones:</p>
 <ul>
 <li>APAC</li>
 <li>Jurong West, Singapore: <code>asia-southeast1-b</code></li>
-<li>Europe:</li>
+<li>Europe</li>
 <li>Eemshaven, Netherlands: <code>europe-west4-a</code></li>
 <li>North America</li>
 <li>Council Bluffs, Iowa: <code>us-central1-b</code></li>
@@ -232,8 +271,8 @@ The G4 machine series is now available in the following regions and zones:</p>
 </ul>
 <p>To get started with G4 machine types, see
 <a href="https://docs.cloud.google.com/compute/docs/gpus/create-gpu-vm-g-series">Create a G2 or G4 instance</a>.</p>]]></content>
-    <summary>The G4 machine series, optimized for graphics-intensive workloads, is now available in multiple regions worldwide. It offers a cost-effective solution for tasks like simulations, video transcoding, virtual desktops, and AI model tuning.</summary>
-    <title>Feature: G4 machine series now generally available</title>
+    <summary>The new G4 machine series is now generally available, offering a powerful and cost-effective solution for graphics-intensive workloads like simulations, video transcoding, and virtual desktops. It also supports single-host inference and model tuning.</summary>
+    <title>Feature: New G4 machine series for graphics-intensive workloads</title>
   </entry>
   <entry>
     <author>
@@ -242,12 +281,12 @@ The G4 machine series is now available in the following regions and zones:</p>
     <id>urn:github:multani:gcp-changelog:compute-engine:2025-10-18:feature:0</id>
     <published>2025-10-18T00:00:00+00:00</published>
     <updated>2025-10-18T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Generally Available</strong>: You can now access the Compute Engine alpha API at the
+    <content type="html"><![CDATA[<p><strong>Generally Available</strong>: You can use the Compute Engine alpha API at the
 project level through a self-service process. By enabling the alpha API, you can
 use the Google Cloud console, Google Cloud CLI, API, and Terraform to view and manage
-Preview features. For more information, see <a href="https://docs.cloud.google.com/compute/docs/reference/rest/alpha">Use the Compute Engine alpha API</a>.</p>]]></content>
-    <summary>The Compute Engine alpha API is now generally available at the project level through a self-service process. You can enable this API to manage preview features using the Google Cloud console, CLI, API, and Terraform.</summary>
-    <title>Feature: Compute Engine Alpha API Now Generally Available</title>
+preview features. For more information, see <a href="https://docs.cloud.google.com/compute/docs/reference/rest/alpha">Use the Compute Engine alpha API</a>.</p>]]></content>
+    <summary>The Compute Engine alpha API is now generally available at the project level. You can access preview features using the Google Cloud console, CLI, API, and Terraform.</summary>
+    <title>Feature: Compute Engine alpha API now available</title>
   </entry>
   <entry>
     <author>
@@ -256,12 +295,12 @@ Preview features. For more information, see <a href="https://docs.cloud.google.c
     <id>urn:github:multani:gcp-changelog:compute-engine:2025-10-17:feature:0</id>
     <published>2025-10-17T00:00:00+00:00</published>
     <updated>2025-10-17T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Generally Available</strong>: You can now access the Compute Engine alpha API at the
+    <content type="html"><![CDATA[<p><strong>Generally Available</strong>: You can use the Compute Engine alpha API at the
 project level through a self-service process. By enabling the alpha API, you can
 use the Google Cloud console, Google Cloud CLI, API, and Terraform to view and manage
-Preview features. For more information, see <a href="https://docs.cloud.google.com/compute/docs/reference/rest/alpha">Use the Compute Engine alpha API</a>.</p>]]></content>
-    <summary>The Compute Engine alpha API is now generally available at the project level through a self-service process. You can enable this API to manage Preview features using the Google Cloud console, CLI, API, and Terraform.</summary>
-    <title>Feature: Compute Engine Alpha API Now Generally Available</title>
+preview features. For more information, see <a href="https://docs.cloud.google.com/compute/docs/reference/rest/alpha">Use the Compute Engine alpha API</a>.</p>]]></content>
+    <summary>The Compute Engine alpha API is now generally available at the project level. You can manage preview features using the Google Cloud console, gcloud CLI, API, and Terraform.</summary>
+    <title>Feature: Compute Engine API Now Generally Available</title>
   </entry>
   <entry>
     <author>
@@ -270,12 +309,9 @@ Preview features. For more information, see <a href="https://docs.cloud.google.c
     <id>urn:github:multani:gcp-changelog:compute-engine:2025-10-16:changed:0</id>
     <published>2025-10-16T00:00:00+00:00</published>
     <updated>2025-10-16T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Starting with SUSE Linux Enterprise Server (SLES) 16, including variants for SAP,
-the default file system for the root partition (<code>/</code>) is <a href="https://en.wikipedia.org/wiki/Btrfs">Btrfs</a>
-changing from the previous default of XFS. For more information, see <a href="https://documentation.suse.com/sles/15-SP7/html/SLES-all/cha-filesystems.html#sec-filesystems-major-btrfs-suse">File systems in SLES</a>
-in the SUSE documentation.</p>]]></content>
+    <content type="html"><![CDATA[<p>Starting with SUSE Linux Enterprise Server (SLES) 16, including variants for SAP, the default file system for the root partition (<code>/</code>) is <a href="https://en.wikipedia.org/wiki/Btrfs">Btrfs</a>, which replaces the previous default of XFS. For more information, see <a href="https://documentation.suse.com/sles/15-SP7/html/SLES-all/cha-filesystems.html#sec-filesystems-major-btrfs-suse">File systems in SLES</a> in the SUSE documentation.</p>]]></content>
     <summary>SUSE Linux Enterprise Server (SLES) 16 now uses Btrfs as the default file system for the root partition, replacing XFS.</summary>
-    <title>Changed: SUSE Linux Enterprise Server 16: Btrfs now default file system</title>
+    <title>Changed: Btrfs Now Default File System</title>
   </entry>
   <entry>
     <author>

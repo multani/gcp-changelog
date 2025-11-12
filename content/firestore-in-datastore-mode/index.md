@@ -9,7 +9,7 @@ supported at the General Availability ([GA](https://cloud.google.com/products#pr
 
 ### Libraries
 
-A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+A weekly digest of client library updates from across the [Cloud SDK](https://docs.cloud.google.com/sdk).
 
 ### Java
 

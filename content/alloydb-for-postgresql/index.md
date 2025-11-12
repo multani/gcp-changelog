@@ -1,5 +1,15 @@
 # AlloyDB for PostgreSQL
 
+## 2025-11-11
+
+### Feature
+
+Improve query performance for partitioned tables and complex queries using
+parallel execution for the `SELECT` portion of an `INSERT INTO ... SELECT`
+query. For more information,
+see [Improve select insert performance with parallel select](https://docs.cloud.google.com/alloydb/docs/improve-select-insert-performance-parallel-select).
+
+---
 ## 2025-11-10
 
 ### Feature
@@ -7,7 +17,6 @@
 AlloyDB now supports PostgreSQL 17 for migrating from Cloud SQL for PostgreSQL
 to AlloyDB for PostgreSQL using your Cloud SQL for PostgreSQL backup. The size
 limit for these operations is now 15TB. For more information, see
-g4 sync
 [Migrate from Cloud SQL for PostgreSQL to AlloyDB](https://docs.cloud.google.com/alloydb/docs/migrate-cloud-sql-to-alloydb).
 
 ### Feature

@@ -1,5 +1,20 @@
 # Security Command Center
 
+## 2025-11-11
+
+### Changed
+
+Several features and updates have been made available to Security Command Center in a [federated identity](https://docs.cloud.google.com/iam/docs/federated-identity-supported-services#security-command-center) environment:
+
+* Exporting findings to a CSV file.
+* Exporting findings to Cloud Storage.
+
+The following features aren't supported by identity federation but are being moved to other sections in the documentation:
+
+* Sending feedback in Security Command Center
+* Managing Google SecOps settings.
+
+---
 ## 2025-11-10
 
 ### Feature
@@ -15,10 +30,9 @@ For more information, see [Locations for the Model Armor API](https://docs.cloud
 
 ### Feature
 
-[Data Security Posture Management (DSPM)](https://docs.cloud.google.com/security-command-center/docs/compliance-manager/overview) has
-been released to [General
-Availability](https://cloud.google.com/products#product-launch-stages) for the
-Security Command Center Enterprise tier.
+[Data Security Posture Management (DSPM)](https://docs.cloud.google.com/security-command-center/docs/dspm-data-security) has been released
+to [General Availability](https://cloud.google.com/products#product-launch-stages)
+for the Security Command Center Enterprise tier.
 
 ---
 ## 2025-11-07

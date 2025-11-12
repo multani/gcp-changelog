@@ -1,13 +1,23 @@
 {
   "name": "AlloyDB for PostgreSQL",
   "entries": {
+    "2025-11-11": [
+      {
+        "kind": "Feature",
+        "content": "Improve query performance for partitioned tables and complex queries using\nparallel execution for the `SELECT` portion of an `INSERT INTO ... SELECT`\nquery. For more information,\nsee [Improve select insert performance with parallel select](https://docs.cloud.google.com/alloydb/docs/improve-select-insert-performance-parallel-select).",
+        "summary": {
+          "title": "Parallel Select for Faster Inserts",
+          "summary": "Boost your query performance for partitioned tables and complex queries. This new feature enables parallel execution for the SELECT portion of INSERT INTO ... SELECT statements, significantly speeding up data insertion processes."
+        }
+      }
+    ],
     "2025-11-10": [
       {
         "kind": "Feature",
-        "content": "AlloyDB now supports PostgreSQL 17 for migrating from Cloud SQL for PostgreSQL\nto AlloyDB for PostgreSQL using your Cloud SQL for PostgreSQL backup. The size\nlimit for these operations is now 15TB. For more information, see\ng4 sync\n[Migrate from Cloud SQL for PostgreSQL to AlloyDB](https://docs.cloud.google.com/alloydb/docs/migrate-cloud-sql-to-alloydb).",
+        "content": "AlloyDB now supports PostgreSQL 17 for migrating from Cloud SQL for PostgreSQL\nto AlloyDB for PostgreSQL using your Cloud SQL for PostgreSQL backup. The size\nlimit for these operations is now 15TB. For more information, see\n[Migrate from Cloud SQL for PostgreSQL to AlloyDB](https://docs.cloud.google.com/alloydb/docs/migrate-cloud-sql-to-alloydb).",
         "summary": {
-          "title": "AlloyDB Supports PostgreSQL 17",
-          "summary": "AlloyDB now supports PostgreSQL 17, allowing seamless migration from Cloud SQL for PostgreSQL with backups. The size limit for these migration operations has been increased to 15TB."
+          "title": "AlloyDB supports PostgreSQL 17",
+          "summary": "AlloyDB for PostgreSQL now supports PostgreSQL 17, enabling migration from Cloud SQL for PostgreSQL with a 15TB size limit."
         }
       },
       {

@@ -1,5 +1,13 @@
 # Cloud Run
 
+## 2025-11-11
+
+### Feature
+
+You can set a [task timeout](https://docs.cloud.google.com/run/docs/configuring/task-timeout) up to 168 hours
+(7 days) for Cloud Run jobs. (GA)
+
+---
 ## 2025-11-06
 
 ### Feature

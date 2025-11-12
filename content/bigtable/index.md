@@ -11,7 +11,7 @@ You can use protocol buffer (protobuf) schemas to query individual fields within
 
 ### Feature
 
-You can use Cloud KMS Autokey in the Google Cloud console to automate the creation and use of [customer-managed encryption keys (CMEK)](https://cloud.google.com/bigtable/docs/cmek) in Bigtable clusters.
+You can use Cloud KMS Autokey in the Google Cloud console to automate the creation and use of [customer-managed encryption keys (CMEK)](https://docs.cloud.google.com/bigtable/docs/cmek) in Bigtable clusters.
 
 ---
 ## 2025-10-27
@@ -19,11 +19,11 @@ You can use Cloud KMS Autokey in the Google Cloud console to automate the creati
 ### Feature
 
 Bigtable provides vector and key-value store integrations for LangChain, an LLM orchestration framework.
-For more information, see [Build LLM-powered applications using LangChain](https://cloud.google.com/bigtable/docs/langchain) and [Perform Maximal Marginal Relevance search with LangChain on Bigtable](https://cloud.google.com/bigtable/docs/mmr-vector-search).
+For more information, see [Build LLM-powered applications using LangChain](https://docs.cloud.google.com/bigtable/docs/langchain) and [Perform Maximal Marginal Relevance search with LangChain on Bigtable](https://docs.cloud.google.com/bigtable/docs/mmr-vector-search).
 
 ### Libraries
 
-A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+A weekly digest of client library updates from across the [Cloud SDK](https://docs.cloud.google.com/sdk).
 
 ### Java
 
@@ -62,14 +62,14 @@ A weekly digest of client library updates from across the [Cloud SDK](https://cl
 
 ### Feature
 
-You can [save queries](https://cloud.google.com/bigtable/docs/manage-data-using-console#save-query) and then [view and manage](https://cloud.google.com/bigtable/docs/manage-data-using-console#view_and_manage_saved_queries) the saved queries in Bigtable Studio. This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+You can [save queries](https://docs.cloud.google.com/bigtable/docs/manage-data-using-console#save-query) and then [view and manage](https://docs.cloud.google.com/bigtable/docs/manage-data-using-console#view_and_manage_saved_queries) the saved queries in Bigtable Studio. This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
 
 ---
 ## 2025-10-13
 
 ### Libraries
 
-A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+A weekly digest of client library updates from across the [Cloud SDK](https://docs.cloud.google.com/sdk).
 
 ### Java
 

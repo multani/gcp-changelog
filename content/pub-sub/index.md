@@ -4,7 +4,7 @@
 
 ### Libraries
 
-A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+A weekly digest of client library updates from across the [Cloud SDK](https://docs.cloud.google.com/sdk).
 
 ### Python
 
@@ -27,7 +27,7 @@ A weekly digest of client library updates from across the [Cloud SDK](https://cl
 
 ### Libraries
 
-A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+A weekly digest of client library updates from across the [Cloud SDK](https://docs.cloud.google.com/sdk).
 
 ### Java
 
@@ -58,7 +58,7 @@ A weekly digest of client library updates from across the [Cloud SDK](https://cl
 
 ### Libraries
 
-A weekly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+A weekly digest of client library updates from across the [Cloud SDK](https://docs.cloud.google.com/sdk).
 
 ### Java
 

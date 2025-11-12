@@ -1,5 +1,43 @@
 # Compute Engine
 
+## 2025-11-10
+
+### Issue
+
+The Windows guest agent identifies administrator accounts and groups using
+string matching. Therefore, credential management features only function
+correctly when you use English language names for user accounts and groups,
+for example, `Administrators`. If you use non-English language names, credential
+management features such as generating or resetting passwords might not function
+as expected. For more information about managing Windows user accounts, see
+[Manage accounts and credentials on Windows VMs](https://docs.cloud.google.com/compute/docs/instances/windows/generating-credentials) and
+[Known issues for Windows VM instances](https://docs.cloud.google.com/compute/docs/troubleshooting/known-issues#windows-non-english-credentials).
+
+### Feature
+
+**Generally available**: Two new features that provide better observability for
+Compute Engine reservations and deeper insights into their capacity usage and
+costs:
+
+* A new `consumedReservation` field in the VM instance details showing the
+  full resource name of the consumed reservation, providing reservation
+  consumption status on VMs and better visibility for resource management and
+  troubleshooting.
+* Two new system labels in the BigQuery billing export for instances
+  consuming a reservation and the unused portion of a reservation, providing
+  more detailed cost analysis:
+  + `compute.googleapis.com/reservation_name`: the short name of the
+    Compute Engine reservation.
+  + `compute.googleapis.com/reservation_project_id`: the Project ID owning
+    the Compute Engine reservation.
+
+For more information, see the following:
+
+* [View consumption history for a given instance](https://docs.cloud.google.com/billing/docs/how-to/bq-examples#view_consumption_for_a_given_instance).
+* [Analyze usage distribution per project for a shared reservation](https://docs.cloud.google.com/billing/docs/how-to/bq-examples#analyze_usage_distribution_for_a_given_reservation).
+* [List all the instances consuming a reservation](https://docs.cloud.google.com/billing/docs/how-to/bq-examples#list_all_the_instances_consuming_a_reservation).
+
+---
 ## 2025-11-07
 
 ### Feature
@@ -8,7 +46,7 @@
 Turin processor and
 [Titanium I/O offload processing](https://cloud.google.com/titanium).
 N4D machine types have up to 96 vCPUs and up to 768 GB of DDR5 memory,
-and a max-boost frequency of 4.1 GHz. They are offered in predefined, and
+and a max-boost frequency of 4.1 GHz. They are offered in predefined and
 custom machine types and are available in select
 [regions and zones](https://docs.cloud.google.com/compute/docs/regions-zones).
 
@@ -21,32 +59,24 @@ networking bandwidth and Hyperdisk storage. For more information, see
 
 ### Feature
 
-**Preview**: N4A VMs, powered by Google's next generation Axion processor built
-on the Arm Neoverse N3 platform are in Preview. N4A provides machine types of up
-to 64 vCPUs and 512 GB of DDR5 memory. N4A is available in standard, high-mem,
-high-cpu, and custom machine types with extended memory, with up to 50 Gbps of
-standard networking. These machine types are available in limited
-[regions and zones](https://docs.cloud.google.com/compute/docs/regions-zones). For more information, see
-[N4A machine series](https://docs.cloud.google.com/compute/docs/general-purpose-machines#n4a_series).
+**Preview**: N4A VMs are powered by Google's next-generation Axion processor, which is built on the Arm Neoverse N3 platform. N4A includes machine types with up to 64 vCPUs and 512 GB of DDR5 memory. N4A is available as standard, high-mem, high-cpu, and custom machine types with extended memory and up to 50 Gbps of standard networking. These machine types are available in limited [regions and zones](https://docs.cloud.google.com/compute/docs/regions-zones). For more information, see [N4A machine series](https://docs.cloud.google.com/compute/docs/general-purpose-machines#n4a_series).
 
-To access these VMs, complete
-[this form](https://docs.google.com/forms/d/e/1FAIpQLSddzdVNnkbi5oKB3DURruA28S9MdxdKcvxwuheqojGHCldLRw/viewform),
-or speak to your account team.
+To access these VMs, complete [this access request form](https://docs.google.com/forms/d/e/1FAIpQLSddzdVNnkbi5oKB3DURruA28S9MdxdKcvxwuheqojGHCldLRw/viewform), or speak to your account team.
 
 ---
 ## 2025-11-04
 
 ### Feature
 
-**Generally available**: You can verify which reservation a VM is consuming and
-view a list of VMs consuming a reservation. For more information,
+**Generally available**: You can verify which reservation a VM consumes and
+view a list of VMs that consume a reservation. For more information,
 see [View reservation consumption](https://docs.cloud.google.com/compute/docs/instances/reservations-view#view_reservation_consumption).
 
 ### Feature
 
 **Public preview**: You can configure a regional managed instance group (MIG) to
-allow a VM repair in an alternate zone when the MIG can't repair the VM in its
-original zone. Repairing a VM in an alternate zone can help to improve your
+repair a VM in an alternate zone when the MIG can't repair the VM in its
+original zone. Repairing a VM in an alternate zone can improve your
 application's resiliency and resource obtainability. For more information, see
 [Repair a VM in an alternate zone](https://docs.cloud.google.com/compute/docs/instance-groups/repair-vm-in-alternate-zone).
 
@@ -55,11 +85,10 @@ application's resiliency and resource obtainability. For more information, see
 
 ### Feature
 
-If ensuring time synchronization with very high accuracy and monitoring the
-accuracy of your time synchronization are important goals for your
-Compute Engine instances, you can sync your VM's clock with its host server's
-clock by using `chrony` and `ptp_kvm`. This configuration is designed to achieve
-accuracy within 1 ms for supported setups. For more information, see
+If you need to synchronize time with high accuracy and monitor its accuracy for
+your Compute Engine instances, you can sync your VM clock with its host
+server clock using `chrony` and `ptp_kvm`. This configuration provides accuracy
+within 1 ms for supported setups. For more information, see
 [Configure accurate time for Compute Engine VMs](https://docs.cloud.google.com/compute/docs/instances/time-synchronization).
 
 ---
@@ -79,7 +108,7 @@ Version `20251030.02` includes fixes for the plugin-based architecture that is u
 ### Feature
 
 **Generally available**: Dynamic NICs let you add or remove network interfaces
-to or from an instance without having to restart or recreate the instance.
+to or from an instance without restarting or recreating the instance.
 
 You can also use Dynamic NICs when you need more network interfaces. The
 maximum number of vNICs for most machine types in Google Cloud is 10; however,
@@ -96,7 +125,7 @@ For more information, see the following:
 
 ### Feature
 
-**Generally available**: You can create managed instance groups (MIGs) comprised
+**Generally available**: You can create managed instance groups (MIGs) that consist
 of IPv6-only VM instances.
 
 For more information, see
@@ -112,19 +141,18 @@ To resolve this issue, guest agent version `20251011.00` is now available for Wi
 
 ### Changed
 
-The kernel `dist-tag` that supports the Rocky Linux Optimized and Accelerator images on Compute Engine is being updated from `elX_ycld_next` to `elX_y_ciq` as part of the consolidation of CIQ's kernel trees. There are no changes to Secure Boot or GPG signing keys.
+As part of the consolidation of CIQ's kernel trees, the kernel `dist-tag` that supports the Rocky Linux Optimized and Accelerator images on Compute Engine is changing from `elX_ycld_next` to `elX_y_ciq`. There are no changes to Secure Boot or GPG signing keys.
 
-For example, `6.12.0-55.32.1.el10_0cld_next.2.1` to `6.12.0-55.39.1.el10_0_ciq.2.1`, where the `cld_next` tag is swapped with `ciq`.
+For example, `6.12.0-55.32.1.el10_0cld_next.2.1` changes to `6.12.0-55.39.1.el10_0_ciq.2.1`, where `ciq` replaces the `cld_next` tag.
 
 This change affects the Rocky Linux 8, 9, and 10 optimized and accelerator images in an upcoming kernel update over the next month. The major version 8 and 9 kernels now include FIPS 140-3 patches as part of CIQ's ongoing FIPS 140-3 validation efforts for Rocky Linux. These patches have no effect if FIPS mode is not enabled. There are no code changes to the major version 10 kernel.
 
-The kernel source tree is available at CIQ's [kernel-src-tree](https://github.com/ctrliq/kernel-src-tree) GitHub repository.
+You can find the kernel source tree in the CIQ [kernel-src-tree](https://github.com/ctrliq/kernel-src-tree) GitHub repository.
 
 ### Feature
 
-**Generally available**: You can use future reservations to request to reserve
-capacity starting on a specific date up to one year in the future. For more
-information, see
+**Generally available**: Future reservations let you reserve capacity for a
+specific date up to one year in advance. For more information, see
 [About future reservation requests](https://docs.cloud.google.com/ai-hypercomputer/docs/reserve-capacity).
 
 ---
@@ -140,8 +168,7 @@ For more information about the plugin-based architecture, see
 
 ### Security
 
-A vulnerability affecting AMD Zen 5 processors (Turin) was discovered and is
-being addressed. For more information, see the
+A vulnerability affecting AMD Zen 5 processors (Turin) is being addressed. For more information, see the
 [GCP-2025-058 security bulletin](https://docs.cloud.google.com/compute/docs/security-bulletins#gcp-2025-058).
 
 ### Feature
@@ -151,11 +178,11 @@ being addressed. For more information, see the
 is designed for graphics-intensive workloads such as NVIDIA Omniverse simulations,
 video transcoding, and virtual desktops. The G4 machine series also provides a
 cost-effective solution for single-host inference and model tuning.
-The G4 machine series is now available in the following regions and zones:
+The G4 machine series is available in the following regions and zones:
 
 * APAC
   + Jurong West, Singapore: `asia-southeast1-b`
-* Europe:
+* Europe
   + Eemshaven, Netherlands: `europe-west4-a`
 * North America
   + Council Bluffs, Iowa: `us-central1-b`
@@ -170,30 +197,27 @@ To get started with G4 machine types, see
 
 ### Feature
 
-**Generally Available**: You can now access the Compute Engine alpha API at the
+**Generally Available**: You can use the Compute Engine alpha API at the
 project level through a self-service process. By enabling the alpha API, you can
 use the Google Cloud console, Google Cloud CLI, API, and Terraform to view and manage
-Preview features. For more information, see [Use the Compute Engine alpha API](https://docs.cloud.google.com/compute/docs/reference/rest/alpha).
+preview features. For more information, see [Use the Compute Engine alpha API](https://docs.cloud.google.com/compute/docs/reference/rest/alpha).
 
 ---
 ## 2025-10-17
 
 ### Feature
 
-**Generally Available**: You can now access the Compute Engine alpha API at the
+**Generally Available**: You can use the Compute Engine alpha API at the
 project level through a self-service process. By enabling the alpha API, you can
 use the Google Cloud console, Google Cloud CLI, API, and Terraform to view and manage
-Preview features. For more information, see [Use the Compute Engine alpha API](https://docs.cloud.google.com/compute/docs/reference/rest/alpha).
+preview features. For more information, see [Use the Compute Engine alpha API](https://docs.cloud.google.com/compute/docs/reference/rest/alpha).
 
 ---
 ## 2025-10-16
 
 ### Changed
 
-Starting with SUSE Linux Enterprise Server (SLES) 16, including variants for SAP,
-the default file system for the root partition (`/`) is [Btrfs](https://en.wikipedia.org/wiki/Btrfs)
-changing from the previous default of XFS. For more information, see [File systems in SLES](https://documentation.suse.com/sles/15-SP7/html/SLES-all/cha-filesystems.html#sec-filesystems-major-btrfs-suse)
-in the SUSE documentation.
+Starting with SUSE Linux Enterprise Server (SLES) 16, including variants for SAP, the default file system for the root partition (`/`) is [Btrfs](https://en.wikipedia.org/wiki/Btrfs), which replaces the previous default of XFS. For more information, see [File systems in SLES](https://documentation.suse.com/sles/15-SP7/html/SLES-all/cha-filesystems.html#sec-filesystems-major-btrfs-suse) in the SUSE documentation.
 
 ---
 ## 2025-10-06

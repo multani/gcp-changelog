@@ -4,7 +4,7 @@
 
 ### Libraries
 
-A monthly digest of client library updates from across the [Cloud SDK](https://cloud.google.com/sdk).
+A monthly digest of client library updates from across the [Cloud SDK](https://docs.cloud.google.com/sdk).
 
 ### Java
 
@@ -101,14 +101,14 @@ A monthly digest of client library updates from across the [Cloud SDK](https://c
 
 ### Feature
 
-[Schema object drop protection](https://cloud.google.com/spanner/docs/schema-drop-protection) is now generally available. This feature protects schema objects such as tables, indexes, and columns from accidental deletion.
+[Schema object drop protection](https://docs.cloud.google.com/spanner/docs/schema-drop-protection) is now generally available. This feature protects schema objects such as tables, indexes, and columns from accidental deletion.
 
 ---
 ## 2025-10-20
 
 ### Feature
 
-You can now use the GoogleSQL [`ML.PREDICT` function](https://cloud.google.com/spanner/docs/reference/standard-sql/ml-functions#mlpredict) to convert your natural language query text into an embedding and perform approximate nearest neighbors (ANN) vector search.
+You can now use the GoogleSQL [`ML.PREDICT` function](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/ml-functions#mlpredict) to convert your natural language query text into an embedding and perform approximate nearest neighbors (ANN) vector search.
 
 ---
 ## 2025-10-02

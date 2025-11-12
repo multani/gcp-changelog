@@ -1,5 +1,21 @@
 # BigQuery
 
+## 2025-11-11
+
+### Feature
+
+You can now use the
+[interactive SQL translator](https://docs.cloud.google.com/bigquery/docs/interactive-sql-translator), the
+[translation API](https://docs.cloud.google.com/bigquery/docs/api-sql-translator), and the
+[batch SQL translator](https://docs.cloud.google.com/bigquery/docs/batch-sql-translator) to translate the
+following SQL dialects into GoogleSQL:
+
+* Apache Impala SQL
+* GoogleSQL (BigQuery)
+
+These features are in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2025-11-10
 
 ### Feature

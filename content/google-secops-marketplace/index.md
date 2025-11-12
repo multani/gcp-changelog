@@ -1,14 +1,126 @@
 # Google SecOps Marketplace
 
-## 2025-11-05
+## 2025-11-12
 
 ### Feature
 
-**SentinelOneV2**: Version 43.0
+New **Azure Monitor** integration
+
+### Feature
+
+**Siemplify**: Version 95.0
 
 * The following new action has been added:
 
-  + **Get Site Agents**
+  + **Get Case Alerts**
+
+### Changed
+
+The following integrations are now GUS recommended:
+
+* **CrowdStrike Falcon**: Version 69.0
+* **Wiz**: Version .0
+* **Fortigate**: Version 16.0
+
+### Changed
+
+Updated the dependency files in the following integrations:
+
+* **Microsoft Graph Mail**: Version 33.0
+* **Microsoft Graph Mail Delegated**: Version 10.0
+
+### Changed
+
+Updated action definitions to meet the new requirements of IDE in the following
+integrations:
+
+Updated Integrations (45)
+
+* **Active Directory**: Version 38.0
+* **AlienVault USM Appliance**: Version 22.0
+* **AlienVault USM Anywhere**: Version 32.0
+* **Area1**: Version 6.0
+* **BulkWhoIs**: Version 16.0
+* **CA Service Desk Manager**: Version 23.0
+* **Carbon Black Response**: Version 35.0
+* **Case Federation**: Version 6.0
+* **ConnectWise**: Version 19.0
+* **CSV**: Version 36.0
+* **DeepSight**: Version 9.0
+* **DomainTools**: Version 9.0
+* **Email V2**: Version 36.0
+* **Endgame**: Version 11.0
+* **Exchange**: Version 116.0
+* **F5 Big IQ**: Version 6.0
+* **FileOperation**: Version 12.0
+* **HTTP**: Version 12.0
+* **IntSights**: Version 23.0
+* **Jira**: Version 49.0
+* **JuniperVSRX**: Version 8.0
+* **McAfee EPO**: Version 17.0
+* **McAfee NSM**: Version 8.0
+* **Microsoft Graph Security**: Version 23.0
+* **MSSQL**: Version 17.0
+* **Palo Alto Next Gen Firewall**: Version 26.0
+* **PhishRod**: Version 4.0
+* **RSA NetWitness**: Version 17.0
+* **Runners**: Version 5.0
+* **Salesforce**: Version 12.0
+* **SCC Enterprise**: Version 18.0
+* **ServiceNow**: Version 59.0
+* **Siemplify**: Version 95.0
+* **SSH**: Version 18.0
+* **Symantec Endpoint Protection**: Version 18.0
+* **Symantec Endpoint Protection 12**: Version 13.0
+* **Symantec ICDX**: Version 7.0
+* **Tenable Security Center**: Version 18.0
+* **Twilio**: Version 14.0
+* **VSphere**: Version 8.0
+* **VirusTotal**: Version 40.0
+* **WildFire**: Version 8.0
+* **WMI**: Version 10.0
+* **XForce**: Version .0
+* **Zabbix**: Version 14.0
+* **Zendesk**: Version 10.0
+
+### Changed
+
+**Cybereason**: Version 21.0
+
+* **Integration**: Added ability to provide a CA Certificate file as part of the
+  configuration.
+
+### Changed
+
+**Google Security Command Center**: Version 14.0
+
+* Added the ability to ingest Toxic Combinations and Chokepoints in the
+  following connector:
+
+  + **Google Security Command Center - Findings Connector**
+
+### Changed
+
+**Google Chronicle**: Version 67.0
+
+* Updated curated detections processing logic in the following action:
+
+  + **Get Detection Details**
+
+### Changed
+
+**CrowdStrike Falcon**: Version 69.0
+
+* Refactored the pagination and filtering mechanism in the following actions:
+
+  + **List Uploaded IOCs**
+  + **List Hosts**
+* Added support for wildcards to `File Paths to Scan` in the following action:
+
+  + **On-Demand Scan**
+
+---
+## 2025-11-05
 
 ### Feature
 
@@ -55,8 +167,49 @@
 
   + **Search Logs**
 
+### Feature
+
+**SentinelOneV2**: Version 43.0
+
+* The following new action has been added:
+
+  + **Get Site Agents**
+
 ---
 ## 2025-10-29
+
+### Changed
+
+**CSV**: Version 35.0
+
+* Updated file path processing logic in the following connector:
+
+  + **CSV Connector**
+
+### Changed
+
+**CrowdStrike Falcon**: Version 68.0
+
+* Update the following action to check if there is an existing identical running
+  scan for a provided hostname before creating a new one:
+
+  + **On-Demand Scan**
+
+### Changed
+
+**Exchange**: Version 115.0
+
+* Updated the file management logic in the following action:
+
+  + **Download Attachments**
+
+### Changed
+
+**Microsoft Graph Mail**: Version 32.0
+
+* Updated the file management logic in the following action:
+
+  + **Download Attachments from Email**
 
 ### Changed
 
@@ -96,39 +249,6 @@
 
   + **Add to Whitelist**
   + **Lookup Entity**
-
-### Changed
-
-**CSV**: Version 35.0
-
-* Updated file path processing logic in the following connector:
-
-  + **CSV Connector**
-
-### Changed
-
-**CrowdStrike Falcon**: Version 68.0
-
-* Update the following action to check if there is an existing identical running
-  scan for a provided hostname before creating a new one:
-
-  + **On-Demand Scan**
-
-### Changed
-
-**Exchange**: Version 115.0
-
-* Updated the file management logic in the following action:
-
-  + **Download Attachments**
-
-### Changed
-
-**Microsoft Graph Mail**: Version 32.0
-
-* Updated the file management logic in the following action:
-
-  + **Download Attachments from Email**
 
 ---
 ## 2025-10-22

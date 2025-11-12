@@ -1,5 +1,13 @@
 # Access Approval
 
+## 2025-10-31
+
+### Feature
+
+Cloud Scheduler is generally available
+[(GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-10-29
 
 ### Feature

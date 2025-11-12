@@ -1,5 +1,15 @@
 # NetApp Volumes
 
+## 2025-11-12
+
+### Feature
+
+Google Cloud NetApp Volumes supports the all-squash feature for NFS exports.
+This option lets you enhance security by mapping all client user IDs to a single
+anonymous user ID (`UID=65534`). For more information, see [User ID
+squashing](https://docs.cloud.google.com/netapp/volumes/docs/connect-clients/connect-nfs-clients#user_id_squashing).
+
+---
 ## 2025-11-06
 
 ### Feature

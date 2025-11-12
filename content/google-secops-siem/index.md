@@ -1,5 +1,255 @@
 # Google SecOps SIEM
 
+## 2025-11-12
+
+### Feature
+
+New **Azure Monitor** integration
+
+### Feature
+
+**Siemplify**: Version 95.0
+
+* The following new action has been added:
+
+  + **Get Case Alerts**
+
+### Changed
+
+The following integrations are now GUS recommended:
+
+* **CrowdStrike Falcon**: Version 69.0
+* **Wiz**: Version .0
+* **Fortigate**: Version 16.0
+
+### Changed
+
+Updated the dependency files in the following integrations:
+
+* **Microsoft Graph Mail**: Version 33.0
+* **Microsoft Graph Mail Delegated**: Version 10.0
+
+### Changed
+
+Updated action definitions to meet the new requirements of IDE in the following
+integrations:
+
+Updated Integrations (45)
+
+* **Active Directory**: Version 38.0
+* **AlienVault USM Appliance**: Version 22.0
+* **AlienVault USM Anywhere**: Version 32.0
+* **Area1**: Version 6.0
+* **BulkWhoIs**: Version 16.0
+* **CA Service Desk Manager**: Version 23.0
+* **Carbon Black Response**: Version 35.0
+* **Case Federation**: Version 6.0
+* **ConnectWise**: Version 19.0
+* **CSV**: Version 36.0
+* **DeepSight**: Version 9.0
+* **DomainTools**: Version 9.0
+* **Email V2**: Version 36.0
+* **Endgame**: Version 11.0
+* **Exchange**: Version 116.0
+* **F5 Big IQ**: Version 6.0
+* **FileOperation**: Version 12.0
+* **HTTP**: Version 12.0
+* **IntSights**: Version 23.0
+* **Jira**: Version 49.0
+* **JuniperVSRX**: Version 8.0
+* **McAfee EPO**: Version 17.0
+* **McAfee NSM**: Version 8.0
+* **Microsoft Graph Security**: Version 23.0
+* **MSSQL**: Version 17.0
+* **Palo Alto Next Gen Firewall**: Version 26.0
+* **PhishRod**: Version 4.0
+* **RSA NetWitness**: Version 17.0
+* **Runners**: Version 5.0
+* **Salesforce**: Version 12.0
+* **SCC Enterprise**: Version 18.0
+* **ServiceNow**: Version 59.0
+* **Siemplify**: Version 95.0
+* **SSH**: Version 18.0
+* **Symantec Endpoint Protection**: Version 18.0
+* **Symantec Endpoint Protection 12**: Version 13.0
+* **Symantec ICDX**: Version 7.0
+* **Tenable Security Center**: Version 18.0
+* **Twilio**: Version 14.0
+* **VSphere**: Version 8.0
+* **VirusTotal**: Version 40.0
+* **WildFire**: Version 8.0
+* **WMI**: Version 10.0
+* **XForce**: Version .0
+* **Zabbix**: Version 14.0
+* **Zendesk**: Version 10.0
+
+### Changed
+
+**Cybereason**: Version 21.0
+
+* **Integration**: Added ability to provide a CA Certificate file as part of the
+  configuration.
+
+### Changed
+
+**Google Security Command Center**: Version 14.0
+
+* Added the ability to ingest Toxic Combinations and Chokepoints in the
+  following connector:
+
+  + **Google Security Command Center - Findings Connector**
+
+### Changed
+
+**Google Chronicle**: Version 67.0
+
+* Updated curated detections processing logic in the following action:
+
+  + **Get Detection Details**
+
+### Changed
+
+**CrowdStrike Falcon**: Version 69.0
+
+* Refactored the pagination and filtering mechanism in the following actions:
+
+  + **List Uploaded IOCs**
+  + **List Hosts**
+* Added support for wildcards to `File Paths to Scan` in the following action:
+
+  + **On-Demand Scan**
+
+### Feature
+
+**Use the Triage Agent to investigate alerts**
+
+You can now use Triage Agent, an AI-powered investigation assistant, to
+analyze alerts in Google SecOps. Triage Agent determines if an
+alert is a true or false positive, provides a summarized explanation for its
+conclusion, and suggests next steps for further investigation.
+
+You can trigger investigations manually or have them run automatically on
+supported alert types. Each investigation produces a detailed report that includes
+the agent's disposition, a summary of its findings, and a timeline of the analysis.
+
+For more details, see [Use Triage Agent to investigate alerts](https://docs.cloud.google.com/chronicle/docs/secops/triage-agent).
+
+### Announcement
+
+**New parser documentation now available**
+
+New parser documentation is available to help you ingest and normalize logs from the following sources:
+
+* [Collect Absolute Secure Endpoint logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/absolute-se)
+* [Collect AIDE (Advanced Intrusion Detection Environment) logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aide)
+* [Collect Akamai Enterprise Application Access logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/akamai-eaa)
+* [Collect Apache Hadoop logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/apache-hadoop)
+* [Collect Armis Vulnerabilities logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/armis-vulnerabilities)
+* [Collect Array Networks SSL VPN logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/arraynetworks-vpn)
+* [Collect Aruba IPS logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aruba-ips)
+* [Collect Atlassian Confluence logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/atlassian-confluence)
+* [Collect Cisco AMP for Endpoints logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-amp-for-endpoints)
+* [Collect Cisco APIC logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-apic)
+* [Collect Cisco Application Centric Infrastructure (ACI) logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-aci)
+* [Collect Cisco CallManager logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-callmanager)
+* [Collect Cisco CloudLock CASB logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-cloudlock-casb)
+* [Collect Cisco DNA Center Platform logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-dnac)
+* [Collect Cisco eStreamer logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-estreamer)
+* [Collect Cribl Stream logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cribl-stream)
+* [Collect CrowdStrike FileVantage logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cs-filevantage)
+* [Collect CrowdStrike IDP Services logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cs-idp)
+* [Collect Cynet 360 AutoXDR logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cynet360-autoxdr)
+* [Collect Digital Shadows SearchLight logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/digital-shadows-searchlight)
+* [Collect Duo Telephony logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/duo-telephony)
+* [Collect Edgio WAF logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/edgio-waf)
+* [Collect Elastic Auditbeat logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elastic-auditbeat)
+* [Collect Elastic Packet Beats logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elastic-packetbeats)
+* [Collect Elasticsearch logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elasticsearch)
+* [Collect Entrust nShield HSM audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/entrust-nshield-hsm-audit)
+* [Collect Imperva Advanced Bot Protection logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-abp)
+* [Collect Imperva Attack Analytics logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-aa)
+* [Collect Imperva Audit Trail logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-audit-trail)
+* [Collect Imperva CEF logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-cef)
+* [Collect Imperva Data Risk Analytics (DRA) logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-dra)
+* [Collect Imperva Database logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-db)
+* [Collect Imperva FlexProtect logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-flexprotect)
+* [Collect Imperva SecureSphere Management logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-ssm)
+* [Collect Kiteworks (formally Accellion) logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/accellion)
+* [Collect Proofpoint Emerging Threats Pro IOC logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/proofpoint-etp-ioc)
+* [Collect ServiceNow audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/servicenow-audit)
+* [Collect Team Cymru Scout Threat Intelligence data](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/team-cymru-scout-ti)
+* [Collect URLScan IO logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/urlscan-io)
+* [Collect Uptycs EDR logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/uptycs-edr)
+* [Collect VanDyke VShell SFTP logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vandyke-vshell-sftp)
+* [Collect Zendesk CRM logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zendesk-crm)
+* [Collect ZeroFox Platform logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zerofox-platform)
+
+### Feature
+
+**Use the Triage Agent to investigate alerts**
+
+You can now use Triage Agent, an AI-powered investigation assistant, to
+analyze alerts in Google SecOps. Triage Agent determines if an
+alert is a true or false positive, provides a summarized explanation for its
+conclusion, and suggests next steps for further investigation.
+
+You can trigger investigations manually or have them run automatically on
+supported alert types. Each investigation produces a detailed report that includes
+the agent's disposition, a summary of its findings, and a timeline of the analysis.
+
+For more details, see [Use Triage Agent to investigate alerts](https://docs.cloud.google.com/chronicle/docs/secops/triage-agent).
+
+### Announcement
+
+**New parser documentation now available**
+
+New parser documentation is available to help you ingest and normalize logs from the following sources:
+
+* [Collect Absolute Secure Endpoint logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/absolute-se)
+* [Collect AIDE (Advanced Intrusion Detection Environment) logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aide)
+* [Collect Akamai Enterprise Application Access logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/akamai-eaa)
+* [Collect Apache Hadoop logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/apache-hadoop)
+* [Collect Armis Vulnerabilities logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/armis-vulnerabilities)
+* [Collect Array Networks SSL VPN logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/arraynetworks-vpn)
+* [Collect Aruba IPS logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aruba-ips)
+* [Collect Atlassian Confluence logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/atlassian-confluence)
+* [Collect Cisco AMP for Endpoints logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-amp-for-endpoints)
+* [Collect Cisco APIC logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-apic)
+* [Collect Cisco Application Centric Infrastructure (ACI) logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-aci)
+* [Collect Cisco CallManager logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-callmanager)
+* [Collect Cisco CloudLock CASB logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-cloudlock-casb)
+* [Collect Cisco DNA Center Platform logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-dnac)
+* [Collect Cisco eStreamer logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-estreamer)
+* [Collect Cribl Stream logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cribl-stream)
+* [Collect CrowdStrike FileVantage logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cs-filevantage)
+* [Collect CrowdStrike IDP Services logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cs-idp)
+* [Collect Cynet 360 AutoXDR logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cynet360-autoxdr)
+* [Collect Digital Shadows SearchLight logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/digital-shadows-searchlight)
+* [Collect Duo Telephony logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/duo-telephony)
+* [Collect Edgio WAF logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/edgio-waf)
+* [Collect Elastic Auditbeat logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elastic-auditbeat)
+* [Collect Elastic Packet Beats logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elastic-packetbeats)
+* [Collect Elasticsearch logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elasticsearch)
+* [Collect Entrust nShield HSM audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/entrust-nshield-hsm-audit)
+* [Collect Imperva Advanced Bot Protection logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-abp)
+* [Collect Imperva Attack Analytics logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-aa)
+* [Collect Imperva Audit Trail logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-audit-trail)
+* [Collect Imperva CEF logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-cef)
+* [Collect Imperva Data Risk Analytics (DRA) logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-dra)
+* [Collect Imperva Database logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-db)
+* [Collect Imperva FlexProtect logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-flexprotect)
+* [Collect Imperva SecureSphere Management logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-ssm)
+* [Collect Kiteworks (formally Accellion) logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/accellion)
+* [Collect Proofpoint Emerging Threats Pro IOC logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/proofpoint-etp-ioc)
+* [Collect ServiceNow audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/servicenow-audit)
+* [Collect Team Cymru Scout Threat Intelligence data](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/team-cymru-scout-ti)
+* [Collect URLScan IO logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/urlscan-io)
+* [Collect Uptycs EDR logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/uptycs-edr)
+* [Collect VanDyke VShell SFTP logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vandyke-vshell-sftp)
+* [Collect Zendesk CRM logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zendesk-crm)
+* [Collect ZeroFox Platform logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zerofox-platform)
+
+---
 ## 2025-11-10
 
 ### Feature
@@ -70,14 +320,6 @@ The new [MITRE ATT&CK coverage dashboard](https://docs.cloud.google.com/chronicl
 
 ### Feature
 
-**SentinelOneV2**: Version 43.0
-
-* The following new action has been added:
-
-  + **Get Site Agents**
-
-### Feature
-
 **Palo Alto XDR**: Version 20.0
 
 * The following new action has been added:
@@ -120,6 +362,14 @@ The new [MITRE ATT&CK coverage dashboard](https://docs.cloud.google.com/chronicl
 * Updated search processing logic in the following action:
 
   + **Search Logs**
+
+### Feature
+
+**SentinelOneV2**: Version 43.0
+
+* The following new action has been added:
+
+  + **Get Site Agents**
 
 ---
 ## 2025-11-02
@@ -224,6 +474,39 @@ For more information, see
 
 ### Changed
 
+**CSV**: Version 35.0
+
+* Updated file path processing logic in the following connector:
+
+  + **CSV Connector**
+
+### Changed
+
+**CrowdStrike Falcon**: Version 68.0
+
+* Update the following action to check if there is an existing identical running
+  scan for a provided hostname before creating a new one:
+
+  + **On-Demand Scan**
+
+### Changed
+
+**Exchange**: Version 115.0
+
+* Updated the file management logic in the following action:
+
+  + **Download Attachments**
+
+### Changed
+
+**Microsoft Graph Mail**: Version 32.0
+
+* Updated the file management logic in the following action:
+
+  + **Download Attachments from Email**
+
+### Changed
+
 **Microsoft Graph Mail Delegated**: Version 9.0
 
 * Updated the file management logic in the following action:
@@ -260,39 +543,6 @@ For more information, see
 
   + **Add to Whitelist**
   + **Lookup Entity**
-
-### Changed
-
-**CSV**: Version 35.0
-
-* Updated file path processing logic in the following connector:
-
-  + **CSV Connector**
-
-### Changed
-
-**CrowdStrike Falcon**: Version 68.0
-
-* Update the following action to check if there is an existing identical running
-  scan for a provided hostname before creating a new one:
-
-  + **On-Demand Scan**
-
-### Changed
-
-**Exchange**: Version 115.0
-
-* Updated the file management logic in the following action:
-
-  + **Download Attachments**
-
-### Changed
-
-**Microsoft Graph Mail**: Version 32.0
-
-* Updated the file management logic in the following action:
-
-  + **Download Attachments from Email**
 
 ### Feature
 
@@ -572,6 +822,10 @@ Updated dependencies in the following integrations:
 * Added ability to scan domains and IPs in the following action:
 
   + **URL Check**
+
+### Deprecated
+
+The Netskope v1 API feed has been deprecated by Netskope. If you are using the Netskope REST API v1 with Google SecOps, you must switch to the Netskope REST API v2.
 
 ### Deprecated
 

@@ -1,5 +1,58 @@
 # Google SecOps
 
+## 2025-11-12
+
+### Announcement
+
+**New parser documentation now available**
+
+New parser documentation is available to help you ingest and normalize logs from the following sources:
+
+* [Collect Absolute Secure Endpoint logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/absolute-se)
+* [Collect AIDE (Advanced Intrusion Detection Environment) logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aide)
+* [Collect Akamai Enterprise Application Access logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/akamai-eaa)
+* [Collect Apache Hadoop logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/apache-hadoop)
+* [Collect Armis Vulnerabilities logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/armis-vulnerabilities)
+* [Collect Array Networks SSL VPN logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/arraynetworks-vpn)
+* [Collect Aruba IPS logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aruba-ips)
+* [Collect Atlassian Confluence logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/atlassian-confluence)
+* [Collect Cisco AMP for Endpoints logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-amp-for-endpoints)
+* [Collect Cisco APIC logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-apic)
+* [Collect Cisco Application Centric Infrastructure (ACI) logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-aci)
+* [Collect Cisco CallManager logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-callmanager)
+* [Collect Cisco CloudLock CASB logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-cloudlock-casb)
+* [Collect Cisco DNA Center Platform logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-dnac)
+* [Collect Cisco eStreamer logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-estreamer)
+* [Collect Cribl Stream logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cribl-stream)
+* [Collect CrowdStrike FileVantage logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cs-filevantage)
+* [Collect CrowdStrike IDP Services logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cs-idp)
+* [Collect Cynet 360 AutoXDR logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cynet360-autoxdr)
+* [Collect Digital Shadows SearchLight logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/digital-shadows-searchlight)
+* [Collect Duo Telephony logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/duo-telephony)
+* [Collect Edgio WAF logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/edgio-waf)
+* [Collect Elastic Auditbeat logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elastic-auditbeat)
+* [Collect Elastic Packet Beats logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elastic-packetbeats)
+* [Collect Elasticsearch logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elasticsearch)
+* [Collect Entrust nShield HSM audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/entrust-nshield-hsm-audit)
+* [Collect Imperva Advanced Bot Protection logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-abp)
+* [Collect Imperva Attack Analytics logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-aa)
+* [Collect Imperva Audit Trail logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-audit-trail)
+* [Collect Imperva CEF logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-cef)
+* [Collect Imperva Data Risk Analytics (DRA) logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-dra)
+* [Collect Imperva Database logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-db)
+* [Collect Imperva FlexProtect logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-flexprotect)
+* [Collect Imperva SecureSphere Management logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-ssm)
+* [Collect Kiteworks (formally Accellion) logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/accellion)
+* [Collect Proofpoint Emerging Threats Pro IOC logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/proofpoint-etp-ioc)
+* [Collect ServiceNow audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/servicenow-audit)
+* [Collect Team Cymru Scout Threat Intelligence data](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/team-cymru-scout-ti)
+* [Collect URLScan IO logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/urlscan-io)
+* [Collect Uptycs EDR logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/uptycs-edr)
+* [Collect VanDyke VShell SFTP logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vandyke-vshell-sftp)
+* [Collect Zendesk CRM logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zendesk-crm)
+* [Collect ZeroFox Platform logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zerofox-platform)
+
+---
 ## 2025-11-10
 
 ### Feature

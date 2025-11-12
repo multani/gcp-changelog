@@ -38,6 +38,22 @@ and confidence scores is available as Release Candidate
 ([Preview](https://cloud.google.com/products/#product-launch-stages)).
 
 ---
+## 2025-10-27
+
+### Feature
+
+Automated schema extraction for custom extractor processors is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+This feature allows you to automatically extract a document schema from a test
+document you supply. Then, you can approve or decline the schema and
+edit it manually. This saves time and effort when defining the document schema
+for your custom processor and allows you to focus on refining the schema.
+
+When creating a custom extractor processor, find the **Generate from document**
+option in the **Get started** tab of the Google Cloud console.
+
+---
 ## 2025-10-17
 
 ### Feature

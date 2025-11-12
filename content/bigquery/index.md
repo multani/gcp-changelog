@@ -23,6 +23,12 @@ following SQL dialects into GoogleSQL:
 
 These features are in [Preview](https://cloud.google.com/products/#product-launch-stages).
 
+### Feature
+
+You can now use [custom constraints](https://docs.cloud.google.com/bigquery/docs/custom-constraints) with an
+Organization Policy to provide more granular control over specific fields for
+BigQuery dataset resources. This feature is [generally available](https://docs.cloud.google.com/products#product-launch-stages) (GA).
+
 ---
 ## 2025-11-10
 
@@ -83,6 +89,15 @@ models.
 
 ### Feature
 
+You can now generate [data insights](https://docs.cloud.google.com/bigquery/docs/data-insights#rest) when you
+create a
+[`DataScan`](https://docs.cloud.google.com/dataplex/docs/reference/rest/v1/projects.locations.dataScans)
+using the Dataplex API. This feature is
+[generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
+
+### Feature
+
 You can now
 [generate table and column descriptions](https://docs.cloud.google.com/bigquery/docs/data-insights#generate-column-table-descriptions)
 in all supported Gemini languages when you generate data insights.
@@ -100,15 +115,6 @@ You can use the
 [`MATCH_RECOGNIZE` clause](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax#match_recognize_clause)
 in your SQL queries to filter and aggregate matches across rows in a table.
 This feature is
-[generally available](https://cloud.google.com/products/#product-launch-stages)
-(GA).
-
-### Feature
-
-You can now generate [data insights](https://docs.cloud.google.com/bigquery/docs/data-insights#rest) when you
-create a
-[`DataScan`](https://docs.cloud.google.com/dataplex/docs/reference/rest/v1/projects.locations.dataScans)
-using the Dataplex API. This feature is
 [generally available](https://cloud.google.com/products/#product-launch-stages)
 (GA).
 

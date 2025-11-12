@@ -1,6 +1,17 @@
 # Text-to-Speech
 
+## 2025-11-10
+
+### Feature
+
+Chirp 3: HD voices now support speech synthesis in the following languages: `bg-BG`, `cs-CZ`, `et-EE`, `el-GR`, `he-IL`, `hr-HR`, `hu-HU`, `lt-LT`, `lv-LV`, `ro-RO`, `sk-SK`, `sl-SI`, and `sr-RS`. For more information, see [Chirp 3: Language Availability](https://cloud.google.com/text-to-speech/docs/chirp3-hd#language_availability).
+
+---
 ## 2025-11-07
+
+### Feature
+
+Gemini TTS now supports synthesis for streaming requests. For more information, see the [Gemini TTS](https://docs.cloud.google.com/text-to-speech/docs/gemini-tts#perform_streaming_single-speaker_synthesis) page.
 
 ### Changed
 

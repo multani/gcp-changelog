@@ -1,5 +1,23 @@
 # Google Kubernetes Engine
 
+## 2025-11-11
+
+### Feature
+
+The N4D machine family is now Generally Available (GA) for
+Standard and Autopilot mode. N4D instances are powered by the
+fifth generation AMD EPYC SP5 processors (Turin). The N4D machine series is
+available as follows:
+
+* **Cluster autoscaler, node pool auto-creation, and Autopilot mode**:
+  GKE version 1.34.1-gke.2037000 and later.
+* **Manually created node pools in Standard mode**: all available
+  GKE versions.
+
+For more information, see
+[N4D machine series](https://docs.cloud.google.com/compute/docs/general-purpose-machines#n4d_series).
+
+---
 ## 2025-11-07
 
 ### Feature

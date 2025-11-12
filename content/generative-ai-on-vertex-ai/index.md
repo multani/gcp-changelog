@@ -1,5 +1,16 @@
 # Generative AI on Vertex AI
 
+## 2025-11-11
+
+### Deprecated
+
+**Anthropic's Claude 3.7 Sonnet**
+
+Anthropic's Claude 3.7 Sonnet is deprecated as of November 11, 2025 and will be
+shut down on May 11, 2026. For more information, see
+[Partner model deprecations](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/deprecations/partner-models#sonnet-3-7).
+
+---
 ## 2025-11-07
 
 ### Feature
@@ -144,6 +155,15 @@ For more information about adding and removing objects, see the following:
 
 ### Deprecated
 
+**Imagen subject and style fine-tuning**
+
+Imagen subject model and style model tuning will be removed on
+December 31, 2025. We recommend that you use [Gemini 2.5 Flash Image](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash-image), which supports most use cases that require
+fine-tuning. For more information, see  [Edit images with
+Gemini](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-editing).
+
+### Deprecated
+
 **Imagen 4 preview models**
 
 The following Imagen 4 preview models will be removed on
@@ -156,15 +176,6 @@ November 30, 2025 , 2025, to the following Imagen 4 Generally
 Available models: `imagen-4.0-generate-001`,
 `imagen-4.0-ultra-generate-001`,
 `imagen-4.0-fast-generate-001`.
-
-### Deprecated
-
-**Imagen subject and style fine-tuning**
-
-Imagen subject model and style model tuning will be removed on
-December 31, 2025. We recommend that you use [Gemini 2.5 Flash Image](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash-image), which supports most use cases that require
-fine-tuning. For more information, see  [Edit images with
-Gemini](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-editing).
 
 ---
 ## 2025-10-09

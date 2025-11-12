@@ -4,6 +4,15 @@
 
 ### Feature
 
+You can now use Dataplex Universal Catalog to discover, search, and manage your
+AlloyDB resources, including clusters, databases, and tables. This integration
+(in [Preview](https://cloud.google.com/products#product-launch-stages)) provides
+a unified view of your metadata, enabling better data
+governance and easier analysis. For more information, see
+[Manage your AlloyDB resources using Dataplex Universal Catalog](https://docs.cloud.google.com/alloydb/docs/dataplex-catalog-integration).
+
+### Feature
+
 Improve query performance for partitioned tables and complex queries using
 parallel execution for the `SELECT` portion of an `INSERT INTO ... SELECT`
 query. For more information,

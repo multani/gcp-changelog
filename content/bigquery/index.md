@@ -4,6 +4,14 @@
 
 ### Feature
 
+The BigQuery [Overview page](https://docs.cloud.google.com/bigquery/docs/bigquery-web-ui#open-overview)
+is now your hub for discovering tutorials, features, and resources to help you
+get the most out of BigQuery. It provides guided paths for users
+of all skill levels. This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
 You can now use the
 [interactive SQL translator](https://docs.cloud.google.com/bigquery/docs/interactive-sql-translator), the
 [translation API](https://docs.cloud.google.com/bigquery/docs/api-sql-translator), and the
@@ -73,6 +81,15 @@ models.
 ---
 ## 2025-11-05
 
+### Feature
+
+You can now
+[generate table and column descriptions](https://docs.cloud.google.com/bigquery/docs/data-insights#generate-column-table-descriptions)
+in all supported Gemini languages when you generate data insights.
+This feature is
+[generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
+
 ### Announcement
 
 The [BigQuery Data Transfer Service for Google Ads](https://docs.cloud.google.com/bigquery/docs/google-ads-transfer) now supports [Google Ads API v21](https://developers.google.com/google-ads/api/fields/v21/overview).
@@ -92,15 +109,6 @@ You can now generate [data insights](https://docs.cloud.google.com/bigquery/docs
 create a
 [`DataScan`](https://docs.cloud.google.com/dataplex/docs/reference/rest/v1/projects.locations.dataScans)
 using the Dataplex API. This feature is
-[generally available](https://cloud.google.com/products/#product-launch-stages)
-(GA).
-
-### Feature
-
-You can now
-[generate table and column descriptions](https://docs.cloud.google.com/bigquery/docs/data-insights#generate-column-table-descriptions)
-in all supported Gemini languages when you generate data insights.
-This feature is
 [generally available](https://cloud.google.com/products/#product-launch-stages)
 (GA).
 

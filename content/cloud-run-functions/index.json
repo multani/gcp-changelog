@@ -1,6 +1,16 @@
 {
   "name": "Cloud Run functions",
   "entries": {
+    "2025-11-12": [
+      {
+        "kind": "Feature",
+        "content": "Support for [Python 3.14 runtime](https://docs.cloud.google.com/functions/docs/concepts/execution-environment#python) is in [Preview](https://cloud.google.com/products#product-launch-stages). Starting from Python version 3.14 and later, the Python Buildpack uses the UV package manager as the\ndefault installer for the dependencies you specify in your `requirements.txt` file. You can also use pip as the default installer for these versions by setting the `GOOGLE_PYTHON_PACKAGE_MANAGER` environment variable to `pip`. For more information, see [Specify dependencies in Python](https://docs.cloud.google.com/run/docs/runtimes/python-dependencies.md#dependencies).",
+        "summary": {
+          "title": "Python 3.14 Runtime Now in Preview",
+          "summary": "Google Cloud Functions now offers a preview of the Python 3.14 runtime. This update defaults to the UV package manager for dependency installation via requirements.txt, with an option to switch back to pip."
+        }
+      }
+    ],
     "2025-10-31": [
       {
         "kind": "Feature",

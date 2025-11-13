@@ -1,6 +1,24 @@
 {
   "name": "Network Intelligence Center",
   "entries": {
+    "2025-11-10": [
+      {
+        "kind": "Feature",
+        "content": "The following insight types and subtypes are available in Network Analyzer:\n\n* Recommender insight subtypes:\n  + `ROUTE_NEXT_HOP_FORWARDING_RULE_IP_MISMATCH`\n  + `ROUTE_NEXT_HOP_FORWARDING_RULE_TYPE_INVALID`\n  + `ROUTE_NEXT_HOP_ILB_VIP_NOT_ASSIGNED`\n  + `ROUTE_NEXT_HOP_IP_NOT_ASSIGNED`\n  + `ROUTE_NEXT_HOP_VM_NON_PRIMARY_IP`\n  + `ROUTE_NEXT_HOP_VM_WRONG_NETWORK`\n  + `ROUTE_NEXT_HOP_VPN_TUNNEL_NOT_ESTABLISHED`\n  + `NCC_DYNAMIC_ROUTE_FULLY_SHADOWED`\n* Cloud Logging insight types:\n  + `ROUTE_INVALID_NEXT_HOP_FORWARDING_RULE_IP_MISMATCH`\n  + `ROUTE_INVALID_NEXT_HOP_FORWARDING_RULE_TYPE_INVALID`\n  + `ROUTE_INVALID_NEXT_HOP_ILB_VIP_NOT_ASSIGNED`\n  + `ROUTE_INVALID_NEXT_HOP_IP_NOT_ASSIGNED`\n  + `ROUTE_INVALID_NEXT_HOP_VM_NON_PRIMARY_IP`\n  + `ROUTE_INVALID_NEXT_HOP_VM_WRONG_NETWORK`\n  + `ROUTE_INVALID_NEXT_HOP_VPN_TUNNEL_NOT_ESTABLISHED`\n  + `DYNAMIC_ROUTE_SHADOWED_FULLY_SHADOWED_BY_NCC_SUBNET_ROUTE`\n  + `NCC_DYNAMIC_ROUTE_SHADOWED_FULLY_SHADOWED_BY_PEERING_SUBNET_ROUTE`\n  + `NCC_DYNAMIC_ROUTE_SHADOWED_FULLY_SHADOWED_BY_STATIC_ROUTE`\n  + `NCC_DYNAMIC_ROUTE_SHADOWED_FULLY_SHADOWED_BY_SUBNET_ROUTE`\n\nFor more information, see\n[Routes with an invalid next hop](https://docs.cloud.google.com/network-intelligence-center/docs/network-analyzer/insight-groups-types#routes_with_an_invalid_next_hop)\nand [Shadowed dynamic routes](https://docs.cloud.google.com/network-intelligence-center/docs/network-analyzer/insight-groups-types#shadowed_dynamic_routes).",
+        "summary": {
+          "title": "New network insights",
+          "summary": "Network Analyzer now offers new insights for invalid next hops and shadowed dynamic routes, helping you identify and resolve network configuration issues more effectively."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Network Analyzer no longer generates the following insight types and subtypes:\n\n* Recommender insight subtypes:\n  + `ROUTE_NEXT_HOP_ILB_BACKEND_IP_FORWARDING_DISABLED`\n  + `DYNAMIC_ROUTE_PARTIALLY_SHADOWED`\n  + `PEERING_DYNAMIC_ROUTE_PARTIALLY_SHADOWED`\n* Cloud Logging insight types:\n  + `ROUTE_INVALID_NEXT_HOP_ILB_BACKEND_IP_FORWARDING_DISABLED`\n  + `DYNAMIC_ROUTE_SHADOWED_PARTIALLY_SHADOWED_BY_SUBNET_ROUTE`\n  + `DYNAMIC_ROUTE_SHADOWED_PARTIALLY_SHADOWED_BY_PEERING_SUBNET_ROUTE`\n  + `DYNAMIC_ROUTE_SHADOWED_PARTIALLY_SHADOWED_BY_STATIC_ROUTE`\n  + `DYNAMIC_ROUTE_SHADOWED_PARTIALLY_SHADOWED_BY_PEERING_STATIC_ROUTE`",
+        "summary": {
+          "title": "Network Analyzer insight types removed",
+          "summary": "Several Network Analyzer insight types and subtypes are no longer generated, including those related to recommender and Cloud Logging insights for route shadowing and ILB backend IP forwarding."
+        }
+      }
+    ],
     "2025-09-30": [
       {
         "kind": "Deprecated",

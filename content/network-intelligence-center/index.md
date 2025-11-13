@@ -1,5 +1,53 @@
 # Network Intelligence Center
 
+## 2025-11-10
+
+### Feature
+
+The following insight types and subtypes are available in Network Analyzer:
+
+* Recommender insight subtypes:
+  + `ROUTE_NEXT_HOP_FORWARDING_RULE_IP_MISMATCH`
+  + `ROUTE_NEXT_HOP_FORWARDING_RULE_TYPE_INVALID`
+  + `ROUTE_NEXT_HOP_ILB_VIP_NOT_ASSIGNED`
+  + `ROUTE_NEXT_HOP_IP_NOT_ASSIGNED`
+  + `ROUTE_NEXT_HOP_VM_NON_PRIMARY_IP`
+  + `ROUTE_NEXT_HOP_VM_WRONG_NETWORK`
+  + `ROUTE_NEXT_HOP_VPN_TUNNEL_NOT_ESTABLISHED`
+  + `NCC_DYNAMIC_ROUTE_FULLY_SHADOWED`
+* Cloud Logging insight types:
+  + `ROUTE_INVALID_NEXT_HOP_FORWARDING_RULE_IP_MISMATCH`
+  + `ROUTE_INVALID_NEXT_HOP_FORWARDING_RULE_TYPE_INVALID`
+  + `ROUTE_INVALID_NEXT_HOP_ILB_VIP_NOT_ASSIGNED`
+  + `ROUTE_INVALID_NEXT_HOP_IP_NOT_ASSIGNED`
+  + `ROUTE_INVALID_NEXT_HOP_VM_NON_PRIMARY_IP`
+  + `ROUTE_INVALID_NEXT_HOP_VM_WRONG_NETWORK`
+  + `ROUTE_INVALID_NEXT_HOP_VPN_TUNNEL_NOT_ESTABLISHED`
+  + `DYNAMIC_ROUTE_SHADOWED_FULLY_SHADOWED_BY_NCC_SUBNET_ROUTE`
+  + `NCC_DYNAMIC_ROUTE_SHADOWED_FULLY_SHADOWED_BY_PEERING_SUBNET_ROUTE`
+  + `NCC_DYNAMIC_ROUTE_SHADOWED_FULLY_SHADOWED_BY_STATIC_ROUTE`
+  + `NCC_DYNAMIC_ROUTE_SHADOWED_FULLY_SHADOWED_BY_SUBNET_ROUTE`
+
+For more information, see
+[Routes with an invalid next hop](https://docs.cloud.google.com/network-intelligence-center/docs/network-analyzer/insight-groups-types#routes_with_an_invalid_next_hop)
+and [Shadowed dynamic routes](https://docs.cloud.google.com/network-intelligence-center/docs/network-analyzer/insight-groups-types#shadowed_dynamic_routes).
+
+### Changed
+
+Network Analyzer no longer generates the following insight types and subtypes:
+
+* Recommender insight subtypes:
+  + `ROUTE_NEXT_HOP_ILB_BACKEND_IP_FORWARDING_DISABLED`
+  + `DYNAMIC_ROUTE_PARTIALLY_SHADOWED`
+  + `PEERING_DYNAMIC_ROUTE_PARTIALLY_SHADOWED`
+* Cloud Logging insight types:
+  + `ROUTE_INVALID_NEXT_HOP_ILB_BACKEND_IP_FORWARDING_DISABLED`
+  + `DYNAMIC_ROUTE_SHADOWED_PARTIALLY_SHADOWED_BY_SUBNET_ROUTE`
+  + `DYNAMIC_ROUTE_SHADOWED_PARTIALLY_SHADOWED_BY_PEERING_SUBNET_ROUTE`
+  + `DYNAMIC_ROUTE_SHADOWED_PARTIALLY_SHADOWED_BY_STATIC_ROUTE`
+  + `DYNAMIC_ROUTE_SHADOWED_PARTIALLY_SHADOWED_BY_PEERING_STATIC_ROUTE`
+
+---
 ## 2025-09-30
 
 ### Deprecated

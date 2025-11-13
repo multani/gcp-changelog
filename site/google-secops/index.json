@@ -49,6 +49,22 @@
     ],
     "2025-10-31": [
       {
+        "kind": "Feature",
+        "content": "**Raw log search enhancements**\n\nGoogle SecOps now includes enhancements to raw log search to boost usability,\nperformance, and data analysis:\n\n* **New filtering options**: Filter raw log results by their parsing status or\n  by one or more log sources.\n* **Optimized results view**: Expand or collapse the Trend over time graph,\n  providing more space for results.\n* **Download raw log results**: Download raw log results to a CSV file. By default,\n  the **Timestamp**, **Event Type**, and **Raw log** columns are included. You can\n  select additional columns through **Column Manager**.\n* **Enhanced search visibility**: The search query and applied filters are now\n  displayed on the **Search** page.\n* **New API for raw log search**: Use the **legacySearchRawLogsV2** API to search\n  for raw logs within a specified Google SecOps instance.\n\nFor more details, see the following topics:\n\n* [Filter data in Raw Log Search](https://docs.cloud.google.com/chronicle/docs/investigation/filter-data-raw-log-scan-view)\n* [Conduct a raw log search](https://docs.cloud.google.com/chronicle/docs/investigation/raw-log-search-in-investigate)\n* [Use raw log search](https://docs.cloud.google.com/chronicle/docs/investigation/search-raw-logs)\n* [Method: legacy.legacySearchRawLogsV2](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.legacy/legacySearchRawLogsV2)",
+        "summary": {
+          "title": "Raw log search enhancements",
+          "summary": "New filtering options, an optimized results view, and the ability to download raw log results to a CSV file have been added to Google SecOps' raw log search. The search query and applied filters are now displayed on the Search page, and a new API is available for searching raw logs."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Search usability enhancements**\n\nGoogle SecOps has introduced the following capabilities to improve usability,\nperformance, and customization in search results:\n\n* **Improved performance for large result sets**: For broad queries, Google SecOps\n  now provides paginated search results. You can select the number of rows to\n  display per page. This pagination applies to the 10,000 results displayed in the table.\n* **Optimized results view**: The search editor now automatically collapses after\n  a query runs, providing more space for results. You can also hide or show the\n  **Charts** and **Aggregations** panels with the **View Options** list.\n* **Customizable column views**: You can now create, save, and share custom sets\n  of columns in the **Events** table for consistent analysis across teams.\n\nFor more details, see [Search for events and alerts](https://docs.cloud.google.com/chronicle/docs/investigation/udm-search).",
+        "summary": {
+          "title": "Enhanced Search Experience",
+          "summary": "We've boosted search performance with pagination for large result sets, optimized the results view by collapsing the editor and offering adjustable panels, and introduced customizable column views for consistent team analysis."
+        }
+      },
+      {
         "kind": "Changed",
         "content": "**Custom log type rename**\n\nFrom now on, all custom log types will be renamed with the custom suffix to prevent confusion with prebuilt log types. The following custom log types already reflect the new naming convention:\n\n* HUAWEI\\_SECMASTER\\_CUSTOM\n* GTI\\_THREAT\\_FEED\\_CUSTOM\n* GTI\\_IOC\\_STREAM\\_CUSTOM\n* ABSOLUTE\\_SECURE\\_ENDPOINT\\_CUSTOM\n* GTI\\_IOC\\_CUSTOM\n* IBM\\_ILO\\_CUSTOM\n* GCP\\_THREATINTEL\\_CUSTOM\n* SAP\\_ETD\\_CUSTOM",
         "summary": {

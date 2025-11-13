@@ -20,6 +20,30 @@
       },
       {
         "kind": "Changed",
+        "content": "**CrowdStrike Falcon**: Version 69.0\n\n* Refactored the pagination and filtering mechanism in the following actions:\n\n  + **List Uploaded IOCs**\n  + **List Hosts**\n* Added support for wildcards to `File Paths to Scan` in the following action:\n\n  + **On-Demand Scan**",
+        "summary": {
+          "title": "CrowdStrike Falcon v69.0 Update",
+          "summary": "Version 69.0 of CrowdStrike Falcon has been released with significant improvements. The pagination and filtering mechanisms have been refactored in the 'List Uploaded IOCs' and 'List Hosts' actions. Additionally, the 'On-Demand Scan' action now supports wildcards for file paths."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Cybereason**: Version 21.0\n\n* **Integration**: Added ability to provide a CA Certificate file as part of the\n  configuration.",
+        "summary": {
+          "title": "Cybereason 21.0 Update",
+          "summary": "The Cybereason integration has been updated to version 21.0. This new version includes the ability to provide a CA Certificate file during configuration."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Google Chronicle**: Version 67.0\n\n* Updated curated detections processing logic in the following action:\n\n  + **Get Detection Details**",
+        "summary": {
+          "title": "Google Chronicle 67.0",
+          "summary": "The curated detections processing logic has been updated in the Get Detection Details action."
+        }
+      },
+      {
+        "kind": "Changed",
         "content": "The following integrations are now GUS recommended:\n\n* **CrowdStrike Falcon**: Version 69.0\n* **Wiz**: Version .0\n* **Fortigate**: Version 16.0",
         "summary": {
           "title": "CrowdStrike Falcon, Wiz, and Fortigate are now recommended",
@@ -44,14 +68,6 @@
       },
       {
         "kind": "Changed",
-        "content": "**Cybereason**: Version 21.0\n\n* **Integration**: Added ability to provide a CA Certificate file as part of the\n  configuration.",
-        "summary": {
-          "title": "Cybereason 21.0 Update",
-          "summary": "The Cybereason integration has been updated to version 21.0. This new version includes the ability to provide a CA Certificate file during configuration."
-        }
-      },
-      {
-        "kind": "Changed",
         "content": "**Google Security Command Center**: Version 14.0\n\n* Added the ability to ingest Toxic Combinations and Chokepoints in the\n  following connector:\n\n  + **Google Security Command Center - Findings Connector**",
         "summary": {
           "title": "Google Security Command Center v14.0",
@@ -59,38 +75,6 @@
         }
       },
       {
-        "kind": "Changed",
-        "content": "**Google Chronicle**: Version 67.0\n\n* Updated curated detections processing logic in the following action:\n\n  + **Get Detection Details**",
-        "summary": {
-          "title": "Google Chronicle 67.0",
-          "summary": "The curated detections processing logic has been updated in the Get Detection Details action."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "**CrowdStrike Falcon**: Version 69.0\n\n* Refactored the pagination and filtering mechanism in the following actions:\n\n  + **List Uploaded IOCs**\n  + **List Hosts**\n* Added support for wildcards to `File Paths to Scan` in the following action:\n\n  + **On-Demand Scan**",
-        "summary": {
-          "title": "CrowdStrike Falcon v69.0 Update",
-          "summary": "Version 69.0 of CrowdStrike Falcon has been released with significant improvements. The pagination and filtering mechanisms have been refactored in the 'List Uploaded IOCs' and 'List Hosts' actions. Additionally, the 'On-Demand Scan' action now supports wildcards for file paths."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Enhance threat visibility and detection with Emerging Threats**\n\nThe new **Emerging Threats** page provides AI-powered threat intelligence to help\nyou understand how current threat campaigns might affect your organization.\nPowered by Google Threat Intelligence (GTI) and Gemini models, this page offers\na curated view of critical global threats relevant to your environment.\n\nEmerging Threats continuously aligns intelligence from GTI with your organization's\ntelemetry to highlight detection coverage and identify gaps. When it finds a gap,\nit uses Gemini to automatically draft new detection rules to accelerate your response.\n\nFor more details, see [Emerging Threats overview](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats),\n[Emerging Threats feed](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-feed),and\n[Emerging Threats detailed view](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-detailed-view).",
-        "summary": {
-          "title": "Emerging Threats",
-          "summary": "Stay ahead of global threats with AI-powered insights and automated detection rule generation."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Use the Triage Agent to investigate alerts**\n\nYou can now use Triage Agent, an AI-powered investigation assistant, to\nanalyze alerts in Google SecOps. Triage Agent determines if an\nalert is a true or false positive, provides a summarized explanation for its\nconclusion, and suggests next steps for further investigation.\n\nYou can trigger investigations manually or have them run automatically on\nsupported alert types. Each investigation produces a detailed report that includes\nthe agent's disposition, a summary of its findings, and a timeline of the analysis.\n\nFor more details, see [Use Triage Agent to investigate alerts](https://docs.cloud.google.com/chronicle/docs/secops/triage-agent).",
-        "summary": {
-          "title": "Investigate alerts with Triage Agent",
-          "summary": "Use the AI-powered Triage Agent to investigate alerts in Google SecOps. It determines if an alert is a true or false positive, provides explanations, and suggests next steps. Investigations can be triggered manually or automatically, producing detailed reports."
-        }
-      },
-      {
         "kind": "Announcement",
         "content": "**New parser documentation now available**\n\nNew parser documentation is available to help you ingest and normalize logs from the following sources:\n\n* [Collect Absolute Secure Endpoint logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/absolute-se)\n* [Collect AIDE (Advanced Intrusion Detection Environment) logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aide)\n* [Collect Akamai Enterprise Application Access logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/akamai-eaa)\n* [Collect Apache Hadoop logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/apache-hadoop)\n* [Collect Armis Vulnerabilities logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/armis-vulnerabilities)\n* [Collect Array Networks SSL VPN logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/arraynetworks-vpn)\n* [Collect Aruba IPS logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aruba-ips)\n* [Collect Atlassian Confluence logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/atlassian-confluence)\n* [Collect Cisco AMP for Endpoints logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-amp-for-endpoints)\n* [Collect Cisco APIC logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-apic)\n* [Collect Cisco Application Centric Infrastructure (ACI) logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-aci)\n* [Collect Cisco CallManager logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-callmanager)\n* [Collect Cisco CloudLock CASB logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-cloudlock-casb)\n* [Collect Cisco DNA Center Platform logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-dnac)\n* [Collect Cisco eStreamer logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-estreamer)\n* [Collect Cribl Stream logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cribl-stream)\n* [Collect CrowdStrike FileVantage logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cs-filevantage)\n* [Collect CrowdStrike IDP Services logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cs-idp)\n* [Collect Cynet 360 AutoXDR logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cynet360-autoxdr)\n* [Collect Digital Shadows SearchLight logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/digital-shadows-searchlight)\n* [Collect Duo Telephony logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/duo-telephony)\n* [Collect Edgio WAF logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/edgio-waf)\n* [Collect Elastic Auditbeat logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elastic-auditbeat)\n* [Collect Elastic Packet Beats logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elastic-packetbeats)\n* [Collect Elasticsearch logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elasticsearch)\n* [Collect Entrust nShield HSM audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/entrust-nshield-hsm-audit)\n* [Collect Imperva Advanced Bot Protection logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-abp)\n* [Collect Imperva Attack Analytics logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-aa)\n* [Collect Imperva Audit Trail logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-audit-trail)\n* [Collect Imperva CEF logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-cef)\n* [Collect Imperva Data Risk Analytics (DRA) logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-dra)\n* [Collect Imperva Database logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-db)\n* [Collect Imperva FlexProtect logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-flexprotect)\n* [Collect Imperva SecureSphere Management logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-ssm)\n* [Collect Kiteworks (formally Accellion) logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/accellion)\n* [Collect Proofpoint Emerging Threats Pro IOC logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/proofpoint-etp-ioc)\n* [Collect ServiceNow audit logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/servicenow-audit)\n* [Collect Team Cymru Scout Threat Intelligence data](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/team-cymru-scout-ti)\n* [Collect URLScan IO logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/urlscan-io)\n* [Collect Uptycs EDR logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/uptycs-edr)\n* [Collect VanDyke VShell SFTP logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vandyke-vshell-sftp)\n* [Collect Zendesk CRM logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zendesk-crm)\n* [Collect ZeroFox Platform logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zerofox-platform)",
         "summary": {
@@ -120,6 +104,22 @@
         "summary": {
           "title": "New Parser Documentation Available",
           "summary": "New documentation is now available to assist with ingesting and normalizing logs from a wide variety of sources. This includes detailed guides for sources such as Absolute Secure Endpoint, AIDE, Akamai Enterprise Application Access, and many others."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Enhance threat visibility and detection with Emerging Threats**\n\nThe new **Emerging Threats** page provides AI-powered threat intelligence to help\nyou understand how current threat campaigns might affect your organization.\nPowered by Google Threat Intelligence (GTI) and Gemini models, this page offers\na curated view of critical global threats relevant to your environment.\n\nEmerging Threats continuously aligns intelligence from GTI with your organization's\ntelemetry to highlight detection coverage and identify gaps. When it finds a gap,\nit uses Gemini to automatically draft new detection rules to accelerate your response.\n\nFor more details, see [Emerging Threats overview](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats),\n[Emerging Threats feed](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-feed),and\n[Emerging Threats detailed view](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-detailed-view).",
+        "summary": {
+          "title": "Emerging Threats",
+          "summary": "Stay ahead of global threats with AI-powered insights and automated detection rule generation."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Use the Triage Agent to investigate alerts**\n\nYou can now use Triage Agent, an AI-powered investigation assistant, to\nanalyze alerts in Google SecOps. Triage Agent determines if an\nalert is a true or false positive, provides a summarized explanation for its\nconclusion, and suggests next steps for further investigation.\n\nYou can trigger investigations manually or have them run automatically on\nsupported alert types. Each investigation produces a detailed report that includes\nthe agent's disposition, a summary of its findings, and a timeline of the analysis.\n\nFor more details, see [Use Triage Agent to investigate alerts](https://docs.cloud.google.com/chronicle/docs/secops/triage-agent).",
+        "summary": {
+          "title": "Investigate alerts with Triage Agent",
+          "summary": "Use the AI-powered Triage Agent to investigate alerts in Google SecOps. It determines if an alert is a true or false positive, provides explanations, and suggests next steps. Investigations can be triggered manually or automatically, producing detailed reports."
         }
       }
     ],
@@ -182,18 +182,18 @@
     "2025-11-05": [
       {
         "kind": "Feature",
-        "content": "**Palo Alto XDR**: Version 20.0\n\n* The following new action has been added:\n\n  + **Scan Endpoint**",
+        "content": "**SentinelOneV2**: Version 43.0\n\n* The following new action has been added:\n\n  + **Get Site Agents**",
         "summary": {
-          "title": "Palo Alto XDR v20.0 Update",
-          "summary": "Palo Alto XDR version 20.0 introduces a new 'Scan Endpoint' action for enhanced security monitoring."
+          "title": "New Action in SentinelOneV2",
+          "summary": "SentinelOneV2 has been updated to version 43.0, introducing a new \"Get Site Agents\" action."
         }
       },
       {
         "kind": "Changed",
-        "content": "**AWS Identity and Access Management**: Version 7.0\n\n* Refactored the following actions:\n\n  + **Create User**\n  + **Create Group**\n  + **Create Policy**\n  + **List Users**\n  + **List Groups**\n  + **List Policies**",
+        "content": "**FortiAnalyzer**: Version 8.0\n\n* Updated search processing logic in the following action:\n\n  + **Search Logs**",
         "summary": {
-          "title": "AWS IAM Changes",
-          "summary": "AWS Identity and Access Management (IAM) version 7.0 has been released with significant refactoring of several key user and group management actions."
+          "title": "FortiAnalyzer 8.0 Update",
+          "summary": "The search logs action in FortiAnalyzer version 8.0 has been updated with new processing logic."
         }
       },
       {
@@ -213,19 +213,19 @@
         }
       },
       {
-        "kind": "Changed",
-        "content": "**FortiAnalyzer**: Version 8.0\n\n* Updated search processing logic in the following action:\n\n  + **Search Logs**",
+        "kind": "Feature",
+        "content": "**Palo Alto XDR**: Version 20.0\n\n* The following new action has been added:\n\n  + **Scan Endpoint**",
         "summary": {
-          "title": "FortiAnalyzer 8.0 Update",
-          "summary": "The search logs action in FortiAnalyzer version 8.0 has been updated with new processing logic."
+          "title": "Palo Alto XDR v20.0 Update",
+          "summary": "Palo Alto XDR version 20.0 introduces a new 'Scan Endpoint' action for enhanced security monitoring."
         }
       },
       {
-        "kind": "Feature",
-        "content": "**SentinelOneV2**: Version 43.0\n\n* The following new action has been added:\n\n  + **Get Site Agents**",
+        "kind": "Changed",
+        "content": "**AWS Identity and Access Management**: Version 7.0\n\n* Refactored the following actions:\n\n  + **Create User**\n  + **Create Group**\n  + **Create Policy**\n  + **List Users**\n  + **List Groups**\n  + **List Policies**",
         "summary": {
-          "title": "New Action in SentinelOneV2",
-          "summary": "SentinelOneV2 has been updated to version 43.0, introducing a new \"Get Site Agents\" action."
+          "title": "AWS IAM Changes",
+          "summary": "AWS Identity and Access Management (IAM) version 7.0 has been released with significant refactoring of several key user and group management actions."
         }
       }
     ],
@@ -259,24 +259,48 @@
         }
       },
       {
+        "kind": "Feature",
+        "content": "**Raw log search enhancements**\n\nGoogle SecOps now includes enhancements to raw log search to boost usability,\nperformance, and data analysis:\n\n* **New filtering options**: Filter raw log results by their parsing status or\n  by one or more log sources.\n* **Optimized results view**: Expand or collapse the Trend over time graph,\n  providing more space for results.\n* **Download raw log results**: Download raw log results to a CSV file. By default,\n  the **Timestamp**, **Event Type**, and **Raw log** columns are included. You can\n  select additional columns through **Column Manager**.\n* **Enhanced search visibility**: The search query and applied filters are now\n  displayed on the **Search** page.\n* **New API for raw log search**: Use the **legacySearchRawLogsV2** API to search\n  for raw logs within a specified Google SecOps instance.\n\nFor more details, see the following topics:\n\n* [Filter data in Raw Log Search](https://docs.cloud.google.com/chronicle/docs/investigation/filter-data-raw-log-scan-view)\n* [Conduct a raw log search](https://docs.cloud.google.com/chronicle/docs/investigation/raw-log-search-in-investigate)\n* [Use raw log search](https://docs.cloud.google.com/chronicle/docs/investigation/search-raw-logs)\n* [Method: legacy.legacySearchRawLogsV2](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.legacy/legacySearchRawLogsV2)",
+        "summary": {
+          "title": "Raw log search enhancements",
+          "summary": "New filtering options, an optimized results view, and the ability to download raw log results to a CSV file have been added to Google SecOps' raw log search. The search query and filters are now displayed on the Search page, and a new API is available for searching raw logs."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Search usability enhancements**\n\nGoogle SecOps has introduced the following capabilities to improve usability,\nperformance, and customization in search results:\n\n* **Improved performance for large result sets**: For broad queries, Google SecOps\n  now provides paginated search results. You can select the number of rows to\n  display per page. This pagination applies to the 10,000 results displayed in the table.\n* **Optimized results view**: The search editor now automatically collapses after\n  a query runs, providing more space for results. You can also hide or show the\n  **Charts** and **Aggregations** panels with the **View Options** list.\n* **Customizable column views**: You can now create, save, and share custom sets\n  of columns in the **Events** table for consistent analysis across teams.\n* **All-time search**: A new **All Time** option lets you run a search over the\n  entire data retention period.\n\nFor more details, see [Search for events and alerts](https://docs.cloud.google.com/chronicle/docs/investigation/udm-search).",
+        "summary": {
+          "title": "Search Usability Enhancements",
+          "summary": "Google SecOps has rolled out new features to improve search usability, including performance enhancements for large result sets with pagination, an optimized results view that provides more space, customizable column views for consistent analysis, and an all-time search option."
+        }
+      },
+      {
         "kind": "Changed",
         "content": "**Custom log type rename**\n\nFrom now on, all custom log types will be renamed with the custom suffix to prevent confusion with prebuilt log types. The following custom log types already reflect the new naming convention:\n\n* HUAWEI\\_SECMASTER\\_CUSTOM\n* GTI\\_THREAT\\_FEED\\_CUSTOM\n* GTI\\_IOC\\_STREAM\\_CUSTOM\n* ABSOLUTE\\_SECURE\\_ENDPOINT\\_CUSTOM\n* GTI\\_IOC\\_CUSTOM\n* IBM\\_ILO\\_CUSTOM\n* GCP\\_THREATINTEL\\_CUSTOM\n* SAP\\_ETD\\_CUSTOM",
         "summary": {
           "title": "Custom log types renamed",
           "summary": "All custom log types have been renamed with a custom suffix to avoid confusion with prebuilt log types. For example, HUAWEI_SECMASTER_CUSTOM is an example of the new naming convention."
         }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Raw log search enhancements**\n\nGoogle SecOps now includes enhancements to raw log search to boost usability,\nperformance, and data analysis:\n\n* **New filtering options**: Filter raw log results by their parsing status or\n  by one or more log sources.\n* **Optimized results view**: Expand or collapse the Trend over time graph,\n  providing more space for results.\n* **Download raw log results**: Download raw log results to a CSV file. By default,\n  the **Timestamp**, **Event Type**, and **Raw log** columns are included. You can\n  select additional columns through **Column Manager**.\n* **Enhanced search visibility**: The search query and applied filters are now\n  displayed on the **Search** page.\n* **New API for raw log search**: Use the **legacySearchRawLogsV2** API to search\n  for raw logs within a specified Google SecOps instance.\n\nFor more details, see the following topics:\n\n* [Filter data in Raw Log Search](https://docs.cloud.google.com/chronicle/docs/investigation/filter-data-raw-log-scan-view)\n* [Conduct a raw log search](https://docs.cloud.google.com/chronicle/docs/investigation/raw-log-search-in-investigate)\n* [Use raw log search](https://docs.cloud.google.com/chronicle/docs/investigation/search-raw-logs)\n* [Method: legacy.legacySearchRawLogsV2](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.legacy/legacySearchRawLogsV2)",
+        "summary": {
+          "title": "Raw log search enhancements",
+          "summary": "New filtering options, an optimized results view, and download options enhance raw log search usability. The search query and filters are now displayed, and a new API is available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Search usability enhancements**\n\nGoogle SecOps has introduced the following capabilities to improve usability,\nperformance, and customization in search results:\n\n* **Improved performance for large result sets**: For broad queries, Google SecOps\n  now provides paginated search results. You can select the number of rows to\n  display per page. This pagination applies to the 10,000 results displayed in the table.\n* **Optimized results view**: The search editor now automatically collapses after\n  a query runs, providing more space for results. You can also hide or show the\n  **Charts** and **Aggregations** panels with the **View Options** list.\n* **Customizable column views**: You can now create, save, and share custom sets\n  of columns in the **Events** table for consistent analysis across teams.\n\nFor more details, see [Search for events and alerts](https://docs.cloud.google.com/chronicle/docs/investigation/udm-search).",
+        "summary": {
+          "title": "Search usability enhancements",
+          "summary": "We've made significant improvements to search usability, performance, and customization. Key features include paginated results for large datasets, an optimized view that provides more space for results, and the ability to create and save custom column views for consistent analysis."
+        }
       }
     ],
     "2025-10-30": [
       {
-        "kind": "Feature",
-        "content": "**YARA-L functions**\n\nThe following new YARA-L functions are now generally available:\n\n* [strings.ends\\_with](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#stringsends_with):\n  Takes two strings (value, suffix) and returns true if the suffix is\n  non-empty and at end-of-value.\n* [strings.split](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#stringssplit): Splits\n  string value using a delimiter argument (by default, a comma).\n* [window.range](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#windowrange): Returns the\n  range of the values input values found.",
-        "summary": {
-          "title": "New YARA-L functions available",
-          "summary": "We're excited to announce that several new YARA-L functions are now generally available. These include strings.ends_with for suffix checking, strings.split for string manipulation, and window.range for analyzing value ranges."
-        }
-      },
-      {
         "kind": "Announcement",
         "content": "**Upgraded Chronicle API ingestion methods from alpha to beta**\n\nWe've upgraded the Chronicle API ingestion methods from alpha to beta. This upgrade signals API stability and functional completeness, unblocking customer and partner adoption for production integrations.\n\nFor more information, see\n[Ingestion methods](https://cloud.google.com/chronicle/docs/reference/ingestion-methods).",
         "summary": {
@@ -298,50 +322,18 @@
         "summary": {
           "title": "Chronicle API Ingestion Methods Now in Beta",
           "summary": "The Chronicle API ingestion methods have been upgraded from alpha to beta, indicating increased stability and readiness for production use. This advancement allows customers and partners to proceed with production integrations."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**YARA-L functions**\n\nThe following new YARA-L functions are now generally available:\n\n* [strings.ends\\_with](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#stringsends_with):\n  Takes two strings (value, suffix) and returns true if the suffix is\n  non-empty and at end-of-value.\n* [strings.split](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#stringssplit): Splits\n  string value using a delimiter argument (by default, a comma).\n* [window.range](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#windowrange): Returns the\n  range of the values input values found.",
+        "summary": {
+          "title": "New YARA-L functions available",
+          "summary": "We're excited to announce that several new YARA-L functions are now generally available. These include strings.ends_with for suffix checking, strings.split for string manipulation, and window.range for analyzing value ranges."
         }
       }
     ],
     "2025-10-29": [
-      {
-        "kind": "Changed",
-        "content": "**CSV**: Version 35.0\n\n* Updated file path processing logic in the following connector:\n\n  + **CSV Connector**",
-        "summary": {
-          "title": "CSV Connector Update",
-          "summary": "The CSV connector has been updated to improve file path processing logic. Version 35.0 includes these changes."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "**CrowdStrike Falcon**: Version 68.0\n\n* Update the following action to check if there is an existing identical running\n  scan for a provided hostname before creating a new one:\n\n  + **On-Demand Scan**",
-        "summary": {
-          "title": "CrowdStrike Falcon - On-Demand Scan Update",
-          "summary": "The On-Demand Scan action in CrowdStrike Falcon (v68.0) has been updated to prevent duplicate scans by checking for existing identical scans on a given hostname before initiating a new one."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "**Exchange**: Version 115.0\n\n* Updated the file management logic in the following action:\n\n  + **Download Attachments**",
-        "summary": {
-          "title": "Exchange 115.0",
-          "summary": "Version 115.0 of Exchange includes an update to the Download Attachments action's file management logic."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "**Microsoft Graph Mail**: Version 32.0\n\n* Updated the file management logic in the following action:\n\n  + **Download Attachments from Email**",
-        "summary": {
-          "title": "Microsoft Graph Mail v32.0",
-          "summary": "The file management logic for the Download Attachments from Email action has been updated."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "**Microsoft Graph Mail Delegated**: Version 9.0\n\n* Updated the file management logic in the following action:\n\n  + **Download Attachments from Email**",
-        "summary": {
-          "title": "Download Attachments from Email - Version 9.0",
-          "summary": "The file management logic for the Download Attachments from Email action has been updated in version 9.0."
-        }
-      },
       {
         "kind": "Changed",
         "content": "**Palo Alto Cortex XDR**: Version 19.0\n\n* Updated incident processing logic in the following action:\n\n  + **Get Incident Details**\n* Added new filtering options, the ability to create a SecOps alert for every\n  Palo Alto XDR alert, and the ability to track updates to an incident in the\n  following connector:\n\n  + **Palo Alto Cortex XDR Connector**",
@@ -364,6 +356,46 @@
         "summary": {
           "title": "ZScaler 10.0 Update",
           "summary": "Version 10.0 of ZScaler introduces support for the domain entity type in the Add to Whitelist and Lookup Entity actions."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Microsoft Graph Mail Delegated**: Version 9.0\n\n* Updated the file management logic in the following action:\n\n  + **Download Attachments from Email**",
+        "summary": {
+          "title": "Download Attachments from Email - Version 9.0",
+          "summary": "The file management logic for the Download Attachments from Email action has been updated in version 9.0."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**CSV**: Version 35.0\n\n* Updated file path processing logic in the following connector:\n\n  + **CSV Connector**",
+        "summary": {
+          "title": "CSV Connector Update",
+          "summary": "The CSV connector has been updated to improve file path processing logic. Version 35.0 includes these changes."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Exchange**: Version 115.0\n\n* Updated the file management logic in the following action:\n\n  + **Download Attachments**",
+        "summary": {
+          "title": "Exchange 115.0",
+          "summary": "Version 115.0 of Exchange includes an update to the Download Attachments action's file management logic."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Microsoft Graph Mail**: Version 32.0\n\n* Updated the file management logic in the following action:\n\n  + **Download Attachments from Email**",
+        "summary": {
+          "title": "Microsoft Graph Mail v32.0",
+          "summary": "The file management logic for the Download Attachments from Email action has been updated."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**CrowdStrike Falcon**: Version 68.0\n\n* Update the following action to check if there is an existing identical running\n  scan for a provided hostname before creating a new one:\n\n  + **On-Demand Scan**",
+        "summary": {
+          "title": "CrowdStrike Falcon - On-Demand Scan Update",
+          "summary": "The On-Demand Scan action in CrowdStrike Falcon (v68.0) has been updated to prevent duplicate scans by checking for existing identical scans on a given hostname before initiating a new one."
         }
       },
       {
@@ -429,19 +461,19 @@
         }
       },
       {
-        "kind": "Announcement",
-        "content": "Release 6.3.65 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).\n\nThis release contains the following changes:",
-        "summary": {
-          "title": "Release 6.3.65 Rollout",
-          "summary": "Release 6.3.65 is now available in initial regions. Find the list of regions here: https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release"
-        }
-      },
-      {
         "kind": "Feature",
         "content": "**Delete high-load environments**\n\nYou can now easily delete environments with heavy loads directly from the platform.",
         "summary": {
           "title": "Delete high-load environments",
           "summary": "Easily delete high-load environments directly from the platform."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "Release 6.3.65 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).\n\nThis release contains the following changes:",
+        "summary": {
+          "title": "Release 6.3.65 Rollout",
+          "summary": "Release 6.3.65 is now available in initial regions. Find the list of regions here: https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release"
         }
       }
     ],
@@ -465,19 +497,19 @@
         }
       },
       {
-        "kind": "Feature",
-        "content": "**SentinelOneV2**: Version 42.0\n\n* The following new actions have been added:\n\n  + **Create Device Control Rule**\n  + **Delete Device Control Rule**\n  + **Update Device Control Rule**",
-        "summary": {
-          "title": "New Device Control Features in SentinelOneV2",
-          "summary": "SentinelOneV2 version 42.0 introduces new device control capabilities. You can now create, delete, and update device control rules directly."
-        }
-      },
-      {
         "kind": "Changed",
         "content": "**CrowdStrike Falcon**: Version 67.0\n\n* Fixed a bug where the Contains filter would fail to find hosts when the\n  `Max Hosts To Return` limit was applied in the following action:\n\n  + **List Host**",
         "summary": {
           "title": "CrowdStrike Falcon v67.0 Update",
           "summary": "This update addresses a bug affecting host searches with the Contains filter when the Max Hosts To Return limit was active. The issue has been resolved in the List Host action."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**SentinelOneV2**: Version 42.0\n\n* The following new actions have been added:\n\n  + **Create Device Control Rule**\n  + **Delete Device Control Rule**\n  + **Update Device Control Rule**",
+        "summary": {
+          "title": "New Device Control Features in SentinelOneV2",
+          "summary": "SentinelOneV2 version 42.0 introduces new device control capabilities. You can now create, delete, and update device control rules directly."
         }
       },
       {
@@ -529,38 +561,6 @@
     ],
     "2025-10-15": [
       {
-        "kind": "Feature",
-        "content": "**CrowdStrike Falcon**: Version 66.0\n\n* The following new action has been added:\n\n  + **Get Alert Details**",
-        "summary": {
-          "title": "CrowdStrike Falcon v66.0: New Alert Details Action",
-          "summary": "Version 66.0 of CrowdStrike Falcon introduces a new 'Get Alert Details' action."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "**Azure Active Directory**: Version 19.0\n\n* Improved performance by implementing a direct API filter query for group name\n  searches, which avoids fetching all groups and significantly reduces execution\n  time in large-group environments, in the following action:\n\n  + **List Members in Group**",
-        "summary": {
-          "title": "Azure Active Directory v19.0 Performance Update",
-          "summary": "The latest update to Azure Active Directory (v19.0) enhances the 'List Members in Group' action. Performance has been significantly improved by optimizing group name searches with a direct API filter query, reducing execution time, especially in environments with many groups."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "**CrowdStrike Falcon**: Version 66.0\n\n* Updated entity processing logic in the following actions:\n\n  + **Contain Endpoint**\n  + **Download File**\n  + **Execute Command**\n  + **Get Host Information**\n  + **Lift Contained Endpoint**\n  + **List Host Vulnerabilities**\n  + **On-Demand Scan**\n  + **Run Script**",
-        "summary": {
-          "title": "CrowdStrike Falcon v66.0 Update",
-          "summary": "The CrowdStrike Falcon platform has been updated to version 66.0. This release includes changes to the entity processing logic for several actions, enhancing the platform's capabilities."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "Updated dependencies in the following integrations:\n\n* **Microsoft Teams**: Version 30.0\n* **Microsoft Graph Mail Delegated**: Version 8.0\n* **Exchange**: Version 114.0\n* **Case Federation**: Version 5.0\n* **Azure Security Center**: Version 12.0",
-        "summary": {
-          "title": "Updated Integrations",
-          "summary": "Dependencies have been updated across several integrations, including Microsoft Teams, Microsoft Graph Mail Delegated, Exchange, Case Federation, and Azure Security Center."
-        }
-      },
-      {
         "kind": "Changed",
         "content": "**Microsoft Teams**: Version 30.0\n\n* **Integration**: Fixed an issue with the special characters in the query\n  parameters.",
         "summary": {
@@ -578,10 +578,26 @@
       },
       {
         "kind": "Changed",
-        "content": "**ThreatQ**: Version 15.0\n\n* Updated the API request payload to align with a change in the ThreatQ API in\n  the following actions:\n\n  + **Enrich IP**\n  + **Enrich URL**\n  + **Enrich Email**\n  + **Enrich Hash**\n  + **Enrich CVE**",
+        "content": "**CrowdStrike Falcon**: Version 66.0\n\n* Updated entity processing logic in the following actions:\n\n  + **Contain Endpoint**\n  + **Download File**\n  + **Execute Command**\n  + **Get Host Information**\n  + **Lift Contained Endpoint**\n  + **List Host Vulnerabilities**\n  + **On-Demand Scan**\n  + **Run Script**",
         "summary": {
-          "title": "ThreatQ v15.0 API Update",
-          "summary": "The ThreatQ API has been updated in version 15.0. This change affects the API request payload for the Enrich IP, Enrich URL, Enrich Email, Enrich Hash, and Enrich CVE actions."
+          "title": "CrowdStrike Falcon v66.0 Update",
+          "summary": "The CrowdStrike Falcon platform has been updated to version 66.0. This release includes changes to the entity processing logic for several actions, enhancing the platform's capabilities."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Azure Active Directory**: Version 19.0\n\n* Improved performance by implementing a direct API filter query for group name\n  searches, which avoids fetching all groups and significantly reduces execution\n  time in large-group environments, in the following action:\n\n  + **List Members in Group**",
+        "summary": {
+          "title": "Azure Active Directory v19.0 Performance Update",
+          "summary": "The latest update to Azure Active Directory (v19.0) enhances the 'List Members in Group' action. Performance has been significantly improved by optimizing group name searches with a direct API filter query, reducing execution time, especially in environments with many groups."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated dependencies in the following integrations:\n\n* **Microsoft Teams**: Version 30.0\n* **Microsoft Graph Mail Delegated**: Version 8.0\n* **Exchange**: Version 114.0\n* **Case Federation**: Version 5.0\n* **Azure Security Center**: Version 12.0",
+        "summary": {
+          "title": "Updated Integrations",
+          "summary": "Dependencies have been updated across several integrations, including Microsoft Teams, Microsoft Graph Mail Delegated, Exchange, Case Federation, and Azure Security Center."
         }
       },
       {
@@ -590,6 +606,22 @@
         "summary": {
           "title": "UrlScan.io v26.0",
           "summary": "UrlScan.io has been updated to version 26.0. This new version includes the ability to scan domains and IPs within the URL Check action."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**ThreatQ**: Version 15.0\n\n* Updated the API request payload to align with a change in the ThreatQ API in\n  the following actions:\n\n  + **Enrich IP**\n  + **Enrich URL**\n  + **Enrich Email**\n  + **Enrich Hash**\n  + **Enrich CVE**",
+        "summary": {
+          "title": "ThreatQ v15.0 API Update",
+          "summary": "The ThreatQ API has been updated in version 15.0. This change affects the API request payload for the Enrich IP, Enrich URL, Enrich Email, Enrich Hash, and Enrich CVE actions."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**CrowdStrike Falcon**: Version 66.0\n\n* The following new action has been added:\n\n  + **Get Alert Details**",
+        "summary": {
+          "title": "CrowdStrike Falcon v66.0: New Alert Details Action",
+          "summary": "Version 66.0 of CrowdStrike Falcon introduces a new 'Get Alert Details' action."
         }
       },
       {

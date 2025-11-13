@@ -2136,6 +2136,50 @@
 
 
 <h1 id="network-intelligence-center">Network Intelligence Center</h1>
+<h2 id="2025-11-10">2025-11-10</h2>
+<h3 id="feature">Feature</h3>
+<p>The following insight types and subtypes are available in Network Analyzer:</p>
+<ul>
+<li>Recommender insight subtypes:</li>
+<li><code>ROUTE_NEXT_HOP_FORWARDING_RULE_IP_MISMATCH</code></li>
+<li><code>ROUTE_NEXT_HOP_FORWARDING_RULE_TYPE_INVALID</code></li>
+<li><code>ROUTE_NEXT_HOP_ILB_VIP_NOT_ASSIGNED</code></li>
+<li><code>ROUTE_NEXT_HOP_IP_NOT_ASSIGNED</code></li>
+<li><code>ROUTE_NEXT_HOP_VM_NON_PRIMARY_IP</code></li>
+<li><code>ROUTE_NEXT_HOP_VM_WRONG_NETWORK</code></li>
+<li><code>ROUTE_NEXT_HOP_VPN_TUNNEL_NOT_ESTABLISHED</code></li>
+<li><code>NCC_DYNAMIC_ROUTE_FULLY_SHADOWED</code></li>
+<li>Cloud Logging insight types:</li>
+<li><code>ROUTE_INVALID_NEXT_HOP_FORWARDING_RULE_IP_MISMATCH</code></li>
+<li><code>ROUTE_INVALID_NEXT_HOP_FORWARDING_RULE_TYPE_INVALID</code></li>
+<li><code>ROUTE_INVALID_NEXT_HOP_ILB_VIP_NOT_ASSIGNED</code></li>
+<li><code>ROUTE_INVALID_NEXT_HOP_IP_NOT_ASSIGNED</code></li>
+<li><code>ROUTE_INVALID_NEXT_HOP_VM_NON_PRIMARY_IP</code></li>
+<li><code>ROUTE_INVALID_NEXT_HOP_VM_WRONG_NETWORK</code></li>
+<li><code>ROUTE_INVALID_NEXT_HOP_VPN_TUNNEL_NOT_ESTABLISHED</code></li>
+<li><code>DYNAMIC_ROUTE_SHADOWED_FULLY_SHADOWED_BY_NCC_SUBNET_ROUTE</code></li>
+<li><code>NCC_DYNAMIC_ROUTE_SHADOWED_FULLY_SHADOWED_BY_PEERING_SUBNET_ROUTE</code></li>
+<li><code>NCC_DYNAMIC_ROUTE_SHADOWED_FULLY_SHADOWED_BY_STATIC_ROUTE</code></li>
+<li><code>NCC_DYNAMIC_ROUTE_SHADOWED_FULLY_SHADOWED_BY_SUBNET_ROUTE</code></li>
+</ul>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/network-intelligence-center/docs/network-analyzer/insight-groups-types#routes_with_an_invalid_next_hop">Routes with an invalid next hop</a>
+and <a href="https://docs.cloud.google.com/network-intelligence-center/docs/network-analyzer/insight-groups-types#shadowed_dynamic_routes">Shadowed dynamic routes</a>.</p>
+<h3 id="changed">Changed</h3>
+<p>Network Analyzer no longer generates the following insight types and subtypes:</p>
+<ul>
+<li>Recommender insight subtypes:</li>
+<li><code>ROUTE_NEXT_HOP_ILB_BACKEND_IP_FORWARDING_DISABLED</code></li>
+<li><code>DYNAMIC_ROUTE_PARTIALLY_SHADOWED</code></li>
+<li><code>PEERING_DYNAMIC_ROUTE_PARTIALLY_SHADOWED</code></li>
+<li>Cloud Logging insight types:</li>
+<li><code>ROUTE_INVALID_NEXT_HOP_ILB_BACKEND_IP_FORWARDING_DISABLED</code></li>
+<li><code>DYNAMIC_ROUTE_SHADOWED_PARTIALLY_SHADOWED_BY_SUBNET_ROUTE</code></li>
+<li><code>DYNAMIC_ROUTE_SHADOWED_PARTIALLY_SHADOWED_BY_PEERING_SUBNET_ROUTE</code></li>
+<li><code>DYNAMIC_ROUTE_SHADOWED_PARTIALLY_SHADOWED_BY_STATIC_ROUTE</code></li>
+<li><code>DYNAMIC_ROUTE_SHADOWED_PARTIALLY_SHADOWED_BY_PEERING_STATIC_ROUTE</code></li>
+</ul>
+<hr />
 <h2 id="2025-09-30">2025-09-30</h2>
 <h3 id="deprecated">Deprecated</h3>
 <p>The following insight types and subtypes are no longer supported in <a href="https://docs.cloud.google.com/network-intelligence-center/docs/network-analyzer/overview">Network Analyzer</a>:</p>
@@ -2165,6 +2209,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#network-intelligence-center">Network Intelligence Center</a></li>
+          <li class="nav-item">
+            <a href="#2025-11-10" class="nav-link">2025-11-10</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-09-30" class="nav-link">2025-09-30</a>
           </li>

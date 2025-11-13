@@ -115,6 +115,50 @@ The new [MITRE ATT&CK coverage dashboard](https://docs.cloud.google.com/chronicl
 ---
 ## 2025-10-31
 
+### Feature
+
+**Raw log search enhancements**
+
+Google SecOps now includes enhancements to raw log search to boost usability,
+performance, and data analysis:
+
+* **New filtering options**: Filter raw log results by their parsing status or
+  by one or more log sources.
+* **Optimized results view**: Expand or collapse the Trend over time graph,
+  providing more space for results.
+* **Download raw log results**: Download raw log results to a CSV file. By default,
+  the **Timestamp**, **Event Type**, and **Raw log** columns are included. You can
+  select additional columns through **Column Manager**.
+* **Enhanced search visibility**: The search query and applied filters are now
+  displayed on the **Search** page.
+* **New API for raw log search**: Use the **legacySearchRawLogsV2** API to search
+  for raw logs within a specified Google SecOps instance.
+
+For more details, see the following topics:
+
+* [Filter data in Raw Log Search](https://docs.cloud.google.com/chronicle/docs/investigation/filter-data-raw-log-scan-view)
+* [Conduct a raw log search](https://docs.cloud.google.com/chronicle/docs/investigation/raw-log-search-in-investigate)
+* [Use raw log search](https://docs.cloud.google.com/chronicle/docs/investigation/search-raw-logs)
+* [Method: legacy.legacySearchRawLogsV2](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.legacy/legacySearchRawLogsV2)
+
+### Feature
+
+**Search usability enhancements**
+
+Google SecOps has introduced the following capabilities to improve usability,
+performance, and customization in search results:
+
+* **Improved performance for large result sets**: For broad queries, Google SecOps
+  now provides paginated search results. You can select the number of rows to
+  display per page. This pagination applies to the 10,000 results displayed in the table.
+* **Optimized results view**: The search editor now automatically collapses after
+  a query runs, providing more space for results. You can also hide or show the
+  **Charts** and **Aggregations** panels with the **View Options** list.
+* **Customizable column views**: You can now create, save, and share custom sets
+  of columns in the **Events** table for consistent analysis across teams.
+
+For more details, see [Search for events and alerts](https://docs.cloud.google.com/chronicle/docs/investigation/udm-search).
+
 ### Changed
 
 **Custom log type rename**

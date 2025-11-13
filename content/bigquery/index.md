@@ -4,14 +4,6 @@
 
 ### Feature
 
-The BigQuery [Overview page](https://docs.cloud.google.com/bigquery/docs/bigquery-web-ui#open-overview)
-is now your hub for discovering tutorials, features, and resources to help you
-get the most out of BigQuery. It provides guided paths for users
-of all skill levels. This feature is in
-[Preview](https://cloud.google.com/products/#product-launch-stages).
-
-### Feature
-
 You can now use the
 [interactive SQL translator](https://docs.cloud.google.com/bigquery/docs/interactive-sql-translator), the
 [translation API](https://docs.cloud.google.com/bigquery/docs/api-sql-translator), and the
@@ -25,6 +17,14 @@ These features are in [Preview](https://cloud.google.com/products/#product-launc
 
 ### Feature
 
+The BigQuery [Overview page](https://docs.cloud.google.com/bigquery/docs/bigquery-web-ui#open-overview)
+is now your hub for discovering tutorials, features, and resources to help you
+get the most out of BigQuery. It provides guided paths for users
+of all skill levels. This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
 You can now use [custom constraints](https://docs.cloud.google.com/bigquery/docs/custom-constraints) with an
 Organization Policy to provide more granular control over specific fields for
 BigQuery dataset resources. This feature is [generally available](https://docs.cloud.google.com/products#product-launch-stages) (GA).
@@ -34,8 +34,19 @@ BigQuery dataset resources. This feature is [generally available](https://docs.c
 
 ### Feature
 
-Partitioning is now available for
-[BigLake tables for Apache Iceberg in BigQuery](https://docs.cloud.google.com/bigquery/docs/iceberg-tables#use_partitioning).
+You can [aggregate](https://docs.cloud.google.com/bigquery/docs/data-prep-get-suggestions#aggregate)
+and [deduplicate](https://docs.cloud.google.com/bigquery/docs/data-prep-get-suggestions#deduplicate)
+table data with Gemini assistance in your
+[BigQuery data preparations](https://docs.cloud.google.com/bigquery/docs/data-prep-introduction).
+These features are [generally available](https://docs.cloud.google.com/products#product-launch-stages) (GA).
+
+### Feature
+
+BigQuery ML now offers the
+[`AI.DETECT_ANOMALIES` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-detect-anomalies).
+Use the `AI.DETECT_ANOMALIES` function with a TimesFM model to
+[detect anomalies](https://docs.cloud.google.com/bigquery/docs/anomaly-detection-overview)
+in time series data, using historical data as a baseline.
 This feature is in
 [Preview](https://cloud.google.com/products/#product-launch-stages).
 
@@ -52,21 +63,10 @@ functions to achieve better forecasting accuracy and lower latency.
 
 ### Feature
 
-BigQuery ML now offers the
-[`AI.DETECT_ANOMALIES` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-detect-anomalies).
-Use the `AI.DETECT_ANOMALIES` function with a TimesFM model to
-[detect anomalies](https://docs.cloud.google.com/bigquery/docs/anomaly-detection-overview)
-in time series data, using historical data as a baseline.
+Partitioning is now available for
+[BigLake tables for Apache Iceberg in BigQuery](https://docs.cloud.google.com/bigquery/docs/iceberg-tables#use_partitioning).
 This feature is in
 [Preview](https://cloud.google.com/products/#product-launch-stages).
-
-### Feature
-
-You can [aggregate](https://docs.cloud.google.com/bigquery/docs/data-prep-get-suggestions#aggregate)
-and [deduplicate](https://docs.cloud.google.com/bigquery/docs/data-prep-get-suggestions#deduplicate)
-table data with Gemini assistance in your
-[BigQuery data preparations](https://docs.cloud.google.com/bigquery/docs/data-prep-introduction).
-These features are [generally available](https://docs.cloud.google.com/products#product-launch-stages) (GA).
 
 ---
 ## 2025-11-06
@@ -169,19 +169,6 @@ allocation for high-priority workloads. This feature is in
 
 ### Feature
 
-The BigQuery Data Transfer Service can now transfer data from the
-following data sources:
-
-* [Facebook Ads](https://docs.cloud.google.com/bigquery/docs/facebook-ads-transfer)
-* [Salesforce](https://docs.cloud.google.com/bigquery/docs/salesforce-transfer)
-* [Salesforce Marketing Cloud](https://docs.cloud.google.com/bigquery/docs/sfmc-transfer)
-* [ServiceNow](https://docs.cloud.google.com/bigquery/docs/servicenow-transfer)
-
-Transfers from these data sources are now [generally available](https://cloud.google.com/products#product-launch-stages)
-(GA).
-
-### Feature
-
 Subscriber email logging lets you log the principal identifiers of users
 who execute jobs and queries against linked datasets. You can enable
 logging at the
@@ -193,23 +180,21 @@ The logged data is available in the `job_principal_subject` field of the
 This feature is
 [generally available](https://cloud.google.com/products#product-launch-stages).
 
----
-## 2025-10-27
-
 ### Feature
 
-BigQuery now offers the following
-[managed AI functions](https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#managed_ai_functions)
-that use Gemini to help you filter, join, rank, and classify your data:
+The BigQuery Data Transfer Service can now transfer data from the
+following data sources:
 
-* [`AI.IF`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-if):
-  Filter and join text or multimodal data based on a condition described in natural language.
-* [`AI.SCORE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-score):
-  Rate text or multimodal input to rank your data by quality, similarity, or other criteria.
-* [`AI.CLASSIFY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-classify):
-  Classify text into user-defined categories.
+* [Facebook Ads](https://docs.cloud.google.com/bigquery/docs/facebook-ads-transfer)
+* [Salesforce](https://docs.cloud.google.com/bigquery/docs/salesforce-transfer)
+* [Salesforce Marketing Cloud](https://docs.cloud.google.com/bigquery/docs/sfmc-transfer)
+* [ServiceNow](https://docs.cloud.google.com/bigquery/docs/servicenow-transfer)
 
-These functions are in [Preview](https://cloud.google.com/products/#product-launch-stages).
+Transfers from these data sources are now [generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
+## 2025-10-27
 
 ### Feature
 
@@ -229,6 +214,21 @@ jobs](https://docs.cloud.google.com/bigquery/docs/admin-jobs-explorer#compare-jo
 and potential areas to improve query performance.
 
 This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+BigQuery now offers the following
+[managed AI functions](https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#managed_ai_functions)
+that use Gemini to help you filter, join, rank, and classify your data:
+
+* [`AI.IF`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-if):
+  Filter and join text or multimodal data based on a condition described in natural language.
+* [`AI.SCORE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-score):
+  Rate text or multimodal input to rank your data by quality, similarity, or other criteria.
+* [`AI.CLASSIFY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-classify):
+  Classify text into user-defined categories.
+
+These functions are in [Preview](https://cloud.google.com/products/#product-launch-stages).
 
 ### Feature
 

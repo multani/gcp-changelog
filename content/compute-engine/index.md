@@ -1,5 +1,17 @@
 # Compute Engine
 
+## 2025-11-13
+
+### Feature
+
+**Preview**: Future reservation requests in calendar mode support reserving
+capacity for `a3-megagpu-8g` and `a3-highgpu-8g` machine types. Use future
+reservation requests in calendar mode to obtain resources for running model
+pre-training, model fine-tuning, simulation, and inference workloads. For more
+information, see
+[About future reservation requests in calendar mode](https://docs.cloud.google.com/compute/docs/instances/future-reservations-calendar-mode-overview).
+
+---
 ## 2025-11-10
 
 ### Issue

@@ -24,9 +24,13 @@ On October 31, 2025, we released an updated version of Apigee (1-16-0-apigee-4).
 ---
 ## 2025-10-29
 
-### Announcement
+### Feature
 
-On October 29, 2025, we released an updated version of Apigee.
+**Enhanced Validation for API products**
+
+Heightened validation logic for creating and updating API products is now available. Apigee now explicitly verifies proxy and environment resources against your organization when creating and updating API products.
+
+Please ensure that all referenced resources exist and are correctly associated with your organization to avoid validation errors.
 
 ### Feature
 
@@ -41,20 +45,12 @@ for information and instructions.
 NOTE: API product-scoped quotas are not supported in Apigee hybrid
 at this time.
 
-### Feature
+### Announcement
 
-**Enhanced Validation for API products**
-
-Heightened validation logic for creating and updating API products is now available. Apigee now explicitly verifies proxy and environment resources against your organization when creating and updating API products.
-
-Please ensure that all referenced resources exist and are correctly associated with your organization to avoid validation errors.
+On October 29, 2025, we released an updated version of Apigee.
 
 ---
 ## 2025-10-27
-
-### Announcement
-
-On October 27, 2025, we released an updated version of Apigee.
 
 ### Feature
 
@@ -67,6 +63,10 @@ cases when the URL is dynamically constructed based on user input.
 For more information, see the
 [target flow variables](https://docs.cloud.google.com/apigee/docs/api-platform/reference/variables-reference#target)
 documentation.
+
+### Announcement
+
+On October 27, 2025, we released an updated version of Apigee.
 
 ---
 ## 2025-10-16

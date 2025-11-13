@@ -31,14 +31,6 @@
     ],
     "2025-10-21": [
       {
-        "kind": "Fixed",
-        "content": "* Resolved a problem with timestamp conversions during recovery range calculations in SAP HANA\n* Fixed a bug that prevented the identification of persistent disk names in some SAP HANA environments\n* Fixed DB2 restore issue wrt pre-flight checks and instances with a large number of archive logs\n* Fixed a logging issue during Postgres upgrades where an incorrect version was displayed after a rollback\n* Resolved a restore failure when using a combination of full and incremental backups for SAP ASE\n* Fixed a connection leak and an issue with executor service shutdown in the VMware hypervisor integration, improving reliability.",
-        "summary": {
-          "title": "SAP HANA fixes",
-          "summary": "Fixed timestamp conversions and persistent disk identification for SAP HANA."
-        }
-      },
-      {
         "kind": "Feature",
         "content": "* Change Block Tracking (CBT) support has been added for latest kernel versions in RHEL 8.10, 9.2, 9.4 and 9.6.\n* Improved alerting for long-running jobs by adding application type and name to the alerts.",
         "summary": {
@@ -52,6 +44,14 @@
         "summary": {
           "title": "Security Updates",
           "summary": "This release addresses several CVEs to enhance security."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "* Resolved a problem with timestamp conversions during recovery range calculations in SAP HANA\n* Fixed a bug that prevented the identification of persistent disk names in some SAP HANA environments\n* Fixed DB2 restore issue wrt pre-flight checks and instances with a large number of archive logs\n* Fixed a logging issue during Postgres upgrades where an incorrect version was displayed after a rollback\n* Resolved a restore failure when using a combination of full and incremental backups for SAP ASE\n* Fixed a connection leak and an issue with executor service shutdown in the VMware hypervisor integration, improving reliability.",
+        "summary": {
+          "title": "SAP HANA fixes",
+          "summary": "Fixed timestamp conversions and persistent disk identification for SAP HANA."
         }
       }
     ],

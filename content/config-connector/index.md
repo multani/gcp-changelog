@@ -6,21 +6,6 @@
 
 Config Connector version 1.137.0 is now available.
 
-### Changed
-
-New Beta Resources (Direct Reconciler):
-
-* `DocumentAIProcessorVersion`
-* `EssentialContactsContact`
-* `BigQueryBigLakeTable`
-* `BackupDRBackupPlan`
-
-### Changed
-
-New Alpha Resources (Direct Reconciler):
-
-* `BigtableMaterializedView`
-
 ### Feature
 
 New Fields:
@@ -54,6 +39,21 @@ Bug Fixes:
 * Fixed a flakiness issue in tests.
 * Fixed an issue with bad labels in tests.
 * Fixed an issue with `etag` in direct reconciliation.
+
+### Changed
+
+New Alpha Resources (Direct Reconciler):
+
+* `BigtableMaterializedView`
+
+### Changed
+
+New Beta Resources (Direct Reconciler):
+
+* `DocumentAIProcessorVersion`
+* `EssentialContactsContact`
+* `BigQueryBigLakeTable`
+* `BackupDRBackupPlan`
 
 ---
 ## 2025-10-07

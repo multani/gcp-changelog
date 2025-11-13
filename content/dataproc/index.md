@@ -24,6 +24,10 @@ has been blocklisted and cannot be used when creating a new cluster.
 ---
 ## 2025-10-28
 
+### Fixed
+
+Fixed a Jupyter Kernel Gateway bug that caused failures while restarting kernels.
+
 ### Announcement
 
 New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):
@@ -32,10 +36,6 @@ New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.goog
 * 2.1.102-debian11, 2.1.102-ubuntu20, 2.1.102-ubuntu20-arm, 2.1.102-rocky8
 * 2.2.70-debian12, 2.2.70-ubuntu22, 2.2.70-ubuntu22-arm, 2.2.70-rocky9
 * 2.3.17-debian12, 2.3.17-ubuntu22, 2.3.17-ubuntu22-arm, 2.3.17-ml-ubuntu22, 2.3.17-rocky9
-
-### Fixed
-
-Fixed a Jupyter Kernel Gateway bug that caused failures while restarting kernels.
 
 ---
 ## 2025-10-22

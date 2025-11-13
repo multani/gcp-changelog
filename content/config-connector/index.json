@@ -11,22 +11,6 @@
         }
       },
       {
-        "kind": "Changed",
-        "content": "New Beta Resources (Direct Reconciler):\n\n* `DocumentAIProcessorVersion`\n* `EssentialContactsContact`\n* `BigQueryBigLakeTable`\n* `BackupDRBackupPlan`",
-        "summary": {
-          "title": "New Beta Resources",
-          "summary": "We are introducing new beta resources: DocumentAIProcessorVersion, EssentialContactsContact, BigQueryBigLakeTable, and BackupDRBackupPlan."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "New Alpha Resources (Direct Reconciler):\n\n* `BigtableMaterializedView`",
-        "summary": {
-          "title": "New Alpha Resources (Direct Reconciler)",
-          "summary": "New Alpha Resources (Direct Reconciler) including BigtableMaterializedView are now available."
-        }
-      },
-      {
         "kind": "Feature",
         "content": "New Fields:\n\n* `BigtableMaterializedView`: Added `spec.sourceTableRef` and `spec.definition`.\n* `BackupDRBackupPlan`: Added `spec.backupConfig.retentionPeriodDays` and `spec.backupConfig.backupWindow`.\n* `MemorystoreInstance`: Added support for `MEMCACHE` and `REDIS` instance types.",
         "summary": {
@@ -48,6 +32,22 @@
         "summary": {
           "title": "Fixed an issue with etag in direct reconciliation.",
           "summary": "This release includes several bug fixes. Notably, we resolved an issue with sorting for ComputeBackendService backends and corrected unsupported runtime values for CloudFunctionsFunction. Additionally, label-related issues for BackupDRBackupPlan and RunJob have been addressed, along with a fuzzing issue for FirestoreField and an import problem for KMSCryptoKey."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "New Alpha Resources (Direct Reconciler):\n\n* `BigtableMaterializedView`",
+        "summary": {
+          "title": "New Alpha Resources (Direct Reconciler)",
+          "summary": "New Alpha Resources (Direct Reconciler) including BigtableMaterializedView are now available."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "New Beta Resources (Direct Reconciler):\n\n* `DocumentAIProcessorVersion`\n* `EssentialContactsContact`\n* `BigQueryBigLakeTable`\n* `BackupDRBackupPlan`",
+        "summary": {
+          "title": "New Beta Resources",
+          "summary": "We are introducing new beta resources: DocumentAIProcessorVersion, EssentialContactsContact, BigQueryBigLakeTable, and BackupDRBackupPlan."
         }
       }
     ],

@@ -1,5 +1,16 @@
 # Service Extensions
 
+## 2025-11-13
+
+### Feature
+
+[Edge extensions](https://docs.cloud.google.com/service-extensions/docs/lb-extensions-overview#edge-extensions) help you manipulate request headers early in the processing lifecycle of global external Application Load Balancers to influence caching and routing decisions. This feature is in **General Availability**.
+
+### Feature
+
+Regional external and internal Application Load Balancers support [route](https://docs.cloud.google.com/service-extensions/docs/configure-route-extensions#configure-route-plugins) and [traffic](https://docs.cloud.google.com/service-extensions/docs/configure-traffic-extensions#configure-traffic-plugins) extensions using plugins. This feature is in **Preview**.
+
+---
 ## 2025-11-05
 
 ### Feature

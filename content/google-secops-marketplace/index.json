@@ -20,6 +20,30 @@
       },
       {
         "kind": "Changed",
+        "content": "**CrowdStrike Falcon**: Version 69.0\n\n* Refactored the pagination and filtering mechanism in the following actions:\n\n  + **List Uploaded IOCs**\n  + **List Hosts**\n* Added support for wildcards to `File Paths to Scan` in the following action:\n\n  + **On-Demand Scan**",
+        "summary": {
+          "title": "CrowdStrike Falcon v69.0 Update",
+          "summary": "The latest version of CrowdStrike Falcon (69.0) introduces significant improvements, including refactored pagination and filtering for enhanced data retrieval in \"List Uploaded IOCs\" and \"List Hosts\" actions. Additionally, the \"On-Demand Scan\" action now supports wildcards in file paths, allowing for more flexible scanning options."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Cybereason**: Version 21.0\n\n* **Integration**: Added ability to provide a CA Certificate file as part of the\n  configuration.",
+        "summary": {
+          "title": "Cybereason v21.0 Update",
+          "summary": "The new version of Cybereason (21.0) includes an update that allows users to provide a CA Certificate file during configuration. This enhances the integration capabilities of the software."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Google Chronicle**: Version 67.0\n\n* Updated curated detections processing logic in the following action:\n\n  + **Get Detection Details**",
+        "summary": {
+          "title": "Chronicle V67.0 Detection Logic Update",
+          "summary": "The curated detections processing logic has been updated in the Get Detection Details action for Version 67.0."
+        }
+      },
+      {
+        "kind": "Changed",
         "content": "The following integrations are now GUS recommended:\n\n* **CrowdStrike Falcon**: Version 69.0\n* **Wiz**: Version .0\n* **Fortigate**: Version 16.0",
         "summary": {
           "title": "New Recommended Integrations",
@@ -44,52 +68,28 @@
       },
       {
         "kind": "Changed",
-        "content": "**Cybereason**: Version 21.0\n\n* **Integration**: Added ability to provide a CA Certificate file as part of the\n  configuration.",
-        "summary": {
-          "title": "Cybereason v21.0 Update",
-          "summary": "The new version of Cybereason (21.0) includes an update that allows users to provide a CA Certificate file during configuration. This enhances the integration capabilities of the software."
-        }
-      },
-      {
-        "kind": "Changed",
         "content": "**Google Security Command Center**: Version 14.0\n\n* Added the ability to ingest Toxic Combinations and Chokepoints in the\n  following connector:\n\n  + **Google Security Command Center - Findings Connector**",
         "summary": {
           "title": "Toxic Combinations and Chokepoints Ingestion",
           "summary": "Version 14.0 of Google Security Command Center now supports ingesting Toxic Combinations and Chokepoints data. This enhancement is available through the Findings Connector."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "**Google Chronicle**: Version 67.0\n\n* Updated curated detections processing logic in the following action:\n\n  + **Get Detection Details**",
-        "summary": {
-          "title": "Chronicle V67.0 Detection Logic Update",
-          "summary": "The curated detections processing logic has been updated in the Get Detection Details action for Version 67.0."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "**CrowdStrike Falcon**: Version 69.0\n\n* Refactored the pagination and filtering mechanism in the following actions:\n\n  + **List Uploaded IOCs**\n  + **List Hosts**\n* Added support for wildcards to `File Paths to Scan` in the following action:\n\n  + **On-Demand Scan**",
-        "summary": {
-          "title": "CrowdStrike Falcon v69.0 Update",
-          "summary": "The latest version of CrowdStrike Falcon (69.0) introduces significant improvements, including refactored pagination and filtering for enhanced data retrieval in \"List Uploaded IOCs\" and \"List Hosts\" actions. Additionally, the \"On-Demand Scan\" action now supports wildcards in file paths, allowing for more flexible scanning options."
         }
       }
     ],
     "2025-11-05": [
       {
         "kind": "Feature",
-        "content": "**Palo Alto XDR**: Version 20.0\n\n* The following new action has been added:\n\n  + **Scan Endpoint**",
+        "content": "**SentinelOneV2**: Version 43.0\n\n* The following new action has been added:\n\n  + **Get Site Agents**",
         "summary": {
-          "title": "Palo Alto XDR 20.0: New Scan Endpoint Action",
-          "summary": "Palo Alto XDR version 20.0 introduces a new 'Scan Endpoint' action. This feature allows for enhanced endpoint security analysis."
+          "title": "SentinelOneV2: Get Site Agents Action",
+          "summary": "A new 'Get Site Agents' action has been added to SentinelOneV2, version 43.0."
         }
       },
       {
         "kind": "Changed",
-        "content": "**AWS Identity and Access Management**: Version 7.0\n\n* Refactored the following actions:\n\n  + **Create User**\n  + **Create Group**\n  + **Create Policy**\n  + **List Users**\n  + **List Groups**\n  + **List Policies**",
+        "content": "**FortiAnalyzer**: Version 8.0\n\n* Updated search processing logic in the following action:\n\n  + **Search Logs**",
         "summary": {
-          "title": "AWS IAM v7.0",
-          "summary": "AWS Identity and Access Management (IAM) has been updated to version 7.0. This release includes refactoring of several key actions: Create User, Create Group, Create Policy, List Users, List Groups, and List Policies."
+          "title": "FortiAnalyzer 8.0 Update",
+          "summary": "The search logs feature in FortiAnalyzer version 8.0 has been enhanced with updated processing logic."
         }
       },
       {
@@ -109,63 +109,23 @@
         }
       },
       {
-        "kind": "Changed",
-        "content": "**FortiAnalyzer**: Version 8.0\n\n* Updated search processing logic in the following action:\n\n  + **Search Logs**",
+        "kind": "Feature",
+        "content": "**Palo Alto XDR**: Version 20.0\n\n* The following new action has been added:\n\n  + **Scan Endpoint**",
         "summary": {
-          "title": "FortiAnalyzer 8.0 Update",
-          "summary": "The search logs feature in FortiAnalyzer version 8.0 has been enhanced with updated processing logic."
+          "title": "Palo Alto XDR 20.0: New Scan Endpoint Action",
+          "summary": "Palo Alto XDR version 20.0 introduces a new 'Scan Endpoint' action. This feature allows for enhanced endpoint security analysis."
         }
       },
       {
-        "kind": "Feature",
-        "content": "**SentinelOneV2**: Version 43.0\n\n* The following new action has been added:\n\n  + **Get Site Agents**",
+        "kind": "Changed",
+        "content": "**AWS Identity and Access Management**: Version 7.0\n\n* Refactored the following actions:\n\n  + **Create User**\n  + **Create Group**\n  + **Create Policy**\n  + **List Users**\n  + **List Groups**\n  + **List Policies**",
         "summary": {
-          "title": "SentinelOneV2: Get Site Agents Action",
-          "summary": "A new 'Get Site Agents' action has been added to SentinelOneV2, version 43.0."
+          "title": "AWS IAM v7.0",
+          "summary": "AWS Identity and Access Management (IAM) has been updated to version 7.0. This release includes refactoring of several key actions: Create User, Create Group, Create Policy, List Users, List Groups, and List Policies."
         }
       }
     ],
     "2025-10-29": [
-      {
-        "kind": "Changed",
-        "content": "**CSV**: Version 35.0\n\n* Updated file path processing logic in the following connector:\n\n  + **CSV Connector**",
-        "summary": {
-          "title": "CSV Connector Update",
-          "summary": "The CSV connector has been updated with new file path processing logic."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "**CrowdStrike Falcon**: Version 68.0\n\n* Update the following action to check if there is an existing identical running\n  scan for a provided hostname before creating a new one:\n\n  + **On-Demand Scan**",
-        "summary": {
-          "title": "CrowdStrike Falcon v68.0: On-Demand Scan Update",
-          "summary": "CrowdStrike Falcon version 68.0 includes an update to the On-Demand Scan feature. The system will now check for existing identical running scans on a provided hostname before initiating a new one."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "**Exchange**: Version 115.0\n\n* Updated the file management logic in the following action:\n\n  + **Download Attachments**",
-        "summary": {
-          "title": "Exchange 115.0",
-          "summary": "Version 115.0 of Exchange is here, with an update to the Download Attachments action's file management logic."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "**Microsoft Graph Mail**: Version 32.0\n\n* Updated the file management logic in the following action:\n\n  + **Download Attachments from Email**",
-        "summary": {
-          "title": "Microsoft Graph Mail v32.0 Update",
-          "summary": "The Microsoft Graph Mail V32.0 update introduces changes to file management, specifically enhancing the 'Download Attachments from Email' action."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "**Microsoft Graph Mail Delegated**: Version 9.0\n\n* Updated the file management logic in the following action:\n\n  + **Download Attachments from Email**",
-        "summary": {
-          "title": "Microsoft Graph Mail Delegated - Version 9.0",
-          "summary": "The Download Attachments from Email action has been updated with new file management logic."
-        }
-      },
       {
         "kind": "Changed",
         "content": "**Palo Alto Cortex XDR**: Version 19.0\n\n* Updated incident processing logic in the following action:\n\n  + **Get Incident Details**\n* Added new filtering options, the ability to create a SecOps alert for every\n  Palo Alto XDR alert, and the ability to track updates to an incident in the\n  following connector:\n\n  + **Palo Alto Cortex XDR Connector**",
@@ -189,23 +149,63 @@
           "title": "ZScaler 10.0 Update",
           "summary": "Version 10.0 of ZScaler now supports the domain entity type for Whitelist and Lookup Entity actions."
         }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Microsoft Graph Mail Delegated**: Version 9.0\n\n* Updated the file management logic in the following action:\n\n  + **Download Attachments from Email**",
+        "summary": {
+          "title": "Microsoft Graph Mail Delegated - Version 9.0",
+          "summary": "The Download Attachments from Email action has been updated with new file management logic."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**CSV**: Version 35.0\n\n* Updated file path processing logic in the following connector:\n\n  + **CSV Connector**",
+        "summary": {
+          "title": "CSV Connector Update",
+          "summary": "The CSV connector has been updated with new file path processing logic."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Exchange**: Version 115.0\n\n* Updated the file management logic in the following action:\n\n  + **Download Attachments**",
+        "summary": {
+          "title": "Exchange 115.0",
+          "summary": "Version 115.0 of Exchange is here, with an update to the Download Attachments action's file management logic."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Microsoft Graph Mail**: Version 32.0\n\n* Updated the file management logic in the following action:\n\n  + **Download Attachments from Email**",
+        "summary": {
+          "title": "Microsoft Graph Mail v32.0 Update",
+          "summary": "The Microsoft Graph Mail V32.0 update introduces changes to file management, specifically enhancing the 'Download Attachments from Email' action."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**CrowdStrike Falcon**: Version 68.0\n\n* Update the following action to check if there is an existing identical running\n  scan for a provided hostname before creating a new one:\n\n  + **On-Demand Scan**",
+        "summary": {
+          "title": "CrowdStrike Falcon v68.0: On-Demand Scan Update",
+          "summary": "CrowdStrike Falcon version 68.0 includes an update to the On-Demand Scan feature. The system will now check for existing identical running scans on a provided hostname before initiating a new one."
+        }
       }
     ],
     "2025-10-22": [
-      {
-        "kind": "Feature",
-        "content": "**SentinelOneV2**: Version 42.0\n\n* The following new actions have been added:\n\n  + **Create Device Control Rule**\n  + **Delete Device Control Rule**\n  + **Update Device Control Rule**",
-        "summary": {
-          "title": "New Device Control Features in SentinelOneV2",
-          "summary": "SentinelOneV2 version 42.0 introduces new capabilities for managing device control. Users can now create, delete, and update device control rules directly."
-        }
-      },
       {
         "kind": "Changed",
         "content": "**CrowdStrike Falcon**: Version 67.0\n\n* Fixed a bug where the Contains filter would fail to find hosts when the\n  `Max Hosts To Return` limit was applied in the following action:\n\n  + **List Host**",
         "summary": {
           "title": "CrowdStrike Falcon v67.0 Update",
           "summary": "Version 67.0 of CrowdStrike Falcon has been released. This update includes a fix for the Contains filter bug when the Max Hosts To Return limit is applied to the List Host action."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**SentinelOneV2**: Version 42.0\n\n* The following new actions have been added:\n\n  + **Create Device Control Rule**\n  + **Delete Device Control Rule**\n  + **Update Device Control Rule**",
+        "summary": {
+          "title": "New Device Control Features in SentinelOneV2",
+          "summary": "SentinelOneV2 version 42.0 introduces new capabilities for managing device control. Users can now create, delete, and update device control rules directly."
         }
       },
       {
@@ -227,38 +227,6 @@
     ],
     "2025-10-15": [
       {
-        "kind": "Feature",
-        "content": "**CrowdStrike Falcon**: Version 66.0\n\n* The following new action has been added:\n\n  + **Get Alert Details**",
-        "summary": {
-          "title": "CrowdStrike Falcon v66.0 Alert Details",
-          "summary": "A new 'Get Alert Details' action has been added to CrowdStrike Falcon, version 66.0."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "**Azure Active Directory**: Version 19.0\n\n* Improved performance by implementing a direct API filter query for group name\n  searches, which avoids fetching all groups and significantly reduces execution\n  time in large-group environments, in the following action:\n\n  + **List Members in Group**",
-        "summary": {
-          "title": "Azure Active Directory v19.0 Update",
-          "summary": "Version 19.0 of Azure Active Directory introduces a performance enhancement for the List Members in Group action. By implementing a direct API filter query for group name searches, it now avoids fetching all groups, leading to significantly reduced execution times, especially in environments with large numbers of groups."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "**CrowdStrike Falcon**: Version 66.0\n\n* Updated entity processing logic in the following actions:\n\n  + **Contain Endpoint**\n  + **Download File**\n  + **Execute Command**\n  + **Get Host Information**\n  + **Lift Contained Endpoint**\n  + **List Host Vulnerabilities**\n  + **On-Demand Scan**\n  + **Run Script**",
-        "summary": {
-          "title": "CrowdStrike Falcon v66.0 Update",
-          "summary": "The CrowdStrike Falcon app has been updated to version 66.0. This release includes changes to entity processing logic for several actions, including endpoint containment, file downloads, command execution, host information retrieval, and more."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "Updated dependencies in the following integrations:\n\n* **Microsoft Teams**: Version 30.0\n* **Microsoft Graph Mail Delegated**: Version 8.0\n* **Exchange**: Version 114.0\n* **Case Federation**: Version 5.0\n* **Azure Security Center**: Version 12.0",
-        "summary": {
-          "title": "Updated Integrations",
-          "summary": "Dependencies have been updated across several integrations, including Microsoft Teams, Microsoft Graph Mail Delegated, Exchange, Case Federation, and Azure Security Center."
-        }
-      },
-      {
         "kind": "Changed",
         "content": "**Microsoft Teams**: Version 30.0\n\n* **Integration**: Fixed an issue with the special characters in the query\n  parameters.",
         "summary": {
@@ -276,10 +244,26 @@
       },
       {
         "kind": "Changed",
-        "content": "**ThreatQ**: Version 15.0\n\n* Updated the API request payload to align with a change in the ThreatQ API in\n  the following actions:\n\n  + **Enrich IP**\n  + **Enrich URL**\n  + **Enrich Email**\n  + **Enrich Hash**\n  + **Enrich CVE**",
+        "content": "**CrowdStrike Falcon**: Version 66.0\n\n* Updated entity processing logic in the following actions:\n\n  + **Contain Endpoint**\n  + **Download File**\n  + **Execute Command**\n  + **Get Host Information**\n  + **Lift Contained Endpoint**\n  + **List Host Vulnerabilities**\n  + **On-Demand Scan**\n  + **Run Script**",
         "summary": {
-          "title": "ThreatQ v15.0 Update",
-          "summary": "The API request payload has been updated for several actions, including Enrich IP, URL, Email, Hash, and CVE, to align with recent changes in the ThreatQ API."
+          "title": "CrowdStrike Falcon v66.0 Update",
+          "summary": "The CrowdStrike Falcon app has been updated to version 66.0. This release includes changes to entity processing logic for several actions, including endpoint containment, file downloads, command execution, host information retrieval, and more."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**Azure Active Directory**: Version 19.0\n\n* Improved performance by implementing a direct API filter query for group name\n  searches, which avoids fetching all groups and significantly reduces execution\n  time in large-group environments, in the following action:\n\n  + **List Members in Group**",
+        "summary": {
+          "title": "Azure Active Directory v19.0 Update",
+          "summary": "Version 19.0 of Azure Active Directory introduces a performance enhancement for the List Members in Group action. By implementing a direct API filter query for group name searches, it now avoids fetching all groups, leading to significantly reduced execution times, especially in environments with large numbers of groups."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated dependencies in the following integrations:\n\n* **Microsoft Teams**: Version 30.0\n* **Microsoft Graph Mail Delegated**: Version 8.0\n* **Exchange**: Version 114.0\n* **Case Federation**: Version 5.0\n* **Azure Security Center**: Version 12.0",
+        "summary": {
+          "title": "Updated Integrations",
+          "summary": "Dependencies have been updated across several integrations, including Microsoft Teams, Microsoft Graph Mail Delegated, Exchange, Case Federation, and Azure Security Center."
         }
       },
       {
@@ -288,6 +272,22 @@
         "summary": {
           "title": "UrlScan.io - Version 26.0",
           "summary": "UrlScan.io has been updated to version 26.0. This update adds the functionality to scan domains and IPs within the URL Check action."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**ThreatQ**: Version 15.0\n\n* Updated the API request payload to align with a change in the ThreatQ API in\n  the following actions:\n\n  + **Enrich IP**\n  + **Enrich URL**\n  + **Enrich Email**\n  + **Enrich Hash**\n  + **Enrich CVE**",
+        "summary": {
+          "title": "ThreatQ v15.0 Update",
+          "summary": "The API request payload has been updated for several actions, including Enrich IP, URL, Email, Hash, and CVE, to align with recent changes in the ThreatQ API."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**CrowdStrike Falcon**: Version 66.0\n\n* The following new action has been added:\n\n  + **Get Alert Details**",
+        "summary": {
+          "title": "CrowdStrike Falcon v66.0 Alert Details",
+          "summary": "A new 'Get Alert Details' action has been added to CrowdStrike Falcon, version 66.0."
         }
       }
     ],

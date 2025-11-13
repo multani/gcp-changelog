@@ -1,5 +1,12 @@
 # Cloud CDN
 
+## 2025-11-13
+
+### Feature
+
+Cloud CDN lets you [add custom code to the request processing path](https://docs.cloud.google.com/cdn/docs/integration-with-service-extensions) of global external Application Load Balancers by using Service Extensions edge extensions (pre-cache) and traffic extensions (post-cache). These extensions help you manipulate request headers early in the processing lifecycle to influence caching and routing decisions. This feature is in **General Availability**.
+
+---
 ## 2025-10-07
 
 ### Feature

@@ -1,38 +1,35 @@
 # Google SecOps
 
+## 2025-11-13
+
+### Feature
+
+**Raw log search enhancements**
+
+Google SecOps now includes enhancements to raw log search to boost usability,
+performance, and data analysis:
+
+* **New filtering options**: Filter raw log results by their parsing status or
+  by one or more log sources.
+* **Optimized results view**: Expand or collapse the Trend over time graph,
+  providing more space for results.
+* **Download raw log results**: Download raw log results to a CSV file. By default,
+  the **Timestamp**, **Event Type**, and **Raw log** columns are included. You can
+  select additional columns through **Column Manager**.
+* **Enhanced search visibility**: The search query and applied filters are now
+  displayed on the **Search** page.
+* **New API for raw log search**: Use the **legacySearchRawLogsV2** API to search
+  for raw logs within a specified Google SecOps instance.
+
+For more details, see the following topics:
+
+* [Filter data in Raw Log Search](https://docs.cloud.google.com/chronicle/docs/investigation/filter-data-raw-log-scan-view)
+* [Conduct a raw log search](https://docs.cloud.google.com/chronicle/docs/investigation/raw-log-search-in-investigate)
+* [Use raw log search](https://docs.cloud.google.com/chronicle/docs/investigation/search-raw-logs)
+* [Method: legacy.legacySearchRawLogsV2](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.legacy/legacySearchRawLogsV2)
+
+---
 ## 2025-11-12
-
-### Feature
-
-**Enhance threat visibility and detection with Emerging Threats**
-
-The new **Emerging Threats** page provides AI-powered threat intelligence to help
-you understand how current threat campaigns might affect your organization.
-Powered by Google Threat Intelligence (GTI) and Gemini models, this page offers
-a curated view of critical global threats relevant to your environment.
-
-Emerging Threats continuously aligns intelligence from GTI with your organization's
-telemetry to highlight detection coverage and identify gaps. When it finds a gap,
-it uses Gemini to automatically draft new detection rules to accelerate your response.
-
-For more details, see [Emerging Threats overview](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats),
-[Emerging Threats feed](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-feed),and
-[Emerging Threats detailed view](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-detailed-view).
-
-### Feature
-
-**Use the Triage Agent to investigate alerts**
-
-You can now use Triage Agent, an AI-powered investigation assistant, to
-analyze alerts in Google SecOps. Triage Agent determines if an
-alert is a true or false positive, provides a summarized explanation for its
-conclusion, and suggests next steps for further investigation.
-
-You can trigger investigations manually or have them run automatically on
-supported alert types. Each investigation produces a detailed report that includes
-the agent's disposition, a summary of its findings, and a timeline of the analysis.
-
-For more details, see [Use Triage Agent to investigate alerts](https://docs.cloud.google.com/chronicle/docs/secops/triage-agent).
 
 ### Announcement
 
@@ -84,6 +81,38 @@ New parser documentation is available to help you ingest and normalize logs from
 * [Collect Zendesk CRM logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zendesk-crm)
 * [Collect ZeroFox Platform logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zerofox-platform)
 
+### Feature
+
+**Enhance threat visibility and detection with Emerging Threats**
+
+The new **Emerging Threats** page provides AI-powered threat intelligence to help
+you understand how current threat campaigns might affect your organization.
+Powered by Google Threat Intelligence (GTI) and Gemini models, this page offers
+a curated view of critical global threats relevant to your environment.
+
+Emerging Threats continuously aligns intelligence from GTI with your organization's
+telemetry to highlight detection coverage and identify gaps. When it finds a gap,
+it uses Gemini to automatically draft new detection rules to accelerate your response.
+
+For more details, see [Emerging Threats overview](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats),
+[Emerging Threats feed](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-feed),and
+[Emerging Threats detailed view](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-detailed-view).
+
+### Feature
+
+**Use the Triage Agent to investigate alerts**
+
+You can now use Triage Agent, an AI-powered investigation assistant, to
+analyze alerts in Google SecOps. Triage Agent determines if an
+alert is a true or false positive, provides a summarized explanation for its
+conclusion, and suggests next steps for further investigation.
+
+You can trigger investigations manually or have them run automatically on
+supported alert types. Each investigation produces a detailed report that includes
+the agent's disposition, a summary of its findings, and a timeline of the analysis.
+
+For more details, see [Use Triage Agent to investigate alerts](https://docs.cloud.google.com/chronicle/docs/secops/triage-agent).
+
 ---
 ## 2025-11-10
 
@@ -115,31 +144,20 @@ The new [MITRE ATT&CK coverage dashboard](https://docs.cloud.google.com/chronicl
 ---
 ## 2025-10-31
 
-### Feature
+### Changed
 
-**Raw log search enhancements**
+**Custom log type rename**
 
-Google SecOps now includes enhancements to raw log search to boost usability,
-performance, and data analysis:
+From now on, all custom log types will be renamed with the custom suffix to prevent confusion with prebuilt log types. The following custom log types already reflect the new naming convention:
 
-* **New filtering options**: Filter raw log results by their parsing status or
-  by one or more log sources.
-* **Optimized results view**: Expand or collapse the Trend over time graph,
-  providing more space for results.
-* **Download raw log results**: Download raw log results to a CSV file. By default,
-  the **Timestamp**, **Event Type**, and **Raw log** columns are included. You can
-  select additional columns through **Column Manager**.
-* **Enhanced search visibility**: The search query and applied filters are now
-  displayed on the **Search** page.
-* **New API for raw log search**: Use the **legacySearchRawLogsV2** API to search
-  for raw logs within a specified Google SecOps instance.
-
-For more details, see the following topics:
-
-* [Filter data in Raw Log Search](https://docs.cloud.google.com/chronicle/docs/investigation/filter-data-raw-log-scan-view)
-* [Conduct a raw log search](https://docs.cloud.google.com/chronicle/docs/investigation/raw-log-search-in-investigate)
-* [Use raw log search](https://docs.cloud.google.com/chronicle/docs/investigation/search-raw-logs)
-* [Method: legacy.legacySearchRawLogsV2](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.legacy/legacySearchRawLogsV2)
+* HUAWEI\_SECMASTER\_CUSTOM
+* GTI\_THREAT\_FEED\_CUSTOM
+* GTI\_IOC\_STREAM\_CUSTOM
+* ABSOLUTE\_SECURE\_ENDPOINT\_CUSTOM
+* GTI\_IOC\_CUSTOM
+* IBM\_ILO\_CUSTOM
+* GCP\_THREATINTEL\_CUSTOM
+* SAP\_ETD\_CUSTOM
 
 ### Feature
 
@@ -159,23 +177,17 @@ performance, and customization in search results:
 
 For more details, see [Search for events and alerts](https://docs.cloud.google.com/chronicle/docs/investigation/udm-search).
 
-### Changed
-
-**Custom log type rename**
-
-From now on, all custom log types will be renamed with the custom suffix to prevent confusion with prebuilt log types. The following custom log types already reflect the new naming convention:
-
-* HUAWEI\_SECMASTER\_CUSTOM
-* GTI\_THREAT\_FEED\_CUSTOM
-* GTI\_IOC\_STREAM\_CUSTOM
-* ABSOLUTE\_SECURE\_ENDPOINT\_CUSTOM
-* GTI\_IOC\_CUSTOM
-* IBM\_ILO\_CUSTOM
-* GCP\_THREATINTEL\_CUSTOM
-* SAP\_ETD\_CUSTOM
-
 ---
 ## 2025-10-30
+
+### Announcement
+
+**Upgraded Chronicle API ingestion methods from alpha to beta**
+
+We've upgraded the Chronicle API ingestion methods from alpha to beta. This upgrade signals API stability and functional completeness, unblocking customer and partner adoption for production integrations.
+
+For more information, see
+[Ingestion methods](https://cloud.google.com/chronicle/docs/reference/ingestion-methods).
 
 ### Feature
 
@@ -190,15 +202,6 @@ The following new YARA-L functions are now generally available:
   string value using a delimiter argument (by default, a comma).
 * [window.range](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#windowrange): Returns the
   range of the values input values found.
-
-### Announcement
-
-**Upgraded Chronicle API ingestion methods from alpha to beta**
-
-We've upgraded the Chronicle API ingestion methods from alpha to beta. This upgrade signals API stability and functional completeness, unblocking customer and partner adoption for production integrations.
-
-For more information, see
-[Ingestion methods](https://cloud.google.com/chronicle/docs/reference/ingestion-methods).
 
 ---
 ## 2025-10-29

@@ -24,6 +24,27 @@ For more information, see [Configure nested disposition lists](https://docs.clou
 
 ### Feature
 
+**Virtual agent to virtual agent direct chat transfers**
+
+You can configure Dialogflow payloads to transfer chat sessions from one virtual agent directly to another virtual agent, using the destination virtual agent's agent ID.
+
+For more information, see [Virtual agent to virtual agent direct transfer](https://docs.cloud.google.com/contact-center/ccai-platform/docs/va-to-va-transfers#va-to-va-direct-transfer).
+
+### Feature
+
+**Extensions for support numbers**
+
+You can assign a phone number extension to an agent that an end-user can use to directly call the agent. You can also set up an extension directory that end-users can use to find the extension for an agent that they want to call.
+
+Administrators:
+
+* The **Agent Extensions** pane on the **Call** page at **Settings > Call** contains a new **Consumer to Agent Calls** section.
+* The **Add new menu** dialog at **Settings > Queue > IVR (Interactive Voice Response) > Menu Structure** contains a new **Extension Directory** toggle.
+
+For more information, see [Turn on and configure agent extensions](https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#turn-on-and-configure-agent-extensions).
+
+### Feature
+
 **Skip language selection and IVR menu readout**
 
 You can configure your call flow to skip language selection and the IVR menu readout. Instead, callers get the default language and are routed to the default queue. This creates a faster call connection experience for end-users.
@@ -46,27 +67,6 @@ Administrators: The **General** pane on the **Email** page at **Settings > Email
 User experience change: In the email adapter, a new **Transfer** button appears when an agent views an assigned email.
 
 For more information, see [Let agents transfer email sessions to a queue](https://docs.cloud.google.com/contact-center/ccai-platform/docs/let-agents-transfer-email-sessions-to-a-queue).
-
-### Feature
-
-**Virtual agent to virtual agent direct chat transfers**
-
-You can configure Dialogflow payloads to transfer chat sessions from one virtual agent directly to another virtual agent, using the destination virtual agent's agent ID.
-
-For more information, see [Virtual agent to virtual agent direct transfer](https://docs.cloud.google.com/contact-center/ccai-platform/docs/va-to-va-transfers#va-to-va-direct-transfer).
-
-### Feature
-
-**Extensions for support numbers**
-
-You can assign a phone number extension to an agent that an end-user can use to directly call the agent. You can also set up an extension directory that end-users can use to find the extension for an agent that they want to call.
-
-Administrators:
-
-* The **Agent Extensions** pane on the **Call** page at **Settings > Call** contains a new **Consumer to Agent Calls** section.
-* The **Add new menu** dialog at **Settings > Queue > IVR (Interactive Voice Response) > Menu Structure** contains a new **Extension Directory** toggle.
-
-For more information, see [Turn on and configure agent extensions](https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#turn-on-and-configure-agent-extensions).
 
 ### Fixed
 
@@ -109,6 +109,12 @@ The timing of the update to your instance depends on the deployment schedule tha
 
 ### Feature
 
+**Web SDK: Support for hiding the Start a new conversation button**
+
+You can now configure the web SDK to hide the **Start a new conversation** button on the end-user's chat screen after the session ends. For more information, see [Hide the button to download a transcript at the end of a session](https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-getting-started#hide-start-new-conversation-button).
+
+### Feature
+
 **Search in email channel by email address and name**
 
 Agents can now search for email sessions by email address and name in the email adapter.
@@ -119,30 +125,15 @@ For more information, see [Search for emails](https://docs.cloud.google.com/cont
 
 ### Feature
 
-**Customize the color of the Start Screen Share button**
-
-You can now control the color of the **Start Screen Share** button to match the color palette of your brand. For more information, see [Customize the Start Screen Share button](https://docs.cloud.google.com/contact-center/ccai-platform/docs/cobrowse#customize-start-screen-share-button).
-
-### Feature
-
 **The europe-west4 and europe-west6 regions are available for Agent Assist conversation profiles**
 
 The `europe-west4` and `europe-west6` regions are now available when you create an Agent Assist conversation profile for a Dialogflow CX virtual agent. For more information, see [Create conversation profile for Dialogflow CX virtual agents](https://docs.cloud.google.com/contact-center/ccai-platform/docs/create-a-dialogflow-agent#create-cp).
 
 ### Feature
 
-**Web SDK: Support for hiding the download transcript option**
+**Customize the color of the Start Screen Share button**
 
-You can now configure the web SDK to do the following on the end-user's chat screen:
-
-* [Hide the command to download a transcript during a session](https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-getting-started#hide-command-to-download-transcript-during-session).
-* [Hide the button to download a transcript at the end of a session](https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-getting-started#hide-button-to-download-transcript-at-end-of-session).
-
-### Feature
-
-**Web SDK: Support for hiding the Start a new conversation button**
-
-You can now configure the web SDK to hide the **Start a new conversation** button on the end-user's chat screen after the session ends. For more information, see [Hide the button to download a transcript at the end of a session](https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-getting-started#hide-start-new-conversation-button).
+You can now control the color of the **Start Screen Share** button to match the color palette of your brand. For more information, see [Customize the Start Screen Share button](https://docs.cloud.google.com/contact-center/ccai-platform/docs/cobrowse#customize-start-screen-share-button).
 
 ### Feature
 
@@ -157,6 +148,15 @@ We've added the following five variables for custom lookup URLs:
 * **CUSTOM\_AGENT\_ID**: an optional agent ID
 
 For more information, see [Custom lookup URL configuration](https://docs.cloud.google.com/contact-center/ccai-platform/docs/custom-crm#custom_lookup_url_configuration).
+
+### Feature
+
+**Web SDK: Support for hiding the download transcript option**
+
+You can now configure the web SDK to do the following on the end-user's chat screen:
+
+* [Hide the command to download a transcript during a session](https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-getting-started#hide-command-to-download-transcript-during-session).
+* [Hide the button to download a transcript at the end of a session](https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-getting-started#hide-button-to-download-transcript-at-end-of-session).
 
 ### Feature
 
@@ -208,15 +208,15 @@ We've released version 3.40 of the advanced reporting dashboards.
 
 ### Feature
 
-**New Agent Preference table in the Agent Availability dashboard**
-
-We've added a new **Agent Preference** table to the **Agent Availability** dashboard. This table can help you ensure that queues have properly skilled agents assigned to them. It can also help identify agents who improperly change their availability filters. For more information, see [Agent availability dashboard](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-agent-availability).
-
-### Feature
-
 **New Audit Log dashboard**
 
 We've added a new **Audit log** dashboard to help you track changes to the configuration of your instance. The dashboard tracks changes to the settings on the **Developer Settings** page, and displays information such as the type of change, who made the change, and when. This dashboard is similar in format to the advanced reporting dashboards, but you can't save it as a new dashboard. You access the **Audit Log** dashboard from the **Settings** menu. For more information, see [Audit log dashboard](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-audit-log).
+
+### Feature
+
+**New Agent Preference table in the Agent Availability dashboard**
+
+We've added a new **Agent Preference** table to the **Agent Availability** dashboard. This table can help you ensure that queues have properly skilled agents assigned to them. It can also help identify agents who improperly change their availability filters. For more information, see [Agent availability dashboard](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-agent-availability).
 
 ### Fixed
 

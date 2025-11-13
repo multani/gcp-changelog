@@ -20,22 +20,6 @@
       },
       {
         "kind": "Feature",
-        "content": "**Skip language selection and IVR menu readout**\n\nYou can configure your call flow to skip language selection and the IVR menu readout. Instead, callers get the default language and are routed to the default queue. This creates a faster call connection experience for end-users.\n\nAdministrators:\n\n* In the **Settings > Languages & Messages > Languages** pane, there's a new **Skip language selection** option.\n* In the **Settings > Queue > IVR (Interactive Voice Response) > IVR Queue Menu Readout** section, there's a new **Skip IVR Menu readout** option.\n\nFor more information, see [Configure IVR messages](https://docs.cloud.google.com/contact-center/ccai-platform/docs/customizing_languages_recordings_messages#configure-ivr-messages).",
-        "summary": {
-          "title": "Skip Language Selection and IVR Menu Readout",
-          "summary": "New feature allows skipping language selection and IVR menu readout for a faster caller experience."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Transfer an email session to a queue**\n\nAgents can now transfer an email session to a queue. This resolves the problem of multiple email sessions being created when an agent forwards an email directly to an agent to transfer it.\n\nAdministrators: The **General** pane on the **Email** page at **Settings > Email** contains a new **Enable Email Transfer Between Queues** checkbox.\n\nUser experience change: In the email adapter, a new **Transfer** button appears when an agent views an assigned email.\n\nFor more information, see [Let agents transfer email sessions to a queue](https://docs.cloud.google.com/contact-center/ccai-platform/docs/let-agents-transfer-email-sessions-to-a-queue).",
-        "summary": {
-          "title": "Email session transfer to queue",
-          "summary": "Agents can now transfer email sessions to a queue, preventing multiple email sessions from being created when an agent forwards an email. This feature is available via a new checkbox in the Email settings for administrators and a 'Transfer' button for agents."
-        }
-      },
-      {
-        "kind": "Feature",
         "content": "**Virtual agent to virtual agent direct chat transfers**\n\nYou can configure Dialogflow payloads to transfer chat sessions from one virtual agent directly to another virtual agent, using the destination virtual agent's agent ID.\n\nFor more information, see [Virtual agent to virtual agent direct transfer](https://docs.cloud.google.com/contact-center/ccai-platform/docs/va-to-va-transfers#va-to-va-direct-transfer).",
         "summary": {
           "title": "Virtual agent transfers",
@@ -48,6 +32,22 @@
         "summary": {
           "title": "Agent Extensions",
           "summary": "Assign phone number extensions to agents for direct calling and set up an extension directory."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Skip language selection and IVR menu readout**\n\nYou can configure your call flow to skip language selection and the IVR menu readout. Instead, callers get the default language and are routed to the default queue. This creates a faster call connection experience for end-users.\n\nAdministrators:\n\n* In the **Settings > Languages & Messages > Languages** pane, there's a new **Skip language selection** option.\n* In the **Settings > Queue > IVR (Interactive Voice Response) > IVR Queue Menu Readout** section, there's a new **Skip IVR Menu readout** option.\n\nFor more information, see [Configure IVR messages](https://docs.cloud.google.com/contact-center/ccai-platform/docs/customizing_languages_recordings_messages#configure-ivr-messages).",
+        "summary": {
+          "title": "Skip Language Selection and IVR Menu Readout",
+          "summary": "New feature allows skipping language selection and IVR menu readout for a faster caller experience."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Transfer an email session to a queue**\n\nAgents can now transfer an email session to a queue. This resolves the problem of multiple email sessions being created when an agent forwards an email directly to an agent to transfer it.\n\nAdministrators: The **General** pane on the **Email** page at **Settings > Email** contains a new **Enable Email Transfer Between Queues** checkbox.\n\nUser experience change: In the email adapter, a new **Transfer** button appears when an agent views an assigned email.\n\nFor more information, see [Let agents transfer email sessions to a queue](https://docs.cloud.google.com/contact-center/ccai-platform/docs/let-agents-transfer-email-sessions-to-a-queue).",
+        "summary": {
+          "title": "Email session transfer to queue",
+          "summary": "Agents can now transfer email sessions to a queue, preventing multiple email sessions from being created when an agent forwards an email. This feature is available via a new checkbox in the Email settings for administrators and a 'Transfer' button for agents."
         }
       },
       {
@@ -70,18 +70,18 @@
       },
       {
         "kind": "Feature",
-        "content": "**Search in email channel by email address and name**\n\nAgents can now search for email sessions by email address and name in the email adapter.\n\nUser experience change: The search pane in the email adapter includes two new fields: **Email Address** and **Name**.\n\nFor more information, see [Search for emails](https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-adapter#search-for-emails).",
+        "content": "**Web SDK: Support for hiding the Start a new conversation button**\n\nYou can now configure the web SDK to hide the **Start a new conversation** button on the end-user's chat screen after the session ends. For more information, see [Hide the button to download a transcript at the end of a session](https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-getting-started#hide-start-new-conversation-button).",
         "summary": {
-          "title": "Search Emails by Name or Email Address",
-          "summary": "You can now search for email sessions using the sender's email address or name in the email adapter."
+          "title": "Hide Start New Conversation Button",
+          "summary": "You can now hide the 'Start a new conversation' button on the chat screen after a session ends."
         }
       },
       {
         "kind": "Feature",
-        "content": "**Customize the color of the Start Screen Share button**\n\nYou can now control the color of the **Start Screen Share** button to match the color palette of your brand. For more information, see [Customize the Start Screen Share button](https://docs.cloud.google.com/contact-center/ccai-platform/docs/cobrowse#customize-start-screen-share-button).",
+        "content": "**Search in email channel by email address and name**\n\nAgents can now search for email sessions by email address and name in the email adapter.\n\nUser experience change: The search pane in the email adapter includes two new fields: **Email Address** and **Name**.\n\nFor more information, see [Search for emails](https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-adapter#search-for-emails).",
         "summary": {
-          "title": "Customize Start Screen Share Button Color",
-          "summary": "You can now customize the color of the Start Screen Share button to align with your brand's color palette."
+          "title": "Search Emails by Name or Email Address",
+          "summary": "You can now search for email sessions using the sender's email address or name in the email adapter."
         }
       },
       {
@@ -94,18 +94,10 @@
       },
       {
         "kind": "Feature",
-        "content": "**Web SDK: Support for hiding the download transcript option**\n\nYou can now configure the web SDK to do the following on the end-user's chat screen:\n\n* [Hide the command to download a transcript during a session](https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-getting-started#hide-command-to-download-transcript-during-session).\n* [Hide the button to download a transcript at the end of a session](https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-getting-started#hide-button-to-download-transcript-at-end-of-session).",
+        "content": "**Customize the color of the Start Screen Share button**\n\nYou can now control the color of the **Start Screen Share** button to match the color palette of your brand. For more information, see [Customize the Start Screen Share button](https://docs.cloud.google.com/contact-center/ccai-platform/docs/cobrowse#customize-start-screen-share-button).",
         "summary": {
-          "title": "Hide Transcript Download Option",
-          "summary": "You can now configure the web SDK to hide the download transcript option during and at the end of a session."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Web SDK: Support for hiding the Start a new conversation button**\n\nYou can now configure the web SDK to hide the **Start a new conversation** button on the end-user's chat screen after the session ends. For more information, see [Hide the button to download a transcript at the end of a session](https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-getting-started#hide-start-new-conversation-button).",
-        "summary": {
-          "title": "Hide Start New Conversation Button",
-          "summary": "You can now hide the 'Start a new conversation' button on the chat screen after a session ends."
+          "title": "Customize Start Screen Share Button Color",
+          "summary": "You can now customize the color of the Start Screen Share button to align with your brand's color palette."
         }
       },
       {
@@ -114,6 +106,14 @@
         "summary": {
           "title": "New variables for custom lookup URLs",
           "summary": "New variables are available for custom lookup URLs, including customer and support phone numbers, outbound number, session ID, and custom agent ID."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Web SDK: Support for hiding the download transcript option**\n\nYou can now configure the web SDK to do the following on the end-user's chat screen:\n\n* [Hide the command to download a transcript during a session](https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-getting-started#hide-command-to-download-transcript-during-session).\n* [Hide the button to download a transcript at the end of a session](https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-getting-started#hide-button-to-download-transcript-at-end-of-session).",
+        "summary": {
+          "title": "Hide Transcript Download Option",
+          "summary": "You can now configure the web SDK to hide the download transcript option during and at the end of a session."
         }
       },
       {
@@ -144,18 +144,18 @@
       },
       {
         "kind": "Feature",
-        "content": "**New Agent Preference table in the Agent Availability dashboard**\n\nWe've added a new **Agent Preference** table to the **Agent Availability** dashboard. This table can help you ensure that queues have properly skilled agents assigned to them. It can also help identify agents who improperly change their availability filters. For more information, see [Agent availability dashboard](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-agent-availability).",
-        "summary": {
-          "title": "Agent Availability Dashboard Update",
-          "summary": "A new Agent Preference table has been added to the Agent Availability dashboard. This feature helps ensure correct agent skill assignment to queues and identifies misuse of availability filters."
-        }
-      },
-      {
-        "kind": "Feature",
         "content": "**New Audit Log dashboard**\n\nWe've added a new **Audit log** dashboard to help you track changes to the configuration of your instance. The dashboard tracks changes to the settings on the **Developer Settings** page, and displays information such as the type of change, who made the change, and when. This dashboard is similar in format to the advanced reporting dashboards, but you can't save it as a new dashboard. You access the **Audit Log** dashboard from the **Settings** menu. For more information, see [Audit log dashboard](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-audit-log).",
         "summary": {
           "title": "Audit Log Dashboard",
           "summary": "Track configuration changes with the new Audit Log dashboard. See what changed, who changed it, and when. Access it from the Settings menu."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**New Agent Preference table in the Agent Availability dashboard**\n\nWe've added a new **Agent Preference** table to the **Agent Availability** dashboard. This table can help you ensure that queues have properly skilled agents assigned to them. It can also help identify agents who improperly change their availability filters. For more information, see [Agent availability dashboard](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-agent-availability).",
+        "summary": {
+          "title": "Agent Availability Dashboard Update",
+          "summary": "A new Agent Preference table has been added to the Agent Availability dashboard. This feature helps ensure correct agent skill assignment to queues and identifies misuse of availability filters."
         }
       },
       {

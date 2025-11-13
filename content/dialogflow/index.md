@@ -11,19 +11,19 @@
 
 ### Feature
 
-**Conversational Agents (Dialogflow CX)**:The [Block none](https://cloud.google.com/dialogflow/cx/docs/concept/agent-settings) safety feature in agent settings is no longer restricted access.
-
-### Feature
-
 **Conversational Agents (Dialogflow CX)**: The **Entity Types** console menu now allows you to set a page size for entity entries and excluded phrases. Pagination options are automatically displayed if there are more than 10 items listed.
 
 ### Feature
 
-**Conversational Agents (Dialogflow CX)**: You can now configure service account authorization for both tools and webhooks. See the [reference documentation](https://cloud.google.com/dialogflow/cx/docs/reference/rpc/google.cloud.dialogflow.cx.v3#serviceaccountauthconfig) for details.
+**Conversational Agents (Dialogflow CX)**:The [Block none](https://cloud.google.com/dialogflow/cx/docs/concept/agent-settings) safety feature in agent settings is no longer restricted access.
 
 ### Feature
 
 **Conversational Agents (Dialogflow CX)**: New fields `temperature`, `input_token_limit` and `output_token_limit` are now available for [`LlmModelSettings`](https://cloud.google.com/dialogflow/cx/docs/reference/rpc/google.cloud.dialogflow.cx.v3beta1#llmmodelsettings) in the v3beta1 API. This allows you to adjust the model per playbook.
+
+### Feature
+
+**Conversational Agents (Dialogflow CX)**: You can now configure service account authorization for both tools and webhooks. See the [reference documentation](https://cloud.google.com/dialogflow/cx/docs/reference/rpc/google.cloud.dialogflow.cx.v3#serviceaccountauthconfig) for details.
 
 ---
 ## 2025-10-16

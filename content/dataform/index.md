@@ -1,5 +1,19 @@
 # Dataform
 
+## 2025-11-13
+
+### Feature
+
+You can use custom constraints with Organization Policy to provide more
+granular control over specific fields for the `CompilationResult`,
+`ReleaseConfig`, `WorkflowConfig`, `WorkflowInvocation`, and `Workspace`
+resources. For more information, see
+[Create custom organization policy constraints](https://docs.cloud.google.com/dataform/docs/create-custom-constraints).
+This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2025-10-06
 
 ### Feature

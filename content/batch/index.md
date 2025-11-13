@@ -4,6 +4,11 @@
 
 ### Changed
 
+Documentation has been updated to clarify the
+[machine types that jobs can use](https://docs.cloud.google.com/batch/docs/get-started#machine-types).
+
+### Changed
+
 Dynamic Workload Scheduler for Batch
 ([Preview](https://cloud.google.com/products#product-launch-stages)) has
 been replaced with the following consumption options:
@@ -22,11 +27,6 @@ Both consumption options use
 [Dynamic Workload Scheduler pricing](https://cloud.google.com/products/dws/pricing),
 which offers discounts of up to 53% off of on-demand pricing.
 For more information, see [Create and run a job that uses GPUs](https://docs.cloud.google.com/batch/docs/create-run-job-gpus).
-
-### Changed
-
-Documentation has been updated to clarify the
-[machine types that jobs can use](https://docs.cloud.google.com/batch/docs/get-started#machine-types).
 
 ---
 ## 2025-07-24

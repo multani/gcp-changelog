@@ -1,5 +1,21 @@
 # Cloud Key Management Service
 
+## 2025-11-13
+
+### Feature
+
+The Cloud KMS **Encryption metrics** dashboard is available in Preview. The
+dashboard shows the following metrics for the selected project to help you
+understand your CMEK usage:
+
+* Resources in this project by protection type
+* Alignment to key usage recommended practices
+* Resource protection type by service
+
+To learn more about the **Encryption metrics** dashboard, including its
+limitations, see [View encryption metrics](https://docs.cloud.google.com/kms/docs/view-encryption-metrics).
+
+---
 ## 2025-09-23
 
 ### Feature

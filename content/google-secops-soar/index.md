@@ -16,6 +16,33 @@ New **Azure Monitor** integration
 
 ### Changed
 
+**CrowdStrike Falcon**: Version 69.0
+
+* Refactored the pagination and filtering mechanism in the following actions:
+
+  + **List Uploaded IOCs**
+  + **List Hosts**
+* Added support for wildcards to `File Paths to Scan` in the following action:
+
+  + **On-Demand Scan**
+
+### Changed
+
+**Cybereason**: Version 21.0
+
+* **Integration**: Added ability to provide a CA Certificate file as part of the
+  configuration.
+
+### Changed
+
+**Google Chronicle**: Version 67.0
+
+* Updated curated detections processing logic in the following action:
+
+  + **Get Detection Details**
+
+### Changed
+
 The following integrations are now GUS recommended:
 
 * **CrowdStrike Falcon**: Version 69.0
@@ -85,39 +112,12 @@ Updated Integrations (45)
 
 ### Changed
 
-**Cybereason**: Version 21.0
-
-* **Integration**: Added ability to provide a CA Certificate file as part of the
-  configuration.
-
-### Changed
-
 **Google Security Command Center**: Version 14.0
 
 * Added the ability to ingest Toxic Combinations and Chokepoints in the
   following connector:
 
   + **Google Security Command Center - Findings Connector**
-
-### Changed
-
-**Google Chronicle**: Version 67.0
-
-* Updated curated detections processing logic in the following action:
-
-  + **Get Detection Details**
-
-### Changed
-
-**CrowdStrike Falcon**: Version 69.0
-
-* Refactored the pagination and filtering mechanism in the following actions:
-
-  + **List Uploaded IOCs**
-  + **List Hosts**
-* Added support for wildcards to `File Paths to Scan` in the following action:
-
-  + **On-Demand Scan**
 
 ---
 ## 2025-11-09
@@ -140,6 +140,38 @@ This release contains internal and customer bug fixes.
 
 ### Feature
 
+**SentinelOneV2**: Version 43.0
+
+* The following new action has been added:
+
+  + **Get Site Agents**
+
+### Changed
+
+**FortiAnalyzer**: Version 8.0
+
+* Updated search processing logic in the following action:
+
+  + **Search Logs**
+
+### Changed
+
+**Freshworks Freshservice**: Version 15.0
+
+* Added the ability to provide a department in the integration configuration for
+  the following action:
+
+  + **Create Ticket**
+
+### Changed
+
+**Microsoft Teams**: Version 31.0
+
+* **Integration**: Updated the integration's action definitions to meet the new
+  requirements of the IDE.
+
+### Feature
+
 **Palo Alto XDR**: Version 20.0
 
 * The following new action has been added:
@@ -159,38 +191,6 @@ This release contains internal and customer bug fixes.
   + **List Groups**
   + **List Policies**
 
-### Changed
-
-**Freshworks Freshservice**: Version 15.0
-
-* Added the ability to provide a department in the integration configuration for
-  the following action:
-
-  + **Create Ticket**
-
-### Changed
-
-**Microsoft Teams**: Version 31.0
-
-* **Integration**: Updated the integration's action definitions to meet the new
-  requirements of the IDE.
-
-### Changed
-
-**FortiAnalyzer**: Version 8.0
-
-* Updated search processing logic in the following action:
-
-  + **Search Logs**
-
-### Feature
-
-**SentinelOneV2**: Version 43.0
-
-* The following new action has been added:
-
-  + **Get Site Agents**
-
 ---
 ## 2025-11-02
 
@@ -209,47 +209,6 @@ This release contains internal and customer bug fixes.
 
 ---
 ## 2025-10-29
-
-### Changed
-
-**CSV**: Version 35.0
-
-* Updated file path processing logic in the following connector:
-
-  + **CSV Connector**
-
-### Changed
-
-**CrowdStrike Falcon**: Version 68.0
-
-* Update the following action to check if there is an existing identical running
-  scan for a provided hostname before creating a new one:
-
-  + **On-Demand Scan**
-
-### Changed
-
-**Exchange**: Version 115.0
-
-* Updated the file management logic in the following action:
-
-  + **Download Attachments**
-
-### Changed
-
-**Microsoft Graph Mail**: Version 32.0
-
-* Updated the file management logic in the following action:
-
-  + **Download Attachments from Email**
-
-### Changed
-
-**Microsoft Graph Mail Delegated**: Version 9.0
-
-* Updated the file management logic in the following action:
-
-  + **Download Attachments from Email**
 
 ### Changed
 
@@ -282,20 +241,61 @@ This release contains internal and customer bug fixes.
   + **Add to Whitelist**
   + **Lookup Entity**
 
+### Changed
+
+**Microsoft Graph Mail Delegated**: Version 9.0
+
+* Updated the file management logic in the following action:
+
+  + **Download Attachments from Email**
+
+### Changed
+
+**CSV**: Version 35.0
+
+* Updated file path processing logic in the following connector:
+
+  + **CSV Connector**
+
+### Changed
+
+**Exchange**: Version 115.0
+
+* Updated the file management logic in the following action:
+
+  + **Download Attachments**
+
+### Changed
+
+**Microsoft Graph Mail**: Version 32.0
+
+* Updated the file management logic in the following action:
+
+  + **Download Attachments from Email**
+
+### Changed
+
+**CrowdStrike Falcon**: Version 68.0
+
+* Update the following action to check if there is an existing identical running
+  scan for a provided hostname before creating a new one:
+
+  + **On-Demand Scan**
+
 ---
 ## 2025-10-26
-
-### Announcement
-
-Release 6.3.65 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
-
-This release contains the following changes:
 
 ### Feature
 
 **Delete high-load environments**
 
 You can now easily delete environments with heavy loads directly from the platform.
+
+### Announcement
+
+Release 6.3.65 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains the following changes:
 
 ---
 ## 2025-10-25
@@ -307,6 +307,15 @@ You can now easily delete environments with heavy loads directly from the platfo
 ---
 ## 2025-10-22
 
+### Changed
+
+**CrowdStrike Falcon**: Version 67.0
+
+* Fixed a bug where the Contains filter would fail to find hosts when the
+  `Max Hosts To Return` limit was applied in the following action:
+
+  + **List Host**
+
 ### Feature
 
 **SentinelOneV2**: Version 42.0
@@ -316,15 +325,6 @@ You can now easily delete environments with heavy loads directly from the platfo
   + **Create Device Control Rule**
   + **Delete Device Control Rule**
   + **Update Device Control Rule**
-
-### Changed
-
-**CrowdStrike Falcon**: Version 67.0
-
-* Fixed a bug where the Contains filter would fail to find hosts when the
-  `Max Hosts To Return` limit was applied in the following action:
-
-  + **List Host**
 
 ### Changed
 
@@ -368,49 +368,6 @@ This release contains internal and customer bug fixes.
 ---
 ## 2025-10-15
 
-### Feature
-
-**CrowdStrike Falcon**: Version 66.0
-
-* The following new action has been added:
-
-  + **Get Alert Details**
-
-### Changed
-
-**Azure Active Directory**: Version 19.0
-
-* Improved performance by implementing a direct API filter query for group name
-  searches, which avoids fetching all groups and significantly reduces execution
-  time in large-group environments, in the following action:
-
-  + **List Members in Group**
-
-### Changed
-
-**CrowdStrike Falcon**: Version 66.0
-
-* Updated entity processing logic in the following actions:
-
-  + **Contain Endpoint**
-  + **Download File**
-  + **Execute Command**
-  + **Get Host Information**
-  + **Lift Contained Endpoint**
-  + **List Host Vulnerabilities**
-  + **On-Demand Scan**
-  + **Run Script**
-
-### Changed
-
-Updated dependencies in the following integrations:
-
-* **Microsoft Teams**: Version 30.0
-* **Microsoft Graph Mail Delegated**: Version 8.0
-* **Exchange**: Version 114.0
-* **Case Federation**: Version 5.0
-* **Azure Security Center**: Version 12.0
-
 ### Changed
 
 **Microsoft Teams**: Version 30.0
@@ -431,6 +388,49 @@ Updated dependencies in the following integrations:
 
 ### Changed
 
+**CrowdStrike Falcon**: Version 66.0
+
+* Updated entity processing logic in the following actions:
+
+  + **Contain Endpoint**
+  + **Download File**
+  + **Execute Command**
+  + **Get Host Information**
+  + **Lift Contained Endpoint**
+  + **List Host Vulnerabilities**
+  + **On-Demand Scan**
+  + **Run Script**
+
+### Changed
+
+**Azure Active Directory**: Version 19.0
+
+* Improved performance by implementing a direct API filter query for group name
+  searches, which avoids fetching all groups and significantly reduces execution
+  time in large-group environments, in the following action:
+
+  + **List Members in Group**
+
+### Changed
+
+Updated dependencies in the following integrations:
+
+* **Microsoft Teams**: Version 30.0
+* **Microsoft Graph Mail Delegated**: Version 8.0
+* **Exchange**: Version 114.0
+* **Case Federation**: Version 5.0
+* **Azure Security Center**: Version 12.0
+
+### Changed
+
+**UrlScan.io**: Version 26.0
+
+* Added ability to scan domains and IPs in the following action:
+
+  + **URL Check**
+
+### Changed
+
 **ThreatQ**: Version 15.0
 
 * Updated the API request payload to align with a change in the ThreatQ API in
@@ -442,13 +442,13 @@ Updated dependencies in the following integrations:
   + **Enrich Hash**
   + **Enrich CVE**
 
-### Changed
+### Feature
 
-**UrlScan.io**: Version 26.0
+**CrowdStrike Falcon**: Version 66.0
 
-* Added ability to scan domains and IPs in the following action:
+* The following new action has been added:
 
-  + **URL Check**
+  + **Get Alert Details**
 
 ---
 ## 2025-10-09

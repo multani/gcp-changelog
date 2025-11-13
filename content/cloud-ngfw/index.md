@@ -1,5 +1,12 @@
 # Cloud NGFW
 
+## 2025-11-13
+
+### Feature
+
+You can create a firewall endpoint that supports jumbo frames up to 8,500 bytes in size. For more information, see [Supported packet size](https://docs.cloud.google.com/firewall/docs/about-firewall-endpoints#supported-packet-size). This feature is available in **General Availability**.
+
+---
 ## 2025-09-23
 
 ### Feature

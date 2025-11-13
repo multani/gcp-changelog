@@ -2,54 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps</subtitle>
-  <updated>2025-11-12T00:00:00+00:00</updated>
+  <updated>2025-11-13T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops:2025-11-12:feature:0</id>
-    <published>2025-11-12T00:00:00+00:00</published>
-    <updated>2025-11-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Enhance threat visibility and detection with Emerging Threats</strong></p>
-<p>The new <strong>Emerging Threats</strong> page provides AI-powered threat intelligence to help
-you understand how current threat campaigns might affect your organization.
-Powered by Google Threat Intelligence (GTI) and Gemini models, this page offers
-a curated view of critical global threats relevant to your environment.</p>
-<p>Emerging Threats continuously aligns intelligence from GTI with your organization's
-telemetry to highlight detection coverage and identify gaps. When it finds a gap,
-it uses Gemini to automatically draft new detection rules to accelerate your response.</p>
-<p>For more details, see <a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats">Emerging Threats overview</a>,
-<a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-feed">Emerging Threats feed</a>,and
-<a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-detailed-view">Emerging Threats detailed view</a>.</p>]]></content>
-    <summary>Gain enhanced threat visibility with AI-powered intelligence.</summary>
-    <title>Feature: Emerging Threats Page</title>
+    <id>urn:github:multani:gcp-changelog:google-secops:2025-11-13:feature:0</id>
+    <published>2025-11-13T00:00:00+00:00</published>
+    <updated>2025-11-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Raw log search enhancements</strong></p>
+<p>Google SecOps now includes enhancements to raw log search to boost usability,
+performance, and data analysis:</p>
+<ul>
+<li><strong>New filtering options</strong>: Filter raw log results by their parsing status or
+  by one or more log sources.</li>
+<li><strong>Optimized results view</strong>: Expand or collapse the Trend over time graph,
+  providing more space for results.</li>
+<li><strong>Download raw log results</strong>: Download raw log results to a CSV file. By default,
+  the <strong>Timestamp</strong>, <strong>Event Type</strong>, and <strong>Raw log</strong> columns are included. You can
+  select additional columns through <strong>Column Manager</strong>.</li>
+<li><strong>Enhanced search visibility</strong>: The search query and applied filters are now
+  displayed on the <strong>Search</strong> page.</li>
+<li><strong>New API for raw log search</strong>: Use the <strong>legacySearchRawLogsV2</strong> API to search
+  for raw logs within a specified Google SecOps instance.</li>
+</ul>
+<p>For more details, see the following topics:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/investigation/filter-data-raw-log-scan-view">Filter data in Raw Log Search</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/investigation/raw-log-search-in-investigate">Conduct a raw log search</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/investigation/search-raw-logs">Use raw log search</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.legacy/legacySearchRawLogsV2">Method: legacy.legacySearchRawLogsV2</a></li>
+</ul>]]></content>
+    <summary>New filtering, optimized results view, download options, enhanced search visibility, and a new API for raw log search.</summary>
+    <title>Feature: Raw log search enhancements</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops:2025-11-12:feature:1</id>
-    <published>2025-11-12T00:00:00+00:00</published>
-    <updated>2025-11-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Use the Triage Agent to investigate alerts</strong></p>
-<p>You can now use Triage Agent, an AI-powered investigation assistant, to
-analyze alerts in Google SecOps. Triage Agent determines if an
-alert is a true or false positive, provides a summarized explanation for its
-conclusion, and suggests next steps for further investigation.</p>
-<p>You can trigger investigations manually or have them run automatically on
-supported alert types. Each investigation produces a detailed report that includes
-the agent's disposition, a summary of its findings, and a timeline of the analysis.</p>
-<p>For more details, see <a href="https://docs.cloud.google.com/chronicle/docs/secops/triage-agent">Use Triage Agent to investigate alerts</a>.</p>]]></content>
-    <summary>Use the AI-powered Triage Agent to analyze alerts, determine true/false positives, and get suggested next steps.</summary>
-    <title>Feature: Investigate alerts with Triage Agent</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops:2025-11-12:announcement:2</id>
+    <id>urn:github:multani:gcp-changelog:google-secops:2025-11-12:announcement:0</id>
     <published>2025-11-12T00:00:00+00:00</published>
     <updated>2025-11-12T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>New parser documentation now available</strong></p>
@@ -106,6 +99,46 @@ the agent's disposition, a summary of its findings, and a timeline of the analys
     <author>
       <name>Google Cloud</name>
     </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2025-11-12:feature:1</id>
+    <published>2025-11-12T00:00:00+00:00</published>
+    <updated>2025-11-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Enhance threat visibility and detection with Emerging Threats</strong></p>
+<p>The new <strong>Emerging Threats</strong> page provides AI-powered threat intelligence to help
+you understand how current threat campaigns might affect your organization.
+Powered by Google Threat Intelligence (GTI) and Gemini models, this page offers
+a curated view of critical global threats relevant to your environment.</p>
+<p>Emerging Threats continuously aligns intelligence from GTI with your organization's
+telemetry to highlight detection coverage and identify gaps. When it finds a gap,
+it uses Gemini to automatically draft new detection rules to accelerate your response.</p>
+<p>For more details, see <a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats">Emerging Threats overview</a>,
+<a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-feed">Emerging Threats feed</a>,and
+<a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-detailed-view">Emerging Threats detailed view</a>.</p>]]></content>
+    <summary>Gain enhanced threat visibility with AI-powered intelligence.</summary>
+    <title>Feature: Emerging Threats Page</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2025-11-12:feature:2</id>
+    <published>2025-11-12T00:00:00+00:00</published>
+    <updated>2025-11-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Use the Triage Agent to investigate alerts</strong></p>
+<p>You can now use Triage Agent, an AI-powered investigation assistant, to
+analyze alerts in Google SecOps. Triage Agent determines if an
+alert is a true or false positive, provides a summarized explanation for its
+conclusion, and suggests next steps for further investigation.</p>
+<p>You can trigger investigations manually or have them run automatically on
+supported alert types. Each investigation produces a detailed report that includes
+the agent's disposition, a summary of its findings, and a timeline of the analysis.</p>
+<p>For more details, see <a href="https://docs.cloud.google.com/chronicle/docs/secops/triage-agent">Use Triage Agent to investigate alerts</a>.</p>]]></content>
+    <summary>Use the AI-powered Triage Agent to analyze alerts, determine true/false positives, and get suggested next steps.</summary>
+    <title>Feature: Investigate alerts with Triage Agent</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
     <id>urn:github:multani:gcp-changelog:google-secops:2025-11-10:feature:0</id>
     <published>2025-11-10T00:00:00+00:00</published>
     <updated>2025-11-10T00:00:00+00:00</updated>
@@ -140,34 +173,23 @@ Rules, Search, and Dashboards.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops:2025-10-31:feature:0</id>
+    <id>urn:github:multani:gcp-changelog:google-secops:2025-10-31:changed:0</id>
     <published>2025-10-31T00:00:00+00:00</published>
     <updated>2025-10-31T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Raw log search enhancements</strong></p>
-<p>Google SecOps now includes enhancements to raw log search to boost usability,
-performance, and data analysis:</p>
+    <content type="html"><![CDATA[<p><strong>Custom log type rename</strong></p>
+<p>From now on, all custom log types will be renamed with the custom suffix to prevent confusion with prebuilt log types. The following custom log types already reflect the new naming convention:</p>
 <ul>
-<li><strong>New filtering options</strong>: Filter raw log results by their parsing status or
-  by one or more log sources.</li>
-<li><strong>Optimized results view</strong>: Expand or collapse the Trend over time graph,
-  providing more space for results.</li>
-<li><strong>Download raw log results</strong>: Download raw log results to a CSV file. By default,
-  the <strong>Timestamp</strong>, <strong>Event Type</strong>, and <strong>Raw log</strong> columns are included. You can
-  select additional columns through <strong>Column Manager</strong>.</li>
-<li><strong>Enhanced search visibility</strong>: The search query and applied filters are now
-  displayed on the <strong>Search</strong> page.</li>
-<li><strong>New API for raw log search</strong>: Use the <strong>legacySearchRawLogsV2</strong> API to search
-  for raw logs within a specified Google SecOps instance.</li>
-</ul>
-<p>For more details, see the following topics:</p>
-<ul>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/investigation/filter-data-raw-log-scan-view">Filter data in Raw Log Search</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/investigation/raw-log-search-in-investigate">Conduct a raw log search</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/investigation/search-raw-logs">Use raw log search</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.legacy/legacySearchRawLogsV2">Method: legacy.legacySearchRawLogsV2</a></li>
+<li>HUAWEI_SECMASTER_CUSTOM</li>
+<li>GTI_THREAT_FEED_CUSTOM</li>
+<li>GTI_IOC_STREAM_CUSTOM</li>
+<li>ABSOLUTE_SECURE_ENDPOINT_CUSTOM</li>
+<li>GTI_IOC_CUSTOM</li>
+<li>IBM_ILO_CUSTOM</li>
+<li>GCP_THREATINTEL_CUSTOM</li>
+<li>SAP_ETD_CUSTOM</li>
 </ul>]]></content>
-    <summary>New filtering options, an optimized results view, and the ability to download raw log results to a CSV file have been added to Google SecOps' raw log search. The search query and applied filters are now displayed on the Search page, and a new API is available for searching raw logs.</summary>
-    <title>Feature: Raw log search enhancements</title>
+    <summary>Custom log types have been renamed to include a custom suffix, preventing confusion with prebuilt log types. This change ensures clearer identification of custom logs.</summary>
+    <title>Changed: Custom log types renamed</title>
   </entry>
   <entry>
     <author>
@@ -197,29 +219,21 @@ performance, and customization in search results:</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops:2025-10-31:changed:2</id>
-    <published>2025-10-31T00:00:00+00:00</published>
-    <updated>2025-10-31T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Custom log type rename</strong></p>
-<p>From now on, all custom log types will be renamed with the custom suffix to prevent confusion with prebuilt log types. The following custom log types already reflect the new naming convention:</p>
-<ul>
-<li>HUAWEI_SECMASTER_CUSTOM</li>
-<li>GTI_THREAT_FEED_CUSTOM</li>
-<li>GTI_IOC_STREAM_CUSTOM</li>
-<li>ABSOLUTE_SECURE_ENDPOINT_CUSTOM</li>
-<li>GTI_IOC_CUSTOM</li>
-<li>IBM_ILO_CUSTOM</li>
-<li>GCP_THREATINTEL_CUSTOM</li>
-<li>SAP_ETD_CUSTOM</li>
-</ul>]]></content>
-    <summary>Custom log types have been renamed to include a custom suffix, preventing confusion with prebuilt log types. This change ensures clearer identification of custom logs.</summary>
-    <title>Changed: Custom log types renamed</title>
+    <id>urn:github:multani:gcp-changelog:google-secops:2025-10-30:announcement:0</id>
+    <published>2025-10-30T00:00:00+00:00</published>
+    <updated>2025-10-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Upgraded Chronicle API ingestion methods from alpha to beta</strong></p>
+<p>We've upgraded the Chronicle API ingestion methods from alpha to beta. This upgrade signals API stability and functional completeness, unblocking customer and partner adoption for production integrations.</p>
+<p>For more information, see
+<a href="https://cloud.google.com/chronicle/docs/reference/ingestion-methods">Ingestion methods</a>.</p>]]></content>
+    <summary>The Chronicle API ingestion methods have been upgraded from alpha to beta, indicating improved stability and functionality for production integrations.</summary>
+    <title>Announcement: Chronicle API ingestion methods upgraded to beta</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops:2025-10-30:feature:0</id>
+    <id>urn:github:multani:gcp-changelog:google-secops:2025-10-30:feature:1</id>
     <published>2025-10-30T00:00:00+00:00</published>
     <updated>2025-10-30T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>YARA-L functions</strong></p>
@@ -235,20 +249,6 @@ performance, and customization in search results:</p>
 </ul>]]></content>
     <summary>Explore new YARA-L functions for enhanced string manipulation and data analysis.</summary>
     <title>Feature: New YARA-L Functions Available</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops:2025-10-30:announcement:1</id>
-    <published>2025-10-30T00:00:00+00:00</published>
-    <updated>2025-10-30T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Upgraded Chronicle API ingestion methods from alpha to beta</strong></p>
-<p>We've upgraded the Chronicle API ingestion methods from alpha to beta. This upgrade signals API stability and functional completeness, unblocking customer and partner adoption for production integrations.</p>
-<p>For more information, see
-<a href="https://cloud.google.com/chronicle/docs/reference/ingestion-methods">Ingestion methods</a>.</p>]]></content>
-    <summary>The Chronicle API ingestion methods have been upgraded from alpha to beta, indicating improved stability and functionality for production integrations.</summary>
-    <title>Announcement: Chronicle API ingestion methods upgraded to beta</title>
   </entry>
   <entry>
     <author>

@@ -30,15 +30,6 @@ Announcing the **Public Preview** launch of AlloyDB for PostgreSQL enhanced back
 ---
 ## 2025-10-21
 
-### Fixed
-
-* Resolved a problem with timestamp conversions during recovery range calculations in SAP HANA
-* Fixed a bug that prevented the identification of persistent disk names in some SAP HANA environments
-* Fixed DB2 restore issue wrt pre-flight checks and instances with a large number of archive logs
-* Fixed a logging issue during Postgres upgrades where an incorrect version was displayed after a rollback
-* Resolved a restore failure when using a combination of full and incremental backups for SAP ASE
-* Fixed a connection leak and an issue with executor service shutdown in the VMware hypervisor integration, improving reliability.
-
 ### Feature
 
 * Change Block Tracking (CBT) support has been added for latest kernel versions in RHEL 8.10, 9.2, 9.4 and 9.6.
@@ -47,6 +38,15 @@ Announcing the **Public Preview** launch of AlloyDB for PostgreSQL enhanced back
 ### Security
 
 The following CVEs have been addressed in this release: CVE-2022-1471, CVE-2025-31651, CVE-2025-31650, CVE-2022-42003, CVE-2025-25193, CVE-2024-6763, CVE-2025-52999, CVE-2025-24970, CVE-2025-49125, CVE-2025-48734, CVE-2024-52317, CVE-2025-48988, CVE-2025-46701
+
+### Fixed
+
+* Resolved a problem with timestamp conversions during recovery range calculations in SAP HANA
+* Fixed a bug that prevented the identification of persistent disk names in some SAP HANA environments
+* Fixed DB2 restore issue wrt pre-flight checks and instances with a large number of archive logs
+* Fixed a logging issue during Postgres upgrades where an incorrect version was displayed after a rollback
+* Resolved a restore failure when using a combination of full and incremental backups for SAP ASE
+* Fixed a connection leak and an issue with executor service shutdown in the VMware hypervisor integration, improving reliability.
 
 ---
 ## 2025-10-15

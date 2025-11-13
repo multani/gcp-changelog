@@ -2,6 +2,23 @@
 
 ## 2025-11-06
 
+### Announcement
+
+**Guidance for RISE with SAP on Google Cloud**
+
+Guidance is available to help you plan for running SAP solutions
+on Google Cloud that are managed by SAP under the RISE with SAP program.
+This guidance includes the following topics:
+
+* An overview about the architecture and involved components.
+* Establishing network connectivity to RISE with SAP on Google Cloud from
+  on-premises systems and Google Cloud projects.
+* Building extensions for RISE with SAP on Google Cloud by using the
+  ABAP SDK for Google Cloud.
+
+For more information, see
+[Overview of RISE with SAP on Google Cloud](https://docs.cloud.google.com/sap/docs/rise-overview).
+
 ### Feature
 
 **Use of Oracle Automatic Storage Management with Oracle Database**

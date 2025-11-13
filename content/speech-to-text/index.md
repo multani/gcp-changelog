@@ -1,5 +1,14 @@
 # Speech-to-Text
 
+## 2025-11-13
+
+### Feature
+
+Speech-to-Text has just launched `chirp_3` in public preview for the regions `asia-south1`, `europe-west2`, `europe-west3` and `northamerica-northeast1`.
+
+For more information about the Chirp 3 model, see [Chirp 3 Transcription: Enhanced multilingual accuracy](https://docs.cloud.google.com/speech-to-text/docs/models/chirp-3).
+
+---
 ## 2025-10-13
 
 ### Feature

@@ -1,5 +1,25 @@
 # Looker
 
+## 2025-11-12
+
+### Feature
+
+[Conversational Analytics](https://docs.cloud.google.com/looker/docs/conversational-analytics-overview) is now generally available for Looker instances that are on Looker 25.18 or later.
+
+You can now use Conversational Analytics in your Looker instance without having to enable the **Trusted Testers** settings. Enablement of the **Gemini in Looker** setting is still required.
+
+For Looker (Google Cloud core) instances, this launch includes support for Conversational Analytics in instances that are within a VPC perimeter.
+
+Enablement of the **Trusted Tester Features** setting is still required when using the [Code Interpreter](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-code-interpreter) with Conversational Analytics in Looker.
+
+---
+## 2025-11-11
+
+### Feature
+
+You can now schedule a daily, zero-downtime export for Looker (Google Cloud core) instances. For more information, see the [Create a scheduled export job for a Looker (Google Cloud core) instance](https://docs.cloud.google.com/looker/docs/looker-core-scheduled-export) documentation page. This feature is being rolled out and will appear in all instances within a few weeks.
+
+---
 ## 2025-11-05
 
 ### Other
@@ -56,14 +76,6 @@ An issue has been fixed where the **Clear field keep filter** button on an Explo
 
 An issue has been fixed where SQL Runner could return a `NoMethodError` when trying to query a LookML model that doesn't exist in the user's development mode. This feature now performs as expected.
 
-### Fixed
-
-An issue has been fixed where disabling the Favoriting LookML Dashboards Labs feature prevented users from moving LookML dashboards in folders. This feature now performs as expected.
-
-### Feature
-
-The Visual Drilling feature is now generally available on the Admin > General Settings page.
-
 ### Feature
 
 A new Labs feature, Internal Dashboard Theming, lets users apply predefined themes to a Looker dashboard. These themes, which are distinct from the themes that are used for embedded dashboards, can be managed by users with the `manage_internal_themes` permission.
@@ -71,6 +83,14 @@ A new Labs feature, Internal Dashboard Theming, lets users apply predefined them
 ### Feature
 
 The Visual Drilling feature is now out of Labs and generally available on the Admin > General Settings page.
+
+### Fixed
+
+An issue has been fixed where disabling the Favoriting LookML Dashboards Labs feature prevented users from moving LookML dashboards in folders. This feature now performs as expected.
+
+### Feature
+
+The Visual Drilling feature is now generally available on the Admin > General Settings page.
 
 ---
 ## 2025-10-31

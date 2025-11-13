@@ -77,6 +77,19 @@ at this time.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2025-10-29:feature:2</id>
+    <published>2025-10-29T00:00:00+00:00</published>
+    <updated>2025-10-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Enhanced Validation for API products</strong></p>
+<p>Heightened validation logic for creating and updating API products is now available. Apigee now explicitly verifies proxy and environment resources against your organization when creating and updating API products.</p>
+<p>Please ensure that all referenced resources exist and are correctly associated with your organization to avoid validation errors.</p>]]></content>
+    <summary>New validation logic ensures API products correctly reference existing proxy and environment resources within your organization.</summary>
+    <title>Feature: Enhanced API Product Validation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
     <id>urn:github:multani:gcp-changelog:apigee-x:2025-10-27:announcement:0</id>
     <published>2025-10-27T00:00:00+00:00</published>
     <updated>2025-10-27T00:00:00+00:00</updated>
@@ -105,7 +118,20 @@ documentation.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:apigee-x:2025-10-16:announcement:0</id>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2025-10-16:security:0</id>
+    <published>2025-10-16T00:00:00+00:00</published>
+    <updated>2025-10-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| <strong>440419558, 433759657</strong> | <strong>Security fix for Apigee infrastructure.</strong> This addresses the following vulnerabilities:   * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-22868">CVE-2025-22868</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-48924">CVE-2025-48924</a> <strong>Note</strong>: This fix updates a Java library that is included in Apigee. Reliance on Java libraries that are included with Apigee is not supported. Those libraries are for Apigee product functionality only, and there's no guarantee that a library will be available from release to release. For more information, see <a href="https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/java-callout-policy#Restrictions">Restrictions</a>. |</p>]]></content>
+    <summary>A security fix has been implemented for the Apigee infrastructure, addressing vulnerabilities CVE-2025-22868 and CVE-2025-48924. This update affects a Java library included with Apigee, and users should be aware that reliance on these internal libraries is not supported and may change between releases.</summary>
+    <title>Security: Security fix for Apigee</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2025-10-16:announcement:1</id>
     <published>2025-10-16T00:00:00+00:00</published>
     <updated>2025-10-16T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>On October 16, 2025, we released an updated version of Apigee (1-16-0-apigee-3).</p>
@@ -117,7 +143,7 @@ documentation.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:apigee-x:2025-10-16:fixed:1</id>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2025-10-16:fixed:2</id>
     <published>2025-10-16T00:00:00+00:00</published>
     <updated>2025-10-16T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>| Bug ID | Description |
@@ -129,19 +155,6 @@ documentation.</p>]]></content>
 | <strong>N/A</strong> | <strong>Updates to security infrastructure and libraries.</strong> |</p>]]></content>
     <summary>Resolved incorrect target latency metrics in Apigee Analytics and reduced excessive log messages for private IP addresses. Updated security infrastructure and geolocation data.</summary>
     <title>Fixed: Apigee Analytics Metrics and Logging Improvements</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:apigee-x:2025-10-16:security:2</id>
-    <published>2025-10-16T00:00:00+00:00</published>
-    <updated>2025-10-16T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>| Bug ID | Description |
-| --- | --- |
-| <strong>440419558, 433759657</strong> | <strong>Security fix for Apigee infrastructure.</strong> This addresses the following vulnerabilities:   * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-22868">CVE-2025-22868</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-48924">CVE-2025-48924</a> <strong>Note</strong>: This fix updates a Java library that is included in Apigee. Reliance on Java libraries that are included with Apigee is not supported. Those libraries are for Apigee product functionality only, and there's no guarantee that a library will be available from release to release. For more information, see <a href="https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/java-callout-policy#Restrictions">Restrictions</a>. |</p>]]></content>
-    <summary>A security fix has been implemented for the Apigee infrastructure, addressing vulnerabilities CVE-2025-22868 and CVE-2025-48924. This update affects a Java library included with Apigee, and users should be aware that reliance on these internal libraries is not supported and may change between releases.</summary>
-    <title>Security: Security fix for Apigee</title>
   </entry>
   <entry>
     <author>

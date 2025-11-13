@@ -1,5 +1,28 @@
 # Spanner
 
+## 2025-11-11
+
+### Feature
+
+[Spanner Studio](https://docs.cloud.google.com/spanner/docs/manage-data-using-console)
+now supports several new export options for your query results. You can export
+to a CSV or JSON file, Google Sheets, or copy the results to a clipboard. For
+more information, see
+[Create, modify, and query your data](https://docs.cloud.google.com/spanner/docs/manage-data-using-console#create-modify-query-data).
+
+---
+## 2025-11-10
+
+### Feature
+
+Spanner now automatically provides recommendations to apply
+[schema design best practices](https://docs.cloud.google.com/spanner/docs/schema-design)
+to your databases. You can view these schema issue recommendations on the
+Spanner Studio page for your database. For more information, see
+[View schema design best practice recommendations](https://docs.cloud.google.com/spanner/docs/manage-data-using-console#recommend-schema-best).
+This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages%22%3E).
+
+---
 ## 2025-10-31
 
 ### Libraries
@@ -15,7 +38,7 @@ A monthly digest of client library updates from across the [Cloud SDK](https://d
 ##### Bug Fixes
 
 * **deps:** Update the Java code generator (gapic-generator-java) to 2.63.0 ([c1a8238](https://github.com/googleapis/java-spanner/commit/c1a8238af33a083411f63cf6276eb683ee67ac6a))
-* Do a quick check if the application runs on GCP ([#4163](https://github.com/googleapis/java-spanner/issues/4163)) ([b9d7daf](https://github.com/googleapis/java-spanner/commit/b9d7daf000c0fb8b67142c6161bb578cadf49b18))
+* Do a quick check if the application runs on Google Cloud ([#4163](https://github.com/googleapis/java-spanner/issues/4163)) ([b9d7daf](https://github.com/googleapis/java-spanner/commit/b9d7daf000c0fb8b67142c6161bb578cadf49b18))
 * Migrate away from GoogleCredentials.fromStream() usages ([#4151](https://github.com/googleapis/java-spanner/issues/4151)) ([94d0474](https://github.com/googleapis/java-spanner/commit/94d0474ace62ea1059e5b69243f0b6eef31ddd06))
 
 ##### Dependencies

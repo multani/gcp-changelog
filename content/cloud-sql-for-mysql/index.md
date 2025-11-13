@@ -1,5 +1,16 @@
 # Cloud SQL for MySQL
 
+## 2025-11-12
+
+### Feature
+
+Cloud SQL for MySQL now supports minor version
+[8.0.44](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-44.html).
+To upgrade your existing
+instance to the new version, see
+[Upgrade the database minor version](https://cloud.google.com/sql/docs/mysql/upgrade-minor-db-version#manual-upgrade).
+
+---
 ## 2025-11-10
 
 ### Feature

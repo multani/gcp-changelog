@@ -1,5 +1,15 @@
 # Eventarc
 
+## 2025-11-11
+
+### Feature
+
+Eventarc Advanced support for
+[using access policies to control access](https://docs.cloud.google.com/eventarc/advanced/docs/control-publishing-access)
+when publishing event messages to an Eventarc Advanced bus is available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-09-24
 
 ### Feature

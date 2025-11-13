@@ -1,5 +1,20 @@
 # Cloud Run
 
+## 2025-11-12
+
+### Feature
+
+Support for [Python 3.14 runtime](https://docs.cloud.google.com/run/docs/runtime-support#python) is in [Preview](https://cloud.google.com/products?e=48754805#product-launch-stages). Starting from Python version 3.14 and later, the Python buildpack uses the UV package manager as the
+default installer for the dependencies you specify in your `requirements.txt` file. You can also use pip as the default installer for these versions by setting the `GOOGLE_PYTHON_PACKAGE_MANAGER` environment variable to `pip`. For more information, see [Specify dependencies in Python](https://docs.cloud.google.com/run/docs/runtimes/python-dependencies.md#dependencies).
+
+### Feature
+
+Cloud Run [source deployment](https://docs.cloud.google.com/run/docs/deploying-source-code) supports Ubuntu 24
+LTS base images (Preview). This builder is available under
+`gcr.io/buildpacks/builder:google-24`. For more information, see
+[Builders](https://docs.cloud.google.com/docs/buildpacks/builders).
+
+---
 ## 2025-11-11
 
 ### Feature

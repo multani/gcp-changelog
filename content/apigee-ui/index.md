@@ -1,5 +1,18 @@
 # Apigee UI
 
+## 2025-11-12
+
+### Announcement
+
+On November 12, 2025, we released an updated version of the Apigee UI.
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| 455584175 | **Fixed a performance issue with Debug session UI**  Fixed an issue where performance of the Debug session was severely degraded when loading a Debug session with a moderate number of transactions. |
+
+---
 ## 2025-11-10
 
 ### Announcement

@@ -1,5 +1,12 @@
 # App Engine flexible environment Python
 
+## 2025-11-12
+
+### Feature
+
+Support for [Python 3.14 runtime](https://docs.cloud.google.com/appengine/docs/flexible/python/runtime) is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2025-08-07
 
 ### Feature

@@ -2,6 +2,38 @@
 
 ## 2025-11-12
 
+### Feature
+
+**Enhance threat visibility and detection with Emerging Threats**
+
+The new **Emerging Threats** page provides AI-powered threat intelligence to help
+you understand how current threat campaigns might affect your organization.
+Powered by Google Threat Intelligence (GTI) and Gemini models, this page offers
+a curated view of critical global threats relevant to your environment.
+
+Emerging Threats continuously aligns intelligence from GTI with your organization's
+telemetry to highlight detection coverage and identify gaps. When it finds a gap,
+it uses Gemini to automatically draft new detection rules to accelerate your response.
+
+For more details, see [Emerging Threats overview](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats),
+[Emerging Threats feed](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-feed),and
+[Emerging Threats detailed view](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-detailed-view).
+
+### Feature
+
+**Use the Triage Agent to investigate alerts**
+
+You can now use Triage Agent, an AI-powered investigation assistant, to
+analyze alerts in Google SecOps. Triage Agent determines if an
+alert is a true or false positive, provides a summarized explanation for its
+conclusion, and suggests next steps for further investigation.
+
+You can trigger investigations manually or have them run automatically on
+supported alert types. Each investigation produces a detailed report that includes
+the agent's disposition, a summary of its findings, and a timeline of the analysis.
+
+For more details, see [Use Triage Agent to investigate alerts](https://docs.cloud.google.com/chronicle/docs/secops/triage-agent).
+
 ### Announcement
 
 **New parser documentation now available**

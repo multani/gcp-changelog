@@ -41,6 +41,14 @@ for information and instructions.
 NOTE: API product-scoped quotas are not supported in Apigee hybrid
 at this time.
 
+### Feature
+
+**Enhanced Validation for API products**
+
+Heightened validation logic for creating and updating API products is now available. Apigee now explicitly verifies proxy and environment resources against your organization when creating and updating API products.
+
+Please ensure that all referenced resources exist and are correctly associated with your organization to avoid validation errors.
+
 ---
 ## 2025-10-27
 
@@ -63,6 +71,12 @@ documentation.
 ---
 ## 2025-10-16
 
+### Security
+
+| Bug ID | Description |
+| --- | --- |
+| **440419558, 433759657** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2025-22868](https://nvd.nist.gov/vuln/detail/CVE-2025-22868) * [CVE-2025-48924](https://nvd.nist.gov/vuln/detail/CVE-2025-48924) **Note**: This fix updates a Java library that is included in Apigee. Reliance on Java libraries that are included with Apigee is not supported. Those libraries are for Apigee product functionality only, and there's no guarantee that a library will be available from release to release. For more information, see [Restrictions](https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/java-callout-policy#Restrictions). |
+
 ### Announcement
 
 On October 16, 2025, we released an updated version of Apigee (1-16-0-apigee-3).
@@ -78,12 +92,6 @@ On October 16, 2025, we released an updated version of Apigee (1-16-0-apigee-3).
 | **436323210** | **Fixed ingress cert keys to allow both `tls.key`/`key` and `tls.crt`/`cert`.** |
 | **438192028** | **Updated the geolocation database to mitigate stale IP-to-location mappings.** |
 | **N/A** | **Updates to security infrastructure and libraries.** |
-
-### Security
-
-| Bug ID | Description |
-| --- | --- |
-| **440419558, 433759657** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2025-22868](https://nvd.nist.gov/vuln/detail/CVE-2025-22868) * [CVE-2025-48924](https://nvd.nist.gov/vuln/detail/CVE-2025-48924) **Note**: This fix updates a Java library that is included in Apigee. Reliance on Java libraries that are included with Apigee is not supported. Those libraries are for Apigee product functionality only, and there's no guarantee that a library will be available from release to release. For more information, see [Restrictions](https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/java-callout-policy#Restrictions). |
 
 ---
 ## 2025-10-14

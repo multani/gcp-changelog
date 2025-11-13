@@ -43,6 +43,14 @@
           "title": "API Product Quotas",
           "summary": "New feature allows setting quotas at the API product level."
         }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Enhanced Validation for API products**\n\nHeightened validation logic for creating and updating API products is now available. Apigee now explicitly verifies proxy and environment resources against your organization when creating and updating API products.\n\nPlease ensure that all referenced resources exist and are correctly associated with your organization to avoid validation errors.",
+        "summary": {
+          "title": "Enhanced API Product Validation",
+          "summary": "New validation logic ensures API products correctly reference existing proxy and environment resources within your organization."
+        }
       }
     ],
     "2025-10-27": [
@@ -65,6 +73,14 @@
     ],
     "2025-10-16": [
       {
+        "kind": "Security",
+        "content": "| Bug ID | Description |\n| --- | --- |\n| **440419558, 433759657** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2025-22868](https://nvd.nist.gov/vuln/detail/CVE-2025-22868) * [CVE-2025-48924](https://nvd.nist.gov/vuln/detail/CVE-2025-48924) **Note**: This fix updates a Java library that is included in Apigee. Reliance on Java libraries that are included with Apigee is not supported. Those libraries are for Apigee product functionality only, and there's no guarantee that a library will be available from release to release. For more information, see [Restrictions](https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/java-callout-policy#Restrictions). |",
+        "summary": {
+          "title": "Security fix for Apigee",
+          "summary": "A security fix has been implemented for the Apigee infrastructure, addressing vulnerabilities CVE-2025-22868 and CVE-2025-48924. This update affects a Java library included with Apigee, and users should be aware that reliance on these internal libraries is not supported and may change between releases."
+        }
+      },
+      {
         "kind": "Announcement",
         "content": "On October 16, 2025, we released an updated version of Apigee (1-16-0-apigee-3).\n\n**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.",
         "summary": {
@@ -78,14 +94,6 @@
         "summary": {
           "title": "Apigee Analytics Metrics and Logging Improvements",
           "summary": "Resolved incorrect target latency metrics in Apigee Analytics and reduced excessive log messages for private IP addresses. Updated security infrastructure and geolocation data."
-        }
-      },
-      {
-        "kind": "Security",
-        "content": "| Bug ID | Description |\n| --- | --- |\n| **440419558, 433759657** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2025-22868](https://nvd.nist.gov/vuln/detail/CVE-2025-22868) * [CVE-2025-48924](https://nvd.nist.gov/vuln/detail/CVE-2025-48924) **Note**: This fix updates a Java library that is included in Apigee. Reliance on Java libraries that are included with Apigee is not supported. Those libraries are for Apigee product functionality only, and there's no guarantee that a library will be available from release to release. For more information, see [Restrictions](https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/java-callout-policy#Restrictions). |",
-        "summary": {
-          "title": "Security fix for Apigee",
-          "summary": "A security fix has been implemented for the Apigee infrastructure, addressing vulnerabilities CVE-2025-22868 and CVE-2025-48924. This update affects a Java library included with Apigee, and users should be aware that reliance on these internal libraries is not supported and may change between releases."
         }
       }
     ],

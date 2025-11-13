@@ -121,6 +121,23 @@ Updated Integrations (45)
 
 ### Feature
 
+**Enhance threat visibility and detection with Emerging Threats**
+
+The new **Emerging Threats** page provides AI-powered threat intelligence to help
+you understand how current threat campaigns might affect your organization.
+Powered by Google Threat Intelligence (GTI) and Gemini models, this page offers
+a curated view of critical global threats relevant to your environment.
+
+Emerging Threats continuously aligns intelligence from GTI with your organization's
+telemetry to highlight detection coverage and identify gaps. When it finds a gap,
+it uses Gemini to automatically draft new detection rules to accelerate your response.
+
+For more details, see [Emerging Threats overview](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats),
+[Emerging Threats feed](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-feed),and
+[Emerging Threats detailed view](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-detailed-view).
+
+### Feature
+
 **Use the Triage Agent to investigate alerts**
 
 You can now use Triage Agent, an AI-powered investigation assistant, to
@@ -183,6 +200,23 @@ New parser documentation is available to help you ingest and normalize logs from
 * [Collect VanDyke VShell SFTP logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vandyke-vshell-sftp)
 * [Collect Zendesk CRM logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zendesk-crm)
 * [Collect ZeroFox Platform logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zerofox-platform)
+
+### Feature
+
+**Enhance threat visibility and detection with Emerging Threats**
+
+The new **Emerging Threats** page provides AI-powered threat intelligence to help
+you understand how current threat campaigns might affect your organization.
+Powered by Google Threat Intelligence (GTI) and Gemini models, this page offers
+a curated view of critical global threats relevant to your environment.
+
+Emerging Threats continuously aligns intelligence from GTI with your organization's
+telemetry to highlight detection coverage and identify gaps. When it finds a gap,
+it uses Gemini to automatically draft new detection rules to accelerate your response.
+
+For more details, see [Emerging Threats overview](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats),
+[Emerging Threats feed](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-feed),and
+[Emerging Threats detailed view](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-detailed-view).
 
 ### Feature
 
@@ -822,10 +856,6 @@ Updated dependencies in the following integrations:
 * Added ability to scan domains and IPs in the following action:
 
   + **URL Check**
-
-### Deprecated
-
-The Netskope v1 API feed has been deprecated by Netskope. If you are using the Netskope REST API v1 with Google SecOps, you must switch to the Netskope REST API v2.
 
 ### Deprecated
 

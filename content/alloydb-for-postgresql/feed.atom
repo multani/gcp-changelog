@@ -2,9 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: AlloyDB for PostgreSQL</title>
   <subtitle>Changelog for Google Cloud product: AlloyDB for PostgreSQL</subtitle>
-  <updated>2025-11-11T00:00:00+00:00</updated>
+  <updated>2025-11-13T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/alloydb-for-postgresql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql:2025-11-13:feature:0</id>
+    <published>2025-11-13T00:00:00+00:00</published>
+    <updated>2025-11-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>AlloyDB AI native vector search accelerator is now generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>). It includes the following features and improvements:</p>
+<ul>
+<li>The <code>google_columnar_engine</code> extension is updated to automatically recommend data for searches, so you don't need to manually add vector columns to the table. For more information, see <a href="https://docs.cloud.google.com/alloydb/docs/ai/perform-vector-search#accelerate-filtered-vector-search">Perform a vector search</a>.</li>
+<li>The <code>alloydb_scann</code> extension is updated with new metrics for vector index creation. You can now use the <a href="https://docs.cloud.google.com/alloydb/docs/ai/tune-indexes?resource=scann#vector-index-metrics">pg_stat_ann_index_creation</a> view to see the number of rows present in a table at the time of index creation.</li>
+</ul>]]></content>
+    <summary>AlloyDB's AI native vector search accelerator is now generally available. This feature simplifies vector searches by automatically recommending data, eliminating the need for manual vector column additions. It also includes updated metrics for monitoring vector index creation.</summary>
+    <title>Feature: AlloyDB AI Vector Search Accelerator Now GA</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -42,12 +57,9 @@ see <a href="https://docs.cloud.google.com/alloydb/docs/improve-select-insert-pe
     <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql:2025-11-10:feature:0</id>
     <published>2025-11-10T00:00:00+00:00</published>
     <updated>2025-11-10T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>AlloyDB now supports PostgreSQL 17 for migrating from Cloud SQL for PostgreSQL
-to AlloyDB for PostgreSQL using your Cloud SQL for PostgreSQL backup. The size
-limit for these operations is now 15TB. For more information, see
-<a href="https://docs.cloud.google.com/alloydb/docs/migrate-cloud-sql-to-alloydb">Migrate from Cloud SQL for PostgreSQL to AlloyDB</a>.</p>]]></content>
-    <summary>AlloyDB for PostgreSQL now supports PostgreSQL 17, enabling migration from Cloud SQL for PostgreSQL with a 15TB size limit.</summary>
-    <title>Feature: AlloyDB supports PostgreSQL 17</title>
+    <content type="html"><![CDATA[<p>AlloyDB AI introduces <a href="https://docs.cloud.google.com/alloydb/docs/ai/generate-manage-auto-embeddings-for-tables">auto embedding generation</a> in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. You can now generate large-scale embeddings to leverage in semantic search and Retrieval Augmented Generation (RAG) on text content.</p>]]></content>
+    <summary>AlloyDB AI now offers auto embedding generation in Preview, enabling large-scale embeddings for semantic search and RAG on text content.</summary>
+    <title>Feature: New feature for AlloyDB AI</title>
   </entry>
   <entry>
     <author>
@@ -56,9 +68,12 @@ limit for these operations is now 15TB. For more information, see
     <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql:2025-11-10:feature:1</id>
     <published>2025-11-10T00:00:00+00:00</published>
     <updated>2025-11-10T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>AlloyDB AI introduces <a href="https://docs.cloud.google.com/alloydb/docs/ai/generate-manage-auto-embeddings-for-tables">auto embedding generation</a> in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. You can now generate large-scale embeddings to leverage in semantic search and Retrieval Augmented Generation (RAG) on text content.</p>]]></content>
-    <summary>AlloyDB AI now offers auto embedding generation in Preview, enabling large-scale embeddings for semantic search and RAG on text content.</summary>
-    <title>Feature: New feature for AlloyDB AI</title>
+    <content type="html"><![CDATA[<p>AlloyDB now supports PostgreSQL 17 for migrating from Cloud SQL for PostgreSQL
+to AlloyDB for PostgreSQL using your Cloud SQL for PostgreSQL backup. The size
+limit for these operations is now 15TB. For more information, see
+<a href="https://docs.cloud.google.com/alloydb/docs/migrate-cloud-sql-to-alloydb">Migrate from Cloud SQL for PostgreSQL to AlloyDB</a>.</p>]]></content>
+    <summary>AlloyDB for PostgreSQL now supports PostgreSQL 17, enabling migration from Cloud SQL for PostgreSQL with a 15TB size limit.</summary>
+    <title>Feature: AlloyDB supports PostgreSQL 17</title>
   </entry>
   <entry>
     <author>

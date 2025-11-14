@@ -1,5 +1,15 @@
 # AlloyDB for PostgreSQL
 
+## 2025-11-13
+
+### Feature
+
+AlloyDB AI native vector search accelerator is now generally available ([GA](https://cloud.google.com/products#product-launch-stages)). It includes the following features and improvements:
+
+* The `google_columnar_engine` extension is updated to automatically recommend data for searches, so you don't need to manually add vector columns to the table. For more information, see [Perform a vector search](https://docs.cloud.google.com/alloydb/docs/ai/perform-vector-search#accelerate-filtered-vector-search).
+* The `alloydb_scann` extension is updated with new metrics for vector index creation. You can now use the [pg\_stat\_ann\_index\_creation](https://docs.cloud.google.com/alloydb/docs/ai/tune-indexes?resource=scann#vector-index-metrics) view to see the number of rows present in a table at the time of index creation.
+
+---
 ## 2025-11-11
 
 ### Feature
@@ -23,14 +33,14 @@ see [Improve select insert performance with parallel select](https://docs.cloud.
 
 ### Feature
 
+AlloyDB AI introduces [auto embedding generation](https://docs.cloud.google.com/alloydb/docs/ai/generate-manage-auto-embeddings-for-tables) in [Preview](https://cloud.google.com/products#product-launch-stages). You can now generate large-scale embeddings to leverage in semantic search and Retrieval Augmented Generation (RAG) on text content.
+
+### Feature
+
 AlloyDB now supports PostgreSQL 17 for migrating from Cloud SQL for PostgreSQL
 to AlloyDB for PostgreSQL using your Cloud SQL for PostgreSQL backup. The size
 limit for these operations is now 15TB. For more information, see
 [Migrate from Cloud SQL for PostgreSQL to AlloyDB](https://docs.cloud.google.com/alloydb/docs/migrate-cloud-sql-to-alloydb).
-
-### Feature
-
-AlloyDB AI introduces [auto embedding generation](https://docs.cloud.google.com/alloydb/docs/ai/generate-manage-auto-embeddings-for-tables) in [Preview](https://cloud.google.com/products#product-launch-stages). You can now generate large-scale embeddings to leverage in semantic search and Retrieval Augmented Generation (RAG) on text content.
 
 ---
 ## 2025-10-31

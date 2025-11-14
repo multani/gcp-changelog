@@ -1,6 +1,504 @@
 {
   "name": "Container Optimized OS",
   "entries": {
+    "2025-11-11": [
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "New features available",
+          "summary": "We're excited to announce new features that enhance user experience and productivity. These updates include improved navigation, advanced search capabilities, and personalized dashboards. Explore the latest enhancements to streamline your workflow and discover new possibilities. Learn more on our blog."
+        }
+      },
+      {
+        "kind": "cos-dev-129-19370-0-0",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.57](https://cos.googlesource.com/third_party/kernel/+/c3056f1c3c4cadcbfa78777829fd19407ddc9e62 ) | v27.5.1 | v2.1.4 | [See List](https://storage.googleapis.com/cos-tools/19370.0.0/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS-6.12.57 update",
+          "summary": "The latest COS update, version 6.12.57, includes updates to the kernel, Docker, and Containerd. It also features GPU driver support."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated app-admin/sosreport to v4.10.1. Enabled containerd stack dump by default.",
+        "summary": {
+          "title": "Sosreport updated",
+          "summary": "Sosreport package has been updated to version 4.10.1."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated app-containers/containerd to v2.1.4.",
+        "summary": {
+          "title": "Updated containerd to v2.1.4",
+          "summary": "The containerd version has been updated to v2.1.4 in the app-containers/containerd component."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated app-containers/runc to v1.3.2.",
+        "summary": {
+          "title": "Updated app-containers/runc",
+          "summary": "Updated app-containers/runc to v1.3.2."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated the Linux kernel to v6.12.57.",
+        "summary": {
+          "title": "Linux Kernel Update",
+          "summary": "The Linux kernel has been updated to v6.12.57."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated the Linux kernel to v6.12.56.",
+        "summary": {
+          "title": "Linux Kernel Update",
+          "summary": "The Linux kernel has been updated to version 6.12.56."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Enabled HTCP TCP congestion control algorithm as a module.",
+        "summary": {
+          "title": "HTCP TCP Congestion Control Algorithm Enabled",
+          "summary": "The HTCP TCP congestion control algorithm is now available as a module."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added support for SCSI logging.",
+        "summary": {
+          "title": "SCSI Logging Support Added",
+          "summary": "SCSI logging capabilities have been enhanced. This update provides improved diagnostics and monitoring for SCSI devices."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Made CX-8 NIC naming order deterministic.",
+        "summary": {
+          "title": "Deterministic CX-8 NIC Naming",
+          "summary": "The order of NIC naming for CX-8 has been made deterministic."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/makedumpfile to v1.7.8.",
+        "summary": {
+          "title": "Upgraded sys-apps/makedumpfile to v1.7.8",
+          "summary": "The sys-apps/makedumpfile package has been updated to version 1.7.8."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-auth/pambase to v20251104.",
+        "summary": {
+          "title": "Updated pambase",
+          "summary": "The sys-auth/pambase package has been updated to version v20251104."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated app-containers/cri-tools to 1.32.0.",
+        "summary": {
+          "title": "cri-tools updated to 1.32.0",
+          "summary": "The app-containers/cri-tools were updated to version 1.32.0."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated net-misc/chrony to v4.8.",
+        "summary": {
+          "title": "Updated chrony to v4.8",
+          "summary": "The net-misc/chrony package has been updated to version 4.8."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-emulation/cloud-init to v25.1.4.",
+        "summary": {
+          "title": "Cloud-init updated",
+          "summary": "Cloud-init has been upgraded to version 25.1.4."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/google-breakpad to v2025.10.31.183851-r257.",
+        "summary": {
+          "title": "ChromeOS Breakpad Upgrade",
+          "summary": "ChromeOS Breakpad has been upgraded to version 2025.10.31.183851-r257."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-process/audit to 4.0.2-r1.",
+        "summary": {
+          "title": "Audit package upgraded",
+          "summary": "The audit package has been upgraded to version 4.0.2-r1."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/nss to 3.117 and dev-libs/nspr to 4.37.",
+        "summary": {
+          "title": "Upgraded NSS and NSPR libraries",
+          "summary": "The NSS and NSPR libraries have been updated to their latest versions (3.117 and 4.37, respectively)."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-libs/libcap to v2.77.",
+        "summary": {
+          "title": "libcap upgrade",
+          "summary": "sys-libs/libcap has been upgraded to version 2.77."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-libs/gnutls to v3.8.10 and dev-libs/nettle to 3.10.2.",
+        "summary": {
+          "title": "Upgraded gnutls and nettle",
+          "summary": "The net-libs/gnutls package has been updated to version 3.8.10, and dev-libs/nettle has been updated to version 3.10.2."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-python/coverage to v7.10.7.",
+        "summary": {
+          "title": "Coverage upgraded",
+          "summary": "The dev-python/coverage package has been upgraded to version 7.10.7."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Enabled multiport support for CX-8 devices.",
+        "summary": {
+          "title": "Multiport support enabled for CX-8",
+          "summary": "Multiport support has been enabled for CX-8 devices."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed a bug where setting MTU above 9000 on ARM systems with a 64k page size would cause IDPF networking to fail.",
+        "summary": {
+          "title": "ARM systems networking bug fix",
+          "summary": "Fixed a bug that caused IDPF networking to fail on ARM systems when MTU was set above 9000 with a 64k page size."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed bcache latency spikes.",
+        "summary": {
+          "title": "Fixed bcache latency spikes.",
+          "summary": "Fixed bcache latency spikes."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-31133, CVE-2025-52565, and CVE-2025-52881 in\napp-containers/runc.",
+        "summary": {
+          "title": "Security updates for runc",
+          "summary": "Security patches have been released for app-containers/runc to address CVE-2025-31133, CVE-2025-52565, and CVE-2025-52881."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811384 -> 811473",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "fs.file-max changed from 811384 to 811473."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "New Features Announced",
+          "summary": "We're excited to announce several new features that enhance user experience and functionality. Explore the latest updates designed to streamline your workflow and boost productivity. Discover how these improvements can benefit your daily tasks."
+        }
+      },
+      {
+        "kind": "cos-125-19216-104-17",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/13ec0b222243e837d814745f08d4dc0a950c2cae ) | v27.5.1 | v2.1.4 | [See List](https://storage.googleapis.com/cos-tools/19216.104.17/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "New COS version available",
+          "summary": "A new version of Container-Optimized OS (cos-125-19216-104-17) is now available, featuring updated Kernel, Docker, and Containerd components. GPU drivers are also included."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Updated app-containers/containerd to v2.1.4.",
+        "summary": {
+          "title": "Updated containerd to v2.1.4",
+          "summary": "containerd has been updated to version 2.1.4."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added support for the Lustre 2.14.0\\_p224 drivers.",
+        "summary": {
+          "title": "Lustre 2.14.0_p224 Drivers Supported",
+          "summary": "We've added support for the Lustre 2.14.0_p224 drivers."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Enabled HTCP TCP congestion control algorithm as a module.",
+        "summary": {
+          "title": "HTCP TCP congestion control algorithm enabled as module",
+          "summary": "The HTCP TCP congestion control algorithm is now available as a loadable module."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added support for SCSI logging.",
+        "summary": {
+          "title": "SCSI Logging Support Added",
+          "summary": "We've added support for SCSI logging to enhance your system's diagnostic capabilities."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/makedumpfile to v1.7.8.",
+        "summary": {
+          "title": "Makedumpfile upgraded",
+          "summary": "Makedumpfile has been updated to version 1.7.8."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Made CX-8 NIC naming order deterministic.",
+        "summary": {
+          "title": "Deterministic NIC Naming",
+          "summary": "CX-8 NIC naming order is now deterministic."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Enabled multiport support for CX-8 devices.",
+        "summary": {
+          "title": "Multiport Support Enabled for CX-8",
+          "summary": "Multiport support has been enabled for CX-8 devices."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed a race condition where unmounting file systems monitored by inotify or fanotify could result in kernel crash.",
+        "summary": {
+          "title": "Race condition fix for file system unmounting",
+          "summary": "Fixed a race condition that could cause kernel crashes when unmounting file systems monitored by inotify or fanotify."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-21833 in the Linux kernel.",
+        "summary": {
+          "title": "Security update for Linux kernel",
+          "summary": "A security vulnerability in the Linux kernel has been fixed."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-40083 in the Linux kernel.",
+        "summary": {
+          "title": "Security fix for Linux",
+          "summary": "A security vulnerability in the Linux kernel has been addressed."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811455 -> 811489\n* Changed: net.ipv4.udp\\_mem: 188034 250714 376068 -> 188034 250715 376068",
+        "summary": {
+          "title": "Runtime sysctl parameters updated",
+          "summary": "The fs.file-max and net.ipv4.udp_mem parameters have been updated."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "New features available",
+          "summary": "We're excited to announce new features that will enhance your experience. These updates are designed to improve performance and usability."
+        }
+      },
+      {
+        "kind": "cos-113-18244-521-16",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/0117e0608187f5d5d59bf6e2988f85d525f5804c ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.16/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS-113-18244-521-16",
+          "summary": "New COS version available. Includes updates to Kernel, Docker, and Containerd. GPU drivers also updated."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/makedumpfile to v1.7.8.",
+        "summary": {
+          "title": "Upgraded makedumpfile to v1.7.8",
+          "summary": "The makedumpfile utility has been updated to version 1.7.8."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-40078 in the Linux kernel.",
+        "summary": {
+          "title": "Fixed CVE-2025-40078 in the Linux kernel.",
+          "summary": "A security vulnerability (CVE-2025-40078) in the Linux kernel has been resolved."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-40099 in the Linux kernel.",
+        "summary": {
+          "title": "Security update for Linux kernel",
+          "summary": "A security vulnerability (CVE-2025-40099) in the Linux kernel has been fixed."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-40103 in the Linux kernel.",
+        "summary": {
+          "title": "Security Update",
+          "summary": "A security vulnerability in the Linux kernel has been fixed."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-40105 in the Linux kernel.",
+        "summary": {
+          "title": "Security update for Linux kernel",
+          "summary": "A security vulnerability in the Linux kernel has been addressed."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-40070 in the Linux kernel.",
+        "summary": {
+          "title": "Security update for Linux kernel",
+          "summary": "A security vulnerability (CVE-2025-40070) in the Linux kernel has been addressed."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 812016 -> 812054",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "fs.file-max changed from 812016 to 812054."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "New features available",
+          "summary": "We're excited to announce new features that enhance user experience and productivity. Explore the latest updates to streamline your workflow. This release focuses on improved performance and intuitive design."
+        }
+      },
+      {
+        "kind": "cos-121-18867-294-17",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/252528959f435be8e041c5ee345086497e3458fb ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.294.17/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container-Optimized OS Announcement",
+          "summary": "New COS version available with updates to Kernel, Docker, and Containerd. GPU driver information included."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/makedumpfile to v1.7.8.",
+        "summary": {
+          "title": "Upgraded makedumpfile to v1.7.8",
+          "summary": "The makedumpfile utility has been upgraded to version 1.7.8."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/pv to v1.9.44.",
+        "summary": {
+          "title": "Upgraded pv to v1.9.44",
+          "summary": "The pv package has been updated to version 1.9.44."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed a race condition where unmounting file systems monitored by inotify or fanotify could result in kernel crash.",
+        "summary": {
+          "title": "File system unmount issue fixed",
+          "summary": "A race condition that could cause a kernel crash when unmounting file systems monitored by inotify or fanotify has been resolved."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-40083 in the Linux kernel.",
+        "summary": {
+          "title": "Fixed CVE-2025-40083 in the Linux kernel.",
+          "summary": "The Linux kernel has been updated to address the security vulnerability identified as CVE-2025-40083."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-40078 in the Linux kernel.",
+        "summary": {
+          "title": "Fixed CVE-2025-40078 in Linux kernel",
+          "summary": "A security vulnerability in the Linux kernel has been addressed."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811792 -> 811813",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "fs.file-max changed from 811792 to 811813."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "New features",
+          "summary": "New features have been added to the platform."
+        }
+      },
+      {
+        "kind": "cos-117-18613-439-22",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/5262602406665b6083011415598c3b19ed26e392 ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.439.22/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container-Optimized OS 18613.439.22 Release",
+          "summary": "This release includes updates to the Kernel, Docker, and Containerd. GPU driver information is also available."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed a race condition where unmounting file systems monitored by inotify or fanotify could result in kernel crash.",
+        "summary": {
+          "title": "Fixed file system unmounting issue",
+          "summary": "Resolved a kernel crash issue that occurred when unmounting file systems being monitored by inotify or fanotify."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-40083 in the Linux kernel.",
+        "summary": {
+          "title": "Security update for Linux kernel",
+          "summary": "A security vulnerability in the Linux kernel has been addressed."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-40042 in the Linux kernel.",
+        "summary": {
+          "title": "Security Update for Linux Kernel",
+          "summary": "A security vulnerability (CVE-2025-40042) in the Linux kernel has been addressed. This fix enhances system security."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811733 -> 811751",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "fs.file-max changed from 811733 to 811751."
+        }
+      }
+    ],
     "2025-11-05": [
       {
         "kind": "cos-117-18613-439-16",

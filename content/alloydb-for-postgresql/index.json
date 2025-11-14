@@ -1,6 +1,16 @@
 {
   "name": "AlloyDB for PostgreSQL",
   "entries": {
+    "2025-11-13": [
+      {
+        "kind": "Feature",
+        "content": "AlloyDB AI native vector search accelerator is now generally available ([GA](https://cloud.google.com/products#product-launch-stages)). It includes the following features and improvements:\n\n* The `google_columnar_engine` extension is updated to automatically recommend data for searches, so you don't need to manually add vector columns to the table. For more information, see [Perform a vector search](https://docs.cloud.google.com/alloydb/docs/ai/perform-vector-search#accelerate-filtered-vector-search).\n* The `alloydb_scann` extension is updated with new metrics for vector index creation. You can now use the [pg\\_stat\\_ann\\_index\\_creation](https://docs.cloud.google.com/alloydb/docs/ai/tune-indexes?resource=scann#vector-index-metrics) view to see the number of rows present in a table at the time of index creation.",
+        "summary": {
+          "title": "AlloyDB AI Vector Search Accelerator Now GA",
+          "summary": "AlloyDB's AI native vector search accelerator is now generally available. This feature simplifies vector searches by automatically recommending data, eliminating the need for manual vector column additions. It also includes updated metrics for monitoring vector index creation."
+        }
+      }
+    ],
     "2025-11-11": [
       {
         "kind": "Feature",
@@ -22,18 +32,18 @@
     "2025-11-10": [
       {
         "kind": "Feature",
-        "content": "AlloyDB now supports PostgreSQL 17 for migrating from Cloud SQL for PostgreSQL\nto AlloyDB for PostgreSQL using your Cloud SQL for PostgreSQL backup. The size\nlimit for these operations is now 15TB. For more information, see\n[Migrate from Cloud SQL for PostgreSQL to AlloyDB](https://docs.cloud.google.com/alloydb/docs/migrate-cloud-sql-to-alloydb).",
-        "summary": {
-          "title": "AlloyDB supports PostgreSQL 17",
-          "summary": "AlloyDB for PostgreSQL now supports PostgreSQL 17, enabling migration from Cloud SQL for PostgreSQL with a 15TB size limit."
-        }
-      },
-      {
-        "kind": "Feature",
         "content": "AlloyDB AI introduces [auto embedding generation](https://docs.cloud.google.com/alloydb/docs/ai/generate-manage-auto-embeddings-for-tables) in [Preview](https://cloud.google.com/products#product-launch-stages). You can now generate large-scale embeddings to leverage in semantic search and Retrieval Augmented Generation (RAG) on text content.",
         "summary": {
           "title": "New feature for AlloyDB AI",
           "summary": "AlloyDB AI now offers auto embedding generation in Preview, enabling large-scale embeddings for semantic search and RAG on text content."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "AlloyDB now supports PostgreSQL 17 for migrating from Cloud SQL for PostgreSQL\nto AlloyDB for PostgreSQL using your Cloud SQL for PostgreSQL backup. The size\nlimit for these operations is now 15TB. For more information, see\n[Migrate from Cloud SQL for PostgreSQL to AlloyDB](https://docs.cloud.google.com/alloydb/docs/migrate-cloud-sql-to-alloydb).",
+        "summary": {
+          "title": "AlloyDB supports PostgreSQL 17",
+          "summary": "AlloyDB for PostgreSQL now supports PostgreSQL 17, enabling migration from Cloud SQL for PostgreSQL with a 15TB size limit."
         }
       }
     ],

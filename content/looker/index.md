@@ -22,29 +22,6 @@ You can now schedule a daily, zero-downtime export for Looker (Google Cloud core
 ---
 ## 2025-11-05
 
-### Other
-
-**Looker 25.20** is expected to include the following changes, features, and fixes:
-
-* Expected Looker (original) deployment start: **Thursday, November 6, 2025**
-* Expected Looker (original) final deployment and download available: **Thursday, November 13, 2025**
-* Expected Looker (Google Cloud core) deployment start: **Thursday, November 6, 2025**
-* Expected Looker (Google Cloud core) final deployment: **Tuesday, November 18, 2025**
-
-### Breaking
-
-Looker now recognizes results from the `YEAR` function as a number and not a date in MySQL 8.4. This change replicates the behavior of MySQL 8.0 and earlier.
-
-To undo this change for a MySQL connection, add the following parameter to the Additional JDBC parameters section: `yearIsDateType=true`
-
-### Breaking
-
-When you use [Elite System Activity](https://docs.cloud.google.com/looker/docs/elite-system-activity), the System Activity fields `sql_query.sql` and `sql_text.text` are limited to a length of 1.9 MB. Any data beyond the 1.9 MB limit will be truncated. (This release note was updated on November 10, 2025 to specify Elite System Activity.)
-
-### Feature
-
-The [Max Number of PDT Builder Connections](https://docs.cloud.google.com/looker/docs/connecting-to-your-db#max_number_of_pdt_builder_connections) limit has been increased from 10 to 100.
-
 ### Feature
 
 Looker 25.20 contains the following accessibility improvements:
@@ -64,6 +41,33 @@ Looker 25.20 contains the following accessibility improvements:
 * The drill links in a single value visualization are now classified as buttons and can be accessed using the keyboard.
 * The destination of an alert is now a required field.
 
+### Breaking
+
+Looker now recognizes results from the `YEAR` function as a number and not a date in MySQL 8.4. This change replicates the behavior of MySQL 8.0 and earlier.
+
+To undo this change for a MySQL connection, add the following parameter to the Additional JDBC parameters section: `yearIsDateType=true`
+
+### Feature
+
+The [Max Number of PDT Builder Connections](https://docs.cloud.google.com/looker/docs/connecting-to-your-db#max_number_of_pdt_builder_connections) limit has been increased from 10 to 100.
+
+### Breaking
+
+When you use [Elite System Activity](https://docs.cloud.google.com/looker/docs/elite-system-activity), the System Activity fields `sql_query.sql` and `sql_text.text` are limited to a length of 1.9 MB. Any data beyond the 1.9 MB limit will be truncated. (This release note was updated on November 10, 2025 to specify Elite System Activity.)
+
+### Other
+
+**Looker 25.20** is expected to include the following changes, features, and fixes:
+
+* Expected Looker (original) deployment start: **Thursday, November 6, 2025**
+* Expected Looker (original) final deployment and download available: **Thursday, November 13, 2025**
+* Expected Looker (Google Cloud core) deployment start: **Thursday, November 6, 2025**
+* Expected Looker (Google Cloud core) final deployment: **Tuesday, November 18, 2025**
+
+### Fixed
+
+An issue has been fixed where SQL Runner could return a `NoMethodError` when trying to query a LookML model that doesn't exist in the user's development mode. This feature now performs as expected.
+
 ### Fixed
 
 An issue has been fixed where a measure of `type: period_over_period` could be referenced in the `sql` parameter for a measure of `type: number`. Attempting to do so now correctly displays an error in the LookML validator. This feature now performs as expected.
@@ -72,17 +76,13 @@ An issue has been fixed where a measure of `type: period_over_period` could be r
 
 An issue has been fixed where the **Clear field keep filter** button on an Explore could incorrectly become disabled when a user used the field search bar in the field picker. This feature now performs as expected.
 
-### Fixed
+### Feature
 
-An issue has been fixed where SQL Runner could return a `NoMethodError` when trying to query a LookML model that doesn't exist in the user's development mode. This feature now performs as expected.
+The Visual Drilling feature is now out of Labs and generally available on the Admin > General Settings page.
 
 ### Feature
 
 A new Labs feature, Internal Dashboard Theming, lets users apply predefined themes to a Looker dashboard. These themes, which are distinct from the themes that are used for embedded dashboards, can be managed by users with the `manage_internal_themes` permission.
-
-### Feature
-
-The Visual Drilling feature is now out of Labs and generally available on the Admin > General Settings page.
 
 ### Fixed
 

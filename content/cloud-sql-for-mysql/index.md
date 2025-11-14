@@ -1,5 +1,26 @@
 # Cloud SQL for MySQL
 
+## 2025-11-13
+
+### Feature
+
+Cloud SQL for MySQL now lets you have more control over the number of results
+that are returned when you perform an ANN vector search with filters.
+You can use iterative filtering when the selective filters of the
+`WHERE` clause in your ANN search query produce fewer results
+than the number of results specified in your `LIMIT` clause.
+
+To enable iterative filtering for your ANN search query, set the
+`cloudsql_vector_iterative_filtering` flag to `ON`.
+You can set the flag at a session or global level.
+
+To enable and use iterative filtering for your ANN search query, you must have
+[`[MYSQL_$VERSION].R20251004.01_07`](https://docs.cloud.google.com/sql/docs/mysql/maintenance-changelog/)
+or later installed on your MySQL instance.
+
+For more information, see [Search approximate nearest neighbors (ANN)](https://docs.cloud.google.com/sql/docs/mysql/search-filter-vector-embeddings#ann).
+
+---
 ## 2025-11-12
 
 ### Feature
@@ -8,7 +29,7 @@ Cloud SQL for MySQL now supports minor version
 [8.0.44](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-44.html).
 To upgrade your existing
 instance to the new version, see
-[Upgrade the database minor version](https://cloud.google.com/sql/docs/mysql/upgrade-minor-db-version#manual-upgrade).
+[Upgrade the database minor version](https://docs.cloud.google.com/sql/docs/mysql/upgrade-minor-db-version#manual-upgrade).
 
 ---
 ## 2025-11-10

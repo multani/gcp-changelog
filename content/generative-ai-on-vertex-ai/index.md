@@ -1,5 +1,23 @@
 # Generative AI on Vertex AI
 
+## 2025-11-13
+
+### Feature
+
+**Updated Prompt Caching for Anthropic Claude Models**
+
+Prompt caching for Anthropic Claude models now supports a one-hour Time To Live (TTL).
+
+For more information, see [Prompt caching](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/partner-models/claude/prompt-caching).
+
+### Feature
+
+**Kimi K2 Thinking** is available in Model Garden. This model is
+a thinking model that excels at complex problem-solving and deep reasoning.
+Kimi K2 Thinking is available as a managed API in Model Garden. To learn more, see
+[Kimi K2 Thinking](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/maas/kimi/kimi-k2-thinking).
+
+---
 ## 2025-11-11
 
 ### Deprecated
@@ -89,20 +107,20 @@ For more information, see
 
 ### Feature
 
-**Mistral's Codestral 2**
-
-You can use Mistral's
-[Codestral 2](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/partner-models/mistral/codestral-2)
-in Model Garden.
-
-### Feature
-
 **vLLM TPU**
 
 [vLLM TPU](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/open-models/vllm/use-vllm-tpu), a
 highly-efficient serving framework for large language models (LLM) that's
 optimized for [Cloud TPU](https://docs.cloud.google.com/tpu) hardware, is available through
 Model Garden.
+
+### Feature
+
+**Mistral's Codestral 2**
+
+You can use Mistral's
+[Codestral 2](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/partner-models/mistral/codestral-2)
+in Model Garden.
 
 ---
 ## 2025-10-15
@@ -114,6 +132,21 @@ Model Garden.
 You can use Anthropic's
 [Claude Haiku 4.5](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/partner-models/claude/haiku-4-5)
 in Model Garden.
+
+### Feature
+
+**Veo video generation**
+
+Veo 2 supports adding and removing objects from videos in Preview.
+
+For more information about Veo 2, see [Veo 2
+Preview](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/veo/2-0-generate-preview)
+
+For more information about adding and removing objects, see the following:
+
+* [Insert objects into Veo videos](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/insert-objects-into-videos)
+* [Remove objects from Veo videos](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/remove-objects-from-videos)
+* [Veo video generation API](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/model-reference/veo-video-generation)
 
 ### Feature
 
@@ -133,21 +166,6 @@ For more information, see the following:
 * [Generate Veo videos from an image](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/generate-videos-from-an-image)
 * [Generate Veo videos using first and last frames](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/generate-videos-from-first-and-last-frames)
 * [Direct Veo using a reference image](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/use-reference-images-to-guide-video-generation)
-* [Veo video generation API](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/model-reference/veo-video-generation)
-
-### Feature
-
-**Veo video generation**
-
-Veo 2 supports adding and removing objects from videos in Preview.
-
-For more information about Veo 2, see [Veo 2
-Preview](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/veo/2-0-generate-preview)
-
-For more information about adding and removing objects, see the following:
-
-* [Insert objects into Veo videos](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/insert-objects-into-videos)
-* [Remove objects from Veo videos](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/remove-objects-from-videos)
 * [Veo video generation API](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/model-reference/veo-video-generation)
 
 ---

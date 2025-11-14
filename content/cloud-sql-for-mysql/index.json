@@ -1,13 +1,23 @@
 {
   "name": "Cloud SQL for MySQL",
   "entries": {
+    "2025-11-13": [
+      {
+        "kind": "Feature",
+        "content": "Cloud SQL for MySQL now lets you have more control over the number of results\nthat are returned when you perform an ANN vector search with filters.\nYou can use iterative filtering when the selective filters of the\n`WHERE` clause in your ANN search query produce fewer results\nthan the number of results specified in your `LIMIT` clause.\n\nTo enable iterative filtering for your ANN search query, set the\n`cloudsql_vector_iterative_filtering` flag to `ON`.\nYou can set the flag at a session or global level.\n\nTo enable and use iterative filtering for your ANN search query, you must have\n[`[MYSQL_$VERSION].R20251004.01_07`](https://docs.cloud.google.com/sql/docs/mysql/maintenance-changelog/)\nor later installed on your MySQL instance.\n\nFor more information, see [Search approximate nearest neighbors (ANN)](https://docs.cloud.google.com/sql/docs/mysql/search-filter-vector-embeddings#ann).",
+        "summary": {
+          "title": "Control ANN search results",
+          "summary": "You can now control the number of results returned during ANN vector searches with filters in Cloud SQL for MySQL. Iterative filtering can be used when filters yield fewer results than specified in the LIMIT clause. Enable this feature by setting the `cloudsql_vector_iterative_filtering` flag to ON."
+        }
+      }
+    ],
     "2025-11-12": [
       {
         "kind": "Feature",
-        "content": "Cloud SQL for MySQL now supports minor version\n[8.0.44](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-44.html).\nTo upgrade your existing\ninstance to the new version, see\n[Upgrade the database minor version](https://cloud.google.com/sql/docs/mysql/upgrade-minor-db-version#manual-upgrade).",
+        "content": "Cloud SQL for MySQL now supports minor version\n[8.0.44](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-44.html).\nTo upgrade your existing\ninstance to the new version, see\n[Upgrade the database minor version](https://docs.cloud.google.com/sql/docs/mysql/upgrade-minor-db-version#manual-upgrade).",
         "summary": {
-          "title": "Cloud SQL for MySQL Now Supports New Minor Version",
-          "summary": "Cloud SQL for MySQL instances now support the latest minor version update, 8.0.44. You can upgrade your existing instances to take advantage of this new version."
+          "title": "MySQL 8.0.44 support in Cloud SQL",
+          "summary": "Cloud SQL for MySQL instances now support the latest MySQL minor version 8.0.44. You can upgrade your existing instances to take advantage of this new version."
         }
       }
     ],

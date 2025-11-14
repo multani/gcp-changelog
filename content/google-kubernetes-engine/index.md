@@ -22,6 +22,13 @@ For more information, see
 
 ### Feature
 
+In version 1.34.1-gke.1829001 and later, GKE can
+[auto-create](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/node-auto-provisioning) multiple
+node pools concurrently to improve the speed with which multiple new node pools
+become ready.
+
+### Feature
+
 In GKE version 1.34.1-gke.2037001 and later, the
 GKE logging agent in your clusters can process logs up to two
 times faster per node than in version 1.33 and earlier. The logging agent also
@@ -29,13 +36,6 @@ uses less node resources, which improves efficiency especially if you use
 [high-throughput logging](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/adjust-log-throughput#enable).
 These improvements to the logging agent are automatically enabled in version
 1.34.1-gke.2037001 and later.
-
-### Feature
-
-In version 1.34.1-gke.1829001 and later, GKE can
-[auto-create](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/node-auto-provisioning) multiple
-node pools concurrently to improve the speed with which multiple new node pools
-become ready.
 
 ### Feature
 
@@ -757,18 +757,18 @@ multiple days to complete across all Google Cloud zones.
 
 ### Feature
 
+You can use the G4 VM, powered by NVIDIA's RTX PRO 6000 GPUs, with
+GKE Autopilot in version 1.34.1-gke.1829001 or later. To
+get started, see [Deploy GPU workloads in
+Autopilot](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/autopilot-gpus).
+
+### Feature
+
 Autoscaled blue-green upgrades are a type of node upgrade strategy that
 maximizes the amount of time before disruption-intolerant workloads are evicted,
 while minimizing cost. This feature is available in Preview for
 GKE Standard node pools. For more information, see
 [Autoscaled blue-green upgrades](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/node-pool-upgrade-strategies#autoscaled-blue-green-upgrade-strategy).
-
-### Feature
-
-You can use the G4 VM, powered by NVIDIA's RTX PRO 6000 GPUs, with
-GKE Autopilot in version 1.34.1-gke.1829001 or later. To
-get started, see [Deploy GPU workloads in
-Autopilot](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/autopilot-gpus).
 
 ---
 ## 2025-10-22

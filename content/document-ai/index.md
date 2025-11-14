@@ -1,5 +1,21 @@
 # Document AI
 
+## 2025-11-12
+
+### Feature
+
+Automated schema extraction for custom extractor processors is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+This feature allows you to automatically extract a document schema from a test
+document you supply. Then, you can approve or decline the schema and
+edit it manually. This saves time and effort when defining the document schema
+for your custom processor and allows you to focus on refining the schema.
+
+When creating a custom extractor processor, find the **Generate from document**
+option in the **Get started** tab of the Google Cloud console.
+
+---
 ## 2025-11-07
 
 ### Feature
@@ -17,7 +33,7 @@ or `pretrained-layout-parser-v1.5-pro-2025-08-25` for your processor.
 
 ### Feature
 
-Layout parser support for DOCX, PPTX, XLSX and XLSM file types in Document AI
+Layout parser support for DOCX, PPTX, XLSX, and XLSM file types in Document AI
 is in General Availability [(GA)](https://cloud.google.com/products/#product-launch-stages).
 It makes content like paragraphs, tables, lists, and structural elements like
 headings, page headers, and footers easily accessible. It also creates context-aware

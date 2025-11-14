@@ -4,6 +4,14 @@
 
 ### Feature
 
+The BigQuery [Overview page](https://docs.cloud.google.com/bigquery/docs/bigquery-web-ui#open-overview)
+is now your hub for discovering tutorials, features, and resources to help you
+get the most out of BigQuery. It provides guided paths for users
+of all skill levels. This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
 You can now use the
 [interactive SQL translator](https://docs.cloud.google.com/bigquery/docs/interactive-sql-translator), the
 [translation API](https://docs.cloud.google.com/bigquery/docs/api-sql-translator), and the
@@ -13,15 +21,16 @@ following SQL dialects into GoogleSQL:
 * Apache Impala SQL
 * GoogleSQL (BigQuery)
 
+Impala SQL translation can be used to migrate Cloudera and Apache Hadoop SQL
+workloads that use Impala as a query engine.
+
+GoogleSQL (BigQuery) translation can be used to verify and iteratively customize
+your translated SQL queries after an initial translation from an external
+dialect. For example, you can apply systematic query rewrites using [YAML
+configurations](https://docs.cloud.google.com/bigquery/docs/config-yaml-translation#optimize_and_improve_the_performance_of_translated_sql)
+to customize and optimize your GoogleSQL queries before deploying it.
+
 These features are in [Preview](https://cloud.google.com/products/#product-launch-stages).
-
-### Feature
-
-The BigQuery [Overview page](https://docs.cloud.google.com/bigquery/docs/bigquery-web-ui#open-overview)
-is now your hub for discovering tutorials, features, and resources to help you
-get the most out of BigQuery. It provides guided paths for users
-of all skill levels. This feature is in
-[Preview](https://cloud.google.com/products/#product-launch-stages).
 
 ### Feature
 

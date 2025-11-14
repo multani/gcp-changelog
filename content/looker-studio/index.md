@@ -1,18 +1,41 @@
 # Looker Studio
 
-## 2025-11-06
+## 2025-11-13
 
 ### Feature
 
-**Conditional formatting for bars in bar charts**
+**Filter control default values now accept parameters**
 
-You can now use [conditional formatting](https://cloud.google.com/looker/docs/studio/use-conditional-formatting-rules-in-looker-studio) on bar charts that use [modern charts](https://cloud.google.com/looker/docs/studio/modern-charts).
+You can now use parameters as default values in [filter controls](https://cloud.google.com/looker/docs/studio/drop-down-list-and-fixed-size-list-control).
+
+### Feature
+
+**Modernized timeline chart**
+
+[Timeline charts](https://docs.cloud.google.com/looker/docs/studio/timeline-chart-reference) have a new modernized look by default and give you new options for customizing bar corner radius, axes, and grid.
+
+### Feature
+
+**New shapes**
+
+The **Shapes** menu has been enhanced and expanded to include new shape types for report editors. See [Add text, images, lines, and shapes to your report](https://cloud.google.com/looker/docs/studio/add-text-images-lines-and-shapes-to-your-reports#add-shapes) to learn more.
+
+---
+## 2025-11-06
 
 ### Feature
 
 **Pro feature: Cloud Audit Logs**
 
 Looker Studio Pro logs are now available in the Logs Explorer within the Google Cloud console.
+
+### Feature
+
+**Looker connector enhancements**
+
+The Looker connector now supports query results of up to 75,000 rows. The Looker connector also supports exports of up to 75,000 rows of data.
+
+[Learn more about the limits of the Looker connector.](https://cloud.google.com/looker/docs/studio/limits-of-the-looker-connector)
 
 ### Feature
 
@@ -27,11 +50,9 @@ You can visualize the following metrics using the [Google Ads connector](https:/
 
 ### Feature
 
-**Looker connector enhancements**
+**Conditional formatting for bars in bar charts**
 
-The Looker connector now supports query results of up to 75,000 rows. The Looker connector also supports exports of up to 75,000 rows of data.
-
-[Learn more about the limits of the Looker connector.](https://cloud.google.com/looker/docs/studio/limits-of-the-looker-connector)
+You can now use [conditional formatting](https://cloud.google.com/looker/docs/studio/use-conditional-formatting-rules-in-looker-studio) on bar charts that use [modern charts](https://cloud.google.com/looker/docs/studio/modern-charts).
 
 ### Feature
 
@@ -55,16 +76,6 @@ The following partner connectors have been added to the [Looker Studio Connector
 
 ### Feature
 
-**Pro feature: CSV connector enhancement**
-
-Introducing new user experience enhancements for the CSV connector.
-
-[Learn more about the CSV connector](https://cloud.google.com/looker/docs/studio/upload-csv-files-to-looker-studio).
-
-**Note:** This feature is being released gradually. You might not see it right away.
-
-### Feature
-
 **Partner connection launch update**
 
 The following partner connectors have been added to the [Looker Studio Connector Gallery](https://lookerstudio.google.com/data):
@@ -81,6 +92,16 @@ The following partner connectors have been added to the [Looker Studio Connector
 * [Vibe](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbw521HWPONl6boUDoOsBfVdCHGDrw0bIlRWXqgaHeFl1hMNYGxPcHj0bOzt1_zZIMXM) by Supermetrics. Sources: Vibe
 * [Power My Analytics](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbztUN74F880Usj83EIIPIAovGMVTcEPw2BeqezyrIYmoPaxiZTkCAkMZA1izoXyOGwP-Q) by Power My Analytics. Sources: Constant Contact
 * [Zen AI - Meta Ads](https://lookerstudio.google.com/c/datasources/create?connectorId=AKfycbz_PfwpONjz4jgSbL0olsmjd6uGxKOncqB50HwLSkOcQUnCnBkow3D4dVpnvd62M1R7XQ) by Zen AI. Sources: Facebook Ads
+
+### Feature
+
+**Pro feature: CSV connector enhancement**
+
+Introducing new user experience enhancements for the CSV connector.
+
+[Learn more about the CSV connector](https://cloud.google.com/looker/docs/studio/upload-csv-files-to-looker-studio).
+
+**Note:** This feature is being released gradually. You might not see it right away.
 
 ---
 ## 2025-10-16

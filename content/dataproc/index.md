@@ -1,5 +1,23 @@
 # Dataproc
 
+## 2025-11-13
+
+### Announcement
+
+New [Serverless for Apache Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
+
+* 1.2.62
+* 2.2.62
+* 2.3.15
+
+### Feature
+
+**Serverless for Apache Spark:** Added the
+[`dataproc.artifacts.remove`](https://docs.cloud.google.com/dataproc-serverless/docs/concepts/properties#other_properties) property,
+which lets users remove default artifacts, such as `spark-bigquery-connector`,
+`iceberg`, and `delta-lake` from a Serverless for Apache Spark runtime.
+
+---
 ## 2025-11-07
 
 ### Announcement

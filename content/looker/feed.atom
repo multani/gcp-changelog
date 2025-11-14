@@ -34,58 +34,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:other:0</id>
-    <published>2025-11-05T00:00:00+00:00</published>
-    <updated>2025-11-05T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Looker 25.20</strong> is expected to include the following changes, features, and fixes:</p>
-<ul>
-<li>Expected Looker (original) deployment start: <strong>Thursday, November 6, 2025</strong></li>
-<li>Expected Looker (original) final deployment and download available: <strong>Thursday, November 13, 2025</strong></li>
-<li>Expected Looker (Google Cloud core) deployment start: <strong>Thursday, November 6, 2025</strong></li>
-<li>Expected Looker (Google Cloud core) final deployment: <strong>Tuesday, November 18, 2025</strong></li>
-</ul>]]></content>
-    <summary>The Looker 25.20 release is scheduled for November 2025, with deployments for both Looker (original) and Looker (Google Cloud core) beginning on November 6th. The original version will be finalized by November 13th, while the Google Cloud core version will conclude by November 18th.</summary>
-    <title>Other: Looker 25.20 Release</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:breaking:1</id>
-    <published>2025-11-05T00:00:00+00:00</published>
-    <updated>2025-11-05T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Looker now recognizes results from the <code>YEAR</code> function as a number and not a date in MySQL 8.4. This change replicates the behavior of MySQL 8.0 and earlier.</p>
-<p>To undo this change for a MySQL connection, add the following parameter to the Additional JDBC parameters section: <code>yearIsDateType=true</code></p>]]></content>
-    <summary>Looker now treats YEAR function results as numbers in MySQL 8.4, aligning with earlier versions. To revert this, set `yearIsDateType=true` in your MySQL connection settings.</summary>
-    <title>Breaking: Looker now recognizes YEAR function results as numbers in MySQL 8.4</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:breaking:2</id>
-    <published>2025-11-05T00:00:00+00:00</published>
-    <updated>2025-11-05T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>When you use <a href="https://docs.cloud.google.com/looker/docs/elite-system-activity">Elite System Activity</a>, the System Activity fields <code>sql_query.sql</code> and <code>sql_text.text</code> are limited to a length of 1.9 MB. Any data beyond the 1.9 MB limit will be truncated. (This release note was updated on November 10, 2025 to specify Elite System Activity.)</p>]]></content>
-    <summary>System Activity fields `sql_query.sql` and `sql_text.text` are limited to 1.9 MB when using Elite System Activity. Data exceeding this limit will be truncated.</summary>
-    <title>Breaking: System Activity Fields Truncation</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:feature:3</id>
-    <published>2025-11-05T00:00:00+00:00</published>
-    <updated>2025-11-05T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/connecting-to-your-db#max_number_of_pdt_builder_connections">Max Number of PDT Builder Connections</a> limit has been increased from 10 to 100.</p>]]></content>
-    <summary>The maximum number of PDT Builder connections has been increased from 10 to 100.</summary>
-    <title>Feature: PDT Builder Connections Limit Increased</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:feature:4</id>
+    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:feature:0</id>
     <published>2025-11-05T00:00:00+00:00</published>
     <updated>2025-11-05T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Looker 25.20 contains the following accessibility improvements:</p>
@@ -112,29 +61,58 @@
     <author>
       <name>Google Cloud</name>
     </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:breaking:1</id>
+    <published>2025-11-05T00:00:00+00:00</published>
+    <updated>2025-11-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Looker now recognizes results from the <code>YEAR</code> function as a number and not a date in MySQL 8.4. This change replicates the behavior of MySQL 8.0 and earlier.</p>
+<p>To undo this change for a MySQL connection, add the following parameter to the Additional JDBC parameters section: <code>yearIsDateType=true</code></p>]]></content>
+    <summary>Looker now treats YEAR function results as numbers in MySQL 8.4, aligning with earlier versions. To revert this, set `yearIsDateType=true` in your MySQL connection settings.</summary>
+    <title>Breaking: Looker now recognizes YEAR function results as numbers in MySQL 8.4</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:feature:2</id>
+    <published>2025-11-05T00:00:00+00:00</published>
+    <updated>2025-11-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/connecting-to-your-db#max_number_of_pdt_builder_connections">Max Number of PDT Builder Connections</a> limit has been increased from 10 to 100.</p>]]></content>
+    <summary>The maximum number of PDT Builder connections has been increased from 10 to 100.</summary>
+    <title>Feature: PDT Builder Connections Limit Increased</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:breaking:3</id>
+    <published>2025-11-05T00:00:00+00:00</published>
+    <updated>2025-11-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>When you use <a href="https://docs.cloud.google.com/looker/docs/elite-system-activity">Elite System Activity</a>, the System Activity fields <code>sql_query.sql</code> and <code>sql_text.text</code> are limited to a length of 1.9 MB. Any data beyond the 1.9 MB limit will be truncated. (This release note was updated on November 10, 2025 to specify Elite System Activity.)</p>]]></content>
+    <summary>System Activity fields `sql_query.sql` and `sql_text.text` are limited to 1.9 MB when using Elite System Activity. Data exceeding this limit will be truncated.</summary>
+    <title>Breaking: System Activity Fields Truncation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:other:4</id>
+    <published>2025-11-05T00:00:00+00:00</published>
+    <updated>2025-11-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Looker 25.20</strong> is expected to include the following changes, features, and fixes:</p>
+<ul>
+<li>Expected Looker (original) deployment start: <strong>Thursday, November 6, 2025</strong></li>
+<li>Expected Looker (original) final deployment and download available: <strong>Thursday, November 13, 2025</strong></li>
+<li>Expected Looker (Google Cloud core) deployment start: <strong>Thursday, November 6, 2025</strong></li>
+<li>Expected Looker (Google Cloud core) final deployment: <strong>Tuesday, November 18, 2025</strong></li>
+</ul>]]></content>
+    <summary>The Looker 25.20 release is scheduled for November 2025, with deployments for both Looker (original) and Looker (Google Cloud core) beginning on November 6th. The original version will be finalized by November 13th, while the Google Cloud core version will conclude by November 18th.</summary>
+    <title>Other: Looker 25.20 Release</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
     <id>urn:github:multani:gcp-changelog:looker:2025-11-05:fixed:5</id>
-    <published>2025-11-05T00:00:00+00:00</published>
-    <updated>2025-11-05T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>An issue has been fixed where a measure of <code>type: period_over_period</code> could be referenced in the <code>sql</code> parameter for a measure of <code>type: number</code>. Attempting to do so now correctly displays an error in the LookML validator. This feature now performs as expected.</p>]]></content>
-    <summary>The LookML validator now correctly displays an error when a measure of type `period_over_period` is referenced in the `sql` parameter for a measure of type `number`. This resolves a previous issue where such references would not be properly flagged, ensuring the feature now performs as expected.</summary>
-    <title>Fixed: Period Over Period Measure Error Fixed</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:fixed:6</id>
-    <published>2025-11-05T00:00:00+00:00</published>
-    <updated>2025-11-05T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>An issue has been fixed where the <strong>Clear field keep filter</strong> button on an Explore could incorrectly become disabled when a user used the field search bar in the field picker. This feature now performs as expected.</p>]]></content>
-    <summary>The Clear field keep filter button on an Explore can now be used as expected after a fix for an issue where it was incorrectly disabled when using the field search bar.</summary>
-    <title>Fixed: Clear field keep filter button fixed</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:fixed:7</id>
     <published>2025-11-05T00:00:00+00:00</published>
     <updated>2025-11-05T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where SQL Runner could return a <code>NoMethodError</code> when trying to query a LookML model that doesn't exist in the user's development mode. This feature now performs as expected.</p>]]></content>
@@ -145,12 +123,34 @@
     <author>
       <name>Google Cloud</name>
     </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:fixed:6</id>
+    <published>2025-11-05T00:00:00+00:00</published>
+    <updated>2025-11-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where a measure of <code>type: period_over_period</code> could be referenced in the <code>sql</code> parameter for a measure of <code>type: number</code>. Attempting to do so now correctly displays an error in the LookML validator. This feature now performs as expected.</p>]]></content>
+    <summary>The LookML validator now correctly displays an error when a measure of type `period_over_period` is referenced in the `sql` parameter for a measure of type `number`. This resolves a previous issue where such references would not be properly flagged, ensuring the feature now performs as expected.</summary>
+    <title>Fixed: Period Over Period Measure Error Fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-11-05:fixed:7</id>
+    <published>2025-11-05T00:00:00+00:00</published>
+    <updated>2025-11-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the <strong>Clear field keep filter</strong> button on an Explore could incorrectly become disabled when a user used the field search bar in the field picker. This feature now performs as expected.</p>]]></content>
+    <summary>The Clear field keep filter button on an Explore can now be used as expected after a fix for an issue where it was incorrectly disabled when using the field search bar.</summary>
+    <title>Fixed: Clear field keep filter button fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
     <id>urn:github:multani:gcp-changelog:looker:2025-11-05:feature:8</id>
     <published>2025-11-05T00:00:00+00:00</published>
     <updated>2025-11-05T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>A new Labs feature, Internal Dashboard Theming, lets users apply predefined themes to a Looker dashboard. These themes, which are distinct from the themes that are used for embedded dashboards, can be managed by users with the <code>manage_internal_themes</code> permission.</p>]]></content>
-    <summary>Users can now apply predefined themes to their Looker dashboards with the new Internal Dashboard Theming feature. This allows for easier customization and a more personalized user experience.</summary>
-    <title>Feature: Internal Dashboard Theming</title>
+    <content type="html"><![CDATA[<p>The Visual Drilling feature is now out of Labs and generally available on the Admin &gt; General Settings page.</p>]]></content>
+    <summary>The Visual Drilling feature has been released from Labs and is now generally available. You can find this new feature on the Admin &gt; General Settings page.</summary>
+    <title>Feature: Visual Drilling Now Generally Available</title>
   </entry>
   <entry>
     <author>
@@ -159,9 +159,9 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-11-05:feature:9</id>
     <published>2025-11-05T00:00:00+00:00</published>
     <updated>2025-11-05T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The Visual Drilling feature is now out of Labs and generally available on the Admin &gt; General Settings page.</p>]]></content>
-    <summary>The Visual Drilling feature has been released from Labs and is now generally available. You can find this new feature on the Admin &gt; General Settings page.</summary>
-    <title>Feature: Visual Drilling Now Generally Available</title>
+    <content type="html"><![CDATA[<p>A new Labs feature, Internal Dashboard Theming, lets users apply predefined themes to a Looker dashboard. These themes, which are distinct from the themes that are used for embedded dashboards, can be managed by users with the <code>manage_internal_themes</code> permission.</p>]]></content>
+    <summary>Users can now apply predefined themes to their Looker dashboards with the new Internal Dashboard Theming feature. This allows for easier customization and a more personalized user experience.</summary>
+    <title>Feature: Internal Dashboard Theming</title>
   </entry>
   <entry>
     <author>

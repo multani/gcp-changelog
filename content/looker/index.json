@@ -23,11 +23,11 @@
     ],
     "2025-11-05": [
       {
-        "kind": "Other",
-        "content": "**Looker 25.20** is expected to include the following changes, features, and fixes:\n\n* Expected Looker (original) deployment start: **Thursday, November 6, 2025**\n* Expected Looker (original) final deployment and download available: **Thursday, November 13, 2025**\n* Expected Looker (Google Cloud core) deployment start: **Thursday, November 6, 2025**\n* Expected Looker (Google Cloud core) final deployment: **Tuesday, November 18, 2025**",
+        "kind": "Feature",
+        "content": "Looker 25.20 contains the following accessibility improvements:\n\n* The character count for the custom message field of a schedule is now accessible to screen readers.\n* The text for errors on custom filters is now accessible to screen readers.\n* The list of visualization types in the Visualization section of an Explore is now accessible to screen readers.\n* The reload button and corresponding \"last refreshed\" timestamp on a dashboard are now accessible to screen readers.\n* The timezone selector on an Explore is now accessible to screen readers.\n* The sort indicators in an Explore are now accessible to screen readers.\n* The text formatting options in the Series tab of an Explore are now accessible to screen readers.\n* Contrast is improved for elements that are selected when you set up dashboard filters.\n* Contrast is improved for fields that are selected when Looker suggests a field name in the table calculations editor.\n* Contrast is improved for tabs that are selected on the Schedule Delivery dialog.\n* Contrast is improved for radio buttons that are selected on dialogs such as the download dialog.\n* Dashboard filter options are no longer incorrectly classified as dialogs.\n* The drill links in a single value visualization are now classified as buttons and can be accessed using the keyboard.\n* The destination of an alert is now a required field.",
         "summary": {
-          "title": "Looker 25.20 Release",
-          "summary": "The Looker 25.20 release is scheduled for November 2025, with deployments for both Looker (original) and Looker (Google Cloud core) beginning on November 6th. The original version will be finalized by November 13th, while the Google Cloud core version will conclude by November 18th."
+          "title": "Accessibility Improvements in Looker 25.20",
+          "summary": "Looker 25.20 includes several accessibility enhancements, making features like custom messages, error texts, visualization types, dashboard elements, and explore options more accessible to screen readers. Additionally, contrast has been improved in various elements, including dashboard filters, table calculations, and dialog boxes, with several UI elements reclassified for better keyboard navigation and usability."
         }
       },
       {
@@ -39,14 +39,6 @@
         }
       },
       {
-        "kind": "Breaking",
-        "content": "When you use [Elite System Activity](https://docs.cloud.google.com/looker/docs/elite-system-activity), the System Activity fields `sql_query.sql` and `sql_text.text` are limited to a length of 1.9 MB. Any data beyond the 1.9 MB limit will be truncated. (This release note was updated on November 10, 2025 to specify Elite System Activity.)",
-        "summary": {
-          "title": "System Activity Fields Truncation",
-          "summary": "System Activity fields `sql_query.sql` and `sql_text.text` are limited to 1.9 MB when using Elite System Activity. Data exceeding this limit will be truncated."
-        }
-      },
-      {
         "kind": "Feature",
         "content": "The [Max Number of PDT Builder Connections](https://docs.cloud.google.com/looker/docs/connecting-to-your-db#max_number_of_pdt_builder_connections) limit has been increased from 10 to 100.",
         "summary": {
@@ -55,11 +47,27 @@
         }
       },
       {
-        "kind": "Feature",
-        "content": "Looker 25.20 contains the following accessibility improvements:\n\n* The character count for the custom message field of a schedule is now accessible to screen readers.\n* The text for errors on custom filters is now accessible to screen readers.\n* The list of visualization types in the Visualization section of an Explore is now accessible to screen readers.\n* The reload button and corresponding \"last refreshed\" timestamp on a dashboard are now accessible to screen readers.\n* The timezone selector on an Explore is now accessible to screen readers.\n* The sort indicators in an Explore are now accessible to screen readers.\n* The text formatting options in the Series tab of an Explore are now accessible to screen readers.\n* Contrast is improved for elements that are selected when you set up dashboard filters.\n* Contrast is improved for fields that are selected when Looker suggests a field name in the table calculations editor.\n* Contrast is improved for tabs that are selected on the Schedule Delivery dialog.\n* Contrast is improved for radio buttons that are selected on dialogs such as the download dialog.\n* Dashboard filter options are no longer incorrectly classified as dialogs.\n* The drill links in a single value visualization are now classified as buttons and can be accessed using the keyboard.\n* The destination of an alert is now a required field.",
+        "kind": "Breaking",
+        "content": "When you use [Elite System Activity](https://docs.cloud.google.com/looker/docs/elite-system-activity), the System Activity fields `sql_query.sql` and `sql_text.text` are limited to a length of 1.9 MB. Any data beyond the 1.9 MB limit will be truncated. (This release note was updated on November 10, 2025 to specify Elite System Activity.)",
         "summary": {
-          "title": "Accessibility Improvements in Looker 25.20",
-          "summary": "Looker 25.20 includes several accessibility enhancements, making features like custom messages, error texts, visualization types, dashboard elements, and explore options more accessible to screen readers. Additionally, contrast has been improved in various elements, including dashboard filters, table calculations, and dialog boxes, with several UI elements reclassified for better keyboard navigation and usability."
+          "title": "System Activity Fields Truncation",
+          "summary": "System Activity fields `sql_query.sql` and `sql_text.text` are limited to 1.9 MB when using Elite System Activity. Data exceeding this limit will be truncated."
+        }
+      },
+      {
+        "kind": "Other",
+        "content": "**Looker 25.20** is expected to include the following changes, features, and fixes:\n\n* Expected Looker (original) deployment start: **Thursday, November 6, 2025**\n* Expected Looker (original) final deployment and download available: **Thursday, November 13, 2025**\n* Expected Looker (Google Cloud core) deployment start: **Thursday, November 6, 2025**\n* Expected Looker (Google Cloud core) final deployment: **Tuesday, November 18, 2025**",
+        "summary": {
+          "title": "Looker 25.20 Release",
+          "summary": "The Looker 25.20 release is scheduled for November 2025, with deployments for both Looker (original) and Looker (Google Cloud core) beginning on November 6th. The original version will be finalized by November 13th, while the Google Cloud core version will conclude by November 18th."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where SQL Runner could return a `NoMethodError` when trying to query a LookML model that doesn't exist in the user's development mode. This feature now performs as expected.",
+        "summary": {
+          "title": "SQL Runner Error Fixed",
+          "summary": "The SQL Runner 'NoMethodError' issue has been resolved. It now functions correctly when querying non-existent LookML models in development mode."
         }
       },
       {
@@ -79,11 +87,11 @@
         }
       },
       {
-        "kind": "Fixed",
-        "content": "An issue has been fixed where SQL Runner could return a `NoMethodError` when trying to query a LookML model that doesn't exist in the user's development mode. This feature now performs as expected.",
+        "kind": "Feature",
+        "content": "The Visual Drilling feature is now out of Labs and generally available on the Admin > General Settings page.",
         "summary": {
-          "title": "SQL Runner Error Fixed",
-          "summary": "The SQL Runner 'NoMethodError' issue has been resolved. It now functions correctly when querying non-existent LookML models in development mode."
+          "title": "Visual Drilling Now Generally Available",
+          "summary": "The Visual Drilling feature has been released from Labs and is now generally available. You can find this new feature on the Admin > General Settings page."
         }
       },
       {
@@ -92,14 +100,6 @@
         "summary": {
           "title": "Internal Dashboard Theming",
           "summary": "Users can now apply predefined themes to their Looker dashboards with the new Internal Dashboard Theming feature. This allows for easier customization and a more personalized user experience."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "The Visual Drilling feature is now out of Labs and generally available on the Admin > General Settings page.",
-        "summary": {
-          "title": "Visual Drilling Now Generally Available",
-          "summary": "The Visual Drilling feature has been released from Labs and is now generally available. You can find this new feature on the Admin > General Settings page."
         }
       },
       {

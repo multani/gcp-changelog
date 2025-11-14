@@ -2148,22 +2148,7 @@
 <p>You can now schedule a daily, zero-downtime export for Looker (Google Cloud core) instances. For more information, see the <a href="https://docs.cloud.google.com/looker/docs/looker-core-scheduled-export">Create a scheduled export job for a Looker (Google Cloud core) instance</a> documentation page. This feature is being rolled out and will appear in all instances within a few weeks.</p>
 <hr />
 <h2 id="2025-11-05">2025-11-05</h2>
-<h3 id="other">Other</h3>
-<p><strong>Looker 25.20</strong> is expected to include the following changes, features, and fixes:</p>
-<ul>
-<li>Expected Looker (original) deployment start: <strong>Thursday, November 6, 2025</strong></li>
-<li>Expected Looker (original) final deployment and download available: <strong>Thursday, November 13, 2025</strong></li>
-<li>Expected Looker (Google Cloud core) deployment start: <strong>Thursday, November 6, 2025</strong></li>
-<li>Expected Looker (Google Cloud core) final deployment: <strong>Tuesday, November 18, 2025</strong></li>
-</ul>
-<h3 id="breaking">Breaking</h3>
-<p>Looker now recognizes results from the <code>YEAR</code> function as a number and not a date in MySQL 8.4. This change replicates the behavior of MySQL 8.0 and earlier.</p>
-<p>To undo this change for a MySQL connection, add the following parameter to the Additional JDBC parameters section: <code>yearIsDateType=true</code></p>
-<h3 id="breaking_1">Breaking</h3>
-<p>When you use <a href="https://docs.cloud.google.com/looker/docs/elite-system-activity">Elite System Activity</a>, the System Activity fields <code>sql_query.sql</code> and <code>sql_text.text</code> are limited to a length of 1.9 MB. Any data beyond the 1.9 MB limit will be truncated. (This release note was updated on November 10, 2025 to specify Elite System Activity.)</p>
 <h3 id="feature_2">Feature</h3>
-<p>The <a href="https://docs.cloud.google.com/looker/docs/connecting-to-your-db#max_number_of_pdt_builder_connections">Max Number of PDT Builder Connections</a> limit has been increased from 10 to 100.</p>
-<h3 id="feature_3">Feature</h3>
 <p>Looker 25.20 contains the following accessibility improvements:</p>
 <ul>
 <li>The character count for the custom message field of a schedule is now accessible to screen readers.</li>
@@ -2181,16 +2166,31 @@
 <li>The drill links in a single value visualization are now classified as buttons and can be accessed using the keyboard.</li>
 <li>The destination of an alert is now a required field.</li>
 </ul>
+<h3 id="breaking">Breaking</h3>
+<p>Looker now recognizes results from the <code>YEAR</code> function as a number and not a date in MySQL 8.4. This change replicates the behavior of MySQL 8.0 and earlier.</p>
+<p>To undo this change for a MySQL connection, add the following parameter to the Additional JDBC parameters section: <code>yearIsDateType=true</code></p>
+<h3 id="feature_3">Feature</h3>
+<p>The <a href="https://docs.cloud.google.com/looker/docs/connecting-to-your-db#max_number_of_pdt_builder_connections">Max Number of PDT Builder Connections</a> limit has been increased from 10 to 100.</p>
+<h3 id="breaking_1">Breaking</h3>
+<p>When you use <a href="https://docs.cloud.google.com/looker/docs/elite-system-activity">Elite System Activity</a>, the System Activity fields <code>sql_query.sql</code> and <code>sql_text.text</code> are limited to a length of 1.9 MB. Any data beyond the 1.9 MB limit will be truncated. (This release note was updated on November 10, 2025 to specify Elite System Activity.)</p>
+<h3 id="other">Other</h3>
+<p><strong>Looker 25.20</strong> is expected to include the following changes, features, and fixes:</p>
+<ul>
+<li>Expected Looker (original) deployment start: <strong>Thursday, November 6, 2025</strong></li>
+<li>Expected Looker (original) final deployment and download available: <strong>Thursday, November 13, 2025</strong></li>
+<li>Expected Looker (Google Cloud core) deployment start: <strong>Thursday, November 6, 2025</strong></li>
+<li>Expected Looker (Google Cloud core) final deployment: <strong>Tuesday, November 18, 2025</strong></li>
+</ul>
 <h3 id="fixed">Fixed</h3>
-<p>An issue has been fixed where a measure of <code>type: period_over_period</code> could be referenced in the <code>sql</code> parameter for a measure of <code>type: number</code>. Attempting to do so now correctly displays an error in the LookML validator. This feature now performs as expected.</p>
-<h3 id="fixed_1">Fixed</h3>
-<p>An issue has been fixed where the <strong>Clear field keep filter</strong> button on an Explore could incorrectly become disabled when a user used the field search bar in the field picker. This feature now performs as expected.</p>
-<h3 id="fixed_2">Fixed</h3>
 <p>An issue has been fixed where SQL Runner could return a <code>NoMethodError</code> when trying to query a LookML model that doesn't exist in the user's development mode. This feature now performs as expected.</p>
+<h3 id="fixed_1">Fixed</h3>
+<p>An issue has been fixed where a measure of <code>type: period_over_period</code> could be referenced in the <code>sql</code> parameter for a measure of <code>type: number</code>. Attempting to do so now correctly displays an error in the LookML validator. This feature now performs as expected.</p>
+<h3 id="fixed_2">Fixed</h3>
+<p>An issue has been fixed where the <strong>Clear field keep filter</strong> button on an Explore could incorrectly become disabled when a user used the field search bar in the field picker. This feature now performs as expected.</p>
 <h3 id="feature_4">Feature</h3>
-<p>A new Labs feature, Internal Dashboard Theming, lets users apply predefined themes to a Looker dashboard. These themes, which are distinct from the themes that are used for embedded dashboards, can be managed by users with the <code>manage_internal_themes</code> permission.</p>
-<h3 id="feature_5">Feature</h3>
 <p>The Visual Drilling feature is now out of Labs and generally available on the Admin &gt; General Settings page.</p>
+<h3 id="feature_5">Feature</h3>
+<p>A new Labs feature, Internal Dashboard Theming, lets users apply predefined themes to a Looker dashboard. These themes, which are distinct from the themes that are used for embedded dashboards, can be managed by users with the <code>manage_internal_themes</code> permission.</p>
 <h3 id="fixed_3">Fixed</h3>
 <p>An issue has been fixed where disabling the Favoriting LookML Dashboards Labs feature prevented users from moving LookML dashboards in folders. This feature now performs as expected.</p>
 <h3 id="feature_6">Feature</h3>

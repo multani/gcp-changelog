@@ -2136,8 +2136,22 @@
 
 
 <h1 id="app-hub">App Hub</h1>
-<h2 id="2025-08-25">2025-08-25</h2>
+<h2 id="2025-11-14">2025-11-14</h2>
 <h3 id="feature">Feature</h3>
+<p>App Hub has expanded its support for Google Cloud resources. You can now register services and workloads from a wide range of products to your applications, including new resources from Access Approval, Certificate Authority Service, Cloud Run, Firebase, Gemini for Google Cloud, GKE Multi-Cloud, and more. Many of these supported resources are available in Preview. For a complete list, see <a href="https://docs.cloud.google.com/app-hub/docs/supported-resources">App Hub supported resources</a>.</p>
+<h3 id="feature_1">Feature</h3>
+<p>Management projects are now <a href="https://cloud.google.com/products#product-launch-stages">Generally Available (GA)</a> to enable application management in folders. This setup model is recommended for all new App Hub implementations and provides a centralized and scalable way to organize, deploy, and govern your applications.</p>
+<p>Key features of this release include:</p>
+<ul>
+<li><strong>App-enabled folders</strong>: You can now enable application management on a standard Google Cloud folder, which then becomes an app-enabled folder. This folder acts as the application management boundary for your App Hub applications.</li>
+<li><strong>Management projects</strong>: A dedicated management project is automatically created within your app-enabled folder to store application metadata and configurations, and to centralize operations.</li>
+<li><strong>Simplified API management</strong>: Required APIs for core App Hub features are automatically enabled on the management project. You can also enable recommended APIs to access the full application lifecycle experience.</li>
+<li><strong>Flexible billing</strong>: Linking a billing account is now optional. You can use App Hub's core features for organizing and observing your applications at no cost. A billing account is required only for other application-centric features.</li>
+</ul>
+<p>For more information on how to get started, see <a href="https://docs.cloud.google.com/app-hub/docs/set-up-app-hub-folder">Set up App Hub with app-enabled folders</a>.</p>
+<hr />
+<h2 id="2025-08-25">2025-08-25</h2>
+<h3 id="feature_2">Feature</h3>
 <p>App Hub supports resources from the following sources in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>:</p>
 <ul>
 <li>Vertex AI</li>
@@ -2177,7 +2191,7 @@
 </ul>
 <hr />
 <h2 id="2025-07-30">2025-07-30</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>The following <a href="https://cloud.google.com/app-hub/docs/supported-resources">Vertex AI supported resources</a> are now generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>):</p>
 <ul>
 <li><a href="https://cloud.google.com/vertex-ai/docs/reference/rest/v1/projects.locations.datasets">Dataset</a> items</li>
@@ -2187,11 +2201,11 @@
 </ul>
 <hr />
 <h2 id="2025-07-08">2025-07-08</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p><a href="https://cloud.google.com/app-hub/docs/supported-resources">Dataproc Metastore services</a> are now generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).</p>
 <hr />
 <h2 id="2025-06-25">2025-06-25</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p>App Hub supports resources from the following <a href="https://cloud.google.com/app-hub/docs/supported-resources">sources</a> in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>:</p>
 <ul>
 <li>Dataproc Metastore Service</li>
@@ -2211,6 +2225,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#app-hub">App Hub</a></li>
+          <li class="nav-item">
+            <a href="#2025-11-14" class="nav-link">2025-11-14</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-08-25" class="nav-link">2025-08-25</a>
           </li>

@@ -24,6 +24,17 @@ the Google Cloud console, the gcloud CLI, and Terraform.
 
 ### Fixed
 
+The following issues were fixed in 1.33.200-gke.70:
+
+* Fixed [an
+  issue](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/troubleshooting/known-issues#nonha-to-ha-adv-update-fail)
+  that `gkectl update` blocks updating a non-HA non-advanced cluster to HA
+  advanced cluster
+* Fixed vulnerabilities listed in [Vulnerability
+  fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
+
+### Fixed
+
 The following issues were fixed in 1.31.1100-gke.40:
 
 * Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
@@ -47,17 +58,6 @@ After a release, it takes approximately 7 to 14 days for the version to become
 available for use with [GKE On-Prem API
 clients](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools):
 the Google Cloud console, the gcloud CLI, and Terraform.
-
-### Fixed
-
-The following issues were fixed in 1.33.200-gke.70:
-
-* Fixed [an
-  issue](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/troubleshooting/known-issues#nonha-to-ha-adv-update-fail)
-  that `gkectl update` blocks updating a non-HA non-advanced cluster to HA
-  advanced cluster
-* Fixed vulnerabilities listed in [Vulnerability
-  fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
 
 ---
 ## 2025-10-29

@@ -2137,6 +2137,15 @@
 
 <h1 id="google-distributed-cloud-software-only-for-bare-metal">Google Distributed Cloud (software only) for bare metal</h1>
 <h2 id="2025-11-12">2025-11-12</h2>
+<h3 id="fixed">Fixed</h3>
+<p>The following issues were fixed in 1.33.200-gke.70:</p>
+<ul>
+<li>Fixed a timeout issue for the <code>kubeadm</code> API server health check that runs
+  during bootstrap cluster creation. The timeout issue blocked some cluster
+  operations, such as restoring a cluster.</li>
+<li>This patch release doesn't include new <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">fixes for specific, externally-cited
+  vulnerabilities</a>.</li>
+</ul>
 <h3 id="announcement">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.33.200-gke.70 is now available for
 <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>. To
@@ -2152,18 +2161,14 @@ the Google Cloud console, the gcloud CLI, and Terraform.</p>
 partners</a> document
 to make sure the storage vendor has already passed the qualification for this
 release of Distributed Cloud for bare metal.</p>
-<h3 id="fixed">Fixed</h3>
-<p>The following issues were fixed in 1.33.200-gke.70:</p>
-<ul>
-<li>Fixed a timeout issue for the <code>kubeadm</code> API server health check that runs
-  during bootstrap cluster creation. The timeout issue blocked some cluster
-  operations, such as restoring a cluster.</li>
-<li>This patch release doesn't include new <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">fixes for specific, externally-cited
-  vulnerabilities</a>.</li>
-</ul>
 <h3 id="issue">Issue</h3>
 <p>For information about the latest known issues, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for
 bare metal known
+issues</a>
+in the Troubleshooting section.</p>
+<h3 id="issue_1">Issue</h3>
+<p>For information about the latest known issues, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud
+for bare metal known
 issues</a>
 in the Troubleshooting section.</p>
 <h3 id="announcement_1">Announcement</h3>
@@ -2181,13 +2186,20 @@ the Google Cloud console, the gcloud CLI, and Terraform.</p>
 partners</a> document
 to make sure the storage vendor has already passed the qualification for this
 release of Distributed Cloud for bare metal.</p>
-<h3 id="issue_1">Issue</h3>
-<p>For information about the latest known issues, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud
-for bare metal known
-issues</a>
-in the Troubleshooting section.</p>
 <hr />
 <h2 id="2025-10-29">2025-10-29</h2>
+<h3 id="fixed_1">Fixed</h3>
+<p>The following issues were fixed in 1.32.600-gke.53:</p>
+<ul>
+<li>Fixed the <code>etcd-cleanup</code> job timeout issue caused by the use of incorrect certificates.</li>
+<li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">Vulnerability
+  fixes</a>.</li>
+</ul>
+<h3 id="issue_2">Issue</h3>
+<p>For information about the latest known issues, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for
+bare metal known
+issues</a>
+in the Troubleshooting section.</p>
 <h3 id="announcement_2">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.32.600-gke.53 is now available for
 <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>.
@@ -2203,18 +2215,6 @@ the Google Cloud console, the gcloud CLI, and Terraform.</p>
 partners</a>
 document to make sure the storage vendor has already passed the qualification
 for this release of Google Distributed Cloud for bare metal.</p>
-<h3 id="fixed_1">Fixed</h3>
-<p>The following issues were fixed in 1.32.600-gke.53:</p>
-<ul>
-<li>Fixed the <code>etcd-cleanup</code> job timeout issue caused by the use of incorrect certificates.</li>
-<li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">Vulnerability
-  fixes</a>.</li>
-</ul>
-<h3 id="issue_2">Issue</h3>
-<p>For information about the latest known issues, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for
-bare metal known
-issues</a>
-in the Troubleshooting section.</p>
 <hr />
 <h2 id="2025-10-15">2025-10-15</h2>
 <h3 id="announcement_3">Announcement</h3>

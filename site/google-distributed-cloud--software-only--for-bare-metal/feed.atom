@@ -9,7 +9,25 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2025-11-12:announcement:0</id>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2025-11-12:fixed:0</id>
+    <published>2025-11-12T00:00:00+00:00</published>
+    <updated>2025-11-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were fixed in 1.33.200-gke.70:</p>
+<ul>
+<li>Fixed a timeout issue for the <code>kubeadm</code> API server health check that runs
+  during bootstrap cluster creation. The timeout issue blocked some cluster
+  operations, such as restoring a cluster.</li>
+<li>This patch release doesn't include new <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">fixes for specific, externally-cited
+  vulnerabilities</a>.</li>
+</ul>]]></content>
+    <summary>Resolved a timeout issue in the kubeadm API server health check during bootstrap cluster creation, which previously hindered cluster operations like restoration.</summary>
+    <title>Fixed: Fixed cluster bootstrap timeout</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2025-11-12:announcement:1</id>
     <published>2025-11-12T00:00:00+00:00</published>
     <updated>2025-11-12T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Google Distributed Cloud for bare metal 1.33.200-gke.70 is now available for
@@ -33,24 +51,6 @@ release of Distributed Cloud for bare metal.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2025-11-12:fixed:1</id>
-    <published>2025-11-12T00:00:00+00:00</published>
-    <updated>2025-11-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The following issues were fixed in 1.33.200-gke.70:</p>
-<ul>
-<li>Fixed a timeout issue for the <code>kubeadm</code> API server health check that runs
-  during bootstrap cluster creation. The timeout issue blocked some cluster
-  operations, such as restoring a cluster.</li>
-<li>This patch release doesn't include new <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">fixes for specific, externally-cited
-  vulnerabilities</a>.</li>
-</ul>]]></content>
-    <summary>Resolved a timeout issue in the kubeadm API server health check during bootstrap cluster creation, which previously hindered cluster operations like restoration.</summary>
-    <title>Fixed: Fixed cluster bootstrap timeout</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
     <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2025-11-12:issue:2</id>
     <published>2025-11-12T00:00:00+00:00</published>
     <updated>2025-11-12T00:00:00+00:00</updated>
@@ -65,7 +65,21 @@ in the Troubleshooting section.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2025-11-12:announcement:3</id>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2025-11-12:issue:3</id>
+    <published>2025-11-12T00:00:00+00:00</published>
+    <updated>2025-11-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>For information about the latest known issues, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud
+for bare metal known
+issues</a>
+in the Troubleshooting section.</p>]]></content>
+    <summary>Please refer to the Google Distributed Cloud for bare metal known issues page for the latest troubleshooting information.</summary>
+    <title>Issue: Known Issues</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2025-11-12:announcement:4</id>
     <published>2025-11-12T00:00:00+00:00</published>
     <updated>2025-11-12T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Google Distributed Cloud for bare metal 1.31.1100-gke.40 is now available for
@@ -89,21 +103,37 @@ release of Distributed Cloud for bare metal.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2025-11-12:issue:4</id>
-    <published>2025-11-12T00:00:00+00:00</published>
-    <updated>2025-11-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>For information about the latest known issues, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud
-for bare metal known
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2025-10-29:fixed:0</id>
+    <published>2025-10-29T00:00:00+00:00</published>
+    <updated>2025-10-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were fixed in 1.32.600-gke.53:</p>
+<ul>
+<li>Fixed the <code>etcd-cleanup</code> job timeout issue caused by the use of incorrect certificates.</li>
+<li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">Vulnerability
+  fixes</a>.</li>
+</ul>]]></content>
+    <summary>The etcd-cleanup job timeout issue caused by incorrect certificates has been resolved. Additionally, vulnerabilities listed in the official documentation have been fixed.</summary>
+    <title>Fixed: Fixed etcd-cleanup job timeout and vulnerabilities</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2025-10-29:issue:1</id>
+    <published>2025-10-29T00:00:00+00:00</published>
+    <updated>2025-10-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>For information about the latest known issues, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for
+bare metal known
 issues</a>
 in the Troubleshooting section.</p>]]></content>
-    <summary>Please refer to the Google Distributed Cloud for bare metal known issues page for the latest troubleshooting information.</summary>
+    <summary>Refer to the Google Distributed Cloud for bare metal known issues page for the latest information.</summary>
     <title>Issue: Known Issues</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2025-10-29:announcement:0</id>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2025-10-29:announcement:2</id>
     <published>2025-10-29T00:00:00+00:00</published>
     <updated>2025-10-29T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Google Distributed Cloud for bare metal 1.32.600-gke.53 is now available for
@@ -122,36 +152,6 @@ document to make sure the storage vendor has already passed the qualification
 for this release of Google Distributed Cloud for bare metal.</p>]]></content>
     <summary>Google Distributed Cloud for bare metal 1.32.600-gke.53 has been released. This version runs on Kubernetes v1.32.9-gke.200. Upgrade instructions and compatibility information for storage vendors are available.</summary>
     <title>Announcement: Google Distributed Cloud for bare metal 1.32.600-gke.53 Now Available</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2025-10-29:fixed:1</id>
-    <published>2025-10-29T00:00:00+00:00</published>
-    <updated>2025-10-29T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The following issues were fixed in 1.32.600-gke.53:</p>
-<ul>
-<li>Fixed the <code>etcd-cleanup</code> job timeout issue caused by the use of incorrect certificates.</li>
-<li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">Vulnerability
-  fixes</a>.</li>
-</ul>]]></content>
-    <summary>The etcd-cleanup job timeout issue caused by incorrect certificates has been resolved. Additionally, vulnerabilities listed in the official documentation have been fixed.</summary>
-    <title>Fixed: Fixed etcd-cleanup job timeout and vulnerabilities</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2025-10-29:issue:2</id>
-    <published>2025-10-29T00:00:00+00:00</published>
-    <updated>2025-10-29T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>For information about the latest known issues, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for
-bare metal known
-issues</a>
-in the Troubleshooting section.</p>]]></content>
-    <summary>Refer to the Google Distributed Cloud for bare metal known issues page for the latest information.</summary>
-    <title>Issue: Known Issues</title>
   </entry>
   <entry>
     <author>

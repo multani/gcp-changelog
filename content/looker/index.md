@@ -4,13 +4,13 @@
 
 ### Feature
 
-[Conversational Analytics](https://docs.cloud.google.com/looker/docs/conversational-analytics-overview) is now generally available for Looker instances that are on Looker 25.18 or later.
-
-You can now use Conversational Analytics in your Looker instance without having to enable the **Trusted Testers** settings. Enablement of the **Gemini in Looker** setting is still required.
+[Conversational Analytics](https://docs.cloud.google.com/looker/docs/conversational-analytics-overview) is now generally available for Looker instances that are on Looker 25.18 or later. Use of Conversational Analytics in your Looker instance is now available without a Looker admin having to enable the **Trusted Testers** settings. Enablement of the **Gemini in Looker** setting is still required. Enablement of the **Trusted Tester Features** setting is still required when using the [Code Interpreter](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-code-interpreter) with Conversational Analytics in Looker.
 
 For Looker (Google Cloud core) instances, this launch includes support for Conversational Analytics in instances that are within a VPC perimeter.
 
-Enablement of the **Trusted Tester Features** setting is still required when using the [Code Interpreter](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-code-interpreter) with Conversational Analytics in Looker.
+See the [Looker pricing](https://cloud.google.com/looker/pricing) page for pricing information.
+
+(This release note was updated on November 13, 2025 to add pricing information.)
 
 ---
 ## 2025-11-11

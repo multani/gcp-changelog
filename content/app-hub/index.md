@@ -1,5 +1,25 @@
 # App Hub
 
+## 2025-11-14
+
+### Feature
+
+App Hub has expanded its support for Google Cloud resources. You can now register services and workloads from a wide range of products to your applications, including new resources from Access Approval, Certificate Authority Service, Cloud Run, Firebase, Gemini for Google Cloud, GKE Multi-Cloud, and more. Many of these supported resources are available in Preview. For a complete list, see [App Hub supported resources](https://docs.cloud.google.com/app-hub/docs/supported-resources).
+
+### Feature
+
+Management projects are now [Generally Available (GA)](https://cloud.google.com/products#product-launch-stages) to enable application management in folders. This setup model is recommended for all new App Hub implementations and provides a centralized and scalable way to organize, deploy, and govern your applications.
+
+Key features of this release include:
+
+* **App-enabled folders**: You can now enable application management on a standard Google Cloud folder, which then becomes an app-enabled folder. This folder acts as the application management boundary for your App Hub applications.
+* **Management projects**: A dedicated management project is automatically created within your app-enabled folder to store application metadata and configurations, and to centralize operations.
+* **Simplified API management**: Required APIs for core App Hub features are automatically enabled on the management project. You can also enable recommended APIs to access the full application lifecycle experience.
+* **Flexible billing**: Linking a billing account is now optional. You can use App Hub's core features for organizing and observing your applications at no cost. A billing account is required only for other application-centric features.
+
+For more information on how to get started, see [Set up App Hub with app-enabled folders](https://docs.cloud.google.com/app-hub/docs/set-up-app-hub-folder).
+
+---
 ## 2025-08-25
 
 ### Feature

@@ -2,6 +2,16 @@
 
 ## 2025-11-12
 
+### Fixed
+
+The following issues were fixed in 1.33.200-gke.70:
+
+* Fixed a timeout issue for the `kubeadm` API server health check that runs
+  during bootstrap cluster creation. The timeout issue blocked some cluster
+  operations, such as restoring a cluster.
+* This patch release doesn't include new [fixes for specific, externally-cited
+  vulnerabilities](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
+
 ### Announcement
 
 Google Distributed Cloud for bare metal 1.33.200-gke.70 is now available for
@@ -21,20 +31,17 @@ partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resour
 to make sure the storage vendor has already passed the qualification for this
 release of Distributed Cloud for bare metal.
 
-### Fixed
-
-The following issues were fixed in 1.33.200-gke.70:
-
-* Fixed a timeout issue for the `kubeadm` API server health check that runs
-  during bootstrap cluster creation. The timeout issue blocked some cluster
-  operations, such as restoring a cluster.
-* This patch release doesn't include new [fixes for specific, externally-cited
-  vulnerabilities](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
-
 ### Issue
 
 For information about the latest known issues, see [Google Distributed Cloud for
 bare metal known
+issues](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues)
+in the Troubleshooting section.
+
+### Issue
+
+For information about the latest known issues, see [Google Distributed Cloud
+for bare metal known
 issues](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues)
 in the Troubleshooting section.
 
@@ -57,15 +64,23 @@ partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resour
 to make sure the storage vendor has already passed the qualification for this
 release of Distributed Cloud for bare metal.
 
-### Issue
-
-For information about the latest known issues, see [Google Distributed Cloud
-for bare metal known
-issues](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues)
-in the Troubleshooting section.
-
 ---
 ## 2025-10-29
+
+### Fixed
+
+The following issues were fixed in 1.32.600-gke.53:
+
+* Fixed the `etcd-cleanup` job timeout issue caused by the use of incorrect certificates.
+* Fixed vulnerabilities listed in [Vulnerability
+  fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
+
+### Issue
+
+For information about the latest known issues, see [Google Distributed Cloud for
+bare metal known
+issues](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues)
+in the Troubleshooting section.
 
 ### Announcement
 
@@ -85,21 +100,6 @@ If you use a third-party storage vendor, check the [Ready storage
 partners](https://docs.cloud.google.com/anthos/docs/resources/partner-storage)
 document to make sure the storage vendor has already passed the qualification
 for this release of Google Distributed Cloud for bare metal.
-
-### Fixed
-
-The following issues were fixed in 1.32.600-gke.53:
-
-* Fixed the `etcd-cleanup` job timeout issue caused by the use of incorrect certificates.
-* Fixed vulnerabilities listed in [Vulnerability
-  fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
-
-### Issue
-
-For information about the latest known issues, see [Google Distributed Cloud for
-bare metal known
-issues](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues)
-in the Troubleshooting section.
 
 ---
 ## 2025-10-15

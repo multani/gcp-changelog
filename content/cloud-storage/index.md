@@ -1,5 +1,15 @@
 # Cloud Storage
 
+## 2025-11-14
+
+### Feature
+
+You can now use the Google Cloud console to [relocate
+buckets](https://docs.cloud.google.com/storage/docs/bucket-relocation/overview). Using bucket relocation, you
+can move an existing bucket from one location to another without changing the
+bucket's name or requiring manual transfer of data within the bucket.
+
+---
 ## 2025-11-11
 
 ### Feature

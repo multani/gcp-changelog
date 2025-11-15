@@ -1,5 +1,20 @@
 # Vertex AI Search
 
+## 2025-11-14
+
+### Feature
+
+**Vertex AI Search: Gemini layout parser (Public Preview)**
+
+For data stores with unstructured documents, you can use Gemini to
+get layout analysis and content extraction on PDF files. Layout parsing
+with Gemini provides high quality table recognition, improved reading order and
+more accurate text recognition.
+
+This feature is in Public Preview. For more information, see [Parse and chunk
+documents](https://docs.cloud.google.com/generative-ai-app-builder/docs/parse-chunk-documents).
+
+---
 ## 2025-11-05
 
 ### Feature

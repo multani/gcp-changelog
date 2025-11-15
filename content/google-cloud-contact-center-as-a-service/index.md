@@ -2,7 +2,7 @@
 
 ## 2025-11-03
 
-### Announcement
+### Feature
 
 **Google Cloud CCaaS 3.41**
 

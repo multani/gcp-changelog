@@ -19,6 +19,12 @@ The following features aren't supported by identity federation but are being mov
 
 ### Feature
 
+[Data Security Posture Management (DSPM)](https://docs.cloud.google.com/security-command-center/docs/dspm-data-security) has been released
+to [General Availability](https://cloud.google.com/products#product-launch-stages)
+for the Security Command Center Enterprise tier.
+
+### Feature
+
 Model Armor is available in the following regions:
 
 * `europe-west1` (Belgium)
@@ -27,12 +33,6 @@ Model Armor is available in the following regions:
 * `asia-south1` (Mumbai)
 
 For more information, see [Locations for the Model Armor API](https://docs.cloud.google.com/security-command-center/docs/regional-endpoints#locations-model-armor).
-
-### Feature
-
-[Data Security Posture Management (DSPM)](https://docs.cloud.google.com/security-command-center/docs/dspm-data-security) has been released
-to [General Availability](https://cloud.google.com/products#product-launch-stages)
-for the Security Command Center Enterprise tier.
 
 ---
 ## 2025-11-07

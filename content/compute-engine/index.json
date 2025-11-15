@@ -4,6 +4,22 @@
     "2025-11-13": [
       {
         "kind": "Feature",
+        "content": "Version `20251107.01` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)\nis now available.",
+        "summary": {
+          "title": "Guest agent update",
+          "summary": "Version 20251107.01 of the guest agent is now available."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Version `20251107.01` includes a fix for the\n[Startup script runner](compute/docs/instances/startup-scripts) component\nthat prevented it from writing status logs and script output to Cloud Logging.",
+        "summary": {
+          "title": "Startup script runner fix",
+          "summary": "Fixed an issue where the startup script runner was unable to write status logs and script output to Cloud Logging."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "**Preview**: Future reservation requests in calendar mode support reserving\ncapacity for `a3-megagpu-8g` and `a3-highgpu-8g` machine types. Use future\nreservation requests in calendar mode to obtain resources for running model\npre-training, model fine-tuning, simulation, and inference workloads. For more\ninformation, see\n[About future reservation requests in calendar mode](https://docs.cloud.google.com/compute/docs/instances/future-reservations-calendar-mode-overview).",
         "summary": {
           "title": "Future reservation requests now support new machine types",

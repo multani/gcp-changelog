@@ -4,6 +4,17 @@
 
 ### Feature
 
+Version `20251107.01` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)
+is now available.
+
+### Fixed
+
+Version `20251107.01` includes a fix for the
+[Startup script runner](compute/docs/instances/startup-scripts) component
+that prevented it from writing status logs and script output to Cloud Logging.
+
+### Feature
+
 **Preview**: Future reservation requests in calendar mode support reserving
 capacity for `a3-megagpu-8g` and `a3-highgpu-8g` machine types. Use future
 reservation requests in calendar mode to obtain resources for running model

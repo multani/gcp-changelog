@@ -1,5 +1,14 @@
 # Cloud Composer
 
+## 2025-11-14
+
+### Feature
+
+You can now
+[start Gemini Cloud Assist investigations](https://docs.cloud.google.com/composer/docs/composer-3/troubleshooting-dags#investigations)
+for failed Airflow tasks.
+
+---
 ## 2025-11-05
 
 ### Changed
@@ -28,13 +37,6 @@ are available in Cloud Composer 2:
 
 * [composer-2.15.3-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-15-3-airflow-2-10-5) (default)
 * [composer-2.15.3-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-15-3-airflow-2-9-3)
-
-### Announcement
-
-A new Cloud Composer release has started on **November 05, 2025**. Get ready
-for upcoming changes and features as we roll out the new release to all regions.
-This release is in progress at the moment. Listed changes and features might
-not be available in some regions yet.
 
 ### Announcement
 

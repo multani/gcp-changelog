@@ -1,5 +1,40 @@
 # Config Connector
 
+## 2025-11-14
+
+### Announcement
+
+Config Connector version 1.138.0 is now available.
+
+### Feature
+
+New Beta Resources (Direct Reconciler):
+
+* `BackupDRBackupVault`
+* `OrgPolicyCustomConstraint`
+
+### Fixed
+
+Bug Fixes:
+
+* Fixed format validation issue in the `DataflowFlexTemplateJob` direct controller when the
+  `spec.subnetworkRef.external` field contains full URL.
+* Updated `status.observedGeneration` in `ConfigConnector` object.
+
+### Feature
+
+New Alpha Resources (Direct Reconciler):
+
+* `FirestoreBackupSchedule`
+* `FirestoreDocument`
+
+### Changed
+
+Reconciliation Improvements:
+
+* Improved Normalization logic for `OrgPolicy`, `RunJob`, `TagsTagBinding`, and `VertexAIIndex` resources.
+
+---
 ## 2025-10-16
 
 ### Announcement

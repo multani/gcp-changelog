@@ -1,6 +1,48 @@
 {
   "name": "Config Connector",
   "entries": {
+    "2025-11-14": [
+      {
+        "kind": "Announcement",
+        "content": "Config Connector version 1.138.0 is now available.",
+        "summary": {
+          "title": "New Config Connector Version Available",
+          "summary": "Config Connector version 1.138.0 has been released."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Beta Resources (Direct Reconciler):\n\n* `BackupDRBackupVault`\n* `OrgPolicyCustomConstraint`",
+        "summary": {
+          "title": "New Beta Resources",
+          "summary": "Introducing new beta resources: BackupDRBackupVault and OrgPolicyCustomConstraint."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Bug Fixes:\n\n* Fixed format validation issue in the `DataflowFlexTemplateJob` direct controller when the\n  `spec.subnetworkRef.external` field contains full URL.\n* Updated `status.observedGeneration` in `ConfigConnector` object.",
+        "summary": {
+          "title": "Fixed format validation issue",
+          "summary": "Fixed an issue where format validation failed for DataflowFlexTemplateJob when the spec.subnetworkRef.external field contained a full URL. Also updated status.observedGeneration in ConfigConnector objects."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Alpha Resources (Direct Reconciler):\n\n* `FirestoreBackupSchedule`\n* `FirestoreDocument`",
+        "summary": {
+          "title": "New Alpha Resources",
+          "summary": "Introducing FirestoreBackupSchedule and FirestoreDocument, new alpha resources available now."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Reconciliation Improvements:\n\n* Improved Normalization logic for `OrgPolicy`, `RunJob`, `TagsTagBinding`, and `VertexAIIndex` resources.",
+        "summary": {
+          "title": "Reconciliation Improvements",
+          "summary": "Normalization logic has been enhanced for several resources, including OrgPolicy, RunJob, TagsTagBinding, and VertexAIIndex."
+        }
+      }
+    ],
     "2025-10-16": [
       {
         "kind": "Announcement",

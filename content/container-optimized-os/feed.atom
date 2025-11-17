@@ -2,9 +2,70 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Container Optimized OS</title>
   <subtitle>Changelog for Google Cloud product: Container Optimized OS</subtitle>
-  <updated>2025-11-11T00:00:00+00:00</updated>
+  <updated>2025-11-14T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:container-optimized-os</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/container-optimized-os/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-11-14:changed:0</id>
+    <published>2025-11-14T00:00:00+00:00</published>
+    <updated>2025-11-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary>New features are available!</summary>
+    <title>Changed: New features</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-11-14:cos-125-19216-104-23:1</id>
+    <published>2025-11-14T00:00:00+00:00</published>
+    <updated>2025-11-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | <a href="https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus">GPU Drivers</a> |
+| <a href="https://cos.googlesource.com/third_party/kernel/+/cdbc4880641e7defb4cb9dfd3de70b19dc1531b7">COS-6.12.55</a> | v27.5.1 | v2.1.4 | <a href="https://storage.googleapis.com/cos-tools/19216.104.23/lakitu/gpu_driver_versions.textproto">See List</a> |</p>]]></content>
+    <summary>New COS version 19216.104.23 is available. This release includes updates to the Kernel, Docker, and Containerd. GPU driver information is also included.</summary>
+    <title>cos-125-19216-104-23: COS-125-19216.104.23</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-11-14:changed:2</id>
+    <published>2025-11-14T00:00:00+00:00</published>
+    <updated>2025-11-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Updated app-containers/runc to v1.3.3.</p>]]></content>
+    <summary>The app-containers/runc component has been updated to version 1.3.3.</summary>
+    <title>Changed: Updated runc to v1.3.3</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-11-14:fixed:3</id>
+    <published>2025-11-14T00:00:00+00:00</published>
+    <updated>2025-11-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed a bug where setting MTU above 9000 on ARM systems with a 64k page size would cause IDPF networking to fail.</p>]]></content>
+    <summary>Resolved an issue where high MTU values on ARM 64k page size systems caused IDPF networking failures.</summary>
+    <title>Fixed: MTU Bug Fix for ARM Systems</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2025-11-14:changed:4</id>
+    <published>2025-11-14T00:00:00+00:00</published>
+    <updated>2025-11-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Runtime sysctl changes:</p>
+<ul>
+<li>Changed: fs.file-max: 811489 -&gt; 811458</li>
+</ul>]]></content>
+    <summary>fs.file-max changed from 811489 to 811458.</summary>
+    <title>Changed: Runtime sysctl change</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

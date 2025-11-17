@@ -1,5 +1,12 @@
 # Cloud NGFW
 
+## 2025-11-17
+
+### Feature
+
+You can create a Remote Direct Memory Access (RDMA) over converged ethernet (RoCE) Virtual Private Cloud (VPC) network and configure firewall rules that apply to the network. For more information, see [Cloud NGFW for RoCE VPC networks](https://docs.cloud.google.com/firewall/docs/firewall-for-roce). This feature is available in **General Availability**.
+
+---
 ## 2025-11-13
 
 ### Feature

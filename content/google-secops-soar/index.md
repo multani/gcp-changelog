@@ -1,5 +1,27 @@
 # Google SecOps SOAR
 
+## 2025-11-16
+
+### Announcement
+
+Release 6.3.68 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains the following changes:
+
+### Feature
+
+**Change views per alert**
+
+The **Alert Overview** page now includes a new option to select a specific view for each alert. If several playbooks have run on an alert, and those playbooks have customized views, you can now select and display any of those customized views for that alert.
+
+---
+## 2025-11-15
+
+### Announcement
+
+[Release 6.3.67](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#November_09_2025) is now available for all regions.
+
+---
 ## 2025-11-12
 
 ### Feature

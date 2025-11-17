@@ -2,9 +2,80 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Config Connector</title>
   <subtitle>Changelog for Google Cloud product: Config Connector</subtitle>
-  <updated>2025-10-16T00:00:00+00:00</updated>
+  <updated>2025-11-14T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:config-connector</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/config-connector/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-11-14:announcement:0</id>
+    <published>2025-11-14T00:00:00+00:00</published>
+    <updated>2025-11-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.138.0 is now available.</p>]]></content>
+    <summary>Config Connector version 1.138.0 has been released.</summary>
+    <title>Announcement: New Config Connector Version Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-11-14:feature:1</id>
+    <published>2025-11-14T00:00:00+00:00</published>
+    <updated>2025-11-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Beta Resources (Direct Reconciler):</p>
+<ul>
+<li><code>BackupDRBackupVault</code></li>
+<li><code>OrgPolicyCustomConstraint</code></li>
+</ul>]]></content>
+    <summary>Introducing new beta resources: BackupDRBackupVault and OrgPolicyCustomConstraint.</summary>
+    <title>Feature: New Beta Resources</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-11-14:fixed:2</id>
+    <published>2025-11-14T00:00:00+00:00</published>
+    <updated>2025-11-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Bug Fixes:</p>
+<ul>
+<li>Fixed format validation issue in the <code>DataflowFlexTemplateJob</code> direct controller when the
+  <code>spec.subnetworkRef.external</code> field contains full URL.</li>
+<li>Updated <code>status.observedGeneration</code> in <code>ConfigConnector</code> object.</li>
+</ul>]]></content>
+    <summary>Fixed an issue where format validation failed for DataflowFlexTemplateJob when the spec.subnetworkRef.external field contained a full URL. Also updated status.observedGeneration in ConfigConnector objects.</summary>
+    <title>Fixed: Fixed format validation issue</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-11-14:feature:3</id>
+    <published>2025-11-14T00:00:00+00:00</published>
+    <updated>2025-11-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Alpha Resources (Direct Reconciler):</p>
+<ul>
+<li><code>FirestoreBackupSchedule</code></li>
+<li><code>FirestoreDocument</code></li>
+</ul>]]></content>
+    <summary>Introducing FirestoreBackupSchedule and FirestoreDocument, new alpha resources available now.</summary>
+    <title>Feature: New Alpha Resources</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-11-14:changed:4</id>
+    <published>2025-11-14T00:00:00+00:00</published>
+    <updated>2025-11-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Reconciliation Improvements:</p>
+<ul>
+<li>Improved Normalization logic for <code>OrgPolicy</code>, <code>RunJob</code>, <code>TagsTagBinding</code>, and <code>VertexAIIndex</code> resources.</li>
+</ul>]]></content>
+    <summary>Normalization logic has been enhanced for several resources, including OrgPolicy, RunJob, TagsTagBinding, and VertexAIIndex.</summary>
+    <title>Changed: Reconciliation Improvements</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

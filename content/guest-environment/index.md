@@ -1,5 +1,19 @@
 # Guest Environment
 
+## 2025-11-13
+
+### Feature
+
+Version `20251107.01` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)
+is now available.
+
+### Fixed
+
+Version `20251107.01` includes a fix for the
+[Startup script runner](compute/docs/instances/startup-scripts) component
+that prevented it from writing status logs and script output to Cloud Logging.
+
+---
 ## 2025-10-31
 
 ### Fixed

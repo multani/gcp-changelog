@@ -1,6 +1,24 @@
 {
   "name": "Guest Environment",
   "entries": {
+    "2025-11-13": [
+      {
+        "kind": "Feature",
+        "content": "Version `20251107.01` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)\nis now available.",
+        "summary": {
+          "title": "Guest agent update available",
+          "summary": "Version 20251107.01 of the guest agent is now available."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Version `20251107.01` includes a fix for the\n[Startup script runner](compute/docs/instances/startup-scripts) component\nthat prevented it from writing status logs and script output to Cloud Logging.",
+        "summary": {
+          "title": "Startup script logging issue fixed",
+          "summary": "A fix has been implemented for the startup script runner. This resolves an issue where status logs and script output were not being written to Cloud Logging."
+        }
+      }
+    ],
     "2025-10-31": [
       {
         "kind": "Fixed",

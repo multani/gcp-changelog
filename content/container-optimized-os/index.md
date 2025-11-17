@@ -1,5 +1,33 @@
 # Container Optimized OS
 
+## 2025-11-14
+
+### Changed
+
+
+
+### cos-125-19216-104-23
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/cdbc4880641e7defb4cb9dfd3de70b19dc1531b7 ) | v27.5.1 | v2.1.4 | [See List](https://storage.googleapis.com/cos-tools/19216.104.23/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated app-containers/runc to v1.3.3.
+
+### Fixed
+
+Fixed a bug where setting MTU above 9000 on ARM systems with a 64k page size would cause IDPF networking to fail.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811489 -> 811458
+
+---
 ## 2025-11-11
 
 ### cos-dev-129-19370-0-0

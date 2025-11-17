@@ -1,5 +1,15 @@
 # Cloud Composer
 
+## 2025-11-17
+
+### Announcement
+
+All Cloud Composer environment's GKE clusters are set up with
+**maintenance exclusions** from December 16, 2025 to January 2, 2025. For more
+information, see
+[Maintenance exclusions](https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions).
+
+---
 ## 2025-11-14
 
 ### Feature
@@ -37,6 +47,13 @@ are available in Cloud Composer 2:
 
 * [composer-2.15.3-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-15-3-airflow-2-10-5) (default)
 * [composer-2.15.3-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-15-3-airflow-2-9-3)
+
+### Fixed
+
+Resolved an issue in the Kubernetes Pod Operator (KPO) where the Kubernetes
+client experienced unreliable connections, leading to occasional failures. The
+fix enhances connection stability through the addition of retry logic for
+underlying connectivity problems.
 
 ### Announcement
 

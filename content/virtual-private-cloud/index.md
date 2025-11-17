@@ -1,5 +1,18 @@
 # Virtual Private Cloud
 
+## 2025-11-14
+
+### Feature
+
+Dynamic Private Service Connect interfaces are available in
+**General Availability**. Private Service Connect interfaces let service
+producers initiate connections to service consumers. You can update a VM
+instance to add or remove dynamic Private Service Connect interfaces without needing to restart or recreate the instance.
+
+For more information, see
+[Private Service Connect interface types](https://docs.cloud.google.com/vpc/docs/about-private-service-connect-interfaces#types).
+
+---
 ## 2025-11-10
 
 ### Feature

@@ -1,5 +1,15 @@
 # Retail API
 
+## 2025-11-14
+
+### Feature
+
+The Vertex AI Search for commerce Merchandising console introduces self-serve and agentic explainability for issue diagnosis. Streamlined governance is supported with distinct Creator and Approver roles. New features enhance preview and provide real-time control application feedback.
+
+For more information, see [Serving controls in the Merchandising
+console](https://cloud.google.com/retail/docs/merchandising-controls).
+
+---
 ## 2025-09-15
 
 ### Feature

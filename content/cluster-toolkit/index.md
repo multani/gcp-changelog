@@ -1,5 +1,41 @@
 # Cluster Toolkit
 
+## 2025-11-03
+
+### Feature
+
+Cluster Toolkit version v1.71.0 is available. This release includes a
+fix for a munge mount on login failure due to slow controller Slurm v6 setup, and
+adds Managed Lustre support in the `gke-a4x` blueprint. For more information about
+this release, see the [Release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/4810).
+
+---
+## 2025-10-24
+
+### Feature
+
+Cluster Toolkit version v1.70.0 is available. This release adds
+automated TPU support and Cloud Storage FUSE mounts in the TPU v6 blueprint and refactors
+the H4D blueprint. This version also includes breaking changes, such as removing
+support for the `maintenance_interval` field for reservations created by [Technical Account Managers (TAMs)](https://cloud.google.com/tam) and
+migrating Jobset from static manifests to a Helm chart. For a complete list of
+changes, see the [Release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/4783).
+
+---
+## 2025-10-21
+
+### Feature
+
+Cluster Toolkit version v1.69.0 is available. This release adds
+NUMA-aware scheduling in GKE clusters for G4 machines and adds a new module that
+provides mount scripts for WEKA filesystems. This version also includes PSA
+updates and adds a GKE sample for running the `nvidia-bug-report` shell script. For details, see
+the [Release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/4772).
+
+---
 ## 2025-10-10
 
 ### Feature

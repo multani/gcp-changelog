@@ -1,5 +1,12 @@
 # Datastream
 
+## 2025-11-17
+
+### Feature
+
+Datastream now supports partitioning and clustering for BigQuery destinations. For more information, see [the documentation](https://docs.cloud.google.com/datastream/docs/partitioning-and-clustering).
+
+---
 ## 2025-09-30
 
 ### Feature

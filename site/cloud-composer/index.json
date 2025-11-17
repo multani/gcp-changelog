@@ -1,6 +1,16 @@
 {
   "name": "Cloud Composer",
   "entries": {
+    "2025-11-17": [
+      {
+        "kind": "Announcement",
+        "content": "All Cloud Composer environment's GKE clusters are set up with\n**maintenance exclusions** from December 16, 2025 to January 2, 2025. For more\ninformation, see\n[Maintenance exclusions](https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions).",
+        "summary": {
+          "title": "Cloud Composer Maintenance Exclusions",
+          "summary": "Cloud Composer environments have GKE clusters with maintenance exclusions scheduled from December 16, 2025, to January 2, 2025. This proactive measure ensures service continuity during the specified period."
+        }
+      }
+    ],
     "2025-11-14": [
       {
         "kind": "Feature",
@@ -34,6 +44,14 @@
         "summary": {
           "title": "New images available for Cloud Composer 2",
           "summary": "New images are available for Cloud Composer 2, including composer-2.15.3-airflow-2.10.5 (default) and composer-2.15.3-airflow-2.9.3."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Resolved an issue in the Kubernetes Pod Operator (KPO) where the Kubernetes\nclient experienced unreliable connections, leading to occasional failures. The\nfix enhances connection stability through the addition of retry logic for\nunderlying connectivity problems.",
+        "summary": {
+          "title": "Kubernetes Pod Operator connection stability improved",
+          "summary": "Resolved an issue in the Kubernetes Pod Operator (KPO) where the Kubernetes client experienced unreliable connections, leading to occasional failures. The fix enhances connection stability through the addition of retry logic for underlying connectivity problems."
         }
       },
       {

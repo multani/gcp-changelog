@@ -1,5 +1,20 @@
 # Cloud SQL for PostgreSQL
 
+## 2025-11-14
+
+### Feature
+
+Cloud SQL for PostgreSQL now supports [read pool autoscaling](https://docs.cloud.google.com/sql/docs/postgres/read-pool-autoscaling)
+[(GA)](https://cloud.google.com/products#product-launch-stages), which helps you
+more easily manage your application's workload needs.
+
+This feature automates read pool scale in and scale out operations based on one
+or both of the following conditions:
+
+* Allowed CPU usage of the read pool
+* Allowed number of client connections to the read pool
+
+---
 ## 2025-11-05
 
 ### Feature

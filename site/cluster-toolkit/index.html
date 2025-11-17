@@ -2136,8 +2136,35 @@
 
 
 <h1 id="cluster-toolkit">Cluster Toolkit</h1>
-<h2 id="2025-10-10">2025-10-10</h2>
+<h2 id="2025-11-03">2025-11-03</h2>
 <h3 id="feature">Feature</h3>
+<p>Cluster Toolkit version v1.71.0 is available. This release includes a
+fix for a munge mount on login failure due to slow controller Slurm v6 setup, and
+adds Managed Lustre support in the <code>gke-a4x</code> blueprint. For more information about
+this release, see the <a href="https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/4810">Release announcement on
+GitHub</a>.</p>
+<hr />
+<h2 id="2025-10-24">2025-10-24</h2>
+<h3 id="feature_1">Feature</h3>
+<p>Cluster Toolkit version v1.70.0 is available. This release adds
+automated TPU support and Cloud Storage FUSE mounts in the TPU v6 blueprint and refactors
+the H4D blueprint. This version also includes breaking changes, such as removing
+support for the <code>maintenance_interval</code> field for reservations created by <a href="https://cloud.google.com/tam">Technical Account Managers (TAMs)</a> and
+migrating Jobset from static manifests to a Helm chart. For a complete list of
+changes, see the <a href="https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/4783">Release announcement on
+GitHub</a>.</p>
+<hr />
+<h2 id="2025-10-21">2025-10-21</h2>
+<h3 id="feature_2">Feature</h3>
+<p>Cluster Toolkit version v1.69.0 is available. This release adds
+NUMA-aware scheduling in GKE clusters for G4 machines and adds a new module that
+provides mount scripts for WEKA filesystems. This version also includes PSA
+updates and adds a GKE sample for running the <code>nvidia-bug-report</code> shell script. For details, see
+the <a href="https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/4772">Release announcement on
+GitHub</a>.</p>
+<hr />
+<h2 id="2025-10-10">2025-10-10</h2>
+<h3 id="feature_3">Feature</h3>
 <p>Cluster Toolkit release version v1.68.0 is available. This release
 introduces the option to download the NVIDIA Collective Communications Library
 (NCCL) software packages <code>libnccl2</code> and <code>libnccl-dev</code> for A3U and A4H machine
@@ -2152,7 +2179,7 @@ Spectrum Symphony
 workloads</a>.</p>
 <hr />
 <h2 id="2025-09-19">2025-09-19</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>Cluster Toolkit release version v1.67.0 is available. This release
 introduces additional support for aarch64-based architecture, as well as other
 minor changes. For more information about this release, see the <a href="https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/4674">Release
@@ -2160,7 +2187,7 @@ Announcement on
 GitHub</a>.</p>
 <hr />
 <h2 id="2025-09-15">2025-09-15</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p>Cluster Toolkit release version v1.66.0 is available. This release
 enables Cloud Storage FUSE for H4D machine types and sets the
 default cluster availability to zonal, as well as other minor changes. For more
@@ -2168,7 +2195,7 @@ information about this release, see the <a href="https://github.com/GoogleCloudP
 GitHub</a>.</p>
 <hr />
 <h2 id="2025-08-14">2025-08-14</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p>Cluster Toolkit version v1.62.0 is available. This release adds new
 blueprints for A4X instances and introduces a community scheduler module for
 Slinky (Slurm on Kubernetes). For more details, see the <a href="https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/4514">Release announcement on
@@ -2184,6 +2211,15 @@ GitHub</a>.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cluster-toolkit">Cluster Toolkit</a></li>
+          <li class="nav-item">
+            <a href="#2025-11-03" class="nav-link">2025-11-03</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2025-10-24" class="nav-link">2025-10-24</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2025-10-21" class="nav-link">2025-10-21</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-10-10" class="nav-link">2025-10-10</a>
           </li>

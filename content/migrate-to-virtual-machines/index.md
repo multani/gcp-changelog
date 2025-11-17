@@ -1,5 +1,14 @@
 # Migrate to Virtual Machines
 
+## 2025-11-17
+
+### Feature
+
+You can now use [Hyperdisk Storage Pools](https://docs.cloud.google.com/compute/docs/disks/storage-pools)
+with migrating VMs if you need large-scale storage. Hyperdisk Storage Pools
+help you manage large-scale storage and can optimize costs and performance.
+
+---
 ## 2025-10-16
 
 ### Feature

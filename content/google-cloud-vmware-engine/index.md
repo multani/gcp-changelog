@@ -1,17 +1,24 @@
 # Google Cloud VMware Engine
 
+## 2025-11-14
+
+### Announcement
+
+VMware Engine [`ve2` nodes](https://docs.cloud.google.com/vmware-engine/docs/concepts/node-types) are now available in the Tokyo, Japan region (`asia-northeast1-a`).
+
+---
 ## 2025-11-04
 
 ### Announcement
 
-VMware Engine `ve2` nodes are now available in the London, England, Europe (`europe-west2-b`) zone in the London, England, Europe region (`europe-west2`).
+VMware Engine [`ve2` nodes](https://docs.cloud.google.com/vmware-engine/docs/concepts/node-types) are now available in the London, England, Europe (`europe-west2-b`) zone in the London, England, Europe region (`europe-west2`).
 
 ---
 ## 2025-10-31
 
 ### Announcement
 
-VMware Engine `ve1` nodes are now available in the Mumbai, India (`asia-south1-b`) zone in the Mumbai region (`asia-south1`).
+VMware Engine [`ve1` nodes](https://docs.cloud.google.com/vmware-engine/docs/concepts/node-types) are now available in the Mumbai, India (`asia-south1-b`) zone in the Mumbai region (`asia-south1`).
 
 ---
 ## 2025-10-03

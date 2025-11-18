@@ -1,5 +1,12 @@
 # Looker
 
+## 2025-11-17
+
+### Feature
+
+The new [content certification](https://docs.cloud.google.com/looker/docs/content-certification) feature, when enabled, lets trusted users certify Looker dashboards, Looks, and self-service Explores to indicate that the content has gone through a manual review and is certified as reliable and trustworthy. This lets other users identify reliable content and confidently use that data for decision-making.
+
+---
 ## 2025-11-12
 
 ### Feature

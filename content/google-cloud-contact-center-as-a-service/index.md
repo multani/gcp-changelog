@@ -1,5 +1,59 @@
 # Google Cloud Contact Center as a Service
 
+## 2025-11-17
+
+### Announcement
+
+**Advanced reporting dashboards version 3.41**
+
+We've released version 3.41 of the advanced reporting dashboards.
+
+### Fixed
+
+We addressed the following issues in this release:
+
+* Fixed an issue where the **Chat Agent Metrics (Historical)** explore and the **Agent Metrics (Historical)** explore returned different data for chats handled. This resulted in inconsistent chat handling metrics in dashboards.
+* Fixed an issue where ambiguous metrics names appeared in the **Call Queue Metrics (Historical)** explore.
+* Fixed an issue where the average active concurrency metric appeared as a total instead of a percentage.
+* Fixed an issue where the CSAT values on the **CSAT** and **Agent Performance** dashboards were not consistent with each other.
+* Changed the **Caller ANI** table heading to **Consumer phone number** in all of the tables it appeared in.
+* Fixed an issue where Call ID on the **Calls Transfer** dashboard was not correctly formatted.
+* Fixed an issue where the column headings in the **Agent Productivity** table of the **Agent Performance** dashboard were ordered incorrectly.
+* Fixed an issue on the **Dispositions - Chat** dashboard where the **Disposition Codes** filter wasn't working correctly.
+* Fixed an issue on the **Dispositions - Chat** dashboard where the **Disposition Code** filter was unable to find existing disposition codes.
+* Fixed an issue on the **Dispositions - Chat** dashboard where the **Direction** filter didn't display the available values.
+* Fixed an issue on the **Dispositions - Chat** dashboard where the **Agent Name** filter wasn't working correctly.
+* Fixed an issue on the **Dispositions - Chat** dashboard where the **Disposition Distribution** tile displayed the disposition codes in the wrong order.
+* Fixed an issue on the **Dispositions - Calls** dashboard where the **Disposition Code** filter didn't find existing disposition lists.
+* Fixed an issue on the **Dispositions - Calls** dashboard where agents didn't appear in the **Dispositions by Agent** table when filtering by Agent ID.
+* Fixed an issue where dismissed chat time was being included with current chat time metrics on the **Agent Monitoring** dashboard.
+
+### Feature
+
+**Campaigns dashboard**
+
+We've added a new **Campaigns** dashboard that displays real-time and historical performance metrics for call campaigns, including call outcomes, campaign volumes, and agent metrics. Managers can use this information to monitor call campaigns and make data-driven decisions to improve campaign performance. For more information, see [Campaigns dashboard](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-campaigns).
+
+### Feature
+
+**All Interactions dashboards: updates to tables**
+
+On the **All Interactions - Calls** dashboard, we did the following:
+
+* Renamed the **All Call Interactions (Historical)** table to **Call Metrics Detail**.
+* Updated the formatting of the column headings in the **Virtual Agent Interactions** table.
+
+On the **All Interactions - Chats** dashboard, we renamed the **All Chat Interactions (Historical)** table to **Chat Metric Detail**.
+
+For more information, see [All interactions dashboards](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-all-interactions).
+
+### Feature
+
+**Real-time dashboard optimization**
+
+We've optimized real-time dashboards to provide faster loading and refresh times.
+
+---
 ## 2025-11-14
 
 ### Fixed

@@ -2,9 +2,91 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2025-11-14T00:00:00+00:00</updated>
+  <updated>2025-11-17T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-17:announcement:0</id>
+    <published>2025-11-17T00:00:00+00:00</published>
+    <updated>2025-11-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Advanced reporting dashboards version 3.41</strong></p>
+<p>We've released version 3.41 of the advanced reporting dashboards.</p>]]></content>
+    <summary>Version 3.41 of the advanced reporting dashboards has been released.</summary>
+    <title>Announcement: Advanced reporting dashboards v3.41</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-17:fixed:1</id>
+    <published>2025-11-17T00:00:00+00:00</published>
+    <updated>2025-11-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>We addressed the following issues in this release:</p>
+<ul>
+<li>Fixed an issue where the <strong>Chat Agent Metrics (Historical)</strong> explore and the <strong>Agent Metrics (Historical)</strong> explore returned different data for chats handled. This resulted in inconsistent chat handling metrics in dashboards.</li>
+<li>Fixed an issue where ambiguous metrics names appeared in the <strong>Call Queue Metrics (Historical)</strong> explore.</li>
+<li>Fixed an issue where the average active concurrency metric appeared as a total instead of a percentage.</li>
+<li>Fixed an issue where the CSAT values on the <strong>CSAT</strong> and <strong>Agent Performance</strong> dashboards were not consistent with each other.</li>
+<li>Changed the <strong>Caller ANI</strong> table heading to <strong>Consumer phone number</strong> in all of the tables it appeared in.</li>
+<li>Fixed an issue where Call ID on the <strong>Calls Transfer</strong> dashboard was not correctly formatted.</li>
+<li>Fixed an issue where the column headings in the <strong>Agent Productivity</strong> table of the <strong>Agent Performance</strong> dashboard were ordered incorrectly.</li>
+<li>Fixed an issue on the <strong>Dispositions - Chat</strong> dashboard where the <strong>Disposition Codes</strong> filter wasn't working correctly.</li>
+<li>Fixed an issue on the <strong>Dispositions - Chat</strong> dashboard where the <strong>Disposition Code</strong> filter was unable to find existing disposition codes.</li>
+<li>Fixed an issue on the <strong>Dispositions - Chat</strong> dashboard where the <strong>Direction</strong> filter didn't display the available values.</li>
+<li>Fixed an issue on the <strong>Dispositions - Chat</strong> dashboard where the <strong>Agent Name</strong> filter wasn't working correctly.</li>
+<li>Fixed an issue on the <strong>Dispositions - Chat</strong> dashboard where the <strong>Disposition Distribution</strong> tile displayed the disposition codes in the wrong order.</li>
+<li>Fixed an issue on the <strong>Dispositions - Calls</strong> dashboard where the <strong>Disposition Code</strong> filter didn't find existing disposition lists.</li>
+<li>Fixed an issue on the <strong>Dispositions - Calls</strong> dashboard where agents didn't appear in the <strong>Dispositions by Agent</strong> table when filtering by Agent ID.</li>
+<li>Fixed an issue where dismissed chat time was being included with current chat time metrics on the <strong>Agent Monitoring</strong> dashboard.</li>
+</ul>]]></content>
+    <summary>This release resolves several issues, including inconsistent chat metrics, ambiguous metric names, incorrect metric calculations (average concurrency, CSAT values), and formatting problems with Call ID. Additionally, filter functionalities on the Dispositions dashboards (Chat and Calls) have been fixed, and the 'Caller ANI' heading is now 'Consumer phone number'.</summary>
+    <title>Fixed: Resolved various issues for improved data accuracy and user experience.</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-17:feature:2</id>
+    <published>2025-11-17T00:00:00+00:00</published>
+    <updated>2025-11-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Campaigns dashboard</strong></p>
+<p>We've added a new <strong>Campaigns</strong> dashboard that displays real-time and historical performance metrics for call campaigns, including call outcomes, campaign volumes, and agent metrics. Managers can use this information to monitor call campaigns and make data-driven decisions to improve campaign performance. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-campaigns">Campaigns dashboard</a>.</p>]]></content>
+    <summary>Monitor your call campaigns with our new dashboard. Track real-time and historical performance, including outcomes and agent metrics, to improve campaign success.</summary>
+    <title>Feature: Campaigns dashboard</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-17:feature:3</id>
+    <published>2025-11-17T00:00:00+00:00</published>
+    <updated>2025-11-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>All Interactions dashboards: updates to tables</strong></p>
+<p>On the <strong>All Interactions - Calls</strong> dashboard, we did the following:</p>
+<ul>
+<li>Renamed the <strong>All Call Interactions (Historical)</strong> table to <strong>Call Metrics Detail</strong>.</li>
+<li>Updated the formatting of the column headings in the <strong>Virtual Agent Interactions</strong> table.</li>
+</ul>
+<p>On the <strong>All Interactions - Chats</strong> dashboard, we renamed the <strong>All Chat Interactions (Historical)</strong> table to <strong>Chat Metric Detail</strong>.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-all-interactions">All interactions dashboards</a>.</p>]]></content>
+    <summary>Updates were made to the All Interactions dashboards. The 'All Call Interactions (Historical)' table was renamed to 'Call Metrics Detail' and column headings in the 'Virtual Agent Interactions' table were reformatted. Additionally, the 'All Chat Interactions (Historical)' table was renamed to 'Chat Metric Detail'.</summary>
+    <title>Feature: All Interactions dashboards: updates to tables</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-17:feature:4</id>
+    <published>2025-11-17T00:00:00+00:00</published>
+    <updated>2025-11-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Real-time dashboard optimization</strong></p>
+<p>We've optimized real-time dashboards to provide faster loading and refresh times.</p>]]></content>
+    <summary>Faster loading and refresh times for real-time dashboards.</summary>
+    <title>Feature: Optimized dashboards</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

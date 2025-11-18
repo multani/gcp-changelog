@@ -4,12 +4,16 @@
 
 ### Feature
 
-The following AI Protection features are available:
+The following
+[AI Protection](https://docs.cloud.google.com/security-command-center/docs/ai-protection-overview) features are
+available:
 
-* AI Security dashboard: The dashboard has an updated AI Inventory section,
-  which includes an overview of AI agents.
-* Assets page: You can filter for AI resources, including AI agents that are
-  deployed to Vertex AI Agent Engine.
+* [AI Security dashboard](https://docs.cloud.google.com/security-command-center/docs/assess-risk#ai-protection): The
+  dashboard has an updated AI Inventory section, which includes an overview of
+  AI agents.
+* [Assets page](https://docs.cloud.google.com/security-command-center/docs/work-with-resources-in-the-console): You can
+  filter for AI resources, including AI agents that are deployed to
+  Vertex AI Agent Engine.
 
 AI Protection is available in
 [Preview](https://cloud.google.com/products#product-launch-stages) to the

@@ -1,5 +1,21 @@
 # Cloud Run
 
+## 2025-11-17
+
+### Feature
+
+Cloud Run and Cloud Run functions source deployments support `pyproject.toml`
+file for managing dependencies. If you use a `pyproject.toml` file, source deployments
+use one of the following to find and install dependencies:
+
+* `pip`
+* `uv`
+* `poetry`
+
+For more information, see [Deploy Python applications with a `pyproject.toml`
+file](https://docs.cloud.google.com/docs/buildpacks/python#deploy-with-toml) (Preview).
+
+---
 ## 2025-11-13
 
 ### Feature
@@ -19,7 +35,7 @@ LTS base images (Preview). This builder is available under
 
 ### Feature
 
-Support for [Python 3.14 runtime](https://docs.cloud.google.com/run/docs/runtime-support#python) is in [Preview](https://cloud.google.com/products?e=48754805#product-launch-stages). Starting from Python version 3.14 and later, the Python buildpack uses the UV package manager as the
+Support for [Python 3.14 runtime](https://docs.cloud.google.com/run/docs/runtime-support#python) is in [Preview](https://cloud.google.com/products?e=48754805#product-launch-stages). Starting from Python version 3.14 and later, the Python buildpack uses the uv package manager as the
 default installer for the dependencies you specify in your `requirements.txt` file. You can also use pip as the default installer for these versions by setting the `GOOGLE_PYTHON_PACKAGE_MANAGER` environment variable to `pip`. For more information, see [Specify dependencies in Python](https://docs.cloud.google.com/run/docs/runtimes/python-dependencies.md#dependencies).
 
 ---

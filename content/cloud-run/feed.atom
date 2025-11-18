@@ -2,9 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Run</title>
   <subtitle>Changelog for Google Cloud product: Cloud Run</subtitle>
-  <updated>2025-11-13T00:00:00+00:00</updated>
+  <updated>2025-11-17T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-run</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-run/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-run:2025-11-17:feature:0</id>
+    <published>2025-11-17T00:00:00+00:00</published>
+    <updated>2025-11-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud Run and Cloud Run functions source deployments support <code>pyproject.toml</code>
+file for managing dependencies. If you use a <code>pyproject.toml</code> file, source deployments
+use one of the following to find and install dependencies:</p>
+<ul>
+<li><code>pip</code></li>
+<li><code>uv</code></li>
+<li><code>poetry</code></li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/docs/buildpacks/python#deploy-with-toml">Deploy Python applications with a <code>pyproject.toml</code>
+file</a> (Preview).</p>]]></content>
+    <summary>You can now use `pyproject.toml` to manage dependencies for source deployments in Cloud Run and Cloud Functions. The system will automatically use `pip`, `uv`, or `poetry` to install these dependencies.</summary>
+    <title>Feature: Cloud Run and Cloud Functions Now Support pyproject.toml</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -38,10 +58,10 @@ LTS base images (Preview). This builder is available under
     <id>urn:github:multani:gcp-changelog:cloud-run:2025-11-12:feature:1</id>
     <published>2025-11-12T00:00:00+00:00</published>
     <updated>2025-11-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Support for <a href="https://docs.cloud.google.com/run/docs/runtime-support#python">Python 3.14 runtime</a> is in <a href="https://cloud.google.com/products?e=48754805#product-launch-stages">Preview</a>. Starting from Python version 3.14 and later, the Python buildpack uses the UV package manager as the
+    <content type="html"><![CDATA[<p>Support for <a href="https://docs.cloud.google.com/run/docs/runtime-support#python">Python 3.14 runtime</a> is in <a href="https://cloud.google.com/products?e=48754805#product-launch-stages">Preview</a>. Starting from Python version 3.14 and later, the Python buildpack uses the uv package manager as the
 default installer for the dependencies you specify in your <code>requirements.txt</code> file. You can also use pip as the default installer for these versions by setting the <code>GOOGLE_PYTHON_PACKAGE_MANAGER</code> environment variable to <code>pip</code>. For more information, see <a href="https://docs.cloud.google.com/run/docs/runtimes/python-dependencies.md#dependencies">Specify dependencies in Python</a>.</p>]]></content>
-    <summary>Google Cloud Run now supports Python 3.14 in preview. This update includes the UV package manager as the default for dependency installation, with an option to switch back to pip.</summary>
-    <title>Feature: Python 3.14 runtime now in Preview</title>
+    <summary>Google Cloud Run now supports Python 3.14, which uses the uv package manager by default. You can switch to pip by setting an environment variable.</summary>
+    <title>Feature: Python 3.14 runtime now in preview</title>
   </entry>
   <entry>
     <author>

@@ -1,5 +1,22 @@
 # Apigee Analytics
 
+## 2025-11-17
+
+### Announcement
+
+On November 17, 2025 we released an updated version of Apigee Analytics.
+
+### Feature
+
+**Support for aggregate data in Error Code Analysis, Cache Performance, and Target Performance charts**
+
+Announcing support for viewing aggregate data in the Error Code Analysis, Cache
+Performance, and Target Performance Analytics dashboards.
+
+For information on the Analytics dashboards, see
+[Use the Analytics dashboards](https://docs.cloud.google.com/apigee/docs/api-platform/analytics/using-analytics-dashboards).
+
+---
 ## 2025-11-10
 
 ### Announcement

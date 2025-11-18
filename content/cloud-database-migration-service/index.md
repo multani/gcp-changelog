@@ -1,5 +1,20 @@
 # Cloud Database Migration Service
 
+## 2025-10-30
+
+### Feature
+
+Database Migration Service now supports Private Service Connect interfaces for
+source network connectivity in all heterogeneous migration scenarios.
+
+For more information, see the following pages:
+
+* [Source connectivity methods for Oracle to Cloud SQL for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/oracle-to-postgresql/networking-methods-source#private-connectivity-psci)
+* [Source connectivity methods for Oracle to AlloyDB for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/oracle-to-alloydb/networking-methods-source#private-connectivity-psci)
+* [Source connectivity methods for SQL Server to Cloud SQL for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/sqlserver-to-csql-pgsql/networking-methods-source#private-connectivity-psci)
+* [Source connectivity methods for SQL Server to AlloyDB for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/sqlserver-to-alloydb/networking-methods-source#private-connectivity-psci)
+
+---
 ## 2025-09-15
 
 ### Announcement

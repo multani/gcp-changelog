@@ -2,6 +2,18 @@
 
 ## 2025-11-17
 
+### Changed
+
+New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3)
+are available in Cloud Composer 3:
+
+* [composer-3-airflow-3.1.0-build.2](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-0-build-2)
+
+### Feature
+
+[**Airflow 3**](https://docs.cloud.google.com/composer/docs/composer-versioning-overview#comparison-airflow-versions)
+is available in Preview in Cloud Composer 3.
+
 ### Announcement
 
 All Cloud Composer environment's GKE clusters are set up with

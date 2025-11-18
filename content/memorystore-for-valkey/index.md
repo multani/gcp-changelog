@@ -1,5 +1,13 @@
 # Memorystore for Valkey
 
+## 2025-11-17
+
+### Feature
+
+The [`/node/server/healthy`](https://docs.cloud.google.com/memorystore/docs/valkey/supported-monitoring-metrics#node-level_metrics)
+metric is [Generally Available](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-10-22
 
 ### Feature

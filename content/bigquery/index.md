@@ -1,5 +1,31 @@
 # BigQuery
 
+## 2025-11-17
+
+### Feature
+
+In the query execution graph, you can now use the [query text
+heatmap](https://docs.cloud.google.com/bigquery/docs/query-plan-explanation#query_text_heatmap) to identify
+which query text contributes to stages that consume more slot time, and to see
+query plan details for those stages. This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+You can use [folders](https://docs.cloud.google.com/bigquery/docs/code-asset-folders) to organize and control
+access to single file code assets, such as notebooks, saved queries, data
+canvases, and data preparation files. This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+You can now
+[share SQL stored procedures in BigQuery sharing listings](https://docs.cloud.google.com/bigquery/docs/analytics-hub-manage-listings#share-stored-procedure-in-listing)
+and enable
+[role-based authorization for stored procedures](https://docs.cloud.google.com/bigquery/docs/authorized-routines#authorize_routines).
+These features are in [preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-11-11
 
 ### Feature

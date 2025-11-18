@@ -1,5 +1,27 @@
 # Generative AI on Vertex AI
 
+## 2025-11-17
+
+### Feature
+
+**Veo video generation**
+
+Veo 3.1 is Generally Available, and introduces the following models:
+
+* [Veo
+  3.1](https://cloud.google.com/vertex-ai/generative-ai/docs/models/veo/3-1-generate#3.1-generate-001)
+* [Veo 3.1
+  Fast](https://cloud.google.com/vertex-ai/generative-ai/docs/models/veo/3-1-generate#3.1-fast-generate-001)
+
+For more information, see the following:
+
+* [Generate videos with Veo on Vertex AI](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/overview)
+* [Generate Veo videos from text prompts](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/generate-videos-from-text)
+* [Generate Veo videos from an image](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/generate-videos-from-an-image)
+* [Generate Veo videos using first and last frames](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/generate-videos-from-first-and-last-frames)
+* [Veo video generation API](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/model-reference/veo-video-generation)
+
+---
 ## 2025-11-13
 
 ### Feature

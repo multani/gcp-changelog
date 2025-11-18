@@ -2136,12 +2136,25 @@
 
 
 <h1 id="buildpacks">Buildpacks</h1>
-<h2 id="2025-09-18">2025-09-18</h2>
+<h2 id="2025-11-14">2025-11-14</h2>
 <h3 id="feature">Feature</h3>
+<p>Cloud Run and Cloud Run functions source deployments support <code>pyproject.toml</code>
+file for managing dependencies. If you use a <code>pyproject.toml</code> file, source deployments
+use one of the following to find and install dependencies:</p>
+<ul>
+<li><code>pip</code></li>
+<li><code>uv</code></li>
+<li><code>poetry</code></li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/docs/buildpacks/python#deploy-with-toml">Deploy Python applications with a <code>pyproject.toml</code>
+file</a> (Preview).</p>
+<hr />
+<h2 id="2025-09-18">2025-09-18</h2>
+<h3 id="feature_1">Feature</h3>
 <p>Ubuntu 24 builder with the <code>google-24</code> stack is available for Google Cloud's Buildpacks. For more information, see <a href="https://cloud.google.com/docs/buildpacks/builders">Builders</a> and <a href="https://cloud.google.com/docs/buildpacks/use-a-specific-builder">Use a specific builder</a>.</p>
 <hr />
 <h2 id="2025-08-14">2025-08-14</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>The Python buildpack supports Cloud Run source deployments for modern web frameworks such as <a href="https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-fastapi-service.md">FastAPI</a>, <a href="https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-gradio-service">Gradio</a>, and <a href="https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-streamlit-service">Streamlit</a>.</p>
 <p>For Python version 3.13 and later, the Python buildpack sets the default entrypoint for <a href="https://cloud.google.com/run/docs/deploying-source-code">Cloud Run source deployments</a> based on the web server or framework configuration in your <code>requirements.txt</code> file. For more information, see <a href="https://cloud.google.com/docs/buildpacks/python#entrypoint">Build a Python application</a>.</p>
 <hr /></div>
@@ -2155,6 +2168,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#buildpacks">Buildpacks</a></li>
+          <li class="nav-item">
+            <a href="#2025-11-14" class="nav-link">2025-11-14</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-09-18" class="nav-link">2025-09-18</a>
           </li>

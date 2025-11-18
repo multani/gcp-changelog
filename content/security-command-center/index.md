@@ -1,5 +1,39 @@
 # Security Command Center
 
+## 2025-11-17
+
+### Feature
+
+The following AI Protection features are available:
+
+* AI Security dashboard: The dashboard has an updated AI Inventory section,
+  which includes an overview of AI agents.
+* Assets page: You can filter for AI resources, including AI agents that are
+  deployed to Vertex AI Agent Engine.
+
+AI Protection is available in
+[Preview](https://cloud.google.com/products#product-launch-stages) to the
+Security Command Center Enterprise tier.
+
+### Feature
+
+[Agent Engine Threat
+Detection](https://docs.cloud.google.com/security-command-center/docs/agent-engine-threat-detection-overview), a built-in
+service of Security Command Center, is available in
+[Preview](https://cloud.google.com/products#product-launch-stages) to the Security
+Command Center Enterprise and Premium tiers. This service helps you detect and
+investigate potential attacks on AI agents that are deployed to
+[Vertex AI Agent Engine](https://docs.cloud.google.com/agent-builder/agent-engine/overview) Runtime.
+
+---
+## 2025-11-14
+
+### Feature
+
+[Data Security Posture Management (DSPM)](https://docs.cloud.google.com/security-command-center/docs/dspm-data-security) supports the
+Security Command Center Premium tier at the organization level.
+
+---
 ## 2025-11-11
 
 ### Changed

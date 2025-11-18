@@ -1,5 +1,21 @@
 # Buildpacks
 
+## 2025-11-14
+
+### Feature
+
+Cloud Run and Cloud Run functions source deployments support `pyproject.toml`
+file for managing dependencies. If you use a `pyproject.toml` file, source deployments
+use one of the following to find and install dependencies:
+
+* `pip`
+* `uv`
+* `poetry`
+
+For more information, see [Deploy Python applications with a `pyproject.toml`
+file](https://docs.cloud.google.com/docs/buildpacks/python#deploy-with-toml) (Preview).
+
+---
 ## 2025-09-18
 
 ### Feature

@@ -1,5 +1,17 @@
 # Cloud SQL for MySQL
 
+## 2025-11-17
+
+### Feature
+
+Cloud SQL now offers a free trial instance for both existing and new Google
+Cloud customers. A free trial instance lets you test advanced Cloud SQL
+capabilities and features for up to 30 days without any financial commitment.
+
+For information about a free trial instance, and its inclusions and conditions,
+see [Free trial instance overview](https://cloud.google.com/sql/docs/mysql/free-trial-instance).
+
+---
 ## 2025-11-14
 
 ### Feature

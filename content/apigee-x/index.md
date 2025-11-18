@@ -1,5 +1,32 @@
 # Apigee X
 
+## 2025-11-17
+
+### Announcement
+
+On November 17, 2025, we released an updated version of Apigee (1-16-0-apigee-5).
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+### Feature
+
+**Secure and validate documents using WS-Security with X.509 certificates**  
+  
+You can now secure and validate SOAP documents using WS-Security with X.509 certificates using crypto object methods. See [Secure SOAP documents using WS-Security with X.509 certificates](https://docs.cloud.google.com/apigee/docs/api-platform/reference/javascript-object-model#cryptoobjectreference-cryptowsSecRsaSign) and [Validate SOAP documents using WS-Security with X.509 certificates](https://docs.cloud.google.com/apigee/docs/api-platform/reference/javascript-object-model#cryptoobjectreference-cryptowsSecRsaValidate).
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| **N/A** | **Updates to security, infrastructure, and libraries.** |
+
+### Security
+
+| Bug ID | Description |
+| --- | --- |
+| **454672970** | **Added strict input validation to the `SetIntegrationRequest` policy** |
+
+---
 ## 2025-10-31
 
 ### Announcement

@@ -1,5 +1,33 @@
 # Cloud Database Migration Service
 
+## 2025-11-18
+
+### Feature
+
+Database Migration Service now supports the one-time migration type for all
+heterogeneous migration scenarios. For more information, see the following pages:
+
+* [Migration data flow for Oracle to Cloud SQL for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/oracle-to-postgresql/scenario-overview#data-flow-migration-types)
+* [Migration data flow for Oracle to AlloyDB for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/oracle-to-alloydb/scenario-overview#data-flow-migration-types)
+* [Migration data flow for SQL Server to Cloud SQL for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/sqlserver-to-csql-pgsql/scenario-overview#data-flow-migration-types)
+* [Migration data flow for SQL Server to AlloyDB for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/sqlserver-to-alloydb/scenario-overview#data-flow-migration-types)
+
+### Feature
+
+Database Migration Service for homogeneous PostgreSQL migrations to Cloud SQL for PostgreSQL
+now supports PostgreSQL version 18. For more information, see
+[Supported source and destination databases](https://docs.cloud.google.com/database-migration/docs/supported-databases).
+
+---
+## 2025-11-05
+
+### Feature
+
+Database Migration Service for homogeneous MySQL migrations to Cloud SQL for MySQL
+now supports MySQL version 8.0.43. For more information, see
+[Supported source and destination databases](https://docs.cloud.google.com/database-migration/docs/supported-databases).
+
+---
 ## 2025-10-30
 
 ### Feature

@@ -1,5 +1,16 @@
 # Compute Engine
 
+## 2025-11-18
+
+### Feature
+
+You can autoscale a regional managed instance group
+(MIG) that has the target distribution shape set to `ANY` or `ANY_SINGLE_ZONE`.
+These shapes are particularly beneficial for batch workloads.
+For more information about target distribution shapes, see
+[Regional MIG target distribution shape](https://docs.cloud.google.com/compute/docs/instance-groups/regional-mig-distribution-shape).
+
+---
 ## 2025-11-13
 
 ### Feature

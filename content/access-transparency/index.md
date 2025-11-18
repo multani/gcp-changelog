@@ -7,6 +7,11 @@
 Cloud Scheduler is generally available
 [(GA)](https://cloud.google.com/products#product-launch-stages).
 
+### Feature
+
+Vertex AI model tuning is generally available
+[(GA)](https://cloud.google.com/products#product-launch-stages).
+
 ---
 ## 2025-10-30
 

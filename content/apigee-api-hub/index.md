@@ -1,5 +1,32 @@
 # Apigee API hub
 
+## 2025-11-18
+
+### Feature
+
+**New API deployments view**
+
+API deployment information is now available as a separate tab in the **API details** page. You can view your API deployment details, create new deployments, and manage existing deployments using the API deployments tab.
+
+For more information, see [Manage deployments](https://docs.cloud.google.com/apigee/docs/apihub/manage-api-deployments).
+
+### Fixed
+
+The issue relating to [API hub provisioning failures in data residency enabled Apigee organizations](#November_03_2025) is now resolved. You can now provision API hub within an Apigee organization that has data residency enabled.
+
+For information about provisioning API hub, see [Provision API hub in the Cloud console](https://docs.cloud.google.com/apigee/docs/apihub/provision).
+
+### Changed
+
+**New tutorial: Ingest Microsoft Azure API data into API hub**
+
+A new tutorial is available for ingesting Microsoft Azure API data into API hub.
+
+This tutorial shows you how to ingest API metadata from Azure API Management (APIM) into Apigee API hub. It uses a pre-built Application Integration template and a set of custom scripts on GitHub to perform a manual, on-demand ingestion of your API data.
+
+For more information, see [Ingest Microsoft Azure API data into API hub](https://docs.cloud.google.com/apigee/docs/apihub/tutorials/ingest-azure-api-hub).
+
+---
 ## 2025-11-04
 
 ### Feature

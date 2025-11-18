@@ -1,6 +1,60 @@
 {
   "name": "Cloud Service Mesh",
   "entries": {
+    "2025-11-17": [
+      {
+        "kind": "Announcement",
+        "content": "The following rollouts have completed for managed Cloud Service Mesh:\n\n* 1.21.6-asm.4 has rolled out to the rapid release channel.\n* 1.20.8-asm.56 has rolled out to the regular release channel.\n* 1.19.10-asm.52 has rolled out to the stable release channel.\n* CNI and MDPC version 1.20.8-asm.56 has rolled out to all release channels.\n\nWhile the managed data plane automatically updates Envoy Proxies by restarting workloads, you must manually restart any StatefulSets and Jobs.",
+        "summary": {
+          "title": "Cloud Service Mesh Rollouts Completed",
+          "summary": "Managed Cloud Service Mesh versions 1.21.6-asm.4, 1.20.8-asm.56, and 1.19.10-asm.52 have completed their rollouts to the rapid, regular, and stable release channels, respectively. CNI and MDPC version 1.20.8-asm.56 is also available on all channels. While Envoy Proxies update automatically, manual restarts are needed for StatefulSets and Jobs."
+        }
+      }
+    ],
+    "2025-10-28": [
+      {
+        "kind": "Security",
+        "content": "**1.27.2-asm.1 is now available for in-cluster Cloud Service Mesh.**\n\nThis patch release contains fixes for the security vulnerabilities listed in [GCP-2025-064](https://cloud.google.com/service-mesh/docs/security-bulletins#gcp-2025-064). For details on upgrading Cloud Service Mesh, refer to [Upgrade Cloud Service Mesh](https://cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service Mesh v1.27.2-asm.1 uses Envoy v1.35.6.",
+        "summary": {
+          "title": "Security Update for Cloud Service Mesh",
+          "summary": "A new patch release, 1.27.2-asm.1, is available for Cloud Service Mesh. This update addresses security vulnerabilities outlined in GCP-2025-064. For upgrade instructions, please refer to the provided documentation."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "**1.26.5-asm.1 is now available for in-cluster Cloud Service Mesh.**\n\nThis patch release contains fixes for the security vulnerabilities listed in [GCP-2025-064](https://cloud.google.com/service-mesh/docs/security-bulletins#gcp-2025-064). For details on upgrading Cloud Service Mesh, refer to [Upgrade Cloud Service Mesh](https://cloud.google.com/service-mesh/v1.26/docs/upgrade/upgrade). Cloud Service Mesh v1.26.5-asm.1 uses Envoy v1.34.10.",
+        "summary": {
+          "title": "Security Update for Cloud Service Mesh",
+          "summary": "A new patch release, 1.26.5-asm.1, is available for Cloud Service Mesh. This update addresses security vulnerabilities."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "**1.25.5-asm.9 is now available for in-cluster Cloud Service Mesh.**\n\nThis patch release contains fixes for the security vulnerabilities listed in [GCP-2025-064](https://cloud.google.com/service-mesh/docs/security-bulletins#gcp-2025-064). For details on upgrading Cloud Service Mesh, refer to [Upgrade Cloud Service Mesh](https://cloud.google.com/service-mesh/v1.25/docs/upgrade/upgrade). Cloud Service Mesh v1.25.5-asm.9 uses Envoy v1.33.12.",
+        "summary": {
+          "title": "Cloud Service Mesh Security Update",
+          "summary": "A new patch release for Cloud Service Mesh is available, addressing important security vulnerabilities. Upgrade to version 1.25.5-asm.9 to ensure your services are protected. For more information on the security bulletin and upgrade instructions, please refer to the provided documentation."
+        }
+      }
+    ],
+    "2025-10-27": [
+      {
+        "kind": "Announcement",
+        "content": "The following images are now rolling out for managed Cloud Service Mesh:\n\n* 1.21.6-asm.4 is rolling out to the rapid release channel.\n* 1.20.8-asm.56 is rolling out to the regular release channel.\n* 1.19.10-asm.52 is rolling out to the stable release channel.\n\nCNI/managed data plane controller version 1.20.8-asm.56 is rolling out to all release channels.",
+        "summary": {
+          "title": "Cloud Service Mesh Updates",
+          "summary": "New versions of Cloud Service Mesh are now available for rapid, regular, and stable release channels. The CNI/managed data plane controller has also been updated across all channels."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "These patches contain fixes for the following CVEs:\n\n**1.21.6-asm.4**\n\n| Name | Envoy Proxy | Envoy Proxy Distroless | Control plane |\n| --- | --- | --- | --- |\n| [CVE-2025-4802](https://security-tracker.debian.org/tracker/CVE-2025-4802) | - | Yes | - |\n| [CVE-2025-8058](https://security-tracker.debian.org/tracker/CVE-2025-8058) | - | Yes | - |\n| [CVE-2023-4039](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2023-4039) | Yes | - | - |\n| [CVE-2024-10041](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2024-10041) | Yes | - | - |\n| [CVE-2025-32988](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-32988) | Yes | - | - |\n| [CVE-2025-6395](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-6395) | Yes | - | - |\n| [CVE-2025-48964](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-48964) | Yes | - | - |\n| [CVE-2025-32989](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-32989) | Yes | - | - |\n| [CVE-2025-47268](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-47268) | Yes | - | - |\n| [CVE-2025-40909](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-40909) | Yes | - | - |\n| [CVE-2025-32990](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-32990) | Yes | - | - |\n\n**1.20.8-asm.55**\n\n| Name | Envoy Proxy | Envoy Proxy Distroless | Control plane |\n| --- | --- | --- | --- |\n| [CVE-2023-4813](https://security-tracker.debian.org/tracker/CVE-2023-4813) | - | Yes | - |\n| [CVE-2025-8058](https://security-tracker.debian.org/tracker/CVE-2025-8058) | - | Yes | - |\n| [CVE-2023-4806](https://security-tracker.debian.org/tracker/CVE-2023-4806) | - | Yes | - |\n| [CVE-2025-32989](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-32989) | Yes | - | - |\n| [CVE-2025-32988](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-32988) | Yes | - | - |\n| [CVE-2025-48964](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-48964) | Yes | - | - |\n| [CVE-2024-10041](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2024-10041) | Yes | - | - |\n| [CVE-2025-40909](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-40909) | Yes | - | - |\n| [CVE-2025-32990](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-32990) | Yes | - | - |\n| [CVE-2025-47268](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-47268) | Yes | - | - |\n| [CVE-2025-6395](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-6395) | Yes | - | - |\n| [CVE-2023-4039](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2023-4039) | Yes | - | - |\n\n**1.19.10-asm.52**\n\n| Name | Envoy Proxy | Envoy Proxy Distroless | Control plane |\n| --- | --- | --- | --- |\n| [CVE-2023-4813](https://security-tracker.debian.org/tracker/CVE-2023-4813) | - | Yes | - |\n| [CVE-2025-8058](https://security-tracker.debian.org/tracker/CVE-2025-8058) | - | Yes | - |\n| [CVE-2023-4806](https://security-tracker.debian.org/tracker/CVE-2023-4806) | - | Yes | - |\n| [CVE-2025-32989](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-32989) | Yes | - | - |\n| [CVE-2025-48964](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-48964) | Yes | - | - |\n| [CVE-2024-10041](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2024-10041) | Yes | - | - |\n| [CVE-2025-32988](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-32988) | Yes | - | - |\n| [CVE-2025-40909](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-40909) | Yes | - | - |\n| [CVE-2025-32990](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-32990) | Yes | - | - |\n| [CVE-2025-47268](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-47268) | Yes | - | - |\n| [CVE-2025-6395](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-6395) | Yes | - | - |\n| [CVE-2023-4039](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2023-4039) | Yes | - | - |\n\n**CNI & MDPC**\n\n| Name | CNI | MDPC |\n| --- | --- | --- |\n| [CVE-2024-56406](https://ubuntu.com/security/CVE-2024-56406) | Yes | Yes |\n| [CVE-2025-1372](https://ubuntu.com/security/CVE-2025-1372) | Yes | Yes |\n| [CVE-2025-46836](https://ubuntu.com/security/CVE-2025-46836) | Yes | Yes |\n| [CVE-2025-30258](https://ubuntu.com/security/CVE-2025-30258) | Yes | Yes |\n| [CVE-2023-4039](https://ubuntu.com/security/CVE-2023-4039) | Yes | Yes |\n| [CVE-2025-4802](https://ubuntu.com/security/CVE-2025-4802) | Yes | Yes |\n| [CVE-2025-1377](https://ubuntu.com/security/CVE-2025-1377) | Yes | Yes |\n| [CVE-2025-4598](https://ubuntu.com/security/CVE-2025-4598) | Yes | Yes |\n| [CVE-2025-3576](https://ubuntu.com/security/CVE-2025-3576) | Yes | Yes |",
+        "summary": {
+          "title": "Security Patches Released",
+          "summary": "This release addresses multiple CVEs across various versions of Envoy Proxy and related components. Key fixes include vulnerabilities in Envoy Proxy (CVE-2023-4039, CVE-2024-10041, CVE-2025-32988, etc.) and CNI/MDPC (CVE-2024-56406, CVE-2025-1372, etc.)."
+        }
+      }
+    ],
     "2025-10-16": [
       {
         "kind": "Announcement",

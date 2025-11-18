@@ -18,8 +18,6 @@ performance, and data analysis:
   select additional columns through **Column Manager**.
 * **Enhanced search visibility**: The search query and applied filters are now
   displayed on the **Search** page.
-* **New API for raw log search**: Use the **legacySearchRawLogsV2** API to search
-  for raw logs within a specified Google SecOps instance.
 
 For more details, see the following topics:
 

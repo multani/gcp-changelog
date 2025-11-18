@@ -8,6 +8,14 @@ Cloud Scheduler is generally available
 [(GA)](https://cloud.google.com/products#product-launch-stages).
 
 ---
+## 2025-10-30
+
+### Feature
+
+IAM System for Cross-domain Identity Management (SCIM) Service is generally
+available [(GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-10-14
 
 ### Feature

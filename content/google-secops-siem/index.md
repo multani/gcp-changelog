@@ -40,15 +40,12 @@ performance, and data analysis:
   select additional columns through **Column Manager**.
 * **Enhanced search visibility**: The search query and applied filters are now
   displayed on the **Search** page.
-* **New API for raw log search**: Use the **legacySearchRawLogsV2** API to search
-  for raw logs within a specified Google SecOps instance.
 
 For more details, see the following topics:
 
 * [Filter data in Raw Log Search](https://docs.cloud.google.com/chronicle/docs/investigation/filter-data-raw-log-scan-view)
 * [Conduct a raw log search](https://docs.cloud.google.com/chronicle/docs/investigation/raw-log-search-in-investigate)
 * [Use raw log search](https://docs.cloud.google.com/chronicle/docs/investigation/search-raw-logs)
-* [Method: legacy.legacySearchRawLogsV2](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.legacy/legacySearchRawLogsV2)
 
 ### Feature
 
@@ -66,8 +63,6 @@ performance, and data analysis:
   select additional columns through **Column Manager**.
 * **Enhanced search visibility**: The search query and applied filters are now
   displayed on the **Search** page.
-* **New API for raw log search**: Use the **legacySearchRawLogsV2** API to search
-  for raw logs within a specified Google SecOps instance.
 
 For more details, see the following topics:
 

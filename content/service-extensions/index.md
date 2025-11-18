@@ -1,5 +1,13 @@
 # Service Extensions
 
+## 2025-11-17
+
+### Feature
+
+For authorization extensions, in addition to the ext\_proc Envoy gRPC API, the
+[ext\_authz gRPC API](https://docs.cloud.google.com/service-extensions/docs/callouts-overview##ext-authz) is also supported. This capability allows seamless integration with the broader authorization ecosystem. This feature is in **Preview**.
+
+---
 ## 2025-11-13
 
 ### Feature

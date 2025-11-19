@@ -2,6 +2,16 @@
 
 ## 2025-11-17
 
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| 446973091 | **Proxy editor endpoint view is now disabled if there are over 200 flows configured in proxy endpoints.**  When opening the proxy editor endpoint view with a proxy that has over 200 flows, the proxy graph is no longer rendered, and instead you are presented with a message informing you that there are too many flows to render. This action addresses a performance issue that made the proxy editor unusable when there were over 200 flows configured. |
+
+### Announcement
+
+On November 17, 2025, we released an updated version of the Apigee UI.
+
 ### Announcement
 
 On November 17, 2025 we released an updated version of Apigee Analytics.

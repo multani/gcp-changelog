@@ -2,9 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: App Hub</title>
   <subtitle>Changelog for Google Cloud product: App Hub</subtitle>
-  <updated>2025-11-14T00:00:00+00:00</updated>
+  <updated>2025-11-17T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:app-hub</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/app-hub/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:app-hub:2025-11-17:feature:0</id>
+    <published>2025-11-17T00:00:00+00:00</published>
+    <updated>2025-11-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>App Hub now supports new metadata <a href="https://docs.cloud.google.com/app-hub/docs/overview#properties-and-attributes">properties</a> to provide deeper context and governance for your services and workloads:</p>
+<ul>
+<li><strong>Functional type:</strong> Services and workloads now include the <code>FunctionalType</code> property, which is an output-only field that identifies the known function of a resource. The initial supported value is <code>AGENT</code>, which indicates that a workload is an AI agent.</li>
+<li><strong>Extended metadata:</strong> Services and workloads now include the <code>ExtendedMetadata</code> property to provide rich, structured, and schema-driven information about the resource, such as the <code>apphub.googleapis.com/AgentProperties</code> schema for AI agents.</li>
+<li><strong>Registration type:</strong> Services now have the <code>RegistrationType</code> property. This output-only field indicates whether a service is exclusive (can be registered to only one application) or shared (can be registered to multiple applications). To view the registration type of your services, see <a href="https://docs.cloud.google.com/app-hub/docs/modify-app-hub-resources#view">View details of services and workloads</a>.</li>
+<li><strong>Identity:</strong> Services and workloads now include the <code>Identity</code> property, which is an output-only field that contains the service account or managed workload identity name for a service or workload.</li>
+</ul>]]></content>
+    <summary>App Hub now supports new metadata properties for services and workloads, including FunctionalType, ExtendedMetadata, RegistrationType, and Identity, to enhance context and governance.</summary>
+    <title>Feature: App Hub Adds New Metadata Properties</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

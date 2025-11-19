@@ -2136,10 +2136,20 @@
 
 
 <h1 id="app-hub">App Hub</h1>
-<h2 id="2025-11-14">2025-11-14</h2>
+<h2 id="2025-11-17">2025-11-17</h2>
 <h3 id="feature">Feature</h3>
-<p>App Hub has expanded its support for Google Cloud resources. You can now register services and workloads from a wide range of products to your applications, including new resources from Access Approval, Certificate Authority Service, Cloud Run, Firebase, Gemini for Google Cloud, GKE Multi-Cloud, and more. Many of these supported resources are available in Preview. For a complete list, see <a href="https://docs.cloud.google.com/app-hub/docs/supported-resources">App Hub supported resources</a>.</p>
+<p>App Hub now supports new metadata <a href="https://docs.cloud.google.com/app-hub/docs/overview#properties-and-attributes">properties</a> to provide deeper context and governance for your services and workloads:</p>
+<ul>
+<li><strong>Functional type:</strong> Services and workloads now include the <code>FunctionalType</code> property, which is an output-only field that identifies the known function of a resource. The initial supported value is <code>AGENT</code>, which indicates that a workload is an AI agent.</li>
+<li><strong>Extended metadata:</strong> Services and workloads now include the <code>ExtendedMetadata</code> property to provide rich, structured, and schema-driven information about the resource, such as the <code>apphub.googleapis.com/AgentProperties</code> schema for AI agents.</li>
+<li><strong>Registration type:</strong> Services now have the <code>RegistrationType</code> property. This output-only field indicates whether a service is exclusive (can be registered to only one application) or shared (can be registered to multiple applications). To view the registration type of your services, see <a href="https://docs.cloud.google.com/app-hub/docs/modify-app-hub-resources#view">View details of services and workloads</a>.</li>
+<li><strong>Identity:</strong> Services and workloads now include the <code>Identity</code> property, which is an output-only field that contains the service account or managed workload identity name for a service or workload.</li>
+</ul>
+<hr />
+<h2 id="2025-11-14">2025-11-14</h2>
 <h3 id="feature_1">Feature</h3>
+<p>App Hub has expanded its support for Google Cloud resources. You can now register services and workloads from a wide range of products to your applications, including new resources from Access Approval, Certificate Authority Service, Cloud Run, Firebase, Gemini for Google Cloud, GKE Multi-Cloud, and more. Many of these supported resources are available in Preview. For a complete list, see <a href="https://docs.cloud.google.com/app-hub/docs/supported-resources">App Hub supported resources</a>.</p>
+<h3 id="feature_2">Feature</h3>
 <p>Management projects are now <a href="https://cloud.google.com/products#product-launch-stages">Generally Available (GA)</a> to enable application management in folders. This setup model is recommended for all new App Hub implementations and provides a centralized and scalable way to organize, deploy, and govern your applications.</p>
 <p>Key features of this release include:</p>
 <ul>
@@ -2151,7 +2161,7 @@
 <p>For more information on how to get started, see <a href="https://docs.cloud.google.com/app-hub/docs/set-up-app-hub-folder">Set up App Hub with app-enabled folders</a>.</p>
 <hr />
 <h2 id="2025-08-25">2025-08-25</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>App Hub supports resources from the following sources in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>:</p>
 <ul>
 <li>Vertex AI</li>
@@ -2191,7 +2201,7 @@
 </ul>
 <hr />
 <h2 id="2025-07-30">2025-07-30</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>The following <a href="https://cloud.google.com/app-hub/docs/supported-resources">Vertex AI supported resources</a> are now generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>):</p>
 <ul>
 <li><a href="https://cloud.google.com/vertex-ai/docs/reference/rest/v1/projects.locations.datasets">Dataset</a> items</li>
@@ -2201,11 +2211,11 @@
 </ul>
 <hr />
 <h2 id="2025-07-08">2025-07-08</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p><a href="https://cloud.google.com/app-hub/docs/supported-resources">Dataproc Metastore services</a> are now generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).</p>
 <hr />
 <h2 id="2025-06-25">2025-06-25</h2>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p>App Hub supports resources from the following <a href="https://cloud.google.com/app-hub/docs/supported-resources">sources</a> in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>:</p>
 <ul>
 <li>Dataproc Metastore Service</li>
@@ -2225,6 +2235,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#app-hub">App Hub</a></li>
+          <li class="nav-item">
+            <a href="#2025-11-17" class="nav-link">2025-11-17</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-11-14" class="nav-link">2025-11-14</a>
           </li>

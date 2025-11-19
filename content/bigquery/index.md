@@ -1,5 +1,16 @@
 # BigQuery
 
+## 2025-11-18
+
+### Feature
+
+You can now [publish data insights](https://docs.cloud.google.com/bigquery/docs/data-insights#modes),
+including query recommendations and
+auto-generated table and column descriptions, to the Dataplex Universal Catalog.
+This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2025-11-17
 
 ### Feature

@@ -1,5 +1,17 @@
 # App Hub
 
+## 2025-11-17
+
+### Feature
+
+App Hub now supports new metadata [properties](https://docs.cloud.google.com/app-hub/docs/overview#properties-and-attributes) to provide deeper context and governance for your services and workloads:
+
+* **Functional type:** Services and workloads now include the `FunctionalType` property, which is an output-only field that identifies the known function of a resource. The initial supported value is `AGENT`, which indicates that a workload is an AI agent.
+* **Extended metadata:** Services and workloads now include the `ExtendedMetadata` property to provide rich, structured, and schema-driven information about the resource, such as the `apphub.googleapis.com/AgentProperties` schema for AI agents.
+* **Registration type:** Services now have the `RegistrationType` property. This output-only field indicates whether a service is exclusive (can be registered to only one application) or shared (can be registered to multiple applications). To view the registration type of your services, see [View details of services and workloads](https://docs.cloud.google.com/app-hub/docs/modify-app-hub-resources#view).
+* **Identity:** Services and workloads now include the `Identity` property, which is an output-only field that contains the service account or managed workload identity name for a service or workload.
+
+---
 ## 2025-11-14
 
 ### Feature

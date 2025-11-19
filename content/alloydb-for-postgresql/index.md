@@ -1,5 +1,12 @@
 # AlloyDB for PostgreSQL
 
+## 2025-11-19
+
+### Changed
+
+The upper limit of the query plans captured per minute is enhanced to 200. For more information, see [Improve query performance using advanced query insights features for AlloyDB](https://docs.cloud.google.com/alloydb/docs/using-advanced-query-insights#gcloud).
+
+---
 ## 2025-11-13
 
 ### Feature

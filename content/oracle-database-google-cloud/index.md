@@ -1,5 +1,26 @@
 # Oracle Database@Google Cloud
 
+## 2025-11-18
+
+### Feature
+
+Oracle Database@Google Cloud adds the following regions and zones for its services:
+
+* Exadata Database Service
+
+  + `australia-southeast1-b-r1` (Sydney, Australia)
+  + `northamerica-northeast2-a-r2` (Toronto, Canada)
+* Exadata Database Service on Exascale infrastructure
+
+  + `us-central1-a-r1` (Iowa, North America)
+  + `us-west3-a-r1` (Salt Lake City, North America)
+* Autonomous Database Service
+
+  + `northamerica-northeast2` (Toronto, Canada)
+
+For a full list of supported locations, see [Supported regions and zones](https://docs.cloud.google.com/oracle/database/docs/regions-and-zones).
+
+---
 ## 2025-11-13
 
 ### Feature

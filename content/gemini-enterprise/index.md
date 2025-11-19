@@ -1,5 +1,111 @@
 # Gemini Enterprise
 
+## 2025-11-19
+
+### Feature
+
+**Gemini Enterprise: Enhanced Agent Designer with visual flow builder [[Preview](https://cloud.google.com/products#product-launch-stages)]**
+
+Agent Designer in Gemini Enterprise is now enhanced with a new visual flow builder, offering a more intuitive and powerful way to create and manage complex, multi-step agents.
+
+This enhancement is available for all new agents. Existing no-code agents will continue to use the familiar editor to ensure backward compatibility.
+
+For more information, see [Agent Designer overview](https://docs.cloud.google.com/gemini/enterprise/docs/agent-designer).
+
+---
+## 2025-11-18
+
+### Feature
+
+**Gemini Enterprise: Use Gemini 3**
+
+You can now use Gemini 3 in preview with Gemini Enterprise. To make
+Gemini 3 available to users in your
+Gemini Enterprise app, a Gemini Enterprise admin must enable the
+**Gemini 3 Pro (Preview)** toggle in the **Model availability**
+feature control. For more information on feature controls, see
+[Manage features on the web app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
+
+### Feature
+
+**Gemini Enterprise: Sources from model**
+
+In the Sources panel of an answer, Gemini Enterprise shows other sources used by the Gemini models.
+
+### Feature
+
+**Gemini Enterprise: Microsoft OneDrive @mentions**
+
+You can use the @ symbol within your chats to mention and reference files in the connected Microsoft OneDrive data sources.
+
+### Feature
+
+**Gemini Enterprise: View generated images and videos**
+
+You can view chats and download your generated images and videos using the Library. For more information, see
+[View and download generated images and videos](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-analyze#view_and_download_generated_images_and_videos).
+
+---
+## 2025-11-17
+
+### Feature
+
+**Gemini Enterprise: Register ADK and A2A agents**
+
+You can register your ADK agents that are hosted on the Vertex AI Agent
+Engine and your agents that were built using the Agent-to-Agent (A2A) protocol
+with Gemini Enterprise. This makes the agents available to your users on the
+Gemini Enterprise web app.
+
+For more information, see:
+
+* [Register and manage ADK agents hosted on the Vertex AI Agent Engine](https://docs.cloud.google.com/gemini/enterprise/docs/register-and-manage-an-adk-agent)
+* [Register and manage A2A agents](https://docs.cloud.google.com/gemini/enterprise/docs/register-and-manage-an-a2a-agent)
+
+### Changed
+
+**Gemini Enterprise: Authorize assistant actions from the chat box**
+
+If actions are enabled for a data source, the user sees an **Enable Actions**
+button next to the data source listing in the assistant chat box. The user must
+click this button and complete authorization before they can use the assistant
+actions associated with the data source.
+
+---
+## 2025-11-05
+
+### Feature
+
+**Gemini Enterprise: Layout parser support for DOCX, PPTX, and XLSX (GA)**
+
+With the layout parser, support for parsing DOCX, PPTX, and XLSX file formats is
+Generally Available (GA). Both the layout and digital parsers can parse PDF,
+HTML, DOCX, PPTX, and XLSX files.
+For more information about the parsers, see [Parse and chunk
+documents](https://docs.cloud.google.com/gemini/enterprise/docs/parse-chunk-documents).
+
+---
+## 2025-10-31
+
+### Feature
+
+**Gemini Enterprise: Hidden model thinking details**
+
+When generating an answer, the details of a model's thinking are always hidden
+to protect sensitive information.
+
+---
+## 2025-10-21
+
+### Changed
+
+**Gemini Enterprise: Select individual connector instance**
+
+Select or deselect specific connector instances, such as Jira or Confluence, using the 
+database
+ icon located in the chat box.
+
+---
 ## 2025-10-02
 
 ### Feature

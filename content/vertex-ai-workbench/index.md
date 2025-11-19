@@ -1,5 +1,17 @@
 # Vertex AI Workbench
 
+## 2025-11-17
+
+### Feature
+
+**M135 release**
+
+The M135 release of Vertex AI Workbench instances includes the following:
+
+* Patched an issue where user-triggered OS shutdowns aren't reported to
+  the Notebooks API.
+
+---
 ## 2025-10-09
 
 ### Feature

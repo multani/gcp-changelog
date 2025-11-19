@@ -1,5 +1,155 @@
 # Container Optimized OS
 
+## 2025-11-17
+
+### Changed
+
+
+
+### cos-dev-129-19386-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.57](https://cos.googlesource.com/third_party/kernel/+/413862f701596dfab09c84e125397b3b845ce69a ) | v27.5.1 | v2.1.4 | [See List](https://storage.googleapis.com/cos-tools/19386.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated app-containers/runc to v1.3.3.
+
+### Feature
+
+Added support for the Lustre 2.14.0\_p224 drivers.
+
+### Fixed
+
+Updated the Google OS Config Agent package to version 20250522.00.
+
+### Fixed
+
+Updated the OS Login package to version 20251022.00.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811473 -> 811420
+
+### Fixed
+
+Backported various TCPDirect networking fixes.
+
+### Changed
+
+
+
+### cos-121-18867-294-25
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/f0525bbb36b011008aab643b94ed1c0a0a074c9a ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.294.25/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated app-containers/runc to v1.2.8.
+
+### Feature
+
+Added support for the Lustre 2.14.0\_p224 drivers.
+
+### Fixed
+
+Backported an upstream commit to fix high CPU usage when
+trying to find suitable blocks in ext4 fs.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811813 -> 811764
+
+### Changed
+
+
+
+### cos-117-18613-439-28
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/abdaaf3810727d7eca8e16a38c8c07011061c021 ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.439.28/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated app-containers/runc to v1.2.8.
+
+### Feature
+
+Added support for the Lustre 2.14.0\_p224 drivers.
+
+### Fixed
+
+Backported an upstream commit to fix high CPU usage when
+trying to find suitable blocks in ext4 fs.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811751 -> 811818
+
+### Changed
+
+
+
+### cos-113-18244-521-23
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/dccb9898113653219d0460cefd449aaddc8bb0b5 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.23/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Updated app-containers/runc to v1.2.8.
+
+### Security
+
+Fixed CVE-2025-40040 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40109 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812054 -> 812007
+
+### Changed
+
+
+
+### cos-125-19216-104-25
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/25173adb441e4e80597a30870c7d83ef1aca88e3 ) | v27.5.1 | v2.1.4 | [See List](https://storage.googleapis.com/cos-tools/19216.104.25/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811458 -> 811512
+
+### Fixed
+
+Backported various TCPDirect networking fixes.
+
+---
 ## 2025-11-14
 
 ### cos-125-19216-104-23

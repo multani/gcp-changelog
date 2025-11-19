@@ -12,6 +12,89 @@
     <id>urn:github:multani:gcp-changelog:bigquery:2025-11-18:feature:0</id>
     <published>2025-11-18T00:00:00+00:00</published>
     <updated>2025-11-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Dataform now lets you automate the creation of
+<a href="https://docs.cloud.google.com/dataform/docs/create-tables#create-iceberg-table">BigLake tables for Apache Iceberg in BigQuery</a>.
+This feature is
+<a href="https://cloud.google.com/products#product-launch-stages">generally available</a>
+(GA).</p>]]></content>
+    <summary>Dataform now allows you to automate the creation of BigLake tables for Apache Iceberg in BigQuery. This new feature is now generally available.</summary>
+    <title>Feature: Dataform now supports Apache Iceberg tables in BigQuery</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-11-18:feature:1</id>
+    <published>2025-11-18T00:00:00+00:00</published>
+    <updated>2025-11-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>BigQuery ML now supports the following
+<a href="https://docs.cloud.google.com/bigquery/docs/generative-ai-overview">generative AI functions</a>:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate"><code>AI.GENERATE</code></a>:
+  generate free text to accomplish a wide range of tasks, such as
+  translation, summarization, and classification, on any unstructured data,
+  including images, audio, video, and documents. It can also perform entity
+  extraction and generate structured output. This function is
+  <a href="https://cloud.google.com/products/#product-launch-stages">generally available</a>
+  (GA).</li>
+<li><a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-embed"><code>AI.EMBED</code></a>:
+  turn text, image, audio, video, or documents into embeddings. This function
+  is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</li>
+<li><a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-similarity"><code>AI.SIMILARITY</code></a>:
+  compute the semantic similarity between pairs of text, pairs of images, or
+  across text and images. This function is in
+  <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</li>
+<li>You can use the
+  <a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate-bool"><code>AI.GENERATE_BOOL</code></a>,
+  <a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate-double"><code>AI.GENERATE_DOUBLE</code></a>,
+  and
+  <a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate-int"><code>AI.GENERATE_INT</code></a>
+  functions to generate scalar values, which are convenient for filtering,
+  scoring, and counting purposes.</li>
+<li>Each of these functions supports
+  <a href="https://docs.cloud.google.com/bigquery/docs/permissions-for-ai-functions#run_generative_ai_queries_with_end-user_credentials">authentication with end-user credentials (EUC)</a>
+  to set up the necessary Vertex AI permissions.</li>
+</ul>
+<p>BigQuery ML now supports the following table-valued generative AI functions:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-generate-table"><code>AI.GENERATE_TABLE</code></a>:
+  generate a table of structured output from unstructured data including
+  text, images, audio, and video.</li>
+<li><a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate-text"><code>AI.GENERATE_TEXT</code></a>
+  is the new, preferred version of <code>ML.GENERATE_TEXT</code>, which has the same
+  functionality but with simplified column output names.</li>
+<li><a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate-embedding"><code>AI.GENERATE_EMBEDDING</code></a>
+  is the new, preferred version of <code>ML.GENERATE_EMBEDDING</code>, which has the same
+  functionality but with simplified column output names.</li>
+<li>These functions are all
+  <a href="https://cloud.google.com/products/#product-launch-stages">generally available</a>
+  (GA).</li>
+</ul>]]></content>
+    <summary>BigQuery ML now offers a suite of powerful generative AI functions, including AI.GENERATE for text and structured output, AI.EMBED for creating embeddings from various data types, and AI.SIMILARITY for semantic comparisons. These enhancements allow for advanced natural language processing and data analysis directly within BigQuery, with support for end-user credentials for secure access. The update also introduces table-valued functions like AI.GENERATE_TABLE and preferred versions of text and embedding generation functions.</summary>
+    <title>Feature: New Generative AI Functions in BigQuery ML</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-11-18:feature:2</id>
+    <published>2025-11-18T00:00:00+00:00</published>
+    <updated>2025-11-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now use <a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-pro">Gemini 3.0</a>
+when you call generative AI functions in BigQuery,
+such as <a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate"><code>AI.GENERATE</code></a>.
+You must use the full global endpoint argument:</p>
+<p><code>https://aiplatform.googleapis.com/v1/projects/PROJECT_ID/locations/global/publishers/google/models/gemini-3-pro-preview</code>.</p>]]></content>
+    <summary>BigQuery now supports Gemini 3.0 for generative AI functions. Use the full global endpoint for integration.</summary>
+    <title>Feature: Gemini 3.0 in BigQuery</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-11-18:feature:3</id>
+    <published>2025-11-18T00:00:00+00:00</published>
+    <updated>2025-11-18T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>You can now <a href="https://docs.cloud.google.com/bigquery/docs/data-insights#modes">publish data insights</a>,
 including query recommendations and
 auto-generated table and column descriptions, to the Dataplex Universal Catalog.

@@ -4,6 +4,68 @@
 
 ### Feature
 
+Dataform now lets you automate the creation of
+[BigLake tables for Apache Iceberg in BigQuery](https://docs.cloud.google.com/dataform/docs/create-tables#create-iceberg-table).
+This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+### Feature
+
+BigQuery ML now supports the following
+[generative AI functions](https://docs.cloud.google.com/bigquery/docs/generative-ai-overview):
+
+* [`AI.GENERATE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate):
+  generate free text to accomplish a wide range of tasks, such as
+  translation, summarization, and classification, on any unstructured data,
+  including images, audio, video, and documents. It can also perform entity
+  extraction and generate structured output. This function is
+  [generally available](https://cloud.google.com/products/#product-launch-stages)
+  (GA).
+* [`AI.EMBED`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-embed):
+  turn text, image, audio, video, or documents into embeddings. This function
+  is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+* [`AI.SIMILARITY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-similarity):
+  compute the semantic similarity between pairs of text, pairs of images, or
+  across text and images. This function is in
+  [Preview](https://cloud.google.com/products/#product-launch-stages).
+* You can use the
+  [`AI.GENERATE_BOOL`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate-bool),
+  [`AI.GENERATE_DOUBLE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate-double),
+  and
+  [`AI.GENERATE_INT`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate-int)
+  functions to generate scalar values, which are convenient for filtering,
+  scoring, and counting purposes.
+* Each of these functions supports
+  [authentication with end-user credentials (EUC)](https://docs.cloud.google.com/bigquery/docs/permissions-for-ai-functions#run_generative_ai_queries_with_end-user_credentials)
+  to set up the necessary Vertex AI permissions.
+
+BigQuery ML now supports the following table-valued generative AI functions:
+
+* [`AI.GENERATE_TABLE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-generate-table):
+  generate a table of structured output from unstructured data including
+  text, images, audio, and video.
+* [`AI.GENERATE_TEXT`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate-text)
+  is the new, preferred version of `ML.GENERATE_TEXT`, which has the same
+  functionality but with simplified column output names.
+* [`AI.GENERATE_EMBEDDING`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate-embedding)
+  is the new, preferred version of `ML.GENERATE_EMBEDDING`, which has the same
+  functionality but with simplified column output names.
+* These functions are all
+  [generally available](https://cloud.google.com/products/#product-launch-stages)
+  (GA).
+
+### Feature
+
+You can now use [Gemini 3.0](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-pro)
+when you call generative AI functions in BigQuery,
+such as [`AI.GENERATE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate).
+You must use the full global endpoint argument:
+
+`https://aiplatform.googleapis.com/v1/projects/PROJECT_ID/locations/global/publishers/google/models/gemini-3-pro-preview`.
+
+### Feature
+
 You can now [publish data insights](https://docs.cloud.google.com/bigquery/docs/data-insights#modes),
 including query recommendations and
 auto-generated table and column descriptions, to the Dataplex Universal Catalog.

@@ -1,5 +1,16 @@
 # Dataform
 
+## 2025-11-18
+
+### Feature
+
+Dataform now lets you automate the creation of
+[BigLake tables for Apache Iceberg in BigQuery](https://docs.cloud.google.com/dataform/docs/create-tables#create-iceberg-table).
+This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2025-11-13
 
 ### Feature

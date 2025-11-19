@@ -1,5 +1,20 @@
 # Cloud Service Mesh
 
+## 2025-11-18
+
+### Announcement
+
+The following rollouts have completed for managed Cloud Service Mesh:
+
+* 1.21.6-asm.4 has rolled out to the rapid release channel.
+* 1.20.8-asm.56 has rolled out to the regular release channel.
+* 1.19.10-asm.52 has rolled out to the stable release channel.
+* CNI and MDPC version 1.20.8-asm.56 has rolled out to all release channels.
+
+While the managed data plane automatically updates Envoy Proxies by restarting
+workloads, you must manually restart any StatefulSets and Jobs.
+
+---
 ## 2025-11-17
 
 ### Announcement
@@ -18,21 +33,21 @@ While the managed data plane automatically updates Envoy Proxies by restarting w
 
 ### Security
 
-**1.27.2-asm.1 is now available for in-cluster Cloud Service Mesh.**
+**1.25.5-asm.9 is now available for in-cluster Cloud Service Mesh.**
 
-This patch release contains fixes for the security vulnerabilities listed in [GCP-2025-064](https://cloud.google.com/service-mesh/docs/security-bulletins#gcp-2025-064). For details on upgrading Cloud Service Mesh, refer to [Upgrade Cloud Service Mesh](https://cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service Mesh v1.27.2-asm.1 uses Envoy v1.35.6.
+This patch release contains fixes for the security vulnerabilities listed in [GCP-2025-064](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2025-064). For details on upgrading Cloud Service Mesh, refer to [Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.25/docs/upgrade/upgrade). Cloud Service Mesh v1.25.5-asm.9 uses Envoy v1.33.12.
 
 ### Security
 
 **1.26.5-asm.1 is now available for in-cluster Cloud Service Mesh.**
 
-This patch release contains fixes for the security vulnerabilities listed in [GCP-2025-064](https://cloud.google.com/service-mesh/docs/security-bulletins#gcp-2025-064). For details on upgrading Cloud Service Mesh, refer to [Upgrade Cloud Service Mesh](https://cloud.google.com/service-mesh/v1.26/docs/upgrade/upgrade). Cloud Service Mesh v1.26.5-asm.1 uses Envoy v1.34.10.
+This patch release contains fixes for the security vulnerabilities listed in [GCP-2025-064](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2025-064). For details on upgrading Cloud Service Mesh, refer to [Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.26/docs/upgrade/upgrade). Cloud Service Mesh v1.26.5-asm.1 uses Envoy v1.34.10.
 
 ### Security
 
-**1.25.5-asm.9 is now available for in-cluster Cloud Service Mesh.**
+**1.27.2-asm.1 is now available for in-cluster Cloud Service Mesh.**
 
-This patch release contains fixes for the security vulnerabilities listed in [GCP-2025-064](https://cloud.google.com/service-mesh/docs/security-bulletins#gcp-2025-064). For details on upgrading Cloud Service Mesh, refer to [Upgrade Cloud Service Mesh](https://cloud.google.com/service-mesh/v1.25/docs/upgrade/upgrade). Cloud Service Mesh v1.25.5-asm.9 uses Envoy v1.33.12.
+This patch release contains fixes for the security vulnerabilities listed in [GCP-2025-064](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2025-064). For details on upgrading Cloud Service Mesh, refer to [Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service Mesh v1.27.2-asm.1 uses Envoy v1.35.6.
 
 ---
 ## 2025-10-27

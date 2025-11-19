@@ -2,10 +2,6 @@
 
 ## 2025-11-17
 
-### Changed
-
-
-
 ### cos-dev-129-19386-0-0
 
 |  |  |  |  |
@@ -39,10 +35,6 @@ Runtime sysctl changes:
 
 Backported various TCPDirect networking fixes.
 
-### Changed
-
-
-
 ### cos-121-18867-294-25
 
 |  |  |  |  |
@@ -68,10 +60,6 @@ trying to find suitable blocks in ext4 fs.
 Runtime sysctl changes:
 
 * Changed: fs.file-max: 811813 -> 811764
-
-### Changed
-
-
 
 ### cos-117-18613-439-28
 
@@ -99,10 +87,6 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 811751 -> 811818
 
-### Changed
-
-
-
 ### cos-113-18244-521-23
 
 |  |  |  |  |
@@ -127,10 +111,6 @@ Fixed CVE-2025-40109 in the Linux kernel.
 Runtime sysctl changes:
 
 * Changed: fs.file-max: 812054 -> 812007
-
-### Changed
-
-
 
 ### cos-125-19216-104-25
 

@@ -2,9 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Resource Manager</title>
   <subtitle>Changelog for Google Cloud product: Resource Manager</subtitle>
-  <updated>2025-11-05T00:00:00+00:00</updated>
+  <updated>2025-11-13T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:resource-manager</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/resource-manager/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:resource-manager:2025-11-13:feature:0</id>
+    <published>2025-11-13T00:00:00+00:00</published>
+    <updated>2025-11-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can use custom constraints with Organization Policy to provide more
+granular control over specific fields for some Dataform resources. For more
+information, see
+<a href="https://docs.cloud.google.com/dataform/docs/create-custom-constraints">Create custom organization policy constraints</a>.
+This feature is
+<a href="https://cloud.google.com/products#product-launch-stages">generally available</a>
+(GA).</p>]]></content>
+    <summary>Organization Policy now supports custom constraints for Dataform, offering granular control over specific resource fields. This generally available feature enhances management capabilities.</summary>
+    <title>Feature: Custom constraints for Dataform resources</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:resource-manager:2025-11-11:changed:0</id>
+    <published>2025-11-11T00:00:00+00:00</published>
+    <updated>2025-11-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The list of Organization Policy Service constraints that are enforced when an organization
+resource is created has changed. The following Google Cloud security baseline
+constraints are enforced for all organizations created on or after May 3, 2024:
+* <code>constraints/iam.managed.disableServiceAccountKeyCreation</code>
+* <code>constraints/iam.managed.disableServiceAccountKeyUpload</code>
+* <code>constraints/iam.automaticIamGrantsForDefaultServiceAccounts</code>
+* <code>constraints/iam.allowedPolicyMemberDomains</code>
+* <code>constraints/essentialcontacts.managed.allowedContactDomains</code>
+* <code>constraints/compute.managed.restrictProtocolForwardingCreationForTypes</code>
+* <code>constraints/storage.uniformBucketLevelAccess</code></p>
+<p>For more information, see <a href="https://docs.cloud.google.com/resource-manager/docs/secure-by-default-organizations">Google Cloud security baseline constraints</a>.</p>]]></content>
+    <summary>New security constraints are now enforced for all organizations created on or after May 3, 2024. These include policies related to service account keys, IAM grants, policy member domains, and more.</summary>
+    <title>Changed: Organization Policy Changes</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

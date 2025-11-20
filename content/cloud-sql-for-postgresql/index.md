@@ -1,5 +1,61 @@
 # Cloud SQL for PostgreSQL
 
+## 2025-11-19
+
+### Feature
+
+The rollout of the following minor version and extension upgrades is complete:
+
+**Minor versions**
+
+* 13.22 is upgraded to 13.23.
+* 14.19 is upgraded to 14.20.
+* 15.14 is upgraded to 15.15.
+* 16.10 is upgraded to 16.11.
+* 17.6 is upgraded to 17.7.
+* 18 is upgraded to 18.1.
+
+**Extensions**
+
+* `Pgvector` is upgraded from 0.8.0 to 0.8.1.
+
+To use these versions of the extensions and plugins, update your instance to
+`[PostgreSQL version].R20251004.01_19`.
+
+If you use a maintenance window, then the updates to the minor, extension, and
+plugin versions happen according to the timeframe that you set in the window.
+Otherwise, the updates occur within the next few weeks.
+
+For more information on checking your maintenance version, see
+[Self-service maintenance](https://docs.cloud.google.com/sql/docs/postgres/self-service-maintenance).
+To find your maintenance window or to manage maintenance updates, see
+[Find and set maintenance windows](https://docs.cloud.google.com/sql/docs/postgres/set-maintenance-window).
+
+### Feature
+
+Cloud SQL for PostgreSQL now supports Vector assist ([Preview](https://cloud.google.com/products#product-launch-stages)).
+
+Vector assist is a Cloud SQL for PostgreSQL extension that simplifies the
+deployment and management of your Cloud SQL vector workloads. It helps you set
+up production-ready vector search capabilities, such as embedding generation,
+query optimization, and index creation.
+
+For more information about vector assist, how it works, and its limitations,
+see [Vector assist overview](https://docs.cloud.google.com/sql/docs/postgres/vector-assist-overview).
+
+---
+## 2025-11-17
+
+### Feature
+
+Cloud SQL now offers a free trial instance for both existing and new Google
+Cloud customers. A free trial instance lets you test advanced Cloud SQL
+capabilities and features for up to 30 days without any financial commitment.
+
+For information about a free trial instance, and its inclusions and conditions,
+see [Free trial instance overview](https://cloud.google.com/sql/docs/postgres/free-trial-instance).
+
+---
 ## 2025-11-14
 
 ### Feature

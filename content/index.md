@@ -61,6 +61,7 @@
 - [Cloud Deploy](cloud-deploy/index.md)
 - [Cloud Endpoints](cloud-endpoints/index.md)
 - [Cloud Healthcare API](cloud-healthcare-api/index.md)
+- [Cloud Hub](cloud-hub/index.md)
 - [Cloud Interconnect](cloud-interconnect/index.md)
 - [Cloud Key Management Service](cloud-key-management-service/index.md)
 - [Cloud Life Sciences](cloud-life-sciences/index.md)

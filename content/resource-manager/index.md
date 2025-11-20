@@ -1,5 +1,36 @@
 # Resource Manager
 
+## 2025-11-13
+
+### Feature
+
+You can use custom constraints with Organization Policy to provide more
+granular control over specific fields for some Dataform resources. For more
+information, see
+[Create custom organization policy constraints](https://docs.cloud.google.com/dataform/docs/create-custom-constraints).
+This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
+## 2025-11-11
+
+### Changed
+
+The list of Organization Policy Service constraints that are enforced when an organization
+resource is created has changed. The following Google Cloud security baseline
+constraints are enforced for all organizations created on or after May 3, 2024:
+\* `constraints/iam.managed.disableServiceAccountKeyCreation`
+\* `constraints/iam.managed.disableServiceAccountKeyUpload`
+\* `constraints/iam.automaticIamGrantsForDefaultServiceAccounts`
+\* `constraints/iam.allowedPolicyMemberDomains`
+\* `constraints/essentialcontacts.managed.allowedContactDomains`
+\* `constraints/compute.managed.restrictProtocolForwardingCreationForTypes`
+\* `constraints/storage.uniformBucketLevelAccess`
+
+For more information, see [Google Cloud security baseline constraints](https://docs.cloud.google.com/resource-manager/docs/secure-by-default-organizations).
+
+---
 ## 2025-11-05
 
 ### Feature

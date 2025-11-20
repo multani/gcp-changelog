@@ -1,6 +1,26 @@
 {
   "name": "Resource Manager",
   "entries": {
+    "2025-11-13": [
+      {
+        "kind": "Feature",
+        "content": "You can use custom constraints with Organization Policy to provide more\ngranular control over specific fields for some Dataform resources. For more\ninformation, see\n[Create custom organization policy constraints](https://docs.cloud.google.com/dataform/docs/create-custom-constraints).\nThis feature is\n[generally available](https://cloud.google.com/products#product-launch-stages)\n(GA).",
+        "summary": {
+          "title": "Custom constraints for Dataform resources",
+          "summary": "Organization Policy now supports custom constraints for Dataform, offering granular control over specific resource fields. This generally available feature enhances management capabilities."
+        }
+      }
+    ],
+    "2025-11-11": [
+      {
+        "kind": "Changed",
+        "content": "The list of Organization Policy Service constraints that are enforced when an organization\nresource is created has changed. The following Google Cloud security baseline\nconstraints are enforced for all organizations created on or after May 3, 2024:\n\\* `constraints/iam.managed.disableServiceAccountKeyCreation`\n\\* `constraints/iam.managed.disableServiceAccountKeyUpload`\n\\* `constraints/iam.automaticIamGrantsForDefaultServiceAccounts`\n\\* `constraints/iam.allowedPolicyMemberDomains`\n\\* `constraints/essentialcontacts.managed.allowedContactDomains`\n\\* `constraints/compute.managed.restrictProtocolForwardingCreationForTypes`\n\\* `constraints/storage.uniformBucketLevelAccess`\n\nFor more information, see [Google Cloud security baseline constraints](https://docs.cloud.google.com/resource-manager/docs/secure-by-default-organizations).",
+        "summary": {
+          "title": "Organization Policy Changes",
+          "summary": "New security constraints are now enforced for all organizations created on or after May 3, 2024. These include policies related to service account keys, IAM grants, policy member domains, and more."
+        }
+      }
+    ],
     "2025-11-05": [
       {
         "kind": "Feature",

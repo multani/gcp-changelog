@@ -1,5 +1,23 @@
 # Backup and DR
 
+## 2025-11-19
+
+### Feature
+
+Added Change Block Tracking (CBT) support for RHEL 8.8 SAP kernels.
+
+### Fixed
+
+* Resolved an issue with SAP HANA datafile validation on scale-out clusters.
+* Fixed a bug causing SAP HANA log backups to fail when the log mode is not 'normal'.
+* Addressed failures in Db2 dump full backups in some environments.
+* Corrected an issue where Db2 restore jobs with the roll-forward option were not applying logs completely.
+
+### Security
+
+Resolved a decryption failure that occurred when accessing KMS keys.
+
+---
 ## 2025-11-07
 
 ### Feature

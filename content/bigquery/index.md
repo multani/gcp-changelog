@@ -1,5 +1,24 @@
 # BigQuery
 
+## 2025-11-19
+
+### Feature
+
+You can now use Gemini in BigQuery to
+[fix and explain errors](https://docs.cloud.google.com/bigquery/docs/write-sql-gemini#fix_and_explain_sql_errors)
+in your SQL queries. This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+You can use the
+[`JSON_FLATTEN` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/json_functions#json_flatten)
+to extract all non-array values that are either directly in the input `JSON`
+value or children of one or more consecutively nested arrays in the input
+`JSON` value. This function is available in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2025-11-18
 
 ### Feature

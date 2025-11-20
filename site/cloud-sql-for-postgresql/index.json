@@ -1,6 +1,34 @@
 {
   "name": "Cloud SQL for PostgreSQL",
   "entries": {
+    "2025-11-19": [
+      {
+        "kind": "Feature",
+        "content": "The rollout of the following minor version and extension upgrades is complete:\n\n**Minor versions**\n\n* 13.22 is upgraded to 13.23.\n* 14.19 is upgraded to 14.20.\n* 15.14 is upgraded to 15.15.\n* 16.10 is upgraded to 16.11.\n* 17.6 is upgraded to 17.7.\n* 18 is upgraded to 18.1.\n\n**Extensions**\n\n* `Pgvector` is upgraded from 0.8.0 to 0.8.1.\n\nTo use these versions of the extensions and plugins, update your instance to\n`[PostgreSQL version].R20251004.01_19`.\n\nIf you use a maintenance window, then the updates to the minor, extension, and\nplugin versions happen according to the timeframe that you set in the window.\nOtherwise, the updates occur within the next few weeks.\n\nFor more information on checking your maintenance version, see\n[Self-service maintenance](https://docs.cloud.google.com/sql/docs/postgres/self-service-maintenance).\nTo find your maintenance window or to manage maintenance updates, see\n[Find and set maintenance windows](https://docs.cloud.google.com/sql/docs/postgres/set-maintenance-window).",
+        "summary": {
+          "title": "New versions available",
+          "summary": "Minor version and extension upgrades are complete."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Cloud SQL for PostgreSQL now supports Vector assist ([Preview](https://cloud.google.com/products#product-launch-stages)).\n\nVector assist is a Cloud SQL for PostgreSQL extension that simplifies the\ndeployment and management of your Cloud SQL vector workloads. It helps you set\nup production-ready vector search capabilities, such as embedding generation,\nquery optimization, and index creation.\n\nFor more information about vector assist, how it works, and its limitations,\nsee [Vector assist overview](https://docs.cloud.google.com/sql/docs/postgres/vector-assist-overview).",
+        "summary": {
+          "title": "Vector assist for Cloud SQL for PostgreSQL",
+          "summary": "Cloud SQL for PostgreSQL now supports Vector assist, a new extension that simplifies the deployment and management of vector workloads. This feature helps you set up production-ready vector search capabilities, including embedding generation, query optimization, and index creation."
+        }
+      }
+    ],
+    "2025-11-17": [
+      {
+        "kind": "Feature",
+        "content": "Cloud SQL now offers a free trial instance for both existing and new Google\nCloud customers. A free trial instance lets you test advanced Cloud SQL\ncapabilities and features for up to 30 days without any financial commitment.\n\nFor information about a free trial instance, and its inclusions and conditions,\nsee [Free trial instance overview](https://cloud.google.com/sql/docs/postgres/free-trial-instance).",
+        "summary": {
+          "title": "Cloud SQL Free Trial",
+          "summary": "Test Cloud SQL capabilities for free for up to 30 days."
+        }
+      }
+    ],
     "2025-11-14": [
       {
         "kind": "Feature",

@@ -2,9 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Backup and DR</title>
   <subtitle>Changelog for Google Cloud product: Backup and DR</subtitle>
-  <updated>2025-11-07T00:00:00+00:00</updated>
+  <updated>2025-11-19T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:backup-and-dr</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/backup-and-dr/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:backup-and-dr:2025-11-19:feature:0</id>
+    <published>2025-11-19T00:00:00+00:00</published>
+    <updated>2025-11-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Added Change Block Tracking (CBT) support for RHEL 8.8 SAP kernels.</p>]]></content>
+    <summary>Change Block Tracking (CBT) is now supported for RHEL 8.8 SAP kernels.</summary>
+    <title>Feature: CBT Support for RHEL 8.8 SAP Kernels</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:backup-and-dr:2025-11-19:fixed:1</id>
+    <published>2025-11-19T00:00:00+00:00</published>
+    <updated>2025-11-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Resolved an issue with SAP HANA datafile validation on scale-out clusters.</li>
+<li>Fixed a bug causing SAP HANA log backups to fail when the log mode is not 'normal'.</li>
+<li>Addressed failures in Db2 dump full backups in some environments.</li>
+<li>Corrected an issue where Db2 restore jobs with the roll-forward option were not applying logs completely.</li>
+</ul>]]></content>
+    <summary>Resolved issues with SAP HANA datafile validation and log backups, and fixed Db2 dump and restore failures.</summary>
+    <title>Fixed: SAP HANA and Db2 Backup Fixes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:backup-and-dr:2025-11-19:security:2</id>
+    <published>2025-11-19T00:00:00+00:00</published>
+    <updated>2025-11-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Resolved a decryption failure that occurred when accessing KMS keys.</p>]]></content>
+    <summary>A decryption failure issue when accessing KMS keys has been resolved.</summary>
+    <title>Security: Decryption Failure Resolved</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

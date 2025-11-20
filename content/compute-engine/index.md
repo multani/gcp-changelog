@@ -4,6 +4,21 @@
 
 ### Feature
 
+**Preview**: The general purpose C4 machine series now supports the following
+machine types on Intel's Xeon 6 processor (Granite Rapids):
+
+* `c4-standard-288-lssd-metal`
+* `c4-highmem-288-lssd-metal`
+
+To learn more, see the [C4 machine series](https://cloud.google.com/compute/docs/general-purpose-machines#c4_series).
+
+For more information, see
+[Machine types that automatically attach Local SSD disks](https://cloud.google.com/compute/docs/disks/local-ssd#lssd_disks_fixed)
+and
+[Bare metal instances on Compute Engine](https://cloud.google.com/compute/docs/instances/bare-metal-instances).
+
+### Feature
+
 You can autoscale a regional managed instance group
 (MIG) that has the target distribution shape set to `ANY` or `ANY_SINGLE_ZONE`.
 These shapes are particularly beneficial for batch workloads.

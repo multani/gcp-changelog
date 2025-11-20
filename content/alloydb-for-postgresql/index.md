@@ -6,6 +6,14 @@
 
 The upper limit of the query plans captured per minute is enhanced to 200. For more information, see [Improve query performance using advanced query insights features for AlloyDB](https://docs.cloud.google.com/alloydb/docs/using-advanced-query-insights#gcloud).
 
+### Feature
+
+You can now [perform self-service maintenance](https://docs.cloud.google.com/alloydb/docs/self-service-maintenance)
+if you need to apply the latest AlloyDB updates to your clusters as soon as
+possible.
+Updating to the latest version can unlock AlloyDB features, apply patches,
+and let you set deny periods.
+
 ---
 ## 2025-11-13
 

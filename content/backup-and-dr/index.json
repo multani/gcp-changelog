@@ -1,6 +1,32 @@
 {
   "name": "Backup and DR",
   "entries": {
+    "2025-11-19": [
+      {
+        "kind": "Feature",
+        "content": "Added Change Block Tracking (CBT) support for RHEL 8.8 SAP kernels.",
+        "summary": {
+          "title": "CBT Support for RHEL 8.8 SAP Kernels",
+          "summary": "Change Block Tracking (CBT) is now supported for RHEL 8.8 SAP kernels."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "* Resolved an issue with SAP HANA datafile validation on scale-out clusters.\n* Fixed a bug causing SAP HANA log backups to fail when the log mode is not 'normal'.\n* Addressed failures in Db2 dump full backups in some environments.\n* Corrected an issue where Db2 restore jobs with the roll-forward option were not applying logs completely.",
+        "summary": {
+          "title": "SAP HANA and Db2 Backup Fixes",
+          "summary": "Resolved issues with SAP HANA datafile validation and log backups, and fixed Db2 dump and restore failures."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Resolved a decryption failure that occurred when accessing KMS keys.",
+        "summary": {
+          "title": "Decryption Failure Resolved",
+          "summary": "A decryption failure issue when accessing KMS keys has been resolved."
+        }
+      }
+    ],
     "2025-11-07": [
       {
         "kind": "Feature",

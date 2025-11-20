@@ -1,5 +1,14 @@
 # Cloud Run
 
+## 2025-11-19
+
+### Feature
+
+You can [deploy source artifacts directly to
+Cloud Run](https://docs.cloud.google.com/run/docs/deploying-source-code#deploy_from_source_without_build),
+bypassing the Cloud Build step. (Preview)
+
+---
 ## 2025-11-17
 
 ### Feature

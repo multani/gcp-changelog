@@ -12,6 +12,14 @@
       },
       {
         "kind": "Feature",
+        "content": "**New standalone queue settings page**\n\nGoogle Cloud CCaaS now includes a standalone **Queue Menu Settings** page for\neach queue in your instance. These pages are separate from (but identical to)\nthe **Queue Menu Settings** pages at **Settings > Queue >\nEdit / View > YOUR\\_QUEUE**. The standalone pages load faster and you\ncan quickly access them in the following ways:\n\n* From the **Queues** page (access this by clicking the **Queues** menu).\n  Links to the standalone **Queue Menu Settings** pages are in the **Queue\n  Name** column.\n* From the **Phone Number Management** pane at **Settings > Call\n  > Phone Numbers > Phone number management**. Links to\n  the **Queue Menu Settings** pages are in the **Assigned Queues / Agents**\n  column.\n* Using a URL that identifies the queue. Example:\n  `https://YOUR_CCAAS_HOST/queues/QUEUE_ID/LANGUAGE_CODE`\n\nLinks to standalone **Queue Menu Settings** pages are active only for users with\npermissions to view queue settings. For more information, see [Access queue menu\nsettings](https://docs.cloud.google.com/contact-center/ccai-platform/docs/access-queue-menu-settings).",
+        "summary": {
+          "title": "Standalone Queue Settings Page",
+          "summary": "A new standalone Queue Menu Settings page is now available for each queue, offering faster access and improved usability. You can find links to these pages from the Queues page or the Phone Number Management pane."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "**Virtual task assistant support in the chat platform API**\n\nThe chat platform API now provides improved support for virtual task assistants.\nWhen an agent transfers a chat to a virtual task assistant, your application can\nsend and receive messages from the virtual task assistant. Enhanced webhooks\nprovide the virtual task assistant's message content instantly, streamlining\nprivate, automated workflows like collecting sensitive information.\n\nDocumentation is coming soon.",
         "summary": {
           "title": "Virtual Task Assistants in Chat Platform API",
@@ -28,10 +36,34 @@
       },
       {
         "kind": "Feature",
+        "content": "**Restrict the transfer of email sessions to a queue**\n\nYou can now configure queues to prevent them from receiving email session\ntransfers.\n\nAdministrators: A new **Allow incoming Email Transfers** toggle appears in the\nsettings pane at **Settings > Queue > Email >\nEdit / View > YOUR\\_QUEUE**.\n\nFor more information, see [Transfer email sessions to a queue](https://docs.cloud.google.com/contact-center/ccai-platform/docs/let-agents-transfer-email-sessions-to-a-queue).",
+        "summary": {
+          "title": "Restrict email session transfers",
+          "summary": "You can now stop email sessions from being transferred to specific queues by using a new setting."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Alvaria Advanced List Management integration with outbound dialer**\n\nYou can now integrate Alvaria Advanced List Management (ALM) with the outbound\ndialer. This lets you combine Alvaria's list and campaign management\ncapabilities with the dialing capability of Google Cloud CCaaS. This integration\nexchanges contact and result files through a shared Cloud Storage bucket.\n\nCapabilities:\n\n* Multi-tenancy support: helps ensure that each tenant's data remains separate\n  and secure\n* Flexible delimiter support: supports files using comma, pipe, tab, or\n  semicolon delimiters\n\nFor more information, see [Alvaria Advanced List Management\nintegration](https://docs.cloud.google.com/contact-center/ccai-platform/docs/alvaria-alm).",
+        "summary": {
+          "title": "Alvaria Advanced List Management integration with outbound dialer",
+          "summary": "Integrate Alvaria Advanced List Management with the outbound dialer to combine Alvaria's list and campaign management capabilities with Google Cloud CCaaS dialing. This integration exchanges contact and result files through a shared Cloud Storage bucket and supports multi-tenancy and flexible delimiter options."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "**Chat check-in**\n\nUsers of the web SDK can use chat check-in to help ensure that end-users are\npresent and ready to engage before connecting them to a human agent. This helps\nto reduce the time lost when agents wait for end-users who have abandoned a\nchat.\n\nWhen an end-user reaches the front of the chat queue, the system asks if they're\nstill available. If there's no response after the amount of time you configure,\nthe system removes the end-user from the queue. If the end-user rejoins the\nqueue, you can configure whether they rejoin at the front or the back of the\nqueue.\n\nDocumentation is coming soon.",
         "summary": {
           "title": "Chat check-in",
           "summary": "A new feature to ensure end-users are present before connecting them to a human agent, reducing wasted agent time. Users can configure response times and queue rejoin behavior. Documentation is forthcoming."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Email signatures**\n\nYou can now define standardized signatures for all outgoing emails sent from a\nspecific queue.\n\nAdministrators: A new **Email Signatures** section appears in the settings pane\nat **Settings > Queue > Email > Edit / View\n> YOUR\\_QUEUE**.\n\nFor more information, see [Email signatures](https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-channel-config#email-signatures).",
+        "summary": {
+          "title": "Email Signatures",
+          "summary": "Standardized email signatures can now be defined for all outgoing emails from a specific queue."
         }
       },
       {
@@ -48,6 +80,22 @@
         "summary": {
           "title": "New chat platform API endpoint for media files",
           "summary": "You can now use the new chat platform API endpoint to retrieve media files sent by agents. This allows your custom chat application to display these files to end-users during a chat session."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Dial pad improvements**\n\nThe dial pad in the agent adapter now includes the following:\n\n* Country code selector\n* Outbound number, Language, and Queue selectors\n\nIf you use a CRM with flexible outbound dialing turned on, the **Outbound\nnumber** and **Language** selectors appear in the **Outbound call details**\nscreen.\n\nDocumentation is coming soon.",
+        "summary": {
+          "title": "Dial pad improvements",
+          "summary": "New selectors for country code, outbound number, language, and queue have been added to the agent dial pad."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS 3.42**\n\nWe've released version 3.42 of Google Cloud CCaaS.\n\nThe timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see [Deployment schedules](https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).",
+        "summary": {
+          "title": "Google Cloud CCaaS 3.42 Release",
+          "summary": "Version 3.42 of Google Cloud CCaaS has been released. The update timing for your instance is determined by your chosen deployment schedule."
         }
       }
     ],

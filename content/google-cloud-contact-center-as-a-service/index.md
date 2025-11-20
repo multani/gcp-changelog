@@ -30,6 +30,30 @@ redaction](https://docs.cloud.google.com/contact-center/ccai-platform/docs/Chat_
 
 ### Feature
 
+**New standalone queue settings page**
+
+Google Cloud CCaaS now includes a standalone **Queue Menu Settings** page for
+each queue in your instance. These pages are separate from (but identical to)
+the **Queue Menu Settings** pages at **Settings > Queue >
+Edit / View > YOUR\_QUEUE**. The standalone pages load faster and you
+can quickly access them in the following ways:
+
+* From the **Queues** page (access this by clicking the **Queues** menu).
+  Links to the standalone **Queue Menu Settings** pages are in the **Queue
+  Name** column.
+* From the **Phone Number Management** pane at **Settings > Call
+  > Phone Numbers > Phone number management**. Links to
+  the **Queue Menu Settings** pages are in the **Assigned Queues / Agents**
+  column.
+* Using a URL that identifies the queue. Example:
+  `https://YOUR_CCAAS_HOST/queues/QUEUE_ID/LANGUAGE_CODE`
+
+Links to standalone **Queue Menu Settings** pages are active only for users with
+permissions to view queue settings. For more information, see [Access queue menu
+settings](https://docs.cloud.google.com/contact-center/ccai-platform/docs/access-queue-menu-settings).
+
+### Feature
+
 **Virtual task assistant support in the chat platform API**
 
 The chat platform API now provides improved support for virtual task assistants.
@@ -90,6 +114,38 @@ We addressed the following issues in this release:
 
 ### Feature
 
+**Restrict the transfer of email sessions to a queue**
+
+You can now configure queues to prevent them from receiving email session
+transfers.
+
+Administrators: A new **Allow incoming Email Transfers** toggle appears in the
+settings pane at **Settings > Queue > Email >
+Edit / View > YOUR\_QUEUE**.
+
+For more information, see [Transfer email sessions to a queue](https://docs.cloud.google.com/contact-center/ccai-platform/docs/let-agents-transfer-email-sessions-to-a-queue).
+
+### Feature
+
+**Alvaria Advanced List Management integration with outbound dialer**
+
+You can now integrate Alvaria Advanced List Management (ALM) with the outbound
+dialer. This lets you combine Alvaria's list and campaign management
+capabilities with the dialing capability of Google Cloud CCaaS. This integration
+exchanges contact and result files through a shared Cloud Storage bucket.
+
+Capabilities:
+
+* Multi-tenancy support: helps ensure that each tenant's data remains separate
+  and secure
+* Flexible delimiter support: supports files using comma, pipe, tab, or
+  semicolon delimiters
+
+For more information, see [Alvaria Advanced List Management
+integration](https://docs.cloud.google.com/contact-center/ccai-platform/docs/alvaria-alm).
+
+### Feature
+
 **Chat check-in**
 
 Users of the web SDK can use chat check-in to help ensure that end-users are
@@ -104,6 +160,19 @@ queue, you can configure whether they rejoin at the front or the back of the
 queue.
 
 Documentation is coming soon.
+
+### Feature
+
+**Email signatures**
+
+You can now define standardized signatures for all outgoing emails sent from a
+specific queue.
+
+Administrators: A new **Email Signatures** section appears in the settings pane
+at **Settings > Queue > Email > Edit / View
+> YOUR\_QUEUE**.
+
+For more information, see [Email signatures](https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-channel-config#email-signatures).
 
 ### Feature
 
@@ -142,6 +211,29 @@ New endpoint: `/apps/api/v1/chats/CHAT_ID/media/MEDIA_ID`
 
 For more information, see [Agent file attachments with the chat platform
 API](https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-attachments-chat-api).
+
+### Feature
+
+**Dial pad improvements**
+
+The dial pad in the agent adapter now includes the following:
+
+* Country code selector
+* Outbound number, Language, and Queue selectors
+
+If you use a CRM with flexible outbound dialing turned on, the **Outbound
+number** and **Language** selectors appear in the **Outbound call details**
+screen.
+
+Documentation is coming soon.
+
+### Announcement
+
+**Google Cloud CCaaS 3.42**
+
+We've released version 3.42 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see [Deployment schedules](https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
 
 ---
 ## 2025-11-17

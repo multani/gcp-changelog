@@ -49,6 +49,38 @@ redaction</a>.</p>]]></content>
     <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:feature:1</id>
     <published>2025-11-19T00:00:00+00:00</published>
     <updated>2025-11-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>New standalone queue settings page</strong></p>
+<p>Google Cloud CCaaS now includes a standalone <strong>Queue Menu Settings</strong> page for
+each queue in your instance. These pages are separate from (but identical to)
+the <strong>Queue Menu Settings</strong> pages at <strong>Settings &gt; Queue &gt;
+Edit / View &gt; YOUR_QUEUE</strong>. The standalone pages load faster and you
+can quickly access them in the following ways:</p>
+<ul>
+<li>From the <strong>Queues</strong> page (access this by clicking the <strong>Queues</strong> menu).
+  Links to the standalone <strong>Queue Menu Settings</strong> pages are in the <strong>Queue
+  Name</strong> column.</li>
+<li>From the <strong>Phone Number Management</strong> pane at **Settings &gt; Call<blockquote>
+<p>Phone Numbers &gt; Phone number management<strong>. Links to
+  the </strong>Queue Menu Settings<strong> pages are in the </strong>Assigned Queues / Agents**
+  column.</p>
+</blockquote>
+</li>
+<li>Using a URL that identifies the queue. Example:
+  <code>https://YOUR_CCAAS_HOST/queues/QUEUE_ID/LANGUAGE_CODE</code></li>
+</ul>
+<p>Links to standalone <strong>Queue Menu Settings</strong> pages are active only for users with
+permissions to view queue settings. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/access-queue-menu-settings">Access queue menu
+settings</a>.</p>]]></content>
+    <summary>A new standalone Queue Menu Settings page is now available for each queue, offering faster access and improved usability. You can find links to these pages from the Queues page or the Phone Number Management pane.</summary>
+    <title>Feature: Standalone Queue Settings Page</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:feature:2</id>
+    <published>2025-11-19T00:00:00+00:00</published>
+    <updated>2025-11-19T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Virtual task assistant support in the chat platform API</strong></p>
 <p>The chat platform API now provides improved support for virtual task assistants.
 When an agent transfers a chat to a virtual task assistant, your application can
@@ -63,7 +95,7 @@ private, automated workflows like collecting sensitive information.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:fixed:2</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:fixed:3</id>
     <published>2025-11-19T00:00:00+00:00</published>
     <updated>2025-11-19T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>We addressed the following issues in this release:</p>
@@ -119,7 +151,48 @@ private, automated workflows like collecting sensitive information.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:feature:3</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:feature:4</id>
+    <published>2025-11-19T00:00:00+00:00</published>
+    <updated>2025-11-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Restrict the transfer of email sessions to a queue</strong></p>
+<p>You can now configure queues to prevent them from receiving email session
+transfers.</p>
+<p>Administrators: A new <strong>Allow incoming Email Transfers</strong> toggle appears in the
+settings pane at <strong>Settings &gt; Queue &gt; Email &gt;
+Edit / View &gt; YOUR_QUEUE</strong>.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/let-agents-transfer-email-sessions-to-a-queue">Transfer email sessions to a queue</a>.</p>]]></content>
+    <summary>You can now stop email sessions from being transferred to specific queues by using a new setting.</summary>
+    <title>Feature: Restrict email session transfers</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:feature:5</id>
+    <published>2025-11-19T00:00:00+00:00</published>
+    <updated>2025-11-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Alvaria Advanced List Management integration with outbound dialer</strong></p>
+<p>You can now integrate Alvaria Advanced List Management (ALM) with the outbound
+dialer. This lets you combine Alvaria's list and campaign management
+capabilities with the dialing capability of Google Cloud CCaaS. This integration
+exchanges contact and result files through a shared Cloud Storage bucket.</p>
+<p>Capabilities:</p>
+<ul>
+<li>Multi-tenancy support: helps ensure that each tenant's data remains separate
+  and secure</li>
+<li>Flexible delimiter support: supports files using comma, pipe, tab, or
+  semicolon delimiters</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/alvaria-alm">Alvaria Advanced List Management
+integration</a>.</p>]]></content>
+    <summary>Integrate Alvaria Advanced List Management with the outbound dialer to combine Alvaria's list and campaign management capabilities with Google Cloud CCaaS dialing. This integration exchanges contact and result files through a shared Cloud Storage bucket and supports multi-tenancy and flexible delimiter options.</summary>
+    <title>Feature: Alvaria Advanced List Management integration with outbound dialer</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:feature:6</id>
     <published>2025-11-19T00:00:00+00:00</published>
     <updated>2025-11-19T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Chat check-in</strong></p>
@@ -140,7 +213,26 @@ queue.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:feature:4</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:feature:7</id>
+    <published>2025-11-19T00:00:00+00:00</published>
+    <updated>2025-11-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Email signatures</strong></p>
+<p>You can now define standardized signatures for all outgoing emails sent from a
+specific queue.</p>
+<p>Administrators: A new <strong>Email Signatures</strong> section appears in the settings pane
+at **Settings &gt; Queue &gt; Email &gt; Edit / View</p>
+<blockquote>
+<p>YOUR_QUEUE**.</p>
+</blockquote>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-channel-config#email-signatures">Email signatures</a>.</p>]]></content>
+    <summary>Standardized email signatures can now be defined for all outgoing emails from a specific queue.</summary>
+    <title>Feature: Email Signatures</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:feature:8</id>
     <published>2025-11-19T00:00:00+00:00</published>
     <updated>2025-11-19T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Virtual agent aliases</strong></p>
@@ -174,7 +266,7 @@ aliases</a>.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:feature:5</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:feature:9</id>
     <published>2025-11-19T00:00:00+00:00</published>
     <updated>2025-11-19T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>New chat platform API endpoint for getting media files</strong></p>
@@ -186,6 +278,39 @@ can then make the media file available to the end-user during the session.</p>
 API</a>.</p>]]></content>
     <summary>You can now use the new chat platform API endpoint to retrieve media files sent by agents. This allows your custom chat application to display these files to end-users during a chat session.</summary>
     <title>Feature: New chat platform API endpoint for media files</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:feature:10</id>
+    <published>2025-11-19T00:00:00+00:00</published>
+    <updated>2025-11-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Dial pad improvements</strong></p>
+<p>The dial pad in the agent adapter now includes the following:</p>
+<ul>
+<li>Country code selector</li>
+<li>Outbound number, Language, and Queue selectors</li>
+</ul>
+<p>If you use a CRM with flexible outbound dialing turned on, the <strong>Outbound
+number</strong> and <strong>Language</strong> selectors appear in the <strong>Outbound call details</strong>
+screen.</p>
+<p>Documentation is coming soon.</p>]]></content>
+    <summary>New selectors for country code, outbound number, language, and queue have been added to the agent dial pad.</summary>
+    <title>Feature: Dial pad improvements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:announcement:11</id>
+    <published>2025-11-19T00:00:00+00:00</published>
+    <updated>2025-11-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS 3.42</strong></p>
+<p>We've released version 3.42 of Google Cloud CCaaS.</p>
+<p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>]]></content>
+    <summary>Version 3.42 of Google Cloud CCaaS has been released. The update timing for your instance is determined by your chosen deployment schedule.</summary>
+    <title>Announcement: Google Cloud CCaaS 3.42 Release</title>
   </entry>
   <entry>
     <author>

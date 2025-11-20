@@ -1,5 +1,71 @@
 # Google SecOps Marketplace
 
+## 2025-11-19
+
+### Feature
+
+**Google Threat Intelligence**: Version 6.0
+
+* The following new action has been added:
+
+  + **Get Related Associations**
+
+### Changed
+
+**Splunk**: Version 59.0
+
+* Refactored the following integration items to use the new API endpoints:
+
+  + **Ping**
+  + **Get Host Events**
+  + **Splunk Notable Events Connector**
+  + **Sync Splunk ES Closed Events**
+  + **Sync Splunk ES Comments**
+
+### Changed
+
+**Cofense Triage**: Version 14.0
+
+* Added the ability to filter based on category to the following connector:
+
+  + **Cofense Triage - Reports Connector**
+
+### Changed
+
+**Google Chronicle**: Version 68.0
+
+* Improved error handling in the following jobs:
+
+  + **Google Chronicle Sync Job**
+  + **Google Chronicle Alerts Creator Job**
+
+### Changed
+
+**Okta**: Version 11.0
+
+* Updated the pagination processing mechanism in the following actions:
+
+  + **List Users**
+  + **Add Group**
+  + **Get Group**
+  + **List Providers**
+
+### Changed
+
+**SentinelOneV2**: Version 44.0
+
+* Updated the mechanism for fetching agent information in the following actions:
+
+  + **Disconnect Agent From Network**
+  + **Enrich Endpoint**
+  + **Get Agent Status**
+  + **Get Application List For Endpoint**
+  + **Get Events For Endpoint Hours Back**
+  + **Initiate Full Scan**
+  + **Move Agents**
+  + **Reconnect Agent To The Network**
+
+---
 ## 2025-11-12
 
 ### Feature

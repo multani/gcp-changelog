@@ -1,5 +1,149 @@
 # Google Cloud Contact Center as a Service
 
+## 2025-11-19
+
+### Feature
+
+**Sensitive data redaction**
+
+You can now automatically identify and redact sensitive data from chat
+conversations, both in real time and in transcripts. This helps to prevent
+unauthorized people from accessing sensitive information and can help you comply
+with security standards. You can configure redaction for incoming messages from
+end-users, outgoing messages from agents, and session notes. You can also let
+agents temporarily view redacted messages during a session. This capability is
+available for the web SDK.
+
+Administrators: You can find the settings for configuring automatic redaction in
+the following locations:
+
+* To add a redaction platform: **Settings > Developer Settings
+  > Redaction Platform**
+* To configure automatic redaction at the global level: **Settings
+  > Chat > Automatic Redaction**
+* To configure automatic redaction at the queue level: **Settings >
+  Queue > Web > Edit / View > SELECT\_QUEUE
+  > Automatic Redaction**
+
+For more information, see [Sensitive data
+redaction](https://docs.cloud.google.com/contact-center/ccai-platform/docs/Chat_Settings_and_Features#sensitive-data-redaction).
+
+### Feature
+
+**Virtual task assistant support in the chat platform API**
+
+The chat platform API now provides improved support for virtual task assistants.
+When an agent transfers a chat to a virtual task assistant, your application can
+send and receive messages from the virtual task assistant. Enhanced webhooks
+provide the virtual task assistant's message content instantly, streamlining
+private, automated workflows like collecting sensitive information.
+
+Documentation is coming soon.
+
+### Fixed
+
+We addressed the following issues in this release:
+
+* Fixed an issue where Agent Assist generated incomplete or
+  inaccurate chat summaries.
+* Fixed inaccurate reporting for chats escalated by a virtual agent to a
+  human agent.
+* Fixed incorrect labeling and routing of French voicemails to the
+  English-language queue in the agent adapter.
+* Fixed the missed response timer, which added an extra 30 minutes to the
+  calculated time.
+* Fixed a significant slowdown in background job processing.
+* Fixed an issue where the global default voicemail greeting failed to save
+  when applied to an individual user's settings.
+* Fixed an issue that caused agents to be assigned a call and a chat at the
+  same time, even when this was disabled in the settings.
+* Fixed an issue that prevented users from testing Android push notifications.
+* Fixed an issue where editing a phone number's settings on the **Phone Number
+  Management** page removed it from queues where it was assigned for outbound
+  calls.
+* Fixed an issue that caused a **Custom roles permissions is invalid** error
+  when attempting to save a change to the **Audit Dashboard** permission in
+  a custom role.
+* Fixed an issue that caused the handle time for queued chats to display an
+  incorrect value, particularly after a session transfer.
+* Fixed an issue where the call ID was missing in the **Activity Timeline**
+  report.
+* Fixed an issue where the **Auto answered** label on a chat tab in the chat
+  adapter persisted even after an agent opened the chat.
+* Fixed an issue where the agent directory in the call adapter appeared empty
+  when an agent attempted to transfer a call.
+* Fixed an issue that prevented an agent from adding another agent to a call
+  using their extension number.
+* Fixed an agent desktop issue where unsigned data appeared before signed data
+  in the **Session Data Feed** panel. This was inconsistent with the display
+  order in the agent adapter.
+* Fixed an issue at **Settings > Developer Settings >
+  CRM > Custom CRM > CRM lookup method >
+  Custom Link**. In the **Custom link CRM lookup** section, we replaced the
+  incorrect `{Custom UID}` variable name with `{CUID}` in the UI text.
+* Fixed a web SDK issue where the **Select an option** channel selection
+  screen appeared unnecessarily when a chat started, when the Direct Action
+  Parameter was enabled.
+* Improved web SDK page loading speed.
+* Fixed a web SDK issue where external deflection links weren't working
+  correctly.
+
+### Feature
+
+**Chat check-in**
+
+Users of the web SDK can use chat check-in to help ensure that end-users are
+present and ready to engage before connecting them to a human agent. This helps
+to reduce the time lost when agents wait for end-users who have abandoned a
+chat.
+
+When an end-user reaches the front of the chat queue, the system asks if they're
+still available. If there's no response after the amount of time you configure,
+the system removes the end-user from the queue. If the end-user rejoins the
+queue, you can configure whether they rejoin at the front or the back of the
+queue.
+
+Documentation is coming soon.
+
+### Feature
+
+**Virtual agent aliases**
+
+You can assign a public-facing alias to each of your virtual agents. When all of
+your virtual agents have the same alias, they each appear to have the same name
+to end-users. This gives the impression that a single virtual agent is handling
+a session even if the session is transferred between virtual agents. You can
+assign virtual agent aliases to both support agents and virtual task assistants.
+Virtual agent aliases are used in the web SDK, the mobile SDKs, in system
+messages, and in transcripts.
+
+Administrators: A new **Virtual Agent Alias** checkbox appears in the following
+dialogs:
+
+* The **Add a Customer Support Agent** dialog at **Settings >
+  Virtual Agent > Virtual Agents > Add virtual agent
+  > Customer Support**
+* The **Add a Virtual Task Assistant** dialog at **Settings >
+  Virtual Agent > Virtual Agents > Add virtual agent
+  > Task Assistant**
+
+For more information, see [Virtual agent
+aliases](https://docs.cloud.google.com/contact-center/ccai-platform/docs/use-va-aliases).
+
+### Feature
+
+**New chat platform API endpoint for getting media files**
+
+You can use the new chat platform API endpoint to get the media file that an
+agent sends to an end-user during a chat session. Your custom chat application
+can then make the media file available to the end-user during the session.
+
+New endpoint: `/apps/api/v1/chats/CHAT_ID/media/MEDIA_ID`
+
+For more information, see [Agent file attachments with the chat platform
+API](https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-attachments-chat-api).
+
+---
 ## 2025-11-17
 
 ### Announcement

@@ -1,5 +1,12 @@
 # Looker
 
+## 2025-11-19
+
+### Feature
+
+Now available in preview, the [**Self-service Explore**](https://docs.cloud.google.com/looker/docs/exploring-self-service) feature lets Looker users upload CSV, XLS, and XLSX files to Looker and then query and visualize the data in a Looker Explore without needing to configure a LookML model or set up Git version control.
+
+---
 ## 2025-11-17
 
 ### Feature

@@ -1,6 +1,56 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
+    "2025-11-19": [
+      {
+        "kind": "Feature",
+        "content": "**Sensitive data redaction**\n\nYou can now automatically identify and redact sensitive data from chat\nconversations, both in real time and in transcripts. This helps to prevent\nunauthorized people from accessing sensitive information and can help you comply\nwith security standards. You can configure redaction for incoming messages from\nend-users, outgoing messages from agents, and session notes. You can also let\nagents temporarily view redacted messages during a session. This capability is\navailable for the web SDK.\n\nAdministrators: You can find the settings for configuring automatic redaction in\nthe following locations:\n\n* To add a redaction platform: **Settings > Developer Settings\n  > Redaction Platform**\n* To configure automatic redaction at the global level: **Settings\n  > Chat > Automatic Redaction**\n* To configure automatic redaction at the queue level: **Settings >\n  Queue > Web > Edit / View > SELECT\\_QUEUE\n  > Automatic Redaction**\n\nFor more information, see [Sensitive data\nredaction](https://docs.cloud.google.com/contact-center/ccai-platform/docs/Chat_Settings_and_Features#sensitive-data-redaction).",
+        "summary": {
+          "title": "Automatic redaction of sensitive data",
+          "summary": "Prevent unauthorized access to sensitive information by automatically redacting it in chat conversations. Configure redaction for incoming/outgoing messages and session notes. Agents can temporarily view redacted messages during a session. Available for the web SDK."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Virtual task assistant support in the chat platform API**\n\nThe chat platform API now provides improved support for virtual task assistants.\nWhen an agent transfers a chat to a virtual task assistant, your application can\nsend and receive messages from the virtual task assistant. Enhanced webhooks\nprovide the virtual task assistant's message content instantly, streamlining\nprivate, automated workflows like collecting sensitive information.\n\nDocumentation is coming soon.",
+        "summary": {
+          "title": "Virtual Task Assistants in Chat Platform API",
+          "summary": "The chat platform API now supports virtual task assistants, allowing your application to exchange messages with them when a chat is transferred. Enhanced webhooks deliver virtual task assistant messages instantly, enabling automated workflows for sensitive data collection. Documentation will be available soon."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "We addressed the following issues in this release:\n\n* Fixed an issue where Agent Assist generated incomplete or\n  inaccurate chat summaries.\n* Fixed inaccurate reporting for chats escalated by a virtual agent to a\n  human agent.\n* Fixed incorrect labeling and routing of French voicemails to the\n  English-language queue in the agent adapter.\n* Fixed the missed response timer, which added an extra 30 minutes to the\n  calculated time.\n* Fixed a significant slowdown in background job processing.\n* Fixed an issue where the global default voicemail greeting failed to save\n  when applied to an individual user's settings.\n* Fixed an issue that caused agents to be assigned a call and a chat at the\n  same time, even when this was disabled in the settings.\n* Fixed an issue that prevented users from testing Android push notifications.\n* Fixed an issue where editing a phone number's settings on the **Phone Number\n  Management** page removed it from queues where it was assigned for outbound\n  calls.\n* Fixed an issue that caused a **Custom roles permissions is invalid** error\n  when attempting to save a change to the **Audit Dashboard** permission in\n  a custom role.\n* Fixed an issue that caused the handle time for queued chats to display an\n  incorrect value, particularly after a session transfer.\n* Fixed an issue where the call ID was missing in the **Activity Timeline**\n  report.\n* Fixed an issue where the **Auto answered** label on a chat tab in the chat\n  adapter persisted even after an agent opened the chat.\n* Fixed an issue where the agent directory in the call adapter appeared empty\n  when an agent attempted to transfer a call.\n* Fixed an issue that prevented an agent from adding another agent to a call\n  using their extension number.\n* Fixed an agent desktop issue where unsigned data appeared before signed data\n  in the **Session Data Feed** panel. This was inconsistent with the display\n  order in the agent adapter.\n* Fixed an issue at **Settings > Developer Settings >\n  CRM > Custom CRM > CRM lookup method >\n  Custom Link**. In the **Custom link CRM lookup** section, we replaced the\n  incorrect `{Custom UID}` variable name with `{CUID}` in the UI text.\n* Fixed a web SDK issue where the **Select an option** channel selection\n  screen appeared unnecessarily when a chat started, when the Direct Action\n  Parameter was enabled.\n* Improved web SDK page loading speed.\n* Fixed a web SDK issue where external deflection links weren't working\n  correctly.",
+        "summary": {
+          "title": "Resolved various issues",
+          "summary": "This release addresses several bugs and inaccuracies, including improvements to chat summaries, reporting accuracy, voicemail handling, and background job processing. We have also resolved issues related to agent assignment, push notifications, phone number settings, custom role permissions, and display inconsistencies in the agent desktop."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Chat check-in**\n\nUsers of the web SDK can use chat check-in to help ensure that end-users are\npresent and ready to engage before connecting them to a human agent. This helps\nto reduce the time lost when agents wait for end-users who have abandoned a\nchat.\n\nWhen an end-user reaches the front of the chat queue, the system asks if they're\nstill available. If there's no response after the amount of time you configure,\nthe system removes the end-user from the queue. If the end-user rejoins the\nqueue, you can configure whether they rejoin at the front or the back of the\nqueue.\n\nDocumentation is coming soon.",
+        "summary": {
+          "title": "Chat check-in",
+          "summary": "A new feature to ensure end-users are present before connecting them to a human agent, reducing wasted agent time. Users can configure response times and queue rejoin behavior. Documentation is forthcoming."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Virtual agent aliases**\n\nYou can assign a public-facing alias to each of your virtual agents. When all of\nyour virtual agents have the same alias, they each appear to have the same name\nto end-users. This gives the impression that a single virtual agent is handling\na session even if the session is transferred between virtual agents. You can\nassign virtual agent aliases to both support agents and virtual task assistants.\nVirtual agent aliases are used in the web SDK, the mobile SDKs, in system\nmessages, and in transcripts.\n\nAdministrators: A new **Virtual Agent Alias** checkbox appears in the following\ndialogs:\n\n* The **Add a Customer Support Agent** dialog at **Settings >\n  Virtual Agent > Virtual Agents > Add virtual agent\n  > Customer Support**\n* The **Add a Virtual Task Assistant** dialog at **Settings >\n  Virtual Agent > Virtual Agents > Add virtual agent\n  > Task Assistant**\n\nFor more information, see [Virtual agent\naliases](https://docs.cloud.google.com/contact-center/ccai-platform/docs/use-va-aliases).",
+        "summary": {
+          "title": "Virtual Agent Aliases",
+          "summary": "Assign a public-facing alias to your virtual agents to give the impression of a single agent handling sessions, even when transferred. This feature is available for both support agents and task assistants and is integrated into the web SDK, mobile SDKs, system messages, and transcripts."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**New chat platform API endpoint for getting media files**\n\nYou can use the new chat platform API endpoint to get the media file that an\nagent sends to an end-user during a chat session. Your custom chat application\ncan then make the media file available to the end-user during the session.\n\nNew endpoint: `/apps/api/v1/chats/CHAT_ID/media/MEDIA_ID`\n\nFor more information, see [Agent file attachments with the chat platform\nAPI](https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-attachments-chat-api).",
+        "summary": {
+          "title": "New chat platform API endpoint for media files",
+          "summary": "You can now use the new chat platform API endpoint to retrieve media files sent by agents. This allows your custom chat application to display these files to end-users during a chat session."
+        }
+      }
+    ],
     "2025-11-17": [
       {
         "kind": "Announcement",
@@ -40,104 +90,6 @@
         "summary": {
           "title": "Optimized dashboards",
           "summary": "Faster loading and refresh times for real-time dashboards."
-        }
-      }
-    ],
-    "2025-11-14": [
-      {
-        "kind": "Fixed",
-        "content": "We addressed the following issues in this release:\n\n* Fixed an issue where Agent Assist generated incomplete or\n  inaccurate chat summaries.\n* Fixed inaccurate reporting for chats escalated by a virtual agent to a\n  human agent.\n* Fixed incorrect labeling and routing of French voicemails to the\n  English-language queue in the agent adapter.\n* Fixed the missed response timer, which added an extra 30 minutes to the\n  calculated time.\n* Fixed a significant slowdown in background job processing.\n* Fixed an issue where the global default voicemail greeting failed to save\n  when applied to an individual user's settings.\n* Fixed an issue that caused agents to be assigned a call and a chat at the\n  same time, even when this was disabled in the settings.\n* Fixed an issue that prevented users from testing Android push notifications.\n* Fixed an issue where editing a phone number's settings on the **Phone Number\n  Management** page removed it from queues where it was assigned for outbound\n  calls.\n* Fixed an issue that caused a **Custom roles permissions is invalid** error\n  when attempting to save a change to the **Audit Dashboard** permission in\n  a custom role.\n* Fixed an issue that caused the handle time for queued chats to display an\n  incorrect value, particularly after a session transfer.\n* Fixed an issue where the call ID was missing in the **Activity Timeline**\n  report.\n* Fixed an issue where the **Auto answered** label on a chat tab in the chat\n  adapter persisted even after an agent opened the chat.\n* Fixed an issue where the agent directory in the call adapter appeared empty\n  when an agent attempted to transfer a call.\n* Fixed an issue that prevented an agent from adding another agent to a call\n  using their extension number.\n* Fixed an agent desktop issue where unsigned data appeared before signed data\n  in the **Session Data Feed** panel. This was inconsistent with the display\n  order in the agent adapter.\n* Fixed an issue at **Settings > Developer Settings >\n  CRM > Custom CRM > CRM lookup method >\n  Custom Link**. In the **Custom link CRM lookup** section, we replaced the\n  incorrect `{Custom UID}` variable name with `{CUID}` in the UI text.\n* Fixed a web SDK issue where the **Select an option** channel selection\n  screen appeared unnecessarily when a chat started, when the Direct Action\n  Parameter was enabled.\n* Improved web SDK page loading speed.\n* Fixed a web SDK issue where external deflection links weren't working\n  correctly.",
-        "summary": {
-          "title": "Bug Fixes and Improvements",
-          "summary": "This release includes numerous fixes for issues related to chat summaries, agent reporting, voicemail handling, background job processing, and more. It also addresses problems with push notifications, phone number management, custom roles, and agent desktop functionality. Additionally, improvements have been made to the web SDK, including faster page loading and corrected deflection link behavior."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Web SDK: chat check-in**\n\nUsers of the web SDK can use chat check-in to help ensure that end-users are\npresent and ready to engage before connecting them to a human agent. This helps\nto reduce the time lost when agents wait for end-users who have abandoned a\nchat.\n\nWhen an end-user reaches the front of the chat queue, the system asks if they're\nstill available. If there's no response after the amount of time you configure,\nthe system removes the end-user from the queue. If the end-user rejoins the\nqueue, you can configure whether they rejoin at the front or the back of the\nqueue.",
-        "summary": {
-          "title": "Chat check-in for Web SDK",
-          "summary": "Reduce agent time wasted on abandoned chats. The Web SDK's new chat check-in feature confirms end-user presence before connecting to an agent. Unresponsive users are removed from the queue, with options to rejoin at the front or back."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**New chat platform API endpoint for getting media files**\n\nYou can use the new chat platform API endpoint to get the media file that an\nagent sends to an end-user during a chat session. Your custom chat application\ncan then make the media file available to the end-user during the session.\n\nNew endpoint: `/apps/api/v1/chats/CHAT_ID/media/MEDIA_ID`",
-        "summary": {
-          "title": "New chat platform API endpoint for media files",
-          "summary": "A new API endpoint is now available to retrieve media files shared by agents in chat sessions, allowing custom applications to display these files to end-users in real-time."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Virtual task assistant support in the chat platform API**\n\nThe chat platform API now provides improved support for virtual task assistants.\nWhen an agent transfers a chat to a virtual task assistant, your application can\nsend and receive messages from the virtual task assistant. Enhanced webhooks\nprovide the virtual task assistant's message content instantly, streamlining\nprivate, automated workflows like collecting sensitive information.",
-        "summary": {
-          "title": "Virtual task assistant support in chat platform API",
-          "summary": "The chat platform API now supports virtual task assistants, allowing your application to exchange messages with them when a chat is transferred. Enhanced webhooks deliver the virtual task assistant's message content instantly, improving automated workflows."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**New standalone queue settings page**\n\nGoogle Cloud CCaaS now includes a standalone **Queue Menu Settings** page for\neach queue in your instance. These pages are separate from (but identical to)\nthe **Queue Menu Settings** pages at **Settings > Queue >\nEdit / View > YOUR\\_QUEUE**. The standalone pages load faster and you\ncan quickly access them in the following ways:\n\n* From the **Queues** page (access this by clicking the **Queues** menu).\n  Links to the standalone **Queue Menu Settings** pages are in the **Queue\n  Name** column.\n* From the **Phone Number Management** pane at **Settings > Call\n  > Phone Numbers > Phone number management**. Links to\n  the **Queue Menu Settings** pages are in the **Assigned Queues / Agents**\n  column.\n* Using a URL that identifies the queue. Example:\n  `https://YOUR_CCAAS_HOST/queues/QUEUE_ID/LANGUAGE_CODE`\n\nLinks to standalone **Queue Menu Settings** pages are active only for users with\npermissions to view queue settings.",
-        "summary": {
-          "title": "Standalone Queue Settings Page",
-          "summary": "A new standalone page for queue menu settings is now available, offering faster access and improved usability."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Automatic redaction**\n\nYou can now automatically identify and redact sensitive data from chat\nconversations, both in real time and in transcripts. This helps to prevent\nunauthorized people from accessing sensitive information and can help you comply\nwith security standards. You can configure redaction for incoming messages from\nend-users, outgoing messages from agents, and session notes. You can also let\nagents temporarily view redacted messages during a session. This capability is\navailable for the web SDK.\n\nAdministrators: You can find the settings for configuring automatic redaction in\nthe following locations:\n\n* To add a redaction platform: **Settings > Developer Settings\n  > Redaction Platform**\n* To configure automatic redaction at the global level: **Settings\n  > Chat > Automatic Redaction**\n* To configure automatic redaction at the queue level: **Settings >\n  Queue > Web > Edit / View > SELECT\\_QUEUE\n  > Automatic Redaction**",
-        "summary": {
-          "title": "Automatic Redaction for Chat Conversations",
-          "summary": "Automatically identify and redact sensitive data from chat conversations in real time and in transcripts to enhance security and compliance. Configure redaction for incoming/outgoing messages and session notes, with options for agents to temporarily view redacted content. Available for the web SDK."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Virtual agent alias**\n\nYou can assign a public-facing alias to each of your virtual agents. When all of\nyour virtual agents have the same alias, they each appear to have the same name\nto end-users. This gives the impression that a single virtual agent is handling\na session even if the session is transferred between virtual agents. You can\nassign virtual agent aliases to both support agents and virtual task assistants.\nVirtual agent aliases are used in the web SDK, the mobile SDKs, in system\nmessages, and in transcripts.\n\nAdministrators: A new **Virtual Agent Alias** checkbox appears in the following\ndialogs:\n\n* The **Add a Customer Support Agent** dialog at **Settings >\n  Virtual Agent > Virtual Agents > Add virtual agent\n  > Customer Support**\n* The **Add a Virtual Task Assistant** dialog at **Settings >\n  Virtual Agent > Virtual Agents > Add virtual agent\n  > Task Assistant**",
-        "summary": {
-          "title": "Virtual Agent Alias",
-          "summary": "Assign a public-facing alias to your virtual agents so they appear as a single agent to end-users, even when sessions are transferred. This feature is available for both support agents and virtual task assistants and is used across various platforms like the web SDK, mobile SDKs, system messages, and transcripts."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Restrict the transfer of email sessions to a queue**\n\nYou can now configure queues to prevent them from receiving email session\ntransfers.\n\nAdministrators: A new **Allow incoming Email Transfers** toggle appears in the\nsettings pane at **Settings > Queue > Email >\nEdit / View > YOUR\\_QUEUE**.",
-        "summary": {
-          "title": "Email Transfer Restriction",
-          "summary": "Prevent email sessions from transferring to queues by configuring new settings."
-        }
-      },
-      {
-        "kind": "Announcement",
-        "content": "**Google Cloud CCaaS 3.42 pre-release notes**\n\nHere are the pre-release notes for Google Cloud CCaaS version 3.42. When we\nrelease version 3.42, we expect the new capabilities to be as shown here.",
-        "summary": {
-          "title": "Google Cloud CCaaS 3.42 Pre-Release Notes",
-          "summary": "New capabilities are included in the upcoming Google Cloud CCaaS version 3.42."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Email signatures**\n\nYou can now define standardized signatures for all outgoing emails sent from a\nspecific queue.\n\nAdministrators: A new **Email Signatures** section appears in the settings pane\nat **Settings > Queue > Email > Edit / View\n> YOUR\\_QUEUE**.",
-        "summary": {
-          "title": "Email Signatures",
-          "summary": "Standardized email signatures can now be defined for all outgoing emails from a specific queue."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Outbound calling improvements**\n\nWe've implemented the following improvements to outbound calling:\n\n* **Show dialpad before starting the call**: For CRM users, the **Settings\n  > Operation Management > CRM Operations** section\n  contains a new **Show dialpad before starting the call** checkbox. When you\n  select this checkbox, agents can view the dial pad and make changes before a\n  call starts, even if flexible outbound calling is turned off.\n* **Dialpad improvements**: The dial pad in the agent adapter now includes the\n  following:\n\n  + Country code selector\n  + Outbound number, Language, and Queue selectors\n\n  If you use a CRM with flexible outbound dialing turned on, the **Outbound\n  number** and **Language** selectors appear in the **Outbound call\n  details** screen.",
-        "summary": {
-          "title": "Outbound calling improvements",
-          "summary": "Agents can now view the dial pad before starting a call, with added features like country code and queue selectors."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Alvaria Advanced List Management integration with outbound dialer**\n\nYou can now integrate Alvaria Advanced List Management (ALM) with the outbound\ndialer. This lets you combine Alvaria's list and campaign management\ncapabilities with the dialing capability of Google Cloud CCaaS. This integration\nexchanges contact and result files through a shared Cloud Storage bucket.\n\nCapabilities:\n\n* Multi-tenancy support: helps ensure that each tenant's data remains separate\n  and secure\n* Flexible delimiter support: supports files using comma, pipe, tab, or\n  semicolon delimiters",
-        "summary": {
-          "title": "Alvaria Advanced List Management integration with outbound dialer",
-          "summary": "Integrate Alvaria Advanced List Management with the outbound dialer to combine advanced list and campaign management with Google Cloud's dialing capabilities."
         }
       }
     ],
@@ -304,6 +256,104 @@
         "summary": {
           "title": "Dashboard Fixes",
           "summary": "Various dashboard issues have been resolved, including problems with data display, filter functionality, and data accuracy across multiple dashboards such as Queue Groups, Agent Activity Timeline, Virtual Agent, and Dispositions."
+        }
+      }
+    ],
+    "2025-11-14": [
+      {
+        "kind": "Fixed",
+        "content": "We addressed the following issues in this release:\n\n* Fixed an issue where Agent Assist generated incomplete or\n  inaccurate chat summaries.\n* Fixed inaccurate reporting for chats escalated by a virtual agent to a\n  human agent.\n* Fixed incorrect labeling and routing of French voicemails to the\n  English-language queue in the agent adapter.\n* Fixed the missed response timer, which added an extra 30 minutes to the\n  calculated time.\n* Fixed a significant slowdown in background job processing.\n* Fixed an issue where the global default voicemail greeting failed to save\n  when applied to an individual user's settings.\n* Fixed an issue that caused agents to be assigned a call and a chat at the\n  same time, even when this was disabled in the settings.\n* Fixed an issue that prevented users from testing Android push notifications.\n* Fixed an issue where editing a phone number's settings on the **Phone Number\n  Management** page removed it from queues where it was assigned for outbound\n  calls.\n* Fixed an issue that caused a **Custom roles permissions is invalid** error\n  when attempting to save a change to the **Audit Dashboard** permission in\n  a custom role.\n* Fixed an issue that caused the handle time for queued chats to display an\n  incorrect value, particularly after a session transfer.\n* Fixed an issue where the call ID was missing in the **Activity Timeline**\n  report.\n* Fixed an issue where the **Auto answered** label on a chat tab in the chat\n  adapter persisted even after an agent opened the chat.\n* Fixed an issue where the agent directory in the call adapter appeared empty\n  when an agent attempted to transfer a call.\n* Fixed an issue that prevented an agent from adding another agent to a call\n  using their extension number.\n* Fixed an agent desktop issue where unsigned data appeared before signed data\n  in the **Session Data Feed** panel. This was inconsistent with the display\n  order in the agent adapter.\n* Fixed an issue at **Settings > Developer Settings >\n  CRM > Custom CRM > CRM lookup method >\n  Custom Link**. In the **Custom link CRM lookup** section, we replaced the\n  incorrect `{Custom UID}` variable name with `{CUID}` in the UI text.\n* Fixed a web SDK issue where the **Select an option** channel selection\n  screen appeared unnecessarily when a chat started, when the Direct Action\n  Parameter was enabled.\n* Improved web SDK page loading speed.\n* Fixed a web SDK issue where external deflection links weren't working\n  correctly.",
+        "summary": {
+          "title": "Bug Fixes and Improvements",
+          "summary": "This release includes numerous fixes for issues related to chat summaries, agent reporting, voicemail handling, background job processing, and more. It also addresses problems with push notifications, phone number management, custom roles, and agent desktop functionality. Additionally, improvements have been made to the web SDK, including faster page loading and corrected deflection link behavior."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Web SDK: chat check-in**\n\nUsers of the web SDK can use chat check-in to help ensure that end-users are\npresent and ready to engage before connecting them to a human agent. This helps\nto reduce the time lost when agents wait for end-users who have abandoned a\nchat.\n\nWhen an end-user reaches the front of the chat queue, the system asks if they're\nstill available. If there's no response after the amount of time you configure,\nthe system removes the end-user from the queue. If the end-user rejoins the\nqueue, you can configure whether they rejoin at the front or the back of the\nqueue.",
+        "summary": {
+          "title": "Chat check-in for Web SDK",
+          "summary": "Reduce agent time wasted on abandoned chats. The Web SDK's new chat check-in feature confirms end-user presence before connecting to an agent. Unresponsive users are removed from the queue, with options to rejoin at the front or back."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**New chat platform API endpoint for getting media files**\n\nYou can use the new chat platform API endpoint to get the media file that an\nagent sends to an end-user during a chat session. Your custom chat application\ncan then make the media file available to the end-user during the session.\n\nNew endpoint: `/apps/api/v1/chats/CHAT_ID/media/MEDIA_ID`",
+        "summary": {
+          "title": "New chat platform API endpoint for media files",
+          "summary": "A new API endpoint is now available to retrieve media files shared by agents in chat sessions, allowing custom applications to display these files to end-users in real-time."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Virtual task assistant support in the chat platform API**\n\nThe chat platform API now provides improved support for virtual task assistants.\nWhen an agent transfers a chat to a virtual task assistant, your application can\nsend and receive messages from the virtual task assistant. Enhanced webhooks\nprovide the virtual task assistant's message content instantly, streamlining\nprivate, automated workflows like collecting sensitive information.",
+        "summary": {
+          "title": "Virtual task assistant support in chat platform API",
+          "summary": "The chat platform API now supports virtual task assistants, allowing your application to exchange messages with them when a chat is transferred. Enhanced webhooks deliver the virtual task assistant's message content instantly, improving automated workflows."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**New standalone queue settings page**\n\nGoogle Cloud CCaaS now includes a standalone **Queue Menu Settings** page for\neach queue in your instance. These pages are separate from (but identical to)\nthe **Queue Menu Settings** pages at **Settings > Queue >\nEdit / View > YOUR\\_QUEUE**. The standalone pages load faster and you\ncan quickly access them in the following ways:\n\n* From the **Queues** page (access this by clicking the **Queues** menu).\n  Links to the standalone **Queue Menu Settings** pages are in the **Queue\n  Name** column.\n* From the **Phone Number Management** pane at **Settings > Call\n  > Phone Numbers > Phone number management**. Links to\n  the **Queue Menu Settings** pages are in the **Assigned Queues / Agents**\n  column.\n* Using a URL that identifies the queue. Example:\n  `https://YOUR_CCAAS_HOST/queues/QUEUE_ID/LANGUAGE_CODE`\n\nLinks to standalone **Queue Menu Settings** pages are active only for users with\npermissions to view queue settings.",
+        "summary": {
+          "title": "Standalone Queue Settings Page",
+          "summary": "A new standalone page for queue menu settings is now available, offering faster access and improved usability."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Automatic redaction**\n\nYou can now automatically identify and redact sensitive data from chat\nconversations, both in real time and in transcripts. This helps to prevent\nunauthorized people from accessing sensitive information and can help you comply\nwith security standards. You can configure redaction for incoming messages from\nend-users, outgoing messages from agents, and session notes. You can also let\nagents temporarily view redacted messages during a session. This capability is\navailable for the web SDK.\n\nAdministrators: You can find the settings for configuring automatic redaction in\nthe following locations:\n\n* To add a redaction platform: **Settings > Developer Settings\n  > Redaction Platform**\n* To configure automatic redaction at the global level: **Settings\n  > Chat > Automatic Redaction**\n* To configure automatic redaction at the queue level: **Settings >\n  Queue > Web > Edit / View > SELECT\\_QUEUE\n  > Automatic Redaction**",
+        "summary": {
+          "title": "Automatic Redaction for Chat Conversations",
+          "summary": "Automatically identify and redact sensitive data from chat conversations in real time and in transcripts to enhance security and compliance. Configure redaction for incoming/outgoing messages and session notes, with options for agents to temporarily view redacted content. Available for the web SDK."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Virtual agent alias**\n\nYou can assign a public-facing alias to each of your virtual agents. When all of\nyour virtual agents have the same alias, they each appear to have the same name\nto end-users. This gives the impression that a single virtual agent is handling\na session even if the session is transferred between virtual agents. You can\nassign virtual agent aliases to both support agents and virtual task assistants.\nVirtual agent aliases are used in the web SDK, the mobile SDKs, in system\nmessages, and in transcripts.\n\nAdministrators: A new **Virtual Agent Alias** checkbox appears in the following\ndialogs:\n\n* The **Add a Customer Support Agent** dialog at **Settings >\n  Virtual Agent > Virtual Agents > Add virtual agent\n  > Customer Support**\n* The **Add a Virtual Task Assistant** dialog at **Settings >\n  Virtual Agent > Virtual Agents > Add virtual agent\n  > Task Assistant**",
+        "summary": {
+          "title": "Virtual Agent Alias",
+          "summary": "Assign a public-facing alias to your virtual agents so they appear as a single agent to end-users, even when sessions are transferred. This feature is available for both support agents and virtual task assistants and is used across various platforms like the web SDK, mobile SDKs, system messages, and transcripts."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Restrict the transfer of email sessions to a queue**\n\nYou can now configure queues to prevent them from receiving email session\ntransfers.\n\nAdministrators: A new **Allow incoming Email Transfers** toggle appears in the\nsettings pane at **Settings > Queue > Email >\nEdit / View > YOUR\\_QUEUE**.",
+        "summary": {
+          "title": "Email Transfer Restriction",
+          "summary": "Prevent email sessions from transferring to queues by configuring new settings."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS 3.42 pre-release notes**\n\nHere are the pre-release notes for Google Cloud CCaaS version 3.42. When we\nrelease version 3.42, we expect the new capabilities to be as shown here.",
+        "summary": {
+          "title": "Google Cloud CCaaS 3.42 Pre-Release Notes",
+          "summary": "New capabilities are included in the upcoming Google Cloud CCaaS version 3.42."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Email signatures**\n\nYou can now define standardized signatures for all outgoing emails sent from a\nspecific queue.\n\nAdministrators: A new **Email Signatures** section appears in the settings pane\nat **Settings > Queue > Email > Edit / View\n> YOUR\\_QUEUE**.",
+        "summary": {
+          "title": "Email Signatures",
+          "summary": "Standardized email signatures can now be defined for all outgoing emails from a specific queue."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Outbound calling improvements**\n\nWe've implemented the following improvements to outbound calling:\n\n* **Show dialpad before starting the call**: For CRM users, the **Settings\n  > Operation Management > CRM Operations** section\n  contains a new **Show dialpad before starting the call** checkbox. When you\n  select this checkbox, agents can view the dial pad and make changes before a\n  call starts, even if flexible outbound calling is turned off.\n* **Dialpad improvements**: The dial pad in the agent adapter now includes the\n  following:\n\n  + Country code selector\n  + Outbound number, Language, and Queue selectors\n\n  If you use a CRM with flexible outbound dialing turned on, the **Outbound\n  number** and **Language** selectors appear in the **Outbound call\n  details** screen.",
+        "summary": {
+          "title": "Outbound calling improvements",
+          "summary": "Agents can now view the dial pad before starting a call, with added features like country code and queue selectors."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Alvaria Advanced List Management integration with outbound dialer**\n\nYou can now integrate Alvaria Advanced List Management (ALM) with the outbound\ndialer. This lets you combine Alvaria's list and campaign management\ncapabilities with the dialing capability of Google Cloud CCaaS. This integration\nexchanges contact and result files through a shared Cloud Storage bucket.\n\nCapabilities:\n\n* Multi-tenancy support: helps ensure that each tenant's data remains separate\n  and secure\n* Flexible delimiter support: supports files using comma, pipe, tab, or\n  semicolon delimiters",
+        "summary": {
+          "title": "Alvaria Advanced List Management integration with outbound dialer",
+          "summary": "Integrate Alvaria Advanced List Management with the outbound dialer to combine advanced list and campaign management with Google Cloud's dialing capabilities."
         }
       }
     ],

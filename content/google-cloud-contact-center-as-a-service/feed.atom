@@ -2,9 +2,191 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2025-11-17T00:00:00+00:00</updated>
+  <updated>2025-11-19T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:feature:0</id>
+    <published>2025-11-19T00:00:00+00:00</published>
+    <updated>2025-11-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Sensitive data redaction</strong></p>
+<p>You can now automatically identify and redact sensitive data from chat
+conversations, both in real time and in transcripts. This helps to prevent
+unauthorized people from accessing sensitive information and can help you comply
+with security standards. You can configure redaction for incoming messages from
+end-users, outgoing messages from agents, and session notes. You can also let
+agents temporarily view redacted messages during a session. This capability is
+available for the web SDK.</p>
+<p>Administrators: You can find the settings for configuring automatic redaction in
+the following locations:</p>
+<ul>
+<li>To add a redaction platform: **Settings &gt; Developer Settings<blockquote>
+<p>Redaction Platform**</p>
+</blockquote>
+</li>
+<li>To configure automatic redaction at the global level: **Settings<blockquote>
+<p>Chat &gt; Automatic Redaction**</p>
+</blockquote>
+</li>
+<li>To configure automatic redaction at the queue level: **Settings &gt;
+  Queue &gt; Web &gt; Edit / View &gt; SELECT_QUEUE<blockquote>
+<p>Automatic Redaction**</p>
+</blockquote>
+</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/Chat_Settings_and_Features#sensitive-data-redaction">Sensitive data
+redaction</a>.</p>]]></content>
+    <summary>Prevent unauthorized access to sensitive information by automatically redacting it in chat conversations. Configure redaction for incoming/outgoing messages and session notes. Agents can temporarily view redacted messages during a session. Available for the web SDK.</summary>
+    <title>Feature: Automatic redaction of sensitive data</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:feature:1</id>
+    <published>2025-11-19T00:00:00+00:00</published>
+    <updated>2025-11-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Virtual task assistant support in the chat platform API</strong></p>
+<p>The chat platform API now provides improved support for virtual task assistants.
+When an agent transfers a chat to a virtual task assistant, your application can
+send and receive messages from the virtual task assistant. Enhanced webhooks
+provide the virtual task assistant's message content instantly, streamlining
+private, automated workflows like collecting sensitive information.</p>
+<p>Documentation is coming soon.</p>]]></content>
+    <summary>The chat platform API now supports virtual task assistants, allowing your application to exchange messages with them when a chat is transferred. Enhanced webhooks deliver virtual task assistant messages instantly, enabling automated workflows for sensitive data collection. Documentation will be available soon.</summary>
+    <title>Feature: Virtual Task Assistants in Chat Platform API</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:fixed:2</id>
+    <published>2025-11-19T00:00:00+00:00</published>
+    <updated>2025-11-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>We addressed the following issues in this release:</p>
+<ul>
+<li>Fixed an issue where Agent Assist generated incomplete or
+  inaccurate chat summaries.</li>
+<li>Fixed inaccurate reporting for chats escalated by a virtual agent to a
+  human agent.</li>
+<li>Fixed incorrect labeling and routing of French voicemails to the
+  English-language queue in the agent adapter.</li>
+<li>Fixed the missed response timer, which added an extra 30 minutes to the
+  calculated time.</li>
+<li>Fixed a significant slowdown in background job processing.</li>
+<li>Fixed an issue where the global default voicemail greeting failed to save
+  when applied to an individual user's settings.</li>
+<li>Fixed an issue that caused agents to be assigned a call and a chat at the
+  same time, even when this was disabled in the settings.</li>
+<li>Fixed an issue that prevented users from testing Android push notifications.</li>
+<li>Fixed an issue where editing a phone number's settings on the <strong>Phone Number
+  Management</strong> page removed it from queues where it was assigned for outbound
+  calls.</li>
+<li>Fixed an issue that caused a <strong>Custom roles permissions is invalid</strong> error
+  when attempting to save a change to the <strong>Audit Dashboard</strong> permission in
+  a custom role.</li>
+<li>Fixed an issue that caused the handle time for queued chats to display an
+  incorrect value, particularly after a session transfer.</li>
+<li>Fixed an issue where the call ID was missing in the <strong>Activity Timeline</strong>
+  report.</li>
+<li>Fixed an issue where the <strong>Auto answered</strong> label on a chat tab in the chat
+  adapter persisted even after an agent opened the chat.</li>
+<li>Fixed an issue where the agent directory in the call adapter appeared empty
+  when an agent attempted to transfer a call.</li>
+<li>Fixed an issue that prevented an agent from adding another agent to a call
+  using their extension number.</li>
+<li>Fixed an agent desktop issue where unsigned data appeared before signed data
+  in the <strong>Session Data Feed</strong> panel. This was inconsistent with the display
+  order in the agent adapter.</li>
+<li>Fixed an issue at <strong>Settings &gt; Developer Settings &gt;
+  CRM &gt; Custom CRM &gt; CRM lookup method &gt;
+  Custom Link</strong>. In the <strong>Custom link CRM lookup</strong> section, we replaced the
+  incorrect <code>{Custom UID}</code> variable name with <code>{CUID}</code> in the UI text.</li>
+<li>Fixed a web SDK issue where the <strong>Select an option</strong> channel selection
+  screen appeared unnecessarily when a chat started, when the Direct Action
+  Parameter was enabled.</li>
+<li>Improved web SDK page loading speed.</li>
+<li>Fixed a web SDK issue where external deflection links weren't working
+  correctly.</li>
+</ul>]]></content>
+    <summary>This release addresses several bugs and inaccuracies, including improvements to chat summaries, reporting accuracy, voicemail handling, and background job processing. We have also resolved issues related to agent assignment, push notifications, phone number settings, custom role permissions, and display inconsistencies in the agent desktop.</summary>
+    <title>Fixed: Resolved various issues</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:feature:3</id>
+    <published>2025-11-19T00:00:00+00:00</published>
+    <updated>2025-11-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Chat check-in</strong></p>
+<p>Users of the web SDK can use chat check-in to help ensure that end-users are
+present and ready to engage before connecting them to a human agent. This helps
+to reduce the time lost when agents wait for end-users who have abandoned a
+chat.</p>
+<p>When an end-user reaches the front of the chat queue, the system asks if they're
+still available. If there's no response after the amount of time you configure,
+the system removes the end-user from the queue. If the end-user rejoins the
+queue, you can configure whether they rejoin at the front or the back of the
+queue.</p>
+<p>Documentation is coming soon.</p>]]></content>
+    <summary>A new feature to ensure end-users are present before connecting them to a human agent, reducing wasted agent time. Users can configure response times and queue rejoin behavior. Documentation is forthcoming.</summary>
+    <title>Feature: Chat check-in</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:feature:4</id>
+    <published>2025-11-19T00:00:00+00:00</published>
+    <updated>2025-11-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Virtual agent aliases</strong></p>
+<p>You can assign a public-facing alias to each of your virtual agents. When all of
+your virtual agents have the same alias, they each appear to have the same name
+to end-users. This gives the impression that a single virtual agent is handling
+a session even if the session is transferred between virtual agents. You can
+assign virtual agent aliases to both support agents and virtual task assistants.
+Virtual agent aliases are used in the web SDK, the mobile SDKs, in system
+messages, and in transcripts.</p>
+<p>Administrators: A new <strong>Virtual Agent Alias</strong> checkbox appears in the following
+dialogs:</p>
+<ul>
+<li>The <strong>Add a Customer Support Agent</strong> dialog at **Settings &gt;
+  Virtual Agent &gt; Virtual Agents &gt; Add virtual agent<blockquote>
+<p>Customer Support**</p>
+</blockquote>
+</li>
+<li>The <strong>Add a Virtual Task Assistant</strong> dialog at **Settings &gt;
+  Virtual Agent &gt; Virtual Agents &gt; Add virtual agent<blockquote>
+<p>Task Assistant**</p>
+</blockquote>
+</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/use-va-aliases">Virtual agent
+aliases</a>.</p>]]></content>
+    <summary>Assign a public-facing alias to your virtual agents to give the impression of a single agent handling sessions, even when transferred. This feature is available for both support agents and task assistants and is integrated into the web SDK, mobile SDKs, system messages, and transcripts.</summary>
+    <title>Feature: Virtual Agent Aliases</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:feature:5</id>
+    <published>2025-11-19T00:00:00+00:00</published>
+    <updated>2025-11-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>New chat platform API endpoint for getting media files</strong></p>
+<p>You can use the new chat platform API endpoint to get the media file that an
+agent sends to an end-user during a chat session. Your custom chat application
+can then make the media file available to the end-user during the session.</p>
+<p>New endpoint: <code>/apps/api/v1/chats/CHAT_ID/media/MEDIA_ID</code></p>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-attachments-chat-api">Agent file attachments with the chat platform
+API</a>.</p>]]></content>
+    <summary>You can now use the new chat platform API endpoint to retrieve media files sent by agents. This allows your custom chat application to display these files to end-users during a chat session.</summary>
+    <title>Feature: New chat platform API endpoint for media files</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -86,312 +268,6 @@
 <p>We've optimized real-time dashboards to provide faster loading and refresh times.</p>]]></content>
     <summary>Faster loading and refresh times for real-time dashboards.</summary>
     <title>Feature: Optimized dashboards</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:fixed:0</id>
-    <published>2025-11-14T00:00:00+00:00</published>
-    <updated>2025-11-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>We addressed the following issues in this release:</p>
-<ul>
-<li>Fixed an issue where Agent Assist generated incomplete or
-  inaccurate chat summaries.</li>
-<li>Fixed inaccurate reporting for chats escalated by a virtual agent to a
-  human agent.</li>
-<li>Fixed incorrect labeling and routing of French voicemails to the
-  English-language queue in the agent adapter.</li>
-<li>Fixed the missed response timer, which added an extra 30 minutes to the
-  calculated time.</li>
-<li>Fixed a significant slowdown in background job processing.</li>
-<li>Fixed an issue where the global default voicemail greeting failed to save
-  when applied to an individual user's settings.</li>
-<li>Fixed an issue that caused agents to be assigned a call and a chat at the
-  same time, even when this was disabled in the settings.</li>
-<li>Fixed an issue that prevented users from testing Android push notifications.</li>
-<li>Fixed an issue where editing a phone number's settings on the <strong>Phone Number
-  Management</strong> page removed it from queues where it was assigned for outbound
-  calls.</li>
-<li>Fixed an issue that caused a <strong>Custom roles permissions is invalid</strong> error
-  when attempting to save a change to the <strong>Audit Dashboard</strong> permission in
-  a custom role.</li>
-<li>Fixed an issue that caused the handle time for queued chats to display an
-  incorrect value, particularly after a session transfer.</li>
-<li>Fixed an issue where the call ID was missing in the <strong>Activity Timeline</strong>
-  report.</li>
-<li>Fixed an issue where the <strong>Auto answered</strong> label on a chat tab in the chat
-  adapter persisted even after an agent opened the chat.</li>
-<li>Fixed an issue where the agent directory in the call adapter appeared empty
-  when an agent attempted to transfer a call.</li>
-<li>Fixed an issue that prevented an agent from adding another agent to a call
-  using their extension number.</li>
-<li>Fixed an agent desktop issue where unsigned data appeared before signed data
-  in the <strong>Session Data Feed</strong> panel. This was inconsistent with the display
-  order in the agent adapter.</li>
-<li>Fixed an issue at <strong>Settings &gt; Developer Settings &gt;
-  CRM &gt; Custom CRM &gt; CRM lookup method &gt;
-  Custom Link</strong>. In the <strong>Custom link CRM lookup</strong> section, we replaced the
-  incorrect <code>{Custom UID}</code> variable name with <code>{CUID}</code> in the UI text.</li>
-<li>Fixed a web SDK issue where the <strong>Select an option</strong> channel selection
-  screen appeared unnecessarily when a chat started, when the Direct Action
-  Parameter was enabled.</li>
-<li>Improved web SDK page loading speed.</li>
-<li>Fixed a web SDK issue where external deflection links weren't working
-  correctly.</li>
-</ul>]]></content>
-    <summary>This release includes numerous fixes for issues related to chat summaries, agent reporting, voicemail handling, background job processing, and more. It also addresses problems with push notifications, phone number management, custom roles, and agent desktop functionality. Additionally, improvements have been made to the web SDK, including faster page loading and corrected deflection link behavior.</summary>
-    <title>Fixed: Bug Fixes and Improvements</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:feature:1</id>
-    <published>2025-11-14T00:00:00+00:00</published>
-    <updated>2025-11-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Web SDK: chat check-in</strong></p>
-<p>Users of the web SDK can use chat check-in to help ensure that end-users are
-present and ready to engage before connecting them to a human agent. This helps
-to reduce the time lost when agents wait for end-users who have abandoned a
-chat.</p>
-<p>When an end-user reaches the front of the chat queue, the system asks if they're
-still available. If there's no response after the amount of time you configure,
-the system removes the end-user from the queue. If the end-user rejoins the
-queue, you can configure whether they rejoin at the front or the back of the
-queue.</p>]]></content>
-    <summary>Reduce agent time wasted on abandoned chats. The Web SDK's new chat check-in feature confirms end-user presence before connecting to an agent. Unresponsive users are removed from the queue, with options to rejoin at the front or back.</summary>
-    <title>Feature: Chat check-in for Web SDK</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:feature:2</id>
-    <published>2025-11-14T00:00:00+00:00</published>
-    <updated>2025-11-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>New chat platform API endpoint for getting media files</strong></p>
-<p>You can use the new chat platform API endpoint to get the media file that an
-agent sends to an end-user during a chat session. Your custom chat application
-can then make the media file available to the end-user during the session.</p>
-<p>New endpoint: <code>/apps/api/v1/chats/CHAT_ID/media/MEDIA_ID</code></p>]]></content>
-    <summary>A new API endpoint is now available to retrieve media files shared by agents in chat sessions, allowing custom applications to display these files to end-users in real-time.</summary>
-    <title>Feature: New chat platform API endpoint for media files</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:feature:3</id>
-    <published>2025-11-14T00:00:00+00:00</published>
-    <updated>2025-11-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Virtual task assistant support in the chat platform API</strong></p>
-<p>The chat platform API now provides improved support for virtual task assistants.
-When an agent transfers a chat to a virtual task assistant, your application can
-send and receive messages from the virtual task assistant. Enhanced webhooks
-provide the virtual task assistant's message content instantly, streamlining
-private, automated workflows like collecting sensitive information.</p>]]></content>
-    <summary>The chat platform API now supports virtual task assistants, allowing your application to exchange messages with them when a chat is transferred. Enhanced webhooks deliver the virtual task assistant's message content instantly, improving automated workflows.</summary>
-    <title>Feature: Virtual task assistant support in chat platform API</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:feature:4</id>
-    <published>2025-11-14T00:00:00+00:00</published>
-    <updated>2025-11-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>New standalone queue settings page</strong></p>
-<p>Google Cloud CCaaS now includes a standalone <strong>Queue Menu Settings</strong> page for
-each queue in your instance. These pages are separate from (but identical to)
-the <strong>Queue Menu Settings</strong> pages at <strong>Settings &gt; Queue &gt;
-Edit / View &gt; YOUR_QUEUE</strong>. The standalone pages load faster and you
-can quickly access them in the following ways:</p>
-<ul>
-<li>From the <strong>Queues</strong> page (access this by clicking the <strong>Queues</strong> menu).
-  Links to the standalone <strong>Queue Menu Settings</strong> pages are in the <strong>Queue
-  Name</strong> column.</li>
-<li>From the <strong>Phone Number Management</strong> pane at **Settings &gt; Call<blockquote>
-<p>Phone Numbers &gt; Phone number management<strong>. Links to
-  the </strong>Queue Menu Settings<strong> pages are in the </strong>Assigned Queues / Agents**
-  column.</p>
-</blockquote>
-</li>
-<li>Using a URL that identifies the queue. Example:
-  <code>https://YOUR_CCAAS_HOST/queues/QUEUE_ID/LANGUAGE_CODE</code></li>
-</ul>
-<p>Links to standalone <strong>Queue Menu Settings</strong> pages are active only for users with
-permissions to view queue settings.</p>]]></content>
-    <summary>A new standalone page for queue menu settings is now available, offering faster access and improved usability.</summary>
-    <title>Feature: Standalone Queue Settings Page</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:feature:5</id>
-    <published>2025-11-14T00:00:00+00:00</published>
-    <updated>2025-11-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Automatic redaction</strong></p>
-<p>You can now automatically identify and redact sensitive data from chat
-conversations, both in real time and in transcripts. This helps to prevent
-unauthorized people from accessing sensitive information and can help you comply
-with security standards. You can configure redaction for incoming messages from
-end-users, outgoing messages from agents, and session notes. You can also let
-agents temporarily view redacted messages during a session. This capability is
-available for the web SDK.</p>
-<p>Administrators: You can find the settings for configuring automatic redaction in
-the following locations:</p>
-<ul>
-<li>To add a redaction platform: **Settings &gt; Developer Settings<blockquote>
-<p>Redaction Platform**</p>
-</blockquote>
-</li>
-<li>To configure automatic redaction at the global level: **Settings<blockquote>
-<p>Chat &gt; Automatic Redaction**</p>
-</blockquote>
-</li>
-<li>To configure automatic redaction at the queue level: **Settings &gt;
-  Queue &gt; Web &gt; Edit / View &gt; SELECT_QUEUE<blockquote>
-<p>Automatic Redaction**</p>
-</blockquote>
-</li>
-</ul>]]></content>
-    <summary>Automatically identify and redact sensitive data from chat conversations in real time and in transcripts to enhance security and compliance. Configure redaction for incoming/outgoing messages and session notes, with options for agents to temporarily view redacted content. Available for the web SDK.</summary>
-    <title>Feature: Automatic Redaction for Chat Conversations</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:feature:6</id>
-    <published>2025-11-14T00:00:00+00:00</published>
-    <updated>2025-11-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Virtual agent alias</strong></p>
-<p>You can assign a public-facing alias to each of your virtual agents. When all of
-your virtual agents have the same alias, they each appear to have the same name
-to end-users. This gives the impression that a single virtual agent is handling
-a session even if the session is transferred between virtual agents. You can
-assign virtual agent aliases to both support agents and virtual task assistants.
-Virtual agent aliases are used in the web SDK, the mobile SDKs, in system
-messages, and in transcripts.</p>
-<p>Administrators: A new <strong>Virtual Agent Alias</strong> checkbox appears in the following
-dialogs:</p>
-<ul>
-<li>The <strong>Add a Customer Support Agent</strong> dialog at **Settings &gt;
-  Virtual Agent &gt; Virtual Agents &gt; Add virtual agent<blockquote>
-<p>Customer Support**</p>
-</blockquote>
-</li>
-<li>The <strong>Add a Virtual Task Assistant</strong> dialog at **Settings &gt;
-  Virtual Agent &gt; Virtual Agents &gt; Add virtual agent<blockquote>
-<p>Task Assistant**</p>
-</blockquote>
-</li>
-</ul>]]></content>
-    <summary>Assign a public-facing alias to your virtual agents so they appear as a single agent to end-users, even when sessions are transferred. This feature is available for both support agents and virtual task assistants and is used across various platforms like the web SDK, mobile SDKs, system messages, and transcripts.</summary>
-    <title>Feature: Virtual Agent Alias</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:feature:7</id>
-    <published>2025-11-14T00:00:00+00:00</published>
-    <updated>2025-11-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Restrict the transfer of email sessions to a queue</strong></p>
-<p>You can now configure queues to prevent them from receiving email session
-transfers.</p>
-<p>Administrators: A new <strong>Allow incoming Email Transfers</strong> toggle appears in the
-settings pane at <strong>Settings &gt; Queue &gt; Email &gt;
-Edit / View &gt; YOUR_QUEUE</strong>.</p>]]></content>
-    <summary>Prevent email sessions from transferring to queues by configuring new settings.</summary>
-    <title>Feature: Email Transfer Restriction</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:announcement:8</id>
-    <published>2025-11-14T00:00:00+00:00</published>
-    <updated>2025-11-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS 3.42 pre-release notes</strong></p>
-<p>Here are the pre-release notes for Google Cloud CCaaS version 3.42. When we
-release version 3.42, we expect the new capabilities to be as shown here.</p>]]></content>
-    <summary>New capabilities are included in the upcoming Google Cloud CCaaS version 3.42.</summary>
-    <title>Announcement: Google Cloud CCaaS 3.42 Pre-Release Notes</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:feature:9</id>
-    <published>2025-11-14T00:00:00+00:00</published>
-    <updated>2025-11-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Email signatures</strong></p>
-<p>You can now define standardized signatures for all outgoing emails sent from a
-specific queue.</p>
-<p>Administrators: A new <strong>Email Signatures</strong> section appears in the settings pane
-at **Settings &gt; Queue &gt; Email &gt; Edit / View</p>
-<blockquote>
-<p>YOUR_QUEUE**.</p>
-</blockquote>]]></content>
-    <summary>Standardized email signatures can now be defined for all outgoing emails from a specific queue.</summary>
-    <title>Feature: Email Signatures</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:feature:10</id>
-    <published>2025-11-14T00:00:00+00:00</published>
-    <updated>2025-11-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Outbound calling improvements</strong></p>
-<p>We've implemented the following improvements to outbound calling:</p>
-<ul>
-<li><strong>Show dialpad before starting the call</strong>: For CRM users, the **Settings<blockquote>
-<p>Operation Management &gt; CRM Operations<strong> section
-  contains a new </strong>Show dialpad before starting the call** checkbox. When you
-  select this checkbox, agents can view the dial pad and make changes before a
-  call starts, even if flexible outbound calling is turned off.</p>
-</blockquote>
-</li>
-<li>
-<p><strong>Dialpad improvements</strong>: The dial pad in the agent adapter now includes the
-  following:</p>
-</li>
-<li>
-<p>Country code selector</p>
-</li>
-<li>Outbound number, Language, and Queue selectors</li>
-</ul>
-<p>If you use a CRM with flexible outbound dialing turned on, the <strong>Outbound
-  number</strong> and <strong>Language</strong> selectors appear in the <strong>Outbound call
-  details</strong> screen.</p>]]></content>
-    <summary>Agents can now view the dial pad before starting a call, with added features like country code and queue selectors.</summary>
-    <title>Feature: Outbound calling improvements</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:feature:11</id>
-    <published>2025-11-14T00:00:00+00:00</published>
-    <updated>2025-11-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Alvaria Advanced List Management integration with outbound dialer</strong></p>
-<p>You can now integrate Alvaria Advanced List Management (ALM) with the outbound
-dialer. This lets you combine Alvaria's list and campaign management
-capabilities with the dialing capability of Google Cloud CCaaS. This integration
-exchanges contact and result files through a shared Cloud Storage bucket.</p>
-<p>Capabilities:</p>
-<ul>
-<li>Multi-tenancy support: helps ensure that each tenant's data remains separate
-  and secure</li>
-<li>Flexible delimiter support: supports files using comma, pipe, tab, or
-  semicolon delimiters</li>
-</ul>]]></content>
-    <summary>Integrate Alvaria Advanced List Management with the outbound dialer to combine advanced list and campaign management with Google Cloud's dialing capabilities.</summary>
-    <title>Feature: Alvaria Advanced List Management integration with outbound dialer</title>
   </entry>
   <entry>
     <author>
@@ -728,6 +604,312 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>]]></content>
     <summary>Various dashboard issues have been resolved, including problems with data display, filter functionality, and data accuracy across multiple dashboards such as Queue Groups, Agent Activity Timeline, Virtual Agent, and Dispositions.</summary>
     <title>Fixed: Dashboard Fixes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:fixed:0</id>
+    <published>2025-11-14T00:00:00+00:00</published>
+    <updated>2025-11-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>We addressed the following issues in this release:</p>
+<ul>
+<li>Fixed an issue where Agent Assist generated incomplete or
+  inaccurate chat summaries.</li>
+<li>Fixed inaccurate reporting for chats escalated by a virtual agent to a
+  human agent.</li>
+<li>Fixed incorrect labeling and routing of French voicemails to the
+  English-language queue in the agent adapter.</li>
+<li>Fixed the missed response timer, which added an extra 30 minutes to the
+  calculated time.</li>
+<li>Fixed a significant slowdown in background job processing.</li>
+<li>Fixed an issue where the global default voicemail greeting failed to save
+  when applied to an individual user's settings.</li>
+<li>Fixed an issue that caused agents to be assigned a call and a chat at the
+  same time, even when this was disabled in the settings.</li>
+<li>Fixed an issue that prevented users from testing Android push notifications.</li>
+<li>Fixed an issue where editing a phone number's settings on the <strong>Phone Number
+  Management</strong> page removed it from queues where it was assigned for outbound
+  calls.</li>
+<li>Fixed an issue that caused a <strong>Custom roles permissions is invalid</strong> error
+  when attempting to save a change to the <strong>Audit Dashboard</strong> permission in
+  a custom role.</li>
+<li>Fixed an issue that caused the handle time for queued chats to display an
+  incorrect value, particularly after a session transfer.</li>
+<li>Fixed an issue where the call ID was missing in the <strong>Activity Timeline</strong>
+  report.</li>
+<li>Fixed an issue where the <strong>Auto answered</strong> label on a chat tab in the chat
+  adapter persisted even after an agent opened the chat.</li>
+<li>Fixed an issue where the agent directory in the call adapter appeared empty
+  when an agent attempted to transfer a call.</li>
+<li>Fixed an issue that prevented an agent from adding another agent to a call
+  using their extension number.</li>
+<li>Fixed an agent desktop issue where unsigned data appeared before signed data
+  in the <strong>Session Data Feed</strong> panel. This was inconsistent with the display
+  order in the agent adapter.</li>
+<li>Fixed an issue at <strong>Settings &gt; Developer Settings &gt;
+  CRM &gt; Custom CRM &gt; CRM lookup method &gt;
+  Custom Link</strong>. In the <strong>Custom link CRM lookup</strong> section, we replaced the
+  incorrect <code>{Custom UID}</code> variable name with <code>{CUID}</code> in the UI text.</li>
+<li>Fixed a web SDK issue where the <strong>Select an option</strong> channel selection
+  screen appeared unnecessarily when a chat started, when the Direct Action
+  Parameter was enabled.</li>
+<li>Improved web SDK page loading speed.</li>
+<li>Fixed a web SDK issue where external deflection links weren't working
+  correctly.</li>
+</ul>]]></content>
+    <summary>This release includes numerous fixes for issues related to chat summaries, agent reporting, voicemail handling, background job processing, and more. It also addresses problems with push notifications, phone number management, custom roles, and agent desktop functionality. Additionally, improvements have been made to the web SDK, including faster page loading and corrected deflection link behavior.</summary>
+    <title>Fixed: Bug Fixes and Improvements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:feature:1</id>
+    <published>2025-11-14T00:00:00+00:00</published>
+    <updated>2025-11-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Web SDK: chat check-in</strong></p>
+<p>Users of the web SDK can use chat check-in to help ensure that end-users are
+present and ready to engage before connecting them to a human agent. This helps
+to reduce the time lost when agents wait for end-users who have abandoned a
+chat.</p>
+<p>When an end-user reaches the front of the chat queue, the system asks if they're
+still available. If there's no response after the amount of time you configure,
+the system removes the end-user from the queue. If the end-user rejoins the
+queue, you can configure whether they rejoin at the front or the back of the
+queue.</p>]]></content>
+    <summary>Reduce agent time wasted on abandoned chats. The Web SDK's new chat check-in feature confirms end-user presence before connecting to an agent. Unresponsive users are removed from the queue, with options to rejoin at the front or back.</summary>
+    <title>Feature: Chat check-in for Web SDK</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:feature:2</id>
+    <published>2025-11-14T00:00:00+00:00</published>
+    <updated>2025-11-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>New chat platform API endpoint for getting media files</strong></p>
+<p>You can use the new chat platform API endpoint to get the media file that an
+agent sends to an end-user during a chat session. Your custom chat application
+can then make the media file available to the end-user during the session.</p>
+<p>New endpoint: <code>/apps/api/v1/chats/CHAT_ID/media/MEDIA_ID</code></p>]]></content>
+    <summary>A new API endpoint is now available to retrieve media files shared by agents in chat sessions, allowing custom applications to display these files to end-users in real-time.</summary>
+    <title>Feature: New chat platform API endpoint for media files</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:feature:3</id>
+    <published>2025-11-14T00:00:00+00:00</published>
+    <updated>2025-11-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Virtual task assistant support in the chat platform API</strong></p>
+<p>The chat platform API now provides improved support for virtual task assistants.
+When an agent transfers a chat to a virtual task assistant, your application can
+send and receive messages from the virtual task assistant. Enhanced webhooks
+provide the virtual task assistant's message content instantly, streamlining
+private, automated workflows like collecting sensitive information.</p>]]></content>
+    <summary>The chat platform API now supports virtual task assistants, allowing your application to exchange messages with them when a chat is transferred. Enhanced webhooks deliver the virtual task assistant's message content instantly, improving automated workflows.</summary>
+    <title>Feature: Virtual task assistant support in chat platform API</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:feature:4</id>
+    <published>2025-11-14T00:00:00+00:00</published>
+    <updated>2025-11-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>New standalone queue settings page</strong></p>
+<p>Google Cloud CCaaS now includes a standalone <strong>Queue Menu Settings</strong> page for
+each queue in your instance. These pages are separate from (but identical to)
+the <strong>Queue Menu Settings</strong> pages at <strong>Settings &gt; Queue &gt;
+Edit / View &gt; YOUR_QUEUE</strong>. The standalone pages load faster and you
+can quickly access them in the following ways:</p>
+<ul>
+<li>From the <strong>Queues</strong> page (access this by clicking the <strong>Queues</strong> menu).
+  Links to the standalone <strong>Queue Menu Settings</strong> pages are in the <strong>Queue
+  Name</strong> column.</li>
+<li>From the <strong>Phone Number Management</strong> pane at **Settings &gt; Call<blockquote>
+<p>Phone Numbers &gt; Phone number management<strong>. Links to
+  the </strong>Queue Menu Settings<strong> pages are in the </strong>Assigned Queues / Agents**
+  column.</p>
+</blockquote>
+</li>
+<li>Using a URL that identifies the queue. Example:
+  <code>https://YOUR_CCAAS_HOST/queues/QUEUE_ID/LANGUAGE_CODE</code></li>
+</ul>
+<p>Links to standalone <strong>Queue Menu Settings</strong> pages are active only for users with
+permissions to view queue settings.</p>]]></content>
+    <summary>A new standalone page for queue menu settings is now available, offering faster access and improved usability.</summary>
+    <title>Feature: Standalone Queue Settings Page</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:feature:5</id>
+    <published>2025-11-14T00:00:00+00:00</published>
+    <updated>2025-11-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Automatic redaction</strong></p>
+<p>You can now automatically identify and redact sensitive data from chat
+conversations, both in real time and in transcripts. This helps to prevent
+unauthorized people from accessing sensitive information and can help you comply
+with security standards. You can configure redaction for incoming messages from
+end-users, outgoing messages from agents, and session notes. You can also let
+agents temporarily view redacted messages during a session. This capability is
+available for the web SDK.</p>
+<p>Administrators: You can find the settings for configuring automatic redaction in
+the following locations:</p>
+<ul>
+<li>To add a redaction platform: **Settings &gt; Developer Settings<blockquote>
+<p>Redaction Platform**</p>
+</blockquote>
+</li>
+<li>To configure automatic redaction at the global level: **Settings<blockquote>
+<p>Chat &gt; Automatic Redaction**</p>
+</blockquote>
+</li>
+<li>To configure automatic redaction at the queue level: **Settings &gt;
+  Queue &gt; Web &gt; Edit / View &gt; SELECT_QUEUE<blockquote>
+<p>Automatic Redaction**</p>
+</blockquote>
+</li>
+</ul>]]></content>
+    <summary>Automatically identify and redact sensitive data from chat conversations in real time and in transcripts to enhance security and compliance. Configure redaction for incoming/outgoing messages and session notes, with options for agents to temporarily view redacted content. Available for the web SDK.</summary>
+    <title>Feature: Automatic Redaction for Chat Conversations</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:feature:6</id>
+    <published>2025-11-14T00:00:00+00:00</published>
+    <updated>2025-11-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Virtual agent alias</strong></p>
+<p>You can assign a public-facing alias to each of your virtual agents. When all of
+your virtual agents have the same alias, they each appear to have the same name
+to end-users. This gives the impression that a single virtual agent is handling
+a session even if the session is transferred between virtual agents. You can
+assign virtual agent aliases to both support agents and virtual task assistants.
+Virtual agent aliases are used in the web SDK, the mobile SDKs, in system
+messages, and in transcripts.</p>
+<p>Administrators: A new <strong>Virtual Agent Alias</strong> checkbox appears in the following
+dialogs:</p>
+<ul>
+<li>The <strong>Add a Customer Support Agent</strong> dialog at **Settings &gt;
+  Virtual Agent &gt; Virtual Agents &gt; Add virtual agent<blockquote>
+<p>Customer Support**</p>
+</blockquote>
+</li>
+<li>The <strong>Add a Virtual Task Assistant</strong> dialog at **Settings &gt;
+  Virtual Agent &gt; Virtual Agents &gt; Add virtual agent<blockquote>
+<p>Task Assistant**</p>
+</blockquote>
+</li>
+</ul>]]></content>
+    <summary>Assign a public-facing alias to your virtual agents so they appear as a single agent to end-users, even when sessions are transferred. This feature is available for both support agents and virtual task assistants and is used across various platforms like the web SDK, mobile SDKs, system messages, and transcripts.</summary>
+    <title>Feature: Virtual Agent Alias</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:feature:7</id>
+    <published>2025-11-14T00:00:00+00:00</published>
+    <updated>2025-11-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Restrict the transfer of email sessions to a queue</strong></p>
+<p>You can now configure queues to prevent them from receiving email session
+transfers.</p>
+<p>Administrators: A new <strong>Allow incoming Email Transfers</strong> toggle appears in the
+settings pane at <strong>Settings &gt; Queue &gt; Email &gt;
+Edit / View &gt; YOUR_QUEUE</strong>.</p>]]></content>
+    <summary>Prevent email sessions from transferring to queues by configuring new settings.</summary>
+    <title>Feature: Email Transfer Restriction</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:announcement:8</id>
+    <published>2025-11-14T00:00:00+00:00</published>
+    <updated>2025-11-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS 3.42 pre-release notes</strong></p>
+<p>Here are the pre-release notes for Google Cloud CCaaS version 3.42. When we
+release version 3.42, we expect the new capabilities to be as shown here.</p>]]></content>
+    <summary>New capabilities are included in the upcoming Google Cloud CCaaS version 3.42.</summary>
+    <title>Announcement: Google Cloud CCaaS 3.42 Pre-Release Notes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:feature:9</id>
+    <published>2025-11-14T00:00:00+00:00</published>
+    <updated>2025-11-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Email signatures</strong></p>
+<p>You can now define standardized signatures for all outgoing emails sent from a
+specific queue.</p>
+<p>Administrators: A new <strong>Email Signatures</strong> section appears in the settings pane
+at **Settings &gt; Queue &gt; Email &gt; Edit / View</p>
+<blockquote>
+<p>YOUR_QUEUE**.</p>
+</blockquote>]]></content>
+    <summary>Standardized email signatures can now be defined for all outgoing emails from a specific queue.</summary>
+    <title>Feature: Email Signatures</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:feature:10</id>
+    <published>2025-11-14T00:00:00+00:00</published>
+    <updated>2025-11-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Outbound calling improvements</strong></p>
+<p>We've implemented the following improvements to outbound calling:</p>
+<ul>
+<li><strong>Show dialpad before starting the call</strong>: For CRM users, the **Settings<blockquote>
+<p>Operation Management &gt; CRM Operations<strong> section
+  contains a new </strong>Show dialpad before starting the call** checkbox. When you
+  select this checkbox, agents can view the dial pad and make changes before a
+  call starts, even if flexible outbound calling is turned off.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Dialpad improvements</strong>: The dial pad in the agent adapter now includes the
+  following:</p>
+</li>
+<li>
+<p>Country code selector</p>
+</li>
+<li>Outbound number, Language, and Queue selectors</li>
+</ul>
+<p>If you use a CRM with flexible outbound dialing turned on, the <strong>Outbound
+  number</strong> and <strong>Language</strong> selectors appear in the <strong>Outbound call
+  details</strong> screen.</p>]]></content>
+    <summary>Agents can now view the dial pad before starting a call, with added features like country code and queue selectors.</summary>
+    <title>Feature: Outbound calling improvements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-14:feature:11</id>
+    <published>2025-11-14T00:00:00+00:00</published>
+    <updated>2025-11-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Alvaria Advanced List Management integration with outbound dialer</strong></p>
+<p>You can now integrate Alvaria Advanced List Management (ALM) with the outbound
+dialer. This lets you combine Alvaria's list and campaign management
+capabilities with the dialing capability of Google Cloud CCaaS. This integration
+exchanges contact and result files through a shared Cloud Storage bucket.</p>
+<p>Capabilities:</p>
+<ul>
+<li>Multi-tenancy support: helps ensure that each tenant's data remains separate
+  and secure</li>
+<li>Flexible delimiter support: supports files using comma, pipe, tab, or
+  semicolon delimiters</li>
+</ul>]]></content>
+    <summary>Integrate Alvaria Advanced List Management with the outbound dialer to combine advanced list and campaign management with Google Cloud's dialing capabilities.</summary>
+    <title>Feature: Alvaria Advanced List Management integration with outbound dialer</title>
   </entry>
   <entry>
     <author>

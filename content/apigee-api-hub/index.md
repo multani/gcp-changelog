@@ -1,5 +1,25 @@
 # Apigee API hub
 
+## 2025-12-09
+
+### Changed
+
+**Actions tab changes**
+
+The **Actions** tab previously located in the **API hub > Settings** page is now removed, accounting for the following UI changes:
+
+* You can now find and configure add-on services like Specification Linter and Semantic Search under the new unified [Add-on Management](https://docs.cloud.google.com/apigee/docs/apihub/manage-add-ons) page, alongside other API hub add-ons.
+* The deprovisioning function is now moved to a dedicated top-level tab called **Deprovision**.
+
+### Feature
+
+**New add-on management page in API hub**
+
+A new **Add-on Management** page is now available in API hub. This page serves as a centralized location to enable, configure, and manage all your add-on services.
+
+For more information, see [Manage add-ons](https://docs.cloud.google.com/apigee/docs/apihub/manage-add-ons).
+
+---
 ## 2025-11-18
 
 ### Feature

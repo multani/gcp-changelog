@@ -1,5 +1,30 @@
 # Oracle Database@Google Cloud
 
+## 2025-12-09
+
+### Feature
+
+For Autonomous Databases, you can perform restore operation through Google Cloud console. This feature is [Generally Available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
+## 2025-12-08
+
+### Feature
+
+Oracle Database@Google Cloud adds the following regions and zones for its services:
+
+* Exadata Database Service
+
+  + `southamerica-east1` (São Paulo, Brazil, South America)
+* Autonomous Database Service
+
+  + `australia-southeast1` (Sydney, Australia)
+  + `asia-south1` (Mumbai, India)
+  + `southamerica-east1` (São Paulo, Brazil, South America)
+
+For a full list of supported locations, see [Supported regions and zones](https://docs.cloud.google.com/oracle/database/docs/regions-and-zones).
+
+---
 ## 2025-11-18
 
 ### Feature

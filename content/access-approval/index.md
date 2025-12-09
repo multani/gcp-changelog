@@ -1,5 +1,12 @@
 # Access Approval
 
+## 2025-11-17
+
+### Feature
+
+Backup and DR Service is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-10-31
 
 ### Feature

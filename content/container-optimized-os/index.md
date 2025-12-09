@@ -2,10 +2,6 @@
 
 ## 2025-12-03
 
-### Changed
-
-
-
 ### cos-dev-129-19407-0-0
 
 |  |  |  |  |
@@ -32,10 +28,6 @@ Runtime sysctl changes:
 
 Made the google-guest-agent more resilient to network link
 flakes.
-
-### Changed
-
-
 
 ### cos-117-18613-439-49
 
@@ -64,10 +56,6 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 811751 -> 811788
 
-### Changed
-
-
-
 ### cos-121-18867-294-42
 
 |  |  |  |  |
@@ -94,10 +82,6 @@ flakes.
 Runtime sysctl changes:
 
 * Changed: fs.file-max: 811812 -> 811755
-
-### Changed
-
-
 
 ### cos-125-19216-104-45
 
@@ -129,10 +113,6 @@ Added support for NVIDIA driver v580.105.08 and set it as the default version fo
 
 ---
 ## 2025-12-02
-
-### Changed
-
-
 
 ### cos-117-18613-439-45
 
@@ -242,10 +222,6 @@ Fixed CVE-2025-40167 in the Linux kernel.
 
 Fixed CVE-2025-40123 in the Linux kernel.
 
-### Changed
-
-
-
 ### cos-113-18244-521-39
 
 |  |  |  |  |
@@ -326,10 +302,6 @@ Fixed CVE-2025-40198 in the Linux kernel.
 
 Fixed CVE-2025-40153 in the Linux kernel.
 
-### Changed
-
-
-
 ### cos-dev-129-19403-0-0
 
 |  |  |  |  |
@@ -382,10 +354,6 @@ Upgraded net-misc/rsync to v3.4.1-r1.
 
 Upgraded net-misc/wget to v1.25.0-r1.
 
-### Changed
-
-
-
 ### cos-121-18867-294-38
 
 |  |  |  |  |
@@ -433,10 +401,6 @@ Set the default NVIDIA driver version to v535.274.02 for GPU types which previou
 ### Security
 
 Fixed CVE-2025-40167 in the Linux kernel.
-
-### Changed
-
-
 
 ### cos-125-19216-104-39
 
@@ -896,10 +860,6 @@ Fixed CVE-2025-40042 in the Linux kernel.
 ---
 ## 2025-11-07
 
-### Changed
-
-
-
 ### cos-117-18613-439-16
 
 |  |  |  |  |
@@ -954,10 +914,6 @@ Fixed CVE-2025-40040 in the Linux kernel.
 
 Fixed CVE-2025-40044 in the Linux kernel.
 
-### Changed
-
-
-
 ### cos-113-18244-521-11
 
 |  |  |  |  |
@@ -1000,10 +956,6 @@ Runtime sysctl changes:
 
 Fixed CVE-2025-40044 in the Linux kernel.
 
-### Changed
-
-
-
 ### cos-121-18867-294-12
 
 |  |  |  |  |
@@ -1041,10 +993,6 @@ Runtime sysctl changes:
 ### Security
 
 Fixed CVE-2025-40040 in the Linux kernel.
-
-### Changed
-
-
 
 ### cos-125-19216-104-5
 

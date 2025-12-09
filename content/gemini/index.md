@@ -2,10 +2,6 @@
 
 ## 2025-12-05
 
-### Feature
-
-
-
 ### Outline in IntelliJ (Preview)
 
 The [outline feature](https://docs.cloud.google.com/gemini/docs/codeassist/chat-gemini#outline) automatically
@@ -19,10 +15,6 @@ to disable automatic outline generation, which instead lets you generate
 outlines of files manually.
 
 ![Outline in IntelliJ Gemini Code Assist.](https://docs.cloud.google.com/gemini/images/release-notes-images/intellij-outline.png)
-
-### Feature
-
-
 
 ### Finish Changes in IntelliJ (Preview)
 
@@ -34,10 +26,6 @@ use a mix of input styles, such as pseudocode, #TODOs, or half-written code.
 This combination minimizes distraction and ensures you remain in control of the
 high-level design.
 
-### Feature
-
-
-
 ### Outline in IntelliJ (Preview)
 
 The [outline feature](https://docs.cloud.google.com/gemini/docs/codeassist/chat-gemini#outline) automatically
@@ -51,10 +39,6 @@ to disable automatic outline generation, which instead lets you generate
 outlines of files manually.
 
 ![Outline in IntelliJ Gemini Code Assist.](https://docs.cloud.google.com/gemini/images/release-notes-images/intellij-outline.png)
-
-### Feature
-
-
 
 ### Finish Changes in IntelliJ (Preview)
 
@@ -69,10 +53,6 @@ high-level design.
 ---
 ## 2025-12-04
 
-### Feature
-
-
-
 ### Model selection for VS Code Gemini Code Assist
 
 The following VS Code Gemini Code Assist users can now
@@ -83,10 +63,6 @@ used by Gemini Code Assist:
 * Gemini Code Assist Standard users
 * Gemini Code Assist for individuals, if you have a Google AI Pro or Ultra
   subscription
-
-### Feature
-
-
 
 ### Model selection for VS Code Gemini Code Assist
 
@@ -113,10 +89,6 @@ Various bug fixes and minor product enhancements.
 ---
 ## 2025-11-13
 
-### Issue
-
-
-
 ### Known issue in VS Code 2.57 and later
 
 The Gemini Code Assist 2.57 and later releases for VS Code have a known issue
@@ -127,20 +99,12 @@ gnc c runtime version that's earlier than 2.36.
   2.36 or higher.
 * Alternatively, you can downgrade the Gemini Code Assist VS Code extension
   to version 2.56 until a fix is released.
-
-### Fixed
-
-
 
 ### VS Code server connection issue fixed as of version 2.58.1
 
 The [server connection issue](#known_issue_in_vs_code_257_and_later) affecting
 Gemini Code Assist 2.57 and 2.58 releases is fixed as of version 2.58.1
 
-### Issue
-
-
-
 ### Known issue in VS Code 2.57 and later
 
 The Gemini Code Assist 2.57 and later releases for VS Code have a known issue
@@ -151,10 +115,6 @@ gnc c runtime version that's earlier than 2.36.
   2.36 or higher.
 * Alternatively, you can downgrade the Gemini Code Assist VS Code extension
   to version 2.56 until a fix is released.
-
-### Fixed
-
-
 
 ### VS Code server connection issue fixed as of version 2.58.1
 
@@ -164,9 +124,21 @@ Gemini Code Assist 2.57 and 2.58 releases is fixed as of version 2.58.1
 ---
 ## 2025-11-12
 
-### Feature
+### Chat performance metrics
 
+Gain deeper insights into Gemini for Google Cloud's chat performance with
+metrics for chat acceptance rate and lines of chat accepted, including
+interactions in Agent mode and non-agentic chat. Combine these metrics with
+existing code metrics to calculate total acceptance and total lines of code
+accepted, providing a complete picture of Gemini's performance. For more
+information, see
+[View Gemini for Google Cloud logs](https://docs.cloud.google.com/gemini/docs/log-gemini).
 
+### Code customization available in agent mode and Gemini CLI (Preview)
+
+[Code customization](https://docs.cloud.google.com/gemini/docs/codeassist/code-customization-overview) is now
+supported when using [Gemini CLI](https://docs.cloud.google.com/gemini/docs/codeassist/gemini-cli) and
+[agent mode](https://docs.cloud.google.com/gemini/docs/codeassist/agent-mode) in Gemini Code Assist.
 
 ### Chat performance metrics
 
@@ -178,43 +150,11 @@ accepted, providing a complete picture of Gemini's performance. For more
 information, see
 [View Gemini for Google Cloud logs](https://docs.cloud.google.com/gemini/docs/log-gemini).
 
-### Feature
-
-
-
 ### Code customization available in agent mode and Gemini CLI (Preview)
 
 [Code customization](https://docs.cloud.google.com/gemini/docs/codeassist/code-customization-overview) is now
 supported when using [Gemini CLI](https://docs.cloud.google.com/gemini/docs/codeassist/gemini-cli) and
 [agent mode](https://docs.cloud.google.com/gemini/docs/codeassist/agent-mode) in Gemini Code Assist.
-
-### Feature
-
-
-
-### Chat performance metrics
-
-Gain deeper insights into Gemini for Google Cloud's chat performance with
-metrics for chat acceptance rate and lines of chat accepted, including
-interactions in Agent mode and non-agentic chat. Combine these metrics with
-existing code metrics to calculate total acceptance and total lines of code
-accepted, providing a complete picture of Gemini's performance. For more
-information, see
-[View Gemini for Google Cloud logs](https://docs.cloud.google.com/gemini/docs/log-gemini).
-
-### Feature
-
-
-
-### Code customization available in agent mode and Gemini CLI (Preview)
-
-[Code customization](https://docs.cloud.google.com/gemini/docs/codeassist/code-customization-overview) is now
-supported when using [Gemini CLI](https://docs.cloud.google.com/gemini/docs/codeassist/gemini-cli) and
-[agent mode](https://docs.cloud.google.com/gemini/docs/codeassist/agent-mode) in Gemini Code Assist.
-
-### Feature
-
-
 
 ### Inline diff is generally available (GA) for IntelliJ
 
@@ -230,10 +170,6 @@ If preferred, you can also
 to have a side-by-side diff window instead of the inline diff.
 
 ![Inline diff in IntelliJ Gemini Code Assist.](https://cloud.google.com/gemini/images/release-notes-images/intellij-inline-diff.gif)
-
-### Feature
-
-
 
 ### Inline diff is generally available (GA) for IntelliJ
 
@@ -253,10 +189,6 @@ to have a side-by-side diff window instead of the inline diff.
 ---
 ## 2025-11-10
 
-### Feature
-
-
-
 ### Persistent memory for Gemini Code Assist on GitHub (Preview)
 
 * [Gemini Code Assist on GitHub](https://developers.google.com/gemini-code-assist/docs/review-github-code#versions)
@@ -268,10 +200,6 @@ to have a side-by-side diff window instead of the inline diff.
   version, persistent memory is enabled from the Gemini Code Assist site. For
   more information, see
   [manage configuration files across multiple repositories](https://developers.google.com/gemini-code-assist/docs/customize-gemini-behavior-github#bulk-config).
-
-### Feature
-
-
 
 ### Persistent memory for Gemini Code Assist on GitHub (Preview)
 

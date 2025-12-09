@@ -9,11 +9,12 @@ import httpx
 from markdownify import markdownify  # type: ignore
 
 from . import models
+from .exceptions import InvalidFeed
 
 
 def fetch_feed(url: str) -> models.Index:
     with httpx.Client() as client:
-        response = client.get(url)
+        response = client.get(url, follow_redirects=True)
 
     index = parse_atom_feed(response.text)
     return index
@@ -26,7 +27,11 @@ def parse_atom_feed(feed: str) -> models.Index:
         "atom": "http://www.w3.org/2005/Atom",
     }
 
-    root = ElementTree.fromstring(feed)
+    try:
+        root = ElementTree.fromstring(feed)
+    except ElementTree.ParseError as e:
+        raise InvalidFeed("Failed to parse Atom feed", feed=feed) from e
+
     for atom_entry in root.findall("atom:entry", ns):
         content = atom_entry.find("atom:content", ns)
         assert content is not None

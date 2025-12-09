@@ -4,13 +4,17 @@ import click
 
 from . import models
 from . import summari  # yes, I know
+from .exceptions import ApplicationError
 from .parser import fetch_feed
 
 pass_config = click.make_pass_decorator(models.Config)
 
 
 def main() -> None:
-    cli()
+    try:
+        cli()
+    except ApplicationError as e:
+        click.echo(click.style(f"{e}", fg="red"))
 
 
 @click.group()

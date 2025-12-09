@@ -1,5 +1,30 @@
 # Apigee X
 
+## 2025-12-05
+
+### Announcement
+
+On December 5th, 2025, we released an updated version of Apigee.
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+### Security
+
+| Bug ID | Description |
+| --- | --- |
+| **388271708** | **Security fix for Apigee infrastructure** This addresses the following vulnerability:   * CVE-2025-13426 Fixed an issue with the JavaCallout policy that could result in remote code execution. |
+
+---
+## 2025-12-04
+
+### Feature
+
+**Mask KVM values**
+
+You can now turn on key value map (KVM) masking to mask values with asterisks (\*\*\*\*\*).
+For more information, see [About KVM masking](https://docs.cloud.google.com/apigee/docs/api-platform/cache/key-value-maps#aboutmasking).
+
+---
 ## 2025-11-17
 
 ### Announcement

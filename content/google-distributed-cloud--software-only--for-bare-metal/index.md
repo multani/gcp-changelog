@@ -1,25 +1,29 @@
 # Google Distributed Cloud (software only) for bare metal
 
-## 2025-11-12
+## 2025-12-05
+
+### Issue
+
+For information about the latest known issues, see [Google Distributed Cloud for
+bare metal known
+issues](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues)
+in the Troubleshooting section.
 
 ### Fixed
 
-The following issues were fixed in 1.33.200-gke.70:
+The following issues were fixed in 1.33.300-gke.60:
 
-* Fixed a timeout issue for the `kubeadm` API server health check that runs
-  during bootstrap cluster creation. The timeout issue blocked some cluster
-  operations, such as restoring a cluster.
-* This patch release doesn't include new [fixes for specific, externally-cited
-  vulnerabilities](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
+* Fixed vulnerabilities listed in [Vulnerability
+  fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
 
 ### Announcement
 
-Google Distributed Cloud for bare metal 1.33.200-gke.70 is now available for
+Google Distributed Cloud for bare metal 1.33.300-gke.60 is now available for
 [download](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads). To
 upgrade, see [Upgrade
 clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade).
-Distributed Cloud for bare metal 1.33.200-gke.70 runs on
-Kubernetes v1.33.4-gke.900.
+Distributed Cloud for bare metal 1.33.300-gke.60 runs on
+Kubernetes v1.33.5-gke.900.
 
 After a release, it takes approximately 7 to 14 days for the version to become
 available for installations or upgrades with the [GKE On-Prem API
@@ -30,6 +34,82 @@ If you use a third-party storage vendor, check the [Ready storage
 partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage) document
 to make sure the storage vendor has already passed the qualification for this
 release of Distributed Cloud for bare metal.
+
+---
+## 2025-12-02
+
+### Issue
+
+For information about the latest known issues, see [Google Distributed Cloud for
+bare metal known
+issues](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues)
+in the Troubleshooting section.
+
+### Fixed
+
+The following issues were fixed in 1.32.700-gke.64:
+
+* Fixed vulnerabilities listed in [Vulnerability
+  fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
+
+### Announcement
+
+Google Distributed Cloud for bare metal 1.32.700-gke.64 is now available for
+[download](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads).
+To upgrade, see [Upgrade
+clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade).
+Google Distributed Cloud for bare metal 1.32.700-gke.64 runs on Kubernetes
+v1.32.9-gke.700.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the [GKE On-Prem API
+clients](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools):
+the Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the [Ready storage
+partners](https://docs.cloud.google.com/anthos/docs/resources/partner-storage)
+document to make sure the storage vendor has already passed the qualification
+for this release of Google Distributed Cloud for bare metal.
+
+---
+## 2025-11-12
+
+### Announcement
+
+Google Distributed Cloud for bare metal 1.33.200-gke.70 is now available for
+[download](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads). To
+upgrade, see [Upgrade
+clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade).
+Distributed Cloud for bare metal 1.33.200-gke.70 runs on
+Kubernetes v1.33.-gke.900.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the [GKE On-Prem API
+clients](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools):
+the Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the [Ready storage
+partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage) document
+to make sure the storage vendor has already passed the qualification for this
+release of Distributed Cloud for bare metal.
+
+### Fixed
+
+The following issues were fixed in 1.33.200-gke.70:
+
+* Fixed an issue where configuring your cluster to use [Workload Identity
+  Cluster
+  Authentication](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/wi-cluster-auth)
+  together with a [registry
+  mirror](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/registry-mirror)
+  caused containerd instability. To use the fix, add the
+  `baremetal.cluster.gke.io/enable-gcr-image-credential-refresh: "false"`
+  cluster annotation.
+* Fixed a timeout issue for the `kubeadm` API server health check that runs
+  during bootstrap cluster creation. The timeout issue blocked some cluster
+  operations, such as restoring a cluster.
+* This patch release doesn't include new [fixes for specific, externally-cited
+  vulnerabilities](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
 
 ### Issue
 

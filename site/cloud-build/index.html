@@ -461,6 +461,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Application design center <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../application-design-center/" class="dropdown-item">Application Design Center</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Application integration <b class="caret"></b>
                         </a>
 
@@ -977,6 +989,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Cloud tpu <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../cloud-tpu/" class="dropdown-item">Cloud TPU</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Cloud trace <b class="caret"></b>
                         </a>
 
@@ -1308,6 +1332,18 @@
                             
   <li>
     <a href="../firestore-in-datastore-mode/" class="dropdown-item">Firestore in Datastore mode</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Gemini <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../gemini/" class="dropdown-item">Gemini</a>
   </li>
                         </ul>
                       </li>
@@ -2009,6 +2045,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Storage transfer service <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../storage-transfer-service/" class="dropdown-item">Storage Transfer Service</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Text to speech <b class="caret"></b>
                         </a>
 
@@ -2148,8 +2196,16 @@
 
 
 <h1 id="cloud-build">Cloud Build</h1>
-<h2 id="2025-10-09">2025-10-09</h2>
+<h2 id="2025-12-08">2025-12-08</h2>
 <h3 id="changed">Changed</h3>
+<p>In build config files, the <code>mavenArtifacts</code> field now supports the
+<code>deployFolder</code> field. You can use the <code>deployFolder</code> field to upload all Maven
+files in a folder to a specific Artifact Registry repository. For more
+information, see
+<a href="https://docs.cloud.google.com/build/docs/build-config-file-schema#upload-all-maven-files">Upload all Maven files in a folder to an Artifact Registry repository</a>.</p>
+<hr />
+<h2 id="2025-10-09">2025-10-09</h2>
+<h3 id="changed_1">Changed</h3>
 <p>The Service Account User role has been removed from the Cloud Build Permissions page in the Google Cloud Console. Instead, when you enable certain roles on your Cloud Build service account, you can configure your Cloud Build Service account to impersonate the service account of the managed services related to those roles. This configuration lets you deploy builds using managed services while maintaining minimal permissions. For more information, see <a href="https://docs.cloud.google.com/build/docs/deploying-builds/cb-sa-imp">Configure Cloud Build service account impersonation for managed services</a>.</p>
 <p>In addition, the Cloud Build Permissions page in the Google Cloud Console will only show the <a href="https://docs.cloud.google.com/build/docs/cloud-build-service-account#about_legacy">legacy Cloud Build service account</a> if your organization's policy allows it.</p>
 <hr />
@@ -2181,6 +2237,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-build">Cloud Build</a></li>
+          <li class="nav-item">
+            <a href="#2025-12-08" class="nav-link">2025-12-08</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-10-09" class="nav-link">2025-10-09</a>
           </li>

@@ -2,9 +2,121 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: BigQuery</title>
   <subtitle>Changelog for Google Cloud product: BigQuery</subtitle>
-  <updated>2025-11-19T00:00:00+00:00</updated>
+  <updated>2025-12-02T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:bigquery</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/bigquery/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-12-02:feature:0</id>
+    <published>2025-12-02T00:00:00+00:00</published>
+    <updated>2025-12-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now enable
+<a href="https://docs.cloud.google.com/bigquery/docs/autonomous-embedding-generation">autonomous embedding generation</a>
+on tables that you make with the
+<a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#create_table_statement"><code>CREATE TABLE</code> statement</a>.
+When you do this, BigQuery maintains a column of embeddings on
+the table based on a source column. When you add or modify data in the source
+column, BigQuery automatically generates or updates the embedding
+column for that data.</p>
+<p>You can also use the
+<a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-search"><code>AI.SEARCH</code></a>
+function, enabling semantic search on tables that have autonomous embedding
+generation enabled.</p>
+<p>These features are in
+<a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>]]></content>
+    <summary>BigQuery now supports autonomous embedding generation for tables created with the `CREATE TABLE` statement. This feature automatically maintains an embeddings column based on a source column, updating embeddings as data changes. Additionally, the `AI.SEARCH` function enables semantic search on tables with this feature enabled. These capabilities are currently in Preview.</summary>
+    <title>Feature: Autonomous Embedding Generation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-12-02:changed:1</id>
+    <published>2025-12-02T00:00:00+00:00</published>
+    <updated>2025-12-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An updated version of the
+<a href="https://docs.cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers#current_odbc_driver">ODBC driver for BigQuery</a>
+is now available.</p>]]></content>
+    <summary>The latest ODBC driver for BigQuery has been released.</summary>
+    <title>Changed: ODBC driver for BigQuery updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-12-01:feature:0</id>
+    <published>2025-12-01T00:00:00+00:00</published>
+    <updated>2025-12-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Search results in the <a href="https://docs.cloud.google.com/bigquery/docs/bigquery-web-ui#explorer_pane">Explorer
+pane</a> in BigQuery Studio now show
+results in the current organization. You can use a drop-down menu to switch
+between organizations. This feature is <a href="https://cloud.google.com/products/#product-launch-stages">generally
+available</a> (GA).</p>]]></content>
+    <summary>Search results in BigQuery Studio now show results in the current organization. You can use a drop-down menu to switch between organizations.</summary>
+    <title>Feature: Search results now in current organization</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-11-26:feature:0</id>
+    <published>2025-11-26T00:00:00+00:00</published>
+    <updated>2025-11-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The BigQuery Data Transfer Service now supports <a href="https://docs.cloud.google.com/bigquery/docs/salesforce-transfer#full_or_incremental_transfers">incremental data transfers</a>
+when transferring data from Salesforce to BigQuery. This feature is supported in
+<a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>]]></content>
+    <summary>The BigQuery Data Transfer Service now supports incremental data transfers from Salesforce to BigQuery. This feature is available in Preview.</summary>
+    <title>Feature: Incremental data transfers from Salesforce to BigQuery now in Preview</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-11-25:changed:0</id>
+    <published>2025-11-25T00:00:00+00:00</published>
+    <updated>2025-11-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An updated version of the
+<a href="https://docs.cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers#current_jdbc_driver">JDBC driver for BigQuery</a>
+is now available.</p>]]></content>
+    <summary>A new version of the JDBC driver for BigQuery is available.</summary>
+    <title>Changed: JDBC driver updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-11-24:feature:0</id>
+    <published>2025-11-24T00:00:00+00:00</published>
+    <updated>2025-11-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can
+<a href="https://docs.cloud.google.com/bigquery/docs/create-pipelines#sqlx-options">set the default project and dataset for your pipeline</a>
+in the <strong>SQLX options</strong> section, which simplifies task configuration by using
+these defaults for all tasks. This feature is
+<a href="https://cloud.google.com/products/#product-launch-stages">generally available</a>
+(GA).</p>]]></content>
+    <summary>Set default project and dataset for your pipeline in SQLX options to simplify task configuration. This feature is now generally available.</summary>
+    <title>Feature: Default Project and Dataset for Pipelines</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2025-11-20:feature:0</id>
+    <published>2025-11-20T00:00:00+00:00</published>
+    <updated>2025-11-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now use the BigQuery Agent Analytics plugin within the Agent Development
+Kit to export agent interaction data directly into BigQuery. This plugin
+captures comprehensive logs of your agent's prompts, tool usage, and responses,
+enabling you to analyze and visualize agent performance metrics. The plugin
+leverages the BigQuery Storage Write API for efficient high-throughput
+streaming. For more information on how to leverage this plugin in your agent,
+see the
+<a href="https://cloud.google.com/blog/products/data-analytics/introducing-bigquery-agent-analytics/?e=48754805">Announcing BigQuery Agent Analytics for the Google ADK</a>.</p>]]></content>
+    <summary>Export agent interaction data to BigQuery using the new Agent Analytics plugin in the Agent Development Kit. Analyze performance with comprehensive logs and efficient data streaming.</summary>
+    <title>Feature: BigQuery Agent Analytics Plugin</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

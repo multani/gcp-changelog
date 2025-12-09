@@ -1,5 +1,28 @@
 # Google Cloud VMware Engine
 
+## 2025-12-05
+
+### Announcement
+
+VMware Engine now supports private clouds with mixed node families (`ve1` and `ve2`). While a private cloud can contain mixed node families, each cluster within that private cloud must contain nodes of the same type. This feature is available in the following regions and zones:
+
+* Ashburn, North America (`us-east4-a`, `us-east4-b`)
+* Iowa, North America (`us-central1-a`)
+* Montreal, North America (`northamerica-northeast1-a`)
+* Sydney, Australia (`australia-southeast1-a`, `australia-southeast1-b`)
+* Frankfurt, Europe (`europe-west3-a`, `europe-west3-b`)
+* Santiago, South America (`southamerica-west1-b`)
+
+**Note:** To create a new cluster of a different node family, contact Cloud Customer Care.
+
+---
+## 2025-11-26
+
+### Announcement
+
+VMware Engine [`ve2` nodes](https://docs.cloud.google.com/vmware-engine/docs/concepts/node-types) are now available in the Dallas, Texas, North America region (`us-south1-b`).
+
+---
 ## 2025-11-14
 
 ### Announcement

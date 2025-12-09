@@ -1,6 +1,16 @@
 {
   "name": "Cloud Composer",
   "entries": {
+    "2025-11-24": [
+      {
+        "kind": "Issue",
+        "content": "We discovered an issue that might impact the reporting of metrics in the\nfollowing recently released Cloud Composer versions:\n\n* composer-2.15.4-airflow-\\*\n* composer-3-airflow-2.10.5-build.20\n* composer-3-airflow-2.9.3-build.40\n* composer-3-airflow-3.1.0-build.3\n\nTo prevent additional environments from being affected, we have disabled the\nability to upgrade existing environments to these versions and to create new\nenvironments using these versions. If your environment is already using one of\nthese versions, you can continue to use it as usual. We are working to resolve\nthe issue for all currently affected environments.",
+        "summary": {
+          "title": "Issue with reporting metrics in Cloud Composer",
+          "summary": "We found an issue that may affect metrics reporting in specific recent Cloud Composer versions. To prevent further impact, we've blocked upgrades and new deployments of these versions. Affected environments can still be used, and we're working on a fix."
+        }
+      }
+    ],
     "2025-11-17": [
       {
         "kind": "Changed",

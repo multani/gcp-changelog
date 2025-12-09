@@ -2,9 +2,63 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Vertex AI Search</title>
   <subtitle>Changelog for Google Cloud product: Vertex AI Search</subtitle>
-  <updated>2025-11-14T00:00:00+00:00</updated>
+  <updated>2025-11-24T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:vertex-ai-search</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/vertex-ai-search/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:vertex-ai-search:2025-11-24:feature:0</id>
+    <published>2025-11-24T00:00:00+00:00</published>
+    <updated>2025-11-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Vertex AI Search: Natural language query filters (GA)</strong></p>
+<p>For queries on structured data stores, the natural language queries can be
+reformulated as filters and a residual query. For example, "Find a coffee shop
+serving banana bread" becomes <code>"query": "banana bread", "filter": "type":
+ANY("cafe")</code>.</p>
+<p>The natural-language query understanding feature only applies to custom search
+apps attached to a single, structured, data store.</p>
+<p>By default, a hard restriction filter is applied, but a softer, boost-like
+filter can be used instead.</p>
+<p>This feature is generally available (GA). For more information, see <a href="https://docs.cloud.google.com/generative-ai-app-builder/docs/natural-language-queries">Filter with
+natural language
+understanding</a>.</p>]]></content>
+    <summary>Vertex AI Search now supports natural language query filters for structured data stores. This feature allows users to search using conversational language, which is then translated into precise filters and queries. For example, "Find a coffee shop serving banana bread" can become a query with a filter for "cafe" type and a search for "banana bread". This enhances the usability of custom search applications built on single, structured data stores. The feature is now generally available.</summary>
+    <title>Feature: Natural language query filters for Vertex AI Search</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:vertex-ai-search:2025-11-21:feature:0</id>
+    <published>2025-11-21T00:00:00+00:00</published>
+    <updated>2025-11-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Vertex AI Search: Allowlist fields for natural language query understanding</strong></p>
+<p>You can specify an allowlist of fields to be used for filter extraction. If you
+have some fields, perhaps for internal use, that you don't want to be used in
+filters, then specify an allowlist to restrict the fields that can be used.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/generative-ai-app-builder/docs/natural-language-queries#search-nl-allowlist">Specify fields for natural-language
+queries</a>.</p>]]></content>
+    <summary>Control which fields are used for filters in natural language queries. Specify an allowlist to include only desired fields, excluding internal or irrelevant ones, for more precise search understanding.</summary>
+    <title>Feature: Allowlist Fields for Enhanced Search</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:vertex-ai-search:2025-11-20:feature:0</id>
+    <published>2025-11-20T00:00:00+00:00</published>
+    <updated>2025-11-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Vertex AI Search: Updated file size restrictions for unstructured data</strong></p>
+<p>The file size restrictions for unstructured data import have been unified. For
+unstructured data, you can import files up to 200 MB regardless of the
+parser type.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/generative-ai-app-builder/docs/prepare-data#unstructured">Unstructured
+data</a>.</p>]]></content>
+    <summary>File size restrictions for unstructured data import have been unified to 200 MB, regardless of parser type.</summary>
+    <title>Feature: Updated file size restrictions for unstructured data</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

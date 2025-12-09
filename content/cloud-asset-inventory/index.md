@@ -1,5 +1,44 @@
 # Cloud Asset Inventory
 
+## 2025-11-24
+
+### Feature
+
+The following resource types are publicly available through the
+[ExportAssets](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/exportAssets),
+[ListAssets](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/assets/list),
+[BatchGetAssetsHistory](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/batchGetAssetsHistory),
+[QueryAssets](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/queryAssets),
+[Feed](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/feeds),
+[SearchAllResources](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllResources),
+and
+[SearchAllIamPolicies](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllIamPolicies)
+APIs.
+
+* BigQuery sharing
+  + `analyticshub.googleapis.com/DataExchange`
+  + `analyticshub.googleapis.com/Listing`
+
+---
+## 2025-11-20
+
+### Feature
+
+The following resource types are publicly available through the
+[ExportAssets](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/exportAssets),
+[ListAssets](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/assets/list),
+[BatchGetAssetsHistory](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/batchGetAssetsHistory),
+[QueryAssets](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/queryAssets),
+[Feed](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/feeds),
+[SearchAllResources](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllResources),
+and
+[SearchAllIamPolicies](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllIamPolicies)
+APIs.
+
+* Vertex AI
+  + `aiplatform.googleapis.com/ReasoningEngine`
+
+---
 ## 2025-09-15
 
 ### Feature

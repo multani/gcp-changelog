@@ -2,9 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for MySQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for MySQL</subtitle>
-  <updated>2025-11-18T00:00:00+00:00</updated>
+  <updated>2025-11-21T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-mysql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2025-11-21:feature:0</id>
+    <published>2025-11-21T00:00:00+00:00</published>
+    <updated>2025-11-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>To help prevent out-of-memory (OOM) events, you can enable managed buffer pool
+for Cloud SQL for MySQL 8.0 and later instances. When you enable managed buffer
+pool, Cloud SQL reduces the value of the
+<code>innodb_buffer_pool_size</code> configuration and frees up memory when memory usage
+is high, and the instance is in danger of an OOM event.
+After memory usage stabilizes at a lower value, MySQL increases the
+value of <code>innodb_buffer_pool_size</code> incrementally to its original value.</p>
+<p>To enable managed buffer pool, your Cloud SQL instance must use a
+maintenance version of <a href="https://docs.cloud.google.com/sql/docs/mysql/maintenance-changelog/"><code>[$MYSQL_VERSION].R20251004.01_07</code></a>
+or later. You can't enable managed buffer pool for instances that use a
+shared core or for instances that are running MySQL 5.6 or MySQL 5.7.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/mysql/optimize-high-memory-usage#enable-managed-buffer-pool">Enable managed buffer pool</a>.
+Support for managed buffer pool is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>]]></content>
+    <summary>Prevent OOM events with managed buffer pool for Cloud SQL for MySQL 8.0+ instances. This feature dynamically adjusts the innodb_buffer_pool_size to manage memory usage and avoid Out-of-Memory errors.</summary>
+    <title>Feature: Managed buffer pool for Cloud SQL for MySQL</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,81 @@
 # Google SecOps Marketplace
 
+## 2025-12-04
+
+### Changed
+
+**CSV**: Version 38.0
+
+* **Integration**: Updated dependencies.
+
+### Changed
+
+**Tenable Security Center**: Version 19.0
+
+* **Integration**: Added support to authenticate using an Access Key and a
+  Secret Key.
+
+### Changed
+
+**Cofense Triage**: Version 15.0
+
+* Improved category based filtering in the following connector:
+
+  + **Cofense Triage - Reports Connector**
+
+### Changed
+
+**Gmail**: Version 6.0
+
+* **Integration**: Updated the dependency files.
+
+---
+## 2025-11-26
+
+### Feature
+
+**Google Chronicle**: Version 69.0
+
+* The following new actions have been added:
+
+  + **Generate UDM Query**
+  + **Add Entry To Watchlist**
+
+### Changed
+
+**CSV**: Version 37.0
+
+* Updated support for nested JSONs in the following action:
+
+  + **Save Json to CSV**
+
+### Changed
+
+Updated the dependency files in the following integrations:
+
+* **Exchange**: Version 117.0
+* **HTTP V2**: Version 10.0
+
+### Changed
+
+**Urlscan.io**: Version 27.0
+
+* Added support for the Domain entity in the following action:
+
+  + **Search For Scans**
+
+### Changed
+
+**Jira**: Version 50.0
+
+* Improved handling of comments with additional styling in the following action:
+
+  + **Add Comment**
+* Improved handling of comments with additional styling in the following job:
+
+  + **Sync Comments**
+
+---
 ## 2025-11-19
 
 ### Feature
@@ -94,36 +170,6 @@ New **Azure Monitor** integration
 
 ### Changed
 
-**Cybereason**: Version 21.0
-
-* **Integration**: Added ability to provide a CA Certificate file as part of the
-  configuration.
-
-### Changed
-
-**Google Chronicle**: Version 67.0
-
-* Updated curated detections processing logic in the following action:
-
-  + **Get Detection Details**
-
-### Changed
-
-The following integrations are now GUS recommended:
-
-* **CrowdStrike Falcon**: Version 69.0
-* **Wiz**: Version .0
-* **Fortigate**: Version 16.0
-
-### Changed
-
-Updated the dependency files in the following integrations:
-
-* **Microsoft Graph Mail**: Version 33.0
-* **Microsoft Graph Mail Delegated**: Version 10.0
-
-### Changed
-
 Updated action definitions to meet the new requirements of IDE in the following
 integrations:
 
@@ -172,9 +218,39 @@ Updated Integrations (45)
 * **VirusTotal**: Version 40.0
 * **WildFire**: Version 8.0
 * **WMI**: Version 10.0
-* **XForce**: Version .0
+* **XForce**: Version 16.0
 * **Zabbix**: Version 14.0
 * **Zendesk**: Version 10.0
+
+### Changed
+
+**Cybereason**: Version 21.0
+
+* **Integration**: Added ability to provide a CA Certificate file as part of the
+  configuration.
+
+### Changed
+
+**Google Chronicle**: Version 67.0
+
+* Updated curated detections processing logic in the following action:
+
+  + **Get Detection Details**
+
+### Changed
+
+The following integrations are now GUS recommended:
+
+* **CrowdStrike Falcon**: Version 69.0
+* **Wiz**: Version 3.0
+* **Fortigate**: Version 16.0
+
+### Changed
+
+Updated the dependency files in the following integrations:
+
+* **Microsoft Graph Mail**: Version 33.0
+* **Microsoft Graph Mail Delegated**: Version 10.0
 
 ### Changed
 

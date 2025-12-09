@@ -461,6 +461,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Application design center <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../application-design-center/" class="dropdown-item">Application Design Center</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Application integration <b class="caret"></b>
                         </a>
 
@@ -977,6 +989,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Cloud tpu <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../cloud-tpu/" class="dropdown-item">Cloud TPU</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Cloud trace <b class="caret"></b>
                         </a>
 
@@ -1308,6 +1332,18 @@
                             
   <li>
     <a href="../firestore-in-datastore-mode/" class="dropdown-item">Firestore in Datastore mode</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Gemini <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../gemini/" class="dropdown-item">Gemini</a>
   </li>
                         </ul>
                       </li>
@@ -2009,6 +2045,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Storage transfer service <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../storage-transfer-service/" class="dropdown-item">Storage Transfer Service</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Text to speech <b class="caret"></b>
                         </a>
 
@@ -2148,8 +2196,33 @@
 
 
 <h1 id="cluster-toolkit">Cluster Toolkit</h1>
-<h2 id="2025-11-03">2025-11-03</h2>
+<h2 id="2025-11-19">2025-11-19</h2>
 <h3 id="feature">Feature</h3>
+<p>Cluster Toolkit version v1.73.0 is available. This release adds support
+for the
+<a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/about-gke-inference-gateway">GKE Inference Gateway</a>
+and adds a new blueprint for <a href="https://docs.cloud.google.com/compute/docs/accelerator-optimized-machines#a3-vms">A3
+High</a> machines that
+automates the process of building a custom image with a TCPx-patched kernel for
+enhanced network performance. This version also includes an initial blueprint
+for <a href="https://docs.cloud.google.com/compute/docs/gpus#rtx-6000-gpus">G4 machine types</a> and parameterized the
+gIB NCCL RDMA plugin installer in the <code>gke-a4x.yaml</code> blueprint. For more
+information about this release, see the <a href="https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/4857">Release announcement on
+GitHub</a>.</p>
+<hr />
+<h2 id="2025-11-13">2025-11-13</h2>
+<h3 id="feature_1">Feature</h3>
+<p>Cluster Toolkit version v1.72.0 is available. This release adds support
+for Google Cloud Managed Lustre as an optional storage solution for the
+<code>gke-tpu-v6-advanced</code> blueprint. This release also adds four example
+blueprints to support the deployment of Sycomp storage. In addition, this release makes
+improvements to the <code>gke-node-pool</code> module and <code>a4xhigh-slurm-blueprint.yaml</code>
+blueprint. For more information about this release, see the <a href="https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/4841">Release
+announcement on
+GitHub</a>.</p>
+<hr />
+<h2 id="2025-11-03">2025-11-03</h2>
+<h3 id="feature_2">Feature</h3>
 <p>Cluster Toolkit version v1.71.0 is available. This release includes a
 fix for a munge mount on login failure due to slow controller Slurm v6 setup, and
 adds Managed Lustre support in the <code>gke-a4x</code> blueprint. For more information about
@@ -2157,7 +2230,7 @@ this release, see the <a href="https://github.com/GoogleCloudPlatform/cluster-to
 GitHub</a>.</p>
 <hr />
 <h2 id="2025-10-24">2025-10-24</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>Cluster Toolkit version v1.70.0 is available. This release adds
 automated TPU support and Cloud Storage FUSE mounts in the TPU v6 blueprint and refactors
 the H4D blueprint. This version also includes breaking changes, such as removing
@@ -2167,7 +2240,7 @@ changes, see the <a href="https://github.com/GoogleCloudPlatform/cluster-toolkit
 GitHub</a>.</p>
 <hr />
 <h2 id="2025-10-21">2025-10-21</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>Cluster Toolkit version v1.69.0 is available. This release adds
 NUMA-aware scheduling in GKE clusters for G4 machines and adds a new module that
 provides mount scripts for WEKA filesystems. This version also includes PSA
@@ -2176,7 +2249,7 @@ the <a href="https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/
 GitHub</a>.</p>
 <hr />
 <h2 id="2025-10-10">2025-10-10</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p>Cluster Toolkit release version v1.68.0 is available. This release
 introduces the option to download the NVIDIA Collective Communications Library
 (NCCL) software packages <code>libnccl2</code> and <code>libnccl-dev</code> for A3U and A4H machine
@@ -2191,7 +2264,7 @@ Spectrum Symphony
 workloads</a>.</p>
 <hr />
 <h2 id="2025-09-19">2025-09-19</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p>Cluster Toolkit release version v1.67.0 is available. This release
 introduces additional support for aarch64-based architecture, as well as other
 minor changes. For more information about this release, see the <a href="https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/4674">Release
@@ -2199,7 +2272,7 @@ Announcement on
 GitHub</a>.</p>
 <hr />
 <h2 id="2025-09-15">2025-09-15</h2>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p>Cluster Toolkit release version v1.66.0 is available. This release
 enables Cloud Storage FUSE for H4D machine types and sets the
 default cluster availability to zonal, as well as other minor changes. For more
@@ -2207,7 +2280,7 @@ information about this release, see the <a href="https://github.com/GoogleCloudP
 GitHub</a>.</p>
 <hr />
 <h2 id="2025-08-14">2025-08-14</h2>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p>Cluster Toolkit version v1.62.0 is available. This release adds new
 blueprints for A4X instances and introduces a community scheduler module for
 Slinky (Slurm on Kubernetes). For more details, see the <a href="https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/4514">Release announcement on
@@ -2223,6 +2296,12 @@ GitHub</a>.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cluster-toolkit">Cluster Toolkit</a></li>
+          <li class="nav-item">
+            <a href="#2025-11-19" class="nav-link">2025-11-19</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2025-11-13" class="nav-link">2025-11-13</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-11-03" class="nav-link">2025-11-03</a>
           </li>

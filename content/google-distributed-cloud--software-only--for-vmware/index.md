@@ -1,6 +1,75 @@
 # Google Distributed Cloud (software only) for VMware
 
+## 2025-12-05
+
+### Fixed
+
+The following issues were fixed in 1.33.300-gke.60:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
+
+### Announcement
+
+Google Distributed Cloud (software only) for VMware 1.33.300-gke.60 is
+available for
+[download](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads). To
+upgrade, see [Upgrade a
+cluster](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading).
+Distributed Cloud 1.33.300-gke.60 runs on Kubernetes
+v1.33.5-gke.900.
+
+If you are using a third-party storage vendor, check the [GDC Ready storage
+partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage) document
+to make sure the storage vendor has already passed the qualification for this
+release.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for use with [GKE On-Prem API
+clients](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools):
+the Google Cloud console, the gcloud CLI, and Terraform.
+
+---
+## 2025-12-02
+
+### Announcement
+
+Google Distributed Cloud (software only) for VMware 1.32.700-gke.64 is
+available for
+[download](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads). To
+upgrade, see [Upgrade a
+cluster](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading).
+Distributed Cloud 1.32.700-gke.64 runs on Kubernetes
+v1.32.9-gke.700.
+
+If you are using a third-party storage vendor, check the [GDC Ready storage
+partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage) document
+to make sure the storage vendor has already passed the qualification for this
+release.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for use with [GKE On-Prem API
+clients](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools):
+the Google Cloud console, the gcloud CLI, and Terraform.
+
+### Fixed
+
+The following issues were fixed in 1.32.700-gke.64:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
+
+---
 ## 2025-11-12
+
+### Fixed
+
+The following issues were fixed in 1.33.200-gke.70:
+
+* Fixed [an
+  issue](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/troubleshooting/known-issues#nonha-to-ha-adv-update-fail)
+  that `gkectl update` blocks updating a non-HA non-advanced cluster to HA
+  advanced cluster
+* Fixed vulnerabilities listed in [Vulnerability
+  fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
 
 ### Announcement
 
@@ -21,17 +90,6 @@ After a release, it takes approximately 7 to 14 days for the version to become
 available for use with [GKE On-Prem API
 clients](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools):
 the Google Cloud console, the gcloud CLI, and Terraform.
-
-### Fixed
-
-The following issues were fixed in 1.33.200-gke.70:
-
-* Fixed [an
-  issue](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/troubleshooting/known-issues#nonha-to-ha-adv-update-fail)
-  that `gkectl update` blocks updating a non-HA non-advanced cluster to HA
-  advanced cluster
-* Fixed vulnerabilities listed in [Vulnerability
-  fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
 
 ### Fixed
 

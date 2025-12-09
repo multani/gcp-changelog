@@ -1,5 +1,47 @@
 # Looker
 
+## 2025-12-03
+
+### Other
+
+For Looker instances that are running Looker 25.20 or later, admins can now [test the connection](https://docs.cloud.google.com/looker/docs/admin-panel-platform-actions) between their instance and the Looker Action Hub. This option is available only for the Looker Action Hub. It is not available for [custom action hubs](https://docs.cloud.google.com/looker/docs/action-hub#setting_up_a_local_action_hub_server).
+
+### Feature
+
+Now available in preview, the [**Self-service Explore**](https://docs.cloud.google.com/looker/docs/exploring-self-service) feature lets Looker users upload CSV, XLS, and XLSX files to Looker and then query and visualize the data in a Looker Explore without needing to configure a LookML model or set up Git version control. In addition, [content certification](https://docs.cloud.google.com/looker/docs/content-certification) is supported for self-service Explores.
+
+---
+## 2025-12-02
+
+### Feature
+
+Now available in preview, Looker can display a new [**Connected Sheets**](https://docs.cloud.google.com/looker/docs/connected-sheets-quicklink) option in the **Explore actions** menu. The **Connected Sheets** option opens Google Sheets and initiates a connection from Google Sheets to the Looker Explore. You can then build reports, pivot tables, or charts within the newly created Google Sheets using the fields available from the selected Looker Explore. The **Connected Sheets** quick link feature must be configured in the Google Cloud console and on your Looker instance. See the [Connected Sheets quick link](https://docs.cloud.google.com/looker/docs/connected-sheets-quicklink#admin-config) documentation page for details.
+
+---
+## 2025-12-01
+
+### Feature
+
+You can now use [Google-managed certificates](https://docs.cloud.google.com/looker/docs/looker-core-custom-domain-google-managed-certs) for Looker (Google Cloud core) instances that use Private Service Connect connections. This feature simplifies custom domain configuration by using a `*.private.looker.app` domain, eliminating the need to manage your own SSL certificates. Instances may need to [migrate](https://docs.cloud.google.com/looker/docs/looker-core-psc-migration) to the updated service attachment URI.
+
+### Feature
+
+You can now use [global access](https://docs.cloud.google.com/looker/docs/looker-core-psc-overview#using_global_access) with Looker (Google Cloud core) instances that use Private Service Connect connections. Instances may need to [migrate](https://docs.cloud.google.com/looker/docs/looker-core-psc-migration) to the updated service attachment URI.
+
+### Feature
+
+The Looker–Tableau BI Connector is now supported for Tableau Cloud, so that you can use a Looker Explore as a data source in Tableau Cloud. See the [Looker–Tableau BI Connector](https://docs.cloud.google.com/looker/docs/tableau-connector#cloud) documentation page for more information.
+
+To use the Looker–Tableau BI Connector with Tableau Cloud, your admin must configure your Looker instance and your Tableau Cloud instance as described on the [Administering Tableau to Looker connections](https://docs.cloud.google.com/looker/docs/tableau-admin#cloud) documentation page.
+
+---
+## 2025-11-26
+
+### Deprecated
+
+The DataRobot [action](https://docs.cloud.google.com/looker/docs/actions-overview) will be deprecated on February 1, 2026. After that date, this action won't be available in the Looker Action Hub.
+
+---
 ## 2025-11-19
 
 ### Feature
@@ -11,7 +53,7 @@ Now available in preview, the [**Self-service Explore**](https://docs.cloud.goog
 
 ### Feature
 
-The new [content certification](https://docs.cloud.google.com/looker/docs/content-certification) feature, when enabled, lets trusted users certify Looker dashboards, Looks, and self-service Explores to indicate that the content has gone through a manual review and is certified as reliable and trustworthy. This lets other users identify reliable content and confidently use that data for decision-making.
+The [content certification](https://docs.cloud.google.com/looker/docs/content-certification) feature, when enabled, lets trusted users certify Looker dashboards and Looks to indicate that the content has gone through a manual review and is certified as reliable and trustworthy. This lets other users identify reliable content and confidently use that data for decision-making. **Note:** This item was updated on November 20, 2025.
 
 ---
 ## 2025-11-12

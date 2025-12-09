@@ -1,5 +1,32 @@
 # Cloud SQL for PostgreSQL
 
+## 2025-11-20
+
+### Feature
+
+PostgreSQL version 18 is now
+[generally available](https://cloud.google.com/products#product-launch-stages)
+for Cloud SQL for PostgreSQL.
+
+You can now use [Database Migration Service](https://docs.cloud.google.com/database-migration/docs)
+with Cloud SQL for PostgreSQL when using PostgreSQL version 18.
+
+To upgrade your instance to PostgreSQL 18, see
+[Upgrade the database major version in-place](https://docs.cloud.google.com/sql/docs/postgres/upgrade-major-db-version-inplace).
+
+The following extensions are also now available for PostgreSQL 18:
+
+* `pg_hint_plan`
+* `pgrouting`
+* `anonymizer`
+* `pg_wait_sampling`
+* `tds_fdw`
+* `plpgsql_check`
+
+For more information about these extensions, see
+[Configure PostgreSQL extensions](https://docs.cloud.google.com/sql/docs/postgres/extensions).
+
+---
 ## 2025-11-19
 
 ### Feature

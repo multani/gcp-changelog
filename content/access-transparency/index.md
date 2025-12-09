@@ -1,5 +1,14 @@
 # Access Transparency
 
+## 2025-11-18
+
+### Feature
+
+Access Transparency logs include a `permissionDetails` object with the
+`permissionType` and `logAccessed` fields to provide details about
+administrator access permissions.
+
+---
 ## 2025-10-31
 
 ### Feature

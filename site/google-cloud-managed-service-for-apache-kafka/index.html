@@ -461,6 +461,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Application design center <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../application-design-center/" class="dropdown-item">Application Design Center</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Application integration <b class="caret"></b>
                         </a>
 
@@ -977,6 +989,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Cloud tpu <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../cloud-tpu/" class="dropdown-item">Cloud TPU</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Cloud trace <b class="caret"></b>
                         </a>
 
@@ -1308,6 +1332,18 @@
                             
   <li>
     <a href="../firestore-in-datastore-mode/" class="dropdown-item">Firestore in Datastore mode</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Gemini <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../gemini/" class="dropdown-item">Gemini</a>
   </li>
                         </ul>
                       </li>
@@ -2009,6 +2045,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Storage transfer service <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../storage-transfer-service/" class="dropdown-item">Storage Transfer Service</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Text to speech <b class="caret"></b>
                         </a>
 
@@ -2148,6 +2196,21 @@
 
 
 <h1 id="google-cloud-managed-service-for-apache-kafka">Google Cloud Managed Service for Apache Kafka</h1>
+<h2 id="2025-12-08">2025-12-08</h2>
+<h3 id="changed">Changed</h3>
+<p>Kafka Connect cluster workers can now reach any endpoint that is accessible from
+the worker (primary) subnetwork. Previously, to extend worker connectivity to
+other subnets within the same VPC network, you had to specify
+these subnets in the cluster configuration. The <code>additionalSubnets</code> field is now
+ignored, and this configuration setting has been removed from the
+Google Cloud console. For more information, see
+<a href="https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/connect-cluster/create-connect-cluster#worker-subnet">Worker (primary) subnet</a>.</p>
+<h3 id="deprecated">Deprecated</h3>
+<p>The <code>additionalSubnets</code> field in the
+<a href="https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/reference/rest/v1/projects.locations.connectClusters#connectnetworkconfig"><code>ConnectNetworkConfig</code></a>
+REST API resource is deprecated. Connect cluster workers can reach any endpoint
+that is accessible from <code>primarySubnet</code> subnetwork.</p>
+<hr />
 <h2 id="2025-10-01">2025-10-01</h2>
 <h3 id="feature">Feature</h3>
 <p>Support for Kafka Connect is now <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA). Kafka Connect lets you stream data at scale between Managed Service for Apache Kafka clusters and other systems, such as external Kafka deployments, BigQuery, Cloud Storage, or Pub/Sub. For more information, see <a href="https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/kafka-connect-overview">Kafka Connect overview</a>.</p>
@@ -2194,6 +2257,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-cloud-managed-service-for-apache-kafka">Google Cloud Managed Service for Apache Kafka</a></li>
+          <li class="nav-item">
+            <a href="#2025-12-08" class="nav-link">2025-12-08</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-10-01" class="nav-link">2025-10-01</a>
           </li>

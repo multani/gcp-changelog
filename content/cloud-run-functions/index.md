@@ -1,5 +1,12 @@
 # Cloud Run functions
 
+## 2025-11-20
+
+### Feature
+
+Support for [Node.js 24 runtime](https://docs.cloud.google.com/functions/docs/concepts/execution-environment#node.js) is in [General Availability](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-11-12
 
 ### Feature

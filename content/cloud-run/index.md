@@ -1,5 +1,36 @@
 # Cloud Run
 
+## 2025-12-01
+
+### Feature
+
+You can use
+[Developer Connect in the Cloud Run console](https://docs.cloud.google.com/run/docs/continuous-deployment)
+to set up continuous deployments from GitHub, GitLab, and Bitbucket
+repositories (Preview).
+
+---
+## 2025-11-21
+
+### Feature
+
+[Configure HTTP and gRPC readiness probes](https://docs.cloud.google.com/run/docs/configuring/healthchecks#readiness-probes)
+for your Cloud Run services (Preview).
+
+### Feature
+
+Deploy a highly available, multi-region Cloud Run service with automated
+failover and failback for internal traffic using [Cloud Run service health](https://docs.cloud.google.com/run/docs/multiple-regions#service-health)
+(Preview).
+
+---
+## 2025-11-20
+
+### Feature
+
+Support for [Node.js 24 runtime](https://docs.cloud.google.com/run/docs/runtime-support#node.js) is in [General Availability](https://cloud.google.com/products?e=48754805#product-launch-stages).
+
+---
 ## 2025-11-19
 
 ### Feature
@@ -10,6 +41,11 @@ bypassing the Cloud Build step. (Preview)
 
 ---
 ## 2025-11-17
+
+### Feature
+
+The time it takes for initial deployments to Cloud Run in a new project has been reduced.
+This change results in reduced latency and a faster getting started experience.
 
 ### Feature
 

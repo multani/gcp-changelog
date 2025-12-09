@@ -1,5 +1,12 @@
 # Firestore
 
+## 2025-11-21
+
+### Feature
+
+Support for Object as document `_id` identifier.
+
+---
 ## 2025-10-27
 
 ### Feature

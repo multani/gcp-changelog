@@ -2,9 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Managed Service for Apache Kafka</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Managed Service for Apache Kafka</subtitle>
-  <updated>2025-10-01T00:00:00+00:00</updated>
+  <updated>2025-12-08T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-managed-service-for-apache-kafka</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-managed-service-for-apache-kafka/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-managed-service-for-apache-kafka:2025-12-08:changed:0</id>
+    <published>2025-12-08T00:00:00+00:00</published>
+    <updated>2025-12-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Kafka Connect cluster workers can now reach any endpoint that is accessible from
+the worker (primary) subnetwork. Previously, to extend worker connectivity to
+other subnets within the same VPC network, you had to specify
+these subnets in the cluster configuration. The <code>additionalSubnets</code> field is now
+ignored, and this configuration setting has been removed from the
+Google Cloud console. For more information, see
+<a href="https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/connect-cluster/create-connect-cluster#worker-subnet">Worker (primary) subnet</a>.</p>]]></content>
+    <summary>Kafka Connect cluster workers can now access any endpoint from the primary subnetwork, eliminating the need to specify additional subnets in the cluster configuration. The `additionalSubnets` field has been removed and is no longer used.</summary>
+    <title>Changed: Kafka Connect workers now have broader network access</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-managed-service-for-apache-kafka:2025-12-08:deprecated:1</id>
+    <published>2025-12-08T00:00:00+00:00</published>
+    <updated>2025-12-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <code>additionalSubnets</code> field in the
+<a href="https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/reference/rest/v1/projects.locations.connectClusters#connectnetworkconfig"><code>ConnectNetworkConfig</code></a>
+REST API resource is deprecated. Connect cluster workers can reach any endpoint
+that is accessible from <code>primarySubnet</code> subnetwork.</p>]]></content>
+    <summary>The `additionalSubnets` field in the `ConnectNetworkConfig` resource is deprecated. Connect cluster workers can reach any endpoint accessible from the `primarySubnet` subnetwork.</summary>
+    <title>Deprecated: `additionalSubnets` field deprecated</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

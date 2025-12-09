@@ -1,25 +1,90 @@
 # Gemini Enterprise
 
+## 2025-12-08
+
+### Feature
+
+**Gemini Enterprise: Share custom agents registered with Gemini Enterprise (Preview)**
+
+Admins can share custom agents registered with Gemini Enterprise, including
+Agent-to-Agent (A2A), Agent Development Kit (ADK), Dialogflow agents,
+and agents added from Google Cloud Marketplace.
+For more information, see
+[Share custom agents](https://docs.cloud.google.com/gemini/enterprise/docs/share-custom-agents).
+
+---
+## 2025-12-05
+
+### Feature
+
+**Gemini Enterprise: Add agents from Google Cloud Marketplace (Preview)**
+
+Admins can add agents from Google Cloud Marketplace that use the
+Agent-to-Agent (A2A) protocol. After an agent is purchased and added to
+Gemini Enterprise, end users can access the agent through the Gemini Enterprise
+web app. For more information, see
+[Add and manage agents from Google Cloud Marketplace](https://docs.cloud.google.com/gemini/enterprise/docs/register-and-manage-marketplace-agents).
+
+---
+## 2025-11-21
+
+### Feature
+
+**Gemini Enterprise: Use Nano Banana Pro for image generation (Preview)**
+
+You can use Nano Banana Pro (Gemini 3 Pro Image) in Preview with
+Gemini Enterprise for image generation. To make this available to users in your
+Gemini Enterprise app, a Gemini Enterprise
+admin must select **Gemini 3 Pro Image (Preview)** in the
+**Enable image generation** feature control. For more information about feature
+controls, see
+[Manage features on the web app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
+
+### Feature
+
+**Gemini Enterprise: Manage agents (Preview)**
+
+Using the Agents page, admins can see all agents that are available to users in
+the Gemini Enterprise web app. For more information, see
+[Agents overview](https://docs.cloud.google.com/gemini/enterprise/docs/agents-overview).
+
+### Feature
+
+**Gemini Enterprise: Save information as memories**
+
+You can ask the assistant to save and remember specific pieces of
+information for reference in future conversations. For more information, see
+[Save information as memories](https://docs.cloud.google.com/gemini/enterprise/docs/configure-personalization#save-memories).
+
+---
 ## 2025-11-19
 
 ### Feature
 
-**Gemini Enterprise: Enhanced Agent Designer with visual flow builder [[Preview](https://cloud.google.com/products#product-launch-stages)]**
+**Gemini Enterprise: Enhanced Agent Designer with visual flow builder (Preview)**
 
-Agent Designer in Gemini Enterprise is now enhanced with a new visual flow builder, offering a more intuitive and powerful way to create and manage complex, multi-step agents.
-
-This enhancement is available for all new agents. Existing no-code agents will continue to use the familiar editor to ensure backward compatibility.
+Agent Designer in Gemini Enterprise is enhanced with a new visual flow
+builder, offering a more intuitive and powerful way to create and manage
+complex, multi-step agents.
 
 For more information, see [Agent Designer overview](https://docs.cloud.google.com/gemini/enterprise/docs/agent-designer).
+
+To enable this feature for your users, a Gemini Enterprise administrator must
+enable the corresponding toggle in your app's feature management settings. For
+information about feature controls,
+see [Manage web app features](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
+
+**Note:** The visual flow builder is available for all new agents created after this release. Existing agents
+will continue to use the familiar editor to ensure backward compatibility.
 
 ---
 ## 2025-11-18
 
 ### Feature
 
-**Gemini Enterprise: Use Gemini 3**
+**Gemini Enterprise: Use Gemini 3 (Preview)**
 
-You can now use Gemini 3 in preview with Gemini Enterprise. To make
+You can use Gemini 3 in preview with Gemini Enterprise. To make
 Gemini 3 available to users in your
 Gemini Enterprise app, a Gemini Enterprise admin must enable the
 **Gemini 3 Pro (Preview)** toggle in the **Model availability**

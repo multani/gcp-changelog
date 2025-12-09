@@ -1,6 +1,160 @@
 # Google Cloud Contact Center as a Service
 
+## 2025-12-06
+
+### Feature
+
+**Cloud Logging for Google Cloud CCaaS is Generally Available**
+
+You can use Cloud Logging to capture logging data and events for your Google
+Cloud project. The Logs Explorer displays log entries for your project. You can
+use the `contactcenteraiplatform.googleapis.com/ContactCenter` resource type to
+filter your results to view only the log entries for Google Cloud CCaaS. For
+more information, see [View log
+entries](https://docs.cloud.google.com/contact-center/ccai-platform/docs/view-log-entries).
+
+### Announcement
+
+**Google Cloud CCaaS 3.43**
+
+We've released version 3.43 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**New web SDK event: exited**
+
+We've added the `exited` event to the web SDK. This event triggers when an
+end-user exits a chat session after an agent ends the session. For more
+information, see
+[exited](https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-api-reference#exited).
+
+### Feature
+
+**Wait-time virtual agent for calls**
+
+You can now configure a virtual agent to handle incoming calls requiring
+escalation to a human agent. The wait-time virtual agent can place an incoming
+call into a queue and then provide personalized, interactive updates based on
+real-time events that your instance sends to the virtual agent. These events
+include estimated wait time, queue position, and agent availability. When an
+agent is available, the virtual agent transfers the call. For more information,
+see [Wait-time virtual agents for
+calls](https://docs.cloud.google.com/contact-center/ccai-platform/docs/wait-time-va-calls).
+
+### Fixed
+
+We addressed the following issues in this release:
+
+* Fixed an issue that occurred when a call was connected directly to an agent
+  using the agent's extension (either from another agent or from an end-user).
+  The system didn't apply the settings of the receiving agent's queue.
+* Fixed a web SDK issue where responses from virtual agents displayed markup
+  code for headings, bold, italics, etc., instead of the rendered formatting.
+* Fixed a web SDK issue where the timeout dialog for chat check-in didn't
+  dismiss after a chat session expired.
+* Fixed a web SDK issue where an error was incorrectly returned in the browser
+  console log.
+* Fixed a web SDK issue where the "new message" alert in the chat screen used
+  a text color that didn't adequately contrast with the background.
+* Fixed an issue where red boxes incorrectly appeared in the chat screen when
+  an agent's message was undelivered.
+* Fixed an issue where inbound calls were routed incorrectly to agents outside
+  of their personal hours of operation.
+* Fixed an issue that prevented users from downloading web chat transcripts
+  using the **Download** button.
+* Fixed an issue that occurred during overcapacity deflection. The "redirect
+  to queue" action didn't route calls to the configured Dialogflow menu ID.
+* Fixed an issue where virtual agents disconnected calls during after-hours
+  deflection or automatic redirection instead of routing them to the
+  configured location.
+* Fixed an issue where virtual agents incorrectly remained in a
+  session if an agent answered a call immediately after an overcapacity
+  deflection announcement.
+* Fixed an issue where calls didn't end after an end-user selected the
+  "message" option during overcapacity deflection.
+* Fixed an issue where manually adding users to multiple teams returned an
+  error.
+* Fixed an issue where administrators couldn't save queue reordering actions
+  in the SMS channel.
+* Fixed an issue where the BYOC configuration incorrectly overwrote the domain
+  of target SIP URIs during outbound calls.
+* Fixed an issue that incorrectly returned `Cannot read properties` console
+  errors.
+* Fixed an issue where a service name was misspelled, which caused errors in
+  batch user creation and team assignment.
+* Fixed an issue with historical data bulk import where uploading historical
+  data without dates generated empty import reports instead of returning an
+  error.
+* Fixed an issue with historical data bulk import where the system accepted
+  and processed data with future dates instead of returning an error.
+* Fixed an issue where queue priority sliders for users and teams were
+  active when they were configured to be inactive.
+* Fixed an issue that prevented languages from being added to an instance.
+* Fixed an issue where the agent directory was empty when an agent attempted
+  to transfer a call to another agent.
+* Addressed latency in Telnyx calls.
+* Fixed a billing calculation issue where concurrent agent counts were
+  inaccurate.
+
+---
+## 2025-12-02
+
+### Fixed
+
+We addressed the following iOS SDK issues in this release:
+
+* Fixed an issue where the **RATE YOUR EXPERIENCE** dialog contained text that
+  didn't adequately contrast with the background.
+* Fixed an issue where smart action requests from an agent (for example,
+  request verification or request photo) triggered push notifications to the
+  end-user despite **Allow Push Notifications** being turned off in the
+  end-user's app.
+* Fixed an issue in the end-user's chat screen where the screen reader
+  incorrectly announced that the "We are connecting you, please hold" message
+  was a button.
+
+### Feature
+
+**Turn off push notifications at the global level**
+
+You can configure your Android SDK or iOS SDK to turn off push notifications at
+the global level. This bypasses all push notification dependencies and prevents
+push notifications from reaching end-users. For more information, see the
+following:
+
+* **Android SDK**: [SDK
+  configuration](https://docs.cloud.google.com/contact-center/ccai-platform/docs/android-sdk-guide#sdk-configuration)
+* **iOS SDK**: [Turn off push notifications at the global
+  level](https://docs.cloud.google.com/contact-center/ccai-platform/docs/ios-sdk-guide#turn-off-push-notifications-at-global-level)
+
+### Announcement
+
+**Mobile SDKs version 2.15.0**
+
+We've released version 2.15.0 of the mobile SDKs.
+
+---
 ## 2025-11-19
+
+### Feature
+
+**Dial pad improvements**
+
+The dial pad in the agent adapter now includes the following:
+
+* Country code selector
+* Outbound number, Language, and Queue selectors
+
+If you use a CRM with flexible outbound dialing turned on, the **Outbound
+number** and **Language** selectors appear in the **Outbound call details**
+screen.
+
+For more information, see [Make an outbound
+call](https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-adapter-calls#make-outbound-call).
 
 ### Feature
 
@@ -54,15 +208,21 @@ settings](https://docs.cloud.google.com/contact-center/ccai-platform/docs/access
 
 ### Feature
 
-**Virtual task assistant support in the chat platform API**
+**Chat check-in**
 
-The chat platform API now provides improved support for virtual task assistants.
-When an agent transfers a chat to a virtual task assistant, your application can
-send and receive messages from the virtual task assistant. Enhanced webhooks
-provide the virtual task assistant's message content instantly, streamlining
-private, automated workflows like collecting sensitive information.
+Users of the web SDK can use chat check-in to help ensure that end-users are
+present and ready to engage before connecting them to a human agent. This helps
+to reduce the time lost when agents wait for end-users who have abandoned a
+chat.
 
-Documentation is coming soon.
+When an end-user reaches the front of the chat queue, the system asks if they're
+still available. If there's no response after the amount of time you configure,
+the system removes the end-user from the queue. If the end-user rejoins the
+queue, you can configure whether they rejoin at the front or the back of the
+queue.
+
+For more information, see [Chat
+check-in](https://docs.cloud.google.com/contact-center/ccai-platform/docs/Chat_Settings_and_Features#chat-check-in).
 
 ### Fixed
 
@@ -146,23 +306,6 @@ integration](https://docs.cloud.google.com/contact-center/ccai-platform/docs/alv
 
 ### Feature
 
-**Chat check-in**
-
-Users of the web SDK can use chat check-in to help ensure that end-users are
-present and ready to engage before connecting them to a human agent. This helps
-to reduce the time lost when agents wait for end-users who have abandoned a
-chat.
-
-When an end-user reaches the front of the chat queue, the system asks if they're
-still available. If there's no response after the amount of time you configure,
-the system removes the end-user from the queue. If the end-user rejoins the
-queue, you can configure whether they rejoin at the front or the back of the
-queue.
-
-Documentation is coming soon.
-
-### Feature
-
 **Email signatures**
 
 You can now define standardized signatures for all outgoing emails sent from a
@@ -173,6 +316,19 @@ at **Settings > Queue > Email > Edit / View
 > YOUR\_QUEUE**.
 
 For more information, see [Email signatures](https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-channel-config#email-signatures).
+
+### Feature
+
+**Virtual task assistant support in the chat platform API**
+
+The chat platform API now provides improved support for virtual task assistants.
+When an agent transfers a chat to a virtual task assistant, your application can
+send and receive messages from the virtual task assistant. Enhanced webhooks
+provide the virtual task assistant's message content instantly, streamlining
+private, automated workflows like collecting sensitive information.
+
+For more information, see [Use virtual task assistants with the chat API
+platform](https://docs.cloud.google.com/contact-center/ccai-platform/docs/task-va-chat-api).
 
 ### Feature
 
@@ -211,21 +367,6 @@ New endpoint: `/apps/api/v1/chats/CHAT_ID/media/MEDIA_ID`
 
 For more information, see [Agent file attachments with the chat platform
 API](https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-attachments-chat-api).
-
-### Feature
-
-**Dial pad improvements**
-
-The dial pad in the agent adapter now includes the following:
-
-* Country code selector
-* Outbound number, Language, and Queue selectors
-
-If you use a CRM with flexible outbound dialing turned on, the **Outbound
-number** and **Language** selectors appear in the **Outbound call details**
-screen.
-
-Documentation is coming soon.
 
 ### Announcement
 

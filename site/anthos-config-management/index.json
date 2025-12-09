@@ -1,6 +1,40 @@
 {
   "name": "Anthos Config Management",
   "entries": {
+    "2025-12-04": [
+      {
+        "kind": "Changed",
+        "content": "Config Sync now supports the `client.lifecycle.config.k8s.io/mutation: ignore` annotation for compatibility with other controllers. This enhancement provides more consistent behavior and correctly reports the resource status.",
+        "summary": {
+          "title": "Config Sync Annotation Support",
+          "summary": "Config Sync now supports the `client.lifecycle.config.k8s.io/mutation: ignore` annotation. This change ensures better compatibility with other controllers and more accurate resource status reporting."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Addressed multiple Common Vulnerabilities and Exposures (CVEs) by updating dependencies.",
+        "summary": {
+          "title": "Security Updates",
+          "summary": "Dependencies have been updated to address several CVEs."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "You can now control the scheduling of Config Sync pods using the Kubernetes-native resource [MutatingAdmissionPolicy](https://kubernetes.io/docs/reference/access-authn-authz/mutating-admission-policy/). For more information, see [Customize node placement of Config Sync system pods](https://docs.cloud.google.com/kubernetes-engine/config-sync/docs/how-to/custom-node-placement) to get started.",
+        "summary": {
+          "title": "Config Sync Pod Scheduling",
+          "summary": "Control Config Sync pod scheduling with MutatingAdmissionPolicy."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Config Sync's internal observability library has been updated from OpenCensus to OpenTelemetry, improving performance and aligning with industry standards with no breaking changes to metrics or functionality.",
+        "summary": {
+          "title": "Config Sync Updates",
+          "summary": "Config Sync has been updated to OpenTelemetry."
+        }
+      }
+    ],
     "2025-10-09": [
       {
         "kind": "Changed",

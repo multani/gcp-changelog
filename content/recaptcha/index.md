@@ -1,5 +1,13 @@
 # reCAPTCHA
 
+## 2025-12-01
+
+### Changed
+
+reCAPTCHA Mobile SDK v18.8.2 is available for iOS. This version fixes a race
+condition affecting multiple simultaneous calls to execute.
+
+---
 ## 2025-10-28
 
 ### Feature

@@ -1,5 +1,12 @@
 # Dataflow
 
+## 2025-11-21
+
+### Feature
+
+Dataflow now supports speculative execution for batch pipelines. This feature mitigates the impact of slow-running tasks (*stragglers*) by launching a redundant execution of these tasks. The first task to finish is used, and the other is canceled, which can improve the overall completion time of your pipeline. This feature is generally available. For more information, see [Use speculative execution to avoid stragglers](https://docs.cloud.google.com/dataflow/docs/guides/large-pipeline-best-practices#backup-tasks).
+
+---
 ## 2025-09-24
 
 ### Feature

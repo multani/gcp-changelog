@@ -2,9 +2,1086 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps SIEM</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps SIEM</subtitle>
-  <updated>2025-11-19T00:00:00+00:00</updated>
+  <updated>2025-12-07T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops-siem</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops-siem/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-12-07:feature:0</id>
+    <published>2025-12-07T00:00:00+00:00</published>
+    <updated>2025-12-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Change views per alert</strong></p>
+<p>The <strong>Alert Overview</strong> page now includes a new option to select a specific view for each alert. If several playbooks have run on an alert, and those playbooks have customized views, you can now select and display any of those customized views for that alert.</p>]]></content>
+    <summary>Select specific views for each alert on the Alert Overview page.</summary>
+    <title>Feature: Alert Views</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-12-07:announcement:1</id>
+    <published>2025-12-07T00:00:00+00:00</published>
+    <updated>2025-12-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Release 6.3.69 is being rolled out to the first phase of regions as listed <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
+<p>This release contains internal and customer bug fixes.</p>]]></content>
+    <summary>The latest release, version 6.3.69, is now available in initial regions. This update focuses on internal and customer-facing bug fixes.</summary>
+    <title>Announcement: Release 6.3.69 Rollout</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-12-06:announcement:0</id>
+    <published>2025-12-06T00:00:00+00:00</published>
+    <updated>2025-12-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#November_16_2025">Release 6.3.68</a> is now available for all regions.</p>]]></content>
+    <summary>The latest update, Release 6.3.68, has been successfully deployed and is now accessible across all regions.</summary>
+    <title>Announcement: Release 6.3.68 Now Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-12-03:changed:0</id>
+    <published>2025-12-03T00:00:00+00:00</published>
+    <updated>2025-12-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google SecOps has updated the list of supported default parsers. Parsers are updated gradually, so it might take one to four days before you see the changes reflected in your region.</p>
+<p>The following supported default parsers have been updated. Each parser is listed by product name and <code>log_type</code> value, where applicable. This list includes both released default parsers and pending parser updates.</p>
+<ul>
+<li>1Password (<code>ONEPASSWORD</code>)</li>
+<li>A10 Load Balancer (<code>A10_LOAD_BALANCER</code>)</li>
+<li>Abnormal Security (<code>ABNORMAL_SECURITY</code>)</li>
+<li>AIX system (<code>AIX_SYSTEM</code>)</li>
+<li>Akamai SIEM Connector (<code>AKAMAI_SIEM_CONNECTOR</code>)</li>
+<li>AlgoSec Security Management (<code>ALGOSEC</code>)</li>
+<li>Amazon API Gateway (<code>AWS_API_GATEWAY</code>)</li>
+<li>Amazon VPC Transit Gateway Flow Logs (<code>AWS_VPC_TRANSIT_GATEWAY</code>)</li>
+<li>Apache (<code>APACHE</code>)</li>
+<li>Arcsight CEF (<code>ARCSIGHT_CEF</code>)</li>
+<li>Arista Switch (<code>ARISTA_SWITCH</code>)</li>
+<li>Armis Activities (<code>ARMIS_ACTIVITIES</code>)</li>
+<li>Aruba (<code>ARUBA_WIRELESS</code>)</li>
+<li>Aruba Switch (<code>ARUBA_SWITCH</code>)</li>
+<li>Attivo Networks (<code>ATTIVO</code>)</li>
+<li>Auth0 (<code>AUTH_ZERO</code>)</li>
+<li>AWS Aurora (<code>AWS_AURORA</code>)</li>
+<li>AWS CloudFront (<code>AWS_CLOUDFRONT</code>)</li>
+<li>AWS Cloudtrail (<code>AWS_CLOUDTRAIL</code>)</li>
+<li>AWS CloudWatch (<code>AWS_CLOUDWATCH</code>)</li>
+<li>AWS Config (<code>AWS_CONFIG</code>)</li>
+<li>AWS GuardDuty (<code>GUARDDUTY</code>)</li>
+<li>AWS Security Hub (<code>AWS_SECURITY_HUB</code>)</li>
+<li>AWS Session Manager (<code>AWS_SESSION_MANAGER</code>)</li>
+<li>AWS VPC Flow (<code>AWS_VPC_FLOW</code>)</li>
+<li>Azure AD (<code>AZURE_AD</code>)</li>
+<li>Azure AD Directory Audit (<code>AZURE_AD_AUDIT</code>)</li>
+<li>Azure AD Organizational Context (<code>AZURE_AD_CONTEXT</code>)</li>
+<li>Azure Firewall (<code>AZURE_FIREWALL</code>)</li>
+<li>Azure Storage Audit (<code>AZURE_STORAGE_AUDIT</code>)</li>
+<li>Barracuda Firewall (<code>BARRACUDA_FIREWALL</code>)</li>
+<li>BeyondTrust (<code>BOMGAR</code>)</li>
+<li>BeyondTrust BeyondInsight (<code>BEYONDTRUST_BEYONDINSIGHT</code>)</li>
+<li>BeyondTrust Secure Remote Access (<code>BEYONDTRUST_REMOTE_ACCESS</code>)</li>
+<li>Bindplane Agent (<code>BINDPLANE_AGENT</code>)</li>
+<li>Bitdefender (<code>BITDEFENDER</code>)</li>
+<li>Blue Coat Proxy (<code>BLUECOAT_WEBPROXY</code>)</li>
+<li>Cambium Networks (<code>CAMBIUM_NETWORKS</code>)</li>
+<li>Carbon Black (<code>CB_EDR</code>)</li>
+<li>Carbon Black App Control (<code>CB_APP_CONTROL</code>)</li>
+<li>Cequence Bot Defense (<code>CEQUENCE_BOT_DEFENSE</code>)</li>
+<li>Check Point (<code>CHECKPOINT_FIREWALL</code>)</li>
+<li>Check Point Sandblast (<code>CHECKPOINT_EDR</code>)</li>
+<li>Chrome Management (<code>CHROME_MANAGEMENT</code>)</li>
+<li>CipherTrust Manager (<code>CIPHERTRUST_MANAGER</code>)</li>
+<li>Cisco AMP (<code>CISCO_AMP</code>)</li>
+<li>Cisco ASA (<code>CISCO_ASA_FIREWALL</code>)</li>
+<li>Cisco Email Security (<code>CISCO_EMAIL_SECURITY</code>)</li>
+<li>Cisco Firepower NGFW (<code>CISCO_FIREPOWER_FIREWALL</code>)</li>
+<li>Cisco Firewall Services Module (<code>CISCO_FWSM</code>)</li>
+<li>Cisco Internetwork Operating System (<code>CISCO_IOS</code>)</li>
+<li>Cisco IronPort (<code>CISCO_IRONPORT</code>)</li>
+<li>Cisco ISE (<code>CISCO_ISE</code>)</li>
+<li>Cisco Meraki (<code>CISCO_MERAKI</code>)</li>
+<li>Cisco Router (<code>CISCO_ROUTER</code>)</li>
+<li>Cisco Secure Access (<code>CISCO_SECURE_ACCESS</code>)</li>
+<li>Cisco Stealthwatch (<code>CISCO_STEALTHWATCH</code>)</li>
+<li>Cisco Switch (<code>CISCO_SWITCH</code>)</li>
+<li>Cisco UCM (<code>CISCO_UCM</code>)</li>
+<li>Cisco Umbrella Audit (<code>CISCO_UMBRELLA_AUDIT</code>)</li>
+<li>Cisco Umbrella Cloud Firewall (<code>UMBRELLA_FIREWALL</code>)</li>
+<li>Cisco Umbrella DNS (<code>UMBRELLA_DNS</code>)</li>
+<li>Cisco Umbrella IP (<code>UMBRELLA_IP</code>)</li>
+<li>Cisco Umbrella SWG DLP (<code>CISCO_UMBRELLA_SWG_DLP</code>)</li>
+<li>Cisco Umbrella Web Proxy (<code>UMBRELLA_WEBPROXY</code>)</li>
+<li>Cisco WSA (<code>CISCO_WSA</code>)</li>
+<li>Citrix Netscaler (<code>CITRIX_NETSCALER</code>)</li>
+<li>Claroty Continuous Threat Detection (<code>CLAROTY_CTD</code>)</li>
+<li>Claroty Xdome (<code>CLAROTY_XDOME</code>)</li>
+<li>Cloudflare (<code>CLOUDFLARE</code>)</li>
+<li>Cloudflare Network Analytics (<code>CLOUDFLARE_NETWORK_ANALYTICS</code>)</li>
+<li>Cloudflare WAF (<code>CLOUDFLARE_WAF</code>)</li>
+<li>Cloudflare Warp (<code>CLOUDFLARE_WARP</code>)</li>
+<li>Code42 Incydr (<code>CODE42_INCYDR</code>)</li>
+<li>Corelight (<code>CORELIGHT</code>)</li>
+<li>CoSoSys Protector (<code>ENDPOINT_PROTECTOR_DLP</code>)</li>
+<li>CrowdStrike Alerts API (<code>CS_ALERTS</code>)</li>
+<li>CrowdStrike Falcon (<code>CS_EDR</code>)</li>
+<li>CrowdStrike Falcon Stream (<code>CS_STREAM</code>)</li>
+<li>Cyber 2.0 IDS (<code>CYBER_2_IDS</code>)</li>
+<li>CyberArk Endpoint Privilege Manager (EPM) (<code>CYBERARK_EPM</code>)</li>
+<li>Cyberark Privilege Cloud (<code>CYBERARK_PRIVILEGE_CLOUD</code>)</li>
+<li>CyberArk Privileged Access Manager (PAM) (<code>CYBERARK_PAM</code>)</li>
+<li>Cybereason EDR (<code>CYBEREASON_EDR</code>)</li>
+<li>Cynet 360 AutoXDR (<code>CYNET_360_AUTOXDR</code>)</li>
+<li>Cyolo Secure Remote Access for OT (<code>CYOLO_OT</code>)</li>
+<li>Darktrace (<code>DARKTRACE</code>)</li>
+<li>Delinea Secret Server (<code>DELINEA_SECRET_SERVER</code>)</li>
+<li>Digital Guardian DLP (<code>DIGITALGUARDIAN_DLP</code>)</li>
+<li>Digital Guardian EDR (<code>DIGITALGUARDIAN_EDR</code>)</li>
+<li>DigitalArts i-Filter (<code>DIGITALARTS_IFILTER</code>)</li>
+<li>Dummy LogType (<code>DUMMY_LOGTYPE</code>)</li>
+<li>EfficientIP DDI (<code>EFFICIENTIP_DDI</code>)</li>
+<li>ESET AV (<code>ESET_AV</code>)</li>
+<li>ESET Threat Intelligence (<code>ESET_IOC</code>)</li>
+<li>Extreme Networks Switch (<code>EXTREME_SWITCH</code>)</li>
+<li>F5 Advanced Firewall Management (<code>F5_AFM</code>)</li>
+<li>F5 ASM (<code>F5_ASM</code>)</li>
+<li>F5 BIGIP Access Policy Manager (<code>F5_BIGIP_APM</code>)</li>
+<li>F5 Silverline (<code>F5_SILVERLINE</code>)</li>
+<li>FireEye ETP (<code>FIREEYE_ETP</code>)</li>
+<li>Fluentd Logs (<code>FLUENTD</code>)</li>
+<li>Forcepoint NGFW (<code>FORCEPOINT_FIREWALL</code>)</li>
+<li>Forcepoint DLP (<code>FORCEPOINT_DLP</code>)</li>
+<li>Forcepoint Proxy (<code>FORCEPOINT_WEBPROXY</code>)</li>
+<li>Forescout NAC (<code>FORESCOUT_NAC</code>)</li>
+<li>FortiGate (<code>FORTINET_FIREWALL</code>)</li>
+<li>Fortinet FortiAnalyzer (<code>FORTINET_FORTIANALYZER</code>)</li>
+<li>Fortinet FortiEDR (<code>FORTINET_FORTIEDR</code>)</li>
+<li>GCP Abuse Events Logs (<code>GCP_ABUSE_EVENTS</code>)</li>
+<li>GitHub (<code>GITHUB</code>)</li>
+<li>GMV Checker ATM Security (<code>GMV_CHECKER</code>)</li>
+<li>Google Cloud Apigee (<code>GCP_APIGEE</code>)</li>
+<li>Google Cloud Audit (<code>GCP_CLOUDAUDIT</code>)</li>
+<li>Google Cloud Security Center Threat (<code>GCP_SECURITYCENTER_THREAT</code>)</li>
+<li>Google Threat Intelligence IOC (<code>GTI_IOC</code>)</li>
+<li>GTB Technologies DLP (<code>GTB_DLP</code>)</li>
+<li>H3C Comware Platform Switch (<code>H3C_SWITCH</code>)</li>
+<li>Halcyon Anti Ransomware (<code>HALCYON</code>)</li>
+<li>HP Aruba (ClearPass) (<code>CLEARPASS</code>)</li>
+<li>HP Linux (<code>HP_LINUX</code>)</li>
+<li>HP Procurve Switch (<code>HP_PROCURVE</code>)</li>
+<li>IBM AS/400 (<code>IBM_AS400</code>)</li>
+<li>IBM Security Verify Access (<code>IBM_SVA</code>)</li>
+<li>IBM WebSEAL (<code>IBM_WEBSEAL</code>)</li>
+<li>IBM Websphere Application Server (<code>IBM_WEBSPHERE_APP_SERVER</code>)</li>
+<li>IBM z/OS (<code>IBM_ZOS</code>)</li>
+<li>Imperva (<code>IMPERVA_WAF</code>)</li>
+<li>Imperva DRA (<code>IMPERVA_DRA</code>)</li>
+<li>Imperva SecureSphere Management (<code>IMPERVA_SECURESPHERE</code>)</li>
+<li>Infoblox (<code>INFOBLOX</code>)</li>
+<li>Infoblox DHCP (<code>INFOBLOX_DHCP</code>)</li>
+<li>Infoblox DNS (<code>INFOBLOX_DNS</code>)</li>
+<li>ION Spectrum (<code>ION_SPECTRUM</code>)</li>
+<li>Ionix (<code>IONIX</code>)</li>
+<li>Ipswitch MOVEit Transfer (<code>IPSWITCH_MOVEIT_TRANSFER</code>)</li>
+<li>Island Browser logs (<code>ISLAND_BROWSER</code>)</li>
+<li>JAMF Pro (<code>JAMF_PRO</code>)</li>
+<li>Jamf Protect Telemetry V2 (<code>JAMF_TELEMETRY_V2</code>)</li>
+<li>JFrog Artifactory (<code>JFROG_ARTIFACTORY</code>)</li>
+<li>Journald (<code>JOURNALD</code>)</li>
+<li>JumpCloud Directory Insights (<code>JUMPCLOUD_DIRECTORY_INSIGHTS</code>)</li>
+<li>Juniper (<code>JUNIPER_FIREWALL</code>)</li>
+<li>Juniper Junos (<code>JUNIPER_JUNOS</code>)</li>
+<li>Kaspersky AV (<code>KASPERSKY_AV</code>)</li>
+<li>Kaspersky Endpoint (<code>KASPERSKY_ENDPOINT</code>)</li>
+<li>Keycloak (<code>KEYCLOAK</code>)</li>
+<li>Kiteworks (<code>KITEWORKS</code>)</li>
+<li>Kubernetes Node (<code>KUBERNETES_NODE</code>)</li>
+<li>Linux Auditing System (AuditD) (<code>AUDITD</code>)</li>
+<li>Linux Sysmon (<code>LINUX_SYSMON</code>)</li>
+<li>McAfee ePolicy Orchestrator (<code>MCAFEE_EPO</code>)</li>
+<li>Microsoft AD FS (<code>ADFS</code>)</li>
+<li>Microsoft Azure NSG Flow (<code>AZURE_NSG_FLOW</code>)</li>
+<li>Microsoft Defender for Endpoint (<code>MICROSOFT_DEFENDER_ENDPOINT</code>)</li>
+<li>Microsoft Defender for Office 365 (<code>MICROSOFT_DEFENDER_MAIL</code>)</li>
+<li>Microsoft Exchange (<code>EXCHANGE_MAIL</code>)</li>
+<li>Microsoft Graph API Alerts (<code>MICROSOFT_GRAPH_ALERT</code>)</li>
+<li>Microsoft IIS (<code>IIS</code>)</li>
+<li>Microsoft Intune (<code>AZURE_MDM_INTUNE</code>)</li>
+<li>Microsoft PowerShell (<code>POWERSHELL</code>)</li>
+<li>Microsoft Sentinel (<code>MICROSOFT_SENTINEL</code>)</li>
+<li>Microsoft SQL Server (<code>MICROSOFT_SQL</code>)</li>
+<li>Mikrotik Router (<code>MIKROTIK_ROUTER</code>)</li>
+<li>Mimecast Mail V2 (<code>MIMECAST_MAIL_V2</code>)</li>
+<li>MISP Threat Intelligence (<code>MISP_IOC</code>)</li>
+<li>Mobileiron (<code>MOBILEIRON</code>)</li>
+<li>NetApp ONTAP (<code>NETAPP_ONTAP</code>)</li>
+<li>Netscout (<code>ARBOR_EDGE_DEFENSE</code>)</li>
+<li>Netskope CASB (<code>NETSKOPE_CASB</code>)</li>
+<li>Netskope V2 (<code>NETSKOPE_ALERT_V2</code>)</li>
+<li>Netskope Web Proxy (<code>NETSKOPE_WEBPROXY</code>)</li>
+<li>Nexus Sonatype (<code>NEXUS_SONATYPE</code>)</li>
+<li>Nozomi Networks Scada Guardian (<code>NOZOMI_GUARDIAN</code>)</li>
+<li>Obsidian (<code>OBSIDIAN</code>)</li>
+<li>Office 365 (<code>OFFICE_365</code>)</li>
+<li>Okta (<code>OKTA</code>)</li>
+<li>Open Cybersecurity Schema Framework (OCSF) (<code>OCSF</code>)</li>
+<li>Open LDAP (<code>OPENLDAP</code>)</li>
+<li>Opnsense (<code>OPNSENSE</code>)</li>
+<li>Opswat Metadefender (<code>OPSWAT_METADEFENDER</code>)</li>
+<li>Oracle (<code>ORACLE_DB</code>)</li>
+<li>Oracle Cloud Infrastructure Audit Logs (<code>OCI_AUDIT</code>)</li>
+<li>Oracle Cloud Infrastructure VCN Flow Logs (<code>OCI_FLOW</code>)</li>
+<li>Orca Cloud Security Platform (<code>ORCA</code>)</li>
+<li>Palo Alto Cortex XDR Alerts (<code>CORTEX_XDR</code>)</li>
+<li>Palo Alto Cortex XDR Events (<code>PAN_CORTEX_XDR_EVENTS</code>)</li>
+<li>Palo Alto Networks Firewall (<code>PAN_FIREWALL</code>)</li>
+<li>Palo Alto Panorama (<code>PAN_PANORAMA</code>)</li>
+<li>Palo Alto Prisma Cloud Alert payload (<code>PAN_PRISMA_CA</code>)</li>
+<li>Passwordstate (<code>PASSWORDSTATE</code>)</li>
+<li>Ping Federate (<code>PING_FEDERATE</code>)</li>
+<li>Ping Identity (<code>PING</code>)</li>
+<li>Ping One (<code>PING_ONE</code>)</li>
+<li>PingIdentity Directory Server Logs (<code>PING_DIRECTORY</code>)</li>
+<li>PostFix Mail (<code>POSTFIX_MAIL</code>)</li>
+<li>PostgreSQL (<code>POSTGRESQL</code>)</li>
+<li>Proofpoint Observeit (<code>OBSERVEIT</code>)</li>
+<li>Proofpoint On Demand (<code>PROOFPOINT_ON_DEMAND</code>)</li>
+<li>Proofpoint Tap Alerts (<code>PROOFPOINT_MAIL</code>)</li>
+<li>Proofpoint Threat Response (<code>PROOFPOINT_TRAP</code>)</li>
+<li>Radware Web Application Firewall (<code>RADWARE_FIREWALL</code>)</li>
+<li>RSA (<code>RSA_AUTH_MANAGER</code>)</li>
+<li>Ruckus Networks (<code>RUCKUS_WIRELESS</code>)</li>
+<li>SailPoint IAM (<code>SAILPOINT_IAM</code>)</li>
+<li>Salesforce (<code>SALESFORCE</code>)</li>
+<li>Sangfor Next Generation Firewall (<code>SANGFOR_NGAF</code>)</li>
+<li>Security Command Center Chokepoint (<code>GCP_SECURITYCENTER_CHOKEPOINT</code>)</li>
+<li>Security Command Center Posture Violation (<code>GCP_SECURITYCENTER_POSTURE_VIOLATION</code>)</li>
+<li>Security Command Center Toxic Combination (<code>GCP_SECURITYCENTER_TOXIC_COMBINATION</code>)</li>
+<li>Semperis DSP (<code>SEMPERIS_DSP</code>)</li>
+<li>Sentinelone Activity (<code>SENTINELONE_ACTIVITY</code>)</li>
+<li>SentinelOne Deep Visibility (<code>SENTINEL_DV</code>)</li>
+<li>ServiceNow Audit (<code>SERVICENOW_AUDIT</code>)</li>
+<li>Solaris system (<code>SOLARIS_SYSTEM</code>)</li>
+<li>SonicWall (<code>SONIC_FIREWALL</code>)</li>
+<li>Squid Web Proxy (<code>SQUID_WEBPROXY</code>)</li>
+<li>STIX Threat Intelligence (<code>STIX</code>)</li>
+<li>Swift Alliance Messaging Hub (<code>SWIFT_AMH</code>)</li>
+<li>Symantec Endpoint Protection (<code>SEP</code>)</li>
+<li>Tanium Audit (<code>TANIUM_AUDIT</code>)</li>
+<li>Tanium Integrity Monitor (<code>TANIUM_INTEGRITY_MONITOR</code>)</li>
+<li>Tanium Threat Response (<code>TANIUM_THREAT_RESPONSE</code>)</li>
+<li>Teleport Access Plane (<code>TELEPORT_ACCESS_PLANE</code>)</li>
+<li>Tenable Active Directory Security (<code>TENABLE_ADS</code>)</li>
+<li>Tenable OT (<code>TENABLE_OT</code>)</li>
+<li>tenable.io (<code>TENABLE_IO</code>)</li>
+<li>Thales Luna Hardware Security Module (<code>THALES_LUNA_HSM</code>)</li>
+<li>Thales MFA (<code>THALES_MFA</code>)</li>
+<li>Trellix HX Event Streamer (<code>TRELLIX_HX_ES</code>)</li>
+<li>Trend Micro (<code>TIPPING_POINT</code>)</li>
+<li>Trend Micro Apex one (<code>TRENDMICRO_APEX_ONE</code>)</li>
+<li>Trend Micro Vision One (<code>TRENDMICRO_VISION_ONE</code>)</li>
+<li>Trend Micro Vision One Audit (<code>TRENDMICRO_VISION_ONE_AUDIT</code>)</li>
+<li>Trend Micro Vision One Detections (<code>TRENDMICRO_VISION_ONE_DETECTIONS</code>)</li>
+<li>Trend Micro Vision One Observerd Attack Techniques (<code>TRENDMICRO_VISION_ONE_OBSERVERD_ATTACK_TECHNIQUES</code>)</li>
+<li>TXOne Stellar (<code>TRENDMICRO_STELLAR</code>)</li>
+<li>Ubika Waf (<code>UBIKA_WAF</code>)</li>
+<li>Unix system (<code>NIX_SYSTEM</code>)</li>
+<li>Upstream Vehicle SOC Alerts (<code>UPSTREAM_VSOC_ALERTS</code>)</li>
+<li>Varonis (<code>VARONIS</code>)</li>
+<li>Vectra Stream (<code>VECTRA_STREAM</code>)</li>
+<li>Venafi ZTPKI (<code>VENAFI_ZTPKI</code>)</li>
+<li>Veritas NetBackup (<code>VERITAS_NETBACKUP</code>)</li>
+<li>Versa Firewall (<code>VERSA_FIREWALL</code>)</li>
+<li>Vmware Avinetworks iWAF (<code>VMWARE_AVINETWORKS_IWAF</code>)</li>
+<li>VMware ESXi (<code>VMWARE_ESX</code>)</li>
+<li>VMware NSX (<code>VMWARE_NSX</code>)</li>
+<li>VMware vCenter (<code>VMWARE_VCENTER</code>)</li>
+<li>WatchGuard (<code>WATCHGUARD</code>)</li>
+<li>Windows DNS (<code>WINDOWS_DNS</code>)</li>
+<li>Windows Event (<code>WINEVTLOG</code>)</li>
+<li>Windows Event (XML) (<code>WINEVTLOG_XML</code>)</li>
+<li>Windows Sysmon (<code>WINDOWS_SYSMON</code>)</li>
+<li>wiz.io (<code>WIZ_IO</code>)</li>
+<li>Workday User Activity (<code>WORKDAY_USER_ACTIVITY</code>)</li>
+<li>Workspace Activities (<code>WORKSPACE_ACTIVITY</code>)</li>
+<li>Workspace Alerts (<code>WORKSPACE_ALERTS</code>)</li>
+<li>Workspace Users (<code>WORKSPACE_USERS</code>)</li>
+<li>Zendesk CRM (<code>ZENDESK_CRM</code>)</li>
+<li>Zoom Operation Logs (<code>ZOOM_OPERATION_LOGS</code>)</li>
+<li>Zscaler (<code>ZSCALER_WEBPROXY</code>)</li>
+<li>ZScaler NGFW (<code>ZSCALER_FIREWALL</code>)</li>
+<li>Zscaler Private Access (<code>ZSCALER_ZPA</code>)</li>
+<li>Zscaler Secure Private Access Audit Logs (<code>ZSCALER_ZPA_AUDIT</code>)</li>
+</ul>
+<p>The following log types were added without a default parser. Each parser is listed by product name and <code>log_type</code> value, where applicable.</p>
+<ul>
+<li>Absolute Secure Endpoint (<code>ABSOLUTE_SECURE_ENDPOINT</code>)</li>
+<li>Airbus Security Logging (ACD AISD) (<code>AIRBUS_SECURITY_LOG</code>)</li>
+<li>Azure Recovery Services Vaults (<code>AZURE_RECOVERY_SERVICES_VAULTS</code>)</li>
+<li>Boeing Onboard Network System Logging (<code>BOEING_ONS</code>)</li>
+<li>Cisco Firepower Threat Defense (<code>CISCO_FIREPOWER_THREAT_DEFENSE</code>)</li>
+<li>Cisco Security Cloud Control (<code>CISCO_SECURITY_CLOUD_CONTROL</code>)</li>
+<li>Pico Corvilnet Engine (<code>CORVILNET_ENGINE</code>)</li>
+<li>CrowdStrike Falcon Shield (<code>CROWDSTRIKE_FALCON_SHIELD</code>)</li>
+<li>Easy NAC (<code>EASY_NAC</code>)</li>
+<li>FairXchange Horizon (<code>FAIRXCHANGE_HORIZON</code>)</li>
+<li>Google Threat Intelligence (<code>GCP_THREATINTEL</code>)</li>
+<li>HPE Alletra (<code>HPE_ALLETRA</code>)</li>
+<li>Huawei Cloud Trace Service Audit (<code>HUAWEI_CTS_AUDIT</code>)</li>
+<li>Huawei SecMaster (<code>HUAWEI_SECMASTER</code>)</li>
+<li>IBM ILO (<code>IBM_ILO</code>)</li>
+<li>Infisical (<code>INFISICAL</code>)</li>
+<li>JSCAPE SFTP (<code>JSCAPE_SFTP</code>)</li>
+<li>Juniper Edge (<code>JUNIPER_EDGE</code>)</li>
+<li>Kaspersky for Microsoft Office 365 (<code>KASPERSKY_O365_EVENTS</code>)</li>
+<li>Microsoft Defender for Cloud Apps (<code>MICROSOFT_DEFENDER_CLOUD_APPS</code>)</li>
+<li>Oracle Cloud Infrastructure Network Firewall (<code>OCI_FIREWALL</code>)</li>
+<li>Okta Workflows (<code>OKTA_WORKFLOWS</code>)</li>
+<li>Phosphorus (<code>PHOSPHORUS</code>)</li>
+<li>Rapid7 Cloud Security (<code>RAPID7_CLOUDSEC</code>)</li>
+<li>Research and Education Networks Information Sharing and Analysis Center (<code>REN_ISAC</code>)</li>
+<li>Risk Resecurity (<code>RISK_RESECURITY</code>)</li>
+<li>Sangfor Network Detection and Response (<code>SANGFOR_NDR</code>)</li>
+<li>SAP Enterprise Threat Detection (<code>SAP_ETD</code>)</li>
+<li>SAP IAS Context (<code>SAP_IAS_CONTEXT</code>)</li>
+<li>Sectigo SCM (<code>SECTIGO_SCM</code>)</li>
+<li>ServiceNow Node (<code>SERVICENOW_NODE</code>)</li>
+<li>ServiceNow Outbound HTTP (<code>SERVICENOW_OUTBOUNDHTTP</code>)</li>
+<li>ServiceNow System log (<code>SERVICENOW_SYSLOG</code>)</li>
+<li>ServiceNow Transaction (<code>SERVICENOW_TRANSACTION</code>)</li>
+<li>Seti S4 (<code>SETI_S4</code>)</li>
+<li>ThousandEyes (<code>THOUSAND_EYES</code>)</li>
+<li>Transmit Security Mosaic CIAM (<code>TRANSMIT_MOSAIC_CIAM</code>)</li>
+<li>Transmit Security Mosaic Fraud Prevention (<code>TRANSMIT_MOSAIC_FRAUD_PREVENTION</code>)</li>
+<li>Transmit Security Mosaic Identity Verification (<code>TRANSMIT_MOSAIC_IDENTITY_VERIFICATION</code>)</li>
+<li>Transmit Security Mosaic Management (<code>TRANSMIT_MOSAIC_MANAGEMENT</code>)</li>
+<li>Tripwire Security Configuration Management (<code>TRIPWIRE_SCM</code>)</li>
+<li>Valimail (<code>VALIMAIL</code>)</li>
+<li>WSO2 IS AM (<code>WSO2_IS_AM</code>)</li>
+<li>XDR.Net Digital Twin (<code>XDRNET_DIGITALTWIN</code>)</li>
+<li>Zimbra Mail (<code>ZIMBRA_MAIL</code>)</li>
+<li>Zscaler Email DLP (<code>ZSCALER_EMAIL_DLP</code>)</li>
+</ul>]]></content>
+    <summary>Google SecOps has updated its list of supported default parsers. This update includes new parsers and enhancements to existing ones. Please note that changes may take one to four days to reflect in your region.</summary>
+    <title>Changed: Updated Supported Parsers</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-12-03:changed:1</id>
+    <published>2025-12-03T00:00:00+00:00</published>
+    <updated>2025-12-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google SecOps has updated the list of supported default parsers. Parsers are updated gradually, so it might take one to four days before you see the changes reflected in your region.</p>
+<p>The following supported default parsers have been updated. Each parser is listed by product name and <code>log_type</code> value, where applicable. This list includes both released default parsers and pending parser updates.</p>
+<ul>
+<li>1Password (<code>ONEPASSWORD</code>)</li>
+<li>A10 Load Balancer (<code>A10_LOAD_BALANCER</code>)</li>
+<li>Abnormal Security (<code>ABNORMAL_SECURITY</code>)</li>
+<li>AIX system (<code>AIX_SYSTEM</code>)</li>
+<li>Akamai SIEM Connector (<code>AKAMAI_SIEM_CONNECTOR</code>)</li>
+<li>AlgoSec Security Management (<code>ALGOSEC</code>)</li>
+<li>Amazon API Gateway (<code>AWS_API_GATEWAY</code>)</li>
+<li>Amazon VPC Transit Gateway Flow Logs (<code>AWS_VPC_TRANSIT_GATEWAY</code>)</li>
+<li>Apache (<code>APACHE</code>)</li>
+<li>Arcsight CEF (<code>ARCSIGHT_CEF</code>)</li>
+<li>Arista Switch (<code>ARISTA_SWITCH</code>)</li>
+<li>Armis Activities (<code>ARMIS_ACTIVITIES</code>)</li>
+<li>Aruba (<code>ARUBA_WIRELESS</code>)</li>
+<li>Aruba Switch (<code>ARUBA_SWITCH</code>)</li>
+<li>Attivo Networks (<code>ATTIVO</code>)</li>
+<li>Auth0 (<code>AUTH_ZERO</code>)</li>
+<li>AWS Aurora (<code>AWS_AURORA</code>)</li>
+<li>AWS CloudFront (<code>AWS_CLOUDFRONT</code>)</li>
+<li>AWS Cloudtrail (<code>AWS_CLOUDTRAIL</code>)</li>
+<li>AWS CloudWatch (<code>AWS_CLOUDWATCH</code>)</li>
+<li>AWS Config (<code>AWS_CONFIG</code>)</li>
+<li>AWS GuardDuty (<code>GUARDDUTY</code>)</li>
+<li>AWS Security Hub (<code>AWS_SECURITY_HUB</code>)</li>
+<li>AWS Session Manager (<code>AWS_SESSION_MANAGER</code>)</li>
+<li>AWS VPC Flow (<code>AWS_VPC_FLOW</code>)</li>
+<li>Azure AD (<code>AZURE_AD</code>)</li>
+<li>Azure AD Directory Audit (<code>AZURE_AD_AUDIT</code>)</li>
+<li>Azure AD Organizational Context (<code>AZURE_AD_CONTEXT</code>)</li>
+<li>Azure Firewall (<code>AZURE_FIREWALL</code>)</li>
+<li>Azure Storage Audit (<code>AZURE_STORAGE_AUDIT</code>)</li>
+<li>Barracuda Firewall (<code>BARRACUDA_FIREWALL</code>)</li>
+<li>BeyondTrust (<code>BOMGAR</code>)</li>
+<li>BeyondTrust BeyondInsight (<code>BEYONDTRUST_BEYONDINSIGHT</code>)</li>
+<li>BeyondTrust Secure Remote Access (<code>BEYONDTRUST_REMOTE_ACCESS</code>)</li>
+<li>Bindplane Agent (<code>BINDPLANE_AGENT</code>)</li>
+<li>Bitdefender (<code>BITDEFENDER</code>)</li>
+<li>Blue Coat Proxy (<code>BLUECOAT_WEBPROXY</code>)</li>
+<li>Cambium Networks (<code>CAMBIUM_NETWORKS</code>)</li>
+<li>Carbon Black (<code>CB_EDR</code>)</li>
+<li>Carbon Black App Control (<code>CB_APP_CONTROL</code>)</li>
+<li>Cequence Bot Defense (<code>CEQUENCE_BOT_DEFENSE</code>)</li>
+<li>Check Point (<code>CHECKPOINT_FIREWALL</code>)</li>
+<li>Check Point Sandblast (<code>CHECKPOINT_EDR</code>)</li>
+<li>Chrome Management (<code>CHROME_MANAGEMENT</code>)</li>
+<li>CipherTrust Manager (<code>CIPHERTRUST_MANAGER</code>)</li>
+<li>Cisco AMP (<code>CISCO_AMP</code>)</li>
+<li>Cisco ASA (<code>CISCO_ASA_FIREWALL</code>)</li>
+<li>Cisco Email Security (<code>CISCO_EMAIL_SECURITY</code>)</li>
+<li>Cisco Firepower NGFW (<code>CISCO_FIREPOWER_FIREWALL</code>)</li>
+<li>Cisco Firewall Services Module (<code>CISCO_FWSM</code>)</li>
+<li>Cisco Internetwork Operating System (<code>CISCO_IOS</code>)</li>
+<li>Cisco IronPort (<code>CISCO_IRONPORT</code>)</li>
+<li>Cisco ISE (<code>CISCO_ISE</code>)</li>
+<li>Cisco Meraki (<code>CISCO_MERAKI</code>)</li>
+<li>Cisco Router (<code>CISCO_ROUTER</code>)</li>
+<li>Cisco Secure Access (<code>CISCO_SECURE_ACCESS</code>)</li>
+<li>Cisco Stealthwatch (<code>CISCO_STEALTHWATCH</code>)</li>
+<li>Cisco Switch (<code>CISCO_SWITCH</code>)</li>
+<li>Cisco UCM (<code>CISCO_UCM</code>)</li>
+<li>Cisco Umbrella Audit (<code>CISCO_UMBRELLA_AUDIT</code>)</li>
+<li>Cisco Umbrella Cloud Firewall (<code>UMBRELLA_FIREWALL</code>)</li>
+<li>Cisco Umbrella DNS (<code>UMBRELLA_DNS</code>)</li>
+<li>Cisco Umbrella IP (<code>UMBRELLA_IP</code>)</li>
+<li>Cisco Umbrella SWG DLP (<code>CISCO_UMBRELLA_SWG_DLP</code>)</li>
+<li>Cisco Umbrella Web Proxy (<code>UMBRELLA_WEBPROXY</code>)</li>
+<li>Cisco WSA (<code>CISCO_WSA</code>)</li>
+<li>Citrix Netscaler (<code>CITRIX_NETSCALER</code>)</li>
+<li>Claroty Continuous Threat Detection (<code>CLAROTY_CTD</code>)</li>
+<li>Claroty Xdome (<code>CLAROTY_XDOME</code>)</li>
+<li>Cloudflare (<code>CLOUDFLARE</code>)</li>
+<li>Cloudflare Network Analytics (<code>CLOUDFLARE_NETWORK_ANALYTICS</code>)</li>
+<li>Cloudflare WAF (<code>CLOUDFLARE_WAF</code>)</li>
+<li>Cloudflare Warp (<code>CLOUDFLARE_WARP</code>)</li>
+<li>Code42 Incydr (<code>CODE42_INCYDR</code>)</li>
+<li>Corelight (<code>CORELIGHT</code>)</li>
+<li>CoSoSys Protector (<code>ENDPOINT_PROTECTOR_DLP</code>)</li>
+<li>CrowdStrike Alerts API (<code>CS_ALERTS</code>)</li>
+<li>CrowdStrike Falcon (<code>CS_EDR</code>)</li>
+<li>CrowdStrike Falcon Stream (<code>CS_STREAM</code>)</li>
+<li>Cyber 2.0 IDS (<code>CYBER_2_IDS</code>)</li>
+<li>CyberArk Endpoint Privilege Manager (EPM) (<code>CYBERARK_EPM</code>)</li>
+<li>Cyberark Privilege Cloud (<code>CYBERARK_PRIVILEGE_CLOUD</code>)</li>
+<li>CyberArk Privileged Access Manager (PAM) (<code>CYBERARK_PAM</code>)</li>
+<li>Cybereason EDR (<code>CYBEREASON_EDR</code>)</li>
+<li>Cynet 360 AutoXDR (<code>CYNET_360_AUTOXDR</code>)</li>
+<li>Cyolo Secure Remote Access for OT (<code>CYOLO_OT</code>)</li>
+<li>Darktrace (<code>DARKTRACE</code>)</li>
+<li>Delinea Secret Server (<code>DELINEA_SECRET_SERVER</code>)</li>
+<li>Digital Guardian DLP (<code>DIGITALGUARDIAN_DLP</code>)</li>
+<li>Digital Guardian EDR (<code>DIGITALGUARDIAN_EDR</code>)</li>
+<li>DigitalArts i-Filter (<code>DIGITALARTS_IFILTER</code>)</li>
+<li>Dummy LogType (<code>DUMMY_LOGTYPE</code>)</li>
+<li>EfficientIP DDI (<code>EFFICIENTIP_DDI</code>)</li>
+<li>ESET AV (<code>ESET_AV</code>)</li>
+<li>ESET Threat Intelligence (<code>ESET_IOC</code>)</li>
+<li>Extreme Networks Switch (<code>EXTREME_SWITCH</code>)</li>
+<li>F5 Advanced Firewall Management (<code>F5_AFM</code>)</li>
+<li>F5 ASM (<code>F5_ASM</code>)</li>
+<li>F5 BIGIP Access Policy Manager (<code>F5_BIGIP_APM</code>)</li>
+<li>F5 Silverline (<code>F5_SILVERLINE</code>)</li>
+<li>FireEye ETP (<code>FIREEYE_ETP</code>)</li>
+<li>Fluentd Logs (<code>FLUENTD</code>)</li>
+<li>Forcepoint NGFW (<code>FORCEPOINT_FIREWALL</code>)</li>
+<li>Forcepoint DLP (<code>FORCEPOINT_DLP</code>)</li>
+<li>Forcepoint Proxy (<code>FORCEPOINT_WEBPROXY</code>)</li>
+<li>Forescout NAC (<code>FORESCOUT_NAC</code>)</li>
+<li>FortiGate (<code>FORTINET_FIREWALL</code>)</li>
+<li>Fortinet FortiAnalyzer (<code>FORTINET_FORTIANALYZER</code>)</li>
+<li>Fortinet FortiEDR (<code>FORTINET_FORTIEDR</code>)</li>
+<li>GCP Abuse Events Logs (<code>GCP_ABUSE_EVENTS</code>)</li>
+<li>GitHub (<code>GITHUB</code>)</li>
+<li>GMV Checker ATM Security (<code>GMV_CHECKER</code>)</li>
+<li>Google Cloud Apigee (<code>GCP_APIGEE</code>)</li>
+<li>Google Cloud Audit (<code>GCP_CLOUDAUDIT</code>)</li>
+<li>Google Cloud Security Center Threat (<code>GCP_SECURITYCENTER_THREAT</code>)</li>
+<li>Google Threat Intelligence IOC (<code>GTI_IOC</code>)</li>
+<li>GTB Technologies DLP (<code>GTB_DLP</code>)</li>
+<li>H3C Comware Platform Switch (<code>H3C_SWITCH</code>)</li>
+<li>Halcyon Anti Ransomware (<code>HALCYON</code>)</li>
+<li>HP Aruba (ClearPass) (<code>CLEARPASS</code>)</li>
+<li>HP Linux (<code>HP_LINUX</code>)</li>
+<li>HP Procurve Switch (<code>HP_PROCURVE</code>)</li>
+<li>IBM AS/400 (<code>IBM_AS400</code>)</li>
+<li>IBM Security Verify Access (<code>IBM_SVA</code>)</li>
+<li>IBM WebSEAL (<code>IBM_WEBSEAL</code>)</li>
+<li>IBM Websphere Application Server (<code>IBM_WEBSPHERE_APP_SERVER</code>)</li>
+<li>IBM z/OS (<code>IBM_ZOS</code>)</li>
+<li>Imperva (<code>IMPERVA_WAF</code>)</li>
+<li>Imperva DRA (<code>IMPERVA_DRA</code>)</li>
+<li>Imperva SecureSphere Management (<code>IMPERVA_SECURESPHERE</code>)</li>
+<li>Infoblox (<code>INFOBLOX</code>)</li>
+<li>Infoblox DHCP (<code>INFOBLOX_DHCP</code>)</li>
+<li>Infoblox DNS (<code>INFOBLOX_DNS</code>)</li>
+<li>ION Spectrum (<code>ION_SPECTRUM</code>)</li>
+<li>Ionix (<code>IONIX</code>)</li>
+<li>Ipswitch MOVEit Transfer (<code>IPSWITCH_MOVEIT_TRANSFER</code>)</li>
+<li>Island Browser logs (<code>ISLAND_BROWSER</code>)</li>
+<li>JAMF Pro (<code>JAMF_PRO</code>)</li>
+<li>Jamf Protect Telemetry V2 (<code>JAMF_TELEMETRY_V2</code>)</li>
+<li>JFrog Artifactory (<code>JFROG_ARTIFACTORY</code>)</li>
+<li>Journald (<code>JOURNALD</code>)</li>
+<li>JumpCloud Directory Insights (<code>JUMPCLOUD_DIRECTORY_INSIGHTS</code>)</li>
+<li>Juniper (<code>JUNIPER_FIREWALL</code>)</li>
+<li>Juniper Junos (<code>JUNIPER_JUNOS</code>)</li>
+<li>Kaspersky AV (<code>KASPERSKY_AV</code>)</li>
+<li>Kaspersky Endpoint (<code>KASPERSKY_ENDPOINT</code>)</li>
+<li>Keycloak (<code>KEYCLOAK</code>)</li>
+<li>Kiteworks (<code>KITEWORKS</code>)</li>
+<li>Kubernetes Node (<code>KUBERNETES_NODE</code>)</li>
+<li>Linux Auditing System (AuditD) (<code>AUDITD</code>)</li>
+<li>Linux Sysmon (<code>LINUX_SYSMON</code>)</li>
+<li>McAfee ePolicy Orchestrator (<code>MCAFEE_EPO</code>)</li>
+<li>Microsoft AD FS (<code>ADFS</code>)</li>
+<li>Microsoft Azure NSG Flow (<code>AZURE_NSG_FLOW</code>)</li>
+<li>Microsoft Defender for Endpoint (<code>MICROSOFT_DEFENDER_ENDPOINT</code>)</li>
+<li>Microsoft Defender for Office 365 (<code>MICROSOFT_DEFENDER_MAIL</code>)</li>
+<li>Microsoft Exchange (<code>EXCHANGE_MAIL</code>)</li>
+<li>Microsoft Graph API Alerts (<code>MICROSOFT_GRAPH_ALERT</code>)</li>
+<li>Microsoft IIS (<code>IIS</code>)</li>
+<li>Microsoft Intune (<code>AZURE_MDM_INTUNE</code>)</li>
+<li>Microsoft PowerShell (<code>POWERSHELL</code>)</li>
+<li>Microsoft Sentinel (<code>MICROSOFT_SENTINEL</code>)</li>
+<li>Microsoft SQL Server (<code>MICROSOFT_SQL</code>)</li>
+<li>Mikrotik Router (<code>MIKROTIK_ROUTER</code>)</li>
+<li>Mimecast Mail V2 (<code>MIMECAST_MAIL_V2</code>)</li>
+<li>MISP Threat Intelligence (<code>MISP_IOC</code>)</li>
+<li>Mobileiron (<code>MOBILEIRON</code>)</li>
+<li>NetApp ONTAP (<code>NETAPP_ONTAP</code>)</li>
+<li>Netscout (<code>ARBOR_EDGE_DEFENSE</code>)</li>
+<li>Netskope CASB (<code>NETSKOPE_CASB</code>)</li>
+<li>Netskope V2 (<code>NETSKOPE_ALERT_V2</code>)</li>
+<li>Netskope Web Proxy (<code>NETSKOPE_WEBPROXY</code>)</li>
+<li>Nexus Sonatype (<code>NEXUS_SONATYPE</code>)</li>
+<li>Nozomi Networks Scada Guardian (<code>NOZOMI_GUARDIAN</code>)</li>
+<li>Obsidian (<code>OBSIDIAN</code>)</li>
+<li>Office 365 (<code>OFFICE_365</code>)</li>
+<li>Okta (<code>OKTA</code>)</li>
+<li>Open Cybersecurity Schema Framework (OCSF) (<code>OCSF</code>)</li>
+<li>Open LDAP (<code>OPENLDAP</code>)</li>
+<li>Opnsense (<code>OPNSENSE</code>)</li>
+<li>Opswat Metadefender (<code>OPSWAT_METADEFENDER</code>)</li>
+<li>Oracle (<code>ORACLE_DB</code>)</li>
+<li>Oracle Cloud Infrastructure Audit Logs (<code>OCI_AUDIT</code>)</li>
+<li>Oracle Cloud Infrastructure VCN Flow Logs (<code>OCI_FLOW</code>)</li>
+<li>Orca Cloud Security Platform (<code>ORCA</code>)</li>
+<li>Palo Alto Cortex XDR Alerts (<code>CORTEX_XDR</code>)</li>
+<li>Palo Alto Cortex XDR Events (<code>PAN_CORTEX_XDR_EVENTS</code>)</li>
+<li>Palo Alto Networks Firewall (<code>PAN_FIREWALL</code>)</li>
+<li>Palo Alto Panorama (<code>PAN_PANORAMA</code>)</li>
+<li>Palo Alto Prisma Cloud Alert payload (<code>PAN_PRISMA_CA</code>)</li>
+<li>Passwordstate (<code>PASSWORDSTATE</code>)</li>
+<li>Ping Federate (<code>PING_FEDERATE</code>)</li>
+<li>Ping Identity (<code>PING</code>)</li>
+<li>Ping One (<code>PING_ONE</code>)</li>
+<li>PingIdentity Directory Server Logs (<code>PING_DIRECTORY</code>)</li>
+<li>PostFix Mail (<code>POSTFIX_MAIL</code>)</li>
+<li>PostgreSQL (<code>POSTGRESQL</code>)</li>
+<li>Proofpoint Observeit (<code>OBSERVEIT</code>)</li>
+<li>Proofpoint On Demand (<code>PROOFPOINT_ON_DEMAND</code>)</li>
+<li>Proofpoint Tap Alerts (<code>PROOFPOINT_MAIL</code>)</li>
+<li>Proofpoint Threat Response (<code>PROOFPOINT_TRAP</code>)</li>
+<li>Radware Web Application Firewall (<code>RADWARE_FIREWALL</code>)</li>
+<li>RSA (<code>RSA_AUTH_MANAGER</code>)</li>
+<li>Ruckus Networks (<code>RUCKUS_WIRELESS</code>)</li>
+<li>SailPoint IAM (<code>SAILPOINT_IAM</code>)</li>
+<li>Salesforce (<code>SALESFORCE</code>)</li>
+<li>Sangfor Next Generation Firewall (<code>SANGFOR_NGAF</code>)</li>
+<li>Security Command Center Chokepoint (<code>GCP_SECURITYCENTER_CHOKEPOINT</code>)</li>
+<li>Security Command Center Posture Violation (<code>GCP_SECURITYCENTER_POSTURE_VIOLATION</code>)</li>
+<li>Security Command Center Toxic Combination (<code>GCP_SECURITYCENTER_TOXIC_COMBINATION</code>)</li>
+<li>Semperis DSP (<code>SEMPERIS_DSP</code>)</li>
+<li>Sentinelone Activity (<code>SENTINELONE_ACTIVITY</code>)</li>
+<li>SentinelOne Deep Visibility (<code>SENTINEL_DV</code>)</li>
+<li>ServiceNow Audit (<code>SERVICENOW_AUDIT</code>)</li>
+<li>Solaris system (<code>SOLARIS_SYSTEM</code>)</li>
+<li>SonicWall (<code>SONIC_FIREWALL</code>)</li>
+<li>Squid Web Proxy (<code>SQUID_WEBPROXY</code>)</li>
+<li>STIX Threat Intelligence (<code>STIX</code>)</li>
+<li>Swift Alliance Messaging Hub (<code>SWIFT_AMH</code>)</li>
+<li>Symantec Endpoint Protection (<code>SEP</code>)</li>
+<li>Tanium Audit (<code>TANIUM_AUDIT</code>)</li>
+<li>Tanium Integrity Monitor (<code>TANIUM_INTEGRITY_MONITOR</code>)</li>
+<li>Tanium Threat Response (<code>TANIUM_THREAT_RESPONSE</code>)</li>
+<li>Teleport Access Plane (<code>TELEPORT_ACCESS_PLANE</code>)</li>
+<li>Tenable Active Directory Security (<code>TENABLE_ADS</code>)</li>
+<li>Tenable OT (<code>TENABLE_OT</code>)</li>
+<li>tenable.io (<code>TENABLE_IO</code>)</li>
+<li>Thales Luna Hardware Security Module (<code>THALES_LUNA_HSM</code>)</li>
+<li>Thales MFA (<code>THALES_MFA</code>)</li>
+<li>Trellix HX Event Streamer (<code>TRELLIX_HX_ES</code>)</li>
+<li>Trend Micro (<code>TIPPING_POINT</code>)</li>
+<li>Trend Micro Apex one (<code>TRENDMICRO_APEX_ONE</code>)</li>
+<li>Trend Micro Vision One (<code>TRENDMICRO_VISION_ONE</code>)</li>
+<li>Trend Micro Vision One Audit (<code>TRENDMICRO_VISION_ONE_AUDIT</code>)</li>
+<li>Trend Micro Vision One Detections (<code>TRENDMICRO_VISION_ONE_DETECTIONS</code>)</li>
+<li>Trend Micro Vision One Observerd Attack Techniques (<code>TRENDMICRO_VISION_ONE_OBSERVERD_ATTACK_TECHNIQUES</code>)</li>
+<li>TXOne Stellar (<code>TRENDMICRO_STELLAR</code>)</li>
+<li>Ubika Waf (<code>UBIKA_WAF</code>)</li>
+<li>Unix system (<code>NIX_SYSTEM</code>)</li>
+<li>Upstream Vehicle SOC Alerts (<code>UPSTREAM_VSOC_ALERTS</code>)</li>
+<li>Varonis (<code>VARONIS</code>)</li>
+<li>Vectra Stream (<code>VECTRA_STREAM</code>)</li>
+<li>Venafi ZTPKI (<code>VENAFI_ZTPKI</code>)</li>
+<li>Veritas NetBackup (<code>VERITAS_NETBACKUP</code>)</li>
+<li>Versa Firewall (<code>VERSA_FIREWALL</code>)</li>
+<li>Vmware Avinetworks iWAF (<code>VMWARE_AVINETWORKS_IWAF</code>)</li>
+<li>VMware ESXi (<code>VMWARE_ESX</code>)</li>
+<li>VMware NSX (<code>VMWARE_NSX</code>)</li>
+<li>VMware vCenter (<code>VMWARE_VCENTER</code>)</li>
+<li>WatchGuard (<code>WATCHGUARD</code>)</li>
+<li>Windows DNS (<code>WINDOWS_DNS</code>)</li>
+<li>Windows Event (<code>WINEVTLOG</code>)</li>
+<li>Windows Event (XML) (<code>WINEVTLOG_XML</code>)</li>
+<li>Windows Sysmon (<code>WINDOWS_SYSMON</code>)</li>
+<li>wiz.io (<code>WIZ_IO</code>)</li>
+<li>Workday User Activity (<code>WORKDAY_USER_ACTIVITY</code>)</li>
+<li>Workspace Activities (<code>WORKSPACE_ACTIVITY</code>)</li>
+<li>Workspace Alerts (<code>WORKSPACE_ALERTS</code>)</li>
+<li>Workspace Users (<code>WORKSPACE_USERS</code>)</li>
+<li>Zendesk CRM (<code>ZENDESK_CRM</code>)</li>
+<li>Zoom Operation Logs (<code>ZOOM_OPERATION_LOGS</code>)</li>
+<li>Zscaler (<code>ZSCALER_WEBPROXY</code>)</li>
+<li>ZScaler NGFW (<code>ZSCALER_FIREWALL</code>)</li>
+<li>Zscaler Private Access (<code>ZSCALER_ZPA</code>)</li>
+<li>Zscaler Secure Private Access Audit Logs (<code>ZSCALER_ZPA_AUDIT</code>)</li>
+</ul>
+<p>The following log types were added without a default parser. Each parser is listed by product name and <code>log_type</code> value, where applicable.</p>
+<ul>
+<li>Absolute Secure Endpoint (<code>ABSOLUTE_SECURE_ENDPOINT</code>)</li>
+<li>Airbus Security Logging (ACD AISD) (<code>AIRBUS_SECURITY_LOG</code>)</li>
+<li>Azure Recovery Services Vaults (<code>AZURE_RECOVERY_SERVICES_VAULTS</code>)</li>
+<li>Boeing Onboard Network System Logging (<code>BOEING_ONS</code>)</li>
+<li>Cisco Firepower Threat Defense (<code>CISCO_FIREPOWER_THREAT_DEFENSE</code>)</li>
+<li>Cisco Security Cloud Control (<code>CISCO_SECURITY_CLOUD_CONTROL</code>)</li>
+<li>Pico Corvilnet Engine (<code>CORVILNET_ENGINE</code>)</li>
+<li>CrowdStrike Falcon Shield (<code>CROWDSTRIKE_FALCON_SHIELD</code>)</li>
+<li>Easy NAC (<code>EASY_NAC</code>)</li>
+<li>FairXchange Horizon (<code>FAIRXCHANGE_HORIZON</code>)</li>
+<li>Google Threat Intelligence (<code>GCP_THREATINTEL</code>)</li>
+<li>HPE Alletra (<code>HPE_ALLETRA</code>)</li>
+<li>Huawei Cloud Trace Service Audit (<code>HUAWEI_CTS_AUDIT</code>)</li>
+<li>Huawei SecMaster (<code>HUAWEI_SECMASTER</code>)</li>
+<li>IBM ILO (<code>IBM_ILO</code>)</li>
+<li>Infisical (<code>INFISICAL</code>)</li>
+<li>JSCAPE SFTP (<code>JSCAPE_SFTP</code>)</li>
+<li>Juniper Edge (<code>JUNIPER_EDGE</code>)</li>
+<li>Kaspersky for Microsoft Office 365 (<code>KASPERSKY_O365_EVENTS</code>)</li>
+<li>Microsoft Defender for Cloud Apps (<code>MICROSOFT_DEFENDER_CLOUD_APPS</code>)</li>
+<li>Oracle Cloud Infrastructure Network Firewall (<code>OCI_FIREWALL</code>)</li>
+<li>Okta Workflows (<code>OKTA_WORKFLOWS</code>)</li>
+<li>Phosphorus (<code>PHOSPHORUS</code>)</li>
+<li>Rapid7 Cloud Security (<code>RAPID7_CLOUDSEC</code>)</li>
+<li>Research and Education Networks Information Sharing and Analysis Center (<code>REN_ISAC</code>)</li>
+<li>Risk Resecurity (<code>RISK_RESECURITY</code>)</li>
+<li>Sangfor Network Detection and Response (<code>SANGFOR_NDR</code>)</li>
+<li>SAP Enterprise Threat Detection (<code>SAP_ETD</code>)</li>
+<li>SAP IAS Context (<code>SAP_IAS_CONTEXT</code>)</li>
+<li>Sectigo SCM (<code>SECTIGO_SCM</code>)</li>
+<li>ServiceNow Node (<code>SERVICENOW_NODE</code>)</li>
+<li>ServiceNow Outbound HTTP (<code>SERVICENOW_OUTBOUNDHTTP</code>)</li>
+<li>ServiceNow System log (<code>SERVICENOW_SYSLOG</code>)</li>
+<li>ServiceNow Transaction (<code>SERVICENOW_TRANSACTION</code>)</li>
+<li>Seti S4 (<code>SETI_S4</code>)</li>
+<li>ThousandEyes (<code>THOUSAND_EYES</code>)</li>
+<li>Transmit Security Mosaic CIAM (<code>TRANSMIT_MOSAIC_CIAM</code>)</li>
+<li>Transmit Security Mosaic Fraud Prevention (<code>TRANSMIT_MOSAIC_FRAUD_PREVENTION</code>)</li>
+<li>Transmit Security Mosaic Identity Verification (<code>TRANSMIT_MOSAIC_IDENTITY_VERIFICATION</code>)</li>
+<li>Transmit Security Mosaic Management (<code>TRANSMIT_MOSAIC_MANAGEMENT</code>)</li>
+<li>Tripwire Security Configuration Management (<code>TRIPWIRE_SCM</code>)</li>
+<li>Valimail (<code>VALIMAIL</code>)</li>
+<li>WSO2 IS AM (<code>WSO2_IS_AM</code>)</li>
+<li>XDR.Net Digital Twin (<code>XDRNET_DIGITALTWIN</code>)</li>
+<li>Zimbra Mail (<code>ZIMBRA_MAIL</code>)</li>
+<li>Zscaler Email DLP (<code>ZSCALER_EMAIL_DLP</code>)</li>
+</ul>]]></content>
+    <summary>Google SecOps has updated the list of supported default parsers. The changes might take one to four days to reflect in your region. This update includes new supported parsers and log types added without a default parser.</summary>
+    <title>Changed: Parser Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-16:announcement:0</id>
+    <published>2025-11-16T00:00:00+00:00</published>
+    <updated>2025-11-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Release 6.3.68 is being rolled out to the first phase of regions as listed <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
+<p>This release contains the following changes:</p>]]></content>
+    <summary>Release 6.3.68 is now available in initial regions. For details on the regions included, please refer to the provided link.</summary>
+    <title>Announcement: Release 6.3.68 Rollout</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-16:feature:1</id>
+    <published>2025-11-16T00:00:00+00:00</published>
+    <updated>2025-11-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Change views per alert</strong></p>
+<p>The <strong>Alert Overview</strong> page now includes a new option to select a specific view for each alert. If several playbooks have run on an alert, and those playbooks have customized views, you can now select and display any of those customized views for that alert.</p>]]></content>
+    <summary>You can now select specific views for each alert on the Alert Overview page. This allows you to display customized views when multiple playbooks have been run on an alert.</summary>
+    <title>Feature: Alert Overview: Selectable Views</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-15:announcement:0</id>
+    <published>2025-11-15T00:00:00+00:00</published>
+    <updated>2025-11-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#November_09_2025">Release 6.3.67</a> is now available for all regions.</p>]]></content>
+    <summary>The latest update, Release 6.3.67, has been deployed and is now accessible across all regions.</summary>
+    <title>Announcement: Release 6.3.67 Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-13:feature:0</id>
+    <published>2025-11-13T00:00:00+00:00</published>
+    <updated>2025-11-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Raw log search enhancements</strong></p>
+<p>Google SecOps now includes enhancements to raw log search to boost usability,
+performance, and data analysis:</p>
+<ul>
+<li><strong>New filtering options</strong>: Filter raw log results by their parsing status or
+  by one or more log sources.</li>
+<li><strong>Optimized results view</strong>: Expand or collapse the Trend over time graph,
+  providing more space for results.</li>
+<li><strong>Download raw log results</strong>: Download raw log results to a CSV file. By default,
+  the <strong>Timestamp</strong>, <strong>Event Type</strong>, and <strong>Raw log</strong> columns are included. You can
+  select additional columns through <strong>Column Manager</strong>.</li>
+<li><strong>Enhanced search visibility</strong>: The search query and applied filters are now
+  displayed on the <strong>Search</strong> page.</li>
+<li><strong>New API for raw log search</strong>: Use the <strong>legacySearchRawLogsV2</strong> API to search
+  for raw logs within a specified Google SecOps instance.</li>
+</ul>
+<p>For more details, see the following topics:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/investigation/filter-data-raw-log-scan-view">Filter data in Raw Log Search</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/investigation/raw-log-search-in-investigate">Conduct a raw log search</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/investigation/search-raw-logs">Use raw log search</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.legacy/legacySearchRawLogsV2">Method: legacy.legacySearchRawLogsV2</a></li>
+</ul>]]></content>
+    <summary>New filtering options, an optimized results view, and the ability to download raw log results are now available. You can also see your search query and applied filters, and use a new API for searching raw logs.</summary>
+    <title>Feature: Raw log search enhancements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-13:feature:1</id>
+    <published>2025-11-13T00:00:00+00:00</published>
+    <updated>2025-11-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Raw log search enhancements</strong></p>
+<p>Google SecOps now includes enhancements to raw log search to boost usability,
+performance, and data analysis:</p>
+<ul>
+<li><strong>New filtering options</strong>: Filter raw log results by their parsing status or
+  by one or more log sources.</li>
+<li><strong>Optimized results view</strong>: Expand or collapse the Trend over time graph,
+  providing more space for results.</li>
+<li><strong>Download raw log results</strong>: Download raw log results to a CSV file. By default,
+  the <strong>Timestamp</strong>, <strong>Event Type</strong>, and <strong>Raw log</strong> columns are included. You can
+  select additional columns through <strong>Column Manager</strong>.</li>
+<li><strong>Enhanced search visibility</strong>: The search query and applied filters are now
+  displayed on the <strong>Search</strong> page.</li>
+<li><strong>New API for raw log search</strong>: Use the <strong>legacySearchRawLogsV2</strong> API to search
+  for raw logs within a specified Google SecOps instance.</li>
+</ul>
+<p>For more details, see the following topics:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/investigation/filter-data-raw-log-scan-view">Filter data in Raw Log Search</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/investigation/raw-log-search-in-investigate">Conduct a raw log search</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/investigation/search-raw-logs">Use raw log search</a></li>
+<li><a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.legacy/legacySearchRawLogsV2">Method: legacy.legacySearchRawLogsV2</a></li>
+</ul>]]></content>
+    <summary>New filtering options, an optimized results view, and the ability to download raw log results are now available. You can also see your search query and applied filters, and use a new API for searching raw logs.</summary>
+    <title>Feature: Raw log search enhancements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-12:announcement:0</id>
+    <published>2025-11-12T00:00:00+00:00</published>
+    <updated>2025-11-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>New parser documentation now available</strong></p>
+<p>New parser documentation is available to help you ingest and normalize logs from the following sources:</p>
+<ul>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/absolute-se">Collect Absolute Secure Endpoint logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aide">Collect AIDE (Advanced Intrusion Detection Environment) logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/akamai-eaa">Collect Akamai Enterprise Application Access logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/apache-hadoop">Collect Apache Hadoop logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/armis-vulnerabilities">Collect Armis Vulnerabilities logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/arraynetworks-vpn">Collect Array Networks SSL VPN logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aruba-ips">Collect Aruba IPS logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/atlassian-confluence">Collect Atlassian Confluence logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-amp-for-endpoints">Collect Cisco AMP for Endpoints logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-apic">Collect Cisco APIC logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-aci">Collect Cisco Application Centric Infrastructure (ACI) logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-callmanager">Collect Cisco CallManager logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-cloudlock-casb">Collect Cisco CloudLock CASB logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-dnac">Collect Cisco DNA Center Platform logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-estreamer">Collect Cisco eStreamer logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cribl-stream">Collect Cribl Stream logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cs-filevantage">Collect CrowdStrike FileVantage logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cs-idp">Collect CrowdStrike IDP Services logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cynet360-autoxdr">Collect Cynet 360 AutoXDR logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/digital-shadows-searchlight">Collect Digital Shadows SearchLight logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/duo-telephony">Collect Duo Telephony logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/edgio-waf">Collect Edgio WAF logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elastic-auditbeat">Collect Elastic Auditbeat logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elastic-packetbeats">Collect Elastic Packet Beats logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elasticsearch">Collect Elasticsearch logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/entrust-nshield-hsm-audit">Collect Entrust nShield HSM audit logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-abp">Collect Imperva Advanced Bot Protection logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-aa">Collect Imperva Attack Analytics logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-audit-trail">Collect Imperva Audit Trail logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-cef">Collect Imperva CEF logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-dra">Collect Imperva Data Risk Analytics (DRA) logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-db">Collect Imperva Database logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-flexprotect">Collect Imperva FlexProtect logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-ssm">Collect Imperva SecureSphere Management logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/accellion">Collect Kiteworks (formally Accellion) logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/proofpoint-etp-ioc">Collect Proofpoint Emerging Threats Pro IOC logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/servicenow-audit">Collect ServiceNow audit logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/team-cymru-scout-ti">Collect Team Cymru Scout Threat Intelligence data</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/urlscan-io">Collect URLScan IO logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/uptycs-edr">Collect Uptycs EDR logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vandyke-vshell-sftp">Collect VanDyke VShell SFTP logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zendesk-crm">Collect Zendesk CRM logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zerofox-platform">Collect ZeroFox Platform logs</a></li>
+</ul>]]></content>
+    <summary>New documentation is now available to assist with ingesting and normalizing logs from a wide variety of sources. This includes detailed guides for sources such as Absolute Secure Endpoint, AIDE, Akamai Enterprise Application Access, and many others.</summary>
+    <title>Announcement: New Parser Documentation Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-12:feature:1</id>
+    <published>2025-11-12T00:00:00+00:00</published>
+    <updated>2025-11-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Enhance threat visibility and detection with Emerging Threats</strong></p>
+<p>The new <strong>Emerging Threats</strong> page provides AI-powered threat intelligence to help
+you understand how current threat campaigns might affect your organization.
+Powered by Google Threat Intelligence (GTI) and Gemini models, this page offers
+a curated view of critical global threats relevant to your environment.</p>
+<p>Emerging Threats continuously aligns intelligence from GTI with your organization's
+telemetry to highlight detection coverage and identify gaps. When it finds a gap,
+it uses Gemini to automatically draft new detection rules to accelerate your response.</p>
+<p>For more details, see <a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats">Emerging Threats overview</a>,
+<a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-feed">Emerging Threats feed</a>,and
+<a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-detailed-view">Emerging Threats detailed view</a>.</p>]]></content>
+    <summary>Stay ahead of global threats with AI-powered insights and automated detection rule generation.</summary>
+    <title>Feature: Emerging Threats</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-12:feature:2</id>
+    <published>2025-11-12T00:00:00+00:00</published>
+    <updated>2025-11-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Use the Triage Agent to investigate alerts</strong></p>
+<p>You can now use Triage Agent, an AI-powered investigation assistant, to
+analyze alerts in Google SecOps. Triage Agent determines if an
+alert is a true or false positive, provides a summarized explanation for its
+conclusion, and suggests next steps for further investigation.</p>
+<p>You can trigger investigations manually or have them run automatically on
+supported alert types. Each investigation produces a detailed report that includes
+the agent's disposition, a summary of its findings, and a timeline of the analysis.</p>
+<p>For more details, see <a href="https://docs.cloud.google.com/chronicle/docs/secops/triage-agent">Use Triage Agent to investigate alerts</a>.</p>]]></content>
+    <summary>Use the AI-powered Triage Agent to investigate alerts in Google SecOps. It determines if an alert is a true or false positive, provides explanations, and suggests next steps. Investigations can be triggered manually or automatically, producing detailed reports.</summary>
+    <title>Feature: Investigate alerts with Triage Agent</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-12:announcement:3</id>
+    <published>2025-11-12T00:00:00+00:00</published>
+    <updated>2025-11-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>New parser documentation now available</strong></p>
+<p>New parser documentation is available to help you ingest and normalize logs from the following sources:</p>
+<ul>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/absolute-se">Collect Absolute Secure Endpoint logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aide">Collect AIDE (Advanced Intrusion Detection Environment) logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/akamai-eaa">Collect Akamai Enterprise Application Access logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/apache-hadoop">Collect Apache Hadoop logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/armis-vulnerabilities">Collect Armis Vulnerabilities logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/arraynetworks-vpn">Collect Array Networks SSL VPN logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aruba-ips">Collect Aruba IPS logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/atlassian-confluence">Collect Atlassian Confluence logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-amp-for-endpoints">Collect Cisco AMP for Endpoints logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-apic">Collect Cisco APIC logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-aci">Collect Cisco Application Centric Infrastructure (ACI) logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-callmanager">Collect Cisco CallManager logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-cloudlock-casb">Collect Cisco CloudLock CASB logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-dnac">Collect Cisco DNA Center Platform logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-estreamer">Collect Cisco eStreamer logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cribl-stream">Collect Cribl Stream logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cs-filevantage">Collect CrowdStrike FileVantage logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cs-idp">Collect CrowdStrike IDP Services logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cynet360-autoxdr">Collect Cynet 360 AutoXDR logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/digital-shadows-searchlight">Collect Digital Shadows SearchLight logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/duo-telephony">Collect Duo Telephony logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/edgio-waf">Collect Edgio WAF logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elastic-auditbeat">Collect Elastic Auditbeat logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elastic-packetbeats">Collect Elastic Packet Beats logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elasticsearch">Collect Elasticsearch logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/entrust-nshield-hsm-audit">Collect Entrust nShield HSM audit logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-abp">Collect Imperva Advanced Bot Protection logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-aa">Collect Imperva Attack Analytics logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-audit-trail">Collect Imperva Audit Trail logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-cef">Collect Imperva CEF logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-dra">Collect Imperva Data Risk Analytics (DRA) logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-db">Collect Imperva Database logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-flexprotect">Collect Imperva FlexProtect logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-ssm">Collect Imperva SecureSphere Management logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/accellion">Collect Kiteworks (formally Accellion) logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/proofpoint-etp-ioc">Collect Proofpoint Emerging Threats Pro IOC logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/servicenow-audit">Collect ServiceNow audit logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/team-cymru-scout-ti">Collect Team Cymru Scout Threat Intelligence data</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/urlscan-io">Collect URLScan IO logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/uptycs-edr">Collect Uptycs EDR logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vandyke-vshell-sftp">Collect VanDyke VShell SFTP logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zendesk-crm">Collect Zendesk CRM logs</a></li>
+<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zerofox-platform">Collect ZeroFox Platform logs</a></li>
+</ul>]]></content>
+    <summary>New documentation is now available to assist with ingesting and normalizing logs from a wide variety of sources. This includes detailed guides for sources such as Absolute Secure Endpoint, AIDE, Akamai Enterprise Application Access, and many others.</summary>
+    <title>Announcement: New Parser Documentation Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-12:feature:4</id>
+    <published>2025-11-12T00:00:00+00:00</published>
+    <updated>2025-11-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Enhance threat visibility and detection with Emerging Threats</strong></p>
+<p>The new <strong>Emerging Threats</strong> page provides AI-powered threat intelligence to help
+you understand how current threat campaigns might affect your organization.
+Powered by Google Threat Intelligence (GTI) and Gemini models, this page offers
+a curated view of critical global threats relevant to your environment.</p>
+<p>Emerging Threats continuously aligns intelligence from GTI with your organization's
+telemetry to highlight detection coverage and identify gaps. When it finds a gap,
+it uses Gemini to automatically draft new detection rules to accelerate your response.</p>
+<p>For more details, see <a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats">Emerging Threats overview</a>,
+<a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-feed">Emerging Threats feed</a>,and
+<a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-detailed-view">Emerging Threats detailed view</a>.</p>]]></content>
+    <summary>Stay ahead of global threats with AI-powered insights and automated detection rule generation.</summary>
+    <title>Feature: Emerging Threats</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-12:feature:5</id>
+    <published>2025-11-12T00:00:00+00:00</published>
+    <updated>2025-11-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Use the Triage Agent to investigate alerts</strong></p>
+<p>You can now use Triage Agent, an AI-powered investigation assistant, to
+analyze alerts in Google SecOps. Triage Agent determines if an
+alert is a true or false positive, provides a summarized explanation for its
+conclusion, and suggests next steps for further investigation.</p>
+<p>You can trigger investigations manually or have them run automatically on
+supported alert types. Each investigation produces a detailed report that includes
+the agent's disposition, a summary of its findings, and a timeline of the analysis.</p>
+<p>For more details, see <a href="https://docs.cloud.google.com/chronicle/docs/secops/triage-agent">Use Triage Agent to investigate alerts</a>.</p>]]></content>
+    <summary>Use the AI-powered Triage Agent to investigate alerts in Google SecOps. It determines if an alert is a true or false positive, provides explanations, and suggests next steps. Investigations can be triggered manually or automatically, producing detailed reports.</summary>
+    <title>Feature: Investigate alerts with Triage Agent</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-10:feature:0</id>
+    <published>2025-11-10T00:00:00+00:00</published>
+    <updated>2025-11-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Nested if</strong></p>
+<p>You can now use <code>if</code> statements in both the <code>outcome</code> and <code>events</code> sections and
+also within the <code>then</code> <code>else</code> clauses of another <code>if</code> statement. This capability
+lets you introduce more complicated logic to your query and is supported in
+Rules, Search, and Dashboards.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/chronicle/docs/yara-l/nested-if">Use nested if statements for more complex logic</a>.</p>]]></content>
+    <summary>Introducing nested if statements for more complex logic in Rules, Search, and Dashboards.</summary>
+    <title>Feature: Nested If Statements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-10:feature:1</id>
+    <published>2025-11-10T00:00:00+00:00</published>
+    <updated>2025-11-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Nested if</strong></p>
+<p>You can now use <code>if</code> statements in both the <code>outcome</code> and <code>events</code> sections and
+also within the <code>then</code> <code>else</code> clauses of another <code>if</code> statement. This capability
+lets you introduce more complicated logic to your query and is supported in
+Rules, Search, and Dashboards.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/chronicle/docs/yara-l/nested-if">Use nested if statements for more complex logic</a>.</p>]]></content>
+    <summary>Introducing nested if statements for more complex logic in Rules, Search, and Dashboards.</summary>
+    <title>Feature: Nested If Statements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-09:announcement:0</id>
+    <published>2025-11-09T00:00:00+00:00</published>
+    <updated>2025-11-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Release 6.3.67 is being rolled out to the first phase of regions as listed <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
+<p>This release contains internal and customer bug fixes.</p>]]></content>
+    <summary>Release 6.3.67 is now being rolled out to initial regions. This update includes important bug fixes for our customers.</summary>
+    <title>Announcement: Release 6.3.67 Rollout</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-08:announcement:0</id>
+    <published>2025-11-08T00:00:00+00:00</published>
+    <updated>2025-11-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#November_02_2025">Release 6.3.66</a> is now available for all regions.</p>]]></content>
+    <summary>The latest update, Release 6.3.66, has been successfully deployed and is now accessible across all regions.</summary>
+    <title>Announcement: Release 6.3.66 Now Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-07:changed:0</id>
+    <published>2025-11-07T00:00:00+00:00</published>
+    <updated>2025-11-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>MITRE ATT&amp;CK coverage dashboard is now available</strong></p>
+<p>The new <a href="https://docs.cloud.google.com/chronicle/docs/detection/mitre-dashboard">MITRE ATT&amp;CK coverage dashboard</a> lets you measure your security posture against the MITRE ATT&amp;CK framework, helping you:</p>
+<ul>
+<li>Assess threat coverage</li>
+<li>Identify gaps</li>
+<li>Prioritize security efforts</li>
+</ul>]]></content>
+    <summary>Measure your security posture against the MITRE ATT&amp;CK framework to assess threat coverage, identify gaps, and prioritize security efforts.</summary>
+    <title>Changed: MITRE ATT&amp;CK Coverage Dashboard</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-07:changed:1</id>
+    <published>2025-11-07T00:00:00+00:00</published>
+    <updated>2025-11-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>MITRE ATT&amp;CK coverage dashboard is now available</strong></p>
+<p>The new <a href="https://docs.cloud.google.com/chronicle/docs/detection/mitre-dashboard">MITRE ATT&amp;CK coverage dashboard</a> lets you measure your security posture against the MITRE ATT&amp;CK framework, helping you:</p>
+<ul>
+<li>Assess threat coverage</li>
+<li>Identify gaps</li>
+<li>Prioritize security efforts</li>
+</ul>]]></content>
+    <summary>Measure your security posture against the MITRE ATT&amp;CK framework to assess threat coverage, identify gaps, and prioritize security efforts.</summary>
+    <title>Changed: MITRE ATT&amp;CK Coverage Dashboard</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -133,594 +1210,6 @@
 </ul>]]></content>
     <summary>Version 44.0 of SentinelOneV2 has been released with updated agent information fetching mechanisms for several actions.</summary>
     <title>Changed: SentinelOneV2 Update</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-16:announcement:0</id>
-    <published>2025-11-16T00:00:00+00:00</published>
-    <updated>2025-11-16T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Release 6.3.68 is being rolled out to the first phase of regions as listed <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
-<p>This release contains the following changes:</p>]]></content>
-    <summary>Release 6.3.68 is now available in initial regions. For details on the regions included, please refer to the provided link.</summary>
-    <title>Announcement: Release 6.3.68 Rollout</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-16:feature:1</id>
-    <published>2025-11-16T00:00:00+00:00</published>
-    <updated>2025-11-16T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Change views per alert</strong></p>
-<p>The <strong>Alert Overview</strong> page now includes a new option to select a specific view for each alert. If several playbooks have run on an alert, and those playbooks have customized views, you can now select and display any of those customized views for that alert.</p>]]></content>
-    <summary>You can now select specific views for each alert on the Alert Overview page. This allows you to display customized views when multiple playbooks have been run on an alert.</summary>
-    <title>Feature: Alert Overview: Selectable Views</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-15:announcement:0</id>
-    <published>2025-11-15T00:00:00+00:00</published>
-    <updated>2025-11-15T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#November_09_2025">Release 6.3.67</a> is now available for all regions.</p>]]></content>
-    <summary>The latest update, Release 6.3.67, has been deployed and is now accessible across all regions.</summary>
-    <title>Announcement: Release 6.3.67 Available</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-13:feature:0</id>
-    <published>2025-11-13T00:00:00+00:00</published>
-    <updated>2025-11-13T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Raw log search enhancements</strong></p>
-<p>Google SecOps now includes enhancements to raw log search to boost usability,
-performance, and data analysis:</p>
-<ul>
-<li><strong>New filtering options</strong>: Filter raw log results by their parsing status or
-  by one or more log sources.</li>
-<li><strong>Optimized results view</strong>: Expand or collapse the Trend over time graph,
-  providing more space for results.</li>
-<li><strong>Download raw log results</strong>: Download raw log results to a CSV file. By default,
-  the <strong>Timestamp</strong>, <strong>Event Type</strong>, and <strong>Raw log</strong> columns are included. You can
-  select additional columns through <strong>Column Manager</strong>.</li>
-<li><strong>Enhanced search visibility</strong>: The search query and applied filters are now
-  displayed on the <strong>Search</strong> page.</li>
-<li><strong>New API for raw log search</strong>: Use the <strong>legacySearchRawLogsV2</strong> API to search
-  for raw logs within a specified Google SecOps instance.</li>
-</ul>
-<p>For more details, see the following topics:</p>
-<ul>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/investigation/filter-data-raw-log-scan-view">Filter data in Raw Log Search</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/investigation/raw-log-search-in-investigate">Conduct a raw log search</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/investigation/search-raw-logs">Use raw log search</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.legacy/legacySearchRawLogsV2">Method: legacy.legacySearchRawLogsV2</a></li>
-</ul>]]></content>
-    <summary>New filtering options, an optimized results view, and the ability to download raw log results are now available. You can also see your search query and applied filters, and use a new API for searching raw logs.</summary>
-    <title>Feature: Raw log search enhancements</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-13:feature:1</id>
-    <published>2025-11-13T00:00:00+00:00</published>
-    <updated>2025-11-13T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Raw log search enhancements</strong></p>
-<p>Google SecOps now includes enhancements to raw log search to boost usability,
-performance, and data analysis:</p>
-<ul>
-<li><strong>New filtering options</strong>: Filter raw log results by their parsing status or
-  by one or more log sources.</li>
-<li><strong>Optimized results view</strong>: Expand or collapse the Trend over time graph,
-  providing more space for results.</li>
-<li><strong>Download raw log results</strong>: Download raw log results to a CSV file. By default,
-  the <strong>Timestamp</strong>, <strong>Event Type</strong>, and <strong>Raw log</strong> columns are included. You can
-  select additional columns through <strong>Column Manager</strong>.</li>
-<li><strong>Enhanced search visibility</strong>: The search query and applied filters are now
-  displayed on the <strong>Search</strong> page.</li>
-<li><strong>New API for raw log search</strong>: Use the <strong>legacySearchRawLogsV2</strong> API to search
-  for raw logs within a specified Google SecOps instance.</li>
-</ul>
-<p>For more details, see the following topics:</p>
-<ul>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/investigation/filter-data-raw-log-scan-view">Filter data in Raw Log Search</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/investigation/raw-log-search-in-investigate">Conduct a raw log search</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/investigation/search-raw-logs">Use raw log search</a></li>
-<li><a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.legacy/legacySearchRawLogsV2">Method: legacy.legacySearchRawLogsV2</a></li>
-</ul>]]></content>
-    <summary>New filtering options, an optimized results view, and the ability to download raw log results are now available. You can also see your search query and applied filters, and use a new API for searching raw logs.</summary>
-    <title>Feature: Raw log search enhancements</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-12:feature:0</id>
-    <published>2025-11-12T00:00:00+00:00</published>
-    <updated>2025-11-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>New <strong>Azure Monitor</strong> integration</p>]]></content>
-    <summary>We're excited to announce our new integration with Azure Monitor! This feature allows for seamless monitoring of your applications and infrastructure within the Azure ecosystem.</summary>
-    <title>Feature: Azure Monitor Integration</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-12:feature:1</id>
-    <published>2025-11-12T00:00:00+00:00</published>
-    <updated>2025-11-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Siemplify</strong>: Version 95.0</p>
-<ul>
-<li>
-<p>The following new action has been added:</p>
-</li>
-<li>
-<p><strong>Get Case Alerts</strong></p>
-</li>
-</ul>]]></content>
-    <summary>Version 95.0 of Siemplify introduces the new "Get Case Alerts" action.</summary>
-    <title>Feature: New Action: Get Case Alerts</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-12:changed:2</id>
-    <published>2025-11-12T00:00:00+00:00</published>
-    <updated>2025-11-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>CrowdStrike Falcon</strong>: Version 69.0</p>
-<ul>
-<li>
-<p>Refactored the pagination and filtering mechanism in the following actions:</p>
-</li>
-<li>
-<p><strong>List Uploaded IOCs</strong></p>
-</li>
-<li><strong>List Hosts</strong></li>
-<li>
-<p>Added support for wildcards to <code>File Paths to Scan</code> in the following action:</p>
-</li>
-<li>
-<p><strong>On-Demand Scan</strong></p>
-</li>
-</ul>]]></content>
-    <summary>Version 69.0 of CrowdStrike Falcon has been released with significant improvements. The pagination and filtering mechanisms have been refactored in the 'List Uploaded IOCs' and 'List Hosts' actions. Additionally, the 'On-Demand Scan' action now supports wildcards for file paths.</summary>
-    <title>Changed: CrowdStrike Falcon v69.0 Update</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-12:changed:3</id>
-    <published>2025-11-12T00:00:00+00:00</published>
-    <updated>2025-11-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Cybereason</strong>: Version 21.0</p>
-<ul>
-<li><strong>Integration</strong>: Added ability to provide a CA Certificate file as part of the
-  configuration.</li>
-</ul>]]></content>
-    <summary>The Cybereason integration has been updated to version 21.0. This new version includes the ability to provide a CA Certificate file during configuration.</summary>
-    <title>Changed: Cybereason 21.0 Update</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-12:changed:4</id>
-    <published>2025-11-12T00:00:00+00:00</published>
-    <updated>2025-11-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Google Chronicle</strong>: Version 67.0</p>
-<ul>
-<li>
-<p>Updated curated detections processing logic in the following action:</p>
-</li>
-<li>
-<p><strong>Get Detection Details</strong></p>
-</li>
-</ul>]]></content>
-    <summary>The curated detections processing logic has been updated in the Get Detection Details action.</summary>
-    <title>Changed: Google Chronicle 67.0</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-12:changed:5</id>
-    <published>2025-11-12T00:00:00+00:00</published>
-    <updated>2025-11-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The following integrations are now GUS recommended:</p>
-<ul>
-<li><strong>CrowdStrike Falcon</strong>: Version 69.0</li>
-<li><strong>Wiz</strong>: Version .0</li>
-<li><strong>Fortigate</strong>: Version 16.0</li>
-</ul>]]></content>
-    <summary>CrowdStrike Falcon, Wiz, and Fortigate integrations are now recommended.</summary>
-    <title>Changed: CrowdStrike Falcon, Wiz, and Fortigate are now recommended</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-12:changed:6</id>
-    <published>2025-11-12T00:00:00+00:00</published>
-    <updated>2025-11-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Updated the dependency files in the following integrations:</p>
-<ul>
-<li><strong>Microsoft Graph Mail</strong>: Version 33.0</li>
-<li><strong>Microsoft Graph Mail Delegated</strong>: Version 10.0</li>
-</ul>]]></content>
-    <summary>Dependency files for Microsoft Graph Mail and Microsoft Graph Mail Delegated have been updated.</summary>
-    <title>Changed: Updated dependency files</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-12:changed:7</id>
-    <published>2025-11-12T00:00:00+00:00</published>
-    <updated>2025-11-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Updated action definitions to meet the new requirements of IDE in the following
-integrations:</p>
-<p>Updated Integrations (45)</p>
-<ul>
-<li><strong>Active Directory</strong>: Version 38.0</li>
-<li><strong>AlienVault USM Appliance</strong>: Version 22.0</li>
-<li><strong>AlienVault USM Anywhere</strong>: Version 32.0</li>
-<li><strong>Area1</strong>: Version 6.0</li>
-<li><strong>BulkWhoIs</strong>: Version 16.0</li>
-<li><strong>CA Service Desk Manager</strong>: Version 23.0</li>
-<li><strong>Carbon Black Response</strong>: Version 35.0</li>
-<li><strong>Case Federation</strong>: Version 6.0</li>
-<li><strong>ConnectWise</strong>: Version 19.0</li>
-<li><strong>CSV</strong>: Version 36.0</li>
-<li><strong>DeepSight</strong>: Version 9.0</li>
-<li><strong>DomainTools</strong>: Version 9.0</li>
-<li><strong>Email V2</strong>: Version 36.0</li>
-<li><strong>Endgame</strong>: Version 11.0</li>
-<li><strong>Exchange</strong>: Version 116.0</li>
-<li><strong>F5 Big IQ</strong>: Version 6.0</li>
-<li><strong>FileOperation</strong>: Version 12.0</li>
-<li><strong>HTTP</strong>: Version 12.0</li>
-<li><strong>IntSights</strong>: Version 23.0</li>
-<li><strong>Jira</strong>: Version 49.0</li>
-<li><strong>JuniperVSRX</strong>: Version 8.0</li>
-<li><strong>McAfee EPO</strong>: Version 17.0</li>
-<li><strong>McAfee NSM</strong>: Version 8.0</li>
-<li><strong>Microsoft Graph Security</strong>: Version 23.0</li>
-<li><strong>MSSQL</strong>: Version 17.0</li>
-<li><strong>Palo Alto Next Gen Firewall</strong>: Version 26.0</li>
-<li><strong>PhishRod</strong>: Version 4.0</li>
-<li><strong>RSA NetWitness</strong>: Version 17.0</li>
-<li><strong>Runners</strong>: Version 5.0</li>
-<li><strong>Salesforce</strong>: Version 12.0</li>
-<li><strong>SCC Enterprise</strong>: Version 18.0</li>
-<li><strong>ServiceNow</strong>: Version 59.0</li>
-<li><strong>Siemplify</strong>: Version 95.0</li>
-<li><strong>SSH</strong>: Version 18.0</li>
-<li><strong>Symantec Endpoint Protection</strong>: Version 18.0</li>
-<li><strong>Symantec Endpoint Protection 12</strong>: Version 13.0</li>
-<li><strong>Symantec ICDX</strong>: Version 7.0</li>
-<li><strong>Tenable Security Center</strong>: Version 18.0</li>
-<li><strong>Twilio</strong>: Version 14.0</li>
-<li><strong>VSphere</strong>: Version 8.0</li>
-<li><strong>VirusTotal</strong>: Version 40.0</li>
-<li><strong>WildFire</strong>: Version 8.0</li>
-<li><strong>WMI</strong>: Version 10.0</li>
-<li><strong>XForce</strong>: Version .0</li>
-<li><strong>Zabbix</strong>: Version 14.0</li>
-<li><strong>Zendesk</strong>: Version 10.0</li>
-</ul>]]></content>
-    <summary>Action definitions have been updated to align with new IDE requirements across 45 integrations.</summary>
-    <title>Changed: Updated action definitions for IDE integrations</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-12:changed:8</id>
-    <published>2025-11-12T00:00:00+00:00</published>
-    <updated>2025-11-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Google Security Command Center</strong>: Version 14.0</p>
-<ul>
-<li>
-<p>Added the ability to ingest Toxic Combinations and Chokepoints in the
-  following connector:</p>
-</li>
-<li>
-<p><strong>Google Security Command Center - Findings Connector</strong></p>
-</li>
-</ul>]]></content>
-    <summary>New toxic combination and chokepoint ingestion capabilities added to the Findings Connector.</summary>
-    <title>Changed: Google Security Command Center v14.0</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-12:announcement:9</id>
-    <published>2025-11-12T00:00:00+00:00</published>
-    <updated>2025-11-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>New parser documentation now available</strong></p>
-<p>New parser documentation is available to help you ingest and normalize logs from the following sources:</p>
-<ul>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/absolute-se">Collect Absolute Secure Endpoint logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aide">Collect AIDE (Advanced Intrusion Detection Environment) logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/akamai-eaa">Collect Akamai Enterprise Application Access logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/apache-hadoop">Collect Apache Hadoop logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/armis-vulnerabilities">Collect Armis Vulnerabilities logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/arraynetworks-vpn">Collect Array Networks SSL VPN logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aruba-ips">Collect Aruba IPS logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/atlassian-confluence">Collect Atlassian Confluence logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-amp-for-endpoints">Collect Cisco AMP for Endpoints logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-apic">Collect Cisco APIC logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-aci">Collect Cisco Application Centric Infrastructure (ACI) logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-callmanager">Collect Cisco CallManager logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-cloudlock-casb">Collect Cisco CloudLock CASB logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-dnac">Collect Cisco DNA Center Platform logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-estreamer">Collect Cisco eStreamer logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cribl-stream">Collect Cribl Stream logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cs-filevantage">Collect CrowdStrike FileVantage logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cs-idp">Collect CrowdStrike IDP Services logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cynet360-autoxdr">Collect Cynet 360 AutoXDR logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/digital-shadows-searchlight">Collect Digital Shadows SearchLight logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/duo-telephony">Collect Duo Telephony logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/edgio-waf">Collect Edgio WAF logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elastic-auditbeat">Collect Elastic Auditbeat logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elastic-packetbeats">Collect Elastic Packet Beats logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elasticsearch">Collect Elasticsearch logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/entrust-nshield-hsm-audit">Collect Entrust nShield HSM audit logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-abp">Collect Imperva Advanced Bot Protection logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-aa">Collect Imperva Attack Analytics logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-audit-trail">Collect Imperva Audit Trail logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-cef">Collect Imperva CEF logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-dra">Collect Imperva Data Risk Analytics (DRA) logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-db">Collect Imperva Database logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-flexprotect">Collect Imperva FlexProtect logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-ssm">Collect Imperva SecureSphere Management logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/accellion">Collect Kiteworks (formally Accellion) logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/proofpoint-etp-ioc">Collect Proofpoint Emerging Threats Pro IOC logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/servicenow-audit">Collect ServiceNow audit logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/team-cymru-scout-ti">Collect Team Cymru Scout Threat Intelligence data</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/urlscan-io">Collect URLScan IO logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/uptycs-edr">Collect Uptycs EDR logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vandyke-vshell-sftp">Collect VanDyke VShell SFTP logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zendesk-crm">Collect Zendesk CRM logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zerofox-platform">Collect ZeroFox Platform logs</a></li>
-</ul>]]></content>
-    <summary>New documentation is now available to assist with ingesting and normalizing logs from a wide variety of sources. This includes detailed guides for sources such as Absolute Secure Endpoint, AIDE, Akamai Enterprise Application Access, and many others.</summary>
-    <title>Announcement: New Parser Documentation Available</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-12:feature:10</id>
-    <published>2025-11-12T00:00:00+00:00</published>
-    <updated>2025-11-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Enhance threat visibility and detection with Emerging Threats</strong></p>
-<p>The new <strong>Emerging Threats</strong> page provides AI-powered threat intelligence to help
-you understand how current threat campaigns might affect your organization.
-Powered by Google Threat Intelligence (GTI) and Gemini models, this page offers
-a curated view of critical global threats relevant to your environment.</p>
-<p>Emerging Threats continuously aligns intelligence from GTI with your organization's
-telemetry to highlight detection coverage and identify gaps. When it finds a gap,
-it uses Gemini to automatically draft new detection rules to accelerate your response.</p>
-<p>For more details, see <a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats">Emerging Threats overview</a>,
-<a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-feed">Emerging Threats feed</a>,and
-<a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-detailed-view">Emerging Threats detailed view</a>.</p>]]></content>
-    <summary>Stay ahead of global threats with AI-powered insights and automated detection rule generation.</summary>
-    <title>Feature: Emerging Threats</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-12:feature:11</id>
-    <published>2025-11-12T00:00:00+00:00</published>
-    <updated>2025-11-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Use the Triage Agent to investigate alerts</strong></p>
-<p>You can now use Triage Agent, an AI-powered investigation assistant, to
-analyze alerts in Google SecOps. Triage Agent determines if an
-alert is a true or false positive, provides a summarized explanation for its
-conclusion, and suggests next steps for further investigation.</p>
-<p>You can trigger investigations manually or have them run automatically on
-supported alert types. Each investigation produces a detailed report that includes
-the agent's disposition, a summary of its findings, and a timeline of the analysis.</p>
-<p>For more details, see <a href="https://docs.cloud.google.com/chronicle/docs/secops/triage-agent">Use Triage Agent to investigate alerts</a>.</p>]]></content>
-    <summary>Use the AI-powered Triage Agent to investigate alerts in Google SecOps. It determines if an alert is a true or false positive, provides explanations, and suggests next steps. Investigations can be triggered manually or automatically, producing detailed reports.</summary>
-    <title>Feature: Investigate alerts with Triage Agent</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-12:announcement:12</id>
-    <published>2025-11-12T00:00:00+00:00</published>
-    <updated>2025-11-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>New parser documentation now available</strong></p>
-<p>New parser documentation is available to help you ingest and normalize logs from the following sources:</p>
-<ul>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/absolute-se">Collect Absolute Secure Endpoint logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aide">Collect AIDE (Advanced Intrusion Detection Environment) logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/akamai-eaa">Collect Akamai Enterprise Application Access logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/apache-hadoop">Collect Apache Hadoop logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/armis-vulnerabilities">Collect Armis Vulnerabilities logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/arraynetworks-vpn">Collect Array Networks SSL VPN logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/aruba-ips">Collect Aruba IPS logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/atlassian-confluence">Collect Atlassian Confluence logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-amp-for-endpoints">Collect Cisco AMP for Endpoints logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-apic">Collect Cisco APIC logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-aci">Collect Cisco Application Centric Infrastructure (ACI) logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-callmanager">Collect Cisco CallManager logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-cloudlock-casb">Collect Cisco CloudLock CASB logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-dnac">Collect Cisco DNA Center Platform logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-estreamer">Collect Cisco eStreamer logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cribl-stream">Collect Cribl Stream logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cs-filevantage">Collect CrowdStrike FileVantage logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cs-idp">Collect CrowdStrike IDP Services logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/cynet360-autoxdr">Collect Cynet 360 AutoXDR logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/digital-shadows-searchlight">Collect Digital Shadows SearchLight logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/duo-telephony">Collect Duo Telephony logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/edgio-waf">Collect Edgio WAF logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elastic-auditbeat">Collect Elastic Auditbeat logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elastic-packetbeats">Collect Elastic Packet Beats logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/elasticsearch">Collect Elasticsearch logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/entrust-nshield-hsm-audit">Collect Entrust nShield HSM audit logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-abp">Collect Imperva Advanced Bot Protection logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-aa">Collect Imperva Attack Analytics logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-audit-trail">Collect Imperva Audit Trail logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-cef">Collect Imperva CEF logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-dra">Collect Imperva Data Risk Analytics (DRA) logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-db">Collect Imperva Database logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-flexprotect">Collect Imperva FlexProtect logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/imperva-ssm">Collect Imperva SecureSphere Management logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/accellion">Collect Kiteworks (formally Accellion) logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/proofpoint-etp-ioc">Collect Proofpoint Emerging Threats Pro IOC logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/servicenow-audit">Collect ServiceNow audit logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/team-cymru-scout-ti">Collect Team Cymru Scout Threat Intelligence data</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/urlscan-io">Collect URLScan IO logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/uptycs-edr">Collect Uptycs EDR logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/vandyke-vshell-sftp">Collect VanDyke VShell SFTP logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zendesk-crm">Collect Zendesk CRM logs</a></li>
-<li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zerofox-platform">Collect ZeroFox Platform logs</a></li>
-</ul>]]></content>
-    <summary>New documentation is now available to assist with ingesting and normalizing logs from a wide variety of sources. This includes detailed guides for sources such as Absolute Secure Endpoint, AIDE, Akamai Enterprise Application Access, and many others.</summary>
-    <title>Announcement: New Parser Documentation Available</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-12:feature:13</id>
-    <published>2025-11-12T00:00:00+00:00</published>
-    <updated>2025-11-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Enhance threat visibility and detection with Emerging Threats</strong></p>
-<p>The new <strong>Emerging Threats</strong> page provides AI-powered threat intelligence to help
-you understand how current threat campaigns might affect your organization.
-Powered by Google Threat Intelligence (GTI) and Gemini models, this page offers
-a curated view of critical global threats relevant to your environment.</p>
-<p>Emerging Threats continuously aligns intelligence from GTI with your organization's
-telemetry to highlight detection coverage and identify gaps. When it finds a gap,
-it uses Gemini to automatically draft new detection rules to accelerate your response.</p>
-<p>For more details, see <a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats">Emerging Threats overview</a>,
-<a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-feed">Emerging Threats feed</a>,and
-<a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-detailed-view">Emerging Threats detailed view</a>.</p>]]></content>
-    <summary>Stay ahead of global threats with AI-powered insights and automated detection rule generation.</summary>
-    <title>Feature: Emerging Threats</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-12:feature:14</id>
-    <published>2025-11-12T00:00:00+00:00</published>
-    <updated>2025-11-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Use the Triage Agent to investigate alerts</strong></p>
-<p>You can now use Triage Agent, an AI-powered investigation assistant, to
-analyze alerts in Google SecOps. Triage Agent determines if an
-alert is a true or false positive, provides a summarized explanation for its
-conclusion, and suggests next steps for further investigation.</p>
-<p>You can trigger investigations manually or have them run automatically on
-supported alert types. Each investigation produces a detailed report that includes
-the agent's disposition, a summary of its findings, and a timeline of the analysis.</p>
-<p>For more details, see <a href="https://docs.cloud.google.com/chronicle/docs/secops/triage-agent">Use Triage Agent to investigate alerts</a>.</p>]]></content>
-    <summary>Use the AI-powered Triage Agent to investigate alerts in Google SecOps. It determines if an alert is a true or false positive, provides explanations, and suggests next steps. Investigations can be triggered manually or automatically, producing detailed reports.</summary>
-    <title>Feature: Investigate alerts with Triage Agent</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-10:feature:0</id>
-    <published>2025-11-10T00:00:00+00:00</published>
-    <updated>2025-11-10T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Nested if</strong></p>
-<p>You can now use <code>if</code> statements in both the <code>outcome</code> and <code>events</code> sections and
-also within the <code>then</code> <code>else</code> clauses of another <code>if</code> statement. This capability
-lets you introduce more complicated logic to your query and is supported in
-Rules, Search, and Dashboards.</p>
-<p>For more information, see
-<a href="https://docs.cloud.google.com/chronicle/docs/yara-l/nested-if">Use nested if statements for more complex logic</a>.</p>]]></content>
-    <summary>Introducing nested if statements for more complex logic in Rules, Search, and Dashboards.</summary>
-    <title>Feature: Nested If Statements</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-10:feature:1</id>
-    <published>2025-11-10T00:00:00+00:00</published>
-    <updated>2025-11-10T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Nested if</strong></p>
-<p>You can now use <code>if</code> statements in both the <code>outcome</code> and <code>events</code> sections and
-also within the <code>then</code> <code>else</code> clauses of another <code>if</code> statement. This capability
-lets you introduce more complicated logic to your query and is supported in
-Rules, Search, and Dashboards.</p>
-<p>For more information, see
-<a href="https://docs.cloud.google.com/chronicle/docs/yara-l/nested-if">Use nested if statements for more complex logic</a>.</p>]]></content>
-    <summary>Introducing nested if statements for more complex logic in Rules, Search, and Dashboards.</summary>
-    <title>Feature: Nested If Statements</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-09:announcement:0</id>
-    <published>2025-11-09T00:00:00+00:00</published>
-    <updated>2025-11-09T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Release 6.3.67 is being rolled out to the first phase of regions as listed <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
-<p>This release contains internal and customer bug fixes.</p>]]></content>
-    <summary>Release 6.3.67 is now being rolled out to initial regions. This update includes important bug fixes for our customers.</summary>
-    <title>Announcement: Release 6.3.67 Rollout</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-08:announcement:0</id>
-    <published>2025-11-08T00:00:00+00:00</published>
-    <updated>2025-11-08T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#November_02_2025">Release 6.3.66</a> is now available for all regions.</p>]]></content>
-    <summary>The latest update, Release 6.3.66, has been successfully deployed and is now accessible across all regions.</summary>
-    <title>Announcement: Release 6.3.66 Now Available</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-07:changed:0</id>
-    <published>2025-11-07T00:00:00+00:00</published>
-    <updated>2025-11-07T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>MITRE ATT&amp;CK coverage dashboard is now available</strong></p>
-<p>The new <a href="https://docs.cloud.google.com/chronicle/docs/detection/mitre-dashboard">MITRE ATT&amp;CK coverage dashboard</a> lets you measure your security posture against the MITRE ATT&amp;CK framework, helping you:</p>
-<ul>
-<li>Assess threat coverage</li>
-<li>Identify gaps</li>
-<li>Prioritize security efforts</li>
-</ul>]]></content>
-    <summary>Measure your security posture against the MITRE ATT&amp;CK framework to assess threat coverage, identify gaps, and prioritize security efforts.</summary>
-    <title>Changed: MITRE ATT&amp;CK Coverage Dashboard</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2025-11-07:changed:1</id>
-    <published>2025-11-07T00:00:00+00:00</published>
-    <updated>2025-11-07T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>MITRE ATT&amp;CK coverage dashboard is now available</strong></p>
-<p>The new <a href="https://docs.cloud.google.com/chronicle/docs/detection/mitre-dashboard">MITRE ATT&amp;CK coverage dashboard</a> lets you measure your security posture against the MITRE ATT&amp;CK framework, helping you:</p>
-<ul>
-<li>Assess threat coverage</li>
-<li>Identify gaps</li>
-<li>Prioritize security efforts</li>
-</ul>]]></content>
-    <summary>Measure your security posture against the MITRE ATT&amp;CK framework to assess threat coverage, identify gaps, and prioritize security efforts.</summary>
-    <title>Changed: MITRE ATT&amp;CK Coverage Dashboard</title>
   </entry>
   <entry>
     <author>

@@ -1,5 +1,50 @@
 # VPC Service Controls
 
+## 2025-12-08
+
+### Feature
+
+[Preview stage](https://cloud.google.com/products#product-launch-stages) support for the following integration:
+
+* [Firebase App Hosting](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_firebase_app_hosting)
+
+---
+## 2025-12-05
+
+### Feature
+
+[Preview stage](https://cloud.google.com/products#product-launch-stages) support for the following integration:
+
+* [App Design Center](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_app_design_center)
+
+---
+## 2025-11-24
+
+### Feature
+
+[Preview stage](https://cloud.google.com/products#product-launch-stages) support for the following integration:
+
+* [Unified Maintenance](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_unified_maint)
+
+---
+## 2025-11-19
+
+### Feature
+
+[General availability](https://cloud.google.com/products#product-launch-stages) support for the following integration:
+
+* [Address Validation](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_address_validation)
+
+---
+## 2025-11-13
+
+### Changed
+
+Updated the limitations for the following integration in the [Supported products and limitations](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products) page:
+
+* [Policy Simulator](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_iam_policy_simulator): simulations on organization and folder resources are not protected by VPC Service Controls.
+
+---
 ## 2025-09-23
 
 ### Feature

@@ -2,9 +2,67 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Load Balancing</title>
   <subtitle>Changelog for Google Cloud product: Cloud Load Balancing</subtitle>
-  <updated>2025-11-04T00:00:00+00:00</updated>
+  <updated>2025-12-03T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-load-balancing</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-load-balancing/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-load-balancing:2025-12-03:feature:0</id>
+    <published>2025-12-03T00:00:00+00:00</published>
+    <updated>2025-12-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Regular expressions matchers in host and route rules in URL maps</strong></p>
+<p>You can now use regular expressions to configure more flexible and precise
+traffic routing rules within URL maps for Application Load Balancer. This feature
+lets you leverage the power of RE2 syntax for matching on:</p>
+<ul>
+<li><strong>Route rules</strong>: Within <code>pathMatchers</code>, the <code>matchRules</code> array now supports a
+  <code>regexMatch</code> field to validate the URL path against a specified regex pattern.</li>
+<li><strong>Header matches</strong>: Within <code>matchRules</code>, the <code>headerMatches</code> array now
+  supports a <code>regexMatch</code> field for pattern matching against HTTP header values.</li>
+<li><strong>Query parameter matches</strong>: Within <code>matchRules</code>, the <code>queryParameterMatches</code>
+  array now supports a <code>regexMatch</code> field for pattern matching against HTTP
+  query parameters values.</li>
+</ul>
+<p>This feature is available for the following load balancers:</p>
+<ul>
+<li>Regional internal Application Load Balancer</li>
+<li>Cross-region internal Application Load Balancer</li>
+<li>Regional external Application Load Balancer</li>
+</ul>
+<p>For more details on usage and syntax, see <a href="https://docs.cloud.google.com/load-balancing/docs/url-map-concepts#regex-support">URL map concepts: Regular expressions
+matchers in host and route
+rules</a>.</p>
+<p>This feature is in <strong>Preview.</strong></p>]]></content>
+    <summary>New regex matchers for host and route rules in URL maps enhance Application Load Balancer's traffic routing capabilities. This allows for more precise matching on URL paths, headers, and query parameters using RE2 syntax.</summary>
+    <title>Feature: Flexible traffic routing with regex</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-load-balancing:2025-12-02:feature:0</id>
+    <published>2025-12-02T00:00:00+00:00</published>
+    <updated>2025-12-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Backend mutual TLS (mTLS) and backend authenticated TLS are now
+<strong>Generally available</strong> for the following regional Application Load Balancers:</p>
+<ul>
+<li>Regional external Application Load Balancers</li>
+<li>Regional internal Application Load Balancers</li>
+</ul>
+<p>This update complements existing support for global external Application Load Balancers,
+allowing you to enforce bidirectional identity verification
+across your regional deployments.</p>
+<p>For details, see the following:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/load-balancing/docs/backend-authenticated-tls-backend-mtls">Backend mTLS overview</a></li>
+<li><a href="https://docs.cloud.google.com/load-balancing/docs/backend-authenticated-tls-setup">Set up backend authenticated TLS</a></li>
+<li><a href="https://docs.cloud.google.com/load-balancing/docs/backend-mtls-setup">Set up backend mTLS</a></li>
+</ul>]]></content>
+    <summary>Backend mutual TLS (mTLS) and backend authenticated TLS are now Generally Available for regional external and internal Application Load Balancers. This allows for bidirectional identity verification across regional deployments, complementing existing support for global external Application Load Balancers.</summary>
+    <title>Feature: New mTLS support for regional Application Load Balancers</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

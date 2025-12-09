@@ -1,23 +1,77 @@
 {
   "name": "Looker",
   "entries": {
-    "2025-11-19": [
+    "2025-12-03": [
+      {
+        "kind": "Other",
+        "content": "For Looker instances that are running Looker 25.20 or later, admins can now [test the connection](https://docs.cloud.google.com/looker/docs/admin-panel-platform-actions) between their instance and the Looker Action Hub. This option is available only for the Looker Action Hub. It is not available for [custom action hubs](https://docs.cloud.google.com/looker/docs/action-hub#setting_up_a_local_action_hub_server).",
+        "summary": {
+          "title": "Test Looker Action Hub Connection",
+          "summary": "Admins of Looker instances running 25.20 or later can now test the connection to the Looker Action Hub directly from the admin panel. This feature is exclusive to the Looker Action Hub and does not apply to custom action hubs."
+        }
+      },
       {
         "kind": "Feature",
-        "content": "Now available in preview, the [**Self-service Explore**](https://docs.cloud.google.com/looker/docs/exploring-self-service) feature lets Looker users upload CSV, XLS, and XLSX files to Looker and then query and visualize the data in a Looker Explore without needing to configure a LookML model or set up Git version control.",
+        "content": "Now available in preview, the [**Self-service Explore**](https://docs.cloud.google.com/looker/docs/exploring-self-service) feature lets Looker users upload CSV, XLS, and XLSX files to Looker and then query and visualize the data in a Looker Explore without needing to configure a LookML model or set up Git version control. In addition, [content certification](https://docs.cloud.google.com/looker/docs/content-certification) is supported for self-service Explores.",
         "summary": {
-          "title": "Self-service Explore Now in Preview",
-          "summary": "Looker users can now upload spreadsheet files and explore the data without LookML or Git setup."
+          "title": "Self-service Explore",
+          "summary": "Users can now upload spreadsheets to Looker and explore the data without LookML or Git setup."
+        }
+      }
+    ],
+    "2025-12-02": [
+      {
+        "kind": "Feature",
+        "content": "Now available in preview, Looker can display a new [**Connected Sheets**](https://docs.cloud.google.com/looker/docs/connected-sheets-quicklink) option in the **Explore actions** menu. The **Connected Sheets** option opens Google Sheets and initiates a connection from Google Sheets to the Looker Explore. You can then build reports, pivot tables, or charts within the newly created Google Sheets using the fields available from the selected Looker Explore. The **Connected Sheets** quick link feature must be configured in the Google Cloud console and on your Looker instance. See the [Connected Sheets quick link](https://docs.cloud.google.com/looker/docs/connected-sheets-quicklink#admin-config) documentation page for details.",
+        "summary": {
+          "title": "Connected Sheets in Looker",
+          "summary": "Looker now offers a Connected Sheets option in preview, allowing you to easily connect to Google Sheets and build reports using Looker data directly within Sheets."
+        }
+      }
+    ],
+    "2025-12-01": [
+      {
+        "kind": "Feature",
+        "content": "You can now use [Google-managed certificates](https://docs.cloud.google.com/looker/docs/looker-core-custom-domain-google-managed-certs) for Looker (Google Cloud core) instances that use Private Service Connect connections. This feature simplifies custom domain configuration by using a `*.private.looker.app` domain, eliminating the need to manage your own SSL certificates. Instances may need to [migrate](https://docs.cloud.google.com/looker/docs/looker-core-psc-migration) to the updated service attachment URI.",
+        "summary": {
+          "title": "New Google-managed certificates for Looker",
+          "summary": "Looker now supports Google-managed certificates for instances using Private Service Connect. This simplifies custom domain setup with a `*.private.looker.app` domain, removing the need for manual SSL certificate management."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now use [global access](https://docs.cloud.google.com/looker/docs/looker-core-psc-overview#using_global_access) with Looker (Google Cloud core) instances that use Private Service Connect connections. Instances may need to [migrate](https://docs.cloud.google.com/looker/docs/looker-core-psc-migration) to the updated service attachment URI.",
+        "summary": {
+          "title": "Global Access Now Available for Looker PSC",
+          "summary": "Looker instances using Private Service Connect now support Global Access. Migration to the updated service attachment URI may be required."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The Looker–Tableau BI Connector is now supported for Tableau Cloud, so that you can use a Looker Explore as a data source in Tableau Cloud. See the [Looker–Tableau BI Connector](https://docs.cloud.google.com/looker/docs/tableau-connector#cloud) documentation page for more information.\n\nTo use the Looker–Tableau BI Connector with Tableau Cloud, your admin must configure your Looker instance and your Tableau Cloud instance as described on the [Administering Tableau to Looker connections](https://docs.cloud.google.com/looker/docs/tableau-admin#cloud) documentation page.",
+        "summary": {
+          "title": "Looker–Tableau BI Connector Now Available for Tableau Cloud",
+          "summary": "The Looker–Tableau BI Connector now supports Tableau Cloud, allowing you to use Looker Explores as a data source. This feature enables seamless integration between the two platforms for enhanced data analysis."
+        }
+      }
+    ],
+    "2025-11-26": [
+      {
+        "kind": "Deprecated",
+        "content": "The DataRobot [action](https://docs.cloud.google.com/looker/docs/actions-overview) will be deprecated on February 1, 2026. After that date, this action won't be available in the Looker Action Hub.",
+        "summary": {
+          "title": "DataRobot action deprecated",
+          "summary": "The DataRobot action will be deprecated on February 1, 2026, and will not be available in the Looker Action Hub after that date."
         }
       }
     ],
     "2025-11-17": [
       {
         "kind": "Feature",
-        "content": "The new [content certification](https://docs.cloud.google.com/looker/docs/content-certification) feature, when enabled, lets trusted users certify Looker dashboards, Looks, and self-service Explores to indicate that the content has gone through a manual review and is certified as reliable and trustworthy. This lets other users identify reliable content and confidently use that data for decision-making.",
+        "content": "The [content certification](https://docs.cloud.google.com/looker/docs/content-certification) feature, when enabled, lets trusted users certify Looker dashboards and Looks to indicate that the content has gone through a manual review and is certified as reliable and trustworthy. This lets other users identify reliable content and confidently use that data for decision-making. **Note:** This item was updated on November 20, 2025.",
         "summary": {
           "title": "Content Certification",
-          "summary": "Looker now allows trusted users to certify content like dashboards and Explores, ensuring reliability and trustworthiness for confident decision-making."
+          "summary": "Certify Looker dashboards and Looks to indicate that the content has gone through a manual review and is certified as reliable and trustworthy. This lets other users identify reliable content and confidently use that data for decision-making."
         }
       }
     ],
@@ -38,6 +92,16 @@
         "summary": {
           "title": "Scheduled Export for Looker",
           "summary": "Looker now supports scheduled daily exports, ensuring zero downtime. This feature is rolling out over the next few weeks."
+        }
+      }
+    ],
+    "2025-11-19": [
+      {
+        "kind": "Feature",
+        "content": "Now available in preview, the [**Self-service Explore**](https://docs.cloud.google.com/looker/docs/exploring-self-service) feature lets Looker users upload CSV, XLS, and XLSX files to Looker and then query and visualize the data in a Looker Explore without needing to configure a LookML model or set up Git version control.",
+        "summary": {
+          "title": "Self-service Explore Now in Preview",
+          "summary": "Looker users can now upload spreadsheet files and explore the data without LookML or Git setup."
         }
       }
     ],

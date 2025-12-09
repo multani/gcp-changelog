@@ -1,5 +1,16 @@
 # Cloud Build
 
+## 2025-12-08
+
+### Changed
+
+In build config files, the `mavenArtifacts` field now supports the
+`deployFolder` field. You can use the `deployFolder` field to upload all Maven
+files in a folder to a specific Artifact Registry repository. For more
+information, see
+[Upload all Maven files in a folder to an Artifact Registry repository](https://docs.cloud.google.com/build/docs/build-config-file-schema#upload-all-maven-files).
+
+---
 ## 2025-10-09
 
 ### Changed

@@ -2,9 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Security Command Center</title>
   <subtitle>Changelog for Google Cloud product: Security Command Center</subtitle>
-  <updated>2025-11-17T00:00:00+00:00</updated>
+  <updated>2025-12-05T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:security-command-center</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/security-command-center/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:security-command-center:2025-12-05:changed:0</id>
+    <published>2025-12-05T00:00:00+00:00</published>
+    <updated>2025-12-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Security Command Center <a href="https://docs.cloud.google.com/security-command-center/docs/attack-exposure-supported-features">Risk Engine</a>
+uses the <a href="https://docs.cloud.google.com/storage/docs/org-policy-constraints#restrict-auth-types"><code>storage.restrictAuthTypes</code></a>
+organization policy constraint to determine whether Cloud Storage buckets are
+reachable using <a href="https://docs.cloud.google.com/storage/docs/access-control/signed-urls">signed URLs</a>.</p>]]></content>
+    <summary>The Security Command Center Risk Engine now uses the storage.restrictAuthTypes organization policy constraint to check Cloud Storage bucket reachability via signed URLs.</summary>
+    <title>Changed: Security Command Center Risk Engine Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:security-command-center:2025-11-20:changed:0</id>
+    <published>2025-11-20T00:00:00+00:00</published>
+    <updated>2025-11-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following updates simplify Security Command Center Standard and Premium tier activation
+for organizations:</p>
+<ul>
+<li>You need fewer <a href="https://docs.cloud.google.com/security-command-center/docs/activate-premium-tier#required-roles">Identity and Access Management (IAM) roles</a>
+  to activate Security Command Center.</li>
+<li>A variety of <a href="https://docs.cloud.google.com/security-command-center/docs/activate-premium-tier#premium-services">services</a>
+  are automatically enabled during activation. <a href="https://docs.cloud.google.com/iam/docs/service-account-types#service-specific">Service-specific service agents</a>
+  are automatically enabled with the IAM roles and permissions that are
+  required for these services to function.</li>
+</ul>
+<p>See the following for detailed information about activating a specific tier:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/security-command-center/docs/activate-standard-tier">Activate Security Command Center Standard tier for an organization</a></li>
+<li><a href="https://docs.cloud.google.com/security-command-center/docs/activate-premium-tier">Activate Security Command Center Premium tier for an organization</a></li>
+</ul>]]></content>
+    <summary>Activating Security Command Center is now simpler with fewer required IAM roles and automatic enablement of necessary services and service agents.</summary>
+    <title>Changed: Simplified Security Command Center Activation</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -116,9 +155,12 @@ for the Security Command Center Enterprise tier.</p>]]></content>
     <id>urn:github:multani:gcp-changelog:security-command-center:2025-11-07:feature:0</id>
     <published>2025-11-07T00:00:00+00:00</published>
     <updated>2025-11-07T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>You can use customer-managed encryption keys (CMEK) organization policies with Security Command Center. For more information see <a href="https://docs.cloud.google.com/security-command-center/docs/cmek#org-policies">Use CMEK organization policies with Security Command Center</a>.</p>]]></content>
-    <summary>You can now use customer-managed encryption keys (CMEK) with organization policies in Security Command Center.</summary>
-    <title>Feature: Customer-Managed Encryption Keys with Security Command Center</title>
+    <content type="html"><![CDATA[<p>The monitoring and auditing capabilities for
+<a href="https://docs.cloud.google.com/security-command-center/docs/compliance-manager/overview">Compliance Manager</a>
+have been released to <a href="https://cloud.google.com/products#product-launch-stages">General
+Availability</a>.</p>]]></content>
+    <summary>Google Cloud is announcing the general availability of monitoring and auditing features for Compliance Manager. This release enhances the capabilities of Compliance Manager, allowing for more robust oversight and tracking of compliance-related activities within Google Cloud environments.</summary>
+    <title>Feature: Monitoring and Auditing for Compliance Manager Now Generally Available</title>
   </entry>
   <entry>
     <author>
@@ -127,12 +169,10 @@ for the Security Command Center Enterprise tier.</p>]]></content>
     <id>urn:github:multani:gcp-changelog:security-command-center:2025-11-07:feature:1</id>
     <published>2025-11-07T00:00:00+00:00</published>
     <updated>2025-11-07T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The monitoring and auditing capabilities for
-<a href="https://docs.cloud.google.com/security-command-center/docs/compliance-manager/overview">Compliance Manager</a>
-have been released to <a href="https://cloud.google.com/products#product-launch-stages">General
-Availability</a>.</p>]]></content>
-    <summary>Google Cloud is announcing the general availability of monitoring and auditing features for Compliance Manager. This release enhances the capabilities of Compliance Manager, allowing for more robust oversight and tracking of compliance-related activities within Google Cloud environments.</summary>
-    <title>Feature: Monitoring and Auditing for Compliance Manager Now Generally Available</title>
+    <content type="html"><![CDATA[<p>You can use customer-managed encryption keys (CMEK) organization policies with
+Security Command Center. For more information, see <a href="https://docs.cloud.google.com/security-command-center/docs/cmek#org-policies">Use CMEK organization policies with Security Command Center</a>.</p>]]></content>
+    <summary>You can now use customer-managed encryption keys (CMEK) organization policies with Security Command Center.</summary>
+    <title>Feature: Customer-managed encryption keys now supported with Security Command Center</title>
   </entry>
   <entry>
     <author>

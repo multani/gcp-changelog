@@ -1,5 +1,31 @@
 # AlloyDB for PostgreSQL
 
+## 2025-12-08
+
+### Feature
+
+You can now use Gemini to [fix query errors in the AlloyDB Studio query editor](https://docs.cloud.google.com/alloydb/docs/write-sql-gemini#fix-error-in-queries). This feature is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
+## 2025-12-05
+
+### Feature
+
+Query plan management ensures query plan stability, and protects your
+database performance against the risk of query plan regression due to changes
+in the database or the optimizer's behavior. AlloyDB continuously monitors,
+captures, and logs potential query execution plans, giving you the granular
+control to force the optimizer to choose from approved plans, and prevent
+unintended regressions. For more information, see [Manage query plans](https://docs.cloud.google.com/alloydb/docs/query-plan-management).
+
+---
+## 2025-11-20
+
+### Feature
+
+AlloyDB now supports horizontal [autoscaling for read pool instances](https://docs.cloud.google.com/alloydb/docs/instance-read-pool-scale#autoscale-read-pool). This feature is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-11-19
 
 ### Changed
@@ -13,6 +39,13 @@ if you need to apply the latest AlloyDB updates to your clusters as soon as
 possible.
 Updating to the latest version can unlock AlloyDB features, apply patches,
 and let you set deny periods.
+
+---
+## 2025-11-18
+
+### Feature
+
+You can now use Gemini 3.0 when you call generative AI functions in AlloyDB, such as `AI.GENERATE`. For more information, see [Use Gemini 3.0 models](https://docs.cloud.google.com/alloydb/docs/ai/evaluate-semantic-queries-ai-operators#use-gemini-model-3).
 
 ---
 ## 2025-11-13

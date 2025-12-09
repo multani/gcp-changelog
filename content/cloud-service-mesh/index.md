@@ -1,5 +1,48 @@
 # Cloud Service Mesh
 
+## 2025-12-04
+
+### Announcement
+
+Managed Cloud Service Mesh will start using proxy version
+`csm_mesh_proxy.20251121c_RC00` for Gateway API on GKE clusters. This proxy
+version maps closest to Envoy version 1.37. This change is rolling out to all
+release channels and contains the fix for the managed Cloud Service Mesh
+security vulnerability listed in [GCP-2025-073](/service-mesh/docs/security-bulletins#gcp-2025-073.
+
+---
+## 2025-12-03
+
+### Security
+
+The following images are now rolling out for managed Cloud Service Mesh:
+
+* 1.21.6-asm.7 is rolling out to the rapid release channel.
+* 1.20.8-asm.59 is rolling out to the regular release channel.
+* 1.19.10-asm.54 is rolling out to the stable release channel.
+
+These patch releases contain the fix for the managed Cloud Service Mesh security vulnerability listed in
+[GCP-2025-073](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2025-073).
+
+### Security
+
+**1.27.4-asm.1 is now available for in-cluster Cloud Service Mesh.**
+
+This patch release contains fixes for the security vulnerabilities listed in [GCP-2025-073](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2025-073). For details on upgrading Cloud Service Mesh, refer to [Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service Mesh v1.27.4-asm.1 uses Envoy v1.35.7.
+
+### Security
+
+**1.25.6-asm.1 is now available for in-cluster Cloud Service Mesh.**
+
+This patch release contains fixes for the security vulnerabilities listed in [GCP-2025-073](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2025-073). For details on upgrading Cloud Service Mesh, refer to [Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.25/docs/upgrade/upgrade). Cloud Service Mesh v1.25.6-asm.1 uses Envoy v1.33.13.
+
+### Security
+
+**1.26.7-asm.1 is now available for in-cluster Cloud Service Mesh.**
+
+This patch release contains fixes for the security vulnerabilities listed in [GCP-2025-073](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2025-073). For details on upgrading Cloud Service Mesh, refer to [Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.26/docs/upgrade/upgrade). Cloud Service Mesh v1.26.7-asm.1 uses Envoy v1.34.11.
+
+---
 ## 2025-11-18
 
 ### Announcement

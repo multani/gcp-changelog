@@ -1,5 +1,12 @@
 # App Engine standard environment Node.js
 
+## 2025-11-20
+
+### Feature
+
+Support for [Node.js 24 runtime](https://docs.cloud.google.com/appengine/docs/standard/nodejs/runtime) is in [General Availability](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2025-08-07
 
 ### Feature

@@ -1,5 +1,12 @@
 # Service Extensions
 
+## 2025-12-08
+
+### Feature
+
+You can use Service Extensions to implement [dynamic forwarding](https://docs.cloud.google.com/service-extensions/docs/lb-advanced-use-cases#dynamic-forwarding), which helps you map tenants to endpoints programmatically, without having to update your URL maps. This feature is in **Preview**.
+
+---
 ## 2025-11-17
 
 ### Feature

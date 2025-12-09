@@ -1,5 +1,13 @@
 # Cloud Location Finder
 
+## 2025-12-01
+
+### Feature
+
+Cloud Location Finder supports latency data for first-party to first-party and
+third-party to third-party locations.
+
+---
 ## 2025-06-11
 
 ### Announcement

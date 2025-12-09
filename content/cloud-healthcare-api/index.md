@@ -1,5 +1,24 @@
 # Cloud Healthcare API
 
+## 2025-12-02
+
+### Feature
+
+* DICOM exports to BigQuery now support a new JSON schema option
+* DICOM streaming to BigQuery now supports a new JSON schema option
+* The new JSON schema option contains fewer columns and works more gracefully with the
+  33,000 public tags defined in the DICOM standard. For more information on the new schema,
+  see the [`BigQueryDestination`](https://cloud.google.com/healthcare-api/docs/reference/rest/v1/projects.locations.datasets.dicomStores#BigQueryDestination)
+  field.
+
+### Feature
+
+* DICOM streaming to BigQuery using the new JSON schema now supports [Change Data Capture](https://docs.cloud.google.com/bigquery/docs/change-data-capture)
+* For more information on enabling change data capture, see the
+  [`BigQueryDestination`](https://cloud.google.com/healthcare-api/docs/reference/rest/v1beta1/projects.locations.datasets.dicomStores#BigQueryDestination)
+  field.
+
+---
 ## 2025-11-03
 
 ### Feature

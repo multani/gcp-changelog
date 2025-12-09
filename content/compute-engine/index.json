@@ -1,6 +1,46 @@
 {
   "name": "Compute Engine",
   "entries": {
+    "2025-12-08": [
+      {
+        "kind": "Feature",
+        "content": "**Preview**: VM Extension Manager lets you manage Compute Engine\nguest agent extensions on your virtual machines (VMs). You can use VM Extension Manager to install and manage extensions, such as Ops Agent and Agent for SAP, on your\nCompute Engine VMs at scale, without connecting to each VM.\n\nUse VM Extension Manager to create policies that install extensions on\nyour VMs. You can install extensions based on a specific criteria, such as VM labels,\nfor both existing and new VMs that match the criteria. VM Extension Manager\nautomates the lifecycle of extensions across\nyour entire fleet of VMs and monitors their health status while they are running.\n\nFor more information, see the following:\n\n* [About VM Extension Manager](https://docs.cloud.google.com/compute/docs/vm-extensions/about-vm-extension-manager)\n* [Install VM extensions by creating extension policies](https://docs.cloud.google.com/compute/docs/vm-extensions/create-extension-policy)\n* [Manage VM extensions by using extension policies](https://docs.cloud.google.com/compute/docs/vm-extensions/manage-vm-extensions)",
+        "summary": {
+          "title": "VM Extension Manager",
+          "summary": "Manage Compute Engine VM extensions like Ops Agent at scale with VM Extension Manager. Automate installation, lifecycle, and health monitoring for your entire VM fleet."
+        }
+      }
+    ],
+    "2025-11-26": [
+      {
+        "kind": "Issue",
+        "content": "C4 machine type virtual machine (VM) instances running on sole tenant nodes\nmight encounter unexpected VM terminations due to host errors or VM\ncreation failures. For more information, see\n[known issues](https://docs.cloud.google.com/compute/docs/troubleshooting/known-issues#c4-oom-errors).",
+        "summary": {
+          "title": "VM terminations on sole tenant nodes",
+          "summary": "C4 VM instances on sole tenant nodes may experience unexpected terminations due to host errors or creation failures."
+        }
+      }
+    ],
+    "2025-11-24": [
+      {
+        "kind": "Feature",
+        "content": "**Public Preview**: You can now access the VM metadata server using IPv6 connectivity\nfrom single-stack IPv6 VM instances. For more information, see\n[About VM metadata](https://docs.cloud.google.com/compute/docs/metadata/overview).",
+        "summary": {
+          "title": "VM metadata server now accessible via IPv6",
+          "summary": "VM instances can now use IPv6 to access the VM metadata server. This new feature is available in public preview."
+        }
+      }
+    ],
+    "2025-11-19": [
+      {
+        "kind": "Fixed",
+        "content": "For the Windows operating system, gVNIC driver version 2.0.15 is\navailable.\n\nThis version fixes the handling for highly fragmented TSO packets. Without this\nupdated driver version, you might experience intermittent network\nconnectivity loss on Windows VMs that use any Compute Engine machine types.\nThe affected versions are 2.0.7 - 2.0.14.\n\nSymptoms include ARP resolution failures and an inability to reach local\nsubnet IPs, including the metadata server. We recommend upgrading your Windows\ninstances to this latest version of the driver. To learn about upgrading, read\nthe [Windows components](https://docs.cloud.google.com/compute/docs/images/guest-environment#windows-components)\nsection of the Guest environment documentation.",
+        "summary": {
+          "title": "gVNIC driver update for Windows",
+          "summary": "A new version of the gVNIC driver for Windows is now available. This update fixes an issue with fragmented packets that could cause network connectivity loss."
+        }
+      }
+    ],
     "2025-11-18": [
       {
         "kind": "Feature",
@@ -20,22 +60,6 @@
       }
     ],
     "2025-11-13": [
-      {
-        "kind": "Feature",
-        "content": "Version `20251107.01` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)\nis now available.",
-        "summary": {
-          "title": "Guest agent update",
-          "summary": "Version 20251107.01 of the guest agent is now available."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "Version `20251107.01` includes a fix for the\n[Startup script runner](compute/docs/instances/startup-scripts) component\nthat prevented it from writing status logs and script output to Cloud Logging.",
-        "summary": {
-          "title": "Startup script runner fix",
-          "summary": "Fixed an issue where the startup script runner was unable to write status logs and script output to Cloud Logging."
-        }
-      },
       {
         "kind": "Feature",
         "content": "**Preview**: Future reservation requests in calendar mode support reserving\ncapacity for `a3-megagpu-8g` and `a3-highgpu-8g` machine types. Use future\nreservation requests in calendar mode to obtain resources for running model\npre-training, model fine-tuning, simulation, and inference workloads. For more\ninformation, see\n[About future reservation requests in calendar mode](https://docs.cloud.google.com/compute/docs/instances/future-reservations-calendar-mode-overview).",

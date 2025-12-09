@@ -2,9 +2,1132 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2025-11-17T00:00:00+00:00</updated>
+  <updated>2025-12-08T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-12-08:fixed:0</id>
+    <published>2025-12-08T00:00:00+00:00</published>
+    <updated>2025-12-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/kubernetes-engine/docs/release-notes#October_14_2025">October 14, 2025</a>
+issue in which MountVolume calls for network file system (NFS) volumes might
+fail is fixed for GKE versions 1.34.1-gke.2877000 and later.</p>]]></content>
+    <summary>The issue where MountVolume calls for NFS volumes might fail has been resolved for GKE versions 1.34.1-gke.2877000 and later.</summary>
+    <title>Fixed: MountVolume calls for NFS volumes fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-12-05:changed:0</id>
+    <published>2025-12-05T00:00:00+00:00</published>
+    <updated>2025-12-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>(2025-R50) Version updates</h4>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>Version <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1308000</a> is now the default version for cluster creation in the Extended channel.</li>
+<li>The following versions are now available in the Extended channel:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815">1.28.15-gke.3202000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915">1.29.15-gke.2520000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13014">1.30.14-gke.1760000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1139000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1454000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1239000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1548000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1791000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909002</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3084002</a></li>
+<li>The following versions are no longer available in the Extended channel:</li>
+<li>1.28.15-gke.2767000</li>
+<li>1.28.15-gke.2793000</li>
+<li>1.28.15-gke.2966000</li>
+<li>1.28.15-gke.3188000</li>
+<li>1.29.15-gke.2002000</li>
+<li>1.29.15-gke.2085000</li>
+<li>1.29.15-gke.2236000</li>
+<li>1.29.15-gke.2505000</li>
+<li>1.30.14-gke.1349000</li>
+<li>1.30.14-gke.1408000</li>
+<li>1.30.14-gke.1525000</li>
+<li>1.30.14-gke.1746000</li>
+<li>1.31.13-gke.1040000</li>
+<li>1.31.13-gke.1123000</li>
+<li>1.32.9-gke.1130000</li>
+<li>1.32.9-gke.1207000</li>
+<li>1.33.5-gke.1201000</li>
+<li>Clusters in this channel running the listed minor version have new general auto-upgrade targets. GKE can upgrade control planes and nodes to the following new versions with this release:</li>
+<li>GKE upgrades clusters to the following new minor versions if there are no factors, such as <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or deprecated APIs, preventing upgrades:<ul>
+<li>1.27 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815">1.28.15-gke.3096000</a></li>
+<li>1.28 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915">1.29.15-gke.2380000</a></li>
+<li>1.29 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13014">1.30.14-gke.1658000</a></li>
+</ul>
+</li>
+<li>GKE upgrades clusters to the following new patch versions if no minor version upgrade is available, or if the cluster has <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or other factors preventing minor version upgrades:<ul>
+<li>1.28 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815">1.28.15-gke.3096000</a></li>
+<li>1.29 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915">1.29.15-gke.2380000</a></li>
+<li>1.30 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13014">1.30.14-gke.1658000</a></li>
+<li>1.31 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1139000</a></li>
+<li>1.32 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1239000</a></li>
+<li>1.33 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1308000</a></li>
+<li>1.34 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909002</a></li>
+</ul>
+</li>
+</ul>]]></content>
+    <summary>Version 1.33.5-gke.1308000 is now the default for new clusters in the Extended channel. Several new versions are available, and some older versions have been removed. Auto-upgrades are also updated for various versions.</summary>
+    <title>Changed: New Default Version and Extended Channel Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-12-05:changed:1</id>
+    <published>2025-12-05T00:00:00+00:00</published>
+    <updated>2025-12-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>(2025-R50) Version updates</h4>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>Version <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1308000</a> is now the default version for cluster creation.</li>
+<li>The following versions are now available:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13114">1.31.14-gke.1045000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1592000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1894000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909002</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3084002</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3355001</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3403001</a></li>
+<li>The following node versions are now available:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815">1.28.15-gke.3202000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915">1.29.15-gke.2520000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13014">1.30.14-gke.1760000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13114">1.31.14-gke.1045000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1592000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1894000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909002</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3084002</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3355001</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3403001</a></li>
+<li>The following versions are no longer available:</li>
+<li>1.31.13-gke.1008000</li>
+<li>1.31.13-gke.1040000</li>
+<li>1.31.13-gke.1123000</li>
+<li>1.31.14-gke.1033000</li>
+<li>1.32.9-gke.1092000</li>
+<li>1.32.9-gke.1130000</li>
+<li>1.32.9-gke.1207000</li>
+<li>1.32.9-gke.1575000</li>
+<li>1.33.5-gke.1080000</li>
+<li>1.33.5-gke.1350000</li>
+<li>1.33.5-gke.1521000</li>
+<li>1.33.5-gke.1697000</li>
+<li>1.34.1-gke.1829001</li>
+<li>1.34.1-gke.2037002</li>
+<li>1.34.1-gke.2541000</li>
+<li>1.34.1-gke.2909000</li>
+<li>1.34.1-gke.2980000</li>
+<li>1.34.1-gke.3084001</li>
+<li>1.34.1-gke.3225000</li>
+<li>1.34.1-gke.3355000</li>
+<li>Clusters in this channel running the listed minor version have new general auto-upgrade targets. GKE can upgrade control planes and nodes to the following new versions with this release:</li>
+<li>GKE upgrades clusters to the following new minor versions if there are no factors, such as <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or deprecated APIs, preventing upgrades:<ul>
+<li>1.30 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1139000</a></li>
+<li>1.31 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1239000</a></li>
+<li>1.32 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1162000</a></li>
+</ul>
+</li>
+<li>GKE upgrades clusters to the following new patch versions if no minor version upgrade is available, or if the cluster has <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or other factors preventing minor version upgrades:<ul>
+<li>1.31 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1139000</a></li>
+<li>1.32 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1239000</a></li>
+<li>1.33 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1162000</a></li>
+<li>1.34 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909002</a></li>
+</ul>
+</li>
+</ul>]]></content>
+    <summary>Version 1.33.5-gke.1308000 is now the default for cluster creation. Several new versions for clusters and nodes are available, while some older versions are no longer supported.</summary>
+    <title>Changed: New default and available versions</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-12-05:changed:2</id>
+    <published>2025-12-05T00:00:00+00:00</published>
+    <updated>2025-12-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>(2025-R50) Version updates</h4>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>Version <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3355001</a> is now the default version for cluster creation in the Rapid channel.</li>
+<li>The following versions are now available in the Rapid channel:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13114">1.31.14-gke.1045000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1592000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1894000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3355001</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3403001</a></li>
+<li>The following versions are no longer available in the Rapid channel:</li>
+<li>1.31.14-gke.1033000</li>
+<li>1.32.9-gke.1575000</li>
+<li>1.33.5-gke.1350000</li>
+<li>1.33.5-gke.1521000</li>
+<li>1.33.5-gke.1697000</li>
+<li>1.33.5-gke.1791000</li>
+<li>1.34.1-gke.2037001</li>
+<li>1.34.1-gke.2037002</li>
+<li>1.34.1-gke.2541000</li>
+<li>1.34.1-gke.2909000</li>
+<li>1.34.1-gke.2980000</li>
+<li>1.34.1-gke.3084001</li>
+<li>1.34.1-gke.3225000</li>
+<li>1.34.1-gke.3355000</li>
+<li>Clusters in this channel running the listed minor version have new general auto-upgrade targets. GKE can upgrade control planes and nodes to the following new versions with this release:</li>
+<li>GKE upgrades clusters to the following new minor versions if there are no factors, such as <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or deprecated APIs, preventing upgrades:<ul>
+<li>1.32 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1862000</a></li>
+<li>1.33 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3355001</a></li>
+</ul>
+</li>
+<li>GKE upgrades clusters to the following new patch versions if no minor version upgrade is available, or if the cluster has <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or other factors preventing minor version upgrades:<ul>
+<li>1.33 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1862000</a></li>
+<li>1.34 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3355001</a></li>
+</ul>
+</li>
+</ul>]]></content>
+    <summary>New versions 1.31.14-gke.1045000, 1.32.9-gke.1592000, 1.33.5-gke.1894000, and 1.34.1-gke.3355001 are now available in the Rapid channel. Version 1.34.1-gke.3355001 is the default for new cluster creations. Some older versions are no longer available.</summary>
+    <title>Changed: Version Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-12-05:changed:3</id>
+    <published>2025-12-05T00:00:00+00:00</published>
+    <updated>2025-12-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>(2025-R50) Version updates</h4>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>Version <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1308000</a> is now the default version for cluster creation in the Regular channel.</li>
+<li>The following versions are now available in the Regular channel:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1454000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1548000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1791000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909002</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3084002</a></li>
+<li>The following versions are no longer available in the Regular channel:</li>
+<li>1.31.13-gke.1040000</li>
+<li>1.31.13-gke.1123000</li>
+<li>1.31.13-gke.1231000</li>
+<li>1.31.13-gke.1377000</li>
+<li>1.32.9-gke.1130000</li>
+<li>1.32.9-gke.1207000</li>
+<li>1.32.9-gke.1330000</li>
+<li>1.32.9-gke.1462000</li>
+<li>1.33.5-gke.1201000</li>
+<li>1.33.5-gke.1350000</li>
+<li>1.33.5-gke.1521000</li>
+<li>1.33.5-gke.1697000</li>
+<li>1.34.1-gke.2909000</li>
+<li>Clusters in this channel running the listed minor version have new general auto-upgrade targets. GKE can upgrade control planes and nodes to the following new versions with this release:</li>
+<li>GKE upgrades clusters to the following new minor versions if there are no factors, such as <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or deprecated APIs, preventing upgrades:<ul>
+<li>1.30 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1139000</a></li>
+<li>1.31 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1239000</a></li>
+<li>1.32 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1308000</a></li>
+</ul>
+</li>
+<li>GKE upgrades clusters to the following new patch versions if no minor version upgrade is available, or if the cluster has <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or other factors preventing minor version upgrades:<ul>
+<li>1.31 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1139000</a></li>
+<li>1.32 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1239000</a></li>
+<li>1.33 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1308000</a></li>
+<li>1.34 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909002</a></li>
+</ul>
+</li>
+</ul>]]></content>
+    <summary>Version 1.33.5-gke.1308000 is now the default for new clusters. Several new versions are available in the Regular channel, and some older versions have been removed.</summary>
+    <title>Changed: New default version and updated release channels</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-12-05:changed:4</id>
+    <published>2025-12-05T00:00:00+00:00</published>
+    <updated>2025-12-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>(2025-R50) Version updates</h4>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>Version <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1162000</a> is now the default version for cluster creation in the Stable channel.</li>
+<li>The following versions are now available in the Stable channel:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1139000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1239000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1308000</a></li>
+<li>The following versions are no longer available in the Stable channel:</li>
+<li>1.31.13-gke.1008000</li>
+<li>1.32.9-gke.1092000</li>
+<li>1.33.5-gke.1125000</li>
+<li>Clusters in this channel running the listed minor version have new general auto-upgrade targets. GKE can upgrade control planes and nodes to the following new versions with this release:</li>
+<li>GKE upgrades clusters to the following new minor versions if there are no factors, such as <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or deprecated APIs, preventing upgrades:<ul>
+<li>1.30 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1023000</a></li>
+<li>1.31 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1108000</a></li>
+<li>1.32 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1162000</a></li>
+</ul>
+</li>
+<li>GKE upgrades clusters to the following new patch versions if no minor version upgrade is available, or if the cluster has <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or other factors preventing minor version upgrades:<ul>
+<li>1.31 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1023000</a></li>
+<li>1.32 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1108000</a></li>
+<li>1.33 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1162000</a></li>
+</ul>
+</li>
+</ul>]]></content>
+    <summary>Version 1.33.5-gke.1162000 is now the default for new clusters. Several new versions are available in the Stable channel, while some older versions have been removed. Auto-upgrades are also being updated to newer patch and minor versions.</summary>
+    <title>Changed: New Default Version and Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-12-05:changed:5</id>
+    <published>2025-12-05T00:00:00+00:00</published>
+    <updated>2025-12-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>(2025-R50) Version updates</h4>
+<p>GKE cluster versions have been updated.</p>
+<p><strong>New versions available for upgrades and new clusters.</strong></p>
+<p>The following versions are now available for new GKE clusters, and for
+manual control plane upgrades and node upgrades for existing clusters. For more
+information about versioning and upgrades, see <a href="https://cloud.google.com/kubernetes-engine/versioning">GKE versioning and
+support</a> and <a href="https://cloud.google.com/kubernetes-engine/upgrades">About GKE
+cluster upgrades</a>.</p>
+<h3>Rapid channel</h3>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>Version <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3355001</a> is now the default version for cluster creation in the Rapid channel.</li>
+<li>The following versions are now available in the Rapid channel:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13114">1.31.14-gke.1045000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1592000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1894000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3355001</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3403001</a></li>
+<li>The following versions are no longer available in the Rapid channel:</li>
+<li>1.31.14-gke.1033000</li>
+<li>1.32.9-gke.1575000</li>
+<li>1.33.5-gke.1350000</li>
+<li>1.33.5-gke.1521000</li>
+<li>1.33.5-gke.1697000</li>
+<li>1.33.5-gke.1791000</li>
+<li>1.34.1-gke.2037001</li>
+<li>1.34.1-gke.2037002</li>
+<li>1.34.1-gke.2541000</li>
+<li>1.34.1-gke.2909000</li>
+<li>1.34.1-gke.2980000</li>
+<li>1.34.1-gke.3084001</li>
+<li>1.34.1-gke.3225000</li>
+<li>1.34.1-gke.3355000</li>
+<li>Clusters in this channel running the listed minor version have new general auto-upgrade targets. GKE can upgrade control planes and nodes to the following new versions with this release:</li>
+<li>GKE upgrades clusters to the following new minor versions if there are no factors, such as <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or deprecated APIs, preventing upgrades:<ul>
+<li>1.32 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1862000</a></li>
+<li>1.33 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3355001</a></li>
+</ul>
+</li>
+<li>GKE upgrades clusters to the following new patch versions if no minor version upgrade is available, or if the cluster has <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or other factors preventing minor version upgrades:<ul>
+<li>1.33 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1862000</a></li>
+<li>1.34 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3355001</a></li>
+</ul>
+</li>
+</ul>
+<h3>Regular channel</h3>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>Version <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1308000</a> is now the default version for cluster creation in the Regular channel.</li>
+<li>The following versions are now available in the Regular channel:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1454000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1548000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1791000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909002</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3084002</a></li>
+<li>The following versions are no longer available in the Regular channel:</li>
+<li>1.31.13-gke.1040000</li>
+<li>1.31.13-gke.1123000</li>
+<li>1.31.13-gke.1231000</li>
+<li>1.31.13-gke.1377000</li>
+<li>1.32.9-gke.1130000</li>
+<li>1.32.9-gke.1207000</li>
+<li>1.32.9-gke.1330000</li>
+<li>1.32.9-gke.1462000</li>
+<li>1.33.5-gke.1201000</li>
+<li>1.33.5-gke.1350000</li>
+<li>1.33.5-gke.1521000</li>
+<li>1.33.5-gke.1697000</li>
+<li>1.34.1-gke.2909000</li>
+<li>Clusters in this channel running the listed minor version have new general auto-upgrade targets. GKE can upgrade control planes and nodes to the following new versions with this release:</li>
+<li>GKE upgrades clusters to the following new minor versions if there are no factors, such as <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or deprecated APIs, preventing upgrades:<ul>
+<li>1.30 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1139000</a></li>
+<li>1.31 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1239000</a></li>
+<li>1.32 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1308000</a></li>
+</ul>
+</li>
+<li>GKE upgrades clusters to the following new patch versions if no minor version upgrade is available, or if the cluster has <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or other factors preventing minor version upgrades:<ul>
+<li>1.31 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1139000</a></li>
+<li>1.32 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1239000</a></li>
+<li>1.33 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1308000</a></li>
+<li>1.34 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909002</a></li>
+</ul>
+</li>
+</ul>
+<h3>Stable channel</h3>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>Version <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1162000</a> is now the default version for cluster creation in the Stable channel.</li>
+<li>The following versions are now available in the Stable channel:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1139000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1239000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1308000</a></li>
+<li>The following versions are no longer available in the Stable channel:</li>
+<li>1.31.13-gke.1008000</li>
+<li>1.32.9-gke.1092000</li>
+<li>1.33.5-gke.1125000</li>
+<li>Clusters in this channel running the listed minor version have new general auto-upgrade targets. GKE can upgrade control planes and nodes to the following new versions with this release:</li>
+<li>GKE upgrades clusters to the following new minor versions if there are no factors, such as <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or deprecated APIs, preventing upgrades:<ul>
+<li>1.30 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1023000</a></li>
+<li>1.31 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1108000</a></li>
+<li>1.32 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1162000</a></li>
+</ul>
+</li>
+<li>GKE upgrades clusters to the following new patch versions if no minor version upgrade is available, or if the cluster has <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or other factors preventing minor version upgrades:<ul>
+<li>1.31 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1023000</a></li>
+<li>1.32 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1108000</a></li>
+<li>1.33 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1162000</a></li>
+</ul>
+</li>
+</ul>
+<h3>Extended channel</h3>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>Version <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1308000</a> is now the default version for cluster creation in the Extended channel.</li>
+<li>The following versions are now available in the Extended channel:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815">1.28.15-gke.3202000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915">1.29.15-gke.2520000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13014">1.30.14-gke.1760000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1139000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1454000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1239000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1548000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1791000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909002</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3084002</a></li>
+<li>The following versions are no longer available in the Extended channel:</li>
+<li>1.28.15-gke.2767000</li>
+<li>1.28.15-gke.2793000</li>
+<li>1.28.15-gke.2966000</li>
+<li>1.28.15-gke.3188000</li>
+<li>1.29.15-gke.2002000</li>
+<li>1.29.15-gke.2085000</li>
+<li>1.29.15-gke.2236000</li>
+<li>1.29.15-gke.2505000</li>
+<li>1.30.14-gke.1349000</li>
+<li>1.30.14-gke.1408000</li>
+<li>1.30.14-gke.1525000</li>
+<li>1.30.14-gke.1746000</li>
+<li>1.31.13-gke.1040000</li>
+<li>1.31.13-gke.1123000</li>
+<li>1.32.9-gke.1130000</li>
+<li>1.32.9-gke.1207000</li>
+<li>1.33.5-gke.1201000</li>
+<li>Clusters in this channel running the listed minor version have new general auto-upgrade targets. GKE can upgrade control planes and nodes to the following new versions with this release:</li>
+<li>GKE upgrades clusters to the following new minor versions if there are no factors, such as <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or deprecated APIs, preventing upgrades:<ul>
+<li>1.27 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815">1.28.15-gke.3096000</a></li>
+<li>1.28 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915">1.29.15-gke.2380000</a></li>
+<li>1.29 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13014">1.30.14-gke.1658000</a></li>
+</ul>
+</li>
+<li>GKE upgrades clusters to the following new patch versions if no minor version upgrade is available, or if the cluster has <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or other factors preventing minor version upgrades:<ul>
+<li>1.28 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815">1.28.15-gke.3096000</a></li>
+<li>1.29 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915">1.29.15-gke.2380000</a></li>
+<li>1.30 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13014">1.30.14-gke.1658000</a></li>
+<li>1.31 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1139000</a></li>
+<li>1.32 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1239000</a></li>
+<li>1.33 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1308000</a></li>
+<li>1.34 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909002</a></li>
+</ul>
+</li>
+</ul>
+<h3>No channel</h3>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>Version <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1308000</a> is now the default version for cluster creation.</li>
+<li>The following versions are now available:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13114">1.31.14-gke.1045000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1592000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1894000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909002</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3084002</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3355001</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3403001</a></li>
+<li>The following node versions are now available:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815">1.28.15-gke.3202000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915">1.29.15-gke.2520000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13014">1.30.14-gke.1760000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13114">1.31.14-gke.1045000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1592000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1894000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909002</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3084002</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3355001</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3403001</a></li>
+<li>The following versions are no longer available:</li>
+<li>1.31.13-gke.1008000</li>
+<li>1.31.13-gke.1040000</li>
+<li>1.31.13-gke.1123000</li>
+<li>1.31.14-gke.1033000</li>
+<li>1.32.9-gke.1092000</li>
+<li>1.32.9-gke.1130000</li>
+<li>1.32.9-gke.1207000</li>
+<li>1.32.9-gke.1575000</li>
+<li>1.33.5-gke.1080000</li>
+<li>1.33.5-gke.1350000</li>
+<li>1.33.5-gke.1521000</li>
+<li>1.33.5-gke.1697000</li>
+<li>1.34.1-gke.1829001</li>
+<li>1.34.1-gke.2037002</li>
+<li>1.34.1-gke.2541000</li>
+<li>1.34.1-gke.2909000</li>
+<li>1.34.1-gke.2980000</li>
+<li>1.34.1-gke.3084001</li>
+<li>1.34.1-gke.3225000</li>
+<li>1.34.1-gke.3355000</li>
+<li>Clusters in this channel running the listed minor version have new general auto-upgrade targets. GKE can upgrade control planes and nodes to the following new versions with this release:</li>
+<li>GKE upgrades clusters to the following new minor versions if there are no factors, such as <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or deprecated APIs, preventing upgrades:<ul>
+<li>1.30 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1139000</a></li>
+<li>1.31 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1239000</a></li>
+<li>1.32 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1162000</a></li>
+</ul>
+</li>
+<li>GKE upgrades clusters to the following new patch versions if no minor version upgrade is available, or if the cluster has <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or other factors preventing minor version upgrades:<ul>
+<li>1.31 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1139000</a></li>
+<li>1.32 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1239000</a></li>
+<li>1.33 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1162000</a></li>
+<li>1.34 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909002</a></li>
+</ul>
+</li>
+</ul>]]></content>
+    <summary>New versions are available for GKE cluster upgrades and new cluster creation across various channels. Some older versions are no longer available, and auto-upgrade targets have been updated.</summary>
+    <title>Changed: GKE Cluster Version Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-12-03:feature:0</id>
+    <published>2025-12-03T00:00:00+00:00</published>
+    <updated>2025-12-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>GKE Inference Gateway is generally available (GA) and ready for production
+workloads. This release introduces major performance, security, and usability
+enhancements since the Public Preview.</p>
+<ul>
+<li><strong>Stable v1 API</strong>: The API has graduated to v1. The <code>InferenceModel</code> resource
+  is replaced by the <code>InferenceObjective</code> resource for a clearer definition of
+  serving goals. A zero-downtime migration path is available.</li>
+<li><strong>Prefix-Aware Routing</strong>: A new, intelligent routing feature inspects request
+  context and routes requests with shared prefixes (like in conversational AI)
+  to the same model replica. This can maximize KV cache hits and improve
+  Time-to-First-Token (TTFT) latency by up to 96%.</li>
+<li><strong>API Key Authentication</strong>: Secure your endpoints by enforcing API key
+  validation through a new integration with Apigee.</li>
+<li><strong>Body-Based Routing</strong>: The gateway can route requests using the model
+  field directly from the HTTP request body, which enables native
+  compatibility with the OpenAI API specification.</li>
+</ul>
+<p>For more information see
+<a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/about-gke-inference-gateway">About GKE Inference Gateway</a>
+and <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/deploy-gke-inference-gateway">Deploy GKE Inference Gateway</a>.</p>]]></content>
+    <summary>GKE Inference Gateway has reached general availability, offering significant improvements in performance, security, and usability for production workloads. Key updates include a stable v1 API, prefix-aware routing for enhanced latency, API key authentication via Apigee, and body-based routing for OpenAI compatibility.</summary>
+    <title>Feature: GKE Inference Gateway Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-12-03:issue:1</id>
+    <published>2025-12-03T00:00:00+00:00</published>
+    <updated>2025-12-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Starting with version 1.33.2-gke.4655000, the GCSFuse CSI Driver automatically
+applies performance-tuning defaults for Cloud Storage FUSE volumes used on nodes
+with <a href="https://docs.cloud.google.com/storage/docs/cloud-storage-fuse/automated-configurations">high-performance machine types</a>.
+However, in GKE versions 1.34.1-gke.1431000 to 1.34.1-gke.3403001, these
+defaults are not being applied. This is due to an issue where GCSFuse fails
+to recognize the machine type from the configuration file provided by the
+GCSFuse CSI Driver.</p>
+<p>To apply the performance defaults, explicitly set the machine-type as a
+gcsfuse mount option. Use the command-line flag format, with the key and
+value separated by an equals sign (<code>=</code>).</p>
+<p>For example: <code>machine-type=n2-standard-4</code></p>
+<p>Ensure the Pod using the GCSFuse volume is scheduled on a node that matches
+the specified machine type. These settings are optimized for high-performance
+machine types and might not be suitable for other node types. For more
+information on scheduling, see the Kubernetes documentation on
+<a href="https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/">assigning Pods to Nodes</a>.</p>]]></content>
+    <summary>An issue in GKE versions 1.34.1-gke.1431000 to 1.34.1-gke.3403001 prevents the GCSFuse CSI Driver from automatically applying performance-tuning defaults for Cloud Storage FUSE volumes on high-performance machine types. This is because GCSFuse fails to recognize the machine type from the driver's configuration file. To resolve this, users must explicitly set the machine type as a gcsfuse mount option (e.g., `machine-type=n2-standard-4`) and ensure the Pod is scheduled on a matching node.</summary>
+    <title>Issue: Performance Tuning Issue with GCSFuse CSI Driver</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-11-28:security:0</id>
+    <published>2025-11-28T00:00:00+00:00</published>
+    <updated>2025-11-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>(2025-R49) Security updates</h4>
+<p>This release includes new GKE versions that use updated
+Container-Optimized OS images. These updated images are cumulative,
+incorporating security fixes from all Container-Optimized OS
+versions released since the previous GKE release.</p>
+<p>To identify the specific vulnerabilities that were resolved in each updated
+Container-Optimized OS image, see the <strong>Security</strong> release notes
+for that image. The following table includes links to the release notes for
+each updated Container-Optimized OS image:</p>
+<p>| GKE version | Container-Optimized OS version | Details |
+| --- | --- | --- |
+| 1.28.15-gke.3188000 | cos-113-18244-521-23 | <a href="https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m113#cos-113-18244-521-23_">cos-113-18244-521-23 release notes</a> |
+| 1.29.15-gke.2505000 | cos-113-18244-521-23 | <a href="https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m113#cos-113-18244-521-23_">cos-113-18244-521-23 release notes</a> |
+| 1.30.14-gke.1746000 | cos-113-18244-521-23 | <a href="https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m113#cos-113-18244-521-23_">cos-113-18244-521-23 release notes</a> |
+| 1.31.14-gke.1033000 | cos-117-18613-439-28 | <a href="https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m117#cos-117-18613-439-28_">cos-117-18613-439-28 release notes</a> |
+| 1.34.1-gke.1829001 | cos-125-19216-0-94 | <a href="https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m125#cos-125-19216-0-94_">cos-125-19216-0-94 release notes</a> |
+| 1.34.1-gke.2541000 | cos-125-19216-0-115 | <a href="https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m125#cos-125-19216-0-115_">cos-125-19216-0-115 release notes</a> |
+| 1.34.1-gke.3355000 | cos-125-19216-104-32 | <a href="https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m125#cos-125-19216-104-32_">cos-125-19216-104-32 release notes</a> |</p>]]></content>
+    <summary>New GKE versions are available, incorporating the latest security fixes through updated Container-Optimized OS images. These updates include cumulative security patches, and detailed release notes for each image are available to track resolved vulnerabilities.</summary>
+    <title>Security: Security Updates for GKE</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-11-28:changed:1</id>
+    <published>2025-11-28T00:00:00+00:00</published>
+    <updated>2025-11-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>(2025-R49) Version updates</h4>
+<p>GKE cluster versions have been updated.</p>
+<p><strong>New versions available for upgrades and new clusters.</strong></p>
+<p>The following versions are now available for new GKE clusters, and for
+manual control plane upgrades and node upgrades for existing clusters. For more
+information about versioning and upgrades, see <a href="https://cloud.google.com/kubernetes-engine/versioning">GKE versioning and
+support</a> and <a href="https://cloud.google.com/kubernetes-engine/upgrades">About GKE
+cluster upgrades</a>.</p>
+<h3>Rapid channel</h3>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>The following versions are now available in the Rapid channel:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13114">1.31.14-gke.1033000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1575000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1862000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3225000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3355000</a></li>
+</ul>
+<h3>Regular channel</h3>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>The following versions are now available in the Regular channel:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1377000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1462000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1697000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909000</a></li>
+<li>Clusters in this channel running the listed minor version have new general auto-upgrade targets. GKE can upgrade control planes and nodes to the following new versions with this release:</li>
+<li>GKE upgrades clusters to the following new patch versions if no minor version upgrade is available, or if the cluster has <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or other factors preventing minor version upgrades:<ul>
+<li>1.34 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909000</a></li>
+</ul>
+</li>
+</ul>
+<h3>Stable channel</h3>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<p>There are no new releases in the Stable channel.</p>
+<h3>Extended channel</h3>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>The following versions are now available in the Extended channel:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815">1.28.15-gke.3188000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915">1.29.15-gke.2505000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13014">1.30.14-gke.1746000</a></li>
+</ul>
+<h3>No channel</h3>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>The following versions are now available:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13114">1.31.14-gke.1033000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1575000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1862000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.1829001</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2037001</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2037002</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2541000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2980000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3084001</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3225000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3355000</a></li>
+<li>The following node versions are now available:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815">1.28.15-gke.3188000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915">1.29.15-gke.2505000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13014">1.30.14-gke.1746000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13114">1.31.14-gke.1033000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1575000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1862000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.1829001</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2037001</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2037002</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2541000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2980000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3084001</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3225000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3355000</a></li>
+<li>Clusters in this channel running the listed minor version have new general auto-upgrade targets. GKE can upgrade control planes and nodes to the following new versions with this release:</li>
+<li>GKE upgrades clusters to the following new patch versions if no minor version upgrade is available, or if the cluster has <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or other factors preventing minor version upgrades:<ul>
+<li>1.34 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909000</a></li>
+</ul>
+</li>
+</ul>]]></content>
+    <summary>New GKE cluster versions are available for upgrades and new clusters across Rapid, Regular, Extended, and No channel. Please review the release notes for specific version details and upgrade information.</summary>
+    <title>Changed: GKE Cluster Version Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-11-28:changed:2</id>
+    <published>2025-11-28T00:00:00+00:00</published>
+    <updated>2025-11-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>(2025-R49) Version updates</h4>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>The following versions are now available in the Extended channel:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815">1.28.15-gke.3188000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915">1.29.15-gke.2505000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13014">1.30.14-gke.1746000</a></li>
+</ul>]]></content>
+    <summary>New versions 1.28.15-gke.3188000, 1.29.15-gke.2505000, and 1.30.14-gke.1746000 are now available in the Extended channel. Please note that rollouts may take several days to complete across all zones.</summary>
+    <title>Changed: New Extended Channel Versions Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-11-28:changed:3</id>
+    <published>2025-11-28T00:00:00+00:00</published>
+    <updated>2025-11-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>(2025-R49) Version updates</h4>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>The following versions are now available:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13114">1.31.14-gke.1033000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1575000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1862000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.1829001</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2037001</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2037002</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2541000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2980000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3084001</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3225000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3355000</a></li>
+<li>The following node versions are now available:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815">1.28.15-gke.3188000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915">1.29.15-gke.2505000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13014">1.30.14-gke.1746000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13114">1.31.14-gke.1033000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1575000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1862000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.1829001</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2037001</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2037002</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2541000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2980000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3084001</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3225000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3355000</a></li>
+<li>Clusters in this channel running the listed minor version have new general auto-upgrade targets. GKE can upgrade control planes and nodes to the following new versions with this release:</li>
+<li>GKE upgrades clusters to the following new patch versions if no minor version upgrade is available, or if the cluster has <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or other factors preventing minor version upgrades:<ul>
+<li>1.34 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909000</a></li>
+</ul>
+</li>
+</ul>]]></content>
+    <summary>New versions of GKE are now available, including updates to control planes and nodes. These updates include versions 1.31.14-gke.1033000, 1.32.9-gke.1575000, 1.33.5-gke.1862000, and various 1.34.1-gke builds. Node versions have also been updated across several minor versions. GKE may automatically upgrade clusters to these new patch versions if minor version upgrades are not possible due to maintenance exclusions or other factors.</summary>
+    <title>Changed: New Version Updates Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-11-28:changed:4</id>
+    <published>2025-11-28T00:00:00+00:00</published>
+    <updated>2025-11-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>(2025-R49) Version updates</h4>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>The following versions are now available in the Rapid channel:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13114">1.31.14-gke.1033000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1575000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1862000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3225000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3355000</a></li>
+</ul>]]></content>
+    <summary>New versions 1.31.14-gke.1033000, 1.32.9-gke.1575000, 1.33.5-gke.1862000, 1.34.1-gke.3225000, and 1.34.1-gke.3355000 are now available in the Rapid channel. Please note that rollouts are in progress and may take several days to complete across all zones.</summary>
+    <title>Changed: New versions available in Rapid channel</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-11-28:changed:5</id>
+    <published>2025-11-28T00:00:00+00:00</published>
+    <updated>2025-11-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>(2025-R49) Version updates</h4>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>The following versions are now available in the Regular channel:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1377000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1462000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1697000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909000</a></li>
+<li>Clusters in this channel running the listed minor version have new general auto-upgrade targets. GKE can upgrade control planes and nodes to the following new versions with this release:</li>
+<li>GKE upgrades clusters to the following new patch versions if no minor version upgrade is available, or if the cluster has <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">maintenance exclusions</a> or other factors preventing minor version upgrades:<ul>
+<li>1.34 to <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2909000</a></li>
+</ul>
+</li>
+</ul>]]></content>
+    <summary>New versions 1.31.13-gke.1377000, 1.32.9-gke.1462000, 1.33.5-gke.1697000, and 1.34.1-gke.2909000 are now available in the Regular channel. Clusters in this channel running the listed minor version have new general auto-upgrade targets.</summary>
+    <title>Changed: New GKE versions available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-11-28:changed:6</id>
+    <published>2025-11-28T00:00:00+00:00</published>
+    <updated>2025-11-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>(2025-R49) Version updates</h4>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<p>There are no new releases in the Stable channel.</p>]]></content>
+    <summary>No new stable releases this week.</summary>
+    <title>Changed: Release Notes Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-11-27:feature:0</id>
+    <published>2025-11-27T00:00:00+00:00</published>
+    <updated>2025-11-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>TPU7x (Ironwood), Google's seventh-generation TPU for large-scale AI workloads,
+is available in <a href="https://docs.cloud.google.com/products#product-launch-stages">Preview</a> in GKE
+Standard clusters that run version 1.34.0-gke.2201000 and later, and in
+Autopilot clusters that run version 1.34.1-gke.3084001 and later.
+TPU7x offers a significant performance increase compared to previous
+generations, with 2307 TFLOPs of BF16 performance and 192 GB of
+high-bandwidth memory (HBM) per chip. For more information, see
+<a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/tpus#ironwood-benefits">Get started with Ironwood (TPU7x)</a>.</p>]]></content>
+    <summary>Google's seventh-generation TPU, TPU7x (Ironwood), is now available in preview for GKE. This new TPU offers a significant performance boost for large-scale AI workloads. Get started with Ironwood (TPU7x) to learn more.</summary>
+    <title>Feature: TPU7x (Ironwood) Now in Preview</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-11-24:feature:0</id>
+    <published>2025-11-24T00:00:00+00:00</published>
+    <updated>2025-11-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fast-starting nodes are now generally available. GKE provisions
+fast-starting nodes on a best-effort basis in Autopilot when workloads
+use compatible configurations. For more information, see
+<a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/fast-starting-nodes">About quicker workload startup with fast-starting nodes</a>.</p>]]></content>
+    <summary>Fast-starting nodes are now generally available in GKE Autopilot for compatible configurations, reducing workload startup times.</summary>
+    <title>Feature: Fast-starting nodes are now generally available.</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-11-21:issue:0</id>
+    <published>2025-11-21T00:00:00+00:00</published>
+    <updated>2025-11-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>GKE versions earlier than 1.32 don't support
+<a href="https://kubernetes.io/docs/concepts/storage/volumes/#nfs">direct NFS volume mounts</a>
+to NFS volumes that exclusively use an NFS protocol greater than <code>NFSv4.0</code>.</p>
+<p>When using direct NFS volume mounts, Pods on GKE node versions
+earlier than 1.32 might fail to mount NFS volumes that are configured to only
+support protocols greater than <code>NFSv4.0</code> (such as <code>NFSv4.1</code> or <code>NFSv4.2</code>). This
+issue occurs because the <code>containerized_mounter</code> on these earlier
+GKE versions uses version <code>1.2.8</code> of the <code>nfs-utils</code> package,
+which doesn't support <code>NFSv4</code> minor versions. As a result, the mount process
+fails with the <code>mount.nfs: access denied by server</code> error message.</p>
+<p>This issue doesn't affect GKE version 1.32 and later, which
+include an updated version of the <code>nfs-utils</code> package. To resolve this issue,
+try one of the following options:</p>
+<ul>
+<li>Upgrade clusters to GKE version 1.32 or later.</li>
+<li>Configure the NFS volume to support both the <code>NFSv3</code> and <code>NFSv4</code> protocols,
+  which allows the mount to succeed by falling back to a compatible version.</li>
+<li>Use a PersistentVolume and PersistentVolumeClaim to mount the NFS volume,
+  which allows for explicit NFS version specification.</li>
+</ul>]]></content>
+    <summary>Older GKE versions (before 1.32) may fail to mount NFS volumes using direct NFS mounts if only NFSv4.1 or NFSv4.2 is configured. This is due to an outdated nfs-utils package that does not support NFSv4 minor versions, resulting in a 'mount.nfs: access denied by server' error. Upgrade to GKE 1.32+, enable NFSv3 fallback, or use PersistentVolumes for a workaround.</summary>
+    <title>Issue: NFS mount issue with older GKE versions</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-11-21:issue:1</id>
+    <published>2025-11-21T00:00:00+00:00</published>
+    <updated>2025-11-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>In GKE versions 1.34.1-gke.2037001 and 1.34.1-gke.2541000, Arm
+nodes that use an Ubuntu node image might incorrectly use an image with a
+64 KB page size instead of the default 4 KB page size. Avoid using
+version 1.34.1-gke.2037001 and 1.34.1-gke.2541000 for your Ubuntu Arm nodes.</p>]]></content>
+    <summary>GKE versions 1.34.1-gke.2037001 and 1.34.1-gke.2541000 may incorrectly use a 64 KB page size for Ubuntu Arm nodes instead of the default 4 KB. To avoid this issue, do not use these versions for your Ubuntu Arm nodes.</summary>
+    <title>Issue: Issue with Ubuntu Arm nodes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-11-20:changed:0</id>
+    <published>2025-11-20T00:00:00+00:00</published>
+    <updated>2025-11-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>(2025-R48) Version updates</h4>
+<p>GKE cluster versions have been updated.</p>
+<p><strong>New versions available for upgrades and new clusters.</strong></p>
+<p>The following versions are now available for new GKE clusters, and for
+manual control plane upgrades and node upgrades for existing clusters. For more
+information about versioning and upgrades, see <a href="https://cloud.google.com/kubernetes-engine/versioning">GKE versioning and
+support</a> and <a href="https://cloud.google.com/kubernetes-engine/upgrades">About GKE
+cluster upgrades</a>.</p>
+<h3>Rapid channel</h3>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>The following versions are now available in the Rapid channel:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1454000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1548000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1791000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2980000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3084001</a></li>
+</ul>
+<h3>Regular channel</h3>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>The following versions are now available in the Regular channel:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1231000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1330000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1521000</a></li>
+</ul>
+<h3>Stable channel</h3>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<p>There are no new releases in the Stable channel.</p>
+<h3>Extended channel</h3>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>The following versions are now available in the Extended channel:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815">1.28.15-gke.3163000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915">1.29.15-gke.2467000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13014">1.30.14-gke.1719000</a></li>
+</ul>
+<h3>No channel</h3>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>The following versions are now available:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1454000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1548000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1791000</a></li>
+<li>The following node versions are now available:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815">1.28.15-gke.3163000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915">1.29.15-gke.2467000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13014">1.30.14-gke.1719000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1454000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1548000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1791000</a></li>
+</ul>]]></content>
+    <summary>New versions are available for GKE clusters. These updates include new versions for the Rapid, Regular, Extended, and No channel, with specific version numbers listed for each. Note that these updates may take several days to roll out across all zones.</summary>
+    <title>Changed: GKE Cluster Version Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-11-20:security:1</id>
+    <published>2025-11-20T00:00:00+00:00</published>
+    <updated>2025-11-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>(2025-R48) Security updates</h4>
+<p>This release includes new GKE versions that use updated
+Container-Optimized OS images. These updated images are cumulative,
+incorporating security fixes from all Container-Optimized OS
+versions released since the previous GKE release.</p>
+<p>To identify the specific vulnerabilities that were resolved in each updated
+Container-Optimized OS image, see the <strong>Security</strong> release notes
+for that image. The following table includes links to the release notes for
+each updated Container-Optimized OS image:</p>
+<p>| GKE version | Container-Optimized OS version | Details |
+| --- | --- | --- |
+| 1.28.15-gke.3163000 | cos-113-18244-521-16 | <a href="https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m113#cos-113-18244-521-16_">cos-113-18244-521-16 release notes</a> |
+| 1.29.15-gke.2467000 | cos-113-18244-521-16 | <a href="https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m113#cos-113-18244-521-16_">cos-113-18244-521-16 release notes</a> |
+| 1.30.14-gke.1719000 | cos-113-18244-521-16 | <a href="https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m113#cos-113-18244-521-16_">cos-113-18244-521-16 release notes</a> |
+| 1.31.13-gke.1454000 | cos-117-18613-439-22 | <a href="https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m117#cos-117-18613-439-22_">cos-117-18613-439-22 release notes</a> |
+| 1.32.9-gke.1548000 | cos-117-18613-439-22 | <a href="https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m117#cos-117-18613-439-22_">cos-117-18613-439-22 release notes</a> |
+| 1.33.5-gke.1791000 | cos-121-18867-294-17 | <a href="https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m121#cos-121-18867-294-17_">cos-121-18867-294-17 release notes</a> |
+| 1.34.1-gke.2980000 | cos-125-19216-0-115 | <a href="https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m125#cos-125-19216-0-115_">cos-125-19216-0-115 release notes</a> |</p>]]></content>
+    <summary>New GKE versions are available with updated Container-Optimized OS images that include the latest security fixes. For details on resolved vulnerabilities, refer to the security release notes for each image.</summary>
+    <title>Security: Security Updates for GKE</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-11-20:changed:2</id>
+    <published>2025-11-20T00:00:00+00:00</published>
+    <updated>2025-11-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>(2025-R48) Version updates</h4>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>The following versions are now available in the Extended channel:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815">1.28.15-gke.3163000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915">1.29.15-gke.2467000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13014">1.30.14-gke.1719000</a></li>
+</ul>]]></content>
+    <summary>New versions 1.28.15-gke.3163000, 1.29.15-gke.2467000, and 1.30.14-gke.1719000 are now available in the Extended channel.</summary>
+    <title>Changed: New Extended Channel Versions Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-11-20:changed:3</id>
+    <published>2025-11-20T00:00:00+00:00</published>
+    <updated>2025-11-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>(2025-R48) Version updates</h4>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>The following versions are now available:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1454000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1548000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1791000</a></li>
+<li>The following node versions are now available:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v12815">1.28.15-gke.3163000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915">1.29.15-gke.2467000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13014">1.30.14-gke.1719000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1454000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1548000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1791000</a></li>
+</ul>]]></content>
+    <summary>New versions of existing services have been released.</summary>
+    <title>Changed: New versions available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-11-20:changed:4</id>
+    <published>2025-11-20T00:00:00+00:00</published>
+    <updated>2025-11-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>(2025-R48) Version updates</h4>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>The following versions are now available in the Rapid channel:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1454000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1548000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1791000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2980000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3084001</a></li>
+</ul>]]></content>
+    <summary>New versions 1.31.13-gke.1454000, 1.32.9-gke.1548000, 1.33.5-gke.1791000, 1.34.1-gke.2980000, and 1.34.1-gke.3084001 are now available in the Rapid channel.</summary>
+    <title>Changed: New versions available in Rapid channel</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-11-20:changed:5</id>
+    <published>2025-11-20T00:00:00+00:00</published>
+    <updated>2025-11-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>(2025-R48) Version updates</h4>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<ul>
+<li>The following versions are now available in the Regular channel:</li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md#v13113">1.31.13-gke.1231000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1330000</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1521000</a></li>
+</ul>]]></content>
+    <summary>New versions 1.31.13-gke.1231000, 1.32.9-gke.1330000, and 1.33.5-gke.1521000 are now available in the Regular channel.</summary>
+    <title>Changed: New versions available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-11-20:changed:6</id>
+    <published>2025-11-20T00:00:00+00:00</published>
+    <updated>2025-11-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>(2025-R48) Version updates</h4>
+<p><strong>Note</strong>: Your clusters might not have these versions available.
+Rollouts are already in progress when we publish the release notes, and can take
+multiple days to complete across all Google Cloud zones.</p>
+<p>There are no new releases in the Stable channel.</p>]]></content>
+    <summary>New versions have been released, but may not be available in all clusters yet as rollouts are ongoing.</summary>
+    <title>Changed: New Versions Released</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

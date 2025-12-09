@@ -1,5 +1,14 @@
 # Artifact Registry
 
+## 2025-11-24
+
+### Feature
+
+You can now use
+[`ExportArtifact()`](https://cloud.google.com/artifact-registry/docs/reference/rest/v1/projects.locations.repositories/exportArtifact)
+to export an artifact to a Cloud Storage bucket.
+
+---
 ## 2025-11-04
 
 ### Feature

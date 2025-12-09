@@ -1,5 +1,31 @@
 # Dataplex
 
+## 2025-12-08
+
+### Feature
+
+[Natural language search](https://docs.cloud.google.com/dataplex/docs/search-assets) in Dataplex Universal
+Catalog is generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
+
+Natural language search extends keyword search to support natural language
+queries. It lets you find resources using everyday language, eliminating the
+need for complex syntax.
+
+---
+## 2025-11-21
+
+### Feature
+
+Data products in Dataplex Universal Catalog is now available in
+[preview](https://cloud.google.com/products#product-launch-stages).
+
+A data product serves as a logical, curated package of data assets designed to
+solve a specific business problem. It enables faster time to insights and
+provides trust, context, and self-service access request mechanisms for data
+consumers. For more information, see
+[About data products](https://docs.cloud.google.com/dataplex/docs/data-products-overview).
+
+---
 ## 2025-11-17
 
 ### Feature

@@ -1,5 +1,35 @@
 # Security Command Center
 
+## 2025-12-05
+
+### Changed
+
+Security Command Center [Risk Engine](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-supported-features)
+uses the [`storage.restrictAuthTypes`](https://docs.cloud.google.com/storage/docs/org-policy-constraints#restrict-auth-types)
+organization policy constraint to determine whether Cloud Storage buckets are
+reachable using [signed URLs](https://docs.cloud.google.com/storage/docs/access-control/signed-urls).
+
+---
+## 2025-11-20
+
+### Changed
+
+The following updates simplify Security Command Center Standard and Premium tier activation
+for organizations:
+
+* You need fewer [Identity and Access Management (IAM) roles](https://docs.cloud.google.com/security-command-center/docs/activate-premium-tier#required-roles)
+  to activate Security Command Center.
+* A variety of [services](https://docs.cloud.google.com/security-command-center/docs/activate-premium-tier#premium-services)
+  are automatically enabled during activation. [Service-specific service agents](https://docs.cloud.google.com/iam/docs/service-account-types#service-specific)
+  are automatically enabled with the IAM roles and permissions that are
+  required for these services to function.
+
+See the following for detailed information about activating a specific tier:
+
+* [Activate Security Command Center Standard tier for an organization](https://docs.cloud.google.com/security-command-center/docs/activate-standard-tier)
+* [Activate Security Command Center Premium tier for an organization](https://docs.cloud.google.com/security-command-center/docs/activate-premium-tier)
+
+---
 ## 2025-11-17
 
 ### Feature
@@ -77,14 +107,15 @@ For more information, see [Locations for the Model Armor API](https://docs.cloud
 
 ### Feature
 
-You can use customer-managed encryption keys (CMEK) organization policies with Security Command Center. For more information see [Use CMEK organization policies with Security Command Center](https://docs.cloud.google.com/security-command-center/docs/cmek#org-policies).
-
-### Feature
-
 The monitoring and auditing capabilities for
 [Compliance Manager](https://docs.cloud.google.com/security-command-center/docs/compliance-manager/overview)
 have been released to [General
 Availability](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+You can use customer-managed encryption keys (CMEK) organization policies with
+Security Command Center. For more information, see [Use CMEK organization policies with Security Command Center](https://docs.cloud.google.com/security-command-center/docs/cmek#org-policies).
 
 ---
 ## 2025-11-06

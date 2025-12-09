@@ -1,5 +1,31 @@
 # SAP on Google Cloud
 
+## 2025-12-05
+
+### Announcement
+
+**New OS certification: Windows Server 2025 for SAP NetWeaver**
+
+For use with SAP NetWeaver systems on Google Cloud, SAP has certified the
+operating system Windows Server 2025.
+
+For more information, see
+[Certified SAP applications on Google Cloud](https://docs.cloud.google.com/sap/docs/certifications-sap-apps#sap-certified-apps-on-gc).
+
+---
+## 2025-12-02
+
+### Announcement
+
+**BigQuery Connector for SAP version 2.11**
+
+Version 2.11 of the BigQuery Connector for SAP is generally available (GA).
+This version lets you set up JWT authentication by using project-specific
+service accounts for data replication to different Google Cloud projects.
+
+For more information, see [What's new with BigQuery Connector for SAP](https://docs.cloud.google.com/sap/docs/bq-connector/whats-new#version-2-11).
+
+---
 ## 2025-11-06
 
 ### Announcement

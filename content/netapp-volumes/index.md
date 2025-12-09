@@ -1,5 +1,17 @@
 # NetApp Volumes
 
+## 2025-11-21
+
+### Announcement
+
+Google Cloud NetApp Volumes offers volume replication between the following
+region pairs for Standard, Premium, and Extreme service levels:
+
+* `europe-west4` (Netherlands) and `europe-west6` (Zurich)
+
+For more information, see [About volume replication](https://docs.cloud.google.com/netapp/volumes/docs/protect-data/about-volume-replication).
+
+---
 ## 2025-11-12
 
 ### Feature

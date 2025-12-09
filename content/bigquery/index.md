@@ -1,5 +1,88 @@
 # BigQuery
 
+## 2025-12-02
+
+### Feature
+
+You can now enable
+[autonomous embedding generation](https://docs.cloud.google.com/bigquery/docs/autonomous-embedding-generation)
+on tables that you make with the
+[`CREATE TABLE` statement](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#create_table_statement).
+When you do this, BigQuery maintains a column of embeddings on
+the table based on a source column. When you add or modify data in the source
+column, BigQuery automatically generates or updates the embedding
+column for that data.
+
+You can also use the
+[`AI.SEARCH`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-search)
+function, enabling semantic search on tables that have autonomous embedding
+generation enabled.
+
+These features are in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Changed
+
+An updated version of the
+[ODBC driver for BigQuery](https://docs.cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers#current_odbc_driver)
+is now available.
+
+---
+## 2025-12-01
+
+### Feature
+
+Search results in the [Explorer
+pane](https://docs.cloud.google.com/bigquery/docs/bigquery-web-ui#explorer_pane) in BigQuery Studio now show
+results in the current organization. You can use a drop-down menu to switch
+between organizations. This feature is [generally
+available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+---
+## 2025-11-26
+
+### Feature
+
+The BigQuery Data Transfer Service now supports [incremental data transfers](https://docs.cloud.google.com/bigquery/docs/salesforce-transfer#full_or_incremental_transfers)
+when transferring data from Salesforce to BigQuery. This feature is supported in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
+## 2025-11-25
+
+### Changed
+
+An updated version of the
+[JDBC driver for BigQuery](https://docs.cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers#current_jdbc_driver)
+is now available.
+
+---
+## 2025-11-24
+
+### Feature
+
+You can
+[set the default project and dataset for your pipeline](https://docs.cloud.google.com/bigquery/docs/create-pipelines#sqlx-options)
+in the **SQLX options** section, which simplifies task configuration by using
+these defaults for all tasks. This feature is
+[generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
+
+---
+## 2025-11-20
+
+### Feature
+
+You can now use the BigQuery Agent Analytics plugin within the Agent Development
+Kit to export agent interaction data directly into BigQuery. This plugin
+captures comprehensive logs of your agent's prompts, tool usage, and responses,
+enabling you to analyze and visualize agent performance metrics. The plugin
+leverages the BigQuery Storage Write API for efficient high-throughput
+streaming. For more information on how to leverage this plugin in your agent,
+see the
+[Announcing BigQuery Agent Analytics for the Google ADK](https://cloud.google.com/blog/products/data-analytics/introducing-bigquery-agent-analytics/?e=48754805).
+
+---
 ## 2025-11-19
 
 ### Feature

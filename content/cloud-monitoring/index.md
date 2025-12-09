@@ -1,5 +1,17 @@
 # Cloud Monitoring
 
+## 2025-12-08
+
+### Feature
+
+You can now install and manage the Ops Agent on virtual machines in
+a specified zone by using VM Extension Manager extension policies.
+You can use extension policies to keep the installed version of the agent
+current, keep a specified version of the agent installed, and other tasks.
+For more information, see [Install and manage the Ops Agent by using
+VM Extension Manager policies](https://docs.cloud.google.com/monitoring/agent/ops-agent/agent-vmem-policies).
+
+---
 ## 2025-11-04
 
 ### Feature

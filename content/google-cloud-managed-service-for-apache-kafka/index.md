@@ -1,5 +1,25 @@
 # Google Cloud Managed Service for Apache Kafka
 
+## 2025-12-08
+
+### Changed
+
+Kafka Connect cluster workers can now reach any endpoint that is accessible from
+the worker (primary) subnetwork. Previously, to extend worker connectivity to
+other subnets within the same VPC network, you had to specify
+these subnets in the cluster configuration. The `additionalSubnets` field is now
+ignored, and this configuration setting has been removed from the
+Google Cloud console. For more information, see
+[Worker (primary) subnet](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/connect-cluster/create-connect-cluster#worker-subnet).
+
+### Deprecated
+
+The `additionalSubnets` field in the
+[`ConnectNetworkConfig`](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/reference/rest/v1/projects.locations.connectClusters#connectnetworkconfig)
+REST API resource is deprecated. Connect cluster workers can reach any endpoint
+that is accessible from `primarySubnet` subnetwork.
+
+---
 ## 2025-10-01
 
 ### Feature

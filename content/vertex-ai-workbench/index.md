@@ -1,5 +1,16 @@
 # Vertex AI Workbench
 
+## 2025-11-21
+
+### Feature
+
+**M136 release**
+
+The M136 release of Vertex AI Workbench instances includes the following:
+
+* Patched an issue where image outputs aren't displayed properly.
+
+---
 ## 2025-11-17
 
 ### Feature

@@ -2,19 +2,86 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Looker</title>
   <subtitle>Changelog for Google Cloud product: Looker</subtitle>
-  <updated>2025-11-19T00:00:00+00:00</updated>
+  <updated>2025-12-03T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:looker</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/looker/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-11-19:feature:0</id>
-    <published>2025-11-19T00:00:00+00:00</published>
-    <updated>2025-11-19T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Now available in preview, the <a href="https://docs.cloud.google.com/looker/docs/exploring-self-service"><strong>Self-service Explore</strong></a> feature lets Looker users upload CSV, XLS, and XLSX files to Looker and then query and visualize the data in a Looker Explore without needing to configure a LookML model or set up Git version control.</p>]]></content>
-    <summary>Looker users can now upload spreadsheet files and explore the data without LookML or Git setup.</summary>
-    <title>Feature: Self-service Explore Now in Preview</title>
+    <id>urn:github:multani:gcp-changelog:looker:2025-12-03:other:0</id>
+    <published>2025-12-03T00:00:00+00:00</published>
+    <updated>2025-12-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>For Looker instances that are running Looker 25.20 or later, admins can now <a href="https://docs.cloud.google.com/looker/docs/admin-panel-platform-actions">test the connection</a> between their instance and the Looker Action Hub. This option is available only for the Looker Action Hub. It is not available for <a href="https://docs.cloud.google.com/looker/docs/action-hub#setting_up_a_local_action_hub_server">custom action hubs</a>.</p>]]></content>
+    <summary>Admins of Looker instances running 25.20 or later can now test the connection to the Looker Action Hub directly from the admin panel. This feature is exclusive to the Looker Action Hub and does not apply to custom action hubs.</summary>
+    <title>Other: Test Looker Action Hub Connection</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-12-03:feature:1</id>
+    <published>2025-12-03T00:00:00+00:00</published>
+    <updated>2025-12-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Now available in preview, the <a href="https://docs.cloud.google.com/looker/docs/exploring-self-service"><strong>Self-service Explore</strong></a> feature lets Looker users upload CSV, XLS, and XLSX files to Looker and then query and visualize the data in a Looker Explore without needing to configure a LookML model or set up Git version control. In addition, <a href="https://docs.cloud.google.com/looker/docs/content-certification">content certification</a> is supported for self-service Explores.</p>]]></content>
+    <summary>Users can now upload spreadsheets to Looker and explore the data without LookML or Git setup.</summary>
+    <title>Feature: Self-service Explore</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-12-02:feature:0</id>
+    <published>2025-12-02T00:00:00+00:00</published>
+    <updated>2025-12-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Now available in preview, Looker can display a new <a href="https://docs.cloud.google.com/looker/docs/connected-sheets-quicklink"><strong>Connected Sheets</strong></a> option in the <strong>Explore actions</strong> menu. The <strong>Connected Sheets</strong> option opens Google Sheets and initiates a connection from Google Sheets to the Looker Explore. You can then build reports, pivot tables, or charts within the newly created Google Sheets using the fields available from the selected Looker Explore. The <strong>Connected Sheets</strong> quick link feature must be configured in the Google Cloud console and on your Looker instance. See the <a href="https://docs.cloud.google.com/looker/docs/connected-sheets-quicklink#admin-config">Connected Sheets quick link</a> documentation page for details.</p>]]></content>
+    <summary>Looker now offers a Connected Sheets option in preview, allowing you to easily connect to Google Sheets and build reports using Looker data directly within Sheets.</summary>
+    <title>Feature: Connected Sheets in Looker</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-12-01:feature:0</id>
+    <published>2025-12-01T00:00:00+00:00</published>
+    <updated>2025-12-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now use <a href="https://docs.cloud.google.com/looker/docs/looker-core-custom-domain-google-managed-certs">Google-managed certificates</a> for Looker (Google Cloud core) instances that use Private Service Connect connections. This feature simplifies custom domain configuration by using a <code>*.private.looker.app</code> domain, eliminating the need to manage your own SSL certificates. Instances may need to <a href="https://docs.cloud.google.com/looker/docs/looker-core-psc-migration">migrate</a> to the updated service attachment URI.</p>]]></content>
+    <summary>Looker now supports Google-managed certificates for instances using Private Service Connect. This simplifies custom domain setup with a `*.private.looker.app` domain, removing the need for manual SSL certificate management.</summary>
+    <title>Feature: New Google-managed certificates for Looker</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-12-01:feature:1</id>
+    <published>2025-12-01T00:00:00+00:00</published>
+    <updated>2025-12-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now use <a href="https://docs.cloud.google.com/looker/docs/looker-core-psc-overview#using_global_access">global access</a> with Looker (Google Cloud core) instances that use Private Service Connect connections. Instances may need to <a href="https://docs.cloud.google.com/looker/docs/looker-core-psc-migration">migrate</a> to the updated service attachment URI.</p>]]></content>
+    <summary>Looker instances using Private Service Connect now support Global Access. Migration to the updated service attachment URI may be required.</summary>
+    <title>Feature: Global Access Now Available for Looker PSC</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-12-01:feature:2</id>
+    <published>2025-12-01T00:00:00+00:00</published>
+    <updated>2025-12-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Looker–Tableau BI Connector is now supported for Tableau Cloud, so that you can use a Looker Explore as a data source in Tableau Cloud. See the <a href="https://docs.cloud.google.com/looker/docs/tableau-connector#cloud">Looker–Tableau BI Connector</a> documentation page for more information.</p>
+<p>To use the Looker–Tableau BI Connector with Tableau Cloud, your admin must configure your Looker instance and your Tableau Cloud instance as described on the <a href="https://docs.cloud.google.com/looker/docs/tableau-admin#cloud">Administering Tableau to Looker connections</a> documentation page.</p>]]></content>
+    <summary>The Looker–Tableau BI Connector now supports Tableau Cloud, allowing you to use Looker Explores as a data source. This feature enables seamless integration between the two platforms for enhanced data analysis.</summary>
+    <title>Feature: Looker–Tableau BI Connector Now Available for Tableau Cloud</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-11-26:deprecated:0</id>
+    <published>2025-11-26T00:00:00+00:00</published>
+    <updated>2025-11-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The DataRobot <a href="https://docs.cloud.google.com/looker/docs/actions-overview">action</a> will be deprecated on February 1, 2026. After that date, this action won't be available in the Looker Action Hub.</p>]]></content>
+    <summary>The DataRobot action will be deprecated on February 1, 2026, and will not be available in the Looker Action Hub after that date.</summary>
+    <title>Deprecated: DataRobot action deprecated</title>
   </entry>
   <entry>
     <author>
@@ -23,8 +90,8 @@
     <id>urn:github:multani:gcp-changelog:looker:2025-11-17:feature:0</id>
     <published>2025-11-17T00:00:00+00:00</published>
     <updated>2025-11-17T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The new <a href="https://docs.cloud.google.com/looker/docs/content-certification">content certification</a> feature, when enabled, lets trusted users certify Looker dashboards, Looks, and self-service Explores to indicate that the content has gone through a manual review and is certified as reliable and trustworthy. This lets other users identify reliable content and confidently use that data for decision-making.</p>]]></content>
-    <summary>Looker now allows trusted users to certify content like dashboards and Explores, ensuring reliability and trustworthiness for confident decision-making.</summary>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/content-certification">content certification</a> feature, when enabled, lets trusted users certify Looker dashboards and Looks to indicate that the content has gone through a manual review and is certified as reliable and trustworthy. This lets other users identify reliable content and confidently use that data for decision-making. <strong>Note:</strong> This item was updated on November 20, 2025.</p>]]></content>
+    <summary>Certify Looker dashboards and Looks to indicate that the content has gone through a manual review and is certified as reliable and trustworthy. This lets other users identify reliable content and confidently use that data for decision-making.</summary>
     <title>Feature: Content Certification</title>
   </entry>
   <entry>
@@ -51,6 +118,17 @@
     <content type="html"><![CDATA[<p>You can now schedule a daily, zero-downtime export for Looker (Google Cloud core) instances. For more information, see the <a href="https://docs.cloud.google.com/looker/docs/looker-core-scheduled-export">Create a scheduled export job for a Looker (Google Cloud core) instance</a> documentation page. This feature is being rolled out and will appear in all instances within a few weeks.</p>]]></content>
     <summary>Looker now supports scheduled daily exports, ensuring zero downtime. This feature is rolling out over the next few weeks.</summary>
     <title>Feature: Scheduled Export for Looker</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2025-11-19:feature:0</id>
+    <published>2025-11-19T00:00:00+00:00</published>
+    <updated>2025-11-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Now available in preview, the <a href="https://docs.cloud.google.com/looker/docs/exploring-self-service"><strong>Self-service Explore</strong></a> feature lets Looker users upload CSV, XLS, and XLSX files to Looker and then query and visualize the data in a Looker Explore without needing to configure a LookML model or set up Git version control.</p>]]></content>
+    <summary>Looker users can now upload spreadsheet files and explore the data without LookML or Git setup.</summary>
+    <title>Feature: Self-service Explore Now in Preview</title>
   </entry>
   <entry>
     <author>

@@ -461,6 +461,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Application design center <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../application-design-center/" class="dropdown-item">Application Design Center</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Application integration <b class="caret"></b>
                         </a>
 
@@ -977,6 +989,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Cloud tpu <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../cloud-tpu/" class="dropdown-item">Cloud TPU</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Cloud trace <b class="caret"></b>
                         </a>
 
@@ -1308,6 +1332,18 @@
                             
   <li>
     <a href="../firestore-in-datastore-mode/" class="dropdown-item">Firestore in Datastore mode</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Gemini <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../gemini/" class="dropdown-item">Gemini</a>
   </li>
                         </ul>
                       </li>
@@ -2009,6 +2045,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Storage transfer service <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../storage-transfer-service/" class="dropdown-item">Storage Transfer Service</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Text to speech <b class="caret"></b>
                         </a>
 
@@ -2148,6 +2196,22 @@
 
 
 <h1 id="cloud-composer">Cloud Composer</h1>
+<h2 id="2025-11-24">2025-11-24</h2>
+<h3 id="issue">Issue</h3>
+<p>We discovered an issue that might impact the reporting of metrics in the
+following recently released Cloud Composer versions:</p>
+<ul>
+<li>composer-2.15.4-airflow-*</li>
+<li>composer-3-airflow-2.10.5-build.20</li>
+<li>composer-3-airflow-2.9.3-build.40</li>
+<li>composer-3-airflow-3.1.0-build.3</li>
+</ul>
+<p>To prevent additional environments from being affected, we have disabled the
+ability to upgrade existing environments to these versions and to create new
+environments using these versions. If your environment is already using one of
+these versions, you can continue to use it as usual. We are working to resolve
+the issue for all currently affected environments.</p>
+<hr />
 <h2 id="2025-11-17">2025-11-17</h2>
 <h3 id="changed">Changed</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
@@ -2333,7 +2397,7 @@ to version 17.2.0 in Cloud Composer 2 images and Cloud Composer 3 builds.</p>
 <p>For more information about changes, see the
 <a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html">apache-airflow-providers-google changelog</a> from version 17.1.0 to
 version 17.2.0.</p>
-<h3 id="issue">Issue</h3>
+<h3 id="issue_1">Issue</h3>
 <p><em>(Airflow 2.10.5)</em> CloudComposerDAGRunSensor is broken in the
 <code>apache-airflow-providers-google</code> package version 17.2.0. This package is used
 by Cloud Composer versions and builds with Airflow 2.10.5 available in this
@@ -2732,6 +2796,9 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-composer">Cloud Composer</a></li>
+          <li class="nav-item">
+            <a href="#2025-11-24" class="nav-link">2025-11-24</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-11-17" class="nav-link">2025-11-17</a>
           </li>

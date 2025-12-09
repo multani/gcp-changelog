@@ -1,5 +1,26 @@
 # Cloud SQL for MySQL
 
+## 2025-11-21
+
+### Feature
+
+To help prevent out-of-memory (OOM) events, you can enable managed buffer pool
+for Cloud SQL for MySQL 8.0 and later instances. When you enable managed buffer
+pool, Cloud SQL reduces the value of the
+`innodb_buffer_pool_size` configuration and frees up memory when memory usage
+is high, and the instance is in danger of an OOM event.
+After memory usage stabilizes at a lower value, MySQL increases the
+value of `innodb_buffer_pool_size` incrementally to its original value.
+
+To enable managed buffer pool, your Cloud SQL instance must use a
+maintenance version of [`[$MYSQL_VERSION].R20251004.01_07`](https://docs.cloud.google.com/sql/docs/mysql/maintenance-changelog/)
+or later. You can't enable managed buffer pool for instances that use a
+shared core or for instances that are running MySQL 5.6 or MySQL 5.7.
+
+For more information, see [Enable managed buffer pool](https://docs.cloud.google.com/sql/docs/mysql/optimize-high-memory-usage#enable-managed-buffer-pool).
+Support for managed buffer pool is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-11-18
 
 ### Feature

@@ -1,5 +1,36 @@
 # Cluster Toolkit
 
+## 2025-11-19
+
+### Feature
+
+Cluster Toolkit version v1.73.0 is available. This release adds support
+for the
+[GKE Inference Gateway](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/about-gke-inference-gateway)
+and adds a new blueprint for [A3
+High](https://docs.cloud.google.com/compute/docs/accelerator-optimized-machines#a3-vms) machines that
+automates the process of building a custom image with a TCPx-patched kernel for
+enhanced network performance. This version also includes an initial blueprint
+for [G4 machine types](https://docs.cloud.google.com/compute/docs/gpus#rtx-6000-gpus) and parameterized the
+gIB NCCL RDMA plugin installer in the `gke-a4x.yaml` blueprint. For more
+information about this release, see the [Release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/4857).
+
+---
+## 2025-11-13
+
+### Feature
+
+Cluster Toolkit version v1.72.0 is available. This release adds support
+for Google Cloud Managed Lustre as an optional storage solution for the
+`gke-tpu-v6-advanced` blueprint. This release also adds four example
+blueprints to support the deployment of Sycomp storage. In addition, this release makes
+improvements to the `gke-node-pool` module and `a4xhigh-slurm-blueprint.yaml`
+blueprint. For more information about this release, see the [Release
+announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/4841).
+
+---
 ## 2025-11-03
 
 ### Feature

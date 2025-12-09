@@ -1,5 +1,491 @@
 # Container Optimized OS
 
+## 2025-12-03
+
+### Changed
+
+
+
+### cos-dev-129-19407-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.57](https://cos.googlesource.com/third_party/kernel/+/7822213a1b8dcb569af2c00a17864a88564f013c ) | v27.5.1 | v2.1.4 | [See List](https://storage.googleapis.com/cos-tools/19407.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Upgraded vim & vim-core to version 9.1.1652. This fixes
+CVE-2025-53905, CVE-2025-53906, CVE-2025-9390.
+
+### Security
+
+Fixed CVE-2025-40212 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811538 -> 811490
+
+### Fixed
+
+Made the google-guest-agent more resilient to network link
+flakes.
+
+### Changed
+
+
+
+### cos-117-18613-439-49
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/9cc4ef0859f651ce461abf496563c71dd8ef2180 ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.439.49/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Upgraded vim & vim-core to version 9.1.1652. This fixes
+CVE-2025-53905, CVE-2025-53906, CVE-2025-9390.
+
+### Feature
+
+Added support for NVIDIA driver v580.105.08 and set it as the default version for NVIDIA\_RTX\_PRO\_6000, NVIDIA\_GB200, NVIDIA\_B200, and NVIDIA\_H200 GPU types.
+
+### Fixed
+
+Made the google-guest-agent more resilient to network link
+flakes.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811751 -> 811788
+
+### Changed
+
+
+
+### cos-121-18867-294-42
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/461127aa41e30d4006acf6ce6888982d7a641182 ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.294.42/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Upgraded vim & vim-core to version 9.1.1652. This fixes
+CVE-2025-53905, CVE-2025-53906, CVE-2025-9390.
+
+### Feature
+
+Added support for NVIDIA driver v580.105.08 and set it as the default version for NVIDIA\_RTX\_PRO\_6000, NVIDIA\_GB200, NVIDIA\_B200, and NVIDIA\_H200 GPU types.
+
+### Fixed
+
+Made the google-guest-agent more resilient to network link
+flakes.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811812 -> 811755
+
+### Changed
+
+
+
+### cos-125-19216-104-45
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/907f3d47b4cd729b87de8f40712f7f4d92c1e0ae ) | v27.5.1 | v2.1.4 | [See List](https://storage.googleapis.com/cos-tools/19216.104.45/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Upgraded vim & vim-core to version 9.1.1652. This fixes
+CVE-2025-53905, CVE-2025-53906, CVE-2025-9390.
+
+### Fixed
+
+Made the google-guest-agent more resilient to network link
+flakes.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811428 -> 811530
+* Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 188034 250715 376068
+
+### Feature
+
+Added support for NVIDIA driver v580.105.08 and set it as the default version for all GPU types.
+
+---
+## 2025-12-02
+
+### Changed
+
+
+
+### cos-117-18613-439-45
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/9cc4ef0859f651ce461abf496563c71dd8ef2180 ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.439.45/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Fixed an issue in app-containers/runc that caused runc to
+use more file descriptors than intended.
+
+### Security
+
+Fixed CVE-2025-40196 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40201 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40160 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40179 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40190 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40194 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40176 in the Linux kernel.
+
+### Fixed
+
+Set the default NVIDIA driver version to v535.274.02 for GPU types which previously had a default major version of 535. This includes NVIDIA\_TESLA\_V100, NVIDIA\_TESLA\_A100, NVIDIA\_A100\_80GB, NVIDIA\_H100\_80GB, NVIDIA\_TESLA\_P100, NVIDIA\_L4, NVIDIA\_TESLA\_P4 and NVIDIA\_TESLA\_T4 GPU types.
+
+### Security
+
+Fixed CVE-2025-40183 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40178 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40200 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40198 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-apps/makedumpfile to v1.7.8.
+
+### Security
+
+Fixed CVE-2025-40186 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40206 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40129 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40125 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40173 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40169 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-b441cf3 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-60e6489 in the Linux Kernel.
+
+### Security
+
+Fixed CVE-2025-40153 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40167 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40123 in the Linux kernel.
+
+### Changed
+
+
+
+### cos-113-18244-521-39
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/2fccd796b687dd10fc40c794fafefdcc3af48570 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.39/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Fixed an issue in app-containers/runc that caused runc to
+use more file descriptors than intended.
+
+### Security
+
+Fixed CVE-2025-40179 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40201 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40125 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-60e6489 in the Linux Kernel.
+
+### Security
+
+Fixed CVE-2025-40176 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40186 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40173 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40123 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40200 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-b441cf3 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40183 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40167 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40194 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40178 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40190 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40198 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40153 in the Linux kernel.
+
+### Changed
+
+
+
+### cos-dev-129-19403-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.57](https://cos.googlesource.com/third_party/kernel/+/eb1853b46753585bf11d1ec589437af7463bf85d ) | v27.5.1 | v2.1.4 | [See List](https://storage.googleapis.com/cos-tools/19403.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Upgraded net-libs/libtirpc to v1.3.7-r2.
+
+### Security
+
+Fixed KCTF-60e6489 in the Linux Kernel.
+
+### Fixed
+
+Upgraded sys-apps/pv to v1.10.2.
+
+### Fixed
+
+Upgraded sys-process/procps to v4.0.5-r3.
+
+### Fixed
+
+Upgraded sys-apps/pv to v1.10.1.
+
+### Feature
+
+Enabled Software Watchdog as a module.
+
+### Security
+
+Fixed KCTF-b441cf3 in the Linux kernel.
+
+### Fixed
+
+Fixed an issue in app-containers/runc that caused runc to
+use more file descriptors than intended.
+
+### Feature
+
+Enabled KVM for COS ARM64.
+
+### Fixed
+
+Upgraded net-misc/rsync to v3.4.1-r1.
+
+### Fixed
+
+Upgraded net-misc/wget to v1.25.0-r1.
+
+### Changed
+
+
+
+### cos-121-18867-294-38
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/461127aa41e30d4006acf6ce6888982d7a641182 ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.294.38/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed KCTF-b441cf3 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40176 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40198 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40196 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-60e6489 in the Linux Kernel.
+
+### Feature
+
+Enabled KVM for COS ARM64.
+
+### Security
+
+Fixed CVE-2025-40173 in the Linux kernel.
+
+### Fixed
+
+Fixed an issue in app-containers/runc that caused runc to
+use more file descriptors than intended.
+
+### Fixed
+
+Set the default NVIDIA driver version to v535.274.02 for GPU types which previously had a default major version of 535. This includes NVIDIA\_TESLA\_V100, NVIDIA\_TESLA\_A100, NVIDIA\_A100\_80GB, NVIDIA\_H100\_80GB, NVIDIA\_TESLA\_P100, NVIDIA\_L4, NVIDIA\_TESLA\_P4 and NVIDIA\_TESLA\_T4 GPU types.
+
+### Security
+
+Fixed CVE-2025-40167 in the Linux kernel.
+
+### Changed
+
+
+
+### cos-125-19216-104-39
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/cb6e9768e9e55a0b6bba71db534b817294b0a3e5 ) | v27.5.1 | v2.1.4 | [See List](https://storage.googleapis.com/cos-tools/19216.104.39/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed KCTF-b441cf3 in the Linux kernel.
+
+### Fixed
+
+Upgraded net-misc/rsync to v3.4.1-r1.
+
+### Security
+
+Fixed CVE-2025-40212 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811512 -> 811428
+* Changed: net.ipv4.udp\_mem: 188034 250715 376068 -> 188034 250714 376068
+
+### Feature
+
+Enabled Software Watchdog as a module.
+
+### Fixed
+
+Fixed an issue in app-containers/runc that caused runc to
+use more file descriptors than intended.
+
+### Feature
+
+Enabled KVM for COS ARM64.
+
+### Security
+
+Fixed CVE-2025-22105 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-60e6489 in the Linux Kernel.
+
+---
 ## 2025-11-17
 
 ### cos-dev-129-19386-0-0
@@ -9,9 +495,9 @@
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.12.57](https://cos.googlesource.com/third_party/kernel/+/413862f701596dfab09c84e125397b3b845ce69a ) | v27.5.1 | v2.1.4 | [See List](https://storage.googleapis.com/cos-tools/19386.0.0/lakitu/gpu_driver_versions.textproto) |
 
-### Changed
+### Fixed
 
-Updated app-containers/runc to v1.3.3.
+Updated the OS Login package to version 20251022.00.
 
 ### Feature
 
@@ -21,9 +507,9 @@ Added support for the Lustre 2.14.0\_p224 drivers.
 
 Updated the Google OS Config Agent package to version 20250522.00.
 
-### Fixed
+### Changed
 
-Updated the OS Login package to version 20251022.00.
+Updated app-containers/runc to v1.3.3.
 
 ### Changed
 
@@ -31,76 +517,12 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 811473 -> 811420
 
-### Fixed
-
-Backported various TCPDirect networking fixes.
-
-### cos-121-18867-294-25
-
-|  |  |  |  |
-| --- | --- | --- | --- |
-| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
-| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/f0525bbb36b011008aab643b94ed1c0a0a074c9a ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.294.25/lakitu/gpu_driver_versions.textproto) |
-
-### Changed
-
-Updated app-containers/runc to v1.2.8.
-
-### Feature
-
-Added support for the Lustre 2.14.0\_p224 drivers.
-
-### Fixed
-
-Backported an upstream commit to fix high CPU usage when
-trying to find suitable blocks in ext4 fs.
-
-### Changed
-
-Runtime sysctl changes:
-
-* Changed: fs.file-max: 811813 -> 811764
-
-### cos-117-18613-439-28
-
-|  |  |  |  |
-| --- | --- | --- | --- |
-| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
-| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/abdaaf3810727d7eca8e16a38c8c07011061c021 ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.439.28/lakitu/gpu_driver_versions.textproto) |
-
-### Changed
-
-Updated app-containers/runc to v1.2.8.
-
-### Feature
-
-Added support for the Lustre 2.14.0\_p224 drivers.
-
-### Fixed
-
-Backported an upstream commit to fix high CPU usage when
-trying to find suitable blocks in ext4 fs.
-
-### Changed
-
-Runtime sysctl changes:
-
-* Changed: fs.file-max: 811751 -> 811818
-
 ### cos-113-18244-521-23
 
 |  |  |  |  |
 | --- | --- | --- | --- |
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/dccb9898113653219d0460cefd449aaddc8bb0b5 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.23/lakitu/gpu_driver_versions.textproto) |
-
-### Changed
-
-Updated app-containers/runc to v1.2.8.
-
-### Security
-
-Fixed CVE-2025-40040 in the Linux kernel.
 
 ### Security
 
@@ -112,6 +534,66 @@ Runtime sysctl changes:
 
 * Changed: fs.file-max: 812054 -> 812007
 
+### Security
+
+Fixed CVE-2025-40040 in the Linux kernel.
+
+### Changed
+
+Updated app-containers/runc to v1.2.8.
+
+### cos-117-18613-439-28
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/abdaaf3810727d7eca8e16a38c8c07011061c021 ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.439.28/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Added support for the Lustre 2.14.0\_p224 drivers.
+
+### Fixed
+
+Backported an upstream commit to fix high CPU usage when
+trying to find suitable blocks in ext4 fs.
+
+### Changed
+
+Updated app-containers/runc to v1.2.8.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811751 -> 811818
+
+### cos-121-18867-294-25
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/f0525bbb36b011008aab643b94ed1c0a0a074c9a ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.294.25/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Added support for the Lustre 2.14.0\_p224 drivers.
+
+### Fixed
+
+Backported an upstream commit to fix high CPU usage when
+trying to find suitable blocks in ext4 fs.
+
+### Changed
+
+Updated app-containers/runc to v1.2.8.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811813 -> 811764
+
 ### cos-125-19216-104-25
 
 |  |  |  |  |
@@ -119,15 +601,19 @@ Runtime sysctl changes:
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/25173adb441e4e80597a30870c7d83ef1aca88e3 ) | v27.5.1 | v2.1.4 | [See List](https://storage.googleapis.com/cos-tools/19216.104.25/lakitu/gpu_driver_versions.textproto) |
 
+### Fixed
+
+Backported various TCPDirect networking fixes.
+
+### Fixed
+
+Backported various TCPDirect networking fixes.
+
 ### Changed
 
 Runtime sysctl changes:
 
 * Changed: fs.file-max: 811458 -> 811512
-
-### Fixed
-
-Backported various TCPDirect networking fixes.
 
 ---
 ## 2025-11-14
@@ -141,17 +627,17 @@ Backported various TCPDirect networking fixes.
 
 ### Changed
 
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811489 -> 811458
+
+### Changed
+
 Updated app-containers/runc to v1.3.3.
 
 ### Fixed
 
 Fixed a bug where setting MTU above 9000 on ARM systems with a 64k page size would cause IDPF networking to fail.
-
-### Changed
-
-Runtime sysctl changes:
-
-* Changed: fs.file-max: 811489 -> 811458
 
 ---
 ## 2025-11-11
@@ -163,49 +649,9 @@ Runtime sysctl changes:
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.12.57](https://cos.googlesource.com/third_party/kernel/+/c3056f1c3c4cadcbfa78777829fd19407ddc9e62 ) | v27.5.1 | v2.1.4 | [See List](https://storage.googleapis.com/cos-tools/19370.0.0/lakitu/gpu_driver_versions.textproto) |
 
-### Changed
-
-Updated app-admin/sosreport to v4.10.1. Enabled containerd stack dump by default.
-
-### Changed
-
-Updated app-containers/containerd to v2.1.4.
-
-### Changed
-
-Updated app-containers/runc to v1.3.2.
-
-### Changed
-
-Updated the Linux kernel to v6.12.57.
-
-### Changed
-
-Updated the Linux kernel to v6.12.56.
-
-### Feature
-
-Enabled HTCP TCP congestion control algorithm as a module.
-
-### Feature
-
-Added support for SCSI logging.
-
 ### Fixed
 
-Made CX-8 NIC naming order deterministic.
-
-### Fixed
-
-Upgraded sys-apps/makedumpfile to v1.7.8.
-
-### Fixed
-
-Upgraded sys-auth/pambase to v20251104.
-
-### Fixed
-
-Updated app-containers/cri-tools to 1.32.0.
+Upgraded dev-python/coverage to v7.10.7.
 
 ### Fixed
 
@@ -217,11 +663,33 @@ Upgraded app-emulation/cloud-init to v25.1.4.
 
 ### Fixed
 
-Upgraded chromeos-base/google-breakpad to v2025.10.31.183851-r257.
+Upgraded sys-process/audit to 4.0.2-r1.
 
 ### Fixed
 
-Upgraded sys-process/audit to 4.0.2-r1.
+Enabled multiport support for CX-8 devices.
+
+### Changed
+
+Updated app-admin/sosreport to v4.10.1. Enabled containerd stack dump by default.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811384 -> 811473
+
+### Fixed
+
+Upgraded sys-apps/makedumpfile to v1.7.8.
+
+### Changed
+
+Updated the Linux kernel to v6.12.57.
+
+### Feature
+
+Enabled HTCP TCP congestion control algorithm as a module.
 
 ### Fixed
 
@@ -229,7 +697,11 @@ Upgraded dev-libs/nss to 3.117 and dev-libs/nspr to 4.37.
 
 ### Fixed
 
-Upgraded sys-libs/libcap to v2.77.
+Fixed bcache latency spikes.
+
+### Changed
+
+Updated app-containers/containerd to v2.1.4.
 
 ### Fixed
 
@@ -237,15 +709,319 @@ Upgraded net-libs/gnutls to v3.8.10 and dev-libs/nettle to 3.10.2.
 
 ### Fixed
 
-Upgraded dev-python/coverage to v7.10.7.
+Upgraded sys-auth/pambase to v20251104.
+
+### Fixed
+
+Upgraded chromeos-base/google-breakpad to v2025.10.31.183851-r257.
+
+### Feature
+
+Added support for SCSI logging.
+
+### Fixed
+
+Fixed a bug where setting MTU above 9000 on ARM systems with a 64k page size would cause IDPF networking to fail.
+
+### Fixed
+
+Upgraded sys-libs/libcap to v2.77.
+
+### Security
+
+Fixed CVE-2025-31133, CVE-2025-52565, and CVE-2025-52881 in
+app-containers/runc.
+
+### Changed
+
+Updated app-containers/runc to v1.3.2.
+
+### Fixed
+
+Updated app-containers/cri-tools to 1.32.0.
+
+### Fixed
+
+Made CX-8 NIC naming order deterministic.
+
+### cos-125-19216-104-17
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/13ec0b222243e837d814745f08d4dc0a950c2cae ) | v27.5.1 | v2.1.4 | [See List](https://storage.googleapis.com/cos-tools/19216.104.17/lakitu/gpu_driver_versions.textproto) |
 
 ### Fixed
 
 Enabled multiport support for CX-8 devices.
 
+### Security
+
+Fixed CVE-2025-40083 in the Linux kernel.
+
+### Feature
+
+Added support for the Lustre 2.14.0\_p224 drivers.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811455 -> 811489
+* Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 188034 250715 376068
+
 ### Fixed
 
-Fixed a bug where setting MTU above 9000 on ARM systems with a 64k page size would cause IDPF networking to fail.
+Upgraded sys-apps/makedumpfile to v1.7.8.
+
+### Feature
+
+Enabled HTCP TCP congestion control algorithm as a module.
+
+### Fixed
+
+Fixed a race condition where unmounting file systems monitored by inotify or fanotify could result in kernel crash.
+
+### Changed
+
+Updated app-containers/containerd to v2.1.4.
+
+### Security
+
+Fixed CVE-2025-21833 in the Linux kernel.
+
+### Feature
+
+Added support for SCSI logging.
+
+### Fixed
+
+Made CX-8 NIC naming order deterministic.
+
+### cos-113-18244-521-16
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/0117e0608187f5d5d59bf6e2988f85d525f5804c ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.16/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-40070 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-apps/makedumpfile to v1.7.8.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812016 -> 812054
+
+### Security
+
+Fixed CVE-2025-40103 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40105 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40099 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40078 in the Linux kernel.
+
+### cos-121-18867-294-17
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/252528959f435be8e041c5ee345086497e3458fb ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.294.17/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811792 -> 811813
+
+### Security
+
+Fixed CVE-2025-40083 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-apps/makedumpfile to v1.7.8.
+
+### Fixed
+
+Fixed a race condition where unmounting file systems monitored by inotify or fanotify could result in kernel crash.
+
+### Fixed
+
+Upgraded sys-apps/pv to v1.9.44.
+
+### Security
+
+Fixed CVE-2025-40078 in the Linux kernel.
+
+### cos-117-18613-439-22
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/5262602406665b6083011415598c3b19ed26e392 ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.439.22/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-40083 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811733 -> 811751
+
+### Fixed
+
+Fixed a race condition where unmounting file systems monitored by inotify or fanotify could result in kernel crash.
+
+### Security
+
+Fixed CVE-2025-40042 in the Linux kernel.
+
+---
+## 2025-11-07
+
+### Changed
+
+
+
+### cos-117-18613-439-16
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/0ed8bd0d9c0b687b26f66a72743fa7f3f6f8088c ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.439.16/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811728 -> 811733
+
+### Security
+
+Fixed CVE-2025-40105 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40052 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40049 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40099 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40103 in the Linux kernel.
+
+### Fixed
+
+Fixed bcache latency spikes.
+
+### Security
+
+Fixed CVE-2025-40035 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-31133, CVE-2025-52565, and CVE-2025-52881 in
+app-containers/runc.
+
+### Security
+
+Fixed CVE-2025-40040 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40044 in the Linux kernel.
+
+### Changed
+
+
+
+### cos-113-18244-521-11
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/75b1ce1ac39b0f103f0777f2199218595c927472 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.11/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-40049 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40027 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40026 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40035 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-31133, CVE-2025-52565, and CVE-2025-52881 in
+app-containers/runc.
+
+### Security
+
+Fixed CVE-2025-40042 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812007 -> 812016
+
+### Security
+
+Fixed CVE-2025-40044 in the Linux kernel.
+
+### Changed
+
+
+
+### cos-121-18867-294-12
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/10660c0131fbccaab609fca4aad9a134ebe20adc ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.294.12/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-40105 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40099 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40103 in the Linux kernel.
 
 ### Fixed
 
@@ -260,156 +1036,37 @@ app-containers/runc.
 
 Runtime sysctl changes:
 
-* Changed: fs.file-max: 811384 -> 811473
+* Changed: fs.file-max: 811785 -> 811792
 
-### cos-125-19216-104-17
+### Security
+
+Fixed CVE-2025-40040 in the Linux kernel.
+
+### Changed
+
+
+
+### cos-125-19216-104-5
 
 |  |  |  |  |
 | --- | --- | --- | --- |
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
-| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/13ec0b222243e837d814745f08d4dc0a950c2cae ) | v27.5.1 | v2.1.4 | [See List](https://storage.googleapis.com/cos-tools/19216.104.17/lakitu/gpu_driver_versions.textproto) |
-
-### Changed
-
-Updated app-containers/containerd to v2.1.4.
-
-### Feature
-
-Added support for the Lustre 2.14.0\_p224 drivers.
-
-### Feature
-
-Enabled HTCP TCP congestion control algorithm as a module.
-
-### Feature
-
-Added support for SCSI logging.
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/a87c94f53218718f1811c39c2e1a802d36f5e634 ) | v27.5.1 | v2.1.3 | [See List](https://storage.googleapis.com/cos-tools/19216.104.5/lakitu/gpu_driver_versions.textproto) |
 
 ### Fixed
 
-Upgraded sys-apps/makedumpfile to v1.7.8.
-
-### Fixed
-
-Made CX-8 NIC naming order deterministic.
-
-### Fixed
-
-Enabled multiport support for CX-8 devices.
-
-### Fixed
-
-Fixed a race condition where unmounting file systems monitored by inotify or fanotify could result in kernel crash.
+Fixed bcache latency spikes.
 
 ### Security
 
-Fixed CVE-2025-21833 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-40083 in the Linux kernel.
+Fixed CVE-2025-31133, CVE-2025-52565, and CVE-2025-52881 in
+app-containers/runc.
 
 ### Changed
 
 Runtime sysctl changes:
 
-* Changed: fs.file-max: 811455 -> 811489
-* Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 188034 250715 376068
-
-### cos-113-18244-521-16
-
-|  |  |  |  |
-| --- | --- | --- | --- |
-| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
-| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/0117e0608187f5d5d59bf6e2988f85d525f5804c ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.16/lakitu/gpu_driver_versions.textproto) |
-
-### Fixed
-
-Upgraded sys-apps/makedumpfile to v1.7.8.
-
-### Security
-
-Fixed CVE-2025-40078 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-40099 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-40103 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-40105 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-40070 in the Linux kernel.
-
-### Changed
-
-Runtime sysctl changes:
-
-* Changed: fs.file-max: 812016 -> 812054
-
-### cos-121-18867-294-17
-
-|  |  |  |  |
-| --- | --- | --- | --- |
-| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
-| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/252528959f435be8e041c5ee345086497e3458fb ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.294.17/lakitu/gpu_driver_versions.textproto) |
-
-### Fixed
-
-Upgraded sys-apps/makedumpfile to v1.7.8.
-
-### Fixed
-
-Upgraded sys-apps/pv to v1.9.44.
-
-### Fixed
-
-Fixed a race condition where unmounting file systems monitored by inotify or fanotify could result in kernel crash.
-
-### Security
-
-Fixed CVE-2025-40083 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-40078 in the Linux kernel.
-
-### Changed
-
-Runtime sysctl changes:
-
-* Changed: fs.file-max: 811792 -> 811813
-
-### cos-117-18613-439-22
-
-|  |  |  |  |
-| --- | --- | --- | --- |
-| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
-| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/5262602406665b6083011415598c3b19ed26e392 ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.439.22/lakitu/gpu_driver_versions.textproto) |
-
-### Fixed
-
-Fixed a race condition where unmounting file systems monitored by inotify or fanotify could result in kernel crash.
-
-### Security
-
-Fixed CVE-2025-40083 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-40042 in the Linux kernel.
-
-### Changed
-
-Runtime sysctl changes:
-
-* Changed: fs.file-max: 811733 -> 811751
+* Changed: fs.file-max: 811499 -> 811455
 
 ---
 ## 2025-11-05

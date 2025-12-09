@@ -1,5 +1,23 @@
 # Spanner
 
+## 2025-12-03
+
+### Changed
+
+String values in
+[Spanner Studio query results](https://docs.cloud.google.com/spanner/docs/manage-data-using-console#create-modify-query-data)
+are now enclosed in double quotes, providing a clear visual cue to differentiate
+string values from other data types. This enhancement is for display purposes
+only and does not affect how data is exported or accessed.
+
+---
+## 2025-11-20
+
+### Feature
+
+Query optimizer version 8 is now the [default version](https://docs.cloud.google.com/spanner/docs/query-optimizer/versions) for Spanner.
+
+---
 ## 2025-11-11
 
 ### Feature

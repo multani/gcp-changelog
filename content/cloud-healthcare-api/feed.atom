@@ -2,9 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Healthcare API</title>
   <subtitle>Changelog for Google Cloud product: Cloud Healthcare API</subtitle>
-  <updated>2025-11-03T00:00:00+00:00</updated>
+  <updated>2025-12-02T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-healthcare-api</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-healthcare-api/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-healthcare-api:2025-12-02:feature:0</id>
+    <published>2025-12-02T00:00:00+00:00</published>
+    <updated>2025-12-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>DICOM exports to BigQuery now support a new JSON schema option</li>
+<li>DICOM streaming to BigQuery now supports a new JSON schema option</li>
+<li>The new JSON schema option contains fewer columns and works more gracefully with the
+  33,000 public tags defined in the DICOM standard. For more information on the new schema,
+  see the <a href="https://cloud.google.com/healthcare-api/docs/reference/rest/v1/projects.locations.datasets.dicomStores#BigQueryDestination"><code>BigQueryDestination</code></a>
+  field.</li>
+</ul>]]></content>
+    <summary>DICOM exports and streaming to BigQuery now support a new JSON schema. This schema has fewer columns and handles DICOM's 33,000 public tags more effectively.</summary>
+    <title>Feature: New JSON schema for DICOM exports and streaming</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-healthcare-api:2025-12-02:feature:1</id>
+    <published>2025-12-02T00:00:00+00:00</published>
+    <updated>2025-12-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>DICOM streaming to BigQuery using the new JSON schema now supports <a href="https://docs.cloud.google.com/bigquery/docs/change-data-capture">Change Data Capture</a></li>
+<li>For more information on enabling change data capture, see the
+  <a href="https://cloud.google.com/healthcare-api/docs/reference/rest/v1beta1/projects.locations.datasets.dicomStores#BigQueryDestination"><code>BigQueryDestination</code></a>
+  field.</li>
+</ul>]]></content>
+    <summary>The DICOM streaming to BigQuery feature now supports Change Data Capture, allowing for more robust data management and analysis.</summary>
+    <title>Feature: DICOM streaming to BigQuery now supports Change Data Capture</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

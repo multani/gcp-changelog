@@ -2,26 +2,58 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Guest Environment</title>
   <subtitle>Changelog for Google Cloud product: Guest Environment</subtitle>
-  <updated>2025-11-13T00:00:00+00:00</updated>
+  <updated>2025-11-20T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:guest-environment</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/guest-environment/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:guest-environment:2025-11-13:feature:0</id>
-    <published>2025-11-13T00:00:00+00:00</published>
-    <updated>2025-11-13T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Version <code>20251107.01</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a>
-is now available.</p>]]></content>
-    <summary>Version 20251107.01 of the guest agent is now available.</summary>
-    <title>Feature: Guest agent update available</title>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2025-11-20:feature:0</id>
+    <published>2025-11-20T00:00:00+00:00</published>
+    <updated>2025-11-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20251120.01</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a> is
+now available for Windows only. This version includes the following fix:</p>
+<ul>
+<li>Changes the start mode guest agent from <code>auto</code> to <code>delayed-auto</code> on
+  Windows Service Manager.</li>
+</ul>]]></content>
+    <summary>New version of the guest agent available for Windows. Includes a change to the service start mode.</summary>
+    <title>Feature: Guest agent updated</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:guest-environment:2025-11-13:fixed:1</id>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2025-11-17:fixed:0</id>
+    <published>2025-11-17T00:00:00+00:00</published>
+    <updated>2025-11-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20251115.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a>
+is now available and includes the following fixes:
+* Fixes an issue in the dynamic vLAN subsystem where the <code>dhclient</code> backend
+attempted to remove <code>netplan</code>'s vLAN NICs.
+* Fixes a crash loop in the plugin manager caused by its handling of plugin
+logs.</p>]]></content>
+    <summary>A new version of the guest agent is available, resolving a dynamic vLAN subsystem problem and a crash loop in the plugin manager.</summary>
+    <title>Fixed: Guest agent update addresses vLAN and plugin issues</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2025-11-17:feature:1</id>
+    <published>2025-11-17T00:00:00+00:00</published>
+    <updated>2025-11-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20251115.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a>
+is now available.</p>]]></content>
+    <summary>The latest version of the guest agent is available.</summary>
+    <title>Feature: Guest agent update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2025-11-13:fixed:0</id>
     <published>2025-11-13T00:00:00+00:00</published>
     <updated>2025-11-13T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Version <code>20251107.01</code> includes a fix for the
@@ -29,6 +61,18 @@ is now available.</p>]]></content>
 that prevented it from writing status logs and script output to Cloud Logging.</p>]]></content>
     <summary>A fix has been implemented for the startup script runner. This resolves an issue where status logs and script output were not being written to Cloud Logging.</summary>
     <title>Fixed: Startup script logging issue fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2025-11-13:feature:1</id>
+    <published>2025-11-13T00:00:00+00:00</published>
+    <updated>2025-11-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20251107.01</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a>
+is now available.</p>]]></content>
+    <summary>Version 20251107.01 of the guest agent is now available.</summary>
+    <title>Feature: Guest agent update available</title>
   </entry>
   <entry>
     <author>

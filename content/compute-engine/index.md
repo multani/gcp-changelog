@@ -1,5 +1,64 @@
 # Compute Engine
 
+## 2025-12-08
+
+### Feature
+
+**Preview**: VM Extension Manager lets you manage Compute Engine
+guest agent extensions on your virtual machines (VMs). You can use VM Extension Manager to install and manage extensions, such as Ops Agent and Agent for SAP, on your
+Compute Engine VMs at scale, without connecting to each VM.
+
+Use VM Extension Manager to create policies that install extensions on
+your VMs. You can install extensions based on a specific criteria, such as VM labels,
+for both existing and new VMs that match the criteria. VM Extension Manager
+automates the lifecycle of extensions across
+your entire fleet of VMs and monitors their health status while they are running.
+
+For more information, see the following:
+
+* [About VM Extension Manager](https://docs.cloud.google.com/compute/docs/vm-extensions/about-vm-extension-manager)
+* [Install VM extensions by creating extension policies](https://docs.cloud.google.com/compute/docs/vm-extensions/create-extension-policy)
+* [Manage VM extensions by using extension policies](https://docs.cloud.google.com/compute/docs/vm-extensions/manage-vm-extensions)
+
+---
+## 2025-11-26
+
+### Issue
+
+C4 machine type virtual machine (VM) instances running on sole tenant nodes
+might encounter unexpected VM terminations due to host errors or VM
+creation failures. For more information, see
+[known issues](https://docs.cloud.google.com/compute/docs/troubleshooting/known-issues#c4-oom-errors).
+
+---
+## 2025-11-24
+
+### Feature
+
+**Public Preview**: You can now access the VM metadata server using IPv6 connectivity
+from single-stack IPv6 VM instances. For more information, see
+[About VM metadata](https://docs.cloud.google.com/compute/docs/metadata/overview).
+
+---
+## 2025-11-19
+
+### Fixed
+
+For the Windows operating system, gVNIC driver version 2.0.15 is
+available.
+
+This version fixes the handling for highly fragmented TSO packets. Without this
+updated driver version, you might experience intermittent network
+connectivity loss on Windows VMs that use any Compute Engine machine types.
+The affected versions are 2.0.7 - 2.0.14.
+
+Symptoms include ARP resolution failures and an inability to reach local
+subnet IPs, including the metadata server. We recommend upgrading your Windows
+instances to this latest version of the driver. To learn about upgrading, read
+the [Windows components](https://docs.cloud.google.com/compute/docs/images/guest-environment#windows-components)
+section of the Guest environment documentation.
+
+---
 ## 2025-11-18
 
 ### Feature
@@ -27,17 +86,6 @@ For more information about target distribution shapes, see
 
 ---
 ## 2025-11-13
-
-### Feature
-
-Version `20251107.01` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)
-is now available.
-
-### Fixed
-
-Version `20251107.01` includes a fix for the
-[Startup script runner](compute/docs/instances/startup-scripts) component
-that prevented it from writing status logs and script output to Cloud Logging.
 
 ### Feature
 

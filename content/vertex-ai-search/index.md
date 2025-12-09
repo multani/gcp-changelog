@@ -1,5 +1,55 @@
 # Vertex AI Search
 
+## 2025-11-24
+
+### Feature
+
+**Vertex AI Search: Natural language query filters (GA)**
+
+For queries on structured data stores, the natural language queries can be
+reformulated as filters and a residual query. For example, "Find a coffee shop
+serving banana bread" becomes `"query": "banana bread", "filter": "type":
+ANY("cafe")`.
+
+The natural-language query understanding feature only applies to custom search
+apps attached to a single, structured, data store.
+
+By default, a hard restriction filter is applied, but a softer, boost-like
+filter can be used instead.
+
+This feature is generally available (GA). For more information, see [Filter with
+natural language
+understanding](https://docs.cloud.google.com/generative-ai-app-builder/docs/natural-language-queries).
+
+---
+## 2025-11-21
+
+### Feature
+
+**Vertex AI Search: Allowlist fields for natural language query understanding**
+
+You can specify an allowlist of fields to be used for filter extraction. If you
+have some fields, perhaps for internal use, that you don't want to be used in
+filters, then specify an allowlist to restrict the fields that can be used.
+
+For more information, see [Specify fields for natural-language
+queries](https://docs.cloud.google.com/generative-ai-app-builder/docs/natural-language-queries#search-nl-allowlist).
+
+---
+## 2025-11-20
+
+### Feature
+
+**Vertex AI Search: Updated file size restrictions for unstructured data**
+
+The file size restrictions for unstructured data import have been unified. For
+unstructured data, you can import files up to 200 MB regardless of the
+parser type.
+
+For more information, see [Unstructured
+data](https://docs.cloud.google.com/generative-ai-app-builder/docs/prepare-data#unstructured).
+
+---
 ## 2025-11-14
 
 ### Feature

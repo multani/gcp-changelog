@@ -1,5 +1,59 @@
 # Dataproc
 
+## 2025-12-05
+
+### Feature
+
+`dataproc-ml` is available by default in `2.3` `-ml` images.
+
+### Announcement
+
+New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions):
+
+* 2.0.155-debian10, 2.0.155-ubuntu18, 2.0.155-rocky8
+* 2.1.104-debian11, 2.1.104-ubuntu20, 2.1.104-ubuntu20-arm, 2.1.104-rocky8
+* 2.2.72-debian12, 2.2.72-ubuntu22, 2.2.72-ubuntu22-arm, 2.2.72-rocky9
+* 2.3.19-debian12, 2.3.19-ubuntu22, 2.3.19-ubuntu22-arm, 2.3.19-ml-ubuntu22, 2.3.19-rocky9
+
+---
+## 2025-12-04
+
+### Announcement
+
+**Serverless for Apache Spark:** Runtime version [3.0](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-3.0) is now generally available. This version simplifies onboarding, improves reliability, reduces startup latency, and adds support for Spark 4.0.
+
+* Features and improvements:
+
+  + Regional and multi-zonal workloads are used by default to increase obtainability of compute resources
+  + Faster startup than previous runtimes
+  + Fast resource cleanup that allows faster release of VPC IPs after workload completion
+  + End-user credentials are used for all workloads by default
+  + New `bigquery` Spark catalog, pre-configured for out-of-the-box BigQuery
+    native table interactions
+  + New Spark Serverless-specific IAM roles
+  + New `dataproc-rm.googleapis.com` API enablement is required
+
+---
+## 2025-11-22
+
+### Changed
+
+**Dataproc on Compute Engine**: Updated Cloud Storage connector:
+
+* Updated to `3.1.10` in image version `2.3.18`.
+* Updated to `3.0.15` in image version `2.2.71`.
+* Updated to `hadoop3-2.2.30` in image versions `2.1.103` and `2.0.154`.
+
+### Announcement
+
+New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters):
+
+* 2.0.154-debian10, 2.0.154-ubuntu18, 2.0.154-rocky8
+* 2.1.103-debian11, 2.1.103-ubuntu20, 2.1.103-ubuntu20-arm, 2.1.103-rocky8
+* 2.2.71-debian12, 2.2.71-ubuntu22, 2.2.71-ubuntu22-arm, 2.2.71-rocky9
+* 2.3.18-debian12, 2.3.18-ubuntu22, 2.3.18-ubuntu22-arm, 2.3.18-ml-ubuntu22, 2.3.18-rocky9
+
+---
 ## 2025-11-13
 
 ### Announcement

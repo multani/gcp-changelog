@@ -1,21 +1,49 @@
 {
   "name": "Guest Environment",
   "entries": {
-    "2025-11-13": [
+    "2025-11-20": [
       {
         "kind": "Feature",
-        "content": "Version `20251107.01` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)\nis now available.",
+        "content": "Version `20251120.01` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent) is\nnow available for Windows only. This version includes the following fix:\n\n* Changes the start mode guest agent from `auto` to `delayed-auto` on\n  Windows Service Manager.",
         "summary": {
-          "title": "Guest agent update available",
-          "summary": "Version 20251107.01 of the guest agent is now available."
+          "title": "Guest agent updated",
+          "summary": "New version of the guest agent available for Windows. Includes a change to the service start mode."
+        }
+      }
+    ],
+    "2025-11-17": [
+      {
+        "kind": "Fixed",
+        "content": "Version `20251115.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)\nis now available and includes the following fixes:\n\\* Fixes an issue in the dynamic vLAN subsystem where the `dhclient` backend\nattempted to remove `netplan`'s vLAN NICs.\n\\* Fixes a crash loop in the plugin manager caused by its handling of plugin\nlogs.",
+        "summary": {
+          "title": "Guest agent update addresses vLAN and plugin issues",
+          "summary": "A new version of the guest agent is available, resolving a dynamic vLAN subsystem problem and a crash loop in the plugin manager."
         }
       },
+      {
+        "kind": "Feature",
+        "content": "Version `20251115.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)\nis now available.",
+        "summary": {
+          "title": "Guest agent update",
+          "summary": "The latest version of the guest agent is available."
+        }
+      }
+    ],
+    "2025-11-13": [
       {
         "kind": "Fixed",
         "content": "Version `20251107.01` includes a fix for the\n[Startup script runner](compute/docs/instances/startup-scripts) component\nthat prevented it from writing status logs and script output to Cloud Logging.",
         "summary": {
           "title": "Startup script logging issue fixed",
           "summary": "A fix has been implemented for the startup script runner. This resolves an issue where status logs and script output were not being written to Cloud Logging."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Version `20251107.01` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)\nis now available.",
+        "summary": {
+          "title": "Guest agent update available",
+          "summary": "Version 20251107.01 of the guest agent is now available."
         }
       }
     ],

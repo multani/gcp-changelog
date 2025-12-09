@@ -1,6 +1,26 @@
 {
   "name": "Cloud Load Balancing",
   "entries": {
+    "2025-12-03": [
+      {
+        "kind": "Feature",
+        "content": "**Regular expressions matchers in host and route rules in URL maps**\n\nYou can now use regular expressions to configure more flexible and precise\ntraffic routing rules within URL maps for Application Load Balancer. This feature\nlets you leverage the power of RE2 syntax for matching on:\n\n* **Route rules**: Within `pathMatchers`, the `matchRules` array now supports a\n  `regexMatch` field to validate the URL path against a specified regex pattern.\n* **Header matches**: Within `matchRules`, the `headerMatches` array now\n  supports a `regexMatch` field for pattern matching against HTTP header values.\n* **Query parameter matches**: Within `matchRules`, the `queryParameterMatches`\n  array now supports a `regexMatch` field for pattern matching against HTTP\n  query parameters values.\n\nThis feature is available for the following load balancers:\n\n* Regional internal Application Load Balancer\n* Cross-region internal Application Load Balancer\n* Regional external Application Load Balancer\n\nFor more details on usage and syntax, see [URL map concepts: Regular expressions\nmatchers in host and route\nrules](https://docs.cloud.google.com/load-balancing/docs/url-map-concepts#regex-support).\n\nThis feature is in **Preview.**",
+        "summary": {
+          "title": "Flexible traffic routing with regex",
+          "summary": "New regex matchers for host and route rules in URL maps enhance Application Load Balancer's traffic routing capabilities. This allows for more precise matching on URL paths, headers, and query parameters using RE2 syntax."
+        }
+      }
+    ],
+    "2025-12-02": [
+      {
+        "kind": "Feature",
+        "content": "Backend mutual TLS (mTLS) and backend authenticated TLS are now\n**Generally available** for the following regional Application Load Balancers:\n\n* Regional external Application Load Balancers\n* Regional internal Application Load Balancers\n\nThis update complements existing support for global external Application Load Balancers,\nallowing you to enforce bidirectional identity verification\nacross your regional deployments.\n\nFor details, see the following:\n\n* [Backend mTLS overview](https://docs.cloud.google.com/load-balancing/docs/backend-authenticated-tls-backend-mtls)\n* [Set up backend authenticated TLS](https://docs.cloud.google.com/load-balancing/docs/backend-authenticated-tls-setup)\n* [Set up backend mTLS](https://docs.cloud.google.com/load-balancing/docs/backend-mtls-setup)",
+        "summary": {
+          "title": "New mTLS support for regional Application Load Balancers",
+          "summary": "Backend mutual TLS (mTLS) and backend authenticated TLS are now Generally Available for regional external and internal Application Load Balancers. This allows for bidirectional identity verification across regional deployments, complementing existing support for global external Application Load Balancers."
+        }
+      }
+    ],
     "2025-11-04": [
       {
         "kind": "Feature",

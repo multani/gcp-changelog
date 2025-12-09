@@ -1,6 +1,35 @@
 # Generative AI on Vertex AI
 
+## 2025-11-24
+
+### Feature
+
+**Anthropic's Claude Opus 4.5**
+
+[Claude Opus 4.5](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/partner-models/claude/opus-4-5)
+is available in Model Garden.
+
+---
 ## 2025-11-17
+
+### Announcement
+
+**LearnLM in Gemini**
+
+The LearnLM model is no longer a separate offering or listing on AI Studio as
+[LearnLM capabilities have been integrated into the latest Gemini models (starting with Gemini 2.5)](https://blog.google/outreach-initiatives/education/google-gemini-learnlm-update/).
+
+Built in collaboration with experts in education,
+[LearnLM](https://cloud.google.com/solutions/learnlm) represents our
+capabilities fine-tuned for learning informed by rigorous research. These
+advancements and improvements are available directly in Gemini, enhancing
+educational experiences and applications.
+
+Pre-existing learnlm-2.0-flash-experimental projects will not remain functional
+past December 3, 2025 unless an alternative model is manually selected—we
+encourage developers to switch to the latest Gemini models and optimize their
+prompts by reviewing our
+[LearnLM Partner Prompt Guide](https://services.google.com/fh/files/misc/learnlm_prompt_guide.pdf).
 
 ### Feature
 

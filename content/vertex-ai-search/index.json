@@ -1,6 +1,36 @@
 {
   "name": "Vertex AI Search",
   "entries": {
+    "2025-11-24": [
+      {
+        "kind": "Feature",
+        "content": "**Vertex AI Search: Natural language query filters (GA)**\n\nFor queries on structured data stores, the natural language queries can be\nreformulated as filters and a residual query. For example, \"Find a coffee shop\nserving banana bread\" becomes `\"query\": \"banana bread\", \"filter\": \"type\":\nANY(\"cafe\")`.\n\nThe natural-language query understanding feature only applies to custom search\napps attached to a single, structured, data store.\n\nBy default, a hard restriction filter is applied, but a softer, boost-like\nfilter can be used instead.\n\nThis feature is generally available (GA). For more information, see [Filter with\nnatural language\nunderstanding](https://docs.cloud.google.com/generative-ai-app-builder/docs/natural-language-queries).",
+        "summary": {
+          "title": "Natural language query filters for Vertex AI Search",
+          "summary": "Vertex AI Search now supports natural language query filters for structured data stores. This feature allows users to search using conversational language, which is then translated into precise filters and queries. For example, \"Find a coffee shop serving banana bread\" can become a query with a filter for \"cafe\" type and a search for \"banana bread\". This enhances the usability of custom search applications built on single, structured data stores. The feature is now generally available."
+        }
+      }
+    ],
+    "2025-11-21": [
+      {
+        "kind": "Feature",
+        "content": "**Vertex AI Search: Allowlist fields for natural language query understanding**\n\nYou can specify an allowlist of fields to be used for filter extraction. If you\nhave some fields, perhaps for internal use, that you don't want to be used in\nfilters, then specify an allowlist to restrict the fields that can be used.\n\nFor more information, see [Specify fields for natural-language\nqueries](https://docs.cloud.google.com/generative-ai-app-builder/docs/natural-language-queries#search-nl-allowlist).",
+        "summary": {
+          "title": "Allowlist Fields for Enhanced Search",
+          "summary": "Control which fields are used for filters in natural language queries. Specify an allowlist to include only desired fields, excluding internal or irrelevant ones, for more precise search understanding."
+        }
+      }
+    ],
+    "2025-11-20": [
+      {
+        "kind": "Feature",
+        "content": "**Vertex AI Search: Updated file size restrictions for unstructured data**\n\nThe file size restrictions for unstructured data import have been unified. For\nunstructured data, you can import files up to 200 MB regardless of the\nparser type.\n\nFor more information, see [Unstructured\ndata](https://docs.cloud.google.com/generative-ai-app-builder/docs/prepare-data#unstructured).",
+        "summary": {
+          "title": "Updated file size restrictions for unstructured data",
+          "summary": "File size restrictions for unstructured data import have been unified to 200 MB, regardless of parser type."
+        }
+      }
+    ],
     "2025-11-14": [
       {
         "kind": "Feature",

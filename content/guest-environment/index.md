@@ -1,17 +1,45 @@
 # Guest Environment
 
-## 2025-11-13
+## 2025-11-20
 
 ### Feature
 
-Version `20251107.01` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)
+Version `20251120.01` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent) is
+now available for Windows only. This version includes the following fix:
+
+* Changes the start mode guest agent from `auto` to `delayed-auto` on
+  Windows Service Manager.
+
+---
+## 2025-11-17
+
+### Fixed
+
+Version `20251115.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)
+is now available and includes the following fixes:
+\* Fixes an issue in the dynamic vLAN subsystem where the `dhclient` backend
+attempted to remove `netplan`'s vLAN NICs.
+\* Fixes a crash loop in the plugin manager caused by its handling of plugin
+logs.
+
+### Feature
+
+Version `20251115.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)
 is now available.
+
+---
+## 2025-11-13
 
 ### Fixed
 
 Version `20251107.01` includes a fix for the
 [Startup script runner](compute/docs/instances/startup-scripts) component
 that prevented it from writing status logs and script output to Cloud Logging.
+
+### Feature
+
+Version `20251107.01` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)
+is now available.
 
 ---
 ## 2025-10-31

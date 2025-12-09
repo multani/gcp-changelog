@@ -1,5 +1,57 @@
 # Cloud Load Balancing
 
+## 2025-12-03
+
+### Feature
+
+**Regular expressions matchers in host and route rules in URL maps**
+
+You can now use regular expressions to configure more flexible and precise
+traffic routing rules within URL maps for Application Load Balancer. This feature
+lets you leverage the power of RE2 syntax for matching on:
+
+* **Route rules**: Within `pathMatchers`, the `matchRules` array now supports a
+  `regexMatch` field to validate the URL path against a specified regex pattern.
+* **Header matches**: Within `matchRules`, the `headerMatches` array now
+  supports a `regexMatch` field for pattern matching against HTTP header values.
+* **Query parameter matches**: Within `matchRules`, the `queryParameterMatches`
+  array now supports a `regexMatch` field for pattern matching against HTTP
+  query parameters values.
+
+This feature is available for the following load balancers:
+
+* Regional internal Application Load Balancer
+* Cross-region internal Application Load Balancer
+* Regional external Application Load Balancer
+
+For more details on usage and syntax, see [URL map concepts: Regular expressions
+matchers in host and route
+rules](https://docs.cloud.google.com/load-balancing/docs/url-map-concepts#regex-support).
+
+This feature is in **Preview.**
+
+---
+## 2025-12-02
+
+### Feature
+
+Backend mutual TLS (mTLS) and backend authenticated TLS are now
+**Generally available** for the following regional Application Load Balancers:
+
+* Regional external Application Load Balancers
+* Regional internal Application Load Balancers
+
+This update complements existing support for global external Application Load Balancers,
+allowing you to enforce bidirectional identity verification
+across your regional deployments.
+
+For details, see the following:
+
+* [Backend mTLS overview](https://docs.cloud.google.com/load-balancing/docs/backend-authenticated-tls-backend-mtls)
+* [Set up backend authenticated TLS](https://docs.cloud.google.com/load-balancing/docs/backend-authenticated-tls-setup)
+* [Set up backend mTLS](https://docs.cloud.google.com/load-balancing/docs/backend-mtls-setup)
+
+---
 ## 2025-11-04
 
 ### Feature

@@ -1,5 +1,18 @@
 # Cloud Interconnect
 
+## 2025-12-09
+
+### Feature
+
+Partner Cross-Cloud Interconnect for Amazon Web Services (AWS) is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+Partner Cross-Cloud Interconnect for AWS provides an on-demand and reliable method for establishing cross-cloud transport, without having to manually set up networking components.
+
+This connectivity is represented as region-to-region transport with an SLA-protected, coordinated underlay built with AWS that can be set up on-demand, and sized up and down based on your needs.
+
+For more information, see [Partner Cross-Cloud Interconnect for AWS overview](https://docs.cloud.google.com/network-connectivity/docs/interconnect/concepts/partner-cci-for-aws-overview). For available locations see [Choose a paired location](https://docs.cloud.google.com/network-connectivity/docs/interconnect/how-to/partner-cci-for-aws/paired-locations).
+
+---
 ## 2025-08-13
 
 ### Feature

@@ -1,5 +1,22 @@
 # Google Cloud Contact Center as a Service
 
+## 2025-12-09
+
+### Announcement
+
+**Mobile SDK version 2.15.1 patch**
+
+The Mobile SDK version 2.15.1 patch adds the following updates to the Android
+SDK:
+
+* **Android 16 compatibility**: Mobile SDK 2.15.1 is compatible with Android
+  16.
+* **Edge-to-edge screen support**: Mobile SDK 2.15.1 supports edge-to-edge.
+* **No predictive back system animations**: Mobile SDK 2.15.1 doesn't support
+  predictive back system animations. We expect to support this Android 16
+  capability in a future release.
+
+---
 ## 2025-12-06
 
 ### Feature

@@ -1,5 +1,17 @@
 # AI Hypercomputer
 
+## 2025-12-09
+
+### Feature
+
+**Generally available**: You can enable node health prediction in an
+AI-optimized GKE cluster to help the cluster avoid scheduling workloads on nodes
+that are likely to degrade within the next five hours. This approach helps
+minimize interruptions for critical and interruption-sensitive workloads, such
+as large-scale training. For more information, see
+[Enable node health prediction in a GKE cluster](https://docs.cloud.google.com/ai-hypercomputer/docs/workloads/enable-node-health-prediction).
+
+---
 ## 2025-10-21
 
 ### Feature

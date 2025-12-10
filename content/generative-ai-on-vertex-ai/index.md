@@ -1,5 +1,20 @@
 # Generative AI on Vertex AI
 
+## 2025-12-08
+
+### Feature
+
+**Veo 3.1 video extension**
+
+Veo 3.1 supports video extension in Preview.
+
+For more information, see the following:
+
+* [Extend Veo
+  videos](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/extend-a-veo-video)
+* [Veo video generation API](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/model-reference/veo-video-generation)
+
+---
 ## 2025-11-24
 
 ### Feature

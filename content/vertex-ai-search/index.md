@@ -1,5 +1,33 @@
 # Vertex AI Search
 
+## 2025-12-09
+
+### Feature
+
+**Vertex AI Search: Configurable pricing for custom search (GA)**
+
+Configurable pricing is available for custom search apps and data stores.
+
+Configurable pricing offers a flexible alternative to the default pay-as-you-go
+model. Configurable pricing lets you to choose a subscription that fits your
+needs. There are two subscriptions, one for storage and one for search queries,
+plus add-ons that let you add more features according to your needs.
+
+For storage, the minimum subscription is 50 GiB/month and the available
+add-on is semantic embedding. For search queries, the minimum subscription is
+1000 queries per minute per project, and the available add-ons are semantic
+query, KPI & personalization, and AI overview.
+
+After you set up configurable pricing for a project, apply configurable pricing
+to apps and data stores as needed. In a project, you can have some apps and
+data store using the general pricing and others using configurable pricing.
+
+Configurable pricing is generally available (GA). For more information, see
+[Enable configurable pricing for custom
+search](https://docs.cloud.google.com/generative-ai-app-builder/docs/enable-configurable-pricing) and [Vertex
+AI Search pricing](https://cloud.google.com/generative-ai-app-builder/pricing).
+
+---
 ## 2025-11-24
 
 ### Feature

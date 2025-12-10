@@ -1,5 +1,15 @@
 # Network Intelligence Center
 
+## 2025-12-09
+
+### Feature
+
+[Connectivity Tests](https://docs.cloud.google.com/network-intelligence-center/docs/connectivity-tests/concepts/overview)
+analyzes configurations that use
+[geolocation objects](https://docs.cloud.google.com/firewall/docs/firewall-policies-rule-details#geo-location-object)
+in firewall policy rules.
+
+---
 ## 2025-11-10
 
 ### Feature

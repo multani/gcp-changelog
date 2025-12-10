@@ -1,5 +1,18 @@
 # Dataform
 
+## 2025-12-09
+
+### Feature
+
+Dataform offers
+[enhanced IAM permissions](https://docs.cloud.google.com/dataform/docs/access-control#use-config-api),
+providing more granular control over resource creation and scheduling.
+Administrators can also
+[enable private workspaces](https://docs.cloud.google.com/dataform/docs/access-control#enable-private-workspaces)
+to restrict access to the workspace creator. These features are in
+[preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-11-18
 
 ### Feature

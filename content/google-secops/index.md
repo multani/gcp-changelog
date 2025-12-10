@@ -1,5 +1,19 @@
 # Google SecOps
 
+## 2025-12-08
+
+### Feature
+
+**N OF and OR syntax updates**
+
+You can now use the N OF syntax and the `or` operator to write flexible and
+conditional logic within the `condition` section of your query. These features
+let you combine multiple conditions, reducing the overall complexity of your
+query syntax.
+
+For more information, see [Use or in the condition section](https://docs.cloud.google.com/chronicle/docs/yara-l/multievent-or) and [Use N OF syntax with event variables](https://docs.cloud.google.com/chronicle/docs/yara-l/multievent-n-of).
+
+---
 ## 2025-12-07
 
 ### Feature

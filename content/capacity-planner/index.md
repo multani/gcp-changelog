@@ -1,5 +1,22 @@
 # Capacity Planner
 
+## 2025-12-09
+
+### Changed
+
+The Google Cloud console has been changed as follows:
+
+* An **Overview** page for Capacity Planner has been added. You
+  can use the **Overview** page to view data that summarizes the overall
+  resource usage for a project, folder, or organization, including potential
+  action items and the regional distribution of your resources.
+* The data for the region distribution of your resources has been relocated:
+  the doughnut charts have been replaced with a bar chart on the
+  **Overview** page for Capacity Planner.
+
+For more information, see [View usage and forecast data](https://docs.cloud.google.com/capacity-planner/docs/view-data).
+
+---
 ## 2025-11-03
 
 ### Feature

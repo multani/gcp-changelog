@@ -1,5 +1,25 @@
 # Spanner
 
+## 2025-12-10
+
+### Feature
+
+Spanner now supports the following new columns in the `SPANNER_SYS`
+[oldest active queries](https://docs.cloud.google.com/spanner/docs/introspection/oldest-active-queries)
+table:
+
+* `CLIENT_IP_ADDRESS`
+* `API_CLIENT_HEADER`
+* `USER_AGENT_HEADER`
+* `SERVER_REGION`
+* `PRIORITY`
+* `TRANSACTION_TYPE`
+
+You can also view these columns in the Spanner **query insights** page
+on the Google Cloud console. For more information, see
+[Monitor active queries](https://docs.cloud.google.com/spanner/docs/monitor-active-queries#view-longest-running-queries).
+
+---
 ## 2025-12-03
 
 ### Changed

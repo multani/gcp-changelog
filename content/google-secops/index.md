@@ -1,5 +1,18 @@
 # Google SecOps
 
+## 2025-12-09
+
+### Feature
+
+**Create new reference lists**
+
+You can still create new reference lists.
+
+This feature nullifies certain content in the [release note from August 19, 2025](https://docs.cloud.google.com/chronicle/docs/release-notes#August_19_2025), which specified that from October 2025, you would no longer be able to create new reference lists.
+
+**Note:** Because the reference list functionality is being phased out of the Google SecOps platform (see "Reference lists" in [Feature deprecations](https://docs.cloud.google.com/chronicle/docs/deprecations)), we recommend that you use [data tables](https://docs.cloud.google.com/chronicle/docs/investigation/data-tables) to provide expanded functionality, instead of reference lists.
+
+---
 ## 2025-12-08
 
 ### Feature

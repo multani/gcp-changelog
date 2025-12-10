@@ -2,9 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Spanner</title>
   <subtitle>Changelog for Google Cloud product: Spanner</subtitle>
-  <updated>2025-12-03T00:00:00+00:00</updated>
+  <updated>2025-12-10T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:spanner</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/spanner/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2025-12-10:feature:0</id>
+    <published>2025-12-10T00:00:00+00:00</published>
+    <updated>2025-12-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Spanner now supports the following new columns in the <code>SPANNER_SYS</code>
+<a href="https://docs.cloud.google.com/spanner/docs/introspection/oldest-active-queries">oldest active queries</a>
+table:</p>
+<ul>
+<li><code>CLIENT_IP_ADDRESS</code></li>
+<li><code>API_CLIENT_HEADER</code></li>
+<li><code>USER_AGENT_HEADER</code></li>
+<li><code>SERVER_REGION</code></li>
+<li><code>PRIORITY</code></li>
+<li><code>TRANSACTION_TYPE</code></li>
+</ul>
+<p>You can also view these columns in the Spanner <strong>query insights</strong> page
+on the Google Cloud console. For more information, see
+<a href="https://docs.cloud.google.com/spanner/docs/monitor-active-queries#view-longest-running-queries">Monitor active queries</a>.</p>]]></content>
+    <summary>Spanner's `SPANNER_SYS` table now includes new columns such as client IP address, API client header, user agent, server region, priority, and transaction type for the `oldest_active_queries` view. These new details are also visible in the Spanner query insights page within the Google Cloud console, enhancing query monitoring capabilities.</summary>
+    <title>Feature: Spanner Adds New Columns to Oldest Active Queries</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

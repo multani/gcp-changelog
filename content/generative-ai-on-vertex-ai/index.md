@@ -1,5 +1,15 @@
 # Generative AI on Vertex AI
 
+## 2025-12-09
+
+### Feature
+
+The following models are available through Model Garden:
+
+* [Ministral 3](https://console.cloud.google.com/vertex-ai/publishers/mistralai/model-garden/ministral-3)
+* [Mistral Large 3](https://console.cloud.google.com/vertex-ai/publishers/mistralai/model-garden/mistral-large-3)
+
+---
 ## 2025-12-08
 
 ### Feature
@@ -13,6 +23,20 @@ For more information, see the following:
 * [Extend Veo
   videos](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/extend-a-veo-video)
 * [Veo video generation API](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/model-reference/veo-video-generation)
+
+---
+## 2025-12-02
+
+### Feature
+
+The following models are available through Model Garden:
+
+* [DeepSeek-V3.2](https://console.cloud.google.com/vertex-ai/publishers/deepseek-ai/model-garden/deepseek-v3-2;publisherModelVersion=deepseek-v3-2)
+* [DeepSeek-V3.2-Speciale](https://console.cloud.google.com/vertex-ai/publishers/deepseek-ai/model-garden/deepseek-v3-2;publisherModelVersion=deepseek-v3-2-speciale)
+
+### Feature
+
+The Vertex AI Model Garden model co-hosting vLLM container is available to use with [this sample notebook](https://github.com/GoogleCloudPlatform/vertex-ai-samples/blob/main/notebooks/community/model_garden/model_garden_model_cohost.ipynb). You can use this container to serve multiple replicas of a model and serve multiple models with dynamic loading and unloading. This allows you to maximize resource utilization and serving efficiency, and flexibly adjust the models to serve.
 
 ---
 ## 2025-11-24

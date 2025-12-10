@@ -51,6 +51,7 @@
 - [Capacity Planner](capacity-planner/index.md)
 - [Carbon Footprint](carbon-footprint/index.md)
 - [Certificate Authority Service](certificate-authority-service/index.md)
+- [Cloud API Registry](cloud-api-registry/index.md)
 - [Cloud Asset Inventory](cloud-asset-inventory/index.md)
 - [Cloud Billing](cloud-billing/index.md)
 - [Cloud Build](cloud-build/index.md)

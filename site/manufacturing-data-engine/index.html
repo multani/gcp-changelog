@@ -641,6 +641,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Cloud api registry <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../cloud-api-registry/" class="dropdown-item">Cloud API Registry</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Cloud asset inventory <b class="caret"></b>
                         </a>
 
@@ -2196,17 +2208,72 @@
 
 
 <h1 id="manufacturing-data-engine">Manufacturing Data Engine</h1>
+<h2 id="2025-12-10">2025-12-10</h2>
+<h3 id="libraries">Libraries</h3>
+<p><strong>Release signature</strong></p>
+<pre><code>6e178bd
+1.5.2
+9ee64699a1bdf1cf690e7930d968f002
+</code></pre>
+<h3 id="announcement">Announcement</h3>
+<h3 id="release-152">Release 1.5.2</h3>
+<p>This release is a <strong>critical update</strong> if you have an existing deployment of
+MDE version 1.5.0. This release introduces a new configuration package upload
+option that allows users to automatically enable and activate all entities
+created following the upload. It also includes other minor improvements and bug
+fixes.</p>
+<p>Follow the <a href="https://docs.cloud.google.com/manufacturing-data-engine/docs/deployment/upgrade-guide">Upgrade guide</a>
+in the MDE documentation for detailed instructions. Note that instructions are
+different depending on the MDE version you are upgrading from.</p>
+<h3 id="security">Security</h3>
+<ul>
+<li><strong>Improvement (448853115)</strong>: Added the ability to
+  enable and configure VPC flow logging from Terraform. Collecting VPC flow logs
+  is recommended to detect potential intrusions or anomalies.</li>
+<li><strong>Improvement (450530585)</strong>: Updated container images
+  and dependencies to address known security vulnerabilities.</li>
+<li><strong>Improvement (448854007):</strong> Adjusted IAM roles used
+  by some MDE service accounts following the least-privilege approach.</li>
+<li><strong>Improvement (448148987)</strong>: Switched to DNS-based endpoint with AIM access
+  control for GKE control plane, following security best practices.</li>
+<li><strong>Improvement (448148673)</strong>: Enabled SSL required mode on the Cloud SQL
+  instance for additional security enforcement.</li>
+<li><strong>Improvement (448148275)</strong>: Enabled in-transit encryption and token
+  authentication for Redis.</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li><strong>Fix (423567127):</strong> Fixed a bug that prevented numeric values to be
+  correctly processed when using file ingestion.</li>
+<li><strong>Fix (441294785):</strong> Fixed a bug that prevented the deletion of a message
+  class if the related parser had been deleted beforehand.</li>
+<li><strong>Fix (443710570)</strong>: Fixed a bug that could use an old version of a parser
+  script when uploading a new configuration package that had the same parser name.</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li><strong>Improvement (441727217)</strong>: Introduced an option to enable parsers after
+  types activation when you upload a new configuration package.</li>
+<li><strong>Improvement (333321871)</strong>: Refactored scripts to collect additional
+  information for the MDE team when you open a support ticket to help
+  faster troubleshooting.</li>
+<li><strong>Improvement (441660844)</strong>: Added <code>typesMetadataBuckets</code> and
+  <code>typesTransformations</code> JSON arrays as responses to the Tags API implementation.</li>
+<li><strong>Improvement (435358499)</strong>: Enabled Streaming Engine for Dataflow in all
+  MDE deployment sizes for optimized consumption, saving resources.</li>
+</ul>
+<hr />
 <h2 id="2025-08-29">2025-08-29</h2>
 <h3 id="release-151">Release 1.5.1</h3>
 <p>This release is a <strong>critical update</strong> if you have an existing deployment of MDE version 1.5.0. This release resolves a bug regarding materialization of metadata instances created prior to MDE 1.5.0. This release also includes other minor improvements and bug fixes.</p>
-<h3 id="libraries">Libraries</h3>
+<h3 id="libraries_1">Libraries</h3>
 <p><strong>Release signature</strong></p>
 <pre><code>b0fc163
 1.5.1
 ffb87d39d343c20abebd2f52df74a2d3
 
 </code></pre>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_1">Fixed</h3>
 <ul>
 <li><strong>Fix (417666631):</strong> Fixed an issue with metadata materialization for metadata instances that had been created prior to migrating to MDE 1.5.0.</li>
 <li><strong>Fix (420921890):</strong> Fixed an error when attempting to update an instance tag metadata and saved it for instances that had been created prior to migrating to MDE 1.5.0.</li>
@@ -2219,12 +2286,12 @@ ffb87d39d343c20abebd2f52df74a2d3
 <li><strong>Fix (407015039)</strong>: Fixed <code>Delete</code> button in MDE UI when the system is in PROD mode (Production mode).</li>
 <li><strong>Fix (435653743)</strong>: Fixed missing Grafana Terraform module.</li>
 </ul>
-<h3 id="security">Security</h3>
+<h3 id="security_1">Security</h3>
 <ul>
 <li><strong>Improvement (427447932)</strong>: Brought Docker images to versions without vulnerabilities reported at the time of the release.</li>
 <li><strong>Improvement (361290775)</strong>: Modified Terraform deployment scripts to enforce TLS v1.2 for an external MDE UI Load Balancer.</li>
 </ul>
-<h3 id="changed">Changed</h3>
+<h3 id="changed_1">Changed</h3>
 <ul>
 <li><strong>Improvement (407009198)</strong>: Improved the error handling when <code>upload</code> and <code>parsing</code> configuration packages.</li>
 <li><strong>Improvement (423531705):</strong> Improved MDE logging for BigQuery sink related operations.</li>
@@ -2245,6 +2312,9 @@ ffb87d39d343c20abebd2f52df74a2d3
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#manufacturing-data-engine">Manufacturing Data Engine</a></li>
+          <li class="nav-item">
+            <a href="#2025-12-10" class="nav-link">2025-12-10</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-08-29" class="nav-link">2025-08-29</a>
           </li>

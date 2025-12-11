@@ -2,10 +2,6 @@
 
 ## 2025-12-10
 
-### Changed
-
-
-
 ### cos-121-18867-294-60
 
 |  |  |  |  |
@@ -87,10 +83,6 @@ Fixed CVE-2025-40250 in the Linux kernel.
 
 Fixed CVE-2025-40272 in the Linux kernel.
 
-### Changed
-
-
-
 ### cos-125-19216-104-61
 
 |  |  |  |  |
@@ -160,10 +152,6 @@ Fixed CVE-2025-40273 in the Linux kernel.
 
 Fixed CVE-2025-40250 in the Linux kernel.
 
-### Changed
-
-
-
 ### cos-dev-129-19424-0-0
 
 |  |  |  |  |
@@ -200,10 +188,6 @@ Runtime sysctl changes:
 ### Fixed
 
 Upgraded app-admin/fluent-bit to v4.2.0.
-
-### Changed
-
-
 
 ### cos-113-18244-521-45
 

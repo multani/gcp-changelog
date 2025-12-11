@@ -3,27 +3,19 @@
   "entries": {
     "2025-12-10": [
       {
-        "kind": "Libraries",
-        "content": "**Release signature**\n\n```\n6e178bd\n1.5.2\n9ee64699a1bdf1cf690e7930d968f002\n```",
-        "summary": {
-          "title": "New Library Version Available",
-          "summary": "A new version of the library has been released. Please update to version 1.5.2 to benefit from the latest improvements and fixes."
-        }
-      },
-      {
-        "kind": "Announcement",
-        "content": "",
-        "summary": {
-          "title": "New Version of our Application Released",
-          "summary": "We are excited to announce the release of the latest version of our application. This update includes several performance enhancements and new features designed to improve your user experience. We encourage you to update to the new version to take advantage of these improvements."
-        }
-      },
-      {
         "kind": "Release 1.5.2",
         "content": "This release is a **critical update** if you have an existing deployment of\nMDE version 1.5.0. This release introduces a new configuration package upload\noption that allows users to automatically enable and activate all entities\ncreated following the upload. It also includes other minor improvements and bug\nfixes.\n\nFollow the [Upgrade guide](https://docs.cloud.google.com/manufacturing-data-engine/docs/deployment/upgrade-guide)\nin the MDE documentation for detailed instructions. Note that instructions are\ndifferent depending on the MDE version you are upgrading from.",
         "summary": {
           "title": "MDE Release 1.5.2 Available",
           "summary": "A critical update, MDE version 1.5.2, is now available. This release introduces a new configuration package upload option for automatic entity activation and includes general improvements and bug fixes. Refer to the upgrade guide for detailed instructions."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "* **Improvement (441727217)**: Introduced an option to enable parsers after\n  types activation when you upload a new configuration package.\n* **Improvement (333321871)**: Refactored scripts to collect additional\n  information for the MDE team when you open a support ticket to help\n  faster troubleshooting.\n* **Improvement (441660844)**: Added `typesMetadataBuckets` and\n  `typesTransformations` JSON arrays as responses to the Tags API implementation.\n* **Improvement (435358499)**: Enabled Streaming Engine for Dataflow in all\n  MDE deployment sizes for optimized consumption, saving resources.",
+        "summary": {
+          "title": "New Options for Parsers and Dataflow",
+          "summary": "Parsers can now be enabled after type activation, and Streaming Engine is now enabled for all Dataflow sizes. Additionally, scripts have been refactored to gather more information for support tickets, and the Tags API now includes `typesMetadataBuckets` and `typesTransformations` in its responses."
         }
       },
       {
@@ -35,19 +27,19 @@
         }
       },
       {
+        "kind": "Libraries",
+        "content": "**Release signature**\n\n```\n6e178bd\n1.5.2\n9ee64699a1bdf1cf690e7930d968f002\n```",
+        "summary": {
+          "title": "New Library Version Available",
+          "summary": "A new version of the library has been released. Please update to version 1.5.2 to benefit from the latest improvements and fixes."
+        }
+      },
+      {
         "kind": "Fixed",
         "content": "* **Fix (423567127):** Fixed a bug that prevented numeric values to be\n  correctly processed when using file ingestion.\n* **Fix (441294785):** Fixed a bug that prevented the deletion of a message\n  class if the related parser had been deleted beforehand.\n* **Fix (443710570)**: Fixed a bug that could use an old version of a parser\n  script when uploading a new configuration package that had the same parser name.",
         "summary": {
           "title": "Bug Fixes",
           "summary": "Several bugs have been fixed, including issues with numeric value processing during file ingestion, message class deletion, and parser script versioning."
-        }
-      },
-      {
-        "kind": "Changed",
-        "content": "* **Improvement (441727217)**: Introduced an option to enable parsers after\n  types activation when you upload a new configuration package.\n* **Improvement (333321871)**: Refactored scripts to collect additional\n  information for the MDE team when you open a support ticket to help\n  faster troubleshooting.\n* **Improvement (441660844)**: Added `typesMetadataBuckets` and\n  `typesTransformations` JSON arrays as responses to the Tags API implementation.\n* **Improvement (435358499)**: Enabled Streaming Engine for Dataflow in all\n  MDE deployment sizes for optimized consumption, saving resources.",
-        "summary": {
-          "title": "New Options for Parsers and Dataflow",
-          "summary": "Parsers can now be enabled after type activation, and Streaming Engine is now enabled for all Dataflow sizes. Additionally, scripts have been refactored to gather more information for support tickets, and the Tags API now includes `typesMetadataBuckets` and `typesTransformations` in its responses."
         }
       }
     ],

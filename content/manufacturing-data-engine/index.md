@@ -2,20 +2,6 @@
 
 ## 2025-12-10
 
-### Libraries
-
-**Release signature**
-
-```
-6e178bd
-1.5.2
-9ee64699a1bdf1cf690e7930d968f002
-```
-
-### Announcement
-
-
-
 ### Release 1.5.2
 
 This release is a **critical update** if you have an existing deployment of
@@ -27,6 +13,18 @@ fixes.
 Follow the [Upgrade guide](https://docs.cloud.google.com/manufacturing-data-engine/docs/deployment/upgrade-guide)
 in the MDE documentation for detailed instructions. Note that instructions are
 different depending on the MDE version you are upgrading from.
+
+### Changed
+
+* **Improvement (441727217)**: Introduced an option to enable parsers after
+  types activation when you upload a new configuration package.
+* **Improvement (333321871)**: Refactored scripts to collect additional
+  information for the MDE team when you open a support ticket to help
+  faster troubleshooting.
+* **Improvement (441660844)**: Added `typesMetadataBuckets` and
+  `typesTransformations` JSON arrays as responses to the Tags API implementation.
+* **Improvement (435358499)**: Enabled Streaming Engine for Dataflow in all
+  MDE deployment sizes for optimized consumption, saving resources.
 
 ### Security
 
@@ -44,6 +42,16 @@ different depending on the MDE version you are upgrading from.
 * **Improvement (448148275)**: Enabled in-transit encryption and token
   authentication for Redis.
 
+### Libraries
+
+**Release signature**
+
+```
+6e178bd
+1.5.2
+9ee64699a1bdf1cf690e7930d968f002
+```
+
 ### Fixed
 
 * **Fix (423567127):** Fixed a bug that prevented numeric values to be
@@ -52,18 +60,6 @@ different depending on the MDE version you are upgrading from.
   class if the related parser had been deleted beforehand.
 * **Fix (443710570)**: Fixed a bug that could use an old version of a parser
   script when uploading a new configuration package that had the same parser name.
-
-### Changed
-
-* **Improvement (441727217)**: Introduced an option to enable parsers after
-  types activation when you upload a new configuration package.
-* **Improvement (333321871)**: Refactored scripts to collect additional
-  information for the MDE team when you open a support ticket to help
-  faster troubleshooting.
-* **Improvement (441660844)**: Added `typesMetadataBuckets` and
-  `typesTransformations` JSON arrays as responses to the Tags API implementation.
-* **Improvement (435358499)**: Enabled Streaming Engine for Dataflow in all
-  MDE deployment sizes for optimized consumption, saving resources.
 
 ---
 ## 2025-08-29

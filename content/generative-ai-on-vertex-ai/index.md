@@ -1,5 +1,16 @@
 # Generative AI on Vertex AI
 
+## 2025-12-10
+
+### Feature
+
+**DeepSeek-V3.2** is available in Model Garden.
+DeepSeek-V3.2 is a state-of-the-art large language model from
+DeepSeek.
+DeepSeek-V3.2 is available as a managed API in Model Garden. To learn more, see
+[DeepSeek-V3.2](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/maas/deepseek/deepseek-v32).
+
+---
 ## 2025-12-09
 
 ### Feature

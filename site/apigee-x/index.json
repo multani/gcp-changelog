@@ -1,21 +1,21 @@
 {
   "name": "Apigee X",
   "entries": {
-    "2025-12-05": [
+    "2025-12-10": [
       {
         "kind": "Announcement",
-        "content": "On December 5th, 2025, we released an updated version of Apigee.\n\n**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.",
+        "content": "On December 10th, 2025, we released an updated version of Apigee (1-16-0-apigee-6).\n\n**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.",
         "summary": {
-          "title": "Apigee Updated",
-          "summary": "An updated version of Apigee was released on December 5th, 2025. The rollout is ongoing and may take up to four business days to complete across all Google Cloud zones."
+          "title": "Apigee 1-16-0-apigee-6 Released",
+          "summary": "An updated version of Apigee, 1-16-0-apigee-6, was released on December 10th, 2025. The rollout is now in progress and may take several business days to complete across all zones. Your instances will have the new features and fixes once the rollout is finished."
         }
       },
       {
-        "kind": "Security",
-        "content": "| Bug ID | Description |\n| --- | --- |\n| **388271708** | **Security fix for Apigee infrastructure** This addresses the following vulnerability:   * CVE-2025-13426 Fixed an issue with the JavaCallout policy that could result in remote code execution. |",
+        "kind": "Fixed",
+        "content": "| Bug ID | Description |\n| --- | --- |\n| **458417250** | **Multiple authorization headers** Fixed issue where adding multiple authorization headers would cause Apigee to return a `500` error. |\n| **N/A** | **Updates to security, infrastructure, and libraries.** |",
         "summary": {
-          "title": "Security fix for Apigee infrastructure",
-          "summary": "A security fix has been released for the Apigee infrastructure, addressing a vulnerability in the JavaCallout policy that could lead to remote code execution."
+          "title": "Fixed multiple authorization headers issue",
+          "summary": "Resolved a bug where adding multiple authorization headers resulted in a 500 error. Additionally, updates have been made to security, infrastructure, and libraries."
         }
       }
     ],
@@ -47,19 +47,45 @@
         }
       },
       {
+        "kind": "Security",
+        "content": "| Bug ID | Description |\n| --- | --- |\n| **454672970** | **Added strict input validation to the `SetIntegrationRequest` policy** |",
+        "summary": {
+          "title": "Security",
+          "summary": "Strict input validation added to SetIntegrationRequest policy."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "**New field available in the Apigee Organization API**\n\nWith this release, a new field is added to the [Apigee Organization API](https://docs.cloud.google.com/apigee/docs/reference/apis/apigee/rest/v1/organizations#Organization). The new `caCertificates` (plural) field returns the value of the original CA certificate field and can hold additional values. The original `caCertificate` (singular) field is deprecated.",
+        "summary": {
+          "title": "Apigee Organization API Update",
+          "summary": "A new field `caCertificates` has been added to the Apigee Organization API, replacing the deprecated `caCertificate` field. This new field supports multiple values for enhanced flexibility."
+        }
+      },
+      {
         "kind": "Fixed",
         "content": "| Bug ID | Description |\n| --- | --- |\n| **N/A** | **Updates to security, infrastructure, and libraries.** |",
         "summary": {
           "title": "Security, infrastructure, and library updates",
           "summary": ""
         }
+      }
+    ],
+    "2025-12-05": [
+      {
+        "kind": "Announcement",
+        "content": "On December 5th, 2025, we released an updated version of Apigee.\n\n**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.",
+        "summary": {
+          "title": "Apigee Updated",
+          "summary": "An updated version of Apigee was released on December 5th, 2025. The rollout is ongoing and may take up to four business days to complete across all Google Cloud zones."
+        }
       },
       {
         "kind": "Security",
-        "content": "| Bug ID | Description |\n| --- | --- |\n| **454672970** | **Added strict input validation to the `SetIntegrationRequest` policy** |",
+        "content": "| Bug ID | Description |\n| --- | --- |\n| **388271708** | **Security fix for Apigee infrastructure** This addresses the following vulnerability:   * CVE-2025-13426 Fixed an issue with the JavaCallout policy that could result in remote code execution. |",
         "summary": {
-          "title": "Security",
-          "summary": "Strict input validation added to SetIntegrationRequest policy."
+          "title": "Security fix for Apigee infrastructure",
+          "summary": "A security fix has been released for the Apigee infrastructure, addressing a vulnerability in the JavaCallout policy that could lead to remote code execution."
         }
       }
     ],

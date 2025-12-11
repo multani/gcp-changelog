@@ -1,5 +1,18 @@
 # Google Kubernetes Engine
 
+## 2025-12-10
+
+### Feature
+
+In GKE version 1.34.1-gke.2541000 and later, you can specify
+secure tags for firewalls in the
+[`spec.nodePoolConfig.resourceManagerTags` field](https://docs.cloud.google.com/kubernetes-engine/docs/reference/crds/computeclass#resourceManagerTags)
+in ComputeClasses. GKE adds those secure tags to the nodes that
+GKE creates for that ComputeClass, so that you can target
+nodes by using these tags in firewall policies. For more information, see
+[Selectively enforce firewall policies in GKE](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/tags-firewall-policies).
+
+---
 ## 2025-12-09
 
 ### Feature

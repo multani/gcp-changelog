@@ -1,6 +1,48 @@
 {
   "name": "Container Optimized OS",
   "entries": {
+    "2025-12-04": [
+      {
+        "kind": "Changed",
+        "content": "",
+        "summary": {
+          "title": "API Updates Announced",
+          "summary": "We've made changes to our API, including new features and improvements. These updates are designed to enhance performance and user experience."
+        }
+      },
+      {
+        "kind": "cos-113-18244-521-41",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/2fccd796b687dd10fc40c794fafefdcc3af48570 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.41/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container-Optimized OS Update",
+          "summary": "New version of Container-Optimized OS (COS-6.1.155) is now available, including updates to the kernel, Docker, and containerd. This release also provides support for GPU drivers."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 812031 -> 811999",
+        "summary": {
+          "title": "Runtime sysctl updated",
+          "summary": "The fs.file-max sysctl value has been updated from 812031 to 811999. This change affects runtime system configurations."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Made the google-guest-agent more resilient to network link\nflakes.",
+        "summary": {
+          "title": "Guest agent network resilience improved",
+          "summary": "The google-guest-agent has been updated to be more resilient to intermittent network connectivity issues. This fix enhances the agent's stability and reliability by preventing failures caused by temporary network disruptions."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated vim & vim-core to version 9.1.1652. This fixes\nCVE-2025-53905, CVE-2025-53906, CVE-2025-9390.",
+        "summary": {
+          "title": "Vim Security Update",
+          "summary": "Vim and vim-core have been updated to version 9.1.1652, addressing critical security vulnerabilities CVE-2025-53905, CVE-2025-53906, and CVE-2025-9390. This update is essential for maintaining the security of your systems."
+        }
+      }
+    ],
     "2025-12-03": [
       {
         "kind": "cos-dev-129-19407-0-0",

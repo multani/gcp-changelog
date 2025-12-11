@@ -1,5 +1,16 @@
 # BigQuery
 
+## 2025-12-10
+
+### Feature
+
+You can now use the [BigQuery remote MCP server](https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp)
+to enable LLM agents to perform a range of data-related tasks.
+
+This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2025-12-02
 
 ### Feature

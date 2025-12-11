@@ -2,33 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee X</title>
   <subtitle>Changelog for Google Cloud product: Apigee X</subtitle>
-  <updated>2025-12-05T00:00:00+00:00</updated>
+  <updated>2025-12-10T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-x</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-x/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:apigee-x:2025-12-05:announcement:0</id>
-    <published>2025-12-05T00:00:00+00:00</published>
-    <updated>2025-12-05T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>On December 5th, 2025, we released an updated version of Apigee.</p>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2025-12-10:announcement:0</id>
+    <published>2025-12-10T00:00:00+00:00</published>
+    <updated>2025-12-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On December 10th, 2025, we released an updated version of Apigee (1-16-0-apigee-6).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>]]></content>
-    <summary>An updated version of Apigee was released on December 5th, 2025. The rollout is ongoing and may take up to four business days to complete across all Google Cloud zones.</summary>
-    <title>Announcement: Apigee Updated</title>
+    <summary>An updated version of Apigee, 1-16-0-apigee-6, was released on December 10th, 2025. The rollout is now in progress and may take several business days to complete across all zones. Your instances will have the new features and fixes once the rollout is finished.</summary>
+    <title>Announcement: Apigee 1-16-0-apigee-6 Released</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:apigee-x:2025-12-05:security:1</id>
-    <published>2025-12-05T00:00:00+00:00</published>
-    <updated>2025-12-05T00:00:00+00:00</updated>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2025-12-10:fixed:1</id>
+    <published>2025-12-10T00:00:00+00:00</published>
+    <updated>2025-12-10T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>| Bug ID | Description |
 | --- | --- |
-| <strong>388271708</strong> | <strong>Security fix for Apigee infrastructure</strong> This addresses the following vulnerability:   * CVE-2025-13426 Fixed an issue with the JavaCallout policy that could result in remote code execution. |</p>]]></content>
-    <summary>A security fix has been released for the Apigee infrastructure, addressing a vulnerability in the JavaCallout policy that could lead to remote code execution.</summary>
-    <title>Security: Security fix for Apigee infrastructure</title>
+| <strong>458417250</strong> | <strong>Multiple authorization headers</strong> Fixed issue where adding multiple authorization headers would cause Apigee to return a <code>500</code> error. |
+| <strong>N/A</strong> | <strong>Updates to security, infrastructure, and libraries.</strong> |</p>]]></content>
+    <summary>Resolved a bug where adding multiple authorization headers resulted in a 500 error. Additionally, updates have been made to security, infrastructure, and libraries.</summary>
+    <title>Fixed: Fixed multiple authorization headers issue</title>
   </entry>
   <entry>
     <author>
@@ -71,7 +72,32 @@ For more information, see <a href="https://docs.cloud.google.com/apigee/docs/api
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:apigee-x:2025-11-17:fixed:2</id>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2025-11-17:security:2</id>
+    <published>2025-11-17T00:00:00+00:00</published>
+    <updated>2025-11-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| <strong>454672970</strong> | <strong>Added strict input validation to the <code>SetIntegrationRequest</code> policy</strong> |</p>]]></content>
+    <summary>Strict input validation added to SetIntegrationRequest policy.</summary>
+    <title>Security: Security</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2025-11-17:changed:3</id>
+    <published>2025-11-17T00:00:00+00:00</published>
+    <updated>2025-11-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>New field available in the Apigee Organization API</strong></p>
+<p>With this release, a new field is added to the <a href="https://docs.cloud.google.com/apigee/docs/reference/apis/apigee/rest/v1/organizations#Organization">Apigee Organization API</a>. The new <code>caCertificates</code> (plural) field returns the value of the original CA certificate field and can hold additional values. The original <code>caCertificate</code> (singular) field is deprecated.</p>]]></content>
+    <summary>A new field `caCertificates` has been added to the Apigee Organization API, replacing the deprecated `caCertificate` field. This new field supports multiple values for enhanced flexibility.</summary>
+    <title>Changed: Apigee Organization API Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2025-11-17:fixed:4</id>
     <published>2025-11-17T00:00:00+00:00</published>
     <updated>2025-11-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>| Bug ID | Description |
@@ -84,14 +110,26 @@ For more information, see <a href="https://docs.cloud.google.com/apigee/docs/api
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:apigee-x:2025-11-17:security:3</id>
-    <published>2025-11-17T00:00:00+00:00</published>
-    <updated>2025-11-17T00:00:00+00:00</updated>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2025-12-05:announcement:0</id>
+    <published>2025-12-05T00:00:00+00:00</published>
+    <updated>2025-12-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On December 5th, 2025, we released an updated version of Apigee.</p>
+<p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>]]></content>
+    <summary>An updated version of Apigee was released on December 5th, 2025. The rollout is ongoing and may take up to four business days to complete across all Google Cloud zones.</summary>
+    <title>Announcement: Apigee Updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2025-12-05:security:1</id>
+    <published>2025-12-05T00:00:00+00:00</published>
+    <updated>2025-12-05T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>| Bug ID | Description |
 | --- | --- |
-| <strong>454672970</strong> | <strong>Added strict input validation to the <code>SetIntegrationRequest</code> policy</strong> |</p>]]></content>
-    <summary>Strict input validation added to SetIntegrationRequest policy.</summary>
-    <title>Security: Security</title>
+| <strong>388271708</strong> | <strong>Security fix for Apigee infrastructure</strong> This addresses the following vulnerability:   * CVE-2025-13426 Fixed an issue with the JavaCallout policy that could result in remote code execution. |</p>]]></content>
+    <summary>A security fix has been released for the Apigee infrastructure, addressing a vulnerability in the JavaCallout policy that could lead to remote code execution.</summary>
+    <title>Security: Security fix for Apigee infrastructure</title>
   </entry>
   <entry>
     <author>

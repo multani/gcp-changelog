@@ -1,5 +1,35 @@
 # Container Optimized OS
 
+## 2025-12-04
+
+### Changed
+
+
+
+### cos-113-18244-521-41
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/2fccd796b687dd10fc40c794fafefdcc3af48570 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.41/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812031 -> 811999
+
+### Fixed
+
+Made the google-guest-agent more resilient to network link
+flakes.
+
+### Security
+
+Updated vim & vim-core to version 9.1.1652. This fixes
+CVE-2025-53905, CVE-2025-53906, CVE-2025-9390.
+
+---
 ## 2025-12-03
 
 ### cos-dev-129-19407-0-0

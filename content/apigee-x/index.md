@@ -1,5 +1,21 @@
 # Apigee X
 
+## 2025-12-10
+
+### Announcement
+
+On December 10th, 2025, we released an updated version of Apigee (1-16-0-apigee-6).
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| **458417250** | **Multiple authorization headers** Fixed issue where adding multiple authorization headers would cause Apigee to return a `500` error. |
+| **N/A** | **Updates to security, infrastructure, and libraries.** |
+
+---
 ## 2025-12-05
 
 ### Announcement
@@ -39,17 +55,23 @@ On November 17, 2025, we released an updated version of Apigee (1-16-0-apigee-5)
   
 You can now secure and validate SOAP documents using WS-Security with X.509 certificates using crypto object methods. See [Secure SOAP documents using WS-Security with X.509 certificates](https://docs.cloud.google.com/apigee/docs/api-platform/reference/javascript-object-model#cryptoobjectreference-cryptowsSecRsaSign) and [Validate SOAP documents using WS-Security with X.509 certificates](https://docs.cloud.google.com/apigee/docs/api-platform/reference/javascript-object-model#cryptoobjectreference-cryptowsSecRsaValidate).
 
-### Fixed
-
-| Bug ID | Description |
-| --- | --- |
-| **N/A** | **Updates to security, infrastructure, and libraries.** |
-
 ### Security
 
 | Bug ID | Description |
 | --- | --- |
 | **454672970** | **Added strict input validation to the `SetIntegrationRequest` policy** |
+
+### Changed
+
+**New field available in the Apigee Organization API**
+
+With this release, a new field is added to the [Apigee Organization API](https://docs.cloud.google.com/apigee/docs/reference/apis/apigee/rest/v1/organizations#Organization). The new `caCertificates` (plural) field returns the value of the original CA certificate field and can hold additional values. The original `caCertificate` (singular) field is deprecated.
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| **N/A** | **Updates to security, infrastructure, and libraries.** |
 
 ---
 ## 2025-10-31

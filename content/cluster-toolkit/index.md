@@ -1,5 +1,19 @@
 # Cluster Toolkit
 
+## 2025-12-04
+
+### Feature
+
+Cluster Toolkit version v1.74.0 is available. This release adds support
+for Google Cloud NetApp Volumes and introduces new blueprint files for TPU 7x
+instances. This release also adds a `force_conflicts` flag that you can use when
+you apply manifests using the `kubectl` command. This release also updates the
+`nccl-tcpxo-installer`, `nri-device-injector`, and `nccl-test` values for
+`a3-megagpu-8g` machines. For more information about this release, see the
+[Release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/4934).
+
+---
 ## 2025-11-19
 
 ### Feature

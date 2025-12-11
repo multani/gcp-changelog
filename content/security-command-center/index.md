@@ -1,5 +1,14 @@
 # Security Command Center
 
+## 2025-12-11
+
+### Feature
+
+Security Command Center [Risk Engine](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-supported-features) supports
+Cloud Build Attack Paths with Cloud Build Resources supported in
+the high-value resource set.
+
+---
 ## 2025-12-05
 
 ### Changed

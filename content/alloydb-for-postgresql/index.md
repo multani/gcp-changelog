@@ -11,7 +11,7 @@ You can now use Gemini to [fix query errors in the AlloyDB Studio query editor](
 
 ### Feature
 
-Query plan management ensures query plan stability, and protects your
+Query plan management ([Preview](https://cloud.google.com/products#product-launch-stages)) ensures query plan stability, and protects your
 database performance against the risk of query plan regression due to changes
 in the database or the optimizer's behavior. AlloyDB continuously monitors,
 captures, and logs potential query execution plans, giving you the granular

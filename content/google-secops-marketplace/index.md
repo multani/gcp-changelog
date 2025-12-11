@@ -1,5 +1,55 @@
 # Google SecOps Marketplace
 
+## 2025-12-10
+
+### Feature
+
+**Google Threat Intelligence**: Version 7.0
+
+* The following new action has been added:
+
+  + **Private Submit URL**
+
+### Changed
+
+**Google Chronicle**: Version 70.0
+
+* Updated the error handling of the API limit and input processing of the
+  following action:
+
+  + **Is Value In Data Table**
+
+### Changed
+
+**Tenable.io**: Version 12.0
+
+* Updated the entity processing mechanism in the following actions:
+
+  + **List Endpoint Vulnerabilities**
+  + **Enrich Entities**
+  + **Scan Endpoints**
+
+### Changed
+
+**Siemplify**: Version 96.0
+
+* Refactored the following action:
+
+  + **Resume Alert SLA**
+
+### Changed
+
+**MISP**: Version 34.0
+
+* Refactored the following actions:
+
+  + **Publish Event**
+  + **Unpublish Event**
+* Updated the predefined widget of the following action:
+
+  + **Enrich Entities**
+
+---
 ## 2025-12-04
 
 ### Changed

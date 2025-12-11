@@ -1,5 +1,14 @@
 # Oracle Database@Google Cloud
 
+## 2025-12-10
+
+### Feature
+
+For Base Database Service, Oracle Database@Google Cloud supports the `us-central1` (Iowa, North America) region.
+
+For a list of supported locations, see [Supported regions and zones](https://docs.cloud.google.com/oracle/database/docs/regions-and-zones).
+
+---
 ## 2025-12-09
 
 ### Feature

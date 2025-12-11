@@ -1,5 +1,18 @@
 # Cloud VPN
 
+## 2025-12-11
+
+### Feature
+
+Cloud VPN provides predefined dashboards in the Google Cloud console for a
+quick, single-view insight into system health and tunnel performance. These
+dashboards display key metrics that enable you to monitor project-wide health
+and conduct tunnel-specific diagnosis without manual configuration. This feature
+is **Generally Available**.
+
+For more information, see [View Monitoring dashboards](https://docs.cloud.google.com/network-connectivity/docs/vpn/how-to/viewing-logs-metrics#viewing-monitoring-dashboards)
+
+---
 ## 2025-09-30
 
 ### Feature

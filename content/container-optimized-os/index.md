@@ -1,10 +1,237 @@
 # Container Optimized OS
 
-## 2025-12-04
+## 2025-12-10
 
 ### Changed
 
 
+
+### cos-121-18867-294-60
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/74621904885c99caf3a3c486ca6e03c68c9044a8 ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.294.60/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-21868 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40248 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40271 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40273 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38057 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40266 in the Linux kernel.
+
+### Feature
+
+Applied critical tx timeout patch series to fix idpf bug.
+
+### Security
+
+Fixed CVE-2025-22103 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40251 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40268 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40256 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40320 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-47914 and CVE-2025-58181 in dev-go/crypto.
+
+### Security
+
+Fixed CVE-2025-38678 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811755 -> 811799
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20251014.00.
+
+### Security
+
+Fixed CVE-2025-40250 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40272 in the Linux kernel.
+
+### Changed
+
+
+
+### cos-125-19216-104-61
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/e90029a23eafe4fcb53799d708139b1a8c5e8151 ) | v27.5.1 | v2.1.4 | [See List](https://storage.googleapis.com/cos-tools/19216.104.61/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811530 -> 811449
+
+### Security
+
+Fixed CVE-2025-40268 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40271 in the Linux kernel.
+
+### Feature
+
+Added patches to handle IDPF tx timeouts.
+
+### Security
+
+Fixed CVE-2025-40251 in the Linux kernel.
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20251014.00.
+
+### Security
+
+Fixed CVE-2025-40209 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40272 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40266 in the Linux kernel.
+
+### Feature
+
+Enabled automatic loading of RDMA kernel modules when CX-8 devices are detected.
+
+### Security
+
+Fixed CVE-2025-40230 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40235 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38678 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40273 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40250 in the Linux kernel.
+
+### Changed
+
+
+
+### cos-dev-129-19424-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.61](https://cos.googlesource.com/third_party/kernel/+/0103e6b2132977fa0ecab1c6dee86bf2ca4c3346 ) | v27.5.1 | v2.1.4 | [See List](https://storage.googleapis.com/cos-tools/19424.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Added support for NVIDIA driver v580.105.08 and set it as the default version for all GPU types.
+
+### Feature
+
+Enabled automatic loading of RDMA kernel modules when CX-8 devices are detected.
+
+### Fixed
+
+upgraded net-fs/cifs-utils to v7.4.
+
+### Changed
+
+Updated the Linux kernel to v6.12.61.
+
+### Feature
+
+Added patches to handle IDPF tx timeouts.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811490 -> 811412
+
+### Fixed
+
+Upgraded app-admin/fluent-bit to v4.2.0.
+
+### Changed
+
+
+
+### cos-113-18244-521-45
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/5b125bb5aacd10f8f7f133b6db42cb22237d4cdf ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.45/lakitu/gpu_driver_versions.textproto) |
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811999 -> 812052
+
+### Feature
+
+Added support for NVIDIA driver v580.95.05 and v580.105.08.
+
+### Security
+
+Fixed CVE-2025-40231 in the Linux kernel.
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20251014.00.
+
+---
+## 2025-12-04
 
 ### cos-113-18244-521-41
 

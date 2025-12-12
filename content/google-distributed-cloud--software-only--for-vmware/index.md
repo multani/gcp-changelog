@@ -9,6 +9,41 @@ The following issues were fixed in 1.34.0-gke.566:
 * Fixed vulnerabilities listed in
   [Vulnerability fixes](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
 
+### Changed
+
+* Upgraded `containerd` from 1.7 to 2.0.
+* Registry mirror configuration information has been migrated to the
+  hosts.toml `containerd` config file.
+* Upgrade preflight checks now validate `PodDisruptionBudgets`.
+
+### Announcement
+
+Google Distributed Cloud (software only) for VMware 1.34.0-gke.566 is now
+available for
+[download](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads).
+To upgrade, see
+[Upgrade a cluster](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading).
+Google Distributed Cloud 1.34.0-gke.566 runs on Kubernetes v1.34.1-gke.2900.
+
+If you are using a third-party storage vendor, check the
+[GDC Ready storage partners](https://cloud.google.com/anthos/docs/resources/partner-storage)
+document to make sure the storage vendor has already passed the qualification
+for this release.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for use with
+[GKE On-Prem API clients](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools):
+the Google Cloud console, the gcloud CLI, and Terraform.
+
+### Breaking
+
+Changed the upgrade logic for non-advanced clusters. When you upgrade a
+non-advanced cluster from version 1.33 to 1.34, the cluster is automatically
+converted to an advanced cluster. If you use custom code that depends on the
+non-advanced cluster configuration, this can be a breaking change. For more
+information, see
+[Key differences after moving to advanced clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/update-or-upgrade-to-adv-cluster#key_differences_after_moving_to_advanced_clusters).
+
 ---
 ## 2025-12-05
 

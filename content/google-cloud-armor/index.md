@@ -1,5 +1,17 @@
 # Google Cloud Armor
 
+## 2025-12-06
+
+### Security
+
+The Cloud Armor `cve-canary` rules include the
+[`google-mrs-v202512-id000002-rce`
+signature](https://docs.cloud.google.com/armor/docs/waf-rules#cves_and_other_vulnerabilities) to help detect
+and mitigate [CVE-2025-55182](https://nvd.nist.gov/vuln/detail/CVE-2025-55182).
+For more information, see
+[Cloud Armor preconfigured WAF rules overview](https://docs.cloud.google.com/armor/docs/waf-rules).
+
+---
 ## 2025-12-03
 
 ### Security

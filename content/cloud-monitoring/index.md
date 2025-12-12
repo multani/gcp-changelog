@@ -1,5 +1,23 @@
 # Cloud Monitoring
 
+## 2025-12-11
+
+### Feature
+
+You can now add a widget to a dashboard that lets you manage the settings for
+a variable. To learn more, see the following documents:
+
+* [Google Cloud console: Add widget to manage the value of a variable](https://docs.cloud.google.com/monitoring/dashboards/filter-permanent#add-filter-control-widget)
+* [API: Dashboard with a FilterControl widget](https://docs.cloud.google.com/monitoring/dashboards/api-examples#dashboard_with_filter_control)
+
+### Feature
+
+The Google Cloud CLI (`gcloud`) commands to manage
+Cloud Monitoring alerting policies are now generally available.
+For more information, see [`gcloud monitoring
+policies`](https://docs.cloud.google.com/sdk/gcloud/reference/monitoring/policies).
+
+---
 ## 2025-12-08
 
 ### Feature

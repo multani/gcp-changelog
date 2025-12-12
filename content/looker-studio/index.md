@@ -1,5 +1,36 @@
 # Looker Studio
 
+## 2025-12-11
+
+### Feature
+
+**Pro feature: Share and schedule reports with Slack**
+
+You can now [send Looker Studio reports to Slack channels and Slack users](https://cloud.google.com/looker/docs/studio/slack) on your Slack workspaces.
+This feature is now out of preview, and remains available only to Pro users.
+
+### Feature
+
+**Expand tables to show all rows**
+
+When downloading or scheduling a report, you can now configure table visualizations to expand to display up to 2,000 rows.
+
+### Feature
+
+**Partner connection launch update**
+
+The following partner connectors have been added to the [Looker Studio Connector Gallery](https://lookerstudio.google.com/data):
+
+* [Bionic](https://lookerstudio.google.com/c/u/0/datasources/create?connectorId=AKfycbyYyLrOKZTsVxJXDa_rtgOBAMB5OP25fItahHVWpt_V3URQGtL6bWmj5zpRySFuEhZl) By Bionic Advertising Systems. Sources: Bionic
+* [AI Search - Workduo](https://lookerstudio.google.com/c/u/0/datasources/create?connectorId=AKfycbydPMhgUsBE9Xei5zKRsMk6em5TFowQ7ApNn3gGyYgy20K4ZeULx3x5gzot3waudO5x) By Workduo. Sources: Workday
+* [Zoom](https://lookerstudio.google.com/c/u/0/datasources/create?connectorId=AKfycbzy2oOq30g15Xx_e4sczv8urbuZRqLt-J6vFmludalOkch1gtqSchLOBZ1kAsy5EXmk) By Windsor.ai. Sources: Zoom
+* [Bing Ads](https://lookerstudio.google.com/c/u/0/datasources/create?connectorId=AKfycbx1dnYsG4ixIzHYhVV64BbHXtwU8gNPdaQpvcOeM3IlEm8VEAW5Vtf5kQ6uOqRfcD0imw) By Master Metrics. Sources: Bing
+* [快客-Cyberbiz 串接](https://lookerstudio.google.com/c/u/0/datasources/create?connectorId=AKfycbxbedCQYaYROkY_PnPaohwjPBoJxb32UMt2dashE98xomU5L55driNgeTlt2JXxVZLt) By 黑客數位. Sources: Cyberviz
+* [GoHighLevel](https://lookerstudio.google.com/c/u/0/datasources/create?connectorId=AKfycbxXtvJOpR2NpjT06-wvdXxha9ZxTYTTl4ZHLN8i70yCWFsjWjtd2Hs6UQak6CGh3w_R) By Windsor.ai. Sources: HighLevel
+* [Walmart Connect (Display)](https://lookerstudio.google.com/c/u/0/datasources/create?connectorId=AKfycbz-KHDiIfoxdx1qLlIlwzhEjyfPHt-8d37eq85bosE6hYEKYZhGlwHsYUdqoI9HyfNa) By Supermetrics. Sources: Wada
+* [Meridian Planner](https://lookerstudio.google.com/c/u/0/datasources/create?connectorId=AKfycbx-HSSApXV7VTvYCgzvifyQ-bRlB3Oo_uAAvRKBkwUG1nOVIO_dTlpTmVASYM7oeN0D) By Google. Sources: Google Sheets
+
+---
 ## 2025-12-05
 
 ### Feature

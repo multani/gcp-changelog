@@ -110,6 +110,7 @@
 - [Filestore](filestore/index.md)
 - [Firestore](firestore/index.md)
 - [Firestore in Datastore mode](firestore-in-datastore-mode/index.md)
+- [Firestore with MongoDB compatibility](firestore-with-mongodb-compatibility/index.md)
 - [Gemini](gemini/index.md)
 - [Gemini Code Assist](gemini-code-assist/index.md)
 - [Gemini Enterprise](gemini-enterprise/index.md)

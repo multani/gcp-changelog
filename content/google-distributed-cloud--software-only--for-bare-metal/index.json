@@ -1,6 +1,48 @@
 {
   "name": "Google Distributed Cloud (software only) for bare metal",
   "entries": {
+    "2025-12-11": [
+      {
+        "kind": "Announcement",
+        "content": "Google Distributed Cloud for bare metal 1.34.0-gke.566 is now available for\n[download](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads). To\nupgrade, see [Upgrade\nclusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade).\nDistributed Cloud for bare metal 1.34.0-gke.566 runs on\nKubernetes v1.34.1-gke.2900.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for installations or upgrades with the [GKE On-Prem API\nclients](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools):\nthe Google Cloud console, the gcloud CLI, and Terraform.\n\nIf you use a third-party storage vendor, check the [Ready storage\npartners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage) document\nto make sure the storage vendor has already passed the qualification for this\nrelease of Distributed Cloud for bare metal.",
+        "summary": {
+          "title": "Bare Metal 1.34.0-gke.566 Now Available",
+          "summary": "The latest version of bare metal, 1.34.0-gke.566, is now ready for download and upgrade. This release runs on Kubernetes v1.34.1-gke.2900. Please allow 7-14 days for GKE On-Prem API clients to receive the update. If you use third-party storage, ensure your vendor is qualified for this release."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The following features were added in 1.34.0-gke.566:\n\n* **Preview**: Vertical Pod autoscaling can now be configured to use your\n  Prometheus instance as a persistent history provider for long-term CPU and\n  memory usage data.\n* **Preview**: Added support for horizontal Pod autoscaling that uses custom\n  metrics from your Prometheus server to scale your applications, eliminating\n  the operational burden of manually deploying and managing the adapter, its\n  configuration, and RBAC. The automated solution handles the entire\n  lifecycle, making it simpler to scale applications based on the metrics that\n  matter most to your business.\n* **GA**: Added new `ServiceCIDR` resources in your cluster. The Kubernetes\n  control plane uses these resources to manage the IP address ranges for your\n  Services automatically.\n* **Preview**: Added support for fast failover for the egress NAT gateway\n  running in high availability. This feature improves both the reliability and\n  throughput of egress traffic.\n* **GA**: Added support for skip minor version cluster upgrades. You can\n  directly upgrade your cluster control plane nodes (and entire cluster if\n  worker node pools aren't pinned at a lower version) to two minor versions\n  above the current version. Added the [`bmctl upgrade\n  intermediate-version`](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/reference/bmctl#upgrade_intermediate-version)\n  command to print the intermediate version for a skip minor version upgrade.\n* **Preview**: Added support for advanced networking features on admin\n  clusters. This capability lets you specify [multiple network interfaces for\n  Pods](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/multi-nic)\n  and lets you use [bundled load balancing with\n  BGP](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/lb-bundled-bgp)\n  on your version 1.34 or higher admin clusters.",
+        "summary": {
+          "title": "New autoscaling and networking features",
+          "summary": "Version 1.34.0-gke.566 introduces enhanced autoscaling options with Prometheus integration for both vertical and horizontal pod autoscaling. This release also brings improvements to cluster upgrades with support for skipping minor versions, and advanced networking capabilities for admin clusters, including multi-NIC support and BGP with bundled load balancing."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "The following functional changes were made in 1.34.0-gke.566:\n\n* Enabled Ansible SSH pipelining by default to improve performance. This can\n  be disabled by adding the annotation\n  `preview.baremetal.cluster.gke.io/ansible-ssh-pipelining: \"disable\"` to the\n  Cluster custom resource.\n* During cluster creation and update operations, NodePools validate IP address\n  uniqueness against all existing underlay Nodes, regardless of status. Node\n  deprovisioning is blocked until the associated Kubernetes Node is deleted,\n  unless the `node-deletion-timeout-seconds` annotation is present on the\n  cluster.\n* Upgraded containerd from 1.7 to 2.0.\n* Registry mirror configuration information has been migrated to the\n  `hosts.toml` containerd config file.\n* Upgrade preflight checks now validate PodDisruptionBudgets.\n* GKE Identity Service has been migrated from a Deployment to a DaemonSet for\n  improved reliability on control plane nodes.\n* Added support for Red Hat Enterprise Linux 9.6.\n* Removed support for Red Hat Enterprise Linux 9.2 as it is beyond the [Red\n  Hat support\n  window](https://access.redhat.com/support/policy/updates/errata#RHEL8_and_9_Life_Cycle).\n* Added support for the 6.14 kernel package is supported for use with Ubuntu\n  24.04 LTS.",
+        "summary": {
+          "title": "New Features and Performance Improvements in Version 1.34.0-gke.566",
+          "summary": "This release introduces performance enhancements through default Ansible SSH pipelining and improved NodePool IP validation. It also includes container runtime upgrades, enhanced registry configuration, and expanded OS support with RHEL 9.6 and Ubuntu 24.04 LTS kernel. Support for RHEL 9.2 has been removed."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.34.0-gke.566:\n\n* Updated the `bmctl restore` command so that it restores the Node Problem\n  Detector systemd Service for admin clusters.\n* Fixed the `etcd-cleanup` job timeout issue caused by the use of incorrect\n  certificates.\n* Fixed an issue where the cluster restore process leaves the Kubelet\n  certificate files as regular files instead of symbolic links, preventing\n  certificate rotation.",
+        "summary": {
+          "title": "Fixed cluster restore and Node Problem Detector issues",
+          "summary": "Version 1.34.0-gke.566 resolves issues with cluster restores, including correct handling of Kubelet certificate rotation. It also ensures the Node Problem Detector systemd service is restored for admin clusters and fixes a timeout issue with the etcd-cleanup job."
+        }
+      },
+      {
+        "kind": "Issue",
+        "content": "For information about the latest known issues, see [Google Distributed Cloud for\nbare metal known\nissues](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues)\nin the Troubleshooting section.",
+        "summary": {
+          "title": "Known Issues",
+          "summary": "Please refer to the known issues documentation for the latest information on known issues. This section provides details on troubleshooting common problems."
+        }
+      }
+    ],
     "2025-12-05": [
       {
         "kind": "Issue",

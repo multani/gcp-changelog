@@ -1,5 +1,121 @@
 # Container Optimized OS
 
+## 2025-12-11
+
+### Changed
+
+
+
+### cos-117-18613-439-65
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/4f012683a5c630e1785a292264ad2ee1d6133315 ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.439.65/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-38678 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40272 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40104 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-47914 and CVE-2025-58181 in dev-go/crypto.
+
+### Feature
+
+Added patches to handle IDPF tx timeouts.
+
+### Security
+
+Fixed CVE-2025-40248 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40320 in the Linux kernel.
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20251014.00.
+
+### Security
+
+Fixed CVE-2025-40273 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40271 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40319 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40251 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40231 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-21868 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40250 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811788 -> 811701
+
+### Security
+
+Fixed CVE-2025-40220 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-22103 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40324 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40293 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40297 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40292 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40268 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40256 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38057 in the Linux kernel.
+
+---
 ## 2025-12-10
 
 ### cos-121-18867-294-60
@@ -201,10 +317,6 @@ Upgraded app-admin/fluent-bit to v4.2.0.
 Runtime sysctl changes:
 
 * Changed: fs.file-max: 811999 -> 812052
-
-### Feature
-
-Added support for NVIDIA driver v580.95.05 and v580.105.08.
 
 ### Security
 

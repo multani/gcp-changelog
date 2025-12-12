@@ -1,5 +1,23 @@
 # Apigee API hub
 
+## 2025-12-11
+
+### Feature
+
+**Model Context Protocol (MCP) support in API hub**
+
+API hub now supports the Model Context Protocol (MCP) as a first-class API style. This enables you to ingest, register, and manage MCP APIs and their associated tools.
+
+**Key capabilities include:**
+
+* **MCP API registration:** Register MCP APIs manually or via API hub APIs to create a single registry for your agentic services.
+* **MCP tools:** Attach MCP specification files to your APIs. API hub parses these files to automatically extract and display the MCP tools in the UI.
+
+For more information, see [API resources overview](https://docs.cloud.google.com/apigee/docs/apihub/apis-intro), [Register MCP APIs](https://docs.cloud.google.com/apigee/docs/apihub/register-mcp-apis), and [Manage MCP tools](https://docs.cloud.google.com/apigee/docs/apihub/manage-mcp-tools).
+
+**Note:** Rollouts of this feature will begin today, and may take five or more business days to be completed across all Google Cloud zones. You may not be able to view or use this feature until the rollout is complete.
+
+---
 ## 2025-12-09
 
 ### Changed

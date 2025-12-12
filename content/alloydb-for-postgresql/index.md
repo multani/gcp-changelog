@@ -1,5 +1,13 @@
 # AlloyDB for PostgreSQL
 
+## 2025-12-11
+
+### Feature
+
+AlloyDB now supports the C4 machine series, which are powered by 6th generation Intel Xeon Granite Rapids processors. These instances offer massive machine sizes, with up to 288 vCPU and 2232 GiB RAM, that let you run extremely demanding workloads. For more information,
+see [Choose an AlloyDB machine type](https://docs.cloud.google.com/alloydb/docs/choose-machine-type). This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+---
 ## 2025-12-08
 
 ### Feature

@@ -1,6 +1,24 @@
 {
   "name": "Guest Environment",
   "entries": {
+    "2025-12-08": [
+      {
+        "kind": "Fixed",
+        "content": "Version `20251205.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent) is\navailable for Linux only. This version includes the following fixes:\n\n* Fixes an issue where the metadata server would become inaccessible during\n  the dynamic removal of multiple vLAN NICs.\n* Fixes an issue where the metadata script runner failed to parse all\n  supported URL patterns and formats.\n* Rolls back multi-universe support for the Agent Communication Service (ACS)\n  client due to issues in the default universe.",
+        "summary": {
+          "title": "Guest agent updated",
+          "summary": "Version 20251205.00 of the guest agent for Linux is now available, addressing issues with metadata server accessibility, metadata script parsing, and the Agent Communication Service client."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Version `20251205.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent) is\navailable for Linux only. This version includes the following feature:\n\n* Snapshot module now supports using NGUIDs to identify disks supporting a\n  wider range of VM families.",
+        "summary": {
+          "title": "Guest agent update with NGUID disk support",
+          "summary": "The latest guest agent version (20251205.00) for Linux introduces support for NGUIDs to identify disks. This enhancement allows for broader compatibility with various VM families by enabling the snapshot module to recognize a wider range of disk types."
+        }
+      }
+    ],
     "2025-11-20": [
       {
         "kind": "Feature",
@@ -13,19 +31,19 @@
     ],
     "2025-11-17": [
       {
-        "kind": "Fixed",
-        "content": "Version `20251115.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)\nis now available and includes the following fixes:\n\\* Fixes an issue in the dynamic vLAN subsystem where the `dhclient` backend\nattempted to remove `netplan`'s vLAN NICs.\n\\* Fixes a crash loop in the plugin manager caused by its handling of plugin\nlogs.",
-        "summary": {
-          "title": "Guest agent update addresses vLAN and plugin issues",
-          "summary": "A new version of the guest agent is available, resolving a dynamic vLAN subsystem problem and a crash loop in the plugin manager."
-        }
-      },
-      {
         "kind": "Feature",
         "content": "Version `20251115.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)\nis now available.",
         "summary": {
           "title": "Guest agent update",
           "summary": "The latest version of the guest agent is available."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Version `20251115.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)\nis now available and includes the following fixes:\n\n* Fixes an issue in the dynamic vLAN subsystem where the `dhclient` backend\n  attempted to remove `netplan`'s vLAN NICs.\n* Fixes a crash loop in the plugin manager caused by its handling of plugin\n  logs.",
+        "summary": {
+          "title": "Guest Agent Update",
+          "summary": "The latest guest agent version (20251115.00) resolves issues with the dynamic vLAN subsystem and plugin manager log handling, ensuring smoother operation."
         }
       }
     ],

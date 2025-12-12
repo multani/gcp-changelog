@@ -1,5 +1,28 @@
 # Guest Environment
 
+## 2025-12-08
+
+### Fixed
+
+Version `20251205.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent) is
+available for Linux only. This version includes the following fixes:
+
+* Fixes an issue where the metadata server would become inaccessible during
+  the dynamic removal of multiple vLAN NICs.
+* Fixes an issue where the metadata script runner failed to parse all
+  supported URL patterns and formats.
+* Rolls back multi-universe support for the Agent Communication Service (ACS)
+  client due to issues in the default universe.
+
+### Feature
+
+Version `20251205.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent) is
+available for Linux only. This version includes the following feature:
+
+* Snapshot module now supports using NGUIDs to identify disks supporting a
+  wider range of VM families.
+
+---
 ## 2025-11-20
 
 ### Feature
@@ -13,19 +36,20 @@ now available for Windows only. This version includes the following fix:
 ---
 ## 2025-11-17
 
-### Fixed
-
-Version `20251115.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)
-is now available and includes the following fixes:
-\* Fixes an issue in the dynamic vLAN subsystem where the `dhclient` backend
-attempted to remove `netplan`'s vLAN NICs.
-\* Fixes a crash loop in the plugin manager caused by its handling of plugin
-logs.
-
 ### Feature
 
 Version `20251115.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)
 is now available.
+
+### Fixed
+
+Version `20251115.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)
+is now available and includes the following fixes:
+
+* Fixes an issue in the dynamic vLAN subsystem where the `dhclient` backend
+  attempted to remove `netplan`'s vLAN NICs.
+* Fixes a crash loop in the plugin manager caused by its handling of plugin
+  logs.
 
 ---
 ## 2025-11-13

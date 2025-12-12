@@ -2,9 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Guest Environment</title>
   <subtitle>Changelog for Google Cloud product: Guest Environment</subtitle>
-  <updated>2025-11-20T00:00:00+00:00</updated>
+  <updated>2025-12-08T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:guest-environment</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/guest-environment/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2025-12-08:fixed:0</id>
+    <published>2025-12-08T00:00:00+00:00</published>
+    <updated>2025-12-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20251205.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a> is
+available for Linux only. This version includes the following fixes:</p>
+<ul>
+<li>Fixes an issue where the metadata server would become inaccessible during
+  the dynamic removal of multiple vLAN NICs.</li>
+<li>Fixes an issue where the metadata script runner failed to parse all
+  supported URL patterns and formats.</li>
+<li>Rolls back multi-universe support for the Agent Communication Service (ACS)
+  client due to issues in the default universe.</li>
+</ul>]]></content>
+    <summary>Version 20251205.00 of the guest agent for Linux is now available, addressing issues with metadata server accessibility, metadata script parsing, and the Agent Communication Service client.</summary>
+    <title>Fixed: Guest agent updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2025-12-08:feature:1</id>
+    <published>2025-12-08T00:00:00+00:00</published>
+    <updated>2025-12-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20251205.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a> is
+available for Linux only. This version includes the following feature:</p>
+<ul>
+<li>Snapshot module now supports using NGUIDs to identify disks supporting a
+  wider range of VM families.</li>
+</ul>]]></content>
+    <summary>The latest guest agent version (20251205.00) for Linux introduces support for NGUIDs to identify disks. This enhancement allows for broader compatibility with various VM families by enabling the snapshot module to recognize a wider range of disk types.</summary>
+    <title>Feature: Guest agent update with NGUID disk support</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -25,29 +61,31 @@ now available for Windows only. This version includes the following fix:</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:guest-environment:2025-11-17:fixed:0</id>
-    <published>2025-11-17T00:00:00+00:00</published>
-    <updated>2025-11-17T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Version <code>20251115.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a>
-is now available and includes the following fixes:
-* Fixes an issue in the dynamic vLAN subsystem where the <code>dhclient</code> backend
-attempted to remove <code>netplan</code>'s vLAN NICs.
-* Fixes a crash loop in the plugin manager caused by its handling of plugin
-logs.</p>]]></content>
-    <summary>A new version of the guest agent is available, resolving a dynamic vLAN subsystem problem and a crash loop in the plugin manager.</summary>
-    <title>Fixed: Guest agent update addresses vLAN and plugin issues</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:guest-environment:2025-11-17:feature:1</id>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2025-11-17:feature:0</id>
     <published>2025-11-17T00:00:00+00:00</published>
     <updated>2025-11-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Version <code>20251115.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a>
 is now available.</p>]]></content>
     <summary>The latest version of the guest agent is available.</summary>
     <title>Feature: Guest agent update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2025-11-17:fixed:1</id>
+    <published>2025-11-17T00:00:00+00:00</published>
+    <updated>2025-11-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20251115.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a>
+is now available and includes the following fixes:</p>
+<ul>
+<li>Fixes an issue in the dynamic vLAN subsystem where the <code>dhclient</code> backend
+  attempted to remove <code>netplan</code>'s vLAN NICs.</li>
+<li>Fixes a crash loop in the plugin manager caused by its handling of plugin
+  logs.</li>
+</ul>]]></content>
+    <summary>The latest guest agent version (20251115.00) resolves issues with the dynamic vLAN subsystem and plugin manager log handling, ensuring smoother operation.</summary>
+    <title>Fixed: Guest Agent Update</title>
   </entry>
   <entry>
     <author>

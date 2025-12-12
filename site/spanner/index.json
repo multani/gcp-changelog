@@ -1,6 +1,16 @@
 {
   "name": "Spanner",
   "entries": {
+    "2025-12-11": [
+      {
+        "kind": "Feature",
+        "content": "Spanner [Data Boost](https://docs.cloud.google.com/spanner/docs/databoost/databoost-overview) now includes a\nnew quota, [Data Boost concurrent requests in milli-operations per second per\nregion](https://docs.cloud.google.com/spanner/docs/databoost/databoost-quotas), which applies more\nfine-grained control over how multiple concurrent requests for your project\nshare Data boost resources. Instead of counting 1 request against 1 unit of\nquota under the existing [concurrency quota regime](https://docs.cloud.google.com/spanner/docs/databoost/databoost-quotas),\nData Boost now splits a request at a granularity of 1/1000, allowing for a\ngreater number of concurrent requests to make progress. For more information,\nsee [Quotas and limits](https://docs.cloud.google.com/spanner/quotas#data_boost_limits).",
+        "summary": {
+          "title": "Spanner Data Boost Enhances Concurrency Control",
+          "summary": "Spanner Data Boost has introduced a new quota for concurrent requests, measured in milli-operations per second per region. This change allows for more granular control and a greater number of concurrent requests to utilize Data Boost resources effectively."
+        }
+      }
+    ],
     "2025-12-10": [
       {
         "kind": "Feature",

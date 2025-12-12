@@ -2,9 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Spanner</title>
   <subtitle>Changelog for Google Cloud product: Spanner</subtitle>
-  <updated>2025-12-10T00:00:00+00:00</updated>
+  <updated>2025-12-11T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:spanner</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/spanner/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2025-12-11:feature:0</id>
+    <published>2025-12-11T00:00:00+00:00</published>
+    <updated>2025-12-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Spanner <a href="https://docs.cloud.google.com/spanner/docs/databoost/databoost-overview">Data Boost</a> now includes a
+new quota, <a href="https://docs.cloud.google.com/spanner/docs/databoost/databoost-quotas">Data Boost concurrent requests in milli-operations per second per
+region</a>, which applies more
+fine-grained control over how multiple concurrent requests for your project
+share Data boost resources. Instead of counting 1 request against 1 unit of
+quota under the existing <a href="https://docs.cloud.google.com/spanner/docs/databoost/databoost-quotas">concurrency quota regime</a>,
+Data Boost now splits a request at a granularity of 1/1000, allowing for a
+greater number of concurrent requests to make progress. For more information,
+see <a href="https://docs.cloud.google.com/spanner/quotas#data_boost_limits">Quotas and limits</a>.</p>]]></content>
+    <summary>Spanner Data Boost has introduced a new quota for concurrent requests, measured in milli-operations per second per region. This change allows for more granular control and a greater number of concurrent requests to utilize Data Boost resources effectively.</summary>
+    <title>Feature: Spanner Data Boost Enhances Concurrency Control</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

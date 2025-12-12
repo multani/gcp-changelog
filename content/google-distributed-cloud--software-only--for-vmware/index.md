@@ -1,5 +1,15 @@
 # Google Distributed Cloud (software only) for VMware
 
+## 2025-12-11
+
+### Fixed
+
+The following issues were fixed in 1.34.0-gke.566:
+
+* Fixed vulnerabilities listed in
+  [Vulnerability fixes](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
+
+---
 ## 2025-12-05
 
 ### Fixed

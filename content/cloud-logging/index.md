@@ -1,5 +1,13 @@
 # Cloud Logging
 
+## 2025-12-12
+
+### Changed
+
+The default setting for the time-range selector for the
+Logs Explorer is now five minutes. The previous default was one hour.
+
+---
 ## 2025-12-08
 
 ### Feature

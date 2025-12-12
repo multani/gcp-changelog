@@ -2,9 +2,241 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Composer</title>
   <subtitle>Changelog for Google Cloud product: Cloud Composer</subtitle>
-  <updated>2025-11-24T00:00:00+00:00</updated>
+  <updated>2025-12-12T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-composer</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-composer/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-12-12:deprecated:0</id>
+    <published>2025-12-12T00:00:00+00:00</published>
+    <updated>2025-12-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following Cloud Composer versions and builds have reached their
+<a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
+composer-3-airflow-2.9.3-build.11, composer-2.10.1-*.</p>]]></content>
+    <summary>Certain versions of Cloud Composer, including composer-3-airflow-2.9.3-build.11 and composer-2.10.1-\* builds, have reached their end of support period. Users are encouraged to migrate to supported versions to ensure continued service availability.</summary>
+    <title>Deprecated: Cloud Composer versions reaching end of support</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-12-12:changed:1</id>
+    <published>2025-12-12T00:00:00+00:00</published>
+    <updated>2025-12-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
+are available in Cloud Composer 3:</p>
+<ul>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-0-build-6">composer-3-airflow-3.1.0-build.6</a></li>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-23">composer-3-airflow-2.10.5-build.23</a> (default)</li>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-43">composer-3-airflow-2.9.3-build.43</a></li>
+</ul>]]></content>
+    <summary>Updated Airflow builds are now available for Cloud Composer 3, including Airflow 3.1.0 and newer versions of 2.10.5 and 2.9.3. These updates provide the latest features and improvements for your data pipelines.</summary>
+    <title>Changed: New Airflow Builds Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-12-12:fixed:2</id>
+    <published>2025-12-12T00:00:00+00:00</published>
+    <updated>2025-12-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed an issue where the Copy button on the DAG details page in the Airflow UI
+was copying incorrect content.</p>]]></content>
+    <summary>The copy button on the DAG details page in the Airflow UI has been fixed. This resolves an issue where it was previously copying incorrect content.</summary>
+    <title>Fixed: Airflow UI copy button fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-12-12:changed:3</id>
+    <published>2025-12-12T00:00:00+00:00</published>
+    <updated>2025-12-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
+are available in Cloud Composer 2:</p>
+<ul>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-1-airflow-2-10-5">composer-2.16.1-airflow-2.10.5</a> (default)</li>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-1-airflow-2-9-3">composer-2.16.1-airflow-2.9.3</a></li>
+</ul>]]></content>
+    <summary>New images for Cloud Composer 2 have been released, including versions composer-2.16.1-airflow-2.10.5 and composer-2.16.1-airflow-2.9.3. The composer-2.16.1-airflow-2.10.5 image is now the default.</summary>
+    <title>Changed: New Composer images available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-12-12:feature:4</id>
+    <published>2025-12-12T00:00:00+00:00</published>
+    <updated>2025-12-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/composer/docs/composer-versioning-overview#comparison-airflow-versions"><strong>Database retention policy</strong></a>
+is now available in environments with Airflow 3, starting with composer-3-airflow-3.1.0-build.5.</p>
+<p>This change is gradually rolled out in several releases and is available in the
+following regions in this release: africa-south1, asia-east1, asia-northeast2,
+asia-northeast3, asia-south2, asia-southeast2, asia-southeast3,
+australia-southeast2, europe-central2, europe-north2, europe-southwest1,
+europe-west10, europe-west12, europe-west15, europe-west4, europe-west6,
+europe-west8, europe-west9, me-central1, me-central2, me-west1,
+northamerica-northeast1, northamerica-northeast2, northamerica-south1,
+southamerica-east1, southamerica-west1, us-east5, us-south1, us-west3, us-west4.</p>]]></content>
+    <summary>The database retention policy feature is now available for environments running Airflow 3, starting with composer-3-airflow-3.1.0-build.5. This feature provides enhanced control over database management within your environments and is rolling out across multiple regions.</summary>
+    <title>Feature: Database retention policy available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-12-09:feature:0</id>
+    <published>2025-12-09T00:00:00+00:00</published>
+    <updated>2025-12-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><em>(Cloud Composer 2)</em> Cloud Composer's high availability infrastructure was
+enhanced to provide greater resilience against zonal outages. This feature was
+<a href="https://docs.cloud.google.com/composer/docs/release-notes#September_03_2025">announced previously</a>
+and has finished gradually rolling out to all regions supported by
+Cloud Composer.</p>]]></content>
+    <summary>Cloud Composer's high availability infrastructure has been improved to offer better resilience against zonal outages. This feature is now available in all supported regions.</summary>
+    <title>Feature: Enhanced composer infrastructure for resilience</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-12-09:changed:1</id>
+    <published>2025-12-09T00:00:00+00:00</published>
+    <updated>2025-12-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><em>(Cloud Composer 3)</em> The name format for <a href="https://docs.cloud.google.com/composer/docs/composer-3/connect-vpc-network">network attachments</a> created by
+Cloud Composer was modified to enhance uniqueness. This change applies only to
+newly created network attachments.</p>]]></content>
+    <summary>The naming convention for network attachments in Cloud Composer has been updated to improve uniqueness. This change affects only newly created network attachments and ensures better identification for these resources.</summary>
+    <title>Changed: Network attachment name format updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-12-09:changed:2</id>
+    <published>2025-12-09T00:00:00+00:00</published>
+    <updated>2025-12-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><em>(Airflow 3.1.0 and 2.10.5)</em> The <code>apache-airflow-providers-cncf-kubernetes</code>
+package was
+<a href="https://airflow.apache.org/docs/apache-airflow-providers-cncf-kubernetes/stable/changelog.html">upgraded to version 10.9.0</a>.
+For changes in other packages, see the
+<a href="https://cloud.google.com/composer/docs/versions-packages">preinstalled packages changelog</a>.</p>]]></content>
+    <summary>The Kubernetes provider package for Airflow has been upgraded to version 10.9.0. This update includes changes specific to the Kubernetes provider. For a comprehensive list of all package updates, please refer to the preinstalled packages changelog.</summary>
+    <title>Changed: Kubernetes provider package updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-12-09:changed:3</id>
+    <published>2025-12-09T00:00:00+00:00</published>
+    <updated>2025-12-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
+are available in Cloud Composer 3:</p>
+<ul>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-0-build-5">composer-3-airflow-3.1.0-build.5</a></li>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-22">composer-3-airflow-2.10.5-build.22</a> (default)</li>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-42">composer-3-airflow-2.9.3-build.42</a></li>
+</ul>]]></content>
+    <summary>New Airflow builds are now available for Cloud Composer 3, including options for Airflow 3.1.0, 2.10.5 (default), and 2.9.3. These updates offer flexibility in choosing your Airflow version within the Composer 3 environment.</summary>
+    <title>Changed: New Airflow Builds Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-12-09:fixed:4</id>
+    <published>2025-12-09T00:00:00+00:00</published>
+    <updated>2025-12-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed an issue where <code>composer.googleapis.com/environment/executor/open_slots</code>
+and <code>composer.googleapis.com/environment/executor/running_tasks</code> were not
+available in environments with Airflow 3.</p>]]></content>
+    <summary>The executor metrics `open_slots` and `running_tasks` are now available for environments running Airflow 3. This issue prevented users from accessing these crucial metrics, impacting monitoring capabilities.</summary>
+    <title>Fixed: Executor metrics fixed for Airflow 3</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-12-09:changed:5</id>
+    <published>2025-12-09T00:00:00+00:00</published>
+    <updated>2025-12-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><em>(Airflow 3.1.0 and 2.10.5)</em> The <code>apache-airflow-providers-google</code> package was
+upgraded to version 19.0.0 in Cloud Composer 2 images and Cloud Composer 3
+builds.</p>
+<p>For more information about changes, see the
+<a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html">apache-airflow-providers-google changelog</a>
+from version 18.0.0 to version 19.0.0.</p>]]></content>
+    <summary>The Google provider package for Airflow has been updated to version 19.0.0. This update is available in Cloud Composer 2 images and Cloud Composer 3 builds. For a detailed list of changes, please refer to the official Airflow provider changelog.</summary>
+    <title>Changed: Updated Google provider for Airflow</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-12-09:feature:6</id>
+    <published>2025-12-09T00:00:00+00:00</published>
+    <updated>2025-12-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/composer/docs/composer-versioning-overview#comparison-airflow-versions"><strong>Database retention policy</strong></a> is now available
+in environments with Airflow 3, starting with composer-3-airflow-3.1.0-build.5.
+This change is gradually rolled out in several releases and is available in the
+following regions in this release: europe-north1, us-west2, us-east1,
+europe-west3, asia-east2.</p>]]></content>
+    <summary>The database retention policy feature is now available for environments using Airflow 3, starting with composer-3-airflow-3.1.0-build.5. This feature is gradually rolling out and is currently available in select regions including europe-north1, us-west2, us-east1, europe-west3, and asia-east2.</summary>
+    <title>Feature: Database retention policy now available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-12-09:changed:7</id>
+    <published>2025-12-09T00:00:00+00:00</published>
+    <updated>2025-12-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
+are available in Cloud Composer 2:</p>
+<ul>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-0-airflow-2-10-5">composer-2.16.0-airflow-2.10.5</a> (default)</li>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-0-airflow-2-9-3">composer-2.16.0-airflow-2.9.3</a></li>
+</ul>]]></content>
+    <summary>New images for Cloud Composer 2 are now available, including composer-2.16.0-airflow-2.10.5 which is the new default. This update brings the latest Airflow version for improved performance and features.</summary>
+    <title>Changed: New Composer 2 Images Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-12-09:deprecated:8</id>
+    <published>2025-12-09T00:00:00+00:00</published>
+    <updated>2025-12-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following Cloud Composer versions and builds have reached their
+<a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
+composer-3-airflow-2.7.3-build.22, composer-3-airflow-2.7.3-build.23,
+composer-3-airflow-2.9.3-build.2, composer-3-airflow-2.9.3-build.3,
+composer-3-airflow-2.9.3-build.4, composer-3-airflow-2.9.3-build.5,
+composer-3-airflow-2.9.3-build.6, composer-3-airflow-2.9.3-build.7,
+composer-3-airflow-2.9.3-build.10, composer-2.9.10-*, composer-2.9.11-*,
+composer-2.10.0-*.</p>]]></content>
+    <summary>Several Cloud Composer versions and builds have reached their end of support period. Please upgrade to a supported version to ensure continued access to security updates and features.</summary>
+    <title>Deprecated: Composer versions end of support</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-12-09:announcement:9</id>
+    <published>2025-12-09T00:00:00+00:00</published>
+    <updated>2025-12-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The dates for maintenance exclusions were changed from the dates
+<a href="https://docs.cloud.google.com/composer/docs/release-notes#November_17_2025">announced earlier</a>.
+All Cloud Composer environment's
+GKE clusters are now set up with <strong>maintenance exclusions</strong> from
+December 4, 2025 to January 2, 2026. For more information, see
+<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">Maintenance exclusions</a>.</p>]]></content>
+    <summary>The maintenance exclusion dates for Cloud Composer environments have been updated. All GKE clusters will now have maintenance exclusions from December 4, 2025, to January 2, 2026.</summary>
+    <title>Announcement: Maintenance Exclusions Updated</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -32,7 +264,21 @@ the issue for all currently affected environments.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-11-17:changed:0</id>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-11-17:announcement:0</id>
+    <published>2025-11-17T00:00:00+00:00</published>
+    <updated>2025-11-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>All Cloud Composer environment's GKE clusters are set up with
+<strong>maintenance exclusions</strong> from December 16, 2025 to January 2, 2026. For more
+information, see
+<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">Maintenance exclusions</a>.</p>]]></content>
+    <summary>All Cloud Composer environments will have maintenance exclusions applied to their GKE clusters from December 16, 2025, to January 2, 2026. This is to ensure service continuity during the holiday period. For detailed information, please refer to the documentation on maintenance exclusions.</summary>
+    <title>Announcement: Composer maintenance period</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-11-17:changed:1</id>
     <published>2025-11-17T00:00:00+00:00</published>
     <updated>2025-11-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
@@ -42,32 +288,6 @@ are available in Cloud Composer 3:</p>
 </ul>]]></content>
     <summary>New Airflow builds are now available for Cloud Composer 3, including composer-3-airflow-3.1.0-build.2.</summary>
     <title>Changed: New Airflow builds available</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-11-17:feature:1</id>
-    <published>2025-11-17T00:00:00+00:00</published>
-    <updated>2025-11-17T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/composer/docs/composer-versioning-overview#comparison-airflow-versions"><strong>Airflow 3</strong></a>
-is available in Preview in Cloud Composer 3.</p>]]></content>
-    <summary>Airflow 3 is now available in preview in Cloud Composer 3.</summary>
-    <title>Feature: Airflow 3 in Cloud Composer 3</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2025-11-17:announcement:2</id>
-    <published>2025-11-17T00:00:00+00:00</published>
-    <updated>2025-11-17T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>All Cloud Composer environment's GKE clusters are set up with
-<strong>maintenance exclusions</strong> from December 16, 2025 to January 2, 2025. For more
-information, see
-<a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">Maintenance exclusions</a>.</p>]]></content>
-    <summary>Cloud Composer environments have GKE clusters with maintenance exclusions scheduled from December 16, 2025, to January 2, 2025. This proactive measure ensures service continuity during the specified period.</summary>
-    <title>Announcement: Cloud Composer Maintenance Exclusions</title>
   </entry>
   <entry>
     <author>

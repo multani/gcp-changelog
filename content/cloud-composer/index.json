@@ -1,6 +1,130 @@
 {
   "name": "Cloud Composer",
   "entries": {
+    "2025-12-12": [
+      {
+        "kind": "Deprecated",
+        "content": "The following Cloud Composer versions and builds have reached their\n[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-3-airflow-2.9.3-build.11, composer-2.10.1-\\*.",
+        "summary": {
+          "title": "Cloud Composer versions reaching end of support",
+          "summary": "Certain versions of Cloud Composer, including composer-3-airflow-2.9.3-build.11 and composer-2.10.1-\\* builds, have reached their end of support period. Users are encouraged to migrate to supported versions to ensure continued service availability."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Cloud Composer 3:\n\n* [composer-3-airflow-3.1.0-build.6](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-0-build-6)\n* [composer-3-airflow-2.10.5-build.23](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-23) (default)\n* [composer-3-airflow-2.9.3-build.43](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-43)",
+        "summary": {
+          "title": "New Airflow Builds Available",
+          "summary": "Updated Airflow builds are now available for Cloud Composer 3, including Airflow 3.1.0 and newer versions of 2.10.5 and 2.9.3. These updates provide the latest features and improvements for your data pipelines."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed an issue where the Copy button on the DAG details page in the Airflow UI\nwas copying incorrect content.",
+        "summary": {
+          "title": "Airflow UI copy button fixed",
+          "summary": "The copy button on the DAG details page in the Airflow UI has been fixed. This resolves an issue where it was previously copying incorrect content."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "New [images](https://cloud.google.com/composer/docs/composer-versions#images-composer-2)\nare available in Cloud Composer 2:\n\n* [composer-2.16.1-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-16-1-airflow-2-10-5) (default)\n* [composer-2.16.1-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-16-1-airflow-2-9-3)",
+        "summary": {
+          "title": "New Composer images available",
+          "summary": "New images for Cloud Composer 2 have been released, including versions composer-2.16.1-airflow-2.10.5 and composer-2.16.1-airflow-2.9.3. The composer-2.16.1-airflow-2.10.5 image is now the default."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "[**Database retention policy**](https://docs.cloud.google.com/composer/docs/composer-versioning-overview#comparison-airflow-versions)\nis now available in environments with Airflow 3, starting with composer-3-airflow-3.1.0-build.5.\n\nThis change is gradually rolled out in several releases and is available in the\nfollowing regions in this release: africa-south1, asia-east1, asia-northeast2,\nasia-northeast3, asia-south2, asia-southeast2, asia-southeast3,\naustralia-southeast2, europe-central2, europe-north2, europe-southwest1,\neurope-west10, europe-west12, europe-west15, europe-west4, europe-west6,\neurope-west8, europe-west9, me-central1, me-central2, me-west1,\nnorthamerica-northeast1, northamerica-northeast2, northamerica-south1,\nsouthamerica-east1, southamerica-west1, us-east5, us-south1, us-west3, us-west4.",
+        "summary": {
+          "title": "Database retention policy available",
+          "summary": "The database retention policy feature is now available for environments running Airflow 3, starting with composer-3-airflow-3.1.0-build.5. This feature provides enhanced control over database management within your environments and is rolling out across multiple regions."
+        }
+      }
+    ],
+    "2025-12-09": [
+      {
+        "kind": "Feature",
+        "content": "*(Cloud Composer 2)* Cloud Composer's high availability infrastructure was\nenhanced to provide greater resilience against zonal outages. This feature was\n[announced previously](https://docs.cloud.google.com/composer/docs/release-notes#September_03_2025)\nand has finished gradually rolling out to all regions supported by\nCloud Composer.",
+        "summary": {
+          "title": "Enhanced composer infrastructure for resilience",
+          "summary": "Cloud Composer's high availability infrastructure has been improved to offer better resilience against zonal outages. This feature is now available in all supported regions."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "*(Cloud Composer 3)* The name format for [network attachments](https://docs.cloud.google.com/composer/docs/composer-3/connect-vpc-network) created by\nCloud Composer was modified to enhance uniqueness. This change applies only to\nnewly created network attachments.",
+        "summary": {
+          "title": "Network attachment name format updated",
+          "summary": "The naming convention for network attachments in Cloud Composer has been updated to improve uniqueness. This change affects only newly created network attachments and ensures better identification for these resources."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "*(Airflow 3.1.0 and 2.10.5)* The `apache-airflow-providers-cncf-kubernetes`\npackage was\n[upgraded to version 10.9.0](https://airflow.apache.org/docs/apache-airflow-providers-cncf-kubernetes/stable/changelog.html).\nFor changes in other packages, see the\n[preinstalled packages changelog](https://cloud.google.com/composer/docs/versions-packages).",
+        "summary": {
+          "title": "Kubernetes provider package updated",
+          "summary": "The Kubernetes provider package for Airflow has been upgraded to version 10.9.0. This update includes changes specific to the Kubernetes provider. For a comprehensive list of all package updates, please refer to the preinstalled packages changelog."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Cloud Composer 3:\n\n* [composer-3-airflow-3.1.0-build.5](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-0-build-5)\n* [composer-3-airflow-2.10.5-build.22](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-22) (default)\n* [composer-3-airflow-2.9.3-build.42](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-42)",
+        "summary": {
+          "title": "New Airflow Builds Available",
+          "summary": "New Airflow builds are now available for Cloud Composer 3, including options for Airflow 3.1.0, 2.10.5 (default), and 2.9.3. These updates offer flexibility in choosing your Airflow version within the Composer 3 environment."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed an issue where `composer.googleapis.com/environment/executor/open_slots`\nand `composer.googleapis.com/environment/executor/running_tasks` were not\navailable in environments with Airflow 3.",
+        "summary": {
+          "title": "Executor metrics fixed for Airflow 3",
+          "summary": "The executor metrics `open_slots` and `running_tasks` are now available for environments running Airflow 3. This issue prevented users from accessing these crucial metrics, impacting monitoring capabilities."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "*(Airflow 3.1.0 and 2.10.5)* The `apache-airflow-providers-google` package was\nupgraded to version 19.0.0 in Cloud Composer 2 images and Cloud Composer 3\nbuilds.\n\nFor more information about changes, see the\n[apache-airflow-providers-google changelog](https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html)\nfrom version 18.0.0 to version 19.0.0.",
+        "summary": {
+          "title": "Updated Google provider for Airflow",
+          "summary": "The Google provider package for Airflow has been updated to version 19.0.0. This update is available in Cloud Composer 2 images and Cloud Composer 3 builds. For a detailed list of changes, please refer to the official Airflow provider changelog."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "[**Database retention policy**](https://docs.cloud.google.com/composer/docs/composer-versioning-overview#comparison-airflow-versions) is now available\nin environments with Airflow 3, starting with composer-3-airflow-3.1.0-build.5.\nThis change is gradually rolled out in several releases and is available in the\nfollowing regions in this release: europe-north1, us-west2, us-east1,\neurope-west3, asia-east2.",
+        "summary": {
+          "title": "Database retention policy now available",
+          "summary": "The database retention policy feature is now available for environments using Airflow 3, starting with composer-3-airflow-3.1.0-build.5. This feature is gradually rolling out and is currently available in select regions including europe-north1, us-west2, us-east1, europe-west3, and asia-east2."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "New [images](https://cloud.google.com/composer/docs/composer-versions#images-composer-2)\nare available in Cloud Composer 2:\n\n* [composer-2.16.0-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-16-0-airflow-2-10-5) (default)\n* [composer-2.16.0-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-16-0-airflow-2-9-3)",
+        "summary": {
+          "title": "New Composer 2 Images Available",
+          "summary": "New images for Cloud Composer 2 are now available, including composer-2.16.0-airflow-2.10.5 which is the new default. This update brings the latest Airflow version for improved performance and features."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "The following Cloud Composer versions and builds have reached their\n[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-3-airflow-2.7.3-build.22, composer-3-airflow-2.7.3-build.23,\ncomposer-3-airflow-2.9.3-build.2, composer-3-airflow-2.9.3-build.3,\ncomposer-3-airflow-2.9.3-build.4, composer-3-airflow-2.9.3-build.5,\ncomposer-3-airflow-2.9.3-build.6, composer-3-airflow-2.9.3-build.7,\ncomposer-3-airflow-2.9.3-build.10, composer-2.9.10-\\*, composer-2.9.11-\\*,\ncomposer-2.10.0-\\*.",
+        "summary": {
+          "title": "Composer versions end of support",
+          "summary": "Several Cloud Composer versions and builds have reached their end of support period. Please upgrade to a supported version to ensure continued access to security updates and features."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "The dates for maintenance exclusions were changed from the dates\n[announced earlier](https://docs.cloud.google.com/composer/docs/release-notes#November_17_2025).\nAll Cloud Composer environment's\nGKE clusters are now set up with **maintenance exclusions** from\nDecember 4, 2025 to January 2, 2026. For more information, see\n[Maintenance exclusions](https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions).",
+        "summary": {
+          "title": "Maintenance Exclusions Updated",
+          "summary": "The maintenance exclusion dates for Cloud Composer environments have been updated. All GKE clusters will now have maintenance exclusions from December 4, 2025, to January 2, 2026."
+        }
+      }
+    ],
     "2025-11-24": [
       {
         "kind": "Issue",
@@ -13,27 +137,19 @@
     ],
     "2025-11-17": [
       {
+        "kind": "Announcement",
+        "content": "All Cloud Composer environment's GKE clusters are set up with\n**maintenance exclusions** from December 16, 2025 to January 2, 2026. For more\ninformation, see\n[Maintenance exclusions](https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions).",
+        "summary": {
+          "title": "Composer maintenance period",
+          "summary": "All Cloud Composer environments will have maintenance exclusions applied to their GKE clusters from December 16, 2025, to January 2, 2026. This is to ensure service continuity during the holiday period. For detailed information, please refer to the documentation on maintenance exclusions."
+        }
+      },
+      {
         "kind": "Changed",
         "content": "New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Cloud Composer 3:\n\n* [composer-3-airflow-3.1.0-build.2](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-0-build-2)",
         "summary": {
           "title": "New Airflow builds available",
           "summary": "New Airflow builds are now available for Cloud Composer 3, including composer-3-airflow-3.1.0-build.2."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "[**Airflow 3**](https://docs.cloud.google.com/composer/docs/composer-versioning-overview#comparison-airflow-versions)\nis available in Preview in Cloud Composer 3.",
-        "summary": {
-          "title": "Airflow 3 in Cloud Composer 3",
-          "summary": "Airflow 3 is now available in preview in Cloud Composer 3."
-        }
-      },
-      {
-        "kind": "Announcement",
-        "content": "All Cloud Composer environment's GKE clusters are set up with\n**maintenance exclusions** from December 16, 2025 to January 2, 2025. For more\ninformation, see\n[Maintenance exclusions](https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions).",
-        "summary": {
-          "title": "Cloud Composer Maintenance Exclusions",
-          "summary": "Cloud Composer environments have GKE clusters with maintenance exclusions scheduled from December 16, 2025, to January 2, 2025. This proactive measure ensures service continuity during the specified period."
         }
       }
     ],

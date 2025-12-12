@@ -1,5 +1,17 @@
 # Bigtable
 
+## 2025-12-12
+
+### Feature
+
+In the Google Cloud console, you can import data into Bigtable using the
+[Dataflow job builder](https://docs.cloud.google.com/dataflow/docs/guides/job-builder),
+a web interface for building and running Dataflow pipelines. This integration
+provides a pre-populated template to import data from Pub/Sub to Bigtable. You
+can also create a custom job to import data from other sources. For more
+information, see [Import and export data](https://docs.cloud.google.com/bigtable/docs/import-export).
+
+---
 ## 2025-11-03
 
 ### Feature

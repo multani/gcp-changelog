@@ -1,5 +1,28 @@
 # SAP on Google Cloud
 
+## 2025-12-12
+
+### Announcement
+
+**New SAP certification: 6, 8, and 12 TB X4 machine types for SAP HANA scale-up workloads**
+
+For use with SAP HANA scale-up (OLTP and OLAP) workloads running on
+Google Cloud, SAP has certified the following Compute Engine X4
+machine types:
+
+* `x4-480-6t-metal` - 6 TB memory
+* `x4-480-8t-metal` - 8 TB memory
+* `x4-960-12t-metal` - 12 TB memory
+
+With this certification, the names of all X4 machine types have been updated to
+convey the memory they offer. For example, `x4-megamem-960-metal` is renamed to
+`x4-960-16t-metal` because it offers 16 TB memory. This change is backwards
+compatible.
+
+For more information, see
+[X4 memory-optimized bare metal machine types](https://docs.cloud.google.com/sap/docs/sap-hana-planning-guide#x4-memory-optimized).
+
+---
 ## 2025-12-05
 
 ### Announcement

@@ -1,5 +1,16 @@
 # Security Command Center
 
+## 2025-12-12
+
+### Feature
+
+[AI Protection](https://docs.cloud.google.com/security-command-center/docs/ai-protection-overview) is generally
+available ([GA](https://cloud.google.com/products#product-launch-stages)) in the
+Security Command Center Enterprise tier and is available as a
+[Preview](https://cloud.google.com/products#product-launch-stages) in the
+Security Command Center Premium tier.
+
+---
 ## 2025-12-11
 
 ### Feature

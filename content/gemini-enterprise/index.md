@@ -4,7 +4,7 @@
 
 ### Feature
 
-**Unified data Source creation and actions flow**
+**Gemini Enterprise: Unified data Source creation and actions flow**
 
 The new unified process for creating a data store enables you to create the data store and the associated actions in a single, streamlined flow. This functionality allows Gemini Enterprise to perform tasks directly within the connected application.
 

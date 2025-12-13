@@ -1,5 +1,21 @@
 # Text-to-Speech
 
+## 2025-12-12
+
+### Feature
+
+Chirp 3: HD voices now support speech synthesis in Preview for the Punjabi (`pa-IN`) language. For more information, see [Chirp 3: Language Availability](https://cloud.google.com/text-to-speech/docs/chirp3-hd#language_availability).
+
+---
+## 2025-12-11
+
+### Feature
+
+The latest Gemini-2.5 TTS Flash (`gemini-2.5-flash-tts`) and Pro (`gemini-2.5-pro-tts`) are now available in global, `us`, `eu`, and `northamerica-northeast1` regions.
+
+For more information on how to take advantage of the extended regional availability, see the [Gemini TTS documentation page](https://docs.cloud.google.com/text-to-speech/docs/gemini-tts).
+
+---
 ## 2025-11-10
 
 ### Feature

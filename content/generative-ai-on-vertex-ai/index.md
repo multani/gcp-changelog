@@ -1,5 +1,16 @@
 # Generative AI on Vertex AI
 
+## 2025-12-12
+
+### Feature
+
+**Gemini 2.5 Flash with Gemini Live API Native Audio**
+
+[Gemini 2.5 Flash with Gemini Live API Native Audio](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash-live-api) (`gemini-live-2.5-flash-native-audio`) is Generally Available (GA).
+This model features cutting-edge native audio functionality for
+[Gemini Live API](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/live-api), including enhanced voice quality and adaptability, Proactive Audio, and Affective Dialog.
+
+---
 ## 2025-12-10
 
 ### Feature

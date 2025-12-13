@@ -1,5 +1,15 @@
 # AI Hypercomputer
 
+## 2025-12-12
+
+### Issue
+
+Workloads on A4 VMs might experience interruptions due to a firmware issue
+for NVIDIA B200 GPUs. To help prevent the issue, we recommend resetting the GPUs
+on A4 VMs at least once every 60 days. For more information, see the
+[known issue](https://docs.cloud.google.com/ai-hypercomputer/docs/troubleshooting/known-issues#a4-firmware).
+
+---
 ## 2025-12-09
 
 ### Feature

@@ -1,5 +1,15 @@
 # Cloud SQL for SQL Server
 
+## 2025-12-11
+
+### Feature
+
+[Cloud SQL for SQL Server integration with Microsoft Entra ID](https://docs.cloud.google.com/sql/docs/sqlserver/integration-with-microsoft-entra-id)
+([Preview](https://cloud.google.com/products#product-launch-stages))
+provides centralized identity and access management (IAM) for your databases
+using your existing Microsoft Entra ID tenant.
+
+---
 ## 2025-10-29
 
 ### Feature

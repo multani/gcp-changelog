@@ -1,5 +1,34 @@
 # Gemini
 
+## 2025-12-12
+
+### Issue
+
+
+
+### Known issue for the model selection feature in VS Code Gemini Code Assist
+
+The VS Code Gemini Code Assist
+[model selection feature](https://docs.cloud.google.com/gemini/docs/codeassist/chat-gemini#select-model)
+incorrectly appears for users of the free tier of Gemini Code Assist for
+individuals.
+
+* The feature shouldn't appear for such users and does not function for them.
+
+### Issue
+
+
+
+### Known issue for the model selection feature in VS Code Gemini Code Assist
+
+The VS Code Gemini Code Assist
+[model selection feature](https://docs.cloud.google.com/gemini/docs/codeassist/chat-gemini#select-model)
+incorrectly appears for users of the free tier of Gemini Code Assist for
+individuals.
+
+* The feature shouldn't appear for such users and does not function for them.
+
+---
 ## 2025-12-05
 
 ### Outline in IntelliJ (Preview)

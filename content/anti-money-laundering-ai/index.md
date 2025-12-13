@@ -1,5 +1,16 @@
 # Anti Money Laundering AI
 
+## 2025-12-06
+
+### Announcement
+
+[Registration sharing]Manage production alerting in a separate instance or project from model training and evaluation without paying twice for registered parties. See [Party registration sharing for multiple instances](https://docs.cloud.google.com/financial-services/anti-money-laundering/docs/register-parties) to find out more about how this works.
+
+### Announcement
+
+[Model copying]Copy an AML AI model to a separate AML AI instance. See [Copy models to new instances](https://docs.cloud.google.com/financial-services/anti-money-laundering/docs/copy-model-instances) to find out more about how this works.
+
+---
 ## 2025-09-03
 
 ### Announcement

@@ -53,6 +53,16 @@
         }
       }
     ],
+    "2025-12-03": [
+      {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS patch 3.42.113**\n\nWe've released patch 3.42.113 for Google Cloud CCaaS. This patch does the\nfollowing:\n\n* Fixes an issue where calls were not routed to available agents.\n* Reverts a fix for inaccurate reporting for chats escalated by a virtual\n  agent to a human agent. This fix caused a regression.",
+        "summary": {
+          "title": "CCaaS Patch Released",
+          "summary": "A new patch for CCaaS (3.42.113) is now available. This update resolves call routing issues and reverts a problematic chat reporting fix."
+        }
+      }
+    ],
     "2025-12-02": [
       {
         "kind": "Fixed",
@@ -113,14 +123,6 @@
         }
       },
       {
-        "kind": "Fixed",
-        "content": "We addressed the following issues in this release:\n\n* Fixed an issue where Agent Assist generated incomplete or\n  inaccurate chat summaries.\n* Fixed inaccurate reporting for chats escalated by a virtual agent to a\n  human agent.\n* Fixed incorrect labeling and routing of French voicemails to the\n  English-language queue in the agent adapter.\n* Fixed the missed response timer, which added an extra 30 minutes to the\n  calculated time.\n* Fixed a significant slowdown in background job processing.\n* Fixed an issue where the global default voicemail greeting failed to save\n  when applied to an individual user's settings.\n* Fixed an issue that caused agents to be assigned a call and a chat at the\n  same time, even when this was disabled in the settings.\n* Fixed an issue that prevented users from testing Android push notifications.\n* Fixed an issue where editing a phone number's settings on the **Phone Number\n  Management** page removed it from queues where it was assigned for outbound\n  calls.\n* Fixed an issue that caused a **Custom roles permissions is invalid** error\n  when attempting to save a change to the **Audit Dashboard** permission in\n  a custom role.\n* Fixed an issue that caused the handle time for queued chats to display an\n  incorrect value, particularly after a session transfer.\n* Fixed an issue where the call ID was missing in the **Activity Timeline**\n  report.\n* Fixed an issue where the **Auto answered** label on a chat tab in the chat\n  adapter persisted even after an agent opened the chat.\n* Fixed an issue where the agent directory in the call adapter appeared empty\n  when an agent attempted to transfer a call.\n* Fixed an issue that prevented an agent from adding another agent to a call\n  using their extension number.\n* Fixed an agent desktop issue where unsigned data appeared before signed data\n  in the **Session Data Feed** panel. This was inconsistent with the display\n  order in the agent adapter.\n* Fixed an issue at **Settings > Developer Settings >\n  CRM > Custom CRM > CRM lookup method >\n  Custom Link**. In the **Custom link CRM lookup** section, we replaced the\n  incorrect `{Custom UID}` variable name with `{CUID}` in the UI text.\n* Fixed a web SDK issue where the **Select an option** channel selection\n  screen appeared unnecessarily when a chat started, when the Direct Action\n  Parameter was enabled.\n* Improved web SDK page loading speed.\n* Fixed a web SDK issue where external deflection links weren't working\n  correctly.",
-        "summary": {
-          "title": "Resolved various issues",
-          "summary": "This release addresses several bugs and inaccuracies, including improvements to chat summaries, reporting accuracy, voicemail handling, and background job processing. We have also resolved issues related to agent assignment, push notifications, phone number settings, custom role permissions, and display inconsistencies in the agent desktop."
-        }
-      },
-      {
         "kind": "Feature",
         "content": "**Restrict the transfer of email sessions to a queue**\n\nYou can now configure queues to prevent them from receiving email session\ntransfers.\n\nAdministrators: A new **Allow incoming Email Transfers** toggle appears in the\nsettings pane at **Settings > Queue > Email >\nEdit / View > YOUR\\_QUEUE**.\n\nFor more information, see [Transfer email sessions to a queue](https://docs.cloud.google.com/contact-center/ccai-platform/docs/let-agents-transfer-email-sessions-to-a-queue).",
         "summary": {
@@ -142,6 +144,14 @@
         "summary": {
           "title": "Email Signatures",
           "summary": "Standardized email signatures can now be defined for all outgoing emails from a specific queue."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "We addressed the following issues in this release:\n\n* Fixed an issue where Agent Assist generated incomplete or\n  inaccurate chat summaries.\n* ~~Fixed inaccurate reporting for chats escalated by a virtual agent to a\n  human agent.~~\n* Fixed incorrect labeling and routing of French voicemails to the\n  English-language queue in the agent adapter.\n* Fixed the missed response timer, which added an extra 30 minutes to the\n  calculated time.\n* Fixed a significant slowdown in background job processing.\n* Fixed an issue where the global default voicemail greeting failed to save\n  when applied to an individual user's settings.\n* Fixed an issue that caused agents to be assigned a call and a chat at the\n  same time, even when this was disabled in the settings.\n* Fixed an issue that prevented users from testing Android push notifications.\n* Fixed an issue where editing a phone number's settings on the **Phone Number\n  Management** page removed it from queues where it was assigned for outbound\n  calls.\n* Fixed an issue that caused a **Custom roles permissions is invalid** error\n  when attempting to save a change to the **Audit Dashboard** permission in\n  a custom role.\n* Fixed an issue that caused the handle time for queued chats to display an\n  incorrect value, particularly after a session transfer.\n* Fixed an issue where the call ID was missing in the **Activity Timeline**\n  report.\n* Fixed an issue where the **Auto answered** label on a chat tab in the chat\n  adapter persisted even after an agent opened the chat.\n* Fixed an issue where the agent directory in the call adapter appeared empty\n  when an agent attempted to transfer a call.\n* Fixed an issue that prevented an agent from adding another agent to a call\n  using their extension number.\n* Fixed an agent desktop issue where unsigned data appeared before signed data\n  in the **Session Data Feed** panel. This was inconsistent with the display\n  order in the agent adapter.\n* Fixed an issue at **Settings > Developer Settings >\n  CRM > Custom CRM > CRM lookup method >\n  Custom Link**. In the **Custom link CRM lookup** section, we replaced the\n  incorrect `{Custom UID}` variable name with `{CUID}` in the UI text.\n* Fixed a web SDK issue where the **Select an option** channel selection\n  screen appeared unnecessarily when a chat started, when the Direct Action\n  Parameter was enabled.\n* Improved web SDK page loading speed.\n* Fixed a web SDK issue where external deflection links weren't working\n  correctly.",
+        "summary": {
+          "title": "Resolved Issues in Latest Update",
+          "summary": "This release addresses multiple issues, including inaccurate chat summaries, incorrect voicemail routing, and problems with background job processing. Several fixes also improve agent experience by resolving issues with call/chat assignments, agent directory display, and missed response timers."
         }
       },
       {

@@ -159,6 +159,24 @@ calls</a>.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-12-03:announcement:0</id>
+    <published>2025-12-03T00:00:00+00:00</published>
+    <updated>2025-12-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS patch 3.42.113</strong></p>
+<p>We've released patch 3.42.113 for Google Cloud CCaaS. This patch does the
+following:</p>
+<ul>
+<li>Fixes an issue where calls were not routed to available agents.</li>
+<li>Reverts a fix for inaccurate reporting for chats escalated by a virtual
+  agent to a human agent. This fix caused a regression.</li>
+</ul>]]></content>
+    <summary>A new patch for CCaaS (3.42.113) is now available. This update resolves call routing issues and reverts a problematic chat reporting fix.</summary>
+    <title>Announcement: CCaaS Patch Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
     <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-12-02:fixed:0</id>
     <published>2025-12-02T00:00:00+00:00</published>
     <updated>2025-12-02T00:00:00+00:00</updated>
@@ -326,15 +344,75 @@ check-in</a>.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:fixed:4</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:feature:4</id>
+    <published>2025-11-19T00:00:00+00:00</published>
+    <updated>2025-11-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Restrict the transfer of email sessions to a queue</strong></p>
+<p>You can now configure queues to prevent them from receiving email session
+transfers.</p>
+<p>Administrators: A new <strong>Allow incoming Email Transfers</strong> toggle appears in the
+settings pane at <strong>Settings &gt; Queue &gt; Email &gt;
+Edit / View &gt; YOUR_QUEUE</strong>.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/let-agents-transfer-email-sessions-to-a-queue">Transfer email sessions to a queue</a>.</p>]]></content>
+    <summary>You can now stop email sessions from being transferred to specific queues by using a new setting.</summary>
+    <title>Feature: Restrict email session transfers</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:feature:5</id>
+    <published>2025-11-19T00:00:00+00:00</published>
+    <updated>2025-11-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Alvaria Advanced List Management integration with outbound dialer</strong></p>
+<p>You can now integrate Alvaria Advanced List Management (ALM) with the outbound
+dialer. This lets you combine Alvaria's list and campaign management
+capabilities with the dialing capability of Google Cloud CCaaS. This integration
+exchanges contact and result files through a shared Cloud Storage bucket.</p>
+<p>Capabilities:</p>
+<ul>
+<li>Multi-tenancy support: helps ensure that each tenant's data remains separate
+  and secure</li>
+<li>Flexible delimiter support: supports files using comma, pipe, tab, or
+  semicolon delimiters</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/alvaria-alm">Alvaria Advanced List Management
+integration</a>.</p>]]></content>
+    <summary>Integrate Alvaria Advanced List Management with the outbound dialer to combine Alvaria's list and campaign management capabilities with Google Cloud CCaaS dialing. This integration exchanges contact and result files through a shared Cloud Storage bucket and supports multi-tenancy and flexible delimiter options.</summary>
+    <title>Feature: Alvaria Advanced List Management integration with outbound dialer</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:feature:6</id>
+    <published>2025-11-19T00:00:00+00:00</published>
+    <updated>2025-11-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Email signatures</strong></p>
+<p>You can now define standardized signatures for all outgoing emails sent from a
+specific queue.</p>
+<p>Administrators: A new <strong>Email Signatures</strong> section appears in the settings pane
+at **Settings &gt; Queue &gt; Email &gt; Edit / View</p>
+<blockquote>
+<p>YOUR_QUEUE**.</p>
+</blockquote>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-channel-config#email-signatures">Email signatures</a>.</p>]]></content>
+    <summary>Standardized email signatures can now be defined for all outgoing emails from a specific queue.</summary>
+    <title>Feature: Email Signatures</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:fixed:7</id>
     <published>2025-11-19T00:00:00+00:00</published>
     <updated>2025-11-19T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>We addressed the following issues in this release:</p>
 <ul>
 <li>Fixed an issue where Agent Assist generated incomplete or
   inaccurate chat summaries.</li>
-<li>Fixed inaccurate reporting for chats escalated by a virtual agent to a
-  human agent.</li>
+<li>~~Fixed inaccurate reporting for chats escalated by a virtual agent to a
+  human agent.~~</li>
 <li>Fixed incorrect labeling and routing of French voicemails to the
   English-language queue in the agent adapter.</li>
 <li>Fixed the missed response timer, which added an extra 30 minutes to the
@@ -375,68 +453,8 @@ check-in</a>.</p>]]></content>
 <li>Fixed a web SDK issue where external deflection links weren't working
   correctly.</li>
 </ul>]]></content>
-    <summary>This release addresses several bugs and inaccuracies, including improvements to chat summaries, reporting accuracy, voicemail handling, and background job processing. We have also resolved issues related to agent assignment, push notifications, phone number settings, custom role permissions, and display inconsistencies in the agent desktop.</summary>
-    <title>Fixed: Resolved various issues</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:feature:5</id>
-    <published>2025-11-19T00:00:00+00:00</published>
-    <updated>2025-11-19T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Restrict the transfer of email sessions to a queue</strong></p>
-<p>You can now configure queues to prevent them from receiving email session
-transfers.</p>
-<p>Administrators: A new <strong>Allow incoming Email Transfers</strong> toggle appears in the
-settings pane at <strong>Settings &gt; Queue &gt; Email &gt;
-Edit / View &gt; YOUR_QUEUE</strong>.</p>
-<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/let-agents-transfer-email-sessions-to-a-queue">Transfer email sessions to a queue</a>.</p>]]></content>
-    <summary>You can now stop email sessions from being transferred to specific queues by using a new setting.</summary>
-    <title>Feature: Restrict email session transfers</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:feature:6</id>
-    <published>2025-11-19T00:00:00+00:00</published>
-    <updated>2025-11-19T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Alvaria Advanced List Management integration with outbound dialer</strong></p>
-<p>You can now integrate Alvaria Advanced List Management (ALM) with the outbound
-dialer. This lets you combine Alvaria's list and campaign management
-capabilities with the dialing capability of Google Cloud CCaaS. This integration
-exchanges contact and result files through a shared Cloud Storage bucket.</p>
-<p>Capabilities:</p>
-<ul>
-<li>Multi-tenancy support: helps ensure that each tenant's data remains separate
-  and secure</li>
-<li>Flexible delimiter support: supports files using comma, pipe, tab, or
-  semicolon delimiters</li>
-</ul>
-<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/alvaria-alm">Alvaria Advanced List Management
-integration</a>.</p>]]></content>
-    <summary>Integrate Alvaria Advanced List Management with the outbound dialer to combine Alvaria's list and campaign management capabilities with Google Cloud CCaaS dialing. This integration exchanges contact and result files through a shared Cloud Storage bucket and supports multi-tenancy and flexible delimiter options.</summary>
-    <title>Feature: Alvaria Advanced List Management integration with outbound dialer</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-11-19:feature:7</id>
-    <published>2025-11-19T00:00:00+00:00</published>
-    <updated>2025-11-19T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Email signatures</strong></p>
-<p>You can now define standardized signatures for all outgoing emails sent from a
-specific queue.</p>
-<p>Administrators: A new <strong>Email Signatures</strong> section appears in the settings pane
-at **Settings &gt; Queue &gt; Email &gt; Edit / View</p>
-<blockquote>
-<p>YOUR_QUEUE**.</p>
-</blockquote>
-<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-channel-config#email-signatures">Email signatures</a>.</p>]]></content>
-    <summary>Standardized email signatures can now be defined for all outgoing emails from a specific queue.</summary>
-    <title>Feature: Email Signatures</title>
+    <summary>This release addresses multiple issues, including inaccurate chat summaries, incorrect voicemail routing, and problems with background job processing. Several fixes also improve agent experience by resolving issues with call/chat assignments, agent directory display, and missed response timers.</summary>
+    <title>Fixed: Resolved Issues in Latest Update</title>
   </entry>
   <entry>
     <author>

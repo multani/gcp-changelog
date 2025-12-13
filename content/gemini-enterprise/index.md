@@ -1,5 +1,22 @@
 # Gemini Enterprise
 
+## 2025-12-11
+
+### Feature
+
+**Gemini Enterprise: Monitor metrics for NotebookLM Enterprise**
+
+Admins can monitor NotebookLM Enterprise metrics in the **Agents**
+tab of the **Analytics** page. For more information, see
+[Metrics definitions](https://docs.cloud.google.com/gemini/enterprise/docs/view-analytics#definitions).
+
+### Feature
+
+**Google NotebookLM Enterprise: Gemini model upgrade (Preview)**
+
+You can use Gemini 2.5 Flash with NotebookLM Enterprise.
+
+---
 ## 2025-12-08
 
 ### Feature

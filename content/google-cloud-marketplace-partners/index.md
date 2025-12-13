@@ -1,5 +1,18 @@
 # Google Cloud Marketplace Partners
 
+## 2025-12-04
+
+### Feature
+
+You can now offer Terraform Kubernetes apps through Google Cloud Marketplace
+with usage-based pricing, in which customers pay for your app based on their
+usage of Google Kubernetes Engine resources, such as vCPUs, GPUs, TPUs, or memory. To set up
+usage-based pricing for your Terraform Kubernetes apps, see
+[Pricing models for Terraform Kubernetes apps](https://docs.cloud.google.com/marketplace/docs/partners/terraform-kubernetes#pricing).
+For information about how pricing works for Google Kubernetes Engine resources, see
+[Google Kubernetes Engine pricing](https://cloud.google.com/kubernetes-engine/pricing?e=13802955).
+
+---
 ## 2025-11-06
 
 ### Changed

@@ -1,5 +1,14 @@
 # Google Kubernetes Engine
 
+## 2025-12-12
+
+### Feature
+
+GKE Autopilot now supports N4A machine types in
+Public Preview, available on clusters running
+version 1.34.1-gke.3403001 or later.
+
+---
 ## 2025-12-11
 
 ### Feature

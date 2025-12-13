@@ -1,5 +1,38 @@
 # Gemini Enterprise
 
+## 2025-12-12
+
+### Feature
+
+**Unified data Source creation and actions flow**
+
+The new unified process for creating a data store enables you to create the data store and the associated actions in a single, streamlined flow. This functionality allows Gemini Enterprise to perform tasks directly within the connected application.
+
+The new **Actions** page shows you all the enabled actions for each data store, which are currently available in public preview. Actions are currently enabled for Microsoft SharePoint, Microsoft Outlook, Microsoft OneDrive, Jira Cloud, Dropbox, and ServiceNow, and are available in public preview.
+
+This launch includes support for the following data stores:
+
+**General Availability (GA)**
+
+* Microsoft SharePoint
+* Microsoft Outlook
+* Microsoft OneDrive
+* Google Drive
+* Google Calendar
+* Gmail
+
+**Public Preview**
+
+* Jira Cloud
+* Confluence Cloud
+* Box
+* Microsoft Teams
+* Dropbox
+* ServiceNow
+
+**Note:** Your Google Cloud project must be on the allowlist to use this unified flow.
+
+---
 ## 2025-12-11
 
 ### Feature

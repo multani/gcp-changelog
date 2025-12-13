@@ -1,5 +1,87 @@
 # Config Connector
 
+## 2025-12-04
+
+### Announcement
+
+Config Connector version 1.140.0 is now available.
+
+### Changed
+
+New Alpha Resources (Direct Reconciler):
+
+* `AssuredWorkloadsWorkload`
+  + Manage Assured Workloads workloads to support compliance and security requirements.
+* `ConfigDeliveryResourceBundle`
+  + Manage Config Delivery resource bundles for Config Sync.
+
+### Changed
+
+Reconciliation Improvements:
+
+* Integrated Multi-Cluster Leader Election for improved reliability in multi-cluster setups.
+
+### Feature
+
+New Beta Resources (Direct Reconciler):
+
+* `CertificateManagerCertificateIssuanceConfig`
+  + Manage Certificate Manager certificate issuance configurations for automating certificate issuance.
+
+### Feature
+
+New Fields:
+
+* `AlloyDBCluster`
+  + Added `spec.restoreContinuousBackupSource` and `spec.restoreBackupSource` fields to support restoring from a backup.
+* `BigQueryReservationAssignment`
+  + Added `spec.jobType` field.
+* `FirestoreDatabase`
+  + Added `spec.deleteProtectionState` field.
+* `FirestoreField`
+  + Added `spec.ttlConfig` field.
+* `RunJob`
+  + Added `spec.template.template.containers.dependsOn` field.
+
+### Fixed
+
+* Fixed an issue where `BigQueryReservationAssignment` was not exposing `externalRef`.
+* Fixed an issue with `CertificateManagerDNSAuthorization` API, Fuzzer and Mapper.
+* Fixed an issue with `FirestoreDatabase` defaulting logic.
+
+---
+## 2025-11-20
+
+### Announcement
+
+Config Connector version 1.139.0 is now available.
+
+### Changed
+
+Reconciliation Improvements:
+
+* `IAM partial policy management`
+
+### Feature
+
+New Features:
+
+* The controller type is now reported at the start and end of reconciliation.
+* Mockgcp now supports `iap oauth brands` and `bigtable materializedview`.
+
+### Fixed
+
+* Reduced the memory footprint of the recorder.
+* `SQLInstance`: Fixed an issue where empty `maintenanceVersion` patches were sent. The `settings` and `maintenanceVersion` fields are now unmanaged.
+* `FirestoreDatabase`: Fixed boolean value exports.
+
+### Changed
+
+New Alpha Resources (Direct Reconciler):
+
+* `FirestoreField`
+
+---
 ## 2025-11-14
 
 ### Announcement

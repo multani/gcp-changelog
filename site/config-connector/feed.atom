@@ -2,9 +2,173 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Config Connector</title>
   <subtitle>Changelog for Google Cloud product: Config Connector</subtitle>
-  <updated>2025-11-14T00:00:00+00:00</updated>
+  <updated>2025-12-04T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:config-connector</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/config-connector/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-12-04:announcement:0</id>
+    <published>2025-12-04T00:00:00+00:00</published>
+    <updated>2025-12-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.140.0 is now available.</p>]]></content>
+    <summary>Config Connector version 1.140.0 has been released. This update brings new features and improvements to the tool.</summary>
+    <title>Announcement: Config Connector 1.140.0 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-12-04:changed:1</id>
+    <published>2025-12-04T00:00:00+00:00</published>
+    <updated>2025-12-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Alpha Resources (Direct Reconciler):</p>
+<ul>
+<li><code>AssuredWorkloadsWorkload</code></li>
+<li>Manage Assured Workloads workloads to support compliance and security requirements.</li>
+<li><code>ConfigDeliveryResourceBundle</code></li>
+<li>Manage Config Delivery resource bundles for Config Sync.</li>
+</ul>]]></content>
+    <summary>We have added new alpha resources to manage Assured Workloads and Config Delivery bundles. These resources provide enhanced control over compliance, security, and configuration management.</summary>
+    <title>Changed: New Alpha Resources Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-12-04:changed:2</id>
+    <published>2025-12-04T00:00:00+00:00</published>
+    <updated>2025-12-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Reconciliation Improvements:</p>
+<ul>
+<li>Integrated Multi-Cluster Leader Election for improved reliability in multi-cluster setups.</li>
+</ul>]]></content>
+    <summary>Reconciliation has been enhanced with integrated multi-cluster leader election, improving reliability for multi-cluster environments.</summary>
+    <title>Changed: Updated Reconciliation Reliability</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-12-04:feature:3</id>
+    <published>2025-12-04T00:00:00+00:00</published>
+    <updated>2025-12-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Beta Resources (Direct Reconciler):</p>
+<ul>
+<li><code>CertificateManagerCertificateIssuanceConfig</code></li>
+<li>Manage Certificate Manager certificate issuance configurations for automating certificate issuance.</li>
+</ul>]]></content>
+    <summary>Manage certificate issuance configurations for automating certificate issuance with the new beta resource. This feature allows for streamlined management of your certificates.</summary>
+    <title>Feature: Automated Certificate Issuance Beta</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-12-04:feature:4</id>
+    <published>2025-12-04T00:00:00+00:00</published>
+    <updated>2025-12-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Fields:</p>
+<ul>
+<li><code>AlloyDBCluster</code></li>
+<li>Added <code>spec.restoreContinuousBackupSource</code> and <code>spec.restoreBackupSource</code> fields to support restoring from a backup.</li>
+<li><code>BigQueryReservationAssignment</code></li>
+<li>Added <code>spec.jobType</code> field.</li>
+<li><code>FirestoreDatabase</code></li>
+<li>Added <code>spec.deleteProtectionState</code> field.</li>
+<li><code>FirestoreField</code></li>
+<li>Added <code>spec.ttlConfig</code> field.</li>
+<li><code>RunJob</code></li>
+<li>Added <code>spec.template.template.containers.dependsOn</code> field.</li>
+</ul>]]></content>
+    <summary>Several resources have new fields to enhance functionality. These include options for restoring backups in AlloyDB, specifying job types in BigQuery reservations, managing delete protection for Firestore databases, configuring TTL for Firestore fields, and defining container dependencies in Run Jobs.</summary>
+    <title>Feature: New fields added to several resources</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-12-04:fixed:5</id>
+    <published>2025-12-04T00:00:00+00:00</published>
+    <updated>2025-12-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed an issue where <code>BigQueryReservationAssignment</code> was not exposing <code>externalRef</code>.</li>
+<li>Fixed an issue with <code>CertificateManagerDNSAuthorization</code> API, Fuzzer and Mapper.</li>
+<li>Fixed an issue with <code>FirestoreDatabase</code> defaulting logic.</li>
+</ul>]]></content>
+    <summary>Resolved an issue where BigQueryReservationAssignment was not exposing externalRef. Additionally, fixed problems with the CertificateManagerDNSAuthorization API, Fuzzer, and Mapper, as well as the FirestoreDatabase defaulting logic.</summary>
+    <title>Fixed: Resolved API and Service Issues</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-11-20:announcement:0</id>
+    <published>2025-11-20T00:00:00+00:00</published>
+    <updated>2025-11-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.139.0 is now available.</p>]]></content>
+    <summary>Config Connector version 1.139.0 has been released. This update introduces new features and improvements to help manage your cloud resources.</summary>
+    <title>Announcement: New Config Connector Version Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-11-20:changed:1</id>
+    <published>2025-11-20T00:00:00+00:00</published>
+    <updated>2025-11-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Reconciliation Improvements:</p>
+<ul>
+<li><code>IAM partial policy management</code></li>
+</ul>]]></content>
+    <summary>Improvements have been made to IAM policy reconciliation, specifically enhancing partial policy management capabilities.</summary>
+    <title>Changed: IAM Policy Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-11-20:feature:2</id>
+    <published>2025-11-20T00:00:00+00:00</published>
+    <updated>2025-11-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Features:</p>
+<ul>
+<li>The controller type is now reported at the start and end of reconciliation.</li>
+<li>Mockgcp now supports <code>iap oauth brands</code> and <code>bigtable materializedview</code>.</li>
+</ul>]]></content>
+    <summary>We've enhanced our reconciliation process by adding controller type reporting at the start and end. Additionally, Mockgcp now includes support for 'iap oauth brands' and 'bigtable materializedview'.</summary>
+    <title>Feature: New Controller and Mock GCP Features</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-11-20:fixed:3</id>
+    <published>2025-11-20T00:00:00+00:00</published>
+    <updated>2025-11-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Reduced the memory footprint of the recorder.</li>
+<li><code>SQLInstance</code>: Fixed an issue where empty <code>maintenanceVersion</code> patches were sent. The <code>settings</code> and <code>maintenanceVersion</code> fields are now unmanaged.</li>
+<li><code>FirestoreDatabase</code>: Fixed boolean value exports.</li>
+</ul>]]></content>
+    <summary>We've optimized memory usage for the recorder and fixed several issues, including incorrect maintenance version patches for SQL instances and boolean export problems for Firestore databases. The settings and maintenance version fields for SQL instances are now unmanaged.</summary>
+    <title>Fixed: Improvements and Fixes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-11-20:changed:4</id>
+    <published>2025-11-20T00:00:00+00:00</published>
+    <updated>2025-11-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Alpha Resources (Direct Reconciler):</p>
+<ul>
+<li><code>FirestoreField</code></li>
+</ul>]]></content>
+    <summary>We have introduced new Alpha resources, including the direct reconciler and FirestoreField. These additions aim to enhance functionality and provide greater flexibility for your projects.</summary>
+    <title>Changed: New Alpha Resources Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -10,6 +10,19 @@ Security Command Center Enterprise tier and is available as a
 [Preview](https://cloud.google.com/products#product-launch-stages) in the
 Security Command Center Premium tier.
 
+### Changed
+
+Multiple pages in Security Command Center Standard have been improved:
+
+* The [Risk overview](https://docs.cloud.google.com/security-command-center/docs/assess-risk) page is enhanced to
+  provide separate views for misconfiguration, vulnerabilities and identity-related
+  findings.
+* The
+  [Findings page](https://docs.cloud.google.com/security-command-center/docs/review-manage-findings#edit-finding-query)
+  includes predefined filter views for vulnerabilities and identity findings.
+* The [left navigation](https://docs.cloud.google.com/security-command-center/docs/how-to-use-security-command-center#features)
+  has been updated.
+
 ---
 ## 2025-12-11
 

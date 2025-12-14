@@ -4,33 +4,33 @@
 
 ### Feature
 
-**Gemini Enterprise: Unified data Source creation and actions flow**
+**Gemini Enterprise: Unified data source creation and action flow**
 
 The new unified process for creating a data store enables you to create the data store and the associated actions in a single, streamlined flow. This functionality allows Gemini Enterprise to perform tasks directly within the connected application.
 
-The new **Actions** page shows you all the enabled actions for each data store, which are currently available in public preview. Actions are currently enabled for Microsoft SharePoint, Microsoft Outlook, Microsoft OneDrive, Jira Cloud, Dropbox, and ServiceNow, and are available in public preview.
+The new **Actions** page shows you all the enabled actions for each data store. Actions are available in public preview and are enabled for Microsoft SharePoint, Microsoft Outlook, Microsoft OneDrive, Jira Cloud, Dropbox, and ServiceNow.
 
-This launch includes support for the following data stores:
+This launch includes support for the following data stores. Check the data store documentation pages for a list of supported actions.
 
-**General Availability (GA)**
+**Generally Available**
 
-* Microsoft SharePoint
-* Microsoft Outlook
-* Microsoft OneDrive
-* Google Drive
-* Google Calendar
-* Gmail
+* [Microsoft SharePoint](https://docs.cloud.google.com/gemini/enterprise/docs/ms-sharepoint)
+* [Microsoft Outlook](https://docs.cloud.google.com/gemini/enterprise/docs/ms-outlook)
+* [Microsoft OneDrive](https://docs.cloud.google.com/gemini/enterprise/docs/ms-onedrive)
+* [Google Drive](https://docs.cloud.google.com/gemini/enterprise/docs/gdrive)
+* [Google Calendar](https://docs.cloud.google.com/gemini/enterprise/docs/gcal)
+* [Gmail](https://docs.cloud.google.com/gemini/enterprise/docs/gmail)
 
 **Public Preview**
 
-* Jira Cloud
-* Confluence Cloud
-* Box
-* Microsoft Teams
-* Dropbox
-* ServiceNow
+* [Jira Cloud](https://docs.cloud.google.com/gemini/enterprise/docs/jira-cloud)
+* [Confluence Cloud](https://docs.cloud.google.com/gemini/enterprise/docs/confluence-cloud)
+* [Box](https://docs.cloud.google.com/gemini/enterprise/docs/box)
+* [Microsoft Teams](https://docs.cloud.google.com/gemini/enterprise/docs/ms-teams)
+* [Dropbox](https://docs.cloud.google.com/gemini/enterprise/docs/dropbox)
+* [ServiceNow](https://docs.cloud.google.com/gemini/enterprise/docs/servicenow)
 
-**Note:** Your Google Cloud project must be on the allowlist to use this unified flow.
+**Note:** To use the unified view, your Google Cloud project must be on the allowlist.
 
 ---
 ## 2025-12-11

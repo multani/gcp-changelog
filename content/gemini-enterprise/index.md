@@ -1,5 +1,17 @@
 # Gemini Enterprise
 
+## 2025-12-15
+
+### Feature
+
+**Gemini Enterprise: Get user-level metrics (Preview)**
+
+Admins can monitor user-level metrics in the **User Level** tab of the
+**Analytics** page. This is a [Private preview](https://cloud.google.com/products#product-launch-stages)
+feature. For more information, see
+[Metrics definitions](https://docs.cloud.google.com/gemini/enterprise/docs/view-analytics#definitions).
+
+---
 ## 2025-12-12
 
 ### Feature

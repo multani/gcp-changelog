@@ -1,5 +1,13 @@
 # Access Approval
 
+## 2025-12-05
+
+### Feature
+
+Artifact Analysis is generally available
+[(GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-11-17
 
 ### Feature

@@ -1,5 +1,12 @@
 # Memorystore for Valkey
 
+## 2025-12-11
+
+### Feature
+
+You can now deploy instances in the [`africa-south1` (Johannesburg)](https://docs.cloud.google.com/memorystore/docs/valkey/locations) region.
+
+---
 ## 2025-11-17
 
 ### Feature

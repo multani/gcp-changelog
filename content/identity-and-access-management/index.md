@@ -1,5 +1,17 @@
 # Identity and Access Management
 
+## 2025-12-15
+
+### Feature
+
+A new infinite-scrolling UI for audit logs is available on the
+**Privileged Access Manager > Audit logs** page in the Google Cloud console.
+This interface update replaces pagination with clear data loading indicators
+and time boundaries to help facilitate event investigations.
+
+This feature is in [preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-09-26
 
 ### Changed

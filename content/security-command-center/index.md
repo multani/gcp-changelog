@@ -43,6 +43,22 @@ organization policy constraint to determine whether Cloud Storage buckets are
 reachable using [signed URLs](https://docs.cloud.google.com/storage/docs/access-control/signed-urls).
 
 ---
+## 2025-12-04
+
+### Feature
+
+[The monitoring dashboard](https://docs.cloud.google.com/model-armor/monitoring-dashboard)
+is available in [General Availability](https://cloud.google.com/products#product-launch-stages).
+
+---
+## 2025-12-03
+
+### Feature
+
+[Model Armor integration with Vertex AI](https://docs.cloud.google.com/model-armor/model-armor-vertex-integration)
+is available in [General Availability](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-11-20
 
 ### Changed

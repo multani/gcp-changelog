@@ -1,5 +1,18 @@
 # Dataform
 
+## 2025-12-16
+
+### Feature
+
+[Strict act-as mode](https://docs.cloud.google.com/dataform/docs/strict-act-as-mode)
+for Dataform is now
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA). This feature enhances security by requiring users to have the
+`iam.serviceAccounts.actAs` permission on the service account used to run
+workflows, ensuring a more secure and predictable permissions model for your
+Dataform projects.
+
+---
 ## 2025-12-15
 
 ### Feature

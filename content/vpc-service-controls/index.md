@@ -1,5 +1,22 @@
 # VPC Service Controls
 
+## 2025-12-15
+
+### Feature
+
+**VPC Service Controls feature:** The VPC Service Controls violation analyzer is [generally available](https://cloud.google.com/products#product-launch-stages). You can use the violation analyzer to diagnose access denial events and generate comprehensive evaluation reports to help resolve the denial events.
+
+The violation analyzer includes the following capabilities and updates:
+
+* You can use a denial event's unique ID to generate a comprehensive evaluation report.
+* Edit ingress and egress rules of a selected perimeter directly from the troubleshooting results page.
+* View log entry details associated with a denial event directly on the troubleshooting results page.
+* A few previous [limitations](https://docs.cloud.google.com/vpc-service-controls/docs/violation-analyzer#limitations) in the violation analyzer have been removed.
+* You don't need to enable the `Policy Troubleshooter API` to use the violation analyzer.
+
+For more information, see [Diagnose an access denial in violation analyzer](https://docs.cloud.google.com/vpc-service-controls/docs/violation-analyzer).
+
+---
 ## 2025-12-08
 
 ### Feature

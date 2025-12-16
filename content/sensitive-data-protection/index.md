@@ -1,5 +1,12 @@
 # Sensitive Data Protection
 
+## 2025-12-15
+
+### Feature
+
+The `OBJECT_TYPE/PERSON/FACE` infoType detector is available in [Preview](https://cloud.google.com/products#product-launch-stages) in `global` and the `asia`, `europe`, and `us` multi-regions. For more information about all infoTypes, see [InfoType detector reference](https://cloud.google.com/sensitive-data-protection/docs/infotypes-reference).
+
+---
 ## 2025-11-23
 
 ### Feature

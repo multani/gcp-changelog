@@ -1,5 +1,14 @@
 # Cloud Service Mesh
 
+## 2025-12-15
+
+### Announcement
+
+Regional Cloud Service Mesh is now available as a public preview feature. See
+[Regional Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/docs/regional-cloud-service-mesh)
+for more information.
+
+---
 ## 2025-12-04
 
 ### Announcement

@@ -2,6 +2,18 @@
 
 ## 2025-12-15
 
+### Changed
+
+You can ask Gemini for predefined role suggestions
+([preview](https://cloud.google.com/products#product-launch-stages)) without
+enabling any APIs.
+
+In addition, you can get custom role suggestions from Gemini
+using the Cloud Assist panel in the Google Cloud console.
+
+For more information, see [Get predefined role suggestions with
+Gemini assistance](https://docs.cloud.google.com/iam/docs/role-picker-gemini).
+
 ### Feature
 
 A new infinite-scrolling UI for audit logs is available on the

@@ -1,5 +1,21 @@
 # Cloud Trace
 
+## 2025-12-15
+
+### Feature
+
+The Trace Explorer has been updated to include annotations that let you
+identify App Hub-registered services and workloads. The link provided
+with a service or workload lets you open the corresponding
+Application Monitoring dashboard. To learn more, see the following documents:
+
+* [Find and explore traces](https://docs.cloud.google.com/trace/docs/finding-traces) describes how to
+  use the Trace Explorer page to filter and explore your trace data.
+* [Application Monitoring overview](https://docs.cloud.google.com/monitoring/docs/about-application-monitoring).
+* [View application telemetry](https://docs.cloud.google.com/monitoring/docs/application-monitoring)
+  describes how to view the telemetry for a registered application.
+
+---
 ## 2025-11-06
 
 ### Feature

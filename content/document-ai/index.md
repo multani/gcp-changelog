@@ -1,5 +1,15 @@
 # Document AI
 
+## 2025-12-15
+
+### Feature
+
+Custom classifier model `pretrained-classifier-v1.5-2025-08-05`
+is available as [General Availability (GA)](https://cloud.google.com/products/#product-launch-stages).
+
+For more information about available models, see the [custom classifier](https://docs.cloud.google.com/document-ai/docs/custom-classifier) page.
+
+---
 ## 2025-11-12
 
 ### Feature

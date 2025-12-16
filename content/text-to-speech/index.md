@@ -11,9 +11,15 @@ Chirp 3: HD voices now support speech synthesis in Preview for the Punjabi (`pa-
 
 ### Feature
 
-The latest Gemini-2.5 TTS Flash (`gemini-2.5-flash-tts`) and Pro (`gemini-2.5-pro-tts`) are now available in global, `us`, `eu`, and `northamerica-northeast1` regions.
+Our latest Gemini TTS models are now available in more regions.
 
-For more information on how to take advantage of the extended regional availability, see the [Gemini TTS documentation page](https://docs.cloud.google.com/text-to-speech/docs/gemini-tts).
+* `gemini-2.5-pro-tts`: global, us, eu
+* `gemini-2.5-flash-tts`: global, us, eu, and northamerica-northeast1
+* `gemini-2.5-flash-lite-preview-tts`: global, us, eu, and northamerica-northeast1
+
+For more information on how to take advantage of the extended regional
+availability, see the
+[Gemini TTS](https://docs.cloud.google.com/text-to-speech/docs/gemini-tts#available_regions) page.
 
 ---
 ## 2025-11-10

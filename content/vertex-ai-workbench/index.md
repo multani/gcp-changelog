@@ -1,5 +1,17 @@
 # Vertex AI Workbench
 
+## 2025-12-09
+
+### Feature
+
+[Generally available (GA)](https://cloud.google.com/products#product-launch-stages):
+Encrypt your data-in-use by using
+[Confidential Computing](https://docs.cloud.google.com/confidential-computing/docs/confidential-computing-overview).
+You can enable the Confidential VM service when you create
+a Vertex AI Workbench instance. To get started, see [Create an instance with
+Confidential Computing](https://docs.cloud.google.com/vertex-ai/docs/workbench/instances/create-confidential-computing).
+
+---
 ## 2025-11-21
 
 ### Feature

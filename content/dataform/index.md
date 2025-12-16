@@ -1,5 +1,17 @@
 # Dataform
 
+## 2025-12-15
+
+### Feature
+
+You can verify and resolve `iam.serviceAccounts.actAs` permission issues in
+Dataform by checking Cloud Logging, interpreting log entries, and granting the
+necessary IAM roles. For more information, see
+[Verify act-as permissions for the effective service account](https://docs.cloud.google.com/dataform/docs/strict-act-as-mode#verify-permissions).
+This feature is in
+[preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-12-09
 
 ### Feature

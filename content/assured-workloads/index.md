@@ -1,5 +1,25 @@
 # Assured Workloads
 
+## 2025-12-12
+
+### Feature
+
+The [Data Boundary for CJIS](https://docs.cloud.google.com/assured-workloads/docs/control-packages/cjis) supports the following products:
+
+* Application Integration
+* Certificate Manager
+* Cloud Domains
+* Compliance Manager
+* Data Security Posture Management
+* GKE Image streaming
+* Security Command Center Premium
+* VM Manager
+* Vertex AI Batch prediction
+* Vertex AI Online prediction
+* Vertex AI Pipelines
+* Vertex AI Training
+
+---
 ## 2025-10-08
 
 ### Feature

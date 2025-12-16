@@ -1,5 +1,15 @@
 # Google SecOps
 
+## 2025-12-10
+
+### Announcement
+
+**Learn key differences between SPL and YARA-L 2.0**
+
+A new guide is available to explain the key differences between Splunk Search Processing Language (SPL) and Google Security Operations YARA-L 2.0. The guide provides examples for converting common SPL queries and aims to accelerate the onboarding process for security professionals who transition to YARA-L 2.0.
+For more information, see [Transition from SPL to YARA-L](https://docs.cloud.google.com/chronicle/docs/yara-l/transition_spl_yaral).
+
+---
 ## 2025-12-09
 
 ### Feature

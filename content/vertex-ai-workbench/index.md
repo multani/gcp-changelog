@@ -1,5 +1,17 @@
 # Vertex AI Workbench
 
+## 2025-12-10
+
+### Feature
+
+**M137 release**
+
+The M137 release of Vertex AI Workbench instances includes the following:
+
+* Patched an issue where `sudo` prompts for a password when a custom Jupyter user
+  name is specified.
+
+---
 ## 2025-12-09
 
 ### Feature

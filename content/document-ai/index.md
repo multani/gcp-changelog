@@ -4,10 +4,16 @@
 
 ### Feature
 
-Custom classifier model `pretrained-classifier-v1.5-2025-08-05`
-is available as [General Availability (GA)](https://cloud.google.com/products/#product-launch-stages).
+A monitoring dashboard web interface is available in
+[Preview](https://cloud.google.com/products/#product-launch-stages) to monitor at the
+project and processor level.
 
-For more information about available models, see the [custom classifier](https://docs.cloud.google.com/document-ai/docs/custom-classifier) page.
+You can monitor a number of metrics, such as number of successfully processed
+pages and sync processing latency, across fields like `location`, `processor_type`,
+and `processor_id` over time.
+
+For more information, see [monitoring
+dashboard](https://docs.cloud.google.com/document-ai/docs/training-overview#monitoring-dashboard).
 
 ---
 ## 2025-11-12

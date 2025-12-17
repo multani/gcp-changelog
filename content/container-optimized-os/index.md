@@ -2,10 +2,6 @@
 
 ## 2025-12-15
 
-### Changed
-
-
-
 ### cos-113-18244-521-55
 
 |  |  |  |  |
@@ -87,10 +83,6 @@ Fixed CVE-2025-40083 in the Linux kernel.
 
 Fixed CVE-2025-40319 in the Linux kernel.
 
-### Changed
-
-
-
 ### cos-125-19216-104-72
 
 |  |  |  |  |
@@ -168,10 +160,6 @@ Fixed CVE-2025-47914 and CVE-2025-58181 in dev-go/crypto.
 
 Fixed CVE-2025-40248 in the Linux kernel.
 
-### Changed
-
-
-
 ### cos-121-18867-294-66
 
 |  |  |  |  |
@@ -224,10 +212,6 @@ Updated app-containers/containerd and app-containers/containerd-test to v2.0.7. 
 ### Security
 
 Fixed CVE-2025-40297 in the Linux kernel.
-
-### Changed
-
-
 
 ### cos-117-18613-439-70
 

@@ -1,5 +1,17 @@
 # Network Connectivity Center
 
+## 2025-12-16
+
+### Feature
+
+Network Connectivity Center supports [site-to-site data transfer](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/concepts/locations)
+in the following countries:
+
+* Brazil
+* Indonesia
+* South Africa
+
+---
 ## 2025-08-29
 
 ### Feature

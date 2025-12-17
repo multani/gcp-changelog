@@ -1,5 +1,24 @@
 # Compute Engine
 
+## 2025-12-16
+
+### Feature
+
+Sole-tenancy is now supported for the following GPU machine types:
+
+* A2 Ultra, A2 Mega, and A2 High machine types.
+  You can provision sole-tenant nodes using the following node types:
+  + `a2-ultragpu-node-96-1360-lssd`
+  + `a2-megagpu-node-96-1360`
+  + `a2-highgpu-node-96-680`
+* A3 Mega and A3 High machine types.
+  You can provision sole-tenant nodes using the following node types:
+  + `a3-megagpu-node-208-1872-lssd`
+  + `a3-highgpu-node-208-1872-lssd`
+
+For more information, see [Sole-tenant nodes](https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes).
+
+---
 ## 2025-12-14
 
 ### Feature

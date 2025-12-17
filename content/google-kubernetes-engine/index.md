@@ -1,5 +1,19 @@
 # Google Kubernetes Engine
 
+## 2025-12-16
+
+### Issue
+
+In rare cases, a cluster control plane upgrade can cause an Autopilot node to
+enter into a state in which new system and user Pods are unable to run, which
+then causes issues such as broken Pod networking. GKE is
+regularly detecting this issue, and when possible GKE
+is mitigating new occurrences of this issue. For more details, see
+[Pods unable to run on a Node due to NRI RunPodSandbox failed](https://docs.cloud.google.com/kubernetes-engine/docs/troubleshooting/autopilot-clusters#nri-runpodsandbox-error),
+and to mitigate this issue yourself, follow the procedure in the section
+[Consistently unreliable workload performance on a specific node](https://docs.cloud.google.com/kubernetes-engine/docs/troubleshooting/autopilot-clusters#unreliable-workloads-specific-node).
+
+---
 ## 2025-12-15
 
 ### Feature

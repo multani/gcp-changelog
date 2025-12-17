@@ -1,5 +1,260 @@
 # Container Optimized OS
 
+## 2025-12-15
+
+### Changed
+
+
+
+### cos-113-18244-521-55
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/ba73fa7fea97f67245b4aea7bfb5328dff53f188 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.55/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-47914 and CVE-2025-58181 in dev-go/crypto.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812052 -> 812044
+
+### Security
+
+Fixed CVE-2025-40324 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40220 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2024-25621 and CVE-2025-64329 in app-containers/containerd.
+
+### Feature
+
+Added support for NVIDIA drivers v580.95.05 and v580.105.08.
+
+### Security
+
+Fixed CVE-2025-38678 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40292 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38057 in the Linux kernel.
+
+### Fixed
+
+Fixed CVE-2025-40271 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40248 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40341 in the Linux kernel.
+
+### Fixed
+
+Fixed CVE-2025-40273 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40256 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40297 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40293 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40083 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40319 in the Linux kernel.
+
+### Changed
+
+
+
+### cos-125-19216-104-72
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/e2523dd07b96cc75b0940a20895e40e1211f3d29 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.104.72/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-40297 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40320 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40292 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811449 -> 811448
+
+### Security
+
+Fixed CVE-2025-40238 in the Linux kernel.
+
+### Security
+
+Updated app-containers/containerd and app-containers/containerd-test to v2.1.5. This resolves CVE-2024-25621 and CVE-2025-64329.
+
+### Security
+
+Fixed CVE-2025-40328 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40231 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40303 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40319 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40341 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40256 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40324 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40313 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40305 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-47914 and CVE-2025-58181 in dev-go/crypto.
+
+### Security
+
+Fixed CVE-2025-40248 in the Linux kernel.
+
+### Changed
+
+
+
+### cos-121-18867-294-66
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/36348945ac1412fc8068ef396a5ad8693deda345 ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.294.66/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-40220 in the Linux kernel.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811799 -> 811817
+
+### Security
+
+Fixed CVE-2025-40231 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40319 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40292 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40324 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40293 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40328 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40341 in the Linux kernel.
+
+### Security
+
+Updated app-containers/containerd and app-containers/containerd-test to v2.0.7. This resolves CVE-2024-25621 and CVE-2025-64329.
+
+### Security
+
+Fixed CVE-2025-40297 in the Linux kernel.
+
+### Changed
+
+
+
+### cos-117-18613-439-70
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/bf7aa68afdde1db3e28dd40212b7b39d3760a713 ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.439.70/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-40341 in the Linux kernel.
+
+### Security
+
+Updated app-containers/containerd and app-containers/containerd-test to v1.7.29. This resolves CVE-2024-25621 and CVE-2025-64329.
+
+### Changed
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811701 -> 811769
+
+### Security
+
+Fixed CVE-2025-40328 in the Linux kernel.
+
+---
 ## 2025-12-11
 
 ### cos-117-18613-439-65

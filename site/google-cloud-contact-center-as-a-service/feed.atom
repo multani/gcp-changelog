@@ -2,9 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2025-12-09T00:00:00+00:00</updated>
+  <updated>2025-12-16T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-12-16:announcement:0</id>
+    <published>2025-12-16T00:00:00+00:00</published>
+    <updated>2025-12-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS 3.43.144 patch</strong></p>
+<p>This patch does the following:</p>
+<ul>
+<li>Fixes an issue where chats routed using Deltacast didn't auto answer.</li>
+<li>Fixes an issue where virtual agents weren't playing a welcome message when
+  connected to a caller.</li>
+<li>Fixes an issue that occurred when an agent put a caller on hold and then
+  transferred the call to a different agent. When the call was transferred,
+  the caller was taken off hold, but the agent adapter mistakenly indicated
+  that the caller was still on hold.</li>
+<li>Fixes an issue where the transfer restriction settings in a queue sometimes
+  disappeared.</li>
+</ul>]]></content>
+    <summary>This patch addresses several issues in CCaaS, including chat auto-answer, virtual agent welcome messages, agent hold status during transfers, and transfer restriction settings. These updates aim to improve the overall stability and functionality of the platform.</summary>
+    <title>Announcement: CCaaS Patch Release</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -13,8 +36,7 @@
     <published>2025-12-09T00:00:00+00:00</published>
     <updated>2025-12-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Mobile SDK version 2.15.1 patch</strong></p>
-<p>The Mobile SDK version 2.15.1 patch adds the following updates to the Android
-SDK:</p>
+<p>This patch adds the following updates to the Android SDK:</p>
 <ul>
 <li><strong>Android 16 compatibility</strong>: Mobile SDK 2.15.1 is compatible with Android
   16.</li>
@@ -23,8 +45,8 @@ SDK:</p>
   predictive back system animations. We expect to support this Android 16
   capability in a future release.</li>
 </ul>]]></content>
-    <summary>Version 2.15.1 of the Mobile SDK patch introduces Android 16 compatibility and edge-to-edge screen support for Android. It currently does not support predictive back system animations, with plans to include this in a future release.</summary>
-    <title>Announcement: Mobile SDK 2.15.1 Patch</title>
+    <summary>A new patch for the Mobile SDK (version 2.15.1) is now available, introducing compatibility with Android 16 and support for edge-to-edge screens. Please note that predictive back system animations are not yet supported but will be in a future release.</summary>
+    <title>Announcement: Mobile SDK Update for Android</title>
   </entry>
   <entry>
     <author>
@@ -62,41 +84,7 @@ schedules</a>.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-12-06:feature:2</id>
-    <published>2025-12-06T00:00:00+00:00</published>
-    <updated>2025-12-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>New web SDK event: exited</strong></p>
-<p>We've added the <code>exited</code> event to the web SDK. This event triggers when an
-end-user exits a chat session after an agent ends the session. For more
-information, see
-<a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-api-reference#exited">exited</a>.</p>]]></content>
-    <summary>A new 'exited' event is now available for the web SDK. This event fires when a user ends a chat after the agent has already closed the session.</summary>
-    <title>Feature: New web SDK event: exited</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-12-06:feature:3</id>
-    <published>2025-12-06T00:00:00+00:00</published>
-    <updated>2025-12-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Wait-time virtual agent for calls</strong></p>
-<p>You can now configure a virtual agent to handle incoming calls requiring
-escalation to a human agent. The wait-time virtual agent can place an incoming
-call into a queue and then provide personalized, interactive updates based on
-real-time events that your instance sends to the virtual agent. These events
-include estimated wait time, queue position, and agent availability. When an
-agent is available, the virtual agent transfers the call. For more information,
-see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/wait-time-va-calls">Wait-time virtual agents for
-calls</a>.</p>]]></content>
-    <summary>A new feature allows a virtual agent to manage incoming calls by providing real-time updates on wait times and agent availability before transferring the call to a human agent.</summary>
-    <title>Feature: Wait-time virtual agent for calls</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-12-06:fixed:4</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-12-06:fixed:2</id>
     <published>2025-12-06T00:00:00+00:00</published>
     <updated>2025-12-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>We addressed the following issues in this release:</p>
@@ -151,9 +139,45 @@ calls</a>.</p>]]></content>
 <li>Addressed latency in Telnyx calls.</li>
 <li>Fixed a billing calculation issue where concurrent agent counts were
   inaccurate.</li>
+<li>Fixed an agent desktop issue where, when auto answer was enabled, incoming
+  chats mistakenly took focus from active chats that agents were engaged with.</li>
 </ul>]]></content>
-    <summary>This release includes fixes for call routing, web SDK display and functionality, agent and user management, and billing calculations. Several issues related to overcapacity deflection and virtual agent interactions have also been resolved.</summary>
-    <title>Fixed: Resolved various issues</title>
+    <summary>This release includes fixes for various issues affecting call routing, web SDK functionality, agent directory, and billing calculations. Several bugs related to virtual agent behavior, overcapacity deflection, and user management have also been resolved. Additionally, improvements have been made to historical data import processes and Telnyx call latency.</summary>
+    <title>Fixed: Resolved issues in recent update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-12-06:feature:3</id>
+    <published>2025-12-06T00:00:00+00:00</published>
+    <updated>2025-12-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>New web SDK event: exited</strong></p>
+<p>We've added the <code>exited</code> event to the web SDK. This event triggers when an
+end-user exits a chat session after an agent ends the session. For more
+information, see
+<a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-api-reference#exited">exited</a>.</p>]]></content>
+    <summary>A new 'exited' event is now available for the web SDK. This event fires when a user ends a chat after the agent has already closed the session.</summary>
+    <title>Feature: New web SDK event: exited</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2025-12-06:feature:4</id>
+    <published>2025-12-06T00:00:00+00:00</published>
+    <updated>2025-12-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Wait-time virtual agent for calls</strong></p>
+<p>You can now configure a virtual agent to handle incoming calls requiring
+escalation to a human agent. The wait-time virtual agent can place an incoming
+call into a queue and then provide personalized, interactive updates based on
+real-time events that your instance sends to the virtual agent. These events
+include estimated wait time, queue position, and agent availability. When an
+agent is available, the virtual agent transfers the call. For more information,
+see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/wait-time-va-calls">Wait-time virtual agents for
+calls</a>.</p>]]></content>
+    <summary>A new feature allows a virtual agent to manage incoming calls by providing real-time updates on wait times and agent availability before transferring the call to a human agent.</summary>
+    <title>Feature: Wait-time virtual agent for calls</title>
   </entry>
   <entry>
     <author>

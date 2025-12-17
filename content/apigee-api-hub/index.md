@@ -1,5 +1,18 @@
 # Apigee API hub
 
+## 2025-12-15
+
+### Feature
+
+**New API card view**
+
+A new card view is now available for APIs in API hub. This view provides a more visual and comprehensive way to browse, edit, and manage your APIs, complementing the existing list view.
+
+The card view highlights key information for each API, such as the owner, last modified date, target users, gateway, API style, and business unit, to enhance discoverability and provide a richer at-a-glance overview of your API landscape.
+
+You can switch between the list and card views from the **API hub > APIs** page.
+
+---
 ## 2025-12-11
 
 ### Feature

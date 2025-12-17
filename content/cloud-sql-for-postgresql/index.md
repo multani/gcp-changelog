@@ -1,5 +1,25 @@
 # Cloud SQL for PostgreSQL
 
+## 2025-12-16
+
+### Feature
+
+Cloud SQL enhanced backups are now generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
+
+With enhanced backups, backups are managed and stored in a centralized
+backup management project that leverages the
+[Backup and DR service](https://docs.cloud.google.com/backup-disaster-recovery), and
+provides enforced retention, granular scheduling, and longer retention.
+
+Enhanced backups now also support
+[point-in-time-recovery (PITR) after instance deletion](https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/restore).
+
+For more information about the available options and their limitations, see
+[Backup options](https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/backup-options).
+For more information about enhanced backups pricing, see
+[Backup and DR pricing](https://cloud.google.com/backup-disaster-recovery/pricing).
+
+---
 ## 2025-11-20
 
 ### Feature

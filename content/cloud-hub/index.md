@@ -1,5 +1,12 @@
 # Cloud Hub
 
+## 2025-12-16
+
+### Announcement
+
+[Cloud Hub](https://docs.cloud.google.com/hub/docs/overview) is [generally available](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-11-14
 
 ### Feature

@@ -2220,15 +2220,29 @@
 
 
 <h1 id="cloud-sql-for-sql-server">Cloud SQL for SQL Server</h1>
-<h2 id="2025-12-11">2025-12-11</h2>
+<h2 id="2025-12-16">2025-12-16</h2>
 <h3 id="feature">Feature</h3>
+<p>Cloud SQL enhanced backups are now generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).</p>
+<p>With enhanced backups, backups are managed and stored in a centralized
+backup management project that leverages the
+<a href="https://docs.cloud.google.com/backup-disaster-recovery">Backup and DR service</a>, and
+provides enforced retention, granular scheduling, and longer retention.</p>
+<p>Enhanced backups now also support
+<a href="https://docs.cloud.google.com/sql/docs/sqlserver/backup-recovery/restore">point-in-time-recovery (PITR) after instance deletion</a>.</p>
+<p>For more information about the available options and their limitations, see
+<a href="https://docs.cloud.google.com/sql/docs/sqlserver/backup-recovery/backup-options">Backup options</a>.
+For more information about enhanced backups pricing, see
+<a href="https://cloud.google.com/backup-disaster-recovery/pricing">Backup and DR pricing</a>.</p>
+<hr />
+<h2 id="2025-12-11">2025-12-11</h2>
+<h3 id="feature_1">Feature</h3>
 <p><a href="https://docs.cloud.google.com/sql/docs/sqlserver/integration-with-microsoft-entra-id">Cloud SQL for SQL Server integration with Microsoft Entra ID</a>
 (<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>)
 provides centralized identity and access management (IAM) for your databases
 using your existing Microsoft Entra ID tenant.</p>
 <hr />
 <h2 id="2025-10-29">2025-10-29</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>You can integrate Cloud SQL for SQL Server with customer-managed Active Directory (CMAD).</p>
 <p>CMAD provides capabilities such as authentication and authorization. Joining an
 instance to a CMAD domain lets you sign in using Windows Authentication with an
@@ -2237,12 +2251,12 @@ AD-based identity.</p>
 is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
 <hr />
 <h2 id="2025-10-17">2025-10-17</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>Cloud SQL Enterprise edition now supports a new machine series called the N4 machine series. This machine series provides balanced price-to-performance and uses the Hyperdisk Balanced storage. You can create custom machine types for the N4 machine series with up to 80 vCPUs and up to 640 GB memory. The N4 machine series is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
 <p>For more information about the N4 machine series and its availability, see <a href="https://docs.cloud.google.com/sql/docs/sqlserver/machine-series-overview">Machine series overview</a>.</p>
 <hr />
 <h2 id="2025-10-06">2025-10-06</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>You can now use <a href="https://cloud.google.com/sql/docs/sqlserver/intro-to-cloud-sql-disaster-recovery#advanced-dr">advanced disaster recovery (DR)</a> for your Private Service Connect (PSC) enabled Cloud SQL Enterprise Plus edition instances. With advanced DR, you can:</p>
 <ul>
 <li>Designate a cross-region disaster recovery (DR) replica</li>
@@ -2256,54 +2270,54 @@ is <a href="https://cloud.google.com/products#product-launch-stages">generally a
 (GA).</p>
 <hr />
 <h2 id="2025-09-29">2025-09-29</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p>You can now <a href="https://cloud.google.com/sql/docs/sqlserver/write-sql-gemini#fix-query">use Gemini's capabilities to fix errors in a query within Cloud SQL Studio</a> (<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>).</p>
 <hr />
 <h2 id="2025-09-23">2025-09-23</h2>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p>You can now provision, manage and query your databases using the dedicated Gemini CLI extension for Cloud SQL for SQL Server. The extension provides full lifecycle control of your database—from provisioning instances, to exploring schemas and troubleshooting issues—from your command-line interface.</p>
 <p>For more information, see <a href="https://cloud.google.com/sql/docs/sqlserver/pre-built-tools-with-mcp-toolbox">Use Cloud SQL for SQL Server with MCP, Gemini CLI, and other agents</a>.</p>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p>You can now retain point-in-time recovery (PITR) logs for an instance after its deletion for a specified retention period. These logs can be used to restore the deleted instance to a specific point in time. For more information, see <a href="https://cloud.google.com/sql/docs/sqlserver/backup-recovery/restore#deleted-instance">Restore a deleted instance using PITR</a>.</p>
 <hr />
 <h2 id="2025-09-08">2025-09-08</h2>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p>You can have Cloud SQL create a <a href="https://cloud.google.com/sql/docs/sqlserver/about-private-service-connect#psc-endpoint">Private Service Connect</a> endpoint automatically. You can use this endpoint to access Cloud SQL instances through a VPC network. For more information, see <a href="https://cloud.google.com/sql/docs/sqlserver/configure-private-service-connect#create-endpoint-automatically">Create a Private Service Connect endpoint automatically</a>.</p>
 <p>This feature is now generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).</p>
 <hr />
 <h2 id="2025-09-03">2025-09-03</h2>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p>You can now enable your instance to take a final backup at instance deletion and define its retention period by setting the final backup <a href="https://cloud.google.com/sql/docs/sqlserver/instance-settings">instance setting</a>.</p>
 <p>You can also create a <a href="https://cloud.google.com/sql/docs/sqlserver/org-policy/custom-org-policy">custom organization policy</a> to define final backup instance settings.
 For more information, see <a href="https://cloud.google.com/sql/docs/sqlserver/backup-recovery/backups#final-backup">Final backup</a>.</p>
 <hr />
 <h2 id="2025-08-29">2025-08-29</h2>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p><a href="https://cloud.google.com/sql/docs/sqlserver/flags#max-degree-of-parallelism"><code>Max degree of parallelism (MAXDOP)</code></a> is a Microsoft database flag available for use in Cloud SQL for SQL Server. This flag lets you limit the maximum number of threads used when running a single query in a parallel plan.</p>
 <hr />
 <h2 id="2025-08-21">2025-08-21</h2>
-<h3 id="feature_10">Feature</h3>
+<h3 id="feature_11">Feature</h3>
 <p>You can save and manage SQL queries in Cloud SQL Studio. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. For more information, see <a href="https://cloud.google.com/sql/docs/sqlserver/saved-queries">Saved queries overview</a>.</p>
 <hr />
 <h2 id="2025-08-15">2025-08-15</h2>
-<h3 id="feature_11">Feature</h3>
-<p>Now you can use <a href="https://cloud.google.com/sql/docs/sqlserver/about-private-service-connect#psc-backend">Private Service Connect backends</a>, as an alternative to Private Service Connect endpoints, to access Cloud SQL instances.</p>
 <h3 id="feature_12">Feature</h3>
+<p>Now you can use <a href="https://cloud.google.com/sql/docs/sqlserver/about-private-service-connect#psc-backend">Private Service Connect backends</a>, as an alternative to Private Service Connect endpoints, to access Cloud SQL instances.</p>
+<h3 id="feature_13">Feature</h3>
 <p>Now you can create an IPv6 endpoint for Private Service Connect (PSC) connections. For more information, see <a href="https://cloud.google.com/sql/docs/sqlserver/configure-private-service-connect#create-psc-endpoint">Connect to an instance using Private Service Connect</a>.</p>
 <h3 id="deprecated">Deprecated</h3>
 <p>You can no longer set a deny maintenance period for instances that are running a maintenance version older than 12 months. To update your instance, <a href="https://cloud.google.com/sql/docs/sqlserver/self-service-maintenance">perform self-service maintenance</a> or wait until the <a href="https://cloud.google.com/sql/docs/sqlserver/set-maintenance-window#find-maintenance-api">next maintenance window</a> to update your instance automatically. For more information about maintenance, see <a href="https://cloud.google.com/sql/docs/sqlserver/maintenance">Maintenance updates on Cloud SQL instances</a>.</p>
 <hr />
 <h2 id="2025-08-13">2025-08-13</h2>
-<h3 id="feature_13">Feature</h3>
+<h3 id="feature_14">Feature</h3>
 <p>Cloud SQL now supports Private Service Connect (PSC) outbound connectivity. With PSC outbound connectivity, you can attach a PSC interface to your existing Cloud SQL PSC-enabled instances to allow your instances to make outbound connections to your network. For more information, see <a href="https://cloud.google.com/sql/docs/sqlserver/about-private-service-connect#psc-outbound">PSC outbound connections</a>.</p>
 <hr />
 <h2 id="2025-08-07">2025-08-07</h2>
-<h3 id="feature_14">Feature</h3>
+<h3 id="feature_15">Feature</h3>
 <p>Cloud SQL now offers planned maintenance and machine tier upgrades for your Cloud SQL Enterprise plus instances with near-zero downtime for eligible instances.</p>
 <p>For more information, see <a href="https://cloud.google.com/sql/docs/sqlserver/maintenance#nearzero">Maintenance updates on Cloud SQL instances</a>.</p>
 <hr />
 <h2 id="2025-07-31">2025-07-31</h2>
-<h3 id="feature_15">Feature</h3>
+<h3 id="feature_16">Feature</h3>
 <p>Cloud SQL now offers two options of backup services to manage your instance's backups:</p>
 <ul>
 <li><strong>Enhanced backups</strong> (<a href="https://cloud.google.com/products?#product-launch-stages">Preview</a>): backups are managed and stored in a centralized backup management project that leverages the <a href="https://cloud.google.com/backup-disaster-recovery">Backup and DR service</a>, and provides enforced retention, granular scheduling, and longer retention.</li>
@@ -2313,11 +2327,11 @@ For more information, see <a href="https://cloud.google.com/sql/docs/sqlserver/b
 <p>For more information about the available options and their limitations, see <a href="https://cloud.google.com/sql/docs/sqlserver/backup-recovery/backups#backup-options">Backup options</a>.</p>
 <hr />
 <h2 id="2025-07-08">2025-07-08</h2>
-<h3 id="feature_16">Feature</h3>
+<h3 id="feature_17">Feature</h3>
 <p>Cloud SQL for SQL Server now offers Active Directory support for write endpoints. For more information, see <a href="https://cloud.google.com/sql/docs/sqlserver/configure-private-ip#cross-forest-trusts">Write endpoints across forests</a>.</p>
 <hr />
 <h2 id="2025-05-28">2025-05-28</h2>
-<h3 id="feature_17">Feature</h3>
+<h3 id="feature_18">Feature</h3>
 <p>Cloud SQL for SQL Server now offers the maximum server memory recommender.</p>
 <p>Database instances running with an allocation of memory that's either too low or too high might experience performance issues.</p>
 <p>The <code>max server memory (mb)</code> flag limits the amount of memory that Cloud SQL can allocate for its internal pools. You can manually set a value for this flag, or omit the flag and let Cloud SQL manage memory limits for you automatically.</p>
@@ -2333,6 +2347,9 @@ For more information, see <a href="https://cloud.google.com/sql/docs/sqlserver/b
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-sql-for-sql-server">Cloud SQL for SQL Server</a></li>
+          <li class="nav-item">
+            <a href="#2025-12-16" class="nav-link">2025-12-16</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-12-11" class="nav-link">2025-12-11</a>
           </li>

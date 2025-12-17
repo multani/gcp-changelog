@@ -1,5 +1,22 @@
 # Cloud Storage
 
+## 2025-12-16
+
+### Feature
+
+You can now use Anywhere Cache to serve data for object read requests issued
+by BigQuery to accelerate data reads for your applications. For more
+information, see [Using Anywhere Cache to accelerate reads for BigQuery](https://docs.cloud.google.com/storage/docs/anywhere-cache#integrations).
+
+### Feature
+
+You can now generate [Storage Insights
+datasets](https://docs.cloud.google.com/storage/docs/insights/datasets) for activity data to receive insights
+about object mutations, errors, and activity trends across projects, buckets,
+and regions. For more information, see [Dataset schema for activity data
+tables](https://docs.cloud.google.com/storage/docs/insights/dataset-tables-and-schemas#activity-data-schema).
+
+---
 ## 2025-11-14
 
 ### Feature

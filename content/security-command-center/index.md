@@ -1,5 +1,35 @@
 # Security Command Center
 
+## 2025-12-16
+
+### Feature
+
+The following
+[Container Threat Detection](https://docs.cloud.google.com/security-command-center/docs/concepts-container-threat-detection-overview)
+detectors have been released to
+[General Availability](https://cloud.google.com/products#product-launch-stages):
+
+* `Command and Control: Piped Encoded Code Execution Detected`
+* `Command and Control: Piped Encoded Download`
+
+---
+## 2025-12-15
+
+### Feature
+
+You can [configure Model Armor floor
+settings](https://docs.cloud.google.com/model-armor/configure-floor-settings) for Google-managed Model
+Context Protocol (MCP) servers to define baseline safety and security filters.
+This feature is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+You can also [configure Cloud Logging for sanitization
+operations](https://docs.cloud.google.com/model-armor/configure-logging#configure-logging-floor-settings).
+The
+Model Armor floor settings perform these operations on traffic to and from
+Google-managed MCP servers and Vertex AI models.
+
+---
 ## 2025-12-12
 
 ### Feature
@@ -31,6 +61,18 @@ Multiple pages in Security Command Center Standard have been improved:
 Security Command Center [Risk Engine](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-supported-features) supports
 Cloud Build Attack Paths with Cloud Build Resources supported in
 the high-value resource set.
+
+---
+## 2025-12-10
+
+### Feature
+
+You can configure Model Armor to enhance the security of your agentic
+AI applications that interact with Google Cloud Model Context Protocol (MCP)
+servers. This feature is in
+[Preview](https://cloud.google.com/products#product-launch-stages). For
+configuration details, see [Model Armor integration with Google Cloud
+MCP servers](https://docs.cloud.google.com/model-armor/model-armor-mcp-google-cloud-integration).
 
 ---
 ## 2025-12-05

@@ -1,5 +1,15 @@
 # Cloud Monitoring
 
+## 2025-12-16
+
+### Other
+
+On December 15, 2025, it was announced that your Application Monitoring
+dashboards will display the trace spans that are associated with your
+registered App Hub applications. Those dashboards don't display
+trace data. To view your trace data, use the Trace Explorer page.
+
+---
 ## 2025-12-15
 
 ### Feature

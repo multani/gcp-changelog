@@ -1,5 +1,22 @@
 # Vertex AI Search
 
+## 2025-12-16
+
+### Feature
+
+**Vertex AI Search: Filter searches by document-level relevance (Public Preview)**
+
+When searching in your Vertex AI Search app, you can specify
+document-level relevance filters so that only the documents that meet the
+filter threshold are returned as results.
+
+You can specify either the relevance threshold or semantic-relevance threshold to
+filter documents by relevance based on keyword and semantic search similarity.
+
+This feature is in Public Preview. For more information, see
+[Filter searches by document-level relevance](https://docs.cloud.google.com/generative-ai-app-builder/docs/filter-by-relevance).
+
+---
 ## 2025-12-09
 
 ### Feature
@@ -25,7 +42,7 @@ data store using the general pricing and others using configurable pricing.
 Configurable pricing is generally available (GA). For more information, see
 [Enable configurable pricing for custom
 search](https://docs.cloud.google.com/generative-ai-app-builder/docs/enable-configurable-pricing) and [Vertex
-AI Search pricing](https://cloud.google.com/generative-ai-app-builder/pricing).
+AI Search pricing](https://docs.cloud.google.com/generative-ai-app-builder/pricing).
 
 ---
 ## 2025-11-24

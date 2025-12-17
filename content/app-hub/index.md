@@ -1,5 +1,15 @@
 # App Hub
 
+## 2025-12-16
+
+### Feature
+
+App Hub is now available in the `europe-north2` (Stockholm) region, letting you create applications and register resources from an expanded list of locations.
+
+To learn more about the differences between global and regional applications, see [Global and regional applications](https://docs.cloud.google.com/app-hub/docs/global-regional-applications).
+For a complete list of all available App Hub locations, see [App Hub locations](https://docs.cloud.google.com/app-hub/docs/locations).
+
+---
 ## 2025-11-17
 
 ### Feature

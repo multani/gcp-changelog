@@ -1,5 +1,42 @@
 # Generative AI on Vertex AI
 
+## 2025-12-16
+
+### Changed
+
+**Vertex AI Agent Engine**
+
+Vertex AI Agent Engine is now available in the following regions:
+
+* `europe-west6` (Zurich)
+* `europe-west8` (Milan)
+* `asia-east2` (Hong Kong)
+* `asia-northeast3` (Seoul)
+* `asia-southeast2` (Jakarta)
+* `northamerica-northeast2` (Toronto)
+* `southamerica-east1` (São Paulo)
+
+For more information, see [Vertex AI Agent Builder locations](https://docs.cloud.google.com/agent-builder/locations).
+
+### Announcement
+
+**Vertex AI Agent Engine**
+
+Vertex AI Agent Engine [Sessions](https://docs.cloud.google.com/agent-builder/agent-engine/sessions/overview)
+and [Memory Bank](https://docs.cloud.google.com/agent-builder/agent-engine/memory-bank/overview) are now
+[Generally Available](https://cloud.google.com/products#product-launch-stages).
+
+### Changed
+
+Updated pricing for **Vertex AI Agent Engine**:
+
+* Pricing for Vertex AI Agent Engine Runtime was lowered.
+* On **January 28, 2026**, Sessions, Memory Bank, and Code Execution will begin
+  charging for usage.
+
+For more information, see [Pricing](https://cloud.google.com/vertex-ai/pricing#vertex-ai-agent-engine).
+
+---
 ## 2025-12-12
 
 ### Feature

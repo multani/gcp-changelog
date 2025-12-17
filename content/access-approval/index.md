@@ -1,5 +1,15 @@
 # Access Approval
 
+## 2025-12-16
+
+### Feature
+
+The new [access insights](https://docs.cloud.google.com/assured-workloads/access-approval/docs/access-insights)
+feature is generally available [(GA)](https://cloud.google.com/products#product-launch-stages),
+allowing you to generate and download a single, filtered, organization-wide
+report of Google administrative access to your data.
+
+---
 ## 2025-12-05
 
 ### Feature

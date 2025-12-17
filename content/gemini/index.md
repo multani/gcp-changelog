@@ -1,5 +1,28 @@
 # Gemini
 
+## 2025-12-16
+
+### Fixed
+
+
+
+### VS Code model selection issue fixed as of version 2.63.1
+
+The [model selection issue](#known_issue_for_the_model_selection_feature_in_vs_code_gemini_code_assist)
+affecting free tier customers using Gemini Code Assist releases 2.56 and later
+is fixed as of version 2.63.1.
+
+### Fixed
+
+
+
+### VS Code model selection issue fixed as of version 2.63.1
+
+The [model selection issue](#known_issue_for_the_model_selection_feature_in_vs_code_gemini_code_assist)
+affecting free tier customers using Gemini Code Assist releases 2.56 and later
+is fixed as of version 2.63.1.
+
+---
 ## 2025-12-12
 
 ### Known issue for the model selection feature in VS Code Gemini Code Assist

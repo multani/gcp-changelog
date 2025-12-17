@@ -1,13 +1,31 @@
 # Google Cloud Contact Center as a Service
 
+## 2025-12-16
+
+### Announcement
+
+**Google Cloud CCaaS 3.43.144 patch**
+
+This patch does the following:
+
+* Fixes an issue where chats routed using Deltacast didn't auto answer.
+* Fixes an issue where virtual agents weren't playing a welcome message when
+  connected to a caller.
+* Fixes an issue that occurred when an agent put a caller on hold and then
+  transferred the call to a different agent. When the call was transferred,
+  the caller was taken off hold, but the agent adapter mistakenly indicated
+  that the caller was still on hold.
+* Fixes an issue where the transfer restriction settings in a queue sometimes
+  disappeared.
+
+---
 ## 2025-12-09
 
 ### Announcement
 
 **Mobile SDK version 2.15.1 patch**
 
-The Mobile SDK version 2.15.1 patch adds the following updates to the Android
-SDK:
+This patch adds the following updates to the Android SDK:
 
 * **Android 16 compatibility**: Mobile SDK 2.15.1 is compatible with Android
   16.
@@ -39,28 +57,6 @@ We've released version 3.43 of Google Cloud CCaaS.
 The timing of the update to your instance depends on the deployment schedule
 that you have chosen. For more information, see [Deployment
 schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
-
-### Feature
-
-**New web SDK event: exited**
-
-We've added the `exited` event to the web SDK. This event triggers when an
-end-user exits a chat session after an agent ends the session. For more
-information, see
-[exited](https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-api-reference#exited).
-
-### Feature
-
-**Wait-time virtual agent for calls**
-
-You can now configure a virtual agent to handle incoming calls requiring
-escalation to a human agent. The wait-time virtual agent can place an incoming
-call into a queue and then provide personalized, interactive updates based on
-real-time events that your instance sends to the virtual agent. These events
-include estimated wait time, queue position, and agent availability. When an
-agent is available, the virtual agent transfers the call. For more information,
-see [Wait-time virtual agents for
-calls](https://docs.cloud.google.com/contact-center/ccai-platform/docs/wait-time-va-calls).
 
 ### Fixed
 
@@ -116,6 +112,30 @@ We addressed the following issues in this release:
 * Addressed latency in Telnyx calls.
 * Fixed a billing calculation issue where concurrent agent counts were
   inaccurate.
+* Fixed an agent desktop issue where, when auto answer was enabled, incoming
+  chats mistakenly took focus from active chats that agents were engaged with.
+
+### Feature
+
+**New web SDK event: exited**
+
+We've added the `exited` event to the web SDK. This event triggers when an
+end-user exits a chat session after an agent ends the session. For more
+information, see
+[exited](https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-api-reference#exited).
+
+### Feature
+
+**Wait-time virtual agent for calls**
+
+You can now configure a virtual agent to handle incoming calls requiring
+escalation to a human agent. The wait-time virtual agent can place an incoming
+call into a queue and then provide personalized, interactive updates based on
+real-time events that your instance sends to the virtual agent. These events
+include estimated wait time, queue position, and agent availability. When an
+agent is available, the virtual agent transfers the call. For more information,
+see [Wait-time virtual agents for
+calls](https://docs.cloud.google.com/contact-center/ccai-platform/docs/wait-time-va-calls).
 
 ---
 ## 2025-12-03

@@ -1,5 +1,23 @@
 # Backup and DR
 
+## 2025-12-16
+
+### Feature
+
+Cloud SQL enhanced backups are now generally available (GA).
+With enhanced backups, backups are managed and stored in a centralized backup
+management project that leverages
+[Backup and DR service](https://cloud.google.com/backup-disaster-recovery)
+to provide enforced retention, granular scheduling, and longer retention.
+Enhanced backups now also support
+[point-in-time-recovery (PITR) after instance deletion](https://cloud.google.com/sql/docs/mysql/backup-recovery/restore).
+
+For more information about the available options and their limitations, see
+[Backup options](https://cloud.google.com/sql/docs/mysql/backup-recovery/backups#backup-options).
+
+For more information about enhanced backups pricing, see [Backup and DR pricing](https://cloud.google.com/backup-disaster-recovery/pricing).
+
+---
 ## 2025-11-19
 
 ### Feature

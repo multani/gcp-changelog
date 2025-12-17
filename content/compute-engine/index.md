@@ -1,5 +1,16 @@
 # Compute Engine
 
+## 2025-12-14
+
+### Feature
+
+Instance flexibility in regional managed instance
+groups (MIGs) support the `ANY` target distribution shape. Selecting this shape
+lets you maximize resource obtainability and the utilization of unused zonal
+reservations. For more information, see
+[About instance flexibility in MIGs](https://docs.cloud.google.com/compute/docs/instance-groups/about-instance-flexibility).
+
+---
 ## 2025-12-12
 
 ### Feature

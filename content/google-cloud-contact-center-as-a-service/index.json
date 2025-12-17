@@ -1,13 +1,23 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
+    "2025-12-16": [
+      {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS 3.43.144 patch**\n\nThis patch does the following:\n\n* Fixes an issue where chats routed using Deltacast didn't auto answer.\n* Fixes an issue where virtual agents weren't playing a welcome message when\n  connected to a caller.\n* Fixes an issue that occurred when an agent put a caller on hold and then\n  transferred the call to a different agent. When the call was transferred,\n  the caller was taken off hold, but the agent adapter mistakenly indicated\n  that the caller was still on hold.\n* Fixes an issue where the transfer restriction settings in a queue sometimes\n  disappeared.",
+        "summary": {
+          "title": "CCaaS Patch Release",
+          "summary": "This patch addresses several issues in CCaaS, including chat auto-answer, virtual agent welcome messages, agent hold status during transfers, and transfer restriction settings. These updates aim to improve the overall stability and functionality of the platform."
+        }
+      }
+    ],
     "2025-12-09": [
       {
         "kind": "Announcement",
-        "content": "**Mobile SDK version 2.15.1 patch**\n\nThe Mobile SDK version 2.15.1 patch adds the following updates to the Android\nSDK:\n\n* **Android 16 compatibility**: Mobile SDK 2.15.1 is compatible with Android\n  16.\n* **Edge-to-edge screen support**: Mobile SDK 2.15.1 supports edge-to-edge.\n* **No predictive back system animations**: Mobile SDK 2.15.1 doesn't support\n  predictive back system animations. We expect to support this Android 16\n  capability in a future release.",
+        "content": "**Mobile SDK version 2.15.1 patch**\n\nThis patch adds the following updates to the Android SDK:\n\n* **Android 16 compatibility**: Mobile SDK 2.15.1 is compatible with Android\n  16.\n* **Edge-to-edge screen support**: Mobile SDK 2.15.1 supports edge-to-edge.\n* **No predictive back system animations**: Mobile SDK 2.15.1 doesn't support\n  predictive back system animations. We expect to support this Android 16\n  capability in a future release.",
         "summary": {
-          "title": "Mobile SDK 2.15.1 Patch",
-          "summary": "Version 2.15.1 of the Mobile SDK patch introduces Android 16 compatibility and edge-to-edge screen support for Android. It currently does not support predictive back system animations, with plans to include this in a future release."
+          "title": "Mobile SDK Update for Android",
+          "summary": "A new patch for the Mobile SDK (version 2.15.1) is now available, introducing compatibility with Android 16 and support for edge-to-edge screens. Please note that predictive back system animations are not yet supported but will be in a future release."
         }
       }
     ],
@@ -29,6 +39,14 @@
         }
       },
       {
+        "kind": "Fixed",
+        "content": "We addressed the following issues in this release:\n\n* Fixed an issue that occurred when a call was connected directly to an agent\n  using the agent's extension (either from another agent or from an end-user).\n  The system didn't apply the settings of the receiving agent's queue.\n* Fixed a web SDK issue where responses from virtual agents displayed markup\n  code for headings, bold, italics, etc., instead of the rendered formatting.\n* Fixed a web SDK issue where the timeout dialog for chat check-in didn't\n  dismiss after a chat session expired.\n* Fixed a web SDK issue where an error was incorrectly returned in the browser\n  console log.\n* Fixed a web SDK issue where the \"new message\" alert in the chat screen used\n  a text color that didn't adequately contrast with the background.\n* Fixed an issue where red boxes incorrectly appeared in the chat screen when\n  an agent's message was undelivered.\n* Fixed an issue where inbound calls were routed incorrectly to agents outside\n  of their personal hours of operation.\n* Fixed an issue that prevented users from downloading web chat transcripts\n  using the **Download** button.\n* Fixed an issue that occurred during overcapacity deflection. The \"redirect\n  to queue\" action didn't route calls to the configured Dialogflow menu ID.\n* Fixed an issue where virtual agents disconnected calls during after-hours\n  deflection or automatic redirection instead of routing them to the\n  configured location.\n* Fixed an issue where virtual agents incorrectly remained in a\n  session if an agent answered a call immediately after an overcapacity\n  deflection announcement.\n* Fixed an issue where calls didn't end after an end-user selected the\n  \"message\" option during overcapacity deflection.\n* Fixed an issue where manually adding users to multiple teams returned an\n  error.\n* Fixed an issue where administrators couldn't save queue reordering actions\n  in the SMS channel.\n* Fixed an issue where the BYOC configuration incorrectly overwrote the domain\n  of target SIP URIs during outbound calls.\n* Fixed an issue that incorrectly returned `Cannot read properties` console\n  errors.\n* Fixed an issue where a service name was misspelled, which caused errors in\n  batch user creation and team assignment.\n* Fixed an issue with historical data bulk import where uploading historical\n  data without dates generated empty import reports instead of returning an\n  error.\n* Fixed an issue with historical data bulk import where the system accepted\n  and processed data with future dates instead of returning an error.\n* Fixed an issue where queue priority sliders for users and teams were\n  active when they were configured to be inactive.\n* Fixed an issue that prevented languages from being added to an instance.\n* Fixed an issue where the agent directory was empty when an agent attempted\n  to transfer a call to another agent.\n* Addressed latency in Telnyx calls.\n* Fixed a billing calculation issue where concurrent agent counts were\n  inaccurate.\n* Fixed an agent desktop issue where, when auto answer was enabled, incoming\n  chats mistakenly took focus from active chats that agents were engaged with.",
+        "summary": {
+          "title": "Resolved issues in recent update",
+          "summary": "This release includes fixes for various issues affecting call routing, web SDK functionality, agent directory, and billing calculations. Several bugs related to virtual agent behavior, overcapacity deflection, and user management have also been resolved. Additionally, improvements have been made to historical data import processes and Telnyx call latency."
+        }
+      },
+      {
         "kind": "Feature",
         "content": "**New web SDK event: exited**\n\nWe've added the `exited` event to the web SDK. This event triggers when an\nend-user exits a chat session after an agent ends the session. For more\ninformation, see\n[exited](https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-api-reference#exited).",
         "summary": {
@@ -42,14 +60,6 @@
         "summary": {
           "title": "Wait-time virtual agent for calls",
           "summary": "A new feature allows a virtual agent to manage incoming calls by providing real-time updates on wait times and agent availability before transferring the call to a human agent."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "We addressed the following issues in this release:\n\n* Fixed an issue that occurred when a call was connected directly to an agent\n  using the agent's extension (either from another agent or from an end-user).\n  The system didn't apply the settings of the receiving agent's queue.\n* Fixed a web SDK issue where responses from virtual agents displayed markup\n  code for headings, bold, italics, etc., instead of the rendered formatting.\n* Fixed a web SDK issue where the timeout dialog for chat check-in didn't\n  dismiss after a chat session expired.\n* Fixed a web SDK issue where an error was incorrectly returned in the browser\n  console log.\n* Fixed a web SDK issue where the \"new message\" alert in the chat screen used\n  a text color that didn't adequately contrast with the background.\n* Fixed an issue where red boxes incorrectly appeared in the chat screen when\n  an agent's message was undelivered.\n* Fixed an issue where inbound calls were routed incorrectly to agents outside\n  of their personal hours of operation.\n* Fixed an issue that prevented users from downloading web chat transcripts\n  using the **Download** button.\n* Fixed an issue that occurred during overcapacity deflection. The \"redirect\n  to queue\" action didn't route calls to the configured Dialogflow menu ID.\n* Fixed an issue where virtual agents disconnected calls during after-hours\n  deflection or automatic redirection instead of routing them to the\n  configured location.\n* Fixed an issue where virtual agents incorrectly remained in a\n  session if an agent answered a call immediately after an overcapacity\n  deflection announcement.\n* Fixed an issue where calls didn't end after an end-user selected the\n  \"message\" option during overcapacity deflection.\n* Fixed an issue where manually adding users to multiple teams returned an\n  error.\n* Fixed an issue where administrators couldn't save queue reordering actions\n  in the SMS channel.\n* Fixed an issue where the BYOC configuration incorrectly overwrote the domain\n  of target SIP URIs during outbound calls.\n* Fixed an issue that incorrectly returned `Cannot read properties` console\n  errors.\n* Fixed an issue where a service name was misspelled, which caused errors in\n  batch user creation and team assignment.\n* Fixed an issue with historical data bulk import where uploading historical\n  data without dates generated empty import reports instead of returning an\n  error.\n* Fixed an issue with historical data bulk import where the system accepted\n  and processed data with future dates instead of returning an error.\n* Fixed an issue where queue priority sliders for users and teams were\n  active when they were configured to be inactive.\n* Fixed an issue that prevented languages from being added to an instance.\n* Fixed an issue where the agent directory was empty when an agent attempted\n  to transfer a call to another agent.\n* Addressed latency in Telnyx calls.\n* Fixed a billing calculation issue where concurrent agent counts were\n  inaccurate.",
-        "summary": {
-          "title": "Resolved various issues",
-          "summary": "This release includes fixes for call routing, web SDK display and functionality, agent and user management, and billing calculations. Several issues related to overcapacity deflection and virtual agent interactions have also been resolved."
         }
       }
     ],

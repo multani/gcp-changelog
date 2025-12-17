@@ -2220,11 +2220,26 @@
 
 
 <h1 id="google-cloud-contact-center-as-a-service">Google Cloud Contact Center as a Service</h1>
-<h2 id="2025-12-09">2025-12-09</h2>
+<h2 id="2025-12-16">2025-12-16</h2>
 <h3 id="announcement">Announcement</h3>
+<p><strong>Google Cloud CCaaS 3.43.144 patch</strong></p>
+<p>This patch does the following:</p>
+<ul>
+<li>Fixes an issue where chats routed using Deltacast didn't auto answer.</li>
+<li>Fixes an issue where virtual agents weren't playing a welcome message when
+  connected to a caller.</li>
+<li>Fixes an issue that occurred when an agent put a caller on hold and then
+  transferred the call to a different agent. When the call was transferred,
+  the caller was taken off hold, but the agent adapter mistakenly indicated
+  that the caller was still on hold.</li>
+<li>Fixes an issue where the transfer restriction settings in a queue sometimes
+  disappeared.</li>
+</ul>
+<hr />
+<h2 id="2025-12-09">2025-12-09</h2>
+<h3 id="announcement_1">Announcement</h3>
 <p><strong>Mobile SDK version 2.15.1 patch</strong></p>
-<p>The Mobile SDK version 2.15.1 patch adds the following updates to the Android
-SDK:</p>
+<p>This patch adds the following updates to the Android SDK:</p>
 <ul>
 <li><strong>Android 16 compatibility</strong>: Mobile SDK 2.15.1 is compatible with Android
   16.</li>
@@ -2243,28 +2258,12 @@ use the <code>contactcenteraiplatform.googleapis.com/ContactCenter</code> resour
 filter your results to view only the log entries for Google Cloud CCaaS. For
 more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/view-log-entries">View log
 entries</a>.</p>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p><strong>Google Cloud CCaaS 3.43</strong></p>
 <p>We've released version 3.43 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
 that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
 schedules</a>.</p>
-<h3 id="feature_1">Feature</h3>
-<p><strong>New web SDK event: exited</strong></p>
-<p>We've added the <code>exited</code> event to the web SDK. This event triggers when an
-end-user exits a chat session after an agent ends the session. For more
-information, see
-<a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-api-reference#exited">exited</a>.</p>
-<h3 id="feature_2">Feature</h3>
-<p><strong>Wait-time virtual agent for calls</strong></p>
-<p>You can now configure a virtual agent to handle incoming calls requiring
-escalation to a human agent. The wait-time virtual agent can place an incoming
-call into a queue and then provide personalized, interactive updates based on
-real-time events that your instance sends to the virtual agent. These events
-include estimated wait time, queue position, and agent availability. When an
-agent is available, the virtual agent transfers the call. For more information,
-see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/wait-time-va-calls">Wait-time virtual agents for
-calls</a>.</p>
 <h3 id="fixed">Fixed</h3>
 <p>We addressed the following issues in this release:</p>
 <ul>
@@ -2318,10 +2317,28 @@ calls</a>.</p>
 <li>Addressed latency in Telnyx calls.</li>
 <li>Fixed a billing calculation issue where concurrent agent counts were
   inaccurate.</li>
+<li>Fixed an agent desktop issue where, when auto answer was enabled, incoming
+  chats mistakenly took focus from active chats that agents were engaged with.</li>
 </ul>
+<h3 id="feature_1">Feature</h3>
+<p><strong>New web SDK event: exited</strong></p>
+<p>We've added the <code>exited</code> event to the web SDK. This event triggers when an
+end-user exits a chat session after an agent ends the session. For more
+information, see
+<a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-api-reference#exited">exited</a>.</p>
+<h3 id="feature_2">Feature</h3>
+<p><strong>Wait-time virtual agent for calls</strong></p>
+<p>You can now configure a virtual agent to handle incoming calls requiring
+escalation to a human agent. The wait-time virtual agent can place an incoming
+call into a queue and then provide personalized, interactive updates based on
+real-time events that your instance sends to the virtual agent. These events
+include estimated wait time, queue position, and agent availability. When an
+agent is available, the virtual agent transfers the call. For more information,
+see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/wait-time-va-calls">Wait-time virtual agents for
+calls</a>.</p>
 <hr />
 <h2 id="2025-12-03">2025-12-03</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p><strong>Google Cloud CCaaS patch 3.42.113</strong></p>
 <p>We've released patch 3.42.113 for Google Cloud CCaaS. This patch does the
 following:</p>
@@ -2357,7 +2374,7 @@ following:</p>
 <li><strong>iOS SDK</strong>: <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/ios-sdk-guide#turn-off-push-notifications-at-global-level">Turn off push notifications at the global
   level</a></li>
 </ul>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p><strong>Mobile SDKs version 2.15.0</strong></p>
 <p>We've released version 2.15.0 of the mobile SDKs.</p>
 <hr />
@@ -2560,13 +2577,13 @@ can then make the media file available to the end-user during the session.</p>
 <p>New endpoint: <code>/apps/api/v1/chats/CHAT_ID/media/MEDIA_ID</code></p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-attachments-chat-api">Agent file attachments with the chat platform
 API</a>.</p>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p><strong>Google Cloud CCaaS 3.42</strong></p>
 <p>We've released version 3.42 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>
 <hr />
 <h2 id="2025-11-17">2025-11-17</h2>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_6">Announcement</h3>
 <p><strong>Advanced reporting dashboards version 3.41</strong></p>
 <p>We've released version 3.41 of the advanced reporting dashboards.</p>
 <h3 id="fixed_3">Fixed</h3>
@@ -2754,7 +2771,7 @@ transfers.</p>
 <p>Administrators: A new <strong>Allow incoming Email Transfers</strong> toggle appears in the
 settings pane at <strong>Settings &gt; Queue &gt; Email &gt;
 Edit / View &gt; YOUR_QUEUE</strong>.</p>
-<h3 id="announcement_6">Announcement</h3>
+<h3 id="announcement_7">Announcement</h3>
 <p><strong>Google Cloud CCaaS 3.42 pre-release notes</strong></p>
 <p>Here are the pre-release notes for Google Cloud CCaaS version 3.42. When we
 release version 3.42, we expect the new capabilities to be as shown here.</p>
@@ -2872,7 +2889,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-10-31">2025-10-31</h2>
-<h3 id="announcement_7">Announcement</h3>
+<h3 id="announcement_8">Announcement</h3>
 <p><strong>Google Cloud CCaaS 3.40</strong></p>
 <p>We've released version 3.40 of Google Cloud CCaaS, including the web SDK.</p>
 <p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>
@@ -2944,7 +2961,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 * Fixed an issue where chat metadata wasn't saved to external storage. This occurred when an end-user ended a chat after escalating from a virtual agent but before being connected to a human agent.</p>
 <hr />
 <h2 id="2025-10-30">2025-10-30</h2>
-<h3 id="announcement_8">Announcement</h3>
+<h3 id="announcement_9">Announcement</h3>
 <p><strong>Advanced reporting dashboards version 3.40</strong></p>
 <p>We've released version 3.40 of the advanced reporting dashboards.</p>
 <h3 id="feature_40">Feature</h3>
@@ -2967,7 +2984,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-10-21">2025-10-21</h2>
-<h3 id="announcement_9">Announcement</h3>
+<h3 id="announcement_10">Announcement</h3>
 <p><strong>Advanced reporting dashboards version 3.40</strong></p>
 <p>We've released version 3.40 of the advanced reporting dashboards.</p>
 <h3 id="feature_42">Feature</h3>
@@ -2989,7 +3006,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-10-15">2025-10-15</h2>
-<h3 id="announcement_10">Announcement</h3>
+<h3 id="announcement_11">Announcement</h3>
 <p><strong>Mobile SDK patch 2.14.1 is released</strong></p>
 <p>This patch adds the <code>didHandleUjetError</code> function to the iOS SDK. The <code>didHandleUjetError</code> function can listen for and handle the following errors:</p>
 <ul>
@@ -3003,7 +3020,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/ios-sdk-guide#fallback">Fallback</a>.</p>
 <hr />
 <h2 id="2025-10-14">2025-10-14</h2>
-<h3 id="announcement_11">Announcement</h3>
+<h3 id="announcement_12">Announcement</h3>
 <p><strong>Portal version 3.40 pre-release notes</strong></p>
 <p>Here are the pre-release notes for portal version 3.40. When we release version 3.40, we expect the new capabilities to be as shown here.</p>
 <h3 id="feature_44">Feature</h3>
@@ -3074,7 +3091,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 * Fixed an issue where chat metadata wasn't saved to external storage. This occurred when an end-user ended a chat after escalating from a virtual agent but before being connected to a human agent.</p>
 <hr />
 <h2 id="2025-10-09">2025-10-09</h2>
-<h3 id="announcement_12">Announcement</h3>
+<h3 id="announcement_13">Announcement</h3>
 <p><strong>Version 3.39 is released</strong></p>
 <p>All release notes published on this date are part of version 3.39.</p>
 <p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>
@@ -3235,12 +3252,12 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 * Fixed an advanced reporting issue where callbacks waiting metrics didn't match in the following dashboards: <strong>Queue Groups Dashboard Calls</strong> and <strong>Queued Calls Status Dashboard</strong>.</p>
 <hr />
 <h2 id="2025-09-25">2025-09-25</h2>
-<h3 id="announcement_13">Announcement</h3>
+<h3 id="announcement_14">Announcement</h3>
 <p><strong>Web SDK version 2 will be shut down on June 26, 2026</strong></p>
 <p>On June 26, 2025, we announced the launch of <a href="https://cloud.google.com/contact-center/ccai-platform/docs/release-notes#June_26_2025">Web SDK version 3</a>. Starting on <strong>June 26, 2026</strong>, the web SDK v2 will no longer function. Be sure to <a href="https://cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-upgrade">update your website</a> to use the web SDK v3 before that date to avoid breaking your integration with the web SDK. We are no longer adding new features to the web SDK v2.</p>
 <hr />
 <h2 id="2025-09-04">2025-09-04</h2>
-<h3 id="announcement_14">Announcement</h3>
+<h3 id="announcement_15">Announcement</h3>
 <p><strong>Agent desktop is GA</strong></p>
 <p>Agent desktop is now <a href="https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages">generally available (GA)</a>. Agent desktop is a customizable interface that provides agents quick access to the information and tools they need to handle customer sessions. The desktop layout includes the agent adapter as well as configurable panels that display information or tools. You can configure a distinct desktop layout for each session type: inbound calls, outbound calls, or chats. You can then configure which desktop layout that an agent sees when they answer an inbound call, place an outbound call, or handle a chat. You can also configure announcements to communicate updates, alerts, and other important information directly to agents. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-overview">Agent desktop</a>.</p>
 <p>The agent desktop provides the following capabilities:</p>
@@ -3253,7 +3270,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-09-02">2025-09-02</h2>
-<h3 id="announcement_15">Announcement</h3>
+<h3 id="announcement_16">Announcement</h3>
 <p><strong>Mobile SDK 2.14 is released</strong></p>
 <p>Mobile SDK 2.14 includes the following updates:</p>
 <ul>
@@ -3282,7 +3299,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <p>Fixed an issue where the Android SDK wouldn't minimize when an end-user clicked a deep link.</p>
 <hr />
 <h2 id="2025-08-27">2025-08-27</h2>
-<h3 id="announcement_16">Announcement</h3>
+<h3 id="announcement_17">Announcement</h3>
 <p><strong>Portal version 3.39 pre-release notes</strong></p>
 <p>Here are the pre-release notes for portal version 3.39. When we release version 3.39, we expect the new capabilities to be as shown here.</p>
 <h3 id="feature_59">Feature</h3>
@@ -3429,7 +3446,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 * Fixed an advanced reporting issue where callbacks waiting metrics didn't match in the following dashboards: <strong>Queue Groups Dashboard Calls</strong> and <strong>Queued Calls Status Dashboard</strong>.</p>
 <hr />
 <h2 id="2025-08-20">2025-08-20</h2>
-<h3 id="announcement_17">Announcement</h3>
+<h3 id="announcement_18">Announcement</h3>
 <p><strong>Version 3.37 is released</strong></p>
 <p>All release notes published on this date are part of version 3.37.</p>
 <p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>
@@ -3497,12 +3514,12 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-08-13">2025-08-13</h2>
-<h3 id="announcement_18">Announcement</h3>
+<h3 id="announcement_19">Announcement</h3>
 <p><strong>Check the version number of your instance</strong></p>
 <p>You can now check the version number of your instance and compare it with the version numbers of the updates and patches that Google announces in these release notes. In this way you can know which capabilities are available in your instance. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/get-started#check_the_version_number_of_your_instance">Check the version number of your instance</a>.</p>
 <hr />
 <h2 id="2025-08-11">2025-08-11</h2>
-<h3 id="announcement_19">Announcement</h3>
+<h3 id="announcement_20">Announcement</h3>
 <p><strong>Availability in three additional regions</strong></p>
 <p>Google Cloud CCaaS is now available in the following three additional regions:</p>
 <ul>
@@ -3513,12 +3530,12 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <p>In each of these regions, Workforce Management is available and advanced reporting isn't available. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/localities#regions">Google Cloud regions</a>.</p>
 <hr />
 <h2 id="2025-07-24">2025-07-24</h2>
-<h3 id="announcement_20">Announcement</h3>
+<h3 id="announcement_21">Announcement</h3>
 <p><strong>Mobile SDK patch 2.13.1 is released</strong></p>
 <p>This patch fixes an issue where the Android SDK didn't support deep linking in the customizable link format.</p>
 <hr />
 <h2 id="2025-07-10">2025-07-10</h2>
-<h3 id="announcement_21">Announcement</h3>
+<h3 id="announcement_22">Announcement</h3>
 <p><strong>Portal version 3.37 pre-release notes</strong></p>
 <p>Here are the pre-release notes for portal version 3.37. When we release version 3.37, we expect the new capabilities to be as shown here.</p>
 <h3 id="feature_74">Feature</h3>
@@ -3572,7 +3589,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-07-08">2025-07-08</h2>
-<h3 id="announcement_22">Announcement</h3>
+<h3 id="announcement_23">Announcement</h3>
 <p><strong>Mobile SDK 2.13 is released</strong></p>
 <p>Mobile SDK 2.13 includes the following updates:</p>
 <ul>
@@ -3606,12 +3623,12 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-07-07">2025-07-07</h2>
-<h3 id="announcement_23">Announcement</h3>
+<h3 id="announcement_24">Announcement</h3>
 <p><strong>Session metadata in Conversational Insights conversations is GA</strong></p>
 <p>The Google Cloud CCaaS capability of including session metadata when creating conversations in Conversational Insights is now <a href="https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages">generally available (GA)</a>. Metadata values are available for each conversation. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/conversational-insights">Conversational Insights and Quality AI</a>.</p>
 <hr />
 <h2 id="2025-07-02">2025-07-02</h2>
-<h3 id="announcement_24">Announcement</h3>
+<h3 id="announcement_25">Announcement</h3>
 <p><strong>Version 3.36 is released</strong></p>
 <p>All release notes published on this date are part of version 3.36.</p>
 <p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>
@@ -3664,7 +3681,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-06-26">2025-06-26</h2>
-<h3 id="announcement_25">Announcement</h3>
+<h3 id="announcement_26">Announcement</h3>
 <p><strong>Web SDK version 3</strong></p>
 <p>We're pleased to announce that the web SDK v3 is now <a href="https://cloud.google.com/products#product-launch-stages">generally available (GA)</a>. The web SDK v3 is built on the <a href="https://cloud.google.com/contact-center/ccai-platform/docs/headless-web-guide">headless web SDK</a>, so all of the methods that are available on a headless SDK client are also available with the web SDK v3 widget.</p>
 <p><strong>Deprecation notice</strong></p>
@@ -3691,7 +3708,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <p>For help upgrading to web SDK v3, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-upgrade">Upgrade from web SDK version 2 to web SDK version 3</a>. If you've been using the Private Preview version of web SDK v3, be sure to update your implementations to access <code>widget.js</code> from your Google Cloud CCaaS instance.</p>
 <hr />
 <h2 id="2025-06-23">2025-06-23</h2>
-<h3 id="announcement_26">Announcement</h3>
+<h3 id="announcement_27">Announcement</h3>
 <p><strong>Version 3.36 pre-release notes</strong></p>
 <p>Here are the pre-release notes for version 3.36. When we release version 3.36, we expect the new capabilities to be as shown here.</p>
 <h3 id="feature_83">Feature</h3>
@@ -3738,7 +3755,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-06-09">2025-06-09</h2>
-<h3 id="announcement_27">Announcement</h3>
+<h3 id="announcement_28">Announcement</h3>
 <p><strong>Salesforce ICU Update</strong></p>
 <p>This is for Google Contact Center as a Service (CCaaS) customers that use Salesforce integration with CCaaS.</p>
 <p>On <strong>June 15th, 2025</strong>, Salesforce is rolling out an automatic upgrade to its International Components for Unicode (ICU) locale data. This affects how date, time, number, and currency formatting are handled across Apex, Visualforce, and Lightning components.</p>
@@ -3802,7 +3819,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <p><strong>Important</strong>: This will only be effective if completed before <strong>June 15th 2025</strong>.</p>
 <hr />
 <h2 id="2025-06-05">2025-06-05</h2>
-<h3 id="announcement_28">Announcement</h3>
+<h3 id="announcement_29">Announcement</h3>
 <p><strong>Patch 3.35.15 is released</strong></p>
 <p>This patch does the following:</p>
 <ul>
@@ -3812,7 +3829,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-05-28">2025-05-28</h2>
-<h3 id="announcement_29">Announcement</h3>
+<h3 id="announcement_30">Announcement</h3>
 <p><strong>Headless web SDK 3.6.5 is released</strong></p>
 <p>This release does the following:</p>
 <ul>
@@ -3822,7 +3839,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-05-27">2025-05-27</h2>
-<h3 id="announcement_30">Announcement</h3>
+<h3 id="announcement_31">Announcement</h3>
 <p><strong>Version 3.35 is released</strong></p>
 <p>All release notes published on this date are part of version 3.35.</p>
 <p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>
@@ -3894,6 +3911,9 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-cloud-contact-center-as-a-service">Google Cloud Contact Center as a Service</a></li>
+          <li class="nav-item">
+            <a href="#2025-12-16" class="nav-link">2025-12-16</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-12-09" class="nav-link">2025-12-09</a>
           </li>

@@ -2,9 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Load Balancing</title>
   <subtitle>Changelog for Google Cloud product: Cloud Load Balancing</subtitle>
-  <updated>2025-12-03T00:00:00+00:00</updated>
+  <updated>2025-12-17T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-load-balancing</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-load-balancing/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-load-balancing:2025-12-17:feature:0</id>
+    <published>2025-12-17T00:00:00+00:00</published>
+    <updated>2025-12-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Starting <em>December 17, 2025</em>, requests with request methods that aren't
+compliant with <a href="https://datatracker.ietf.org/doc/html/rfc9110#section-5.6.2">RFC 9110, Section
+5.6.2</a> will be
+rejected by a first-layer Google Front End (GFE) before reaching your load
+balancer or its backends. Previously, such non-compliant requests would have
+been rejected by the load balancer or its backends with a variety of error
+codes. With the GFE now handling such requests, you might observe a small
+decrease in error rates.</p>
+<p>This change applies only to global external Application Load Balancers and classic Application Load Balancers.</p>]]></content>
+    <summary>Starting December 17, 2025, Application Load Balancers will reject non-compliant HTTP requests at the first layer of the Google Front End (GFE). This change, applicable to global external and classic Application Load Balancers, aims to improve error handling and may result in a slight reduction in observed error rates.</summary>
+    <title>Feature: Enhanced HTTP method validation for Application Load Balancers</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

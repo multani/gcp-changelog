@@ -1,5 +1,15 @@
 # Apigee UI
 
+## 2025-12-17
+
+### Announcement
+
+On December 17, 2025, we announced that Debug v1 will be shutdown on
+January 15, 2026. Use
+[Debug v2](https://docs.cloud.google.com/apigee/docs/api-platform/debug/trace)
+instead of Debug v1.
+
+---
 ## 2025-11-17
 
 ### Fixed

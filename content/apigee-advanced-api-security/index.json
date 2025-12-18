@@ -1,6 +1,32 @@
 {
   "name": "Apigee Advanced API Security",
   "entries": {
+    "2025-12-17": [
+      {
+        "kind": "Feature",
+        "content": "**General availability of Risk Assessment v2 and support for assessments using additional policies**\n\nAnnouncing the\n[general availability](https://cloud.google.com/products#product-launch-stages)\nof Risk Assessment v2 and support for assessments using the VerifyIAM policy and\nthese three AI policies: SanitizeUserPrompt, SanitizeModelResponse, and\nSemanticCacheLookup.\n\n**Note:** The Risk Assessment v2 monitoring conditions feature remains in preview.\n\nFor usage information, see [Risk Assessment overview and UI](https://docs.cloud.google.com/apigee/docs/api-security/security-scores) in the documentation.",
+        "summary": {
+          "title": "Risk Assessment v2 Now Generally Available",
+          "summary": "Risk Assessment v2 is now generally available, supporting assessments with the VerifyIAM policy and three new AI policies: SanitizeUserPrompt, SanitizeModelResponse, and SemanticCacheLookup. The monitoring conditions feature for Risk Assessment v2 remains in preview."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "On December 17, 2025 we released an updated version of Advanced API Security\nRisk Assessment\n\n**Note:** Rollouts of this release to production instances will begin within two\nbusiness days and may take four or more business days to complete across all\nGoogle Cloud zones. Your instances may not have the feature available until the\nrollout is complete.",
+        "summary": {
+          "title": "Advanced API Security Risk Assessment Update",
+          "summary": "An updated version of Advanced API Security Risk Assessment was released on December 17, 2025. Production rollouts will commence within two business days and may take up to four or more business days to complete across all zones."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**New risk assessment type field when creating or updating a risk assessment version 2 custom security profile**\n\nThe API for creating and updating a version 2 risk assessment custom security\nprofile now includes a `risk_assessment_type` field to specify\nwhether the custom security profile applies to an Apigee/Apigee hybrid instance\nor to API hub multi-gateway.\n\nThis field is optional and defaults to `APIGEE`; this is not a\nbreaking change for existing risk assessment users.\n\nSee [REST Resource: organizations.securityProfilesV2](https://docs.cloud.google.com/apigee/docs/reference/apis/apigee/rest/v1/organizations.securityProfilesV2) for information on the new functionality.",
+        "summary": {
+          "title": "New Field for Custom Security Profiles",
+          "summary": "A new optional `risk_assessment_type` field has been added to the API for creating and updating custom security profiles. This field allows you to specify if the profile applies to Apigee/Apigee hybrid or API hub multi-gateway instances. Existing users will not be affected as the default remains `APIGEE`."
+        }
+      }
+    ],
     "2025-10-02": [
       {
         "kind": "Announcement",

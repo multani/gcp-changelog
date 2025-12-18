@@ -1,5 +1,19 @@
 # Gemini Enterprise
 
+## 2025-12-17
+
+### Feature
+
+**Gemini Enterprise: Use Gemini 3 Flash (Preview)**
+
+You can use Gemini 3 Flash in Preview with Gemini Enterprise. To make
+Gemini 3 Flash available to users in your
+Gemini Enterprise app, a Gemini Enterprise admin must enable the
+**Gemini 3 Flash (Preview)** toggle in the **Model availability**
+feature control. For more information on feature controls, see
+[Manage features on the web app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
+
+---
 ## 2025-12-15
 
 ### Feature
@@ -144,10 +158,10 @@ will continue to use the familiar editor to ensure backward compatibility.
 
 ### Feature
 
-**Gemini Enterprise: Use Gemini 3 (Preview)**
+**Gemini Enterprise: Use Gemini 3 Pro (Preview)**
 
-You can use Gemini 3 in preview with Gemini Enterprise. To make
-Gemini 3 available to users in your
+You can use Gemini 3 Pro in preview with Gemini Enterprise. To make
+Gemini 3 Pro available to users in your
 Gemini Enterprise app, a Gemini Enterprise admin must enable the
 **Gemini 3 Pro (Preview)** toggle in the **Model availability**
 feature control. For more information on feature controls, see

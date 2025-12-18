@@ -1,5 +1,21 @@
 # Cloud Load Balancing
 
+## 2025-12-17
+
+### Feature
+
+Starting *December 17, 2025*, requests with request methods that aren't
+compliant with [RFC 9110, Section
+5.6.2](https://datatracker.ietf.org/doc/html/rfc9110#section-5.6.2) will be
+rejected by a first-layer Google Front End (GFE) before reaching your load
+balancer or its backends. Previously, such non-compliant requests would have
+been rejected by the load balancer or its backends with a variety of error
+codes. With the GFE now handling such requests, you might observe a small
+decrease in error rates.
+
+This change applies only to global external Application Load Balancers and classic Application Load Balancers.
+
+---
 ## 2025-12-03
 
 ### Feature

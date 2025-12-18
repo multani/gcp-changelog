@@ -1,5 +1,18 @@
 # Compute Engine
 
+## 2025-12-17
+
+### Feature
+
+**Generally available**: You can create future reservation requests in calendar
+mode to reserve GPU, TPU, or H4D resources for your virtual machine (VM)
+instances. Use these requests to obtain high-demand resources for creating VMs
+that you plan to run for up to 90 days, such as when you want to run model
+pre-training, model fine-tuning, or high performance computing (HPC) jobs. For
+more information, see
+[About future reservation requests in calendar mode](https://docs.cloud.google.com/compute/docs/instances/future-reservations-calendar-mode-overview).
+
+---
 ## 2025-12-16
 
 ### Feature

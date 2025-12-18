@@ -1,5 +1,22 @@
 # AlloyDB for PostgreSQL
 
+## 2025-12-17
+
+### Feature
+
+You can now use Gemini 3.0 Flash
+([Preview](https://cloud.google.com/products#product-launch-stages))
+when you call generative AI functions in AlloyDB, such as `AI.GENERATE`. Use the
+model name `gemini-3-flash-preview`. For more information, see
+[Use Gemini 3.0 models](https://docs.cloud.google.com/alloydb/docs/ai/evaluate-semantic-queries-ai-operators#use-gemini-model-3).
+
+### Feature
+
+You can build data agents that interact with the data in your
+database using conversational language. Use these data agents as tools to
+empower your applications. For more information, see [Data agents overview](https://docs.cloud.google.com/alloydb/docs/ai/data-agent-overview). This feature is available in [Preview](https://cloud.google.com/products#product-launch-stages), and access to it requires a [sign-up](https://forms.gle/pJByTWfenZAWbaXo7).
+
+---
 ## 2025-12-11
 
 ### Feature

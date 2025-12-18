@@ -1,5 +1,23 @@
 # Cloud Composer
 
+## 2025-12-17
+
+### Feature
+
+**Extra Large environments** are now generally available (GA) in
+Cloud Composer 3:
+
+* You can now use the
+  [extra large environment size](https://docs.cloud.google.com/composer/docs/composer-3/scale-environments#environment-size)
+  for new and existing Cloud Composer 3 environments.
+* The new Extra Large environment preset is available in
+  the Google Cloud console. This preset sets the initial scale and
+  performance configuration for an environment that can support up to several
+  thousand DAGs. For more information about the estimated
+  number of supported DAGs, DAG runs, and tasks, see
+  [Environment presets](https://docs.cloud.google.com/composer/docs/composer-3/scale-environments#presets).
+
+---
 ## 2025-12-12
 
 ### Deprecated

@@ -1,5 +1,35 @@
 # Cloud Key Management Service
 
+## 2025-12-17
+
+### Feature
+
+Single-tenant Cloud HSM is now generally available. With
+Single-tenant Cloud HSM, you can create and manage dedicated single-tenant
+instances. Each instance is a cluster of partitions on HSMs in a single
+Cloud KMS region. Google manages the HSMs, but you have administrative
+control over your instance.
+
+Single-tenant Cloud HSM is available in the following locations:
+
+* `us-central1`
+* `us-east4`
+* `europe-west1`
+* `europe-west4`
+
+Creating a managing an instance requires quorum approval with two-factor
+authentication using keys that you create and secure outside of
+Google Cloud. Single-tenant Cloud HSM instances incur additional costs.
+
+For more information about Single-tenant Cloud HSM, see
+[Single-tenant Cloud HSM](https://docs.cloud.google.com/kms/docs/single-tenant-hsm). To learn how to
+create and maintain a Single-tenant Cloud HSM instance, see [Create and
+manage a Single-tenant Cloud HSM
+instance](https://docs.cloud.google.com/kms/docs/create-manage-single-tenant-hsm). To see pricing details for
+Single-tenant Cloud HSM, see [Pricing for
+Single-tenant Cloud HSM](https://docs.cloud.google.com/kms/pricing#single-tenant).
+
+---
 ## 2025-11-13
 
 ### Feature

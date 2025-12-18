@@ -1,6 +1,48 @@
 {
   "name": "Cortex Framework",
   "entries": {
+    "2025-12-17": [
+      {
+        "kind": "Fixed",
+        "content": "* **SAP**: Added support for future dates to `currency_conversion`.\n* **Cloud Build Image**: Updated gcloud SDK to v541 and Python library\n  dependencies used during Cloud Build deployment.\n* **Composer DAG**: Corrected propagation of location parameterization.\n* **Cortex for Marketing**: Updated references to Google Ads API v22.",
+        "summary": {
+          "title": "SAP currency support and tool updates",
+          "summary": "This release includes updates for SAP currency conversion to support future dates. Additionally, Cloud Build images and Composer DAGs have been improved, and Cortex for Marketing references have been updated to the latest Google Ads API version."
+        }
+      },
+      {
+        "kind": "Changed",
+        "content": "* **SAP**: The column `DUMMY_SDDOCPARTNER_INCL_EEW_PS` has been removed from\n  *SalesOrderPartnerFunction* (ECC and S/4) as it is a non-standard column not\n  used for reporting.",
+        "summary": {
+          "title": "SAP Sales Order Partner Function Column Removed",
+          "summary": "The non-standard column `DUMMY_SDDOCPARTNER_INCL_EEW_PS` has been removed from the SalesOrderPartnerFunction entity in both ECC and S/4 systems. This removal is because the column was not used for reporting purposes."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "* **SAP**: Cortex's Data Mesh functionality has been deprecated. This change\n  is prompted by the evolution of Google Cloud data management services. The Data\n  Mesh solution was built using Data Catalog for metadata management, which is\n  now being replaced by the more advanced\n  [Dataplex Universal Catalog](https://docs.cloud.google.com/dataplex/docs/introduction).\n  Dataplex Universal Catalog provides a unified API, enhanced metadata capabilities, and\n  new features for a more comprehensive data governance experience. For existing\n  Cortex Framework users who have implemented the Data Mesh feature, we recommend\n  transitioning to Dataplex Universal Catalog to ensure continued support and access to the\n  latest features. For a detailed migration guide, see\n  [Transition to Dataplex Universal Catalog](https://cloud.google.com/dataplex/docs/transition-to-dataplex-catalog).",
+        "summary": {
+          "title": "Data Mesh functionality deprecated",
+          "summary": "The Data Mesh functionality within Cortex is now deprecated. This is due to advancements in Google Cloud's data management services, specifically the introduction of Dataplex Universal Catalog, which offers enhanced metadata management and data governance. We recommend transitioning to Dataplex Universal Catalog for continued support and improved capabilities."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "",
+        "summary": {
+          "title": "New Announcement",
+          "summary": "An important announcement has been made. Read on for more details."
+        }
+      },
+      {
+        "kind": "Release 6.3.3",
+        "content": "",
+        "summary": {
+          "title": "Release 6.3.3 is Now Available",
+          "summary": "We are pleased to announce the release of version 6.3.3. This update includes important bug fixes and performance enhancements to improve your experience."
+        }
+      }
+    ],
     "2025-09-19": [
       {
         "kind": "Changed",

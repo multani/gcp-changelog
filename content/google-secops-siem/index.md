@@ -1,5 +1,12 @@
 # Google SecOps SIEM
 
+## 2025-12-17
+
+### Announcement
+
+The [Change views per alert feature](https://docs.cloud.google.com/chronicle/docs/secops/release-notes#December_07_2025) has been rolled back.
+
+---
 ## 2025-12-14
 
 ### Announcement

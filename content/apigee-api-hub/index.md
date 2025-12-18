@@ -1,5 +1,33 @@
 # Apigee API hub
 
+## 2025-12-17
+
+### Feature
+
+**Advanced API Security for multi-gateway projects**
+
+Apigee Advanced API Security can now centrally manage and govern the security posture of your APIs across multiple Apigee projects, environments, and gateways. This enhancement leverages API hub to provide a single, unified view of your API security, helping you to identify risks and enforce standards consistently across your entire organization.
+
+This enhancement introduces the following key capabilities:
+
+* **Unified risk assessment:** view and manage security scores for all your APIs in a centralized dashboard, regardless of which project, environment, or gateway they are deployed in.
+* **Customizable security profiles:** create and manage custom security profiles and apply them consistently across your multi-gateway landscape.
+
+Supported gateways:
+
+* Apigee X
+* Apigee hybrid
+* Apigee Edge Public Cloud
+
+To enable this feature, navigate to the **Add-on management page** in API hub and enable the **Apigee Advanced API Security** add-on.
+
+Advanced API Security currently has limited support for VPC Service Controls (VPC-SC). To avoid potential feature limitations, we recommend enabling this add-on for API hub instances associated with Apigee organizations that don't have VPC-SC enabled.
+
+For more information, see [Advanced API Security for multiple Apigee organizations and gateways](https://docs.cloud.google.com/apigee/docs/apihub/advanced-api-security-multi-gateway).
+
+**Note:** Rollouts of this feature will begin today, and may take five or more business days to be completed across all Google Cloud zones. You may not be able to view or use this feature until the rollout is complete.
+
+---
 ## 2025-12-15
 
 ### Feature

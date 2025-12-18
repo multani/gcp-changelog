@@ -1,5 +1,19 @@
 # Colab Enterprise
 
+## 2025-12-17
+
+### Feature
+
+**Post-startup scripts**
+
+[Generally available (GA)](https://cloud.google.com/products#product-launch-stages):
+You can use a post-startup script to perform tasks after the startup process
+of your Colab Enterprise runtime. For example, you can use
+a post-startup script to install specific packages or make specific
+changes to your runtime's VM. For more information, see
+[Use a post-startup script](https://docs.cloud.google.com/colab/docs/post-startup-script).
+
+---
 ## 2025-11-10
 
 ### Feature

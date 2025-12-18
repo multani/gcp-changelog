@@ -1,5 +1,44 @@
 # Cortex Framework
 
+## 2025-12-17
+
+### Fixed
+
+* **SAP**: Added support for future dates to `currency_conversion`.
+* **Cloud Build Image**: Updated gcloud SDK to v541 and Python library
+  dependencies used during Cloud Build deployment.
+* **Composer DAG**: Corrected propagation of location parameterization.
+* **Cortex for Marketing**: Updated references to Google Ads API v22.
+
+### Changed
+
+* **SAP**: The column `DUMMY_SDDOCPARTNER_INCL_EEW_PS` has been removed from
+  *SalesOrderPartnerFunction* (ECC and S/4) as it is a non-standard column not
+  used for reporting.
+
+### Deprecated
+
+* **SAP**: Cortex's Data Mesh functionality has been deprecated. This change
+  is prompted by the evolution of Google Cloud data management services. The Data
+  Mesh solution was built using Data Catalog for metadata management, which is
+  now being replaced by the more advanced
+  [Dataplex Universal Catalog](https://docs.cloud.google.com/dataplex/docs/introduction).
+  Dataplex Universal Catalog provides a unified API, enhanced metadata capabilities, and
+  new features for a more comprehensive data governance experience. For existing
+  Cortex Framework users who have implemented the Data Mesh feature, we recommend
+  transitioning to Dataplex Universal Catalog to ensure continued support and access to the
+  latest features. For a detailed migration guide, see
+  [Transition to Dataplex Universal Catalog](https://cloud.google.com/dataplex/docs/transition-to-dataplex-catalog).
+
+### Announcement
+
+
+
+### Release 6.3.3
+
+
+
+---
 ## 2025-09-19
 
 ### Changed

@@ -1,5 +1,46 @@
 # Apigee Advanced API Security
 
+## 2025-12-17
+
+### Feature
+
+**General availability of Risk Assessment v2 and support for assessments using additional policies**
+
+Announcing the
+[general availability](https://cloud.google.com/products#product-launch-stages)
+of Risk Assessment v2 and support for assessments using the VerifyIAM policy and
+these three AI policies: SanitizeUserPrompt, SanitizeModelResponse, and
+SemanticCacheLookup.
+
+**Note:** The Risk Assessment v2 monitoring conditions feature remains in preview.
+
+For usage information, see [Risk Assessment overview and UI](https://docs.cloud.google.com/apigee/docs/api-security/security-scores) in the documentation.
+
+### Announcement
+
+On December 17, 2025 we released an updated version of Advanced API Security
+Risk Assessment
+
+**Note:** Rollouts of this release to production instances will begin within two
+business days and may take four or more business days to complete across all
+Google Cloud zones. Your instances may not have the feature available until the
+rollout is complete.
+
+### Feature
+
+**New risk assessment type field when creating or updating a risk assessment version 2 custom security profile**
+
+The API for creating and updating a version 2 risk assessment custom security
+profile now includes a `risk_assessment_type` field to specify
+whether the custom security profile applies to an Apigee/Apigee hybrid instance
+or to API hub multi-gateway.
+
+This field is optional and defaults to `APIGEE`; this is not a
+breaking change for existing risk assessment users.
+
+See [REST Resource: organizations.securityProfilesV2](https://docs.cloud.google.com/apigee/docs/reference/apis/apigee/rest/v1/organizations.securityProfilesV2) for information on the new functionality.
+
+---
 ## 2025-10-02
 
 ### Announcement

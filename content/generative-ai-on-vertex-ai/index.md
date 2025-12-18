@@ -1,5 +1,20 @@
 # Generative AI on Vertex AI
 
+## 2025-12-17
+
+### Feature
+
+**Gemini 3 Flash**
+
+Gemini 3 Flash is now available in public preview. This model is designed to
+tackle the most challenging agentic problems with strong coding and
+state-of-the-art reasoning capabilities, and is our best model for complex
+multimodal understanding.
+
+For more information, see [Gemini 3
+Flash](https://docs.cloud.google.com/vertex-ai/generative-ai/models/gemini/3-flash).
+
+---
 ## 2025-12-16
 
 ### Changed

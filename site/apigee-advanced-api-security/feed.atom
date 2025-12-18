@@ -2,9 +2,61 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee Advanced API Security</title>
   <subtitle>Changelog for Google Cloud product: Apigee Advanced API Security</subtitle>
-  <updated>2025-10-02T00:00:00+00:00</updated>
+  <updated>2025-12-17T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-advanced-api-security</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-advanced-api-security/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-advanced-api-security:2025-12-17:feature:0</id>
+    <published>2025-12-17T00:00:00+00:00</published>
+    <updated>2025-12-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>General availability of Risk Assessment v2 and support for assessments using additional policies</strong></p>
+<p>Announcing the
+<a href="https://cloud.google.com/products#product-launch-stages">general availability</a>
+of Risk Assessment v2 and support for assessments using the VerifyIAM policy and
+these three AI policies: SanitizeUserPrompt, SanitizeModelResponse, and
+SemanticCacheLookup.</p>
+<p><strong>Note:</strong> The Risk Assessment v2 monitoring conditions feature remains in preview.</p>
+<p>For usage information, see <a href="https://docs.cloud.google.com/apigee/docs/api-security/security-scores">Risk Assessment overview and UI</a> in the documentation.</p>]]></content>
+    <summary>Risk Assessment v2 is now generally available, supporting assessments with the VerifyIAM policy and three new AI policies: SanitizeUserPrompt, SanitizeModelResponse, and SemanticCacheLookup. The monitoring conditions feature for Risk Assessment v2 remains in preview.</summary>
+    <title>Feature: Risk Assessment v2 Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-advanced-api-security:2025-12-17:announcement:1</id>
+    <published>2025-12-17T00:00:00+00:00</published>
+    <updated>2025-12-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On December 17, 2025 we released an updated version of Advanced API Security
+Risk Assessment</p>
+<p><strong>Note:</strong> Rollouts of this release to production instances will begin within two
+business days and may take four or more business days to complete across all
+Google Cloud zones. Your instances may not have the feature available until the
+rollout is complete.</p>]]></content>
+    <summary>An updated version of Advanced API Security Risk Assessment was released on December 17, 2025. Production rollouts will commence within two business days and may take up to four or more business days to complete across all zones.</summary>
+    <title>Announcement: Advanced API Security Risk Assessment Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-advanced-api-security:2025-12-17:feature:2</id>
+    <published>2025-12-17T00:00:00+00:00</published>
+    <updated>2025-12-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>New risk assessment type field when creating or updating a risk assessment version 2 custom security profile</strong></p>
+<p>The API for creating and updating a version 2 risk assessment custom security
+profile now includes a <code>risk_assessment_type</code> field to specify
+whether the custom security profile applies to an Apigee/Apigee hybrid instance
+or to API hub multi-gateway.</p>
+<p>This field is optional and defaults to <code>APIGEE</code>; this is not a
+breaking change for existing risk assessment users.</p>
+<p>See <a href="https://docs.cloud.google.com/apigee/docs/reference/apis/apigee/rest/v1/organizations.securityProfilesV2">REST Resource: organizations.securityProfilesV2</a> for information on the new functionality.</p>]]></content>
+    <summary>A new optional `risk_assessment_type` field has been added to the API for creating and updating custom security profiles. This field allows you to specify if the profile applies to Apigee/Apigee hybrid or API hub multi-gateway instances. Existing users will not be affected as the default remains `APIGEE`.</summary>
+    <title>Feature: New Field for Custom Security Profiles</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

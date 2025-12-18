@@ -2220,8 +2220,40 @@
 
 
 <h1 id="cortex-framework">Cortex Framework</h1>
-<h2 id="2025-09-19">2025-09-19</h2>
+<h2 id="2025-12-17">2025-12-17</h2>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li><strong>SAP</strong>: Added support for future dates to <code>currency_conversion</code>.</li>
+<li><strong>Cloud Build Image</strong>: Updated gcloud SDK to v541 and Python library
+  dependencies used during Cloud Build deployment.</li>
+<li><strong>Composer DAG</strong>: Corrected propagation of location parameterization.</li>
+<li><strong>Cortex for Marketing</strong>: Updated references to Google Ads API v22.</li>
+</ul>
 <h3 id="changed">Changed</h3>
+<ul>
+<li><strong>SAP</strong>: The column <code>DUMMY_SDDOCPARTNER_INCL_EEW_PS</code> has been removed from
+  <em>SalesOrderPartnerFunction</em> (ECC and S/4) as it is a non-standard column not
+  used for reporting.</li>
+</ul>
+<h3 id="deprecated">Deprecated</h3>
+<ul>
+<li><strong>SAP</strong>: Cortex's Data Mesh functionality has been deprecated. This change
+  is prompted by the evolution of Google Cloud data management services. The Data
+  Mesh solution was built using Data Catalog for metadata management, which is
+  now being replaced by the more advanced
+  <a href="https://docs.cloud.google.com/dataplex/docs/introduction">Dataplex Universal Catalog</a>.
+  Dataplex Universal Catalog provides a unified API, enhanced metadata capabilities, and
+  new features for a more comprehensive data governance experience. For existing
+  Cortex Framework users who have implemented the Data Mesh feature, we recommend
+  transitioning to Dataplex Universal Catalog to ensure continued support and access to the
+  latest features. For a detailed migration guide, see
+  <a href="https://cloud.google.com/dataplex/docs/transition-to-dataplex-catalog">Transition to Dataplex Universal Catalog</a>.</li>
+</ul>
+<h3 id="announcement">Announcement</h3>
+<h3 id="release-633">Release 6.3.3</h3>
+<hr />
+<h2 id="2025-09-19">2025-09-19</h2>
+<h3 id="changed_1">Changed</h3>
 <ul>
 <li><strong>1-Click Deployer</strong>: 1-Click deployer now deploys the
   <a href="https://cloud.google.com/cortex/docs/dun-and-bradstreet">Sustainability</a> module when SAP ECC or S/4 is selected.</li>
@@ -2269,7 +2301,7 @@
   Ads data is skipped from aggregates as higher quality data is now available from
   Marketing Mix Modeling (MMM) Data Platform.</li>
 </ul>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_1">Fixed</h3>
 <ul>
 <li><strong>SAP</strong>:</li>
 <li><code>Qty</code> field data type in <code>StockInHand</code> views (ECC and S/4) has been
@@ -2288,7 +2320,7 @@
     (for example, <code>Opportunities</code>).</li>
 <li>Updated ERD to include proper linkage to calendar dimension.</li>
 </ul>
-<h3 id="deprecated">Deprecated</h3>
+<h3 id="deprecated_1">Deprecated</h3>
 <ul>
 <li><strong>SAP</strong>: The views <code>GLDocumentsHdr</code> and <code>RegionsMD</code> are now removed as
   they are no longer relevant.</li>
@@ -2310,6 +2342,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cortex-framework">Cortex Framework</a></li>
+          <li class="nav-item">
+            <a href="#2025-12-17" class="nav-link">2025-12-17</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-09-19" class="nav-link">2025-09-19</a>
           </li>

@@ -30,10 +30,6 @@
   latest features. For a detailed migration guide, see
   [Transition to Dataplex Universal Catalog](https://cloud.google.com/dataplex/docs/transition-to-dataplex-catalog).
 
-### Announcement
-
-
-
 ### Release 6.3.3
 
 

@@ -46,10 +46,6 @@ Apigee hybrid v1.16 supports cert-manager release 1.18 and 1.19.
 | **436323210** | **Fixed ingress cert keys to allow both `tls.key`/`key` and `tls.crt`/`cert`.** |
 | **N/A** | **Updates to security, infrastructure, and libraries.** (also fixed in [Apigee 1-16-0-apigee-4](https://docs.cloud.google.com/apigee/docs/release/release-notes#October_31_2025)) |
 
-### Announcement
-
-
-
 ### hybrid v1.16.0
 
 On December 19, 2025 we released an updated version of the Apigee hybrid software, 1.16.0.

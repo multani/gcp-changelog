@@ -1,6 +1,21 @@
 # Generative AI on Vertex AI
 
+## 2025-12-18
+
+### Feature
+
+**Save and share prompts in Vertex AI Studio**: The prompt sharing feature no longer needs to be enabled. You can share prompts without asking your administrator to first enable the prompt sharing feature. For more information, see [Save and share prompts](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/prompt-sharing).
+
+---
 ## 2025-12-17
+
+### Feature
+
+[Cloud API Registry](https://docs.cloud.google.com/api-registry/docs/overview) is available
+in the Google Cloud console in
+[Preview](https://cloud.google.com/products#product-launch-stages). Use
+Cloud API Registry in the Google Cloud console to view and manage the MCP
+servers and tools your agent has access to.
 
 ### Feature
 
@@ -17,7 +32,7 @@ Flash](https://docs.cloud.google.com/vertex-ai/generative-ai/models/gemini/3-fla
 ---
 ## 2025-12-16
 
-### Changed
+### Change
 
 **Vertex AI Agent Engine**
 
@@ -41,7 +56,7 @@ Vertex AI Agent Engine [Sessions](https://docs.cloud.google.com/agent-builder/ag
 and [Memory Bank](https://docs.cloud.google.com/agent-builder/agent-engine/memory-bank/overview) are now
 [Generally Available](https://cloud.google.com/products#product-launch-stages).
 
-### Changed
+### Change
 
 Updated pricing for **Vertex AI Agent Engine**:
 

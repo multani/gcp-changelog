@@ -1,6 +1,26 @@
 {
   "name": "Guest Environment",
   "entries": {
+    "2025-12-18": [
+      {
+        "kind": "Fixed",
+        "content": "Version `20251218.00` of the [guest agent](compute/docs/images/guest-agent) is\nnow available for Windows only. This version includes the following fixes:\n\n* Fixes a crash loop in VM extensions due to a race condition where the guest\n  agent manager service can sometimes try to connect to the extension before\n  it is able to create and bind to its unix socket.\n* Fixes an issue where the core plugin is not creating required registry keys\n  before attempting to write to them.",
+        "summary": {
+          "title": "Guest Agent Update for Windows",
+          "summary": "A new version of the guest agent for Windows is available, addressing critical issues including VM extension crash loops and registry key creation problems."
+        }
+      }
+    ],
+    "2025-12-11": [
+      {
+        "kind": "Feature",
+        "content": "Version `20251209.00` of the guest agent, which re-introduces the plugin-based\narchitecture to Windows, is now available.\n\nFor more information about the plugin-based architecture, see\n[Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).\n\nThe plugin-based architecture for Windows was previously rolled back due to a bug that prevented the correct setup of IP alias routes when used with the WSFC module, see [October 21, 2025 release notes](https://docs.cloud.google.com/compute/docs/images/guest-environment/release-notes#October_21_2025).",
+        "summary": {
+          "title": "Windows Guest Agent Plugin Architecture Returns",
+          "summary": "Version 20251209.00 of the guest agent is now available, reintroducing the plugin-based architecture for Windows. This update resolves an issue that previously caused problems with IP alias routes and the WSFC module."
+        }
+      }
+    ],
     "2025-12-08": [
       {
         "kind": "Fixed",

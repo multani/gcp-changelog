@@ -14,7 +14,7 @@ Follow the [Upgrade guide](https://docs.cloud.google.com/manufacturing-data-engi
 in the MDE documentation for detailed instructions. Note that instructions are
 different depending on the MDE version you are upgrading from.
 
-### Changed
+### Change
 
 * **Improvement (441727217)**: Introduced an option to enable parsers after
   types activation when you upload a new configuration package.

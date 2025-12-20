@@ -1,6 +1,34 @@
 {
   "name": "Buildpacks",
   "entries": {
+    "2025-12-19": [
+      {
+        "kind": "Feature",
+        "content": "The Python buildpack supports default entrypoint detection for the [Agent Development Kit (ADK) framework](https://docs.cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-adk-service) (Preview). For more information, see [Build a Python application](https://docs.cloud.google.com/docs/buildpacks/python#entrypoint).",
+        "summary": {
+          "title": "Python ADK Entrypoint Detection",
+          "summary": "The Python buildpack now automatically detects the default entrypoint for the Agent Development Kit framework. This simplifies deployment of Python applications using ADK. Learn more about building Python applications with this new feature."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Cloud Run and Cloud Run functions source deployments support `pyproject.toml`\nfile for managing dependencies. This feature is in General Availability for Python version 3.13 and later, and is in Preview for Python version 3.12 and earlier.\nFor more information, see [Deploy Python applications with a `pyproject.toml`\nfile](https://docs.cloud.google.com/docs/buildpacks/python#deploy-with-toml).",
+        "summary": {
+          "title": "Cloud Run Supports Pyproject.toml",
+          "summary": "Cloud Run and Cloud Run functions now support `pyproject.toml` for managing Python dependencies. This feature is generally available for Python 3.13+ and in preview for older versions."
+        }
+      }
+    ],
+    "2025-12-18": [
+      {
+        "kind": "Feature",
+        "content": "Support for [osonly24 runtime](https://docs.cloud.google.com/buildpacks/docs/runtime-support#osonly) is in [Preview](https://cloud.google.com/products?e=48754805#product-launch-stages). The OS only runtime lets you deploy Go applications from source, and binaries such as Dart and Go. For more information, see [Configure the OS only runtime](https://docs.cloud.google.com/docs/buildpacks/osonly).",
+        "summary": {
+          "title": "OS only runtime support now in preview",
+          "summary": "You can now deploy Go applications and binaries like Dart and Go from source using the OS only runtime, which is currently in preview. This feature allows for greater flexibility in how you deploy your applications. For further details, refer to the OS only runtime configuration documentation."
+        }
+      }
+    ],
     "2025-11-14": [
       {
         "kind": "Feature",

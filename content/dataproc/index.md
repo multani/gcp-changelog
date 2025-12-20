@@ -36,7 +36,7 @@ New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.goog
 ---
 ## 2025-11-22
 
-### Changed
+### Change
 
 **Dataproc on Compute Engine**: Updated Cloud Storage connector:
 

@@ -1,5 +1,20 @@
 # App Hub
 
+## 2025-12-18
+
+### Feature
+
+App Hub now lets you register multiple resources at once in the Google Cloud console to simplify and accelerate the application creation process.
+
+The following are key features of this update:
+
+* **Combined application creation and registration**: The application creation and resource registration workflows are now merged into a single process. You can register up to 10 services and workloads to an application at a time.
+* **Streamlined resource registration**: You can now register multiple services and workloads to an application in a single operation, directly from the application creation page. This update reduces the time and effort required to set up your applications.
+* **Copied attribute and owner information**: You now have the option to copy attributes and owner information from an application to all the resources you're registering. This feature does not apply to shared services.
+
+For more information, see [Register existing resources to an application](https://docs.cloud.google.com/app-hub/docs/register-resources).
+
+---
 ## 2025-12-16
 
 ### Feature

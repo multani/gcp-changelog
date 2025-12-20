@@ -2,7 +2,7 @@
 
 ## 2025-12-17
 
-### Feature
+### Security
 
 Starting *December 17, 2025*, requests with request methods that aren't
 compliant with [RFC 9110, Section

@@ -9,7 +9,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-load-balancing:2025-12-17:feature:0</id>
+    <id>urn:github:multani:gcp-changelog:cloud-load-balancing:2025-12-17:security:0</id>
     <published>2025-12-17T00:00:00+00:00</published>
     <updated>2025-12-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Starting <em>December 17, 2025</em>, requests with request methods that aren't
@@ -21,8 +21,8 @@ been rejected by the load balancer or its backends with a variety of error
 codes. With the GFE now handling such requests, you might observe a small
 decrease in error rates.</p>
 <p>This change applies only to global external Application Load Balancers and classic Application Load Balancers.</p>]]></content>
-    <summary>Starting December 17, 2025, Application Load Balancers will reject non-compliant HTTP requests at the first layer of the Google Front End (GFE). This change, applicable to global external and classic Application Load Balancers, aims to improve error handling and may result in a slight reduction in observed error rates.</summary>
-    <title>Feature: Enhanced HTTP method validation for Application Load Balancers</title>
+    <summary>Starting December 17, 2025, Google Front Ends will reject non-compliant HTTP method requests before they reach your services. This security enhancement ensures better request validation and may lead to a slight reduction in error rates. This change affects global external Application Load Balancers and classic Application Load Balancers.</summary>
+    <title>Security: Enforce HTTP Method Compliance</title>
   </entry>
   <entry>
     <author>

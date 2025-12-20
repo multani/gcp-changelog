@@ -2,7 +2,7 @@
 
 ## 2025-12-05
 
-### Changed
+### Change
 
 Cloud Workstations predefined images include
 [Node.js](https://nodejs.org/) 24 (LTS). The previous version, 20.19.6, is no
@@ -10,7 +10,7 @@ longer pre-installed. To continue using a previous version, you can
 [customize your container images](https://docs.cloud.google.com/workstations/docs/customize-container-images)
 to include it or add a version manager like [NVM](https://www.nvmnode.com/).
 
-### Changed
+### Change
 
 Cloud Workstations predefined images include
 [Eclipse Temurin](https://adoptium.net/temurin) JDK 21 and 25. JDK 11 is no longer

@@ -1,8 +1,23 @@
 # Google Cloud Managed Service for Apache Kafka
 
+## 2025-12-10
+
+### Feature
+
+Using `gcloud` or the REST API, you can now view the following
+information about a Managed Service for Apache Kafka cluster:
+
+* Broker node IDs and indexes
+* The zones where brokers are located
+* The Kafka version that the cluster is running
+
+For more information, see
+[View a Kafka cluster](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/view-cluster).
+
+---
 ## 2025-12-08
 
-### Changed
+### Change
 
 Kafka Connect cluster workers can now reach any endpoint that is accessible from
 the worker (primary) subnetwork. Previously, to extend worker connectivity to

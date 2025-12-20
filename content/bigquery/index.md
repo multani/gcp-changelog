@@ -1,5 +1,41 @@
 # BigQuery
 
+## 2025-12-19
+
+### Feature
+
+The BigQuery Data Transfer Service can now [transfer data from Microsoft SQL
+Server to BigQuery](https://docs.cloud.google.com/bigquery/docs/sqlserver-transfer). This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+The BigQuery Data Transfer Service can now [transfer data from MySQL to
+BigQuery](https://docs.cloud.google.com/bigquery/docs/mysql-transfer). This feature is [generally
+available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+---
+## 2025-12-18
+
+### Feature
+
+You can now use the BigQuery Data Transfer Service [to transfer data from blob
+storage sources](https://docs.cloud.google.com/bigquery/docs/iceberg-ingestion), such as Amazon Simple
+Storage Service (Amazon S3), Azure Blob Storage, and Cloud Storage, into BigLake
+Iceberg tables in BigQuery. This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+The BigQuery Data Transfer Service can now transfer data from the following data
+sources to BigQuery:
+
+* [Klaviyo](https://docs.cloud.google.com/bigquery/docs/klaviyo-transfer)
+* [HubSpot](https://docs.cloud.google.com/bigquery/docs/hubspot-transfer)
+
+These features are in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2025-12-16
 
 ### Feature
@@ -40,7 +76,7 @@ generation enabled.
 These features are in
 [Preview](https://cloud.google.com/products/#product-launch-stages).
 
-### Changed
+### Change
 
 An updated version of the
 [ODBC driver for BigQuery](https://docs.cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers#current_odbc_driver)
@@ -69,7 +105,7 @@ when transferring data from Salesforce to BigQuery. This feature is supported in
 ---
 ## 2025-11-25
 
-### Changed
+### Change
 
 An updated version of the
 [JDBC driver for BigQuery](https://docs.cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers#current_jdbc_driver)

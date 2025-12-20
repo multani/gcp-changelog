@@ -1,5 +1,16 @@
 # Backup and DR
 
+## 2025-12-17
+
+### Feature
+
+Backup Vault: CMEK support for Compute Engine (GA) Backup Vault now supports
+data protection for Compute Engine instances and Persistent Disks encrypted with
+Customer-Managed Encryption Keys (CMEK). This capability is currently available
+via Allow-list General Availability; please contact your Google Cloud sales
+representative to request access.
+
+---
 ## 2025-12-16
 
 ### Feature

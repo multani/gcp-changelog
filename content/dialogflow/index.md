@@ -1,5 +1,20 @@
 # Dialogflow
 
+## 2025-12-11
+
+### Feature
+
+**Conversational Agents (Dialogflow CX)**: Conversational Agents now supports log splitting for [large Cloud Logging log entries](https://docs.cloud.google.com/dialogflow/cx/docs/concept/agent-settings#logging-settings).
+
+### Security
+
+**Conversational Agents (Dialogflow CX)**: Dialogflow CX Messenger [integration](https://docs.cloud.google.com/dialogflow/cx/docs/concept/integration/dialogflow-messenger) contained a vulnerability that allowed for authentication bypass when an agent was configured to use an authenticated API with a 3rd party identity. **All versions released after August 20th, 2025 have been updated to protect from this vulnerability. No user action is required.**
+
+### Feature
+
+**Conversational Agents (Dialogflow CX)**: New *Responsible AI* fields are now available for the [`v3`](https://docs.cloud.google.com/dialogflow/cx/docs/reference/rpc/google.cloud.dialogflow.cx.v3#raisettings) and [`v3beta1`](https://docs.cloud.google.com/dialogflow/cx/docs/reference/rpc/google.cloud.dialogflow.cx.v3beta1#raisettings) API endpoints. Responsible AI allows you to flag, filter or block harmful content.
+
+---
 ## 2025-11-06
 
 ### Feature

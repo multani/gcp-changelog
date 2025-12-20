@@ -6,7 +6,7 @@
 
 Config Connector version 1.140.0 is now available.
 
-### Changed
+### Change
 
 New Alpha Resources (Direct Reconciler):
 
@@ -15,7 +15,7 @@ New Alpha Resources (Direct Reconciler):
 * `ConfigDeliveryResourceBundle`
   + Manage Config Delivery resource bundles for Config Sync.
 
-### Changed
+### Change
 
 Reconciliation Improvements:
 
@@ -56,7 +56,7 @@ New Fields:
 
 Config Connector version 1.139.0 is now available.
 
-### Changed
+### Change
 
 Reconciliation Improvements:
 
@@ -75,7 +75,7 @@ New Features:
 * `SQLInstance`: Fixed an issue where empty `maintenanceVersion` patches were sent. The `settings` and `maintenanceVersion` fields are now unmanaged.
 * `FirestoreDatabase`: Fixed boolean value exports.
 
-### Changed
+### Change
 
 New Alpha Resources (Direct Reconciler):
 

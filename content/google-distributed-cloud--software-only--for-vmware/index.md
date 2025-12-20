@@ -9,7 +9,7 @@ The following issues were fixed in 1.34.0-gke.566:
 * Fixed vulnerabilities listed in
   [Vulnerability fixes](https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
 
-### Changed
+### Change
 
 * Upgraded `containerd` from 1.7 to 2.0.
 * Registry mirror configuration information has been migrated to the

@@ -2,11 +2,11 @@
 
 ## 2025-12-04
 
-### Changed
+### Change
 
 Config Sync now supports the `client.lifecycle.config.k8s.io/mutation: ignore` annotation for compatibility with other controllers. This enhancement provides more consistent behavior and correctly reports the resource status.
 
-### Changed
+### Change
 
 Addressed multiple Common Vulnerabilities and Exposures (CVEs) by updating dependencies.
 
@@ -14,7 +14,7 @@ Addressed multiple Common Vulnerabilities and Exposures (CVEs) by updating depen
 
 You can now control the scheduling of Config Sync pods using the Kubernetes-native resource [MutatingAdmissionPolicy](https://kubernetes.io/docs/reference/access-authn-authz/mutating-admission-policy/). For more information, see [Customize node placement of Config Sync system pods](https://docs.cloud.google.com/kubernetes-engine/config-sync/docs/how-to/custom-node-placement) to get started.
 
-### Changed
+### Change
 
 Config Sync's internal observability library has been updated from OpenCensus to OpenTelemetry, improving performance and aligning with industry standards with no breaking changes to metrics or functionality.
 

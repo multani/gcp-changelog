@@ -1,5 +1,21 @@
 # Apigee Integrated Portal
 
+## 2025-12-17
+
+### Announcement
+
+On December 17, 2025 we released a new version of the Apigee integrated portal.
+
+### Fixed
+
+**Incorrect Cross-Origin-Opener-Policy header in developer portal**
+
+A fix has been implemented to address an issue where the
+`Cross-Origin-Opener-Policy` response header in the developer portal was
+malformed with an extra colon. This change ensures the security header is
+correctly formatted.
+
+---
 ## 2025-09-08
 
 ### Announcement

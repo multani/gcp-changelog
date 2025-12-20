@@ -46,7 +46,7 @@ on the Google Cloud console. For more information, see
 ---
 ## 2025-12-03
 
-### Changed
+### Change
 
 String values in
 [Spanner Studio query results](https://docs.cloud.google.com/spanner/docs/manage-data-using-console#create-modify-query-data)

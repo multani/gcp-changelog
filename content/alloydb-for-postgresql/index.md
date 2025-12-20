@@ -1,5 +1,16 @@
 # AlloyDB for PostgreSQL
 
+## 2025-12-18
+
+### Feature
+
+Managed connection pooling is now generally available ([GA](https://cloud.google.com/products#product-launch-stages)). This feature optimizes resource usage to improve workload scalability and reliability. It is compatible with the AlloyDB Auth Proxy and Language Connectors. For more information, see [Configure managed connection pooling](https://docs.cloud.google.com/alloydb/docs/configure-managed-connection-pooling).
+
+### Feature
+
+AlloyDB database [performance snapshot reports](https://docs.cloud.google.com/alloydb/docs/optimize-database-performance-compare-snapshots#generate-a-performance-snapshot-report) now include a SQL Report section, which lists the top 50 queries by total elapsed time, read I/O, and standard deviation of elapsed time. This helps you identify and optimize resource-intensive queries.
+
+---
 ## 2025-12-17
 
 ### Feature
@@ -53,7 +64,7 @@ AlloyDB now supports horizontal [autoscaling for read pool instances](https://do
 ---
 ## 2025-11-19
 
-### Changed
+### Change
 
 The upper limit of the query plans captured per minute is enhanced to 200. For more information, see [Improve query performance using advanced query insights features for AlloyDB](https://docs.cloud.google.com/alloydb/docs/using-advanced-query-insights#gcloud).
 

@@ -1,5 +1,26 @@
 # SAP on Google Cloud
 
+## 2025-12-19
+
+### Announcement
+
+**Introducing emergent host maintenance events for X4 instances running SAP HANA**
+
+To perform non-critical hardware repairs that help in preventing host errors on
+X4 instances, we've introduced *emergent maintenance* - a new type of host
+maintenance event.
+
+While this is a type of unplanned maintenance, it's similar in nature to a
+[planned host maintenance event](https://docs.cloud.google.com/compute/docs/instances/monitor-plan-host-maintenance-event) because of the following features:
+
+* It has a 14-day advance notification period.
+* You can manually trigger it, or let Google trigger it for you at the planned
+  start date and time.
+
+For more information, see
+[Manage host maintenance events for X4 instances running SAP HANA](https://docs.cloud.google.com/sap/docs/manage-maintenance-events-for-bare-metal-instances).
+
+---
 ## 2025-12-12
 
 ### Announcement

@@ -102,7 +102,7 @@ This release contains internal and customer bug fixes.
 ---
 ## 2025-12-03
 
-### Changed
+### Change
 
 Google SecOps has updated the list of supported default parsers. Parsers are updated gradually, so it might take one to four days before you see the changes reflected in your region.
 
@@ -423,7 +423,7 @@ The following log types were added without a default parser. Each parser is list
 * Zimbra Mail (`ZIMBRA_MAIL`)
 * Zscaler Email DLP (`ZSCALER_EMAIL_DLP`)
 
-### Changed
+### Change
 
 Google SecOps has updated the list of supported default parsers. Parsers are updated gradually, so it might take one to four days before you see the changes reflected in your region.
 

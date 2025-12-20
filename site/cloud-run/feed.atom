@@ -2,9 +2,57 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Run</title>
   <subtitle>Changelog for Google Cloud product: Cloud Run</subtitle>
-  <updated>2025-12-01T00:00:00+00:00</updated>
+  <updated>2025-12-19T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-run</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-run/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-run:2025-12-19:feature:0</id>
+    <published>2025-12-19T00:00:00+00:00</published>
+    <updated>2025-12-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Python buildpack supports default entrypoint detection for the <a href="https://docs.cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-adk-service">Agent Development Kit (ADK) framework</a> (Preview). For more information, see <a href="https://docs.cloud.google.com/docs/buildpacks/python#entrypoint">Build a Python application</a>.</p>]]></content>
+    <summary>The Python buildpack now automatically detects the entrypoint for the Agent Development Kit (ADK) framework in preview. This simplifies deploying Python applications using the ADK. For more details on configuring your Python application, refer to the buildpacks documentation.</summary>
+    <title>Feature: Python ADK Entrypoint Detection</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-run:2025-12-19:feature:1</id>
+    <published>2025-12-19T00:00:00+00:00</published>
+    <updated>2025-12-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud Run and Cloud Run functions source deployments support <code>pyproject.toml</code>
+file for managing dependencies. This feature is in General Availability for Python version 3.13 and later, and is in Preview for Python version 3.12 and earlier.
+For more information, see <a href="https://docs.cloud.google.com/docs/buildpacks/python#deploy-with-toml">Deploy Python applications with a <code>pyproject.toml</code>
+file</a>.</p>]]></content>
+    <summary>Cloud Run and Cloud Run functions source deployments now fully support `pyproject.toml` for dependency management. This enhancement streamlines the deployment process for Python applications. The feature is generally available for Python 3.13+ and in preview for earlier versions.</summary>
+    <title>Feature: Cloud Run now supports pyproject.toml</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-run:2025-12-19:feature:2</id>
+    <published>2025-12-19T00:00:00+00:00</published>
+    <updated>2025-12-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Support for <a href="https://docs.cloud.google.com/run/docs/runtime-support#python">Python 3.14 runtime</a> is in <a href="https://cloud.google.com/products?e=48754805#product-launch-stages">General Availability</a>. Starting from Python version 3.14 and later, the Python buildpack uses the uv package manager as the
+default installer for the dependencies you specify in your <code>requirements.txt</code> file. You can also use pip as the default installer for these versions by setting the <code>GOOGLE_PYTHON_PACKAGE_MANAGER</code> environment variable to <code>pip</code>. For more information, see <a href="https://docs.cloud.google.com/run/docs/runtimes/python-dependencies.md#dependencies">Specify dependencies in Python</a>.</p>]]></content>
+    <summary>The Python 3.14 runtime is now generally available. This update defaults to using the uv package manager for dependency installation from your requirements.txt file. You can switch back to pip if needed.</summary>
+    <title>Feature: Python 3.14 runtime now available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-run:2025-12-18:feature:0</id>
+    <published>2025-12-18T00:00:00+00:00</published>
+    <updated>2025-12-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Support for <a href="https://docs.cloud.google.com/run/docs/runtime-support#osonly">osonly24 runtime</a> is in <a href="https://cloud.google.com/products?e=48754805#product-launch-stages">Preview</a>. The OS only runtime lets you deploy Go applications from source, and binaries such as Dart and Go. For more information, see <a href="https://docs.cloud.google.com/docs/buildpacks/osonly">Configure the OS only runtime</a>.</p>]]></content>
+    <summary>You can now deploy Go applications from source and binaries such as Dart and Go using the new OS only runtime, now in preview. Learn more about configuring this runtime.</summary>
+    <title>Feature: New OS only runtime in preview</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -2,14 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Managed Service for Apache Kafka</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Managed Service for Apache Kafka</subtitle>
-  <updated>2025-12-08T00:00:00+00:00</updated>
+  <updated>2025-12-10T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-managed-service-for-apache-kafka</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-managed-service-for-apache-kafka/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-managed-service-for-apache-kafka:2025-12-08:changed:0</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-managed-service-for-apache-kafka:2025-12-10:feature:0</id>
+    <published>2025-12-10T00:00:00+00:00</published>
+    <updated>2025-12-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Using <code>gcloud</code> or the REST API, you can now view the following
+information about a Managed Service for Apache Kafka cluster:</p>
+<ul>
+<li>Broker node IDs and indexes</li>
+<li>The zones where brokers are located</li>
+<li>The Kafka version that the cluster is running</li>
+</ul>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/view-cluster">View a Kafka cluster</a>.</p>]]></content>
+    <summary>You can now view broker node IDs, locations, and Kafka versions for your Managed Service for Apache Kafka clusters using `gcloud` or the REST API. This provides greater visibility into your cluster's configuration.</summary>
+    <title>Feature: View Kafka cluster details</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-managed-service-for-apache-kafka:2025-12-08:change:0</id>
     <published>2025-12-08T00:00:00+00:00</published>
     <updated>2025-12-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Kafka Connect cluster workers can now reach any endpoint that is accessible from
@@ -19,8 +38,8 @@ these subnets in the cluster configuration. The <code>additionalSubnets</code> f
 ignored, and this configuration setting has been removed from the
 Google Cloud console. For more information, see
 <a href="https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/connect-cluster/create-connect-cluster#worker-subnet">Worker (primary) subnet</a>.</p>]]></content>
-    <summary>Kafka Connect cluster workers can now access any endpoint from the primary subnetwork, eliminating the need to specify additional subnets in the cluster configuration. The `additionalSubnets` field has been removed and is no longer used.</summary>
-    <title>Changed: Kafka Connect workers now have broader network access</title>
+    <summary>Kafka Connect workers can now access any endpoint from their primary subnetwork, simplifying network configuration. Previously, you needed to explicitly list additional subnets, but this is no longer required and the configuration option has been removed.</summary>
+    <title>Change: Kafka Connect network access expanded</title>
   </entry>
   <entry>
     <author>

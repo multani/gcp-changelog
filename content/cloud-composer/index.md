@@ -26,7 +26,7 @@ The following Cloud Composer versions and builds have reached their
 [end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):
 composer-3-airflow-2.9.3-build.11, composer-2.10.1-\*.
 
-### Changed
+### Change
 
 New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3)
 are available in Cloud Composer 3:
@@ -40,7 +40,7 @@ are available in Cloud Composer 3:
 Fixed an issue where the Copy button on the DAG details page in the Airflow UI
 was copying incorrect content.
 
-### Changed
+### Change
 
 New [images](https://cloud.google.com/composer/docs/composer-versions#images-composer-2)
 are available in Cloud Composer 2:
@@ -73,13 +73,13 @@ enhanced to provide greater resilience against zonal outages. This feature was
 and has finished gradually rolling out to all regions supported by
 Cloud Composer.
 
-### Changed
+### Change
 
 *(Cloud Composer 3)* The name format for [network attachments](https://docs.cloud.google.com/composer/docs/composer-3/connect-vpc-network) created by
 Cloud Composer was modified to enhance uniqueness. This change applies only to
 newly created network attachments.
 
-### Changed
+### Change
 
 *(Airflow 3.1.0 and 2.10.5)* The `apache-airflow-providers-cncf-kubernetes`
 package was
@@ -87,7 +87,7 @@ package was
 For changes in other packages, see the
 [preinstalled packages changelog](https://cloud.google.com/composer/docs/versions-packages).
 
-### Changed
+### Change
 
 New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3)
 are available in Cloud Composer 3:
@@ -102,7 +102,7 @@ Fixed an issue where `composer.googleapis.com/environment/executor/open_slots`
 and `composer.googleapis.com/environment/executor/running_tasks` were not
 available in environments with Airflow 3.
 
-### Changed
+### Change
 
 *(Airflow 3.1.0 and 2.10.5)* The `apache-airflow-providers-google` package was
 upgraded to version 19.0.0 in Cloud Composer 2 images and Cloud Composer 3
@@ -120,7 +120,7 @@ This change is gradually rolled out in several releases and is available in the
 following regions in this release: europe-north1, us-west2, us-east1,
 europe-west3, asia-east2.
 
-### Changed
+### Change
 
 New [images](https://cloud.google.com/composer/docs/composer-versions#images-composer-2)
 are available in Cloud Composer 2:

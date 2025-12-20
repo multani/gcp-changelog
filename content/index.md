@@ -18,6 +18,7 @@
 - [Apigee Advanced API Security](apigee-advanced-api-security/index.md)
 - [Apigee Analytics](apigee-analytics/index.md)
 - [Apigee Integrated Portal](apigee-integrated-portal/index.md)
+- [Apigee Monetization](apigee-monetization/index.md)
 - [Apigee UI](apigee-ui/index.md)
 - [Apigee X](apigee-x/index.md)
 - [Apigee hybrid](apigee-hybrid/index.md)

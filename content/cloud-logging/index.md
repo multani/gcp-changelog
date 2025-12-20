@@ -2,7 +2,7 @@
 
 ## 2025-12-12
 
-### Changed
+### Change
 
 The default setting for the time-range selector for the
 Logs Explorer is now five minutes. The previous default was one hour.

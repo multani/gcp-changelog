@@ -13,7 +13,7 @@ pages and sync processing latency, across fields like `location`, `processor_typ
 and `processor_id` over time.
 
 For more information, see [monitoring
-dashboard](https://docs.cloud.google.com/document-ai/docs/training-overview#monitoring-dashboard).
+dashboard](https://docs.cloud.google.com/document-ai/docs/evaluate#monitoring_dashboard).
 
 ---
 ## 2025-11-12

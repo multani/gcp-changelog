@@ -10,7 +10,7 @@
 
   + **Private Submit URL**
 
-### Changed
+### Change
 
 **Google Chronicle**: Version 70.0
 
@@ -19,7 +19,7 @@
 
   + **Is Value In Data Table**
 
-### Changed
+### Change
 
 **Tenable.io**: Version 12.0
 
@@ -29,7 +29,7 @@
   + **Enrich Entities**
   + **Scan Endpoints**
 
-### Changed
+### Change
 
 **Siemplify**: Version 96.0
 
@@ -37,7 +37,7 @@
 
   + **Resume Alert SLA**
 
-### Changed
+### Change
 
 **MISP**: Version 34.0
 
@@ -52,20 +52,20 @@
 ---
 ## 2025-12-04
 
-### Changed
+### Change
 
 **CSV**: Version 38.0
 
 * **Integration**: Updated dependencies.
 
-### Changed
+### Change
 
 **Tenable Security Center**: Version 19.0
 
 * **Integration**: Added support to authenticate using an Access Key and a
   Secret Key.
 
-### Changed
+### Change
 
 **Cofense Triage**: Version 15.0
 
@@ -73,7 +73,7 @@
 
   + **Cofense Triage - Reports Connector**
 
-### Changed
+### Change
 
 **Gmail**: Version 6.0
 
@@ -91,7 +91,7 @@
   + **Generate UDM Query**
   + **Add Entry To Watchlist**
 
-### Changed
+### Change
 
 **CSV**: Version 37.0
 
@@ -99,14 +99,14 @@
 
   + **Save Json to CSV**
 
-### Changed
+### Change
 
 Updated the dependency files in the following integrations:
 
 * **Exchange**: Version 117.0
 * **HTTP V2**: Version 10.0
 
-### Changed
+### Change
 
 **Urlscan.io**: Version 27.0
 
@@ -114,7 +114,7 @@ Updated the dependency files in the following integrations:
 
   + **Search For Scans**
 
-### Changed
+### Change
 
 **Jira**: Version 50.0
 
@@ -136,7 +136,7 @@ Updated the dependency files in the following integrations:
 
   + **Get Related Associations**
 
-### Changed
+### Change
 
 **Splunk**: Version 59.0
 
@@ -148,7 +148,7 @@ Updated the dependency files in the following integrations:
   + **Sync Splunk ES Closed Events**
   + **Sync Splunk ES Comments**
 
-### Changed
+### Change
 
 **Cofense Triage**: Version 14.0
 
@@ -156,7 +156,7 @@ Updated the dependency files in the following integrations:
 
   + **Cofense Triage - Reports Connector**
 
-### Changed
+### Change
 
 **Google Chronicle**: Version 68.0
 
@@ -165,7 +165,7 @@ Updated the dependency files in the following integrations:
   + **Google Chronicle Sync Job**
   + **Google Chronicle Alerts Creator Job**
 
-### Changed
+### Change
 
 **Okta**: Version 11.0
 
@@ -176,7 +176,7 @@ Updated the dependency files in the following integrations:
   + **Get Group**
   + **List Providers**
 
-### Changed
+### Change
 
 **SentinelOneV2**: Version 44.0
 

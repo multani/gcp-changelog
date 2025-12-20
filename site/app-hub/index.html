@@ -257,6 +257,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Apigee monetization <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../apigee-monetization/" class="dropdown-item">Apigee Monetization</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Apigee ui <b class="caret"></b>
                         </a>
 
@@ -2220,14 +2232,25 @@
 
 
 <h1 id="app-hub">App Hub</h1>
-<h2 id="2025-12-16">2025-12-16</h2>
+<h2 id="2025-12-18">2025-12-18</h2>
 <h3 id="feature">Feature</h3>
+<p>App Hub now lets you register multiple resources at once in the Google Cloud console to simplify and accelerate the application creation process.</p>
+<p>The following are key features of this update:</p>
+<ul>
+<li><strong>Combined application creation and registration</strong>: The application creation and resource registration workflows are now merged into a single process. You can register up to 10 services and workloads to an application at a time.</li>
+<li><strong>Streamlined resource registration</strong>: You can now register multiple services and workloads to an application in a single operation, directly from the application creation page. This update reduces the time and effort required to set up your applications.</li>
+<li><strong>Copied attribute and owner information</strong>: You now have the option to copy attributes and owner information from an application to all the resources you're registering. This feature does not apply to shared services.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/app-hub/docs/register-resources">Register existing resources to an application</a>.</p>
+<hr />
+<h2 id="2025-12-16">2025-12-16</h2>
+<h3 id="feature_1">Feature</h3>
 <p>App Hub is now available in the <code>europe-north2</code> (Stockholm) region, letting you create applications and register resources from an expanded list of locations.</p>
 <p>To learn more about the differences between global and regional applications, see <a href="https://docs.cloud.google.com/app-hub/docs/global-regional-applications">Global and regional applications</a>.
 For a complete list of all available App Hub locations, see <a href="https://docs.cloud.google.com/app-hub/docs/locations">App Hub locations</a>.</p>
 <hr />
 <h2 id="2025-11-17">2025-11-17</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>App Hub now supports new metadata <a href="https://docs.cloud.google.com/app-hub/docs/overview#properties-and-attributes">properties</a> to provide deeper context and governance for your services and workloads:</p>
 <ul>
 <li><strong>Functional type:</strong> Services and workloads now include the <code>FunctionalType</code> property, which is an output-only field that identifies the known function of a resource. The initial supported value is <code>AGENT</code>, which indicates that a workload is an AI agent.</li>
@@ -2237,9 +2260,9 @@ For a complete list of all available App Hub locations, see <a href="https://doc
 </ul>
 <hr />
 <h2 id="2025-11-14">2025-11-14</h2>
-<h3 id="feature_2">Feature</h3>
-<p>App Hub has expanded its support for Google Cloud resources. You can now register services and workloads from a wide range of products to your applications, including new resources from Access Approval, Certificate Authority Service, Cloud Run, Firebase, Gemini for Google Cloud, GKE Multi-Cloud, and more. Many of these supported resources are available in Preview. For a complete list, see <a href="https://docs.cloud.google.com/app-hub/docs/supported-resources">App Hub supported resources</a>.</p>
 <h3 id="feature_3">Feature</h3>
+<p>App Hub has expanded its support for Google Cloud resources. You can now register services and workloads from a wide range of products to your applications, including new resources from Access Approval, Certificate Authority Service, Cloud Run, Firebase, Gemini for Google Cloud, GKE Multi-Cloud, and more. Many of these supported resources are available in Preview. For a complete list, see <a href="https://docs.cloud.google.com/app-hub/docs/supported-resources">App Hub supported resources</a>.</p>
+<h3 id="feature_4">Feature</h3>
 <p>Management projects are now <a href="https://cloud.google.com/products#product-launch-stages">Generally Available (GA)</a> to enable application management in folders. This setup model is recommended for all new App Hub implementations and provides a centralized and scalable way to organize, deploy, and govern your applications.</p>
 <p>Key features of this release include:</p>
 <ul>
@@ -2251,7 +2274,7 @@ For a complete list of all available App Hub locations, see <a href="https://doc
 <p>For more information on how to get started, see <a href="https://docs.cloud.google.com/app-hub/docs/set-up-app-hub-folder">Set up App Hub with app-enabled folders</a>.</p>
 <hr />
 <h2 id="2025-08-25">2025-08-25</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p>App Hub supports resources from the following sources in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>:</p>
 <ul>
 <li>Vertex AI</li>
@@ -2291,7 +2314,7 @@ For a complete list of all available App Hub locations, see <a href="https://doc
 </ul>
 <hr />
 <h2 id="2025-07-30">2025-07-30</h2>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p>The following <a href="https://cloud.google.com/app-hub/docs/supported-resources">Vertex AI supported resources</a> are now generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>):</p>
 <ul>
 <li><a href="https://cloud.google.com/vertex-ai/docs/reference/rest/v1/projects.locations.datasets">Dataset</a> items</li>
@@ -2301,11 +2324,11 @@ For a complete list of all available App Hub locations, see <a href="https://doc
 </ul>
 <hr />
 <h2 id="2025-07-08">2025-07-08</h2>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p><a href="https://cloud.google.com/app-hub/docs/supported-resources">Dataproc Metastore services</a> are now generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).</p>
 <hr />
 <h2 id="2025-06-25">2025-06-25</h2>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p>App Hub supports resources from the following <a href="https://cloud.google.com/app-hub/docs/supported-resources">sources</a> in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>:</p>
 <ul>
 <li>Dataproc Metastore Service</li>
@@ -2325,6 +2348,9 @@ For a complete list of all available App Hub locations, see <a href="https://doc
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#app-hub">App Hub</a></li>
+          <li class="nav-item">
+            <a href="#2025-12-18" class="nav-link">2025-12-18</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-12-16" class="nav-link">2025-12-16</a>
           </li>

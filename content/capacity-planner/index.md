@@ -2,7 +2,7 @@
 
 ## 2025-12-09
 
-### Changed
+### Change
 
 The Google Cloud console has been changed as follows:
 

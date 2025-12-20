@@ -1,5 +1,24 @@
 # Apigee UI
 
+## 2025-12-19
+
+### Announcement
+
+On December 19, 2025, we released an updated version of Apigee Monetization.
+
+**Note:** Rollouts of this release to production instances have begun. Rollout may
+take four or more business days to complete across all Google Cloud zones. Your
+instances may not have the feature available until the rollout is complete.
+
+### Feature
+
+Monetization now supports AppGroups. Use AppGroups to manage API product
+subscriptions for all app developers in the AppGroup at the same time.
+
+For more information, see
+[Use AppGroups to manage API product subscriptions](https://cloud.google.com/apigee/docs/api-platform/monetization/overview#use-appgroups-to-manage-api-product-subscriptions).
+
+---
 ## 2025-12-17
 
 ### Announcement
@@ -8,6 +27,19 @@ On December 17, 2025, we announced that Debug v1 will be shutdown on
 January 15, 2026. Use
 [Debug v2](https://docs.cloud.google.com/apigee/docs/api-platform/debug/trace)
 instead of Debug v1.
+
+### Announcement
+
+On December 17, 2025 we released a new version of the Apigee integrated portal.
+
+### Fixed
+
+**Incorrect Cross-Origin-Opener-Policy header in developer portal**
+
+A fix has been implemented to address an issue where the
+`Cross-Origin-Opener-Policy` response header in the developer portal was
+malformed with an extra colon. This change ensures the security header is
+correctly formatted.
 
 ---
 ## 2025-11-17

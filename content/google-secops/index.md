@@ -55,7 +55,7 @@ The **Alert Overview** page now includes a new option to select a specific view 
 ---
 ## 2025-12-03
 
-### Changed
+### Change
 
 Google SecOps has updated the list of supported default parsers. Parsers are updated gradually, so it might take one to four days before you see the changes reflected in your region.
 

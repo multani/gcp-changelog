@@ -1,6 +1,151 @@
 # Container Optimized OS
 
+## 2025-12-16
+
+### Change
+
+
+
+### cos-dev-129-19437-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.61](https://cos.googlesource.com/third_party/kernel/+/840c821062a0030fc3846421ce7ad559f87a9e13 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19437.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-40256 in the Linux kernel.
+
+### Fixed
+
+Upgraded net-misc/curl from 8.12.1 to 8.17.0.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811412 -> 811430
+
+### Security
+
+Fixed CVE-2025-47914 and CVE-2025-58181 in dev-go/crypto.
+
+### Change
+
+Applied ethtool ring length changes to a4x's first Diorite interface.
+
+### Security
+
+Updated containerd and containerd-test to v2.1.5. This
+resolves CVE-2024-25621 and CVE-2025-64329.
+
+### Feature
+
+Added guest support for paravirtualization of cpuids on ARM machines.
+
+### Change
+
+
+
+### cos-117-18613-439-72
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/b331fe7b7073b7dbfc8e7b02ea9b60bdb30e0e94 ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.439.72/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811769 -> 811737
+
+### Fixed
+
+Backported upstream commit to reduce bcache gc latency.
+
+### Security
+
+Fixed KCTF-f05a4f9 in the Linux kernel.
+
+### Change
+
+
+
+### cos-121-18867-294-68
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/45b4334f3d9631c8409c84a9ba19b6ce5f27ccf8 ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.294.68/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811817 -> 811762
+
+### Fixed
+
+Backported upstream commit to reduce bcache gc latency.
+
+### Security
+
+Fixed KCTF-f05a4f9 in the Linux kernel.
+
+### Change
+
+
+
+### cos-125-19216-104-74
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/49d1312ab9c199f2057b78dfaca25ece0281535d ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.104.74/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Backported upstream commit to reduce bcache gc latency.
+
+### Security
+
+Fixed KCTF-f05a4f9 in the Linux kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811448 -> 811475
+
+### Change
+
+
+
+### cos-113-18244-521-56
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/7d3601d80b2a8874f08ecf3f1cbf8404ec1bf82e ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.56/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812044 -> 812054
+
+### Security
+
+Fixed KCTF-f05a4f9 in the Linux kernel.
+
+---
 ## 2025-12-15
+
+### Change
+
+
 
 ### cos-113-18244-521-55
 
@@ -13,7 +158,7 @@
 
 Fixed CVE-2025-47914 and CVE-2025-58181 in dev-go/crypto.
 
-### Changed
+### Change
 
 Runtime sysctl changes:
 
@@ -83,6 +228,10 @@ Fixed CVE-2025-40083 in the Linux kernel.
 
 Fixed CVE-2025-40319 in the Linux kernel.
 
+### Change
+
+
+
 ### cos-125-19216-104-72
 
 |  |  |  |  |
@@ -102,7 +251,7 @@ Fixed CVE-2025-40320 in the Linux kernel.
 
 Fixed CVE-2025-40292 in the Linux kernel.
 
-### Changed
+### Change
 
 Runtime sysctl changes:
 
@@ -160,6 +309,10 @@ Fixed CVE-2025-47914 and CVE-2025-58181 in dev-go/crypto.
 
 Fixed CVE-2025-40248 in the Linux kernel.
 
+### Change
+
+
+
 ### cos-121-18867-294-66
 
 |  |  |  |  |
@@ -171,7 +324,7 @@ Fixed CVE-2025-40248 in the Linux kernel.
 
 Fixed CVE-2025-40220 in the Linux kernel.
 
-### Changed
+### Change
 
 Runtime sysctl changes:
 
@@ -213,6 +366,10 @@ Updated app-containers/containerd and app-containers/containerd-test to v2.0.7. 
 
 Fixed CVE-2025-40297 in the Linux kernel.
 
+### Change
+
+
+
 ### cos-117-18613-439-70
 
 |  |  |  |  |
@@ -228,7 +385,7 @@ Fixed CVE-2025-40341 in the Linux kernel.
 
 Updated app-containers/containerd and app-containers/containerd-test to v1.7.29. This resolves CVE-2024-25621 and CVE-2025-64329.
 
-### Changed
+### Change
 
 Runtime sysctl changes:
 
@@ -240,6 +397,10 @@ Fixed CVE-2025-40328 in the Linux kernel.
 
 ---
 ## 2025-12-11
+
+### Change
+
+
 
 ### cos-117-18613-439-65
 
@@ -308,7 +469,7 @@ Fixed CVE-2025-21868 in the Linux kernel.
 
 Fixed CVE-2025-40250 in the Linux kernel.
 
-### Changed
+### Change
 
 Runtime sysctl changes:
 
@@ -352,6 +513,10 @@ Fixed CVE-2025-38057 in the Linux kernel.
 
 ---
 ## 2025-12-10
+
+### Change
+
+
 
 ### cos-121-18867-294-60
 
@@ -416,7 +581,7 @@ Fixed CVE-2025-47914 and CVE-2025-58181 in dev-go/crypto.
 
 Fixed CVE-2025-38678 in the Linux kernel.
 
-### Changed
+### Change
 
 Runtime sysctl changes:
 
@@ -434,6 +599,10 @@ Fixed CVE-2025-40250 in the Linux kernel.
 
 Fixed CVE-2025-40272 in the Linux kernel.
 
+### Change
+
+
+
 ### cos-125-19216-104-61
 
 |  |  |  |  |
@@ -441,7 +610,7 @@ Fixed CVE-2025-40272 in the Linux kernel.
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/e90029a23eafe4fcb53799d708139b1a8c5e8151 ) | v27.5.1 | v2.1.4 | [See List](https://storage.googleapis.com/cos-tools/19216.104.61/lakitu/gpu_driver_versions.textproto) |
 
-### Changed
+### Change
 
 Runtime sysctl changes:
 
@@ -503,6 +672,10 @@ Fixed CVE-2025-40273 in the Linux kernel.
 
 Fixed CVE-2025-40250 in the Linux kernel.
 
+### Change
+
+
+
 ### cos-dev-129-19424-0-0
 
 |  |  |  |  |
@@ -522,7 +695,7 @@ Enabled automatic loading of RDMA kernel modules when CX-8 devices are detected.
 
 upgraded net-fs/cifs-utils to v7.4.
 
-### Changed
+### Change
 
 Updated the Linux kernel to v6.12.61.
 
@@ -530,7 +703,7 @@ Updated the Linux kernel to v6.12.61.
 
 Added patches to handle IDPF tx timeouts.
 
-### Changed
+### Change
 
 Runtime sysctl changes:
 
@@ -540,6 +713,10 @@ Runtime sysctl changes:
 
 Upgraded app-admin/fluent-bit to v4.2.0.
 
+### Change
+
+
+
 ### cos-113-18244-521-45
 
 |  |  |  |  |
@@ -547,7 +724,7 @@ Upgraded app-admin/fluent-bit to v4.2.0.
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/5b125bb5aacd10f8f7f133b6db42cb22237d4cdf ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.45/lakitu/gpu_driver_versions.textproto) |
 
-### Changed
+### Change
 
 Runtime sysctl changes:
 
@@ -564,6 +741,10 @@ Upgraded app-admin/google-guest-configs to v20251014.00.
 ---
 ## 2025-12-04
 
+### Change
+
+
+
 ### cos-113-18244-521-41
 
 |  |  |  |  |
@@ -571,7 +752,7 @@ Upgraded app-admin/google-guest-configs to v20251014.00.
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/2fccd796b687dd10fc40c794fafefdcc3af48570 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.41/lakitu/gpu_driver_versions.textproto) |
 
-### Changed
+### Change
 
 Runtime sysctl changes:
 
@@ -590,6 +771,10 @@ CVE-2025-53905, CVE-2025-53906, CVE-2025-9390.
 ---
 ## 2025-12-03
 
+### Change
+
+
+
 ### cos-dev-129-19407-0-0
 
 |  |  |  |  |
@@ -606,7 +791,7 @@ CVE-2025-53905, CVE-2025-53906, CVE-2025-9390.
 
 Fixed CVE-2025-40212 in the Linux kernel.
 
-### Changed
+### Change
 
 Runtime sysctl changes:
 
@@ -616,6 +801,10 @@ Runtime sysctl changes:
 
 Made the google-guest-agent more resilient to network link
 flakes.
+
+### Change
+
+
 
 ### cos-117-18613-439-49
 
@@ -638,11 +827,15 @@ Added support for NVIDIA driver v580.105.08 and set it as the default version fo
 Made the google-guest-agent more resilient to network link
 flakes.
 
-### Changed
+### Change
 
 Runtime sysctl changes:
 
 * Changed: fs.file-max: 811751 -> 811788
+
+### Change
+
+
 
 ### cos-121-18867-294-42
 
@@ -665,11 +858,15 @@ Added support for NVIDIA driver v580.105.08 and set it as the default version fo
 Made the google-guest-agent more resilient to network link
 flakes.
 
-### Changed
+### Change
 
 Runtime sysctl changes:
 
 * Changed: fs.file-max: 811812 -> 811755
+
+### Change
+
+
 
 ### cos-125-19216-104-45
 
@@ -688,7 +885,7 @@ CVE-2025-53905, CVE-2025-53906, CVE-2025-9390.
 Made the google-guest-agent more resilient to network link
 flakes.
 
-### Changed
+### Change
 
 Runtime sysctl changes:
 
@@ -701,6 +898,10 @@ Added support for NVIDIA driver v580.105.08 and set it as the default version fo
 
 ---
 ## 2025-12-02
+
+### Change
+
+
 
 ### cos-117-18613-439-45
 
@@ -810,6 +1011,10 @@ Fixed CVE-2025-40167 in the Linux kernel.
 
 Fixed CVE-2025-40123 in the Linux kernel.
 
+### Change
+
+
+
 ### cos-113-18244-521-39
 
 |  |  |  |  |
@@ -890,6 +1095,10 @@ Fixed CVE-2025-40198 in the Linux kernel.
 
 Fixed CVE-2025-40153 in the Linux kernel.
 
+### Change
+
+
+
 ### cos-dev-129-19403-0-0
 
 |  |  |  |  |
@@ -942,6 +1151,10 @@ Upgraded net-misc/rsync to v3.4.1-r1.
 
 Upgraded net-misc/wget to v1.25.0-r1.
 
+### Change
+
+
+
 ### cos-121-18867-294-38
 
 |  |  |  |  |
@@ -990,6 +1203,10 @@ Set the default NVIDIA driver version to v535.274.02 for GPU types which previou
 
 Fixed CVE-2025-40167 in the Linux kernel.
 
+### Change
+
+
+
 ### cos-125-19216-104-39
 
 |  |  |  |  |
@@ -1009,7 +1226,7 @@ Upgraded net-misc/rsync to v3.4.1-r1.
 
 Fixed CVE-2025-40212 in the Linux kernel.
 
-### Changed
+### Change
 
 Runtime sysctl changes:
 

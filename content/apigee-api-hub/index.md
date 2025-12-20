@@ -61,7 +61,7 @@ For more information, see [API resources overview](https://docs.cloud.google.com
 ---
 ## 2025-12-09
 
-### Changed
+### Change
 
 **Actions tab changes**
 
@@ -95,7 +95,7 @@ The issue relating to [API hub provisioning failures in data residency enabled A
 
 For information about provisioning API hub, see [Provision API hub in the Cloud console](https://docs.cloud.google.com/apigee/docs/apihub/provision).
 
-### Changed
+### Change
 
 **New tutorial: Ingest Microsoft Azure API data into API hub**
 

@@ -1,5 +1,12 @@
 # Confidential Space
 
+## 2025-12-16
+
+### Announcement
+
+A new Confidential Space image (251200) is available.
+
+---
 ## 2025-10-03
 
 ### Announcement

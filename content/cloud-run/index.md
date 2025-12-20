@@ -1,5 +1,31 @@
 # Cloud Run
 
+## 2025-12-19
+
+### Feature
+
+The Python buildpack supports default entrypoint detection for the [Agent Development Kit (ADK) framework](https://docs.cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-adk-service) (Preview). For more information, see [Build a Python application](https://docs.cloud.google.com/docs/buildpacks/python#entrypoint).
+
+### Feature
+
+Cloud Run and Cloud Run functions source deployments support `pyproject.toml`
+file for managing dependencies. This feature is in General Availability for Python version 3.13 and later, and is in Preview for Python version 3.12 and earlier.
+For more information, see [Deploy Python applications with a `pyproject.toml`
+file](https://docs.cloud.google.com/docs/buildpacks/python#deploy-with-toml).
+
+### Feature
+
+Support for [Python 3.14 runtime](https://docs.cloud.google.com/run/docs/runtime-support#python) is in [General Availability](https://cloud.google.com/products?e=48754805#product-launch-stages). Starting from Python version 3.14 and later, the Python buildpack uses the uv package manager as the
+default installer for the dependencies you specify in your `requirements.txt` file. You can also use pip as the default installer for these versions by setting the `GOOGLE_PYTHON_PACKAGE_MANAGER` environment variable to `pip`. For more information, see [Specify dependencies in Python](https://docs.cloud.google.com/run/docs/runtimes/python-dependencies.md#dependencies).
+
+---
+## 2025-12-18
+
+### Feature
+
+Support for [osonly24 runtime](https://docs.cloud.google.com/run/docs/runtime-support#osonly) is in [Preview](https://cloud.google.com/products?e=48754805#product-launch-stages). The OS only runtime lets you deploy Go applications from source, and binaries such as Dart and Go. For more information, see [Configure the OS only runtime](https://docs.cloud.google.com/docs/buildpacks/osonly).
+
+---
 ## 2025-12-01
 
 ### Feature

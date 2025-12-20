@@ -1,7 +1,241 @@
 {
   "name": "Container Optimized OS",
   "entries": {
+    "2025-12-16": [
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "New Feature Release",
+          "summary": "We're excited to announce a new feature designed to enhance your workflow. This update includes improved functionality and user experience. Explore the new capabilities today!"
+        }
+      },
+      {
+        "kind": "cos-dev-129-19437-0-0",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.61](https://cos.googlesource.com/third_party/kernel/+/840c821062a0030fc3846421ce7ad559f87a9e13 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19437.0.0/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 19437.0.0 Image Release",
+          "summary": "The COS 19437.0.0 image is now available, featuring updated Kernel, Docker, and Containerd components. This release also includes support for GPU drivers, providing enhanced capabilities for containerized workloads."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-40256 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel, CVE-2025-40256, has been addressed. This update ensures the integrity and security of systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-misc/curl from 8.12.1 to 8.17.0.",
+        "summary": {
+          "title": "curl upgraded",
+          "summary": "The net-misc/curl package has been successfully upgraded from version 8.12.1 to 8.17.0. This update includes various improvements and bug fixes."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811412 -> 811430",
+        "summary": {
+          "title": "Runtime sysctl configuration update",
+          "summary": "We have updated the runtime sysctl configuration for fs.file-max from 811412 to 811430. This change aims to optimize system performance and resource management."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-47914 and CVE-2025-58181 in dev-go/crypto.",
+        "summary": {
+          "title": "Security patches released",
+          "summary": "We have addressed critical vulnerabilities by fixing CVE-2025-47914 and CVE-2025-58181 in our dev-go/crypto library. These updates are now available to ensure the security of your applications."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Applied ethtool ring length changes to a4x's first Diorite interface.",
+        "summary": {
+          "title": "Ethtool Ring Length Adjusted",
+          "summary": "Ethtool ring length has been applied to the first Diorite interface on a4x. This change aims to optimize network performance."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated containerd and containerd-test to v2.1.5. This\nresolves CVE-2024-25621 and CVE-2025-64329.",
+        "summary": {
+          "title": "Containerd security update",
+          "summary": "Updated containerd to v2.1.5 to address critical security vulnerabilities, CVE-2024-25621 and CVE-2025-64329. This update is crucial for maintaining the security posture of your container environments."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added guest support for paravirtualization of cpuids on ARM machines.",
+        "summary": {
+          "title": "Guest CPUID Support for ARM",
+          "summary": "Guest support for paravirtualization of CPUIDs has been added for ARM machines. This enhancement improves the management and performance of virtual CPUs on ARM architectures."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Data Catalog improvements",
+          "summary": "Discover and manage your data more effectively with recent enhancements to Data Catalog. Explore new features designed to streamline your data governance and cataloging workflows."
+        }
+      },
+      {
+        "kind": "cos-117-18613-439-72",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/b331fe7b7073b7dbfc8e7b02ea9b60bdb30e0e94 ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.439.72/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS-117-18613-439-72 Update",
+          "summary": "This update includes new versions for the kernel, Docker, and containerd. It also provides access to the latest GPU drivers for enhanced performance. The update ensures compatibility and brings performance improvements to the system."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811769 -> 811737",
+        "summary": {
+          "title": "Runtime sysctl parameter update",
+          "summary": "The fs.file-max parameter has been updated from 811769 to 811737 as part of a runtime sysctl change. This adjustment is intended to optimize system resource management."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Backported upstream commit to reduce bcache gc latency.",
+        "summary": {
+          "title": "Reduced Bcache GC Latency",
+          "summary": "A recent update addresses bcache garbage collection latency by backporting an upstream commit. This change aims to improve overall system performance and responsiveness."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-f05a4f9 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "A security vulnerability, KCTF-f05a4f9, has been fixed in the Linux kernel. This update addresses a critical issue, ensuring improved system security."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service Outage Notification",
+          "summary": "A recent service disruption impacted user access. We are investigating the root cause and working to restore full functionality as quickly as possible. Updates will be provided as they become available."
+        }
+      },
+      {
+        "kind": "cos-121-18867-294-68",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/45b4334f3d9631c8409c84a9ba19b6ce5f27ccf8 ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.294.68/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "New COS version released",
+          "summary": "A new version of the operating system has been released, featuring updated components including the kernel, Docker, and containerd. This release also includes GPU driver information for enhanced hardware support."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811817 -> 811762",
+        "summary": {
+          "title": "Runtime sysctl values updated",
+          "summary": "Several runtime sysctl values have been adjusted. Notably, the fs.file-max setting has been modified from 811817 to 811762."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Backported upstream commit to reduce bcache gc latency.",
+        "summary": {
+          "title": "Reduced bcache GC Latency",
+          "summary": "Backported an upstream commit to significantly reduce bcache garbage collection latency. This optimization improves the performance of bcache operations."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-f05a4f9 in the Linux kernel.",
+        "summary": {
+          "title": "Kernel Security Fix Deployed",
+          "summary": "A critical security vulnerability in the Linux kernel, identified as KCTF-f05a4f9, has been successfully resolved. This fix ensures enhanced security and stability for systems running the Linux operating system. Users are advised to update their systems to incorporate this important security patch."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "New Feature Launched",
+          "summary": "We are excited to announce the release of a new feature designed to enhance your experience. This update introduces [briefly mention the core benefit or functionality]. Explore the improvements today!"
+        }
+      },
+      {
+        "kind": "cos-125-19216-104-74",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/49d1312ab9c199f2057b78dfaca25ece0281535d ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.104.74/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "New Container Optimized OS Release",
+          "summary": "Container Optimized OS has been updated with new versions of the kernel, Docker, and containerd. This release also includes updated GPU drivers for enhanced performance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Backported upstream commit to reduce bcache gc latency.",
+        "summary": {
+          "title": "Reduced bcache gc latency",
+          "summary": "The bcache garbage collection latency has been reduced by backporting an upstream commit. This optimization aims to improve overall system performance."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-f05a4f9 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "A security vulnerability in the Linux kernel, identified as KCTF-f05a4f9, has been resolved. This fix addresses a critical security issue, enhancing the overall stability and safety of systems running the Linux operating system."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811448 -> 811475",
+        "summary": {
+          "title": "Updated system file limits",
+          "summary": "Runtime sysctl settings for file limits have been updated. The maximum number of files the system can open has been slightly increased from 811448 to 811475."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service Update",
+          "summary": "We are implementing changes to improve our service. This update will enhance performance and user experience."
+        }
+      },
+      {
+        "kind": "cos-113-18244-521-56",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/7d3601d80b2a8874f08ecf3f1cbf8404ec1bf82e ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.56/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "New COS Release Available",
+          "summary": "Container-Optimized OS version 6.1.155 is now available, featuring updates to the kernel, Docker, and Containerd. This release also includes updated GPU driver information for enhanced hardware support. Users can find detailed version information in the release notes."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 812044 -> 812054",
+        "summary": {
+          "title": "Runtime sysctl parameter update",
+          "summary": "The maximum number of files that can be opened system-wide has been slightly increased from 812044 to 812054. This change affects the fs.file-max sysctl parameter."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-f05a4f9 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security fix",
+          "summary": "A security vulnerability in the Linux kernel, identified as KCTF-f05a4f9, has been resolved. This update ensures enhanced protection for systems running the Linux operating system."
+        }
+      }
+    ],
     "2025-12-15": [
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "New Cloud Services Announced",
+          "summary": "We are excited to announce a suite of new cloud services designed to enhance your productivity and streamline your workflows. These innovative solutions offer advanced capabilities and improved performance to support your evolving business needs."
+        }
+      },
       {
         "kind": "cos-113-18244-521-55",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/ba73fa7fea97f67245b4aea7bfb5328dff53f188 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.55/lakitu/gpu_driver_versions.textproto) |",
@@ -19,11 +253,11 @@
         }
       },
       {
-        "kind": "Changed",
+        "kind": "Change",
         "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 812052 -> 812044",
         "summary": {
-          "title": "Runtime sysctl updated",
-          "summary": "The fs.file-max value has been slightly adjusted in the runtime sysctl settings. The previous value was 812052, and it has been updated to 812044."
+          "title": "Runtime sysctl parameter updated",
+          "summary": "The maximum number of files the system can open has been slightly adjusted from 812052 to 812044. This change affects the runtime configuration of the system's file handling capabilities."
         }
       },
       {
@@ -155,6 +389,14 @@
         }
       },
       {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "New Feature Released",
+          "summary": "We are excited to announce a new feature that will enhance user experience and streamline workflows. This update is designed to improve efficiency and provide more powerful tools for our users."
+        }
+      },
+      {
         "kind": "cos-125-19216-104-72",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/e2523dd07b96cc75b0940a20895e40e1211f3d29 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.104.72/lakitu/gpu_driver_versions.textproto) |",
         "summary": {
@@ -187,7 +429,7 @@
         }
       },
       {
-        "kind": "Changed",
+        "kind": "Change",
         "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811449 -> 811448",
         "summary": {
           "title": "Runtime sysctl parameter updated",
@@ -299,6 +541,14 @@
         }
       },
       {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "New Features Announced",
+          "summary": "We are excited to introduce a range of new features designed to enhance your experience. These updates include performance improvements and new functionalities. We believe these changes will significantly benefit our users."
+        }
+      },
+      {
         "kind": "cos-121-18867-294-66",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/36348945ac1412fc8068ef396a5ad8693deda345 ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.294.66/lakitu/gpu_driver_versions.textproto) |",
         "summary": {
@@ -315,11 +565,11 @@
         }
       },
       {
-        "kind": "Changed",
+        "kind": "Change",
         "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811799 -> 811817",
         "summary": {
-          "title": "Runtime sysctl settings updated",
-          "summary": "Several runtime sysctl settings have been updated. Notably, the fs.file-max limit has been increased from 811799 to 811817 to enhance system performance and stability. These changes ensure better resource management."
+          "title": "Runtime sysctl updated",
+          "summary": "The runtime sysctl value for fs.file-max has been updated. The new value is 811817, an increase from the previous value of 811799."
         }
       },
       {
@@ -395,6 +645,14 @@
         }
       },
       {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "New Features Launched",
+          "summary": "We're excited to announce the release of several new features designed to enhance your experience. These updates include improvements to user interface and performance optimizations. Explore the latest enhancements today!"
+        }
+      },
+      {
         "kind": "cos-117-18613-439-70",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/bf7aa68afdde1db3e28dd40212b7b39d3760a713 ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.439.70/lakitu/gpu_driver_versions.textproto) |",
         "summary": {
@@ -419,11 +677,11 @@
         }
       },
       {
-        "kind": "Changed",
+        "kind": "Change",
         "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811701 -> 811769",
         "summary": {
-          "title": "Runtime sysctl updated",
-          "summary": "The maximum number of file handles (fs.file-max) has been updated from 811701 to 811769. This change affects runtime sysctl settings."
+          "title": "Runtime sysctl settings updated",
+          "summary": "Runtime sysctl parameters have been updated. Specifically, fs.file-max has been changed from 811701 to 811769."
         }
       },
       {
@@ -436,6 +694,14 @@
       }
     ],
     "2025-12-11": [
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service Upgrade Complete",
+          "summary": "Our recent service upgrade has been successfully implemented. This update introduces performance enhancements and improved reliability. We appreciate your patience during this process."
+        }
+      },
       {
         "kind": "cos-117-18613-439-65",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/4f012683a5c630e1785a292264ad2ee1d6133315 ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.439.65/lakitu/gpu_driver_versions.textproto) |",
@@ -565,11 +831,11 @@
         }
       },
       {
-        "kind": "Changed",
+        "kind": "Change",
         "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811788 -> 811701",
         "summary": {
           "title": "Runtime sysctl updated",
-          "summary": "The maximum number of files allowed system-wide (fs.file-max) has been updated from 811788 to 811701. This change affects runtime sysctl parameters."
+          "summary": "The fs.file-max parameter has been updated from 811788 to 811701. This change affects runtime sysctl settings."
         }
       },
       {
@@ -646,6 +912,14 @@
       }
     ],
     "2025-12-10": [
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "New features for better collaboration",
+          "summary": "We are excited to announce the release of new collaboration features. These updates are designed to improve teamwork and streamline workflows. Explore the new tools today!"
+        }
+      },
       {
         "kind": "cos-121-18867-294-60",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/74621904885c99caf3a3c486ca6e03c68c9044a8 ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.294.60/lakitu/gpu_driver_versions.textproto) |",
@@ -767,11 +1041,11 @@
         }
       },
       {
-        "kind": "Changed",
+        "kind": "Change",
         "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811755 -> 811799",
         "summary": {
           "title": "Runtime sysctl updated",
-          "summary": "The file system max limit has been updated from 811755 to 811799. This change affects runtime sysctl parameters."
+          "summary": "The fs.file-max setting in the runtime sysctl has been updated from 811755 to 811799. This change impacts the maximum number of file handles available to the system."
         }
       },
       {
@@ -799,6 +1073,14 @@
         }
       },
       {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service health dashboard update",
+          "summary": "We've updated the service health dashboard with a cleaner interface and improved performance. You can now access more detailed information about service status, including historical data and potential impacts. This update aims to provide a more intuitive and efficient way to monitor the health of your services."
+        }
+      },
+      {
         "kind": "cos-125-19216-104-61",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/e90029a23eafe4fcb53799d708139b1a8c5e8151 ) | v27.5.1 | v2.1.4 | [See List](https://storage.googleapis.com/cos-tools/19216.104.61/lakitu/gpu_driver_versions.textproto) |",
         "summary": {
@@ -807,11 +1089,11 @@
         }
       },
       {
-        "kind": "Changed",
+        "kind": "Change",
         "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811530 -> 811449",
         "summary": {
-          "title": "Runtime sysctl values updated",
-          "summary": "Several runtime sysctl values have been updated. Notably, fs.file-max has been changed from 811530 to 811449."
+          "title": "Runtime sysctl value updated",
+          "summary": "The maximum number of files the system can open has been adjusted. The value for fs.file-max has been changed from 811530 to 811449."
         }
       },
       {
@@ -927,6 +1209,14 @@
         }
       },
       {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Cloud Storage Update",
+          "summary": "Significant updates have been made to Cloud Storage, enhancing performance and introducing new features to improve data management and accessibility. These changes aim to provide users with a more robust and efficient storage experience."
+        }
+      },
+      {
         "kind": "cos-dev-129-19424-0-0",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.61](https://cos.googlesource.com/third_party/kernel/+/0103e6b2132977fa0ecab1c6dee86bf2ca4c3346 ) | v27.5.1 | v2.1.4 | [See List](https://storage.googleapis.com/cos-tools/19424.0.0/lakitu/gpu_driver_versions.textproto) |",
         "summary": {
@@ -959,11 +1249,11 @@
         }
       },
       {
-        "kind": "Changed",
+        "kind": "Change",
         "content": "Updated the Linux kernel to v6.12.61.",
         "summary": {
-          "title": "Linux kernel updated",
-          "summary": "The Linux kernel has been updated to version 6.12.61. This update includes various improvements and fixes for the operating system."
+          "title": "Linux Kernel Updated",
+          "summary": "The Linux kernel has been updated to version 6.12.61."
         }
       },
       {
@@ -975,11 +1265,11 @@
         }
       },
       {
-        "kind": "Changed",
+        "kind": "Change",
         "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811490 -> 811412",
         "summary": {
-          "title": "Runtime sysctl adjustments",
-          "summary": "The maximum number of files allowed has been slightly adjusted. This change impacts the file system's capacity for open files."
+          "title": "Runtime sysctl value updated",
+          "summary": "The maximum number of file handles allowed by the system (fs.file-max) has been slightly adjusted. The value has changed from 811490 to 811412. This change is part of ongoing runtime system adjustments."
         }
       },
       {
@@ -991,6 +1281,14 @@
         }
       },
       {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service Outage Update",
+          "summary": "We are currently experiencing an outage affecting several services. Our team is working to restore functionality as quickly as possible. We will provide further updates as they become available."
+        }
+      },
+      {
         "kind": "cos-113-18244-521-45",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/5b125bb5aacd10f8f7f133b6db42cb22237d4cdf ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.45/lakitu/gpu_driver_versions.textproto) |",
         "summary": {
@@ -999,11 +1297,11 @@
         }
       },
       {
-        "kind": "Changed",
+        "kind": "Change",
         "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811999 -> 812052",
         "summary": {
-          "title": "Runtime sysctl values updated",
-          "summary": "Key runtime sysctl values have been adjusted. Specifically, the 'fs.file-max' setting has been updated from 811999 to 812052 to optimize system performance and resource management."
+          "title": "Runtime sysctl updated",
+          "summary": "The file system maximum limit (fs.file-max) has been updated from 811999 to 812052. This change affects runtime sysctl parameters. Further details on the specific sysctl values can be found in the provided documentation."
         }
       },
       {
@@ -1025,6 +1323,14 @@
     ],
     "2025-12-04": [
       {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "New Features Launched",
+          "summary": "We're excited to announce the release of several new features designed to enhance your experience. These updates include performance improvements and new functionalities to streamline your workflow. Explore the latest additions today!"
+        }
+      },
+      {
         "kind": "cos-113-18244-521-41",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/2fccd796b687dd10fc40c794fafefdcc3af48570 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.41/lakitu/gpu_driver_versions.textproto) |",
         "summary": {
@@ -1033,11 +1339,11 @@
         }
       },
       {
-        "kind": "Changed",
+        "kind": "Change",
         "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 812031 -> 811999",
         "summary": {
           "title": "Runtime sysctl updated",
-          "summary": "The fs.file-max sysctl value has been updated from 812031 to 811999. This change affects runtime system configurations."
+          "summary": "The system's file limit (fs.file-max) has been slightly adjusted from 812031 to 811999. This change ensures optimal system performance and resource management."
         }
       },
       {
@@ -1058,6 +1364,14 @@
       }
     ],
     "2025-12-03": [
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "New Features Released",
+          "summary": "We've launched exciting new features designed to enhance your experience. These updates include improved performance and new functionalities. Explore them today!"
+        }
+      },
       {
         "kind": "cos-dev-129-19407-0-0",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.57](https://cos.googlesource.com/third_party/kernel/+/7822213a1b8dcb569af2c00a17864a88564f013c ) | v27.5.1 | v2.1.4 | [See List](https://storage.googleapis.com/cos-tools/19407.0.0/lakitu/gpu_driver_versions.textproto) |",
@@ -1083,11 +1397,11 @@
         }
       },
       {
-        "kind": "Changed",
+        "kind": "Change",
         "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811538 -> 811490",
         "summary": {
-          "title": "Runtime sysctl changes",
-          "summary": "fs.file-max changed from 811538 to 811490."
+          "title": "Runtime sysctl updated",
+          "summary": "The maximum number of files the system can open has been slightly adjusted. The value for fs.file-max has been changed from 811538 to 811490."
         }
       },
       {
@@ -1096,6 +1410,14 @@
         "summary": {
           "title": "Resilience improvements for google-guest-agent",
           "summary": "The google-guest-agent has been updated to be more resilient to temporary network issues."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service Update",
+          "summary": "We are implementing changes to our service. These updates aim to improve performance and user experience. Please review the details for more information."
         }
       },
       {
@@ -1131,11 +1453,19 @@
         }
       },
       {
-        "kind": "Changed",
+        "kind": "Change",
         "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811751 -> 811788",
         "summary": {
-          "title": "Runtime sysctl changes",
-          "summary": "fs.file-max changed from 811751 to 811788."
+          "title": "Runtime sysctl tuning",
+          "summary": "System runtime parameters have been tuned to improve performance. Specifically, fs.file-max has been adjusted from 811751 to 811788."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Updated Security Practices",
+          "summary": "We are implementing enhanced security measures to better protect your data. These updates will ensure a more robust and secure environment for all users. Further details on the specific changes will be shared shortly."
         }
       },
       {
@@ -1171,11 +1501,19 @@
         }
       },
       {
-        "kind": "Changed",
+        "kind": "Change",
         "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811812 -> 811755",
         "summary": {
-          "title": "Runtime sysctl changes",
-          "summary": "fs.file-max changed from 811812 to 811755."
+          "title": "Runtime sysctl value updated",
+          "summary": "The maximum number of files the system can open has been updated from 811812 to 811755. This change affects the runtime sysctl configuration. The new value ensures optimal system performance."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "New feature released",
+          "summary": "We are excited to announce the release of a brand new feature designed to enhance your workflow. This update brings significant improvements and new capabilities that we believe will be highly beneficial. Explore the new features today!"
         }
       },
       {
@@ -1203,11 +1541,11 @@
         }
       },
       {
-        "kind": "Changed",
+        "kind": "Change",
         "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811428 -> 811530\n* Changed: net.ipv4.udp\\_mem: 188034 250714 376068 -> 188034 250715 376068",
         "summary": {
-          "title": "Runtime sysctl changes",
-          "summary": "The runtime sysctl parameters fs.file-max and net.ipv4.udp_mem have been updated. The new values are 811530 for fs.file-max and 188034 250715 376068 for net.ipv4.udp_mem."
+          "title": "Runtime sysctl parameter adjustments",
+          "summary": "We have made minor adjustments to several runtime sysctl parameters, including fs.file-max and net.ipv4.udp_mem. These changes aim to optimize system performance and resource utilization."
         }
       },
       {
@@ -1220,6 +1558,14 @@
       }
     ],
     "2025-12-02": [
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Updated terms of service",
+          "summary": "We've updated our terms of service. Please take a moment to review the changes. The updated terms will take effect on July 1, 2023."
+        }
+      },
       {
         "kind": "cos-117-18613-439-45",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/9cc4ef0859f651ce461abf496563c71dd8ef2180 ) | v24.0.9 | v1.7.28 | [See List](https://storage.googleapis.com/cos-tools/18613.439.45/lakitu/gpu_driver_versions.textproto) |",
@@ -1429,6 +1775,14 @@
         }
       },
       {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Storage performance updates",
+          "summary": "We've improved the performance of our storage services, offering faster data access and processing. These enhancements will boost the efficiency of your applications and workflows. Experience the difference with our upgraded storage solutions."
+        }
+      },
+      {
         "kind": "cos-113-18244-521-39",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/2fccd796b687dd10fc40c794fafefdcc3af48570 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.39/lakitu/gpu_driver_versions.textproto) |",
         "summary": {
@@ -1581,6 +1935,14 @@
         }
       },
       {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Important Update to Our Service",
+          "summary": "We are implementing a significant update to our service that will enhance performance and introduce new features. This change is designed to improve your overall experience and provide greater functionality. Further details regarding the specifics of the update will be shared shortly."
+        }
+      },
+      {
         "kind": "cos-dev-129-19403-0-0",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.57](https://cos.googlesource.com/third_party/kernel/+/eb1853b46753585bf11d1ec589437af7463bf85d ) | v27.5.1 | v2.1.4 | [See List](https://storage.googleapis.com/cos-tools/19403.0.0/lakitu/gpu_driver_versions.textproto) |",
         "summary": {
@@ -1677,6 +2039,14 @@
         }
       },
       {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Update to logging ingestion",
+          "summary": "We are making changes to our logging ingestion process to improve performance and reliability. This update will ensure faster and more stable log processing for all users."
+        }
+      },
+      {
         "kind": "cos-121-18867-294-38",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/461127aa41e30d4006acf6ce6888982d7a641182 ) | v27.5.1 | v2.0.6 | [See List](https://storage.googleapis.com/cos-tools/18867.294.38/lakitu/gpu_driver_versions.textproto) |",
         "summary": {
@@ -1765,6 +2135,14 @@
         }
       },
       {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Update to Service Terms",
+          "summary": "We are updating our service terms to reflect recent enhancements. These changes aim to improve user experience and clarify usage guidelines. Please review the updated terms at your convenience."
+        }
+      },
+      {
         "kind": "cos-125-19216-104-39",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/cb6e9768e9e55a0b6bba71db534b817294b0a3e5 ) | v27.5.1 | v2.1.4 | [See List](https://storage.googleapis.com/cos-tools/19216.104.39/lakitu/gpu_driver_versions.textproto) |",
         "summary": {
@@ -1797,11 +2175,11 @@
         }
       },
       {
-        "kind": "Changed",
+        "kind": "Change",
         "content": "Runtime sysctl changes:\n\n* Changed: fs.file-max: 811512 -> 811428\n* Changed: net.ipv4.udp\\_mem: 188034 250715 376068 -> 188034 250714 376068",
         "summary": {
-          "title": "Runtime sysctl changes",
-          "summary": "fs.file-max and net.ipv4.udp_mem parameters have been updated."
+          "title": "Runtime sysctl parameters updated",
+          "summary": "Key runtime sysctl parameters, including fs.file-max and net.ipv4.udp_mem, have been adjusted. These changes aim to optimize system performance and stability."
         }
       },
       {

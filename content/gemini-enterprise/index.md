@@ -1,6 +1,27 @@
 # Gemini Enterprise
 
+## 2025-12-19
+
+### Feature
+
+**Gemini Enterprise: Schedule agent executions for custom agents in Agent Designer (Preview)**
+
+You can configure your custom agents, created using the Agent Designer, to execute predefined instructions and prompts on a set schedule.
+
+Scheduled executions run automatically for personal tasks, but any action involving other people will be paused for your review and approval.
+
+For more information, see [Schedule agent executions](https://docs.cloud.google.com/gemini/enterprise/docs/agent-designer/schedule-agent).
+
+---
 ## 2025-12-17
+
+### Feature
+
+**Gemini Enterprise: View the pooled quota usage (Public Preview)**
+
+Admins can view the pooled quota usage of their licenses on the
+**Manage users** page. This feature is in Public Preview. For more information,
+see [View the pooled quota usage](https://docs.cloud.google.com/gemini/enterprise/docs/licenses#view-quota-usage).
 
 ### Feature
 

@@ -1,8 +1,41 @@
 # Vertex AI Agent Builder
 
+## 2025-12-19
+
+### Feature
+
+**Vertex AI Agent Builder**
+
+[Agent Designer](https://docs.cloud.google.com/agent-builder/agent-designer), a low-code visual designer that lets you design and test your
+agent, is now available in the Google Cloud console in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
+## 2025-12-18
+
+### Feature
+
+[Cloud API Registry](https://docs.cloud.google.com/api-registry/docs/overview) is available
+in the Google Cloud console in
+[Preview](https://cloud.google.com/products#product-launch-stages). Use
+Cloud API Registry in the Google Cloud console to view and manage the MCP
+servers and tools your agent has access to.
+
+---
+## 2025-12-17
+
+### Announcement
+
+**Vertex AI Agent Engine**
+
+Vertex AI Agent Engine [Sessions](https://docs.cloud.google.com/agent-builder/agent-engine/sessions/overview)
+and [Memory Bank](https://docs.cloud.google.com/agent-builder/agent-engine/memory-bank/overview) are now
+[Generally Available](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-12-16
 
-### Changed
+### Change
 
 **Vertex AI Agent Engine**
 
@@ -18,15 +51,7 @@ Vertex AI Agent Engine is now available in the following regions:
 
 For more information, see [Vertex AI Agent Builder locations](https://docs.cloud.google.com/agent-builder/locations).
 
-### Announcement
-
-**Vertex AI Agent Engine**
-
-Vertex AI Agent Engine [Sessions](https://docs.cloud.google.com/agent-builder/agent-engine/sessions/overview)
-and [Memory Bank](https://docs.cloud.google.com/agent-builder/agent-engine/memory-bank/overview) are now
-[Generally Available](https://cloud.google.com/products#product-launch-stages).
-
-### Changed
+### Change
 
 Updated pricing for **Vertex AI Agent Engine**:
 

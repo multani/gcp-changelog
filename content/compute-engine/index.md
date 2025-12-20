@@ -1,5 +1,29 @@
 # Compute Engine
 
+## 2025-12-19
+
+### Feature
+
+**Generally available**: The G4 accelerator-optimized machine series supports
+the flex-start provisioning model. When you specify the flex-start provisioning
+model for your G4 virtual machine (VM) instances, you receive a discount up to
+50% for vCPUs, memory, and GPUs. Flex-start is ideal for fault-tolerant or
+temporary workloads that can benefit from lower costs by having a flexible start
+time. For more information, see
+[About Flex-start VMs](https://docs.cloud.google.com/compute/docs/instances/about-flex-start-vms).
+
+### Feature
+
+**Public Preview**: The C4A VM family now offers a `c4a-highmem-96-metal` bare
+metal instance. This machine type has 96 vCPUs and 768 GB of DDR5 memory,
+[Titanium I/O offload processing](https://cloud.google.com/titanium),
+and supports Hyperdisk Balanced, Hyperdisk Extreme, and Hyperdisk ML storage volumes.
+This bare metal instance is offered
+in select [regions and zones](https://docs.cloud.google.com/compute/docs/bare-metal-instances#regions_zones).
+For more information, see
+[C4A machine series](https://docs.cloud.google.com/compute/docs/general-purpose-machines#c4a_series).
+
+---
 ## 2025-12-17
 
 ### Feature
@@ -60,6 +84,14 @@ on A4 VMs at least once every 60 days. For more information, see the
 
 ---
 ## 2025-12-10
+
+### Fixed
+
+If you clone a source disk that's encrypted with a customer-supplied encryption
+key or customer-managed encryption key, you must use the same key to encrypt the
+clone.
+
+For more information, see [Create a clone of an encrypted source disk](https://docs.cloud.google.com/compute/docs/disks/clone-duplicate-disks#encrypted-source).
 
 ### Feature
 

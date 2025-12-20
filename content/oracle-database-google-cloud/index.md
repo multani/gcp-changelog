@@ -1,5 +1,23 @@
 # Oracle Database@Google Cloud
 
+## 2025-12-18
+
+### Feature
+
+Oracle Database@Google Cloud adds the following regions and zones for its services:
+
+* Exadata Database Service on Exascale infrastructure
+
+  + `northamerica-northeast1-a-r1` (Montréal, Québec, Canada)
+  + `us-east4-a-r2` (Northern Virginia, North America)
+* Base Database Service
+
+  + `northamerica-northeast1-a-r1` (Montréal, Québec, Canada)
+  + `us-east4-a-r2` (Northern Virginia, North America)
+
+For a full list of supported locations, see [Supported regions and zones](https://docs.cloud.google.com/oracle/database/docs/regions-and-zones).
+
+---
 ## 2025-12-10
 
 ### Feature

@@ -40,7 +40,7 @@ Security Command Center Enterprise tier and is available as a
 [Preview](https://cloud.google.com/products#product-launch-stages) in the
 Security Command Center Premium tier.
 
-### Changed
+### Change
 
 Multiple pages in Security Command Center Standard have been improved:
 
@@ -77,7 +77,7 @@ MCP servers](https://docs.cloud.google.com/model-armor/model-armor-mcp-google-cl
 ---
 ## 2025-12-05
 
-### Changed
+### Change
 
 Security Command Center [Risk Engine](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-supported-features)
 uses the [`storage.restrictAuthTypes`](https://docs.cloud.google.com/storage/docs/org-policy-constraints#restrict-auth-types)
@@ -103,7 +103,7 @@ is available in [General Availability](https://cloud.google.com/products#product
 ---
 ## 2025-11-20
 
-### Changed
+### Change
 
 The following updates simplify Security Command Center Standard and Premium tier activation
 for organizations:

@@ -277,6 +277,16 @@ check-in](https://docs.cloud.google.com/contact-center/ccai-platform/docs/Chat_S
 
 ### Feature
 
+**Click-to-call: show the dial pad screen**
+
+If you have a CRM configured for click-to-call, you can configure your instance
+to display the dial pad screen after an agent clicks a phone number in the CRM
+but before a call starts. This lets the agent make changes on the dial pad
+screen. For more information, see
+[Click-to-call](https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#click-to-call).
+
+### Feature
+
 **Restrict the transfer of email sessions to a queue**
 
 You can now configure queues to prevent them from receiving email session

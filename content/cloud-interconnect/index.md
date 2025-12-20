@@ -1,5 +1,15 @@
 # Cloud Interconnect
 
+## 2025-12-17
+
+### Feature
+
+Custom IP address ranges for Cloud Interconnect are
+[Generally Available](https://cloud.google.com/products#product-launch-stages).
+For more information, see
+[Custom IP address ranges](https://docs.cloud.google.com/network-connectivity/docs/interconnect/concepts/overview#custom-ip).
+
+---
 ## 2025-12-09
 
 ### Feature

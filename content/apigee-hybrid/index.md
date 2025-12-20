@@ -1,5 +1,161 @@
 # Apigee hybrid
 
+## 2025-12-19
+
+### Change
+
+**UDCA component removed**
+
+In Apigee hybrid v1.16, the Unified Data Collection Agent (UDCA) component has been removed. The responsibilities of sending analytics, trace, and deployment status data to the Apigee control plane are now handled using a [Google Cloud Pub/Sub](https://docs.cloud.google.com/pubsub/docs) based data pipeline. Using the Pub/Sub based data pipeline has been the default data collection mechanism since [Apigee hybrid v1.14.0](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1140).
+
+### Feature
+
+**`apigee-guardrails` service account**
+
+In v1.16.0, Apigee Hybrid introduces an `apigee-guardrails` Google IAM service account. This is used by the `apigee-operator` chart during initial installation to check that all needed APIs are enabled in your project.
+
+**Note:** The `apigee-guardrails` service account is required for both upgraded and new installations. See [Upgrading to Apigee hybrid to version 1.16: Set up the `apigee-guardrails` service account](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/upgrade#set-up-the-apigee-guardrails-service-account) for upgrade instructions.
+
+See:
+
+* [Diagnosing issues with guardrails](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/guardrails)
+* [About service accounts: `apigee-guardrails`](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/sa-about#apigee-guardrails)
+* [`create-service-account`](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/create-service-account)
+* [Upgrading to Apigee hybrid to version 1.16](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/upgrade#changes-from-previous-version)
+* [Installation Part 2: Step 4: Create service accounts](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/install-service-accounts)
+* [Installation Part 2: Step 5: Set up service account authentication](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/install-sa-authentication)
+
+### Change
+
+**Support for cert-manager release 1.18 and 1.19**
+
+Apigee hybrid v1.16 supports cert-manager release 1.18 and 1.19.
+
+**Note:** cert-manager release 1.18 introduces a change to the default certificate `Spec.PrivateKey.RotationPolicy` value that can impact traffic on upgraded Apigee hybrid installations. This does not affect new installations of Apigee Hybrid. See [Known issue 465834046](https://docs.cloud.google.com/apigee/docs/release/known-issues#465834046).
+
+### Fixed
+
+#### Fixed in this release
+
+| Bug ID | Description |
+| --- | --- |
+| **448647917** | **Fixed a issue where non-SSL connections through a forward proxy could be improperly shared.** (also fixed in [Apigee 1-16-0-apigee-4](https://docs.cloud.google.com/apigee/docs/release/release-notes#October_31_2025)) |
+| **442501403** | **Fixed an issue that caused incorrect target latency metrics in Apigee Analytics when a TargetEndpoint is configured with a <LoadBalancer>.** (also fixed in [Apigee 1-16-0-apigee-3](https://docs.cloud.google.com/apigee/docs/release/release-notes#October_16_2025)) |
+| **438192028** | **Updated the geolocation database to mitigate stale IP-to-location mappings.** (also fixed in [Apigee 1-16-0-apigee-3](https://docs.cloud.google.com/apigee/docs/release/release-notes#October_16_2025)) |
+| **437999897** | **Reduced the log level for failed geo IP lookups to address excessive log messages for private IP addresses.** (also fixed in [Apigee 1-16-0-apigee-3](https://docs.cloud.google.com/apigee/docs/release/release-notes#October_16_2025)) |
+| **436323210** | **Fixed ingress cert keys to allow both `tls.key`/`key` and `tls.crt`/`cert`.** |
+| **N/A** | **Updates to security, infrastructure, and libraries.** (also fixed in [Apigee 1-16-0-apigee-4](https://docs.cloud.google.com/apigee/docs/release/release-notes#October_31_2025)) |
+
+### Announcement
+
+
+
+### hybrid v1.16.0
+
+On December 19, 2025 we released an updated version of the Apigee hybrid software, 1.16.0.
+
+* For information on upgrading, see [Upgrading Apigee hybrid to version v1.16](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/upgrade).
+* For information on new installations, see [The big picture](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture).
+
+**Note:** This is a minor release: The container images used in minor releases are integrated with the Apigee hybrid Helm charts. Upgrading to a minor via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).
+
+### Security
+
+#### Fixed in this release
+
+| Bug ID | Description |
+| --- | --- |
+| **452621774, 452381632, 441266643, 448498138** | **Security fix for Apigee infrastructure.** (also fixed in [Apigee 1-16-0-apigee-4](https://docs.cloud.google.com/apigee/docs/release/release-notes#October_31_2025))  This addresses the following vulnerabilities:  * [CVE-2025-53864](https://nvd.nist.gov/vuln/detail/CVE-2025-53864) Updated Nimbus JWT library from 9.37.2 to 9.37.4, which introduced changes in behavior including changes to error string verbiage. * [CVE-2025-8916](https://nvd.nist.gov/vuln/detail/CVE-2025-8916) * [CVE-2025-5115](https://nvd.nist.gov/vuln/detail/CVE-2025-5115) * [CVE-2024-40094](https://nvd.nist.gov/vuln/detail/CVE-2024-40094) |
+| **440419558, 433759657** | **Security fix for Apigee infrastructure.** (also fixed in [Apigee 1-16-0-apigee-3](https://docs.cloud.google.com/apigee/docs/release/release-notes#October_16_2025)) This addresses the following vulnerabilities:   * [CVE-2025-22868](https://nvd.nist.gov/vuln/detail/CVE-2025-22868) * [CVE-2025-48924](https://nvd.nist.gov/vuln/detail/CVE-2025-48924) **Note**: This fix updates a Java library that is included in Apigee. Reliance on Java libraries that are included with Apigee is not supported. Those libraries are for Apigee product functionality only, and there's no guarantee that a library will be available from release to release. For more information, see [Restrictions](https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/java-callout-policy#Restrictions). |
+| **443902061** | **Security fix for Apigee infrastructure** (also fixed in [Apigee 1-16-0-apigee-3](https://docs.cloud.google.com/apigee/docs/release/release-notes#October_16_2025)) This addresses the following vulnerability:   * [CVE-2025-13292](https://nvd.nist.gov/vuln/detail/CVE-2025-13292) Fixed an issue with improper access control that resulted in cross-tenant analytics modification and access to log data. |
+| **N/A** | **Security fixes for `apigee-asm-ingress`.**  This addresses the following vulnerabilities:  * [CVE-2025-58188](https://nvd.nist.gov/vuln/detail/CVE-2025-58188) * [CVE-2025-58187](https://nvd.nist.gov/vuln/detail/CVE-2025-58187) |
+| **N/A** | **Security fixes for `apigee-asm-istiod`.**  This addresses the following vulnerabilities:  * [CVE-2025-58188](https://nvd.nist.gov/vuln/detail/CVE-2025-58188) * [CVE-2025-58187](https://nvd.nist.gov/vuln/detail/CVE-2025-58187) |
+| **N/A** | **Security fixes for `apigee-connect-agent`.**  This addresses the following vulnerabilities:  * [CVE-2025-61725](https://nvd.nist.gov/vuln/detail/CVE-2025-61725) * [CVE-2025-61723](https://nvd.nist.gov/vuln/detail/CVE-2025-61723) * [CVE-2025-58188](https://nvd.nist.gov/vuln/detail/CVE-2025-58188) * [CVE-2025-58187](https://nvd.nist.gov/vuln/detail/CVE-2025-58187) * [CVE-2025-47907](https://nvd.nist.gov/vuln/detail/CVE-2025-47907) |
+| **N/A** | **Security fixes for `apigee-fluent-bit`.**  This addresses the following vulnerability:  * [CVE-2025-9230](https://nvd.nist.gov/vuln/detail/CVE-2025-9230) |
+| **N/A** | **Security fixes for `apigee-hybrid-cassandra`.**  This addresses the following vulnerabilities:  * [CVE-2025-61725](https://nvd.nist.gov/vuln/detail/CVE-2025-61725) * [CVE-2025-61723](https://nvd.nist.gov/vuln/detail/CVE-2025-61723) * [CVE-2025-58188](https://nvd.nist.gov/vuln/detail/CVE-2025-58188) * [CVE-2025-58187](https://nvd.nist.gov/vuln/detail/CVE-2025-58187) * [CVE-2025-47913](https://nvd.nist.gov/vuln/detail/CVE-2025-47913) * [CVE-2025-47907](https://nvd.nist.gov/vuln/detail/CVE-2025-47907) |
+| **N/A** | **Security fixes for `apigee-hybrid-cassandra-client`.**  This addresses the following vulnerabilities:  * [CVE-2025-61725](https://nvd.nist.gov/vuln/detail/CVE-2025-61725) * [CVE-2025-61723](https://nvd.nist.gov/vuln/detail/CVE-2025-61723) * [CVE-2025-58188](https://nvd.nist.gov/vuln/detail/CVE-2025-58188) * [CVE-2025-58187](https://nvd.nist.gov/vuln/detail/CVE-2025-58187) * [CVE-2025-47907](https://nvd.nist.gov/vuln/detail/CVE-2025-47907) |
+| **N/A** | **Security fixes for `apigee-kube-rbac-proxy`.**  This addresses the following vulnerabilities:  * [CVE-2025-61725](https://nvd.nist.gov/vuln/detail/CVE-2025-61725) * [CVE-2025-61723](https://nvd.nist.gov/vuln/detail/CVE-2025-61723) * [CVE-2025-58188](https://nvd.nist.gov/vuln/detail/CVE-2025-58188) * [CVE-2025-58187](https://nvd.nist.gov/vuln/detail/CVE-2025-58187) |
+| **N/A** | **Security fixes for `apigee-mart-server`.**  This addresses the following vulnerabilities:  * [CVE-2025-53066](https://nvd.nist.gov/vuln/detail/CVE-2025-53066) * [CVE-2025-50106](https://nvd.nist.gov/vuln/detail/CVE-2025-50106) * [CVE-2025-50059](https://nvd.nist.gov/vuln/detail/CVE-2025-50059) * [CVE-2025-48913](https://nvd.nist.gov/vuln/detail/CVE-2025-48913) * [CVE-2025-30749](https://nvd.nist.gov/vuln/detail/CVE-2025-30749) * [CVE-2024-13009](https://nvd.nist.gov/vuln/detail/CVE-2024-13009) |
+| **N/A** | **Security fixes for `apigee-open-telemetry-collector`.**  This addresses the following vulnerabilities:  * [CVE-2025-61723](https://nvd.nist.gov/vuln/detail/CVE-2025-61723) * [CVE-2025-58188](https://nvd.nist.gov/vuln/detail/CVE-2025-58188) * [CVE-2025-58187](https://nvd.nist.gov/vuln/detail/CVE-2025-58187) * [CVE-2025-29786](https://nvd.nist.gov/vuln/detail/CVE-2025-29786) |
+| **N/A** | **Security fixes for `apigee-operators`.**  This addresses the following vulnerabilities:  * [CVE-2025-61723](https://nvd.nist.gov/vuln/detail/CVE-2025-61723) * [CVE-2025-58188](https://nvd.nist.gov/vuln/detail/CVE-2025-58188) * [CVE-2025-58187](https://nvd.nist.gov/vuln/detail/CVE-2025-58187) * [CVE-2025-61725](https://nvd.nist.gov/vuln/detail/CVE-2025-61725) |
+| **N/A** | **Security fixes for `apigee-prom-prometheus`.**  This addresses the following vulnerabilities:  * [CVE-2025-61723](https://nvd.nist.gov/vuln/detail/CVE-2025-61723) * [CVE-2025-58188](https://nvd.nist.gov/vuln/detail/CVE-2025-58188) * [CVE-2025-58187](https://nvd.nist.gov/vuln/detail/CVE-2025-58187) * [CVE-2022-48174](https://nvd.nist.gov/vuln/detail/CVE-2022-48174) |
+| **N/A** | **Security fixes for `apigee-prometheus-adapter`.**  This addresses the following vulnerabilities:  * [CVE-2025-61723](https://nvd.nist.gov/vuln/detail/CVE-2025-61723) * [CVE-2025-58188](https://nvd.nist.gov/vuln/detail/CVE-2025-58188) * [CVE-2025-58187](https://nvd.nist.gov/vuln/detail/CVE-2025-58187) |
+| **N/A** | **Security fixes for `apigee-redis`.**  This addresses the following vulnerabilities:  * [CVE-2025-61725](https://nvd.nist.gov/vuln/detail/CVE-2025-61725) * [CVE-2025-61723](https://nvd.nist.gov/vuln/detail/CVE-2025-61723) * [CVE-2025-58188](https://nvd.nist.gov/vuln/detail/CVE-2025-58188) * [CVE-2025-58187](https://nvd.nist.gov/vuln/detail/CVE-2025-58187) * [CVE-2025-47907](https://nvd.nist.gov/vuln/detail/CVE-2025-47907) |
+| **N/A** | **Security fixes for `apigee-runtime`.**  This addresses the following vulnerabilities:  * [CVE-2025-50106](https://nvd.nist.gov/vuln/detail/CVE-2025-50106) * [CVE-2025-50059](https://nvd.nist.gov/vuln/detail/CVE-2025-50059) * [CVE-2025-48913](https://nvd.nist.gov/vuln/detail/CVE-2025-48913) * [CVE-2025-30749](https://nvd.nist.gov/vuln/detail/CVE-2025-30749) |
+| **N/A** | **Security fixes for `apigee-stackdriver-logging-agent`.**  This addresses the following vulnerability:  * [CVE-2025-24294](https://nvd.nist.gov/vuln/detail/CVE-2025-24294) |
+| **N/A** | **Security fixes for `apigee-synchronizer`.**  This addresses the following vulnerabilities:  * [CVE-2025-50106](https://nvd.nist.gov/vuln/detail/CVE-2025-50106) * [CVE-2025-50059](https://nvd.nist.gov/vuln/detail/CVE-2025-50059) * [CVE-2025-48913](https://nvd.nist.gov/vuln/detail/CVE-2025-48913) * [CVE-2025-30749](https://nvd.nist.gov/vuln/detail/CVE-2025-30749) |
+| **N/A** | **Security fixes for `apigee-udca`.**  This addresses the following vulnerabilities:  * [CVE-2025-61725](https://nvd.nist.gov/vuln/detail/CVE-2025-61725) * [CVE-2025-61723](https://nvd.nist.gov/vuln/detail/CVE-2025-61723) * [CVE-2025-58188](https://nvd.nist.gov/vuln/detail/CVE-2025-58188) * [CVE-2025-58187](https://nvd.nist.gov/vuln/detail/CVE-2025-58187) * [CVE-2025-47913](https://nvd.nist.gov/vuln/detail/CVE-2025-47913) |
+| **N/A** | **Security fixes for `apigee-watcher`.**  This addresses the following vulnerabilities:  * [CVE-2025-61723](https://nvd.nist.gov/vuln/detail/CVE-2025-61723) * [CVE-2025-58188](https://nvd.nist.gov/vuln/detail/CVE-2025-58188) * [CVE-2025-58187](https://nvd.nist.gov/vuln/detail/CVE-2025-58187) |
+
+### Security
+
+#### Fixed since last minor release
+
+| Bug ID | Description |
+| --- | --- |
+| **448498138** | **Security fixes for `apigee-runtime`.** (Fixed in [v1.15.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1151))  This addresses the following vulnerability:  * [CVE-2024-40094](https://nvd.nist.gov/vuln/detail/CVE-2024-40094) |
+| **447367372** | **Security fixes for `apigee-runtime`.** (Fixed in [v1.15.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1151))  This addresses the following vulnerability:  * [CVE-2025-58057](https://nvd.nist.gov/vuln/detail/CVE-2025-58057) |
+| **433952146** | **Security fix.** (Fixed in [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143))  This addresses the following vulnerability:  * [CVE-2024-6763](https://nvd.nist.gov/vuln/detail/CVE-2024-6763) |
+| **433951774** | **Security fix.** (Fixed in [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143))  This addresses the following vulnerability:  * [CVE-2024-7254](https://nvd.nist.gov/vuln/detail/CVE-2024-7254) |
+| **433950558** | **Security fix.** (Fixed in [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143))  This addresses the following vulnerability:  * [CVE-2024-47554](https://nvd.nist.gov/vuln/detail/CVE-2024-47554) |
+| **433950370** | **Security fix.** (Fixed in [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143))  This addresses the following vulnerability:  * [CVE-2025-25193](https://nvd.nist.gov/vuln/detail/CVE-2025-25193) |
+| **418557195** | **Security fixes for `apigee-fluent-bit`.** (Fixed in [v1.15.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1151))  This addresses the following vulnerabilities:  * [CVE-2025-24528](https://nvd.nist.gov/vuln/detail/CVE-2025-24528) * [CVE-2025-4207](https://nvd.nist.gov/vuln/detail/CVE-2025-4207) * [CVE-2025-1390](https://nvd.nist.gov/vuln/detail/CVE-2025-1390) * [CVE-2024-26462](https://nvd.nist.gov/vuln/detail/CVE-2024-26462) * [CVE-2024-13176](https://nvd.nist.gov/vuln/detail/CVE-2024-13176) |
+| **396944778** | **Security fixes for `apigee-synchronizer`.** (Fixed in [v1.13.4](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1134))  This addresses the following vulnerabilities:  * [CVE-2025-25193](https://nvd.nist.gov/vuln/detail/CVE-2025-25193) * [CVE-2025-24970](https://nvd.nist.gov/vuln/detail/CVE-2025-24970) * [CVE-2025-23184](https://nvd.nist.gov/vuln/detail/CVE-2025-23184) * [CVE-2024-47554](https://nvd.nist.gov/vuln/detail/CVE-2024-47554) |
+| **392934392** | **Security fixes for `apigee-logger`.** |
+| **N/A** | **Incorporated an updated base image for `stackdriver-logging-agent`, improving the overall security of the service.** (Fixed in [1.14.2-hotfix.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_1142-hotfix1))  This addresses the following vulnerabilities (among others and not limited to):  * [CVE-2022-32221](https://nvd.nist.gov/vuln/detail/CVE-2022-32221) * [GHSA-jvgm-pfqv-887x](https://osv.dev/vulnerability/GHSA-jvgm-pfqv-887x) |
+| **N/A** | **Security fixes for `apigee-asm-ingress`.** (Fixed in [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143))  This addresses the following vulnerability:  * [CVE-2025-22871](https://nvd.nist.gov/vuln/detail/CVE-2025-22871) |
+| **N/A** | **Security fixes for `apigee-asm-istiod`.** (Fixed in [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143))  This addresses the following vulnerability:  * [CVE-2025-22871](https://nvd.nist.gov/vuln/detail/CVE-2025-22871) |
+| **N/A** | **Security fixes for `apigee-envoy`.** (Fixed in [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143))  This addresses the following vulnerability:  * [CVE-2025-0395](https://nvd.nist.gov/vuln/detail/CVE-2025-0395) |
+| **N/A** | **Security fixes for `apigee-fluent-bit`.** (Fixed in [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143) & [v1.15.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1151))  This addresses the following vulnerabilities:  * [CVE-2025-32990](https://nvd.nist.gov/vuln/detail/CVE-2025-32990) * [CVE-2025-32988](https://nvd.nist.gov/vuln/detail/CVE-2025-32988) |
+| **N/A** | **Security fixes for `apigee-hybrid-cassandra-client`.** (Fixed in [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143))  This addresses the following vulnerability:  * [CVE-2025-22871](https://nvd.nist.gov/vuln/detail/CVE-2025-22871) |
+| **N/A** | **Security fixes for `apigee-hybrid-cassandra`.** (Fixed in [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143))  This addresses the following vulnerabilities:  * [CVE-2025-23015](https://nvd.nist.gov/vuln/detail/CVE-2025-23015) * [CVE-2025-22871](https://nvd.nist.gov/vuln/detail/CVE-2025-22871) * [CVE-2025-24970](https://nvd.nist.gov/vuln/detail/CVE-2025-24970) |
+| **N/A** | **Security fixes for `apigee-hybrid-cassandra`.** (Fixed in [v1.15.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1151))  This addresses the following vulnerability:  * [CVE-2025-23015](https://nvd.nist.gov/vuln/detail/CVE-2025-23015) |
+| **N/A** | **Security fixes for `apigee-kube-rbac-proxy`.** (Fixed in [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143))  This addresses the following vulnerability:  * [CVE-2025-22871](https://nvd.nist.gov/vuln/detail/CVE-2025-22871) |
+| **N/A** | **Security fixes for `apigee-mart-server`.** (Fixed in [v1.13.4](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1134))  This addresses the following vulnerability:  * [CVE-2024-20952](https://nvd.nist.gov/vuln/detail/CVE-2024-20952) |
+| **N/A** | **Security fixes for `apigee-mart-server`.** (Fixed in [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143))  This addresses the following vulnerabilities:  * [CVE-2025-48924](https://nvd.nist.gov/vuln/detail/CVE-2025-48924) * [CVE-2025-48795](https://nvd.nist.gov/vuln/detail/CVE-2025-48795) * [CVE-2025-48734](https://nvd.nist.gov/vuln/detail/CVE-2025-48734) * [CVE-2025-24970](https://nvd.nist.gov/vuln/detail/CVE-2025-24970) * [CVE-2024-47554](https://nvd.nist.gov/vuln/detail/CVE-2024-47554) * [CVE-2024-47535](https://nvd.nist.gov/vuln/detail/CVE-2024-47535) * [CVE-2024-13009](https://nvd.nist.gov/vuln/detail/CVE-2024-13009) * [CVE-2024-8184](https://nvd.nist.gov/vuln/detail/CVE-2024-8184) * [CVE-2024-7254](https://nvd.nist.gov/vuln/detail/CVE-2024-7254) * [CVE-2024-6763](https://nvd.nist.gov/vuln/detail/CVE-2024-6763) |
+
+### Fixed
+
+#### Fixed since last minor release
+
+| Bug ID | Description |
+| --- | --- |
+| **451841788** | **Apigee hybrid required the `mintTaskScheduler.serviceAccountPath` property even when Monetization was not enabled.** (Fixed in [v1.15.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1151) & [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143)) |
+| **451375397** | **The `apigee-pull-push.sh` script could return a No such image error message.** (Fixed in [v1.15.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1151) & [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143)) |
+| **445912919** | **Unused files and folders have been removed from the Apigee hybrid Helm charts to prevent potential security exposure and streamline the product installation and upgrade process.** (Fixed in [v1.15.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1151)) |
+| **442501403** | **Fixed an issue that caused incorrect target latency metrics in Apigee Analytics when a `TargetEndpoint` is configured with a `<LoadBalancer>`.** (Fixed in [v1.15.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1151)) |
+| **437999897** | **Reduced the log level for failed geo IP lookups to address excessive log messages for private IP addresses.** (Fixed in [v1.15.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1151)) |
+| **431930277**, **395272878** | **When the configuration property [`envs.managementCallsSkipProxy`](https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/config-prop-ref#envs-managementcallsskipproxy) is set to `true` via helm for environment-level forward proxy, trace and analytics (which use `googleapis.com`) will skip forward proxy.** (Fixed in [v1.15.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1151)) |
+| **423597917** | **Post of an [`AppGroupAppKey`](https://docs.cloud.google.com/apigee/docs/reference/apis/apigee/rest/v1/organizations.appgroups.apps.keys/updateAppGroupAppKey) scopes should result in insert operation instead of update.** (Fixed in [v1.15.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1151) & [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143)) |
+| **420675540** | **Fixed Cassandra based replication for runtime contracts in synchronizer.** (Fixed in [v1.15.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1151), [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143) & [v1.13.4](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1134)) |
+| **419578402** | **Mint-Mart forward proxy compatible.** (Fixed in [v1.15.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1151) & [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143)) |
+| **416634326** | **Presence of istio.io Custom Resource Definitions (CRDs) in an Apigee hybrid cluster could cause failure in apigee-ingressgateway-manager pods.** (Fixed in [v1.15.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1151), [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143) & [v1.13.4](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1134)) |
+| **414499328** | **`ApigeeTelemetry` could become stuck in `creating` state** (Fixed in [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143) & [v1.13.4](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1134)) |
+| **412740465** | **Fixed issue where zipkin headers were not generated by Apigee Ingress Gateway.** (Fixed in [v1.15.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1151) & [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143)) |
+| **409048431** | **Fixes a vulnerability which could allow a SAML signature verification to be bypassed.** (Fixed in [v1.15.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1151) & [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143)) |
+| **401746333** | **Fixed a `java.lang.ClassCircularityError` that could occur in Java Callouts due to an issue with the class loading mechanism.**(Fixed in [v1.15.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1151) & [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143)) |
+| **395272878** | **Separate Forward proxy support for `googleapis.com` and `non-googleapis.com` runtime traffic.** (Fixed in [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143)) |
+| **393615439** | **OASValidation behavior for `allOf` with `additionalProperties: true`.** (Fixed in [1.14.2-hotfix.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_1142-hotfix1)) |
+| **382565315** | **A memory leak within the Security Policy has been addressed, improving system stability.** (Fixed in [v1.13.4](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1134)) |
+| **378686709** | **The use of wildcards (\*) in Apigee proxy basepaths would conflict with other explicit basepaths, resulting in a 404 error.** To apply this fix, follow the procedure in [Known issue 378686709](https://docs.cloud.google.com/apigee/docs/release/known-issues#378686709). (Fixed in [v1.15.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1151) & [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143)) |
+| **375360455** | **Updated apigee-runtime drain timeout to 300s to fix connection termination issue during pod termination.** (Fixed in [v1.13.4](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1134)) |
+| **367815792** | **Two new Flow Variables: `app_group_app` and `app_group_name` have been added to VerifyApiKey and Access Token policy.** (Fixed in [v1.15.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1151) & [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143)) |
+
+### Feature
+
+**Seccomp Profiles**
+
+Apigee Hybrid now offers the capability to apply Seccomp Profiles to your runtime components, significantly enhancing the security posture of your deployment.
+
+This feature allows Apigee administrators and security teams to restrict the system calls (syscalls) a containerized process can make to the host's kernel. By limiting a container to only the necessary syscalls, you can:
+
+* Enhance Security: Mitigate the risk of container breakouts and privilege escalation.
+* Enforce Least Privilege: Ensure components only have access to the exact system calls required for their operation.
+* Meet Compliance: Provide a critical control for meeting stringent security compliance requirements.
+
+Seccomp profiles are not enabled by default. To enable the feature, see [Configure Seccomp profiles for pod security](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/configure-Seccomp-profiles).
+
+---
 ## 2025-10-12
 
 ### hybrid v1.15.1

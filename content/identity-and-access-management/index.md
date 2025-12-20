@@ -2,7 +2,7 @@
 
 ## 2025-12-15
 
-### Changed
+### Change
 
 You can ask Gemini for predefined role suggestions
 ([preview](https://cloud.google.com/products#product-launch-stages)) without

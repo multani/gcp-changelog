@@ -10,7 +10,7 @@
 * **Composer DAG**: Corrected propagation of location parameterization.
 * **Cortex for Marketing**: Updated references to Google Ads API v22.
 
-### Changed
+### Change
 
 * **SAP**: The column `DUMMY_SDDOCPARTNER_INCL_EEW_PS` has been removed from
   *SalesOrderPartnerFunction* (ECC and S/4) as it is a non-standard column not

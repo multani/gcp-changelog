@@ -1,5 +1,13 @@
 # Cloud Run functions
 
+## 2025-12-19
+
+### Feature
+
+Support for [Python 3.14 runtime](https://docs.cloud.google.com/functions/docs/concepts/execution-environment#python) is in [General Availability](https://cloud.google.com/products#product-launch-stages). Starting from Python version 3.14 and later, the Python Buildpack uses the uv package manager as the
+default installer for the dependencies you specify in your `requirements.txt` file. You can also use pip as the default installer for these versions by setting the `GOOGLE_PYTHON_PACKAGE_MANAGER` environment variable to `pip`. For more information, see [Specify dependencies in Python](https://docs.cloud.google.com/run/docs/runtimes/python-dependencies.md#dependencies).
+
+---
 ## 2025-11-20
 
 ### Feature

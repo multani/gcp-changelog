@@ -2,9 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Compute Engine</title>
   <subtitle>Changelog for Google Cloud product: Compute Engine</subtitle>
-  <updated>2025-12-17T00:00:00+00:00</updated>
+  <updated>2025-12-19T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:compute-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/compute-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2025-12-19:feature:0</id>
+    <published>2025-12-19T00:00:00+00:00</published>
+    <updated>2025-12-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Generally available</strong>: The G4 accelerator-optimized machine series supports
+the flex-start provisioning model. When you specify the flex-start provisioning
+model for your G4 virtual machine (VM) instances, you receive a discount up to
+50% for vCPUs, memory, and GPUs. Flex-start is ideal for fault-tolerant or
+temporary workloads that can benefit from lower costs by having a flexible start
+time. For more information, see
+<a href="https://docs.cloud.google.com/compute/docs/instances/about-flex-start-vms">About Flex-start VMs</a>.</p>]]></content>
+    <summary>The G4 machine series now supports the flex-start provisioning model, offering significant discounts on vCPUs, memory, and GPUs. This feature is ideal for fault-tolerant or temporary workloads that can tolerate flexible start times to achieve cost savings.</summary>
+    <title>Feature: G4 machine series now supports flex-start</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2025-12-19:feature:1</id>
+    <published>2025-12-19T00:00:00+00:00</published>
+    <updated>2025-12-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Public Preview</strong>: The C4A VM family now offers a <code>c4a-highmem-96-metal</code> bare
+metal instance. This machine type has 96 vCPUs and 768 GB of DDR5 memory,
+<a href="https://cloud.google.com/titanium">Titanium I/O offload processing</a>,
+and supports Hyperdisk Balanced, Hyperdisk Extreme, and Hyperdisk ML storage volumes.
+This bare metal instance is offered
+in select <a href="https://docs.cloud.google.com/compute/docs/bare-metal-instances#regions_zones">regions and zones</a>.
+For more information, see
+<a href="https://docs.cloud.google.com/compute/docs/general-purpose-machines#c4a_series">C4A machine series</a>.</p>]]></content>
+    <summary>A new high-memory bare metal instance, the c4a-highmem-96-metal, is now in Public Preview. This instance provides 96 vCPUs, 768 GB of memory, and supports various Hyperdisk storage options. It is available in select regions and zones for demanding workloads.</summary>
+    <title>Feature: New High-Memory Bare Metal Instance Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -91,7 +126,21 @@ on A4 VMs at least once every 60 days. For more information, see the
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:compute-engine:2025-12-10:feature:0</id>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2025-12-10:fixed:0</id>
+    <published>2025-12-10T00:00:00+00:00</published>
+    <updated>2025-12-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>If you clone a source disk that's encrypted with a customer-supplied encryption
+key or customer-managed encryption key, you must use the same key to encrypt the
+clone.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/compute/docs/disks/clone-duplicate-disks#encrypted-source">Create a clone of an encrypted source disk</a>.</p>]]></content>
+    <summary>When cloning an encrypted source disk using CMEK or CKE, the cloned disk must be encrypted with the same key. This ensures data security and integrity during the cloning process.</summary>
+    <title>Fixed: Disk cloning encryption requirement</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2025-12-10:feature:1</id>
     <published>2025-12-10T00:00:00+00:00</published>
     <updated>2025-12-10T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Generally available</strong>: The general purpose C4 machine series now supports the

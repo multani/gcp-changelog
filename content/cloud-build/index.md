@@ -2,7 +2,7 @@
 
 ## 2025-12-08
 
-### Changed
+### Change
 
 In build config files, the `mavenArtifacts` field now supports the
 `deployFolder` field. You can use the `deployFolder` field to upload all Maven

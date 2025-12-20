@@ -1,6 +1,24 @@
 {
   "name": "Compute Engine",
   "entries": {
+    "2025-12-19": [
+      {
+        "kind": "Feature",
+        "content": "**Generally available**: The G4 accelerator-optimized machine series supports\nthe flex-start provisioning model. When you specify the flex-start provisioning\nmodel for your G4 virtual machine (VM) instances, you receive a discount up to\n50% for vCPUs, memory, and GPUs. Flex-start is ideal for fault-tolerant or\ntemporary workloads that can benefit from lower costs by having a flexible start\ntime. For more information, see\n[About Flex-start VMs](https://docs.cloud.google.com/compute/docs/instances/about-flex-start-vms).",
+        "summary": {
+          "title": "G4 machine series now supports flex-start",
+          "summary": "The G4 machine series now supports the flex-start provisioning model, offering significant discounts on vCPUs, memory, and GPUs. This feature is ideal for fault-tolerant or temporary workloads that can tolerate flexible start times to achieve cost savings."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Public Preview**: The C4A VM family now offers a `c4a-highmem-96-metal` bare\nmetal instance. This machine type has 96 vCPUs and 768 GB of DDR5 memory,\n[Titanium I/O offload processing](https://cloud.google.com/titanium),\nand supports Hyperdisk Balanced, Hyperdisk Extreme, and Hyperdisk ML storage volumes.\nThis bare metal instance is offered\nin select [regions and zones](https://docs.cloud.google.com/compute/docs/bare-metal-instances#regions_zones).\nFor more information, see\n[C4A machine series](https://docs.cloud.google.com/compute/docs/general-purpose-machines#c4a_series).",
+        "summary": {
+          "title": "New High-Memory Bare Metal Instance Available",
+          "summary": "A new high-memory bare metal instance, the c4a-highmem-96-metal, is now in Public Preview. This instance provides 96 vCPUs, 768 GB of memory, and supports various Hyperdisk storage options. It is available in select regions and zones for demanding workloads."
+        }
+      }
+    ],
     "2025-12-17": [
       {
         "kind": "Feature",
@@ -50,6 +68,14 @@
       }
     ],
     "2025-12-10": [
+      {
+        "kind": "Fixed",
+        "content": "If you clone a source disk that's encrypted with a customer-supplied encryption\nkey or customer-managed encryption key, you must use the same key to encrypt the\nclone.\n\nFor more information, see [Create a clone of an encrypted source disk](https://docs.cloud.google.com/compute/docs/disks/clone-duplicate-disks#encrypted-source).",
+        "summary": {
+          "title": "Disk cloning encryption requirement",
+          "summary": "When cloning an encrypted source disk using CMEK or CKE, the cloned disk must be encrypted with the same key. This ensures data security and integrity during the cloning process."
+        }
+      },
       {
         "kind": "Feature",
         "content": "**Generally available**: The general purpose C4 machine series now supports the\nfollowing machine types on Intel's Xeon 6 processor (Granite Rapids):\n\n* `c4-standard-288-lssd-metal`\n* `c4-highmem-288-lssd-metal`\n\nTo learn more, see the [C4 machine series](https://cloud.google.com/compute/docs/general-purpose-machines#c4_series).\n\nFor more information, see\n[Machine types that automatically attach Local SSD disks](https://cloud.google.com/compute/docs/disks/local-ssd#lssd_disks_fixed)\nand\n[Bare metal instances on Compute Engine](https://cloud.google.com/compute/docs/instances/bare-metal-instances).",

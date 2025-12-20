@@ -1,5 +1,16 @@
 # Vertex AI Workbench
 
+## 2025-12-12
+
+### Feature
+
+* The following features are now [generally available (GA)](https://cloud.google.com/products#product-launch-stages):
+
+  + [Create new Vertex AI Workbench instances](https://docs.cloud.google.com/vertex-ai/docs/workbench/instances/create#create) with JupyterLab 4+.
+  + [Create an instance with managed user credential access.](https://docs.cloud.google.com/vertex-ai/docs/workbench/instances/create-euc-instance)
+* Using post-startup scripts for new instances with user credential access is now available in private GA. For information about access to this release, see the [access request page](https://docs.google.com/forms/d/e/1FAIpQLSdzNZUFsRRbB0KaMCObGUYzIo6lK3X2tO7JZOm_DZrUhBYw5Q/viewform). For more information, see [Create instances with post-startup scripts](https://docs.cloud.google.com/vertex-ai/docs/workbench/instances/create-euc-instance#post-startup-scripts).
+
+---
 ## 2025-12-10
 
 ### Feature

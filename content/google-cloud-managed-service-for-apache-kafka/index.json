@@ -1,13 +1,23 @@
 {
   "name": "Google Cloud Managed Service for Apache Kafka",
   "entries": {
+    "2025-12-10": [
+      {
+        "kind": "Feature",
+        "content": "Using `gcloud` or the REST API, you can now view the following\ninformation about a Managed Service for Apache Kafka cluster:\n\n* Broker node IDs and indexes\n* The zones where brokers are located\n* The Kafka version that the cluster is running\n\nFor more information, see\n[View a Kafka cluster](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/view-cluster).",
+        "summary": {
+          "title": "View Kafka cluster details",
+          "summary": "You can now view broker node IDs, locations, and Kafka versions for your Managed Service for Apache Kafka clusters using `gcloud` or the REST API. This provides greater visibility into your cluster's configuration."
+        }
+      }
+    ],
     "2025-12-08": [
       {
-        "kind": "Changed",
+        "kind": "Change",
         "content": "Kafka Connect cluster workers can now reach any endpoint that is accessible from\nthe worker (primary) subnetwork. Previously, to extend worker connectivity to\nother subnets within the same VPC network, you had to specify\nthese subnets in the cluster configuration. The `additionalSubnets` field is now\nignored, and this configuration setting has been removed from the\nGoogle Cloud console. For more information, see\n[Worker (primary) subnet](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/connect-cluster/create-connect-cluster#worker-subnet).",
         "summary": {
-          "title": "Kafka Connect workers now have broader network access",
-          "summary": "Kafka Connect cluster workers can now access any endpoint from the primary subnetwork, eliminating the need to specify additional subnets in the cluster configuration. The `additionalSubnets` field has been removed and is no longer used."
+          "title": "Kafka Connect network access expanded",
+          "summary": "Kafka Connect workers can now access any endpoint from their primary subnetwork, simplifying network configuration. Previously, you needed to explicitly list additional subnets, but this is no longer required and the configuration option has been removed."
         }
       },
       {

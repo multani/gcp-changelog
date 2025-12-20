@@ -1,5 +1,32 @@
 # Guest Environment
 
+## 2025-12-18
+
+### Fixed
+
+Version `20251218.00` of the [guest agent](compute/docs/images/guest-agent) is
+now available for Windows only. This version includes the following fixes:
+
+* Fixes a crash loop in VM extensions due to a race condition where the guest
+  agent manager service can sometimes try to connect to the extension before
+  it is able to create and bind to its unix socket.
+* Fixes an issue where the core plugin is not creating required registry keys
+  before attempting to write to them.
+
+---
+## 2025-12-11
+
+### Feature
+
+Version `20251209.00` of the guest agent, which re-introduces the plugin-based
+architecture to Windows, is now available.
+
+For more information about the plugin-based architecture, see
+[Guest agent](https://cloud.google.com/compute/docs/images/guest-agent).
+
+The plugin-based architecture for Windows was previously rolled back due to a bug that prevented the correct setup of IP alias routes when used with the WSFC module, see [October 21, 2025 release notes](https://docs.cloud.google.com/compute/docs/images/guest-environment/release-notes#October_21_2025).
+
+---
 ## 2025-12-08
 
 ### Fixed

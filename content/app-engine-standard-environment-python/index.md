@@ -1,5 +1,12 @@
 # App Engine standard environment Python
 
+## 2025-12-19
+
+### Feature
+
+Support for [Python 3.14 runtime](https://docs.cloud.google.com/appengine/docs/standard/python3/runtime) is in [General Availability](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2025-11-12
 
 ### Feature

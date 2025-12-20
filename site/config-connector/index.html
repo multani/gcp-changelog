@@ -257,6 +257,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Apigee monetization <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../apigee-monetization/" class="dropdown-item">Apigee Monetization</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Apigee ui <b class="caret"></b>
                         </a>
 
@@ -2223,7 +2235,7 @@
 <h2 id="2025-12-04">2025-12-04</h2>
 <h3 id="announcement">Announcement</h3>
 <p>Config Connector version 1.140.0 is now available.</p>
-<h3 id="changed">Changed</h3>
+<h3 id="change">Change</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
 <ul>
 <li><code>AssuredWorkloadsWorkload</code></li>
@@ -2231,7 +2243,7 @@
 <li><code>ConfigDeliveryResourceBundle</code></li>
 <li>Manage Config Delivery resource bundles for Config Sync.</li>
 </ul>
-<h3 id="changed_1">Changed</h3>
+<h3 id="change_1">Change</h3>
 <p>Reconciliation Improvements:</p>
 <ul>
 <li>Integrated Multi-Cluster Leader Election for improved reliability in multi-cluster setups.</li>
@@ -2266,7 +2278,7 @@
 <h2 id="2025-11-20">2025-11-20</h2>
 <h3 id="announcement_1">Announcement</h3>
 <p>Config Connector version 1.139.0 is now available.</p>
-<h3 id="changed_2">Changed</h3>
+<h3 id="change_2">Change</h3>
 <p>Reconciliation Improvements:</p>
 <ul>
 <li><code>IAM partial policy management</code></li>
@@ -2283,7 +2295,7 @@
 <li><code>SQLInstance</code>: Fixed an issue where empty <code>maintenanceVersion</code> patches were sent. The <code>settings</code> and <code>maintenanceVersion</code> fields are now unmanaged.</li>
 <li><code>FirestoreDatabase</code>: Fixed boolean value exports.</li>
 </ul>
-<h3 id="changed_3">Changed</h3>
+<h3 id="change_3">Change</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
 <ul>
 <li><code>FirestoreField</code></li>
@@ -2311,7 +2323,7 @@
 <li><code>FirestoreBackupSchedule</code></li>
 <li><code>FirestoreDocument</code></li>
 </ul>
-<h3 id="changed_4">Changed</h3>
+<h3 id="changed">Changed</h3>
 <p>Reconciliation Improvements:</p>
 <ul>
 <li>Improved Normalization logic for <code>OrgPolicy</code>, <code>RunJob</code>, <code>TagsTagBinding</code>, and <code>VertexAIIndex</code> resources.</li>
@@ -2327,7 +2339,7 @@
 <li><code>BackupDRBackupPlan</code>: Added <code>spec.backupConfig.retentionPeriodDays</code> and <code>spec.backupConfig.backupWindow</code>.</li>
 <li><code>MemorystoreInstance</code>: Added support for <code>MEMCACHE</code> and <code>REDIS</code> instance types.</li>
 </ul>
-<h3 id="changed_5">Changed</h3>
+<h3 id="changed_1">Changed</h3>
 <p>Reconciliation Improvements:</p>
 <ul>
 <li>Enabled opt-in for IAM partial policy management.</li>
@@ -2351,12 +2363,12 @@
 <li>Fixed an issue with bad labels in tests.</li>
 <li>Fixed an issue with <code>etag</code> in direct reconciliation.</li>
 </ul>
-<h3 id="changed_6">Changed</h3>
+<h3 id="changed_2">Changed</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
 <ul>
 <li><code>BigtableMaterializedView</code></li>
 </ul>
-<h3 id="changed_7">Changed</h3>
+<h3 id="changed_3">Changed</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
 <ul>
 <li><code>DocumentAIProcessorVersion</code></li>
@@ -2381,7 +2393,7 @@
 </ul>
 <h3 id="announcement_4">Announcement</h3>
 <p>Config Connector version 1.136.1 is now available.</p>
-<h3 id="changed_8">Changed</h3>
+<h3 id="changed_4">Changed</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
 <ul>
 <li><a href="https://docs.cloud.google.com/config-connector/docs/reference/resource-docs/asset/assetfeed"><code>AssetFeed</code></a></li>
@@ -2399,7 +2411,7 @@
 <li>Added <code>spec.config.softwareConfig.webServerPluginsMode</code> field.</li>
 <li>Added <code>spec.config.softwareConfig.cloudDataLineageIntegration</code> field.</li>
 </ul>
-<h3 id="changed_9">Changed</h3>
+<h3 id="changed_5">Changed</h3>
 <p>Reconciliation Improvements:</p>
 <ul>
 <li>Introduced <a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/blob/master/docs/designs/stateful-reconciliation-with-cookie.md">Stateful Reconciliation for Direct Controllers</a>. With stateful reconciliation, the direct controller stores a hash of the last successfully applied <code>.spec</code> in the resource's <code>.status</code>. This provides a lightweight, GitOps-safe record when a user has modified the desired state of the resource.</li>
@@ -2418,13 +2430,13 @@
 <h2 id="2025-09-22">2025-09-22</h2>
 <h3 id="announcement_6">Announcement</h3>
 <p>Config Connector version 1.135.0 is now available.</p>
-<h3 id="changed_10">Changed</h3>
+<h3 id="changed_6">Changed</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
 <ul>
 <li><code>AssetSavedQuery</code></li>
 <li><code>PubSubSnapshot</code></li>
 </ul>
-<h3 id="changed_11">Changed</h3>
+<h3 id="changed_7">Changed</h3>
 <p>Modified Beta Reconciliation:
 We migrated the following resources from the Terraform-based or DCL-based controller to the new Direct Controller.</p>
 <ul>
@@ -2446,13 +2458,13 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 <h2 id="2025-09-03">2025-09-03</h2>
 <h3 id="announcement_7">Announcement</h3>
 <p>Config Connector version 1.134.0 is now available.</p>
-<h3 id="changed_12">Changed</h3>
+<h3 id="changed_8">Changed</h3>
 <p>Improved reconciliation by migrating the following resources from the Terraform-based or DCL-based controller to the new direct controller. These resources are migrated automatically and you no longer need to apply the <code>opt-in</code> annotation to enable the direct controller:</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/cloudidentity/cloudidentitygroup"><code>CloudIdentityGroup</code></a></li>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/cloudidentity/cloudidentitymembership"><code>CloudIdentityMembership</code></a></li>
 </ul>
-<h3 id="changed_13">Changed</h3>
+<h3 id="changed_9">Changed</h3>
 <p>New Fields:</p>
 <ul>
 <li><code>ContainerCluster</code>: DNS endpoint is supported in ContainerCluster.</li>
@@ -2479,12 +2491,12 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 <li><a href="https://cloud.google.com/config-connector/docs/reference/docs/reference/resource-docs/apphub/apphubapplication.md"><code>AppHubApplication</code></a></li>
 <li><code>StorageAnywhereCache</code></li>
 </ul>
-<h3 id="changed_14">Changed</h3>
+<h3 id="changed_10">Changed</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
 <ul>
 <li><code>BigtableLogicalView</code></li>
 </ul>
-<h3 id="changed_15">Changed</h3>
+<h3 id="changed_11">Changed</h3>
 <p>Reconciliation Improvements</p>
 <p>Added support for direct reconciliation to more resources, with opt-in behaviour. The API is backward compatible. The following resources now have direct reconciliation support</p>
 <ul>
@@ -2503,7 +2515,7 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 <h2 id="2025-07-14">2025-07-14</h2>
 <h3 id="announcement_9">Announcement</h3>
 <p>Config Connector version 1.132.1 is now available.</p>
-<h3 id="changed_16">Changed</h3>
+<h3 id="changed_12">Changed</h3>
 <p>Reconciliation Improvements:</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/spanner/spannerinstance">SpannerInstance</a></li>
@@ -2531,7 +2543,7 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/notebooks/notebookinstance"><code>VertexAINotebooksInstance</code></a></li>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/vertexai/vertexaimetadatastore"><code>VertexAIMetadataStore</code></a></li>
 </ul>
-<h3 id="changed_17">Changed</h3>
+<h3 id="changed_13">Changed</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
 <ul>
 <li><code>OrgPolicyPolicy</code></li>

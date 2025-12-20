@@ -34,9 +34,6 @@ The following features were added in 1.34.0-gke.566:
   configuration, and RBAC. The automated solution handles the entire
   lifecycle, making it simpler to scale applications based on the metrics that
   matter most to your business.
-* **GA**: Added new `ServiceCIDR` resources in your cluster. The Kubernetes
-  control plane uses these resources to manage the IP address ranges for your
-  Services automatically.
 * **Preview**: Added support for fast failover for the egress NAT gateway
   running in high availability. This feature improves both the reliability and
   throughput of egress traffic.
@@ -53,7 +50,7 @@ The following features were added in 1.34.0-gke.566:
   BGP](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/lb-bundled-bgp)
   on your version 1.34 or higher admin clusters.
 
-### Changed
+### Change
 
 The following functional changes were made in 1.34.0-gke.566:
 

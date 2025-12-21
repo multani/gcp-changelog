@@ -4,6 +4,20 @@
 
 ### Feature
 
+**Gemini Enterprise: New actions available for data stores in the unified view (Public preview)**
+
+New actions have been added for the following data stores:
+
+* [Box](https://docs.cloud.google.com/gemini/enterprise/docs/box)
+* [Confluence Cloud](https://docs.cloud.google.com/gemini/enterprise/docs/confluence-cloud)
+* [Microsoft Teams](https://docs.cloud.google.com/gemini/enterprise/docs/ms-teams)
+* [Jira Cloud](https://docs.cloud.google.com/gemini/enterprise/docs/jira-cloud)
+* [Microsoft Outlook](https://docs.cloud.google.com/gemini/enterprise/docs/ms-outlook)
+
+For a list of supported actions for these data stores, see [Supported actions](https://docs.cloud.google.com/gemini/enterprise/docs/connect-third-party-data-source#supported_actions).
+
+### Feature
+
 **Gemini Enterprise: Schedule agent executions for custom agents in Agent Designer (Preview)**
 
 You can configure your custom agents, created using the Agent Designer, to execute predefined instructions and prompts on a set schedule.
@@ -55,9 +69,9 @@ feature. For more information, see
 
 The new unified process for creating a data store enables you to create the data store and the associated actions in a single, streamlined flow. This functionality allows Gemini Enterprise to perform tasks directly within the connected application.
 
-The new **Actions** page shows you all the enabled actions for each data store. Actions are available in public preview and are enabled for Microsoft SharePoint, Microsoft Outlook, Microsoft OneDrive, Jira Cloud, Dropbox, and ServiceNow.
+The new **Actions** page shows you all the enabled actions for each data store. Actions are available in public preview and are enabled for Microsoft SharePoint, Microsoft Outlook, Microsoft OneDrive, Jira Cloud, Dropbox, and ServiceNow. For a list of supported actions for these data stores, see [Supported actions](https://docs.cloud.google.com/gemini/enterprise/docs/connect-third-party-data-source#supported_actions).
 
-This launch includes support for the following data stores. Check the data store documentation pages for a list of supported actions.
+This launch includes support for the following data stores:
 
 **Generally Available**
 
@@ -76,8 +90,6 @@ This launch includes support for the following data stores. Check the data store
 * [Microsoft Teams](https://docs.cloud.google.com/gemini/enterprise/docs/ms-teams)
 * [Dropbox](https://docs.cloud.google.com/gemini/enterprise/docs/dropbox)
 * [ServiceNow](https://docs.cloud.google.com/gemini/enterprise/docs/servicenow)
-
-**Note:** To use the unified view, your Google Cloud project must be on the allowlist.
 
 ---
 ## 2025-12-11

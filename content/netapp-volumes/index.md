@@ -9,6 +9,12 @@ backup in allow-listed General Availability (GA). This feature is available for
 Standard, Premium, and Extreme service levels. For more information, see
 [Backup encryption with CMEK](https://docs.cloud.google.com/netapp/volumes/docs/protect-data/about-backups#backup_encryption_with_cmek).
 
+### Feature
+
+Google Cloud NetApp Volumes supports prepopulation and write-back for FlexCache.
+For more information, see [Cache prepopulation](https://docs.cloud.google.com/netapp/volumes/docs/configure-and-use/volumes/cache-ontap-volumes/overview#cache_prepopulation)
+and [Write-back](https://docs.cloud.google.com/netapp/volumes/docs/configure-and-use/volumes/cache-ontap-volumes/overview#write-back).
+
 ---
 ## 2025-11-21
 

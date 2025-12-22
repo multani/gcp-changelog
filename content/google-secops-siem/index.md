@@ -1,5 +1,22 @@
 # Google SecOps SIEM
 
+## 2025-12-18
+
+### Announcement
+
+**Understand how to view your billed ingestion volume**
+
+A new document is available that helps you understand your billed ingestion volume. The document provides instructions on how to view and monitor the ingestion volume for the various tenants that you manage.
+For more information, see [View your billed ingestion volume](https://docs.cloud.google.com/chronicle/docs/ingestion/view-billed-ingestion-volume).
+
+### Announcement
+
+**Understand how to view your billed ingestion volume**
+
+A new document is available that helps you understand your billed ingestion volume. The document provides instructions on how to view and monitor the ingestion volume for the various tenants that you manage.
+For more information, see [View your billed ingestion volume](https://docs.cloud.google.com/chronicle/docs/ingestion/view-billed-ingestion-volume).
+
+---
 ## 2025-12-17
 
 ### Announcement

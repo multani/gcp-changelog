@@ -1,5 +1,52 @@
 # Google SecOps Marketplace
 
+## 2025-12-17
+
+### Change
+
+**Cofense Triage**: Version 16.0
+
+* Added the ability to disable the overflow mechanism in the following
+  connector:
+
+  + **Cofense Triage - Reports Connector**
+
+### Change
+
+**Netskope**: Version 13.0
+
+* **Integration**: Updated the dependencies to include the Netscope SDK library.
+
+### Change
+
+**Siemplify**: Version 97.0
+
+* Extended the capabilities of the following action:
+
+  + **Assign Case**
+* Added the ability to add multiple tags using a delimiter to the following
+  action:
+
+  + **Case Tag**
+* Added a JSON result to the following action:
+
+  + **Create Entity**
+
+### Change
+
+**Splunk**: Version 60.0
+
+* Added support for the latest ES version to the following connector:
+
+  + **Splunk Notable Events Connector**
+
+### Change
+
+**AWS WAF**: Version 8.0
+
+* **Integration**: Updated the authentication logic.
+
+---
 ## 2025-12-10
 
 ### Feature

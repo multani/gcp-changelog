@@ -1,5 +1,26 @@
 # Backup and DR
 
+## 2025-12-22
+
+### Feature
+
+Enhanced performance for restore and clone of VMware VMs.
+
+Expanded Linux CBT support for new kernels on RHEL 8 and 9.
+
+### Security
+
+Addressed multiple OpenSSH vulnerabilities, including CVE-2025-26465 and CVE-2025-26466.
+
+### Fixed
+
+Resolved issues with DB2 migration scripts and various SAP HANA backup failures, including differential and log backups.
+
+Improved system stability and diagnostics by enhancing logging, adding log rotation, and correcting unit reporting in dashboards.
+
+Corrected the data copy reporting for Persistent Disk (PD) based backups, ensuring it accurately reflects zero data copied.
+
+---
 ## 2025-12-17
 
 ### Feature

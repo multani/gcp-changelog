@@ -1,5 +1,20 @@
 # Cloud Composer
 
+## 2025-12-23
+
+### Issue
+
+Environments with Cloud Composer 2 versions 2.16.0 and 2.16.1 might experience
+a [known issue](https://docs.cloud.google.com/composer/docs/composer-2/known-issues#missing-data-points)
+with the reporting of metrics. You can observe a few skipped data points in the
+reported metrics and see error messages about the airflow-monitoring pod
+restarts in the environment logs.
+
+This issue doesn't affect the environment's functionality. The environment is
+still operational and the environment health and monitoring information is
+reported correctly. You can ignore the error messages.
+
+---
 ## 2025-12-17
 
 ### Feature

@@ -2232,6 +2232,17 @@
 
 
 <h1 id="cloud-composer">Cloud Composer</h1>
+<h2 id="2025-12-23">2025-12-23</h2>
+<h3 id="issue">Issue</h3>
+<p>Environments with Cloud Composer 2 versions 2.16.0 and 2.16.1 might experience
+a <a href="https://docs.cloud.google.com/composer/docs/composer-2/known-issues#missing-data-points">known issue</a>
+with the reporting of metrics. You can observe a few skipped data points in the
+reported metrics and see error messages about the airflow-monitoring pod
+restarts in the environment logs.</p>
+<p>This issue doesn't affect the environment's functionality. The environment is
+still operational and the environment health and monitoring information is
+reported correctly. You can ignore the error messages.</p>
+<hr />
 <h2 id="2025-12-17">2025-12-17</h2>
 <h3 id="feature">Feature</h3>
 <p><strong>Extra Large environments</strong> are now generally available (GA) in
@@ -2350,7 +2361,7 @@ December 4, 2025 to January 2, 2026. For more information, see
 <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">Maintenance exclusions</a>.</p>
 <hr />
 <h2 id="2025-11-24">2025-11-24</h2>
-<h3 id="issue">Issue</h3>
+<h3 id="issue_1">Issue</h3>
 <p>We discovered an issue that might impact the reporting of metrics in the
 following recently released Cloud Composer versions:</p>
 <ul>
@@ -2547,7 +2558,7 @@ to version 17.2.0 in Cloud Composer 2 images and Cloud Composer 3 builds.</p>
 <p>For more information about changes, see the
 <a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html">apache-airflow-providers-google changelog</a> from version 17.1.0 to
 version 17.2.0.</p>
-<h3 id="issue_1">Issue</h3>
+<h3 id="issue_2">Issue</h3>
 <p><em>(Airflow 2.10.5)</em> CloudComposerDAGRunSensor is broken in the
 <code>apache-airflow-providers-google</code> package version 17.2.0. This package is used
 by Cloud Composer versions and builds with Airflow 2.10.5 available in this
@@ -2946,6 +2957,9 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-composer">Cloud Composer</a></li>
+          <li class="nav-item">
+            <a href="#2025-12-23" class="nav-link">2025-12-23</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-12-17" class="nav-link">2025-12-17</a>
           </li>

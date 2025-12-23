@@ -1,5 +1,21 @@
 # Gemini Enterprise
 
+## 2025-12-23
+
+### Feature
+
+**Gemini Enterprise: Manage actions using the updated flow (Public preview)**
+
+Use the new capabilities on the **Actions** page to:
+
+* Add new actions skipped during the data store creation process.
+* Enable or disable the existing actions.
+* Re-authenticate actions and verify authentication parameters.
+
+For more information, see [View and manage
+actions](https://docs.cloud.google.com/gemini/enterprise/docs/manage-actions).
+
+---
 ## 2025-12-19
 
 ### Feature

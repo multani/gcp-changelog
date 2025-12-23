@@ -1,5 +1,12 @@
 # Cloud Run
 
+## 2025-12-22
+
+### Feature
+
+Support for [Java 25 runtime](https://docs.cloud.google.com/run/docs/runtime-support#java) is in [General Availability](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-12-19
 
 ### Feature

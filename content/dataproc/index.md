@@ -1,5 +1,16 @@
 # Dataproc
 
+## 2025-12-20
+
+### Breaking
+
+The following **Dataproc on Compute Engine** subminor image versions,
+released on [December 05, 2025](https://docs.cloud.google.com/dataproc/docs/release-notes#December_05_2025), are now **blocklisted**:
+
+* 2.2.72-debian12, 2.2.72-ubuntu22, 2.2.72-ubuntu22-arm, 2.2.72-rocky9
+* 2.3.19-debian12, 2.3.19-ubuntu22, 2.3.19-ubuntu22-arm, 2.3.19-ml-ubuntu22, 2.3.19-rocky9
+
+---
 ## 2025-12-05
 
 ### Feature
@@ -14,6 +25,10 @@ New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.goog
 * 2.1.104-debian11, 2.1.104-ubuntu20, 2.1.104-ubuntu20-arm, 2.1.104-rocky8
 * 2.2.72-debian12, 2.2.72-ubuntu22, 2.2.72-ubuntu22-arm, 2.2.72-rocky9
 * 2.3.19-debian12, 2.3.19-ubuntu22, 2.3.19-ubuntu22-arm, 2.3.19-ml-ubuntu22, 2.3.19-rocky9
+
+**Blocklist update:** The `2.2.72` and `2.3.19`
+subminor image versions were blocklisted on
+December 20, 2025.
 
 ---
 ## 2025-12-04

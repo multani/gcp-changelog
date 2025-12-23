@@ -4,6 +4,13 @@
 
 ### Feature
 
+The following models are available through Model Garden:
+
+* [FunctionGemma](https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/functiongemma)
+* [T5Gemma 2](https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/t5gemma)
+
+### Feature
+
 **Save and share prompts in Vertex AI Studio**: The prompt sharing feature no longer needs to be enabled. You can share prompts without asking your administrator to first enable the prompt sharing feature. For more information, see [Save and share prompts](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/prompt-sharing).
 
 ---

@@ -1,5 +1,19 @@
 # App Hub
 
+## 2025-12-22
+
+### Feature
+
+App Hub now lets you view extended metadata schemas. This feature helps you visualize rich, structured, and schema-driven information about your resources. For more details, see [View extended metadata schemas](https://docs.cloud.google.com/app-hub/docs/modify-app-hub-resources#view-schemas).
+
+---
+## 2025-12-19
+
+### Feature
+
+App Hub now offers a setup model for application management in single projects ([Preview](https://cloud.google.com/products#product-launch-stages)). App Hub discovers supported resources within a single project by configuring it as a standalone management project and attaching it to an application management boundary. For more information, see [Set up a single-project boundary](https://docs.cloud.google.com/app-hub/docs/set-up-app-hub-single-project).
+
+---
 ## 2025-12-18
 
 ### Feature

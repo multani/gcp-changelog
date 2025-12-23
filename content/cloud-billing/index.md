@@ -1,5 +1,19 @@
 # Cloud Billing
 
+## 2025-12-16
+
+### Feature
+
+**View granular cost data from Pub/Sub snapshot, subscription, and topic usage
+in Cloud Billing exports to BigQuery**
+
+You can now view granular Pub/Sub cost data in the Google Cloud Billing
+detailed export. Use the `resource.name` or `resource.global_name` field in the
+export to view and filter your detailed snapshot, subscription, and topic usage.
+
+[Review the schema of the Detailed cost data export](https://docs.cloud.google.com/billing/docs/how-to/export-data-bigquery-tables/detailed-usage).
+
+---
 ## 2025-10-30
 
 ### Feature

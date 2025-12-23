@@ -1,5 +1,14 @@
 # BigQuery
 
+## 2025-12-22
+
+### Feature
+
+The BigQuery Data Transfer Service can now [transfer data from PostgreSQL to
+BigQuery](https://docs.cloud.google.com/bigquery/docs/postgresql-transfer). This feature is [generally
+available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+---
 ## 2025-12-19
 
 ### Feature

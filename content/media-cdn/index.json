@@ -1,6 +1,16 @@
 {
   "name": "Media CDN",
   "entries": {
+    "2025-12-17": [
+      {
+        "kind": "Feature",
+        "content": "Media CDN no longer requires a `HEAD` request before fetching objects from\nyour origin. This enhancement streamlines content delivery, reduces overhead,\nand improves overall performance. See [origin requirements](https://docs.cloud.google.com/media-cdn/docs/caching#origin-requirements).\n\n**Note:** This feature is available globally, except in India for now. In India,\nMedia CDN continues to require both `HEAD` and `GET` requests.",
+        "summary": {
+          "title": "Origin fetch optimization",
+          "summary": "Media CDN now allows fetching objects directly from your origin without a prior HEAD request. This change streamlines content delivery and improves performance. This feature is available globally, excluding India where HEAD and GET requests are still required."
+        }
+      }
+    ],
     "2025-12-05": [
       {
         "kind": "Feature",

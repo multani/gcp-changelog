@@ -83,6 +83,20 @@ On December 19, 2025 we released an updated version of the Apigee hybrid softwar
 | **N/A** | **Security fixes for `apigee-udca`.**  This addresses the following vulnerabilities:  * [CVE-2025-61725](https://nvd.nist.gov/vuln/detail/CVE-2025-61725) * [CVE-2025-61723](https://nvd.nist.gov/vuln/detail/CVE-2025-61723) * [CVE-2025-58188](https://nvd.nist.gov/vuln/detail/CVE-2025-58188) * [CVE-2025-58187](https://nvd.nist.gov/vuln/detail/CVE-2025-58187) * [CVE-2025-47913](https://nvd.nist.gov/vuln/detail/CVE-2025-47913) |
 | **N/A** | **Security fixes for `apigee-watcher`.**  This addresses the following vulnerabilities:  * [CVE-2025-61723](https://nvd.nist.gov/vuln/detail/CVE-2025-61723) * [CVE-2025-58188](https://nvd.nist.gov/vuln/detail/CVE-2025-58188) * [CVE-2025-58187](https://nvd.nist.gov/vuln/detail/CVE-2025-58187) |
 
+### Feature
+
+**Seccomp Profiles**
+
+Apigee Hybrid now offers the capability to apply Seccomp Profiles to your runtime components, significantly enhancing the security posture of your deployment.
+
+This feature allows Apigee administrators and security teams to restrict the system calls (syscalls) a containerized process can make to the host's kernel. By limiting a container to only the necessary syscalls, you can:
+
+* Enhance Security: Mitigate the risk of container breakouts and privilege escalation.
+* Enforce Least Privilege: Ensure components only have access to the exact system calls required for their operation.
+* Meet Compliance: Provide a critical control for meeting stringent security compliance requirements.
+
+Seccomp profiles are not enabled by default. To enable the feature, see [Configure Seccomp profiles for pod security](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/configure-seccomp-profiles).
+
 ### Security
 
 #### Fixed since last minor release
@@ -136,20 +150,6 @@ On December 19, 2025 we released an updated version of the Apigee hybrid softwar
 | **378686709** | **The use of wildcards (\*) in Apigee proxy basepaths would conflict with other explicit basepaths, resulting in a 404 error.** To apply this fix, follow the procedure in [Known issue 378686709](https://docs.cloud.google.com/apigee/docs/release/known-issues#378686709). (Fixed in [v1.15.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1151) & [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143)) |
 | **375360455** | **Updated apigee-runtime drain timeout to 300s to fix connection termination issue during pod termination.** (Fixed in [v1.13.4](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1134)) |
 | **367815792** | **Two new Flow Variables: `app_group_app` and `app_group_name` have been added to VerifyApiKey and Access Token policy.** (Fixed in [v1.15.1](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1151) & [v1.14.3](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143)) |
-
-### Feature
-
-**Seccomp Profiles**
-
-Apigee Hybrid now offers the capability to apply Seccomp Profiles to your runtime components, significantly enhancing the security posture of your deployment.
-
-This feature allows Apigee administrators and security teams to restrict the system calls (syscalls) a containerized process can make to the host's kernel. By limiting a container to only the necessary syscalls, you can:
-
-* Enhance Security: Mitigate the risk of container breakouts and privilege escalation.
-* Enforce Least Privilege: Ensure components only have access to the exact system calls required for their operation.
-* Meet Compliance: Provide a critical control for meeting stringent security compliance requirements.
-
-Seccomp profiles are not enabled by default. To enable the feature, see [Configure Seccomp profiles for pod security](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/configure-Seccomp-profiles).
 
 ---
 ## 2025-10-12

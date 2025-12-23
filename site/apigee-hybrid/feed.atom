@@ -125,7 +125,26 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2025-12-19:security:6</id>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2025-12-19:feature:6</id>
+    <published>2025-12-19T00:00:00+00:00</published>
+    <updated>2025-12-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Seccomp Profiles</strong></p>
+<p>Apigee Hybrid now offers the capability to apply Seccomp Profiles to your runtime components, significantly enhancing the security posture of your deployment.</p>
+<p>This feature allows Apigee administrators and security teams to restrict the system calls (syscalls) a containerized process can make to the host's kernel. By limiting a container to only the necessary syscalls, you can:</p>
+<ul>
+<li>Enhance Security: Mitigate the risk of container breakouts and privilege escalation.</li>
+<li>Enforce Least Privilege: Ensure components only have access to the exact system calls required for their operation.</li>
+<li>Meet Compliance: Provide a critical control for meeting stringent security compliance requirements.</li>
+</ul>
+<p>Seccomp profiles are not enabled by default. To enable the feature, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/configure-seccomp-profiles">Configure Seccomp profiles for pod security</a>.</p>]]></content>
+    <summary>Apigee Hybrid now supports Seccomp profiles, allowing administrators to restrict system calls made by containerized processes. This feature enhances security by mitigating breakout risks and enforcing least privilege for improved compliance.</summary>
+    <title>Feature: Enhanced Container Security with Seccomp Profiles</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2025-12-19:security:7</id>
     <published>2025-12-19T00:00:00+00:00</published>
     <updated>2025-12-19T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<h4>Fixed since last minor release</h4>
@@ -158,7 +177,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2025-12-19:fixed:7</id>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2025-12-19:fixed:8</id>
     <published>2025-12-19T00:00:00+00:00</published>
     <updated>2025-12-19T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<h4>Fixed since last minor release</h4>
@@ -186,25 +205,6 @@
 | <strong>367815792</strong> | <strong>Two new Flow Variables: <code>app_group_app</code> and <code>app_group_name</code> have been added to VerifyApiKey and Access Token policy.</strong> (Fixed in <a href="https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1151">v1.15.1</a> &amp; <a href="https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1143">v1.14.3</a>) |</p>]]></content>
     <summary>Several issues have been resolved in the latest Apigee Hybrid releases, including incorrect monetization property requirements, script errors, and security enhancements. These updates also address problems with analytics metrics, log verbosity, and SAML signature verification. Additionally, fixes improve forward proxy compatibility, Cassandra-based replication, and Java Callout stability.</summary>
     <title>Fixed: Apigee Hybrid Fixes Released</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2025-12-19:feature:8</id>
-    <published>2025-12-19T00:00:00+00:00</published>
-    <updated>2025-12-19T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Seccomp Profiles</strong></p>
-<p>Apigee Hybrid now offers the capability to apply Seccomp Profiles to your runtime components, significantly enhancing the security posture of your deployment.</p>
-<p>This feature allows Apigee administrators and security teams to restrict the system calls (syscalls) a containerized process can make to the host's kernel. By limiting a container to only the necessary syscalls, you can:</p>
-<ul>
-<li>Enhance Security: Mitigate the risk of container breakouts and privilege escalation.</li>
-<li>Enforce Least Privilege: Ensure components only have access to the exact system calls required for their operation.</li>
-<li>Meet Compliance: Provide a critical control for meeting stringent security compliance requirements.</li>
-</ul>
-<p>Seccomp profiles are not enabled by default. To enable the feature, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/configure-Seccomp-profiles">Configure Seccomp profiles for pod security</a>.</p>]]></content>
-    <summary>Apigee Hybrid now supports Seccomp profiles, allowing administrators to restrict system calls made by containerized processes. This feature enhances security by mitigating breakout risks and enforcing least privilege, aiding in compliance. Seccomp profiles are not enabled by default and require configuration.</summary>
-    <title>Feature: Seccomp Profiles Enhance Apigee Hybrid Security</title>
   </entry>
   <entry>
     <author>

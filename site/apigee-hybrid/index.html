@@ -2392,6 +2392,16 @@
 </tr>
 </tbody>
 </table>
+<h3 id="feature_1">Feature</h3>
+<p><strong>Seccomp Profiles</strong></p>
+<p>Apigee Hybrid now offers the capability to apply Seccomp Profiles to your runtime components, significantly enhancing the security posture of your deployment.</p>
+<p>This feature allows Apigee administrators and security teams to restrict the system calls (syscalls) a containerized process can make to the host's kernel. By limiting a container to only the necessary syscalls, you can:</p>
+<ul>
+<li>Enhance Security: Mitigate the risk of container breakouts and privilege escalation.</li>
+<li>Enforce Least Privilege: Ensure components only have access to the exact system calls required for their operation.</li>
+<li>Meet Compliance: Provide a critical control for meeting stringent security compliance requirements.</li>
+</ul>
+<p>Seccomp profiles are not enabled by default. To enable the feature, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/configure-seccomp-profiles">Configure Seccomp profiles for pod security</a>.</p>
 <h3 id="security_1">Security</h3>
 <h4 id="fixed-since-last-minor-release">Fixed since last minor release</h4>
 <table>
@@ -2576,16 +2586,6 @@
 </tr>
 </tbody>
 </table>
-<h3 id="feature_1">Feature</h3>
-<p><strong>Seccomp Profiles</strong></p>
-<p>Apigee Hybrid now offers the capability to apply Seccomp Profiles to your runtime components, significantly enhancing the security posture of your deployment.</p>
-<p>This feature allows Apigee administrators and security teams to restrict the system calls (syscalls) a containerized process can make to the host's kernel. By limiting a container to only the necessary syscalls, you can:</p>
-<ul>
-<li>Enhance Security: Mitigate the risk of container breakouts and privilege escalation.</li>
-<li>Enforce Least Privilege: Ensure components only have access to the exact system calls required for their operation.</li>
-<li>Meet Compliance: Provide a critical control for meeting stringent security compliance requirements.</li>
-</ul>
-<p>Seccomp profiles are not enabled by default. To enable the feature, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/configure-Seccomp-profiles">Configure Seccomp profiles for pod security</a>.</p>
 <hr />
 <h2 id="2025-10-12">2025-10-12</h2>
 <h3 id="hybrid-v1151">hybrid v1.15.1</h3>

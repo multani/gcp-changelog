@@ -2,9 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Media CDN</title>
   <subtitle>Changelog for Google Cloud product: Media CDN</subtitle>
-  <updated>2025-12-05T00:00:00+00:00</updated>
+  <updated>2025-12-17T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:media-cdn</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/media-cdn/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:media-cdn:2025-12-17:feature:0</id>
+    <published>2025-12-17T00:00:00+00:00</published>
+    <updated>2025-12-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Media CDN no longer requires a <code>HEAD</code> request before fetching objects from
+your origin. This enhancement streamlines content delivery, reduces overhead,
+and improves overall performance. See <a href="https://docs.cloud.google.com/media-cdn/docs/caching#origin-requirements">origin requirements</a>.</p>
+<p><strong>Note:</strong> This feature is available globally, except in India for now. In India,
+Media CDN continues to require both <code>HEAD</code> and <code>GET</code> requests.</p>]]></content>
+    <summary>Media CDN now allows fetching objects directly from your origin without a prior HEAD request. This change streamlines content delivery and improves performance. This feature is available globally, excluding India where HEAD and GET requests are still required.</summary>
+    <title>Feature: Origin fetch optimization</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

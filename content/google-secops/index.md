@@ -1,5 +1,29 @@
 # Google SecOps
 
+## 2025-12-24
+
+### Announcement
+
+**Understand your Google SecOps billing components**
+
+A new document is available that helps you understand your Google Security Operations billing components. The document provides information about how to track your usage and the related cost.
+For more information, see [Understand your Google SecOps billing](https://docs.cloud.google.com/chronicle/docs/onboard/understand-billing).
+
+### Feature
+
+**ThreatConnect IOC V3 Connector**
+
+Google SecOps now supports the ingestion of Indicators of Compromise (IOCs) from ThreatConnect using the v3 REST API. This updated connector replaces the existing v2-based integration and introduces several enhancements:
+
+* **Advanced Filtering with TQL**: Use ThreatConnect Query Language (TQL) to perform highly targeted searches based on complex criteria like confidence scores, tags, or specific timeframes.
+* **Efficient Single-Call Data Ingestion**: Ingest complete indicator objects—including attributes, tags, and security labels—in a single API call to reduce overhead and improve performance.
+* **Synchronization Gaps**: Changes in ThreatConnect (for example, ThreatAssessmentScore, confidence, tags) are now replicated into the platform every 30 minutes.
+
+Data ingested through this connector is identified by the new log type `THREATCONNECT_IOC_V3`.
+
+For more information, see [Collect ThreatConnect IOC logs using the v3 API](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/threatconnect-ioc-v3).
+
+---
 ## 2025-12-18
 
 ### Announcement

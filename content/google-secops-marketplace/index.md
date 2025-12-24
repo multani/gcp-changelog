@@ -1,5 +1,45 @@
 # Google SecOps Marketplace
 
+## 2025-12-24
+
+### Feature
+
+New **OpenSearch** integration
+
+### Feature
+
+New **Proofpoint Cloud Threat Response** integration
+
+### Feature
+
+**Siemplify**: Version 98.0
+
+* The following new action has been added:
+
+  + **Export Case**
+
+### Change
+
+**Google Chronicle**: Version 71.0
+
+* Updated event processing and ontology mapping in the following connector:
+
+  + **Google Chronicle - Chronicle Alerts Connector**
+* Added support for returning raw logs related to UDM events to the following
+  actions:
+
+  + **Get Detection Details**
+  + **Execute UDM Search**
+
+### Change
+
+**Fortigate**: Version 17.0
+
+* Expanded the supported log filter in the following connector:
+
+  + **Fortigate - Threat Logs Connector**
+
+---
 ## 2025-12-17
 
 ### Change

@@ -1,5 +1,19 @@
 # Google Cloud Contact Center as a Service
 
+## 2025-12-23
+
+### Announcement
+
+**Web SDK version 2 will be shut down on June 26, 2026**
+
+On June 26, 2025, we announced the launch of [Web SDK version
+3](https://docs.cloud.google.com/contact-center/ccai-platform/docs/release-notes#June_26_2025). Starting on
+**June 26, 2026**, the web SDK v2 will no longer function. Be sure to [update
+your website](https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-upgrade) to use the
+web SDK v3 before that date to avoid breaking your integration with the web SDK.
+We are no longer adding new features to the web SDK v2.
+
+---
 ## 2025-12-16
 
 ### Announcement

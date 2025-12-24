@@ -1,6 +1,24 @@
 {
   "name": "Apigee X",
   "entries": {
+    "2025-12-23": [
+      {
+        "kind": "Announcement",
+        "content": "On December 23, 2025, we released an updated version of Apigee.\n\n**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.",
+        "summary": {
+          "title": "New Apigee version released",
+          "summary": "A new version of Apigee was released on December 23, 2025. The rollout may take several business days to complete across all zones. Your instances will have the latest features and fixes once the rollout is finished."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**New Apigee policies for LLM Token Management are now Generally Available (GA)**\n\nTwo new Apigee policies for managing Large Language Model (LLM) workloads are now Generally Available (GA). These policies provide fine-grained control and rate-limiting for AI application traffic as follows:\n\n* **LLMTokenQuota policy**\n  + This policy monitors and enforces limits on **LLM response token usage** to control overall LLM expenditure and resource allocation.\n  + It can be configured with `<CountOnly>` (placed in the response flow to track tokens consumed) or `<EnforceOnly>` (placed in the request flow to block calls if the quota is exceeded).\n  + If the quota is reached, Apigee returns an `HTTP 429` (Too Many Requests) status code.\n  + For more information, see [LLMTokenQuota Policy](https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/llm-token-quota-policy).\n* **PromptTokenLimit policy**\n  + This policy provides a token-based rate-limiting mechanism analogous to the SpikeArrest policy, specifically for the tokens consumed by the user's prompt message.\n  + It calculates the prompt's token count using the widely adopted `o200k_base` encoding technique.\n  + If the configured token rate limit is exceeded, the incoming request is blocked, returning an `HTTP 429` (Too Many Requests) status code.\n  + For more information, see [PromptTokenLimit policy](https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/prompt-token-limit-policy).\n\n**Related documents:**\n\n* [Get started with Apigee AI token policies](https://docs.cloud.google.com/apigee/docs/api-platform/tutorials/using-ai-token-policies)\n* [Rate-limiting](https://docs.cloud.google.com/apigee/docs/api-platform/develop/rate-limiting)\n* [Comparing rate-limiting policies](https://docs.cloud.google.com/apigee/docs/api-platform/develop/comparing-quota-and-spike-arrest-policies)\n* [Managing API products](https://docs.cloud.google.com/apigee/docs/api-platform/publish/create-api-products)\n* [LLMTokenQuota policy](https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/llm-token-quota-policy)\n* [PromptTokenLimit policy](https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/prompt-token-limit-policy)",
+        "summary": {
+          "title": "New Apigee Policies for LLM Token Management Now GA",
+          "summary": "Two new Apigee policies, LLMTokenQuota and PromptTokenLimit, are now Generally Available. These policies offer enhanced control and rate-limiting for AI traffic by managing LLM response token usage and prompt token limits, helping to control costs and prevent abuse."
+        }
+      }
+    ],
     "2025-12-10": [
       {
         "kind": "Announcement",

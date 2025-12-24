@@ -1,5 +1,40 @@
 # Apigee X
 
+## 2025-12-23
+
+### Announcement
+
+On December 23, 2025, we released an updated version of Apigee.
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+### Feature
+
+**New Apigee policies for LLM Token Management are now Generally Available (GA)**
+
+Two new Apigee policies for managing Large Language Model (LLM) workloads are now Generally Available (GA). These policies provide fine-grained control and rate-limiting for AI application traffic as follows:
+
+* **LLMTokenQuota policy**
+  + This policy monitors and enforces limits on **LLM response token usage** to control overall LLM expenditure and resource allocation.
+  + It can be configured with `<CountOnly>` (placed in the response flow to track tokens consumed) or `<EnforceOnly>` (placed in the request flow to block calls if the quota is exceeded).
+  + If the quota is reached, Apigee returns an `HTTP 429` (Too Many Requests) status code.
+  + For more information, see [LLMTokenQuota Policy](https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/llm-token-quota-policy).
+* **PromptTokenLimit policy**
+  + This policy provides a token-based rate-limiting mechanism analogous to the SpikeArrest policy, specifically for the tokens consumed by the user's prompt message.
+  + It calculates the prompt's token count using the widely adopted `o200k_base` encoding technique.
+  + If the configured token rate limit is exceeded, the incoming request is blocked, returning an `HTTP 429` (Too Many Requests) status code.
+  + For more information, see [PromptTokenLimit policy](https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/prompt-token-limit-policy).
+
+**Related documents:**
+
+* [Get started with Apigee AI token policies](https://docs.cloud.google.com/apigee/docs/api-platform/tutorials/using-ai-token-policies)
+* [Rate-limiting](https://docs.cloud.google.com/apigee/docs/api-platform/develop/rate-limiting)
+* [Comparing rate-limiting policies](https://docs.cloud.google.com/apigee/docs/api-platform/develop/comparing-quota-and-spike-arrest-policies)
+* [Managing API products](https://docs.cloud.google.com/apigee/docs/api-platform/publish/create-api-products)
+* [LLMTokenQuota policy](https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/llm-token-quota-policy)
+* [PromptTokenLimit policy](https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/prompt-token-limit-policy)
+
+---
 ## 2025-12-10
 
 ### Announcement

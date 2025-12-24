@@ -1,5 +1,30 @@
 # Looker Studio
 
+## 2025-12-23
+
+### Feature
+
+**Partner connection launch update**
+
+The following partner connectors have been added to the [Looker Studio Connector Gallery](https://lookerstudio.google.com/data):
+
+* [Walmart Connect (Search)](https://lookerstudio.google.com/c/u/0/datasources/create?connectorId=AKfycby_xocEYcq3ExlUWou1dYimI_GSmng_K3XLUe91QJfjCpJ4jyfPec0xwJiGidnD0qtK) By Supermetrics. Sources: Walmart
+* [Ecwid](https://lookerstudio.google.com/c/u/0/datasources/create?connectorId=AKfycbw63zvfWMvjRnbCWzndGoXDNQ8_YpZtw5buNpwR8axalHbnJWo4P8xTIYu0OYpdRpsR8g) By Supermetrics. Sources: Ecwid
+* [Bitrix24 BI](https://lookerstudio.google.com/c/u/0/datasources/create?connectorId=AKfycbzUoCZuMLzQ2-MsxxJdnFUtrEVgWN5UMRl6XT_MD8hc3Ixm9_lanhMZnPlYOrp7epGv) By Bitrix24. Sources: Bitrix24
+* [Zen AI - Google Ads](https://lookerstudio.google.com/c/u/0/datasources/create?connectorId=AKfycbxYFaFFq4gwsF40zBWaMB2oGnztTlBd8qDv5ecQp8uOIFUMMQgvhmP1jXehcVkSrOCn) By Zen AI. Sources: Google Adwords
+* [G2](https://lookerstudio.google.com/c/u/0/datasources/create?connectorId=AKfycbxy1wsBER4Su5hJG5L3LrfR-Kv8wCdiTvXb1-K3085pgW5qu0qKTwFDJxAgAU7eHwT7) By Dataslayer. Sources: G2
+* [TikTok Ads](https://lookerstudio.google.com/c/u/0/datasources/create?connectorId=AKfycbwkfb_SRAdkZz8dDnSBVEpHEJmSf9f_GQaKpKzvDkshTuTeMx0Nn5ITlW5dvKRyPNBD) By Pro Plugg. Sources: Tiktok
+* [Mentionlytics](https://lookerstudio.google.com/c/u/0/datasources/create?connectorId=AKfycbyKdcq8JKHWuduHxxpPavi6dK0-8cLiMIhBNPv98SA5GRhGJ1R0pfhoxbpeuapiugBg) By Mentionlytics Ltd. Sources: Mentionlytics
+* [Shopee](https://lookerstudio.google.com/c/u/0/datasources/create?connectorId=AKfycbwgGYEZgfEuYPWLi8aYFFTaVF1yrHrUOp-u19vM0lkWyc1pF64FKbvQvArxOA4VgqJ8kg) Ads By Supermetrics. Sources: Shopee
+* [Odoo Attendance AppiWorks](https://lookerstudio.google.com/c/u/0/datasources/create?connectorId=AKfycbx-MwMWtaKLhocCVMKckTw9dwBJPgFVpR3aTqgwlANycH9Bu5MsQ4mZpLGXpwWeAZ5S) By Jivrus Technologies. Sources: Odoo Attendance
+* [Squarespace Commerce](https://lookerstudio.google.com/c/u/0/datasources/create?connectorId=AKfycbyL6viOBhJKrz9pkjx9_LsJ27eHdxRxAEQ2OgR7zNRF0F0ZPFFoeVdOOB5o8mZgvxicVA) By Supermetrics. Sources: Squarespace
+* [Wix Commerce](https://lookerstudio.google.com/c/u/0/datasources/create?connectorId=AKfycbxjrbLfpLUFmx3a9mlubnGAVl67M_aKgaOTA72lJWVwav6E6sG5upg2vPVhyeBjL7QAag) By Supermetrics. Sources: Wix Site Data
+* [SISTRIX Toolbox Data](https://lookerstudio.google.com/c/u/0/datasources/create?connectorId=AKfycbxoeJCApl5PlFxpDkCzVh41SyM66ElBur4I-EOiO2o8lrw9QeGA1j8WnKJLeXf_khixtw) By SISTRIX GmbH. Sources: Sistrix Toolbox
+* [Sprinklr](https://lookerstudio.google.com/c/u/0/datasources/create?connectorId=AKfycbwsorYTwObAzde5dg7KRFKPcTlbqY4zZjEQO7PdDQaOdGOTeulZw4EN9dhy6te3KDC5iw) By Supermetrics. Sources: Sprinklr
+* [Facebook Insights](https://lookerstudio.google.com/c/u/0/datasources/create?connectorId=AKfycbwHuccCK6JlvMSaE5hRO6EuPHhcXwuHftRLnUqGPheZGLk3Mchxqf7jjH4cVpJIl73d) By Data House. Sources: Facebook Ads
+* [Bluesky Insights](https://lookerstudio.google.com/c/u/0/datasources/create?connectorId=AKfycby5rCuXgKeSR6HxhI4sfpCDKkMzhGUKsW4ojD-2K0lKNtTViRVHNs6dtGY6v_AEmNRA) By Digital Data School. Sources: Bluesky
+
+---
 ## 2025-12-11
 
 ### Feature

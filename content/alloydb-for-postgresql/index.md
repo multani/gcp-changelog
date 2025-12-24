@@ -1,5 +1,12 @@
 # AlloyDB for PostgreSQL
 
+## 2025-12-24
+
+### Change
+
+The extension `vector`, which includes `pgvector` functions and operators, is updated to version 0.8.1.
+
+---
 ## 2025-12-18
 
 ### Feature

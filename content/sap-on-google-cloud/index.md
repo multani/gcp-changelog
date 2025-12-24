@@ -1,5 +1,25 @@
 # SAP on Google Cloud
 
+## 2025-12-23
+
+### Change
+
+**Updated IpAddr2 resource configuration for HA clusters**
+
+To make the SAP HANA and SAP NetWeaver HA cluster configurations forward
+compatible with OS version updates, we recommend that you update the `IpAddr2`
+resource configuration to use `nic=lo` instead of `nic=eth0`.
+
+For updated guidance, see the HA cluster configuration for your scenario:
+
+* [HA scale-up cluster configuration guide for SAP HANA on RHEL](https://docs.cloud.google.com/sap/docs/sap-hana-ha-config-rhel)
+* [HA scale-up cluster configuration guide for SAP HANA on SLES](https://docs.cloud.google.com/sap/docs/sap-hana-ha-config-sles)
+* [HA scale-out cluster configuration guide for SAP HANA on SLES](https://docs.cloud.google.com/sap/docs/sap-hana-ha-scaleout-config-sles)
+* [HA scale-out cluster configuration guide for SAP HANA on RHEL](https://docs.cloud.google.com/sap/docs/sap-hana-ha-scaleout-config-rhel)
+* [HA cluster manual configuration guide for SAP NetWeaver on SLES](https://docs.cloud.google.com/sap/docs/netweaver-ha-config-sles)
+* [HA cluster manual configuration guide for SAP NetWeaver on RHEL](https://docs.cloud.google.com/sap/docs/netweaver-ha-config-rhel)
+
+---
 ## 2025-12-19
 
 ### Announcement

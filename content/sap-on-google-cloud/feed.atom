@@ -2,9 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: SAP on Google Cloud</title>
   <subtitle>Changelog for Google Cloud product: SAP on Google Cloud</subtitle>
-  <updated>2025-12-19T00:00:00+00:00</updated>
+  <updated>2025-12-23T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:sap-on-google-cloud</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/sap-on-google-cloud/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:sap-on-google-cloud:2025-12-23:change:0</id>
+    <published>2025-12-23T00:00:00+00:00</published>
+    <updated>2025-12-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Updated IpAddr2 resource configuration for HA clusters</strong></p>
+<p>To make the SAP HANA and SAP NetWeaver HA cluster configurations forward
+compatible with OS version updates, we recommend that you update the <code>IpAddr2</code>
+resource configuration to use <code>nic=lo</code> instead of <code>nic=eth0</code>.</p>
+<p>For updated guidance, see the HA cluster configuration for your scenario:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/sap/docs/sap-hana-ha-config-rhel">HA scale-up cluster configuration guide for SAP HANA on RHEL</a></li>
+<li><a href="https://docs.cloud.google.com/sap/docs/sap-hana-ha-config-sles">HA scale-up cluster configuration guide for SAP HANA on SLES</a></li>
+<li><a href="https://docs.cloud.google.com/sap/docs/sap-hana-ha-scaleout-config-sles">HA scale-out cluster configuration guide for SAP HANA on SLES</a></li>
+<li><a href="https://docs.cloud.google.com/sap/docs/sap-hana-ha-scaleout-config-rhel">HA scale-out cluster configuration guide for SAP HANA on RHEL</a></li>
+<li><a href="https://docs.cloud.google.com/sap/docs/netweaver-ha-config-sles">HA cluster manual configuration guide for SAP NetWeaver on SLES</a></li>
+<li><a href="https://docs.cloud.google.com/sap/docs/netweaver-ha-config-rhel">HA cluster manual configuration guide for SAP NetWeaver on RHEL</a></li>
+</ul>]]></content>
+    <summary>To ensure your SAP HANA and SAP NetWeaver HA clusters remain compatible with future OS updates, update the `IpAddr2` resource configuration. Change the `nic` parameter from `eth0` to `lo` for forward compatibility.</summary>
+    <title>Change: Update HA cluster IP configuration</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -2,9 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Config Connector</title>
   <subtitle>Changelog for Google Cloud product: Config Connector</subtitle>
-  <updated>2025-12-04T00:00:00+00:00</updated>
+  <updated>2025-12-19T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:config-connector</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/config-connector/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-12-19:announcement:0</id>
+    <published>2025-12-19T00:00:00+00:00</published>
+    <updated>2025-12-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.141.0 is now available.</p>]]></content>
+    <summary>Version 1.141.0 of Config Connector has been released. This update brings new features and improvements to the tool.</summary>
+    <title>Announcement: Config Connector 1.141.0 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-12-15:announcement:0</id>
+    <published>2025-12-15T00:00:00+00:00</published>
+    <updated>2025-12-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.140.2 is now available.</p>]]></content>
+    <summary>Version 1.140.2 of Config Connector has been released. This update brings the latest improvements and features to the tool.</summary>
+    <title>Announcement: Config Connector 1.140.2 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-12-15:fixed:1</id>
+    <published>2025-12-15T00:00:00+00:00</published>
+    <updated>2025-12-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed a bug where the IAMPolicy and IAMPartialPolicy controllers would alphabetize the members field within the resource spec and write it back. This behavior can conflict with intent-based reconciliation from GitOps systems such as Config Sync, causing a loop of updates and potentially exhausting IAM read quotas. This issue affected versions 1.140.0 and has now been patched in version 1.140.2.</li>
+</ul>]]></content>
+    <summary>A bug causing infinite loops in IAM policy reconciliation has been fixed. This issue, which affected specific versions, could lead to unnecessary updates and quota exhaustion. The patch is available in version 1.140.2.</summary>
+    <title>Fixed: IAM policy reconciliation fix</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,23 @@
 # Config Connector
 
+## 2025-12-19
+
+### Announcement
+
+Config Connector version 1.141.0 is now available.
+
+---
+## 2025-12-15
+
+### Announcement
+
+Config Connector version 1.140.2 is now available.
+
+### Fixed
+
+* Fixed a bug where the IAMPolicy and IAMPartialPolicy controllers would alphabetize the members field within the resource spec and write it back. This behavior can conflict with intent-based reconciliation from GitOps systems such as Config Sync, causing a loop of updates and potentially exhausting IAM read quotas. This issue affected versions 1.140.0 and has now been patched in version 1.140.2.
+
+---
 ## 2025-12-04
 
 ### Announcement

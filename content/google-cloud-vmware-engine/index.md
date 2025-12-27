@@ -1,5 +1,12 @@
 # Google Cloud VMware Engine
 
+## 2025-12-25
+
+### Announcement
+
+VMware Engine [`ve2` nodes](https://docs.cloud.google.com/vmware-engine/docs/concepts/node-types) are now available in the Milan, Italy (`europe-west8-b`) zone in the Milan, Italy, Europe region (`europe-west8`).
+
+---
 ## 2025-12-05
 
 ### Announcement

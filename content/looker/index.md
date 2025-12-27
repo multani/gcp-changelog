@@ -1,5 +1,12 @@
 # Looker
 
+## 2025-12-23
+
+### Feature
+
+Historical data cannot be accessed with the API Usage System Activity Explore for Looker instances that are running Looker 25.16 or later. Looker instances that are running Looker 25.16 or later must use the [API Usage Hourly System Activity Explore](https://docs.cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#api_usage_hourly).
+
+---
 ## 2025-12-03
 
 ### Other

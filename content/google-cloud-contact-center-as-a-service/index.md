@@ -1,5 +1,16 @@
 # Google Cloud Contact Center as a Service
 
+## 2025-12-26
+
+### Announcement
+
+**Google Cloud CCaaS 3.42.121 and 3.43.153 patches**
+
+These patches fix a security vulnerability that could expose customers'
+Personally Identifiable Information (PII). There is no change to the agent
+experience.
+
+---
 ## 2025-12-23
 
 ### Announcement

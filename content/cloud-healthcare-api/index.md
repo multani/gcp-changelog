@@ -1,5 +1,24 @@
 # Cloud Healthcare API
 
+## 2025-12-22
+
+### Feature
+
+* The Cloud Healthcare API now supports transcoding DICOM data with the
+  following transfer syntaxes:
+* `1.2.840.10008.1.2.1.99` (Deflated Explicit VR Little Endian)
+* `1.2.840.10008.1.2.4.51` (JPEG Extended)
+* `1.2.840.10008.1.2.4.80` (JPEG-LS Lossless)
+* `1.2.840.10008.1.2.4.81` (JPEG-LS Near-Lossless)
+* `1.2.840.10008.1.2.4.110` (JPEG XL Lossless)
+* `1.2.840.10008.1.2.4.111` (JPEG XL JPEG Recompression)
+* `1.2.840.10008.1.2.4.112` (JPEG XL)
+* `1.2.840.10008.1.2.4.201` (HTJ2K Lossless Only)
+* `1.2.840.10008.1.2.4.202` (HTJ2K Lossless Only with RPCL Options)
+* `1.2.840.10008.1.2.4.203` (HTJ2K)
+* `1.2.840.10008.1.2.8.1` (Deflated Image Frame Compression)
+
+---
 ## 2025-12-02
 
 ### Feature

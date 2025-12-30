@@ -1,5 +1,21 @@
 # Apigee X
 
+## 2025-12-29
+
+### Announcement
+
+On December 29th, 2025, we released an updated version of Apigee.
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+### Feature
+
+**The Apigee Extension Processor provisioning API is available**
+
+Apigee Extension Processor customers can now use the Extension Processor provisioning API to create traffic extensions.
+For more information, see [Get started with the Apigee Extension Processor](https://docs.cloud.google.com/apigee/docs/api-platform/service-extensions/extension-processor-quickstart#create-traffic-ext)
+
+---
 ## 2025-12-23
 
 ### Announcement

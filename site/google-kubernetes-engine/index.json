@@ -1,6 +1,40 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2025-12-29": [
+      {
+        "kind": "Announcement",
+        "content": "#### Kubernetes 1.35 is now available in the Rapid channel\n\nKubernetes 1.35 is now available in the Rapid channel. For more information about the content of Kubernetes 1.35, read the [Kubernetes 1.35 Release Notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#changelog-since-v1340) and Kubernetes [1.35 Release Blog](https://kubernetes.io/blog/2025/12/17/kubernetes-v1-35-release/).",
+        "summary": {
+          "title": "Kubernetes 1.35 Now Available",
+          "summary": "The latest version, Kubernetes 1.35, has been released and is accessible via the Rapid channel. Detailed information regarding the new features and changes can be found in the official release notes and blog post."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "#### Deprecated in 1.35\n\n* The `PreferClose` value for a [Kubernetes Service's](https://kubernetes.io/docs/concepts/services-networking/service/) `trafficDistribution` field is now deprecated in favor of the more explicit `PreferSameZone`.\n\n#### Removed in 1.35\n\n* Kubernetes has [deprecated cgroup v1](https://kubernetes.io/blog/2025/11/26/kubernetes-v1-35-sneak-peek/#cgroup-v1-support) support.\n* GKE is removing cgroup v1 support in 1.35. If you have specifically configured your node pools to use cgroup v1 then upgrades will be blocked until you configure cgroup v2. To migrate to cgroup v2, see [Migrate to cgroup v2](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/migrate-cgroupv2#migrate).",
+        "summary": {
+          "title": "Deprecated Features in 1.35",
+          "summary": "Several features are deprecated or removed in version 1.35. The `PreferClose` traffic distribution value is deprecated, and cgroup v1 support is being removed. Users are advised to migrate to cgroup v2 if currently using cgroup v1."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "#### Other changes in 1.35\n\n* **Windows containerd 2.1:** GKE Windows nodes will use containerd 2.1 in 1.35, upgraded from containerd 1.7 in GKE 1.34. Clusters containing Windows nodes will have auto-upgrades to 1.35 delayed until 1.34 EOL due to possible compatibility issues introduced in containerd 2.0. Check if you're using deprecated containerd features removed in 2.0 and migrate off of them, see [Migrate nodes to containerd 2](https://docs.cloud.google.com/kubernetes-engine/docs/deprecations/migrate-containerd-2#migrate). After all deprecated features are removed, manually upgrade your cluster to 1.35.",
+        "summary": {
+          "title": "Windows containerd upgrade in GKE 1.35",
+          "summary": "GKE 1.35 will upgrade Windows nodes to use containerd 2.1. Auto-upgrades will be delayed due to potential compatibility issues. Users should check for and migrate away from deprecated containerd features before manually upgrading."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "#### New features in 1.35\n\n* **In-place Pod Resize:** [In-place Pod Resize](https://kubernetes.io/docs/tasks/configure-pod-container/resize-container-resources/) is now GA. This feature allows Pod CPU and memory requests and limits to be modified in-place without Pod or container restart.\n* **Writable cgroups:** GKE [Writable cgroups](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/writable-cgroups) for containers is now GA. This feature allows workloads to manage resources for child processes using the Linux cgroups API, improving reliability for applications like [Ray](https://www.ray.io/).",
+        "summary": {
+          "title": "New Features in Kubernetes 1.35",
+          "summary": "Kubernetes 1.35 introduces two new features now generally available: In-place Pod Resize allows modification of Pod CPU and memory requests/limits without restarts, and Writable cgroups for containers enables workloads to manage child process resources via the Linux cgroups API."
+        }
+      }
+    ],
     "2025-12-19": [
       {
         "kind": "Feature",

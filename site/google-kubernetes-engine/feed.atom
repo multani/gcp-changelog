@@ -2,9 +2,69 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2025-12-19T00:00:00+00:00</updated>
+  <updated>2025-12-29T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-12-29:announcement:0</id>
+    <published>2025-12-29T00:00:00+00:00</published>
+    <updated>2025-12-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>Kubernetes 1.35 is now available in the Rapid channel</h4>
+<p>Kubernetes 1.35 is now available in the Rapid channel. For more information about the content of Kubernetes 1.35, read the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#changelog-since-v1340">Kubernetes 1.35 Release Notes</a> and Kubernetes <a href="https://kubernetes.io/blog/2025/12/17/kubernetes-v1-35-release/">1.35 Release Blog</a>.</p>]]></content>
+    <summary>The latest version, Kubernetes 1.35, has been released and is accessible via the Rapid channel. Detailed information regarding the new features and changes can be found in the official release notes and blog post.</summary>
+    <title>Announcement: Kubernetes 1.35 Now Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-12-29:deprecated:1</id>
+    <published>2025-12-29T00:00:00+00:00</published>
+    <updated>2025-12-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>Deprecated in 1.35</h4>
+<ul>
+<li>The <code>PreferClose</code> value for a <a href="https://kubernetes.io/docs/concepts/services-networking/service/">Kubernetes Service's</a> <code>trafficDistribution</code> field is now deprecated in favor of the more explicit <code>PreferSameZone</code>.</li>
+</ul>
+<h4>Removed in 1.35</h4>
+<ul>
+<li>Kubernetes has <a href="https://kubernetes.io/blog/2025/11/26/kubernetes-v1-35-sneak-peek/#cgroup-v1-support">deprecated cgroup v1</a> support.</li>
+<li>GKE is removing cgroup v1 support in 1.35. If you have specifically configured your node pools to use cgroup v1 then upgrades will be blocked until you configure cgroup v2. To migrate to cgroup v2, see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/migrate-cgroupv2#migrate">Migrate to cgroup v2</a>.</li>
+</ul>]]></content>
+    <summary>Several features are deprecated or removed in version 1.35. The `PreferClose` traffic distribution value is deprecated, and cgroup v1 support is being removed. Users are advised to migrate to cgroup v2 if currently using cgroup v1.</summary>
+    <title>Deprecated: Deprecated Features in 1.35</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-12-29:change:2</id>
+    <published>2025-12-29T00:00:00+00:00</published>
+    <updated>2025-12-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>Other changes in 1.35</h4>
+<ul>
+<li><strong>Windows containerd 2.1:</strong> GKE Windows nodes will use containerd 2.1 in 1.35, upgraded from containerd 1.7 in GKE 1.34. Clusters containing Windows nodes will have auto-upgrades to 1.35 delayed until 1.34 EOL due to possible compatibility issues introduced in containerd 2.0. Check if you're using deprecated containerd features removed in 2.0 and migrate off of them, see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/deprecations/migrate-containerd-2#migrate">Migrate nodes to containerd 2</a>. After all deprecated features are removed, manually upgrade your cluster to 1.35.</li>
+</ul>]]></content>
+    <summary>GKE 1.35 will upgrade Windows nodes to use containerd 2.1. Auto-upgrades will be delayed due to potential compatibility issues. Users should check for and migrate away from deprecated containerd features before manually upgrading.</summary>
+    <title>Change: Windows containerd upgrade in GKE 1.35</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2025-12-29:feature:3</id>
+    <published>2025-12-29T00:00:00+00:00</published>
+    <updated>2025-12-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>New features in 1.35</h4>
+<ul>
+<li><strong>In-place Pod Resize:</strong> <a href="https://kubernetes.io/docs/tasks/configure-pod-container/resize-container-resources/">In-place Pod Resize</a> is now GA. This feature allows Pod CPU and memory requests and limits to be modified in-place without Pod or container restart.</li>
+<li><strong>Writable cgroups:</strong> GKE <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/writable-cgroups">Writable cgroups</a> for containers is now GA. This feature allows workloads to manage resources for child processes using the Linux cgroups API, improving reliability for applications like <a href="https://www.ray.io/">Ray</a>.</li>
+</ul>]]></content>
+    <summary>Kubernetes 1.35 introduces two new features now generally available: In-place Pod Resize allows modification of Pod CPU and memory requests/limits without restarts, and Writable cgroups for containers enables workloads to manage child process resources via the Linux cgroups API.</summary>
+    <title>Feature: New Features in Kubernetes 1.35</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

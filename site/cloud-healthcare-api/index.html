@@ -2232,8 +2232,26 @@
 
 
 <h1 id="cloud-healthcare-api">Cloud Healthcare API</h1>
-<h2 id="2025-12-02">2025-12-02</h2>
+<h2 id="2025-12-22">2025-12-22</h2>
 <h3 id="feature">Feature</h3>
+<ul>
+<li>The Cloud Healthcare API now supports transcoding DICOM data with the
+  following transfer syntaxes:</li>
+<li><code>1.2.840.10008.1.2.1.99</code> (Deflated Explicit VR Little Endian)</li>
+<li><code>1.2.840.10008.1.2.4.51</code> (JPEG Extended)</li>
+<li><code>1.2.840.10008.1.2.4.80</code> (JPEG-LS Lossless)</li>
+<li><code>1.2.840.10008.1.2.4.81</code> (JPEG-LS Near-Lossless)</li>
+<li><code>1.2.840.10008.1.2.4.110</code> (JPEG XL Lossless)</li>
+<li><code>1.2.840.10008.1.2.4.111</code> (JPEG XL JPEG Recompression)</li>
+<li><code>1.2.840.10008.1.2.4.112</code> (JPEG XL)</li>
+<li><code>1.2.840.10008.1.2.4.201</code> (HTJ2K Lossless Only)</li>
+<li><code>1.2.840.10008.1.2.4.202</code> (HTJ2K Lossless Only with RPCL Options)</li>
+<li><code>1.2.840.10008.1.2.4.203</code> (HTJ2K)</li>
+<li><code>1.2.840.10008.1.2.8.1</code> (Deflated Image Frame Compression)</li>
+</ul>
+<hr />
+<h2 id="2025-12-02">2025-12-02</h2>
+<h3 id="feature_1">Feature</h3>
 <ul>
 <li>DICOM exports to BigQuery now support a new JSON schema option</li>
 <li>DICOM streaming to BigQuery now supports a new JSON schema option</li>
@@ -2242,7 +2260,7 @@
   see the <a href="https://cloud.google.com/healthcare-api/docs/reference/rest/v1/projects.locations.datasets.dicomStores#BigQueryDestination"><code>BigQueryDestination</code></a>
   field.</li>
 </ul>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <ul>
 <li>DICOM streaming to BigQuery using the new JSON schema now supports <a href="https://docs.cloud.google.com/bigquery/docs/change-data-capture">Change Data Capture</a></li>
 <li>For more information on enabling change data capture, see the
@@ -2251,31 +2269,17 @@
 </ul>
 <hr />
 <h2 id="2025-11-03">2025-11-03</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p><code>VersionedStorageSizeBytes</code> was added to the output of
 <a href="https://cloud.google.com/healthcare-api/docs/fhir-store-metrics"><code>GetFhirStoreMetrics</code></a>.</p>
 <hr />
 <h2 id="2025-10-25">2025-10-25</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <ul>
 <li>The Cloud Healthcare API is now available in the <code>me-central1</code> (Qatar) and <code>me-central2</code> (KSA) regions.</li>
 </ul>
 <hr />
 <h2 id="2025-10-23">2025-10-23</h2>
-<h3 id="feature_4">Feature</h3>
-<ul>
-<li>A new application has been added to the Cloud Console under "Healthcare",
-  called "DICOM Studio"</li>
-<li>This new application provides a web interface for exploring DICOM Stores
-  in the Cloud Healthcare API similar to "FHIR Viewer".</li>
-<li>Search and find studies, series, and instances in any DICOM Store using our DICOM Web API</li>
-<li>View studies, series and instance metadata</li>
-<li>Edit studies, series and instance metadata</li>
-<li>Perform CRUD operations (Delete) on studies, series and instances</li>
-<li>View studies, series and instance images via a transcoded image preview</li>
-</ul>
-<hr />
-<h2 id="2025-10-09">2025-10-09</h2>
 <h3 id="feature_5">Feature</h3>
 <ul>
 <li>A new application has been added to the Cloud Console under "Healthcare",
@@ -2289,8 +2293,22 @@
 <li>View studies, series and instance images via a transcoded image preview</li>
 </ul>
 <hr />
-<h2 id="2025-09-12">2025-09-12</h2>
+<h2 id="2025-10-09">2025-10-09</h2>
 <h3 id="feature_6">Feature</h3>
+<ul>
+<li>A new application has been added to the Cloud Console under "Healthcare",
+  called "DICOM Studio"</li>
+<li>This new application provides a web interface for exploring DICOM Stores
+  in the Cloud Healthcare API similar to "FHIR Viewer".</li>
+<li>Search and find studies, series, and instances in any DICOM Store using our DICOM Web API</li>
+<li>View studies, series and instance metadata</li>
+<li>Edit studies, series and instance metadata</li>
+<li>Perform CRUD operations (Delete) on studies, series and instances</li>
+<li>View studies, series and instance images via a transcoded image preview</li>
+</ul>
+<hr />
+<h2 id="2025-09-12">2025-09-12</h2>
+<h3 id="feature_7">Feature</h3>
 <ul>
 <li><code>Accept-Encoding</code> compression headers on DICOM frame requests that contain
   uncompressed pixel data (as defined by the DICOM transfer syntax) are now
@@ -2301,7 +2319,7 @@ outpaces compression speed, latency may slightly increase. Compression can be
 disabled by not including the header in these cases.</p>
 <hr />
 <h2 id="2025-08-26">2025-08-26</h2>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p><strong>Preview:</strong> Cloud Healthcare API has launched DICOM Updates and Patches. This
 allows customers to update their DICOM data in-place. For more information, see
 <a href="https://cloud.google.com/healthcare-api/docs/how-tos/dicom-update-patch">Update and patch DICOM studies, series, and instances</a>.</p>
@@ -2322,6 +2340,9 @@ on May 27, 2026. For more information, see
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-healthcare-api">Cloud Healthcare API</a></li>
+          <li class="nav-item">
+            <a href="#2025-12-22" class="nav-link">2025-12-22</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-12-02" class="nav-link">2025-12-02</a>
           </li>

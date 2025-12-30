@@ -1,5 +1,38 @@
 # Google Kubernetes Engine
 
+## 2025-12-29
+
+### Announcement
+
+#### Kubernetes 1.35 is now available in the Rapid channel
+
+Kubernetes 1.35 is now available in the Rapid channel. For more information about the content of Kubernetes 1.35, read the [Kubernetes 1.35 Release Notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#changelog-since-v1340) and Kubernetes [1.35 Release Blog](https://kubernetes.io/blog/2025/12/17/kubernetes-v1-35-release/).
+
+### Deprecated
+
+#### Deprecated in 1.35
+
+* The `PreferClose` value for a [Kubernetes Service's](https://kubernetes.io/docs/concepts/services-networking/service/) `trafficDistribution` field is now deprecated in favor of the more explicit `PreferSameZone`.
+
+#### Removed in 1.35
+
+* Kubernetes has [deprecated cgroup v1](https://kubernetes.io/blog/2025/11/26/kubernetes-v1-35-sneak-peek/#cgroup-v1-support) support.
+* GKE is removing cgroup v1 support in 1.35. If you have specifically configured your node pools to use cgroup v1 then upgrades will be blocked until you configure cgroup v2. To migrate to cgroup v2, see [Migrate to cgroup v2](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/migrate-cgroupv2#migrate).
+
+### Change
+
+#### Other changes in 1.35
+
+* **Windows containerd 2.1:** GKE Windows nodes will use containerd 2.1 in 1.35, upgraded from containerd 1.7 in GKE 1.34. Clusters containing Windows nodes will have auto-upgrades to 1.35 delayed until 1.34 EOL due to possible compatibility issues introduced in containerd 2.0. Check if you're using deprecated containerd features removed in 2.0 and migrate off of them, see [Migrate nodes to containerd 2](https://docs.cloud.google.com/kubernetes-engine/docs/deprecations/migrate-containerd-2#migrate). After all deprecated features are removed, manually upgrade your cluster to 1.35.
+
+### Feature
+
+#### New features in 1.35
+
+* **In-place Pod Resize:** [In-place Pod Resize](https://kubernetes.io/docs/tasks/configure-pod-container/resize-container-resources/) is now GA. This feature allows Pod CPU and memory requests and limits to be modified in-place without Pod or container restart.
+* **Writable cgroups:** GKE [Writable cgroups](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/writable-cgroups) for containers is now GA. This feature allows workloads to manage resources for child processes using the Linux cgroups API, improving reliability for applications like [Ray](https://www.ray.io/).
+
+---
 ## 2025-12-19
 
 ### Feature

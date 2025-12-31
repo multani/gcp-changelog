@@ -1,5 +1,13 @@
 # Access Transparency
 
+## 2025-12-22
+
+### Feature
+
+Backup and DR Service is generally available
+[(GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-12-01
 
 ### Feature

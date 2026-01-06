@@ -45,6 +45,7 @@
 - [Audit Manager](audit-manager/index.md)
 - [Backup and DR](backup-and-dr/index.md)
 - [Backup for GKE](backup-for-gke/index.md)
+- [Bare Metal Solution](bare-metal-solution/index.md)
 - [Batch](batch/index.md)
 - [BigQuery](bigquery/index.md)
 - [Bigtable](bigtable/index.md)

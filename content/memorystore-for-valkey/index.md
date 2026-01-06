@@ -4,9 +4,10 @@
 
 ### Feature
 
-Memorystore for Valkey supports [organization policy constraints](https://docs.cloud.google.com/memorystore/docs/valkey/about-cmek#org-policy). By using these constraints, you can enforce CMEK
-protection for your instances and limit which Cloud Key Management Service (KMS)
-keys you can use for this protection. This feature is [Generally Available](https://cloud.google.com/products#product-launch-stages).
+Memorystore for Valkey supports [organization policy constraints](https://docs.cloud.google.com/memorystore/docs/valkey/about-cmek#org-policy) for customer-managed encryption keys (CMEK). By using
+these constraints, you can enforce CMEK protection for your instances and limit
+which Cloud Key Management Service (KMS) keys you can use for this protection.
+This feature is [Generally Available](https://cloud.google.com/products#product-launch-stages).
 
 ---
 ## 2025-12-11

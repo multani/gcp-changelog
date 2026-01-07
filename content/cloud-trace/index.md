@@ -1,5 +1,19 @@
 # Cloud Trace
 
+## 2026-01-05
+
+### Feature
+
+You can now collect, view, and analyze multimodal prompts and responses from
+your agentic applications that use the LangGraph or Agent Development Kit (ADK)
+frameworks. This feature is in [Public Preview](https://cloud.google.com/products#product-launch-stages).
+
+To learn more, see the following documents:
+
+* [Collect and view multimodal prompts and responses](https://docs.cloud.google.com/trace/docs/collect-view-multimodal-prompts-responses)
+* [Instrument generative AI applications](https://docs.cloud.google.com/stackdriver/docs/instrumentation/ai-agent-overview)
+
+---
 ## 2025-12-15
 
 ### Feature

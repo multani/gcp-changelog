@@ -1,5 +1,12 @@
 # Agent Assist
 
+## 2026-01-05
+
+### Change
+
+Agent Assist offers a [best practices guide](https://docs.cloud.google.com/agent-assist/docs/summarization-autoeval-bp) for summarization automatic evaluation.
+
+---
 ## 2025-10-29
 
 ### Feature

@@ -1,5 +1,17 @@
 # Google SecOps
 
+## 2026-01-07
+
+### Change
+
+**Expanded capabilities for Gemini in SecOps**
+
+You can now use the Gemini assistant in Google SecOps to answer questions beyond the scope of security or the product. You can integrate the full power of Gemini (for example, general knowledge, coding, and data analysis) without switching tabs or leaving your workflow.
+
+For more information, see
+[Gemini in Google SecOps](https://docs.cloud.google.com/chronicle/docs/secops/gemini-chronicle).
+
+---
 ## 2025-12-24
 
 ### Announcement

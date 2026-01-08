@@ -1,5 +1,16 @@
 # Gemini Enterprise
 
+## 2026-01-07
+
+### Feature
+
+**Semantic search in sessions**
+
+Gemini Enterprise and Business have expanded search capabilities to include
+semantic similarity, which lets you find relevant content in your chat history
+based on meaning rather than just keywords.
+
+---
 ## 2025-12-29
 
 ### Feature

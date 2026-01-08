@@ -1,5 +1,15 @@
 # BigQuery
 
+## 2026-01-07
+
+### Feature
+
+You can now use the Google-developed, open source
+[Java Database Connectivity (JDBC) driver for BigQuery](https://docs.cloud.google.com/bigquery/docs/jdbc-for-bigquery)
+to connect your Java applications to BigQuery. This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-01-06
 
 ### Feature

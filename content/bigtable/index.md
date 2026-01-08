@@ -1,5 +1,16 @@
 # Bigtable
 
+## 2025-12-26
+
+### Feature
+
+Continuous materialized views support up to five continuous materialized views
+per table. This lets you create multiple asynchronous secondary indexes on a
+table or have a mix of precomputed aggregate views and asynchronous secondary
+indexes on the same base table. For more information, see
+[Continuous materialized views](https://docs.cloud.google.com/bigtable/docs/continuous-materialized-views).
+
+---
 ## 2025-12-12
 
 ### Feature

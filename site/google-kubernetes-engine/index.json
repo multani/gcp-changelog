@@ -1,6 +1,26 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2026-01-07": [
+      {
+        "kind": "Feature",
+        "content": "NodeLocal DNSCache is enabled by default on new Standard\nGKE clusters which are created running version 1.34.1-gke.3720000\nor later. NodeLocal DNSCache is a GKE add-on that improves DNS\nperformance by running a DNS cache directly on each cluster node as a DaemonSet.\nTo learn more, see [Set up NodeLocal\nDNSCache](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/nodelocal-dns-cache).",
+        "summary": {
+          "title": "NodeLocal DNSCache enabled on new GKE clusters",
+          "summary": "NodeLocal DNSCache is now enabled by default on new Standard GKE clusters version 1.34.1-gke.340000 and later. This feature enhances DNS performance by caching DNS lookups directly on cluster nodes. It runs as a DaemonSet, providing faster and more reliable DNS resolution for your workloads."
+        }
+      }
+    ],
+    "2026-01-06": [
+      {
+        "kind": "Fixed",
+        "content": "A fix is available for the [December 16, 2025](#December_16_2025) issue in which\nAutopilot nodes enter into a state where new system Pods and user Pods are\nunable to run due to NRI RunPodSandbox failures. For more details, including\ninstructions on how to confirm if you're affected by this, see [Pods unable to\nrun on a Node due to NRI RunPodSandbox failed](https://docs.cloud.google.com/kubernetes-engine/docs/troubleshooting/autopilot-clusters#nri-runpodsandbox-error).\n\nThe fix is available with GKE version 1.34.1-gke.3899000 and\nlater.",
+        "summary": {
+          "title": "Autopilot NRI RunPodSandbox failure fixed",
+          "summary": "A fix is now available for Autopilot nodes experiencing NRI RunPodSandbox failures, which prevented new system and user pods from running. This issue is resolved in GKE version 1.34.1-gke.3899000 and later. More details on the problem and how to check if you were affected are available in the documentation."
+        }
+      }
+    ],
     "2026-01-05": [
       {
         "kind": "Change",

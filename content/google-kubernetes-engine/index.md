@@ -1,5 +1,31 @@
 # Google Kubernetes Engine
 
+## 2026-01-07
+
+### Feature
+
+NodeLocal DNSCache is enabled by default on new Standard
+GKE clusters which are created running version 1.34.1-gke.3720000
+or later. NodeLocal DNSCache is a GKE add-on that improves DNS
+performance by running a DNS cache directly on each cluster node as a DaemonSet.
+To learn more, see [Set up NodeLocal
+DNSCache](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/nodelocal-dns-cache).
+
+---
+## 2026-01-06
+
+### Fixed
+
+A fix is available for the [December 16, 2025](#December_16_2025) issue in which
+Autopilot nodes enter into a state where new system Pods and user Pods are
+unable to run due to NRI RunPodSandbox failures. For more details, including
+instructions on how to confirm if you're affected by this, see [Pods unable to
+run on a Node due to NRI RunPodSandbox failed](https://docs.cloud.google.com/kubernetes-engine/docs/troubleshooting/autopilot-clusters#nri-runpodsandbox-error).
+
+The fix is available with GKE version 1.34.1-gke.3899000 and
+later.
+
+---
 ## 2026-01-05
 
 ### Change

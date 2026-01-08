@@ -1,5 +1,12 @@
 # Cloud Run functions
 
+## 2026-01-06
+
+### Feature
+
+You can now configure [Direct VPC egress for 2nd gen functions](https://docs.cloud.google.com/functions/docs/running/direct-vpc). This support is at the [Preview release level](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-12-22
 
 ### Feature

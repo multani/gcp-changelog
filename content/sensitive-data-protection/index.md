@@ -1,5 +1,25 @@
 # Sensitive Data Protection
 
+## 2026-01-05
+
+### Feature
+
+General infoType functionality and the following infoTypes are now available in all regions:
+
+* `CREDIT_CARD_DATA`
+* `DEMOGRAPHIC_DATA`
+* `DRIVERS_LICENSE_NUMBER`
+* `FINANCIAL_ID`
+* `GEOGRAPHIC_DATA`
+* `GOVERNMENT_ID`
+* `MEDICAL_DATA`
+* `MEDICAL_ID`
+* `SECURITY_DATA`
+* `TECHNICAL_ID`
+
+For more information about all built-in infoTypes, see the [InfoType detector reference](https://docs.cloud.google.com/dlp/docs/infotypes-reference).
+
+---
 ## 2025-12-15
 
 ### Feature

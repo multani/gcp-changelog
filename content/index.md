@@ -19,6 +19,7 @@
 - [Apigee Analytics](apigee-analytics/index.md)
 - [Apigee Integrated Portal](apigee-integrated-portal/index.md)
 - [Apigee Monetization](apigee-monetization/index.md)
+- [Apigee Operator for kubernetes](apigee-operator-for-kubernetes/index.md)
 - [Apigee UI](apigee-ui/index.md)
 - [Apigee X](apigee-x/index.md)
 - [Apigee hybrid](apigee-hybrid/index.md)

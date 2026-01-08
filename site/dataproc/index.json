@@ -1,6 +1,40 @@
 {
   "name": "Dataproc",
   "entries": {
+    "2026-01-06": [
+      {
+        "kind": "Change",
+        "content": "Removed use of deprecated Hadoop configuration properties `fs.default.name` and `yarn.resourcemanager.system-metrics-publisher.enabled`.",
+        "summary": {
+          "title": "Deprecated Hadoop properties removed",
+          "summary": "We have removed the use of deprecated Hadoop configuration properties, specifically `fs.default.name` and `yarn.resourcemanager.system-metrics-publisher.enabled`. This change ensures we are using current and supported configurations."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed the `spark.driver.extraClassPath` delimiter for the Jupyter SparkMonitor Listener.",
+        "summary": {
+          "title": "Spark Monitor Listener Fix",
+          "summary": "Resolved an issue with the Spark Monitor Listener's `spark.driver.extraClassPath` delimiter. This correction ensures proper functionality for users employing this feature."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added a new property `dataproc:pypi.repository` to customize the PyPI repository used for pip. The value can be a URL, or `google` to use a Google-hosted cache of PyPI, accessible without public internet connectivity. Starting in image version 3.1, `google` will be the default; to opt out and return to public PyPI, use the value `pypi`.",
+        "summary": {
+          "title": "Customize PyPI Repository for Pip",
+          "summary": "You can now specify a custom PyPI repository URL or use a Google-hosted cache for pip installations. Starting with image version 3.1, the Google-hosted cache is the default. To revert to the public PyPI, set the value to `pypi`."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions):\n\n* 2.0.156-debian10, 2.0.156-ubuntu18, 2.0.156-rocky8\n* 2.1.105-debian11, 2.1.105-ubuntu20, 2.1.105-ubuntu20-arm, 2.1.105-rocky8\n* 2.2.73-debian12, 2.2.73-ubuntu22, 2.2.73-ubuntu22-arm, 2.2.73-rocky9\n* 2.3.20-debian12, 2.3.20-ml-ubuntu22, 2.3.20-rocky9, 2.3.20-ubuntu22, 2.3.20-ubuntu22-arm",
+        "summary": {
+          "title": "Dataproc image version updates",
+          "summary": "New subminor image versions are now available for Dataproc on Compute Engine. These updates include the latest patches and improvements across various operating system versions to enhance cluster stability and performance."
+        }
+      }
+    ],
     "2025-12-22": [
       {
         "kind": "Announcement",

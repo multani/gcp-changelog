@@ -1,5 +1,16 @@
 # Google Cloud VMware Engine
 
+## 2026-01-06
+
+### Feature
+
+VMware Engine introduces enhancements to simplify using external NFS
+datastores. External NFS datastores let you scale storage independently of
+compute resources for your VMware workloads. You can use Filestore or
+Google Cloud NetApp Volumes as external NFS datastores for ESXi hosts in
+Google Cloud VMware Engine. For more information, see [NFS datastores overview](https://docs.cloud.google.com/vmware-engine/docs/vmware-ecosystem/concepts-nfs-datastores-overview).
+
+---
 ## 2025-12-25
 
 ### Announcement

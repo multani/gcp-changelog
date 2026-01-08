@@ -2,9 +2,59 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Dataproc</title>
   <subtitle>Changelog for Google Cloud product: Dataproc</subtitle>
-  <updated>2025-12-22T00:00:00+00:00</updated>
+  <updated>2026-01-06T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:dataproc</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/dataproc/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-01-06:change:0</id>
+    <published>2026-01-06T00:00:00+00:00</published>
+    <updated>2026-01-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Removed use of deprecated Hadoop configuration properties <code>fs.default.name</code> and <code>yarn.resourcemanager.system-metrics-publisher.enabled</code>.</p>]]></content>
+    <summary>We have removed the use of deprecated Hadoop configuration properties, specifically `fs.default.name` and `yarn.resourcemanager.system-metrics-publisher.enabled`. This change ensures we are using current and supported configurations.</summary>
+    <title>Change: Deprecated Hadoop properties removed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-01-06:fixed:1</id>
+    <published>2026-01-06T00:00:00+00:00</published>
+    <updated>2026-01-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed the <code>spark.driver.extraClassPath</code> delimiter for the Jupyter SparkMonitor Listener.</p>]]></content>
+    <summary>Resolved an issue with the Spark Monitor Listener's `spark.driver.extraClassPath` delimiter. This correction ensures proper functionality for users employing this feature.</summary>
+    <title>Fixed: Spark Monitor Listener Fix</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-01-06:feature:2</id>
+    <published>2026-01-06T00:00:00+00:00</published>
+    <updated>2026-01-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Added a new property <code>dataproc:pypi.repository</code> to customize the PyPI repository used for pip. The value can be a URL, or <code>google</code> to use a Google-hosted cache of PyPI, accessible without public internet connectivity. Starting in image version 3.1, <code>google</code> will be the default; to opt out and return to public PyPI, use the value <code>pypi</code>.</p>]]></content>
+    <summary>You can now specify a custom PyPI repository URL or use a Google-hosted cache for pip installations. Starting with image version 3.1, the Google-hosted cache is the default. To revert to the public PyPI, set the value to `pypi`.</summary>
+    <title>Feature: Customize PyPI Repository for Pip</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-01-06:announcement:3</id>
+    <published>2026-01-06T00:00:00+00:00</published>
+    <updated>2026-01-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions">Dataproc on Compute Engine subminor image versions</a>:</p>
+<ul>
+<li>2.0.156-debian10, 2.0.156-ubuntu18, 2.0.156-rocky8</li>
+<li>2.1.105-debian11, 2.1.105-ubuntu20, 2.1.105-ubuntu20-arm, 2.1.105-rocky8</li>
+<li>2.2.73-debian12, 2.2.73-ubuntu22, 2.2.73-ubuntu22-arm, 2.2.73-rocky9</li>
+<li>2.3.20-debian12, 2.3.20-ml-ubuntu22, 2.3.20-rocky9, 2.3.20-ubuntu22, 2.3.20-ubuntu22-arm</li>
+</ul>]]></content>
+    <summary>New subminor image versions are now available for Dataproc on Compute Engine. These updates include the latest patches and improvements across various operating system versions to enhance cluster stability and performance.</summary>
+    <title>Announcement: Dataproc image version updates</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

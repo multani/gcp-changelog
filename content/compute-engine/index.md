@@ -1,5 +1,16 @@
 # Compute Engine
 
+## 2026-01-07
+
+### Feature
+
+**Generally available**: You can view future resource availability before you
+create a future reservation request in calendar mode. This action helps increase
+the likelihood that Google Cloud approves your request. For more information,
+see
+[View resource future availability](https://docs.cloud.google.com/compute/docs/instances/create-future-reservations-calendar-mode#view-availability).
+
+---
 ## 2025-12-19
 
 ### Feature

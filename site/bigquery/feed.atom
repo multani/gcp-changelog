@@ -2,9 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: BigQuery</title>
   <subtitle>Changelog for Google Cloud product: BigQuery</subtitle>
-  <updated>2025-12-22T00:00:00+00:00</updated>
+  <updated>2026-01-06T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:bigquery</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/bigquery/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-01-06:feature:0</id>
+    <published>2026-01-06T00:00:00+00:00</published>
+    <updated>2026-01-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#create_external_table_statement"><code>CREATE EXTERNAL TABLE</code></a>
+and <a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/load-statements"><code>LOAD DATA</code></a>
+statements now support the following options:</p>
+<ul>
+<li><code>time_zone</code>: specify a time zone to use when loading data</li>
+<li><code>date_format</code>, <code>datetime_format</code>, <code>time_format</code>, and <code>timestamp_format</code>: define how date and time values are formatted in your source files</li>
+<li><code>null_markers</code>: define the strings that represent <code>NULL</code> values in CSV files.</li>
+<li><code>source_column_match</code>: specify how loaded columns are matched to the schema. You can match columns by position or by name.</li>
+</ul>
+<p>These features are <a href="https://cloud.google.com/products/#product-launch-stages">generally
+available</a> (GA).</p>]]></content>
+    <summary>BigQuery's CREATE EXTERNAL TABLE and LOAD DATA statements now support advanced options for handling time zones, date and time formats, null markers, and column matching. These features are now generally available, offering more flexibility and control over your data loading processes.</summary>
+    <title>Feature: New data loading options for BigQuery</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

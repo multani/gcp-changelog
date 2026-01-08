@@ -1,5 +1,22 @@
 # BigQuery
 
+## 2026-01-06
+
+### Feature
+
+The [`CREATE EXTERNAL TABLE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#create_external_table_statement)
+and [`LOAD DATA`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/load-statements)
+statements now support the following options:
+
+* `time_zone`: specify a time zone to use when loading data
+* `date_format`, `datetime_format`, `time_format`, and `timestamp_format`: define how date and time values are formatted in your source files
+* `null_markers`: define the strings that represent `NULL` values in CSV files.
+* `source_column_match`: specify how loaded columns are matched to the schema. You can match columns by position or by name.
+
+These features are [generally
+available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+---
 ## 2025-12-22
 
 ### Feature

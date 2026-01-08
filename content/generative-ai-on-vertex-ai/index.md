@@ -1,5 +1,15 @@
 # Generative AI on Vertex AI
 
+## 2026-01-06
+
+### Feature
+
+**GLM 4.7** is available as an experimental launch in Model Garden. This model
+is designed for core or vibe coding, tool use, and complex reasoning.
+GLM 4.7 is available as a managed API in Model Garden. To learn more, see
+[GLM 4.7](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/maas/zai-org/glm-47).
+
+---
 ## 2026-01-05
 
 ### Deprecated

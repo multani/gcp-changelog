@@ -1,5 +1,491 @@
 # Container Optimized OS
 
+## 2026-01-05
+
+### Change
+
+
+
+### cos-125-19216-104-89
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/d3f94ae8cf5edcf8f0b51e6d49a1715adc182c06 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.104.89/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-68208 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68317 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-66471 and CVE-2025-66418 in dev-python/urllib3.
+
+### Security
+
+Fixed CVE-2025-68173 in the Linux kernel.
+
+### Change
+
+Updated app-admin/sosreport to v4.10.1. Enabled containerd stack dump by default.
+
+### Security
+
+Fixed CVE-2025-68292 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68183 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40360 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40348 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40361 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68200 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68219 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68324 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68188 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68185 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68213 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68295 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-apps/dmidecode to v3.7.
+
+### Security
+
+Fixed CVE-2025-68171 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68191 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68178 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68214 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68293 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68242 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68199 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68325 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68231 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68186 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68241 in the Linux kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811475 -> 811504
+* Changed: net.ipv4.udp\_mem: 188034 250715 376068 -> 188034 250714 376068
+
+### Security
+
+Fixed CVE-2025-68229 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40359 in the Linux kernel.
+
+### Fixed
+
+Upgraded net-misc/socat to v1.8.1.0.
+
+### Security
+
+Fixed CVE-2025-40346 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68224 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68321 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40353 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68198 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68313 in the Linux kernel.
+
+### Change
+
+
+
+### cos-117-18613-439-81
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/c3c868d27f79927ba002a59d72ec102f9cfff5e9 ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.439.81/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-68178 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68191 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68219 in the Linux kernel.
+
+### Change
+
+Updated app-admin/sosreport to v4.10.1. Enabled containerd stack dump by default.
+
+### Security
+
+Fixed CVE-2025-68171 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68224 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68200 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68241 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68229 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68198 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68295 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68183 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-apps/dmidecode to v3.7.
+
+### Security
+
+Fixed CVE-2025-66471 and CVE-2025-66418 in dev-python/urllib3.
+
+### Security
+
+Fixed CVE-2025-68321 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68231 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68185 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40361 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68214 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68208 in the Linux kernel.
+
+### Fixed
+
+Upgraded net-misc/socat to v1.8.1.0.
+
+### Security
+
+Fixed CVE-2025-40346 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40360 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68173 in the Linux kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811737 -> 811699
+
+### Change
+
+
+
+### cos-121-18867-294-76
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/681ebb10b5bb34ddcbfed4624beeca6417afe4b8 ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.294.76/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-68178 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68191 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68219 in the Linux kernel.
+
+### Change
+
+Updated app-admin/sosreport to v4.10.1. Enabled containerd stack dump by default.
+
+### Security
+
+Fixed CVE-2025-68171 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68224 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68200 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68241 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68229 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68198 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68295 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68183 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-apps/dmidecode to v3.7.
+
+### Security
+
+Fixed CVE-2025-66471 and CVE-2025-66418 in dev-python/urllib3.
+
+### Security
+
+Fixed CVE-2025-68321 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68231 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68185 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40361 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68214 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68208 in the Linux kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 811762 -> 811813
+* Changed: net.ipv4.tcp\_mem: 94041 125391 188082 -> 94044 125392 188088
+* Changed: net.ipv4.udp\_mem: 188085 250783 376170 -> 188088 250784 376176
+
+### Fixed
+
+Upgraded net-misc/socat to v1.8.1.0.
+
+### Security
+
+Fixed CVE-2025-40346 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40360 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68173 in the Linux kernel.
+
+### Change
+
+
+
+### cos-113-18244-521-65
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/4355a68c462538a57389ff1190ca36705c68afa3 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.65/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: fs.file-max: 812054 -> 812031
+
+### Security
+
+Fixed CVE-2025-68321 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68229 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68241 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68295 in the Linux kernel.
+
+### Change
+
+Updated app-admin/sosreport to v4.10.1. Enabled containerd stack dump by default.
+
+### Security
+
+Fixed CVE-2025-68191 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68224 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-66471 and CVE-2025-66418 in dev-python/urllib3.
+
+### Security
+
+Fixed CVE-2025-68173 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68171 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40361 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68200 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68185 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-apps/dmidecode to v3.7.
+
+### Security
+
+Fixed CVE-2025-68231 in the Linux kernel.
+
+### Fixed
+
+Upgraded net-misc/socat to v1.8.1.0.
+
+### Security
+
+Fixed CVE-2025-40346 in the Linux kernel.
+
+---
 ## 2025-12-16
 
 ### Change

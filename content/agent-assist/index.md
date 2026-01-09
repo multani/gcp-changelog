@@ -7,6 +7,13 @@
 Agent Assist offers a [best practices guide](https://docs.cloud.google.com/agent-assist/docs/summarization-autoeval-bp) for summarization automatic evaluation.
 
 ---
+## 2025-12-22
+
+### Feature
+
+Agent Assist offers a UI connector to integrate with [Nice CXOne Voice](https://docs.cloud.google.com/agent-assist/docs/salesforce-voice-nice) for Salesforce. This integration provides agent suggestions for Salesforce customers using NICE CXOne for their voice channel.
+
+---
 ## 2025-10-29
 
 ### Feature

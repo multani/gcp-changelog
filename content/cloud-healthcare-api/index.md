@@ -19,6 +19,13 @@
 * `1.2.840.10008.1.2.8.1` (Deflated Image Frame Compression)
 
 ---
+## 2025-12-17
+
+### Feature
+
+* The RetrieveRenderedFrames now supports multipart requests to retrieve multiple rendered frames in a single API call.
+
+---
 ## 2025-12-02
 
 ### Feature

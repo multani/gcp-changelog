@@ -1,5 +1,19 @@
 # Backup and DR
 
+## 2026-01-07
+
+### Announcement
+
+Protection summary is now generally available for Backup and DR Service. Use
+Protection summary to identify and fix data protection gaps across your projects.
+
+### Feature
+
+You can now use cost reports to view resource-specific Backup and DR
+billing costs to gain granular insights into service spending and to take
+actions to optimize resource allocation.
+
+---
 ## 2025-12-22
 
 ### Feature

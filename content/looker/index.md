@@ -1,5 +1,166 @@
 # Looker
 
+## 2026-01-08
+
+### Fixed
+
+An issue has been fixed where Looker would generate inefficient SQL for some Databricks queries that included date manipulation for weekly data. Looker now uses Databricks functions like `date_trunc` when generating SQL.
+
+### Fixed
+
+For the Spanish (`es_ES`) locale, the weekday initials for Sunday and Tuesday in the schedule dashboard dialog have been set to the correct values (`D` and `M`).
+
+### Fixed
+
+An issue has been fixed where applying filters to a Google Map visualization would require a refresh before the filters would take effect. This feature now performs as expected.
+
+### Feature
+
+[Custom mail settings that are configured for SMTP servers](https://docs.cloud.google.com/looker/docs/admin-panel-platform-smtp) now support OAuth 2.0 authentication.
+
+### Fixed
+
+An issue has been fixed where some columns in the Query Concurrency System Activity Explore were displaying null values. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where a join wouldn't be added to the query, even if one was required by a measure of type `count_distinct`, `sum_distinct`, or `avg_distinct`.
+
+### Fixed
+
+An issue has been fixed where Looker would prevent users from uploading data if they lacked the `explore` permission. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where testing a connection could fail to return an error message in cases where the user had insufficient permissions or if the connection no longer existed. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the Get LookML Model Explore API endpoint could time out without returning results. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where manually resetting column widths from a dashboard grid tile header had no effect. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where long content in tooltips could not be scrolled. This feature now performs as expected.
+
+### Announcement
+
+**Looker 26.0** is expected to include the following changes, features, and fixes:
+
+* Expected Looker (original) deployment start: **Monday, January 12, 2026**
+* Expected Looker (original) final deployment and download available: **Monday, January 19, 2026**
+* Expected Looker (Google Cloud core) deployment start: **Monday, January 12, 2026**
+* Expected Looker (Google Cloud core) final deployment: **Friday, January 23, 2026**
+
+### Fixed
+
+An issue has been fixed where tooltip background colors were not being correctly rendered. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where certain fields in dialogs, such as the Format field in the Download dialog, were incorrectly labeled as read-only to screen readers. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where `value_format` was not respected in table visualizations for numeric values larger than 16 digits. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where selecting the filter option "is before N hours ago" incorrectly displayed "is before N hours" in the filter.
+
+### Fixed
+
+An issue has been fixed where Looker extensions could not access webpack development servers. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where downloading pivoted queries with table calculations while using an Exasol database could return an error. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where custom measures with invalid field references could cause queries to fail, even if those measures weren't selected in the query. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the LookML Validator was not surfacing errors if an invalid field name was referenced in a `suggest_dimension` field. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where an empty `sorts:` property in a LookML `explore` file definition could cause Looker to return a 500 error. This feature now performs as expected.
+
+### Breaking
+
+When you use [Elite System Activity](https://docs.cloud.google.com/looker/docs/elite-system-activity), the System Activity field `scheduled_plan.filters_string` is limited to a length of 1.9 MB. Any data beyond the 1.9 MB limit is truncated.
+
+### Fixed
+
+An issue has been fixed where the **Explore from SQL Runner query** feature could return an error if it found Liquid syntax in the query. The feature now exports the query as plaintext.
+
+### Feature
+
+The JDBC driver for [Databricks](https://docs.cloud.google.com/looker/docs/db-config-databricks) connections has been updated to version 3.0.5.
+
+### Fixed
+
+An issue has been fixed where the **Show Totals** option in the Plot menu was not correctly hiding totals when a user downloaded results. This feature now performs as expected.
+
+### Feature
+
+The user interface for configuring group mappings for LDAP, SAML, and OpenID Connect has been updated for improved management. The new interface allows administrators to more easily add, edit, remove, and search for group mappings.
+
+### Feature
+
+Looker now supports conditional formatting rules for string types in single value and table visualizations.
+
+### Fixed
+
+An issue has been fixed where downloaded reports with pivoted tables could contain extra whitespace. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where creating a custom dimension with a single letter name could cause the query to fail. This feature now performs as expected.
+
+### Feature
+
+The [**Custom Tooltips** Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#custom-tooltips) lets you configure tooltips within the [Explore visualization editor](https://docs.cloud.google.com/looker/docs/creating-visualizations#quick_guide) using a combination of UI settings and an HTML editor that supports Liquid templating.
+
+### Feature
+
+Looker admins can now create dedicated service accounts for API-only access. Additionally, eligible standard user accounts that are being used for API access can be migrated to the new service account type from the Users page in the Admin panel.
+
+### Feature
+
+The [**Tabbed Dashboards** Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#tabbed-dashboards) lets dashboard editors organize dashboard content across multiple tabs within a single dashboard. Adding tabs to dashboards lets you do the following:
+
+* **Better organize content:** Group related visualizations and tiles into separate tabs.
+* **Improve data storytelling:** Guide viewers through different aspects of your data in a structured way.
+* **Enhance performance:** Load only the tiles on an active tab, potentially speeding up initial dashboard load times.
+* **Reduce clutter:** Consolidate multiple related analyses into a single dashboard.
+
+### Feature
+
+The **Favoriting LookML Dashboards** Labs feature, which enables LookML dashboards to be [marked as favorites](https://docs.cloud.google.com/looker/docs/finding-content#navigating_to_content_in_folders) and displays them on the Looker Favorites tab, is now out of Labs and generally available.
+
+### Feature
+
+The API endpoint `search_lookml_dashboards` is out of Labs and now generally available.
+
+### Feature
+
+LookML dashboards can now be [marked as favorites](https://docs.cloud.google.com/looker/docs/finding-content#navigating_to_content_in_folders), allowing the LookML dashboards to appear on the Looker Favorites tab.
+
+### Feature
+
+Looker (Google Cloud core) instances that use Private Service Connect can now connect to Google APIs through [controlled native egress](https://docs.cloud.google.com/looker/docs/looker-core-networking-options#controlled-native-egress).
+
+### Feature
+
+The API endpoint `search_lookml_dashboards` is now generally available.
+
+---
 ## 2025-12-23
 
 ### Feature
@@ -9,7 +170,7 @@ Historical data cannot be accessed with the API Usage System Activity Explore fo
 ---
 ## 2025-12-03
 
-### Other
+### Feature
 
 For Looker instances that are running Looker 25.20 or later, admins can now [test the connection](https://docs.cloud.google.com/looker/docs/admin-panel-platform-actions) between their instance and the Looker Action Hub. This option is available only for the Looker Action Hub. It is not available for [custom action hubs](https://docs.cloud.google.com/looker/docs/action-hub#setting_up_a_local_action_hub_server).
 

@@ -2,9 +2,428 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Looker</title>
   <subtitle>Changelog for Google Cloud product: Looker</subtitle>
-  <updated>2025-12-23T00:00:00+00:00</updated>
+  <updated>2026-01-08T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:looker</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/looker/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:fixed:0</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where Looker would generate inefficient SQL for some Databricks queries that included date manipulation for weekly data. Looker now uses Databricks functions like <code>date_trunc</code> when generating SQL.</p>]]></content>
+    <summary>An issue causing inefficient SQL for Databricks weekly date queries has been resolved. Looker now utilizes Databricks functions like `date_trunc` for better performance.</summary>
+    <title>Fixed: Databricks weekly date queries improved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:fixed:1</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>For the Spanish (<code>es_ES</code>) locale, the weekday initials for Sunday and Tuesday in the schedule dashboard dialog have been set to the correct values (<code>D</code> and <code>M</code>).</p>]]></content>
+    <summary>The weekday initials for Sunday and Tuesday in the Spanish locale have been corrected in the schedule dashboard dialog. Previously, `D` and `M` were incorrectly displayed.</summary>
+    <title>Fixed: Weekday initials fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:fixed:2</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where applying filters to a Google Map visualization would require a refresh before the filters would take effect. This feature now performs as expected.</p>]]></content>
+    <summary>The issue where filters on Google Map visualizations required a refresh to take effect has been fixed. The feature now functions correctly, applying filters immediately as expected.</summary>
+    <title>Fixed: Map filter issue resolved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:feature:3</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/looker/docs/admin-panel-platform-smtp">Custom mail settings that are configured for SMTP servers</a> now support OAuth 2.0 authentication.</p>]]></content>
+    <summary>Custom SMTP mail settings now support OAuth 2.0 authentication, enhancing security and simplifying connection management. This update allows for more robust and modern authentication methods when configuring email delivery.</summary>
+    <title>Feature: SMTP Mail Settings Support OAuth 2.0</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:fixed:4</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where some columns in the Query Concurrency System Activity Explore were displaying null values. This feature now performs as expected.</p>]]></content>
+    <summary>An issue causing null values in Query Concurrency System Activity Explore columns has been resolved. The feature is now functioning correctly.</summary>
+    <title>Fixed: Query Concurrency System Activity Fix</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:fixed:5</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where a join wouldn't be added to the query, even if one was required by a measure of type <code>count_distinct</code>, <code>sum_distinct</code>, or <code>avg_distinct</code>.</p>]]></content>
+    <summary>An issue has been resolved where certain distinct aggregate measures were not correctly including join conditions in queries. This fix ensures that joins are properly added when required by measures like count_distinct, sum_distinct, or avg_distinct, leading to more accurate query results.</summary>
+    <title>Fixed: Fixed issue with join conditions</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:fixed:6</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where Looker would prevent users from uploading data if they lacked the <code>explore</code> permission. This feature now performs as expected.</p>]]></content>
+    <summary>An issue that prevented users from uploading data due to missing permissions has been fixed. Looker will now allow data uploads as expected, regardless of the `explore` permission.</summary>
+    <title>Fixed: Data upload issue resolved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:fixed:7</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where testing a connection could fail to return an error message in cases where the user had insufficient permissions or if the connection no longer existed. This feature now performs as expected.</p>]]></content>
+    <summary>An issue where connection testing failed to return error messages for insufficient permissions or non-existent connections has been resolved. The feature now correctly displays errors when applicable, ensuring expected behavior.</summary>
+    <title>Fixed: Connection testing error handling improved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:fixed:8</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the Get LookML Model Explore API endpoint could time out without returning results. This feature now performs as expected.</p>]]></content>
+    <summary>An issue causing the Get LookML Model Explore API endpoint to time out has been resolved. The endpoint now returns results as expected.</summary>
+    <title>Fixed: API Endpoint Timeout Fix</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:fixed:9</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where manually resetting column widths from a dashboard grid tile header had no effect. This feature now performs as expected.</p>]]></content>
+    <summary>The issue where manually resetting column widths in dashboard grid tiles was not working has been resolved. Column width adjustments now function correctly as intended.</summary>
+    <title>Fixed: Column width reset fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:fixed:10</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where long content in tooltips could not be scrolled. This feature now performs as expected.</p>]]></content>
+    <summary>An issue preventing scrolling of long content within tooltips has been fixed. Tooltips now function correctly, allowing users to view all content as expected.</summary>
+    <title>Fixed: Tooltip scrolling issue resolved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:announcement:11</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Looker 26.0</strong> is expected to include the following changes, features, and fixes:</p>
+<ul>
+<li>Expected Looker (original) deployment start: <strong>Monday, January 12, 2026</strong></li>
+<li>Expected Looker (original) final deployment and download available: <strong>Monday, January 19, 2026</strong></li>
+<li>Expected Looker (Google Cloud core) deployment start: <strong>Monday, January 12, 2026</strong></li>
+<li>Expected Looker (Google Cloud core) final deployment: <strong>Friday, January 23, 2026</strong></li>
+</ul>]]></content>
+    <summary>Looker 26.0 is scheduled for release in January 2026. Key dates include deployment starts on January 12th for both original and Google Cloud core versions. Final deployment and download availability vary, with the original version concluding on January 19th and the Google Cloud core version on January 23rd.</summary>
+    <title>Announcement: Looker 26.0 Release Details</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:fixed:12</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where tooltip background colors were not being correctly rendered. This feature now performs as expected.</p>]]></content>
+    <summary>An issue with tooltip background colors not rendering correctly has been resolved. The feature now functions as expected.</summary>
+    <title>Fixed: Tooltip background colors fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:fixed:13</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where certain fields in dialogs, such as the Format field in the Download dialog, were incorrectly labeled as read-only to screen readers. This feature now performs as expected.</p>]]></content>
+    <summary>An issue where certain fields were incorrectly labeled as read-only to screen readers has been resolved. This fix ensures that field accessibility now functions as expected.</summary>
+    <title>Fixed: Screen reader labels corrected</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:fixed:14</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where <code>value_format</code> was not respected in table visualizations for numeric values larger than 16 digits. This feature now performs as expected.</p>]]></content>
+    <summary>An issue causing incorrect formatting for numeric values exceeding 16 digits in table visualizations has been resolved. The `value_format` setting will now be correctly applied to all numeric data.</summary>
+    <title>Fixed: Numeric value formatting in tables fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:fixed:15</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where selecting the filter option "is before N hours ago" incorrectly displayed "is before N hours" in the filter.</p>]]></content>
+    <summary>An issue where the 'is before N hours ago' filter displayed incorrectly has been resolved. The filter now shows the correct text.</summary>
+    <title>Fixed: Filter bug fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:fixed:16</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where Looker extensions could not access webpack development servers. This feature now performs as expected.</p>]]></content>
+    <summary>An issue preventing Looker extensions from accessing webpack development servers has been resolved. This functionality now operates correctly.</summary>
+    <title>Fixed: Looker Extension webpack Fix</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:fixed:17</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where downloading pivoted queries with table calculations while using an Exasol database could return an error. This feature now performs as expected.</p>]]></content>
+    <summary>An issue preventing the download of pivoted queries with table calculations on Exasol databases has been resolved. This functionality now works correctly.</summary>
+    <title>Fixed: Pivoted Query Downloads Now Functional</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:fixed:18</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where custom measures with invalid field references could cause queries to fail, even if those measures weren't selected in the query. This feature now performs as expected.</p>]]></content>
+    <summary>An issue where custom measures with invalid field references could cause queries to fail has been resolved. The feature now performs as expected, ensuring queries function correctly regardless of whether invalid measures are selected.</summary>
+    <title>Fixed: Fixed invalid field references in custom measures</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:fixed:19</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the LookML Validator was not surfacing errors if an invalid field name was referenced in a <code>suggest_dimension</code> field. This feature now performs as expected.</p>]]></content>
+    <summary>The LookML Validator now correctly surfaces errors when an invalid field name is referenced in a `suggest_dimension` field. This resolves a previously existing issue where such errors were not being displayed.</summary>
+    <title>Fixed: LookML Validator Error Surfacing Fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:fixed:20</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where an empty <code>sorts:</code> property in a LookML <code>explore</code> file definition could cause Looker to return a 500 error. This feature now performs as expected.</p>]]></content>
+    <summary>An issue causing a 500 error due to an empty `sorts:` property in LookML explore definitions has been resolved. Looker now functions correctly when this property is empty.</summary>
+    <title>Fixed: Empty sorts property fix</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:breaking:21</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>When you use <a href="https://docs.cloud.google.com/looker/docs/elite-system-activity">Elite System Activity</a>, the System Activity field <code>scheduled_plan.filters_string</code> is limited to a length of 1.9 MB. Any data beyond the 1.9 MB limit is truncated.</p>]]></content>
+    <summary>The System Activity field `scheduled_plan.filters_string` is limited to 1.9 MB. Data exceeding this limit will be truncated when using Elite System Activity. This may affect the completeness of your scheduled plan filter information.</summary>
+    <title>Breaking: System Activity Field Truncation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:fixed:22</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the <strong>Explore from SQL Runner query</strong> feature could return an error if it found Liquid syntax in the query. The feature now exports the query as plaintext.</p>]]></content>
+    <summary>An issue where the Explore from SQL Runner query feature returned an error due to Liquid syntax has been fixed. The feature now correctly exports queries as plaintext.</summary>
+    <title>Fixed: SQL Runner query export fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:feature:23</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The JDBC driver for <a href="https://docs.cloud.google.com/looker/docs/db-config-databricks">Databricks</a> connections has been updated to version 3.0.5.</p>]]></content>
+    <summary>The JDBC driver for Databricks connections has been updated to version 3.0.5. This update ensures improved compatibility and performance when connecting to your Databricks data sources.</summary>
+    <title>Feature: Updated JDBC driver for Databricks</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:fixed:24</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the <strong>Show Totals</strong> option in the Plot menu was not correctly hiding totals when a user downloaded results. This feature now performs as expected.</p>]]></content>
+    <summary>The 'Show Totals' option in the Plot menu was not hiding totals correctly during downloads. This has been fixed and the feature now works as expected.</summary>
+    <title>Fixed: Fix for download totals issue</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:feature:25</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The user interface for configuring group mappings for LDAP, SAML, and OpenID Connect has been updated for improved management. The new interface allows administrators to more easily add, edit, remove, and search for group mappings.</p>]]></content>
+    <summary>Group mapping configuration for LDAP, SAML, and OpenID Connect has been improved with a new user interface. Administrators can now more easily add, edit, remove, and search for group mappings, streamlining the management process.</summary>
+    <title>Feature: Easier group mapping configuration</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:feature:26</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Looker now supports conditional formatting rules for string types in single value and table visualizations.</p>]]></content>
+    <summary>Looker now supports conditional formatting for string types in single value and table visualizations. This allows for more dynamic and visually informative data representation.</summary>
+    <title>Feature: Conditional Formatting for Strings</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:fixed:27</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where downloaded reports with pivoted tables could contain extra whitespace. This feature now performs as expected.</p>]]></content>
+    <summary>An issue causing extra whitespace in downloaded reports with pivoted tables has been resolved. Reports will now display correctly without unintended spacing. This functionality is now performing as expected.</summary>
+    <title>Fixed: Fixed report whitespace issue</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:fixed:28</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where creating a custom dimension with a single letter name could cause the query to fail. This feature now performs as expected.</p>]]></content>
+    <summary>An issue that caused queries to fail when creating a custom dimension with a single letter name has been resolved. This functionality now operates correctly.</summary>
+    <title>Fixed: Custom dimension naming fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:feature:29</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#custom-tooltips"><strong>Custom Tooltips</strong> Labs feature</a> lets you configure tooltips within the <a href="https://docs.cloud.google.com/looker/docs/creating-visualizations#quick_guide">Explore visualization editor</a> using a combination of UI settings and an HTML editor that supports Liquid templating.</p>]]></content>
+    <summary>The new Custom Tooltips feature allows you to enhance your data visualizations by configuring tooltips with custom text and formatting. Use a combination of UI settings and Liquid templating within the Explore visualization editor to create more informative and engaging tooltips for your users.</summary>
+    <title>Feature: Customize Tooltips in Explore</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:feature:30</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Looker admins can now create dedicated service accounts for API-only access. Additionally, eligible standard user accounts that are being used for API access can be migrated to the new service account type from the Users page in the Admin panel.</p>]]></content>
+    <summary>Looker now allows admins to create dedicated service accounts for API-only access. Existing API user accounts can be easily migrated to these new service accounts directly from the Admin panel, simplifying management and enhancing security.</summary>
+    <title>Feature: New API Access for Looker</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:feature:31</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#tabbed-dashboards"><strong>Tabbed Dashboards</strong> Labs feature</a> lets dashboard editors organize dashboard content across multiple tabs within a single dashboard. Adding tabs to dashboards lets you do the following:</p>
+<ul>
+<li><strong>Better organize content:</strong> Group related visualizations and tiles into separate tabs.</li>
+<li><strong>Improve data storytelling:</strong> Guide viewers through different aspects of your data in a structured way.</li>
+<li><strong>Enhance performance:</strong> Load only the tiles on an active tab, potentially speeding up initial dashboard load times.</li>
+<li><strong>Reduce clutter:</strong> Consolidate multiple related analyses into a single dashboard.</li>
+</ul>]]></content>
+    <summary>Introducing Tabbed Dashboards, a new feature that allows you to organize your dashboard content into multiple tabs. This helps improve organization, data storytelling, performance, and reduce clutter by consolidating related analyses into a single dashboard.</summary>
+    <title>Feature: Organize Dashboards with Tabs</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:feature:32</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <strong>Favoriting LookML Dashboards</strong> Labs feature, which enables LookML dashboards to be <a href="https://docs.cloud.google.com/looker/docs/finding-content#navigating_to_content_in_folders">marked as favorites</a> and displays them on the Looker Favorites tab, is now out of Labs and generally available.</p>]]></content>
+    <summary>You can now mark LookML dashboards as favorites and find them on the Looker Favorites tab. This feature, previously in Labs, is now generally available for all users.</summary>
+    <title>Feature: Favoriting LookML Dashboards Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:feature:33</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The API endpoint <code>search_lookml_dashboards</code> is out of Labs and now generally available.</p>]]></content>
+    <summary>The API endpoint search_lookml_dashboards is now generally available. This feature allows you to search LookML dashboards.</summary>
+    <title>Feature: Search LookML Dashboards GA</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:feature:34</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>LookML dashboards can now be <a href="https://docs.cloud.google.com/looker/docs/finding-content#navigating_to_content_in_folders">marked as favorites</a>, allowing the LookML dashboards to appear on the Looker Favorites tab.</p>]]></content>
+    <summary>You can now mark LookML dashboards as favorites. These favorited dashboards will then appear on the Looker Favorites tab for quick access.</summary>
+    <title>Feature: Mark Dashboards as Favorites</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:feature:35</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Looker (Google Cloud core) instances that use Private Service Connect can now connect to Google APIs through <a href="https://docs.cloud.google.com/looker/docs/looker-core-networking-options#controlled-native-egress">controlled native egress</a>.</p>]]></content>
+    <summary>Looker instances using Private Service Connect now have access to Google APIs via controlled native egress. This enhancement simplifies connectivity and improves security for private Looker deployments. It allows for more robust and manageable network configurations.</summary>
+    <title>Feature: Private Looker Instances Get Native Egress</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-08:feature:36</id>
+    <published>2026-01-08T00:00:00+00:00</published>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The API endpoint <code>search_lookml_dashboards</code> is now generally available.</p>]]></content>
+    <summary>The API endpoint `search_lookml_dashboards` has reached general availability. This feature allows users to efficiently search for LookML dashboards. It is now ready for production use.</summary>
+    <title>Feature: Search LookML Dashboards API Now Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -20,12 +439,12 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2025-12-03:other:0</id>
+    <id>urn:github:multani:gcp-changelog:looker:2025-12-03:feature:0</id>
     <published>2025-12-03T00:00:00+00:00</published>
     <updated>2025-12-03T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>For Looker instances that are running Looker 25.20 or later, admins can now <a href="https://docs.cloud.google.com/looker/docs/admin-panel-platform-actions">test the connection</a> between their instance and the Looker Action Hub. This option is available only for the Looker Action Hub. It is not available for <a href="https://docs.cloud.google.com/looker/docs/action-hub#setting_up_a_local_action_hub_server">custom action hubs</a>.</p>]]></content>
-    <summary>Admins of Looker instances running 25.20 or later can now test the connection to the Looker Action Hub directly from the admin panel. This feature is exclusive to the Looker Action Hub and does not apply to custom action hubs.</summary>
-    <title>Other: Test Looker Action Hub Connection</title>
+    <summary>Admins of Looker instances running version 25.20 or later can now test the connection to the Looker Action Hub. This new feature, available exclusively for the standard Action Hub, helps ensure seamless integration and functionality.</summary>
+    <title>Feature: Test Action Hub Connection</title>
   </entry>
   <entry>
     <author>

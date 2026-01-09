@@ -1,5 +1,12 @@
 # Text-to-Speech
 
+## 2025-12-30
+
+### Feature
+
+Chirp 3: HD voices now support speech synthesis in Preview for the Chinese (Hong Kong) `yue-HK` language. For more information, see [Chirp 3: Language Availability](https://cloud.google.com/text-to-speech/docs/chirp3-hd#language_availability).
+
+---
 ## 2025-12-12
 
 ### Feature

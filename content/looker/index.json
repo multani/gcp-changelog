@@ -19,6 +19,14 @@
         }
       },
       {
+        "kind": "Feature",
+        "content": "The JDBC driver for [Apache Spark 3+](https://docs.cloud.google.com/looker/docs/db-config-apache-spark) connections has been updated to version 2.7.6.",
+        "summary": {
+          "title": "New JDBC Driver Version",
+          "summary": "The JDBC driver for Apache Spark 3+ connections has been updated to version 2.7.6. This update ensures improved compatibility and performance for your data analysis workflows."
+        }
+      },
+      {
         "kind": "Fixed",
         "content": "An issue has been fixed where applying filters to a Google Map visualization would require a refresh before the filters would take effect. This feature now performs as expected.",
         "summary": {
@@ -67,6 +75,38 @@
         }
       },
       {
+        "kind": "Feature",
+        "content": "The LookML dashboards folder is now paginated, showing 30 dashboards per page.",
+        "summary": {
+          "title": "Dashboard Folder Pagination",
+          "summary": "The LookML dashboard folder now displays 30 dashboards per page, improving navigation and organization. This pagination enhances the user experience by making it easier to manage and find specific dashboards within large collections."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Looker now supports encrypted files for key-pair authentication for [Snowflake](https://docs.cloud.google.com/looker/docs/db-config-snowflake) connections.",
+        "summary": {
+          "title": "Encrypted Files Support for Snowflake",
+          "summary": "Looker now supports encrypted files for key-pair authentication with Snowflake connections. This enhances security for your data warehouse integrations."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "When you use the Field Picker to clear all fields, the chart type no longer changes to Table (Legacy).",
+        "summary": {
+          "title": "Field Picker behavior corrected",
+          "summary": "The chart type will no longer change to Table (Legacy) when clearing all fields using the Field Picker. This resolves a previous issue where the chart visualization was unexpectedly altered."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where strings with accented characters were not being displayed properly in the Y-Axis of a visualization. This feature now performs as expected.",
+        "summary": {
+          "title": "Accent characters displayed correctly in visualizations",
+          "summary": "An issue causing improper display of strings with accented characters in visualization Y-Axes has been resolved. The feature now functions as expected, ensuring accurate character rendering."
+        }
+      },
+      {
         "kind": "Fixed",
         "content": "An issue has been fixed where the Get LookML Model Explore API endpoint could time out without returning results. This feature now performs as expected.",
         "summary": {
@@ -91,11 +131,75 @@
         }
       },
       {
+        "kind": "Fixed",
+        "content": "A retry limit has been added for scheduled jobs. If a scheduled job fails five times in a row, then it's skipped until the next time the schedule is triggered.",
+        "summary": {
+          "title": "Job Retry Limit Implemented",
+          "summary": "A retry limit has been introduced for scheduled jobs. Jobs failing five consecutive times will now be skipped until the next schedule trigger, improving system stability."
+        }
+      },
+      {
+        "kind": "Breaking",
+        "content": "HTML characters are now displayed in plaintext in table visualizations to match other visualization types. For example, `&quot;` is no longer rendered as `\"`.",
+        "summary": {
+          "title": "Plaintext HTML in tables",
+          "summary": "HTML characters are now displayed in plaintext in table visualizations, aligning with other visualization types. This change ensures consistency by preventing characters like `&quot;` from being rendered as their decoded equivalents."
+        }
+      },
+      {
         "kind": "Announcement",
         "content": "**Looker 26.0** is expected to include the following changes, features, and fixes:\n\n* Expected Looker (original) deployment start: **Monday, January 12, 2026**\n* Expected Looker (original) final deployment and download available: **Monday, January 19, 2026**\n* Expected Looker (Google Cloud core) deployment start: **Monday, January 12, 2026**\n* Expected Looker (Google Cloud core) final deployment: **Friday, January 23, 2026**",
         "summary": {
           "title": "Looker 26.0 Release Details",
           "summary": "Looker 26.0 is scheduled for release in January 2026. Key dates include deployment starts on January 12th for both original and Google Cloud core versions. Final deployment and download availability vary, with the original version concluding on January 19th and the Google Cloud core version on January 23rd."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where, after you uploaded data, Looker would not redirect you to the uploaded file. This feature now performs as expected.",
+        "summary": {
+          "title": "Upload redirection fixed",
+          "summary": "An issue where Looker did not redirect to the uploaded file after upload has been resolved. The feature now works as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The **Skip to Main Content** accessibility link for dashboards has been removed for embedded dashboards.",
+        "summary": {
+          "title": "Accessibility link removed from embedded dashboards",
+          "summary": "The 'Skip to Main Content' accessibility link has been removed for embedded dashboards. This change improves the user experience by streamlining navigation within these specific dashboard views."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "When you [view folders on embedded content](https://docs.cloud.google.com/looker/docs/viewing-embedded-items#viewing_folders_on_embedded_looks_explores_and_dashboards), LookML dashboards are now visible. The LookML dashboards folder, however, will not be visible.",
+        "summary": {
+          "title": "LookML dashboards visible in embedded content",
+          "summary": "LookML dashboards are now visible when viewing folders on embedded content. Note that the LookML dashboards folder itself will not be displayed."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where a SQL Runner query against a model would fail if the user had not yet opened the model in Development Mode. This feature now performs as expected.",
+        "summary": {
+          "title": "Fix for SQL Runner model access",
+          "summary": "An issue where SQL Runner queries failed for users without Development Mode access has been resolved. The feature now functions correctly, ensuring seamless querying regardless of model access status."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where merged queries could disappear if a user edited one of the settings in the Values tab for a field. This feature now performs as expected.",
+        "summary": {
+          "title": "Merged queries fixed",
+          "summary": "An issue where merged queries could disappear when editing field settings has been resolved. The feature now functions correctly, ensuring your queries are preserved."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the custom tooltip editor was unable to scroll to edit long tooltip templates. This feature now performs as expected.",
+        "summary": {
+          "title": "Tooltip editor scrolling fixed",
+          "summary": "An issue preventing scrolling in the custom tooltip editor for long templates has been resolved. The feature now functions correctly."
         }
       },
       {
@@ -112,6 +216,14 @@
         "summary": {
           "title": "Screen reader labels corrected",
           "summary": "An issue where certain fields were incorrectly labeled as read-only to screen readers has been resolved. This fix ensures that field accessibility now functions as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the dialog to select a folder would attempt to load a second page of results without being prompted by the user. This feature now performs as expected.",
+        "summary": {
+          "title": "Folder selection dialog fixed",
+          "summary": "The folder selection dialog no longer loads a second page of results unexpectedly. This issue is now resolved, and the feature performs as expected."
         }
       },
       {
@@ -140,10 +252,58 @@
       },
       {
         "kind": "Fixed",
+        "content": "An issue has been fixed where filters with commas were not including all filter conditions on Safari browsers. This feature now performs as expected.",
+        "summary": {
+          "title": "Filter issue resolved",
+          "summary": "An issue where filters with commas were not including all conditions on Safari has been fixed. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where a table visualization could become unresponsive if a fixed column width was specified for multiple columns. This feature now performs as expected.",
+        "summary": {
+          "title": "Table visualization fix",
+          "summary": "Resolved an issue where table visualizations became unresponsive with multiple fixed column widths. The feature now works correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
         "content": "An issue has been fixed where downloading pivoted queries with table calculations while using an Exasol database could return an error. This feature now performs as expected.",
         "summary": {
           "title": "Pivoted Query Downloads Now Functional",
           "summary": "An issue preventing the download of pivoted queries with table calculations on Exasol databases has been resolved. This functionality now works correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where any Liquid usage in a derived table SQL resulted in full suggestions behavior. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed an issue with derived table SQL suggestions",
+          "summary": "An issue where Liquid usage in derived tables caused full suggestion behavior has been resolved. The feature now functions correctly as intended."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where clicking **Status details** in the connection setup page without first selecting a dialect caused the page to crash. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed connection setup crash",
+          "summary": "An issue where clicking 'Status details' without selecting a dialect caused a crash has been resolved. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where modifying conditional formatting rules other than the first one incorrectly affected the first rule. This fix has been backported to Looker versions 25.18.41 and 25.20.17.",
+        "summary": {
+          "title": "Conditional formatting fix",
+          "summary": "An issue where modifying conditional formatting rules incorrectly affected the first rule has been resolved. This fix is available in Looker versions 25.18.41 and 25.20.17."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the **Show More** button wouldn't appear for large lists when a user was managing folder access. This feature now performs as expected.",
+        "summary": {
+          "title": "Folder access management UI improved",
+          "summary": "The **Show More** button now correctly appears for large lists when managing folder access, ensuring full functionality. This issue has been resolved, and the feature now performs as expected."
         }
       },
       {
@@ -164,6 +324,14 @@
       },
       {
         "kind": "Fixed",
+        "content": "An issue has been fixed where very long dashboard names were not properly truncated. This feature now performs as expected.",
+        "summary": {
+          "title": "Dashboard name truncation fixed",
+          "summary": "An issue with long dashboard names not being truncated has been resolved. The truncation feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
         "content": "An issue has been fixed where an empty `sorts:` property in a LookML `explore` file definition could cause Looker to return a 500 error. This feature now performs as expected.",
         "summary": {
           "title": "Empty sorts property fix",
@@ -176,6 +344,14 @@
         "summary": {
           "title": "System Activity Field Truncation",
           "summary": "The System Activity field `scheduled_plan.filters_string` is limited to 1.9 MB. Data exceeding this limit will be truncated when using Elite System Activity. This may affect the completeness of your scheduled plan filter information."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where tooltips incorrectly displayed the text `[object Object]`. This feature now performs as expected.",
+        "summary": {
+          "title": "Tooltips now display correctly",
+          "summary": "An issue causing tooltips to display '[object Object]' has been resolved. The feature now functions as intended, providing accurate information."
         }
       },
       {
@@ -196,6 +372,14 @@
       },
       {
         "kind": "Fixed",
+        "content": "An issue has been fixed where filtered custom measures could fail to load if they referenced a dimension that used the `alias` parameter in their filter. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed custom measure loading issue",
+          "summary": "An issue where filtered custom measures could fail to load due to aliased dimensions has been resolved. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
         "content": "An issue has been fixed where the **Show Totals** option in the Plot menu was not correctly hiding totals when a user downloaded results. This feature now performs as expected.",
         "summary": {
           "title": "Fix for download totals issue",
@@ -208,6 +392,14 @@
         "summary": {
           "title": "Easier group mapping configuration",
           "summary": "Group mapping configuration for LDAP, SAML, and OpenID Connect has been improved with a new user interface. Administrators can now more easily add, edit, remove, and search for group mappings, streamlining the management process."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Looker now supports key-pair authentication in the [PDT Overrides](https://docs.cloud.google.com/looker/docs/connecting-to-your-db#enable_pdt_overrides) for Snowflake connections.",
+        "summary": {
+          "title": "Looker PDT Overrides Now Support Key-Pair Authentication",
+          "summary": "Looker has enhanced its PDT Overrides feature for Snowflake connections, now offering support for key-pair authentication. This update improves security and flexibility for database connections within Looker."
         }
       },
       {
@@ -272,6 +464,14 @@
         "summary": {
           "title": "Search LookML Dashboards GA",
           "summary": "The API endpoint search_lookml_dashboards is now generally available. This feature allows you to search LookML dashboards."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [**Dashboard Filter Enhancements** Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#dashboard-filter-enhancements) includes the following improvements:\n\n* Persistent filter suggestion drop-down: Filter suggestion drop-downs remain open for easier multi-selection for [tag list](https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#tag-list) and [advanced filter](https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#advanced_filters) type filters.\n* Select or deselect all filter values\\*\\*: Lets users select or deselect all values in tag list and advanced filter type filters.\n* Limit condition controls for advanced filters: Lets dashboard creators limit the condition options that are available to users for advanced filters.\n* Enable [**Include custom filter values**](https://docs.cloud.google.com/looker/docs/presenting-content#adding_dashboards_to_boards_with_custom_filter_values_applied) by default for boards: Admins can choose to enable **Include custom filter values for boards** by default instance-wide.",
+        "summary": {
+          "title": "Dashboard Filter Improvements",
+          "summary": "New enhancements to dashboard filters make them easier to use and more powerful. These include persistent suggestion drop-downs, select/deselect all options, and improved condition controls for advanced filters. Admins can also now enable custom filter values by default for boards."
         }
       },
       {

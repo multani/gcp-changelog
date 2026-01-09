@@ -10,6 +10,10 @@ An issue has been fixed where Looker would generate inefficient SQL for some Dat
 
 For the Spanish (`es_ES`) locale, the weekday initials for Sunday and Tuesday in the schedule dashboard dialog have been set to the correct values (`D` and `M`).
 
+### Feature
+
+The JDBC driver for [Apache Spark 3+](https://docs.cloud.google.com/looker/docs/db-config-apache-spark) connections has been updated to version 2.7.6.
+
 ### Fixed
 
 An issue has been fixed where applying filters to a Google Map visualization would require a refresh before the filters would take effect. This feature now performs as expected.
@@ -34,6 +38,22 @@ An issue has been fixed where Looker would prevent users from uploading data if 
 
 An issue has been fixed where testing a connection could fail to return an error message in cases where the user had insufficient permissions or if the connection no longer existed. This feature now performs as expected.
 
+### Feature
+
+The LookML dashboards folder is now paginated, showing 30 dashboards per page.
+
+### Feature
+
+Looker now supports encrypted files for key-pair authentication for [Snowflake](https://docs.cloud.google.com/looker/docs/db-config-snowflake) connections.
+
+### Fixed
+
+When you use the Field Picker to clear all fields, the chart type no longer changes to Table (Legacy).
+
+### Fixed
+
+An issue has been fixed where strings with accented characters were not being displayed properly in the Y-Axis of a visualization. This feature now performs as expected.
+
 ### Fixed
 
 An issue has been fixed where the Get LookML Model Explore API endpoint could time out without returning results. This feature now performs as expected.
@@ -46,6 +66,14 @@ An issue has been fixed where manually resetting column widths from a dashboard 
 
 An issue has been fixed where long content in tooltips could not be scrolled. This feature now performs as expected.
 
+### Fixed
+
+A retry limit has been added for scheduled jobs. If a scheduled job fails five times in a row, then it's skipped until the next time the schedule is triggered.
+
+### Breaking
+
+HTML characters are now displayed in plaintext in table visualizations to match other visualization types. For example, `&quot;` is no longer rendered as `"`.
+
 ### Announcement
 
 **Looker 26.0** is expected to include the following changes, features, and fixes:
@@ -57,11 +85,39 @@ An issue has been fixed where long content in tooltips could not be scrolled. Th
 
 ### Fixed
 
+An issue has been fixed where, after you uploaded data, Looker would not redirect you to the uploaded file. This feature now performs as expected.
+
+### Fixed
+
+The **Skip to Main Content** accessibility link for dashboards has been removed for embedded dashboards.
+
+### Feature
+
+When you [view folders on embedded content](https://docs.cloud.google.com/looker/docs/viewing-embedded-items#viewing_folders_on_embedded_looks_explores_and_dashboards), LookML dashboards are now visible. The LookML dashboards folder, however, will not be visible.
+
+### Fixed
+
+An issue has been fixed where a SQL Runner query against a model would fail if the user had not yet opened the model in Development Mode. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where merged queries could disappear if a user edited one of the settings in the Values tab for a field. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the custom tooltip editor was unable to scroll to edit long tooltip templates. This feature now performs as expected.
+
+### Fixed
+
 An issue has been fixed where tooltip background colors were not being correctly rendered. This feature now performs as expected.
 
 ### Fixed
 
 An issue has been fixed where certain fields in dialogs, such as the Format field in the Download dialog, were incorrectly labeled as read-only to screen readers. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the dialog to select a folder would attempt to load a second page of results without being prompted by the user. This feature now performs as expected.
 
 ### Fixed
 
@@ -77,7 +133,31 @@ An issue has been fixed where Looker extensions could not access webpack develop
 
 ### Fixed
 
+An issue has been fixed where filters with commas were not including all filter conditions on Safari browsers. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where a table visualization could become unresponsive if a fixed column width was specified for multiple columns. This feature now performs as expected.
+
+### Fixed
+
 An issue has been fixed where downloading pivoted queries with table calculations while using an Exasol database could return an error. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where any Liquid usage in a derived table SQL resulted in full suggestions behavior. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where clicking **Status details** in the connection setup page without first selecting a dialect caused the page to crash. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where modifying conditional formatting rules other than the first one incorrectly affected the first rule. This fix has been backported to Looker versions 25.18.41 and 25.20.17.
+
+### Fixed
+
+An issue has been fixed where the **Show More** button wouldn't appear for large lists when a user was managing folder access. This feature now performs as expected.
 
 ### Fixed
 
@@ -89,11 +169,19 @@ An issue has been fixed where the LookML Validator was not surfacing errors if a
 
 ### Fixed
 
+An issue has been fixed where very long dashboard names were not properly truncated. This feature now performs as expected.
+
+### Fixed
+
 An issue has been fixed where an empty `sorts:` property in a LookML `explore` file definition could cause Looker to return a 500 error. This feature now performs as expected.
 
 ### Breaking
 
 When you use [Elite System Activity](https://docs.cloud.google.com/looker/docs/elite-system-activity), the System Activity field `scheduled_plan.filters_string` is limited to a length of 1.9 MB. Any data beyond the 1.9 MB limit is truncated.
+
+### Fixed
+
+An issue has been fixed where tooltips incorrectly displayed the text `[object Object]`. This feature now performs as expected.
 
 ### Fixed
 
@@ -105,11 +193,19 @@ The JDBC driver for [Databricks](https://docs.cloud.google.com/looker/docs/db-co
 
 ### Fixed
 
+An issue has been fixed where filtered custom measures could fail to load if they referenced a dimension that used the `alias` parameter in their filter. This feature now performs as expected.
+
+### Fixed
+
 An issue has been fixed where the **Show Totals** option in the Plot menu was not correctly hiding totals when a user downloaded results. This feature now performs as expected.
 
 ### Feature
 
 The user interface for configuring group mappings for LDAP, SAML, and OpenID Connect has been updated for improved management. The new interface allows administrators to more easily add, edit, remove, and search for group mappings.
+
+### Feature
+
+Looker now supports key-pair authentication in the [PDT Overrides](https://docs.cloud.google.com/looker/docs/connecting-to-your-db#enable_pdt_overrides) for Snowflake connections.
 
 ### Feature
 
@@ -147,6 +243,15 @@ The **Favoriting LookML Dashboards** Labs feature, which enables LookML dashboar
 ### Feature
 
 The API endpoint `search_lookml_dashboards` is out of Labs and now generally available.
+
+### Feature
+
+The [**Dashboard Filter Enhancements** Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#dashboard-filter-enhancements) includes the following improvements:
+
+* Persistent filter suggestion drop-down: Filter suggestion drop-downs remain open for easier multi-selection for [tag list](https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#tag-list) and [advanced filter](https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#advanced_filters) type filters.
+* Select or deselect all filter values\*\*: Lets users select or deselect all values in tag list and advanced filter type filters.
+* Limit condition controls for advanced filters: Lets dashboard creators limit the condition options that are available to users for advanced filters.
+* Enable [**Include custom filter values**](https://docs.cloud.google.com/looker/docs/presenting-content#adding_dashboards_to_boards_with_custom_filter_values_applied) by default for boards: Admins can choose to enable **Include custom filter values for boards** by default instance-wide.
 
 ### Feature
 

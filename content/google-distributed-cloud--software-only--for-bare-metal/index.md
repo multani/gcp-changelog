@@ -1,5 +1,27 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-01-08
+
+### Announcement
+
+Google Distributed Cloud for bare metal 1.31.1200-gke.60 is now available for
+[download](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads). To
+upgrade, see [Upgrade
+clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade).
+Distributed Cloud for bare metal 1.31.1200-gke.60 runs on
+Kubernetes v1.31.13-gke.1100.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the [GKE On-Prem API
+clients](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools):
+the Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the [Ready storage
+partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage) document
+to make sure the storage vendor has already passed the qualification for this
+release of Distributed Cloud for bare metal.
+
+---
 ## 2025-12-11
 
 ### Announcement

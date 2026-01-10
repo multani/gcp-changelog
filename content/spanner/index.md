@@ -1,5 +1,17 @@
 # Spanner
 
+## 2026-01-05
+
+### Feature
+
+You can use [SQL views](https://docs.cloud.google.com/spanner/docs/views) to create a graph. For
+requirements, considerations, and the benefits of using SQL views to create a
+graph, see
+[Overview of graphs created from SQL views](https://docs.cloud.google.com/spanner/docs/graph/graph-with-views-overview).
+To learn how to create a graph from views, see
+[Create a property graph from SQL views](https://docs.cloud.google.com/spanner/docs/graph/graph-with-views-how-to).
+
+---
 ## 2025-12-17
 
 ### Feature

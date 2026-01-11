@@ -1,5 +1,41 @@
 # Google SecOps SIEM
 
+## 2026-01-11
+
+### Feature
+
+**Custom Transformers and Logical Operators**
+
+**This feature is currently in Preview**.
+
+Playbook engineers can now extend platform capabilities by creating custom Python-based transformation functions and logical operators as part of Extension Packs directly within the IDE. For more information, see [Custom transformation functions and logical operators](https://docs.cloud.google.com/chronicle/docs/soar/respond/custom-transformers-logical-operators).
+
+### Announcement
+
+Release 6.3.71 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains the following changes:
+
+### Change
+
+**Terminate Playbook capability**
+
+You can now manually terminate a running playbook directly from the Playbook Viewer in the Case Overview. This provides a mechanism to immediately end execution if a loop encounters unwanted or excessive iterations.
+
+### Change
+
+**Increased iteration and step limits for Playbook Loops**
+
+To support larger automation requirements, the maximum number of iterations for a single loop has been increased to 1,000, and the number of supported steps within a loop has been increased to 100.
+
+### Announcement
+
+**Playbook Loops**
+
+This feature is now in General Availability (GA).
+For more information, see [Automate tasks with Playbook Loops](https://docs.cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/playbook-loops).
+
+---
 ## 2026-01-10
 
 ### Announcement

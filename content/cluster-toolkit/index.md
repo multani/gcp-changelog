@@ -1,5 +1,32 @@
 # Cluster Toolkit
 
+## 2025-12-18
+
+### Feature
+
+Cluster Toolkit version v1.76.0 is available. This release introduces
+an example NCCL test script for Slurm on GKE and makes the `wait` parameter for
+Kueue installation configurable, and adds a `wait` parameter for
+Kueue in the
+[examples/gke-g4/gke-g4.yaml](https://github.com/GoogleCloudPlatform/cluster-toolkit/blob/main/examples/gke-g4/gke-g4.yaml)
+blueprint. For more information about this release, see the [Release
+announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5016).
+
+---
+## 2025-12-10
+
+### Feature
+
+Cluster Toolkit version v1.75.0 is available. This release graduates
+the `cloud-storage-bucket` module to the core collection of modules and adds
+integration tests for TPU v6e and TPU 7x. This version also enables Spot VM
+testing for A3 Ultra instances and provides ML dependencies and dual NIC
+guidance for G4 machines. For more information about this release, see the
+[Release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/4975).
+
+---
 ## 2025-12-04
 
 ### Feature

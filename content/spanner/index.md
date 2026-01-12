@@ -12,6 +12,16 @@ To learn how to create a graph from views, see
 [Create a property graph from SQL views](https://docs.cloud.google.com/spanner/docs/graph/graph-with-views-how-to).
 
 ---
+## 2025-12-18
+
+### Feature
+
+The GoogleSQL function
+[`ELEMENT_DEFINITION_NAME`](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/graph-gql-functions#element_definition_name)
+is available. `ELEMENT_DEFINITION_NAME` returns the name of the graph element
+table underlying a graph element.
+
+---
 ## 2025-12-17
 
 ### Feature

@@ -1,5 +1,14 @@
 # Google SecOps SIEM
 
+## 2026-01-12
+
+### Feature
+
+**Copy instance metadata**
+
+To enable Google support to test and troubleshoot customer issues, a new option to copy SOAR information and share with Support has been added to the platform. This option, entitled **Copy instance metadata**, can be accessed from the question mark at the top of the platform.
+
+---
 ## 2026-01-11
 
 ### Feature

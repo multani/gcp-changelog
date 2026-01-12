@@ -138,6 +138,7 @@
 - [Guest Environment](guest-environment/index.md)
 - [Identity and Access Management](identity-and-access-management/index.md)
 - [Identity-Aware Proxy](identity-aware-proxy/index.md)
+- [Infrastructure Manager](infrastructure-manager/index.md)
 - [Kf](kf/index.md)
 - [Live Stream API](live-stream-api/index.md)
 - [Looker](looker/index.md)

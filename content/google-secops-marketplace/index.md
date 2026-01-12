@@ -1,5 +1,86 @@
 # Google SecOps Marketplace
 
+## 2026-01-07
+
+### Feature
+
+**Microsoft Defender ATP**: Version 27.0
+
+* The following new action has been added:
+
+  + **Execute Live Response Command**
+
+### Feature
+
+**Palo Alto Cortex XDR**: Version 21.0
+
+* The following new job has been added:
+
+  + **Sync Incidents**
+
+### Change
+
+**Exchange**: Version 118.0
+
+* Added new parameters (`Event Fields to Exclude` and `Exclude Attachments`) to
+  the following connectors:
+
+  + **Exchange - Mail Connector v2**
+  + **Exchange - Mail Connector v2 with OAuth Authentication**
+
+### Change
+
+**Siemplify**: Version 99.0
+
+* Updated the TIPCommon method in the following action:
+
+  + **Get Case Details**
+
+### Change
+
+Updated the file management logic of the `Download Attachment From Email`
+action in the following integrations:
+
+* **Microsoft Graph Mail**: Version 34.0
+* **Microsoft Graph Mail Delegated**: Version 11.0
+
+### Change
+
+**SCC Enterprise**: Version 19.0
+
+* **Integration**: Refactored code to work with the updated API.
+
+### Change
+
+Updated the dependencies of the following integrations:
+
+* **BMC Helix RemedyForce**: Version 14.0
+* **EmailV2**: Version 37.0
+* **Google Cloud Storage**: Version 12.0
+* **HTTP v2**: Version 11.0
+* **Jira**: Version 51.0
+* **JuniperVSRX**: Version 9.0
+* **McAfee Active Response**: Version 8.0
+* **PassiveTotal**: Version 12.0
+* **Salesforce**: Version 13.0
+* **SCCM**: Version 18.0
+* **SiemplifyUtilities**: Version 25.0
+* **ThreatConnect**: Version 15.0
+* **Websense**: Version 13.0
+* **WMI**: Version 11.0
+
+### Change
+
+**Google Chronicle**: Version 72.0
+
+* Added support for curated rules in the following action:
+
+  + **Get Rule Details**
+* Updated rule severity filter logic in the following connector:
+
+  + **Google Chronicle - Chronicle Alerts Connector**
+
+---
 ## 2025-12-24
 
 ### Feature

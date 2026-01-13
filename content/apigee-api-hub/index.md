@@ -1,5 +1,16 @@
 # Apigee API hub
 
+## 2026-01-09
+
+### Feature
+
+**Ingest API Gateway metadata into API hub**
+
+API hub now supports automatic metadata ingestion from [Google Cloud API Gateway](https://docs.cloud.google.com/api-gateway/docs/about-api-gateway). You can now [attach](https://docs.cloud.google.com/apigee/docs/apihub/auto-register-apigee-proxies#attach-a-runtime-project) your API Gateway projects to API hub to enable auto-ingestion for all your APIs. For more information see [Centralize API management using API hub](https://docs.cloud.google.com/api-gateway/docs/api-hub-overview).
+
+**Note:** Rollouts of this release to production instances might take up to 5 business days to complete across all Google Cloud zones. Your instances might not have the feature available until the rollout is complete.
+
+---
 ## 2025-12-17
 
 ### Feature

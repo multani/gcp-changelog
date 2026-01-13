@@ -1,5 +1,12 @@
 # Gemini Enterprise
 
+## 2026-01-12
+
+### Announcement
+
+[Agent Designer](https://docs.cloud.google.com/gemini/enterprise/docs/agent-designer) is generally available ([GA](https://cloud.google.com/products?#product-launch-stages)).
+
+---
 ## 2026-01-07
 
 ### Feature

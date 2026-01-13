@@ -1,5 +1,16 @@
 # Infrastructure Manager
 
+## 2026-01-12
+
+### Change
+
+Infrastructure Manager is available in the following regions:
+
+* `me-central2`
+
+For more information about regions, see [Infrastructure Manager locations](https://docs.cloud.google.com/infrastructure-manager/docs/locations).
+
+---
 ## 2026-01-05
 
 ### Announcement

@@ -1,5 +1,17 @@
 # Database Center
 
+## 2025-12-22
+
+### Feature
+
+You can use Database Center to monitor your Cloud SQL database
+resources for enhanced backup protection. Enhanced protection is a
+Backup and DR Service feature. For more information, see
+[Use enhanced backup protection](https://docs.cloud.google.com/database-center/docs/best-practices-managing-database-fleet-health#enhanced-backup).
+To configure enhanced backups for Cloud SQL resources, see
+[Enhanced backups](https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/backups).
+
+---
 ## 2025-10-10
 
 ### Feature

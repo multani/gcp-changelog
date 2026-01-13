@@ -1,5 +1,18 @@
 # Dataplex
 
+## 2026-01-12
+
+### Breaking
+
+Some of the metadata that is stored in Dataplex Universal Catalog is changing.
+This change brings the metadata stored in Dataplex into consistency with
+metadata from the original source systems such as Vertex AI, Bigtable, Spanner,
+Pub/Sub, Dataform, and Dataproc Metastore. If you have workloads that depend on
+such Dataplex metadata, you must adjust them to preserve continuity. For more
+information about the scope of this change and what you need to do, see
+[Changes to metadata stored in Dataplex Universal Catalog](https://cloud.google.com/dataplex/docs/metadata-changes).
+
+---
 ## 2025-12-08
 
 ### Feature

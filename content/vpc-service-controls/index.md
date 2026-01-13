@@ -9,6 +9,15 @@
 * [Model Armor](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_model_armor)
 
 ---
+## 2026-01-08
+
+### Feature
+
+[Preview stage](https://cloud.google.com/products#product-launch-stages) support for the following integration:
+
+* [Gemini Cloud Assist](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_cloud_assist)
+
+---
 ## 2025-12-15
 
 ### Feature

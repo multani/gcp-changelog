@@ -42,10 +42,6 @@ An issue has been fixed where testing a connection could fail to return an error
 
 The LookML dashboards folder is now paginated, showing 30 dashboards per page.
 
-### Feature
-
-Looker now supports encrypted files for key-pair authentication for [Snowflake](https://docs.cloud.google.com/looker/docs/db-config-snowflake) connections.
-
 ### Fixed
 
 When you use the Field Picker to clear all fields, the chart type no longer changes to Table (Legacy).
@@ -86,6 +82,10 @@ HTML characters are now displayed in plaintext in table visualizations to match 
 ### Fixed
 
 An issue has been fixed where, after you uploaded data, Looker would not redirect you to the uploaded file. This feature now performs as expected.
+
+### Feature
+
+Looker now supports encrypted files for [key-pair authentication for Snowflake connections](https://docs.cloud.google.com/looker/docs/db-config-snowflake#key-pair).
 
 ### Fixed
 
@@ -189,6 +189,10 @@ An issue has been fixed where the **Explore from SQL Runner query** feature coul
 
 ### Feature
 
+The new LookML parameter [`autogenerate_primary_keys`](https://docs.cloud.google.com/looker/docs/reference/param-explore-autogenerate-primary-keys) parameter is now supported. When a view or Explore is defined with `autogenerate_primary_keys: yes`, Looker generates a temporary, distinct key for a view, allowing symmetric aggregates and one-to-many counts to be calculated correctly without any changes to your underlying database table. The primary key is generated at query runtime; it does not persist across queries. **Note:** This item was added on January 12, 2026.
+
+### Feature
+
 The JDBC driver for [Databricks](https://docs.cloud.google.com/looker/docs/db-config-databricks) connections has been updated to version 3.0.5.
 
 ### Fixed
@@ -205,11 +209,11 @@ The user interface for configuring group mappings for LDAP, SAML, and OpenID Con
 
 ### Feature
 
-Looker now supports key-pair authentication in the [PDT Overrides](https://docs.cloud.google.com/looker/docs/connecting-to-your-db#enable_pdt_overrides) for Snowflake connections.
+Looker now supports conditional formatting rules for string types in single value and table visualizations.
 
 ### Feature
 
-Looker now supports conditional formatting rules for string types in single value and table visualizations.
+Looker now supports key-pair authentication in the [PDT overrides for Snowflake connections](https://docs.cloud.google.com/looker/docs/db-config-snowflake#pdt-overrides).
 
 ### Fixed
 
@@ -225,7 +229,7 @@ The [**Custom Tooltips** Labs feature](https://docs.cloud.google.com/looker/docs
 
 ### Feature
 
-Looker admins can now create dedicated service accounts for API-only access. Additionally, eligible standard user accounts that are being used for API access can be migrated to the new service account type from the Users page in the Admin panel.
+Looker admins can now create dedicated [service accounts for API-only access](https://docs.cloud.google.com/looker/docs/admin-panel-users-users#service-account). Additionally, eligible standard user accounts that are being used for API access can be [migrated](https://docs.cloud.google.com/looker/docs/admin-panel-users-users#migrating) to the new service account type from the Users page in the Admin panel.
 
 ### Feature
 
@@ -238,20 +242,20 @@ The [**Tabbed Dashboards** Labs feature](https://docs.cloud.google.com/looker/do
 
 ### Feature
 
+The [**Dashboard Filter Enhancements** Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#dashboard-filter-enhancements) includes the following improvements:
+
+* Persistent filter suggestion drop-down: Filter suggestion drop-downs remain open for easier multi-selection for [tag list](https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#tag-list) and [advanced filter](https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#advanced_filters) type filters.
+* Select or deselect all filter values: Lets users select or deselect all values in tag list and advanced filter type filters.
+* Limit condition controls for advanced filters: Lets dashboard creators limit the condition options that are available to users for advanced filters.
+* Enable [**Include custom filter values**](https://docs.cloud.google.com/looker/docs/presenting-content#adding_dashboards_to_boards_with_custom_filter_values_applied) by default for boards: Admins can choose to enable **Include custom filter values for boards** by default instance-wide.
+
+### Feature
+
 The **Favoriting LookML Dashboards** Labs feature, which enables LookML dashboards to be [marked as favorites](https://docs.cloud.google.com/looker/docs/finding-content#navigating_to_content_in_folders) and displays them on the Looker Favorites tab, is now out of Labs and generally available.
 
 ### Feature
 
 The API endpoint `search_lookml_dashboards` is out of Labs and now generally available.
-
-### Feature
-
-The [**Dashboard Filter Enhancements** Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#dashboard-filter-enhancements) includes the following improvements:
-
-* Persistent filter suggestion drop-down: Filter suggestion drop-downs remain open for easier multi-selection for [tag list](https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#tag-list) and [advanced filter](https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#advanced_filters) type filters.
-* Select or deselect all filter values\*\*: Lets users select or deselect all values in tag list and advanced filter type filters.
-* Limit condition controls for advanced filters: Lets dashboard creators limit the condition options that are available to users for advanced filters.
-* Enable [**Include custom filter values**](https://docs.cloud.google.com/looker/docs/presenting-content#adding_dashboards_to_boards_with_custom_filter_values_applied) by default for boards: Admins can choose to enable **Include custom filter values for boards** by default instance-wide.
 
 ### Feature
 

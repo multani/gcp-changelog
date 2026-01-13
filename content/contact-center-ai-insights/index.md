@@ -1,5 +1,12 @@
 # Contact Center AI Insights
 
+## 2026-01-12
+
+### Announcement
+
+This product has a new name. The same product with the same features is now called Customer Experience Insights, or CX Insights for short.
+
+---
 ## 2025-09-17
 
 ### Changed

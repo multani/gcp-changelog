@@ -1,5 +1,13 @@
 # Gemini
 
+## 2026-01-08
+
+### Feature
+
+[VPC Service Controls for Gemini Cloud Assist investigations](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_cloud_assist)
+is now available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-12-16
 
 ### VS Code model selection issue fixed as of version 2.63.1

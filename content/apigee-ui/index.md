@@ -1,5 +1,21 @@
 # Apigee UI
 
+## 2026-01-12
+
+### Announcement
+
+On January 12, 2026, we released an updated version of the Apigee UI.
+
+### Feature
+
+**Manage environment-level resources in the Apigee UI**
+
+You can now manage environment-level resources using the Apigee UI.
+Previously, environment-level resources could only be managed using the API.
+For more information, see
+[Managing resources](https://docs.cloud.google.com/apigee/docs/api-platform/develop/resource-files#ui-env).
+
+---
 ## 2025-12-19
 
 ### Announcement

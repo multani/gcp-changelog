@@ -1,5 +1,14 @@
 # Cloud Location Finder
 
+## 2026-01-13
+
+### Feature
+
+Cloud Location Finder is in
+[Preview stage](https://cloud.google.com/products#product-launch-stages) for
+[Virtual Private Cloud Service Controls](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_location_finder).
+
+---
 ## 2025-12-01
 
 ### Feature

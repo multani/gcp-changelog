@@ -1,5 +1,40 @@
 # Google SecOps SIEM
 
+## 2026-01-13
+
+### Announcement
+
+**Self-service deprovisioning general availability**
+
+The self-service deprovisioning feature is now GA.
+
+For more information, see [Self-service deprovisioning for Google SecOps](https://docs.cloud.google.com/chronicle/docs/onboard/customer-initiated-secops-deprovision).
+
+### Announcement
+
+**Auto extraction general availability**
+
+As part of the GA release for the auto extraction feature, customers now need to opt-in and choose which fields to extract. (Full auto extraction is no longer supported.) The *opt-in* functionality does not impact the extracted fields that are already in use (in saved searches and rules), because those fields have been automatically opted-in as part of the GA migration.
+
+For more information, see [Auto Extraction overview](https://docs.cloud.google.com/chronicle/docs/event-processing/auto-extraction).
+
+### Announcement
+
+**Self-service deprovisioning general availability**
+
+The self-service deprovisioning feature is now GA.
+
+For more information, see [Self-service deprovisioning for Google SecOps](https://docs.cloud.google.com/chronicle/docs/onboard/customer-initiated-secops-deprovision).
+
+### Announcement
+
+**Auto extraction general availability**
+
+As part of the GA release for the auto extraction feature, customers now need to opt-in and choose which fields to extract. (Full auto extraction is no longer supported.) The *opt-in* functionality does not impact the extracted fields that are already in use (in saved searches and rules), because those fields have been automatically opted-in as part of the GA migration.
+
+For more information, see [Auto Extraction overview](https://docs.cloud.google.com/chronicle/docs/event-processing/auto-extraction).
+
+---
 ## 2026-01-12
 
 ### Feature

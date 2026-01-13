@@ -115,6 +115,7 @@
 - [Firestore in Datastore mode](firestore-in-datastore-mode/index.md)
 - [Firestore with MongoDB compatibility](firestore-with-mongodb-compatibility/index.md)
 - [Gemini](gemini/index.md)
+- [Gemini Cloud Assist](gemini-cloud-assist/index.md)
 - [Gemini Code Assist](gemini-code-assist/index.md)
 - [Gemini Enterprise](gemini-enterprise/index.md)
 - [Gemini on GDC API on GDC connected](gemini-on-gdc-api-on-gdc-connected/index.md)

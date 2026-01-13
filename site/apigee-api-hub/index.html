@@ -1409,6 +1409,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Gemini cloud assist <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../gemini-cloud-assist/" class="dropdown-item">Gemini Cloud Assist</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Gemini code assist <b class="caret"></b>
                         </a>
 
@@ -2268,14 +2280,20 @@
 
 
 <h1 id="apigee-api-hub">Apigee API hub</h1>
-<h2 id="2026-01-09">2026-01-09</h2>
+<h2 id="2026-01-12">2026-01-12</h2>
 <h3 id="feature">Feature</h3>
 <p><strong>Ingest API Gateway metadata into API hub</strong></p>
 <p>API hub now supports automatic metadata ingestion from <a href="https://docs.cloud.google.com/api-gateway/docs/about-api-gateway">Google Cloud API Gateway</a>. You can now <a href="https://docs.cloud.google.com/apigee/docs/apihub/auto-register-apigee-proxies#attach-a-runtime-project">attach</a> your API Gateway projects to API hub to enable auto-ingestion for all your APIs. For more information see <a href="https://docs.cloud.google.com/api-gateway/docs/api-hub-overview">Centralize API management using API hub</a>.</p>
 <p><strong>Note:</strong> Rollouts of this release to production instances might take up to 5 business days to complete across all Google Cloud zones. Your instances might not have the feature available until the rollout is complete.</p>
 <hr />
-<h2 id="2025-12-17">2025-12-17</h2>
+<h2 id="2026-01-09">2026-01-09</h2>
 <h3 id="feature_1">Feature</h3>
+<p><strong>Ingest API Gateway metadata into API hub</strong></p>
+<p>API hub now supports automatic metadata ingestion from <a href="https://docs.cloud.google.com/api-gateway/docs/about-api-gateway">Google Cloud API Gateway</a>. You can now <a href="https://docs.cloud.google.com/apigee/docs/apihub/auto-register-apigee-proxies#attach-a-runtime-project">attach</a> your API Gateway projects to API hub to enable auto-ingestion for all your APIs. For more information see <a href="https://docs.cloud.google.com/api-gateway/docs/api-hub-overview">Centralize API management using API hub</a>.</p>
+<p><strong>Note:</strong> Rollouts of this release to production instances might take up to 5 business days to complete across all Google Cloud zones. Your instances might not have the feature available until the rollout is complete.</p>
+<hr />
+<h2 id="2025-12-17">2025-12-17</h2>
+<h3 id="feature_2">Feature</h3>
 <p><strong>Advanced API Security for multi-gateway projects</strong></p>
 <p>Apigee Advanced API Security can now centrally manage and govern the security posture of your APIs across multiple Apigee projects, environments, and gateways. This enhancement leverages API hub to provide a single, unified view of your API security, helping you to identify risks and enforce standards consistently across your entire organization.</p>
 <p>This enhancement introduces the following key capabilities:</p>
@@ -2295,14 +2313,14 @@
 <p><strong>Note:</strong> Rollouts of this feature will begin today, and may take five or more business days to be completed across all Google Cloud zones. You may not be able to view or use this feature until the rollout is complete.</p>
 <hr />
 <h2 id="2025-12-15">2025-12-15</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p><strong>New API card view</strong></p>
 <p>A new card view is now available for APIs in API hub. This view provides a more visual and comprehensive way to browse, edit, and manage your APIs, complementing the existing list view.</p>
 <p>The card view highlights key information for each API, such as the owner, last modified date, target users, gateway, API style, and business unit, to enhance discoverability and provide a richer at-a-glance overview of your API landscape.</p>
 <p>You can switch between the list and card views from the <strong>API hub &gt; APIs</strong> page.</p>
 <hr />
 <h2 id="2025-12-11">2025-12-11</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p><strong>Model Context Protocol (MCP) support in API hub</strong></p>
 <p>API hub now supports the Model Context Protocol (MCP) as a first-class API style. This enables you to ingest, register, and manage MCP APIs and their associated tools.</p>
 <p><strong>Key capabilities include:</strong></p>
@@ -2321,13 +2339,13 @@
 <li>You can now find and configure add-on services like Specification Linter and Semantic Search under the new unified <a href="https://docs.cloud.google.com/apigee/docs/apihub/manage-add-ons">Add-on Management</a> page, alongside other API hub add-ons.</li>
 <li>The deprovisioning function is now moved to a dedicated top-level tab called <strong>Deprovision</strong>.</li>
 </ul>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p><strong>New add-on management page in API hub</strong></p>
 <p>A new <strong>Add-on Management</strong> page is now available in API hub. This page serves as a centralized location to enable, configure, and manage all your add-on services.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/apigee/docs/apihub/manage-add-ons">Manage add-ons</a>.</p>
 <hr />
 <h2 id="2025-11-18">2025-11-18</h2>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p><strong>New API deployments view</strong></p>
 <p>API deployment information is now available as a separate tab in the <strong>API details</strong> page. You can view your API deployment details, create new deployments, and manage existing deployments using the API deployments tab.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/apigee/docs/apihub/manage-api-deployments">Manage deployments</a>.</p>
@@ -2341,7 +2359,7 @@
 <p>For more information, see <a href="https://docs.cloud.google.com/apigee/docs/apihub/tutorials/ingest-azure-api-hub">Ingest Microsoft Azure API data into API hub</a>.</p>
 <hr />
 <h2 id="2025-11-04">2025-11-04</h2>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p><strong>Filter APIs by user-defined attributes</strong></p>
 <p>You can now filter APIs using your custom, user-defined attributes from the <strong>APIs</strong> page in the Google Cloud console.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/apigee/docs/apihub/manage-attributes#filter-resources">Filter resources based on attributes</a>.</p>
@@ -2353,13 +2371,13 @@
 <p><strong>Workaround:</strong> There is no workaround available at this time. If your existing Apigee organization has data residency enabled, you will not be able to provision API hub until this limitation is resolved in a future release.</p>
 <hr />
 <h2 id="2025-10-28">2025-10-28</h2>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p><strong>API insights in API hub</strong></p>
 <p>API insights is now available in API hub, providing a unified view of your API traffic and performance across all connected gateways. With API insights, you can gain a holistic understanding of your API ecosystem's health and quickly identify areas for optimization.</p>
 <p>Currently, API insights supports data sources from Apigee, Apigee hybrid, Apigee Edge Public Cloud, and Apigee Edge Private Cloud (OPDK).</p>
 <p><strong>Note:</strong> Data residency (DRZ) and VPC-SC are not supported with API insights at this time.</p>
 <p>For more information, see <a href="https://cloud.google.com/apigee/docs/apihub/api-insights-overview">API insights overview</a>.</p>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p><strong>Detailed API resource insights</strong></p>
 <p>A new <strong>Insights</strong> tab is now available on the API details page, providing API-centric analytics to help you understand usage patterns and performance for each of your APIs.</p>
 <p>You can now analyze key metrics such as total traffic, average TPS, request/response latencies, and more, directly from the API details page.</p>
@@ -2391,7 +2409,7 @@
 <p>Updated Go client library. For more information, see <a href="https://github.com/googleapis/google-cloud-go/releases/tag/apihub/v0.2.0">apihub: v0.2.0</a>.</p>
 <hr />
 <h2 id="2025-09-08">2025-09-08</h2>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p><strong>Enable and disable semantic search</strong></p>
 <p>You can now enable and disable semantic search from the <strong>API hub &gt; Settings&gt; Actions</strong> page in the Google Cloud console.</p>
 <p>For more information, see <a href="https://cloud.google.com/apigee/docs/apihub/search-apis#enable-semantic-search">Enable and disable semantic search</a>.</p>
@@ -2410,24 +2428,24 @@
 <p>For more information, see <a href="https://cloud.google.com/apigee/docs/apihub/manage-versions">Manage versions</a>.</p>
 <hr />
 <h2 id="2025-08-22">2025-08-22</h2>
-<h3 id="feature_10">Feature</h3>
+<h3 id="feature_11">Feature</h3>
 <p><strong>Deprovision API hub in the UI</strong></p>
 <p>You can now deprovision an API hub instance from the <strong>API hub &gt; Settings &gt; Actions</strong> page in the Google Cloud console.</p>
 <p>For more information, see <a href="https://cloud.google.com/apigee/docs/apihub/deprovision">Deprovision Apigee API hub</a>.</p>
-<h3 id="feature_11">Feature</h3>
+<h3 id="feature_12">Feature</h3>
 <p><strong>Create and delete custom plugins in the UI</strong></p>
 <p>You can now create and delete custom plugins from the <strong>API hub &gt; Settings &gt; Plugins</strong> page in the Google Cloud console.</p>
 <p>For more information, see <a href="https://cloud.google.com/apigee/docs/apihub/create-custom-plugins">Create custom plugins</a> and <a href="https://cloud.google.com/apigee/docs/apihub/manage-custom-plugins">Manage custom plugins</a>.</p>
 <hr />
 <h2 id="2025-08-12">2025-08-12</h2>
-<h3 id="feature_12">Feature</h3>
+<h3 id="feature_13">Feature</h3>
 <p><strong>API observations in API hub (<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>)</strong></p>
 <p>API observations in API hub helps you tackle the challenges of undocumented and unmanaged APIs in your API infrastructure. It leverages Apigee <a href="https://cloud.google.com/apigee/docs/api-observation/shadow-api-discovery">shadow API discovery</a> and uses automated discovery processes to bring all your APIs, <strong>across Google Cloud projects</strong>, into a unified, managed view.</p>
 <p>For more information, see <a href="https://cloud.google.com/apigee/docs/apihub/api-observation-overview">API observations in API hub</a>.</p>
 <p><strong>Note:</strong> Rollouts of this feature will begin today, and may take five or more business days to be completed across all Google Cloud zones. You may not be able to view or use API observations until the rollout is complete. </p>
 <hr />
 <h2 id="2025-07-31">2025-07-31</h2>
-<h3 id="feature_13">Feature</h3>
+<h3 id="feature_14">Feature</h3>
 <p><strong>New data source support for plugins</strong></p>
 <p>API hub now supports importing API metadata through new dedicated plugins for the following data sources:</p>
 <ol>
@@ -2435,12 +2453,12 @@
 <li><a href="https://docs.apigee.com/private-cloud/v4.53.00/privatecloud-uapim-overview">Apigee Edge Private Cloud (OPDK)</a></li>
 </ol>
 <p>For more information, see <a href="https://cloud.google.com/apigee/docs/apihub/plugins">Plugins overview</a>.</p>
-<h3 id="feature_14">Feature</h3>
+<h3 id="feature_15">Feature</h3>
 <p><strong>Push-based plugin ingestion</strong></p>
 <p>API hub now supports push-based plugin ingestion. This method allows for more real-time synchronization of API metadata. All new <strong>Apigee, Apigee hybrid, Apigee Edge Public Cloud, and Apigee Edge Private Cloud (OPDK)</strong> plugins are created with push-based ingestion by default.</p>
 <p>For more information, see <a href="https://cloud.google.com/apigee/docs/apihub/plugins#plugin-data-ingestion-methods">Plugin data ingestion methods</a>.</p>
 <p><strong>Note:</strong> Rollouts of this feature will begin today, and may take five or more business days to be completed across all Google Cloud zones. You may not be able to create push-based plugins until the rollout is complete.</p>
-<h3 id="feature_15">Feature</h3>
+<h3 id="feature_16">Feature</h3>
 <p><strong>Create custom plugins [API only]</strong></p>
 <p>You can now use the <code>Create Plugin</code> API to create custom plugins in API hub. Custom plugins are created manually to connect API hub to a specific API data source.</p>
 <p>For more information, see <a href="https://cloud.google.com/apigee/docs/apihub/create-custom-plugins">Create custom plugins</a>.</p>
@@ -2488,7 +2506,7 @@
 <p>For more information, see <a href="https://cloud.google.com/apigee/docs/apihub/vpc-service-control">VPC Service Controls for API hub</a>.</p>
 <hr />
 <h2 id="2025-07-18">2025-07-18</h2>
-<h3 id="feature_16">Feature</h3>
+<h3 id="feature_17">Feature</h3>
 <p><strong>Apigee and hybrid plugin instance management</strong></p>
 <p>You can now create and delete plugin instances for Apigee and Apigee Hybrid while associating the respective Apigee runtime projects to API hub.</p>
 <p>For more information, see <a href="https://cloud.google.com/apigee/docs/apihub/auto-register-apigee-proxies">Auto-register Apigee proxies</a>.</p>
@@ -2510,7 +2528,7 @@
 <h2 id="2025-06-03">2025-06-03</h2>
 <h3 id="announcement">Announcement</h3>
 <p>On June 3, 2025, we released an updated version of Apigee.</p>
-<h3 id="feature_17">Feature</h3>
+<h3 id="feature_18">Feature</h3>
 <p><strong>Apigee API hub is enabled for new Apigee organizations in supported regions.</strong></p>
 <p>With this release, we are enabling <a href="https://cloud.google.com/apigee/docs/apihub/what-is-api-hub">Apigee API hub</a> for new Apigee organizations <a href="https://cloud.google.com/apigee/docs/locations#available-apigee-api-analytics-regions">in regions where API hub is supported</a>. All new Apigee organizations, including hybrid organizations, that select an API hub-supported region <em>for their Apigee Analytics region</em> during provisioning will have access to API hub features at no additional cost.</p>
 <p>API hub allows you to view, organize, and manage all of the APIs in your Apigee organization in one central location. To learn more, see <a href="https://cloud.google.com/apigee/docs/apihub/what-is-api-hub">What is Apigee API hub?</a></p>
@@ -2531,6 +2549,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#apigee-api-hub">Apigee API hub</a></li>
+          <li class="nav-item">
+            <a href="#2026-01-12" class="nav-link">2026-01-12</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-01-09" class="nav-link">2026-01-09</a>
           </li>

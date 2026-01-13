@@ -1,5 +1,14 @@
 # VPC Service Controls
 
+## 2026-01-13
+
+### Feature
+
+[Preview stage](https://cloud.google.com/products#product-launch-stages) support for the following integration:
+
+* [Cloud Location Finder](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_location_finder)
+
+---
 ## 2026-01-09
 
 ### Feature

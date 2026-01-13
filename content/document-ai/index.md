@@ -1,5 +1,23 @@
 # Document AI
 
+## 2026-01-12
+
+### Feature
+
+Document AI is introducing document-level prompting for custom document
+processors. This feature allows you to provide an overall description of the
+document to inject deep business knowledge into the model, leading to improved
+extraction quality.
+
+Document-level prompting offers improved accuracy by giving the model necessary
+context for extraction at the document level. This allows for easily supplied
+general information, such as geographical limitations (for example, *all the
+address fields are located in the USA*), to guide the model.
+
+For more details, refer to the documentation on custom extractor mechanisms
+and [document-level prompting](https://docs.cloud.google.com/document-ai/docs/ce-mechanisms#document-level-prompting).
+
+---
 ## 2025-12-15
 
 ### Feature

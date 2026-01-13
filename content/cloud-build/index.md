@@ -1,5 +1,20 @@
 # Cloud Build
 
+## 2026-01-12
+
+### Change
+
+Cloud Build now supports OCI artifacts. OCI artifacts for a build
+are shown in the following locations:
+
+* The Artifacts column of Build history page
+* The Execution details tab of the Build details page
+* The Build Artifacts tab of the Build details page
+
+For more information, see
+[View build results](https://docs.cloud.google.com/build/docs/view-build-results).
+
+---
 ## 2025-12-08
 
 ### Change

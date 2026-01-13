@@ -1,6 +1,24 @@
 {
   "name": "Apigee Advanced API Security",
   "entries": {
+    "2026-01-12": [
+      {
+        "kind": "Announcement",
+        "content": "On January 12, 2026 we released an updated version of Advanced API Security Abuse Detection",
+        "summary": {
+          "title": "API Security Abuse Detection Updated",
+          "summary": "An updated version of Advanced API Security Abuse Detection was released on January 12, 2026. This release includes improvements to how API abuse is detected."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Introduction of Terraform support for managing Advanced API Security abuse detection exclusion lists**\n\nYou can now use Terraform to manage Advanced API Security abuse detection\nexclusion lists. The feedback feature allows you to specify CIDR ranges and IP\naddresses to exclude from future incident reports, and is used to exclude\ntraffic known to be safe, such as requests related to automated testing.\n\n**Note:** Exclusion lists are not available for VPC-SC customers at this time.\n\nFor usage information, see\n[Exclude traffic from abuse detection](https://docs.cloud.google.com/apigee/docs/api-security/abuse-detection#exclude-traffic-from-abuse-detection)\nand [Use Terraform in Apigee](https://docs.cloud.google.com/apigee/docs/api-platform/get-started/terraform-overview)\nin the Apigee documentation and the\n[Terraform abuse detection feedback (exclusion lists) instructions](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/apigee_security_feedback).",
+        "summary": {
+          "title": "Manage API Security Exclusions with Terraform",
+          "summary": "You can now use Terraform to manage Advanced API Security abuse detection exclusion lists. This feature allows you to specify IP addresses and CIDR ranges to exclude from incident reports, helping to filter out known safe traffic. Note that this functionality is not available for VPC-SC customers."
+        }
+      }
+    ],
     "2025-12-17": [
       {
         "kind": "Feature",

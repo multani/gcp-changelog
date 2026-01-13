@@ -1,5 +1,29 @@
 # Apigee Advanced API Security
 
+## 2026-01-12
+
+### Announcement
+
+On January 12, 2026 we released an updated version of Advanced API Security Abuse Detection
+
+### Feature
+
+**Introduction of Terraform support for managing Advanced API Security abuse detection exclusion lists**
+
+You can now use Terraform to manage Advanced API Security abuse detection
+exclusion lists. The feedback feature allows you to specify CIDR ranges and IP
+addresses to exclude from future incident reports, and is used to exclude
+traffic known to be safe, such as requests related to automated testing.
+
+**Note:** Exclusion lists are not available for VPC-SC customers at this time.
+
+For usage information, see
+[Exclude traffic from abuse detection](https://docs.cloud.google.com/apigee/docs/api-security/abuse-detection#exclude-traffic-from-abuse-detection)
+and [Use Terraform in Apigee](https://docs.cloud.google.com/apigee/docs/api-platform/get-started/terraform-overview)
+in the Apigee documentation and the
+[Terraform abuse detection feedback (exclusion lists) instructions](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/apigee_security_feedback).
+
+---
 ## 2025-12-17
 
 ### Feature

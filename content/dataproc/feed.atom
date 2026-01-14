@@ -37,7 +37,25 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:dataproc:2026-01-06:fixed:1</id>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-01-06:announcement:1</id>
+    <published>2026-01-06T00:00:00+00:00</published>
+    <updated>2026-01-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions">Dataproc on Compute Engine subminor image versions</a>:</p>
+<ul>
+<li>2.0.156-debian10, 2.0.156-ubuntu18, 2.0.156-rocky8</li>
+<li>2.1.105-debian11, 2.1.105-ubuntu20, 2.1.105-ubuntu20-arm, 2.1.105-rocky8</li>
+<li>2.2.73-debian12, 2.2.73-ubuntu22, 2.2.73-ubuntu22-arm, 2.2.73-rocky9</li>
+<li>2.3.20-debian12, 2.3.20-ml-ubuntu22, 2.3.20-rocky9, 2.3.20-ubuntu22, 2.3.20-ubuntu22-arm</li>
+</ul>
+<p><strong>Rollback Notice:</strong> These image versions were rolled back on <a href="https://docs.cloud.google.com/dataproc/docs/release-notes#January_13_2026">January 13, 2026</a>.</p>]]></content>
+    <summary>New image versions for Dataproc on Compute Engine are now available, offering updated components and features. These updates include various Debian, Ubuntu, and Rocky Linux distributions across multiple Dataproc versions. Please note that these specific image versions were rolled back on January 13, 2026.</summary>
+    <title>Announcement: Dataproc image version updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-01-06:fixed:2</id>
     <published>2026-01-06T00:00:00+00:00</published>
     <updated>2026-01-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed the <code>spark.driver.extraClassPath</code> delimiter for the Jupyter SparkMonitor Listener.</p>]]></content>
@@ -48,29 +66,12 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:dataproc:2026-01-06:feature:2</id>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-01-06:feature:3</id>
     <published>2026-01-06T00:00:00+00:00</published>
     <updated>2026-01-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Added a new property <code>dataproc:pypi.repository</code> to customize the PyPI repository used for pip. The value can be a URL, or <code>google</code> to use a Google-hosted cache of PyPI, accessible without public internet connectivity. Starting in image version 3.1, <code>google</code> will be the default; to opt out and return to public PyPI, use the value <code>pypi</code>.</p>]]></content>
     <summary>You can now specify a custom PyPI repository URL or use a Google-hosted cache for pip installations. Starting with image version 3.1, the Google-hosted cache is the default. To revert to the public PyPI, set the value to `pypi`.</summary>
     <title>Feature: Customize PyPI Repository for Pip</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:dataproc:2026-01-06:announcement:3</id>
-    <published>2026-01-06T00:00:00+00:00</published>
-    <updated>2026-01-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions">Dataproc on Compute Engine subminor image versions</a>:</p>
-<ul>
-<li>2.0.156-debian10, 2.0.156-ubuntu18, 2.0.156-rocky8</li>
-<li>2.1.105-debian11, 2.1.105-ubuntu20, 2.1.105-ubuntu20-arm, 2.1.105-rocky8</li>
-<li>2.2.73-debian12, 2.2.73-ubuntu22, 2.2.73-ubuntu22-arm, 2.2.73-rocky9</li>
-<li>2.3.20-debian12, 2.3.20-ml-ubuntu22, 2.3.20-rocky9, 2.3.20-ubuntu22, 2.3.20-ubuntu22-arm</li>
-</ul>]]></content>
-    <summary>New subminor image versions are now available for Dataproc on Compute Engine. These updates include the latest patches and improvements across various operating system versions to enhance cluster stability and performance.</summary>
-    <title>Announcement: Dataproc image version updates</title>
   </entry>
   <entry>
     <author>

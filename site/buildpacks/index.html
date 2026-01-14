@@ -2280,21 +2280,29 @@
 
 
 <h1 id="buildpacks">Buildpacks</h1>
-<h2 id="2025-12-19">2025-12-19</h2>
+<h2 id="2026-01-13">2026-01-13</h2>
 <h3 id="feature">Feature</h3>
-<p>The Python buildpack supports default entrypoint detection for the <a href="https://docs.cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-adk-service">Agent Development Kit (ADK) framework</a> (Preview). For more information, see <a href="https://docs.cloud.google.com/docs/buildpacks/python#entrypoint">Build a Python application</a>.</p>
+<p>Cloud Run and Cloud Run functions source deployments support the <code>pyproject.toml</code>
+file for managing dependencies. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">General Availability</a> for all
+<a href="https://docs.cloud.google.com/docs/buildpacks/runtime-support#python">supported Python versions</a>.
+For more information, see <a href="https://docs.cloud.google.com/docs/buildpacks/python#deploy-with-toml">Deploy Python applications with a <code>pyproject.toml</code>
+file</a>.</p>
+<hr />
+<h2 id="2025-12-19">2025-12-19</h2>
 <h3 id="feature_1">Feature</h3>
+<p>The Python buildpack supports default entrypoint detection for the <a href="https://docs.cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-adk-service">Agent Development Kit (ADK) framework</a> (Preview). For more information, see <a href="https://docs.cloud.google.com/docs/buildpacks/python#entrypoint">Build a Python application</a>.</p>
+<h3 id="feature_2">Feature</h3>
 <p>Cloud Run and Cloud Run functions source deployments support <code>pyproject.toml</code>
 file for managing dependencies. This feature is in General Availability for Python version 3.13 and later, and is in Preview for Python version 3.12 and earlier.
 For more information, see <a href="https://docs.cloud.google.com/docs/buildpacks/python#deploy-with-toml">Deploy Python applications with a <code>pyproject.toml</code>
 file</a>.</p>
 <hr />
 <h2 id="2025-12-18">2025-12-18</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>Support for <a href="https://docs.cloud.google.com/buildpacks/docs/runtime-support#osonly">osonly24 runtime</a> is in <a href="https://cloud.google.com/products?e=48754805#product-launch-stages">Preview</a>. The OS only runtime lets you deploy Go applications from source, and binaries such as Dart and Go. For more information, see <a href="https://docs.cloud.google.com/docs/buildpacks/osonly">Configure the OS only runtime</a>.</p>
 <hr />
 <h2 id="2025-11-14">2025-11-14</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>Cloud Run and Cloud Run functions source deployments support <code>pyproject.toml</code>
 file for managing dependencies. If you use a <code>pyproject.toml</code> file, source deployments
 use one of the following to find and install dependencies:</p>
@@ -2307,11 +2315,11 @@ use one of the following to find and install dependencies:</p>
 file</a> (Preview).</p>
 <hr />
 <h2 id="2025-09-18">2025-09-18</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p>Ubuntu 24 builder with the <code>google-24</code> stack is available for Google Cloud's Buildpacks. For more information, see <a href="https://cloud.google.com/docs/buildpacks/builders">Builders</a> and <a href="https://cloud.google.com/docs/buildpacks/use-a-specific-builder">Use a specific builder</a>.</p>
 <hr />
 <h2 id="2025-08-14">2025-08-14</h2>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p>The Python buildpack supports Cloud Run source deployments for modern web frameworks such as <a href="https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-fastapi-service.md">FastAPI</a>, <a href="https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-gradio-service">Gradio</a>, and <a href="https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-streamlit-service">Streamlit</a>.</p>
 <p>For Python version 3.13 and later, the Python buildpack sets the default entrypoint for <a href="https://cloud.google.com/run/docs/deploying-source-code">Cloud Run source deployments</a> based on the web server or framework configuration in your <code>requirements.txt</code> file. For more information, see <a href="https://cloud.google.com/docs/buildpacks/python#entrypoint">Build a Python application</a>.</p>
 <hr /></div>
@@ -2325,6 +2333,9 @@ file</a> (Preview).</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#buildpacks">Buildpacks</a></li>
+          <li class="nav-item">
+            <a href="#2026-01-13" class="nav-link">2026-01-13</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-12-19" class="nav-link">2025-12-19</a>
           </li>

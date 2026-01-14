@@ -18,14 +18,6 @@ New [Serverless for Apache Spark runtime versions](https://cloud.google.com/data
 
 Removed use of deprecated Hadoop configuration properties `fs.default.name` and `yarn.resourcemanager.system-metrics-publisher.enabled`.
 
-### Fixed
-
-Fixed the `spark.driver.extraClassPath` delimiter for the Jupyter SparkMonitor Listener.
-
-### Feature
-
-Added a new property `dataproc:pypi.repository` to customize the PyPI repository used for pip. The value can be a URL, or `google` to use a Google-hosted cache of PyPI, accessible without public internet connectivity. Starting in image version 3.1, `google` will be the default; to opt out and return to public PyPI, use the value `pypi`.
-
 ### Announcement
 
 New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions):
@@ -34,6 +26,16 @@ New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.goog
 * 2.1.105-debian11, 2.1.105-ubuntu20, 2.1.105-ubuntu20-arm, 2.1.105-rocky8
 * 2.2.73-debian12, 2.2.73-ubuntu22, 2.2.73-ubuntu22-arm, 2.2.73-rocky9
 * 2.3.20-debian12, 2.3.20-ml-ubuntu22, 2.3.20-rocky9, 2.3.20-ubuntu22, 2.3.20-ubuntu22-arm
+
+**Rollback Notice:** These image versions were rolled back on [January 13, 2026](https://docs.cloud.google.com/dataproc/docs/release-notes#January_13_2026).
+
+### Fixed
+
+Fixed the `spark.driver.extraClassPath` delimiter for the Jupyter SparkMonitor Listener.
+
+### Feature
+
+Added a new property `dataproc:pypi.repository` to customize the PyPI repository used for pip. The value can be a URL, or `google` to use a Google-hosted cache of PyPI, accessible without public internet connectivity. Starting in image version 3.1, `google` will be the default; to opt out and return to public PyPI, use the value `pypi`.
 
 ---
 ## 2025-12-22

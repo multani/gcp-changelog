@@ -54,6 +54,16 @@ Data Boost now splits a request at a granularity of 1/1000, allowing for a
 greater number of concurrent requests to make progress. For more information,
 see [Quotas and limits](https://docs.cloud.google.com/spanner/quotas#data_boost_limits).
 
+### Feature
+
+Spanner Graph supports using the
+[`ANY CHEAPEST`](https://docs.cloud.google.com/spanner/docs/graph/work-with-paths#any-cheapest) path search
+prefix in a query to return the path with the lowest total compute cost. For
+more information, see
+[Path search prefix](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/graph-patterns#search_prefix)
+in the [Graph Query Language](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/graph-intro)
+reference.
+
 ---
 ## 2025-12-10
 

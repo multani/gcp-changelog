@@ -2,10 +2,6 @@
 
 ## 2026-01-01
 
-### Announcement
-
-
-
 ### Gemini Cloud Assist documentation migration
 
 Gemini Cloud Assist release notes are now published here. If you are

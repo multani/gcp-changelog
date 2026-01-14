@@ -1,5 +1,16 @@
 # Buildpacks
 
+## 2026-01-13
+
+### Feature
+
+Cloud Run and Cloud Run functions source deployments support the `pyproject.toml`
+file for managing dependencies. This feature is in [General Availability](https://cloud.google.com/products#product-launch-stages) for all
+[supported Python versions](https://docs.cloud.google.com/docs/buildpacks/runtime-support#python).
+For more information, see [Deploy Python applications with a `pyproject.toml`
+file](https://docs.cloud.google.com/docs/buildpacks/python#deploy-with-toml).
+
+---
 ## 2025-12-19
 
 ### Feature

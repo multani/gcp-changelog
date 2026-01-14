@@ -2293,10 +2293,6 @@
 <h2 id="2026-01-06">2026-01-06</h2>
 <h3 id="change">Change</h3>
 <p>Removed use of deprecated Hadoop configuration properties <code>fs.default.name</code> and <code>yarn.resourcemanager.system-metrics-publisher.enabled</code>.</p>
-<h3 id="fixed">Fixed</h3>
-<p>Fixed the <code>spark.driver.extraClassPath</code> delimiter for the Jupyter SparkMonitor Listener.</p>
-<h3 id="feature">Feature</h3>
-<p>Added a new property <code>dataproc:pypi.repository</code> to customize the PyPI repository used for pip. The value can be a URL, or <code>google</code> to use a Google-hosted cache of PyPI, accessible without public internet connectivity. Starting in image version 3.1, <code>google</code> will be the default; to opt out and return to public PyPI, use the value <code>pypi</code>.</p>
 <h3 id="announcement_1">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions">Dataproc on Compute Engine subminor image versions</a>:</p>
 <ul>
@@ -2305,6 +2301,11 @@
 <li>2.2.73-debian12, 2.2.73-ubuntu22, 2.2.73-ubuntu22-arm, 2.2.73-rocky9</li>
 <li>2.3.20-debian12, 2.3.20-ml-ubuntu22, 2.3.20-rocky9, 2.3.20-ubuntu22, 2.3.20-ubuntu22-arm</li>
 </ul>
+<p><strong>Rollback Notice:</strong> These image versions were rolled back on <a href="https://docs.cloud.google.com/dataproc/docs/release-notes#January_13_2026">January 13, 2026</a>.</p>
+<h3 id="fixed">Fixed</h3>
+<p>Fixed the <code>spark.driver.extraClassPath</code> delimiter for the Jupyter SparkMonitor Listener.</p>
+<h3 id="feature">Feature</h3>
+<p>Added a new property <code>dataproc:pypi.repository</code> to customize the PyPI repository used for pip. The value can be a URL, or <code>google</code> to use a Google-hosted cache of PyPI, accessible without public internet connectivity. Starting in image version 3.1, <code>google</code> will be the default; to opt out and return to public PyPI, use the value <code>pypi</code>.</p>
 <hr />
 <h2 id="2025-12-22">2025-12-22</h2>
 <h3 id="announcement_2">Announcement</h3>

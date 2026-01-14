@@ -1,5 +1,22 @@
 # Generative AI on Vertex AI
 
+## 2026-01-13
+
+### Feature
+
+**Veo 3.1 reference-to-video update**
+
+Veo 3.1 Preview models now support the following features:
+
+* 9:16 aspect ratio for reference-to-video.
+* Upsampling for videos generated at 1080p and 4k resolutions.
+
+For more information, see the following:
+
+* [Generate Veo videos from reference images](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/use-reference-images-to-guide-video-generation)
+* [Veo on Vertex AI video generation API](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/model-reference/veo-video-generation)
+
+---
 ## 2026-01-06
 
 ### Feature

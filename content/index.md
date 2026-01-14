@@ -176,6 +176,7 @@
 - [Speech-to-Text](speech-to-text/index.md)
 - [Storage Transfer Service](storage-transfer-service/index.md)
 - [Text-to-Speech](text-to-speech/index.md)
+- [Tools for PowerShell](tools-for-powershell/index.md)
 - [Transcoder API](transcoder-api/index.md)
 - [VPC Service Controls](vpc-service-controls/index.md)
 - [Vertex AI](vertex-ai/index.md)

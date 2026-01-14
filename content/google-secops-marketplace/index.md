@@ -1,5 +1,59 @@
 # Google SecOps Marketplace
 
+## 2026-01-14
+
+### Change
+
+**Azure Active Directory**: Version 20.0
+
+* Updated the action to include the email ID in the action output and expanded
+  capabilities to return all metadata fields in the following action:
+
+  + **Get Manager Contact Details**
+* **Integration**: Updated the code to handle special characters in identifiers
+  by implementing URL encoding and OData escaping.
+
+### Change
+
+**Slack**: Version 26.0
+
+* Updated the Base URL construction logic for the following action:
+
+  + **Build Block**
+
+### Change
+
+**Okta**: Version 12.0
+
+* Updated the pagination processing mechanismthe in following action:
+
+  + **List Users**
+
+### Change
+
+**Microsoft Graph Mail Delegated**: Version 12.0
+
+* Improved the "mark emails as read" functionality in the following connector:
+
+  + **Microsoft Graph Mail Delegated Connector**
+
+### Change
+
+**Microsoft Graph Mail**: Version 35.0
+
+* Improved the "mark emails as read" functionality in the following connector:
+
+  + **Microsoft Graph Mail Connector**
+
+### Change
+
+**Siemplify**: Version 100.0
+
+* Updated the following action to include the JSON result in the action output:
+
+  + **Get Custom Field Values**
+
+---
 ## 2026-01-07
 
 ### Feature

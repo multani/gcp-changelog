@@ -1,5 +1,17 @@
 # Dataproc
 
+## 2026-01-13
+
+### Announcement
+
+**Dataproc on Compute Engine:** The following subminor image versions announced on [January 06, 2026](https://docs.cloud.google.com/dataproc/docs/release-notes#January_06_2026) have been rolled back:
+
+* 2.0.156-debian10, 2.0.156-ubuntu18, 2.0.156-rocky8
+* 2.1.105-debian11, 2.1.105-ubuntu20, 2.1.105-ubuntu20-arm, 2.1.105-rocky8
+* 2.2.73-debian12, 2.2.73-ubuntu22, 2.2.73-ubuntu22-arm, 2.2.73-rocky9
+* 2.3.20-debian12, 2.3.20-ml-ubuntu22, 2.3.20-rocky9, 2.3.20-ubuntu22, 2.3.20-ubuntu22-arm
+
+---
 ## 2026-01-09
 
 ### Announcement

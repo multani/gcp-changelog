@@ -15,7 +15,7 @@ general information, such as geographical limitations (for example, *all the
 address fields are located in the USA*), to guide the model.
 
 For more details, refer to the documentation on custom extractor mechanisms
-and [document-level prompting](https://docs.cloud.google.com/document-ai/docs/ce-mechanisms#document-level-prompting).
+and [document-level prompting](https://docs.cloud.google.com/document-ai/docs/ce-mechanisms#document-level-prompts).
 
 ---
 ## 2025-12-15

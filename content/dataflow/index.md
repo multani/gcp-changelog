@@ -1,5 +1,16 @@
 # Dataflow
 
+## 2026-01-13
+
+### Feature
+
+Dataflow now serves a notice for when the Dataflow
+[Runner v2](https://docs.cloud.google.com/dataflow/docs/runner-v2) container image of a streaming pipeline
+will be upgraded. To use a new image and avoid the scheduled maintenance, launch
+a replacement job before the upgrade. For more information, see
+[Runner v2 harness update](https://docs.cloud.google.com/dataflow/docs/guides/common-errors#runner_v2_harness_update).
+
+---
 ## 2025-11-21
 
 ### Feature

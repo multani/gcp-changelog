@@ -105,6 +105,10 @@ An issue has been fixed where merged queries could disappear if a user edited on
 
 ### Fixed
 
+An issue has been identified and fixed in search where the latency in fetching search results spiked, causing search to be slow in returning results. A layer of caching has been added, causing search results to be more performant. **Note:** This item was added on January 13, 2026.
+
+### Fixed
+
 An issue has been fixed where the custom tooltip editor was unable to scroll to edit long tooltip templates. This feature now performs as expected.
 
 ### Fixed

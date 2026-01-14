@@ -1,5 +1,23 @@
 # Google Cloud VMware Engine
 
+## 2026-01-13
+
+### Feature
+
+Private clouds capable of hosting both `ve1` and `ve2` node-family clusters are
+available in the following additional regions:
+
+* London, England, Europe (`europe-west2-a`, `europe-west2-b`)
+* São Paulo, Brazil, South America (`southamerica-east1-a`)
+* Dallas, Texas, North America (`us-south1-b`)
+
+While a private cloud can contain mixed node families, each individual cluster
+must be comprised of nodes from the same family type.
+
+**Note:** To create a new cluster of a different node family, contact
+Cloud Customer Care.
+
+---
 ## 2026-01-06
 
 ### Feature

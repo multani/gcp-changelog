@@ -1,5 +1,106 @@
 # Container Optimized OS
 
+## 2026-01-14
+
+### Change
+
+
+
+### cos-125-19216-104-95
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/740cba961383c7ac618ea6c083b09027ec1c786b ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.104.95/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-40350 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68764 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68758 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68766 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68763 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40350 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68756 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40350 in the Linux kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 188034 250715 376068
+
+### Security
+
+Fixed CVE-2025-68329 in the Linux kernel.
+
+### Change
+
+
+
+### cos-121-18867-294-78
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/97e2b5284efaa0c1d58fe37dd438d4f1e64a835f ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.294.78/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-40350 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40350 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40350 in the Linux kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.tcp\_mem: 94044 125392 188088 -> 94041 125391 188082
+* Changed: net.ipv4.udp\_mem: 188088 250784 376176 -> 188085 250783 376170
+
+### Change
+
+
+
+### cos-117-18613-439-82
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/c1c785eede9ce8b473ad459859f5054d6e66af95 ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.439.82/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Added bcache clock cache replacement policy.
+
+---
 ## 2026-01-05
 
 ### Change

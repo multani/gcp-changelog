@@ -1,5 +1,19 @@
 # Storage Transfer Service
 
+## 2026-01-14
+
+### Feature
+
+Storage Transfer Service event-driven transfers are now available for Azure Blob
+Storage and Data Lake Storage Gen2 sources. Event-driven transfers listen
+to Azure Event Grid notifications via Azure Storage Queues to automatically
+transfer new or updated objects from your Azure container to
+Cloud Storage.
+
+For more information, see
+[Event-driven transfers from Azure Blob Storage or Data Lake Storage Gen2](https://docs.cloud.google.com/storage-transfer/docs/event-driven-azure).
+
+---
 ## 2025-12-02
 
 ### Feature

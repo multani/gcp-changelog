@@ -1,5 +1,16 @@
 # Google SecOps
 
+## 2026-01-15
+
+### Feature
+
+**OneMCP for Google SecOps**
+
+You can use the [Google SecOps remote MCP server](https://docs.cloud.google.com/chronicle/docs/secops/use-google-secops-mcp) to enable LLM agents to perform a range of data-related tasks.
+
+This feature is in Preview.
+
+---
 ## 2026-01-13
 
 ### Announcement

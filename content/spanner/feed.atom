@@ -2,9 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Spanner</title>
   <subtitle>Changelog for Google Cloud product: Spanner</subtitle>
-  <updated>2026-01-05T00:00:00+00:00</updated>
+  <updated>2026-01-13T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:spanner</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/spanner/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2026-01-13:feature:0</id>
+    <published>2026-01-13T00:00:00+00:00</published>
+    <updated>2026-01-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Several updates have been made to <a href="https://docs.cloud.google.com/spanner/docs/full-text-search">full-text search</a>:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/spanner/docs/full-text-search/search-indexes#create_and_query_a_search_index_for_a_named_schema">Named schemas</a>
+  now support full-text search.</li>
+<li>Spanner search indexes can now
+  <a href="https://docs.cloud.google.com/spanner/docs/full-text-search/pattern-matching-function-acceleration">accelerate pattern matching expressions</a>
+  such as <code>LIKE</code>, <code>STARTS_WITH</code>, and <code>ENDS_WITH</code> for pattern matching, and
+  <code>REGEXP_CONTAINS</code> for regular expression matching.</li>
+<li><a href="https://docs.cloud.google.com/spanner/docs/reference/standard-sql/search_functions#tokenize_fulltext"><code>TOKENIZE_FULLTEXT</code></a>
+  now has an argument for removing diacritics. <code>SEARCH</code> and <code>SCORE</code> automatically
+  use this if the data was tokenized with this option.</li>
+<li><a href="https://docs.cloud.google.com/spanner/docs/full-text-search/substring-search"><code>TOKENIZE_SUBSTRING</code></a> now
+  supports emojis.</li>
+</ul>]]></content>
+    <summary>Full-text search in Spanner has been significantly enhanced with support for named schemas, accelerated pattern matching, improved tokenization including diacritic removal and emoji support for substring searches. These updates offer more powerful and flexible text searching capabilities.</summary>
+    <title>Feature: Enhancements to Full-Text Search</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,12 @@
 # Looker
 
+## 2026-01-14
+
+### Feature
+
+Looker (Google Cloud core) is now available in the asia-southeast3 (Bangkok) region. For more information, see the [Looker (Google Cloud core) locations](https://docs.cloud.google.com/looker/docs/looker-core-locations#asia-pacific) documentation.
+
+---
 ## 2026-01-08
 
 ### Fixed

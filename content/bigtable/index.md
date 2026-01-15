@@ -11,6 +11,57 @@ indexes on the same base table. For more information, see
 [Continuous materialized views](https://docs.cloud.google.com/bigtable/docs/continuous-materialized-views).
 
 ---
+## 2025-12-22
+
+### Libraries
+
+### Python
+
+#### [2.35.0](https://github.com/googleapis/python-bigtable/compare/v2.34.0...v2.35.0) (2025-12-16)
+
+##### Features
+
+* add basic interceptor to client (#1206) ([6561cfac](https://github.com/googleapis/python-bigtable/commit/6561cfac))
+* Add encodings for STRUCT and the Timestamp type ([72dfdc44](https://github.com/googleapis/python-bigtable/commit/72dfdc44))
+* add PeerInfo proto in Bigtable API ([72dfdc44](https://github.com/googleapis/python-bigtable/commit/72dfdc44))
+* Add Type API updates needed to support structured keys in materialized views ([72dfdc44](https://github.com/googleapis/python-bigtable/commit/72dfdc44))
+* support mTLS certificates when available (#1249) ([ca20219c](https://github.com/googleapis/python-bigtable/commit/ca20219c))
+
+##### Bug Fixes
+
+* re-export AddToCell for consistency (#1241) ([2a5baf11](https://github.com/googleapis/python-bigtable/commit/2a5baf11))
+* async client uses fixed grace period (#1236) ([544db1cd](https://github.com/googleapis/python-bigtable/commit/544db1cd))
+* Deprecate credentials\_file argument ([72dfdc44](https://github.com/googleapis/python-bigtable/commit/72dfdc44))
+* Add ReadRows/SampleRowKeys bindings for materialized views ([72dfdc44](https://github.com/googleapis/python-bigtable/commit/72dfdc44))
+* retry cancelled errors (#1235) ([e3fd5d86](https://github.com/googleapis/python-bigtable/commit/e3fd5d86))
+
+### Java
+
+#### [2.71.0-rc1](https://github.com/googleapis/java-bigtable/compare/v2.70.1...v2.71.0-rc1) (2025-12-19)
+
+##### Features
+
+* update with latest from main ([#2740](https://github.com/googleapis/java-bigtable/issues/2740)) ([90e1a02](https://github.com/googleapis/java-bigtable/commit/90e1a02c46830751a0f158b3a337eb2f926b0ee0))
+* feat: Upgrade protobuf gen code to 4.33 ([#2741](https://github.com/googleapis/java-bigtable/issues/2741)) ([2b1d201](https://github.com/googleapis/java-bigtable/commit/2b1d201d56540cdb45b65b4ed2a1c786a519d3a0))
+
+##### Dependencies
+
+* update sdk-platform-java-config to 3.55.0-rc1 ([#2738](https://github.com/googleapis/java-bigtable/issues/2738)) ([136f164](https://github.com/googleapis/java-bigtable/commit/136f16474e7ff147c68e976894070727dfc9add8))
+
+---
+## 2025-12-15
+
+### Libraries
+
+### Java
+
+#### [2.70.1](https://github.com/googleapis/java-bigtable/compare/v2.70.0...v2.70.1) (2025-12-12)
+
+##### Dependencies
+
+* Update shared dependencies ([#2734](https://github.com/googleapis/java-bigtable/issues/2734)) ([2823705](https://github.com/googleapis/java-bigtable/commit/28237059edaa20028ea35a1903bdee8c02885260))
+
+---
 ## 2025-12-12
 
 ### Feature

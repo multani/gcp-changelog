@@ -1,5 +1,20 @@
 # Sensitive Data Protection
 
+## 2026-01-16
+
+### Feature
+
+The following infoType detectors are available in `global` and the `asia`,
+`europe`, and `us` multi-regions:
+
+* `IMAGE_TYPE/CONTEXT/VIOLENCE`
+* `IMAGE_TYPE/CONTEXT/SEXUALLY_EXPLICIT`
+* `IMAGE_TYPE/CONTEXT/SEXUALLY_SUGGESTIVE`
+
+For more information about all infoTypes, see [InfoType
+detector reference](https://cloud.google.com/sensitive-data-protection/docs/infotypes-reference).
+
+---
 ## 2026-01-05
 
 ### Feature

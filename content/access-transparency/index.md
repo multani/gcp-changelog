@@ -1,5 +1,12 @@
 # Access Transparency
 
+## 2026-01-05
+
+### Feature
+
+Workflows is generally available [(GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-12-22
 
 ### Feature

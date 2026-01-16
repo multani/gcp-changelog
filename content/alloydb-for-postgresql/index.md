@@ -1,5 +1,15 @@
 # AlloyDB for PostgreSQL
 
+## 2026-01-15
+
+### Fixed
+
+Memory usage estimation is more accurate for high-dimensional vector indexes. This
+fix prevents out of memory (OOM) errors by enforcing defined memory constraints
+throughout the index build process. You might need to increase your
+`maintenance_work_mem settings` to align with the real usage estimates.
+
+---
 ## 2025-12-24
 
 ### Change

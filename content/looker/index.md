@@ -33,6 +33,10 @@ An issue has been fixed where applying filters to a Google Map visualization wou
 
 An issue has been fixed where some columns in the Query Concurrency System Activity Explore were displaying null values. This feature now performs as expected.
 
+### Feature
+
+For [creating self-service Explores](https://docs.cloud.google.com/looker/docs/exploring-self-service) from Excel files that contain multiple worksheets, the **Data upload** dialog now lets you specify which Excel worksheet to upload. Previously, the self-service Explore was always based on the first worksheet in the Excel file. **Note:** This item was added on January 15, 2026.
+
 ### Fixed
 
 An issue has been fixed where a join wouldn't be added to the query, even if one was required by a measure of type `count_distinct`, `sum_distinct`, or `avg_distinct`.

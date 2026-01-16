@@ -2292,6 +2292,13 @@
 
 
 <h1 id="alloydb-for-postgresql">AlloyDB for PostgreSQL</h1>
+<h2 id="2026-01-15">2026-01-15</h2>
+<h3 id="fixed">Fixed</h3>
+<p>Memory usage estimation is more accurate for high-dimensional vector indexes. This
+fix prevents out of memory (OOM) errors by enforcing defined memory constraints
+throughout the index build process. You might need to increase your
+<code>maintenance_work_mem settings</code> to align with the real usage estimates.</p>
+<hr />
 <h2 id="2025-12-24">2025-12-24</h2>
 <h3 id="change">Change</h3>
 <p>The extension <code>vector</code>, which includes <code>pgvector</code> functions and operators, is updated to version 0.8.1.</p>
@@ -2604,6 +2611,9 @@ generally available
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#alloydb-for-postgresql">AlloyDB for PostgreSQL</a></li>
+          <li class="nav-item">
+            <a href="#2026-01-15" class="nav-link">2026-01-15</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-12-24" class="nav-link">2025-12-24</a>
           </li>

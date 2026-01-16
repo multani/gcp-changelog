@@ -2,9 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: AlloyDB for PostgreSQL</title>
   <subtitle>Changelog for Google Cloud product: AlloyDB for PostgreSQL</subtitle>
-  <updated>2025-12-24T00:00:00+00:00</updated>
+  <updated>2026-01-15T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/alloydb-for-postgresql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql:2026-01-15:fixed:0</id>
+    <published>2026-01-15T00:00:00+00:00</published>
+    <updated>2026-01-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Memory usage estimation is more accurate for high-dimensional vector indexes. This
+fix prevents out of memory (OOM) errors by enforcing defined memory constraints
+throughout the index build process. You might need to increase your
+<code>maintenance_work_mem settings</code> to align with the real usage estimates.</p>]]></content>
+    <summary>Memory usage estimation for high-dimensional vector indexes has been improved, preventing out-of-memory errors. Users may need to adjust their maintenance_work_mem settings to match the new estimates.</summary>
+    <title>Fixed: Improved memory usage for vector indexes</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

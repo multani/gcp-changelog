@@ -1,5 +1,25 @@
 # Firestore
 
+## 2026-01-15
+
+### Feature
+
+Firestore Enterprise edition now supports Native mode and the Pipeline operations interface.
+
+Pipeline operations are a new query interface for Firestore.
+This interface provides advanced query functionality that includes complex
+expressions. It also adds support for many new functions like `min`, `max`,
+`substring`, `regex_match` and `array_contains_all`.
+
+With Firestore Enterprise edition in Native mode,
+index creation is also completely optional, streamlining the process of developing new queries.
+
+To learn more about Pipeline operations,
+see the [query interfaces overview](https://docs.cloud.google.com/firestore/native/docs/query-data/understanding-core-pipelines).
+
+This feature is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-11-21
 
 ### Feature

@@ -1,5 +1,23 @@
 # Cloud Service Mesh
 
+## 2026-01-15
+
+### Announcement
+
+The following images are now rolling out for managed Cloud Service Mesh:
+
+* 1.21.6-asm.8 is rolling out to the rapid release channel.
+* 1.20.8-asm.60 is rolling out to the regular release channel.
+* 1.19.10-asm.55 is rolling out to the stable release channel.
+
+These patch releases contain the fixes for the following managed Cloud Service Mesh CVEs:
+
+| CVE | Proxy | Control Plane | CNI | Distroless |
+| --- | --- | --- | --- | --- |
+| [CVE-2025-61729](https://nvd.nist.gov/vuln/detail/CVE-2025-61729) | Yes | Yes | - | Yes |
+| [CVE-2025-61727](https://security-tracker.debian.org/tracker/CVE-2025-61727) | Yes | Yes | - | Yes |
+
+---
 ## 2025-12-15
 
 ### Announcement

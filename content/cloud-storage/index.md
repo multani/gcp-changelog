@@ -1,5 +1,15 @@
 # Cloud Storage
 
+## 2026-01-15
+
+### Feature
+
+When you
+[bulk restore soft-deleted objects](https://docs.cloud.google.com/storage/docs/use-soft-deleted-objects#bulk-restore),
+you can restore objects that were live at a specific time. You can also choose
+the objects to restore based on the object creation time.
+
+---
 ## 2025-12-16
 
 ### Feature

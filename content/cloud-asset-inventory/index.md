@@ -1,5 +1,16 @@
 # Cloud Asset Inventory
 
+## 2026-01-15
+
+### Feature
+
+The location granularity for the following
+[Bigtable Backup](https://docs.cloud.google.com/bigtable/docs/reference/admin/rest/v2/projects.instances.clusters.backups)
+resource type has changed from global to regional.
+
+* `bigtableadmin.googleapis.com/Backup`
+
+---
 ## 2026-01-07
 
 ### Feature

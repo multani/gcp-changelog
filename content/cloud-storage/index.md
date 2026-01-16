@@ -1,5 +1,18 @@
 # Cloud Storage
 
+## 2026-01-16
+
+### Feature
+
+You can now use [dry run](https://docs.cloud.google.com/storage/docs/batch-operations/overview#dry-run) mode
+to simulate storage batch operations jobs without modifying or deleting data.
+Dry run helps you to validate your job configuration before running the actual
+operation.
+
+To learn how to configure a dry run job, see [Create and manage batch operations
+jobs](https://docs.cloud.google.com/storage/docs/batch-operations/create-manage-batch-operation-jobs).
+
+---
 ## 2026-01-15
 
 ### Feature

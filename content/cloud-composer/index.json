@@ -1,6 +1,80 @@
 {
   "name": "Cloud Composer",
   "entries": {
+    "2026-01-14": [
+      {
+        "kind": "Feature",
+        "content": "[**Database retention policy**](https://docs.cloud.google.com/composer/docs/composer-3/configure-db-retention) is now available\nin environments with Airflow 3, starting with composer-3-airflow-3.1.0-build.5.\nThis change is now rolled out to all regions supported by Cloud Composer 3.",
+        "summary": {
+          "title": "Database retention policy now available",
+          "summary": "A database retention policy is now available for environments with Airflow 3. This feature, starting with composer-3-airflow-3.1.0-build.5, is rolled out to all supported regions."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "A new Cloud Composer release has started on **January 14, 2026**. Get ready\nfor upcoming changes and features as we roll out the new release to all regions.\nThis release is in progress at the moment. Listed changes and features might\nnot be available in some regions yet.",
+        "summary": {
+          "title": "New Cloud Composer Release Available",
+          "summary": "A new version of Cloud Composer was released on January 14, 2026. This update introduces new features and improvements, and is currently rolling out across all regions. Please note that some changes may not be immediately available in all locations as the deployment progresses."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [images](https://cloud.google.com/composer/docs/composer-versions#images-composer-2)\nare available in Cloud Composer 2:\n\n* [composer-2.16.2-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-16-2-airflow-2-10-5) (default)\n* [composer-2.16.2-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-16-2-airflow-2-9-3)",
+        "summary": {
+          "title": "New Composer Images Available",
+          "summary": "New images for Cloud Composer 2 are now available, including version 2.16.2 with Airflow 2.10.5 as the default. This update provides the latest enhancements and bug fixes for your Composer environments."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "*(Airflow 3.1.0 in Cloud Composer 3)*\nThe `apache-airflow-providers-google` package was upgraded to version 19.2.0.\n\nFor more information about changes, see the\n[apache-airflow-providers-google changelog](https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html).",
+        "summary": {
+          "title": "Airflow Provider Google Updated",
+          "summary": "The `apache-airflow-providers-google` package has been upgraded to version 19.2.0. This update includes various changes and improvements to the Google provider for Airflow. For detailed information, please refer to the official changelog."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "The following Cloud Composer versions and builds have reached their\n[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-3-airflow-2.9.3-build.12, composer-2.10.2-airflow-2.9.3,\ncomposer-2.10.2-airflow-2.10.2.",
+        "summary": {
+          "title": "Composer versions reaching end of support",
+          "summary": "Several Cloud Composer versions, including composer-3-airflow-2.9.3-build.12, composer-2.10.2-airflow-2.9.3, and composer-2.10.2-airflow-2.10.2, have reached their end of support period. Users are advised to upgrade to supported versions to ensure continued service availability and security."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Cloud Composer 3 environments no longer consume the Cloud SQL Admin API quota\nin the customer project.",
+        "summary": {
+          "title": "Composer 3: No longer uses Cloud SQL Admin API quota",
+          "summary": "Cloud Composer 3 environments have been updated to no longer consume the Cloud SQL Admin API quota within your project. This change aims to improve resource management and prevent potential quota limitations for your Cloud SQL instances."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Cloud Composer 3:\n\n* [composer-3-airflow-3.1.0-build.7](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-0-build-7)\n* [composer-3-airflow-2.10.5-build.24](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-24) (default)\n* [composer-3-airflow-2.9.3-build.44](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-44)",
+        "summary": {
+          "title": "New Airflow builds available",
+          "summary": "New Airflow builds are now available for Cloud Composer 3. This includes updates to Airflow 3.1.0, 2.10.5, and 2.9.3. The default build is now Airflow 2.10.5."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Improved error handling when an invalid Airflow version is specified during environment creation.",
+        "summary": {
+          "title": "Improved Airflow version error handling",
+          "summary": "We've enhanced error handling for environment creation when an invalid Airflow version is provided. This update ensures a clearer and more informative experience for users encountering version-related issues."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "*(Airflow 3.1.0 in Cloud Composer 3)*\nThe `apache-airflow-providers-cncf-kubernetes`\npackage was\n[upgraded to version 10.11.1](https://airflow.apache.org/docs/apache-airflow-providers-cncf-kubernetes/stable/changelog.html).\nFor changes in other packages, see the\n[preinstalled packages changelog](https://cloud.google.com/composer/docs/versions-packages).",
+        "summary": {
+          "title": "Airflow Provider Updated",
+          "summary": "The cncf-kubernetes provider for Airflow has been upgraded to version 10.11.1. For a full list of changes, please refer to the preinstalled packages changelog."
+        }
+      }
+    ],
     "2025-12-23": [
       {
         "kind": "Issue",
@@ -48,6 +122,14 @@
       },
       {
         "kind": "Change",
+        "content": "*(Airflow 3.1.0 in Cloud Composer 3)*\nThe `apache-airflow-providers-cncf-kubernetes`\npackage was\n[upgraded to version 10.11.0](https://airflow.apache.org/docs/apache-airflow-providers-cncf-kubernetes/stable/changelog.html).\nFor changes in other packages, see the\n[preinstalled packages changelog](https://cloud.google.com/composer/docs/versions-packages).",
+        "summary": {
+          "title": "Airflow 3.1.0 available in Composer",
+          "summary": "The apache-airflow-providers-cncf-kubernetes package has been upgraded to version 10.11.0 in Cloud Composer 3. For a full list of changes, please refer to the preinstalled packages changelog."
+        }
+      },
+      {
+        "kind": "Change",
         "content": "New [images](https://cloud.google.com/composer/docs/composer-versions#images-composer-2)\nare available in Cloud Composer 2:\n\n* [composer-2.16.1-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-16-1-airflow-2-10-5) (default)\n* [composer-2.16.1-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-16-1-airflow-2-9-3)",
         "summary": {
           "title": "New Composer Image Available",
@@ -60,6 +142,14 @@
         "summary": {
           "title": "Database retention policy available",
           "summary": "The database retention policy feature is now available for environments running Airflow 3, starting with composer-3-airflow-3.1.0-build.5. This feature provides enhanced control over database management within your environments and is rolling out across multiple regions."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "*(Airflow 3.1.0 in Cloud Composer 3)*\nThe `apache-airflow-providers-google` package was upgraded to version 19.1.0.\n\nFor more information about changes, see the\n[apache-airflow-providers-google changelog](https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html).",
+        "summary": {
+          "title": "Airflow Providers Google Updated",
+          "summary": "The apache-airflow-providers-google package has been upgraded to version 19.1.0 in Cloud Composer 3. This update includes various changes and improvements to the Google provider package. For a detailed list of modifications, please refer to the official Airflow documentation."
         }
       }
     ],

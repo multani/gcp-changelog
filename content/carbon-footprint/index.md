@@ -1,5 +1,15 @@
 # Carbon Footprint
 
+## 2026-01-01
+
+### Issue
+
+We have identified an issue resulting in incomplete Cloud Run emissions data for
+November and December 2025. Customers may observe lower than actual emissions
+for Cloud Run during this period. We are actively working on a fix and will
+provide an update when the data correction is available.
+
+---
 ## 2025-10-01
 
 ### Feature

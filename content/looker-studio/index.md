@@ -1,5 +1,32 @@
 # Looker Studio
 
+## 2026-01-15
+
+### Feature
+
+**Cross data source filtering**
+
+This feature lets you override default field IDs so that controls on a report can filter charts that are based on different data sources.
+
+[Learn more about using controls across data sources](https://docs.cloud.google.com/looker/docs/studio/use-controls-across-data-sources).
+
+### Feature
+
+**Show and hide individual charts and components**
+
+You can hide individual charts and components for all viewers or for a subset of viewers.
+
+See [Hide report components for viewers](https://cloud.google.com/looker/docs/studio/hide-report-components) for more information.
+
+### Feature
+
+**Histogram chart**
+
+You can visualize your data using histogram charts. Histograms are useful for understanding the shape, center, and spread of your data, which in turn can lead to insights that might be hidden in other types of charts, such as pie charts and bar charts.
+
+See the [Histogram reference](https://docs.cloud.google.com/looker/docs/studio/histogram-reference) for more information.
+
+---
 ## 2025-12-23
 
 ### Feature

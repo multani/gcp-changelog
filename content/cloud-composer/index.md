@@ -1,5 +1,71 @@
 # Cloud Composer
 
+## 2026-01-14
+
+### Feature
+
+[**Database retention policy**](https://docs.cloud.google.com/composer/docs/composer-3/configure-db-retention) is now available
+in environments with Airflow 3, starting with composer-3-airflow-3.1.0-build.5.
+This change is now rolled out to all regions supported by Cloud Composer 3.
+
+### Announcement
+
+A new Cloud Composer release has started on **January 14, 2026**. Get ready
+for upcoming changes and features as we roll out the new release to all regions.
+This release is in progress at the moment. Listed changes and features might
+not be available in some regions yet.
+
+### Change
+
+New [images](https://cloud.google.com/composer/docs/composer-versions#images-composer-2)
+are available in Cloud Composer 2:
+
+* [composer-2.16.2-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-16-2-airflow-2-10-5) (default)
+* [composer-2.16.2-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-16-2-airflow-2-9-3)
+
+### Change
+
+*(Airflow 3.1.0 in Cloud Composer 3)*
+The `apache-airflow-providers-google` package was upgraded to version 19.2.0.
+
+For more information about changes, see the
+[apache-airflow-providers-google changelog](https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html).
+
+### Deprecated
+
+The following Cloud Composer versions and builds have reached their
+[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):
+composer-3-airflow-2.9.3-build.12, composer-2.10.2-airflow-2.9.3,
+composer-2.10.2-airflow-2.10.2.
+
+### Change
+
+Cloud Composer 3 environments no longer consume the Cloud SQL Admin API quota
+in the customer project.
+
+### Change
+
+New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3)
+are available in Cloud Composer 3:
+
+* [composer-3-airflow-3.1.0-build.7](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-0-build-7)
+* [composer-3-airflow-2.10.5-build.24](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-24) (default)
+* [composer-3-airflow-2.9.3-build.44](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-44)
+
+### Fixed
+
+Improved error handling when an invalid Airflow version is specified during environment creation.
+
+### Change
+
+*(Airflow 3.1.0 in Cloud Composer 3)*
+The `apache-airflow-providers-cncf-kubernetes`
+package was
+[upgraded to version 10.11.1](https://airflow.apache.org/docs/apache-airflow-providers-cncf-kubernetes/stable/changelog.html).
+For changes in other packages, see the
+[preinstalled packages changelog](https://cloud.google.com/composer/docs/versions-packages).
+
+---
 ## 2025-12-23
 
 ### Issue
@@ -57,6 +123,15 @@ was copying incorrect content.
 
 ### Change
 
+*(Airflow 3.1.0 in Cloud Composer 3)*
+The `apache-airflow-providers-cncf-kubernetes`
+package was
+[upgraded to version 10.11.0](https://airflow.apache.org/docs/apache-airflow-providers-cncf-kubernetes/stable/changelog.html).
+For changes in other packages, see the
+[preinstalled packages changelog](https://cloud.google.com/composer/docs/versions-packages).
+
+### Change
+
 New [images](https://cloud.google.com/composer/docs/composer-versions#images-composer-2)
 are available in Cloud Composer 2:
 
@@ -76,6 +151,14 @@ europe-west10, europe-west12, europe-west15, europe-west4, europe-west6,
 europe-west8, europe-west9, me-central1, me-central2, me-west1,
 northamerica-northeast1, northamerica-northeast2, northamerica-south1,
 southamerica-east1, southamerica-west1, us-east5, us-south1, us-west3, us-west4.
+
+### Change
+
+*(Airflow 3.1.0 in Cloud Composer 3)*
+The `apache-airflow-providers-google` package was upgraded to version 19.1.0.
+
+For more information about changes, see the
+[apache-airflow-providers-google changelog](https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html).
 
 ---
 ## 2025-12-09

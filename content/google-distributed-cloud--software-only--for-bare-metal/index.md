@@ -1,5 +1,16 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-01-16
+
+### Change
+
+Updated the [multiple network interfaces for Pods](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/multi-nic)
+and [bundled load balancing with BGP](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/lb-bundled-bgp)
+features to support admin clusters for version 1.34 or higher. Admin cluster
+support for these features has also been added to the GKE On-Prem API, so you
+can specify these features with clients like [Terraform](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/gkeonprem_bare_metal_admin_cluster).
+
+---
 ## 2026-01-08
 
 ### Announcement
@@ -68,9 +79,9 @@ The following features were added in 1.34.0-gke.566:
 * **Preview**: Added support for advanced networking features on admin
   clusters. This capability lets you specify [multiple network interfaces for
   Pods](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/multi-nic)
-  and lets you use [bundled load balancing with
-  BGP](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/lb-bundled-bgp)
-  on your version 1.34 or higher admin clusters.
+  and lets you use [bundled load balancing with BGP](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/%0A%20docs/how-to/lb-bundled-bgp) on your version 1.34 or higher admin clusters.
+
+  This note is incorrect; see entry for [January 16, 2026](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/release-notes#January_16_2026).
 
 ### Change
 

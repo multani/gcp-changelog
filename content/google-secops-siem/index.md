@@ -1,5 +1,22 @@
 # Google SecOps SIEM
 
+## 2026-01-18
+
+### Announcement
+
+Release 6.3.72 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains the following changes:
+
+### Feature
+
+**Integration Rollback**
+
+**This feature is currently in Preview**.
+
+You can now roll back commercial response integrations to their previously installed version. This action reverts all integration content, including standard code and any custom modifications, to the state of the last installed version. For more information, see [Roll back response integration version](https://docs.cloud.google.com/chronicle/docs/soar/respond/integrations-setup/version-rollback).
+
+---
 ## 2026-01-17
 
 ### Announcement

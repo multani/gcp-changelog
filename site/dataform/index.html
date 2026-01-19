@@ -2292,6 +2292,21 @@
 
 
 <h1 id="dataform">Dataform</h1>
+<h2 id="2026-01-19">2026-01-19</h2>
+<h3 id="breaking">Breaking</h3>
+<p><a href="https://docs.cloud.google.com/dataform/docs/sql-workflows">Dataform workflows</a>,
+<a href="https://docs.cloud.google.com/bigquery/docs/orchestrate-notebooks">BigQuery notebooks</a>,
+<a href="https://docs.cloud.google.com/bigquery/docs/schedule-pipelines">pipelines</a>,
+and
+<a href="https://docs.cloud.google.com/bigquery/docs/orchestrate-data-preparations">data preparations</a>
+are enforcing strict act-as mode at the project level. To avoid failures and
+maintain automatic releases, you must use custom service accounts instead of the
+default Dataform service agent across all repositories. You must also grant the
+Service Account User role (<code>roles/iam.serviceAccountUser</code>) to the default
+Dataform service agent and relevant principals. For more information and to
+verify act-as permissions, see
+<a href="https://docs.cloud.google.com/dataform/docs/strict-act-as-mode">Use strict act-as mode</a>.</p>
+<hr />
 <h2 id="2025-12-16">2025-12-16</h2>
 <h3 id="feature">Feature</h3>
 <p><a href="https://docs.cloud.google.com/dataform/docs/strict-act-as-mode">Strict act-as mode</a>
@@ -2399,6 +2414,9 @@ This feature is
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#dataform">Dataform</a></li>
+          <li class="nav-item">
+            <a href="#2026-01-19" class="nav-link">2026-01-19</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-12-16" class="nav-link">2025-12-16</a>
           </li>

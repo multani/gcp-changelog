@@ -2,9 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: BigQuery</title>
   <subtitle>Changelog for Google Cloud product: BigQuery</subtitle>
-  <updated>2026-01-07T00:00:00+00:00</updated>
+  <updated>2026-01-19T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:bigquery</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/bigquery/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-01-19:breaking:0</id>
+    <published>2026-01-19T00:00:00+00:00</published>
+    <updated>2026-01-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/dataform/docs/sql-workflows">Dataform workflows</a>,
+<a href="https://docs.cloud.google.com/bigquery/docs/orchestrate-notebooks">BigQuery notebooks</a>,
+<a href="https://docs.cloud.google.com/bigquery/docs/schedule-pipelines">pipelines</a>,
+and
+<a href="https://docs.cloud.google.com/bigquery/docs/orchestrate-data-preparations">data preparations</a>
+are enforcing strict act-as mode at the project level. To avoid failures and
+maintain automatic releases, you must use custom service accounts instead of the
+default Dataform service agent across all repositories. You must also grant the
+Service Account User role (<code>roles/iam.serviceAccountUser</code>) to the default
+Dataform service agent and relevant principals. For more information and to
+verify act-as permissions, see
+<a href="https://docs.cloud.google.com/dataform/docs/strict-act-as-mode">Use strict act-as mode</a>.</p>]]></content>
+    <summary>Strict act-as mode is now enforced for Dataform workflows, BigQuery notebooks, pipelines, and data preparations at the project level. To prevent failures, update your repositories to use custom service accounts instead of the default Dataform service agent and grant the Service Account User role to the Dataform service agent and other relevant principals.</summary>
+    <title>Breaking: Action Required: Update Dataform Service Accounts</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

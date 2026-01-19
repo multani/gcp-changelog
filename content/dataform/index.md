@@ -1,5 +1,23 @@
 # Dataform
 
+## 2026-01-19
+
+### Breaking
+
+[Dataform workflows](https://docs.cloud.google.com/dataform/docs/sql-workflows),
+[BigQuery notebooks](https://docs.cloud.google.com/bigquery/docs/orchestrate-notebooks),
+[pipelines](https://docs.cloud.google.com/bigquery/docs/schedule-pipelines),
+and
+[data preparations](https://docs.cloud.google.com/bigquery/docs/orchestrate-data-preparations)
+are enforcing strict act-as mode at the project level. To avoid failures and
+maintain automatic releases, you must use custom service accounts instead of the
+default Dataform service agent across all repositories. You must also grant the
+Service Account User role (`roles/iam.serviceAccountUser`) to the default
+Dataform service agent and relevant principals. For more information and to
+verify act-as permissions, see
+[Use strict act-as mode](https://docs.cloud.google.com/dataform/docs/strict-act-as-mode).
+
+---
 ## 2025-12-16
 
 ### Feature

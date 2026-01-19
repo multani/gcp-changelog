@@ -2292,6 +2292,21 @@
 
 
 <h1 id="bigquery">BigQuery</h1>
+<h2 id="2026-01-19">2026-01-19</h2>
+<h3 id="breaking">Breaking</h3>
+<p><a href="https://docs.cloud.google.com/dataform/docs/sql-workflows">Dataform workflows</a>,
+<a href="https://docs.cloud.google.com/bigquery/docs/orchestrate-notebooks">BigQuery notebooks</a>,
+<a href="https://docs.cloud.google.com/bigquery/docs/schedule-pipelines">pipelines</a>,
+and
+<a href="https://docs.cloud.google.com/bigquery/docs/orchestrate-data-preparations">data preparations</a>
+are enforcing strict act-as mode at the project level. To avoid failures and
+maintain automatic releases, you must use custom service accounts instead of the
+default Dataform service agent across all repositories. You must also grant the
+Service Account User role (<code>roles/iam.serviceAccountUser</code>) to the default
+Dataform service agent and relevant principals. For more information and to
+verify act-as permissions, see
+<a href="https://docs.cloud.google.com/dataform/docs/strict-act-as-mode">Use strict act-as mode</a>.</p>
+<hr />
 <h2 id="2026-01-07">2026-01-07</h2>
 <h3 id="feature">Feature</h3>
 <p>You can now use the Google-developed, open source
@@ -2869,7 +2884,7 @@ customer data is protected and processed by Gemini in BigQuery.</p>
 <p>An updated version of the <a href="https://docs.cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers#odbc_release_3151022">ODBC driver for BigQuery</a> is now available.</p>
 <hr />
 <h2 id="2025-10-08">2025-10-08</h2>
-<h3 id="breaking">Breaking</h3>
+<h3 id="breaking_1">Breaking</h3>
 <p>The <a href="https://docs.cloud.google.com/bigquery/quotas#query_jobs">default limit of <code>QueryUsagePerDay</code></a> for
 on-demand pricing has changed. The default limit of all new projects is now 200
 TiB. For existing projects, the default limit has been set based on your
@@ -3628,6 +3643,9 @@ use the <code>PARTITION BY</code> clause of the
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#bigquery">BigQuery</a></li>
+          <li class="nav-item">
+            <a href="#2026-01-19" class="nav-link">2026-01-19</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-01-07" class="nav-link">2026-01-07</a>
           </li>

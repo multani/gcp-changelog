@@ -2,9 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Dataform</title>
   <subtitle>Changelog for Google Cloud product: Dataform</subtitle>
-  <updated>2025-12-16T00:00:00+00:00</updated>
+  <updated>2026-01-19T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:dataform</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/dataform/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataform:2026-01-19:breaking:0</id>
+    <published>2026-01-19T00:00:00+00:00</published>
+    <updated>2026-01-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/dataform/docs/sql-workflows">Dataform workflows</a>,
+<a href="https://docs.cloud.google.com/bigquery/docs/orchestrate-notebooks">BigQuery notebooks</a>,
+<a href="https://docs.cloud.google.com/bigquery/docs/schedule-pipelines">pipelines</a>,
+and
+<a href="https://docs.cloud.google.com/bigquery/docs/orchestrate-data-preparations">data preparations</a>
+are enforcing strict act-as mode at the project level. To avoid failures and
+maintain automatic releases, you must use custom service accounts instead of the
+default Dataform service agent across all repositories. You must also grant the
+Service Account User role (<code>roles/iam.serviceAccountUser</code>) to the default
+Dataform service agent and relevant principals. For more information and to
+verify act-as permissions, see
+<a href="https://docs.cloud.google.com/dataform/docs/strict-act-as-mode">Use strict act-as mode</a>.</p>]]></content>
+    <summary>Dataform and BigQuery are enforcing strict act-as mode at the project level. To prevent service disruptions, you must update your configurations to use custom service accounts and grant specific IAM roles. Please refer to the documentation for detailed instructions.</summary>
+    <title>Breaking: Important changes to Dataform and BigQuery</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

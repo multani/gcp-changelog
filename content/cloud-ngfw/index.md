@@ -1,5 +1,12 @@
 # Cloud NGFW
 
+## 2026-01-13
+
+### Feature
+
+You can now create regional firewall policies that apply to managed Envoy proxies used by internal Application Load Balancers and internal proxy Network Load Balancers. For more information, see [Use regional network firewall policies to protect internal Application Load Balancers and internal proxy Network Load Balancers](https://docs.cloud.google.com/firewall/docs/regional-network-app-lb). This feature is available in **Preview**.
+
+---
 ## 2025-11-17
 
 ### Feature

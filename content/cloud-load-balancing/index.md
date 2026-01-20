@@ -1,5 +1,25 @@
 # Cloud Load Balancing
 
+## 2026-01-19
+
+### Feature
+
+Backend buckets are available for
+regional external Application Load Balancers and regional internal Application Load Balancers.
+
+This feature enables to serve static content (such as images, video, and CSS)
+confined to a specific region, helping you meet strict data residency and
+compliance requirements for regulated workloads. This update ensures backend
+bucket availability across the entire Application Load Balancers portfolio.
+
+For more information, see the following:
+
+* [Set up a regional external Application Load Balancer with Cloud Storage buckets](https://docs.cloud.google.com/load-balancing/docs/https/setup-reg-ext-app-lb-backend-buckets)
+* [Set up a regional internal Application Load Balancer with Cloud Storage buckets](https://docs.cloud.google.com/load-balancing/docs/l7-internal/setup-regional-internal-buckets)
+
+This feature is in **Preview**.
+
+---
 ## 2026-01-16
 
 ### Feature

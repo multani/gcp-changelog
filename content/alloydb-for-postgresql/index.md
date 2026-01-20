@@ -1,5 +1,12 @@
 # AlloyDB for PostgreSQL
 
+## 2026-01-19
+
+### Feature
+
+AlloyDB now supports the Z3 machine series, which are powered by 4th generation Intel x86 processors (Sapphire Rapids) with Titanium SSD. These instances offer machine sizes, with up to 88 vCPU and 704 GiB RAM, that let you run storage-intensive workloads with large working datasets. For more information, see [Choose an AlloyDB machine type](https://docs.cloud.google.com/alloydb/docs/choose-machine-type#z3-standardlssd). This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+---
 ## 2026-01-15
 
 ### Fixed

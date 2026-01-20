@@ -1,5 +1,12 @@
 # Memorystore for Memcached
 
+## 2026-01-20
+
+### Deprecated
+
+Memorystore for Memcached is being deprecated and will be shut down on January 31, 2029. After February 1, 2027, you can't create Memorystore for Memcached instances in new projects unless these instances already exist in these projects. We recommend that you migrate your workloads to [Memorystore for Valkey](https://docs.cloud.google.com/memorystore/docs/valkey), which offers superior performance and features.
+
+---
 ## 2025-08-26
 
 ### Feature

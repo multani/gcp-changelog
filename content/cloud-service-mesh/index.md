@@ -1,5 +1,33 @@
 # Cloud Service Mesh
 
+## 2026-01-20
+
+### Announcement
+
+**1.28.2-asm.4 is now available for in-cluster Cloud Service Mesh.**
+
+You can now download 1.28.2-asm.4 for in-cluster Cloud Service Mesh. It includes the features of [Istio 1.28.0](https://istio.io/latest/news/releases/1.28.x/announcing-1.28/) subject to the list of [supported features](https://docs.cloud.google.com/service-mesh/docs/supported-features-in-cluster).
+
+The following environment variables, fields, and annotations are not supported:
+
+* `PILOT_SPAWN_UPSTREAM_SPAN_FOR_GATEWAY`
+* Additional attributes for `HTTPCookie` in the DestinationRule API
+* `caCertCredentialName` field in ServerTLSSettings API
+* Optional `NetworkPolicy` for Istiod deployment
+* Disable shadow host suffix
+* `MAX_CONNECTIONS_PER_SOCKET_EVENT_LOOP`
+
+Istio dual stack is not supported
+
+Istio's experimental feature to enable lazy subset creation of envoy statistics
+is not supported.
+
+The `ENABLE_AUTO_SNI` flag is still supported to stay aligned with legacy
+behavior.
+
+For details on upgrading Cloud Service Mesh, see [Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service Mesh version 1.28.2-asm.4 uses Envoy v1.36.5-dev.
+
+---
 ## 2026-01-15
 
 ### Announcement

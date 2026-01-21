@@ -1,5 +1,14 @@
 # Cloud SQL for MySQL
 
+## 2026-01-15
+
+### Feature
+
+Cloud SQL for MySQL now supports fast clone operations within the same zone ([GA](https://cloud.google.com/products#product-launch-stages)).
+
+For more information, see [Clone an instance](https://docs.cloud.google.com/sql/docs/mysql/clone-instance).
+
+---
 ## 2025-12-17
 
 ### Feature

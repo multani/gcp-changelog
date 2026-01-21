@@ -1,5 +1,14 @@
 # Backup and DR
 
+## 2026-01-20
+
+### Feature
+
+Cost reports are now generally available for Backup and DR Service. Use cost reports
+to view resource specific Backup & DR Billing costs to gain granular insights
+into service spend and take actions to optimize resource allocation.
+
+---
 ## 2026-01-07
 
 ### Announcement

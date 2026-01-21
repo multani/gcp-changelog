@@ -1,5 +1,30 @@
 # Vertex AI Workbench
 
+## 2026-01-16
+
+### Feature
+
+[Preview](https://cloud.google.com/products#product-launch-stages):
+The Gemini CLI is available in Vertex AI Workbench instances.
+The Gemini CLI is an open source AI agent that provides access to
+Gemini directly in a terminal. You can use the Gemini CLI
+to do tasks like the following:
+
+* Create a new notebook.
+* Run notebook cells.
+* Write and edit a notebook's code and text cells.
+* Explain code and technical concepts.
+* Interact with a Vertex AI Workbench instance's local file system,
+  including performing complex file operations that span multiple files
+  based on a single, high-level instruction.
+* Run basic shell commands.
+* Run commands to interact with other Google Cloud services, such as
+  Vertex AI and BigQuery.
+
+To get started, see
+[Use the Gemini CLI](https://docs.cloud.google.com/vertex-ai/docs/workbench/instances/gemini-cli).
+
+---
 ## 2025-12-12
 
 ### Feature

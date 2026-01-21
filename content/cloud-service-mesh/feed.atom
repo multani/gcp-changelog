@@ -2,9 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Service Mesh</title>
   <subtitle>Changelog for Google Cloud product: Cloud Service Mesh</subtitle>
-  <updated>2026-01-15T00:00:00+00:00</updated>
+  <updated>2026-01-20T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-service-mesh</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-service-mesh/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-01-20:announcement:0</id>
+    <published>2026-01-20T00:00:00+00:00</published>
+    <updated>2026-01-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>1.28.2-asm.4 is now available for in-cluster Cloud Service Mesh.</strong></p>
+<p>You can now download 1.28.2-asm.4 for in-cluster Cloud Service Mesh. It includes the features of <a href="https://istio.io/latest/news/releases/1.28.x/announcing-1.28/">Istio 1.28.0</a> subject to the list of <a href="https://docs.cloud.google.com/service-mesh/docs/supported-features-in-cluster">supported features</a>.</p>
+<p>The following environment variables, fields, and annotations are not supported:</p>
+<ul>
+<li><code>PILOT_SPAWN_UPSTREAM_SPAN_FOR_GATEWAY</code></li>
+<li>Additional attributes for <code>HTTPCookie</code> in the DestinationRule API</li>
+<li><code>caCertCredentialName</code> field in ServerTLSSettings API</li>
+<li>Optional <code>NetworkPolicy</code> for Istiod deployment</li>
+<li>Disable shadow host suffix</li>
+<li><code>MAX_CONNECTIONS_PER_SOCKET_EVENT_LOOP</code></li>
+</ul>
+<p>Istio dual stack is not supported</p>
+<p>Istio's experimental feature to enable lazy subset creation of envoy statistics
+is not supported.</p>
+<p>The <code>ENABLE_AUTO_SNI</code> flag is still supported to stay aligned with legacy
+behavior.</p>
+<p>For details on upgrading Cloud Service Mesh, see <a href="https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service Mesh version 1.28.2-asm.4 uses Envoy v1.36.5-dev.</p>]]></content>
+    <summary>Version 1.28.2-asm.4 of in-cluster Cloud Service Mesh is now available. This update includes features from Istio 1.28.0, with specific limitations noted in the documentation. You can find details on upgrading and supported features on the Cloud Service Mesh documentation pages.</summary>
+    <title>Announcement: New Cloud Service Mesh version available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

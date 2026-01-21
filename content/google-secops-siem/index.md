@@ -2,6 +2,14 @@
 
 ## 2026-01-18
 
+### Feature
+
+**Integration Rollback**
+
+**This feature is currently in Preview**.
+
+You can now roll back commercial response integrations to their previously installed version. This action reverts all integration content, including standard code and any custom modifications, to the state of the last installed version. For more information, see [Roll back response integration version](https://docs.cloud.google.com/chronicle/docs/soar/respond/integrations-setup/version-rollback).
+
 ### Announcement
 
 Release 6.3.72 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
@@ -22,6 +30,29 @@ You can now roll back commercial response integrations to their previously insta
 ### Announcement
 
 [Release 6.3.71](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#January_11_2026) is now available for all regions.
+
+---
+## 2026-01-16
+
+### Feature
+
+**Perform all-time searches**
+
+You can now run searches over your full retention period by clicking the **Time Picker**
+on the **Search editor** panel and selecting **All Time**. This functionality is
+supported for event searches, and results remain limited to a maximum of 1M events.
+
+For more information, see [Search for events and alerts](https://docs.cloud.google.com/chronicle/docs/investigation/udm-search).
+
+### Feature
+
+**Perform all-time searches**
+
+You can now run searches over your full retention period by clicking the **Time Picker**
+on the **Search editor** panel and selecting **All Time**. This functionality is
+supported for event searches, and results remain limited to a maximum of 1M events.
+
+For more information, see [Search for events and alerts](https://docs.cloud.google.com/chronicle/docs/investigation/udm-search).
 
 ---
 ## 2026-01-15

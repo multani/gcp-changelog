@@ -1,5 +1,12 @@
 # Network Security Integration
 
+## 2026-01-14
+
+### Feature
+
+You can now integrate your network security appliances directly in the network traffic path for inspection and identify any threats before the traffic reaches its destination. For more information, see [In-band integration overview](https://docs.cloud.google.com/network-security-integration/docs/in-band/in-band-integration-overview). This feature is available in **General Availability**.
+
+---
 ## 2025-06-05
 
 ### Changed

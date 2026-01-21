@@ -1,5 +1,79 @@
 # Google SecOps Marketplace
 
+## 2026-01-21
+
+### Feature
+
+New **Azure API** integration
+
+### Feature
+
+**Okta**: Version 13.0
+
+* The following new action has been added:
+
+  + **Clear Okta User Session**
+
+### Change
+
+**Azure Active Directory**: Version 21.0
+
+* Updated the JSON result example of the following action:
+
+  + **List Members in The Group**
+* Added more metadata to the JSON result example of the following action:
+
+  + **List Groups**
+
+### Change
+
+**Google Cloud API**: Version 7.0
+
+* Updated `Expected Response Values` description in the following action:
+
+  + **Execute HTTP Request**
+
+### Change
+
+**Google Chronicle**: Version 73.0
+
+* Updated the processing of queries in the following action:
+
+  + **Execute UDM Query**
+
+### Change
+
+**QRadar**: Version 62.0
+
+* Updated the event processing logic of the following connector:
+
+  + **QRadar Correlations Connector V2**
+
+### Change
+
+**Microsoft 365 Defender**: Version 22.0
+
+* Updated the tracking logic for alerts in the following connector:
+
+  + **Microsoft 365 Defender - Incidents Connector**
+
+### Change
+
+**HTTP v2**: Version 12.0
+
+* Updated `Expected Response Values` description in the following action:
+
+  + **Execute HTTP Request**
+
+### Change
+
+**Netskope**: Version 14.0
+
+* Refactored the following action:
+
+  + **Ping**
+
+---
 ## 2026-01-14
 
 ### Change

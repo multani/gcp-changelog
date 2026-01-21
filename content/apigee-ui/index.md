@@ -1,5 +1,17 @@
 # Apigee UI
 
+## 2026-01-20
+
+### Deprecated
+
+**Debug v1 turndown**
+
+As of January 20, 2026, Debug v1 has been turned down and is no longer
+available. Please use
+[Debug v2](https://docs.cloud.google.com/apigee/docs/api-platform/debug/trace)
+(now referred to as Debug) for debugging API proxies.
+
+---
 ## 2026-01-12
 
 ### Announcement

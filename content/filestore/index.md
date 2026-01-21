@@ -1,5 +1,12 @@
 # Filestore
 
+## 2026-01-20
+
+### Feature
+
+Filestore is available in `asia-southeast3` (Bangkok). For more information, see [Filestore regions and zones](https://docs.cloud.google.com/filestore/docs/regions).
+
+---
 ## 2025-10-20
 
 ### Feature

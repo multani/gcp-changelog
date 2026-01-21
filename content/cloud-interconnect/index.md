@@ -1,5 +1,17 @@
 # Cloud Interconnect
 
+## 2026-01-20
+
+### Feature
+
+Dedicated Cloud Interconnect support is available in the following colocation facilities:
+
+* Bangkok, Thailand
+
+For more information, see the [Locations table](https://docs.cloud.google.com/network-connectivity/docs/interconnect/concepts/choosing-colocation-facilities#locations-table)
+and [Global locations](https://cloud.google.com/about/locations).
+
+---
 ## 2025-12-17
 
 ### Feature

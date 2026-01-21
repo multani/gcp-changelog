@@ -2,9 +2,176 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Config Connector</title>
   <subtitle>Changelog for Google Cloud product: Config Connector</subtitle>
-  <updated>2025-12-19T00:00:00+00:00</updated>
+  <updated>2026-01-09T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:config-connector</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/config-connector/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-01-09:change:0</id>
+    <published>2026-01-09T00:00:00+00:00</published>
+    <updated>2026-01-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Reconciliation Improvements:</p>
+<p>Added support for direct reconciliation to more resources, with opt-in
+behaviour. The API is unchanged. To use the direct reconciler, add the
+<code>alpha.cnrm.cloud.google.com/reconciler: direct</code> annotation to the corresponding
+Config Connector object. The following resources now have direct reconciliation
+support:</p>
+<ul>
+<li><code>TagsLocationTagBinding</code>: Now supports direct reconciliation.</li>
+</ul>]]></content>
+    <summary>Direct reconciliation is now available for more resources, including TagsLocationTagBinding, with an opt-in behavior. To enable it, add the `alpha.cnrm.cloud.google.com/reconciler: direct` annotation to your Config Connector objects. The API remains unchanged.</summary>
+    <title>Change: Direct Reconciliation Support Added</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-01-09:feature:1</id>
+    <published>2026-01-09T00:00:00+00:00</published>
+    <updated>2026-01-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Features:</p>
+<ul>
+<li>IAM: Added support for <code>iam.cnrm.cloud.google.com/disable-dependent-services</code> annotation.</li>
+<li>Added support for Cilium cluster-wide network policy.</li>
+</ul>]]></content>
+    <summary>New features now support Cilium cluster-wide network policies and an IAM annotation for disabling dependent services, providing greater flexibility in managing your cloud resources.</summary>
+    <title>Feature: Enhanced Network and IAM Controls</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-01-09:feature:2</id>
+    <published>2026-01-09T00:00:00+00:00</published>
+    <updated>2026-01-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Fields:</p>
+<ul>
+<li><code>AlloyDBInstance</code></li>
+<li>Added <code>spec.observabilityConfig</code> and <code>spec.queryInsightsConfig</code> fields.</li>
+<li><code>ContainerNodePool</code></li>
+<li>Added <code>spec.nodeConfig.enableNestedVirtualization</code> field.</li>
+<li><code>MonitoringDashboard</code></li>
+<li>Added support for <code>spec.charts[].dataSets[].timeSeriesQuery.opsAnalyticsQuery.sqlQueryRef</code></li>
+</ul>]]></content>
+    <summary>New fields have been added to AlloyDBInstance and ContainerNodePool, enhancing observability, query insights, and nested virtualization support. Additionally, MonitoringDashboard now supports referencing SQL queries for ops analytics.</summary>
+    <title>Feature: Enhanced Instance and Node Pool Capabilities</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-01-09:fixed:3</id>
+    <published>2026-01-09T00:00:00+00:00</published>
+    <updated>2026-01-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Bug Fixes:</p>
+<ul>
+<li><code>BatchJob</code>: Fixed a bug where the resource could not be created.</li>
+<li><code>FirewallPolicyRule</code>: Fixed an issue with updating the resource.</li>
+<li><code>IAMServiceAccountKey</code>: Fixed an issue causing unnecessary re-reconciliation.</li>
+<li>Fixed a bug where <code>ComputeBackendService</code> could not refer to <code>clientTLSPolicy</code> due to an invalid format.</li>
+<li>Fixed a bug where interconnect attachments were not ignored.</li>
+<li>Fixed a bug in the GitHub MCP server.</li>
+<li>Fixed a bug in the private cluster endpoint for <code>mockgcp</code>.</li>
+</ul>]]></content>
+    <summary>Several bugs have been fixed across various resources, including BatchJob, FirewallPolicyRule, IAMServiceAccountKey, ComputeBackendService, and interconnect attachments. Issues related to the GitHub MCP server and mockgcp private cluster endpoints have also been resolved.</summary>
+    <title>Fixed: Bug Fixes Deployed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-01-09:announcement:4</id>
+    <published>2026-01-09T00:00:00+00:00</published>
+    <updated>2026-01-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.142.0 is now available.</p>]]></content>
+    <summary>Config Connector version 1.142.0 has been released. This update brings new features and improvements to the tool. Users are encouraged to upgrade to the latest version.</summary>
+    <title>Announcement: Config Connector 1.142.0 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-01-09:feature:5</id>
+    <published>2026-01-09T00:00:00+00:00</published>
+    <updated>2026-01-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Beta Resources (Direct Reconciler):</p>
+<ul>
+<li><code>AlloyDBBackup</code></li>
+<li><code>AccessContextManagerAccessLevel</code></li>
+</ul>]]></content>
+    <summary>We are excited to announce the beta release of two new resources: AlloyDBBackup and AccessContextManagerAccessLevel. These additions expand our capabilities for managing your cloud infrastructure.</summary>
+    <title>Feature: New Beta Resources Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-12-19:announcement:0</id>
+    <published>2025-12-19T00:00:00+00:00</published>
+    <updated>2025-12-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.141.0 is now available.</p>]]></content>
+    <summary>Version 1.141.0 of Config Connector has been released. This update brings new features and improvements to the tool.</summary>
+    <title>Announcement: Config Connector 1.141.0 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-12-19:feature:1</id>
+    <published>2025-12-19T00:00:00+00:00</published>
+    <updated>2025-12-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Features:</p>
+<ul>
+<li>Enabled Vertical Pod Autoscaler (VPA) support for Config Connector controllers.</li>
+<li>Added <code>verticalPodAutoscalerMode</code> field to <code>ConfigConnector</code> and <code>ConfigConnectorContext</code> resources.</li>
+</ul>]]></content>
+    <summary>Config Connector now supports Vertical Pod Autoscaler (VPA). You can enable VPA by setting the `verticalPodAutoscalerMode` field in `ConfigConnector` and `ConfigConnectorContext` resources.</summary>
+    <title>Feature: Vertical Pod Autoscaler Support for Config Connector</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-12-19:fixed:2</id>
+    <published>2025-12-19T00:00:00+00:00</published>
+    <updated>2025-12-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Bug Fixes:</p>
+<ul>
+<li>Fixed various issues in <code>observedState</code> handling for resources with reference fields.</li>
+<li>Fixed an issue where IAMPolicy and IAMPartialPolicy controllers would alphabetize the members field within the resource spec and write it back. This behavior can conflict with intent-based reconciliation from GitOps systems such as Config Sync, causing a loop of updates and potentially exhausting IAM read quotas.</li>
+</ul>]]></content>
+    <summary>Addressed several bugs related to observed state handling for resources with reference fields. Additionally, corrected IAM policy controller behavior to prevent unintended member field modifications, avoiding conflicts with GitOps systems and potential quota exhaustion.</summary>
+    <title>Fixed: Resolved observed state issues</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2025-12-19:feature:3</id>
+    <published>2025-12-19T00:00:00+00:00</published>
+    <updated>2025-12-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Fields:</p>
+<ul>
+<li>
+<p>RunJob</p>
+</li>
+<li>
+<p>Added <code>spec.template.spec.containers[].port</code> field.</p>
+</li>
+<li>
+<p>DataplexTask</p>
+</li>
+<li>
+<p>Replaced <code>project</code> with <code>projectRef</code>.</p>
+</li>
+<li>Replaced <code>serviceAccount</code> with <code>serviceAccountRef</code>.</li>
+<li>Replaced <code>kmsKey</code> with <code>kmsKeyRef</code>.</li>
+</ul>]]></content>
+    <summary>We've added a new port field to RunJob containers. Additionally, DataplexTask now uses reference fields for project, service account, and KMS key for improved flexibility.</summary>
+    <title>Feature: New fields for RunJob and DataplexTask</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -28,17 +195,6 @@
 </ul>]]></content>
     <summary>A bug causing infinite loops in IAM policy reconciliation has been fixed. This issue, which affected specific versions, could lead to unnecessary updates and quota exhaustion. The patch is available in version 1.140.2.</summary>
     <title>Fixed: IAM policy reconciliation fix</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:config-connector:2025-12-19:announcement:0</id>
-    <published>2025-12-19T00:00:00+00:00</published>
-    <updated>2025-12-19T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Config Connector version 1.141.0 is now available.</p>]]></content>
-    <summary>Version 1.141.0 of Config Connector has been released. This update brings new features and improvements to the tool.</summary>
-    <title>Announcement: Config Connector 1.141.0 Released</title>
   </entry>
   <entry>
     <author>

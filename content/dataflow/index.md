@@ -1,5 +1,13 @@
 # Dataflow
 
+## 2026-01-20
+
+### Feature
+
+Dataflow is available in the Bangkok (`asia-southeast3`) region. Learn more
+about [Google Cloud locations](https://cloud.google.com/about/locations).
+
+---
 ## 2026-01-13
 
 ### Feature

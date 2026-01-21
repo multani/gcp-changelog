@@ -1,5 +1,15 @@
 # Spanner
 
+## 2026-01-20
+
+### Feature
+
+You can create Spanner [regional instance configurations](https://docs.cloud.google.com/spanner/docs/instance-configurations#available-configurations-regional)
+in Bangkok, Thailand (`asia-southeast3`). For more information, see
+[Google Cloud locations](https://cloud.google.com/about/locations) and
+[Spanner pricing](https://cloud.google.com/spanner/pricing).
+
+---
 ## 2026-01-13
 
 ### Feature

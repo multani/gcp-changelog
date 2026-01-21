@@ -1,10 +1,93 @@
 # Config Connector
 
+## 2026-01-09
+
+### Change
+
+Reconciliation Improvements:
+
+Added support for direct reconciliation to more resources, with opt-in
+behaviour. The API is unchanged. To use the direct reconciler, add the
+`alpha.cnrm.cloud.google.com/reconciler: direct` annotation to the corresponding
+Config Connector object. The following resources now have direct reconciliation
+support:
+
+* `TagsLocationTagBinding`: Now supports direct reconciliation.
+
+### Feature
+
+New Features:
+
+* IAM: Added support for `iam.cnrm.cloud.google.com/disable-dependent-services` annotation.
+* Added support for Cilium cluster-wide network policy.
+
+### Feature
+
+New Fields:
+
+* `AlloyDBInstance`
+  + Added `spec.observabilityConfig` and `spec.queryInsightsConfig` fields.
+* `ContainerNodePool`
+  + Added `spec.nodeConfig.enableNestedVirtualization` field.
+* `MonitoringDashboard`
+  + Added support for `spec.charts[].dataSets[].timeSeriesQuery.opsAnalyticsQuery.sqlQueryRef`
+
+### Fixed
+
+Bug Fixes:
+
+* `BatchJob`: Fixed a bug where the resource could not be created.
+* `FirewallPolicyRule`: Fixed an issue with updating the resource.
+* `IAMServiceAccountKey`: Fixed an issue causing unnecessary re-reconciliation.
+* Fixed a bug where `ComputeBackendService` could not refer to `clientTLSPolicy` due to an invalid format.
+* Fixed a bug where interconnect attachments were not ignored.
+* Fixed a bug in the GitHub MCP server.
+* Fixed a bug in the private cluster endpoint for `mockgcp`.
+
+### Announcement
+
+Config Connector version 1.142.0 is now available.
+
+### Feature
+
+New Beta Resources (Direct Reconciler):
+
+* `AlloyDBBackup`
+* `AccessContextManagerAccessLevel`
+
+---
 ## 2025-12-19
 
 ### Announcement
 
 Config Connector version 1.141.0 is now available.
+
+### Feature
+
+New Features:
+
+* Enabled Vertical Pod Autoscaler (VPA) support for Config Connector controllers.
+* Added `verticalPodAutoscalerMode` field to `ConfigConnector` and `ConfigConnectorContext` resources.
+
+### Fixed
+
+Bug Fixes:
+
+* Fixed various issues in `observedState` handling for resources with reference fields.
+* Fixed an issue where IAMPolicy and IAMPartialPolicy controllers would alphabetize the members field within the resource spec and write it back. This behavior can conflict with intent-based reconciliation from GitOps systems such as Config Sync, causing a loop of updates and potentially exhausting IAM read quotas.
+
+### Feature
+
+New Fields:
+
+* RunJob
+
+  + Added `spec.template.spec.containers[].port` field.
+* DataplexTask
+
+  + Replaced `project` with `projectRef`.
+  + Replaced `serviceAccount` with `serviceAccountRef`.
+  + Replaced `kmsKey` with `kmsKeyRef`.
 
 ---
 ## 2025-12-15

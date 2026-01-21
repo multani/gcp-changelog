@@ -1,5 +1,15 @@
 # Virtual Private Cloud
 
+## 2026-01-20
+
+### Feature
+
+For auto mode VPC networks, added a new subnet `10.232.0.0/20` for the Bangkok
+`asia-southeast3` region. For more information, see
+[Global locations](https://cloud.google.com/about/locations)
+and [Auto mode IP ranges](https://cloud.google.com/vpc/docs/subnets#ip-ranges).
+
+---
 ## 2025-11-14
 
 ### Feature

@@ -1,5 +1,14 @@
 # Cloud Storage
 
+## 2026-01-20
+
+### Feature
+
+Cloud Storage now offers support in the Thailand, Bangkok (`asia-southeast3`)
+region. To learn more about supported locations, see [Cloud Storage bucket
+locations](https://docs.cloud.google.com/storage/docs/locations).
+
+---
 ## 2026-01-16
 
 ### Feature

@@ -240,6 +240,19 @@ An issue has been fixed where creating a custom dimension with a single letter n
 
 ### Feature
 
+The [**Tabbed Dashboards** Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#tabbed-dashboards) lets dashboard editors organize dashboard content across multiple tabs within a single dashboard. Adding tabs to dashboards lets you do the following:
+
+* **Better organize content:** Group related visualizations and tiles into separate tabs.
+* **Improve data storytelling:** Guide viewers through different aspects of your data in a structured way.
+* **Enhance performance:** Load only the tiles on an active tab, potentially speeding up initial dashboard load times.
+* **Reduce clutter:** Consolidate multiple related analyses into a single dashboard.
+
+This feature will be available beginning January 26, for Looker (Original) instances, and will be disabled by default.
+
+**Note:** This item was updated on January 20, 2026.
+
+### Feature
+
 Looker admins can now create dedicated [service accounts for API-only access](https://docs.cloud.google.com/looker/docs/admin-panel-users-users#service-account). Additionally, eligible standard user accounts that are being used for API access can be [migrated](https://docs.cloud.google.com/looker/docs/admin-panel-users-users#migrating) to the new service account type from the Users page in the Admin panel.
 
 ### Feature
@@ -257,6 +270,19 @@ This feature will be available beginning January 26, for Looker (Original) insta
 ### Feature
 
 The API endpoint `search_lookml_dashboards` is out of Labs and now generally available.
+
+### Feature
+
+The [**Dashboard Filter Enhancements** Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#dashboard-filter-enhancements) includes the following improvements:
+
+* Persistent filter suggestion drop-down: Filter suggestion drop-downs remain open for easier multi-selection for [tag list](https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#tag-list) and [advanced filter](https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#advanced_filters) type filters.
+* Select or deselect all filter values: Lets users select or deselect all values in tag list and advanced filter type filters.
+* Limit condition controls for advanced filters: Lets dashboard creators limit the condition options that are available to users for advanced filters.
+* Enable [**Include custom filter values**](https://docs.cloud.google.com/looker/docs/presenting-content#adding_dashboards_to_boards_with_custom_filter_values_applied) by default for boards: Admins can choose to enable **Include custom filter values for boards** by default instance-wide.
+
+This feature will be available beginning January 26, for Looker (Original) instances, and will be enabled by default.
+
+**Note:** This item was updated on January 20, 2026.
 
 ### Feature
 

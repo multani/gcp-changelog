@@ -4,10 +4,34 @@
     "2026-01-20": [
       {
         "kind": "Announcement",
+        "content": "**1.27.5-asm.0 is now available for in-cluster Cloud Service Mesh.**\n\nYou can now download 1.27.5-asm.0 for in-cluster Cloud Service Mesh. It includes\nthe features of\n[Istio 1.27.5](https://istio.io/latest/news/releases/1.27.x/announcing-1.27.5/)\nsubject to the list of [supported features](https://docs.cloud.google.com/service-mesh/v1.27/docs/supported-features-in-cluster).\nCloud Service Mesh version 1.27.5-asm.0 uses envoy v1.35.9-dev.\n\nFor details on upgrading Cloud Service Mesh, see\n[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.27/docs/upgrade/upgrade).",
+        "summary": {
+          "title": "Cloud Service Mesh 1.27.5-asm.0 Released",
+          "summary": "The latest version of in-cluster Cloud Service Mesh, 1.27.5-asm.0, is now available. This release incorporates features from Istio 1.27.5 and is based on Envoy v1.35.9-dev. Details on supported features and upgrade procedures can be found in the official documentation."
+        }
+      },
+      {
+        "kind": "Announcement",
         "content": "**1.28.2-asm.4 is now available for in-cluster Cloud Service Mesh.**\n\nYou can now download 1.28.2-asm.4 for in-cluster Cloud Service Mesh. It includes the features of [Istio 1.28.0](https://istio.io/latest/news/releases/1.28.x/announcing-1.28/) subject to the list of [supported features](https://docs.cloud.google.com/service-mesh/docs/supported-features-in-cluster).\n\nThe following environment variables, fields, and annotations are not supported:\n\n* `PILOT_SPAWN_UPSTREAM_SPAN_FOR_GATEWAY`\n* Additional attributes for `HTTPCookie` in the DestinationRule API\n* `caCertCredentialName` field in ServerTLSSettings API\n* Optional `NetworkPolicy` for Istiod deployment\n* Disable shadow host suffix\n* `MAX_CONNECTIONS_PER_SOCKET_EVENT_LOOP`\n\nIstio dual stack is not supported\n\nIstio's experimental feature to enable lazy subset creation of envoy statistics\nis not supported.\n\nThe `ENABLE_AUTO_SNI` flag is still supported to stay aligned with legacy\nbehavior.\n\nFor details on upgrading Cloud Service Mesh, see [Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service Mesh version 1.28.2-asm.4 uses Envoy v1.36.5-dev.",
         "summary": {
           "title": "New Cloud Service Mesh version available",
           "summary": "Version 1.28.2-asm.4 of in-cluster Cloud Service Mesh is now available. This update includes features from Istio 1.28.0, with specific limitations noted in the documentation. You can find details on upgrading and supported features on the Cloud Service Mesh documentation pages."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "In-cluster Cloud Service Mesh 1.25 is no longer supported. For more information and to view the earliest end-of-life dates for other versions, see [Supported versions](https://docs.cloud.google.com/service-mesh/docs/supported-features-in-cluster#supported_versions).",
+        "summary": {
+          "title": "Cloud Service Mesh 1.25 End of Support",
+          "summary": "Cloud Service Mesh 1.25 has reached its end of support. For details on other versions and their end-of-life dates, please refer to the supported versions documentation."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "**1.26.8-asm.1 is now available for in-cluster Cloud Service Mesh.**\n\nYou can now download 1.26.8-asm.1 for in-cluster Cloud Service Mesh. It includes\nthe features of\n[Istio 1.26.8](https://istio.io/latest/news/releases/1.26.x/announcing-1.26.8/)\nsubject to the list of [supported features](https://docs.cloud.google.com/service-mesh/v1.26/docs/supported-features-in-cluster).\nCloud Service Mesh version 1.26.8-asm.1 uses envoy v1.34.11.\n\nFor details on upgrading Cloud Service Mesh, see\n[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.26/docs/upgrade/upgrade).",
+        "summary": {
+          "title": "New Cloud Service Mesh Version Available",
+          "summary": "Version 1.26.8-asm.1 for in-cluster Cloud Service Mesh is now available. This release includes features from Istio 1.26.8 and uses Envoy v1.34.11. Refer to the documentation for supported features and upgrade instructions."
         }
       }
     ],
@@ -28,6 +52,14 @@
         "summary": {
           "title": "Regional Cloud Service Mesh public preview",
           "summary": "Regional Cloud Service Mesh is now available as a public preview feature, offering enhanced control and performance for your services across different regions. Explore the documentation to learn more about its capabilities."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "Regional Cloud Service Mesh is now available as a public preview feature. See\n[Regional Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.27/docs/regional-cloud-service-mesh)\nfor more information.",
+        "summary": {
+          "title": "Cloud Service Mesh Now in Public Preview",
+          "summary": "Regional Cloud Service Mesh is now available as a public preview feature. For more details, please refer to the official documentation."
         }
       }
     ],

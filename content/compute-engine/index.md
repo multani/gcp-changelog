@@ -1,5 +1,16 @@
 # Compute Engine
 
+## 2026-01-20
+
+### Feature
+
+**Generally available**: You can create N4, C4, M4, and M3 VM instances in
+Bangkok, Thailand `asia-southeast3-a,b,c`. To learn more about these
+machine types, see
+[General-purpose machines](https://docs.cloud.google.com/compute/docs/general-purpose-machines) and
+[Memory-optimized machines](https://docs.cloud.google.com/compute/docs/memory-optimized-machines).
+
+---
 ## 2026-01-07
 
 ### Feature

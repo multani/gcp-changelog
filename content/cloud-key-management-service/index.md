@@ -1,5 +1,16 @@
 # Cloud Key Management Service
 
+## 2026-01-20
+
+### Feature
+
+Cloud KMS is available in the following region:
+
+* `asia-southeast3`
+
+For more information, see [Cloud KMS locations](https://docs.cloud.google.com/kms/docs/locations).
+
+---
 ## 2025-12-17
 
 ### Feature

@@ -1,5 +1,19 @@
 # Artifact Registry
 
+## 2026-01-20
+
+### Feature
+
+Artifact Registry now calculates fingerprints for each version of a package
+pushed to the Artifact Registry repository. You can use the fingerprint to
+validate that the package wasn't modified when moving between Google Cloud
+systems, such as Compute Engine and Cloud Build.
+This feature is in
+[public preview](https://cloud.google.com/products/#product-launch-stages).
+For more information,
+see [Use fingerprints to verify package version identities](https://docs.cloud.google.com/artifact-registry/docs/fingerprint).
+
+---
 ## 2025-11-24
 
 ### Feature

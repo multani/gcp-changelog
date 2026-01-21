@@ -1,5 +1,37 @@
 # Google Kubernetes Engine
 
+## 2026-01-20
+
+### Feature
+
+The `asia-southeast3` region in Bangkok, Thailand is available. For more
+information, see the
+[Global Locations](https://cloud.google.com/about/locations/).
+
+### Issue
+
+In some GKE versions earlier than 1.34.0-gke.2011000, using the
+Cloud Storage FUSE CSI driver with streaming writes enabled might cause file
+writes to fail with an Input/Output error on the application side accompanied by
+503 errors in the gke-gcsfuse-sidecar logs. This issue occurs when streaming
+writes are enabled, and is caused by stalls during write operations. Streaming
+writes are enabled by default in GKE versions 1.33.2-gke.4655000
+and later.
+
+To work around this limitation, you can perform one of the following actions:
+
+* Upgrade your cluster to GKE version 1.34.1-gke.3849001 or
+  later.
+* If you can't upgrade your cluster, disable streaming writes by passing the
+  `--enable-streaming-writes=false` or `write:enable-streaming-writes:false`
+  flags when you [configure mount
+  options](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/cloud-storage-fuse-csi-driver-perf#mount-options)
+  for Cloud Storage FUSE CSI driver. These flags only prevent error reliably
+  when staging writes use fast media types such as SSD or tmpfs. tmpfs is
+  specified using `--temp-dir` or `file-system:temp-dir` flags when you
+  configure mount options.
+
+---
 ## 2026-01-15
 
 ### Security

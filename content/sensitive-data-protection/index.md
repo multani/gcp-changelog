@@ -1,5 +1,12 @@
 # Sensitive Data Protection
 
+## 2026-01-20
+
+### Feature
+
+Sensitive Data Protection is available in the `asia-southeast3` (Bangkok) region. For more information, see [Sensitive Data Protection locations](https://docs.cloud.google.com/sensitive-data-protection/docs/locations).
+
+---
 ## 2026-01-16
 
 ### Feature

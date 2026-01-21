@@ -4,6 +4,19 @@
 
 ### Announcement
 
+**1.27.5-asm.0 is now available for in-cluster Cloud Service Mesh.**
+
+You can now download 1.27.5-asm.0 for in-cluster Cloud Service Mesh. It includes
+the features of
+[Istio 1.27.5](https://istio.io/latest/news/releases/1.27.x/announcing-1.27.5/)
+subject to the list of [supported features](https://docs.cloud.google.com/service-mesh/v1.27/docs/supported-features-in-cluster).
+Cloud Service Mesh version 1.27.5-asm.0 uses envoy v1.35.9-dev.
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.27/docs/upgrade/upgrade).
+
+### Announcement
+
 **1.28.2-asm.4 is now available for in-cluster Cloud Service Mesh.**
 
 You can now download 1.28.2-asm.4 for in-cluster Cloud Service Mesh. It includes the features of [Istio 1.28.0](https://istio.io/latest/news/releases/1.28.x/announcing-1.28/) subject to the list of [supported features](https://docs.cloud.google.com/service-mesh/docs/supported-features-in-cluster).
@@ -26,6 +39,23 @@ The `ENABLE_AUTO_SNI` flag is still supported to stay aligned with legacy
 behavior.
 
 For details on upgrading Cloud Service Mesh, see [Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service Mesh version 1.28.2-asm.4 uses Envoy v1.36.5-dev.
+
+### Announcement
+
+In-cluster Cloud Service Mesh 1.25 is no longer supported. For more information and to view the earliest end-of-life dates for other versions, see [Supported versions](https://docs.cloud.google.com/service-mesh/docs/supported-features-in-cluster#supported_versions).
+
+### Announcement
+
+**1.26.8-asm.1 is now available for in-cluster Cloud Service Mesh.**
+
+You can now download 1.26.8-asm.1 for in-cluster Cloud Service Mesh. It includes
+the features of
+[Istio 1.26.8](https://istio.io/latest/news/releases/1.26.x/announcing-1.26.8/)
+subject to the list of [supported features](https://docs.cloud.google.com/service-mesh/v1.26/docs/supported-features-in-cluster).
+Cloud Service Mesh version 1.26.8-asm.1 uses envoy v1.34.11.
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.26/docs/upgrade/upgrade).
 
 ---
 ## 2026-01-15
@@ -52,6 +82,12 @@ These patch releases contain the fixes for the following managed Cloud Service M
 
 Regional Cloud Service Mesh is now available as a public preview feature. See
 [Regional Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/docs/regional-cloud-service-mesh)
+for more information.
+
+### Announcement
+
+Regional Cloud Service Mesh is now available as a public preview feature. See
+[Regional Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.27/docs/regional-cloud-service-mesh)
 for more information.
 
 ---

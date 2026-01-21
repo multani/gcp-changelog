@@ -1,5 +1,16 @@
 # AlloyDB for PostgreSQL
 
+## 2026-01-20
+
+### Feature
+
+You can
+[create AlloyDB cluster instances](https://docs.cloud.google.com/alloydb/docs/cluster-create)
+in Bangkok, Thailand (`asia-southeast3`). For more information, see
+[AlloyDB locations](https://docs.cloud.google.com/alloydb/docs/locations) and
+[AlloyDB for PostgreSQL pricing](https://cloud.google.com/alloydb/pricing).
+
+---
 ## 2026-01-19
 
 ### Feature

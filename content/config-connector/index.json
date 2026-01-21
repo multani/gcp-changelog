@@ -1,6 +1,90 @@
 {
   "name": "Config Connector",
   "entries": {
+    "2026-01-09": [
+      {
+        "kind": "Change",
+        "content": "Reconciliation Improvements:\n\nAdded support for direct reconciliation to more resources, with opt-in\nbehaviour. The API is unchanged. To use the direct reconciler, add the\n`alpha.cnrm.cloud.google.com/reconciler: direct` annotation to the corresponding\nConfig Connector object. The following resources now have direct reconciliation\nsupport:\n\n* `TagsLocationTagBinding`: Now supports direct reconciliation.",
+        "summary": {
+          "title": "Direct Reconciliation Support Added",
+          "summary": "Direct reconciliation is now available for more resources, including TagsLocationTagBinding, with an opt-in behavior. To enable it, add the `alpha.cnrm.cloud.google.com/reconciler: direct` annotation to your Config Connector objects. The API remains unchanged."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Features:\n\n* IAM: Added support for `iam.cnrm.cloud.google.com/disable-dependent-services` annotation.\n* Added support for Cilium cluster-wide network policy.",
+        "summary": {
+          "title": "Enhanced Network and IAM Controls",
+          "summary": "New features now support Cilium cluster-wide network policies and an IAM annotation for disabling dependent services, providing greater flexibility in managing your cloud resources."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Fields:\n\n* `AlloyDBInstance`\n  + Added `spec.observabilityConfig` and `spec.queryInsightsConfig` fields.\n* `ContainerNodePool`\n  + Added `spec.nodeConfig.enableNestedVirtualization` field.\n* `MonitoringDashboard`\n  + Added support for `spec.charts[].dataSets[].timeSeriesQuery.opsAnalyticsQuery.sqlQueryRef`",
+        "summary": {
+          "title": "Enhanced Instance and Node Pool Capabilities",
+          "summary": "New fields have been added to AlloyDBInstance and ContainerNodePool, enhancing observability, query insights, and nested virtualization support. Additionally, MonitoringDashboard now supports referencing SQL queries for ops analytics."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Bug Fixes:\n\n* `BatchJob`: Fixed a bug where the resource could not be created.\n* `FirewallPolicyRule`: Fixed an issue with updating the resource.\n* `IAMServiceAccountKey`: Fixed an issue causing unnecessary re-reconciliation.\n* Fixed a bug where `ComputeBackendService` could not refer to `clientTLSPolicy` due to an invalid format.\n* Fixed a bug where interconnect attachments were not ignored.\n* Fixed a bug in the GitHub MCP server.\n* Fixed a bug in the private cluster endpoint for `mockgcp`.",
+        "summary": {
+          "title": "Bug Fixes Deployed",
+          "summary": "Several bugs have been fixed across various resources, including BatchJob, FirewallPolicyRule, IAMServiceAccountKey, ComputeBackendService, and interconnect attachments. Issues related to the GitHub MCP server and mockgcp private cluster endpoints have also been resolved."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "Config Connector version 1.142.0 is now available.",
+        "summary": {
+          "title": "Config Connector 1.142.0 Released",
+          "summary": "Config Connector version 1.142.0 has been released. This update brings new features and improvements to the tool. Users are encouraged to upgrade to the latest version."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Beta Resources (Direct Reconciler):\n\n* `AlloyDBBackup`\n* `AccessContextManagerAccessLevel`",
+        "summary": {
+          "title": "New Beta Resources Available",
+          "summary": "We are excited to announce the beta release of two new resources: AlloyDBBackup and AccessContextManagerAccessLevel. These additions expand our capabilities for managing your cloud infrastructure."
+        }
+      }
+    ],
+    "2025-12-19": [
+      {
+        "kind": "Announcement",
+        "content": "Config Connector version 1.141.0 is now available.",
+        "summary": {
+          "title": "Config Connector 1.141.0 Released",
+          "summary": "Version 1.141.0 of Config Connector has been released. This update brings new features and improvements to the tool."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Features:\n\n* Enabled Vertical Pod Autoscaler (VPA) support for Config Connector controllers.\n* Added `verticalPodAutoscalerMode` field to `ConfigConnector` and `ConfigConnectorContext` resources.",
+        "summary": {
+          "title": "Vertical Pod Autoscaler Support for Config Connector",
+          "summary": "Config Connector now supports Vertical Pod Autoscaler (VPA). You can enable VPA by setting the `verticalPodAutoscalerMode` field in `ConfigConnector` and `ConfigConnectorContext` resources."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Bug Fixes:\n\n* Fixed various issues in `observedState` handling for resources with reference fields.\n* Fixed an issue where IAMPolicy and IAMPartialPolicy controllers would alphabetize the members field within the resource spec and write it back. This behavior can conflict with intent-based reconciliation from GitOps systems such as Config Sync, causing a loop of updates and potentially exhausting IAM read quotas.",
+        "summary": {
+          "title": "Resolved observed state issues",
+          "summary": "Addressed several bugs related to observed state handling for resources with reference fields. Additionally, corrected IAM policy controller behavior to prevent unintended member field modifications, avoiding conflicts with GitOps systems and potential quota exhaustion."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Fields:\n\n* RunJob\n\n  + Added `spec.template.spec.containers[].port` field.\n* DataplexTask\n\n  + Replaced `project` with `projectRef`.\n  + Replaced `serviceAccount` with `serviceAccountRef`.\n  + Replaced `kmsKey` with `kmsKeyRef`.",
+        "summary": {
+          "title": "New fields for RunJob and DataplexTask",
+          "summary": "We've added a new port field to RunJob containers. Additionally, DataplexTask now uses reference fields for project, service account, and KMS key for improved flexibility."
+        }
+      }
+    ],
     "2025-12-15": [
       {
         "kind": "Announcement",
@@ -16,16 +100,6 @@
         "summary": {
           "title": "IAM policy reconciliation fix",
           "summary": "A bug causing infinite loops in IAM policy reconciliation has been fixed. This issue, which affected specific versions, could lead to unnecessary updates and quota exhaustion. The patch is available in version 1.140.2."
-        }
-      }
-    ],
-    "2025-12-19": [
-      {
-        "kind": "Announcement",
-        "content": "Config Connector version 1.141.0 is now available.",
-        "summary": {
-          "title": "Config Connector 1.141.0 Released",
-          "summary": "Version 1.141.0 of Config Connector has been released. This update brings new features and improvements to the tool."
         }
       }
     ],

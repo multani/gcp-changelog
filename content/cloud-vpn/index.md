@@ -1,5 +1,16 @@
 # Cloud VPN
 
+## 2026-01-20
+
+### Feature
+
+Cloud VPN is now available in [region](https://docs.cloud.google.com/compute/docs/regions-zones/#available)
+`asia-southeast3` (Bangkok, Thailand).
+For more information, see [Global locations](https://cloud.google.com/about/locations).
+
+Pricing is available on the [Cloud VPN pricing page](https://docs.cloud.google.com/network-connectivity/docs/vpn/pricing).
+
+---
 ## 2025-12-11
 
 ### Feature

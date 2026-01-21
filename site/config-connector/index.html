@@ -2292,22 +2292,99 @@
 
 
 <h1 id="config-connector">Config Connector</h1>
-<h2 id="2025-12-19">2025-12-19</h2>
+<h2 id="2026-01-09">2026-01-09</h2>
+<h3 id="change">Change</h3>
+<p>Reconciliation Improvements:</p>
+<p>Added support for direct reconciliation to more resources, with opt-in
+behaviour. The API is unchanged. To use the direct reconciler, add the
+<code>alpha.cnrm.cloud.google.com/reconciler: direct</code> annotation to the corresponding
+Config Connector object. The following resources now have direct reconciliation
+support:</p>
+<ul>
+<li><code>TagsLocationTagBinding</code>: Now supports direct reconciliation.</li>
+</ul>
+<h3 id="feature">Feature</h3>
+<p>New Features:</p>
+<ul>
+<li>IAM: Added support for <code>iam.cnrm.cloud.google.com/disable-dependent-services</code> annotation.</li>
+<li>Added support for Cilium cluster-wide network policy.</li>
+</ul>
+<h3 id="feature_1">Feature</h3>
+<p>New Fields:</p>
+<ul>
+<li><code>AlloyDBInstance</code></li>
+<li>Added <code>spec.observabilityConfig</code> and <code>spec.queryInsightsConfig</code> fields.</li>
+<li><code>ContainerNodePool</code></li>
+<li>Added <code>spec.nodeConfig.enableNestedVirtualization</code> field.</li>
+<li><code>MonitoringDashboard</code></li>
+<li>Added support for <code>spec.charts[].dataSets[].timeSeriesQuery.opsAnalyticsQuery.sqlQueryRef</code></li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<p>Bug Fixes:</p>
+<ul>
+<li><code>BatchJob</code>: Fixed a bug where the resource could not be created.</li>
+<li><code>FirewallPolicyRule</code>: Fixed an issue with updating the resource.</li>
+<li><code>IAMServiceAccountKey</code>: Fixed an issue causing unnecessary re-reconciliation.</li>
+<li>Fixed a bug where <code>ComputeBackendService</code> could not refer to <code>clientTLSPolicy</code> due to an invalid format.</li>
+<li>Fixed a bug where interconnect attachments were not ignored.</li>
+<li>Fixed a bug in the GitHub MCP server.</li>
+<li>Fixed a bug in the private cluster endpoint for <code>mockgcp</code>.</li>
+</ul>
 <h3 id="announcement">Announcement</h3>
+<p>Config Connector version 1.142.0 is now available.</p>
+<h3 id="feature_2">Feature</h3>
+<p>New Beta Resources (Direct Reconciler):</p>
+<ul>
+<li><code>AlloyDBBackup</code></li>
+<li><code>AccessContextManagerAccessLevel</code></li>
+</ul>
+<hr />
+<h2 id="2025-12-19">2025-12-19</h2>
+<h3 id="announcement_1">Announcement</h3>
 <p>Config Connector version 1.141.0 is now available.</p>
+<h3 id="feature_3">Feature</h3>
+<p>New Features:</p>
+<ul>
+<li>Enabled Vertical Pod Autoscaler (VPA) support for Config Connector controllers.</li>
+<li>Added <code>verticalPodAutoscalerMode</code> field to <code>ConfigConnector</code> and <code>ConfigConnectorContext</code> resources.</li>
+</ul>
+<h3 id="fixed_1">Fixed</h3>
+<p>Bug Fixes:</p>
+<ul>
+<li>Fixed various issues in <code>observedState</code> handling for resources with reference fields.</li>
+<li>Fixed an issue where IAMPolicy and IAMPartialPolicy controllers would alphabetize the members field within the resource spec and write it back. This behavior can conflict with intent-based reconciliation from GitOps systems such as Config Sync, causing a loop of updates and potentially exhausting IAM read quotas.</li>
+</ul>
+<h3 id="feature_4">Feature</h3>
+<p>New Fields:</p>
+<ul>
+<li>
+<p>RunJob</p>
+</li>
+<li>
+<p>Added <code>spec.template.spec.containers[].port</code> field.</p>
+</li>
+<li>
+<p>DataplexTask</p>
+</li>
+<li>
+<p>Replaced <code>project</code> with <code>projectRef</code>.</p>
+</li>
+<li>Replaced <code>serviceAccount</code> with <code>serviceAccountRef</code>.</li>
+<li>Replaced <code>kmsKey</code> with <code>kmsKeyRef</code>.</li>
+</ul>
 <hr />
 <h2 id="2025-12-15">2025-12-15</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p>Config Connector version 1.140.2 is now available.</p>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_2">Fixed</h3>
 <ul>
 <li>Fixed a bug where the IAMPolicy and IAMPartialPolicy controllers would alphabetize the members field within the resource spec and write it back. This behavior can conflict with intent-based reconciliation from GitOps systems such as Config Sync, causing a loop of updates and potentially exhausting IAM read quotas. This issue affected versions 1.140.0 and has now been patched in version 1.140.2.</li>
 </ul>
 <hr />
 <h2 id="2025-12-04">2025-12-04</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p>Config Connector version 1.140.0 is now available.</p>
-<h3 id="change">Change</h3>
+<h3 id="change_1">Change</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
 <ul>
 <li><code>AssuredWorkloadsWorkload</code></li>
@@ -2315,18 +2392,18 @@
 <li><code>ConfigDeliveryResourceBundle</code></li>
 <li>Manage Config Delivery resource bundles for Config Sync.</li>
 </ul>
-<h3 id="change_1">Change</h3>
+<h3 id="change_2">Change</h3>
 <p>Reconciliation Improvements:</p>
 <ul>
 <li>Integrated Multi-Cluster Leader Election for improved reliability in multi-cluster setups.</li>
 </ul>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
 <ul>
 <li><code>CertificateManagerCertificateIssuanceConfig</code></li>
 <li>Manage Certificate Manager certificate issuance configurations for automating certificate issuance.</li>
 </ul>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><code>AlloyDBCluster</code></li>
@@ -2340,7 +2417,7 @@
 <li><code>RunJob</code></li>
 <li>Added <code>spec.template.template.containers.dependsOn</code> field.</li>
 </ul>
-<h3 id="fixed_1">Fixed</h3>
+<h3 id="fixed_3">Fixed</h3>
 <ul>
 <li>Fixed an issue where <code>BigQueryReservationAssignment</code> was not exposing <code>externalRef</code>.</li>
 <li>Fixed an issue with <code>CertificateManagerDNSAuthorization</code> API, Fuzzer and Mapper.</li>
@@ -2348,48 +2425,48 @@
 </ul>
 <hr />
 <h2 id="2025-11-20">2025-11-20</h2>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p>Config Connector version 1.139.0 is now available.</p>
-<h3 id="change_2">Change</h3>
+<h3 id="change_3">Change</h3>
 <p>Reconciliation Improvements:</p>
 <ul>
 <li><code>IAM partial policy management</code></li>
 </ul>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p>New Features:</p>
 <ul>
 <li>The controller type is now reported at the start and end of reconciliation.</li>
 <li>Mockgcp now supports <code>iap oauth brands</code> and <code>bigtable materializedview</code>.</li>
 </ul>
-<h3 id="fixed_2">Fixed</h3>
+<h3 id="fixed_4">Fixed</h3>
 <ul>
 <li>Reduced the memory footprint of the recorder.</li>
 <li><code>SQLInstance</code>: Fixed an issue where empty <code>maintenanceVersion</code> patches were sent. The <code>settings</code> and <code>maintenanceVersion</code> fields are now unmanaged.</li>
 <li><code>FirestoreDatabase</code>: Fixed boolean value exports.</li>
 </ul>
-<h3 id="change_3">Change</h3>
+<h3 id="change_4">Change</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
 <ul>
 <li><code>FirestoreField</code></li>
 </ul>
 <hr />
 <h2 id="2025-11-14">2025-11-14</h2>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p>Config Connector version 1.138.0 is now available.</p>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
 <ul>
 <li><code>BackupDRBackupVault</code></li>
 <li><code>OrgPolicyCustomConstraint</code></li>
 </ul>
-<h3 id="fixed_3">Fixed</h3>
+<h3 id="fixed_5">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li>Fixed format validation issue in the <code>DataflowFlexTemplateJob</code> direct controller when the
   <code>spec.subnetworkRef.external</code> field contains full URL.</li>
 <li>Updated <code>status.observedGeneration</code> in <code>ConfigConnector</code> object.</li>
 </ul>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
 <ul>
 <li><code>FirestoreBackupSchedule</code></li>
@@ -2402,9 +2479,9 @@
 </ul>
 <hr />
 <h2 id="2025-10-16">2025-10-16</h2>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_6">Announcement</h3>
 <p>Config Connector version 1.137.0 is now available.</p>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><code>BigtableMaterializedView</code>: Added <code>spec.sourceTableRef</code> and <code>spec.definition</code>.</li>
@@ -2421,7 +2498,7 @@
 <li>Improved reconciliation for <code>RunJob</code> with export support.</li>
 <li>Unified <code>ComputeTargetTCPProxy</code> direct API and controller.</li>
 </ul>
-<h3 id="fixed_4">Fixed</h3>
+<h3 id="fixed_6">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li>Fixed an issue where <code>ComputeBackendService</code> backends were not sorted.</li>
@@ -2450,7 +2527,7 @@
 </ul>
 <hr />
 <h2 id="2025-10-07">2025-10-07</h2>
-<h3 id="fixed_5">Fixed</h3>
+<h3 id="fixed_7">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li>Added support for checking <code>etag</code> in spec for alpha resources.</li>
@@ -2463,7 +2540,7 @@
 <li>Fixed a bug in the mapper generator for OneOf if the input is not proto.Message.</li>
 <li>Fixed an import for refs in the same package in <code>controllerbuilder</code>.</li>
 </ul>
-<h3 id="announcement_6">Announcement</h3>
+<h3 id="announcement_7">Announcement</h3>
 <p>Config Connector version 1.136.1 is now available.</p>
 <h3 id="changed_4">Changed</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
@@ -2473,7 +2550,7 @@
 <li><a href="https://docs.cloud.google.com/config-connector/docs/reference/resource-docs/clouddeploy/clouddeploydeliverypipeline"><code>CloudDeployDeliveryPipeline</code></a></li>
 <li><a href="https://docs.cloud.google.com/config-connector/docs/reference/resource-docs/composer/composerenvironment"><code>ComposerEnvironment</code></a></li>
 </ul>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_11">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><a href="https://docs.cloud.google.com/config-connector/docs/reference/resource-docs/composer/composerenvironment"><code>ComposerEnvironment</code></a></li>
@@ -2490,9 +2567,9 @@
 </ul>
 <hr />
 <h2 id="2025-09-24">2025-09-24</h2>
-<h3 id="announcement_7">Announcement</h3>
+<h3 id="announcement_8">Announcement</h3>
 <p>Config Connector version 1.134.1 is now available.</p>
-<h3 id="fixed_6">Fixed</h3>
+<h3 id="fixed_8">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/5230">#5230</a>: Fixed an issue that could lead to premature certificate rotation by ensuring errors are not swallowed when reading a Secret.</li>
@@ -2500,7 +2577,7 @@
 </ul>
 <hr />
 <h2 id="2025-09-22">2025-09-22</h2>
-<h3 id="announcement_8">Announcement</h3>
+<h3 id="announcement_9">Announcement</h3>
 <p>Config Connector version 1.135.0 is now available.</p>
 <h3 id="changed_6">Changed</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
@@ -2514,13 +2591,13 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 <ul>
 <li><code>VMWareEngineExternalAddress</code></li>
 </ul>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_12">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><code>AlloyDBCluster</code></li>
 <li>Added <code>spec.databaseVersion</code> field</li>
 </ul>
-<h3 id="fixed_7">Fixed</h3>
+<h3 id="fixed_9">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/5009">PR#5009</a>
@@ -2528,7 +2605,7 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 </ul>
 <hr />
 <h2 id="2025-09-03">2025-09-03</h2>
-<h3 id="announcement_9">Announcement</h3>
+<h3 id="announcement_10">Announcement</h3>
 <p>Config Connector version 1.134.0 is now available.</p>
 <h3 id="changed_8">Changed</h3>
 <p>Improved reconciliation by migrating the following resources from the Terraform-based or DCL-based controller to the new direct controller. These resources are migrated automatically and you no longer need to apply the <code>opt-in</code> annotation to enable the direct controller:</p>
@@ -2541,7 +2618,7 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 <ul>
 <li><code>ContainerCluster</code>: DNS endpoint is supported in ContainerCluster.</li>
 </ul>
-<h3 id="fixed_8">Fixed</h3>
+<h3 id="fixed_10">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li><code>ConfigConnectorContext</code>:</li>
@@ -2554,9 +2631,9 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 </ul>
 <hr />
 <h2 id="2025-07-30">2025-07-30</h2>
-<h3 id="announcement_10">Announcement</h3>
+<h3 id="announcement_11">Announcement</h3>
 <p>Config Connector version 1.133.0 is now available.</p>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_13">Feature</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/docs/reference/resource-docs/apigateway/apigatewayapi.md"><code>APIGatewayAPI</code></a></li>
@@ -2576,7 +2653,7 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 <li>Use the <code>alpha.cnrm.cloud.google.com/reconciler: direct</code> annotation on the <code>BigQueryTable</code> CR object to opt-in the direct controller.</li>
 <li>The direct controller also supports adding BigQueryDataPolicies directly to BigQueryTable columns within <code>spec.schema</code>.</li>
 </ul>
-<h3 id="fixed_9">Fixed</h3>
+<h3 id="fixed_11">Fixed</h3>
 <ul>
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/4808">PR#4808</a>
   filtered out Kubernetes labels that are invalid for Google Cloud in the
@@ -2585,7 +2662,7 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 </ul>
 <hr />
 <h2 id="2025-07-14">2025-07-14</h2>
-<h3 id="announcement_11">Announcement</h3>
+<h3 id="announcement_12">Announcement</h3>
 <p>Config Connector version 1.132.1 is now available.</p>
 <h3 id="changed_12">Changed</h3>
 <p>Reconciliation Improvements:</p>
@@ -2604,9 +2681,9 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 </ul>
 <hr />
 <h2 id="2025-06-10">2025-06-10</h2>
-<h3 id="announcement_12">Announcement</h3>
+<h3 id="announcement_13">Announcement</h3>
 <p>Config Connector version 1.132.0 is now available.</p>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_14">Feature</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/speech/speechcustomclass"><code>SpeechCustomClass</code></a></li>
@@ -2623,7 +2700,7 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 <li><code>SpeechRecognizer</code></li>
 <li><code>StorageAnywhereCache</code></li>
 </ul>
-<h3 id="feature_10">Feature</h3>
+<h3 id="feature_15">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/spanner/spannerinstance">SpannerInstance</a>
@@ -2645,6 +2722,9 @@ We migrated the following resources from the Terraform-based or DCL-based contro
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#config-connector">Config Connector</a></li>
+          <li class="nav-item">
+            <a href="#2026-01-09" class="nav-link">2026-01-09</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-12-19" class="nav-link">2025-12-19</a>
           </li>

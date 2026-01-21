@@ -1,5 +1,13 @@
 # Pub/Sub
 
+## 2026-01-20
+
+### Feature
+
+Pub/Sub is now available in the Bangkok region (`asia-southeast3`). For more
+information, see [Cloud locations](https://cloud.google.com/about/locations).
+
+---
 ## 2025-11-03
 
 ### Libraries

@@ -1,5 +1,488 @@
 # Container Optimized OS
 
+## 2026-01-20
+
+### Change
+
+
+
+### cos-125-19216-104-113
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/c3275d29487cb867b01fadabaae9e498686a1ad3 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.104.113/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-68810 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71098 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68261 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68259 in the Linux kernel.
+
+### Change
+
+Applied ethtool ring length changes to a4x's first Diorite interface.
+
+### Security
+
+Fixed CVE-2025-71113 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68816 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68372 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71067 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71068 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68374 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71104 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68778 in the Linux kernel.
+
+### Security
+
+Applied urllib3 patch for CVE-2024-37891.
+
+### Security
+
+Fixed CVE-2025-68206 in the Linux kernel.
+
+### Feature
+
+Enabled guest support for NVIDIA virtual command queues (CMDQV).
+
+### Security
+
+Fixed CVE-2025-68775 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-61727 in dev-lang/go.
+
+### Security
+
+Fixed CVE-2025-68363 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71131 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71072 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-61729 in dev-lang/go.
+
+### Security
+
+Fixed CVE-2025-71089 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68801 in the Linux kernel.
+
+### Fixed
+
+Updated cos-gpu-installer to v2.5.10.
+
+### Security
+
+Fixed CVE-2025-68814 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71118 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68803 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68740 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68782 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68366 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68780 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68349 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71097 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71125 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68369 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68265 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-12084 in dev-lang/python.
+
+### Security
+
+Fixed CVE-2025-68744 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71134 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68724 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68794 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68821 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68727 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71080 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-22111 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71096 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71135 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68795 in the Linux kernel.
+
+### Fixed
+
+Updated dev-libs/openssl to v3.5.4.
+
+### Security
+
+Fixed CVE-2025-68820 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71123 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68264 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38234 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71077 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68788 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68728 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68811 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68348 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68800 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71102 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68813 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71120 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68337 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68742 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71084 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40325 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68798 in the Linux kernel.
+
+### Change
+
+
+
+### cos-113-18244-521-74
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/06ffda9ccf58dca3b8a10277998fdd686fd701f4 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.74/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-71096 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-61727 in dev-lang/go.
+
+### Security
+
+Applied urllib3 patch for CVE-2024-37891.
+
+### Security
+
+Fixed CVE-2025-68782 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68813 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-61729 in dev-lang/go.
+
+### Security
+
+Fixed CVE-2025-68788 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68780 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68264 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68821 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-22111 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71084 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71077 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68740 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68803 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68814 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71098 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-12084 in dev-lang/python.
+
+### Security
+
+Fixed CVE-2025-68798 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68261 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38022 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71097 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68724 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68349 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38129 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68363 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68337 in the Linux kernel.
+
+### Fixed
+
+Updated dev-libs/openssl to v3.0.18
+
+### Security
+
+Fixed CVE-2025-68820 in the Linux kernel.
+
+### Change
+
+
+
+### cos-117-18613-439-92
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/6d08f5d4ac61d058c2507b97ca2101b22c79a8c1 ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.439.92/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-40350 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-61727 in dev-lang/go.
+
+### Security
+
+Applied urllib3 patch for CVE-2024-37891.
+
+### Security
+
+Fixed CVE-2025-61729 in dev-lang/go.
+
+### Security
+
+Fixed CVE-2025-40350 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-12084 in dev-lang/python.
+
+### Security
+
+Fixed CVE-2025-40350 in the Linux kernel.
+
+### Change
+
+
+
+### cos-121-18867-294-88
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/97e2b5284efaa0c1d58fe37dd438d4f1e64a835f ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.294.88/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Applied urllib3 patch for CVE-2024-37891.
+
+### Security
+
+Fixed CVE-2025-61729 in dev-lang/go.
+
+### Change
+
+Updated dev-libs/openssl to v3.0.18.
+
+### Security
+
+Fixed CVE-2025-12084 in dev-lang/python.
+
+### Security
+
+Fixed CVE-2025-61727 in dev-lang/go.
+
+---
 ## 2026-01-14
 
 ### Change

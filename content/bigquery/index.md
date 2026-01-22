@@ -10,6 +10,10 @@ such as why a particular query was slow or which queries were the most
 resource-intensive in the past day. This feature is in
 [Preview](https://cloud.google.com/products/#product-launch-stages).
 
+### Change
+
+BigQuery is now available in the [Bangkok (`asia-southeast3`) region](https://docs.cloud.google.com/bigquery/docs/locations#regions).
+
 ---
 ## 2026-01-19
 

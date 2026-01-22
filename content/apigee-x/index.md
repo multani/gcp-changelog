@@ -1,5 +1,28 @@
 # Apigee X
 
+## 2026-01-21
+
+### Security
+
+| Bug ID | Description |
+| --- | --- |
+| **471001896, 469829527, 470953822, 462478248, 474415498** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2025-68161](https://nvd.nist.gov/vuln/detail/CVE-2025-68161) * [CVE-2025-67735](https://nvd.nist.gov/vuln/detail/CVE-2025-67735) * [CVE-2025-47914](https://nvd.nist.gov/vuln/detail/CVE-2025-47914) * [CVE-2025-58181](https://nvd.nist.gov/vuln/detail/CVE-2025-58181) * [CVE-2025-58767](https://nvd.nist.gov/vuln/detail/CVE-2025-58767) * [CVE-2025-4802](https://nvd.nist.gov/vuln/detail/CVE-2025-4802) * [CVE-2025-8058](https://nvd.nist.gov/vuln/detail/CVE-2025-8058) * [CVE-2025-61727](https://nvd.nist.gov/vuln/detail/CVE-2025-61727) * [CVE-2025-61729](https://nvd.nist.gov/vuln/detail/CVE-2025-61729) * [CVE-2025-22868](https://nvd.nist.gov/vuln/detail/CVE-2025-22868) * [CVE-2025-22869](https://nvd.nist.gov/vuln/detail/CVE-2025-22869) * [CVE-2025-22870](https://nvd.nist.gov/vuln/detail/CVE-2025-22870) * [CVE-2025-22872](https://nvd.nist.gov/vuln/detail/CVE-2025-22872) |
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| **433999957** | **Implemented full TLS validation when fetching JWKS from remote URIs** |
+| **467762922** | **Quota enforcement logic for Server-Sent Events (SSE) updated** Quotas for SSE are now calculated strictly for events containing explicit token counts. The quota enforcement logic skips SSE that lack token usage metadata. |
+| **N/A** | **Updates to security, infrastructure, and libraries.** |
+
+### Announcement
+
+On January 21st, 2026, we released an updated version of Apigee (1-17-0-apigee-1).
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+---
 ## 2025-12-29
 
 ### Announcement

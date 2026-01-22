@@ -1,5 +1,20 @@
 # Cloud SQL for MySQL
 
+## 2026-01-21
+
+### Change
+
+Cloud SQL for MySQL 8.0.43 is now the [default minor version](https://docs.cloud.google.com/sql/docs/mysql/db-versions#database-version-support)
+of Cloud SQL for MySQL 8.0.
+
+If you have automatic minor version upgrade enabled for your instance,
+then your instance is upgraded to the default minor version automatically during
+its regularly scheduled maintenance update.
+
+For more information about automatic minor version upgrade, see
+[Upgrade the database minor version of MySQL 8.0](https://docs.cloud.google.com/sql/docs/mysql/upgrade-minor-db-version).
+
+---
 ## 2026-01-15
 
 ### Feature

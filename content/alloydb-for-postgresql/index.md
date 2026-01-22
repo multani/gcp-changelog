@@ -1,5 +1,15 @@
 # AlloyDB for PostgreSQL
 
+## 2026-01-21
+
+### Issue
+
+Automatic IAM authentication is unavailable when you use managed connection
+pooling with the AlloyDB Auth Proxy and Language Connectors. To sign into your
+database without a password, use manual IAM authentication. For more
+information, see [Connect using an IAM account](https://docs.cloud.google.com/alloydb/docs/connect-iam)
+
+---
 ## 2026-01-20
 
 ### Feature

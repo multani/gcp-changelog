@@ -1,5 +1,21 @@
 # Cloud Billing
 
+## 2026-01-21
+
+### Feature
+
+**CUD recommendations support more machine types**
+
+Resource-based CUD recommendations for cores and RAM now support additional
+machine series. For a complete list, see
+[Resource-based CUDs supported by recommendations](https://docs.cloud.google.com/docs/cuds-recommender#supported-resource-types-recommendation).
+
+You can access these recommendations using the [FinOps hub user
+interface](https://console.cloud.google.com/billing/optimize), programmatically
+using the [Recommender API](https://docs.cloud.google.com/recommender/docs/apis), or when you
+[export recommendations to BigQuery](https://docs.cloud.google.com/recommender/docs/bq-export/export-recommendations-to-bq).
+
+---
 ## 2025-12-16
 
 ### Feature

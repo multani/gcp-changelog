@@ -2292,6 +2292,13 @@
 
 
 <h1 id="alloydb-for-postgresql">AlloyDB for PostgreSQL</h1>
+<h2 id="2026-01-21">2026-01-21</h2>
+<h3 id="issue">Issue</h3>
+<p>Automatic IAM authentication is unavailable when you use managed connection
+pooling with the AlloyDB Auth Proxy and Language Connectors. To sign into your
+database without a password, use manual IAM authentication. For more
+information, see <a href="https://docs.cloud.google.com/alloydb/docs/connect-iam">Connect using an IAM account</a></p>
+<hr />
 <h2 id="2026-01-20">2026-01-20</h2>
 <h3 id="feature">Feature</h3>
 <p>You can
@@ -2569,7 +2576,7 @@ includes the following features and changes:</p>
 <li>AlloyDB Omni Kubernetes images are now built on Red Hat's Universal Base Image (UBI) 9. For more information, see "Install AlloyDB Omni on Kubernetes" for AlloyDB Omni <a href="https://cloud.google.com/alloydb/omni/15.12.0/docs/deploy-kubernetes#base-image">15.12.0</a> and <a href="https://cloud.google.com/alloydb/omni/16.8.0/docs/deploy-kubernetes#base-image">16.8.0</a>.</li>
 <li>AlloyDB AI requires AlloyDB Omni version 15.5.5 or later.</li>
 </ul>
-<h3 id="issue">Issue</h3>
+<h3 id="issue_1">Issue</h3>
 <p>When upgrading your AlloyDB Omni database clusters, be aware of specific upgrade paths and prerequisites depending on your current <code>controlPlaneAgentsVersion</code> and environment:</p>
 <ul>
 <li>If your database cluster's <code>controlPlaneAgentsVersion</code> is <code>1.0.0</code>, you must first upgrade to <code>1.1.1</code> before you upgrade to <code>1.5.0</code> or higher. You can directly upgrade database clusters with <code>controlPlaneAgentsVersion</code> <code>1.1.0</code> or later to <code>1.5.0</code>.</li>
@@ -2623,6 +2630,9 @@ generally available
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#alloydb-for-postgresql">AlloyDB for PostgreSQL</a></li>
+          <li class="nav-item">
+            <a href="#2026-01-21" class="nav-link">2026-01-21</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-01-20" class="nav-link">2026-01-20</a>
           </li>

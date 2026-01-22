@@ -1,5 +1,21 @@
 # Cloud Monitoring
 
+## 2026-01-21
+
+### Feature
+
+Your Application Monitoring dashboards now display the trace spans that are
+associated with your registered App Hub applications. The display
+includes annotations that let you identify services and workloads. You can also
+open the Trace Explorer page from your Application Monitoring dashboards.
+To learn more, see the following documents:
+
+* [Application Monitoring overview](https://docs.cloud.google.com/monitoring/docs/about-application-monitoring).
+* [View application telemetry](https://docs.cloud.google.com/monitoring/docs/application-monitoring).
+* [Find and explore traces](https://docs.cloud.google.com/trace/docs/finding-traces) describes how to
+  use the Trace Explorer page to filter and explore your trace data.
+
+---
 ## 2025-12-16
 
 ### Other

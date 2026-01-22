@@ -1,5 +1,14 @@
 # Cloud Logging
 
+## 2026-01-20
+
+### Announcement
+
+Cloud Logging adds support for the `asia-southeast3` region. For a complete
+list of supported regions, see
+[Supported regions](https://docs.cloud.google.com/logging/docs/region-support#bucket-regions).
+
+---
 ## 2025-12-12
 
 ### Change

@@ -1,5 +1,16 @@
 # BigQuery
 
+## 2026-01-21
+
+### Feature
+
+You can now use Gemini Cloud Assist to
+[get information about your job history](https://docs.cloud.google.com/bigquery/docs/use-cloud-assist#analyze_jobs),
+such as why a particular query was slow or which queries were the most
+resource-intensive in the past day. This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-01-19
 
 ### Breaking

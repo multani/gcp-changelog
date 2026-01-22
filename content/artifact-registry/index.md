@@ -1,5 +1,13 @@
 # Artifact Registry
 
+## 2026-01-21
+
+### Feature
+
+Artifact Registry is available in the `asia-southeast3` region (Bangkok).
+For more information, see [Global locations](https://cloud.google.com/about/locations).
+
+---
 ## 2026-01-20
 
 ### Feature

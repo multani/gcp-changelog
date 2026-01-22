@@ -1,5 +1,13 @@
 # Bigtable
 
+## 2026-01-21
+
+### Feature
+
+Bigtable is available in the `asia-southeast3` (Bangkok) region. For more
+information, see [Bigtable locations](https://docs.cloud.google.com/bigtable/docs/locations).
+
+---
 ## 2025-12-26
 
 ### Feature

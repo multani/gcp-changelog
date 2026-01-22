@@ -1,5 +1,17 @@
 # Cloud Storage
 
+## 2026-01-21
+
+### Feature
+
+Bucket relocation with write downtime now supports completed multipart uploads.
+If a multipart upload is started before relocation begins and is completed
+before the final synchronization step, the objects are successfully relocated.
+In-progress multipart uploads continue to block the final synchronization
+step until they are either completed or cancelled. For more information, see
+[Bucket relocation overview](https://docs.cloud.google.com/storage/docs/bucket-relocation/overview).
+
+---
 ## 2026-01-20
 
 ### Feature

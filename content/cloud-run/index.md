@@ -1,5 +1,12 @@
 # Cloud Run
 
+## 2026-01-20
+
+### Feature
+
+The following new region is now available: `asia-southeast3`.
+
+---
 ## 2026-01-13
 
 ### Feature

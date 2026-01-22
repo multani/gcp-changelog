@@ -2,9 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Storage</title>
   <subtitle>Changelog for Google Cloud product: Cloud Storage</subtitle>
-  <updated>2026-01-20T00:00:00+00:00</updated>
+  <updated>2026-01-21T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-storage</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-storage/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2026-01-21:feature:0</id>
+    <published>2026-01-21T00:00:00+00:00</published>
+    <updated>2026-01-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Bucket relocation with write downtime now supports completed multipart uploads.
+If a multipart upload is started before relocation begins and is completed
+before the final synchronization step, the objects are successfully relocated.
+In-progress multipart uploads continue to block the final synchronization
+step until they are either completed or cancelled. For more information, see
+<a href="https://docs.cloud.google.com/storage/docs/bucket-relocation/overview">Bucket relocation overview</a>.</p>]]></content>
+    <summary>Bucket relocation now supports multipart uploads that are completed before the final synchronization step. In-progress multipart uploads will continue to block relocation until they are completed or cancelled.</summary>
+    <title>Feature: Bucket relocation now supports completed multipart uploads</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

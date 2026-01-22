@@ -2292,18 +2292,26 @@
 
 
 <h1 id="secret-manager">Secret Manager</h1>
-<h2 id="2025-10-13">2025-10-13</h2>
+<h2 id="2026-01-20">2026-01-20</h2>
 <h3 id="feature">Feature</h3>
+<p>Secret Manager is available in the following region:</p>
+<ul>
+<li><code>asia-southeast3</code> (Bangkok)</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/secret-manager/docs/locations">Secret Manager locations</a>.</p>
+<hr />
+<h2 id="2025-10-13">2025-10-13</h2>
+<h3 id="feature_1">Feature</h3>
 <p><strong>Preview:</strong> Integrated secret synchronization feature is now available in preview. You can automatically synchronize secrets from Secret Manager into Kubernetes Secret objects within your Google Kubernetes Engine (GKE) clusters. This process allows applications to access secrets from Secret Manager using standard Kubernetes methods, such as environment variables or volume mounts. Applications that are already configured to read secrets from Kubernetes Secret object can now seamlessly read secrets in Secret Manager.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/secret-manager/docs/sync-k8-secrets">Synchronize secrets to Kubernetes Secrets</a>.</p>
 <hr />
 <h2 id="2025-09-01">2025-09-01</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p><strong>Automatic secret rotation with the Secret Manager add-on for Google Kubernetes Engine (GKE)</strong>: You can configure the Secret Manager add-on to automatically rotate secrets so that secrets updated in Secret Manager after initial pod deployment are automatically and periodically pushed to the pod. This feature is now Generally available (GA).</p>
 <p>For more information, see <a href="https://cloud.google.com/secret-manager/docs/secret-manager-managed-csi-component#configure_automatic_rotation_of_secrets">Configure automatic rotation of secrets</a>.</p>
 <hr />
 <h2 id="2025-07-09">2025-07-09</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p><strong>Enhanced tagging capabilities for Secret Manager</strong>: You can now add tags directly at the time of secret creation. This new feature lets you provide essential metadata for your resources and helps with better organization, cost tracking, and automated policy application from the time a secret is created. In addition to this, <em>tagging for regional secrets</em> is now fully supported, both during secret creation and for existing regional secrets. For more information, see the documentation on tags for <a href="https://cloud.google.com/secret-manager/docs/create-and-manage-tags">global secrets</a> and <a href="https://cloud.google.com/secret-manager/regional-secrets/create-manage-tags-regional-secrets">regional secrets</a>.</p>
 <p><strong>Soft-enforced rate limits for modifying secrets and secret versions</strong>: We have introduced soft-enforced rate limits for the following operations in Secret Manager:</p>
 <ul>
@@ -2336,6 +2344,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#secret-manager">Secret Manager</a></li>
+          <li class="nav-item">
+            <a href="#2026-01-20" class="nav-link">2026-01-20</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-10-13" class="nav-link">2025-10-13</a>
           </li>

@@ -1,5 +1,14 @@
 # BigQuery
 
+## 2026-01-22
+
+### Fixed
+
+Support for
+[table parameters in table-valued functions](https://docs.cloud.google.com/bigquery/docs/table-functions#table_parameters)
+is restored.
+
+---
 ## 2026-01-21
 
 ### Feature

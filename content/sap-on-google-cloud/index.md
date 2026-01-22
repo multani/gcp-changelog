@@ -1,5 +1,19 @@
 # SAP on Google Cloud
 
+## 2026-01-22
+
+### Announcement
+
+**BigQuery Connector for SAP version 2.12**
+
+Version 2.12 of the BigQuery Connector for SAP is generally available (GA).
+This version offers file-based replication to Cloud Storage,
+table schema caching for streaming replication to BigQuery,
+and enhanced Unicode data handling.
+
+For more information, see [What's new with BigQuery Connector for SAP](https://docs.cloud.google.com/sap/docs/bq-connector/whats-new#version-2-12).
+
+---
 ## 2025-12-23
 
 ### Change

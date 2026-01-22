@@ -12,7 +12,7 @@ This release contains the following changes:
 
 **Integration Rollback**
 
-**This feature is currently in Preview**.
+This feature is currently in Preview.
 
 You can now roll back commercial response integrations to their previously installed version. This action reverts all integration content, including standard code and any custom modifications, to the state of the last installed version. For more information, see [Roll back response integration version](https://docs.cloud.google.com/chronicle/docs/soar/respond/integrations-setup/version-rollback).
 
@@ -30,7 +30,7 @@ You can now roll back commercial response integrations to their previously insta
 
 **Custom Transformers and Logical Operators**
 
-**This feature is currently in Preview**.
+This feature is currently in Preview.
 
 Playbook engineers can now extend platform capabilities by creating custom Python-based transformation functions and logical operators as part of Extension Packs directly within the IDE. For more information, see [Custom transformation functions and logical operators](https://docs.cloud.google.com/chronicle/docs/soar/respond/custom-transformers-logical-operators).
 

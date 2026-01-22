@@ -1,12 +1,54 @@
 # Google SecOps
 
+## 2026-01-21
+
+### Announcement
+
+**New parser documentation now available**
+
+New parser documentation is available to help you ingest and normalize logs from the following sources:
+
+* [Collect Active Countermeasures AI-Hunter logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ai-hunter)
+* [Collect ADVA Fiber Service Platform logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/adva-fsp)
+* [Collect AIX system logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/aix-system)
+* [Collect Akamai SIEM Connector logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/akamai-siem-connector)
+* [Collect AMD Pensando DSS firewall logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/amd-pensando-dss-firewall)
+* [Collect Azure NSG Flow logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/azure-nfg-flow)
+* [Collect Cloudflare Page Shield logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cloudflare-pageshield)
+* [Collect FingerprintJS logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fingerprint-js)
+* [Collect FireEye eMPS logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fireeye-emps)
+* [Collect Forcepoint Email Security logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/forcepoint-emailsecurity)
+* [Collect Forcepoint NGFW logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/forcepoint-ngfw)
+* [Collect Fortinet FortiSASE logs](https://cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fs)
+* [Collect IBM DB2 logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/db2-db)
+* [Collect ManageEngine ADManager Plus logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/admanager-plus)
+* [Collect Microsoft Azure Resource logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/azure-resource-logs)
+* [Collect Microsoft Intune Context logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/azure-mdm-intune-context)
+* [Collect Ubiquiti Unifi switch logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ubiquiti-unifi-switch)
+* [Collect Vectra Detect logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/vectra-detect)
+* [Collect Vectra Stream logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/vectra-stream)
+* [Collect Voltage SecureMail logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/voltage-sm)
+* [Collect Wallix Bastion logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/wallix-bastion)
+
+### Feature
+
+**Direct ingestion for Google Cloud Model Armor logs**
+
+You can now ingest Google Cloud Model Armor logs (`GCP_MODEL_ARMOR`) directly into Google
+SecOps. Use an export filter for direct ingestion and access the logs through
+Google Cloud logging. Model Armor logs provide a unified window into AI-specific
+threats, such as prompt injection and sensitive data leakage.
+
+For more information, see [Model Armor Documentation to Configure Logging](https://docs.cloud.google.com/model-armor/configure-logging).
+
+---
 ## 2026-01-18
 
 ### Feature
 
 **Integration Rollback**
 
-**This feature is currently in Preview**.
+This feature is currently in Preview.
 
 You can now roll back commercial response integrations to their previously installed version. This action reverts all integration content, including standard code and any custom modifications, to the state of the last installed version. For more information, see [Roll back response integration version](https://docs.cloud.google.com/chronicle/docs/soar/respond/integrations-setup/version-rollback).
 

@@ -1,5 +1,16 @@
 # Secret Manager
 
+## 2026-01-20
+
+### Feature
+
+Secret Manager is available in the following region:
+
+* `asia-southeast3` (Bangkok)
+
+For more information, see [Secret Manager locations](https://docs.cloud.google.com/secret-manager/docs/locations).
+
+---
 ## 2025-10-13
 
 ### Feature

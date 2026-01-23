@@ -1,5 +1,12 @@
 # Cloud Run
 
+## 2026-01-22
+
+### Feature
+
+The Python buildpack supports default entrypoint detection for the [Agent Development Kit (ADK) framework](https://docs.cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-adk-service) in [General Availability](https://cloud.google.com/products#product-launch-stages). For more information, see [Build a Python application](https://docs.cloud.google.com/docs/buildpacks/python#entrypoint).
+
+---
 ## 2026-01-20
 
 ### Feature

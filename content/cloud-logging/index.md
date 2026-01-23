@@ -221,6 +221,18 @@ list of supported regions, see
 
 * remove setup.cfg configuration for creating universal wheels (#981) ([70f612c3](https://github.com/googleapis/python-logging/commit/70f612c3))
 
+### Python
+
+#### [3.13.0](https://github.com/googleapis/python-logging/compare/v3.12.1...v3.13.0) (2025-12-15)
+
+##### Features
+
+* Add support for python 3.14 (#1065) ([6be3df6a](https://github.com/googleapis/python-logging/commit/6be3df6a))
+
+##### Bug Fixes
+
+* remove setup.cfg configuration for creating universal wheels (#981) ([70f612c3](https://github.com/googleapis/python-logging/commit/70f612c3))
+
 ---
 ## 2025-12-12
 

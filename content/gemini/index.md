@@ -1,5 +1,16 @@
 # Gemini
 
+## 2026-01-23
+
+### Other
+
+
+
+### Bug fixes in VS Code
+
+Various bug fixes and minor product enhancements.
+
+---
 ## 2026-01-08
 
 ### Feature

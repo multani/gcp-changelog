@@ -209,6 +209,18 @@ list of supported regions, see
 * Documentation update for OpenTelemetry and tracing ([#1657](https://github.com/googleapis/java-logging/issues/1657)) ([e3c6670](https://github.com/googleapis/java-logging/commit/e3c667094170ac7d404addc797facbe997ca51d3))
 * Fix typo in code comments ([#1520](https://github.com/googleapis/java-logging/issues/1520)) ([0440fc6](https://github.com/googleapis/java-logging/commit/0440fc6dfa3c5cd19f0d7d941af242872da1bbd3))
 
+### Python
+
+#### [3.13.0](https://github.com/googleapis/python-logging/compare/v3.12.1...v3.13.0) (2025-12-15)
+
+##### Features
+
+* Add support for python 3.14 (#1065) ([6be3df6a](https://github.com/googleapis/python-logging/commit/6be3df6a))
+
+##### Bug Fixes
+
+* remove setup.cfg configuration for creating universal wheels (#981) ([70f612c3](https://github.com/googleapis/python-logging/commit/70f612c3))
+
 ---
 ## 2025-12-12
 

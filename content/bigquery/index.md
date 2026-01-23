@@ -2,6 +2,17 @@
 
 ## 2026-01-22
 
+### Change
+
+You can now run queries that use the
+[`AI.IF`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-if),
+[`AI.SCORE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-score),
+and
+[`AI.CLASSIFY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-classify)
+functions by using your
+[end-user credentials](https://docs.cloud.google.com/bigquery/docs/permissions-for-ai-functions) instead of a
+BigQuery connection.
+
 ### Fixed
 
 Support for

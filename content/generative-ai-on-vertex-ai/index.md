@@ -1,5 +1,28 @@
 # Generative AI on Vertex AI
 
+## 2026-01-23
+
+### Feature
+
+**Virtual Try-On**
+
+Virtual Try-On is now [generally available
+(GA)](https://cloud.google.com/products/#product-launch-stages).
+The new endpoint, `virtual-try-on-001`,
+replaces the previous endpoint, `virtual-try-on-preview-08-04`. We
+recommend changing to the new endpoint as soon as possible.
+
+For more information, see
+[Generate Virtual Try-On Images](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/image/generate-virtual-try-on-images).
+
+---
+## 2026-01-22
+
+### Announcement
+
+Codestral (25.01) and Mistral Large (24.11) are retired as of January 23, 2026.
+
+---
 ## 2026-01-20
 
 ### Feature

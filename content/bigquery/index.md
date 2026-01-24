@@ -1,5 +1,18 @@
 # BigQuery
 
+## 2026-01-23
+
+### Change
+
+You can now optionally specify which model to use by passing an endpoint
+argument to the
+[`AI.IF`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-if),
+[`AI.SCORE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-score),
+and
+[`AI.CLASSIFY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-classify)
+functions.
+
+---
 ## 2026-01-22
 
 ### Change

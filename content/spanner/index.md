@@ -17,15 +17,15 @@ in Bangkok, Thailand (`asia-southeast3`). For more information, see
 Several updates have been made to [full-text search](https://docs.cloud.google.com/spanner/docs/full-text-search):
 
 * [Named schemas](https://docs.cloud.google.com/spanner/docs/full-text-search/search-indexes#create_and_query_a_search_index_for_a_named_schema)
-  now support full-text search.
-* Spanner search indexes can now
+  support full-text search.
+* Spanner search indexes can
   [accelerate pattern matching expressions](https://docs.cloud.google.com/spanner/docs/full-text-search/pattern-matching-function-acceleration)
   such as `LIKE`, `STARTS_WITH`, and `ENDS_WITH` for pattern matching, and
   `REGEXP_CONTAINS` for regular expression matching.
 * [`TOKENIZE_FULLTEXT`](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/search_functions#tokenize_fulltext)
-  now has an argument for removing diacritics. `SEARCH` and `SCORE` automatically
+  has an argument for removing diacritics. `SEARCH` and `SCORE`
   use this if the data was tokenized with this option.
-* [`TOKENIZE_SUBSTRING`](https://docs.cloud.google.com/spanner/docs/full-text-search/substring-search) now
+* [`TOKENIZE_SUBSTRING`](https://docs.cloud.google.com/spanner/docs/full-text-search/substring-search)
   supports emojis.
 
 ---

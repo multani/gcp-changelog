@@ -2,9 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for MySQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for MySQL</subtitle>
-  <updated>2026-01-21T00:00:00+00:00</updated>
+  <updated>2026-01-23T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-mysql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2026-01-23:feature:0</id>
+    <published>2026-01-23T00:00:00+00:00</published>
+    <updated>2026-01-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud SQL for MySQL now supports performance capture to help you diagnose
+transient performance issues with your MySQL database. Performance capture
+lets you specify configurable thresholds for additional monitoring. If a
+threshold is reached, then performance capture takes snapshots of the database
+state, including in-flight transactions, InnoDB status, and, in the case of
+replication lag, detailed replication status. Performance capture outputs the
+snapshots in a log format so you can review the state of the instance when
+the problem occurred.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/mysql/performance-capture">Cloud SQL performance capture overview</a>.
+Performance capture is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>]]></content>
+    <summary>Cloud SQL for MySQL now offers performance capture to help diagnose transient performance issues. This feature allows setting thresholds for monitoring and automatically takes snapshots of the database state when thresholds are met, outputting them in a log format for easy review. Performance capture is currently in Preview.</summary>
+    <title>Feature: New MySQL Performance Capture Feature</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

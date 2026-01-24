@@ -1,5 +1,22 @@
 # Cloud SQL for MySQL
 
+## 2026-01-23
+
+### Feature
+
+Cloud SQL for MySQL now supports performance capture to help you diagnose
+transient performance issues with your MySQL database. Performance capture
+lets you specify configurable thresholds for additional monitoring. If a
+threshold is reached, then performance capture takes snapshots of the database
+state, including in-flight transactions, InnoDB status, and, in the case of
+replication lag, detailed replication status. Performance capture outputs the
+snapshots in a log format so you can review the state of the instance when
+the problem occurred.
+
+For more information, see [Cloud SQL performance capture overview](https://docs.cloud.google.com/sql/docs/mysql/performance-capture).
+Performance capture is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-01-21
 
 ### Change

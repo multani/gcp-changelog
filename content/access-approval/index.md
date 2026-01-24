@@ -1,5 +1,12 @@
 # Access Approval
 
+## 2026-01-23
+
+### Feature
+
+Automotive AI Agent is generally available [(GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-01-05
 
 ### Feature

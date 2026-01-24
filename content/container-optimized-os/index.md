@@ -1,5 +1,31 @@
 # Container Optimized OS
 
+## 2026-01-23
+
+### Change
+
+
+
+### cos-125-19216-104-117
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/fc34d54f830a07ff0b7ee3b4f6273acf2d6099de ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.104.117/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Fixed a performance issue in TCPX.
+
+### Security
+
+Fixed CVE-2025-71141 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-13837 in dev-lang/python.
+
+---
 ## 2026-01-20
 
 ### Change

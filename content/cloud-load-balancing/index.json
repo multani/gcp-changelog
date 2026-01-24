@@ -1,6 +1,16 @@
 {
   "name": "Cloud Load Balancing",
   "entries": {
+    "2026-01-23": [
+      {
+        "kind": "Feature",
+        "content": "Application Load Balancers now support the configuration of a\n[traffic duration](https://cloud.google.com/load-balancing/docs/backend-service#applb-csm-traffic-duration) setting when you add backends to the backend services. You can configure this\nsetting as `SHORT` or `LONG` based on the response time needed by backends to\ncomplete HTTP requests.\n\nApplication Load Balancers also support the use of a new\n[*in-flight* balancing mode](https://cloud.google.com/load-balancing/docs/load-balancing/docs/backend-service#bmtc-inflight) that lets you configure the load balancer's\ntraffic distribution to supported backends when requests take more than a second\nto complete.\n\nThis feature is available in **Preview**.",
+        "summary": {
+          "title": "New traffic management options for load balancing",
+          "summary": "Application Load Balancers now offer enhanced traffic management with configurable traffic duration settings (SHORT or LONG) and an in-flight balancing mode. These features allow for finer control over how requests are distributed to backends, especially for those with longer response times. This functionality is currently in Preview."
+        }
+      }
+    ],
     "2026-01-19": [
       {
         "kind": "Feature",

@@ -1,5 +1,21 @@
 # Dataproc
 
+## 2026-01-23
+
+### Fixed
+
+* Applied patch for [SPARK-48292](https://issues.apache.org/jira/browse/SPARK-48292) in Serverless for Apache Spark [1.2](https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-1.2) and [2.2](https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-2.2) runtimes.
+
+### Announcement
+
+New [Serverless for Apache Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
+
+* 1.2.67
+* 2.2.67
+* 2.3.20
+* 3.0.3
+
+---
 ## 2026-01-13
 
 ### Announcement

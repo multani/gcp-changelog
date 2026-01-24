@@ -2,9 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Load Balancing</title>
   <subtitle>Changelog for Google Cloud product: Cloud Load Balancing</subtitle>
-  <updated>2026-01-19T00:00:00+00:00</updated>
+  <updated>2026-01-23T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-load-balancing</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-load-balancing/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-load-balancing:2026-01-23:feature:0</id>
+    <published>2026-01-23T00:00:00+00:00</published>
+    <updated>2026-01-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Application Load Balancers now support the configuration of a
+<a href="https://cloud.google.com/load-balancing/docs/backend-service#applb-csm-traffic-duration">traffic duration</a> setting when you add backends to the backend services. You can configure this
+setting as <code>SHORT</code> or <code>LONG</code> based on the response time needed by backends to
+complete HTTP requests.</p>
+<p>Application Load Balancers also support the use of a new
+<a href="https://cloud.google.com/load-balancing/docs/load-balancing/docs/backend-service#bmtc-inflight"><em>in-flight</em> balancing mode</a> that lets you configure the load balancer's
+traffic distribution to supported backends when requests take more than a second
+to complete.</p>
+<p>This feature is available in <strong>Preview</strong>.</p>]]></content>
+    <summary>Application Load Balancers now offer enhanced traffic management with configurable traffic duration settings (SHORT or LONG) and an in-flight balancing mode. These features allow for finer control over how requests are distributed to backends, especially for those with longer response times. This functionality is currently in Preview.</summary>
+    <title>Feature: New traffic management options for load balancing</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

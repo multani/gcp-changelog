@@ -1,5 +1,12 @@
 # Google SecOps SIEM
 
+## 2026-01-24
+
+### Announcement
+
+[Release 6.3.72](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#January_18_2026) is now available for all regions.
+
+---
 ## 2026-01-21
 
 ### Announcement

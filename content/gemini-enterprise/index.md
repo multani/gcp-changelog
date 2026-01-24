@@ -1,5 +1,24 @@
 # Gemini Enterprise
 
+## 2026-01-23
+
+### Feature
+
+**Gemini Enterprise: New actions in the unified view (Preview)**
+
+New actions have been added to the following existing data stores:
+
+* [Box](https://docs.cloud.google.com/gemini/enterprise/docs/box)
+* [Confluence Cloud](https://docs.cloud.google.com/gemini/enterprise/docs/confluence-cloud)
+* [Dropbox](https://docs.cloud.google.com/gemini/enterprise/docs/dropbox)
+* [Jira Cloud](https://docs.cloud.google.com/gemini/enterprise/docs/jira-cloud)
+* [Microsoft OneDrive](https://docs.cloud.google.com/gemini/enterprise/docs/ms-onedrive)
+* [Microsoft Outlook](https://docs.cloud.google.com/gemini/enterprise/docs/ms-outlook)
+* [Microsoft SharePoint](https://docs.cloud.google.com/gemini/enterprise/docs/ms-sharepoint)
+
+For a list of supported actions for these data stores, see [Supported actions](https://docs.cloud.google.com/gemini/enterprise/docs/connect-third-party-data-source#supported_actions).
+
+---
 ## 2026-01-12
 
 ### Announcement
@@ -41,7 +60,7 @@ Use the new capabilities on the **Actions** page to:
 * Enable or disable the existing actions.
 * Re-authenticate actions and verify authentication parameters.
 
-For more information, see [View and manage
+For more information, see [Manage
 actions](https://docs.cloud.google.com/gemini/enterprise/docs/manage-actions).
 
 ---

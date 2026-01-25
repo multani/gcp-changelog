@@ -1,5 +1,38 @@
 # Google SecOps SIEM
 
+## 2026-01-25
+
+### Announcement
+
+Release 6.3.73 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains the following changes:
+
+### Announcement
+
+**Integration Rollback**
+
+This [Integration Rollback](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#January_18_2026) feature is now in General Availability (GA).
+
+Rollback is not supported for integrations built for Python 2.7 or 3.7. To perform a rollback, a snapshot must have been created during the previous upgrade process.
+For more information, see [Roll back response integration version](https://docs.cloud.google.com/chronicle/docs/soar/respond/integrations-setup/version-rollback).
+
+### Feature
+
+**Structured SOAR Python integration logs**
+
+Python integration logging has been upgraded to a structured format to eliminate visibility gaps and ensure comprehensive diagnostic coverage in Google Cloud.  
+This upgrade changes how Python logs are interpreted in the GCP Cloud Logging Explorer. Previously, logs were bundled into a single block per execution. Now, every log line is interpreted as a separate entry, allowing for granular filtering, better searchability, and easier debugging of specific events.
+
+**Recommended Actions:**
+
+* **Update Log-Based Alerts:** Ensure alerts triggered by string matches are compatible with individual log entries rather than bundled blocks.
+* **Review Automation Scripts:** Test any external scripts or BigQuery exports that parse textPayload against the new granular format.
+* **Verify Dashboards:** Custom monitoring dashboards may show an increase in event counts as executions are no longer bundled.
+
+For more information, see [Collect SOAR logs](https://docs.cloud.google.com/chronicle/docs/soar/investigate/collecting-soar-logs).
+
+---
 ## 2026-01-24
 
 ### Announcement

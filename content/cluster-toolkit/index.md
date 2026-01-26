@@ -1,5 +1,20 @@
 # Cluster Toolkit
 
+## 2026-01-07
+
+### Feature
+
+Cluster Toolkit version v1.77.0 is available. This release introduces
+a robust destroy process to help ensure that you can reliably delete resources from
+the Cluster Toolkit. This version also adds an automated Google Cloud
+resource cleanup script and integrates a Cloud Build pipeline to let you
+remove resources that are no longer required.
+
+For more information
+about this release and other minor changes, see the [Release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5075).
+
+---
 ## 2025-12-18
 
 ### Feature

@@ -1,12 +1,15 @@
 # Google SecOps SOAR
 
+## 2026-01-26
+
+### Feature
+
+**Timeline View for Alerts**
+
+Visualize alert patterns over time using the new timeline view in the **Alerts** section of the **Cases Overview** tab.
+
+---
 ## 2026-01-25
-
-### Announcement
-
-Release 6.3.73 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
-
-This release contains the following changes:
 
 ### Announcement
 
@@ -31,6 +34,12 @@ This upgrade changes how Python logs are interpreted in the GCP Cloud Logging Ex
 * **Verify Dashboards:** Custom monitoring dashboards may show an increase in event counts as executions are no longer bundled.
 
 For more information, see [Collect SOAR logs](https://docs.cloud.google.com/chronicle/docs/soar/investigate/collecting-soar-logs).
+
+### Announcement
+
+Release 6.3.73 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains the following changes:
 
 ---
 ## 2026-01-24

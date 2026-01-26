@@ -1,15 +1,17 @@
 {
   "name": "Google SecOps SOAR",
   "entries": {
-    "2026-01-25": [
+    "2026-01-26": [
       {
-        "kind": "Announcement",
-        "content": "Release 6.3.73 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).\n\nThis release contains the following changes:",
+        "kind": "Feature",
+        "content": "**Timeline View for Alerts**\n\nVisualize alert patterns over time using the new timeline view in the **Alerts** section of the **Cases Overview** tab.",
         "summary": {
-          "title": "New release available",
-          "summary": "Release 6.3.73 is now available in the initial set of regions. This update includes several important changes and improvements."
+          "title": "Alerts timeline view",
+          "summary": "The new timeline view in the Alerts section of the Cases Overview tab allows you to visualize alert patterns over time."
         }
-      },
+      }
+    ],
+    "2026-01-25": [
       {
         "kind": "Announcement",
         "content": "**Integration Rollback**\n\nThis [Integration Rollback](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#January_18_2026) feature is now in General Availability (GA).\n\nRollback is not supported for integrations built for Python 2.7 or 3.7. To perform a rollback, a snapshot must have been created during the previous upgrade process.\nFor more information, see [Roll back response integration version](https://docs.cloud.google.com/chronicle/docs/soar/respond/integrations-setup/version-rollback).",
@@ -24,6 +26,14 @@
         "summary": {
           "title": "Structured Python Integration Logs",
           "summary": "Python integration logs are now structured for better visibility and debugging in Cloud Logging. Each log line is a separate entry, enabling granular filtering and searchability. Update alerts and review parsing scripts to accommodate this change."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "Release 6.3.73 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).\n\nThis release contains the following changes:",
+        "summary": {
+          "title": "New release available",
+          "summary": "Release 6.3.73 is now available in the initial set of regions. This update includes several important changes and improvements."
         }
       }
     ],

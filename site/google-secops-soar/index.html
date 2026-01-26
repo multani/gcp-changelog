@@ -2292,16 +2292,18 @@
 
 
 <h1 id="google-secops-soar">Google SecOps SOAR</h1>
+<h2 id="2026-01-26">2026-01-26</h2>
+<h3 id="feature">Feature</h3>
+<p><strong>Timeline View for Alerts</strong></p>
+<p>Visualize alert patterns over time using the new timeline view in the <strong>Alerts</strong> section of the <strong>Cases Overview</strong> tab.</p>
+<hr />
 <h2 id="2026-01-25">2026-01-25</h2>
 <h3 id="announcement">Announcement</h3>
-<p>Release 6.3.73 is being rolled out to the first phase of regions as listed <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
-<p>This release contains the following changes:</p>
-<h3 id="announcement_1">Announcement</h3>
 <p><strong>Integration Rollback</strong></p>
 <p>This <a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#January_18_2026">Integration Rollback</a> feature is now in General Availability (GA).</p>
 <p>Rollback is not supported for integrations built for Python 2.7 or 3.7. To perform a rollback, a snapshot must have been created during the previous upgrade process.
 For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/respond/integrations-setup/version-rollback">Roll back response integration version</a>.</p>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_1">Feature</h3>
 <p><strong>Structured SOAR Python integration logs</strong></p>
 <p>Python integration logging has been upgraded to a structured format to eliminate visibility gaps and ensure comprehensive diagnostic coverage in Google Cloud.<br />
 This upgrade changes how Python logs are interpreted in the GCP Cloud Logging Explorer. Previously, logs were bundled into a single block per execution. Now, every log line is interpreted as a separate entry, allowing for granular filtering, better searchability, and easier debugging of specific events.</p>
@@ -2312,6 +2314,9 @@ This upgrade changes how Python logs are interpreted in the GCP Cloud Logging Ex
 <li><strong>Verify Dashboards:</strong> Custom monitoring dashboards may show an increase in event counts as executions are no longer bundled.</li>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/investigate/collecting-soar-logs">Collect SOAR logs</a>.</p>
+<h3 id="announcement_1">Announcement</h3>
+<p>Release 6.3.73 is being rolled out to the first phase of regions as listed <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
+<p>This release contains the following changes:</p>
 <hr />
 <h2 id="2026-01-24">2026-01-24</h2>
 <h3 id="announcement_2">Announcement</h3>
@@ -2321,7 +2326,7 @@ This upgrade changes how Python logs are interpreted in the GCP Cloud Logging Ex
 <h3 id="announcement_3">Announcement</h3>
 <p>Release 6.3.72 is being rolled out to the first phase of regions as listed <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
 <p>This release contains the following changes:</p>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p><strong>Integration Rollback</strong></p>
 <p>This feature is currently in Preview.</p>
 <p>You can now roll back commercial response integrations to their previously installed version. This action reverts all integration content, including standard code and any custom modifications, to the state of the last installed version. For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/respond/integrations-setup/version-rollback">Roll back response integration version</a>.</p>
@@ -2331,7 +2336,7 @@ This upgrade changes how Python logs are interpreted in the GCP Cloud Logging Ex
 <p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#January_11_2026">Release 6.3.71</a> is now available for all regions.</p>
 <hr />
 <h2 id="2026-01-11">2026-01-11</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p><strong>Custom Transformers and Logical Operators</strong></p>
 <p>This feature is currently in Preview.</p>
 <p>Playbook engineers can now extend platform capabilities by creating custom Python-based transformation functions and logical operators as part of Extension Packs directly within the IDE. For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/respond/custom-transformers-logical-operators">Custom transformation functions and logical operators</a>.</p>
@@ -2372,7 +2377,7 @@ For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/
 <p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#November_16_2025">Release 6.3.68</a> is now available for all regions.</p>
 <hr />
 <h2 id="2025-11-19">2025-11-19</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p><strong>Google Threat Intelligence</strong>: Version 6.0</p>
 <ul>
 <li>
@@ -2452,7 +2457,7 @@ For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/
 <h3 id="announcement_12">Announcement</h3>
 <p>Release 6.3.68 is being rolled out to the first phase of regions as listed <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
 <p>This release contains the following changes:</p>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p><strong>Change views per alert</strong></p>
 <p>The <strong>Alert Overview</strong> page now includes a new option to select a specific view for each alert. If several playbooks have run on an alert, and those playbooks have customized views, you can now select and display any of those customized views for that alert.</p>
 <hr />
@@ -2461,9 +2466,9 @@ For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/
 <p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#November_09_2025">Release 6.3.67</a> is now available for all regions.</p>
 <hr />
 <h2 id="2025-11-12">2025-11-12</h2>
-<h3 id="feature_5">Feature</h3>
-<p>New <strong>Azure Monitor</strong> integration</p>
 <h3 id="feature_6">Feature</h3>
+<p>New <strong>Azure Monitor</strong> integration</p>
+<h3 id="feature_7">Feature</h3>
 <p><strong>Siemplify</strong>: Version 95.0</p>
 <ul>
 <li>
@@ -2593,7 +2598,7 @@ integrations:</p>
 <p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#November_02_2025">Release 6.3.66</a> is now available for all regions.</p>
 <hr />
 <h2 id="2025-11-05">2025-11-05</h2>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p><strong>SentinelOneV2</strong>: Version 43.0</p>
 <ul>
 <li>
@@ -2630,7 +2635,7 @@ integrations:</p>
 <li><strong>Integration</strong>: Updated the integration's action definitions to meet the new
   requirements of the IDE.</li>
 </ul>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p><strong>Palo Alto XDR</strong>: Version 20.0</p>
 <ul>
 <li>
@@ -2759,7 +2764,7 @@ integrations:</p>
 </ul>
 <hr />
 <h2 id="2025-10-26">2025-10-26</h2>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p><strong>Delete high-load environments</strong></p>
 <p>You can now easily delete environments with heavy loads directly from the platform.</p>
 <h3 id="announcement_18">Announcement</h3>
@@ -2782,7 +2787,7 @@ integrations:</p>
 <p><strong>List Host</strong></p>
 </li>
 </ul>
-<h3 id="feature_10">Feature</h3>
+<h3 id="feature_11">Feature</h3>
 <p><strong>SentinelOneV2</strong>: Version 42.0</p>
 <ul>
 <li>
@@ -2917,7 +2922,7 @@ integrations:</p>
 <li><strong>Enrich Hash</strong></li>
 <li><strong>Enrich CVE</strong></li>
 </ul>
-<h3 id="feature_11">Feature</h3>
+<h3 id="feature_12">Feature</h3>
 <p><strong>CrowdStrike Falcon</strong>: Version 66.0</p>
 <ul>
 <li>
@@ -2992,11 +2997,11 @@ integrations:</p>
 <h3 id="announcement_24">Announcement</h3>
 <p>Release 6.3.62 is being rolled out to the first phase of regions, as outlined in our <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">Google SecOps release plan</a>.</p>
 <p>This release contains the following changes:</p>
-<h3 id="feature_12">Feature</h3>
+<h3 id="feature_13">Feature</h3>
 <p><strong>Podman support for Remote Agents</strong></p>
 <p>You can now install a Remote Agent using Podman. This new functionality provides a streamlined deployment workflow—a lightweight alternative to existing installation methods.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/working-with-remote-agents/deploy-agent-with-podman">Deploy an agent with Podman</a>.</p>
-<h3 id="feature_13">Feature</h3>
+<h3 id="feature_14">Feature</h3>
 <p><strong>Deploy an agent with Debian</strong></p>
 <p>You can now install a Remote Agent using Debian. This new functionality provides a streamlined deployment workflow—an alternative to existing installation methods.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/working-with-remote-agents/create-agent-with-installer-on-debian">Deploy an agent with Debian</a>.</p>
@@ -3014,9 +3019,9 @@ integrations:</p>
 <p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#September_16_2025">Release 6.3.61</a> is now available for all regions.</p>
 <hr />
 <h2 id="2025-09-25">2025-09-25</h2>
-<h3 id="feature_14">Feature</h3>
-<p>New <strong>Apache Kafka</strong> integration</p>
 <h3 id="feature_15">Feature</h3>
+<p>New <strong>Apache Kafka</strong> integration</p>
+<h3 id="feature_16">Feature</h3>
 <p><strong>Microsoft Azure Sentinel</strong>: Version 57.0</p>
 <ul>
 <li>
@@ -3086,7 +3091,7 @@ integrations:</p>
 </ul>
 <hr />
 <h2 id="2025-09-17">2025-09-17</h2>
-<h3 id="feature_16">Feature</h3>
+<h3 id="feature_17">Feature</h3>
 <p><strong>SentinelOneV2</strong>: Version 41.0</p>
 <ul>
 <li>
@@ -3108,7 +3113,7 @@ integrations:</p>
 <p><strong>Update Alert</strong></p>
 </li>
 </ul>
-<h3 id="feature_17">Feature</h3>
+<h3 id="feature_18">Feature</h3>
 <p><strong>Google Threat Intelligence</strong>: Version 4.0</p>
 <ul>
 <li>
@@ -3118,7 +3123,7 @@ integrations:</p>
 <p><strong>Set DTM Alert Analysis</strong></p>
 </li>
 </ul>
-<h3 id="feature_18">Feature</h3>
+<h3 id="feature_19">Feature</h3>
 <p><strong>Palo Alto Cortex XDR</strong>: Version 18.0</p>
 <ul>
 <li>
@@ -3219,11 +3224,11 @@ integrations:</p>
 <h3 id="announcement_30">Announcement</h3>
 <p>Release 6.3.61 is being rolled out to the first phase of regions, as outlined in our <a href="https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">Google SecOps release plan</a>.</p>
 <p>This release contains the following features:</p>
-<h3 id="feature_19">Feature</h3>
+<h3 id="feature_20">Feature</h3>
 <p><strong>Advanced job scheduling</strong></p>
 <p>The job scheduling functionality has been enhanced with advanced options. This functionality provides more precise control and flexible, calendar-like scheduling for your scripts.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/soar/respond/jobs-scheduler/writing-jobs#advanced-scheduling">Configure a new job with advanced scheduling</a>.</p>
-<h3 id="feature_20">Feature</h3>
+<h3 id="feature_21">Feature</h3>
 <p><strong>Use custom fields in the Close Case dialog</strong></p>
 <p>Administrators can now add custom fields to the <strong>Close Case</strong> dialog. This new functionality provides a more streamlined workflow and replaces the <strong>Dynamic Fields</strong> feature.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/custom-fields-in-case-closure">Use custom fields in the Close Case dialog</a>.</p>
@@ -3254,7 +3259,7 @@ integrations:</p>
 <p><a href="https://cloud.google.com/chronicle/docs/soar/release-notes#August_23_2025">Release 6.3.59</a> is now available for all regions.</p>
 <hr />
 <h2 id="2025-08-27">2025-08-27</h2>
-<h3 id="feature_21">Feature</h3>
+<h3 id="feature_22">Feature</h3>
 <p><strong>Google Workspace</strong>: Version 20.0</p>
 <ul>
 <li>
@@ -3296,12 +3301,12 @@ integrations:</p>
 <h3 id="announcement_38">Announcement</h3>
 <p>Release 6.3.57 is being rolled out to the first phase of regions, as outlined in our <a href="https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">Google SecOps release plan</a>.</p>
 <p>This release contains the following features:</p>
-<h3 id="feature_22">Feature</h3>
+<h3 id="feature_23">Feature</h3>
 <p><strong>Expression Builder enhancements</strong></p>
 <p>The <strong>Expression Builder</strong> has been enhanced with a new set of pre-built filters to help streamline query creation.</p>
 <p>We've improved the information within the platform for all filters, both new and existing. The supporting documentation provides clearer descriptions and practical examples for each transformer, making it easier to understand their purpose and syntax.</p>
 <p>For details, see <a href="https://cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/using-the-expression-builder">Use the Expression Builder</a>.</p>
-<h3 id="feature_23">Feature</h3>
+<h3 id="feature_24">Feature</h3>
 <p><strong>Remote agent notifications</strong></p>
 <p>Agent notifications will alert you to new remote agent version releases and agent downtime based on your permissions and associated environments. Agent notifications are now enabled by default. You can opt out of these notifications at any time from your user preferences.</p>
 <p>For details, see <a href="https://cloud.google.com/chronicle/docs/soar/working-with-remote-agents/what-is-a-remote-agent#agent-notifications">Agent notifications</a>.</p>
@@ -3314,12 +3319,12 @@ integrations:</p>
 <h3 id="announcement_40">Announcement</h3>
 <p>Release 6.3.56 is rolling out to the first phase of regions, as outlined in our <a href="https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">Google SecOps release plan</a>.</p>
 <p>This release includes the following features:</p>
-<h3 id="feature_24">Feature</h3>
+<h3 id="feature_25">Feature</h3>
 <p><strong>Automated retries for failed playbook actions</strong></p>
 <p>This feature is in Preview.</p>
 <p>Playbook functionality now supports automatic retries for individual actions that encounter temporary issues, such as network outages, API rate limits, or service unavailability. You can define the number of retry attempts and the intervals between retries directly at the step level within playbooks.</p>
 <p>For more information on configuring and using action retries, see <a href="https://cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/retry-actions">Configure action retries in playbooks</a>.</p>
-<h3 id="feature_25">Feature</h3>
+<h3 id="feature_26">Feature</h3>
 <p><strong>Custom Fields Form widget is now supported in Playbook View</strong></p>
 <p>The <strong>Custom Fields Form</strong> widget is now supported in Playbook View.</p>
 <hr />
@@ -3331,12 +3336,12 @@ integrations:</p>
 <h3 id="announcement_42">Announcement</h3>
 <p>Release 6.3.55 is being rolled out to the first phase of regions, as outlined in our <a href="https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">Google SecOps release plan</a>.</p>
 <p>This release contains the following features:</p>
-<h3 id="feature_26">Feature</h3>
+<h3 id="feature_27">Feature</h3>
 <p><strong>Automate tasks with Playbook Loops</strong></p>
 <p>This feature is in Preview.</p>
 <p>Playbook functionality has been enhanced to include <strong>Playbook Loops</strong>. This feature update lets playbooks iterate over lists or entities, performing one or more actions for each item. It streamlines automation by eliminating the need for duplicated steps or custom actions when processing multiple items. You can configure Playbook Loops directly within a playbook or inside a playbook block.</p>
 <p>For setup instructions and use case examples , see <a href="https://cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/playbook-loops">Automate tasks with Playbook Loops</a>.</p>
-<h3 id="feature_27">Feature</h3>
+<h3 id="feature_28">Feature</h3>
 <p><strong>Playbook Simulator enhancements for loops</strong></p>
 <p>The Playbook Simulator now supports visualization and debugging of playbooks that contain loops. This lets you clearly see and navigate through each loop iteration within the simulator viewer.</p>
 <p>Additionally, the step display order has been updated to show actions from top to bottom (oldest at the top, newest at the bottom), with automatic scrolling to the most recent activity.</p>
@@ -3368,7 +3373,7 @@ integrations:</p>
 <h3 id="announcement_48">Announcement</h3>
 <p>Release 6.3.52 is being rolled out to the first phase of regions as listed <a href="https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
 <p>This release contains the following feature:</p>
-<h3 id="feature_28">Feature</h3>
+<h3 id="feature_29">Feature</h3>
 <p><strong>Share Case Queue Filters</strong></p>
 <p>You can now share case queue filters with other users. These filters can be saved with specific criteria, such as assignee roles, and shared with individual users, SOC roles, or all users in your organization for quick access.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/apply-and-save-filters">Apply and save filters</a>.</p>
@@ -3414,13 +3419,13 @@ integrations:</p>
 <h2 id="2025-06-07">2025-06-07</h2>
 <h3 id="announcement_57">Announcement</h3>
 <p>Release 6.3.48 is being rolled out to the first phase of regions.</p>
-<h3 id="feature_29">Feature</h3>
+<h3 id="feature_30">Feature</h3>
 <p><strong>Playbook Permissions: Support for API Key Roles</strong></p>
 <p>The platform has been updated to extend playbook permissions to also support the SOC Roles associated with API keys, in addition to the user SOC Roles.</p>
 <p>This enhancement affects how integrations using API keys interact with playbooks that have specific permission configurations. For example, GitSync now uses this capability to synchronize playbooks with restricted permissions.</p>
 <p>For more information on how playbook permissions work with users and API keys, see <a href="http://cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/playbook-permissions">Playbook permissions</a>.</p>
 <p>For specific instructions on configuring GitSync with restricted playbooks, see <a href="https://cloud.google.com/chronicle/docs/soar/marketplace/power-ups/gitsync#work-with-playbook-permissions">GitSync - Work with playbook permissions</a>.</p>
-<h3 id="feature_30">Feature</h3>
+<h3 id="feature_31">Feature</h3>
 <p><strong>Advanced Reports: Case Custom Fields</strong></p>
 <p>Advanced Reports (Looker) has been enhanced to include support for custom fields created for Cases.</p>
 <p>This enhancement allows users to leverage organization-specific data captured in custom fields to gain deeper insights and create tailored visualizations within Looker reports. Specific LookML formulas and filtering guidance are now available.</p>
@@ -3436,6 +3441,9 @@ integrations:</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-secops-soar">Google SecOps SOAR</a></li>
+          <li class="nav-item">
+            <a href="#2026-01-26" class="nav-link">2026-01-26</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-01-25" class="nav-link">2026-01-25</a>
           </li>

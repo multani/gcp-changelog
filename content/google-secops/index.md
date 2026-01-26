@@ -1,5 +1,38 @@
 # Google SecOps
 
+## 2026-01-25
+
+### Feature
+
+**Structured SOAR Python integration logs**
+
+Python integration logging has been upgraded to a structured format to eliminate visibility gaps and ensure comprehensive diagnostic coverage in Google Cloud.  
+This upgrade changes how Python logs are interpreted in the GCP Cloud Logging Explorer. Previously, logs were bundled into a single block per execution. Now, every log line is interpreted as a separate entry, allowing for granular filtering, better searchability, and easier debugging of specific events.
+
+**Recommended Actions:**
+
+* **Update Log-Based Alerts:** Ensure alerts triggered by string matches are compatible with individual log entries rather than bundled blocks.
+* **Review Automation Scripts:** Test any external scripts or BigQuery exports that parse textPayload against the new granular format.
+* **Verify Dashboards:** Custom monitoring dashboards may show an increase in event counts as executions are no longer bundled.
+
+For more information, see [Collect Google SecOps SOAR logs](https://docs.cloud.google.com/chronicle/docs/secops/collect-secops-soar-logs).
+
+### Announcement
+
+**Integration Rollback**
+
+This [Integration Rollback](https://docs.cloud.google.com/chronicle/docs/secops/release-notes#January_18_2026) feature is now in General Availability (GA).
+
+Rollback is not supported for integrations built for Python 2.7 or 3.7. To perform a rollback, a snapshot must have been created during the previous upgrade process.
+For more information, see [Roll back response integration version](https://docs.cloud.google.com/chronicle/docs/soar/respond/integrations-setup/version-rollback).
+
+### Feature
+
+**Timeline View for Alerts**
+
+Visualize alert patterns over time using the new timeline view in the Alerts section of the Cases Overview tab.
+
+---
 ## 2026-01-21
 
 ### Announcement

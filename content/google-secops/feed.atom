@@ -2,9 +2,55 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps</subtitle>
-  <updated>2026-01-21T00:00:00+00:00</updated>
+  <updated>2026-01-25T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-01-25:feature:0</id>
+    <published>2026-01-25T00:00:00+00:00</published>
+    <updated>2026-01-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Structured SOAR Python integration logs</strong></p>
+<p>Python integration logging has been upgraded to a structured format to eliminate visibility gaps and ensure comprehensive diagnostic coverage in Google Cloud.<br />
+This upgrade changes how Python logs are interpreted in the GCP Cloud Logging Explorer. Previously, logs were bundled into a single block per execution. Now, every log line is interpreted as a separate entry, allowing for granular filtering, better searchability, and easier debugging of specific events.</p>
+<p><strong>Recommended Actions:</strong></p>
+<ul>
+<li><strong>Update Log-Based Alerts:</strong> Ensure alerts triggered by string matches are compatible with individual log entries rather than bundled blocks.</li>
+<li><strong>Review Automation Scripts:</strong> Test any external scripts or BigQuery exports that parse textPayload against the new granular format.</li>
+<li><strong>Verify Dashboards:</strong> Custom monitoring dashboards may show an increase in event counts as executions are no longer bundled.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/secops/collect-secops-soar-logs">Collect Google SecOps SOAR logs</a>.</p>]]></content>
+    <summary>Python integration logs are now structured, providing better visibility and diagnostics. Each log line is a separate entry for easier filtering and debugging. Update alerts and review scripts to accommodate this change.</summary>
+    <title>Feature: Structured Python Integration Logs</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-01-25:announcement:1</id>
+    <published>2026-01-25T00:00:00+00:00</published>
+    <updated>2026-01-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Integration Rollback</strong></p>
+<p>This <a href="https://docs.cloud.google.com/chronicle/docs/secops/release-notes#January_18_2026">Integration Rollback</a> feature is now in General Availability (GA).</p>
+<p>Rollback is not supported for integrations built for Python 2.7 or 3.7. To perform a rollback, a snapshot must have been created during the previous upgrade process.
+For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/respond/integrations-setup/version-rollback">Roll back response integration version</a>.</p>]]></content>
+    <summary>The Integration Rollback feature is now in General Availability, allowing users to revert integration versions. Note that rollback is not supported for Python 2.7 or 3.7 integrations, and a snapshot must have been created during the previous upgrade.</summary>
+    <title>Announcement: Integration Rollback Now Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-01-25:feature:2</id>
+    <published>2026-01-25T00:00:00+00:00</published>
+    <updated>2026-01-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Timeline View for Alerts</strong></p>
+<p>Visualize alert patterns over time using the new timeline view in the Alerts section of the Cases Overview tab.</p>]]></content>
+    <summary>You can now visualize alert patterns over time with the new timeline view in the Alerts section of the Cases Overview tab. This feature helps you better understand the history and frequency of your alerts.</summary>
+    <title>Feature: Alerts timeline view available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -165,6 +165,13 @@ to end-users using the web SDK.
 Administrators: The **Web chat** checkbox appears at **Settings >
 Forms > Add template > Custom form**.
 
+### Announcement
+
+**Google Cloud CCaaS 3.44 prerelease notes**
+
+These are the prerelease notes for Google Cloud CCaaS version 3.44. When version
+3.44 is released, the new capabilities are expected to be as described here.
+
 ### Feature
 
 **Edit email subject lines**

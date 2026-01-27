@@ -1,5 +1,30 @@
 # Cluster Toolkit
 
+## 2026-01-21
+
+### Feature
+
+Cluster Toolkit version v1.79.0 is available. This release enables
+Dynamic Workload Scheduler
+Flex-start provisioning for G4 instances.
+
+For more information about this release and other minor changes, see the
+[Release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5125).
+
+---
+## 2026-01-14
+
+### Feature
+
+Cluster Toolkit version v1.78.0 is available. This release adds a
+deprecation notice for the Parallelstore module. This version also adds support
+for gIB versions v1.1.1 and v1.1.0 for the Arm64-based architecture.
+
+For more information about this release and other minor changes, see the [Release
+announcement on GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5105).
+
+---
 ## 2026-01-07
 
 ### Feature

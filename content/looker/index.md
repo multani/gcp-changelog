@@ -1,5 +1,56 @@
 # Looker
 
+## 2026-01-26
+
+### Feature
+
+**Available January 29, 2026:** Conversational Analytics includes a **Show reasoning** toggle that provides step-by-step insight into how the agent reaches its answers. This update also includes improvements to overall answer accuracy. See the [Conversational Analytics API](https://docs.cloud.google.com/gemini/docs/conversational-analytics-api/overview) documentation for details.
+
+### Feature
+
+Gemini in Looker can now [generate a summary and an analysis of an Explore](https://docs.cloud.google.com/looker/docs/explore-summary-gemini).
+
+### Feature
+
+The [**Self-service Explores** admin page](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore) now supports a connection test button so that Looker admins can verify that the BigQuery connection is able to support self-service Explores.
+
+### Announcement
+
+**Looker 26.0** includes the following feature updates, which will start rolling out on January 26, 2026:
+
+### Feature
+
+Now available in preview, the [**Configuration** tab of the **Projects Settings** page](https://docs.cloud.google.com/looker/docs/git-options#configuration) in the Looker IDE contains a **Delete Developer Copy** button that lets LookML developers delete their local developer copy of the project's Git repository. See the [Using version control and deploying](https://docs.cloud.google.com/looker/docs/version-control-and-deploying-changes#delete-dev-copy) documentation page for details.
+
+### Feature
+
+The [Tabbed Dashboards Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#tabbed-dashboards) is now available. The Tabbed Dashboards Labs feature lets dashboard editors organize dashboard content across multiple tabs within a single dashboard. Adding tabs to dashboards lets you do the following:
+
+* Better organize content: Group related visualizations and tiles into separate tabs.
+* Improve data storytelling: Guide viewers through different aspects of your data in a structured way.
+* Enhance performance: Load only the tiles on an active tab, potentially speeding up initial dashboard load times.
+* Reduce clutter: Consolidate multiple related analyses into a single dashboard.
+
+This feature is only for Looker (original) instances and is enabled by default.
+
+### Feature
+
+The [Dashboard Filter Enhancements Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#dashboard-filter-enhancements) is now available. The Dashboard Filter Enhancements Labs feature includes the following improvements:
+
+* Persistent filter suggestion drop-down: Filter suggestion drop-downs remain open for easier multi-selection for [tag list](https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#tag-list) and [advanced filter type](https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#advanced_filters) filters.
+* Select or deselect all filter values: Lets users select or deselect all values in tag list and advanced filter type filters.
+* Limit condition controls for advanced filters: Lets dashboard creators limit the condition options that are available to users for advanced filters.
+* Enable [Include custom filter values](https://docs.cloud.google.com/looker/docs/presenting-content#adding_dashboards_to_boards_with_custom_filter_values_applied) by default for boards: Admins can choose to enable Include custom filter values for boards by default instance-wide.
+
+This feature is only for Looker (original) instances and is enabled by default.
+
+### Feature
+
+The [Custom Tooltips Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#custom-tooltips) is now available. The Custom Tooltips Labs feature lets you configure tooltips within the Explore [visualization editor](https://docs.cloud.google.com/looker/docs/creating-visualizations#quick_guide) using a combination of UI settings and an HTML editor that supports Liquid templating.
+
+This feature is only for Looker (original) instances and is enabled by default.
+
+---
 ## 2026-01-14
 
 ### Feature

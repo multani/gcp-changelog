@@ -1,5 +1,15 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-01-26
+
+### Feature
+
+You can now assign database roles to built-in database users and IAM database
+users when you create or update users. For more information about assigning
+roles, see [built-in database authentication](https://docs.cloud.google.com/sql/docs/postgres/create-manage-users#creating)
+or [IAM database authentication](https://docs.cloud.google.com/sql/docs/postgres/add-manage-iam-users#add-db-roles).
+
+---
 ## 2026-01-15
 
 ### Feature

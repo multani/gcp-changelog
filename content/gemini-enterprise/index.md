@@ -1,5 +1,26 @@
 # Gemini Enterprise
 
+## 2026-01-26
+
+### Announcement
+
+**Gemini Enterprise: Agents migration**
+
+Gemini Enterprise is automatically migrating all agents created using the legacy
+Agent Designer (agents created before January 12th, 2026) to the
+[new user interface](https://docs.cloud.google.com/gemini/enterprise/docs/release-notes#January_12_2026). This migration
+provides several enhancements for the migrated agents:
+
+* The agents appear in the **Your agents** section of the
+  **Agent gallery**.
+* You can share the migrated agents, provided that this feature is enabled by an
+  admin.
+* You can edit migrated agents using the **Visual Editor**, which gives you
+  full access to the visual builder's toolset.
+
+For more information, see [Agent Designer overview](https://docs.cloud.google.com/gemini/enterprise/docs/agent-designer).
+
+---
 ## 2026-01-23
 
 ### Feature

@@ -1,5 +1,18 @@
 # Cloud Monitoring
 
+## 2026-01-26
+
+### Feature
+
+You can now install and manage the Ops Agent on virtual machines across zones in
+your Google Cloud project by using global VM Extension Manager extension
+policies. Global and zonal extension policies can keep the installed version
+of the agent current, keep a specified version of the agent installed, and
+other tasks. For more information, see
+[Install and manage the Ops Agent by using
+VM Extension Manager policies](https://docs.cloud.google.com/monitoring/agent/ops-agent/agent-vmem-policies).
+
+---
 ## 2026-01-21
 
 ### Feature

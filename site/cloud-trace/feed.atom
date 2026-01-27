@@ -2,9 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Trace</title>
   <subtitle>Changelog for Google Cloud product: Cloud Trace</subtitle>
-  <updated>2026-01-05T00:00:00+00:00</updated>
+  <updated>2026-01-26T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-trace</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-trace/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-trace:2026-01-26:change:0</id>
+    <published>2026-01-26T00:00:00+00:00</published>
+    <updated>2026-01-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>To support correlation between log and trace data, the following changes have
+been made:</p>
+<ul>
+<li>The required format for the <code>LogEntry.trace</code> field has been relaxed. The
+  preferred format for this field is the trace ID. However, you can continue
+  to provide the full resource name. For more information, see
+  <a href="https://docs.cloud.google.com/logging/docs/reference/v2/rest/v2/LogEntry"><code>LogEntry</code></a>.</li>
+<li>If you open the <strong>Trace Details flyout</strong> page by using options provided in a
+  log entry, then the resources listed in the default trace scope are searched
+  for the trace data.</li>
+<li>If you open the <strong>Logs Explorer</strong> page by using options on span data, then
+  the resources listed in the default log scope are searched for log data.</li>
+</ul>
+<p>To learn more about default scopes, see
+<a href="https://docs.cloud.google.com/stackdriver/docs/observability/scopes">Configure observability scopes for multi-project queries</a>.</p>]]></content>
+    <summary>We've enhanced the correlation between log and trace data by relaxing the format requirements for the `LogEntry.trace` field to prefer trace IDs. Additionally, improved navigation between log entries and trace details, and between span data and log data, ensures better context searching.</summary>
+    <title>Change: Improved Log and Trace Correlation</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,6 +1,16 @@
 {
   "name": "Cloud Trace",
   "entries": {
+    "2026-01-26": [
+      {
+        "kind": "Change",
+        "content": "To support correlation between log and trace data, the following changes have\nbeen made:\n\n* The required format for the `LogEntry.trace` field has been relaxed. The\n  preferred format for this field is the trace ID. However, you can continue\n  to provide the full resource name. For more information, see\n  [`LogEntry`](https://docs.cloud.google.com/logging/docs/reference/v2/rest/v2/LogEntry).\n* If you open the **Trace Details flyout** page by using options provided in a\n  log entry, then the resources listed in the default trace scope are searched\n  for the trace data.\n* If you open the **Logs Explorer** page by using options on span data, then\n  the resources listed in the default log scope are searched for log data.\n\nTo learn more about default scopes, see\n[Configure observability scopes for multi-project queries](https://docs.cloud.google.com/stackdriver/docs/observability/scopes).",
+        "summary": {
+          "title": "Improved Log and Trace Correlation",
+          "summary": "We've enhanced the correlation between log and trace data by relaxing the format requirements for the `LogEntry.trace` field to prefer trace IDs. Additionally, improved navigation between log entries and trace details, and between span data and log data, ensures better context searching."
+        }
+      }
+    ],
     "2026-01-05": [
       {
         "kind": "Feature",

@@ -1,5 +1,16 @@
 # BigQuery
 
+## 2026-01-26
+
+### Feature
+
+You can now use Gemini Cloud Assist to
+[discover resources](https://docs.cloud.google.com/bigquery/docs/use-cloud-assist#discover_resources)
+across your projects. For example, you can ask about a specific table's schema,
+or which tables contain demographic information about new users. This feature is
+in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-01-23
 
 ### Change

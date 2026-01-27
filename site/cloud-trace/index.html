@@ -2292,6 +2292,24 @@
 
 
 <h1 id="cloud-trace">Cloud Trace</h1>
+<h2 id="2026-01-26">2026-01-26</h2>
+<h3 id="change">Change</h3>
+<p>To support correlation between log and trace data, the following changes have
+been made:</p>
+<ul>
+<li>The required format for the <code>LogEntry.trace</code> field has been relaxed. The
+  preferred format for this field is the trace ID. However, you can continue
+  to provide the full resource name. For more information, see
+  <a href="https://docs.cloud.google.com/logging/docs/reference/v2/rest/v2/LogEntry"><code>LogEntry</code></a>.</li>
+<li>If you open the <strong>Trace Details flyout</strong> page by using options provided in a
+  log entry, then the resources listed in the default trace scope are searched
+  for the trace data.</li>
+<li>If you open the <strong>Logs Explorer</strong> page by using options on span data, then
+  the resources listed in the default log scope are searched for log data.</li>
+</ul>
+<p>To learn more about default scopes, see
+<a href="https://docs.cloud.google.com/stackdriver/docs/observability/scopes">Configure observability scopes for multi-project queries</a>.</p>
+<hr />
 <h2 id="2026-01-05">2026-01-05</h2>
 <h3 id="feature">Feature</h3>
 <p>You can now collect, view, and analyze multimodal prompts and responses from
@@ -2385,6 +2403,9 @@ your AI agent. You can view generative AI events by using the
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-trace">Cloud Trace</a></li>
+          <li class="nav-item">
+            <a href="#2026-01-26" class="nav-link">2026-01-26</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-01-05" class="nav-link">2026-01-05</a>
           </li>

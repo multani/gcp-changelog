@@ -1,5 +1,16 @@
 # Colab Enterprise
 
+## 2026-01-21
+
+### Feature
+
+**BigFrames, BigQuery ML, and Google Cloud Serverless for Apache Spark**
+
+The Data Science Agent supports BigFrames, BigQuery ML, and
+Google Cloud Serverless for Apache Spark. Previously, these capabilities were supported
+only when using Colab Enterprise notebooks in BigQuery.
+
+---
 ## 2025-12-17
 
 ### Feature

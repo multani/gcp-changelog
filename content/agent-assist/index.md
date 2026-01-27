@@ -1,5 +1,12 @@
 # Agent Assist
 
+## 2026-01-10
+
+### Change
+
+Agent Assist offers [sentiment analysis version 3](https://docs.cloud.google.com/agent-assist/docs/sentiment-analysis) in GA. Sentiment analysis V3 analyzes individual messages with conversation context and can even analyze an audio stream to provide precise end user sentiment scores.
+
+---
 ## 2026-01-05
 
 ### Change

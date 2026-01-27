@@ -1,5 +1,16 @@
 # Google Kubernetes Engine
 
+## 2026-01-26
+
+### Feature
+
+The [N4A machine
+series](https://docs.cloud.google.com/compute/docs/general-purpose-machines#n4a_series)
+is generally available for GKE clusters in Autopilot and
+Standard modes. For more information, see [Arm workloads on
+GKE](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/arm-on-gke).
+
+---
 ## 2026-01-21
 
 ### Security

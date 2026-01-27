@@ -1,5 +1,15 @@
 # Vertex AI Agent Builder
 
+## 2026-01-26
+
+### Announcement
+
+**Vertex AI Agent Builder**
+
+Sessions, Memory Bank, and Code Execution will begin charging for usage on
+**Feburary 11, 2026** instead of January 28, 2026.
+
+---
 ## 2025-12-19
 
 ### Feature

@@ -1,5 +1,20 @@
 # Compute Engine
 
+## 2026-01-26
+
+### Feature
+
+**Generally available**: The N4A machine family is powered by Google's latest
+custom-designed Axion processor, built on Arm Neoverse N3 compute core and
+powered by Titanium IPU. This machine family has between 1-64 vCPUs with up to
+512 GB of memory, and supports Google Cloud Hyperdisk volume storage.
+It is available in `standard`, `highmem`, `highcpu`, and custom machine types.
+For detailed information, see
+[General-purpose machines](https://docs.cloud.google.com/compute/docs/general-purpose-machines#n4a_series).
+See [Regions and zones](https://docs.cloud.google.com/compute/docs/regions-zones) to learn where you can
+create N4A VMs.
+
+---
 ## 2026-01-20
 
 ### Feature

@@ -2,9 +2,51 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Logging</title>
   <subtitle>Changelog for Google Cloud product: Cloud Logging</subtitle>
-  <updated>2026-01-20T00:00:00+00:00</updated>
+  <updated>2026-01-26T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-logging</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-logging/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-logging:2026-01-26:change:0</id>
+    <published>2026-01-26T00:00:00+00:00</published>
+    <updated>2026-01-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>To support correlation between log and trace data, the following changes have
+been made:</p>
+<ul>
+<li>The required format for the <code>LogEntry.trace</code> field has been relaxed. The
+  preferred format for this field is the trace ID. However, you can continue
+  to provide the full resource name. For more information, see
+  <a href="https://docs.cloud.google.com/logging/docs/reference/v2/rest/v2/LogEntry"><code>LogEntry</code></a>.</li>
+<li>If you open the <strong>Trace Details flyout</strong> page by using options provided in a
+  log entry, then the resources listed in the default trace scope are searched
+  for the trace data.</li>
+<li>If you open the <strong>Logs Explorer</strong> page by using options on span data, then
+  the resources listed in the default log scope are searched for log data.</li>
+</ul>
+<p>To learn more about default scopes, see
+<a href="https://docs.cloud.google.com/stackdriver/docs/observability/scopes">Configure observability scopes for multi-project queries</a>.</p>]]></content>
+    <summary>The format for the `LogEntry.trace` field has been updated to simplify correlation between log and trace data. You can now use the trace ID directly or continue to use the full resource name. This change enhances how you navigate between log entries and trace details.</summary>
+    <title>Change: Improved Log and Trace Correlation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-logging:2026-01-26:feature:1</id>
+    <published>2026-01-26T00:00:00+00:00</published>
+    <updated>2026-01-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now install and manage the Ops Agent on virtual machines across zones in
+your Google Cloud project by using global VM Extension Manager extension
+policies. Global and zonal extension policies can keep the installed version
+of the agent current, keep a specified version of the agent installed, and
+other tasks. For more information, see
+<a href="https://docs.cloud.google.com/logging/docs/agent/ops-agent/agent-vmem-policies">Install and manage the Ops Agent by using
+VM Extension Manager policies</a>.</p>]]></content>
+    <summary>You can now install and manage the Ops Agent on virtual machines across zones in your Google Cloud project using global VM Extension Manager extension policies. These policies help keep the agent version current or a specific version installed, among other tasks.</summary>
+    <title>Feature: Manage Ops Agent with VM Extension Manager</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

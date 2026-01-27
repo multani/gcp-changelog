@@ -1,5 +1,36 @@
 # Cloud Logging
 
+## 2026-01-26
+
+### Change
+
+To support correlation between log and trace data, the following changes have
+been made:
+
+* The required format for the `LogEntry.trace` field has been relaxed. The
+  preferred format for this field is the trace ID. However, you can continue
+  to provide the full resource name. For more information, see
+  [`LogEntry`](https://docs.cloud.google.com/logging/docs/reference/v2/rest/v2/LogEntry).
+* If you open the **Trace Details flyout** page by using options provided in a
+  log entry, then the resources listed in the default trace scope are searched
+  for the trace data.
+* If you open the **Logs Explorer** page by using options on span data, then
+  the resources listed in the default log scope are searched for log data.
+
+To learn more about default scopes, see
+[Configure observability scopes for multi-project queries](https://docs.cloud.google.com/stackdriver/docs/observability/scopes).
+
+### Feature
+
+You can now install and manage the Ops Agent on virtual machines across zones in
+your Google Cloud project by using global VM Extension Manager extension
+policies. Global and zonal extension policies can keep the installed version
+of the agent current, keep a specified version of the agent installed, and
+other tasks. For more information, see
+[Install and manage the Ops Agent by using
+VM Extension Manager policies](https://docs.cloud.google.com/logging/docs/agent/ops-agent/agent-vmem-policies).
+
+---
 ## 2026-01-20
 
 ### Announcement

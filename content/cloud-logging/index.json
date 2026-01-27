@@ -1,6 +1,24 @@
 {
   "name": "Cloud Logging",
   "entries": {
+    "2026-01-26": [
+      {
+        "kind": "Change",
+        "content": "To support correlation between log and trace data, the following changes have\nbeen made:\n\n* The required format for the `LogEntry.trace` field has been relaxed. The\n  preferred format for this field is the trace ID. However, you can continue\n  to provide the full resource name. For more information, see\n  [`LogEntry`](https://docs.cloud.google.com/logging/docs/reference/v2/rest/v2/LogEntry).\n* If you open the **Trace Details flyout** page by using options provided in a\n  log entry, then the resources listed in the default trace scope are searched\n  for the trace data.\n* If you open the **Logs Explorer** page by using options on span data, then\n  the resources listed in the default log scope are searched for log data.\n\nTo learn more about default scopes, see\n[Configure observability scopes for multi-project queries](https://docs.cloud.google.com/stackdriver/docs/observability/scopes).",
+        "summary": {
+          "title": "Improved Log and Trace Correlation",
+          "summary": "The format for the `LogEntry.trace` field has been updated to simplify correlation between log and trace data. You can now use the trace ID directly or continue to use the full resource name. This change enhances how you navigate between log entries and trace details."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now install and manage the Ops Agent on virtual machines across zones in\nyour Google Cloud project by using global VM Extension Manager extension\npolicies. Global and zonal extension policies can keep the installed version\nof the agent current, keep a specified version of the agent installed, and\nother tasks. For more information, see\n[Install and manage the Ops Agent by using\nVM Extension Manager policies](https://docs.cloud.google.com/logging/docs/agent/ops-agent/agent-vmem-policies).",
+        "summary": {
+          "title": "Manage Ops Agent with VM Extension Manager",
+          "summary": "You can now install and manage the Ops Agent on virtual machines across zones in your Google Cloud project using global VM Extension Manager extension policies. These policies help keep the agent version current or a specific version installed, among other tasks."
+        }
+      }
+    ],
     "2026-01-20": [
       {
         "kind": "Announcement",

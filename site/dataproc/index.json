@@ -1,6 +1,64 @@
 {
   "name": "Dataproc",
   "entries": {
+    "2026-01-24": [
+      {
+        "kind": "Feature",
+        "content": "Upgraded the Delta subminor version to `3.2.1` in images `2.2` and `2.3`.",
+        "summary": {
+          "title": "Delta Runtime Updated",
+          "summary": "The Delta runtime has been updated to version 3.2.1 in images 2.2 and 2.3. This update includes the latest improvements and bug fixes for the Delta runtime."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed a bug in the ARM image that prevented connecting to a Dataproc Metastore instance with a\ngRPC protocol endpoint.",
+        "summary": {
+          "title": "Dataproc Metastore gRPC connection fix",
+          "summary": "Resolved an issue where the ARM image prevented connections to Dataproc Metastore instances using gRPC. This fix ensures proper connectivity for gRPC protocol endpoints."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed the `spark.driver.extraClassPath` delimiter for the Jupyter SparkMonitor Listener.",
+        "summary": {
+          "title": "Spark Monitor Listener Classpath Fix",
+          "summary": "The delimiter for the spark.driver.extraClassPath has been corrected for the Jupyter SparkMonitor Listener. This ensures proper functionality and configuration of the listener."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added a new `dataproc:pypi.repository` property to customize the PyPI repository that `pip` uses.\nThe value can be a internet-accessible URL, or you can specify `google` to use a Google-hosted cache of PyPI, which\nis accessible without public internet connectivity. Starting with Dataproc image version\n`3.1`, `google` will be the default (you can specify the `pypi` property value to use public PyPI instead of the default `google` 3.1 value).",
+        "summary": {
+          "title": "Customize PyPI Repository for Dataproc",
+          "summary": "You can now customize the PyPI repository used by pip in Dataproc with the new `dataproc:pypi.repository` property. This allows you to specify a custom URL or use a Google-hosted cache for offline access. Starting with image version 3.1, the Google-hosted cache is the default."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions):\n\n* 2.0.157-debian10, 2.0.157-ubuntu18, 2.0.157-rocky8\n* 2.1.106-debian11, 2.1.106-ubuntu20, 2.1.106-ubuntu20-arm, 2.1.106-rocky8\n* 2.2.74-debian12, 2.2.74-ubuntu22, 2.2.74-ubuntu22-arm, 2.2.74-rocky9\n* 2.3.21-debian12, 2.3.21-ml-ubuntu22, 2.3.21-rocky9, 2.3.21-ubuntu22, 2.3.21-ubuntu22-arm",
+        "summary": {
+          "title": "Dataproc image updates released",
+          "summary": "New subminor image versions for Dataproc on Compute Engine are now available. These updates include the latest patches and improvements for various operating system combinations."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Apache Pig is now available in ARM images.",
+        "summary": {
+          "title": "Apache Pig on ARM",
+          "summary": "Apache Pig is now available in ARM images. This update expands the compatibility of Apache Pig for users working with ARM-based architectures."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Removed the use of deprecated Hadoop configuration properties `fs.default.name` and\n`yarn.resourcemanager.system-metrics-publisher.enabled`.",
+        "summary": {
+          "title": "Hadoop configuration updated",
+          "summary": "Deprecated Hadoop configuration properties related to file system and resource management have been removed. This update ensures compatibility with current Hadoop standards and improves system stability."
+        }
+      }
+    ],
     "2026-01-23": [
       {
         "kind": "Fixed",

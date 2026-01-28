@@ -1,5 +1,17 @@
 # Gemini Enterprise
 
+## 2026-01-27
+
+### Change
+
+**Gemini Enterprise: Autocomplete turned off in the chat box**
+
+The autocomplete menu no longer appears as a user types in the chat box. Users
+can still use the mentions feature by typing `@` in the chat box, followed by
+the name of an agent, person, or file. For more information about mentions, see
+[Add context with mentions](https://docs.cloud.google.com/gemini/enterprise/docs//assistant-chat#add_context_with_mentions).
+
+---
 ## 2026-01-26
 
 ### Announcement

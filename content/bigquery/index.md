@@ -8,6 +8,12 @@ The BigQuery Data Transfer Service can now
 [transfer data from Mailchimp to BigQuery](https://docs.cloud.google.com/bigquery/docs/mailchimp-transfer).
 This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
 
+### Change
+
+An updated version of the
+[Simba JDBC driver for BigQuery](https://docs.cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers#current_jdbc_driver)
+is now available.
+
 ---
 ## 2026-01-26
 

@@ -1,5 +1,46 @@
 # Dataproc
 
+## 2026-01-24
+
+### Feature
+
+Upgraded the Delta subminor version to `3.2.1` in images `2.2` and `2.3`.
+
+### Fixed
+
+Fixed a bug in the ARM image that prevented connecting to a Dataproc Metastore instance with a
+gRPC protocol endpoint.
+
+### Fixed
+
+Fixed the `spark.driver.extraClassPath` delimiter for the Jupyter SparkMonitor Listener.
+
+### Feature
+
+Added a new `dataproc:pypi.repository` property to customize the PyPI repository that `pip` uses.
+The value can be a internet-accessible URL, or you can specify `google` to use a Google-hosted cache of PyPI, which
+is accessible without public internet connectivity. Starting with Dataproc image version
+`3.1`, `google` will be the default (you can specify the `pypi` property value to use public PyPI instead of the default `google` 3.1 value).
+
+### Announcement
+
+New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions):
+
+* 2.0.157-debian10, 2.0.157-ubuntu18, 2.0.157-rocky8
+* 2.1.106-debian11, 2.1.106-ubuntu20, 2.1.106-ubuntu20-arm, 2.1.106-rocky8
+* 2.2.74-debian12, 2.2.74-ubuntu22, 2.2.74-ubuntu22-arm, 2.2.74-rocky9
+* 2.3.21-debian12, 2.3.21-ml-ubuntu22, 2.3.21-rocky9, 2.3.21-ubuntu22, 2.3.21-ubuntu22-arm
+
+### Feature
+
+Apache Pig is now available in ARM images.
+
+### Change
+
+Removed the use of deprecated Hadoop configuration properties `fs.default.name` and
+`yarn.resourcemanager.system-metrics-publisher.enabled`.
+
+---
 ## 2026-01-23
 
 ### Fixed

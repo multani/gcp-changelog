@@ -2292,12 +2292,39 @@
 
 
 <h1 id="dataproc">Dataproc</h1>
-<h2 id="2026-01-23">2026-01-23</h2>
+<h2 id="2026-01-24">2026-01-24</h2>
+<h3 id="feature">Feature</h3>
+<p>Upgraded the Delta subminor version to <code>3.2.1</code> in images <code>2.2</code> and <code>2.3</code>.</p>
 <h3 id="fixed">Fixed</h3>
+<p>Fixed a bug in the ARM image that prevented connecting to a Dataproc Metastore instance with a
+gRPC protocol endpoint.</p>
+<h3 id="fixed_1">Fixed</h3>
+<p>Fixed the <code>spark.driver.extraClassPath</code> delimiter for the Jupyter SparkMonitor Listener.</p>
+<h3 id="feature_1">Feature</h3>
+<p>Added a new <code>dataproc:pypi.repository</code> property to customize the PyPI repository that <code>pip</code> uses.
+The value can be a internet-accessible URL, or you can specify <code>google</code> to use a Google-hosted cache of PyPI, which
+is accessible without public internet connectivity. Starting with Dataproc image version
+<code>3.1</code>, <code>google</code> will be the default (you can specify the <code>pypi</code> property value to use public PyPI instead of the default <code>google</code> 3.1 value).</p>
+<h3 id="announcement">Announcement</h3>
+<p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions">Dataproc on Compute Engine subminor image versions</a>:</p>
+<ul>
+<li>2.0.157-debian10, 2.0.157-ubuntu18, 2.0.157-rocky8</li>
+<li>2.1.106-debian11, 2.1.106-ubuntu20, 2.1.106-ubuntu20-arm, 2.1.106-rocky8</li>
+<li>2.2.74-debian12, 2.2.74-ubuntu22, 2.2.74-ubuntu22-arm, 2.2.74-rocky9</li>
+<li>2.3.21-debian12, 2.3.21-ml-ubuntu22, 2.3.21-rocky9, 2.3.21-ubuntu22, 2.3.21-ubuntu22-arm</li>
+</ul>
+<h3 id="feature_2">Feature</h3>
+<p>Apache Pig is now available in ARM images.</p>
+<h3 id="change">Change</h3>
+<p>Removed the use of deprecated Hadoop configuration properties <code>fs.default.name</code> and
+<code>yarn.resourcemanager.system-metrics-publisher.enabled</code>.</p>
+<hr />
+<h2 id="2026-01-23">2026-01-23</h2>
+<h3 id="fixed_2">Fixed</h3>
 <ul>
 <li>Applied patch for <a href="https://issues.apache.org/jira/browse/SPARK-48292">SPARK-48292</a> in Serverless for Apache Spark <a href="https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-1.2">1.2</a> and <a href="https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-2.2">2.2</a> runtimes.</li>
 </ul>
-<h3 id="announcement">Announcement</h3>
+<h3 id="announcement_1">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Serverless for Apache Spark runtime versions</a>:</p>
 <ul>
 <li>1.2.67</li>
@@ -2307,7 +2334,7 @@
 </ul>
 <hr />
 <h2 id="2026-01-13">2026-01-13</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p><strong>Dataproc on Compute Engine:</strong> The following subminor image versions announced on <a href="https://docs.cloud.google.com/dataproc/docs/release-notes#January_06_2026">January 06, 2026</a> have been rolled back:</p>
 <ul>
 <li>2.0.156-debian10, 2.0.156-ubuntu18, 2.0.156-rocky8</li>
@@ -2317,7 +2344,7 @@
 </ul>
 <hr />
 <h2 id="2026-01-09">2026-01-09</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Serverless for Apache Spark runtime versions</a>:</p>
 <ul>
 <li>1.2.66</li>
@@ -2327,9 +2354,9 @@
 </ul>
 <hr />
 <h2 id="2026-01-06">2026-01-06</h2>
-<h3 id="change">Change</h3>
+<h3 id="change_1">Change</h3>
 <p>Removed use of deprecated Hadoop configuration properties <code>fs.default.name</code> and <code>yarn.resourcemanager.system-metrics-publisher.enabled</code>.</p>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions">Dataproc on Compute Engine subminor image versions</a>:</p>
 <ul>
 <li>2.0.156-debian10, 2.0.156-ubuntu18, 2.0.156-rocky8</li>
@@ -2338,13 +2365,13 @@
 <li>2.3.20-debian12, 2.3.20-ml-ubuntu22, 2.3.20-rocky9, 2.3.20-ubuntu22, 2.3.20-ubuntu22-arm</li>
 </ul>
 <p><strong>Rollback Notice:</strong> These image versions were rolled back on <a href="https://docs.cloud.google.com/dataproc/docs/release-notes#January_13_2026">January 13, 2026</a>.</p>
-<h3 id="fixed_1">Fixed</h3>
+<h3 id="fixed_3">Fixed</h3>
 <p>Fixed the <code>spark.driver.extraClassPath</code> delimiter for the Jupyter SparkMonitor Listener.</p>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>Added a new property <code>dataproc:pypi.repository</code> to customize the PyPI repository used for pip. The value can be a URL, or <code>google</code> to use a Google-hosted cache of PyPI, accessible without public internet connectivity. Starting in image version 3.1, <code>google</code> will be the default; to opt out and return to public PyPI, use the value <code>pypi</code>.</p>
 <hr />
 <h2 id="2025-12-22">2025-12-22</h2>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Serverless for Apache Spark runtime versions</a>:</p>
 <ul>
 <li>1.2.65</li>
@@ -2362,9 +2389,9 @@ released on <a href="https://docs.cloud.google.com/dataproc/docs/release-notes#D
 </ul>
 <hr />
 <h2 id="2025-12-05">2025-12-05</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p><code>dataproc-ml</code> is available by default in <code>2.3</code> <code>-ml</code> images.</p>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_6">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions">Dataproc on Compute Engine subminor image versions</a>:</p>
 <ul>
 <li>2.0.155-debian10, 2.0.155-ubuntu18, 2.0.155-rocky8</li>
@@ -2377,7 +2404,7 @@ subminor image versions were blocklisted on
 December 20, 2025.</p>
 <hr />
 <h2 id="2025-12-04">2025-12-04</h2>
-<h3 id="announcement_6">Announcement</h3>
+<h3 id="announcement_7">Announcement</h3>
 <p><strong>Serverless for Apache Spark:</strong> Runtime version <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-3.0">3.0</a> is now generally available. This version simplifies onboarding, improves reliability, reduces startup latency, and adds support for Spark 4.0.</p>
 <ul>
 <li>
@@ -2396,14 +2423,14 @@ December 20, 2025.</p>
 </ul>
 <hr />
 <h2 id="2025-11-22">2025-11-22</h2>
-<h3 id="change_1">Change</h3>
+<h3 id="change_2">Change</h3>
 <p><strong>Dataproc on Compute Engine</strong>: Updated Cloud Storage connector:</p>
 <ul>
 <li>Updated to <code>3.1.10</code> in image version <code>2.3.18</code>.</li>
 <li>Updated to <code>3.0.15</code> in image version <code>2.2.71</code>.</li>
 <li>Updated to <code>hadoop3-2.2.30</code> in image versions <code>2.1.103</code> and <code>2.0.154</code>.</li>
 </ul>
-<h3 id="announcement_7">Announcement</h3>
+<h3 id="announcement_8">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters">Dataproc on Compute Engine subminor image versions</a>:</p>
 <ul>
 <li>2.0.154-debian10, 2.0.154-ubuntu18, 2.0.154-rocky8</li>
@@ -2413,21 +2440,21 @@ December 20, 2025.</p>
 </ul>
 <hr />
 <h2 id="2025-11-13">2025-11-13</h2>
-<h3 id="announcement_8">Announcement</h3>
+<h3 id="announcement_9">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Serverless for Apache Spark runtime versions</a>:</p>
 <ul>
 <li>1.2.62</li>
 <li>2.2.62</li>
 <li>2.3.15</li>
 </ul>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p><strong>Serverless for Apache Spark:</strong> Added the
 <a href="https://docs.cloud.google.com/dataproc-serverless/docs/concepts/properties#other_properties"><code>dataproc.artifacts.remove</code></a> property,
 which lets users remove default artifacts, such as <code>spark-bigquery-connector</code>,
 <code>iceberg</code>, and <code>delta-lake</code> from a Serverless for Apache Spark runtime.</p>
 <hr />
 <h2 id="2025-11-07">2025-11-07</h2>
-<h3 id="announcement_9">Announcement</h3>
+<h3 id="announcement_10">Announcement</h3>
 <p><strong>Serverless for Apache Spark:</strong> Apache Spark upgrade to version <a href="https://spark.apache.org/releases/spark-release-3-5-3.html">3.5.3</a>
 for the <a href="https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-1.2">1.2</a>
 and <a href="https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-2.2">2.2</a>
@@ -2443,9 +2470,9 @@ has been rolled back.</p>
 has been blocklisted and cannot be used when creating a new cluster.</p>
 <hr />
 <h2 id="2025-10-28">2025-10-28</h2>
-<h3 id="fixed_2">Fixed</h3>
+<h3 id="fixed_4">Fixed</h3>
 <p>Fixed a Jupyter Kernel Gateway bug that caused failures while restarting kernels.</p>
-<h3 id="announcement_10">Announcement</h3>
+<h3 id="announcement_11">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters">Dataproc on Compute Engine subminor image versions</a>:</p>
 <ul>
 <li>2.0.153-debian10, 2.0.153-ubuntu18, 2.0.153-rocky8</li>
@@ -2455,7 +2482,7 @@ has been blocklisted and cannot be used when creating a new cluster.</p>
 </ul>
 <hr />
 <h2 id="2025-10-22">2025-10-22</h2>
-<h3 id="announcement_11">Announcement</h3>
+<h3 id="announcement_12">Announcement</h3>
 <p>Announcing the General Availability (GA) of <a href="https://cloud.google.com/dataproc-serverless/docs/guides/lightning-engine">Lightning Engine for Google Cloud Serverless for Apache Spark</a>. Lightning Engine is a <a href="https://cloud.google.com/blog/products/data-analytics/introducing-lightning-engine-for-apache-spark">high-performance query accelerator</a> that delivers up to 4.3x faster performance for Spark workloads compared to open-source Spark, as measured on TPC-H-like benchmarks.</p>
 <p>For more details on enabling Lightning Engine and its advanced features like Native Query Execution (NQE), see <a href="https://cloud.google.com/dataproc-serverless/docs/guides/lightning-engine">the official documentation</a>.</p>
 <h3 id="changed">Changed</h3>
@@ -2464,7 +2491,7 @@ has been blocklisted and cannot be used when creating a new cluster.</p>
 <p>For backward compatibility, the legacy property that was used to enable NQE <code>spark.dataproc.runtimeEngine=native</code> will continue to be honored in the existing runtimes 1.2, 2.2 and 2.3, but it's not supported in future releases (3.0+ runtimes).</p>
 <hr />
 <h2 id="2025-10-20">2025-10-20</h2>
-<h3 id="announcement_12">Announcement</h3>
+<h3 id="announcement_13">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters">Dataproc on Compute Engine subminor image versions</a>:</p>
 <ul>
 <li>2.0.152-debian10, 2.0.152-ubuntu18, 2.0.152-rocky8</li>
@@ -2479,7 +2506,7 @@ was blocklisted on
 and cannot be used when creating a new cluster.</p>
 <hr />
 <h2 id="2025-10-16">2025-10-16</h2>
-<h3 id="announcement_13">Announcement</h3>
+<h3 id="announcement_14">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Serverless for Apache Spark runtime versions</a>:</p>
 <ul>
 <li>3.0.0-RC6</li>
@@ -2488,9 +2515,9 @@ and cannot be used when creating a new cluster.</p>
 <p><strong>Dataproc on Compute Engine</strong>: The default image version of premium tier clusters is now <strong>2.3</strong>.</p>
 <hr />
 <h2 id="2025-10-14">2025-10-14</h2>
-<h3 id="fixed_3">Fixed</h3>
+<h3 id="fixed_5">Fixed</h3>
 <p>Fixed startup race condition in <a href="https://docs.cloud.google.com/dataproc/docs/concepts/iam/sa-multi-tenancy">multi-tenant clusters</a> using the <code>dataproc:pip.packages</code> property that could cause authentication failures while starting Jupyter notebook kernels.</p>
-<h3 id="announcement_14">Announcement</h3>
+<h3 id="announcement_15">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters">Dataproc on Compute Engine subminor image versions</a>:</p>
 <ul>
 <li>2.0.151-debian10, 2.0.151-ubuntu18, 2.0.151-rocky8</li>
@@ -2500,7 +2527,7 @@ and cannot be used when creating a new cluster.</p>
 </ul>
 <hr />
 <h2 id="2025-10-13">2025-10-13</h2>
-<h3 id="announcement_15">Announcement</h3>
+<h3 id="announcement_16">Announcement</h3>
 <p><strong>Serverless for Apache Spark:</strong> Runtimes rollout with Apache Spark upgrade to version <a href="https://spark.apache.org/releases/spark-release-3-5-3.html">3.5.3</a> in the latest <a href="https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-1.2">1.2</a> and <a href="https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-2.2">2.2</a> Serverless for Apache Spark runtime versions has started and is expected to finish by October 16th.</p>
 <hr />
 <h2 id="2025-10-06">2025-10-06</h2>
@@ -2519,7 +2546,7 @@ and cannot be used when creating a new cluster.</p>
 <li>Set the <code>dataproc:dataproc.logging.syslog.enabled=false</code> and continue using <a href="https://github.com/GoogleCloudDataproc/initialization-actions/blob/main/opsagent/opsagent.sh"><code>opsagent.sh</code></a>
   to ingest syslogs.</li>
 </ul>
-<h3 id="announcement_16">Announcement</h3>
+<h3 id="announcement_17">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Serverless for Apache Spark runtime versions</a>:</p>
 <ul>
 <li>2.3.13</li>
@@ -2529,7 +2556,7 @@ and cannot be used when creating a new cluster.</p>
 <p><strong>Serverless for Apache Spark:</strong> Upgraded Apache Spark to version <a href="https://spark.apache.org/releases/spark-release-3-5-3.html">3.5.3</a> in the latest <a href="https://docs.cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_23">2.3</a> Serverless for Apache Spark runtime versions.</p>
 <hr />
 <h2 id="2025-10-03">2025-10-03</h2>
-<h3 id="announcement_17">Announcement</h3>
+<h3 id="announcement_18">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters">Dataproc on Compute Engine subminor image versions</a>:</p>
 <ul>
 <li>2.0.150-debian10, 2.0.150-ubuntu18, 2.0.150-rocky8</li>
@@ -2539,7 +2566,7 @@ and cannot be used when creating a new cluster.</p>
 </ul>
 <hr />
 <h2 id="2025-09-15">2025-09-15</h2>
-<h3 id="announcement_18">Announcement</h3>
+<h3 id="announcement_19">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters">Dataproc on Compute Engine subminor image versions</a>:</p>
 <ul>
 <li>2.0.149-debian10, 2.0.149-ubuntu18, 2.0.149-rocky8</li>
@@ -2549,7 +2576,7 @@ and cannot be used when creating a new cluster.</p>
 </ul>
 <hr />
 <h2 id="2025-09-11">2025-09-11</h2>
-<h3 id="announcement_19">Announcement</h3>
+<h3 id="announcement_20">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Serverless for Apache Spark runtime versions</a>:</p>
 <ul>
 <li>1.2.61</li>
@@ -2559,7 +2586,7 @@ and cannot be used when creating a new cluster.</p>
 </ul>
 <hr />
 <h2 id="2025-09-08">2025-09-08</h2>
-<h3 id="announcement_20">Announcement</h3>
+<h3 id="announcement_21">Announcement</h3>
 <p>Announcing the <a href="https://cloud.google.com/products#product-launch-stages">Preview release</a> of <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-3.0">Dataproc on Compute Engine image version 3.0.0-RC1</a>:</p>
 <ul>
 <li>Spark 4.0.0</li>
@@ -2573,7 +2600,7 @@ and cannot be used when creating a new cluster.</p>
 <li>R 4.3</li>
 <li>Scala 2.13</li>
 </ul>
-<h3 id="announcement_21">Announcement</h3>
+<h3 id="announcement_22">Announcement</h3>
 <p>Announcing the <a href="https://cloud.google.com/products#product-launch-stages">Preview release</a> of <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-3.0">Serverless for Apache Spark 3.0.0-RC3 runtime</a>:</p>
 <ul>
 <li>Spark 4.0.0</li>
@@ -2585,14 +2612,14 @@ and cannot be used when creating a new cluster.</p>
 <li>R 4.4</li>
 <li>Scala 2.13</li>
 </ul>
-<h3 id="announcement_22">Announcement</h3>
+<h3 id="announcement_23">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters">Dataproc on Compute Engine subminor image versions</a>:</p>
 <ul>
 <li>2.3.11-debian12, 2.3.11-ubuntu22, 2.3.11-ubuntu22-arm, 2.3.11-ml-ubuntu22, 2.3.11-rocky9</li>
 </ul>
 <hr />
 <h2 id="2025-09-05">2025-09-05</h2>
-<h3 id="announcement_23">Announcement</h3>
+<h3 id="announcement_24">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Dataproc Serverless for Spark runtime versions:</a></p>
 <ul>
 <li>1.2.60</li>
@@ -2601,11 +2628,11 @@ and cannot be used when creating a new cluster.</p>
 </ul>
 <hr />
 <h2 id="2025-09-02">2025-09-02</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p><a href="https://cloud.google.com/dataproc/docs/concepts/iam/sa-multi-tenancy">Multi-tenant clusters</a> are now available in Preview. Many data engineers and scientists can share a multi-tenant cluster to execute their workloads in isolation from each other.</p>
 <hr />
 <h2 id="2025-08-29">2025-08-29</h2>
-<h3 id="announcement_24">Announcement</h3>
+<h3 id="announcement_25">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters">Dataproc on Compute Engine subminor image versions</a>:</p>
 <ul>
 <li>2.0.147-debian10, 2.0.147-ubuntu18, 2.0.147-rocky8</li>
@@ -2613,7 +2640,7 @@ and cannot be used when creating a new cluster.</p>
 <li>2.2.64-debian12, 2.2.64-ubuntu22, 2.2.64-ubuntu22-arm, 2.2.64-rocky9</li>
 <li>2.3.10-debian12, 2.3.10-ubuntu22, 2.3.10-ubuntu22-arm, 2.3.10-ml-ubuntu22, 2.3.10-rocky9</li>
 </ul>
-<h3 id="announcement_25">Announcement</h3>
+<h3 id="announcement_26">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Dataproc Serverless for Spark runtime versions:</a></p>
 <ul>
 <li>1.2.59</li>
@@ -2622,7 +2649,7 @@ and cannot be used when creating a new cluster.</p>
 </ul>
 <hr />
 <h2 id="2025-08-22">2025-08-22</h2>
-<h3 id="announcement_26">Announcement</h3>
+<h3 id="announcement_27">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Dataproc Serverless for Spark runtime versions</a>:</p>
 <ul>
 <li>1.2.58</li>
@@ -2631,11 +2658,11 @@ and cannot be used when creating a new cluster.</p>
 </ul>
 <hr />
 <h2 id="2025-08-21">2025-08-21</h2>
-<h3 id="fixed_4">Fixed</h3>
+<h3 id="fixed_6">Fixed</h3>
 <p><strong>Serverless for Apache Spark:</strong> Fixed a bug in Dataproc Batches that occasionally caused higher latency before an application was started.</p>
 <hr />
 <h2 id="2025-08-19">2025-08-19</h2>
-<h3 id="announcement_27">Announcement</h3>
+<h3 id="announcement_28">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters">Dataproc on Compute Engine subminor image versions</a>:</p>
 <ul>
 <li>2.0.146-debian10, 2.0.146-ubuntu18, 2.0.146-rocky8</li>
@@ -2645,7 +2672,7 @@ and cannot be used when creating a new cluster.</p>
 </ul>
 <hr />
 <h2 id="2025-08-14">2025-08-14</h2>
-<h3 id="announcement_28">Announcement</h3>
+<h3 id="announcement_29">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Dataproc Serverless for Spark runtime versions</a>:</p>
 <ul>
 <li>1.2.57</li>
@@ -2654,7 +2681,7 @@ and cannot be used when creating a new cluster.</p>
 </ul>
 <hr />
 <h2 id="2025-08-12">2025-08-12</h2>
-<h3 id="announcement_29">Announcement</h3>
+<h3 id="announcement_30">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters">Dataproc on Compute Engine subminor image versions</a>:</p>
 <ul>
 <li>2.0.145-debian10, 2.0.145-ubuntu18, 2.0.145-rocky8</li>
@@ -2662,20 +2689,20 @@ and cannot be used when creating a new cluster.</p>
 <li>2.2.62-debian12, 2.2.62-ubuntu22, 2.2.62-ubuntu22-arm, 2.2.62-rocky9</li>
 <li>2.3.8-debian12, 2.3.8-ubuntu22, 2.3.8-ubuntu22-arm, 2.3.8-ml-ubuntu22, 2.3.8-rocky9</li>
 </ul>
-<h3 id="announcement_30">Announcement</h3>
+<h3 id="announcement_31">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Dataproc Serverless for Spark runtime versions</a>:</p>
 <ul>
 <li>1.2.56</li>
 <li>2.2.56</li>
 <li>2.3.7</li>
 </ul>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p><strong>Dataproc on Compute Engine: Image versions <code>2.2</code> and <code>2.3</code></strong>: The <a href="https://cloud.google.com/dataproc/docs/concepts/components/iceberg">Iceberg optional component</a> supports the BigLake Iceberg REST catalog.</p>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p><strong>Dataproc on Compute Engine</strong>: <strong><a href="https://cloud.google.com/dataproc/docs/support/diagnose-clusters#enable_and_share_checkpoint_diagnostic_data">Sharing checkpoint diagnostic data:</a></strong> Setting the <a href="https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/cluster-properties#dataproc_service_properties_table"><code>dataproc:diagnostic.capture.access=GOOGLE_DATAPROC_DIAGNOSE</code></a> property during cluster creation shares all of the <a href="https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/staging-bucket">temp bucket</a> contents with Google Cloud support if <a href="https://cloud.google.com/storage/docs/uniform-bucket-level-access">uniform bucket-level access</a> is enabled on temp bucket. If object-level access control is in effect on the temp bucket, only the <a href="https://cloud.google.com/dataproc/docs/support/diagnose-clusters#checkpoint_data_location">checkpoint diagnostic data folder</a> corresponding to the cluster in Cloud Storage is shared.</p>
 <hr />
 <h2 id="2025-08-11">2025-08-11</h2>
-<h3 id="announcement_31">Announcement</h3>
+<h3 id="announcement_32">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters">Dataproc on Compute Engine subminor image versions</a>:</p>
 <ul>
 <li>2.1.93-debian11, 2.1.93-rocky8, 2.1.93-ubuntu20, 2.1.93-ubuntu20-arm</li>
@@ -2683,7 +2710,7 @@ and cannot be used when creating a new cluster.</p>
 </ul>
 <hr />
 <h2 id="2025-07-31">2025-07-31</h2>
-<h3 id="announcement_32">Announcement</h3>
+<h3 id="announcement_33">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Dataproc Serverless for Spark runtime versions</a>:</p>
 <ul>
 <li>1.1.111</li>
@@ -2691,17 +2718,17 @@ and cannot be used when creating a new cluster.</p>
 <li>2.2.55</li>
 <li>2.3.6</li>
 </ul>
-<h3 id="announcement_33">Announcement</h3>
+<h3 id="announcement_34">Announcement</h3>
 <p><strong>Dataproc Serverless for Spark:</strong> Subminor version <code>1.1.111</code> is the last release of runtime version <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions#unsupported-dataproc-serverless-for-spark-runtime-versions"><code>1.1</code></a>, which will no longer be supported and will not receive new releases.</p>
 <hr />
 <h2 id="2025-07-25">2025-07-25</h2>
-<h3 id="announcement_34">Announcement</h3>
+<h3 id="announcement_35">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters">Dataproc on Compute Engine subminor image versions</a>:</p>
 <p><code>2.3.7-debian12</code>, <code>2.3.7-ubuntu22</code>, <code>2.3.7-ubuntu22-arm</code>, <code>2.3.7-ml-ubuntu22</code>, and <code>2.3.7-rocky9</code></p>
 <p>The <code>2.3.7-ml-ubuntu22</code> image extends the 2.3 base image with <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-2.3#image_version_23_machine_learning_ml_components">ML-specific libraries</a>.</p>
 <hr />
 <h2 id="2025-07-15">2025-07-15</h2>
-<h3 id="announcement_35">Announcement</h3>
+<h3 id="announcement_36">Announcement</h3>
 <p><strong>Dataproc on Compute Engine:</strong> Starting August 18, 2025, the following diagnostic properties will be enabled by default for newly created Dataproc clusters:</p>
 <ul>
 <li><code>dataproc:diagnostic.capture.enabled</code>: Enables the collection of <a href="https://cloud.google.com/dataproc/docs/support/diagnose-clusters#checkpoint_data">checkpoint data</a> in the cluster <a href="https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/staging-bucket">temp bucket</a>.</li>
@@ -2716,19 +2743,19 @@ and cannot be used when creating a new cluster.</p>
     to ingest syslogs.</li>
 </ul>
 <p><strong>Note:</strong> To disable any of these features, set the corresponding property to <code>false</code> during cluster creation.</p>
-<h3 id="announcement_36">Announcement</h3>
+<h3 id="announcement_37">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters">Dataproc on Compute Engine subminor image versions</a>:</p>
 <p><code>2.3.6-debian12</code>, <code>2.3.6-ubuntu22</code>, <code>2.3.6-ml-ubuntu22</code>, and <code>2.3.6-rocky9</code>.</p>
 <p>The <code>2.3.6-ml-ubuntu22</code> image extends the 2.3 base image with <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-2.3#image_version_23_machine_learning_ml_components">ML-specific libraries</a>.</p>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p>Dataproc now allows Dynamic update of <a href="https://cloud.google.com/dataproc/docs/concepts/iam/sa-multi-tenancy#create_a_secure_multi-tenancy_cluster">multi-tenancy clusters</a>.</p>
 <hr />
 <h2 id="2025-07-07">2025-07-07</h2>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p>The <a href="https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/scheduled-stop">Cluster Scheduled Stop</a> feature is available in <a href="https://cloud.google.com/products#product-launch-stages">preview</a>. You can use this feature to stop clusters after a specified idle period, at a specified future time, or after a specified period from the cluster creation or update request.</p>
 <hr />
 <h2 id="2025-07-04">2025-07-04</h2>
-<h3 id="announcement_37">Announcement</h3>
+<h3 id="announcement_38">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters">Dataproc on Compute Engine subminor image versions</a>:</p>
 <p><code>2.3.5-debian12</code>, <code>2.3.5-ubuntu22</code>, <code>2.3.5-ml-ubuntu22</code>, and <code>2.3.5-rocky9</code>.</p>
 <p>The <code>2.3.5-ml-ubuntu22</code> image extends the 2.3 base image with <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-2.3#image_version_23_machine_learning_ml_components">ML-specific libraries</a>.</p>
@@ -2736,7 +2763,7 @@ and cannot be used when creating a new cluster.</p>
 <p><a href="https://cloud.google.com/dataproc-serverless/docs"><strong>Serverless for Apache Spark</strong></a> (formerly known as <strong>Dataproc Serverless for Spark</strong>) now supports <a href="https://cloud.google.com/compute/docs/oslogin/manage-oslogin-in-an-org#set-org-policy">OS Login organization policy</a>. Organizations, folders, and projects that enforce the OS Login policy can now use Serverless for Apache Spark.</p>
 <hr />
 <h2 id="2025-07-01">2025-07-01</h2>
-<h3 id="announcement_38">Announcement</h3>
+<h3 id="announcement_39">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Dataproc Serverless for Spark runtime versions</a>:</p>
 <ul>
 <li>1.1.110</li>
@@ -2746,7 +2773,7 @@ and cannot be used when creating a new cluster.</p>
 </ul>
 <hr />
 <h2 id="2025-06-20">2025-06-20</h2>
-<h3 id="announcement_39">Announcement</h3>
+<h3 id="announcement_40">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Dataproc Serverless for Spark runtime versions</a>:</p>
 <ul>
 <li>1.1.109</li>
@@ -2758,7 +2785,7 @@ and cannot be used when creating a new cluster.</p>
 <p><strong>Dataproc Serverless for Spark:</strong> Upgraded the Cloud Storage connector version to <code>2.2.28</code> in the <code>1.1</code> runtime.</p>
 <h3 id="changed_6">Changed</h3>
 <p><strong>Dataproc Serverless for Spark:</strong> The built-in Iceberg now supports the BigLake Iceberg REST catalog on the <code>2.2</code> runtime.</p>
-<h3 id="announcement_40">Announcement</h3>
+<h3 id="announcement_41">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported_dataproc_versions">Dataproc on Compute Engine subminor image versions</a>:</p>
 <ul>
 <li>2.0.144-debian10, 2.0.144-rocky8, 2.0.144-ubuntu18</li>
@@ -2770,18 +2797,18 @@ and cannot be used when creating a new cluster.</p>
 <p><strong>Dataproc on Compute Engine:</strong> Upgraded the Cloud Storage connector version to <code>2.2.28</code> in the latest <code>2.0</code> and <code>2.1</code> images.</p>
 <h3 id="changed_8">Changed</h3>
 <p><strong>Dataproc on Compute Engine:</strong> Dataproc now automatically configures Knox Gateway configuration properties <code>gateway.dispatch.whitelist.services</code> and <code>gateway.dispatch.whitelist</code> for component web UIs within the cluster.</p>
-<h3 id="fixed_5">Fixed</h3>
+<h3 id="fixed_7">Fixed</h3>
 <p><strong>Dataproc on Compute Engine:</strong> Fixed a bug in <code>trino-jvm cluster properties</code>. To configure Trino JVM options prefixed with <code>trino-jvm</code>, follow these guidelines:</p>
 <ul>
 <li>Configure JVM options starting with <code>-XX:</code>, without <code>:</code>. For JVM flags without a value, add <code>=</code> at the end. For example, add <code>trino-jvm:-XX+HeapDumpOnOutOfMemoryError=</code> as -<code>XX:+HeapDumpOnOutOfMemoryError</code> in the <code>jvm.config</code>.</li>
 <li>Specify JVM options system properties with a <code>-D</code> prefix the same way. For example, <code>trino-jvm:-Dsystem.property.name=value</code>.</li>
 <li>Any value containing <code>:</code> cannot be provided as a cluster property.</li>
 </ul>
-<h3 id="fixed_6">Fixed</h3>
+<h3 id="fixed_8">Fixed</h3>
 <p><strong>Dataproc on Compute Engine &amp; Dataproc Serverless:</strong> Backported <a href="https://github.com/apache/parquet-java/pull/3199">GH-3198</a> in Parquet addressing <a href="https://nvd.nist.gov/vuln/detail/cve-2025-46762">CVE-2025-46762</a>.</p>
 <hr />
 <h2 id="2025-06-10">2025-06-10</h2>
-<h3 id="announcement_41">Announcement</h3>
+<h3 id="announcement_42">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Dataproc Serverless for Spark runtime versions</a>:</p>
 <ul>
 <li>1.1.108</li>
@@ -2791,7 +2818,7 @@ and cannot be used when creating a new cluster.</p>
 </ul>
 <hr />
 <h2 id="2025-06-09">2025-06-09</h2>
-<h3 id="announcement_42">Announcement</h3>
+<h3 id="announcement_43">Announcement</h3>
 <p>Announcing the GA release of <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-2.3">Dataproc on Compute Engine image version 2.3</a>:</p>
 <p>Image Version 2.3 is a lightweight image that contains only core components, reducing exposure to Common Vulnerabilities and Exposures (CVEs). For higher security compliance requirements, use the image version 2.3 or later when creating a Dataproc cluster. Optional components can still be deployed on-demand.</p>
 <p>The following images are the latest available <code>2.3</code> subminor image versions:</p>
@@ -2801,7 +2828,7 @@ and cannot be used when creating a new cluster.</p>
 <p><code>2.3</code> images include the components listed in <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-2.3">2.3.x release versions</a>.</p>
 <hr />
 <h2 id="2025-06-06">2025-06-06</h2>
-<h3 id="announcement_43">Announcement</h3>
+<h3 id="announcement_44">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Dataproc Serverless for Spark runtime versions</a>:</p>
 <ul>
 <li>1.1.107</li>
@@ -2809,22 +2836,22 @@ and cannot be used when creating a new cluster.</p>
 <li>2.2.51</li>
 <li>2.3.2</li>
 </ul>
-<h3 id="fixed_7">Fixed</h3>
+<h3 id="fixed_9">Fixed</h3>
 <p><strong>Dataproc Serverless for Spark:</strong> Fixed a bug that prevented the <code>spark.executorEnv</code> property from correctly setting specific executor environment variables across all runtimes.</p>
 <hr />
 <h2 id="2025-06-01">2025-06-01</h2>
-<h3 id="announcement_44">Announcement</h3>
+<h3 id="announcement_45">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported_dataproc_versions">Dataproc on Compute Engine subminor image versions</a>:</p>
 <ul>
 <li>2.0.143-debian10, 2.0.143-rocky8, 2.0.143-ubuntu18</li>
 <li>2.1.91-debian11, 2.1.90-rocky8, 2.1.91-ubuntu20, 2.1.91-ubuntu20-arm</li>
 <li>2.2.59-debian12, 2.2.59-rocky9, 2.2.59-ubuntu22</li>
 </ul>
-<h3 id="fixed_8">Fixed</h3>
+<h3 id="fixed_10">Fixed</h3>
 <p><strong>Dataproc on Compute Engine</strong>: Fixed the ordering of log entries generated from clusters created with <code>2.2+</code> image versions by assigning timestamps closer to the log generation time.</p>
 <hr />
 <h2 id="2025-05-30">2025-05-30</h2>
-<h3 id="announcement_45">Announcement</h3>
+<h3 id="announcement_46">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Dataproc Serverless for Spark runtime versions</a>:</p>
 <ul>
 <li>1.1.106</li>
@@ -2832,7 +2859,7 @@ and cannot be used when creating a new cluster.</p>
 <li>2.2.50</li>
 <li>2.3.1</li>
 </ul>
-<h3 id="announcement_46">Announcement</h3>
+<h3 id="announcement_47">Announcement</h3>
 <p>The support dates for <strong>Dataproc on Compute Engine</strong> image versions <code>2.0</code>, <code>2.1</code>, and <code>2.2</code> have been extended, as follows:</p>
 <ul>
 <li>Image version <code>2.2</code>: Supported until 03/31/2027</li>
@@ -2841,9 +2868,9 @@ and cannot be used when creating a new cluster.</p>
 </ul>
 <hr />
 <h2 id="2025-05-28">2025-05-28</h2>
-<h3 id="announcement_47">Announcement</h3>
-<p>Announcing the <a href="https://cloud.google.com/products#product-launch-stages">General Availability</a> release of <strong>Spark on BigQuery</strong>, which lets you create a serverless Spark session in a <a href="https://cloud.google.com/bigquery/docs/query-overview#bigquery-studio">BigQuery Studio</a> notebook. Use this feature to create, run, and test Spark jobs quickly and easily. For more information, see <a href="https://cloud.google.com/bigquery/docs/use-spark">Run PySpark code in BigQuery Studio notebooks</a>.</p>
 <h3 id="announcement_48">Announcement</h3>
+<p>Announcing the <a href="https://cloud.google.com/products#product-launch-stages">General Availability</a> release of <strong>Spark on BigQuery</strong>, which lets you create a serverless Spark session in a <a href="https://cloud.google.com/bigquery/docs/query-overview#bigquery-studio">BigQuery Studio</a> notebook. Use this feature to create, run, and test Spark jobs quickly and easily. For more information, see <a href="https://cloud.google.com/bigquery/docs/use-spark">Run PySpark code in BigQuery Studio notebooks</a>.</p>
+<h3 id="announcement_49">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Dataproc Serverless for Spark runtime versions</a>:</p>
 <ul>
 <li>1.1.105</li>
@@ -2851,7 +2878,7 @@ and cannot be used when creating a new cluster.</p>
 <li>2.2.49</li>
 <li>2.3.0</li>
 </ul>
-<h3 id="announcement_49">Announcement</h3>
+<h3 id="announcement_50">Announcement</h3>
 <p>Announcing the <a href="https://cloud.google.com/products#product-launch-stages">General Availability (GA)</a> release of Dataproc Serverless for Spark runtime versions <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-versions#spark_runtime_version_23">2.3</a>, which include the following components:</p>
 <ul>
 <li>Spark 3.5.1</li>
@@ -2873,6 +2900,9 @@ and cannot be used when creating a new cluster.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#dataproc">Dataproc</a></li>
+          <li class="nav-item">
+            <a href="#2026-01-24" class="nav-link">2026-01-24</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-01-23" class="nav-link">2026-01-23</a>
           </li>

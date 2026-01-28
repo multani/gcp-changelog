@@ -1,5 +1,40 @@
 # Document AI
 
+## 2026-01-27
+
+### Feature
+
+[Layout parser](https://docs.cloud.google.com/document-ai/docs/layout-parse-chunk) model
+`pretrained-layout-parser-v1.6-pro-2025-12-01` powered by Gemini 3 Pro
+LLM is available in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+This processor version has ML processing capabilities in the US and EU.
+
+**Note:** This processor version uses the Vertex AI
+Gemini global endpoint and is not compliant with Data Residency (DMZ)
+standards. For example, requests in US and EU endpoints might route to anywhere
+globally.
+
+For more information about available models, see the [layout
+parser](https://docs.cloud.google.com/document-ai/docs/layout-parse-chunk) page.
+
+### Feature
+
+[Custom extractor](https://docs.cloud.google.com/document-ai/docs/ce-with-genai) model
+`pretrained-foundation-model-v1.6-pro-2025-12-01` powered by Gemini 3 Pro
+LLM is available in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+This processor version has ML processing capabilities in the US and EU.
+
+**Note:** This processor version uses the Vertex AI
+Gemini global endpoint and is not compliant with Data Residency (DMZ)
+standards. For example, requests in US and EU endpoints might route to anywhere
+globally.
+
+For more information about available models, see the [custom
+extractor](https://docs.cloud.google.com/document-ai/docs/ce-with-genai) page.
+
+---
 ## 2026-01-12
 
 ### Feature

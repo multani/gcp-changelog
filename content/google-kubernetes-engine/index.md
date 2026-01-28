@@ -1,5 +1,22 @@
 # Google Kubernetes Engine
 
+## 2026-01-27
+
+### Feature
+
+Stream Control Transmission Protocol (SCTP) support on GKE Dataplane V2 is now
+generally available (GA). You can now deploy workloads that use SCTP on
+GKE Standard clusters. This feature enables direct SCTP
+communication for Pod-to-Pod and Pod-to-Service traffic.
+
+SCTP support requires clusters to use GKE Dataplane V2 and Ubuntu node images.
+This feature is available in GKE version 1.32.2-gke.1297000 or
+later.
+
+For more information, see [Deploy workloads with
+SCTP](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/deploy-workloads-with-sctp).
+
+---
 ## 2026-01-26
 
 ### Feature

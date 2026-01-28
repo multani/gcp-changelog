@@ -1,5 +1,45 @@
 # Cloud Load Balancing
 
+## 2026-01-28
+
+### Feature
+
+To enhance security and help meet stringent compliance requirements like
+FedRAMP, you can now apply a FIPS-compliant SSL policy to your
+Application Load Balancers and proxy Network Load Balancers. This update also introduces
+the ability to enforce TLS 1.3 as the minimum protocol version.
+
+**New `FIPS_202205` profile**
+
+The new `FIPS_202205` profile, available as a predefined SSL policy, restricts
+the load balancer to use only FIPS 140-2/140-3 validated cryptographic modules
+and ciphers.
+
+When this profile is selected, the load balancer:
+
+* Enforces strict TLS settings, negotiating connections
+  only using TLS 1.2 or TLS 1.3.
+* Uses a limited set of approved cipher suites for TLS 1.2,
+  such as the cipher suites in `ECDHE-RSA-AES-GCM`
+  and `ECDHE-ECDSA-AES-GCM` families.
+* Excludes non-FIPS ciphers for TLS 1.3, such as `TLS_CHACHA20_POLY1305_SHA256`.
+
+**Minimum TLS 1.3 Enforcement**
+
+You can now specify TLS 1.3 as the minimum version for your SSL policy, which
+must be paired with the `RESTRICTED` profile. If you mandate TLS 1.3 as the
+minimum version, any clients attempting to connect via TLS 1.2 or lower will be
+rejected. Ensure your client ecosystem supports TLS 1.3 before enforcing this
+minimum TLS version.
+
+For more information, see the following:
+
+* [SSL policies overview](https://docs.cloud.google.com/load-balancing/docs/ssl-policies-concepts)
+* [Use SSL policies](https://docs.cloud.google.com/load-balancing/docs/use-ssl-policies)
+
+This feature is in **General availability**.
+
+---
 ## 2026-01-23
 
 ### Feature

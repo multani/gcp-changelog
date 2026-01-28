@@ -1,5 +1,14 @@
 # Datastream
 
+## 2026-01-28
+
+### Feature
+
+Datastream now supports Spanner as a source. For more
+information, see the
+[Datastream documentation](https://docs.cloud.google.com/datastream/docs/sources-spanner).
+
+---
 ## 2025-11-17
 
 ### Feature

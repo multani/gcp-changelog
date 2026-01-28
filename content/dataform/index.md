@@ -1,5 +1,15 @@
 # Dataform
 
+## 2026-01-28
+
+### Feature
+
+You can
+[organize your code assets into a hierarchical structure](https://docs.cloud.google.com/dataform/docs/organize-code-assets)
+with folders and repositories using the Dataform API. This feature is in
+[preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-01-19
 
 ### Breaking

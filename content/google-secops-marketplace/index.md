@@ -1,5 +1,80 @@
 # Google SecOps Marketplace
 
+## 2026-01-28
+
+### Feature
+
+**Google Threat Intelligence**: Version 8.0
+
+* The following new actions have been added:
+
+  + **Add ASM Issue Note**
+  + **Add Tag To DTM Alert**
+
+### Change
+
+**Google Chronicle**: Version 74.0
+
+* Reverted the JSON result structure for aggregated queries in the following
+  action:
+
+  + **Execute UDM Query**
+
+### Change
+
+**Google Threat Intelligence**: Version 8.0
+
+* Added the ability to automatically set the `is_suspicious` flag on entities
+  based on specific GTI score and Engine count thresholds in the following
+  action:
+
+  + **Enrich Entities**
+* Added the ability to flag entities as `is_risky` within the JSON output when
+  GTI scores or Engine counts meet specified criteria to the following action:
+
+  + **Submit File**
+
+### Change
+
+**Siemplify**: Version 101.0
+
+* Added support to set custom fields upon alert closure to the following action:
+
+  + **Close Alert**
+* Added support to set custom fields upon case closure to the following action:
+
+  + **Close Case**
+
+### Change
+
+**Salesforce**: Version 14.0
+
+* **Integration**: Updated the Salesforce SDK to the latest version
+
+### Change
+
+**Proofpoint Cloud Threat Response**: Version 2.0
+
+* **Integration**: Updated dependencies.
+
+### Change
+
+**Jira**: Version 52.0
+
+* Optimized ticket processing workflows in the following job:
+
+  + **Sync Closure Job**
+
+### Change
+
+**Azure Active Directory**: Version 22.0
+
+* Added the ability to fetch MFA information to the following actions:
+
+  + **Enrich User**
+  + **Get Manager Contact Details**
+
+---
 ## 2026-01-21
 
 ### Feature

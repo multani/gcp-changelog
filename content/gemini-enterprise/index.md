@@ -1,5 +1,20 @@
 # Gemini Enterprise
 
+## 2026-01-28
+
+### Feature
+
+**Gemini Enterprise: Support for new data stores and actions (Preview)**
+
+The following data stores are now supported in Gemini Enterprise:
+
+* [Confluence Data Center](https://docs.cloud.google.com/gemini/enterprise/docs/confluence-dc)
+* [Jira Data Center](https://docs.cloud.google.com/gemini/enterprise/docs/jira-dc)
+* [Zendesk](https://docs.cloud.google.com/gemini/enterprise/docs/zendesk)
+
+**Download file** action has been added to [Dropbox](https://docs.cloud.google.com/gemini/enterprise/docs/dropbox). For a list of actions for all available data stores, see [Supported actions](https://docs.cloud.google.com/gemini/enterprise/docs/connect-third-party-data-source#supported_actions).
+
+---
 ## 2026-01-27
 
 ### Change
@@ -19,7 +34,7 @@ the name of an agent, person, or file. For more information about mentions, see
 **Gemini Enterprise: Visual flow builder for existing agents**
 
 The Agent Designer visual flow builder is now available for all agents created
-before January 12, 2026. You can now manage and share these agents directly
+before January 12, 2026. You can now manage these agents directly
 from the [Agent Gallery](https://docs.cloud.google.com/gemini/enterprise/docs/agent-gallery) page, or edit their logic using the enhanced visual flow
 builder from the **Agent Designer > Flow** tab.
 
@@ -28,7 +43,7 @@ For more information, see [Agent Designer overview](https://docs.cloud.google.co
 ---
 ## 2026-01-23
 
-### Feature
+### Change
 
 **Gemini Enterprise: New actions in the unified view (Preview)**
 
@@ -41,8 +56,6 @@ New actions have been added to the following existing data stores:
 * [Microsoft OneDrive](https://docs.cloud.google.com/gemini/enterprise/docs/ms-onedrive)
 * [Microsoft Outlook](https://docs.cloud.google.com/gemini/enterprise/docs/ms-outlook)
 * [Microsoft SharePoint](https://docs.cloud.google.com/gemini/enterprise/docs/ms-sharepoint)
-
-For a list of supported actions for these data stores, see [Supported actions](https://docs.cloud.google.com/gemini/enterprise/docs/connect-third-party-data-source#supported_actions).
 
 ---
 ## 2026-01-12

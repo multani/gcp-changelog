@@ -2,9 +2,164 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Config Connector</title>
   <subtitle>Changelog for Google Cloud product: Config Connector</subtitle>
-  <updated>2026-01-09T00:00:00+00:00</updated>
+  <updated>2026-01-27T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:config-connector</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/config-connector/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-01-27:feature:0</id>
+    <published>2026-01-27T00:00:00+00:00</published>
+    <updated>2026-01-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6065">#6065</a>: Enabled Vertical Pod Autoscaler (VPA) support. You can enable VPA for Config Connector components via <code>ControllerResource</code> and <code>NamespacedControllerResource</code> to automatically adjust resource requests.</p>]]></content>
+    <summary>Support for Vertical Pod Autoscaler (VPA) is now available for Config Connector components. You can enable VPA by configuring ControllerResource and NamespacedControllerResource to automatically manage resource requests.</summary>
+    <title>Feature: Enable VPA for Config Connector</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-01-27:announcement:1</id>
+    <published>2026-01-27T00:00:00+00:00</published>
+    <updated>2026-01-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.134.4 is now available.</p>]]></content>
+    <summary>Config Connector version 1.134.4 has been released. This update brings the latest improvements and features to the tool.</summary>
+    <title>Announcement: Config Connector 1.134.4 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-01-27:fixed:2</id>
+    <published>2026-01-27T00:00:00+00:00</published>
+    <updated>2026-01-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Bug Fixes:</p>
+<ul>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6035">#6035</a>: Fixed an issue where <code>managedFields</code> metadata could be incorrectly attributed to the <code>status</code> subresource during spec updates, causing "Location must be set" errors.</li>
+</ul>]]></content>
+    <summary>Resolved an issue where managedFields metadata was misattributed during spec updates, preventing "Location must be set" errors. This fix ensures correct metadata handling for spec updates.</summary>
+    <title>Fixed: Fix for metadata attribution errors</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-01-23:feature:0</id>
+    <published>2026-01-23T00:00:00+00:00</published>
+    <updated>2026-01-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Fields:</p>
+<ul>
+<li><code>AlloyDBInstance</code></li>
+<li>Added <code>spec.connectionPoolConfig</code> field.</li>
+<li>Added <code>status.connectionPoolConfig</code> field.</li>
+</ul>]]></content>
+    <summary>We've updated the AlloyDBInstance resource to include connection pool configuration details. Both the specification and status now support these new fields, allowing for better management of your database connections.</summary>
+    <title>Feature: Connection pool config added</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-01-23:announcement:1</id>
+    <published>2026-01-23T00:00:00+00:00</published>
+    <updated>2026-01-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.143.0 is now available.</p>]]></content>
+    <summary>Config Connector version 1.143.0 has been released. This update brings new features and improvements to the tool.</summary>
+    <title>Announcement: Config Connector 1.143.0 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-01-23:feature:2</id>
+    <published>2026-01-23T00:00:00+00:00</published>
+    <updated>2026-01-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Beta Resources (Direct Reconciler):</p>
+<ul>
+<li><code>ArtifactRegistryRepository</code></li>
+<li><code>LoggingLink</code></li>
+<li><code>MemorystoreInstance</code></li>
+<li><code>PrivateCACAPool</code></li>
+</ul>]]></content>
+    <summary>We are excited to announce the beta release of several new resources, including Artifact Registry Repository, Logging Link, Memorystore Instance, and Private CA Pool. These additions expand our capabilities in managing and integrating various services. Explore these new beta resources to enhance your workflows.</summary>
+    <title>Feature: New Beta Resources Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-01-23:feature:3</id>
+    <published>2026-01-23T00:00:00+00:00</published>
+    <updated>2026-01-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Alpha Resources (Direct Reconciler):</p>
+<ul>
+<li><code>ParameterManagerParameter</code></li>
+</ul>]]></content>
+    <summary>Introducing the new Alpha Resources Direct Reconciler. This feature allows for more efficient resource management and reconciliation.</summary>
+    <title>Feature: Direct Reconciler Alpha</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-01-23:feature:4</id>
+    <published>2026-01-23T00:00:00+00:00</published>
+    <updated>2026-01-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Features:</p>
+<ul>
+<li>Set <code>GOMEMLIMIT</code> for KCC workloads to improve memory management and stability.</li>
+</ul>]]></content>
+    <summary>New features allow setting GOMEMLIMIT for KCC workloads. This aims to enhance memory management and overall stability of your applications.</summary>
+    <title>Feature: Improve KCC workload memory management</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-01-23:change:5</id>
+    <published>2026-01-23T00:00:00+00:00</published>
+    <updated>2026-01-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Reconciliation Improvements:</p>
+<ul>
+<li>
+<p><code>TagsTagBinding</code></p>
+</li>
+<li>
+<p>Added support for <code>organizations</code> in <code>parentRef</code>.</p>
+</li>
+<li>Added support for multiple targets in <code>parentRef</code>.</li>
+<li>
+<p>Resource References (refs.Ref) support added for the following resources to improve reference resolution:</p>
+</li>
+<li>
+<p><code>BigQueryTable</code></p>
+</li>
+<li><code>BigQueryDataset</code></li>
+<li><code>CloudRunService</code></li>
+<li><code>CloudRunJob</code></li>
+<li><code>ArtifactRegistryRepository</code></li>
+<li><code>StorageBucket</code></li>
+</ul>]]></content>
+    <summary>We've improved reconciliation capabilities by adding support for organizations and multiple targets in TagsTagBinding. Additionally, resource reference resolution has been enhanced for BigQuery, Cloud Run, Artifact Registry, and Cloud Storage resources.</summary>
+    <title>Change: Enhanced resource reconciliation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-01-23:fixed:6</id>
+    <published>2026-01-23T00:00:00+00:00</published>
+    <updated>2026-01-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Bug Fixes:</p>
+<ul>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/6221">Issue 6221</a>: <code>ComputeBackendService</code> can now correctly refer to <code>clientTLSPolicy</code>.</li>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/6156">Issue 6156</a>: <code>BigQueryTable</code> now ignores <code>int64</code> to <code>int32</code> schema changes when configured.</li>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/6026">Issue 6026</a>: Fixed identity parsing for <code>TagsTagValue</code>.</li>
+</ul>]]></content>
+    <summary>Several bugs have been fixed, including issues with ComputeBackendService, BigQueryTable schema changes, and identity parsing for TagsTagValue.</summary>
+    <title>Fixed: Resolved several bugs</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

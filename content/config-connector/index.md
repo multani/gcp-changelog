@@ -1,5 +1,83 @@
 # Config Connector
 
+## 2026-01-27
+
+### Feature
+
+[#6065](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6065): Enabled Vertical Pod Autoscaler (VPA) support. You can enable VPA for Config Connector components via `ControllerResource` and `NamespacedControllerResource` to automatically adjust resource requests.
+
+### Announcement
+
+Config Connector version 1.134.4 is now available.
+
+### Fixed
+
+Bug Fixes:
+
+* [#6035](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6035): Fixed an issue where `managedFields` metadata could be incorrectly attributed to the `status` subresource during spec updates, causing "Location must be set" errors.
+
+---
+## 2026-01-23
+
+### Feature
+
+New Fields:
+
+* `AlloyDBInstance`
+  + Added `spec.connectionPoolConfig` field.
+  + Added `status.connectionPoolConfig` field.
+
+### Announcement
+
+Config Connector version 1.143.0 is now available.
+
+### Feature
+
+New Beta Resources (Direct Reconciler):
+
+* `ArtifactRegistryRepository`
+* `LoggingLink`
+* `MemorystoreInstance`
+* `PrivateCACAPool`
+
+### Feature
+
+New Alpha Resources (Direct Reconciler):
+
+* `ParameterManagerParameter`
+
+### Feature
+
+New Features:
+
+* Set `GOMEMLIMIT` for KCC workloads to improve memory management and stability.
+
+### Change
+
+Reconciliation Improvements:
+
+* `TagsTagBinding`
+
+  + Added support for `organizations` in `parentRef`.
+  + Added support for multiple targets in `parentRef`.
+* Resource References (refs.Ref) support added for the following resources to improve reference resolution:
+
+  + `BigQueryTable`
+  + `BigQueryDataset`
+  + `CloudRunService`
+  + `CloudRunJob`
+  + `ArtifactRegistryRepository`
+  + `StorageBucket`
+
+### Fixed
+
+Bug Fixes:
+
+* [Issue 6221](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/6221): `ComputeBackendService` can now correctly refer to `clientTLSPolicy`.
+* [Issue 6156](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/6156): `BigQueryTable` now ignores `int64` to `int32` schema changes when configured.
+* [Issue 6026](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/6026): Fixed identity parsing for `TagsTagValue`.
+
+---
 ## 2026-01-09
 
 ### Change

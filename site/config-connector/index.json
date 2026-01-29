@@ -1,6 +1,90 @@
 {
   "name": "Config Connector",
   "entries": {
+    "2026-01-27": [
+      {
+        "kind": "Feature",
+        "content": "[#6065](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6065): Enabled Vertical Pod Autoscaler (VPA) support. You can enable VPA for Config Connector components via `ControllerResource` and `NamespacedControllerResource` to automatically adjust resource requests.",
+        "summary": {
+          "title": "Enable VPA for Config Connector",
+          "summary": "Support for Vertical Pod Autoscaler (VPA) is now available for Config Connector components. You can enable VPA by configuring ControllerResource and NamespacedControllerResource to automatically manage resource requests."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "Config Connector version 1.134.4 is now available.",
+        "summary": {
+          "title": "Config Connector 1.134.4 Released",
+          "summary": "Config Connector version 1.134.4 has been released. This update brings the latest improvements and features to the tool."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Bug Fixes:\n\n* [#6035](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6035): Fixed an issue where `managedFields` metadata could be incorrectly attributed to the `status` subresource during spec updates, causing \"Location must be set\" errors.",
+        "summary": {
+          "title": "Fix for metadata attribution errors",
+          "summary": "Resolved an issue where managedFields metadata was misattributed during spec updates, preventing \"Location must be set\" errors. This fix ensures correct metadata handling for spec updates."
+        }
+      }
+    ],
+    "2026-01-23": [
+      {
+        "kind": "Feature",
+        "content": "New Fields:\n\n* `AlloyDBInstance`\n  + Added `spec.connectionPoolConfig` field.\n  + Added `status.connectionPoolConfig` field.",
+        "summary": {
+          "title": "Connection pool config added",
+          "summary": "We've updated the AlloyDBInstance resource to include connection pool configuration details. Both the specification and status now support these new fields, allowing for better management of your database connections."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "Config Connector version 1.143.0 is now available.",
+        "summary": {
+          "title": "Config Connector 1.143.0 Released",
+          "summary": "Config Connector version 1.143.0 has been released. This update brings new features and improvements to the tool."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Beta Resources (Direct Reconciler):\n\n* `ArtifactRegistryRepository`\n* `LoggingLink`\n* `MemorystoreInstance`\n* `PrivateCACAPool`",
+        "summary": {
+          "title": "New Beta Resources Available",
+          "summary": "We are excited to announce the beta release of several new resources, including Artifact Registry Repository, Logging Link, Memorystore Instance, and Private CA Pool. These additions expand our capabilities in managing and integrating various services. Explore these new beta resources to enhance your workflows."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Alpha Resources (Direct Reconciler):\n\n* `ParameterManagerParameter`",
+        "summary": {
+          "title": "Direct Reconciler Alpha",
+          "summary": "Introducing the new Alpha Resources Direct Reconciler. This feature allows for more efficient resource management and reconciliation."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Features:\n\n* Set `GOMEMLIMIT` for KCC workloads to improve memory management and stability.",
+        "summary": {
+          "title": "Improve KCC workload memory management",
+          "summary": "New features allow setting GOMEMLIMIT for KCC workloads. This aims to enhance memory management and overall stability of your applications."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Reconciliation Improvements:\n\n* `TagsTagBinding`\n\n  + Added support for `organizations` in `parentRef`.\n  + Added support for multiple targets in `parentRef`.\n* Resource References (refs.Ref) support added for the following resources to improve reference resolution:\n\n  + `BigQueryTable`\n  + `BigQueryDataset`\n  + `CloudRunService`\n  + `CloudRunJob`\n  + `ArtifactRegistryRepository`\n  + `StorageBucket`",
+        "summary": {
+          "title": "Enhanced resource reconciliation",
+          "summary": "We've improved reconciliation capabilities by adding support for organizations and multiple targets in TagsTagBinding. Additionally, resource reference resolution has been enhanced for BigQuery, Cloud Run, Artifact Registry, and Cloud Storage resources."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Bug Fixes:\n\n* [Issue 6221](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/6221): `ComputeBackendService` can now correctly refer to `clientTLSPolicy`.\n* [Issue 6156](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/6156): `BigQueryTable` now ignores `int64` to `int32` schema changes when configured.\n* [Issue 6026](https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/6026): Fixed identity parsing for `TagsTagValue`.",
+        "summary": {
+          "title": "Resolved several bugs",
+          "summary": "Several bugs have been fixed, including issues with ComputeBackendService, BigQueryTable schema changes, and identity parsing for TagsTagValue."
+        }
+      }
+    ],
     "2026-01-09": [
       {
         "kind": "Change",

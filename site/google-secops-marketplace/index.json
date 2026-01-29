@@ -1,6 +1,72 @@
 {
   "name": "Google SecOps Marketplace",
   "entries": {
+    "2026-01-28": [
+      {
+        "kind": "Feature",
+        "content": "**Google Threat Intelligence**: Version 8.0\n\n* The following new actions have been added:\n\n  + **Add ASM Issue Note**\n  + **Add Tag To DTM Alert**",
+        "summary": {
+          "title": "New Actions in Threat Intelligence 8.0",
+          "summary": "Threat Intelligence version 8.0 introduces two new actions: 'Add ASM Issue Note' and 'Add Tag To DTM Alert'. These additions enhance the platform's capabilities for managing and responding to security threats."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Google Chronicle**: Version 74.0\n\n* Reverted the JSON result structure for aggregated queries in the following\n  action:\n\n  + **Execute UDM Query**",
+        "summary": {
+          "title": "Chronicle version 74.0 update",
+          "summary": "Version 74.0 of Chronicle has been released. This update reverts the JSON result structure for aggregated queries in the Execute UDM Query action."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Google Threat Intelligence**: Version 8.0\n\n* Added the ability to automatically set the `is_suspicious` flag on entities\n  based on specific GTI score and Engine count thresholds in the following\n  action:\n\n  + **Enrich Entities**\n* Added the ability to flag entities as `is_risky` within the JSON output when\n  GTI scores or Engine counts meet specified criteria to the following action:\n\n  + **Submit File**",
+        "summary": {
+          "title": "New entity flagging capabilities in Google Threat Intelligence",
+          "summary": "Google Threat Intelligence version 8.0 introduces enhanced entity flagging. You can now automatically set the `is_suspicious` flag during entity enrichment and flag entities as `is_risky` when submitting files, based on configurable GTI score and Engine count thresholds."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Siemplify**: Version 101.0\n\n* Added support to set custom fields upon alert closure to the following action:\n\n  + **Close Alert**\n* Added support to set custom fields upon case closure to the following action:\n\n  + **Close Case**",
+        "summary": {
+          "title": "Update to alert and case closure actions",
+          "summary": "Version 101.0 of Siemplify introduces enhancements to alert and case closure actions. You can now set custom fields when closing alerts or cases, providing more flexibility in managing your security information."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Salesforce**: Version 14.0\n\n* **Integration**: Updated the Salesforce SDK to the latest version",
+        "summary": {
+          "title": "Salesforce SDK Updated",
+          "summary": "Salesforce SDK has been updated to version 14.0. This update ensures compatibility and incorporates the latest features for seamless integration."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Proofpoint Cloud Threat Response**: Version 2.0\n\n* **Integration**: Updated dependencies.",
+        "summary": {
+          "title": "Updated Cloud Threat Response",
+          "summary": "Proofpoint Cloud Threat Response version 2.0 is now available with updated dependencies. This release focuses on improving the underlying components of the threat response system. Further details on the specific dependency updates are available in the release notes."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Jira**: Version 52.0\n\n* Optimized ticket processing workflows in the following job:\n\n  + **Sync Closure Job**",
+        "summary": {
+          "title": "Ticket processing optimized",
+          "summary": "Version 52.0 of our system brings optimized ticket processing workflows. This enhancement specifically targets the Sync Closure Job, leading to more efficient handling of tickets."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Azure Active Directory**: Version 22.0\n\n* Added the ability to fetch MFA information to the following actions:\n\n  + **Enrich User**\n  + **Get Manager Contact Details**",
+        "summary": {
+          "title": "Azure AD MFA Info Added",
+          "summary": "Azure Active Directory version 22.0 now allows fetching MFA information for the Enrich User and Get Manager Contact Details actions."
+        }
+      }
+    ],
     "2026-01-21": [
       {
         "kind": "Feature",

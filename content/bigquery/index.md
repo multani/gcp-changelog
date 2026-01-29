@@ -1,5 +1,19 @@
 # BigQuery
 
+## 2026-01-28
+
+### Change
+
+The BigQuery change data capture feature has been renamed to
+[BigQuery change data capture ingestion](https://docs.cloud.google.com/bigquery/docs/change-data-capture).
+
+### Feature
+
+The BigQuery Data Transfer Service can now
+[transfer data from Shopify to BigQuery](https://docs.cloud.google.com/bigquery/docs/shopify-transfer).
+This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-01-27
 
 ### Feature

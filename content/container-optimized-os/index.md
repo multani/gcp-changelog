@@ -1,5 +1,528 @@
 # Container Optimized OS
 
+## 2026-01-28
+
+### Change
+
+
+
+### cos-117-18613-439-108
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/50c02274e65e7795a63e00fc825404e1c33caad8 ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.439.108/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-22111 in the Linux kernel.
+
+### Security
+
+Updated dev-libs/openssl to v3.0.19. This resolves CVE-2025-15467.
+
+### Security
+
+Fixed CVE-2025-71084 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68259 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71118 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68261 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71131 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-13836 in dev-lang/python.
+
+### Security
+
+Fixed CVE-2025-68814 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68816 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38129 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71077 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71125 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38022 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68821 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-apps/less to v691.
+
+### Security
+
+Fixed CVE-2025-68744 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-21441 in dev-python/urllib3.
+
+### Security
+
+Fixed CVE-2024-57982 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71068 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71098 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-13837 in dev-lang/python.
+
+### Security
+
+Fixed CVE-2025-71113 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68794 in the Linux kernel.
+
+### Fixed
+
+Installed app-misc/c\_rehash, which was unintentionally removed after the dev-libs/openssl update.
+
+### Security
+
+Fixed CVE-2025-71104 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68798 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68788 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68813 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68780 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68265 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68764 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68756 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68803 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68795 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68264 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71089 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68349 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71123 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68740 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71096 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71102 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2024-49968 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71120 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68820 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68363 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68782 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68724 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68775 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68337 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71097 in the Linux kernel.
+
+### Change
+
+
+
+### cos-121-18867-294-100
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/7c8659e7ea01e6439fb9c0ebec1014543bf25250 ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.294.100/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-68814 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68740 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-apps/less to v691.
+
+### Security
+
+Fixed CVE-2025-68337 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71068 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71120 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68780 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68821 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71097 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68259 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68363 in the Linux kernel.
+
+### Security
+
+Updated dev-libs/openssl to v3.0.19. This resolves CVE-2025-15467.
+
+### Security
+
+Fixed CVE-2025-71118 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68775 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68820 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68724 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68756 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-13837 in dev-lang/python.
+
+### Security
+
+Fixed CVE-2025-68744 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71104 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71077 in the Linux kernel.
+
+### Fixed
+
+Installed app-misc/c\_rehash, which was unintentionally removed after the dev-libs/openssl update.
+
+### Security
+
+Fixed CVE-2025-68816 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-13836 in dev-lang/python.
+
+### Security
+
+Fixed CVE-2025-71125 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71102 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68349 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71084 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68264 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68798 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71123 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68795 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71131 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38022 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-21441 in dev-python/urllib3.
+
+### Security
+
+Fixed CVE-2025-68782 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71098 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68265 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68794 in the Linux kernel.
+
+### Fixed
+
+Upgraded app-admin/sosreport to v4.10.2.
+
+### Security
+
+Fixed CVE-2025-68261 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71089 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68788 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38129 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71096 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71113 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68764 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68813 in the Linux kernel.
+
+### Change
+
+
+
+### cos-113-18244-521-88
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/cf2b03d70c085364cc03f0b8a1f770b054cce832 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.88/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-21441 in dev-python/urllib3.
+
+### Security
+
+Fixed CVE-2025-68816 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68795 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71125 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-13836 in dev-lang/python.
+
+### Security
+
+Fixed CVE-2025-71113 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-13837 in dev-lang/python.
+
+### Security
+
+Fixed CVE-2025-71118 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71102 in the Linux kernel.
+
+### Fixed
+
+Installed app-misc/c\_rehash, which was unintentionally removed after the dev-libs/openssl update.
+
+### Security
+
+Fixed CVE-2025-71131 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71123 in the Linux kernel.
+
+### Security
+
+Updated dev-libs/openssl to v3.0.19. This resolves CVE-2025-15467.
+
+### Security
+
+Fixed CVE-2025-71120 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71104 in the Linux kernel.
+
+### Change
+
+
+
+### cos-125-19216-104-126
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/46c2d01887bed5038cc2b8bbd801ae2f7985e7f0 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.104.126/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Upgraded sys-apps/less to v691.
+
+### Security
+
+Fixed CVE-2025-13836 in dev-lang/python.
+
+### Security
+
+Updated dev-libs/openssl to v3.5.5. This resolves CVE-2025-15467.
+
+### Security
+
+Fixed CVE-2026-21441 in dev-python/urllib3.
+
+### Fixed
+
+Upgraded app-admin/sosreport to v4.10.2.
+
+---
 ## 2026-01-23
 
 ### Change

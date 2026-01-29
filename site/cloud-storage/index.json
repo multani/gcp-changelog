@@ -1,6 +1,16 @@
 {
   "name": "Cloud Storage",
   "entries": {
+    "2026-01-28": [
+      {
+        "kind": "Feature",
+        "content": "Previously, when [listing buckets](https://docs.cloud.google.com/storage/docs/listing-buckets) by using the\nclient libraries, JSON API, or RPC API, the request returned an error if some\nbuckets couldn't be reached because a location was temporarily unavailable. You\ncan now use a partial success option to return a list of buckets that are\navailable, as well as the names of any buckets that can't be reached.",
+        "summary": {
+          "title": "Bucket listing improvements",
+          "summary": "You can now list buckets even if some locations are temporarily unavailable. The client libraries, JSON API, and RPC API will return a partial success, listing available buckets and identifying any that could not be reached."
+        }
+      }
+    ],
     "2026-01-21": [
       {
         "kind": "Feature",

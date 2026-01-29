@@ -1,5 +1,12 @@
 # Looker
 
+## 2026-01-28
+
+### Feature
+
+You can now view the public [egress IP addresses](https://docs.cloud.google.com/looker/docs/looker-core-view-console#details_tab) for Looker (Google Cloud core) instances that use Private Service Connect and controlled native egress. These IP addresses may be used when setting up [outbound connections](https://docs.cloud.google.com/looker/docs/looker-core-create-psc#configure-outbound).
+
+---
 ## 2026-01-26
 
 ### Feature

@@ -2292,18 +2292,22 @@
 
 
 <h1 id="looker">Looker</h1>
-<h2 id="2026-01-26">2026-01-26</h2>
+<h2 id="2026-01-28">2026-01-28</h2>
 <h3 id="feature">Feature</h3>
-<p><strong>Available January 29, 2026:</strong> Conversational Analytics includes a <strong>Show reasoning</strong> toggle that provides step-by-step insight into how the agent reaches its answers. This update also includes improvements to overall answer accuracy. See the <a href="https://docs.cloud.google.com/gemini/docs/conversational-analytics-api/overview">Conversational Analytics API</a> documentation for details.</p>
+<p>You can now view the public <a href="https://docs.cloud.google.com/looker/docs/looker-core-view-console#details_tab">egress IP addresses</a> for Looker (Google Cloud core) instances that use Private Service Connect and controlled native egress. These IP addresses may be used when setting up <a href="https://docs.cloud.google.com/looker/docs/looker-core-create-psc#configure-outbound">outbound connections</a>.</p>
+<hr />
+<h2 id="2026-01-26">2026-01-26</h2>
 <h3 id="feature_1">Feature</h3>
-<p>Gemini in Looker can now <a href="https://docs.cloud.google.com/looker/docs/explore-summary-gemini">generate a summary and an analysis of an Explore</a>.</p>
+<p><strong>Available January 29, 2026:</strong> Conversational Analytics includes a <strong>Show reasoning</strong> toggle that provides step-by-step insight into how the agent reaches its answers. This update also includes improvements to overall answer accuracy. See the <a href="https://docs.cloud.google.com/gemini/docs/conversational-analytics-api/overview">Conversational Analytics API</a> documentation for details.</p>
 <h3 id="feature_2">Feature</h3>
+<p>Gemini in Looker can now <a href="https://docs.cloud.google.com/looker/docs/explore-summary-gemini">generate a summary and an analysis of an Explore</a>.</p>
+<h3 id="feature_3">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore"><strong>Self-service Explores</strong> admin page</a> now supports a connection test button so that Looker admins can verify that the BigQuery connection is able to support self-service Explores.</p>
 <h3 id="announcement">Announcement</h3>
 <p><strong>Looker 26.0</strong> includes the following feature updates, which will start rolling out on January 26, 2026:</p>
-<h3 id="feature_3">Feature</h3>
-<p>Now available in preview, the <a href="https://docs.cloud.google.com/looker/docs/git-options#configuration"><strong>Configuration</strong> tab of the <strong>Projects Settings</strong> page</a> in the Looker IDE contains a <strong>Delete Developer Copy</strong> button that lets LookML developers delete their local developer copy of the project's Git repository. See the <a href="https://docs.cloud.google.com/looker/docs/version-control-and-deploying-changes#delete-dev-copy">Using version control and deploying</a> documentation page for details.</p>
 <h3 id="feature_4">Feature</h3>
+<p>Now available in preview, the <a href="https://docs.cloud.google.com/looker/docs/git-options#configuration"><strong>Configuration</strong> tab of the <strong>Projects Settings</strong> page</a> in the Looker IDE contains a <strong>Delete Developer Copy</strong> button that lets LookML developers delete their local developer copy of the project's Git repository. See the <a href="https://docs.cloud.google.com/looker/docs/version-control-and-deploying-changes#delete-dev-copy">Using version control and deploying</a> documentation page for details.</p>
+<h3 id="feature_5">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#tabbed-dashboards">Tabbed Dashboards Labs feature</a> is now available. The Tabbed Dashboards Labs feature lets dashboard editors organize dashboard content across multiple tabs within a single dashboard. Adding tabs to dashboards lets you do the following:</p>
 <ul>
 <li>Better organize content: Group related visualizations and tiles into separate tabs.</li>
@@ -2312,7 +2316,7 @@
 <li>Reduce clutter: Consolidate multiple related analyses into a single dashboard.</li>
 </ul>
 <p>This feature is only for Looker (original) instances and is enabled by default.</p>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#dashboard-filter-enhancements">Dashboard Filter Enhancements Labs feature</a> is now available. The Dashboard Filter Enhancements Labs feature includes the following improvements:</p>
 <ul>
 <li>Persistent filter suggestion drop-down: Filter suggestion drop-downs remain open for easier multi-selection for <a href="https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#tag-list">tag list</a> and <a href="https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#advanced_filters">advanced filter type</a> filters.</li>
@@ -2321,12 +2325,12 @@
 <li>Enable <a href="https://docs.cloud.google.com/looker/docs/presenting-content#adding_dashboards_to_boards_with_custom_filter_values_applied">Include custom filter values</a> by default for boards: Admins can choose to enable Include custom filter values for boards by default instance-wide.</li>
 </ul>
 <p>This feature is only for Looker (original) instances and is enabled by default.</p>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#custom-tooltips">Custom Tooltips Labs feature</a> is now available. The Custom Tooltips Labs feature lets you configure tooltips within the Explore <a href="https://docs.cloud.google.com/looker/docs/creating-visualizations#quick_guide">visualization editor</a> using a combination of UI settings and an HTML editor that supports Liquid templating.</p>
 <p>This feature is only for Looker (original) instances and is enabled by default.</p>
 <hr />
 <h2 id="2026-01-14">2026-01-14</h2>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p>Looker (Google Cloud core) is now available in the asia-southeast3 (Bangkok) region. For more information, see the <a href="https://docs.cloud.google.com/looker/docs/looker-core-locations#asia-pacific">Looker (Google Cloud core) locations</a> documentation.</p>
 <hr />
 <h2 id="2026-01-08">2026-01-08</h2>
@@ -2334,15 +2338,15 @@
 <p>An issue has been fixed where Looker would generate inefficient SQL for some Databricks queries that included date manipulation for weekly data. Looker now uses Databricks functions like <code>date_trunc</code> when generating SQL.</p>
 <h3 id="fixed_1">Fixed</h3>
 <p>For the Spanish (<code>es_ES</code>) locale, the weekday initials for Sunday and Tuesday in the schedule dashboard dialog have been set to the correct values (<code>D</code> and <code>M</code>).</p>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p>The JDBC driver for <a href="https://docs.cloud.google.com/looker/docs/db-config-apache-spark">Apache Spark 3+</a> connections has been updated to version 2.7.6.</p>
 <h3 id="fixed_2">Fixed</h3>
 <p>An issue has been fixed where applying filters to a Google Map visualization would require a refresh before the filters would take effect. This feature now performs as expected.</p>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p><a href="https://docs.cloud.google.com/looker/docs/admin-panel-platform-smtp">Custom mail settings that are configured for SMTP servers</a> now support OAuth 2.0 authentication.</p>
 <h3 id="fixed_3">Fixed</h3>
 <p>An issue has been fixed where some columns in the Query Concurrency System Activity Explore were displaying null values. This feature now performs as expected.</p>
-<h3 id="feature_10">Feature</h3>
+<h3 id="feature_11">Feature</h3>
 <p>For <a href="https://docs.cloud.google.com/looker/docs/exploring-self-service">creating self-service Explores</a> from Excel files that contain multiple worksheets, the <strong>Data upload</strong> dialog now lets you specify which Excel worksheet to upload. Previously, the self-service Explore was always based on the first worksheet in the Excel file. <strong>Note:</strong> This item was added on January 15, 2026.</p>
 <h3 id="fixed_4">Fixed</h3>
 <p>An issue has been fixed where a join wouldn't be added to the query, even if one was required by a measure of type <code>count_distinct</code>, <code>sum_distinct</code>, or <code>avg_distinct</code>.</p>
@@ -2350,7 +2354,7 @@
 <p>An issue has been fixed where Looker would prevent users from uploading data if they lacked the <code>explore</code> permission. This feature now performs as expected.</p>
 <h3 id="fixed_6">Fixed</h3>
 <p>An issue has been fixed where testing a connection could fail to return an error message in cases where the user had insufficient permissions or if the connection no longer existed. This feature now performs as expected.</p>
-<h3 id="feature_11">Feature</h3>
+<h3 id="feature_12">Feature</h3>
 <p>The LookML dashboards folder is now paginated, showing 30 dashboards per page.</p>
 <h3 id="fixed_7">Fixed</h3>
 <p>When you use the Field Picker to clear all fields, the chart type no longer changes to Table (Legacy).</p>
@@ -2376,11 +2380,11 @@
 </ul>
 <h3 id="fixed_13">Fixed</h3>
 <p>An issue has been fixed where, after you uploaded data, Looker would not redirect you to the uploaded file. This feature now performs as expected.</p>
-<h3 id="feature_12">Feature</h3>
+<h3 id="feature_13">Feature</h3>
 <p>Looker now supports encrypted files for <a href="https://docs.cloud.google.com/looker/docs/db-config-snowflake#key-pair">key-pair authentication for Snowflake connections</a>.</p>
 <h3 id="fixed_14">Fixed</h3>
 <p>The <strong>Skip to Main Content</strong> accessibility link for dashboards has been removed for embedded dashboards.</p>
-<h3 id="feature_13">Feature</h3>
+<h3 id="feature_14">Feature</h3>
 <p>When you <a href="https://docs.cloud.google.com/looker/docs/viewing-embedded-items#viewing_folders_on_embedded_looks_explores_and_dashboards">view folders on embedded content</a>, LookML dashboards are now visible. The LookML dashboards folder, however, will not be visible.</p>
 <h3 id="fixed_15">Fixed</h3>
 <p>An issue has been fixed where a SQL Runner query against a model would fail if the user had not yet opened the model in Development Mode. This feature now performs as expected.</p>
@@ -2430,25 +2434,25 @@
 <p>An issue has been fixed where tooltips incorrectly displayed the text <code>[object Object]</code>. This feature now performs as expected.</p>
 <h3 id="fixed_37">Fixed</h3>
 <p>An issue has been fixed where the <strong>Explore from SQL Runner query</strong> feature could return an error if it found Liquid syntax in the query. The feature now exports the query as plaintext.</p>
-<h3 id="feature_14">Feature</h3>
-<p>The new LookML parameter <a href="https://docs.cloud.google.com/looker/docs/reference/param-explore-autogenerate-primary-keys"><code>autogenerate_primary_keys</code></a> parameter is now supported. When a view or Explore is defined with <code>autogenerate_primary_keys: yes</code>, Looker generates a temporary, distinct key for a view, allowing symmetric aggregates and one-to-many counts to be calculated correctly without any changes to your underlying database table. The primary key is generated at query runtime; it does not persist across queries. <strong>Note:</strong> This item was added on January 12, 2026.</p>
 <h3 id="feature_15">Feature</h3>
+<p>The new LookML parameter <a href="https://docs.cloud.google.com/looker/docs/reference/param-explore-autogenerate-primary-keys"><code>autogenerate_primary_keys</code></a> parameter is now supported. When a view or Explore is defined with <code>autogenerate_primary_keys: yes</code>, Looker generates a temporary, distinct key for a view, allowing symmetric aggregates and one-to-many counts to be calculated correctly without any changes to your underlying database table. The primary key is generated at query runtime; it does not persist across queries. <strong>Note:</strong> This item was added on January 12, 2026.</p>
+<h3 id="feature_16">Feature</h3>
 <p>The JDBC driver for <a href="https://docs.cloud.google.com/looker/docs/db-config-databricks">Databricks</a> connections has been updated to version 3.0.5.</p>
 <h3 id="fixed_38">Fixed</h3>
 <p>An issue has been fixed where filtered custom measures could fail to load if they referenced a dimension that used the <code>alias</code> parameter in their filter. This feature now performs as expected.</p>
 <h3 id="fixed_39">Fixed</h3>
 <p>An issue has been fixed where the <strong>Show Totals</strong> option in the Plot menu was not correctly hiding totals when a user downloaded results. This feature now performs as expected.</p>
-<h3 id="feature_16">Feature</h3>
-<p>The user interface for configuring group mappings for LDAP, SAML, and OpenID Connect has been updated for improved management. The new interface allows administrators to more easily add, edit, remove, and search for group mappings.</p>
 <h3 id="feature_17">Feature</h3>
-<p>Looker now supports conditional formatting rules for string types in single value and table visualizations.</p>
+<p>The user interface for configuring group mappings for LDAP, SAML, and OpenID Connect has been updated for improved management. The new interface allows administrators to more easily add, edit, remove, and search for group mappings.</p>
 <h3 id="feature_18">Feature</h3>
+<p>Looker now supports conditional formatting rules for string types in single value and table visualizations.</p>
+<h3 id="feature_19">Feature</h3>
 <p>Looker now supports key-pair authentication in the <a href="https://docs.cloud.google.com/looker/docs/db-config-snowflake#pdt-overrides">PDT overrides for Snowflake connections</a>.</p>
 <h3 id="fixed_40">Fixed</h3>
 <p>An issue has been fixed where downloaded reports with pivoted tables could contain extra whitespace. This feature now performs as expected.</p>
 <h3 id="fixed_41">Fixed</h3>
 <p>An issue has been fixed where creating a custom dimension with a single letter name could cause the query to fail. This feature now performs as expected.</p>
-<h3 id="feature_19">Feature</h3>
+<h3 id="feature_20">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#tabbed-dashboards"><strong>Tabbed Dashboards</strong> Labs feature</a> lets dashboard editors organize dashboard content across multiple tabs within a single dashboard. Adding tabs to dashboards lets you do the following:</p>
 <ul>
 <li><strong>Better organize content:</strong> Group related visualizations and tiles into separate tabs.</li>
@@ -2458,17 +2462,17 @@
 </ul>
 <p>This feature will be available beginning January 26, for Looker (Original) instances, and will be disabled by default.</p>
 <p><strong>Note:</strong> This item was updated on January 20, 2026.</p>
-<h3 id="feature_20">Feature</h3>
-<p>Looker admins can now create dedicated <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-users#service-account">service accounts for API-only access</a>. Additionally, eligible standard user accounts that are being used for API access can be <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-users#migrating">migrated</a> to the new service account type from the Users page in the Admin panel.</p>
 <h3 id="feature_21">Feature</h3>
-<p>The <strong>Favoriting LookML Dashboards</strong> Labs feature, which enables LookML dashboards to be <a href="https://docs.cloud.google.com/looker/docs/finding-content#navigating_to_content_in_folders">marked as favorites</a> and displays them on the Looker Favorites tab, is now out of Labs and generally available.</p>
+<p>Looker admins can now create dedicated <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-users#service-account">service accounts for API-only access</a>. Additionally, eligible standard user accounts that are being used for API access can be <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-users#migrating">migrated</a> to the new service account type from the Users page in the Admin panel.</p>
 <h3 id="feature_22">Feature</h3>
+<p>The <strong>Favoriting LookML Dashboards</strong> Labs feature, which enables LookML dashboards to be <a href="https://docs.cloud.google.com/looker/docs/finding-content#navigating_to_content_in_folders">marked as favorites</a> and displays them on the Looker Favorites tab, is now out of Labs and generally available.</p>
+<h3 id="feature_23">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#custom-tooltips"><strong>Custom Tooltips</strong> Labs feature</a> lets you configure tooltips within the <a href="https://docs.cloud.google.com/looker/docs/creating-visualizations#quick_guide">Explore visualization editor</a> using a combination of UI settings and an HTML editor that supports Liquid templating.</p>
 <p>This feature will be available beginning January 26, for Looker (Original) instances, and will be enabled by default.</p>
 <p><strong>Note:</strong> This item was updated on January 20, 2026.</p>
-<h3 id="feature_23">Feature</h3>
-<p>The API endpoint <code>search_lookml_dashboards</code> is out of Labs and now generally available.</p>
 <h3 id="feature_24">Feature</h3>
+<p>The API endpoint <code>search_lookml_dashboards</code> is out of Labs and now generally available.</p>
+<h3 id="feature_25">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#dashboard-filter-enhancements"><strong>Dashboard Filter Enhancements</strong> Labs feature</a> includes the following improvements:</p>
 <ul>
 <li>Persistent filter suggestion drop-down: Filter suggestion drop-downs remain open for easier multi-selection for <a href="https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#tag-list">tag list</a> and <a href="https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#advanced_filters">advanced filter</a> type filters.</li>
@@ -2478,35 +2482,35 @@
 </ul>
 <p>This feature will be available beginning January 26, for Looker (Original) instances, and will be enabled by default.</p>
 <p><strong>Note:</strong> This item was updated on January 20, 2026.</p>
-<h3 id="feature_25">Feature</h3>
-<p>LookML dashboards can now be <a href="https://docs.cloud.google.com/looker/docs/finding-content#navigating_to_content_in_folders">marked as favorites</a>, allowing the LookML dashboards to appear on the Looker Favorites tab.</p>
 <h3 id="feature_26">Feature</h3>
-<p>Looker (Google Cloud core) instances that use Private Service Connect can now connect to Google APIs through <a href="https://docs.cloud.google.com/looker/docs/looker-core-networking-options#controlled-native-egress">controlled native egress</a>.</p>
+<p>LookML dashboards can now be <a href="https://docs.cloud.google.com/looker/docs/finding-content#navigating_to_content_in_folders">marked as favorites</a>, allowing the LookML dashboards to appear on the Looker Favorites tab.</p>
 <h3 id="feature_27">Feature</h3>
+<p>Looker (Google Cloud core) instances that use Private Service Connect can now connect to Google APIs through <a href="https://docs.cloud.google.com/looker/docs/looker-core-networking-options#controlled-native-egress">controlled native egress</a>.</p>
+<h3 id="feature_28">Feature</h3>
 <p>The API endpoint <code>search_lookml_dashboards</code> is now generally available.</p>
 <hr />
 <h2 id="2025-12-23">2025-12-23</h2>
-<h3 id="feature_28">Feature</h3>
+<h3 id="feature_29">Feature</h3>
 <p>Historical data cannot be accessed with the API Usage System Activity Explore for Looker instances that are running Looker 25.16 or later. Looker instances that are running Looker 25.16 or later must use the <a href="https://docs.cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#api_usage_hourly">API Usage Hourly System Activity Explore</a>.</p>
 <hr />
 <h2 id="2025-12-03">2025-12-03</h2>
-<h3 id="feature_29">Feature</h3>
-<p>For Looker instances that are running Looker 25.20 or later, admins can now <a href="https://docs.cloud.google.com/looker/docs/admin-panel-platform-actions">test the connection</a> between their instance and the Looker Action Hub. This option is available only for the Looker Action Hub. It is not available for <a href="https://docs.cloud.google.com/looker/docs/action-hub#setting_up_a_local_action_hub_server">custom action hubs</a>.</p>
 <h3 id="feature_30">Feature</h3>
+<p>For Looker instances that are running Looker 25.20 or later, admins can now <a href="https://docs.cloud.google.com/looker/docs/admin-panel-platform-actions">test the connection</a> between their instance and the Looker Action Hub. This option is available only for the Looker Action Hub. It is not available for <a href="https://docs.cloud.google.com/looker/docs/action-hub#setting_up_a_local_action_hub_server">custom action hubs</a>.</p>
+<h3 id="feature_31">Feature</h3>
 <p>Now available in preview, the <a href="https://docs.cloud.google.com/looker/docs/exploring-self-service"><strong>Self-service Explore</strong></a> feature lets Looker users upload CSV, XLS, and XLSX files to Looker and then query and visualize the data in a Looker Explore without needing to configure a LookML model or set up Git version control. In addition, <a href="https://docs.cloud.google.com/looker/docs/content-certification">content certification</a> is supported for self-service Explores.</p>
 <hr />
 <h2 id="2025-12-02">2025-12-02</h2>
-<h3 id="feature_31">Feature</h3>
+<h3 id="feature_32">Feature</h3>
 <p>Now available in preview, Looker can display a new <a href="https://docs.cloud.google.com/looker/docs/connected-sheets-quicklink"><strong>Connected Sheets</strong></a> option in the <strong>Explore actions</strong> menu. The <strong>Connected Sheets</strong> option opens Google Sheets and initiates a connection from Google Sheets to the Looker Explore. You can then build reports, pivot tables, or charts within the newly created Google Sheets using the fields available from the selected Looker Explore. The <strong>Connected Sheets</strong> quick link feature must be configured in the Google Cloud console and on your Looker instance. See the <a href="https://docs.cloud.google.com/looker/docs/connected-sheets-quicklink#admin-config">Connected Sheets quick link</a> documentation page for details.</p>
 <hr />
 <h2 id="2025-12-01">2025-12-01</h2>
-<h3 id="feature_32">Feature</h3>
-<p>You can now use <a href="https://docs.cloud.google.com/looker/docs/looker-core-custom-domain-google-managed-certs">Google-managed certificates</a> for Looker (Google Cloud core) instances that use Private Service Connect connections. This feature simplifies custom domain configuration by using a <code>*.private.looker.app</code> domain, eliminating the need to manage your own SSL certificates. Instances may need to <a href="https://docs.cloud.google.com/looker/docs/looker-core-psc-migration">migrate</a> to the updated service attachment URI.</p>
 <h3 id="feature_33">Feature</h3>
-<p>You can now use <a href="https://docs.cloud.google.com/looker/docs/looker-core-psc-overview#using_global_access">global access</a> with Looker (Google Cloud core) instances that use Private Service Connect connections. Instances may need to <a href="https://docs.cloud.google.com/looker/docs/looker-core-psc-migration">migrate</a> to the updated service attachment URI.</p>
+<p>You can now use <a href="https://docs.cloud.google.com/looker/docs/looker-core-custom-domain-google-managed-certs">Google-managed certificates</a> for Looker (Google Cloud core) instances that use Private Service Connect connections. This feature simplifies custom domain configuration by using a <code>*.private.looker.app</code> domain, eliminating the need to manage your own SSL certificates. Instances may need to <a href="https://docs.cloud.google.com/looker/docs/looker-core-psc-migration">migrate</a> to the updated service attachment URI.</p>
 <h3 id="feature_34">Feature</h3>
-<p>The Looker–Tableau BI Connector is now available on <a href="https://exchange.tableau.com/products/1097">Tableau Exchange</a>. This means that for <a href="https://docs.cloud.google.com/looker/docs/tableau-connector#desktop">Tableau Desktop</a> and <a href="https://docs.cloud.google.com/looker/docs/tableau-admin#server">Tableau Server</a>, you no longer need to manually download and install the Tableau connector (TACO) file. <strong>Note:</strong> This item was added on December 12, 2025.</p>
+<p>You can now use <a href="https://docs.cloud.google.com/looker/docs/looker-core-psc-overview#using_global_access">global access</a> with Looker (Google Cloud core) instances that use Private Service Connect connections. Instances may need to <a href="https://docs.cloud.google.com/looker/docs/looker-core-psc-migration">migrate</a> to the updated service attachment URI.</p>
 <h3 id="feature_35">Feature</h3>
+<p>The Looker–Tableau BI Connector is now available on <a href="https://exchange.tableau.com/products/1097">Tableau Exchange</a>. This means that for <a href="https://docs.cloud.google.com/looker/docs/tableau-connector#desktop">Tableau Desktop</a> and <a href="https://docs.cloud.google.com/looker/docs/tableau-admin#server">Tableau Server</a>, you no longer need to manually download and install the Tableau connector (TACO) file. <strong>Note:</strong> This item was added on December 12, 2025.</p>
+<h3 id="feature_36">Feature</h3>
 <p>The Looker–Tableau BI Connector is now supported for Tableau Cloud, so that you can use a Looker Explore as a data source in Tableau Cloud. See the <a href="https://docs.cloud.google.com/looker/docs/tableau-connector#cloud">Looker–Tableau BI Connector</a> documentation page for more information.</p>
 <p>To use the Looker–Tableau BI Connector with Tableau Cloud, your admin must configure your Looker instance and your Tableau Cloud instance as described on the <a href="https://docs.cloud.google.com/looker/docs/tableau-admin#cloud">Administering Tableau to Looker connections</a> documentation page.</p>
 <hr />
@@ -2515,26 +2519,26 @@
 <p>The DataRobot <a href="https://docs.cloud.google.com/looker/docs/actions-overview">action</a> will be deprecated on February 1, 2026. After that date, this action won't be available in the Looker Action Hub.</p>
 <hr />
 <h2 id="2025-11-19">2025-11-19</h2>
-<h3 id="feature_36">Feature</h3>
+<h3 id="feature_37">Feature</h3>
 <p>Now available in preview, the <a href="https://docs.cloud.google.com/looker/docs/exploring-self-service"><strong>Self-service Explore</strong></a> feature lets Looker users upload CSV, XLS, and XLSX files to Looker and then query and visualize the data in a Looker Explore without needing to configure a LookML model or set up Git version control.</p>
 <hr />
 <h2 id="2025-11-17">2025-11-17</h2>
-<h3 id="feature_37">Feature</h3>
+<h3 id="feature_38">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/content-certification">content certification</a> feature, when enabled, lets trusted users certify Looker dashboards and Looks to indicate that the content has gone through a manual review and is certified as reliable and trustworthy. This lets other users identify reliable content and confidently use that data for decision-making. <strong>Note:</strong> This item was updated on November 20, 2025.</p>
 <hr />
 <h2 id="2025-11-12">2025-11-12</h2>
-<h3 id="feature_38">Feature</h3>
+<h3 id="feature_39">Feature</h3>
 <p><a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-overview">Conversational Analytics</a> is now generally available for Looker instances that are on Looker 25.18 or later. Use of Conversational Analytics in your Looker instance is now available without a Looker admin having to enable the <strong>Trusted Testers</strong> settings. Enablement of the <strong>Gemini in Looker</strong> setting is still required. Enablement of the <strong>Trusted Tester Features</strong> setting is still required when using the <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-code-interpreter">Code Interpreter</a> with Conversational Analytics in Looker.</p>
 <p>For Looker (Google Cloud core) instances, this launch includes support for Conversational Analytics in instances that are within a VPC perimeter.</p>
 <p>See the <a href="https://cloud.google.com/looker/pricing">Looker pricing</a> page for pricing information.</p>
 <p>(This release note was updated on November 13, 2025 to add pricing information.)</p>
 <hr />
 <h2 id="2025-11-11">2025-11-11</h2>
-<h3 id="feature_39">Feature</h3>
+<h3 id="feature_40">Feature</h3>
 <p>You can now schedule a daily, zero-downtime export for Looker (Google Cloud core) instances. For more information, see the <a href="https://docs.cloud.google.com/looker/docs/looker-core-scheduled-export">Create a scheduled export job for a Looker (Google Cloud core) instance</a> documentation page. This feature is being rolled out and will appear in all instances within a few weeks.</p>
 <hr />
 <h2 id="2025-11-05">2025-11-05</h2>
-<h3 id="feature_40">Feature</h3>
+<h3 id="feature_41">Feature</h3>
 <p>Looker 25.20 contains the following accessibility improvements:</p>
 <ul>
 <li>The character count for the custom message field of a schedule is now accessible to screen readers.</li>
@@ -2555,7 +2559,7 @@
 <h3 id="breaking_2">Breaking</h3>
 <p>Looker now recognizes results from the <code>YEAR</code> function as a number and not a date in MySQL 8.4. This change replicates the behavior of MySQL 8.0 and earlier.</p>
 <p>To undo this change for a MySQL connection, add the following parameter to the Additional JDBC parameters section: <code>yearIsDateType=true</code></p>
-<h3 id="feature_41">Feature</h3>
+<h3 id="feature_42">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/connecting-to-your-db#max_number_of_pdt_builder_connections">Max Number of PDT Builder Connections</a> limit has been increased from 10 to 100.</p>
 <h3 id="breaking_3">Breaking</h3>
 <p>When you use <a href="https://docs.cloud.google.com/looker/docs/elite-system-activity">Elite System Activity</a>, the System Activity fields <code>sql_query.sql</code> and <code>sql_text.text</code> are limited to a length of 1.9 MB. Any data beyond the 1.9 MB limit will be truncated. (This release note was updated on November 10, 2025 to specify Elite System Activity.)</p>
@@ -2573,36 +2577,36 @@
 <p>An issue has been fixed where a measure of <code>type: period_over_period</code> could be referenced in the <code>sql</code> parameter for a measure of <code>type: number</code>. Attempting to do so now correctly displays an error in the LookML validator. This feature now performs as expected.</p>
 <h3 id="fixed_44">Fixed</h3>
 <p>An issue has been fixed where the <strong>Clear field keep filter</strong> button on an Explore could incorrectly become disabled when a user used the field search bar in the field picker. This feature now performs as expected.</p>
-<h3 id="feature_42">Feature</h3>
-<p>The Visual Drilling feature is now out of Labs and generally available on the Admin &gt; General Settings page.</p>
 <h3 id="feature_43">Feature</h3>
+<p>The Visual Drilling feature is now out of Labs and generally available on the Admin &gt; General Settings page.</p>
+<h3 id="feature_44">Feature</h3>
 <p>A new Labs feature, Internal Dashboard Theming, lets users apply predefined themes to a Looker dashboard. These themes, which are distinct from the themes that are used for embedded dashboards, can be managed by users with the <code>manage_internal_themes</code> permission.</p>
 <h3 id="fixed_45">Fixed</h3>
 <p>An issue has been fixed where disabling the Favoriting LookML Dashboards Labs feature prevented users from moving LookML dashboards in folders. This feature now performs as expected.</p>
-<h3 id="feature_44">Feature</h3>
+<h3 id="feature_45">Feature</h3>
 <p>The Visual Drilling feature is now generally available on the Admin &gt; General Settings page.</p>
 <hr />
 <h2 id="2025-10-31">2025-10-31</h2>
-<h3 id="feature_45">Feature</h3>
+<h3 id="feature_46">Feature</h3>
 <p>Looker (Google Cloud core) instances that use Private Service Connect now offer a simplified method for configuring outbound connections to external domains or the Looker Marketplace. For more information, see the <a href="https://cloud.google.com/looker/docs/looker-core-create-psc#configure-outbound">Configure outbound connections</a> documentation.</p>
 <hr />
 <h2 id="2025-10-23">2025-10-23</h2>
-<h3 id="feature_46">Feature</h3>
+<h3 id="feature_47">Feature</h3>
 <p><strong>Conversational Analytics in Looker</strong></p>
 <p>The following features are available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a> for use with <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-overview">Conversational Analytics in Looker</a> instances that are running Looker 25.18 or later:</p>
 <ul>
 <li><a href="https://docs.cloud.google.com/looker/docs/events">Event and event attribute information</a> is now available in <a href="https://docs.cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#system_activity_explores">System Activity Explores</a>.</li>
 <li>A <a href="https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational_analytics">Conversational Analytics System Activity dashboard</a> is now available to surface usage data for Conversational Analytics features in Looker, including the most popular data agents, the most popular Explores that are used in conversations, and the most active users.</li>
 </ul>
-<h3 id="feature_47">Feature</h3>
+<h3 id="feature_48">Feature</h3>
 <p>Looker now supports <a href="https://docs.cloud.google.com/looker/docs/create-projects#cloning_a_public_git_repository_from_the_new_project_page">cloning a public Git repository using an <code>https://</code> URL</a>. Looker does not support cloning Git repositories using <code>git://</code> URLs.</p>
 <hr />
 <h2 id="2025-10-21">2025-10-21</h2>
-<h3 id="feature_48">Feature</h3>
+<h3 id="feature_49">Feature</h3>
 <p>The new <a href="https://status.cloud.google.com/looker">Looker Status Dashboard</a> provides real-time updates about service availability or disruptions for <a href="https://cloud.google.com/looker/docs/choosing-hosting-option#looker-hosted-pros-cons">Looker-hosted instances</a>. For more information, see the <a href="https://docs.cloud.google.com/looker/docs/status-dashboard-help">Monitor Looker status</a> documentation page.</p>
 <hr />
 <h2 id="2025-10-10">2025-10-10</h2>
-<h3 id="feature_49">Feature</h3>
+<h3 id="feature_50">Feature</h3>
 <p><strong>Conversational Analytics in Looker</strong></p>
 <p>The following features are available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a> for use with <a href="https://docs.cloud.google.com/looker/docs/studio/conversational-analytics-looker">Conversational Analytics in Looker</a> instances that are running Looker 25.18.9 or later:</p>
 <ul>
@@ -2613,7 +2617,7 @@
 <p>(This release note was updated on October 10, 2025 to correct the Looker version for this release. This release note was updated on October 23, 2025 to correct the Looker version for data agent sharing permissions.)</p>
 <hr />
 <h2 id="2025-10-08">2025-10-08</h2>
-<h3 id="feature_50">Feature</h3>
+<h3 id="feature_51">Feature</h3>
 <p><strong>Conversational Analytics in Looker</strong></p>
 <p>The following features are now available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a> for use with <a href="https://cloud.google.com/looker/docs/studio/conversational-analytics-looker">Conversational Analytics in Looker</a> instances that are running Looker 25.18 or later:</p>
 <ul>
@@ -2632,9 +2636,9 @@
 <li>Expected Looker (Google Cloud core) deployment start: <strong>Tuesday, October 7, 2025</strong></li>
 <li>Expected Looker (Google Cloud core) final deployment: <strong>Monday, October 20, 2025</strong></li>
 </ul>
-<h3 id="feature_51">Feature</h3>
-<p>You can now set the Auto Resize Value setting on single value visualizations. This setting has no effect if the Smart Single Value Text Size setting is enabled on the Admin &gt; General Settings page.</p>
 <h3 id="feature_52">Feature</h3>
+<p>You can now set the Auto Resize Value setting on single value visualizations. This setting has no effect if the Smart Single Value Text Size setting is enabled on the Admin &gt; General Settings page.</p>
+<h3 id="feature_53">Feature</h3>
 <p>The Athena JDBC driver version has been upgraded from 2.1.5 to 2.2.2. The Athena JDBC driver is used for connections to <a href="https://docs.cloud.google.com/looker/docs/db-config-amazon-athena">Amazon Athena</a>.</p>
 <h3 id="changed">Changed</h3>
 <p>Conversational Analytics users with the <code>save_agents</code> permission can now <a href="https://docs.cloud.google.com/looker/docs/studio/conversational-data-agents-looker">share data agents</a>, which lets other users chat with the data agent and its Explores. (This release note was added on October 9, 2025.)</p>
@@ -2686,35 +2690,35 @@
 <li>North Macedonia for Macedonia</li>
 <li>Timor-Leste for East Timor</li>
 </ul>
-<h3 id="feature_53">Feature</h3>
-<p>The Prerender iframes for custom visualizations feature is now generally available on the Admin &gt; Content Guardrails page.</p>
 <h3 id="feature_54">Feature</h3>
-<p>The Smart single value text size feature is now generally available on the Admin &gt; General Settings page.</p>
+<p>The Prerender iframes for custom visualizations feature is now generally available on the Admin &gt; Content Guardrails page.</p>
 <h3 id="feature_55">Feature</h3>
-<p>The API endpoint <code>search_lookml_dashboards</code> is now generally available. This endpoint is similar to the <code>search_dashboards</code> endpoint except that it searches LookML dashboards instead of user-defined dashboards.</p>
+<p>The Smart single value text size feature is now generally available on the Admin &gt; General Settings page.</p>
 <h3 id="feature_56">Feature</h3>
-<p>The Data History Playback feature is now generally available on the Admin &gt; Settings page.</p>
+<p>The API endpoint <code>search_lookml_dashboards</code> is now generally available. This endpoint is similar to the <code>search_dashboards</code> endpoint except that it searches LookML dashboards instead of user-defined dashboards.</p>
 <h3 id="feature_57">Feature</h3>
+<p>The Data History Playback feature is now generally available on the Admin &gt; Settings page.</p>
+<h3 id="feature_58">Feature</h3>
 <p>The Reduce Filter Queries feature is now generally available on the Admin &gt; Settings page.</p>
 <h3 id="breaking_4">Breaking</h3>
 <p>Looker admins can no longer create or edit individual users' API keys. Instead, from the Admin &gt; Users page, admins can enable users to manage their own API keys. Once a user has API key management enabled, they can create, view, edit, and delete their API keys from their Looker account page. <strong>Note:</strong> This item was changed on October 9, 2025 to specify that it supports Looker (Google Cloud core) only, and it was changed again on October 22, 2025 to indicate that it's a breaking change.</p>
-<h3 id="feature_58">Feature</h3>
-<p>The Prerender iframes for custom visualizations feature is now out of Labs and generally available on the Admin &gt; Content Guardrails page.</p>
 <h3 id="feature_59">Feature</h3>
-<p>The Smart single value text size feature is now out of Labs and generally available on the Admin &gt; General Settings page.</p>
+<p>The Prerender iframes for custom visualizations feature is now out of Labs and generally available on the Admin &gt; Content Guardrails page.</p>
 <h3 id="feature_60">Feature</h3>
-<p>The API endpoint <code>search_lookml_dashboards</code> is now out of Labs and generally available. This endpoint is similar to the <code>search_dashboards</code> endpoint except that it searches LookML dashboards instead of user-defined dashboards.</p>
+<p>The Smart single value text size feature is now out of Labs and generally available on the Admin &gt; General Settings page.</p>
 <h3 id="feature_61">Feature</h3>
-<p>The Data History Playback Labs feature is is now out of Labs and generally available on the Admin &gt; Settings page.</p>
+<p>The API endpoint <code>search_lookml_dashboards</code> is now out of Labs and generally available. This endpoint is similar to the <code>search_dashboards</code> endpoint except that it searches LookML dashboards instead of user-defined dashboards.</p>
 <h3 id="feature_62">Feature</h3>
+<p>The Data History Playback Labs feature is is now out of Labs and generally available on the Admin &gt; Settings page.</p>
+<h3 id="feature_63">Feature</h3>
 <p>The Reduce Filter Queries Labs feature is now is now out of Labs and generally available on the Admin &gt; Settings page.</p>
 <hr />
 <h2 id="2025-10-02">2025-10-02</h2>
-<h3 id="feature_63">Feature</h3>
+<h3 id="feature_64">Feature</h3>
 <p>The <code>sql_preamble</code> parameter now <a href="https://docs.cloud.google.com/looker/docs/reference/param-explore-sql-preamble#using_liquid_in_sql_preamble">supports Liquid statements</a>. This update is supported on Looker 25.12 and later versions.</p>
 <hr />
 <h2 id="2025-09-30">2025-09-30</h2>
-<h3 id="feature_64">Feature</h3>
+<h3 id="feature_65">Feature</h3>
 <p>The following features are coming soon for use with Conversational Analytics:</p>
 <ul>
 <li>New model-specific Looker permissions are available to <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#gemini_ca_agent_manager">manage</a> and <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#gemini_ca_agent_user">use</a> the <a href="https://docs.cloud.google.com/looker/docs/studio/conversational-data-agents-looker">Conversational Analytics data agents</a> that are created to chat with Looker Explores. You can grant these to users as part of a custom role, or use one of two new default roles, <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#conversational_analytics_agent_manager">Conversational Analytics Agent Manager</a> and <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#conversational_analytics_user">Conversational Analytics User</a>, to manage and use agents, respectively.</li>
@@ -2724,7 +2728,7 @@
 <p><strong>Note:</strong> This release note was published prematurely. It was amended on October 8, 2025 to reflect that these features are coming soon and amended on October 14, 2025 to indicate that the features <a href="https://docs.cloud.google.com/looker/docs/release-notes#October_10_2025">have been launched</a>.</p>
 <hr />
 <h2 id="2025-09-23">2025-09-23</h2>
-<h3 id="feature_65">Feature</h3>
+<h3 id="feature_66">Feature</h3>
 <p>You can now <a href="https://cloud.google.com/looker/docs/connect-ide-to-looker-using-mcp-toolbox">connect to your Looker instance with the Gemini CLI</a> using a dedicated <a href="https://github.com/gemini-cli-extensions/looker">Gemini extension</a>. The Gemini extension can run queries, create Looks and dashboards, and retrieve elements of your LookML models.</p>
 <hr />
 <h2 id="2025-09-10">2025-09-10</h2>
@@ -2738,15 +2742,15 @@
 </ul>
 <h3 id="breaking_5">Breaking</h3>
 <p>Looker no longer supports connections to Firebolt.</p>
-<h3 id="feature_66">Feature</h3>
-<p>Suggest queries now respect the concurrency limit in the connection configuration.</p>
 <h3 id="feature_67">Feature</h3>
-<p>The Spanner JDBC Driver has been updated to version 2.32.1. This driver is used for connections to <a href="https://cloud.google.com/looker/docs/db-config-cloud-spanner">Google Spanner</a>.</p>
+<p>Suggest queries now respect the concurrency limit in the connection configuration.</p>
 <h3 id="feature_68">Feature</h3>
-<p>The <a href="https://cloud.google.com/looker/docs/excel-connector">Looker-Excel Connector</a> is now generally available. When your Looker admin enables the Looker-Excel Connector on the BI Connections admin page, Looker Explores display the Open in Excel option in the Explore gear menu. This option downloads the Explore results to a Windows PC in a format that Microsoft Excel recognizes.</p>
+<p>The Spanner JDBC Driver has been updated to version 2.32.1. This driver is used for connections to <a href="https://cloud.google.com/looker/docs/db-config-cloud-spanner">Google Spanner</a>.</p>
 <h3 id="feature_69">Feature</h3>
-<p>The <a href="https://cloud.google.com/looker/docs/powerbi-connector">Looker–Power BI Connector</a> is now supported for <a href="https://cloud.google.com/looker/docs/customer-hosted-installation-steps">customer-hosted Looker instances</a> and for Looker (Google Cloud core) instances that use <a href="https://cloud.google.com/looker/docs/looker-core-networking-options#private_ip_connections">private connections</a>. <strong>Note:</strong> This item was added on September 19, 2025.</p>
+<p>The <a href="https://cloud.google.com/looker/docs/excel-connector">Looker-Excel Connector</a> is now generally available. When your Looker admin enables the Looker-Excel Connector on the BI Connections admin page, Looker Explores display the Open in Excel option in the Explore gear menu. This option downloads the Explore results to a Windows PC in a format that Microsoft Excel recognizes.</p>
 <h3 id="feature_70">Feature</h3>
+<p>The <a href="https://cloud.google.com/looker/docs/powerbi-connector">Looker–Power BI Connector</a> is now supported for <a href="https://cloud.google.com/looker/docs/customer-hosted-installation-steps">customer-hosted Looker instances</a> and for Looker (Google Cloud core) instances that use <a href="https://cloud.google.com/looker/docs/looker-core-networking-options#private_ip_connections">private connections</a>. <strong>Note:</strong> This item was added on September 19, 2025.</p>
+<h3 id="feature_71">Feature</h3>
 <p>The <a href="https://cloud.google.com/looker/docs/tableau-connector">Looker–Tableau BI Connector</a> is now supported for <a href="https://cloud.google.com/looker/docs/customer-hosted-installation-steps">customer-hosted Looker instances</a> and for Looker (Google Cloud core) instances that use <a href="https://cloud.google.com/looker/docs/looker-core-networking-options#private_ip_connections">private connections</a>. <strong>Note:</strong> This item was added on September 19, 2025.</p>
 <h3 id="fixed_59">Fixed</h3>
 <p>Looker 25.16 contains the following accessibility improvements:</p>
@@ -2802,17 +2806,17 @@
 <p>An issue has been fixed where updating a customer-hosted instance could fail with the following error message: <code>Data import is in progress and some features will not be available</code>. This feature now performs as expected.</p>
 <h3 id="fixed_81">Fixed</h3>
 <p>An issue has been fixed where SQL Runner could fail to return new results after running a second query. This feature now performs as expected.</p>
-<h3 id="feature_71">Feature</h3>
-<p>A new Labs feature, Favoriting LookML Dashboards, enables LookML dashboards to be <a href="https://cloud.google.com/looker/docs/finding-content#navigating_to_content_in_folders">marked as favorites</a> causing the LookML dashboards to appear on the Looker Favorites tab.</p>
 <h3 id="feature_72">Feature</h3>
+<p>A new Labs feature, Favoriting LookML Dashboards, enables LookML dashboards to be <a href="https://cloud.google.com/looker/docs/finding-content#navigating_to_content_in_folders">marked as favorites</a> causing the LookML dashboards to appear on the Looker Favorites tab.</p>
+<h3 id="feature_73">Feature</h3>
 <p>The Full Screen Visualizations Labs feature is now generally available. You can turn it on and off on the Admin - General page.</p>
 <h3 id="fixed_82">Fixed</h3>
 <p>An issue has been fixed where updating the Host URL in the Admin - Settings page could fail to be saved. This feature now performs as expected.</p>
 <h3 id="fixed_83">Fixed</h3>
 <p>An issue has been fixed where visualization templates could be edited by API users without the need for the <code>explore</code> permission.</p>
-<h3 id="feature_73">Feature</h3>
-<p>Looker (Google Cloud core) 90-day trial instances are now available.</p>
 <h3 id="feature_74">Feature</h3>
+<p>Looker (Google Cloud core) 90-day trial instances are now available.</p>
+<h3 id="feature_75">Feature</h3>
 <p>The Full Screen Visualizations feature is now generally available. You can turn it on and off on the Admin - General page.</p>
 <hr />
 <h2 id="2025-08-13">2025-08-13</h2>
@@ -2824,24 +2828,24 @@
 <li>Expected Looker (Google Cloud core) deployment start: <strong>Monday, August 18, 2025</strong></li>
 <li>Expected Looker (Google Cloud core) final deployment: <strong>Monday, September 1, 2025</strong></li>
 </ul>
-<h3 id="feature_75">Feature</h3>
-<p>For projects that are enabled for the <a href="https://cloud.google.com/looker/docs/reference/param-manifest-new-lookml-runtime">New LookML Runtime</a>, the <a href="https://cloud.google.com/looker/docs/reference/param-field"><code>synonyms</code> parameter</a> is now supported. The <code>synonyms</code> parameter lets LookML developers provide additional context about their data that will help <a href="https://cloud.google.com/looker/docs/studio/conversational-analytics">Conversational Analytics</a> and other features to answer questions more accurately.</p>
 <h3 id="feature_76">Feature</h3>
-<p>The <a href="https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#api_usage_hourly">API Usage Hourly System Activity Explore</a> is now available. This Explore provides a detailed, hourly summary of the volume and performance of API calls that are made to your Looker instance.</p>
+<p>For projects that are enabled for the <a href="https://cloud.google.com/looker/docs/reference/param-manifest-new-lookml-runtime">New LookML Runtime</a>, the <a href="https://cloud.google.com/looker/docs/reference/param-field"><code>synonyms</code> parameter</a> is now supported. The <code>synonyms</code> parameter lets LookML developers provide additional context about their data that will help <a href="https://cloud.google.com/looker/docs/studio/conversational-analytics">Conversational Analytics</a> and other features to answer questions more accurately.</p>
 <h3 id="feature_77">Feature</h3>
-<p>Denodo 9 databases are now supported.</p>
+<p>The <a href="https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#api_usage_hourly">API Usage Hourly System Activity Explore</a> is now available. This Explore provides a detailed, hourly summary of the volume and performance of API calls that are made to your Looker instance.</p>
 <h3 id="feature_78">Feature</h3>
-<p>The Maria JDBC Driver has been updated to version 3.5.3. This driver is used for connections to <a href="https://cloud.google.com/looker/docs/db-config-mysql-mariadb-singlestore">MySQL, MySQL 8.0.12+, MariaDB, SingleStore, SingleStore 7+</a>, <a href="https://cloud.google.com/looker/docs/db-config-amazon-aurora-mysql">Amazon Aurora MySQL</a>, <a href="https://cloud.google.com/looker/docs/db-config-google-cloud-sql">Google Cloud SQL</a>, and HyperSQL. <strong>NOTE:</strong> This item was updated on September 10, 2025.</p>
+<p>Denodo 9 databases are now supported.</p>
 <h3 id="feature_79">Feature</h3>
-<p>The Athena driver has been updated to version 2.2.1. This driver is used for connections to <a href="https://cloud.google.com/looker/docs/db-config-amazon-athena">Amazon Athena</a>. <strong>Note</strong>: This change was made in Looker 25.10. This item was updated on August 18, 2025. <strong>NOTE:</strong> This item was updated on September 10, 2025.</p>
+<p>The Maria JDBC Driver has been updated to version 3.5.3. This driver is used for connections to <a href="https://cloud.google.com/looker/docs/db-config-mysql-mariadb-singlestore">MySQL, MySQL 8.0.12+, MariaDB, SingleStore, SingleStore 7+</a>, <a href="https://cloud.google.com/looker/docs/db-config-amazon-aurora-mysql">Amazon Aurora MySQL</a>, <a href="https://cloud.google.com/looker/docs/db-config-google-cloud-sql">Google Cloud SQL</a>, and HyperSQL. <strong>NOTE:</strong> This item was updated on September 10, 2025.</p>
 <h3 id="feature_80">Feature</h3>
+<p>The Athena driver has been updated to version 2.2.1. This driver is used for connections to <a href="https://cloud.google.com/looker/docs/db-config-amazon-athena">Amazon Athena</a>. <strong>Note</strong>: This change was made in Looker 25.10. This item was updated on August 18, 2025. <strong>NOTE:</strong> This item was updated on September 10, 2025.</p>
+<h3 id="feature_81">Feature</h3>
 <p>The Databricks JDBC driver has been upgraded to version 2.7.3. This driver is used for connections to <a href="https://cloud.google.com/looker/docs/db-config-databricks">Databricks</a>.
 <strong>Note</strong>: This change was made in Looker 25.10. This item was updated on August 18, 2025 and September 10, 2025.</p>
-<h3 id="feature_81">Feature</h3>
-<p>A new JavaScript event, <a href="https://cloud.google.com/looker/docs/embedded-javascript-events#dashboardtilemerge"><code>dashboard:tile:merge</code></a>, has been added.</p>
 <h3 id="feature_82">Feature</h3>
-<p>Looker now displays a notice to instance admins if the instance license has been revoked. Admins will have 14 days to correct any problems before the instance will be shut down.</p>
+<p>A new JavaScript event, <a href="https://cloud.google.com/looker/docs/embedded-javascript-events#dashboardtilemerge"><code>dashboard:tile:merge</code></a>, has been added.</p>
 <h3 id="feature_83">Feature</h3>
+<p>Looker now displays a notice to instance admins if the instance license has been revoked. Admins will have 14 days to correct any problems before the instance will be shut down.</p>
+<h3 id="feature_84">Feature</h3>
 <p>The following <a href="https://cloud.google.com/looker/docs/events">Looker events</a> are now visible in the <a href="https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#event">System Activity Events Explore</a>:</p>
 <ul>
 <li><code>create_project</code></li>
@@ -2851,13 +2855,13 @@
 <li><code>delete_repository_credential</code></li>
 <li><code>update_repository_credential</code></li>
 </ul>
-<h3 id="feature_84">Feature</h3>
-<p>A new Customer Engineer Advanced Editor <a href="https://cloud.google.com/looker/docs/admin-panel-users-roles#customer_engineer_advanced_editor">default role</a> has been added and can be used to <a href="https://cloud.google.com/looker/docs/admin-panel-general-support-access">grant support access</a> to Google Cloud customer engineers.</p>
 <h3 id="feature_85">Feature</h3>
-<p>The <a href="https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#query_concurrency">Query Concurrency System Activity Explore</a> is now available. This Explore can help you identify periods of high load and investigate performance bottlenecks that are related to database connection limits. <strong>Note:</strong> This feature was included in the Looker 25.12 release notes but its launch was delayed.</p>
+<p>A new Customer Engineer Advanced Editor <a href="https://cloud.google.com/looker/docs/admin-panel-users-roles#customer_engineer_advanced_editor">default role</a> has been added and can be used to <a href="https://cloud.google.com/looker/docs/admin-panel-general-support-access">grant support access</a> to Google Cloud customer engineers.</p>
 <h3 id="feature_86">Feature</h3>
-<p>New visualizations have been added to the <a href="https://cloud.google.com/looker/docs/system-activity-dashboards#database_performance">Database Performance dashboard</a> and the <a href="https://cloud.google.com/looker/docs/system-activity-dashboards#instance_performance">Instance Performance dashboard</a> in System Activity.</p>
+<p>The <a href="https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#query_concurrency">Query Concurrency System Activity Explore</a> is now available. This Explore can help you identify periods of high load and investigate performance bottlenecks that are related to database connection limits. <strong>Note:</strong> This feature was included in the Looker 25.12 release notes but its launch was delayed.</p>
 <h3 id="feature_87">Feature</h3>
+<p>New visualizations have been added to the <a href="https://cloud.google.com/looker/docs/system-activity-dashboards#database_performance">Database Performance dashboard</a> and the <a href="https://cloud.google.com/looker/docs/system-activity-dashboards#instance_performance">Instance Performance dashboard</a> in System Activity.</p>
+<h3 id="feature_88">Feature</h3>
 <p>The following updates have been made for <a href="https://cloud.google.com/looker/docs/period-over-period">Period-over-period (PoP) measures</a>:</p>
 <ul>
 <li>The PoP measure feature is out of Preview and is now generally available. <strong>Note:</strong> This item was added on August 21, 2025.</li>
@@ -2918,7 +2922,7 @@
 <p>An issue has been fixed where the new dashboard name wasn't preserved when a LookML dashboard was copied to a folder. This feature now performs as expected.</p>
 <h3 id="fixed_102">Fixed</h3>
 <p>An issue has been fixed where unfavoriting a dashboard or Look on a board would not persist. This feature now performs as expected.</p>
-<h3 id="feature_88">Feature</h3>
+<h3 id="feature_89">Feature</h3>
 <p><strong>Note:</strong> This item was removed on August 27, 2025.</p>
 <hr />
 <h2 id="2025-07-25">2025-07-25</h2>
@@ -2940,11 +2944,11 @@
 </ul>
 <h3 id="breaking_6">Breaking</h3>
 <p>Because of security concerns, text tiles no longer support the <code>form</code> and <code>input</code> Markdown elements.</p>
-<h3 id="feature_89">Feature</h3>
-<p>The Oracle JDBC driver has been updated to version 19.25.</p>
 <h3 id="feature_90">Feature</h3>
-<p>For faster response time for queries in BigQuery, Looker will execute BigQuery queries by using <a href="https://cloud.google.com/bigquery/docs/reference/rest/v2/jobs/query#jobcreationmode"><code>jobCreationMode=JOB_CREATION_OPTIONAL</code></a>. If BigQuery can return immediate results, it will run the query without creating a job, so the record in the Looker query history will have a BigQuery query ID instead of a BigQuery job ID. See the <a href="https://cloud.google.com/looker/docs/query-performance-metrics#bigquery_bi_engine_metrics">Understanding query performance metrics</a> documentation page for more information about the BigQuery BI Engine metrics.</p>
+<p>The Oracle JDBC driver has been updated to version 19.25.</p>
 <h3 id="feature_91">Feature</h3>
+<p>For faster response time for queries in BigQuery, Looker will execute BigQuery queries by using <a href="https://cloud.google.com/bigquery/docs/reference/rest/v2/jobs/query#jobcreationmode"><code>jobCreationMode=JOB_CREATION_OPTIONAL</code></a>. If BigQuery can return immediate results, it will run the query without creating a job, so the record in the Looker query history will have a BigQuery query ID instead of a BigQuery job ID. See the <a href="https://cloud.google.com/looker/docs/query-performance-metrics#bigquery_bi_engine_metrics">Understanding query performance metrics</a> documentation page for more information about the BigQuery BI Engine metrics.</p>
+<h3 id="feature_92">Feature</h3>
 <p>The <a href="https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#query_concurrency">Query Concurrency System Activity Explore</a> is now available. This Explore can help you identify periods of high load and investigate performance bottlenecks that are related to database connection limits. <strong>Note:</strong> This feature launch was delayed and is now available in Looker 25.14. This item was updated on August 13, 2025.</p>
 <h3 id="fixed_103">Fixed</h3>
 <p>An issue has been fixed where certain API calls would fail to time out and would instead run indefinitely. <strong>Note:</strong> This item was added August 18, 2025.</p>
@@ -3012,13 +3016,13 @@
 <p>An issue has been fixed where installing multiple drivers for the same database type on a customer-hosted instance could cause Looker to display an error. This feature now performs as expected.</p>
 <hr />
 <h2 id="2025-06-30">2025-06-30</h2>
-<h3 id="feature_92">Feature</h3>
-<p>The Fast Dev Mode Transition feature is out of Labs and is now generally available. The Fast Dev Mode Transition feature improves the performance of <a href="https://cloud.google.com/looker/docs/dev-mode-prod-mode#development_mode">Development Mode</a> on your instance by loading LookML projects in read-only mode until a developer clicks the <a href="https://cloud.google.com/looker/docs/git-command-reference#create-developer-copy">Create Developer Copy</a> button for the project. <strong>Note:</strong> This item was added on July 8, 2025.</p>
 <h3 id="feature_93">Feature</h3>
+<p>The Fast Dev Mode Transition feature is out of Labs and is now generally available. The Fast Dev Mode Transition feature improves the performance of <a href="https://cloud.google.com/looker/docs/dev-mode-prod-mode#development_mode">Development Mode</a> on your instance by loading LookML projects in read-only mode until a developer clicks the <a href="https://cloud.google.com/looker/docs/git-command-reference#create-developer-copy">Create Developer Copy</a> button for the project. <strong>Note:</strong> This item was added on July 8, 2025.</p>
+<h3 id="feature_94">Feature</h3>
 <p>The Fast Dev Mode Transition feature is now available for Looker (Google Cloud core). The Fast Dev Mode Transition feature improves the performance of <a href="https://cloud.google.com/looker/docs/dev-mode-prod-mode#development_mode">Development Mode</a> on your instance by loading LookML projects in read-only mode until a developer clicks the <a href="https://cloud.google.com/looker/docs/git-command-reference#create-developer-copy">Create Developer Copy</a> button for the project. <strong>Note:</strong> This item was added on July 8, 2025.</p>
 <hr />
 <h2 id="2025-06-24">2025-06-24</h2>
-<h3 id="feature_94">Feature</h3>
+<h3 id="feature_95">Feature</h3>
 <p>The following feature is generally available for Looker reports:</p>
 <ul>
 <li>The Looker connector can now connect to a <a href="https://cloud.google.com/looker/docs/looker-core-networking-options#private_ip_connections">private IP (private services access) only</a> Looker (Google Cloud core) instance or to a <a href="https://cloud.google.com/looker/docs/looker-core-networking-options#psc">private IP (Private Service Connect)</a> Looker (Google Cloud core) instance <a href="https://cloud.google.com/looker/docs/looker-core-connect-to-private-ip-lsp-sil">using the Looker instance ID</a>.</li>
@@ -3041,21 +3045,21 @@
 <li>Support for additional Looker embedded content has been added for Looker reports and query visualizations.</li>
 </ul>
 <p><strong>Note:</strong> This item was added on June 13, 2025.</p>
-<h3 id="feature_95">Feature</h3>
-<p>For period-over-period (PoP) measures, a new subparameter, <a href="https://cloud.google.com/looker/docs/period-over-period#value_to_date"><code>value_to_date</code></a>, is available. When a PoP measure is defined with <code>value_to_date:yes</code>, Looker will calculate the amount of time in the current timeframe at the time that the query is run and apply that amount of time when it calculates the values for previous periods.</p>
 <h3 id="feature_96">Feature</h3>
-<p>The Firebolt JDBC driver has been updated to version 3.5.0.</p>
+<p>For period-over-period (PoP) measures, a new subparameter, <a href="https://cloud.google.com/looker/docs/period-over-period#value_to_date"><code>value_to_date</code></a>, is available. When a PoP measure is defined with <code>value_to_date:yes</code>, Looker will calculate the amount of time in the current timeframe at the time that the query is run and apply that amount of time when it calculates the values for previous periods.</p>
 <h3 id="feature_97">Feature</h3>
-<p>The Hive JDBC driver has been updated to version 4.0.1.</p>
+<p>The Firebolt JDBC driver has been updated to version 3.5.0.</p>
 <h3 id="feature_98">Feature</h3>
-<p>The MS SQL JDBC driver has been updated to version 12.10.0.</p>
+<p>The Hive JDBC driver has been updated to version 4.0.1.</p>
 <h3 id="feature_99">Feature</h3>
-<p>The Teradata JDBC driver has been updated to version 20.00.00.45.</p>
+<p>The MS SQL JDBC driver has been updated to version 12.10.0.</p>
 <h3 id="feature_100">Feature</h3>
-<p>The Vertica JDBC driver has been updated to version 24.2.0-1.</p>
+<p>The Teradata JDBC driver has been updated to version 20.00.00.45.</p>
 <h3 id="feature_101">Feature</h3>
-<p>The new Content Guardrails admin panel lets Looker admins limit both the ability for users to add or execute merged results queries on dashboards and the use of the dashboard auto-refresh option. Limiting merged results queries and dashboard auto-refreshes can reduce the number of queries that are sent to the database and improve dashboard performance. <strong>Note:</strong> This item was added on June 12, 2025.</p>
+<p>The Vertica JDBC driver has been updated to version 24.2.0-1.</p>
 <h3 id="feature_102">Feature</h3>
+<p>The new Content Guardrails admin panel lets Looker admins limit both the ability for users to add or execute merged results queries on dashboards and the use of the dashboard auto-refresh option. Limiting merged results queries and dashboard auto-refreshes can reduce the number of queries that are sent to the database and improve dashboard performance. <strong>Note:</strong> This item was added on June 12, 2025.</p>
+<h3 id="feature_103">Feature</h3>
 <p>The Looker <a href="https://cloud.google.com/looker/docs/continuous-integration">Continuous Integration (CI)</a> features let you run tests on your LookML project to deliver more reliable, efficient, and user-friendly data experiences. You can use the CI validators to catch issues with SQL, data test, content, and LookML before they hit production to verify your LookML and prevent query errors for your users. You can also configure the CI validators to run automatically when a pull request is submitted to your LookML repository. <strong>Note:</strong> This item was added on June 23, 2025.</p>
 <h3 id="fixed_133">Fixed</h3>
 <p>This release contains the following accessibility improvements:</p>
@@ -3102,11 +3106,11 @@
 <p>An issue has been fixed where changes to PDT override settings would not be saved. This feature now performs as expected.</p>
 <h3 id="fixed_152">Fixed</h3>
 <p>An issue has been fixed where PDTs could fail to rebuild with the following error message: <code>undefined method trace_id_hex</code>. This feature now performs as expected.</p>
-<h3 id="feature_103">Feature</h3>
+<h3 id="feature_104">Feature</h3>
 <p>You can now <a href="https://cloud.google.com/looker/docs/embed-reports">embed Looker reports</a> on Looker (original) instances when Looker reports and the Embed Looker reports Labs features are enabled for your instance. Looker reports are available in preview.</p>
 <h3 id="fixed_153">Fixed</h3>
 <p>An issue has been fixed where LDAP authentication could fail with the following error message: <code>no implicit conversion of Hash into String</code>. This feature now performs as expected.</p>
-<h3 id="feature_104">Feature</h3>
+<h3 id="feature_105">Feature</h3>
 <p>The <a href="https://cloud.google.com/looker/docs/studio/conversational-analytics-code-interpreter">Code Interpreter in Conversational Analytics</a> is now available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. The Code Interpreter translates your natural language questions into Python code and executes that code to provide advanced analysis and visualizations. The Code Interpreter is disabled by default. Admins of Looker (Google Cloud core) instances can manage enablement for the Code Interpreter on the <a href="https://cloud.google.com/looker/docs/looker-core-admin-gemini#enable-ci-core">Gemini in Looker admin page</a>. <strong>Note:</strong> This item was added on June 23, 2025.</p>
 <hr />
 <h2 id="2025-06-09">2025-06-09</h2>
@@ -3118,7 +3122,7 @@
 </ul>
 <p>Instances that are hosted in the <a href="https://cloud.google.com/looker/docs/looker-original-locations">EMEA region</a> and those that are enrolled in Looker's <a href="https://cloud.google.com/looker/docs/standard-extended-support-release-program-overview">Extended Support Release (ESR) program</a> are exempt from automatic enablement.</p>
 <p>Looker admins can still manage Gemini in Looker enablement manually on the <a href="https://cloud.google.com/looker/docs/admin-panel-platform-gil">Gemini in Looker</a> page in the Admin panel.</p>
-<h3 id="feature_105">Feature</h3>
+<h3 id="feature_106">Feature</h3>
 <p>When the <a href="https://cloud.google.com/looker/docs/admin-panel-general-settings#gemini_default_enablement">Automated Gemini in Looker enablement and user management</a> setting is enabled, the Gemini Default Users group
 is created automatically for instances that use an <a href="https://cloud.google.com/looker/docs/access-levels#open_and_closed_systems_of_access_to_folders">open system configuration</a>. The Gemini Default Users group is populated automatically with all existing users and any new users who are added to the instance.</p>
 <hr /></div>
@@ -3132,6 +3136,9 @@ is created automatically for instances that use an <a href="https://cloud.google
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#looker">Looker</a></li>
+          <li class="nav-item">
+            <a href="#2026-01-28" class="nav-link">2026-01-28</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-01-26" class="nav-link">2026-01-26</a>
           </li>

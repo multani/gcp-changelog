@@ -1,5 +1,14 @@
 # Cloud Deploy
 
+## 2026-01-23
+
+### Change
+
+The limit on deployment minutes per delivery pipeline has been removed. The only
+quota now enforced in Cloud Deploy is the system limit of 18,000 API
+requests per minute per region. [Learn more](https://docs.cloud.google.com/deploy/quotas).
+
+---
 ## 2025-12-12
 
 ### Change

@@ -1,5 +1,29 @@
 # Google SecOps SIEM
 
+## 2026-01-29
+
+### Feature
+
+**Enhanced rule observability for detections**
+
+Google SecOps now provides increased visibility into detection timing to help
+improve dashboard and reporting accuracy. You can now easily distinguish whether
+a detection was generated during a primary rule run or through a
+[rule replay](https://docs.cloud.google.com/chronicle/docs/detection/rule-replays). This data is available
+in dashboards and as a filter in the **Alerts** lister page using the field
+`collection.detection_timing_details`.
+
+### Feature
+
+**Rule observability for detections and alerts**
+
+New metadata is now included in all detection and alert objects, indicating if
+the detection was produced during a primary rule run or through a
+[rule replay](https://docs.cloud.google.com/chronicle/docs/detection/rule-replays). This information can be
+used in dashboards and as a filter in the **Alerts** lister page using the field
+`collection.detection_timing_details`.
+
+---
 ## 2026-01-26
 
 ### Feature

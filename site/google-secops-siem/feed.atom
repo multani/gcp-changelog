@@ -2,9 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps SIEM</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps SIEM</subtitle>
-  <updated>2026-01-26T00:00:00+00:00</updated>
+  <updated>2026-01-29T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops-siem</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops-siem/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2026-01-29:feature:0</id>
+    <published>2026-01-29T00:00:00+00:00</published>
+    <updated>2026-01-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Enhanced rule observability for detections</strong></p>
+<p>Google SecOps now provides increased visibility into detection timing to help
+improve dashboard and reporting accuracy. You can now easily distinguish whether
+a detection was generated during a primary rule run or through a
+<a href="https://docs.cloud.google.com/chronicle/docs/detection/rule-replays">rule replay</a>. This data is available
+in dashboards and as a filter in the <strong>Alerts</strong> lister page using the field
+<code>collection.detection_timing_details</code>.</p>]]></content>
+    <summary>Google SecOps now offers enhanced visibility into detection timing, allowing you to differentiate between primary rule runs and rule replays. This new data, available in dashboards and as a filter in the Alerts lister, improves dashboard and reporting accuracy.</summary>
+    <title>Feature: Improved Detection Observability</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2026-01-29:feature:1</id>
+    <published>2026-01-29T00:00:00+00:00</published>
+    <updated>2026-01-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Rule observability for detections and alerts</strong></p>
+<p>New metadata is now included in all detection and alert objects, indicating if
+the detection was produced during a primary rule run or through a
+<a href="https://docs.cloud.google.com/chronicle/docs/detection/rule-replays">rule replay</a>. This information can be
+used in dashboards and as a filter in the <strong>Alerts</strong> lister page using the field
+<code>collection.detection_timing_details</code>.</p>]]></content>
+    <summary>New metadata in detection and alert objects indicates if the detection was produced during a primary rule run or a rule replay. This information can be used for filtering and in dashboards via the 'collection.detection_timing_details' field.</summary>
+    <title>Feature: Detection and Alert Rule Observability</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

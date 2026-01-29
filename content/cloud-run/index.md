@@ -1,5 +1,12 @@
 # Cloud Run
 
+## 2026-01-27
+
+### Feature
+
+Support for [.NET 10 runtime](https://docs.cloud.google.com/run/docs/runtime-support#.net) is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-01-22
 
 ### Feature

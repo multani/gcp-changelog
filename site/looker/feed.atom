@@ -45,26 +45,27 @@
     <id>urn:github:multani:gcp-changelog:looker:2026-01-26:feature:2</id>
     <published>2026-01-26T00:00:00+00:00</published>
     <updated>2026-01-26T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore"><strong>Self-service Explores</strong> admin page</a> now supports a connection test button so that Looker admins can verify that the BigQuery connection is able to support self-service Explores.</p>]]></content>
-    <summary>Looker admins can now test BigQuery connections directly from the Self-service Explores admin page. This feature ensures that your connections are ready to support self-service Explores, improving setup and reliability.</summary>
-    <title>Feature: Connection Test for Self-service Explores</title>
+    <content type="html"><![CDATA[<p>In Looker 26.0, the <a href="https://docs.cloud.google.com/looker/docs/continuous-integration">Continuous Integration (CI)</a> feature has been updated for better integration with the Looker user interface:</p>
+<ul>
+<li>During the Looker 26.0 release, your Looker instance will be migrated to the new version of Looker CI. The migration will take a few minutes.</li>
+<li>While your instance is migrating, any existing CI suites will not appear on the CI <a href="https://docs.cloud.google.com/looker/docs/ci-create-suite#creating_a_ci_suite"><strong>Suites</strong></a> page and the history on the CI <a href="https://docs.cloud.google.com/looker/docs/ci-view-results"><strong>Runs</strong></a> will be empty. During this time, do not create new suites or initiate manual runs.</li>
+<li>When the migration is complete, the <strong>Suites</strong> and <strong>Runs</strong> pages will be repopulated.</li>
+<li>If you encounter an issue during the migration, please report it using the <a href="https://docs.google.com/forms/d/e/1FAIpQLSed30eICYruU45R8WZQH6hIui28xtdDnejfetzpLHQ5PK0ZeA/viewform?usp=dialog">Looker Continuous Integration - Preview Issue Tracker form</a>.</li>
+</ul>
+<p>In addition, Looker Continuous Integration features the following updates:</p>
+<ul>
+<li>Your Looker admin no longer needs to manually add CI users. In Looker 26.0, once your Looker instance is <a href="https://docs.cloud.google.com/looker/docs/continuous-integration#enable-ci">enabled for CI</a> (or once your instance is updated to 26.0 if your instance was already enabled for CI), Looker CI users are created automatically. Looker CI users are created in the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-groups#ci-users">Looker CI Users user group</a> with the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#ci-users">Looker CI Users role</a>. A Looker admin can view the Looker CI users from the <strong>Service Accounts</strong> tab of the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-users"><strong>Users</strong></a> admin page.</li>
+<li>A new <a href="https://docs.cloud.google.com/looker/docs/admin-panel-platform-ci#github-table"><strong>GitHub</strong> table</a> on the <strong>Continuous Integration</strong> Admin page lists the GitHub repositories that have been granted access to the Looker CI GitHub application, which enables Looker CI to <a href="https://docs.cloud.google.com/looker/docs/ci-create-suite#triggers">trigger automatically when pull requests are created</a>.</li>
+</ul>
+<p><strong>Note:</strong> This item was added on January 28, 2026.</p>]]></content>
+    <summary>Looker 26.0 introduces enhanced Continuous Integration (CI) features with improved UI integration and automatic user creation for admins. This update streamlines CI setup and management, offering a more seamless experience for developers. The changes also include a new GitHub table for better repository management and automatic trigger capabilities.</summary>
+    <title>Feature: Updated Continuous Integration in Looker 26.0</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-01-26:announcement:3</id>
-    <published>2026-01-26T00:00:00+00:00</published>
-    <updated>2026-01-26T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Looker 26.0</strong> includes the following feature updates, which will start rolling out on January 26, 2026:</p>]]></content>
-    <summary>Looker 26.0 is set to release new feature updates starting January 26, 2026. This release brings enhancements designed to improve the Looker experience for users. Stay tuned for more details on the specific improvements.</summary>
-    <title>Announcement: Looker 26.0 Feature Updates Rolling Out Soon</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-01-26:feature:4</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-26:feature:3</id>
     <published>2026-01-26T00:00:00+00:00</published>
     <updated>2026-01-26T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in preview, the <a href="https://docs.cloud.google.com/looker/docs/git-options#configuration"><strong>Configuration</strong> tab of the <strong>Projects Settings</strong> page</a> in the Looker IDE contains a <strong>Delete Developer Copy</strong> button that lets LookML developers delete their local developer copy of the project's Git repository. See the <a href="https://docs.cloud.google.com/looker/docs/version-control-and-deploying-changes#delete-dev-copy">Using version control and deploying</a> documentation page for details.</p>]]></content>
@@ -75,7 +76,29 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-01-26:feature:5</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-26:feature:4</id>
+    <published>2026-01-26T00:00:00+00:00</published>
+    <updated>2026-01-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore"><strong>Self-service Explores</strong> admin page</a> now supports a connection test button so that Looker admins can verify that the BigQuery connection is able to support self-service Explores.</p>]]></content>
+    <summary>Looker admins can now test BigQuery connections directly from the Self-service Explores admin page. This feature ensures that your connections are ready to support self-service Explores, improving setup and reliability.</summary>
+    <title>Feature: Connection Test for Self-service Explores</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-26:announcement:5</id>
+    <published>2026-01-26T00:00:00+00:00</published>
+    <updated>2026-01-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Looker 26.0</strong> includes the following feature updates, which will start rolling out on January 26, 2026:</p>]]></content>
+    <summary>Looker 26.0 is set to release new feature updates starting January 26, 2026. This release brings enhancements designed to improve the Looker experience for users. Stay tuned for more details on the specific improvements.</summary>
+    <title>Announcement: Looker 26.0 Feature Updates Rolling Out Soon</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-26:feature:6</id>
     <published>2026-01-26T00:00:00+00:00</published>
     <updated>2026-01-26T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#tabbed-dashboards">Tabbed Dashboards Labs feature</a> is now available. The Tabbed Dashboards Labs feature lets dashboard editors organize dashboard content across multiple tabs within a single dashboard. Adding tabs to dashboards lets you do the following:</p>
@@ -93,7 +116,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-01-26:feature:6</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-26:feature:7</id>
     <published>2026-01-26T00:00:00+00:00</published>
     <updated>2026-01-26T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#dashboard-filter-enhancements">Dashboard Filter Enhancements Labs feature</a> is now available. The Dashboard Filter Enhancements Labs feature includes the following improvements:</p>
@@ -111,7 +134,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-01-26:feature:7</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-26:feature:8</id>
     <published>2026-01-26T00:00:00+00:00</published>
     <updated>2026-01-26T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#custom-tooltips">Custom Tooltips Labs feature</a> is now available. The Custom Tooltips Labs feature lets you configure tooltips within the Explore <a href="https://docs.cloud.google.com/looker/docs/creating-visualizations#quick_guide">visualization editor</a> using a combination of UI settings and an HTML editor that supports Liquid templating.</p>

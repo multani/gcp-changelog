@@ -1,5 +1,20 @@
 # Spanner
 
+## 2026-01-28
+
+### Feature
+
+Spanner supports the following compression functions:
+
+* [`ZSTD_COMPRESS`](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/compression-functions#zstd_compress)
+* [`ZSTD_DECOMPRESS_TO_BYTES`](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/compression-functions#zstd_decompress_to_bytes)
+* [`ZSTD_DECOMPRESS_TO_STRING`](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/compression-functions#zstd_decompress_to_string)
+
+These functions use the Zstandard (Zstd) lossless data compression algorithm to
+compress and decompress `STRING` or `BYTES` values. For more information, see
+[Compression functions](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/compression-functions).
+
+---
 ## 2026-01-26
 
 ### Feature

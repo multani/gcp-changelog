@@ -2,9 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Spanner</title>
   <subtitle>Changelog for Google Cloud product: Spanner</subtitle>
-  <updated>2026-01-26T00:00:00+00:00</updated>
+  <updated>2026-01-28T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:spanner</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/spanner/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2026-01-28:feature:0</id>
+    <published>2026-01-28T00:00:00+00:00</published>
+    <updated>2026-01-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Spanner supports the following compression functions:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/spanner/docs/reference/standard-sql/compression-functions#zstd_compress"><code>ZSTD_COMPRESS</code></a></li>
+<li><a href="https://docs.cloud.google.com/spanner/docs/reference/standard-sql/compression-functions#zstd_decompress_to_bytes"><code>ZSTD_DECOMPRESS_TO_BYTES</code></a></li>
+<li><a href="https://docs.cloud.google.com/spanner/docs/reference/standard-sql/compression-functions#zstd_decompress_to_string"><code>ZSTD_DECOMPRESS_TO_STRING</code></a></li>
+</ul>
+<p>These functions use the Zstandard (Zstd) lossless data compression algorithm to
+compress and decompress <code>STRING</code> or <code>BYTES</code> values. For more information, see
+<a href="https://docs.cloud.google.com/spanner/docs/reference/standard-sql/compression-functions">Compression functions</a>.</p>]]></content>
+    <summary>Spanner now supports Zstandard compression and decompression for STRING and BYTES data. These new functions, ZSTD_COMPRESS, ZSTD_DECOMPRESS_TO_BYTES, and ZSTD_DECOMPRESS_TO_STRING, allow for efficient data handling within Spanner.</summary>
+    <title>Feature: Spanner adds Zstandard compression functions</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

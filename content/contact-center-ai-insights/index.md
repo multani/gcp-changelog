@@ -1,5 +1,12 @@
 # Contact Center AI Insights
 
+## 2026-01-20
+
+### Feature
+
+Customer Experience Insights offers [configurable dashboards](https://docs.cloud.google.com/contact-center/insights/docs/configurable-dashboards) to view usage and feedback metrics over time. Choose from a wide array of chart types to build your own, or use the AI assistant to build custom dashboards.
+
+---
 ## 2026-01-12
 
 ### Announcement

@@ -19,15 +19,31 @@ Gemini in Looker can now [generate a summary and an analysis of an Explore](http
 
 ### Feature
 
+In Looker 26.0, the [Continuous Integration (CI)](https://docs.cloud.google.com/looker/docs/continuous-integration) feature has been updated for better integration with the Looker user interface:
+
+* During the Looker 26.0 release, your Looker instance will be migrated to the new version of Looker CI. The migration will take a few minutes.
+* While your instance is migrating, any existing CI suites will not appear on the CI [**Suites**](https://docs.cloud.google.com/looker/docs/ci-create-suite#creating_a_ci_suite) page and the history on the CI [**Runs**](https://docs.cloud.google.com/looker/docs/ci-view-results) will be empty. During this time, do not create new suites or initiate manual runs.
+* When the migration is complete, the **Suites** and **Runs** pages will be repopulated.
+* If you encounter an issue during the migration, please report it using the [Looker Continuous Integration - Preview Issue Tracker form](https://docs.google.com/forms/d/e/1FAIpQLSed30eICYruU45R8WZQH6hIui28xtdDnejfetzpLHQ5PK0ZeA/viewform?usp=dialog).
+
+In addition, Looker Continuous Integration features the following updates:
+
+* Your Looker admin no longer needs to manually add CI users. In Looker 26.0, once your Looker instance is [enabled for CI](https://docs.cloud.google.com/looker/docs/continuous-integration#enable-ci) (or once your instance is updated to 26.0 if your instance was already enabled for CI), Looker CI users are created automatically. Looker CI users are created in the [Looker CI Users user group](https://docs.cloud.google.com/looker/docs/admin-panel-users-groups#ci-users) with the [Looker CI Users role](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#ci-users). A Looker admin can view the Looker CI users from the **Service Accounts** tab of the [**Users**](https://docs.cloud.google.com/looker/docs/admin-panel-users-users) admin page.
+* A new [**GitHub** table](https://docs.cloud.google.com/looker/docs/admin-panel-platform-ci#github-table) on the **Continuous Integration** Admin page lists the GitHub repositories that have been granted access to the Looker CI GitHub application, which enables Looker CI to [trigger automatically when pull requests are created](https://docs.cloud.google.com/looker/docs/ci-create-suite#triggers).
+
+**Note:** This item was added on January 28, 2026.
+
+### Feature
+
+Now available in preview, the [**Configuration** tab of the **Projects Settings** page](https://docs.cloud.google.com/looker/docs/git-options#configuration) in the Looker IDE contains a **Delete Developer Copy** button that lets LookML developers delete their local developer copy of the project's Git repository. See the [Using version control and deploying](https://docs.cloud.google.com/looker/docs/version-control-and-deploying-changes#delete-dev-copy) documentation page for details.
+
+### Feature
+
 The [**Self-service Explores** admin page](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore) now supports a connection test button so that Looker admins can verify that the BigQuery connection is able to support self-service Explores.
 
 ### Announcement
 
 **Looker 26.0** includes the following feature updates, which will start rolling out on January 26, 2026:
-
-### Feature
-
-Now available in preview, the [**Configuration** tab of the **Projects Settings** page](https://docs.cloud.google.com/looker/docs/git-options#configuration) in the Looker IDE contains a **Delete Developer Copy** button that lets LookML developers delete their local developer copy of the project's Git repository. See the [Using version control and deploying](https://docs.cloud.google.com/looker/docs/version-control-and-deploying-changes#delete-dev-copy) documentation page for details.
 
 ### Feature
 

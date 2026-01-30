@@ -2308,12 +2308,17 @@ compress and decompress <code>STRING</code> or <code>BYTES</code> values. For mo
 <h3 id="feature_1">Feature</h3>
 <p>Columnar engine for Spanner is now in <a href="https://cloud.google.com/products#product-launch-stages">Public
 Preview</a>. Columnar
-engine is a storage technique used with analytics queries to speed up scans.
-Spanner columnar engine accelerates analytical query performance
-on live operational data by up to 200 times without affecting transaction
-workloads. This eliminates the need for ETL into separate data warehouses while
-maintaining strong consistency. For more information, see the <a href="https://docs.cloud.google.com/spanner/docs/columnar-engine">Columnar engine
-for Spanner overview</a>.</p>
+engine is a storage technique used with analytical queries to speed up scans up
+to 200 times faster on live operational data without affecting transaction
+workloads. In databases or tables enabled with columnar engine, this release:</p>
+<ul>
+<li>Supports the ability to execute columnar queries automatically and perform
+  faster columnar scans using vectorized execution.</li>
+<li>Provides a new <a href="https://docs.cloud.google.com/spanner/docs/manual-data-compaction">major compaction API</a>
+  to accelerate the conversion of non-columnar data into columnar data.</li>
+</ul>
+<p>For more information, see the
+<a href="https://docs.cloud.google.com/spanner/docs/columnar-engine">Columnar engine for Spanner overview</a>.</p>
 <hr />
 <h2 id="2026-01-20">2026-01-20</h2>
 <h3 id="feature_2">Feature</h3>

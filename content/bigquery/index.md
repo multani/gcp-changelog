@@ -1,5 +1,18 @@
 # BigQuery
 
+## 2026-01-29
+
+### Feature
+
+BigQuery now offers [conversational analytics](https://docs.cloud.google.com/bigquery/docs/conversational-analytics),
+which accelerates data analysis by enabling insights through natural language.
+Users can view a predefined sample agent, chat with their BigQuery data or
+custom agents, and access those agents even outside of BigQuery. They can also
+use [supported BigQuery ML functions](https://docs.cloud.google.com/bigquery/docs/conversational-analytics#bigquery-ml-support)
+in verified queries and in chat. This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-01-28
 
 ### Change

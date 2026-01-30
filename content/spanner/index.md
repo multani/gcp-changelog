@@ -21,12 +21,17 @@ compress and decompress `STRING` or `BYTES` values. For more information, see
 
 Columnar engine for Spanner is now in [Public
 Preview](https://cloud.google.com/products#product-launch-stages). Columnar
-engine is a storage technique used with analytics queries to speed up scans.
-Spanner columnar engine accelerates analytical query performance
-on live operational data by up to 200 times without affecting transaction
-workloads. This eliminates the need for ETL into separate data warehouses while
-maintaining strong consistency. For more information, see the [Columnar engine
-for Spanner overview](https://docs.cloud.google.com/spanner/docs/columnar-engine).
+engine is a storage technique used with analytical queries to speed up scans up
+to 200 times faster on live operational data without affecting transaction
+workloads. In databases or tables enabled with columnar engine, this release:
+
+* Supports the ability to execute columnar queries automatically and perform
+  faster columnar scans using vectorized execution.
+* Provides a new [major compaction API](https://docs.cloud.google.com/spanner/docs/manual-data-compaction)
+  to accelerate the conversion of non-columnar data into columnar data.
+
+For more information, see the
+[Columnar engine for Spanner overview](https://docs.cloud.google.com/spanner/docs/columnar-engine).
 
 ---
 ## 2026-01-20

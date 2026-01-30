@@ -1,5 +1,13 @@
 # reCAPTCHA
 
+## 2026-01-14
+
+### Change
+
+reCAPTCHA Mobile SDK v18.9.0-beta01 is available for iOS. This version includes
+improvements to SDK latency and reliability.
+
+---
 ## 2026-01-06
 
 ### Change

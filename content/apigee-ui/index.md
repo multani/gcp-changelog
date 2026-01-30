@@ -1,5 +1,21 @@
 # Apigee UI
 
+## 2026-01-27
+
+### Fixed
+
+**Show all rows in the Debug properties panel**
+
+Fixed an issue where only the first 50 rows were displayed in the Debug
+properties panel, including the variables tab. The Debug properties table now
+displays up to 200 rows per page by default. Pagination controls are displayed
+if the total number of rows exceeds 200.
+
+### Announcement
+
+On January 27, 2026, we released an updated version of the Apigee UI.
+
+---
 ## 2026-01-20
 
 ### Deprecated

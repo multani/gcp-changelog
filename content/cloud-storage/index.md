@@ -1,5 +1,14 @@
 # Cloud Storage
 
+## 2026-01-30
+
+### Announcement
+
+Object change notification is deprecated on January 30, 2026. To generate
+notifications for changes to objects, use
+[Pub/Sub notifications for Cloud Storage](https://docs.cloud.google.com/storage/docs/migrate-to-pub-sub-notifications) instead.
+
+---
 ## 2026-01-28
 
 ### Feature

@@ -941,6 +941,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Cloud quotas <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../cloud-quotas/" class="dropdown-item">Cloud Quotas</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Cloud run <b class="caret"></b>
                         </a>
 
@@ -2292,6 +2304,17 @@
 
 
 <h1 id="carbon-footprint">Carbon Footprint</h1>
+<h2 id="2026-01-30">2026-01-30</h2>
+<h3 id="fixed">Fixed</h3>
+<p>We have corrected the issue resulting in incomplete Cloud Run emissions data for
+November and December 2025. Customers who used Cloud Run during this period can
+now access the corrected data.</p>
+<p><strong>Action Required</strong>: To see the corrected Cloud Run emissions data, <a href="https://docs.cloud.google.com/bigquery/docs/working-with-transfers#manually_trigger_a_transfer_or_backfill">schedule a manual data backfill</a> for November
+and December 2025. Note that there is a half-month lag of our data release. For
+example, to backfill November and December 2025 data, run the backfill for
+December 15, 2025 and January 15, 2026, which will update the data for November
+and December 2025 in your BigQuery table.</p>
+<hr />
 <h2 id="2026-01-01">2026-01-01</h2>
 <h3 id="issue">Issue</h3>
 <p>We have identified an issue resulting in incomplete Cloud Run emissions data for
@@ -2310,7 +2333,7 @@ provide an update when the data correction is available.</p>
 </ul>
 <hr />
 <h2 id="2025-09-12">2025-09-12</h2>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_1">Fixed</h3>
 <p>We have corrected an issue affecting the market-based Scope 2 emissions for the europe-west2 (London) region in the July 2025 Carbon Footprint data.</p>
 <p>In the <a href="https://cloud.google.com/carbon-footprint/docs/release-notes#August_14_2025">July 2025 methodology update</a>, renewable energy coverage was misapplied to the Scope 2 market-based emissions in the europe-west2 (London) region. This resulted in non-zero Scope 2 market-based emissions for europe-west2. This inconsistency arose from evolving RE100 market-boundary guidance following Brexit. While RE100 guidance excludes the UK from the EU market-boundary post-Brexit, it allows for the use of previously purchased EU energy attribute certificates (EACs) with sufficiently close vintages to be applied against UK consumption in 2024. Google's application of these EACs to UK consumption results in zero Scope 2 market-based emissions in the europe-west2 (London).</p>
 <p>We have corrected our data to align with the RE100 market boundaries guidance and our corporate environmental reporting of matched renewable energy. Scope 2 market-based emissions for europe-west2 are now correctly reported as zero for July 2025, using 2024 renewable energy coverage consistent with Google's environmental report.</p>
@@ -2363,6 +2386,9 @@ provide an update when the data correction is available.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#carbon-footprint">Carbon Footprint</a></li>
+          <li class="nav-item">
+            <a href="#2026-01-30" class="nav-link">2026-01-30</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-01-01" class="nav-link">2026-01-01</a>
           </li>

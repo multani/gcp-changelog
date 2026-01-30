@@ -1,5 +1,28 @@
 # Google SecOps SIEM
 
+## 2026-01-30
+
+### Announcement
+
+The following v2 connectors, which utilize Google Storage Transfer Service (STS), are now in General Availability:
+
+* Google Cloud Storage v2
+* Amazon S3 v2
+* Google Cloud Storage (Event Driven)
+* Amazon SQS v2
+* Azure Blobstore v2
+
+### Announcement
+
+The following v2 connectors, which utilize Google Storage Transfer Service (STS), are now in General Availability:
+
+* Google Cloud Storage v2
+* Amazon S3 v2
+* Google Cloud Storage (Event Driven)
+* Amazon SQS v2
+* Azure Blobstore v2
+
+---
 ## 2026-01-29
 
 ### Feature

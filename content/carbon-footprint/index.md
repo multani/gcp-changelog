@@ -1,5 +1,20 @@
 # Carbon Footprint
 
+## 2026-01-30
+
+### Fixed
+
+We have corrected the issue resulting in incomplete Cloud Run emissions data for
+November and December 2025. Customers who used Cloud Run during this period can
+now access the corrected data.
+
+**Action Required**: To see the corrected Cloud Run emissions data, [schedule a manual data backfill](https://docs.cloud.google.com/bigquery/docs/working-with-transfers#manually_trigger_a_transfer_or_backfill) for November
+and December 2025. Note that there is a half-month lag of our data release. For
+example, to backfill November and December 2025 data, run the backfill for
+December 15, 2025 and January 15, 2026, which will update the data for November
+and December 2025 in your BigQuery table.
+
+---
 ## 2026-01-01
 
 ### Issue

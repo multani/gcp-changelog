@@ -2,9 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Carbon Footprint</title>
   <subtitle>Changelog for Google Cloud product: Carbon Footprint</subtitle>
-  <updated>2026-01-01T00:00:00+00:00</updated>
+  <updated>2026-01-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:carbon-footprint</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/carbon-footprint/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:carbon-footprint:2026-01-30:fixed:0</id>
+    <published>2026-01-30T00:00:00+00:00</published>
+    <updated>2026-01-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>We have corrected the issue resulting in incomplete Cloud Run emissions data for
+November and December 2025. Customers who used Cloud Run during this period can
+now access the corrected data.</p>
+<p><strong>Action Required</strong>: To see the corrected Cloud Run emissions data, <a href="https://docs.cloud.google.com/bigquery/docs/working-with-transfers#manually_trigger_a_transfer_or_backfill">schedule a manual data backfill</a> for November
+and December 2025. Note that there is a half-month lag of our data release. For
+example, to backfill November and December 2025 data, run the backfill for
+December 15, 2025 and January 15, 2026, which will update the data for November
+and December 2025 in your BigQuery table.</p>]]></content>
+    <summary>The issue causing incomplete emissions data for Cloud Run in November and December 2025 has been fixed. Customers can now access the corrected data by scheduling a manual backfill.</summary>
+    <title>Fixed: Emissions data corrected</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

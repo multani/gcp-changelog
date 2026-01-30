@@ -1,5 +1,21 @@
 # Cloud Logging
 
+## 2026-01-29
+
+### Feature
+
+You can now export your Crashlytics data and (optionally) Firebase sessions
+data to Cloud Logging. Once the data is exported, it's also available to
+Cloud Monitoring, so you can filter your logs, build custom dashboards, set
+up custom alerts, and even export the data to other services.
+For information about how to export your Crashlytics data, see
+[Export Crashlytics data to
+Cloud Logging](https://firebase.google.com/docs/crashlytics/cloud-logging-export),
+and for information about how
+you can use this data, see [What can you do with Crashlytics data in
+Cloud Logging](https://firebase.google.com/docs/crashlytics/cloud-logging-what-can-you-do).
+
+---
 ## 2026-01-26
 
 ### Change

@@ -76,6 +76,7 @@
 - [Cloud Monitoring](cloud-monitoring/index.md)
 - [Cloud NAT](cloud-nat/index.md)
 - [Cloud NGFW](cloud-ngfw/index.md)
+- [Cloud Quotas](cloud-quotas/index.md)
 - [Cloud Run](cloud-run/index.md)
 - [Cloud Run functions](cloud-run-functions/index.md)
 - [Cloud SQL for MySQL](cloud-sql-for-mysql/index.md)

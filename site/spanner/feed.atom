@@ -2,9 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Spanner</title>
   <subtitle>Changelog for Google Cloud product: Spanner</subtitle>
-  <updated>2026-01-28T00:00:00+00:00</updated>
+  <updated>2026-01-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:spanner</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/spanner/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2026-01-30:feature:0</id>
+    <published>2026-01-30T00:00:00+00:00</published>
+    <updated>2026-01-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Spanner supports the <code>UUID</code> data type for both
+GoogleSQL and PostgreSQL-dialect databases. This
+data type stores universally unique identifiers (UUIDs) as 128-bit values.</p>
+<p>You can use the GoogleSQL
+<a href="https://docs.cloud.google.com/spanner/docs/reference/standard-sql/utility-functions#new_uuid"><code>NEW_UUID()</code></a>
+function or the PostgreSQL
+<a href="https://docs.cloud.google.com/spanner/docs/reference/postgresql/functions#utility"><code>gen_random_uuid()</code></a> to
+function to create UUID values.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/spanner/docs/schema-design#uuid_primary_key">Use a universally unique identifier (UUID)</a>.</p>]]></content>
+    <summary>Spanner now supports the UUID data type for both GoogleSQL and PostgreSQL-dialect databases. This feature allows you to store universally unique identifiers as 128-bit values, simplifying the management of unique IDs within your databases.</summary>
+    <title>Feature: Spanner now supports UUID data type</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

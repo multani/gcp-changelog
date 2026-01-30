@@ -1,5 +1,23 @@
 # Spanner
 
+## 2026-01-30
+
+### Feature
+
+Spanner supports the `UUID` data type for both
+GoogleSQL and PostgreSQL-dialect databases. This
+data type stores universally unique identifiers (UUIDs) as 128-bit values.
+
+You can use the GoogleSQL
+[`NEW_UUID()`](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/utility-functions#new_uuid)
+function or the PostgreSQL
+[`gen_random_uuid()`](https://docs.cloud.google.com/spanner/docs/reference/postgresql/functions#utility) to
+function to create UUID values.
+
+For more information, see
+[Use a universally unique identifier (UUID)](https://docs.cloud.google.com/spanner/docs/schema-design#uuid_primary_key).
+
+---
 ## 2026-01-28
 
 ### Feature

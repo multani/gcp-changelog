@@ -1,5 +1,15 @@
 # Network Intelligence Center
 
+## 2026-01-29
+
+### Feature
+
+[Connectivity Tests](https://docs.cloud.google.com/network-intelligence-center/docs/connectivity-tests/concepts/overview)
+analyzes
+[firewall policies](https://docs.cloud.google.com/firewall/docs/regional-network-app-lb)
+that apply to managed Envoy proxies.
+
+---
 ## 2025-12-09
 
 ### Feature

@@ -4,7 +4,7 @@
 
 ### Feature
 
-**Gemini Enterprise: Support for new data stores and actions (Preview)**
+**Gemini Enterprise: Support for new data stores (Preview)**
 
 The following data stores are now supported in Gemini Enterprise:
 

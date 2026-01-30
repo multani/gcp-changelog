@@ -2,9 +2,53 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Anthos Config Management</title>
   <subtitle>Changelog for Google Cloud product: Anthos Config Management</subtitle>
-  <updated>2025-12-04T00:00:00+00:00</updated>
+  <updated>2026-01-29T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:anthos-config-management</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/anthos-config-management/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:anthos-config-management:2026-01-29:change:0</id>
+    <published>2026-01-29T00:00:00+00:00</published>
+    <updated>2026-01-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Addressed multiple Common Vulnerabilities and Exposures (CVEs) by updating dependencies.</p>]]></content>
+    <summary>We have updated several dependencies to address multiple Common Vulnerabilities and Exposures (CVEs). This proactive measure enhances the overall security of our system.</summary>
+    <title>Change: Dependency updates address security issues</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:anthos-config-management:2026-01-29:breaking:1</id>
+    <published>2026-01-29T00:00:00+00:00</published>
+    <updated>2026-01-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded the Open Telemetry image from v0.119.0 to v0.127.0. This version removes the deprecated OpenCensus receiver. This change impacts only custom metric solutions that use the OpenCensus receiver. To understand the changes in each release, review the <a href="https://github.com/open-telemetry/opentelemetry-collector-contrib/releases">change logs</a></p>]]></content>
+    <summary>The Open Telemetry image has been upgraded to version 0.127.0. This update removes the OpenCensus receiver, which may affect custom metric solutions. Please review the release notes for details.</summary>
+    <title>Breaking: Open Telemetry image updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:anthos-config-management:2026-01-29:fixed:2</id>
+    <published>2026-01-29T00:00:00+00:00</published>
+    <updated>2026-01-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Resolved an issue where metrics for deleted ResourceGroups continued to show outdated values.</p>]]></content>
+    <summary>An issue where metrics for deleted ResourceGroups incorrectly displayed outdated values has been resolved. This ensures that metrics accurately reflect the current state of resources.</summary>
+    <title>Fixed: Metrics for deleted resource groups fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:anthos-config-management:2026-01-29:change:3</id>
+    <published>2026-01-29T00:00:00+00:00</published>
+    <updated>2026-01-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded bundled Helm version from v3.15.3 to <a href="https://github.com/helm/helm/releases/tag/v3.18.6">3.18.6</a> to pick up vulnerability fixes. To understand the changes in each release, review the <a href="https://github.com/helm/helm/releases">changelogs</a>.</p>]]></content>
+    <summary>We have upgraded the bundled Helm version to v3.18.6 to incorporate important security fixes. This update ensures a more secure environment for managing your applications. Please refer to the Helm release notes for detailed information on the changes.</summary>
+    <title>Change: Helm Version Update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

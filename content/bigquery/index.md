@@ -4,6 +4,14 @@
 
 ### Feature
 
+BigQuery now supports a `RANDOM_HASH` predefined masking rule. This rule returns
+a hash of the column's value using a salted hash algorithm, and it provides
+stronger security than the standard `Hash (SHA-256)` rule.
+
+For more information, see [Data masking rules](https://docs.cloud.google.com/bigquery/docs/column-data-masking-intro#masking_options).
+
+### Feature
+
 BigQuery now offers [conversational analytics](https://docs.cloud.google.com/bigquery/docs/conversational-analytics),
 which accelerates data analysis by enabling insights through natural language.
 Users can view a predefined sample agent, chat with their BigQuery data or
@@ -11,6 +19,14 @@ custom agents, and access those agents even outside of BigQuery. They can also
 use [supported BigQuery ML functions](https://docs.cloud.google.com/bigquery/docs/conversational-analytics#bigquery-ml-support)
 in verified queries and in chat. This feature is in
 [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+You can now create [BigQuery ML models by using the
+Google Cloud console](https://cloud.google.com/bigquery/docs/create-machine-learning-model-console).
+
+This feature is [generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
 
 ---
 ## 2026-01-28

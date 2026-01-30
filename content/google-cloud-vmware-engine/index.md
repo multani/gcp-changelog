@@ -1,8 +1,26 @@
 # Google Cloud VMware Engine
 
+## 2026-01-29
+
+### Announcement
+
+Stretched private clouds capable of hosting both `ve1` and `ve2` node-family
+clusters are now available in the following regions:
+
+* Sydney, Australia, Asia Pacific (`australia-southeast1-a`,
+  `australia-southeast1-b`)
+* Frankfurt, Germany, Europe (`europe-west3-a`, `europe-west3-b`)
+
+While a stretched private cloud can contain mixed node families, each individual
+stretched cluster must be comprised of nodes from the same family type.
+
+**Note:** To create a new stretched cluster of a different node family, contact
+Cloud Customer Care.
+
+---
 ## 2026-01-13
 
-### Feature
+### Announcement
 
 Private clouds capable of hosting both `ve1` and `ve2` node-family clusters are
 available in the following additional regions:

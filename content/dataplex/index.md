@@ -1,5 +1,16 @@
 # Dataplex
 
+## 2026-01-29
+
+### Feature
+
+You can control data lineage ingestion for Dataproc
+at the organization, folder, or project level. This feature is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+For more information, see
+[Control lineage ingestion](https://cloud.google.com/dataplex/docs/about-data-lineage#control-lineage-ingestion).
+
+---
 ## 2026-01-12
 
 ### Breaking

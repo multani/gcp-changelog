@@ -23,6 +23,23 @@
     <author>
       <name>Google Cloud</name>
     </author>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-01-30:announcement:1</id>
+    <published>2026-01-30T00:00:00+00:00</published>
+    <updated>2026-01-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Dataproc on Compute Engine:</strong> The following subminor image versions announced on <a href="https://docs.cloud.google.com/dataproc/docs/release-notes#January_24_2026">January 24, 2026</a> have been rolled back:</p>
+<ul>
+<li>2.0.157-debian10, 2.0.157-ubuntu18, 2.0.157-rocky8</li>
+<li>2.1.106-debian11, 2.1.106-ubuntu20, 2.1.106-ubuntu20-arm, 2.1.106-rocky8</li>
+<li>2.2.74-debian12, 2.2.74-ubuntu22, 2.2.74-ubuntu22-arm, 2.2.74-rocky9</li>
+<li>2.3.21-debian12, 2.3.21-ml-ubuntu22, 2.3.21-rocky9, 2.3.21-ubuntu22, 2.3.21-ubuntu22-arm</li>
+</ul>]]></content>
+    <summary>Certain Dataproc on Compute Engine image versions released on January 24, 2026 have been rolled back due to issues. Users are advised to check the release notes for specific version details and potential impact.</summary>
+    <title>Announcement: Dataproc image versions rolled back</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
     <id>urn:github:multani:gcp-changelog:dataproc:2026-01-24:feature:0</id>
     <published>2026-01-24T00:00:00+00:00</published>
     <updated>2026-01-24T00:00:00+00:00</updated>
@@ -57,21 +74,7 @@ gRPC protocol endpoint.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:dataproc:2026-01-24:feature:3</id>
-    <published>2026-01-24T00:00:00+00:00</published>
-    <updated>2026-01-24T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Added a new <code>dataproc:pypi.repository</code> property to customize the PyPI repository that <code>pip</code> uses.
-The value can be a internet-accessible URL, or you can specify <code>google</code> to use a Google-hosted cache of PyPI, which
-is accessible without public internet connectivity. Starting with Dataproc image version
-<code>3.1</code>, <code>google</code> will be the default (you can specify the <code>pypi</code> property value to use public PyPI instead of the default <code>google</code> 3.1 value).</p>]]></content>
-    <summary>You can now customize the PyPI repository used by pip in Dataproc with the new `dataproc:pypi.repository` property. This allows you to specify a custom URL or use a Google-hosted cache for offline access. Starting with image version 3.1, the Google-hosted cache is the default.</summary>
-    <title>Feature: Customize PyPI Repository for Dataproc</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:dataproc:2026-01-24:announcement:4</id>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-01-24:announcement:3</id>
     <published>2026-01-24T00:00:00+00:00</published>
     <updated>2026-01-24T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions">Dataproc on Compute Engine subminor image versions</a>:</p>
@@ -80,9 +83,24 @@ is accessible without public internet connectivity. Starting with Dataproc image
 <li>2.1.106-debian11, 2.1.106-ubuntu20, 2.1.106-ubuntu20-arm, 2.1.106-rocky8</li>
 <li>2.2.74-debian12, 2.2.74-ubuntu22, 2.2.74-ubuntu22-arm, 2.2.74-rocky9</li>
 <li>2.3.21-debian12, 2.3.21-ml-ubuntu22, 2.3.21-rocky9, 2.3.21-ubuntu22, 2.3.21-ubuntu22-arm</li>
-</ul>]]></content>
-    <summary>New subminor image versions for Dataproc on Compute Engine are now available. These updates include the latest patches and improvements for various operating system combinations.</summary>
-    <title>Announcement: Dataproc image updates released</title>
+</ul>
+<p><strong>Rollback Notice:</strong> These image versions were rolled back on <a href="https://docs.cloud.google.com/dataproc/docs/release-notes#January_30_2026">January 30, 2026</a>.</p>]]></content>
+    <summary>New image versions for Dataproc on Compute Engine are now available, offering updated components and support for various operating systems. These versions include enhancements for different distributions like Debian, Ubuntu, and Rocky Linux. Note: These image versions were rolled back on January 30, 2026.</summary>
+    <title>Announcement: New Dataproc image versions available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-01-24:feature:4</id>
+    <published>2026-01-24T00:00:00+00:00</published>
+    <updated>2026-01-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Added a new <code>dataproc:pypi.repository</code> property to customize the PyPI repository that <code>pip</code> uses.
+The value can be a internet-accessible URL, or you can specify <code>google</code> to use a Google-hosted cache of PyPI, which
+is accessible without public internet connectivity. Starting with Dataproc image version
+<code>3.1</code>, <code>google</code> will be the default (you can specify the <code>pypi</code> property value to use public PyPI instead of the default <code>google</code> 3.1 value).</p>]]></content>
+    <summary>You can now customize the PyPI repository used by pip in Dataproc with the new `dataproc:pypi.repository` property. This allows you to specify a custom URL or use a Google-hosted cache for offline access. Starting with image version 3.1, the Google-hosted cache is the default.</summary>
+    <title>Feature: Customize PyPI Repository for Dataproc</title>
   </entry>
   <entry>
     <author>

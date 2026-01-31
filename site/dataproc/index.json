@@ -9,6 +9,14 @@
           "title": "New Apache Spark runtime versions",
           "summary": "New serverless runtime versions for Apache Spark are now available. This update includes version 3.0.4, providing enhanced features and performance for your Spark workloads."
         }
+      },
+      {
+        "kind": "Announcement",
+        "content": "**Dataproc on Compute Engine:** The following subminor image versions announced on [January 24, 2026](https://docs.cloud.google.com/dataproc/docs/release-notes#January_24_2026) have been rolled back:\n\n* 2.0.157-debian10, 2.0.157-ubuntu18, 2.0.157-rocky8\n* 2.1.106-debian11, 2.1.106-ubuntu20, 2.1.106-ubuntu20-arm, 2.1.106-rocky8\n* 2.2.74-debian12, 2.2.74-ubuntu22, 2.2.74-ubuntu22-arm, 2.2.74-rocky9\n* 2.3.21-debian12, 2.3.21-ml-ubuntu22, 2.3.21-rocky9, 2.3.21-ubuntu22, 2.3.21-ubuntu22-arm",
+        "summary": {
+          "title": "Dataproc image versions rolled back",
+          "summary": "Certain Dataproc on Compute Engine image versions released on January 24, 2026 have been rolled back due to issues. Users are advised to check the release notes for specific version details and potential impact."
+        }
       }
     ],
     "2026-01-24": [
@@ -37,19 +45,19 @@
         }
       },
       {
+        "kind": "Announcement",
+        "content": "New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions):\n\n* 2.0.157-debian10, 2.0.157-ubuntu18, 2.0.157-rocky8\n* 2.1.106-debian11, 2.1.106-ubuntu20, 2.1.106-ubuntu20-arm, 2.1.106-rocky8\n* 2.2.74-debian12, 2.2.74-ubuntu22, 2.2.74-ubuntu22-arm, 2.2.74-rocky9\n* 2.3.21-debian12, 2.3.21-ml-ubuntu22, 2.3.21-rocky9, 2.3.21-ubuntu22, 2.3.21-ubuntu22-arm\n\n**Rollback Notice:** These image versions were rolled back on [January 30, 2026](https://docs.cloud.google.com/dataproc/docs/release-notes#January_30_2026).",
+        "summary": {
+          "title": "New Dataproc image versions available",
+          "summary": "New image versions for Dataproc on Compute Engine are now available, offering updated components and support for various operating systems. These versions include enhancements for different distributions like Debian, Ubuntu, and Rocky Linux. Note: These image versions were rolled back on January 30, 2026."
+        }
+      },
+      {
         "kind": "Feature",
         "content": "Added a new `dataproc:pypi.repository` property to customize the PyPI repository that `pip` uses.\nThe value can be a internet-accessible URL, or you can specify `google` to use a Google-hosted cache of PyPI, which\nis accessible without public internet connectivity. Starting with Dataproc image version\n`3.1`, `google` will be the default (you can specify the `pypi` property value to use public PyPI instead of the default `google` 3.1 value).",
         "summary": {
           "title": "Customize PyPI Repository for Dataproc",
           "summary": "You can now customize the PyPI repository used by pip in Dataproc with the new `dataproc:pypi.repository` property. This allows you to specify a custom URL or use a Google-hosted cache for offline access. Starting with image version 3.1, the Google-hosted cache is the default."
-        }
-      },
-      {
-        "kind": "Announcement",
-        "content": "New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions):\n\n* 2.0.157-debian10, 2.0.157-ubuntu18, 2.0.157-rocky8\n* 2.1.106-debian11, 2.1.106-ubuntu20, 2.1.106-ubuntu20-arm, 2.1.106-rocky8\n* 2.2.74-debian12, 2.2.74-ubuntu22, 2.2.74-ubuntu22-arm, 2.2.74-rocky9\n* 2.3.21-debian12, 2.3.21-ml-ubuntu22, 2.3.21-rocky9, 2.3.21-ubuntu22, 2.3.21-ubuntu22-arm",
-        "summary": {
-          "title": "Dataproc image updates released",
-          "summary": "New subminor image versions for Dataproc on Compute Engine are now available. These updates include the latest patches and improvements for various operating system combinations."
         }
       },
       {

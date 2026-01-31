@@ -28,14 +28,6 @@
       },
       {
         "kind": "Feature",
-        "content": "**Apps API: new endpoint for adding a third party to a call**\n\nThe apps API now includes an endpoint\n(`/calls/add/CALL_ID/add_party`) to add a third party to\nan ongoing call. When you make a request to this endpoint, the system\nautomatically dials the third-party's phone number, and the agent's call adapter\ndisplays the **Calling** screen.",
-        "summary": {
-          "title": "Add a third party to a call",
-          "summary": "The Apps API has a new endpoint, /calls/add/CALL_ID/add_party, that allows you to add a third party to an ongoing call. The system will automatically dial the third party's number and display the Calling screen on the agent's call adapter."
-        }
-      },
-      {
-        "kind": "Feature",
         "content": "**Improvements to deflection message management**\n\nAgents can now upload message files from the call adapter to use for message and\nvoicemail greetings. These files support after-hours deflection, overcapacity\ndeflection, and automatic redirection.\n\nA new **Upload audio recording** option appears in the call adapter in the\nfollowing locations:\n\n* **Options > Agent Deflections > After hours\n  deflection**\n* **Options > Agent Deflections > Overcapacity\n  deflection**\n* **Options > Agent Deflections > Automatic\n  redirections**\n\nIf you make changes to an agent's after-hours deflection settings, overcapacity\ndeflection settings, or automatic redirection settings, you can now revert to\nthe settings that the agent selected in the call adapter. The **Revert to agent\nsettings** button appears in the **Agent Call Deflections** section on the\nagent's **Edit User** page. To access the agent's **Edit User** page, go to the\n**Settings > Users & Teams** page.",
         "summary": {
           "title": "Manage deflection messages easily",
@@ -72,6 +64,14 @@
         "summary": {
           "title": "French Canadian support for CCaaS portal",
           "summary": "The Google Cloud CCaaS portal now supports the French Canadian language. While most of the interface will be in French Canadian, system and error messages will remain in English."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Apps API: new endpoint for adding a third party to a call**\n\nThe apps API now includes an endpoint\n(`/calls/add/CALL_ID/dial`) to add a third party to\nan ongoing call. When you make a request to this endpoint, the system\nautomatically dials the third-party's phone number, and the agent's call adapter\ndisplays the **Calling** screen.",
+        "summary": {
+          "title": "Add Third Party to Call",
+          "summary": "The Apps API now offers a new endpoint to add a third party to an ongoing call. Simply make a request to the new endpoint, and the system will automatically dial the third party's number, displaying the Calling screen to the agent."
         }
       },
       {

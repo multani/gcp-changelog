@@ -2304,6 +2304,21 @@
 
 
 <h1 id="backup-and-dr">Backup and DR</h1>
+<h2 id="2026-01-26">2026-01-26</h2>
+<h3 id="fixed">Fixed</h3>
+<p>Backup/Recovery appliance non-disruptive update:</p>
+<ul>
+<li>Database Restore &amp; Management: Resolved SAP HANA differential restore failures
+  and Oracle "Mount and Migrate" disk eligibility issues, while enhancing Db2 log
+  purging and HANA /etc/fstab cleanup.</li>
+<li>System Stability: Improved reliability by addressing gpdmgr memory leaks,
+  preventing udpengine crashes during OnVault jobs, and enabling size-based log
+  rotation.</li>
+<li>API &amp; Infrastructure: Optimized host discovery and API performance, including
+  support for duplicate VM names, subnet pagination, and the removal of deprecated
+  NFS options.</li>
+</ul>
+<hr />
 <h2 id="2026-01-20">2026-01-20</h2>
 <h3 id="feature">Feature</h3>
 <p>Cost reports are now generally available for Backup and DR Service. Use cost reports
@@ -2325,7 +2340,7 @@ actions to optimize resource allocation.</p>
 <p>Expanded Linux CBT support for new kernels on RHEL 8 and 9.</p>
 <h3 id="security">Security</h3>
 <p>Addressed multiple OpenSSH vulnerabilities, including CVE-2025-26465 and CVE-2025-26466.</p>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_1">Fixed</h3>
 <p>Resolved issues with DB2 migration scripts and various SAP HANA backup failures, including differential and log backups.</p>
 <p>Improved system stability and diagnostics by enhancing logging, adding log rotation, and correcting unit reporting in dashboards.</p>
 <p>Corrected the data copy reporting for Persistent Disk (PD) based backups, ensuring it accurately reflects zero data copied.</p>
@@ -2354,7 +2369,7 @@ Enhanced backups now also support
 <h2 id="2025-11-19">2025-11-19</h2>
 <h3 id="feature_5">Feature</h3>
 <p>Added Change Block Tracking (CBT) support for RHEL 8.8 SAP kernels.</p>
-<h3 id="fixed_1">Fixed</h3>
+<h3 id="fixed_2">Fixed</h3>
 <ul>
 <li>Resolved an issue with SAP HANA datafile validation on scale-out clusters.</li>
 <li>Fixed a bug causing SAP HANA log backups to fail when the log mode is not 'normal'.</li>
@@ -2392,7 +2407,7 @@ retention and preventing manual deletion.</p>
 </ul>
 <h3 id="security_2">Security</h3>
 <p>The following CVEs have been addressed in this release: CVE-2022-1471, CVE-2025-31651, CVE-2025-31650, CVE-2022-42003, CVE-2025-25193, CVE-2024-6763, CVE-2025-52999, CVE-2025-24970, CVE-2025-49125, CVE-2025-48734, CVE-2024-52317, CVE-2025-48988, CVE-2025-46701</p>
-<h3 id="fixed_2">Fixed</h3>
+<h3 id="fixed_3">Fixed</h3>
 <ul>
 <li>Resolved a problem with timestamp conversions during recovery range calculations in SAP HANA</li>
 <li>Fixed a bug that prevented the identification of persistent disk names in some SAP HANA environments</li>
@@ -2453,6 +2468,9 @@ retention and preventing manual deletion.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#backup-and-dr">Backup and DR</a></li>
+          <li class="nav-item">
+            <a href="#2026-01-26" class="nav-link">2026-01-26</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-01-20" class="nav-link">2026-01-20</a>
           </li>

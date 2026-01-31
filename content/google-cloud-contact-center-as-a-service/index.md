@@ -122,16 +122,6 @@ The following issues were addressed in this release:
 
 ### Feature
 
-**Apps API: new endpoint for adding a third party to a call**
-
-The apps API now includes an endpoint
-(`/calls/add/CALL_ID/add_party`) to add a third party to
-an ongoing call. When you make a request to this endpoint, the system
-automatically dials the third-party's phone number, and the agent's call adapter
-displays the **Calling** screen.
-
-### Feature
-
 **Improvements to deflection message management**
 
 Agents can now upload message files from the call adapter to use for message and
@@ -193,6 +183,16 @@ You can now view the Google Cloud CCaaS portal in French Canadian.
 
 **Note:** System messages and error messages aren't translated and appear in
 English.
+
+### Feature
+
+**Apps API: new endpoint for adding a third party to a call**
+
+The apps API now includes an endpoint
+(`/calls/add/CALL_ID/dial`) to add a third party to
+an ongoing call. When you make a request to this endpoint, the system
+automatically dials the third-party's phone number, and the agent's call adapter
+displays the **Calling** screen.
 
 ### Feature
 

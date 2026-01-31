@@ -1,5 +1,15 @@
 # Bigtable
 
+## 2026-01-30
+
+### Feature
+
+Bigtable has a unified, customizable system insights dashboard. This dashboard
+includes predefined metrics and other Google Cloud metrics. This
+feature is [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+For more information, see [Customize the system insights dashboard](https://docs.cloud.google.com/bigtable/docs/monitoring-instance#customize-system-insights).
+
+---
 ## 2026-01-21
 
 ### Feature

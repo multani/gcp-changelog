@@ -2429,13 +2429,6 @@ Initials on Email List View** checkbox.</p>
   missing for the widget.</li>
 </ul>
 <h3 id="feature_2">Feature</h3>
-<p><strong>Apps API: new endpoint for adding a third party to a call</strong></p>
-<p>The apps API now includes an endpoint
-(<code>/calls/add/CALL_ID/add_party</code>) to add a third party to
-an ongoing call. When you make a request to this endpoint, the system
-automatically dials the third-party's phone number, and the agent's call adapter
-displays the <strong>Calling</strong> screen.</p>
-<h3 id="feature_3">Feature</h3>
 <p><strong>Improvements to deflection message management</strong></p>
 <p>Agents can now upload message files from the call adapter to use for message and
 voicemail greetings. These files support after-hours deflection, overcapacity
@@ -2456,7 +2449,7 @@ the settings that the agent selected in the call adapter. The <strong>Revert to 
 settings</strong> button appears in the <strong>Agent Call Deflections</strong> section on the
 agent's <strong>Edit User</strong> page. To access the agent's <strong>Edit User</strong> page, go to the
 <strong>Settings &gt; Users &amp; Teams</strong> page.</p>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p><strong>Custom data-collection forms for chats are available in the web SDK</strong></p>
 <p>Your human agents and virtual agents can now send custom data-collection forms
 to end-users using the web SDK.</p>
@@ -2466,7 +2459,7 @@ Forms &gt; Add template &gt; Custom form</strong>.</p>
 <p><strong>Google Cloud CCaaS 3.44 prerelease notes</strong></p>
 <p>These are the prerelease notes for Google Cloud CCaaS version 3.44. When version
 3.44 is released, the new capabilities are expected to be as described here.</p>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p><strong>Edit email subject lines</strong></p>
 <p>Agents can now modify email subject lines when replying to or forwarding
 email messages. This lets agents add context to the subject line, such as ticket
@@ -2477,11 +2470,18 @@ conversation thread intact.</p>
 <p>Email Management<strong> section, there's a new </strong>Enable Subject Line
 Editing** checkbox.</p>
 </blockquote>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p><strong>Support for French Canadian in the Google Cloud CCaaS portal</strong></p>
 <p>You can now view the Google Cloud CCaaS portal in French Canadian.</p>
 <p><strong>Note:</strong> System messages and error messages aren't translated and appear in
 English.</p>
+<h3 id="feature_6">Feature</h3>
+<p><strong>Apps API: new endpoint for adding a third party to a call</strong></p>
+<p>The apps API now includes an endpoint
+(<code>/calls/add/CALL_ID/dial</code>) to add a third party to
+an ongoing call. When you make a request to this endpoint, the system
+automatically dials the third-party's phone number, and the agent's call adapter
+displays the <strong>Calling</strong> screen.</p>
 <h3 id="feature_7">Feature</h3>
 <p><strong>Agent desktop: dynamically control the custom panel language</strong></p>
 <p>You can now use the <code>{AGENT_LOCATION_LANGUAGE}</code> or the <code>{AGENT_LANGUAGE}</code>

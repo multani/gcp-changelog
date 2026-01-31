@@ -1,5 +1,22 @@
 # Backup and DR
 
+## 2026-01-26
+
+### Fixed
+
+Backup/Recovery appliance non-disruptive update:
+
+* Database Restore & Management: Resolved SAP HANA differential restore failures
+  and Oracle "Mount and Migrate" disk eligibility issues, while enhancing Db2 log
+  purging and HANA /etc/fstab cleanup.
+* System Stability: Improved reliability by addressing gpdmgr memory leaks,
+  preventing udpengine crashes during OnVault jobs, and enabling size-based log
+  rotation.
+* API & Infrastructure: Optimized host discovery and API performance, including
+  support for duplicate VM names, subnet pagination, and the removal of deprecated
+  NFS options.
+
+---
 ## 2026-01-20
 
 ### Feature

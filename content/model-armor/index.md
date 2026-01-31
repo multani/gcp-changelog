@@ -1,5 +1,14 @@
 # Model Armor
 
+## 2026-01-30
+
+### Change
+
+The [prompt injection and jailbreak detection](https://docs.cloud.google.com/model-armor/overview#ma-prompt-injection)
+filter for the Mumbai (`asia-south1`) and Singapore (`asia-southeast1`) regions
+is upgraded to improve detection accuracy and reduce the rate of false positives.
+
+---
 ## 2025-09-16
 
 ### Feature

@@ -1,6 +1,48 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
+    "2026-01-30": [
+      {
+        "kind": "Fixed",
+        "content": "The following issues were addressed in this release:\n\n* Fixed an issue with NICE WFM export where queue abandoned calls were\n  inaccurately reported to the WFM system.\n* Fixed an issue where the **Assign Human Agents** page for queues appeared\n  blank, preventing administrators from viewing or managing agent assignments.\n* Fixed an issue where an email with a message ID longer than 255 characters\n  failed to process and blocked the processing of other emails.\n* Fixed an issue where agents in the **In-email** status didn't receive\n  incoming calls or chats.\n* Fixed an issue where CSAT ratings were missing from metadata files and raw\n  data exports.\n* Fixed an issue where Salesforce integrations incorrectly created duplicate\n  cases for a single outbound call.\n* Fixed an issue where unsupported settings, such as **Cascade Conditions**\n  and **Wrap-up settings**, mistakenly appeared in the queue menu settings for\n  Apple Messages for Business queues.\n* Fixed an issue where attempting to barge into a chat while monitoring it\n  returned a `You are already in Chat` error instead of completing the action.\n* Fixed an agent desktop issue where the **New photo received** banner\n  reappeared after viewing a photo and switching between active chat tabs.\n* Fixed an issue where Direct Access Points failed to route calls correctly\n  for SIP URIs with spaces or non-standard formats.\n* Fixed an issue where an agent's personal contact name was mistakenly\n  displayed as the caller ID to other agents when they received a call from\n  the agent.\n* Fixed an issue where agents appeared as `Available` in the **Agent Activity\n  Timeline** report after signing out.",
+        "summary": {
+          "title": "Resolved issues in recent update",
+          "summary": "Several issues have been resolved in this release, including inaccuracies in call reporting, agent assignment page visibility, email processing errors, and problems with agent status and CSAT ratings. Additionally, fixes were implemented for Salesforce integrations, queue settings, chat barging functionality, agent desktop banners, call routing, and agent status reporting."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Salesforce Service Cloud: new secondary lookup object**\n\nThe Salesforce Service Cloud integration can now use a secondary lookup object\nto identify customer records when the primary lookup object returns no results.\nThis helps prevent the creation of duplicate records.\n\nAdministrators: When you click **Settings > Developer Settings\n> CRM > Salesforce > SFDC Cloud Selection\n> Service Cloud**, a new **Secondary Lookup Object** checkbox appears\nin the **Account Lookup** section.",
+        "summary": {
+          "title": "Salesforce Service Cloud: secondary lookup support",
+          "summary": "Salesforce Service Cloud now supports a secondary lookup object to identify customer records when the primary lookup fails. This enhancement helps prevent duplicate record creation within the integration."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Improved controls for predictive campaigns**\n\nWe've added the following controls to predictive campaigns to reduce the risk of\ncall abandonment due to over dialing. These controls let you ramp up dialing\nrates more naturally and consistently.\n\n* Maximum calls per agent\n* Target agent occupancy\n\nWe've also made the **Max Abandonment %** setting optional, for campaigns that\ndon't require maintaining a maximum abandonment percentage.\n\nAdministrators: When you click **Campaigns > Add Campaign\n> Mode > Predictive**, the new controls appear in the\n**Add Campaign** dialog.",
+        "summary": {
+          "title": "New controls for predictive campaigns",
+          "summary": "New controls have been added to predictive campaigns, including maximum calls per agent and target agent occupancy. The Max Abandonment % setting is now optional, allowing for more natural dialing rates and reduced risk of call abandonment."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS 4.0 prerelease notes**\n\nThese are the prerelease notes for Google Cloud CCaaS version 4.0. When version\n4.0 is released, we expect the new capabilities to be as described here.",
+        "summary": {
+          "title": "CCaaS 4.0 prerelease notes",
+          "summary": "These are the prerelease notes for CCaaS version 4.0. The document outlines the expected new capabilities upon release."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Raw data export: new call\\_participants data type**\n\nWe've added the `call_participants` data type to raw data export. This data type\nhelps you track the following escalation details for wait-time virtual agents:\n\n* The amount of time the wait-time virtual agent spent in queue.\n* The number of events sent to the wait-time virtual agent while it was in\n  queue.",
+        "summary": {
+          "title": "New call participant data type for raw export",
+          "summary": "Raw data export now includes the `call_participants` data type. This new type allows you to track escalation details for wait-time virtual agents, including time spent in queue and events sent while waiting."
+        }
+      }
+    ],
     "2026-01-26": [
       {
         "kind": "Feature",

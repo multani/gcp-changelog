@@ -2,9 +2,124 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-01-26T00:00:00+00:00</updated>
+  <updated>2026-01-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-01-30:fixed:0</id>
+    <published>2026-01-30T00:00:00+00:00</published>
+    <updated>2026-01-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were addressed in this release:</p>
+<ul>
+<li>Fixed an issue with NICE WFM export where queue abandoned calls were
+  inaccurately reported to the WFM system.</li>
+<li>Fixed an issue where the <strong>Assign Human Agents</strong> page for queues appeared
+  blank, preventing administrators from viewing or managing agent assignments.</li>
+<li>Fixed an issue where an email with a message ID longer than 255 characters
+  failed to process and blocked the processing of other emails.</li>
+<li>Fixed an issue where agents in the <strong>In-email</strong> status didn't receive
+  incoming calls or chats.</li>
+<li>Fixed an issue where CSAT ratings were missing from metadata files and raw
+  data exports.</li>
+<li>Fixed an issue where Salesforce integrations incorrectly created duplicate
+  cases for a single outbound call.</li>
+<li>Fixed an issue where unsupported settings, such as <strong>Cascade Conditions</strong>
+  and <strong>Wrap-up settings</strong>, mistakenly appeared in the queue menu settings for
+  Apple Messages for Business queues.</li>
+<li>Fixed an issue where attempting to barge into a chat while monitoring it
+  returned a <code>You are already in Chat</code> error instead of completing the action.</li>
+<li>Fixed an agent desktop issue where the <strong>New photo received</strong> banner
+  reappeared after viewing a photo and switching between active chat tabs.</li>
+<li>Fixed an issue where Direct Access Points failed to route calls correctly
+  for SIP URIs with spaces or non-standard formats.</li>
+<li>Fixed an issue where an agent's personal contact name was mistakenly
+  displayed as the caller ID to other agents when they received a call from
+  the agent.</li>
+<li>Fixed an issue where agents appeared as <code>Available</code> in the <strong>Agent Activity
+  Timeline</strong> report after signing out.</li>
+</ul>]]></content>
+    <summary>Several issues have been resolved in this release, including inaccuracies in call reporting, agent assignment page visibility, email processing errors, and problems with agent status and CSAT ratings. Additionally, fixes were implemented for Salesforce integrations, queue settings, chat barging functionality, agent desktop banners, call routing, and agent status reporting.</summary>
+    <title>Fixed: Resolved issues in recent update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-01-30:feature:1</id>
+    <published>2026-01-30T00:00:00+00:00</published>
+    <updated>2026-01-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Salesforce Service Cloud: new secondary lookup object</strong></p>
+<p>The Salesforce Service Cloud integration can now use a secondary lookup object
+to identify customer records when the primary lookup object returns no results.
+This helps prevent the creation of duplicate records.</p>
+<p>Administrators: When you click **Settings &gt; Developer Settings</p>
+<blockquote>
+<p>CRM &gt; Salesforce &gt; SFDC Cloud Selection
+Service Cloud<strong>, a new </strong>Secondary Lookup Object<strong> checkbox appears
+in the </strong>Account Lookup** section.</p>
+</blockquote>]]></content>
+    <summary>Salesforce Service Cloud now supports a secondary lookup object to identify customer records when the primary lookup fails. This enhancement helps prevent duplicate record creation within the integration.</summary>
+    <title>Feature: Salesforce Service Cloud: secondary lookup support</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-01-30:feature:2</id>
+    <published>2026-01-30T00:00:00+00:00</published>
+    <updated>2026-01-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Improved controls for predictive campaigns</strong></p>
+<p>We've added the following controls to predictive campaigns to reduce the risk of
+call abandonment due to over dialing. These controls let you ramp up dialing
+rates more naturally and consistently.</p>
+<ul>
+<li>Maximum calls per agent</li>
+<li>Target agent occupancy</li>
+</ul>
+<p>We've also made the <strong>Max Abandonment %</strong> setting optional, for campaigns that
+don't require maintaining a maximum abandonment percentage.</p>
+<p>Administrators: When you click **Campaigns &gt; Add Campaign</p>
+<blockquote>
+<p>Mode &gt; Predictive<strong>, the new controls appear in the
+</strong>Add Campaign** dialog.</p>
+</blockquote>]]></content>
+    <summary>New controls have been added to predictive campaigns, including maximum calls per agent and target agent occupancy. The Max Abandonment % setting is now optional, allowing for more natural dialing rates and reduced risk of call abandonment.</summary>
+    <title>Feature: New controls for predictive campaigns</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-01-30:announcement:3</id>
+    <published>2026-01-30T00:00:00+00:00</published>
+    <updated>2026-01-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS 4.0 prerelease notes</strong></p>
+<p>These are the prerelease notes for Google Cloud CCaaS version 4.0. When version
+4.0 is released, we expect the new capabilities to be as described here.</p>]]></content>
+    <summary>These are the prerelease notes for CCaaS version 4.0. The document outlines the expected new capabilities upon release.</summary>
+    <title>Announcement: CCaaS 4.0 prerelease notes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-01-30:feature:4</id>
+    <published>2026-01-30T00:00:00+00:00</published>
+    <updated>2026-01-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Raw data export: new call_participants data type</strong></p>
+<p>We've added the <code>call_participants</code> data type to raw data export. This data type
+helps you track the following escalation details for wait-time virtual agents:</p>
+<ul>
+<li>The amount of time the wait-time virtual agent spent in queue.</li>
+<li>The number of events sent to the wait-time virtual agent while it was in
+  queue.</li>
+</ul>]]></content>
+    <summary>Raw data export now includes the `call_participants` data type. This new type allows you to track escalation details for wait-time virtual agents, including time spent in queue and events sent while waiting.</summary>
+    <title>Feature: New call participant data type for raw export</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

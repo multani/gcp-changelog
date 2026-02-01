@@ -1,5 +1,16 @@
 # Google SecOps
 
+## 2026-02-01
+
+### Change
+
+The **Case Federation** feature is no longer dependent on the **Case Federation** integration in the primary platform.
+
+The primary platform sync job is now disabled. Do not attempt to re-enable it.
+
+For more information, see [Set up federated case access for SecOps](https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/environments/case-federation-secops).
+
+---
 ## 2026-01-30
 
 ### Announcement

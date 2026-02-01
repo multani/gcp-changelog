@@ -1,5 +1,22 @@
 # Google SecOps SOAR
 
+## 2026-02-01
+
+### Change
+
+The **Case Federation** feature is no longer dependent on the **Case Federation** integration in the primary platform.
+
+The primary platform sync job is now disabled. Do not attempt to re-enable it.
+
+For more information, see [Set up case federation access for SOAR](https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/environments/case-federation).
+
+### Announcement
+
+Release 6.3.74 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains the following changes:
+
+---
 ## 2026-01-31
 
 ### Announcement

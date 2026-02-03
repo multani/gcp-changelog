@@ -1,5 +1,18 @@
 # Resource Manager
 
+## 2026-02-02
+
+### Feature
+
+**Access Resource Manager using our remote MCP server**
+
+You can use the Resource Manager remote MCP server to search for and identify all
+Google Cloud projects you have permission to access, so you have the correct
+identifiers before configuring specific resources.
+
+The [Resource Manager remote MCP server](https://docs.cloud.google.com/resource-manager/reference/mcp) is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-11-13
 
 ### Feature

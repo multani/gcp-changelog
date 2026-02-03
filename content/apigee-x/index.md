@@ -1,5 +1,12 @@
 # Apigee X
 
+## 2026-02-02
+
+### Issue
+
+**Known Issue:** [480997525 - Proxy calls fail with `The URI contain illegal characters` error after Netty upgrade](https://docs.cloud.google.com/apigee/docs/release/known-issues#480997525)
+
+---
 ## 2026-01-21
 
 ### Security

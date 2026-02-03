@@ -2,9 +2,143 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Composer</title>
   <subtitle>Changelog for Google Cloud product: Cloud Composer</subtitle>
-  <updated>2026-01-14T00:00:00+00:00</updated>
+  <updated>2026-01-29T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-composer</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-composer/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-01-29:feature:0</id>
+    <published>2026-01-29T00:00:00+00:00</published>
+    <updated>2026-01-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/composer/docs/composer-3/save-load-snapshots">Environment snapshots</a>
+are available in environments with Airflow 3 (Preview).</p>
+<p>This feature is gradually rolled out in several releases and is available in
+the following regions in this release: africa-south1, asia-east1, asia-east2,
+asia-northeast2, asia-northeast3, asia-south2, asia-southeast2,
+australia-southeast2, europe-central2, europe-north1, europe-north2,
+europe-southwest1, europe-west10, europe-west12, europe-west3, europe-west4,
+europe-west6, europe-west8, europe-west9, me-central1, me-central2, me-west1,
+northamerica-northeast1, northamerica-northeast2, northamerica-south1,
+southamerica-east1, southamerica-west1, us-east1, us-east5, us-south1,
+us-west2, us-west3 and us-west4.</p>]]></content>
+    <summary>Save and load environment configurations with snapshots, now in preview for Airflow 3 environments. This feature allows you to easily back up and restore your environment's state. It is currently available in a wide range of global regions.</summary>
+    <title>Feature: Environment snapshots now available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-01-29:deprecated:1</id>
+    <published>2026-01-29T00:00:00+00:00</published>
+    <updated>2026-01-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following Cloud Composer versions and builds have reached their
+<a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
+composer-3-airflow-2.9.3-build.14 and composer-2.11.1-*.</p>]]></content>
+    <summary>Certain Cloud Composer versions, including composer-3-airflow-2.9.3-build.14 and composer-2.11.1-*, are no longer supported. This deprecation follows the standard versioning and support lifecycle. Users are advised to migrate to supported versions to ensure continued functionality and security.</summary>
+    <title>Deprecated: Cloud Composer versions deprecated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-01-29:feature:2</id>
+    <published>2026-01-29T00:00:00+00:00</published>
+    <updated>2026-01-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><em>(Cloud Composer 2)</em> Airflow component metrics are now available
+<a href="https://docs.cloud.google.com/composer/docs/composer-2/use-monitoring-dashboard#airflow-components">on the Monitoring dashboard</a>
+in the Google Cloud console. This feature was previously available only in
+Cloud Composer 3.</p>]]></content>
+    <summary>You can now view Airflow component metrics directly on the Monitoring dashboard within the Google Cloud console. This enhancement brings a previously Cloud Composer 3-exclusive feature to Cloud Composer 2 users, providing greater visibility into Airflow's performance.</summary>
+    <title>Feature: Airflow Component Metrics Now Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-01-29:change:3</id>
+    <published>2026-01-29T00:00:00+00:00</published>
+    <updated>2026-01-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
+are available in Cloud Composer 3:</p>
+<ul>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-0-build-8">composer-3-airflow-3.1.0-build.8</a></li>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-25">composer-3-airflow-2.10.5-build.25</a> (default)</li>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-45">composer-3-airflow-2.9.3-build.45</a></li>
+</ul>]]></content>
+    <summary>New Airflow builds are now available for Cloud Composer 3, including versions 3.1.0, 2.10.5 (default), and 2.9.3. These updates offer the latest features and improvements for your data pipelines.</summary>
+    <title>Change: New Airflow builds available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-01-29:change:4</id>
+    <published>2026-01-29T00:00:00+00:00</published>
+    <updated>2026-01-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><em>(Airflow 3.1.0 in Cloud Composer 3)</em>
+The <code>apache-airflow-providers-google</code> package was upgraded to version 19.4.0.
+For more information about changes, see the
+<a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html">apache-airflow-providers-google changelog</a>.</p>]]></content>
+    <summary>Cloud Composer 3 now includes Airflow version 3.1.0 with an updated Google provider package (version 19.4.0). Review the provider changelog for detailed information on recent changes.</summary>
+    <title>Change: Airflow 3.1.0 available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-01-29:fixed:5</id>
+    <published>2026-01-29T00:00:00+00:00</published>
+    <updated>2026-01-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><em>(Available without upgrading)</em> Cloud Composer 3 environment metadata in Cloud
+Asset Inventory now matches the environment configuration available through the
+Cloud Composer API, including the image version format.</p>]]></content>
+    <summary>Environment metadata for Cloud Composer 3 is now available in Cloud Asset Inventory. This metadata aligns with the Cloud Composer API, including the image version format, and is accessible without needing to upgrade.</summary>
+    <title>Fixed: Composer 3 metadata now available in Asset Inventory</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-01-29:change:6</id>
+    <published>2026-01-29T00:00:00+00:00</published>
+    <updated>2026-01-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
+are available in Cloud Composer 2:</p>
+<ul>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-3-airflow-2-10-5">composer-2.16.3-airflow-2.10.5</a> (default)</li>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-3-airflow-2-9-3">composer-2.16.3-airflow-2.9.3</a></li>
+</ul>]]></content>
+    <summary>New images for Composer 2 are now available, including the default version composer-2.16.3-airflow-2.10.5 and an option with airflow-2.9.3. These updates provide the latest features and improvements for your workflows.</summary>
+    <title>Change: New Composer Images Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-01-29:fixed:7</id>
+    <published>2026-01-29T00:00:00+00:00</published>
+    <updated>2026-01-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><em>(Airflow 2)</em> The Dag Details view in Airflow UI now scrolls correctly when the
+"Run config" field contains long values.</p>]]></content>
+    <summary>The Dag Details view in the Airflow UI now correctly scrolls when the Run config field contains long values. This fix improves usability for users encountering long configuration strings.</summary>
+    <title>Fixed: Airflow UI now scrolls correctly</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-01-29:announcement:8</id>
+    <published>2026-01-29T00:00:00+00:00</published>
+    <updated>2026-01-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A new Cloud Composer release has started on <strong>January 29, 2026</strong>. Get ready
+for upcoming changes and features as we roll out the new release to all regions.
+This release is in progress at the moment. Listed changes and features might
+not be available in some regions yet.</p>]]></content>
+    <summary>A new release of Cloud Composer has begun rolling out. This update brings upcoming changes and new features across all regions. The release is currently in progress, so some features may not be available everywhere yet.</summary>
+    <title>Announcement: New Cloud Composer release available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

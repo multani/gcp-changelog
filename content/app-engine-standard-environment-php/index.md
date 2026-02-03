@@ -1,5 +1,24 @@
 # App Engine standard environment PHP
 
+## 2026-02-02
+
+### Feature
+
+Support for the [PHP 8.5 runtime](https://docs.cloud.google.com/appengine/docs/standard/php-gen2/runtime) is in [Preivew](https://cloud.google.com/products/#product-launch-stages).
+
+---
+## 2026-01-31
+
+### Feature
+
+PHP 5 is [deprecated](https://docs.cloud.google.com/appengine/docs/standard/lifecycle/runtime-lifecycle#deprecated).
+You won't be able to deploy PHP 5 applications, even if your
+organization previously used an organization policy to re-enable
+deployments of legacy runtimes. Your existing PHP 5 applications
+will continue to run and receive traffic. We recommend that you
+[migrate to the latest supported version of PHP](https://docs.cloud.google.com/appengine/migration-center/standard/migrate-to-second-gen/php-differences).
+
+---
 ## 2025-08-07
 
 ### Feature

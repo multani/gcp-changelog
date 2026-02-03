@@ -5,7 +5,6 @@
 ### Feature
 
 Folder level and organization level support for the [quota adjuster feature](https://docs.cloud.google.com/docs/quotas/quota-adjuster) is available in [Preview](https://cloud.google.com/products#product-launch-stages) through the
-Google Cloud console, the
 [Cloud Quotas API](https://docs.cloud.google.com/docs/quotas/reference/rest/v1beta/projects.locations.quotaAdjusterSettings),
 [gcloud quotas beta](https://cloud.google.com/sdk/gcloud/reference/beta/quotas/adjuster/settings)
 CLI, [Terraform](https://docs.cloud.google.com/docs/quotas/terraform-support-for-cloud-quotas), and

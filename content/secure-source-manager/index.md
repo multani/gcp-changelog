@@ -1,5 +1,14 @@
 # Secure Source Manager
 
+## 2026-02-02
+
+### Change
+
+Secure Source Manager is now available in the following [regions](https://docs.cloud.google.com/secure-source-manager/docs/locations#regions):
+
+* us-east1 (South Carolina)
+
+---
 ## 2025-09-10
 
 ### Announcement

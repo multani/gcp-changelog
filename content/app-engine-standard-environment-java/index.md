@@ -1,5 +1,17 @@
 # App Engine standard environment Java
 
+## 2026-01-31
+
+### Feature
+
+Java 8 is [deprecated](https://docs.cloud.google.com/appengine/docs/standard/lifecycle/runtime-lifecycle#deprecated).
+You won't be able to deploy Java 8 applications, even if your organization
+previously used an organization policy to re-enable deployments of legacy
+runtimes. Your existing Java 8 applications will continue to run and receive
+traffic. We recommend that you [migrate to the latest supported version of
+Java](https://docs.cloud.google.com/appengine/migration-center/standard/migrate-to-second-gen/java-differences).
+
+---
 ## 2025-12-22
 
 ### Feature

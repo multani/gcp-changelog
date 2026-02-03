@@ -1,5 +1,32 @@
 # Gemini Enterprise
 
+## 2026-02-02
+
+### Feature
+
+**Fine-grained access control for individual Gemini Enterprise apps**
+
+Gemini Enterprise admins can control access to individual Gemini Enterprise apps
+using app-level IAM policies. IAM permissions are often managed at the project
+level, but app-level IAM allows for more granular control.
+
+For more information, see [Configure access controls for apps](https://docs.cloud.google.com/gemini/enterprise/docs/iam-policy-for-apps).
+
+---
+## 2026-01-30
+
+### Feature
+
+**Gemini Enterprise: Support for new actions (Preview)**
+
+New actions are available for the following data stores:
+
+* [Jira Data Center](https://docs.cloud.google.com/gemini/enterprise/docs/jira-dc)
+* [Zendesk](https://docs.cloud.google.com/gemini/enterprise/docs/zendesk)
+
+For a list of actions for these data stores, see [Supported actions](https://docs.cloud.google.com/gemini/enterprise/docs/connect-third-party-data-source#supported_actions).
+
+---
 ## 2026-01-28
 
 ### Feature
@@ -43,11 +70,11 @@ For more information, see [Agent Designer overview](https://docs.cloud.google.co
 ---
 ## 2026-01-23
 
-### Change
+### Feature
 
 **Gemini Enterprise: New actions in the unified view (Preview)**
 
-New actions have been added to the following existing data stores:
+New actions have been added to the following data stores:
 
 * [Box](https://docs.cloud.google.com/gemini/enterprise/docs/box)
 * [Confluence Cloud](https://docs.cloud.google.com/gemini/enterprise/docs/confluence-cloud)

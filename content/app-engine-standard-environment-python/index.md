@@ -1,5 +1,17 @@
 # App Engine standard environment Python
 
+## 2026-01-31
+
+### Feature
+
+Python 2.7 is [deprecated](https://docs.cloud.google.com/appengine/docs/standard/lifecycle/runtime-lifecycle#deprecated).
+You won't be able to deploy Python 2.7 applications, even if your
+organization previously used an organization policy to re-enable
+deployments of legacy runtimes. Your existing Python 2.7 applications
+will continue to run and receive traffic. We recommend that you
+[migrate to the latest supported version of Python](https://docs.cloud.google.com/appengine/migration-center/standard/migrate-to-second-gen/python-differences).
+
+---
 ## 2025-12-19
 
 ### Feature

@@ -1,6 +1,80 @@
 {
   "name": "Cloud Composer",
   "entries": {
+    "2026-01-29": [
+      {
+        "kind": "Feature",
+        "content": "[Environment snapshots](https://docs.cloud.google.com/composer/docs/composer-3/save-load-snapshots)\nare available in environments with Airflow 3 (Preview).\n\nThis feature is gradually rolled out in several releases and is available in\nthe following regions in this release: africa-south1, asia-east1, asia-east2,\nasia-northeast2, asia-northeast3, asia-south2, asia-southeast2,\naustralia-southeast2, europe-central2, europe-north1, europe-north2,\neurope-southwest1, europe-west10, europe-west12, europe-west3, europe-west4,\neurope-west6, europe-west8, europe-west9, me-central1, me-central2, me-west1,\nnorthamerica-northeast1, northamerica-northeast2, northamerica-south1,\nsouthamerica-east1, southamerica-west1, us-east1, us-east5, us-south1,\nus-west2, us-west3 and us-west4.",
+        "summary": {
+          "title": "Environment snapshots now available",
+          "summary": "Save and load environment configurations with snapshots, now in preview for Airflow 3 environments. This feature allows you to easily back up and restore your environment's state. It is currently available in a wide range of global regions."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "The following Cloud Composer versions and builds have reached their\n[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-3-airflow-2.9.3-build.14 and composer-2.11.1-\\*.",
+        "summary": {
+          "title": "Cloud Composer versions deprecated",
+          "summary": "Certain Cloud Composer versions, including composer-3-airflow-2.9.3-build.14 and composer-2.11.1-*, are no longer supported. This deprecation follows the standard versioning and support lifecycle. Users are advised to migrate to supported versions to ensure continued functionality and security."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "*(Cloud Composer 2)* Airflow component metrics are now available\n[on the Monitoring dashboard](https://docs.cloud.google.com/composer/docs/composer-2/use-monitoring-dashboard#airflow-components)\nin the Google Cloud console. This feature was previously available only in\nCloud Composer 3.",
+        "summary": {
+          "title": "Airflow Component Metrics Now Available",
+          "summary": "You can now view Airflow component metrics directly on the Monitoring dashboard within the Google Cloud console. This enhancement brings a previously Cloud Composer 3-exclusive feature to Cloud Composer 2 users, providing greater visibility into Airflow's performance."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Cloud Composer 3:\n\n* [composer-3-airflow-3.1.0-build.8](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-0-build-8)\n* [composer-3-airflow-2.10.5-build.25](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-25) (default)\n* [composer-3-airflow-2.9.3-build.45](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-45)",
+        "summary": {
+          "title": "New Airflow builds available",
+          "summary": "New Airflow builds are now available for Cloud Composer 3, including versions 3.1.0, 2.10.5 (default), and 2.9.3. These updates offer the latest features and improvements for your data pipelines."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "*(Airflow 3.1.0 in Cloud Composer 3)*\nThe `apache-airflow-providers-google` package was upgraded to version 19.4.0.\nFor more information about changes, see the\n[apache-airflow-providers-google changelog](https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html).",
+        "summary": {
+          "title": "Airflow 3.1.0 available",
+          "summary": "Cloud Composer 3 now includes Airflow version 3.1.0 with an updated Google provider package (version 19.4.0). Review the provider changelog for detailed information on recent changes."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "*(Available without upgrading)* Cloud Composer 3 environment metadata in Cloud\nAsset Inventory now matches the environment configuration available through the\nCloud Composer API, including the image version format.",
+        "summary": {
+          "title": "Composer 3 metadata now available in Asset Inventory",
+          "summary": "Environment metadata for Cloud Composer 3 is now available in Cloud Asset Inventory. This metadata aligns with the Cloud Composer API, including the image version format, and is accessible without needing to upgrade."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [images](https://cloud.google.com/composer/docs/composer-versions#images-composer-2)\nare available in Cloud Composer 2:\n\n* [composer-2.16.3-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-16-3-airflow-2-10-5) (default)\n* [composer-2.16.3-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-16-3-airflow-2-9-3)",
+        "summary": {
+          "title": "New Composer Images Available",
+          "summary": "New images for Composer 2 are now available, including the default version composer-2.16.3-airflow-2.10.5 and an option with airflow-2.9.3. These updates provide the latest features and improvements for your workflows."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "*(Airflow 2)* The Dag Details view in Airflow UI now scrolls correctly when the\n\"Run config\" field contains long values.",
+        "summary": {
+          "title": "Airflow UI now scrolls correctly",
+          "summary": "The Dag Details view in the Airflow UI now correctly scrolls when the Run config field contains long values. This fix improves usability for users encountering long configuration strings."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "A new Cloud Composer release has started on **January 29, 2026**. Get ready\nfor upcoming changes and features as we roll out the new release to all regions.\nThis release is in progress at the moment. Listed changes and features might\nnot be available in some regions yet.",
+        "summary": {
+          "title": "New Cloud Composer release available",
+          "summary": "A new release of Cloud Composer has begun rolling out. This update brings upcoming changes and new features across all regions. The release is currently in progress, so some features may not be available everywhere yet."
+        }
+      }
+    ],
     "2026-01-14": [
       {
         "kind": "Feature",

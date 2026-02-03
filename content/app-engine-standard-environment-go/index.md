@@ -1,5 +1,17 @@
 # App Engine standard environment Go
 
+## 2026-01-31
+
+### Feature
+
+Go 1.11 is [deprecated](https://docs.cloud.google.com/appengine/docs/standard/lifecycle/runtime-lifecycle#deprecated).
+You won't be able to deploy Go 1.11 applications, even if your organization
+previously used an organization policy to re-enable deployments of legacy
+runtimes. Your existing Go 1.11 applications will continue to run and receive
+traffic. We recommend that you [migrate to the latest supported version of
+Go](https://docs.cloud.google.com/appengine/migration-center/standard/migrate-to-second-gen/go-differences).
+
+---
 ## 2025-08-21
 
 ### Feature

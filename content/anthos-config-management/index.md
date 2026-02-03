@@ -2,21 +2,24 @@
 
 ## 2026-01-29
 
-### Change
+### Fixed
 
-Addressed multiple Common Vulnerabilities and Exposures (CVEs) by updating dependencies.
+Resolved an issue where metrics for deleted ResourceGroups continued to show outdated values.
 
 ### Breaking
 
 Upgraded the Open Telemetry image from v0.119.0 to v0.127.0. This version removes the deprecated OpenCensus receiver. This change impacts only custom metric solutions that use the OpenCensus receiver. To understand the changes in each release, review the [change logs](https://github.com/open-telemetry/opentelemetry-collector-contrib/releases)
 
-### Fixed
-
-Resolved an issue where metrics for deleted ResourceGroups continued to show outdated values.
+---
+## 2026-01-28
 
 ### Change
 
 Upgraded bundled Helm version from v3.15.3 to [3.18.6](https://github.com/helm/helm/releases/tag/v3.18.6) to pick up vulnerability fixes. To understand the changes in each release, review the [changelogs](https://github.com/helm/helm/releases).
+
+### Change
+
+Addressed multiple Common Vulnerabilities and Exposures (CVEs) by updating dependencies.
 
 ---
 ## 2025-12-04

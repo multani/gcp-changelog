@@ -1,5 +1,17 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-01-30
+
+### Security
+
+Multiple security vulnerabilities have been identified in the OpenSSL library.
+The most significant finding is CVE-2025-15467, a critical vulnerability that
+might allow for remote code execution (RCE) or denial of service (DoS) attacks
+via network-based vectors.
+
+For more details, see the [GCP-2026-006 security bulletin](https://docs.cloud.google.com/kubernetes-engine/security-bulletins#gcp-2026-006-gdcbm).
+
+---
 ## 2026-01-16
 
 ### Change

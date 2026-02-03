@@ -1,5 +1,16 @@
 # BigQuery
 
+## 2026-02-02
+
+### Feature
+
+You can now pass [parameterized queries](https://cloud.google.com/bigquery/docs/parameterized-queries)
+from the BigQuery query editor in the Google Cloud console.
+
+This feature is [generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
+
+---
 ## 2026-01-29
 
 ### Feature

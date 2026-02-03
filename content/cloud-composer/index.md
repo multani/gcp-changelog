@@ -1,5 +1,78 @@
 # Cloud Composer
 
+## 2026-01-29
+
+### Feature
+
+[Environment snapshots](https://docs.cloud.google.com/composer/docs/composer-3/save-load-snapshots)
+are available in environments with Airflow 3 (Preview).
+
+This feature is gradually rolled out in several releases and is available in
+the following regions in this release: africa-south1, asia-east1, asia-east2,
+asia-northeast2, asia-northeast3, asia-south2, asia-southeast2,
+australia-southeast2, europe-central2, europe-north1, europe-north2,
+europe-southwest1, europe-west10, europe-west12, europe-west3, europe-west4,
+europe-west6, europe-west8, europe-west9, me-central1, me-central2, me-west1,
+northamerica-northeast1, northamerica-northeast2, northamerica-south1,
+southamerica-east1, southamerica-west1, us-east1, us-east5, us-south1,
+us-west2, us-west3 and us-west4.
+
+### Deprecated
+
+The following Cloud Composer versions and builds have reached their
+[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):
+composer-3-airflow-2.9.3-build.14 and composer-2.11.1-\*.
+
+### Feature
+
+*(Cloud Composer 2)* Airflow component metrics are now available
+[on the Monitoring dashboard](https://docs.cloud.google.com/composer/docs/composer-2/use-monitoring-dashboard#airflow-components)
+in the Google Cloud console. This feature was previously available only in
+Cloud Composer 3.
+
+### Change
+
+New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3)
+are available in Cloud Composer 3:
+
+* [composer-3-airflow-3.1.0-build.8](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-0-build-8)
+* [composer-3-airflow-2.10.5-build.25](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-25) (default)
+* [composer-3-airflow-2.9.3-build.45](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-45)
+
+### Change
+
+*(Airflow 3.1.0 in Cloud Composer 3)*
+The `apache-airflow-providers-google` package was upgraded to version 19.4.0.
+For more information about changes, see the
+[apache-airflow-providers-google changelog](https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html).
+
+### Fixed
+
+*(Available without upgrading)* Cloud Composer 3 environment metadata in Cloud
+Asset Inventory now matches the environment configuration available through the
+Cloud Composer API, including the image version format.
+
+### Change
+
+New [images](https://cloud.google.com/composer/docs/composer-versions#images-composer-2)
+are available in Cloud Composer 2:
+
+* [composer-2.16.3-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-16-3-airflow-2-10-5) (default)
+* [composer-2.16.3-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-16-3-airflow-2-9-3)
+
+### Fixed
+
+*(Airflow 2)* The Dag Details view in Airflow UI now scrolls correctly when the
+"Run config" field contains long values.
+
+### Announcement
+
+A new Cloud Composer release has started on **January 29, 2026**. Get ready
+for upcoming changes and features as we roll out the new release to all regions.
+This release is in progress at the moment. Listed changes and features might
+not be available in some regions yet.
+
+---
 ## 2026-01-14
 
 ### Feature

@@ -3,11 +3,11 @@
   "entries": {
     "2026-01-29": [
       {
-        "kind": "Change",
-        "content": "Addressed multiple Common Vulnerabilities and Exposures (CVEs) by updating dependencies.",
+        "kind": "Fixed",
+        "content": "Resolved an issue where metrics for deleted ResourceGroups continued to show outdated values.",
         "summary": {
-          "title": "Dependency updates address security issues",
-          "summary": "We have updated several dependencies to address multiple Common Vulnerabilities and Exposures (CVEs). This proactive measure enhances the overall security of our system."
+          "title": "Metrics for deleted resource groups fixed",
+          "summary": "An issue where metrics for deleted ResourceGroups incorrectly displayed outdated values has been resolved. This ensures that metrics accurately reflect the current state of resources."
         }
       },
       {
@@ -17,21 +17,23 @@
           "title": "Open Telemetry image updated",
           "summary": "The Open Telemetry image has been upgraded to version 0.127.0. This update removes the OpenCensus receiver, which may affect custom metric solutions. Please review the release notes for details."
         }
-      },
-      {
-        "kind": "Fixed",
-        "content": "Resolved an issue where metrics for deleted ResourceGroups continued to show outdated values.",
-        "summary": {
-          "title": "Metrics for deleted resource groups fixed",
-          "summary": "An issue where metrics for deleted ResourceGroups incorrectly displayed outdated values has been resolved. This ensures that metrics accurately reflect the current state of resources."
-        }
-      },
+      }
+    ],
+    "2026-01-28": [
       {
         "kind": "Change",
         "content": "Upgraded bundled Helm version from v3.15.3 to [3.18.6](https://github.com/helm/helm/releases/tag/v3.18.6) to pick up vulnerability fixes. To understand the changes in each release, review the [changelogs](https://github.com/helm/helm/releases).",
         "summary": {
-          "title": "Helm Version Update",
-          "summary": "We have upgraded the bundled Helm version to v3.18.6 to incorporate important security fixes. This update ensures a more secure environment for managing your applications. Please refer to the Helm release notes for detailed information on the changes."
+          "title": "Updated Helm version",
+          "summary": "The bundled Helm version has been upgraded to v3.18.6 to incorporate important security fixes. Please review the release notes for detailed information on the changes included in this update."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Addressed multiple Common Vulnerabilities and Exposures (CVEs) by updating dependencies.",
+        "summary": {
+          "title": "Dependency updates to address security vulnerabilities",
+          "summary": "We have updated our dependencies to resolve several common vulnerabilities and exposures (CVEs). This update enhances the overall security of our system."
         }
       }
     ],

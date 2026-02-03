@@ -1,5 +1,18 @@
 # Cloud Run
 
+## 2026-02-02
+
+### Feature
+
+Support for [PHP 8.5 runtime](https://docs.cloud.google.com/run/docs/runtime-support#php) is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+Support for NVIDIA RTX PRO 6000 Blackwell GPU is in [Preview](https://cloud.google.com/products#product-launch-stages).
+For more information, see GPU support for [services](https://docs.cloud.google.com/run/docs/configuring/services/gpu),
+[jobs](https://docs.cloud.google.com/run/docs/configuring/jobs/gpu), and [worker pools](https://docs.cloud.google.com/run/docs/configuring/workerpools/gpu).
+
+---
 ## 2026-01-27
 
 ### Feature

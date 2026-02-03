@@ -1,5 +1,14 @@
 # API Gateway
 
+## 2026-02-02
+
+### Change
+
+**Connect API Gateway to Apigee API hub instances that use VPC Service Controls**
+
+API Gateway can now be [connected to Apigee API hub](https://docs.cloud.google.com/api-gateway/docs/api-hub-connect) instances that use [VPC Service Controls](https://docs.cloud.google.com/apigee/docs/api-platform/security/vpc-sc).
+
+---
 ## 2026-01-12
 
 ### Feature

@@ -1,5 +1,13 @@
 # Eventarc
 
+## 2026-02-02
+
+### Change
+
+Eventarc Standard is available in the `asia-southeast3` (Bangkok, Thailand)
+[region](https://docs.cloud.google.com/eventarc/docs/locations#regions).
+
+---
 ## 2025-11-11
 
 ### Feature

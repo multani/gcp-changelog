@@ -1,5 +1,14 @@
 # Google SecOps
 
+## 2026-02-03
+
+### Deprecated
+
+**Mute an IoC deprecated**
+
+The Mute an IoC feature is deprecated, and the **IOC details** page no longer displays the **Mute** indicator.
+
+---
 ## 2026-02-02
 
 ### Change

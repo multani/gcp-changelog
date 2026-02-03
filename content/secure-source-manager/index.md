@@ -2,7 +2,7 @@
 
 ## 2026-02-02
 
-### Change
+### Feature
 
 Secure Source Manager is now available in the following [regions](https://docs.cloud.google.com/secure-source-manager/docs/locations#regions):
 

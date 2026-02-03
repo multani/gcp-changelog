@@ -1,5 +1,20 @@
 # Storage Transfer Service
 
+## 2026-02-02
+
+### Feature
+
+Organization Policy Service custom constraints are now available for
+Storage Transfer Service. You can use custom constraints to control how
+Storage Transfer Service is used in your organization. For example, you can restrict
+transfers to only allow Cloud Storage to Cloud Storage transfers, or
+restrict transfers to a specific list of approved source buckets.
+
+See
+[Custom organization policy constraints](https://docs.cloud.google.com/storage-transfer/docs/custom-constraints)
+for details.
+
+---
 ## 2026-01-14
 
 ### Feature

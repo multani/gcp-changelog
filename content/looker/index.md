@@ -1,5 +1,12 @@
 # Looker
 
+## 2026-02-02
+
+### Feature
+
+Conversational Analytics now displays its reasoning for how it analyzes queries. After you enter your query, click [**Show reasoning**](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data#show-reasoning) to see a plain text explanation of the steps that Conversational Analytics took to interpret your query.
+
+---
 ## 2026-01-28
 
 ### Feature
@@ -15,17 +22,17 @@ You can now view the public [egress IP addresses](https://docs.cloud.google.com/
 
 ### Feature
 
+Updates to the [Continuous Integration (CI)](https://docs.cloud.google.com/looker/docs/continuous-integration) feature will be available in February, 2026.
+
+**Note:** This item was added on January 28, 2026 and updated on January 30, 2026.
+
+### Feature
+
 Gemini in Looker can now [generate a summary and an analysis of an Explore](https://docs.cloud.google.com/looker/docs/explore-summary-gemini).
 
 ### Feature
 
 Now available in preview, the [**Configuration** tab of the **Projects Settings** page](https://docs.cloud.google.com/looker/docs/git-options#configuration) in the Looker IDE contains a **Delete Developer Copy** button that lets LookML developers delete their local developer copy of the project's Git repository. See the [Using version control and deploying](https://docs.cloud.google.com/looker/docs/version-control-and-deploying-changes#delete-dev-copy) documentation page for details.
-
-### Feature
-
-Updates to the [Continuous Integration (CI)](https://docs.cloud.google.com/looker/docs/continuous-integration) feature will be available in February, 2026.
-
-**Note:** This item was added on January 28, 2026 and updated on January 30, 2026.
 
 ### Feature
 

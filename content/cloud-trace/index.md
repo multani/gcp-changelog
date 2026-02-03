@@ -1,5 +1,33 @@
 # Cloud Trace
 
+## 2026-02-02
+
+### Feature
+
+You can now analyze your trace data by using the **Log Analytics**
+page in the Google Cloud console. This page supports SQL queries and lets you view
+your query results as a table or as a chart. Your SQL queries can also join your
+trace and log data. This feature is in Public Preview.
+
+To learn more about analyzing and viewing trace data,
+see the following documents:
+
+* [Query and analyze traces](https://docs.cloud.google.com/trace/docs/analytics)
+* [Find and explore traces by using the Trace Explorer](https://docs.cloud.google.com/trace/docs/finding-traces)
+
+### Feature
+
+Cloud Trace now stores your trace data in an observability dataset. You can
+continue to view your trace data by using the **Trace Explorer** page.
+If you create a link on your dataset, then you can use services like
+BigQuery to query and analyze your trace data.
+To learn more, see the following documents:
+
+* [Trace storage overview](https://docs.cloud.google.com/trace/docs/storage-overview)
+* [Manage trace storage](https://docs.cloud.google.com/trace/docs/storage-manage)
+* [Query a linked BigQuery dataset](https://docs.cloud.google.com/trace/docs/analytics-query-linked-dataset)
+
+---
 ## 2026-01-26
 
 ### Change

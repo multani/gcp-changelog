@@ -1,5 +1,14 @@
 # Cloud Workstations
 
+## 2026-01-31
+
+### Feature
+
+Cloud Workstations supports [Hyperdisk Balanced High Availability](https://docs.cloud.google.com/compute/docs/disks/hyperdisks) (`hyperdisk-balanced-ha`) for persistent directories on configurations using A3, C3, C4, G4, M3, N4, N4D, and Z3 machine series. You can specify the disk type using the `--disk-type` flag with the [`gcloud workstations configs create`](https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/create) and [`gcloud workstations configs update`](https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/update) commands.
+
+Cloud Workstations supports A3 machine types with Hyperdisk only. For more details, see [Available machine types](https://docs.cloud.google.com/workstations/docs/available-machine-types) and [Available GPUs](https://docs.cloud.google.com/workstations/docs/available-gpus).
+
+---
 ## 2025-12-05
 
 ### Change

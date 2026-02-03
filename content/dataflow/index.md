@@ -1,5 +1,15 @@
 # Dataflow
 
+## 2026-02-02
+
+### Feature
+
+Dataflow Managed I/O now supports rolling upgrades for streaming jobs. With this
+feature, Dataflow upgrades your Managed I/O connectors in running pipelines as
+new connector versions become available. For more information, see
+[Automatic upgrades](https://docs.cloud.google.com/dataflow/docs/guides/managed-io#upgrades).
+
+---
 ## 2026-01-20
 
 ### Feature

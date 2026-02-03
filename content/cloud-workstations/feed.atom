@@ -2,9 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Workstations</title>
   <subtitle>Changelog for Google Cloud product: Cloud Workstations</subtitle>
-  <updated>2025-12-05T00:00:00+00:00</updated>
+  <updated>2026-01-31T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-workstations</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-workstations/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-workstations:2026-01-31:feature:0</id>
+    <published>2026-01-31T00:00:00+00:00</published>
+    <updated>2026-01-31T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud Workstations supports <a href="https://docs.cloud.google.com/compute/docs/disks/hyperdisks">Hyperdisk Balanced High Availability</a> (<code>hyperdisk-balanced-ha</code>) for persistent directories on configurations using A3, C3, C4, G4, M3, N4, N4D, and Z3 machine series. You can specify the disk type using the <code>--disk-type</code> flag with the <a href="https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/create"><code>gcloud workstations configs create</code></a> and <a href="https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/update"><code>gcloud workstations configs update</code></a> commands.</p>
+<p>Cloud Workstations supports A3 machine types with Hyperdisk only. For more details, see <a href="https://docs.cloud.google.com/workstations/docs/available-machine-types">Available machine types</a> and <a href="https://docs.cloud.google.com/workstations/docs/available-gpus">Available GPUs</a>.</p>]]></content>
+    <summary>Cloud Workstations now supports Hyperdisk Balanced High Availability for persistent directories on select machine types, including A3, C3, C4, G4, M3, N4, N4D, and Z3. This enhancement improves data durability and availability for your development environments. You can configure this new disk type using the `--disk-type` flag in gcloud commands.</summary>
+    <title>Feature: Cloud Workstations adds Hyperdisk Balanced HA support</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

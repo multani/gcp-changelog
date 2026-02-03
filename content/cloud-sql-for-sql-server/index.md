@@ -1,5 +1,18 @@
 # Cloud SQL for SQL Server
 
+## 2026-02-02
+
+### Feature
+
+You can now update the server certificate authority (CA) mode of an existing
+Cloud SQL instance. You can update existing instances that use the per-instance
+CA option (`GOOGLE_MANAGED_INTERNAL_CA`) to use the shared CA option
+(`GOOGLE_MANAGED_CAS_CA`) or the customer-managed CA option (`CUSTOMER_MANAGED_CAS_CA`).
+
+For more information about the different server CA mode options, see
+[Certificate authority (CA) hierarchies](https://docs.cloud.google.com/sql/docs/sqlserver/authorize-ssl#ca-hierarchies).
+
+---
 ## 2025-12-16
 
 ### Feature

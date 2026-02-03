@@ -2304,6 +2304,11 @@
 
 
 <h1 id="cloud-workstations">Cloud Workstations</h1>
+<h2 id="2026-01-31">2026-01-31</h2>
+<h3 id="feature">Feature</h3>
+<p>Cloud Workstations supports <a href="https://docs.cloud.google.com/compute/docs/disks/hyperdisks">Hyperdisk Balanced High Availability</a> (<code>hyperdisk-balanced-ha</code>) for persistent directories on configurations using A3, C3, C4, G4, M3, N4, N4D, and Z3 machine series. You can specify the disk type using the <code>--disk-type</code> flag with the <a href="https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/create"><code>gcloud workstations configs create</code></a> and <a href="https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/update"><code>gcloud workstations configs update</code></a> commands.</p>
+<p>Cloud Workstations supports A3 machine types with Hyperdisk only. For more details, see <a href="https://docs.cloud.google.com/workstations/docs/available-machine-types">Available machine types</a> and <a href="https://docs.cloud.google.com/workstations/docs/available-gpus">Available GPUs</a>.</p>
+<hr />
 <h2 id="2025-12-05">2025-12-05</h2>
 <h3 id="change">Change</h3>
 <p>Cloud Workstations predefined images include
@@ -2318,11 +2323,11 @@ pre-installed. To continue using JDK 11,
 <a href="https://docs.cloud.google.com/workstations/docs/customize-container-images">customize your container images</a>.</p>
 <hr />
 <h2 id="2025-07-07">2025-07-07</h2>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_1">Feature</h3>
 <p>Cloud Workstations is available in the <code>europe-central2</code> region (Warsaw). For more information, see <a href="https://cloud.google.com/workstations/docs/locations">Locations</a>.</p>
 <hr />
 <h2 id="2025-06-09">2025-06-09</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>The JetBrains <a href="https://cloud.google.com/workstations/docs/develop-code-using-local-jetbrains-ides#add_a_server_readiness_check">readiness server</a> lets you configure the port it listens on and the timeout when you specify the <code>JETBRAINS_READY_SERVER_PORT</code> and <code>JETBRAINS_READY_SERVER_TIMEOUT</code> environment variables in your workstation environment. For more information about setting environment variables, see <a href="https://cloud.google.com/workstations/docs/create-configuration#customize_environment">Customizing your environment</a>.</p>
 <hr />
 <h2 id="2025-06-03">2025-06-03</h2>
@@ -2353,6 +2358,9 @@ pre-installed. To continue using JDK 11,
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-workstations">Cloud Workstations</a></li>
+          <li class="nav-item">
+            <a href="#2026-01-31" class="nav-link">2026-01-31</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-12-05" class="nav-link">2025-12-05</a>
           </li>

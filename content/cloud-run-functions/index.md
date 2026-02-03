@@ -1,5 +1,12 @@
 # Cloud Run functions
 
+## 2026-02-02
+
+### Feature
+
+Support for [PHP 8.5 runtime](https://docs.cloud.google.com/functions/docs/concepts/execution-environment#php) is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-01-27
 
 ### Feature

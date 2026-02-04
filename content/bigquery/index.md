@@ -1,5 +1,15 @@
 # BigQuery
 
+## 2026-02-03
+
+### Announcement
+
+Gemini in BigQuery now processes data in the same jurisdiction (`US` or `EU`) as
+your BigQuery datasets, or based upon user-specified location settings. For more
+information, see [Where Gemini BigQuery processes your
+data](https://docs.cloud.google.com/bigquery/docs/gemini-locations).
+
+---
 ## 2026-02-02
 
 ### Feature

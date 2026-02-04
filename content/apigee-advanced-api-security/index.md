@@ -1,5 +1,28 @@
 # Apigee Advanced API Security
 
+## 2026-02-03
+
+### Feature
+
+**Support for configuring two condition types within a single security action**
+
+Announcing the availability of support for two condition types
+in a single security action. For example, you can include both IP addresses and
+ASN numbers in the same security action.
+
+This feature is available in Apigee and Apigee hybrid 1.16.0 and later.
+
+**Note:** This feature is available when configuring the security action
+via the API, not the UI, at this time.
+
+For usage information, see [Configure multiple condition types](https://docs.cloud.google.com/apigee/docs/api-security/security-actions-api#configure-multiple-condition-types) in the documentation.
+
+### Announcement
+
+On February 3, 2026 we released an updated version of Advanced API Security
+security actions
+
+---
 ## 2026-01-12
 
 ### Announcement

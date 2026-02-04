@@ -1,5 +1,80 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-02-03
+
+### Fixed
+
+The following issues were addressed in this release:
+
+* Fixed an issue on the Agent Performance dashboard where the **Disconnect
+  Status** field for chats incorrectly displayed `Unknown` or was empty.
+* Fixed an issue on the All Interactions - Calls dashboard where the **SLA%**
+  and **SLA% by 30 Minute Interval** tiles displayed the wrong calculations.
+* Fixed an issue where the `Voice Inbound (Direct)` and `Voice Outbound
+  (Direct)` values were missing from the **Interaction Type** filter on the
+  following dashboards:
+
+  + Real-time Calls - Calls Queued
+  + Real-time Queue Monitoring - Calls
+* Fixed an issue where the **Call Type** field on the **Agent Productivity
+  Detailed - Calls** table of the Agent Performance dashboard displayed
+  `Unknown` instead of `Voice Inbound (Direct)` or `Voice Outbound (Direct)`.
+* Fixed the experience for filtering on the consumer phone number for the
+  following dashboards:
+
+  + All Interactions - Calls
+  + Real-time Calls - Calls Connected
+  + Abandons - Calls
+* Fixed an issue on the All Interactions - Calls dashboard where widgets
+  weren't loading.
+* Fixed an issue on the Email dashboard where agent information was missing
+  for email sessions that were started by the end-user.
+* Fixed an issue where the **Consumer Phone Number** field was missing from
+  the following dashboards:
+
+  + Agent Activity
+  + Failed Sessions - Calls
+  + Missed Interactions - Calls
+  + Abandons - Calls
+  + CSAT - Calls
+
+  We also renamed the **Customer ANI** field to **Consumer Phone Number**.
+
+### Feature
+
+**Email dashboard**
+
+The Email dashboard now includes the following table:
+
+* **Queue Transfers Detail**: email transfer information at the instance,
+  queue, and session levels
+
+For more information, see
+[Email](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-email-performance).
+
+### Announcement
+
+**Advanced reporting dashboards 3.43**
+
+We've released version 3.43 of the advanced reporting dashboards.
+
+### Feature
+
+**Performance overview dashboard**
+
+The performance overview dashboard now includes the following tiles:
+
+* **Avg Queue Time**: the average time a session (call or chat) spent in a
+  queue until an agent accepted it or the end-user abandoned it
+* **Avg Queue Abandon Time**: the average time that sessions (calls or chats)
+  waited in a queue before being disconnected without an agent accepting them
+* **Sentiment Score**: the average sentiment score for sessions (calls or
+  chats)
+
+For more information, see [Performance overview
+dashboard](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-perf-overview).
+
+---
 ## 2026-02-02
 
 ### Fixed

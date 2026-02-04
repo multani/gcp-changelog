@@ -1,5 +1,62 @@
 # Google SecOps SIEM
 
+## 2026-02-04
+
+### Announcement
+
+**New parser documentation now available**
+
+New parser documentation is available to help you ingest and normalize logs from the following sources:
+
+* [Collect ForgeRock OpenIDM logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/forgerock-openidm)
+* [Collect Forseti Open Source logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/forseti)
+* [Collect Fortinet FortiClient logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-forticlient)
+* [Collect Fortinet FortiDDoS logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fortiddos)
+* [Collect Fortinet FortiEDR logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fortiedr)
+* [Collect Fortinet FortiManager logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fortimanager)
+* [Collect Fortinet Switch logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-switch)
+* [Collect Fortra Powertech SIEM Agent logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortra-powertech-siem-agent)
+* [Collect Google App Engine logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-app-engine)
+* [Collect Google Cloud DNS Threat Detector log](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-dns-atd)s
+* [Collect Google Cloud Monitoring alerting activity logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-monitoring-alerts)
+* [Collect Google Cloud Network Connectivity Center logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-ids)
+* [Collect Google Cloud Secure Web Proxy logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-secure-wp)
+* [Collect Gmail logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gmail-logs)
+* [Collect H3C Comware Platform Switch logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/h3c-switch)
+* [Collect HackerOne logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hackerone)
+* [Collect Hillstone Firewall logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hillstone-ngfw)
+* [Collect Hitachi Content Platform logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hitachi-content-platform)
+* [Collect HYPR MFA logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hypr-mfa)
+* [Collect IBM Guardium logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ibm-guardium)
+
+### Announcement
+
+**New parser documentation now available**
+
+New parser documentation is available to help you ingest and normalize logs from the following sources:
+
+* [Collect ForgeRock OpenIDM logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/forgerock-openidm)
+* [Collect Forseti Open Source logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/forseti)
+* [Collect Fortinet FortiClient logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-forticlient)
+* [Collect Fortinet FortiDDoS logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fortiddos)
+* [Collect Fortinet FortiEDR logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fortiedr)
+* [Collect Fortinet FortiManager logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fortimanager)
+* [Collect Fortinet Switch logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-switch)
+* [Collect Fortra Powertech SIEM Agent logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortra-powertech-siem-agent)
+* [Collect Google App Engine logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-app-engine)
+* [Collect Google Cloud DNS Threat Detector log](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-dns-atd)s
+* [Collect Google Cloud Monitoring alerting activity logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-monitoring-alerts)
+* [Collect Google Cloud Network Connectivity Center logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-ids)
+* [Collect Google Cloud Secure Web Proxy logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-secure-wp)
+* [Collect Gmail logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gmail-logs)
+* [Collect H3C Comware Platform Switch logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/h3c-switch)
+* [Collect HackerOne logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hackerone)
+* [Collect Hillstone Firewall logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hillstone-ngfw)
+* [Collect Hitachi Content Platform logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hitachi-content-platform)
+* [Collect HYPR MFA logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hypr-mfa)
+* [Collect IBM Guardium logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ibm-guardium)
+
+---
 ## 2026-02-03
 
 ### Deprecated

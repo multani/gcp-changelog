@@ -1,5 +1,16 @@
 # BigQuery
 
+## 2026-02-04
+
+### Change
+
+Data transfers from the [YouTube Channel](https://docs.cloud.google.com/bigquery/docs/youtube-channel-transfer)
+and [YouTube Content Owner](https://docs.cloud.google.com/bigquery/docs/youtube-content-owner-transfer)
+data sources now support reach reports. For more information, see
+[YouTube Channel report transformation](https://docs.cloud.google.com/bigquery/docs/youtube-channel-transformation)
+and [YouTube Content Owner report transformation](https://docs.cloud.google.com/bigquery/docs/youtube-content-owner-transformation).
+
+---
 ## 2026-02-03
 
 ### Announcement

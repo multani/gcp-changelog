@@ -1,5 +1,49 @@
 # Google SecOps Marketplace
 
+## 2026-02-04
+
+### Change
+
+**Siemplify ThreatFuse**: Version 16.0
+
+* Updated the configuration (`Connector.def`) of the following connector::
+
+  + **Siemplify ThreatFuse - Observables Connector**
+
+### Change
+
+**Siemplify**: Version 102.0
+
+* Refactored the following actions:
+
+  + **Get Case Details**
+  + **Wait For Custom Fields**
+  + **Set Custom Fields**
+  + **Get Similar Cases**
+  + **Get Custom Field Values**
+  + **Export Case**
+* Updated error handling in the following action:
+
+  + **Assign Case**
+
+### Change
+
+**Google Chronicle**: Version 75.0
+
+* Optimized performance for large data tables in the following actions:
+
+  + **Is Value In Data Table**
+  + **Remove Rows From Data Table**
+
+### Change
+
+**Azure Security Center**: Version 13.0
+
+* Updated the configuration (`Connector.def`) of the following connector:
+
+  + **Azure Security Center - Security Alerts Connector**
+
+---
 ## 2026-01-28
 
 ### Feature

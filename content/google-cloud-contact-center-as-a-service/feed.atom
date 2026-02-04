@@ -2,9 +2,115 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-02-02T00:00:00+00:00</updated>
+  <updated>2026-02-03T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-02-03:fixed:0</id>
+    <published>2026-02-03T00:00:00+00:00</published>
+    <updated>2026-02-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were addressed in this release:</p>
+<ul>
+<li>Fixed an issue on the Agent Performance dashboard where the <strong>Disconnect
+  Status</strong> field for chats incorrectly displayed <code>Unknown</code> or was empty.</li>
+<li>Fixed an issue on the All Interactions - Calls dashboard where the <strong>SLA%</strong>
+  and <strong>SLA% by 30 Minute Interval</strong> tiles displayed the wrong calculations.</li>
+<li>
+<p>Fixed an issue where the <code>Voice Inbound (Direct)</code> and <code>Voice Outbound
+  (Direct)</code> values were missing from the <strong>Interaction Type</strong> filter on the
+  following dashboards:</p>
+</li>
+<li>
+<p>Real-time Calls - Calls Queued</p>
+</li>
+<li>Real-time Queue Monitoring - Calls</li>
+<li>Fixed an issue where the <strong>Call Type</strong> field on the <strong>Agent Productivity
+  Detailed - Calls</strong> table of the Agent Performance dashboard displayed
+  <code>Unknown</code> instead of <code>Voice Inbound (Direct)</code> or <code>Voice Outbound (Direct)</code>.</li>
+<li>
+<p>Fixed the experience for filtering on the consumer phone number for the
+  following dashboards:</p>
+</li>
+<li>
+<p>All Interactions - Calls</p>
+</li>
+<li>Real-time Calls - Calls Connected</li>
+<li>Abandons - Calls</li>
+<li>Fixed an issue on the All Interactions - Calls dashboard where widgets
+  weren't loading.</li>
+<li>Fixed an issue on the Email dashboard where agent information was missing
+  for email sessions that were started by the end-user.</li>
+<li>
+<p>Fixed an issue where the <strong>Consumer Phone Number</strong> field was missing from
+  the following dashboards:</p>
+</li>
+<li>
+<p>Agent Activity</p>
+</li>
+<li>Failed Sessions - Calls</li>
+<li>Missed Interactions - Calls</li>
+<li>Abandons - Calls</li>
+<li>CSAT - Calls</li>
+</ul>
+<p>We also renamed the <strong>Customer ANI</strong> field to <strong>Consumer Phone Number</strong>.</p>]]></content>
+    <summary>Several issues affecting dashboards and data accuracy have been resolved. This includes incorrect data displays, missing values, and loading problems across various performance and interaction dashboards. Additionally, a field was renamed for clarity.</summary>
+    <title>Fixed: Resolved dashboard and field issues</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-02-03:feature:1</id>
+    <published>2026-02-03T00:00:00+00:00</published>
+    <updated>2026-02-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Email dashboard</strong></p>
+<p>The Email dashboard now includes the following table:</p>
+<ul>
+<li><strong>Queue Transfers Detail</strong>: email transfer information at the instance,
+  queue, and session levels</li>
+</ul>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-email-performance">Email</a>.</p>]]></content>
+    <summary>The Email dashboard has been updated to include a new table showing detailed email transfer information. This table provides insights at the instance, queue, and session levels, offering a more granular view of email performance.</summary>
+    <title>Feature: New Email Transfer Details</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-02-03:announcement:2</id>
+    <published>2026-02-03T00:00:00+00:00</published>
+    <updated>2026-02-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Advanced reporting dashboards 3.43</strong></p>
+<p>We've released version 3.43 of the advanced reporting dashboards.</p>]]></content>
+    <summary>Version 3.43 of the advanced reporting dashboards is now available. This update brings enhanced features and improvements to your reporting capabilities. Explore the latest version to gain deeper insights from your data.</summary>
+    <title>Announcement: New reporting dashboards released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-02-03:feature:3</id>
+    <published>2026-02-03T00:00:00+00:00</published>
+    <updated>2026-02-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Performance overview dashboard</strong></p>
+<p>The performance overview dashboard now includes the following tiles:</p>
+<ul>
+<li><strong>Avg Queue Time</strong>: the average time a session (call or chat) spent in a
+  queue until an agent accepted it or the end-user abandoned it</li>
+<li><strong>Avg Queue Abandon Time</strong>: the average time that sessions (calls or chats)
+  waited in a queue before being disconnected without an agent accepting them</li>
+<li><strong>Sentiment Score</strong>: the average sentiment score for sessions (calls or
+  chats)</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-perf-overview">Performance overview
+dashboard</a>.</p>]]></content>
+    <summary>The performance overview dashboard has been updated with new tiles, including Avg Queue Time, Avg Queue Abandon Time, and Sentiment Score. These additions provide deeper insights into customer interaction wait times and sentiment.</summary>
+    <title>Feature: New performance dashboard tiles</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

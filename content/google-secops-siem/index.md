@@ -75,17 +75,85 @@ Use the **re.capture\_all()** function to extract every non-overlapping match of
 ---
 ## 2026-02-03
 
+### Feature
+
+**Share custom column sets**
+
+Google SecOps now lets you share custom sets of columns in the **Events** table for
+consistent analysis across teams.
+
+For more details, see [Search for events and alerts](https://cloud.google.com/chronicle/docs/investigation/udm-search)
+
+### Feature
+
+**Share custom column sets**
+
+Google SecOps now lets you share custom sets of columns in the **Events** table for
+consistent analysis across teams.
+
+For more details, see [Search for events and alerts](https://cloud.google.com/chronicle/docs/investigation/udm-search)
+
 ### Deprecated
 
 **Mute an IoC deprecated**
 
 The Mute an IoC feature is deprecated, and the **IOC details** page no longer displays the **Mute** indicator.
 
+### Announcement
+
+**Data RBAC global scope changes for ATI**
+
+To enhance data security, several features related to Indicators of Compromise
+(IOCs) and Emerging Threats now require global scope data RBAC permissions.
+Users without global scope will see restricted information in the following areas:
+
+* **Emerging threats** page: IOC match counts per campaign are no longer visible.
+* **Entity widget overlay**: The **Indicators** table is hidden or appears empty.
+* **Threat details** page: The related entities, IOC matches, and GTI IOC tables are no longer visible.
+* **Entity summary** widget: GTI scores are excluded from the overlay.
+* **IOC details** page: The **Indicator Details** tab doesn't populate.
+
+**API impact**: API calls to `IocService` and `ThreatCollectionService` now
+require global scope. Direct calls made with the CLI or client libraries fail
+without this permission.
+
+**Required**: Google SecOps administrators should review user roles and
+grant global scope to those who require continued access to these threat
+intelligence features.
+
+**Note:** This change follows a phased rollout throughout the week of
+February 02, 2026 to February 08, 2026.
+
 ### Deprecated
 
 **Mute an IoC deprecated**
 
 The Mute an IoC feature is deprecated, and the **IOC details** page no longer displays the **Mute** indicator.
+
+### Announcement
+
+**Data RBAC global scope changes for ATI**
+
+To enhance data security, several features related to Indicators of Compromise
+(IOCs) and Emerging Threats now require global scope data RBAC permissions.
+Users without global scope will see restricted information in the following areas:
+
+* **Emerging threats** page: IOC match counts per campaign are no longer visible.
+* **Entity widget overlay**: The **Indicators** table is hidden or appears empty.
+* **Threat details** page: The related entities, IOC matches, and GTI IOC tables are no longer visible.
+* **Entity summary** widget: GTI scores are excluded from the overlay.
+* **IOC details** page: The **Indicator Details** tab doesn't populate.
+
+**API impact**: API calls to `IocService` and `ThreatCollectionService` now
+require global scope. Direct calls made with the CLI or client libraries fail
+without this permission.
+
+**Required**: Google SecOps administrators should review user roles and
+grant global scope to those who require continued access to these threat
+intelligence features.
+
+**Note:** This change follows a phased rollout throughout the week of
+February 02, 2026 to February 08, 2026.
 
 ---
 ## 2026-02-02

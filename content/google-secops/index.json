@@ -21,11 +21,27 @@
     ],
     "2026-02-03": [
       {
+        "kind": "Feature",
+        "content": "**Share custom column sets**\n\nGoogle SecOps now lets you share custom sets of columns in the **Events** table for\nconsistent analysis across teams.\n\nFor more details, see [Search for events and alerts](https://cloud.google.com/chronicle/docs/investigation/udm-search)",
+        "summary": {
+          "title": "Share custom column sets",
+          "summary": "Google SecOps now allows sharing custom column sets in the Events table, enabling consistent analysis across teams. This feature streamlines investigations by ensuring everyone uses the same data views."
+        }
+      },
+      {
         "kind": "Deprecated",
         "content": "**Mute an IoC deprecated**\n\nThe Mute an IoC feature is deprecated, and the **IOC details** page no longer displays the **Mute** indicator.",
         "summary": {
           "title": "IoC Muting Feature Deprecated",
           "summary": "The IoC muting feature has been deprecated. Consequently, the Mute indicator is no longer visible on the IOC details page."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "**Data RBAC global scope changes for ATI**\n\nTo enhance data security, several features related to Indicators of Compromise\n(IOCs) and Emerging Threats now require global scope data RBAC permissions.\nUsers without global scope will see restricted information in the following areas:\n\n* **Emerging threats** page: IOC match counts per campaign are no longer visible.\n* **Entity widget overlay**: The **Indicators** table is hidden or appears empty.\n* **Threat details** page: The related entities, IOC matches, and GTI IOC tables are no longer visible.\n* **Entity summary** widget: GTI scores are excluded from the overlay.\n* **IOC details** page: The **Indicator Details** tab doesn't populate.\n\n**API impact**: API calls to `IocService` and `ThreatCollectionService` now\nrequire global scope. Direct calls made with the CLI or client libraries fail\nwithout this permission.\n\n**Required**: Google SecOps administrators should review user roles and\ngrant global scope to those who require continued access to these threat\nintelligence features.\n\n**Note:** This change follows a phased rollout throughout the week of\nFebruary 02, 2026 to February 08, 2026.",
+        "summary": {
+          "title": "Data security update for threat intelligence",
+          "summary": "Changes to data RBAC permissions for Indicators of Compromise and Emerging Threats now require global scope for full access. Users without this scope will experience restricted visibility in several threat intelligence features and API calls. Administrators should review and update user roles accordingly."
         }
       }
     ],

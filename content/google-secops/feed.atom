@@ -56,13 +56,56 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops:2026-02-03:deprecated:0</id>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-02-03:feature:0</id>
+    <published>2026-02-03T00:00:00+00:00</published>
+    <updated>2026-02-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Share custom column sets</strong></p>
+<p>Google SecOps now lets you share custom sets of columns in the <strong>Events</strong> table for
+consistent analysis across teams.</p>
+<p>For more details, see <a href="https://cloud.google.com/chronicle/docs/investigation/udm-search">Search for events and alerts</a></p>]]></content>
+    <summary>Google SecOps now allows sharing custom column sets in the Events table, enabling consistent analysis across teams. This feature streamlines investigations by ensuring everyone uses the same data views.</summary>
+    <title>Feature: Share custom column sets</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-02-03:deprecated:1</id>
     <published>2026-02-03T00:00:00+00:00</published>
     <updated>2026-02-03T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Mute an IoC deprecated</strong></p>
 <p>The Mute an IoC feature is deprecated, and the <strong>IOC details</strong> page no longer displays the <strong>Mute</strong> indicator.</p>]]></content>
     <summary>The IoC muting feature has been deprecated. Consequently, the Mute indicator is no longer visible on the IOC details page.</summary>
     <title>Deprecated: IoC Muting Feature Deprecated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-02-03:announcement:2</id>
+    <published>2026-02-03T00:00:00+00:00</published>
+    <updated>2026-02-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Data RBAC global scope changes for ATI</strong></p>
+<p>To enhance data security, several features related to Indicators of Compromise
+(IOCs) and Emerging Threats now require global scope data RBAC permissions.
+Users without global scope will see restricted information in the following areas:</p>
+<ul>
+<li><strong>Emerging threats</strong> page: IOC match counts per campaign are no longer visible.</li>
+<li><strong>Entity widget overlay</strong>: The <strong>Indicators</strong> table is hidden or appears empty.</li>
+<li><strong>Threat details</strong> page: The related entities, IOC matches, and GTI IOC tables are no longer visible.</li>
+<li><strong>Entity summary</strong> widget: GTI scores are excluded from the overlay.</li>
+<li><strong>IOC details</strong> page: The <strong>Indicator Details</strong> tab doesn't populate.</li>
+</ul>
+<p><strong>API impact</strong>: API calls to <code>IocService</code> and <code>ThreatCollectionService</code> now
+require global scope. Direct calls made with the CLI or client libraries fail
+without this permission.</p>
+<p><strong>Required</strong>: Google SecOps administrators should review user roles and
+grant global scope to those who require continued access to these threat
+intelligence features.</p>
+<p><strong>Note:</strong> This change follows a phased rollout throughout the week of
+February 02, 2026 to February 08, 2026.</p>]]></content>
+    <summary>Changes to data RBAC permissions for Indicators of Compromise and Emerging Threats now require global scope for full access. Users without this scope will experience restricted visibility in several threat intelligence features and API calls. Administrators should review and update user roles accordingly.</summary>
+    <title>Announcement: Data security update for threat intelligence</title>
   </entry>
   <entry>
     <author>

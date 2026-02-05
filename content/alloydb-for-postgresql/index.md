@@ -1,5 +1,18 @@
 # AlloyDB for PostgreSQL
 
+## 2026-02-05
+
+### Feature
+
+[Virtual columns for
+expressions](https://cloud.google.com/alloydb/docs/columnar-engine/add-frequent-expressions)
+is a feature of the columnar engine in
+[Preview](https://cloud.google.com/products#product-launch-stages) that
+significantly improves query performance and reduces CPU consumption. It caches
+the results of frequently used expressions, which is especially beneficial for
+analytical workloads on large datasets.
+
+---
 ## 2026-01-27
 
 ### Feature

@@ -1,5 +1,18 @@
 # Virtual Private Cloud
 
+## 2026-02-04
+
+### Feature
+
+You can create individual static external IPv4 addresses from
+bring your own IP addresses (BYOIP) prefixes. This feature is
+available in **General Availability** and only applies to IPv4
+regional v2 prefixes that are created after
+December 13, 2025.
+
+For more information, see [Enhanced IP address allocation](https://docs.cloud.google.com/vpc/docs/bring-your-own-ip#enhanced-allocation).
+
+---
 ## 2026-01-20
 
 ### Feature

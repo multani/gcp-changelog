@@ -10,6 +10,15 @@ data sources now support reach reports. For more information, see
 [YouTube Channel report transformation](https://docs.cloud.google.com/bigquery/docs/youtube-channel-transformation)
 and [YouTube Content Owner report transformation](https://docs.cloud.google.com/bigquery/docs/youtube-content-owner-transformation).
 
+### Feature
+
+You can now associate [data policies directly on
+columns](https://docs.cloud.google.com/bigquery/docs/column-data-masking#data-policies-on-column). This
+feature enables direct database administration for controlling access and
+applying masking and transformation rules at the column level. This feature is
+now [generally
+available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
 ---
 ## 2026-02-03
 

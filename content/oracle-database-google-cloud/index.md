@@ -1,5 +1,14 @@
 # Oracle Database@Google Cloud
 
+## 2026-02-04
+
+### Feature
+
+For Exadata Database Service, Oracle Database@Google Cloud supports the `asia-northeast2` (Osaka, Japan) region.
+
+For a list of supported locations, see [Supported regions and zones](https://docs.cloud.google.com/oracle/database/docs/regions-and-zones).
+
+---
 ## 2025-12-18
 
 ### Feature

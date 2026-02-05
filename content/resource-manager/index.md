@@ -4,6 +4,16 @@
 
 ### Feature
 
+Organization Policy Service custom constraints are available for some
+Artifact Analysis resources. For more information, see
+[Use custom organization policies](https://docs.cloud.google.com/artifact-analysis/docs/custom-constraints).
+
+Organization Policy Service custom constraints are available for some Storage Transfer Service
+resources. For more information, see
+[Custom organization policy constraints](https://docs.cloud.google.com/storage-transfer/docs/custom-constraints).
+
+### Feature
+
 **Access Resource Manager using our remote MCP server**
 
 You can use the Resource Manager remote MCP server to search for and identify all

@@ -1,5 +1,568 @@
 # Container Optimized OS
 
+## 2026-02-03
+
+### Change
+
+
+
+### cos-dev-129-19506-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.67](https://cos.googlesource.com/third_party/kernel/+/1c4b37fda000c09fb986f28b1dcc4a063cfe47bc ) | v27.5.1 | v2.2.0 | [See List](https://storage.googleapis.com/cos-tools/19506.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Upgraded chromeos-base/power\_manager-client to v0.0.1-r2972.
+
+### Fixed
+
+Upgraded net-libs/gnutls to v3.8.11.
+
+### Fixed
+
+Upgraded sys-apps/dmidecode to v3.7.
+
+### Fixed
+
+Upgraded chromeos-base/session\_manager-client to v0.0.1-r2833.
+
+### Security
+
+Fixed KCTF-50da4b9 in the Linux kernel.
+
+### Feature
+
+Removed the futility program from the root file system.
+
+### Security
+
+Fixed CVE-2025-61729 in dev-lang/go.
+
+### Fixed
+
+Upgraded app-crypt/mit-krb5 from version 1.20.1 to version 1.22.1.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.udp\_mem: 188034 250715 376068 -> 188034 250714 376068
+
+### Security
+
+Fixed CVE-2025-61727 in dev-lang/go.
+
+### Change
+
+Upgrade dev-libs/json-c from 0.16-r1 to 0.18.0.
+
+### Fixed
+
+Added binary auth-provider-gcp.
+
+### Change
+
+Updated app-containers/runc to v1.4.0.
+
+### Fixed
+
+Upgraded app-admin/fluent-bit to v4.2.2.
+
+### Fixed
+
+Upgraded sys-apps/nvme-cli from version 1.6-r1 to version 2.16, added package sys-libs/libnvme.
+
+### Fixed
+
+Updated cos-gpu-installer to v2.5.10.
+
+### Fixed
+
+Upgraded sys-apps/less to v691.
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20260112.00.
+
+### Fixed
+
+Upgraded app-containers/docker-credential-gcr to v2.1.31
+
+### Fixed
+
+Upgraded chromeos-base/google-breakpad to v2026.01.12.054131-r266.
+
+### Fixed
+
+Upgraded app-containers/cni-plugins to v1.9.0.
+
+### Fixed
+
+Upgraded app-shells/bash to v5.3.
+
+### Security
+
+Fixed CVE-2025-13837 in dev-lang/python.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.51.1.
+
+### Security
+
+Fixed CVE-2025-66471 and CVE-2025-66418 in dev-python/urllib3.
+
+### Feature
+
+Added support for CASFS (Content Addressable Storage File System) as a kernel module.
+
+### Fixed
+
+Upgraded chromeos-base/chromeos-common-script to v0.0.1-r671.
+
+### Fixed
+
+Upgraded google-guest-configs to v20260121.00.
+
+### Fixed
+
+Upgraded app-containers/docker-credential-helpers to v0.9.5.
+
+### Fixed
+
+Updated kubelet and kubectl to v1.35.0.
+
+### Change
+
+Made it so that /mnt/disks is mounted as noexec.
+
+### Fixed
+
+Upgraded sys-apps/pv to v1.10.3.
+
+### Change
+
+Updated dev-libs/openssl to v3.5.4.
+
+### Fixed
+
+Upgraded chromeos-base/debugd-client to v0.0.1-r2737.
+
+### Fixed
+
+Upgraded app-admin/sosreport to v4.10.2.
+
+### Security
+
+Fixed CVE-2025-12084 in dev-lang/python.
+
+### Fixed
+
+Updated sys-libs/readline to v8.3.
+
+### Change
+
+Upgrade dev-libs/libuv from 1.43.0 to 1.51.0-r1.
+
+### Security
+
+Fixed KCTF-2397e92 in the Linux kernel.
+
+### Change
+
+Updated the Linux kernel to v6.12.67.
+
+### Fixed
+
+Upgraded app-admin/oslogin to v20260116.00.
+
+### Fixed
+
+Upgraded chromeos-base/google-breakpad to v2026.01.16.201758-r268.
+
+### Change
+
+Updated CONFIG\_BLK\_DEV\_LOOP\_MIN\_COUNT to 0. This allows
+unlimited loop devices.
+
+### Fixed
+
+Upgraded sys-apps/kmod to v34.2.
+
+### Fixed
+
+Upgraded net-misc/socat to v1.8.1.0.
+
+### Change
+
+Updated app-containers/containerd to v2.2.0.
+
+### Security
+
+Fixed CVE-2026-21441 in dev-python/urllib3.
+
+### Fixed
+
+Upgraded net-dns/c-ares to v1.34.6.
+
+### Fixed
+
+Upgraded sys-libs/libseccomp to v2.6.0-r3.
+
+### Fixed
+
+Upgraded app-benchmarks/microbenchmarks to v0.0.1-r21.
+
+### Security
+
+Fixed CVE-2025-13836 in dev-lang/python.
+
+### Fixed
+
+Upgraded chromeos-base/google-breakpad to v2025.12.22.204548-r263.
+
+### Change
+
+Upgrade dev-util/cmake from 3.26.4 to 3.31.9.
+
+### Change
+
+
+
+### cos-125-19216-104-133
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/d79e2a3f722af5d20208d089d7da9b07124ea6a7 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.104.133/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-71148 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71151 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22994 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22979 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22998 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22980 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23011 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38591 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23005 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22976 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23010 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-50da4b9 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71160 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71157 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22996 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-2397e92 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23003 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22989 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40149 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22988 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23002 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71149 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22977 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22999 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23001 in the Linux kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: kernel.tainted: 4096 -> 4608
+
+### Security
+
+Fixed CVE-2025-71156 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-0915 in sys-apps/glibc.
+
+### Security
+
+Fixed CVE-2026-23000 in the Linux kernel.
+
+### Change
+
+
+
+### cos-121-18867-294-112
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/ae5e8e39e06320f6f9149d3e219c57bef0d7f151 ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.294.112/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-71148 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-2397e92 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71151 in the Linux kernel.
+
+### Feature
+
+Enabled TC Traffic Police as a module.
+
+### Security
+
+Fixed CVE-2026-22994 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22988 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71160 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22976 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22979 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22980 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71149 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22977 in the Linux kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: kernel.tainted: 4096 -> 4608
+
+### Security
+
+Fixed KCTF-50da4b9 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-22111 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-0915 in sys-apps/glibc.
+
+### Change
+
+
+
+### cos-117-18613-439-120
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/1587565bad32343ed4bfeb5fd619967ed3db343a ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.439.120/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-71151 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22977 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22979 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22980 in the Linux kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: kernel.tainted: 4096 -> 4608
+
+### Security
+
+Fixed KCTF-50da4b9 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-2397e92 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-0915 in sys-apps/glibc.
+
+### Security
+
+Fixed CVE-2026-22994 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71148 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22988 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22976 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71149 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71160 in the Linux kernel.
+
+### Change
+
+
+
+### cos-113-18244-521-98
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/ddebac76ba109e1bec46dd70ce8260528fc79065 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.98/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-0915 in sys-apps/glibc.
+
+### Security
+
+Fixed CVE-2026-22988 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-apps/less to v691.
+
+### Security
+
+Fixed KCTF-50da4b9 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-2397e92 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22977 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22979 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2024-49968 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22994 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22980 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71149 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22976 in the Linux kernel.
+
+---
 ## 2026-01-28
 
 ### Change

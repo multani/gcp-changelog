@@ -1,5 +1,20 @@
 # Google Kubernetes Engine
 
+## 2026-02-03
+
+### Feature
+
+Image streaming and secondary boot disks are now generally available (GA) for
+nodes using the Ubuntu with containerd (`UBUNTU_CONTAINERD`) image type. These
+features improve workload startup performance on GKE Standard and Autopilot clusters
+through image data streaming and preloaded disk data. To use these features on
+Ubuntu nodes, your cluster must be running GKE version 1.35.0-gke.1403000 or later.
+
+For more information, see the documentation for
+[Image Streaming](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/image-streaming)
+and [Using Secondary Boot Disks](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/data-container-image-preloading).
+
+---
 ## 2026-01-29
 
 ### Security

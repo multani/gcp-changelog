@@ -1,5 +1,20 @@
 # Gemini Enterprise
 
+## 2026-02-04
+
+### Feature
+
+**Gemini Enterprise and NotebookLM Enterprise: Usage audit logs available in Cloud Logging**
+
+Gemini Enterprise admins can access user query and response audit logs in
+Cloud Logging for both Gemini Enterprise and NotebookLM Enterprise.
+
+For more information, see:
+
+* [Configure usage audit logging for Gemini Enterprise](https://docs.cloud.google.com/gemini/enterprise/docs/set-up-usage-audit-logs)
+* [Configure usage audit logging for NotebookLM Enterprise](https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-usage-audit-logs-for-nblme)
+
+---
 ## 2026-02-02
 
 ### Feature

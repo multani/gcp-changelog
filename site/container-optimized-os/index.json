@@ -1,6 +1,1080 @@
 {
   "name": "Container Optimized OS",
   "entries": {
+    "2026-02-03": [
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Update to our service availability",
+          "summary": "We are announcing a change to our service availability. Please review the details below for more information on how this might affect you."
+        }
+      },
+      {
+        "kind": "cos-dev-129-19506-0-0",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.67](https://cos.googlesource.com/third_party/kernel/+/1c4b37fda000c09fb986f28b1dcc4a063cfe47bc ) | v27.5.1 | v2.2.0 | [See List](https://storage.googleapis.com/cos-tools/19506.0.0/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "New COS version available",
+          "summary": "A new version of Container-Optimized OS (COS) is now available. This release includes updates to the kernel, Docker, and containerd, along with GPU driver information. You can find detailed version information in the release notes."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/power\\_manager-client to v0.0.1-r2972.",
+        "summary": {
+          "title": "Power manager client updated",
+          "summary": "The power manager client has been updated to version v0.0.1-r2972. This update addresses known issues and improves stability."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-libs/gnutls to v3.8.11.",
+        "summary": {
+          "title": "GnuTLS upgraded to v3.8.11",
+          "summary": "The GnuTLS library has been successfully upgraded to version 3.8.11. This update addresses recent security patches and improvements within the library. Users can expect enhanced stability and security with this new version."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/dmidecode to v3.7.",
+        "summary": {
+          "title": "dmidecode upgraded to v3.7",
+          "summary": "The sys-apps/dmidecode package has been successfully upgraded to version 3.7. This update brings the latest improvements and fixes for hardware information reporting. The upgrade process was completed without issues."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/session\\_manager-client to v0.0.1-r2833.",
+        "summary": {
+          "title": "Session manager client updated",
+          "summary": "The session manager client has been updated to version v0.0.1-r2833. This update addresses underlying issues and improves stability."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-50da4b9 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "A security vulnerability in the Linux kernel, identified as KCTF-50da4b9, has been resolved. This fix addresses a critical issue, enhancing the overall security of systems running the Linux operating system."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Removed the futility program from the root file system.",
+        "summary": {
+          "title": "Futility Program Removed",
+          "summary": "The futility program has been removed from the root file system. This change streamlines operations and removes unnecessary components."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-61729 in dev-lang/go.",
+        "summary": {
+          "title": "Go language security update",
+          "summary": "A security vulnerability in the Go programming language, CVE-2025-61729, has been resolved. This update ensures the stability and security of applications utilizing the Go development environment."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-crypt/mit-krb5 from version 1.20.1 to version 1.22.1.",
+        "summary": {
+          "title": "Kerberos library updated",
+          "summary": "The mit-krb5 library has been upgraded from version 1.20.1 to 1.22.1. This update includes security patches and performance improvements."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Runtime sysctl changes:\n\n* Changed: net.ipv4.udp\\_mem: 188034 250715 376068 -> 188034 250714 376068",
+        "summary": {
+          "title": "Runtime sysctl udp_mem change",
+          "summary": "The net.ipv4.udp_mem kernel parameter has been updated. This change affects the memory allocation for UDP sockets, with a slight adjustment to the maximum value."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-61727 in dev-lang/go.",
+        "summary": {
+          "title": "Security Update for Go",
+          "summary": "A security vulnerability (CVE-2025-61727) affecting the Go programming language has been addressed. This update ensures the security and integrity of systems utilizing Go. Users are encouraged to update to the latest version to benefit from this fix."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Upgrade dev-libs/json-c from 0.16-r1 to 0.18.0.",
+        "summary": {
+          "title": "json-c library updated",
+          "summary": "The json-c library has been upgraded from version 0.16-r1 to 0.18.0. This update includes various improvements and bug fixes for the JSON parsing library."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added binary auth-provider-gcp.",
+        "summary": {
+          "title": "Auth provider for GCP added",
+          "summary": "The binary auth-provider-gcp has been added. This update enhances authentication capabilities."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Updated app-containers/runc to v1.4.0.",
+        "summary": {
+          "title": "runc updated to v1.4.0",
+          "summary": "The app-containers/runc component has been updated to version 1.4.0. This update brings improvements and bug fixes to the container runtime."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/fluent-bit to v4.2.2.",
+        "summary": {
+          "title": "fluent-bit upgraded",
+          "summary": "The fluent-bit application has been upgraded to version 4.2.2. This update addresses issues and improves performance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/nvme-cli from version 1.6-r1 to version 2.16, added package sys-libs/libnvme.",
+        "summary": {
+          "title": "Updated nvme-cli",
+          "summary": "The nvme-cli package has been updated to version 2.16, and the new package sys-libs/libnvme has been added. This update includes improvements and bug fixes for NVMe device management."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated cos-gpu-installer to v2.5.10.",
+        "summary": {
+          "title": "cos-gpu-installer updated",
+          "summary": "The cos-gpu-installer has been updated to version 2.5.10. This update addresses recent issues and improves performance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/less to v691.",
+        "summary": {
+          "title": "less upgraded to v691",
+          "summary": "The sys-apps/less package has been upgraded to version 691. This update addresses recent issues and improves the functionality of the less utility."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/google-guest-configs to v20260112.00.",
+        "summary": {
+          "title": "Guest configs updated",
+          "summary": "The app-admin/google-guest-configs package has been upgraded to version v20260112.00. This update includes various fixes and improvements to the guest configuration management system."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-containers/docker-credential-gcr to v2.1.31",
+        "summary": {
+          "title": "Updated container credential helper",
+          "summary": "The docker-credential-gcr component has been updated to version v2.1.31. This update addresses underlying issues and improves the reliability of container credential management."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/google-breakpad to v2026.01.12.054131-r266.",
+        "summary": {
+          "title": "Breakpad updated",
+          "summary": "The google-breakpad component has been updated to version v2026.01.12.054131-r266. This update addresses existing issues and improves stability."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-containers/cni-plugins to v1.9.0.",
+        "summary": {
+          "title": "CNI Plugins Updated",
+          "summary": "The app-containers/cni-plugins have been upgraded to version 1.9.0. This update addresses underlying components related to container networking."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-shells/bash to v5.3.",
+        "summary": {
+          "title": "Bash updated to v5.3",
+          "summary": "The app-shells/bash package has been successfully upgraded to version 5.3. This update ensures that the bash shell is running on the latest available version."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-13837 in dev-lang/python.",
+        "summary": {
+          "title": "Security Update for Python",
+          "summary": "A critical security vulnerability, CVE-2025-13837, affecting the Python language has been resolved. This update ensures the security and stability of systems relying on Python. Users are advised to update their Python installations to the latest version to mitigate potential risks."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-db/sqlite to v3.51.1.",
+        "summary": {
+          "title": "SQLite upgraded to 3.51.1",
+          "summary": "The dev-db/sqlite package has been successfully upgraded to version 3.51.1. This update addresses recent issues and ensures improved stability for the database."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-66471 and CVE-2025-66418 in dev-python/urllib3.",
+        "summary": {
+          "title": "Security update for urllib3",
+          "summary": "This security update addresses vulnerabilities CVE-2025-66471 and CVE-2025-66418 in the dev-python/urllib3 library. Applying this update is crucial for maintaining the security posture of your applications."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added support for CASFS (Content Addressable Storage File System) as a kernel module.",
+        "summary": {
+          "title": "New File System Support Added",
+          "summary": "We've introduced support for the Content Addressable Storage File System (CASFS) as a kernel module. This enhancement allows for more efficient and secure data storage by utilizing content-based addressing."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/chromeos-common-script to v0.0.1-r671.",
+        "summary": {
+          "title": "Updated common scripts",
+          "summary": "The chromeos-common-script package has been updated to version 0.0.1-r671. This update addresses recent issues and improves script functionality."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded google-guest-configs to v20260121.00.",
+        "summary": {
+          "title": "Guest configurations updated",
+          "summary": "The google-guest-configs package has been updated to version v20260121.00. This update includes important fixes and improvements."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-containers/docker-credential-helpers to v0.9.5.",
+        "summary": {
+          "title": "Docker credential helpers updated",
+          "summary": "The app-containers/docker-credential-helpers have been upgraded to version 0.9.5. This update includes important fixes and improvements."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated kubelet and kubectl to v1.35.0.",
+        "summary": {
+          "title": "Kubelet and Kubectl Updated",
+          "summary": "Kubelet and Kubectl have been updated to version 1.35.0. This update includes important fixes and improvements."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Made it so that /mnt/disks is mounted as noexec.",
+        "summary": {
+          "title": "Mount option for /mnt/disks changed",
+          "summary": "The /mnt/disks mount option has been updated to noexec. This change enhances security by preventing the execution of binaries from this directory."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/pv to v1.10.3.",
+        "summary": {
+          "title": "pv upgraded to v1.10.3",
+          "summary": "The pv package has been successfully upgraded to version 1.10.3. This update addresses any outstanding issues and ensures improved performance and stability."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Updated dev-libs/openssl to v3.5.4.",
+        "summary": {
+          "title": "OpenSSL updated to v3.5.4",
+          "summary": "The OpenSSL library has been updated to version 3.5.4. This update includes important security patches and performance improvements. Please ensure your applications are compatible with this new version."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/debugd-client to v0.0.1-r2737.",
+        "summary": {
+          "title": "debugd-client upgraded",
+          "summary": "The debugd-client package has been upgraded to version v0.0.1-r2737. This update includes necessary fixes and improvements."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/sosreport to v4.10.2.",
+        "summary": {
+          "title": "sosreport upgraded",
+          "summary": "The sosreport package has been upgraded to version 4.10.2. This update addresses recent issues and improves the overall functionality of the reporting tool."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-12084 in dev-lang/python.",
+        "summary": {
+          "title": "Security fix for Python",
+          "summary": "A security vulnerability, CVE-2025-12084, affecting the Python interpreter has been resolved. This update ensures the security and stability of systems relying on Python."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated sys-libs/readline to v8.3.",
+        "summary": {
+          "title": "Updated readline library",
+          "summary": "The readline library has been updated to version 8.3. This addresses known issues and improves stability."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Upgrade dev-libs/libuv from 1.43.0 to 1.51.0-r1.",
+        "summary": {
+          "title": "libuv library upgraded",
+          "summary": "The libuv library has been upgraded from version 1.43.0 to 1.51.0-r1. This update includes various improvements and bug fixes."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-2397e92 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security fix",
+          "summary": "A security vulnerability, KCTF-2397e92, has been addressed in the Linux kernel. This update ensures improved system security and stability."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Updated the Linux kernel to v6.12.67.",
+        "summary": {
+          "title": "Linux kernel updated",
+          "summary": "The Linux kernel has been updated to version 6.12.67. This update includes various improvements and bug fixes."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/oslogin to v20260116.00.",
+        "summary": {
+          "title": "OS Login updated",
+          "summary": "The OS Login component has been updated to version v20260116.00. This update addresses recent changes and ensures continued functionality."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/google-breakpad to v2026.01.16.201758-r268.",
+        "summary": {
+          "title": "Breakpad updated",
+          "summary": "The google-breakpad component has been updated to version v2026.01.16.201758-r268. This update addresses stability and performance issues."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Updated CONFIG\\_BLK\\_DEV\\_LOOP\\_MIN\\_COUNT to 0. This allows\nunlimited loop devices.",
+        "summary": {
+          "title": "Unlimited Loop Devices Enabled",
+          "summary": "The CONFIG_BLK_DEV_LOOP_MIN_COUNT setting has been updated to 0, which now permits an unlimited number of loop devices to be utilized. This change provides greater flexibility in managing loop devices."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/kmod to v34.2.",
+        "summary": {
+          "title": "kmod upgraded to v34.2",
+          "summary": "The sys-apps/kmod package has been successfully upgraded to version 34.2. This update addresses recent changes and ensures the system's kernel module management is up-to-date."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-misc/socat to v1.8.1.0.",
+        "summary": {
+          "title": "socat upgraded",
+          "summary": "The net-misc/socat package has been upgraded to version 1.8.1.0. This update addresses known issues and improves stability."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Updated app-containers/containerd to v2.2.0.",
+        "summary": {
+          "title": "Containerd updated to v2.2.0",
+          "summary": "The app-containers/containerd has been updated to version 2.2.0. This update brings improvements and new features to the container runtime."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-21441 in dev-python/urllib3.",
+        "summary": {
+          "title": "Security fix for urllib3",
+          "summary": "A security vulnerability (CVE-2026-21441) in the dev-python/urllib3 library has been resolved. This update addresses potential security risks associated with the library."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-dns/c-ares to v1.34.6.",
+        "summary": {
+          "title": "Updated DNS resolver library",
+          "summary": "The net-dns/c-ares library has been upgraded to version 1.34.6. This update addresses potential issues and improves the performance of DNS resolution."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-libs/libseccomp to v2.6.0-r3.",
+        "summary": {
+          "title": "libseccomp upgraded to v2.6.0-r3",
+          "summary": "The sys-libs/libseccomp package has been updated to version 2.6.0-r3. This update addresses known issues and improves system security. Users are recommended to apply this update at their earliest convenience."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-benchmarks/microbenchmarks to v0.0.1-r21.",
+        "summary": {
+          "title": "Benchmarks updated to v0.0.1-r21",
+          "summary": "The app-benchmarks/microbenchmarks have been successfully upgraded to version 0.0.1-r21. This update ensures the latest performance metrics are available."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-13836 in dev-lang/python.",
+        "summary": {
+          "title": "Security Update for Python",
+          "summary": "A critical security vulnerability (CVE-2025-13836) affecting the Python development language has been addressed. This update ensures the ongoing security and stability of systems relying on Python."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/google-breakpad to v2025.12.22.204548-r263.",
+        "summary": {
+          "title": "Breakpad upgraded",
+          "summary": "The google-breakpad package has been upgraded to version v2025.12.22.204548-r263. This update addresses existing issues and improves stability."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Upgrade dev-util/cmake from 3.26.4 to 3.31.9.",
+        "summary": {
+          "title": "CMake updated to 3.31.9",
+          "summary": "The dev-util/cmake package has been upgraded from version 3.26.4 to 3.31.9. This update brings the latest features and improvements to the CMake build system."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Update to the data processing service",
+          "summary": "We are implementing an update to our data processing service. This change will improve performance and reliability. More details will follow."
+        }
+      },
+      {
+        "kind": "cos-125-19216-104-133",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/d79e2a3f722af5d20208d089d7da9b07124ea6a7 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.104.133/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 6.12.55 Update",
+          "summary": "This release includes updates to the Kernel, Docker, and Containerd. It also provides access to the latest GPU drivers for enhanced performance."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-71148 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability in the Linux kernel, CVE-2025-71148, has been addressed. This update ensures the integrity and safety of systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-71151 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability in the Linux kernel, CVE-2025-71151, has been resolved. This update ensures enhanced protection against potential exploits. Users are advised to apply the patch to maintain system integrity."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22994 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability, CVE-2026-22994, affecting the Linux kernel has been resolved. This update addresses the issue, ensuring improved system security. Users are advised to apply the patch promptly."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22979 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability in the Linux kernel, CVE-2026-22979, has been addressed. This update ensures the security and stability of systems running the Linux kernel. Users are advised to apply this patch to protect against potential exploits."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22998 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security fix",
+          "summary": "A security vulnerability in the Linux kernel, CVE-2026-22998, has been addressed. This update ensures better protection against potential exploits."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22980 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel, CVE-2026-22980, has been addressed. This update ensures the integrity and security of your system. It is recommended to apply this patch to protect against potential exploits."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-23011 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2026-23011, enhancing system security."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-38591 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2025-38591, enhancing the security and stability of systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-23005 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability in the Linux kernel, CVE-2026-23005, has been addressed. This update ensures the stability and security of systems running the Linux kernel. Users are advised to apply the patch as soon as possible to protect against potential exploits."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22976 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security fix",
+          "summary": "A critical security vulnerability, CVE-2026-22976, affecting the Linux kernel has been addressed. This update ensures the integrity and security of systems running the Linux kernel by patching this known exploit."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-23010 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability in the Linux kernel has been addressed. The fix resolves CVE-2026-23010, enhancing the overall security posture of systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-50da4b9 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "A security vulnerability in the Linux kernel, identified as KCTF-50da4b9, has been resolved. This update addresses a critical issue, enhancing the overall security of the operating system."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-71160 in the Linux kernel.",
+        "summary": {
+          "title": "Security update for Linux kernel",
+          "summary": "A security vulnerability in the Linux kernel, CVE-2025-71160, has been fixed. This update ensures the security and stability of your system."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-71157 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security fix",
+          "summary": "A vulnerability in the Linux kernel has been addressed. This update resolves CVE-2025-71157, enhancing system security. It is recommended to apply this fix to protect against potential exploits."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22996 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability in the Linux kernel, CVE-2026-22996, has been addressed. This update ensures improved system security and stability. Users are encouraged to apply the patch to protect against potential exploits."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-2397e92 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "A security vulnerability, KCTF-2397e92, has been resolved in the Linux kernel. This update addresses a critical issue, enhancing the overall security and stability of the system."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-23003 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability (CVE-2026-23003) in the Linux kernel has been addressed. This update ensures enhanced protection against potential exploits."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22989 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security fix",
+          "summary": "A critical security vulnerability, CVE-2026-22989, affecting the Linux kernel has been addressed. This update ensures the stability and security of systems running the Linux kernel by patching this known exploit."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-40149 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2025-40149, enhancing the overall security of systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22988 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2026-22988, enhancing the overall security of systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-23002 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel has been fixed. This update addresses CVE-2026-23002, enhancing system security."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-71149 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security fix",
+          "summary": "A security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2025-71149, enhancing the overall security of systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22977 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical vulnerability (CVE-2026-22977) in the Linux kernel has been addressed. This update is crucial for maintaining system security and protecting against potential exploits. Users are strongly advised to apply the patch as soon as possible."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22999 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security fix",
+          "summary": "A critical security vulnerability in the Linux kernel, CVE-2026-22999, has been addressed. This update ensures enhanced protection against potential exploits. Users are advised to apply the patch as soon as possible to maintain system security."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-23001 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability (CVE-2026-23001) in the Linux kernel has been addressed. This update resolves the issue, enhancing system security. It is recommended to apply this patch promptly to protect your systems."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Runtime sysctl changes:\n\n* Changed: kernel.tainted: 4096 -> 4608",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "Kernel tainted value has been updated. The change reflects modifications in runtime sysctl settings, specifically affecting the kernel.tainted flag from 4096 to 4608."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-71156 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2025-71156, ensuring improved system security and stability. Users are advised to apply this patch promptly."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-0915 in sys-apps/glibc.",
+        "summary": {
+          "title": "Security fix for glibc",
+          "summary": "A security vulnerability (CVE-2026-0915) affecting sys-apps/glibc has been resolved. This update ensures the stability and security of your system by patching the identified issue."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-23000 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2026-23000, enhancing the overall security of the system."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "System Update Notification",
+          "summary": "We are implementing an important system update to improve performance and introduce new features. This change will ensure a more reliable and efficient user experience. Further details will be provided soon."
+        }
+      },
+      {
+        "kind": "cos-121-18867-294-112",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/ae5e8e39e06320f6f9149d3e219c57bef0d7f151 ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.294.112/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container-Optimized OS Update",
+          "summary": "This release of Container-Optimized OS includes updates to the kernel, Docker, and containerd. It also provides support for GPU drivers."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-71148 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2025-71148, enhancing the overall security posture of systems running the affected kernel version."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-2397e92 in the Linux kernel.",
+        "summary": {
+          "title": "Security fix in Linux kernel",
+          "summary": "A security vulnerability in the Linux kernel, KCTF-2397e92, has been addressed. This fix enhances the overall security of systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-71151 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2025-71151, enhancing system security."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Enabled TC Traffic Police as a module.",
+        "summary": {
+          "title": "TC Traffic Police Module Enabled",
+          "summary": "The TC Traffic Police module is now available. This feature enhances network traffic management capabilities."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22994 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2026-22994, ensuring enhanced protection for your systems."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22988 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability, CVE-2026-22988, affecting the Linux kernel has been resolved. This update addresses the issue, enhancing system security. Users are advised to apply the patch as soon as possible to protect their systems."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-71160 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "A critical security vulnerability, CVE-2025-71160, affecting the Linux kernel has been resolved. This update ensures the integrity and security of systems running the Linux operating system."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22976 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability, CVE-2026-22976, affecting the Linux kernel has been resolved. This update addresses the identified issue to enhance system security. Users are advised to apply the patch as soon as possible."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22979 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability in the Linux kernel, CVE-2026-22979, has been addressed. This update ensures enhanced protection for your systems against potential exploits. It is recommended to apply this patch as soon as possible to maintain system integrity."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22980 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A security vulnerability in the Linux kernel, CVE-2026-22980, has been addressed. This update ensures the integrity and security of systems running the Linux kernel by patching this specific issue."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-71149 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security fix",
+          "summary": "A critical security vulnerability in the Linux kernel, CVE-2025-71149, has been addressed. This update ensures the integrity and security of systems running the Linux kernel. Users are advised to apply the patch to protect against potential exploits."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22977 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability, CVE-2026-22977, affecting the Linux kernel has been resolved. This update ensures enhanced protection against potential exploits. All users are advised to apply the patch to maintain system security."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Runtime sysctl changes:\n\n* Changed: kernel.tainted: 4096 -> 4608",
+        "summary": {
+          "title": "Runtime sysctl update",
+          "summary": "The runtime sysctl configuration has been updated. Specifically, the kernel.tainted value has changed from 4096 to 4608."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-50da4b9 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A security vulnerability in the Linux kernel, identified as KCTF-50da4b9, has been resolved. This update ensures improved security for systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-22111 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability in the Linux kernel, CVE-2025-22111, has been successfully addressed. This update ensures the integrity and security of systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-0915 in sys-apps/glibc.",
+        "summary": {
+          "title": "Security fix for glibc vulnerability",
+          "summary": "A critical vulnerability (CVE-2026-0915) affecting sys-apps/glibc has been resolved. This update ensures the security and stability of systems relying on this core component."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Update to our services",
+          "summary": "We are implementing changes to our services to improve performance and reliability. These updates are designed to provide a better user experience. We appreciate your understanding as we make these enhancements."
+        }
+      },
+      {
+        "kind": "cos-117-18613-439-120",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.111](https://cos.googlesource.com/third_party/kernel/+/1587565bad32343ed4bfeb5fd619967ed3db343a ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.439.120/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "New COS Image with Updated Components",
+          "summary": "The latest Container-Optimized OS image (COS-6.6.111) includes updated versions of the Kernel, Docker, and Containerd. This release also provides access to the latest GPU drivers for enhanced performance."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-71151 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability (CVE-2025-71151) in the Linux kernel has been addressed. This update is essential for maintaining the security and integrity of your systems. Applying this patch will protect against potential exploits targeting the kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22977 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability, CVE-2026-22977, affecting the Linux kernel has been successfully patched. This update is essential for maintaining the security and integrity of systems running the Linux operating system."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22979 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability, CVE-2026-22979, affecting the Linux kernel has been resolved. This update is essential for maintaining system integrity and protecting against potential exploits. Users are advised to apply the patch as soon as possible."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22980 in the Linux kernel.",
+        "summary": {
+          "title": "Security update for Linux kernel",
+          "summary": "A security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2026-22980, enhancing system security. It is recommended to apply this patch to protect your systems."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Runtime sysctl changes:\n\n* Changed: kernel.tainted: 4096 -> 4608",
+        "summary": {
+          "title": "Runtime sysctl updated",
+          "summary": "Kernel.tainted value has been updated from 4096 to 4608. This change affects runtime sysctl settings."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-50da4b9 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "A security vulnerability in the Linux kernel, KCTF-50da4b9, has been resolved. This update addresses a critical issue, enhancing the overall security of the system."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-2397e92 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "A security vulnerability, KCTF-2397e92, has been resolved in the Linux kernel. This update addresses a critical issue, enhancing the overall security posture of the system. Users are advised to apply the patch to ensure their systems are protected."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-0915 in sys-apps/glibc.",
+        "summary": {
+          "title": "Security fix for glibc",
+          "summary": "A critical security vulnerability (CVE-2026-0915) affecting sys-apps/glibc has been resolved. This update ensures the integrity and security of your systems by patching this known exploit. It is recommended to apply this fix promptly."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22994 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "A security vulnerability, CVE-2026-22994, in the Linux kernel has been addressed. This update ensures improved system security and stability."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-71148 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability in the Linux kernel, CVE-2025-71148, has been addressed. This update is essential for maintaining system security and protecting against potential exploits. Users are strongly advised to apply this patch as soon as possible."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22988 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability (CVE-2026-22988) in the Linux kernel has been addressed. This update ensures the security and stability of your system by patching this critical issue. It is recommended to apply this update promptly to protect against potential threats."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22976 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2026-22976, enhancing the overall security of the system. It is recommended to apply this patch to protect against potential exploits."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-71149 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2025-71149, ensuring improved system security."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-71160 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability (CVE-2025-71160) in the Linux kernel has been addressed. This update is essential for maintaining system integrity and protecting against potential exploits. Users are strongly encouraged to apply this patch as soon as possible."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "New features in the platform",
+          "summary": "We are excited to announce several new features designed to enhance your experience. These updates include improved performance and expanded capabilities. Explore the latest additions to optimize your workflow."
+        }
+      },
+      {
+        "kind": "cos-113-18244-521-98",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.155](https://cos.googlesource.com/third_party/kernel/+/ddebac76ba109e1bec46dd70ce8260528fc79065 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.521.98/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container Optimized OS Update Released",
+          "summary": "A new version of Container Optimized OS, cos-113-18244-521-98, is now available. This update includes the latest Docker and Containerd versions, along with updated GPU drivers."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-0915 in sys-apps/glibc.",
+        "summary": {
+          "title": "Security fix for glibc",
+          "summary": "A security vulnerability in sys-apps/glibc, identified as CVE-2026-0915, has been resolved. This update ensures the security and stability of your system by addressing this critical issue."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22988 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability, CVE-2026-22988, affecting the Linux kernel has been addressed. This update is essential for maintaining system security and protecting against potential exploits. Applying this patch is highly recommended for all users."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/less to v691.",
+        "summary": {
+          "title": "less package updated",
+          "summary": "The less package has been updated to version 691. This update resolves known issues and improves performance."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-50da4b9 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "A security vulnerability, KCTF-50da4b9, has been addressed in the Linux kernel. This update ensures the ongoing security and stability of systems running the Linux operating system."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-2397e92 in the Linux kernel.",
+        "summary": {
+          "title": "Security fix for Linux kernel",
+          "summary": "A security vulnerability in the Linux kernel, KCTF-2397e92, has been addressed. This fix ensures improved system security and stability."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22977 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel has been addressed. The fix resolves CVE-2026-22977, enhancing the overall security of the system."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22979 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability (CVE-2026-22979) in the Linux kernel has been addressed. This update ensures the stability and security of systems running the Linux kernel by patching this known issue."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-49968 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel, CVE-2024-49968, has been addressed. This update ensures the integrity and security of systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22994 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability in the Linux kernel, CVE-2026-22994, has been addressed. This update ensures the integrity and security of systems running the Linux kernel by patching the identified issue."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22980 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability, CVE-2026-22980, affecting the Linux kernel has been resolved. This update ensures the ongoing security and stability of systems running the Linux kernel. Users are advised to apply the patch to protect against potential exploits."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-71149 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability in the Linux kernel, CVE-2025-71149, has been addressed. This update ensures improved system security and protects against potential exploits. Users are recommended to apply this patch promptly."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-22976 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability in the Linux kernel, CVE-2026-22976, has been addressed. This update ensures the integrity and safety of systems running the Linux kernel. Users are advised to apply the patch as soon as possible."
+        }
+      }
+    ],
     "2026-01-28": [
       {
         "kind": "Change",

@@ -1,5 +1,20 @@
 # Dataproc
 
+## 2026-02-04
+
+### Announcement
+
+**Upcoming Spark data lineage changes** See the upcoming May,
+2026 Dataproc and Serverless for Apache Spark release notes for an announcement
+of a change that will automatically enable
+[Dataproc Spark data lineage](https://docs.cloud.google.com/dataproc/docs/guides/spark-lineage) and
+[Serverless for Apache Spark data lineage](https://docs.cloud.google.com/dataproc-serverless/docs/guides/data-lineage)
+when you enable the Data Lineage API (see
+[Control lineage ingestion for a service](https://docs.cloud.google.com/dataplex/docs/use-lineage#control-ingestion))
+without requiring additional project, cluster, batch workload, or
+interactive session settings.
+
+---
 ## 2026-01-30
 
 ### Announcement

@@ -29,6 +29,14 @@ New parser documentation is available to help you ingest and normalize logs from
 * [Collect HYPR MFA logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hypr-mfa)
 * [Collect IBM Guardium logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ibm-guardium)
 
+### Feature
+
+**The re.capture\_all function is now available**
+
+The new [re.capture\_all](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#recapture_all) YARA-L 2.0 function is available in Rules, Search, and Dashboards.
+
+Use the **re.capture\_all()** function to extract every non-overlapping match of a regular expression from a string. While the standard [**re.capture**](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#recapture) function stops after the first match it finds, the **re.capture\_all()** function continues through the entire string to identify every instance that matches your pattern.
+
 ---
 ## 2026-02-03
 

@@ -1,5 +1,16 @@
 # Spanner
 
+## 2026-02-02
+
+### Feature
+
+You can create and host
+[remote functions](https://docs.cloud.google.com/spanner/docs/cloud-run-remote-function)
+in Cloud Run and call them from Spanner queries
+using the GoogleSQL dialect. This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-01-30
 
 ### Feature

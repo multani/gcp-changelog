@@ -2,9 +2,103 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Dataproc</title>
   <subtitle>Changelog for Google Cloud product: Dataproc</subtitle>
-  <updated>2026-02-04T00:00:00+00:00</updated>
+  <updated>2026-02-05T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:dataproc</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/dataproc/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-02-05:fixed:0</id>
+    <published>2026-02-05T00:00:00+00:00</published>
+    <updated>2026-02-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed the <code>spark.driver.extraClassPath</code> delimiter for the Jupyter SparkMonitor Listener.</p>]]></content>
+    <summary>The delimiter for `spark.driver.extraClassPath` has been corrected for the Jupyter SparkMonitor Listener. This fix ensures proper configuration and functionality of the listener.</summary>
+    <title>Fixed: Spark driver classpath delimiter fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-02-05:feature:1</id>
+    <published>2026-02-05T00:00:00+00:00</published>
+    <updated>2026-02-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Added a new <code>dataproc:pypi.repository</code> property to customize the PyPI repository used for pip. The value can be a URL, or <code>google</code> to use a Google-hosted cache of PyPI, accessible without public internet connectivity. Starting in image version 3.1, <code>google</code> will be the default; to opt out and return to public PyPI, use the value <code>pypi</code>.</p>]]></content>
+    <summary>A new property allows you to specify a custom PyPI repository for pip installations on Dataproc. You can use a URL or 'google' for a cached, offline-accessible repository. The 'google' option becomes the default in image version 3.1.</summary>
+    <title>Feature: Customize PyPI Repository for Pip</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-02-05:announcement:2</id>
+    <published>2026-02-05T00:00:00+00:00</published>
+    <updated>2026-02-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions">Dataproc on Compute Engine subminor image versions</a>:</p>
+<ul>
+<li>2.0.158-debian10, 2.0.158-ubuntu18, 2.0.158-rocky8</li>
+<li>2.1.107-debian11, 2.1.107-ubuntu20, 2.1.107-ubuntu20-arm, 2.1.107-rocky8</li>
+<li>2.2.75-debian12, 2.2.75-ubuntu22, 2.2.75-ubuntu22-arm, 2.2.75-rocky9</li>
+<li>2.3.22-debian12, 2.3.22-ml-ubuntu22, 2.3.22-rocky9, 2.3.22-ubuntu22, 2.3.22-ubuntu22-arm</li>
+</ul>]]></content>
+    <summary>New subminor image versions for Dataproc on Compute Engine are now available. These updates include support for various operating systems like Debian, Ubuntu, and Rocky Linux across different Dataproc versions. This allows users to leverage the latest software components and security patches for their big data workloads.</summary>
+    <title>Announcement: New Dataproc image versions available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-02-05:feature:3</id>
+    <published>2026-02-05T00:00:00+00:00</published>
+    <updated>2026-02-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Parquet CLI version upgraded to 1.15.2 in 2.1 and 2.2 images.</p>]]></content>
+    <summary>Parquet CLI has been upgraded to version 1.15.2. This update is now available in the 2.1 and 2.2 images. This ensures you have the latest features and improvements for Parquet processing.</summary>
+    <title>Feature: Parquet CLI Updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-02-05:fixed:4</id>
+    <published>2026-02-05T00:00:00+00:00</published>
+    <updated>2026-02-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed a bug in the ARM image that prevented connecting to a Dataproc Metastore instance with a gRPC protocol endpoint.</p>]]></content>
+    <summary>A bug in the ARM image that caused issues connecting to Dataproc Metastore instances via gRPC has been fixed. This resolves the connectivity problem, ensuring smoother operation.</summary>
+    <title>Fixed: Dataproc Metastore connection issue resolved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-02-05:feature:5</id>
+    <published>2026-02-05T00:00:00+00:00</published>
+    <updated>2026-02-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Apache Pig is now available in ARM images.</p>]]></content>
+    <summary>Apache Pig is now available in ARM images. This update expands compatibility and performance options for users.</summary>
+    <title>Feature: Apache Pig on ARM</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-02-05:feature:6</id>
+    <published>2026-02-05T00:00:00+00:00</published>
+    <updated>2026-02-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Delta subminor version upgraded to 3.2.1 in Dataproc on Compute Engine image 2.2 and 2.3.</p>]]></content>
+    <summary>Dataproc images 2.2 and 2.3 now include an upgraded Delta subminor version to 3.2.1. This update enhances performance and stability for your data processing workloads.</summary>
+    <title>Feature: Dataproc Delta Subminor Version Upgrade</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-02-05:change:7</id>
+    <published>2026-02-05T00:00:00+00:00</published>
+    <updated>2026-02-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Removed use of deprecated Hadoop configuration properties <code>fs.default.name</code> and <code>yarn.resourcemanager.system-metrics-publisher.enabled</code>.</p>]]></content>
+    <summary>Deprecated Hadoop configuration properties `fs.default.name` and `yarn.resourcemanager.system-metrics-publisher.enabled` have been removed. This change ensures compatibility with updated Hadoop versions and improves system stability. Users should verify their configurations to avoid potential issues.</summary>
+    <title>Change: Hadoop Configuration Update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

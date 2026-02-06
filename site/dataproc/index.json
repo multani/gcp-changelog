@@ -1,6 +1,72 @@
 {
   "name": "Dataproc",
   "entries": {
+    "2026-02-05": [
+      {
+        "kind": "Fixed",
+        "content": "Fixed the `spark.driver.extraClassPath` delimiter for the Jupyter SparkMonitor Listener.",
+        "summary": {
+          "title": "Spark driver classpath delimiter fixed",
+          "summary": "The delimiter for `spark.driver.extraClassPath` has been corrected for the Jupyter SparkMonitor Listener. This fix ensures proper configuration and functionality of the listener."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added a new `dataproc:pypi.repository` property to customize the PyPI repository used for pip. The value can be a URL, or `google` to use a Google-hosted cache of PyPI, accessible without public internet connectivity. Starting in image version 3.1, `google` will be the default; to opt out and return to public PyPI, use the value `pypi`.",
+        "summary": {
+          "title": "Customize PyPI Repository for Pip",
+          "summary": "A new property allows you to specify a custom PyPI repository for pip installations on Dataproc. You can use a URL or 'google' for a cached, offline-accessible repository. The 'google' option becomes the default in image version 3.1."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions):\n\n* 2.0.158-debian10, 2.0.158-ubuntu18, 2.0.158-rocky8\n* 2.1.107-debian11, 2.1.107-ubuntu20, 2.1.107-ubuntu20-arm, 2.1.107-rocky8\n* 2.2.75-debian12, 2.2.75-ubuntu22, 2.2.75-ubuntu22-arm, 2.2.75-rocky9\n* 2.3.22-debian12, 2.3.22-ml-ubuntu22, 2.3.22-rocky9, 2.3.22-ubuntu22, 2.3.22-ubuntu22-arm",
+        "summary": {
+          "title": "New Dataproc image versions available",
+          "summary": "New subminor image versions for Dataproc on Compute Engine are now available. These updates include support for various operating systems like Debian, Ubuntu, and Rocky Linux across different Dataproc versions. This allows users to leverage the latest software components and security patches for their big data workloads."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Parquet CLI version upgraded to 1.15.2 in 2.1 and 2.2 images.",
+        "summary": {
+          "title": "Parquet CLI Updated",
+          "summary": "Parquet CLI has been upgraded to version 1.15.2. This update is now available in the 2.1 and 2.2 images. This ensures you have the latest features and improvements for Parquet processing."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed a bug in the ARM image that prevented connecting to a Dataproc Metastore instance with a gRPC protocol endpoint.",
+        "summary": {
+          "title": "Dataproc Metastore connection issue resolved",
+          "summary": "A bug in the ARM image that caused issues connecting to Dataproc Metastore instances via gRPC has been fixed. This resolves the connectivity problem, ensuring smoother operation."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Apache Pig is now available in ARM images.",
+        "summary": {
+          "title": "Apache Pig on ARM",
+          "summary": "Apache Pig is now available in ARM images. This update expands compatibility and performance options for users."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Delta subminor version upgraded to 3.2.1 in Dataproc on Compute Engine image 2.2 and 2.3.",
+        "summary": {
+          "title": "Dataproc Delta Subminor Version Upgrade",
+          "summary": "Dataproc images 2.2 and 2.3 now include an upgraded Delta subminor version to 3.2.1. This update enhances performance and stability for your data processing workloads."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Removed use of deprecated Hadoop configuration properties `fs.default.name` and `yarn.resourcemanager.system-metrics-publisher.enabled`.",
+        "summary": {
+          "title": "Hadoop Configuration Update",
+          "summary": "Deprecated Hadoop configuration properties `fs.default.name` and `yarn.resourcemanager.system-metrics-publisher.enabled` have been removed. This change ensures compatibility with updated Hadoop versions and improves system stability. Users should verify their configurations to avoid potential issues."
+        }
+      }
+    ],
     "2026-02-04": [
       {
         "kind": "Announcement",

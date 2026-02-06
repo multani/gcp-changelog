@@ -232,6 +232,212 @@ Upgrade dev-util/cmake from 3.26.4 to 3.31.9.
 
 
 
+### cos-125-19216-104-133
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/d79e2a3f722af5d20208d089d7da9b07124ea6a7 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.104.133/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-71148 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71151 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22994 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22979 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22998 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22980 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23011 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38591 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23005 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22976 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23010 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-50da4b9 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71160 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71157 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22996 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-2397e92 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23003 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22989 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40149 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22988 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23002 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71149 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22977 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22999 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23001 in the Linux kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: kernel.tainted: 4096 -> 4608
+
+### Security
+
+Fixed CVE-2025-71156 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-0915 in sys-apps/glibc.
+
+### Security
+
+Fixed CVE-2026-23000 in the Linux kernel.
+
+### Change
+
+
+
+### cos-121-18867-294-112
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/ae5e8e39e06320f6f9149d3e219c57bef0d7f151 ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.294.112/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-71148 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-2397e92 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71151 in the Linux kernel.
+
+### Feature
+
+Enabled TC Traffic Police as a module.
+
+### Security
+
+Fixed CVE-2026-22994 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22988 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71160 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22976 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22979 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22980 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71149 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22977 in the Linux kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: kernel.tainted: 4096 -> 4608
+
+### Security
+
+Fixed KCTF-50da4b9 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-22111 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-0915 in sys-apps/glibc.
+
+### Change
+
+
+
 ### cos-117-18613-439-120
 
 |  |  |  |  |
@@ -355,42 +561,6 @@ Fixed CVE-2025-71149 in the Linux kernel.
 ### Security
 
 Fixed CVE-2026-22976 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-71148 in the Linux kernel.
-
-### Security
-
-Fixed KCTF-2397e92 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-71151 in the Linux kernel.
-
-### Feature
-
-Enabled TC Traffic Police as a module.
-
-### Security
-
-Fixed CVE-2026-22994 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-22988 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-71160 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-22976 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-22979 in the Linux kernel.
 
 ---
 ## 2026-01-28
@@ -721,6 +891,98 @@ Fixed CVE-2025-13836 in dev-lang/python.
 
 Fixed CVE-2025-71125 in the Linux kernel.
 
+### Security
+
+Fixed CVE-2025-71102 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68349 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71084 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68264 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68798 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71123 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68795 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71131 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38022 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-21441 in dev-python/urllib3.
+
+### Security
+
+Fixed CVE-2025-68782 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71098 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68265 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68794 in the Linux kernel.
+
+### Fixed
+
+Upgraded app-admin/sosreport to v4.10.2.
+
+### Security
+
+Fixed CVE-2025-68261 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71089 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68788 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38129 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71096 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71113 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68764 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68813 in the Linux kernel.
+
 ### Change
 
 
@@ -792,6 +1054,37 @@ Fixed CVE-2025-71120 in the Linux kernel.
 
 Fixed CVE-2025-71104 in the Linux kernel.
 
+### Change
+
+
+
+### cos-125-19216-104-126
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/46c2d01887bed5038cc2b8bbd801ae2f7985e7f0 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.104.126/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Upgraded sys-apps/less to v691.
+
+### Security
+
+Fixed CVE-2025-13836 in dev-lang/python.
+
+### Security
+
+Updated dev-libs/openssl to v3.5.5. This resolves CVE-2025-15467.
+
+### Security
+
+Fixed CVE-2026-21441 in dev-python/urllib3.
+
+### Fixed
+
+Upgraded app-admin/sosreport to v4.10.2.
+
 ---
 ## 2026-01-23
 
@@ -820,6 +1113,289 @@ Fixed CVE-2025-13837 in dev-lang/python.
 
 ---
 ## 2026-01-20
+
+### Change
+
+
+
+### cos-125-19216-104-113
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/c3275d29487cb867b01fadabaae9e498686a1ad3 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.104.113/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-68810 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71098 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68261 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68259 in the Linux kernel.
+
+### Change
+
+Applied ethtool ring length changes to a4x's first Diorite interface.
+
+### Security
+
+Fixed CVE-2025-71113 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68816 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68372 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71067 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71068 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68374 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71104 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68778 in the Linux kernel.
+
+### Security
+
+Applied urllib3 patch for CVE-2024-37891.
+
+### Security
+
+Fixed CVE-2025-68206 in the Linux kernel.
+
+### Feature
+
+Enabled guest support for NVIDIA virtual command queues (CMDQV).
+
+### Security
+
+Fixed CVE-2025-68775 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-61727 in dev-lang/go.
+
+### Security
+
+Fixed CVE-2025-68363 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71131 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71072 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-61729 in dev-lang/go.
+
+### Security
+
+Fixed CVE-2025-71089 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68801 in the Linux kernel.
+
+### Fixed
+
+Updated cos-gpu-installer to v2.5.10.
+
+### Security
+
+Fixed CVE-2025-68814 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71118 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68803 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68740 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68782 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68366 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68780 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68349 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71097 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71125 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68369 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68265 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-12084 in dev-lang/python.
+
+### Security
+
+Fixed CVE-2025-68744 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71134 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68724 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68794 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68821 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68727 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71080 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-22111 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71096 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71135 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68795 in the Linux kernel.
+
+### Fixed
+
+Updated dev-libs/openssl to v3.5.4.
+
+### Security
+
+Fixed CVE-2025-68820 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71123 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68264 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38234 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71077 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68788 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68728 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68811 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68348 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68800 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71102 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68813 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71120 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68337 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68742 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71084 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40325 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68798 in the Linux kernel.
 
 ### Change
 
@@ -987,6 +1563,17 @@ Fixed CVE-2025-12084 in dev-lang/python.
 
 Fixed CVE-2025-40350 in the Linux kernel.
 
+### Change
+
+
+
+### cos-121-18867-294-88
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/97e2b5284efaa0c1d58fe37dd438d4f1e64a835f ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.294.88/lakitu/gpu_driver_versions.textproto) |
+
 ### Security
 
 Applied urllib3 patch for CVE-2024-37891.
@@ -1003,8 +1590,65 @@ Updated dev-libs/openssl to v3.0.18.
 
 Fixed CVE-2025-12084 in dev-lang/python.
 
+### Security
+
+Fixed CVE-2025-61727 in dev-lang/go.
+
 ---
 ## 2026-01-14
+
+### Change
+
+
+
+### cos-125-19216-104-95
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/740cba961383c7ac618ea6c083b09027ec1c786b ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.104.95/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-40350 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68764 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68758 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68766 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68763 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40350 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68756 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40350 in the Linux kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 188034 250715 376068
+
+### Security
+
+Fixed CVE-2025-68329 in the Linux kernel.
 
 ### Change
 
@@ -1028,6 +1672,13 @@ Fixed CVE-2025-40350 in the Linux kernel.
 ### Security
 
 Fixed CVE-2025-40350 in the Linux kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.tcp\_mem: 94044 125392 188088 -> 94041 125391 188082
+* Changed: net.ipv4.udp\_mem: 188088 250784 376176 -> 188085 250783 376170
 
 ### Change
 

@@ -1,5 +1,14 @@
 # Application Integration
 
+## 2026-02-02
+
+### Feature
+
+**FIFO message processing with Pub/Sub ordering keys**
+
+Application Integration now supports publishing messages to Google Cloud Pub/Sub topics using ordering keys, enabling First-In, First-Out (FIFO) message processing. By setting an ordering key in the Pub/Sub trigger's `Publish Message` action, you can ensure messages are received in the correct order, enhancing reliability for integrations requiring ordered message processing. For more information on how to use ordering keys to publish messages, see [Using ordering keys](https://cloud.google.com/pubsub/docs/publisher#using-ordering-keys).
+
+---
 ## 2025-10-31
 
 ### Feature

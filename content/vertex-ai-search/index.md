@@ -1,5 +1,18 @@
 # Vertex AI Search
 
+## 2026-02-05
+
+### Feature
+
+**Vertex AI Search: MCP server (Public Preview)**
+
+Vertex AI Search has a Model Context Protocol (MCP) server hosted at the
+following endpoint: `https://discoveryengine.googleapis.com/mcp`
+
+This feature is in Public Preview. For more information, see [MCP Reference:
+discoveryengine.googleapis.com](https://docs.cloud.google.com/generative-ai-app-builder/docs/reference/mcp).
+
+---
 ## 2026-01-26
 
 ### Feature

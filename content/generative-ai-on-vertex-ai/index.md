@@ -1,5 +1,15 @@
 # Generative AI on Vertex AI
 
+## 2026-02-04
+
+### Feature
+
+**Anthropic's Claude Opus 4.6**
+
+[Claude Opus 4.6](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/partner-models/claude/opus-4-6)
+is available in Model Garden.
+
+---
 ## 2026-01-23
 
 ### Feature

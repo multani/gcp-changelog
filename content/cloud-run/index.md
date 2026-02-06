@@ -1,5 +1,14 @@
 # Cloud Run
 
+## 2026-02-05
+
+### Feature
+
+You can configure [Direct VPC ingress for Cloud Run worker pools](https://docs.cloud.google.com/run/docs/configuring/vpc-direct-vpc#direct-vpc-workerpool). When you configure Direct VPC ingress,
+each worker instance receives a private IP address on your configured network
+and subnet. To access private IP addresses between instances in your VPC network for secure internal communication, see [Retrieve the private IP addresses using the metadata server (MDS)](https://docs.cloud.google.com/run/docs/configuring/vpc-direct-vpc#mds-support).
+
+---
 ## 2026-02-02
 
 ### Feature

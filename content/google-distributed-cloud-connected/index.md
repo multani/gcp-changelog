@@ -1,5 +1,155 @@
 # Google Distributed Cloud connected
 
+## 2026-02-03
+
+### Libraries
+
+The following Google Distributed Cloud connected components have been updated:
+
+* **GDC software-only has been updated** to version v1.33.300-gke.60.
+  (This component was formerly known as GKE on Bare Metal and as Anthos Clusters on Bare Metal.)
+* **Kubernetes** has been updated to version 1.33.5-gke.900.
+* **EdgeOS kernel** has been updated to version
+  [6.12.31](https://cos.googlesource.com/third_party/kernel/+/b7edc92b0ebd3782fb928e8401f55c5a9155269f).
+* **Symcloud Storage** has been updated to version 5.4.18-278.
+
+### Deprecated
+
+The following functionality has been deprecated in this release of Google Distributed Cloud connected:
+
+* **GDC connected racks form factor.** The Google Distributed Cloud connected racks form factor, also known
+  as Config 1 and Config 2, has been deprecated and all documentation for Google Distributed Cloud connected
+  features related to this form factor has been removed from product documentation. The last minor release
+  of Google Distributed Cloud connected that supports the racks form factor is
+  [Google Distributed Cloud connected 1.11](https://docs.cloud.google.com/distributed-cloud/edge/1.11.0/docs/overview).
+
+### Announcement
+
+This is a minor release of Google Distributed Cloud connected (version 1.12.0). Google Distributed Cloud software updates
+roll out gradually across regions. The latest version might not be immediately available on your Google Distributed Cloud
+connected deployment.
+
+### Fixed
+
+The following issues have been resolved in this release of Google Distributed Cloud connected:
+
+* **Virtual machines no longer intermittently freeze.** Through a combination of updates to Symcloud Storage and
+  [new firmware for the integrated Dell Remote Access Controller (iDRAC)](https://www.dell.com/support/home/en-in/drivers/driversdetails?driverid=kywdc&oscode=ws19l&productcode=oth-xr11),
+  we have improved the resilience of virtual machine workloads against unstable mains power and resolved freezes
+  caused by storage snapshotting. For more information, contact [Google Support](https://docs.cloud.google.com/distributed-cloud/edge/latest/docs/getting-support).
+* **Auto-renewal of TLS certificates for Symcloud Storage no longer fails.** Symcloud Storage host services no longer
+  report a `Critical` state if a Google Distributed Cloud connected node was restarted after the Symcloud Storage TLS
+  certificate has expired. These certificates now renew automatically when the Google Distributed Cloud connected software
+  on the cluster is upgraded.
+* **Symcloud Storage volumes no longer intermittently enter `Degraded` state due to disk initialization failures.**
+  Disk initialization jobs now automatically retry until they succeed if transient control plane instability causes them to fail.
+* **Single-node cluster upgrades no longer fail due to race conditions.** A number of bugs in
+  [`runc`](https://github.com/opencontainers/runc) have been resolved, eliminating
+  race conditions that caused single-node cluster upgrade failures.
+
+### Security
+
+Security mitigations for the following vulnerabilities have been implemented in this release of Google Distributed Cloud connected:
+
+* **OS layer security mitigations:** All CVEs that have been resolved up to the LTS kernel version 6.12.31 (inclusive).
+* **GDC software-only security mitigations:** All mitigations listed in the [GDC software-only release notes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities) up to version [1.33.300-gke.60](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities#1.33) (inclusive).
+
+### Feature
+
+The following new functionality has been introduced in this release of Google Distributed Cloud connected:
+
+* **Refreshed GDC connected servers G2 hardware.** We are now shipping refreshed Google Distributed Cloud connected
+  servers G2 hardware based on the Dell XR8000 series platform. For more information, see
+  [Plan the hardware configuration](https://docs.cloud.google.com/distributed-cloud/edge/latest/docs/requirements#hardware).
+* **Virtual machine image download with Workload Identity.** You can now access Cloud Storage buckets that hold
+  your virtual machine images using a Kubernetes service account impersonating a Google service account. For more
+  information, see
+  [Create a Cloud Storage bucket for virtual machine images](https://docs.cloud.google.com/distributed-cloud/edge/latest/docs/virtual-machines#create_a_bucket_for_vm_images).
+
+### Issue
+
+This release of Google Distributed Cloud connected contains the following known issues:
+
+* **Symcloud Storage pods can enter a `CrashLoopBackOff` state due to bootstrapping failures.**. The Symcloud Storage
+  worker pods can intermittently restart multiple times while bootstrapping, preventing the `config.ini` file from being
+  generated, which causes the pods to fail repeatedly. To remedy this issue, contact
+  [Google Support](https://docs.cloud.google.com/distributed-cloud/edge/latest/docs/getting-support).
+* **Symcloud Storage jobs can stall due to thread lock contention.** A race condition caused by lock contention between
+  multiple threads can prevent Symcloud Storage jobs, such as volume attachment, detachment, creation, or deletion to stall.
+  To remedy this issue, contact [Google Support](https://docs.cloud.google.com/distributed-cloud/edge/latest/docs/getting-support).
+* **Symcloud Storage activation can stall due to scheduling conflicts following transient pre-install job failures.**
+  The pre-installation job does not tolerate transient failures, such as `containerd` issues. If a job pod fails but isn't
+  automatically deleted, existing pod affinity constraints prevent a replacement pod from being scheduled. This leaves the
+  job incomplete and stalls the Symcloud Storage activation process. To remedy this issue, contact
+  [Google Support](https://docs.cloud.google.com/distributed-cloud/edge/latest/docs/getting-support).
+* **`RobinCluster` status updates can be delayed after reconciliation.** The `RobinCluster` status may not immediately
+  reflect a Ready state even after reconciliation has completed. This delay occurs because the Symcloud Storage Operator's
+  back-off timer can increase to over 10 minutes during reconciliation, causing a lag in reporting the final status.
+* **Network Operator metrics missing in Cloud Monitoring.** Metrics for Network Function operators are not reported in
+  Cloud Monitoring if the Google Cloud project hosting the cluster exceeds its Cloud Monitoring API ingestion quota limits.
+  To remedy this issue, review your Cloud Monitoring API quota usage. If you consistently reach the limits, request a quota
+  increase through the Google Cloud Console.
+
+### Libraries
+
+The following Google Distributed Cloud connected components have been updated:
+
+* **Symcloud Storage** has been updated to version 5.4.16-166.
+
+### Fixed
+
+The following issues have been resolved in this release of Google Distributed Cloud connected:
+
+* **Single-node cluster upgrades no longer fail due to race conditions.** A number of bugs in
+  [`runc`](https://github.com/opencontainers/runc) have been resolved, eliminating
+  race conditions that caused single-node cluster upgrade failures.
+* **Virtual machines no longer intermittently freeze.** Through a combination of updates to Symcloud Storage and
+  [new firmware for the integrated Dell Remote Access Controller (iDRAC)](https://www.dell.com/support/home/en-in/drivers/driversdetails?driverid=kywdc&oscode=ws19l&productcode=oth-xr11),
+  we have improved the resilience of virtual machine workloads against unstable mains power and resolved freezes
+  caused by storage snapshotting. For more information, contact [Google Support](https://docs.cloud.google.com/distributed-cloud/edge/1.11.0/docs/getting-support).
+* **Improved reliability of virtual machine workloads.** This release addresses Symcloud Storage issues contributing to
+  freezing and slow recovery of VM workloads: `iomgr` `bmap` cache assertion, `bmap` repopulation performance, and `bmap`
+  garbage collection performance.
+* **Virtual machine workloads no longer throw a `SyncFailed` error when reading large amounts of remote data.** A race
+  condition was resolved that caused virtual machine workloads to stop responding to their clients if the network connection
+  failed when reading large amounts of data remotely. The race condition caused the virtual machine to become unhealthy and
+  report the following event: `SyncFailed virt-handler unknown error encountered sending command SyncVMI: rpc error: code = DeadlineExceeded desc = context deadline exceeded`.
+* **Patroni cluster now synchronizes properly when restarted after an ungraceful shutdown.** If the Patroni cluster was not gracefully
+  shut down, it could fail to synchronize correctly upon restart, leading to an outage of the Robin Service.
+* **Symcloud Storage pods now start up properly even if some pods are not ready when a node is cordoned or terminated.** The Patroni
+  `StatefulSet` used the `Ordered` pod management policy, which prevented remaining pods from starting up if the previous pod wasn't ready.
+  The updated policy now allows each pod to recover regardless of the state of the other pods.
+
+### Issue
+
+This release of Google Distributed Cloud connected contains the following known issues:
+
+* **Robin Service fails after restarting a worker node due to expired TLS certificates.** Symcloud Storage TLS certificates
+  do not auto-renew. If a worker pod is restarted while the corresponding certificate is expired, all Robin host services report
+  a `Critical` state. To remedy this issue, contact [Google Support](https://docs.cloud.google.com/distributed-cloud/edge/1.11.0/docs/getting-support).
+* **Symcloud Storage jobs can stall due to thread lock contention.** A race condition caused by lock contention between multiple
+  threads can cause Symcloud Storage jobs, such as volume creation, deletion, attachment, or detachment, to stall. To remedy this
+  issue, contact [Google Support](https://docs.cloud.google.com/distributed-cloud/edge/1.11.0/docs/getting-support).
+* **Symcloud Storage pods can enter a `CrashLoopBackOff` state due to bootstrapping failures.** The Symcloud Storage worker pods
+  can intermittently restart multiple times while bootstrapping, preventing the `config.ini` file from being generated, which causes
+  the pods to fail repeatedly. To remedy this issue, contact [Google Support](https://docs.cloud.google.com/distributed-cloud/edge/1.11.0/docs/getting-support).
+* **Symcloud Storage cluster in Degraded state after installation.** Transient control plane instability can cause the disk
+  initialization job to fail and there is no automatic retry upon job failure. This results in the installation ending with
+  the Symcloud Storage cluster in `Degraded` state. To remedy this issue, contact [Google Support](https://docs.cloud.google.com/distributed-cloud/edge/1.11.0/docs/getting-support).
+* **Symcloud Storage activation can stall due to scheduling conflicts following transient pre-install job failures.** The pre-installation
+  job does not tolerate transient failures, such as containerd issues. If a job pod fails but isn't automatically deleted, existing pod affinity constraints prevent a replacement pod from being scheduled. This leaves the job incomplete and stalls the Symcloud Storage activation process.
+  To remedy this issue, contact [Google Support](https://docs.cloud.google.com/distributed-cloud/edge/1.11.0/docs/getting-support).
+* **`RobinCluster` status updates can be delayed after reconciliation.** The `RobinCluster` status may not immediately reflect
+  a `Ready` state even after reconciliation has completed. This delay occurs because the Symcloud Storage Operator's back-off
+  timer can increase to over 10 minutes during reconciliation, causing a lag in reporting the final status.
+
+### Announcement
+
+This is a patch release of Google Distributed Cloud connected (version 1.11.1). Google Distributed Cloud software updates
+roll out gradually across regions. The latest version might not be immediately available on your Google Distributed Cloud
+connected deployment.
+
+---
 ## 2025-09-15
 
 ### Announcement

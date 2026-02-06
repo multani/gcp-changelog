@@ -1,5 +1,40 @@
 # Looker Studio
 
+## 2026-02-05
+
+### Feature
+
+**Looker Studio Pro for Google Workspace**
+
+You can purchase a Looker Studio Pro subscription from the Google Workspace Admin console.
+
+[Learn more about Looker Studio Pro for Workspace](https://support.google.com/a/answer/16695590).
+
+### Feature
+
+**Export chart to image**
+
+You can now export a chart to an image by saving it as a PNG file or by copying it to your clipboard.
+
+See [Export data from a chart](https://docs.cloud.google.com/looker/docs/studio/export-data-from-a-chart) for more information.
+
+### Feature
+
+**Now displaying Conversational Analytics reasoning**
+
+After you enter your query, click **Show reasoning** to see a plain text explanation of the steps that Conversational Analytics took to interpret your query.
+
+See [Show reasoning](https://docs.cloud.google.com/looker/docs/studio/conversational-analytics-looker-studio-data#show-reasoning) for more information.
+
+### Feature
+
+**Link to chart in report**
+
+You can now link to a specific component, like a chart or control, in your report.
+
+See [Link to a component](https://docs.cloud.google.com/looker/docs/studio/link-to-a-page#link_to_a_component) for more information.
+
+---
 ## 2026-01-15
 
 ### Feature

@@ -1,5 +1,13 @@
 # Google Kubernetes Engine
 
+## 2026-02-05
+
+### Feature
+
+Image streaming is now available in the `asia-southeast3` region. For more information,
+see the [Image streaming](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/image-streaming) documentation.
+
+---
 ## 2026-02-04
 
 ### Change

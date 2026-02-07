@@ -1,5 +1,47 @@
 # Gemini Enterprise
 
+## 2026-02-06
+
+### Security
+
+**Gemini Enterprise: Security update**
+
+**CVE-ID:** [CVE-2026-1727](https://nvd.nist.gov/vuln/detail/CVE-2026-1727)
+
+**Vulnerability:** Mitigation for Potential Cloud Storage Namespace Hijacking
+("Bucket Squatting")
+
+**Description:** We have addressed a security vulnerability
+(CVE-2026-1727) in Gemini Enterprise related to the management of
+Cloud Storage bucket names. The issue, commonly known as "bucket squatting," can arise
+if an attacker pre-emptively registers a bucket name that Gemini Enterprise
+services might be configured to use.
+
+**Potential impact:** Exploitation of this vulnerability can let an attacker
+intercept, access, or manipulate data intended for a legitimate
+Gemini Enterprise-related Cloud Storage bucket.
+
+**Status:** This vulnerability has been remediated in Gemini Enterprise. We have
+enhanced our systems to ensure the integrity and proper ownership of
+Cloud Storage resources used by the platform, which prevents this
+potential issue.
+
+**Action required:** No action is required from users. The
+necessary fixes and safeguards have been automatically deployed to
+Gemini Enterprise.
+
+### Feature
+
+**Gemini Enterprise: Welcome emails**
+
+After a user signs in to Gemini Enterprise for the first time, the user receives
+a welcome email with tips on how to get the most out of Gemini Enterprise.
+Gemini Enterprise admins can turn this feature on or off from the admin settings.
+
+For more information, see [Manage web app
+features](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
+
+---
 ## 2026-02-04
 
 ### Feature

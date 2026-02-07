@@ -1,5 +1,13 @@
 # reCAPTCHA
 
+## 2026-01-30
+
+### Change
+
+The updated reCAPTCHA Mobile SDK improves the risk score. You should review
+and adjust your reCAPTCHA action thresholds as needed.
+
+---
 ## 2026-01-14
 
 ### Change

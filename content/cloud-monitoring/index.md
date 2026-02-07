@@ -1,5 +1,22 @@
 # Cloud Monitoring
 
+## 2026-02-06
+
+### Feature
+
+You can use the [Cloud Monitoring API MCP server](https://docs.cloud.google.com/monitoring/api/ref_v3/mcp)
+to let agents and AI applications interact with your time series data.
+This feature is in [Preview](https://docs.cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+You can now ingest OTLP metrics into Cloud Monitoring by using an
+OpenTelemetry Collector, an OTLP exporter, and the Telemetry API. For more
+information, see
+[OTLP metric ingestion overview](https://docs.cloud.google.com/stackdriver/docs/otlp-metrics/overview).
+The Telemetry API for metric ingestion is in [Preview](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-01-26
 
 ### Feature

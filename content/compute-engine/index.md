@@ -1,5 +1,23 @@
 # Compute Engine
 
+## 2026-02-05
+
+### Feature
+
+**Generally available**: You can use Hyperdisk ML with the following machine
+series and Cloud TPU versions:
+
+* C4A machine series
+* A4 machine series
+* A4X machine series
+* G4 machine series
+* TPU v5e
+* TPU v5p
+* TPU7x
+
+For more information, see [About Hyperdisk ML](https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-ml).
+
+---
 ## 2026-01-26
 
 ### Feature

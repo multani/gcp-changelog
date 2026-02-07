@@ -2,9 +2,54 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Gemini Enterprise</title>
   <subtitle>Changelog for Google Cloud product: Gemini Enterprise</subtitle>
-  <updated>2026-02-04T00:00:00+00:00</updated>
+  <updated>2026-02-06T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:gemini-enterprise</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/gemini-enterprise/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise:2026-02-06:security:0</id>
+    <published>2026-02-06T00:00:00+00:00</published>
+    <updated>2026-02-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Gemini Enterprise: Security update</strong></p>
+<p><strong>CVE-ID:</strong> <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1727">CVE-2026-1727</a></p>
+<p><strong>Vulnerability:</strong> Mitigation for Potential Cloud Storage Namespace Hijacking
+("Bucket Squatting")</p>
+<p><strong>Description:</strong> We have addressed a security vulnerability
+(CVE-2026-1727) in Gemini Enterprise related to the management of
+Cloud Storage bucket names. The issue, commonly known as "bucket squatting," can arise
+if an attacker pre-emptively registers a bucket name that Gemini Enterprise
+services might be configured to use.</p>
+<p><strong>Potential impact:</strong> Exploitation of this vulnerability can let an attacker
+intercept, access, or manipulate data intended for a legitimate
+Gemini Enterprise-related Cloud Storage bucket.</p>
+<p><strong>Status:</strong> This vulnerability has been remediated in Gemini Enterprise. We have
+enhanced our systems to ensure the integrity and proper ownership of
+Cloud Storage resources used by the platform, which prevents this
+potential issue.</p>
+<p><strong>Action required:</strong> No action is required from users. The
+necessary fixes and safeguards have been automatically deployed to
+Gemini Enterprise.</p>]]></content>
+    <summary>A security vulnerability related to Cloud Storage bucket naming in Gemini Enterprise has been addressed. This update prevents potential data interception or manipulation by ensuring proper ownership of storage resources. No user action is required.</summary>
+    <title>Security: Security Update for Gemini Enterprise</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise:2026-02-06:feature:1</id>
+    <published>2026-02-06T00:00:00+00:00</published>
+    <updated>2026-02-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Gemini Enterprise: Welcome emails</strong></p>
+<p>After a user signs in to Gemini Enterprise for the first time, the user receives
+a welcome email with tips on how to get the most out of Gemini Enterprise.
+Gemini Enterprise admins can turn this feature on or off from the admin settings.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features">Manage web app
+features</a>.</p>]]></content>
+    <summary>Users signing in to Gemini Enterprise for the first time will now receive a welcome email with helpful tips. Admins can control this feature through their settings.</summary>
+    <title>Feature: Gemini Enterprise welcome emails</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

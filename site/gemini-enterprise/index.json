@@ -1,6 +1,24 @@
 {
   "name": "Gemini Enterprise",
   "entries": {
+    "2026-02-06": [
+      {
+        "kind": "Security",
+        "content": "**Gemini Enterprise: Security update**\n\n**CVE-ID:** [CVE-2026-1727](https://nvd.nist.gov/vuln/detail/CVE-2026-1727)\n\n**Vulnerability:** Mitigation for Potential Cloud Storage Namespace Hijacking\n(\"Bucket Squatting\")\n\n**Description:** We have addressed a security vulnerability\n(CVE-2026-1727) in Gemini Enterprise related to the management of\nCloud Storage bucket names. The issue, commonly known as \"bucket squatting,\" can arise\nif an attacker pre-emptively registers a bucket name that Gemini Enterprise\nservices might be configured to use.\n\n**Potential impact:** Exploitation of this vulnerability can let an attacker\nintercept, access, or manipulate data intended for a legitimate\nGemini Enterprise-related Cloud Storage bucket.\n\n**Status:** This vulnerability has been remediated in Gemini Enterprise. We have\nenhanced our systems to ensure the integrity and proper ownership of\nCloud Storage resources used by the platform, which prevents this\npotential issue.\n\n**Action required:** No action is required from users. The\nnecessary fixes and safeguards have been automatically deployed to\nGemini Enterprise.",
+        "summary": {
+          "title": "Security Update for Gemini Enterprise",
+          "summary": "A security vulnerability related to Cloud Storage bucket naming in Gemini Enterprise has been addressed. This update prevents potential data interception or manipulation by ensuring proper ownership of storage resources. No user action is required."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Gemini Enterprise: Welcome emails**\n\nAfter a user signs in to Gemini Enterprise for the first time, the user receives\na welcome email with tips on how to get the most out of Gemini Enterprise.\nGemini Enterprise admins can turn this feature on or off from the admin settings.\n\nFor more information, see [Manage web app\nfeatures](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).",
+        "summary": {
+          "title": "Gemini Enterprise welcome emails",
+          "summary": "Users signing in to Gemini Enterprise for the first time will now receive a welcome email with helpful tips. Admins can control this feature through their settings."
+        }
+      }
+    ],
     "2026-02-04": [
       {
         "kind": "Feature",

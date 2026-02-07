@@ -1,5 +1,24 @@
 # Dataproc
 
+## 2026-02-06
+
+### Announcement
+
+New [Serverless for Apache Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
+
+* 1.2.69
+* 2.2.69
+* 2.3.22
+* 3.0.5
+
+### Feature
+
+**Serverless for Apache Spark:** Added support for removing `conscrypt`
+from Serverless for Apache Spark `2.3`+ runtimes using the
+[`dataproc.artifacts.remove`](https://docs.cloud.google.com/dataproc-serverless/docs/concepts/properties#other_properties)
+property .
+
+---
 ## 2026-02-05
 
 ### Fixed

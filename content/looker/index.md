@@ -1,5 +1,12 @@
 # Looker
 
+## 2026-02-06
+
+### Deprecated
+
+The DataRobot [action](https://docs.cloud.google.com/looker/docs/actions-overview) is now deprecated. This action is no longer available in the Looker Action Hub.
+
+---
 ## 2026-02-02
 
 ### Feature

@@ -108,6 +108,7 @@
 - [Dataproc Metastore](dataproc-metastore/index.md)
 - [Datastream](datastream/index.md)
 - [Deep Learning VM Images](deep-learning-vm-images/index.md)
+- [Developer Connect](developer-connect/index.md)
 - [Dialogflow](dialogflow/index.md)
 - [Document AI](document-ai/index.md)
 - [Eventarc](eventarc/index.md)

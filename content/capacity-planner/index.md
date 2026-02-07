@@ -1,5 +1,21 @@
 # Capacity Planner
 
+## 2026-02-06
+
+### Feature
+
+**Preview**: Capacity Planner supports the following:
+
+* Usage data for the egress bandwidth of Cloud Storage buckets, which can
+  help you monitor when to request more bandwidth.
+* Usage data for GPUs attached to Spot VMs, which can
+  help you optimize your resource usage and plan for future capacity and quota
+  needs.
+
+For more information, see
+[View usage and forecast data](https://docs.cloud.google.com/capacity-planner/docs/view-data).
+
+---
 ## 2026-01-05
 
 ### Feature

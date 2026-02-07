@@ -32,6 +32,15 @@ Gemini Enterprise.
 
 ### Feature
 
+**Gemini Enterprise: Data connector for Linear (Public preview)**
+
+You can connect Linear data stores to Gemini Enterprise. For more information,
+see [Connect Linear](https://docs.cloud.google.com/gemini/enterprise/docs/linear).
+
+Support for Linear data sources is in Public preview.
+
+### Feature
+
 **Gemini Enterprise: Welcome emails**
 
 After a user signs in to Gemini Enterprise for the first time, the user receives
@@ -90,7 +99,7 @@ For a list of actions for these data stores, see [Supported actions](https://doc
 
 **Gemini Enterprise: Support for new data stores (Preview)**
 
-The following data stores are now supported in Gemini Enterprise:
+The following data stores are supported in Gemini Enterprise:
 
 * [Confluence Data Center](https://docs.cloud.google.com/gemini/enterprise/docs/confluence-dc)
 * [Jira Data Center](https://docs.cloud.google.com/gemini/enterprise/docs/jira-dc)
@@ -117,10 +126,10 @@ the name of an agent, person, or file. For more information about mentions, see
 
 **Gemini Enterprise: Visual flow builder for existing agents**
 
-The Agent Designer visual flow builder is now available for all agents created
-before January 12, 2026. You can now manage these agents directly
-from the [Agent Gallery](https://docs.cloud.google.com/gemini/enterprise/docs/agent-gallery) page, or edit their logic using the enhanced visual flow
-builder from the **Agent Designer > Flow** tab.
+The Agent Designer visual flow builder is available for all agents created
+before January 12, 2026. You can manage these agents directly from the
+[Agent Gallery](https://docs.cloud.google.com/gemini/enterprise/docs/agent-gallery) page, or edit their logic
+using the enhanced visual flow builder from the **Agent Designer > Flow** tab.
 
 For more information, see [Agent Designer overview](https://docs.cloud.google.com/gemini/enterprise/docs/agent-designer).
 

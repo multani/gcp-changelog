@@ -2,6 +2,10 @@
 
 ## 2026-02-06
 
+### Feature
+
+**Dataproc on Compute Engine:** [Sharing snapshot diagnostic data](https://docs.cloud.google.com/dataproc/docs/support/diagnose-clusters#snapshot_diagnostic_data_collection): Setting the `--tarball-access=GOOGLE_DATAPROC_DIAGNOSE` flag with the [`gcloud dataproc clusters diagnose`](https://docs.cloud.google.com/sdk/gcloud/reference/dataproc/clusters/diagnose) command shares all of the output Cloud Storage bucket contents with Google Cloud support if [uniform bucket-level access](https://docs.cloud.google.com/storage/docs/uniform-bucket-level-access) is enabled on the output Cloud Storage bucket. If object-level access control is enabled on the output Cloud Storage bucket, only the generated diagnostic tar file is shared.
+
 ### Announcement
 
 New [Serverless for Apache Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):

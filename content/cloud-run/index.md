@@ -1,5 +1,21 @@
 # Cloud Run
 
+## 2026-02-06
+
+### Feature
+
+Expanded coverage for compute flexible committed use discounts (CUDs) is
+available to all Cloud Billing accounts. Your Cloud Billing accounts have
+been automatically migrated to the
+[new spend-based CUD model](https://docs.cloud.google.com/docs/cuds-multiprice) and you no longer need to opt-in
+to benefit from the expanded coverage. For the full list of eligible SKUs
+across Compute Engine, GKE, and Cloud Run,
+see [SKU Groups - Compute Flexible CUD Eligible SKUs](https://cloud.google.com/skus/sku-groups/compute-flexible-cud-eligible-skus).
+
+To learn more about compute flexible CUDs for Cloud Run and how they apply to your usage, see
+the [compute flexible CUDs documentation](https://docs.cloud.google.com/run/cud).
+
+---
 ## 2026-02-05
 
 ### Feature

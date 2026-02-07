@@ -2317,6 +2317,8 @@
 
 <h1 id="dataproc">Dataproc</h1>
 <h2 id="2026-02-06">2026-02-06</h2>
+<h3 id="feature">Feature</h3>
+<p><strong>Dataproc on Compute Engine:</strong> <a href="https://docs.cloud.google.com/dataproc/docs/support/diagnose-clusters#snapshot_diagnostic_data_collection">Sharing snapshot diagnostic data</a>: Setting the <code>--tarball-access=GOOGLE_DATAPROC_DIAGNOSE</code> flag with the <a href="https://docs.cloud.google.com/sdk/gcloud/reference/dataproc/clusters/diagnose"><code>gcloud dataproc clusters diagnose</code></a> command shares all of the output Cloud Storage bucket contents with Google Cloud support if <a href="https://docs.cloud.google.com/storage/docs/uniform-bucket-level-access">uniform bucket-level access</a> is enabled on the output Cloud Storage bucket. If object-level access control is enabled on the output Cloud Storage bucket, only the generated diagnostic tar file is shared.</p>
 <h3 id="announcement">Announcement</h3>
 <p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Serverless for Apache Spark runtime versions</a>:</p>
 <ul>
@@ -2325,7 +2327,7 @@
 <li>2.3.22</li>
 <li>3.0.5</li>
 </ul>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_1">Feature</h3>
 <p><strong>Serverless for Apache Spark:</strong> Added support for removing <code>conscrypt</code>
 from Serverless for Apache Spark <code>2.3</code>+ runtimes using the
 <a href="https://docs.cloud.google.com/dataproc-serverless/docs/concepts/properties#other_properties"><code>dataproc.artifacts.remove</code></a>
@@ -2334,7 +2336,7 @@ property .</p>
 <h2 id="2026-02-05">2026-02-05</h2>
 <h3 id="fixed">Fixed</h3>
 <p>Fixed the <code>spark.driver.extraClassPath</code> delimiter for the Jupyter SparkMonitor Listener.</p>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>Added a new <code>dataproc:pypi.repository</code> property to customize the PyPI repository used for pip. The value can be a URL, or <code>google</code> to use a Google-hosted cache of PyPI, accessible without public internet connectivity. Starting in image version 3.1, <code>google</code> will be the default; to opt out and return to public PyPI, use the value <code>pypi</code>.</p>
 <h3 id="announcement_1">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions">Dataproc on Compute Engine subminor image versions</a>:</p>
@@ -2344,13 +2346,13 @@ property .</p>
 <li>2.2.75-debian12, 2.2.75-ubuntu22, 2.2.75-ubuntu22-arm, 2.2.75-rocky9</li>
 <li>2.3.22-debian12, 2.3.22-ml-ubuntu22, 2.3.22-rocky9, 2.3.22-ubuntu22, 2.3.22-ubuntu22-arm</li>
 </ul>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>Parquet CLI version upgraded to 1.15.2 in 2.1 and 2.2 images.</p>
 <h3 id="fixed_1">Fixed</h3>
 <p>Fixed a bug in the ARM image that prevented connecting to a Dataproc Metastore instance with a gRPC protocol endpoint.</p>
-<h3 id="feature_3">Feature</h3>
-<p>Apache Pig is now available in ARM images.</p>
 <h3 id="feature_4">Feature</h3>
+<p>Apache Pig is now available in ARM images.</p>
+<h3 id="feature_5">Feature</h3>
 <p>Delta subminor version upgraded to 3.2.1 in Dataproc on Compute Engine image 2.2 and 2.3.</p>
 <h3 id="change">Change</h3>
 <p>Removed use of deprecated Hadoop configuration properties <code>fs.default.name</code> and <code>yarn.resourcemanager.system-metrics-publisher.enabled</code>.</p>
@@ -2383,7 +2385,7 @@ interactive session settings.</p>
 </ul>
 <hr />
 <h2 id="2026-01-24">2026-01-24</h2>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p>Upgraded the Delta subminor version to <code>3.2.1</code> in images <code>2.2</code> and <code>2.3</code>.</p>
 <h3 id="fixed_2">Fixed</h3>
 <p>Fixed a bug in the ARM image that prevented connecting to a Dataproc Metastore instance with a
@@ -2399,12 +2401,12 @@ gRPC protocol endpoint.</p>
 <li>2.3.21-debian12, 2.3.21-ml-ubuntu22, 2.3.21-rocky9, 2.3.21-ubuntu22, 2.3.21-ubuntu22-arm</li>
 </ul>
 <p><strong>Rollback Notice:</strong> These image versions were rolled back on <a href="https://docs.cloud.google.com/dataproc/docs/release-notes#January_30_2026">January 30, 2026</a>.</p>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p>Added a new <code>dataproc:pypi.repository</code> property to customize the PyPI repository that <code>pip</code> uses.
 The value can be a internet-accessible URL, or you can specify <code>google</code> to use a Google-hosted cache of PyPI, which
 is accessible without public internet connectivity. Starting with Dataproc image version
 <code>3.1</code>, <code>google</code> will be the default (you can specify the <code>pypi</code> property value to use public PyPI instead of the default <code>google</code> 3.1 value).</p>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p>Apache Pig is now available in ARM images.</p>
 <h3 id="change_1">Change</h3>
 <p>Removed the use of deprecated Hadoop configuration properties <code>fs.default.name</code> and
@@ -2458,7 +2460,7 @@ is accessible without public internet connectivity. Starting with Dataproc image
 <p><strong>Rollback Notice:</strong> These image versions were rolled back on <a href="https://docs.cloud.google.com/dataproc/docs/release-notes#January_13_2026">January 13, 2026</a>.</p>
 <h3 id="fixed_5">Fixed</h3>
 <p>Fixed the <code>spark.driver.extraClassPath</code> delimiter for the Jupyter SparkMonitor Listener.</p>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p>Added a new property <code>dataproc:pypi.repository</code> to customize the PyPI repository used for pip. The value can be a URL, or <code>google</code> to use a Google-hosted cache of PyPI, accessible without public internet connectivity. Starting in image version 3.1, <code>google</code> will be the default; to opt out and return to public PyPI, use the value <code>pypi</code>.</p>
 <hr />
 <h2 id="2025-12-22">2025-12-22</h2>
@@ -2480,7 +2482,7 @@ released on <a href="https://docs.cloud.google.com/dataproc/docs/release-notes#D
 </ul>
 <hr />
 <h2 id="2025-12-05">2025-12-05</h2>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p><code>dataproc-ml</code> is available by default in <code>2.3</code> <code>-ml</code> images.</p>
 <h3 id="announcement_11">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions">Dataproc on Compute Engine subminor image versions</a>:</p>
@@ -2538,7 +2540,7 @@ December 20, 2025.</p>
 <li>2.2.62</li>
 <li>2.3.15</li>
 </ul>
-<h3 id="feature_10">Feature</h3>
+<h3 id="feature_11">Feature</h3>
 <p><strong>Serverless for Apache Spark:</strong> Added the
 <a href="https://docs.cloud.google.com/dataproc-serverless/docs/concepts/properties#other_properties"><code>dataproc.artifacts.remove</code></a> property,
 which lets users remove default artifacts, such as <code>spark-bigquery-connector</code>,
@@ -2719,7 +2721,7 @@ and cannot be used when creating a new cluster.</p>
 </ul>
 <hr />
 <h2 id="2025-09-02">2025-09-02</h2>
-<h3 id="feature_11">Feature</h3>
+<h3 id="feature_12">Feature</h3>
 <p><a href="https://cloud.google.com/dataproc/docs/concepts/iam/sa-multi-tenancy">Multi-tenant clusters</a> are now available in Preview. Many data engineers and scientists can share a multi-tenant cluster to execute their workloads in isolation from each other.</p>
 <hr />
 <h2 id="2025-08-29">2025-08-29</h2>
@@ -2787,9 +2789,9 @@ and cannot be used when creating a new cluster.</p>
 <li>2.2.56</li>
 <li>2.3.7</li>
 </ul>
-<h3 id="feature_12">Feature</h3>
-<p><strong>Dataproc on Compute Engine: Image versions <code>2.2</code> and <code>2.3</code></strong>: The <a href="https://cloud.google.com/dataproc/docs/concepts/components/iceberg">Iceberg optional component</a> supports the BigLake Iceberg REST catalog.</p>
 <h3 id="feature_13">Feature</h3>
+<p><strong>Dataproc on Compute Engine: Image versions <code>2.2</code> and <code>2.3</code></strong>: The <a href="https://cloud.google.com/dataproc/docs/concepts/components/iceberg">Iceberg optional component</a> supports the BigLake Iceberg REST catalog.</p>
+<h3 id="feature_14">Feature</h3>
 <p><strong>Dataproc on Compute Engine</strong>: <strong><a href="https://cloud.google.com/dataproc/docs/support/diagnose-clusters#enable_and_share_checkpoint_diagnostic_data">Sharing checkpoint diagnostic data:</a></strong> Setting the <a href="https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/cluster-properties#dataproc_service_properties_table"><code>dataproc:diagnostic.capture.access=GOOGLE_DATAPROC_DIAGNOSE</code></a> property during cluster creation shares all of the <a href="https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/staging-bucket">temp bucket</a> contents with Google Cloud support if <a href="https://cloud.google.com/storage/docs/uniform-bucket-level-access">uniform bucket-level access</a> is enabled on temp bucket. If object-level access control is in effect on the temp bucket, only the <a href="https://cloud.google.com/dataproc/docs/support/diagnose-clusters#checkpoint_data_location">checkpoint diagnostic data folder</a> corresponding to the cluster in Cloud Storage is shared.</p>
 <hr />
 <h2 id="2025-08-11">2025-08-11</h2>
@@ -2838,11 +2840,11 @@ and cannot be used when creating a new cluster.</p>
 <p>New <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters">Dataproc on Compute Engine subminor image versions</a>:</p>
 <p><code>2.3.6-debian12</code>, <code>2.3.6-ubuntu22</code>, <code>2.3.6-ml-ubuntu22</code>, and <code>2.3.6-rocky9</code>.</p>
 <p>The <code>2.3.6-ml-ubuntu22</code> image extends the 2.3 base image with <a href="https://cloud.google.com/dataproc/docs/concepts/versioning/dataproc-release-2.3#image_version_23_machine_learning_ml_components">ML-specific libraries</a>.</p>
-<h3 id="feature_14">Feature</h3>
+<h3 id="feature_15">Feature</h3>
 <p>Dataproc now allows Dynamic update of <a href="https://cloud.google.com/dataproc/docs/concepts/iam/sa-multi-tenancy#create_a_secure_multi-tenancy_cluster">multi-tenancy clusters</a>.</p>
 <hr />
 <h2 id="2025-07-07">2025-07-07</h2>
-<h3 id="feature_15">Feature</h3>
+<h3 id="feature_16">Feature</h3>
 <p>The <a href="https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/scheduled-stop">Cluster Scheduled Stop</a> feature is available in <a href="https://cloud.google.com/products#product-launch-stages">preview</a>. You can use this feature to stop clusters after a specified idle period, at a specified future time, or after a specified period from the cluster creation or update request.</p>
 <hr />
 <h2 id="2025-07-04">2025-07-04</h2>

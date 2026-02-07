@@ -2,10 +2,6 @@
 
 ## 2026-02-06
 
-### Announcement
-
-
-
 ### hybrid 1.16.0-hotfix.1
 
 On February 6, 2026 we released Apigee hybrid 1.16.0-hotfix.1.

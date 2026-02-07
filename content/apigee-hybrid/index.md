@@ -1,5 +1,114 @@
 # Apigee hybrid
 
+## 2026-02-06
+
+### Announcement
+
+
+
+### hybrid 1.16.0-hotfix.1
+
+On February 6, 2026 we released Apigee hybrid 1.16.0-hotfix.1.
+
+**Important:** If your installation is already on Apigee hybrid v1.16.0, use the following procedure to apply this hotfix. For new installations, see [The big picture](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture) and then apply the hotfix to the new installation with the following instructions.
+
+#### Apply this hotfix with the following steps:
+
+**Note:** This hotfix installs the `apigee-mart-server` container images. All other container images are unchanged from Hybrid v1.16.0.
+
+1. In your overrides file, update the `image.url` and `image.tag` properties of `ao` and `mart` to version `1.16.0-hotfix.1`:
+
+   ```
+   ao:
+     image:
+       url: "gcr.io/apigee-release/hybrid/apigee-operators"
+       tag: "1.16.0-hotfix.1"
+
+   mart:
+     image:
+       url: "gcr.io/apigee-release/hybrid/apigee-mart-server"
+       tag: "1.16.0-hotfix.1"
+   ```
+2. Install the hotfix release for Apigee operators, beginning with a dry run:
+
+   ```
+   helm upgrade operator apigee-operator/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     -f overrides.yaml \
+     --dry-run=server
+   ```
+3. If the dry run is successful, install the hotfix release for Apigee operators:
+
+   ```
+   helm upgrade operator apigee-operator/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     -f overrides.yaml
+   ```
+4. Install the hotfix release for your organization, beginning with a dry run:
+
+   ```
+   helm upgrade $ORG_NAME apigee-org/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     -f overrides.yaml \
+     --dry-run=server
+   ```
+5. If the dry run is successful, install the hotfix release for your organization:
+
+   ```
+   helm upgrade $ORG_NAME apigee-org/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     -f overrides.yaml
+   ```
+6. Verify the organization chart by checking the state:
+
+   ```
+   kubectl -n APIGEE_NAMESPACE get apigeeorg
+   ```
+7. Install the hotfix release for your environment, beginning with a dry run:
+
+   ```
+   helm upgrade ENV_RELEASE_NAME apigee-env/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     --set env=$ENV_NAME \
+     -f overrides.yaml \
+     --dry-run=server
+   ```
+8. If the dry run is successful, install the hotfix release for your environment:
+
+   ```
+   helm upgrade ENV_RELEASE_NAME apigee-env/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     --set env=$ENV_NAME \
+     -f overrides.yaml
+   ```
+9. Verify the environment chart by checking the state:
+
+   ```
+   kubectl -n APIGEE_NAMESPACE get apigeeenv
+   ```
+
+### Fixed
+
+#### Fixed in this release
+
+| Bug ID | Description |
+| --- | --- |
+| **479872706** | **An issue that prevented loading API products, apps, and developers after migrating data to Apigee hybrid 1.16.0 in certain configurations has been resolved.** |
+| **481793880** | **An issue that prevented upgrading an existing organization when monetization was enabled has been fixed.** |
+
+---
 ## 2025-12-19
 
 ### Change

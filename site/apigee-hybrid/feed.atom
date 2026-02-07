@@ -2,9 +2,107 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee hybrid</title>
   <subtitle>Changelog for Google Cloud product: Apigee hybrid</subtitle>
-  <updated>2025-12-19T00:00:00+00:00</updated>
+  <updated>2026-02-06T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-hybrid</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-hybrid/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-02-06:announcement:0</id>
+    <published>2026-02-06T00:00:00+00:00</published>
+    <updated>2026-02-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary>Discover the latest advancements in AI technology designed to enhance your productivity and creativity. These new features offer powerful tools for various applications.</summary>
+    <title>Announcement: New AI Features Announced</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-02-06:hybrid 1.16.0-hotfix.1:1</id>
+    <published>2026-02-06T00:00:00+00:00</published>
+    <updated>2026-02-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On February 6, 2026 we released Apigee hybrid 1.16.0-hotfix.1.</p>
+<p><strong>Important:</strong> If your installation is already on Apigee hybrid v1.16.0, use the following procedure to apply this hotfix. For new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture">The big picture</a> and then apply the hotfix to the new installation with the following instructions.</p>
+<h4>Apply this hotfix with the following steps:</h4>
+<p><strong>Note:</strong> This hotfix installs the <code>apigee-mart-server</code> container images. All other container images are unchanged from Hybrid v1.16.0.</p>
+<ol>
+<li>In your overrides file, update the <code>image.url</code> and <code>image.tag</code> properties of <code>ao</code> and <code>mart</code> to version <code>1.16.0-hotfix.1</code>:</li>
+</ol>
+<p>```
+   ao:
+     image:
+       url: "gcr.io/apigee-release/hybrid/apigee-operators"
+       tag: "1.16.0-hotfix.1"</p>
+<p>mart:
+     image:
+       url: "gcr.io/apigee-release/hybrid/apigee-mart-server"
+       tag: "1.16.0-hotfix.1"
+   ```
+2. Install the hotfix release for Apigee operators, beginning with a dry run:</p>
+<p><code>helm upgrade operator apigee-operator/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     -f overrides.yaml \
+     --dry-run=server</code>
+3. If the dry run is successful, install the hotfix release for Apigee operators:</p>
+<p><code>helm upgrade operator apigee-operator/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     -f overrides.yaml</code>
+4. Install the hotfix release for your organization, beginning with a dry run:</p>
+<p><code>helm upgrade $ORG_NAME apigee-org/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     -f overrides.yaml \
+     --dry-run=server</code>
+5. If the dry run is successful, install the hotfix release for your organization:</p>
+<p><code>helm upgrade $ORG_NAME apigee-org/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     -f overrides.yaml</code>
+6. Verify the organization chart by checking the state:</p>
+<p><code>kubectl -n APIGEE_NAMESPACE get apigeeorg</code>
+7. Install the hotfix release for your environment, beginning with a dry run:</p>
+<p><code>helm upgrade ENV_RELEASE_NAME apigee-env/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     --set env=$ENV_NAME \
+     -f overrides.yaml \
+     --dry-run=server</code>
+8. If the dry run is successful, install the hotfix release for your environment:</p>
+<p><code>helm upgrade ENV_RELEASE_NAME apigee-env/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     --set env=$ENV_NAME \
+     -f overrides.yaml</code>
+9. Verify the environment chart by checking the state:</p>
+<p><code>kubectl -n APIGEE_NAMESPACE get apigeeenv</code></p>]]></content>
+    <summary>A hotfix release for Apigee hybrid 1.16.0 is now available. This update includes changes to the apigee-mart-server container images. Follow the provided steps to apply this hotfix to your existing installation.</summary>
+    <title>hybrid 1.16.0-hotfix.1: Apigee Hybrid 1.16.0-hotfix.1 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-02-06:fixed:2</id>
+    <published>2026-02-06T00:00:00+00:00</published>
+    <updated>2026-02-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>Fixed in this release</h4>
+<p>| Bug ID | Description |
+| --- | --- |
+| <strong>479872706</strong> | <strong>An issue that prevented loading API products, apps, and developers after migrating data to Apigee hybrid 1.16.0 in certain configurations has been resolved.</strong> |
+| <strong>481793880</strong> | <strong>An issue that prevented upgrading an existing organization when monetization was enabled has been fixed.</strong> |</p>]]></content>
+    <summary>An issue preventing API products, apps, and developers from loading after data migration to Apigee hybrid 1.16.0 has been resolved. Additionally, an issue blocking the upgrade of existing organizations with monetization enabled has been fixed.</summary>
+    <title>Fixed: Apigee hybrid release fixes</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,12 @@
 # Anti Money Laundering AI
 
+## 2026-02-03
+
+### Announcement
+
+Copy an AML AI model to a separate AML AI instance. See [Copy models to new instances](https://docs.cloud.google.com/financial-services/anti-money-laundering/docs/copy-model-instances) to find out more about how this works.
+
+---
 ## 2025-12-06
 
 ### Announcement

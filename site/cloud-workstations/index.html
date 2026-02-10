@@ -2316,8 +2316,27 @@
 
 
 <h1 id="cloud-workstations">Cloud Workstations</h1>
-<h2 id="2026-01-31">2026-01-31</h2>
+<h2 id="2026-02-06">2026-02-06</h2>
 <h3 id="feature">Feature</h3>
+<p>You can provide <a href="https://docs.cloud.google.com/compute/docs/metadata/overview">custom metadata</a> for a
+workstation's host VM.</p>
+<p>Use the <code>--instance-metadata</code> flag with the
+<a href="https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/create"><code>gcloud workstations configs create</code></a>
+and <a href="https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/update"><code>gcloud workstations configs update</code></a>
+commands. Format the metadata as a comma-separated list of key-value pairs—for
+example, <code>--instance-metadata=key1=value1,key2=value2</code>.</p>
+<p>Note that updating metadata replaces all existing custom metadata for the
+workstation instance.</p>
+<h3 id="feature_1">Feature</h3>
+<p>Cloud Workstations supports specifying a custom startup script to be executed on
+the workstation's host VM during boot.</p>
+<p>Provide the custom startup script as a Google Cloud Storage URL, such as
+<code>gs://BUCKET/FILE</code>, using the <code>--startup-script-uri</code> flag with the
+<a href="https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/create"><code>gcloud workstations configs create</code></a> and <a href="https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/update"><code>gcloud workstations configs update</code></a>
+commands.</p>
+<hr />
+<h2 id="2026-01-31">2026-01-31</h2>
+<h3 id="feature_2">Feature</h3>
 <p>Cloud Workstations supports <a href="https://docs.cloud.google.com/compute/docs/disks/hyperdisks">Hyperdisk Balanced High Availability</a> (<code>hyperdisk-balanced-ha</code>) for persistent directories on configurations using A3, C3, C4, G4, M3, N4, N4D, and Z3 machine series. You can specify the disk type using the <code>--disk-type</code> flag with the <a href="https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/create"><code>gcloud workstations configs create</code></a> and <a href="https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/update"><code>gcloud workstations configs update</code></a> commands.</p>
 <p>Cloud Workstations supports A3 machine types with Hyperdisk only. For more details, see <a href="https://docs.cloud.google.com/workstations/docs/available-machine-types">Available machine types</a> and <a href="https://docs.cloud.google.com/workstations/docs/available-gpus">Available GPUs</a>.</p>
 <hr />
@@ -2335,11 +2354,11 @@ pre-installed. To continue using JDK 11,
 <a href="https://docs.cloud.google.com/workstations/docs/customize-container-images">customize your container images</a>.</p>
 <hr />
 <h2 id="2025-07-07">2025-07-07</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>Cloud Workstations is available in the <code>europe-central2</code> region (Warsaw). For more information, see <a href="https://cloud.google.com/workstations/docs/locations">Locations</a>.</p>
 <hr />
 <h2 id="2025-06-09">2025-06-09</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>The JetBrains <a href="https://cloud.google.com/workstations/docs/develop-code-using-local-jetbrains-ides#add_a_server_readiness_check">readiness server</a> lets you configure the port it listens on and the timeout when you specify the <code>JETBRAINS_READY_SERVER_PORT</code> and <code>JETBRAINS_READY_SERVER_TIMEOUT</code> environment variables in your workstation environment. For more information about setting environment variables, see <a href="https://cloud.google.com/workstations/docs/create-configuration#customize_environment">Customizing your environment</a>.</p>
 <hr />
 <h2 id="2025-06-03">2025-06-03</h2>
@@ -2370,6 +2389,9 @@ pre-installed. To continue using JDK 11,
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-workstations">Cloud Workstations</a></li>
+          <li class="nav-item">
+            <a href="#2026-02-06" class="nav-link">2026-02-06</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-01-31" class="nav-link">2026-01-31</a>
           </li>

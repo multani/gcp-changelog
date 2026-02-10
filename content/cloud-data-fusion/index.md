@@ -1,5 +1,43 @@
 # Cloud Data Fusion
 
+## 2026-02-09
+
+### Feature
+
+Cloud Data Fusion version 6.11.1.1 is
+[generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+This release includes the following feature:
+
+* `InstanceV3` monitored-resource: Introduced
+  `datafusion.googleapis.com/InstanceV3` as the default monitored resource for
+  instance-level metrics and system service logs. This resource excludes the
+  `org_id` and `namespace` labels found in `InstanceV2`. Emission of
+  `InstanceV2` metrics and logs is disabled by default for new and upgraded
+  instances but can be re-enabled using the REST API.
+
+  For more information, see
+  [Metrics overview](https://docs.cloud.google.com/data-fusion/docs/concepts/metrics-overview) and
+  [View pipeline logs](https://docs.cloud.google.com/data-fusion/docs/how-to/view-datafusion-logs).
+
+### Fixed
+
+Fixed in Cloud Data Fusion 6.11.1.1:
+
+* Fixed retries in message publishing when the messaging service is
+  temporarily unavailable
+  ([CDAP-21043](https://cdap.atlassian.net/browse/CDAP-21043)).
+* Fixed a security vulnerability where user-provided code in preview runners
+  could access sensitive data from other preview runs
+  ([CDAP-21211](https://cdap.atlassian.net/browse/CDAP-21211)).
+* Fixed an issue where internal task workers running user code could hang
+  indefinitely. The system now forces completed tasks to exit and uses a
+  health check to restart unresponsive workers
+  ([CDAP-21213](https://cdap.atlassian.net/browse/CDAP-21213)).
+* Fixed an issue where the list apps API endpoint failed to return all deployed
+  pipelines when used with pagination
+  ([CDAP-21220](https://cdap.atlassian.net/browse/CDAP-21220)).
+
+---
 ## 2025-09-09
 
 ### Changed

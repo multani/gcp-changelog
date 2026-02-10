@@ -2,9 +2,59 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Data Fusion</title>
   <subtitle>Changelog for Google Cloud product: Cloud Data Fusion</subtitle>
-  <updated>2025-09-09T00:00:00+00:00</updated>
+  <updated>2026-02-09T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-data-fusion</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-data-fusion/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-data-fusion:2026-02-09:feature:0</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud Data Fusion version 6.11.1.1 is
+<a href="https://cloud.google.com/products#product-launch-stages">generally available (GA)</a>.
+This release includes the following feature:</p>
+<ul>
+<li><code>InstanceV3</code> monitored-resource: Introduced
+  <code>datafusion.googleapis.com/InstanceV3</code> as the default monitored resource for
+  instance-level metrics and system service logs. This resource excludes the
+  <code>org_id</code> and <code>namespace</code> labels found in <code>InstanceV2</code>. Emission of
+  <code>InstanceV2</code> metrics and logs is disabled by default for new and upgraded
+  instances but can be re-enabled using the REST API.</li>
+</ul>
+<p>For more information, see
+  <a href="https://docs.cloud.google.com/data-fusion/docs/concepts/metrics-overview">Metrics overview</a> and
+  <a href="https://docs.cloud.google.com/data-fusion/docs/how-to/view-datafusion-logs">View pipeline logs</a>.</p>]]></content>
+    <summary>Cloud Data Fusion version 6.11.1.1 is now generally available. This release introduces the InstanceV3 monitored resource for instance-level metrics and system service logs, providing a cleaner set of labels.</summary>
+    <title>Feature: Data Fusion 6.11.1.1 Now Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-data-fusion:2026-02-09:fixed:1</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed in Cloud Data Fusion 6.11.1.1:</p>
+<ul>
+<li>Fixed retries in message publishing when the messaging service is
+  temporarily unavailable
+  (<a href="https://cdap.atlassian.net/browse/CDAP-21043">CDAP-21043</a>).</li>
+<li>Fixed a security vulnerability where user-provided code in preview runners
+  could access sensitive data from other preview runs
+  (<a href="https://cdap.atlassian.net/browse/CDAP-21211">CDAP-21211</a>).</li>
+<li>Fixed an issue where internal task workers running user code could hang
+  indefinitely. The system now forces completed tasks to exit and uses a
+  health check to restart unresponsive workers
+  (<a href="https://cdap.atlassian.net/browse/CDAP-21213">CDAP-21213</a>).</li>
+<li>Fixed an issue where the list apps API endpoint failed to return all deployed
+  pipelines when used with pagination
+  (<a href="https://cdap.atlassian.net/browse/CDAP-21220">CDAP-21220</a>).</li>
+</ul>]]></content>
+    <summary>This release addresses several critical issues including improved message publishing retries, a security vulnerability in preview runners, indefinite hangs in task workers, and a fix for the list apps API endpoint when using pagination. These updates enhance the stability and security of the platform.</summary>
+    <title>Fixed: Resolved issues in Data Fusion 6.11.1.1</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

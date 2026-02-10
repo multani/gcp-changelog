@@ -1,5 +1,18 @@
 # AlloyDB for PostgreSQL
 
+## 2026-02-09
+
+### Fixed
+
+We are announcing the release of support for the AlloyDB language connectors and
+Auth Proxy with [Auto IAM Authentication](https://docs.cloud.google.com/alloydb/docs/connect-iam#automatic)
+and managed connection pooling. This feature and the fix for the issue from
+below is available starting with maintenance version 20260107.02\_05. Clusters
+with a maintenance window that may not have received this release can use
+[self-service maintenance](https://docs.cloud.google.com/alloydb/docs/self-service-maintenance)
+to perform a maintenance update.
+
+---
 ## 2026-02-05
 
 ### Feature

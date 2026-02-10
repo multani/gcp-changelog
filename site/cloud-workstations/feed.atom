@@ -2,9 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Workstations</title>
   <subtitle>Changelog for Google Cloud product: Cloud Workstations</subtitle>
-  <updated>2026-01-31T00:00:00+00:00</updated>
+  <updated>2026-02-06T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-workstations</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-workstations/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-workstations:2026-02-06:feature:0</id>
+    <published>2026-02-06T00:00:00+00:00</published>
+    <updated>2026-02-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can provide <a href="https://docs.cloud.google.com/compute/docs/metadata/overview">custom metadata</a> for a
+workstation's host VM.</p>
+<p>Use the <code>--instance-metadata</code> flag with the
+<a href="https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/create"><code>gcloud workstations configs create</code></a>
+and <a href="https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/update"><code>gcloud workstations configs update</code></a>
+commands. Format the metadata as a comma-separated list of key-value pairs—for
+example, <code>--instance-metadata=key1=value1,key2=value2</code>.</p>
+<p>Note that updating metadata replaces all existing custom metadata for the
+workstation instance.</p>]]></content>
+    <summary>You can now provide custom metadata for your workstation's host VMs. Use the --instance-metadata flag with the gcloud workstations configs create and update commands to set key-value pairs. Note that updating metadata will replace all existing custom metadata.</summary>
+    <title>Feature: Add custom metadata to workstation VMs</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-workstations:2026-02-06:feature:1</id>
+    <published>2026-02-06T00:00:00+00:00</published>
+    <updated>2026-02-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud Workstations supports specifying a custom startup script to be executed on
+the workstation's host VM during boot.</p>
+<p>Provide the custom startup script as a Google Cloud Storage URL, such as
+<code>gs://BUCKET/FILE</code>, using the <code>--startup-script-uri</code> flag with the
+<a href="https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/create"><code>gcloud workstations configs create</code></a> and <a href="https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/update"><code>gcloud workstations configs update</code></a>
+commands.</p>]]></content>
+    <summary>You can now specify a custom startup script to run when your Cloud Workstation's host VM boots. Provide the script as a Google Cloud Storage URL using the --startup-script-uri flag with gcloud workstations configs create and update commands.</summary>
+    <title>Feature: Custom startup scripts for Cloud Workstations</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

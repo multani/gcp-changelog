@@ -1,5 +1,16 @@
 # Compute Engine
 
+## 2026-02-09
+
+### Feature
+
+You can autoscale a managed instance group (MIG) that
+has instance flexibility configured. Autoscaling lets the MIG create or
+delete virtual machine instances based on an increase or decrease in load. For
+more information, see
+[About instance flexibility](https://docs.cloud.google.com/compute/docs/instance-groups/about-instance-flexibility#instance_flexibility_and_autoscaling).
+
+---
 ## 2026-02-06
 
 ### Change

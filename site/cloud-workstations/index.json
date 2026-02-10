@@ -1,6 +1,24 @@
 {
   "name": "Cloud Workstations",
   "entries": {
+    "2026-02-06": [
+      {
+        "kind": "Feature",
+        "content": "You can provide [custom metadata](https://docs.cloud.google.com/compute/docs/metadata/overview) for a\nworkstation's host VM.\n\nUse the `--instance-metadata` flag with the\n[`gcloud workstations configs create`](https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/create)\nand [`gcloud workstations configs update`](https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/update)\ncommands. Format the metadata as a comma-separated list of key-value pairs—for\nexample, `--instance-metadata=key1=value1,key2=value2`.\n\nNote that updating metadata replaces all existing custom metadata for the\nworkstation instance.",
+        "summary": {
+          "title": "Add custom metadata to workstation VMs",
+          "summary": "You can now provide custom metadata for your workstation's host VMs. Use the --instance-metadata flag with the gcloud workstations configs create and update commands to set key-value pairs. Note that updating metadata will replace all existing custom metadata."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Cloud Workstations supports specifying a custom startup script to be executed on\nthe workstation's host VM during boot.\n\nProvide the custom startup script as a Google Cloud Storage URL, such as\n`gs://BUCKET/FILE`, using the `--startup-script-uri` flag with the\n[`gcloud workstations configs create`](https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/create) and [`gcloud workstations configs update`](https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/update)\ncommands.",
+        "summary": {
+          "title": "Custom startup scripts for Cloud Workstations",
+          "summary": "You can now specify a custom startup script to run when your Cloud Workstation's host VM boots. Provide the script as a Google Cloud Storage URL using the --startup-script-uri flag with gcloud workstations configs create and update commands."
+        }
+      }
+    ],
     "2026-01-31": [
       {
         "kind": "Feature",

@@ -1,5 +1,18 @@
 # Virtual Private Cloud
 
+## 2026-02-09
+
+### Feature
+
+You can bring your own IPv6 global unicast addresses (GUAs)
+to assign to a
+[subnet's internal IPv6 address range](https://docs.cloud.google.com/vpc/docs/create-ipv6-sub-prefixes).
+Although GUAs are typically public addresses, in this configuration they are
+used privately and function in the same way as Google Cloud-provisioned ULAs.
+
+For more information, see [Bring your own IP addresses](https://docs.cloud.google.com/vpc/docs/bring-your-own-ip).
+
+---
 ## 2026-02-04
 
 ### Feature

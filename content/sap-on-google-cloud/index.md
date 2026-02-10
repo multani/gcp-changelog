@@ -1,5 +1,21 @@
 # SAP on Google Cloud
 
+## 2026-02-05
+
+### Announcement
+
+**Google Cloud's Agent for SAP version 3.11**
+
+Version 3.11 of Google Cloud's Agent for SAP is generally available (GA). This
+version introduces enhancements for optimizing performance of SAP HANA running
+on X4 instances, disk snapshot based backup and recovery for SAP HANA, and
+VM Extension Manager support to install and manage the agent on your
+VM fleet.
+
+For more information, see
+[What's new with Google Cloud's Agent for SAP](https://docs.cloud.google.com/sap/docs/agent-for-sap/whats-new).
+
+---
 ## 2026-01-22
 
 ### Announcement

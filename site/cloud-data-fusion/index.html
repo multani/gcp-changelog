@@ -2316,6 +2316,40 @@
 
 
 <h1 id="cloud-data-fusion">Cloud Data Fusion</h1>
+<h2 id="2026-02-09">2026-02-09</h2>
+<h3 id="feature">Feature</h3>
+<p>Cloud Data Fusion version 6.11.1.1 is
+<a href="https://cloud.google.com/products#product-launch-stages">generally available (GA)</a>.
+This release includes the following feature:</p>
+<ul>
+<li><code>InstanceV3</code> monitored-resource: Introduced
+  <code>datafusion.googleapis.com/InstanceV3</code> as the default monitored resource for
+  instance-level metrics and system service logs. This resource excludes the
+  <code>org_id</code> and <code>namespace</code> labels found in <code>InstanceV2</code>. Emission of
+  <code>InstanceV2</code> metrics and logs is disabled by default for new and upgraded
+  instances but can be re-enabled using the REST API.</li>
+</ul>
+<p>For more information, see
+  <a href="https://docs.cloud.google.com/data-fusion/docs/concepts/metrics-overview">Metrics overview</a> and
+  <a href="https://docs.cloud.google.com/data-fusion/docs/how-to/view-datafusion-logs">View pipeline logs</a>.</p>
+<h3 id="fixed">Fixed</h3>
+<p>Fixed in Cloud Data Fusion 6.11.1.1:</p>
+<ul>
+<li>Fixed retries in message publishing when the messaging service is
+  temporarily unavailable
+  (<a href="https://cdap.atlassian.net/browse/CDAP-21043">CDAP-21043</a>).</li>
+<li>Fixed a security vulnerability where user-provided code in preview runners
+  could access sensitive data from other preview runs
+  (<a href="https://cdap.atlassian.net/browse/CDAP-21211">CDAP-21211</a>).</li>
+<li>Fixed an issue where internal task workers running user code could hang
+  indefinitely. The system now forces completed tasks to exit and uses a
+  health check to restart unresponsive workers
+  (<a href="https://cdap.atlassian.net/browse/CDAP-21213">CDAP-21213</a>).</li>
+<li>Fixed an issue where the list apps API endpoint failed to return all deployed
+  pipelines when used with pagination
+  (<a href="https://cdap.atlassian.net/browse/CDAP-21220">CDAP-21220</a>).</li>
+</ul>
+<hr />
 <h2 id="2025-09-09">2025-09-09</h2>
 <h3 id="changed">Changed</h3>
 <p>The Salesforce plugin version 1.7.0 is available in Cloud Data Fusion version 6.8.0 and later. This release includes the following change:</p>
@@ -2332,7 +2366,7 @@
 </ul>
 <hr />
 <h2 id="2025-08-27">2025-08-27</h2>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_1">Feature</h3>
 <p>Cloud Data Fusion version 6.11.1 is <a href="https://cloud.google.com/products#product-launch-stages">generally available (GA)</a>. This release includes the following features:</p>
 <ul>
 <li>Added support for HTTP access tokens (Bearer authentication) in Bitbucket Server for <a href="https://cloud.google.com/data-fusion/docs/how-to/source-control-management">source control management</a> (<a href="https://cdap.atlassian.net/browse/CDAP-21049">CDAP-21049</a>).</li>
@@ -2346,7 +2380,7 @@
 <li>The pipeline JSON size limit for creating new pipelines and importing pipelines as JSON is increased to 5MB (previously 2MB) (<CDAP-21194>).</li>
 <li>On the Pipeline details page, the inbound triggers sidebar features a paginated list of pipelines where you can select the pipelines you want to add to the trigger. Additionally, a refresh button is added to update the existing list of triggers and pipelines (<a href="https://cdap.atlassian.net/browse/CDAP-21195">CDAP-21195</a>).</li>
 </ul>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_1">Fixed</h3>
 <p>Fixed in Cloud Data Fusion 6.11.1:</p>
 <ul>
 <li>To prevent storage issues on static Dataproc clusters, temporary pipeline data is automatically deleted after a successful run (<a href="https://cdap.atlassian.net/browse/CDAP-21076">CDAP-21076</a>).</li>
@@ -2357,11 +2391,11 @@
 <p>Dataproc 2.0 is no longer supported in Cloud Data Fusion version 6.11.1 and later.</p>
 <hr />
 <h2 id="2025-07-25">2025-07-25</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>You can now attach tags to Cloud Data Fusion instances during instance creation. This ensures immediate metadata for better organization, cost tracking, and policy automation. For more information, see <a href="https://cloud.google.com/data-fusion/docs/how-to/control-access-with-tags#add-tags">Attach tags during instance creation</a>.</p>
 <hr />
 <h2 id="2025-07-23">2025-07-23</h2>
-<h3 id="fixed_1">Fixed</h3>
+<h3 id="fixed_2">Fixed</h3>
 <p>The Cloud Data Fusion version 6.10.1.5 patch revision is generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>). 6.10.1.5 includes reliability fixes.</p>
 <hr />
 <h2 id="2025-07-20">2025-07-20</h2>
@@ -2421,6 +2455,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-data-fusion">Cloud Data Fusion</a></li>
+          <li class="nav-item">
+            <a href="#2026-02-09" class="nav-link">2026-02-09</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-09-09" class="nav-link">2025-09-09</a>
           </li>

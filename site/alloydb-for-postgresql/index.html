@@ -2316,6 +2316,16 @@
 
 
 <h1 id="alloydb-for-postgresql">AlloyDB for PostgreSQL</h1>
+<h2 id="2026-02-09">2026-02-09</h2>
+<h3 id="fixed">Fixed</h3>
+<p>We are announcing the release of support for the AlloyDB language connectors and
+Auth Proxy with <a href="https://docs.cloud.google.com/alloydb/docs/connect-iam#automatic">Auto IAM Authentication</a>
+and managed connection pooling. This feature and the fix for the issue from
+below is available starting with maintenance version 20260107.02_05. Clusters
+with a maintenance window that may not have received this release can use
+<a href="https://docs.cloud.google.com/alloydb/docs/self-service-maintenance">self-service maintenance</a>
+to perform a maintenance update.</p>
+<hr />
 <h2 id="2026-02-05">2026-02-05</h2>
 <h3 id="feature">Feature</h3>
 <p><a href="https://cloud.google.com/alloydb/docs/columnar-engine/add-frequent-expressions">Virtual columns for
@@ -2354,7 +2364,7 @@ in Bangkok, Thailand (<code>asia-southeast3</code>). For more information, see
 <p>AlloyDB now supports the Z3 machine series, which are powered by 4th generation Intel x86 processors (Sapphire Rapids) with Titanium SSD. These instances offer machine sizes, with up to 88 vCPU and 704 GiB RAM, that let you run storage-intensive workloads with large working datasets. For more information, see <a href="https://docs.cloud.google.com/alloydb/docs/choose-machine-type#z3-standardlssd">Choose an AlloyDB machine type</a>. This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
 <hr />
 <h2 id="2026-01-15">2026-01-15</h2>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_1">Fixed</h3>
 <p>Memory usage estimation is more accurate for high-dimensional vector indexes. This
 fix prevents out of memory (OOM) errors by enforcing defined memory constraints
 throughout the index build process. You might need to increase your
@@ -2672,6 +2682,9 @@ generally available
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#alloydb-for-postgresql">AlloyDB for PostgreSQL</a></li>
+          <li class="nav-item">
+            <a href="#2026-02-09" class="nav-link">2026-02-09</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-02-05" class="nav-link">2026-02-05</a>
           </li>

@@ -1,5 +1,32 @@
 # Cloud Workstations
 
+## 2026-02-06
+
+### Feature
+
+You can provide [custom metadata](https://docs.cloud.google.com/compute/docs/metadata/overview) for a
+workstation's host VM.
+
+Use the `--instance-metadata` flag with the
+[`gcloud workstations configs create`](https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/create)
+and [`gcloud workstations configs update`](https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/update)
+commands. Format the metadata as a comma-separated list of key-value pairs—for
+example, `--instance-metadata=key1=value1,key2=value2`.
+
+Note that updating metadata replaces all existing custom metadata for the
+workstation instance.
+
+### Feature
+
+Cloud Workstations supports specifying a custom startup script to be executed on
+the workstation's host VM during boot.
+
+Provide the custom startup script as a Google Cloud Storage URL, such as
+`gs://BUCKET/FILE`, using the `--startup-script-uri` flag with the
+[`gcloud workstations configs create`](https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/create) and [`gcloud workstations configs update`](https://docs.cloud.google.com/sdk/gcloud/reference/workstations/configs/update)
+commands.
+
+---
 ## 2026-01-31
 
 ### Feature

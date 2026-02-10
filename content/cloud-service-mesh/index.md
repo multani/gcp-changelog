@@ -1,5 +1,28 @@
 # Cloud Service Mesh
 
+## 2026-02-09
+
+### Announcement
+
+The following images are now rolling out for managed Cloud Service Mesh:
+
+* 1.21.6-asm.10 is rolling out to the rapid release channel.
+* 1.20.8-asm.63 is rolling out to the regular release channel.
+* 1.19.10-asm.57 is rolling out to the stable release channel.
+
+These patch releases contain the fixes for the following managed Cloud Service Mesh CVEs:
+
+| CVE | Proxy | Control Plane | CNI | Distroless | Severity |
+| --- | --- | --- | --- | --- | --- |
+| [CVE-2025-61729](https://nvd.nist.gov/vuln/detail/CVE-2025-61729) | Yes | Yes | - | Yes | High (7.5) |
+| [CVE-2025-61727](https://pkg.go.dev/vuln/GO-2025-4175) | Yes | Yes | - | Yes | Medium (6.5) |
+| [CVE-2024-41996](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2024-41996) | Yes | Yes | - | Yes | High (7.5) |
+| [CVE-2025-9086](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-9086) | Yes | Yes | - | Yes | High (7.5) |
+| [CVE-2021-46848](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2021-46848) | Yes | Yes | - | Yes | Critical (9.1) |
+| [CVE-2025-13151](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-13151) | Yes | Yes | - | Yes | High (7.5) |
+| [CVE-2025-68973](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-68973) | Yes | Yes | - | Yes | High (7.8) |
+
+---
 ## 2026-01-20
 
 ### Announcement

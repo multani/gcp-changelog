@@ -1,5 +1,14 @@
 # Cloud Logging
 
+## 2026-02-09
+
+### Feature
+
+You can use the [Cloud Logging API MCP server](https://docs.cloud.google.com/logging/docs/reference/v2/mcp)
+to let agents and AI applications interact with your log entries.
+This feature is in [Preview](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-01-29
 
 ### Feature

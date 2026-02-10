@@ -2,9 +2,281 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Looker</title>
   <subtitle>Changelog for Google Cloud product: Looker</subtitle>
-  <updated>2026-02-06T00:00:00+00:00</updated>
+  <updated>2026-02-09T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:looker</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/looker/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:feature:0</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Looker Action Hub has been updated to support newer API versions for Google Ads (from v19 to v22) and Facebook Custom Audiences (from v22 to v24).</p>]]></content>
+    <summary>The Looker Action Hub now supports updated API versions for Google Ads and Facebook Custom Audiences. This enhancement ensures continued compatibility and access to the latest features from these platforms.</summary>
+    <title>Feature: Looker Action Hub API Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:feature:1</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#customer_engineer_advanced_editor">Customer Engineer Advanced Editor</a> default role now includes the <code>gemini_in_looker</code>, <code>chat_with_agent</code>, <code>chat_with_explore</code>, and <code>save_agents</code> permissions, which grant access to Gemini features and Conversational Analytics functionality.</p>]]></content>
+    <summary>The Customer Engineer Advanced Editor role now includes permissions for Gemini features and Conversational Analytics. This update grants access to Gemini in Looker, agent chat, explore chat, and the ability to save agents.</summary>
+    <title>Feature: Gemini Features Now Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:breaking:2</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>When you use <a href="https://docs.cloud.google.com/looker/docs/elite-system-activity">Elite System Activity</a>, all System Activity fields of the <code>longtext</code> type that have a size greater than 2 MB will be truncated. If a table has only one column with a <code>longtext</code> type, that column will be set to a maximum of 1.9 MB in size. If a table has multiple columns of the <code>longtext</code> type, the total maximum size across all such columns is 2 MB, and this limit is distributed uniformly among those columns. For example, if a table has <code>x</code> <code>longtext</code> columns, each column will have a maximum length of 2 MB divided by <code>x</code>.</p>]]></content>
+    <summary>System Activity fields of type `longtext` are now subject to size limits to prevent performance issues. Fields larger than 2 MB will be truncated. This change ensures efficient data handling within the system.</summary>
+    <title>Breaking: System Activity Field Size Limit</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:3</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where some drill links could fail to work when cookieless embed was enabled. This feature now performs as expected.</p>]]></content>
+    <summary>An issue where drill links failed with cookieless embed enabled has been resolved. The feature now functions correctly.</summary>
+    <title>Fixed: Drill links fixed with cookieless embed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:feature:4</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>When you use <a href="https://docs.cloud.google.com/looker/docs/elite-system-activity">Elite System Activity</a>, the <code>merge_query</code> table now refreshes every 10 minutes.</p>]]></content>
+    <summary>The merge_query table for Elite System Activity now refreshes every 10 minutes. This update provides more frequent access to your system activity data.</summary>
+    <title>Feature: Elite System Activity Refresh Rate Increased</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:feature:5</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>When you are <a href="https://docs.cloud.google.com/looker/docs/delivering-looks-explores#delivery_options_for_sftp_servers">delivering content to an SFTP server</a>, additional key exchange algorithms and host key algorithms are now supported.</p>]]></content>
+    <summary>SFTP delivery now supports additional key exchange and host key algorithms. This expands the options available when sending data to SFTP servers, improving compatibility and flexibility.</summary>
+    <title>Feature: SFTP delivery enhancements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:6</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the pagination option was not being displayed in the LookML Dashboards folder for some users.
+This feature now performs as expected.</p>]]></content>
+    <summary>A bug that prevented the pagination option from displaying in the LookML Dashboards folder has been resolved. This feature now functions correctly for all users.</summary>
+    <title>Fixed: Pagination displayed in LookML Dashboards folder</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:7</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where custom dimensions that were based on numeric fields could be converted to strings, which caused incorrect sorting. This feature now performs as expected.</p>]]></content>
+    <summary>We've resolved an issue where custom dimensions based on numeric fields were incorrectly converted to strings, leading to sorting problems. The feature now functions as expected, ensuring accurate sorting of numeric data.</summary>
+    <title>Fixed: Numeric dimension sorting fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:8</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where choosing a non-default color collection and then choosing a custom color in a conditional formatting rule could cause the rule to revert to the default color collection. This feature now performs as expected.</p>]]></content>
+    <summary>An issue where conditional formatting rules incorrectly reverted to default colors after selecting custom options has been fixed. The feature now functions as expected, allowing users to apply custom color collections without unexpected changes.</summary>
+    <title>Fixed: Conditional formatting color issue resolved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:announcement:9</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Looker 26.2</strong> is expected to include the following changes, features, and fixes:</p>
+<ul>
+<li>Expected Looker (original) deployment start: <strong>Monday, February 9, 2026</strong></li>
+<li>Expected Looker (original) final deployment and download available: <strong>Monday, February 16, 2026</strong></li>
+<li>Expected Looker (Google Cloud core) deployment start: <strong>Monday, February 9, 2026</strong></li>
+<li>Expected Looker (Google Cloud core) final deployment: <strong>Friday, February 27, 2026</strong></li>
+</ul>]]></content>
+    <summary>The Looker 26.2 release is scheduled for February 2026, bringing updates and fixes to both Looker (original) and Looker (Google Cloud core) deployments. Key dates include deployment starts on February 9th, with final deployments concluding on February 16th for the original version and February 27th for the Google Cloud core version.</summary>
+    <title>Announcement: Looker 26.2 Release Notes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:10</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where a modification to the color palette for the "Along a scale..." conditional formatting feature could fail to be saved. This feature now performs as expected.</p>]]></content>
+    <summary>The issue where modifications to the color palette for the "Along a scale..." conditional formatting feature were not saved has been resolved. This feature now saves and functions correctly.</summary>
+    <title>Fixed: Conditional formatting color palette fix</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:feature:11</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Now available in preview, Looker has full support for connections with <a href="https://docs.cloud.google.com/looker/docs/db-config-alloydb">AlloyDB for PostgreSQL</a>. When you <a href="https://docs.cloud.google.com/looker/docs/connecting-to-your-db">create a connection</a> in Looker, you can now select "Google Cloud AlloyDB for PostgreSQL" from the Dialect drop-down menu. This update does not affect existing AlloyDB connections that were created using the PostgreSQL 9.5+ option in the Dialect menu.</p>]]></content>
+    <summary>Looker now offers full support for connections with AlloyDB for PostgreSQL in preview. Users can select 'Google Cloud AlloyDB for PostgreSQL' from the Dialect drop-down menu when creating a new connection in Looker. This enhancement simplifies integration for users of both services.</summary>
+    <title>Feature: Looker Now Supports AlloyDB for PostgreSQL</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:12</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where non-admin users could not favorite
+LookML dashboards. This feature now performs as expected.</p>]]></content>
+    <summary>An issue preventing non-admin users from favoriting LookML dashboards has been resolved. This functionality now works correctly, allowing all users to save their preferred dashboards.</summary>
+    <title>Fixed: Fixed LookML dashboard favoriting for non-admins</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:feature:13</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The user attribute pairing user interface for <a href="https://docs.cloud.google.com/looker/docs/admin-panel-authentication-saml">SAML</a>, <a href="https://docs.cloud.google.com/looker/docs/admin-panel-authentication-ldap">LDAP</a>, and <a href="https://docs.cloud.google.com/looker/docs/admin-panel-authentication-openid-connect">OpenID Connect</a> authentication has been updated. A new "Manage Pairings" side panel provides a robust interface for adding, removing, and viewing attribute pairings. This new interface also includes filtering and pagination and allows for a single claim to be associated with multiple Looker user attributes.</p>]]></content>
+    <summary>The user attribute pairing interface for SAML, LDAP, and OpenID Connect authentication has been updated with a new 'Manage Pairings' side panel. This provides a more robust way to manage attribute pairings, including filtering, pagination, and associating a single claim with multiple user attributes.</summary>
+    <title>Feature: Updated User Attribute Pairing Interface</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:14</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where Looker could return a 500 error if a user with one or more single quotes in their name attempted to commit LookML. This feature now performs as expected.</p>]]></content>
+    <summary>An issue causing Looker to return a 500 error when users with single quotes in their names committed LookML has been fixed. The feature now functions correctly.</summary>
+    <title>Fixed: LookML commit error resolved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:15</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where switching a visualization type from Table to Single Value could carry over unwanted conditional formatting. This feature now performs as expected.</p>]]></content>
+    <summary>An issue where conditional formatting persisted between visualization types has been fixed. The feature now functions correctly, ensuring a seamless user experience when switching between Table and Single Value visualizations.</summary>
+    <title>Fixed: Conditional formatting issue resolved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:16</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where conditional formatting no longer appeared on certain dashboard tiles. This feature now performs as expected.</p>]]></content>
+    <summary>An issue that prevented conditional formatting from appearing on certain dashboard tiles has been resolved. The feature now functions correctly, ensuring that conditional formatting is displayed as expected.</summary>
+    <title>Fixed: Conditional formatting now visible on dashboard tiles</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:17</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where changing the collection in a conditional formatting rule could reset styles for the rule. This feature now performs as expected.</p>]]></content>
+    <summary>An issue where changing the collection in a conditional formatting rule could reset styles has been fixed. The feature now performs as expected, ensuring your styles are maintained.</summary>
+    <title>Fixed: Conditional formatting styles preserved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:18</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the filter bar would automatically expand on dashboard load when the filter location was set to "Right". This feature now performs as expected.</p>]]></content>
+    <summary>An issue has been fixed where the filter bar would automatically expand on dashboard load when the filter location was set to "Right". This feature now performs as expected.</summary>
+    <title>Fixed: Filter bar behavior corrected</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:19</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where switching filter types from <code>Matches (Advanced)</code> to another filter type could populate that filter with an incorrect filter configuration. This feature now performs as expected.</p>]]></content>
+    <summary>An issue where switching filter types could lead to incorrect filter configurations has been fixed. The feature now operates as expected, ensuring accurate filter settings.</summary>
+    <title>Fixed: Filter configuration issue resolved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:20</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where adding a new field to a conditionally formatted result set could fail to apply the conditional formatting to the new field. This feature now performs as expected.</p>]]></content>
+    <summary>An issue where new fields in conditionally formatted result sets failed to apply formatting has been resolved. This feature now functions correctly, ensuring all new fields are properly formatted.</summary>
+    <title>Fixed: Conditional formatting now applies to new fields</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:21</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where dashboard tiles with titles that included the % symbol could not be downloaded in the Safari 26.0 browser. This feature now performs as expected.</p>]]></content>
+    <summary>An issue preventing dashboard tiles with titles containing the '%' symbol from being downloaded in Safari 26.0 has been fixed. This functionality now works correctly.</summary>
+    <title>Fixed: Dashboard tile download issue resolved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:feature:22</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Looker admins can now <a href="https://docs.cloud.google.com/looker/docs/admin-panel-server-ip-allowlist">grant essential Google Cloud services</a>, such as <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-overview">Conversational Analytics</a>, access to a Looker instance, even when an IP allowlist is active.</p>]]></content>
+    <summary>Looker admins can now grant essential Google Cloud services, like Conversational Analytics, access to a Looker instance even when an IP allowlist is active. This ensures critical features remain accessible without compromising security.</summary>
+    <title>Feature: Allow essential services through IP allowlists</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:feature:23</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Looker admins can now enforce a <a href="https://docs.cloud.google.com/looker/docs/admin-panel-authentication-password#setting_password_expiration">password expiration policy</a>, enhancing security for users who authenticate with an email and a password. This new feature lets admins set a password expiration window between 30 and 365 days. Fourteen days before password expiration, a banner will notify the user, and, once their password has expired, the user must reset it at the next login.</p>]]></content>
+    <summary>Looker admins can now enforce a password expiration policy. This feature allows admins to set a password expiration window between 30 and 365 days, with users being notified 14 days prior to expiration and required to reset their password upon next login after expiration.</summary>
+    <title>Feature: Password expiration policy is now available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -87,23 +359,23 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-01-26:feature:4</id>
-    <published>2026-01-26T00:00:00+00:00</published>
-    <updated>2026-01-26T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore"><strong>Self-service Explores</strong> admin page</a> now supports a connection test button so that Looker admins can verify that the BigQuery connection is able to support self-service Explores.</p>]]></content>
-    <summary>Looker admins can now test BigQuery connections directly from the Self-service Explores admin page. This feature ensures that your connections are ready to support self-service Explores, improving setup and reliability.</summary>
-    <title>Feature: Connection Test for Self-service Explores</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-01-26:announcement:5</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-26:announcement:4</id>
     <published>2026-01-26T00:00:00+00:00</published>
     <updated>2026-01-26T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Looker 26.0</strong> includes the following feature updates, which will start rolling out on January 26, 2026:</p>]]></content>
     <summary>Looker 26.0 is set to release new feature updates starting January 26, 2026. This release brings enhancements designed to improve the Looker experience for users. Stay tuned for more details on the specific improvements.</summary>
     <title>Announcement: Looker 26.0 Feature Updates Rolling Out Soon</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-01-26:feature:5</id>
+    <published>2026-01-26T00:00:00+00:00</published>
+    <updated>2026-01-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore"><strong>Self-service Explores</strong> admin page</a> now supports a connection test button so that Looker admins can verify that the BigQuery connection is able to support self-service Explores.</p>]]></content>
+    <summary>Looker admins can now test BigQuery connections directly from the Self-service Explores admin page. This feature ensures that your connections are ready to support self-service Explores, improving setup and reliability.</summary>
+    <title>Feature: Connection Test for Self-service Explores</title>
   </entry>
   <entry>
     <author>

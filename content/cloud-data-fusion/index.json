@@ -1,6 +1,24 @@
 {
   "name": "Cloud Data Fusion",
   "entries": {
+    "2026-02-09": [
+      {
+        "kind": "Feature",
+        "content": "Cloud Data Fusion version 6.11.1.1 is\n[generally available (GA)](https://cloud.google.com/products#product-launch-stages).\nThis release includes the following feature:\n\n* `InstanceV3` monitored-resource: Introduced\n  `datafusion.googleapis.com/InstanceV3` as the default monitored resource for\n  instance-level metrics and system service logs. This resource excludes the\n  `org_id` and `namespace` labels found in `InstanceV2`. Emission of\n  `InstanceV2` metrics and logs is disabled by default for new and upgraded\n  instances but can be re-enabled using the REST API.\n\n  For more information, see\n  [Metrics overview](https://docs.cloud.google.com/data-fusion/docs/concepts/metrics-overview) and\n  [View pipeline logs](https://docs.cloud.google.com/data-fusion/docs/how-to/view-datafusion-logs).",
+        "summary": {
+          "title": "Data Fusion 6.11.1.1 Now Available",
+          "summary": "Cloud Data Fusion version 6.11.1.1 is now generally available. This release introduces the InstanceV3 monitored resource for instance-level metrics and system service logs, providing a cleaner set of labels."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed in Cloud Data Fusion 6.11.1.1:\n\n* Fixed retries in message publishing when the messaging service is\n  temporarily unavailable\n  ([CDAP-21043](https://cdap.atlassian.net/browse/CDAP-21043)).\n* Fixed a security vulnerability where user-provided code in preview runners\n  could access sensitive data from other preview runs\n  ([CDAP-21211](https://cdap.atlassian.net/browse/CDAP-21211)).\n* Fixed an issue where internal task workers running user code could hang\n  indefinitely. The system now forces completed tasks to exit and uses a\n  health check to restart unresponsive workers\n  ([CDAP-21213](https://cdap.atlassian.net/browse/CDAP-21213)).\n* Fixed an issue where the list apps API endpoint failed to return all deployed\n  pipelines when used with pagination\n  ([CDAP-21220](https://cdap.atlassian.net/browse/CDAP-21220)).",
+        "summary": {
+          "title": "Resolved issues in Data Fusion 6.11.1.1",
+          "summary": "This release addresses several critical issues including improved message publishing retries, a security vulnerability in preview runners, indefinite hangs in task workers, and a fix for the list apps API endpoint when using pagination. These updates enhance the stability and security of the platform."
+        }
+      }
+    ],
     "2025-09-09": [
       {
         "kind": "Changed",

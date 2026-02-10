@@ -1,5 +1,16 @@
 # Cloud SQL for MySQL
 
+## 2026-02-09
+
+### Feature
+
+You can now use the [Cloud SQL remote MCP server](https://docs.cloud.google.com/sql/docs/mysql/use-cloudsql-mcp).
+The Cloud SQL remote MCP server lets you interact easily with Cloud SQL
+instances from LLMs, AI applications, and AI-enabled development platforms.
+
+This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-02-02
 
 ### Feature

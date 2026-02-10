@@ -425,16 +425,23 @@ Administrators: When you click **Settings > Developer Settings
 > Service Cloud**, a new **Secondary Lookup Object** checkbox appears
 in the **Account Lookup** section.
 
+### Announcement
+
+**Google Cloud CCaaS 4.0 prerelease notes**
+
+These are the prerelease notes for Google Cloud CCaaS version 4.0. When version
+4.0 is released, we expect the new capabilities to be as described here.
+
 ### Feature
 
-**Improved controls for predictive campaigns**
+~~**Improved controls for predictive campaigns**~~
 
 We've added the following controls to predictive campaigns to reduce the risk of
 call abandonment due to over dialing. These controls let you ramp up dialing
 rates more naturally and consistently.
 
-* Maximum calls per agent
-* Target agent occupancy
+* **Max Calls Per Agent**
+* **Target Agent Occupancy**
 
 We've also made the **Max Abandonment %** setting optional, for campaigns that
 don't require maintaining a maximum abandonment percentage.
@@ -442,13 +449,6 @@ don't require maintaining a maximum abandonment percentage.
 Administrators: When you click **Campaigns > Add Campaign
 > Mode > Predictive**, the new controls appear in the
 **Add Campaign** dialog.
-
-### Announcement
-
-**Google Cloud CCaaS 4.0 prerelease notes**
-
-These are the prerelease notes for Google Cloud CCaaS version 4.0. When version
-4.0 is released, we expect the new capabilities to be as described here.
 
 ### Feature
 

@@ -1,5 +1,111 @@
 # Looker
 
+## 2026-02-09
+
+### Feature
+
+The Looker Action Hub has been updated to support newer API versions for Google Ads (from v19 to v22) and Facebook Custom Audiences (from v22 to v24).
+
+### Feature
+
+The [Customer Engineer Advanced Editor](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#customer_engineer_advanced_editor) default role now includes the `gemini_in_looker`, `chat_with_agent`, `chat_with_explore`, and `save_agents` permissions, which grant access to Gemini features and Conversational Analytics functionality.
+
+### Breaking
+
+When you use [Elite System Activity](https://docs.cloud.google.com/looker/docs/elite-system-activity), all System Activity fields of the `longtext` type that have a size greater than 2 MB will be truncated. If a table has only one column with a `longtext` type, that column will be set to a maximum of 1.9 MB in size. If a table has multiple columns of the `longtext` type, the total maximum size across all such columns is 2 MB, and this limit is distributed uniformly among those columns. For example, if a table has `x` `longtext` columns, each column will have a maximum length of 2 MB divided by `x`.
+
+### Fixed
+
+An issue has been fixed where some drill links could fail to work when cookieless embed was enabled. This feature now performs as expected.
+
+### Feature
+
+When you use [Elite System Activity](https://docs.cloud.google.com/looker/docs/elite-system-activity), the `merge_query` table now refreshes every 10 minutes.
+
+### Feature
+
+When you are [delivering content to an SFTP server](https://docs.cloud.google.com/looker/docs/delivering-looks-explores#delivery_options_for_sftp_servers), additional key exchange algorithms and host key algorithms are now supported.
+
+### Fixed
+
+An issue has been fixed where the pagination option was not being displayed in the LookML Dashboards folder for some users.
+This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where custom dimensions that were based on numeric fields could be converted to strings, which caused incorrect sorting. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where choosing a non-default color collection and then choosing a custom color in a conditional formatting rule could cause the rule to revert to the default color collection. This feature now performs as expected.
+
+### Announcement
+
+**Looker 26.2** is expected to include the following changes, features, and fixes:
+
+* Expected Looker (original) deployment start: **Monday, February 9, 2026**
+* Expected Looker (original) final deployment and download available: **Monday, February 16, 2026**
+* Expected Looker (Google Cloud core) deployment start: **Monday, February 9, 2026**
+* Expected Looker (Google Cloud core) final deployment: **Friday, February 27, 2026**
+
+### Fixed
+
+An issue has been fixed where a modification to the color palette for the "Along a scale..." conditional formatting feature could fail to be saved. This feature now performs as expected.
+
+### Feature
+
+Now available in preview, Looker has full support for connections with [AlloyDB for PostgreSQL](https://docs.cloud.google.com/looker/docs/db-config-alloydb). When you [create a connection](https://docs.cloud.google.com/looker/docs/connecting-to-your-db) in Looker, you can now select "Google Cloud AlloyDB for PostgreSQL" from the Dialect drop-down menu. This update does not affect existing AlloyDB connections that were created using the PostgreSQL 9.5+ option in the Dialect menu.
+
+### Fixed
+
+An issue has been fixed where non-admin users could not favorite
+LookML dashboards. This feature now performs as expected.
+
+### Feature
+
+The user attribute pairing user interface for [SAML](https://docs.cloud.google.com/looker/docs/admin-panel-authentication-saml), [LDAP](https://docs.cloud.google.com/looker/docs/admin-panel-authentication-ldap), and [OpenID Connect](https://docs.cloud.google.com/looker/docs/admin-panel-authentication-openid-connect) authentication has been updated. A new "Manage Pairings" side panel provides a robust interface for adding, removing, and viewing attribute pairings. This new interface also includes filtering and pagination and allows for a single claim to be associated with multiple Looker user attributes.
+
+### Fixed
+
+An issue has been fixed where Looker could return a 500 error if a user with one or more single quotes in their name attempted to commit LookML. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where switching a visualization type from Table to Single Value could carry over unwanted conditional formatting. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where conditional formatting no longer appeared on certain dashboard tiles. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where changing the collection in a conditional formatting rule could reset styles for the rule. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the filter bar would automatically expand on dashboard load when the filter location was set to "Right". This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where switching filter types from `Matches (Advanced)` to another filter type could populate that filter with an incorrect filter configuration. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where adding a new field to a conditionally formatted result set could fail to apply the conditional formatting to the new field. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where dashboard tiles with titles that included the % symbol could not be downloaded in the Safari 26.0 browser. This feature now performs as expected.
+
+### Feature
+
+Looker admins can now [grant essential Google Cloud services](https://docs.cloud.google.com/looker/docs/admin-panel-server-ip-allowlist), such as [Conversational Analytics](https://docs.cloud.google.com/looker/docs/conversational-analytics-overview), access to a Looker instance, even when an IP allowlist is active.
+
+### Feature
+
+Looker admins can now enforce a [password expiration policy](https://docs.cloud.google.com/looker/docs/admin-panel-authentication-password#setting_password_expiration), enhancing security for users who authenticate with an email and a password. This new feature lets admins set a password expiration window between 30 and 365 days. Fourteen days before password expiration, a banner will notify the user, and, once their password has expired, the user must reset it at the next login.
+
+---
 ## 2026-02-06
 
 ### Deprecated
@@ -41,13 +147,13 @@ Gemini in Looker can now [generate a summary and an analysis of an Explore](http
 
 Now available in preview, the [**Configuration** tab of the **Projects Settings** page](https://docs.cloud.google.com/looker/docs/git-options#configuration) in the Looker IDE contains a **Delete Developer Copy** button that lets LookML developers delete their local developer copy of the project's Git repository. See the [Using version control and deploying](https://docs.cloud.google.com/looker/docs/version-control-and-deploying-changes#delete-dev-copy) documentation page for details.
 
-### Feature
-
-The [**Self-service Explores** admin page](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore) now supports a connection test button so that Looker admins can verify that the BigQuery connection is able to support self-service Explores.
-
 ### Announcement
 
 **Looker 26.0** includes the following feature updates, which will start rolling out on January 26, 2026:
+
+### Feature
+
+The [**Self-service Explores** admin page](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore) now supports a connection test button so that Looker admins can verify that the BigQuery connection is able to support self-service Explores.
 
 ### Feature
 

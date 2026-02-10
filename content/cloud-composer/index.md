@@ -65,12 +65,10 @@ are available in Cloud Composer 2:
 *(Airflow 2)* The Dag Details view in Airflow UI now scrolls correctly when the
 "Run config" field contains long values.
 
-### Announcement
+### Feature
 
-A new Cloud Composer release has started on **January 29, 2026**. Get ready
-for upcoming changes and features as we roll out the new release to all regions.
-This release is in progress at the moment. Listed changes and features might
-not be available in some regions yet.
+The [Composer Local Development CLI tool](https://docs.cloud.google.com/composer/docs/composer-3/run-local-airflow-environments)
+is now available for Airflow 3 (Preview).
 
 ---
 ## 2026-01-14
@@ -80,13 +78,6 @@ not be available in some regions yet.
 [**Database retention policy**](https://docs.cloud.google.com/composer/docs/composer-3/configure-db-retention) is now available
 in environments with Airflow 3, starting with composer-3-airflow-3.1.0-build.5.
 This change is now rolled out to all regions supported by Cloud Composer 3.
-
-### Announcement
-
-A new Cloud Composer release has started on **January 14, 2026**. Get ready
-for upcoming changes and features as we roll out the new release to all regions.
-This release is in progress at the moment. Listed changes and features might
-not be available in some regions yet.
 
 ### Change
 

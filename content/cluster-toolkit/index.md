@@ -1,5 +1,19 @@
 # Cluster Toolkit
 
+## 2026-01-28
+
+### Feature
+
+Cluster Toolkit version v1.80.0 is available. This release adds
+support for IPv6 and the Infrastructure Data-Plane Function (IDPF). This version
+makes the H4D blueprint more concise by refactoring the `vpc` and `multivpc`
+modules to support more variables. Additionally, this release integrates the
+Report and Replace (R&R) API with Slurm, which lets you report faulty nodes for
+repair or replacement.
+
+For more information about this release, see the [Release announcement on GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5145).
+
+---
 ## 2026-01-21
 
 ### Feature

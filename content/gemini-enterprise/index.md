@@ -1,5 +1,17 @@
 # Gemini Enterprise
 
+## 2026-02-09
+
+### Feature
+
+**Gemini Enterprise: Data connector for Notion (Public preview)**
+
+You can connect Notion data stores to Gemini Enterprise. For more information,
+see [Connect Notion](https://docs.cloud.google.com/gemini/enterprise/docs/notion).
+
+Support for Notion data sources is in Public preview.
+
+---
 ## 2026-02-06
 
 ### Security

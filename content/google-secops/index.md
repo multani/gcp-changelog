@@ -1,5 +1,34 @@
 # Google SecOps
 
+## 2026-02-09
+
+### Announcement
+
+**Enhanced rule observability: New metadata, visual indicators, and dashboards**
+
+Google Security Operations has introduced updates to how detection and alert data is processed and visualized. These changes help Google SecOps teams distinguish between primary rule runs and *rule replays*, which provides clarity on detection delays and the impact of late-arriving enrichment data.
+
+* **Key improvements**
+
+  + **Enhanced metadata**: Detection and alert objects now include specific metadata that identifies whether they were produced during a primary rule run, or as part of a *rule replay* or retrohunt.
+  + **Improved troubleshooting**: This data lets Google SecOps teams definitively answer critical operational questions, such as the cause of perceived detection delays or the specific impact of late-arriving enrichment data on active rules.
+  + **Rule replay insights**: Learn more about the distinction between primary runs and replays to manage the re-enrichment of Unified Data Model (UDM) events. For detailed definitions and technical workflows, see [Understand rule replay](https://docs.cloud.google.com/chronicle/docs/detection/rule-replays) and [Understand rule detection delays](https://docs.cloud.google.com/chronicle/docs/detection/detection-delays#re-enrichment-of-udm-events).
+  + **New detection dashboard**: To support these backend metadata changes, a new **Detection Health** dashboard is now available. This interface provides a visual representation of rule performance and replay status, letting teams monitor detection health more effectively.
+  + **Custom reporting**: There are new fields available in the [Detections schema](https://docs.cloud.google.com/chronicle/docs/reference/sample-yaral-for-native-dashboard#detections), letting you build custom dashboards.
+* **New metadata and third-party integration**: Detections and alerts now emit specific metadata to help customers track timing and latency. This data is available for integration with third-party systems using the following fields:
+
+  + `detectionTimingDetails`: An enum identifying the run type:
+  + `DETECTION_TIMING_DETAILS_REPROCESSING`
+  + `DETECTION_TIMING_DETAILS_RETROHUNT`
+  + `DETECTION_TIMING_DETAILS_UNSPECIFIED`
+  + `latencyMetrics`: Includes timestamps for `oldestIngestionTime`, `newestIngestionTime`, `oldestEventTime`, and `newestEventTime`.
+* **Enhanced platform and visual indicators**:
+
+  + **Alerts and rule details**: A new visual indicator in the **Detection Type** column provides granular details on hover.
+  + **Filter facets**: The **Alerts** lister page now includes *detection timing details* as a filterable facet.
+  + **SOAR integration**: In the **Case Overview**, the **Composite Detections** table now carries through the same iconography for a consistent investigation experience.
+
+---
 ## 2026-02-04
 
 ### Announcement

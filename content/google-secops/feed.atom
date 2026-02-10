@@ -2,9 +2,51 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps</subtitle>
-  <updated>2026-02-04T00:00:00+00:00</updated>
+  <updated>2026-02-09T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-02-09:announcement:0</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Enhanced rule observability: New metadata, visual indicators, and dashboards</strong></p>
+<p>Google Security Operations has introduced updates to how detection and alert data is processed and visualized. These changes help Google SecOps teams distinguish between primary rule runs and <em>rule replays</em>, which provides clarity on detection delays and the impact of late-arriving enrichment data.</p>
+<ul>
+<li>
+<p><strong>Key improvements</strong></p>
+</li>
+<li>
+<p><strong>Enhanced metadata</strong>: Detection and alert objects now include specific metadata that identifies whether they were produced during a primary rule run, or as part of a <em>rule replay</em> or retrohunt.</p>
+</li>
+<li><strong>Improved troubleshooting</strong>: This data lets Google SecOps teams definitively answer critical operational questions, such as the cause of perceived detection delays or the specific impact of late-arriving enrichment data on active rules.</li>
+<li><strong>Rule replay insights</strong>: Learn more about the distinction between primary runs and replays to manage the re-enrichment of Unified Data Model (UDM) events. For detailed definitions and technical workflows, see <a href="https://docs.cloud.google.com/chronicle/docs/detection/rule-replays">Understand rule replay</a> and <a href="https://docs.cloud.google.com/chronicle/docs/detection/detection-delays#re-enrichment-of-udm-events">Understand rule detection delays</a>.</li>
+<li><strong>New detection dashboard</strong>: To support these backend metadata changes, a new <strong>Detection Health</strong> dashboard is now available. This interface provides a visual representation of rule performance and replay status, letting teams monitor detection health more effectively.</li>
+<li><strong>Custom reporting</strong>: There are new fields available in the <a href="https://docs.cloud.google.com/chronicle/docs/reference/sample-yaral-for-native-dashboard#detections">Detections schema</a>, letting you build custom dashboards.</li>
+<li>
+<p><strong>New metadata and third-party integration</strong>: Detections and alerts now emit specific metadata to help customers track timing and latency. This data is available for integration with third-party systems using the following fields:</p>
+</li>
+<li>
+<p><code>detectionTimingDetails</code>: An enum identifying the run type:</p>
+</li>
+<li><code>DETECTION_TIMING_DETAILS_REPROCESSING</code></li>
+<li><code>DETECTION_TIMING_DETAILS_RETROHUNT</code></li>
+<li><code>DETECTION_TIMING_DETAILS_UNSPECIFIED</code></li>
+<li><code>latencyMetrics</code>: Includes timestamps for <code>oldestIngestionTime</code>, <code>newestIngestionTime</code>, <code>oldestEventTime</code>, and <code>newestEventTime</code>.</li>
+<li>
+<p><strong>Enhanced platform and visual indicators</strong>:</p>
+</li>
+<li>
+<p><strong>Alerts and rule details</strong>: A new visual indicator in the <strong>Detection Type</strong> column provides granular details on hover.</p>
+</li>
+<li><strong>Filter facets</strong>: The <strong>Alerts</strong> lister page now includes <em>detection timing details</em> as a filterable facet.</li>
+<li><strong>SOAR integration</strong>: In the <strong>Case Overview</strong>, the <strong>Composite Detections</strong> table now carries through the same iconography for a consistent investigation experience.</li>
+</ul>]]></content>
+    <summary>New metadata, visual indicators, and dashboards enhance the observability of detection and alert data, providing clearer insights into rule performance and potential delays. This update helps security teams better understand rule behavior and troubleshoot detection issues effectively.</summary>
+    <title>Announcement: Improved Rule Observability</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,14 @@
 # Confidential VM
 
+## 2026-02-10
+
+### Security
+
+A vulnerability affecting Intel TDX firmware was discovered and is
+being addressed. For more information, see the
+[GCP-2026-008 security bulletin](https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/security-bulletins#gcp-2026-008).
+
+---
 ## 2025-10-27
 
 ### Breaking

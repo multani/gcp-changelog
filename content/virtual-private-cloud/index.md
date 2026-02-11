@@ -1,5 +1,15 @@
 # Virtual Private Cloud
 
+## 2026-02-10
+
+### Feature
+
+You can use constraints in custom organization policies to provide more granular
+and customizable control over specific fields for internal ranges. For more
+information, see [Manage VPC resources by using custom organization
+policies](https://docs.cloud.google.com/vpc/docs/custom-constraints).
+
+---
 ## 2026-02-09
 
 ### Feature

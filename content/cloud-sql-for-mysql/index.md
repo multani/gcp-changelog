@@ -1,5 +1,25 @@
 # Cloud SQL for MySQL
 
+## 2026-02-10
+
+### Feature
+
+[Model endpoint management](https://docs.cloud.google.com/sql/docs/mysql/model-endpoint-overview)
+for Cloud SQL for MySQL and the
+[integration of Cloud SQL for MySQL with Vertex AI](https://docs.cloud.google.com/sql/docs/mysql/integrate-cloud-sql-with-vertex-ai) are now generally available
+([GA](https://cloud.google.com/products#product-launch-stages)).
+
+By integrating your Cloud SQL for MySQL instance with Vertex AI, you can
+invoke online predictions and generate vector embeddings from models hosted
+in Vertex AI directly from your Cloud SQL instance.
+
+With model endpoint management, you can build generative AI applications by
+integrating your databases with models from third-party providers like OpenAI
+using your own API keys. Model endpoint management lets you register and
+manage model endpoints for your MySQL instance, making your interactions
+with a wider range of ML models seamless.
+
+---
 ## 2026-02-09
 
 ### Feature

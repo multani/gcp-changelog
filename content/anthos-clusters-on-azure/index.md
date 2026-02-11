@@ -1,5 +1,26 @@
 # Anthos clusters on Azure
 
+## 2026-02-10
+
+### Announcement
+
+You can now launch clusters with the following Kubernetes versions. Click on the following links to see the release notes associated with these patches:
+
+* [1.34.1-gke.4700](https://cloud.google.com/kubernetes-engine/multi-cloud/docs/azure/reference/supported-versions#1341-gke4700)
+* [1.33.5-gke.1900](https://cloud.google.com/kubernetes-engine/multi-cloud/docs/azure/reference/supported-versions#1335-gke1900)
+* [1.32.9-gke.1800](https://cloud.google.com/kubernetes-engine/multi-cloud/docs/azure/reference/supported-versions#1329-gke1800)
+
+### Issue
+
+The following versions are not recommended:
+
+* 1.33.4-gke.900
+* 1.32.8-gke.600
+* 1.32.4-gke.200
+
+If you use any of the preceding versions, we strongly recommend that you upgrade to version 1.34 or the latest available patch versions.
+
+---
 ## 2026-01-30
 
 ### Security

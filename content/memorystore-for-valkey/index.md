@@ -1,5 +1,13 @@
 # Memorystore for Valkey
 
+## 2026-02-10
+
+### Feature
+
+You can now use the Google Cloud console to [manage backups](https://docs.cloud.google.com/memorystore/docs/valkey/manage-backups).
+This feature is [Generally Available](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-01-23
 
 ### Feature

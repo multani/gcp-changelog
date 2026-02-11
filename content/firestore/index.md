@@ -1,5 +1,16 @@
 # Firestore
 
+## 2026-02-10
+
+### Feature
+
+You can now use the [Firestore remote MCP server](https://docs.cloud.google.com/firestore/native/docs/use-firestore-mcp).
+The Firestore remote MCP server lets you interact with documents stored
+in a Firestore database from your AI application.
+
+This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-02-02
 
 ### Feature

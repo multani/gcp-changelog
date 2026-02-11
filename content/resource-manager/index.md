@@ -1,5 +1,14 @@
 # Resource Manager
 
+## 2026-02-09
+
+### Feature
+
+Organization Policy Service custom constraints are available for some
+Network Connectivity resources. For more information, see
+[Manage VPC resources by using custom organization policies](https://docs.cloud.google.com/vpc/docs/custom-constraints).
+
+---
 ## 2026-02-02
 
 ### Feature

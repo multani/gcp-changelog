@@ -1,5 +1,12 @@
 # Access Transparency
 
+## 2026-02-05
+
+### Feature
+
+Google Cloud Managed Lustre is generally available [(GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-01-23
 
 ### Feature

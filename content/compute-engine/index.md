@@ -1,5 +1,23 @@
 # Compute Engine
 
+## 2026-02-10
+
+### Feature
+
+**Preview**: You can use consistency groups of instant snapshots to back up a
+group of disks at the same point in time, ensuring data consistency across
+multiple disks. Consistency groups of instant snapshots offer the following
+benefits:
+
+* **Simultaneous backups**: create instant snapshots for all disks in a consistency
+  group with a single operation.
+* **Bulk restoration**: restore multiple disks at once from a consistency group of
+  instant snapshots.
+
+To learn more, see
+[About instant snapshots](https://docs.cloud.google.com/compute/docs/disks/instant-snapshots).
+
+---
 ## 2026-02-09
 
 ### Feature

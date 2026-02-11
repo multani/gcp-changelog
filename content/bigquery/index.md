@@ -1,5 +1,17 @@
 # BigQuery
 
+## 2026-02-11
+
+### Feature
+
+You can now run pipelines with three distinct execution methods: running all
+tasks, running selected tasks, and running tasks with selected tags. For more
+information, see
+[Run a pipeline](https://docs.cloud.google.com/bigquery/docs/create-pipelines#run-pipeline).
+This feature is [generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
+
+---
 ## 2026-02-09
 
 ### Feature

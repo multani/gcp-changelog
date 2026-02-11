@@ -1,5 +1,18 @@
 # Spanner
 
+## 2026-02-10
+
+### Feature
+
+You can use the
+[Spanner remote MCP server](https://docs.cloud.google.com/spanner/docs/use-spanner-mcp) to
+interact with Spanner instances and databases from agentic AI
+applications such as Gemini CLI, agent
+mode in Gemini Code Assist, or Claude.ai.
+
+This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-02-02
 
 ### Feature

@@ -1,5 +1,22 @@
 # BigQuery
 
+## 2026-02-09
+
+### Feature
+
+You can now customize the scope of data documentation scans for BigQuery tables
+to generate specific insights. You can choose to generate only SQL queries,
+only table and column descriptions, or all insights.
+
+You can also create one-time data scans that execute immediately upon creation,
+removing the need for a separate `run` command. These scans support a
+Time to Live (TTL) setting to automatically delete the scan resource after
+completion.
+
+For more information, see
+[Generate insights for a BigQuery table](https://docs.cloud.google.com/bigquery/docs/data-insights#insights-bigquery-table).
+
+---
 ## 2026-02-04
 
 ### Change

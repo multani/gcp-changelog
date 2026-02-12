@@ -1,5 +1,17 @@
 # Oracle Database@Google Cloud
 
+## 2026-02-12
+
+### Feature
+
+Oracle Database@Google Cloud adds zone `europe-west2-a-r1` (London, Europe) for the following services:
+
+* Exadata Database Service on Exascale infrastructure
+* Base Database Service
+
+For a list of supported locations, see [Supported regions and zones](https://docs.cloud.google.com/oracle/database/docs/regions-and-zones).
+
+---
 ## 2026-02-11
 
 ### Feature

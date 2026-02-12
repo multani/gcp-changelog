@@ -1,5 +1,14 @@
 # Compute Engine
 
+## 2026-02-12
+
+### Feature
+
+**Generally available**: You can use instance flexibility to improve resource availability when creating VMs in bulk in a region. With instance flexibility, you specify one or more suitable machine types for your workload. Compute Engine then provisions VMs from the list of machine types based on capacity and quota availability.
+
+For more information, see [About instance flexibility for VMs created in bulk](https://docs.cloud.google.com/compute/docs/instances/multiple/about-instance-flexibility-for-bulk-vms) and [Create VMs in bulk with instance flexibility](https://docs.cloud.google.com/compute/docs/instances/multiple/create-in-bulk-with-instance-flexibility).
+
+---
 ## 2026-02-10
 
 ### Feature

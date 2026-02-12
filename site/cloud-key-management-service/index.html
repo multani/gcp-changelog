@@ -2316,8 +2316,25 @@
 
 
 <h1 id="cloud-key-management-service">Cloud Key Management Service</h1>
-<h2 id="2026-01-20">2026-01-20</h2>
+<h2 id="2026-02-11">2026-02-11</h2>
 <h3 id="feature">Feature</h3>
+<p>Cloud KMS Autokey for projects is available in Public Preview. Autokey for
+projects lets you enable Cloud KMS Autokey for delegated key management. In
+delegated key management, keys created by Autokey are created in the same
+project as the resources they protect. This option is suitable for your
+organization if project administrators are in charge of key management for the
+projects they manage.</p>
+<p>You can still use Cloud KMS Autokey for centralized key management in a folder,
+where all keys that protect resources in that folder are created in a dedicated
+key project. You can also use centralized key management in a folder, with
+certain projects within that folder configured to use delegated key management
+and same-project keys instead of creating keys in the dedicated key project.</p>
+<p>You can enable Autokey for projects on individual projects or on all projects
+within a folder. For more information, see
+<a href="https://docs.cloud.google.com/kms/docs/enable-autokey">Enable Cloud KMS Autokey</a>.</p>
+<hr />
+<h2 id="2026-01-20">2026-01-20</h2>
+<h3 id="feature_1">Feature</h3>
 <p>Cloud KMS is available in the following region:</p>
 <ul>
 <li><code>asia-southeast3</code></li>
@@ -2325,7 +2342,7 @@
 <p>For more information, see <a href="https://docs.cloud.google.com/kms/docs/locations">Cloud KMS locations</a>.</p>
 <hr />
 <h2 id="2025-12-17">2025-12-17</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>Single-tenant Cloud HSM is now generally available. With
 Single-tenant Cloud HSM, you can create and manage dedicated single-tenant
 instances. Each instance is a cluster of partitions on HSMs in a single
@@ -2350,7 +2367,7 @@ Single-tenant Cloud HSM, see <a href="https://docs.cloud.google.com/kms/pricing#
 Single-tenant Cloud HSM</a>.</p>
 <hr />
 <h2 id="2025-11-13">2025-11-13</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>The Cloud KMS <strong>Encryption metrics</strong> dashboard is available in Preview. The
 dashboard shows the following metrics for the selected project to help you
 understand your CMEK usage:</p>
@@ -2363,7 +2380,7 @@ understand your CMEK usage:</p>
 limitations, see <a href="https://docs.cloud.google.com/kms/docs/view-encryption-metrics">View encryption metrics</a>.</p>
 <hr />
 <h2 id="2025-09-23">2025-09-23</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>Cloud KMS now supports key encapsulation mechanisms (KEMs) for sharing secrets in Preview. KEMs are designed to be resistant to post-quantum attacks. You can use the following KEM algorithms:</p>
 <ul>
 <li><code>ML_KEM_768</code></li>
@@ -2373,7 +2390,7 @@ limitations, see <a href="https://docs.cloud.google.com/kms/docs/view-encryption
 <p>For more information about key encapsulation mechanisms, see <a href="https://cloud.google.com/kms/docs/key-encapsulation-mechanisms">Key encapsulation mechanisms</a>. To learn how to use key encapsulation mechanisms to share secrets, see <a href="https://cloud.google.com/kms/docs/encapsulate-decapsulate">Encapsulate and decapsulate using KEMs</a>.</p>
 <hr />
 <h2 id="2025-06-30">2025-06-30</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p>Cloud HSM for Google Workspace now lets you use Cloud HSM keys for client-side encryption (CSE) to protect sensitive workloads in Google Workspace. For more information about Cloud HSM for Google Workspace, including how to get started, see <a href="https://cloud.google.com/kms/docs/onboard-hsm-workspace">Onboard to Cloud HSM for Google Workspace</a>.</p>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
@@ -2386,6 +2403,9 @@ limitations, see <a href="https://docs.cloud.google.com/kms/docs/view-encryption
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-key-management-service">Cloud Key Management Service</a></li>
+          <li class="nav-item">
+            <a href="#2026-02-11" class="nav-link">2026-02-11</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-01-20" class="nav-link">2026-01-20</a>
           </li>

@@ -14,7 +14,7 @@ On February 10, 2026, we released an updated version of Apigee (1-17-0-apigee-2)
 | --- | --- |
 | **481735779, 457138941, 471232237** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2025-61730](https://nvd.nist.gov/vuln/detail/CVE-2025-61730) * [CVE-2025-68156](https://nvd.nist.gov/vuln/detail/CVE-2025-68156) * [CVE-2025-54388](https://nvd.nist.gov/vuln/detail/CVE-2025-54388) * [CVE-2025-61727](https://nvd.nist.gov/vuln/detail/CVE-2025-61727) * [CVE-2025-61729](https://nvd.nist.gov/vuln/detail/CVE-2025-61729) |
 | **470375542** | Fix a memory leak which could result in a spike in 503 responses with "no\_healthy\_upstream" messages. |
-| **480997525** | Fix for proxy calls failing with "The URI contain illegal characters" error after Netty upgrade. |
+| **480997525** | Fix for proxy calls failing with "The URI contains illegal characters" error after Netty upgrade. |
 
 ---
 ## 2026-02-06

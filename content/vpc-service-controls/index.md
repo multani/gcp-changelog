@@ -1,5 +1,15 @@
 # VPC Service Controls
 
+## 2026-02-11
+
+### Feature
+
+[Preview stage](https://cloud.google.com/products#product-launch-stages) support
+for the following integration:
+
+* [Managed Lustre](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_managed_lustre)
+
+---
 ## 2026-01-22
 
 ### Feature

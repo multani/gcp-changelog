@@ -1,5 +1,27 @@
 # Cloud Key Management Service
 
+## 2026-02-11
+
+### Feature
+
+Cloud KMS Autokey for projects is available in Public Preview. Autokey for
+projects lets you enable Cloud KMS Autokey for delegated key management. In
+delegated key management, keys created by Autokey are created in the same
+project as the resources they protect. This option is suitable for your
+organization if project administrators are in charge of key management for the
+projects they manage.
+
+You can still use Cloud KMS Autokey for centralized key management in a folder,
+where all keys that protect resources in that folder are created in a dedicated
+key project. You can also use centralized key management in a folder, with
+certain projects within that folder configured to use delegated key management
+and same-project keys instead of creating keys in the dedicated key project.
+
+You can enable Autokey for projects on individual projects or on all projects
+within a folder. For more information, see
+[Enable Cloud KMS Autokey](https://docs.cloud.google.com/kms/docs/enable-autokey).
+
+---
 ## 2026-01-20
 
 ### Feature

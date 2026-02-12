@@ -2,9 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Key Management Service</title>
   <subtitle>Changelog for Google Cloud product: Cloud Key Management Service</subtitle>
-  <updated>2026-01-20T00:00:00+00:00</updated>
+  <updated>2026-02-11T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-key-management-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-key-management-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-key-management-service:2026-02-11:feature:0</id>
+    <published>2026-02-11T00:00:00+00:00</published>
+    <updated>2026-02-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud KMS Autokey for projects is available in Public Preview. Autokey for
+projects lets you enable Cloud KMS Autokey for delegated key management. In
+delegated key management, keys created by Autokey are created in the same
+project as the resources they protect. This option is suitable for your
+organization if project administrators are in charge of key management for the
+projects they manage.</p>
+<p>You can still use Cloud KMS Autokey for centralized key management in a folder,
+where all keys that protect resources in that folder are created in a dedicated
+key project. You can also use centralized key management in a folder, with
+certain projects within that folder configured to use delegated key management
+and same-project keys instead of creating keys in the dedicated key project.</p>
+<p>You can enable Autokey for projects on individual projects or on all projects
+within a folder. For more information, see
+<a href="https://docs.cloud.google.com/kms/docs/enable-autokey">Enable Cloud KMS Autokey</a>.</p>]]></content>
+    <summary>Cloud KMS Autokey for Projects is now in Public Preview, allowing for delegated key management where keys are created in the same project as the resources they protect. This feature can be enabled on individual projects or across all projects within a folder, offering flexibility for your organization's key management strategy.</summary>
+    <title>Feature: Autokey for Projects in Public Preview</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

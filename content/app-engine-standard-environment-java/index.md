@@ -2,7 +2,7 @@
 
 ## 2026-01-31
 
-### Feature
+### Deprecated
 
 Java 8 is [deprecated](https://docs.cloud.google.com/appengine/docs/standard/lifecycle/runtime-lifecycle#deprecated).
 You won't be able to deploy Java 8 applications, even if your organization

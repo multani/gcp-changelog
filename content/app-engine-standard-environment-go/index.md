@@ -2,7 +2,7 @@
 
 ## 2026-01-31
 
-### Feature
+### Deprecated
 
 Go 1.11 is [deprecated](https://docs.cloud.google.com/appengine/docs/standard/lifecycle/runtime-lifecycle#deprecated).
 You won't be able to deploy Go 1.11 applications, even if your organization

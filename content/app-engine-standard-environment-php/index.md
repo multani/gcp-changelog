@@ -4,12 +4,13 @@
 
 ### Feature
 
-Support for the [PHP 8.5 runtime](https://docs.cloud.google.com/appengine/docs/standard/php-gen2/runtime) is in [Preivew](https://cloud.google.com/products/#product-launch-stages).
+Support for the [PHP 8.5 runtime](https://docs.cloud.google.com/appengine/docs/standard/php-gen2/runtime) is
+in [Preview](https://cloud.google.com/products/#product-launch-stages).
 
 ---
 ## 2026-01-31
 
-### Feature
+### Deprecated
 
 PHP 5 is [deprecated](https://docs.cloud.google.com/appengine/docs/standard/lifecycle/runtime-lifecycle#deprecated).
 You won't be able to deploy PHP 5 applications, even if your

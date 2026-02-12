@@ -1,5 +1,13 @@
 # Cloud Deploy
 
+## 2026-02-11
+
+### Feature
+
+You can now [deploy containerized workloads to Cloud Run worker pools](https://docs.cloud.google.com/deploy/docs/run-targets#create_your_worker_pool_definitions). This feature is now generally
+available ([GA](https://cloud.google.com/products#product-launch-stages)).
+
+---
 ## 2026-01-23
 
 ### Change

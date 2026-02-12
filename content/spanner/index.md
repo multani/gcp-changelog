@@ -13,6 +13,18 @@ mode in Gemini Code Assist, or Claude.ai.
 This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
 
 ---
+## 2026-02-09
+
+### Feature
+
+You can right-click a node in a Spanner Graph query
+visualization to access options like expanding or collapsing adjacent nodes,
+highlighting or hiding nodes, and viewing only a node's neighbors.
+
+For more information, see
+[Work with visualizations](https://docs.cloud.google.com/spanner/docs/graph/work-with-visualizations#choose-nodes-to-display).
+
+---
 ## 2026-02-02
 
 ### Feature

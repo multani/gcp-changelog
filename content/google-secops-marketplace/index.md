@@ -1,5 +1,57 @@
 # Google SecOps Marketplace
 
+## 2026-02-11
+
+### Feature
+
+**CiscoUmbrella**: Version 15.0
+
+* The following new actions have been added:
+
+  + **Is Domain In Cisco Popularity List**
+  + **List Top Domains**
+
+### Change
+
+**Palo Alto Cortex XDR**: Version 22.0
+
+* Updated the event processing and dynamic list handling of the following
+  connector:
+
+  + **Palo Alto Cortex XDR Connector**
+* Added the ability to ignore certain types of artifacts to the following
+  connector:
+
+  + **Palo Alto Cortex XDR Connector**
+
+### Change
+
+**Google Threat Intelligence**: Version 9.0
+
+* Added the ability to define the data freshness threshold for available hashes
+  to the following action:
+
+  + **Submit File**
+* Added the ability to filter using monitor names to the following connector:
+
+  + **Google Threat Intelligence - DTM Alerts Connector**
+* **Integration**: Updated the connectivity test method to avoid API quota
+  consumption.
+
+### Change
+
+**Tenable.io**: Version 13.0
+
+* Optimized the asset processing of the following connector:
+
+  + **TenableIO - Vulnerabilities Connector**
+* Updated the entity processing logic of the following actions:
+
+  + **Enrich Entities**
+  + **List Endpoint Vulnerabilities**
+  + **Scan Endpoints**
+
+---
 ## 2026-02-04
 
 ### Change

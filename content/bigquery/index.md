@@ -1,5 +1,17 @@
 # BigQuery
 
+## 2026-02-12
+
+### Feature
+
+You can now use [dataset insights](https://docs.cloud.google.com/bigquery/docs/generate-dataset-insights)
+to understand relationships between tables in a dataset by generating
+relationship graphs and cross-table queries. You can automatically generate
+dataset summaries, infer relationships across tables, and receive suggestions
+for analytical questions. This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-02-11
 
 ### Feature
@@ -26,7 +38,7 @@ Time to Live (TTL) setting to automatically delete the scan resource after
 completion.
 
 For more information, see
-[Generate insights for a BigQuery table](https://docs.cloud.google.com/bigquery/docs/data-insights#insights-bigquery-table).
+[Generate insights for a BigQuery table](https://docs.cloud.google.com/bigquery/docs/generate-table-insights#insights-bigquery-table).
 
 ---
 ## 2026-02-04

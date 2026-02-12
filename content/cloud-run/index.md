@@ -1,5 +1,12 @@
 # Cloud Run
 
+## 2026-02-11
+
+### Feature
+
+Support for [osonly24 runtime](https://docs.cloud.google.com/run/docs/runtime-support#osonly) is in [General Availability](https://cloud.google.com/products?e=48754805#product-launch-stages). The OS only runtime lets you deploy Go applications from source, and binaries such as Dart and Go. For more information, see [Configure the OS only runtime](https://docs.cloud.google.com/docs/buildpacks/osonly).
+
+---
 ## 2026-02-06
 
 ### Feature

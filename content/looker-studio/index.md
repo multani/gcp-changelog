@@ -1,5 +1,27 @@
 # Looker Studio
 
+## 2026-02-12
+
+### Feature
+
+**Pro feature: Change the billing account**
+
+You can change the Google Cloud billing account that is associated with a Looker Studio Pro subscription without interrupting access to your Pro assets.
+
+[Learn how to change the Pro billing account](https://docs.cloud.google.com/looker/docs/studio/change-billing-account).
+
+### Feature
+
+**Additional search parameters**
+
+When searching for reports or data sources, you can filter search results by the following parameters:
+
+* Type
+* Owner
+* Location
+* Date Modified
+
+---
 ## 2026-02-05
 
 ### Feature

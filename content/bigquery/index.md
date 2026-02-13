@@ -11,6 +11,24 @@ dataset summaries, infer relationships across tables, and receive suggestions
 for analytical questions. This feature is in
 [Preview](https://cloud.google.com/products/#product-launch-stages).
 
+### Feature
+
+You can now provide descriptions for the fields in your custom output schema
+when you use the
+[`AI.GENERATE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate)
+and
+[`AI.GENERATE_TABLE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-generate-table)
+functions.
+This feature is [generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
+
+### Feature
+
+The
+[`AI.CLASSIFY` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-classify)
+now supports classifying your input into multiple categories. This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
 ---
 ## 2026-02-11
 

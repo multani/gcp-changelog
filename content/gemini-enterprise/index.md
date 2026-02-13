@@ -24,7 +24,7 @@ Contact your account manager to access the mobile app.
 **Gemini Enterprise: Data connector for Notion (Public preview)**
 
 You can connect Notion data stores to Gemini Enterprise. For more information,
-see [Connect Notion](https://docs.cloud.google.com/gemini/enterprise/docs/notion).
+see [Connect Notion](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/notion).
 
 Support for Notion data sources is in Public preview.
 
@@ -61,15 +61,6 @@ Gemini Enterprise.
 
 ### Feature
 
-**Gemini Enterprise: Data connector for Linear (Public preview)**
-
-You can connect Linear data stores to Gemini Enterprise. For more information,
-see [Connect Linear](https://docs.cloud.google.com/gemini/enterprise/docs/linear).
-
-Support for Linear data sources is in Public preview.
-
-### Feature
-
 **Gemini Enterprise: Welcome emails**
 
 After a user signs in to Gemini Enterprise for the first time, the user receives
@@ -78,6 +69,15 @@ Gemini Enterprise admins can turn this feature on or off from the admin settings
 
 For more information, see [Manage web app
 features](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
+
+### Feature
+
+**Gemini Enterprise: Data connector for Linear (Public preview)**
+
+You can connect Linear data stores to Gemini Enterprise. For more information,
+see [Connect Linear](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/linear).
+
+Support for Linear data sources is in Public preview.
 
 ---
 ## 2026-02-04
@@ -116,8 +116,8 @@ For more information, see [Configure access controls for apps](https://docs.clou
 
 New actions are available for the following data stores:
 
-* [Jira Data Center](https://docs.cloud.google.com/gemini/enterprise/docs/jira-dc)
-* [Zendesk](https://docs.cloud.google.com/gemini/enterprise/docs/zendesk)
+* [Jira Data Center](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/jira-dc)
+* [Zendesk](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/zendesk)
 
 For a list of actions for these data stores, see [Supported actions](https://docs.cloud.google.com/gemini/enterprise/docs/connect-third-party-data-source#supported_actions).
 
@@ -130,11 +130,11 @@ For a list of actions for these data stores, see [Supported actions](https://doc
 
 The following data stores are supported in Gemini Enterprise:
 
-* [Confluence Data Center](https://docs.cloud.google.com/gemini/enterprise/docs/confluence-dc)
-* [Jira Data Center](https://docs.cloud.google.com/gemini/enterprise/docs/jira-dc)
-* [Zendesk](https://docs.cloud.google.com/gemini/enterprise/docs/zendesk)
+* [Confluence Data Center](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/confluence-dc)
+* [Jira Data Center](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/jira-dc)
+* [Zendesk](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/zendesk)
 
-**Download file** action has been added to [Dropbox](https://docs.cloud.google.com/gemini/enterprise/docs/dropbox). For a list of actions for all available data stores, see [Supported actions](https://docs.cloud.google.com/gemini/enterprise/docs/connect-third-party-data-source#supported_actions).
+**Download file** action has been added to [Dropbox](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/dropbox). For a list of actions for all available data stores, see [Supported actions](https://docs.cloud.google.com/gemini/enterprise/docs/connect-third-party-data-source#supported_actions).
 
 ---
 ## 2026-01-27
@@ -171,13 +171,13 @@ For more information, see [Agent Designer overview](https://docs.cloud.google.co
 
 New actions have been added to the following data stores:
 
-* [Box](https://docs.cloud.google.com/gemini/enterprise/docs/box)
-* [Confluence Cloud](https://docs.cloud.google.com/gemini/enterprise/docs/confluence-cloud)
-* [Dropbox](https://docs.cloud.google.com/gemini/enterprise/docs/dropbox)
-* [Jira Cloud](https://docs.cloud.google.com/gemini/enterprise/docs/jira-cloud)
-* [Microsoft OneDrive](https://docs.cloud.google.com/gemini/enterprise/docs/ms-onedrive)
-* [Microsoft Outlook](https://docs.cloud.google.com/gemini/enterprise/docs/ms-outlook)
-* [Microsoft SharePoint](https://docs.cloud.google.com/gemini/enterprise/docs/ms-sharepoint)
+* [Box](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/box)
+* [Confluence Cloud](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/confluence-cloud)
+* [Dropbox](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/dropbox)
+* [Jira Cloud](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/jira-cloud)
+* [Microsoft OneDrive](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-onedrive)
+* [Microsoft Outlook](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-outlook)
+* [Microsoft SharePoint](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-sharepoint)
 
 ---
 ## 2026-01-12

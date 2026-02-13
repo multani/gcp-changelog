@@ -2316,6 +2316,40 @@
 
 
 <h1 id="google-secops-siem">Google SecOps SIEM</h1>
+<h2 id="2026-02-12">2026-02-12</h2>
+<h3 id="feature">Feature</h3>
+<p><strong>Advanced Joins in Search</strong></p>
+<p>Google SecOps now supports expanded capabilities for correlating data across
+multiple sources. These join operations are also supported in multistage queries.</p>
+<p><strong>Joins without a <code>match</code> section</strong>: You can now use join operations to correlate
+and combine data from multiple sources based on common field values without
+requiring a <code>match</code> section (unlike statistical joins). Results are displayed in a
+Joins table, which you can download as a CSV, or for event-to-event joins,
+exported to a datatable for further analysis.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/joins-without-match-section">Implement joins without a match section</a>.</p>
+<p><strong>Outer joins</strong>: Search now supports left and right outer joins. Unlike standard
+inner joins, these operations let you retrieve all records from a primary
+data source even if no matching entry exists in the secondary source (unmatched
+fields are returned as <code>null</code>). This action lets you correlate data
+without losing unmatched events.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/outer-joins">Correlate data with outer joins</a>.</p>
+<h3 id="feature_1">Feature</h3>
+<p><strong>Advanced Joins in Search</strong></p>
+<p>Google SecOps now supports expanded capabilities for correlating data across
+multiple sources. These join operations are also supported in multistage queries.</p>
+<p><strong>Joins without a <code>match</code> section</strong>: You can now use join operations to correlate
+and combine data from multiple sources based on common field values without
+requiring a <code>match</code> section (unlike statistical joins). Results are displayed in a
+Joins table, which you can download as a CSV, or for event-to-event joins,
+exported to a datatable for further analysis.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/joins-without-match-section">Implement joins without a match section</a>.</p>
+<p><strong>Outer joins</strong>: Search now supports left and right outer joins. Unlike standard
+inner joins, these operations let you retrieve all records from a primary
+data source even if no matching entry exists in the secondary source (unmatched
+fields are returned as <code>null</code>). This action lets you correlate data
+without losing unmatched events.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/outer-joins">Correlate data with outer joins</a>.</p>
+<hr />
 <h2 id="2026-02-09">2026-02-09</h2>
 <h3 id="announcement">Announcement</h3>
 <p><strong>Enhanced rule observability: New metadata, visual indicators, and dashboards</strong></p>
@@ -2419,7 +2453,7 @@
 <li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hypr-mfa">Collect HYPR MFA logs</a></li>
 <li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ibm-guardium">Collect IBM Guardium logs</a></li>
 </ul>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p><strong>The re.capture_all function is now available</strong></p>
 <p>The new <a href="https://docs.cloud.google.com/chronicle/docs/yara-l/functions#recapture_all">re.capture_all</a> YARA-L 2.0 function is available in Rules, Search, and Dashboards.</p>
 <p>Use the <strong>re.capture_all()</strong> function to extract every non-overlapping match of a regular expression from a string. While the standard <a href="https://docs.cloud.google.com/chronicle/docs/yara-l/functions#recapture"><strong>re.capture</strong></a> function stops after the first match it finds, the <strong>re.capture_all()</strong> function continues through the entire string to identify every instance that matches your pattern.</p>
@@ -2448,18 +2482,18 @@
 <li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hypr-mfa">Collect HYPR MFA logs</a></li>
 <li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ibm-guardium">Collect IBM Guardium logs</a></li>
 </ul>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p><strong>The re.capture_all function is now available</strong></p>
 <p>The new <a href="https://docs.cloud.google.com/chronicle/docs/yara-l/functions#recapture_all">re.capture_all</a> YARA-L 2.0 function is available in Rules, Search, and Dashboards.</p>
 <p>Use the <strong>re.capture_all()</strong> function to extract every non-overlapping match of a regular expression from a string. While the standard <a href="https://docs.cloud.google.com/chronicle/docs/yara-l/functions#recapture"><strong>re.capture</strong></a> function stops after the first match it finds, the <strong>re.capture_all()</strong> function continues through the entire string to identify every instance that matches your pattern.</p>
 <hr />
 <h2 id="2026-02-03">2026-02-03</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p><strong>Share custom column sets</strong></p>
 <p>Google SecOps now lets you share custom sets of columns in the <strong>Events</strong> table for
 consistent analysis across teams.</p>
 <p>For more details, see <a href="https://cloud.google.com/chronicle/docs/investigation/udm-search">Search for events and alerts</a></p>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p><strong>Share custom column sets</strong></p>
 <p>Google SecOps now lets you share custom sets of columns in the <strong>Events</strong> table for
 consistent analysis across teams.</p>
@@ -3113,7 +3147,7 @@ released default parsers and pending parser updates.</p>
 </ul>
 <hr />
 <h2 id="2026-01-29">2026-01-29</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p><strong>Enhanced rule observability for detections</strong></p>
 <p>Google SecOps now provides increased visibility into detection timing to help
 improve dashboard and reporting accuracy. You can now easily distinguish whether
@@ -3121,7 +3155,7 @@ a detection was generated during a primary rule run or through a
 <a href="https://docs.cloud.google.com/chronicle/docs/detection/rule-replays">rule replay</a>. This data is available
 in dashboards and as a filter in the <strong>Alerts</strong> lister page using the field
 <code>collection.detection_timing_details</code>.</p>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p><strong>Rule observability for detections and alerts</strong></p>
 <p>New metadata is now included in all detection and alert objects, indicating if
 the detection was produced during a primary rule run or through a
@@ -3130,7 +3164,7 @@ used in dashboards and as a filter in the <strong>Alerts</strong> lister page us
 <code>collection.detection_timing_details</code>.</p>
 <hr />
 <h2 id="2026-01-26">2026-01-26</h2>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p><strong>Timeline View for Alerts</strong></p>
 <p>Visualize alert patterns over time using the new timeline view in the <strong>Alerts</strong> section of the <strong>Cases Overview</strong> tab.</p>
 <hr />
@@ -3140,10 +3174,10 @@ used in dashboards and as a filter in the <strong>Alerts</strong> lister page us
 <p>This <a href="https://docs.cloud.google.com/chronicle/docs/secops/release-notes#January_18_2026">Integration Rollback</a> feature is now in General Availability (GA).</p>
 <p>Rollback is not supported for integrations built for Python 2.7 or 3.7. To perform a rollback, a snapshot must have been created during the previous upgrade process.
 For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/respond/integrations-setup/version-rollback">Roll back response integration version</a>.</p>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p><strong>Timeline View for Alerts</strong></p>
 <p>Visualize alert patterns over time using the new timeline view in the Alerts section of the Cases Overview tab.</p>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p><strong>Structured SOAR Python integration logs</strong></p>
 <p>Python integration logging has been upgraded to a structured format to eliminate visibility gaps and ensure comprehensive diagnostic coverage in Google Cloud.
 This upgrade changes how Python logs are interpreted in the Google Cloud Logging Explorer. Previously, logs were bundled into a single block per execution. Now, every log line is interpreted as a separate entry, allowing for granular filtering, better searchability, and easier debugging of specific events.</p>
@@ -3159,7 +3193,7 @@ This upgrade changes how Python logs are interpreted in the Google Cloud Logging
 <p>This <a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#January_18_2026">Integration Rollback</a> feature is now in General Availability (GA).</p>
 <p>Rollback is not supported for integrations built for Python 2.7 or 3.7. To perform a rollback, a snapshot must have been created during the previous upgrade process.
 For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/respond/integrations-setup/version-rollback">Roll back response integration version</a>.</p>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_11">Feature</h3>
 <p><strong>Structured SOAR Python integration logs</strong></p>
 <p>Python integration logging has been upgraded to a structured format to eliminate visibility gaps and ensure comprehensive diagnostic coverage in Google Cloud.<br />
 This upgrade changes how Python logs are interpreted in the GCP Cloud Logging Explorer. Previously, logs were bundled into a single block per execution. Now, every log line is interpreted as a separate entry, allowing for granular filtering, better searchability, and easier debugging of specific events.</p>
@@ -3205,7 +3239,7 @@ This upgrade changes how Python logs are interpreted in the GCP Cloud Logging Ex
 <li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/voltage-sm">Collect Voltage SecureMail logs</a></li>
 <li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/wallix-bastion">Collect Wallix Bastion logs</a></li>
 </ul>
-<h3 id="feature_10">Feature</h3>
+<h3 id="feature_12">Feature</h3>
 <p><strong>Direct ingestion for Google Cloud Model Armor logs</strong></p>
 <p>You can now ingest Google Cloud Model Armor logs (<code>GCP_MODEL_ARMOR</code>) directly into Google
 SecOps. Use an export filter for direct ingestion and access the logs through
@@ -3238,7 +3272,7 @@ threats, such as prompt injection and sensitive data leakage.</p>
 <li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/voltage-sm">Collect Voltage SecureMail logs</a></li>
 <li><a href="https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/wallix-bastion">Collect Wallix Bastion logs</a></li>
 </ul>
-<h3 id="feature_11">Feature</h3>
+<h3 id="feature_13">Feature</h3>
 <p><strong>Direct ingestion for Google Cloud Model Armor logs</strong></p>
 <p>You can now ingest Google Cloud Model Armor logs (<code>GCP_MODEL_ARMOR</code>) directly into Google
 SecOps. Use an export filter for direct ingestion and access the logs through
@@ -3247,14 +3281,14 @@ threats, such as prompt injection and sensitive data leakage.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/model-armor/configure-logging">Model Armor Documentation to Configure Logging</a>.</p>
 <hr />
 <h2 id="2026-01-18">2026-01-18</h2>
-<h3 id="feature_12">Feature</h3>
+<h3 id="feature_14">Feature</h3>
 <p><strong>Integration Rollback</strong></p>
 <p>This feature is currently in Preview.</p>
 <p>You can now roll back commercial response integrations to their previously installed version. This action reverts all integration content, including standard code and any custom modifications, to the state of the last installed version. For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/respond/integrations-setup/version-rollback">Roll back response integration version</a>.</p>
 <h3 id="announcement_18">Announcement</h3>
 <p>Release 6.3.72 is being rolled out to the first phase of regions as listed <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
 <p>This release contains the following changes:</p>
-<h3 id="feature_13">Feature</h3>
+<h3 id="feature_15">Feature</h3>
 <p><strong>Integration Rollback</strong></p>
 <p>This feature is currently in Preview.</p>
 <p>You can now roll back commercial response integrations to their previously installed version. This action reverts all integration content, including standard code and any custom modifications, to the state of the last installed version. For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/respond/integrations-setup/version-rollback">Roll back response integration version</a>.</p>
@@ -3264,13 +3298,13 @@ threats, such as prompt injection and sensitive data leakage.</p>
 <p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#January_11_2026">Release 6.3.71</a> is now available for all regions.</p>
 <hr />
 <h2 id="2026-01-16">2026-01-16</h2>
-<h3 id="feature_14">Feature</h3>
+<h3 id="feature_16">Feature</h3>
 <p><strong>Perform all-time searches</strong></p>
 <p>You can now run searches over your full retention period by clicking the <strong>Time Picker</strong>
 on the <strong>Search editor</strong> panel and selecting <strong>All Time</strong>. This functionality is
 supported for event searches, and results remain limited to a maximum of 1M events.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/udm-search">Search for events and alerts</a>.</p>
-<h3 id="feature_15">Feature</h3>
+<h3 id="feature_17">Feature</h3>
 <p><strong>Perform all-time searches</strong></p>
 <p>You can now run searches over your full retention period by clicking the <strong>Time Picker</strong>
 on the <strong>Search editor</strong> panel and selecting <strong>All Time</strong>. This functionality is
@@ -3278,7 +3312,7 @@ supported for event searches, and results remain limited to a maximum of 1M even
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/udm-search">Search for events and alerts</a>.</p>
 <hr />
 <h2 id="2026-01-15">2026-01-15</h2>
-<h3 id="feature_16">Feature</h3>
+<h3 id="feature_18">Feature</h3>
 <p><strong>OneMCP for Google SecOps</strong></p>
 <p>You can use the <a href="https://docs.cloud.google.com/chronicle/docs/secops/use-google-secops-mcp">Google SecOps remote MCP server</a> to enable LLM agents to perform a range of data-related tasks.</p>
 <p>This feature is in Preview.</p>
@@ -3302,12 +3336,12 @@ supported for event searches, and results remain limited to a maximum of 1M even
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/event-processing/auto-extraction">Auto Extraction overview</a>.</p>
 <hr />
 <h2 id="2026-01-12">2026-01-12</h2>
-<h3 id="feature_17">Feature</h3>
+<h3 id="feature_19">Feature</h3>
 <p><strong>Copy instance metadata</strong></p>
 <p>To enable Google support to test and troubleshoot customer issues, a new option to copy SOAR information and share with Support has been added to the platform. This option, entitled <strong>Copy instance metadata</strong>, can be accessed from the question mark at the top of the platform.</p>
 <hr />
 <h2 id="2026-01-11">2026-01-11</h2>
-<h3 id="feature_18">Feature</h3>
+<h3 id="feature_20">Feature</h3>
 <p><strong>Custom Transformers and Logical Operators</strong></p>
 <p>This feature is currently in Preview.</p>
 <p>Playbook engineers can now extend platform capabilities by creating custom Python-based transformation functions and logical operators as part of Extension Packs directly within the IDE. For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/respond/custom-transformers-logical-operators">Custom transformation functions and logical operators</a>.</p>
@@ -3346,7 +3380,7 @@ For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/
 <p><strong>Understand your Google SecOps billing components</strong></p>
 <p>A new document is available that helps you understand your Google Security Operations billing components. The document provides information about how to track your usage and the related cost.
 For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/onboard/understand-billing">Understand your Google SecOps billing</a>.</p>
-<h3 id="feature_19">Feature</h3>
+<h3 id="feature_21">Feature</h3>
 <p><strong>ThreatConnect IOC V3 Connector</strong></p>
 <p>Google SecOps now supports the ingestion of Indicators of Compromise (IOCs) from ThreatConnect using the v3 REST API. This updated connector replaces the existing v2-based integration and introduces several enhancements:</p>
 <ul>
@@ -3360,7 +3394,7 @@ For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/
 <p><strong>Understand your Google SecOps billing components</strong></p>
 <p>A new document is available that helps you understand your Google Security Operations billing components. The document provides information about how to track your usage and the related cost.
 For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/onboard/understand-billing">Understand your Google SecOps billing</a>.</p>
-<h3 id="feature_20">Feature</h3>
+<h3 id="feature_22">Feature</h3>
 <p><strong>ThreatConnect IOC V3 Connector</strong></p>
 <p>Google SecOps now supports the ingestion of Indicators of Compromise (IOCs) from ThreatConnect using the v3 REST API. This updated connector replaces the existing v2-based integration and introduces several enhancements:</p>
 <ul>
@@ -3405,21 +3439,21 @@ For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/
 For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/yara-l/transition_spl_yaral">Transition from SPL to YARA-L</a>.</p>
 <hr />
 <h2 id="2025-12-09">2025-12-09</h2>
-<h3 id="feature_21">Feature</h3>
+<h3 id="feature_23">Feature</h3>
 <p><strong>Create new reference lists</strong></p>
 <p>You can still create new reference lists.</p>
 <p>This feature nullifies certain content in the <a href="https://docs.cloud.google.com/chronicle/docs/release-notes#August_19_2025">release note from August 19, 2025</a>, which specified that from October 2025, you would no longer be able to create new reference lists.</p>
 <p><strong>Note:</strong> Because the reference list functionality is being phased out of the Google SecOps platform (see "Reference lists" in <a href="https://docs.cloud.google.com/chronicle/docs/deprecations">Feature deprecations</a>), we recommend that you use <a href="https://docs.cloud.google.com/chronicle/docs/investigation/data-tables">data tables</a> to provide expanded functionality, instead of reference lists.</p>
 <hr />
 <h2 id="2025-12-08">2025-12-08</h2>
-<h3 id="feature_22">Feature</h3>
+<h3 id="feature_24">Feature</h3>
 <p><strong>N OF and OR syntax updates</strong></p>
 <p>You can now use the N OF syntax and the <code>or</code> operator to write flexible and
 conditional logic within the <code>condition</code> section of your query. These features
 let you combine multiple conditions, reducing the overall complexity of your
 query syntax.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/yara-l/multievent-or">Use or in the condition section</a> and <a href="https://docs.cloud.google.com/chronicle/docs/yara-l/multievent-n-of">Use N OF syntax with event variables</a>.</p>
-<h3 id="feature_23">Feature</h3>
+<h3 id="feature_25">Feature</h3>
 <p><strong>N OF and OR syntax updates</strong></p>
 <p>You can now use the N OF syntax and the <code>or</code> operator to write flexible and
 conditional logic within the <code>condition</code> section of your query. These features
@@ -3428,7 +3462,7 @@ query syntax.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/yara-l/multievent-or">Use or in the condition section</a> and <a href="https://docs.cloud.google.com/chronicle/docs/yara-l/multievent-n-of">Use N OF syntax with event variables</a>.</p>
 <hr />
 <h2 id="2025-12-07">2025-12-07</h2>
-<h3 id="feature_24">Feature</h3>
+<h3 id="feature_26">Feature</h3>
 <p><strong>Change views per alert</strong></p>
 <p>The <strong>Alert Overview</strong> page now includes a new option to select a specific view for each alert. If several playbooks have run on an alert, and those playbooks have customized views, you can now select and display any of those customized views for that alert.</p>
 <h3 id="announcement_36">Announcement</h3>
@@ -4080,7 +4114,7 @@ query syntax.</p>
 </ul>
 <hr />
 <h2 id="2025-11-19">2025-11-19</h2>
-<h3 id="feature_25">Feature</h3>
+<h3 id="feature_27">Feature</h3>
 <p><strong>Google Threat Intelligence</strong>: Version 6.0</p>
 <ul>
 <li>
@@ -4160,7 +4194,7 @@ query syntax.</p>
 <h3 id="announcement_38">Announcement</h3>
 <p>Release 6.3.68 is being rolled out to the first phase of regions as listed <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
 <p>This release contains the following changes:</p>
-<h3 id="feature_26">Feature</h3>
+<h3 id="feature_28">Feature</h3>
 <p><strong>Change views per alert</strong></p>
 <p>The <strong>Alert Overview</strong> page now includes a new option to select a specific view for each alert. If several playbooks have run on an alert, and those playbooks have customized views, you can now select and display any of those customized views for that alert.</p>
 <hr />
@@ -4169,7 +4203,7 @@ query syntax.</p>
 <p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#November_09_2025">Release 6.3.67</a> is now available for all regions.</p>
 <hr />
 <h2 id="2025-11-13">2025-11-13</h2>
-<h3 id="feature_27">Feature</h3>
+<h3 id="feature_29">Feature</h3>
 <p><strong>Raw log search enhancements</strong></p>
 <p>Google SecOps now includes enhancements to raw log search to boost usability,
 performance, and data analysis:</p>
@@ -4193,7 +4227,7 @@ performance, and data analysis:</p>
 <li><a href="https://docs.cloud.google.com/chronicle/docs/investigation/search-raw-logs">Use raw log search</a></li>
 <li><a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.legacy/legacySearchRawLogsV2">Method: legacy.legacySearchRawLogsV2</a></li>
 </ul>
-<h3 id="feature_28">Feature</h3>
+<h3 id="feature_30">Feature</h3>
 <p><strong>Raw log search enhancements</strong></p>
 <p>Google SecOps now includes enhancements to raw log search to boost usability,
 performance, and data analysis:</p>
@@ -4267,7 +4301,7 @@ performance, and data analysis:</p>
 <li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zendesk-crm">Collect Zendesk CRM logs</a></li>
 <li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zerofox-platform">Collect ZeroFox Platform logs</a></li>
 </ul>
-<h3 id="feature_29">Feature</h3>
+<h3 id="feature_31">Feature</h3>
 <p><strong>Enhance threat visibility and detection with Emerging Threats</strong></p>
 <p>The new <strong>Emerging Threats</strong> page provides AI-powered threat intelligence to help
 you understand how current threat campaigns might affect your organization.
@@ -4279,7 +4313,7 @@ it uses Gemini to automatically draft new detection rules to accelerate your res
 <p>For more details, see <a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats">Emerging Threats overview</a>,
 <a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-feed">Emerging Threats feed</a>,and
 <a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-detailed-view">Emerging Threats detailed view</a>.</p>
-<h3 id="feature_30">Feature</h3>
+<h3 id="feature_32">Feature</h3>
 <p><strong>Use the Triage Agent to investigate alerts</strong></p>
 <p>You can now use Triage Agent, an AI-powered investigation assistant, to
 analyze alerts in Google SecOps. Triage Agent determines if an
@@ -4337,7 +4371,7 @@ the agent's disposition, a summary of its findings, and a timeline of the analys
 <li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zendesk-crm">Collect Zendesk CRM logs</a></li>
 <li><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zerofox-platform">Collect ZeroFox Platform logs</a></li>
 </ul>
-<h3 id="feature_31">Feature</h3>
+<h3 id="feature_33">Feature</h3>
 <p><strong>Enhance threat visibility and detection with Emerging Threats</strong></p>
 <p>The new <strong>Emerging Threats</strong> page provides AI-powered threat intelligence to help
 you understand how current threat campaigns might affect your organization.
@@ -4349,7 +4383,7 @@ it uses Gemini to automatically draft new detection rules to accelerate your res
 <p>For more details, see <a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats">Emerging Threats overview</a>,
 <a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-feed">Emerging Threats feed</a>,and
 <a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-detailed-view">Emerging Threats detailed view</a>.</p>
-<h3 id="feature_32">Feature</h3>
+<h3 id="feature_34">Feature</h3>
 <p><strong>Use the Triage Agent to investigate alerts</strong></p>
 <p>You can now use Triage Agent, an AI-powered investigation assistant, to
 analyze alerts in Google SecOps. Triage Agent determines if an
@@ -4361,7 +4395,7 @@ the agent's disposition, a summary of its findings, and a timeline of the analys
 <p>For more details, see <a href="https://docs.cloud.google.com/chronicle/docs/secops/triage-agent">Use Triage Agent to investigate alerts</a>.</p>
 <hr />
 <h2 id="2025-11-10">2025-11-10</h2>
-<h3 id="feature_33">Feature</h3>
+<h3 id="feature_35">Feature</h3>
 <p><strong>Nested if</strong></p>
 <p>You can now use <code>if</code> statements in both the <code>outcome</code> and <code>events</code> sections and
 also within the <code>then</code> <code>else</code> clauses of another <code>if</code> statement. This capability
@@ -4369,7 +4403,7 @@ lets you introduce more complicated logic to your query and is supported in
 Rules, Search, and Dashboards.</p>
 <p>For more information, see
 <a href="https://docs.cloud.google.com/chronicle/docs/yara-l/nested-if">Use nested if statements for more complex logic</a>.</p>
-<h3 id="feature_34">Feature</h3>
+<h3 id="feature_36">Feature</h3>
 <p><strong>Nested if</strong></p>
 <p>You can now use <code>if</code> statements in both the <code>outcome</code> and <code>events</code> sections and
 also within the <code>then</code> <code>else</code> clauses of another <code>if</code> statement. This capability
@@ -4406,7 +4440,7 @@ Rules, Search, and Dashboards.</p>
 </ul>
 <hr />
 <h2 id="2025-11-05">2025-11-05</h2>
-<h3 id="feature_35">Feature</h3>
+<h3 id="feature_37">Feature</h3>
 <p><strong>SentinelOneV2</strong>: Version 43.0</p>
 <ul>
 <li>
@@ -4443,7 +4477,7 @@ Rules, Search, and Dashboards.</p>
 <li><strong>Integration</strong>: Updated the integration's action definitions to meet the new
   requirements of the IDE.</li>
 </ul>
-<h3 id="feature_36">Feature</h3>
+<h3 id="feature_38">Feature</h3>
 <p><strong>Palo Alto XDR</strong>: Version 20.0</p>
 <ul>
 <li>
@@ -4492,7 +4526,7 @@ Rules, Search, and Dashboards.</p>
 <li>GCP_THREATINTEL_CUSTOM</li>
 <li>SAP_ETD_CUSTOM</li>
 </ul>
-<h3 id="feature_37">Feature</h3>
+<h3 id="feature_39">Feature</h3>
 <p><strong>Search usability enhancements</strong></p>
 <p>Google SecOps has introduced the following capabilities to improve usability,
 performance, and customization in search results:</p>
@@ -4522,7 +4556,7 @@ performance, and customization in search results:</p>
 <li>GCP_THREATINTEL_CUSTOM</li>
 <li>SAP_ETD_CUSTOM</li>
 </ul>
-<h3 id="feature_38">Feature</h3>
+<h3 id="feature_40">Feature</h3>
 <p><strong>Search usability enhancements</strong></p>
 <p>Google SecOps has introduced the following capabilities to improve usability,
 performance, and customization in search results:</p>
@@ -4544,7 +4578,7 @@ performance, and customization in search results:</p>
 <p>We've upgraded the Chronicle API ingestion methods from alpha to beta. This upgrade signals API stability and functional completeness, unblocking customer and partner adoption for production integrations.</p>
 <p>For more information, see
 <a href="https://cloud.google.com/chronicle/docs/reference/ingestion-methods">Ingestion methods</a>.</p>
-<h3 id="feature_39">Feature</h3>
+<h3 id="feature_41">Feature</h3>
 <p><strong>YARA-L functions</strong></p>
 <p>The following new YARA-L functions are now generally available:</p>
 <ul>
@@ -4561,7 +4595,7 @@ performance, and customization in search results:</p>
 <p>We've upgraded the Chronicle API ingestion methods from alpha to beta. This upgrade signals API stability and functional completeness, unblocking customer and partner adoption for production integrations.</p>
 <p>For more information, see
 <a href="https://cloud.google.com/chronicle/docs/reference/ingestion-methods">Ingestion methods</a>.</p>
-<h3 id="feature_40">Feature</h3>
+<h3 id="feature_42">Feature</h3>
 <p><strong>YARA-L functions</strong></p>
 <p>The following new YARA-L functions are now generally available:</p>
 <ul>
@@ -4666,7 +4700,7 @@ performance, and customization in search results:</p>
 <p><strong>On-Demand Scan</strong></p>
 </li>
 </ul>
-<h3 id="feature_41">Feature</h3>
+<h3 id="feature_43">Feature</h3>
 <p><strong>Improved support for Chrome Enterprise Premium</strong></p>
 <p>This feature is currently in Preview.</p>
 <p>An improved integration for Chrome Enterprise Premium is now available that includes:</p>
@@ -4677,7 +4711,7 @@ performance, and customization in search results:</p>
 <li>Curated dashboards for Chrome Enterprise Premium</li>
 <li>Google Workspace SOAR actions to manage Chrome extension blocklist policies (<a href="https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#block_extension">Block Extension</a> and <a href="https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#delete_extension">Delete Extension</a>)</li>
 </ul>
-<h3 id="feature_42">Feature</h3>
+<h3 id="feature_44">Feature</h3>
 <p><strong>Improved Support for Chrome Enterprise Premium</strong></p>
 <p>This feature is currently in Preview.</p>
 <p>An improved integration for Chrome Enterprise Premium is now available that includes:</p>
@@ -4690,7 +4724,7 @@ performance, and customization in search results:</p>
 </ul>
 <hr />
 <h2 id="2025-10-28">2025-10-28</h2>
-<h3 id="feature_43">Feature</h3>
+<h3 id="feature_45">Feature</h3>
 <p><strong>Risk-based alerting with entity-only rules</strong></p>
 <p>With the new <code>ENTITY_RISK_CHANGE</code> UDM event type, you can now write YARA-L
 detection rules that trigger independently of ingested events. This capability
@@ -4699,7 +4733,7 @@ decreasing the time required for Google Security Operations to detect and alert
 on shifting entity risk levels.</p>
 <p>For more information, see
 <a href="https://docs.cloud.google.com/chronicle/docs/detection/risk-based-alerting">Risk-based alerting with entity-only rules</a>.</p>
-<h3 id="feature_44">Feature</h3>
+<h3 id="feature_46">Feature</h3>
 <p><strong>Risk-based alerting with entity-only rules</strong></p>
 <p>With the new <code>ENTITY_RISK_CHANGE</code> UDM event type, you can now write YARA-L
 detection rules that trigger independently of ingested events. This capability
@@ -4732,10 +4766,10 @@ The following rules have been added to the rulepack:</p>
 </ul>
 <hr />
 <h2 id="2025-10-26">2025-10-26</h2>
-<h3 id="feature_45">Feature</h3>
+<h3 id="feature_47">Feature</h3>
 <p><strong>Delete high-load SOAR environments</strong></p>
 <p>You can now easily delete environments with heavy loads directly from the platform.</p>
-<h3 id="feature_46">Feature</h3>
+<h3 id="feature_48">Feature</h3>
 <p><strong>Delete high-load environments</strong></p>
 <p>You can now easily delete environments with heavy loads directly from the platform.</p>
 <h3 id="announcement_50">Announcement</h3>
@@ -4766,7 +4800,7 @@ aggregates a wealth of threat intelligence data.</p>
 <p><strong>List Host</strong></p>
 </li>
 </ul>
-<h3 id="feature_47">Feature</h3>
+<h3 id="feature_49">Feature</h3>
 <p><strong>SentinelOneV2</strong>: Version 42.0</p>
 <ul>
 <li>
@@ -4906,7 +4940,7 @@ aggregates a wealth of threat intelligence data.</p>
 <li><strong>Enrich Hash</strong></li>
 <li><strong>Enrich CVE</strong></li>
 </ul>
-<h3 id="feature_48">Feature</h3>
+<h3 id="feature_50">Feature</h3>
 <p><strong>CrowdStrike Falcon</strong>: Version 66.0</p>
 <ul>
 <li>
@@ -4973,19 +5007,19 @@ aggregates a wealth of threat intelligence data.</p>
 </ul>
 <hr />
 <h2 id="2025-10-08">2025-10-08</h2>
-<h3 id="feature_49">Feature</h3>
+<h3 id="feature_51">Feature</h3>
 <p><strong>Multi-stage queries in YARA-L</strong></p>
 <p>This feature is currently in Preview.</p>
 <p>Multi-stage queries in YARA-L are now available as a Preview feature. Multi-stage queries in YARA-L let you feed the output of one query stage directly into the input of a subsequent stage. This process gives you greater control over data transformation than single, monolithic query. They are supported in both <strong>Dashboards</strong> and <strong>Search</strong>. Multi-stage queries can contain between 1 and 4 named stages, in addition to a root stage.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/multi-stage-yaral">Create multi-stage queries in YARA-L</a>.</p>
-<h3 id="feature_50">Feature</h3>
+<h3 id="feature_52">Feature</h3>
 <p><strong>Multi-stage queries in YARA-L</strong></p>
 <p>This feature is currently in Preview.</p>
 <p>Multi-stage queries in YARA-L are now available as a Preview feature. Multi-stage queries in YARA-L let you feed the output of one query stage directly into the input of a subsequent stage. This process gives you greater control over data transformation than single, monolithic query. They are supported in both <strong>Dashboards</strong> and <strong>Search</strong>. Multi-stage queries can contain between 1 and 4 named stages, in addition to a root stage.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/multi-stage-yaral">Create multi-stage queries in YARA-L</a>.</p>
 <hr />
 <h2 id="2025-10-07">2025-10-07</h2>
-<h3 id="feature_51">Feature</h3>
+<h3 id="feature_53">Feature</h3>
 <p><strong>Manage parser versions</strong></p>
 <p>This feature is in preview.</p>
 <p>You now have granular control over how new pre-built parser versions are deployed within your environment.</p>
@@ -4997,7 +5031,7 @@ aggregates a wealth of threat intelligence data.</p>
 <li>Revert to a previously deployed, stable parser version.</li>
 </ul>
 <p>For details, see <a href="https://docs.cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage-parser-versions">Manage prebuilt parser versions</a>.</p>
-<h3 id="feature_52">Feature</h3>
+<h3 id="feature_54">Feature</h3>
 <p><strong>Manage parser versions</strong></p>
 <p>This feature is in preview.</p>
 <p>You now have granular control over how new pre-built parser versions are deployed within your environment.</p>
@@ -5017,7 +5051,7 @@ aggregates a wealth of threat intelligence data.</p>
 <p>The recent update to the pre-built Azure AD Organizational Context (<code>AZURE_AD_CONTEXT</code>) parser has been rolled back. This action was necessary to resolve a performance degradation issue that was introduced in the latest parser version. For more information about the exact changes and rollback timeline, see the <a href="https://docs.cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage_parser_updates">change log for the pre-built parser</a>.</p>
 <hr />
 <h2 id="2025-10-06">2025-10-06</h2>
-<h3 id="feature_53">Feature</h3>
+<h3 id="feature_55">Feature</h3>
 <p><strong>Advanced BigQuery Export</strong></p>
 <p>This feature is in preview.</p>
 <p>This feature is available for Google SecOps Enterprise Plus customers only.</p>
@@ -5118,13 +5152,13 @@ aggregates a wealth of threat intelligence data.</p>
 <a href="https://docs.cloud.google.com/chronicle/docs/secops/cmek_for_secops">CMEK for Google SecOps</a>.</p>
 <hr />
 <h2 id="2025-09-30">2025-09-30</h2>
-<h3 id="feature_54">Feature</h3>
+<h3 id="feature_56">Feature</h3>
 <p><strong>Customize Events table columns in Search</strong></p>
 <p>You can now specify which columns appear in the <strong>Events</strong> table on the
 <strong>Search</strong> page and in <strong>tables</strong> within your <strong>dashboard widgets</strong>. Use the <code>select</code>
 and <code>unselect</code> keywords to define the displayed columns.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/select-unselect">Control columns using select and unselect keywords</a>.</p>
-<h3 id="feature_55">Feature</h3>
+<h3 id="feature_57">Feature</h3>
 <p><strong>Customize Events table columns in Search</strong></p>
 <p>You can now specify which columns appear in the <strong>Events</strong> table on the
 <strong>Search</strong> page and in <strong>tables</strong> within your <strong>dashboard widgets</strong>. Use the <code>select</code>
@@ -5184,11 +5218,11 @@ client permissions before September 30, 2025.
 Follow the instructions in <a href="https://docs.cloud.google.com/chronicle/docs/detection/migrate-detects-api-to-alerts-api">Migrate from CrowdStrike Detects API to Alerts API</a>
 to migrate your configuration to use the Alerts API.</p>
 <p>For more details, see <a href="https://supportportal.crowdstrike.com/s/article/Tech-Alert-30-Day-Notice-Planned-Decommission-Announcement-of-the-DetectionSummaryEvent-and-detects-API">CrowdStrike’s official decommissioning notice</a>.</p>
-<h3 id="feature_56">Feature</h3>
+<h3 id="feature_58">Feature</h3>
 <p><strong>Podman support for Remote Agents</strong></p>
 <p>You can now install a Remote Agent using Podman. This new functionality provides a streamlined deployment workflow—a lightweight alternative to existing installation methods.
 For details, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/working-with-remote-agents/deploy-agent-with-podman">Deploy an agent with Podman</a>.</p>
-<h3 id="feature_57">Feature</h3>
+<h3 id="feature_59">Feature</h3>
 <p><strong>Debian support for remote agents</strong></p>
 <p>You can now install a Remote Agent using Debian. This new functionality provides a streamlined deployment workflow—an alternative to existing installation methods.
 For details, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/working-with-remote-agents/create-agent-with-installer-on-debian">Deploy an agent with Debian</a>.</p>
@@ -5203,11 +5237,11 @@ For details, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/work
 <h3 id="announcement_66">Announcement</h3>
 <p>Release 6.3.62 is being rolled out to the first phase of regions, as outlined in our <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">Google SecOps release plan</a>.</p>
 <p>This release contains the following changes:</p>
-<h3 id="feature_58">Feature</h3>
+<h3 id="feature_60">Feature</h3>
 <p><strong>Podman support for Remote Agents</strong></p>
 <p>You can now install a Remote Agent using Podman. This new functionality provides a streamlined deployment workflow—a lightweight alternative to existing installation methods.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/working-with-remote-agents/deploy-agent-with-podman">Deploy an agent with Podman</a>.</p>
-<h3 id="feature_59">Feature</h3>
+<h3 id="feature_61">Feature</h3>
 <p><strong>Deploy an agent with Debian</strong></p>
 <p>You can now install a Remote Agent using Debian. This new functionality provides a streamlined deployment workflow—an alternative to existing installation methods.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/working-with-remote-agents/create-agent-with-installer-on-debian">Deploy an agent with Debian</a>.</p>
@@ -5221,14 +5255,14 @@ For details, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/work
 <p>The maximum allowed size for a Publisher's Connector Package is now limited to 25 MB.</p>
 <hr />
 <h2 id="2025-09-27">2025-09-27</h2>
-<h3 id="feature_60">Feature</h3>
+<h3 id="feature_62">Feature</h3>
 <p><strong>Use joins in YARA-L Search queries</strong></p>
 <p>These changes are currently in Preview.</p>
 <p>You can now use joins in statistical Search queries that include a <code>match</code> section
 to correlate data from multiple sources. This feature lets you link related
 sources directly within a single query.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/search-joins">Use joins in Search</a>.</p>
-<h3 id="feature_61">Feature</h3>
+<h3 id="feature_63">Feature</h3>
 <p><strong>Use joins in YARA-L Search queries</strong></p>
 <p>These changes are currently in Preview.</p>
 <p>You can now use joins in statistical Search queries that include a <code>match</code> section
@@ -5239,9 +5273,9 @@ sources directly within a single query.</p>
 <p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#September_16_2025">Release 6.3.61</a> is now available for all regions.</p>
 <hr />
 <h2 id="2025-09-25">2025-09-25</h2>
-<h3 id="feature_62">Feature</h3>
+<h3 id="feature_64">Feature</h3>
 <p>New <strong>Apache Kafka</strong> integration</p>
-<h3 id="feature_63">Feature</h3>
+<h3 id="feature_65">Feature</h3>
 <p><strong>Microsoft Azure Sentinel</strong>: Version 57.0</p>
 <ul>
 <li>
@@ -5316,7 +5350,7 @@ sources directly within a single query.</p>
 <p>Google SecOps is migrating the transport layer for third-party API feeds to a new platform to improve performance and reliability. This migration will be completed in phases and is expected to finish by the end of October 2025. The migration should not impact any existing or new, third-party API feeds. If you experience any unexpected issues with your feeds during the migration, contact your Google SecOps representative.</p>
 <hr />
 <h2 id="2025-09-17">2025-09-17</h2>
-<h3 id="feature_64">Feature</h3>
+<h3 id="feature_66">Feature</h3>
 <p><strong>SentinelOneV2</strong>: Version 41.0</p>
 <ul>
 <li>
@@ -5338,7 +5372,7 @@ sources directly within a single query.</p>
 <p><strong>Update Alert</strong></p>
 </li>
 </ul>
-<h3 id="feature_65">Feature</h3>
+<h3 id="feature_67">Feature</h3>
 <p><strong>Google Threat Intelligence</strong>: Version 4.0</p>
 <ul>
 <li>
@@ -5348,7 +5382,7 @@ sources directly within a single query.</p>
 <p><strong>Set DTM Alert Analysis</strong></p>
 </li>
 </ul>
-<h3 id="feature_66">Feature</h3>
+<h3 id="feature_68">Feature</h3>
 <p><strong>Palo Alto Cortex XDR</strong>: Version 18.0</p>
 <ul>
 <li>
@@ -5449,18 +5483,18 @@ sources directly within a single query.</p>
 <p><a href="https://cloud.google.com/chronicle/docs/soar/release-notes#September_07_2025">Release 6.3.60</a> is now available for all regions.</p>
 <hr />
 <h2 id="2025-09-11">2025-09-11</h2>
-<h3 id="feature_67">Feature</h3>
+<h3 id="feature_69">Feature</h3>
 <p><strong>SecOps Labs</strong></p>
 <p>This feature is in preview.</p>
 <p>You can now configure and run Google SecOps Gemini and other intelligence <em>experiments</em> without disrupting your existing production systems—and benefit from their output. The experiments comply with the Role-Based Access Control (RBAC) configuration of your environment, and they have streamlined configurations with clear actionable results and output.</p>
 <p>For details, see <a href="https://cloud.google.com/chronicle/docs/secops/google-secops-labs">Use Gemini and other experiments in Google SecOps</a>.</p>
 <hr />
 <h2 id="2025-09-10">2025-09-10</h2>
-<h3 id="feature_68">Feature</h3>
+<h3 id="feature_70">Feature</h3>
 <p><strong>View data retention start date</strong></p>
 <p>You can now view the start date for your account's data retention period. A new, read-only page, <strong>Data Retention</strong>, is available under <strong>SIEM Settings</strong>. This page also shows the start date for your Google SecOps account's data retention period.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/about/data-retention">View data retention in your Google SecOps account</a>.</p>
-<h3 id="feature_69">Feature</h3>
+<h3 id="feature_71">Feature</h3>
 <p><strong>View data retention start date</strong></p>
 <p>You can now view the start date for your account's data retention period. A new, read-only page, <strong>Data Retention</strong>, is available under <strong>SIEM Settings</strong>. This page also shows the start date for your Google SecOps account's data retention period.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/about/data-retention">View data retention in your Google SecOps account</a>.</p>
@@ -5536,22 +5570,22 @@ sources directly within a single query.</p>
 <a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/zoom-operations">Collect Zoom operation logs</a></p>
 <hr />
 <h2 id="2025-09-07">2025-09-07</h2>
-<h3 id="feature_70">Feature</h3>
+<h3 id="feature_72">Feature</h3>
 <p><strong>Advanced job scheduling</strong></p>
 <p>The job scheduling functionality has been enhanced with advanced options. This functionality provides more precise control and flexible, calendar-like scheduling for your scripts.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/soar/respond/jobs-scheduler/writing-jobs#advanced-scheduling">Configure a new job with advanced scheduling</a>.</p>
-<h3 id="feature_71">Feature</h3>
+<h3 id="feature_73">Feature</h3>
 <p><strong>Use custom fields in the Close Case dialog</strong></p>
 <p>Administrators can now add custom fields to the <strong>Close Case</strong> dialog. This new functionality provides a more streamlined workflow and replaces the <strong>Dynamic Fields</strong> feature.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/custom-fields-in-case-closure">Use custom fields in the Close Case dialog</a>.</p>
 <h3 id="announcement_75">Announcement</h3>
 <p>Release 6.3.61 is being rolled out to the first phase of regions, as outlined in our <a href="https://cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">Google SecOps release plan</a>.</p>
 <p>This release contains the following features:</p>
-<h3 id="feature_72">Feature</h3>
+<h3 id="feature_74">Feature</h3>
 <p><strong>Advanced job scheduling</strong></p>
 <p>The job scheduling functionality has been enhanced with advanced options. This functionality provides more precise control and flexible, calendar-like scheduling for your scripts.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/soar/respond/jobs-scheduler/writing-jobs#advanced-scheduling">Configure a new job with advanced scheduling</a>.</p>
-<h3 id="feature_73">Feature</h3>
+<h3 id="feature_75">Feature</h3>
 <p><strong>Use custom fields in the Close Case dialog</strong></p>
 <p>Administrators can now add custom fields to the <strong>Close Case</strong> dialog. This new functionality provides a more streamlined workflow and replaces the <strong>Dynamic Fields</strong> feature.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/custom-fields-in-case-closure">Use custom fields in the Close Case dialog</a>.</p>
@@ -5670,7 +5704,7 @@ sources directly within a single query.</p>
 <p>To learn more, a companion blog post will be published on the <a href="https://security.googlecloudcommunity.com/">Google Security Cloud Community</a> on September 9, 2025.</p>
 <hr />
 <h2 id="2025-08-27">2025-08-27</h2>
-<h3 id="feature_74">Feature</h3>
+<h3 id="feature_76">Feature</h3>
 <p><strong>Google Workspace</strong>: Version 20.0</p>
 <ul>
 <li>
@@ -5963,7 +5997,7 @@ sources directly within a single query.</p>
 </ul>
 <hr />
 <h2 id="2025-08-21">2025-08-21</h2>
-<h3 id="feature_75">Feature</h3>
+<h3 id="feature_77">Feature</h3>
 <p><a href="https://cloud.google.com/chronicle/docs/detection/use-curated-detections">Enhanced curated detections</a> has been enhanced with composite detection content for Mandiant Hunt Cloud Classification, including AWS, GCP, and Azure. This rule pack is available for Mandiant Threat Defense (MTD) customers with a Google Security Operations Enterprise or Enterprise Plus license.</p>
 <hr />
 <h2 id="2025-08-20">2025-08-20</h2>
@@ -5979,7 +6013,7 @@ sources directly within a single query.</p>
 <li>Multiple Dangerous Download Events by same user in Chrome Management</li>
 <li>Url Event to Newly Created Domain in Chrome Management</li>
 </ul>
-<h3 id="feature_76">Feature</h3>
+<h3 id="feature_78">Feature</h3>
 <p><strong>Composite detections are now generally available</strong></p>
 <p>The <a href="https://cloud.google.com/chronicle/docs/secops/release-notes#April_23_2025">composite detections</a> feature is now in General Availability. Composite detections lets you link multiple YARA-L rules to detect complex, multistage threats. This capability enhances detection by correlating alerts that individual rules might not detect.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/detection/composite-detections">Overview of composite detections</a>.</p>
@@ -6038,7 +6072,7 @@ sources directly within a single query.</p>
 <p>Data RBAC now includes a self-service option for direct enablement. This makes the initial onboarding process faster and simpler. For details, see <a href="https://cloud.google.com/chronicle/docs/administration/configure-datarbac-users">Configure data RBAC for users</a>.</p>
 <hr />
 <h2 id="2025-08-10">2025-08-10</h2>
-<h3 id="feature_77">Feature</h3>
+<h3 id="feature_79">Feature</h3>
 <p><strong>Updated permissions for accessing product-centric feeds</strong></p>
 <p>If you have assigned <strong>Custom IAM Roles</strong>, you can now grant access to the product-centric feeds by adding the following permissions to the role:</p>
 <ul>
@@ -6222,7 +6256,7 @@ sources directly within a single query.</p>
 <p>For a list of supported log types and details about default parser changes, see <a href="https://cloud.google.com/chronicle/docs/ingestion/parser-list/supported-default-parsers">Supported log types and default parsers</a>.</p>
 <hr />
 <h2 id="2025-08-05">2025-08-05</h2>
-<h3 id="feature_78">Feature</h3>
+<h3 id="feature_80">Feature</h3>
 <p><strong>New YARA-L features</strong></p>
 <p>The following capabilities have been added to YARA-L 2.0 to enhance search precision, data analysis, and investigative workflows:</p>
 <ul>
@@ -6273,17 +6307,17 @@ sources directly within a single query.</p>
 <p>Password Breach Event By Admin User</p>
 <p>Phishing Navigation Event Containing Suspicious Parameters In Chrome Management</p>
 <p>Chrome Password Event on Newly Observed Domain in Environment</p>
-<h3 id="feature_79">Feature</h3>
+<h3 id="feature_81">Feature</h3>
 <p><a href="https://cloud.google.com/chronicle/docs/event-processing/auto-extraction">Auto Extraction</a> supports XML formatted logs in addition to JSON formatted logs. This enhancement will be available starting this week.</p>
 <hr />
 <h2 id="2025-07-22">2025-07-22</h2>
-<h3 id="feature_80">Feature</h3>
+<h3 id="feature_82">Feature</h3>
 <p><strong>Silent Host Monitoring</strong></p>
 <p>New configuration options are now available for Silent Host Monitoring. You can now define detection rule-based Silent Host Monitoring in SecOps using UDM fields or labels, configurable within a specified time window.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/ingestion/silent-host-monitoring">Silent host monitoring</a>.</p>
 <hr />
 <h2 id="2025-07-21">2025-07-21</h2>
-<h3 id="feature_81">Feature</h3>
+<h3 id="feature_83">Feature</h3>
 <p><strong>New parser documentation now available</strong></p>
 <p>New parser documentation is available to help you ingest and normalize logs from the following sources:</p>
 <p><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/tomcat">Collect Apache Tomcat logs</a></p>
@@ -6316,7 +6350,7 @@ sources directly within a single query.</p>
 <p><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/trellix-ips">Collect Trellix IPS logs</a></p>
 <hr />
 <h2 id="2025-07-07">2025-07-07</h2>
-<h3 id="feature_82">Feature</h3>
+<h3 id="feature_84">Feature</h3>
 <p><strong>Dashboards for enhanced visualizations and threat hunting</strong></p>
 <p>You can now use the Google SecOps Dashboards to enhance data visualization, investigations, and threat hunting.</p>
 <p>Key capabilities include:</p>
@@ -6545,16 +6579,16 @@ sources directly within a single query.</p>
 <p><a href="https://cloud.google.com/chronicle/docs/ingestion/default-parsers/trend-micro-vision-one-workbench">Collect Trend Micro Vision One Workbench logs</a></p>
 <hr />
 <h2 id="2025-06-19">2025-06-19</h2>
-<h3 id="feature_83">Feature</h3>
+<h3 id="feature_85">Feature</h3>
 <p><strong>Product Centric Feed Management</strong></p>
 <p>This feature is currently in Preview.</p>
 <p>You can now configure multiple log-type feeds for the same product type on a single page. This new product-led experience simplifies the feed configuration flow and provides additional in-product guidance. For more information, see <a href="https://cloud.google.com/chronicle/docs/ingestion/ingestion-entities/configure-multiple-feeds">Configure feeds by product</a>.</p>
 <hr />
 <h2 id="2025-06-18">2025-06-18</h2>
-<h3 id="feature_84">Feature</h3>
+<h3 id="feature_86">Feature</h3>
 <p>You can now remove existing UDM field mappings by using parser extensions in Google SecOps.</p>
 <p>For more information, see <a href="https://cloud.google.com/chronicle/docs/event-processing/using-parser-extensions#remove_udm_field_mappings_using_parser_extensions">Remove UDM field mappings using parser extensions</a> and <a href="https://cloud.google.com/chronicle/docs/event-processing/parser-extension-examples#code_snippet_remove_existing_mappings">Code snippet - Remove existing mappings</a></p>
-<h3 id="feature_85">Feature</h3>
+<h3 id="feature_87">Feature</h3>
 <p>New data ingestion and health dashboard widgets are now available.</p>
 <ul>
 <li><strong>Silent host monitoring</strong>: displays hosts that were active in the last 7 days, but haven't reported recently, including a count of days since their last ingestion.</li>
@@ -6744,6 +6778,9 @@ sources directly within a single query.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-secops-siem">Google SecOps SIEM</a></li>
+          <li class="nav-item">
+            <a href="#2026-02-12" class="nav-link">2026-02-12</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-02-09" class="nav-link">2026-02-09</a>
           </li>

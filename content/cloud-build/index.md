@@ -1,5 +1,14 @@
 # Cloud Build
 
+## 2026-02-12
+
+### Change
+
+Cloud Build is now available in the `asia-southeast3` region.
+
+For more information, see [Cloud Build locations](https://docs.cloud.google.com/build/docs/locations).
+
+---
 ## 2026-01-20
 
 ### Change

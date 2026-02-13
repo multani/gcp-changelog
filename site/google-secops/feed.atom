@@ -2,9 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps</subtitle>
-  <updated>2026-02-09T00:00:00+00:00</updated>
+  <updated>2026-02-12T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-02-12:feature:0</id>
+    <published>2026-02-12T00:00:00+00:00</published>
+    <updated>2026-02-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Advanced Joins in Search</strong></p>
+<p>Google SecOps now supports expanded capabilities for correlating data across
+multiple sources. These join operations are also supported in multistage queries.</p>
+<p><strong>Joins without a <code>match</code> section</strong>: You can now use join operations to correlate
+and combine data from multiple sources based on common field values without
+requiring a <code>match</code> section (unlike statistical joins). Results are displayed in a
+Joins table, which you can download as a CSV, or for event-to-event joins,
+exported to a datatable for further analysis.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/joins-without-match-section">Implement joins without a match section</a>.</p>
+<p><strong>Outer joins</strong>: Search now supports left and right outer joins. Unlike standard
+inner joins, these operations let you retrieve all records from a primary
+data source even if no matching entry exists in the secondary source (unmatched
+fields are returned as <code>null</code>). This action lets you correlate data
+without losing unmatched events.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/outer-joins">Correlate data with outer joins</a>.</p>]]></content>
+    <summary>Search now offers advanced join capabilities, including joins without a `match` section and outer joins. This allows for more flexible and comprehensive data correlation across multiple sources, ensuring no unmatched events are lost during analysis.</summary>
+    <title>Feature: Expanded Data Correlation in Search</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

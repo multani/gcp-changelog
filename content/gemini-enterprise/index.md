@@ -1,5 +1,22 @@
 # Gemini Enterprise
 
+## 2026-02-12
+
+### Feature
+
+**Gemini Enterprise mobile app: Standard and Plus editions (Private GA)**
+
+The Gemini Enterprise mobile app is available in Private GA. The mobile app lets
+users interact with organizational data, engage with agents, and execute tasks
+seamlessly using their mobile device.
+
+To ensure that you have the latest features, security, and best experience, you
+may occasionally be required to update your Gemini Enterprise mobile app, or
+install a new version. Some updates may be necessary to continue using the app.
+
+Contact your account manager to access the mobile app.
+
+---
 ## 2026-02-09
 
 ### Feature

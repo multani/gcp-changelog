@@ -1,5 +1,101 @@
 # Container Optimized OS
 
+## 2026-02-10
+
+### Fixed
+
+Upgraded sys-libs/libcap to v2.77.
+
+### Security
+
+Updated dev-libs/libxml2 to version 2.14.6. This resolves CVE-2025-6021.
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20251014.00.
+
+### Change
+
+
+
+### cos-113-18244-582-2
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.161](https://cos.googlesource.com/third_party/kernel/+/da4d584d21d831be3c46b5c3d188cae522848c2e ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.582.2/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)
+
+### Fixed
+
+Upgraded net-libs/libtirpc to v1.3.7.
+
+### Fixed
+
+Upgraded app-containers/docker-credential-helpers to v0.9.4.
+
+### Change
+
+
+
+### cos-125-19216-104-142
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/39e827d44c138b0c9c713f2c326baa2727c1f91a ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.104.142/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Added support for NVIDIA driver v535.288.01, v570.211.01 and v580.126.09.
+
+### Feature
+
+Enabled TC Traffic Police as a module.
+
+### Security
+
+Fixed CVE-2026-23023 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71183 in the Linux kernel.
+
+### Fixed
+
+Fixed TCPX performance issues.
+
+### Security
+
+Fixed CVE-2026-23038 in the Linux kernel.
+
+### Feature
+
+Added support for NVIDIA driver v535.288.01, v570.211.01 and v580.126.09.
+
+### Security
+
+Fixed CVE-2024-57982 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2024-49968 in the Linux kernel.
+
+### Change
+
+
+
+### cos-121-18867-294-116
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.113](https://cos.googlesource.com/third_party/kernel/+/46f5bcaacd71195ddc14cf9fd99c7908891efae7 ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.294.116/lakitu/gpu_driver_versions.textproto) |
+
+---
 ## 2026-02-03
 
 ### Change

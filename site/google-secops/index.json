@@ -1,6 +1,16 @@
 {
   "name": "Google SecOps",
   "entries": {
+    "2026-02-12": [
+      {
+        "kind": "Feature",
+        "content": "**Advanced Joins in Search**\n\nGoogle SecOps now supports expanded capabilities for correlating data across\nmultiple sources. These join operations are also supported in multistage queries.\n\n**Joins without a `match` section**: You can now use join operations to correlate\nand combine data from multiple sources based on common field values without\nrequiring a `match` section (unlike statistical joins). Results are displayed in a\nJoins table, which you can download as a CSV, or for event-to-event joins,\nexported to a datatable for further analysis.\n\nFor more information, see [Implement joins without a match section](https://docs.cloud.google.com/chronicle/docs/investigation/joins-without-match-section).\n\n**Outer joins**: Search now supports left and right outer joins. Unlike standard\ninner joins, these operations let you retrieve all records from a primary\ndata source even if no matching entry exists in the secondary source (unmatched\nfields are returned as `null`). This action lets you correlate data\nwithout losing unmatched events.\n\nFor more information, see [Correlate data with outer joins](https://docs.cloud.google.com/chronicle/docs/investigation/outer-joins).",
+        "summary": {
+          "title": "Expanded Data Correlation in Search",
+          "summary": "Search now offers advanced join capabilities, including joins without a `match` section and outer joins. This allows for more flexible and comprehensive data correlation across multiple sources, ensuring no unmatched events are lost during analysis."
+        }
+      }
+    ],
     "2026-02-09": [
       {
         "kind": "Announcement",

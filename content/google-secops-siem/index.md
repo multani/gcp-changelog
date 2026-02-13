@@ -1,5 +1,54 @@
 # Google SecOps SIEM
 
+## 2026-02-12
+
+### Feature
+
+**Advanced Joins in Search**
+
+Google SecOps now supports expanded capabilities for correlating data across
+multiple sources. These join operations are also supported in multistage queries.
+
+**Joins without a `match` section**: You can now use join operations to correlate
+and combine data from multiple sources based on common field values without
+requiring a `match` section (unlike statistical joins). Results are displayed in a
+Joins table, which you can download as a CSV, or for event-to-event joins,
+exported to a datatable for further analysis.
+
+For more information, see [Implement joins without a match section](https://docs.cloud.google.com/chronicle/docs/investigation/joins-without-match-section).
+
+**Outer joins**: Search now supports left and right outer joins. Unlike standard
+inner joins, these operations let you retrieve all records from a primary
+data source even if no matching entry exists in the secondary source (unmatched
+fields are returned as `null`). This action lets you correlate data
+without losing unmatched events.
+
+For more information, see [Correlate data with outer joins](https://docs.cloud.google.com/chronicle/docs/investigation/outer-joins).
+
+### Feature
+
+**Advanced Joins in Search**
+
+Google SecOps now supports expanded capabilities for correlating data across
+multiple sources. These join operations are also supported in multistage queries.
+
+**Joins without a `match` section**: You can now use join operations to correlate
+and combine data from multiple sources based on common field values without
+requiring a `match` section (unlike statistical joins). Results are displayed in a
+Joins table, which you can download as a CSV, or for event-to-event joins,
+exported to a datatable for further analysis.
+
+For more information, see [Implement joins without a match section](https://docs.cloud.google.com/chronicle/docs/investigation/joins-without-match-section).
+
+**Outer joins**: Search now supports left and right outer joins. Unlike standard
+inner joins, these operations let you retrieve all records from a primary
+data source even if no matching entry exists in the secondary source (unmatched
+fields are returned as `null`). This action lets you correlate data
+without losing unmatched events.
+
+For more information, see [Correlate data with outer joins](https://docs.cloud.google.com/chronicle/docs/investigation/outer-joins).
+
+---
 ## 2026-02-09
 
 ### Announcement

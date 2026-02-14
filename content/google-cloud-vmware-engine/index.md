@@ -1,5 +1,15 @@
 # Google Cloud VMware Engine
 
+## 2026-02-13
+
+### Announcement
+
+The VMware Engine [`ve2` node type](https://docs.cloud.google.com/vmware-engine/docs/concepts/node-types) is now available in the following
+additional region:
+
+* Osaka, Japan, Asia Pacific (`asia-northeast2`)
+
+---
 ## 2026-01-29
 
 ### Announcement

@@ -1,5 +1,30 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-02-13
+
+### Feature
+
+The following feature was added in 1.34.100-gke.93:
+
+The `spec.taints` field in the `NodePoolClaim` resource is mutable. You can
+add or remove taints on existing node pools without recreating the
+`NodePoolClaim`. You can use this field to manage GPU nodes.
+
+### Announcement
+
+Google Distributed Cloud (software only) for bare metal 1.34.100-gke.93 is now available for
+download. To upgrade, see Upgrade clusters. Google Distributed Cloud for bare metal
+1.34.100-gke.93 runs on Kubernetes v1.34.1-gke.4700.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release of Google Distributed Cloud for bare metal.
+
+---
 ## 2026-02-05
 
 ### Announcement

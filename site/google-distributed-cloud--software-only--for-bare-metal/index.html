@@ -2316,8 +2316,25 @@
 
 
 <h1 id="google-distributed-cloud-software-only-for-bare-metal">Google Distributed Cloud (software only) for bare metal</h1>
-<h2 id="2026-02-05">2026-02-05</h2>
+<h2 id="2026-02-13">2026-02-13</h2>
+<h3 id="feature">Feature</h3>
+<p>The following feature was added in 1.34.100-gke.93:</p>
+<p>The <code>spec.taints</code> field in the <code>NodePoolClaim</code> resource is mutable. You can
+add or remove taints on existing node pools without recreating the
+<code>NodePoolClaim</code>. You can use this field to manage GPU nodes.</p>
 <h3 id="announcement">Announcement</h3>
+<p>Google Distributed Cloud (software only) for bare metal 1.34.100-gke.93 is now available for
+download. To upgrade, see Upgrade clusters. Google Distributed Cloud for bare metal
+1.34.100-gke.93 runs on Kubernetes v1.34.1-gke.4700.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.</p>
+<p>If you use a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release of Google Distributed Cloud for bare metal.</p>
+<hr />
+<h2 id="2026-02-05">2026-02-05</h2>
+<h3 id="announcement_1">Announcement</h3>
 <p>Google Distributed Cloud (software only) for bare metal 1.32.800-gke.126 is now
 available for download. To upgrade, see <a href="how-to/upgrade">Upgrade clusters</a>.
 Google Distributed Cloud for bare metal 1.32.800-gke.126 runs on Kubernetes
@@ -2330,7 +2347,7 @@ storage partners document to make sure the storage vendor has already passed
 the qualification for this release of Google Distributed Cloud for bare metal.</p>
 <hr />
 <h2 id="2026-02-04">2026-02-04</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p>Google Distributed Cloud (software only) for bare metal 1.33.400-gke.113 is now
 available for download. To upgrade, see <a href="how-to/upgrade">Upgrade clusters</a>. Google Distributed Cloud for
 bare metal 1.33.400-gke.113 runs on Kubernetes v1.33.5-gke.1900.</p>
@@ -2358,7 +2375,7 @@ support for these features has also been added to the GKE On-Prem API, so you
 can specify these features with clients like <a href="https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/gkeonprem_bare_metal_admin_cluster">Terraform</a>.</p>
 <hr />
 <h2 id="2026-01-08">2026-01-08</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.31.1200-gke.60 is now available for
 <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>. To
 upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade
@@ -2375,7 +2392,7 @@ to make sure the storage vendor has already passed the qualification for this
 release of Distributed Cloud for bare metal.</p>
 <hr />
 <h2 id="2025-12-11">2025-12-11</h2>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.34.0-gke.566 is now available for
 <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>. To
 upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade
@@ -2390,7 +2407,7 @@ the Google Cloud console, the gcloud CLI, and Terraform.</p>
 partners</a> document
 to make sure the storage vendor has already passed the qualification for this
 release of Distributed Cloud for bare metal.</p>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_1">Feature</h3>
 <p>The following features were added in 1.34.0-gke.566:</p>
 <ul>
 <li><strong>Preview</strong>: Vertical Pod autoscaling can now be configured to use your
@@ -2471,7 +2488,7 @@ in the Troubleshooting section.</p>
 <li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">Vulnerability
   fixes</a>.</li>
 </ul>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.33.300-gke.60 is now available for
 <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>. To
 upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade
@@ -2499,7 +2516,7 @@ in the Troubleshooting section.</p>
 <li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">Vulnerability
   fixes</a>.</li>
 </ul>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_6">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.32.700-gke.64 is now available for
 <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>.
 To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade
@@ -2516,7 +2533,7 @@ document to make sure the storage vendor has already passed the qualification
 for this release of Google Distributed Cloud for bare metal.</p>
 <hr />
 <h2 id="2025-11-12">2025-11-12</h2>
-<h3 id="announcement_6">Announcement</h3>
+<h3 id="announcement_7">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.33.200-gke.70 is now available for
 <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>. To
 upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade
@@ -2558,7 +2575,7 @@ in the Troubleshooting section.</p>
 for bare metal known
 issues</a>
 in the Troubleshooting section.</p>
-<h3 id="announcement_7">Announcement</h3>
+<h3 id="announcement_8">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.31.1100-gke.40 is now available for
 <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>. To
 upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade
@@ -2587,7 +2604,7 @@ release of Distributed Cloud for bare metal.</p>
 bare metal known
 issues</a>
 in the Troubleshooting section.</p>
-<h3 id="announcement_8">Announcement</h3>
+<h3 id="announcement_9">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.32.600-gke.53 is now available for
 <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>.
 To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade
@@ -2604,7 +2621,7 @@ document to make sure the storage vendor has already passed the qualification
 for this release of Google Distributed Cloud for bare metal.</p>
 <hr />
 <h2 id="2025-10-15">2025-10-15</h2>
-<h3 id="announcement_9">Announcement</h3>
+<h3 id="announcement_10">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.31.1000-gke.44 is now available for
 <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>. To
 upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade
@@ -2637,7 +2654,7 @@ issues</a>
 in the Troubleshooting section.</p>
 <hr />
 <h2 id="2025-10-02">2025-10-02</h2>
-<h3 id="announcement_10">Announcement</h3>
+<h3 id="announcement_11">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.33.100-gke.89 is now available for
 <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>. To
 upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade
@@ -2670,7 +2687,7 @@ issues</a>
 in the Troubleshooting section.</p>
 <hr />
 <h2 id="2025-09-24">2025-09-24</h2>
-<h3 id="announcement_11">Announcement</h3>
+<h3 id="announcement_12">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.32.500-gke.48 is now available for
 <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>.
 To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade
@@ -2701,7 +2718,7 @@ issues</a>
 in the Troubleshooting section.</p>
 <hr />
 <h2 id="2025-09-15">2025-09-15</h2>
-<h3 id="announcement_12">Announcement</h3>
+<h3 id="announcement_13">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.31.900-gke.38 is now available for
 <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>.
 To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade
@@ -2729,7 +2746,7 @@ issues</a>
 in the Troubleshooting section.</p>
 <hr />
 <h2 id="2025-09-02">2025-09-02</h2>
-<h3 id="announcement_13">Announcement</h3>
+<h3 id="announcement_14">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.33.0-gke.799 is now available for
 <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>. To
 upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade
@@ -2744,7 +2761,7 @@ the Google Cloud console, the gcloud CLI, and Terraform.</p>
 partners</a> document to make sure the
 storage vendor has already passed the qualification for this release of Google
 Distributed Cloud for bare metal.</p>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>The following features were added in 1.33.0-gke.799:</p>
 <ul>
 <li><strong>GA</strong>: Introduced an Envoy sidecar into the GKE Identity Service to
@@ -2834,7 +2851,7 @@ Distributed Cloud for bare metal.</p>
 <p>For information about the latest known issues, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for bare metal known issues</a> in the Troubleshooting section.</p>
 <hr />
 <h2 id="2025-08-28">2025-08-28</h2>
-<h3 id="announcement_14">Announcement</h3>
+<h3 id="announcement_15">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.32.400-gke.68 is now available for
 <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>.
 To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade
@@ -2864,7 +2881,7 @@ issues</a>
 in the Troubleshooting section.</p>
 <hr />
 <h2 id="2025-08-13">2025-08-13</h2>
-<h3 id="announcement_15">Announcement</h3>
+<h3 id="announcement_16">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.31.800-gke.32 is now available for
 <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>.
 To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade
@@ -2896,7 +2913,7 @@ issues</a>
 in the Troubleshooting section.</p>
 <hr />
 <h2 id="2025-08-12">2025-08-12</h2>
-<h3 id="announcement_16">Announcement</h3>
+<h3 id="announcement_17">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.30.1200-gke.63 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade clusters</a>. Google Distributed Cloud for bare metal 1.30.1200-gke.63 runs on Kubernetes v1.30.12-gke.1200. This is the final patch for the 1.30 minor release.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for installations or upgrades with the <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
 <p>If you use a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release of Google Distributed Cloud for bare metal.</p>
@@ -2915,7 +2932,7 @@ in the Troubleshooting section.</p>
 <h2 id="2025-08-08">2025-08-08</h2>
 <h3 id="issue_13">Issue</h3>
 <p>For information about the latest known issues, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for bare metal known issues</a> in the Troubleshooting section.</p>
-<h3 id="announcement_17">Announcement</h3>
+<h3 id="announcement_18">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.32.300-gke.85 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade clusters</a>. Google Distributed Cloud for bare metal 1.32.300-gke.85 runs on Kubernetes v1.32.4-gke.1000.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for installations or upgrades with the <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
 <p>If you use a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release of Google Distributed Cloud for bare metal.</p>
@@ -2935,7 +2952,7 @@ in the Troubleshooting section.</p>
 <p>For information about the latest known issues, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for bare metal known issues</a> in the Troubleshooting section.</p>
 <hr />
 <h2 id="2025-08-04">2025-08-04</h2>
-<h3 id="announcement_18">Announcement</h3>
+<h3 id="announcement_19">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.32.300-gke.85 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade clusters</a>. Google Distributed Cloud for bare metal 1.32.300-gke.85 runs on Kubernetes v1.32.4-gke.1000.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for installations or upgrades with the <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
 <p>If you use a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release of Google Distributed Cloud for bare metal.</p>
@@ -2955,7 +2972,7 @@ in the Troubleshooting section.</p>
 <p>For information about the latest known issues, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for bare metal known issues</a> in the Troubleshooting section.</p>
 <hr />
 <h2 id="2025-07-22">2025-07-22</h2>
-<h3 id="announcement_19">Announcement</h3>
+<h3 id="announcement_20">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.31.700-gke.72 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade clusters</a>. Google Distributed Cloud for bare metal 1.31.700-gke.72 runs on Kubernetes v1.31.10-gke.200.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for installations or upgrades with the <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
 <p>If you use a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release of Google Distributed Cloud for bare metal.</p>
@@ -2973,7 +2990,7 @@ in the Troubleshooting section.</p>
 <p>For information about the latest known issues, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for bare metal known issues</a> in the Troubleshooting section.</p>
 <hr />
 <h2 id="2025-07-21">2025-07-21</h2>
-<h3 id="announcement_20">Announcement</h3>
+<h3 id="announcement_21">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.30.1100-gke.67 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade clusters</a>. Google Distributed Cloud for bare metal 1.30.1100-gke.67 runs on Kubernetes v1.30.12-gke.800.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for installations or upgrades with the <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
 <p>If you use a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release of Google Distributed Cloud for bare metal.</p>
@@ -2986,7 +3003,7 @@ in the Troubleshooting section.</p>
 <p>For information about the latest known issues, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for bare metal known issues</a> in the Troubleshooting section.</p>
 <hr />
 <h2 id="2025-07-17">2025-07-17</h2>
-<h3 id="announcement_21">Announcement</h3>
+<h3 id="announcement_22">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.32.200-gke.104 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade clusters</a>. Google Distributed Cloud for bare metal 1.32.200-gke.104 runs on Kubernetes v1.32.4-gke.1000.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for installations or upgrades with the <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
 <p>If you use a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release of Google Distributed Cloud for bare metal.</p>
@@ -3001,7 +3018,7 @@ in the Troubleshooting section.</p>
 <p>For information about the latest known issues, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for bare metal known issues</a> in the Troubleshooting section.</p>
 <hr />
 <h2 id="2025-06-23">2025-06-23</h2>
-<h3 id="announcement_22">Announcement</h3>
+<h3 id="announcement_23">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.31.600-gke.85 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade clusters</a>. Google Distributed Cloud for bare metal 1.31.600-gke.85 runs on Kubernetes v1.31.8-gke.100.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for installations or upgrades with the <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
 <p>If you use a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release of Google Distributed Cloud for bare metal.</p>
@@ -3014,7 +3031,7 @@ in the Troubleshooting section.</p>
 <p>For information about the latest known issues, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for bare metal known issues</a> in the Troubleshooting section.</p>
 <hr />
 <h2 id="2025-06-10">2025-06-10</h2>
-<h3 id="announcement_23">Announcement</h3>
+<h3 id="announcement_24">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.30.1000-gke.85 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade clusters</a>. Google Distributed Cloud for bare metal 1.30.1000-gke.85 runs on Kubernetes v1.30.12-gke.100.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for installations or upgrades with the <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
 <p>If you use a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release of Google Distributed Cloud for bare metal.</p>
@@ -3027,7 +3044,7 @@ in the Troubleshooting section.</p>
 <p>For information about the latest known issues, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for bare metal known issues</a> in the Troubleshooting section.</p>
 <hr />
 <h2 id="2025-06-04">2025-06-04</h2>
-<h3 id="announcement_24">Announcement</h3>
+<h3 id="announcement_25">Announcement</h3>
 <p>Google Distributed Cloud for bare metal 1.32.100-gke.106 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade">Upgrade clusters</a>. Google Distributed Cloud for bare metal 1.32.100-gke.106 runs on Kubernetes v1.32.4-gke.200.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for installations or upgrades with the <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
 <p>If you use a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release of Google Distributed Cloud for bare metal.</p>
@@ -3046,6 +3063,9 @@ in the Troubleshooting section.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-distributed-cloud-software-only-for-bare-metal">Google Distributed Cloud (software only) for bare metal</a></li>
+          <li class="nav-item">
+            <a href="#2026-02-13" class="nav-link">2026-02-13</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-02-05" class="nav-link">2026-02-05</a>
           </li>

@@ -2,9 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Composer</title>
   <subtitle>Changelog for Google Cloud product: Cloud Composer</subtitle>
-  <updated>2026-01-29T00:00:00+00:00</updated>
+  <updated>2026-02-10T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-composer</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-composer/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-02-10:fixed:0</id>
+    <published>2026-02-10T00:00:00+00:00</published>
+    <updated>2026-02-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><em>(Available without upgrading)</em> Fixed an issue where Airflow workloads used the
+Performance Persistent Disk type (<code>pd-ssd</code>) instead of the Standard Persistent
+Disk type (<code>pd-standard</code>).</p>]]></content>
+    <summary>An issue has been resolved where Airflow workloads were incorrectly using the Performance Persistent Disk type (`pd-ssd`) instead of the intended Standard Persistent Disk type (`pd-standard`). This fix is available without requiring any upgrades.</summary>
+    <title>Fixed: Persistent disk type corrected for Airflow workloads</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-02-10:fixed:1</id>
+    <published>2026-02-10T00:00:00+00:00</published>
+    <updated>2026-02-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><em>(Available without upgrading in Cloud Composer 3)</em> Fixed load snapshot
+operations that were failing with invalid configuration error for the recently
+created snapshots.</p>]]></content>
+    <summary>Fixed load snapshot operations that were failing with invalid configuration errors. This issue affected recently created snapshots and is now resolved without requiring an upgrade in Cloud Composer 3.</summary>
+    <title>Fixed: Snapshot operations now fixed</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

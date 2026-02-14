@@ -1,5 +1,12 @@
 # Contact Center AI Insights
 
+## 2026-01-31
+
+### Feature
+
+Customer Experience Insights offers [analysis rules](https://docs.cloud.google.com/contact-center/insights/docs/analysis-rule) for follow up analysis. A follow up analysis rule tells CX Insights to analyze a group of conversations based on the result from an analysis of a different group of conversations.
+
+---
 ## 2026-01-28
 
 ### Feature

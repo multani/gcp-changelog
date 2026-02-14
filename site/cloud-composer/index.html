@@ -2316,6 +2316,16 @@
 
 
 <h1 id="cloud-composer">Cloud Composer</h1>
+<h2 id="2026-02-10">2026-02-10</h2>
+<h3 id="fixed">Fixed</h3>
+<p><em>(Available without upgrading)</em> Fixed an issue where Airflow workloads used the
+Performance Persistent Disk type (<code>pd-ssd</code>) instead of the Standard Persistent
+Disk type (<code>pd-standard</code>).</p>
+<h3 id="fixed_1">Fixed</h3>
+<p><em>(Available without upgrading in Cloud Composer 3)</em> Fixed load snapshot
+operations that were failing with invalid configuration error for the recently
+created snapshots.</p>
+<hr />
 <h2 id="2026-01-29">2026-01-29</h2>
 <h3 id="feature">Feature</h3>
 <p><a href="https://docs.cloud.google.com/composer/docs/composer-3/save-load-snapshots">Environment snapshots</a>
@@ -2351,7 +2361,7 @@ are available in Cloud Composer 3:</p>
 The <code>apache-airflow-providers-google</code> package was upgraded to version 19.4.0.
 For more information about changes, see the
 <a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html">apache-airflow-providers-google changelog</a>.</p>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_2">Fixed</h3>
 <p><em>(Available without upgrading)</em> Cloud Composer 3 environment metadata in Cloud
 Asset Inventory now matches the environment configuration available through the
 Cloud Composer API, including the image version format.</p>
@@ -2362,7 +2372,7 @@ are available in Cloud Composer 2:</p>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-3-airflow-2-10-5">composer-2.16.3-airflow-2.10.5</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-3-airflow-2-9-3">composer-2.16.3-airflow-2.9.3</a></li>
 </ul>
-<h3 id="fixed_1">Fixed</h3>
+<h3 id="fixed_3">Fixed</h3>
 <p><em>(Airflow 2)</em> The Dag Details view in Airflow UI now scrolls correctly when the
 "Run config" field contains long values.</p>
 <h3 id="feature_2">Feature</h3>
@@ -2402,7 +2412,7 @@ are available in Cloud Composer 3:</p>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-24">composer-3-airflow-2.10.5-build.24</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-44">composer-3-airflow-2.9.3-build.44</a></li>
 </ul>
-<h3 id="fixed_2">Fixed</h3>
+<h3 id="fixed_4">Fixed</h3>
 <p>Improved error handling when an invalid Airflow version is specified during environment creation.</p>
 <h3 id="change_7">Change</h3>
 <p><em>(Airflow 3.1.0 in Cloud Composer 3)</em>
@@ -2452,7 +2462,7 @@ are available in Cloud Composer 3:</p>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-23">composer-3-airflow-2.10.5-build.23</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-43">composer-3-airflow-2.9.3-build.43</a></li>
 </ul>
-<h3 id="fixed_3">Fixed</h3>
+<h3 id="fixed_5">Fixed</h3>
 <p>Fixed an issue where the Copy button on the DAG details page in the Airflow UI
 was copying incorrect content.</p>
 <h3 id="change_9">Change</h3>
@@ -2511,7 +2521,7 @@ are available in Cloud Composer 3:</p>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-22">composer-3-airflow-2.10.5-build.22</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-42">composer-3-airflow-2.9.3-build.42</a></li>
 </ul>
-<h3 id="fixed_4">Fixed</h3>
+<h3 id="fixed_6">Fixed</h3>
 <p>Fixed an issue where <code>composer.googleapis.com/environment/executor/open_slots</code>
 and <code>composer.googleapis.com/environment/executor/running_tasks</code> were not
 available in environments with Airflow 3.</p>
@@ -2612,7 +2622,7 @@ are available in Cloud Composer 2:</p>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-15-3-airflow-2-10-5">composer-2.15.3-airflow-2.10.5</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-15-3-airflow-2-9-3">composer-2.15.3-airflow-2.9.3</a></li>
 </ul>
-<h3 id="fixed_5">Fixed</h3>
+<h3 id="fixed_7">Fixed</h3>
 <p>Resolved an issue in the Kubernetes Pod Operator (KPO) where the Kubernetes
 client experienced unreliable connections, leading to occasional failures. The
 fix enhances connection stability through the addition of retry logic for
@@ -2649,10 +2659,10 @@ are available in Cloud Composer 2:</p>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-15-2-airflow-2-10-5">composer-2.15.2-airflow-2.10.5</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-15-2-airflow-2-9-3">composer-2.15.2-airflow-2.9.3</a></li>
 </ul>
-<h3 id="fixed_6">Fixed</h3>
+<h3 id="fixed_8">Fixed</h3>
 <p><em>(Cloud Composer 3)</em> Airflow workers are restarted when they exceed their
 storage limit.</p>
-<h3 id="fixed_7">Fixed</h3>
+<h3 id="fixed_9">Fixed</h3>
 <p>Fixed an error where Airflow components failed to start up when multiple
 objects with the same name were present in the <code>/dags</code> or <code>/plugins</code> folder in
 the environment's bucket.</p>
@@ -2665,7 +2675,7 @@ are available in Cloud Composer 2:</p>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-15-1-airflow-2-10-5">composer-2.15.1-airflow-2.10.5</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-15-1-airflow-2-9-3">composer-2.15.1-airflow-2.9.3</a></li>
 </ul>
-<h3 id="fixed_8">Fixed</h3>
+<h3 id="fixed_10">Fixed</h3>
 <p><em>(Cloud Composer 2)</em> Configuration of firewall rules for Private IP
 environments now requires allowing egress traffic on port 19090.</p>
 <hr />
@@ -2706,7 +2716,7 @@ are available in Cloud Composer 2:</p>
 from version 17.2.0 to version 18.0.0.</p>
 <hr />
 <h2 id="2025-10-10">2025-10-10</h2>
-<h3 id="fixed_9">Fixed</h3>
+<h3 id="fixed_11">Fixed</h3>
 <p><em>(Cloud Composer 2 versions from 2.12.0 to 2.12.3)</em> Fixed a problem where
 Airflow components in the environment's cluster were running out of ephemeral
 storage. This change rolls out gradually over several releases to all regions
@@ -2738,11 +2748,11 @@ composer-3-airflow-2.9.1-build.9.</p>
 are now generally available (GA) in Cloud Composer 3 and Cloud Composer 2.</p>
 <hr />
 <h2 id="2025-09-30">2025-09-30</h2>
-<h3 id="fixed_10">Fixed</h3>
+<h3 id="fixed_12">Fixed</h3>
 <p>The <code>GCE_METADATA_TIMEOUT</code> environment variable is changed to reserved. This
 change addresses an issue where setting a low timeout value disrupted the
 environment's operations that relied on the metadata server.</p>
-<h3 id="fixed_11">Fixed</h3>
+<h3 id="fixed_13">Fixed</h3>
 <p>DAG UI now correctly generates error messages about malformed serialized DAG.</p>
 <h3 id="changed_13">Changed</h3>
 <p><em>(Airflow 2.10.5)</em> The <code>apache-airflow-providers-google</code> package was upgraded
@@ -2796,10 +2806,10 @@ are available in Cloud Composer 2:</p>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-14-2-airflow-2-10-5">composer-2.14.2-airflow-2.10.5</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-14-2-airflow-2-9-3">composer-2.14.2-airflow-2.9.3</a></li>
 </ul>
-<h3 id="fixed_12">Fixed</h3>
+<h3 id="fixed_14">Fixed</h3>
 <p>Fixed an issue where values of Airflow configuration options were evaluated
 before being set. As a result, the actual value was set to the evaluated result.</p>
-<h3 id="fixed_13">Fixed</h3>
+<h3 id="fixed_15">Fixed</h3>
 <p>Fixed Airflow logs not exporting to Cloud Logging because of a GKE version
 mismatch between Airflow worker and GKE Control plane nodes.</p>
 <hr />
@@ -2850,7 +2860,7 @@ large number of custom PyPI packages installed.</p>
 <a href="https://cloud.google.com/composer/docs/release-notes#June_02_2025">announced previously</a>
 and has finished gradually rolling out to all regions supported by
 Cloud Composer.</p>
-<h3 id="fixed_14">Fixed</h3>
+<h3 id="fixed_16">Fixed</h3>
 <p>Airflow UI now shows the correct value of the <code>[core]dags_folder</code> Airflow
 configuration option.</p>
 <h3 id="changed_21">Changed</h3>
@@ -2911,10 +2921,10 @@ are available in Cloud Composer 3:</p>
 </ul>
 <hr />
 <h2 id="2025-07-28">2025-07-28</h2>
-<h3 id="fixed_15">Fixed</h3>
+<h3 id="fixed_17">Fixed</h3>
 <p>Fixed an issue that caused unexpected restarts of Airflow component workloads
 in the environment's cluster.</p>
-<h3 id="fixed_16">Fixed</h3>
+<h3 id="fixed_18">Fixed</h3>
 <p><em>(Cloud Composer 3)</em> The <code>DAGS_FOLDER</code> reserved environment variable now
 correctly points to the local directory where DAG files are stored.</p>
 <h3 id="changed_28">Changed</h3>
@@ -3041,7 +3051,7 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
 <h3 id="feature_17">Feature</h3>
 <p>Improved the startup times of Airflow workers for environments that have a large number of custom PyPI packages installed.</p>
 <p>This feature <a href="https://cloud.google.com/composer/docs/release-notes#June_02_2025">was announced previously</a> and is gradually rolling out over several releases. In this release, it's available in asia-east2, asia-northeast3, europe-central2, europe-west9, me-central1, me-west1, northamerica-northeast1, northamerica-northeast2, northamerica-south1, and us-west1 re</p>
-<h3 id="fixed_17">Fixed</h3>
+<h3 id="fixed_19">Fixed</h3>
 <p><em>(Available without upgrading)</em> Fixed an issue where deleting a Cloud Composer 2 environment could fail when the environment's cluster was in the process of creating a node pool.</p>
 <h3 id="changed_39">Changed</h3>
 <p><em>(Airflow 2.10.5)</em> The <code>apache-airflow-providers-cncf-kubernetes</code> package was <a href="https://airflow.apache.org/docs/apache-airflow-providers-cncf-kubernetes/stable/changelog.html">upgraded to version 10.5.0</a> from version 10.4.2. For changes in other packages, see the <a href="https://cloud.google.com/composer/docs/versions-packages">preinstalled packages changelog</a>.</p>
@@ -3090,7 +3100,7 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
 <h2 id="2025-06-10">2025-06-10</h2>
 <h3 id="announcement_8">Announcement</h3>
 <p>A new Cloud Composer release has started on <strong>June 10, 2025</strong>. Get ready for upcoming changes and features as we roll out the new release to all regions. This release is in progress at the moment. Listed changes and features might not be available in some regions yet.</p>
-<h3 id="fixed_18">Fixed</h3>
+<h3 id="fixed_20">Fixed</h3>
 <p>Fixed an issue that caused Airflow worker and scheduler Pods to be evicted when a large number of tasks was executed.</p>
 <h3 id="changed_42">Changed</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a> are available in Cloud Composer 3:</p>
@@ -3115,7 +3125,7 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
 <p><em>(Cloud Composer 3)</em> If a VPC network is attached to an environment, then all DNS addresses accessed by the Airflow components of the environment are resolved using the Cloud DNS configuration of the VPC network. In particular, Airflow workers that execute DAGs will resolve DNS addresses in this way.</p>
 <h3 id="changed_45">Changed</h3>
 <p><em>(Cloud Composer 3)</em> All newly created private DNS zones are immediately visible to a Cloud Composer environment. Previously, re-attaching a VPC network was required.</p>
-<h3 id="fixed_19">Fixed</h3>
+<h3 id="fixed_21">Fixed</h3>
 <p><em>(Cloud Composer 3)</em> It's now possible to use <a href="http://cloud.google.com/dns/docs/zones/cross-project-binding">zones with cross-project binding</a>. Before this change, cross-project bound zones weren't supported in Cloud Composer 3.</p>
 <h3 id="changed_46">Changed</h3>
 <p><em>(Cloud Composer 2)</em> In Cloud Composer versions 2.11.5 and later, log processing is switching to using OpenTelemetry instead of Fluentd.</p>
@@ -3149,6 +3159,9 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-composer">Cloud Composer</a></li>
+          <li class="nav-item">
+            <a href="#2026-02-10" class="nav-link">2026-02-10</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-01-29" class="nav-link">2026-01-29</a>
           </li>

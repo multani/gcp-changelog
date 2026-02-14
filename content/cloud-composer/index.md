@@ -1,5 +1,20 @@
 # Cloud Composer
 
+## 2026-02-10
+
+### Fixed
+
+*(Available without upgrading)* Fixed an issue where Airflow workloads used the
+Performance Persistent Disk type (`pd-ssd`) instead of the Standard Persistent
+Disk type (`pd-standard`).
+
+### Fixed
+
+*(Available without upgrading in Cloud Composer 3)* Fixed load snapshot
+operations that were failing with invalid configuration error for the recently
+created snapshots.
+
+---
 ## 2026-01-29
 
 ### Feature

@@ -1,5 +1,15 @@
 # Generative AI on Vertex AI
 
+## 2026-02-10
+
+### Feature
+
+**GLM 5** is available as an experimental launch in Model Garden. This model
+is targeting complex systems engineering and long-horizon agentic tasks.
+GLM 5 is available as a managed API in Model Garden. To learn more, see
+[GLM 5](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/maas/zai-org/glm-5).
+
+---
 ## 2026-02-04
 
 ### Feature

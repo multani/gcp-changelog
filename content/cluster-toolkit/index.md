@@ -1,5 +1,18 @@
 # Cluster Toolkit
 
+## 2026-02-05
+
+### Feature
+
+Cluster Toolkit version v1.81.0 is available. This release adds
+support for the Dynamic Workload Scheduler (DWS) Flex-start provisioning model on TPU
+7x and TPU v6e resources. This release also updates Slurm cluster blueprints to
+use the Cloud Storage FUSE profile feature for AI/ML Cloud Storage bucket mounts.
+
+For more information about this release, see the [Release
+announcement on GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5195).
+
+---
 ## 2026-01-28
 
 ### Feature

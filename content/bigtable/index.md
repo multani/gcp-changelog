@@ -1,5 +1,16 @@
 # Bigtable
 
+## 2026-02-13
+
+### Feature
+
+You can use the [Flink Bigtable connector](https://docs.cloud.google.com/bigtable/docs/flink-connector)
+version 0.3.2 to connect to Bigtable from Apache Flink version 2.1.0.
+Additionally, this version of the connector lets you specify the number of
+mutations to include in each batch sent to Bigtable. This feature is
+[generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-01-30
 
 ### Feature

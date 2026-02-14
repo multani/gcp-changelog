@@ -1,5 +1,16 @@
 # Network Intelligence Center
 
+## 2026-02-13
+
+### Feature
+
+[Flow Analyzer](https://docs.cloud.google.com/network-intelligence-center/docs/flow-analyzer/overview)
+supports latency mode, allowing you to analyze round-trip time in your
+traffic flows. This feature is generally available (GA).
+For more information, see
+[Display flows in latency mode](https://docs.cloud.google.com/network-intelligence-center/docs/flow-analyzer/analyze-traffic-flows#display-latency).
+
+---
 ## 2026-01-29
 
 ### Feature

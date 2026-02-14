@@ -1,5 +1,17 @@
 # Google Kubernetes Engine
 
+## 2026-02-13
+
+### Feature
+
+You can now determine the status and health of a TPU slice and partition by monitoring these new beta system metrics:
+
+* `kubernetes.io/accelerator/slice/state`: Indicates the current status of the slice.
+* `kubernetes.io/accelerator/partition/state`: Indicates the health of the partition.
+
+For more information, see the [GKE system metrics](https://docs.cloud.google.com/monitoring/api/metrics_kubernetes#kubernetes-kubernetes) documentation.
+
+---
 ## 2026-02-11
 
 ### Change

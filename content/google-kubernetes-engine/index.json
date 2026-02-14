@@ -1,6 +1,16 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2026-02-13": [
+      {
+        "kind": "Feature",
+        "content": "You can now determine the status and health of a TPU slice and partition by monitoring these new beta system metrics:\n\n* `kubernetes.io/accelerator/slice/state`: Indicates the current status of the slice.\n* `kubernetes.io/accelerator/partition/state`: Indicates the health of the partition.\n\nFor more information, see the [GKE system metrics](https://docs.cloud.google.com/monitoring/api/metrics_kubernetes#kubernetes-kubernetes) documentation.",
+        "summary": {
+          "title": "TPU slice and partition health monitoring",
+          "summary": "New beta system metrics allow you to monitor the status and health of TPU slices and partitions. You can now check `kubernetes.io/accelerator/slice/state` for slice status and `kubernetes.io/accelerator/partition/state` for partition health. This provides better visibility into your TPU resource utilization."
+        }
+      }
+    ],
     "2026-02-11": [
       {
         "kind": "Change",

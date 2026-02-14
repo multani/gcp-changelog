@@ -1,5 +1,18 @@
 # Apigee X
 
+## 2026-02-13
+
+### Announcement
+
+On February 13, 2026, we published a security bulletin for Apigee.
+
+### Security
+
+A vulnerability was identified in the Apigee platform ([CVE-2025-13292](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-13292)) that could have allowed a malicious actor with administrative or developer-level permissions in their own Apigee environment to elevate privileges and access cross-tenant data.
+
+**Security bulletin published: [GCP-2026-010](https://docs.cloud.google.com/apigee/docs/security-bulletins/security-bulletins#gcp-2026-010)**
+
+---
 ## 2026-02-10
 
 ### Announcement
@@ -36,7 +49,7 @@ On February 6th, 2026, we released an updated version of Apigee.
 
 ### Issue
 
-**Known Issue:** [480997525 - Proxy calls fail with `The URI contain illegal characters` error after Netty upgrade](https://docs.cloud.google.com/apigee/docs/release/known-issues#480997525)
+**Known Issue:** [480997525 - Proxy calls fail with `The URI contains illegal characters` error after Netty upgrade](https://docs.cloud.google.com/apigee/docs/release/known-issues#480997525)
 
 ---
 ## 2026-01-21

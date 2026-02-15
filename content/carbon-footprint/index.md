@@ -1,5 +1,29 @@
 # Carbon Footprint
 
+## 2026-02-15
+
+### Feature
+
+**Methodology update**: Starting with January 2026 data, we have updated our
+calculation model to align with the comprehensive AI energy/emissions framework
+detailed in
+[Measuring the environmental impact of delivering AI at Google Scale](https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference).
+This update allocates previously unallocated AI inference model emissions to the
+associated Google Cloud services, following the SKU-level allocation described
+in the
+[Carbon Footprint reporting methodology](https://docs.cloud.google.com/carbon-footprint/docs/methodology). This change is part of our ongoing effort to provide more accurate and
+transparent emissions data for AI inference.
+
+**Impact**: Customers will see an increase in reported emissions for services
+that utilize AI model inference across all SKUs. Such an increase is spread
+across all SKUs within those services, based on the SKU-level allocation
+[methodology](https://docs.cloud.google.com/carbon-footprint/docs/methodology#sku-allocation).
+The primary impact is on Vertex AI. Other impacted services include Video
+Stitcher API, Notebooks, Cloud Natural Language, Cloud Speech API, Cloud
+Document AI API, Cloud Dialogflow API, Cloud Machine Learning Engine, Cloud
+Text-to-Speech API and Cloud Vision API.
+
+---
 ## 2026-01-30
 
 ### Fixed

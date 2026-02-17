@@ -1,5 +1,14 @@
 # Bigtable
 
+## 2026-02-17
+
+### Feature
+
+You can use the [Bigtable Admin API MCP server](https://docs.cloud.google.com/bigtable/docs/use-bigtable-mcp)
+to enable agents and AI applications to perform a range of data-related tasks.
+This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-02-13
 
 ### Feature

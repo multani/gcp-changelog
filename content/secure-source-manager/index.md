@@ -7,6 +7,19 @@
 You can now [connect to Secure Source Manager](https://docs.cloud.google.com/developer-connect/docs/connect-secure-source-manager) using Developer Connect.
 
 ---
+## 2026-02-03
+
+### Feature
+
+You can now assign custom domains for your private Secure Source Manager
+instance's HTML, API, Git HTTP, and Git SSH endpoints. To use custom domains, you
+must provide your own Certificate Authority (CA) certificate and CA pool during
+instance creation. You can only create custom domains using the API when you
+first create an instance. For more information, see [Create a Private Service
+Connect Secure Source Manager
+instance](https://docs.cloud.google.com/secure-source-manager/docs/create-private-service-connect-instance).
+
+---
 ## 2026-02-02
 
 ### Feature

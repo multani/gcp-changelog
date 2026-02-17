@@ -23,7 +23,8 @@ is a feature of the columnar engine in
 [Preview](https://cloud.google.com/products#product-launch-stages) that
 significantly improves query performance and reduces CPU consumption. It caches
 the results of frequently used expressions, which is especially beneficial for
-analytical workloads on large datasets.
+analytical workloads on large datasets. This feature is supported for PostgreSQL
+version 16 and higher.
 
 ---
 ## 2026-01-27

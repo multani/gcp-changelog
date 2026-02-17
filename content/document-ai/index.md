@@ -1,5 +1,21 @@
 # Document AI
 
+## 2026-02-16
+
+### Feature
+
+The [layout parser](https://docs.cloud.google.com/document-ai/docs/layout-parse-chunk) web interface is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+It supports a document view display for processed PDF files and supports
+visualizing the document's parsed JSON, block layout, and
+image or table annotation data in a user-friendly interface. Bounding box support
+only exists for version processor `pretrained-layout-parser-v1.0-2024-06-03`.
+
+It also supports modifying the input layout config to allow
+for configuring the table and image annotation feature directly from the interface.
+
+---
 ## 2026-02-09
 
 ### Feature

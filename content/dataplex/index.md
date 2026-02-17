@@ -1,5 +1,17 @@
 # Dataplex
 
+## 2026-02-11
+
+### Feature
+
+You can now use metadata change feeds to receive near real-time notifications
+about metadata changes in Dataplex. Dataplex publishes notifications to a
+Pub/Sub topic of your choice, letting you build event-driven workflows,
+sync metadata to external catalogs, or trigger data quality checks.
+For more information, see
+[About metadata change feeds](https://cloud.google.com/dataplex/docs/metadata-change-feeds-overview).
+
+---
 ## 2026-01-29
 
 ### Feature

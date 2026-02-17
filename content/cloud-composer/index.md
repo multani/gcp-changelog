@@ -1,5 +1,44 @@
 # Cloud Composer
 
+## 2026-02-16
+
+### Change
+
+New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3)
+are available in Cloud Composer 3:
+
+* [composer-3-airflow-3.1.0-build.9](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-0-build-9)
+* [composer-3-airflow-2.10.5-build.26](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-26) (default)
+* [composer-3-airflow-2.9.3-build.46](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-46)
+
+### Change
+
+New [images](https://cloud.google.com/composer/docs/composer-versions#images-composer-2)
+are available in Cloud Composer 2:
+
+* [composer-2.16.4-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-16-4-airflow-2-10-5) (default)
+* [composer-2.16.4-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-16-4-airflow-2-9-3)
+
+### Deprecated
+
+The following Cloud Composer versions and builds have reached their
+[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):
+composer-3-airflow-2.9.3-build.15 and composer-2.11.2-\*.
+
+### Announcement
+
+A new Cloud Composer release has started on **February 16, 2026**. Get ready
+for upcoming changes and features as we roll out the new release to all regions.
+This release is in progress at the moment. Listed changes and features might
+not be available in some regions yet.
+
+### Feature
+
+[Environment snapshots](https://docs.cloud.google.com/composer/docs/composer-3/save-load-snapshots)
+are available in environments with Airflow 3 (Preview). This change is now
+rolled out to all regions supported by Cloud Composer 3.
+
+---
 ## 2026-02-10
 
 ### Fixed

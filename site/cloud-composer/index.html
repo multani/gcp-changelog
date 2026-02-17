@@ -2316,6 +2316,36 @@
 
 
 <h1 id="cloud-composer">Cloud Composer</h1>
+<h2 id="2026-02-16">2026-02-16</h2>
+<h3 id="change">Change</h3>
+<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
+are available in Cloud Composer 3:</p>
+<ul>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-0-build-9">composer-3-airflow-3.1.0-build.9</a></li>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-26">composer-3-airflow-2.10.5-build.26</a> (default)</li>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-46">composer-3-airflow-2.9.3-build.46</a></li>
+</ul>
+<h3 id="change_1">Change</h3>
+<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
+are available in Cloud Composer 2:</p>
+<ul>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-4-airflow-2-10-5">composer-2.16.4-airflow-2.10.5</a> (default)</li>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-4-airflow-2-9-3">composer-2.16.4-airflow-2.9.3</a></li>
+</ul>
+<h3 id="deprecated">Deprecated</h3>
+<p>The following Cloud Composer versions and builds have reached their
+<a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
+composer-3-airflow-2.9.3-build.15 and composer-2.11.2-*.</p>
+<h3 id="announcement">Announcement</h3>
+<p>A new Cloud Composer release has started on <strong>February 16, 2026</strong>. Get ready
+for upcoming changes and features as we roll out the new release to all regions.
+This release is in progress at the moment. Listed changes and features might
+not be available in some regions yet.</p>
+<h3 id="feature">Feature</h3>
+<p><a href="https://docs.cloud.google.com/composer/docs/composer-3/save-load-snapshots">Environment snapshots</a>
+are available in environments with Airflow 3 (Preview). This change is now
+rolled out to all regions supported by Cloud Composer 3.</p>
+<hr />
 <h2 id="2026-02-10">2026-02-10</h2>
 <h3 id="fixed">Fixed</h3>
 <p><em>(Available without upgrading)</em> Fixed an issue where Airflow workloads used the
@@ -2327,7 +2357,7 @@ operations that were failing with invalid configuration error for the recently
 created snapshots.</p>
 <hr />
 <h2 id="2026-01-29">2026-01-29</h2>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_1">Feature</h3>
 <p><a href="https://docs.cloud.google.com/composer/docs/composer-3/save-load-snapshots">Environment snapshots</a>
 are available in environments with Airflow 3 (Preview).</p>
 <p>This feature is gradually rolled out in several releases and is available in
@@ -2339,16 +2369,16 @@ europe-west6, europe-west8, europe-west9, me-central1, me-central2, me-west1,
 northamerica-northeast1, northamerica-northeast2, northamerica-south1,
 southamerica-east1, southamerica-west1, us-east1, us-east5, us-south1,
 us-west2, us-west3 and us-west4.</p>
-<h3 id="deprecated">Deprecated</h3>
+<h3 id="deprecated_1">Deprecated</h3>
 <p>The following Cloud Composer versions and builds have reached their
 <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
 composer-3-airflow-2.9.3-build.14 and composer-2.11.1-*.</p>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p><em>(Cloud Composer 2)</em> Airflow component metrics are now available
 <a href="https://docs.cloud.google.com/composer/docs/composer-2/use-monitoring-dashboard#airflow-components">on the Monitoring dashboard</a>
 in the Google Cloud console. This feature was previously available only in
 Cloud Composer 3.</p>
-<h3 id="change">Change</h3>
+<h3 id="change_2">Change</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
 are available in Cloud Composer 3:</p>
 <ul>
@@ -2356,7 +2386,7 @@ are available in Cloud Composer 3:</p>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-25">composer-3-airflow-2.10.5-build.25</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-45">composer-3-airflow-2.9.3-build.45</a></li>
 </ul>
-<h3 id="change_1">Change</h3>
+<h3 id="change_3">Change</h3>
 <p><em>(Airflow 3.1.0 in Cloud Composer 3)</em>
 The <code>apache-airflow-providers-google</code> package was upgraded to version 19.4.0.
 For more information about changes, see the
@@ -2365,7 +2395,7 @@ For more information about changes, see the
 <p><em>(Available without upgrading)</em> Cloud Composer 3 environment metadata in Cloud
 Asset Inventory now matches the environment configuration available through the
 Cloud Composer API, including the image version format.</p>
-<h3 id="change_2">Change</h3>
+<h3 id="change_4">Change</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
 are available in Cloud Composer 2:</p>
 <ul>
@@ -2375,36 +2405,36 @@ are available in Cloud Composer 2:</p>
 <h3 id="fixed_3">Fixed</h3>
 <p><em>(Airflow 2)</em> The Dag Details view in Airflow UI now scrolls correctly when the
 "Run config" field contains long values.</p>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/composer/docs/composer-3/run-local-airflow-environments">Composer Local Development CLI tool</a>
 is now available for Airflow 3 (Preview).</p>
 <hr />
 <h2 id="2026-01-14">2026-01-14</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p><a href="https://docs.cloud.google.com/composer/docs/composer-3/configure-db-retention"><strong>Database retention policy</strong></a> is now available
 in environments with Airflow 3, starting with composer-3-airflow-3.1.0-build.5.
 This change is now rolled out to all regions supported by Cloud Composer 3.</p>
-<h3 id="change_3">Change</h3>
+<h3 id="change_5">Change</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
 are available in Cloud Composer 2:</p>
 <ul>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-2-airflow-2-10-5">composer-2.16.2-airflow-2.10.5</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-2-airflow-2-9-3">composer-2.16.2-airflow-2.9.3</a></li>
 </ul>
-<h3 id="change_4">Change</h3>
+<h3 id="change_6">Change</h3>
 <p><em>(Airflow 3.1.0 in Cloud Composer 3)</em>
 The <code>apache-airflow-providers-google</code> package was upgraded to version 19.2.0.</p>
 <p>For more information about changes, see the
 <a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html">apache-airflow-providers-google changelog</a>.</p>
-<h3 id="deprecated_1">Deprecated</h3>
+<h3 id="deprecated_2">Deprecated</h3>
 <p>The following Cloud Composer versions and builds have reached their
 <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
 composer-3-airflow-2.9.3-build.12, composer-2.10.2-airflow-2.9.3,
 composer-2.10.2-airflow-2.10.2.</p>
-<h3 id="change_5">Change</h3>
+<h3 id="change_7">Change</h3>
 <p>Cloud Composer 3 environments no longer consume the Cloud SQL Admin API quota
 in the customer project.</p>
-<h3 id="change_6">Change</h3>
+<h3 id="change_8">Change</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
 are available in Cloud Composer 3:</p>
 <ul>
@@ -2414,7 +2444,7 @@ are available in Cloud Composer 3:</p>
 </ul>
 <h3 id="fixed_4">Fixed</h3>
 <p>Improved error handling when an invalid Airflow version is specified during environment creation.</p>
-<h3 id="change_7">Change</h3>
+<h3 id="change_9">Change</h3>
 <p><em>(Airflow 3.1.0 in Cloud Composer 3)</em>
 The <code>apache-airflow-providers-cncf-kubernetes</code>
 package was
@@ -2434,7 +2464,7 @@ still operational and the environment health and monitoring information is
 reported correctly. You can ignore the error messages.</p>
 <hr />
 <h2 id="2025-12-17">2025-12-17</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p><strong>Extra Large environments</strong> are now generally available (GA) in
 Cloud Composer 3:</p>
 <ul>
@@ -2450,11 +2480,11 @@ Cloud Composer 3:</p>
 </ul>
 <hr />
 <h2 id="2025-12-12">2025-12-12</h2>
-<h3 id="deprecated_2">Deprecated</h3>
+<h3 id="deprecated_3">Deprecated</h3>
 <p>The following Cloud Composer versions and builds have reached their
 <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
 composer-3-airflow-2.9.3-build.11, composer-2.10.1-*.</p>
-<h3 id="change_8">Change</h3>
+<h3 id="change_10">Change</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
 are available in Cloud Composer 3:</p>
 <ul>
@@ -2465,21 +2495,21 @@ are available in Cloud Composer 3:</p>
 <h3 id="fixed_5">Fixed</h3>
 <p>Fixed an issue where the Copy button on the DAG details page in the Airflow UI
 was copying incorrect content.</p>
-<h3 id="change_9">Change</h3>
+<h3 id="change_11">Change</h3>
 <p><em>(Airflow 3.1.0 in Cloud Composer 3)</em>
 The <code>apache-airflow-providers-cncf-kubernetes</code>
 package was
 <a href="https://airflow.apache.org/docs/apache-airflow-providers-cncf-kubernetes/stable/changelog.html">upgraded to version 10.11.0</a>.
 For changes in other packages, see the
 <a href="https://cloud.google.com/composer/docs/versions-packages">preinstalled packages changelog</a>.</p>
-<h3 id="change_10">Change</h3>
+<h3 id="change_12">Change</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
 are available in Cloud Composer 2:</p>
 <ul>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-1-airflow-2-10-5">composer-2.16.1-airflow-2.10.5</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-1-airflow-2-9-3">composer-2.16.1-airflow-2.9.3</a></li>
 </ul>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p><a href="https://docs.cloud.google.com/composer/docs/composer-versioning-overview#comparison-airflow-versions"><strong>Database retention policy</strong></a>
 is now available in environments with Airflow 3, starting with composer-3-airflow-3.1.0-build.5.</p>
 <p>This change is gradually rolled out in several releases and is available in the
@@ -2490,30 +2520,30 @@ europe-west10, europe-west12, europe-west15, europe-west4, europe-west6,
 europe-west8, europe-west9, me-central1, me-central2, me-west1,
 northamerica-northeast1, northamerica-northeast2, northamerica-south1,
 southamerica-east1, southamerica-west1, us-east5, us-south1, us-west3, us-west4.</p>
-<h3 id="change_11">Change</h3>
+<h3 id="change_13">Change</h3>
 <p><em>(Airflow 3.1.0 in Cloud Composer 3)</em>
 The <code>apache-airflow-providers-google</code> package was upgraded to version 19.1.0.</p>
 <p>For more information about changes, see the
 <a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html">apache-airflow-providers-google changelog</a>.</p>
 <hr />
 <h2 id="2025-12-09">2025-12-09</h2>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p><em>(Cloud Composer 2)</em> Cloud Composer's high availability infrastructure was
 enhanced to provide greater resilience against zonal outages. This feature was
 <a href="https://docs.cloud.google.com/composer/docs/release-notes#September_03_2025">announced previously</a>
 and has finished gradually rolling out to all regions supported by
 Cloud Composer.</p>
-<h3 id="change_12">Change</h3>
+<h3 id="change_14">Change</h3>
 <p><em>(Cloud Composer 3)</em> The name format for <a href="https://docs.cloud.google.com/composer/docs/composer-3/connect-vpc-network">network attachments</a> created by
 Cloud Composer was modified to enhance uniqueness. This change applies only to
 newly created network attachments.</p>
-<h3 id="change_13">Change</h3>
+<h3 id="change_15">Change</h3>
 <p><em>(Airflow 3.1.0 and 2.10.5)</em> The <code>apache-airflow-providers-cncf-kubernetes</code>
 package was
 <a href="https://airflow.apache.org/docs/apache-airflow-providers-cncf-kubernetes/stable/changelog.html">upgraded to version 10.9.0</a>.
 For changes in other packages, see the
 <a href="https://cloud.google.com/composer/docs/versions-packages">preinstalled packages changelog</a>.</p>
-<h3 id="change_14">Change</h3>
+<h3 id="change_16">Change</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
 are available in Cloud Composer 3:</p>
 <ul>
@@ -2525,27 +2555,27 @@ are available in Cloud Composer 3:</p>
 <p>Fixed an issue where <code>composer.googleapis.com/environment/executor/open_slots</code>
 and <code>composer.googleapis.com/environment/executor/running_tasks</code> were not
 available in environments with Airflow 3.</p>
-<h3 id="change_15">Change</h3>
+<h3 id="change_17">Change</h3>
 <p><em>(Airflow 3.1.0 and 2.10.5)</em> The <code>apache-airflow-providers-google</code> package was
 upgraded to version 19.0.0 in Cloud Composer 2 images and Cloud Composer 3
 builds.</p>
 <p>For more information about changes, see the
 <a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html">apache-airflow-providers-google changelog</a>
 from version 18.0.0 to version 19.0.0.</p>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p><a href="https://docs.cloud.google.com/composer/docs/composer-versioning-overview#comparison-airflow-versions"><strong>Database retention policy</strong></a> is now available
 in environments with Airflow 3, starting with composer-3-airflow-3.1.0-build.5.
 This change is gradually rolled out in several releases and is available in the
 following regions in this release: europe-north1, us-west2, us-east1,
 europe-west3, asia-east2.</p>
-<h3 id="change_16">Change</h3>
+<h3 id="change_18">Change</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
 are available in Cloud Composer 2:</p>
 <ul>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-0-airflow-2-10-5">composer-2.16.0-airflow-2.10.5</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-0-airflow-2-9-3">composer-2.16.0-airflow-2.9.3</a></li>
 </ul>
-<h3 id="deprecated_3">Deprecated</h3>
+<h3 id="deprecated_4">Deprecated</h3>
 <p>The following Cloud Composer versions and builds have reached their
 <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
 composer-3-airflow-2.7.3-build.22, composer-3-airflow-2.7.3-build.23,
@@ -2554,7 +2584,7 @@ composer-3-airflow-2.9.3-build.4, composer-3-airflow-2.9.3-build.5,
 composer-3-airflow-2.9.3-build.6, composer-3-airflow-2.9.3-build.7,
 composer-3-airflow-2.9.3-build.10, composer-2.9.10-*, composer-2.9.11-*,
 composer-2.10.0-*.</p>
-<h3 id="announcement">Announcement</h3>
+<h3 id="announcement_1">Announcement</h3>
 <p>The dates for maintenance exclusions were changed from the dates
 <a href="https://docs.cloud.google.com/composer/docs/release-notes#November_17_2025">announced earlier</a>.
 All Cloud Composer environment's
@@ -2579,7 +2609,7 @@ these versions, you can continue to use it as usual. We are working to resolve
 the issue for all currently affected environments.</p>
 <hr />
 <h2 id="2025-11-17">2025-11-17</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p>All Cloud Composer environment's GKE clusters are set up with
 <strong>maintenance exclusions</strong> from December 16, 2025 to January 2, 2026. For more
 information, see
@@ -2592,7 +2622,7 @@ are available in Cloud Composer 3:</p>
 </ul>
 <hr />
 <h2 id="2025-11-14">2025-11-14</h2>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p>You can now
 <a href="https://docs.cloud.google.com/composer/docs/composer-3/troubleshooting-dags#investigations">start Gemini Cloud Assist investigations</a>
 for failed Airflow tasks.</p>
@@ -2627,7 +2657,7 @@ are available in Cloud Composer 2:</p>
 client experienced unreliable connections, leading to occasional failures. The
 fix enhances connection stability through the addition of retry logic for
 underlying connectivity problems.</p>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p>We strongly recommend to use
 <a href="https://docs.cloud.google.com/composer/docs/composer-3/set-up-highly-resilient-environments">highly resilient environments</a>
 for production use cases. Highly resilient environments provide high
@@ -2636,7 +2666,7 @@ environment's susceptibility to zonal failures and single point of failure
 outages.</p>
 <hr />
 <h2 id="2025-10-30">2025-10-30</h2>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p>All Cloud Composer environment's GKE clusters will receive
 <strong>maintenance exclusions</strong> from November 8, 2025 to December 2, 2025. For more
 information, see
@@ -2648,7 +2678,7 @@ are available in Cloud Composer 3:</p>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-18">composer-3-airflow-2.10.5-build.18</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-38">composer-3-airflow-2.9.3-build.38</a></li>
 </ul>
-<h3 id="deprecated_4">Deprecated</h3>
+<h3 id="deprecated_5">Deprecated</h3>
 <p>The following Cloud Composer versions and builds have reached their
 <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
 composer-3-airflow-2.7.3-build.21 and composer-2.9.9-*.</p>
@@ -2697,7 +2727,7 @@ are available in Cloud Composer 3:</p>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-17">composer-3-airflow-2.10.5-build.17</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-37">composer-3-airflow-2.9.3-build.37</a></li>
 </ul>
-<h3 id="deprecated_5">Deprecated</h3>
+<h3 id="deprecated_6">Deprecated</h3>
 <p>The following Cloud Composer versions and builds have reached their
 <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
 composer-3-airflow-2.7.3-build.20, composer-3-airflow-2.7.3-build.19,
@@ -2735,7 +2765,7 @@ are available in Cloud Composer 2:</p>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-14-4-airflow-2-10-5">composer-2.14.4-airflow-2.10.5</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-14-4-airflow-2-9-3">composer-2.14.4-airflow-2.9.3</a></li>
 </ul>
-<h3 id="deprecated_6">Deprecated</h3>
+<h3 id="deprecated_7">Deprecated</h3>
 <p>The following Cloud Composer versions and builds have reached their
 <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
 composer-2.9.6-*, composer-3-airflow-2.7.3-build.17,
@@ -2743,7 +2773,7 @@ composer-3-airflow-2.7.3-build.18, composer-3-airflow-2.9.1-build.8, and
 composer-3-airflow-2.9.1-build.9.</p>
 <hr />
 <h2 id="2025-10-09">2025-10-09</h2>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p><a href="https://cloud.google.com/composer/docs/composer-3/upgrade-environments#upgrade-check">Upgrade checks</a>
 are now generally available (GA) in Cloud Composer 3 and Cloud Composer 2.</p>
 <hr />
@@ -2785,7 +2815,7 @@ are available in Cloud Composer 2:</p>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-14-3-airflow-2-10-5">composer-2.14.3-airflow-2.10.5</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-14-3-airflow-2-9-3">composer-2.14.3-airflow-2.9.3</a></li>
 </ul>
-<h3 id="deprecated_7">Deprecated</h3>
+<h3 id="deprecated_8">Deprecated</h3>
 <p>The following Cloud Composer versions and builds have reached their
 <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
 composer-2.9.4-*, composer-3-airflow-2.9.1 builds from build.0 to build.7, and
@@ -2814,12 +2844,12 @@ before being set. As a result, the actual value was set to the evaluated result.
 mismatch between Airflow worker and GKE Control plane nodes.</p>
 <hr />
 <h2 id="2025-09-03">2025-09-03</h2>
-<h3 id="feature_10">Feature</h3>
+<h3 id="feature_11">Feature</h3>
 <p><em>(Cloud Composer 2)</em> Cloud Composer's high availability infrastructure was
 enhanced to provide greater resilience against zonal outages. This change rolls
 out gradually over several releases to all regions supported by
 Cloud Composer 2.</p>
-<h3 id="feature_11">Feature</h3>
+<h3 id="feature_12">Feature</h3>
 <p><em>(Available without upgrading)</em> Cloud Composer 3 now supports DNS resolution
 for
 <a href="https://cloud.google.com/vpc/docs/regional-service-endpoints">regional service endpoints</a>.
@@ -2829,7 +2859,7 @@ without additional configuration. For Private IP environments, an environment
 must be
 <a href="https://cloud.google.com/composer/docs/composer-3/connect-vpc-network">connected to a VPC network</a>
 where private endpoints are configured.</p>
-<h3 id="feature_12">Feature</h3>
+<h3 id="feature_13">Feature</h3>
 <p>You can now check if a Cloud Composer 2 environment's configuration
 <a href="https://cloud.google.com/composer/docs/composer-2/upgrade-environments#major-version-upgrade">is compatible with Cloud Composer 3</a>.
 We recommend doing this check before migrating to Cloud Composer 3.</p>
@@ -2847,13 +2877,13 @@ are available in Cloud Composer 2:</p>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-14-1-airflow-2-10-5">composer-2.14.1-airflow-2.10.5</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-14-1-airflow-2-9-3">composer-2.14.1-airflow-2.9.3</a></li>
 </ul>
-<h3 id="deprecated_8">Deprecated</h3>
+<h3 id="deprecated_9">Deprecated</h3>
 <p>The following Cloud Composer versions and builds have reached their
 <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
 composer-2.9.2-* and composer-2.9.3-*.</p>
 <hr />
 <h2 id="2025-08-21">2025-08-21</h2>
-<h3 id="feature_13">Feature</h3>
+<h3 id="feature_14">Feature</h3>
 <p>Improved the startup times of Airflow workers for environments that have a
 large number of custom PyPI packages installed.</p>
 <p>This feature was
@@ -2882,7 +2912,7 @@ are available in Cloud Composer 2:</p>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-14-0-airflow-2-10-5">composer-2.14.0-airflow-2.10.5</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-14-0-airflow-2-9-3">composer-2.14.0-airflow-2.9.3</a></li>
 </ul>
-<h3 id="deprecated_9">Deprecated</h3>
+<h3 id="deprecated_10">Deprecated</h3>
 <p>The following Cloud Composer versions and builds have reached their
 <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
 composer-2.9.0, composer-2.9.1, and composer-3-airflow-2.7.3 builds from build.5 to build.13.</p>
@@ -2895,14 +2925,14 @@ are available in Cloud Composer 2:</p>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-9-airflow-2-10-5">composer-2.13.9-airflow-2.10.5</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-9-airflow-2-9-3">composer-2.13.9-airflow-2.9.3</a></li>
 </ul>
-<h3 id="deprecated_10">Deprecated</h3>
+<h3 id="deprecated_11">Deprecated</h3>
 <p>Cloud Composer versions 2.8.7 and 2.8.8 have reached their
 <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>.</p>
 <h3 id="changed_26">Changed</h3>
 <p><em>(Cloud Composer 2)</em> Moved the <code>update_fab_perms</code> option from <code>[webserver]</code> to
 <code>[fab]</code> in the Airflow configuration. The corresponding deprecation warning is
 no longer generated in Airflow web server logs.</p>
-<h3 id="feature_14">Feature</h3>
+<h3 id="feature_15">Feature</h3>
 <p><em>(Airflow 2.10.5 only)</em> Added task-level resource consumption
 <a href="https://cloud.google.com/composer/docs/composer-3/monitor-environments">Airflow metrics</a>
 to Cloud Composer.</p>
@@ -2941,17 +2971,17 @@ are available in Cloud Composer 2:</p>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-8-airflow-2-10-5">composer-2.13.8-airflow-2.10.5</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-8-airflow-2-9-3">composer-2.13.8-airflow-2.9.3</a></li>
 </ul>
-<h3 id="deprecated_11">Deprecated</h3>
+<h3 id="deprecated_12">Deprecated</h3>
 <p>Cloud Composer version 2.8.6 has reached its
 <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>.</p>
 <hr />
 <h2 id="2025-07-24">2025-07-24</h2>
-<h3 id="feature_15">Feature</h3>
+<h3 id="feature_16">Feature</h3>
 <p><a href="https://cloud.google.com/composer/docs/composer-3/access-airflow-web-interface#restarting">Web server restarting</a>
 is is now generally available (GA) in Cloud Composer 2 and Cloud Composer 3.</p>
 <hr />
 <h2 id="2025-07-23">2025-07-23</h2>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p>If your environment uses <code>dag-factory</code> package version 0.22, then you might
 experience DAG failures in Cloud Composer versions that have
 <code>apache-airflow-providers-cncf-kubernetes</code> package version 10.4.2 or later. At
@@ -2979,7 +3009,7 @@ following:</p>
 </ul>
 <hr />
 <h2 id="2025-07-17">2025-07-17</h2>
-<h3 id="feature_16">Feature</h3>
+<h3 id="feature_17">Feature</h3>
 <p><a href="https://cloud.google.com/composer/docs/composer-3/set-up-highly-resilient-environments">Highly resilient environments</a> are now generally available (GA) in Cloud Composer 3.</p>
 <hr />
 <h2 id="2025-07-14">2025-07-14</h2>
@@ -2994,7 +3024,7 @@ following:</p>
 </ul>
 <hr />
 <h2 id="2025-07-09">2025-07-09</h2>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_6">Announcement</h3>
 <p>A new Cloud Composer release has started on <strong>July 9, 2025</strong>. Get ready for upcoming changes and features as we roll out the new release to all regions. This release is in progress at the moment. Listed changes and features might not be available in some regions yet.</p>
 <h3 id="changed_31">Changed</h3>
 <p>We are gradually rolling out a change that <strong>switches the default version</strong> from Cloud Composer 2 to Cloud Composer 3 in the Cloud Composer API.</p>
@@ -3014,7 +3044,7 @@ following:</p>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-5-airflow-2-10-5">composer-2.13.7-airflow-2.10.5</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-5-airflow-2-9-3">composer-2.13.7-airflow-2.9.3</a></li>
 </ul>
-<h3 id="deprecated_12">Deprecated</h3>
+<h3 id="deprecated_13">Deprecated</h3>
 <p>Cloud Composer versions 2.8.4 and 2.8.5 have reached their <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>.</p>
 <hr />
 <h2 id="2025-07-02">2025-07-02</h2>
@@ -3030,7 +3060,7 @@ following:</p>
 or upgrading your Cloud Composer 2 environments to a later version.</p>
 <hr />
 <h2 id="2025-07-01">2025-07-01</h2>
-<h3 id="announcement_6">Announcement</h3>
+<h3 id="announcement_7">Announcement</h3>
 <p>A new Cloud Composer release has started on <strong>July 1, 2025</strong>. This release is in progress at the moment. Listed changes might not be available in some regions yet.</p>
 <h3 id="changed_36">Changed</h3>
 <p>This release includes internal infrastructure improvements to Cloud Composer. There are no user-visible changes.</p>
@@ -3048,7 +3078,7 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
 </ul>
 <hr />
 <h2 id="2025-06-23">2025-06-23</h2>
-<h3 id="feature_17">Feature</h3>
+<h3 id="feature_18">Feature</h3>
 <p>Improved the startup times of Airflow workers for environments that have a large number of custom PyPI packages installed.</p>
 <p>This feature <a href="https://cloud.google.com/composer/docs/release-notes#June_02_2025">was announced previously</a> and is gradually rolling out over several releases. In this release, it's available in asia-east2, asia-northeast3, europe-central2, europe-west9, me-central1, me-west1, northamerica-northeast1, northamerica-northeast2, northamerica-south1, and us-west1 re</p>
 <h3 id="fixed_19">Fixed</h3>
@@ -3067,11 +3097,11 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-5-airflow-2-10-5">composer-2.13.5-airflow-2.10.5</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-5-airflow-2-9-3">composer-2.13.5-airflow-2.9.3</a></li>
 </ul>
-<h3 id="deprecated_13">Deprecated</h3>
+<h3 id="deprecated_14">Deprecated</h3>
 <p>Cloud Composer version 2.8.3 has reached its <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>.</p>
 <hr />
 <h2 id="2025-06-16">2025-06-16</h2>
-<h3 id="announcement_7">Announcement</h3>
+<h3 id="announcement_8">Announcement</h3>
 <p>We're planning to phase out the APIs that aren't required by Cloud Composer 3.</p>
 <ul>
 <li>
@@ -3094,11 +3124,11 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
 </ul>
 <hr />
 <h2 id="2025-06-13">2025-06-13</h2>
-<h3 id="feature_18">Feature</h3>
+<h3 id="feature_19">Feature</h3>
 <p>Cloud Composer pages in the Cloud Console now support the dark color theme. You can switch to the dark theme on the <a href="https://console.cloud.google.com/user-preferences/appearance">Appearance page</a> in the Cloud Console.</p>
 <hr />
 <h2 id="2025-06-10">2025-06-10</h2>
-<h3 id="announcement_8">Announcement</h3>
+<h3 id="announcement_9">Announcement</h3>
 <p>A new Cloud Composer release has started on <strong>June 10, 2025</strong>. Get ready for upcoming changes and features as we roll out the new release to all regions. This release is in progress at the moment. Listed changes and features might not be available in some regions yet.</p>
 <h3 id="fixed_20">Fixed</h3>
 <p>Fixed an issue that caused Airflow worker and scheduler Pods to be evicted when a large number of tasks was executed.</p>
@@ -3114,11 +3144,11 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-4-airflow-2-10-5">composer-2.13.4-airflow-2.10.5</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-4-airflow-2-9-3">composer-2.13.4-airflow-2.9.3</a></li>
 </ul>
-<h3 id="deprecated_14">Deprecated</h3>
+<h3 id="deprecated_15">Deprecated</h3>
 <p>Cloud Composer version 2.8.2 has reached its <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>.</p>
 <hr />
 <h2 id="2025-06-02">2025-06-02</h2>
-<h3 id="feature_19">Feature</h3>
+<h3 id="feature_20">Feature</h3>
 <p>Improved the startup times of Airflow workers for environments that have a large number of custom PyPI packages installed.</p>
 <p>This change rolls out gradually. In this release, it's available in asia-east1, asia-northeast2, asia-south1, europe-north1, europe-west3, us-east1, us-south1, and us-west2 regions.</p>
 <h3 id="changed_44">Changed</h3>
@@ -3142,11 +3172,11 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-3-airflow-2-10-5">composer-2.13.3-airflow-2.10.5</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-13-3-airflow-2-9-3">composer-2.13.3-airflow-2.9.3</a></li>
 </ul>
-<h3 id="deprecated_15">Deprecated</h3>
+<h3 id="deprecated_16">Deprecated</h3>
 <p>Cloud Composer version 2.8.1 has reached its <a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>.</p>
 <hr />
 <h2 id="2025-05-29">2025-05-29</h2>
-<h3 id="feature_20">Feature</h3>
+<h3 id="feature_21">Feature</h3>
 <p>The <a href="https://cloud.google.com/composer/docs/composer-3/run-local-airflow-environments">Composer Local Development CLI tool</a> is now available in Cloud Composer 3. This tool helps to streamline testing and developing by providing local Airflow environments based on Airflow builds used by Cloud Composer 3.</p>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
@@ -3159,6 +3189,9 @@ or upgrading your Cloud Composer 2 environments to a later version.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-composer">Cloud Composer</a></li>
+          <li class="nav-item">
+            <a href="#2026-02-16" class="nav-link">2026-02-16</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-02-10" class="nav-link">2026-02-10</a>
           </li>

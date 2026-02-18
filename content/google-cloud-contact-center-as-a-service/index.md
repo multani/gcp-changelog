@@ -1,5 +1,92 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-02-17
+
+### Fixed
+
+The following issues were addressed in this release:
+
+* Fixed the following issues with the standard (non-advanced reporting)
+  dashboards:
+
+  + The **Dashboard > Queue Reports** dashboard had broken table
+    headers.
+  + The **Dashboard > Call** dashboard was missing metrics labels
+    in the **LOGGED IN AGENT** tile.
+* Fixed an issue where calls were mistakenly saved in MP3 format rather than
+  WAV format in external storage.
+* Fixed an issue that occurred after an agent put an end-user on hold,
+  transferred the call to another agent, and then left the call. When the
+  remaining agent took the end-user off hold, the agent and the end-user
+  couldn't hear each other.
+* Fixed an issue with NICE WFM export where queue abandoned calls were
+  inaccurately reported to the WFM system.
+* Fixed an issue where the **Assign Human Agents** page for queues appeared
+  blank, preventing administrators from viewing or managing agent assignments.
+* Fixed an issue where an email with a message ID longer than 255 characters
+  failed to process and blocked the processing of other emails.
+* Fixed an issue where agents in the **In-email** status didn't receive
+  incoming calls or chats.
+* Fixed an issue where CSAT ratings were missing from metadata files and raw
+  data exports.
+* Fixed an issue where Salesforce integrations incorrectly created duplicate
+  cases for a single outbound call.
+* Fixed an issue where unsupported settings, such as **Cascade Conditions**
+  and **Wrap-up settings**, mistakenly appeared in the queue menu settings for
+  Apple Messages for Business queues.
+* Fixed an issue where attempting to barge into a chat while monitoring it
+  returned a `You are already in Chat` error instead of completing the action.
+* Fixed an agent desktop issue where the **New photo received** banner
+  reappeared after viewing a photo and switching between active chat tabs.
+* Fixed an issue where Direct Access Points failed to route calls correctly
+  for SIP URIs with spaces or non-standard formats.
+* Fixed an issue where an agent's personal contact name was mistakenly
+  displayed as the caller ID to other agents when they received a call from
+  the agent.
+* Fixed an issue where agents appeared as `Available` in the **Agent Activity
+  Timeline** report after signing out.
+
+### Announcement
+
+**Google Cloud CCaaS 4.0**
+
+We've released version 4.0 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**Raw data export: new call\_participants data type**
+
+We've added the `call_participants` data type to raw data export. This data type
+helps you track the following escalation details for wait-time virtual agents:
+
+* The amount of time the wait-time virtual agent spent in queue.
+* The number of events sent to the wait-time virtual agent while it was in
+  queue.
+
+For more information, see [Raw data export
+dictionary](https://docs.cloud.google.com/contact-center/ccai-platform/docs/raw-data-export-dictionary).
+
+### Feature
+
+**Salesforce Service Cloud: new secondary lookup object**
+
+The Salesforce Service Cloud integration can now use a secondary lookup object
+to identify customer records when the primary lookup object returns no results.
+This helps prevent the creation of duplicate records.
+
+Administrators: When you click **Settings > Developer Settings
+> CRM > Salesforce > SFDC Cloud Selection
+> Service Cloud**, a new **Secondary Lookup Object** checkbox appears
+in the **Account Lookup** section.
+
+For more information, see [Configure account lookup and field
+mapping](https://docs.cloud.google.com/contact-center/ccai-platform/docs/salesforce-integration-guide#configure-account-lookup).
+
+---
 ## 2026-02-03
 
 ### Fixed

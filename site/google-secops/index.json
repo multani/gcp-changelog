@@ -1,6 +1,24 @@
 {
   "name": "Google SecOps",
   "entries": {
+    "2026-02-17": [
+      {
+        "kind": "Change",
+        "content": "After March 17, 2026, when you enable Google SecOps, the Google SecOps MCP server is automatically enabled.",
+        "summary": {
+          "title": "SecOps MCP server enabled by default",
+          "summary": "Starting March 17, 2026, the SecOps MCP server will be automatically enabled whenever you enable Google SecOps. This change simplifies setup and ensures core functionality is active from the outset."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "Control of MCP use with organization policies is deprecated. After March 17, 2026, organization policies that use the `gcp.managed.allowedMCPServices` constraint won't work, and you can control MCP use with IAM deny policies. For more information about controlling MCP use, see [Control MCP use with IAM](https://docs.cloud.google.com/mcp/control-mcp-use-iam).",
+        "summary": {
+          "title": "Control of MCP use deprecated",
+          "summary": "Control of MCP use with organization policies is deprecated and will stop working after March 17, 2026. You can now control MCP use with IAM deny policies. For more information, see the documentation on controlling MCP use with IAM."
+        }
+      }
+    ],
     "2026-02-12": [
       {
         "kind": "Feature",

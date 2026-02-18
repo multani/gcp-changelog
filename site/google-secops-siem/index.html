@@ -2316,6 +2316,12 @@
 
 
 <h1 id="google-secops-siem">Google SecOps SIEM</h1>
+<h2 id="2026-02-17">2026-02-17</h2>
+<h3 id="change">Change</h3>
+<p>After March 17, 2026, when you enable Google SecOps, the Google SecOps MCP server is automatically enabled.</p>
+<h3 id="deprecated">Deprecated</h3>
+<p>Control of MCP use with organization policies is deprecated. After March 17, 2026, organization policies that use the <code>gcp.managed.allowedMCPServices</code> constraint won't work, and you can control MCP use with IAM deny policies. For more information about controlling MCP use, see <a href="https://docs.cloud.google.com/mcp/control-mcp-use-iam">Control MCP use with IAM</a>.</p>
+<hr />
 <h2 id="2026-02-15">2026-02-15</h2>
 <h3 id="announcement">Announcement</h3>
 <p>Release 6.3.76 is being rolled out to the first phase of regions as listed <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
@@ -2507,7 +2513,7 @@ consistent analysis across teams.</p>
 <p>Google SecOps now lets you share custom sets of columns in the <strong>Events</strong> table for
 consistent analysis across teams.</p>
 <p>For more details, see <a href="https://cloud.google.com/chronicle/docs/investigation/udm-search">Search for events and alerts</a></p>
-<h3 id="deprecated">Deprecated</h3>
+<h3 id="deprecated_1">Deprecated</h3>
 <p><strong>Mute an IoC deprecated</strong></p>
 <p>The Mute an IoC feature is deprecated, and the <strong>IOC details</strong> page no longer displays the <strong>Mute</strong> indicator.</p>
 <h3 id="announcement_8">Announcement</h3>
@@ -2530,7 +2536,7 @@ grant global scope to those who require continued access to these threat
 intelligence features.</p>
 <p><strong>Note:</strong> This change follows a phased rollout throughout the week of
 February 02, 2026 to February 08, 2026.</p>
-<h3 id="deprecated_1">Deprecated</h3>
+<h3 id="deprecated_2">Deprecated</h3>
 <p><strong>Mute an IoC deprecated</strong></p>
 <p>The Mute an IoC feature is deprecated, and the <strong>IOC details</strong> page no longer displays the <strong>Mute</strong> indicator.</p>
 <h3 id="announcement_9">Announcement</h3>
@@ -2555,7 +2561,7 @@ intelligence features.</p>
 February 02, 2026 to February 08, 2026.</p>
 <hr />
 <h2 id="2026-02-02">2026-02-02</h2>
-<h3 id="change">Change</h3>
+<h3 id="change_1">Change</h3>
 <p>Google SecOps has updated the list of supported default parsers. Updates
 propagate gradually; changes typically appear in your region within one to four
 business days. For more information, see
@@ -2836,7 +2842,7 @@ released default parsers and pending parser updates.</p>
 <li>Witness AI Control (<code>WITNESS_AI_CONTROL</code>)</li>
 <li>Zendesk Advanced Data Privacy and Protection (<code>ZENDESK_ADPP</code>)</li>
 </ul>
-<h3 id="change_1">Change</h3>
+<h3 id="change_2">Change</h3>
 <p>Google SecOps has updated the list of supported default parsers. Updates
 propagate gradually; changes typically appear in your region within one to four
 business days. For more information, see
@@ -3119,11 +3125,11 @@ released default parsers and pending parser updates.</p>
 </ul>
 <hr />
 <h2 id="2026-02-01">2026-02-01</h2>
-<h3 id="change_2">Change</h3>
+<h3 id="change_3">Change</h3>
 <p>The <strong>Case Federation</strong> feature is no longer dependent on the <strong>Case Federation</strong> integration in the primary platform.</p>
 <p>The primary platform sync job is now disabled. Do not attempt to re-enable it.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/environments/case-federation-secops">Set up federated case access for SecOps</a>.</p>
-<h3 id="change_3">Change</h3>
+<h3 id="change_4">Change</h3>
 <p>The <strong>Case Federation</strong> feature is no longer dependent on the <strong>Case Federation</strong> integration in the primary platform.</p>
 <p>The primary platform sync job is now disabled. Do not attempt to re-enable it.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/environments/case-federation">Set up case federation access for SOAR</a>.</p>
@@ -3357,10 +3363,10 @@ supported for event searches, and results remain limited to a maximum of 1M even
 <h3 id="announcement_26">Announcement</h3>
 <p>Release 6.3.71 is being rolled out to the first phase of regions as listed <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
 <p>This release contains the following changes:</p>
-<h3 id="change_4">Change</h3>
+<h3 id="change_5">Change</h3>
 <p><strong>Terminate Playbook capability</strong></p>
 <p>You can now manually terminate a running playbook directly from the Playbook Viewer in the Case Overview. This provides a mechanism to immediately end execution if a loop encounters unwanted or excessive iterations.</p>
-<h3 id="change_5">Change</h3>
+<h3 id="change_6">Change</h3>
 <p><strong>Increased iteration and step limits for Playbook Loops</strong></p>
 <p>To support larger automation requirements, the maximum number of iterations for a single loop has been increased to 1,000, and the number of supported steps within a loop has been increased to 100.</p>
 <h3 id="announcement_27">Announcement</h3>
@@ -3373,12 +3379,12 @@ For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/
 <p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#December_14_2025">Release 6.3.70</a> is now available for all regions.</p>
 <hr />
 <h2 id="2026-01-07">2026-01-07</h2>
-<h3 id="change_6">Change</h3>
+<h3 id="change_7">Change</h3>
 <p><strong>Expanded capabilities for Gemini in SecOps</strong></p>
 <p>You can now use the Gemini assistant in Google SecOps to answer questions beyond the scope of security or the product. You can integrate the full power of Gemini (for example, general knowledge, coding, and data analysis) without switching tabs or leaving your workflow.</p>
 <p>For more information, see
 <a href="https://docs.cloud.google.com/chronicle/docs/secops/gemini-chronicle">Gemini in Google SecOps</a>.</p>
-<h3 id="change_7">Change</h3>
+<h3 id="change_8">Change</h3>
 <p><strong>Expanded capabilities for Gemini in SecOps</strong></p>
 <p>You can now use the Gemini assistant in Google SecOps to answer questions beyond the scope of security or the product. You can integrate the full power of Gemini (for example, general knowledge, coding, and data analysis) without switching tabs or leaving your workflow.</p>
 <p>For more information, see
@@ -3483,7 +3489,7 @@ query syntax.</p>
 <p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#November_16_2025">Release 6.3.68</a> is now available for all regions.</p>
 <hr />
 <h2 id="2025-12-03">2025-12-03</h2>
-<h3 id="change_8">Change</h3>
+<h3 id="change_9">Change</h3>
 <p>Google SecOps has updated the list of supported default parsers. Parsers are updated gradually, so it might take one to four days before you see the changes reflected in your region.</p>
 <p>The following supported default parsers have been updated. Each parser is listed by product name and <code>log_type</code> value, where applicable. This list includes both released default parsers and pending parser updates.</p>
 <ul>
@@ -3802,7 +3808,7 @@ query syntax.</p>
 <li>Zimbra Mail (<code>ZIMBRA_MAIL</code>)</li>
 <li>Zscaler Email DLP (<code>ZSCALER_EMAIL_DLP</code>)</li>
 </ul>
-<h3 id="change_9">Change</h3>
+<h3 id="change_10">Change</h3>
 <p>Google SecOps has updated the list of supported default parsers. Parsers are updated gradually, so it might take one to four days before you see the changes reflected in your region.</p>
 <p>The following supported default parsers have been updated. Each parser is listed by product name and <code>log_type</code> value, where applicable. This list includes both released default parsers and pending parser updates.</p>
 <ul>
@@ -4959,9 +4965,9 @@ aggregates a wealth of threat intelligence data.</p>
 <p><strong>Get Alert Details</strong></p>
 </li>
 </ul>
-<h3 id="deprecated_2">Deprecated</h3>
-<p>The Netskope v1 API feed has been deprecated by Netskope. If you are using the Netskope REST API v1 with Google SecOps, you must switch to the Netskope REST API v2.</p>
 <h3 id="deprecated_3">Deprecated</h3>
+<p>The Netskope v1 API feed has been deprecated by Netskope. If you are using the Netskope REST API v1 with Google SecOps, you must switch to the Netskope REST API v2.</p>
+<h3 id="deprecated_4">Deprecated</h3>
 <p>The Netskope v1 API feed has been deprecated by Netskope. If you are using the Netskope REST API v1 with Google SecOps, you must switch to the Netskope REST API v2.</p>
 <hr />
 <h2 id="2025-10-09">2025-10-09</h2>
@@ -6787,6 +6793,9 @@ sources directly within a single query.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-secops-siem">Google SecOps SIEM</a></li>
+          <li class="nav-item">
+            <a href="#2026-02-17" class="nav-link">2026-02-17</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-02-15" class="nav-link">2026-02-15</a>
           </li>

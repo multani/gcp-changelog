@@ -1,6 +1,40 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
+    "2026-02-17": [
+      {
+        "kind": "Fixed",
+        "content": "The following issues were addressed in this release:\n\n* Fixed the following issues with the standard (non-advanced reporting)\n  dashboards:\n\n  + The **Dashboard > Queue Reports** dashboard had broken table\n    headers.\n  + The **Dashboard > Call** dashboard was missing metrics labels\n    in the **LOGGED IN AGENT** tile.\n* Fixed an issue where calls were mistakenly saved in MP3 format rather than\n  WAV format in external storage.\n* Fixed an issue that occurred after an agent put an end-user on hold,\n  transferred the call to another agent, and then left the call. When the\n  remaining agent took the end-user off hold, the agent and the end-user\n  couldn't hear each other.\n* Fixed an issue with NICE WFM export where queue abandoned calls were\n  inaccurately reported to the WFM system.\n* Fixed an issue where the **Assign Human Agents** page for queues appeared\n  blank, preventing administrators from viewing or managing agent assignments.\n* Fixed an issue where an email with a message ID longer than 255 characters\n  failed to process and blocked the processing of other emails.\n* Fixed an issue where agents in the **In-email** status didn't receive\n  incoming calls or chats.\n* Fixed an issue where CSAT ratings were missing from metadata files and raw\n  data exports.\n* Fixed an issue where Salesforce integrations incorrectly created duplicate\n  cases for a single outbound call.\n* Fixed an issue where unsupported settings, such as **Cascade Conditions**\n  and **Wrap-up settings**, mistakenly appeared in the queue menu settings for\n  Apple Messages for Business queues.\n* Fixed an issue where attempting to barge into a chat while monitoring it\n  returned a `You are already in Chat` error instead of completing the action.\n* Fixed an agent desktop issue where the **New photo received** banner\n  reappeared after viewing a photo and switching between active chat tabs.\n* Fixed an issue where Direct Access Points failed to route calls correctly\n  for SIP URIs with spaces or non-standard formats.\n* Fixed an issue where an agent's personal contact name was mistakenly\n  displayed as the caller ID to other agents when they received a call from\n  the agent.\n* Fixed an issue where agents appeared as `Available` in the **Agent Activity\n  Timeline** report after signing out.",
+        "summary": {
+          "title": "Resolved Issues in Recent Update",
+          "summary": "This release addresses several critical issues, including problems with dashboard reporting, call recording formats, agent hold and transfer functionality, and integration errors. Updates also improve agent experience by fixing issues with chat barge-in, notifications, and availability status reporting."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS 4.0**\n\nWe've released version 4.0 of Google Cloud CCaaS.\n\nThe timing of the update to your instance depends on the deployment schedule\nthat you have chosen. For more information, see [Deployment\nschedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).",
+        "summary": {
+          "title": "CCaaS 4.0 Released",
+          "summary": "The latest version of Google Cloud CCaaS, version 4.0, has been released. The update timing for your instance will follow your chosen deployment schedule."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Raw data export: new call\\_participants data type**\n\nWe've added the `call_participants` data type to raw data export. This data type\nhelps you track the following escalation details for wait-time virtual agents:\n\n* The amount of time the wait-time virtual agent spent in queue.\n* The number of events sent to the wait-time virtual agent while it was in\n  queue.\n\nFor more information, see [Raw data export\ndictionary](https://docs.cloud.google.com/contact-center/ccai-platform/docs/raw-data-export-dictionary).",
+        "summary": {
+          "title": "New call participants data type for raw data export",
+          "summary": "We've added the call_participants data type to raw data export. This new data type allows you to track wait-time virtual agent queue duration and event counts. This enhancement provides deeper insights into virtual agent performance during wait times."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Salesforce Service Cloud: new secondary lookup object**\n\nThe Salesforce Service Cloud integration can now use a secondary lookup object\nto identify customer records when the primary lookup object returns no results.\nThis helps prevent the creation of duplicate records.\n\nAdministrators: When you click **Settings > Developer Settings\n> CRM > Salesforce > SFDC Cloud Selection\n> Service Cloud**, a new **Secondary Lookup Object** checkbox appears\nin the **Account Lookup** section.\n\nFor more information, see [Configure account lookup and field\nmapping](https://docs.cloud.google.com/contact-center/ccai-platform/docs/salesforce-integration-guide#configure-account-lookup).",
+        "summary": {
+          "title": "Service Cloud: improved customer record identification",
+          "summary": "Salesforce Service Cloud now supports a secondary lookup object to identify customer records, preventing the creation of duplicates when the primary lookup fails. This enhancement improves data accuracy and management within the integration."
+        }
+      }
+    ],
     "2026-02-03": [
       {
         "kind": "Fixed",

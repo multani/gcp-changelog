@@ -1,5 +1,25 @@
 # Cloud SQL for SQL Server
 
+## 2026-02-18
+
+### Deprecated
+
+Control of MCP use with organization policies is deprecated.
+After March 17, 2026, organization policies that use the
+`gcp.managed.allowedMCPServices` constraint won't work,
+and you can control MCP use with IAM deny policies.
+For more information about controlling MCP use, see
+[Control MCP use with IAM](https://docs.cloud.google.com/mcp/control-mcp-use-iam).
+
+### Change
+
+After March 17, 2026, when you enable the Cloud SQL Admin API
+(`sqladmin.googleapis.com`), the Cloud SQL remote MCP server is
+enabled automatically.
+
+The Cloud SQL remote MCP server is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-02-17
 
 ### Announcement

@@ -1,6 +1,24 @@
 {
   "name": "Compute Engine",
   "entries": {
+    "2026-02-17": [
+      {
+        "kind": "Change",
+        "content": "After March 17, 2026, when you enable Compute Engine,\nthe Compute Engine MCP server is automatically enabled.",
+        "summary": {
+          "title": "MCP Server Auto-Enabled for Compute Engine",
+          "summary": "Starting March 17, 2026, the Compute Engine MCP server will be automatically enabled whenever Compute Engine is activated. This change ensures enhanced functionality is readily available upon setup."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "Control of MCP use with organization policies is deprecated. After March 17, 2026,\norganization policies that use the `gcp.managed.allowedMCPServices` constraint\nwon't work, and you can control MCP use with IAM deny policies.\nFor more information about controlling MCP use, see [Control MCP use with IAM](https://docs.cloud.google.com/mcp/control-mcp-use-iam).",
+        "summary": {
+          "title": "Control of MCP use deprecated",
+          "summary": "Organization policies for controlling MCP use are deprecated as of March 17, 2026. After this date, these policies will no longer function. Instead, you can manage MCP usage through IAM deny policies. For detailed guidance, refer to the documentation on controlling MCP use with IAM."
+        }
+      }
+    ],
     "2026-02-12": [
       {
         "kind": "Feature",

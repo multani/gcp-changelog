@@ -1,5 +1,23 @@
 # SAP on Google Cloud
 
+## 2026-02-18
+
+### Announcement
+
+**New SAP HANA certifications for OLAP and OLTP workloads**
+
+For use with SAP HANA, SAP has certified the following:
+
+* You can use the `m3-ultramem-128`, `m4-hypermem-64`, `x4-480-6t-metal`,
+  `x4-480-8t-metal`, and `x4-960-12t-metal` machine types to run OLAP
+  workloads in scale-out configurations with up to 8 nodes.
+* You can use the `x4-480-8t-metal` and `x4-960-12t-metal` machine types to run
+  OLTP workloads in scale-out configurations with up to 4 nodes.
+
+For more information, see
+[Certified Compute Engine machine types for SAP HANA](https://docs.cloud.google.com/sap/docs/certifications-sap-hana#certified-vms).
+
+---
 ## 2026-02-05
 
 ### Announcement

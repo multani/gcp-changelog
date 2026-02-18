@@ -1,5 +1,18 @@
 # Spanner
 
+## 2026-02-17
+
+### Announcement
+
+New best practices are available for securing generative AI agents using
+Model Context Protocol (MCP) with Google Cloud databases. This guide covers
+key security measures like least privilege, native database controls, and secure
+agent design to help you build safer AI applications. For more information, see
+[Best practices for securing agent interactions with Model Context Protocol](https://docs.cloud.google.com/spanner/docs/secure-agent-interactions-mcp).
+
+This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-02-10
 
 ### Feature

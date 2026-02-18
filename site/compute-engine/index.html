@@ -2271,6 +2271,18 @@
   </li>
                         </ul>
                       </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Workflows <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../workflows/" class="dropdown-item">Workflows</a>
+  </li>
+                        </ul>
+                      </li>
                 </ul>
               </nav>
 
@@ -2316,6 +2328,16 @@
 
 
 <h1 id="compute-engine">Compute Engine</h1>
+<h2 id="2026-02-17">2026-02-17</h2>
+<h3 id="change">Change</h3>
+<p>After March 17, 2026, when you enable Compute Engine,
+the Compute Engine MCP server is automatically enabled.</p>
+<h3 id="deprecated">Deprecated</h3>
+<p>Control of MCP use with organization policies is deprecated. After March 17, 2026,
+organization policies that use the <code>gcp.managed.allowedMCPServices</code> constraint
+won't work, and you can control MCP use with IAM deny policies.
+For more information about controlling MCP use, see <a href="https://docs.cloud.google.com/mcp/control-mcp-use-iam">Control MCP use with IAM</a>.</p>
+<hr />
 <h2 id="2026-02-12">2026-02-12</h2>
 <h3 id="feature">Feature</h3>
 <p><strong>Generally available</strong>: You can use instance flexibility to improve resource availability when creating VMs in bulk in a region. With instance flexibility, you specify one or more suitable machine types for your workload. Compute Engine then provisions VMs from the list of machine types based on capacity and quota availability.</p>
@@ -2345,7 +2367,7 @@ more information, see
 <a href="https://docs.cloud.google.com/compute/docs/instance-groups/about-instance-flexibility#instance_flexibility_and_autoscaling">About instance flexibility</a>.</p>
 <hr />
 <h2 id="2026-02-06">2026-02-06</h2>
-<h3 id="change">Change</h3>
+<h3 id="change_1">Change</h3>
 <p>Expanded coverage for compute flexible committed use discounts (CUDs) is
 available to all Cloud Billing accounts. All Cloud Billing accounts have
 been automatically migrated to the
@@ -2931,7 +2953,7 @@ regions and zones, see
 <h3 id="feature_51">Feature</h3>
 <p><strong>Generally Available</strong>: The storage-optimized Z3 machine series offers a bare metal (<code>z3-highmem-192-highlssd-metal</code>) machine type with 192 vCPUs, 1,536 GB of memory, and 72 TiB of Local SSD storage.</p>
 <p>Bare metal instances let you create an instance with direct access to the machine's CPU and memory, without a virtualization layer in the middle. Z3 uses <a href="https://cloud.google.com/titanium">Titanium</a> to deliver more compute and memory resources for your workloads by offloading network and I/O processing from the host hardware. To learn more, see <a href="https://cloud.google.com/compute/docs/storage-optimized-machines#z3_series">Z3 machine series</a>. For information about bare metal instances, including regional availability, see <a href="https://cloud.google.com/compute/docs/instances/bare-metal-instances">Bare metal instances on Compute Engine</a>.</p>
-<h3 id="deprecated">Deprecated</h3>
+<h3 id="deprecated_1">Deprecated</h3>
 <p>The Compute Engine feature that deploys containers on VMs during VM creation is deprecated. For more information about the alternative solutions for running containers on VMs and MIGs, see <a href="https://cloud.google.com/compute/docs/deprecations/container-startup-agent-on-compute">Compute Engine container startup agent deprecation</a>.</p>
 <hr />
 <h2 id="2025-07-30">2025-07-30</h2>
@@ -3099,6 +3121,9 @@ in, see
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#compute-engine">Compute Engine</a></li>
+          <li class="nav-item">
+            <a href="#2026-02-17" class="nav-link">2026-02-17</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-02-12" class="nav-link">2026-02-12</a>
           </li>

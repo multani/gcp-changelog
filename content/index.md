@@ -186,4 +186,5 @@
 - [Vertex AI Search](vertex-ai-search/index.md)
 - [Vertex AI Workbench](vertex-ai-workbench/index.md)
 - [Virtual Private Cloud](virtual-private-cloud/index.md)
+- [Workflows](workflows/index.md)
 - [reCAPTCHA](recaptcha/index.md)

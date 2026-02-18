@@ -1,6 +1,24 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2026-02-17": [
+      {
+        "kind": "Deprecated",
+        "content": "Control of MCP use with organization policies is deprecated. After March 17,\n2026, organization policies that use the `gcp.managed.allowedMCPServices`\nconstraint won't work, and you can control MCP use with IAM deny policies. For\nmore information about controlling MCP use, see\n[Control MCP use with IAM](https://docs.cloud.google.com/mcp/control-mcp-use-iam).",
+        "summary": {
+          "title": "MCP Use Control Deprecated",
+          "summary": "Control of MCP use with organization policies is deprecated and will stop working after March 17, 2026. IAM deny policies are the recommended alternative for managing MCP usage. Further details can be found in the documentation on controlling MCP use with IAM."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "After March 17, 2026, when you enable GKE, the GKE\nMCP server is automatically enabled.",
+        "summary": {
+          "title": "GKE MCP server enabled by default",
+          "summary": "Starting March 17, 2026, the GKE MCP server will be automatically enabled whenever you enable GKE. This change ensures that the MCP server is active by default for new GKE installations."
+        }
+      }
+    ],
     "2026-02-13": [
       {
         "kind": "Feature",

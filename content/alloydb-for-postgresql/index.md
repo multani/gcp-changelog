@@ -4,6 +4,27 @@
 
 ### Feature
 
+AlloyDB [performance snapshot and reports](https://docs.cloud.google.com/alloydb/docs/optimize-database-performance-compare-snapshots) now support read pool instance nodes, providing deeper observability into read operations and replica-specific performance issues.
+
+### Announcement
+
+New best practices are available for securing generative AI agents using Model
+Context Protocol (MCP) with Google Cloud databases. This guide covers key
+security measures like least privilege, native database controls, and secure
+agent design to help you build safer AI applications. For more information, see
+[Best practices for securing agent interactions with Model Context Protocol](https://docs.cloud.google.com/alloydb/docs/ai/secure-agent-interactions-mcp).
+
+### Feature
+
+You can now make AI function calls in bulk rather than row-by-row, which lets you
+scale your intelligent workflows faster with new support for array-based
+processing. For more information, see
+[Perform intelligent SQL queries using AI functions](https://docs.cloud.google.com/alloydb/docs/ai/evaluate-semantic-queries-ai-operators).
+
+This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
 You can now use the [AlloyDB remote MCP server](https://docs.cloud.google.com/alloydb/docs/ai/use-alloydb-mcp).
 The AlloyDB remote MCP server lets you interact easily with AlloyDB clusters
 from LLMs, AI applications, and AI-enabled development platforms.

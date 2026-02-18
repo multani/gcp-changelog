@@ -2317,6 +2317,61 @@
 
 <h1 id="generative-ai-on-vertex-ai">Generative AI on Vertex AI</h1>
 <h2 id="2026-02-17">2026-02-17</h2>
+<h3 id="deprecated">Deprecated</h3>
+<p><strong>Image generation preview endpoints deprecation</strong></p>
+<p>The following table describes image generation endpoints that are deprecated and
+their replacements. We recommend updating your model endpoints before March 19,
+2026, to avoid service disruption.</p>
+<table>
+<thead>
+<tr>
+<th>Discontinued endpoints</th>
+<th>Recommended endpoint migration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>gemini-2.0-flash-image-generation-preview</code></td>
+<td><code>gemini-2.5-flash-image</code></td>
+</tr>
+<tr>
+<td><code>gemini-2.5-flash-image-generation-preview</code></td>
+<td><code>imagen-4.0-generate-001</code> or <code>gemini-2.5-flash-image</code></td>
+</tr>
+<tr>
+<td><code>imagen-4.0-generate-preview-05-20</code></td>
+<td><code>imagen-4.0-generate-001</code> or <code>gemini-2.5-flash-image</code></td>
+</tr>
+<tr>
+<td><code>imagen-4.0-generate-preview-06-06</code></td>
+<td><code>imagen-4.0-generate-001</code> or <code>gemini-2.5-flash-image</code></td>
+</tr>
+<tr>
+<td><code>imagen-4.0-ultra-generate-preview-06-06</code></td>
+<td><code>imagen-4.0-generate-001</code> or <code>gemini-2.5-flash-image</code></td>
+</tr>
+<tr>
+<td><code>imagen-4.0-fast-generate-preview-05-20</code></td>
+<td><code>imagen-4.0-generate-001</code> or <code>gemini-2.5-flash-image</code></td>
+</tr>
+<tr>
+<td><code>imagen-product-recontext-preview-06-30</code></td>
+<td><code>gemini-2.5-flash-image</code></td>
+</tr>
+<tr>
+<td><code>imagen-2.0-edit-preview-0627</code></td>
+<td><code>gemini-2.5-flash-image</code></td>
+</tr>
+<tr>
+<td><code>virtual-try-on-preview-08-04</code></td>
+<td><code>virtual-try-on-001</code></td>
+</tr>
+<tr>
+<td><code>imagen-4.0-ingredients-preview</code></td>
+<td><code>gemini-2.5-flash-image</code></td>
+</tr>
+</tbody>
+</table>
 <h3 id="feature">Feature</h3>
 <p><strong>Anthropic's Claude Sonnet 4.6</strong></p>
 <p><a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/partner-models/claude/sonnet-4-6">Claude Sonnet 4.6</a>
@@ -2379,7 +2434,7 @@ GLM 4.7 is available as a managed API in Model Garden. To learn more, see
 <a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/maas/zai-org/glm-47">GLM 4.7</a>.</p>
 <hr />
 <h2 id="2026-01-05">2026-01-05</h2>
-<h3 id="deprecated">Deprecated</h3>
+<h3 id="deprecated_1">Deprecated</h3>
 <p><strong>Anthropic's Claude 3.5 Haiku</strong></p>
 <p>Anthropic's Claude 3.5 Haiku is deprecated as of January 5, 2026 and will be
 shut down on July 5, 2026. For more information, see
@@ -2534,7 +2589,7 @@ Kimi K2 Thinking is available as a managed API in Model Garden. To learn more, s
 <a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/maas/kimi/kimi-k2-thinking">Kimi K2 Thinking</a>.</p>
 <hr />
 <h2 id="2025-11-11">2025-11-11</h2>
-<h3 id="deprecated_1">Deprecated</h3>
+<h3 id="deprecated_2">Deprecated</h3>
 <p><strong>Anthropic's Claude 3.7 Sonnet</strong></p>
 <p>Anthropic's Claude 3.7 Sonnet is deprecated as of November 11, 2025 and will be
 shut down on May 11, 2026. For more information, see
@@ -2651,13 +2706,13 @@ Preview</a></p>
 </ul>
 <hr />
 <h2 id="2025-10-14">2025-10-14</h2>
-<h3 id="deprecated_2">Deprecated</h3>
+<h3 id="deprecated_3">Deprecated</h3>
 <p><strong>Imagen subject and style fine-tuning</strong></p>
 <p>Imagen subject model and style model tuning will be removed on
 December 31, 2025. We recommend that you use <a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash-image">Gemini 2.5 Flash Image</a>, which supports most use cases that require
 fine-tuning. For more information, see  <a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-editing">Edit images with
 Gemini</a>.</p>
-<h3 id="deprecated_3">Deprecated</h3>
+<h3 id="deprecated_4">Deprecated</h3>
 <p><strong>Imagen 4 preview models</strong></p>
 <p>The following Imagen 4 preview models will be removed on
 November 30, 2025 :
@@ -2737,7 +2792,7 @@ body shape and preserve the garment's identity.</p>
 </ul>
 <hr />
 <h2 id="2025-09-24">2025-09-24</h2>
-<h3 id="deprecated_4">Deprecated</h3>
+<h3 id="deprecated_5">Deprecated</h3>
 <p>Access to Gemini's 1.5 models has been discontinued. For more information, see our <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions">Model versions</a> page.</p>
 <hr />
 <h2 id="2025-09-23">2025-09-23</h2>
@@ -2920,7 +2975,7 @@ person and product photos that you provide, and is available in Preview. For mor
 <p>Multimodal datasets are now available in preview. For more information, see <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/datasets">Multimodal datasets</a>.</p>
 <hr />
 <h2 id="2025-06-24">2025-06-24</h2>
-<h3 id="deprecated_5">Deprecated</h3>
+<h3 id="deprecated_6">Deprecated</h3>
 <p>Starting on June 24, 2025, Imagen versions 1 and 2, image captioning, and visual question answering are deprecated.</p>
 <p>On September 24, 2025, the following features and models will be removed:</p>
 <ul>
@@ -2945,7 +3000,7 @@ person and product photos that you provide, and is available in Preview. For mor
 <h3 id="announcement_15">Announcement</h3>
 <p><strong>Live API</strong> is now available as a private general availability offering in the API and Vertex AI Studio. Reach out to your Google account team representative to request access.</p>
 <p>See <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/live-api">Live API</a> for more information.</p>
-<h3 id="deprecated_6">Deprecated</h3>
+<h3 id="deprecated_7">Deprecated</h3>
 <p><strong>Preview endpoint availability and removal:</strong> All existing Gemini 2.5 Flash and Pro preview endpoints (listed below) will continue to be available with their current preview pricing until July 15, 2025. After this date, these preview endpoints will be shut down.</p>
 <ul>
 <li><code>gemini-2.5-flash-preview-04-17</code></li>

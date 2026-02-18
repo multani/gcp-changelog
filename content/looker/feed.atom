@@ -2,9 +2,92 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Looker</title>
   <subtitle>Changelog for Google Cloud product: Looker</subtitle>
-  <updated>2026-02-09T00:00:00+00:00</updated>
+  <updated>2026-02-17T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:looker</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/looker/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:0</id>
+    <published>2026-02-17T00:00:00+00:00</published>
+    <updated>2026-02-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Rolling out in preview starting February 17, 2026, the <strong>Self-service Explores</strong> feature supports updating the data for a self-service Explore. The owner of a self-service Explore can update it with data from the latest version of the file that was used to create the self-service Explore. See the <a href="https://docs.cloud.google.com/looker/docs/exploring-self-service#update-data">Creating self-service Explores</a> documentation page for more information.</p>]]></content>
+    <summary>The new Self-service Explores feature allows owners to update their Explores with the latest data from the original file. This preview feature, available from February 17, 2026, ensures your Explores remain current. More details can be found in the documentation on creating self-service Explores.</summary>
+    <title>Feature: Update self-service Explores with latest data</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:1</id>
+    <published>2026-02-17T00:00:00+00:00</published>
+    <updated>2026-02-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Rolling out in preview starting February 17, 2026, the <strong>Self-service Explores</strong> feature supports <a href="https://docs.cloud.google.com/looker/docs/exploring-self-service#from-sheets">uploading data from Google Sheets</a>. To support uploading data from Google Sheets, your Looker admin must <a href="https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#enable-apis">enable the required APIs</a> in the Google Cloud project that houses your BigQuery database.</p>]]></content>
+    <summary>The new Self-service Explores feature is rolling out in preview starting February 17, 2026. This feature allows users to upload data directly from Google Sheets for analysis. Admins need to enable specific APIs to support this functionality.</summary>
+    <title>Feature: Self-service Explores now available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:2</id>
+    <published>2026-02-17T00:00:00+00:00</published>
+    <updated>2026-02-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Rolling out in preview starting February 17, 2026, the <strong>In-database merge queries</strong> feature is supported for <a href="https://docs.cloud.google.com/looker/docs/merged-results">merging results</a> of two queries that are on the same BigQuery connection. Previously, the join for merging results was always performed in Looker memory, which limited each query to 5,000 rows that could be calculated in the join. If your Looker admin has enabled the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#in-database-merge-queries"><strong>In-database merge queries</strong> Looker Labs feature</a>, the join between two queries that are on the same BigQuery connection is performed in the BigQuery database itself. Performing the join in the database is more performant and allows for unlimited rows that can be joined.</p>]]></content>
+    <summary>A new feature, In-database merge queries, is rolling out in preview starting February 17, 2026. This feature performs joins directly in BigQuery, offering improved performance and supporting an unlimited number of rows for merged results. Previously, joins were limited to 5,000 rows in Looker's memory.</summary>
+    <title>Feature: In-database merge queries available in preview</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:3</id>
+    <published>2026-02-17T00:00:00+00:00</published>
+    <updated>2026-02-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Rolling out in preview starting February 17, 2026, the <a href="https://docs.cloud.google.com/looker/docs/content-certification">content certification</a> feature includes several new updates:</p>
+<ul>
+<li>The <a href="admin-panel-general-settings">Settings</a> page in the General section of the Admin panel now includes options that let admins enable or disable content certification, set a custom URL for the certification process, and control whether certification is revoked when content is edited.</li>
+<li>LookML dashboards can now be certified.</li>
+<li>Looks and dashboards that are based on uncertified self-service Explores now display the "ungoverned" badge.</li>
+<li>Searching for content now includes the ability to sort content based on its certification status.</li>
+</ul>]]></content>
+    <summary>Preview of content certification begins February 17, 2026, introducing new admin controls, certification for LookML dashboards, and improved content search. Uncertified content based on self-service explores will now display an "ungoverned" badge.</summary>
+    <title>Feature: New content certification options</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:4</id>
+    <published>2026-02-17T00:00:00+00:00</published>
+    <updated>2026-02-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Now rolling out in preview, dashboard editors can change the size and layout of dashboard tiles with more granularity. To enable this feature, a Looker admin must turn on the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#granular-dashboard-sizing"><strong>Granular Dashboard Sizing</strong> Labs feature</a>.</p>]]></content>
+    <summary>You can now change the size and layout of dashboard tiles with more granularity. A Looker admin must enable the Granular Dashboard Sizing Labs feature to access this new functionality.</summary>
+    <title>Feature: Customize your dashboard layout</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:5</id>
+    <published>2026-02-17T00:00:00+00:00</published>
+    <updated>2026-02-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Now rolling out in preview, dashboard editors can <a href="https://docs.cloud.google.com/looker/docs/editing-user-defined-dashboards#download-limit">set default options for how the download of a dashboard tile includes query results</a>. They can set the download to include by default all query results or the current result table that is displayed in the visualization, or set a custom number of rows and columns. To enable this feature, a Looker admin must turn on the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#dashboard-tile-download-limits"><strong>Tile Download Default Options</strong> Labs feature</a>.</p>]]></content>
+    <summary>Dashboard editors can now set default options for downloading query results from dashboard tiles. This includes options to download all results, the current table, or a custom number of rows and columns. Looker admins must enable the Tile Download Default Options Labs feature for this functionality.</summary>
+    <title>Feature: Default Dashboard Tile Download Options Now in Preview</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:6</id>
+    <published>2026-02-17T00:00:00+00:00</published>
+    <updated>2026-02-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Rolling out in preview starting February 17, 2026, the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#embed_conversational_analytics">Embed Conversational Analytics Labs feature</a> is now available. When enabled, the Embed Conversational Analytics Labs feature lets you <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-embedding">embed Conversational Analytics conversations and agents in an iframe</a> like other Looker content types.</p>]]></content>
+    <summary>The Embed Conversational Analytics Labs feature is now available in preview. This feature allows you to embed Conversational Analytics conversations and agents within an iframe, similar to other Looker content. It is rolling out starting February 17, 2026.</summary>
+    <title>Feature: Embed Conversational Analytics Labs is now available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -20,18 +103,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:feature:1</id>
-    <published>2026-02-09T00:00:00+00:00</published>
-    <updated>2026-02-09T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#customer_engineer_advanced_editor">Customer Engineer Advanced Editor</a> default role now includes the <code>gemini_in_looker</code>, <code>chat_with_agent</code>, <code>chat_with_explore</code>, and <code>save_agents</code> permissions, which grant access to Gemini features and Conversational Analytics functionality.</p>]]></content>
-    <summary>The Customer Engineer Advanced Editor role now includes permissions for Gemini features and Conversational Analytics. This update grants access to Gemini in Looker, agent chat, explore chat, and the ability to save agents.</summary>
-    <title>Feature: Gemini Features Now Available</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:breaking:2</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:breaking:1</id>
     <published>2026-02-09T00:00:00+00:00</published>
     <updated>2026-02-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>When you use <a href="https://docs.cloud.google.com/looker/docs/elite-system-activity">Elite System Activity</a>, all System Activity fields of the <code>longtext</code> type that have a size greater than 2 MB will be truncated. If a table has only one column with a <code>longtext</code> type, that column will be set to a maximum of 1.9 MB in size. If a table has multiple columns of the <code>longtext</code> type, the total maximum size across all such columns is 2 MB, and this limit is distributed uniformly among those columns. For example, if a table has <code>x</code> <code>longtext</code> columns, each column will have a maximum length of 2 MB divided by <code>x</code>.</p>]]></content>
@@ -42,7 +114,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:3</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:2</id>
     <published>2026-02-09T00:00:00+00:00</published>
     <updated>2026-02-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where some drill links could fail to work when cookieless embed was enabled. This feature now performs as expected.</p>]]></content>
@@ -53,7 +125,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:feature:4</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:feature:3</id>
     <published>2026-02-09T00:00:00+00:00</published>
     <updated>2026-02-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>When you use <a href="https://docs.cloud.google.com/looker/docs/elite-system-activity">Elite System Activity</a>, the <code>merge_query</code> table now refreshes every 10 minutes.</p>]]></content>
@@ -64,7 +136,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:feature:5</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:feature:4</id>
     <published>2026-02-09T00:00:00+00:00</published>
     <updated>2026-02-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>When you are <a href="https://docs.cloud.google.com/looker/docs/delivering-looks-explores#delivery_options_for_sftp_servers">delivering content to an SFTP server</a>, additional key exchange algorithms and host key algorithms are now supported.</p>]]></content>
@@ -75,7 +147,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:6</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:5</id>
     <published>2026-02-09T00:00:00+00:00</published>
     <updated>2026-02-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where the pagination option was not being displayed in the LookML Dashboards folder for some users.
@@ -87,7 +159,7 @@ This feature now performs as expected.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:7</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:6</id>
     <published>2026-02-09T00:00:00+00:00</published>
     <updated>2026-02-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where custom dimensions that were based on numeric fields could be converted to strings, which caused incorrect sorting. This feature now performs as expected.</p>]]></content>
@@ -98,7 +170,7 @@ This feature now performs as expected.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:8</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:7</id>
     <published>2026-02-09T00:00:00+00:00</published>
     <updated>2026-02-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where choosing a non-default color collection and then choosing a custom color in a conditional formatting rule could cause the rule to revert to the default color collection. This feature now performs as expected.</p>]]></content>
@@ -109,7 +181,7 @@ This feature now performs as expected.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:announcement:9</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:announcement:8</id>
     <published>2026-02-09T00:00:00+00:00</published>
     <updated>2026-02-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Looker 26.2</strong> is expected to include the following changes, features, and fixes:</p>
@@ -126,7 +198,7 @@ This feature now performs as expected.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:10</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:9</id>
     <published>2026-02-09T00:00:00+00:00</published>
     <updated>2026-02-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where a modification to the color palette for the "Along a scale..." conditional formatting feature could fail to be saved. This feature now performs as expected.</p>]]></content>
@@ -137,7 +209,7 @@ This feature now performs as expected.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:feature:11</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:feature:10</id>
     <published>2026-02-09T00:00:00+00:00</published>
     <updated>2026-02-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in preview, Looker has full support for connections with <a href="https://docs.cloud.google.com/looker/docs/db-config-alloydb">AlloyDB for PostgreSQL</a>. When you <a href="https://docs.cloud.google.com/looker/docs/connecting-to-your-db">create a connection</a> in Looker, you can now select "Google Cloud AlloyDB for PostgreSQL" from the Dialect drop-down menu. This update does not affect existing AlloyDB connections that were created using the PostgreSQL 9.5+ option in the Dialect menu.</p>]]></content>
@@ -148,7 +220,7 @@ This feature now performs as expected.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:12</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:11</id>
     <published>2026-02-09T00:00:00+00:00</published>
     <updated>2026-02-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where non-admin users could not favorite
@@ -160,7 +232,7 @@ LookML dashboards. This feature now performs as expected.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:feature:13</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:feature:12</id>
     <published>2026-02-09T00:00:00+00:00</published>
     <updated>2026-02-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The user attribute pairing user interface for <a href="https://docs.cloud.google.com/looker/docs/admin-panel-authentication-saml">SAML</a>, <a href="https://docs.cloud.google.com/looker/docs/admin-panel-authentication-ldap">LDAP</a>, and <a href="https://docs.cloud.google.com/looker/docs/admin-panel-authentication-openid-connect">OpenID Connect</a> authentication has been updated. A new "Manage Pairings" side panel provides a robust interface for adding, removing, and viewing attribute pairings. This new interface also includes filtering and pagination and allows for a single claim to be associated with multiple Looker user attributes.</p>]]></content>
@@ -171,7 +243,7 @@ LookML dashboards. This feature now performs as expected.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:14</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:13</id>
     <published>2026-02-09T00:00:00+00:00</published>
     <updated>2026-02-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where Looker could return a 500 error if a user with one or more single quotes in their name attempted to commit LookML. This feature now performs as expected.</p>]]></content>
@@ -182,7 +254,7 @@ LookML dashboards. This feature now performs as expected.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:15</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:14</id>
     <published>2026-02-09T00:00:00+00:00</published>
     <updated>2026-02-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where switching a visualization type from Table to Single Value could carry over unwanted conditional formatting. This feature now performs as expected.</p>]]></content>
@@ -193,7 +265,7 @@ LookML dashboards. This feature now performs as expected.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:16</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:15</id>
     <published>2026-02-09T00:00:00+00:00</published>
     <updated>2026-02-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where conditional formatting no longer appeared on certain dashboard tiles. This feature now performs as expected.</p>]]></content>
@@ -204,7 +276,7 @@ LookML dashboards. This feature now performs as expected.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:17</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:16</id>
     <published>2026-02-09T00:00:00+00:00</published>
     <updated>2026-02-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where changing the collection in a conditional formatting rule could reset styles for the rule. This feature now performs as expected.</p>]]></content>
@@ -215,7 +287,7 @@ LookML dashboards. This feature now performs as expected.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:18</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:17</id>
     <published>2026-02-09T00:00:00+00:00</published>
     <updated>2026-02-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where the filter bar would automatically expand on dashboard load when the filter location was set to "Right". This feature now performs as expected.</p>]]></content>
@@ -226,7 +298,7 @@ LookML dashboards. This feature now performs as expected.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:19</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:18</id>
     <published>2026-02-09T00:00:00+00:00</published>
     <updated>2026-02-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where switching filter types from <code>Matches (Advanced)</code> to another filter type could populate that filter with an incorrect filter configuration. This feature now performs as expected.</p>]]></content>
@@ -237,7 +309,7 @@ LookML dashboards. This feature now performs as expected.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:20</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:19</id>
     <published>2026-02-09T00:00:00+00:00</published>
     <updated>2026-02-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where adding a new field to a conditionally formatted result set could fail to apply the conditional formatting to the new field. This feature now performs as expected.</p>]]></content>
@@ -248,7 +320,7 @@ LookML dashboards. This feature now performs as expected.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:21</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:fixed:20</id>
     <published>2026-02-09T00:00:00+00:00</published>
     <updated>2026-02-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where dashboard tiles with titles that included the % symbol could not be downloaded in the Safari 26.0 browser. This feature now performs as expected.</p>]]></content>
@@ -259,7 +331,7 @@ LookML dashboards. This feature now performs as expected.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:feature:22</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:feature:21</id>
     <published>2026-02-09T00:00:00+00:00</published>
     <updated>2026-02-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Looker admins can now <a href="https://docs.cloud.google.com/looker/docs/admin-panel-server-ip-allowlist">grant essential Google Cloud services</a>, such as <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-overview">Conversational Analytics</a>, access to a Looker instance, even when an IP allowlist is active.</p>]]></content>
@@ -270,12 +342,23 @@ LookML dashboards. This feature now performs as expected.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:feature:23</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:feature:22</id>
     <published>2026-02-09T00:00:00+00:00</published>
     <updated>2026-02-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Looker admins can now enforce a <a href="https://docs.cloud.google.com/looker/docs/admin-panel-authentication-password#setting_password_expiration">password expiration policy</a>, enhancing security for users who authenticate with an email and a password. This new feature lets admins set a password expiration window between 30 and 365 days. Fourteen days before password expiration, a banner will notify the user, and, once their password has expired, the user must reset it at the next login.</p>]]></content>
     <summary>Looker admins can now enforce a password expiration policy. This feature allows admins to set a password expiration window between 30 and 365 days, with users being notified 14 days prior to expiration and required to reset their password upon next login after expiration.</summary>
     <title>Feature: Password expiration policy is now available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-09:feature:23</id>
+    <published>2026-02-09T00:00:00+00:00</published>
+    <updated>2026-02-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#customer_engineer_advanced_editor">Customer Engineer Advanced Editor</a> default role now includes the <code>gemini_in_looker</code>, <code>chat_with_agent</code>, <code>chat_with_explore</code>, and <code>save_agents</code> permissions, which grant access to Gemini features and Conversational Analytics functionality.</p>]]></content>
+    <summary>The Customer Engineer Advanced Editor role now includes permissions for Gemini features and Conversational Analytics. This update grants access to Gemini in Looker, agent chat, explore chat, and the ability to save agents.</summary>
+    <title>Feature: Gemini Features Now Available</title>
   </entry>
   <entry>
     <author>

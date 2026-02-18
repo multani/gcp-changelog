@@ -3,6 +3,14 @@
   "entries": {
     "2026-02-17": [
       {
+        "kind": "Deprecated",
+        "content": "**Image generation preview endpoints deprecation**\n\nThe following table describes image generation endpoints that are deprecated and\ntheir replacements. We recommend updating your model endpoints before March 19,\n2026, to avoid service disruption.\n\n| Discontinued endpoints | Recommended endpoint migration |\n| --- | --- |\n| `gemini-2.0-flash-image-generation-preview` | `gemini-2.5-flash-image` |\n| `gemini-2.5-flash-image-generation-preview` | `imagen-4.0-generate-001` or `gemini-2.5-flash-image` |\n| `imagen-4.0-generate-preview-05-20` | `imagen-4.0-generate-001` or `gemini-2.5-flash-image` |\n| `imagen-4.0-generate-preview-06-06` | `imagen-4.0-generate-001` or `gemini-2.5-flash-image` |\n| `imagen-4.0-ultra-generate-preview-06-06` | `imagen-4.0-generate-001` or `gemini-2.5-flash-image` |\n| `imagen-4.0-fast-generate-preview-05-20` | `imagen-4.0-generate-001` or `gemini-2.5-flash-image` |\n| `imagen-product-recontext-preview-06-30` | `gemini-2.5-flash-image` |\n| `imagen-2.0-edit-preview-0627` | `gemini-2.5-flash-image` |\n| `virtual-try-on-preview-08-04` | `virtual-try-on-001` |\n| `imagen-4.0-ingredients-preview` | `gemini-2.5-flash-image` |",
+        "summary": {
+          "title": "Image generation preview endpoints deprecated",
+          "summary": "Preview endpoints for image generation are being deprecated. Please migrate to the recommended endpoints before March 19, 2026, to ensure uninterrupted service. This change affects various image generation models and requires updating your integration to use the new endpoint paths."
+        }
+      },
+      {
         "kind": "Feature",
         "content": "**Anthropic's Claude Sonnet 4.6**\n\n[Claude Sonnet 4.6](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/partner-models/claude/sonnet-4-6)\nis available in Model Garden.",
         "summary": {

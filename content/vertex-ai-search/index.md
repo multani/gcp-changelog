@@ -1,5 +1,18 @@
 # Vertex AI Search
 
+## 2026-02-17
+
+### Feature
+
+**Vertex AI Search: Gemini 3 Pro for answer generation (Preview)**
+
+You can generate answers with the Gemini 3 Pro model.
+
+For more information, see [Answer generation model versions and
+lifecycle](https://docs.cloud.google.com/generative-ai-app-builder/docs/answer-generation-models) and [Gemini
+3 Pro](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-pro).
+
+---
 ## 2026-02-05
 
 ### Feature

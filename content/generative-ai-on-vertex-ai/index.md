@@ -2,6 +2,27 @@
 
 ## 2026-02-17
 
+### Deprecated
+
+**Image generation preview endpoints deprecation**
+
+The following table describes image generation endpoints that are deprecated and
+their replacements. We recommend updating your model endpoints before March 19,
+2026, to avoid service disruption.
+
+| Discontinued endpoints | Recommended endpoint migration |
+| --- | --- |
+| `gemini-2.0-flash-image-generation-preview` | `gemini-2.5-flash-image` |
+| `gemini-2.5-flash-image-generation-preview` | `imagen-4.0-generate-001` or `gemini-2.5-flash-image` |
+| `imagen-4.0-generate-preview-05-20` | `imagen-4.0-generate-001` or `gemini-2.5-flash-image` |
+| `imagen-4.0-generate-preview-06-06` | `imagen-4.0-generate-001` or `gemini-2.5-flash-image` |
+| `imagen-4.0-ultra-generate-preview-06-06` | `imagen-4.0-generate-001` or `gemini-2.5-flash-image` |
+| `imagen-4.0-fast-generate-preview-05-20` | `imagen-4.0-generate-001` or `gemini-2.5-flash-image` |
+| `imagen-product-recontext-preview-06-30` | `gemini-2.5-flash-image` |
+| `imagen-2.0-edit-preview-0627` | `gemini-2.5-flash-image` |
+| `virtual-try-on-preview-08-04` | `virtual-try-on-001` |
+| `imagen-4.0-ingredients-preview` | `gemini-2.5-flash-image` |
+
 ### Feature
 
 **Anthropic's Claude Sonnet 4.6**

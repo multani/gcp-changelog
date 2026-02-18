@@ -1,5 +1,20 @@
 # Cloud Logging
 
+## 2026-02-12
+
+### Feature
+
+You no longer need to configure BigQuery reservation assignments
+to create SQL-based alerting policies or run Log Analytics queries on
+BigQuery slots. These queries now use on-demand slots by default
+if no BigQuery reservation assignment exists.
+
+For more information, see the following documents:
+
+* [Query a linked BigQuery dataset](https://docs.cloud.google.com/logging/docs/analyze/query-linked-dataset#dedicated)
+* [Monitor your SQL query results with an alerting policy](https://docs.cloud.google.com/logging/docs/analyze/sql-in-alerting#sql-policies-bigquery)
+
+---
 ## 2026-02-09
 
 ### Feature

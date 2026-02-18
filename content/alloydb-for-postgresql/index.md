@@ -1,5 +1,16 @@
 # AlloyDB for PostgreSQL
 
+## 2026-02-17
+
+### Feature
+
+You can now use the [AlloyDB remote MCP server](https://docs.cloud.google.com/alloydb/docs/ai/use-alloydb-mcp).
+The AlloyDB remote MCP server lets you interact easily with AlloyDB clusters
+from LLMs, AI applications, and AI-enabled development platforms.
+
+This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-02-09
 
 ### Fixed

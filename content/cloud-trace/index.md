@@ -1,5 +1,27 @@
 # Cloud Trace
 
+## 2026-02-17
+
+### Deprecated
+
+Starting February 18, 2026,
+[trace sinks](https://docs.cloud.google.com/trace/docs/trace-export-overview) are deprecated.
+For more information, see
+[Export trace spans with sinks deprecation](https://docs.cloud.google.com/stackdriver/docs/deprecations/export-spans-with-sinks).
+
+You can use the Log Analytics page, which provides a SQL query
+interface, to query both your trace and log data. To learn more, see the
+following documents:
+
+* To migrate to using Log Analytics page from a sink-based
+  export of trace data to BigQuery, see
+  [Migrate to Log Analytics](https://docs.cloud.google.com/trace/docs/analytics-migrate).
+* To query your trace data by using the Log Analytics page, see
+  [Query and analyze traces](https://docs.cloud.google.com/trace/docs/analytics).
+* To query your trace data by using BigQuery services, see
+  [Query a linked BigQuery dataset](https://docs.cloud.google.com/trace/docs/analytics-query-linked-dataset).
+
+---
 ## 2026-02-02
 
 ### Feature

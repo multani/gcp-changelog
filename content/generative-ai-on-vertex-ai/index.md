@@ -1,5 +1,15 @@
 # Generative AI on Vertex AI
 
+## 2026-02-17
+
+### Feature
+
+**Anthropic's Claude Sonnet 4.6**
+
+[Claude Sonnet 4.6](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/partner-models/claude/sonnet-4-6)
+is available in Model Garden.
+
+---
 ## 2026-02-10
 
 ### Feature

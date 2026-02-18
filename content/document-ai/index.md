@@ -1,5 +1,40 @@
 # Document AI
 
+## 2026-02-17
+
+### Deprecated
+
+Document AI legacy processors will be discontinued on **June 30, 2026**. To preempt
+the risk of service failure while using legacy processors, we recommend transitioning to
+more stable, higher-quality processors.
+
+The affected versions are:
+
+| Type | Version |
+| --- | --- |
+| Identity parsers | `pretrained-us-passport-v1.0-2021-06-14`  `pretrained-fr-driver-license-v1.0-2021-06-14` |
+| Tax and finance parsers | `pretrained-1099misc-v1.1-2021-12-10`  `pretrained-1099nec-v1.0-2021-08-11`  `pretrained-1099r-v2.0-2022-07-25`  `pretrained-1099int-v1.1-2021-12-10`  `pretrained-ssa1099-v1.0-2021-08-09`  `pretrained-1099g-v1.0-2021-05-27`  `pretrained-1099g-v1.1-2021-12-10`  `pretrained-1120-v3.0-2022-04-26`  `pretrained-w9-v1.0-2020-09-25`  `pretrained-w9-v1.1-2021-12-10`  `pretrained-w9-v1.2-2022-01-27`  `pretrained-w9-v2.0-2022-06-23` |
+| Mortage and banking parsers | `pretrained-mortgage-statement-v1.0-2021-10-17` |
+| Procurement | `pretrained-utility-v1.1-2021-04-09`  `pretrained-utility-v1.2-2022-12-15` |
+| Splitting | `pretrained-procurement-splitter-v1.1-2021-04-09`  `pretrained-procurement-splitter-v1.2-2022-08-19`  `pretrained-lending-document-split-v1.0-2021-12-08`  `pretrained-lending-document-split-v2.0-2021-12-09` |
+| Summary | `pretrained-foundation-model-v1.0-2023-08-22` |
+
+To ensure uninterrupted service and benefit from improved extraction quality,
+we recommend you migrate to the following later versions before **June 30, 2026**:
+
+* **Enterprise Document OCR:** Migrate to [`pretrained-ocr-v2.1-2024-08-07`](https://docs.cloud.google.com/document-ai/docs/processors-list#processor_doc-ocr).
+* **Expense parser:** Migrate to [`pretrained-expense-v1.3.2-2024-09-11`](https://docs.cloud.google.com/document-ai/docs/processors-list#processor_expense-parser).
+* **Custom classifier:** Migrate to [`pretrained-classifier-v1.5-2025-08-05`](https://docs.cloud.google.com/document-ai/docs/processors-list#processor_CUSTOM_CLASSIFICATION_PROCESSOR).
+* **Custom splitter:** Migrate to [`pretrained-splitter-v1.5-2025-07-14`](https://docs.cloud.google.com/document-ai/docs/processors-list#processor_CUSTOM_SPLITTING_PROCESSOR).
+* **Invoice parser:** Migrate to [`pretrained-invoice-v2.0-2023-12-06`](https://docs.cloud.google.com/document-ai/docs/processors-list#processor_invoice-processor).
+* **Pay slip parser:** Migrate to [`pretrained-paystub-v3.0-2023-12-06`](https://docs.cloud.google.com/document-ai/docs/processors-list#processor_pay-slip-parser).
+* **Bank statement parser:** Migrate to [`pretrained-bankstatement-v5.0-2023-12-06`](https://docs.cloud.google.com/document-ai/docs/processors-list#processor_bank-statement-parser).
+
+To learn more about the migration process, refer to [Manage processor versions](https://docs.cloud.google.com/document-ai/docs/manage-processor-versions).
+
+If you have any questions or require assistance, contact us at [Google Cloud support](https://docs.cloud.google.com/support-hub).
+
+---
 ## 2026-02-16
 
 ### Feature

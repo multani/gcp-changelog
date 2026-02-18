@@ -1,5 +1,27 @@
 # BigQuery
 
+## 2026-02-17
+
+### Feature
+
+You can now run [global queries](https://docs.cloud.google.com/bigquery/docs/global-queries), which let you
+reference data stored in more than one region in a single query. This feature is
+in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+### Deprecated
+
+Control of MCP use with organization policies is deprecated. After
+March 17, 2026, organization policies that use the
+`gcp.managed.allowedMCPServices constraint` won't work, and you can control
+MCP use with IAM deny policies. For more information about controlling MCP use,
+see [Control MCP use with IAM deny policies](https://docs.cloud.google.com/mcp/control-mcp-use-iam).
+
+### Change
+
+After March 17, 2026, when you enable BigQuery, the BigQuery MCP server is
+automatically enabled.
+
+---
 ## 2026-02-12
 
 ### Feature

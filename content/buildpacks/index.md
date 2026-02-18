@@ -1,5 +1,15 @@
 # Buildpacks
 
+## 2026-02-17
+
+### Feature
+
+Cloud Run [source deployment](https://docs.cloud.google.com/run/docs/deploying-source-code) supports Ubuntu 24
+LTS base images in [General Availability](https://cloud.google.com/products?e=48754805#product-launch-stages). This builder is available under
+`gcr.io/buildpacks/builder:google-24`. For more information, see
+[Builders](https://docs.cloud.google.com/docs/buildpacks/builders).
+
+---
 ## 2026-02-11
 
 ### Feature

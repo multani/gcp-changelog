@@ -1,6 +1,32 @@
 {
   "name": "BigQuery",
   "entries": {
+    "2026-02-17": [
+      {
+        "kind": "Feature",
+        "content": "You can now run [global queries](https://docs.cloud.google.com/bigquery/docs/global-queries), which let you\nreference data stored in more than one region in a single query. This feature is\nin [Preview](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "Run global queries in BigQuery",
+          "summary": "You can now run global queries in BigQuery, allowing you to reference data stored in multiple regions within a single query. This new feature is currently in Preview."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "Control of MCP use with organization policies is deprecated. After\nMarch 17, 2026, organization policies that use the\n`gcp.managed.allowedMCPServices constraint` won't work, and you can control\nMCP use with IAM deny policies. For more information about controlling MCP use,\nsee [Control MCP use with IAM deny policies](https://docs.cloud.google.com/mcp/control-mcp-use-iam).",
+        "summary": {
+          "title": "MCP Use Control: Deprecation of Organization Policies",
+          "summary": "Control of MCP use with organization policies is deprecated and will stop working after March 17, 2026. You can now control MCP use with IAM deny policies. For more information, refer to the documentation on controlling MCP use with IAM deny policies."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "After March 17, 2026, when you enable BigQuery, the BigQuery MCP server is\nautomatically enabled.",
+        "summary": {
+          "title": "BigQuery MCP server enabled by default",
+          "summary": "Starting March 17, 2026, the BigQuery MCP server will be automatically enabled when you enable BigQuery. This change ensures that the necessary components are set up from the start for enhanced BigQuery functionality."
+        }
+      }
+    ],
     "2026-02-12": [
       {
         "kind": "Feature",

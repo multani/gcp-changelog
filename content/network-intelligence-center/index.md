@@ -1,12 +1,26 @@
 # Network Intelligence Center
 
+## 2026-02-18
+
+### Feature
+
+[Cloud Network Insights](https://docs.cloud.google.com/network-intelligence-center/docs/cloud-network-insights/overview)
+is available in **Preview**.
+
+Cloud Network Insights monitors your network and web application performance across
+multicloud and hybrid networks and provides visualization
+tools to help identify and diagnose network issues.
+
+Contact your Technical Account Manager to request access.
+
+---
 ## 2026-02-13
 
 ### Feature
 
 [Flow Analyzer](https://docs.cloud.google.com/network-intelligence-center/docs/flow-analyzer/overview)
 supports latency mode, allowing you to analyze round-trip time in your
-traffic flows. This feature is generally available (GA).
+traffic flows.
 For more information, see
 [Display flows in latency mode](https://docs.cloud.google.com/network-intelligence-center/docs/flow-analyzer/analyze-traffic-flows#display-latency).
 

@@ -2,9 +2,37 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Service Mesh</title>
   <subtitle>Changelog for Google Cloud product: Cloud Service Mesh</subtitle>
-  <updated>2026-02-09T00:00:00+00:00</updated>
+  <updated>2026-02-18T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-service-mesh</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-service-mesh/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-02-18:announcement:0</id>
+    <published>2026-02-18T00:00:00+00:00</published>
+    <updated>2026-02-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>CNI and managed data plane controller version 1.23.6-asm.28 is rolling out to all
+release channels.</p>
+<p>While the managed data plane automatically updates Envoy Proxies by restarting
+workloads, you must manually restart any StatefulSets and Jobs.</p>
+<p>This patch includes the fix for the following CVEs:</p>
+<p>| Name | CNI | MDPC | Severity |
+| --- | --- | --- | --- |
+| <a href="http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2017-11164">CVE-2017-11164</a> | Yes | Yes | High (7.5) |
+| <a href="http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2022-27943">CVE-2022-27943</a> | Yes | Yes | Medium (5.5) |
+| <a href="http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2022-41409">CVE-2022-41409</a> | Yes | Yes | High (7.5) |
+| <a href="http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2022-4899">CVE-2022-4899</a> | Yes | Yes | High (7.5) |
+| <a href="http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2023-29383">CVE-2023-29383</a> | Yes | Yes | Low (3.3) |
+| <a href="http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2023-34969">CVE-2023-34969</a> | Yes | Yes | Medium (6.5) |
+| <a href="http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2023-50495">CVE-2023-50495</a> | Yes | Yes | Medium (6.5) |
+| <a href="http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2023-7008">CVE-2023-7008</a> | Yes | Yes | Medium (5.9) |
+| <a href="http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2024-41996">CVE-2024-41996</a> | Yes | Yes | High (7.5) |
+| <a href="http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-8114">CVE-2025-8114</a> | Yes | Yes | Medium (4.7) |
+| <a href="http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-9086">CVE-2025-9086</a> | Yes | Yes | High (7.5) |</p>]]></content>
+    <summary>CNI and managed data plane controller version 1.23.6-asm.28 is now rolling out. This update includes fixes for several critical security vulnerabilities. While Envoy Proxies will update automatically, manual restarts are required for StatefulSets and Jobs.</summary>
+    <title>Announcement: New CNI and controller version available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

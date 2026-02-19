@@ -1,6 +1,24 @@
 {
   "name": "Resource Manager",
   "entries": {
+    "2026-02-15": [
+      {
+        "kind": "Change",
+        "content": "After March 17, 2026, when you enable Resource Manager, the Resource Manager MCP server is automatically enabled.",
+        "summary": {
+          "title": "Resource Manager MCP server enabled by default",
+          "summary": "Starting March 17, 2026, the Resource Manager MCP server will be automatically enabled whenever Resource Manager is enabled. This change simplifies setup and ensures consistent access to Resource Manager capabilities."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "Control of MCP use with organization policies is deprecated. After March 17, 2026, organization policies that use the `gcp.managed.allowedMCPServices` constraint won't work, and you can control MCP use with IAM deny policies. For more information about controlling MCP use, see [Control MCP use with IAM](https://docs.cloud.google.com/mcp/control-mcp-use-iam).",
+        "summary": {
+          "title": "Organization policies for MCP use deprecated",
+          "summary": "Control of MCP use with organization policies is deprecated and will stop working after March 17, 2026. You can now control MCP use with IAM deny policies. Refer to the documentation for more details on this transition."
+        }
+      }
+    ],
     "2026-02-09": [
       {
         "kind": "Feature",

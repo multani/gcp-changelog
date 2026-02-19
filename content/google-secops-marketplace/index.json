@@ -1,6 +1,72 @@
 {
   "name": "Google SecOps Marketplace",
   "entries": {
+    "2026-02-18": [
+      {
+        "kind": "Feature",
+        "content": "New **Proofpoint Threat Protection** integration",
+        "summary": {
+          "title": "New Threat Protection Integration",
+          "summary": "We are excited to announce a new integration with Proofpoint Threat Protection. This feature enhances our security capabilities by leveraging Proofpoint's advanced threat intelligence."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**CrowdStrike Falcon**: Version 70.0\n\n* Deprecated the following actions:\n\n  + **Add Incident Comment**\n  + **Update Incident**\n  + **Add Comment to Detection**\n  + **Close Detection**\n  + **Update Detection**\n* Deprecated the following connectors:\n\n  + **CrowdStrike - Detections Connector**\n  + **Crowdstrike - Incidents Connector**",
+        "summary": {
+          "title": "CrowdStrike Falcon v70.0 Deprecations",
+          "summary": "CrowdStrike Falcon version 70.0 introduces deprecations for several incident and detection management actions. Additionally, the CrowdStrike Detections and Incidents connectors are being deprecated."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Exchange**: Version 119.0\n\n* Updated the handling of S/MIME emails sent on MacOS in the following\n  connectors:\n\n  + **Exchange - Mail Connector v2 with OAuth Authentication**\n  + **Exchange - Mail Connector v2**",
+        "summary": {
+          "title": "Exchange Mail Connector Update",
+          "summary": "Version 119.0 of the Exchange Mail Connector v2 has been updated to improve the handling of S/MIME emails sent on MacOS. This change affects both the OAuth and standard authentication versions of the connector."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Google Chronicle**: Version 76.0\n\n* Restored the previous JSON result structure for empty result sets in the\n  following action:\n\n  + **Execute UDM Query**",
+        "summary": {
+          "title": "Chronicle 76.0: UDM Query Result Structure Restored",
+          "summary": "Version 76.0 of Google Chronicle restores the previous JSON result structure for empty result sets when executing UDM queries. This change aims to provide a more consistent experience for users interacting with query results."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Palo Alto Cortex XDR**: Version 23.0\n\n* Added the ability to provide agents using input parameters in the following\n  actions:\n\n  + **Scan Endpoint**\n  + **Isolate Endpoint**\n  + **Unisolate Endpoint**",
+        "summary": {
+          "title": "Endpoint Actions Enhanced",
+          "summary": "Palo Alto Cortex XDR version 23.0 now allows agents to be provided using input parameters for Scan Endpoint, Isolate Endpoint, and Unisolate Endpoint actions. This change streamlines endpoint management and security operations."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**QRadar**: Version 63.0\n\n* Updated the logic for offense processing in the following connectors:\n\n  + **Qradar Correlation Events Connector V2**\n  + **Qradar Offenses Connector**",
+        "summary": {
+          "title": "QRadar Version 63.0 Update",
+          "summary": "QRadar version 63.0 has been released with updated logic for offense processing in the Qradar Correlation Events Connector V2 and the Qradar Offenses Connector."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Qualys VM**: Version 21.0\n\n* **Integration**: Added the ability to configure the `X-Requested-With` header.",
+        "summary": {
+          "title": "Qualys VM 21.0 Update",
+          "summary": "Qualys VM version 21.0 is now available, introducing enhanced integration capabilities with the addition of configurable X-Requested-With header support. This update aims to improve how Qualys VM interacts with other systems."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Cofense Triage**: Version 17.0\n\n* Optimized the report processing in the following connector:\n\n  + **Cofense Triage - Reports Connector**",
+        "summary": {
+          "title": "Cofense Triage 17.0: Optimized Report Processing",
+          "summary": "Cofense Triage version 17.0 introduces optimizations to report processing, specifically enhancing the performance of the Cofense Triage - Reports Connector. This update aims to improve the efficiency of handling security reports within the platform."
+        }
+      }
+    ],
     "2026-02-11": [
       {
         "kind": "Feature",

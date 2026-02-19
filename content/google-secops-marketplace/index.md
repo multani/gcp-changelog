@@ -1,5 +1,81 @@
 # Google SecOps Marketplace
 
+## 2026-02-18
+
+### Feature
+
+New **Proofpoint Threat Protection** integration
+
+### Change
+
+**CrowdStrike Falcon**: Version 70.0
+
+* Deprecated the following actions:
+
+  + **Add Incident Comment**
+  + **Update Incident**
+  + **Add Comment to Detection**
+  + **Close Detection**
+  + **Update Detection**
+* Deprecated the following connectors:
+
+  + **CrowdStrike - Detections Connector**
+  + **Crowdstrike - Incidents Connector**
+
+### Change
+
+**Exchange**: Version 119.0
+
+* Updated the handling of S/MIME emails sent on MacOS in the following
+  connectors:
+
+  + **Exchange - Mail Connector v2 with OAuth Authentication**
+  + **Exchange - Mail Connector v2**
+
+### Change
+
+**Google Chronicle**: Version 76.0
+
+* Restored the previous JSON result structure for empty result sets in the
+  following action:
+
+  + **Execute UDM Query**
+
+### Change
+
+**Palo Alto Cortex XDR**: Version 23.0
+
+* Added the ability to provide agents using input parameters in the following
+  actions:
+
+  + **Scan Endpoint**
+  + **Isolate Endpoint**
+  + **Unisolate Endpoint**
+
+### Change
+
+**QRadar**: Version 63.0
+
+* Updated the logic for offense processing in the following connectors:
+
+  + **Qradar Correlation Events Connector V2**
+  + **Qradar Offenses Connector**
+
+### Change
+
+**Qualys VM**: Version 21.0
+
+* **Integration**: Added the ability to configure the `X-Requested-With` header.
+
+### Change
+
+**Cofense Triage**: Version 17.0
+
+* Optimized the report processing in the following connector:
+
+  + **Cofense Triage - Reports Connector**
+
+---
 ## 2026-02-11
 
 ### Feature

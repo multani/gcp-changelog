@@ -1,5 +1,32 @@
 # Cloud Service Mesh
 
+## 2026-02-18
+
+### Announcement
+
+CNI and managed data plane controller version 1.23.6-asm.28 is rolling out to all
+release channels.
+
+While the managed data plane automatically updates Envoy Proxies by restarting
+workloads, you must manually restart any StatefulSets and Jobs.
+
+This patch includes the fix for the following CVEs:
+
+| Name | CNI | MDPC | Severity |
+| --- | --- | --- | --- |
+| [CVE-2017-11164](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2017-11164) | Yes | Yes | High (7.5) |
+| [CVE-2022-27943](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2022-27943) | Yes | Yes | Medium (5.5) |
+| [CVE-2022-41409](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2022-41409) | Yes | Yes | High (7.5) |
+| [CVE-2022-4899](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2022-4899) | Yes | Yes | High (7.5) |
+| [CVE-2023-29383](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2023-29383) | Yes | Yes | Low (3.3) |
+| [CVE-2023-34969](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2023-34969) | Yes | Yes | Medium (6.5) |
+| [CVE-2023-50495](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2023-50495) | Yes | Yes | Medium (6.5) |
+| [CVE-2023-7008](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2023-7008) | Yes | Yes | Medium (5.9) |
+| [CVE-2024-41996](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2024-41996) | Yes | Yes | High (7.5) |
+| [CVE-2025-8114](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-8114) | Yes | Yes | Medium (4.7) |
+| [CVE-2025-9086](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-9086) | Yes | Yes | High (7.5) |
+
+---
 ## 2026-02-09
 
 ### Announcement

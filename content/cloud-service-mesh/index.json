@@ -1,6 +1,16 @@
 {
   "name": "Cloud Service Mesh",
   "entries": {
+    "2026-02-18": [
+      {
+        "kind": "Announcement",
+        "content": "CNI and managed data plane controller version 1.23.6-asm.28 is rolling out to all\nrelease channels.\n\nWhile the managed data plane automatically updates Envoy Proxies by restarting\nworkloads, you must manually restart any StatefulSets and Jobs.\n\nThis patch includes the fix for the following CVEs:\n\n| Name | CNI | MDPC | Severity |\n| --- | --- | --- | --- |\n| [CVE-2017-11164](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2017-11164) | Yes | Yes | High (7.5) |\n| [CVE-2022-27943](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2022-27943) | Yes | Yes | Medium (5.5) |\n| [CVE-2022-41409](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2022-41409) | Yes | Yes | High (7.5) |\n| [CVE-2022-4899](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2022-4899) | Yes | Yes | High (7.5) |\n| [CVE-2023-29383](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2023-29383) | Yes | Yes | Low (3.3) |\n| [CVE-2023-34969](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2023-34969) | Yes | Yes | Medium (6.5) |\n| [CVE-2023-50495](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2023-50495) | Yes | Yes | Medium (6.5) |\n| [CVE-2023-7008](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2023-7008) | Yes | Yes | Medium (5.9) |\n| [CVE-2024-41996](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2024-41996) | Yes | Yes | High (7.5) |\n| [CVE-2025-8114](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-8114) | Yes | Yes | Medium (4.7) |\n| [CVE-2025-9086](http://people.ubuntu.com/%7Eubuntu-security/cve/CVE-2025-9086) | Yes | Yes | High (7.5) |",
+        "summary": {
+          "title": "New CNI and controller version available",
+          "summary": "CNI and managed data plane controller version 1.23.6-asm.28 is now rolling out. This update includes fixes for several critical security vulnerabilities. While Envoy Proxies will update automatically, manual restarts are required for StatefulSets and Jobs."
+        }
+      }
+    ],
     "2026-02-09": [
       {
         "kind": "Announcement",

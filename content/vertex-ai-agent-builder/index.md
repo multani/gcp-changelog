@@ -1,5 +1,15 @@
 # Vertex AI Agent Builder
 
+## 2026-02-18
+
+### Announcement
+
+**Vertex AI Agent Builder**
+
+Vertex AI Agent Engine [Code Execution](https://docs.cloud.google.com/agent-builder/agent-engine/code-execution/overview)
+is now [Generally Available](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-01-26
 
 ### Announcement

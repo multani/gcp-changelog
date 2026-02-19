@@ -25,13 +25,6 @@ The following Cloud Composer versions and builds have reached their
 [end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):
 composer-3-airflow-2.9.3-build.15 and composer-2.11.2-\*.
 
-### Announcement
-
-A new Cloud Composer release has started on **February 16, 2026**. Get ready
-for upcoming changes and features as we roll out the new release to all regions.
-This release is in progress at the moment. Listed changes and features might
-not be available in some regions yet.
-
 ### Feature
 
 [Environment snapshots](https://docs.cloud.google.com/composer/docs/composer-3/save-load-snapshots)

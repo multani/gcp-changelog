@@ -1,5 +1,12 @@
 # Cloud Run functions
 
+## 2026-02-18
+
+### Feature
+
+Support for [.NET 10 runtime](https://docs.cloud.google.com/functions/docs/concepts/execution-environment#.net) is in [General Availability](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-02-02
 
 ### Feature

@@ -46,7 +46,7 @@ Upgraded app-containers/docker-credential-helpers to v0.9.4.
 |  |  |  |  |
 | --- | --- | --- | --- |
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
-| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/39e827d44c138b0c9c713f2c326baa2727c1f91a ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.104.142/lakitu/gpu_driver_versions.textproto) |
+| [COS-6.12.55](https://cos.googlesource.com/third_party/kernel/+/1b1e2b01ac575e6ecc5a3a83615620cc2fd27c45 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.104.149/lakitu/gpu_driver_versions.textproto) |
 
 ### Feature
 

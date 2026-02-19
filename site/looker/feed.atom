@@ -12,6 +12,18 @@
     <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:0</id>
     <published>2026-02-17T00:00:00+00:00</published>
     <updated>2026-02-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Rolling out in preview starting February 17, 2026, LookML developers can unlock their Git branch in cases where their Git branch is locked as a result of another Git operation in progress or a previous Git operation failing. When the Git repository is locked, Looker displays the <strong>Unlock Branch</strong> option in the <a href="https://docs.cloud.google.com/looker/docs/git-command-reference#git_actions_panel"><strong>Git Actions</strong> panel</a> of the Looker IDE. In addition, if a LookML developer tries to commit a change on a locked Git branch, Looker displays a warning in the <strong>Commit</strong> dialog, along with an option to delete the Git lock. See the <a href="https://docs.cloud.google.com/looker/docs/version-control-and-deploying-changes#unlock-branch">Using version control and deploying</a> documentation page for details.</p>
+<p><strong>Note:</strong> This item was added on February 18, 2026.</p>]]></content>
+    <summary>LookML developers can now unlock their Git branches if they become locked due to ongoing or failed Git operations. This new feature provides an 'Unlock Branch' option in the Git Actions panel and a warning with an unlock option when committing changes to a locked branch.</summary>
+    <title>Feature: Unlock Git Branches in Looker</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:1</id>
+    <published>2026-02-17T00:00:00+00:00</published>
+    <updated>2026-02-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Rolling out in preview starting February 17, 2026, the <strong>Self-service Explores</strong> feature supports updating the data for a self-service Explore. The owner of a self-service Explore can update it with data from the latest version of the file that was used to create the self-service Explore. See the <a href="https://docs.cloud.google.com/looker/docs/exploring-self-service#update-data">Creating self-service Explores</a> documentation page for more information.</p>]]></content>
     <summary>The new Self-service Explores feature allows owners to update their Explores with the latest data from the original file. This preview feature, available from February 17, 2026, ensures your Explores remain current. More details can be found in the documentation on creating self-service Explores.</summary>
     <title>Feature: Update self-service Explores with latest data</title>
@@ -20,7 +32,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:1</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:2</id>
     <published>2026-02-17T00:00:00+00:00</published>
     <updated>2026-02-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Rolling out in preview starting February 17, 2026, the <strong>Self-service Explores</strong> feature supports <a href="https://docs.cloud.google.com/looker/docs/exploring-self-service#from-sheets">uploading data from Google Sheets</a>. To support uploading data from Google Sheets, your Looker admin must <a href="https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#enable-apis">enable the required APIs</a> in the Google Cloud project that houses your BigQuery database.</p>]]></content>
@@ -31,7 +43,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:2</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:3</id>
     <published>2026-02-17T00:00:00+00:00</published>
     <updated>2026-02-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Rolling out in preview starting February 17, 2026, the <strong>In-database merge queries</strong> feature is supported for <a href="https://docs.cloud.google.com/looker/docs/merged-results">merging results</a> of two queries that are on the same BigQuery connection. Previously, the join for merging results was always performed in Looker memory, which limited each query to 5,000 rows that could be calculated in the join. If your Looker admin has enabled the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#in-database-merge-queries"><strong>In-database merge queries</strong> Looker Labs feature</a>, the join between two queries that are on the same BigQuery connection is performed in the BigQuery database itself. Performing the join in the database is more performant and allows for unlimited rows that can be joined.</p>]]></content>
@@ -42,7 +54,18 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:3</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:4</id>
+    <published>2026-02-17T00:00:00+00:00</published>
+    <updated>2026-02-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/system-activity-dashboards#user_activity_dashboard">System Activity User Activity dashboard</a> has been updated to improve authentication troubleshooting. New information includes: recent login failures, the authentication method that was used, the error message that was returned, and the time of the attempt.</p>]]></content>
+    <summary>The User Activity dashboard has been enhanced with new details to help troubleshoot authentication issues. You can now view recent login failures, the authentication method used, error messages, and the time of each attempt.</summary>
+    <title>Feature: New dashboard for authentication troubleshooting</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:5</id>
     <published>2026-02-17T00:00:00+00:00</published>
     <updated>2026-02-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Rolling out in preview starting February 17, 2026, the <a href="https://docs.cloud.google.com/looker/docs/content-certification">content certification</a> feature includes several new updates:</p>
@@ -59,7 +82,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:4</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:6</id>
     <published>2026-02-17T00:00:00+00:00</published>
     <updated>2026-02-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now rolling out in preview, dashboard editors can change the size and layout of dashboard tiles with more granularity. To enable this feature, a Looker admin must turn on the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#granular-dashboard-sizing"><strong>Granular Dashboard Sizing</strong> Labs feature</a>.</p>]]></content>
@@ -70,7 +93,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:5</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:7</id>
     <published>2026-02-17T00:00:00+00:00</published>
     <updated>2026-02-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now rolling out in preview, dashboard editors can <a href="https://docs.cloud.google.com/looker/docs/editing-user-defined-dashboards#download-limit">set default options for how the download of a dashboard tile includes query results</a>. They can set the download to include by default all query results or the current result table that is displayed in the visualization, or set a custom number of rows and columns. To enable this feature, a Looker admin must turn on the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#dashboard-tile-download-limits"><strong>Tile Download Default Options</strong> Labs feature</a>.</p>]]></content>
@@ -81,7 +104,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:6</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:8</id>
     <published>2026-02-17T00:00:00+00:00</published>
     <updated>2026-02-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Rolling out in preview starting February 17, 2026, the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#embed_conversational_analytics">Embed Conversational Analytics Labs feature</a> is now available. When enabled, the Embed Conversational Analytics Labs feature lets you <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-embedding">embed Conversational Analytics conversations and agents in an iframe</a> like other Looker content types.</p>]]></content>

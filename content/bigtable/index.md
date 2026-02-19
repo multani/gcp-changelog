@@ -1,5 +1,23 @@
 # Bigtable
 
+## 2026-02-18
+
+### Announcement
+
+New best practices are available for securing generative AI agents using Model
+Context Protocol (MCP) with Google Cloud databases. This guide covers key
+security measures like least privilege, native database controls, and secure
+agent design to help you build safer AI applications. For more information, see
+[Best practices for securing agent interactions with Model Context Protocol](https://docs.cloud.google.com/bigtable/docs/secure-agent-interactions-mcp).
+
+### Feature
+
+You can migrate a machine learning feature management workload from Vertex AI
+Feature Store (Legacy) to a Bigtable instance. For more information, see
+[Migrate from Vertex AI Feature Store (Legacy) to
+Bigtable](https://docs.cloud.google.com/bigtable/docs/migrate-vertex-ai-legacy-bigtable).
+
+---
 ## 2026-02-17
 
 ### Feature

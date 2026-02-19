@@ -9,6 +9,22 @@
           "title": "Secure Generative AI Agents with MCP",
           "summary": "New best practices guide you on securing generative AI agents using Model Context Protocol (MCP) with Google Cloud databases. Learn about least privilege, native database controls, and secure agent design to build safer AI applications."
         }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "Control of MCP use with organization policies is deprecated. After March 17,\n2026, organization policies that use the `gcp.managed.allowedMCPServices`\nconstraint won't work, and you can control MCP use with IAM deny policies. For\nmore information about controlling MCP use, see\n[Control MCP use with IAM](https://docs.cloud.google.com/mcp/control-mcp-use-iam).",
+        "summary": {
+          "title": "MCP Use Control Deprecation",
+          "summary": "Control of MCP use with organization policies is deprecated and will stop working after March 17, 2026. You should transition to using IAM deny policies to manage MCP usage. For detailed instructions, refer to the documentation on controlling MCP use with IAM."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "After March 17, 2026, when you enable Firestore, the Firestore\nMCP server is automatically enabled.",
+        "summary": {
+          "title": "Firestore MCP server enabled by default",
+          "summary": "Starting March 17, 2026, the Firestore MCP server will be automatically enabled for all new Firestore instances. This change ensures enhanced performance and functionality for your applications from the moment you enable Firestore."
+        }
       }
     ],
     "2026-02-10": [

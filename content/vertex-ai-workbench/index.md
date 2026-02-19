@@ -1,5 +1,16 @@
 # Vertex AI Workbench
 
+## 2026-01-29
+
+### Feature
+
+**M139 release**
+
+The M139 release of Vertex AI Workbench instances includes the following:
+
+* Removed a startup script dependency on `gs://dl-platform-public-configs`.
+
+---
 ## 2026-01-16
 
 ### Feature

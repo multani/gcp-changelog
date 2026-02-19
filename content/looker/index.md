@@ -4,6 +4,12 @@
 
 ### Feature
 
+Rolling out in preview starting February 17, 2026, LookML developers can unlock their Git branch in cases where their Git branch is locked as a result of another Git operation in progress or a previous Git operation failing. When the Git repository is locked, Looker displays the **Unlock Branch** option in the [**Git Actions** panel](https://docs.cloud.google.com/looker/docs/git-command-reference#git_actions_panel) of the Looker IDE. In addition, if a LookML developer tries to commit a change on a locked Git branch, Looker displays a warning in the **Commit** dialog, along with an option to delete the Git lock. See the [Using version control and deploying](https://docs.cloud.google.com/looker/docs/version-control-and-deploying-changes#unlock-branch) documentation page for details.
+
+**Note:** This item was added on February 18, 2026.
+
+### Feature
+
 Rolling out in preview starting February 17, 2026, the **Self-service Explores** feature supports updating the data for a self-service Explore. The owner of a self-service Explore can update it with data from the latest version of the file that was used to create the self-service Explore. See the [Creating self-service Explores](https://docs.cloud.google.com/looker/docs/exploring-self-service#update-data) documentation page for more information.
 
 ### Feature
@@ -13,6 +19,10 @@ Rolling out in preview starting February 17, 2026, the **Self-service Explores**
 ### Feature
 
 Rolling out in preview starting February 17, 2026, the **In-database merge queries** feature is supported for [merging results](https://docs.cloud.google.com/looker/docs/merged-results) of two queries that are on the same BigQuery connection. Previously, the join for merging results was always performed in Looker memory, which limited each query to 5,000 rows that could be calculated in the join. If your Looker admin has enabled the [**In-database merge queries** Looker Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#in-database-merge-queries), the join between two queries that are on the same BigQuery connection is performed in the BigQuery database itself. Performing the join in the database is more performant and allows for unlimited rows that can be joined.
+
+### Feature
+
+The [System Activity User Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#user_activity_dashboard) has been updated to improve authentication troubleshooting. New information includes: recent login failures, the authentication method that was used, the error message that was returned, and the time of the attempt.
 
 ### Feature
 

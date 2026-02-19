@@ -1,6 +1,24 @@
 {
   "name": "Cloud SQL for PostgreSQL",
   "entries": {
+    "2026-02-18": [
+      {
+        "kind": "Deprecated",
+        "content": "Control of MCP use with organization policies is deprecated.\nAfter March 17, 2026, organization policies that use the\n`gcp.managed.allowedMCPServices` constraint won't work,\nand you can control MCP use with IAM deny policies.\nFor more information about controlling MCP use, see\n[Control MCP use with IAM](https://docs.cloud.google.com/mcp/control-mcp-use-iam).",
+        "summary": {
+          "title": "Control of MCP use with organization policies deprecated",
+          "summary": "Control of MCP use with organization policies is deprecated. After March 17, 2026, organization policies that use the `gcp.managed.allowedMCPServices` constraint won't work. You can control MCP use with IAM deny policies instead."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "After March 17, 2026, when you enable the Cloud SQL Admin API\n(`sqladmin.googleapis.com`)`, the Cloud SQL remote MCP server is\nenabled automatically.\n\nThe Cloud SQL remote MCP server is in [Preview](https://cloud.google.com/products/#product-launch-stages).",
+        "summary": {
+          "title": "Cloud SQL remote MCP server enabled by default",
+          "summary": "Starting March 17, 2026, the Cloud SQL remote MCP server will be enabled automatically when you enable the Cloud SQL Admin API. This server is currently in Preview."
+        }
+      }
+    ],
     "2026-02-17": [
       {
         "kind": "Announcement",

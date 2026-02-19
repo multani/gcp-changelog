@@ -1,5 +1,12 @@
 # App Engine flexible environment .NET
 
+## 2026-02-18
+
+### Feature
+
+Support for [.NET 10 runtime](https://docs.cloud.google.com/appengine/docs/flexible/dotnet/runtime) is in [General Availability](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-01-27
 
 ### Feature

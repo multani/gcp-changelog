@@ -1,5 +1,22 @@
 # Compute Engine
 
+## 2026-02-18
+
+### Feature
+
+**Generally available**: You can use Hyperdisk Exapools for large-scale
+workloads, such as AI and machine learning, that require between 500 TiB and 5
+EiB of block storage and more than 100 GiB/s of concurrent performance in a
+single zone. With Hyperdisk Exapools, you purchase storage and performance in bulk
+and share those resources across as many as 500,000 disks in a single project.
+
+To use Hyperdisk Exapools with your projects, [contact your account team](https://docs.cloud.google.com/tam)
+to get access.
+
+To learn more about Hyperdisk Exapools, see
+[Hyperdisk Exapools overview](https://docs.cloud.google.com/compute/docs/disks/hyperdisk-exapools).
+
+---
 ## 2026-02-17
 
 ### Change

@@ -2328,6 +2328,20 @@
 
 
 <h1 id="cloud-sql-for-postgresql">Cloud SQL for PostgreSQL</h1>
+<h2 id="2026-02-18">2026-02-18</h2>
+<h3 id="deprecated">Deprecated</h3>
+<p>Control of MCP use with organization policies is deprecated.
+After March 17, 2026, organization policies that use the
+<code>gcp.managed.allowedMCPServices</code> constraint won't work,
+and you can control MCP use with IAM deny policies.
+For more information about controlling MCP use, see
+<a href="https://docs.cloud.google.com/mcp/control-mcp-use-iam">Control MCP use with IAM</a>.</p>
+<h3 id="change">Change</h3>
+<p>After March 17, 2026, when you enable the Cloud SQL Admin API
+(<code>sqladmin.googleapis.com</code>)`, the Cloud SQL remote MCP server is
+enabled automatically.</p>
+<p>The Cloud SQL remote MCP server is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>
+<hr />
 <h2 id="2026-02-17">2026-02-17</h2>
 <h3 id="announcement">Announcement</h3>
 <p>New best practices are available for securing generative AI agents using
@@ -2657,7 +2671,7 @@ For more information, see <a href="https://cloud.google.com/sql/docs/postgres/ba
 <p>Now you can use <a href="https://cloud.google.com/sql/docs/postgres/about-private-service-connect#psc-backend">Private Service Connect backends</a>, as an alternative to Private Service Connect endpoints, to access Cloud SQL instances.</p>
 <h3 id="feature_30">Feature</h3>
 <p>Now you can create an IPv6 endpoint for Private Service Connect (PSC) connections. For more information, see <a href="https://cloud.google.com/sql/docs/postgres/configure-private-service-connect#create-psc-endpoint">Connect to an instance using Private Service Connect</a>.</p>
-<h3 id="deprecated">Deprecated</h3>
+<h3 id="deprecated_1">Deprecated</h3>
 <p>You can no longer set a deny maintenance period for instances that are running a maintenance version older than 12 months. To update your instance, <a href="https://cloud.google.com/sql/docs/postgres/self-service-maintenance">perform self-service maintenance</a> or wait until the <a href="https://cloud.google.com/sql/docs/postgres/set-maintenance-window#find-maintenance-api">next maintenance window</a> to update your instance automatically. For more information about maintenance, see <a href="https://cloud.google.com/sql/docs/postgres/maintenance">Maintenance updates on Cloud SQL instances</a>.</p>
 <hr />
 <h2 id="2025-08-13">2025-08-13</h2>
@@ -2706,6 +2720,9 @@ For more information, see <a href="https://cloud.google.com/sql/docs/postgres/ba
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-sql-for-postgresql">Cloud SQL for PostgreSQL</a></li>
+          <li class="nav-item">
+            <a href="#2026-02-18" class="nav-link">2026-02-18</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-02-17" class="nav-link">2026-02-17</a>
           </li>

@@ -1,5 +1,12 @@
 # Google Cloud Armor
 
+## 2026-02-18
+
+### Change
+
+Cloud Armor [preconfigured WAF rules](https://docs.cloud.google.com/armor/docs/waf-rules) support for inspection up to the first 64 kB (either 8 kB, 16 kB, 32 kB, 48 kB, or 64 kB) of the [request body content](https://docs.cloud.google.com/armor/docs/security-policy-overview#request-body) is Generally Available.
+
+---
 ## 2025-12-06
 
 ### Security

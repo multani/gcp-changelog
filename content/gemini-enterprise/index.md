@@ -34,6 +34,15 @@ toggle by default too.
 For more information about feature controls, see
 [Manage features on the web app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
 
+### Feature
+
+**Gemini Enterprise: Chat with files in the Microsoft SharePoint connector**
+
+Gemini Enterprise can analyze content and generate answers from XLSX and
+CSV files in the Microsoft SharePoint connector, eliminating the need to upload
+these files to the assistant. For more information, see
+[Chat with files in connectors](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-chat#chat_with_files_in_connectors).
+
 ---
 ## 2026-02-12
 

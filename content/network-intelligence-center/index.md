@@ -1,5 +1,16 @@
 # Network Intelligence Center
 
+## 2026-02-19
+
+### Feature
+
+[Connectivity Tests](https://docs.cloud.google.com/network-intelligence-center/docs/connectivity-tests/concepts/overview)
+identifies peering dynamic routes and Network Connectivity
+Center dynamic routes that are dropped due to
+[network-](https://docs.cloud.google.com/vpc/docs/quota#per_network) or
+[hub-level](https://docs.cloud.google.com/network-connectivity/quotas#quotas_5) quotas as invalid.
+
+---
 ## 2026-02-18
 
 ### Feature

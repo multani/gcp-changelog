@@ -52,18 +52,26 @@
       },
       {
         "kind": "Feature",
-        "content": "Now rolling out in preview, dashboard editors can change the size and layout of dashboard tiles with more granularity. To enable this feature, a Looker admin must turn on the [**Granular Dashboard Sizing** Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#granular-dashboard-sizing).",
+        "content": "Now rolling out in preview starting February 17, 2026, Looker admins can grant the new [`schedule_without_limit` permission](https://docs.cloud.google.com/looker/docs/admin-users-roles#schedule_without_limit) to restrict a user's ability to [deliver all data results from a Look or an Explore](https://docs.cloud.google.com/looker/docs/delivering-looks-explores). This permission must be combined with another Looker permission that permits delivering data.\n\nThis permission will be automatically granted to any existing roles that already contain a data delivery permission. Looker admins must remove this permission from any users whom they wish to prevent from delivering all results from a Look or an Explore.",
         "summary": {
-          "title": "Customize your dashboard layout",
-          "summary": "You can now change the size and layout of dashboard tiles with more granularity. A Looker admin must enable the Granular Dashboard Sizing Labs feature to access this new functionality."
+          "title": "New permission for scheduling data",
+          "summary": "A new preview permission, schedule_without_limit, is now available for Looker admins. This permission allows finer control over user abilities to deliver data from Looks or Explores. Existing roles with data delivery permissions will automatically receive this new permission."
         }
       },
       {
         "kind": "Feature",
-        "content": "Now rolling out in preview, dashboard editors can [set default options for how the download of a dashboard tile includes query results](https://docs.cloud.google.com/looker/docs/editing-user-defined-dashboards#download-limit). They can set the download to include by default all query results or the current result table that is displayed in the visualization, or set a custom number of rows and columns. To enable this feature, a Looker admin must turn on the [**Tile Download Default Options** Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#dashboard-tile-download-limits).",
+        "content": "Now rolling out in preview starting February 7, 2026, dashboard editors can [set default options for how the download of a dashboard tile includes query results](https://docs.cloud.google.com/looker/docs/editing-user-defined-dashboards#download-limit). They can set the download to include by default all query results or the current result table that is displayed in the visualization, or set a custom number of rows and columns. To enable this feature, a Looker admin must turn on the [**Tile Download Default Options** Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#dashboard-tile-download-limits).",
         "summary": {
-          "title": "Default Dashboard Tile Download Options Now in Preview",
-          "summary": "Dashboard editors can now set default options for downloading query results from dashboard tiles. This includes options to download all results, the current table, or a custom number of rows and columns. Looker admins must enable the Tile Download Default Options Labs feature for this functionality."
+          "title": "Dashboard Tile Download Defaults",
+          "summary": "Dashboard editors can now set default options for downloading query results from dashboard tiles. This allows for specifying whether to include all results, the current table, or a custom number of rows and columns. A Looker admin needs to enable the 'Tile Download Default Options' Labs feature to activate this functionality."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Now rolling out in preview starting February 17, 2026, dashboard editors can change the size and layout of dashboard tiles with more granularity. To enable this feature, a Looker admin must turn on the [**Granular Dashboard Sizing** Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#granular-dashboard-sizing).",
+        "summary": {
+          "title": "Preview: Granular Dashboard Sizing",
+          "summary": "Dashboard editors can now change the size and layout of dashboard tiles with more granularity. This new Labs feature, Granular Dashboard Sizing, is available in preview starting February 17, 2026. Looker admins must enable this feature in the Admin panel."
         }
       },
       {

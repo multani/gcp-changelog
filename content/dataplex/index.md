@@ -1,5 +1,17 @@
 # Dataplex
 
+## 2026-02-19
+
+### Feature
+
+When you create a [data quality rule](https://cloud.google.com/dataplex/docs/auto-data-quality-overview#rule-definition),
+you can now optionally include a
+[debug query](https://cloud.google.com/dataplex/docs/auto-data-quality-overview#debug-queries)
+to run alongside the rule. A debug query is a SQL statement that returns up to
+10 scalar values to help diagnose rule failures. This feature is available in
+[preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-02-11
 
 ### Feature

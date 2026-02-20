@@ -1,5 +1,16 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-02-19
+
+### Feature
+
+Cloud SQL now provides brute-force detection and protection for your Cloud SQL
+instances. This helps protect your instances from brute-force access attempts
+by identifying the source and mitigating the risk caused by these attempts.
+For more information, see
+[Use brute-force protection](https://docs.cloud.google.com/sql/docs/postgres/use-brute-force-protection).
+
+---
 ## 2026-02-18
 
 ### Deprecated

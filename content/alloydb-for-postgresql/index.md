@@ -1,5 +1,16 @@
 # AlloyDB for PostgreSQL
 
+## 2026-02-19
+
+### Feature
+
+AlloyDB now integrates with Database Center to provide prioritized health
+monitoring in the Google Cloud console. This integration highlights critical
+and high-priority risks, offering one-click navigation to recommended fixes and
+system insights for quick resolution. For more information, see
+[Monitor the health of your AlloyDB clusters and instances](https://docs.cloud.google.com/alloydb/docs/monitor-health-clusters-instances).
+
+---
 ## 2026-02-17
 
 ### Feature

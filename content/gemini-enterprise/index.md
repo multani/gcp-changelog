@@ -1,5 +1,40 @@
 # Gemini Enterprise
 
+## 2026-02-19
+
+### Feature
+
+**Gemini Enterprise: Support for new actions (Preview)**
+
+New actions are available for the following data stores:
+
+* [Confluence Data Center](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/confluence-dc)
+* [Jira Data Center](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/jira-dc)
+* [Notion](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/notion)
+* [Zendesk](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/zendesk)
+
+For a list of actions for these data stores, see [Supported actions](https://docs.cloud.google.com/gemini/enterprise/docs/connect-third-party-data-source#supported_actions).
+
+### Feature
+
+**Gemini Enterprise: Use Gemini 3.1 Pro (Preview)**
+
+You can use Gemini 3.1 Pro in Preview with Gemini Enterprise.
+This version replaces Gemini 3 Pro in Preview.
+
+To make Gemini 3.1 Pro available to users in your Gemini Enterprise
+app, a Gemini Enterprise admin must enable the
+**Gemini 3.1 Pro (Preview)** toggle within the **Model availability**
+feature control.
+
+If an admin had previously enabled the **Gemini 3 Pro (Preview)**
+toggle, then Gemini Enterprise enables the **Gemini 3.1 Pro (Preview)**
+toggle by default too.
+
+For more information about feature controls, see
+[Manage features on the web app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
+
+---
 ## 2026-02-12
 
 ### Feature

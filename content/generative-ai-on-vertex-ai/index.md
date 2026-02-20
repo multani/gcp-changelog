@@ -1,5 +1,19 @@
 # Generative AI on Vertex AI
 
+## 2026-02-19
+
+### Feature
+
+**Gemini 3.1 Pro Preview**
+
+[Gemini 3.1 Pro](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-1-pro)
+is available in preview in Model Garden. Gemini 3.1 Pro is
+our most advanced reasoning Gemini model, capable of solving complex
+problems from different information sources, including text, audio, images,
+video, PDFs, and even entire code repositories with its 1M token context
+window.
+
+---
 ## 2026-02-17
 
 ### Deprecated

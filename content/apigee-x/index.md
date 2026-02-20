@@ -17,6 +17,8 @@ A vulnerability was identified in the Apigee platform ([CVE-2025-13292](https://
 
 ### Announcement
 
+**Note:** This release has been rolled back temporarily to address an issue.
+
 On February 10, 2026, we released an updated version of Apigee (1-17-0-apigee-2).
 
 **Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.

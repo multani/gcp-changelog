@@ -1,5 +1,14 @@
 # Oracle Database@Google Cloud
 
+## 2026-02-19
+
+### Feature
+
+For Autonomous Database Service, Oracle Database@Google Cloud supports the `asia-south2` (Delhi, India) region.
+
+For a list of supported locations, see [Supported regions and zones](https://docs.cloud.google.com/oracle/database/docs/regions-and-zones).
+
+---
 ## 2026-02-12
 
 ### Feature

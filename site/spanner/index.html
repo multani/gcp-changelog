@@ -2336,6 +2336,16 @@ key security measures like least privilege, native database controls, and secure
 agent design to help you build safer AI applications. For more information, see
 <a href="https://docs.cloud.google.com/spanner/docs/secure-agent-interactions-mcp">Best practices for securing agent interactions with Model Context Protocol</a>.</p>
 <p>This feature is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>
+<h3 id="change">Change</h3>
+<p>After March 17, 2026, when you enable Spanner, the
+Spanner MCP server is automatically enabled.</p>
+<h3 id="deprecated">Deprecated</h3>
+<p>Control of MCP use with organization policies is deprecated.
+After March 17, 2026, organization policies that use the
+<code>gcp.managed.allowedMCPServices</code> constraint won't work, and
+you can control MCP use with IAM deny policies.</p>
+<p>For more information about controlling MCP use, see
+<a href="https://docs.cloud.google.com/mcp/control-mcp-use-iam">Control MCP use with IAM</a>.</p>
 <hr />
 <h2 id="2026-02-10">2026-02-10</h2>
 <h3 id="feature">Feature</h3>
@@ -2493,7 +2503,7 @@ on the Google Cloud console. For more information, see
 <a href="https://docs.cloud.google.com/spanner/docs/monitor-active-queries#view-longest-running-queries">Monitor active queries</a>.</p>
 <hr />
 <h2 id="2025-12-03">2025-12-03</h2>
-<h3 id="change">Change</h3>
+<h3 id="change_1">Change</h3>
 <p>String values in
 <a href="https://docs.cloud.google.com/spanner/docs/manage-data-using-console#create-modify-query-data">Spanner Studio query results</a>
 are now enclosed in double quotes, providing a clear visual cue to differentiate

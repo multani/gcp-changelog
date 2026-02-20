@@ -9,6 +9,22 @@
           "title": "Secure Generative AI Agents with MCP",
           "summary": "New best practices guide you on securing generative AI agents with Model Context Protocol (MCP) using Google Cloud databases. Learn about least privilege, native database controls, and secure agent design to build safer AI applications. This feature is currently in Preview."
         }
+      },
+      {
+        "kind": "Change",
+        "content": "After March 17, 2026, when you enable Spanner, the\nSpanner MCP server is automatically enabled.",
+        "summary": {
+          "title": "Spanner MCP server enabled by default",
+          "summary": "Starting March 17, 2026, the Spanner MCP server will be automatically enabled whenever you enable Spanner. This change ensures that the necessary components are ready for use upon Spanner activation."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "Control of MCP use with organization policies is deprecated.\nAfter March 17, 2026, organization policies that use the\n`gcp.managed.allowedMCPServices` constraint won't work, and\nyou can control MCP use with IAM deny policies.\n\nFor more information about controlling MCP use, see\n[Control MCP use with IAM](https://docs.cloud.google.com/mcp/control-mcp-use-iam).",
+        "summary": {
+          "title": "Control of MCP use with organization policies deprecated",
+          "summary": "Control of MCP use with organization policies is deprecated and will stop working after March 17, 2026. You can now control MCP use with IAM deny policies instead."
+        }
       }
     ],
     "2026-02-10": [

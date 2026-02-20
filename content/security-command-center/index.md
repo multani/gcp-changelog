@@ -1,5 +1,15 @@
 # Security Command Center
 
+## 2026-02-11
+
+### Feature
+
+The [Security Command Center Standard tier](https://docs.cloud.google.com/security-command-center/docs/service-tiers),
+available at no charge, has a new set of capabilities and is activated
+automatically for some organizations. For information about these changes, see
+[Standard tier enhanced and automatically activated for some customers](https://docs.cloud.google.com/security-command-center/docs/migrate-standard-legacy).
+
+---
 ## 2025-12-16
 
 ### Feature

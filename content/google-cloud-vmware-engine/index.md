@@ -1,5 +1,15 @@
 # Google Cloud VMware Engine
 
+## 2026-02-20
+
+### Announcement
+
+The VMware Engine [`ve2` node type](https://docs.cloud.google.com/vmware-engine/docs/concepts/node-types) is now available in the following
+additional region:
+
+* Paris, France, Europe (`europe-west9-b`)
+
+---
 ## 2026-02-13
 
 ### Announcement

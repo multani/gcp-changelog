@@ -4,116 +4,100 @@
     "2026-02-17": [
       {
         "kind": "Feature",
-        "content": "Rolling out in preview starting February 17, 2026, LookML developers can unlock their Git branch in cases where their Git branch is locked as a result of another Git operation in progress or a previous Git operation failing. When the Git repository is locked, Looker displays the **Unlock Branch** option in the [**Git Actions** panel](https://docs.cloud.google.com/looker/docs/git-command-reference#git_actions_panel) of the Looker IDE. In addition, if a LookML developer tries to commit a change on a locked Git branch, Looker displays a warning in the **Commit** dialog, along with an option to delete the Git lock. See the [Using version control and deploying](https://docs.cloud.google.com/looker/docs/version-control-and-deploying-changes#unlock-branch) documentation page for details.\n\n**Note:** This item was added on February 18, 2026.",
+        "content": "Now available in preview, the **Self-service Explores** feature supports updating the data for a self-service Explore. The owner of a self-service Explore can update it with data from the latest version of the file that was used to create the self-service Explore. See the [Creating self-service Explores](https://docs.cloud.google.com/looker/docs/exploring-self-service#update-data) documentation page for more information.",
         "summary": {
-          "title": "Unlock Git Branches in Looker",
-          "summary": "LookML developers can now unlock their Git branches if they become locked due to ongoing or failed Git operations. This new feature provides an 'Unlock Branch' option in the Git Actions panel and a warning with an unlock option when committing changes to a locked branch."
+          "title": "Update data for self-service Explores",
+          "summary": "Self-service Explores now support updating data with the latest file version. This feature, currently in preview, allows owners to refresh their Explores easily. More details can be found in the documentation on creating self-service Explores."
         }
       },
       {
         "kind": "Feature",
-        "content": "Rolling out in preview starting February 17, 2026, the **Self-service Explores** feature supports updating the data for a self-service Explore. The owner of a self-service Explore can update it with data from the latest version of the file that was used to create the self-service Explore. See the [Creating self-service Explores](https://docs.cloud.google.com/looker/docs/exploring-self-service#update-data) documentation page for more information.",
+        "content": "Now available in preview, dashboard editors can [set default options for how the download of a dashboard tile includes query results](https://docs.cloud.google.com/looker/docs/editing-user-defined-dashboards#download-limit). They can set the download to include by default all query results or the current result table that is displayed in the visualization, or set a custom number of rows and columns. To enable this feature, a Looker admin must turn on the [**Tile Download Default Options** Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#dashboard-tile-download-limits).",
         "summary": {
-          "title": "Update self-service Explores with latest data",
-          "summary": "The new Self-service Explores feature allows owners to update their Explores with the latest data from the original file. This preview feature, available from February 17, 2026, ensures your Explores remain current. More details can be found in the documentation on creating self-service Explores."
+          "title": "Set default dashboard tile download options",
+          "summary": "Dashboard editors can now set default options for downloading query results from dashboard tiles. This feature, available in preview, allows setting defaults for all results, the current table, or a custom number of rows and columns. Looker admins need to enable the 'Tile Download Default Options' Labs feature."
         }
       },
       {
         "kind": "Feature",
-        "content": "Rolling out in preview starting February 17, 2026, the **Self-service Explores** feature supports [uploading data from Google Sheets](https://docs.cloud.google.com/looker/docs/exploring-self-service#from-sheets). To support uploading data from Google Sheets, your Looker admin must [enable the required APIs](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#enable-apis) in the Google Cloud project that houses your BigQuery database.",
+        "content": "Now available in preview, the **In-database merge queries** feature is supported for [merging results](https://docs.cloud.google.com/looker/docs/merged-results) of two queries that are on the same BigQuery connection. Previously, the join for merging results was always performed in Looker memory, which limited each query to 5,000 rows that could be calculated in the join. If your Looker admin has enabled the [**In-database merge queries** Looker Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#in-database-merge-queries), the join between two queries that are on the same BigQuery connection is performed in the BigQuery database itself. Performing the join in the database is more performant and allows for unlimited rows that can be joined.",
         "summary": {
-          "title": "Self-service Explores now available",
-          "summary": "The new Self-service Explores feature is rolling out in preview starting February 17, 2026. This feature allows users to upload data directly from Google Sheets for analysis. Admins need to enable specific APIs to support this functionality."
+          "title": "In-database merge queries now in preview",
+          "summary": "The new In-database merge queries feature, now in preview, allows for more performant merging of query results directly within BigQuery. This eliminates previous row limitations and improves the efficiency of data joins."
         }
       },
       {
         "kind": "Feature",
-        "content": "Rolling out in preview starting February 17, 2026, the **In-database merge queries** feature is supported for [merging results](https://docs.cloud.google.com/looker/docs/merged-results) of two queries that are on the same BigQuery connection. Previously, the join for merging results was always performed in Looker memory, which limited each query to 5,000 rows that could be calculated in the join. If your Looker admin has enabled the [**In-database merge queries** Looker Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#in-database-merge-queries), the join between two queries that are on the same BigQuery connection is performed in the BigQuery database itself. Performing the join in the database is more performant and allows for unlimited rows that can be joined.",
+        "content": "Now available in preview, LookML developers can unlock their Git branch in cases where their Git branch is locked as a result of another Git operation in progress or a previous Git operation failing. When the Git repository is locked, Looker displays the **Unlock Branch** option in the [**Git Actions** panel](https://docs.cloud.google.com/looker/docs/git-command-reference#git_actions_panel) of the Looker IDE. In addition, if a LookML developer tries to commit a change on a locked Git branch, Looker displays a warning in the **Commit** dialog, along with an option to delete the Git lock. See the [Using version control and deploying](https://docs.cloud.google.com/looker/docs/version-control-and-deploying-changes#unlock-branch) documentation page for details.\n\n**Note:** This item was added on February 18, 2026.",
         "summary": {
-          "title": "In-database merge queries available in preview",
-          "summary": "A new feature, In-database merge queries, is rolling out in preview starting February 17, 2026. This feature performs joins directly in BigQuery, offering improved performance and supporting an unlimited number of rows for merged results. Previously, joins were limited to 5,000 rows in Looker's memory."
+          "title": "Unlock Git Branch in Looker",
+          "summary": "LookML developers can now unlock their Git branches in Looker, resolving issues caused by in-progress or failed Git operations. The 'Unlock Branch' option is available in the Git Actions panel, and warnings with an option to delete the lock appear when committing changes on a locked branch."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "The following features will roll out over a four-day period starting February 17, 2026.",
+        "summary": {
+          "title": "New features coming soon",
+          "summary": "New features will be gradually released starting February 17, 2026. This rollout will take place over a four-day period."
         }
       },
       {
         "kind": "Feature",
-        "content": "The [System Activity User Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#user_activity_dashboard) has been updated to improve authentication troubleshooting. New information includes: recent login failures, the authentication method that was used, the error message that was returned, and the time of the attempt.",
+        "content": "Now available in preview, the [**Embed Conversational Analytics** Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#embed_conversational_analytics) is now available. When enabled, the Embed Conversational Analytics Labs feature lets you [embed Conversational Analytics conversations and agents in an iframe](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-embedding) like other Looker content types.",
         "summary": {
-          "title": "New dashboard for authentication troubleshooting",
-          "summary": "The User Activity dashboard has been enhanced with new details to help troubleshoot authentication issues. You can now view recent login failures, the authentication method used, error messages, and the time of each attempt."
+          "title": "Conversational Analytics Embedding Now in Preview",
+          "summary": "You can now embed Conversational Analytics conversations and agents within an iframe. This new preview feature allows for seamless integration of conversational data into your applications, similar to other Looker content."
         }
       },
       {
         "kind": "Feature",
-        "content": "Rolling out in preview starting February 17, 2026, the [content certification](https://docs.cloud.google.com/looker/docs/content-certification) feature includes several new updates:\n\n* The [Settings](admin-panel-general-settings) page in the General section of the Admin panel now includes options that let admins enable or disable content certification, set a custom URL for the certification process, and control whether certification is revoked when content is edited.\n* LookML dashboards can now be certified.\n* Looks and dashboards that are based on uncertified self-service Explores now display the \"ungoverned\" badge.\n* Searching for content now includes the ability to sort content based on its certification status.",
+        "content": "Now available in preview, dashboard editors can change the size and layout of dashboard tiles with more granularity. To enable this feature, a Looker admin must turn on the [**Granular Dashboard Sizing** Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#granular-dashboard-sizing).",
         "summary": {
-          "title": "New content certification options",
-          "summary": "Preview of content certification begins February 17, 2026, introducing new admin controls, certification for LookML dashboards, and improved content search. Uncertified content based on self-service explores will now display an \"ungoverned\" badge."
+          "title": "Dashboard Tiles Resizing",
+          "summary": "Dashboard editors can now adjust the size and layout of tiles with greater precision. This new preview feature requires a Looker admin to enable Granular Dashboard Sizing in the Labs section of the Admin panel."
         }
       },
       {
         "kind": "Feature",
-        "content": "Now rolling out in preview starting February 17, 2026, Looker admins can grant the new [`schedule_without_limit` permission](https://docs.cloud.google.com/looker/docs/admin-users-roles#schedule_without_limit) to restrict a user's ability to [deliver all data results from a Look or an Explore](https://docs.cloud.google.com/looker/docs/delivering-looks-explores). This permission must be combined with another Looker permission that permits delivering data.\n\nThis permission will be automatically granted to any existing roles that already contain a data delivery permission. Looker admins must remove this permission from any users whom they wish to prevent from delivering all results from a Look or an Explore.",
+        "content": "Looker admins can grant the new [`schedule_without_limit` permission](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#schedule_without_limit) to restrict a user's ability to [deliver all data results from a Look or an Explore](https://docs.cloud.google.com/looker/docs/delivering-looks-explores). This permission must be combined with another Looker permission that permits delivering data.\n\nThis permission will be automatically granted to any existing roles that already contain a data delivery permission. Looker admins must remove this permission from any users whom they wish to prevent from delivering all results from a Look or an Explore.\n\n**Note:** This item was added on February 19, 2026.",
         "summary": {
-          "title": "New permission for scheduling data",
-          "summary": "A new preview permission, schedule_without_limit, is now available for Looker admins. This permission allows finer control over user abilities to deliver data from Looks or Explores. Existing roles with data delivery permissions will automatically receive this new permission."
+          "title": "New scheduling permission in Looker",
+          "summary": "Looker admins can now use the schedule_without_limit permission to control user access to delivering all data results from Looks or Explores. This permission will be automatically applied to existing roles with data delivery capabilities. Admins can manually remove it from specific users to restrict their ability to deliver all results."
         }
       },
       {
         "kind": "Feature",
-        "content": "Now rolling out in preview starting February 7, 2026, dashboard editors can [set default options for how the download of a dashboard tile includes query results](https://docs.cloud.google.com/looker/docs/editing-user-defined-dashboards#download-limit). They can set the download to include by default all query results or the current result table that is displayed in the visualization, or set a custom number of rows and columns. To enable this feature, a Looker admin must turn on the [**Tile Download Default Options** Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#dashboard-tile-download-limits).",
+        "content": "The [content certification](https://docs.cloud.google.com/looker/docs/content-certification) feature, already available in preview, includes the following updates:\n\n* The [**Settings**](admin-panel-general-settings) page in the **General** section of the **Admin** panel now includes options that let admins enable or disable content certification, set a custom URL for the certification process, and control whether certification is revoked when content is edited.\n* LookML dashboards can now be certified.\n* Looks and dashboards that are based on uncertified self-service Explores now display the \"ungoverned\" badge.\n* Searching for content now includes the ability to sort content based on its certification status.",
         "summary": {
-          "title": "Dashboard Tile Download Defaults",
-          "summary": "Dashboard editors can now set default options for downloading query results from dashboard tiles. This allows for specifying whether to include all results, the current table, or a custom number of rows and columns. A Looker admin needs to enable the 'Tile Download Default Options' Labs feature to activate this functionality."
+          "title": "New Tools for Content Management",
+          "summary": "We've enhanced our content certification feature with new admin controls, support for LookML dashboards, and improved search capabilities. Admins can now manage certification settings, and users can easily identify governed content."
         }
       },
       {
         "kind": "Feature",
-        "content": "Now rolling out in preview starting February 17, 2026, dashboard editors can change the size and layout of dashboard tiles with more granularity. To enable this feature, a Looker admin must turn on the [**Granular Dashboard Sizing** Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#granular-dashboard-sizing).",
+        "content": "Now available in preview, the **Self-service Explores** feature supports [uploading data from Google Sheets](https://docs.cloud.google.com/looker/docs/exploring-self-service#from-sheets). To support uploading data from Google Sheets, your Looker admin must [enable the required APIs](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#enable-apis) in the Google Cloud project that houses your BigQuery database.",
         "summary": {
-          "title": "Preview: Granular Dashboard Sizing",
-          "summary": "Dashboard editors can now change the size and layout of dashboard tiles with more granularity. This new Labs feature, Granular Dashboard Sizing, is available in preview starting February 17, 2026. Looker admins must enable this feature in the Admin panel."
+          "title": "Self-service Explores now supports Google Sheets",
+          "summary": "Self-service Explores is now available in preview, allowing you to upload data directly from Google Sheets. To use this feature, your Looker admin needs to enable specific APIs in your Google Cloud project."
         }
       },
       {
         "kind": "Feature",
-        "content": "Rolling out in preview starting February 17, 2026, the [Embed Conversational Analytics Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#embed_conversational_analytics) is now available. When enabled, the Embed Conversational Analytics Labs feature lets you [embed Conversational Analytics conversations and agents in an iframe](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-embedding) like other Looker content types.",
+        "content": "The [System Activity **User Activity** dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#user_activity_dashboard) has been updated to improve authentication troubleshooting. New information includes: recent login failures, the authentication method that was used, the error message that was returned, and the time of the attempt.",
         "summary": {
-          "title": "Embed Conversational Analytics Labs is now available",
-          "summary": "The Embed Conversational Analytics Labs feature is now available in preview. This feature allows you to embed Conversational Analytics conversations and agents within an iframe, similar to other Looker content. It is rolling out starting February 17, 2026."
+          "title": "New dashboard features for authentication troubleshooting",
+          "summary": "The User Activity dashboard has been enhanced to provide more detailed insights into authentication issues. You can now view recent login failures, the authentication method used, error messages, and attempt times to help resolve authentication problems more effectively."
         }
       }
     ],
     "2026-02-09": [
-      {
-        "kind": "Feature",
-        "content": "The Looker Action Hub has been updated to support newer API versions for Google Ads (from v19 to v22) and Facebook Custom Audiences (from v22 to v24).",
-        "summary": {
-          "title": "Looker Action Hub API Update",
-          "summary": "The Looker Action Hub now supports updated API versions for Google Ads and Facebook Custom Audiences. This enhancement ensures continued compatibility and access to the latest features from these platforms."
-        }
-      },
-      {
-        "kind": "Breaking",
-        "content": "When you use [Elite System Activity](https://docs.cloud.google.com/looker/docs/elite-system-activity), all System Activity fields of the `longtext` type that have a size greater than 2 MB will be truncated. If a table has only one column with a `longtext` type, that column will be set to a maximum of 1.9 MB in size. If a table has multiple columns of the `longtext` type, the total maximum size across all such columns is 2 MB, and this limit is distributed uniformly among those columns. For example, if a table has `x` `longtext` columns, each column will have a maximum length of 2 MB divided by `x`.",
-        "summary": {
-          "title": "System Activity Field Size Limit",
-          "summary": "System Activity fields of type `longtext` are now subject to size limits to prevent performance issues. Fields larger than 2 MB will be truncated. This change ensures efficient data handling within the system."
-        }
-      },
       {
         "kind": "Fixed",
         "content": "An issue has been fixed where some drill links could fail to work when cookieless embed was enabled. This feature now performs as expected.",
         "summary": {
           "title": "Drill links fixed with cookieless embed",
           "summary": "An issue where drill links failed with cookieless embed enabled has been resolved. The feature now functions correctly."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "When you use [Elite System Activity](https://docs.cloud.google.com/looker/docs/elite-system-activity), the `merge_query` table now refreshes every 10 minutes.",
-        "summary": {
-          "title": "Elite System Activity Refresh Rate Increased",
-          "summary": "The merge_query table for Elite System Activity now refreshes every 10 minutes. This update provides more frequent access to your system activity data."
         }
       },
       {
@@ -125,11 +109,27 @@
         }
       },
       {
+        "kind": "Change",
+        "content": "When you use [Elite System Activity](https://docs.cloud.google.com/looker/docs/elite-system-activity), the `merge_query` table now refreshes every 10 minutes.",
+        "summary": {
+          "title": "Elite System Activity Refresh Rate Increased",
+          "summary": "The `merge_query` table used with Elite System Activity now refreshes every 10 minutes, providing you with more up-to-date information. This change enhances the timeliness of your system activity data."
+        }
+      },
+      {
         "kind": "Fixed",
         "content": "An issue has been fixed where the pagination option was not being displayed in the LookML Dashboards folder for some users.\nThis feature now performs as expected.",
         "summary": {
           "title": "Pagination displayed in LookML Dashboards folder",
           "summary": "A bug that prevented the pagination option from displaying in the LookML Dashboards folder has been resolved. This feature now functions correctly for all users."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The user attribute pairing user interface for [SAML](https://docs.cloud.google.com/looker/docs/admin-panel-authentication-saml), [LDAP](https://docs.cloud.google.com/looker/docs/admin-panel-authentication-ldap), and [OpenID Connect](https://docs.cloud.google.com/looker/docs/admin-panel-authentication-openid-connect) authentication has been updated. A new \"Manage Pairings\" side panel provides a robust interface for adding, removing, and viewing attribute pairings. This new interface also includes filtering and pagination and allows for a single claim to be associated with multiple Looker user attributes.",
+        "summary": {
+          "title": "Updated User Attribute Pairing Interface",
+          "summary": "The user attribute pairing interface for SAML, LDAP, and OpenID Connect authentication has been updated with a new 'Manage Pairings' side panel. This provides a more robust way to manage attribute pairings, including filtering, pagination, and associating a single claim with multiple user attributes."
         }
       },
       {
@@ -149,11 +149,11 @@
         }
       },
       {
-        "kind": "Announcement",
-        "content": "**Looker 26.2** is expected to include the following changes, features, and fixes:\n\n* Expected Looker (original) deployment start: **Monday, February 9, 2026**\n* Expected Looker (original) final deployment and download available: **Monday, February 16, 2026**\n* Expected Looker (Google Cloud core) deployment start: **Monday, February 9, 2026**\n* Expected Looker (Google Cloud core) final deployment: **Friday, February 27, 2026**",
+        "kind": "Feature",
+        "content": "The [Customer Engineer Advanced Editor](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#customer_engineer_advanced_editor) default role now includes the `gemini_in_looker`, `chat_with_agent`, `chat_with_explore`, and `save_agents` permissions, which grant access to Gemini features and Conversational Analytics functionality.",
         "summary": {
-          "title": "Looker 26.2 Release Notes",
-          "summary": "The Looker 26.2 release is scheduled for February 2026, bringing updates and fixes to both Looker (original) and Looker (Google Cloud core) deployments. Key dates include deployment starts on February 9th, with final deployments concluding on February 16th for the original version and February 27th for the Google Cloud core version."
+          "title": "Gemini Features Now Available",
+          "summary": "The Customer Engineer Advanced Editor role now includes permissions for Gemini features and Conversational Analytics. This update grants access to Gemini in Looker, agent chat, explore chat, and the ability to save agents."
         }
       },
       {
@@ -162,14 +162,6 @@
         "summary": {
           "title": "Conditional formatting color palette fix",
           "summary": "The issue where modifications to the color palette for the \"Along a scale...\" conditional formatting feature were not saved has been resolved. This feature now saves and functions correctly."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "Now available in preview, Looker has full support for connections with [AlloyDB for PostgreSQL](https://docs.cloud.google.com/looker/docs/db-config-alloydb). When you [create a connection](https://docs.cloud.google.com/looker/docs/connecting-to-your-db) in Looker, you can now select \"Google Cloud AlloyDB for PostgreSQL\" from the Dialect drop-down menu. This update does not affect existing AlloyDB connections that were created using the PostgreSQL 9.5+ option in the Dialect menu.",
-        "summary": {
-          "title": "Looker Now Supports AlloyDB for PostgreSQL",
-          "summary": "Looker now offers full support for connections with AlloyDB for PostgreSQL in preview. Users can select 'Google Cloud AlloyDB for PostgreSQL' from the Dialect drop-down menu when creating a new connection in Looker. This enhancement simplifies integration for users of both services."
         }
       },
       {
@@ -182,10 +174,10 @@
       },
       {
         "kind": "Feature",
-        "content": "The user attribute pairing user interface for [SAML](https://docs.cloud.google.com/looker/docs/admin-panel-authentication-saml), [LDAP](https://docs.cloud.google.com/looker/docs/admin-panel-authentication-ldap), and [OpenID Connect](https://docs.cloud.google.com/looker/docs/admin-panel-authentication-openid-connect) authentication has been updated. A new \"Manage Pairings\" side panel provides a robust interface for adding, removing, and viewing attribute pairings. This new interface also includes filtering and pagination and allows for a single claim to be associated with multiple Looker user attributes.",
+        "content": "Looker admins can now [grant essential Google Cloud services](https://docs.cloud.google.com/looker/docs/admin-panel-server-ip-allowlist), such as [Conversational Analytics](https://docs.cloud.google.com/looker/docs/conversational-analytics-overview), access to a Looker instance, even when an IP allowlist is active.",
         "summary": {
-          "title": "Updated User Attribute Pairing Interface",
-          "summary": "The user attribute pairing interface for SAML, LDAP, and OpenID Connect authentication has been updated with a new 'Manage Pairings' side panel. This provides a more robust way to manage attribute pairings, including filtering, pagination, and associating a single claim with multiple user attributes."
+          "title": "Allow essential services through IP allowlists",
+          "summary": "Looker admins can now grant essential Google Cloud services, like Conversational Analytics, access to a Looker instance even when an IP allowlist is active. This ensures critical features remain accessible without compromising security."
         }
       },
       {
@@ -194,6 +186,14 @@
         "summary": {
           "title": "LookML commit error resolved",
           "summary": "An issue causing Looker to return a 500 error when users with single quotes in their names committed LookML has been fixed. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Now available in preview, Looker has full support for connections with [AlloyDB for PostgreSQL](https://docs.cloud.google.com/looker/docs/db-config-alloydb). When you [create a connection](https://docs.cloud.google.com/looker/docs/connecting-to-your-db) in Looker, you can now select \"Google Cloud AlloyDB for PostgreSQL\" from the Dialect drop-down menu. This update does not affect existing AlloyDB connections that were created using the PostgreSQL 9.5+ option in the Dialect menu.",
+        "summary": {
+          "title": "Looker Now Supports AlloyDB for PostgreSQL",
+          "summary": "Looker now offers full support for connections with AlloyDB for PostgreSQL in preview. Users can select 'Google Cloud AlloyDB for PostgreSQL' from the Dialect drop-down menu when creating a new connection in Looker. This enhancement simplifies integration for users of both services."
         }
       },
       {
@@ -210,6 +210,14 @@
         "summary": {
           "title": "Conditional formatting now visible on dashboard tiles",
           "summary": "An issue that prevented conditional formatting from appearing on certain dashboard tiles has been resolved. The feature now functions correctly, ensuring that conditional formatting is displayed as expected."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "The Looker Action Hub has been updated to support newer API versions for Google Ads (from v19 to v22) and Facebook Custom Audiences (from v22 to v24).",
+        "summary": {
+          "title": "Looker Action Hub API Updates",
+          "summary": "The Looker Action Hub now supports newer API versions for Google Ads and Facebook Custom Audiences. This update ensures compatibility and access to the latest features for these integrations."
         }
       },
       {
@@ -253,11 +261,19 @@
         }
       },
       {
-        "kind": "Feature",
-        "content": "Looker admins can now [grant essential Google Cloud services](https://docs.cloud.google.com/looker/docs/admin-panel-server-ip-allowlist), such as [Conversational Analytics](https://docs.cloud.google.com/looker/docs/conversational-analytics-overview), access to a Looker instance, even when an IP allowlist is active.",
+        "kind": "Breaking",
+        "content": "When you use [Elite System Activity](https://docs.cloud.google.com/looker/docs/elite-system-activity), all System Activity fields of the `longtext` type that have a size greater than 2 MB will be truncated. If a table has only one column with a `longtext` type, that column will be set to a maximum of 1.9 MB in size. If a table has multiple columns of the `longtext` type, the total maximum size across all such columns is 2 MB, and this limit is distributed uniformly among those columns. For example, if a table has `x` `longtext` columns, each column will have a maximum length of 2 MB divided by `x`.",
         "summary": {
-          "title": "Allow essential services through IP allowlists",
-          "summary": "Looker admins can now grant essential Google Cloud services, like Conversational Analytics, access to a Looker instance even when an IP allowlist is active. This ensures critical features remain accessible without compromising security."
+          "title": "System Activity Field Size Limit",
+          "summary": "System Activity fields of type `longtext` are now subject to size limits to prevent performance issues. Fields larger than 2 MB will be truncated. This change ensures efficient data handling within the system."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "**Looker 26.2** is expected to include the following changes, features, and fixes:\n\n* Expected Looker (original) deployment start: **Monday, February 9, 2026**\n* Expected Looker (original) final deployment and download available: **Monday, February 16, 2026**\n* Expected Looker (Google Cloud core) deployment start: **Monday, February 9, 2026**\n* Expected Looker (Google Cloud core) final deployment: **Friday, February 27, 2026**",
+        "summary": {
+          "title": "Looker 26.2 Release Notes",
+          "summary": "The Looker 26.2 release is scheduled for February 2026, bringing updates and fixes to both Looker (original) and Looker (Google Cloud core) deployments. Key dates include deployment starts on February 9th, with final deployments concluding on February 16th for the original version and February 27th for the Google Cloud core version."
         }
       },
       {
@@ -266,14 +282,6 @@
         "summary": {
           "title": "Password expiration policy is now available",
           "summary": "Looker admins can now enforce a password expiration policy. This feature allows admins to set a password expiration window between 30 and 365 days, with users being notified 14 days prior to expiration and required to reset their password upon next login after expiration."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "The [Customer Engineer Advanced Editor](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#customer_engineer_advanced_editor) default role now includes the `gemini_in_looker`, `chat_with_agent`, `chat_with_explore`, and `save_agents` permissions, which grant access to Gemini features and Conversational Analytics functionality.",
-        "summary": {
-          "title": "Gemini Features Now Available",
-          "summary": "The Customer Engineer Advanced Editor role now includes permissions for Gemini features and Conversational Analytics. This update grants access to Gemini in Looker, agent chat, explore chat, and the ability to save agents."
         }
       }
     ],

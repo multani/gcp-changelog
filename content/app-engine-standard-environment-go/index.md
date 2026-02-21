@@ -1,5 +1,12 @@
 # App Engine standard environment Go
 
+## 2026-02-19
+
+### Feature
+
+Support for [Go 1.26 runtime](https://docs.cloud.google.com/appengine/docs/standard/go/runtime) is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-02-12
 
 ### Feature

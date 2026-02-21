@@ -1,5 +1,14 @@
 # Network Connectivity Center
 
+## 2026-02-19
+
+### Feature
+
+Producer VPC spokes support for
+[Google Cloud NetApp Volumes](https://docs.cloud.google.com/netapp/volumes/docs/get-started/configure-access/networking)
+is [generally available](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-12-17
 
 ### Feature

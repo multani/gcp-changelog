@@ -1,5 +1,12 @@
 # Cloud Run
 
+## 2026-02-19
+
+### Feature
+
+Support for [Go 1.26 runtime](https://docs.cloud.google.com/run/docs/runtime-support#go) is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-02-18
 
 ### Feature

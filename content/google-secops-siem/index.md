@@ -1,5 +1,22 @@
 # Google SecOps SIEM
 
+## 2026-02-22
+
+### Change
+
+**Publisher Agent Version 2.6.4** removes support for **Python 3.7** from the remote agent.
+
+### Announcement
+
+Release 6.3.77 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains the following changes:
+
+### Change
+
+**Publisher Agent Version 2.6.4** removes support for **Python 3.7** from the remote agent.
+
+---
 ## 2026-02-21
 
 ### Announcement

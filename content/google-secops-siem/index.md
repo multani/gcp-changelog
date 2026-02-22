@@ -1,5 +1,39 @@
 # Google SecOps SIEM
 
+## 2026-02-21
+
+### Announcement
+
+[Release 6.3.76](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#February_15_2026) is now available for all regions.
+
+---
+## 2026-02-20
+
+### Feature
+
+**New capabilities in Feeds page**
+
+The following options have been added to the **Feeds** page:
+
+* Search
+* Filtering (using feed attributes)
+* Pagination
+* Last Refreshed Time
+* Feed Metadata Export to CSV
+
+### Feature
+
+**New capabilities in Feeds page**
+
+The following options have been added to the **Feeds** page:
+
+* Search
+* Filtering (using feed attributes)
+* Pagination
+* Last Refreshed Time
+* Feed Metadata Export to CSV
+
+---
 ## 2026-02-17
 
 ### Change

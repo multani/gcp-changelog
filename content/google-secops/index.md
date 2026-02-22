@@ -1,5 +1,27 @@
 # Google SecOps
 
+## 2026-02-22
+
+### Change
+
+**Publisher Agent Version 2.6.4** removes support for **Python 3.7** from the remote agent.
+
+---
+## 2026-02-20
+
+### Feature
+
+**New capabilities in Feeds page**
+
+The following options have been added to the **Feeds** page:
+
+* Search
+* Filtering (using feed attributes)
+* Pagination
+* Last Refreshed Time
+* Feed Metadata Export to CSV
+
+---
 ## 2026-02-17
 
 ### Change

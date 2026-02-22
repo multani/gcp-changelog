@@ -1,5 +1,12 @@
 # Google SecOps SOAR
 
+## 2026-02-21
+
+### Announcement
+
+[Release 6.3.76](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#February_15_2026) is now available for all regions.
+
+---
 ## 2026-02-15
 
 ### Announcement

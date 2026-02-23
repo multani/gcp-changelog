@@ -1,5 +1,16 @@
 # Secret Manager
 
+## 2026-02-06
+
+### Feature
+
+**Parameter version comparison**: You can compare two versions of a parameter to
+identify changes in their payload. This feature lets you audit modifications over
+time and debug issues related to specific parameter updates.
+
+For more information, see [Compare parameter versions](https://docs.cloud.google.com/secret-manager/parameter-manager/docs/compare-parameter-versions).
+
+---
 ## 2026-01-20
 
 ### Feature

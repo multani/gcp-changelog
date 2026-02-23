@@ -1,5 +1,12 @@
 # Access Approval
 
+## 2026-02-19
+
+### Feature
+
+Unified Maintenance is generally available [(GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-02-05
 
 ### Feature

@@ -1,5 +1,70 @@
 # Google SecOps SIEM
 
+## 2026-02-23
+
+### Announcement
+
+**New parser documentation now available**
+
+New parser documentation is available to help you ingest and normalize logs from the following sources:
+
+* [Collect Big Switch BigCloudFabric logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/bigswitch-bcf)
+* [Collect BMC AMI Defender logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/bmc-ami-defender)
+* [Collect Broadcom Support Portal Audit logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/broadcom-support-portal)
+* [Collect CA ACF2 logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ca-acf2)
+* [Collect CA LDAP logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ca-ldap)
+* [Collect ChromeOS XDR logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/chromeos-xdr)
+* [Collect Chronicle SOAR Audit logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/chronicle-soar-audit)
+* [Collect Cisco CTS logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-cts)
+* [Collect Cisco FireSIGHT Management Center logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-firesight)
+* [Collect Cisco Vision Dynamic Signage Director logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-stadiumvision)
+* [Collect ClamAV logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/clam-av)
+* [Collect Cofense logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cofense-triage)
+* [Collect Crowdstrike IOC logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/crowdstrike-ioc)
+* [Collect Custom Application Access logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/custom-application-access)
+* [Collect Custom Security Data Analytics logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/custom-security-data-analytics)
+* [Collect Cyber 2.0 IDS logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cyber-2-ids)
+* [Collect CyberArk logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cyberark)
+* [Collect Cybereason EDR logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cybereason-edr)
+* [Collect Dataminr Alerts logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/dataminr-alert)
+* [Collect Digital Shadows Indicators logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/digital-shadows-ioc)
+* [Collect Mimecast Mail V2 logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/mimecast-mail-v2)
+* [Collect Okta User Context logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/okta-user-context)
+* [Collect RH-ISAC IOC logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/rh-isac-ioc)
+* [Collect ServiceNow CMDB data](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/servicenow-cmdb)
+
+### Announcement
+
+**New parser documentation now available**
+
+New parser documentation is available to help you ingest and normalize logs from the following sources:
+
+* [Collect Big Switch BigCloudFabric logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/bigswitch-bcf)
+* [Collect BMC AMI Defender logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/bmc-ami-defender)
+* [Collect Broadcom Support Portal Audit logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/broadcom-support-portal)
+* [Collect CA ACF2 logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ca-acf2)
+* [Collect CA LDAP logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ca-ldap)
+* [Collect ChromeOS XDR logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/chromeos-xdr)
+* [Collect Chronicle SOAR Audit logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/chronicle-soar-audit)
+* [Collect Cisco CTS logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-cts)
+* [Collect Cisco FireSIGHT Management Center logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-firesight)
+* [Collect Cisco Vision Dynamic Signage Director logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-stadiumvision)
+* [Collect ClamAV logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/clam-av)
+* [Collect Cofense logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cofense-triage)
+* [Collect Crowdstrike IOC logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/crowdstrike-ioc)
+* [Collect Custom Application Access logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/custom-application-access)
+* [Collect Custom Security Data Analytics logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/custom-security-data-analytics)
+* [Collect Cyber 2.0 IDS logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cyber-2-ids)
+* [Collect CyberArk logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cyberark)
+* [Collect Cybereason EDR logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cybereason-edr)
+* [Collect Dataminr Alerts logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/dataminr-alert)
+* [Collect Digital Shadows Indicators logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/digital-shadows-ioc)
+* [Collect Mimecast Mail V2 logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/mimecast-mail-v2)
+* [Collect Okta User Context logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/okta-user-context)
+* [Collect RH-ISAC IOC logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/rh-isac-ioc)
+* [Collect ServiceNow CMDB data](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/servicenow-cmdb)
+
+---
 ## 2026-02-22
 
 ### Change

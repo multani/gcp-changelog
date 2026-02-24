@@ -2,6 +2,36 @@
 
 ## 2026-02-23
 
+### Feature
+
+**Gemini Enterprise: Share Google-made agents, custom agents, and employee-made
+agents that are registered with Gemini Enterprise (GA)**
+
+Admins can share the following agents:
+
+* Google-made agents such as Deep Research.
+* Employee-made agents created using Agent Designer.
+* Custom agents built using Agent-to-Agent (A2A) and registered with
+  Gemini Enterprise.
+* Agents developed using Agent Development Kit (ADK) and registered with
+  Gemini Enterprise.
+* Dialogflow agents that are registered with Gemini Enterprise.
+* Agents added from Google Cloud Marketplace
+
+For more information, see [Share agents from Google Cloud
+console](https://docs.cloud.google.com/gemini/enterprise/docs/share-custom-agents).
+
+### Feature
+
+**Gemini Enterprise: Sharing controls for employee-made agents**
+
+Employee-made agents can share within an organization. Admins can manage how
+these agents are shared by using the **Enable agent sharing** and **Enable agent
+sharing without admin approval** toggles in the management console.
+
+For more information, see [Configure feature
+controls](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features#configure_feature_controls).
+
 ### Announcement
 
 **Gemini Enterprise: Share agents created using Agent Designer**
@@ -21,19 +51,6 @@ For more information, see
 
 ---
 ## 2026-02-19
-
-### Feature
-
-**Gemini Enterprise: Support for new actions (Preview)**
-
-New actions are available for the following data stores:
-
-* [Confluence Data Center](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/confluence-dc)
-* [Jira Data Center](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/jira-dc)
-* [Notion](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/notion)
-* [Zendesk](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/zendesk)
-
-For a list of actions for these data stores, see [Supported actions](https://docs.cloud.google.com/gemini/enterprise/docs/connect-third-party-data-source#supported_actions).
 
 ### Feature
 

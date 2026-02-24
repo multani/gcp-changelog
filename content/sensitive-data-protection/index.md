@@ -4,6 +4,27 @@
 
 ### Feature
 
+The following features are in [General
+Availability](https://cloud.google.com/products#product-launch-stages):
+
+* [Adjustment
+  rules](https://docs.cloud.google.com/sensitive-data-protection/docs/creating-custom-infotypes-rules#adjustment-rules),
+  which let you customize the likelihood of findings based on their context.
+  Adjustment rules support text-based and image-based operations.
+* [Image-based exclusion
+  rules](https://docs.cloud.google.com/sensitive-data-protection/docs/creating-custom-infotypes-rules#exclusion-rules),
+  which let you refine your image inspection results by excluding findings
+  based on their spatial relationships with other findings.
+* [Enhanced rule
+  ordering](https://docs.cloud.google.com/sensitive-data-protection/docs/creating-custom-infotypes-rules#rule-order),
+  which lets you chain rules based on the order you specify them in the
+  ruleset.
+
+For information about configuring these rules, see [Modifying infoType detectors
+to refine scan results](https://docs.cloud.google.com/sensitive-data-protection/docs/creating-custom-infotypes-rules).
+
+### Feature
+
 The `KOREA_BRN` infoType detector is available in all regions. For more information about all built-in infoTypes, see the [InfoType detector reference](https://cloud.google.com/dlp/docs/infotypes-reference).
 
 ---

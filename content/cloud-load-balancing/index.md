@@ -1,5 +1,23 @@
 # Cloud Load Balancing
 
+## 2026-02-23
+
+### Feature
+
+Backend mutual TLS (mTLS) and backend authenticated TLS is now
+**Generally available** for cross-region internal Application Load Balancers.
+
+This update complements existing support for global and regional
+Application Load Balancers, allowing you to enforce bidirectional
+identity verification across your regional deployments.
+
+For details, see the following:
+
+* [Backend mTLS overview](https://docs.cloud.google.com/load-balancing/docs/backend-authenticated-tls-backend-mtls)
+* [Set up backend authenticated TLS](https://docs.cloud.google.com/load-balancing/docs/backend-authenticated-tls-setup)
+* [Set up backend mTLS](https://docs.cloud.google.com/load-balancing/docs/backend-mtls-setup)
+
+---
 ## 2026-01-28
 
 ### Feature

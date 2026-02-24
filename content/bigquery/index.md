@@ -1,5 +1,18 @@
 # BigQuery
 
+## 2026-02-24
+
+### Feature
+
+You can now [create and review](https://docs.cloud.google.com/bigquery/docs/create-data-agents#create-review-glossary-terms)
+custom glossary terms in BigQuery for a conversational
+analytics agent and you can review business glossary terms imported from
+Dataplex Universal Catalog for an agent. These terms help an agent interpret your
+prompts.
+
+This feature is now in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-02-23
 
 ### Feature

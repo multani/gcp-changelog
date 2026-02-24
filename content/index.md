@@ -87,6 +87,7 @@
 - [Cloud Storage](cloud-storage/index.md)
 - [Cloud TPU](cloud-tpu/index.md)
 - [Cloud Trace](cloud-trace/index.md)
+- [Cloud Translation](cloud-translation/index.md)
 - [Cloud VPN](cloud-vpn/index.md)
 - [Cloud Workstations](cloud-workstations/index.md)
 - [Cluster Toolkit](cluster-toolkit/index.md)

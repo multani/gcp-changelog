@@ -1,5 +1,16 @@
 # Generative AI on Vertex AI
 
+## 2026-02-23
+
+### Deprecated
+
+**Anthropic's Claude 3 Haiku**
+
+Anthropic's Claude 3 Haiku is deprecated as of February 23, 2026 and will be
+shut down on August 23, 2026. For more information, see
+[Partner model deprecations](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/deprecations/partner-models#haiku-3).
+
+---
 ## 2026-02-19
 
 ### Feature

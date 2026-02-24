@@ -1,5 +1,28 @@
 # Google SecOps SIEM
 
+## 2026-02-24
+
+### Feature
+
+**RBAC for ingestion metrics**
+
+Administrators can now use RBAC for ingestion metrics to restrict visibility of system health data, such as ingestion volume, errors, and throughput, based on a user's business scope.
+
+The **Data Ingestion and Health** dashboard now uses Data Access scopes. When a scoped user loads the dashboard, the system automatically filters metrics to show only data that matches their assigned labels: Namespace, Log Type, and Ingestion Source.
+
+For more information, see [Ingestion metrics](https://docs.cloud.google.com/chronicle/docs/reports/native-dashboards#ingestion_metrics).
+
+### Feature
+
+**RBAC for ingestion metrics**
+
+Administrators can now use RBAC for ingestion metrics to restrict visibility of system health data, such as ingestion volume, errors, and throughput, based on a user's business scope.
+
+The **Data Ingestion and Health** dashboard now uses Data Access scopes. When a scoped user loads the dashboard, the system automatically filters metrics to show only data that matches their assigned labels: Namespace, Log Type, and Ingestion Source.
+
+For more information, see [Ingestion metrics](https://docs.cloud.google.com/chronicle/docs/reports/native-dashboards#ingestion_metrics).
+
+---
 ## 2026-02-23
 
 ### Announcement

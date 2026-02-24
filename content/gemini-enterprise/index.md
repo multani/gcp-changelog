@@ -1,5 +1,25 @@
 # Gemini Enterprise
 
+## 2026-02-23
+
+### Announcement
+
+**Gemini Enterprise: Share agents created using Agent Designer**
+
+The agent sharing feature in Agent Designer is Generally Available (GA) with the
+following enhancements:
+
+* **Direct sharing:** Agent owners can share agents directly with other users
+  in their organization without prior admin approval.
+* **Configurable admin review:** Admins can turn on or
+  turn off the requirement for manual review of sharing requests.
+* **Additional sharing controls:** Admins can share agents with
+  Google Groups and Workforce Identity Federation (WIF) identity pools.
+
+For more information, see
+[Share an agent](https://docs.cloud.google.com/gemini/enterprise/docs/agent-designer/share-agent).
+
+---
 ## 2026-02-19
 
 ### Feature

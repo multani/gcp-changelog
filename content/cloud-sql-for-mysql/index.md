@@ -1,5 +1,16 @@
 # Cloud SQL for MySQL
 
+## 2026-02-23
+
+### Feature
+
+Gemini Cloud Assist investigation capabilities are now supported in
+Cloud SQL for MySQL ([Preview](https://cloud.google.com/products/#product-launch-stages)).
+
+For more information, see
+[Troubleshoot slow queries with AI assistance](https://docs.cloud.google.com/sql/docs/mysql/troubleshoot-slow-queries).
+
+---
 ## 2026-02-18
 
 ### Deprecated

@@ -1,5 +1,16 @@
 # AlloyDB for PostgreSQL
 
+## 2026-02-23
+
+### Feature
+
+Gemini Cloud Assist investigation capabilities are now supported in
+AlloyDB ([Preview](https://cloud.google.com/products/#product-launch-stages)).
+
+For more information, see
+[Troubleshoot slow queries with AI assistance](https://docs.cloud.google.com/alloydb/docs/troubleshoot/slow-queries-ai).
+
+---
 ## 2026-02-19
 
 ### Feature

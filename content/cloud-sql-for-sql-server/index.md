@@ -1,5 +1,16 @@
 # Cloud SQL for SQL Server
 
+## 2026-02-23
+
+### Feature
+
+Gemini Cloud Assist investigation capabilities are now supported in
+Cloud SQL for SQL Server ([Preview](https://cloud.google.com/products/#product-launch-stages)).
+
+For more information, see
+[Troubleshoot slow queries with AI assistance](https://docs.cloud.google.com/sql/docs/sqlserver/troubleshoot-slow-queries).
+
+---
 ## 2026-02-18
 
 ### Deprecated

@@ -1,5 +1,18 @@
 # Compute Engine
 
+## 2026-02-23
+
+### Feature
+
+**Generally available**: H4D VMs, designed for high performance computing (HPC)
+workloads, are now generally available. Based on 5th generation AMD EPYC Turin
+with Cloud RDMA 200 Gbps networking, H4D VMs offer 192 cores (SMT
+disabled), up to 1,488 GB of memory, and 3,750 GiB of Local SSD. H4D is
+optimized for tightly-coupled applications that scale across multiple nodes.
+
+For more information, see [H4D machine series](https://docs.cloud.google.com/compute/docs/compute-optimized-machines#h4d_series).
+
+---
 ## 2026-02-18
 
 ### Feature

@@ -1,5 +1,15 @@
 # Contact Center AI Insights
 
+## 2026-02-19
+
+### Feature
+
+Customer Experience Insights offers [autolabeling and correlation rules](https://docs.cloud.google.com/contact-center/insights/docs/autolabel-correlation-rules) to enhance conversation processing.
+
+* **Autolabeling rules**: Automatically apply key-value labels to conversations based on defined conditions.
+* **Correlation rules**: Define how to link related conversation segments together to form complete customer interaction views.
+
+---
 ## 2026-01-31
 
 ### Feature

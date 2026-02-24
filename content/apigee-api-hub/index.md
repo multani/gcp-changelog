@@ -1,5 +1,22 @@
 # Apigee API hub
 
+## 2026-02-23
+
+### Feature
+
+**Preview release of specification boost**
+
+API hub now supports the preview release of specification boost, an AI-powered
+add-on that lets you automatically enhance the readability and discoverability
+of your API specifications in API hub. It analyzes your existing specification
+files and generates boosted versions enriched with richer details, including
+additional examples, clearer descriptions, better error documentation, and more.
+
+For more information see [Specification boost add-on](https://docs.cloud.google.com/apigee/docs/apihub/spec-boost).
+
+**Note:** Rollouts of this release to production instances might take up to 5 business days to complete across all Google Cloud zones. Your instances might not have the feature available until the rollout is complete.
+
+---
 ## 2026-01-12
 
 ### Feature

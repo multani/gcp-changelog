@@ -1,5 +1,15 @@
 # BigQuery
 
+## 2026-02-23
+
+### Feature
+
+You can now [undelete a dataset](https://docs.cloud.google.com/bigquery/docs/restore-deleted-datasets) that
+is within your time travel window to recover it to the state that it was in when
+it was deleted. This feature is [generally
+available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+---
 ## 2026-02-17
 
 ### Feature

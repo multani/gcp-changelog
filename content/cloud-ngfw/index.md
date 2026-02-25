@@ -1,5 +1,12 @@
 # Cloud NGFW
 
+## 2026-02-25
+
+### Feature
+
+You can use network contexts to meet your security goals by using fewer firewall policy rules more efficiently. For more information, see [Network contexts](https://docs.cloud.google.com/firewall/docs/understand-network-contexts). This feature is available in **General Availability**.
+
+---
 ## 2026-01-13
 
 ### Feature

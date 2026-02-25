@@ -1,5 +1,20 @@
 # Spanner
 
+## 2026-02-24
+
+### Feature
+
+Spanner provides `UNSPLITTABLE_REASONS` in hotspot insights and
+split statistics views to detect when splits can't be split further.
+Unsplittable reasons can help you identify schema anti-patterns that require
+intervention. For more information, see
+[Find hotspots in your database](https://docs.cloud.google.com/spanner/docs/find-hotspots-in-database)
+and
+[Split statistics](https://docs.cloud.google.com/spanner/docs/introspection/hot-split-statistics).
+
+This feature is [generally available (GA)](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-02-17
 
 ### Announcement

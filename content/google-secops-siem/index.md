@@ -1,5 +1,30 @@
 # Google SecOps SIEM
 
+## 2026-02-25
+
+### Feature
+
+**Added support for Google Cloud VPC Service Controls**
+
+This feature is currently in Preview.
+
+[VPC Service Controls](https://docs.cloud.google.com/chronicle/docs/secops/vpcsc-for-secops) helps protect against accidental or targeted action
+by external entities or insider entities, which helps to minimize unwarranted
+data exfiltration risks from Google Cloud services. You can use VPC Service Controls to create perimeters
+that protect the resources and data of services that you explicitly specify. For more information, see [Overview of VPC Service Controls](https://docs.cloud.google.com/vpc-service-controls/docs/overview).
+
+### Feature
+
+**Added support for Google Cloud VPC Service Controls**
+
+This feature is currently in Preview.
+
+[VPC Service Controls](https://docs.cloud.google.com/chronicle/docs/secops/vpcsc-for-secops) helps protect against accidental or targeted action
+by external entities or insider entities, which helps to minimize unwarranted
+data exfiltration risks from Google Cloud services. You can use VPC Service Controls to create perimeters
+that protect the resources and data of services that you explicitly specify. For more information, see [Overview of VPC Service Controls](https://docs.cloud.google.com/vpc-service-controls/docs/overview).
+
+---
 ## 2026-02-24
 
 ### Feature

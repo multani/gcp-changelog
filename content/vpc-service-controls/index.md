@@ -1,5 +1,15 @@
 # VPC Service Controls
 
+## 2026-02-25
+
+### Feature
+
+[Preview stage](https://cloud.google.com/products#product-launch-stages) support
+for the following integration:
+
+* [Google Security Operations](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_secops)
+
+---
 ## 2026-02-11
 
 ### Feature

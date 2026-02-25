@@ -1,5 +1,21 @@
 # Dataproc
 
+## 2026-02-24
+
+### Announcement
+
+New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions):
+
+* 2.0.160-debian10, 2.0.160-rocky8, 2.0.160-ubuntu18
+* 2.1.109-debian11, 2.1.109-rocky8, 2.1.109-ubuntu20, 2.1.109-ubuntu20-arm
+* 2.2.77-debian12, 2.2.77-rocky9, 2.2.77-ubuntu22, 2.2.77-ubuntu22-arm
+* 2.3.24-debian12, 2.3.24-ml-ubuntu22, 2.3.24-rocky9, 2.3.24-ubuntu22, 2.3.24-ubuntu22-arm
+
+### Fixed
+
+Fixed an issue that could cause `gsutil` failures on clusters using custom images built from new base images. This problem occurred when the gcloud `core/universe_domain` property was not set in the build environment, resulting in a malformed `/etc/boto.cfg`. The image build process now ensures a correct default configuration, restoring proper Google Cloud Storage connectivity.
+
+---
 ## 2026-02-15
 
 ### Announcement
@@ -69,6 +85,10 @@ New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.goog
 ### Feature
 
 Parquet CLI version upgraded to 1.15.2 in 2.1 and 2.2 images.
+
+### Feature
+
+Zookeeper version upgraded to 3.9.4 in Dataproc image 2.3.22 and later.
 
 ### Fixed
 

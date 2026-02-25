@@ -1,5 +1,29 @@
 # Google Kubernetes Engine
 
+## 2026-02-24
+
+### Feature
+
+You can create a bare metal instance from the [C4A machine series](https://docs.cloud.google.com/compute/docs/general-purpose-machines#c4a_series) with the `c4a-highmem-96-metal` machine type. This machine type is available in Public Preview for Standard clusters running GKE version 1.35.0-gke.2232000 or later. You can select this machine type by using the `--machine-type` flag when creating a cluster or node pool. For more information about the requirements and limitations of this machine type, see the [Requirements and limitations](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/arm-on-gke#arm-requirements-limitations) section of the "Arm workloads on GKE" document.
+
+### Feature
+
+The release note for [November 11, 2025](https://docs.cloud.google.com/kubernetes-engine/docs/release-notes#November_11_2025) has been updated to correct the version requirements for using N4D machine types. Cluster autoscaler was incorrectly included in the list of features requiring GKE version 1.34.1-gke.2037000 or later. You can use any available GKE version to use N4D and Cluster autoscaler.
+
+### Change
+
+Expanded coverage for compute flexible committed use discounts (CUDs) is
+available to all Cloud Billing accounts. All Cloud Billing accounts have
+been automatically migrated to the
+[new spend-based CUD model](https://docs.cloud.google.com/docs/cuds-multiprice) and you no longer need to opt
+in to benefit from the expanded coverage. For the full list of eligible SKUs
+across Compute Engine, GKE, and Cloud Run,
+see [SKU Groups - Compute Flexible CUD Eligible SKUs](https://cloud.google.com/skus/sku-groups/compute-flexible-cud-eligible-skus).
+
+To learn more about compute flexible CUDs and how they apply to your GKE usage, see
+the [GKE CUDs documentation](https://docs.cloud.google.com/kubernetes-engine/cud).
+
+---
 ## 2026-02-19
 
 ### Security

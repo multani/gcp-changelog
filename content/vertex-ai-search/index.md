@@ -1,5 +1,21 @@
 # Vertex AI Search
 
+## 2026-02-24
+
+### Feature
+
+**Vertex AI Search: Change the pricing model for a project**
+
+There are two pricing models for apps and data stores: the general model
+(pay-as-you-go consumption-based) and the configurable subscription model (a
+monthly subscription).
+
+You can switch from configurable pricing to general pricing for a project if all
+its data stores and apps use the general model. For more information, see
+[Disable configurable pricing for
+project](https://docs.cloud.google.com/generative-ai-app-builder/docs/enable-configurable-pricing#disable-configurable).
+
+---
 ## 2026-02-17
 
 ### Feature

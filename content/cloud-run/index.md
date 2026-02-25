@@ -1,5 +1,19 @@
 # Cloud Run
 
+## 2026-02-24
+
+### Feature
+
+You can use the [Cloud Run remote MCP server](https://docs.cloud.google.com/run/docs/reference/mcp) to let
+agents and AI applications deploy with Cloud Run ([Preview](https://cloud.google.com/products#product-launch-stages)).
+
+### Feature
+
+Deploy a highly available, multi-region Cloud Run service with automated
+failover and failback for [external traffic using Cloud Run service health](https://docs.cloud.google.com/run/docs/multiple-regions#service-health)
+(Preview).
+
+---
 ## 2026-02-19
 
 ### Feature
@@ -28,7 +42,7 @@ LTS base images in [General Availability](https://cloud.google.com/products?e=48
 
 ### Feature
 
-Support for [osonly24 runtime](https://docs.cloud.google.com/run/docs/runtime-support#osonly) is in [General Availability](https://cloud.google.com/products?e=48754805#product-launch-stages). The OS only runtime lets you deploy Go applications from source, and binaries such as Dart and Go. For more information, see [Configure the OS only runtime](https://docs.cloud.google.com/docs/buildpacks/osonly).
+Support for [osonly24 runtime](https://docs.cloud.google.com/run/docs/runtime-support#osonly) is in [General Availability](https://cloud.google.com/products?e=48754805#product-launch-stages). The OS only runtime lets you deploy binaries such as Dart and Go. For more information, see [Configure the OS only runtime](https://docs.cloud.google.com/docs/buildpacks/osonly).
 
 ---
 ## 2026-02-06

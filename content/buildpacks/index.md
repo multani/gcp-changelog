@@ -14,7 +14,7 @@ LTS base images in [General Availability](https://cloud.google.com/products?e=48
 
 ### Feature
 
-Support for [osonly24 runtime](https://docs.cloud.google.com/docs/buildpacks/runtime-support#osonly) is in [General Availability](https://cloud.google.com/products?e=48754805#product-launch-stages). The OS only runtime lets you deploy Go applications from source, and binaries such as Dart and Go. For more information, see [Configure the OS only runtime](https://docs.cloud.google.com/docs/buildpacks/osonly).
+Support for [osonly24 runtime](https://docs.cloud.google.com/docs/buildpacks/runtime-support#osonly) is in [General Availability](https://cloud.google.com/products?e=48754805#product-launch-stages). The OS only runtime lets you deploy binaries such as Dart and Go. For more information, see [Configure the OS only runtime](https://docs.cloud.google.com/docs/buildpacks/osonly).
 
 ---
 ## 2026-01-22

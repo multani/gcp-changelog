@@ -4,6 +4,17 @@
 
 ### Feature
 
+**New: cross joins in multi-stage queries**
+
+You can now use cross joins in YARA-L 2.0 multi-stage queries let you compare individual UDM event data against aggregated statistics calculated in previous YARA-L stages. They are supported in:
+
+* Search
+* Dashboards
+
+For more information, see [Cross joins in multi-stage queries](https://docs.cloud.google.com/chronicle/docs/investigation/multi-stage-yaral#cross-joins).
+
+### Feature
+
 **RBAC for ingestion metrics**
 
 Administrators can now use RBAC for ingestion metrics to restrict visibility of system health data, such as ingestion volume, errors, and throughput, based on a user's business scope.

@@ -1,5 +1,13 @@
 # Vertex AI Workbench
 
+## 2026-02-20
+
+### Fixed
+
+Fixed a vulnerability in Vertex AI Workbench for users utilizing
+managed credentials.
+
+---
 ## 2026-01-29
 
 ### Feature

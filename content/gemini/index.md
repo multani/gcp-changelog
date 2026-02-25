@@ -1,5 +1,44 @@
 # Gemini
 
+## 2026-02-24
+
+### Announcement
+
+
+
+### Finish changes feature in IntelliJ general availability
+
+The [finish changes](https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#finish-changes)
+features is now generally available (GA).
+
+### Announcement
+
+
+
+### File outline feature in IntelliJ general availability
+
+The [file outline](https://docs.cloud.google.com/gemini/docs/codeassist/chat-gemini#outline)
+feature is now generally available (GA).
+
+### Announcement
+
+
+
+### Finish changes feature in IntelliJ general availability
+
+The [finish changes](https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#finish-changes)
+features is now generally available (GA).
+
+### Announcement
+
+
+
+### File outline feature in IntelliJ general availability
+
+The [file outline](https://docs.cloud.google.com/gemini/docs/codeassist/chat-gemini#outline)
+feature is now generally available (GA).
+
+---
 ## 2026-01-23
 
 ### Other

@@ -2,9 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for MySQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for MySQL</subtitle>
-  <updated>2026-02-23T00:00:00+00:00</updated>
+  <updated>2026-02-24T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-mysql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2026-02-24:feature:0</id>
+    <published>2026-02-24T00:00:00+00:00</published>
+    <updated>2026-02-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>It now takes less time to create a Cloud SQL instance when point-in-time
+recovery (PITR) is enabled, as it is by default in the Google Cloud console.
+During instance creation, PITR now initially uses an
+<a href="https://docs.cloud.google.com/compute/docs/disks/instant-snapshots">instant snapshot</a>
+instead of a
+<a href="https://docs.cloud.google.com/sql/docs/mysql/backup-recovery/backups#backup-options">standard backup</a>.
+and then later converts the snapshot to a standard backup in the background to support
+restore operations.</p>]]></content>
+    <summary>Creating Cloud SQL instances with point-in-time recovery enabled is now faster. This improvement is achieved by using instant snapshots during creation, which are later converted to standard backups in the background.</summary>
+    <title>Feature: Faster Cloud SQL instance creation</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

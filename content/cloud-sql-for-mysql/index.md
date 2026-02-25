@@ -1,5 +1,19 @@
 # Cloud SQL for MySQL
 
+## 2026-02-24
+
+### Feature
+
+It now takes less time to create a Cloud SQL instance when point-in-time
+recovery (PITR) is enabled, as it is by default in the Google Cloud console.
+During instance creation, PITR now initially uses an
+[instant snapshot](https://docs.cloud.google.com/compute/docs/disks/instant-snapshots)
+instead of a
+[standard backup](https://docs.cloud.google.com/sql/docs/mysql/backup-recovery/backups#backup-options).
+and then later converts the snapshot to a standard backup in the background to support
+restore operations.
+
+---
 ## 2026-02-23
 
 ### Feature

@@ -25,6 +25,12 @@ to refine scan results](https://docs.cloud.google.com/sensitive-data-protection/
 
 ### Feature
 
+Sensitive Data Protection can discover and profile Vertex AI tuning
+jobs. For more information, see [Sensitive data discovery for Vertex
+AI](https://docs.cloud.google.com/sensitive-data-protection/docs/discovery-for-vertex-ai).
+
+### Feature
+
 The `KOREA_BRN` infoType detector is available in all regions. For more information about all built-in infoTypes, see the [InfoType detector reference](https://cloud.google.com/dlp/docs/infotypes-reference).
 
 ---

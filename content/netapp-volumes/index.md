@@ -1,5 +1,43 @@
 # NetApp Volumes
 
+## 2026-02-25
+
+### Feature
+
+Google Cloud NetApp Volumes supports Flex Unified File service level with both
+NFS and SMB protocols in Preview. For more information, see
+[Key features](https://docs.cloud.google.com/netapp/volumes/docs/discover/overview#key_features).
+
+### Feature
+
+The block storage with iSCSI protocol is generally available for the Flex
+Unified service level. For more information, see
+[Block storage](https://docs.cloud.google.com/netapp/volumes/docs/discover/features#block_storage).
+
+### Feature
+
+Google Cloud NetApp Volumes supports a new operational mode for Flex Unified
+pools in Preview. ONTAP-mode provides direct API access to the underlying ONTAP
+cluster, and supports both file and block volumes, and large volume pools. For
+more information about managing different features, see
+[About ONTAP-mode](https://docs.cloud.google.com/netapp/volumes/docs/ontap/overview#about_ontap-mode).
+
+### Feature
+
+The Customer Managed Encryption Keys (CMEK) for backup feature is generally
+available for Standard, Premium, and Extreme service levels, and in Preview
+for the Flex Unified service level. For more information, see
+[Backup encryption with CMEK](https://docs.cloud.google.com/netapp/volumes/docs/protect-data/about-backups#backup_encryption_with_cmek).
+
+### Feature
+
+Google Cloud NetApp Volumes supports Flex Unified large volumes in Preview, a
+file-only solution with NFS and SMB protocols for massive datasets. This option
+allows storage pools up to 20 PiB, and delivers up to 22 GiBps throughput and
+750,000 IOPS. For more information, see
+[Key features](https://docs.cloud.google.com/netapp/volumes/docs/discover/overview#key_features).
+
+---
 ## 2026-02-06
 
 ### Feature

@@ -1,6 +1,16 @@
 {
   "name": "Google Distributed Cloud (software only) for VMware",
   "entries": {
+    "2026-02-19": [
+      {
+        "kind": "Breaking",
+        "content": "Upgrading to advanced clusters overwrites any existing `cert-manager`. For more\ninformation, see [Upgrade to `cert-manager` bundled with advanced clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/update-or-upgrade-to-adv-cluster#upgrade-cert-manager).",
+        "summary": {
+          "title": "cert-manager overwrites on advanced cluster upgrade",
+          "summary": "Upgrading to advanced clusters will overwrite your existing cert-manager installation. Please review the documentation for instructions on how to manage cert-manager during this process."
+        }
+      }
+    ],
     "2026-02-13": [
       {
         "kind": "Feature",

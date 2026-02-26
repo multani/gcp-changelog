@@ -20,6 +20,15 @@ for the following integration:
 * [Managed Lustre](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_managed_lustre)
 
 ---
+## 2026-02-03
+
+### Feature
+
+[General availability](https://cloud.google.com/products#product-launch-stages) support for the following integration:
+
+* [Distributed Cloud Edge Container API](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#edgecontainer)
+
+---
 ## 2026-01-22
 
 ### Feature

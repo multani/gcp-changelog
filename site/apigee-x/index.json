@@ -12,10 +12,10 @@
       },
       {
         "kind": "Security",
-        "content": "| Bug ID | Description |\n| --- | --- |\n| **481735779, 457138941, 471232237** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2025-61730](https://nvd.nist.gov/vuln/detail/CVE-2025-61730) * [CVE-2025-68156](https://nvd.nist.gov/vuln/detail/CVE-2025-68156) * [CVE-2025-54388](https://nvd.nist.gov/vuln/detail/CVE-2025-54388) * [CVE-2025-61727](https://nvd.nist.gov/vuln/detail/CVE-2025-61727) * [CVE-2025-61729](https://nvd.nist.gov/vuln/detail/CVE-2025-61729) |\n| **485543125** | Apigee no longer supports the following `TLS_RSA` cipher suites:  * `TLS_RSA_WITH_AES_256_GCM_SHA384` * `TLS_RSA_WITH_AES_128_GCM_SHA256` * `TLS_RSA_WITH_AES_256_CBC_SHA256` * `TLS_RSA_WITH_AES_128_CBC_SHA256` * `TLS_RSA_WITH_AES_256_CBC_SHA` * `TLS_RSA_WITH_AES_128_CBC_SHA` |",
+        "content": "| Bug ID | Description |\n| --- | --- |\n| **481735779, 457138941, 471232237** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2025-61730](https://nvd.nist.gov/vuln/detail/CVE-2025-61730) * [CVE-2025-68156](https://nvd.nist.gov/vuln/detail/CVE-2025-68156) * [CVE-2025-54388](https://nvd.nist.gov/vuln/detail/CVE-2025-54388) * [CVE-2025-61727](https://nvd.nist.gov/vuln/detail/CVE-2025-61727) * [CVE-2025-61729](https://nvd.nist.gov/vuln/detail/CVE-2025-61729) |",
         "summary": {
-          "title": "Security Update for Apigee Infrastructure",
-          "summary": "This update addresses critical security vulnerabilities within the Apigee infrastructure, including fixes for multiple CVEs. Additionally, certain TLS_RSA cipher suites are no longer supported to enhance security."
+          "title": "Security Update for Apigee",
+          "summary": "A security update has been released for the Apigee infrastructure, addressing multiple critical vulnerabilities. This update is essential for maintaining the security and integrity of your API management environment."
         }
       },
       {
@@ -48,18 +48,18 @@
     "2026-02-10": [
       {
         "kind": "Announcement",
-        "content": "**Note:** This release was rolled back to address an issue. See entry for [February 24th, 2026](https://docs.cloud.google.com/apigee/docs/release-notes#February_24_2026) for the updated version number and payload.\n\nOn February 10, 2026, we released an updated version of Apigee (1-17-0-apigee-2).\n\n**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.",
+        "content": "**Note:** This release was rolled back to address an issue. See the entry for [February 24th, 2026](https://docs.cloud.google.com/apigee/docs/release-notes#February_24_2026) for the updated version number and payload.\n\nOn February 10, 2026, we released an updated version of Apigee (1-17-0-apigee-2).\n\n**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.",
         "summary": {
-          "title": "Apigee Update Released",
-          "summary": "An updated version of Apigee (1-17-0-apigee-2) was released on February 10th, 2026. Rollouts may take several business days to complete across all zones. Please note this release was later rolled back; refer to the February 24th, 2026 entry for the corrected version."
+          "title": "Apigee update released",
+          "summary": "An updated version of Apigee (1-17-0-apigee-2) was released on February 10, 2026. Rollout may take several business days to complete across all zones. A previous release was rolled back; refer to the February 24th, 2026 entry for updated details."
         }
       },
       {
         "kind": "Security",
-        "content": "| Bug ID | Description |\n| --- | --- |\n| **481735779, 457138941, 471232237** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2025-61730](https://nvd.nist.gov/vuln/detail/CVE-2025-61730) * [CVE-2025-68156](https://nvd.nist.gov/vuln/detail/CVE-2025-68156) * [CVE-2025-54388](https://nvd.nist.gov/vuln/detail/CVE-2025-54388) * [CVE-2025-61727](https://nvd.nist.gov/vuln/detail/CVE-2025-61727) * [CVE-2025-61729](https://nvd.nist.gov/vuln/detail/CVE-2025-61729) |\n| **470375542** | Fixed a memory leak which could result in a spike in 503 responses with `no_healthy_upstream` messages. |\n| **480997525** | Applied a fix for proxy calls failing with `The URI contains illegal characters` error after Netty upgrade. |\n| **485543125** | Apigee no longer supports the following `TLS_RSA` cipher suites:  * `TLS_RSA_WITH_AES_256_GCM_SHA384` * `TLS_RSA_WITH_AES_128_GCM_SHA256` * `TLS_RSA_WITH_AES_256_CBC_SHA256` * `TLS_RSA_WITH_AES_128_CBC_SHA256` * `TLS_RSA_WITH_AES_256_CBC_SHA` * `TLS_RSA_WITH_AES_128_CBC_SHA` |",
+        "content": "**Note:** This note is incorrect - these security fixes, including the removal of support for the `TLS_RSA` cipher suites, were rolled back. See the entry for [February 24th, 2026](https://docs.cloud.google.com/apigee/docs/release-notes#February_24_2026) for the updated version number and payload.\n\n| Bug ID | Description |\n| --- | --- |\n| **481735779, 457138941, 471232237** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2025-61730](https://nvd.nist.gov/vuln/detail/CVE-2025-61730) * [CVE-2025-68156](https://nvd.nist.gov/vuln/detail/CVE-2025-68156) * [CVE-2025-54388](https://nvd.nist.gov/vuln/detail/CVE-2025-54388) * [CVE-2025-61727](https://nvd.nist.gov/vuln/detail/CVE-2025-61727) * [CVE-2025-61729](https://nvd.nist.gov/vuln/detail/CVE-2025-61729) |\n| **470375542** | Fixed a memory leak which could result in a spike in 503 responses with `no_healthy_upstream` messages. |\n| **480997525** | Applied a fix for proxy calls failing with `The URI contains illegal characters` error after Netty upgrade. |\n| **485543125** | Apigee no longer supports the following `TLS_RSA` cipher suites:  * `TLS_RSA_WITH_AES_256_GCM_SHA384` * `TLS_RSA_WITH_AES_128_GCM_SHA256` * `TLS_RSA_WITH_AES_256_CBC_SHA256` * `TLS_RSA_WITH_AES_128_CBC_SHA256` * `TLS_RSA_WITH_AES_256_CBC_SHA` * `TLS_RSA_WITH_AES_128_CBC_SHA` |",
         "summary": {
-          "title": "Security Updates for Apigee",
-          "summary": "This release includes critical security fixes for Apigee infrastructure, addressing multiple vulnerabilities. Additionally, performance improvements have been made, including a fix for a memory leak causing 503 responses and a resolution for proxy call errors after a Netty upgrade. Apigee also discontinues support for several TLS_RSA cipher suites for enhanced security."
+          "title": "Security Updates and Fixes",
+          "summary": "This update includes crucial security enhancements to protect our infrastructure against several vulnerabilities. Additionally, it resolves a memory leak issue that could cause intermittent service disruptions and corrects an error affecting proxy calls with specific URI characters. Support for certain TLS_RSA cipher suites has also been discontinued as part of these security improvements."
         }
       }
     ],

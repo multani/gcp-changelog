@@ -26,10 +26,9 @@
     <updated>2026-02-24T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>| Bug ID | Description |
 | --- | --- |
-| <strong>481735779, 457138941, 471232237</strong> | <strong>Security fix for Apigee infrastructure.</strong> This addresses the following vulnerabilities:   * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61730">CVE-2025-61730</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-68156">CVE-2025-68156</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-54388">CVE-2025-54388</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61727">CVE-2025-61727</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61729">CVE-2025-61729</a> |
-| <strong>485543125</strong> | Apigee no longer supports the following <code>TLS_RSA</code> cipher suites:  * <code>TLS_RSA_WITH_AES_256_GCM_SHA384</code> * <code>TLS_RSA_WITH_AES_128_GCM_SHA256</code> * <code>TLS_RSA_WITH_AES_256_CBC_SHA256</code> * <code>TLS_RSA_WITH_AES_128_CBC_SHA256</code> * <code>TLS_RSA_WITH_AES_256_CBC_SHA</code> * <code>TLS_RSA_WITH_AES_128_CBC_SHA</code> |</p>]]></content>
-    <summary>This update addresses critical security vulnerabilities within the Apigee infrastructure, including fixes for multiple CVEs. Additionally, certain TLS_RSA cipher suites are no longer supported to enhance security.</summary>
-    <title>Security: Security Update for Apigee Infrastructure</title>
+| <strong>481735779, 457138941, 471232237</strong> | <strong>Security fix for Apigee infrastructure.</strong> This addresses the following vulnerabilities:   * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61730">CVE-2025-61730</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-68156">CVE-2025-68156</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-54388">CVE-2025-54388</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61727">CVE-2025-61727</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61729">CVE-2025-61729</a> |</p>]]></content>
+    <summary>A security update has been released for the Apigee infrastructure, addressing multiple critical vulnerabilities. This update is essential for maintaining the security and integrity of your API management environment.</summary>
+    <title>Security: Security Update for Apigee</title>
   </entry>
   <entry>
     <author>
@@ -76,11 +75,11 @@
     <id>urn:github:multani:gcp-changelog:apigee-x:2026-02-10:announcement:0</id>
     <published>2026-02-10T00:00:00+00:00</published>
     <updated>2026-02-10T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Note:</strong> This release was rolled back to address an issue. See entry for <a href="https://docs.cloud.google.com/apigee/docs/release-notes#February_24_2026">February 24th, 2026</a> for the updated version number and payload.</p>
+    <content type="html"><![CDATA[<p><strong>Note:</strong> This release was rolled back to address an issue. See the entry for <a href="https://docs.cloud.google.com/apigee/docs/release-notes#February_24_2026">February 24th, 2026</a> for the updated version number and payload.</p>
 <p>On February 10, 2026, we released an updated version of Apigee (1-17-0-apigee-2).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>]]></content>
-    <summary>An updated version of Apigee (1-17-0-apigee-2) was released on February 10th, 2026. Rollouts may take several business days to complete across all zones. Please note this release was later rolled back; refer to the February 24th, 2026 entry for the corrected version.</summary>
-    <title>Announcement: Apigee Update Released</title>
+    <summary>An updated version of Apigee (1-17-0-apigee-2) was released on February 10, 2026. Rollout may take several business days to complete across all zones. A previous release was rolled back; refer to the February 24th, 2026 entry for updated details.</summary>
+    <title>Announcement: Apigee update released</title>
   </entry>
   <entry>
     <author>
@@ -89,14 +88,15 @@
     <id>urn:github:multani:gcp-changelog:apigee-x:2026-02-10:security:1</id>
     <published>2026-02-10T00:00:00+00:00</published>
     <updated>2026-02-10T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>| Bug ID | Description |
+    <content type="html"><![CDATA[<p><strong>Note:</strong> This note is incorrect - these security fixes, including the removal of support for the <code>TLS_RSA</code> cipher suites, were rolled back. See the entry for <a href="https://docs.cloud.google.com/apigee/docs/release-notes#February_24_2026">February 24th, 2026</a> for the updated version number and payload.</p>
+<p>| Bug ID | Description |
 | --- | --- |
 | <strong>481735779, 457138941, 471232237</strong> | <strong>Security fix for Apigee infrastructure.</strong> This addresses the following vulnerabilities:   * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61730">CVE-2025-61730</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-68156">CVE-2025-68156</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-54388">CVE-2025-54388</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61727">CVE-2025-61727</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61729">CVE-2025-61729</a> |
 | <strong>470375542</strong> | Fixed a memory leak which could result in a spike in 503 responses with <code>no_healthy_upstream</code> messages. |
 | <strong>480997525</strong> | Applied a fix for proxy calls failing with <code>The URI contains illegal characters</code> error after Netty upgrade. |
 | <strong>485543125</strong> | Apigee no longer supports the following <code>TLS_RSA</code> cipher suites:  * <code>TLS_RSA_WITH_AES_256_GCM_SHA384</code> * <code>TLS_RSA_WITH_AES_128_GCM_SHA256</code> * <code>TLS_RSA_WITH_AES_256_CBC_SHA256</code> * <code>TLS_RSA_WITH_AES_128_CBC_SHA256</code> * <code>TLS_RSA_WITH_AES_256_CBC_SHA</code> * <code>TLS_RSA_WITH_AES_128_CBC_SHA</code> |</p>]]></content>
-    <summary>This release includes critical security fixes for Apigee infrastructure, addressing multiple vulnerabilities. Additionally, performance improvements have been made, including a fix for a memory leak causing 503 responses and a resolution for proxy call errors after a Netty upgrade. Apigee also discontinues support for several TLS_RSA cipher suites for enhanced security.</summary>
-    <title>Security: Security Updates for Apigee</title>
+    <summary>This update includes crucial security enhancements to protect our infrastructure against several vulnerabilities. Additionally, it resolves a memory leak issue that could cause intermittent service disruptions and corrects an error affecting proxy calls with specific URI characters. Support for certain TLS_RSA cipher suites has also been discontinued as part of these security improvements.</summary>
+    <title>Security: Security Updates and Fixes</title>
   </entry>
   <entry>
     <author>

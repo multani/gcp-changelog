@@ -2,9 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Network Intelligence Center</title>
   <subtitle>Changelog for Google Cloud product: Network Intelligence Center</subtitle>
-  <updated>2026-02-19T00:00:00+00:00</updated>
+  <updated>2026-02-25T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:network-intelligence-center</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/network-intelligence-center/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:network-intelligence-center:2026-02-25:feature:0</id>
+    <published>2026-02-25T00:00:00+00:00</published>
+    <updated>2026-02-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following features are available in
+<a href="https://docs.cloud.google.com/network-intelligence-center/docs/connectivity-tests/concepts/overview">Connectivity Tests</a>:</p>
+<ul>
+<li><strong>Source IP type selection</strong>: you can select a specific source IP address
+  type when creating a connectivity test in the Google Cloud console.</li>
+</ul>
+<p>Options include: an internal IP address in a VPC network; an internal IP
+  address outside of Google Cloud; an external IP
+  address; or automatic source detection that evaluates all possible paths.
+* <strong>New network type</strong>: the Network Management API includes the
+  <a href="https://docs.cloud.google.com/network-intelligence-center/docs/reference/networkmanagement/rest/v1/projects.locations.global.connectivityTests#networktype"><code>INTERNET</code></a>
+  network type, which maps to the <strong>External IP address</strong> source IP type
+  in the Google Cloud console.
+* <strong>Your own IP address as the source</strong>: you can select your
+  user IP address as the source IP address for a connectivity test in the
+  Google Cloud console.
+* <strong>Automatic VPC network detection</strong>: for destination IP addresses within
+  Google Cloud, Connectivity Tests automatically detects the destination
+  VPC network. You no longer need to select it manually.</p>]]></content>
+    <summary>Connectivity Tests now offers more flexible source IP type selection, including internal, external, and automatic detection. A new 'INTERNET' network type is available, and you can now use your own IP address as the source. Additionally, automatic VPC network detection simplifies testing for destinations within Google Cloud.</summary>
+    <title>Feature: Enhanced Connectivity Testing Features</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

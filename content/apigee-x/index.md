@@ -13,7 +13,6 @@ On February 24th, 2026, we released an updated version of Apigee (1-17-0-apigee-
 | Bug ID | Description |
 | --- | --- |
 | **481735779, 457138941, 471232237** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2025-61730](https://nvd.nist.gov/vuln/detail/CVE-2025-61730) * [CVE-2025-68156](https://nvd.nist.gov/vuln/detail/CVE-2025-68156) * [CVE-2025-54388](https://nvd.nist.gov/vuln/detail/CVE-2025-54388) * [CVE-2025-61727](https://nvd.nist.gov/vuln/detail/CVE-2025-61727) * [CVE-2025-61729](https://nvd.nist.gov/vuln/detail/CVE-2025-61729) |
-| **485543125** | Apigee no longer supports the following `TLS_RSA` cipher suites:  * `TLS_RSA_WITH_AES_256_GCM_SHA384` * `TLS_RSA_WITH_AES_128_GCM_SHA256` * `TLS_RSA_WITH_AES_256_CBC_SHA256` * `TLS_RSA_WITH_AES_128_CBC_SHA256` * `TLS_RSA_WITH_AES_256_CBC_SHA` * `TLS_RSA_WITH_AES_128_CBC_SHA` |
 
 ### Fixed
 
@@ -41,13 +40,15 @@ A vulnerability was identified in the Apigee platform ([CVE-2025-13292](https://
 
 ### Announcement
 
-**Note:** This release was rolled back to address an issue. See entry for [February 24th, 2026](https://docs.cloud.google.com/apigee/docs/release-notes#February_24_2026) for the updated version number and payload.
+**Note:** This release was rolled back to address an issue. See the entry for [February 24th, 2026](https://docs.cloud.google.com/apigee/docs/release-notes#February_24_2026) for the updated version number and payload.
 
 On February 10, 2026, we released an updated version of Apigee (1-17-0-apigee-2).
 
 **Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
 
 ### Security
+
+**Note:** This note is incorrect - these security fixes, including the removal of support for the `TLS_RSA` cipher suites, were rolled back. See the entry for [February 24th, 2026](https://docs.cloud.google.com/apigee/docs/release-notes#February_24_2026) for the updated version number and payload.
 
 | Bug ID | Description |
 | --- | --- |

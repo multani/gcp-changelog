@@ -1,6 +1,24 @@
 {
   "name": "Spanner",
   "entries": {
+    "2026-02-25": [
+      {
+        "kind": "Feature",
+        "content": "Spanner supports the following:\n\n* [Monitor the usage of Enterprise edition and\n  Enterprise Plus edition features](https://docs.cloud.google.com/spanner/docs/editions-overview#monitor-edition-feature-usage)\n  in your Spanner instance.\n* [Downgrade the instance's edition using the Google Cloud console](https://docs.cloud.google.com/spanner/docs/create-manage-instances#downgrade-edition).\n* [Verify edition compatibility when restoring from a backup](https://docs.cloud.google.com/spanner/docs/backup/restore-backups).\n  If the database uses higher-tier features, you must restore the backup to a\n  destination instance that uses the same or a higher-tier edition.\n* [Set custom edition constraints within your organization policies](https://docs.cloud.google.com/spanner/docs/spanner-custom-constraints#google-managed_constraints),\n  limiting the edition of your instance that your users can create.",
+        "summary": {
+          "title": "Manage Spanner Editions More Flexibly",
+          "summary": "Spanner now offers enhanced management for its Enterprise and Enterprise Plus editions. You can now monitor feature usage, downgrade instances, verify compatibility during restores, and set custom edition constraints through organization policies, providing greater control over your Spanner environment."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Spanner supports the following [managed autoscaler](https://docs.cloud.google.com/spanner/docs/managed-autoscaler)\nfeatures:\n\n* Autoscaling based on [total CPU utilization target](https://docs.cloud.google.com/spanner/docs/managed-autoscaler#how_managed_autoscaler_works).\n  When an instance's total CPU utilization exceeds or falls below the target\n  that you have set, Spanner adds or removes compute capacity.\n* Autoscaling for [instance partitions (in Preview)](https://docs.cloud.google.com/spanner/docs/geo-partitioning).\n\nFor more information, see [Managed autoscaler](https://docs.cloud.google.com/spanner/docs/managed-autoscaler).",
+        "summary": {
+          "title": "Spanner Managed Autoscaler Now Available",
+          "summary": "Spanner now offers a managed autoscaler that automatically adjusts compute capacity based on CPU utilization targets. This feature helps optimize performance and cost by adding or removing resources as needed. Additionally, Spanner is introducing autoscaling for instance partitions in preview."
+        }
+      }
+    ],
     "2026-02-24": [
       {
         "kind": "Feature",

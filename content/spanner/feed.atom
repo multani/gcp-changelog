@@ -2,9 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Spanner</title>
   <subtitle>Changelog for Google Cloud product: Spanner</subtitle>
-  <updated>2026-02-24T00:00:00+00:00</updated>
+  <updated>2026-02-25T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:spanner</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/spanner/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2026-02-25:feature:0</id>
+    <published>2026-02-25T00:00:00+00:00</published>
+    <updated>2026-02-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Spanner supports the following:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/spanner/docs/editions-overview#monitor-edition-feature-usage">Monitor the usage of Enterprise edition and
+  Enterprise Plus edition features</a>
+  in your Spanner instance.</li>
+<li><a href="https://docs.cloud.google.com/spanner/docs/create-manage-instances#downgrade-edition">Downgrade the instance's edition using the Google Cloud console</a>.</li>
+<li><a href="https://docs.cloud.google.com/spanner/docs/backup/restore-backups">Verify edition compatibility when restoring from a backup</a>.
+  If the database uses higher-tier features, you must restore the backup to a
+  destination instance that uses the same or a higher-tier edition.</li>
+<li><a href="https://docs.cloud.google.com/spanner/docs/spanner-custom-constraints#google-managed_constraints">Set custom edition constraints within your organization policies</a>,
+  limiting the edition of your instance that your users can create.</li>
+</ul>]]></content>
+    <summary>Spanner now offers enhanced management for its Enterprise and Enterprise Plus editions. You can now monitor feature usage, downgrade instances, verify compatibility during restores, and set custom edition constraints through organization policies, providing greater control over your Spanner environment.</summary>
+    <title>Feature: Manage Spanner Editions More Flexibly</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2026-02-25:feature:1</id>
+    <published>2026-02-25T00:00:00+00:00</published>
+    <updated>2026-02-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Spanner supports the following <a href="https://docs.cloud.google.com/spanner/docs/managed-autoscaler">managed autoscaler</a>
+features:</p>
+<ul>
+<li>Autoscaling based on <a href="https://docs.cloud.google.com/spanner/docs/managed-autoscaler#how_managed_autoscaler_works">total CPU utilization target</a>.
+  When an instance's total CPU utilization exceeds or falls below the target
+  that you have set, Spanner adds or removes compute capacity.</li>
+<li>Autoscaling for <a href="https://docs.cloud.google.com/spanner/docs/geo-partitioning">instance partitions (in Preview)</a>.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/spanner/docs/managed-autoscaler">Managed autoscaler</a>.</p>]]></content>
+    <summary>Spanner now offers a managed autoscaler that automatically adjusts compute capacity based on CPU utilization targets. This feature helps optimize performance and cost by adding or removing resources as needed. Additionally, Spanner is introducing autoscaling for instance partitions in preview.</summary>
+    <title>Feature: Spanner Managed Autoscaler Now Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

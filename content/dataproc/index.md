@@ -86,10 +86,6 @@ New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.goog
 
 Parquet CLI version upgraded to 1.15.2 in 2.1 and 2.2 images.
 
-### Feature
-
-Zookeeper version upgraded to 3.9.4 in Dataproc image 2.3.22 and later.
-
 ### Fixed
 
 Fixed a bug in the ARM image that prevented connecting to a Dataproc Metastore instance with a gRPC protocol endpoint.
@@ -105,6 +101,10 @@ Delta subminor version upgraded to 3.2.1 in Dataproc on Compute Engine image 2.2
 ### Change
 
 Removed use of deprecated Hadoop configuration properties `fs.default.name` and `yarn.resourcemanager.system-metrics-publisher.enabled`.
+
+### Feature
+
+Zookeeper version upgraded to 3.9.4 in Dataproc image 2.3.22.
 
 ---
 ## 2026-02-04

@@ -1,5 +1,34 @@
 # Spanner
 
+## 2026-02-25
+
+### Feature
+
+Spanner supports the following:
+
+* [Monitor the usage of Enterprise edition and
+  Enterprise Plus edition features](https://docs.cloud.google.com/spanner/docs/editions-overview#monitor-edition-feature-usage)
+  in your Spanner instance.
+* [Downgrade the instance's edition using the Google Cloud console](https://docs.cloud.google.com/spanner/docs/create-manage-instances#downgrade-edition).
+* [Verify edition compatibility when restoring from a backup](https://docs.cloud.google.com/spanner/docs/backup/restore-backups).
+  If the database uses higher-tier features, you must restore the backup to a
+  destination instance that uses the same or a higher-tier edition.
+* [Set custom edition constraints within your organization policies](https://docs.cloud.google.com/spanner/docs/spanner-custom-constraints#google-managed_constraints),
+  limiting the edition of your instance that your users can create.
+
+### Feature
+
+Spanner supports the following [managed autoscaler](https://docs.cloud.google.com/spanner/docs/managed-autoscaler)
+features:
+
+* Autoscaling based on [total CPU utilization target](https://docs.cloud.google.com/spanner/docs/managed-autoscaler#how_managed_autoscaler_works).
+  When an instance's total CPU utilization exceeds or falls below the target
+  that you have set, Spanner adds or removes compute capacity.
+* Autoscaling for [instance partitions (in Preview)](https://docs.cloud.google.com/spanner/docs/geo-partitioning).
+
+For more information, see [Managed autoscaler](https://docs.cloud.google.com/spanner/docs/managed-autoscaler).
+
+---
 ## 2026-02-24
 
 ### Feature

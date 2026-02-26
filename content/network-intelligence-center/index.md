@@ -1,5 +1,30 @@
 # Network Intelligence Center
 
+## 2026-02-25
+
+### Feature
+
+The following features are available in
+[Connectivity Tests](https://docs.cloud.google.com/network-intelligence-center/docs/connectivity-tests/concepts/overview):
+
+* **Source IP type selection**: you can select a specific source IP address
+  type when creating a connectivity test in the Google Cloud console.
+
+  Options include: an internal IP address in a VPC network; an internal IP
+  address outside of Google Cloud; an external IP
+  address; or automatic source detection that evaluates all possible paths.
+* **New network type**: the Network Management API includes the
+  [`INTERNET`](https://docs.cloud.google.com/network-intelligence-center/docs/reference/networkmanagement/rest/v1/projects.locations.global.connectivityTests#networktype)
+  network type, which maps to the **External IP address** source IP type
+  in the Google Cloud console.
+* **Your own IP address as the source**: you can select your
+  user IP address as the source IP address for a connectivity test in the
+  Google Cloud console.
+* **Automatic VPC network detection**: for destination IP addresses within
+  Google Cloud, Connectivity Tests automatically detects the destination
+  VPC network. You no longer need to select it manually.
+
+---
 ## 2026-02-19
 
 ### Feature

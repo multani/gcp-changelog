@@ -1,5 +1,14 @@
 # Dataplex
 
+## 2026-02-24
+
+### Feature
+
+You can now save data profile aspects in Dataplex Universal Catalog up to 1 MB in size.
+For more information, see
+[Quotas and limits](https://cloud.google.com/dataplex/docs/quotas).
+
+---
 ## 2026-02-19
 
 ### Feature

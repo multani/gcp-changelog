@@ -1,5 +1,17 @@
 # BigQuery
 
+## 2026-02-25
+
+### Change
+
+Effective *June 1, 2026*, BigQuery will limit legacy SQL use. This depends on
+whether your organization or project uses it from November 1, 2025, to June 1,
+2026. If you don't use legacy SQL during this time, you won't be able to use it
+after June 1, 2026. If you do use it, your existing workloads
+will keep running, but new ones might not. For more information, see
+[Legacy SQL feature availability](https://docs.cloud.google.com/bigquery/docs/legacy-sql-feature-availability).
+
+---
 ## 2026-02-24
 
 ### Feature

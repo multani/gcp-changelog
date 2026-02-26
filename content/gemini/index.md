@@ -23,6 +23,50 @@ The [file outline](https://docs.cloud.google.com/gemini/docs/codeassist/chat-gem
 feature is now generally available (GA).
 
 ---
+## 2026-02-20
+
+### Other
+
+
+
+### Bug fixes in VS Code
+
+Various bug fixes and minor product enhancements.
+
+---
+## 2026-02-13
+
+### Other
+
+
+
+### Bug fixes in VS Code
+
+Various bug fixes and minor product enhancements.
+
+---
+## 2026-02-06
+
+### Other
+
+
+
+### Bug fixes in VS Code
+
+Various bug fixes and minor product enhancements.
+
+---
+## 2026-02-02
+
+### Other
+
+
+
+### Bug fixes in VS Code
+
+Various bug fixes and minor product enhancements.
+
+---
 ## 2026-01-23
 
 ### Other

@@ -1,5 +1,23 @@
 # Cloud Load Balancing
 
+## 2026-02-24
+
+### Other
+
+Backend Cloud Storage buckets are available for
+regional external Application Load Balancers, regional internal Application Load Balancers, and
+cross-region internal Application Load Balancers in a Shared VPC environment.
+
+Support for this feature is available in **Preview** for
+regional external Application Load Balancers and regional internal Application Load Balancers and in
+**General availability** for cross-region internal Application Load Balancers. For more information,
+see:
+
+* [Set up a regional external Application Load Balancer with Cloud Storage buckets in a Shared VPC environment](https://docs.cloud.google.com/load-balancing/docs/https/setting-up-reg-ext-shared-vpc-backend-buckets)
+* [Set up a regional internal Application Load Balancer with Cloud Storage buckets in a Shared VPC environment](https://docs.cloud.google.com/load-balancing/docs/l7-internal/setup-regional-internal-shared-vpc-buckets)
+* [Set up a cross-region internal Application Load Balancer with Cloud Storage buckets in a Shared VPC environment](https://docs.cloud.google.com/load-balancing/docs/l7-internal/setup-crilb-shared-vpc-backend-buckets)
+
+---
 ## 2026-02-23
 
 ### Feature

@@ -1,5 +1,13 @@
 # Access Approval
 
+## 2026-02-25
+
+### Feature
+
+Vertex AI Agent Engine is generally available
+[(GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-02-19
 
 ### Feature

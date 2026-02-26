@@ -1,5 +1,20 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-02-25
+
+### Announcement
+
+**Google Cloud CCaaS 4.0 patch**
+
+This patch does the following:
+
+* Fixes an issue where voicemails were being routed to agents who were not
+  assigned to the intended queue.
+* Adds the ability to disable the IVR greeting message, both at the global
+  level and at the Direct Access Point queue level.
+* Lets an agent and an end-user join a call simultaneously.
+
+---
 ## 2026-02-17
 
 ### Fixed

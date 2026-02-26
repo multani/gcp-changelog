@@ -1,5 +1,33 @@
 # Google SecOps Marketplace
 
+## 2026-02-25
+
+### Feature
+
+**Google Workspace**: Version 23.0
+
+* The following new action has been added:
+
+  + **Remove Extension**
+
+### Change
+
+**Microsoft 365 Defender**: Version 23.0
+
+* Added support for Graph API to the following actions:
+
+  + **Execute Query**
+  + **Execute Custom Query**
+  + **Execute Entity Query**
+
+### Change
+
+**Google Chronicle**: Version 77.0
+
+* **Integration**: Updated the error handling for Workload Identity
+  authentication.
+
+---
 ## 2026-02-18
 
 ### Feature

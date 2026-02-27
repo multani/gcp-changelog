@@ -2,9 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Spanner</title>
   <subtitle>Changelog for Google Cloud product: Spanner</subtitle>
-  <updated>2026-02-25T00:00:00+00:00</updated>
+  <updated>2026-02-26T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:spanner</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/spanner/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2026-02-26:feature:0</id>
+    <published>2026-02-26T00:00:00+00:00</published>
+    <updated>2026-02-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Spanner provides JSON string versions of the following statistics
+columns for PostgreSQL-dialect databases:</p>
+<ul>
+<li><code>TOTAL_LATENCY_DISTRIBUTION_JSON_STRING</code> in
+  <a href="https://docs.cloud.google.com/spanner/docs/introspection/transaction-statistics">Transaction statistics</a></li>
+<li><code>OPERATIONS_BY_TABLE_JSON_STRING</code> in
+  <a href="https://docs.cloud.google.com/spanner/docs/introspection/transaction-statistics">Transaction statistics</a></li>
+<li><code>LATENCY_DISTRIBUTION_JSON_STRING</code> in
+  <a href="https://docs.cloud.google.com/spanner/docs/introspection/query-statistics">Query statistics</a></li>
+<li><code>SAMPLE_LOCK_REQUESTS_JSON_STRING</code> in
+  <a href="https://docs.cloud.google.com/spanner/docs/introspection/lock-statistics">Lock statistics</a></li>
+</ul>
+<p>You can use these columns to retrieve statistics in JSON format from the
+<code>SPANNER_SYS</code> tables.</p>]]></content>
+    <summary>Spanner now provides new columns in SPANNER_SYS tables that return transaction, query, and lock statistics in JSON string format. This allows for easier retrieval and processing of detailed performance metrics for PostgreSQL-dialect databases.</summary>
+    <title>Feature: New JSON statistics columns available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

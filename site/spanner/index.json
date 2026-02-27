@@ -1,6 +1,16 @@
 {
   "name": "Spanner",
   "entries": {
+    "2026-02-26": [
+      {
+        "kind": "Feature",
+        "content": "Spanner provides JSON string versions of the following statistics\ncolumns for PostgreSQL-dialect databases:\n\n* `TOTAL_LATENCY_DISTRIBUTION_JSON_STRING` in\n  [Transaction statistics](https://docs.cloud.google.com/spanner/docs/introspection/transaction-statistics)\n* `OPERATIONS_BY_TABLE_JSON_STRING` in\n  [Transaction statistics](https://docs.cloud.google.com/spanner/docs/introspection/transaction-statistics)\n* `LATENCY_DISTRIBUTION_JSON_STRING` in\n  [Query statistics](https://docs.cloud.google.com/spanner/docs/introspection/query-statistics)\n* `SAMPLE_LOCK_REQUESTS_JSON_STRING` in\n  [Lock statistics](https://docs.cloud.google.com/spanner/docs/introspection/lock-statistics)\n\nYou can use these columns to retrieve statistics in JSON format from the\n`SPANNER_SYS` tables.",
+        "summary": {
+          "title": "New JSON statistics columns available",
+          "summary": "Spanner now provides new columns in SPANNER_SYS tables that return transaction, query, and lock statistics in JSON string format. This allows for easier retrieval and processing of detailed performance metrics for PostgreSQL-dialect databases."
+        }
+      }
+    ],
     "2026-02-25": [
       {
         "kind": "Feature",

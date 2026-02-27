@@ -11,7 +11,7 @@ During instance creation, PITR now initially uses an
 instead of a
 [standard backup](https://docs.cloud.google.com/sql/docs/mysql/backup-recovery/backups#backup-options).
 and then later converts the snapshot to a standard backup in the background to support
-restore operations.
+[restore operations](https://docs.cloud.google.com/sql/docs/mysql/backup-recovery/restore#tips-pitr).
 
 ---
 ## 2026-02-23

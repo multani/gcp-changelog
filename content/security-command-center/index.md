@@ -1,5 +1,16 @@
 # Security Command Center
 
+## 2026-02-26
+
+### Feature
+
+Security Command Center lets you filter findings, issues, and compliance information to
+view only the resources that are
+[registered to an App Hub application](https://docs.cloud.google.com/app-hub/docs/register-resources).
+For information, see
+[Integration with App Hub](https://docs.cloud.google.com/security-command-center/docs/concepts-security-sources#apphub-integration).
+
+---
 ## 2026-02-11
 
 ### Feature

@@ -1,5 +1,18 @@
 # Gemini Enterprise
 
+## 2026-02-26
+
+### Feature
+
+**Gemini Enterprise: Support for new data sources (Public preview)**
+
+The following data sources are supported in Gemini Enterprise:
+
+* [HubSpot](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/hubspot)
+* [Monday](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/monday)
+* [Shopify](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/shopify)
+
+---
 ## 2026-02-23
 
 ### Feature

@@ -16,6 +16,15 @@ Now available in preview, the **In-database merge queries** feature is supported
 
 ### Feature
 
+The [content certification](https://docs.cloud.google.com/looker/docs/content-certification) feature, already available in preview, includes the following updates:
+
+* The [**Settings**](admin-panel-general-settings) page in the **General** section of the **Admin** panel now includes options that let admins enable or disable content certification, set a custom URL for the certification process, and control whether certification is revoked when content is edited.
+* LookML dashboards can now be certified.
+* Looks and dashboards that are based on uncertified self-service Explores now display the "ungoverned" badge.
+* Searching for content now includes the ability to sort content based on its certification status. (**Note**: This capability is not yet available. This item was modified on February 26, 2026.)
+
+### Feature
+
 Now available in preview, LookML developers can unlock their Git branch in cases where their Git branch is locked as a result of another Git operation in progress or a previous Git operation failing. When the Git repository is locked, Looker displays the **Unlock Branch** option in the [**Git Actions** panel](https://docs.cloud.google.com/looker/docs/git-command-reference#git_actions_panel) of the Looker IDE. In addition, if a LookML developer tries to commit a change on a locked Git branch, Looker displays a warning in the **Commit** dialog, along with an option to delete the Git lock. See the [Using version control and deploying](https://docs.cloud.google.com/looker/docs/version-control-and-deploying-changes#unlock-branch) documentation page for details.
 
 **Note:** This item was added on February 18, 2026.
@@ -39,15 +48,6 @@ Looker admins can grant the new [`schedule_without_limit` permission](https://do
 This permission will be automatically granted to any existing roles that already contain a data delivery permission. Looker admins must remove this permission from any users whom they wish to prevent from delivering all results from a Look or an Explore.
 
 **Note:** This item was added on February 19, 2026.
-
-### Feature
-
-The [content certification](https://docs.cloud.google.com/looker/docs/content-certification) feature, already available in preview, includes the following updates:
-
-* The [**Settings**](admin-panel-general-settings) page in the **General** section of the **Admin** panel now includes options that let admins enable or disable content certification, set a custom URL for the certification process, and control whether certification is revoked when content is edited.
-* LookML dashboards can now be certified.
-* Looks and dashboards that are based on uncertified self-service Explores now display the "ungoverned" badge.
-* Searching for content now includes the ability to sort content based on its certification status.
 
 ### Feature
 

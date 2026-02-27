@@ -1,5 +1,33 @@
 # Cloud Trace
 
+## 2026-02-26
+
+### Feature
+
+For organizations, folders, and projects, you can now configure
+default settings for observability buckets. Default settings let you
+specify the following for new observability buckets:
+
+* A location.
+* A Cloud KMS key.
+
+This feature is in public preview. To learn more, see
+[Set defaults for observability buckets](https://docs.cloud.google.com/stackdriver/docs/observability/set-defaults-for-observability-buckets).
+
+### Feature
+
+You can now configure observability buckets to be in the following
+[locations](https://docs.cloud.google.com/stackdriver/docs/observability/observability-bucket-locations):
+
+* us
+* eu
+* us-central1
+* us-west1
+
+Your trace data is stored in an observability bucket. To learn more, see
+[Trace storage overview](https://docs.cloud.google.com/trace/docs/storage-overview).
+
+---
 ## 2026-02-17
 
 ### Deprecated

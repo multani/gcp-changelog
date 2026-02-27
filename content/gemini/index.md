@@ -1,5 +1,24 @@
 # Gemini
 
+## 2026-02-25
+
+### Other
+
+
+
+### Bug fixes in IntelliJ
+
+Various bug fixes and minor product enhancements.
+
+### Other
+
+
+
+### Bug fixes in VS Code
+
+Various bug fixes and minor product enhancements.
+
+---
 ## 2026-02-24
 
 ### Finish changes feature in IntelliJ general availability

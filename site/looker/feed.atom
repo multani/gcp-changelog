@@ -45,6 +45,23 @@
     <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:3</id>
     <published>2026-02-17T00:00:00+00:00</published>
     <updated>2026-02-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/content-certification">content certification</a> feature, already available in preview, includes the following updates:</p>
+<ul>
+<li>The <a href="admin-panel-general-settings"><strong>Settings</strong></a> page in the <strong>General</strong> section of the <strong>Admin</strong> panel now includes options that let admins enable or disable content certification, set a custom URL for the certification process, and control whether certification is revoked when content is edited.</li>
+<li>LookML dashboards can now be certified.</li>
+<li>Looks and dashboards that are based on uncertified self-service Explores now display the "ungoverned" badge.</li>
+<li>Searching for content now includes the ability to sort content based on its certification status. (<strong>Note</strong>: This capability is not yet available. This item was modified on February 26, 2026.)</li>
+</ul>]]></content>
+    <summary>The content certification feature has been updated with new administrative controls, the ability to certify LookML dashboards, and enhanced search capabilities. Admins can now manage certification settings, and users will see an 'ungoverned' badge on content derived from uncertified Explores.</summary>
+    <title>Feature: Content Certification Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:4</id>
+    <published>2026-02-17T00:00:00+00:00</published>
+    <updated>2026-02-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in preview, LookML developers can unlock their Git branch in cases where their Git branch is locked as a result of another Git operation in progress or a previous Git operation failing. When the Git repository is locked, Looker displays the <strong>Unlock Branch</strong> option in the <a href="https://docs.cloud.google.com/looker/docs/git-command-reference#git_actions_panel"><strong>Git Actions</strong> panel</a> of the Looker IDE. In addition, if a LookML developer tries to commit a change on a locked Git branch, Looker displays a warning in the <strong>Commit</strong> dialog, along with an option to delete the Git lock. See the <a href="https://docs.cloud.google.com/looker/docs/version-control-and-deploying-changes#unlock-branch">Using version control and deploying</a> documentation page for details.</p>
 <p><strong>Note:</strong> This item was added on February 18, 2026.</p>]]></content>
     <summary>LookML developers can now unlock their Git branches in Looker, resolving issues caused by in-progress or failed Git operations. The 'Unlock Branch' option is available in the Git Actions panel, and warnings with an option to delete the lock appear when committing changes on a locked branch.</summary>
@@ -54,7 +71,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:announcement:4</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:announcement:5</id>
     <published>2026-02-17T00:00:00+00:00</published>
     <updated>2026-02-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The following features will roll out over a four-day period starting February 17, 2026.</p>]]></content>
@@ -65,7 +82,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:5</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:6</id>
     <published>2026-02-17T00:00:00+00:00</published>
     <updated>2026-02-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in preview, the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#embed_conversational_analytics"><strong>Embed Conversational Analytics</strong> Labs feature</a> is now available. When enabled, the Embed Conversational Analytics Labs feature lets you <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-embedding">embed Conversational Analytics conversations and agents in an iframe</a> like other Looker content types.</p>]]></content>
@@ -76,7 +93,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:6</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:7</id>
     <published>2026-02-17T00:00:00+00:00</published>
     <updated>2026-02-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in preview, dashboard editors can change the size and layout of dashboard tiles with more granularity. To enable this feature, a Looker admin must turn on the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#granular-dashboard-sizing"><strong>Granular Dashboard Sizing</strong> Labs feature</a>.</p>]]></content>
@@ -87,7 +104,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:7</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:8</id>
     <published>2026-02-17T00:00:00+00:00</published>
     <updated>2026-02-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Looker admins can grant the new <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#schedule_without_limit"><code>schedule_without_limit</code> permission</a> to restrict a user's ability to <a href="https://docs.cloud.google.com/looker/docs/delivering-looks-explores">deliver all data results from a Look or an Explore</a>. This permission must be combined with another Looker permission that permits delivering data.</p>
@@ -95,23 +112,6 @@
 <p><strong>Note:</strong> This item was added on February 19, 2026.</p>]]></content>
     <summary>Looker admins can now use the schedule_without_limit permission to control user access to delivering all data results from Looks or Explores. This permission will be automatically applied to existing roles with data delivery capabilities. Admins can manually remove it from specific users to restrict their ability to deliver all results.</summary>
     <title>Feature: New scheduling permission in Looker</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-02-17:feature:8</id>
-    <published>2026-02-17T00:00:00+00:00</published>
-    <updated>2026-02-17T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/content-certification">content certification</a> feature, already available in preview, includes the following updates:</p>
-<ul>
-<li>The <a href="admin-panel-general-settings"><strong>Settings</strong></a> page in the <strong>General</strong> section of the <strong>Admin</strong> panel now includes options that let admins enable or disable content certification, set a custom URL for the certification process, and control whether certification is revoked when content is edited.</li>
-<li>LookML dashboards can now be certified.</li>
-<li>Looks and dashboards that are based on uncertified self-service Explores now display the "ungoverned" badge.</li>
-<li>Searching for content now includes the ability to sort content based on its certification status.</li>
-</ul>]]></content>
-    <summary>We've enhanced our content certification feature with new admin controls, support for LookML dashboards, and improved search capabilities. Admins can now manage certification settings, and users can easily identify governed content.</summary>
-    <title>Feature: New Tools for Content Management</title>
   </entry>
   <entry>
     <author>

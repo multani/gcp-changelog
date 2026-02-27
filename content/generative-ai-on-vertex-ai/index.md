@@ -1,5 +1,21 @@
 # Generative AI on Vertex AI
 
+## 2026-02-26
+
+### Feature
+
+**Gemini 3.1 Flash Image**
+
+Gemini 3.1 Flash Image (`gemini-3.1-flash-image`) is available
+in [public preview](https://cloud.google.com/products#product-launch-stages).
+This release enables high-quality image generation with improved pricing and
+latency. We recommend using Gemini 3.1 Flash Image when generating
+images.
+
+For more information, see
+[Gemini 3.1 Flash Image](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-1-flash-image).
+
+---
 ## 2026-02-23
 
 ### Deprecated

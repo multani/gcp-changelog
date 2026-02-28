@@ -22,10 +22,6 @@
   + Fixed for line breaks in DAG packages import.
   + Improved error handling for target bucket access verification.
 
-### Announcement
-
-
-
 ### Release 6.3.4
 
 

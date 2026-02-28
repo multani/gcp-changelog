@@ -1,5 +1,15 @@
 # Network Intelligence Center
 
+## 2026-02-27
+
+### Feature
+
+[Connectivity Tests](https://docs.cloud.google.com/network-intelligence-center/docs/connectivity-tests/concepts/overview)
+evaluates [hybrid subnet routing](https://docs.cloud.google.com/vpc/docs/hybrid-subnets#routing), including
+routing for
+[unmatched resources in hybrid subnets](https://docs.cloud.google.com/vpc/docs/routes#hybrid-subnet-no-match).
+
+---
 ## 2026-02-25
 
 ### Feature

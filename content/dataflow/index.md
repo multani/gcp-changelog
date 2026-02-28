@@ -1,5 +1,16 @@
 # Dataflow
 
+## 2026-02-27
+
+### Feature
+
+Dataflow support for the [C4A machine
+series](https://docs.cloud.google.com/compute/docs/general-purpose-machines#c4a_series) of Arm processors is
+now generally available. Arm-based VMs are optimized for power efficiency and
+can provide improved price-performance for many workloads. For more information,
+see [Use Arm VMs on Dataflow](https://docs.cloud.google.com/dataflow/docs/guides/use-arm-vms).
+
+---
 ## 2026-02-02
 
 ### Feature

@@ -1,6 +1,48 @@
 {
   "name": "Cloud Composer",
   "entries": {
+    "2026-02-20": [
+      {
+        "kind": "Deprecated",
+        "content": "The following Cloud Composer versions and builds have reached their\n[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-3-airflow-2.9.3-build.16 and composer-2.11.3-\\*.",
+        "summary": {
+          "title": "Cloud Composer versions deprecated",
+          "summary": "Certain versions of Cloud Composer, specifically composer-3-airflow-2.9.3-build.16 and composer-2.11.3-*, are no longer supported. This deprecation impacts users who are running these older versions and should plan to migrate."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "The `enable_private_environment` boolean field in the Cloud Composer API is\ngoing to be deprecated in the future. When making direct calls to Cloud\nComposer API, use the new `networking_type` field instead.\n\nThis change affects only direct calls to the Cloud Composer API.\nGoogle Cloud CLI commands and the `google_composer_environment` resource in\nTerraform are not affected.",
+        "summary": {
+          "title": "Private environment field deprecated",
+          "summary": "The `enable_private_environment` field in the Cloud Composer API is being deprecated. Use the `networking_type` field for direct API calls. This change does not impact the Google Cloud CLI or Terraform resources."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Cloud Composer 3:\n\n* [composer-3-airflow-3.1.0-build.10](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-0-build-10)\n* [composer-3-airflow-2.10.5-build.27](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-27) (default)\n* [composer-3-airflow-2.9.3-build.47](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-47)",
+        "summary": {
+          "title": "New Airflow Builds Available",
+          "summary": "New Airflow builds are now available for Cloud Composer 3, including versions 3.1.0, 2.10.5 (default), and 2.9.3. These updates provide the latest Airflow features and improvements for your data pipelines."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [images](https://cloud.google.com/composer/docs/composer-versions#images-composer-2)\nare available in Cloud Composer 2:\n\n* [composer-2.16.5-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-16-5-airflow-2-10-5) (default)\n* [composer-2.16.5-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-16-5-airflow-2-9-3)",
+        "summary": {
+          "title": "New Composer Images Available",
+          "summary": "New images for Cloud Composer 2 are now available, including composer-2.16.5-airflow-2.10.5 which is the new default. These updates bring the latest Airflow versions to your environments."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Cloud Composer API now accepts the new\n`https://www.googleapis.com/auth/cloudcomposer` OAuth scope. This scope\nprovides access only to the Cloud Composer API and can't be used to call other\nGoogle Cloud APIs.",
+        "summary": {
+          "title": "New OAuth scope for Cloud Composer API",
+          "summary": "The Cloud Composer API now supports a new OAuth scope, `https://www.googleapis.com/auth/cloudcomposer`. This dedicated scope enhances security by granting access solely to the Cloud Composer API, preventing unintended access to other Google Cloud services."
+        }
+      }
+    ],
     "2026-02-16": [
       {
         "kind": "Change",

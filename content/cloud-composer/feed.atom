@@ -2,9 +2,85 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Composer</title>
   <subtitle>Changelog for Google Cloud product: Cloud Composer</subtitle>
-  <updated>2026-02-16T00:00:00+00:00</updated>
+  <updated>2026-02-20T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-composer</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-composer/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-02-20:deprecated:0</id>
+    <published>2026-02-20T00:00:00+00:00</published>
+    <updated>2026-02-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following Cloud Composer versions and builds have reached their
+<a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
+composer-3-airflow-2.9.3-build.16 and composer-2.11.3-*.</p>]]></content>
+    <summary>Certain versions of Cloud Composer, specifically composer-3-airflow-2.9.3-build.16 and composer-2.11.3-*, are no longer supported. This deprecation impacts users who are running these older versions and should plan to migrate.</summary>
+    <title>Deprecated: Cloud Composer versions deprecated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-02-20:change:1</id>
+    <published>2026-02-20T00:00:00+00:00</published>
+    <updated>2026-02-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <code>enable_private_environment</code> boolean field in the Cloud Composer API is
+going to be deprecated in the future. When making direct calls to Cloud
+Composer API, use the new <code>networking_type</code> field instead.</p>
+<p>This change affects only direct calls to the Cloud Composer API.
+Google Cloud CLI commands and the <code>google_composer_environment</code> resource in
+Terraform are not affected.</p>]]></content>
+    <summary>The `enable_private_environment` field in the Cloud Composer API is being deprecated. Use the `networking_type` field for direct API calls. This change does not impact the Google Cloud CLI or Terraform resources.</summary>
+    <title>Change: Private environment field deprecated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-02-20:change:2</id>
+    <published>2026-02-20T00:00:00+00:00</published>
+    <updated>2026-02-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
+are available in Cloud Composer 3:</p>
+<ul>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-0-build-10">composer-3-airflow-3.1.0-build.10</a></li>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-27">composer-3-airflow-2.10.5-build.27</a> (default)</li>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-47">composer-3-airflow-2.9.3-build.47</a></li>
+</ul>]]></content>
+    <summary>New Airflow builds are now available for Cloud Composer 3, including versions 3.1.0, 2.10.5 (default), and 2.9.3. These updates provide the latest Airflow features and improvements for your data pipelines.</summary>
+    <title>Change: New Airflow Builds Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-02-20:change:3</id>
+    <published>2026-02-20T00:00:00+00:00</published>
+    <updated>2026-02-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
+are available in Cloud Composer 2:</p>
+<ul>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-5-airflow-2-10-5">composer-2.16.5-airflow-2.10.5</a> (default)</li>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-5-airflow-2-9-3">composer-2.16.5-airflow-2.9.3</a></li>
+</ul>]]></content>
+    <summary>New images for Cloud Composer 2 are now available, including composer-2.16.5-airflow-2.10.5 which is the new default. These updates bring the latest Airflow versions to your environments.</summary>
+    <title>Change: New Composer Images Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-02-20:feature:4</id>
+    <published>2026-02-20T00:00:00+00:00</published>
+    <updated>2026-02-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud Composer API now accepts the new
+<code>https://www.googleapis.com/auth/cloudcomposer</code> OAuth scope. This scope
+provides access only to the Cloud Composer API and can't be used to call other
+Google Cloud APIs.</p>]]></content>
+    <summary>The Cloud Composer API now supports a new OAuth scope, `https://www.googleapis.com/auth/cloudcomposer`. This dedicated scope enhances security by granting access solely to the Cloud Composer API, preventing unintended access to other Google Cloud services.</summary>
+    <title>Feature: New OAuth scope for Cloud Composer API</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

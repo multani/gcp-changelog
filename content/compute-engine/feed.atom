@@ -2,9 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Compute Engine</title>
   <subtitle>Changelog for Google Cloud product: Compute Engine</subtitle>
-  <updated>2026-02-23T00:00:00+00:00</updated>
+  <updated>2026-03-02T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:compute-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/compute-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2026-03-02:feature:0</id>
+    <published>2026-03-02T00:00:00+00:00</published>
+    <updated>2026-03-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Generally available</strong>: You can apply compact placement policies to standalone
+Flex-start VMs. These policies let you colocate your standalone
+Flex-start VMs as close to each other as possible. Applying a
+compact placement policy minimizes network hops and improves the performance of
+latency-sensitive workloads. For more information, see
+<a href="https://docs.cloud.google.com/compute/docs/instances/placement-policies-overview#about-compact-policies">About compact placement policies</a>
+and
+<a href="https://docs.cloud.google.com/compute/docs/instances/about-flex-start-vms">About Flex-start VMs</a>.</p>]]></content>
+    <summary>You can now apply compact placement policies to standalone Flex-start VMs. This feature allows you to colocate VMs closely, reducing network hops and improving performance for latency-sensitive workloads.</summary>
+    <title>Feature: Compact Placement for Flex-start VMs</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -73,9 +91,16 @@ For more information about controlling MCP use, see <a href="https://docs.cloud.
     <id>urn:github:multani:gcp-changelog:compute-engine:2026-02-12:feature:0</id>
     <published>2026-02-12T00:00:00+00:00</published>
     <updated>2026-02-12T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Generally available</strong>: You can use instance flexibility to improve resource availability when creating VMs in bulk in a region. With instance flexibility, you specify one or more suitable machine types for your workload. Compute Engine then provisions VMs from the list of machine types based on capacity and quota availability.</p>
-<p>For more information, see <a href="https://docs.cloud.google.com/compute/docs/instances/multiple/about-instance-flexibility-for-bulk-vms">About instance flexibility for VMs created in bulk</a> and <a href="https://docs.cloud.google.com/compute/docs/instances/multiple/create-in-bulk-with-instance-flexibility">Create VMs in bulk with instance flexibility</a>.</p>]]></content>
-    <summary>You can now use instance flexibility to enhance resource availability when creating virtual machines in bulk within a region. This feature allows you to specify preferred machine types, and Compute Engine will provision VMs based on available capacity and quota.</summary>
+    <content type="html"><![CDATA[<p><strong>Generally available</strong>: You can use instance flexibility to improve resource
+availability when creating VMs in bulk in a region. With instance flexibility,
+you specify one or more suitable machine types for your workload.
+Compute Engine then provisions VMs from the list of machine types based
+on capacity and quota availability.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/compute/docs/instances/multiple/about-instance-flexibility-for-bulk-vms">About instance flexibility for VMs created in bulk</a>
+and
+<a href="https://docs.cloud.google.com/compute/docs/instances/multiple/create-in-bulk-with-instance-flexibility">Create VMs in bulk with instance flexibility</a>.</p>]]></content>
+    <summary>You can now use instance flexibility to enhance resource availability when creating virtual machines in bulk within a region. This feature allows you to specify preferred machine types, and Compute Engine will provision VMs based on availability, optimizing your resource allocation.</summary>
     <title>Feature: Improve VM availability with instance flexibility</title>
   </entry>
   <entry>
@@ -90,14 +115,14 @@ group of disks at the same point in time, ensuring data consistency across
 multiple disks. Consistency groups of instant snapshots offer the following
 benefits:</p>
 <ul>
-<li><strong>Simultaneous backups</strong>: create instant snapshots for all disks in a consistency
-  group with a single operation.</li>
-<li><strong>Bulk restoration</strong>: restore multiple disks at once from a consistency group of
-  instant snapshots.</li>
+<li><strong>Simultaneous backups</strong>: create instant snapshots for all disks in a
+  consistency group with a single operation.</li>
+<li><strong>Bulk restoration</strong>: restore multiple disks at once from a consistency group
+  of instant snapshots.</li>
 </ul>
 <p>To learn more, see
 <a href="https://docs.cloud.google.com/compute/docs/disks/instant-snapshots">About instant snapshots</a>.</p>]]></content>
-    <summary>Back up and restore multiple disks simultaneously with instant snapshot consistency groups. This feature ensures data consistency across disks with single operations for both backup and restoration.</summary>
+    <summary>Back up and restore multiple disks simultaneously with instant snapshot consistency groups. This feature ensures data consistency across disks and simplifies backup and recovery operations.</summary>
     <title>Feature: Instant Snapshot Consistency Groups</title>
   </entry>
   <entry>

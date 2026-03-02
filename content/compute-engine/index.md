@@ -1,5 +1,19 @@
 # Compute Engine
 
+## 2026-03-02
+
+### Feature
+
+**Generally available**: You can apply compact placement policies to standalone
+Flex-start VMs. These policies let you colocate your standalone
+Flex-start VMs as close to each other as possible. Applying a
+compact placement policy minimizes network hops and improves the performance of
+latency-sensitive workloads. For more information, see
+[About compact placement policies](https://docs.cloud.google.com/compute/docs/instances/placement-policies-overview#about-compact-policies)
+and
+[About Flex-start VMs](https://docs.cloud.google.com/compute/docs/instances/about-flex-start-vms).
+
+---
 ## 2026-02-23
 
 ### Feature
@@ -49,9 +63,16 @@ For more information about controlling MCP use, see [Control MCP use with IAM](h
 
 ### Feature
 
-**Generally available**: You can use instance flexibility to improve resource availability when creating VMs in bulk in a region. With instance flexibility, you specify one or more suitable machine types for your workload. Compute Engine then provisions VMs from the list of machine types based on capacity and quota availability.
+**Generally available**: You can use instance flexibility to improve resource
+availability when creating VMs in bulk in a region. With instance flexibility,
+you specify one or more suitable machine types for your workload.
+Compute Engine then provisions VMs from the list of machine types based
+on capacity and quota availability.
 
-For more information, see [About instance flexibility for VMs created in bulk](https://docs.cloud.google.com/compute/docs/instances/multiple/about-instance-flexibility-for-bulk-vms) and [Create VMs in bulk with instance flexibility](https://docs.cloud.google.com/compute/docs/instances/multiple/create-in-bulk-with-instance-flexibility).
+For more information, see
+[About instance flexibility for VMs created in bulk](https://docs.cloud.google.com/compute/docs/instances/multiple/about-instance-flexibility-for-bulk-vms)
+and
+[Create VMs in bulk with instance flexibility](https://docs.cloud.google.com/compute/docs/instances/multiple/create-in-bulk-with-instance-flexibility).
 
 ---
 ## 2026-02-10
@@ -63,10 +84,10 @@ group of disks at the same point in time, ensuring data consistency across
 multiple disks. Consistency groups of instant snapshots offer the following
 benefits:
 
-* **Simultaneous backups**: create instant snapshots for all disks in a consistency
-  group with a single operation.
-* **Bulk restoration**: restore multiple disks at once from a consistency group of
-  instant snapshots.
+* **Simultaneous backups**: create instant snapshots for all disks in a
+  consistency group with a single operation.
+* **Bulk restoration**: restore multiple disks at once from a consistency group
+  of instant snapshots.
 
 To learn more, see
 [About instant snapshots](https://docs.cloud.google.com/compute/docs/disks/instant-snapshots).

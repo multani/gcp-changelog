@@ -2340,6 +2340,16 @@
 
 
 <h1 id="google-secops">Google SecOps</h1>
+<h2 id="2026-03-02">2026-03-02</h2>
+<h3 id="deprecated">Deprecated</h3>
+<p><code>Chronicle.soarAnalyst</code>, <code>chronicle.soarViewer</code>, <code>chronicle.soarEngineer</code> roles in Cloud IAM are being deprecated and will be fully removed in six months. Although these roles were accessible and can historically be assigned to users in Cloud IAM, they were non-operational. SOAR roles were managed through Permission Groups and with its migration to Cloud IAM as part of the <a href="https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp#permissions-iam">SOAR Migration to Google Cloud</a>, the preceding roles are being deprecated.</p>
+<p>To maintain seamless access and adhere to the principle of least privilege, transition your SOAR users to the following options:</p>
+<ul>
+<li>Automatically convert your SOAR Permission Groups to custom roles in IAM through <a href="https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp#permissions-iam">self-service migration</a>.</li>
+<li>Pre-defined roles: Utilize the enhanced Google SecOps <a href="https://docs.cloud.google.com/iam/docs/roles-permissions/chronicle#google-security-operations-roles">pre-defined roles</a> now available in Cloud IAM.</li>
+<li>Custom Roles: Create tailored roles with <a href="https://docs.cloud.google.com/iam/docs/roles-permissions/chronicle#google-security-operations-permissions">specific permissions</a> to meet your organization's unique security requirements.</li>
+</ul>
+<hr />
 <h2 id="2026-02-25">2026-02-25</h2>
 <h3 id="feature">Feature</h3>
 <p><strong>Added support for Google Cloud VPC Service Controls</strong></p>
@@ -2414,7 +2424,7 @@ that protect the resources and data of services that you explicitly specify. For
 <h2 id="2026-02-17">2026-02-17</h2>
 <h3 id="change_1">Change</h3>
 <p>After March 17, 2026, when you enable Google SecOps, the Google SecOps MCP server is automatically enabled.</p>
-<h3 id="deprecated">Deprecated</h3>
+<h3 id="deprecated_1">Deprecated</h3>
 <p>Control of MCP use with organization policies is deprecated. After March 17, 2026, organization policies that use the <code>gcp.managed.allowedMCPServices</code> constraint won't work, and you can control MCP use with IAM deny policies. For more information about controlling MCP use, see <a href="https://docs.cloud.google.com/mcp/control-mcp-use-iam">Control MCP use with IAM</a>.</p>
 <hr />
 <h2 id="2026-02-12">2026-02-12</h2>
@@ -2507,7 +2517,7 @@ without losing unmatched events.</p>
 <p>Google SecOps now lets you share custom sets of columns in the <strong>Events</strong> table for
 consistent analysis across teams.</p>
 <p>For more details, see <a href="https://cloud.google.com/chronicle/docs/investigation/udm-search">Search for events and alerts</a></p>
-<h3 id="deprecated_1">Deprecated</h3>
+<h3 id="deprecated_2">Deprecated</h3>
 <p><strong>Mute an IoC deprecated</strong></p>
 <p>The Mute an IoC feature is deprecated, and the <strong>IOC details</strong> page no longer displays the <strong>Mute</strong> indicator.</p>
 <h3 id="announcement_3">Announcement</h3>
@@ -3526,7 +3536,7 @@ The following rules have been added to the rulepack:</p>
 <p>This enhanced parser is available as a <strong>Release Candidate</strong> for the next 2 months. To opt in and begin testing it, go to <strong>SIEM Settings &gt; Parsers</strong>. We encourage you to try it out and evaluate the improvements before it becomes the default.</p>
 <hr />
 <h2 id="2025-10-15">2025-10-15</h2>
-<h3 id="deprecated_2">Deprecated</h3>
+<h3 id="deprecated_3">Deprecated</h3>
 <p>The Netskope v1 API feed has been deprecated by Netskope. If you are using the Netskope REST API v1 with Google SecOps, you must switch to the Netskope REST API v2.</p>
 <hr />
 <h2 id="2025-10-09">2025-10-09</h2>
@@ -4781,6 +4791,9 @@ sources directly within a single query.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-secops">Google SecOps</a></li>
+          <li class="nav-item">
+            <a href="#2026-03-02" class="nav-link">2026-03-02</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-02-25" class="nav-link">2026-02-25</a>
           </li>

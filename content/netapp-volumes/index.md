@@ -1,5 +1,14 @@
 # NetApp Volumes
 
+## 2026-03-02
+
+### Feature
+
+Google Cloud NetApp Volumes supports Producer VPC spokes with Network
+Connectivity Center, a generally available feature. For more information, see
+[Connect additional networks with NCC](https://docs.cloud.google.com/netapp/volumes/docs/get-started/quickstarts/connect-additional-networks#connect-additional-networks-with-ncc).
+
+---
 ## 2026-02-25
 
 ### Feature

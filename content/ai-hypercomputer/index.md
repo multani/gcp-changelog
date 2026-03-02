@@ -1,5 +1,17 @@
 # AI Hypercomputer
 
+## 2026-03-02
+
+### Feature
+
+**Generally available**: You can apply compact placement policies to standalone
+Flex-start VMs. These policies let you colocate your standalone
+Flex-start VMs in adjacent blocks or in the same block. Applying
+a compact placement policy gives you more control over VM placement and helps
+minimize network latency for AI/ML workloads. For more information, see
+[Use Flex-start](https://docs.cloud.google.com/ai-hypercomputer/docs/consumption-models#flex-start).
+
+---
 ## 2025-12-12
 
 ### Issue

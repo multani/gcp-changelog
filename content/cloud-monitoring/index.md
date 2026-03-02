@@ -1,5 +1,20 @@
 # Cloud Monitoring
 
+## 2026-03-02
+
+### Feature
+
+The SQL queries issued by **Observability Analytics** can now use a
+system-defined variable which resolves to the project ID. If a dashboard
+template uses the project ID variable, then you don't need to update
+the SQL query after installing the template.
+
+For more information, see the following documents:
+
+* [Google Cloud console: Charts with SQL queries](https://docs.cloud.google.com/monitoring/dashboards/filter-permanent#sql)
+* [API: Charts with SQL queries](https://docs.cloud.google.com/monitoring/dashboards/api-dashboard#sql)
+
+---
 ## 2026-02-06
 
 ### Feature

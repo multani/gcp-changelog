@@ -1,6 +1,16 @@
 {
   "name": "Google SecOps",
   "entries": {
+    "2026-03-02": [
+      {
+        "kind": "Deprecated",
+        "content": "`Chronicle.soarAnalyst`, `chronicle.soarViewer`, `chronicle.soarEngineer` roles in Cloud IAM are being deprecated and will be fully removed in six months. Although these roles were accessible and can historically be assigned to users in Cloud IAM, they were non-operational. SOAR roles were managed through Permission Groups and with its migration to Cloud IAM as part of the [SOAR Migration to Google Cloud](https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp#permissions-iam), the preceding roles are being deprecated.\n\nTo maintain seamless access and adhere to the principle of least privilege, transition your SOAR users to the following options:\n\n* Automatically convert your SOAR Permission Groups to custom roles in IAM through [self-service migration](https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp#permissions-iam).\n* Pre-defined roles: Utilize the enhanced Google SecOps [pre-defined roles](https://docs.cloud.google.com/iam/docs/roles-permissions/chronicle#google-security-operations-roles) now available in Cloud IAM.\n* Custom Roles: Create tailored roles with [specific permissions](https://docs.cloud.google.com/iam/docs/roles-permissions/chronicle#google-security-operations-permissions) to meet your organization's unique security requirements.",
+        "summary": {
+          "title": "SOAR roles deprecated",
+          "summary": "The Chronicle SOAR roles (soarAnalyst, soarViewer, soarEngineer) in Cloud IAM are being deprecated and will be removed in six months. These roles were non-operational and are being replaced by new pre-defined and custom roles in Cloud IAM for better access management."
+        }
+      }
+    ],
     "2026-02-25": [
       {
         "kind": "Feature",

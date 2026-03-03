@@ -1,5 +1,12 @@
 # Cloud Deploy
 
+## 2026-03-02
+
+### Feature
+
+Cloud Deploy is now available in the following region: asia-southeast3 (Bangkok)
+
+---
 ## 2026-02-11
 
 ### Feature

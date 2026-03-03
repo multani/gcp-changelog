@@ -1,5 +1,30 @@
 # Cloud Workstations
 
+## 2026-02-19
+
+### Feature
+
+You can configure [Hyperdisk Balanced High Availability](https://docs.cloud.google.com/compute/docs/disks/hyperdisks)
+for persistent directories directly in the Google Cloud console.
+This option is available in the **Disk type** menu when you create or
+update workstation configurations for supported machine series.
+
+Additionally, [C3 machine types](https://docs.cloud.google.com/workstations/docs/available-machine-types)
+are available for selection in the Google Cloud console. For the
+C3 machine series, which only supports Hyperdisk, the console automatically
+selects Hyperdisk as the disk type.
+
+---
+## 2026-02-18
+
+### Feature
+
+Clicking **Launch** for a workstation in the Google Cloud console opens a page
+that automatically starts the workstation and connects to it. You can bookmark
+this page to restart and access your workstation. To start a workstation
+without connecting, select **Start** in the **Launch** drop-down menu.
+
+---
 ## 2026-02-06
 
 ### Feature

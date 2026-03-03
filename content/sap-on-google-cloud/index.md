@@ -1,5 +1,19 @@
 # SAP on Google Cloud
 
+## 2026-02-27
+
+### Change
+
+**SAP NetWeaver certification: CPU platform update for N2D machine types**
+
+The CPU platform AMD EPYC Rome is no longer available for use with N2D machine types.
+The minimum CPU platform for N2D machine types is AMD EPYC Milan.
+
+For more information about the N2D machine types that you can use to run SAP
+NetWeaver workloads on Google Cloud, see
+[N2D general-purpose machine types](https://docs.cloud.google.com/sap/docs/certifications-sap-apps#sap-certified-vms-gen-purpose-n2d).
+
+---
 ## 2026-02-18
 
 ### Announcement

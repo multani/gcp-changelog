@@ -1,6 +1,16 @@
 {
   "name": "AlloyDB for PostgreSQL",
   "entries": {
+    "2026-03-03": [
+      {
+        "kind": "Feature",
+        "content": "The following AlloyDB AI features are now generally available ([GA](https://cloud.google.com/products#product-launch-stages)):\n\n* [Auto vector embeddings](https://docs.cloud.google.com/alloydb/docs/ai/generate-manage-auto-embeddings-for-tables) provide a scalable, automated solution for managing the lifecycle of vector embeddings for large-scale datasets, eliminating the need for manual reindexing or custom scripts. This feature keeps embeddings in sync with transactional data and now supports incremental refresh in `manual` mode, ensuring that embeddings are only generated for new or updated rows. Additionally, you can perform incremental table refreshes or migration up to 100x faster than traditional row-by-row processing using `bulk` mode, improving efficiency for semantic search and Retrieval Augmented Generation (RAG).\n* [AI functions](https://docs.cloud.google.com/alloydb/docs/ai/ai-query-engine-landing) integrate LLMs like Gemini to bring 'world knowledge' to your AlloyDB data and incorporate advanced semantic search and ranking capabilities directly into your SQL workflows. This feature includes out-of-the-box functions for filtering (`ai.if`), semantic ranking (`ai.rank`), generation (`ai.generate`), and forecasting (`ai.forecast`).\n* Experience higher performance in AlloyDB AI by utilizing array-based AI functions. You can perform batch processing of natural language prompts directly within your SQL queries, significantly improving efficiency for large-scale AI operations. For more information, see [Perform intelligent SQL queries using AI functions](https://docs.cloud.google.com/alloydb/docs/ai/evaluate-semantic-queries-ai-operators).",
+        "summary": {
+          "title": "New AI Features for AlloyDB Now Available",
+          "summary": "AlloyDB now offers generally available AI features including auto vector embeddings for efficient data management and AI functions that integrate LLMs directly into SQL workflows. These enhancements improve performance for semantic search, RAG, and large-scale AI operations."
+        }
+      }
+    ],
     "2026-02-23": [
       {
         "kind": "Feature",

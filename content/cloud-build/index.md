@@ -1,5 +1,12 @@
 # Cloud Build
 
+## 2026-03-03
+
+### Fixed
+
+The authorization vulnerability [CVE-2026-3136](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3136) was fixed.
+
+---
 ## 2026-02-12
 
 ### Change

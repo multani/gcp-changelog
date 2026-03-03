@@ -1,5 +1,12 @@
 # Looker
 
+## 2026-03-02
+
+### Feature
+
+You can now [manage backups](https://docs.cloud.google.com/looker/docs/looker-core-backup-restore) for Looker (Google Cloud core) instances in the Google Cloud console. From the new **Backups** tab on the instance details page, you can create manual backups, and you can view, restore, or delete both automatic and manual backups. Previously, these operations were only available through the gcloud command-line tool.
+
+---
 ## 2026-02-17
 
 ### Feature
@@ -114,12 +121,6 @@ An issue has been fixed where Looker could return a 500 error if a user with one
 
 Now available in preview, Looker has full support for connections with [AlloyDB for PostgreSQL](https://docs.cloud.google.com/looker/docs/db-config-alloydb). When you [create a connection](https://docs.cloud.google.com/looker/docs/connecting-to-your-db) in Looker, you can now select "Google Cloud AlloyDB for PostgreSQL" from the Dialect drop-down menu. This update does not affect existing AlloyDB connections that were created using the PostgreSQL 9.5+ option in the Dialect menu.
 
-### Feature
-
-The [Increase SQL Runner Schema and Table Limit Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#sql-runner-schema) is now available. This Labs feature increases the total number of schemas that can be returned to SQL Runner to 12,000. Enabling this feature will increase the table name display response time if your instance has access to a large number of schemas and tables.
-
-**Note:** This item was added on February 20, 2026.
-
 ### Fixed
 
 An issue has been fixed where switching a visualization type from Table to Single Value could carry over unwanted conditional formatting. This feature now performs as expected.
@@ -131,6 +132,12 @@ An issue has been fixed where conditional formatting no longer appeared on certa
 ### Change
 
 The Looker Action Hub has been updated to support newer API versions for Google Ads (from v19 to v22) and Facebook Custom Audiences (from v22 to v24).
+
+### Feature
+
+The **Increase SQL Runner Schema and Table Limit** Labs feature is now available in private preview.
+
+**Note:** This item was added on February 20, 2026 and updated on March 2, 2026.
 
 ### Fixed
 

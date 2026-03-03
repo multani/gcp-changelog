@@ -1,6 +1,16 @@
 {
   "name": "Looker",
   "entries": {
+    "2026-03-02": [
+      {
+        "kind": "Feature",
+        "content": "You can now [manage backups](https://docs.cloud.google.com/looker/docs/looker-core-backup-restore) for Looker (Google Cloud core) instances in the Google Cloud console. From the new **Backups** tab on the instance details page, you can create manual backups, and you can view, restore, or delete both automatic and manual backups. Previously, these operations were only available through the gcloud command-line tool.",
+        "summary": {
+          "title": "Manage Looker Backups in Google Cloud Console",
+          "summary": "You can now manage backups for Looker instances directly within the Google Cloud console. The new Backups tab allows you to create, view, restore, and delete both automatic and manual backups, simplifying instance management."
+        }
+      }
+    ],
     "2026-02-17": [
       {
         "kind": "Feature",
@@ -197,14 +207,6 @@
         }
       },
       {
-        "kind": "Feature",
-        "content": "The [Increase SQL Runner Schema and Table Limit Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#sql-runner-schema) is now available. This Labs feature increases the total number of schemas that can be returned to SQL Runner to 12,000. Enabling this feature will increase the table name display response time if your instance has access to a large number of schemas and tables.\n\n**Note:** This item was added on February 20, 2026.",
-        "summary": {
-          "title": "SQL Runner Schema and Table Limit Increased",
-          "summary": "The SQL Runner schema and table limit has been increased to 12,000 schemas. This Labs feature may impact response time for table name display if your instance has a large number of schemas and tables."
-        }
-      },
-      {
         "kind": "Fixed",
         "content": "An issue has been fixed where switching a visualization type from Table to Single Value could carry over unwanted conditional formatting. This feature now performs as expected.",
         "summary": {
@@ -226,6 +228,14 @@
         "summary": {
           "title": "Looker Action Hub API Updates",
           "summary": "The Looker Action Hub now supports newer API versions for Google Ads and Facebook Custom Audiences. This update ensures compatibility and access to the latest features for these integrations."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The **Increase SQL Runner Schema and Table Limit** Labs feature is now available in private preview.\n\n**Note:** This item was added on February 20, 2026 and updated on March 2, 2026.",
+        "summary": {
+          "title": "SQL Runner Schema and Table Limit Increased",
+          "summary": "The Labs feature to increase the SQL Runner schema and table limit is now available in private preview. This enhancement allows for greater flexibility when querying larger datasets."
         }
       },
       {

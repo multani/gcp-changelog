@@ -1,5 +1,12 @@
 # Access Transparency
 
+## 2026-02-23
+
+### Feature
+
+Secure Web Proxy is generally available [(GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-02-19
 
 ### Feature

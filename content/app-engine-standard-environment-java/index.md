@@ -1,5 +1,12 @@
 # App Engine standard environment Java
 
+## 2026-03-02
+
+### Feature
+
+Support for [migrating from the legacy Mail API to an SMTP-based email service](https://docs.cloud.google.com/appengine/migration-center/standard/java/mail-to-smtp), such as SendGrid, Mailgun, or Mailjet is in [General Availability](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-02-12
 
 ### Feature

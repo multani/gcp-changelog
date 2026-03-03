@@ -1,5 +1,12 @@
 # Cloud Run
 
+## 2026-02-27
+
+### Feature
+
+Support for [PHP 8.5 runtime](https://docs.cloud.google.com/run/docs/runtime-support#php) is in [General Availability](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-02-24
 
 ### Feature

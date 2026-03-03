@@ -1,5 +1,17 @@
 # Dataproc
 
+## 2026-02-27
+
+### Announcement
+
+New [Serverless for Apache Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
+
+* 1.2.72
+* 2.2.72
+* 2.3.25
+* 3.0.9
+
+---
 ## 2026-02-24
 
 ### Announcement
@@ -14,6 +26,18 @@ New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.goog
 ### Fixed
 
 Fixed an issue that could cause `gsutil` failures on clusters using custom images built from new base images. This problem occurred when the gcloud `core/universe_domain` property was not set in the build environment, resulting in a malformed `/etc/boto.cfg`. The image build process now ensures a correct default configuration, restoring proper Google Cloud Storage connectivity.
+
+---
+## 2026-02-20
+
+### Announcement
+
+New [Serverless for Apache Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
+
+* 1.2.71
+* 2.2.71
+* 2.3.24
+* 3.0.8
 
 ---
 ## 2026-02-15

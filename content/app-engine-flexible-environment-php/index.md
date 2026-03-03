@@ -1,5 +1,12 @@
 # App Engine flexible environment PHP
 
+## 2026-02-27
+
+### Feature
+
+Support for the [PHP 8.5 runtime](https://docs.cloud.google.com/appengine/docs/flexible/php/runtime) is in [General Availability](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-02-02
 
 ### Feature

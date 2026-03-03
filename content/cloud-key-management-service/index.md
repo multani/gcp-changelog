@@ -1,5 +1,17 @@
 # Cloud Key Management Service
 
+## 2026-03-02
+
+### Feature
+
+Cloud KMS deletion of keys and key versions is generally available. Keys and key
+versions must meet deletion criteria before they can be deleted. Names of
+deleted keys can't be reused.
+
+For more information, including deletion criteria, see [Delete Cloud KMS
+resources](https://docs.cloud.google.com/kms/docs/delete-kms-resources).
+
+---
 ## 2026-02-11
 
 ### Feature

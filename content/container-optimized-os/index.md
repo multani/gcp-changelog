@@ -1,5 +1,626 @@
 # Container Optimized OS
 
+## 2026-02-24
+
+### Change
+
+
+
+### cos-dev-133-19566-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.74](https://cos.googlesource.com/third_party/kernel/+/ec8a48be0774f726990a93e2afead08ee16b3f2c ) | v27.5.1 | v2.2.1 | [See List](https://storage.googleapis.com/cos-tools/19566.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+
+
+### cos-beta-129-19506-0-32
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.67](https://cos.googlesource.com/third_party/kernel/+/db611b456979827c0f71190bd2fd9868cec57510 ) | v27.5.1 | v2.2.0 | [See List](https://storage.googleapis.com/cos-tools/19506.0.32/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Enabled buffer overflow detection for kernel str/mem functions.
+
+### Fixed
+
+Upgraded net-misc/rsync to v3.4.1-r2.
+
+### Fixed
+
+Upgraded net-misc/socat to v1.8.1.0-r1.
+
+### Fixed
+
+Added support for NVIDIA driver v580.126.09-grid for NVIDIA\_RTX\_PRO\_6000 GPU type.
+
+### Security
+
+Fixed CVE-2025-40147 in the Linux kernel.
+
+### Change
+
+Updated the Linux kernel to v6.12.74.
+
+### Change
+
+Made it so that /run is mounted as noexec.
+
+### Security
+
+Fixed CVE-2025-15281 and CVE-2026-0861 in sys-libs/glibc.
+
+### Security
+
+Updated dev-libs/libxml2 to version 2.14.6. This resolves CVE-2025-6021.
+
+### Fixed
+
+Upgraded sys-process/procps to v4.0.6.
+
+### Security
+
+Fixed KCTF-e3f000f in the Linux kernel.
+
+### Security
+
+Upgraded net-misc/curl to version 8.18.0. This fixes CVE-2025-13034, CVE-2025-14017, CVE-2025-14524, CVE-2025-14819, CVE-2025-15079, and CVE-2025-15224.
+
+### Feature
+
+Added support for 590.44.01 and 590.48.01 NVIDIA driver for NVIDIA\_RTX\_PRO\_6000
+
+### Security
+
+Fixed KCTF-f8db647 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-0915 in sys-apps/glibc.
+
+### Fixed
+
+Upgraded net-libs/libnetfilter\_conntrack to v1.1.1.
+
+### Security
+
+Updated dev-libs/openssl to v3.5.5. This resolves CVE-2025-15467.
+
+### Fixed
+
+Upgraded app-admin/oslogin to v20260129.00.
+
+### Fixed
+
+Upgraded app-admin/google-guest-agent to v20260121.00.
+
+### Fixed
+
+Upgraded sys-apps/less to v692.
+
+### Fixed
+
+Upgraded sys-apps/gentoo-functions to v1.7.6.
+
+### Change
+
+Upgraded containerd to v2.2.1.
+
+### Fixed
+
+Upgraded app-admin/oslogin to v20260128.00.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.51.2.
+
+### Feature
+
+Added support for NVIDIA driver v535.288.01, v570.211.01 and v580.126.09.
+
+### Security
+
+Fixed CVE-2026-23168 in the Linux kernel.
+
+### Fixed
+
+Added support for NVIDIA driver v580.126.09-grid for NVIDIA\_RTX\_PRO\_6000 GPU type.
+
+### Security
+
+Fixed CVE-2026-23219 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68725 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23205 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68365 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23156 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23199 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23214 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23173 in the Linux kernel.
+
+### Change
+
+Upgraded net-misc/curl to version 8.18.0. This fixes CVE-2025-13034, CVE-2025-14017, CVE-2025-14524, CVE-2025-14819, CVE-2025-15079, and CVE-2025-15224.
+
+### Security
+
+Fixed CVE-2026-23200 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23119 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23204 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-e3f000f in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23215 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23179 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23112 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23177 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-15281 and CVE-2026-0861 in sys-libs/glibc.
+
+### Security
+
+Fixed CVE-2026-23159 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71225 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23212 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23148 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23198 in the Linux kernel.
+
+### Feature
+
+Added support for 590.44.01 and 590.48.01 NVIDIA driver for NVIDIA\_RTX\_PRO\_6000
+
+### Security
+
+Fixed CVE-2026-23216 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23161 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68358 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23113 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23193 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23124 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23154 in the Linux kernel.
+
+### Change
+
+
+
+### cos-125-19216-220-24
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.68](https://cos.googlesource.com/third_party/kernel/+/53881952835848fbf440de93baf50cf22f1e4785 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.220.24/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-23168 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-e3f000f in the Linux kernel.
+
+### Fixed
+
+Added support for NVIDIA driver v580.126.09-grid for NVIDIA\_RTX\_PRO\_6000 GPU type.
+
+### Security
+
+Fixed CVE-2026-23179 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23205 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-60753 in libarchive.
+
+### Fixed
+
+Upgraded app-admin/sosreport to v4.11.0.
+
+### Security
+
+Fixed CVE-2026-23156 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23216 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23173 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23112 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23200 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23198 in the Linux kernel.
+
+### Fixed
+
+Upgraded net-misc/rsync to v3.4.1-r2.
+
+### Change
+
+Fixed CVE-2026-23177 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23214 in the Linux kernel.
+
+### Fixed
+
+Upgraded net-misc/socat to v1.8.1.1.
+
+### Security
+
+Fixed CVE-2026-23193 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23219 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-apps/less to v692.
+
+### Security
+
+Fixed CVE-2025-47912, CVE-2025-58185, CVE-2025-58187, CVE-2025-58188, CVE-2025-58189, CVE-2025-61723, CVE-2025-61724, CVE-2025-61726, and CVE-2025-61728 in dev-lang/go.
+
+### Security
+
+Upgraded net-misc/curl to version 8.18.0. This fixes CVE-2025-10148, CVE-2025-10966, CVE-2025-13034, CVE-2025-14017, CVE-2025-14524, CVE-2025-14819, CVE-2025-15079, and CVE-2025-15224.
+
+### Security
+
+Fixed CVE-2025-15281 and CVE-2026-0861 in sys-libs/glibc.
+
+### Security
+
+Fixed CVE-2025-71225 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23199 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23159 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23148 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23212 in the Linux kernel.
+
+### Feature
+
+Added support for 590.44.01 and 590.48.01 NVIDIA driver for NVIDIA\_RTX\_PRO\_6000
+
+### Security
+
+Fixed CVE-2026-23161 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-f41c5d1 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23154 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23215 in the Linux kernel.
+
+### Change
+
+
+
+### cos-113-18244-582-11
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.161](https://cos.googlesource.com/third_party/kernel/+/5c4d6d97af15aedf3768f1e1cef2cdb5a5735ccc ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.582.11/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-23110 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23069 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23105 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23003 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23095 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-f41c5d1 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23038 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23103 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23085 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22999 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23097 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23011 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68725 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23005 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22998 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23099 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23001 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-f8db647 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23107 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23102 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23010 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38232 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2023-54285 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-15281 and CVE-2026-0861 in sys-libs/glibc.
+
+### Security
+
+Fixed CVE-2026-23025 in the Linux kernel.
+
+### Change
+
+
+
+### cos-117-18613-534-15
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.123](https://cos.googlesource.com/third_party/kernel/+/62eaa6fec6fa6b8cc2b4146e32ae7139de26e9a4 ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.534.15/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-23112 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-apps/less to v692.
+
+### Security
+
+Fixed CVE-2026-23198 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-f41c5d1 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-60753 in libarchive.
+
+### Security
+
+Fixed CVE-2026-23176 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-6075 in python.
+
+### Security
+
+Fixed CVE-2026-23200 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23179 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23193 in the Linux kernel.
+
+### Fixed
+
+Upgraded net-misc/socat to v1.8.1.0-r1.
+
+### Security
+
+Fixed CVE-2025-15281 and CVE-2026-0861 in sys-libs/glibc.
+
+### Security
+
+Fixed CVE-2026-23205 in the Linux kernel.
+
+### Security
+
+Upgraded net-misc/curl to version 8.18.0. This fixes CVE-2025-10148, CVE-2025-10966, CVE-2025-13034, CVE-2025-14017, CVE-2025-14524, CVE-2025-14819, CVE-2025-15079, and CVE-2025-15224.
+
+### Security
+
+Fixed CVE-2026-23209 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23204 in the Linux kernel.
+
+### Change
+
+
+
+### cos-121-18867-381-1
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.122](https://cos.googlesource.com/third_party/kernel/+/648b5918d64d7a9788baa271ec7cb32d9b73c857 ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.381.1/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Upgraded sys-apps/less to v692.
+
+### Security
+
+Fixed CVE-2026-23156 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23168 in the Linux kernel.
+
+### Fixed
+
+Upgraded net-misc/socat to v1.8.1.0-r1.
+
+### Security
+
+Upgraded net-misc/curl to version 8.18.0. This fixes CVE-2025-10148, CVE-2025-10966, CVE-2025-13034, CVE-2025-14017, CVE-2025-14524, CVE-2025-14819, CVE-2025-15079, and CVE-2025-15224.
+
+### Security
+
+Fixed CVE-2026-23159 in the Linux kernel.
+
+---
 ## 2026-02-20
 
 ### Change

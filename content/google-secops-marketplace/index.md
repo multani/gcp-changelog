@@ -1,5 +1,105 @@
 # Google SecOps Marketplace
 
+## 2026-03-03
+
+### Feature
+
+**Akamai**: Version 2.0
+
+* The following new action has been added:
+
+  + **Activate Client List**
+
+### Feature
+
+**Siemplify**: Version 103.0
+
+* The following new job has been added:
+
+  + **Response Integration & Connector Upgrade**
+
+### Change
+
+**Microsoft Graph Mail**: Version 36.0
+
+* Updated folder handling in the following actions:
+
+  + **Forward Email**
+  + **Save Email To Case**
+  + **Send Email**
+  + **Send Email HTML**
+  + **Send Thread Reply**
+  + **Send Vote Email**
+  + **Wait For Email From User**
+  + **Wait For Vote Email Results**
+* Updated folder handling in the following connector:
+
+  + **Microsoft Graph Mail Connector**
+
+### Change
+
+**Google Chronicle**: Version 78.0
+
+* Updated raw log data processing in the following actions:
+
+  + **Get Detection Details**
+  + **Execute UDM Query**
+
+### Change
+
+**Microsoft Graph Mail Delegated**: Version 13.0
+
+* Updated folder handling in the following actions:
+
+  + **Forward Email**
+  + **Save Email To Case**
+  + **Send Email**
+  + **Send Email HTML**
+  + **Send Thread Reply**
+  + **Send Vote Email**
+  + **Wait For Email From User**
+  + **Wait For Vote Email Results**
+* Updated folder handling in the following connector:
+
+  + **Microsoft Graph Mail Delegated Connector**
+
+### Change
+
+**AWS GuardDuty**: Version 9.0
+
+* Updated severity handling in the following connector:
+
+  + **AWS GuardDuty - Findings Connector**
+
+### Change
+
+**Google Security Command Center**: Version 15.0
+
+* Updated the processing of mute states in the following action:
+
+  + **List Asset Vulnerabilities**
+
+### Change
+
+**CrowdStrike Falcon**: Version 71.0
+
+* Added the ability to define an expiration date for IOCs to the following
+  action:
+
+  + **Upload IOCs**
+* Added support for hidden hosts in the following action:
+
+  + **Get Host Information**
+
+### Change
+
+**Splunk**: Version 61.0
+
+* Updated input handling in the following action:
+
+  + **Update Notable Events**
+
+---
 ## 2026-02-25
 
 ### Feature

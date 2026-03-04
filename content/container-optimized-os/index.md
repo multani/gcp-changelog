@@ -1,5 +1,67 @@
 # Container Optimized OS
 
+## 2026-02-27
+
+### Change
+
+
+
+### cos-121-18867-381-14
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.122](https://cos.googlesource.com/third_party/kernel/+/c68efb7356143c761a7b8f1e048e0236ecb23d94 ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.381.14/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-23212 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23112 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-e3f000f in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-60753 in libarchive.
+
+### Security
+
+Fixed CVE-2026-23198 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23179 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23176 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23205 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23204 in the Linux kernel.
+
+### Change
+
+Added support for the Lustre 2.14.0\_p246 drivers.
+
+### Security
+
+Fixed CVE-2026-23200 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23193 in the Linux kernel.
+
+---
 ## 2026-02-24
 
 ### Change

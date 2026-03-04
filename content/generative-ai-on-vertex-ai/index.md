@@ -2,6 +2,25 @@
 
 ## 2026-03-03
 
+### Deprecated
+
+**Video generation preview endpoints deprecation**
+
+The following table describes video generation endpoints that are deprecated and
+their replacements. We recommend updating your model endpoints before April 2,
+2026, to avoid service disruption.
+
+| Discontinued endpoints | Recommended endpoint migration |
+| --- | --- |
+| `veo-3.0-generate-preview` | `veo-3.0-generate-001` |
+| `veo-3.0-fast-generate-preview` | `veo-3.0-fast-generate-preview` |
+| `veo-2.0-generate-preview` | `veo-2.0-generate-001` |
+| `veo-2.0-generate-exp` | `veo-2.0-generate-001` |
+| `veo-001-preview-0815` | `veo-2.0-generate-001` |
+| `veo-001-preview` | `veo-2.0-generate-001` |
+| `veo-3.1-generate-preview` | `veo-3.1-generate-001` |
+| `veo-3.1-fast-generate-preview` | `veo-3.1-fast-generate-001` |
+
 ### Feature
 
 **Gemini 3.1 Flash-Lite**

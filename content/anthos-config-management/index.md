@@ -1,5 +1,12 @@
 # Anthos Config Management
 
+## 2026-02-26
+
+### Change
+
+Addressed multiple Common Vulnerabilities and Exposures (CVEs) by updating dependencies.
+
+---
 ## 2026-01-29
 
 ### Breaking

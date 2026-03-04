@@ -15,6 +15,15 @@ video generation** setting. For more information about feature controls, see
 [Manage features on the web
 app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
 
+### Feature
+
+**Gemini Enterprise: Export assistant responses to Google Docs and Google Sheets**
+
+You can export chat responses from the assistant to Google Docs. You can also
+export tabular and CSV data from a response to Google Sheets.
+
+For more information, see [Export to Google Docs and Google Sheets](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-chat#export-responses).
+
 ---
 ## 2026-02-26
 

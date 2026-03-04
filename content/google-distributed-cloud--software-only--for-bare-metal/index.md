@@ -1,5 +1,50 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-03-03
+
+### Announcement
+
+In Google Distributed Cloud (software only) for bare metal versions 1.33.0 and later,
+`bmctl` operations can fail to stream logs from pods to the local workspace,
+causing empty or incomplete logs in `bmctl-workspace/{CLUSTER NAME}/log directory`.
+
+This issue occurred because a recent Kubernetes library upgrade introduced a
+required context parameter for pod log streaming. The bmctl tool was
+incorrectly passing a context with a 10-second timeout, causing the log streamer
+to terminate prematurely for pods with long lifecycles, such as Ansible runner
+jobs.
+
+This issue is resolved in the following versions:
+
+* 1.33.500 and later
+* 1.34.100 and later
+* 1.35.0 and later
+
+If you use an affected version and require the logs for a failed or ongoing
+operation, check logs using `kubectl`. If the cluster is accessible, you can
+manually retrieve logs directly from the relevant pods using the `kubectl logs`
+command.
+
+It is recommended to upgrade to a fixed version to ensure that all `bmctl`
+operation logs are correctly captured in your local workspace for troubleshooting
+and auditing purposes
+
+### Announcement
+
+Google Distributed Cloud (software only) for bare metal 1.33.500-gke.63 is now available for
+download. To upgrade, see [Upgrade clusters](how-to/upgrade).
+Google Distributed Cloud for bare metal
+1.33.500-gke.63 runs on Kubernetes v1.33.5-gke.2200.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release of Google Distributed Cloud for bare metal.
+
+---
 ## 2026-02-13
 
 ### Feature

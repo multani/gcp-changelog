@@ -1,5 +1,57 @@
 # Guest Environment
 
+## 2026-03-03
+
+### Feature
+
+Version `20260228.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent) is
+now available for Debian 11, AlmaLinux 8, CentOS Stream 8, Oracle Linux 8,
+Red Hat Enterprise Linux 8, and Rock Linux 8. To review the features and fixes
+included in version `20260228.00` of the guest agent, see the
+[March 2, 2026 release notes](https://docs.cloud.google.com/compute/docs/images/guest-environment/release-notes#March_2_2026).
+
+---
+## 2026-03-02
+
+### Feature
+
+Version `20260228.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent) is
+now available for Debian 13, AlmaLinux 10, CentOS Stream 10, Oracle Linux 10,
+Red Hat Enterprise Linux 10, and Rock Linux 10. This version introduces the
+following features:
+
+* Supports bootstrapping credentials for the HTTPS endpoint for the metadata
+  server by default. For more information about the HTTPS metadata server
+  endpoint, see [HTTPS metadata server endpoints](https://docs.cloud.google.com/compute/docs/metadata/overview#https-mds).
+* Includes a cleanup job that runs once a day and each time the guest agent manager
+  service initializes. This cleanup job ensures that leftover plugin files and
+  states are properly cleaned up.
+* Supports dynamically starting locally installed extensions. This feature is
+  disabled by default, but it can be toggled by setting the
+  `enable_local_plugins` flag to `true` in the guest agent configuration file.
+
+### Fixed
+
+Version `20260228.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)
+includes the following fixes:
+
+* The guest agent is now able to add users to the Administrator group on
+  different locales on Windows.
+* The guest agent now signals itself ready only after the network setup
+  has fully completed. This should prevent the guest agent from hitting race
+  conditions with custom routing solutions that depend on the guest agent
+  service.
+* The guest agent no longer spams metadata SSH key errors when a key is
+  incorrectly formatted.
+* The guest agent now ensures proper reconnection of the primary NIC after a
+  configuration rollback, specifically when `NetworkManager` is active. This
+  resolves an issue where the NIC might not come back online in such
+  scenarios.
+* The guest agent now applies the value of the following configuration flags
+  correctly: `Daemons.network_daemon` and
+  `NetworkInterfaces.vlan_setup_enabled`.
+
+---
 ## 2025-12-18
 
 ### Fixed

@@ -1,5 +1,21 @@
 # Gemini Enterprise
 
+## 2026-03-03
+
+### Feature
+
+**Gemini Enterprise: Use Veo 3.1 for video generation**
+
+Use Veo 3.1 to generate videos in the Gemini Enterprise web app. Veo 3.1
+is replacing Veo 3.0 for video generation. For more information, see
+[Generate a video](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-analyze#generate_a_video).
+
+To use this feature, a Gemini Enterprise administrator must turn on **Enable
+video generation** setting. For more information about feature controls, see
+[Manage features on the web
+app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
+
+---
 ## 2026-02-26
 
 ### Feature

@@ -1,5 +1,19 @@
 # Google Cloud Managed Service for Apache Kafka
 
+## 2026-03-03
+
+### Feature
+
+You can now use the
+[Managed Service for Apache Kafka remote MCP server](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/use-managed-service-for-apache-kafka-mcp)
+to enable LLM agents to create and manage your Kafka clusters and Kafka Connect
+clusters, as well as create and manage related resources such as topics,
+consumer groups, connectors, and ACLs.
+
+This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2025-12-10
 
 ### Feature

@@ -1,5 +1,21 @@
 # Cloud Database Migration Service
 
+## 2026-02-27
+
+### Feature
+
+Database Migration Service for heterogeneous migrations now supports
+`RENAME-`, `MOVE-`, `CASE_HANDLING`
+and `GENERATE_MISSING_PK` directives to provide improved control
+over converting Oracle and SQL Server objects to PostgreSQL. For more
+information, see the page relevant for your migration scenario:
+
+* [Supported conversion directives for Oracle to Cloud SQL for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/oracle-to-postgresql/about-conversion-workspaces#conversion-directives-reference)
+* [Supported conversion directives for Oracle to AlloyDB for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/oracle-to-alloydb/about-conversion-workspaces#conversion-directives-reference)
+* [Supported conversion directives for SQL Server to Cloud SQL for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/sqlserver-to-csql-pgsql/about-conversion-workspaces#conversion-directives-reference)
+* [Supported conversion directives for SQL Server to AlloyDB for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/sqlserver-to-alloydb/about-conversion-workspaces#conversion-directives-reference)
+
+---
 ## 2025-11-18
 
 ### Feature

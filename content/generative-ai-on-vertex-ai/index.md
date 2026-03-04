@@ -1,5 +1,20 @@
 # Generative AI on Vertex AI
 
+## 2026-03-03
+
+### Feature
+
+**Gemini 3.1 Flash-Lite**
+
+Gemini 3.1 Flash-Lite (`gemini-3.1-flash-lite-preview`) is
+available in [public preview](https://cloud.google.com/products#product-launch-stages).
+This release is our most cost-efficient Gemini model and is
+optimized for low latency use cases for high-volume, cost-sensitive LLM traffic.
+
+For more information, see
+[Gemini 3.1 Flash-Lite](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-1-flash-lite).
+
+---
 ## 2026-02-26
 
 ### Feature

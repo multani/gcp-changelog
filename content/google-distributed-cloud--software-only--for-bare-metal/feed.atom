@@ -2,9 +2,60 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Distributed Cloud (software only) for bare metal</title>
   <subtitle>Changelog for Google Cloud product: Google Distributed Cloud (software only) for bare metal</subtitle>
-  <updated>2026-02-13T00:00:00+00:00</updated>
+  <updated>2026-03-03T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-distributed-cloud--software-only--for-bare-metal/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2026-03-03:announcement:0</id>
+    <published>2026-03-03T00:00:00+00:00</published>
+    <updated>2026-03-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>In Google Distributed Cloud (software only) for bare metal versions 1.33.0 and later,
+<code>bmctl</code> operations can fail to stream logs from pods to the local workspace,
+causing empty or incomplete logs in <code>bmctl-workspace/{CLUSTER NAME}/log directory</code>.</p>
+<p>This issue occurred because a recent Kubernetes library upgrade introduced a
+required context parameter for pod log streaming. The bmctl tool was
+incorrectly passing a context with a 10-second timeout, causing the log streamer
+to terminate prematurely for pods with long lifecycles, such as Ansible runner
+jobs.</p>
+<p>This issue is resolved in the following versions:</p>
+<ul>
+<li>1.33.500 and later</li>
+<li>1.34.100 and later</li>
+<li>1.35.0 and later</li>
+</ul>
+<p>If you use an affected version and require the logs for a failed or ongoing
+operation, check logs using <code>kubectl</code>. If the cluster is accessible, you can
+manually retrieve logs directly from the relevant pods using the <code>kubectl logs</code>
+command.</p>
+<p>It is recommended to upgrade to a fixed version to ensure that all <code>bmctl</code>
+operation logs are correctly captured in your local workspace for troubleshooting
+and auditing purposes</p>]]></content>
+    <summary>An issue with bmctl log streaming in Google Distributed Cloud bare metal versions 1.33.0 and later has been resolved. This fix ensures that logs from pods are correctly captured in the local workspace, improving troubleshooting capabilities. Upgrade to a fixed version for reliable log collection.</summary>
+    <title>Announcement: Update bmctl for improved log streaming</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2026-03-03:announcement:1</id>
+    <published>2026-03-03T00:00:00+00:00</published>
+    <updated>2026-03-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for bare metal 1.33.500-gke.63 is now available for
+download. To upgrade, see <a href="how-to/upgrade">Upgrade clusters</a>.
+Google Distributed Cloud for bare metal
+1.33.500-gke.63 runs on Kubernetes v1.33.5-gke.2200.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.</p>
+<p>If you use a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release of Google Distributed Cloud for bare metal.</p>]]></content>
+    <summary>Version 1.33.500-gke.63 of Google Distributed Cloud for bare metal is now available for download. This release runs on Kubernetes v1.33.5-gke.2200. Please note that it may take 7-14 days for this version to be available through GKE On-Prem API clients. Additionally, verify storage vendor compatibility with this release.</summary>
+    <title>Announcement: New GDC Bare Metal Release Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

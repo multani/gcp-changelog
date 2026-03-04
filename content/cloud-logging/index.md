@@ -19,7 +19,7 @@ For more information, see the following documents:
 
 ### Feature
 
-You can use the [Cloud Logging API MCP server](https://docs.cloud.google.com/logging/docs/reference/v2/mcp)
+You can use the [Cloud Logging API MCP server](https://docs.cloud.google.com/logging/docs/reference/v2_mcp/mcp)
 to let agents and AI applications interact with your log entries.
 This feature is in [Preview](https://docs.cloud.google.com/products#product-launch-stages).
 

@@ -1,5 +1,12 @@
 # App Engine flexible environment Ruby
 
+## 2026-03-03
+
+### Feature
+
+Support for [Ruby 4.0 runtime](https://docs.cloud.google.com/appengine/docs/flexible/ruby/runtime) is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2025-08-07
 
 ### Feature

@@ -10,6 +10,15 @@ for the following integration:
 * [Google Security Operations](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_secops)
 
 ---
+## 2026-02-17
+
+### Feature
+
+[Preview stage](https://cloud.google.com/products#product-launch-stages) support for the following integration:
+
+* [Vector Search 2.0](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_vector_search_2)
+
+---
 ## 2026-02-11
 
 ### Feature

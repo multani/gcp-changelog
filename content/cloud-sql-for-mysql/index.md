@@ -1,5 +1,13 @@
 # Cloud SQL for MySQL
 
+## 2026-03-02
+
+### Feature
+
+Cloud SQL for MySQL 8.4.7 is upgraded to MySQL 8.4.8. For more information,
+see the [MySQL 8.4.8 Release Notes](https://dev.mysql.com/doc/relnotes/mysql/8.4/en/news-8-4-8.html).
+
+---
 ## 2026-02-24
 
 ### Feature

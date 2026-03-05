@@ -1,5 +1,16 @@
 # Cloud Healthcare API
 
+## 2026-02-08
+
+### Feature
+
+**General availability:** The FHIR bulk-delete operation is available.
+You can use this long-running operation to delete or purge multiple FHIR resources
+based on filters like resource type and last updated time. This feature supports
+deleting current versions, historical versions, or both. For more information, see
+[Bulk-deleting FHIR resources](https://cloud.google.com/healthcare-api/docs/how-tos/fhir-bulk-delete).
+
+---
 ## 2025-12-22
 
 ### Feature

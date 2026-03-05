@@ -1,5 +1,15 @@
 # Virtual Private Cloud
 
+## 2026-02-26
+
+### Feature
+
+You can create Compute Engine instances that have multiple network interfaces
+in the same VPC network. This feature is available in **Preview**. For more
+information, see
+[Multiple network interfaces in the same VPC network](https://docs.cloud.google.com/vpc/docs/multiple-interfaces-concepts#same-vpc).
+
+---
 ## 2026-02-10
 
 ### Feature

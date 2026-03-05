@@ -1,5 +1,18 @@
 # Gemini Enterprise
 
+## 2026-03-04
+
+### Feature
+
+**Gemini Enterprise: Chat with files in the Microsoft Outlook and Box connectors**
+
+Gemini Enterprise can analyze content and generate answers from email
+attachments in the Microsoft Outlook connector and from CSV, PDF, PPTX, and XLSX
+files in the Box connector, removing the need to upload these files to the
+Gemini Enterprise assistant. For more information, see
+[Chat with files in connectors](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-chat#chat_with_files_in_connectors).
+
+---
 ## 2026-03-03
 
 ### Feature

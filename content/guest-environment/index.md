@@ -1,5 +1,15 @@
 # Guest Environment
 
+## 2026-03-04
+
+### Feature
+
+Version `20260228.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent) is
+now available for Windows. To review the features and fixes included in version
+`20260228.00` of the guest agent, see the
+[March 2, 2026 release notes](https://docs.cloud.google.com/compute/docs/images/guest-environment/release-notes#March_2_2026).
+
+---
 ## 2026-03-03
 
 ### Feature

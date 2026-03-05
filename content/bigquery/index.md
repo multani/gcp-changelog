@@ -1,5 +1,16 @@
 # BigQuery
 
+## 2026-03-04
+
+### Feature
+
+Monitor dataset replication latency and network egress bytes in Cloud Monitoring
+for BigQuery [cross-region replication](https://docs.cloud.google.com/bigquery/docs/data-replication#monitor-replication)
+and [managed disaster recovery](https://docs.cloud.google.com/bigquery/docs/managed-disaster-recovery#monitor-replication).
+These metrics are [generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
+
+---
 ## 2026-02-25
 
 ### Change

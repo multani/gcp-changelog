@@ -1,5 +1,21 @@
 # Compute Engine
 
+## 2026-03-04
+
+### Feature
+
+**Generally available**: You can use managed constraints with Organization Policy Service
+for centralized, programmatic control of your Compute Engine resources.
+Managed constraints replace legacy `compute.*` constraints and are identifiable
+by the `compute.managed.*` prefix. They also include built-in support for safe
+rollout tools like Policy Simulator and dry run mode.
+
+For more information, see
+[Organization policies for Compute Engine](https://docs.cloud.google.com/compute/docs/access/organization-policies)
+and
+[Managed constraints](https://docs.cloud.google.com/compute/docs/access/managed-constraints).
+
+---
 ## 2026-03-02
 
 ### Feature

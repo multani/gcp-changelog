@@ -1,6 +1,24 @@
 {
   "name": "Google SecOps SIEM",
   "entries": {
+    "2026-03-04": [
+      {
+        "kind": "Announcement",
+        "content": "**Manage parser versions**\n\nThe [Manage parser versions](https://docs.cloud.google.com/chronicle/docs/release-notes#October_07_2025) feature is now in General Availability.\n\nFor more information, see [Manage prebuilt parser versions](https://docs.cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage-parser-versions).",
+        "summary": {
+          "title": "Parser Version Management Now GA",
+          "summary": "The parser version management feature has reached General Availability. This allows for better control over how parser updates are applied to your security data."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "**Manage parser versions**\n\nThe [Manage parser versions](https://docs.cloud.google.com/chronicle/docs/secops/release-notes#October_07_2025) feature is now in General Availability.\n\nFor more information, see [Manage prebuilt parser versions](https://docs.cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage-parser-versions).",
+        "summary": {
+          "title": "Parser Version Management Now Available",
+          "summary": "The Manage parser versions feature has reached General Availability, allowing for better control over parser updates. This enhancement provides users with more flexibility in managing their security data parsing."
+        }
+      }
+    ],
     "2026-03-02": [
       {
         "kind": "Deprecated",
@@ -8,6 +26,14 @@
         "summary": {
           "title": "SOAR roles deprecated",
           "summary": "The chronicle.soarAnalyst, chronicle.soarViewer, and chronicle.soarEngineer roles in Cloud IAM are being deprecated and will be removed in six months. These roles were non-operational and are being replaced by enhanced Google SecOps pre-defined roles or custom roles."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**New Unified rules interface**\n\nThis feature is currently in Preview.\n\nGoogle SecOps has launched a unified rules interface that\nbrings custom and curated rule management into a single, cohesive workflow.\nThis update optimizes detection engineering with a redesigned dashboard, an\nadvanced rule editor, and expanded API capabilities to streamline rule\ndeployment and troubleshooting.\n\n**Key enhancements**\n\n**Developer and IDE enhancements**:\n\n* **Centralized management:** A unified, single dashboard lets you browse, filter, and\n  manage both custom and curated rules from one location. You can also update\n  configurations for multiple rules simultaneously.\n* **Curated rule transparency:** You can now view the YARA-L text of\n  curated rules, search directly within their logic, and independently toggle\n  individual rule statuses without needing to alter the parent rule pack\n  deployment.\n* **Integrated IDE experience:** The rule editor now features an enhanced IDE\n  experience with inline error highlights, UDM field definitions on hover.\n\n**Expanded API and structured search**:\n\nThe Rules API and dashboard have been upgraded to support deeper programmatic\naccess and complex filtering:\n\n* **Robust search syntax:** Both the UI and API now support AIP-160 compliant\n  structured search. You can filter rules by text, tags, author, and execution\n  state.\n* **Batch modifications:** The `rules.modifyRules` method now supports\n  non-atomic batch updates, letting you change live status, alerting status, tags,\n  and archive status across multiple rules in a single API request.\n* **Advanced resource views:** The `rules.list` method introduces `CONFIG_ONLY`\n  and `TRENDS` views. These views provide expanded deployment information, access\n  to curated rule resources, and larger page sizes (up to 5000 results) for\n  efficient querying.\n\nFor details, see [Manage unified rules](https://docs.cloud.google.com/chronicle/docs/detection/unified-rules/get-started).",
+        "summary": {
+          "title": "Unified Rules Interface Launched",
+          "summary": "A new unified interface simplifies the management of custom and curated detection rules. This feature offers a redesigned dashboard, an advanced editor, and expanded API capabilities for streamlined rule deployment and troubleshooting."
         }
       }
     ],

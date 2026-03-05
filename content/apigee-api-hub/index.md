@@ -1,5 +1,16 @@
 # Apigee API hub
 
+## 2026-03-04
+
+### Feature
+
+**gcloud CLI support for API hub**
+
+The `gcloud CLI` now supports Apigee API hub, allowing you to manage your organization's API catalog, versions, and lifecycle metadata directly from the command line.
+
+For more information see [gcloud CLI for API hub](https://docs.cloud.google.com/apigee/docs/apihub/gcloud-cli-apihub).
+
+---
 ## 2026-02-23
 
 ### Feature

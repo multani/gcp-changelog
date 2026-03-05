@@ -10,6 +10,13 @@ and [managed disaster recovery](https://docs.cloud.google.com/bigquery/docs/mana
 These metrics are [generally available](https://cloud.google.com/products/#product-launch-stages)
 (GA).
 
+### Feature
+
+You can now use [continuous queries to stream BigQuery data to Spanner in real
+time](https://docs.cloud.google.com/bigquery/docs/continuous-queries#spanner-example). This feature is
+[generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
+
 ---
 ## 2026-02-25
 

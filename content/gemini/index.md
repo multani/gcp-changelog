@@ -2,19 +2,11 @@
 
 ## 2026-03-04
 
-### Feature
-
-
-
 ### File outline and finish changes features in VS Code general availability
 
 The [file outline](https://docs.cloud.google.com/gemini/docs/codeassist/chat-gemini#outline)
 and [finish changes](https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#finish-changes)
 features are now available in VS Code and generally available (GA).
-
-### Feature
-
-
 
 ### File outline and finish changes features in VS Code general availability
 

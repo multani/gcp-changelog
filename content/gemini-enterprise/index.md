@@ -4,6 +4,23 @@
 
 ### Feature
 
+**Gemini Enterprise: Data connector for GitHub (Public preview)**
+
+You can connect GitHub data stores to Gemini Enterprise. For more information, see [Connect GitHub](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/github)
+
+**Gemini Enterprise: Support for new actions (Public preview)**
+
+New actions are available for the following data stores:
+
+* [Confluence Data Center](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/confluence-dc)
+* [Monday](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/monday)
+* [Shopify](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/shopify)
+* [Zendesk](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/zendesk)
+
+For a list of actions for these data stores, see [Supported actions](https://docs.cloud.google.com/gemini/enterprise/docs/connect-third-party-data-source#supported_actions).
+
+### Feature
+
 **Gemini Enterprise: Chat with files in the Microsoft Outlook and Box connectors**
 
 Gemini Enterprise can analyze content and generate answers from email
@@ -42,9 +59,9 @@ For more information, see [Export to Google Docs and Google Sheets](https://docs
 
 ### Feature
 
-**Gemini Enterprise: Support for new data sources (Public preview)**
+**Gemini Enterprise: Support for new data stores (Public preview)**
 
-The following data sources are supported in Gemini Enterprise:
+The following data stores are supported in Gemini Enterprise:
 
 * [HubSpot](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/hubspot)
 * [Monday](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/monday)

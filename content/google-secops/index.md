@@ -1,5 +1,16 @@
 # Google SecOps
 
+## 2026-03-04
+
+### Announcement
+
+**Manage parser versions**
+
+The [Manage parser versions](https://docs.cloud.google.com/chronicle/docs/secops/release-notes#October_07_2025) feature is now in General Availability.
+
+For more information, see [Manage prebuilt parser versions](https://docs.cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage-parser-versions).
+
+---
 ## 2026-03-02
 
 ### Deprecated
@@ -11,6 +22,50 @@ To maintain seamless access and adhere to the principle of least privilege, tran
 * Automatically convert your SOAR Permission Groups to custom roles in IAM through [self-service migration](https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp#permissions-iam).
 * Pre-defined roles: Utilize the enhanced Google SecOps [pre-defined roles](https://docs.cloud.google.com/iam/docs/roles-permissions/chronicle#google-security-operations-roles) now available in Cloud IAM.
 * Custom Roles: Create tailored roles with [specific permissions](https://docs.cloud.google.com/iam/docs/roles-permissions/chronicle#google-security-operations-permissions) to meet your organization's unique security requirements.
+
+### Feature
+
+**New Unified rules interface**
+
+This feature is currently in Preview.
+
+Google SecOps has launched a unified rules interface that
+brings custom and curated rule management into a single, cohesive workflow.
+This update optimizes detection engineering with a redesigned dashboard, an
+advanced rule editor, and expanded API capabilities to streamline rule
+deployment and troubleshooting.
+
+**Key enhancements**
+
+**Developer and IDE enhancements**:
+
+* **Centralized management:** A unified, single dashboard lets you browse, filter, and
+  manage both custom and curated rules from one location. You can also update
+  configurations for multiple rules simultaneously.
+* **Curated rule transparency:** You can now view the YARA-L text of
+  curated rules, search directly within their logic, and independently toggle
+  individual rule statuses without needing to alter the parent rule pack
+  deployment.
+* **Integrated IDE experience:** The rule editor now features an enhanced IDE
+  experience with inline error highlights, UDM field definitions on hover.
+
+**Expanded API and structured search**:
+
+The Rules API and dashboard have been upgraded to support deeper programmatic
+access and complex filtering:
+
+* **Robust search syntax:** Both the UI and API now support AIP-160 compliant
+  structured search. You can filter rules by text, tags, author, and execution
+  state.
+* **Batch modifications:** The `rules.modifyRules` method now supports
+  non-atomic batch updates, letting you change live status, alerting status, tags,
+  and archive status across multiple rules in a single API request.
+* **Advanced resource views:** The `rules.list` method introduces `CONFIG_ONLY`
+  and `TRENDS` views. These views provide expanded deployment information, access
+  to curated rule resources, and larger page sizes (up to 5000 results) for
+  efficient querying.
+
+For details, see [Manage unified rules](https://docs.cloud.google.com/chronicle/docs/detection/unified-rules/get-started).
 
 ---
 ## 2026-02-25

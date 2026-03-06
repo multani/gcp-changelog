@@ -1,5 +1,21 @@
 # Cluster Toolkit
 
+## 2026-02-12
+
+### Feature
+
+Cluster Toolkit version v1.82.0 is available. This release adds
+an A4X JBVM blueprint that is designed to provision and deploy a group of
+virtual machines (VMs) for machine learning ning workloads. This release
+includes a ZIP archive of binaries to the release that improves the install
+process. This release removes Terraform validation for machine types. The API
+validation now handles this Terraform validation because custom machine types
+are not supported.
+
+For more information about this release, see the [Release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5233).
+
+---
 ## 2026-02-05
 
 ### Feature

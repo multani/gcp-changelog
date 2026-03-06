@@ -1,5 +1,16 @@
 # Identity and Access Management
 
+## 2026-03-03
+
+### Feature
+
+[Service
+account principal sets](https://docs.cloud.google.com/iam/docs/principals-overview#service-account) are [generally
+available](https://cloud.google.com/products#product-launch-stages). You can use service account principal sets to reference all
+service accounts or service agents in a project, folder, or organization when
+writing allow policies, deny policies, and access policies.
+
+---
 ## 2026-02-27
 
 ### Feature

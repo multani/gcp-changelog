@@ -1,5 +1,27 @@
 # Network Intelligence Center
 
+## 2026-03-05
+
+### Feature
+
+The following features are available in
+[Connectivity Tests](https://docs.cloud.google.com/network-intelligence-center/docs/connectivity-tests/concepts/overview):
+
+* **Google Kubernetes Engine (GKE) Pod as an endpoint**: you can specify a GKE
+  Pod as the source or destination endpoint for a connectivity test.
+* **IP masquerading evaluation**: Connectivity Tests evaluates whether IP
+  masquerading is applied to traffic sent from a GKE Pod endpoint.
+  If IP masquerading is applied, the translated address is used for
+  the test.
+* **Network policy evaluation**: for GKE clusters where
+  [FQDN network policies](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/fqdn-network-policies)
+  aren't enabled, Connectivity Tests evaluates GKE network policies that apply
+  to a GKE Pod endpoint.
+
+For more information, see
+[Considerations for Google Kubernetes Engine](https://docs.cloud.google.com/network-intelligence-center/docs/connectivity-tests/concepts/overview.md#gke-supported-features).
+
+---
 ## 2026-02-27
 
 ### Feature

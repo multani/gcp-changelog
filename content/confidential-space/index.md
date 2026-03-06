@@ -4,7 +4,7 @@
 
 ### Announcement
 
-A new Confidential Space image (260100) is available.
+New Confidential Space images (260100, 260200) are available.
 
 ---
 ## 2025-12-16

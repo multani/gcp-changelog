@@ -1,16 +1,6 @@
 {
   "name": "Google SecOps SIEM",
   "entries": {
-    "2026-03-05": [
-      {
-        "kind": "Announcement",
-        "content": "**Google Agentic SOC Trial**\n\nThere will be a no-cost trial for the Google SecOps Triage Investigative Agent\n(TIN) from April 1, 2026 to June 30, 2026. TIN is an agentic AI feature for Google\nSecOps that helps automate security investigations. For more information about\nthe trial, see [Google Agentic SOC Trial details](https://docs.cloud.google.com/chronicle/docs/agentic-soc/trial).\nFor more information about TIN, see\n[Use Triage and Investigation Agent to investigate alerts](https://docs.cloud.google.com/chronicle/docs/secops/triage-investigation-agent).",
-        "summary": {
-          "title": "Agentic SOC Trial Available",
-          "summary": "A no-cost trial for the SecOps Triage Investigative Agent (TIN) will be available from April 1 to June 30, 2026. This AI-powered feature automates security investigations within Google SecOps. More details about the trial and TIN can be found in the provided documentation."
-        }
-      }
-    ],
     "2026-03-04": [
       {
         "kind": "Announcement",
@@ -18,6 +8,102 @@
         "summary": {
           "title": "Parser Version Management Now GA",
           "summary": "The parser version management feature has reached General Availability. This allows for better control over how parser updates are applied to your security data."
+        }
+      }
+    ],
+    "2026-02-25": [
+      {
+        "kind": "Feature",
+        "content": "**Added support for Google Cloud VPC Service Controls**\n\nThis feature is currently in Preview.\n\n[VPC Service Controls](https://docs.cloud.google.com/chronicle/docs/secops/vpcsc-for-secops) helps protect against accidental or targeted action\nby external entities or insider entities, which helps to minimize unwarranted\ndata exfiltration risks from Google Cloud services. You can use VPC Service Controls to create perimeters\nthat protect the resources and data of services that you explicitly specify. For more information, see [Overview of VPC Service Controls](https://docs.cloud.google.com/vpc-service-controls/docs/overview).",
+        "summary": {
+          "title": "Enhanced Security for Your Data",
+          "summary": "We've added support for VPC Service Controls, a feature that helps protect your data from unauthorized access and exfiltration. This enhancement allows you to create security perimeters around your resources, strengthening your overall data security posture."
+        }
+      }
+    ],
+    "2026-02-24": [
+      {
+        "kind": "Feature",
+        "content": "**New: cross joins in multi-stage queries**\n\nYou can now use cross joins in YARA-L 2.0 multi-stage queries let you compare individual UDM event data against aggregated statistics calculated in previous YARA-L stages. They are supported in:\n\n* Search\n* Dashboards\n\nFor more information, see [Cross joins in multi-stage queries](https://docs.cloud.google.com/chronicle/docs/investigation/multi-stage-yaral#cross-joins).",
+        "summary": {
+          "title": "Cross Joins Now Available in Multi-Stage YARA-L",
+          "summary": "Cross joins are now supported in YARA-L 2.0 multi-stage queries, enabling comparisons between individual event data and aggregated statistics from previous stages. This feature enhances analysis capabilities in both Search and Dashboards."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**RBAC for ingestion metrics**\n\nAdministrators can now use RBAC for ingestion metrics to restrict visibility of system health data, such as ingestion volume, errors, and throughput, based on a user's business scope.\n\nThe **Data Ingestion and Health** dashboard now uses Data Access scopes. When a scoped user loads the dashboard, the system automatically filters metrics to show only data that matches their assigned labels: Namespace, Log Type, and Ingestion Source.\n\nFor more information, see [Ingestion metrics](https://docs.cloud.google.com/chronicle/docs/reports/native-dashboards#ingestion_metrics).",
+        "summary": {
+          "title": "RBAC for ingestion metrics",
+          "summary": "Control visibility of system health data with RBAC for ingestion metrics. Administrators can now restrict access to metrics like ingestion volume and errors based on user business scope."
+        }
+      }
+    ],
+    "2026-02-23": [
+      {
+        "kind": "Announcement",
+        "content": "**New parser documentation now available**\n\nNew parser documentation is available to help you ingest and normalize logs from the following sources:\n\n* [Collect Big Switch BigCloudFabric logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/bigswitch-bcf)\n* [Collect BMC AMI Defender logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/bmc-ami-defender)\n* [Collect Broadcom Support Portal Audit logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/broadcom-support-portal)\n* [Collect CA ACF2 logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ca-acf2)\n* [Collect CA LDAP logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ca-ldap)\n* [Collect ChromeOS XDR logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/chromeos-xdr)\n* [Collect Chronicle SOAR Audit logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/chronicle-soar-audit)\n* [Collect Cisco CTS logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-cts)\n* [Collect Cisco FireSIGHT Management Center logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-firesight)\n* [Collect Cisco Vision Dynamic Signage Director logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-stadiumvision)\n* [Collect ClamAV logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/clam-av)\n* [Collect Cofense logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cofense-triage)\n* [Collect Crowdstrike IOC logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/crowdstrike-ioc)\n* [Collect Custom Application Access logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/custom-application-access)\n* [Collect Custom Security Data Analytics logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/custom-security-data-analytics)\n* [Collect Cyber 2.0 IDS logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cyber-2-ids)\n* [Collect CyberArk logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cyberark)\n* [Collect Cybereason EDR logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cybereason-edr)\n* [Collect Dataminr Alerts logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/dataminr-alert)\n* [Collect Digital Shadows Indicators logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/digital-shadows-ioc)\n* [Collect Mimecast Mail V2 logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/mimecast-mail-v2)\n* [Collect Okta User Context logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/okta-user-context)\n* [Collect RH-ISAC IOC logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/rh-isac-ioc)\n* [Collect ServiceNow CMDB data](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/servicenow-cmdb)",
+        "summary": {
+          "title": "New Parser Documentation Available",
+          "summary": "New documentation is now available to assist with ingesting and normalizing logs from a variety of sources. This includes detailed guides for over two dozen different security and IT systems."
+        }
+      }
+    ],
+    "2026-02-20": [
+      {
+        "kind": "Feature",
+        "content": "**New capabilities in Feeds page**\n\nThe following options have been added to the **Feeds** page:\n\n* Search\n* Filtering (using feed attributes)\n* Pagination\n* Last Refreshed Time\n* Feed Metadata Export to CSV",
+        "summary": {
+          "title": "New Feeds Page Options Available",
+          "summary": "The Feeds page has been updated with new features to improve usability. You can now search, filter, and paginate through your feeds, view the last refreshed time, and export feed metadata to CSV."
+        }
+      }
+    ],
+    "2026-02-12": [
+      {
+        "kind": "Feature",
+        "content": "**Advanced Joins in Search**\n\nGoogle SecOps now supports expanded capabilities for correlating data across\nmultiple sources. These join operations are also supported in multistage queries.\n\n**Joins without a `match` section**: You can now use join operations to correlate\nand combine data from multiple sources based on common field values without\nrequiring a `match` section (unlike statistical joins). Results are displayed in a\nJoins table, which you can download as a CSV, or for event-to-event joins,\nexported to a datatable for further analysis.\n\nFor more information, see [Implement joins without a match section](https://docs.cloud.google.com/chronicle/docs/investigation/joins-without-match-section).\n\n**Outer joins**: Search now supports left and right outer joins. Unlike standard\ninner joins, these operations let you retrieve all records from a primary\ndata source even if no matching entry exists in the secondary source (unmatched\nfields are returned as `null`). This action lets you correlate data\nwithout losing unmatched events.\n\nFor more information, see [Correlate data with outer joins](https://docs.cloud.google.com/chronicle/docs/investigation/outer-joins).",
+        "summary": {
+          "title": "Enhanced Data Correlation with Advanced Joins",
+          "summary": "Google SecOps now offers advanced join capabilities for correlating data across multiple sources, including support for joins without a `match` section and outer joins. This allows for more comprehensive data analysis and retrieval, even for unmatched events."
+        }
+      }
+    ],
+    "2026-02-09": [
+      {
+        "kind": "Announcement",
+        "content": "**Enhanced rule observability: New metadata, visual indicators, and dashboards**\n\nGoogle Security Operations has introduced updates to how detection and alert data is processed and visualized. These changes help Google SecOps teams distinguish between primary rule runs and *rule replays*, which provides clarity on detection delays and the impact of late-arriving enrichment data.\n\n* **Key improvements**\n\n  + **Enhanced metadata**: Detection and alert objects now include specific metadata that identifies whether they were produced during a primary rule run, or as part of a *rule replay* or retrohunt.\n  + **Improved troubleshooting**: This data lets Google SecOps teams definitively answer critical operational questions, such as the cause of perceived detection delays or the specific impact of late-arriving enrichment data on active rules.\n  + **Rule replay insights**: Learn more about the distinction between primary runs and replays to manage the re-enrichment of Unified Data Model (UDM) events. For detailed definitions and technical workflows, see [Understand rule replays](https://docs.cloud.google.com/chronicle/docs/detection/rule-replays) and [Understand rule detection delays](https://docs.cloud.google.com/chronicle/docs/detection/detection-delays#re-enrichment-of-udm-events).\n  + **New detection dashboard**: To support these backend metadata changes, a new **Detection Health** dashboard is now available. This interface provides a visual representation of rule performance and replay status, letting teams monitor detection health more effectively.\n  + **Custom reporting**: There are new fields available in the [Detections schema](https://docs.cloud.google.com/chronicle/docs/reference/sample-yaral-for-native-dashboard#detections), letting you build custom dashboards.\n* **New metadata and third-party integration**: Detections and alerts now emit specific metadata to help customers track timing and latency. This data is available for integration with third-party systems using the following fields:\n\n  + `detectionTimingDetails`: An enum identifying the run type:\n  + `DETECTION_TIMING_DETAILS_REPROCESSING`\n  + `DETECTION_TIMING_DETAILS_RETROHUNT`\n  + `DETECTION_TIMING_DETAILS_UNSPECIFIED`\n  + `latencyMetrics`: Includes timestamps for `oldestIngestionTime`, `newestIngestionTime`, `oldestEventTime`, and `newestEventTime`.\n* **Enhanced platform and visual indicators**:\n\n  + **Alerts and rule details**: A new visual indicator in the **Detection Type** column provides granular details on hover.\n  + **Filter facets**: The **Alerts** lister page now includes *detection timing details* as a filterable facet.\n  + **SOAR integration**: In the **Case Overview**, the **Composite Detections** table now carries through the same iconography for a consistent investigation experience.",
+        "summary": {
+          "title": "Improved Rule Observability",
+          "summary": "Google Security Operations now offers enhanced metadata, visual indicators, and new dashboards to improve the observability of detection and alert data. These updates provide clearer insights into rule performance, detection delays, and the impact of late-arriving data, aiding in more effective troubleshooting and monitoring."
+        }
+      }
+    ],
+    "2026-02-04": [
+      {
+        "kind": "Announcement",
+        "content": "**New parser documentation now available**\n\nNew parser documentation is available to help you ingest and normalize logs from the following sources:\n\n* [Collect ForgeRock OpenIDM logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/forgerock-openidm)\n* [Collect Forseti Open Source logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/forseti)\n* [Collect Fortinet FortiClient logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-forticlient)\n* [Collect Fortinet FortiDDoS logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fortiddos)\n* [Collect Fortinet FortiEDR logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fortiedr)\n* [Collect Fortinet FortiManager logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fortimanager)\n* [Collect Fortinet Switch logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-switch)\n* [Collect Fortra Powertech SIEM Agent logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortra-powertech-siem-agent)\n* [Collect Google App Engine logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-app-engine)\n* [Collect Google Cloud DNS Threat Detector log](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-dns-atd)s\n* [Collect Google Cloud Monitoring alerting activity logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-monitoring-alerts)\n* [Collect Google Cloud Network Connectivity Center logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-ids)\n* [Collect Google Cloud Secure Web Proxy logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-secure-wp)\n* [Collect Gmail logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gmail-logs)\n* [Collect H3C Comware Platform Switch logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/h3c-switch)\n* [Collect HackerOne logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hackerone)\n* [Collect Hillstone Firewall logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hillstone-ngfw)\n* [Collect Hitachi Content Platform logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hitachi-content-platform)\n* [Collect HYPR MFA logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hypr-mfa)\n* [Collect IBM Guardium logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ibm-guardium)",
+        "summary": {
+          "title": "New Parser Documentation Available",
+          "summary": "New documentation is now available to help you ingest and normalize logs from a variety of sources. This includes parsers for ForgeRock, Forseti, Fortinet products, Google services like App Engine and Gmail, and many more."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**The re.capture\\_all function is now available**\n\nThe new [re.capture\\_all](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#recapture_all) YARA-L 2.0 function is available in Rules, Search, and Dashboards.\n\nUse the **re.capture\\_all()** function to extract every non-overlapping match of a regular expression from a string. While the standard [**re.capture**](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#recapture) function stops after the first match it finds, the **re.capture\\_all()** function continues through the entire string to identify every instance that matches your pattern.",
+        "summary": {
+          "title": "New re.capture_all function released",
+          "summary": "The re.capture_all function is now available for use in Rules, Search, and Dashboards. This new function allows you to extract every non-overlapping match of a regular expression from a string, unlike the standard re.capture function which stops after the first match."
+        }
+      }
+    ],
+    "2026-03-05": [
+      {
+        "kind": "Announcement",
+        "content": "**Google Agentic SOC Trial**\n\nThere will be a no-cost trial for the Google SecOps Triage Investigative Agent\n(TIN) from April 1, 2026 to June 30, 2026. TIN is an agentic AI feature for Google\nSecOps that helps automate security investigations. For more information about\nthe trial, see [Google Agentic SOC Trial details](https://docs.cloud.google.com/chronicle/docs/agentic-soc/trial).\nFor more information about TIN, see\n[Use Triage and Investigation Agent to investigate alerts](https://docs.cloud.google.com/chronicle/docs/secops/triage-investigation-agent).",
+        "summary": {
+          "title": "Agentic SOC Trial Available",
+          "summary": "A no-cost trial for the SecOps Triage Investigative Agent (TIN) will be available from April 1 to June 30, 2026. This AI-powered feature automates security investigations within Google SecOps. More details about the trial and TIN can be found in the provided documentation."
         }
       }
     ],
@@ -59,76 +145,6 @@
         }
       }
     ],
-    "2026-02-25": [
-      {
-        "kind": "Feature",
-        "content": "**Added support for Google Cloud VPC Service Controls**\n\nThis feature is currently in Preview.\n\n[VPC Service Controls](https://docs.cloud.google.com/chronicle/docs/secops/vpcsc-for-secops) helps protect against accidental or targeted action\nby external entities or insider entities, which helps to minimize unwarranted\ndata exfiltration risks from Google Cloud services. You can use VPC Service Controls to create perimeters\nthat protect the resources and data of services that you explicitly specify. For more information, see [Overview of VPC Service Controls](https://docs.cloud.google.com/vpc-service-controls/docs/overview).",
-        "summary": {
-          "title": "Enhanced Security for Your Data",
-          "summary": "We've added support for VPC Service Controls, a feature that helps protect your data from unauthorized access and exfiltration. This enhancement allows you to create security perimeters around your resources, strengthening your overall data security posture."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Added support for Google Cloud VPC Service Controls**\n\nThis feature is currently in Preview.\n\n[VPC Service Controls](https://docs.cloud.google.com/chronicle/docs/secops/vpcsc-for-secops) helps protect against accidental or targeted action\nby external entities or insider entities, which helps to minimize unwarranted\ndata exfiltration risks from Google Cloud services. You can use VPC Service Controls to create perimeters\nthat protect the resources and data of services that you explicitly specify. For more information, see [Overview of VPC Service Controls](https://docs.cloud.google.com/vpc-service-controls/docs/overview).",
-        "summary": {
-          "title": "Enhanced Security for Your Data",
-          "summary": "We've added support for VPC Service Controls, a feature that helps protect your data from unauthorized access and exfiltration. This enhancement allows you to create security perimeters around your resources, strengthening your overall data security posture."
-        }
-      }
-    ],
-    "2026-02-24": [
-      {
-        "kind": "Feature",
-        "content": "**New: cross joins in multi-stage queries**\n\nYou can now use cross joins in YARA-L 2.0 multi-stage queries let you compare individual UDM event data against aggregated statistics calculated in previous YARA-L stages. They are supported in:\n\n* Search\n* Dashboards\n\nFor more information, see [Cross joins in multi-stage queries](https://docs.cloud.google.com/chronicle/docs/investigation/multi-stage-yaral#cross-joins).",
-        "summary": {
-          "title": "Cross Joins Now Available in Multi-Stage YARA-L",
-          "summary": "Cross joins are now supported in YARA-L 2.0 multi-stage queries, enabling comparisons between individual event data and aggregated statistics from previous stages. This feature enhances analysis capabilities in both Search and Dashboards."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**New: cross joins in multi-stage queries**\n\nYou can now use cross joins in YARA-L 2.0 multi-stage queries let you compare individual UDM event data against aggregated statistics calculated in previous YARA-L stages. They are supported in:\n\n* Search\n* Dashboards\n\nFor more information, see [Cross joins in multi-stage queries](https://docs.cloud.google.com/chronicle/docs/investigation/multi-stage-yaral#cross-joins).",
-        "summary": {
-          "title": "Cross Joins Now Available in Multi-Stage YARA-L",
-          "summary": "Cross joins are now supported in YARA-L 2.0 multi-stage queries, enabling comparisons between individual event data and aggregated statistics from previous stages. This feature enhances analysis capabilities in both Search and Dashboards."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**RBAC for ingestion metrics**\n\nAdministrators can now use RBAC for ingestion metrics to restrict visibility of system health data, such as ingestion volume, errors, and throughput, based on a user's business scope.\n\nThe **Data Ingestion and Health** dashboard now uses Data Access scopes. When a scoped user loads the dashboard, the system automatically filters metrics to show only data that matches their assigned labels: Namespace, Log Type, and Ingestion Source.\n\nFor more information, see [Ingestion metrics](https://docs.cloud.google.com/chronicle/docs/reports/native-dashboards#ingestion_metrics).",
-        "summary": {
-          "title": "RBAC for ingestion metrics",
-          "summary": "Control visibility of system health data with RBAC for ingestion metrics. Administrators can now restrict access to metrics like ingestion volume and errors based on user business scope."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**RBAC for ingestion metrics**\n\nAdministrators can now use RBAC for ingestion metrics to restrict visibility of system health data, such as ingestion volume, errors, and throughput, based on a user's business scope.\n\nThe **Data Ingestion and Health** dashboard now uses Data Access scopes. When a scoped user loads the dashboard, the system automatically filters metrics to show only data that matches their assigned labels: Namespace, Log Type, and Ingestion Source.\n\nFor more information, see [Ingestion metrics](https://docs.cloud.google.com/chronicle/docs/reports/native-dashboards#ingestion_metrics).",
-        "summary": {
-          "title": "RBAC for ingestion metrics",
-          "summary": "Control visibility of system health data with RBAC for ingestion metrics. Administrators can now restrict access to metrics like ingestion volume and errors based on user business scope."
-        }
-      }
-    ],
-    "2026-02-23": [
-      {
-        "kind": "Announcement",
-        "content": "**New parser documentation now available**\n\nNew parser documentation is available to help you ingest and normalize logs from the following sources:\n\n* [Collect Big Switch BigCloudFabric logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/bigswitch-bcf)\n* [Collect BMC AMI Defender logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/bmc-ami-defender)\n* [Collect Broadcom Support Portal Audit logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/broadcom-support-portal)\n* [Collect CA ACF2 logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ca-acf2)\n* [Collect CA LDAP logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ca-ldap)\n* [Collect ChromeOS XDR logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/chromeos-xdr)\n* [Collect Chronicle SOAR Audit logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/chronicle-soar-audit)\n* [Collect Cisco CTS logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-cts)\n* [Collect Cisco FireSIGHT Management Center logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-firesight)\n* [Collect Cisco Vision Dynamic Signage Director logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-stadiumvision)\n* [Collect ClamAV logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/clam-av)\n* [Collect Cofense logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cofense-triage)\n* [Collect Crowdstrike IOC logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/crowdstrike-ioc)\n* [Collect Custom Application Access logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/custom-application-access)\n* [Collect Custom Security Data Analytics logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/custom-security-data-analytics)\n* [Collect Cyber 2.0 IDS logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cyber-2-ids)\n* [Collect CyberArk logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cyberark)\n* [Collect Cybereason EDR logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cybereason-edr)\n* [Collect Dataminr Alerts logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/dataminr-alert)\n* [Collect Digital Shadows Indicators logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/digital-shadows-ioc)\n* [Collect Mimecast Mail V2 logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/mimecast-mail-v2)\n* [Collect Okta User Context logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/okta-user-context)\n* [Collect RH-ISAC IOC logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/rh-isac-ioc)\n* [Collect ServiceNow CMDB data](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/servicenow-cmdb)",
-        "summary": {
-          "title": "New Parser Documentation Available",
-          "summary": "New documentation is now available to assist with ingesting and normalizing logs from a variety of sources. This includes detailed guides for over two dozen different security and IT systems."
-        }
-      },
-      {
-        "kind": "Announcement",
-        "content": "**New parser documentation now available**\n\nNew parser documentation is available to help you ingest and normalize logs from the following sources:\n\n* [Collect Big Switch BigCloudFabric logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/bigswitch-bcf)\n* [Collect BMC AMI Defender logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/bmc-ami-defender)\n* [Collect Broadcom Support Portal Audit logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/broadcom-support-portal)\n* [Collect CA ACF2 logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ca-acf2)\n* [Collect CA LDAP logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ca-ldap)\n* [Collect ChromeOS XDR logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/chromeos-xdr)\n* [Collect Chronicle SOAR Audit logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/chronicle-soar-audit)\n* [Collect Cisco CTS logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-cts)\n* [Collect Cisco FireSIGHT Management Center logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-firesight)\n* [Collect Cisco Vision Dynamic Signage Director logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cisco-stadiumvision)\n* [Collect ClamAV logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/clam-av)\n* [Collect Cofense logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cofense-triage)\n* [Collect Crowdstrike IOC logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/crowdstrike-ioc)\n* [Collect Custom Application Access logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/custom-application-access)\n* [Collect Custom Security Data Analytics logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/custom-security-data-analytics)\n* [Collect Cyber 2.0 IDS logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cyber-2-ids)\n* [Collect CyberArk logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cyberark)\n* [Collect Cybereason EDR logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cybereason-edr)\n* [Collect Dataminr Alerts logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/dataminr-alert)\n* [Collect Digital Shadows Indicators logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/digital-shadows-ioc)\n* [Collect Mimecast Mail V2 logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/mimecast-mail-v2)\n* [Collect Okta User Context logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/okta-user-context)\n* [Collect RH-ISAC IOC logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/rh-isac-ioc)\n* [Collect ServiceNow CMDB data](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/servicenow-cmdb)",
-        "summary": {
-          "title": "New Parser Documentation Available",
-          "summary": "New documentation is now available to assist with ingesting and normalizing logs from a variety of sources. This includes detailed guides for over two dozen different security and IT systems."
-        }
-      }
-    ],
     "2026-02-22": [
       {
         "kind": "Change",
@@ -162,24 +178,6 @@
         "summary": {
           "title": "New Chronicle SOAR Version Available",
           "summary": "Release 6.3.76 of Chronicle SOAR is now available in all regions. This update brings the latest improvements and features to the platform."
-        }
-      }
-    ],
-    "2026-02-20": [
-      {
-        "kind": "Feature",
-        "content": "**New capabilities in Feeds page**\n\nThe following options have been added to the **Feeds** page:\n\n* Search\n* Filtering (using feed attributes)\n* Pagination\n* Last Refreshed Time\n* Feed Metadata Export to CSV",
-        "summary": {
-          "title": "New Feeds Page Options Available",
-          "summary": "The Feeds page has been updated with new features to improve usability. You can now search, filter, and paginate through your feeds, view the last refreshed time, and export feed metadata to CSV."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**New capabilities in Feeds page**\n\nThe following options have been added to the **Feeds** page:\n\n* Search\n* Filtering (using feed attributes)\n* Pagination\n* Last Refreshed Time\n* Feed Metadata Export to CSV",
-        "summary": {
-          "title": "New Feeds Page Options Available",
-          "summary": "The Feeds page has been updated with new features to improve usability. You can now search, filter, and paginate through your feeds, view the last refreshed time, and export feed metadata to CSV."
         }
       }
     ],
@@ -221,42 +219,6 @@
         }
       }
     ],
-    "2026-02-12": [
-      {
-        "kind": "Feature",
-        "content": "**Advanced Joins in Search**\n\nGoogle SecOps now supports expanded capabilities for correlating data across\nmultiple sources. These join operations are also supported in multistage queries.\n\n**Joins without a `match` section**: You can now use join operations to correlate\nand combine data from multiple sources based on common field values without\nrequiring a `match` section (unlike statistical joins). Results are displayed in a\nJoins table, which you can download as a CSV, or for event-to-event joins,\nexported to a datatable for further analysis.\n\nFor more information, see [Implement joins without a match section](https://docs.cloud.google.com/chronicle/docs/investigation/joins-without-match-section).\n\n**Outer joins**: Search now supports left and right outer joins. Unlike standard\ninner joins, these operations let you retrieve all records from a primary\ndata source even if no matching entry exists in the secondary source (unmatched\nfields are returned as `null`). This action lets you correlate data\nwithout losing unmatched events.\n\nFor more information, see [Correlate data with outer joins](https://docs.cloud.google.com/chronicle/docs/investigation/outer-joins).",
-        "summary": {
-          "title": "Enhanced Data Correlation with Advanced Joins",
-          "summary": "Google SecOps now offers advanced join capabilities for correlating data across multiple sources, including support for joins without a `match` section and outer joins. This allows for more comprehensive data analysis and retrieval, even for unmatched events."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Advanced Joins in Search**\n\nGoogle SecOps now supports expanded capabilities for correlating data across\nmultiple sources. These join operations are also supported in multistage queries.\n\n**Joins without a `match` section**: You can now use join operations to correlate\nand combine data from multiple sources based on common field values without\nrequiring a `match` section (unlike statistical joins). Results are displayed in a\nJoins table, which you can download as a CSV, or for event-to-event joins,\nexported to a datatable for further analysis.\n\nFor more information, see [Implement joins without a match section](https://docs.cloud.google.com/chronicle/docs/investigation/joins-without-match-section).\n\n**Outer joins**: Search now supports left and right outer joins. Unlike standard\ninner joins, these operations let you retrieve all records from a primary\ndata source even if no matching entry exists in the secondary source (unmatched\nfields are returned as `null`). This action lets you correlate data\nwithout losing unmatched events.\n\nFor more information, see [Correlate data with outer joins](https://docs.cloud.google.com/chronicle/docs/investigation/outer-joins).",
-        "summary": {
-          "title": "Enhanced Data Correlation with Advanced Joins",
-          "summary": "Google SecOps now offers advanced join capabilities for correlating data across multiple sources, including support for joins without a `match` section and outer joins. This allows for more comprehensive data analysis and retrieval, even for unmatched events."
-        }
-      }
-    ],
-    "2026-02-09": [
-      {
-        "kind": "Announcement",
-        "content": "**Enhanced rule observability: New metadata, visual indicators, and dashboards**\n\nGoogle Security Operations has introduced updates to how detection and alert data is processed and visualized. These changes help Google SecOps teams distinguish between primary rule runs and *rule replays*, which provides clarity on detection delays and the impact of late-arriving enrichment data.\n\n* **Key improvements**\n\n  + **Enhanced metadata**: Detection and alert objects now include specific metadata that identifies whether they were produced during a primary rule run, or as part of a *rule replay* or retrohunt.\n  + **Improved troubleshooting**: This data lets Google SecOps teams definitively answer critical operational questions, such as the cause of perceived detection delays or the specific impact of late-arriving enrichment data on active rules.\n  + **Rule replay insights**: Learn more about the distinction between primary runs and replays to manage the re-enrichment of Unified Data Model (UDM) events. For detailed definitions and technical workflows, see [Understand rule replays](https://docs.cloud.google.com/chronicle/docs/detection/rule-replays) and [Understand rule detection delays](https://docs.cloud.google.com/chronicle/docs/detection/detection-delays#re-enrichment-of-udm-events).\n  + **New detection dashboard**: To support these backend metadata changes, a new **Detection Health** dashboard is now available. This interface provides a visual representation of rule performance and replay status, letting teams monitor detection health more effectively.\n  + **Custom reporting**: There are new fields available in the [Detections schema](https://docs.cloud.google.com/chronicle/docs/reference/sample-yaral-for-native-dashboard#detections), letting you build custom dashboards.\n* **New metadata and third-party integration**: Detections and alerts now emit specific metadata to help customers track timing and latency. This data is available for integration with third-party systems using the following fields:\n\n  + `detectionTimingDetails`: An enum identifying the run type:\n  + `DETECTION_TIMING_DETAILS_REPROCESSING`\n  + `DETECTION_TIMING_DETAILS_RETROHUNT`\n  + `DETECTION_TIMING_DETAILS_UNSPECIFIED`\n  + `latencyMetrics`: Includes timestamps for `oldestIngestionTime`, `newestIngestionTime`, `oldestEventTime`, and `newestEventTime`.\n* **Enhanced platform and visual indicators**:\n\n  + **Alerts and rule details**: A new visual indicator in the **Detection Type** column provides granular details on hover.\n  + **Filter facets**: The **Alerts** lister page now includes *detection timing details* as a filterable facet.\n  + **SOAR integration**: In the **Case Overview**, the **Composite Detections** table now carries through the same iconography for a consistent investigation experience.",
-        "summary": {
-          "title": "Improved Rule Observability",
-          "summary": "Google Security Operations now offers enhanced metadata, visual indicators, and new dashboards to improve the observability of detection and alert data. These updates provide clearer insights into rule performance, detection delays, and the impact of late-arriving data, aiding in more effective troubleshooting and monitoring."
-        }
-      },
-      {
-        "kind": "Announcement",
-        "content": "**Enhanced rule observability: New metadata, visual indicators, and dashboards**\n\nGoogle Security Operations has introduced updates to how detection and alert data is processed and visualized. These changes help Google SecOps teams distinguish between primary rule runs and *rule replays*, which provides clarity on detection delays and the impact of late-arriving enrichment data.\n\n* **Key improvements**\n\n  + **Enhanced metadata**: Detection and alert objects now include specific metadata that identifies whether they were produced during a primary rule run, or as part of a *rule replay* or retrohunt.\n  + **Improved troubleshooting**: This data lets Google SecOps teams definitively answer critical operational questions, such as the cause of perceived detection delays or the specific impact of late-arriving enrichment data on active rules.\n  + **Rule replay insights**: Learn more about the distinction between primary runs and replays to manage the re-enrichment of Unified Data Model (UDM) events. For detailed definitions and technical workflows, see [Understand rule replay](https://docs.cloud.google.com/chronicle/docs/detection/rule-replays) and [Understand rule detection delays](https://docs.cloud.google.com/chronicle/docs/detection/detection-delays#re-enrichment-of-udm-events).\n  + **New detection dashboard**: To support these backend metadata changes, a new **Detection Health** dashboard is now available. This interface provides a visual representation of rule performance and replay status, letting teams monitor detection health more effectively.\n  + **Custom reporting**: There are new fields available in the [Detections schema](https://docs.cloud.google.com/chronicle/docs/reference/sample-yaral-for-native-dashboard#detections), letting you build custom dashboards.\n* **New metadata and third-party integration**: Detections and alerts now emit specific metadata to help customers track timing and latency. This data is available for integration with third-party systems using the following fields:\n\n  + `detectionTimingDetails`: An enum identifying the run type:\n  + `DETECTION_TIMING_DETAILS_REPROCESSING`\n  + `DETECTION_TIMING_DETAILS_RETROHUNT`\n  + `DETECTION_TIMING_DETAILS_UNSPECIFIED`\n  + `latencyMetrics`: Includes timestamps for `oldestIngestionTime`, `newestIngestionTime`, `oldestEventTime`, and `newestEventTime`.\n* **Enhanced platform and visual indicators**:\n\n  + **Alerts and rule details**: A new visual indicator in the **Detection Type** column provides granular details on hover.\n  + **Filter facets**: The **Alerts** lister page now includes *detection timing details* as a filterable facet.\n  + **SOAR integration**: In the **Case Overview**, the **Composite Detections** table now carries through the same iconography for a consistent investigation experience.",
-        "summary": {
-          "title": "Improved Rule Observability with New Metadata and Dashboards",
-          "summary": "Google Security Operations has enhanced rule observability with new metadata, visual indicators, and dashboards. These improvements help teams distinguish between primary rule runs and rule replays, offering better clarity on detection delays and the impact of late-arriving data. A new Detection Health dashboard provides a visual representation of rule performance and replay status for more effective monitoring."
-        }
-      }
-    ],
     "2026-02-08": [
       {
         "kind": "Announcement",
@@ -274,40 +236,6 @@
         "summary": {
           "title": "New Chronicle SOAR Release Available",
           "summary": "Release 6.3.74 of Chronicle SOAR is now available in all regions. This update brings the latest enhancements and features to our security orchestration, automation, and response platform."
-        }
-      }
-    ],
-    "2026-02-04": [
-      {
-        "kind": "Announcement",
-        "content": "**New parser documentation now available**\n\nNew parser documentation is available to help you ingest and normalize logs from the following sources:\n\n* [Collect ForgeRock OpenIDM logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/forgerock-openidm)\n* [Collect Forseti Open Source logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/forseti)\n* [Collect Fortinet FortiClient logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-forticlient)\n* [Collect Fortinet FortiDDoS logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fortiddos)\n* [Collect Fortinet FortiEDR logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fortiedr)\n* [Collect Fortinet FortiManager logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fortimanager)\n* [Collect Fortinet Switch logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-switch)\n* [Collect Fortra Powertech SIEM Agent logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortra-powertech-siem-agent)\n* [Collect Google App Engine logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-app-engine)\n* [Collect Google Cloud DNS Threat Detector log](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-dns-atd)s\n* [Collect Google Cloud Monitoring alerting activity logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-monitoring-alerts)\n* [Collect Google Cloud Network Connectivity Center logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-ids)\n* [Collect Google Cloud Secure Web Proxy logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-secure-wp)\n* [Collect Gmail logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gmail-logs)\n* [Collect H3C Comware Platform Switch logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/h3c-switch)\n* [Collect HackerOne logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hackerone)\n* [Collect Hillstone Firewall logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hillstone-ngfw)\n* [Collect Hitachi Content Platform logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hitachi-content-platform)\n* [Collect HYPR MFA logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hypr-mfa)\n* [Collect IBM Guardium logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ibm-guardium)",
-        "summary": {
-          "title": "New Parser Documentation Available",
-          "summary": "New documentation is now available to help you ingest and normalize logs from a variety of sources. This includes parsers for ForgeRock, Forseti, Fortinet products, Google services like App Engine and Gmail, and many more."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**The re.capture\\_all function is now available**\n\nThe new [re.capture\\_all](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#recapture_all) YARA-L 2.0 function is available in Rules, Search, and Dashboards.\n\nUse the **re.capture\\_all()** function to extract every non-overlapping match of a regular expression from a string. While the standard [**re.capture**](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#recapture) function stops after the first match it finds, the **re.capture\\_all()** function continues through the entire string to identify every instance that matches your pattern.",
-        "summary": {
-          "title": "New re.capture_all function released",
-          "summary": "The re.capture_all function is now available for use in Rules, Search, and Dashboards. This new function allows you to extract every non-overlapping match of a regular expression from a string, unlike the standard re.capture function which stops after the first match."
-        }
-      },
-      {
-        "kind": "Announcement",
-        "content": "**New parser documentation now available**\n\nNew parser documentation is available to help you ingest and normalize logs from the following sources:\n\n* [Collect ForgeRock OpenIDM logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/forgerock-openidm)\n* [Collect Forseti Open Source logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/forseti)\n* [Collect Fortinet FortiClient logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-forticlient)\n* [Collect Fortinet FortiDDoS logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fortiddos)\n* [Collect Fortinet FortiEDR logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fortiedr)\n* [Collect Fortinet FortiManager logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-fortimanager)\n* [Collect Fortinet Switch logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortinet-switch)\n* [Collect Fortra Powertech SIEM Agent logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fortra-powertech-siem-agent)\n* [Collect Google App Engine logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-app-engine)\n* [Collect Google Cloud DNS Threat Detector log](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-dns-atd)s\n* [Collect Google Cloud Monitoring alerting activity logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-monitoring-alerts)\n* [Collect Google Cloud Network Connectivity Center logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-ids)\n* [Collect Google Cloud Secure Web Proxy logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gcp-secure-wp)\n* [Collect Gmail logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gmail-logs)\n* [Collect H3C Comware Platform Switch logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/h3c-switch)\n* [Collect HackerOne logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hackerone)\n* [Collect Hillstone Firewall logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hillstone-ngfw)\n* [Collect Hitachi Content Platform logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hitachi-content-platform)\n* [Collect HYPR MFA logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hypr-mfa)\n* [Collect IBM Guardium logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ibm-guardium)",
-        "summary": {
-          "title": "New Parser Documentation Available",
-          "summary": "New documentation is now available to help you ingest and normalize logs from a variety of sources. This includes parsers for ForgeRock, Forseti, Fortinet products, Google services like App Engine and Gmail, and many more."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**The re.capture\\_all function is now available**\n\nThe new [re.capture\\_all](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#recapture_all) YARA-L 2.0 function is available in Rules, Search, and Dashboards.\n\nUse the **re.capture\\_all()** function to extract every non-overlapping match of a regular expression from a string. While the standard [**re.capture**](https://docs.cloud.google.com/chronicle/docs/yara-l/functions#recapture) function stops after the first match it finds, the **re.capture\\_all()** function continues through the entire string to identify every instance that matches your pattern.",
-        "summary": {
-          "title": "New re.capture_all function released",
-          "summary": "The re.capture_all function is now available for use in Rules, Search, and Dashboards. This new function allows you to extract every non-overlapping match of a regular expression from a string, unlike the standard re.capture function which stops after the first match."
         }
       }
     ],

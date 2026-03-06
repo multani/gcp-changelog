@@ -1,5 +1,157 @@
 # Looker
 
+## 2026-03-05
+
+### Fixed
+
+An issue has been fixed where comma-separated negative filters could be incorrectly interpreted with OR logic in the filter UI. This feature now performs as expected.
+
+### Feature
+
+The [Embed Conversational Analytics](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-embedding) feature is now generally available. In Looker 26.4, the following support has been added:
+
+* Embedding Conversational Analytics is now supported on Looker (Google Cloud core).
+* The Looker [embed SDK](https://docs.cloud.google.com/looker/docs/embed-sdk-demo) now supports embedded Conversational Analytics.
+* [Embedded themes](https://docs.cloud.google.com/looker/docs/themes-for-embedded-dashboards-and-explores) are now partially supported with embedded Conversational Analytics. All of the [General options](https://docs.cloud.google.com/looker/docs/themes-for-embedded-dashboards-and-explores#general) for themes are supported. All other theme options are not supported.
+
+### Fixed
+
+An issue has been fixed where dashboards that used ClickHouse connections could fail to load with a `ClassCastException` error. This feature now performs as expected.
+
+### Announcement
+
+**Looker 26.4** is expected to include the following changes, features, and fixes:
+
+* Expected Looker (original) deployment start: **Sunday, March 8, 2026**
+* Expected Looker (original) final deployment and download available: **Thursday, March 19, 2026**
+* Expected Looker (Google Cloud core) deployment start: **Monday, March 16, 2026**
+* Expected Looker (Google Cloud core) final deployment: **Monday, March 23, 2026**
+
+### Fixed
+
+An issue has been fixed where entering Japanese characters into advanced filters could add extra characters. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where Looker could fail to recognize non-numeric values in conditional formatting rules for single value visualizations. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where Looker would prevent users from saving changes on the Content Guardrails admin settings page. This feature now performs as expected.
+
+### Feature
+
+Custom tooltips are now generally available and supported for more visualization types. Custom tooltips let you configure tooltips within the [Explore visualization editor](https://docs.cloud.google.com/looker/docs/creating-visualizations#quick_guide) by using a combination of UI settings and an HTML editor that supports Liquid templating. Custom tooltips are supported for most visualization types except the following:
+
+* [Donut multiples charts](https://docs.cloud.google.com/looker/docs/donut-multiples-options)
+* [Word cloud charts](https://docs.cloud.google.com/looker/docs/word-cloud-options)
+* [Static map (regions) charts](https://docs.cloud.google.com/looker/docs/map-regions-options)
+* [Static maps (points) charts](https://docs.cloud.google.com/looker/docs/map-points-options)
+* Charts made using the Chart Config Editor (with the exception of [Sankey charts](https://docs.cloud.google.com/looker/docs/sankey))
+* Custom visualizations
+
+[Learn more about custom tooltips](https://docs.cloud.google.com/looker/docs/custom-tooltips).
+
+### Fixed
+
+An issue has been fixed where LookML dashboards could not be created using the `ProjectFile` API endpoint. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where conditional formatting rules could fail to be saved. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where pivoted columns could fail to be sorted correctly when content was being downloaded. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where selecting the **Expand tables** option during a PDF download or schedule could cause the tables to shrink instead of expand. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where Looker could fail to retain sorts when content from a drill modal was being downloaded. This feature now performs as expected.
+
+### Feature
+
+The **Labs** page in the **Admin** panel has been renamed **Preview Features**. The new page organizes in-progress features into two categories to provide better clarity on their status:
+
+* **Preview features**: These features have a planned path to general availability.
+* **Labs features**: These experimental features may be removed from the product at any time, and issues may not be resolved.
+
+Your enablement status for each feature has not changed. For more information, see the [Preview Features](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features) documentation page.
+
+### Feature
+
+Now generally available, Looker has full support for connections with [AlloyDB for PostgreSQL](https://docs.cloud.google.com/looker/docs/db-config-alloydb). When you [create a connection](https://docs.cloud.google.com/looker/docs/connecting-to-your-db) in Looker, you can now select **Google Cloud AlloyDB for PostgreSQL** from the Dialect drop-down menu. This update does not affect existing AlloyDB connections that were created using the **PostgreSQL 9.5+** option in the Dialect menu.
+
+### Fixed
+
+An issue has been fixed where dashboard table tiles could fail to display the scroll bar and total row. This feature now performs as expected.
+
+### Feature
+
+[Tabbed dashboards](https://docs.cloud.google.com/looker/docs/tabbed-dashboards) are now generally available. Dashboard editors can use tabs to organize dashboard content across multiple tabs within a single dashboard. Adding tabs to dashboards lets you do the following:
+
+* Better organize content: Group related visualizations and tiles into separate tabs.
+* Improve data storytelling: Guide viewers through different aspects of your data in a structured way.
+* Enhance performance: Load only the tiles on an active tab, potentially speeding up initial dashboard load times.
+* Reduce clutter: Consolidate multiple related analyses into a single dashboard.
+
+### Feature
+
+Dashboard filter enhancements are now generally available. Dashboard filter enhancements include the following improvements:
+
+* Persistent filter suggestion drop-down: Filter suggestion drop-downs remain open for easier multi-selection for [tag list](https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#tag-list) and [advanced filter](https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#advanced_filters) type filters.
+* Select or deselect all filter values: Lets users select or deselect all values in tag list and advanced filter type filters.
+* Limit condition controls for advanced filters: Lets dashboard creators limit the condition options that are available to users for advanced filters.
+* Enable [**Include custom filter values**](https://docs.cloud.google.com/looker/docs/presenting-content#adding_dashboards_to_boards_with_custom_filter_values_applied) by default for boards: Admins can choose to enable Include custom filter values for boards by default instance-wide.
+
+### Fixed
+
+An issue has been fixed where dimension fill could fail to populate values when the row limit is reached. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the "raw" timeframe of a `dimension_group` could be displayed in a 12-hour format instead of the expected 24-hour format. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where certain tables were being unnecessarily truncated when they were downloaded to PDF. This feature now performs as expected.
+
+### Feature
+
+The Looker API now includes Looker Conversational Analytics endpoints that you can use with applications that embed Looker to create and manage agents, conversations, and messages.
+
+### Fixed
+
+An issue has been fixed where dashboard buttons that open links in a new tab could fail to work properly when cookieless embed was enabled. This feature now performs as expected.
+
+### Feature
+
+The [Preview Features page](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features) is now available in the **Admin** panel for Looker (Google Cloud core). This page lets you enable or disable new features that are currently in preview.
+
+The following preview features are now available in Looker (Google Cloud core):
+
+* Access Content Certification
+* Granular Dashboard Sizing
+* Internal Dashboard Theming
+* Tile Download Default Options
+
+Preview features that are categorized as "Labs" on the **Preview Features** page of the **Admin** panel aren't supported in Looker (Google Cloud core).
+
+### Breaking
+
+Project-level local git hooks are no longer supported for security reasons. This change will have no effect on Looker-hosted instances, but it may affect customer-hosted instances depending on your Git setup.
+
+### Feature
+
+The **Gemini in Looker** page in the **Admin** panel has been redesigned to allow Looker admins to selectively enable Gemini in Looker features. For more information about how to enable the features that are available for each Looker instance type, see the following documentation:
+
+* Looker (Google Cloud core): [Administer Gemini on your Looker (Google Cloud core) instance](https://docs.cloud.google.com/looker/docs/looker-core-admin-gemini)
+* Looker: [Admin settings – Gemini in Looker](https://docs.cloud.google.com/looker/docs/admin-panel-platform-gil)
+
+---
 ## 2026-03-02
 
 ### Feature
@@ -62,7 +214,7 @@ Now available in preview, the **Self-service Explores** feature supports [upload
 
 ### Feature
 
-The [System Activity **User Activity** dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#user_activity_dashboard) has been updated to improve authentication troubleshooting. New information includes: recent login failures, the authentication method that was used, the error message that was returned, and the time of the attempt.
+The [System Activity **User Activity** dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#user_activity_dashboard) has been updated to improve authentication troubleshooting. New information includes recent login failures, the authentication method that was used, the error message that was returned, and the time of the attempt.
 
 ---
 ## 2026-02-09

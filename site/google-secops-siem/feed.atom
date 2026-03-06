@@ -2,9 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps SIEM</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps SIEM</subtitle>
-  <updated>2026-03-04T00:00:00+00:00</updated>
+  <updated>2026-03-05T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops-siem</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops-siem/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2026-03-05:announcement:0</id>
+    <published>2026-03-05T00:00:00+00:00</published>
+    <updated>2026-03-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Agentic SOC Trial</strong></p>
+<p>There will be a no-cost trial for the Google SecOps Triage Investigative Agent
+(TIN) from April 1, 2026 to June 30, 2026. TIN is an agentic AI feature for Google
+SecOps that helps automate security investigations. For more information about
+the trial, see <a href="https://docs.cloud.google.com/chronicle/docs/agentic-soc/trial">Google Agentic SOC Trial details</a>.
+For more information about TIN, see
+<a href="https://docs.cloud.google.com/chronicle/docs/secops/triage-investigation-agent">Use Triage and Investigation Agent to investigate alerts</a>.</p>]]></content>
+    <summary>A no-cost trial for the SecOps Triage Investigative Agent (TIN) will be available from April 1 to June 30, 2026. This AI-powered feature automates security investigations within Google SecOps. More details about the trial and TIN can be found in the provided documentation.</summary>
+    <title>Announcement: Agentic SOC Trial Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -22,42 +39,12 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2026-03-04:announcement:1</id>
-    <published>2026-03-04T00:00:00+00:00</published>
-    <updated>2026-03-04T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Manage parser versions</strong></p>
-<p>The <a href="https://docs.cloud.google.com/chronicle/docs/secops/release-notes#October_07_2025">Manage parser versions</a> feature is now in General Availability.</p>
-<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage-parser-versions">Manage prebuilt parser versions</a>.</p>]]></content>
-    <summary>The Manage parser versions feature has reached General Availability, allowing for better control over parser updates. This enhancement provides users with more flexibility in managing their security data parsing.</summary>
-    <title>Announcement: Parser Version Management Now Available</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2026-03-02:deprecated:0</id>
-    <published>2026-03-02T00:00:00+00:00</published>
-    <updated>2026-03-02T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><code>Chronicle.soarAnalyst</code>, <code>chronicle.soarViewer</code>, <code>chronicle.soarEngineer</code> roles in Cloud IAM are being deprecated and will be fully removed in six months. Although these roles were accessible and can historically be assigned to users in Cloud IAM, they were non-operational. SOAR roles were managed through Permission Groups and with its migration to Cloud IAM as part of the <a href="https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp#permissions-iam">SOAR Migration to Google Cloud</a>, the preceding roles are being deprecated.</p>
-<p>To maintain seamless access and adhere to the principle of least privilege, transition your SOAR users to the following options:</p>
-<ul>
-<li>Automatically convert your SOAR Permission Groups to custom roles in IAM through <a href="https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp#permissions-iam">self-service migration</a>.</li>
-<li>Pre-defined roles: Utilize the enhanced Google SecOps <a href="https://docs.cloud.google.com/iam/docs/roles-permissions/chronicle#google-security-operations-roles">pre-defined roles</a> now available in Cloud IAM.</li>
-<li>Custom Roles: Create tailored roles with <a href="https://docs.cloud.google.com/iam/docs/roles-permissions/chronicle#google-security-operations-permissions">specific permissions</a> to meet your organization's unique security requirements.</li>
-</ul>]]></content>
-    <summary>The chronicle.soarAnalyst, chronicle.soarViewer, and chronicle.soarEngineer roles in Cloud IAM are being deprecated and will be removed in six months. These roles were non-operational and are being replaced by enhanced Google SecOps pre-defined roles or custom roles.</summary>
-    <title>Deprecated: SOAR roles deprecated</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2026-03-02:feature:1</id>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2026-03-02:feature:0</id>
     <published>2026-03-02T00:00:00+00:00</published>
     <updated>2026-03-02T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>New Unified rules interface</strong></p>
 <p>This feature is currently in Preview.</p>
-<p>Google SecOps has launched a unified rules interface that
+<p>Google Secops has launched a unified rules interface that
 brings custom and curated rule management into a single, cohesive workflow.
 This update optimizes detection engineering with a redesigned dashboard, an
 advanced rule editor, and expanded API capabilities to streamline rule
@@ -91,8 +78,25 @@ access and complex filtering:</p>
   efficient querying.</li>
 </ul>
 <p>For details, see <a href="https://docs.cloud.google.com/chronicle/docs/detection/unified-rules/get-started">Manage unified rules</a>.</p>]]></content>
-    <summary>A new unified interface simplifies the management of custom and curated detection rules. This feature offers a redesigned dashboard, an advanced editor, and expanded API capabilities for streamlined rule deployment and troubleshooting.</summary>
+    <summary>A new unified interface for managing detection rules is now available, consolidating custom and curated rule management into a single workflow. This feature includes a redesigned dashboard, an advanced rule editor with IDE enhancements, and expanded API capabilities for streamlined deployment and troubleshooting.</summary>
     <title>Feature: Unified Rules Interface Launched</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2026-03-02:deprecated:1</id>
+    <published>2026-03-02T00:00:00+00:00</published>
+    <updated>2026-03-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><code>Chronicle.soarAnalyst</code>, <code>chronicle.soarViewer</code>, <code>chronicle.soarEngineer</code> roles in Cloud IAM are being deprecated and will be fully removed in six months. Although these roles were accessible and can historically be assigned to users in Cloud IAM, they were non-operational. SOAR roles were managed through Permission Groups and with its migration to Cloud IAM as part of the <a href="https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp#permissions-iam">SOAR Migration to Google Cloud</a>, the preceding roles are being deprecated.</p>
+<p>To maintain seamless access and adhere to the principle of least privilege, transition your SOAR users to the following options:</p>
+<ul>
+<li>Automatically convert your SOAR Permission Groups to custom roles in IAM through <a href="https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp#permissions-iam">self-service migration</a>.</li>
+<li>Pre-defined roles: Utilize the enhanced Google SecOps <a href="https://docs.cloud.google.com/iam/docs/roles-permissions/chronicle#google-security-operations-roles">pre-defined roles</a> now available in Cloud IAM.</li>
+<li>Custom Roles: Create tailored roles with <a href="https://docs.cloud.google.com/iam/docs/roles-permissions/chronicle#google-security-operations-permissions">specific permissions</a> to meet your organization's unique security requirements.</li>
+</ul>]]></content>
+    <summary>The chronicle.soarAnalyst, chronicle.soarViewer, and chronicle.soarEngineer roles in Cloud IAM are being deprecated and will be removed in six months. These roles were non-operational and are being replaced by enhanced Google SecOps pre-defined roles or custom roles.</summary>
+    <title>Deprecated: SOAR roles deprecated</title>
   </entry>
   <entry>
     <author>

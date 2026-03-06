@@ -1,5 +1,14 @@
 # Firestore
 
+## 2026-03-05
+
+### Feature
+
+Firestore Enterprise edition now supports Native mode in
+all supported regions. For a list of supported regions, see
+[Locations](https://docs.cloud.google.com/firestore/native/docs/locations).
+
+---
 ## 2026-02-17
 
 ### Announcement

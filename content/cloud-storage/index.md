@@ -1,5 +1,18 @@
 # Cloud Storage
 
+## 2026-03-05
+
+### Feature
+
+You can now analyze object data and metadata from your Storage Insights
+datasets by using BigQuery `ObjectRef` functions. The `ref` column in the
+dataset contains a reference to the Cloud Storage object which you can use with
+`ObjectRef` functions to analyze object content. For example, you can build
+queries to help detect sensitive information in documents or to generate image
+descriptions. For more information, see
+[Analyze object data and metadata using BigQuery](https://docs.cloud.google.com/storage/docs/insights/configure-datasets#analyze-object-data).
+
+---
 ## 2026-01-30
 
 ### Announcement

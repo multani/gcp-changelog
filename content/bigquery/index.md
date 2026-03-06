@@ -1,5 +1,21 @@
 # BigQuery
 
+## 2026-03-05
+
+### Feature
+
+You can now use an alternate syntax when you call the
+[`VECTOR_SEARCH` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/search_functions#vector_search)
+to improve query performance when you search for a single vector. This feature
+is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Change
+
+An updated version of the
+[Simba ODBC driver for BigQuery](https://docs.cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers#current_odbc_driver)
+is now available.
+
+---
 ## 2026-03-04
 
 ### Feature

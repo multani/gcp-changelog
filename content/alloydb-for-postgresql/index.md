@@ -1,5 +1,17 @@
 # AlloyDB for PostgreSQL
 
+## 2026-03-05
+
+### Feature
+
+AlloyDB enhanced backups are generally available
+([GA](https://cloud.google.com/products#product-launch-stages)).
+You can now select the Enhanced tier during cluster creation, manage your
+project-level backups with tiered tabs, and delete an enhanced backup. For more
+information, see
+[Manage enhanced backups](https://docs.cloud.google.com/alloydb/docs/backup/manage-enhanced-backups).
+
+---
 ## 2026-03-03
 
 ### Feature

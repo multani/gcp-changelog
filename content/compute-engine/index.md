@@ -1,5 +1,17 @@
 # Compute Engine
 
+## 2026-03-05
+
+### Issue
+
+For Red Hat Enterprise Linux (RHEL) operating system, VM Manager provides
+vulnerability scanning results based on the latest minor version for each major
+version released. If your VM runs an earlier minor version of RHEL, you might get
+inaccurate results in the vulnerability reports. For more information about
+supported operating systems for vulnerability reports, see [supported operating
+systems](https://docs.cloud.google.com/compute/docs/images/os-details#vm-manager).
+
+---
 ## 2026-03-04
 
 ### Feature

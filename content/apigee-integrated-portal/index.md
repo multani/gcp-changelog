@@ -1,5 +1,16 @@
 # Apigee Integrated Portal
 
+## 2026-03-05
+
+### Announcement
+
+On March 5, 2026 we released a new version of the Apigee integrated portal.
+
+### Feature
+
+You can now publish APIs using AsyncAPI documents to render documentation for asynchronous APIs in your portal. For more information, see [Publishing your APIs](https://docs.cloud.google.com/apigee/docs/api-platform/publish/portal/publish-apis#what-published).
+
+---
 ## 2025-12-17
 
 ### Announcement

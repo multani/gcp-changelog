@@ -11,8 +11,9 @@ Cloud Deploy is now available in the following region: asia-southeast3 (Bangkok)
 
 ### Feature
 
-You can now [deploy containerized workloads to Cloud Run worker pools](https://docs.cloud.google.com/deploy/docs/run-targets#create_your_worker_pool_definitions). This feature is now generally
-available ([GA](https://cloud.google.com/products#product-launch-stages)).
+You can now
+[deploy containerized workloads to Cloud Run worker pools](https://docs.cloud.google.com/deploy/docs/run-targets#create_your_worker_pool_definitions)
+(in [Preview](https://cloud.google.com/products#product-launch-stages)).
 
 ---
 ## 2026-01-23

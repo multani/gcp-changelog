@@ -2352,6 +2352,15 @@
 
 
 <h1 id="compute-engine">Compute Engine</h1>
+<h2 id="2026-03-05">2026-03-05</h2>
+<h3 id="issue">Issue</h3>
+<p>For Red Hat Enterprise Linux (RHEL) operating system, VM Manager provides
+vulnerability scanning results based on the latest minor version for each major
+version released. If your VM runs an earlier minor version of RHEL, you might get
+inaccurate results in the vulnerability reports. For more information about
+supported operating systems for vulnerability reports, see <a href="https://docs.cloud.google.com/compute/docs/images/os-details#vm-manager">supported operating
+systems</a>.</p>
+<hr />
 <h2 id="2026-03-04">2026-03-04</h2>
 <h3 id="feature">Feature</h3>
 <p><strong>Generally available</strong>: You can use managed constraints with Organization Policy Service
@@ -2554,7 +2563,7 @@ reservations. For more information, see
 <p>The memory-optimized X4 machine series offers additional bare metal machine
 types with 6 TB, 8 TB, and 12 TB of memory. For more information,
 see <a href="https://docs.cloud.google.com/compute/docs/memory-optimized-machines#x4_series">X4 machine series</a>.</p>
-<h3 id="issue">Issue</h3>
+<h3 id="issue_1">Issue</h3>
 <p>Workloads on A4 VMs might experience interruptions due to a firmware issue
 for NVIDIA B200 GPUs. To help prevent the issue, we recommend resetting the GPUs
 on A4 VMs at least once every 60 days. For more information, see the
@@ -2597,7 +2606,7 @@ your entire fleet of VMs and monitors their health status while they are running
 </ul>
 <hr />
 <h2 id="2025-11-26">2025-11-26</h2>
-<h3 id="issue_1">Issue</h3>
+<h3 id="issue_2">Issue</h3>
 <p>C4 machine type virtual machine (VM) instances running on sole tenant nodes
 might encounter unexpected VM terminations due to host errors or VM
 creation failures. For more information, see
@@ -2653,7 +2662,7 @@ information, see
 <a href="https://docs.cloud.google.com/compute/docs/instances/future-reservations-calendar-mode-overview">About future reservation requests in calendar mode</a>.</p>
 <hr />
 <h2 id="2025-11-10">2025-11-10</h2>
-<h3 id="issue_2">Issue</h3>
+<h3 id="issue_3">Issue</h3>
 <p>The Windows guest agent identifies administrator accounts and groups using
 string matching. Therefore, credential management features only function
 correctly when you use English language names for user accounts and groups,
@@ -3196,6 +3205,9 @@ in, see
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#compute-engine">Compute Engine</a></li>
+          <li class="nav-item">
+            <a href="#2026-03-05" class="nav-link">2026-03-05</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-03-04" class="nav-link">2026-03-04</a>
           </li>

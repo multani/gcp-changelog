@@ -1,5 +1,16 @@
 # Guest Environment
 
+## 2026-03-05
+
+### Feature
+
+Version `20260228.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent) is
+now available for Debian 12, AlmaLinux 9, CentOS Stream 9, Oracle Linux 9,
+Red Hat Enterprise Linux 9, and Rock Linux 9. To review the features and fixes
+included in version `20260228.00` of the guest agent, see the
+[March 2, 2026 release notes](https://docs.cloud.google.com/compute/docs/images/guest-environment/release-notes#March_2_2026).
+
+---
 ## 2026-03-04
 
 ### Feature

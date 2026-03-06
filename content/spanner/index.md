@@ -1,5 +1,27 @@
 # Spanner
 
+## 2026-03-04
+
+### Feature
+
+You can use [continuous queries to stream BigQuery data to
+Spanner in real
+time](https://docs.cloud.google.com/bigquery/docs/export-to-spanner#export_continuously). This feature is
+[generally available (GA)](https://cloud.google.com/products/#product-launch-stages).
+
+---
+## 2026-03-03
+
+### Feature
+
+Spanner supports the `ON CONFLICT` clause for
+GoogleSQL `INSERT` statements to handle unique constraint
+violations. For more information, see [`ON CONFLICT DO
+NOTHING`](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/dml-syntax#insert-on-conflict-do-nothing)
+and [`ON CONFLICT DO
+UPDATE`](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/dml-syntax#insert-on-conflict-do-update).
+
+---
 ## 2026-02-26
 
 ### Feature

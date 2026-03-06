@@ -1,6 +1,32 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2026-03-05": [
+      {
+        "kind": "Feature",
+        "content": "The [H4D machine series](https://docs.cloud.google.com/compute/docs/compute-optimized-machines#h4d_series),\ndesigned for high performance computing (HPC) workloads, is generally available\nfor GKE clusters. Based on 5th generation AMD EPYC Turin with\nCloud RDMA 200 Gbps networking, H4D VMs offer 192 cores (SMT disabled), up to\n1,488 GB of memory, and 3,750 GiB of Local SSD. H4D is optimized for\ntightly-coupled applications that scale across multiple nodes and offers\nRDMA-enabled 200 Gbps networking.\n\nYou can use H4D with GKE clusters in Standard, or with\nthe Performance compute class in Autopilot. For more information, see\n[Run high performance computing (HPC) workloads with H4D](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/run-hpc-workloads).",
+        "summary": {
+          "title": "HPC VMs now available for GKE",
+          "summary": "High performance computing (HPC) virtual machines are now generally available for GKE clusters. These VMs are designed for demanding workloads and offer enhanced performance and networking capabilities. You can now leverage these powerful resources for your HPC applications within GKE."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "GKE Inference Quickstart (GIQ) now offers\nrecommendations for distributed AI inference. This enables you to deploy\noptimized, full configurations for advanced models, such as the Qwen and gpt-oss\nmodel families, on NVIDIA GPUs and Cloud TPUs.\n\nThis release introduces GKE Inference Gateway by integrating\nllm-d inference scheduling. You can select optimized configurations for\nworkloads like Advanced Customer Support, Code Completion, and Deep Research.\nThis tunes your infrastructure to meet the specific latency and throughput\nrequirements of these applications.\n\nFor more information, see [Analyze model serving performance and costs with Inference Quickstart](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/machine-learning/inference/inference-quickstart).",
+        "summary": {
+          "title": "GKE Inference Quickstart Adds Distributed AI Recommendations",
+          "summary": "GKE Inference Quickstart now provides recommendations for distributed AI inference, enabling optimized deployments of advanced models like Qwen and gpt-oss on NVIDIA GPUs and Cloud TPUs. This feature integrates GKE Inference Gateway with llm-d inference scheduling to tune infrastructure for specific latency and throughput needs, supporting workloads such as advanced customer support and code completion."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can use automated disk type selection for Hyperdisk volumes on\nGKE. This feature allows GKE to automatically\nselect the most appropriate disk type based on the machine type of the node\nwhere your workload is scheduled.\n\nWith this feature, you can create a single StorageClass that supports clusters\nwith mixed VM generations. For example, GKE can provision\nHyperdisk on compatible instances (such as C3 or C4) while automatically falling\nback to Persistent Disk on other generations.\n\nFor more information, see [Automated disk type selection](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/hyperdisk#automated_disk_type_selection).",
+        "summary": {
+          "title": "Automated Disk Selection for Hyperdisk",
+          "summary": "GKE now automatically selects the best disk type for Hyperdisk volumes based on your node's machine type. This simplifies storage management, especially in clusters with mixed VM generations, by ensuring optimal provisioning whether it's Hyperdisk or Persistent Disk."
+        }
+      }
+    ],
     "2026-02-25": [
       {
         "kind": "Change",

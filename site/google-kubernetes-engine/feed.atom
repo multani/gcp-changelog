@@ -2,9 +2,68 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2026-02-25T00:00:00+00:00</updated>
+  <updated>2026-03-05T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-03-05:feature:0</id>
+    <published>2026-03-05T00:00:00+00:00</published>
+    <updated>2026-03-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/compute/docs/compute-optimized-machines#h4d_series">H4D machine series</a>,
+designed for high performance computing (HPC) workloads, is generally available
+for GKE clusters. Based on 5th generation AMD EPYC Turin with
+Cloud RDMA 200 Gbps networking, H4D VMs offer 192 cores (SMT disabled), up to
+1,488 GB of memory, and 3,750 GiB of Local SSD. H4D is optimized for
+tightly-coupled applications that scale across multiple nodes and offers
+RDMA-enabled 200 Gbps networking.</p>
+<p>You can use H4D with GKE clusters in Standard, or with
+the Performance compute class in Autopilot. For more information, see
+<a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/run-hpc-workloads">Run high performance computing (HPC) workloads with H4D</a>.</p>]]></content>
+    <summary>High performance computing (HPC) virtual machines are now generally available for GKE clusters. These VMs are designed for demanding workloads and offer enhanced performance and networking capabilities. You can now leverage these powerful resources for your HPC applications within GKE.</summary>
+    <title>Feature: HPC VMs now available for GKE</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-03-05:feature:1</id>
+    <published>2026-03-05T00:00:00+00:00</published>
+    <updated>2026-03-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>GKE Inference Quickstart (GIQ) now offers
+recommendations for distributed AI inference. This enables you to deploy
+optimized, full configurations for advanced models, such as the Qwen and gpt-oss
+model families, on NVIDIA GPUs and Cloud TPUs.</p>
+<p>This release introduces GKE Inference Gateway by integrating
+llm-d inference scheduling. You can select optimized configurations for
+workloads like Advanced Customer Support, Code Completion, and Deep Research.
+This tunes your infrastructure to meet the specific latency and throughput
+requirements of these applications.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/machine-learning/inference/inference-quickstart">Analyze model serving performance and costs with Inference Quickstart</a>.</p>]]></content>
+    <summary>GKE Inference Quickstart now provides recommendations for distributed AI inference, enabling optimized deployments of advanced models like Qwen and gpt-oss on NVIDIA GPUs and Cloud TPUs. This feature integrates GKE Inference Gateway with llm-d inference scheduling to tune infrastructure for specific latency and throughput needs, supporting workloads such as advanced customer support and code completion.</summary>
+    <title>Feature: GKE Inference Quickstart Adds Distributed AI Recommendations</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-03-05:feature:2</id>
+    <published>2026-03-05T00:00:00+00:00</published>
+    <updated>2026-03-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can use automated disk type selection for Hyperdisk volumes on
+GKE. This feature allows GKE to automatically
+select the most appropriate disk type based on the machine type of the node
+where your workload is scheduled.</p>
+<p>With this feature, you can create a single StorageClass that supports clusters
+with mixed VM generations. For example, GKE can provision
+Hyperdisk on compatible instances (such as C3 or C4) while automatically falling
+back to Persistent Disk on other generations.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/hyperdisk#automated_disk_type_selection">Automated disk type selection</a>.</p>]]></content>
+    <summary>GKE now automatically selects the best disk type for Hyperdisk volumes based on your node's machine type. This simplifies storage management, especially in clusters with mixed VM generations, by ensuring optimal provisioning whether it's Hyperdisk or Persistent Disk.</summary>
+    <title>Feature: Automated Disk Selection for Hyperdisk</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

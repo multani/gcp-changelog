@@ -1,5 +1,19 @@
 # Google SecOps
 
+## 2026-03-05
+
+### Announcement
+
+**Google Agentic SOC Trial**
+
+There will be a no-cost trial for the Google SecOps Triage Investigative Agent
+(TIN) from April 1, 2026 to June 30, 2026. TIN is an agentic AI feature for Google
+SecOps that helps automate security investigations. For more information about
+the trial, see [Google Agentic SOC Trial details](https://docs.cloud.google.com/chronicle/docs/agentic-soc/trial).
+For more information about TIN, see
+[Use Triage and Investigation Agent to investigate alerts](https://docs.cloud.google.com/chronicle/docs/secops/triage-investigation-agent).
+
+---
 ## 2026-03-04
 
 ### Announcement
@@ -13,23 +27,13 @@ For more information, see [Manage prebuilt parser versions](https://docs.cloud.g
 ---
 ## 2026-03-02
 
-### Deprecated
-
-`Chronicle.soarAnalyst`, `chronicle.soarViewer`, `chronicle.soarEngineer` roles in Cloud IAM are being deprecated and will be fully removed in six months. Although these roles were accessible and can historically be assigned to users in Cloud IAM, they were non-operational. SOAR roles were managed through Permission Groups and with its migration to Cloud IAM as part of the [SOAR Migration to Google Cloud](https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp#permissions-iam), the preceding roles are being deprecated.
-
-To maintain seamless access and adhere to the principle of least privilege, transition your SOAR users to the following options:
-
-* Automatically convert your SOAR Permission Groups to custom roles in IAM through [self-service migration](https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp#permissions-iam).
-* Pre-defined roles: Utilize the enhanced Google SecOps [pre-defined roles](https://docs.cloud.google.com/iam/docs/roles-permissions/chronicle#google-security-operations-roles) now available in Cloud IAM.
-* Custom Roles: Create tailored roles with [specific permissions](https://docs.cloud.google.com/iam/docs/roles-permissions/chronicle#google-security-operations-permissions) to meet your organization's unique security requirements.
-
 ### Feature
 
 **New Unified rules interface**
 
 This feature is currently in Preview.
 
-Google SecOps has launched a unified rules interface that
+Google Secops has launched a unified rules interface that
 brings custom and curated rule management into a single, cohesive workflow.
 This update optimizes detection engineering with a redesigned dashboard, an
 advanced rule editor, and expanded API capabilities to streamline rule
@@ -66,6 +70,16 @@ access and complex filtering:
   efficient querying.
 
 For details, see [Manage unified rules](https://docs.cloud.google.com/chronicle/docs/detection/unified-rules/get-started).
+
+### Deprecated
+
+`Chronicle.soarAnalyst`, `chronicle.soarViewer`, `chronicle.soarEngineer` roles in Cloud IAM are being deprecated and will be fully removed in six months. Although these roles were accessible and can historically be assigned to users in Cloud IAM, they were non-operational. SOAR roles were managed through Permission Groups and with its migration to Cloud IAM as part of the [SOAR Migration to Google Cloud](https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp#permissions-iam), the preceding roles are being deprecated.
+
+To maintain seamless access and adhere to the principle of least privilege, transition your SOAR users to the following options:
+
+* Automatically convert your SOAR Permission Groups to custom roles in IAM through [self-service migration](https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp#permissions-iam).
+* Pre-defined roles: Utilize the enhanced Google SecOps [pre-defined roles](https://docs.cloud.google.com/iam/docs/roles-permissions/chronicle#google-security-operations-roles) now available in Cloud IAM.
+* Custom Roles: Create tailored roles with [specific permissions](https://docs.cloud.google.com/iam/docs/roles-permissions/chronicle#google-security-operations-permissions) to meet your organization's unique security requirements.
 
 ---
 ## 2026-02-25

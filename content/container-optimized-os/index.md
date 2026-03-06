@@ -1,5 +1,214 @@
 # Container Optimized OS
 
+## 2026-03-04
+
+### Change
+
+
+
+### cos-113-18244-582-29
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.161](https://cos.googlesource.com/third_party/kernel/+/2f3d82e8d18f259f62bd81421e80cfb19aa2a822 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.582.29/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-61732 in dev-lang/go.
+
+### Security
+
+Fixed CVE-2026-23112 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23119 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-apps/less to v692.
+
+### Security
+
+Fixed CVE-2026-23168 in the Linux kernel.
+
+### Security
+
+Upgraded net-misc/curl to version 8.18.0. This fixes CVE-2025-10966, CVE-2025-13034, CVE-2025-14017, CVE-2025-14524, CVE-2025-14819, CVE-2025-15079, and CVE-2025-15224.
+
+### Security
+
+Fixed CVE-2025-6075 in python.
+
+### Security
+
+Fixed KCTF-e3f000f in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23156 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-60753 in libarchive.
+
+### Security
+
+Fixed CVE-2025-58187 in dev-lang/go.
+
+### Change
+
+Fixed an issue where most platforms would use only half of the available GVNIC TX queues.
+
+### Security
+
+Fixed CVE-2026-23124 in the Linux kernel.
+
+### Fixed
+
+Upgraded net-misc/socat to v1.8.1.1.
+
+### Security
+
+Fixed CVE-2026-23193 in the Linux kernel.
+
+### Fixed
+
+Upgraded net-dns/c-ares to v1.31.0.
+
+### Security
+
+Fixed CVE-2026-23145 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23212 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23205 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23086 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23198 in the Linux kernel.
+
+### Change
+
+
+
+### cos-121-18867-381-24
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.122](https://cos.googlesource.com/third_party/kernel/+/8182b8864d9e39f8ec1bd6d96a4e6b2380412f26 ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.381.24/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-58187 in dev-lang/go.
+
+### Fixed
+
+Upgraded dev-util/gdbus-codegen to v2.86.3.
+
+### Security
+
+Fixed CVE-2026-23230 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23216 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23229 in the Linux kernel.
+
+### Change
+
+Fixed an issue where most platforms would use only half of the available GVNIC TX queues.
+
+### Security
+
+Upgraded dev-libs/glib to v2.86.3. This fixes
+CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.
+
+### Change
+
+
+
+### cos-125-19216-220-34
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.68](https://cos.googlesource.com/third_party/kernel/+/8ae4fb3efb4e9b9c6276d3c9247c7a123a73fca6 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.220.34/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Upgraded dev-util/gdbus-codegen to v2.86.3.
+
+### Change
+
+Added support for the Lustre 2.14.0\_p246 drivers.
+
+### Security
+
+Fixed CVE-2026-23230 in the Linux kernel.
+
+### Fixed
+
+Upgraded the galog version to v0.0.0-20250924170816-9dbf105986f4 in google-guest-agent to fix an issue with high CPU consumption.
+
+### Security
+
+Fixed CVE-2026-23229 in the Linux kernel.
+
+### Security
+
+Upgraded dev-libs/glib to v2.86.3. This fixes
+CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.
+
+### Security
+
+Fixed CVE-2026-23204 in the Linux kernel.
+
+### Change
+
+
+
+### cos-117-18613-534-24
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.123](https://cos.googlesource.com/third_party/kernel/+/c6a9ce222e73689842f21f4e17890d16e03cd17b ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.534.24/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-58187 in dev-lang/go.
+
+### Security
+
+Fixed CVE-2025-61732 in dev-lang/go.
+
+### Change
+
+Fixed an issue where most platforms would use only half of the available GVNIC TX queues.
+
+### Change
+
+Added support for the Lustre 2.14.0\_p246 drivers.
+
+### Security
+
+Fixed KCTF-e3f000f in the Linux kernel.
+
+---
 ## 2026-02-27
 
 ### Change

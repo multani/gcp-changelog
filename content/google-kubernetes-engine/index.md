@@ -1,5 +1,51 @@
 # Google Kubernetes Engine
 
+## 2026-03-05
+
+### Feature
+
+The [H4D machine series](https://docs.cloud.google.com/compute/docs/compute-optimized-machines#h4d_series),
+designed for high performance computing (HPC) workloads, is generally available
+for GKE clusters. Based on 5th generation AMD EPYC Turin with
+Cloud RDMA 200 Gbps networking, H4D VMs offer 192 cores (SMT disabled), up to
+1,488 GB of memory, and 3,750 GiB of Local SSD. H4D is optimized for
+tightly-coupled applications that scale across multiple nodes and offers
+RDMA-enabled 200 Gbps networking.
+
+You can use H4D with GKE clusters in Standard, or with
+the Performance compute class in Autopilot. For more information, see
+[Run high performance computing (HPC) workloads with H4D](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/run-hpc-workloads).
+
+### Feature
+
+GKE Inference Quickstart (GIQ) now offers
+recommendations for distributed AI inference. This enables you to deploy
+optimized, full configurations for advanced models, such as the Qwen and gpt-oss
+model families, on NVIDIA GPUs and Cloud TPUs.
+
+This release introduces GKE Inference Gateway by integrating
+llm-d inference scheduling. You can select optimized configurations for
+workloads like Advanced Customer Support, Code Completion, and Deep Research.
+This tunes your infrastructure to meet the specific latency and throughput
+requirements of these applications.
+
+For more information, see [Analyze model serving performance and costs with Inference Quickstart](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/machine-learning/inference/inference-quickstart).
+
+### Feature
+
+You can use automated disk type selection for Hyperdisk volumes on
+GKE. This feature allows GKE to automatically
+select the most appropriate disk type based on the machine type of the node
+where your workload is scheduled.
+
+With this feature, you can create a single StorageClass that supports clusters
+with mixed VM generations. For example, GKE can provision
+Hyperdisk on compatible instances (such as C3 or C4) while automatically falling
+back to Persistent Disk on other generations.
+
+For more information, see [Automated disk type selection](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/hyperdisk#automated_disk_type_selection).
+
+---
 ## 2026-02-25
 
 ### Change

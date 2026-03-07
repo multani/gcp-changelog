@@ -1,5 +1,51 @@
 # Cloud Composer
 
+## 2026-03-03
+
+### Announcement
+
+A new Cloud Composer release has started on **March 03, 2026**. Get ready
+for upcoming changes and features as we roll out the new release to all regions.
+This release is in progress at the moment. Listed changes and features might
+not be available in some regions yet.
+
+### Change
+
+New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)
+are available in Cloud Composer 2:
+
+* [composer-2.16.6-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-6-airflow-2-10-5) (default)
+* [composer-2.16.6-airflow-2.9.3](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-6-airflow-2-9-3)
+
+### Feature
+
+[Per-folder roles registration](https://docs.cloud.google.com/composer/docs/composer-3/airflow-rbac#about-per-folder-registration)
+is available in environments with Airflow 3 (Preview) starting from Airflow version 3.1.7.
+
+### Feature
+
+[Highly Resilient environments](https://docs.cloud.google.com/composer/docs/composer-3/set-up-highly-resilient-environments)
+are available in environments with Airflow 3 (Preview) starting from
+Airflow version 3.1.7.
+
+### Feature
+
+**Airflow 3.1.7 is available** in Cloud Composer 3.
+
+### Change
+
+New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)
+are available in Cloud Composer 3:
+
+* [composer-3-airflow-3.1.7-build.0](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-7-build-0)
+* [composer-3-airflow-2.10.5-build.29](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-29) (default)
+* [composer-3-airflow-2.9.3-build.49](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-49)
+
+### Change
+
+Airflow 3.1.0 is no longer included in Cloud Composer images and builds.
+
+---
 ## 2026-02-20
 
 ### Deprecated

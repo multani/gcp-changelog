@@ -62,10 +62,11 @@ The following features are available in
 ### Feature
 
 [Connectivity Tests](https://docs.cloud.google.com/network-intelligence-center/docs/connectivity-tests/concepts/overview)
-identifies peering dynamic routes and Network Connectivity
+identifies the following routes as invalid: peering dynamic routes and
+Network Connectivity
 Center dynamic routes that are dropped due to
 [network-](https://docs.cloud.google.com/vpc/docs/quota#per_network) or
-[hub-level](https://docs.cloud.google.com/network-connectivity/quotas#quotas_5) quotas as invalid.
+[hub-level](https://docs.cloud.google.com/network-connectivity/quotas#quotas_5) quotas.
 
 ---
 ## 2026-02-18

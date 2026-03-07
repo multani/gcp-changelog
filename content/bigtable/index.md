@@ -1,5 +1,16 @@
 # Bigtable
 
+## 2026-03-06
+
+### Feature
+
+[Bigtable tools in the Agent Development Kit (ADK)](https://google.github.io/adk-docs/integrations/bigtable/)
+are [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+With these tools, you can build AI agents that interact with Bigtable to
+discover metadata about Bigtable tables and instances and execute LLM-powered
+SQL queries.
+
+---
 ## 2026-02-18
 
 ### Announcement

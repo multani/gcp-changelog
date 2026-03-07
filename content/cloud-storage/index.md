@@ -1,5 +1,15 @@
 # Cloud Storage
 
+## 2026-03-06
+
+### Feature
+
+You can now [identify publicly accessible objects](https://docs.cloud.google.com/storage/docs/insights/datasets#public-accessible-objects) ([preview](https://docs.cloud.google.com/products#product-launch-stages)) by using Storage Insights
+datasets. The object metadata schema includes fields that provide the public
+access status of your objects, which lets you understand, organize, and manage
+publicly accessible objects at scale.
+
+---
 ## 2026-03-05
 
 ### Feature

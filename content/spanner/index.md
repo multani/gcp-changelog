@@ -22,6 +22,18 @@ and [`ON CONFLICT DO
 UPDATE`](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/dml-syntax#insert-on-conflict-do-update).
 
 ---
+## 2026-02-27
+
+### Feature
+
+Spanner supports using the pending commit timestamp function
+as a default value and an `ON UPDATE` expression for column definitions. For
+more information, see the GoogleSQL
+[`ON UPDATE` clause](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/data-definition-language#spanner-on-update)
+and the PostgreSQL
+[`ON UPDATE` clause](https://docs.cloud.google.com/spanner/docs/reference/postgresql/data-definition-language#postgresql-on-update).
+
+---
 ## 2026-02-26
 
 ### Feature

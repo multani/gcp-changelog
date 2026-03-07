@@ -1,5 +1,14 @@
 # Looker Studio
 
+## 2026-03-06
+
+### Feature
+
+**Correction: CSV connector enhancement available to all users**
+
+Enhancements to the [CSV connector](https://docs.cloud.google.com/looker/docs/studio/upload-csv-files) user interface are available to all Looker Studio users. This feature was previously announced as being available only to Looker Studio Pro users.
+
+---
 ## 2026-02-12
 
 ### Feature

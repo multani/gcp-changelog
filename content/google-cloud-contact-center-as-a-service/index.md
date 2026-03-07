@@ -17,6 +17,46 @@ This patch does the following:
 ---
 ## 2026-02-17
 
+### Announcement
+
+**Google Cloud CCaaS 4.0**
+
+We've released version 4.0 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**Raw data export: new call\_participants data type**
+
+We've added the `call_participants` data type to raw data export. This data type
+helps you track the following escalation details for wait-time virtual agents:
+
+* The amount of time the wait-time virtual agent spent in queue.
+* The number of events sent to the wait-time virtual agent while it was in
+  queue.
+
+For more information, see [Raw data export
+dictionary](https://docs.cloud.google.com/contact-center/ccai-platform/docs/raw-data-export-dictionary).
+
+### Feature
+
+**Salesforce Service Cloud: new secondary lookup object**
+
+The Salesforce Service Cloud integration can now use a secondary lookup object
+to identify customer records when the primary lookup object returns no results.
+This helps prevent the creation of duplicate records.
+
+Administrators: When you click **Settings > Developer Settings
+> CRM > Salesforce > SFDC Cloud Selection
+> Service Cloud**, a new **Secondary Lookup Object** checkbox appears
+in the **Account Lookup** section.
+
+For more information, see [Configure account lookup and field
+mapping](https://docs.cloud.google.com/contact-center/ccai-platform/docs/salesforce-integration-guide#configure-account-lookup).
+
 ### Fixed
 
 The following issues were addressed in this release:
@@ -60,46 +100,8 @@ The following issues were addressed in this release:
   the agent.
 * Fixed an issue where agents appeared as `Available` in the **Agent Activity
   Timeline** report after signing out.
-
-### Announcement
-
-**Google Cloud CCaaS 4.0**
-
-We've released version 4.0 of Google Cloud CCaaS.
-
-The timing of the update to your instance depends on the deployment schedule
-that you have chosen. For more information, see [Deployment
-schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
-
-### Feature
-
-**Raw data export: new call\_participants data type**
-
-We've added the `call_participants` data type to raw data export. This data type
-helps you track the following escalation details for wait-time virtual agents:
-
-* The amount of time the wait-time virtual agent spent in queue.
-* The number of events sent to the wait-time virtual agent while it was in
-  queue.
-
-For more information, see [Raw data export
-dictionary](https://docs.cloud.google.com/contact-center/ccai-platform/docs/raw-data-export-dictionary).
-
-### Feature
-
-**Salesforce Service Cloud: new secondary lookup object**
-
-The Salesforce Service Cloud integration can now use a secondary lookup object
-to identify customer records when the primary lookup object returns no results.
-This helps prevent the creation of duplicate records.
-
-Administrators: When you click **Settings > Developer Settings
-> CRM > Salesforce > SFDC Cloud Selection
-> Service Cloud**, a new **Secondary Lookup Object** checkbox appears
-in the **Account Lookup** section.
-
-For more information, see [Configure account lookup and field
-mapping](https://docs.cloud.google.com/contact-center/ccai-platform/docs/salesforce-integration-guide#configure-account-lookup).
+* Fixed an issue where Salesforce integrations created duplicate cases for a
+  single outbound call.
 
 ---
 ## 2026-02-03

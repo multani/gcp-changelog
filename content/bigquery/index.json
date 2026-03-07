@@ -1,6 +1,24 @@
 {
   "name": "BigQuery",
   "entries": {
+    "2026-03-06": [
+      {
+        "kind": "Feature",
+        "content": "You can create a [remote model](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-remote-model-embedding-maas)\nbased on the Vertex AI `gemini-embedding-001` model, or a\n[remote model](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-remote-model-open)\nbased on an open embedding model from Vertex Model Garden or Hugging Face that\nis deployed to Vertex AI.\n\nYou can then use the\n[`AI.GENERATE_EMBEDDING` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate-embedding)\nwith these remote models to generate embeddings. You can also use the\n[`AI.EMBED` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-embed)\ndirectly with the `gemini-embedding-001` model endpoint.\n\nThese features are\n[generally available](https://cloud.google.com/products/#product-launch-stages)\n(GA).",
+        "summary": {
+          "title": "Generate embeddings with BigQuery ML",
+          "summary": "You can now create remote models in BigQuery ML based on Vertex AI embedding models, including gemini-embedding-001. Use the AI.GENERATE_EMBEDDING or AI.EMBED functions to generate embeddings directly within BigQuery. These features are now generally available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now use the [Pipelines & Connections page](https://docs.cloud.google.com/bigquery/docs/pipeline-connection-page)\nto streamline your data integration tasks by using guided,\nBigQuery-specific configuration workflows for services like\nBigQuery Data Transfer Service, Datastream, and Pub/Sub.\n\nThis feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).",
+        "summary": {
+          "title": "Simplify data integration with new configuration workflows",
+          "summary": "The new Pipelines & Connections page offers guided, BigQuery-specific configuration workflows for services like BigQuery Data Transfer Service, Datastream, and Pub/Sub. This feature streamlines your data integration tasks. It is currently in Preview."
+        }
+      }
+    ],
     "2026-03-05": [
       {
         "kind": "Feature",

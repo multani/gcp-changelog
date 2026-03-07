@@ -2,9 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: BigQuery</title>
   <subtitle>Changelog for Google Cloud product: BigQuery</subtitle>
-  <updated>2026-03-05T00:00:00+00:00</updated>
+  <updated>2026-03-06T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:bigquery</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/bigquery/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-03-06:feature:0</id>
+    <published>2026-03-06T00:00:00+00:00</published>
+    <updated>2026-03-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can create a <a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-remote-model-embedding-maas">remote model</a>
+based on the Vertex AI <code>gemini-embedding-001</code> model, or a
+<a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-remote-model-open">remote model</a>
+based on an open embedding model from Vertex Model Garden or Hugging Face that
+is deployed to Vertex AI.</p>
+<p>You can then use the
+<a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate-embedding"><code>AI.GENERATE_EMBEDDING</code> function</a>
+with these remote models to generate embeddings. You can also use the
+<a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-embed"><code>AI.EMBED</code> function</a>
+directly with the <code>gemini-embedding-001</code> model endpoint.</p>
+<p>These features are
+<a href="https://cloud.google.com/products/#product-launch-stages">generally available</a>
+(GA).</p>]]></content>
+    <summary>You can now create remote models in BigQuery ML based on Vertex AI embedding models, including gemini-embedding-001. Use the AI.GENERATE_EMBEDDING or AI.EMBED functions to generate embeddings directly within BigQuery. These features are now generally available.</summary>
+    <title>Feature: Generate embeddings with BigQuery ML</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-03-06:feature:1</id>
+    <published>2026-03-06T00:00:00+00:00</published>
+    <updated>2026-03-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now use the <a href="https://docs.cloud.google.com/bigquery/docs/pipeline-connection-page">Pipelines &amp; Connections page</a>
+to streamline your data integration tasks by using guided,
+BigQuery-specific configuration workflows for services like
+BigQuery Data Transfer Service, Datastream, and Pub/Sub.</p>
+<p>This feature is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>]]></content>
+    <summary>The new Pipelines &amp; Connections page offers guided, BigQuery-specific configuration workflows for services like BigQuery Data Transfer Service, Datastream, and Pub/Sub. This feature streamlines your data integration tasks. It is currently in Preview.</summary>
+    <title>Feature: Simplify data integration with new configuration workflows</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

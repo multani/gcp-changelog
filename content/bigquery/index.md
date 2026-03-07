@@ -1,5 +1,35 @@
 # BigQuery
 
+## 2026-03-06
+
+### Feature
+
+You can create a [remote model](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-remote-model-embedding-maas)
+based on the Vertex AI `gemini-embedding-001` model, or a
+[remote model](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-remote-model-open)
+based on an open embedding model from Vertex Model Garden or Hugging Face that
+is deployed to Vertex AI.
+
+You can then use the
+[`AI.GENERATE_EMBEDDING` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate-embedding)
+with these remote models to generate embeddings. You can also use the
+[`AI.EMBED` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-embed)
+directly with the `gemini-embedding-001` model endpoint.
+
+These features are
+[generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
+
+### Feature
+
+You can now use the [Pipelines & Connections page](https://docs.cloud.google.com/bigquery/docs/pipeline-connection-page)
+to streamline your data integration tasks by using guided,
+BigQuery-specific configuration workflows for services like
+BigQuery Data Transfer Service, Datastream, and Pub/Sub.
+
+This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-03-05
 
 ### Feature

@@ -1,5 +1,29 @@
 # Vertex AI
 
+## 2026-03-05
+
+### Announcement
+
+**Vector Search 2.0 is generally available (GA)**
+
+Vector Search 2.0 is generally available ([GA](https://cloud.google.com/products/#product-launch-stages)).
+
+Vector Search 2.0 is a retrieval engine designed to streamline AI development
+and serve as the knowledge core for AI applications.
+
+Available features:
+
+* [Collections](https://docs.cloud.google.com/vertex-ai/docs/vector-search-2/collections/collections)
+  unifying data and vectors.
+* Auto-embeddings for populating vector fields automatically.
+* Hybrid search and ranking combining vector, full-text, and built-in semantic
+  re-ranking in a single parallel query.
+* Private Service Connect (PSC), Private Google Accesss (PGA), and VPC Service
+  Controls support.
+
+For more information, see the [Vector Search 2.0 documentation](https://docs.cloud.google.com/vertex-ai/docs/vector-search-2/overview).
+
+---
 ## 2026-02-17
 
 ### Deprecated

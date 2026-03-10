@@ -1,5 +1,15 @@
 # Storage Transfer Service
 
+## 2026-03-09
+
+### Change
+
+The size limit for manifest files used in agent-based transfers has been removed.
+
+For more information, see
+[Transfer specific files or objects using a manifest](https://docs.cloud.google.com/storage-transfer/docs/manifest).
+
+---
 ## 2026-02-02
 
 ### Feature

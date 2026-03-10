@@ -1,5 +1,14 @@
 # Sensitive Data Protection
 
+## 2026-03-07
+
+### Feature
+
+You can configure Sensitive Data Protection to detect specific metadata
+labels in your content. For more information, see [Create a custom metadata
+label detector](https://docs.cloud.google.com/sensitive-data-protection/docs/create-custom-infotypes-metadata-labels).
+
+---
 ## 2026-02-23
 
 ### Feature

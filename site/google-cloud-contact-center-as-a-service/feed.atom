@@ -2,9 +2,339 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-02-25T00:00:00+00:00</updated>
+  <updated>2026-03-09T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-09:feature:0</id>
+    <published>2026-03-09T00:00:00+00:00</published>
+    <updated>2026-03-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>HubSpot lookup against company profiles</strong></p>
+<p>HubSpot integrations now support lookups against Company profiles.
+Administrators can configure primary and secondary lookup objects, allowing the
+system to search for end-users across both Contacts and Companies to ensure
+accurate identification during active sessions.</p>]]></content>
+    <summary>HubSpot integrations now support lookups against company profiles. Administrators can configure primary and secondary lookup objects to search for end-users across both Contacts and Companies, ensuring accurate identification during active sessions.</summary>
+    <title>Feature: HubSpot company profile lookups</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-09:announcement:1</id>
+    <published>2026-03-09T00:00:00+00:00</published>
+    <updated>2026-03-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS prerelease notes</strong></p>
+<p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
+we release the next version, we expect the new capabilities to be as shown here.</p>]]></content>
+    <summary>Get ready for the next version of our Contact Center as a Service platform. This release will introduce exciting new capabilities designed to enhance your customer experience.</summary>
+    <title>Announcement: New CCaaS Features Coming Soon</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-09:feature:2</id>
+    <published>2026-03-09T00:00:00+00:00</published>
+    <updated>2026-03-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Improved support for multiple agent matches for agent extension searches</strong></p>
+<p>When an end-user inputs an agent extension number at the beginning of a call and
+there are multiple agent matches, the system now reads agent matches in groups
+of eight. This gets the end-user to the correct agent faster. We've added the
+following new extension directory messages to help guide the end-user to the
+correct agent:</p>
+<ul>
+<li>Multiple agents found</li>
+<li>Search results next page</li>
+<li>End of search results</li>
+</ul>]]></content>
+    <summary>The system now groups agent matches in sets of eight when multiple agents are found for an extension number. New messages guide users through the search results, leading them to the correct agent more quickly.</summary>
+    <title>Feature: Faster Agent Matching</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-09:feature:3</id>
+    <published>2026-03-09T00:00:00+00:00</published>
+    <updated>2026-03-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>HubSpot: Mobile Phone Number Lookup</strong></p>
+<p>Admins can now enable mobile phone number lookups for HubSpot integrations to
+ensure callers are accurately matched with existing contacts. To activate this,
+navigate to <strong>Settings &gt; Developer Settings &gt; CRM</strong> and check the <strong>Mobile phone
+number lookup</strong> box in the new <strong>Phone Number Lookup</strong> section. Once enabled,
+the system will automatically search both the "Phone number" and "Mobile phone
+number" fields in HubSpot during incoming voice or chat sessions.</p>]]></content>
+    <summary>Admins can now enable mobile phone number lookups for HubSpot integrations. This feature ensures callers are accurately matched with existing contacts by automatically searching both 'Phone number' and 'Mobile phone number' fields during incoming voice or chat sessions.</summary>
+    <title>Feature: Mobile number lookup for HubSpot</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-09:fixed:4</id>
+    <published>2026-03-09T00:00:00+00:00</published>
+    <updated>2026-03-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were addressed in this release:</p>
+<ul>
+<li>Fixed an issue where outbound calls were incorrectly prompting for customer
+  satisfaction (CSAT) feedback when a menu was assigned.</li>
+<li>Fixed an issue where the French Canadian translation for "wrap-up" was
+  inconsistent between the chat adapter and notes panel.</li>
+<li>Fixed an issue where filtering agents by Team on the Agents tab resulted in
+  significant delays.</li>
+<li>Fixed an issue where users were unable to download reports from the virtual
+  agent dashboard and chat history if the requested date range exceeded the
+  storage retention period.</li>
+<li>Fixed an issue where SMS, WhatsApp, and AMB queues that were copied from Web
+  or IVR channels incorrectly inherited transfer restrictions, preventing
+  agents from transferring chats.</li>
+<li>Fixed an issue where users were unable to upload a key when adding or
+  editing a redaction platform under developer settings.</li>
+<li>Fixed an issue where call recording links were not being pushed to HubSpot
+  cases as expected.</li>
+<li>Fixed an issue where agents intermittently failed to connect to incoming
+  calls and were immediately disconnected, causing calls to requeue or drop
+  unexpectedly.</li>
+<li>Fixed an issue where chat and call queues appeared unavailable for transfers
+  when destination agents reached maximum capacity or were in an unavailable
+  status.</li>
+<li>Fixed an issue where toggling the Whisper Announcement or Countdown settings
+  in Automatic Redirection would unintentionally disable the Customize
+  Greetings Announcement option.</li>
+<li>Fixed an issue where callback selections made after a virtual agent handover
+  were not accurately reflected in downloadable reports.</li>
+<li>Fixed an issue where the <strong>Available</strong> filter didn't display agents that
+  were available to receive a transfer.</li>
+<li>Fixed an issue with Alvaria Workforce integrations where files were rejected
+  due to a random suffix added to the RECORDKEY value.</li>
+<li>Fixed an issue where two end-users could be connected simultaneously to a
+  single agent during campaign calls.</li>
+<li>Fixed an issue where the inactive chat dismissal timer did not reset after a
+  conversation was escalated from a virtual agent to a live agent queue.</li>
+<li>Fixed an issue where transcript metadata files were sometimes stored in the
+  folder for the following day instead of matching the transcript file date,
+  ensuring all metadata and transcript files are now consistently organized by
+  the correct chat end date.</li>
+<li>Fixed an issue where agents appeared available but were unable to receive or
+  be re-offered calls due to repeated WebSocket presence updates and
+  connection expirations.</li>
+<li>Fixed an issue where Direct Access Points configured with SIP URIs
+  containing spaces or non-standard formats failed to route calls correctly.</li>
+<li>Fixed an issue where the Agents tab filter in the UJET Portal displayed "All
+  undefined" and was unclickable, preventing manual agent selection.</li>
+<li>Fixed an issue where managers could access queue reports requested by other
+  managers, even if they were not involved in the relevant queues.</li>
+<li>Fixed an issue where searching by Location on the Users &amp; Teams page could
+  return agents who no longer matched the search criteria. Search results now
+  accurately reflect current agent locations.</li>
+<li>Fixed an issue where users did not see a message indicating that no time
+  slots were available when selecting a queue with no available time slots.</li>
+<li>Fixed an issue where the fetch time slots endpoint incorrectly included
+  non-working days when calculating available future time slots.</li>
+<li>Fixed an issue where call recordings failed to convert from MP3 to WAV,
+  preventing playback in Call Quality Assurance tools that require WAV format.</li>
+<li>Fixed an issue where, after a warm call transfer, if Agent 1 left the call
+  and Agent 2 resumed the conversation, there was no audio between Agent 2 and
+  the end user.</li>
+<li>Fixed a 500 Internal Server Error that occurred when administrators tried to
+  add a new language (for example, Danish) under the "Languages and Message"
+  settings. This error prevented the language from being added to the list.</li>
+<li>Fixed an issue where the chat widget landmark was missing an accessible
+  label. The chat widget now includes an aria-label matching the chat button
+  label.</li>
+<li>
+<p>We have updated the session metadata to provide a strict distinction between
+  Escalations and Transfers. This ensures that reporting accurately reflects
+  the business context of how a session moves between resources. The session
+  metadata will now categorize these events as follows:</p>
+</li>
+<li>
+<p><strong>Escalation</strong>: Recorded only when a Virtual Agent transfers a session
+    to a Human Agent.</p>
+</li>
+<li>
+<p><strong>Transfer</strong>: Recorded for all other routing scenarios, including:</p>
+<ul>
+<li>Human Agent &gt; Human Agent</li>
+<li>Virtual Agent &gt; Virtual Agent (Support or Task)</li>
+<li>Human Agent &gt; Virtual Agent</li>
+<li>Fixed an issue where updating a contact's mobile phone number during an
+  interaction would incorrectly overwrite the existing phone number field.</li>
+<li>Fixed an issue where chats that ended due to end user timeout or
+  disconnection were incorrectly shown as "undefined" in the Interaction
+  Outcome column of platform reports.</li>
+<li>Fixed an issue in WFM data where the handle count was showing incorrect
+  information if a chat spanned multiple intervals.</li>
+<li>Fixed a data discrepancy in NICE WFM interval reports where chat metrics
+  (specifically ContactsReceived and HandledLong) were incorrectly showing
+  activity during time intervals where no chats actually occurred.</li>
+<li>Fixed an issue where calls transferred using warm transfer to another queue
+  were incorrectly deflected due to overcapacity, resulting in a cold transfer
+  instead.</li>
+<li>Fixed an issue where agents with multiple custom roles were incorrectly
+  prevented from changing to certain statuses due to role restriction logic.</li>
+<li>Fixed an issue where changing the "Custom After Hours Deflection" setting in
+  queue configuration would incorrectly reset wrap up settings from "Queue" to
+  "Global."</li>
+<li>Fixed an issue where users with custom roles and correct permissions for
+  Queues were unable to add teams.</li>
+<li>Fixed an issue where the right-side columns on the outbound phone numbers
+  page were not visible and could not be accessed when the browser window was
+  too small.</li>
+<li>Fixed a web SDK issue where the chat modal on Android Chrome was not
+  recognized by screen readers due to a missing dialog role.</li>
+<li>Fixed a web SDK issue where elements behind the Text size menu overlay were
+  focusable, ensuring that keyboard focus now remains on the Text size menu
+  until it is dismissed by the user.</li>
+<li>Fixed a web SDK issue where the "Request a call" option in the chat widget
+  was not accessible to screen reader or keyboard-only users.</li>
+<li>Fixed an issue where agents were incorrectly presented with a manual
+  "Answer" button and placed in "Missed Call" status after a single missed
+  Deltacast, even when auto answer was enabled.</li>
+<li>Fixed an issue where transferring a direct outbound call to a queue could
+  fail with a "Not Found" error, even when the target menu and agents were
+  available.</li>
+<li>Fixed an issue where the disposition list was not displaying in the
+  configured custom order and instead appeared alphabetically in both Agent
+  Desktop and standard Agent Adapter.</li>
+<li>Fixed an issue where the user inactivity timeout setting did not
+  consistently log out users as configured.</li>
+<li>Fixed an issue where queue channels and menu options would intermittently
+  disappear or fail to load correctly due to delays in feature flag
+  initialization.</li>
+<li>Fixed an issue where adding multiple agents to a team would fail if any
+  selected user was already a member, resulting in a vague error and no agents
+  being added.</li>
+<li>Fixed an issue in Progressive Campaigns where agents were intermittently
+  connected to two outbound call targets simultaneously. This occurred when a
+  dial attempt terminated immediately but failed to detach from the conference
+  bridge before the next attempt connected.</li>
+<li>Fixed an issue where deleting a queue that was the target of an automatic
+  redirection could cause transfer options to fail to load for agents.</li>
+<li>Fixed an issue where adding multiple agents to a team would fail if any
+  selected user was already a member, resulting in a vague error and no agents
+  being added.</li>
+<li>Fixed the following issues that occurred with dual-channel and segmented
+  call recordings:</li>
+</ul>
+</li>
+<li>
+<p>Calls escalated from virtual agents weren't being recorded properly.</p>
+</li>
+<li>Recordings of conversations with transferred agents were missing.</li>
+<li>Fixed an issue where chats escalated from a virtual agent to a human agent
+  queue were incorrectly set to auto answer.</li>
+<li>Fixed an issue where the call recording warning message didn't play for
+  callbacks initiated by virtual agent escalation when the destination queue
+  exceeded capacity.</li>
+<li>Fixed an issue where search results in the <strong>Directory</strong> tab of the
+  <strong>Transfer/Add party</strong> screen in the call adapter persisted after closing
+  and reopening the screen.</li>
+<li>Fixed an issue where the call adapter displayed an error when the <strong>Call</strong>
+  button was clicked.</li>
+<li>Fixed an issue where uploading an automatic-redirection audio recording in
+  one IVR queue caused the recording to incorrectly appear in a different IVR
+  queue.</li>
+<li>Fixed an issue where custom agent statuses restricted to specific roles
+  weren't visible to users assigned those roles.</li>
+<li>Fixed an issue where contacts added to an outbound campaign using the
+  <code>/outbound_dialer/campaigns/CAMPAIGN_ID/contacts</code> endpoint weren't dialed.</li>
+<li>Fixed an issue where users who authenticated with Single Sign-On (SSO)
+  couldn't update their profiles due to an invalid password error.</li>
+<li>Fixed an issue where the queue list on the <strong>Settings &gt; Queues</strong>
+  page didn't load for instances with a large number of queues.</li>
+<li>Fixed an issue where the interaction history in the agent adapter
+  incorrectly displayed as empty.</li>
+<li>Fixed an issue where Salesforce account lookup settings couldn't be saved
+  when selecting the <code>Person Account</code> object and record types.</li>
+<li>Fixed an issue in the chat adapter where the <strong>Previous Interactions</strong>
+  summary displayed duplicate section headings (<strong>Customer Satisfaction</strong> and
+  <strong>Action</strong>) and an incorrect section heading (<strong>Label</strong>).</li>
+<li>Fixed an issue where team managers couldn't download agent reports when
+  selecting the <strong>All Agents</strong> filter.</li>
+<li>Fixed an issue where the system didn't record the failure reason when a
+  virtual agent tried to escalate a chat to a human agent outside of
+  operating hours.</li>
+<li>Fixed an issue where using the <strong>Bulk User Management</strong> tool to deactivate
+  users failed.</li>
+<li>Fixed an issue where the <strong>Monitoring Chat</strong> screen displayed chats
+  incorrectly, with misaligned chat bubbles, incorrectly formatted bullets,
+  and missing sender names and timestamps.</li>
+<li>Fixed an issue where the <strong>Directory</strong> screen in the call adapter appeared
+  empty when an agent tried to start an internal call transfer to another
+  agent.</li>
+<li>Fixed an issue where agent prioritization for deltacast selection was
+  incorrect.</li>
+<li>Fixed a web SDK issue where underscores in text (for example, in email
+  addresses like user_name@example.com) were incorrectly removed in messages
+  to end-users.</li>
+<li>Fixed a web SDK issue for iOS users where the <strong>Yes</strong> and <strong>No</strong> buttons in
+  the survey request at the end of a chat were hidden.</li>
+</ul>]]></content>
+    <summary>A comprehensive update has been released, addressing a wide range of issues across various features including call handling, chat functionality, reporting, and integrations. This update ensures improved stability and user experience.</summary>
+    <title>Fixed: Numerous issues fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-09:feature:5</id>
+    <published>2026-03-09T00:00:00+00:00</published>
+    <updated>2026-03-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Resume chat endpoint</strong></p>
+<p>You can use the new <code>chats/CHAT_ID/resume</code> endpoint to resume chat sessions that
+are in <code>dismissed</code> or <code>va_dismissed</code> status. Resumed chat sessions display the
+chat history to both the end-user and the agent.</p>]]></content>
+    <summary>You can now resume dismissed chat sessions using the new chats/CHAT_ID/resume endpoint. This will restore the chat history for both users and agents.</summary>
+    <title>Feature: Resume chat sessions</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-09:feature:6</id>
+    <published>2026-03-09T00:00:00+00:00</published>
+    <updated>2026-03-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Callback fulfillment hours</strong></p>
+<p>You can configure callback fulfillment hours, which are the hours when your
+contact center fulfills callbacks. If you enable callback rollovers to the next
+day, callbacks that are scheduled outside of these hours are rolled over to the
+next day. If you don't enable callback rollovers, callbacks that are scheduled
+outside of these hours are canceled. Callback fulfillment hours aren't available
+by default. To use this capability, ask your Google contact to turn it on for
+your instance.</p>]]></content>
+    <summary>Configure specific hours for fulfilling callbacks in your contact center. This feature allows you to manage when callbacks are processed, with options to roll over unscheduled callbacks to the next day or cancel them.</summary>
+    <title>Feature: Callback Fulfillment Hours</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-09:feature:7</id>
+    <published>2026-03-09T00:00:00+00:00</published>
+    <updated>2026-03-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Improved controls for predictive campaigns</strong></p>
+<p>We've added the following controls to predictive campaigns to reduce the risk of
+call abandonment due to overdialing. These controls let you ramp up dialing
+rates more naturally and consistently.</p>
+<ul>
+<li><strong>Max Calls Per Agent</strong></li>
+<li><strong>Target Agent Occupancy</strong></li>
+</ul>
+<p>We've also made the <strong>Max Abandonment %</strong> setting optional, for campaigns that
+don't require maintaining a maximum abandonment percentage.</p>
+<p>Administrators: When you click **Campaigns &gt; Add Campaign</p>
+<blockquote>
+<p>Mode &gt; Predictive<strong>, the new controls appear in the
+</strong>Add Campaign** dialog.</p>
+</blockquote>]]></content>
+    <summary>We've introduced new controls for predictive campaigns, including Max Calls Per Agent and Target Agent Occupancy, to help reduce call abandonment. The Max Abandonment % setting is now optional, providing more flexibility for campaign setup.</summary>
+    <title>Feature: New controls for predictive campaigns</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

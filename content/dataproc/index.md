@@ -1,5 +1,29 @@
 # Dataproc
 
+## 2026-03-08
+
+### Fixed
+
+* Fixed CVEs CVE-2025-58057, CVE-2025-53864, CVE-2025-68161, CVE-2025-48924 (partial), and CVE-2025-33042.
+* Upgraded hms-proxy to v0.0.78 to fix CVEs.
+
+### Announcement
+
+New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions):
+
+* 2.1.110-debian11, 2.1.110-rocky8, 2.1.110-ubuntu20, 2.1.110-ubuntu20-arm
+* 2.2.78-debian12, 2.2.78-rocky9, 2.2.78-ubuntu22, 2.2.78-ubuntu22-arm
+* 2.3.25-debian12, 2.3.25-ml-ubuntu22, 2.3.25-rocky9, 2.3.25-ubuntu22, 2.3.25-ubuntu22-arm
+
+### Feature
+
+Enabled Optimized Iceberg Vacuum by default in Spark for premium tier clusters.
+When enabled, Dataproc will use a shuffle-based approach to rewrite data files,
+which can improve performance for MERGE queries that modify a large number of
+files. To disable this feature, set `spark.dataproc.sql.optimizer.lowShuffleMerge.enabled`
+to `false`.
+
+---
 ## 2026-03-06
 
 ### Announcement

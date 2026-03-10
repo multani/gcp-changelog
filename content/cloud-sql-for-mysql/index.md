@@ -1,5 +1,13 @@
 # Cloud SQL for MySQL
 
+## 2026-03-09
+
+### Feature
+
+You can now execute SQL statements using the [Cloud SQL Data API](https://docs.cloud.google.com/sql/docs/mysql/executesql-instance) for
+administrative queries.
+
+---
 ## 2026-03-02
 
 ### Feature

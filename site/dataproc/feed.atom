@@ -2,9 +2,54 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Dataproc</title>
   <subtitle>Changelog for Google Cloud product: Dataproc</subtitle>
-  <updated>2026-03-06T00:00:00+00:00</updated>
+  <updated>2026-03-08T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:dataproc</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/dataproc/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-03-08:fixed:0</id>
+    <published>2026-03-08T00:00:00+00:00</published>
+    <updated>2026-03-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed CVEs CVE-2025-58057, CVE-2025-53864, CVE-2025-68161, CVE-2025-48924 (partial), and CVE-2025-33042.</li>
+<li>Upgraded hms-proxy to v0.0.78 to fix CVEs.</li>
+</ul>]]></content>
+    <summary>Several security vulnerabilities have been addressed. The hms-proxy component has been upgraded to version 0.0.78 as part of these fixes.</summary>
+    <title>Fixed: Security fixes applied</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-03-08:announcement:1</id>
+    <published>2026-03-08T00:00:00+00:00</published>
+    <updated>2026-03-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions">Dataproc on Compute Engine subminor image versions</a>:</p>
+<ul>
+<li>2.1.110-debian11, 2.1.110-rocky8, 2.1.110-ubuntu20, 2.1.110-ubuntu20-arm</li>
+<li>2.2.78-debian12, 2.2.78-rocky9, 2.2.78-ubuntu22, 2.2.78-ubuntu22-arm</li>
+<li>2.3.25-debian12, 2.3.25-ml-ubuntu22, 2.3.25-rocky9, 2.3.25-ubuntu22, 2.3.25-ubuntu22-arm</li>
+</ul>]]></content>
+    <summary>We are announcing new subminor image versions for Dataproc on Compute Engine. These updates include support for various operating systems and architectures. Check the documentation for a full list of available versions.</summary>
+    <title>Announcement: New Dataproc image versions available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-03-08:feature:2</id>
+    <published>2026-03-08T00:00:00+00:00</published>
+    <updated>2026-03-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Enabled Optimized Iceberg Vacuum by default in Spark for premium tier clusters.
+When enabled, Dataproc will use a shuffle-based approach to rewrite data files,
+which can improve performance for MERGE queries that modify a large number of
+files. To disable this feature, set <code>spark.dataproc.sql.optimizer.lowShuffleMerge.enabled</code>
+to <code>false</code>.</p>]]></content>
+    <summary>Optimized Iceberg Vacuum is now enabled by default in Spark for premium tier Dataproc clusters. This feature improves MERGE query performance by rewriting data files using a shuffle-based approach. You can disable it by setting spark.dataproc.sql.optimizer.lowShuffleMerge.enabled to false.</summary>
+    <title>Feature: Optimized Iceberg Vacuum Now Default</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

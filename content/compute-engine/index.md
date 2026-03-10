@@ -1,5 +1,15 @@
 # Compute Engine
 
+## 2026-03-10
+
+### Feature
+
+When you autoscale a managed instance group (MIG), you can monitor the
+configured group size and the size recommended by the autoscaler on a chart. For
+more information, see
+[Monitor group size](https://docs.cloud.google.com/compute/docs/autoscaler/understanding-autoscaler-decisions#monitor_group_size).
+
+---
 ## 2026-03-05
 
 ### Issue

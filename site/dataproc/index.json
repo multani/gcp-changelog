@@ -1,6 +1,32 @@
 {
   "name": "Dataproc",
   "entries": {
+    "2026-03-08": [
+      {
+        "kind": "Fixed",
+        "content": "* Fixed CVEs CVE-2025-58057, CVE-2025-53864, CVE-2025-68161, CVE-2025-48924 (partial), and CVE-2025-33042.\n* Upgraded hms-proxy to v0.0.78 to fix CVEs.",
+        "summary": {
+          "title": "Security fixes applied",
+          "summary": "Several security vulnerabilities have been addressed. The hms-proxy component has been upgraded to version 0.0.78 as part of these fixes."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions):\n\n* 2.1.110-debian11, 2.1.110-rocky8, 2.1.110-ubuntu20, 2.1.110-ubuntu20-arm\n* 2.2.78-debian12, 2.2.78-rocky9, 2.2.78-ubuntu22, 2.2.78-ubuntu22-arm\n* 2.3.25-debian12, 2.3.25-ml-ubuntu22, 2.3.25-rocky9, 2.3.25-ubuntu22, 2.3.25-ubuntu22-arm",
+        "summary": {
+          "title": "New Dataproc image versions available",
+          "summary": "We are announcing new subminor image versions for Dataproc on Compute Engine. These updates include support for various operating systems and architectures. Check the documentation for a full list of available versions."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Enabled Optimized Iceberg Vacuum by default in Spark for premium tier clusters.\nWhen enabled, Dataproc will use a shuffle-based approach to rewrite data files,\nwhich can improve performance for MERGE queries that modify a large number of\nfiles. To disable this feature, set `spark.dataproc.sql.optimizer.lowShuffleMerge.enabled`\nto `false`.",
+        "summary": {
+          "title": "Optimized Iceberg Vacuum Now Default",
+          "summary": "Optimized Iceberg Vacuum is now enabled by default in Spark for premium tier Dataproc clusters. This feature improves MERGE query performance by rewriting data files using a shuffle-based approach. You can disable it by setting spark.dataproc.sql.optimizer.lowShuffleMerge.enabled to false."
+        }
+      }
+    ],
     "2026-03-06": [
       {
         "kind": "Announcement",

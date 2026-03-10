@@ -1,5 +1,14 @@
 # Cloud Monitoring
 
+## 2026-03-09
+
+### Feature
+
+You can configure legend templates for PromQL-formatted charts.
+To learn more, see
+[Configure the name of a legend column](https://docs.cloud.google.com/monitoring/charts/working-with-legends#descr_template).
+
+---
 ## 2026-03-02
 
 ### Feature

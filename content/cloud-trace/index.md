@@ -1,5 +1,21 @@
 # Cloud Trace
 
+## 2026-03-09
+
+### Change
+
+You can send trace data to your Google Cloud project by using the Cloud Trace API or
+the Telemetry API. These two APIs are enabled individually.
+
+If you send trace data to the Telemetry API endpoint, then Google Cloud Observability
+requires that the Cloud Trace API be enabled on your Google Cloud project before
+it stores the trace data. If the Cloud Trace API is disabled, then Google Cloud Observability
+discards the trace data.
+
+To learn more, see
+[APIs that ingest trace data](https://docs.cloud.google.com/trace/docs/overview#supported-apis).
+
+---
 ## 2026-02-26
 
 ### Feature

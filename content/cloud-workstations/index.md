@@ -1,5 +1,14 @@
 # Cloud Workstations
 
+## 2026-03-06
+
+### Announcement
+
+The [Cloud Workstations base editor](https://docs.cloud.google.com/workstations/docs/preconfigured-ides#cloud-workstations-base-editor)
+(Code OSS for Cloud Workstations) has been upgraded to `1.108.2`. The last image that offers the
+previous version is tagged `code-oss-1.104.3`.
+
+---
 ## 2026-02-19
 
 ### Feature

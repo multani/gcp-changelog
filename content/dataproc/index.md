@@ -1,5 +1,43 @@
 # Dataproc
 
+## 2026-03-06
+
+### Announcement
+
+Serverless for Apache Spark [3.0](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-3.0) runtime version:
+
+* Updated Spark version to [4.0.1](https://spark.apache.org/releases/spark-release-4-0-1.html).
+* Updated BigQuery Spark Connector version to [0.44.0](https://github.com/GoogleCloudDataproc/spark-bigquery-connector/releases/tag/0.44.0).
+* Applied patch for [SPARK-52601](https://issues.apache.org/jira/browse/SPARK-52601).
+* Applied patch for [SPARK-52614](https://issues.apache.org/jira/browse/SPARK-52614).
+
+### Announcement
+
+Serverless for Apache Spark [1.2](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-1.2), [2.2](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-2.2) and [2.3](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-2.3) runtime versions:
+
+* Updated Delta Lake version to [3.2.1](https://github.com/delta-io/delta/releases/tag/v3.2.1).
+
+### Announcement
+
+New [Serverless for Apache Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
+
+* 1.2.74
+* 2.2.74
+* 2.3.27
+* 3.0.10
+
+---
+## 2026-03-03
+
+### Announcement
+
+New [Serverless for Apache Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
+
+* 1.2.73
+* 2.2.73
+* 2.3.26
+
+---
 ## 2026-02-27
 
 ### Announcement

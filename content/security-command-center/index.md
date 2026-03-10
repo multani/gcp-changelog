@@ -1,5 +1,18 @@
 # Security Command Center
 
+## 2026-03-09
+
+### Announcement
+
+In March 2026, Risk Engine will launch enhanced heuristics to more accurately
+identify [default high-value resources](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-learn#default-high-value-resource-set).
+
+No action is required. As a result of this enhancement, customers using the
+default high-value resource set may observe changes in the exposure scores of
+their findings, resources, and issues. Customers using custom resource value
+configurations are not affected.
+
+---
 ## 2026-03-05
 
 ### Feature

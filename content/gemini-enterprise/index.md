@@ -29,6 +29,14 @@ files in the Box connector, removing the need to upload these files to the
 Gemini Enterprise assistant. For more information, see
 [Chat with files in connectors](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-chat#chat_with_files_in_connectors).
 
+### Fixed
+
+**Gemini Enterprise: Agent Designer model configuration fix**
+
+Fixed an issue in Agent Designer that caused agent model configurations to be
+cleared or fail to appear during the transition from Gemini 3 Pro
+(Preview) to Gemini 3.1 Pro (Preview).
+
 ---
 ## 2026-03-03
 

@@ -2,9 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Trace</title>
   <subtitle>Changelog for Google Cloud product: Cloud Trace</subtitle>
-  <updated>2026-02-26T00:00:00+00:00</updated>
+  <updated>2026-03-09T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-trace</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-trace/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-trace:2026-03-09:change:0</id>
+    <published>2026-03-09T00:00:00+00:00</published>
+    <updated>2026-03-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can send trace data to your Google Cloud project by using the Cloud Trace API or
+the Telemetry API. These two APIs are enabled individually.</p>
+<p>If you send trace data to the Telemetry API endpoint, then Google Cloud Observability
+requires that the Cloud Trace API be enabled on your Google Cloud project before
+it stores the trace data. If the Cloud Trace API is disabled, then Google Cloud Observability
+discards the trace data.</p>
+<p>To learn more, see
+<a href="https://docs.cloud.google.com/trace/docs/overview#supported-apis">APIs that ingest trace data</a>.</p>]]></content>
+    <summary>Trace data can be sent to your project using the Cloud Trace API or the Telemetry API. Ensure the Cloud Trace API is enabled when using the Telemetry API to avoid data loss.</summary>
+    <title>Change: Trace Data Ingestion Update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

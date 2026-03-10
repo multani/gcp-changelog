@@ -1,6 +1,16 @@
 {
   "name": "Looker",
   "entries": {
+    "2026-03-09": [
+      {
+        "kind": "Feature",
+        "content": "It is no longer necessary to [manually configure OAuth credentials](https://docs.cloud.google.com/looker/docs/looker-core-create-oauth) when creating a Looker (Google Cloud core) instance that uses only public secure connections and no custom domain. For these instances, Looker (Google Cloud core) now automatically manages OAuth client and secret information, simplifying the setup process. Manual OAuth configuration is still required for instances that use private connections, hybrid connections, or a custom domain.",
+        "summary": {
+          "title": "Simplified Looker OAuth Setup",
+          "summary": "Looker (Google Cloud core) now automatically manages OAuth credentials for instances using public secure connections and no custom domain, removing the need for manual configuration. This streamlined process simplifies instance setup. Manual OAuth configuration remains necessary for instances with private, hybrid, or custom domain connections."
+        }
+      }
+    ],
     "2026-03-05": [
       {
         "kind": "Fixed",
@@ -32,6 +42,14 @@
         "summary": {
           "title": "Looker 26.4 Release Details",
           "summary": "The Looker 26.4 release is scheduled for March 2026, with deployments for both Looker (original) and Looker (Google Cloud core) beginning in the second week of the month. Final deployments and downloads will be available by March 19th for the original version and March 23rd for the Google Cloud core version."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Full support for connections with [AlloyDB for PostgreSQL](https://docs.cloud.google.com/looker/docs/db-config-alloydb) is available in preview. When you [create a connection](https://docs.cloud.google.com/looker/docs/connecting-to-your-db) in Looker, you can now select **Google Cloud AlloyDB for PostgreSQL** from the Dialect drop-down menu. This update does not affect existing AlloyDB connections that were created using the **PostgreSQL 9.5+** option in the Dialect menu.\n\n**Note:** This item was updated March 9, 2026.",
+        "summary": {
+          "title": "AlloyDB for PostgreSQL connections now in preview",
+          "summary": "Looker now offers full support for connections with AlloyDB for PostgreSQL, available in preview. You can select this new dialect when creating new database connections in Looker. Existing connections made with the PostgreSQL 9.5+ option will not be affected."
         }
       },
       {
@@ -112,14 +130,6 @@
         "summary": {
           "title": "Preview Features page replaces Labs",
           "summary": "The Labs page in the Admin panel is now called Preview Features. This new page categorizes in-progress features into 'Preview features' and 'Labs features' for better clarity on their status. Your enablement status for each feature remains unchanged."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "Now generally available, Looker has full support for connections with [AlloyDB for PostgreSQL](https://docs.cloud.google.com/looker/docs/db-config-alloydb). When you [create a connection](https://docs.cloud.google.com/looker/docs/connecting-to-your-db) in Looker, you can now select **Google Cloud AlloyDB for PostgreSQL** from the Dialect drop-down menu. This update does not affect existing AlloyDB connections that were created using the **PostgreSQL 9.5+** option in the Dialect menu.",
-        "summary": {
-          "title": "Looker adds AlloyDB support",
-          "summary": "Looker now offers general availability for full support of AlloyDB for PostgreSQL connections. You can select this option directly from the Dialect drop-down menu when creating a new database connection in Looker. Existing connections using PostgreSQL 9.5+ will not be affected."
         }
       },
       {

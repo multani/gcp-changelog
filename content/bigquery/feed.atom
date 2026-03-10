@@ -2,9 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: BigQuery</title>
   <subtitle>Changelog for Google Cloud product: BigQuery</subtitle>
-  <updated>2026-03-06T00:00:00+00:00</updated>
+  <updated>2026-03-09T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:bigquery</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/bigquery/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-03-09:feature:0</id>
+    <published>2026-03-09T00:00:00+00:00</published>
+    <updated>2026-03-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Updates to <a href="https://docs.cloud.google.com/bigquery/docs/conversational-analytics">conversational analytics</a> include the following improvements:</p>
+<ul>
+<li>ObjectRef support: BigQuery conversational analytics now
+  integrates with Google Cloud Storage through <a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/objectref_functions">ObjectRef functions</a>.
+  This lets you reference and interact with unstructured data such as images and
+  PDFs in Cloud Storage buckets in your conversational analysis.</li>
+<li>BQML support: BigQuery conversational analytics now supports <a href="https://docs.cloud.google.com/bigquery/docs/conversational-analytics#bigquery-ml-support">a set of BigQuery ML functions</a>,
+  including AI.FORECAST, AI.DETECT_ANOMALIES, and AI.GENERATE. These functions
+  let you perform advanced analytics tasks with simple conversational prompts.</li>
+<li>Chat with BigQuery results: You can now start conversations and chat with
+  query results in BigQuery Studio (SQL editor).</li>
+<li>Enhanced support for partitioned tables: BigQuery conversational analytics can
+  now use BigQuery table partitioning. The agent can optimize SQL queries by
+  using partitioned columns such as date ranges on a date-partitioned table.
+  This can improve query performance and reduce costs.</li>
+<li>Labels for agent-generated queries: BigQuery jobs initiated by the
+  conversational analytics agent are now labeled in <a href="https://docs.cloud.google.com/bigquery/docs/managing-jobs">BigQuery Job History</a>
+  in the Google Cloud Console. You can identify, filter, and analyze the jobs
+  run by the conversational analytics agent by referencing labels similar to
+  <code>{‘ca-bq-job’: ‘true’}</code>. These labels can help with the following tasks:</li>
+<li>Monitor and attribute cost.</li>
+<li>Audit agent activity.</li>
+<li>Analyze agent-generated query performance.</li>
+<li>Suggest next questions (clickable): When working with BigQuery
+  conversational analytics, the agent now suggests questions that are directly
+  clickable in the Google Cloud console.</li>
+</ul>
+<p>This feature is available in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>]]></content>
+    <summary>BigQuery conversational analytics has been updated with ObjectRef and BQML support, allowing direct interaction with unstructured data and advanced AI functions through simple prompts. You can now chat with query results, benefit from enhanced partitioned table support for better performance, and track agent-generated queries with new labels. Additionally, suggested next questions are now clickable for a smoother user experience. This feature is currently in Preview.</summary>
+    <title>Feature: Conversational Analytics Enhancements</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

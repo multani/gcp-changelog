@@ -2352,6 +2352,17 @@
 
 
 <h1 id="cloud-trace">Cloud Trace</h1>
+<h2 id="2026-03-09">2026-03-09</h2>
+<h3 id="change">Change</h3>
+<p>You can send trace data to your Google Cloud project by using the Cloud Trace API or
+the Telemetry API. These two APIs are enabled individually.</p>
+<p>If you send trace data to the Telemetry API endpoint, then Google Cloud Observability
+requires that the Cloud Trace API be enabled on your Google Cloud project before
+it stores the trace data. If the Cloud Trace API is disabled, then Google Cloud Observability
+discards the trace data.</p>
+<p>To learn more, see
+<a href="https://docs.cloud.google.com/trace/docs/overview#supported-apis">APIs that ingest trace data</a>.</p>
+<hr />
 <h2 id="2026-02-26">2026-02-26</h2>
 <h3 id="feature">Feature</h3>
 <p>For organizations, folders, and projects, you can now configure
@@ -2419,7 +2430,7 @@ To learn more, see the following documents:</p>
 </ul>
 <hr />
 <h2 id="2026-01-26">2026-01-26</h2>
-<h3 id="change">Change</h3>
+<h3 id="change_1">Change</h3>
 <p>To support correlation between log and trace data, the following changes have
 been made:</p>
 <ul>
@@ -2529,6 +2540,9 @@ your AI agent. You can view generative AI events by using the
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-trace">Cloud Trace</a></li>
+          <li class="nav-item">
+            <a href="#2026-03-09" class="nav-link">2026-03-09</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-02-26" class="nav-link">2026-02-26</a>
           </li>

@@ -1,5 +1,25 @@
 # Google Kubernetes Engine
 
+## 2026-03-10
+
+### Feature
+
+Managed OpenTelemetry for GKE is available in Preview for
+clusters running version 1.34.1-gke.2178000 or later. Managed OpenTelemetry for
+GKE provides a fully managed and simplified experience for
+collecting OpenTelemetry Protocol (OTLP) traces, metrics, and logs on
+GKE. This feature includes the following characteristics:
+
+* **Managed collection:** an in-cluster OTLP endpoint that automatically routes
+  telemetry to the Cloud Telemetry API.
+* **Automatic configuration:** a new Instrumentation custom resource that
+  automatically injects environment variables into your workloads to simplify
+  OTLP ingestion.
+
+For more information, see
+[Managed OpenTelemetry for GKE](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/managed-otel-gke).
+
+---
 ## 2026-03-05
 
 ### Feature

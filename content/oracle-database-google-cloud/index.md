@@ -1,5 +1,14 @@
 # Oracle Database@Google Cloud
 
+## 2026-03-11
+
+### Feature
+
+For Exadata Database Service, Oracle Database@Google Cloud adds zone `europe-west8-a-r1` (Milan, Italy).
+
+For a list of supported locations, see [Supported regions and zones](https://docs.cloud.google.com/oracle/database/docs/regions-and-zones).
+
+---
 ## 2026-03-06
 
 ### Feature

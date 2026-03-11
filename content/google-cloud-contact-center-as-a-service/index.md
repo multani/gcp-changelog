@@ -1,5 +1,16 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-03-10
+
+### Announcement
+
+**Mobile SDK patch**
+
+This patch fixes an iOS SDK issue where end-users were directed to an
+unresponsive support page after closing a chat session and completing the
+post-chat survey.
+
+---
 ## 2026-03-09
 
 ### Feature

@@ -1,5 +1,19 @@
 # Cloud Storage
 
+## 2026-03-10
+
+### Feature
+
+Rapid Bucket is now [generally available](https://developers.google.com/maps/launch-stages#ga).
+Rapid Bucket lets you store objects in the Rapid storage class by defining a
+zone as a bucket's location. This architecture optimizes data access and I/O
+performance between your storage and compute resources. Rapid Bucket is most
+suitable for data-intensive workloads like AI/ML and high-scale data analytics.
+
+For more information, see [Rapid Bucket](https://docs.cloud.google.com/storage/docs/rapid/rapid-bucket)
+and [Create zonal buckets](https://docs.cloud.google.com/storage/docs/rapid/create-zonal-buckets).
+
+---
 ## 2026-03-06
 
 ### Feature

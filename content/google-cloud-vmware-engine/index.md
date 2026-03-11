@@ -1,5 +1,17 @@
 # Google Cloud VMware Engine
 
+## 2026-03-10
+
+### Feature
+
+**Public Preview:** You can now [migrate VMware management VMs](https://docs.cloud.google.com/vmware-engine/docs/private-clouds/howto-manage-private-cloud#migrate-vms)
+from their host cluster to a different cluster within the same private cloud.
+To migrate management VMs, you must have at least two clusters in your private
+cloud, and the destination cluster must be a workload cluster. This operation
+transitions the target workload cluster to a management cluster, and the source
+management cluster becomes a workload cluster.
+
+---
 ## 2026-03-09
 
 ### Announcement

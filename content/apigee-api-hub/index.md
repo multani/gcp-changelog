@@ -1,5 +1,32 @@
 # Apigee API hub
 
+## 2026-03-10
+
+### Feature
+
+**Security monitoring condition support in Advanced API Security for multi-gateway projects**
+
+Advanced API Security's multi-gateway Risk Assessment feature (available through API hub) now includes support for security monitoring conditions and alerts.
+
+Security monitoring conditions allow you to map resources (gateways) to security profiles.
+Cloud Monitoring can then use this mapping to create dedicated dashboards to track security scores over time and alert based on metric levels.
+
+For information on monitoring conditions features and usage see [Manage monitoring conditions for multiple Apigee organizations and gateways](https://docs.cloud.google.com/apigee/docs/apihub/manage-monitoring-conditions-multi-gateway).
+
+**Note:** Rollouts of this release to production instances might take up to 5 business days to complete across all Google Cloud zones. Your instances might not have the feature available until the rollout is complete.
+
+### Feature
+
+**Support for Apigee Edge Private Cloud (OPDK) in Advanced API Security for multi-gateway projects**
+
+API hub Advanced API Security for multi-gateway now includes support for the OPDK
+gateway type for risk assessment security profiles.
+
+For information on risk assessment custom security profiles and gateway specification, see [Create a security profile](https://docs.cloud.google.com/apigee/docs/apihub/manage-security-profiles-multi-gateway#create-a-security-profile).
+
+**Note:** Rollouts of this release to production instances might take up to 5 business days to complete across all Google Cloud zones. Your instances might not have the feature available until the rollout is complete.
+
+---
 ## 2026-03-04
 
 ### Feature

@@ -1,13 +1,15 @@
 # Cloud Composer
 
-## 2026-03-03
+## 2026-03-10
 
 ### Announcement
 
-A new Cloud Composer release has started on **March 03, 2026**. Get ready
-for upcoming changes and features as we roll out the new release to all regions.
-This release is in progress at the moment. Listed changes and features might
-not be available in some regions yet.
+Cloud Composer 2 environments can no longer be created in
+Turin (europe-west12). We're switching this region to supporting only
+Cloud Composer 3 environments.
+
+---
+## 2026-03-03
 
 ### Change
 

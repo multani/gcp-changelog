@@ -1,5 +1,25 @@
 # Google SecOps
 
+## 2026-03-10
+
+### Feature
+
+**Set up and manage data processing pipelines**
+
+This feature is currently in Preview.
+
+You can now use the **Data Processing** pipelines to filter, transform, and redact
+Google SecOps data before ingestion. This feature provides more
+control over ingested data, letting you reduce costs by filtering out
+unwanted events, transform data for better compatibility, and protect
+sensitive information by redacting or masking values before storage.
+
+You can configure data processing pipelines using the Bindplane console or the
+Google SecOps Data Pipeline APIs.
+
+For more information, see [Set up and manage data processing pipelines](https://docs.cloud.google.com/chronicle/docs/ingestion/data-processing-pipeline).
+
+---
 ## 2026-03-05
 
 ### Change

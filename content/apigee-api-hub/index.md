@@ -6,7 +6,8 @@
 
 **Security monitoring condition support in Advanced API Security for multi-gateway projects**
 
-Advanced API Security's multi-gateway Risk Assessment feature (available through API hub) now includes support for security monitoring conditions and alerts.
+Advanced API Security's multi-gateway Risk Assessment feature (available through
+API hub) now includes support for security monitoring conditions and alerts.
 
 Security monitoring conditions allow you to map resources (gateways) to security profiles.
 Cloud Monitoring can then use this mapping to create dedicated dashboards to track security scores over time and alert based on metric levels.

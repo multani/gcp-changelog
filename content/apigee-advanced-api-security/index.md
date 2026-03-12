@@ -1,5 +1,20 @@
 # Apigee Advanced API Security
 
+## 2026-03-10
+
+### Announcement
+
+On March 10, 2026 we released an updated version of Advanced API Security Abuse Detection
+
+### Feature
+
+**General availability of monitoring conditions in risk assessment v2**
+
+Starting with this release, the risk assessment v2 monitoring conditions feature is generally available.
+
+For information on monitoring conditions features and usage see [monitoring conditions and alerts](https://docs.cloud.google.com/apigee/docs/api-security/security-scores#monitoring-conditions). For usage information and a list of all features in Risk Assessment v2, see the [Risk Assessment v2 customer documentation](https://docs.cloud.google.com/apigee/docs/api-security/security-scores#risk-assessment-v2).
+
+---
 ## 2026-02-03
 
 ### Feature

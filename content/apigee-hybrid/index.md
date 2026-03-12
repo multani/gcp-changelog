@@ -33,10 +33,6 @@
 | --- | --- |
 | **469694040** | **Fixed an issue where custom Java security policies were intermittently not applied during runtime pod restarts or environment contract updates, which could lead to "Permission denied" errors in Java callouts.** |
 
-### Announcement
-
-
-
 ### hybrid v1.15.2
 
 On March 11, 2026 we released an updated version of the Apigee hybrid software, v1.15.2.

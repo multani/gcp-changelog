@@ -1,5 +1,16 @@
 # Dataproc
 
+## 2026-03-11
+
+### Announcement
+
+**Dataproc on Compute Engine:** The following subminor image versions announced on [March 08, 2026](https://docs.cloud.google.com/dataproc/docs/release-notes#March_08_2026) have been rolled back:
+
+* 2.1.110-debian11, 2.1.110-rocky8, 2.1.110-ubuntu20, 2.1.110-ubuntu20-arm
+* 2.2.78-debian12, 2.2.78-rocky9, 2.2.78-ubuntu22, 2.2.78-ubuntu22-arm
+* 2.3.25-debian12, 2.3.25-ml-ubuntu22, 2.3.25-rocky9, 2.3.25-ubuntu22, 2.3.25-ubuntu22-arm
+
+---
 ## 2026-03-08
 
 ### Fixed
@@ -14,6 +25,8 @@ New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.goog
 * 2.1.110-debian11, 2.1.110-rocky8, 2.1.110-ubuntu20, 2.1.110-ubuntu20-arm
 * 2.2.78-debian12, 2.2.78-rocky9, 2.2.78-ubuntu22, 2.2.78-ubuntu22-arm
 * 2.3.25-debian12, 2.3.25-ml-ubuntu22, 2.3.25-rocky9, 2.3.25-ubuntu22, 2.3.25-ubuntu22-arm
+
+**Rollback Notice:** These image versions were rolled back on [March 11, 2026](https://docs.cloud.google.com/dataproc/docs/release-notes#March_11_2026).
 
 ### Feature
 

@@ -1,5 +1,14 @@
 # Google SecOps
 
+## 2026-03-12
+
+### Announcement
+
+**Manage parser versions**
+
+The [Manage parser versions](https://docs.cloud.google.com/chronicle/docs/secops/release-notes#October_07_2025) feature is in Public Preview for all customers.
+
+---
 ## 2026-03-10
 
 ### Feature

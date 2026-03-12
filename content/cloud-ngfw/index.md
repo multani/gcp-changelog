@@ -7,6 +7,18 @@
 You can use network contexts to meet your security goals by using fewer firewall policy rules more efficiently. For more information, see [Network contexts](https://docs.cloud.google.com/firewall/docs/understand-network-contexts). This feature is available in **General Availability**.
 
 ---
+## 2026-02-19
+
+### Feature
+
+Cloud NGFW now supports regional system firewall policies. Regional system
+firewall policies are read-only policies that internal Google services, such as
+Google Kubernetes Engine, use to secure their operations within a VPC network.
+For more information, see [Regional system firewall
+policies](https://docs.cloud.google.com/firewall/docs/firewall-policies-overview#regional-system-firewall-policies).
+This feature is available in **General Availability**.
+
+---
 ## 2026-01-13
 
 ### Feature

@@ -1,6 +1,48 @@
 {
   "name": "Container Optimized OS",
   "entries": {
+    "2026-03-08": [
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service Health Dashboard Update",
+          "summary": "We've updated the Service Health Dashboard to provide more detailed insights into service status and incident timelines. This enhancement aims to improve transparency and help you better manage your cloud environments."
+        }
+      },
+      {
+        "kind": "cos-125-19216-220-43",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.68](https://cos.googlesource.com/third_party/kernel/+/7eb31713b3fb44138b65643ab9d3037e22d29e47 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.220.43/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 19216.220.43 update with GPU driver support",
+          "summary": "Container-Optimized OS (COS) version 19216.220.43 has been released, featuring updates to the kernel, Docker, and containerd. This version includes support for GPU drivers, allowing for enhanced performance in GPU-accelerated workloads. The update ensures compatibility with the latest containerization technologies and hardware capabilities."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Updated cos-gpu-installer to v2.6.0.",
+        "summary": {
+          "title": "GPU Installer Updated",
+          "summary": "The cos-gpu-installer has been updated to version 2.6.0. This update includes the latest improvements and compatibility features for GPU drivers."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Runtime sysctl changes:\n\n* Changed: net.ipv4.udp\\_mem: 188034 250714 376068 -> 188034 250715 376068",
+        "summary": {
+          "title": "Runtime sysctl udp_mem updated",
+          "summary": "The net.ipv4.udp_mem parameter has been updated. This change affects the memory management for UDP sockets. The new values are 188034 250715 376068."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/node-problem-detector to v0.8.25.",
+        "summary": {
+          "title": "Node problem detector updated",
+          "summary": "The node-problem-detector has been upgraded to version 0.8.25. This update addresses issues and improves the stability of the system."
+        }
+      }
+    ],
     "2026-03-04": [
       {
         "kind": "Change",

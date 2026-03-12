@@ -1,5 +1,12 @@
 # Looker
 
+## 2026-03-11
+
+### Feature
+
+Beginning in Looker 26.4, customer-hosted Looker instances will use a new LookML parser with optimized performance. This parser is already in use for Looker-hosted instances. For customer-hosted instances on Looker 26.4, if you want to revert to the legacy parser, contact Looker Support for details on how to disable the new parser. The legacy parser will be fully deprecated in Looker 26.6.
+
+---
 ## 2026-03-09
 
 ### Feature
@@ -33,12 +40,6 @@ An issue has been fixed where dashboards that used ClickHouse connections could 
 * Expected Looker (original) final deployment and download available: **Thursday, March 19, 2026**
 * Expected Looker (Google Cloud core) deployment start: **Monday, March 16, 2026**
 * Expected Looker (Google Cloud core) final deployment: **Monday, March 23, 2026**
-
-### Feature
-
-Full support for connections with [AlloyDB for PostgreSQL](https://docs.cloud.google.com/looker/docs/db-config-alloydb) is available in preview. When you [create a connection](https://docs.cloud.google.com/looker/docs/connecting-to-your-db) in Looker, you can now select **Google Cloud AlloyDB for PostgreSQL** from the Dialect drop-down menu. This update does not affect existing AlloyDB connections that were created using the **PostgreSQL 9.5+** option in the Dialect menu.
-
-**Note:** This item was updated March 9, 2026.
 
 ### Fixed
 
@@ -115,6 +116,12 @@ Dashboard filter enhancements are now generally available. Dashboard filter enha
 * Select or deselect all filter values: Lets users select or deselect all values in tag list and advanced filter type filters.
 * Limit condition controls for advanced filters: Lets dashboard creators limit the condition options that are available to users for advanced filters.
 * Enable [**Include custom filter values**](https://docs.cloud.google.com/looker/docs/presenting-content#adding_dashboards_to_boards_with_custom_filter_values_applied) by default for boards: Admins can choose to enable Include custom filter values for boards by default instance-wide.
+
+### Feature
+
+Full support for connections with [AlloyDB for PostgreSQL](https://docs.cloud.google.com/looker/docs/db-config-alloydb) is available in preview. When you [create a connection](https://docs.cloud.google.com/looker/docs/connecting-to-your-db) in Looker, you can now select **Google Cloud AlloyDB for PostgreSQL** from the Dialect drop-down menu. This update does not affect existing AlloyDB connections that were created using the **PostgreSQL 9.5+** option in the Dialect menu.
+
+**Note:** This item was updated March 9, 2026.
 
 ### Fixed
 

@@ -84,6 +84,7 @@
 - [Cloud SQL for SQL Server](cloud-sql-for-sql-server/index.md)
 - [Cloud Scheduler](cloud-scheduler/index.md)
 - [Cloud Service Mesh](cloud-service-mesh/index.md)
+- [Cloud Shell](cloud-shell/index.md)
 - [Cloud Storage](cloud-storage/index.md)
 - [Cloud TPU](cloud-tpu/index.md)
 - [Cloud Trace](cloud-trace/index.md)

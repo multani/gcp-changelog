@@ -1,5 +1,33 @@
 # Container Optimized OS
 
+## 2026-03-08
+
+### Change
+
+
+
+### cos-125-19216-220-43
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.68](https://cos.googlesource.com/third_party/kernel/+/7eb31713b3fb44138b65643ab9d3037e22d29e47 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.220.43/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Updated cos-gpu-installer to v2.6.0.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 188034 250715 376068
+
+### Fixed
+
+Upgraded app-admin/node-problem-detector to v0.8.25.
+
+---
 ## 2026-03-04
 
 ### Change

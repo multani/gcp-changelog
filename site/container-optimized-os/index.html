@@ -1001,6 +1001,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Cloud shell <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../cloud-shell/" class="dropdown-item">Cloud Shell</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Cloud sql for mysql <b class="caret"></b>
                         </a>
 
@@ -2352,8 +2364,45 @@
 
 
 <h1 id="container-optimized-os">Container Optimized OS</h1>
-<h2 id="2026-03-04">2026-03-04</h2>
+<h2 id="2026-03-08">2026-03-08</h2>
 <h3 id="change">Change</h3>
+<h3 id="cos-125-19216-220-43">cos-125-19216-220-43</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kernel</td>
+<td>Docker</td>
+<td>Containerd</td>
+<td><a href="https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus">GPU Drivers</a></td>
+</tr>
+<tr>
+<td><a href="https://cos.googlesource.com/third_party/kernel/+/7eb31713b3fb44138b65643ab9d3037e22d29e47">COS-6.12.68</a></td>
+<td>v27.5.1</td>
+<td>v2.1.5</td>
+<td><a href="https://storage.googleapis.com/cos-tools/19216.220.43/lakitu/gpu_driver_versions.textproto">See List</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="change_1">Change</h3>
+<p>Updated cos-gpu-installer to v2.6.0.</p>
+<h3 id="change_2">Change</h3>
+<p>Runtime sysctl changes:</p>
+<ul>
+<li>Changed: net.ipv4.udp_mem: 188034 250714 376068 -&gt; 188034 250715 376068</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<p>Upgraded app-admin/node-problem-detector to v0.8.25.</p>
+<hr />
+<h2 id="2026-03-04">2026-03-04</h2>
+<h3 id="change_3">Change</h3>
 <h3 id="cos-113-18244-582-29">cos-113-18244-582-29</h3>
 <table>
 <thead>
@@ -2385,7 +2434,7 @@
 <p>Fixed CVE-2026-23112 in the Linux kernel.</p>
 <h3 id="security_2">Security</h3>
 <p>Fixed CVE-2026-23119 in the Linux kernel.</p>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_1">Fixed</h3>
 <p>Upgraded sys-apps/less to v692.</p>
 <h3 id="security_3">Security</h3>
 <p>Fixed CVE-2026-23168 in the Linux kernel.</p>
@@ -2401,15 +2450,15 @@
 <p>Fixed CVE-2025-60753 in libarchive.</p>
 <h3 id="security_9">Security</h3>
 <p>Fixed CVE-2025-58187 in dev-lang/go.</p>
-<h3 id="change_1">Change</h3>
+<h3 id="change_4">Change</h3>
 <p>Fixed an issue where most platforms would use only half of the available GVNIC TX queues.</p>
 <h3 id="security_10">Security</h3>
 <p>Fixed CVE-2026-23124 in the Linux kernel.</p>
-<h3 id="fixed_1">Fixed</h3>
+<h3 id="fixed_2">Fixed</h3>
 <p>Upgraded net-misc/socat to v1.8.1.1.</p>
 <h3 id="security_11">Security</h3>
 <p>Fixed CVE-2026-23193 in the Linux kernel.</p>
-<h3 id="fixed_2">Fixed</h3>
+<h3 id="fixed_3">Fixed</h3>
 <p>Upgraded net-dns/c-ares to v1.31.0.</p>
 <h3 id="security_12">Security</h3>
 <p>Fixed CVE-2026-23145 in the Linux kernel.</p>
@@ -2421,7 +2470,7 @@
 <p>Fixed CVE-2026-23086 in the Linux kernel.</p>
 <h3 id="security_16">Security</h3>
 <p>Fixed CVE-2026-23198 in the Linux kernel.</p>
-<h3 id="change_2">Change</h3>
+<h3 id="change_5">Change</h3>
 <h3 id="cos-121-18867-381-24">cos-121-18867-381-24</h3>
 <table>
 <thead>
@@ -2449,7 +2498,7 @@
 </table>
 <h3 id="security_17">Security</h3>
 <p>Fixed CVE-2025-58187 in dev-lang/go.</p>
-<h3 id="fixed_3">Fixed</h3>
+<h3 id="fixed_4">Fixed</h3>
 <p>Upgraded dev-util/gdbus-codegen to v2.86.3.</p>
 <h3 id="security_18">Security</h3>
 <p>Fixed CVE-2026-23230 in the Linux kernel.</p>
@@ -2457,12 +2506,12 @@
 <p>Fixed CVE-2026-23216 in the Linux kernel.</p>
 <h3 id="security_20">Security</h3>
 <p>Fixed CVE-2026-23229 in the Linux kernel.</p>
-<h3 id="change_3">Change</h3>
+<h3 id="change_6">Change</h3>
 <p>Fixed an issue where most platforms would use only half of the available GVNIC TX queues.</p>
 <h3 id="security_21">Security</h3>
 <p>Upgraded dev-libs/glib to v2.86.3. This fixes
 CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.</p>
-<h3 id="change_4">Change</h3>
+<h3 id="change_7">Change</h3>
 <h3 id="cos-125-19216-220-34">cos-125-19216-220-34</h3>
 <table>
 <thead>
@@ -2488,13 +2537,13 @@ CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_4">Fixed</h3>
+<h3 id="fixed_5">Fixed</h3>
 <p>Upgraded dev-util/gdbus-codegen to v2.86.3.</p>
-<h3 id="change_5">Change</h3>
+<h3 id="change_8">Change</h3>
 <p>Added support for the Lustre 2.14.0_p246 drivers.</p>
 <h3 id="security_22">Security</h3>
 <p>Fixed CVE-2026-23230 in the Linux kernel.</p>
-<h3 id="fixed_5">Fixed</h3>
+<h3 id="fixed_6">Fixed</h3>
 <p>Upgraded the galog version to v0.0.0-20250924170816-9dbf105986f4 in google-guest-agent to fix an issue with high CPU consumption.</p>
 <h3 id="security_23">Security</h3>
 <p>Fixed CVE-2026-23229 in the Linux kernel.</p>
@@ -2503,7 +2552,7 @@ CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.</p>
 CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.</p>
 <h3 id="security_25">Security</h3>
 <p>Fixed CVE-2026-23204 in the Linux kernel.</p>
-<h3 id="change_6">Change</h3>
+<h3 id="change_9">Change</h3>
 <h3 id="cos-117-18613-534-24">cos-117-18613-534-24</h3>
 <table>
 <thead>
@@ -2533,15 +2582,15 @@ CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.</p>
 <p>Fixed CVE-2025-58187 in dev-lang/go.</p>
 <h3 id="security_27">Security</h3>
 <p>Fixed CVE-2025-61732 in dev-lang/go.</p>
-<h3 id="change_7">Change</h3>
+<h3 id="change_10">Change</h3>
 <p>Fixed an issue where most platforms would use only half of the available GVNIC TX queues.</p>
-<h3 id="change_8">Change</h3>
+<h3 id="change_11">Change</h3>
 <p>Added support for the Lustre 2.14.0_p246 drivers.</p>
 <h3 id="security_28">Security</h3>
 <p>Fixed KCTF-e3f000f in the Linux kernel.</p>
 <hr />
 <h2 id="2026-02-27">2026-02-27</h2>
-<h3 id="change_9">Change</h3>
+<h3 id="change_12">Change</h3>
 <h3 id="cos-121-18867-381-14">cos-121-18867-381-14</h3>
 <table>
 <thead>
@@ -2585,7 +2634,7 @@ CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.</p>
 <p>Fixed CVE-2026-23205 in the Linux kernel.</p>
 <h3 id="security_37">Security</h3>
 <p>Fixed CVE-2026-23204 in the Linux kernel.</p>
-<h3 id="change_10">Change</h3>
+<h3 id="change_13">Change</h3>
 <p>Added support for the Lustre 2.14.0_p246 drivers.</p>
 <h3 id="security_38">Security</h3>
 <p>Fixed CVE-2026-23200 in the Linux kernel.</p>
@@ -2593,7 +2642,7 @@ CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.</p>
 <p>Fixed CVE-2026-23193 in the Linux kernel.</p>
 <hr />
 <h2 id="2026-02-24">2026-02-24</h2>
-<h3 id="change_11">Change</h3>
+<h3 id="change_14">Change</h3>
 <h3 id="cos-dev-133-19566-0-0">cos-dev-133-19566-0-0</h3>
 <table>
 <thead>
@@ -2619,7 +2668,7 @@ CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_12">Change</h3>
+<h3 id="change_15">Change</h3>
 <h3 id="cos-beta-129-19506-0-32">cos-beta-129-19506-0-32</h3>
 <table>
 <thead>
@@ -2645,25 +2694,25 @@ CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_6">Fixed</h3>
-<p>Enabled buffer overflow detection for kernel str/mem functions.</p>
 <h3 id="fixed_7">Fixed</h3>
-<p>Upgraded net-misc/rsync to v3.4.1-r2.</p>
+<p>Enabled buffer overflow detection for kernel str/mem functions.</p>
 <h3 id="fixed_8">Fixed</h3>
-<p>Upgraded net-misc/socat to v1.8.1.0-r1.</p>
+<p>Upgraded net-misc/rsync to v3.4.1-r2.</p>
 <h3 id="fixed_9">Fixed</h3>
+<p>Upgraded net-misc/socat to v1.8.1.0-r1.</p>
+<h3 id="fixed_10">Fixed</h3>
 <p>Added support for NVIDIA driver v580.126.09-grid for NVIDIA_RTX_PRO_6000 GPU type.</p>
 <h3 id="security_40">Security</h3>
 <p>Fixed CVE-2025-40147 in the Linux kernel.</p>
-<h3 id="change_13">Change</h3>
+<h3 id="change_16">Change</h3>
 <p>Updated the Linux kernel to v6.12.74.</p>
-<h3 id="change_14">Change</h3>
+<h3 id="change_17">Change</h3>
 <p>Made it so that /run is mounted as noexec.</p>
 <h3 id="security_41">Security</h3>
 <p>Fixed CVE-2025-15281 and CVE-2026-0861 in sys-libs/glibc.</p>
 <h3 id="security_42">Security</h3>
 <p>Updated dev-libs/libxml2 to version 2.14.6. This resolves CVE-2025-6021.</p>
-<h3 id="fixed_10">Fixed</h3>
+<h3 id="fixed_11">Fixed</h3>
 <p>Upgraded sys-process/procps to v4.0.6.</p>
 <h3 id="security_43">Security</h3>
 <p>Fixed KCTF-e3f000f in the Linux kernel.</p>
@@ -2675,29 +2724,29 @@ CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.</p>
 <p>Fixed KCTF-f8db647 in the Linux kernel.</p>
 <h3 id="security_46">Security</h3>
 <p>Fixed CVE-2026-0915 in sys-apps/glibc.</p>
-<h3 id="fixed_11">Fixed</h3>
+<h3 id="fixed_12">Fixed</h3>
 <p>Upgraded net-libs/libnetfilter_conntrack to v1.1.1.</p>
 <h3 id="security_47">Security</h3>
 <p>Updated dev-libs/openssl to v3.5.5. This resolves CVE-2025-15467.</p>
-<h3 id="fixed_12">Fixed</h3>
-<p>Upgraded app-admin/oslogin to v20260129.00.</p>
 <h3 id="fixed_13">Fixed</h3>
-<p>Upgraded app-admin/google-guest-agent to v20260121.00.</p>
+<p>Upgraded app-admin/oslogin to v20260129.00.</p>
 <h3 id="fixed_14">Fixed</h3>
-<p>Upgraded sys-apps/less to v692.</p>
+<p>Upgraded app-admin/google-guest-agent to v20260121.00.</p>
 <h3 id="fixed_15">Fixed</h3>
-<p>Upgraded sys-apps/gentoo-functions to v1.7.6.</p>
-<h3 id="change_15">Change</h3>
-<p>Upgraded containerd to v2.2.1.</p>
+<p>Upgraded sys-apps/less to v692.</p>
 <h3 id="fixed_16">Fixed</h3>
-<p>Upgraded app-admin/oslogin to v20260128.00.</p>
+<p>Upgraded sys-apps/gentoo-functions to v1.7.6.</p>
+<h3 id="change_18">Change</h3>
+<p>Upgraded containerd to v2.2.1.</p>
 <h3 id="fixed_17">Fixed</h3>
+<p>Upgraded app-admin/oslogin to v20260128.00.</p>
+<h3 id="fixed_18">Fixed</h3>
 <p>Upgraded dev-db/sqlite to v3.51.2.</p>
 <h3 id="feature_1">Feature</h3>
 <p>Added support for NVIDIA driver v535.288.01, v570.211.01 and v580.126.09.</p>
 <h3 id="security_48">Security</h3>
 <p>Fixed CVE-2026-23168 in the Linux kernel.</p>
-<h3 id="fixed_18">Fixed</h3>
+<h3 id="fixed_19">Fixed</h3>
 <p>Added support for NVIDIA driver v580.126.09-grid for NVIDIA_RTX_PRO_6000 GPU type.</p>
 <h3 id="security_49">Security</h3>
 <p>Fixed CVE-2026-23219 in the Linux kernel.</p>
@@ -2715,7 +2764,7 @@ CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.</p>
 <p>Fixed CVE-2026-23214 in the Linux kernel.</p>
 <h3 id="security_56">Security</h3>
 <p>Fixed CVE-2026-23173 in the Linux kernel.</p>
-<h3 id="change_16">Change</h3>
+<h3 id="change_19">Change</h3>
 <p>Upgraded net-misc/curl to version 8.18.0. This fixes CVE-2025-13034, CVE-2025-14017, CVE-2025-14524, CVE-2025-14819, CVE-2025-15079, and CVE-2025-15224.</p>
 <h3 id="security_57">Security</h3>
 <p>Fixed CVE-2026-23200 in the Linux kernel.</p>
@@ -2761,7 +2810,7 @@ CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.</p>
 <p>Fixed CVE-2026-23124 in the Linux kernel.</p>
 <h3 id="security_77">Security</h3>
 <p>Fixed CVE-2026-23154 in the Linux kernel.</p>
-<h3 id="change_17">Change</h3>
+<h3 id="change_20">Change</h3>
 <h3 id="cos-125-19216-220-24">cos-125-19216-220-24</h3>
 <table>
 <thead>
@@ -2791,7 +2840,7 @@ CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.</p>
 <p>Fixed CVE-2026-23168 in the Linux kernel.</p>
 <h3 id="security_79">Security</h3>
 <p>Fixed KCTF-e3f000f in the Linux kernel.</p>
-<h3 id="fixed_19">Fixed</h3>
+<h3 id="fixed_20">Fixed</h3>
 <p>Added support for NVIDIA driver v580.126.09-grid for NVIDIA_RTX_PRO_6000 GPU type.</p>
 <h3 id="security_80">Security</h3>
 <p>Fixed CVE-2026-23179 in the Linux kernel.</p>
@@ -2799,7 +2848,7 @@ CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.</p>
 <p>Fixed CVE-2026-23205 in the Linux kernel.</p>
 <h3 id="security_82">Security</h3>
 <p>Fixed CVE-2025-60753 in libarchive.</p>
-<h3 id="fixed_20">Fixed</h3>
+<h3 id="fixed_21">Fixed</h3>
 <p>Upgraded app-admin/sosreport to v4.11.0.</p>
 <h3 id="security_83">Security</h3>
 <p>Fixed CVE-2026-23156 in the Linux kernel.</p>
@@ -2813,19 +2862,19 @@ CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.</p>
 <p>Fixed CVE-2026-23200 in the Linux kernel.</p>
 <h3 id="security_88">Security</h3>
 <p>Fixed CVE-2026-23198 in the Linux kernel.</p>
-<h3 id="fixed_21">Fixed</h3>
+<h3 id="fixed_22">Fixed</h3>
 <p>Upgraded net-misc/rsync to v3.4.1-r2.</p>
-<h3 id="change_18">Change</h3>
+<h3 id="change_21">Change</h3>
 <p>Fixed CVE-2026-23177 in the Linux kernel.</p>
 <h3 id="security_89">Security</h3>
 <p>Fixed CVE-2026-23214 in the Linux kernel.</p>
-<h3 id="fixed_22">Fixed</h3>
+<h3 id="fixed_23">Fixed</h3>
 <p>Upgraded net-misc/socat to v1.8.1.1.</p>
 <h3 id="security_90">Security</h3>
 <p>Fixed CVE-2026-23193 in the Linux kernel.</p>
 <h3 id="security_91">Security</h3>
 <p>Fixed CVE-2026-23219 in the Linux kernel.</p>
-<h3 id="fixed_23">Fixed</h3>
+<h3 id="fixed_24">Fixed</h3>
 <p>Upgraded sys-apps/less to v692.</p>
 <h3 id="security_92">Security</h3>
 <p>Fixed CVE-2025-47912, CVE-2025-58185, CVE-2025-58187, CVE-2025-58188, CVE-2025-58189, CVE-2025-61723, CVE-2025-61724, CVE-2025-61726, and CVE-2025-61728 in dev-lang/go.</p>
@@ -2853,7 +2902,7 @@ CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.</p>
 <p>Fixed CVE-2026-23154 in the Linux kernel.</p>
 <h3 id="security_103">Security</h3>
 <p>Fixed CVE-2026-23215 in the Linux kernel.</p>
-<h3 id="change_19">Change</h3>
+<h3 id="change_22">Change</h3>
 <h3 id="cos-113-18244-582-11">cos-113-18244-582-11</h3>
 <table>
 <thead>
@@ -2929,7 +2978,7 @@ CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.</p>
 <p>Fixed CVE-2025-15281 and CVE-2026-0861 in sys-libs/glibc.</p>
 <h3 id="security_128">Security</h3>
 <p>Fixed CVE-2026-23025 in the Linux kernel.</p>
-<h3 id="change_20">Change</h3>
+<h3 id="change_23">Change</h3>
 <h3 id="cos-117-18613-534-15">cos-117-18613-534-15</h3>
 <table>
 <thead>
@@ -2957,7 +3006,7 @@ CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.</p>
 </table>
 <h3 id="security_129">Security</h3>
 <p>Fixed CVE-2026-23112 in the Linux kernel.</p>
-<h3 id="fixed_24">Fixed</h3>
+<h3 id="fixed_25">Fixed</h3>
 <p>Upgraded sys-apps/less to v692.</p>
 <h3 id="security_130">Security</h3>
 <p>Fixed CVE-2026-23198 in the Linux kernel.</p>
@@ -2975,7 +3024,7 @@ CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.</p>
 <p>Fixed CVE-2026-23179 in the Linux kernel.</p>
 <h3 id="security_137">Security</h3>
 <p>Fixed CVE-2026-23193 in the Linux kernel.</p>
-<h3 id="fixed_25">Fixed</h3>
+<h3 id="fixed_26">Fixed</h3>
 <p>Upgraded net-misc/socat to v1.8.1.0-r1.</p>
 <h3 id="security_138">Security</h3>
 <p>Fixed CVE-2025-15281 and CVE-2026-0861 in sys-libs/glibc.</p>
@@ -2987,7 +3036,7 @@ CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.</p>
 <p>Fixed CVE-2026-23209 in the Linux kernel.</p>
 <h3 id="security_142">Security</h3>
 <p>Fixed CVE-2026-23204 in the Linux kernel.</p>
-<h3 id="change_21">Change</h3>
+<h3 id="change_24">Change</h3>
 <h3 id="cos-121-18867-381-1">cos-121-18867-381-1</h3>
 <table>
 <thead>
@@ -3013,13 +3062,13 @@ CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_26">Fixed</h3>
+<h3 id="fixed_27">Fixed</h3>
 <p>Upgraded sys-apps/less to v692.</p>
 <h3 id="security_143">Security</h3>
 <p>Fixed CVE-2026-23156 in the Linux kernel.</p>
 <h3 id="security_144">Security</h3>
 <p>Fixed CVE-2026-23168 in the Linux kernel.</p>
-<h3 id="fixed_27">Fixed</h3>
+<h3 id="fixed_28">Fixed</h3>
 <p>Upgraded net-misc/socat to v1.8.1.0-r1.</p>
 <h3 id="security_145">Security</h3>
 <p>Upgraded net-misc/curl to version 8.18.0. This fixes CVE-2025-10148, CVE-2025-10966, CVE-2025-13034, CVE-2025-14017, CVE-2025-14524, CVE-2025-14819, CVE-2025-15079, and CVE-2025-15224.</p>
@@ -3027,7 +3076,7 @@ CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.</p>
 <p>Fixed CVE-2026-23159 in the Linux kernel.</p>
 <hr />
 <h2 id="2026-02-20">2026-02-20</h2>
-<h3 id="change_22">Change</h3>
+<h3 id="change_25">Change</h3>
 <h3 id="cos-beta-129-19506-0-17">cos-beta-129-19506-0-17</h3>
 <table>
 <thead>
@@ -3053,237 +3102,237 @@ CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_28">Fixed</h3>
-<p>Upgraded app-emulation/cloud-init to v25.1.4.</p>
 <h3 id="fixed_29">Fixed</h3>
+<p>Upgraded app-emulation/cloud-init to v25.1.4.</p>
+<h3 id="fixed_30">Fixed</h3>
 <p>Upgraded app-admin/fluent-bit to v4.2.2.</p>
 <h3 id="feature_4">Feature</h3>
 <p>Added support for NVIDIA driver v580.105.08 and set it as the default version for all GPU types.</p>
-<h3 id="fixed_30">Fixed</h3>
-<p>Upgraded app-containers/cni-plugins to v1.9.0.</p>
 <h3 id="fixed_31">Fixed</h3>
-<p>Updated toolbox container image tag to v20251002.</p>
+<p>Upgraded app-containers/cni-plugins to v1.9.0.</p>
 <h3 id="fixed_32">Fixed</h3>
+<p>Updated toolbox container image tag to v20251002.</p>
+<h3 id="fixed_33">Fixed</h3>
 <p>Made CX-8 NIC naming order deterministic.</p>
 <h3 id="security_147">Security</h3>
 <p>Fixed CVE-2025-66471 and CVE-2025-66418 in dev-python/urllib3.</p>
 <h3 id="security_148">Security</h3>
 <p>Fixed CVE-2025-61729 in dev-lang/go.</p>
-<h3 id="fixed_33">Fixed</h3>
+<h3 id="fixed_34">Fixed</h3>
 <p>Upgraded chromeos-base/shill-client to v0.0.1-r4879.</p>
 <h3 id="security_149">Security</h3>
 <p>Fixed KCTF-b441cf3 in the Linux kernel.</p>
-<h3 id="fixed_34">Fixed</h3>
-<p>Updated app-containers/cri-tools to 1.32.0.</p>
 <h3 id="fixed_35">Fixed</h3>
+<p>Updated app-containers/cri-tools to 1.32.0.</p>
+<h3 id="fixed_36">Fixed</h3>
 <p>Upgraded sys-auth/pambase to v20251104.</p>
-<h3 id="change_23">Change</h3>
+<h3 id="change_26">Change</h3>
 <p>Enabled Coherent Driver Memory Management by default when installing GPU drivers on GB2000.</p>
 <h3 id="security_150">Security</h3>
 <p>Fixed KCTF-f8db647 in the Linux kernel.</p>
-<h3 id="fixed_36">Fixed</h3>
-<p>Upgraded net-dns/c-ares to v1.34.6.</p>
 <h3 id="fixed_37">Fixed</h3>
+<p>Upgraded net-dns/c-ares to v1.34.6.</p>
+<h3 id="fixed_38">Fixed</h3>
 <p>Updated golang.org/x/crypto, golang.org/x/net, and
 golang.org/x/oauth2 in kubelet and kubectl.</p>
-<h3 id="fixed_38">Fixed</h3>
+<h3 id="fixed_39">Fixed</h3>
 <p>Upgraded dev-libs/libxslt to version 1.1.43-r1.</p>
-<h3 id="change_24">Change</h3>
+<h3 id="change_27">Change</h3>
 <p>Added support for A4X-Max NICs.</p>
 <h3 id="security_151">Security</h3>
 <p>Fixed CVE-2025-8058 in glibc.</p>
-<h3 id="fixed_39">Fixed</h3>
+<h3 id="fixed_40">Fixed</h3>
 <p>Updated the dump capture kernel to v6.12.52.</p>
 <h3 id="security_152">Security</h3>
 <p>Fixed KCTF-6bb73db in the Linux Kernel.</p>
 <h3 id="feature_5">Feature</h3>
 <p>Added ConnectX-8 RDMA support.</p>
-<h3 id="change_25">Change</h3>
+<h3 id="change_28">Change</h3>
 <p>Updated app-containers/containerd to v2.2.0.</p>
-<h3 id="fixed_40">Fixed</h3>
-<p>Upgraded app-shells/bash to v5.3.</p>
 <h3 id="fixed_41">Fixed</h3>
+<p>Upgraded app-shells/bash to v5.3.</p>
+<h3 id="fixed_42">Fixed</h3>
 <p>Updated app-admin/google-osconfig-agent to v20250522.00.</p>
 <h3 id="feature_6">Feature</h3>
 <p>Added iRDMA support in the Linux kernel.</p>
-<h3 id="fixed_42">Fixed</h3>
-<p>Upgraded sys-libs/libcap to v2.77.</p>
 <h3 id="fixed_43">Fixed</h3>
-<p>Updated app-containers/cni-plugins to 1.7.1.</p>
+<p>Upgraded sys-libs/libcap to v2.77.</p>
 <h3 id="fixed_44">Fixed</h3>
+<p>Updated app-containers/cni-plugins to 1.7.1.</p>
+<h3 id="fixed_45">Fixed</h3>
 <p>Upgraded sys-apps/kmod to v34.2.</p>
 <h3 id="feature_7">Feature</h3>
 <p>Added support for SCSI logging.</p>
-<h3 id="fixed_45">Fixed</h3>
+<h3 id="fixed_46">Fixed</h3>
 <p>Upgraded google-guest-configs to v20260121.00.</p>
 <h3 id="feature_8">Feature</h3>
 <p>Backported support for AMD SEV-SNP SVSM vTPM driver and
 configfs-tsm addition for extended attestation protocol.</p>
-<h3 id="fixed_46">Fixed</h3>
+<h3 id="fixed_47">Fixed</h3>
 <p>Upgraded sys-apps/gentoo-functions to v1.7.4.</p>
 <h3 id="feature_9">Feature</h3>
 <p>Added support for NVIDIA MFT Tools on arm64.</p>
 <h3 id="security_153">Security</h3>
 <p>Fixed KCTF-60e6489 in the Linux Kernel.</p>
-<h3 id="fixed_47">Fixed</h3>
-<p>Upgraded dev-db/sqlite to v3.50.4.</p>
 <h3 id="fixed_48">Fixed</h3>
-<p>Upgraded virtual/logger to v0-r2.</p>
-<h3 id="change_26">Change</h3>
-<p>Updated app-containers/runc to v1.4.0.</p>
+<p>Upgraded dev-db/sqlite to v3.50.4.</p>
 <h3 id="fixed_49">Fixed</h3>
-<p>Installed app-misc/c_rehash.</p>
+<p>Upgraded virtual/logger to v0-r2.</p>
+<h3 id="change_29">Change</h3>
+<p>Updated app-containers/runc to v1.4.0.</p>
 <h3 id="fixed_50">Fixed</h3>
+<p>Installed app-misc/c_rehash.</p>
+<h3 id="fixed_51">Fixed</h3>
 <p>Upgraded sys-apps/file to v5.46-r3.</p>
 <h3 id="feature_10">Feature</h3>
 <p>Added support for zswap in the Linux kernel.</p>
 <h3 id="security_154">Security</h3>
 <p>Fixed CVE-2025-40256 in the Linux kernel.</p>
-<h3 id="fixed_51">Fixed</h3>
+<h3 id="fixed_52">Fixed</h3>
 <p>Updated dev-python/requests to v2.32.4.</p>
 <h3 id="feature_11">Feature</h3>
 <p>Added support for NVIDIA GB300 devices.</p>
-<h3 id="fixed_52">Fixed</h3>
+<h3 id="fixed_53">Fixed</h3>
 <p>Fixed a TCPX bug which would sometimes incorrectly report devices as being missing when route cache entries were missing or invalidated.</p>
 <h3 id="feature_12">Feature</h3>
 <p>Added support for the fwctl subsystem and the Mellanox fwctl driver for ARM64.</p>
-<h3 id="fixed_53">Fixed</h3>
+<h3 id="fixed_54">Fixed</h3>
 <p>Upgraded app-benchmarks/microbenchmarks to v0.0.1-r21.</p>
 <h3 id="security_155">Security</h3>
 <p>Upgraded dev-libs/glib to 2.82.5. This resolves
 CVE-2024-52533.</p>
-<h3 id="fixed_54">Fixed</h3>
-<p>Upgraded app-admin/oslogin to v20260116.00.</p>
 <h3 id="fixed_55">Fixed</h3>
+<p>Upgraded app-admin/oslogin to v20260116.00.</p>
+<h3 id="fixed_56">Fixed</h3>
 <p>Updated app-admin/node-problem-detector to 0.8.21.</p>
 <h3 id="feature_13">Feature</h3>
 <p>Added TDX RTMR support.</p>
 <h3 id="security_156">Security</h3>
 <p>Fixed CVE-2025-12084 in dev-lang/python.</p>
-<h3 id="change_27">Change</h3>
+<h3 id="change_30">Change</h3>
 <p>Upgraded dev-libs/json-c from 0.16-r1 to 0.18.0.</p>
-<h3 id="change_28">Change</h3>
+<h3 id="change_31">Change</h3>
 <p>Updated the Linux kernel to v6.12.67.</p>
-<h3 id="fixed_56">Fixed</h3>
-<p>Upgraded net-misc/curl from 8.12.1 to 8.17.0.</p>
 <h3 id="fixed_57">Fixed</h3>
-<p>Upgraded sys-process/lsof to v4.99.5.</p>
+<p>Upgraded net-misc/curl from 8.12.1 to 8.17.0.</p>
 <h3 id="fixed_58">Fixed</h3>
+<p>Upgraded sys-process/lsof to v4.99.5.</p>
+<h3 id="fixed_59">Fixed</h3>
 <p>Fixed a kernel bug which caused boot to fail for n4 machine types.</p>
 <h3 id="security_157">Security</h3>
 <p>Fixed KCTF-134121b in the Linux kernel.</p>
-<h3 id="fixed_59">Fixed</h3>
+<h3 id="fixed_60">Fixed</h3>
 <p>Upgraded dev-libs/nss to 3.117 and dev-libs/nspr to 4.37.</p>
 <h3 id="feature_14">Feature</h3>
 <p>Enabled automatic loading of RDMA kernel modules when CX-8 devices are detected.</p>
-<h3 id="fixed_60">Fixed</h3>
-<p>Upgraded app-admin/sosreport to v4.10.2.</p>
 <h3 id="fixed_61">Fixed</h3>
-<p>Backported various TCPDirect networking fixes.</p>
+<p>Upgraded app-admin/sosreport to v4.10.2.</p>
 <h3 id="fixed_62">Fixed</h3>
+<p>Backported various TCPDirect networking fixes.</p>
+<h3 id="fixed_63">Fixed</h3>
 <p>Upgraded sys-apps/pv to v1.9.34.</p>
 <h3 id="feature_15">Feature</h3>
 <p>Removed the futility program from the root file system.</p>
-<h3 id="fixed_63">Fixed</h3>
-<p>Upgraded sys-apps/pv to v1.9.44.</p>
-<h3 id="change_29">Change</h3>
-<p>Applied ethtool ring length changes to a4x's first Diorite interface.</p>
 <h3 id="fixed_64">Fixed</h3>
+<p>Upgraded sys-apps/pv to v1.9.44.</p>
+<h3 id="change_32">Change</h3>
+<p>Applied ethtool ring length changes to a4x's first Diorite interface.</p>
+<h3 id="fixed_65">Fixed</h3>
 <p>Upgraded chromeos-base/power_manager-client to v0.0.1-r2972.</p>
 <h3 id="security_158">Security</h3>
 <p>Fixed CVE-2026-21441 in dev-python/urllib3.</p>
 <h3 id="security_159">Security</h3>
 <p>Fixed KCTF-f41c5d1 in the Linux kernel.</p>
-<h3 id="fixed_65">Fixed</h3>
+<h3 id="fixed_66">Fixed</h3>
 <p>Upgraded app-containers/docker-credential-gcr to v2.1.31</p>
 <h3 id="security_160">Security</h3>
 <p>Updated dev-python/urllib3 to v2.5.0. This resolves
 CVE-2025-50181.</p>
-<h3 id="fixed_66">Fixed</h3>
+<h3 id="fixed_67">Fixed</h3>
 <p>Upgraded sys-apps/less to v692.</p>
 <h3 id="security_161">Security</h3>
 <p>Upgraded dev-vcs/git to version 2.49.1. This fixes CVE-2025-48385, CVE-2025-27613, CVE-2025-27614, CVE-2025-48384, CVE-2025-46835.</p>
-<h3 id="fixed_67">Fixed</h3>
+<h3 id="fixed_68">Fixed</h3>
 <p>Upgraded sys-apps/makedumpfile to v1.7.8.</p>
 <h3 id="security_162">Security</h3>
 <p>Fixed CVE-2025-11413 and CVE-2025-11414 in binutils-libs.</p>
 <h3 id="security_163">Security</h3>
 <p>Updated dev-python/jinja to v3.1.6. This resolves
 CVE-2024-56326, CVE-2024-56201 and CVE-2025-27516.</p>
-<h3 id="fixed_68">Fixed</h3>
-<p>Upgraded chromeos-base/chromeos-common-script to v0.0.1-r671.</p>
 <h3 id="fixed_69">Fixed</h3>
+<p>Upgraded chromeos-base/chromeos-common-script to v0.0.1-r671.</p>
+<h3 id="fixed_70">Fixed</h3>
 <p>Upgraded chromeos-base/debugd-client to v0.0.1-r2737.</p>
 <h3 id="feature_16">Feature</h3>
 <p>Removed the cloud-final.service dependency on multi-user.target which could delay cloud-init user-data scripts indefinitely when long-running startup scripts are used.</p>
-<h3 id="fixed_70">Fixed</h3>
+<h3 id="fixed_71">Fixed</h3>
 <p>Fixed an issue where cpusets cgroups did not work with
 cgroup v1 enabled.</p>
-<h3 id="fixed_71">Fixed</h3>
+<h3 id="fixed_72">Fixed</h3>
 <p>Upgraded sys-process/audit to 4.0.2-r1.</p>
 <h3 id="security_164">Security</h3>
 <p>Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.</p>
 <h3 id="feature_17">Feature</h3>
 <p>Added guest support for paravirtualization of cpuids on ARM machines.</p>
-<h3 id="change_30">Change</h3>
+<h3 id="change_33">Change</h3>
 <p>Upgraded dev-libs/libuv from 1.43.0 to 1.51.0-r1.</p>
-<h3 id="fixed_72">Fixed</h3>
-<p>Added binary auth-provider-gcp.</p>
 <h3 id="fixed_73">Fixed</h3>
-<p>Updated golang.org/x/oauth2, golang.org/x/net, golang.org/x/crypto, and github.com/golang-jwt/jwt/v5 in Docker.</p>
+<p>Added binary auth-provider-gcp.</p>
 <h3 id="fixed_74">Fixed</h3>
-<p>Upgraded dev-lang/go to v1.23.12.</p>
+<p>Updated golang.org/x/oauth2, golang.org/x/net, golang.org/x/crypto, and github.com/golang-jwt/jwt/v5 in Docker.</p>
 <h3 id="fixed_75">Fixed</h3>
+<p>Upgraded dev-lang/go to v1.23.12.</p>
+<h3 id="fixed_76">Fixed</h3>
 <p>Upgraded chromeos-base/session_manager-client to v0.0.1-r2833.</p>
 <h3 id="feature_18">Feature</h3>
 <p>Enabled the Btrfs kernel module.</p>
-<h3 id="fixed_76">Fixed</h3>
-<p>Added support for the Lustre 2.14.0_p216 drivers.</p>
 <h3 id="fixed_77">Fixed</h3>
-<p>Upgraded dev-db/sqlite to v3.50.3.</p>
+<p>Added support for the Lustre 2.14.0_p216 drivers.</p>
 <h3 id="fixed_78">Fixed</h3>
-<p>Upgraded app-crypt/mit-krb5 from version 1.20.1 to version 1.22.1.</p>
+<p>Upgraded dev-db/sqlite to v3.50.3.</p>
 <h3 id="fixed_79">Fixed</h3>
-<p>Upgraded sys-apps/pv to v1.9.42.</p>
+<p>Upgraded app-crypt/mit-krb5 from version 1.20.1 to version 1.22.1.</p>
 <h3 id="fixed_80">Fixed</h3>
+<p>Upgraded sys-apps/pv to v1.9.42.</p>
+<h3 id="fixed_81">Fixed</h3>
 <p>Partially fixed an issue where excessive contention among writeback kworkers when switching a large number of inodes between cgroups could lead to system unresponsiveness.</p>
 <h3 id="security_165">Security</h3>
 <p>Fixed KCTF-50da4b9 in the Linux kernel.</p>
-<h3 id="fixed_81">Fixed</h3>
-<p>Upgraded net-nds/rpcbind to v1.2.8.</p>
 <h3 id="fixed_82">Fixed</h3>
-<p>Add support for NVIDIA MFT Tools v4.33.0.</p>
-<h3 id="change_31">Change</h3>
-<p>Changed the mount options for /mnt/disks to noexec.</p>
+<p>Upgraded net-nds/rpcbind to v1.2.8.</p>
 <h3 id="fixed_83">Fixed</h3>
-<p>Upgraded app-admin/node-problem-detector to v0.8.25.</p>
+<p>Add support for NVIDIA MFT Tools v4.33.0.</p>
+<h3 id="change_34">Change</h3>
+<p>Changed the mount options for /mnt/disks to noexec.</p>
 <h3 id="fixed_84">Fixed</h3>
-<p>Updated sys-libs/readline to v8.3.</p>
+<p>Upgraded app-admin/node-problem-detector to v0.8.25.</p>
 <h3 id="fixed_85">Fixed</h3>
-<p>Upgraded net-misc/rsync to v3.4.1-r2.</p>
+<p>Updated sys-libs/readline to v8.3.</p>
 <h3 id="fixed_86">Fixed</h3>
+<p>Upgraded net-misc/rsync to v3.4.1-r2.</p>
+<h3 id="fixed_87">Fixed</h3>
 <p>Upgraded sys-apps/pv to v1.10.2.</p>
 <h3 id="feature_19">Feature</h3>
 <p>Enabled dynamic vlan configuration for non-primary NICs.</p>
-<h3 id="fixed_87">Fixed</h3>
-<p>Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.</p>
 <h3 id="fixed_88">Fixed</h3>
-<p>Upgraded sys-apps/nvme-cli from version 1.6-r1 to version 2.16, added package sys-libs/libnvme.</p>
+<p>Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.</p>
 <h3 id="fixed_89">Fixed</h3>
-<p>Fixed a bug where setting MTU above 9000 on ARM systems with a 64k page size would cause IDPF networking to fail.</p>
-<h3 id="change_32">Change</h3>
-<p>Added kernel support for bare-metal on the NVIDIA Grace platform.</p>
+<p>Upgraded sys-apps/nvme-cli from version 1.6-r1 to version 2.16, added package sys-libs/libnvme.</p>
 <h3 id="fixed_90">Fixed</h3>
-<p>Upgraded net-misc/socat to v1.8.1.0-r1.</p>
+<p>Fixed a bug where setting MTU above 9000 on ARM systems with a 64k page size would cause IDPF networking to fail.</p>
+<h3 id="change_35">Change</h3>
+<p>Added kernel support for bare-metal on the NVIDIA Grace platform.</p>
 <h3 id="fixed_91">Fixed</h3>
-<p>Upgraded sys-apps/dmidecode to v3.7.</p>
+<p>Upgraded net-misc/socat to v1.8.1.0-r1.</p>
 <h3 id="fixed_92">Fixed</h3>
+<p>Upgraded sys-apps/dmidecode to v3.7.</p>
+<h3 id="fixed_93">Fixed</h3>
 <p>Added support for NVIDIA driver v535.274.02 and v570.195.03.</p>
 <h3 id="security_166">Security</h3>
 <p>Fixed CVE-2025-6052 in dev-libs/glib.</p>
 <h3 id="security_167">Security</h3>
 <p>Fixed CVE-2025-13836 in dev-lang/python.</p>
-<h3 id="fixed_93">Fixed</h3>
+<h3 id="fixed_94">Fixed</h3>
 <p>Upgraded sys-libs/libseccomp to v2.6.0-r3.</p>
 <h3 id="security_168">Security</h3>
 <p>Fixed CVE-2025-40147 in the Linux kernel.</p>
@@ -3292,19 +3341,19 @@ cgroup v1 enabled.</p>
 <h3 id="security_170">Security</h3>
 <p>Fixed CVE-2025-31133, CVE-2025-52565, and CVE-2025-52881 in
 app-containers/runc.</p>
-<h3 id="fixed_94">Fixed</h3>
+<h3 id="fixed_95">Fixed</h3>
 <p>Upgraded dev-libs/openssl to 3.5.1.</p>
-<h3 id="change_33">Change</h3>
+<h3 id="change_36">Change</h3>
 <p>Upgraded dev-util/cmake from 3.26.4 to 3.31.9.</p>
 <h3 id="feature_20">Feature</h3>
 <p>Enabled Software Watchdog as a module.</p>
-<h3 id="fixed_95">Fixed</h3>
-<p>Upgraded net-libs/gnutls to v3.8.11.</p>
 <h3 id="fixed_96">Fixed</h3>
-<p>Upgraded dev-libs/expat to v2.7.3.</p>
+<p>Upgraded net-libs/gnutls to v3.8.11.</p>
 <h3 id="fixed_97">Fixed</h3>
-<p>Fixed bcache latency spikes.</p>
+<p>Upgraded dev-libs/expat to v2.7.3.</p>
 <h3 id="fixed_98">Fixed</h3>
+<p>Fixed bcache latency spikes.</p>
+<h3 id="fixed_99">Fixed</h3>
 <p>Upgraded net-misc/wget to v1.25.0-r1.</p>
 <h3 id="security_171">Security</h3>
 <p>Fixed CVE-2025-40212 in the Linux kernel.</p>
@@ -3314,13 +3363,13 @@ CVE-2024-0684.</p>
 <h3 id="feature_21">Feature</h3>
 <p>Configured the cos-gpu-installer to use R580 drivers as the
 default GPU drivers.</p>
-<h3 id="fixed_99">Fixed</h3>
+<h3 id="fixed_100">Fixed</h3>
 <p>Upgraded app-admin/sudo to v1.9.17_p2.</p>
 <h3 id="security_173">Security</h3>
 <p>Fixed CVE-2025-13837 in dev-lang/python.</p>
 <h3 id="feature_22">Feature</h3>
 <p>Added IPv6 support for machines using the IDPF driver.</p>
-<h3 id="fixed_100">Fixed</h3>
+<h3 id="fixed_101">Fixed</h3>
 <p>Upgraded sys-apps/pv to v1.10.3.</p>
 <h3 id="security_174">Security</h3>
 <p>Fixed KCTF-01d3c84 in the Linux kernel.</p>
@@ -3332,9 +3381,9 @@ default GPU drivers.</p>
 <p>Enabled the google-guest-agent's network management functionality.</p>
 <h3 id="feature_24">Feature</h3>
 <p>Added GDRCopy kernel module for NVIDIA drivers.</p>
-<h3 id="fixed_101">Fixed</h3>
-<p>Updated cos-gpu-installer to v2.5.10.</p>
 <h3 id="fixed_102">Fixed</h3>
+<p>Updated cos-gpu-installer to v2.5.10.</p>
+<h3 id="fixed_103">Fixed</h3>
 <p>Upgraded sys-apps/pv to v1.10.1.</p>
 <h3 id="feature_25">Feature</h3>
 <p>Added support for CASFS (Content Addressable Storage File System) as a kernel module.</p>
@@ -3346,28 +3395,28 @@ default GPU drivers.</p>
 <p>Added CPU balloon support for ARM CPUs.</p>
 <h3 id="security_177">Security</h3>
 <p>Upgraded open-vm-tools to 13.0.5. This fixes CVE-2025-41244 in anthos variant.</p>
-<h3 id="fixed_103">Fixed</h3>
-<p>Upgraded dev-python/coverage to v7.10.7.</p>
 <h3 id="fixed_104">Fixed</h3>
+<p>Upgraded dev-python/coverage to v7.10.7.</p>
+<h3 id="fixed_105">Fixed</h3>
 <p>Upgraded net-libs/libtirpc to v1.3.7-r2.</p>
 <h3 id="security_178">Security</h3>
 <p>Fixed KCTF-abad3d0 in the Linux kernel.</p>
-<h3 id="change_34">Change</h3>
+<h3 id="change_37">Change</h3>
 <p>Updated dev-libs/openssl to v3.5.4.</p>
-<h3 id="fixed_105">Fixed</h3>
-<p>Upgraded chromeos-base/chromeos-common-script to v0.0.1-r668.</p>
 <h3 id="fixed_106">Fixed</h3>
+<p>Upgraded chromeos-base/chromeos-common-script to v0.0.1-r668.</p>
+<h3 id="fixed_107">Fixed</h3>
 <p>upgraded net-fs/cifs-utils to v7.4.</p>
 <h3 id="security_179">Security</h3>
 <p>Fixed CVE-2025-11495 in binutils-libs.</p>
-<h3 id="fixed_107">Fixed</h3>
+<h3 id="fixed_108">Fixed</h3>
 <p>Fixed an issue where the cpuidle driver selected for some
 machine types would cause inflated reports of high CPU usage.</p>
 <h3 id="feature_29">Feature</h3>
 <p>Enabled HTCP TCP congestion control algorithm as a module.</p>
 <h3 id="feature_30">Feature</h3>
 <p>Fixed a bug in cos-extensions which would cause GB200 and GB300 devices not to be detected in one code path, which would result in Imex channels not being created by default.</p>
-<h3 id="change_35">Change</h3>
+<h3 id="change_38">Change</h3>
 <p>Updated CONFIG_BLK_DEV_LOOP_MIN_COUNT to 0. This allows
 unlimited loop devices.</p>
 <h3 id="feature_31">Feature</h3>
@@ -3377,42 +3426,42 @@ unlimited loop devices.</p>
 CVE-2025-53905, CVE-2025-53906, CVE-2025-9390.</p>
 <h3 id="feature_32">Feature</h3>
 <p>Enabled KVM for COS ARM64.</p>
-<h3 id="fixed_108">Fixed</h3>
+<h3 id="fixed_109">Fixed</h3>
 <p>Upgraded chromeos-base/google-breakpad to v2026.01.16.201758-r268.</p>
 <h3 id="security_181">Security</h3>
 <p>Fixed CVE-2025-11412 in binutils-libs.</p>
-<h3 id="fixed_109">Fixed</h3>
+<h3 id="fixed_110">Fixed</h3>
 <p>Upgraded sys-apps/hwdata to v0.400.</p>
 <h3 id="feature_33">Feature</h3>
 <p>Enabled hardware optimized SHA256 algorithms for x86 machines with SSSE3 and AVX/AVX2 instructions and ARM64 machines with SHA-NI and ARMv8 Crypto Extensions.</p>
-<h3 id="fixed_110">Fixed</h3>
+<h3 id="fixed_111">Fixed</h3>
 <p>Made the google-guest-agent more resilient to network link
 flakes.</p>
 <h3 id="security_182">Security</h3>
 <p>Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.</p>
-<h3 id="fixed_111">Fixed</h3>
+<h3 id="fixed_112">Fixed</h3>
 <p>Enabled multiport support for CX-8 devices.</p>
 <h3 id="security_183">Security</h3>
 <p>Upgraded urllib3 to version 1.26.18. This fixes CVE-2021-33503, CVE-2023-43804, and CVE-2023-45803.</p>
-<h3 id="fixed_112">Fixed</h3>
+<h3 id="fixed_113">Fixed</h3>
 <p>Fixed an issue in app-containers/runc that caused runc to
 use more file descriptors than intended.</p>
 <h3 id="security_184">Security</h3>
 <p>Upgraded net-misc/netplan to 1.1.2. This fixes
 CVE-2022-4968.</p>
-<h3 id="fixed_113">Fixed</h3>
-<p>Removed an artifact registry ping that would delay multi-user.target indefinitely for machines with no external IP address.</p>
 <h3 id="fixed_114">Fixed</h3>
-<p>Upgraded chromeos-base/minijail to v18-r168.</p>
+<p>Removed an artifact registry ping that would delay multi-user.target indefinitely for machines with no external IP address.</p>
 <h3 id="fixed_115">Fixed</h3>
-<p>Upgraded dev-lang/go to v1.23.11.</p>
+<p>Upgraded chromeos-base/minijail to v18-r168.</p>
 <h3 id="fixed_116">Fixed</h3>
-<p>Upgraded net-misc/openssh to 10.0_p1.</p>
+<p>Upgraded dev-lang/go to v1.23.11.</p>
 <h3 id="fixed_117">Fixed</h3>
+<p>Upgraded net-misc/openssh to 10.0_p1.</p>
+<h3 id="fixed_118">Fixed</h3>
 <p>Updated net-misc/chrony to v4.8.</p>
 <h3 id="security_185">Security</h3>
 <p>Fixed CVE-2025-61727 in dev-lang/go.</p>
-<h3 id="change_36">Change</h3>
+<h3 id="change_39">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: net.ipv4.udp_mem: 188034 250714 376068 -&gt; 188034 250715 376068</li>
@@ -3421,27 +3470,27 @@ CVE-2022-4968.</p>
 <p>Fixed CVE-2025-11081, CVE-2025-11082 and CVE-2025-11083 in sys-libs/binutils-libs.</p>
 <h3 id="feature_34">Feature</h3>
 <p>Disabled DNSSEC by default for COS TPU VMs.</p>
-<h3 id="fixed_118">Fixed</h3>
+<h3 id="fixed_119">Fixed</h3>
 <p>Reduced gcr_wait_online retry gap.</p>
 <h3 id="security_187">Security</h3>
 <p>Fixed CVE-2025-11494 in binutils-libs.</p>
 <h3 id="feature_35">Feature</h3>
 <p>Added support for the Lustre 2.14.0_p224 drivers.</p>
-<h3 id="fixed_119">Fixed</h3>
-<p>Upgraded app-containers/docker-credential-helpers to v0.9.5.</p>
 <h3 id="fixed_120">Fixed</h3>
-<p>Upgraded sys-process/procps to v4.0.5-r3.</p>
+<p>Upgraded app-containers/docker-credential-helpers to v0.9.5.</p>
 <h3 id="fixed_121">Fixed</h3>
-<p>Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.</p>
+<p>Upgraded sys-process/procps to v4.0.5-r3.</p>
 <h3 id="fixed_122">Fixed</h3>
+<p>Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.</p>
+<h3 id="fixed_123">Fixed</h3>
 <p>Upgraded dev-db/sqlite to v3.51.1.</p>
 <h3 id="security_188">Security</h3>
 <p>Fixed CVE-2025-47914 and CVE-2025-58181 in dev-go/crypto.</p>
-<h3 id="fixed_123">Fixed</h3>
+<h3 id="fixed_124">Fixed</h3>
 <p>Updated kubelet and kubectl to v1.35.0.</p>
 <hr />
 <h2 id="2026-02-19">2026-02-19</h2>
-<h3 id="change_37">Change</h3>
+<h3 id="change_40">Change</h3>
 <h3 id="cos-117-18613-534-2">cos-117-18613-534-2</h3>
 <table>
 <thead>
@@ -3489,7 +3538,7 @@ CVE-2022-4968.</p>
 <p>Fixed CVE-2026-23099 in the Linux kernel.</p>
 <h3 id="announcement">Announcement</h3>
 <p>This is an <a href="https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases">LTS Refresh release.</a></p>
-<h3 id="fixed_124">Fixed</h3>
+<h3 id="fixed_125">Fixed</h3>
 <p>Upgraded app-containers/docker-credential-helpers to v0.9.4.</p>
 <h3 id="security_199">Security</h3>
 <p>Fixed CVE-2026-22998 in the Linux kernel.</p>
@@ -3499,13 +3548,13 @@ CVE-2022-4968.</p>
 <p>Fixed CVE-2026-23010 in the Linux kernel.</p>
 <h3 id="security_202">Security</h3>
 <p>Fixed CVE-2026-23001 in the Linux kernel.</p>
-<h3 id="fixed_125">Fixed</h3>
+<h3 id="fixed_126">Fixed</h3>
 <p>Upgraded sys-libs/libcap to v2.77.</p>
 <h3 id="security_203">Security</h3>
 <p>Fixed CVE-2026-23038 in the Linux kernel.</p>
 <h3 id="security_204">Security</h3>
 <p>Fixed CVE-2026-23105 in the Linux kernel.</p>
-<h3 id="change_38">Change</h3>
+<h3 id="change_41">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: kernel.tainted: 4608 -&gt; 4096</li>
@@ -3514,7 +3563,7 @@ CVE-2022-4968.</p>
 <p>Fixed CVE-2026-23025 in the Linux kernel.</p>
 <h3 id="security_206">Security</h3>
 <p>Fixed CVE-2025-38232 in the Linux kernel.</p>
-<h3 id="fixed_126">Fixed</h3>
+<h3 id="fixed_127">Fixed</h3>
 <p>Upgraded net-libs/libtirpc to v1.3.7.</p>
 <h3 id="security_207">Security</h3>
 <p>Fixed CVE-2026-23097 in the Linux kernel.</p>
@@ -3530,7 +3579,7 @@ CVE-2022-4968.</p>
 <p>Fixed CVE-2026-23103 in the Linux kernel.</p>
 <h3 id="security_212">Security</h3>
 <p>Fixed CVE-2026-23011 in the Linux kernel.</p>
-<h3 id="change_39">Change</h3>
+<h3 id="change_42">Change</h3>
 <h3 id="cos-121-18867-294-134">cos-121-18867-294-134</h3>
 <table>
 <thead>
@@ -3594,7 +3643,7 @@ CVE-2022-4968.</p>
 <p>Fixed CVE-2026-23069 in the Linux kernel.</p>
 <h3 id="security_230">Security</h3>
 <p>Fixed CVE-2026-22998 in the Linux kernel.</p>
-<h3 id="change_40">Change</h3>
+<h3 id="change_43">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: kernel.tainted: 4608 -&gt; 4096</li>
@@ -3609,7 +3658,7 @@ CVE-2022-4968.</p>
 <p>Fixed CVE-2026-23011 in the Linux kernel.</p>
 <h3 id="security_235">Security</h3>
 <p>Fixed CVE-2025-37920 in the Linux kernel.</p>
-<h3 id="change_41">Change</h3>
+<h3 id="change_44">Change</h3>
 <h3 id="cos-125-19216-220-9">cos-125-19216-220-9</h3>
 <table>
 <thead>
@@ -3635,46 +3684,46 @@ CVE-2022-4968.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_127">Fixed</h3>
+<h3 id="fixed_128">Fixed</h3>
 <p>Upgraded net-libs/libtirpc to v1.3.7.</p>
 <h3 id="feature_37">Feature</h3>
 <p>Added guest support for paravirtualization of cpuids on Arm machines.</p>
-<h3 id="fixed_128">Fixed</h3>
-<p>Upgraded app-containers/docker-registry-test to v2.8.3.</p>
 <h3 id="fixed_129">Fixed</h3>
+<p>Upgraded app-containers/docker-registry-test to v2.8.3.</p>
+<h3 id="fixed_130">Fixed</h3>
 <p>Upgraded dev-libs/expat to v2.7.3.</p>
-<h3 id="change_42">Change</h3>
+<h3 id="change_45">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: kernel.tainted: 4608 -&gt; 4096</li>
 </ul>
-<h3 id="fixed_130">Fixed</h3>
-<p>Upgraded net-misc/socat to v1.8.1.0-r1.</p>
 <h3 id="fixed_131">Fixed</h3>
+<p>Upgraded net-misc/socat to v1.8.1.0-r1.</p>
+<h3 id="fixed_132">Fixed</h3>
 <p>Upgraded sys-apps/gentoo-functions to v1.7.4.</p>
 <h3 id="announcement_2">Announcement</h3>
 <p>This is an <a href="https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases">LTS Refresh release.</a></p>
-<h3 id="fixed_132">Fixed</h3>
+<h3 id="fixed_133">Fixed</h3>
 <p>Upgraded sys-libs/libcap to v2.77.</p>
 <h3 id="security_236">Security</h3>
 <p>Fixed KCTF-f8db647 in the Linux kernel.</p>
-<h3 id="fixed_133">Fixed</h3>
-<p>Upgraded sys-auth/pambase to v20251104.</p>
 <h3 id="fixed_134">Fixed</h3>
-<p>Upgraded net-nds/rpcbind to v1.2.8.</p>
+<p>Upgraded sys-auth/pambase to v20251104.</p>
 <h3 id="fixed_135">Fixed</h3>
+<p>Upgraded net-nds/rpcbind to v1.2.8.</p>
+<h3 id="fixed_136">Fixed</h3>
 <p>Upgraded google-guest-configs to v20260121.00.</p>
 <h3 id="feature_38">Feature</h3>
 <p>Added CPU balloon support for Arm CPUs.</p>
 <hr />
 <h2 id="2026-02-10">2026-02-10</h2>
-<h3 id="fixed_136">Fixed</h3>
+<h3 id="fixed_137">Fixed</h3>
 <p>Upgraded sys-libs/libcap to v2.77.</p>
 <h3 id="security_237">Security</h3>
 <p>Updated dev-libs/libxml2 to version 2.14.6. This resolves CVE-2025-6021.</p>
-<h3 id="fixed_137">Fixed</h3>
+<h3 id="fixed_138">Fixed</h3>
 <p>Upgraded app-admin/google-guest-configs to v20251014.00.</p>
-<h3 id="change_43">Change</h3>
+<h3 id="change_46">Change</h3>
 <h3 id="cos-113-18244-582-2">cos-113-18244-582-2</h3>
 <table>
 <thead>
@@ -3702,11 +3751,11 @@ CVE-2022-4968.</p>
 </table>
 <h3 id="announcement_3">Announcement</h3>
 <p>This is an <a href="https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases">LTS Refresh release.</a></p>
-<h3 id="fixed_138">Fixed</h3>
-<p>Upgraded net-libs/libtirpc to v1.3.7.</p>
 <h3 id="fixed_139">Fixed</h3>
+<p>Upgraded net-libs/libtirpc to v1.3.7.</p>
+<h3 id="fixed_140">Fixed</h3>
 <p>Upgraded app-containers/docker-credential-helpers to v0.9.4.</p>
-<h3 id="change_44">Change</h3>
+<h3 id="change_47">Change</h3>
 <h3 id="cos-125-19216-104-149">cos-125-19216-104-149</h3>
 <table>
 <thead>
@@ -3740,7 +3789,7 @@ CVE-2022-4968.</p>
 <p>Fixed CVE-2026-23023 in the Linux kernel.</p>
 <h3 id="security_239">Security</h3>
 <p>Fixed CVE-2025-71183 in the Linux kernel.</p>
-<h3 id="fixed_140">Fixed</h3>
+<h3 id="fixed_141">Fixed</h3>
 <p>Fixed TCPX performance issues.</p>
 <h3 id="security_240">Security</h3>
 <p>Fixed CVE-2026-23038 in the Linux kernel.</p>
@@ -3750,7 +3799,7 @@ CVE-2022-4968.</p>
 <p>Fixed CVE-2024-57982 in the Linux kernel.</p>
 <h3 id="security_242">Security</h3>
 <p>Fixed CVE-2024-49968 in the Linux kernel.</p>
-<h3 id="change_45">Change</h3>
+<h3 id="change_48">Change</h3>
 <h3 id="cos-121-18867-294-116">cos-121-18867-294-116</h3>
 <table>
 <thead>
@@ -3778,7 +3827,7 @@ CVE-2022-4968.</p>
 </table>
 <hr />
 <h2 id="2026-02-03">2026-02-03</h2>
-<h3 id="change_46">Change</h3>
+<h3 id="change_49">Change</h3>
 <h3 id="cos-dev-129-19506-0-0">cos-dev-129-19506-0-0</h3>
 <table>
 <thead>
@@ -3804,13 +3853,13 @@ CVE-2022-4968.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_141">Fixed</h3>
-<p>Upgraded chromeos-base/power_manager-client to v0.0.1-r2972.</p>
 <h3 id="fixed_142">Fixed</h3>
-<p>Upgraded net-libs/gnutls to v3.8.11.</p>
+<p>Upgraded chromeos-base/power_manager-client to v0.0.1-r2972.</p>
 <h3 id="fixed_143">Fixed</h3>
-<p>Upgraded sys-apps/dmidecode to v3.7.</p>
+<p>Upgraded net-libs/gnutls to v3.8.11.</p>
 <h3 id="fixed_144">Fixed</h3>
+<p>Upgraded sys-apps/dmidecode to v3.7.</p>
+<h3 id="fixed_145">Fixed</h3>
 <p>Upgraded chromeos-base/session_manager-client to v0.0.1-r2833.</p>
 <h3 id="security_243">Security</h3>
 <p>Fixed KCTF-50da4b9 in the Linux kernel.</p>
@@ -3818,103 +3867,103 @@ CVE-2022-4968.</p>
 <p>Removed the futility program from the root file system.</p>
 <h3 id="security_244">Security</h3>
 <p>Fixed CVE-2025-61729 in dev-lang/go.</p>
-<h3 id="fixed_145">Fixed</h3>
+<h3 id="fixed_146">Fixed</h3>
 <p>Upgraded app-crypt/mit-krb5 from version 1.20.1 to version 1.22.1.</p>
-<h3 id="change_47">Change</h3>
+<h3 id="change_50">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: net.ipv4.udp_mem: 188034 250715 376068 -&gt; 188034 250714 376068</li>
 </ul>
 <h3 id="security_245">Security</h3>
 <p>Fixed CVE-2025-61727 in dev-lang/go.</p>
-<h3 id="change_48">Change</h3>
+<h3 id="change_51">Change</h3>
 <p>Upgrade dev-libs/json-c from 0.16-r1 to 0.18.0.</p>
-<h3 id="fixed_146">Fixed</h3>
-<p>Added binary auth-provider-gcp.</p>
-<h3 id="change_49">Change</h3>
-<p>Updated app-containers/runc to v1.4.0.</p>
 <h3 id="fixed_147">Fixed</h3>
-<p>Upgraded app-admin/fluent-bit to v4.2.2.</p>
+<p>Added binary auth-provider-gcp.</p>
+<h3 id="change_52">Change</h3>
+<p>Updated app-containers/runc to v1.4.0.</p>
 <h3 id="fixed_148">Fixed</h3>
-<p>Upgraded sys-apps/nvme-cli from version 1.6-r1 to version 2.16, added package sys-libs/libnvme.</p>
+<p>Upgraded app-admin/fluent-bit to v4.2.2.</p>
 <h3 id="fixed_149">Fixed</h3>
-<p>Updated cos-gpu-installer to v2.5.10.</p>
+<p>Upgraded sys-apps/nvme-cli from version 1.6-r1 to version 2.16, added package sys-libs/libnvme.</p>
 <h3 id="fixed_150">Fixed</h3>
-<p>Upgraded sys-apps/less to v691.</p>
+<p>Updated cos-gpu-installer to v2.5.10.</p>
 <h3 id="fixed_151">Fixed</h3>
-<p>Upgraded app-admin/google-guest-configs to v20260112.00.</p>
+<p>Upgraded sys-apps/less to v691.</p>
 <h3 id="fixed_152">Fixed</h3>
-<p>Upgraded app-containers/docker-credential-gcr to v2.1.31</p>
+<p>Upgraded app-admin/google-guest-configs to v20260112.00.</p>
 <h3 id="fixed_153">Fixed</h3>
-<p>Upgraded chromeos-base/google-breakpad to v2026.01.12.054131-r266.</p>
+<p>Upgraded app-containers/docker-credential-gcr to v2.1.31</p>
 <h3 id="fixed_154">Fixed</h3>
-<p>Upgraded app-containers/cni-plugins to v1.9.0.</p>
+<p>Upgraded chromeos-base/google-breakpad to v2026.01.12.054131-r266.</p>
 <h3 id="fixed_155">Fixed</h3>
+<p>Upgraded app-containers/cni-plugins to v1.9.0.</p>
+<h3 id="fixed_156">Fixed</h3>
 <p>Upgraded app-shells/bash to v5.3.</p>
 <h3 id="security_246">Security</h3>
 <p>Fixed CVE-2025-13837 in dev-lang/python.</p>
-<h3 id="fixed_156">Fixed</h3>
+<h3 id="fixed_157">Fixed</h3>
 <p>Upgraded dev-db/sqlite to v3.51.1.</p>
 <h3 id="security_247">Security</h3>
 <p>Fixed CVE-2025-66471 and CVE-2025-66418 in dev-python/urllib3.</p>
 <h3 id="feature_43">Feature</h3>
 <p>Added support for CASFS (Content Addressable Storage File System) as a kernel module.</p>
-<h3 id="fixed_157">Fixed</h3>
-<p>Upgraded chromeos-base/chromeos-common-script to v0.0.1-r671.</p>
 <h3 id="fixed_158">Fixed</h3>
-<p>Upgraded google-guest-configs to v20260121.00.</p>
+<p>Upgraded chromeos-base/chromeos-common-script to v0.0.1-r671.</p>
 <h3 id="fixed_159">Fixed</h3>
-<p>Upgraded app-containers/docker-credential-helpers to v0.9.5.</p>
+<p>Upgraded google-guest-configs to v20260121.00.</p>
 <h3 id="fixed_160">Fixed</h3>
-<p>Updated kubelet and kubectl to v1.35.0.</p>
-<h3 id="change_50">Change</h3>
-<p>Made it so that /mnt/disks is mounted as noexec.</p>
+<p>Upgraded app-containers/docker-credential-helpers to v0.9.5.</p>
 <h3 id="fixed_161">Fixed</h3>
-<p>Upgraded sys-apps/pv to v1.10.3.</p>
-<h3 id="change_51">Change</h3>
-<p>Updated dev-libs/openssl to v3.5.4.</p>
+<p>Updated kubelet and kubectl to v1.35.0.</p>
+<h3 id="change_53">Change</h3>
+<p>Made it so that /mnt/disks is mounted as noexec.</p>
 <h3 id="fixed_162">Fixed</h3>
-<p>Upgraded chromeos-base/debugd-client to v0.0.1-r2737.</p>
+<p>Upgraded sys-apps/pv to v1.10.3.</p>
+<h3 id="change_54">Change</h3>
+<p>Updated dev-libs/openssl to v3.5.4.</p>
 <h3 id="fixed_163">Fixed</h3>
+<p>Upgraded chromeos-base/debugd-client to v0.0.1-r2737.</p>
+<h3 id="fixed_164">Fixed</h3>
 <p>Upgraded app-admin/sosreport to v4.10.2.</p>
 <h3 id="security_248">Security</h3>
 <p>Fixed CVE-2025-12084 in dev-lang/python.</p>
-<h3 id="fixed_164">Fixed</h3>
+<h3 id="fixed_165">Fixed</h3>
 <p>Updated sys-libs/readline to v8.3.</p>
-<h3 id="change_52">Change</h3>
+<h3 id="change_55">Change</h3>
 <p>Upgrade dev-libs/libuv from 1.43.0 to 1.51.0-r1.</p>
 <h3 id="security_249">Security</h3>
 <p>Fixed KCTF-2397e92 in the Linux kernel.</p>
-<h3 id="change_53">Change</h3>
+<h3 id="change_56">Change</h3>
 <p>Updated the Linux kernel to v6.12.67.</p>
-<h3 id="fixed_165">Fixed</h3>
-<p>Upgraded app-admin/oslogin to v20260116.00.</p>
 <h3 id="fixed_166">Fixed</h3>
+<p>Upgraded app-admin/oslogin to v20260116.00.</p>
+<h3 id="fixed_167">Fixed</h3>
 <p>Upgraded chromeos-base/google-breakpad to v2026.01.16.201758-r268.</p>
-<h3 id="change_54">Change</h3>
+<h3 id="change_57">Change</h3>
 <p>Updated CONFIG_BLK_DEV_LOOP_MIN_COUNT to 0. This allows
 unlimited loop devices.</p>
-<h3 id="fixed_167">Fixed</h3>
-<p>Upgraded sys-apps/kmod to v34.2.</p>
 <h3 id="fixed_168">Fixed</h3>
+<p>Upgraded sys-apps/kmod to v34.2.</p>
+<h3 id="fixed_169">Fixed</h3>
 <p>Upgraded net-misc/socat to v1.8.1.0.</p>
-<h3 id="change_55">Change</h3>
+<h3 id="change_58">Change</h3>
 <p>Updated app-containers/containerd to v2.2.0.</p>
 <h3 id="security_250">Security</h3>
 <p>Fixed CVE-2026-21441 in dev-python/urllib3.</p>
-<h3 id="fixed_169">Fixed</h3>
-<p>Upgraded net-dns/c-ares to v1.34.6.</p>
 <h3 id="fixed_170">Fixed</h3>
-<p>Upgraded sys-libs/libseccomp to v2.6.0-r3.</p>
+<p>Upgraded net-dns/c-ares to v1.34.6.</p>
 <h3 id="fixed_171">Fixed</h3>
+<p>Upgraded sys-libs/libseccomp to v2.6.0-r3.</p>
+<h3 id="fixed_172">Fixed</h3>
 <p>Upgraded app-benchmarks/microbenchmarks to v0.0.1-r21.</p>
 <h3 id="security_251">Security</h3>
 <p>Fixed CVE-2025-13836 in dev-lang/python.</p>
-<h3 id="fixed_172">Fixed</h3>
+<h3 id="fixed_173">Fixed</h3>
 <p>Upgraded chromeos-base/google-breakpad to v2025.12.22.204548-r263.</p>
-<h3 id="change_56">Change</h3>
+<h3 id="change_59">Change</h3>
 <p>Upgrade dev-util/cmake from 3.26.4 to 3.31.9.</p>
-<h3 id="change_57">Change</h3>
+<h3 id="change_60">Change</h3>
 <h3 id="cos-125-19216-104-133">cos-125-19216-104-133</h3>
 <table>
 <thead>
@@ -3990,7 +4039,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2026-22999 in the Linux kernel.</p>
 <h3 id="security_276">Security</h3>
 <p>Fixed CVE-2026-23001 in the Linux kernel.</p>
-<h3 id="change_58">Change</h3>
+<h3 id="change_61">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: kernel.tainted: 4096 -&gt; 4608</li>
@@ -4001,7 +4050,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2026-0915 in sys-apps/glibc.</p>
 <h3 id="security_279">Security</h3>
 <p>Fixed CVE-2026-23000 in the Linux kernel.</p>
-<h3 id="change_59">Change</h3>
+<h3 id="change_62">Change</h3>
 <h3 id="cos-121-18867-294-112">cos-121-18867-294-112</h3>
 <table>
 <thead>
@@ -4051,7 +4100,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-71149 in the Linux kernel.</p>
 <h3 id="security_290">Security</h3>
 <p>Fixed CVE-2026-22977 in the Linux kernel.</p>
-<h3 id="change_60">Change</h3>
+<h3 id="change_63">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: kernel.tainted: 4096 -&gt; 4608</li>
@@ -4062,7 +4111,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-22111 in the Linux kernel.</p>
 <h3 id="security_293">Security</h3>
 <p>Fixed CVE-2026-0915 in sys-apps/glibc.</p>
-<h3 id="change_61">Change</h3>
+<h3 id="change_64">Change</h3>
 <h3 id="cos-117-18613-439-120">cos-117-18613-439-120</h3>
 <table>
 <thead>
@@ -4096,7 +4145,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2026-22979 in the Linux kernel.</p>
 <h3 id="security_297">Security</h3>
 <p>Fixed CVE-2026-22980 in the Linux kernel.</p>
-<h3 id="change_62">Change</h3>
+<h3 id="change_65">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: kernel.tainted: 4096 -&gt; 4608</li>
@@ -4119,7 +4168,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-71149 in the Linux kernel.</p>
 <h3 id="security_306">Security</h3>
 <p>Fixed CVE-2025-71160 in the Linux kernel.</p>
-<h3 id="change_63">Change</h3>
+<h3 id="change_66">Change</h3>
 <h3 id="cos-113-18244-521-98">cos-113-18244-521-98</h3>
 <table>
 <thead>
@@ -4149,7 +4198,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2026-0915 in sys-apps/glibc.</p>
 <h3 id="security_308">Security</h3>
 <p>Fixed CVE-2026-22988 in the Linux kernel.</p>
-<h3 id="fixed_173">Fixed</h3>
+<h3 id="fixed_174">Fixed</h3>
 <p>Upgraded sys-apps/less to v691.</p>
 <h3 id="security_309">Security</h3>
 <p>Fixed KCTF-50da4b9 in the Linux kernel.</p>
@@ -4171,7 +4220,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2026-22976 in the Linux kernel.</p>
 <hr />
 <h2 id="2026-01-28">2026-01-28</h2>
-<h3 id="change_64">Change</h3>
+<h3 id="change_67">Change</h3>
 <h3 id="cos-117-18613-439-108">cos-117-18613-439-108</h3>
 <table>
 <thead>
@@ -4227,7 +4276,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-38022 in the Linux kernel.</p>
 <h3 id="security_332">Security</h3>
 <p>Fixed CVE-2025-68821 in the Linux kernel.</p>
-<h3 id="fixed_174">Fixed</h3>
+<h3 id="fixed_175">Fixed</h3>
 <p>Upgraded sys-apps/less to v691.</p>
 <h3 id="security_333">Security</h3>
 <p>Fixed CVE-2025-68744 in the Linux kernel.</p>
@@ -4245,7 +4294,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-71113 in the Linux kernel.</p>
 <h3 id="security_340">Security</h3>
 <p>Fixed CVE-2025-68794 in the Linux kernel.</p>
-<h3 id="fixed_175">Fixed</h3>
+<h3 id="fixed_176">Fixed</h3>
 <p>Installed app-misc/c_rehash, which was unintentionally removed after the dev-libs/openssl update.</p>
 <h3 id="security_341">Security</h3>
 <p>Fixed CVE-2025-71104 in the Linux kernel.</p>
@@ -4299,7 +4348,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-68337 in the Linux kernel.</p>
 <h3 id="security_366">Security</h3>
 <p>Fixed CVE-2025-71097 in the Linux kernel.</p>
-<h3 id="change_65">Change</h3>
+<h3 id="change_68">Change</h3>
 <h3 id="cos-121-18867-294-100">cos-121-18867-294-100</h3>
 <table>
 <thead>
@@ -4329,7 +4378,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-68814 in the Linux kernel.</p>
 <h3 id="security_368">Security</h3>
 <p>Fixed CVE-2025-68740 in the Linux kernel.</p>
-<h3 id="fixed_176">Fixed</h3>
+<h3 id="fixed_177">Fixed</h3>
 <p>Upgraded sys-apps/less to v691.</p>
 <h3 id="security_369">Security</h3>
 <p>Fixed CVE-2025-68337 in the Linux kernel.</p>
@@ -4367,7 +4416,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-71104 in the Linux kernel.</p>
 <h3 id="security_386">Security</h3>
 <p>Fixed CVE-2025-71077 in the Linux kernel.</p>
-<h3 id="fixed_177">Fixed</h3>
+<h3 id="fixed_178">Fixed</h3>
 <p>Installed app-misc/c_rehash, which was unintentionally removed after the dev-libs/openssl update.</p>
 <h3 id="security_387">Security</h3>
 <p>Fixed CVE-2025-68816 in the Linux kernel.</p>
@@ -4403,7 +4452,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-68265 in the Linux kernel.</p>
 <h3 id="security_403">Security</h3>
 <p>Fixed CVE-2025-68794 in the Linux kernel.</p>
-<h3 id="fixed_178">Fixed</h3>
+<h3 id="fixed_179">Fixed</h3>
 <p>Upgraded app-admin/sosreport to v4.10.2.</p>
 <h3 id="security_404">Security</h3>
 <p>Fixed CVE-2025-68261 in the Linux kernel.</p>
@@ -4421,7 +4470,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-68764 in the Linux kernel.</p>
 <h3 id="security_411">Security</h3>
 <p>Fixed CVE-2025-68813 in the Linux kernel.</p>
-<h3 id="change_66">Change</h3>
+<h3 id="change_69">Change</h3>
 <h3 id="cos-113-18244-521-88">cos-113-18244-521-88</h3>
 <table>
 <thead>
@@ -4465,7 +4514,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-71118 in the Linux kernel.</p>
 <h3 id="security_420">Security</h3>
 <p>Fixed CVE-2025-71102 in the Linux kernel.</p>
-<h3 id="fixed_179">Fixed</h3>
+<h3 id="fixed_180">Fixed</h3>
 <p>Installed app-misc/c_rehash, which was unintentionally removed after the dev-libs/openssl update.</p>
 <h3 id="security_421">Security</h3>
 <p>Fixed CVE-2025-71131 in the Linux kernel.</p>
@@ -4477,7 +4526,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-71120 in the Linux kernel.</p>
 <h3 id="security_425">Security</h3>
 <p>Fixed CVE-2025-71104 in the Linux kernel.</p>
-<h3 id="change_67">Change</h3>
+<h3 id="change_70">Change</h3>
 <h3 id="cos-125-19216-104-126">cos-125-19216-104-126</h3>
 <table>
 <thead>
@@ -4503,7 +4552,7 @@ unlimited loop devices.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_180">Fixed</h3>
+<h3 id="fixed_181">Fixed</h3>
 <p>Upgraded sys-apps/less to v691.</p>
 <h3 id="security_426">Security</h3>
 <p>Fixed CVE-2025-13836 in dev-lang/python.</p>
@@ -4511,11 +4560,11 @@ unlimited loop devices.</p>
 <p>Updated dev-libs/openssl to v3.5.5. This resolves CVE-2025-15467.</p>
 <h3 id="security_428">Security</h3>
 <p>Fixed CVE-2026-21441 in dev-python/urllib3.</p>
-<h3 id="fixed_181">Fixed</h3>
+<h3 id="fixed_182">Fixed</h3>
 <p>Upgraded app-admin/sosreport to v4.10.2.</p>
 <hr />
 <h2 id="2026-01-23">2026-01-23</h2>
-<h3 id="change_68">Change</h3>
+<h3 id="change_71">Change</h3>
 <h3 id="cos-125-19216-104-117">cos-125-19216-104-117</h3>
 <table>
 <thead>
@@ -4541,7 +4590,7 @@ unlimited loop devices.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_182">Fixed</h3>
+<h3 id="fixed_183">Fixed</h3>
 <p>Fixed a performance issue in TCPX.</p>
 <h3 id="security_429">Security</h3>
 <p>Fixed CVE-2025-71141 in the Linux kernel.</p>
@@ -4549,7 +4598,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-13837 in dev-lang/python.</p>
 <hr />
 <h2 id="2026-01-20">2026-01-20</h2>
-<h3 id="change_69">Change</h3>
+<h3 id="change_72">Change</h3>
 <h3 id="cos-125-19216-104-113">cos-125-19216-104-113</h3>
 <table>
 <thead>
@@ -4583,7 +4632,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-68261 in the Linux kernel.</p>
 <h3 id="security_434">Security</h3>
 <p>Fixed CVE-2025-68259 in the Linux kernel.</p>
-<h3 id="change_70">Change</h3>
+<h3 id="change_73">Change</h3>
 <p>Applied ethtool ring length changes to a4x's first Diorite interface.</p>
 <h3 id="security_435">Security</h3>
 <p>Fixed CVE-2025-71113 in the Linux kernel.</p>
@@ -4623,7 +4672,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-71089 in the Linux kernel.</p>
 <h3 id="security_452">Security</h3>
 <p>Fixed CVE-2025-68801 in the Linux kernel.</p>
-<h3 id="fixed_183">Fixed</h3>
+<h3 id="fixed_184">Fixed</h3>
 <p>Updated cos-gpu-installer to v2.5.10.</p>
 <h3 id="security_453">Security</h3>
 <p>Fixed CVE-2025-68814 in the Linux kernel.</p>
@@ -4673,7 +4722,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-71135 in the Linux kernel.</p>
 <h3 id="security_476">Security</h3>
 <p>Fixed CVE-2025-68795 in the Linux kernel.</p>
-<h3 id="fixed_184">Fixed</h3>
+<h3 id="fixed_185">Fixed</h3>
 <p>Updated dev-libs/openssl to v3.5.4.</p>
 <h3 id="security_477">Security</h3>
 <p>Fixed CVE-2025-68820 in the Linux kernel.</p>
@@ -4711,7 +4760,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-40325 in the Linux kernel.</p>
 <h3 id="security_494">Security</h3>
 <p>Fixed CVE-2025-68798 in the Linux kernel.</p>
-<h3 id="change_71">Change</h3>
+<h3 id="change_74">Change</h3>
 <h3 id="cos-113-18244-521-74">cos-113-18244-521-74</h3>
 <table>
 <thead>
@@ -4791,11 +4840,11 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-68363 in the Linux kernel.</p>
 <h3 id="security_521">Security</h3>
 <p>Fixed CVE-2025-68337 in the Linux kernel.</p>
-<h3 id="fixed_185">Fixed</h3>
+<h3 id="fixed_186">Fixed</h3>
 <p>Updated dev-libs/openssl to v3.0.18</p>
 <h3 id="security_522">Security</h3>
 <p>Fixed CVE-2025-68820 in the Linux kernel.</p>
-<h3 id="change_72">Change</h3>
+<h3 id="change_75">Change</h3>
 <h3 id="cos-117-18613-439-92">cos-117-18613-439-92</h3>
 <table>
 <thead>
@@ -4835,7 +4884,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-12084 in dev-lang/python.</p>
 <h3 id="security_529">Security</h3>
 <p>Fixed CVE-2025-40350 in the Linux kernel.</p>
-<h3 id="change_73">Change</h3>
+<h3 id="change_76">Change</h3>
 <h3 id="cos-121-18867-294-88">cos-121-18867-294-88</h3>
 <table>
 <thead>
@@ -4865,7 +4914,7 @@ unlimited loop devices.</p>
 <p>Applied urllib3 patch for CVE-2024-37891.</p>
 <h3 id="security_531">Security</h3>
 <p>Fixed CVE-2025-61729 in dev-lang/go.</p>
-<h3 id="change_74">Change</h3>
+<h3 id="change_77">Change</h3>
 <p>Updated dev-libs/openssl to v3.0.18.</p>
 <h3 id="security_532">Security</h3>
 <p>Fixed CVE-2025-12084 in dev-lang/python.</p>
@@ -4873,7 +4922,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-61727 in dev-lang/go.</p>
 <hr />
 <h2 id="2026-01-14">2026-01-14</h2>
-<h3 id="change_75">Change</h3>
+<h3 id="change_78">Change</h3>
 <h3 id="cos-125-19216-104-95">cos-125-19216-104-95</h3>
 <table>
 <thead>
@@ -4915,14 +4964,14 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-68756 in the Linux kernel.</p>
 <h3 id="security_541">Security</h3>
 <p>Fixed CVE-2025-40350 in the Linux kernel.</p>
-<h3 id="change_76">Change</h3>
+<h3 id="change_79">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: net.ipv4.udp_mem: 188034 250714 376068 -&gt; 188034 250715 376068</li>
 </ul>
 <h3 id="security_542">Security</h3>
 <p>Fixed CVE-2025-68329 in the Linux kernel.</p>
-<h3 id="change_77">Change</h3>
+<h3 id="change_80">Change</h3>
 <h3 id="cos-121-18867-294-78">cos-121-18867-294-78</h3>
 <table>
 <thead>
@@ -4954,13 +5003,13 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-40350 in the Linux kernel.</p>
 <h3 id="security_545">Security</h3>
 <p>Fixed CVE-2025-40350 in the Linux kernel.</p>
-<h3 id="change_78">Change</h3>
+<h3 id="change_81">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: net.ipv4.tcp_mem: 94044 125392 188088 -&gt; 94041 125391 188082</li>
 <li>Changed: net.ipv4.udp_mem: 188088 250784 376176 -&gt; 188085 250783 376170</li>
 </ul>
-<h3 id="change_79">Change</h3>
+<h3 id="change_82">Change</h3>
 <h3 id="cos-117-18613-439-82">cos-117-18613-439-82</h3>
 <table>
 <thead>
@@ -4986,11 +5035,11 @@ unlimited loop devices.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_186">Fixed</h3>
+<h3 id="fixed_187">Fixed</h3>
 <p>Added bcache clock cache replacement policy.</p>
 <hr />
 <h2 id="2026-01-05">2026-01-05</h2>
-<h3 id="change_80">Change</h3>
+<h3 id="change_83">Change</h3>
 <h3 id="cos-125-19216-104-89">cos-125-19216-104-89</h3>
 <table>
 <thead>
@@ -5024,7 +5073,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-66471 and CVE-2025-66418 in dev-python/urllib3.</p>
 <h3 id="security_549">Security</h3>
 <p>Fixed CVE-2025-68173 in the Linux kernel.</p>
-<h3 id="change_81">Change</h3>
+<h3 id="change_84">Change</h3>
 <p>Updated app-admin/sosreport to v4.10.1. Enabled containerd stack dump by default.</p>
 <h3 id="security_550">Security</h3>
 <p>Fixed CVE-2025-68292 in the Linux kernel.</p>
@@ -5050,7 +5099,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-68213 in the Linux kernel.</p>
 <h3 id="security_561">Security</h3>
 <p>Fixed CVE-2025-68295 in the Linux kernel.</p>
-<h3 id="fixed_187">Fixed</h3>
+<h3 id="fixed_188">Fixed</h3>
 <p>Upgraded sys-apps/dmidecode to v3.7.</p>
 <h3 id="security_562">Security</h3>
 <p>Fixed CVE-2025-68171 in the Linux kernel.</p>
@@ -5074,7 +5123,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-68186 in the Linux kernel.</p>
 <h3 id="security_572">Security</h3>
 <p>Fixed CVE-2025-68241 in the Linux kernel.</p>
-<h3 id="change_82">Change</h3>
+<h3 id="change_85">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 811475 -&gt; 811504</li>
@@ -5084,7 +5133,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-68229 in the Linux kernel.</p>
 <h3 id="security_574">Security</h3>
 <p>Fixed CVE-2025-40359 in the Linux kernel.</p>
-<h3 id="fixed_188">Fixed</h3>
+<h3 id="fixed_189">Fixed</h3>
 <p>Upgraded net-misc/socat to v1.8.1.0.</p>
 <h3 id="security_575">Security</h3>
 <p>Fixed CVE-2025-40346 in the Linux kernel.</p>
@@ -5098,7 +5147,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-68198 in the Linux kernel.</p>
 <h3 id="security_580">Security</h3>
 <p>Fixed CVE-2025-68313 in the Linux kernel.</p>
-<h3 id="change_83">Change</h3>
+<h3 id="change_86">Change</h3>
 <h3 id="cos-117-18613-439-81">cos-117-18613-439-81</h3>
 <table>
 <thead>
@@ -5130,7 +5179,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-68191 in the Linux kernel.</p>
 <h3 id="security_583">Security</h3>
 <p>Fixed CVE-2025-68219 in the Linux kernel.</p>
-<h3 id="change_84">Change</h3>
+<h3 id="change_87">Change</h3>
 <p>Updated app-admin/sosreport to v4.10.1. Enabled containerd stack dump by default.</p>
 <h3 id="security_584">Security</h3>
 <p>Fixed CVE-2025-68171 in the Linux kernel.</p>
@@ -5148,7 +5197,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-68295 in the Linux kernel.</p>
 <h3 id="security_591">Security</h3>
 <p>Fixed CVE-2025-68183 in the Linux kernel.</p>
-<h3 id="fixed_189">Fixed</h3>
+<h3 id="fixed_190">Fixed</h3>
 <p>Upgraded sys-apps/dmidecode to v3.7.</p>
 <h3 id="security_592">Security</h3>
 <p>Fixed CVE-2025-66471 and CVE-2025-66418 in dev-python/urllib3.</p>
@@ -5164,7 +5213,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-68214 in the Linux kernel.</p>
 <h3 id="security_598">Security</h3>
 <p>Fixed CVE-2025-68208 in the Linux kernel.</p>
-<h3 id="fixed_190">Fixed</h3>
+<h3 id="fixed_191">Fixed</h3>
 <p>Upgraded net-misc/socat to v1.8.1.0.</p>
 <h3 id="security_599">Security</h3>
 <p>Fixed CVE-2025-40346 in the Linux kernel.</p>
@@ -5172,12 +5221,12 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-40360 in the Linux kernel.</p>
 <h3 id="security_601">Security</h3>
 <p>Fixed CVE-2025-68173 in the Linux kernel.</p>
-<h3 id="change_85">Change</h3>
+<h3 id="change_88">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 811737 -&gt; 811699</li>
 </ul>
-<h3 id="change_86">Change</h3>
+<h3 id="change_89">Change</h3>
 <h3 id="cos-121-18867-294-76">cos-121-18867-294-76</h3>
 <table>
 <thead>
@@ -5209,7 +5258,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-68191 in the Linux kernel.</p>
 <h3 id="security_604">Security</h3>
 <p>Fixed CVE-2025-68219 in the Linux kernel.</p>
-<h3 id="change_87">Change</h3>
+<h3 id="change_90">Change</h3>
 <p>Updated app-admin/sosreport to v4.10.1. Enabled containerd stack dump by default.</p>
 <h3 id="security_605">Security</h3>
 <p>Fixed CVE-2025-68171 in the Linux kernel.</p>
@@ -5227,7 +5276,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-68295 in the Linux kernel.</p>
 <h3 id="security_612">Security</h3>
 <p>Fixed CVE-2025-68183 in the Linux kernel.</p>
-<h3 id="fixed_191">Fixed</h3>
+<h3 id="fixed_192">Fixed</h3>
 <p>Upgraded sys-apps/dmidecode to v3.7.</p>
 <h3 id="security_613">Security</h3>
 <p>Fixed CVE-2025-66471 and CVE-2025-66418 in dev-python/urllib3.</p>
@@ -5243,14 +5292,14 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-68214 in the Linux kernel.</p>
 <h3 id="security_619">Security</h3>
 <p>Fixed CVE-2025-68208 in the Linux kernel.</p>
-<h3 id="change_88">Change</h3>
+<h3 id="change_91">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 811762 -&gt; 811813</li>
 <li>Changed: net.ipv4.tcp_mem: 94041 125391 188082 -&gt; 94044 125392 188088</li>
 <li>Changed: net.ipv4.udp_mem: 188085 250783 376170 -&gt; 188088 250784 376176</li>
 </ul>
-<h3 id="fixed_192">Fixed</h3>
+<h3 id="fixed_193">Fixed</h3>
 <p>Upgraded net-misc/socat to v1.8.1.0.</p>
 <h3 id="security_620">Security</h3>
 <p>Fixed CVE-2025-40346 in the Linux kernel.</p>
@@ -5258,7 +5307,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-40360 in the Linux kernel.</p>
 <h3 id="security_622">Security</h3>
 <p>Fixed CVE-2025-68173 in the Linux kernel.</p>
-<h3 id="change_89">Change</h3>
+<h3 id="change_92">Change</h3>
 <h3 id="cos-113-18244-521-65">cos-113-18244-521-65</h3>
 <table>
 <thead>
@@ -5284,7 +5333,7 @@ unlimited loop devices.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_90">Change</h3>
+<h3 id="change_93">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 812054 -&gt; 812031</li>
@@ -5297,7 +5346,7 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-68241 in the Linux kernel.</p>
 <h3 id="security_626">Security</h3>
 <p>Fixed CVE-2025-68295 in the Linux kernel.</p>
-<h3 id="change_91">Change</h3>
+<h3 id="change_94">Change</h3>
 <p>Updated app-admin/sosreport to v4.10.1. Enabled containerd stack dump by default.</p>
 <h3 id="security_627">Security</h3>
 <p>Fixed CVE-2025-68191 in the Linux kernel.</p>
@@ -5315,17 +5364,17 @@ unlimited loop devices.</p>
 <p>Fixed CVE-2025-68200 in the Linux kernel.</p>
 <h3 id="security_634">Security</h3>
 <p>Fixed CVE-2025-68185 in the Linux kernel.</p>
-<h3 id="fixed_193">Fixed</h3>
+<h3 id="fixed_194">Fixed</h3>
 <p>Upgraded sys-apps/dmidecode to v3.7.</p>
 <h3 id="security_635">Security</h3>
 <p>Fixed CVE-2025-68231 in the Linux kernel.</p>
-<h3 id="fixed_194">Fixed</h3>
+<h3 id="fixed_195">Fixed</h3>
 <p>Upgraded net-misc/socat to v1.8.1.0.</p>
 <h3 id="security_636">Security</h3>
 <p>Fixed CVE-2025-40346 in the Linux kernel.</p>
 <hr />
 <h2 id="2025-12-16">2025-12-16</h2>
-<h3 id="change_92">Change</h3>
+<h3 id="change_95">Change</h3>
 <h3 id="cos-dev-129-19437-0-0">cos-dev-129-19437-0-0</h3>
 <table>
 <thead>
@@ -5353,23 +5402,23 @@ unlimited loop devices.</p>
 </table>
 <h3 id="security_637">Security</h3>
 <p>Fixed CVE-2025-40256 in the Linux kernel.</p>
-<h3 id="fixed_195">Fixed</h3>
+<h3 id="fixed_196">Fixed</h3>
 <p>Upgraded net-misc/curl from 8.12.1 to 8.17.0.</p>
-<h3 id="change_93">Change</h3>
+<h3 id="change_96">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 811412 -&gt; 811430</li>
 </ul>
 <h3 id="security_638">Security</h3>
 <p>Fixed CVE-2025-47914 and CVE-2025-58181 in dev-go/crypto.</p>
-<h3 id="change_94">Change</h3>
+<h3 id="change_97">Change</h3>
 <p>Applied ethtool ring length changes to a4x's first Diorite interface.</p>
 <h3 id="security_639">Security</h3>
 <p>Updated containerd and containerd-test to v2.1.5. This
 resolves CVE-2024-25621 and CVE-2025-64329.</p>
 <h3 id="feature_46">Feature</h3>
 <p>Added guest support for paravirtualization of cpuids on ARM machines.</p>
-<h3 id="change_95">Change</h3>
+<h3 id="change_98">Change</h3>
 <h3 id="cos-117-18613-439-72">cos-117-18613-439-72</h3>
 <table>
 <thead>
@@ -5395,16 +5444,16 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_96">Change</h3>
+<h3 id="change_99">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 811769 -&gt; 811737</li>
 </ul>
-<h3 id="fixed_196">Fixed</h3>
+<h3 id="fixed_197">Fixed</h3>
 <p>Backported upstream commit to reduce bcache gc latency.</p>
 <h3 id="security_640">Security</h3>
 <p>Fixed KCTF-f05a4f9 in the Linux kernel.</p>
-<h3 id="change_97">Change</h3>
+<h3 id="change_100">Change</h3>
 <h3 id="cos-121-18867-294-68">cos-121-18867-294-68</h3>
 <table>
 <thead>
@@ -5430,16 +5479,16 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_98">Change</h3>
+<h3 id="change_101">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 811817 -&gt; 811762</li>
 </ul>
-<h3 id="fixed_197">Fixed</h3>
+<h3 id="fixed_198">Fixed</h3>
 <p>Backported upstream commit to reduce bcache gc latency.</p>
 <h3 id="security_641">Security</h3>
 <p>Fixed KCTF-f05a4f9 in the Linux kernel.</p>
-<h3 id="change_99">Change</h3>
+<h3 id="change_102">Change</h3>
 <h3 id="cos-125-19216-104-74">cos-125-19216-104-74</h3>
 <table>
 <thead>
@@ -5465,16 +5514,16 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_198">Fixed</h3>
+<h3 id="fixed_199">Fixed</h3>
 <p>Backported upstream commit to reduce bcache gc latency.</p>
 <h3 id="security_642">Security</h3>
 <p>Fixed KCTF-f05a4f9 in the Linux kernel.</p>
-<h3 id="change_100">Change</h3>
+<h3 id="change_103">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 811448 -&gt; 811475</li>
 </ul>
-<h3 id="change_101">Change</h3>
+<h3 id="change_104">Change</h3>
 <h3 id="cos-113-18244-521-56">cos-113-18244-521-56</h3>
 <table>
 <thead>
@@ -5500,7 +5549,7 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_102">Change</h3>
+<h3 id="change_105">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 812044 -&gt; 812054</li>
@@ -5509,7 +5558,7 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 <p>Fixed KCTF-f05a4f9 in the Linux kernel.</p>
 <hr />
 <h2 id="2025-12-15">2025-12-15</h2>
-<h3 id="change_103">Change</h3>
+<h3 id="change_106">Change</h3>
 <h3 id="cos-113-18244-521-55">cos-113-18244-521-55</h3>
 <table>
 <thead>
@@ -5537,7 +5586,7 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 </table>
 <h3 id="security_644">Security</h3>
 <p>Fixed CVE-2025-47914 and CVE-2025-58181 in dev-go/crypto.</p>
-<h3 id="change_104">Change</h3>
+<h3 id="change_107">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 812052 -&gt; 812044</li>
@@ -5556,13 +5605,13 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 <p>Fixed CVE-2025-40292 in the Linux kernel.</p>
 <h3 id="security_650">Security</h3>
 <p>Fixed CVE-2025-38057 in the Linux kernel.</p>
-<h3 id="fixed_199">Fixed</h3>
+<h3 id="fixed_200">Fixed</h3>
 <p>Fixed CVE-2025-40271 in the Linux kernel.</p>
 <h3 id="security_651">Security</h3>
 <p>Fixed CVE-2025-40248 in the Linux kernel.</p>
 <h3 id="security_652">Security</h3>
 <p>Fixed CVE-2025-40341 in the Linux kernel.</p>
-<h3 id="fixed_200">Fixed</h3>
+<h3 id="fixed_201">Fixed</h3>
 <p>Fixed CVE-2025-40273 in the Linux kernel.</p>
 <h3 id="security_653">Security</h3>
 <p>Fixed CVE-2025-40256 in the Linux kernel.</p>
@@ -5574,7 +5623,7 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 <p>Fixed CVE-2025-40083 in the Linux kernel.</p>
 <h3 id="security_657">Security</h3>
 <p>Fixed CVE-2025-40319 in the Linux kernel.</p>
-<h3 id="change_105">Change</h3>
+<h3 id="change_108">Change</h3>
 <h3 id="cos-125-19216-104-72">cos-125-19216-104-72</h3>
 <table>
 <thead>
@@ -5606,7 +5655,7 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 <p>Fixed CVE-2025-40320 in the Linux kernel.</p>
 <h3 id="security_660">Security</h3>
 <p>Fixed CVE-2025-40292 in the Linux kernel.</p>
-<h3 id="change_106">Change</h3>
+<h3 id="change_109">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 811449 -&gt; 811448</li>
@@ -5637,7 +5686,7 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 <p>Fixed CVE-2025-47914 and CVE-2025-58181 in dev-go/crypto.</p>
 <h3 id="security_673">Security</h3>
 <p>Fixed CVE-2025-40248 in the Linux kernel.</p>
-<h3 id="change_107">Change</h3>
+<h3 id="change_110">Change</h3>
 <h3 id="cos-121-18867-294-66">cos-121-18867-294-66</h3>
 <table>
 <thead>
@@ -5665,7 +5714,7 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 </table>
 <h3 id="security_674">Security</h3>
 <p>Fixed CVE-2025-40220 in the Linux kernel.</p>
-<h3 id="change_108">Change</h3>
+<h3 id="change_111">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 811799 -&gt; 811817</li>
@@ -5688,7 +5737,7 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 <p>Updated app-containers/containerd and app-containers/containerd-test to v2.0.7. This resolves CVE-2024-25621 and CVE-2025-64329.</p>
 <h3 id="security_683">Security</h3>
 <p>Fixed CVE-2025-40297 in the Linux kernel.</p>
-<h3 id="change_109">Change</h3>
+<h3 id="change_112">Change</h3>
 <h3 id="cos-117-18613-439-70">cos-117-18613-439-70</h3>
 <table>
 <thead>
@@ -5718,7 +5767,7 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 <p>Fixed CVE-2025-40341 in the Linux kernel.</p>
 <h3 id="security_685">Security</h3>
 <p>Updated app-containers/containerd and app-containers/containerd-test to v1.7.29. This resolves CVE-2024-25621 and CVE-2025-64329.</p>
-<h3 id="change_110">Change</h3>
+<h3 id="change_113">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 811701 -&gt; 811769</li>
@@ -5727,7 +5776,7 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 <p>Fixed CVE-2025-40328 in the Linux kernel.</p>
 <hr />
 <h2 id="2025-12-11">2025-12-11</h2>
-<h3 id="change_111">Change</h3>
+<h3 id="change_114">Change</h3>
 <h3 id="cos-117-18613-439-65">cos-117-18613-439-65</h3>
 <table>
 <thead>
@@ -5767,7 +5816,7 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 <p>Fixed CVE-2025-40248 in the Linux kernel.</p>
 <h3 id="security_692">Security</h3>
 <p>Fixed CVE-2025-40320 in the Linux kernel.</p>
-<h3 id="fixed_201">Fixed</h3>
+<h3 id="fixed_202">Fixed</h3>
 <p>Upgraded app-admin/google-guest-configs to v20251014.00.</p>
 <h3 id="security_693">Security</h3>
 <p>Fixed CVE-2025-40273 in the Linux kernel.</p>
@@ -5783,7 +5832,7 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 <p>Fixed CVE-2025-21868 in the Linux kernel.</p>
 <h3 id="security_699">Security</h3>
 <p>Fixed CVE-2025-40250 in the Linux kernel.</p>
-<h3 id="change_112">Change</h3>
+<h3 id="change_115">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 811788 -&gt; 811701</li>
@@ -5808,7 +5857,7 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 <p>Fixed CVE-2025-38057 in the Linux kernel.</p>
 <hr />
 <h2 id="2025-12-10">2025-12-10</h2>
-<h3 id="change_113">Change</h3>
+<h3 id="change_116">Change</h3>
 <h3 id="cos-121-18867-294-60">cos-121-18867-294-60</h3>
 <table>
 <thead>
@@ -5862,18 +5911,18 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 <p>Fixed CVE-2025-47914 and CVE-2025-58181 in dev-go/crypto.</p>
 <h3 id="security_721">Security</h3>
 <p>Fixed CVE-2025-38678 in the Linux kernel.</p>
-<h3 id="change_114">Change</h3>
+<h3 id="change_117">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 811755 -&gt; 811799</li>
 </ul>
-<h3 id="fixed_202">Fixed</h3>
+<h3 id="fixed_203">Fixed</h3>
 <p>Upgraded app-admin/google-guest-configs to v20251014.00.</p>
 <h3 id="security_722">Security</h3>
 <p>Fixed CVE-2025-40250 in the Linux kernel.</p>
 <h3 id="security_723">Security</h3>
 <p>Fixed CVE-2025-40272 in the Linux kernel.</p>
-<h3 id="change_115">Change</h3>
+<h3 id="change_118">Change</h3>
 <h3 id="cos-125-19216-104-61">cos-125-19216-104-61</h3>
 <table>
 <thead>
@@ -5899,7 +5948,7 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_116">Change</h3>
+<h3 id="change_119">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 811530 -&gt; 811449</li>
@@ -5912,7 +5961,7 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 <p>Added patches to handle IDPF tx timeouts.</p>
 <h3 id="security_726">Security</h3>
 <p>Fixed CVE-2025-40251 in the Linux kernel.</p>
-<h3 id="fixed_203">Fixed</h3>
+<h3 id="fixed_204">Fixed</h3>
 <p>Upgraded app-admin/google-guest-configs to v20251014.00.</p>
 <h3 id="security_727">Security</h3>
 <p>Fixed CVE-2025-40209 in the Linux kernel.</p>
@@ -5932,7 +5981,7 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 <p>Fixed CVE-2025-40273 in the Linux kernel.</p>
 <h3 id="security_734">Security</h3>
 <p>Fixed CVE-2025-40250 in the Linux kernel.</p>
-<h3 id="change_117">Change</h3>
+<h3 id="change_120">Change</h3>
 <h3 id="cos-dev-129-19424-0-0">cos-dev-129-19424-0-0</h3>
 <table>
 <thead>
@@ -5962,20 +6011,20 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 <p>Added support for NVIDIA driver v580.105.08 and set it as the default version for all GPU types.</p>
 <h3 id="feature_53">Feature</h3>
 <p>Enabled automatic loading of RDMA kernel modules when CX-8 devices are detected.</p>
-<h3 id="fixed_204">Fixed</h3>
+<h3 id="fixed_205">Fixed</h3>
 <p>upgraded net-fs/cifs-utils to v7.4.</p>
-<h3 id="change_118">Change</h3>
+<h3 id="change_121">Change</h3>
 <p>Updated the Linux kernel to v6.12.61.</p>
 <h3 id="feature_54">Feature</h3>
 <p>Added patches to handle IDPF tx timeouts.</p>
-<h3 id="change_119">Change</h3>
+<h3 id="change_122">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 811490 -&gt; 811412</li>
 </ul>
-<h3 id="fixed_205">Fixed</h3>
+<h3 id="fixed_206">Fixed</h3>
 <p>Upgraded app-admin/fluent-bit to v4.2.0.</p>
-<h3 id="change_120">Change</h3>
+<h3 id="change_123">Change</h3>
 <h3 id="cos-113-18244-521-45">cos-113-18244-521-45</h3>
 <table>
 <thead>
@@ -6001,18 +6050,18 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_121">Change</h3>
+<h3 id="change_124">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 811999 -&gt; 812052</li>
 </ul>
 <h3 id="security_735">Security</h3>
 <p>Fixed CVE-2025-40231 in the Linux kernel.</p>
-<h3 id="fixed_206">Fixed</h3>
+<h3 id="fixed_207">Fixed</h3>
 <p>Upgraded app-admin/google-guest-configs to v20251014.00.</p>
 <hr />
 <h2 id="2025-12-04">2025-12-04</h2>
-<h3 id="change_122">Change</h3>
+<h3 id="change_125">Change</h3>
 <h3 id="cos-113-18244-521-41">cos-113-18244-521-41</h3>
 <table>
 <thead>
@@ -6038,12 +6087,12 @@ resolves CVE-2024-25621 and CVE-2025-64329.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_123">Change</h3>
+<h3 id="change_126">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 812031 -&gt; 811999</li>
 </ul>
-<h3 id="fixed_207">Fixed</h3>
+<h3 id="fixed_208">Fixed</h3>
 <p>Made the google-guest-agent more resilient to network link
 flakes.</p>
 <h3 id="security_736">Security</h3>
@@ -6051,7 +6100,7 @@ flakes.</p>
 CVE-2025-53905, CVE-2025-53906, CVE-2025-9390.</p>
 <hr />
 <h2 id="2025-12-03">2025-12-03</h2>
-<h3 id="change_124">Change</h3>
+<h3 id="change_127">Change</h3>
 <h3 id="cos-dev-129-19407-0-0">cos-dev-129-19407-0-0</h3>
 <table>
 <thead>
@@ -6082,15 +6131,15 @@ CVE-2025-53905, CVE-2025-53906, CVE-2025-9390.</p>
 CVE-2025-53905, CVE-2025-53906, CVE-2025-9390.</p>
 <h3 id="security_738">Security</h3>
 <p>Fixed CVE-2025-40212 in the Linux kernel.</p>
-<h3 id="change_125">Change</h3>
+<h3 id="change_128">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 811538 -&gt; 811490</li>
 </ul>
-<h3 id="fixed_208">Fixed</h3>
+<h3 id="fixed_209">Fixed</h3>
 <p>Made the google-guest-agent more resilient to network link
 flakes.</p>
-<h3 id="change_126">Change</h3>
+<h3 id="change_129">Change</h3>
 <h3 id="cos-117-18613-439-49">cos-117-18613-439-49</h3>
 <table>
 <thead>
@@ -6121,15 +6170,15 @@ flakes.</p>
 CVE-2025-53905, CVE-2025-53906, CVE-2025-9390.</p>
 <h3 id="feature_55">Feature</h3>
 <p>Added support for NVIDIA driver v580.105.08 and set it as the default version for NVIDIA_RTX_PRO_6000, NVIDIA_GB200, NVIDIA_B200, and NVIDIA_H200 GPU types.</p>
-<h3 id="fixed_209">Fixed</h3>
+<h3 id="fixed_210">Fixed</h3>
 <p>Made the google-guest-agent more resilient to network link
 flakes.</p>
-<h3 id="change_127">Change</h3>
+<h3 id="change_130">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 811751 -&gt; 811788</li>
 </ul>
-<h3 id="change_128">Change</h3>
+<h3 id="change_131">Change</h3>
 <h3 id="cos-121-18867-294-42">cos-121-18867-294-42</h3>
 <table>
 <thead>
@@ -6160,15 +6209,15 @@ flakes.</p>
 CVE-2025-53905, CVE-2025-53906, CVE-2025-9390.</p>
 <h3 id="feature_56">Feature</h3>
 <p>Added support for NVIDIA driver v580.105.08 and set it as the default version for NVIDIA_RTX_PRO_6000, NVIDIA_GB200, NVIDIA_B200, and NVIDIA_H200 GPU types.</p>
-<h3 id="fixed_210">Fixed</h3>
+<h3 id="fixed_211">Fixed</h3>
 <p>Made the google-guest-agent more resilient to network link
 flakes.</p>
-<h3 id="change_129">Change</h3>
+<h3 id="change_132">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 811812 -&gt; 811755</li>
 </ul>
-<h3 id="change_130">Change</h3>
+<h3 id="change_133">Change</h3>
 <h3 id="cos-125-19216-104-45">cos-125-19216-104-45</h3>
 <table>
 <thead>
@@ -6197,10 +6246,10 @@ flakes.</p>
 <h3 id="security_741">Security</h3>
 <p>Upgraded vim &amp; vim-core to version 9.1.1652. This fixes
 CVE-2025-53905, CVE-2025-53906, CVE-2025-9390.</p>
-<h3 id="fixed_211">Fixed</h3>
+<h3 id="fixed_212">Fixed</h3>
 <p>Made the google-guest-agent more resilient to network link
 flakes.</p>
-<h3 id="change_131">Change</h3>
+<h3 id="change_134">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 811428 -&gt; 811530</li>
@@ -6210,7 +6259,7 @@ flakes.</p>
 <p>Added support for NVIDIA driver v580.105.08 and set it as the default version for all GPU types.</p>
 <hr />
 <h2 id="2025-12-02">2025-12-02</h2>
-<h3 id="change_132">Change</h3>
+<h3 id="change_135">Change</h3>
 <h3 id="cos-117-18613-439-45">cos-117-18613-439-45</h3>
 <table>
 <thead>
@@ -6236,7 +6285,7 @@ flakes.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_212">Fixed</h3>
+<h3 id="fixed_213">Fixed</h3>
 <p>Fixed an issue in app-containers/runc that caused runc to
 use more file descriptors than intended.</p>
 <h3 id="security_742">Security</h3>
@@ -6253,7 +6302,7 @@ use more file descriptors than intended.</p>
 <p>Fixed CVE-2025-40194 in the Linux kernel.</p>
 <h3 id="security_748">Security</h3>
 <p>Fixed CVE-2025-40176 in the Linux kernel.</p>
-<h3 id="fixed_213">Fixed</h3>
+<h3 id="fixed_214">Fixed</h3>
 <p>Set the default NVIDIA driver version to v535.274.02 for GPU types which previously had a default major version of 535. This includes NVIDIA_TESLA_V100, NVIDIA_TESLA_A100, NVIDIA_A100_80GB, NVIDIA_H100_80GB, NVIDIA_TESLA_P100, NVIDIA_L4, NVIDIA_TESLA_P4 and NVIDIA_TESLA_T4 GPU types.</p>
 <h3 id="security_749">Security</h3>
 <p>Fixed CVE-2025-40183 in the Linux kernel.</p>
@@ -6263,7 +6312,7 @@ use more file descriptors than intended.</p>
 <p>Fixed CVE-2025-40200 in the Linux kernel.</p>
 <h3 id="security_752">Security</h3>
 <p>Fixed CVE-2025-40198 in the Linux kernel.</p>
-<h3 id="fixed_214">Fixed</h3>
+<h3 id="fixed_215">Fixed</h3>
 <p>Upgraded sys-apps/makedumpfile to v1.7.8.</p>
 <h3 id="security_753">Security</h3>
 <p>Fixed CVE-2025-40186 in the Linux kernel.</p>
@@ -6287,7 +6336,7 @@ use more file descriptors than intended.</p>
 <p>Fixed CVE-2025-40167 in the Linux kernel.</p>
 <h3 id="security_763">Security</h3>
 <p>Fixed CVE-2025-40123 in the Linux kernel.</p>
-<h3 id="change_133">Change</h3>
+<h3 id="change_136">Change</h3>
 <h3 id="cos-113-18244-521-39">cos-113-18244-521-39</h3>
 <table>
 <thead>
@@ -6313,7 +6362,7 @@ use more file descriptors than intended.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_215">Fixed</h3>
+<h3 id="fixed_216">Fixed</h3>
 <p>Fixed an issue in app-containers/runc that caused runc to
 use more file descriptors than intended.</p>
 <h3 id="security_764">Security</h3>
@@ -6350,7 +6399,7 @@ use more file descriptors than intended.</p>
 <p>Fixed CVE-2025-40198 in the Linux kernel.</p>
 <h3 id="security_780">Security</h3>
 <p>Fixed CVE-2025-40153 in the Linux kernel.</p>
-<h3 id="change_134">Change</h3>
+<h3 id="change_137">Change</h3>
 <h3 id="cos-dev-129-19403-0-0">cos-dev-129-19403-0-0</h3>
 <table>
 <thead>
@@ -6376,30 +6425,30 @@ use more file descriptors than intended.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_216">Fixed</h3>
+<h3 id="fixed_217">Fixed</h3>
 <p>Upgraded net-libs/libtirpc to v1.3.7-r2.</p>
 <h3 id="security_781">Security</h3>
 <p>Fixed KCTF-60e6489 in the Linux Kernel.</p>
-<h3 id="fixed_217">Fixed</h3>
-<p>Upgraded sys-apps/pv to v1.10.2.</p>
 <h3 id="fixed_218">Fixed</h3>
-<p>Upgraded sys-process/procps to v4.0.5-r3.</p>
+<p>Upgraded sys-apps/pv to v1.10.2.</p>
 <h3 id="fixed_219">Fixed</h3>
+<p>Upgraded sys-process/procps to v4.0.5-r3.</p>
+<h3 id="fixed_220">Fixed</h3>
 <p>Upgraded sys-apps/pv to v1.10.1.</p>
 <h3 id="feature_58">Feature</h3>
 <p>Enabled Software Watchdog as a module.</p>
 <h3 id="security_782">Security</h3>
 <p>Fixed KCTF-b441cf3 in the Linux kernel.</p>
-<h3 id="fixed_220">Fixed</h3>
+<h3 id="fixed_221">Fixed</h3>
 <p>Fixed an issue in app-containers/runc that caused runc to
 use more file descriptors than intended.</p>
 <h3 id="feature_59">Feature</h3>
 <p>Enabled KVM for COS ARM64.</p>
-<h3 id="fixed_221">Fixed</h3>
-<p>Upgraded net-misc/rsync to v3.4.1-r1.</p>
 <h3 id="fixed_222">Fixed</h3>
+<p>Upgraded net-misc/rsync to v3.4.1-r1.</p>
+<h3 id="fixed_223">Fixed</h3>
 <p>Upgraded net-misc/wget to v1.25.0-r1.</p>
-<h3 id="change_135">Change</h3>
+<h3 id="change_138">Change</h3>
 <h3 id="cos-121-18867-294-38">cos-121-18867-294-38</h3>
 <table>
 <thead>
@@ -6439,14 +6488,14 @@ use more file descriptors than intended.</p>
 <p>Enabled KVM for COS ARM64.</p>
 <h3 id="security_788">Security</h3>
 <p>Fixed CVE-2025-40173 in the Linux kernel.</p>
-<h3 id="fixed_223">Fixed</h3>
+<h3 id="fixed_224">Fixed</h3>
 <p>Fixed an issue in app-containers/runc that caused runc to
 use more file descriptors than intended.</p>
-<h3 id="fixed_224">Fixed</h3>
+<h3 id="fixed_225">Fixed</h3>
 <p>Set the default NVIDIA driver version to v535.274.02 for GPU types which previously had a default major version of 535. This includes NVIDIA_TESLA_V100, NVIDIA_TESLA_A100, NVIDIA_A100_80GB, NVIDIA_H100_80GB, NVIDIA_TESLA_P100, NVIDIA_L4, NVIDIA_TESLA_P4 and NVIDIA_TESLA_T4 GPU types.</p>
 <h3 id="security_789">Security</h3>
 <p>Fixed CVE-2025-40167 in the Linux kernel.</p>
-<h3 id="change_136">Change</h3>
+<h3 id="change_139">Change</h3>
 <h3 id="cos-125-19216-104-39">cos-125-19216-104-39</h3>
 <table>
 <thead>
@@ -6474,11 +6523,11 @@ use more file descriptors than intended.</p>
 </table>
 <h3 id="security_790">Security</h3>
 <p>Fixed KCTF-b441cf3 in the Linux kernel.</p>
-<h3 id="fixed_225">Fixed</h3>
+<h3 id="fixed_226">Fixed</h3>
 <p>Upgraded net-misc/rsync to v3.4.1-r1.</p>
 <h3 id="security_791">Security</h3>
 <p>Fixed CVE-2025-40212 in the Linux kernel.</p>
-<h3 id="change_137">Change</h3>
+<h3 id="change_140">Change</h3>
 <p>Runtime sysctl changes:</p>
 <ul>
 <li>Changed: fs.file-max: 811512 -&gt; 811428</li>
@@ -6486,7 +6535,7 @@ use more file descriptors than intended.</p>
 </ul>
 <h3 id="feature_61">Feature</h3>
 <p>Enabled Software Watchdog as a module.</p>
-<h3 id="fixed_226">Fixed</h3>
+<h3 id="fixed_227">Fixed</h3>
 <p>Fixed an issue in app-containers/runc that caused runc to
 use more file descriptors than intended.</p>
 <h3 id="feature_62">Feature</h3>
@@ -6522,11 +6571,11 @@ use more file descriptors than intended.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_227">Fixed</h3>
+<h3 id="fixed_228">Fixed</h3>
 <p>Updated the OS Login package to version 20251022.00.</p>
 <h3 id="feature_63">Feature</h3>
 <p>Added support for the Lustre 2.14.0_p224 drivers.</p>
-<h3 id="fixed_228">Fixed</h3>
+<h3 id="fixed_229">Fixed</h3>
 <p>Updated the Google OS Config Agent package to version 20250522.00.</p>
 <h3 id="changed">Changed</h3>
 <p>Updated app-containers/runc to v1.3.3.</p>
@@ -6598,7 +6647,7 @@ use more file descriptors than intended.</p>
 </table>
 <h3 id="feature_64">Feature</h3>
 <p>Added support for the Lustre 2.14.0_p224 drivers.</p>
-<h3 id="fixed_229">Fixed</h3>
+<h3 id="fixed_230">Fixed</h3>
 <p>Backported an upstream commit to fix high CPU usage when
 trying to find suitable blocks in ext4 fs.</p>
 <h3 id="changed_4">Changed</h3>
@@ -6635,7 +6684,7 @@ trying to find suitable blocks in ext4 fs.</p>
 </table>
 <h3 id="feature_65">Feature</h3>
 <p>Added support for the Lustre 2.14.0_p224 drivers.</p>
-<h3 id="fixed_230">Fixed</h3>
+<h3 id="fixed_231">Fixed</h3>
 <p>Backported an upstream commit to fix high CPU usage when
 trying to find suitable blocks in ext4 fs.</p>
 <h3 id="changed_6">Changed</h3>
@@ -6670,9 +6719,9 @@ trying to find suitable blocks in ext4 fs.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_231">Fixed</h3>
-<p>Backported various TCPDirect networking fixes.</p>
 <h3 id="fixed_232">Fixed</h3>
+<p>Backported various TCPDirect networking fixes.</p>
+<h3 id="fixed_233">Fixed</h3>
 <p>Backported various TCPDirect networking fixes.</p>
 <h3 id="changed_8">Changed</h3>
 <p>Runtime sysctl changes:</p>
@@ -6713,7 +6762,7 @@ trying to find suitable blocks in ext4 fs.</p>
 </ul>
 <h3 id="changed_10">Changed</h3>
 <p>Updated app-containers/runc to v1.3.3.</p>
-<h3 id="fixed_233">Fixed</h3>
+<h3 id="fixed_234">Fixed</h3>
 <p>Fixed a bug where setting MTU above 9000 on ARM systems with a 64k page size would cause IDPF networking to fail.</p>
 <hr />
 <h2 id="2025-11-11">2025-11-11</h2>
@@ -6742,15 +6791,15 @@ trying to find suitable blocks in ext4 fs.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_234">Fixed</h3>
-<p>Upgraded dev-python/coverage to v7.10.7.</p>
 <h3 id="fixed_235">Fixed</h3>
-<p>Updated net-misc/chrony to v4.8.</p>
+<p>Upgraded dev-python/coverage to v7.10.7.</p>
 <h3 id="fixed_236">Fixed</h3>
-<p>Upgraded app-emulation/cloud-init to v25.1.4.</p>
+<p>Updated net-misc/chrony to v4.8.</p>
 <h3 id="fixed_237">Fixed</h3>
-<p>Upgraded sys-process/audit to 4.0.2-r1.</p>
+<p>Upgraded app-emulation/cloud-init to v25.1.4.</p>
 <h3 id="fixed_238">Fixed</h3>
+<p>Upgraded sys-process/audit to 4.0.2-r1.</p>
+<h3 id="fixed_239">Fixed</h3>
 <p>Enabled multiport support for CX-8 devices.</p>
 <h3 id="changed_11">Changed</h3>
 <p>Updated app-admin/sosreport to v4.10.1. Enabled containerd stack dump by default.</p>
@@ -6759,38 +6808,38 @@ trying to find suitable blocks in ext4 fs.</p>
 <ul>
 <li>Changed: fs.file-max: 811384 -&gt; 811473</li>
 </ul>
-<h3 id="fixed_239">Fixed</h3>
+<h3 id="fixed_240">Fixed</h3>
 <p>Upgraded sys-apps/makedumpfile to v1.7.8.</p>
 <h3 id="changed_13">Changed</h3>
 <p>Updated the Linux kernel to v6.12.57.</p>
 <h3 id="feature_66">Feature</h3>
 <p>Enabled HTCP TCP congestion control algorithm as a module.</p>
-<h3 id="fixed_240">Fixed</h3>
-<p>Upgraded dev-libs/nss to 3.117 and dev-libs/nspr to 4.37.</p>
 <h3 id="fixed_241">Fixed</h3>
+<p>Upgraded dev-libs/nss to 3.117 and dev-libs/nspr to 4.37.</p>
+<h3 id="fixed_242">Fixed</h3>
 <p>Fixed bcache latency spikes.</p>
 <h3 id="changed_14">Changed</h3>
 <p>Updated app-containers/containerd to v2.1.4.</p>
-<h3 id="fixed_242">Fixed</h3>
-<p>Upgraded net-libs/gnutls to v3.8.10 and dev-libs/nettle to 3.10.2.</p>
 <h3 id="fixed_243">Fixed</h3>
-<p>Upgraded sys-auth/pambase to v20251104.</p>
+<p>Upgraded net-libs/gnutls to v3.8.10 and dev-libs/nettle to 3.10.2.</p>
 <h3 id="fixed_244">Fixed</h3>
+<p>Upgraded sys-auth/pambase to v20251104.</p>
+<h3 id="fixed_245">Fixed</h3>
 <p>Upgraded chromeos-base/google-breakpad to v2025.10.31.183851-r257.</p>
 <h3 id="feature_67">Feature</h3>
 <p>Added support for SCSI logging.</p>
-<h3 id="fixed_245">Fixed</h3>
-<p>Fixed a bug where setting MTU above 9000 on ARM systems with a 64k page size would cause IDPF networking to fail.</p>
 <h3 id="fixed_246">Fixed</h3>
+<p>Fixed a bug where setting MTU above 9000 on ARM systems with a 64k page size would cause IDPF networking to fail.</p>
+<h3 id="fixed_247">Fixed</h3>
 <p>Upgraded sys-libs/libcap to v2.77.</p>
 <h3 id="security_796">Security</h3>
 <p>Fixed CVE-2025-31133, CVE-2025-52565, and CVE-2025-52881 in
 app-containers/runc.</p>
 <h3 id="changed_15">Changed</h3>
 <p>Updated app-containers/runc to v1.3.2.</p>
-<h3 id="fixed_247">Fixed</h3>
-<p>Updated app-containers/cri-tools to 1.32.0.</p>
 <h3 id="fixed_248">Fixed</h3>
+<p>Updated app-containers/cri-tools to 1.32.0.</p>
+<h3 id="fixed_249">Fixed</h3>
 <p>Made CX-8 NIC naming order deterministic.</p>
 <h3 id="cos-125-19216-104-17">cos-125-19216-104-17</h3>
 <table>
@@ -6817,7 +6866,7 @@ app-containers/runc.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_249">Fixed</h3>
+<h3 id="fixed_250">Fixed</h3>
 <p>Enabled multiport support for CX-8 devices.</p>
 <h3 id="security_797">Security</h3>
 <p>Fixed CVE-2025-40083 in the Linux kernel.</p>
@@ -6829,11 +6878,11 @@ app-containers/runc.</p>
 <li>Changed: fs.file-max: 811455 -&gt; 811489</li>
 <li>Changed: net.ipv4.udp_mem: 188034 250714 376068 -&gt; 188034 250715 376068</li>
 </ul>
-<h3 id="fixed_250">Fixed</h3>
+<h3 id="fixed_251">Fixed</h3>
 <p>Upgraded sys-apps/makedumpfile to v1.7.8.</p>
 <h3 id="feature_69">Feature</h3>
 <p>Enabled HTCP TCP congestion control algorithm as a module.</p>
-<h3 id="fixed_251">Fixed</h3>
+<h3 id="fixed_252">Fixed</h3>
 <p>Fixed a race condition where unmounting file systems monitored by inotify or fanotify could result in kernel crash.</p>
 <h3 id="changed_17">Changed</h3>
 <p>Updated app-containers/containerd to v2.1.4.</p>
@@ -6841,7 +6890,7 @@ app-containers/runc.</p>
 <p>Fixed CVE-2025-21833 in the Linux kernel.</p>
 <h3 id="feature_70">Feature</h3>
 <p>Added support for SCSI logging.</p>
-<h3 id="fixed_252">Fixed</h3>
+<h3 id="fixed_253">Fixed</h3>
 <p>Made CX-8 NIC naming order deterministic.</p>
 <h3 id="cos-113-18244-521-16">cos-113-18244-521-16</h3>
 <table>
@@ -6870,7 +6919,7 @@ app-containers/runc.</p>
 </table>
 <h3 id="security_799">Security</h3>
 <p>Fixed CVE-2025-40070 in the Linux kernel.</p>
-<h3 id="fixed_253">Fixed</h3>
+<h3 id="fixed_254">Fixed</h3>
 <p>Upgraded sys-apps/makedumpfile to v1.7.8.</p>
 <h3 id="changed_18">Changed</h3>
 <p>Runtime sysctl changes:</p>
@@ -6917,11 +6966,11 @@ app-containers/runc.</p>
 </ul>
 <h3 id="security_804">Security</h3>
 <p>Fixed CVE-2025-40083 in the Linux kernel.</p>
-<h3 id="fixed_254">Fixed</h3>
-<p>Upgraded sys-apps/makedumpfile to v1.7.8.</p>
 <h3 id="fixed_255">Fixed</h3>
-<p>Fixed a race condition where unmounting file systems monitored by inotify or fanotify could result in kernel crash.</p>
+<p>Upgraded sys-apps/makedumpfile to v1.7.8.</p>
 <h3 id="fixed_256">Fixed</h3>
+<p>Fixed a race condition where unmounting file systems monitored by inotify or fanotify could result in kernel crash.</p>
+<h3 id="fixed_257">Fixed</h3>
 <p>Upgraded sys-apps/pv to v1.9.44.</p>
 <h3 id="security_805">Security</h3>
 <p>Fixed CVE-2025-40078 in the Linux kernel.</p>
@@ -6957,7 +7006,7 @@ app-containers/runc.</p>
 <ul>
 <li>Changed: fs.file-max: 811733 -&gt; 811751</li>
 </ul>
-<h3 id="fixed_257">Fixed</h3>
+<h3 id="fixed_258">Fixed</h3>
 <p>Fixed a race condition where unmounting file systems monitored by inotify or fanotify could result in kernel crash.</p>
 <h3 id="security_807">Security</h3>
 <p>Fixed CVE-2025-40042 in the Linux kernel.</p>
@@ -7003,7 +7052,7 @@ app-containers/runc.</p>
 <p>Fixed CVE-2025-40099 in the Linux kernel.</p>
 <h3 id="security_812">Security</h3>
 <p>Fixed CVE-2025-40103 in the Linux kernel.</p>
-<h3 id="fixed_258">Fixed</h3>
+<h3 id="fixed_259">Fixed</h3>
 <p>Fixed bcache latency spikes.</p>
 <h3 id="security_813">Security</h3>
 <p>Fixed CVE-2025-40035 in the Linux kernel.</p>
@@ -7090,7 +7139,7 @@ app-containers/runc.</p>
 <p>Fixed CVE-2025-40099 in the Linux kernel.</p>
 <h3 id="security_826">Security</h3>
 <p>Fixed CVE-2025-40103 in the Linux kernel.</p>
-<h3 id="fixed_259">Fixed</h3>
+<h3 id="fixed_260">Fixed</h3>
 <p>Fixed bcache latency spikes.</p>
 <h3 id="security_827">Security</h3>
 <p>Fixed CVE-2025-31133, CVE-2025-52565, and CVE-2025-52881 in
@@ -7127,7 +7176,7 @@ app-containers/runc.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_260">Fixed</h3>
+<h3 id="fixed_261">Fixed</h3>
 <p>Fixed bcache latency spikes.</p>
 <h3 id="security_829">Security</h3>
 <p>Fixed CVE-2025-31133, CVE-2025-52565, and CVE-2025-52881 in
@@ -7164,7 +7213,7 @@ app-containers/runc.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_261">Fixed</h3>
+<h3 id="fixed_262">Fixed</h3>
 <p>Fixed bcache latency spikes.</p>
 <h3 id="security_830">Security</h3>
 <p>Fixed CVE-2025-31133, CVE-2025-52565, and CVE-2025-52881 in
@@ -7260,7 +7309,7 @@ app-containers/runc. There are known reliability issues in these fixes that will
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_262">Fixed</h3>
+<h3 id="fixed_263">Fixed</h3>
 <p>Fixed bcache latency spikes.</p>
 <h3 id="security_846">Security</h3>
 <p>Fixed CVE-2025-31133, CVE-2025-52565, and CVE-2025-52881 in
@@ -7303,7 +7352,7 @@ app-containers/runc. There are known reliability issues in these fixes that will
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_263">Fixed</h3>
+<h3 id="fixed_264">Fixed</h3>
 <p>Fixed bcache latency spikes.</p>
 <h3 id="security_851">Security</h3>
 <p>Fixed CVE-2025-31133, CVE-2025-52565, and CVE-2025-52881 in
@@ -7344,9 +7393,9 @@ app-containers/runc. There are known reliability issues in these fixes that will
 <p>This is an LTS refresh release.</p>
 <h3 id="feature_71">Feature</h3>
 <p>Fixed a bug in cos-extensions which would cause GB200 and GB300 devices not to be detected in one code path, which would result in Imex channels not being created by default.</p>
-<h3 id="fixed_264">Fixed</h3>
-<p>Upgraded dev-lang/go to v1.23.12.</p>
 <h3 id="fixed_265">Fixed</h3>
+<p>Upgraded dev-lang/go to v1.23.12.</p>
+<h3 id="fixed_266">Fixed</h3>
 <p>Fixed a TCPX bug which would sometimes incorrectly report devices as being missing when route cache entries were missing or invalidated.</p>
 <h3 id="security_852">Security</h3>
 <p>Fixed CVE-2025-40006 in the Linux kernel.</p>
@@ -7425,7 +7474,7 @@ app-containers/runc. There are known reliability issues in these fixes that will
 <p>Updated the Linux kernel to v6.12.55.</p>
 <h3 id="feature_72">Feature</h3>
 <p>Fixed a bug in cos-extensions which would cause GB200 and GB300 devices not to be detected in one code path, which would result in Imex channels not being created by default.</p>
-<h3 id="fixed_266">Fixed</h3>
+<h3 id="fixed_267">Fixed</h3>
 <p>Fixed a TCPX bug which would sometimes incorrectly report devices as being missing when route cache entries were missing or invalidated.</p>
 <h3 id="changed_32">Changed</h3>
 <p>Runtime sysctl changes:</p>
@@ -7457,7 +7506,7 @@ app-containers/runc. There are known reliability issues in these fixes that will
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_267">Fixed</h3>
+<h3 id="fixed_268">Fixed</h3>
 <p>Added support for NVIDIA driver v535.274.02 and v570.195.03.</p>
 <h3 id="security_858">Security</h3>
 <p>Fixed CVE-2025-11413,11414 in binutils-libs.</p>
@@ -7529,25 +7578,25 @@ app-containers/runc. There are known reliability issues in these fixes that will
 <p>This is an <a href="https://cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases">LTS Refresh release</a>.</p>
 <h3 id="changed_35">Changed</h3>
 <p>Updated app-containers/runc to v1.2.7.</p>
-<h3 id="fixed_268">Fixed</h3>
-<p>Reduced gcr_wait_online retry gap.</p>
 <h3 id="fixed_269">Fixed</h3>
-<p>Upgraded sys-auth/pambase to v20250906.</p>
+<p>Reduced gcr_wait_online retry gap.</p>
 <h3 id="fixed_270">Fixed</h3>
-<p>Upgraded app-admin/google-guest-configs to v20250805.00.</p>
+<p>Upgraded sys-auth/pambase to v20250906.</p>
 <h3 id="fixed_271">Fixed</h3>
-<p>Upgraded dev-lang/go to v1.23.12.</p>
+<p>Upgraded app-admin/google-guest-configs to v20250805.00.</p>
 <h3 id="fixed_272">Fixed</h3>
-<p>Upgraded sys-apps/hwdata to v0.400.</p>
+<p>Upgraded dev-lang/go to v1.23.12.</p>
 <h3 id="fixed_273">Fixed</h3>
-<p>Upgraded sys-apps/pv to v1.9.42.</p>
+<p>Upgraded sys-apps/hwdata to v0.400.</p>
 <h3 id="fixed_274">Fixed</h3>
-<p>Upgraded sys-apps/less to v685.</p>
+<p>Upgraded sys-apps/pv to v1.9.42.</p>
 <h3 id="fixed_275">Fixed</h3>
-<p>Upgraded dev-libs/expat to v2.7.3.</p>
+<p>Upgraded sys-apps/less to v685.</p>
 <h3 id="fixed_276">Fixed</h3>
-<p>Upgraded app-admin/sudo to v1.9.17_p2.</p>
+<p>Upgraded dev-libs/expat to v2.7.3.</p>
 <h3 id="fixed_277">Fixed</h3>
+<p>Upgraded app-admin/sudo to v1.9.17_p2.</p>
+<h3 id="fixed_278">Fixed</h3>
 <p>Upgraded dev-db/sqlite to v3.50.3.</p>
 <h3 id="security_860">Security</h3>
 <p>Fixed CVE-2025-11494 in binutils-libs.</p>
@@ -7584,19 +7633,19 @@ app-containers/runc. There are known reliability issues in these fixes that will
 <p>This is an <a href="https://cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases">LTS Refresh release</a>.</p>
 <h3 id="changed_36">Changed</h3>
 <p>Updated app-containers/runc to v1.2.7.</p>
-<h3 id="fixed_278">Fixed</h3>
-<p>Added support for NVIDIA driver v535.274.02 and v570.195.03. Updated default driver version to v535.274.02 for devices using 535 as the default driver. Updated the default driver version to v570.195.03 for NVIDIA_H200.</p>
 <h3 id="fixed_279">Fixed</h3>
-<p>Upgraded app-admin/google-guest-configs to v20250805.00.</p>
+<p>Added support for NVIDIA driver v535.274.02 and v570.195.03. Updated default driver version to v535.274.02 for devices using 535 as the default driver. Updated the default driver version to v570.195.03 for NVIDIA_H200.</p>
 <h3 id="fixed_280">Fixed</h3>
-<p>Upgraded net-nds/rpcbind to v1.2.8.</p>
+<p>Upgraded app-admin/google-guest-configs to v20250805.00.</p>
 <h3 id="fixed_281">Fixed</h3>
-<p>Upgraded sys-apps/less to v685.</p>
+<p>Upgraded net-nds/rpcbind to v1.2.8.</p>
 <h3 id="fixed_282">Fixed</h3>
-<p>Upgraded sys-apps/hwdata to v0.400.</p>
+<p>Upgraded sys-apps/less to v685.</p>
 <h3 id="fixed_283">Fixed</h3>
-<p>Upgraded dev-db/sqlite to v3.50.3.</p>
+<p>Upgraded sys-apps/hwdata to v0.400.</p>
 <h3 id="fixed_284">Fixed</h3>
+<p>Upgraded dev-db/sqlite to v3.50.3.</p>
+<h3 id="fixed_285">Fixed</h3>
 <p>Upgraded app-admin/sudo to v1.9.17_p2.</p>
 <h3 id="security_863">Security</h3>
 <p>Fixed CVE-2025-11413 and CVE-2025-11414 in binutils-libs.</p>
@@ -7641,13 +7690,13 @@ app-containers/runc. There are known reliability issues in these fixes that will
 <p>Updated the Linux kernel to v6.12.54.</p>
 <h3 id="feature_73">Feature</h3>
 <p>Added GB300 support to cos-extensions.</p>
-<h3 id="fixed_285">Fixed</h3>
-<p>Added support for NVIDIA driver v535.274.02 and v570.195.03.</p>
 <h3 id="fixed_286">Fixed</h3>
-<p>Upgraded chromeos-base/google-breakpad to v2025.10.16.221019-r255.</p>
+<p>Added support for NVIDIA driver v535.274.02 and v570.195.03.</p>
 <h3 id="fixed_287">Fixed</h3>
-<p>Upgraded sys-apps/less to v685.</p>
+<p>Upgraded chromeos-base/google-breakpad to v2025.10.16.221019-r255.</p>
 <h3 id="fixed_288">Fixed</h3>
+<p>Upgraded sys-apps/less to v685.</p>
+<h3 id="fixed_289">Fixed</h3>
 <p>Upgraded sys-apps/pv to v1.9.44.</p>
 <h3 id="security_869">Security</h3>
 <p>Fixed CVE-2025-11413 and CVE-2025-11414 in binutils-libs.</p>
@@ -7678,11 +7727,11 @@ app-containers/runc. There are known reliability issues in these fixes that will
 </table>
 <h3 id="changed_39">Changed</h3>
 <p>Updated app-containers/runc to v1.2.7.</p>
-<h3 id="fixed_289">Fixed</h3>
-<p>Added support for NVIDIA driver v535.274.02 and v570.195.03.</p>
 <h3 id="fixed_290">Fixed</h3>
-<p>Upgraded sys-apps/hwdata to v0.400.</p>
+<p>Added support for NVIDIA driver v535.274.02 and v570.195.03.</p>
 <h3 id="fixed_291">Fixed</h3>
+<p>Upgraded sys-apps/hwdata to v0.400.</p>
+<h3 id="fixed_292">Fixed</h3>
 <p>Upgraded sys-apps/less to v685.</p>
 <h3 id="security_870">Security</h3>
 <p>Fixed CVE-2025-11413 and CVE-2025-11414 in binutils-libs.</p>
@@ -7721,9 +7770,9 @@ app-containers/runc. There are known reliability issues in these fixes that will
 <p>Updated cos-gpu-installer to v2.5.9. This adds support for installing drivers for GB 300 devices.</p>
 <h3 id="feature_74">Feature</h3>
 <p>Added GB300 support to cos-extensions.</p>
-<h3 id="fixed_292">Fixed</h3>
-<p>Added support for NVIDIA driver v535.274.02 and v570.195.03.</p>
 <h3 id="fixed_293">Fixed</h3>
+<p>Added support for NVIDIA driver v535.274.02 and v570.195.03.</p>
+<h3 id="fixed_294">Fixed</h3>
 <p>Upgraded sys-apps/pv to v1.9.44.</p>
 <h3 id="security_874">Security</h3>
 <p>Fixed CVE-2025-11413, CVE-2025-11414 in binutils-libs.</p>
@@ -7762,13 +7811,13 @@ app-containers/runc. There are known reliability issues in these fixes that will
 <p>Updated app-containers/runc to v1.2.7.</p>
 <h3 id="feature_75">Feature</h3>
 <p>Added support for NVIDIA GB300 devices.</p>
-<h3 id="fixed_294">Fixed</h3>
-<p>Reduced gcr_wait_online retry gap.</p>
 <h3 id="fixed_295">Fixed</h3>
-<p>Upgraded sys-apps/less to v685.</p>
+<p>Reduced gcr_wait_online retry gap.</p>
 <h3 id="fixed_296">Fixed</h3>
-<p>Upgraded sys-apps/pv to v1.9.42.</p>
+<p>Upgraded sys-apps/less to v685.</p>
 <h3 id="fixed_297">Fixed</h3>
+<p>Upgraded sys-apps/pv to v1.9.42.</p>
+<h3 id="fixed_298">Fixed</h3>
 <p>Upgraded sys-apps/hwdata to v0.400.</p>
 <h3 id="security_875">Security</h3>
 <p>Fixed CVE-2025-11494 in binutils-libs.</p>
@@ -7814,13 +7863,13 @@ app-containers/runc. There are known reliability issues in these fixes that will
 <p>Updated app-containers/runc to v1.2.7.</p>
 <h3 id="feature_76">Feature</h3>
 <p>Added support for NVIDIA GB300 devices.</p>
-<h3 id="fixed_298">Fixed</h3>
-<p>Upgraded sys-auth/pambase to v20251013.</p>
 <h3 id="fixed_299">Fixed</h3>
-<p>Upgraded app-admin/google-guest-configs to v20251014.00.</p>
+<p>Upgraded sys-auth/pambase to v20251013.</p>
 <h3 id="fixed_300">Fixed</h3>
-<p>Upgraded sys-apps/hwdata to v0.400.</p>
+<p>Upgraded app-admin/google-guest-configs to v20251014.00.</p>
 <h3 id="fixed_301">Fixed</h3>
+<p>Upgraded sys-apps/hwdata to v0.400.</p>
+<h3 id="fixed_302">Fixed</h3>
 <p>Upgraded sys-apps/pv to v1.9.42.</p>
 <h3 id="security_878">Security</h3>
 <p>Fixed CVE-2025-11494 in binutils-libs.</p>
@@ -7857,26 +7906,26 @@ app-containers/runc. There are known reliability issues in these fixes that will
 </table>
 <h3 id="announcement_7">Announcement</h3>
 <p>This is an <a href="https://cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases">LTS Refresh release</a>.</p>
-<h3 id="fixed_302">Fixed</h3>
-<p>Reduced gcr_wait_online retry gap.</p>
 <h3 id="fixed_303">Fixed</h3>
-<p>Added task information collection to sosreports.</p>
+<p>Reduced gcr_wait_online retry gap.</p>
 <h3 id="fixed_304">Fixed</h3>
+<p>Added task information collection to sosreports.</p>
+<h3 id="fixed_305">Fixed</h3>
 <p>Updated golang.org/x/crypto, golang.org/x/net, and
 golang.org/x/oauth2 in kubelet and kubectl.</p>
-<h3 id="fixed_305">Fixed</h3>
-<p>Upgraded app-admin/google-guest-configs to v20250805.00.</p>
 <h3 id="fixed_306">Fixed</h3>
-<p>Upgraded dev-lang/go to v1.23.12.</p>
+<p>Upgraded app-admin/google-guest-configs to v20250805.00.</p>
 <h3 id="fixed_307">Fixed</h3>
-<p>Upgraded sys-apps/gentoo-functions to v1.7.4.</p>
+<p>Upgraded dev-lang/go to v1.23.12.</p>
 <h3 id="fixed_308">Fixed</h3>
-<p>Upgraded net-nds/rpcbind to v1.2.8.</p>
+<p>Upgraded sys-apps/gentoo-functions to v1.7.4.</p>
 <h3 id="fixed_309">Fixed</h3>
-<p>Upgraded dev-libs/expat to v2.7.3.</p>
+<p>Upgraded net-nds/rpcbind to v1.2.8.</p>
 <h3 id="fixed_310">Fixed</h3>
-<p>Upgraded app-admin/sudo to v1.9.17_p2.</p>
+<p>Upgraded dev-libs/expat to v2.7.3.</p>
 <h3 id="fixed_311">Fixed</h3>
+<p>Upgraded app-admin/sudo to v1.9.17_p2.</p>
+<h3 id="fixed_312">Fixed</h3>
 <p>Upgraded dev-db/sqlite to v3.50.3.</p>
 <h3 id="security_881">Security</h3>
 <p>Fixed CVE-2025-41244 in app-emulation/open-vm-tools.</p>
@@ -7916,9 +7965,9 @@ golang.org/x/oauth2 in kubelet and kubectl.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_312">Fixed</h3>
-<p>Added task information collection to sosreports.</p>
 <h3 id="fixed_313">Fixed</h3>
+<p>Added task information collection to sosreports.</p>
+<h3 id="fixed_314">Fixed</h3>
 <p>Updated golang.org/x/crypto, golang.org/x/net, and
 golang.org/x/oauth2 in kubelet and kubectl.</p>
 <h3 id="security_885">Security</h3>
@@ -8034,11 +8083,11 @@ golang.org/x/oauth2 in kubelet and kubectl.</p>
 </table>
 <h3 id="changed_51">Changed</h3>
 <p>Updated the Linux kernel to v6.12.53.</p>
-<h3 id="fixed_314">Fixed</h3>
-<p>Reduced gcr_wait_online retry gap.</p>
 <h3 id="fixed_315">Fixed</h3>
-<p>Updated the dump capture kernel to v6.12.52.</p>
+<p>Reduced gcr_wait_online retry gap.</p>
 <h3 id="fixed_316">Fixed</h3>
+<p>Updated the dump capture kernel to v6.12.52.</p>
+<h3 id="fixed_317">Fixed</h3>
 <p>Updated golang.org/x/crypto, golang.org/x/net, and
 golang.org/x/oauth2 in kubelet and kubectl.</p>
 <h3 id="security_910">Security</h3>
@@ -8073,9 +8122,9 @@ golang.org/x/oauth2 in kubelet and kubectl.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_317">Fixed</h3>
-<p>Reduced gcr_wait_online retry gap.</p>
 <h3 id="fixed_318">Fixed</h3>
+<p>Reduced gcr_wait_online retry gap.</p>
+<h3 id="fixed_319">Fixed</h3>
 <p>Added task information collection to sosreports.</p>
 <h3 id="security_911">Security</h3>
 <p>Fixed CVE-2025-41244 in app-emulation/open-vm-tools.</p>
@@ -8112,11 +8161,11 @@ golang.org/x/oauth2 in kubelet and kubectl.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_319">Fixed</h3>
-<p>Updated the dump capture kernel to v6.12.52.</p>
 <h3 id="fixed_320">Fixed</h3>
-<p>Added task information collection to sosreports.</p>
+<p>Updated the dump capture kernel to v6.12.52.</p>
 <h3 id="fixed_321">Fixed</h3>
+<p>Added task information collection to sosreports.</p>
+<h3 id="fixed_322">Fixed</h3>
 <p>Updated golang.org/x/crypto, golang.org/x/net, and
 golang.org/x/oauth2 in kubelet and kubectl.</p>
 <h3 id="security_915">Security</h3>
@@ -8166,19 +8215,19 @@ golang.org/x/oauth2 in kubelet and kubectl.</p>
 <p>Updated the Linux kernel to v6.12.50.</p>
 <h3 id="feature_77">Feature</h3>
 <p>Added support for NVIDIA driver v580.95.05. Updated all latest driver version and default driver versions for NVIDIA_GB200 and NVIDIA_B200 to v580.95.05.</p>
-<h3 id="fixed_322">Fixed</h3>
-<p>Upgraded app-containers/docker-credential-helpers to v0.9.4.</p>
 <h3 id="fixed_323">Fixed</h3>
-<p>Updated toolbox container image tag to v20251002.</p>
+<p>Upgraded app-containers/docker-credential-helpers to v0.9.4.</p>
 <h3 id="fixed_324">Fixed</h3>
-<p>Upgraded chromeos-base/google-breakpad to v2025.10.06.205107-r254.</p>
+<p>Updated toolbox container image tag to v20251002.</p>
 <h3 id="fixed_325">Fixed</h3>
-<p>Upgraded dev-libs/expat to v2.7.3.</p>
+<p>Upgraded chromeos-base/google-breakpad to v2025.10.06.205107-r254.</p>
 <h3 id="fixed_326">Fixed</h3>
-<p>Upgraded sys-apps/hwdata to v0.399.</p>
+<p>Upgraded dev-libs/expat to v2.7.3.</p>
 <h3 id="fixed_327">Fixed</h3>
-<p>Upgraded net-libs/libtirpc to v1.3.7.</p>
+<p>Upgraded sys-apps/hwdata to v0.399.</p>
 <h3 id="fixed_328">Fixed</h3>
+<p>Upgraded net-libs/libtirpc to v1.3.7.</p>
+<h3 id="fixed_329">Fixed</h3>
 <p>Partially fixed an issue where excessive contention among writeback kworkers when switching a large number of inodes between cgroups could lead to system unresponsiveness.</p>
 <h3 id="security_920">Security</h3>
 <p>Upgraded open-vm-tools to 13.0.5. This fixes CVE-2025-41244 in anthos variant.</p>
@@ -8225,13 +8274,13 @@ CVE-2024-0684.</p>
 </table>
 <h3 id="feature_78">Feature</h3>
 <p>Added support for NVIDIA driver v580.95.05. Updated all latest driver version and default driver versions for NVIDIA_GB200 and NVIDIA_B200 to v580.95.05.</p>
-<h3 id="fixed_329">Fixed</h3>
-<p>Upgraded app-admin/node-problem-detector to v0.8.22.</p>
 <h3 id="fixed_330">Fixed</h3>
-<p>Updated toolbox container image tag to v20251002.</p>
+<p>Upgraded app-admin/node-problem-detector to v0.8.22.</p>
 <h3 id="fixed_331">Fixed</h3>
-<p>Upgraded sys-apps/hwdata to v0.399.</p>
+<p>Updated toolbox container image tag to v20251002.</p>
 <h3 id="fixed_332">Fixed</h3>
+<p>Upgraded sys-apps/hwdata to v0.399.</p>
+<h3 id="fixed_333">Fixed</h3>
 <p>Partially fixed an issue where excessive contention among writeback kworkers when switching a large number of inodes between cgroups could lead to system unresponsiveness.</p>
 <h3 id="security_925">Security</h3>
 <p>Fixed CVE-2025-41244 in app-emulation/open-vm-tools in
@@ -8280,11 +8329,11 @@ anthos variant.</p>
 </table>
 <h3 id="feature_79">Feature</h3>
 <p>Added support for NVIDIA driver v580.95.05. Updated all latest driver version and default driver versions for NVIDIA_GB200 and NVIDIA_B200 to v580.95.05.</p>
-<h3 id="fixed_333">Fixed</h3>
-<p>Upgraded app-admin/node-problem-detector to v0.8.22.</p>
 <h3 id="fixed_334">Fixed</h3>
-<p>Upgraded sys-apps/hwdata to v0.399.</p>
+<p>Upgraded app-admin/node-problem-detector to v0.8.22.</p>
 <h3 id="fixed_335">Fixed</h3>
+<p>Upgraded sys-apps/hwdata to v0.399.</p>
+<h3 id="fixed_336">Fixed</h3>
 <p>Partially fixed an issue where excessive contention among writeback kworkers when switching a large number of inodes between cgroups could lead to system unresponsiveness.</p>
 <h3 id="security_932">Security</h3>
 <p>Fixed CVE-2025-11081, CVE-2025-11082 and CVE-2025-11083 in sys-libs/binutils-libs.</p>
@@ -8324,9 +8373,9 @@ anthos variant.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_336">Fixed</h3>
-<p>Updated toolbox container image tag to v20251002.</p>
 <h3 id="fixed_337">Fixed</h3>
+<p>Updated toolbox container image tag to v20251002.</p>
+<h3 id="fixed_338">Fixed</h3>
 <p>Upgraded sys-apps/hwdata to v0.399.</p>
 <h3 id="security_936">Security</h3>
 <p>Fixed CVE-2025-11081, CVE-2025-11082 and CVE-2025-11083 in sys-libs/binutils-libs.</p>
@@ -8370,7 +8419,7 @@ anthos variant.</p>
 </table>
 <h3 id="feature_80">Feature</h3>
 <p>Added support for NVIDIA driver v580.95.05. Updated all latest driver version and default driver versions for NVIDIA_GB200 and NVIDIA_B200 to v580.95.05.</p>
-<h3 id="fixed_338">Fixed</h3>
+<h3 id="fixed_339">Fixed</h3>
 <p>Upgraded app-admin/node-problem-detector to v0.8.22.</p>
 <h3 id="security_941">Security</h3>
 <p>Fixed CVE-2025-11081, CVE-2025-11082 and CVE-2025-11083 in sys-libs/binutils-libs.</p>
@@ -8410,11 +8459,11 @@ anthos variant.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_339">Fixed</h3>
-<p>Updated toolbox container image tag to v20251002.</p>
 <h3 id="fixed_340">Fixed</h3>
-<p>Upgraded sys-apps/hwdata to v0.399.</p>
+<p>Updated toolbox container image tag to v20251002.</p>
 <h3 id="fixed_341">Fixed</h3>
+<p>Upgraded sys-apps/hwdata to v0.399.</p>
+<h3 id="fixed_342">Fixed</h3>
 <p>Partially fixed the system not responding caused by excessive contention among writeback kworkers when switching a large number of inodes between cgroups.</p>
 <h3 id="security_944">Security</h3>
 <p>Fixed KCTF-134121b in the Linux kernel.</p>
@@ -8494,7 +8543,7 @@ anthos variant.</p>
 <h3 id="feature_81">Feature</h3>
 <p>Configured the cos-gpu-installer to use R580 drivers as the
 default GPU drivers.</p>
-<h3 id="fixed_342">Fixed</h3>
+<h3 id="fixed_343">Fixed</h3>
 <p>Add support for NVIDIA MFT Tools v4.33.0.</p>
 <h3 id="security_948">Security</h3>
 <p>Updated dev-python/urllib3 to v1.26.18 and fixed CVE-2025-50181.</p>
@@ -8547,7 +8596,7 @@ CVE-2024-56326, CVE-2024-56201 and CVE-2025-27516.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_343">Fixed</h3>
+<h3 id="fixed_344">Fixed</h3>
 <p>Add support for NVIDIA MFT Tools v4.33.0.</p>
 <h3 id="security_958">Security</h3>
 <p>Fixed CVE-2025-50181 in dev-python/urllib3.</p>
@@ -8595,7 +8644,7 @@ CVE-2024-56326, CVE-2024-56201 and CVE-2025-27516.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_344">Fixed</h3>
+<h3 id="fixed_345">Fixed</h3>
 <p>Add support for NVIDIA MFT Tools v4.33.0.</p>
 <h3 id="security_966">Security</h3>
 <p>Fixed CVE-2025-50181 in dev-python/urllib3.</p>
@@ -8648,7 +8697,7 @@ CVE-2024-56326, CVE-2024-56201 and CVE-2025-27516.</p>
 <h3 id="feature_82">Feature</h3>
 <p>Configured the cos-gpu-installer to use R580 drivers as the
 default GPU drivers.</p>
-<h3 id="fixed_345">Fixed</h3>
+<h3 id="fixed_346">Fixed</h3>
 <p>Add support for NVIDIA MFT Tools v4.33.0.</p>
 <h3 id="security_974">Security</h3>
 <p>Updated dev-python/jinja to v3.1.6. This resolves
@@ -8724,9 +8773,9 @@ CVE-2024-56326, CVE-2024-56201 and CVE-2025-27516.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_346">Fixed</h3>
-<p>Updated app-admin/node-problem-detector to v0.8.21.</p>
 <h3 id="fixed_347">Fixed</h3>
+<p>Updated app-admin/node-problem-detector to v0.8.21.</p>
+<h3 id="fixed_348">Fixed</h3>
 <p>Updated golang.org/x/oauth2, golang.org/x/net,
 golang.org/x/crypto, and github.com/golang-jwt/jwt/v5 in Docker.</p>
 <h3 id="security_979">Security</h3>
@@ -8772,13 +8821,13 @@ golang.org/x/crypto, and github.com/golang-jwt/jwt/v5 in Docker.</p>
 <p>Added CPU balloon support for ARM CPUs.</p>
 <h3 id="feature_84">Feature</h3>
 <p>Added support for the fwctl subsystem and the Mellanox fwctl driver for ARM64.</p>
-<h3 id="fixed_348">Fixed</h3>
-<p>Upgraded sys-auth/pambase to v20250906.</p>
 <h3 id="fixed_349">Fixed</h3>
-<p>Upgraded app-admin/google-guest-configs to v20250913.00.</p>
+<p>Upgraded sys-auth/pambase to v20250906.</p>
 <h3 id="fixed_350">Fixed</h3>
-<p>Upgraded dev-libs/expat to v2.7.2.</p>
+<p>Upgraded app-admin/google-guest-configs to v20250913.00.</p>
 <h3 id="fixed_351">Fixed</h3>
+<p>Upgraded dev-libs/expat to v2.7.2.</p>
+<h3 id="fixed_352">Fixed</h3>
 <p>Updated golang.org/x/oauth2, golang.org/x/net, golang.org/x/crypto, and github.com/golang-jwt/jwt/v5 in Docker.</p>
 <h3 id="cos-117-18613-339-77">cos-117-18613-339-77</h3>
 <table>
@@ -8805,7 +8854,7 @@ golang.org/x/crypto, and github.com/golang-jwt/jwt/v5 in Docker.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_352">Fixed</h3>
+<h3 id="fixed_353">Fixed</h3>
 <p>Updated golang.org/x/crypto, golang.org/x/net,
 golang.org/x/oauth2, and github.com/golang-jwt/jwt/v4 in Docker.</p>
 <h3 id="security_985">Security</h3>
@@ -8844,7 +8893,7 @@ CVE-2024-56326, CVE-2024-56201 and CVE-2025-27516.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_353">Fixed</h3>
+<h3 id="fixed_354">Fixed</h3>
 <p>Added support for NVIDIA driver v580.82.07.
 Updated all latest driver version and default driver
 versions for NVIDIA_B200 to v580.82.07.</p>
@@ -8884,7 +8933,7 @@ CVE-2024-56326, CVE-2024-56201 and CVE-2025-27516.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_354">Fixed</h3>
+<h3 id="fixed_355">Fixed</h3>
 <p>Updated golang.org/x/oauth2, golang.org/x/net,
 golang.org/x/crypto, and github.com/golang-jwt/jwt/v5 in Docker.</p>
 <h3 id="security_995">Security</h3>
@@ -8929,13 +8978,13 @@ CVE-2024-56326, CVE-2024-56201 and CVE-2025-27516.</p>
 <p>Updated cos-gpu-installer to v2.5.7.</p>
 <h3 id="feature_85">Feature</h3>
 <p>Added support for the fwctl subsystem and the Mellanox fwctl driver for ARM64.</p>
-<h3 id="fixed_355">Fixed</h3>
+<h3 id="fixed_356">Fixed</h3>
 <p>Added support for NVIDIA driver v580.82.07.
 Updated all latest driver version and default driver
 versions for NVIDIA_GB200 and NVIDIA_B200 to v580.82.07.</p>
-<h3 id="fixed_356">Fixed</h3>
-<p>Upgraded dev-libs/libxslt to version 1.1.43-r1.</p>
 <h3 id="fixed_357">Fixed</h3>
+<p>Upgraded dev-libs/libxslt to version 1.1.43-r1.</p>
+<h3 id="fixed_358">Fixed</h3>
 <p>Updated the Linux kernel to v6.12.46.</p>
 <h3 id="security_1000">Security</h3>
 <p>Upgraded dev-libs/libxml2 to version 2.13.9. This fixes
@@ -8974,15 +9023,15 @@ CVE-2025-9714.</p>
 </table>
 <h3 id="changed_73">Changed</h3>
 <p>Updated cos-gpu-installer to v2.5.7.</p>
-<h3 id="fixed_358">Fixed</h3>
-<p>Updated golang.org/x/crypto in google-osconfig-agent to v0.31.0.</p>
 <h3 id="fixed_359">Fixed</h3>
+<p>Updated golang.org/x/crypto in google-osconfig-agent to v0.31.0.</p>
+<h3 id="fixed_360">Fixed</h3>
 <p>Added support for NVIDIA driver v580.82.07.
 Updated all latest driver version and default driver
 versions for NVIDIA_GB200 and NVIDIA_B200 to v580.82.07.</p>
-<h3 id="fixed_360">Fixed</h3>
-<p>Upgraded dev-libs/libxslt to version 1.1.43-r1.</p>
 <h3 id="fixed_361">Fixed</h3>
+<p>Upgraded dev-libs/libxslt to version 1.1.43-r1.</p>
+<h3 id="fixed_362">Fixed</h3>
 <p>Updated the Linux kernel to v6.6.105.</p>
 <h3 id="security_1001">Security</h3>
 <p>Upgraded dev-libs/libxml2 to version 2.13.9. This fixes
@@ -9021,13 +9070,13 @@ CVE-2025-9714.</p>
 </table>
 <h3 id="changed_76">Changed</h3>
 <p>Updated cos-gpu-installer to v2.5.7.</p>
-<h3 id="fixed_362">Fixed</h3>
-<p>Updated golang.org/x/crypto in google-guest-agent to v0.31.0.</p>
 <h3 id="fixed_363">Fixed</h3>
-<p>Updated golang.org/x/crypto in google-osconfig-agent to v0.31.0.</p>
+<p>Updated golang.org/x/crypto in google-guest-agent to v0.31.0.</p>
 <h3 id="fixed_364">Fixed</h3>
-<p>Upgraded dev-libs/libxslt to version 1.1.43-r1.</p>
+<p>Updated golang.org/x/crypto in google-osconfig-agent to v0.31.0.</p>
 <h3 id="fixed_365">Fixed</h3>
+<p>Upgraded dev-libs/libxslt to version 1.1.43-r1.</p>
+<h3 id="fixed_366">Fixed</h3>
 <p>Updated the Linux kernel to v6.1.151.</p>
 <h3 id="security_1002">Security</h3>
 <p>Upgraded dev-libs/libxml2 to version 2.13.9. This fixes
@@ -9068,11 +9117,11 @@ CVE-2025-9714.</p>
 <p>Updated cos-gpu-installer to v2.5.7.</p>
 <h3 id="changed_80">Changed</h3>
 <p>Updated the Linux kernel to v6.12.47.</p>
-<h3 id="fixed_366">Fixed</h3>
+<h3 id="fixed_367">Fixed</h3>
 <p>Added support for NVIDIA driver v580.82.07.
 Updated all latest driver version and default driver
 versions for NVIDIA_GB200 and NVIDIA_B200 to v580.82.07.</p>
-<h3 id="fixed_367">Fixed</h3>
+<h3 id="fixed_368">Fixed</h3>
 <p>Upgraded dev-libs/libxslt to version 1.1.43-r1.</p>
 <h3 id="security_1003">Security</h3>
 <p>Upgraded dev-libs/libxml2 to version 2.13.9. This fixes
@@ -9112,11 +9161,11 @@ CVE-2025-9714, CVE-2025-32415 and CVE-2025-32414.</p>
 </table>
 <h3 id="changed_83">Changed</h3>
 <p>Updated cos-gpu-installer to v2.5.7.</p>
-<h3 id="fixed_368">Fixed</h3>
-<p>Updated golang.org/x/crypto in google-osconfig-agent to v0.31.0.</p>
 <h3 id="fixed_369">Fixed</h3>
-<p>Upgraded dev-libs/libxslt to version 1.1.43-r1.</p>
+<p>Updated golang.org/x/crypto in google-osconfig-agent to v0.31.0.</p>
 <h3 id="fixed_370">Fixed</h3>
+<p>Upgraded dev-libs/libxslt to version 1.1.43-r1.</p>
+<h3 id="fixed_371">Fixed</h3>
 <p>Updated the Linux kernel to v6.1.151.</p>
 <h3 id="security_1004">Security</h3>
 <p>Upgraded dev-libs/libxml2 to version 2.13.9. This fixes
@@ -9155,9 +9204,9 @@ CVE-2025-9714.</p>
 </table>
 <h3 id="changed_86">Changed</h3>
 <p>Updated cos-gpu-installer to v2.5.7.</p>
-<h3 id="fixed_371">Fixed</h3>
-<p>Added support for NVIDIA driver v580.82.07. Updated all latest driver version and default driver versions for NVIDIA_GB200 and NVIDIA_B200 to v580.82.07.</p>
 <h3 id="fixed_372">Fixed</h3>
+<p>Added support for NVIDIA driver v580.82.07. Updated all latest driver version and default driver versions for NVIDIA_GB200 and NVIDIA_B200 to v580.82.07.</p>
+<h3 id="fixed_373">Fixed</h3>
 <p>Upgraded dev-libs/libxslt to version 1.1.43-r1.</p>
 <h3 id="security_1005">Security</h3>
 <p>Upgraded dev-libs/libxml2 to version 2.13.9. This fixes
@@ -9200,7 +9249,7 @@ CVE-2025-9714.</p>
 <p>Added GDRCopy kernel module for NVIDIA drivers.</p>
 <h3 id="feature_87">Feature</h3>
 <p>Added support for NVIDIA MFT Tools on arm64.</p>
-<h3 id="fixed_373">Fixed</h3>
+<h3 id="fixed_374">Fixed</h3>
 <p>Updated the Linux kernel to v6.6.105.</p>
 <h3 id="security_1006">Security</h3>
 <p>Fixed CVE-2025-39782 in the Linux kernel.</p>
@@ -9324,7 +9373,7 @@ CVE-2025-9714.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_374">Fixed</h3>
+<h3 id="fixed_375">Fixed</h3>
 <p>Fixed a kernel bug which caused boot to fail for n4 machine types.</p>
 <h3 id="feature_90">Feature</h3>
 <p>Added GDRCopy kernel module for NVIDIA drivers.</p>
@@ -9504,7 +9553,7 @@ CVE-2025-9714.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_375">Fixed</h3>
+<h3 id="fixed_376">Fixed</h3>
 <p>Fixed a kernel bug which caused boot to fail for n4 machine types.</p>
 <h3 id="changed_94">Changed</h3>
 <p>Updated the Linux kernel to v6.12.46.</p>
@@ -9558,21 +9607,21 @@ CVE-2025-9714.</p>
 <p>Disabled DNSSEC by default for COS TPU VMs.</p>
 <h3 id="feature_101">Feature</h3>
 <p>Added IPv6 support for machines using the IDPF driver.</p>
-<h3 id="fixed_376">Fixed</h3>
-<p>Upgraded sys-auth/pambase to v20250826.</p>
 <h3 id="fixed_377">Fixed</h3>
-<p>Upgraded app-admin/google-guest-configs to v20250826.00.</p>
+<p>Upgraded sys-auth/pambase to v20250826.</p>
 <h3 id="fixed_378">Fixed</h3>
-<p>Upgraded app-admin/google-guest-configs to v20250818.00.</p>
+<p>Upgraded app-admin/google-guest-configs to v20250826.00.</p>
 <h3 id="fixed_379">Fixed</h3>
-<p>Installed app-misc/c_rehash.</p>
+<p>Upgraded app-admin/google-guest-configs to v20250818.00.</p>
 <h3 id="fixed_380">Fixed</h3>
-<p>Upgraded chromeos-base/google-breakpad to v2025.08.18.161925-r245.</p>
+<p>Installed app-misc/c_rehash.</p>
 <h3 id="fixed_381">Fixed</h3>
-<p>Upgraded sys-apps/file to v5.46-r3.</p>
+<p>Upgraded chromeos-base/google-breakpad to v2025.08.18.161925-r245.</p>
 <h3 id="fixed_382">Fixed</h3>
-<p>Upgraded sys-apps/hwdata to v0.398.</p>
+<p>Upgraded sys-apps/file to v5.46-r3.</p>
 <h3 id="fixed_383">Fixed</h3>
+<p>Upgraded sys-apps/hwdata to v0.398.</p>
+<h3 id="fixed_384">Fixed</h3>
 <p>Fixed an issue where cpusets cgroups did not work with
 cgroup v1 enabled.</p>
 <h3 id="security_1074">Security</h3>
@@ -9609,7 +9658,7 @@ cgroup v1 enabled.</p>
 </table>
 <h3 id="feature_102">Feature</h3>
 <p>Added NVIDIA GPU driver's R580 branch. Updated the LATEST GPU driver label to version 580.65.06.</p>
-<h3 id="fixed_384">Fixed</h3>
+<h3 id="fixed_385">Fixed</h3>
 <p>Disabled network management by the google-guest-agent.</p>
 <h3 id="security_1075">Security</h3>
 <p>Fixed CVE-2025-38676 in the Linux kernel.</p>
@@ -9751,7 +9800,7 @@ cgroup v1 enabled.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_385">Fixed</h3>
+<h3 id="fixed_386">Fixed</h3>
 <p>Upgraded sys-apps/file to v5.46-r3.</p>
 <h3 id="security_1085">Security</h3>
 <p>Fixed CVE-2025-38351 in the Linux kernel.</p>
@@ -9791,11 +9840,11 @@ cgroup v1 enabled.</p>
 <p>Added iRDMA support in the Linux kernel.</p>
 <h3 id="feature_104">Feature</h3>
 <p>Enabled dynamic vlan configuration for non-primary NICs.</p>
-<h3 id="fixed_386">Fixed</h3>
-<p>Added support for the Lustre 2.14.0_p216 drivers.</p>
 <h3 id="fixed_387">Fixed</h3>
-<p>Upgraded sys-apps/file to v5.46-r3.</p>
+<p>Added support for the Lustre 2.14.0_p216 drivers.</p>
 <h3 id="fixed_388">Fixed</h3>
+<p>Upgraded sys-apps/file to v5.46-r3.</p>
+<h3 id="fixed_389">Fixed</h3>
 <p>Upgraded sys-apps/hwdata to v0.398.</p>
 <h3 id="security_1086">Security</h3>
 <p>Fixed CVE-2025-6052 in dev-libs/glib.</p>
@@ -9835,9 +9884,9 @@ cgroup v1 enabled.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_389">Fixed</h3>
-<p>Upgraded sys-apps/hwdata to v0.398.</p>
 <h3 id="fixed_390">Fixed</h3>
+<p>Upgraded sys-apps/hwdata to v0.398.</p>
+<h3 id="fixed_391">Fixed</h3>
 <p>Upgraded sys-apps/file to v5.46-r3.</p>
 <h3 id="security_1090">Security</h3>
 <p>Fixed CVE-2025-6052 in dev-libs/glib.</p>
@@ -9877,7 +9926,7 @@ cgroup v1 enabled.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_391">Fixed</h3>
+<h3 id="fixed_392">Fixed</h3>
 <p>Upgraded sys-apps/hwdata to v0.398.</p>
 <h3 id="security_1094">Security</h3>
 <p>Fixed CVE-2025-6052 in dev-libs/glib.</p>
@@ -9917,9 +9966,9 @@ cgroup v1 enabled.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_392">Fixed</h3>
-<p>Upgraded sys-apps/file to v5.46-r3.</p>
 <h3 id="fixed_393">Fixed</h3>
+<p>Upgraded sys-apps/file to v5.46-r3.</p>
+<h3 id="fixed_394">Fixed</h3>
 <p>Upgraded sys-apps/hwdata to v0.398.</p>
 <h3 id="security_1098">Security</h3>
 <p>Fixed KCTF-62708b9 in the Linux kernel.</p>
@@ -10005,9 +10054,9 @@ cgroup v1 enabled.</p>
 <p>Enabled the google-guest-agent's network management functionality.</p>
 <h3 id="feature_110">Feature</h3>
 <p>Added ConnectX-8 RDMA support.</p>
-<h3 id="fixed_394">Fixed</h3>
-<p>Installed app-misc/c_rehash.</p>
 <h3 id="fixed_395">Fixed</h3>
+<p>Installed app-misc/c_rehash.</p>
+<h3 id="fixed_396">Fixed</h3>
 <p>Fixed an issue where cpusets cgroups did not work with
 cgroup v1 enabled.</p>
 <h3 id="security_1102">Security</h3>
@@ -10046,7 +10095,7 @@ cgroup v1 enabled.</p>
 <p>Disabled DNSSEC by default for COS TPU VMs.</p>
 <h3 id="feature_112">Feature</h3>
 <p>Added IPv6 support for machines using the IDPF driver.</p>
-<h3 id="fixed_396">Fixed</h3>
+<h3 id="fixed_397">Fixed</h3>
 <p>Added support for the Lustre 2.14.0_p216 drivers.</p>
 <h3 id="security_1103">Security</h3>
 <p>Fixed KCTF-abad3d0 in the Linux kernel.</p>
@@ -10084,7 +10133,7 @@ cgroup v1 enabled.</p>
 <p>Disabled DNSSEC by default for COS TPU VMs.</p>
 <h3 id="feature_114">Feature</h3>
 <p>Added IPv6 support for machines using the IDPF driver.</p>
-<h3 id="fixed_397">Fixed</h3>
+<h3 id="fixed_398">Fixed</h3>
 <p>Added support for the Lustre 2.14.0_p216 drivers.</p>
 <h3 id="security_1104">Security</h3>
 <p>Fixed KCTF-abad3d0 in the Linux kernel.</p>
@@ -10118,7 +10167,7 @@ cgroup v1 enabled.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_398">Fixed</h3>
+<h3 id="fixed_399">Fixed</h3>
 <p>Added support for the Lustre 2.14.0_p216 drivers.</p>
 <h3 id="security_1105">Security</h3>
 <p>Fixed KCTF-abad3d0 in the Linux kernel.</p>
@@ -10275,127 +10324,127 @@ configfs-tsm addition for extended attestation protocol.</p>
 <p>Updated cos-gpu-installer to v2.4.8: Add the -skip-nvidia-smi flag to disable the execution of nvidia-smi verification during gpu driver installation.</p>
 <h3 id="feature_128">Feature</h3>
 <p>Applied Intel patches to add iRDMA support in the Linux kernel.</p>
-<h3 id="fixed_399">Fixed</h3>
-<p>Removed an artifact registry ping that would delay multi-user.target indefinitely for machines with no external IP address.</p>
 <h3 id="fixed_400">Fixed</h3>
-<p>Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.</p>
+<p>Removed an artifact registry ping that would delay multi-user.target indefinitely for machines with no external IP address.</p>
 <h3 id="fixed_401">Fixed</h3>
-<p>Upgraded app-admin/google-guest-configs to v20250718.00.</p>
+<p>Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.</p>
 <h3 id="fixed_402">Fixed</h3>
-<p>Added support for the Lustre 2.14.0_p212 drivers.</p>
+<p>Upgraded app-admin/google-guest-configs to v20250718.00.</p>
 <h3 id="fixed_403">Fixed</h3>
-<p>Fixed docker MTU mismatch.</p>
+<p>Added support for the Lustre 2.14.0_p212 drivers.</p>
 <h3 id="fixed_404">Fixed</h3>
-<p>Increased kdump memory reservation.</p>
+<p>Fixed docker MTU mismatch.</p>
 <h3 id="fixed_405">Fixed</h3>
-<p>Fixed issue where modinfo could not display module signatures.</p>
+<p>Increased kdump memory reservation.</p>
 <h3 id="fixed_406">Fixed</h3>
-<p>Upgraded app-admin/google-guest-agent to v20250418.00.</p>
+<p>Fixed issue where modinfo could not display module signatures.</p>
 <h3 id="fixed_407">Fixed</h3>
-<p>Upgraded sys-apps/makedumpfile to v1.7.7.</p>
+<p>Upgraded app-admin/google-guest-agent to v20250418.00.</p>
 <h3 id="fixed_408">Fixed</h3>
-<p>Modified toolbox to use unified cgroup hierarchy mode instead of hybrid mode when possible.</p>
+<p>Upgraded sys-apps/makedumpfile to v1.7.7.</p>
 <h3 id="fixed_409">Fixed</h3>
-<p>Upgraded app-containers/docker-credential-helpers to v0.9.3.</p>
+<p>Modified toolbox to use unified cgroup hierarchy mode instead of hybrid mode when possible.</p>
 <h3 id="fixed_410">Fixed</h3>
-<p>Fixed EINTR error in app-container/cni-plugins.</p>
+<p>Upgraded app-containers/docker-credential-helpers to v0.9.3.</p>
 <h3 id="fixed_411">Fixed</h3>
-<p>Upgraded sys-auth/pambase to v20250228.</p>
+<p>Fixed EINTR error in app-container/cni-plugins.</p>
 <h3 id="fixed_412">Fixed</h3>
-<p>Disabled martian logging for ConnectX-7 network cards. These cards only communicate locally, but martian logging during communications with the host can lead to a race condition which causes GID table construction to sometimes fail.</p>
+<p>Upgraded sys-auth/pambase to v20250228.</p>
 <h3 id="fixed_413">Fixed</h3>
-<p>Upgraded app-containers/runc to v1.2.5, Upgraded app-containers/runc-test to v1.2.5.</p>
+<p>Disabled martian logging for ConnectX-7 network cards. These cards only communicate locally, but martian logging during communications with the host can lead to a race condition which causes GID table construction to sometimes fail.</p>
 <h3 id="fixed_414">Fixed</h3>
-<p>Upgraded app-admin/node-problem-detector to v0.8.20.</p>
+<p>Upgraded app-containers/runc to v1.2.5, Upgraded app-containers/runc-test to v1.2.5.</p>
 <h3 id="fixed_415">Fixed</h3>
-<p>Upgraded app-admin/fluent-bit to v3.2.5.</p>
+<p>Upgraded app-admin/node-problem-detector to v0.8.20.</p>
 <h3 id="fixed_416">Fixed</h3>
-<p>Upgraded chromeos-base/google-breakpad to v2025.07.23.214511-r244.</p>
+<p>Upgraded app-admin/fluent-bit to v3.2.5.</p>
 <h3 id="fixed_417">Fixed</h3>
-<p>Upgraded chromeos-base/minijail to v18-r168.</p>
+<p>Upgraded chromeos-base/google-breakpad to v2025.07.23.214511-r244.</p>
 <h3 id="fixed_418">Fixed</h3>
-<p>Upgraded dev-libs/openssl to 3.5.1.</p>
+<p>Upgraded chromeos-base/minijail to v18-r168.</p>
 <h3 id="fixed_419">Fixed</h3>
-<p>Upgraded dev-lang/go to v1.23.11.</p>
+<p>Upgraded dev-libs/openssl to 3.5.1.</p>
 <h3 id="fixed_420">Fixed</h3>
-<p>Upgraded chromeos-base/shill-client to v0.0.1-r4879.</p>
+<p>Upgraded dev-lang/go to v1.23.11.</p>
 <h3 id="fixed_421">Fixed</h3>
-<p>Upgraded chromeos-base/chromeos-common-script to v0.0.1-r667.</p>
+<p>Upgraded chromeos-base/shill-client to v0.0.1-r4879.</p>
 <h3 id="fixed_422">Fixed</h3>
-<p>Upgraded chromeos-base/session_manager-client to v0.0.1-r2830.</p>
+<p>Upgraded chromeos-base/chromeos-common-script to v0.0.1-r667.</p>
 <h3 id="fixed_423">Fixed</h3>
-<p>Upgraded chromeos-base/power_manager-client to v0.0.1-r2969.</p>
+<p>Upgraded chromeos-base/session_manager-client to v0.0.1-r2830.</p>
 <h3 id="fixed_424">Fixed</h3>
-<p>Upgraded chromeos-base/debugd-client to v0.0.1-r2734.</p>
+<p>Upgraded chromeos-base/power_manager-client to v0.0.1-r2969.</p>
 <h3 id="fixed_425">Fixed</h3>
-<p>Upgraded sys-apps/rootdev to v0.0.1-r51.</p>
+<p>Upgraded chromeos-base/debugd-client to v0.0.1-r2734.</p>
 <h3 id="fixed_426">Fixed</h3>
-<p>Upgraded sys-apps/dbus to v1.16.2-r197.</p>
+<p>Upgraded sys-apps/rootdev to v0.0.1-r51.</p>
 <h3 id="fixed_427">Fixed</h3>
-<p>Upgraded app-benchmarks/microbenchmarks to v0.0.1-r20.</p>
+<p>Upgraded sys-apps/dbus to v1.16.2-r197.</p>
 <h3 id="fixed_428">Fixed</h3>
-<p>Upgraded chromeos-base/update_engine-client to v0.0.1-r2480.</p>
+<p>Upgraded app-benchmarks/microbenchmarks to v0.0.1-r20.</p>
 <h3 id="fixed_429">Fixed</h3>
-<p>Updated dev-python/requests to v2.32.4.</p>
+<p>Upgraded chromeos-base/update_engine-client to v0.0.1-r2480.</p>
 <h3 id="fixed_430">Fixed</h3>
-<p>Upgraded net-misc/openssh to 10.0_p1.</p>
+<p>Updated dev-python/requests to v2.32.4.</p>
 <h3 id="fixed_431">Fixed</h3>
-<p>Upgraded dev-db/sqlite to v3.50.3.</p>
+<p>Upgraded net-misc/openssh to 10.0_p1.</p>
 <h3 id="fixed_432">Fixed</h3>
-<p>Upgraded virtual/logger to v0-r2.</p>
+<p>Upgraded dev-db/sqlite to v3.50.3.</p>
 <h3 id="fixed_433">Fixed</h3>
-<p>Upgraded sys-apps/pv to v1.9.34.</p>
+<p>Upgraded virtual/logger to v0-r2.</p>
 <h3 id="fixed_434">Fixed</h3>
-<p>Upgraded app-admin/sudo to v1.9.17_p2.</p>
+<p>Upgraded sys-apps/pv to v1.9.34.</p>
 <h3 id="fixed_435">Fixed</h3>
-<p>Upgraded sys-process/lsof to v4.99.5.</p>
+<p>Upgraded app-admin/sudo to v1.9.17_p2.</p>
 <h3 id="fixed_436">Fixed</h3>
-<p>Updated app-misc/jq to v1.8.1.</p>
+<p>Upgraded sys-process/lsof to v4.99.5.</p>
 <h3 id="fixed_437">Fixed</h3>
-<p>Upgraded sys-apps/less to v679.</p>
+<p>Updated app-misc/jq to v1.8.1.</p>
 <h3 id="fixed_438">Fixed</h3>
-<p>Upgraded sys-process/procps to v4.0.5-r2.</p>
+<p>Upgraded sys-apps/less to v679.</p>
 <h3 id="fixed_439">Fixed</h3>
-<p>Upgraded sys-libs/libcap to v2.76.</p>
+<p>Upgraded sys-process/procps to v4.0.5-r2.</p>
 <h3 id="fixed_440">Fixed</h3>
-<p>Upgraded sys-apps/ethtool to version 6.11.</p>
+<p>Upgraded sys-libs/libcap to v2.76.</p>
 <h3 id="fixed_441">Fixed</h3>
-<p>Upgraded app-arch/gzip to v1.14.</p>
+<p>Upgraded sys-apps/ethtool to version 6.11.</p>
 <h3 id="fixed_442">Fixed</h3>
-<p>Upgraded net-dns/libidn2 to v2.3.8.</p>
+<p>Upgraded app-arch/gzip to v1.14.</p>
 <h3 id="fixed_443">Fixed</h3>
-<p>Upgraded sys-apps/grep to v3.12.</p>
+<p>Upgraded net-dns/libidn2 to v2.3.8.</p>
 <h3 id="fixed_444">Fixed</h3>
-<p>Upgraded sys-apps/diffutils to v3.11-r2.</p>
+<p>Upgraded sys-apps/grep to v3.12.</p>
 <h3 id="fixed_445">Fixed</h3>
-<p>Upgraded net-nds/rpcbind to v1.2.7.</p>
+<p>Upgraded sys-apps/diffutils to v3.11-r2.</p>
 <h3 id="fixed_446">Fixed</h3>
-<p>Upgraded net-misc/rsync to v3.4.1.</p>
+<p>Upgraded net-nds/rpcbind to v1.2.7.</p>
 <h3 id="fixed_447">Fixed</h3>
-<p>Upgraded dev-libs/nss to v3.110.</p>
+<p>Upgraded net-misc/rsync to v3.4.1.</p>
 <h3 id="fixed_448">Fixed</h3>
-<p>Upgraded sys-libs/libseccomp to v2.6.0-r2.</p>
+<p>Upgraded dev-libs/nss to v3.110.</p>
 <h3 id="fixed_449">Fixed</h3>
-<p>Upgraded dev-libs/expat to v2.7.1.</p>
+<p>Upgraded sys-libs/libseccomp to v2.6.0-r2.</p>
 <h3 id="fixed_450">Fixed</h3>
-<p>Upgraded app-arch/unzip to v6.0_p29.</p>
+<p>Upgraded dev-libs/expat to v2.7.1.</p>
 <h3 id="fixed_451">Fixed</h3>
-<p>Upgraded sys-apps/acl to v2.3.2-r2.</p>
+<p>Upgraded app-arch/unzip to v6.0_p29.</p>
 <h3 id="fixed_452">Fixed</h3>
-<p>Updated dev-python/s3transfer to v0.11.4.</p>
+<p>Upgraded sys-apps/acl to v2.3.2-r2.</p>
 <h3 id="fixed_453">Fixed</h3>
-<p>Updated dev-python/botocore to v1.37.9.</p>
+<p>Updated dev-python/s3transfer to v0.11.4.</p>
 <h3 id="fixed_454">Fixed</h3>
-<p>Updated dev-python/python-dateutil to v2.9.0.</p>
+<p>Updated dev-python/botocore to v1.37.9.</p>
 <h3 id="fixed_455">Fixed</h3>
-<p>Upgraded sys-apps/which to v2.23.</p>
+<p>Updated dev-python/python-dateutil to v2.9.0.</p>
 <h3 id="fixed_456">Fixed</h3>
-<p>Upgraded dev-libs/double-conversion to v3.3.1.</p>
+<p>Upgraded sys-apps/which to v2.23.</p>
 <h3 id="fixed_457">Fixed</h3>
-<p>Upgraded net-misc/socat to v1.8.0.3.</p>
+<p>Upgraded dev-libs/double-conversion to v3.3.1.</p>
 <h3 id="fixed_458">Fixed</h3>
-<p>Upgraded sys-apps/hwdata to v0.391.</p>
+<p>Upgraded net-misc/socat to v1.8.0.3.</p>
 <h3 id="fixed_459">Fixed</h3>
+<p>Upgraded sys-apps/hwdata to v0.391.</p>
+<h3 id="fixed_460">Fixed</h3>
 <p>Upgraded sysram to version 6.12-0.</p>
 <h3 id="security_1108">Security</h3>
 <p>Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.</p>
@@ -10554,17 +10603,17 @@ configfs-tsm addition for extended attestation protocol.</p>
 <p>Enabled the google-guest-agent's network management functionality.</p>
 <h3 id="feature_132">Feature</h3>
 <p>Added ConnectX-8 RDMA support.</p>
-<h3 id="fixed_460">Fixed</h3>
-<p>Upgraded app-admin/google-guest-configs to v20250807.00.</p>
 <h3 id="fixed_461">Fixed</h3>
-<p>Upgraded chromeos-base/chromeos-common-script to v0.0.1-r668.</p>
+<p>Upgraded app-admin/google-guest-configs to v20250807.00.</p>
 <h3 id="fixed_462">Fixed</h3>
-<p>Upgraded dev-lang/go to v1.23.12.</p>
+<p>Upgraded chromeos-base/chromeos-common-script to v0.0.1-r668.</p>
 <h3 id="fixed_463">Fixed</h3>
-<p>Upgraded dev-db/sqlite to v3.50.4.</p>
+<p>Upgraded dev-lang/go to v1.23.12.</p>
 <h3 id="fixed_464">Fixed</h3>
-<p>Upgraded net-nds/rpcbind to v1.2.8.</p>
+<p>Upgraded dev-db/sqlite to v3.50.4.</p>
 <h3 id="fixed_465">Fixed</h3>
+<p>Upgraded net-nds/rpcbind to v1.2.8.</p>
+<h3 id="fixed_466">Fixed</h3>
 <p>Upgraded sys-apps/gentoo-functions to v1.7.4.</p>
 <h3 id="security_1144">Security</h3>
 <p>Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.</p>
@@ -10835,56 +10884,56 @@ configfs-tsm addition for extended attestation protocol.</p>
 <p>Added NVIDIA GPU driver's R580 branch. Updated the LATEST GPU driver label to version 580.65.06.</p>
 <h3 id="feature_138">Feature</h3>
 <p>Removed the cloud-final.service dependency on multi-user.target which could delay cloud-init user-data scripts indefinitely when long-running startup scripts are used.</p>
-<h3 id="fixed_466">Fixed</h3>
-<p>Updated app-admin/node-problem-detector to 0.8.21.</p>
 <h3 id="fixed_467">Fixed</h3>
-<p>Updated app-containers/cni-plugins to 1.7.1.</p>
+<p>Updated app-admin/node-problem-detector to 0.8.21.</p>
 <h3 id="fixed_468">Fixed</h3>
-<p>Updated containerd to v2.0.6.</p>
+<p>Updated app-containers/cni-plugins to 1.7.1.</p>
 <h3 id="fixed_469">Fixed</h3>
-<p>Removed an artifact registry ping that would delay multi-user.target indefinitely for machines with no external IP address.</p>
+<p>Updated containerd to v2.0.6.</p>
 <h3 id="fixed_470">Fixed</h3>
-<p>Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.</p>
+<p>Removed an artifact registry ping that would delay multi-user.target indefinitely for machines with no external IP address.</p>
 <h3 id="fixed_471">Fixed</h3>
-<p>LTS Refresh from main-R121 to release-R121</p>
+<p>Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.</p>
 <h3 id="fixed_472">Fixed</h3>
-<p>kubernetes 1.32.4-gke.200</p>
+<p>LTS Refresh from main-R121 to release-R121</p>
 <h3 id="fixed_473">Fixed</h3>
-<p>Upgraded app-admin/google-guest-configs to v20250516.00.</p>
+<p>kubernetes 1.32.4-gke.200</p>
 <h3 id="fixed_474">Fixed</h3>
-<p>Upgraded app-containers/docker-credential-helpers to v0.9.3.</p>
+<p>Upgraded app-admin/google-guest-configs to v20250516.00.</p>
 <h3 id="fixed_475">Fixed</h3>
-<p>LTS Refresh from main-R121 to release-R121</p>
+<p>Upgraded app-containers/docker-credential-helpers to v0.9.3.</p>
 <h3 id="fixed_476">Fixed</h3>
-<p>Upgraded dev-lang/go to v1.23.9.</p>
-<h3 id="fixed_477">Fixed</h3>
-<p>Upgraded sys-apps/pv to v1.9.34.</p>
-<h3 id="fixed_478">Fixed</h3>
-<p>Updated dev-python/requests to v2.32.4.</p>
-<h3 id="fixed_479">Fixed</h3>
-<p>Upgraded virtual/logger to v0-r2.</p>
-<h3 id="fixed_480">Fixed</h3>
 <p>LTS Refresh from main-R121 to release-R121</p>
+<h3 id="fixed_477">Fixed</h3>
+<p>Upgraded dev-lang/go to v1.23.9.</p>
+<h3 id="fixed_478">Fixed</h3>
+<p>Upgraded sys-apps/pv to v1.9.34.</p>
+<h3 id="fixed_479">Fixed</h3>
+<p>Updated dev-python/requests to v2.32.4.</p>
+<h3 id="fixed_480">Fixed</h3>
+<p>Upgraded virtual/logger to v0-r2.</p>
 <h3 id="fixed_481">Fixed</h3>
-<p>Upgraded sys-libs/libcap to v2.76.</p>
+<p>LTS Refresh from main-R121 to release-R121</p>
 <h3 id="fixed_482">Fixed</h3>
-<p>Upgraded sys-process/procps to v4.0.5-r2.</p>
+<p>Upgraded sys-libs/libcap to v2.76.</p>
 <h3 id="fixed_483">Fixed</h3>
-<p>Upgraded dev-db/sqlite to v3.50.1.</p>
+<p>Upgraded sys-process/procps to v4.0.5-r2.</p>
 <h3 id="fixed_484">Fixed</h3>
-<p>Upgraded sys-libs/libseccomp to v2.6.0-r2.</p>
+<p>Upgraded dev-db/sqlite to v3.50.1.</p>
 <h3 id="fixed_485">Fixed</h3>
-<p>Upgraded app-arch/unzip to v6.0_p29.</p>
+<p>Upgraded sys-libs/libseccomp to v2.6.0-r2.</p>
 <h3 id="fixed_486">Fixed</h3>
-<p>Upgraded dev-libs/expat to v2.7.1.</p>
+<p>Upgraded app-arch/unzip to v6.0_p29.</p>
 <h3 id="fixed_487">Fixed</h3>
-<p>Upgraded net-nds/rpcbind to v1.2.7.</p>
+<p>Upgraded dev-libs/expat to v2.7.1.</p>
 <h3 id="fixed_488">Fixed</h3>
-<p>Upgraded app-arch/gzip to v1.14.</p>
+<p>Upgraded net-nds/rpcbind to v1.2.7.</p>
 <h3 id="fixed_489">Fixed</h3>
+<p>Upgraded app-arch/gzip to v1.14.</p>
+<h3 id="fixed_490">Fixed</h3>
 <p>Fixed an issue where the cpuidle driver selected for some
 machine types would cause inflated reports of high CPU usage.</p>
-<h3 id="fixed_490">Fixed</h3>
+<h3 id="fixed_491">Fixed</h3>
 <p>LTS Refresh from main-R121-cos-6.6 to release-R121-cos-6.6</p>
 <h3 id="security_1168">Security</h3>
 <p>Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.</p>
@@ -10944,43 +10993,43 @@ CVE-2024-52533.</p>
 <p>Removed the cloud-final.service dependency on multi-user.target which could delay cloud-init user-data scripts indefinitely when long-running startup scripts are used.</p>
 <h3 id="feature_141">Feature</h3>
 <p>Enabled hardware optimized SHA256 algorithms for x86 machines with SSSE3 and AVX/AVX2 instructions and ARM64 machines with SHA-NI and ARMv8 Crypto Extensions.</p>
-<h3 id="fixed_491">Fixed</h3>
-<p>Updated app-admin/node-problem-detector to 0.8.21.</p>
 <h3 id="fixed_492">Fixed</h3>
-<p>Updated app-containers/cni-plugins to 1.7.1.</p>
+<p>Updated app-admin/node-problem-detector to 0.8.21.</p>
 <h3 id="fixed_493">Fixed</h3>
-<p>Removed an artifact registry ping that would delay multi-user.target indefinitely for machines with no external IP address.</p>
+<p>Updated app-containers/cni-plugins to 1.7.1.</p>
 <h3 id="fixed_494">Fixed</h3>
-<p>Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.</p>
+<p>Removed an artifact registry ping that would delay multi-user.target indefinitely for machines with no external IP address.</p>
 <h3 id="fixed_495">Fixed</h3>
-<p>Upgraded app-admin/google-guest-configs to v20250718.00.</p>
-<h3 id="fixed_496">Fixed</h3>
-<p>Upgraded chromeos-base/google-breakpad to v2025.07.23.214511-r244.</p>
-<h3 id="fixed_497">Fixed</h3>
-<p>Upgraded chromeos-base/minijail to v18-r168.</p>
-<h3 id="fixed_498">Fixed</h3>
-<p>Upgraded dev-libs/openssl to 3.5.1.</p>
-<h3 id="fixed_499">Fixed</h3>
-<p>Upgraded dev-lang/go to v1.23.11.</p>
-<h3 id="fixed_500">Fixed</h3>
-<p>Upgraded chromeos-base/shill-client to v0.0.1-r4879.</p>
-<h3 id="fixed_501">Fixed</h3>
-<p>Updated dev-python/requests to v2.32.4.</p>
-<h3 id="fixed_502">Fixed</h3>
-<p>Upgraded net-misc/openssh to 10.0_p1.</p>
-<h3 id="fixed_503">Fixed</h3>
-<p>Upgraded dev-db/sqlite to v3.50.3.</p>
-<h3 id="fixed_504">Fixed</h3>
-<p>Upgraded virtual/logger to v0-r2.</p>
-<h3 id="fixed_505">Fixed</h3>
-<p>Upgraded sys-apps/pv to v1.9.34.</p>
-<h3 id="fixed_506">Fixed</h3>
-<p>Upgraded app-admin/sudo to v1.9.17_p2.</p>
-<h3 id="fixed_507">Fixed</h3>
-<p>Upgraded sys-process/lsof to v4.99.5.</p>
-<h3 id="fixed_508">Fixed</h3>
 <p>Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.</p>
+<h3 id="fixed_496">Fixed</h3>
+<p>Upgraded app-admin/google-guest-configs to v20250718.00.</p>
+<h3 id="fixed_497">Fixed</h3>
+<p>Upgraded chromeos-base/google-breakpad to v2025.07.23.214511-r244.</p>
+<h3 id="fixed_498">Fixed</h3>
+<p>Upgraded chromeos-base/minijail to v18-r168.</p>
+<h3 id="fixed_499">Fixed</h3>
+<p>Upgraded dev-libs/openssl to 3.5.1.</p>
+<h3 id="fixed_500">Fixed</h3>
+<p>Upgraded dev-lang/go to v1.23.11.</p>
+<h3 id="fixed_501">Fixed</h3>
+<p>Upgraded chromeos-base/shill-client to v0.0.1-r4879.</p>
+<h3 id="fixed_502">Fixed</h3>
+<p>Updated dev-python/requests to v2.32.4.</p>
+<h3 id="fixed_503">Fixed</h3>
+<p>Upgraded net-misc/openssh to 10.0_p1.</p>
+<h3 id="fixed_504">Fixed</h3>
+<p>Upgraded dev-db/sqlite to v3.50.3.</p>
+<h3 id="fixed_505">Fixed</h3>
+<p>Upgraded virtual/logger to v0-r2.</p>
+<h3 id="fixed_506">Fixed</h3>
+<p>Upgraded sys-apps/pv to v1.9.34.</p>
+<h3 id="fixed_507">Fixed</h3>
+<p>Upgraded app-admin/sudo to v1.9.17_p2.</p>
+<h3 id="fixed_508">Fixed</h3>
+<p>Upgraded sys-process/lsof to v4.99.5.</p>
 <h3 id="fixed_509">Fixed</h3>
+<p>Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.</p>
+<h3 id="fixed_510">Fixed</h3>
 <p>Fixed an issue where the cpuidle driver selected for some
 machine types would cause inflated reports of high CPU usage.</p>
 <h3 id="security_1177">Security</h3>
@@ -11033,15 +11082,15 @@ CVE-2024-52533.</p>
 </table>
 <h3 id="feature_143">Feature</h3>
 <p>Added NVIDIA GPU driver's R580 branch. Updated the LATEST GPU driver label to version 580.65.06.</p>
-<h3 id="fixed_510">Fixed</h3>
-<p>Updated app-admin/node-problem-detector to 0.8.21.</p>
 <h3 id="fixed_511">Fixed</h3>
-<p>Updated containerd to v1.7.28.</p>
+<p>Updated app-admin/node-problem-detector to 0.8.21.</p>
 <h3 id="fixed_512">Fixed</h3>
-<p>Updated dev-python/requests to v2.32.4.</p>
+<p>Updated containerd to v1.7.28.</p>
 <h3 id="fixed_513">Fixed</h3>
-<p>Upgraded virtual/logger to v0-r2.</p>
+<p>Updated dev-python/requests to v2.32.4.</p>
 <h3 id="fixed_514">Fixed</h3>
+<p>Upgraded virtual/logger to v0-r2.</p>
+<h3 id="fixed_515">Fixed</h3>
 <p>Fixed an issue where the cpuidle driver selected for some
 machine types would cause inflated reports of high CPU usage.</p>
 <h3 id="security_1184">Security</h3>
@@ -11099,11 +11148,11 @@ CVE-2024-52533.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_515">Fixed</h3>
-<p>Upgraded virtual/logger to v0-r2.</p>
 <h3 id="fixed_516">Fixed</h3>
-<p>Updated dev-python/requests to v2.32.4.</p>
+<p>Upgraded virtual/logger to v0-r2.</p>
 <h3 id="fixed_517">Fixed</h3>
+<p>Updated dev-python/requests to v2.32.4.</p>
+<h3 id="fixed_518">Fixed</h3>
 <p>Upgraded sys-process/lsof to v4.99.5.</p>
 <h3 id="security_1195">Security</h3>
 <p>Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.</p>
@@ -11159,11 +11208,11 @@ dev-python/crytography.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_518">Fixed</h3>
-<p>Updated dev-python/requests to v2.32.4.</p>
 <h3 id="fixed_519">Fixed</h3>
-<p>Upgraded virtual/logger to v0-r2.</p>
+<p>Updated dev-python/requests to v2.32.4.</p>
 <h3 id="fixed_520">Fixed</h3>
+<p>Upgraded virtual/logger to v0-r2.</p>
+<h3 id="fixed_521">Fixed</h3>
 <p>Upgraded sys-process/lsof to v4.99.5.</p>
 <h3 id="security_1206">Security</h3>
 <p>Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.</p>
@@ -11220,39 +11269,39 @@ CVE-2022-4968.</p>
 </table>
 <h3 id="announcement_9">Announcement</h3>
 <p>This is an LTS Refresh release.</p>
-<h3 id="fixed_521">Fixed</h3>
-<p>Removed an artifact registry ping that would delay multi-user.target indefinitely for machines with no external IP address.</p>
 <h3 id="fixed_522">Fixed</h3>
-<p>Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.</p>
+<p>Removed an artifact registry ping that would delay multi-user.target indefinitely for machines with no external IP address.</p>
 <h3 id="fixed_523">Fixed</h3>
-<p>Upgraded kubernetes to v1.32.4-gke.200.</p>
+<p>Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.</p>
 <h3 id="fixed_524">Fixed</h3>
-<p>Upgraded app-admin/google-guest-configs to v20250516.00.</p>
+<p>Upgraded kubernetes to v1.32.4-gke.200.</p>
 <h3 id="fixed_525">Fixed</h3>
-<p>Upgraded app-containers/docker-credential-helpers to v0.9.3.</p>
+<p>Upgraded app-admin/google-guest-configs to v20250516.00.</p>
 <h3 id="fixed_526">Fixed</h3>
-<p>Upgraded dev-lang/go to v1.23.9.</p>
+<p>Upgraded app-containers/docker-credential-helpers to v0.9.3.</p>
 <h3 id="fixed_527">Fixed</h3>
-<p>Updated dev-python/requests to v2.32.4.</p>
+<p>Upgraded dev-lang/go to v1.23.9.</p>
 <h3 id="fixed_528">Fixed</h3>
-<p>Upgraded virtual/logger to v0-r2.</p>
+<p>Updated dev-python/requests to v2.32.4.</p>
 <h3 id="fixed_529">Fixed</h3>
-<p>Upgraded sys-libs/libcap to v2.76.</p>
+<p>Upgraded virtual/logger to v0-r2.</p>
 <h3 id="fixed_530">Fixed</h3>
-<p>Upgraded sys-process/procps to v4.0.5-r2.</p>
+<p>Upgraded sys-libs/libcap to v2.76.</p>
 <h3 id="fixed_531">Fixed</h3>
-<p>Upgraded dev-db/sqlite to v3.50.1.</p>
+<p>Upgraded sys-process/procps to v4.0.5-r2.</p>
 <h3 id="fixed_532">Fixed</h3>
-<p>Upgraded sys-libs/libseccomp to v2.6.0-r2.</p>
+<p>Upgraded dev-db/sqlite to v3.50.1.</p>
 <h3 id="fixed_533">Fixed</h3>
-<p>Upgraded app-arch/unzip to v6.0_p29.</p>
+<p>Upgraded sys-libs/libseccomp to v2.6.0-r2.</p>
 <h3 id="fixed_534">Fixed</h3>
-<p>Upgraded dev-libs/expat to v2.7.1.</p>
+<p>Upgraded app-arch/unzip to v6.0_p29.</p>
 <h3 id="fixed_535">Fixed</h3>
-<p>Upgraded net-nds/rpcbind to v1.2.7.</p>
+<p>Upgraded dev-libs/expat to v2.7.1.</p>
 <h3 id="fixed_536">Fixed</h3>
-<p>Upgraded app-arch/gzip to v1.14.</p>
+<p>Upgraded net-nds/rpcbind to v1.2.7.</p>
 <h3 id="fixed_537">Fixed</h3>
+<p>Upgraded app-arch/gzip to v1.14.</p>
+<h3 id="fixed_538">Fixed</h3>
 <p>Fixed an issue where the cpuidle driver selected for some
 machine types would cause inflated reports of high CPU usage.</p>
 <h3 id="security_1216">Security</h3>
@@ -11299,12 +11348,12 @@ CVE-2024-52533.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_538">Fixed</h3>
+<h3 id="fixed_539">Fixed</h3>
 <p>Fixed an issue where the cpuidle driver selected for some
 machine types would cause inflated reports of high CPU usage.</p>
-<h3 id="fixed_539">Fixed</h3>
-<p>Updated dev-python/requests to v2.32.4.</p>
 <h3 id="fixed_540">Fixed</h3>
+<p>Updated dev-python/requests to v2.32.4.</p>
+<h3 id="fixed_541">Fixed</h3>
 <p>Upgraded virtual/logger to v0-r2.</p>
 <h3 id="security_1222">Security</h3>
 <p>Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.</p>
@@ -11355,11 +11404,11 @@ CVE-2024-52533.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_541">Fixed</h3>
-<p>Updated dev-python/requests to v2.32.4.</p>
 <h3 id="fixed_542">Fixed</h3>
-<p>Upgraded virtual/logger to v0-r2.</p>
+<p>Updated dev-python/requests to v2.32.4.</p>
 <h3 id="fixed_543">Fixed</h3>
+<p>Upgraded virtual/logger to v0-r2.</p>
+<h3 id="fixed_544">Fixed</h3>
 <p>Upgraded sys-process/lsof to v4.99.5.</p>
 <h3 id="security_1230">Security</h3>
 <p>Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.</p>
@@ -11406,9 +11455,9 @@ CVE-2022-4968.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_544">Fixed</h3>
-<p>Updated dev-python/requests to v2.32.4.</p>
 <h3 id="fixed_545">Fixed</h3>
+<p>Updated dev-python/requests to v2.32.4.</p>
+<h3 id="fixed_546">Fixed</h3>
 <p>Upgraded sys-process/lsof to v4.99.5.</p>
 <h3 id="security_1237">Security</h3>
 <p>Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.</p>
@@ -11458,9 +11507,9 @@ dev-python/cryptography.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_546">Fixed</h3>
-<p>Updated app-misc/jq to v1.8.1.</p>
 <h3 id="fixed_547">Fixed</h3>
+<p>Updated app-misc/jq to v1.8.1.</p>
+<h3 id="fixed_548">Fixed</h3>
 <p>The NFS access cache is no longer cleared on login by default. To use the old behavior, load the NFS module with the <code>nfs_fasc=1</code> module parameter.</p>
 <h3 id="security_1244">Security</h3>
 <p>Patched openssl to fix CVE-2023-50782 affecting
@@ -11505,35 +11554,35 @@ dev-python/crytography.</p>
 </table>
 <h3 id="announcement_10">Announcement</h3>
 <p>This is an <a href="https://cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases">LTS Refresh release</a>.</p>
-<h3 id="fixed_548">Fixed</h3>
-<p>Upgraded app-admin/google-guest-configs to v20250516.00.</p>
 <h3 id="fixed_549">Fixed</h3>
-<p>Upgraded app-containers/cni-plugins to v1.7.1.</p>
+<p>Upgraded app-admin/google-guest-configs to v20250516.00.</p>
 <h3 id="fixed_550">Fixed</h3>
-<p>Upgraded dev-lang/go to v1.23.9.</p>
+<p>Upgraded app-containers/cni-plugins to v1.7.1.</p>
 <h3 id="fixed_551">Fixed</h3>
-<p>Upgraded sys-process/lsof to v4.99.5.</p>
+<p>Upgraded dev-lang/go to v1.23.9.</p>
 <h3 id="fixed_552">Fixed</h3>
-<p>Updated app-misc/jq to v1.8.1.</p>
+<p>Upgraded sys-process/lsof to v4.99.5.</p>
 <h3 id="fixed_553">Fixed</h3>
-<p>Upgraded dev-db/sqlite to v3.50.1.</p>
+<p>Updated app-misc/jq to v1.8.1.</p>
 <h3 id="fixed_554">Fixed</h3>
-<p>Upgraded sys-libs/libcap to v2.76.</p>
+<p>Upgraded dev-db/sqlite to v3.50.1.</p>
 <h3 id="fixed_555">Fixed</h3>
-<p>Upgraded net-fs/cifs-utils to v7.4.</p>
+<p>Upgraded sys-libs/libcap to v2.76.</p>
 <h3 id="fixed_556">Fixed</h3>
-<p>Upgraded sys-process/procps to v4.0.5-r2.</p>
+<p>Upgraded net-fs/cifs-utils to v7.4.</p>
 <h3 id="fixed_557">Fixed</h3>
-<p>Upgraded app-arch/gzip to v1.14.</p>
+<p>Upgraded sys-process/procps to v4.0.5-r2.</p>
 <h3 id="fixed_558">Fixed</h3>
-<p>Fixed a kernel bug which caused some NVME disk IO errors to be ignored, potentially resulting in dropped writes.</p>
+<p>Upgraded app-arch/gzip to v1.14.</p>
 <h3 id="fixed_559">Fixed</h3>
+<p>Fixed a kernel bug which caused some NVME disk IO errors to be ignored, potentially resulting in dropped writes.</p>
+<h3 id="fixed_560">Fixed</h3>
 <p>The NFS access cache is no longer cleared on login by default. To use the old behavior, load the NFS module with the <code>nfs_fasc=1</code> module parameter.</p>
 <h3 id="security_1248">Security</h3>
 <p>Fixed CVE-2024-26130 in dev-python/cryptography.</p>
 <h3 id="security_1249">Security</h3>
 <p>Upgraded sqlite to v3.50.2. This resolves CVE-2025-6965.</p>
-<h3 id="fixed_560">Fixed</h3>
+<h3 id="fixed_561">Fixed</h3>
 <p>Upgraded sys-libs/talloc to v2.4.3.</p>
 <h3 id="security_1250">Security</h3>
 <p>Fixed KCTF-5e28d5a in the Linux kernel.</p>
@@ -11569,21 +11618,21 @@ dev-python/crytography.</p>
 </table>
 <h3 id="announcement_11">Announcement</h3>
 <p>This is an <a href="https://cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases">LTS Refresh release</a>.</p>
-<h3 id="fixed_561">Fixed</h3>
-<p>Upgraded app-admin/google-guest-configs to v20250501.00.</p>
 <h3 id="fixed_562">Fixed</h3>
-<p>Upgraded app-containers/docker-credential-helpers to v0.9.3.</p>
+<p>Upgraded app-admin/google-guest-configs to v20250501.00.</p>
 <h3 id="fixed_563">Fixed</h3>
-<p>Updated app-misc/jq to v1.8.1.</p>
+<p>Upgraded app-containers/docker-credential-helpers to v0.9.3.</p>
 <h3 id="fixed_564">Fixed</h3>
-<p>Upgraded sys-libs/libcap to v2.76.</p>
+<p>Updated app-misc/jq to v1.8.1.</p>
 <h3 id="fixed_565">Fixed</h3>
-<p>Upgraded net-fs/cifs-utils to v7.4.</p>
+<p>Upgraded sys-libs/libcap to v2.76.</p>
 <h3 id="fixed_566">Fixed</h3>
-<p>Upgraded sys-process/procps to v4.0.5-r2.</p>
+<p>Upgraded net-fs/cifs-utils to v7.4.</p>
 <h3 id="fixed_567">Fixed</h3>
-<p>Upgraded dev-db/sqlite to v3.50.1.</p>
+<p>Upgraded sys-process/procps to v4.0.5-r2.</p>
 <h3 id="fixed_568">Fixed</h3>
+<p>Upgraded dev-db/sqlite to v3.50.1.</p>
+<h3 id="fixed_569">Fixed</h3>
 <p>Upgraded app-arch/gzip to v1.14.</p>
 <h3 id="security_1251">Security</h3>
 <p>Fixed KCTF-5e28d5a in the Linux kernel.</p>
@@ -11594,7 +11643,7 @@ dev-python/crytography.</p>
 <p>Upgraded sqlite to v3.50.2. This resolves CVE-2025-6965.</p>
 <h3 id="security_1254">Security</h3>
 <p>Fixed CVE-2024-26130 in dev-python/cryptography.</p>
-<h3 id="fixed_569">Fixed</h3>
+<h3 id="fixed_570">Fixed</h3>
 <p>Upgraded sys-libs/talloc to v2.4.3.</p>
 <h3 id="changed_149">Changed</h3>
 <p>Runtime sysctl changes:</p>
@@ -11626,13 +11675,13 @@ dev-python/crytography.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_570">Fixed</h3>
-<p>Upgraded sys-process/lsof to v4.99.5.</p>
 <h3 id="fixed_571">Fixed</h3>
-<p>Updated app-misc/jq to v1.8.1.</p>
+<p>Upgraded sys-process/lsof to v4.99.5.</p>
 <h3 id="fixed_572">Fixed</h3>
-<p>Fixed a kernel bug which caused some NVME disk IO errors to be ignored, potentially resulting in dropped writes.</p>
+<p>Updated app-misc/jq to v1.8.1.</p>
 <h3 id="fixed_573">Fixed</h3>
+<p>Fixed a kernel bug which caused some NVME disk IO errors to be ignored, potentially resulting in dropped writes.</p>
+<h3 id="fixed_574">Fixed</h3>
 <p>The NFS access cache is no longer cleared on login by default. To use the old behavior, load the NFS module with the <code>nfs_fasc=1</code> module parameter.</p>
 <h3 id="security_1255">Security</h3>
 <p>Patched openssl to fix CVE-2023-50782 affecting
@@ -11719,17 +11768,17 @@ dev-python/crytography.</p>
 <p>Added ARM support for the Lustre 2.14.0 drivers.</p>
 <h3 id="feature_145">Feature</h3>
 <p>Remove support for the v2.14.0_p184 and v2.14.0_p198 Lustre client drivers.</p>
-<h3 id="fixed_574">Fixed</h3>
-<p>Upgraded app-admin/google-guest-configs to v20250627.00.</p>
 <h3 id="fixed_575">Fixed</h3>
-<p>Upgraded chromeos-base/shill-client to v0.0.1-r4875.</p>
+<p>Upgraded app-admin/google-guest-configs to v20250627.00.</p>
 <h3 id="fixed_576">Fixed</h3>
-<p>Upgraded chromeos-base/google-breakpad to v2025.07.01.161305-r243.</p>
+<p>Upgraded chromeos-base/shill-client to v0.0.1-r4875.</p>
 <h3 id="fixed_577">Fixed</h3>
-<p>Upgraded uhaul to version 6.12-0.</p>
+<p>Upgraded chromeos-base/google-breakpad to v2025.07.01.161305-r243.</p>
 <h3 id="fixed_578">Fixed</h3>
-<p>Upgraded sysram to version 6.12-0.</p>
+<p>Upgraded uhaul to version 6.12-0.</p>
 <h3 id="fixed_579">Fixed</h3>
+<p>Upgraded sysram to version 6.12-0.</p>
+<h3 id="fixed_580">Fixed</h3>
 <p>Fixed an issue where some workloads could cause a full
 system hang when running close to their memory limit.</p>
 <h3 id="security_1260">Security</h3>
@@ -11819,26 +11868,26 @@ CVE-2025-32462 and CVE-2025-32463.</p>
 <p>This is an <a href="https://cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases">LTS Refresh release</a>.</p>
 <h3 id="changed_157">Changed</h3>
 <p>Updated the NVIDIA GPU driver policy for New Feature Branch (NFB) drivers. The LATEST tag has been updated to point to the stable 570.133.20 Production Branch. The 575.57.08 NFB driver remains available for development and testing but must now be selected by its specific version number.</p>
-<h3 id="fixed_580">Fixed</h3>
-<p>Upgraded app-admin/google-guest-configs to v20250516.00.</p>
 <h3 id="fixed_581">Fixed</h3>
-<p>Upgraded app-containers/docker-credential-helpers to v0.9.3.</p>
+<p>Upgraded app-admin/google-guest-configs to v20250516.00.</p>
 <h3 id="fixed_582">Fixed</h3>
-<p>Updated app-misc/jq to v1.8.1.</p>
+<p>Upgraded app-containers/docker-credential-helpers to v0.9.3.</p>
 <h3 id="fixed_583">Fixed</h3>
-<p>Upgraded net-fs/cifs-utils to v7.4.</p>
+<p>Updated app-misc/jq to v1.8.1.</p>
 <h3 id="fixed_584">Fixed</h3>
-<p>Upgraded sys-libs/libcap to v2.76.</p>
+<p>Upgraded net-fs/cifs-utils to v7.4.</p>
 <h3 id="fixed_585">Fixed</h3>
-<p>Upgraded dev-db/sqlite to v3.50.1.</p>
+<p>Upgraded sys-libs/libcap to v2.76.</p>
 <h3 id="fixed_586">Fixed</h3>
-<p>Upgraded app-arch/unzip to v6.0_p29.</p>
+<p>Upgraded dev-db/sqlite to v3.50.1.</p>
 <h3 id="fixed_587">Fixed</h3>
-<p>Upgraded app-arch/gzip to v1.14.</p>
+<p>Upgraded app-arch/unzip to v6.0_p29.</p>
 <h3 id="fixed_588">Fixed</h3>
+<p>Upgraded app-arch/gzip to v1.14.</p>
+<h3 id="fixed_589">Fixed</h3>
 <p>Fixed an issue where some workloads could cause a full
 system hang when running close to their memory limit.</p>
-<h3 id="fixed_589">Fixed</h3>
+<h3 id="fixed_590">Fixed</h3>
 <p>Upgraded sys-libs/talloc to v2.4.3.</p>
 <h3 id="changed_158">Changed</h3>
 <p>Runtime sysctl changes:</p>
@@ -11876,7 +11925,7 @@ system hang when running close to their memory limit.</p>
 <p>Updated the NVIDIA GPU driver policy for New Feature Branch (NFB) drivers. The LATEST tag has been updated to point to the stable 570.133.20 Production Branch. The 575.57.08 NFB driver remains available for development and testing but must now be selected by its specific version number. Removed 575.57.08 NFB driver support for NVIDIA_GB200 machine.</p>
 <h3 id="feature_146">Feature</h3>
 <p>Added ARM support for the Lustre 2.14.0 drivers.</p>
-<h3 id="fixed_590">Fixed</h3>
+<h3 id="fixed_591">Fixed</h3>
 <p>Fixed an issue where some workloads could cause a full
 system hang when running close to their memory limit.</p>
 <h3 id="security_1265">Security</h3>
@@ -11917,7 +11966,7 @@ system hang when running close to their memory limit.</p>
 <p>Updated the NVIDIA GPU driver policy for New Feature Branch (NFB) drivers. The LATEST tag has been updated to point to the stable 570.133.20 Production Branch. The 575.57.08 NFB driver remains available for development and testing but must now be selected by its specific version number. Removed 575.57.08 NFB driver support for NVIDIA_GB200 machine.</p>
 <h3 id="feature_147">Feature</h3>
 <p>Added ARM support for the Lustre 2.14.0 drivers.</p>
-<h3 id="fixed_591">Fixed</h3>
+<h3 id="fixed_592">Fixed</h3>
 <p>Fixed an issue where some workloads could cause a full
 system hang when running close to their memory limit.</p>
 <h3 id="security_1267">Security</h3>
@@ -11954,7 +12003,7 @@ system hang when running close to their memory limit.</p>
 </table>
 <h3 id="changed_163">Changed</h3>
 <p>Updated the NVIDIA GPU driver policy for New Feature Branch (NFB) drivers. The LATEST tag has been updated to point to the stable 570.133.20 Production Branch. The 575.57.08 NFB driver remains available for development and testing but must now be selected by its specific version number.</p>
-<h3 id="fixed_592">Fixed</h3>
+<h3 id="fixed_593">Fixed</h3>
 <p>Fixed an issue where some workloads could cause a full
 system hang when running close to their memory limit.</p>
 <h3 id="security_1268">Security</h3>
@@ -11993,7 +12042,7 @@ system hang when running close to their memory limit.</p>
 </table>
 <h3 id="changed_165">Changed</h3>
 <p>Upgraded nvidia-container-toolkit to v1.17.8.</p>
-<h3 id="fixed_593">Fixed</h3>
+<h3 id="fixed_594">Fixed</h3>
 <p>Updated google-guest-agent to v20250701.01.</p>
 <h3 id="security_1269">Security</h3>
 <p>Updated app-editors/nano to v8.5. This resolves
@@ -12034,7 +12083,7 @@ CVE-2025-29768, CVE-2025-1215, CVE-2025-24014, CVE-2025-22134.</p>
 </table>
 <h3 id="changed_167">Changed</h3>
 <p>Upgraded nvidia-container-toolkit to v1.17.8.</p>
-<h3 id="fixed_594">Fixed</h3>
+<h3 id="fixed_595">Fixed</h3>
 <p>Upgraded sys-apps/less to v679.</p>
 <h3 id="security_1271">Security</h3>
 <p>Updated app-editors/nano to v8.5. This resolves
@@ -12075,7 +12124,7 @@ CVE-2025-29768, CVE-2025-1215, CVE-2025-24014, CVE-2025-22134.</p>
 </table>
 <h3 id="changed_169">Changed</h3>
 <p>Upgraded nvidia-container-toolkit to v1.17.8.</p>
-<h3 id="fixed_595">Fixed</h3>
+<h3 id="fixed_596">Fixed</h3>
 <p>Updated google-guest-agent to v20250701.01.</p>
 <h3 id="security_1273">Security</h3>
 <p>Updated app-editors/nano to v8.5. This resolves
@@ -12111,7 +12160,7 @@ CVE-2025-29768, CVE-2025-1215, CVE-2025-24014, CVE-2025-22134.</p>
 </table>
 <h3 id="changed_170">Changed</h3>
 <p>Upgraded nvidia-container-toolkit to v1.17.8.</p>
-<h3 id="fixed_596">Fixed</h3>
+<h3 id="fixed_597">Fixed</h3>
 <p>Upgraded sys-apps/less to v679.</p>
 <h3 id="security_1275">Security</h3>
 <p>Updated app-editors/nano to v8.5. This resolves
@@ -12265,31 +12314,31 @@ CVE-2025-32462 and CVE-2025-32463.</p>
 <p>Updated nvidia-container-toolkit to v1.17.7.</p>
 <h3 id="changed_172">Changed</h3>
 <p>Upgraded sys-apps/ethtool to version 6.11.</p>
-<h3 id="fixed_597">Fixed</h3>
-<p>Upgraded app-admin/google-guest-configs to v20250605.00.</p>
 <h3 id="fixed_598">Fixed</h3>
-<p>Added support for the Lustre 2.14.0_p212 drivers.</p>
+<p>Upgraded app-admin/google-guest-configs to v20250605.00.</p>
 <h3 id="fixed_599">Fixed</h3>
-<p>drop marvell-pcie-ep-octeon driver</p>
+<p>Added support for the Lustre 2.14.0_p212 drivers.</p>
 <h3 id="fixed_600">Fixed</h3>
-<p>Upgraded chromeos-base/shill-client to v0.0.1-r4872.</p>
+<p>drop marvell-pcie-ep-octeon driver</p>
 <h3 id="fixed_601">Fixed</h3>
-<p>Upgraded chromeos-base/google-breakpad to v2025.06.12.121629-r242.</p>
+<p>Upgraded chromeos-base/shill-client to v0.0.1-r4872.</p>
 <h3 id="fixed_602">Fixed</h3>
-<p>Upgraded chromeos-base/shill-client to v0.0.1-r4871.</p>
+<p>Upgraded chromeos-base/google-breakpad to v2025.06.12.121629-r242.</p>
 <h3 id="fixed_603">Fixed</h3>
-<p>Upgraded chromeos-base/chromeos-common-script to v0.0.1-r667.</p>
+<p>Upgraded chromeos-base/shill-client to v0.0.1-r4871.</p>
 <h3 id="fixed_604">Fixed</h3>
-<p>Upgraded dev-lang/go to v1.23.10.</p>
+<p>Upgraded chromeos-base/chromeos-common-script to v0.0.1-r667.</p>
 <h3 id="fixed_605">Fixed</h3>
-<p>Upgraded app-admin/sudo to v1.9.17.</p>
+<p>Upgraded dev-lang/go to v1.23.10.</p>
 <h3 id="fixed_606">Fixed</h3>
-<p>Upgraded sys-apps/less to v679.</p>
+<p>Upgraded app-admin/sudo to v1.9.17.</p>
 <h3 id="fixed_607">Fixed</h3>
-<p>Upgraded dev-db/sqlite to v3.50.1.</p>
+<p>Upgraded sys-apps/less to v679.</p>
 <h3 id="fixed_608">Fixed</h3>
-<p>Upgraded sys-process/procps to v4.0.5-r2.</p>
+<p>Upgraded dev-db/sqlite to v3.50.1.</p>
 <h3 id="fixed_609">Fixed</h3>
+<p>Upgraded sys-process/procps to v4.0.5-r2.</p>
+<h3 id="fixed_610">Fixed</h3>
 <p>Upgraded sys-libs/libcap to v2.76.</p>
 <h3 id="security_1281">Security</h3>
 <p>Upgrade libarchive to version 3.8.1. This fixes CVE-2025-5914.</p>
@@ -12323,11 +12372,11 @@ CVE-2025-32462 and CVE-2025-32463.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_610">Fixed</h3>
-<p>Added support for the Lustre 2.14.0_p212 drivers.</p>
 <h3 id="fixed_611">Fixed</h3>
-<p>Upgraded sys-apps/less to v679.</p>
+<p>Added support for the Lustre 2.14.0_p212 drivers.</p>
 <h3 id="fixed_612">Fixed</h3>
+<p>Upgraded sys-apps/less to v679.</p>
+<h3 id="fixed_613">Fixed</h3>
 <p>Upgraded dev-libs/libusb to v1.0.29.</p>
 <h3 id="security_1282">Security</h3>
 <p>Upgrade libarchive to version 3.8.1. This fixes CVE-2025-5914.</p>
@@ -12363,9 +12412,9 @@ CVE-2025-32462 and CVE-2025-32463.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_613">Fixed</h3>
-<p>Added support for the Lustre 2.14.0_p212 drivers.</p>
 <h3 id="fixed_614">Fixed</h3>
+<p>Added support for the Lustre 2.14.0_p212 drivers.</p>
+<h3 id="fixed_615">Fixed</h3>
 <p>Upgraded sys-apps/less to v679.</p>
 <h3 id="security_1284">Security</h3>
 <p>Upgrade libarchive to version 3.8.1. This fixes CVE-2025-5914.</p>
@@ -12401,7 +12450,7 @@ CVE-2025-32462 and CVE-2025-32463.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_615">Fixed</h3>
+<h3 id="fixed_616">Fixed</h3>
 <p>Upgraded dev-libs/libusb to v1.0.29.</p>
 <h3 id="security_1286">Security</h3>
 <p>Upgrade libarchive to version 3.8.1. This fixes CVE-2025-5914.</p>
@@ -12437,7 +12486,7 @@ CVE-2025-32462 and CVE-2025-32463.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_616">Fixed</h3>
+<h3 id="fixed_617">Fixed</h3>
 <p>Upgraded dev-libs/libusb to v1.0.29.</p>
 <h3 id="security_1288">Security</h3>
 <p>Upgrade libarchive to version 3.8.1. This fixes CVE-2025-5914.</p>
@@ -13044,9 +13093,9 @@ performance of Intel machine types.</p>
 <p>Added support for the Lustre 2.14.0_p198 drivers.</p>
 <h3 id="feature_159">Feature</h3>
 <p>Added support for Nvidia driver version 575.57.08.</p>
-<h3 id="fixed_617">Fixed</h3>
-<p>Upgraded chromeos-base/shill-client to v0.0.1-r4869.</p>
 <h3 id="fixed_618">Fixed</h3>
+<p>Upgraded chromeos-base/shill-client to v0.0.1-r4869.</p>
+<h3 id="fixed_619">Fixed</h3>
 <p>Upgraded dev-db/sqlite to v3.50.0.</p>
 <h3 id="security_1328">Security</h3>
 <p>Fixed CVE-2025-47273 in dev-python/setuptools.</p>
@@ -13100,33 +13149,33 @@ new services like <code>google-guest-compat-manager.service</code> and
 <p>Supported NVIDIA MFT Tools.</p>
 <h3 id="feature_161">Feature</h3>
 <p>Injected IMEX channel char device for GB200 GPUs.</p>
-<h3 id="fixed_619">Fixed</h3>
-<p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
 <h3 id="fixed_620">Fixed</h3>
-<p>Upgraded app-admin/google-guest-configs to v20250516.00.</p>
+<p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
 <h3 id="fixed_621">Fixed</h3>
-<p>Fixed docker MTU mismatch.</p>
+<p>Upgraded app-admin/google-guest-configs to v20250516.00.</p>
 <h3 id="fixed_622">Fixed</h3>
-<p>Upgraded chromeos-base/chromeos-common-script to v0.0.1-r665.</p>
+<p>Fixed docker MTU mismatch.</p>
 <h3 id="fixed_623">Fixed</h3>
-<p>Upgraded chromeos-base/google-breakpad to v2025.05.22.184901-r240.</p>
+<p>Upgraded chromeos-base/chromeos-common-script to v0.0.1-r665.</p>
 <h3 id="fixed_624">Fixed</h3>
-<p>Upgraded chromeos-base/session_manager-client to v0.0.1-r2830.</p>
+<p>Upgraded chromeos-base/google-breakpad to v2025.05.22.184901-r240.</p>
 <h3 id="fixed_625">Fixed</h3>
-<p>Upgraded chromeos-base/power_manager-client to v0.0.1-r2969.</p>
+<p>Upgraded chromeos-base/session_manager-client to v0.0.1-r2830.</p>
 <h3 id="fixed_626">Fixed</h3>
-<p>Upgraded chromeos-base/shill-client to v0.0.1-r4866.</p>
+<p>Upgraded chromeos-base/power_manager-client to v0.0.1-r2969.</p>
 <h3 id="fixed_627">Fixed</h3>
-<p>Upgraded chromeos-base/debugd-client to v0.0.1-r2734.</p>
+<p>Upgraded chromeos-base/shill-client to v0.0.1-r4866.</p>
 <h3 id="fixed_628">Fixed</h3>
-<p>Upgraded sys-apps/rootdev to v0.0.1-r51.</p>
+<p>Upgraded chromeos-base/debugd-client to v0.0.1-r2734.</p>
 <h3 id="fixed_629">Fixed</h3>
-<p>Upgraded dev-lang/go to v1.23.9.</p>
+<p>Upgraded sys-apps/rootdev to v0.0.1-r51.</p>
 <h3 id="fixed_630">Fixed</h3>
-<p>Upgraded sys-apps/dbus to v1.16.2-r197.</p>
+<p>Upgraded dev-lang/go to v1.23.9.</p>
 <h3 id="fixed_631">Fixed</h3>
-<p>Upgraded sys-apps/less to v678.</p>
+<p>Upgraded sys-apps/dbus to v1.16.2-r197.</p>
 <h3 id="fixed_632">Fixed</h3>
+<p>Upgraded sys-apps/less to v678.</p>
+<h3 id="fixed_633">Fixed</h3>
 <p>Upgraded dev-db/sqlite to v3.49.2.</p>
 <h3 id="security_1331">Security</h3>
 <p>Fixed CVE-2024-23337 in app-misc/jq.</p>
@@ -13170,9 +13219,9 @@ new services like <code>google-guest-compat-manager.service</code> and
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_633">Fixed</h3>
-<p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
 <h3 id="fixed_634">Fixed</h3>
+<p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
+<h3 id="fixed_635">Fixed</h3>
 <p>Upgraded sys-apps/less to v678.</p>
 <h3 id="security_1336">Security</h3>
 <p>Fixed CVE-2024-23337 in app-misc/jq.</p>
@@ -13208,9 +13257,9 @@ new services like <code>google-guest-compat-manager.service</code> and
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_635">Fixed</h3>
-<p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
 <h3 id="fixed_636">Fixed</h3>
+<p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
+<h3 id="fixed_637">Fixed</h3>
 <p>Upgraded sys-apps/less to v678.</p>
 <h3 id="security_1340">Security</h3>
 <p>Fixed CVE-2024-23337 in app-misc/jq.</p>
@@ -13246,9 +13295,9 @@ new services like <code>google-guest-compat-manager.service</code> and
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_637">Fixed</h3>
-<p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
 <h3 id="fixed_638">Fixed</h3>
+<p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
+<h3 id="fixed_639">Fixed</h3>
 <p>Upgraded sys-apps/less to v678.</p>
 <h3 id="security_1344">Security</h3>
 <p>Fixed CVE-2024-23337 in app-misc/jq.</p>
@@ -13282,9 +13331,9 @@ new services like <code>google-guest-compat-manager.service</code> and
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_639">Fixed</h3>
-<p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
 <h3 id="fixed_640">Fixed</h3>
+<p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
+<h3 id="fixed_641">Fixed</h3>
 <p>Upgraded sys-apps/less to v678.</p>
 <h3 id="security_1347">Security</h3>
 <p>Fixed CVE-2024-26783 in the Linux kernel.</p>
@@ -13463,6 +13512,9 @@ new services like <code>google-guest-compat-manager.service</code> and
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#container-optimized-os">Container Optimized OS</a></li>
+          <li class="nav-item">
+            <a href="#2026-03-08" class="nav-link">2026-03-08</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-03-04" class="nav-link">2026-03-04</a>
           </li>

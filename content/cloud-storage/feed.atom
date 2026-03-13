@@ -2,9 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Storage</title>
   <subtitle>Changelog for Google Cloud product: Cloud Storage</subtitle>
-  <updated>2026-03-10T00:00:00+00:00</updated>
+  <updated>2026-03-12T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-storage</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-storage/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2026-03-12:change:0</id>
+    <published>2026-03-12T00:00:00+00:00</published>
+    <updated>2026-03-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Object uploads that use customer-managed encryption keys (CMEK) now fail if the
+Cloud Storage service agent lacks the necessary IAM
+role to decrypt the object. For steps to grant the required role, see
+<a href="https://docs.cloud.google.com/storage/docs/encryption/using-customer-managed-keys#service-agent-access">Assign a Cloud KMS key to a service agent</a>.</p>]]></content>
+    <summary>Object uploads using customer-managed encryption keys (CMEK) will now fail if the service agent does not have the correct IAM role for decryption. This change ensures better security for your data. Please review the documentation to assign the required role if necessary.</summary>
+    <title>Change: Object uploads with CMEK may fail</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

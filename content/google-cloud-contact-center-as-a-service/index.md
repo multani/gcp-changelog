@@ -15,44 +15,41 @@ post-chat survey.
 
 ### Feature
 
-**HubSpot lookup against company profiles**
+**Improved controls for predictive campaigns**
 
-HubSpot integrations now support lookups against Company profiles.
-Administrators can configure primary and secondary lookup objects, allowing the
-system to search for end-users across both Contacts and Companies to ensure
-accurate identification during active sessions.
+We've added the following controls to predictive campaigns to reduce the risk of
+call abandonment due to overdialing. These controls let you ramp up dialing
+rates more naturally and consistently.
 
-### Announcement
+* **Max Calls Per Agent**
+* **Target Agent Occupancy**
 
-**Google Cloud CCaaS prerelease notes**
+We've also made the **Max Abandonment %** setting optional, for campaigns that
+don't require maintaining a maximum abandonment percentage.
 
-Here are the pre-release notes for the next version of Google Cloud CCaaS. When
-we release the next version, we expect the new capabilities to be as shown here.
-
-### Feature
-
-**Improved support for multiple agent matches for agent extension searches**
-
-When an end-user inputs an agent extension number at the beginning of a call and
-there are multiple agent matches, the system now reads agent matches in groups
-of eight. This gets the end-user to the correct agent faster. We've added the
-following new extension directory messages to help guide the end-user to the
-correct agent:
-
-* Multiple agents found
-* Search results next page
-* End of search results
+Administrators: When you click **Campaigns > Add Campaign
+> Mode > Predictive**, the new controls appear in the
+**Add Campaign** dialog.
 
 ### Feature
 
-**HubSpot: Mobile Phone Number Lookup**
+**Callback fulfillment hours**
 
-Admins can now enable mobile phone number lookups for HubSpot integrations to
-ensure callers are accurately matched with existing contacts. To activate this,
-navigate to **Settings > Developer Settings > CRM** and check the **Mobile phone
-number lookup** box in the new **Phone Number Lookup** section. Once enabled,
-the system will automatically search both the "Phone number" and "Mobile phone
-number" fields in HubSpot during incoming voice or chat sessions.
+You can configure callback fulfillment hours, which are the hours when your
+contact center fulfills callbacks. If you enable callback rollovers to the next
+day, callbacks that are scheduled outside of these hours are rolled over to the
+next day. If you don't enable callback rollovers, callbacks that are scheduled
+outside of these hours are canceled. Callback fulfillment hours aren't available
+by default. To use this capability, ask your Google contact to turn it on for
+your instance.
+
+### Feature
+
+**Resume chat endpoint**
+
+You can use the new `chats/CHAT_ID/resume` endpoint to resume chat sessions that
+are in `dismissed` or `va_dismissed` status. Resumed chat sessions display the
+chat history to both the end-user and the agent.
 
 ### Fixed
 
@@ -248,41 +245,44 @@ The following issues were addressed in this release:
 
 ### Feature
 
-**Resume chat endpoint**
+**HubSpot: Mobile Phone Number Lookup**
 
-You can use the new `chats/CHAT_ID/resume` endpoint to resume chat sessions that
-are in `dismissed` or `va_dismissed` status. Resumed chat sessions display the
-chat history to both the end-user and the agent.
-
-### Feature
-
-**Callback fulfillment hours**
-
-You can configure callback fulfillment hours, which are the hours when your
-contact center fulfills callbacks. If you enable callback rollovers to the next
-day, callbacks that are scheduled outside of these hours are rolled over to the
-next day. If you don't enable callback rollovers, callbacks that are scheduled
-outside of these hours are canceled. Callback fulfillment hours aren't available
-by default. To use this capability, ask your Google contact to turn it on for
-your instance.
+Admins can now enable mobile phone number lookups for HubSpot integrations to
+ensure callers are accurately matched with existing contacts. To activate this,
+navigate to **Settings > Developer Settings > CRM** and check the **Mobile phone
+number lookup** box in the new **Phone Number Lookup** section. Once enabled,
+the system will automatically search both the "Phone number" and "Mobile phone
+number" fields in HubSpot during incoming voice or chat sessions.
 
 ### Feature
 
-**Improved controls for predictive campaigns**
+**Improved support for multiple agent matches for agent extension searches**
 
-We've added the following controls to predictive campaigns to reduce the risk of
-call abandonment due to overdialing. These controls let you ramp up dialing
-rates more naturally and consistently.
+When an end-user inputs an agent extension number at the beginning of a call and
+there are multiple agent matches, the system now reads agent matches in groups
+of eight. This gets the end-user to the correct agent faster. We've added the
+following new extension directory messages to help guide the end-user to the
+correct agent:
 
-* **Max Calls Per Agent**
-* **Target Agent Occupancy**
+* Multiple agents found
+* Search results next page
+* End of search results
 
-We've also made the **Max Abandonment %** setting optional, for campaigns that
-don't require maintaining a maximum abandonment percentage.
+### Announcement
 
-Administrators: When you click **Campaigns > Add Campaign
-> Mode > Predictive**, the new controls appear in the
-**Add Campaign** dialog.
+**Google Cloud CCaaS prerelease notes**
+
+Here are the pre-release notes for the next version of Google Cloud CCaaS. When
+we release the next version, we expect the new capabilities to be as shown here.
+
+### Feature
+
+**HubSpot lookup against company profiles**
+
+HubSpot integrations now support lookups against Company profiles.
+Administrators can configure primary and secondary lookup objects, allowing the
+system to search for end-users across both Contacts and Companies to ensure
+accurate identification during active sessions.
 
 ---
 ## 2026-02-25
@@ -301,46 +301,6 @@ This patch does the following:
 
 ---
 ## 2026-02-17
-
-### Announcement
-
-**Google Cloud CCaaS 4.0**
-
-We've released version 4.0 of Google Cloud CCaaS.
-
-The timing of the update to your instance depends on the deployment schedule
-that you have chosen. For more information, see [Deployment
-schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
-
-### Feature
-
-**Raw data export: new call\_participants data type**
-
-We've added the `call_participants` data type to raw data export. This data type
-helps you track the following escalation details for wait-time virtual agents:
-
-* The amount of time the wait-time virtual agent spent in queue.
-* The number of events sent to the wait-time virtual agent while it was in
-  queue.
-
-For more information, see [Raw data export
-dictionary](https://docs.cloud.google.com/contact-center/ccai-platform/docs/raw-data-export-dictionary).
-
-### Feature
-
-**Salesforce Service Cloud: new secondary lookup object**
-
-The Salesforce Service Cloud integration can now use a secondary lookup object
-to identify customer records when the primary lookup object returns no results.
-This helps prevent the creation of duplicate records.
-
-Administrators: When you click **Settings > Developer Settings
-> CRM > Salesforce > SFDC Cloud Selection
-> Service Cloud**, a new **Secondary Lookup Object** checkbox appears
-in the **Account Lookup** section.
-
-For more information, see [Configure account lookup and field
-mapping](https://docs.cloud.google.com/contact-center/ccai-platform/docs/salesforce-integration-guide#configure-account-lookup).
 
 ### Fixed
 
@@ -387,6 +347,46 @@ The following issues were addressed in this release:
   Timeline** report after signing out.
 * Fixed an issue where Salesforce integrations created duplicate cases for a
   single outbound call.
+
+### Feature
+
+**Salesforce Service Cloud: new secondary lookup object**
+
+The Salesforce Service Cloud integration can now use a secondary lookup object
+to identify customer records when the primary lookup object returns no results.
+This helps prevent the creation of duplicate records.
+
+Administrators: When you click **Settings > Developer Settings
+> CRM > Salesforce > SFDC Cloud Selection
+> Service Cloud**, a new **Secondary Lookup Object** checkbox appears
+in the **Account Lookup** section.
+
+For more information, see [Configure account lookup and field
+mapping](https://docs.cloud.google.com/contact-center/ccai-platform/docs/salesforce-integration-guide#configure-account-lookup).
+
+### Feature
+
+**Raw data export: new call\_participants data type**
+
+We've added the `call_participants` data type to raw data export. This data type
+helps you track the following escalation details for wait-time virtual agents:
+
+* The amount of time the wait-time virtual agent spent in queue.
+* The number of events sent to the wait-time virtual agent while it was in
+  queue.
+
+For more information, see [Raw data export
+dictionary](https://docs.cloud.google.com/contact-center/ccai-platform/docs/raw-data-export-dictionary).
+
+### Announcement
+
+**Google Cloud CCaaS 4.0**
+
+We've released version 4.0 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
 
 ---
 ## 2026-02-03

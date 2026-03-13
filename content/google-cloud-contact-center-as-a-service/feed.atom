@@ -26,26 +26,41 @@ post-chat survey.</p>]]></content>
     <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-09:feature:0</id>
     <published>2026-03-09T00:00:00+00:00</published>
     <updated>2026-03-09T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>HubSpot lookup against company profiles</strong></p>
-<p>HubSpot integrations now support lookups against Company profiles.
-Administrators can configure primary and secondary lookup objects, allowing the
-system to search for end-users across both Contacts and Companies to ensure
-accurate identification during active sessions.</p>]]></content>
-    <summary>HubSpot integrations now support lookups against company profiles. Administrators can configure primary and secondary lookup objects to search for end-users across both Contacts and Companies, ensuring accurate identification during active sessions.</summary>
-    <title>Feature: HubSpot company profile lookups</title>
+    <content type="html"><![CDATA[<p><strong>Improved controls for predictive campaigns</strong></p>
+<p>We've added the following controls to predictive campaigns to reduce the risk of
+call abandonment due to overdialing. These controls let you ramp up dialing
+rates more naturally and consistently.</p>
+<ul>
+<li><strong>Max Calls Per Agent</strong></li>
+<li><strong>Target Agent Occupancy</strong></li>
+</ul>
+<p>We've also made the <strong>Max Abandonment %</strong> setting optional, for campaigns that
+don't require maintaining a maximum abandonment percentage.</p>
+<p>Administrators: When you click **Campaigns &gt; Add Campaign</p>
+<blockquote>
+<p>Mode &gt; Predictive<strong>, the new controls appear in the
+</strong>Add Campaign** dialog.</p>
+</blockquote>]]></content>
+    <summary>We've introduced new controls for predictive campaigns, including Max Calls Per Agent and Target Agent Occupancy, to help reduce call abandonment. The Max Abandonment % setting is now optional, providing more flexibility for campaign setup.</summary>
+    <title>Feature: New controls for predictive campaigns</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-09:announcement:1</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-09:feature:1</id>
     <published>2026-03-09T00:00:00+00:00</published>
     <updated>2026-03-09T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS prerelease notes</strong></p>
-<p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
-we release the next version, we expect the new capabilities to be as shown here.</p>]]></content>
-    <summary>Get ready for the next version of our Contact Center as a Service platform. This release will introduce exciting new capabilities designed to enhance your customer experience.</summary>
-    <title>Announcement: New CCaaS Features Coming Soon</title>
+    <content type="html"><![CDATA[<p><strong>Callback fulfillment hours</strong></p>
+<p>You can configure callback fulfillment hours, which are the hours when your
+contact center fulfills callbacks. If you enable callback rollovers to the next
+day, callbacks that are scheduled outside of these hours are rolled over to the
+next day. If you don't enable callback rollovers, callbacks that are scheduled
+outside of these hours are canceled. Callback fulfillment hours aren't available
+by default. To use this capability, ask your Google contact to turn it on for
+your instance.</p>]]></content>
+    <summary>Configure specific hours for fulfilling callbacks in your contact center. This feature allows you to manage when callbacks are processed, with options to roll over unscheduled callbacks to the next day or cancel them.</summary>
+    <title>Feature: Callback Fulfillment Hours</title>
   </entry>
   <entry>
     <author>
@@ -54,42 +69,18 @@ we release the next version, we expect the new capabilities to be as shown here.
     <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-09:feature:2</id>
     <published>2026-03-09T00:00:00+00:00</published>
     <updated>2026-03-09T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Improved support for multiple agent matches for agent extension searches</strong></p>
-<p>When an end-user inputs an agent extension number at the beginning of a call and
-there are multiple agent matches, the system now reads agent matches in groups
-of eight. This gets the end-user to the correct agent faster. We've added the
-following new extension directory messages to help guide the end-user to the
-correct agent:</p>
-<ul>
-<li>Multiple agents found</li>
-<li>Search results next page</li>
-<li>End of search results</li>
-</ul>]]></content>
-    <summary>The system now groups agent matches in sets of eight when multiple agents are found for an extension number. New messages guide users through the search results, leading them to the correct agent more quickly.</summary>
-    <title>Feature: Faster Agent Matching</title>
+    <content type="html"><![CDATA[<p><strong>Resume chat endpoint</strong></p>
+<p>You can use the new <code>chats/CHAT_ID/resume</code> endpoint to resume chat sessions that
+are in <code>dismissed</code> or <code>va_dismissed</code> status. Resumed chat sessions display the
+chat history to both the end-user and the agent.</p>]]></content>
+    <summary>You can now resume dismissed chat sessions using the new chats/CHAT_ID/resume endpoint. This will restore the chat history for both users and agents.</summary>
+    <title>Feature: Resume chat sessions</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-09:feature:3</id>
-    <published>2026-03-09T00:00:00+00:00</published>
-    <updated>2026-03-09T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>HubSpot: Mobile Phone Number Lookup</strong></p>
-<p>Admins can now enable mobile phone number lookups for HubSpot integrations to
-ensure callers are accurately matched with existing contacts. To activate this,
-navigate to <strong>Settings &gt; Developer Settings &gt; CRM</strong> and check the <strong>Mobile phone
-number lookup</strong> box in the new <strong>Phone Number Lookup</strong> section. Once enabled,
-the system will automatically search both the "Phone number" and "Mobile phone
-number" fields in HubSpot during incoming voice or chat sessions.</p>]]></content>
-    <summary>Admins can now enable mobile phone number lookups for HubSpot integrations. This feature ensures callers are accurately matched with existing contacts by automatically searching both 'Phone number' and 'Mobile phone number' fields during incoming voice or chat sessions.</summary>
-    <title>Feature: Mobile number lookup for HubSpot</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-09:fixed:4</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-09:fixed:3</id>
     <published>2026-03-09T00:00:00+00:00</published>
     <updated>2026-03-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The following issues were addressed in this release:</p>
@@ -296,33 +287,52 @@ number" fields in HubSpot during incoming voice or chat sessions.</p>]]></conten
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-09:feature:5</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-09:feature:4</id>
     <published>2026-03-09T00:00:00+00:00</published>
     <updated>2026-03-09T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Resume chat endpoint</strong></p>
-<p>You can use the new <code>chats/CHAT_ID/resume</code> endpoint to resume chat sessions that
-are in <code>dismissed</code> or <code>va_dismissed</code> status. Resumed chat sessions display the
-chat history to both the end-user and the agent.</p>]]></content>
-    <summary>You can now resume dismissed chat sessions using the new chats/CHAT_ID/resume endpoint. This will restore the chat history for both users and agents.</summary>
-    <title>Feature: Resume chat sessions</title>
+    <content type="html"><![CDATA[<p><strong>HubSpot: Mobile Phone Number Lookup</strong></p>
+<p>Admins can now enable mobile phone number lookups for HubSpot integrations to
+ensure callers are accurately matched with existing contacts. To activate this,
+navigate to <strong>Settings &gt; Developer Settings &gt; CRM</strong> and check the <strong>Mobile phone
+number lookup</strong> box in the new <strong>Phone Number Lookup</strong> section. Once enabled,
+the system will automatically search both the "Phone number" and "Mobile phone
+number" fields in HubSpot during incoming voice or chat sessions.</p>]]></content>
+    <summary>Admins can now enable mobile phone number lookups for HubSpot integrations. This feature ensures callers are accurately matched with existing contacts by automatically searching both 'Phone number' and 'Mobile phone number' fields during incoming voice or chat sessions.</summary>
+    <title>Feature: Mobile number lookup for HubSpot</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-09:feature:6</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-09:feature:5</id>
     <published>2026-03-09T00:00:00+00:00</published>
     <updated>2026-03-09T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Callback fulfillment hours</strong></p>
-<p>You can configure callback fulfillment hours, which are the hours when your
-contact center fulfills callbacks. If you enable callback rollovers to the next
-day, callbacks that are scheduled outside of these hours are rolled over to the
-next day. If you don't enable callback rollovers, callbacks that are scheduled
-outside of these hours are canceled. Callback fulfillment hours aren't available
-by default. To use this capability, ask your Google contact to turn it on for
-your instance.</p>]]></content>
-    <summary>Configure specific hours for fulfilling callbacks in your contact center. This feature allows you to manage when callbacks are processed, with options to roll over unscheduled callbacks to the next day or cancel them.</summary>
-    <title>Feature: Callback Fulfillment Hours</title>
+    <content type="html"><![CDATA[<p><strong>Improved support for multiple agent matches for agent extension searches</strong></p>
+<p>When an end-user inputs an agent extension number at the beginning of a call and
+there are multiple agent matches, the system now reads agent matches in groups
+of eight. This gets the end-user to the correct agent faster. We've added the
+following new extension directory messages to help guide the end-user to the
+correct agent:</p>
+<ul>
+<li>Multiple agents found</li>
+<li>Search results next page</li>
+<li>End of search results</li>
+</ul>]]></content>
+    <summary>The system now groups agent matches in sets of eight when multiple agents are found for an extension number. New messages guide users through the search results, leading them to the correct agent more quickly.</summary>
+    <title>Feature: Faster Agent Matching</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-09:announcement:6</id>
+    <published>2026-03-09T00:00:00+00:00</published>
+    <updated>2026-03-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS prerelease notes</strong></p>
+<p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
+we release the next version, we expect the new capabilities to be as shown here.</p>]]></content>
+    <summary>Get ready for the next version of our Contact Center as a Service platform. This release will introduce exciting new capabilities designed to enhance your customer experience.</summary>
+    <title>Announcement: New CCaaS Features Coming Soon</title>
   </entry>
   <entry>
     <author>
@@ -331,23 +341,13 @@ your instance.</p>]]></content>
     <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-09:feature:7</id>
     <published>2026-03-09T00:00:00+00:00</published>
     <updated>2026-03-09T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Improved controls for predictive campaigns</strong></p>
-<p>We've added the following controls to predictive campaigns to reduce the risk of
-call abandonment due to overdialing. These controls let you ramp up dialing
-rates more naturally and consistently.</p>
-<ul>
-<li><strong>Max Calls Per Agent</strong></li>
-<li><strong>Target Agent Occupancy</strong></li>
-</ul>
-<p>We've also made the <strong>Max Abandonment %</strong> setting optional, for campaigns that
-don't require maintaining a maximum abandonment percentage.</p>
-<p>Administrators: When you click **Campaigns &gt; Add Campaign</p>
-<blockquote>
-<p>Mode &gt; Predictive<strong>, the new controls appear in the
-</strong>Add Campaign** dialog.</p>
-</blockquote>]]></content>
-    <summary>We've introduced new controls for predictive campaigns, including Max Calls Per Agent and Target Agent Occupancy, to help reduce call abandonment. The Max Abandonment % setting is now optional, providing more flexibility for campaign setup.</summary>
-    <title>Feature: New controls for predictive campaigns</title>
+    <content type="html"><![CDATA[<p><strong>HubSpot lookup against company profiles</strong></p>
+<p>HubSpot integrations now support lookups against Company profiles.
+Administrators can configure primary and secondary lookup objects, allowing the
+system to search for end-users across both Contacts and Companies to ensure
+accurate identification during active sessions.</p>]]></content>
+    <summary>HubSpot integrations now support lookups against company profiles. Administrators can configure primary and secondary lookup objects to search for end-users across both Contacts and Companies, ensuring accurate identification during active sessions.</summary>
+    <title>Feature: HubSpot company profile lookups</title>
   </entry>
   <entry>
     <author>
@@ -372,64 +372,7 @@ don't require maintaining a maximum abandonment percentage.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-02-17:announcement:0</id>
-    <published>2026-02-17T00:00:00+00:00</published>
-    <updated>2026-02-17T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS 4.0</strong></p>
-<p>We've released version 4.0 of Google Cloud CCaaS.</p>
-<p>The timing of the update to your instance depends on the deployment schedule
-that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
-schedules</a>.</p>]]></content>
-    <summary>The latest version of Google Cloud CCaaS, version 4.0, has been released. The update timing for your instance will follow your chosen deployment schedule.</summary>
-    <title>Announcement: CCaaS 4.0 Released</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-02-17:feature:1</id>
-    <published>2026-02-17T00:00:00+00:00</published>
-    <updated>2026-02-17T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Raw data export: new call_participants data type</strong></p>
-<p>We've added the <code>call_participants</code> data type to raw data export. This data type
-helps you track the following escalation details for wait-time virtual agents:</p>
-<ul>
-<li>The amount of time the wait-time virtual agent spent in queue.</li>
-<li>The number of events sent to the wait-time virtual agent while it was in
-  queue.</li>
-</ul>
-<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/raw-data-export-dictionary">Raw data export
-dictionary</a>.</p>]]></content>
-    <summary>We've added the call_participants data type to raw data export. This new data type allows you to track wait-time virtual agent queue duration and event counts. This enhancement provides deeper insights into virtual agent performance during wait times.</summary>
-    <title>Feature: New call participants data type for raw data export</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-02-17:feature:2</id>
-    <published>2026-02-17T00:00:00+00:00</published>
-    <updated>2026-02-17T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Salesforce Service Cloud: new secondary lookup object</strong></p>
-<p>The Salesforce Service Cloud integration can now use a secondary lookup object
-to identify customer records when the primary lookup object returns no results.
-This helps prevent the creation of duplicate records.</p>
-<p>Administrators: When you click **Settings &gt; Developer Settings</p>
-<blockquote>
-<p>CRM &gt; Salesforce &gt; SFDC Cloud Selection
-Service Cloud<strong>, a new </strong>Secondary Lookup Object<strong> checkbox appears
-in the </strong>Account Lookup** section.</p>
-</blockquote>
-<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/salesforce-integration-guide#configure-account-lookup">Configure account lookup and field
-mapping</a>.</p>]]></content>
-    <summary>Salesforce Service Cloud now supports a secondary lookup object to identify customer records, preventing the creation of duplicates when the primary lookup fails. This enhancement improves data accuracy and management within the integration.</summary>
-    <title>Feature: Service Cloud: improved customer record identification</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-02-17:fixed:3</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-02-17:fixed:0</id>
     <published>2026-02-17T00:00:00+00:00</published>
     <updated>2026-02-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The following issues were addressed in this release:</p>
@@ -481,6 +424,63 @@ mapping</a>.</p>]]></content>
 </ul>]]></content>
     <summary>This release addresses multiple issues, including incorrect call saving formats, agent communication problems after transfers, inaccurate reporting for abandoned calls, and problems with dashboard displays and agent assignment pages. Additionally, fixes have been implemented for email processing, agent status visibility, integration errors with Salesforce, and routing issues with direct access points.</summary>
     <title>Fixed: Resolved various issues</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-02-17:feature:1</id>
+    <published>2026-02-17T00:00:00+00:00</published>
+    <updated>2026-02-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Salesforce Service Cloud: new secondary lookup object</strong></p>
+<p>The Salesforce Service Cloud integration can now use a secondary lookup object
+to identify customer records when the primary lookup object returns no results.
+This helps prevent the creation of duplicate records.</p>
+<p>Administrators: When you click **Settings &gt; Developer Settings</p>
+<blockquote>
+<p>CRM &gt; Salesforce &gt; SFDC Cloud Selection
+Service Cloud<strong>, a new </strong>Secondary Lookup Object<strong> checkbox appears
+in the </strong>Account Lookup** section.</p>
+</blockquote>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/salesforce-integration-guide#configure-account-lookup">Configure account lookup and field
+mapping</a>.</p>]]></content>
+    <summary>Salesforce Service Cloud now supports a secondary lookup object to identify customer records, preventing the creation of duplicates when the primary lookup fails. This enhancement improves data accuracy and management within the integration.</summary>
+    <title>Feature: Service Cloud: improved customer record identification</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-02-17:feature:2</id>
+    <published>2026-02-17T00:00:00+00:00</published>
+    <updated>2026-02-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Raw data export: new call_participants data type</strong></p>
+<p>We've added the <code>call_participants</code> data type to raw data export. This data type
+helps you track the following escalation details for wait-time virtual agents:</p>
+<ul>
+<li>The amount of time the wait-time virtual agent spent in queue.</li>
+<li>The number of events sent to the wait-time virtual agent while it was in
+  queue.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/raw-data-export-dictionary">Raw data export
+dictionary</a>.</p>]]></content>
+    <summary>We've added the call_participants data type to raw data export. This new data type allows you to track wait-time virtual agent queue duration and event counts. This enhancement provides deeper insights into virtual agent performance during wait times.</summary>
+    <title>Feature: New call participants data type for raw data export</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-02-17:announcement:3</id>
+    <published>2026-02-17T00:00:00+00:00</published>
+    <updated>2026-02-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS 4.0</strong></p>
+<p>We've released version 4.0 of Google Cloud CCaaS.</p>
+<p>The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
+schedules</a>.</p>]]></content>
+    <summary>The latest version of Google Cloud CCaaS, version 4.0, has been released. The update timing for your instance will follow your chosen deployment schedule.</summary>
+    <title>Announcement: CCaaS 4.0 Released</title>
   </entry>
   <entry>
     <author>

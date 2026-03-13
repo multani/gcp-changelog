@@ -1,6 +1,16 @@
 {
   "name": "Spanner",
   "entries": {
+    "2026-03-10": [
+      {
+        "kind": "Feature",
+        "content": "Spanner supports the optimistic concurrency control mode.\nOptimistic concurrency control is suitable for transactional workloads with low\nread-write contention. It assumes that conflicts in transactions are rare. Reads\nand queries within a read-write transaction proceed without acquiring\nlocks. For more information, see [Concurrency control](https://docs.cloud.google.com/spanner/docs/concurrency-control).",
+        "summary": {
+          "title": "Optimistic Concurrency Control Now Available",
+          "summary": "Spanner now supports optimistic concurrency control, ideal for transactional workloads with low contention. This mode allows reads and queries within transactions to proceed without locks, assuming conflicts are rare. Learn more about concurrency control in Spanner."
+        }
+      }
+    ],
     "2026-03-04": [
       {
         "kind": "Feature",
@@ -71,11 +81,11 @@
     ],
     "2026-02-17": [
       {
-        "kind": "Announcement",
-        "content": "New best practices are available for securing generative AI agents using\nModel Context Protocol (MCP) with Google Cloud databases. This guide covers\nkey security measures like least privilege, native database controls, and secure\nagent design to help you build safer AI applications. For more information, see\n[Best practices for securing agent interactions with Model Context Protocol](https://docs.cloud.google.com/spanner/docs/secure-agent-interactions-mcp).\n\nThis feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).",
+        "kind": "Deprecated",
+        "content": "Control of MCP use with organization policies is deprecated.\nAfter March 17, 2026, organization policies that use the\n`gcp.managed.allowedMCPServices` constraint won't work, and\nyou can control MCP use with IAM deny policies.\n\nFor more information about controlling MCP use, see\n[Control MCP use with IAM](https://docs.cloud.google.com/mcp/control-mcp-use-iam).",
         "summary": {
-          "title": "Secure Generative AI Agents with MCP",
-          "summary": "New best practices guide you on securing generative AI agents with Model Context Protocol (MCP) using Google Cloud databases. Learn about least privilege, native database controls, and secure agent design to build safer AI applications. This feature is currently in Preview."
+          "title": "Control of MCP use with organization policies deprecated",
+          "summary": "Control of MCP use with organization policies is deprecated and will stop working after March 17, 2026. You can now control MCP use with IAM deny policies instead."
         }
       },
       {
@@ -87,11 +97,11 @@
         }
       },
       {
-        "kind": "Deprecated",
-        "content": "Control of MCP use with organization policies is deprecated.\nAfter March 17, 2026, organization policies that use the\n`gcp.managed.allowedMCPServices` constraint won't work, and\nyou can control MCP use with IAM deny policies.\n\nFor more information about controlling MCP use, see\n[Control MCP use with IAM](https://docs.cloud.google.com/mcp/control-mcp-use-iam).",
+        "kind": "Announcement",
+        "content": "New best practices are available for securing generative AI agents using\nModel Context Protocol (MCP) with Google Cloud databases. This guide covers\nkey security measures like least privilege, native database controls, and secure\nagent design to help you build safer AI applications. For more information, see\n[Best practices for securing agent interactions with Model Context Protocol](https://docs.cloud.google.com/spanner/docs/secure-agent-interactions-mcp).\n\nThis feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).",
         "summary": {
-          "title": "Control of MCP use with organization policies deprecated",
-          "summary": "Control of MCP use with organization policies is deprecated and will stop working after March 17, 2026. You can now control MCP use with IAM deny policies instead."
+          "title": "Secure Generative AI Agents with MCP",
+          "summary": "New best practices guide you on securing generative AI agents with Model Context Protocol (MCP) using Google Cloud databases. Learn about least privilege, native database controls, and secure agent design to build safer AI applications. This feature is currently in Preview."
         }
       }
     ],

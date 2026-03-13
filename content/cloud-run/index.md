@@ -18,14 +18,14 @@ Support for [PHP 8.5 runtime](https://docs.cloud.google.com/run/docs/runtime-sup
 
 ### Feature
 
-You can use the [Cloud Run remote MCP server](https://docs.cloud.google.com/run/docs/reference/mcp) to let
-agents and AI applications deploy with Cloud Run ([Preview](https://cloud.google.com/products#product-launch-stages)).
-
-### Feature
-
 Deploy a highly available, multi-region Cloud Run service with automated
 failover and failback for [external traffic using Cloud Run service health](https://docs.cloud.google.com/run/docs/multiple-regions#service-health)
 (Preview).
+
+### Feature
+
+You can use the [Cloud Run remote MCP server](https://docs.cloud.google.com/run/docs/reference/mcp) to let
+agents and AI applications deploy with Cloud Run ([Preview](https://cloud.google.com/products#product-launch-stages)).
 
 ---
 ## 2026-02-19

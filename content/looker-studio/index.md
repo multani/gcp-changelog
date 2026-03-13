@@ -13,14 +13,6 @@ Enhancements to the [CSV connector](https://docs.cloud.google.com/looker/docs/st
 
 ### Feature
 
-**Pro feature: Change the billing account**
-
-You can change the Google Cloud billing account that is associated with a Looker Studio Pro subscription without interrupting access to your Pro assets.
-
-[Learn how to change the Pro billing account](https://docs.cloud.google.com/looker/docs/studio/change-billing-account).
-
-### Feature
-
 **Additional search parameters**
 
 When searching for reports or data sources, you can filter search results by the following parameters:
@@ -29,6 +21,14 @@ When searching for reports or data sources, you can filter search results by the
 * Owner
 * Location
 * Date Modified
+
+### Feature
+
+**Pro feature: Change the billing account**
+
+You can change the Google Cloud billing account that is associated with a Looker Studio Pro subscription without interrupting access to your Pro assets.
+
+[Learn how to change the Pro billing account](https://docs.cloud.google.com/looker/docs/studio/change-billing-account).
 
 ---
 ## 2026-02-05

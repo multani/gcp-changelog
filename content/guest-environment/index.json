@@ -33,19 +33,19 @@
     ],
     "2026-03-02": [
       {
-        "kind": "Feature",
-        "content": "Version `20260228.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent) is\nnow available for Debian 13, AlmaLinux 10, CentOS Stream 10, Oracle Linux 10,\nRed Hat Enterprise Linux 10, and Rock Linux 10. This version introduces the\nfollowing features:\n\n* Supports bootstrapping credentials for the HTTPS endpoint for the metadata\n  server by default. For more information about the HTTPS metadata server\n  endpoint, see [HTTPS metadata server endpoints](https://docs.cloud.google.com/compute/docs/metadata/overview#https-mds).\n* Includes a cleanup job that runs once a day and each time the guest agent manager\n  service initializes. This cleanup job ensures that leftover plugin files and\n  states are properly cleaned up.\n* Supports dynamically starting locally installed extensions. This feature is\n  disabled by default, but it can be toggled by setting the\n  `enable_local_plugins` flag to `true` in the guest agent configuration file.",
-        "summary": {
-          "title": "New Guest Agent Version Released",
-          "summary": "A new version of the guest agent is now available for multiple Linux distributions, including Debian 13 and RHEL 10 derivatives. This update enhances security by enabling HTTPS metadata server endpoints by default and improves system stability with automatic cleanup of plugin files. It also introduces support for dynamically starting locally installed extensions, which can be enabled via the configuration file."
-        }
-      },
-      {
         "kind": "Fixed",
         "content": "Version `20260228.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)\nincludes the following fixes:\n\n* The guest agent is now able to add users to the Administrator group on\n  different locales on Windows.\n* The guest agent now signals itself ready only after the network setup\n  has fully completed. This should prevent the guest agent from hitting race\n  conditions with custom routing solutions that depend on the guest agent\n  service.\n* The guest agent no longer spams metadata SSH key errors when a key is\n  incorrectly formatted.\n* The guest agent now ensures proper reconnection of the primary NIC after a\n  configuration rollback, specifically when `NetworkManager` is active. This\n  resolves an issue where the NIC might not come back online in such\n  scenarios.\n* The guest agent now applies the value of the following configuration flags\n  correctly: `Daemons.network_daemon` and\n  `NetworkInterfaces.vlan_setup_enabled`.",
         "summary": {
           "title": "Guest agent fixes",
           "summary": "Version 20260228.00 of the guest agent includes several fixes. These address issues with user group management on Windows, network readiness signaling, metadata SSH key error handling, primary NIC reconnection after rollbacks, and correct application of configuration flags."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Version `20260228.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent) is\nnow available for Debian 13, AlmaLinux 10, CentOS Stream 10, Oracle Linux 10,\nRed Hat Enterprise Linux 10, and Rock Linux 10. This version introduces the\nfollowing features:\n\n* Supports bootstrapping credentials for the HTTPS endpoint for the metadata\n  server by default. For more information about the HTTPS metadata server\n  endpoint, see [HTTPS metadata server endpoints](https://docs.cloud.google.com/compute/docs/metadata/overview#https-mds).\n* Includes a cleanup job that runs once a day and each time the guest agent manager\n  service initializes. This cleanup job ensures that leftover plugin files and\n  states are properly cleaned up.\n* Supports dynamically starting locally installed extensions. This feature is\n  disabled by default, but it can be toggled by setting the\n  `enable_local_plugins` flag to `true` in the guest agent configuration file.",
+        "summary": {
+          "title": "New Guest Agent Version Released",
+          "summary": "A new version of the guest agent is now available for multiple Linux distributions, including Debian 13 and RHEL 10 derivatives. This update enhances security by enabling HTTPS metadata server endpoints by default and improves system stability with automatic cleanup of plugin files. It also introduces support for dynamically starting locally installed extensions, which can be enabled via the configuration file."
         }
       }
     ],

@@ -2376,6 +2376,17 @@
 
 
 <h1 id="compute-engine">Compute Engine</h1>
+<h2 id="2026-03-11">2026-03-11</h2>
+<h3 id="issue">Issue</h3>
+<p>To address high-severity kernel vulnerabilities (including <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-21756">CVE-2025-21756</a> and <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-38052">CVE-2025-38052</a>) in Rocky Linux 8 and 9, updates are available for the Compute Engine images maintained by <a href="https://ciq.com/products/rocky-linux/">CIQ</a>. If your VM instances use images dated before September 2025 (version <code>v20250912</code>), you must take action to ensure you continue to receive security patches.</p>
+<p><strong>How to determine if your Compute Engine VMs are affected</strong></p>
+<p>You are affected if your VM instance uses a Rocky Linux image from an <code>-optimized-gcp</code> or <code>-optimized-gcp-nvidia</code> family with a version date older than <code>v20250912</code> (for example, <code>rocky-linux-9-optimized-gcp-v20250807</code>). To check your VM's source image, see View <a href="https://docs.cloud.google.com/compute/docs/instances/view-vm-image">VM instance image details</a>. You can view details for these image families in <a href="https://docs.cloud.google.com/compute/docs/images/os-details#rocky_linux">Rocky Linux OS details</a>.</p>
+<p><strong>Action required</strong></p>
+<ul>
+<li><strong>If your image version is</strong> <code>v20250912</code> <strong>or later:</strong> Your VM is already configured to use the newer <a href="https://docs.ciq.com/scn/">SIG/Cloud Next (SCN)</a> repositories and is receiving security updates. <strong>No action is required.</strong></li>
+<li><strong>If your image version is older than</strong> <code>v20250912</code>: Your VM is configured to use legacy <a href="https://sig-cloud.rocky.page/">SIG/Cloud</a> repositories that no longer receive regular kernel updates and won't receive future security patches. While running <code>sudo dnf update</code> applies a one-time patch for the vulnerabilities listed, you <strong>must</strong> manually migrate the VM to the SCN repositories to receive ongoing updates by following the <a href="https://docs.ciq.com/scn/#migration-from-sigcloud">CIQ migration guide</a>.</li>
+</ul>
+<hr />
 <h2 id="2026-03-10">2026-03-10</h2>
 <h3 id="feature">Feature</h3>
 <p>When you autoscale a managed instance group (MIG), you can monitor the
@@ -2384,7 +2395,7 @@ more information, see
 <a href="https://docs.cloud.google.com/compute/docs/autoscaler/understanding-autoscaler-decisions#monitor_group_size">Monitor group size</a>.</p>
 <hr />
 <h2 id="2026-03-05">2026-03-05</h2>
-<h3 id="issue">Issue</h3>
+<h3 id="issue_1">Issue</h3>
 <p>For Red Hat Enterprise Linux (RHEL) operating system, VM Manager provides
 vulnerability scanning results based on the latest minor version for each major
 version released. If your VM runs an earlier minor version of RHEL, you might get
@@ -2437,14 +2448,14 @@ to get access.</p>
 <a href="https://docs.cloud.google.com/compute/docs/disks/hyperdisk-exapools">Hyperdisk Exapools overview</a>.</p>
 <hr />
 <h2 id="2026-02-17">2026-02-17</h2>
-<h3 id="change">Change</h3>
-<p>After March 17, 2026, when you enable Compute Engine,
-the Compute Engine MCP server is automatically enabled.</p>
 <h3 id="deprecated">Deprecated</h3>
 <p>Control of MCP use with organization policies is deprecated. After March 17, 2026,
 organization policies that use the <code>gcp.managed.allowedMCPServices</code> constraint
 won't work, and you can control MCP use with IAM deny policies.
 For more information about controlling MCP use, see <a href="https://docs.cloud.google.com/mcp/control-mcp-use-iam">Control MCP use with IAM</a>.</p>
+<h3 id="change">Change</h3>
+<p>After March 17, 2026, when you enable Compute Engine,
+the Compute Engine MCP server is automatically enabled.</p>
 <hr />
 <h2 id="2026-02-12">2026-02-12</h2>
 <h3 id="feature_5">Feature</h3>
@@ -2594,7 +2605,7 @@ reservations. For more information, see
 <p>The memory-optimized X4 machine series offers additional bare metal machine
 types with 6 TB, 8 TB, and 12 TB of memory. For more information,
 see <a href="https://docs.cloud.google.com/compute/docs/memory-optimized-machines#x4_series">X4 machine series</a>.</p>
-<h3 id="issue_1">Issue</h3>
+<h3 id="issue_2">Issue</h3>
 <p>Workloads on A4 VMs might experience interruptions due to a firmware issue
 for NVIDIA B200 GPUs. To help prevent the issue, we recommend resetting the GPUs
 on A4 VMs at least once every 60 days. For more information, see the
@@ -2637,7 +2648,7 @@ your entire fleet of VMs and monitors their health status while they are running
 </ul>
 <hr />
 <h2 id="2025-11-26">2025-11-26</h2>
-<h3 id="issue_2">Issue</h3>
+<h3 id="issue_3">Issue</h3>
 <p>C4 machine type virtual machine (VM) instances running on sole tenant nodes
 might encounter unexpected VM terminations due to host errors or VM
 creation failures. For more information, see
@@ -2693,7 +2704,7 @@ information, see
 <a href="https://docs.cloud.google.com/compute/docs/instances/future-reservations-calendar-mode-overview">About future reservation requests in calendar mode</a>.</p>
 <hr />
 <h2 id="2025-11-10">2025-11-10</h2>
-<h3 id="issue_3">Issue</h3>
+<h3 id="issue_4">Issue</h3>
 <p>The Windows guest agent identifies administrator accounts and groups using
 string matching. Therefore, credential management features only function
 correctly when you use English language names for user accounts and groups,
@@ -3236,6 +3247,9 @@ in, see
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#compute-engine">Compute Engine</a></li>
+          <li class="nav-item">
+            <a href="#2026-03-11" class="nav-link">2026-03-11</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-03-10" class="nav-link">2026-03-10</a>
           </li>

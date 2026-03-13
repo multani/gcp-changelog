@@ -13,11 +13,11 @@
     ],
     "2026-03-08": [
       {
-        "kind": "Fixed",
-        "content": "* Fixed CVEs CVE-2025-58057, CVE-2025-53864, CVE-2025-68161, CVE-2025-48924 (partial), and CVE-2025-33042.\n* Upgraded hms-proxy to v0.0.78 to fix CVEs.",
+        "kind": "Feature",
+        "content": "Enabled Optimized Iceberg Vacuum by default in Spark for premium tier clusters.\nWhen enabled, Dataproc will use a shuffle-based approach to rewrite data files,\nwhich can improve performance for MERGE queries that modify a large number of\nfiles. To disable this feature, set `spark.dataproc.sql.optimizer.lowShuffleMerge.enabled`\nto `false`.",
         "summary": {
-          "title": "Security fixes applied",
-          "summary": "Several security vulnerabilities have been addressed. The hms-proxy component has been upgraded to version 0.0.78 as part of these fixes."
+          "title": "Optimized Iceberg Vacuum Now Default",
+          "summary": "Optimized Iceberg Vacuum is now enabled by default in Spark for premium tier Dataproc clusters. This feature improves MERGE query performance by rewriting data files using a shuffle-based approach. You can disable it by setting spark.dataproc.sql.optimizer.lowShuffleMerge.enabled to false."
         }
       },
       {
@@ -29,21 +29,21 @@
         }
       },
       {
-        "kind": "Feature",
-        "content": "Enabled Optimized Iceberg Vacuum by default in Spark for premium tier clusters.\nWhen enabled, Dataproc will use a shuffle-based approach to rewrite data files,\nwhich can improve performance for MERGE queries that modify a large number of\nfiles. To disable this feature, set `spark.dataproc.sql.optimizer.lowShuffleMerge.enabled`\nto `false`.",
+        "kind": "Fixed",
+        "content": "* Fixed CVEs CVE-2025-58057, CVE-2025-53864, CVE-2025-68161, CVE-2025-48924 (partial), and CVE-2025-33042.\n* Upgraded hms-proxy to v0.0.78 to fix CVEs.",
         "summary": {
-          "title": "Optimized Iceberg Vacuum Now Default",
-          "summary": "Optimized Iceberg Vacuum is now enabled by default in Spark for premium tier Dataproc clusters. This feature improves MERGE query performance by rewriting data files using a shuffle-based approach. You can disable it by setting spark.dataproc.sql.optimizer.lowShuffleMerge.enabled to false."
+          "title": "Security fixes applied",
+          "summary": "Several security vulnerabilities have been addressed. The hms-proxy component has been upgraded to version 0.0.78 as part of these fixes."
         }
       }
     ],
     "2026-03-06": [
       {
         "kind": "Announcement",
-        "content": "Serverless for Apache Spark [3.0](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-3.0) runtime version:\n\n* Updated Spark version to [4.0.1](https://spark.apache.org/releases/spark-release-4-0-1.html).\n* Updated BigQuery Spark Connector version to [0.44.0](https://github.com/GoogleCloudDataproc/spark-bigquery-connector/releases/tag/0.44.0).\n* Applied patch for [SPARK-52601](https://issues.apache.org/jira/browse/SPARK-52601).\n* Applied patch for [SPARK-52614](https://issues.apache.org/jira/browse/SPARK-52614).",
+        "content": "New [Serverless for Apache Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):\n\n* 1.2.74\n* 2.2.74\n* 2.3.27\n* 3.0.10",
         "summary": {
-          "title": "Serverless Spark runtime update",
-          "summary": "The Serverless for Apache Spark runtime has been updated to version 3.0, including Spark 4.0.1 and the BigQuery Spark Connector 0.44.0. This update also incorporates patches for SPARK-52601 and SPARK-52614."
+          "title": "New Spark runtime versions available",
+          "summary": "We've updated the available runtime versions for serverless Apache Spark. The new versions include 1.2.74, 2.2.74, 2.3.27, and 3.0.10, providing you with the latest features and improvements for your Spark workloads."
         }
       },
       {
@@ -56,10 +56,10 @@
       },
       {
         "kind": "Announcement",
-        "content": "New [Serverless for Apache Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):\n\n* 1.2.74\n* 2.2.74\n* 2.3.27\n* 3.0.10",
+        "content": "Serverless for Apache Spark [3.0](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-3.0) runtime version:\n\n* Updated Spark version to [4.0.1](https://spark.apache.org/releases/spark-release-4-0-1.html).\n* Updated BigQuery Spark Connector version to [0.44.0](https://github.com/GoogleCloudDataproc/spark-bigquery-connector/releases/tag/0.44.0).\n* Applied patch for [SPARK-52601](https://issues.apache.org/jira/browse/SPARK-52601).\n* Applied patch for [SPARK-52614](https://issues.apache.org/jira/browse/SPARK-52614).",
         "summary": {
-          "title": "New Spark runtime versions available",
-          "summary": "We've updated the available runtime versions for serverless Apache Spark. The new versions include 1.2.74, 2.2.74, 2.3.27, and 3.0.10, providing you with the latest features and improvements for your Spark workloads."
+          "title": "Serverless Spark runtime update",
+          "summary": "The Serverless for Apache Spark runtime has been updated to version 3.0, including Spark 4.0.1 and the BigQuery Spark Connector 0.44.0. This update also incorporates patches for SPARK-52601 and SPARK-52614."
         }
       }
     ],
@@ -85,19 +85,19 @@
     ],
     "2026-02-24": [
       {
-        "kind": "Announcement",
-        "content": "New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions):\n\n* 2.0.160-debian10, 2.0.160-rocky8, 2.0.160-ubuntu18\n* 2.1.109-debian11, 2.1.109-rocky8, 2.1.109-ubuntu20, 2.1.109-ubuntu20-arm\n* 2.2.77-debian12, 2.2.77-rocky9, 2.2.77-ubuntu22, 2.2.77-ubuntu22-arm\n* 2.3.24-debian12, 2.3.24-ml-ubuntu22, 2.3.24-rocky9, 2.3.24-ubuntu22, 2.3.24-ubuntu22-arm",
-        "summary": {
-          "title": "Dataproc image version updates",
-          "summary": "New subminor image versions are now available for Dataproc on Compute Engine. These updates include various Debian, Rocky Linux, and Ubuntu-based images across multiple Dataproc versions. Check the documentation for a full list of supported versions."
-        }
-      },
-      {
         "kind": "Fixed",
         "content": "Fixed an issue that could cause `gsutil` failures on clusters using custom images built from new base images. This problem occurred when the gcloud `core/universe_domain` property was not set in the build environment, resulting in a malformed `/etc/boto.cfg`. The image build process now ensures a correct default configuration, restoring proper Google Cloud Storage connectivity.",
         "summary": {
           "title": "gsutil fix for custom images",
           "summary": "Resolved an issue causing gsutil failures with custom images due to an improperly configured boto.cfg. The image build process has been updated to ensure correct default configurations, restoring Google Cloud Storage connectivity."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions):\n\n* 2.0.160-debian10, 2.0.160-rocky8, 2.0.160-ubuntu18\n* 2.1.109-debian11, 2.1.109-rocky8, 2.1.109-ubuntu20, 2.1.109-ubuntu20-arm\n* 2.2.77-debian12, 2.2.77-rocky9, 2.2.77-ubuntu22, 2.2.77-ubuntu22-arm\n* 2.3.24-debian12, 2.3.24-ml-ubuntu22, 2.3.24-rocky9, 2.3.24-ubuntu22, 2.3.24-ubuntu22-arm",
+        "summary": {
+          "title": "Dataproc image version updates",
+          "summary": "New subminor image versions are now available for Dataproc on Compute Engine. These updates include various Debian, Rocky Linux, and Ubuntu-based images across multiple Dataproc versions. Check the documentation for a full list of supported versions."
         }
       }
     ],

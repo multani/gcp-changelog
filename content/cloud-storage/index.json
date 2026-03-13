@@ -1,6 +1,16 @@
 {
   "name": "Cloud Storage",
   "entries": {
+    "2026-03-12": [
+      {
+        "kind": "Change",
+        "content": "Object uploads that use customer-managed encryption keys (CMEK) now fail if the\nCloud Storage service agent lacks the necessary IAM\nrole to decrypt the object. For steps to grant the required role, see\n[Assign a Cloud KMS key to a service agent](https://docs.cloud.google.com/storage/docs/encryption/using-customer-managed-keys#service-agent-access).",
+        "summary": {
+          "title": "Object uploads with CMEK may fail",
+          "summary": "Object uploads using customer-managed encryption keys (CMEK) will now fail if the service agent does not have the correct IAM role for decryption. This change ensures better security for your data. Please review the documentation to assign the required role if necessary."
+        }
+      }
+    ],
     "2026-03-10": [
       {
         "kind": "Feature",

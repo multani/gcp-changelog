@@ -2,9 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Compute Engine</title>
   <subtitle>Changelog for Google Cloud product: Compute Engine</subtitle>
-  <updated>2026-03-10T00:00:00+00:00</updated>
+  <updated>2026-03-11T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:compute-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/compute-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2026-03-11:issue:0</id>
+    <published>2026-03-11T00:00:00+00:00</published>
+    <updated>2026-03-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>To address high-severity kernel vulnerabilities (including <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-21756">CVE-2025-21756</a> and <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-38052">CVE-2025-38052</a>) in Rocky Linux 8 and 9, updates are available for the Compute Engine images maintained by <a href="https://ciq.com/products/rocky-linux/">CIQ</a>. If your VM instances use images dated before September 2025 (version <code>v20250912</code>), you must take action to ensure you continue to receive security patches.</p>
+<p><strong>How to determine if your Compute Engine VMs are affected</strong></p>
+<p>You are affected if your VM instance uses a Rocky Linux image from an <code>-optimized-gcp</code> or <code>-optimized-gcp-nvidia</code> family with a version date older than <code>v20250912</code> (for example, <code>rocky-linux-9-optimized-gcp-v20250807</code>). To check your VM's source image, see View <a href="https://docs.cloud.google.com/compute/docs/instances/view-vm-image">VM instance image details</a>. You can view details for these image families in <a href="https://docs.cloud.google.com/compute/docs/images/os-details#rocky_linux">Rocky Linux OS details</a>.</p>
+<p><strong>Action required</strong></p>
+<ul>
+<li><strong>If your image version is</strong> <code>v20250912</code> <strong>or later:</strong> Your VM is already configured to use the newer <a href="https://docs.ciq.com/scn/">SIG/Cloud Next (SCN)</a> repositories and is receiving security updates. <strong>No action is required.</strong></li>
+<li><strong>If your image version is older than</strong> <code>v20250912</code>: Your VM is configured to use legacy <a href="https://sig-cloud.rocky.page/">SIG/Cloud</a> repositories that no longer receive regular kernel updates and won't receive future security patches. While running <code>sudo dnf update</code> applies a one-time patch for the vulnerabilities listed, you <strong>must</strong> manually migrate the VM to the SCN repositories to receive ongoing updates by following the <a href="https://docs.ciq.com/scn/#migration-from-sigcloud">CIQ migration guide</a>.</li>
+</ul>]]></content>
+    <summary>High-severity kernel vulnerabilities have been identified in older Rocky Linux Compute Engine images. Users with images dated before September 2025 must take action to ensure continued security patching. Check your VM's image version and follow the provided migration guide if necessary.</summary>
+    <title>Issue: Rocky Linux Security Update Required</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -111,19 +129,7 @@ to get access.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:compute-engine:2026-02-17:change:0</id>
-    <published>2026-02-17T00:00:00+00:00</published>
-    <updated>2026-02-17T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>After March 17, 2026, when you enable Compute Engine,
-the Compute Engine MCP server is automatically enabled.</p>]]></content>
-    <summary>Starting March 17, 2026, the Compute Engine MCP server will be automatically enabled whenever Compute Engine is activated. This change ensures enhanced functionality is readily available upon setup.</summary>
-    <title>Change: MCP Server Auto-Enabled for Compute Engine</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:compute-engine:2026-02-17:deprecated:1</id>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2026-02-17:deprecated:0</id>
     <published>2026-02-17T00:00:00+00:00</published>
     <updated>2026-02-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Control of MCP use with organization policies is deprecated. After March 17, 2026,
@@ -132,6 +138,18 @@ won't work, and you can control MCP use with IAM deny policies.
 For more information about controlling MCP use, see <a href="https://docs.cloud.google.com/mcp/control-mcp-use-iam">Control MCP use with IAM</a>.</p>]]></content>
     <summary>Organization policies for controlling MCP use are deprecated as of March 17, 2026. After this date, these policies will no longer function. Instead, you can manage MCP usage through IAM deny policies. For detailed guidance, refer to the documentation on controlling MCP use with IAM.</summary>
     <title>Deprecated: Control of MCP use deprecated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2026-02-17:change:1</id>
+    <published>2026-02-17T00:00:00+00:00</published>
+    <updated>2026-02-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>After March 17, 2026, when you enable Compute Engine,
+the Compute Engine MCP server is automatically enabled.</p>]]></content>
+    <summary>Starting March 17, 2026, the Compute Engine MCP server will be automatically enabled whenever Compute Engine is activated. This change ensures enhanced functionality is readily available upon setup.</summary>
+    <title>Change: MCP Server Auto-Enabled for Compute Engine</title>
   </entry>
   <entry>
     <author>

@@ -9,25 +9,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-03-05:change:0</id>
-    <published>2026-03-05T00:00:00+00:00</published>
-    <updated>2026-03-05T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for VMware V2 (Advanced Clusters) versions 1.31
-and earlier were missing a configuration step in the node startup script that
-defined the Docker default bridge IP range. As a result, Docker defaulted to
-using the 172.17.0.0/16 (and in some cases 172.16.0.0/16) address range.</p>
-<p>If this default range overlaps with customer network infrastructure,
-connectivity failures during cluster creation or operation can occur.</p>
-<p>This issue has been resolved. The Docker default bridge IP for cluster nodes in
-advanced clusters is now explicitly set to 169.254.123.1/24.</p>]]></content>
-    <summary>An issue with node startup scripts in VMware Advanced Clusters has been resolved. The Docker default bridge IP range was not explicitly defined, potentially causing network conflicts. This has been corrected by setting the Docker default bridge IP to 169.254.123.1/24 for cluster nodes.</summary>
-    <title>Change: Node Startup Script Update for VMware Advanced Clusters</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-03-05:announcement:1</id>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-03-05:announcement:0</id>
     <published>2026-03-05T00:00:00+00:00</published>
     <updated>2026-03-05T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for VMware 1.32.900-gke.60 is now available
@@ -46,7 +28,43 @@ gcloud CLI, and Terraform.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-03-05:change:1</id>
+    <published>2026-03-05T00:00:00+00:00</published>
+    <updated>2026-03-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for VMware V2 (Advanced Clusters) versions 1.31
+and earlier were missing a configuration step in the node startup script that
+defined the Docker default bridge IP range. As a result, Docker defaulted to
+using the 172.17.0.0/16 (and in some cases 172.16.0.0/16) address range.</p>
+<p>If this default range overlaps with customer network infrastructure,
+connectivity failures during cluster creation or operation can occur.</p>
+<p>This issue has been resolved. The Docker default bridge IP for cluster nodes in
+advanced clusters is now explicitly set to 169.254.123.1/24.</p>]]></content>
+    <summary>An issue with node startup scripts in VMware Advanced Clusters has been resolved. The Docker default bridge IP range was not explicitly defined, potentially causing network conflicts. This has been corrected by setting the Docker default bridge IP to 169.254.123.1/24 for cluster nodes.</summary>
+    <title>Change: Node Startup Script Update for VMware Advanced Clusters</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
     <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-03-03:announcement:0</id>
+    <published>2026-03-03T00:00:00+00:00</published>
+    <updated>2026-03-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for VMware V2 (Advanced Clusters) versions 1.31
+and earlier were missing a configuration step in the node startup script that
+defined the Docker default bridge IP range. As a result, Docker defaulted to
+using the 172.17.0.0/16 (and in some cases 172.16.0.0/16) address range.</p>
+<p>If this default range overlaps with customer network infrastructure,
+connectivity failures during cluster creation or operation can occur.</p>
+<p>This issue has been resolved. The Docker default bridge IP for cluster nodes in
+advanced clusters is now explicitly set to 169.254.123.1/24.</p>]]></content>
+    <summary>An issue where Docker's default IP range could conflict with customer networks in Google Distributed Cloud for VMware has been fixed. The Docker default bridge IP for advanced cluster nodes is now explicitly set to 169.254.123.1/24, preventing potential connectivity failures during cluster operations.</summary>
+    <title>Announcement: Docker IP Range Issue Resolved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-03-03:announcement:1</id>
     <published>2026-03-03T00:00:00+00:00</published>
     <updated>2026-03-03T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for VMware 1.33.500-gke.63 is now available
@@ -65,24 +83,6 @@ gcloud CLI, and Terraform.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-03-03:announcement:1</id>
-    <published>2026-03-03T00:00:00+00:00</published>
-    <updated>2026-03-03T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for VMware V2 (Advanced Clusters) versions 1.31
-and earlier were missing a configuration step in the node startup script that
-defined the Docker default bridge IP range. As a result, Docker defaulted to
-using the 172.17.0.0/16 (and in some cases 172.16.0.0/16) address range.</p>
-<p>If this default range overlaps with customer network infrastructure,
-connectivity failures during cluster creation or operation can occur.</p>
-<p>This issue has been resolved. The Docker default bridge IP for cluster nodes in
-advanced clusters is now explicitly set to 169.254.123.1/24.</p>]]></content>
-    <summary>An issue where Docker's default IP range could conflict with customer networks in Google Distributed Cloud for VMware has been fixed. The Docker default bridge IP for advanced cluster nodes is now explicitly set to 169.254.123.1/24, preventing potential connectivity failures during cluster operations.</summary>
-    <title>Announcement: Docker IP Range Issue Resolved</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
     <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-02-19:breaking:0</id>
     <published>2026-02-19T00:00:00+00:00</published>
     <updated>2026-02-19T00:00:00+00:00</updated>
@@ -95,20 +95,7 @@ information, see <a href="https://docs.cloud.google.com/kubernetes-engine/distri
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-02-13:feature:0</id>
-    <published>2026-02-13T00:00:00+00:00</published>
-    <updated>2026-02-13T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The following feature was added in 1.34.100-gke.93:</p>
-<p>You can deploy <code>vsphere-csi-controller</code> in the advanced cluster on the user
-cluster control plane nodes.</p>]]></content>
-    <summary>You can now deploy the vsphere-csi-controller directly on the control plane nodes of your user cluster. This feature is available in version 1.34.100-gke.93 and simplifies the deployment of CSI drivers for vSphere environments.</summary>
-    <title>Feature: Deploy vsphere-csi-controller on user cluster control plane nodes</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-02-13:announcement:1</id>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-02-13:announcement:0</id>
     <published>2026-02-13T00:00:00+00:00</published>
     <updated>2026-02-13T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for VMware 1.34.100-gke.93 is now available
@@ -122,6 +109,19 @@ available for use with GKE On-Prem API clients: the Google Cloud console, the
 gcloud CLI, and Terraform.</p>]]></content>
     <summary>Google Distributed Cloud for VMware 1.34.100-gke.93 is now available. Check storage partner qualifications and note the rollout period for API clients.</summary>
     <title>Announcement: New VMware Version Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-02-13:feature:1</id>
+    <published>2026-02-13T00:00:00+00:00</published>
+    <updated>2026-02-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following feature was added in 1.34.100-gke.93:</p>
+<p>You can deploy <code>vsphere-csi-controller</code> in the advanced cluster on the user
+cluster control plane nodes.</p>]]></content>
+    <summary>You can now deploy the vsphere-csi-controller directly on the control plane nodes of your user cluster. This feature is available in version 1.34.100-gke.93 and simplifies the deployment of CSI drivers for vSphere environments.</summary>
+    <title>Feature: Deploy vsphere-csi-controller on user cluster control plane nodes</title>
   </entry>
   <entry>
     <author>

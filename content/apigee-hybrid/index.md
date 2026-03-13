@@ -2,6 +2,23 @@
 
 ## 2026-03-11
 
+### hybrid v1.15.2
+
+On March 11, 2026 we released an updated version of the Apigee hybrid software, v1.15.2.
+
+* For information on upgrading, see [Upgrading Apigee hybrid to version v1.15.2](https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/upgrade).
+* For information on new installations, see [The big picture](https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/big-picture).
+
+**Note:** This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).
+
+### Fixed
+
+#### Fixed in this release
+
+| Bug ID | Description |
+| --- | --- |
+| **469694040** | **Fixed an issue where custom Java security policies were intermittently not applied during runtime pod restarts or environment contract updates, which could lead to "Permission denied" errors in Java callouts.** |
+
 ### Security
 
 | Bug ID | Description |
@@ -24,23 +41,6 @@
 | **N/A** | **Security fixes for `apigee-redis`.**  This addresses the following vulnerabilities:  * [CVE-2025-68121](https://nvd.nist.gov/vuln/detail/CVE-2025-68121) * [CVE-2025-68119](https://nvd.nist.gov/vuln/detail/CVE-2025-68119) * [CVE-2025-61732](https://nvd.nist.gov/vuln/detail/CVE-2025-61732) * [CVE-2025-61731](https://nvd.nist.gov/vuln/detail/CVE-2025-61731) * [CVE-2025-61729](https://nvd.nist.gov/vuln/detail/CVE-2025-61729) * [CVE-2025-61726](https://nvd.nist.gov/vuln/detail/CVE-2025-61726) * [CVE-2025-61725](https://nvd.nist.gov/vuln/detail/CVE-2025-61725) * [CVE-2025-61723](https://nvd.nist.gov/vuln/detail/CVE-2025-61723) * [CVE-2025-58188](https://nvd.nist.gov/vuln/detail/CVE-2025-58188) * [CVE-2025-58187](https://nvd.nist.gov/vuln/detail/CVE-2025-58187) * [CVE-2025-47907](https://nvd.nist.gov/vuln/detail/CVE-2025-47907) * [CVE-2025-4674](https://nvd.nist.gov/vuln/detail/CVE-2025-4674) |
 | **N/A** | **Security fixes for `apigee-stackdriver-logging-agent`.**  This addresses the following vulnerabilities:  * [CVE-2025-61594](https://nvd.nist.gov/vuln/detail/CVE-2025-61594) * [CVE-2025-24294](https://nvd.nist.gov/vuln/detail/CVE-2025-24294) |
 | **N/A** | **Security fixes for `apigee-udca`.**  This addresses the following vulnerabilities:  * [CVE-2026-24051](https://nvd.nist.gov/vuln/detail/CVE-2026-24051) * [CVE-2025-68121](https://nvd.nist.gov/vuln/detail/CVE-2025-68121) * [CVE-2025-68119](https://nvd.nist.gov/vuln/detail/CVE-2025-68119) * [CVE-2025-61732](https://nvd.nist.gov/vuln/detail/CVE-2025-61732) * [CVE-2025-61731](https://nvd.nist.gov/vuln/detail/CVE-2025-61731) * [CVE-2025-61729](https://nvd.nist.gov/vuln/detail/CVE-2025-61729) * [CVE-2025-61726](https://nvd.nist.gov/vuln/detail/CVE-2025-61726) * [CVE-2025-61725](https://nvd.nist.gov/vuln/detail/CVE-2025-61725) * [CVE-2025-61723](https://nvd.nist.gov/vuln/detail/CVE-2025-61723) * [CVE-2025-58188](https://nvd.nist.gov/vuln/detail/CVE-2025-58188) * [CVE-2025-58187](https://nvd.nist.gov/vuln/detail/CVE-2025-58187) * [CVE-2025-47907](https://nvd.nist.gov/vuln/detail/CVE-2025-47907) |
-
-### Fixed
-
-#### Fixed in this release
-
-| Bug ID | Description |
-| --- | --- |
-| **469694040** | **Fixed an issue where custom Java security policies were intermittently not applied during runtime pod restarts or environment contract updates, which could lead to "Permission denied" errors in Java callouts.** |
-
-### hybrid v1.15.2
-
-On March 11, 2026 we released an updated version of the Apigee hybrid software, v1.15.2.
-
-* For information on upgrading, see [Upgrading Apigee hybrid to version v1.15.2](https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/upgrade).
-* For information on new installations, see [The big picture](https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/big-picture).
-
-**Note:** This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).
 
 ---
 ## 2026-02-06

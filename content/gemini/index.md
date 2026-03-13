@@ -6,7 +6,7 @@
 
 
 
-### Bug fixes in VS Code
+### Bug fixes in IntelliJ
 
 Various bug fixes and minor product enhancements.
 
@@ -14,7 +14,7 @@ Various bug fixes and minor product enhancements.
 
 
 
-### Bug fixes in IntelliJ
+### Bug fixes in VS Code
 
 Various bug fixes and minor product enhancements.
 
@@ -40,7 +40,7 @@ features are now available in VS Code and generally available (GA).
 
 
 
-### Bug fixes in IntelliJ
+### Bug fixes in VS Code
 
 Various bug fixes and minor product enhancements.
 
@@ -48,18 +48,13 @@ Various bug fixes and minor product enhancements.
 
 
 
-### Bug fixes in VS Code
+### Bug fixes in IntelliJ
 
 Various bug fixes and minor product enhancements.
 
 ---
 ## 2026-02-24
 
-### Finish changes feature in IntelliJ general availability
-
-The [finish changes](https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#finish-changes)
-features is now generally available (GA).
-
 ### File outline feature in IntelliJ general availability
 
 The [file outline](https://docs.cloud.google.com/gemini/docs/codeassist/chat-gemini#outline)
@@ -74,6 +69,11 @@ features is now generally available (GA).
 
 The [file outline](https://docs.cloud.google.com/gemini/docs/codeassist/chat-gemini#outline)
 feature is now generally available (GA).
+
+### Finish changes feature in IntelliJ general availability
+
+The [finish changes](https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#finish-changes)
+features is now generally available (GA).
 
 ---
 ## 2026-02-20

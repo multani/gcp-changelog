@@ -53,32 +53,7 @@ included in version <code>20260228.00</code> of the guest agent, see the
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:guest-environment:2026-03-02:feature:0</id>
-    <published>2026-03-02T00:00:00+00:00</published>
-    <updated>2026-03-02T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Version <code>20260228.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a> is
-now available for Debian 13, AlmaLinux 10, CentOS Stream 10, Oracle Linux 10,
-Red Hat Enterprise Linux 10, and Rock Linux 10. This version introduces the
-following features:</p>
-<ul>
-<li>Supports bootstrapping credentials for the HTTPS endpoint for the metadata
-  server by default. For more information about the HTTPS metadata server
-  endpoint, see <a href="https://docs.cloud.google.com/compute/docs/metadata/overview#https-mds">HTTPS metadata server endpoints</a>.</li>
-<li>Includes a cleanup job that runs once a day and each time the guest agent manager
-  service initializes. This cleanup job ensures that leftover plugin files and
-  states are properly cleaned up.</li>
-<li>Supports dynamically starting locally installed extensions. This feature is
-  disabled by default, but it can be toggled by setting the
-  <code>enable_local_plugins</code> flag to <code>true</code> in the guest agent configuration file.</li>
-</ul>]]></content>
-    <summary>A new version of the guest agent is now available for multiple Linux distributions, including Debian 13 and RHEL 10 derivatives. This update enhances security by enabling HTTPS metadata server endpoints by default and improves system stability with automatic cleanup of plugin files. It also introduces support for dynamically starting locally installed extensions, which can be enabled via the configuration file.</summary>
-    <title>Feature: New Guest Agent Version Released</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:guest-environment:2026-03-02:fixed:1</id>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2026-03-02:fixed:0</id>
     <published>2026-03-02T00:00:00+00:00</published>
     <updated>2026-03-02T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Version <code>20260228.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a>
@@ -102,6 +77,31 @@ includes the following fixes:</p>
 </ul>]]></content>
     <summary>Version 20260228.00 of the guest agent includes several fixes. These address issues with user group management on Windows, network readiness signaling, metadata SSH key error handling, primary NIC reconnection after rollbacks, and correct application of configuration flags.</summary>
     <title>Fixed: Guest agent fixes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2026-03-02:feature:1</id>
+    <published>2026-03-02T00:00:00+00:00</published>
+    <updated>2026-03-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20260228.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a> is
+now available for Debian 13, AlmaLinux 10, CentOS Stream 10, Oracle Linux 10,
+Red Hat Enterprise Linux 10, and Rock Linux 10. This version introduces the
+following features:</p>
+<ul>
+<li>Supports bootstrapping credentials for the HTTPS endpoint for the metadata
+  server by default. For more information about the HTTPS metadata server
+  endpoint, see <a href="https://docs.cloud.google.com/compute/docs/metadata/overview#https-mds">HTTPS metadata server endpoints</a>.</li>
+<li>Includes a cleanup job that runs once a day and each time the guest agent manager
+  service initializes. This cleanup job ensures that leftover plugin files and
+  states are properly cleaned up.</li>
+<li>Supports dynamically starting locally installed extensions. This feature is
+  disabled by default, but it can be toggled by setting the
+  <code>enable_local_plugins</code> flag to <code>true</code> in the guest agent configuration file.</li>
+</ul>]]></content>
+    <summary>A new version of the guest agent is now available for multiple Linux distributions, including Debian 13 and RHEL 10 derivatives. This update enhances security by enabling HTTPS metadata server endpoints by default and improves system stability with automatic cleanup of plugin files. It also introduces support for dynamically starting locally installed extensions, which can be enabled via the configuration file.</summary>
+    <title>Feature: New Guest Agent Version Released</title>
   </entry>
   <entry>
     <author>

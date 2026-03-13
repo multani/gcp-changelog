@@ -2,6 +2,18 @@
 
 ## 2026-03-03
 
+### Feature
+
+**Gemini 3.1 Flash-Lite**
+
+Gemini 3.1 Flash-Lite (`gemini-3.1-flash-lite-preview`) is
+available in [public preview](https://cloud.google.com/products#product-launch-stages).
+This release is our most cost-efficient Gemini model and is
+optimized for low latency use cases for high-volume, cost-sensitive LLM traffic.
+
+For more information, see
+[Gemini 3.1 Flash-Lite](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-1-flash-lite).
+
 ### Deprecated
 
 **Video generation preview endpoints deprecation**
@@ -20,18 +32,6 @@ their replacements. We recommend updating your model endpoints before April 2,
 | `veo-001-preview` | `veo-2.0-generate-001` |
 | `veo-3.1-generate-preview` | `veo-3.1-generate-001` |
 | `veo-3.1-fast-generate-preview` | `veo-3.1-fast-generate-001` |
-
-### Feature
-
-**Gemini 3.1 Flash-Lite**
-
-Gemini 3.1 Flash-Lite (`gemini-3.1-flash-lite-preview`) is
-available in [public preview](https://cloud.google.com/products#product-launch-stages).
-This release is our most cost-efficient Gemini model and is
-optimized for low latency use cases for high-volume, cost-sensitive LLM traffic.
-
-For more information, see
-[Gemini 3.1 Flash-Lite](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-1-flash-lite).
 
 ---
 ## 2026-02-26
@@ -77,6 +77,13 @@ window.
 ---
 ## 2026-02-17
 
+### Feature
+
+**Anthropic's Claude Sonnet 4.6**
+
+[Claude Sonnet 4.6](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/partner-models/claude/sonnet-4-6)
+is available in Model Garden.
+
 ### Deprecated
 
 **Image generation preview endpoints deprecation**
@@ -97,13 +104,6 @@ their replacements. We recommend updating your model endpoints before March 19,
 | `imagen-2.0-edit-preview-0627` | `gemini-2.5-flash-image` |
 | `virtual-try-on-preview-08-04` | `virtual-try-on-001` |
 | `imagen-4.0-ingredients-preview` | `gemini-2.5-flash-image` |
-
-### Feature
-
-**Anthropic's Claude Sonnet 4.6**
-
-[Claude Sonnet 4.6](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/partner-models/claude/sonnet-4-6)
-is available in Model Garden.
 
 ---
 ## 2026-02-10

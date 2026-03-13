@@ -2,13 +2,13 @@
 
 ## 2026-02-13
 
-### Change
-
-Updated the route for Operations Anomalies from `apigee/analytics/operations-anomalies` to `apigee/aapi-ops/operations-anomalies`.
-
 ### Announcement
 
 On February 13, 2026, we released an updated version of the Apigee UI.
+
+### Change
+
+Updated the route for Operations Anomalies from `apigee/analytics/operations-anomalies` to `apigee/aapi-ops/operations-anomalies`.
 
 ---
 ## 2026-01-27

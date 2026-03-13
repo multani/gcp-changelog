@@ -25,15 +25,16 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:dataproc:2026-03-08:fixed:0</id>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-03-08:feature:0</id>
     <published>2026-03-08T00:00:00+00:00</published>
     <updated>2026-03-08T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<ul>
-<li>Fixed CVEs CVE-2025-58057, CVE-2025-53864, CVE-2025-68161, CVE-2025-48924 (partial), and CVE-2025-33042.</li>
-<li>Upgraded hms-proxy to v0.0.78 to fix CVEs.</li>
-</ul>]]></content>
-    <summary>Several security vulnerabilities have been addressed. The hms-proxy component has been upgraded to version 0.0.78 as part of these fixes.</summary>
-    <title>Fixed: Security fixes applied</title>
+    <content type="html"><![CDATA[<p>Enabled Optimized Iceberg Vacuum by default in Spark for premium tier clusters.
+When enabled, Dataproc will use a shuffle-based approach to rewrite data files,
+which can improve performance for MERGE queries that modify a large number of
+files. To disable this feature, set <code>spark.dataproc.sql.optimizer.lowShuffleMerge.enabled</code>
+to <code>false</code>.</p>]]></content>
+    <summary>Optimized Iceberg Vacuum is now enabled by default in Spark for premium tier Dataproc clusters. This feature improves MERGE query performance by rewriting data files using a shuffle-based approach. You can disable it by setting spark.dataproc.sql.optimizer.lowShuffleMerge.enabled to false.</summary>
+    <title>Feature: Optimized Iceberg Vacuum Now Default</title>
   </entry>
   <entry>
     <author>
@@ -56,16 +57,15 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:dataproc:2026-03-08:feature:2</id>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-03-08:fixed:2</id>
     <published>2026-03-08T00:00:00+00:00</published>
     <updated>2026-03-08T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Enabled Optimized Iceberg Vacuum by default in Spark for premium tier clusters.
-When enabled, Dataproc will use a shuffle-based approach to rewrite data files,
-which can improve performance for MERGE queries that modify a large number of
-files. To disable this feature, set <code>spark.dataproc.sql.optimizer.lowShuffleMerge.enabled</code>
-to <code>false</code>.</p>]]></content>
-    <summary>Optimized Iceberg Vacuum is now enabled by default in Spark for premium tier Dataproc clusters. This feature improves MERGE query performance by rewriting data files using a shuffle-based approach. You can disable it by setting spark.dataproc.sql.optimizer.lowShuffleMerge.enabled to false.</summary>
-    <title>Feature: Optimized Iceberg Vacuum Now Default</title>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed CVEs CVE-2025-58057, CVE-2025-53864, CVE-2025-68161, CVE-2025-48924 (partial), and CVE-2025-33042.</li>
+<li>Upgraded hms-proxy to v0.0.78 to fix CVEs.</li>
+</ul>]]></content>
+    <summary>Several security vulnerabilities have been addressed. The hms-proxy component has been upgraded to version 0.0.78 as part of these fixes.</summary>
+    <title>Fixed: Security fixes applied</title>
   </entry>
   <entry>
     <author>
@@ -74,15 +74,15 @@ to <code>false</code>.</p>]]></content>
     <id>urn:github:multani:gcp-changelog:dataproc:2026-03-06:announcement:0</id>
     <published>2026-03-06T00:00:00+00:00</published>
     <updated>2026-03-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Serverless for Apache Spark <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-3.0">3.0</a> runtime version:</p>
+    <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Serverless for Apache Spark runtime versions</a>:</p>
 <ul>
-<li>Updated Spark version to <a href="https://spark.apache.org/releases/spark-release-4-0-1.html">4.0.1</a>.</li>
-<li>Updated BigQuery Spark Connector version to <a href="https://github.com/GoogleCloudDataproc/spark-bigquery-connector/releases/tag/0.44.0">0.44.0</a>.</li>
-<li>Applied patch for <a href="https://issues.apache.org/jira/browse/SPARK-52601">SPARK-52601</a>.</li>
-<li>Applied patch for <a href="https://issues.apache.org/jira/browse/SPARK-52614">SPARK-52614</a>.</li>
+<li>1.2.74</li>
+<li>2.2.74</li>
+<li>2.3.27</li>
+<li>3.0.10</li>
 </ul>]]></content>
-    <summary>The Serverless for Apache Spark runtime has been updated to version 3.0, including Spark 4.0.1 and the BigQuery Spark Connector 0.44.0. This update also incorporates patches for SPARK-52601 and SPARK-52614.</summary>
-    <title>Announcement: Serverless Spark runtime update</title>
+    <summary>We've updated the available runtime versions for serverless Apache Spark. The new versions include 1.2.74, 2.2.74, 2.3.27, and 3.0.10, providing you with the latest features and improvements for your Spark workloads.</summary>
+    <title>Announcement: New Spark runtime versions available</title>
   </entry>
   <entry>
     <author>
@@ -105,15 +105,15 @@ to <code>false</code>.</p>]]></content>
     <id>urn:github:multani:gcp-changelog:dataproc:2026-03-06:announcement:2</id>
     <published>2026-03-06T00:00:00+00:00</published>
     <updated>2026-03-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>New <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions">Serverless for Apache Spark runtime versions</a>:</p>
+    <content type="html"><![CDATA[<p>Serverless for Apache Spark <a href="https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-3.0">3.0</a> runtime version:</p>
 <ul>
-<li>1.2.74</li>
-<li>2.2.74</li>
-<li>2.3.27</li>
-<li>3.0.10</li>
+<li>Updated Spark version to <a href="https://spark.apache.org/releases/spark-release-4-0-1.html">4.0.1</a>.</li>
+<li>Updated BigQuery Spark Connector version to <a href="https://github.com/GoogleCloudDataproc/spark-bigquery-connector/releases/tag/0.44.0">0.44.0</a>.</li>
+<li>Applied patch for <a href="https://issues.apache.org/jira/browse/SPARK-52601">SPARK-52601</a>.</li>
+<li>Applied patch for <a href="https://issues.apache.org/jira/browse/SPARK-52614">SPARK-52614</a>.</li>
 </ul>]]></content>
-    <summary>We've updated the available runtime versions for serverless Apache Spark. The new versions include 1.2.74, 2.2.74, 2.3.27, and 3.0.10, providing you with the latest features and improvements for your Spark workloads.</summary>
-    <title>Announcement: New Spark runtime versions available</title>
+    <summary>The Serverless for Apache Spark runtime has been updated to version 3.0, including Spark 4.0.1 and the BigQuery Spark Connector 0.44.0. This update also incorporates patches for SPARK-52601 and SPARK-52614.</summary>
+    <title>Announcement: Serverless Spark runtime update</title>
   </entry>
   <entry>
     <author>
@@ -152,7 +152,18 @@ to <code>false</code>.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:dataproc:2026-02-24:announcement:0</id>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-02-24:fixed:0</id>
+    <published>2026-02-24T00:00:00+00:00</published>
+    <updated>2026-02-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed an issue that could cause <code>gsutil</code> failures on clusters using custom images built from new base images. This problem occurred when the gcloud <code>core/universe_domain</code> property was not set in the build environment, resulting in a malformed <code>/etc/boto.cfg</code>. The image build process now ensures a correct default configuration, restoring proper Google Cloud Storage connectivity.</p>]]></content>
+    <summary>Resolved an issue causing gsutil failures with custom images due to an improperly configured boto.cfg. The image build process has been updated to ensure correct default configurations, restoring Google Cloud Storage connectivity.</summary>
+    <title>Fixed: gsutil fix for custom images</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataproc:2026-02-24:announcement:1</id>
     <published>2026-02-24T00:00:00+00:00</published>
     <updated>2026-02-24T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions">Dataproc on Compute Engine subminor image versions</a>:</p>
@@ -164,17 +175,6 @@ to <code>false</code>.</p>]]></content>
 </ul>]]></content>
     <summary>New subminor image versions are now available for Dataproc on Compute Engine. These updates include various Debian, Rocky Linux, and Ubuntu-based images across multiple Dataproc versions. Check the documentation for a full list of supported versions.</summary>
     <title>Announcement: Dataproc image version updates</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:dataproc:2026-02-24:fixed:1</id>
-    <published>2026-02-24T00:00:00+00:00</published>
-    <updated>2026-02-24T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Fixed an issue that could cause <code>gsutil</code> failures on clusters using custom images built from new base images. This problem occurred when the gcloud <code>core/universe_domain</code> property was not set in the build environment, resulting in a malformed <code>/etc/boto.cfg</code>. The image build process now ensures a correct default configuration, restoring proper Google Cloud Storage connectivity.</p>]]></content>
-    <summary>Resolved an issue causing gsutil failures with custom images due to an improperly configured boto.cfg. The image build process has been updated to ensure correct default configurations, restoring Google Cloud Storage connectivity.</summary>
-    <title>Fixed: gsutil fix for custom images</title>
   </entry>
   <entry>
     <author>

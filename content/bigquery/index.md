@@ -1,5 +1,25 @@
 # BigQuery
 
+## 2026-03-12
+
+### Change
+
+[BigQuery advanced runtime](https://docs.cloud.google.com/bigquery/docs/advanced-runtime) is now enabled as
+the default runtime for all projects.
+
+---
+## 2026-03-11
+
+### Feature
+
+You can now understand and debug BigQuery query performance with
+a
+[visual mapping of your SQL query in the query execution graph](https://docs.cloud.google.com/bigquery/docs/query-plan-explanation#query_text_heatmap).
+A heatmap highlights the steps that consume more slot-time. This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-03-09
 
 ### Feature
@@ -66,6 +86,12 @@ This feature is in [Preview](https://cloud.google.com/products/#product-launch-s
 ---
 ## 2026-03-05
 
+### Change
+
+An updated version of the
+[Simba ODBC driver for BigQuery](https://docs.cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers#current_odbc_driver)
+is now available.
+
 ### Feature
 
 You can now use an alternate syntax when you call the
@@ -73,14 +99,15 @@ You can now use an alternate syntax when you call the
 to improve query performance when you search for a single vector. This feature
 is in [Preview](https://cloud.google.com/products/#product-launch-stages).
 
-### Change
-
-An updated version of the
-[Simba ODBC driver for BigQuery](https://docs.cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers#current_odbc_driver)
-is now available.
-
 ---
 ## 2026-03-04
+
+### Feature
+
+You can now use [continuous queries to stream BigQuery data to Spanner in real
+time](https://docs.cloud.google.com/bigquery/docs/continuous-queries#spanner-example). This feature is
+[generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
 
 ### Feature
 
@@ -88,13 +115,6 @@ Monitor dataset replication latency and network egress bytes in Cloud Monitoring
 for BigQuery [cross-region replication](https://docs.cloud.google.com/bigquery/docs/data-replication#monitor-replication)
 and [managed disaster recovery](https://docs.cloud.google.com/bigquery/docs/managed-disaster-recovery#monitor-replication).
 These metrics are [generally available](https://cloud.google.com/products/#product-launch-stages)
-(GA).
-
-### Feature
-
-You can now use [continuous queries to stream BigQuery data to Spanner in real
-time](https://docs.cloud.google.com/bigquery/docs/continuous-queries#spanner-example). This feature is
-[generally available](https://cloud.google.com/products/#product-launch-stages)
 (GA).
 
 ---
@@ -141,6 +161,11 @@ You can now run [global queries](https://docs.cloud.google.com/bigquery/docs/glo
 reference data stored in more than one region in a single query. This feature is
 in [Preview](https://cloud.google.com/products#product-launch-stages).
 
+### Change
+
+After March 17, 2026, when you enable BigQuery, the BigQuery MCP server is
+automatically enabled.
+
 ### Deprecated
 
 Control of MCP use with organization policies is deprecated. After
@@ -149,21 +174,14 @@ March 17, 2026, organization policies that use the
 MCP use with IAM deny policies. For more information about controlling MCP use,
 see [Control MCP use with IAM deny policies](https://docs.cloud.google.com/mcp/control-mcp-use-iam).
 
-### Change
-
-After March 17, 2026, when you enable BigQuery, the BigQuery MCP server is
-automatically enabled.
-
 ---
 ## 2026-02-12
 
 ### Feature
 
-You can now use [dataset insights](https://docs.cloud.google.com/bigquery/docs/generate-dataset-insights)
-to understand relationships between tables in a dataset by generating
-relationship graphs and cross-table queries. You can automatically generate
-dataset summaries, infer relationships across tables, and receive suggestions
-for analytical questions. This feature is in
+The
+[`AI.CLASSIFY` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-classify)
+now supports classifying your input into multiple categories. This feature is in
 [Preview](https://cloud.google.com/products/#product-launch-stages).
 
 ### Feature
@@ -179,9 +197,11 @@ This feature is [generally available](https://cloud.google.com/products/#product
 
 ### Feature
 
-The
-[`AI.CLASSIFY` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-classify)
-now supports classifying your input into multiple categories. This feature is in
+You can now use [dataset insights](https://docs.cloud.google.com/bigquery/docs/generate-dataset-insights)
+to understand relationships between tables in a dataset by generating
+relationship graphs and cross-table queries. You can automatically generate
+dataset summaries, infer relationships across tables, and receive suggestions
+for analytical questions. This feature is in
 [Preview](https://cloud.google.com/products/#product-launch-stages).
 
 ---

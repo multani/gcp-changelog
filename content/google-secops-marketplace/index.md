@@ -4,46 +4,55 @@
 
 ### Feature
 
-**Akamai**: Version 2.0
-
-* The following new action has been added:
-
-  + **Activate Client List**
-
-### Feature
-
 **Siemplify**: Version 103.0
 
 * The following new job has been added:
 
   + **Response Integration & Connector Upgrade**
 
-### Change
+### Feature
 
-**Microsoft Graph Mail**: Version 36.0
+**Akamai**: Version 2.0
 
-* Updated folder handling in the following actions:
+* The following new action has been added:
 
-  + **Forward Email**
-  + **Save Email To Case**
-  + **Send Email**
-  + **Send Email HTML**
-  + **Send Thread Reply**
-  + **Send Vote Email**
-  + **Wait For Email From User**
-  + **Wait For Vote Email Results**
-* Updated folder handling in the following connector:
-
-  + **Microsoft Graph Mail Connector**
+  + **Activate Client List**
 
 ### Change
 
-**Google Chronicle**: Version 78.0
+**Splunk**: Version 61.0
 
-* Updated raw log data processing in the following actions:
+* Updated input handling in the following action:
 
-  + **Get Detection Details**
-  + **Execute UDM Query**
+  + **Update Notable Events**
+
+### Change
+
+**CrowdStrike Falcon**: Version 71.0
+
+* Added the ability to define an expiration date for IOCs to the following
+  action:
+
+  + **Upload IOCs**
+* Added support for hidden hosts in the following action:
+
+  + **Get Host Information**
+
+### Change
+
+**Google Security Command Center**: Version 15.0
+
+* Updated the processing of mute states in the following action:
+
+  + **List Asset Vulnerabilities**
+
+### Change
+
+**AWS GuardDuty**: Version 9.0
+
+* Updated severity handling in the following connector:
+
+  + **AWS GuardDuty - Findings Connector**
 
 ### Change
 
@@ -65,39 +74,30 @@
 
 ### Change
 
-**AWS GuardDuty**: Version 9.0
+**Google Chronicle**: Version 78.0
 
-* Updated severity handling in the following connector:
+* Updated raw log data processing in the following actions:
 
-  + **AWS GuardDuty - Findings Connector**
-
-### Change
-
-**Google Security Command Center**: Version 15.0
-
-* Updated the processing of mute states in the following action:
-
-  + **List Asset Vulnerabilities**
+  + **Get Detection Details**
+  + **Execute UDM Query**
 
 ### Change
 
-**CrowdStrike Falcon**: Version 71.0
+**Microsoft Graph Mail**: Version 36.0
 
-* Added the ability to define an expiration date for IOCs to the following
-  action:
+* Updated folder handling in the following actions:
 
-  + **Upload IOCs**
-* Added support for hidden hosts in the following action:
+  + **Forward Email**
+  + **Save Email To Case**
+  + **Send Email**
+  + **Send Email HTML**
+  + **Send Thread Reply**
+  + **Send Vote Email**
+  + **Wait For Email From User**
+  + **Wait For Vote Email Results**
+* Updated folder handling in the following connector:
 
-  + **Get Host Information**
-
-### Change
-
-**Splunk**: Version 61.0
-
-* Updated input handling in the following action:
-
-  + **Update Notable Events**
+  + **Microsoft Graph Mail Connector**
 
 ---
 ## 2026-02-25
@@ -112,6 +112,13 @@
 
 ### Change
 
+**Google Chronicle**: Version 77.0
+
+* **Integration**: Updated the error handling for Workload Identity
+  authentication.
+
+### Change
+
 **Microsoft 365 Defender**: Version 23.0
 
 * Added support for Graph API to the following actions:
@@ -120,19 +127,65 @@
   + **Execute Custom Query**
   + **Execute Entity Query**
 
-### Change
-
-**Google Chronicle**: Version 77.0
-
-* **Integration**: Updated the error handling for Workload Identity
-  authentication.
-
 ---
 ## 2026-02-18
 
 ### Feature
 
 New **Proofpoint Threat Protection** integration
+
+### Change
+
+**Cofense Triage**: Version 17.0
+
+* Optimized the report processing in the following connector:
+
+  + **Cofense Triage - Reports Connector**
+
+### Change
+
+**Qualys VM**: Version 21.0
+
+* **Integration**: Added the ability to configure the `X-Requested-With` header.
+
+### Change
+
+**QRadar**: Version 63.0
+
+* Updated the logic for offense processing in the following connectors:
+
+  + **Qradar Correlation Events Connector V2**
+  + **Qradar Offenses Connector**
+
+### Change
+
+**Palo Alto Cortex XDR**: Version 23.0
+
+* Added the ability to provide agents using input parameters in the following
+  actions:
+
+  + **Scan Endpoint**
+  + **Isolate Endpoint**
+  + **Unisolate Endpoint**
+
+### Change
+
+**Google Chronicle**: Version 76.0
+
+* Restored the previous JSON result structure for empty result sets in the
+  following action:
+
+  + **Execute UDM Query**
+
+### Change
+
+**Exchange**: Version 119.0
+
+* Updated the handling of S/MIME emails sent on MacOS in the following
+  connectors:
+
+  + **Exchange - Mail Connector v2 with OAuth Authentication**
+  + **Exchange - Mail Connector v2**
 
 ### Change
 
@@ -150,59 +203,6 @@ New **Proofpoint Threat Protection** integration
   + **CrowdStrike - Detections Connector**
   + **Crowdstrike - Incidents Connector**
 
-### Change
-
-**Exchange**: Version 119.0
-
-* Updated the handling of S/MIME emails sent on MacOS in the following
-  connectors:
-
-  + **Exchange - Mail Connector v2 with OAuth Authentication**
-  + **Exchange - Mail Connector v2**
-
-### Change
-
-**Google Chronicle**: Version 76.0
-
-* Restored the previous JSON result structure for empty result sets in the
-  following action:
-
-  + **Execute UDM Query**
-
-### Change
-
-**Palo Alto Cortex XDR**: Version 23.0
-
-* Added the ability to provide agents using input parameters in the following
-  actions:
-
-  + **Scan Endpoint**
-  + **Isolate Endpoint**
-  + **Unisolate Endpoint**
-
-### Change
-
-**QRadar**: Version 63.0
-
-* Updated the logic for offense processing in the following connectors:
-
-  + **Qradar Correlation Events Connector V2**
-  + **Qradar Offenses Connector**
-
-### Change
-
-**Qualys VM**: Version 21.0
-
-* **Integration**: Added the ability to configure the `X-Requested-With` header.
-
-### Change
-
-**Cofense Triage**: Version 17.0
-
-* Optimized the report processing in the following connector:
-
-  + **Cofense Triage - Reports Connector**
-
 ---
 ## 2026-02-11
 
@@ -217,16 +217,16 @@ New **Proofpoint Threat Protection** integration
 
 ### Change
 
-**Palo Alto Cortex XDR**: Version 22.0
+**Tenable.io**: Version 13.0
 
-* Updated the event processing and dynamic list handling of the following
-  connector:
+* Optimized the asset processing of the following connector:
 
-  + **Palo Alto Cortex XDR Connector**
-* Added the ability to ignore certain types of artifacts to the following
-  connector:
+  + **TenableIO - Vulnerabilities Connector**
+* Updated the entity processing logic of the following actions:
 
-  + **Palo Alto Cortex XDR Connector**
+  + **Enrich Entities**
+  + **List Endpoint Vulnerabilities**
+  + **Scan Endpoints**
 
 ### Change
 
@@ -244,16 +244,16 @@ New **Proofpoint Threat Protection** integration
 
 ### Change
 
-**Tenable.io**: Version 13.0
+**Palo Alto Cortex XDR**: Version 22.0
 
-* Optimized the asset processing of the following connector:
+* Updated the event processing and dynamic list handling of the following
+  connector:
 
-  + **TenableIO - Vulnerabilities Connector**
-* Updated the entity processing logic of the following actions:
+  + **Palo Alto Cortex XDR Connector**
+* Added the ability to ignore certain types of artifacts to the following
+  connector:
 
-  + **Enrich Entities**
-  + **List Endpoint Vulnerabilities**
-  + **Scan Endpoints**
+  + **Palo Alto Cortex XDR Connector**
 
 ---
 ## 2026-02-04

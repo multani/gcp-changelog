@@ -1,5 +1,21 @@
 # Compute Engine
 
+## 2026-03-11
+
+### Issue
+
+To address high-severity kernel vulnerabilities (including [CVE-2025-21756](https://nvd.nist.gov/vuln/detail/CVE-2025-21756) and [CVE-2025-38052](https://nvd.nist.gov/vuln/detail/CVE-2025-38052)) in Rocky Linux 8 and 9, updates are available for the Compute Engine images maintained by [CIQ](https://ciq.com/products/rocky-linux/). If your VM instances use images dated before September 2025 (version `v20250912`), you must take action to ensure you continue to receive security patches.
+
+**How to determine if your Compute Engine VMs are affected**
+
+You are affected if your VM instance uses a Rocky Linux image from an `-optimized-gcp` or `-optimized-gcp-nvidia` family with a version date older than `v20250912` (for example, `rocky-linux-9-optimized-gcp-v20250807`). To check your VM's source image, see View [VM instance image details](https://docs.cloud.google.com/compute/docs/instances/view-vm-image). You can view details for these image families in [Rocky Linux OS details](https://docs.cloud.google.com/compute/docs/images/os-details#rocky_linux).
+
+**Action required**
+
+* **If your image version is** `v20250912` **or later:** Your VM is already configured to use the newer [SIG/Cloud Next (SCN)](https://docs.ciq.com/scn/) repositories and is receiving security updates. **No action is required.**
+* **If your image version is older than** `v20250912`: Your VM is configured to use legacy [SIG/Cloud](https://sig-cloud.rocky.page/) repositories that no longer receive regular kernel updates and won't receive future security patches. While running `sudo dnf update` applies a one-time patch for the vulnerabilities listed, you **must** manually migrate the VM to the SCN repositories to receive ongoing updates by following the [CIQ migration guide](https://docs.ciq.com/scn/#migration-from-sigcloud).
+
+---
 ## 2026-03-10
 
 ### Feature
@@ -84,17 +100,17 @@ To learn more about Hyperdisk Exapools, see
 ---
 ## 2026-02-17
 
-### Change
-
-After March 17, 2026, when you enable Compute Engine,
-the Compute Engine MCP server is automatically enabled.
-
 ### Deprecated
 
 Control of MCP use with organization policies is deprecated. After March 17, 2026,
 organization policies that use the `gcp.managed.allowedMCPServices` constraint
 won't work, and you can control MCP use with IAM deny policies.
 For more information about controlling MCP use, see [Control MCP use with IAM](https://docs.cloud.google.com/mcp/control-mcp-use-iam).
+
+### Change
+
+After March 17, 2026, when you enable Compute Engine,
+the Compute Engine MCP server is automatically enabled.
 
 ---
 ## 2026-02-12

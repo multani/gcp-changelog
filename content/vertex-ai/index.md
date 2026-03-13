@@ -28,11 +28,11 @@ For more information, see the [Vector Search 2.0 documentation](https://docs.clo
 
 ### Deprecated
 
-Vertex AI Feature Store (Legacy/V1) is deprecated. For details, see [Vertex AI deprecations](https://docs.cloud.google.com/vertex-ai/docs/deprecations).
+Vertex AI Feature Store Optimized online serving is deprecated. For details, see [Vertex AI deprecations](https://docs.cloud.google.com/vertex-ai/docs/deprecations).
 
 ### Deprecated
 
-Vertex AI Feature Store Optimized online serving is deprecated. For details, see [Vertex AI deprecations](https://docs.cloud.google.com/vertex-ai/docs/deprecations).
+Vertex AI Feature Store (Legacy/V1) is deprecated. For details, see [Vertex AI deprecations](https://docs.cloud.google.com/vertex-ai/docs/deprecations).
 
 ---
 ## 2025-10-09

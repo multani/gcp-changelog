@@ -1,6 +1,16 @@
 {
   "name": "Looker",
   "entries": {
+    "2026-03-12": [
+      {
+        "kind": "Feature",
+        "content": "Looker (Google Cloud core) instances with public or hybrid connections now support [IP allowlists](https://docs.cloud.google.com/looker/docs/looker-core-ip-allowlist), which enhance security by ensuring that only traffic from specified IP addresses can access your instance. To connect to certain Google Cloud services, like Conversational Analytics or Connected Sheets, you can [select an option](https://docs.cloud.google.com/looker/docs/looker-core-ip-allowlist#allowlist-services) to automatically allowlist the necessary IP ranges for those services. You can configure an IP allowlist for an existing instance by editing it in the Google Cloud console.\n\nThis feature will roll out to instances over the next week.",
+        "summary": {
+          "title": "Looker IP allowlisting is now available",
+          "summary": "Enhance the security of your Looker instance with IP allowlisting. This feature restricts access to only approved IP addresses, ensuring that only authorized traffic can reach your instance. You can configure IP allowlisting through the Google Cloud console."
+        }
+      }
+    ],
     "2026-03-11": [
       {
         "kind": "Feature",
@@ -24,170 +34,10 @@
     "2026-03-05": [
       {
         "kind": "Fixed",
-        "content": "An issue has been fixed where comma-separated negative filters could be incorrectly interpreted with OR logic in the filter UI. This feature now performs as expected.",
+        "content": "An issue has been fixed where dashboard buttons that open links in a new tab could fail to work properly when cookieless embed was enabled. This feature now performs as expected.",
         "summary": {
-          "title": "Filter UI Logic Corrected",
-          "summary": "The filter UI now correctly interprets comma-separated negative filters, resolving an issue where they were previously treated with OR logic. This fix ensures the feature performs as expected."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "The [Embed Conversational Analytics](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-embedding) feature is now generally available. In Looker 26.4, the following support has been added:\n\n* Embedding Conversational Analytics is now supported on Looker (Google Cloud core).\n* The Looker [embed SDK](https://docs.cloud.google.com/looker/docs/embed-sdk-demo) now supports embedded Conversational Analytics.\n* [Embedded themes](https://docs.cloud.google.com/looker/docs/themes-for-embedded-dashboards-and-explores) are now partially supported with embedded Conversational Analytics. All of the [General options](https://docs.cloud.google.com/looker/docs/themes-for-embedded-dashboards-and-explores#general) for themes are supported. All other theme options are not supported.",
-        "summary": {
-          "title": "Conversational Analytics Now Generally Available",
-          "summary": "Conversational Analytics is now generally available. This feature supports embedding within Looker (Google Cloud core) and the Looker embed SDK. Additionally, general theme options are now partially supported for embedded experiences."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "An issue has been fixed where dashboards that used ClickHouse connections could fail to load with a `ClassCastException` error. This feature now performs as expected.",
-        "summary": {
-          "title": "Dashboards with ClickHouse connections now load correctly",
-          "summary": "An issue that caused dashboards using ClickHouse connections to fail loading with a ClassCastException error has been resolved. Dashboards with ClickHouse connections now function as expected."
-        }
-      },
-      {
-        "kind": "Announcement",
-        "content": "**Looker 26.4** is expected to include the following changes, features, and fixes:\n\n* Expected Looker (original) deployment start: **Sunday, March 8, 2026**\n* Expected Looker (original) final deployment and download available: **Thursday, March 19, 2026**\n* Expected Looker (Google Cloud core) deployment start: **Monday, March 16, 2026**\n* Expected Looker (Google Cloud core) final deployment: **Monday, March 23, 2026**",
-        "summary": {
-          "title": "Looker 26.4 Release Details",
-          "summary": "The Looker 26.4 release is scheduled for March 2026, with deployments for both Looker (original) and Looker (Google Cloud core) beginning in the second week of the month. Final deployments and downloads will be available by March 19th for the original version and March 23rd for the Google Cloud core version."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "An issue has been fixed where entering Japanese characters into advanced filters could add extra characters. This feature now performs as expected.",
-        "summary": {
-          "title": "Japanese character input in filters fixed",
-          "summary": "An issue where Japanese characters were incorrectly added to advanced filters has been resolved. The filtering feature now functions correctly."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "An issue has been fixed where Looker could fail to recognize non-numeric values in conditional formatting rules for single value visualizations. This feature now performs as expected.",
-        "summary": {
-          "title": "Conditional formatting for single value visualizations fixed",
-          "summary": "An issue where Looker failed to recognize non-numeric values in conditional formatting rules for single value visualizations has been resolved. The feature now functions correctly."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "An issue has been fixed where Looker would prevent users from saving changes on the Content Guardrails admin settings page. This feature now performs as expected.",
-        "summary": {
-          "title": "Content Guardrails Save Issue Resolved",
-          "summary": "An issue preventing users from saving changes on the Content Guardrails admin settings page has been fixed. The feature now functions correctly, allowing users to save their configurations without interruption."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "Custom tooltips are now generally available and supported for more visualization types. Custom tooltips let you configure tooltips within the [Explore visualization editor](https://docs.cloud.google.com/looker/docs/creating-visualizations#quick_guide) by using a combination of UI settings and an HTML editor that supports Liquid templating. Custom tooltips are supported for most visualization types except the following:\n\n* [Donut multiples charts](https://docs.cloud.google.com/looker/docs/donut-multiples-options)\n* [Word cloud charts](https://docs.cloud.google.com/looker/docs/word-cloud-options)\n* [Static map (regions) charts](https://docs.cloud.google.com/looker/docs/map-regions-options)\n* [Static maps (points) charts](https://docs.cloud.google.com/looker/docs/map-points-options)\n* Charts made using the Chart Config Editor (with the exception of [Sankey charts](https://docs.cloud.google.com/looker/docs/sankey))\n* Custom visualizations\n\n[Learn more about custom tooltips](https://docs.cloud.google.com/looker/docs/custom-tooltips).",
-        "summary": {
-          "title": "Custom tooltips now generally available",
-          "summary": "Custom tooltips are now generally available, allowing you to configure tooltips for most visualization types using UI settings and Liquid templating. This feature enhances the interactivity and information displayed in your visualizations."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "An issue has been fixed where LookML dashboards could not be created using the `ProjectFile` API endpoint. This feature now performs as expected.",
-        "summary": {
-          "title": "LookML dashboard creation via ProjectFile API fixed",
-          "summary": "An issue preventing LookML dashboard creation through the ProjectFile API has been resolved. The ProjectFile API endpoint now functions correctly for creating LookML dashboards."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "An issue has been fixed where conditional formatting rules could fail to be saved. This feature now performs as expected.",
-        "summary": {
-          "title": "Conditional formatting save issue resolved",
-          "summary": "A bug preventing conditional formatting rules from being saved has been fixed. The feature now functions correctly, allowing users to save their formatting rules without errors."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "An issue has been fixed where pivoted columns could fail to be sorted correctly when content was being downloaded. This feature now performs as expected.",
-        "summary": {
-          "title": "Column sorting fix for downloads",
-          "summary": "An issue that caused pivoted columns to sort incorrectly during content downloads has been resolved. The feature now functions as expected, ensuring correct sorting when downloading content."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "An issue has been fixed where selecting the **Expand tables** option during a PDF download or schedule could cause the tables to shrink instead of expand. This feature now performs as expected.",
-        "summary": {
-          "title": "Table expansion in PDF downloads fixed",
-          "summary": "The issue where the 'Expand tables' option caused tables to shrink during PDF downloads or schedules has been resolved. The feature now correctly expands tables as intended."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "An issue has been fixed where Looker could fail to retain sorts when content from a drill modal was being downloaded. This feature now performs as expected.",
-        "summary": {
-          "title": "Sorts retained on drill download",
-          "summary": "An issue has been fixed where Looker failed to retain sorts when content from a drill modal was downloaded. This functionality now operates as expected."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "The **Labs** page in the **Admin** panel has been renamed **Preview Features**. The new page organizes in-progress features into two categories to provide better clarity on their status:\n\n* **Preview features**: These features have a planned path to general availability.\n* **Labs features**: These experimental features may be removed from the product at any time, and issues may not be resolved.\n\nYour enablement status for each feature has not changed. For more information, see the [Preview Features](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features) documentation page.",
-        "summary": {
-          "title": "Preview Features page replaces Labs",
-          "summary": "The Labs page in the Admin panel is now called Preview Features. This new page categorizes in-progress features into 'Preview features' and 'Labs features' for better clarity on their status. Your enablement status for each feature remains unchanged."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "An issue has been fixed where dashboard table tiles could fail to display the scroll bar and total row. This feature now performs as expected.",
-        "summary": {
-          "title": "Dashboard table scroll bar and total row issue fixed",
-          "summary": "An issue where dashboard table tiles failed to display the scroll bar and total row has been resolved. This functionality now operates correctly."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "[Tabbed dashboards](https://docs.cloud.google.com/looker/docs/tabbed-dashboards) are now generally available. Dashboard editors can use tabs to organize dashboard content across multiple tabs within a single dashboard. Adding tabs to dashboards lets you do the following:\n\n* Better organize content: Group related visualizations and tiles into separate tabs.\n* Improve data storytelling: Guide viewers through different aspects of your data in a structured way.\n* Enhance performance: Load only the tiles on an active tab, potentially speeding up initial dashboard load times.\n* Reduce clutter: Consolidate multiple related analyses into a single dashboard.",
-        "summary": {
-          "title": "Organize dashboards with tabs",
-          "summary": "Tabbed dashboards are now generally available, allowing dashboard editors to organize content across multiple tabs within a single dashboard. This feature helps improve content organization, data storytelling, performance, and reduces clutter by consolidating related analyses."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "Dashboard filter enhancements are now generally available. Dashboard filter enhancements include the following improvements:\n\n* Persistent filter suggestion drop-down: Filter suggestion drop-downs remain open for easier multi-selection for [tag list](https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#tag-list) and [advanced filter](https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#advanced_filters) type filters.\n* Select or deselect all filter values: Lets users select or deselect all values in tag list and advanced filter type filters.\n* Limit condition controls for advanced filters: Lets dashboard creators limit the condition options that are available to users for advanced filters.\n* Enable [**Include custom filter values**](https://docs.cloud.google.com/looker/docs/presenting-content#adding_dashboards_to_boards_with_custom_filter_values_applied) by default for boards: Admins can choose to enable Include custom filter values for boards by default instance-wide.",
-        "summary": {
-          "title": "Dashboard filter enhancements available",
-          "summary": "Dashboard filter enhancements are now generally available, offering improved usability with persistent suggestions, select/deselect all options, and more control for filter creators. Admins can also enable custom filter values by default for boards."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "Full support for connections with [AlloyDB for PostgreSQL](https://docs.cloud.google.com/looker/docs/db-config-alloydb) is available in preview. When you [create a connection](https://docs.cloud.google.com/looker/docs/connecting-to-your-db) in Looker, you can now select **Google Cloud AlloyDB for PostgreSQL** from the Dialect drop-down menu. This update does not affect existing AlloyDB connections that were created using the **PostgreSQL 9.5+** option in the Dialect menu.\n\n**Note:** This item was updated March 9, 2026.",
-        "summary": {
-          "title": "AlloyDB for PostgreSQL connections now in preview",
-          "summary": "Looker now offers full support for connections with AlloyDB for PostgreSQL, available in preview. You can select this new dialect when creating new database connections in Looker. Existing connections made with the PostgreSQL 9.5+ option will not be affected."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "An issue has been fixed where dimension fill could fail to populate values when the row limit is reached. This feature now performs as expected.",
-        "summary": {
-          "title": "Dimension fill now populates values correctly",
-          "summary": "An issue that prevented dimension fill from populating values when the row limit was reached has been resolved. The feature now functions as expected, ensuring accurate data population."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "An issue has been fixed where the \"raw\" timeframe of a `dimension_group` could be displayed in a 12-hour format instead of the expected 24-hour format. This feature now performs as expected.",
-        "summary": {
-          "title": "Timeframe display corrected",
-          "summary": "An issue has been fixed where the 'raw' timeframe of a dimension group could be displayed in a 12-hour format instead of the expected 24-hour format. The feature now performs as expected."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "An issue has been fixed where certain tables were being unnecessarily truncated when they were downloaded to PDF. This feature now performs as expected.",
-        "summary": {
-          "title": "Table download to PDF fixed",
-          "summary": "An issue causing unnecessary table truncation during PDF downloads has been resolved. This feature now functions correctly."
+          "title": "Dashboard buttons now work with cookieless embed",
+          "summary": "An issue where dashboard buttons failed to open links in a new tab when cookieless embed was enabled has been resolved. This functionality now works as expected."
         }
       },
       {
@@ -200,18 +50,178 @@
       },
       {
         "kind": "Fixed",
-        "content": "An issue has been fixed where dashboard buttons that open links in a new tab could fail to work properly when cookieless embed was enabled. This feature now performs as expected.",
+        "content": "An issue has been fixed where certain tables were being unnecessarily truncated when they were downloaded to PDF. This feature now performs as expected.",
         "summary": {
-          "title": "Dashboard buttons now work with cookieless embed",
-          "summary": "An issue where dashboard buttons failed to open links in a new tab when cookieless embed was enabled has been resolved. This functionality now works as expected."
+          "title": "Table download to PDF fixed",
+          "summary": "An issue causing unnecessary table truncation during PDF downloads has been resolved. This feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the \"raw\" timeframe of a `dimension_group` could be displayed in a 12-hour format instead of the expected 24-hour format. This feature now performs as expected.",
+        "summary": {
+          "title": "Timeframe display corrected",
+          "summary": "An issue has been fixed where the 'raw' timeframe of a dimension group could be displayed in a 12-hour format instead of the expected 24-hour format. The feature now performs as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where dimension fill could fail to populate values when the row limit is reached. This feature now performs as expected.",
+        "summary": {
+          "title": "Dimension fill now populates values correctly",
+          "summary": "An issue that prevented dimension fill from populating values when the row limit was reached has been resolved. The feature now functions as expected, ensuring accurate data population."
         }
       },
       {
         "kind": "Feature",
-        "content": "The [Preview Features page](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features) is now available in the **Admin** panel for Looker (Google Cloud core). This page lets you enable or disable new features that are currently in preview.\n\nThe following preview features are now available in Looker (Google Cloud core):\n\n* Access Content Certification\n* Granular Dashboard Sizing\n* Internal Dashboard Theming\n* Tile Download Default Options\n\nPreview features that are categorized as \"Labs\" on the **Preview Features** page of the **Admin** panel aren't supported in Looker (Google Cloud core).",
+        "content": "Full support for connections with [AlloyDB for PostgreSQL](https://docs.cloud.google.com/looker/docs/db-config-alloydb) is available in preview. When you [create a connection](https://docs.cloud.google.com/looker/docs/connecting-to-your-db) in Looker, you can now select **Google Cloud AlloyDB for PostgreSQL** from the Dialect drop-down menu. This update does not affect existing AlloyDB connections that were created using the **PostgreSQL 9.5+** option in the Dialect menu.\n\n**Note:** This item was updated March 9, 2026.",
         "summary": {
-          "title": "Manage Preview Features in Admin Panel",
-          "summary": "You can now enable or disable new preview features directly from the Admin panel in Looker. Access Content Certification, Granular Dashboard Sizing, Internal Dashboard Theming, and Tile Download Default Options are now available for preview."
+          "title": "AlloyDB for PostgreSQL connections now in preview",
+          "summary": "Looker now offers full support for connections with AlloyDB for PostgreSQL, available in preview. You can select this new dialect when creating new database connections in Looker. Existing connections made with the PostgreSQL 9.5+ option will not be affected."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Dashboard filter enhancements are now generally available. Dashboard filter enhancements include the following improvements:\n\n* Persistent filter suggestion drop-down: Filter suggestion drop-downs remain open for easier multi-selection for [tag list](https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#tag-list) and [advanced filter](https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#advanced_filters) type filters.\n* Select or deselect all filter values: Lets users select or deselect all values in tag list and advanced filter type filters.\n* Limit condition controls for advanced filters: Lets dashboard creators limit the condition options that are available to users for advanced filters.\n* Enable [**Include custom filter values**](https://docs.cloud.google.com/looker/docs/presenting-content#adding_dashboards_to_boards_with_custom_filter_values_applied) by default for boards: Admins can choose to enable Include custom filter values for boards by default instance-wide.",
+        "summary": {
+          "title": "Dashboard filter enhancements available",
+          "summary": "Dashboard filter enhancements are now generally available, offering improved usability with persistent suggestions, select/deselect all options, and more control for filter creators. Admins can also enable custom filter values by default for boards."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "[Tabbed dashboards](https://docs.cloud.google.com/looker/docs/tabbed-dashboards) are now generally available. Dashboard editors can use tabs to organize dashboard content across multiple tabs within a single dashboard. Adding tabs to dashboards lets you do the following:\n\n* Better organize content: Group related visualizations and tiles into separate tabs.\n* Improve data storytelling: Guide viewers through different aspects of your data in a structured way.\n* Enhance performance: Load only the tiles on an active tab, potentially speeding up initial dashboard load times.\n* Reduce clutter: Consolidate multiple related analyses into a single dashboard.",
+        "summary": {
+          "title": "Organize dashboards with tabs",
+          "summary": "Tabbed dashboards are now generally available, allowing dashboard editors to organize content across multiple tabs within a single dashboard. This feature helps improve content organization, data storytelling, performance, and reduces clutter by consolidating related analyses."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where dashboard table tiles could fail to display the scroll bar and total row. This feature now performs as expected.",
+        "summary": {
+          "title": "Dashboard table scroll bar and total row issue fixed",
+          "summary": "An issue where dashboard table tiles failed to display the scroll bar and total row has been resolved. This functionality now operates correctly."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The **Labs** page in the **Admin** panel has been renamed **Preview Features**. The new page organizes in-progress features into two categories to provide better clarity on their status:\n\n* **Preview features**: These features have a planned path to general availability.\n* **Labs features**: These experimental features may be removed from the product at any time, and issues may not be resolved.\n\nYour enablement status for each feature has not changed. For more information, see the [Preview Features](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features) documentation page.",
+        "summary": {
+          "title": "Preview Features page replaces Labs",
+          "summary": "The Labs page in the Admin panel is now called Preview Features. This new page categorizes in-progress features into 'Preview features' and 'Labs features' for better clarity on their status. Your enablement status for each feature remains unchanged."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where Looker could fail to retain sorts when content from a drill modal was being downloaded. This feature now performs as expected.",
+        "summary": {
+          "title": "Sorts retained on drill download",
+          "summary": "An issue has been fixed where Looker failed to retain sorts when content from a drill modal was downloaded. This functionality now operates as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where selecting the **Expand tables** option during a PDF download or schedule could cause the tables to shrink instead of expand. This feature now performs as expected.",
+        "summary": {
+          "title": "Table expansion in PDF downloads fixed",
+          "summary": "The issue where the 'Expand tables' option caused tables to shrink during PDF downloads or schedules has been resolved. The feature now correctly expands tables as intended."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where pivoted columns could fail to be sorted correctly when content was being downloaded. This feature now performs as expected.",
+        "summary": {
+          "title": "Column sorting fix for downloads",
+          "summary": "An issue that caused pivoted columns to sort incorrectly during content downloads has been resolved. The feature now functions as expected, ensuring correct sorting when downloading content."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where conditional formatting rules could fail to be saved. This feature now performs as expected.",
+        "summary": {
+          "title": "Conditional formatting save issue resolved",
+          "summary": "A bug preventing conditional formatting rules from being saved has been fixed. The feature now functions correctly, allowing users to save their formatting rules without errors."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where LookML dashboards could not be created using the `ProjectFile` API endpoint. This feature now performs as expected.",
+        "summary": {
+          "title": "LookML dashboard creation via ProjectFile API fixed",
+          "summary": "An issue preventing LookML dashboard creation through the ProjectFile API has been resolved. The ProjectFile API endpoint now functions correctly for creating LookML dashboards."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Custom tooltips are now generally available and supported for more visualization types. Custom tooltips let you configure tooltips within the [Explore visualization editor](https://docs.cloud.google.com/looker/docs/creating-visualizations#quick_guide) by using a combination of UI settings and an HTML editor that supports Liquid templating. Custom tooltips are supported for most visualization types except the following:\n\n* [Donut multiples charts](https://docs.cloud.google.com/looker/docs/donut-multiples-options)\n* [Word cloud charts](https://docs.cloud.google.com/looker/docs/word-cloud-options)\n* [Static map (regions) charts](https://docs.cloud.google.com/looker/docs/map-regions-options)\n* [Static maps (points) charts](https://docs.cloud.google.com/looker/docs/map-points-options)\n* Charts made using the Chart Config Editor (with the exception of [Sankey charts](https://docs.cloud.google.com/looker/docs/sankey))\n* Custom visualizations\n\n[Learn more about custom tooltips](https://docs.cloud.google.com/looker/docs/custom-tooltips).",
+        "summary": {
+          "title": "Custom tooltips now generally available",
+          "summary": "Custom tooltips are now generally available, allowing you to configure tooltips for most visualization types using UI settings and Liquid templating. This feature enhances the interactivity and information displayed in your visualizations."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where Looker would prevent users from saving changes on the Content Guardrails admin settings page. This feature now performs as expected.",
+        "summary": {
+          "title": "Content Guardrails Save Issue Resolved",
+          "summary": "An issue preventing users from saving changes on the Content Guardrails admin settings page has been fixed. The feature now functions correctly, allowing users to save their configurations without interruption."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where Looker could fail to recognize non-numeric values in conditional formatting rules for single value visualizations. This feature now performs as expected.",
+        "summary": {
+          "title": "Conditional formatting for single value visualizations fixed",
+          "summary": "An issue where Looker failed to recognize non-numeric values in conditional formatting rules for single value visualizations has been resolved. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where entering Japanese characters into advanced filters could add extra characters. This feature now performs as expected.",
+        "summary": {
+          "title": "Japanese character input in filters fixed",
+          "summary": "An issue where Japanese characters were incorrectly added to advanced filters has been resolved. The filtering feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "**Looker 26.4** is expected to include the following changes, features, and fixes:\n\n* Expected Looker (original) deployment start: **Sunday, March 8, 2026**\n* Expected Looker (original) final deployment and download available: **Thursday, March 19, 2026**\n* Expected Looker (Google Cloud core) deployment start: **Monday, March 16, 2026**\n* Expected Looker (Google Cloud core) final deployment: **Monday, March 23, 2026**",
+        "summary": {
+          "title": "Looker 26.4 Release Details",
+          "summary": "The Looker 26.4 release is scheduled for March 2026, with deployments for both Looker (original) and Looker (Google Cloud core) beginning in the second week of the month. Final deployments and downloads will be available by March 19th for the original version and March 23rd for the Google Cloud core version."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where dashboards that used ClickHouse connections could fail to load with a `ClassCastException` error. This feature now performs as expected.",
+        "summary": {
+          "title": "Dashboards with ClickHouse connections now load correctly",
+          "summary": "An issue that caused dashboards using ClickHouse connections to fail loading with a ClassCastException error has been resolved. Dashboards with ClickHouse connections now function as expected."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [Embed Conversational Analytics](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-embedding) feature is now generally available. In Looker 26.4, the following support has been added:\n\n* Embedding Conversational Analytics is now supported on Looker (Google Cloud core).\n* The Looker [embed SDK](https://docs.cloud.google.com/looker/docs/embed-sdk-demo) now supports embedded Conversational Analytics.\n* [Embedded themes](https://docs.cloud.google.com/looker/docs/themes-for-embedded-dashboards-and-explores) are now partially supported with embedded Conversational Analytics. All of the [General options](https://docs.cloud.google.com/looker/docs/themes-for-embedded-dashboards-and-explores#general) for themes are supported. All other theme options are not supported.",
+        "summary": {
+          "title": "Conversational Analytics Now Generally Available",
+          "summary": "Conversational Analytics is now generally available. This feature supports embedding within Looker (Google Cloud core) and the Looker embed SDK. Additionally, general theme options are now partially supported for embedded experiences."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where comma-separated negative filters could be incorrectly interpreted with OR logic in the filter UI. This feature now performs as expected.",
+        "summary": {
+          "title": "Filter UI Logic Corrected",
+          "summary": "The filter UI now correctly interprets comma-separated negative filters, resolving an issue where they were previously treated with OR logic. This fix ensures the feature performs as expected."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The **Gemini in Looker** page in the **Admin** panel has been redesigned to allow Looker admins to selectively enable Gemini in Looker features. For more information about how to enable the features that are available for each Looker instance type, see the following documentation:\n\n* Looker (Google Cloud core): [Administer Gemini on your Looker (Google Cloud core) instance](https://docs.cloud.google.com/looker/docs/looker-core-admin-gemini)\n* Looker: [Admin settings – Gemini in Looker](https://docs.cloud.google.com/looker/docs/admin-panel-platform-gil)",
+        "summary": {
+          "title": "New Gemini in Looker Admin Settings",
+          "summary": "Looker admins can now selectively enable Gemini features through a redesigned Admin panel page. This provides more granular control over Gemini's capabilities within your Looker instance."
         }
       },
       {
@@ -224,10 +234,10 @@
       },
       {
         "kind": "Feature",
-        "content": "The **Gemini in Looker** page in the **Admin** panel has been redesigned to allow Looker admins to selectively enable Gemini in Looker features. For more information about how to enable the features that are available for each Looker instance type, see the following documentation:\n\n* Looker (Google Cloud core): [Administer Gemini on your Looker (Google Cloud core) instance](https://docs.cloud.google.com/looker/docs/looker-core-admin-gemini)\n* Looker: [Admin settings – Gemini in Looker](https://docs.cloud.google.com/looker/docs/admin-panel-platform-gil)",
+        "content": "The [Preview Features page](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features) is now available in the **Admin** panel for Looker (Google Cloud core). This page lets you enable or disable new features that are currently in preview.\n\nThe following preview features are now available in Looker (Google Cloud core):\n\n* Access Content Certification\n* Granular Dashboard Sizing\n* Internal Dashboard Theming\n* Tile Download Default Options\n\nPreview features that are categorized as \"Labs\" on the **Preview Features** page of the **Admin** panel aren't supported in Looker (Google Cloud core).",
         "summary": {
-          "title": "New Gemini in Looker Admin Settings",
-          "summary": "Looker admins can now selectively enable Gemini features through a redesigned Admin panel page. This provides more granular control over Gemini's capabilities within your Looker instance."
+          "title": "Manage Preview Features in Admin Panel",
+          "summary": "You can now enable or disable new preview features directly from the Admin panel in Looker. Access Content Certification, Granular Dashboard Sizing, Internal Dashboard Theming, and Tile Download Default Options are now available for preview."
         }
       }
     ],
@@ -244,66 +254,10 @@
     "2026-02-17": [
       {
         "kind": "Feature",
-        "content": "Now available in preview, the **Self-service Explores** feature supports updating the data for a self-service Explore. The owner of a self-service Explore can update it with data from the latest version of the file that was used to create the self-service Explore. See the [Creating self-service Explores](https://docs.cloud.google.com/looker/docs/exploring-self-service#update-data) documentation page for more information.",
+        "content": "Now available in preview, the **Self-service Explores** feature supports [uploading data from Google Sheets](https://docs.cloud.google.com/looker/docs/exploring-self-service#from-sheets). To support uploading data from Google Sheets, your Looker admin must [enable the required APIs](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#enable-apis) in the Google Cloud project that houses your BigQuery database.",
         "summary": {
-          "title": "Update data for self-service Explores",
-          "summary": "Self-service Explores now support updating data with the latest file version. This feature, currently in preview, allows owners to refresh their Explores easily. More details can be found in the documentation on creating self-service Explores."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "Now available in preview, dashboard editors can [set default options for how the download of a dashboard tile includes query results](https://docs.cloud.google.com/looker/docs/editing-user-defined-dashboards#download-limit). They can set the download to include by default all query results or the current result table that is displayed in the visualization, or set a custom number of rows and columns. To enable this feature, a Looker admin must turn on the [**Tile Download Default Options** Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#dashboard-tile-download-limits).",
-        "summary": {
-          "title": "Set default dashboard tile download options",
-          "summary": "Dashboard editors can now set default options for downloading query results from dashboard tiles. This feature, available in preview, allows setting defaults for all results, the current table, or a custom number of rows and columns. Looker admins need to enable the 'Tile Download Default Options' Labs feature."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "Now available in preview, the **In-database merge queries** feature is supported for [merging results](https://docs.cloud.google.com/looker/docs/merged-results) of two queries that are on the same BigQuery connection. Previously, the join for merging results was always performed in Looker memory, which limited each query to 5,000 rows that could be calculated in the join. If your Looker admin has enabled the [**In-database merge queries** Looker Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#in-database-merge-queries), the join between two queries that are on the same BigQuery connection is performed in the BigQuery database itself. Performing the join in the database is more performant and allows for unlimited rows that can be joined.",
-        "summary": {
-          "title": "In-database merge queries now in preview",
-          "summary": "The new In-database merge queries feature, now in preview, allows for more performant merging of query results directly within BigQuery. This eliminates previous row limitations and improves the efficiency of data joins."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "The [content certification](https://docs.cloud.google.com/looker/docs/content-certification) feature, already available in preview, includes the following updates:\n\n* The [**Settings**](admin-panel-general-settings) page in the **General** section of the **Admin** panel now includes options that let admins enable or disable content certification, set a custom URL for the certification process, and control whether certification is revoked when content is edited.\n* LookML dashboards can now be certified.\n* Looks and dashboards that are based on uncertified self-service Explores now display the \"ungoverned\" badge.\n* Searching for content now includes the ability to sort content based on its certification status. (**Note**: This capability is not yet available. This item was modified on February 26, 2026.)",
-        "summary": {
-          "title": "Content Certification Updates",
-          "summary": "The content certification feature has been updated with new administrative controls, the ability to certify LookML dashboards, and enhanced search capabilities. Admins can now manage certification settings, and users will see an 'ungoverned' badge on content derived from uncertified Explores."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "Now available in preview, LookML developers can unlock their Git branch in cases where their Git branch is locked as a result of another Git operation in progress or a previous Git operation failing. When the Git repository is locked, Looker displays the **Unlock Branch** option in the [**Git Actions** panel](https://docs.cloud.google.com/looker/docs/git-command-reference#git_actions_panel) of the Looker IDE. In addition, if a LookML developer tries to commit a change on a locked Git branch, Looker displays a warning in the **Commit** dialog, along with an option to delete the Git lock. See the [Using version control and deploying](https://docs.cloud.google.com/looker/docs/version-control-and-deploying-changes#unlock-branch) documentation page for details.\n\n**Note:** This item was added on February 18, 2026.",
-        "summary": {
-          "title": "Unlock Git Branch in Looker",
-          "summary": "LookML developers can now unlock their Git branches in Looker, resolving issues caused by in-progress or failed Git operations. The 'Unlock Branch' option is available in the Git Actions panel, and warnings with an option to delete the lock appear when committing changes on a locked branch."
-        }
-      },
-      {
-        "kind": "Announcement",
-        "content": "The following features will roll out over a four-day period starting February 17, 2026.",
-        "summary": {
-          "title": "New features coming soon",
-          "summary": "New features will be gradually released starting February 17, 2026. This rollout will take place over a four-day period."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "Now available in preview, the [**Embed Conversational Analytics** Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#embed_conversational_analytics) is now available. When enabled, the Embed Conversational Analytics Labs feature lets you [embed Conversational Analytics conversations and agents in an iframe](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-embedding) like other Looker content types.",
-        "summary": {
-          "title": "Conversational Analytics Embedding Now in Preview",
-          "summary": "You can now embed Conversational Analytics conversations and agents within an iframe. This new preview feature allows for seamless integration of conversational data into your applications, similar to other Looker content."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "Now available in preview, dashboard editors can change the size and layout of dashboard tiles with more granularity. To enable this feature, a Looker admin must turn on the [**Granular Dashboard Sizing** Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#granular-dashboard-sizing).",
-        "summary": {
-          "title": "Dashboard Tiles Resizing",
-          "summary": "Dashboard editors can now adjust the size and layout of tiles with greater precision. This new preview feature requires a Looker admin to enable Granular Dashboard Sizing in the Labs section of the Admin panel."
+          "title": "Self-service Explores now supports Google Sheets",
+          "summary": "Self-service Explores is now available in preview, allowing you to upload data directly from Google Sheets. To use this feature, your Looker admin needs to enable specific APIs in your Google Cloud project."
         }
       },
       {
@@ -316,10 +270,66 @@
       },
       {
         "kind": "Feature",
-        "content": "Now available in preview, the **Self-service Explores** feature supports [uploading data from Google Sheets](https://docs.cloud.google.com/looker/docs/exploring-self-service#from-sheets). To support uploading data from Google Sheets, your Looker admin must [enable the required APIs](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#enable-apis) in the Google Cloud project that houses your BigQuery database.",
+        "content": "Now available in preview, dashboard editors can change the size and layout of dashboard tiles with more granularity. To enable this feature, a Looker admin must turn on the [**Granular Dashboard Sizing** Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#granular-dashboard-sizing).",
         "summary": {
-          "title": "Self-service Explores now supports Google Sheets",
-          "summary": "Self-service Explores is now available in preview, allowing you to upload data directly from Google Sheets. To use this feature, your Looker admin needs to enable specific APIs in your Google Cloud project."
+          "title": "Dashboard Tiles Resizing",
+          "summary": "Dashboard editors can now adjust the size and layout of tiles with greater precision. This new preview feature requires a Looker admin to enable Granular Dashboard Sizing in the Labs section of the Admin panel."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Now available in preview, the [**Embed Conversational Analytics** Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#embed_conversational_analytics) is now available. When enabled, the Embed Conversational Analytics Labs feature lets you [embed Conversational Analytics conversations and agents in an iframe](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-embedding) like other Looker content types.",
+        "summary": {
+          "title": "Conversational Analytics Embedding Now in Preview",
+          "summary": "You can now embed Conversational Analytics conversations and agents within an iframe. This new preview feature allows for seamless integration of conversational data into your applications, similar to other Looker content."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "The following features will roll out over a four-day period starting February 17, 2026.",
+        "summary": {
+          "title": "New features coming soon",
+          "summary": "New features will be gradually released starting February 17, 2026. This rollout will take place over a four-day period."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Now available in preview, LookML developers can unlock their Git branch in cases where their Git branch is locked as a result of another Git operation in progress or a previous Git operation failing. When the Git repository is locked, Looker displays the **Unlock Branch** option in the [**Git Actions** panel](https://docs.cloud.google.com/looker/docs/git-command-reference#git_actions_panel) of the Looker IDE. In addition, if a LookML developer tries to commit a change on a locked Git branch, Looker displays a warning in the **Commit** dialog, along with an option to delete the Git lock. See the [Using version control and deploying](https://docs.cloud.google.com/looker/docs/version-control-and-deploying-changes#unlock-branch) documentation page for details.\n\n**Note:** This item was added on February 18, 2026.",
+        "summary": {
+          "title": "Unlock Git Branch in Looker",
+          "summary": "LookML developers can now unlock their Git branches in Looker, resolving issues caused by in-progress or failed Git operations. The 'Unlock Branch' option is available in the Git Actions panel, and warnings with an option to delete the lock appear when committing changes on a locked branch."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [content certification](https://docs.cloud.google.com/looker/docs/content-certification) feature, already available in preview, includes the following updates:\n\n* The [**Settings**](admin-panel-general-settings) page in the **General** section of the **Admin** panel now includes options that let admins enable or disable content certification, set a custom URL for the certification process, and control whether certification is revoked when content is edited.\n* LookML dashboards can now be certified.\n* Looks and dashboards that are based on uncertified self-service Explores now display the \"ungoverned\" badge.\n* Searching for content now includes the ability to sort content based on its certification status. (**Note**: This capability is not yet available. This item was modified on February 26, 2026.)",
+        "summary": {
+          "title": "Content Certification Updates",
+          "summary": "The content certification feature has been updated with new administrative controls, the ability to certify LookML dashboards, and enhanced search capabilities. Admins can now manage certification settings, and users will see an 'ungoverned' badge on content derived from uncertified Explores."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Now available in preview, the **In-database merge queries** feature is supported for [merging results](https://docs.cloud.google.com/looker/docs/merged-results) of two queries that are on the same BigQuery connection. Previously, the join for merging results was always performed in Looker memory, which limited each query to 5,000 rows that could be calculated in the join. If your Looker admin has enabled the [**In-database merge queries** Looker Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#in-database-merge-queries), the join between two queries that are on the same BigQuery connection is performed in the BigQuery database itself. Performing the join in the database is more performant and allows for unlimited rows that can be joined.",
+        "summary": {
+          "title": "In-database merge queries now in preview",
+          "summary": "The new In-database merge queries feature, now in preview, allows for more performant merging of query results directly within BigQuery. This eliminates previous row limitations and improves the efficiency of data joins."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Now available in preview, dashboard editors can [set default options for how the download of a dashboard tile includes query results](https://docs.cloud.google.com/looker/docs/editing-user-defined-dashboards#download-limit). They can set the download to include by default all query results or the current result table that is displayed in the visualization, or set a custom number of rows and columns. To enable this feature, a Looker admin must turn on the [**Tile Download Default Options** Labs feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#dashboard-tile-download-limits).",
+        "summary": {
+          "title": "Set default dashboard tile download options",
+          "summary": "Dashboard editors can now set default options for downloading query results from dashboard tiles. This feature, available in preview, allows setting defaults for all results, the current table, or a custom number of rows and columns. Looker admins need to enable the 'Tile Download Default Options' Labs feature."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Now available in preview, the **Self-service Explores** feature supports updating the data for a self-service Explore. The owner of a self-service Explore can update it with data from the latest version of the file that was used to create the self-service Explore. See the [Creating self-service Explores](https://docs.cloud.google.com/looker/docs/exploring-self-service#update-data) documentation page for more information.",
+        "summary": {
+          "title": "Update data for self-service Explores",
+          "summary": "Self-service Explores now support updating data with the latest file version. This feature, currently in preview, allows owners to refresh their Explores easily. More details can be found in the documentation on creating self-service Explores."
         }
       },
       {

@@ -3,37 +3,37 @@
   "entries": {
     "2026-03-05": [
       {
-        "kind": "Change",
-        "content": "Google Distributed Cloud (software only) for VMware V2 (Advanced Clusters) versions 1.31\nand earlier were missing a configuration step in the node startup script that\ndefined the Docker default bridge IP range. As a result, Docker defaulted to\nusing the 172.17.0.0/16 (and in some cases 172.16.0.0/16) address range.\n\nIf this default range overlaps with customer network infrastructure,\nconnectivity failures during cluster creation or operation can occur.\n\nThis issue has been resolved. The Docker default bridge IP for cluster nodes in\nadvanced clusters is now explicitly set to 169.254.123.1/24.",
-        "summary": {
-          "title": "Node Startup Script Update for VMware Advanced Clusters",
-          "summary": "An issue with node startup scripts in VMware Advanced Clusters has been resolved. The Docker default bridge IP range was not explicitly defined, potentially causing network conflicts. This has been corrected by setting the Docker default bridge IP to 169.254.123.1/24 for cluster nodes."
-        }
-      },
-      {
         "kind": "Announcement",
         "content": "Google Distributed Cloud (software only) for VMware 1.32.900-gke.60 is now available\nfor download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).\nGoogle Distributed Cloud 1.32.900-gke.60 runs on Kubernetes v1.32.11-gke.200.\n\nIf you are using a third-party storage vendor, check the Google Distributed Cloud-ready\nstorage partners document to make sure the storage vendor has already passed the\nqualification for this release.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for use with GKE On-Prem API clients: the Google Cloud console, the\ngcloud CLI, and Terraform.",
         "summary": {
           "title": "New release for VMware environments",
           "summary": "Google Distributed Cloud for VMware 1.32.900-gke.60 is now available. This update runs on Kubernetes v1.32.11-gke.200. Ensure your third-party storage vendor is qualified for this release if applicable."
         }
+      },
+      {
+        "kind": "Change",
+        "content": "Google Distributed Cloud (software only) for VMware V2 (Advanced Clusters) versions 1.31\nand earlier were missing a configuration step in the node startup script that\ndefined the Docker default bridge IP range. As a result, Docker defaulted to\nusing the 172.17.0.0/16 (and in some cases 172.16.0.0/16) address range.\n\nIf this default range overlaps with customer network infrastructure,\nconnectivity failures during cluster creation or operation can occur.\n\nThis issue has been resolved. The Docker default bridge IP for cluster nodes in\nadvanced clusters is now explicitly set to 169.254.123.1/24.",
+        "summary": {
+          "title": "Node Startup Script Update for VMware Advanced Clusters",
+          "summary": "An issue with node startup scripts in VMware Advanced Clusters has been resolved. The Docker default bridge IP range was not explicitly defined, potentially causing network conflicts. This has been corrected by setting the Docker default bridge IP to 169.254.123.1/24 for cluster nodes."
+        }
       }
     ],
     "2026-03-03": [
-      {
-        "kind": "Announcement",
-        "content": "Google Distributed Cloud (software only) for VMware 1.33.500-gke.63 is now available\nfor download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).\nGoogle Distributed Cloud 1.33.500-gke.63 runs on Kubernetes v1.33.5-gke.2200.\n\nIf you are using a third-party storage vendor, check the Google Distributed Cloud-ready\nstorage partners document to make sure the storage vendor has already passed the\nqualification for this release.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for use with GKE On-Prem API clients: the Google Cloud console, the\ngcloud CLI, and Terraform.",
-        "summary": {
-          "title": "New version of Google Distributed Cloud for VMware available",
-          "summary": "The latest version of Google Distributed Cloud for VMware (1.33.500-gke.63) is now ready for download. This release runs on Kubernetes v1.33.5-gke.2200 and may require storage vendor qualification. Please note that full API client availability may take 7-14 days post-release."
-        }
-      },
       {
         "kind": "Announcement",
         "content": "Google Distributed Cloud (software only) for VMware V2 (Advanced Clusters) versions 1.31\nand earlier were missing a configuration step in the node startup script that\ndefined the Docker default bridge IP range. As a result, Docker defaulted to\nusing the 172.17.0.0/16 (and in some cases 172.16.0.0/16) address range.\n\nIf this default range overlaps with customer network infrastructure,\nconnectivity failures during cluster creation or operation can occur.\n\nThis issue has been resolved. The Docker default bridge IP for cluster nodes in\nadvanced clusters is now explicitly set to 169.254.123.1/24.",
         "summary": {
           "title": "Docker IP Range Issue Resolved",
           "summary": "An issue where Docker's default IP range could conflict with customer networks in Google Distributed Cloud for VMware has been fixed. The Docker default bridge IP for advanced cluster nodes is now explicitly set to 169.254.123.1/24, preventing potential connectivity failures during cluster operations."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "Google Distributed Cloud (software only) for VMware 1.33.500-gke.63 is now available\nfor download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).\nGoogle Distributed Cloud 1.33.500-gke.63 runs on Kubernetes v1.33.5-gke.2200.\n\nIf you are using a third-party storage vendor, check the Google Distributed Cloud-ready\nstorage partners document to make sure the storage vendor has already passed the\nqualification for this release.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for use with GKE On-Prem API clients: the Google Cloud console, the\ngcloud CLI, and Terraform.",
+        "summary": {
+          "title": "New version of Google Distributed Cloud for VMware available",
+          "summary": "The latest version of Google Distributed Cloud for VMware (1.33.500-gke.63) is now ready for download. This release runs on Kubernetes v1.33.5-gke.2200 and may require storage vendor qualification. Please note that full API client availability may take 7-14 days post-release."
         }
       }
     ],
@@ -49,19 +49,19 @@
     ],
     "2026-02-13": [
       {
-        "kind": "Feature",
-        "content": "The following feature was added in 1.34.100-gke.93:\n\nYou can deploy `vsphere-csi-controller` in the advanced cluster on the user\ncluster control plane nodes.",
-        "summary": {
-          "title": "Deploy vsphere-csi-controller on user cluster control plane nodes",
-          "summary": "You can now deploy the vsphere-csi-controller directly on the control plane nodes of your user cluster. This feature is available in version 1.34.100-gke.93 and simplifies the deployment of CSI drivers for vSphere environments."
-        }
-      },
-      {
         "kind": "Announcement",
         "content": "Google Distributed Cloud (software only) for VMware 1.34.100-gke.93 is now available\nfor download. To upgrade, see Upgrade a cluster. Google Distributed Cloud\n1.34.100-gke.93 runs on Kubernetes v1.34.1-gke.4700.\n\nIf you are using a third-party storage vendor, check the Google Distributed Cloud-ready\nstorage partners document to make sure the storage vendor has already passed the\nqualification for this release.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for use with GKE On-Prem API clients: the Google Cloud console, the\ngcloud CLI, and Terraform.",
         "summary": {
           "title": "New VMware Version Available",
           "summary": "Google Distributed Cloud for VMware 1.34.100-gke.93 is now available. Check storage partner qualifications and note the rollout period for API clients."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The following feature was added in 1.34.100-gke.93:\n\nYou can deploy `vsphere-csi-controller` in the advanced cluster on the user\ncluster control plane nodes.",
+        "summary": {
+          "title": "Deploy vsphere-csi-controller on user cluster control plane nodes",
+          "summary": "You can now deploy the vsphere-csi-controller directly on the control plane nodes of your user cluster. This feature is available in version 1.34.100-gke.93 and simplifies the deployment of CSI drivers for vSphere environments."
         }
       }
     ],

@@ -2,6 +2,10 @@
 
 ## 2026-02-27
 
+### Release 6.3.4
+
+
+
 ### Fixed
 
 * **Airflow v3 support**:
@@ -21,10 +25,6 @@
   + Migrated Cloud SDK to `gcloud storage` CLI.
   + Fixed for line breaks in DAG packages import.
   + Improved error handling for target bucket access verification.
-
-### Release 6.3.4
-
-
 
 ---
 ## 2025-12-17

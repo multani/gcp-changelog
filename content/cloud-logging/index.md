@@ -1,5 +1,15 @@
 # Cloud Logging
 
+## 2026-03-12
+
+### Issue
+
+The automatic backfill operation performed on a log bucket that has been
+upgraded to use Log Analytics has been temporarily paused. To manually
+initiate the backfill operation, contact
+[Cloud Customer Care](https://docs.cloud.google.com/stackdriver/docs/getting-support).
+
+---
 ## 2026-02-12
 
 ### Feature

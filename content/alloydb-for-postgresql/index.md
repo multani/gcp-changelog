@@ -51,13 +51,13 @@ system insights for quick resolution. For more information, see
 
 AlloyDB [performance snapshot and reports](https://docs.cloud.google.com/alloydb/docs/optimize-database-performance-compare-snapshots) now support read pool instance nodes, providing deeper observability into read operations and replica-specific performance issues.
 
-### Announcement
+### Feature
 
-New best practices are available for securing generative AI agents using Model
-Context Protocol (MCP) with Google Cloud databases. This guide covers key
-security measures like least privilege, native database controls, and secure
-agent design to help you build safer AI applications. For more information, see
-[Best practices for securing agent interactions with Model Context Protocol](https://docs.cloud.google.com/alloydb/docs/ai/secure-agent-interactions-mcp).
+You can now use the [AlloyDB remote MCP server](https://docs.cloud.google.com/alloydb/docs/ai/use-alloydb-mcp).
+The AlloyDB remote MCP server lets you interact easily with AlloyDB clusters
+from LLMs, AI applications, and AI-enabled development platforms.
+
+This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
 
 ### Feature
 
@@ -68,13 +68,13 @@ processing. For more information, see
 
 This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
 
-### Feature
+### Announcement
 
-You can now use the [AlloyDB remote MCP server](https://docs.cloud.google.com/alloydb/docs/ai/use-alloydb-mcp).
-The AlloyDB remote MCP server lets you interact easily with AlloyDB clusters
-from LLMs, AI applications, and AI-enabled development platforms.
-
-This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+New best practices are available for securing generative AI agents using Model
+Context Protocol (MCP) with Google Cloud databases. This guide covers key
+security measures like least privilege, native database controls, and secure
+agent design to help you build safer AI applications. For more information, see
+[Best practices for securing agent interactions with Model Context Protocol](https://docs.cloud.google.com/alloydb/docs/ai/secure-agent-interactions-mcp).
 
 ---
 ## 2026-02-09

@@ -20,6 +20,12 @@ label detector](https://docs.cloud.google.com/sensitive-data-protection/docs/cre
 
 ### Feature
 
+Sensitive Data Protection can discover and profile Vertex AI tuning
+jobs. For more information, see [Sensitive data discovery for Vertex
+AI](https://docs.cloud.google.com/sensitive-data-protection/docs/discovery-for-vertex-ai).
+
+### Feature
+
 The following features are in [General
 Availability](https://cloud.google.com/products#product-launch-stages):
 
@@ -38,12 +44,6 @@ Availability](https://cloud.google.com/products#product-launch-stages):
 
 For information about configuring these rules, see [Modifying infoType detectors
 to refine scan results](https://docs.cloud.google.com/sensitive-data-protection/docs/creating-custom-infotypes-rules).
-
-### Feature
-
-Sensitive Data Protection can discover and profile Vertex AI tuning
-jobs. For more information, see [Sensitive data discovery for Vertex
-AI](https://docs.cloud.google.com/sensitive-data-protection/docs/discovery-for-vertex-ai).
 
 ### Feature
 

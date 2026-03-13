@@ -1,5 +1,147 @@
 # Container Optimized OS
 
+## 2026-03-10
+
+### Change
+
+
+
+### cos-113-18244-582-40
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.161](https://cos.googlesource.com/third_party/kernel/+/da5dc8347ba20698e2b8e3a27f2f4b5783e11c98 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.582.40/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-38201 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40251 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-13601, CVE-2025-14512, CVE-2025-14087 in
+dev-libs/glib.
+
+### Security
+
+Fixed CVE-2026-23176 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-37920 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38591 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71089 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2023-53421 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23216 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-apps/file to v5.47.
+
+### Security
+
+Fixed CVE-2025-22026 in the Linux kernel.
+
+### Change
+
+
+
+### cos-117-18613-534-35
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.123](https://cos.googlesource.com/third_party/kernel/+/810772cc40b9bc07245d9d7059e7f2d697995adf ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.534.35/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-38234 in the Linux kernel.
+
+### Security
+
+Upgraded dev-libs/glib to v2.86.3 and gdbus-codegen to v2.86.3. This fixes
+CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.
+
+### Security
+
+Fixed CVE-2026-23229 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-22026 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38201 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23216 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23230 in the Linux kernel.
+
+### Fixed
+
+Upgraded net-misc/socat to v1.8.1.1.
+
+### Security
+
+Fixed CVE-2026-23100 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-apps/file to v5.47.
+
+### Change
+
+
+
+### cos-121-18867-381-30
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.122](https://cos.googlesource.com/third_party/kernel/+/894f17dcc8a978b3bd6e85e3cfe41e97d55a87d8 ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.381.30/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-23100 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-apps/file to v5.47.
+
+### Security
+
+Fixed CVE-2025-38234 in the Linux kernel.
+
+### Fixed
+
+Upgraded net-misc/socat to v1.8.1.1.
+
+### Fixed
+
+Upgraded app-admin/sosreport to v4.11.0.
+
+---
 ## 2026-03-08
 
 ### Change
@@ -13,9 +155,9 @@
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.12.68](https://cos.googlesource.com/third_party/kernel/+/7eb31713b3fb44138b65643ab9d3037e22d29e47 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.220.43/lakitu/gpu_driver_versions.textproto) |
 
-### Change
+### Fixed
 
-Updated cos-gpu-installer to v2.6.0.
+Upgraded app-admin/node-problem-detector to v0.8.25.
 
 ### Change
 
@@ -23,9 +165,9 @@ Runtime sysctl changes:
 
 * Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 188034 250715 376068
 
-### Fixed
+### Change
 
-Upgraded app-admin/node-problem-detector to v0.8.25.
+Updated cos-gpu-installer to v2.6.0.
 
 ---
 ## 2026-03-04
@@ -43,79 +185,7 @@ Upgraded app-admin/node-problem-detector to v0.8.25.
 
 ### Security
 
-Fixed CVE-2025-61732 in dev-lang/go.
-
-### Security
-
-Fixed CVE-2026-23112 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23119 in the Linux kernel.
-
-### Fixed
-
-Upgraded sys-apps/less to v692.
-
-### Security
-
-Fixed CVE-2026-23168 in the Linux kernel.
-
-### Security
-
-Upgraded net-misc/curl to version 8.18.0. This fixes CVE-2025-10966, CVE-2025-13034, CVE-2025-14017, CVE-2025-14524, CVE-2025-14819, CVE-2025-15079, and CVE-2025-15224.
-
-### Security
-
-Fixed CVE-2025-6075 in python.
-
-### Security
-
-Fixed KCTF-e3f000f in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23156 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-60753 in libarchive.
-
-### Security
-
-Fixed CVE-2025-58187 in dev-lang/go.
-
-### Change
-
-Fixed an issue where most platforms would use only half of the available GVNIC TX queues.
-
-### Security
-
-Fixed CVE-2026-23124 in the Linux kernel.
-
-### Fixed
-
-Upgraded net-misc/socat to v1.8.1.1.
-
-### Security
-
-Fixed CVE-2026-23193 in the Linux kernel.
-
-### Fixed
-
-Upgraded net-dns/c-ares to v1.31.0.
-
-### Security
-
-Fixed CVE-2026-23145 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23212 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23205 in the Linux kernel.
+Fixed CVE-2026-23198 in the Linux kernel.
 
 ### Security
 
@@ -123,7 +193,119 @@ Fixed CVE-2026-23086 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23198 in the Linux kernel.
+Fixed CVE-2026-23205 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23212 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23145 in the Linux kernel.
+
+### Fixed
+
+Upgraded net-dns/c-ares to v1.31.0.
+
+### Security
+
+Fixed CVE-2026-23193 in the Linux kernel.
+
+### Fixed
+
+Upgraded net-misc/socat to v1.8.1.1.
+
+### Security
+
+Fixed CVE-2026-23124 in the Linux kernel.
+
+### Change
+
+Fixed an issue where most platforms would use only half of the available GVNIC TX queues.
+
+### Security
+
+Fixed CVE-2025-58187 in dev-lang/go.
+
+### Security
+
+Fixed CVE-2025-60753 in libarchive.
+
+### Security
+
+Fixed CVE-2026-23156 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-e3f000f in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-6075 in python.
+
+### Security
+
+Upgraded net-misc/curl to version 8.18.0. This fixes CVE-2025-10966, CVE-2025-13034, CVE-2025-14017, CVE-2025-14524, CVE-2025-14819, CVE-2025-15079, and CVE-2025-15224.
+
+### Security
+
+Fixed CVE-2026-23168 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-apps/less to v692.
+
+### Security
+
+Fixed CVE-2026-23119 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23112 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-61732 in dev-lang/go.
+
+### Change
+
+
+
+### cos-125-19216-220-34
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.68](https://cos.googlesource.com/third_party/kernel/+/8ae4fb3efb4e9b9c6276d3c9247c7a123a73fca6 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.220.34/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-23204 in the Linux kernel.
+
+### Security
+
+Upgraded dev-libs/glib to v2.86.3. This fixes
+CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.
+
+### Security
+
+Fixed CVE-2026-23229 in the Linux kernel.
+
+### Fixed
+
+Upgraded the galog version to v0.0.0-20250924170816-9dbf105986f4 in google-guest-agent to fix an issue with high CPU consumption.
+
+### Security
+
+Fixed CVE-2026-23230 in the Linux kernel.
+
+### Change
+
+Added support for the Lustre 2.14.0\_p246 drivers.
+
+### Fixed
+
+Upgraded dev-util/gdbus-codegen to v2.86.3.
 
 ### Change
 
@@ -138,23 +320,8 @@ Fixed CVE-2026-23198 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2025-58187 in dev-lang/go.
-
-### Fixed
-
-Upgraded dev-util/gdbus-codegen to v2.86.3.
-
-### Security
-
-Fixed CVE-2026-23230 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23216 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23229 in the Linux kernel.
+Upgraded dev-libs/glib to v2.86.3. This fixes
+CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.
 
 ### Change
 
@@ -162,27 +329,11 @@ Fixed an issue where most platforms would use only half of the available GVNIC T
 
 ### Security
 
-Upgraded dev-libs/glib to v2.86.3. This fixes
-CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.
+Fixed CVE-2026-23229 in the Linux kernel.
 
-### Change
+### Security
 
-
-
-### cos-125-19216-220-34
-
-|  |  |  |  |
-| --- | --- | --- | --- |
-| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
-| [COS-6.12.68](https://cos.googlesource.com/third_party/kernel/+/8ae4fb3efb4e9b9c6276d3c9247c7a123a73fca6 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.220.34/lakitu/gpu_driver_versions.textproto) |
-
-### Fixed
-
-Upgraded dev-util/gdbus-codegen to v2.86.3.
-
-### Change
-
-Added support for the Lustre 2.14.0\_p246 drivers.
+Fixed CVE-2026-23216 in the Linux kernel.
 
 ### Security
 
@@ -190,20 +341,11 @@ Fixed CVE-2026-23230 in the Linux kernel.
 
 ### Fixed
 
-Upgraded the galog version to v0.0.0-20250924170816-9dbf105986f4 in google-guest-agent to fix an issue with high CPU consumption.
+Upgraded dev-util/gdbus-codegen to v2.86.3.
 
 ### Security
 
-Fixed CVE-2026-23229 in the Linux kernel.
-
-### Security
-
-Upgraded dev-libs/glib to v2.86.3. This fixes
-CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.
-
-### Security
-
-Fixed CVE-2026-23204 in the Linux kernel.
+Fixed CVE-2025-58187 in dev-lang/go.
 
 ### Change
 
@@ -218,23 +360,23 @@ Fixed CVE-2026-23204 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2025-58187 in dev-lang/go.
-
-### Security
-
-Fixed CVE-2025-61732 in dev-lang/go.
-
-### Change
-
-Fixed an issue where most platforms would use only half of the available GVNIC TX queues.
+Fixed KCTF-e3f000f in the Linux kernel.
 
 ### Change
 
 Added support for the Lustre 2.14.0\_p246 drivers.
 
+### Change
+
+Fixed an issue where most platforms would use only half of the available GVNIC TX queues.
+
 ### Security
 
-Fixed KCTF-e3f000f in the Linux kernel.
+Fixed CVE-2025-61732 in dev-lang/go.
+
+### Security
+
+Fixed CVE-2025-58187 in dev-lang/go.
 
 ---
 ## 2026-02-27
@@ -252,39 +394,11 @@ Fixed KCTF-e3f000f in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23212 in the Linux kernel.
+Fixed CVE-2026-23193 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23112 in the Linux kernel.
-
-### Security
-
-Fixed KCTF-e3f000f in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-60753 in libarchive.
-
-### Security
-
-Fixed CVE-2026-23198 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23179 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23176 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23205 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23204 in the Linux kernel.
+Fixed CVE-2026-23200 in the Linux kernel.
 
 ### Change
 
@@ -292,25 +406,42 @@ Added support for the Lustre 2.14.0\_p246 drivers.
 
 ### Security
 
-Fixed CVE-2026-23200 in the Linux kernel.
+Fixed CVE-2026-23204 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23193 in the Linux kernel.
+Fixed CVE-2026-23205 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23176 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23179 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23198 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-60753 in libarchive.
+
+### Security
+
+Fixed KCTF-e3f000f in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23112 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23212 in the Linux kernel.
 
 ---
 ## 2026-02-24
-
-### Change
-
-
-
-### cos-dev-133-19566-0-0
-
-|  |  |  |  |
-| --- | --- | --- | --- |
-| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
-| [COS-6.12.74](https://cos.googlesource.com/third_party/kernel/+/ec8a48be0774f726990a93e2afead08ee16b3f2c ) | v27.5.1 | v2.2.1 | [See List](https://storage.googleapis.com/cos-tools/19566.0.0/lakitu/gpu_driver_versions.textproto) |
 
 ### Change
 
@@ -323,229 +454,20 @@ Fixed CVE-2026-23193 in the Linux kernel.
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.12.67](https://cos.googlesource.com/third_party/kernel/+/db611b456979827c0f71190bd2fd9868cec57510 ) | v27.5.1 | v2.2.0 | [See List](https://storage.googleapis.com/cos-tools/19506.0.32/lakitu/gpu_driver_versions.textproto) |
 
-### Fixed
-
-Enabled buffer overflow detection for kernel str/mem functions.
-
-### Fixed
-
-Upgraded net-misc/rsync to v3.4.1-r2.
-
-### Fixed
-
-Upgraded net-misc/socat to v1.8.1.0-r1.
-
-### Fixed
-
-Added support for NVIDIA driver v580.126.09-grid for NVIDIA\_RTX\_PRO\_6000 GPU type.
-
-### Security
-
-Fixed CVE-2025-40147 in the Linux kernel.
-
 ### Change
 
-Updated the Linux kernel to v6.12.74.
 
-### Change
 
-Made it so that /run is mounted as noexec.
+### cos-dev-133-19566-0-0
 
-### Security
-
-Fixed CVE-2025-15281 and CVE-2026-0861 in sys-libs/glibc.
-
-### Security
-
-Updated dev-libs/libxml2 to version 2.14.6. This resolves CVE-2025-6021.
-
-### Fixed
-
-Upgraded sys-process/procps to v4.0.6.
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.74](https://cos.googlesource.com/third_party/kernel/+/ec8a48be0774f726990a93e2afead08ee16b3f2c ) | v27.5.1 | v2.2.1 | [See List](https://storage.googleapis.com/cos-tools/19566.0.0/lakitu/gpu_driver_versions.textproto) |
 
 ### Security
 
-Fixed KCTF-e3f000f in the Linux kernel.
-
-### Security
-
-Upgraded net-misc/curl to version 8.18.0. This fixes CVE-2025-13034, CVE-2025-14017, CVE-2025-14524, CVE-2025-14819, CVE-2025-15079, and CVE-2025-15224.
-
-### Feature
-
-Added support for 590.44.01 and 590.48.01 NVIDIA driver for NVIDIA\_RTX\_PRO\_6000
-
-### Security
-
-Fixed KCTF-f8db647 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-0915 in sys-apps/glibc.
-
-### Fixed
-
-Upgraded net-libs/libnetfilter\_conntrack to v1.1.1.
-
-### Security
-
-Updated dev-libs/openssl to v3.5.5. This resolves CVE-2025-15467.
-
-### Fixed
-
-Upgraded app-admin/oslogin to v20260129.00.
-
-### Fixed
-
-Upgraded app-admin/google-guest-agent to v20260121.00.
-
-### Fixed
-
-Upgraded sys-apps/less to v692.
-
-### Fixed
-
-Upgraded sys-apps/gentoo-functions to v1.7.6.
-
-### Change
-
-Upgraded containerd to v2.2.1.
-
-### Fixed
-
-Upgraded app-admin/oslogin to v20260128.00.
-
-### Fixed
-
-Upgraded dev-db/sqlite to v3.51.2.
-
-### Feature
-
-Added support for NVIDIA driver v535.288.01, v570.211.01 and v580.126.09.
-
-### Security
-
-Fixed CVE-2026-23168 in the Linux kernel.
-
-### Fixed
-
-Added support for NVIDIA driver v580.126.09-grid for NVIDIA\_RTX\_PRO\_6000 GPU type.
-
-### Security
-
-Fixed CVE-2026-23219 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-68725 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23205 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-68365 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23156 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23199 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23214 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23173 in the Linux kernel.
-
-### Change
-
-Upgraded net-misc/curl to version 8.18.0. This fixes CVE-2025-13034, CVE-2025-14017, CVE-2025-14524, CVE-2025-14819, CVE-2025-15079, and CVE-2025-15224.
-
-### Security
-
-Fixed CVE-2026-23200 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23119 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23204 in the Linux kernel.
-
-### Security
-
-Fixed KCTF-e3f000f in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23215 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23179 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23112 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23177 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-15281 and CVE-2026-0861 in sys-libs/glibc.
-
-### Security
-
-Fixed CVE-2026-23159 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-71225 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23212 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23148 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23198 in the Linux kernel.
-
-### Feature
-
-Added support for 590.44.01 and 590.48.01 NVIDIA driver for NVIDIA\_RTX\_PRO\_6000
-
-### Security
-
-Fixed CVE-2026-23216 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23161 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-68358 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23113 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23193 in the Linux kernel.
+Fixed CVE-2026-23154 in the Linux kernel.
 
 ### Security
 
@@ -553,7 +475,227 @@ Fixed CVE-2026-23124 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23154 in the Linux kernel.
+Fixed CVE-2026-23193 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23113 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68358 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23161 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23216 in the Linux kernel.
+
+### Feature
+
+Added support for 590.44.01 and 590.48.01 NVIDIA driver for NVIDIA\_RTX\_PRO\_6000
+
+### Security
+
+Fixed CVE-2026-23198 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23148 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23212 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71225 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23159 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-15281 and CVE-2026-0861 in sys-libs/glibc.
+
+### Security
+
+Fixed CVE-2026-23177 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23112 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23179 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23215 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-e3f000f in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23204 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23119 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23200 in the Linux kernel.
+
+### Change
+
+Upgraded net-misc/curl to version 8.18.0. This fixes CVE-2025-13034, CVE-2025-14017, CVE-2025-14524, CVE-2025-14819, CVE-2025-15079, and CVE-2025-15224.
+
+### Security
+
+Fixed CVE-2026-23173 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23214 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23199 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23156 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68365 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23205 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68725 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23219 in the Linux kernel.
+
+### Fixed
+
+Added support for NVIDIA driver v580.126.09-grid for NVIDIA\_RTX\_PRO\_6000 GPU type.
+
+### Security
+
+Fixed CVE-2026-23168 in the Linux kernel.
+
+### Feature
+
+Added support for NVIDIA driver v535.288.01, v570.211.01 and v580.126.09.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.51.2.
+
+### Fixed
+
+Upgraded app-admin/oslogin to v20260128.00.
+
+### Change
+
+Upgraded containerd to v2.2.1.
+
+### Fixed
+
+Upgraded sys-apps/gentoo-functions to v1.7.6.
+
+### Fixed
+
+Upgraded sys-apps/less to v692.
+
+### Fixed
+
+Upgraded app-admin/google-guest-agent to v20260121.00.
+
+### Fixed
+
+Upgraded app-admin/oslogin to v20260129.00.
+
+### Security
+
+Updated dev-libs/openssl to v3.5.5. This resolves CVE-2025-15467.
+
+### Fixed
+
+Upgraded net-libs/libnetfilter\_conntrack to v1.1.1.
+
+### Security
+
+Fixed CVE-2026-0915 in sys-apps/glibc.
+
+### Security
+
+Fixed KCTF-f8db647 in the Linux kernel.
+
+### Feature
+
+Added support for 590.44.01 and 590.48.01 NVIDIA driver for NVIDIA\_RTX\_PRO\_6000
+
+### Security
+
+Upgraded net-misc/curl to version 8.18.0. This fixes CVE-2025-13034, CVE-2025-14017, CVE-2025-14524, CVE-2025-14819, CVE-2025-15079, and CVE-2025-15224.
+
+### Security
+
+Fixed KCTF-e3f000f in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-process/procps to v4.0.6.
+
+### Security
+
+Updated dev-libs/libxml2 to version 2.14.6. This resolves CVE-2025-6021.
+
+### Security
+
+Fixed CVE-2025-15281 and CVE-2026-0861 in sys-libs/glibc.
+
+### Change
+
+Made it so that /run is mounted as noexec.
+
+### Change
+
+Updated the Linux kernel to v6.12.74.
+
+### Security
+
+Fixed CVE-2025-40147 in the Linux kernel.
+
+### Fixed
+
+Added support for NVIDIA driver v580.126.09-grid for NVIDIA\_RTX\_PRO\_6000 GPU type.
+
+### Fixed
+
+Upgraded net-misc/socat to v1.8.1.0-r1.
+
+### Fixed
+
+Upgraded net-misc/rsync to v3.4.1-r2.
+
+### Fixed
+
+Enabled buffer overflow detection for kernel str/mem functions.
 
 ### Change
 
@@ -568,127 +710,7 @@ Fixed CVE-2026-23154 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23168 in the Linux kernel.
-
-### Security
-
-Fixed KCTF-e3f000f in the Linux kernel.
-
-### Fixed
-
-Added support for NVIDIA driver v580.126.09-grid for NVIDIA\_RTX\_PRO\_6000 GPU type.
-
-### Security
-
-Fixed CVE-2026-23179 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23205 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-60753 in libarchive.
-
-### Fixed
-
-Upgraded app-admin/sosreport to v4.11.0.
-
-### Security
-
-Fixed CVE-2026-23156 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23216 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23173 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23112 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23200 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23198 in the Linux kernel.
-
-### Fixed
-
-Upgraded net-misc/rsync to v3.4.1-r2.
-
-### Change
-
-Fixed CVE-2026-23177 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23214 in the Linux kernel.
-
-### Fixed
-
-Upgraded net-misc/socat to v1.8.1.1.
-
-### Security
-
-Fixed CVE-2026-23193 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23219 in the Linux kernel.
-
-### Fixed
-
-Upgraded sys-apps/less to v692.
-
-### Security
-
-Fixed CVE-2025-47912, CVE-2025-58185, CVE-2025-58187, CVE-2025-58188, CVE-2025-58189, CVE-2025-61723, CVE-2025-61724, CVE-2025-61726, and CVE-2025-61728 in dev-lang/go.
-
-### Security
-
-Upgraded net-misc/curl to version 8.18.0. This fixes CVE-2025-10148, CVE-2025-10966, CVE-2025-13034, CVE-2025-14017, CVE-2025-14524, CVE-2025-14819, CVE-2025-15079, and CVE-2025-15224.
-
-### Security
-
-Fixed CVE-2025-15281 and CVE-2026-0861 in sys-libs/glibc.
-
-### Security
-
-Fixed CVE-2025-71225 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23199 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23159 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23148 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23212 in the Linux kernel.
-
-### Feature
-
-Added support for 590.44.01 and 590.48.01 NVIDIA driver for NVIDIA\_RTX\_PRO\_6000
-
-### Security
-
-Fixed CVE-2026-23161 in the Linux kernel.
-
-### Security
-
-Fixed KCTF-f41c5d1 in the Linux kernel.
+Fixed CVE-2026-23215 in the Linux kernel.
 
 ### Security
 
@@ -696,7 +718,127 @@ Fixed CVE-2026-23154 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23215 in the Linux kernel.
+Fixed KCTF-f41c5d1 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23161 in the Linux kernel.
+
+### Feature
+
+Added support for 590.44.01 and 590.48.01 NVIDIA driver for NVIDIA\_RTX\_PRO\_6000
+
+### Security
+
+Fixed CVE-2026-23212 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23148 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23159 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23199 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71225 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-15281 and CVE-2026-0861 in sys-libs/glibc.
+
+### Security
+
+Upgraded net-misc/curl to version 8.18.0. This fixes CVE-2025-10148, CVE-2025-10966, CVE-2025-13034, CVE-2025-14017, CVE-2025-14524, CVE-2025-14819, CVE-2025-15079, and CVE-2025-15224.
+
+### Security
+
+Fixed CVE-2025-47912, CVE-2025-58185, CVE-2025-58187, CVE-2025-58188, CVE-2025-58189, CVE-2025-61723, CVE-2025-61724, CVE-2025-61726, and CVE-2025-61728 in dev-lang/go.
+
+### Fixed
+
+Upgraded sys-apps/less to v692.
+
+### Security
+
+Fixed CVE-2026-23219 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23193 in the Linux kernel.
+
+### Fixed
+
+Upgraded net-misc/socat to v1.8.1.1.
+
+### Security
+
+Fixed CVE-2026-23214 in the Linux kernel.
+
+### Change
+
+Fixed CVE-2026-23177 in the Linux kernel.
+
+### Fixed
+
+Upgraded net-misc/rsync to v3.4.1-r2.
+
+### Security
+
+Fixed CVE-2026-23198 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23200 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23112 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23173 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23216 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23156 in the Linux kernel.
+
+### Fixed
+
+Upgraded app-admin/sosreport to v4.11.0.
+
+### Security
+
+Fixed CVE-2025-60753 in libarchive.
+
+### Security
+
+Fixed CVE-2026-23205 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23179 in the Linux kernel.
+
+### Fixed
+
+Added support for NVIDIA driver v580.126.09-grid for NVIDIA\_RTX\_PRO\_6000 GPU type.
+
+### Security
+
+Fixed KCTF-e3f000f in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23168 in the Linux kernel.
 
 ### Change
 
@@ -711,95 +853,7 @@ Fixed CVE-2026-23215 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23110 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23069 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23105 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23003 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23095 in the Linux kernel.
-
-### Security
-
-Fixed KCTF-f41c5d1 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23038 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23103 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23085 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-22999 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23097 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23011 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-68725 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23005 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-22998 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23099 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23001 in the Linux kernel.
-
-### Security
-
-Fixed KCTF-f8db647 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23107 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23102 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23010 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-38232 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2023-54285 in the Linux kernel.
+Fixed CVE-2026-23025 in the Linux kernel.
 
 ### Security
 
@@ -807,7 +861,95 @@ Fixed CVE-2025-15281 and CVE-2026-0861 in sys-libs/glibc.
 
 ### Security
 
-Fixed CVE-2026-23025 in the Linux kernel.
+Fixed CVE-2023-54285 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38232 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23010 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23102 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23107 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-f8db647 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23001 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23099 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22998 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23005 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68725 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23011 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23097 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22999 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23085 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23103 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23038 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-f41c5d1 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23095 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23003 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23105 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23069 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23110 in the Linux kernel.
 
 ### Change
 
@@ -822,59 +964,7 @@ Fixed CVE-2026-23025 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23112 in the Linux kernel.
-
-### Fixed
-
-Upgraded sys-apps/less to v692.
-
-### Security
-
-Fixed CVE-2026-23198 in the Linux kernel.
-
-### Security
-
-Fixed KCTF-f41c5d1 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-60753 in libarchive.
-
-### Security
-
-Fixed CVE-2026-23176 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-6075 in python.
-
-### Security
-
-Fixed CVE-2026-23200 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23179 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23193 in the Linux kernel.
-
-### Fixed
-
-Upgraded net-misc/socat to v1.8.1.0-r1.
-
-### Security
-
-Fixed CVE-2025-15281 and CVE-2026-0861 in sys-libs/glibc.
-
-### Security
-
-Fixed CVE-2026-23205 in the Linux kernel.
-
-### Security
-
-Upgraded net-misc/curl to version 8.18.0. This fixes CVE-2025-10148, CVE-2025-10966, CVE-2025-13034, CVE-2025-14017, CVE-2025-14524, CVE-2025-14819, CVE-2025-15079, and CVE-2025-15224.
+Fixed CVE-2026-23204 in the Linux kernel.
 
 ### Security
 
@@ -882,7 +972,59 @@ Fixed CVE-2026-23209 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23204 in the Linux kernel.
+Upgraded net-misc/curl to version 8.18.0. This fixes CVE-2025-10148, CVE-2025-10966, CVE-2025-13034, CVE-2025-14017, CVE-2025-14524, CVE-2025-14819, CVE-2025-15079, and CVE-2025-15224.
+
+### Security
+
+Fixed CVE-2026-23205 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-15281 and CVE-2026-0861 in sys-libs/glibc.
+
+### Fixed
+
+Upgraded net-misc/socat to v1.8.1.0-r1.
+
+### Security
+
+Fixed CVE-2026-23193 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23179 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23200 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-6075 in python.
+
+### Security
+
+Fixed CVE-2026-23176 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-60753 in libarchive.
+
+### Security
+
+Fixed KCTF-f41c5d1 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23198 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-apps/less to v692.
+
+### Security
+
+Fixed CVE-2026-23112 in the Linux kernel.
 
 ### Change
 
@@ -895,17 +1037,13 @@ Fixed CVE-2026-23204 in the Linux kernel.
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.6.122](https://cos.googlesource.com/third_party/kernel/+/648b5918d64d7a9788baa271ec7cb32d9b73c857 ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.381.1/lakitu/gpu_driver_versions.textproto) |
 
-### Fixed
+### Security
 
-Upgraded sys-apps/less to v692.
+Fixed CVE-2026-23159 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23156 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23168 in the Linux kernel.
+Upgraded net-misc/curl to version 8.18.0. This fixes CVE-2025-10148, CVE-2025-10966, CVE-2025-13034, CVE-2025-14017, CVE-2025-14524, CVE-2025-14819, CVE-2025-15079, and CVE-2025-15224.
 
 ### Fixed
 
@@ -913,11 +1051,15 @@ Upgraded net-misc/socat to v1.8.1.0-r1.
 
 ### Security
 
-Upgraded net-misc/curl to version 8.18.0. This fixes CVE-2025-10148, CVE-2025-10966, CVE-2025-13034, CVE-2025-14017, CVE-2025-14524, CVE-2025-14819, CVE-2025-15079, and CVE-2025-15224.
+Fixed CVE-2026-23168 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23159 in the Linux kernel.
+Fixed CVE-2026-23156 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-apps/less to v692.
 
 ---
 ## 2026-02-20
@@ -935,421 +1077,15 @@ Fixed CVE-2026-23159 in the Linux kernel.
 
 ### Fixed
 
-Upgraded app-emulation/cloud-init to v25.1.4.
-
-### Fixed
-
-Upgraded app-admin/fluent-bit to v4.2.2.
-
-### Feature
-
-Added support for NVIDIA driver v580.105.08 and set it as the default version for all GPU types.
-
-### Fixed
-
-Upgraded app-containers/cni-plugins to v1.9.0.
-
-### Fixed
-
-Updated toolbox container image tag to v20251002.
-
-### Fixed
-
-Made CX-8 NIC naming order deterministic.
+Updated kubelet and kubectl to v1.35.0.
 
 ### Security
 
-Fixed CVE-2025-66471 and CVE-2025-66418 in dev-python/urllib3.
-
-### Security
-
-Fixed CVE-2025-61729 in dev-lang/go.
+Fixed CVE-2025-47914 and CVE-2025-58181 in dev-go/crypto.
 
 ### Fixed
 
-Upgraded chromeos-base/shill-client to v0.0.1-r4879.
-
-### Security
-
-Fixed KCTF-b441cf3 in the Linux kernel.
-
-### Fixed
-
-Updated app-containers/cri-tools to 1.32.0.
-
-### Fixed
-
-Upgraded sys-auth/pambase to v20251104.
-
-### Change
-
-Enabled Coherent Driver Memory Management by default when installing GPU drivers on GB2000.
-
-### Security
-
-Fixed KCTF-f8db647 in the Linux kernel.
-
-### Fixed
-
-Upgraded net-dns/c-ares to v1.34.6.
-
-### Fixed
-
-Updated golang.org/x/crypto, golang.org/x/net, and
-golang.org/x/oauth2 in kubelet and kubectl.
-
-### Fixed
-
-Upgraded dev-libs/libxslt to version 1.1.43-r1.
-
-### Change
-
-Added support for A4X-Max NICs.
-
-### Security
-
-Fixed CVE-2025-8058 in glibc.
-
-### Fixed
-
-Updated the dump capture kernel to v6.12.52.
-
-### Security
-
-Fixed KCTF-6bb73db in the Linux Kernel.
-
-### Feature
-
-Added ConnectX-8 RDMA support.
-
-### Change
-
-Updated app-containers/containerd to v2.2.0.
-
-### Fixed
-
-Upgraded app-shells/bash to v5.3.
-
-### Fixed
-
-Updated app-admin/google-osconfig-agent to v20250522.00.
-
-### Feature
-
-Added iRDMA support in the Linux kernel.
-
-### Fixed
-
-Upgraded sys-libs/libcap to v2.77.
-
-### Fixed
-
-Updated app-containers/cni-plugins to 1.7.1.
-
-### Fixed
-
-Upgraded sys-apps/kmod to v34.2.
-
-### Feature
-
-Added support for SCSI logging.
-
-### Fixed
-
-Upgraded google-guest-configs to v20260121.00.
-
-### Feature
-
-Backported support for AMD SEV-SNP SVSM vTPM driver and
-configfs-tsm addition for extended attestation protocol.
-
-### Fixed
-
-Upgraded sys-apps/gentoo-functions to v1.7.4.
-
-### Feature
-
-Added support for NVIDIA MFT Tools on arm64.
-
-### Security
-
-Fixed KCTF-60e6489 in the Linux Kernel.
-
-### Fixed
-
-Upgraded dev-db/sqlite to v3.50.4.
-
-### Fixed
-
-Upgraded virtual/logger to v0-r2.
-
-### Change
-
-Updated app-containers/runc to v1.4.0.
-
-### Fixed
-
-Installed app-misc/c\_rehash.
-
-### Fixed
-
-Upgraded sys-apps/file to v5.46-r3.
-
-### Feature
-
-Added support for zswap in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-40256 in the Linux kernel.
-
-### Fixed
-
-Updated dev-python/requests to v2.32.4.
-
-### Feature
-
-Added support for NVIDIA GB300 devices.
-
-### Fixed
-
-Fixed a TCPX bug which would sometimes incorrectly report devices as being missing when route cache entries were missing or invalidated.
-
-### Feature
-
-Added support for the fwctl subsystem and the Mellanox fwctl driver for ARM64.
-
-### Fixed
-
-Upgraded app-benchmarks/microbenchmarks to v0.0.1-r21.
-
-### Security
-
-Upgraded dev-libs/glib to 2.82.5. This resolves
-CVE-2024-52533.
-
-### Fixed
-
-Upgraded app-admin/oslogin to v20260116.00.
-
-### Fixed
-
-Updated app-admin/node-problem-detector to 0.8.21.
-
-### Feature
-
-Added TDX RTMR support.
-
-### Security
-
-Fixed CVE-2025-12084 in dev-lang/python.
-
-### Change
-
-Upgraded dev-libs/json-c from 0.16-r1 to 0.18.0.
-
-### Change
-
-Updated the Linux kernel to v6.12.67.
-
-### Fixed
-
-Upgraded net-misc/curl from 8.12.1 to 8.17.0.
-
-### Fixed
-
-Upgraded sys-process/lsof to v4.99.5.
-
-### Fixed
-
-Fixed a kernel bug which caused boot to fail for n4 machine types.
-
-### Security
-
-Fixed KCTF-134121b in the Linux kernel.
-
-### Fixed
-
-Upgraded dev-libs/nss to 3.117 and dev-libs/nspr to 4.37.
-
-### Feature
-
-Enabled automatic loading of RDMA kernel modules when CX-8 devices are detected.
-
-### Fixed
-
-Upgraded app-admin/sosreport to v4.10.2.
-
-### Fixed
-
-Backported various TCPDirect networking fixes.
-
-### Fixed
-
-Upgraded sys-apps/pv to v1.9.34.
-
-### Feature
-
-Removed the futility program from the root file system.
-
-### Fixed
-
-Upgraded sys-apps/pv to v1.9.44.
-
-### Change
-
-Applied ethtool ring length changes to a4x's first Diorite interface.
-
-### Fixed
-
-Upgraded chromeos-base/power\_manager-client to v0.0.1-r2972.
-
-### Security
-
-Fixed CVE-2026-21441 in dev-python/urllib3.
-
-### Security
-
-Fixed KCTF-f41c5d1 in the Linux kernel.
-
-### Fixed
-
-Upgraded app-containers/docker-credential-gcr to v2.1.31
-
-### Security
-
-Updated dev-python/urllib3 to v2.5.0. This resolves
-CVE-2025-50181.
-
-### Fixed
-
-Upgraded sys-apps/less to v692.
-
-### Security
-
-Upgraded dev-vcs/git to version 2.49.1. This fixes CVE-2025-48385, CVE-2025-27613, CVE-2025-27614, CVE-2025-48384, CVE-2025-46835.
-
-### Fixed
-
-Upgraded sys-apps/makedumpfile to v1.7.8.
-
-### Security
-
-Fixed CVE-2025-11413 and CVE-2025-11414 in binutils-libs.
-
-### Security
-
-Updated dev-python/jinja to v3.1.6. This resolves
-CVE-2024-56326, CVE-2024-56201 and CVE-2025-27516.
-
-### Fixed
-
-Upgraded chromeos-base/chromeos-common-script to v0.0.1-r671.
-
-### Fixed
-
-Upgraded chromeos-base/debugd-client to v0.0.1-r2737.
-
-### Feature
-
-Removed the cloud-final.service dependency on multi-user.target which could delay cloud-init user-data scripts indefinitely when long-running startup scripts are used.
-
-### Fixed
-
-Fixed an issue where cpusets cgroups did not work with
-cgroup v1 enabled.
-
-### Fixed
-
-Upgraded sys-process/audit to 4.0.2-r1.
-
-### Security
-
-Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.
-
-### Feature
-
-Added guest support for paravirtualization of cpuids on ARM machines.
-
-### Change
-
-Upgraded dev-libs/libuv from 1.43.0 to 1.51.0-r1.
-
-### Fixed
-
-Added binary auth-provider-gcp.
-
-### Fixed
-
-Updated golang.org/x/oauth2, golang.org/x/net, golang.org/x/crypto, and github.com/golang-jwt/jwt/v5 in Docker.
-
-### Fixed
-
-Upgraded dev-lang/go to v1.23.12.
-
-### Fixed
-
-Upgraded chromeos-base/session\_manager-client to v0.0.1-r2833.
-
-### Feature
-
-Enabled the Btrfs kernel module.
-
-### Fixed
-
-Added support for the Lustre 2.14.0\_p216 drivers.
-
-### Fixed
-
-Upgraded dev-db/sqlite to v3.50.3.
-
-### Fixed
-
-Upgraded app-crypt/mit-krb5 from version 1.20.1 to version 1.22.1.
-
-### Fixed
-
-Upgraded sys-apps/pv to v1.9.42.
-
-### Fixed
-
-Partially fixed an issue where excessive contention among writeback kworkers when switching a large number of inodes between cgroups could lead to system unresponsiveness.
-
-### Security
-
-Fixed KCTF-50da4b9 in the Linux kernel.
-
-### Fixed
-
-Upgraded net-nds/rpcbind to v1.2.8.
-
-### Fixed
-
-Add support for NVIDIA MFT Tools v4.33.0.
-
-### Change
-
-Changed the mount options for /mnt/disks to noexec.
-
-### Fixed
-
-Upgraded app-admin/node-problem-detector to v0.8.25.
-
-### Fixed
-
-Updated sys-libs/readline to v8.3.
-
-### Fixed
-
-Upgraded net-misc/rsync to v3.4.1-r2.
-
-### Fixed
-
-Upgraded sys-apps/pv to v1.10.2.
-
-### Feature
-
-Enabled dynamic vlan configuration for non-primary NICs.
+Upgraded dev-db/sqlite to v3.51.1.
 
 ### Fixed
 
@@ -1357,284 +1093,31 @@ Reverted a containerd change which reduced the default soft file descriptor limi
 
 ### Fixed
 
-Upgraded sys-apps/nvme-cli from version 1.6-r1 to version 2.16, added package sys-libs/libnvme.
+Upgraded sys-process/procps to v4.0.5-r3.
 
 ### Fixed
 
-Fixed a bug where setting MTU above 9000 on ARM systems with a 64k page size would cause IDPF networking to fail.
-
-### Change
-
-Added kernel support for bare-metal on the NVIDIA Grace platform.
-
-### Fixed
-
-Upgraded net-misc/socat to v1.8.1.0-r1.
-
-### Fixed
-
-Upgraded sys-apps/dmidecode to v3.7.
-
-### Fixed
-
-Added support for NVIDIA driver v535.274.02 and v570.195.03.
-
-### Security
-
-Fixed CVE-2025-6052 in dev-libs/glib.
-
-### Security
-
-Fixed CVE-2025-13836 in dev-lang/python.
-
-### Fixed
-
-Upgraded sys-libs/libseccomp to v2.6.0-r3.
-
-### Security
-
-Fixed CVE-2025-40147 in the Linux kernel.
-
-### Security
-
-Added support for Nvidia driver version 570.172.08. This fixes CVE-2025-23279.
-
-### Security
-
-Fixed CVE-2025-31133, CVE-2025-52565, and CVE-2025-52881 in
-app-containers/runc.
-
-### Fixed
-
-Upgraded dev-libs/openssl to 3.5.1.
-
-### Change
-
-Upgraded dev-util/cmake from 3.26.4 to 3.31.9.
+Upgraded app-containers/docker-credential-helpers to v0.9.5.
 
 ### Feature
 
-Enabled Software Watchdog as a module.
-
-### Fixed
-
-Upgraded net-libs/gnutls to v3.8.11.
-
-### Fixed
-
-Upgraded dev-libs/expat to v2.7.3.
-
-### Fixed
-
-Fixed bcache latency spikes.
-
-### Fixed
-
-Upgraded net-misc/wget to v1.25.0-r1.
+Added support for the Lustre 2.14.0\_p224 drivers.
 
 ### Security
 
-Fixed CVE-2025-40212 in the Linux kernel.
+Fixed CVE-2025-11494 in binutils-libs.
 
-### Security
+### Fixed
 
-Updated sys-apps/coreutils to v9.5. This resolves
-CVE-2024-0684.
+Reduced gcr\_wait\_online retry gap.
 
 ### Feature
 
-Configured the cos-gpu-installer to use R580 drivers as the
-default GPU drivers.
-
-### Fixed
-
-Upgraded app-admin/sudo to v1.9.17\_p2.
+Disabled DNSSEC by default for COS TPU VMs.
 
 ### Security
 
-Fixed CVE-2025-13837 in dev-lang/python.
-
-### Feature
-
-Added IPv6 support for machines using the IDPF driver.
-
-### Fixed
-
-Upgraded sys-apps/pv to v1.10.3.
-
-### Security
-
-Fixed KCTF-01d3c84 in the Linux kernel.
-
-### Security
-
-Updated dev-libs/libxml2 to version 2.14.6. This resolves CVE-2025-6021.
-
-### Security
-
-Fixed KCTF-2397e92 in the Linux kernel.
-
-### Feature
-
-Enabled the google-guest-agent's network management functionality.
-
-### Feature
-
-Added GDRCopy kernel module for NVIDIA drivers.
-
-### Fixed
-
-Updated cos-gpu-installer to v2.5.10.
-
-### Fixed
-
-Upgraded sys-apps/pv to v1.10.1.
-
-### Feature
-
-Added support for CASFS (Content Addressable Storage File System) as a kernel module.
-
-### Feature
-
-Added patches to handle IDPF tx timeouts.
-
-### Feature
-
-Added GB300 support to cos-extensions.
-
-### Feature
-
-Added CPU balloon support for ARM CPUs.
-
-### Security
-
-Upgraded open-vm-tools to 13.0.5. This fixes CVE-2025-41244 in anthos variant.
-
-### Fixed
-
-Upgraded dev-python/coverage to v7.10.7.
-
-### Fixed
-
-Upgraded net-libs/libtirpc to v1.3.7-r2.
-
-### Security
-
-Fixed KCTF-abad3d0 in the Linux kernel.
-
-### Change
-
-Updated dev-libs/openssl to v3.5.4.
-
-### Fixed
-
-Upgraded chromeos-base/chromeos-common-script to v0.0.1-r668.
-
-### Fixed
-
-upgraded net-fs/cifs-utils to v7.4.
-
-### Security
-
-Fixed CVE-2025-11495 in binutils-libs.
-
-### Fixed
-
-Fixed an issue where the cpuidle driver selected for some
-machine types would cause inflated reports of high CPU usage.
-
-### Feature
-
-Enabled HTCP TCP congestion control algorithm as a module.
-
-### Feature
-
-Fixed a bug in cos-extensions which would cause GB200 and GB300 devices not to be detected in one code path, which would result in Imex channels not being created by default.
-
-### Change
-
-Updated CONFIG\_BLK\_DEV\_LOOP\_MIN\_COUNT to 0. This allows
-unlimited loop devices.
-
-### Feature
-
-Added support for NVIDIA driver v535.288.01, v570.211.01 and v580.126.09.
-
-### Security
-
-Upgraded vim & vim-core to version 9.1.1652. This fixes
-CVE-2025-53905, CVE-2025-53906, CVE-2025-9390.
-
-### Feature
-
-Enabled KVM for COS ARM64.
-
-### Fixed
-
-Upgraded chromeos-base/google-breakpad to v2026.01.16.201758-r268.
-
-### Security
-
-Fixed CVE-2025-11412 in binutils-libs.
-
-### Fixed
-
-Upgraded sys-apps/hwdata to v0.400.
-
-### Feature
-
-Enabled hardware optimized SHA256 algorithms for x86 machines with SSSE3 and AVX/AVX2 instructions and ARM64 machines with SHA-NI and ARMv8 Crypto Extensions.
-
-### Fixed
-
-Made the google-guest-agent more resilient to network link
-flakes.
-
-### Security
-
-Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.
-
-### Fixed
-
-Enabled multiport support for CX-8 devices.
-
-### Security
-
-Upgraded urllib3 to version 1.26.18. This fixes CVE-2021-33503, CVE-2023-43804, and CVE-2023-45803.
-
-### Fixed
-
-Fixed an issue in app-containers/runc that caused runc to
-use more file descriptors than intended.
-
-### Security
-
-Upgraded net-misc/netplan to 1.1.2. This fixes
-CVE-2022-4968.
-
-### Fixed
-
-Removed an artifact registry ping that would delay multi-user.target indefinitely for machines with no external IP address.
-
-### Fixed
-
-Upgraded chromeos-base/minijail to v18-r168.
-
-### Fixed
-
-Upgraded dev-lang/go to v1.23.11.
-
-### Fixed
-
-Upgraded net-misc/openssh to 10.0\_p1.
-
-### Fixed
-
-Updated net-misc/chrony to v4.8.
-
-### Security
-
-Fixed CVE-2025-61727 in dev-lang/go.
+Fixed CVE-2025-11081, CVE-2025-11082 and CVE-2025-11083 in sys-libs/binutils-libs.
 
 ### Change
 
@@ -1644,47 +1127,706 @@ Runtime sysctl changes:
 
 ### Security
 
-Fixed CVE-2025-11081, CVE-2025-11082 and CVE-2025-11083 in sys-libs/binutils-libs.
-
-### Feature
-
-Disabled DNSSEC by default for COS TPU VMs.
+Fixed CVE-2025-61727 in dev-lang/go.
 
 ### Fixed
 
-Reduced gcr\_wait\_online retry gap.
+Updated net-misc/chrony to v4.8.
+
+### Fixed
+
+Upgraded net-misc/openssh to 10.0\_p1.
+
+### Fixed
+
+Upgraded dev-lang/go to v1.23.11.
+
+### Fixed
+
+Upgraded chromeos-base/minijail to v18-r168.
+
+### Fixed
+
+Removed an artifact registry ping that would delay multi-user.target indefinitely for machines with no external IP address.
 
 ### Security
 
-Fixed CVE-2025-11494 in binutils-libs.
+Upgraded net-misc/netplan to 1.1.2. This fixes
+CVE-2022-4968.
+
+### Fixed
+
+Fixed an issue in app-containers/runc that caused runc to
+use more file descriptors than intended.
+
+### Security
+
+Upgraded urllib3 to version 1.26.18. This fixes CVE-2021-33503, CVE-2023-43804, and CVE-2023-45803.
+
+### Fixed
+
+Enabled multiport support for CX-8 devices.
+
+### Security
+
+Added support for Nvidia driver version 535.261.03. This fixes CVE-2025-23286 and CVE-2025-23279.
+
+### Fixed
+
+Made the google-guest-agent more resilient to network link
+flakes.
 
 ### Feature
 
-Added support for the Lustre 2.14.0\_p224 drivers.
+Enabled hardware optimized SHA256 algorithms for x86 machines with SSSE3 and AVX/AVX2 instructions and ARM64 machines with SHA-NI and ARMv8 Crypto Extensions.
 
 ### Fixed
 
-Upgraded app-containers/docker-credential-helpers to v0.9.5.
+Upgraded sys-apps/hwdata to v0.400.
+
+### Security
+
+Fixed CVE-2025-11412 in binutils-libs.
 
 ### Fixed
 
-Upgraded sys-process/procps to v4.0.5-r3.
+Upgraded chromeos-base/google-breakpad to v2026.01.16.201758-r268.
+
+### Feature
+
+Enabled KVM for COS ARM64.
+
+### Security
+
+Upgraded vim & vim-core to version 9.1.1652. This fixes
+CVE-2025-53905, CVE-2025-53906, CVE-2025-9390.
+
+### Feature
+
+Added support for NVIDIA driver v535.288.01, v570.211.01 and v580.126.09.
+
+### Change
+
+Updated CONFIG\_BLK\_DEV\_LOOP\_MIN\_COUNT to 0. This allows
+unlimited loop devices.
+
+### Feature
+
+Fixed a bug in cos-extensions which would cause GB200 and GB300 devices not to be detected in one code path, which would result in Imex channels not being created by default.
+
+### Feature
+
+Enabled HTCP TCP congestion control algorithm as a module.
+
+### Fixed
+
+Fixed an issue where the cpuidle driver selected for some
+machine types would cause inflated reports of high CPU usage.
+
+### Security
+
+Fixed CVE-2025-11495 in binutils-libs.
+
+### Fixed
+
+upgraded net-fs/cifs-utils to v7.4.
+
+### Fixed
+
+Upgraded chromeos-base/chromeos-common-script to v0.0.1-r668.
+
+### Change
+
+Updated dev-libs/openssl to v3.5.4.
+
+### Security
+
+Fixed KCTF-abad3d0 in the Linux kernel.
+
+### Fixed
+
+Upgraded net-libs/libtirpc to v1.3.7-r2.
+
+### Fixed
+
+Upgraded dev-python/coverage to v7.10.7.
+
+### Security
+
+Upgraded open-vm-tools to 13.0.5. This fixes CVE-2025-41244 in anthos variant.
+
+### Feature
+
+Added CPU balloon support for ARM CPUs.
+
+### Feature
+
+Added GB300 support to cos-extensions.
+
+### Feature
+
+Added patches to handle IDPF tx timeouts.
+
+### Feature
+
+Added support for CASFS (Content Addressable Storage File System) as a kernel module.
+
+### Fixed
+
+Upgraded sys-apps/pv to v1.10.1.
+
+### Fixed
+
+Updated cos-gpu-installer to v2.5.10.
+
+### Feature
+
+Added GDRCopy kernel module for NVIDIA drivers.
+
+### Feature
+
+Enabled the google-guest-agent's network management functionality.
+
+### Security
+
+Fixed KCTF-2397e92 in the Linux kernel.
+
+### Security
+
+Updated dev-libs/libxml2 to version 2.14.6. This resolves CVE-2025-6021.
+
+### Security
+
+Fixed KCTF-01d3c84 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-apps/pv to v1.10.3.
+
+### Feature
+
+Added IPv6 support for machines using the IDPF driver.
+
+### Security
+
+Fixed CVE-2025-13837 in dev-lang/python.
+
+### Fixed
+
+Upgraded app-admin/sudo to v1.9.17\_p2.
+
+### Feature
+
+Configured the cos-gpu-installer to use R580 drivers as the
+default GPU drivers.
+
+### Security
+
+Updated sys-apps/coreutils to v9.5. This resolves
+CVE-2024-0684.
+
+### Security
+
+Fixed CVE-2025-40212 in the Linux kernel.
+
+### Fixed
+
+Upgraded net-misc/wget to v1.25.0-r1.
+
+### Fixed
+
+Fixed bcache latency spikes.
+
+### Fixed
+
+Upgraded dev-libs/expat to v2.7.3.
+
+### Fixed
+
+Upgraded net-libs/gnutls to v3.8.11.
+
+### Feature
+
+Enabled Software Watchdog as a module.
+
+### Change
+
+Upgraded dev-util/cmake from 3.26.4 to 3.31.9.
+
+### Fixed
+
+Upgraded dev-libs/openssl to 3.5.1.
+
+### Security
+
+Fixed CVE-2025-31133, CVE-2025-52565, and CVE-2025-52881 in
+app-containers/runc.
+
+### Security
+
+Added support for Nvidia driver version 570.172.08. This fixes CVE-2025-23279.
+
+### Security
+
+Fixed CVE-2025-40147 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-libs/libseccomp to v2.6.0-r3.
+
+### Security
+
+Fixed CVE-2025-13836 in dev-lang/python.
+
+### Security
+
+Fixed CVE-2025-6052 in dev-libs/glib.
+
+### Fixed
+
+Added support for NVIDIA driver v535.274.02 and v570.195.03.
+
+### Fixed
+
+Upgraded sys-apps/dmidecode to v3.7.
+
+### Fixed
+
+Upgraded net-misc/socat to v1.8.1.0-r1.
+
+### Change
+
+Added kernel support for bare-metal on the NVIDIA Grace platform.
+
+### Fixed
+
+Fixed a bug where setting MTU above 9000 on ARM systems with a 64k page size would cause IDPF networking to fail.
+
+### Fixed
+
+Upgraded sys-apps/nvme-cli from version 1.6-r1 to version 2.16, added package sys-libs/libnvme.
 
 ### Fixed
 
 Reverted a containerd change which reduced the default soft file descriptor limit for processes in containers to 1024.
 
+### Feature
+
+Enabled dynamic vlan configuration for non-primary NICs.
+
 ### Fixed
 
-Upgraded dev-db/sqlite to v3.51.1.
+Upgraded sys-apps/pv to v1.10.2.
+
+### Fixed
+
+Upgraded net-misc/rsync to v3.4.1-r2.
+
+### Fixed
+
+Updated sys-libs/readline to v8.3.
+
+### Fixed
+
+Upgraded app-admin/node-problem-detector to v0.8.25.
+
+### Change
+
+Changed the mount options for /mnt/disks to noexec.
+
+### Fixed
+
+Add support for NVIDIA MFT Tools v4.33.0.
+
+### Fixed
+
+Upgraded net-nds/rpcbind to v1.2.8.
 
 ### Security
 
-Fixed CVE-2025-47914 and CVE-2025-58181 in dev-go/crypto.
+Fixed KCTF-50da4b9 in the Linux kernel.
 
 ### Fixed
 
-Updated kubelet and kubectl to v1.35.0.
+Partially fixed an issue where excessive contention among writeback kworkers when switching a large number of inodes between cgroups could lead to system unresponsiveness.
+
+### Fixed
+
+Upgraded sys-apps/pv to v1.9.42.
+
+### Fixed
+
+Upgraded app-crypt/mit-krb5 from version 1.20.1 to version 1.22.1.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.50.3.
+
+### Fixed
+
+Added support for the Lustre 2.14.0\_p216 drivers.
+
+### Feature
+
+Enabled the Btrfs kernel module.
+
+### Fixed
+
+Upgraded chromeos-base/session\_manager-client to v0.0.1-r2833.
+
+### Fixed
+
+Upgraded dev-lang/go to v1.23.12.
+
+### Fixed
+
+Updated golang.org/x/oauth2, golang.org/x/net, golang.org/x/crypto, and github.com/golang-jwt/jwt/v5 in Docker.
+
+### Fixed
+
+Added binary auth-provider-gcp.
+
+### Change
+
+Upgraded dev-libs/libuv from 1.43.0 to 1.51.0-r1.
+
+### Feature
+
+Added guest support for paravirtualization of cpuids on ARM machines.
+
+### Security
+
+Upgraded sys-libs/binutils-libs to version 2.45. This fixes CVE-2025-8224,CVE-2025-8225 and CVE-2025-1153.
+
+### Fixed
+
+Upgraded sys-process/audit to 4.0.2-r1.
+
+### Fixed
+
+Fixed an issue where cpusets cgroups did not work with
+cgroup v1 enabled.
+
+### Feature
+
+Removed the cloud-final.service dependency on multi-user.target which could delay cloud-init user-data scripts indefinitely when long-running startup scripts are used.
+
+### Fixed
+
+Upgraded chromeos-base/debugd-client to v0.0.1-r2737.
+
+### Fixed
+
+Upgraded chromeos-base/chromeos-common-script to v0.0.1-r671.
+
+### Security
+
+Updated dev-python/jinja to v3.1.6. This resolves
+CVE-2024-56326, CVE-2024-56201 and CVE-2025-27516.
+
+### Security
+
+Fixed CVE-2025-11413 and CVE-2025-11414 in binutils-libs.
+
+### Fixed
+
+Upgraded sys-apps/makedumpfile to v1.7.8.
+
+### Security
+
+Upgraded dev-vcs/git to version 2.49.1. This fixes CVE-2025-48385, CVE-2025-27613, CVE-2025-27614, CVE-2025-48384, CVE-2025-46835.
+
+### Fixed
+
+Upgraded sys-apps/less to v692.
+
+### Security
+
+Updated dev-python/urllib3 to v2.5.0. This resolves
+CVE-2025-50181.
+
+### Fixed
+
+Upgraded app-containers/docker-credential-gcr to v2.1.31
+
+### Security
+
+Fixed KCTF-f41c5d1 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-21441 in dev-python/urllib3.
+
+### Fixed
+
+Upgraded chromeos-base/power\_manager-client to v0.0.1-r2972.
+
+### Change
+
+Applied ethtool ring length changes to a4x's first Diorite interface.
+
+### Fixed
+
+Upgraded sys-apps/pv to v1.9.44.
+
+### Feature
+
+Removed the futility program from the root file system.
+
+### Fixed
+
+Upgraded sys-apps/pv to v1.9.34.
+
+### Fixed
+
+Backported various TCPDirect networking fixes.
+
+### Fixed
+
+Upgraded app-admin/sosreport to v4.10.2.
+
+### Feature
+
+Enabled automatic loading of RDMA kernel modules when CX-8 devices are detected.
+
+### Fixed
+
+Upgraded dev-libs/nss to 3.117 and dev-libs/nspr to 4.37.
+
+### Security
+
+Fixed KCTF-134121b in the Linux kernel.
+
+### Fixed
+
+Fixed a kernel bug which caused boot to fail for n4 machine types.
+
+### Fixed
+
+Upgraded sys-process/lsof to v4.99.5.
+
+### Fixed
+
+Upgraded net-misc/curl from 8.12.1 to 8.17.0.
+
+### Change
+
+Updated the Linux kernel to v6.12.67.
+
+### Change
+
+Upgraded dev-libs/json-c from 0.16-r1 to 0.18.0.
+
+### Security
+
+Fixed CVE-2025-12084 in dev-lang/python.
+
+### Feature
+
+Added TDX RTMR support.
+
+### Fixed
+
+Updated app-admin/node-problem-detector to 0.8.21.
+
+### Fixed
+
+Upgraded app-admin/oslogin to v20260116.00.
+
+### Security
+
+Upgraded dev-libs/glib to 2.82.5. This resolves
+CVE-2024-52533.
+
+### Fixed
+
+Upgraded app-benchmarks/microbenchmarks to v0.0.1-r21.
+
+### Feature
+
+Added support for the fwctl subsystem and the Mellanox fwctl driver for ARM64.
+
+### Fixed
+
+Fixed a TCPX bug which would sometimes incorrectly report devices as being missing when route cache entries were missing or invalidated.
+
+### Feature
+
+Added support for NVIDIA GB300 devices.
+
+### Fixed
+
+Updated dev-python/requests to v2.32.4.
+
+### Security
+
+Fixed CVE-2025-40256 in the Linux kernel.
+
+### Feature
+
+Added support for zswap in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-apps/file to v5.46-r3.
+
+### Fixed
+
+Installed app-misc/c\_rehash.
+
+### Change
+
+Updated app-containers/runc to v1.4.0.
+
+### Fixed
+
+Upgraded virtual/logger to v0-r2.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.50.4.
+
+### Security
+
+Fixed KCTF-60e6489 in the Linux Kernel.
+
+### Feature
+
+Added support for NVIDIA MFT Tools on arm64.
+
+### Fixed
+
+Upgraded sys-apps/gentoo-functions to v1.7.4.
+
+### Feature
+
+Backported support for AMD SEV-SNP SVSM vTPM driver and
+configfs-tsm addition for extended attestation protocol.
+
+### Fixed
+
+Upgraded google-guest-configs to v20260121.00.
+
+### Feature
+
+Added support for SCSI logging.
+
+### Fixed
+
+Upgraded sys-apps/kmod to v34.2.
+
+### Fixed
+
+Updated app-containers/cni-plugins to 1.7.1.
+
+### Fixed
+
+Upgraded sys-libs/libcap to v2.77.
+
+### Feature
+
+Added iRDMA support in the Linux kernel.
+
+### Fixed
+
+Updated app-admin/google-osconfig-agent to v20250522.00.
+
+### Fixed
+
+Upgraded app-shells/bash to v5.3.
+
+### Change
+
+Updated app-containers/containerd to v2.2.0.
+
+### Feature
+
+Added ConnectX-8 RDMA support.
+
+### Security
+
+Fixed KCTF-6bb73db in the Linux Kernel.
+
+### Fixed
+
+Updated the dump capture kernel to v6.12.52.
+
+### Security
+
+Fixed CVE-2025-8058 in glibc.
+
+### Change
+
+Added support for A4X-Max NICs.
+
+### Fixed
+
+Upgraded dev-libs/libxslt to version 1.1.43-r1.
+
+### Fixed
+
+Updated golang.org/x/crypto, golang.org/x/net, and
+golang.org/x/oauth2 in kubelet and kubectl.
+
+### Fixed
+
+Upgraded net-dns/c-ares to v1.34.6.
+
+### Security
+
+Fixed KCTF-f8db647 in the Linux kernel.
+
+### Change
+
+Enabled Coherent Driver Memory Management by default when installing GPU drivers on GB2000.
+
+### Fixed
+
+Upgraded sys-auth/pambase to v20251104.
+
+### Fixed
+
+Updated app-containers/cri-tools to 1.32.0.
+
+### Security
+
+Fixed KCTF-b441cf3 in the Linux kernel.
+
+### Fixed
+
+Upgraded chromeos-base/shill-client to v0.0.1-r4879.
+
+### Security
+
+Fixed CVE-2025-61729 in dev-lang/go.
+
+### Security
+
+Fixed CVE-2025-66471 and CVE-2025-66418 in dev-python/urllib3.
+
+### Fixed
+
+Made CX-8 NIC naming order deterministic.
+
+### Fixed
+
+Updated toolbox container image tag to v20251002.
+
+### Fixed
+
+Upgraded app-containers/cni-plugins to v1.9.0.
+
+### Feature
+
+Added support for NVIDIA driver v580.105.08 and set it as the default version for all GPU types.
+
+### Fixed
+
+Upgraded app-admin/fluent-bit to v4.2.2.
+
+### Fixed
+
+Upgraded app-emulation/cloud-init to v25.1.4.
 
 ---
 ## 2026-02-19
@@ -1702,79 +1844,43 @@ Updated kubelet and kubectl to v1.35.0.
 
 ### Security
 
-Fixed CVE-2026-23085 in the Linux kernel.
+Fixed CVE-2026-23011 in the Linux kernel.
 
 ### Security
 
-Updated dev-libs/libxml2 to version 2.14.6. This resolves CVE-2025-6021.
+Fixed CVE-2026-23103 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-22999 in the Linux kernel.
+Fixed CVE-2026-23005 in the Linux kernel.
+
+### Feature
+
+Added support for NVIDIA driver v535.288.01, v570.211.01 and v580.126.09.
 
 ### Security
 
-Fixed CVE-2026-23083 in the Linux kernel.
+Fixed CVE-2026-23069 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23054 in the Linux kernel.
+Fixed CVE-2025-22121 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2025-68725 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23003 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23107 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23095 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23099 in the Linux kernel.
-
-### Announcement
-
-This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)
+Fixed CVE-2026-23097 in the Linux kernel.
 
 ### Fixed
 
-Upgraded app-containers/docker-credential-helpers to v0.9.4.
+Upgraded net-libs/libtirpc to v1.3.7.
 
 ### Security
 
-Fixed CVE-2026-22998 in the Linux kernel.
+Fixed CVE-2025-38232 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23110 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23010 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23001 in the Linux kernel.
-
-### Fixed
-
-Upgraded sys-libs/libcap to v2.77.
-
-### Security
-
-Fixed CVE-2026-23038 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23105 in the Linux kernel.
+Fixed CVE-2026-23025 in the Linux kernel.
 
 ### Change
 
@@ -1784,43 +1890,79 @@ Runtime sysctl changes:
 
 ### Security
 
-Fixed CVE-2026-23025 in the Linux kernel.
+Fixed CVE-2026-23105 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2025-38232 in the Linux kernel.
+Fixed CVE-2026-23038 in the Linux kernel.
 
 ### Fixed
 
-Upgraded net-libs/libtirpc to v1.3.7.
+Upgraded sys-libs/libcap to v2.77.
 
 ### Security
 
-Fixed CVE-2026-23097 in the Linux kernel.
+Fixed CVE-2026-23001 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2025-22121 in the Linux kernel.
+Fixed CVE-2026-23010 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23069 in the Linux kernel.
-
-### Feature
-
-Added support for NVIDIA driver v535.288.01, v570.211.01 and v580.126.09.
+Fixed CVE-2026-23110 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23005 in the Linux kernel.
+Fixed CVE-2026-22998 in the Linux kernel.
+
+### Fixed
+
+Upgraded app-containers/docker-credential-helpers to v0.9.4.
+
+### Announcement
+
+This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)
 
 ### Security
 
-Fixed CVE-2026-23103 in the Linux kernel.
+Fixed CVE-2026-23099 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23011 in the Linux kernel.
+Fixed CVE-2026-23095 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23107 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23003 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68725 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23054 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23083 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-22999 in the Linux kernel.
+
+### Security
+
+Updated dev-libs/libxml2 to version 2.14.6. This resolves CVE-2025-6021.
+
+### Security
+
+Fixed CVE-2026-23085 in the Linux kernel.
 
 ### Change
 
@@ -1835,79 +1977,23 @@ Fixed CVE-2026-23011 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23085 in the Linux kernel.
+Fixed CVE-2025-37920 in the Linux kernel.
 
 ### Security
 
-Fixed KCTF-f41c5d1 in the Linux kernel.
+Fixed CVE-2026-23011 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23103 in the Linux kernel.
+Fixed CVE-2026-23099 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2024-57994 in the Linux kernel.
+Updated dev-libs/libxml2 to version 2.14.6. This resolves CVE-2025-6021.
 
 ### Security
 
-Fixed CVE-2026-23097 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23010 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-68725 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23095 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23105 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23038 in the Linux kernel.
-
-### Announcement
-
-This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)
-
-### Security
-
-Fixed CVE-2026-23005 in the Linux kernel.
-
-### Security
-
-Fixed KCTF-f8db647 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-38232 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23001 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23003 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-22999 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23069 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-22998 in the Linux kernel.
+Fixed CVE-2026-23083 in the Linux kernel.
 
 ### Change
 
@@ -1917,23 +2003,79 @@ Runtime sysctl changes:
 
 ### Security
 
-Fixed CVE-2026-23083 in the Linux kernel.
+Fixed CVE-2026-22998 in the Linux kernel.
 
 ### Security
 
-Updated dev-libs/libxml2 to version 2.14.6. This resolves CVE-2025-6021.
+Fixed CVE-2026-23069 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23099 in the Linux kernel.
+Fixed CVE-2026-22999 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23011 in the Linux kernel.
+Fixed CVE-2026-23003 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2025-37920 in the Linux kernel.
+Fixed CVE-2026-23001 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38232 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-f8db647 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23005 in the Linux kernel.
+
+### Announcement
+
+This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)
+
+### Security
+
+Fixed CVE-2026-23038 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23105 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23095 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68725 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23010 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23097 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2024-57994 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23103 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-f41c5d1 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23085 in the Linux kernel.
 
 ### Change
 
@@ -1946,21 +2088,41 @@ Fixed CVE-2025-37920 in the Linux kernel.
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.12.68](https://cos.googlesource.com/third_party/kernel/+/0f7fdc11309c4368bee6047b0946cf23a718ec27 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.220.9/lakitu/gpu_driver_versions.textproto) |
 
-### Fixed
-
-Upgraded net-libs/libtirpc to v1.3.7.
-
 ### Feature
 
-Added guest support for paravirtualization of cpuids on Arm machines.
+Added CPU balloon support for Arm CPUs.
 
 ### Fixed
 
-Upgraded app-containers/docker-registry-test to v2.8.3.
+Upgraded google-guest-configs to v20260121.00.
 
 ### Fixed
 
-Upgraded dev-libs/expat to v2.7.3.
+Upgraded net-nds/rpcbind to v1.2.8.
+
+### Fixed
+
+Upgraded sys-auth/pambase to v20251104.
+
+### Security
+
+Fixed KCTF-f8db647 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-libs/libcap to v2.77.
+
+### Announcement
+
+This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)
+
+### Fixed
+
+Upgraded sys-apps/gentoo-functions to v1.7.4.
+
+### Fixed
+
+Upgraded net-misc/socat to v1.8.1.0-r1.
 
 ### Change
 
@@ -1970,39 +2132,19 @@ Runtime sysctl changes:
 
 ### Fixed
 
-Upgraded net-misc/socat to v1.8.1.0-r1.
+Upgraded dev-libs/expat to v2.7.3.
 
 ### Fixed
 
-Upgraded sys-apps/gentoo-functions to v1.7.4.
-
-### Announcement
-
-This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)
-
-### Fixed
-
-Upgraded sys-libs/libcap to v2.77.
-
-### Security
-
-Fixed KCTF-f8db647 in the Linux kernel.
-
-### Fixed
-
-Upgraded sys-auth/pambase to v20251104.
-
-### Fixed
-
-Upgraded net-nds/rpcbind to v1.2.8.
-
-### Fixed
-
-Upgraded google-guest-configs to v20260121.00.
+Upgraded app-containers/docker-registry-test to v2.8.3.
 
 ### Feature
 
-Added CPU balloon support for Arm CPUs.
+Added guest support for paravirtualization of cpuids on Arm machines.
+
+### Fixed
+
+Upgraded net-libs/libtirpc to v1.3.7.
 
 ---
 ## 2026-02-10

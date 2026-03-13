@@ -1,5 +1,16 @@
 # Spanner
 
+## 2026-03-10
+
+### Feature
+
+Spanner supports the optimistic concurrency control mode.
+Optimistic concurrency control is suitable for transactional workloads with low
+read-write contention. It assumes that conflicts in transactions are rare. Reads
+and queries within a read-write transaction proceed without acquiring
+locks. For more information, see [Concurrency control](https://docs.cloud.google.com/spanner/docs/concurrency-control).
+
+---
 ## 2026-03-04
 
 ### Feature
@@ -100,21 +111,6 @@ This feature is [generally available (GA)](https://docs.cloud.google.com/product
 ---
 ## 2026-02-17
 
-### Announcement
-
-New best practices are available for securing generative AI agents using
-Model Context Protocol (MCP) with Google Cloud databases. This guide covers
-key security measures like least privilege, native database controls, and secure
-agent design to help you build safer AI applications. For more information, see
-[Best practices for securing agent interactions with Model Context Protocol](https://docs.cloud.google.com/spanner/docs/secure-agent-interactions-mcp).
-
-This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
-
-### Change
-
-After March 17, 2026, when you enable Spanner, the
-Spanner MCP server is automatically enabled.
-
 ### Deprecated
 
 Control of MCP use with organization policies is deprecated.
@@ -124,6 +120,21 @@ you can control MCP use with IAM deny policies.
 
 For more information about controlling MCP use, see
 [Control MCP use with IAM](https://docs.cloud.google.com/mcp/control-mcp-use-iam).
+
+### Change
+
+After March 17, 2026, when you enable Spanner, the
+Spanner MCP server is automatically enabled.
+
+### Announcement
+
+New best practices are available for securing generative AI agents using
+Model Context Protocol (MCP) with Google Cloud databases. This guide covers
+key security measures like least privilege, native database controls, and secure
+agent design to help you build safer AI applications. For more information, see
+[Best practices for securing agent interactions with Model Context Protocol](https://docs.cloud.google.com/spanner/docs/secure-agent-interactions-mcp).
+
+This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
 
 ---
 ## 2026-02-10

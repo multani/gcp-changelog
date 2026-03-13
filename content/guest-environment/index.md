@@ -34,23 +34,6 @@ included in version `20260228.00` of the guest agent, see the
 ---
 ## 2026-03-02
 
-### Feature
-
-Version `20260228.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent) is
-now available for Debian 13, AlmaLinux 10, CentOS Stream 10, Oracle Linux 10,
-Red Hat Enterprise Linux 10, and Rock Linux 10. This version introduces the
-following features:
-
-* Supports bootstrapping credentials for the HTTPS endpoint for the metadata
-  server by default. For more information about the HTTPS metadata server
-  endpoint, see [HTTPS metadata server endpoints](https://docs.cloud.google.com/compute/docs/metadata/overview#https-mds).
-* Includes a cleanup job that runs once a day and each time the guest agent manager
-  service initializes. This cleanup job ensures that leftover plugin files and
-  states are properly cleaned up.
-* Supports dynamically starting locally installed extensions. This feature is
-  disabled by default, but it can be toggled by setting the
-  `enable_local_plugins` flag to `true` in the guest agent configuration file.
-
 ### Fixed
 
 Version `20260228.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)
@@ -71,6 +54,23 @@ includes the following fixes:
 * The guest agent now applies the value of the following configuration flags
   correctly: `Daemons.network_daemon` and
   `NetworkInterfaces.vlan_setup_enabled`.
+
+### Feature
+
+Version `20260228.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent) is
+now available for Debian 13, AlmaLinux 10, CentOS Stream 10, Oracle Linux 10,
+Red Hat Enterprise Linux 10, and Rock Linux 10. This version introduces the
+following features:
+
+* Supports bootstrapping credentials for the HTTPS endpoint for the metadata
+  server by default. For more information about the HTTPS metadata server
+  endpoint, see [HTTPS metadata server endpoints](https://docs.cloud.google.com/compute/docs/metadata/overview#https-mds).
+* Includes a cleanup job that runs once a day and each time the guest agent manager
+  service initializes. This cleanup job ensures that leftover plugin files and
+  states are properly cleaned up.
+* Supports dynamically starting locally installed extensions. This feature is
+  disabled by default, but it can be toggled by setting the
+  `enable_local_plugins` flag to `true` in the guest agent configuration file.
 
 ---
 ## 2025-12-18

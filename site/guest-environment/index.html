@@ -2400,22 +2400,6 @@ included in version <code>20260228.00</code> of the guest agent, see the
 <a href="https://docs.cloud.google.com/compute/docs/images/guest-environment/release-notes#March_02_2026">March 2, 2026 release notes</a>.</p>
 <hr />
 <h2 id="2026-03-02">2026-03-02</h2>
-<h3 id="feature_3">Feature</h3>
-<p>Version <code>20260228.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a> is
-now available for Debian 13, AlmaLinux 10, CentOS Stream 10, Oracle Linux 10,
-Red Hat Enterprise Linux 10, and Rock Linux 10. This version introduces the
-following features:</p>
-<ul>
-<li>Supports bootstrapping credentials for the HTTPS endpoint for the metadata
-  server by default. For more information about the HTTPS metadata server
-  endpoint, see <a href="https://docs.cloud.google.com/compute/docs/metadata/overview#https-mds">HTTPS metadata server endpoints</a>.</li>
-<li>Includes a cleanup job that runs once a day and each time the guest agent manager
-  service initializes. This cleanup job ensures that leftover plugin files and
-  states are properly cleaned up.</li>
-<li>Supports dynamically starting locally installed extensions. This feature is
-  disabled by default, but it can be toggled by setting the
-  <code>enable_local_plugins</code> flag to <code>true</code> in the guest agent configuration file.</li>
-</ul>
 <h3 id="fixed">Fixed</h3>
 <p>Version <code>20260228.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a>
 includes the following fixes:</p>
@@ -2435,6 +2419,22 @@ includes the following fixes:</p>
 <li>The guest agent now applies the value of the following configuration flags
   correctly: <code>Daemons.network_daemon</code> and
   <code>NetworkInterfaces.vlan_setup_enabled</code>.</li>
+</ul>
+<h3 id="feature_3">Feature</h3>
+<p>Version <code>20260228.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a> is
+now available for Debian 13, AlmaLinux 10, CentOS Stream 10, Oracle Linux 10,
+Red Hat Enterprise Linux 10, and Rock Linux 10. This version introduces the
+following features:</p>
+<ul>
+<li>Supports bootstrapping credentials for the HTTPS endpoint for the metadata
+  server by default. For more information about the HTTPS metadata server
+  endpoint, see <a href="https://docs.cloud.google.com/compute/docs/metadata/overview#https-mds">HTTPS metadata server endpoints</a>.</li>
+<li>Includes a cleanup job that runs once a day and each time the guest agent manager
+  service initializes. This cleanup job ensures that leftover plugin files and
+  states are properly cleaned up.</li>
+<li>Supports dynamically starting locally installed extensions. This feature is
+  disabled by default, but it can be toggled by setting the
+  <code>enable_local_plugins</code> flag to <code>true</code> in the guest agent configuration file.</li>
 </ul>
 <hr />
 <h2 id="2025-12-18">2025-12-18</h2>

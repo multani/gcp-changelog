@@ -1,6 +1,26 @@
 {
   "name": "BigQuery",
   "entries": {
+    "2026-03-12": [
+      {
+        "kind": "Change",
+        "content": "[BigQuery advanced runtime](https://docs.cloud.google.com/bigquery/docs/advanced-runtime) is now enabled as\nthe default runtime for all projects.",
+        "summary": {
+          "title": "BigQuery Default Runtime Updated",
+          "summary": "The advanced runtime is now the default for all BigQuery projects. This change enhances performance and capabilities for your data processing tasks. No action is required from your end, as the update has been applied automatically."
+        }
+      }
+    ],
+    "2026-03-11": [
+      {
+        "kind": "Feature",
+        "content": "You can now understand and debug BigQuery query performance with\na\n[visual mapping of your SQL query in the query execution graph](https://docs.cloud.google.com/bigquery/docs/query-plan-explanation#query_text_heatmap).\nA heatmap highlights the steps that consume more slot-time. This feature is\n[generally available](https://cloud.google.com/products#product-launch-stages)\n(GA).",
+        "summary": {
+          "title": "Debug BigQuery Performance with Visual Query Mapping",
+          "summary": "BigQuery query performance debugging is now easier with a visual mapping of your SQL query in the query execution graph. This generally available feature highlights time-consuming steps with a heatmap, helping you identify and resolve performance bottlenecks."
+        }
+      }
+    ],
     "2026-03-09": [
       {
         "kind": "Feature",
@@ -31,37 +51,37 @@
     ],
     "2026-03-05": [
       {
-        "kind": "Feature",
-        "content": "You can now use an alternate syntax when you call the\n[`VECTOR_SEARCH` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/search_functions#vector_search)\nto improve query performance when you search for a single vector. This feature\nis in [Preview](https://cloud.google.com/products/#product-launch-stages).",
-        "summary": {
-          "title": "Vector Search Alternate Syntax",
-          "summary": "A new alternate syntax for the VECTOR_SEARCH function is now available in preview. This change can improve query performance when searching for a single vector."
-        }
-      },
-      {
         "kind": "Change",
         "content": "An updated version of the\n[Simba ODBC driver for BigQuery](https://docs.cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers#current_odbc_driver)\nis now available.",
         "summary": {
           "title": "New Simba ODBC driver for BigQuery released",
           "summary": "An updated version of the Simba ODBC driver for BigQuery has been released. This update provides the latest improvements and features for connecting to BigQuery data."
         }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now use an alternate syntax when you call the\n[`VECTOR_SEARCH` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/search_functions#vector_search)\nto improve query performance when you search for a single vector. This feature\nis in [Preview](https://cloud.google.com/products/#product-launch-stages).",
+        "summary": {
+          "title": "Vector Search Alternate Syntax",
+          "summary": "A new alternate syntax for the VECTOR_SEARCH function is now available in preview. This change can improve query performance when searching for a single vector."
+        }
       }
     ],
     "2026-03-04": [
-      {
-        "kind": "Feature",
-        "content": "Monitor dataset replication latency and network egress bytes in Cloud Monitoring\nfor BigQuery [cross-region replication](https://docs.cloud.google.com/bigquery/docs/data-replication#monitor-replication)\nand [managed disaster recovery](https://docs.cloud.google.com/bigquery/docs/managed-disaster-recovery#monitor-replication).\nThese metrics are [generally available](https://cloud.google.com/products/#product-launch-stages)\n(GA).",
-        "summary": {
-          "title": "Monitor BigQuery Replication and DR",
-          "summary": "You can now monitor dataset replication latency and network egress bytes in Cloud Monitoring for BigQuery cross-region replication and managed disaster recovery. These new metrics are now generally available, providing enhanced visibility into your data replication and disaster recovery setups."
-        }
-      },
       {
         "kind": "Feature",
         "content": "You can now use [continuous queries to stream BigQuery data to Spanner in real\ntime](https://docs.cloud.google.com/bigquery/docs/continuous-queries#spanner-example). This feature is\n[generally available](https://cloud.google.com/products/#product-launch-stages)\n(GA).",
         "summary": {
           "title": "BigQuery data streams to Spanner",
           "summary": "You can now use continuous queries to stream BigQuery data to Spanner in real time. This feature is generally available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Monitor dataset replication latency and network egress bytes in Cloud Monitoring\nfor BigQuery [cross-region replication](https://docs.cloud.google.com/bigquery/docs/data-replication#monitor-replication)\nand [managed disaster recovery](https://docs.cloud.google.com/bigquery/docs/managed-disaster-recovery#monitor-replication).\nThese metrics are [generally available](https://cloud.google.com/products/#product-launch-stages)\n(GA).",
+        "summary": {
+          "title": "Monitor BigQuery Replication and DR",
+          "summary": "You can now monitor dataset replication latency and network egress bytes in Cloud Monitoring for BigQuery cross-region replication and managed disaster recovery. These new metrics are now generally available, providing enhanced visibility into your data replication and disaster recovery setups."
         }
       }
     ],
@@ -105,29 +125,29 @@
         }
       },
       {
-        "kind": "Deprecated",
-        "content": "Control of MCP use with organization policies is deprecated. After\nMarch 17, 2026, organization policies that use the\n`gcp.managed.allowedMCPServices constraint` won't work, and you can control\nMCP use with IAM deny policies. For more information about controlling MCP use,\nsee [Control MCP use with IAM deny policies](https://docs.cloud.google.com/mcp/control-mcp-use-iam).",
-        "summary": {
-          "title": "MCP Use Control: Deprecation of Organization Policies",
-          "summary": "Control of MCP use with organization policies is deprecated and will stop working after March 17, 2026. You can now control MCP use with IAM deny policies. For more information, refer to the documentation on controlling MCP use with IAM deny policies."
-        }
-      },
-      {
         "kind": "Change",
         "content": "After March 17, 2026, when you enable BigQuery, the BigQuery MCP server is\nautomatically enabled.",
         "summary": {
           "title": "BigQuery MCP server enabled by default",
           "summary": "Starting March 17, 2026, the BigQuery MCP server will be automatically enabled when you enable BigQuery. This change ensures that the necessary components are set up from the start for enhanced BigQuery functionality."
         }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "Control of MCP use with organization policies is deprecated. After\nMarch 17, 2026, organization policies that use the\n`gcp.managed.allowedMCPServices constraint` won't work, and you can control\nMCP use with IAM deny policies. For more information about controlling MCP use,\nsee [Control MCP use with IAM deny policies](https://docs.cloud.google.com/mcp/control-mcp-use-iam).",
+        "summary": {
+          "title": "MCP Use Control: Deprecation of Organization Policies",
+          "summary": "Control of MCP use with organization policies is deprecated and will stop working after March 17, 2026. You can now control MCP use with IAM deny policies. For more information, refer to the documentation on controlling MCP use with IAM deny policies."
+        }
       }
     ],
     "2026-02-12": [
       {
         "kind": "Feature",
-        "content": "You can now use [dataset insights](https://docs.cloud.google.com/bigquery/docs/generate-dataset-insights)\nto understand relationships between tables in a dataset by generating\nrelationship graphs and cross-table queries. You can automatically generate\ndataset summaries, infer relationships across tables, and receive suggestions\nfor analytical questions. This feature is in\n[Preview](https://cloud.google.com/products/#product-launch-stages).",
+        "content": "The\n[`AI.CLASSIFY` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-classify)\nnow supports classifying your input into multiple categories. This feature is in\n[Preview](https://cloud.google.com/products/#product-launch-stages).",
         "summary": {
-          "title": "New Dataset Insights Feature Released",
-          "summary": "Understand relationships within your datasets with the new Dataset Insights feature. Automatically generate relationship graphs, cross-table queries, and get suggestions for analytical questions. This feature is currently in Preview."
+          "title": "AI.CLASSIFY now supports multi-label classification",
+          "summary": "The AI.CLASSIFY function in BigQuery ML now supports classifying input into multiple categories. This new multi-label classification capability is currently in Preview."
         }
       },
       {
@@ -140,10 +160,10 @@
       },
       {
         "kind": "Feature",
-        "content": "The\n[`AI.CLASSIFY` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-classify)\nnow supports classifying your input into multiple categories. This feature is in\n[Preview](https://cloud.google.com/products/#product-launch-stages).",
+        "content": "You can now use [dataset insights](https://docs.cloud.google.com/bigquery/docs/generate-dataset-insights)\nto understand relationships between tables in a dataset by generating\nrelationship graphs and cross-table queries. You can automatically generate\ndataset summaries, infer relationships across tables, and receive suggestions\nfor analytical questions. This feature is in\n[Preview](https://cloud.google.com/products/#product-launch-stages).",
         "summary": {
-          "title": "AI.CLASSIFY now supports multi-label classification",
-          "summary": "The AI.CLASSIFY function in BigQuery ML now supports classifying input into multiple categories. This new multi-label classification capability is currently in Preview."
+          "title": "New Dataset Insights Feature Released",
+          "summary": "Understand relationships within your datasets with the new Dataset Insights feature. Automatically generate relationship graphs, cross-table queries, and get suggestions for analytical questions. This feature is currently in Preview."
         }
       }
     ],

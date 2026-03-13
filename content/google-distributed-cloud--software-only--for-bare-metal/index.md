@@ -22,6 +22,21 @@ qualification for this release of Google Distributed Cloud for bare metal.
 
 ### Announcement
 
+Google Distributed Cloud (software only) for bare metal 1.33.500-gke.63 is now available for
+download. To upgrade, see [Upgrade clusters](how-to/upgrade).
+Google Distributed Cloud for bare metal
+1.33.500-gke.63 runs on Kubernetes v1.33.5-gke.2200.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release of Google Distributed Cloud for bare metal.
+
+### Announcement
+
 In Google Distributed Cloud (software only) for bare metal versions 1.33.0 and later,
 `bmctl` operations can fail to stream logs from pods to the local workspace,
 causing empty or incomplete logs in `bmctl-workspace/{CLUSTER NAME}/log directory`.
@@ -47,31 +62,8 @@ It is recommended to upgrade to a fixed version to ensure that all `bmctl`
 operation logs are correctly captured in your local workspace for troubleshooting
 and auditing purposes
 
-### Announcement
-
-Google Distributed Cloud (software only) for bare metal 1.33.500-gke.63 is now available for
-download. To upgrade, see [Upgrade clusters](how-to/upgrade).
-Google Distributed Cloud for bare metal
-1.33.500-gke.63 runs on Kubernetes v1.33.5-gke.2200.
-
-After a release, it takes approximately 7 to 14 days for the version to become
-available for installations or upgrades with the GKE On-Prem API clients: the
-Google Cloud console, the gcloud CLI, and Terraform.
-
-If you use a third-party storage vendor, check the Google Distributed Cloud-ready
-storage partners document to make sure the storage vendor has already passed the
-qualification for this release of Google Distributed Cloud for bare metal.
-
 ---
 ## 2026-02-13
-
-### Feature
-
-The following feature was added in 1.34.100-gke.93:
-
-The `spec.taints` field in the `NodePoolClaim` resource is mutable. You can
-add or remove taints on existing node pools without recreating the
-`NodePoolClaim`. You can use this field to manage GPU nodes.
 
 ### Announcement
 
@@ -86,6 +78,14 @@ Google Cloud console, the gcloud CLI, and Terraform.
 If you use a third-party storage vendor, check the Google Distributed Cloud-ready
 storage partners document to make sure the storage vendor has already passed the
 qualification for this release of Google Distributed Cloud for bare metal.
+
+### Feature
+
+The following feature was added in 1.34.100-gke.93:
+
+The `spec.taints` field in the `NodePoolClaim` resource is mutable. You can
+add or remove taints on existing node pools without recreating the
+`NodePoolClaim`. You can use this field to manage GPU nodes.
 
 ---
 ## 2026-02-05

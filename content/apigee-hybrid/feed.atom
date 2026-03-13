@@ -9,7 +9,37 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-03-11:security:0</id>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-03-11:hybrid v1.15.2:0</id>
+    <published>2026-03-11T00:00:00+00:00</published>
+    <updated>2026-03-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On March 11, 2026 we released an updated version of the Apigee hybrid software, v1.15.2.</p>
+<ul>
+<li>For information on upgrading, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/upgrade">Upgrading Apigee hybrid to version v1.15.2</a>.</li>
+<li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/big-picture">The big picture</a>.</li>
+</ul>
+<p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>]]></content>
+    <summary>A new version of Apigee hybrid, v1.15.2, was released on March 11, 2026. This patch release includes updated container images and is integrated with the Apigee hybrid Helm charts for easier upgrades. Refer to the documentation for details on upgrading or new installations.</summary>
+    <title>hybrid v1.15.2: Apigee hybrid v1.15.2 released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-03-11:fixed:1</id>
+    <published>2026-03-11T00:00:00+00:00</published>
+    <updated>2026-03-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>Fixed in this release</h4>
+<p>| Bug ID | Description |
+| --- | --- |
+| <strong>469694040</strong> | <strong>Fixed an issue where custom Java security policies were intermittently not applied during runtime pod restarts or environment contract updates, which could lead to "Permission denied" errors in Java callouts.</strong> |</p>]]></content>
+    <summary>Resolved an intermittent issue where custom Java security policies were not applied during runtime pod restarts or environment contract updates. This fix prevents "Permission denied" errors in Java callouts, ensuring consistent security policy enforcement.</summary>
+    <title>Fixed: Java Security Policy Application Fix</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-03-11:security:2</id>
     <published>2026-03-11T00:00:00+00:00</published>
     <updated>2026-03-11T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>| Bug ID | Description |
@@ -34,36 +64,6 @@
 | <strong>N/A</strong> | <strong>Security fixes for <code>apigee-udca</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24051">CVE-2026-24051</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-68121">CVE-2025-68121</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-68119">CVE-2025-68119</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61732">CVE-2025-61732</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61731">CVE-2025-61731</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61729">CVE-2025-61729</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61726">CVE-2025-61726</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61725">CVE-2025-61725</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61723">CVE-2025-61723</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-58188">CVE-2025-58188</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-58187">CVE-2025-58187</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-47907">CVE-2025-47907</a> |</p>]]></content>
     <summary>Recent security fixes have been applied to various Apigee components, including apigee-synchronizer, apigee-runtime, apigee-mart-server, apigee-hybrid-cassandra, and others. These updates address multiple reported vulnerabilities to enhance system security.</summary>
     <title>Security: Security Updates for Apigee Components</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-03-11:fixed:1</id>
-    <published>2026-03-11T00:00:00+00:00</published>
-    <updated>2026-03-11T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<h4>Fixed in this release</h4>
-<p>| Bug ID | Description |
-| --- | --- |
-| <strong>469694040</strong> | <strong>Fixed an issue where custom Java security policies were intermittently not applied during runtime pod restarts or environment contract updates, which could lead to "Permission denied" errors in Java callouts.</strong> |</p>]]></content>
-    <summary>Resolved an intermittent issue where custom Java security policies were not applied during runtime pod restarts or environment contract updates. This fix prevents "Permission denied" errors in Java callouts, ensuring consistent security policy enforcement.</summary>
-    <title>Fixed: Java Security Policy Application Fix</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-03-11:hybrid v1.15.2:2</id>
-    <published>2026-03-11T00:00:00+00:00</published>
-    <updated>2026-03-11T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>On March 11, 2026 we released an updated version of the Apigee hybrid software, v1.15.2.</p>
-<ul>
-<li>For information on upgrading, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/upgrade">Upgrading Apigee hybrid to version v1.15.2</a>.</li>
-<li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/big-picture">The big picture</a>.</li>
-</ul>
-<p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>]]></content>
-    <summary>A new version of Apigee hybrid, v1.15.2, was released on March 11, 2026. This patch release includes updated container images and is integrated with the Apigee hybrid Helm charts for easier upgrades. Refer to the documentation for details on upgrading or new installations.</summary>
-    <title>hybrid v1.15.2: Apigee hybrid v1.15.2 released</title>
   </entry>
   <entry>
     <author>

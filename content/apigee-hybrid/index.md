@@ -18,10 +18,6 @@
 | **479872706** | **Resolved an issue that prevented loading API products, apps, and developers after migrating data to Apigee hybrid 1.16.0 in configurations using Workload Identity Federation (WIF) with an HTTP Forward Proxy.** |
 | **479040521** | **Resolved a regression where the `apigee-operator-guardrails-sa` ServiceAccount was not correctly created on AKS and EKS platforms with Federated Workload Identity enabled.** |
 
-### Announcement
-
-
-
 ### hybrid 1.16.0-hotfix.1
 
 On March 12, 2026 we released an update to Apigee hybrid 1.16.0-hotfix.1.

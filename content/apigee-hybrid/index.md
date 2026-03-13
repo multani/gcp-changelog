@@ -1,5 +1,124 @@
 # Apigee hybrid
 
+## 2026-03-12
+
+### Fixed
+
+#### Fixed in this release
+
+| Bug ID | Description |
+| --- | --- |
+| **490308770** | **Fixed malformed `http_proxy` and `https_proxy` strings in Helm templates that occurred when using authenticated outbound proxy configurations.** |
+| **488417252** | **Fixed an issue where the Apigee Operator guardrails pod failed to run on EKS with Workload Identity Federation (WIF) by ensuring it runs as the federated principal rather than the default service account.** |
+| **485526221** | **Removed the deprecated `apigee-stackdriver-logging-agent` image from the `apigee-pull-push.sh` tool, resolving image pull failures during automated deployments.** |
+| **484405364** | **Helm chart images with the `1.16.0-hotfix.1` tag are available for download.** |
+| **482209901** | **Added the `watch` permission to the `apigee-manager` role to allow the controller to monitor Deployment resources and resolve watch failures in the namespace.** |
+| **482077193** | **Fixed an issue where proxy chaining failed with HTTP 404 `route_not_found` errors in multi-organization, single-namespace configurations.** |
+| **481793880** | **Fixed a bug in the `apigeeorg` admission webhook controller that prevented upgrading organizations when monetization was enabled.** |
+| **479872706** | **Resolved an issue that prevented loading API products, apps, and developers after migrating data to Apigee hybrid 1.16.0 in configurations using Workload Identity Federation (WIF) with an HTTP Forward Proxy.** |
+| **479040521** | **Resolved a regression where the `apigee-operator-guardrails-sa` ServiceAccount was not correctly created on AKS and EKS platforms with Federated Workload Identity enabled.** |
+
+### Announcement
+
+
+
+### hybrid 1.16.0-hotfix.1
+
+On March 12, 2026 we released an update to Apigee hybrid 1.16.0-hotfix.1.
+
+**Important:** If your installation is already on Apigee hybrid v1.16.0, use the following procedure to apply this hotfix. For new installations, see [The big picture](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture) and then apply the hotfix to the new installation with the following instructions.
+
+#### Apply this hotfix with the following steps:
+
+**Note:** This release reflects a change to both the component images and the Helm chart templates.
+
+Apply this hotfix with the following steps:
+
+1. In your hybrid Helm charts directory, download the Apigee hybrid 1.16.0-hotfix.1 Helm charts into your hybrid Helm charts directory with the following commands:
+
+   ```
+   export CHART_REPO=oci://us-docker.pkg.dev/apigee-release/apigee-hybrid-helm-charts
+   export CHART_VERSION=1.16.0-hotfix.1
+   helm pull $CHART_REPO/apigee-operator --version $CHART_VERSION --untar
+   helm pull $CHART_REPO/apigee-datastore --version $CHART_VERSION --untar
+   helm pull $CHART_REPO/apigee-env --version $CHART_VERSION --untar
+   helm pull $CHART_REPO/apigee-ingress-manager --version $CHART_VERSION --untar
+   helm pull $CHART_REPO/apigee-org --version $CHART_VERSION --untar
+   helm pull $CHART_REPO/apigee-redis --version $CHART_VERSION --untar
+   helm pull $CHART_REPO/apigee-telemetry --version $CHART_VERSION --untar
+   helm pull $CHART_REPO/apigee-virtualhost --version $CHART_VERSION --untar
+   ```
+2. Install the hotfix release for Apigee operators, beginning with a dry run:
+
+   ```
+   helm upgrade operator apigee-operator/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     -f overrides.yaml \
+     --dry-run=server
+   ```
+3. After the dry run is successful, install the hotfix release for Apigee operators:
+
+   ```
+   helm upgrade operator apigee-operator/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     -f overrides.yaml
+   ```
+4. Install the hotfix release for your organization, beginning with a dry run:
+
+   ```
+   helm upgrade $ORG_NAME apigee-org/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     -f overrides.yaml \
+     --dry-run=server
+   ```
+5. After the dry run is successful, install the hotfix release for your organization:
+
+   ```
+   helm upgrade $ORG_NAME apigee-org/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     -f overrides.yaml
+   ```
+6. Verify the organization chart by checking the state:
+
+   ```
+   kubectl -n APIGEE_NAMESPACE get apigeeorg
+   ```
+7. Install the hotfix release for your environments. Repeat the following steps for each environment, beginning with a dry run:
+
+   ```
+   helm upgrade ENV_RELEASE_NAME apigee-env/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     --set env=$ENV_NAME \
+     -f overrides.yaml \
+     --dry-run=server
+   ```
+8. After the dry run is successful, install the hotfix release for your environment:
+
+   ```
+   helm upgrade ENV_RELEASE_NAME apigee-env/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     --set env=$ENV_NAME \
+     -f overrides.yaml
+   ```
+9. Verify the environment chart by checking the state:
+
+   ```
+   kubectl -n APIGEE_NAMESPACE get apigeeenv
+   ```
+
+---
 ## 2026-03-11
 
 ### hybrid v1.15.2

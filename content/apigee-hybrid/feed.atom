@@ -2,9 +2,115 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee hybrid</title>
   <subtitle>Changelog for Google Cloud product: Apigee hybrid</subtitle>
-  <updated>2026-03-11T00:00:00+00:00</updated>
+  <updated>2026-03-12T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-hybrid</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-hybrid/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-03-12:fixed:0</id>
+    <published>2026-03-12T00:00:00+00:00</published>
+    <updated>2026-03-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>Fixed in this release</h4>
+<p>| Bug ID | Description |
+| --- | --- |
+| <strong>490308770</strong> | <strong>Fixed malformed <code>http_proxy</code> and <code>https_proxy</code> strings in Helm templates that occurred when using authenticated outbound proxy configurations.</strong> |
+| <strong>488417252</strong> | <strong>Fixed an issue where the Apigee Operator guardrails pod failed to run on EKS with Workload Identity Federation (WIF) by ensuring it runs as the federated principal rather than the default service account.</strong> |
+| <strong>485526221</strong> | <strong>Removed the deprecated <code>apigee-stackdriver-logging-agent</code> image from the <code>apigee-pull-push.sh</code> tool, resolving image pull failures during automated deployments.</strong> |
+| <strong>484405364</strong> | <strong>Helm chart images with the <code>1.16.0-hotfix.1</code> tag are available for download.</strong> |
+| <strong>482209901</strong> | <strong>Added the <code>watch</code> permission to the <code>apigee-manager</code> role to allow the controller to monitor Deployment resources and resolve watch failures in the namespace.</strong> |
+| <strong>482077193</strong> | <strong>Fixed an issue where proxy chaining failed with HTTP 404 <code>route_not_found</code> errors in multi-organization, single-namespace configurations.</strong> |
+| <strong>481793880</strong> | <strong>Fixed a bug in the <code>apigeeorg</code> admission webhook controller that prevented upgrading organizations when monetization was enabled.</strong> |
+| <strong>479872706</strong> | <strong>Resolved an issue that prevented loading API products, apps, and developers after migrating data to Apigee hybrid 1.16.0 in configurations using Workload Identity Federation (WIF) with an HTTP Forward Proxy.</strong> |
+| <strong>479040521</strong> | <strong>Resolved a regression where the <code>apigee-operator-guardrails-sa</code> ServiceAccount was not correctly created on AKS and EKS platforms with Federated Workload Identity enabled.</strong> |</p>]]></content>
+    <summary>This release addresses several critical issues, including fixes for proxy configurations, guardrails pod failures on EKS with WIF, and image pull failures. It also resolves issues with proxy chaining, organization upgrades with monetization, and data loading after migration with WIF and HTTP Forward Proxy. Additionally, a regression affecting ServiceAccount creation on AKS and EKS with Federated Workload Identity has been resolved.</summary>
+    <title>Fixed: Apigee Operator Release Notes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-03-12:announcement:1</id>
+    <published>2026-03-12T00:00:00+00:00</published>
+    <updated>2026-03-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary>Exciting new artificial intelligence features are now available. These advancements aim to enhance user experience and productivity. Explore the latest innovations to see how they can benefit you.</summary>
+    <title>Announcement: New AI features launched</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-03-12:hybrid 1.16.0-hotfix.1:2</id>
+    <published>2026-03-12T00:00:00+00:00</published>
+    <updated>2026-03-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On March 12, 2026 we released an update to Apigee hybrid 1.16.0-hotfix.1.</p>
+<p><strong>Important:</strong> If your installation is already on Apigee hybrid v1.16.0, use the following procedure to apply this hotfix. For new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture">The big picture</a> and then apply the hotfix to the new installation with the following instructions.</p>
+<h4>Apply this hotfix with the following steps:</h4>
+<p><strong>Note:</strong> This release reflects a change to both the component images and the Helm chart templates.</p>
+<p>Apply this hotfix with the following steps:</p>
+<ol>
+<li>In your hybrid Helm charts directory, download the Apigee hybrid 1.16.0-hotfix.1 Helm charts into your hybrid Helm charts directory with the following commands:</li>
+</ol>
+<p><code>export CHART_REPO=oci://us-docker.pkg.dev/apigee-release/apigee-hybrid-helm-charts
+   export CHART_VERSION=1.16.0-hotfix.1
+   helm pull $CHART_REPO/apigee-operator --version $CHART_VERSION --untar
+   helm pull $CHART_REPO/apigee-datastore --version $CHART_VERSION --untar
+   helm pull $CHART_REPO/apigee-env --version $CHART_VERSION --untar
+   helm pull $CHART_REPO/apigee-ingress-manager --version $CHART_VERSION --untar
+   helm pull $CHART_REPO/apigee-org --version $CHART_VERSION --untar
+   helm pull $CHART_REPO/apigee-redis --version $CHART_VERSION --untar
+   helm pull $CHART_REPO/apigee-telemetry --version $CHART_VERSION --untar
+   helm pull $CHART_REPO/apigee-virtualhost --version $CHART_VERSION --untar</code>
+2. Install the hotfix release for Apigee operators, beginning with a dry run:</p>
+<p><code>helm upgrade operator apigee-operator/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     -f overrides.yaml \
+     --dry-run=server</code>
+3. After the dry run is successful, install the hotfix release for Apigee operators:</p>
+<p><code>helm upgrade operator apigee-operator/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     -f overrides.yaml</code>
+4. Install the hotfix release for your organization, beginning with a dry run:</p>
+<p><code>helm upgrade $ORG_NAME apigee-org/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     -f overrides.yaml \
+     --dry-run=server</code>
+5. After the dry run is successful, install the hotfix release for your organization:</p>
+<p><code>helm upgrade $ORG_NAME apigee-org/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     -f overrides.yaml</code>
+6. Verify the organization chart by checking the state:</p>
+<p><code>kubectl -n APIGEE_NAMESPACE get apigeeorg</code>
+7. Install the hotfix release for your environments. Repeat the following steps for each environment, beginning with a dry run:</p>
+<p><code>helm upgrade ENV_RELEASE_NAME apigee-env/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     --set env=$ENV_NAME \
+     -f overrides.yaml \
+     --dry-run=server</code>
+8. After the dry run is successful, install the hotfix release for your environment:</p>
+<p><code>helm upgrade ENV_RELEASE_NAME apigee-env/ \
+     --install \
+     --namespace APIGEE_NAMESPACE \
+     --atomic \
+     --set env=$ENV_NAME \
+     -f overrides.yaml</code>
+9. Verify the environment chart by checking the state:</p>
+<p><code>kubectl -n APIGEE_NAMESPACE get apigeeenv</code></p>]]></content>
+    <summary>An update to Apigee hybrid 1.16.0-hotfix.1 was released on March 12, 2026. This release includes updated component images and Helm chart templates. Follow the provided steps to apply this hotfix to your existing installation.</summary>
+    <title>hybrid 1.16.0-hotfix.1: Apigee Hybrid 1.16.0-hotfix.1 Release</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

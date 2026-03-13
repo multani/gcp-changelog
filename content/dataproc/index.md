@@ -13,14 +13,6 @@
 ---
 ## 2026-03-08
 
-### Feature
-
-Enabled Optimized Iceberg Vacuum by default in Spark for premium tier clusters.
-When enabled, Dataproc will use a shuffle-based approach to rewrite data files,
-which can improve performance for MERGE queries that modify a large number of
-files. To disable this feature, set `spark.dataproc.sql.optimizer.lowShuffleMerge.enabled`
-to `false`.
-
 ### Announcement
 
 New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions):

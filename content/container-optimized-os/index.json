@@ -819,6 +819,22 @@
         }
       },
       {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service Announcement",
+          "summary": "We are announcing a significant change to our services. This update aims to improve performance and user experience, introducing new features and optimizations. Further details will be shared shortly."
+        }
+      },
+      {
+        "kind": "cos-dev-133-19566-0-0",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.74](https://cos.googlesource.com/third_party/kernel/+/ec8a48be0774f726990a93e2afead08ee16b3f2c ) | v27.5.1 | v2.2.1 | [See List](https://storage.googleapis.com/cos-tools/19566.0.0/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "New Container-Optimized OS version released",
+          "summary": "A new version of Container-Optimized OS has been released, featuring updated Kernel, Docker, and Containerd. This release also includes support for GPU drivers, with detailed information available in the provided links."
+        }
+      },
+      {
         "kind": "Security",
         "content": "Fixed CVE-2026-23154 in the Linux kernel.",
         "summary": {
@@ -1080,6 +1096,206 @@
         "summary": {
           "title": "Linux kernel security fix",
           "summary": "A security vulnerability in the Linux kernel, CVE-2026-23168, has been addressed. This update ensures the stability and security of systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added support for NVIDIA driver v535.288.01, v570.211.01 and v580.126.09.",
+        "summary": {
+          "title": "NVIDIA Driver Updates",
+          "summary": "We've updated our NVIDIA driver support to include versions v535.288.01, v570.211.01, and v580.126.09. This enhancement ensures compatibility with the latest NVIDIA hardware and software features."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-db/sqlite to v3.51.2.",
+        "summary": {
+          "title": "SQLite updated",
+          "summary": "The SQLite database has been upgraded to version 3.51.2. This update addresses issues and improves performance for database operations."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/oslogin to v20260128.00.",
+        "summary": {
+          "title": "OS Login updated",
+          "summary": "The OS Login component has been updated to version v20260128.00. This update includes necessary fixes and improvements."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Upgraded containerd to v2.2.1.",
+        "summary": {
+          "title": "Containerd upgraded to v2.2.1",
+          "summary": "We have upgraded containerd to version 2.2.1. This update includes improvements and bug fixes for the container runtime."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/gentoo-functions to v1.7.6.",
+        "summary": {
+          "title": "Gentoo functions updated",
+          "summary": "Gentoo functions have been updated to version 1.7.6. This update addresses recent issues and improves overall functionality."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/less to v692.",
+        "summary": {
+          "title": "less upgraded to v692",
+          "summary": "The sys-apps/less package has been upgraded to version 692. This update addresses known issues and improves stability."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/google-guest-agent to v20260121.00.",
+        "summary": {
+          "title": "Guest agent updated",
+          "summary": "The app-admin/google-guest-agent has been updated to version v20260121.00. This fix ensures improved functionality and stability."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/oslogin to v20260129.00.",
+        "summary": {
+          "title": "OS Login Component Updated",
+          "summary": "The OS Login component has been upgraded to version v20260129.00. This update includes recent changes and improvements to the component's functionality."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated dev-libs/openssl to v3.5.5. This resolves CVE-2025-15467.",
+        "summary": {
+          "title": "OpenSSL Security Update",
+          "summary": "The OpenSSL library has been updated to version 3.5.5, addressing a critical security vulnerability identified as CVE-2025-15467. This update is essential for maintaining the security and integrity of systems relying on OpenSSL. We recommend applying this patch as soon as possible to protect against potential threats."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-libs/libnetfilter\\_conntrack to v1.1.1.",
+        "summary": {
+          "title": "libnetfilter_conntrack upgraded to v1.1.1",
+          "summary": "The net-libs/libnetfilter_conntrack package has been successfully upgraded to version 1.1.1. This update addresses previous issues and improves the overall stability of the netfilter conntrack functionality."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-0915 in sys-apps/glibc.",
+        "summary": {
+          "title": "Security fix for glibc",
+          "summary": "A security vulnerability in sys-apps/glibc, identified as CVE-2026-0915, has been addressed. This update ensures the stability and security of systems relying on glibc. Users are advised to apply the patch to protect against potential exploits."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-f8db647 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security fix",
+          "summary": "A security vulnerability in the Linux kernel, identified as KCTF-f8db647, has been resolved. This fix enhances the overall security posture of systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added support for 590.44.01 and 590.48.01 NVIDIA driver for NVIDIA\\_RTX\\_PRO\\_6000",
+        "summary": {
+          "title": "NVIDIA Driver Support Extended",
+          "summary": "We've expanded support to include NVIDIA driver versions 590.44.01 and 590.48.01 for the NVIDIA RTX PRO 6000. This update enhances compatibility and performance for users of this powerful hardware."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded net-misc/curl to version 8.18.0. This fixes CVE-2025-13034, CVE-2025-14017, CVE-2025-14524, CVE-2025-14819, CVE-2025-15079, and CVE-2025-15224.",
+        "summary": {
+          "title": "Security update for curl",
+          "summary": "The net-misc/curl package has been updated to version 8.18.0. This update addresses several critical security vulnerabilities, including CVE-2025-13034, CVE-2025-14017, CVE-2025-14524, CVE-2025-14819, CVE-2025-15079, and CVE-2025-15224, enhancing overall system security."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-e3f000f in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security fix",
+          "summary": "A security vulnerability in the Linux kernel, KCTF-e3f000f, has been resolved. This update ensures improved system security and stability. Users are advised to apply the patch to protect their systems."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-process/procps to v4.0.6.",
+        "summary": {
+          "title": "Updated procps to v4.0.6",
+          "summary": "The sys-process/procps package has been upgraded to version 4.0.6. This update addresses recent issues and improves system process management."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated dev-libs/libxml2 to version 2.14.6. This resolves CVE-2025-6021.",
+        "summary": {
+          "title": "Security update for libxml2",
+          "summary": "A security vulnerability (CVE-2025-6021) in libxml2 has been addressed. The library has been updated to version 2.14.6 to resolve this issue. This update is important for maintaining system security."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-15281 and CVE-2026-0861 in sys-libs/glibc.",
+        "summary": {
+          "title": "Security Update for glibc",
+          "summary": "Critical security vulnerabilities in the glibc library have been addressed. This update resolves CVE-2025-15281 and CVE-2026-0861, ensuring the stability and security of your systems."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Made it so that /run is mounted as noexec.",
+        "summary": {
+          "title": "Run filesystem mounted noexec",
+          "summary": "The /run filesystem is now mounted with the noexec option. This change enhances security by preventing the execution of binaries from this location."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Updated the Linux kernel to v6.12.74.",
+        "summary": {
+          "title": "Linux kernel updated",
+          "summary": "The Linux kernel has been updated to version 6.12.74. This update brings important security patches and performance improvements to the system."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-40147 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability, CVE-2025-40147, affecting the Linux kernel has been resolved. This update ensures the integrity and safety of systems running the Linux kernel. Users are advised to apply the patch to protect against potential exploits."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for NVIDIA driver v580.126.09-grid for NVIDIA\\_RTX\\_PRO\\_6000 GPU type.",
+        "summary": {
+          "title": "NVIDIA Driver Update for RTX PRO 6000",
+          "summary": "Support has been added for NVIDIA driver v580.126.09-grid on the NVIDIA RTX PRO 6000 GPU type. This update enhances compatibility and performance for this specific GPU configuration."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-misc/socat to v1.8.1.0-r1.",
+        "summary": {
+          "title": "socat upgraded to v1.8.1.0-r1",
+          "summary": "The net-misc/socat package has been successfully upgraded to version 1.8.1.0-r1. This update addresses any issues present in the previous version."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-misc/rsync to v3.4.1-r2.",
+        "summary": {
+          "title": "rsync upgraded",
+          "summary": "The rsync package has been upgraded to version 3.4.1-r2. This update addresses recent issues and improves stability."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Enabled buffer overflow detection for kernel str/mem functions.",
+        "summary": {
+          "title": "Kernel string function buffer overflow detection enabled",
+          "summary": "Buffer overflow detection has been enabled for kernel string and memory functions. This enhancement improves system stability and security by preventing potential exploits related to buffer overflows in these critical operations."
         }
       },
       {

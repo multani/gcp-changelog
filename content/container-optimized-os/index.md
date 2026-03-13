@@ -454,6 +454,17 @@ Fixed CVE-2026-23212 in the Linux kernel.
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.12.67](https://cos.googlesource.com/third_party/kernel/+/db611b456979827c0f71190bd2fd9868cec57510 ) | v27.5.1 | v2.2.0 | [See List](https://storage.googleapis.com/cos-tools/19506.0.32/lakitu/gpu_driver_versions.textproto) |
 
+### Change
+
+
+
+### cos-dev-133-19566-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.74](https://cos.googlesource.com/third_party/kernel/+/ec8a48be0774f726990a93e2afead08ee16b3f2c ) | v27.5.1 | v2.2.1 | [See List](https://storage.googleapis.com/cos-tools/19566.0.0/lakitu/gpu_driver_versions.textproto) |
+
 ### Security
 
 Fixed CVE-2026-23154 in the Linux kernel.
@@ -585,6 +596,106 @@ Added support for NVIDIA driver v580.126.09-grid for NVIDIA\_RTX\_PRO\_6000 GPU 
 ### Security
 
 Fixed CVE-2026-23168 in the Linux kernel.
+
+### Feature
+
+Added support for NVIDIA driver v535.288.01, v570.211.01 and v580.126.09.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.51.2.
+
+### Fixed
+
+Upgraded app-admin/oslogin to v20260128.00.
+
+### Change
+
+Upgraded containerd to v2.2.1.
+
+### Fixed
+
+Upgraded sys-apps/gentoo-functions to v1.7.6.
+
+### Fixed
+
+Upgraded sys-apps/less to v692.
+
+### Fixed
+
+Upgraded app-admin/google-guest-agent to v20260121.00.
+
+### Fixed
+
+Upgraded app-admin/oslogin to v20260129.00.
+
+### Security
+
+Updated dev-libs/openssl to v3.5.5. This resolves CVE-2025-15467.
+
+### Fixed
+
+Upgraded net-libs/libnetfilter\_conntrack to v1.1.1.
+
+### Security
+
+Fixed CVE-2026-0915 in sys-apps/glibc.
+
+### Security
+
+Fixed KCTF-f8db647 in the Linux kernel.
+
+### Feature
+
+Added support for 590.44.01 and 590.48.01 NVIDIA driver for NVIDIA\_RTX\_PRO\_6000
+
+### Security
+
+Upgraded net-misc/curl to version 8.18.0. This fixes CVE-2025-13034, CVE-2025-14017, CVE-2025-14524, CVE-2025-14819, CVE-2025-15079, and CVE-2025-15224.
+
+### Security
+
+Fixed KCTF-e3f000f in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-process/procps to v4.0.6.
+
+### Security
+
+Updated dev-libs/libxml2 to version 2.14.6. This resolves CVE-2025-6021.
+
+### Security
+
+Fixed CVE-2025-15281 and CVE-2026-0861 in sys-libs/glibc.
+
+### Change
+
+Made it so that /run is mounted as noexec.
+
+### Change
+
+Updated the Linux kernel to v6.12.74.
+
+### Security
+
+Fixed CVE-2025-40147 in the Linux kernel.
+
+### Fixed
+
+Added support for NVIDIA driver v580.126.09-grid for NVIDIA\_RTX\_PRO\_6000 GPU type.
+
+### Fixed
+
+Upgraded net-misc/socat to v1.8.1.0-r1.
+
+### Fixed
+
+Upgraded net-misc/rsync to v3.4.1-r2.
+
+### Fixed
+
+Enabled buffer overflow detection for kernel str/mem functions.
 
 ### Change
 

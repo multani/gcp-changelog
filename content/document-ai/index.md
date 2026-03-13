@@ -1,5 +1,14 @@
 # Document AI
 
+## 2026-03-13
+
+### Feature
+
+[Custom splitter](https://docs.cloud.google.com/document-ai/docs/custom-splitter) model
+`pretrained-splitter-v1.5-2025-07-14` is available in
+[General Availability (GA)](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-03-03
 
 ### Feature

@@ -1,5 +1,21 @@
 # Cloud Run
 
+## 2026-03-13
+
+### Feature
+
+[Configuring Identity-Aware Proxy (IAP) directly on Cloud Run](https://docs.cloud.google.com/run/docs/securing/identity-aware-proxy-cloud-run)
+to secure your services without the need for load balancers is in
+[General Availability (GA)](https://cloud.google.com/products?e=48754805#product-launch-stages).
+
+---
+## 2026-03-12
+
+### Feature
+
+Support for [Go 1.26 runtime](https://docs.cloud.google.com/run/docs/runtime-support#go) is in [General Availability](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-03-03
 
 ### Feature

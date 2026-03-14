@@ -1,5 +1,16 @@
 # Generative AI on Vertex AI
 
+## 2026-03-12
+
+### Feature
+
+**Partner model evaluations**
+
+The Gen AI evaluation service supports evaluating partner models, such as Anthropic
+and Llama models. For more information, see
+[Perform evaluation using the console](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/evaluation-genai-console#evaluate_partner_models).
+
+---
 ## 2026-03-03
 
 ### Feature

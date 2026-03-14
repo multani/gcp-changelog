@@ -1,5 +1,12 @@
 # Dataproc Metastore
 
+## 2026-03-13
+
+### Deprecated
+
+The Hive Metastore versions 1.2.2 and 2.2.0 are deprecated. You can no longer create services with these versions. Existing services will continue to function.
+
+---
 ## 2026-01-13
 
 ### Deprecated

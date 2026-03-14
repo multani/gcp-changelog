@@ -1,5 +1,17 @@
 # Pub/Sub
 
+## 2026-03-13
+
+### Feature
+
+You can now use the [Pub/Sub remote MCP server](https://docs.cloud.google.com/pubsub/docs/use-pubsub-mcp) to
+manage Pub/Sub resources. You can create, list, get, update, and delete Pub/Sub
+topics, subscriptions, and snapshots, as well as publish messages to topics.
+
+This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-01-20
 
 ### Feature

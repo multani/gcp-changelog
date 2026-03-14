@@ -2,6 +2,15 @@
 
 ## 2026-03-13
 
+### Gemini 3.1 Pro and 3.0 Flash are available (Preview)
+
+[Gemini 3.1 Pro and Gemini 3.0 Flash](https://docs.cloud.google.com/gemini/docs/codeassist/gemini-3)
+are now available to Gemini Code Assist users in VS Code and IntelliJ, in
+[Preview](https://cloud.google.com/products#product-launch-stages). You can use
+these models for [agent mode](https://docs.cloud.google.com/gemini/docs/codeassist/agent-mode),
+[chat](https://docs.cloud.google.com/gemini/docs/codeassist/chat-gemini), and
+[code generation](https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#generate_code_with_prompts).
+
 ### Other
 
 
@@ -9,6 +18,15 @@
 ### Bug fixes in VS Code
 
 Various bug fixes and minor product enhancements.
+
+### Gemini 3.1 Pro and 3.0 Flash are available (Preview)
+
+[Gemini 3.1 Pro and Gemini 3.0 Flash](https://docs.cloud.google.com/gemini/docs/codeassist/gemini-3)
+are now available to Gemini Code Assist users in VS Code and IntelliJ, in
+[Preview](https://cloud.google.com/products#product-launch-stages). You can use
+these models for [agent mode](https://docs.cloud.google.com/gemini/docs/codeassist/agent-mode),
+[chat](https://docs.cloud.google.com/gemini/docs/codeassist/chat-gemini), and
+[code generation](https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#generate_code_with_prompts).
 
 ---
 ## 2026-03-06

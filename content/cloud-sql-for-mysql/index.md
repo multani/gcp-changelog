@@ -1,5 +1,17 @@
 # Cloud SQL for MySQL
 
+## 2026-03-13
+
+### Feature
+
+You can now enable automatic server certificate rotation for your Cloud SQL instance.
+This feature is specifically designed for instances utilizing the Certificate
+Authority Service (CAS). Automatic server certificate rotation helps you maintain high security standards while removing the operational burden of manual rotation.
+
+For more information about enabling automatic server certificate rotation for
+your instance, see [Enable automatic server certificate rotation](https://docs.cloud.google.com/sql/docs/mysql/manage-ssl-instance#automatic-server-certificate-rotation-cas).
+
+---
 ## 2026-03-09
 
 ### Feature

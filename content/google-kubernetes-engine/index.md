@@ -1,5 +1,19 @@
 # Google Kubernetes Engine
 
+## 2026-03-13
+
+### Feature
+
+In GKE version 1.35 and later, all organization and cluster
+administrators can granularly control which privileged Autopilot
+partner workloads can run in GKE clusters. Additionally,
+approved customers can authorize and run their own privileged workloads in
+Autopilot mode by using custom allowlists.
+
+For more information, see
+[About Autopilot privileged workloads](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/about-autopilot-privileged-workloads).
+
+---
 ## 2026-03-12
 
 ### Change

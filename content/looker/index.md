@@ -29,10 +29,6 @@ It is no longer necessary to [manually configure OAuth credentials](https://docs
 
 An issue has been fixed where dashboard buttons that open links in a new tab could fail to work properly when cookieless embed was enabled. This feature now performs as expected.
 
-### Feature
-
-The Looker API now includes Looker Conversational Analytics endpoints that you can use with applications that embed Looker to create and manage agents, conversations, and messages.
-
 ### Fixed
 
 An issue has been fixed where certain tables were being unnecessarily truncated when they were downloaded to PDF. This feature now performs as expected.
@@ -40,6 +36,14 @@ An issue has been fixed where certain tables were being unnecessarily truncated 
 ### Fixed
 
 An issue has been fixed where the "raw" timeframe of a `dimension_group` could be displayed in a 12-hour format instead of the expected 24-hour format. This feature now performs as expected.
+
+### Feature
+
+The Looker API now includes Looker [Conversational Analytics endpoints](https://docs.cloud.google.com/looker/docs/reference/looker-api/latest/methods/ConversationalAnalytics) that you can use with applications that embed Looker to create and manage agents, conversations, and messages.
+
+For tips on using the Conversational Analytics endpoints, see the "[Best practices for using the ConversationalAnalytics API endpoints in Looker's API](https://docs.cloud.google.com/looker/docs/best-practices/ca-apis-in-looker-api-best-practices)" documentation page.
+
+**Note:** This item was updated March 13, 2026.
 
 ### Fixed
 

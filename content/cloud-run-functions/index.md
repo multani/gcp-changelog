@@ -1,5 +1,12 @@
 # Cloud Run functions
 
+## 2026-03-12
+
+### Feature
+
+Support for [Go 1.26 runtime](https://docs.cloud.google.com/functions/docs/concepts/execution-environment#go) is in [General Availability](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-03-03
 
 ### Feature

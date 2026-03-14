@@ -1,5 +1,17 @@
 # Dataproc
 
+## 2026-03-13
+
+### Announcement
+
+New [Serverless for Apache Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
+
+* 1.2.75
+* 2.2.75
+* 2.3.28
+* 3.0.11
+
+---
 ## 2026-03-11
 
 ### Announcement

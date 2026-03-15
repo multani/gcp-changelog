@@ -1,5 +1,126 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-03-14
+
+### Feature
+
+**Advanced reporting is available in French Canadian**
+
+Advanced reporting dashboards are now available in French Canadian. For more
+information about configuring your instance for location and language, see
+[Configure location and
+language](https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-location#configure-location-and-language).
+
+### Feature
+
+**Queue Performance dashboard**
+
+With the **Queue Performance - Calls** and **Queue Performance - Chats**
+dashboards, get performance metrics by queue for your call and chat sessions.
+This includes queue interaction volume, abandons, handle time, callbacks,
+sentiment, and CSAT. For more information, see [Queue Performance
+dashboards](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-performance).
+
+### Announcement
+
+**Advanced reporting dashboards 4.0**
+
+We've released version 4.0 of the advanced reporting dashboards.
+
+### Feature
+
+**Voicemails dashboard**
+
+With the **Voicemails** dashboard, get insights into the volume of voicemails
+received by your contact center and the performance of your agents in responding
+to them. This includes the number of voicemails received, the number of
+voicemails accessed by agents, and the average agent response time. For more
+information, see [Voicemails
+dashboard](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-voicemails).
+
+### Fixed
+
+The following issues were addressed in this release:
+
+* Fixed an issue where the **Start Time** and **End Time** filters weren't
+  correctly applied to summary metrics on the **Agent Performance** dashboard
+  and historical reports.
+* Fixed an issue where calls returned to queues due to agent connectivity or
+  microphone errors didn't appear in the **Queued Calls** dashboard.
+* Fixed an issue on the **CSAT Dashboard - Calls** dashboard where the
+  direction in the **Direction** filter couldn't be selected.
+* Fixed an issue in dashboards with a **Time Format** filter. When users
+  selected **Seconds** in this filter, single-value tiles displayed decimals
+  instead of whole numbers.
+* Updated the format of time duration fields in Explores from HH:MM:SS to
+  MM:SS for durations of less than one hour. For example, `00:10:20` changed
+  to `10:20`.
+* Fixed an issue where the **Total Failed** metric incorrectly counted a
+  maximum of one failure per call or chat session.
+* Fixed time duration fields so that values represent the number of seconds
+  rather than a fraction of a day.
+* Fixed an issue where the **Queue Abandon %** tile was missing from the
+  **Abandons** dashboards.
+* Fixed an issue on the **Failed Sessions** dashboards where the **Queue
+  Name** column of the **Historical** table and the **Queue Name** filter
+  weren't appearing.
+* Fixed an issue where the **Time Format** filter was missing from dashboards.
+* In the **Real-time Calls**, **Real-time Chats**, **Queue Group
+  Performance**, and **Email** dashboards, the naming of fields such as
+  "assigned at", "created at", and "ended at" was improved in the Explores to
+  make them clearer. For example, on the **Real-time Chats - Chats Connected**
+  dashboard, in the **Chat Metrics (Live)** Explore, **Chat >
+  Started At Date > Date** and **Chat > Started At Date
+  > Month** changed to **Chat > Started At >
+  Started At Date** and **Chat > Started At > Started At
+  Month**.
+* Fixed an issue where the **Agent preferences** table displayed an incorrect
+  date and timestamp.
+* Fixed an issue where the **Location** filter on the **All interactions for
+  Chats** dashboard didn't display data in some tiles.
+* Fixed an issue where deactivated users appeared in dashboards.
+* Fixed an issue where outbound calls that weren't associated with queues
+  appeared in the Queue Performance dashboard.
+* Fixed performance issues on the Agent Performance dashboard.
+* Fixed an issue on the Failed Interactions dashboard where the **Outbound
+  Phone Numbers** filter didn't display any values.
+* Fixed an issue where the **Queue Interactions** metric included the short
+  abandons count.
+* Fixed an issue on the Queue Group Performance - All dashboard where the
+  **Locations** filter didn't display all values.
+
+### Feature
+
+**Update to the Virtual agent dashboard for wait-time virtual agent metrics**
+
+The **Virtual agent** dashboard includes the following new tiles to measure the
+activity of wait-time virtual agents while end-users wait in queue:
+
+* **Total VA In-Queue Interactions** (calls only): the number of calls where
+  wait-time virtual agents were active while end-users were in a queue
+* **Total VA In-Queue Time** (calls only): the total time that wait-time
+  virtual agents were active while end-users were in a queue
+* **Avg VA In-Queue Time** (calls only): the average time that wait-time
+  virtual agents were active while end-users were in a queue
+
+For more information, see [Virtual agent
+dashboards](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-virtual-agent).
+
+### Feature
+
+**Improved analytics for Queue Interval and Channel Interval dashboards**
+
+We've improved the detailed information available for the **Queue Interval** and
+**Channel Interval** dashboards:
+
+* **Queue Interval dashboards**: Click a bar in the **SLA by Interval** tile
+  to get historical call or chat queue metrics for that interval.
+* **Channel Interval dashboards**: Click a data point on the trend line in the
+  **Service Level Trend**, **AHT Trend**, **Queue Time Trend**, **CSAT
+  Trend**, or **Transfer Trend** tile to get historical call or chat queue
+  metrics for that interval.
+
+---
 ## 2026-03-10
 
 ### Announcement

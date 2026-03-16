@@ -1,5 +1,20 @@
 # SAP on Google Cloud
 
+## 2026-03-10
+
+### Announcement
+
+**Workload Manager observability service is generally available for SAP workloads**
+
+The observability service of Workload Manager is generally
+available (GA). This service is a built-in monitoring solution for SAP workloads
+running on Google Cloud that helps you improve issue detection, root cause
+analysis, and troubleshooting.
+
+For more information, see
+[SAP observability overview](https://docs.cloud.google.com/workload-manager/docs/observe/sap/overview).
+
+---
 ## 2026-02-27
 
 ### Change

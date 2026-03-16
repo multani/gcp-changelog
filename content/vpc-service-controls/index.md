@@ -1,5 +1,15 @@
 # VPC Service Controls
 
+## 2026-03-16
+
+### Feature
+
+[General availability](https://cloud.google.com/products#product-launch-stages) support
+for the following integration:
+
+* [CX Agent Studio](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_cx_agent_studio)
+
+---
 ## 2026-03-10
 
 ### Feature

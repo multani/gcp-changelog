@@ -1,5 +1,58 @@
 # Google SecOps Marketplace
 
+## 2026-03-11
+
+### Change
+
+**CrowdStrike Falcon**: Version 72.0
+
+* Updated the handling of `Days To Expire` in the following action:
+
+  + **Upload IOCs**
+
+### Change
+
+**Case Federation**: Version 7.0
+
+* **Integration**: Updated to support self-service configuration.
+
+### Change
+
+**ProofPoint TAP**: Version 12.0
+
+* Updated input handling in the following action:
+
+  + **DecodeURL**
+
+### Change
+
+**Microsoft Teams**: Version 32.0
+
+* Updated reply handling in the following action:
+
+  + **Wait for Reply**
+
+### Change
+
+Introduced Light Theme compatibility for predefined widgets in the following
+integrations:
+
+* **CrowdStrike Falcon**: Version 72.0
+* **Google Chronicle**: Version 79.0
+* **Google Cloud API**: Version 8.0
+* **Google Cloud Asset Inventory**: Version 13.0
+* **Google Security Command Center**: Version 16.0
+* **Google Threat Intelligence**: Version 10.0
+* **HTTP v2**: Version 13.0
+* **MITRE ATT&CK**: Version 17.0
+* **ScreenshotMachine**: Version 14.0
+* **Siemplify**: Version 104.0
+* **UrlScan.io**: Version 28.0
+* **Vertex AI**: Version 5.0
+* **VirusTotalV3**: Version 38.0
+* **Vmware Carbon Black Cloud**: Version 37.0
+
+---
 ## 2026-03-03
 
 ### Feature

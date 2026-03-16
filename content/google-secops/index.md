@@ -1,5 +1,12 @@
 # Google SecOps
 
+## 2026-03-16
+
+### Announcement
+
+Phase 2 of the SOAR migration to Google Cloud has been extended from June 30th to September 30th, 2026.
+
+---
 ## 2026-03-12
 
 ### Announcement

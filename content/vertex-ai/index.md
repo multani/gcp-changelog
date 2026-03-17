@@ -1,5 +1,12 @@
 # Vertex AI
 
+## 2026-03-16
+
+### Deprecated
+
+Vertex Explainable AI is deprecated. For details, see [Vertex AI deprecations](https://docs.cloud.google.com/vertex-ai/docs/deprecations).
+
+---
 ## 2026-03-05
 
 ### Announcement

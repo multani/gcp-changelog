@@ -1,5 +1,17 @@
 # BigQuery
 
+## 2026-03-16
+
+### Feature
+
+BigQuery now lets you configure a [global default location](https://docs.cloud.google.com/bigquery/docs/default-configuration#global-settings).
+This setting is used if the location isn't set or can't be inferred from the
+request. You can set the default location at the organization or project level.
+
+This feature is [generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
+
+---
 ## 2026-03-12
 
 ### Change

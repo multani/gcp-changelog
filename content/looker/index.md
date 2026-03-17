@@ -1,5 +1,20 @@
 # Looker
 
+## 2026-03-16
+
+### Feature
+
+The [**Increased Row Limit** preview feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#increased-row-limit) feature is now available, and is disabled by default.
+
+When enabled, the **Increased Row Limit** preview feature lets admins set row limits up to 50,000 rows or datapoints for [map charts](https://docs.cloud.google.com/looker/docs/google-map-options), [scatterplot charts](https://docs.cloud.google.com/looker/docs/scatter-options), and [table charts](https://docs.cloud.google.com/looker/docs/table-options). Admins can set the limits for each visualization type in the [**Visualization limits**](https://docs.cloud.google.com/looker/docs/admin-panel-performance-center-content-guardrails#visualization-limits) setting on the **Content guardrails** admin page.
+
+Table charts, scatterplot charts, and Google Maps charts that have increased row limits are subject to additional limitations when you download, send, or schedule dashboards in PDF format. See [Downloading or delivering dashboards in rendered formats](https://docs.cloud.google.com/looker/docs/best-practices/rendered-format-options-downloading-delivering-dashboards) for more information about scheduling and downloading dashboard PDFs with increased row limits.
+
+### Announcement
+
+The following features will roll out over a four-day period starting March 17, 2026.
+
+---
 ## 2026-03-12
 
 ### Feature
@@ -7,6 +22,12 @@
 Looker (Google Cloud core) instances with public or hybrid connections now support [IP allowlists](https://docs.cloud.google.com/looker/docs/looker-core-ip-allowlist), which enhance security by ensuring that only traffic from specified IP addresses can access your instance. To connect to certain Google Cloud services, like Conversational Analytics or Connected Sheets, you can [select an option](https://docs.cloud.google.com/looker/docs/looker-core-ip-allowlist#allowlist-services) to automatically allowlist the necessary IP ranges for those services. You can configure an IP allowlist for an existing instance by editing it in the Google Cloud console.
 
 This feature will roll out to instances over the next week.
+
+### Change
+
+The [**Granular Dashboard Sizing** preview feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#granular-dashboard-sizing) is temporarily unavailable for some Looker instances. Any dashboard tiles that were resized during this feature's enablement will revert to Looker's original sizing constraints.
+
+(**Note**: This release note was added on March 16, 2026.)
 
 ---
 ## 2026-03-11

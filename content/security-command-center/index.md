@@ -1,5 +1,19 @@
 # Security Command Center
 
+## 2026-03-16
+
+### Change
+
+The names of [Event Threat Detection](https://docs.cloud.google.com/security-command-center/docs/concepts-event-threat-detection-overview)
+rules pertaining to [AI control
+plane](https://docs.cloud.google.com/security-command-center/docs/ai-threats#control-plane)
+have changed.
+
+The [Cloud Run Threat Detection](https://docs.cloud.google.com/security-command-center/docs/cloud-run-threat-detection-overview) rule
+`Privilege Escalation: Fileless Execution in /dev/shm` has been [shut
+down](https://docs.cloud.google.com/security-command-center/docs/deprecations#detector_shut_downs).
+
+---
 ## 2026-03-09
 
 ### Announcement

@@ -1,5 +1,12 @@
 # Firestore with MongoDB compatibility
 
+## 2026-03-16
+
+### Feature
+
+Support for [managing TTL indexes](https://cloud.google.com/firestore/mongodb-compatibility/docs/ttl#create_ttl_index) in the MongoDB API.
+
+---
 ## 2026-02-02
 
 ### Feature

@@ -2377,54 +2377,6 @@
 
 <h1 id="apigee-hybrid">Apigee hybrid</h1>
 <h2 id="2026-03-12">2026-03-12</h2>
-<h3 id="fixed">Fixed</h3>
-<h4 id="fixed-in-this-release">Fixed in this release</h4>
-<table>
-<thead>
-<tr>
-<th>Bug ID</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>490308770</strong></td>
-<td><strong>Fixed malformed <code>http_proxy</code> and <code>https_proxy</code> strings in Helm templates that occurred when using authenticated outbound proxy configurations.</strong></td>
-</tr>
-<tr>
-<td><strong>488417252</strong></td>
-<td><strong>Fixed an issue where the Apigee Operator guardrails pod failed to run on EKS with Workload Identity Federation (WIF) by ensuring it runs as the federated principal rather than the default service account.</strong></td>
-</tr>
-<tr>
-<td><strong>485526221</strong></td>
-<td><strong>Removed the deprecated <code>apigee-stackdriver-logging-agent</code> image from the <code>apigee-pull-push.sh</code> tool, resolving image pull failures during automated deployments.</strong></td>
-</tr>
-<tr>
-<td><strong>484405364</strong></td>
-<td><strong>Helm chart images with the <code>1.16.0-hotfix.1</code> tag are available for download.</strong></td>
-</tr>
-<tr>
-<td><strong>482209901</strong></td>
-<td><strong>Added the <code>watch</code> permission to the <code>apigee-manager</code> role to allow the controller to monitor Deployment resources and resolve watch failures in the namespace.</strong></td>
-</tr>
-<tr>
-<td><strong>482077193</strong></td>
-<td><strong>Fixed an issue where proxy chaining failed with HTTP 404 <code>route_not_found</code> errors in multi-organization, single-namespace configurations.</strong></td>
-</tr>
-<tr>
-<td><strong>481793880</strong></td>
-<td><strong>Fixed a bug in the <code>apigeeorg</code> admission webhook controller that prevented upgrading organizations when monetization was enabled.</strong></td>
-</tr>
-<tr>
-<td><strong>479872706</strong></td>
-<td><strong>Resolved an issue that prevented loading API products, apps, and developers after migrating data to Apigee hybrid 1.16.0 in configurations using Workload Identity Federation (WIF) with an HTTP Forward Proxy.</strong></td>
-</tr>
-<tr>
-<td><strong>479040521</strong></td>
-<td><strong>Resolved a regression where the <code>apigee-operator-guardrails-sa</code> ServiceAccount was not correctly created on AKS and EKS platforms with Federated Workload Identity enabled.</strong></td>
-</tr>
-</tbody>
-</table>
 <h3 id="hybrid-1160-hotfix1">hybrid 1.16.0-hotfix.1</h3>
 <p>On March 12, 2026 we released an update to Apigee hybrid 1.16.0-hotfix.1.</p>
 <p><strong>Important:</strong> If your installation is already on Apigee hybrid v1.16.0, use the following procedure to apply this hotfix. For new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture">The big picture</a> and then apply the hotfix to the new installation with the following instructions.</p>
@@ -2489,17 +2441,8 @@
      -f overrides.yaml</code>
 9. Verify the environment chart by checking the state:</p>
 <p><code>kubectl -n APIGEE_NAMESPACE get apigeeenv</code></p>
-<hr />
-<h2 id="2026-03-11">2026-03-11</h2>
-<h3 id="hybrid-v1152">hybrid v1.15.2</h3>
-<p>On March 11, 2026 we released an updated version of the Apigee hybrid software, v1.15.2.</p>
-<ul>
-<li>For information on upgrading, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/upgrade">Upgrading Apigee hybrid to version v1.15.2</a>.</li>
-<li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/big-picture">The big picture</a>.</li>
-</ul>
-<p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
-<h3 id="fixed_1">Fixed</h3>
-<h4 id="fixed-in-this-release_1">Fixed in this release</h4>
+<h3 id="fixed">Fixed</h3>
+<h4 id="fixed-in-this-release">Fixed in this release</h4>
 <table>
 <thead>
 <tr>
@@ -2509,11 +2452,45 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>469694040</strong></td>
-<td><strong>Fixed an issue where custom Java security policies were intermittently not applied during runtime pod restarts or environment contract updates, which could lead to "Permission denied" errors in Java callouts.</strong></td>
+<td><strong>490308770</strong></td>
+<td><strong>Fixed malformed <code>http_proxy</code> and <code>https_proxy</code> strings in Helm templates that occurred when using authenticated outbound proxy configurations.</strong></td>
+</tr>
+<tr>
+<td><strong>488417252</strong></td>
+<td><strong>Fixed an issue where the Apigee Operator guardrails pod failed to run on EKS with Workload Identity Federation (WIF) by ensuring it runs as the federated principal rather than the default service account.</strong></td>
+</tr>
+<tr>
+<td><strong>485526221</strong></td>
+<td><strong>Removed the deprecated <code>apigee-stackdriver-logging-agent</code> image from the <code>apigee-pull-push.sh</code> tool, resolving image pull failures during automated deployments.</strong></td>
+</tr>
+<tr>
+<td><strong>484405364</strong></td>
+<td><strong>Helm chart images with the <code>1.16.0-hotfix.1</code> tag are available for download.</strong></td>
+</tr>
+<tr>
+<td><strong>482209901</strong></td>
+<td><strong>Added the <code>watch</code> permission to the <code>apigee-manager</code> role to allow the controller to monitor Deployment resources and resolve watch failures in the namespace.</strong></td>
+</tr>
+<tr>
+<td><strong>482077193</strong></td>
+<td><strong>Fixed an issue where proxy chaining failed with HTTP 404 <code>route_not_found</code> errors in multi-organization, single-namespace configurations.</strong></td>
+</tr>
+<tr>
+<td><strong>481793880</strong></td>
+<td><strong>Fixed a bug in the <code>apigeeorg</code> admission webhook controller that prevented upgrading organizations when monetization was enabled.</strong></td>
+</tr>
+<tr>
+<td><strong>479872706</strong></td>
+<td><strong>Resolved an issue that prevented loading API products, apps, and developers after migrating data to Apigee hybrid 1.16.0 in configurations using Workload Identity Federation (WIF) with an HTTP Forward Proxy.</strong></td>
+</tr>
+<tr>
+<td><strong>479040521</strong></td>
+<td><strong>Resolved a regression where the <code>apigee-operator-guardrails-sa</code> ServiceAccount was not correctly created on AKS and EKS platforms with Federated Workload Identity enabled.</strong></td>
 </tr>
 </tbody>
 </table>
+<hr />
+<h2 id="2026-03-11">2026-03-11</h2>
 <h3 id="security">Security</h3>
 <table>
 <thead>
@@ -2597,6 +2574,29 @@
 </tr>
 </tbody>
 </table>
+<h3 id="fixed_1">Fixed</h3>
+<h4 id="fixed-in-this-release_1">Fixed in this release</h4>
+<table>
+<thead>
+<tr>
+<th>Bug ID</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>469694040</strong></td>
+<td><strong>Fixed an issue where custom Java security policies were intermittently not applied during runtime pod restarts or environment contract updates, which could lead to "Permission denied" errors in Java callouts.</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hybrid-v1152">hybrid v1.15.2</h3>
+<p>On March 11, 2026 we released an updated version of the Apigee hybrid software, v1.15.2.</p>
+<ul>
+<li>For information on upgrading, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/upgrade">Upgrading Apigee hybrid to version v1.15.2</a>.</li>
+<li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/big-picture">The big picture</a>.</li>
+</ul>
+<p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
 <hr />
 <h2 id="2026-02-06">2026-02-06</h2>
 <h3 id="hybrid-1160-hotfix1_1">hybrid 1.16.0-hotfix.1</h3>

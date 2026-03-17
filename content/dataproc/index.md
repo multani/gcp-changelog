@@ -25,6 +25,11 @@ New [Serverless for Apache Spark runtime versions](https://cloud.google.com/data
 ---
 ## 2026-03-08
 
+### Fixed
+
+* Fixed CVEs CVE-2025-58057, CVE-2025-53864, CVE-2025-68161, CVE-2025-48924 (partial), and CVE-2025-33042.
+* Upgraded hms-proxy to v0.0.78 to fix CVEs.
+
 ### Announcement
 
 New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions):
@@ -35,28 +40,8 @@ New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.goog
 
 **Rollback Notice:** These image versions were rolled back on [March 11, 2026](https://docs.cloud.google.com/dataproc/docs/release-notes#March_11_2026).
 
-### Fixed
-
-* Fixed CVEs CVE-2025-58057, CVE-2025-53864, CVE-2025-68161, CVE-2025-48924 (partial), and CVE-2025-33042.
-* Upgraded hms-proxy to v0.0.78 to fix CVEs.
-
 ---
 ## 2026-03-06
-
-### Announcement
-
-New [Serverless for Apache Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
-
-* 1.2.74
-* 2.2.74
-* 2.3.27
-* 3.0.10
-
-### Announcement
-
-Serverless for Apache Spark [1.2](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-1.2), [2.2](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-2.2) and [2.3](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-2.3) runtime versions:
-
-* Updated Delta Lake version to [3.2.1](https://github.com/delta-io/delta/releases/tag/v3.2.1).
 
 ### Announcement
 
@@ -66,6 +51,21 @@ Serverless for Apache Spark [3.0](https://cloud.google.com/dataproc-serverless/d
 * Updated BigQuery Spark Connector version to [0.44.0](https://github.com/GoogleCloudDataproc/spark-bigquery-connector/releases/tag/0.44.0).
 * Applied patch for [SPARK-52601](https://issues.apache.org/jira/browse/SPARK-52601).
 * Applied patch for [SPARK-52614](https://issues.apache.org/jira/browse/SPARK-52614).
+
+### Announcement
+
+Serverless for Apache Spark [1.2](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-1.2), [2.2](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-2.2) and [2.3](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/spark-runtime-2.3) runtime versions:
+
+* Updated Delta Lake version to [3.2.1](https://github.com/delta-io/delta/releases/tag/v3.2.1).
+
+### Announcement
+
+New [Serverless for Apache Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
+
+* 1.2.74
+* 2.2.74
+* 2.3.27
+* 3.0.10
 
 ---
 ## 2026-03-03
@@ -93,10 +93,6 @@ New [Serverless for Apache Spark runtime versions](https://cloud.google.com/data
 ---
 ## 2026-02-24
 
-### Fixed
-
-Fixed an issue that could cause `gsutil` failures on clusters using custom images built from new base images. This problem occurred when the gcloud `core/universe_domain` property was not set in the build environment, resulting in a malformed `/etc/boto.cfg`. The image build process now ensures a correct default configuration, restoring proper Google Cloud Storage connectivity.
-
 ### Announcement
 
 New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions):
@@ -105,6 +101,10 @@ New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.goog
 * 2.1.109-debian11, 2.1.109-rocky8, 2.1.109-ubuntu20, 2.1.109-ubuntu20-arm
 * 2.2.77-debian12, 2.2.77-rocky9, 2.2.77-ubuntu22, 2.2.77-ubuntu22-arm
 * 2.3.24-debian12, 2.3.24-ml-ubuntu22, 2.3.24-rocky9, 2.3.24-ubuntu22, 2.3.24-ubuntu22-arm
+
+### Fixed
+
+Fixed an issue that could cause `gsutil` failures on clusters using custom images built from new base images. This problem occurred when the gcloud `core/universe_domain` property was not set in the build environment, resulting in a malformed `/etc/boto.cfg`. The image build process now ensures a correct default configuration, restoring proper Google Cloud Storage connectivity.
 
 ---
 ## 2026-02-20

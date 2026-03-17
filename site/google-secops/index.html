@@ -2399,14 +2399,6 @@ Google SecOps Data Pipeline APIs.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/ingestion/data-processing-pipeline">Set up and manage data processing pipelines</a>.</p>
 <hr />
 <h2 id="2026-03-05">2026-03-05</h2>
-<h3 id="announcement_2">Announcement</h3>
-<p><strong>Google Agentic SOC Trial</strong></p>
-<p>There will be a no-cost trial for the Google SecOps Triage Investigative Agent
-(TIN) from April 1, 2026 to June 30, 2026. TIN is an agentic AI feature for Google
-SecOps that helps automate security investigations. For more information about
-the trial, see <a href="https://docs.cloud.google.com/chronicle/docs/agentic-soc/trial">Google Agentic SOC Trial details</a>.
-For more information about TIN, see
-<a href="https://docs.cloud.google.com/chronicle/docs/secops/triage-investigation-agent">Use Triage and Investigation Agent to investigate alerts</a>.</p>
 <h3 id="change">Change</h3>
 <p>Google SecOps has updated the list of supported default parsers. Parsers are updated gradually, so it might take one to four days before you see the changes reflected in your region. For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/ingestion/parser-list/supported-default-parsers">Supported log types and default parsers</a>.</p>
 <p>The following supported default parsers have been updated. Each parser is listed by product name and <code>log_type</code> value, where applicable. This list includes both released default parsers and pending parser updates.</p>
@@ -2589,6 +2581,14 @@ For more information about TIN, see
 <li>Trend Micro Vision One Endpoint Vulnerabilities (<code>TRENDMICRO_VISION_ONE_ENDPOINT_VULNERABILITIES</code>)</li>
 <li>Zafran (<code>ZAFRAN</code>)</li>
 </ul>
+<h3 id="announcement_2">Announcement</h3>
+<p><strong>Google Agentic SOC Trial</strong></p>
+<p>There will be a no-cost trial for the Google SecOps Triage Investigative Agent
+(TIN) from April 1, 2026 to June 30, 2026. TIN is an agentic AI feature for Google
+SecOps that helps automate security investigations. For more information about
+the trial, see <a href="https://docs.cloud.google.com/chronicle/docs/agentic-soc/trial">Google Agentic SOC Trial details</a>.
+For more information about TIN, see
+<a href="https://docs.cloud.google.com/chronicle/docs/secops/triage-investigation-agent">Use Triage and Investigation Agent to investigate alerts</a>.</p>
 <hr />
 <h2 id="2026-03-04">2026-03-04</h2>
 <h3 id="announcement_3">Announcement</h3>
@@ -2597,14 +2597,6 @@ For more information about TIN, see
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage-parser-versions">Manage prebuilt parser versions</a>.</p>
 <hr />
 <h2 id="2026-03-02">2026-03-02</h2>
-<h3 id="deprecated">Deprecated</h3>
-<p><code>Chronicle.soarAnalyst</code>, <code>chronicle.soarViewer</code>, <code>chronicle.soarEngineer</code> roles in Cloud IAM are being deprecated and will be fully removed in six months. Although these roles were accessible and can historically be assigned to users in Cloud IAM, they were non-operational. SOAR roles were managed through Permission Groups and with its migration to Cloud IAM as part of the <a href="https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp#permissions-iam">SOAR Migration to Google Cloud</a>, the preceding roles are being deprecated.</p>
-<p>To maintain seamless access and adhere to the principle of least privilege, transition your SOAR users to the following options:</p>
-<ul>
-<li>Automatically convert your SOAR Permission Groups to custom roles in IAM through <a href="https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp#permissions-iam">self-service migration</a>.</li>
-<li>Pre-defined roles: Utilize the enhanced Google SecOps <a href="https://docs.cloud.google.com/iam/docs/roles-permissions/chronicle#google-security-operations-roles">pre-defined roles</a> now available in Cloud IAM.</li>
-<li>Custom Roles: Create tailored roles with <a href="https://docs.cloud.google.com/iam/docs/roles-permissions/chronicle#google-security-operations-permissions">specific permissions</a> to meet your organization's unique security requirements.</li>
-</ul>
 <h3 id="feature_1">Feature</h3>
 <p><strong>New Unified rules interface</strong></p>
 <p>This feature is currently in Preview.</p>
@@ -2642,6 +2634,14 @@ access and complex filtering:</p>
   efficient querying.</li>
 </ul>
 <p>For details, see <a href="https://docs.cloud.google.com/chronicle/docs/detection/unified-rules/get-started">Manage unified rules</a>.</p>
+<h3 id="deprecated">Deprecated</h3>
+<p><code>Chronicle.soarAnalyst</code>, <code>chronicle.soarViewer</code>, <code>chronicle.soarEngineer</code> roles in Cloud IAM are being deprecated and will be fully removed in six months. Although these roles were accessible and can historically be assigned to users in Cloud IAM, they were non-operational. SOAR roles were managed through Permission Groups and with its migration to Cloud IAM as part of the <a href="https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp#permissions-iam">SOAR Migration to Google Cloud</a>, the preceding roles are being deprecated.</p>
+<p>To maintain seamless access and adhere to the principle of least privilege, transition your SOAR users to the following options:</p>
+<ul>
+<li>Automatically convert your SOAR Permission Groups to custom roles in IAM through <a href="https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp#permissions-iam">self-service migration</a>.</li>
+<li>Pre-defined roles: Utilize the enhanced Google SecOps <a href="https://docs.cloud.google.com/iam/docs/roles-permissions/chronicle#google-security-operations-roles">pre-defined roles</a> now available in Cloud IAM.</li>
+<li>Custom Roles: Create tailored roles with <a href="https://docs.cloud.google.com/iam/docs/roles-permissions/chronicle#google-security-operations-permissions">specific permissions</a> to meet your organization's unique security requirements.</li>
+</ul>
 <hr />
 <h2 id="2026-02-25">2026-02-25</h2>
 <h3 id="feature_2">Feature</h3>
@@ -2715,10 +2715,10 @@ that protect the resources and data of services that you explicitly specify. For
 </ul>
 <hr />
 <h2 id="2026-02-17">2026-02-17</h2>
-<h3 id="deprecated_1">Deprecated</h3>
-<p>Control of MCP use with organization policies is deprecated. After March 17, 2026, organization policies that use the <code>gcp.managed.allowedMCPServices</code> constraint won't work, and you can control MCP use with IAM deny policies. For more information about controlling MCP use, see <a href="https://docs.cloud.google.com/mcp/control-mcp-use-iam">Control MCP use with IAM</a>.</p>
 <h3 id="change_2">Change</h3>
 <p>After March 17, 2026, when you enable Google SecOps, the Google SecOps MCP server is automatically enabled.</p>
+<h3 id="deprecated_1">Deprecated</h3>
+<p>Control of MCP use with organization policies is deprecated. After March 17, 2026, organization policies that use the <code>gcp.managed.allowedMCPServices</code> constraint won't work, and you can control MCP use with IAM deny policies. For more information about controlling MCP use, see <a href="https://docs.cloud.google.com/mcp/control-mcp-use-iam">Control MCP use with IAM</a>.</p>
 <hr />
 <h2 id="2026-02-12">2026-02-12</h2>
 <h3 id="feature_6">Feature</h3>

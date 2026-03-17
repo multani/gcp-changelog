@@ -8,6 +8,12 @@ On February 24th, 2026, we released an updated version of Apigee (1-17-0-apigee-
 
 **Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
 
+### Security
+
+| Bug ID | Description |
+| --- | --- |
+| **481735779, 457138941, 471232237** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2025-61730](https://nvd.nist.gov/vuln/detail/CVE-2025-61730) * [CVE-2025-68156](https://nvd.nist.gov/vuln/detail/CVE-2025-68156) * [CVE-2025-54388](https://nvd.nist.gov/vuln/detail/CVE-2025-54388) * [CVE-2025-61727](https://nvd.nist.gov/vuln/detail/CVE-2025-61727) * [CVE-2025-61729](https://nvd.nist.gov/vuln/detail/CVE-2025-61729) |
+
 ### Fixed
 
 | Bug ID | Description |
@@ -15,12 +21,6 @@ On February 24th, 2026, we released an updated version of Apigee (1-17-0-apigee-
 | **470375542** | Fixed a memory leak which could result in a spike in 503 responses with `no_healthy_upstream` messages. |
 | **480997525** | Applied a fix for proxy calls failing with `The URI contains illegal characters` error after Netty upgrade. |
 | **485595627** | Fixed an issue resulting in TLS handshake errors. |
-
-### Security
-
-| Bug ID | Description |
-| --- | --- |
-| **481735779, 457138941, 471232237** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2025-61730](https://nvd.nist.gov/vuln/detail/CVE-2025-61730) * [CVE-2025-68156](https://nvd.nist.gov/vuln/detail/CVE-2025-68156) * [CVE-2025-54388](https://nvd.nist.gov/vuln/detail/CVE-2025-54388) * [CVE-2025-61727](https://nvd.nist.gov/vuln/detail/CVE-2025-61727) * [CVE-2025-61729](https://nvd.nist.gov/vuln/detail/CVE-2025-61729) |
 
 ---
 ## 2026-02-13

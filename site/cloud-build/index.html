@@ -2376,6 +2376,19 @@
 
 
 <h1 id="cloud-build">Cloud Build</h1>
+<h2 id="2026-03-16">2026-03-16</h2>
+<h3 id="feature">Feature</h3>
+<p>Cloud Build now supports uploading OCI images to Artifact Registry during
+a build process. OCI artifacts for a build are shown in the following locations:</p>
+<ul>
+<li>The <strong>Artifacts</strong> column of Build history page</li>
+<li>The <strong>Execution details</strong> tab of the Build details page</li>
+<li>The <strong>Build artifacts</strong> tab of the Build details page</li>
+</ul>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/build/docs/building/build-containers#store-oci-completes">Store an OCI image in Artifact Registry after your build completes</a>
+and the Cloud Build configuration file schema definition for <a href="https://docs.cloud.google.com/build/docs/build-config-file-schema#oci"><code>oci</code></a>.</p>
+<hr />
 <h2 id="2026-03-03">2026-03-03</h2>
 <h3 id="fixed">Fixed</h3>
 <p>The authorization vulnerability <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3136">CVE-2026-3136</a> was fixed.</p>
@@ -2416,21 +2429,21 @@ information, see
 <p>In addition, the Cloud Build Permissions page in the Google Cloud Console will only show the <a href="https://docs.cloud.google.com/build/docs/cloud-build-service-account#about_legacy">legacy Cloud Build service account</a> if your organization's policy allows it.</p>
 <hr />
 <h2 id="2025-09-29">2025-09-29</h2>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_1">Feature</h3>
 <p>Developer Connect build triggers are now <a href="https://cloud.google.com/products/#product-launch-stages">generally available</a>.</p>
 <p>You can now create build triggers that build from <a href="https://docs.cloud.google.com/build/docs/triggers#devcon-triggers">repositories connected to Developer Connect</a> using the Google Cloud Console, <code>gcloud</code>, the Cloud Build API, and Terraform.</p>
 <hr />
 <h2 id="2025-09-02">2025-09-02</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>Dark theme is now available for Cloud Build. To enable the dark theme, in the Google Cloud console, click <strong>Settings and utilities</strong> &gt; <strong>Preferences</strong>. In the navigation menu, click <strong>Appearance</strong>, and then select your color theme and click <strong>Save</strong>.</p>
 <hr />
 <h2 id="2025-08-15">2025-08-15</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>C3 and N2D machine families are now generally available in private pools. For a complete list of supported machines, see the <a href="https://cloud.google.com/build/docs/private-pools/private-pool-config-file-schema#machinetype"><code>machineType</code></a> entry in the private pool configuration file schema.</p>
 <p>In addition, the <strong>Create private pool</strong> and <strong>Edit private pool</strong> pages now show a monthly estimate based on the pool's machine type configuration. For more information, see <a href="https://cloud.google.com/build/docs/private-pools/create-manage-private-pools#view-price">View private pool price estimates</a>.</p>
 <hr />
 <h2 id="2025-05-27">2025-05-27</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>You can now create build triggers that build from <a href="https://cloud.google.com/build/docs/triggers#devcon-triggers">repositories connected to Developer Connect</a>.</p>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
@@ -2443,6 +2456,9 @@ information, see
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-build">Cloud Build</a></li>
+          <li class="nav-item">
+            <a href="#2026-03-16" class="nav-link">2026-03-16</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-03-03" class="nav-link">2026-03-03</a>
           </li>

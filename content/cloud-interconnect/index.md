@@ -4,16 +4,16 @@
 
 ### Feature
 
-VLAN attachments with maximum capacities of 400 Gbps are Generally Available
-for the following Cloud Interconnect types:
+Support for 400 Gbps connections is Generally Available for the following
+Cloud Interconnect types:
 
 * Dedicated Interconnect
 * Cross-Cloud Interconnect
 
 ### Feature
 
-Support for 400 Gbps connections is Generally Available for the following
-Cloud Interconnect types:
+VLAN attachments with maximum capacities of 400 Gbps are Generally Available
+for the following Cloud Interconnect types:
 
 * Dedicated Interconnect
 * Cross-Cloud Interconnect

@@ -2,6 +2,19 @@
 
 ## 2026-03-05
 
+### Change
+
+Google Distributed Cloud (software only) for VMware V2 (Advanced Clusters) versions 1.31
+and earlier were missing a configuration step in the node startup script that
+defined the Docker default bridge IP range. As a result, Docker defaulted to
+using the 172.17.0.0/16 (and in some cases 172.16.0.0/16) address range.
+
+If this default range overlaps with customer network infrastructure,
+connectivity failures during cluster creation or operation can occur.
+
+This issue has been resolved. The Docker default bridge IP for cluster nodes in
+advanced clusters is now explicitly set to 169.254.123.1/24.
+
 ### Announcement
 
 Google Distributed Cloud (software only) for VMware 1.32.900-gke.60 is now available
@@ -16,34 +29,8 @@ After a release, it takes approximately 7 to 14 days for the version to become
 available for use with GKE On-Prem API clients: the Google Cloud console, the
 gcloud CLI, and Terraform.
 
-### Change
-
-Google Distributed Cloud (software only) for VMware V2 (Advanced Clusters) versions 1.31
-and earlier were missing a configuration step in the node startup script that
-defined the Docker default bridge IP range. As a result, Docker defaulted to
-using the 172.17.0.0/16 (and in some cases 172.16.0.0/16) address range.
-
-If this default range overlaps with customer network infrastructure,
-connectivity failures during cluster creation or operation can occur.
-
-This issue has been resolved. The Docker default bridge IP for cluster nodes in
-advanced clusters is now explicitly set to 169.254.123.1/24.
-
 ---
 ## 2026-03-03
-
-### Announcement
-
-Google Distributed Cloud (software only) for VMware V2 (Advanced Clusters) versions 1.31
-and earlier were missing a configuration step in the node startup script that
-defined the Docker default bridge IP range. As a result, Docker defaulted to
-using the 172.17.0.0/16 (and in some cases 172.16.0.0/16) address range.
-
-If this default range overlaps with customer network infrastructure,
-connectivity failures during cluster creation or operation can occur.
-
-This issue has been resolved. The Docker default bridge IP for cluster nodes in
-advanced clusters is now explicitly set to 169.254.123.1/24.
 
 ### Announcement
 
@@ -58,6 +45,19 @@ qualification for this release.
 After a release, it takes approximately 7 to 14 days for the version to become
 available for use with GKE On-Prem API clients: the Google Cloud console, the
 gcloud CLI, and Terraform.
+
+### Announcement
+
+Google Distributed Cloud (software only) for VMware V2 (Advanced Clusters) versions 1.31
+and earlier were missing a configuration step in the node startup script that
+defined the Docker default bridge IP range. As a result, Docker defaulted to
+using the 172.17.0.0/16 (and in some cases 172.16.0.0/16) address range.
+
+If this default range overlaps with customer network infrastructure,
+connectivity failures during cluster creation or operation can occur.
+
+This issue has been resolved. The Docker default bridge IP for cluster nodes in
+advanced clusters is now explicitly set to 169.254.123.1/24.
 
 ---
 ## 2026-02-19

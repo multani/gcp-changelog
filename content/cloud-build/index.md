@@ -1,5 +1,21 @@
 # Cloud Build
 
+## 2026-03-16
+
+### Feature
+
+Cloud Build now supports uploading OCI images to Artifact Registry during
+a build process. OCI artifacts for a build are shown in the following locations:
+
+* The **Artifacts** column of Build history page
+* The **Execution details** tab of the Build details page
+* The **Build artifacts** tab of the Build details page
+
+For more information, see
+[Store an OCI image in Artifact Registry after your build completes](https://docs.cloud.google.com/build/docs/building/build-containers#store-oci-completes)
+and the Cloud Build configuration file schema definition for [`oci`](https://docs.cloud.google.com/build/docs/build-config-file-schema#oci).
+
+---
 ## 2026-03-03
 
 ### Fixed

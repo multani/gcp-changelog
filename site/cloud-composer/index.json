@@ -14,26 +14,18 @@
     "2026-03-03": [
       {
         "kind": "Change",
-        "content": "Airflow 3.1.0 is no longer included in Cloud Composer images and builds.",
+        "content": "New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)\nare available in Cloud Composer 2:\n\n* [composer-2.16.6-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-6-airflow-2-10-5) (default)\n* [composer-2.16.6-airflow-2.9.3](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-6-airflow-2-9-3)",
         "summary": {
-          "title": "Airflow 3.1.0 removed from Composer",
-          "summary": "Airflow version 3.1.0 has been removed from Cloud Composer images and builds. This change affects users relying on this specific version. Please update to a supported Airflow version for continued compatibility."
-        }
-      },
-      {
-        "kind": "Change",
-        "content": "New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Cloud Composer 3:\n\n* [composer-3-airflow-3.1.7-build.0](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-7-build-0)\n* [composer-3-airflow-2.10.5-build.29](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-29) (default)\n* [composer-3-airflow-2.9.3-build.49](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-49)",
-        "summary": {
-          "title": "New Airflow builds available for Composer 3",
-          "summary": "New Airflow builds are now available for Cloud Composer 3, including updated versions for Airflow 3.1.7, 2.10.5, and 2.9.3. The Airflow 2.10.5 build is the new default."
+          "title": "New Composer 2 Images Available",
+          "summary": "New images for Cloud Composer 2 are now available, including the default composer-2.16.6-airflow-2.10.5 and composer-2.16.6-airflow-2.9.3. These updates provide the latest features and improvements for your workflows."
         }
       },
       {
         "kind": "Feature",
-        "content": "**Airflow 3.1.7 is available** in Cloud Composer 3.",
+        "content": "[Per-folder roles registration](https://docs.cloud.google.com/composer/docs/composer-3/airflow-rbac#about-per-folder-registration)\nis available in environments with Airflow 3 (Preview) starting from Airflow version 3.1.7.",
         "summary": {
-          "title": "Airflow 3.1.7 Now Available",
-          "summary": "The latest version of Airflow, 3.1.7, is now available for use. This update brings enhancements and improvements to the workflow orchestration platform."
+          "title": "Per-folder roles registration now available",
+          "summary": "Per-folder roles registration is now available in environments with Airflow 3 (Preview) starting from Airflow version 3.1.7. This feature allows for more granular control over role assignments within your projects."
         }
       },
       {
@@ -46,36 +38,44 @@
       },
       {
         "kind": "Feature",
-        "content": "[Per-folder roles registration](https://docs.cloud.google.com/composer/docs/composer-3/airflow-rbac#about-per-folder-registration)\nis available in environments with Airflow 3 (Preview) starting from Airflow version 3.1.7.",
+        "content": "**Airflow 3.1.7 is available** in Cloud Composer 3.",
         "summary": {
-          "title": "Per-folder roles registration now available",
-          "summary": "Per-folder roles registration is now available in environments with Airflow 3 (Preview) starting from Airflow version 3.1.7. This feature allows for more granular control over role assignments within your projects."
+          "title": "Airflow 3.1.7 Now Available",
+          "summary": "The latest version of Airflow, 3.1.7, is now available for use. This update brings enhancements and improvements to the workflow orchestration platform."
         }
       },
       {
         "kind": "Change",
-        "content": "New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)\nare available in Cloud Composer 2:\n\n* [composer-2.16.6-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-6-airflow-2-10-5) (default)\n* [composer-2.16.6-airflow-2.9.3](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-6-airflow-2-9-3)",
+        "content": "New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Cloud Composer 3:\n\n* [composer-3-airflow-3.1.7-build.0](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-7-build-0)\n* [composer-3-airflow-2.10.5-build.29](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-29) (default)\n* [composer-3-airflow-2.9.3-build.49](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-49)",
         "summary": {
-          "title": "New Composer 2 Images Available",
-          "summary": "New images for Cloud Composer 2 are now available, including the default composer-2.16.6-airflow-2.10.5 and composer-2.16.6-airflow-2.9.3. These updates provide the latest features and improvements for your workflows."
+          "title": "New Airflow builds available for Composer 3",
+          "summary": "New Airflow builds are now available for Cloud Composer 3, including updated versions for Airflow 3.1.7, 2.10.5, and 2.9.3. The Airflow 2.10.5 build is the new default."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Airflow 3.1.0 is no longer included in Cloud Composer images and builds.",
+        "summary": {
+          "title": "Airflow 3.1.0 removed from Composer",
+          "summary": "Airflow version 3.1.0 has been removed from Cloud Composer images and builds. This change affects users relying on this specific version. Please update to a supported Airflow version for continued compatibility."
         }
       }
     ],
     "2026-02-20": [
       {
-        "kind": "Feature",
-        "content": "Cloud Composer API now accepts the new\n`https://www.googleapis.com/auth/cloudcomposer` OAuth scope. This scope\nprovides access only to the Cloud Composer API and can't be used to call other\nGoogle Cloud APIs.",
+        "kind": "Deprecated",
+        "content": "The following Cloud Composer versions and builds have reached their\n[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-3-airflow-2.9.3-build.16 and composer-2.11.3-\\*.",
         "summary": {
-          "title": "New OAuth scope for Cloud Composer API",
-          "summary": "The Cloud Composer API now supports a new OAuth scope, `https://www.googleapis.com/auth/cloudcomposer`. This dedicated scope enhances security by granting access solely to the Cloud Composer API, preventing unintended access to other Google Cloud services."
+          "title": "Cloud Composer versions deprecated",
+          "summary": "Certain versions of Cloud Composer, specifically composer-3-airflow-2.9.3-build.16 and composer-2.11.3-*, are no longer supported. This deprecation impacts users who are running these older versions and should plan to migrate."
         }
       },
       {
         "kind": "Change",
-        "content": "New [images](https://cloud.google.com/composer/docs/composer-versions#images-composer-2)\nare available in Cloud Composer 2:\n\n* [composer-2.16.5-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-16-5-airflow-2-10-5) (default)\n* [composer-2.16.5-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-16-5-airflow-2-9-3)",
+        "content": "The `enable_private_environment` boolean field in the Cloud Composer API is\ngoing to be deprecated in the future. When making direct calls to Cloud\nComposer API, use the new `networking_type` field instead.\n\nThis change affects only direct calls to the Cloud Composer API.\nGoogle Cloud CLI commands and the `google_composer_environment` resource in\nTerraform are not affected.",
         "summary": {
-          "title": "New Composer Images Available",
-          "summary": "New images for Cloud Composer 2 are now available, including composer-2.16.5-airflow-2.10.5 which is the new default. These updates bring the latest Airflow versions to your environments."
+          "title": "Private environment field deprecated",
+          "summary": "The `enable_private_environment` field in the Cloud Composer API is being deprecated. Use the `networking_type` field for direct API calls. This change does not impact the Google Cloud CLI or Terraform resources."
         }
       },
       {
@@ -88,36 +88,28 @@
       },
       {
         "kind": "Change",
-        "content": "The `enable_private_environment` boolean field in the Cloud Composer API is\ngoing to be deprecated in the future. When making direct calls to Cloud\nComposer API, use the new `networking_type` field instead.\n\nThis change affects only direct calls to the Cloud Composer API.\nGoogle Cloud CLI commands and the `google_composer_environment` resource in\nTerraform are not affected.",
+        "content": "New [images](https://cloud.google.com/composer/docs/composer-versions#images-composer-2)\nare available in Cloud Composer 2:\n\n* [composer-2.16.5-airflow-2.10.5](https://cloud.google.com/composer/docs/versions-packages#composer-2-16-5-airflow-2-10-5) (default)\n* [composer-2.16.5-airflow-2.9.3](https://cloud.google.com/composer/docs/versions-packages#composer-2-16-5-airflow-2-9-3)",
         "summary": {
-          "title": "Private environment field deprecated",
-          "summary": "The `enable_private_environment` field in the Cloud Composer API is being deprecated. Use the `networking_type` field for direct API calls. This change does not impact the Google Cloud CLI or Terraform resources."
+          "title": "New Composer Images Available",
+          "summary": "New images for Cloud Composer 2 are now available, including composer-2.16.5-airflow-2.10.5 which is the new default. These updates bring the latest Airflow versions to your environments."
         }
       },
       {
-        "kind": "Deprecated",
-        "content": "The following Cloud Composer versions and builds have reached their\n[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-3-airflow-2.9.3-build.16 and composer-2.11.3-\\*.",
+        "kind": "Feature",
+        "content": "Cloud Composer API now accepts the new\n`https://www.googleapis.com/auth/cloudcomposer` OAuth scope. This scope\nprovides access only to the Cloud Composer API and can't be used to call other\nGoogle Cloud APIs.",
         "summary": {
-          "title": "Cloud Composer versions deprecated",
-          "summary": "Certain versions of Cloud Composer, specifically composer-3-airflow-2.9.3-build.16 and composer-2.11.3-*, are no longer supported. This deprecation impacts users who are running these older versions and should plan to migrate."
+          "title": "New OAuth scope for Cloud Composer API",
+          "summary": "The Cloud Composer API now supports a new OAuth scope, `https://www.googleapis.com/auth/cloudcomposer`. This dedicated scope enhances security by granting access solely to the Cloud Composer API, preventing unintended access to other Google Cloud services."
         }
       }
     ],
     "2026-02-16": [
       {
-        "kind": "Feature",
-        "content": "[Environment snapshots](https://docs.cloud.google.com/composer/docs/composer-3/save-load-snapshots)\nare available in environments with Airflow 3 (Preview). This change is now\nrolled out to all regions supported by Cloud Composer 3.",
+        "kind": "Change",
+        "content": "New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Cloud Composer 3:\n\n* [composer-3-airflow-3.1.0-build.9](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-0-build-9)\n* [composer-3-airflow-2.10.5-build.26](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-26) (default)\n* [composer-3-airflow-2.9.3-build.46](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-46)",
         "summary": {
-          "title": "Environment snapshots now available",
-          "summary": "You can now save and load environment snapshots in Cloud Composer 3 environments running Airflow 3 (Preview). This feature is available in all supported regions."
-        }
-      },
-      {
-        "kind": "Deprecated",
-        "content": "The following Cloud Composer versions and builds have reached their\n[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-3-airflow-2.9.3-build.15 and composer-2.11.2-\\*.",
-        "summary": {
-          "title": "Cloud Composer versions deprecated",
-          "summary": "Certain versions of Cloud Composer, specifically composer-3-airflow-2.9.3-build.15 and composer-2.11.2-*, have reached their end of support. Users are advised to migrate to supported versions."
+          "title": "New Airflow builds available",
+          "summary": "New Airflow builds are now available for Cloud Composer 3, including updated versions of Airflow 3.1.0, 2.10.5, and 2.9.3. The Airflow 2.10.5 build is the new default."
         }
       },
       {
@@ -129,11 +121,19 @@
         }
       },
       {
-        "kind": "Change",
-        "content": "New [Airflow builds](https://cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Cloud Composer 3:\n\n* [composer-3-airflow-3.1.0-build.9](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-0-build-9)\n* [composer-3-airflow-2.10.5-build.26](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-26) (default)\n* [composer-3-airflow-2.9.3-build.46](https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-46)",
+        "kind": "Deprecated",
+        "content": "The following Cloud Composer versions and builds have reached their\n[end of support period](https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-3-airflow-2.9.3-build.15 and composer-2.11.2-\\*.",
         "summary": {
-          "title": "New Airflow builds available",
-          "summary": "New Airflow builds are now available for Cloud Composer 3, including updated versions of Airflow 3.1.0, 2.10.5, and 2.9.3. The Airflow 2.10.5 build is the new default."
+          "title": "Cloud Composer versions deprecated",
+          "summary": "Certain versions of Cloud Composer, specifically composer-3-airflow-2.9.3-build.15 and composer-2.11.2-*, have reached their end of support. Users are advised to migrate to supported versions."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "[Environment snapshots](https://docs.cloud.google.com/composer/docs/composer-3/save-load-snapshots)\nare available in environments with Airflow 3 (Preview). This change is now\nrolled out to all regions supported by Cloud Composer 3.",
+        "summary": {
+          "title": "Environment snapshots now available",
+          "summary": "You can now save and load environment snapshots in Cloud Composer 3 environments running Airflow 3 (Preview). This feature is available in all supported regions."
         }
       }
     ],

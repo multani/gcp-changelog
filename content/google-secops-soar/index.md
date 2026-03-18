@@ -1,10 +1,22 @@
 # Google SecOps SOAR
 
+## 2026-03-17
+
+### Announcement
+
+SOAR Permission Groups migration to Google Cloud IAM is now in General Availability (GA).
+You can now leverage Google Cloud IAM for precise, granular feature access, moving away from legacy permission groups.
+
+You can enable it by [migrating](https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp#permissions-iam) the legacy SOAR permission groups and permissions to Google Cloud IAM through a self-service migration available from January 26, 2026. Please check the [documentation](https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-soar-permissions-iam) and [video](https://youtu.be/UBfwcgDvc0s) for full instructions.
+
+This update is available to all customers who have completed [Stage 1](https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp#migration-stage-1-for-google-secops-unified-customers) of the SOAR migration to Google Cloud.
+
+---
 ## 2026-03-16
 
 ### Announcement
 
-Phase 2 of the SOAR migration to Google Cloud has been extended from June 30th to September 30th, 2026.
+Stage 2 of the SOAR migration to Google Cloud has been extended from June 30th to September 30th, 2026.
 
 ---
 ## 2026-03-15

@@ -1,5 +1,78 @@
 # Looker
 
+## 2026-03-17
+
+### Feature
+
+Now available in preview, Gemini in Looker can automatically [generate Quick Start analyses for Explores](https://docs.cloud.google.com/looker/docs/gemini-quick-starts). This feature can be enabled by turning on the **AI-assisted Quick Starts** setting on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.
+
+### Feature
+
+Now available in preview, you can use Gemini in Looker to [assist you in writing Looker expressions](https://docs.cloud.google.com/looker/docs/gemini-expression-asst) for [table calculations](https://docs.cloud.google.com/looker/docs/table-calculations) and [custom fields](https://docs.cloud.google.com/looker/docs/custom-fields). This feature can be enabled by turning on the **Expression Assistant** setting on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.
+
+### Feature
+
+The [**Self-service Explores**](https://docs.cloud.google.com/looker/docs/exploring-self-service) feature is now generally available.
+
+In addition, if your Looker admin has [enabled your Looker instance to support OAuth for Google Sheets uploads](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#enabling_oauth_for_uploads), the self-service Explores feature supports [uploading data from Google Sheets using Google Drive navigation](https://docs.cloud.google.com/looker/docs/exploring-self-service#oauth).
+
+### Announcement
+
+The following features will begin rolling out on March 17, 2026.
+
+### Feature
+
+The [content certification](https://docs.cloud.google.com/looker/docs/content-certification) feature is now generally available. In Looker 26.4, the following support has been added:
+
+* LookML Explores can now be certified.
+* Looker admins can now automatically certify all current and future LookML dashboards and LookML Explores.
+* When [Enhanced Search](https://docs.cloud.google.com/looker/docs/finding-content#enhanced_search) is enabled, searching for content now includes the ability to sort and filter search results based on certification status.
+
+### Feature
+
+The [**Enhanced Search** preview feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#enhanced-search) is now available.
+
+When enabled, [Enhanced Search](https://docs.cloud.google.com/looker/docs/finding-content#enhanced_search) helps you find saved content on your instance using Gemini in Looker. Enhanced Search moves beyond keyword matching to interpreting the conceptual meaning of your search queries, letting you search for saved content using business terms or analytical questions (for example, "total customer acquisition cost").
+
+You can filter your search results to limit them to specific content types, folders, content creators, creation dates, modification dates, and the content certification status.
+
+To enable Gemini in Looker assistance with searching content, you must also enable the **Semantic Search** setting on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.
+
+### Feature
+
+Available in preview for Looker connections to Snowflake or Google BigQuery databases, Looker supports custom calendars, such as fiscal or retail calendars. The [custom calendar](https://docs.cloud.google.com/looker/docs/custom-calendars) feature lets your Looker developers create a LookML model of a custom calendar table in your database and then create [custom calendar dimension groups](https://docs.cloud.google.com/looker/docs/reference/param-field-dimension-group#custom_calendar_type) that use the custom calendar. Your end users can then create Explore queries using the custom calendar dimension timeframes.
+
+In addition, your LookML developers can create [period-over-period](https://docs.cloud.google.com/looker/docs/period-over-period) measures based on custom calendar dimension groups.
+
+### Feature
+
+The [**Increased Row Limit** preview feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#increased-row-limit) feature is now available, and is disabled by default.
+
+When enabled, the **Increased Row Limit** preview feature lets admins set row limits up to 50,000 rows or datapoints for [map charts](https://docs.cloud.google.com/looker/docs/google-map-options), [scatterplot charts](https://docs.cloud.google.com/looker/docs/scatter-options), and [table charts](https://docs.cloud.google.com/looker/docs/table-options). Admins can set the limits for each visualization type in the [**Visualization limits**](https://docs.cloud.google.com/looker/docs/admin-panel-performance-center-content-guardrails#visualization-limits) setting on the **Content guardrails** admin page.
+
+Table charts, scatterplot charts, and Google Maps charts that have increased row limits are subject to additional limitations when you download, send, or schedule dashboards in PDF format. See [Downloading or delivering dashboards in rendered formats](https://docs.cloud.google.com/looker/docs/best-practices/rendered-format-options-downloading-delivering-dashboards) for more information about scheduling and downloading dashboard PDFs with increased row limits.
+
+**Note:** This item was originally published on March 16, 2026 and was updated on March 17, 2026.
+
+### Feature
+
+The [Continuous Integration (CI)](https://docs.cloud.google.com/looker/docs/continuous-integration) feature is updated for better integration with the Looker user interface:
+
+* Your Looker instance will be migrated to the new version of Looker CI. The migration will take a few minutes.
+* While your instance is migrating, any existing CI suites will not appear on the CI [**Suites**](https://docs.cloud.google.com/looker/docs/ci-create-suite#creating_a_ci_suite) page, and the history on the CI [**Runs**](https://docs.cloud.google.com/looker/docs/ci-view-results) page will be empty. During this time, do not create new suites or initiate manual runs.
+* When the migration is complete, the **Suites** and **Runs** pages will be repopulated.
+* If you encounter an issue during the migration, please report it using the [Looker} Continuous Integration - Preview Issue Tracker form](https://docs.google.com/forms/d/e/1FAIpQLSed30eICYruU45R8WZQH6hIui28xtdDnejfetzpLHQ5PK0ZeA/viewform?usp=dialog).
+
+The updated Looker Continuous Integration feature includes the following:
+
+* Your Looker admin no longer needs to manually add CI users. After your Looker instance is [enabled for CI](https://docs.cloud.google.com/looker/docs/continuous-integration#enable-ci) (or once your instance is updated to the new CI, if your instance was already enabled for CI), Looker CI users are created automatically. Looker CI users are created in the [Looker CI Users user group](https://docs.cloud.google.com/looker/docs/admin-panel-users-groups#ci-users) with the [Looker CI Users role](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#ci-users). A Looker admin can view the Looker CI users from the **Service Accounts** tab of the [**Users**](https://docs.cloud.google.com/looker/docs/admin-panel-users-users) Admin page.
+* A new [**GitHub** table](https://docs.cloud.google.com/looker/docs/admin-panel-platform-ci#github-table) on the **Continuous Integration** Admin page lists the GitHub repositories that have been granted access to the Looker CI GitHub application, which enables Looker CI to [be triggered automatically when pull requests are created](https://docs.cloud.google.com/looker/docs/ci-create-suite#triggers).
+
+### Feature
+
+Looker **Connections Settings** page has a new option, [**Disable Connection**](https://docs.cloud.google.com/looker/docs/connecting-to-your-db#disable_connection), that allows a Looker admin to disable a connection in cases where there are downstream issues with the database, instead of killing queries manually or allowing queries to remain in the query queue. When the connection is disabled, Looker will not send queries to the database and will return an error message to users.
+
+---
 ## 2026-03-16
 
 ### Feature

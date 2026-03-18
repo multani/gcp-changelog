@@ -2378,260 +2378,6 @@
 <h1 id="cloud-service-mesh">Cloud Service Mesh</h1>
 <h2 id="2026-03-11">2026-03-11</h2>
 <h3 id="security">Security</h3>
-<p><strong>1.27.8-asm.7 is now available for in-cluster Cloud Service Mesh.</strong></p>
-<p>This patch release contains fixes for the security vulnerabilities listed in
-<a href="https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-013">GCP-2026-013</a>
-as well as fixes for the following platform CVEs:</p>
-<table>
-<thead>
-<tr>
-<th>CVE</th>
-<th>Proxy</th>
-<th>Control Plane</th>
-<th>Distroless</th>
-<th>CNI</th>
-<th>Severity</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2025-13151">CVE-2025-13151</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes</td>
-<td>Medium (7.5)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2025-14831">CVE-2025-14831</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes</td>
-<td>Medium (5.3)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2025-15281">CVE-2025-15281</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes</td>
-<td>Medium (7.5)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2025-15467">CVE-2025-15467</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Medium (9.8)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2025-15558">CVE-2025-15558</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>-</td>
-<td>High (8.0)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2025-61726">CVE-2025-61726</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>High (7.5)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2025-61728">CVE-2025-61728</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Medium (6.5)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2025-61730">CVE-2025-61730</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Medium (5.3)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2025-61731">CVE-2025-61731</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>High (7.8)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2025-61732">CVE-2025-61732</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>High (8.6)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2025-68121">CVE-2025-68121</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Critical (10)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2025-68160">CVE-2025-68160</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes</td>
-<td>Low (4.7)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2025-69418">CVE-2025-69418</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes</td>
-<td>Low (4.0)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2025-69419">CVE-2025-69419</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes</td>
-<td>Low (7.4)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2025-69420">CVE-2025-69420</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Low (7.5)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2025-69421">CVE-2025-69421</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Low (7.5)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2025-8277">CVE-2025-8277</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes</td>
-<td>Low (0)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2025-9820">CVE-2025-9820</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes</td>
-<td>Low (4)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2026-0861">CVE-2026-0861</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes</td>
-<td>Medium (8.4)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2026-0915">CVE-2026-0915</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes</td>
-<td>Medium (7.5)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2026-0964">CVE-2026-0964</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes</td>
-<td>Medium</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2026-0965">CVE-2026-0965</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes</td>
-<td>Low</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2026-0966">CVE-2026-0966</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes</td>
-<td>Low</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2026-0967">CVE-2026-0967</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes</td>
-<td>Medium</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2026-0968">CVE-2026-0968</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes</td>
-<td>Medium</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2026-22795">CVE-2026-22795</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes</td>
-<td>Low (5.5)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2026-22796">CVE-2026-22796</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes</td>
-<td>Low (5.3)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2026-24051">CVE-2026-24051</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>High (7.0)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2026-25679">CVE-2026-25679</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>High (7.5)</td>
-</tr>
-</tbody>
-</table>
-<p>For details on upgrading Cloud Service Mesh, see
-<a href="https://docs.cloud.google.com/service-mesh/v1.27/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
-Mesh 1.27.8-asm.7 uses Envoy 1.35.9.</p>
-<h3 id="security_1">Security</h3>
 <p><strong>1.28.5-asm.9 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>This patch release contains fixes for the security vulnerabilities listed in
 <a href="https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-013">GCP-2026-013</a>
@@ -2885,8 +2631,8 @@ as well as fixes for the following platform CVEs:</p>
 <p>For details on upgrading Cloud Service Mesh, see
 <a href="https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
 Mesh 1.28.5-asm.9 uses Envoy 1.36.5.</p>
-<h3 id="security_2">Security</h3>
-<p><strong>1.26.8-asm.3 is now available for in-cluster Cloud Service Mesh.</strong></p>
+<h3 id="security_1">Security</h3>
+<p><strong>1.27.8-asm.7 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>This patch release contains fixes for the security vulnerabilities listed in
 <a href="https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-013">GCP-2026-013</a>
 as well as fixes for the following platform CVEs:</p>
@@ -2997,14 +2743,6 @@ as well as fixes for the following platform CVEs:</p>
 <td>No</td>
 <td>Yes</td>
 <td>Low (4.7)</td>
-</tr>
-<tr>
-<td><a href="https://ubuntu.com/security/CVE-2025-68973">CVE-2025-68973</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>High (7.8)</td>
 </tr>
 <tr>
 <td><a href="https://ubuntu.com/security/CVE-2025-69418">CVE-2025-69418</a></td>
@@ -3145,9 +2883,9 @@ as well as fixes for the following platform CVEs:</p>
 </tbody>
 </table>
 <p>For details on upgrading Cloud Service Mesh, see
-<a href="https://docs.cloud.google.com/service-mesh/v1.26/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
-Mesh 1.26.8-asm.3 uses Envoy 1.34.13.</p>
-<h3 id="security_3">Security</h3>
+<a href="https://docs.cloud.google.com/service-mesh/v1.27/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
+Mesh 1.27.8-asm.7 uses Envoy 1.35.9.</p>
+<h3 id="security_2">Security</h3>
 <p>The following images are now rolling out for managed Cloud Service Mesh:</p>
 <ul>
 <li>Sidecar version 1.21.6-asm.16 is rolling out to the rapid release channel.</li>
@@ -3419,6 +3157,268 @@ as well as fixes for the following platform CVEs:</p>
 </tr>
 </tbody>
 </table>
+<h3 id="security_3">Security</h3>
+<p><strong>1.26.8-asm.3 is now available for in-cluster Cloud Service Mesh.</strong></p>
+<p>This patch release contains fixes for the security vulnerabilities listed in
+<a href="https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-013">GCP-2026-013</a>
+as well as fixes for the following platform CVEs:</p>
+<table>
+<thead>
+<tr>
+<th>CVE</th>
+<th>Proxy</th>
+<th>Control Plane</th>
+<th>Distroless</th>
+<th>CNI</th>
+<th>Severity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2025-13151">CVE-2025-13151</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Medium (7.5)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2025-14831">CVE-2025-14831</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Medium (5.3)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2025-15281">CVE-2025-15281</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Medium (7.5)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2025-15467">CVE-2025-15467</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Medium (9.8)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2025-15558">CVE-2025-15558</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>High (8.0)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2025-61726">CVE-2025-61726</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>High (7.5)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2025-61728">CVE-2025-61728</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Medium (6.5)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2025-61730">CVE-2025-61730</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Medium (5.3)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2025-61731">CVE-2025-61731</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>High (7.8)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2025-61732">CVE-2025-61732</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>High (8.6)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2025-68121">CVE-2025-68121</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Critical (10)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2025-68160">CVE-2025-68160</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (4.7)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2025-68973">CVE-2025-68973</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>High (7.8)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2025-69418">CVE-2025-69418</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (4.0)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2025-69419">CVE-2025-69419</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (7.4)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2025-69420">CVE-2025-69420</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Low (7.5)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2025-69421">CVE-2025-69421</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Low (7.5)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2025-8277">CVE-2025-8277</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (0)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2025-9820">CVE-2025-9820</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (4)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2026-0861">CVE-2026-0861</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Medium (8.4)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2026-0915">CVE-2026-0915</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Medium (7.5)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2026-0964">CVE-2026-0964</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2026-0965">CVE-2026-0965</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2026-0966">CVE-2026-0966</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2026-0967">CVE-2026-0967</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2026-0968">CVE-2026-0968</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2026-22795">CVE-2026-22795</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (5.5)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2026-22796">CVE-2026-22796</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (5.3)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2026-24051">CVE-2026-24051</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>High (7.0)</td>
+</tr>
+<tr>
+<td><a href="https://ubuntu.com/security/CVE-2026-25679">CVE-2026-25679</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>High (7.5)</td>
+</tr>
+</tbody>
+</table>
+<p>For details on upgrading Cloud Service Mesh, see
+<a href="https://docs.cloud.google.com/service-mesh/v1.26/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
+Mesh 1.26.8-asm.3 uses Envoy 1.34.13.</p>
 <hr />
 <h2 id="2026-02-18">2026-02-18</h2>
 <h3 id="announcement">Announcement</h3>

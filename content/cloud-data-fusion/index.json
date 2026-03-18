@@ -1,6 +1,26 @@
 {
   "name": "Cloud Data Fusion",
   "entries": {
+    "2026-03-17": [
+      {
+        "kind": "Fixed",
+        "content": "Cloud Data Fusion version 6.11.1.2 is\n[generally available (GA)](https://cloud.google.com/products#product-launch-stages).\n\nThis release includes the following changes:\n\n* Fixed the triggers panel in the pipeline details page to display the correct\n  triggers count on initial load ([CDAP-21230](https://cdap.atlassian.net/browse/CDAP-21230)).\n* Updated the GraphQL query mechanism to cache the pipelines list and fix the\n  long loading screen in the deployed pipelines list page\n  ([CDAP-21229](https://cdap.atlassian.net/browse/CDAP-21229)).",
+        "summary": {
+          "title": "Cloud Data Fusion 6.11.1.2 Released",
+          "summary": "Cloud Data Fusion version 6.11.1.2 is now generally available. This release includes fixes for the triggers panel display and improved loading times for the deployed pipelines list."
+        }
+      }
+    ],
+    "2026-03-02": [
+      {
+        "kind": "Change",
+        "content": "The SAP ODP plugin version 0.12.1 is available in Cloud Data Fusion version\n6.10 and later. This release includes the following features and changes:\n\n* Hierarchy data sources are now supported for extraction.\n* ODQ fields are populated with TSN, package number, and record number for full\n  extraction.\n* Structured SAP messages are now displayed according to the message type\n  (for example, type `E` as error and type `I` as information). Earlier, all\n  messages from SAP displayed as errors.\n* You can now use the TVARVC table entries with parameter\n  `/GOOG/ODP_TRANSFER_MODE` (for all data sources) or `/GOOG/M_DatasourceName`\n  (for individual data sources) to determine if data is transferred in CHAR or\n  XML format. Maintain 'C' to transfer data in CHAR format. Maintain an empty\n  value to transfer data in XML format.",
+        "summary": {
+          "title": "SAP ODP Plugin Update",
+          "summary": "The SAP ODP plugin has been updated to version 0.12.1 in Cloud Data Fusion 6.10+, introducing hierarchy data source support, improved message display, and enhanced data transfer format control. This release also populates ODQ fields with TSN, package, and record numbers for full extractions."
+        }
+      }
+    ],
     "2026-02-09": [
       {
         "kind": "Feature",

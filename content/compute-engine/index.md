@@ -100,17 +100,17 @@ To learn more about Hyperdisk Exapools, see
 ---
 ## 2026-02-17
 
-### Change
-
-After March 17, 2026, when you enable Compute Engine,
-the Compute Engine MCP server is automatically enabled.
-
 ### Deprecated
 
 Control of MCP use with organization policies is deprecated. After March 17, 2026,
 organization policies that use the `gcp.managed.allowedMCPServices` constraint
 won't work, and you can control MCP use with IAM deny policies.
 For more information about controlling MCP use, see [Control MCP use with IAM](https://docs.cloud.google.com/mcp/control-mcp-use-iam).
+
+### Change
+
+After March 17, 2026, when you enable Compute Engine,
+the Compute Engine MCP server is automatically enabled.
 
 ---
 ## 2026-02-12

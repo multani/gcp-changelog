@@ -1,6 +1,80 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
+    "2026-03-16": [
+      {
+        "kind": "Feature",
+        "content": "**Improved controls for predictive campaigns**\n\nWe've added the following controls to predictive campaigns to reduce the risk of\ncall abandonment due to overdialing. These controls let you ramp up dialing\nrates more naturally and consistently.\n\n* **Max Calls Per Agent**\n* **Target Agent Occupancy**\n\nWe've also made the **Max Abandonment %** setting optional, for campaigns that\ndon't require maintaining a maximum abandonment percentage.\n\nAdministrators: When you click **Campaigns > Add Campaign\n> Mode > Predictive**, the new controls appear in the\n**Add Campaign** dialog.",
+        "summary": {
+          "title": "New Controls for Predictive Campaigns",
+          "summary": "Enhance your predictive campaigns with new controls like Max Calls Per Agent and Target Agent Occupancy, designed to prevent call abandonment. The Max Abandonment % setting is now optional for greater flexibility."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**HubSpot: Mobile Phone Number Lookup**\n\nAdmins can now enable mobile phone number lookups for HubSpot integrations to\nensure callers are accurately matched with existing contacts. To activate this,\nnavigate to **Settings > Developer Settings > CRM** and check the **Mobile phone\nnumber lookup** box in the new **Phone Number Lookup** section. Once enabled,\nthe system will automatically search both the \"Phone number\" and \"Mobile phone\nnumber\" fields in HubSpot during incoming voice or chat sessions.",
+        "summary": {
+          "title": "Mobile Phone Number Lookup for HubSpot",
+          "summary": "Admins can now enable mobile phone number lookups for HubSpot integrations. This feature ensures callers are accurately matched with existing contacts by automatically searching both phone number fields during incoming calls or chats. To activate, navigate to Settings > Developer Settings > CRM and check the 'Mobile phone number lookup' box."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Resume chat endpoint**\n\nYou can use the new `chats/CHAT_ID/resume` endpoint to resume chat sessions that\nare in `dismissed` or `va_dismissed` status. Resumed chat sessions display the\nchat history to both the end-user and the agent.",
+        "summary": {
+          "title": "Resume chat sessions",
+          "summary": "You can now use the new chats/CHAT_ID/resume endpoint to resume chat sessions. This endpoint allows you to bring back chats that were dismissed and display their history to both users and agents."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**HubSpot lookup against company profiles**\n\nHubSpot integrations now support lookups against Company profiles.\nAdministrators can configure primary and secondary lookup objects, allowing the\nsystem to search for end-users across both Contacts and Companies to ensure\naccurate identification during active sessions.",
+        "summary": {
+          "title": "HubSpot company profile lookups",
+          "summary": "HubSpot integrations now support lookups against Company profiles. Administrators can configure primary and secondary lookup objects to search for end-users across both Contacts and Companies, ensuring accurate identification during active sessions."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS prerelease notes**\n\nHere are the prerelease notes for the next version of CCAI Platform.\nWhen we release the next version, we expect the new capabilities to be as shown\nhere.",
+        "summary": {
+          "title": "CCAI Platform Prerelease Notes",
+          "summary": "Review the upcoming capabilities for the next version of CCAI Platform. These prerelease notes provide an overview of the new features expected upon release."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were addressed in this release:\n\n* Fixed an issue for Zendesk users where using click-to-dial from a private\n  note failed to display existing tickets for outbound calls, forcing agents\n  to create new tickets.\n* Fixed an issue for Brightspeed users where the CRM link in the agent adapter\n  didn't open during calls or chats.\n* Fixed an issue where call recordings between agents and end-users didn't\n  upload to Salesforce promptly.\n* Fixed an issue where agents placing an outbound call couldn't select queues\n  from their parent team.\n* Fixed an issue where agent status durations continued to accrue even after\n  agents logged out or went offline.\n* Fixed an issue where web queue redirects didn't work with domains ending in\n  `.today`.\n* Fixed an issue in the **Agent** dashboard where team names with a forward\n  slash displayed the HTML character entity (`&#x2F;`) instead of the forward\n  slash.\n* Fixed an issue where changing agent status after completing wrap-up\n  displayed the wrap-up screen instead of the new status.\n* Fixed an issue where the default global contact list was missing, despite\n  being enabled, preventing end-users from accessing this directory.\n* Fixed an issue where outbound calls were incorrectly prompting for customer\n  satisfaction (CSAT) feedback when a menu was assigned.\n* Fixed an issue where the French Canadian translation for \"wrap-up\" was\n  inconsistent between the chat adapter and notes panel.\n* Fixed an issue where filtering agents by Team on the Agents tab resulted in\n  significant delays.\n* Fixed an issue where users were unable to download reports from the virtual\n  agent dashboard and chat history if the requested date range exceeded the\n  storage retention period.\n* Fixed an issue where SMS, WhatsApp, and AMB queues that were copied from Web\n  or IVR channels incorrectly inherited transfer restrictions, preventing\n  agents from transferring chats.\n* Fixed an issue where users were unable to upload a key when adding or\n  editing a redaction platform under developer settings.\n* Fixed an issue where call recording links were not being pushed to HubSpot\n  cases as expected.\n* Fixed an issue where agents intermittently failed to connect to incoming\n  calls and were immediately disconnected, causing calls to requeue or drop\n  unexpectedly.\n* Fixed an issue where chat and call queues appeared unavailable for transfers\n  when destination agents reached maximum capacity or were in an unavailable\n  status.\n* Fixed an issue where toggling the Whisper Announcement or Countdown settings\n  in Automatic Redirection would unintentionally disable the Customize\n  Greetings Announcement option.\n* Fixed an issue where callback selections made after a virtual agent handover\n  were not accurately reflected in downloadable reports.\n* Fixed an issue where the **Available** filter didn't display agents that\n  were available to receive a transfer.\n* Fixed an issue with Alvaria Workforce integrations where files were rejected\n  due to a random suffix added to the RECORDKEY value.\n* Fixed an issue where two end-users could be connected simultaneously to a\n  single agent during campaign calls.\n* Fixed an issue where the inactive chat dismissal timer did not reset after a\n  conversation was escalated from a virtual agent to a live agent queue.\n* Fixed an issue where transcript metadata files were sometimes stored in the\n  folder for the following day instead of matching the transcript file date,\n  ensuring all metadata and transcript files are now consistently organized by\n  the correct chat end date.\n* Fixed an issue where agents appeared available but were unable to receive or\n  be re-offered calls due to repeated WebSocket presence updates and\n  connection expirations.\n* Fixed an issue where Direct Access Points configured with SIP URIs\n  containing spaces or non-standard formats failed to route calls correctly.\n* Fixed an issue where the Agents tab filter in the UJET Portal displayed \"All\n  undefined\" and was unclickable, preventing manual agent selection.\n* Fixed an issue where managers could access queue reports requested by other\n  managers, even if they were not involved in the relevant queues.\n* Fixed an issue where searching by Location on the Users & Teams page could\n  return agents who no longer matched the search criteria. Search results now\n  accurately reflect current agent locations.\n* Fixed an issue where users did not see a message indicating that no time\n  slots were available when selecting a queue with no available time slots.\n* Fixed an issue where the fetch time slots endpoint incorrectly included\n  non-working days when calculating available future time slots.\n* Fixed an issue where call recordings failed to convert from MP3 to WAV,\n  preventing playback in Call Quality Assurance tools that require WAV format.\n* Fixed an issue where, after a warm call transfer, if Agent 1 left the call\n  and Agent 2 resumed the conversation, there was no audio between Agent 2 and\n  the end user.\n* Fixed a 500 Internal Server Error that occurred when administrators tried to\n  add a new language (for example, Danish) under the \"Languages and Message\"\n  settings. This error prevented the language from being added to the list.\n* Fixed an issue where the chat widget landmark was missing an accessible\n  label. The chat widget now includes an aria-label matching the chat button\n  label.\n* We have updated the session metadata to provide a strict distinction between\n  Escalations and Transfers. This ensures that reporting accurately reflects\n  the business context of how a session moves between resources. The session\n  metadata will now categorize these events as follows:\n\n  + **Escalation**: Recorded only when a Virtual Agent transfers a session\n    to a Human Agent.\n  + **Transfer**: Recorded for all other routing scenarios, including:\n\n    - Human Agent > Human Agent\n    - Virtual Agent > Virtual Agent (Support or Task)\n    - Human Agent > Virtual Agent\n* Fixed an issue where updating a contact's mobile phone number during an\n  interaction would incorrectly overwrite the existing phone number field.\n* Fixed an issue where chats that ended due to end user timeout or\n  disconnection were incorrectly shown as \"undefined\" in the Interaction\n  Outcome column of platform reports.\n* Fixed an issue in WFM data where the handle count was showing incorrect\n  information if a chat spanned multiple intervals.\n* Fixed a data discrepancy in NICE WFM interval reports where chat metrics\n  (specifically ContactsReceived and HandledLong) were incorrectly showing\n  activity during time intervals where no chats actually occurred.\n* Fixed an issue where calls transferred using warm transfer to another queue\n  were incorrectly deflected due to overcapacity, resulting in a cold transfer\n  instead.\n* Fixed an issue where agents with multiple custom roles were incorrectly\n  prevented from changing to certain statuses due to role restriction logic.\n* Fixed an issue where changing the \"Custom After Hours Deflection\" setting in\n  queue configuration would incorrectly reset wrap up settings from \"Queue\" to\n  \"Global.\"\n* Fixed an issue where users with custom roles and correct permissions for\n  Queues were unable to add teams.\n* Fixed an issue where the right-side columns on the outbound phone numbers\n  page were not visible and could not be accessed when the browser window was\n  too small.\n* Fixed a web SDK issue where the chat modal on Android Chrome was not\n  recognized by screen readers due to a missing dialog role.\n* Fixed a web SDK issue where elements behind the Text size menu overlay were\n  focusable, ensuring that keyboard focus now remains on the Text size menu\n  until it is dismissed by the user.\n* Fixed a web SDK issue where the \"Request a call\" option in the chat widget\n  was not accessible to screen reader or keyboard-only users.\n* Fixed an issue where agents were incorrectly presented with a manual\n  \"Answer\" button and placed in \"Missed Call\" status after a single missed\n  Deltacast, even when auto answer was enabled.\n* Fixed an issue where transferring a direct outbound call to a queue could\n  fail with a \"Not Found\" error, even when the target menu and agents were\n  available.\n* Fixed an issue where the disposition list was not displaying in the\n  configured custom order and instead appeared alphabetically in both Agent\n  Desktop and standard Agent Adapter.\n* Fixed an issue where the user inactivity timeout setting did not\n  consistently log out users as configured.\n* Fixed an issue where queue channels and menu options would intermittently\n  disappear or fail to load correctly due to delays in feature flag\n  initialization.\n* Fixed an issue where adding multiple agents to a team would fail if any\n  selected user was already a member, resulting in a vague error and no agents\n  being added.\n* Fixed an issue in Progressive Campaigns where agents were intermittently\n  connected to two outbound call targets simultaneously. This occurred when a\n  dial attempt terminated immediately but failed to detach from the conference\n  bridge before the next attempt connected.\n* Fixed an issue where deleting a queue that was the target of an automatic\n  redirection could cause transfer options to fail to load for agents.\n* Fixed an issue where adding multiple agents to a team would fail if any\n  selected user was already a member, resulting in a vague error and no agents\n  being added.\n* Fixed the following issues that occurred with dual-channel and segmented\n  call recordings:\n\n  + Calls escalated from virtual agents weren't being recorded properly.\n  + Recordings of conversations with transferred agents were missing.\n* Fixed an issue where chats escalated from a virtual agent to a human agent\n  queue were incorrectly set to auto answer.\n* Fixed an issue where the call recording warning message didn't play for\n  callbacks initiated by virtual agent escalation when the destination queue\n  exceeded capacity.\n* Fixed an issue where search results in the **Directory** tab of the\n  **Transfer/Add party** screen in the call adapter persisted after closing\n  and reopening the screen.\n* Fixed an issue where the call adapter displayed an error when the **Call**\n  button was clicked.\n* Fixed an issue where uploading an automatic-redirection audio recording in\n  one IVR queue caused the recording to incorrectly appear in a different IVR\n  queue.\n* Fixed an issue where custom agent statuses restricted to specific roles\n  weren't visible to users assigned those roles.\n* Fixed an issue where contacts added to an outbound campaign using the\n  `/outbound_dialer/campaigns/CAMPAIGN_ID/contacts` endpoint weren't dialed.\n* Fixed an issue where users who authenticated with Single Sign-On (SSO)\n  couldn't update their profiles due to an invalid password error.\n* Fixed an issue where the queue list on the **Settings > Queues**\n  page didn't load for instances with a large number of queues.\n* Fixed an issue where the interaction history in the agent adapter\n  incorrectly displayed as empty.\n* Fixed an issue where Salesforce account lookup settings couldn't be saved\n  when selecting the `Person Account` object and record types.\n* Fixed an issue in the chat adapter where the **Previous Interactions**\n  summary displayed duplicate section headings (**Customer Satisfaction** and\n  **Action**) and an incorrect section heading (**Label**).\n* Fixed an issue where team managers couldn't download agent reports when\n  selecting the **All Agents** filter.\n* Fixed an issue where the system didn't record the failure reason when a\n  virtual agent tried to escalate a chat to a human agent outside of\n  operating hours.\n* Fixed an issue where using the **Bulk User Management** tool to deactivate\n  users failed.\n* Fixed an issue where the **Monitoring Chat** screen displayed chats\n  incorrectly, with misaligned chat bubbles, incorrectly formatted bullets,\n  and missing sender names and timestamps.\n* Fixed an issue where the **Directory** screen in the call adapter appeared\n  empty when an agent tried to start an internal call transfer to another\n  agent.\n* Fixed an issue where agent prioritization for deltacast selection was\n  incorrect.\n* Fixed a web SDK issue where underscores in text (for example, in email\n  addresses like user\\_name@example.com) were incorrectly removed in messages\n  to end-users.\n* Fixed a web SDK issue for iOS users where the **Yes** and **No** buttons in\n  the survey request at the end of a chat were hidden.",
+        "summary": {
+          "title": "Resolved various issues",
+          "summary": "This release addresses numerous issues across the platform, including improvements to call handling, agent experience, reporting accuracy, and user interface consistency. Specific fixes include resolving call recording upload delays, ensuring correct agent status tracking, and enhancing the functionality of CRM integrations and transfer options."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Support for creating chat virtual agents using CX Agent Studio**\n\nContact Center AI Platform supports creating chat virtual agents using\n[Customer Experience Agent Studio](https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps)\n(CX Agent Studio). This expands on its existing support for creating voice virtual\nagents with CX Agent Studio.",
+        "summary": {
+          "title": "Create chat agents with CX Agent Studio",
+          "summary": "You can now create chat virtual agents using CX Agent Studio, in addition to voice agents. This new feature expands the capabilities of the Customer Contact AI Platform."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Improved support for multiple agent matches for agent extension searches**\n\nWhen an end-user inputs an agent extension number at the beginning of a call and\nthere are multiple agent matches, the system now reads agent matches in groups\nof eight. This gets the end-user to the correct agent faster. We've added the\nfollowing new extension directory messages to help guide the end-user to the\ncorrect agent:\n\n* Multiple agents found\n* Search results next page\n* End of search results",
+        "summary": {
+          "title": "Faster Agent Matching",
+          "summary": "The system now groups agent matches in sets of eight when multiple agents are found for an extension number. New voice prompts guide users through the search results, helping them connect to the correct agent more quickly."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Callback fulfillment hours**\n\nYou can configure callback fulfillment hours, which are the hours when your\ncontact center fulfills callbacks. If you enable callback rollovers to the next\nday, callbacks that are scheduled outside of these hours are rolled over to the\nnext day. If you don't enable callback rollovers, callbacks that are scheduled\noutside of these hours are canceled. Callback fulfillment hours aren't available\nby default. To use this capability, ask your Google contact to turn it on for\nyour instance.",
+        "summary": {
+          "title": "Configure Callback Fulfillment Hours",
+          "summary": "You can now set specific hours for your contact center to fulfill callbacks. This feature helps manage callback scheduling, with options to roll over to the next day or cancel callbacks scheduled outside these hours. Contact your Google representative to enable this capability."
+        }
+      }
+    ],
     "2026-03-14": [
       {
         "kind": "Feature",
@@ -69,6 +143,50 @@
         }
       }
     ],
+    "2026-02-25": [
+      {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS 4.0 patch**\n\nThis patch does the following:\n\n* Fixes an issue where voicemails were being routed to agents who were not\n  assigned to the intended queue.\n* Adds the ability to disable the IVR greeting message, both at the global\n  level and at the Direct Access Point queue level.\n* Lets an agent and an end-user join a call simultaneously.",
+        "summary": {
+          "title": "CCaaS 4.0 Patch Release",
+          "summary": "This patch for CCaaS 4.0 resolves voicemail routing errors and introduces new features for IVR greeting control. It also enables simultaneous participation of agents and end-users in calls."
+        }
+      }
+    ],
+    "2026-02-17": [
+      {
+        "kind": "Fixed",
+        "content": "The following issues were addressed in this release:\n\n* Fixed the following issues with the standard (non-advanced reporting)\n  dashboards:\n\n  + The **Dashboard > Queue Reports** dashboard had broken table\n    headers.\n  + The **Dashboard > Call** dashboard was missing metrics labels\n    in the **LOGGED IN AGENT** tile.\n* Fixed an issue where calls were mistakenly saved in MP3 format rather than\n  WAV format in external storage.\n* Fixed an issue that occurred after an agent put an end-user on hold,\n  transferred the call to another agent, and then left the call. When the\n  remaining agent took the end-user off hold, the agent and the end-user\n  couldn't hear each other.\n* Fixed an issue with NICE WFM export where queue abandoned calls were\n  inaccurately reported to the WFM system.\n* Fixed an issue where the **Assign Human Agents** page for queues appeared\n  blank, preventing administrators from viewing or managing agent assignments.\n* Fixed an issue where an email with a message ID longer than 255 characters\n  failed to process and blocked the processing of other emails.\n* Fixed an issue where agents in the **In-email** status didn't receive\n  incoming calls or chats.\n* Fixed an issue where CSAT ratings were missing from metadata files and raw\n  data exports.\n* Fixed an issue where Salesforce integrations incorrectly created duplicate\n  cases for a single outbound call.\n* Fixed an issue where unsupported settings, such as **Cascade Conditions**\n  and **Wrap-up settings**, mistakenly appeared in the queue menu settings for\n  Apple Messages for Business queues.\n* Fixed an issue where attempting to barge into a chat while monitoring it\n  returned a `You are already in Chat` error instead of completing the action.\n* Fixed an agent desktop issue where the **New photo received** banner\n  reappeared after viewing a photo and switching between active chat tabs.\n* Fixed an issue where Direct Access Points failed to route calls correctly\n  for SIP URIs with spaces or non-standard formats.\n* Fixed an issue where an agent's personal contact name was mistakenly\n  displayed as the caller ID to other agents when they received a call from\n  the agent.\n* Fixed an issue where agents appeared as `Available` in the **Agent Activity\n  Timeline** report after signing out.\n* Fixed an issue where Salesforce integrations created duplicate cases for a\n  single outbound call.",
+        "summary": {
+          "title": "Resolved various issues",
+          "summary": "This release addresses multiple issues, including incorrect call saving formats, agent communication problems after transfers, inaccurate reporting for abandoned calls, and problems with dashboard displays and agent assignment pages. Additionally, fixes have been implemented for email processing, agent status visibility, integration errors with Salesforce, and routing issues with direct access points."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Salesforce Service Cloud: new secondary lookup object**\n\nThe Salesforce Service Cloud integration can now use a secondary lookup object\nto identify customer records when the primary lookup object returns no results.\nThis helps prevent the creation of duplicate records.\n\nAdministrators: When you click **Settings > Developer Settings\n> CRM > Salesforce > SFDC Cloud Selection\n> Service Cloud**, a new **Secondary Lookup Object** checkbox appears\nin the **Account Lookup** section.\n\nFor more information, see [Configure account lookup and field\nmapping](https://docs.cloud.google.com/contact-center/ccai-platform/docs/salesforce-integration-guide#configure-account-lookup).",
+        "summary": {
+          "title": "Service Cloud: improved customer record identification",
+          "summary": "Salesforce Service Cloud now supports a secondary lookup object to identify customer records, preventing the creation of duplicates when the primary lookup fails. This enhancement improves data accuracy and management within the integration."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Raw data export: new call\\_participants data type**\n\nWe've added the `call_participants` data type to raw data export. This data type\nhelps you track the following escalation details for wait-time virtual agents:\n\n* The amount of time the wait-time virtual agent spent in queue.\n* The number of events sent to the wait-time virtual agent while it was in\n  queue.\n\nFor more information, see [Raw data export\ndictionary](https://docs.cloud.google.com/contact-center/ccai-platform/docs/raw-data-export-dictionary).",
+        "summary": {
+          "title": "New call participants data type for raw data export",
+          "summary": "We've added the call_participants data type to raw data export. This new data type allows you to track wait-time virtual agent queue duration and event counts. This enhancement provides deeper insights into virtual agent performance during wait times."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS 4.0**\n\nWe've released version 4.0 of Google Cloud CCaaS.\n\nThe timing of the update to your instance depends on the deployment schedule\nthat you have chosen. For more information, see [Deployment\nschedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).",
+        "summary": {
+          "title": "CCaaS 4.0 Released",
+          "summary": "The latest version of Google Cloud CCaaS, version 4.0, has been released. The update timing for your instance will follow your chosen deployment schedule."
+        }
+      }
+    ],
     "2026-03-09": [
       {
         "kind": "Feature",
@@ -132,50 +250,6 @@
         "summary": {
           "title": "HubSpot company profile lookups",
           "summary": "HubSpot integrations now support lookups against company profiles. Administrators can configure primary and secondary lookup objects to search for end-users across both Contacts and Companies, ensuring accurate identification during active sessions."
-        }
-      }
-    ],
-    "2026-02-25": [
-      {
-        "kind": "Announcement",
-        "content": "**Google Cloud CCaaS 4.0 patch**\n\nThis patch does the following:\n\n* Fixes an issue where voicemails were being routed to agents who were not\n  assigned to the intended queue.\n* Adds the ability to disable the IVR greeting message, both at the global\n  level and at the Direct Access Point queue level.\n* Lets an agent and an end-user join a call simultaneously.",
-        "summary": {
-          "title": "CCaaS 4.0 Patch Release",
-          "summary": "This patch for CCaaS 4.0 resolves voicemail routing errors and introduces new features for IVR greeting control. It also enables simultaneous participation of agents and end-users in calls."
-        }
-      }
-    ],
-    "2026-02-17": [
-      {
-        "kind": "Fixed",
-        "content": "The following issues were addressed in this release:\n\n* Fixed the following issues with the standard (non-advanced reporting)\n  dashboards:\n\n  + The **Dashboard > Queue Reports** dashboard had broken table\n    headers.\n  + The **Dashboard > Call** dashboard was missing metrics labels\n    in the **LOGGED IN AGENT** tile.\n* Fixed an issue where calls were mistakenly saved in MP3 format rather than\n  WAV format in external storage.\n* Fixed an issue that occurred after an agent put an end-user on hold,\n  transferred the call to another agent, and then left the call. When the\n  remaining agent took the end-user off hold, the agent and the end-user\n  couldn't hear each other.\n* Fixed an issue with NICE WFM export where queue abandoned calls were\n  inaccurately reported to the WFM system.\n* Fixed an issue where the **Assign Human Agents** page for queues appeared\n  blank, preventing administrators from viewing or managing agent assignments.\n* Fixed an issue where an email with a message ID longer than 255 characters\n  failed to process and blocked the processing of other emails.\n* Fixed an issue where agents in the **In-email** status didn't receive\n  incoming calls or chats.\n* Fixed an issue where CSAT ratings were missing from metadata files and raw\n  data exports.\n* Fixed an issue where Salesforce integrations incorrectly created duplicate\n  cases for a single outbound call.\n* Fixed an issue where unsupported settings, such as **Cascade Conditions**\n  and **Wrap-up settings**, mistakenly appeared in the queue menu settings for\n  Apple Messages for Business queues.\n* Fixed an issue where attempting to barge into a chat while monitoring it\n  returned a `You are already in Chat` error instead of completing the action.\n* Fixed an agent desktop issue where the **New photo received** banner\n  reappeared after viewing a photo and switching between active chat tabs.\n* Fixed an issue where Direct Access Points failed to route calls correctly\n  for SIP URIs with spaces or non-standard formats.\n* Fixed an issue where an agent's personal contact name was mistakenly\n  displayed as the caller ID to other agents when they received a call from\n  the agent.\n* Fixed an issue where agents appeared as `Available` in the **Agent Activity\n  Timeline** report after signing out.\n* Fixed an issue where Salesforce integrations created duplicate cases for a\n  single outbound call.",
-        "summary": {
-          "title": "Resolved various issues",
-          "summary": "This release addresses multiple issues, including incorrect call saving formats, agent communication problems after transfers, inaccurate reporting for abandoned calls, and problems with dashboard displays and agent assignment pages. Additionally, fixes have been implemented for email processing, agent status visibility, integration errors with Salesforce, and routing issues with direct access points."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Salesforce Service Cloud: new secondary lookup object**\n\nThe Salesforce Service Cloud integration can now use a secondary lookup object\nto identify customer records when the primary lookup object returns no results.\nThis helps prevent the creation of duplicate records.\n\nAdministrators: When you click **Settings > Developer Settings\n> CRM > Salesforce > SFDC Cloud Selection\n> Service Cloud**, a new **Secondary Lookup Object** checkbox appears\nin the **Account Lookup** section.\n\nFor more information, see [Configure account lookup and field\nmapping](https://docs.cloud.google.com/contact-center/ccai-platform/docs/salesforce-integration-guide#configure-account-lookup).",
-        "summary": {
-          "title": "Service Cloud: improved customer record identification",
-          "summary": "Salesforce Service Cloud now supports a secondary lookup object to identify customer records, preventing the creation of duplicates when the primary lookup fails. This enhancement improves data accuracy and management within the integration."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Raw data export: new call\\_participants data type**\n\nWe've added the `call_participants` data type to raw data export. This data type\nhelps you track the following escalation details for wait-time virtual agents:\n\n* The amount of time the wait-time virtual agent spent in queue.\n* The number of events sent to the wait-time virtual agent while it was in\n  queue.\n\nFor more information, see [Raw data export\ndictionary](https://docs.cloud.google.com/contact-center/ccai-platform/docs/raw-data-export-dictionary).",
-        "summary": {
-          "title": "New call participants data type for raw data export",
-          "summary": "We've added the call_participants data type to raw data export. This new data type allows you to track wait-time virtual agent queue duration and event counts. This enhancement provides deeper insights into virtual agent performance during wait times."
-        }
-      },
-      {
-        "kind": "Announcement",
-        "content": "**Google Cloud CCaaS 4.0**\n\nWe've released version 4.0 of Google Cloud CCaaS.\n\nThe timing of the update to your instance depends on the deployment schedule\nthat you have chosen. For more information, see [Deployment\nschedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).",
-        "summary": {
-          "title": "CCaaS 4.0 Released",
-          "summary": "The latest version of Google Cloud CCaaS, version 4.0, has been released. The update timing for your instance will follow your chosen deployment schedule."
         }
       }
     ],

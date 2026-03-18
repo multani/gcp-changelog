@@ -1,5 +1,24 @@
 # BigQuery
 
+## 2026-03-17
+
+### Feature
+
+In BigQuery ML, you can now
+[automatically deploy](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-remote-model-open#automatically_deployed_models)
+open models to Vertex AI endpoints. Automatically deployed models offer the
+following benefits:
+
+* [Automatic Vertex AI resource management](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-remote-model-open#managed-resources)
+* Reserve open model resources by
+  [using Compute Engine reservations](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-remote-model-open#reservation-affinity)
+* [Automatic or immediate open model undeployment](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-remote-model-open#managed-model-undeployment)
+  to save costs
+
+This feature is [generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
+
+---
 ## 2026-03-16
 
 ### Feature

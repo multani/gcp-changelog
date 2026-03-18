@@ -2,9 +2,54 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Data Fusion</title>
   <subtitle>Changelog for Google Cloud product: Cloud Data Fusion</subtitle>
-  <updated>2026-02-09T00:00:00+00:00</updated>
+  <updated>2026-03-17T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-data-fusion</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-data-fusion/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-data-fusion:2026-03-17:fixed:0</id>
+    <published>2026-03-17T00:00:00+00:00</published>
+    <updated>2026-03-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud Data Fusion version 6.11.1.2 is
+<a href="https://cloud.google.com/products#product-launch-stages">generally available (GA)</a>.</p>
+<p>This release includes the following changes:</p>
+<ul>
+<li>Fixed the triggers panel in the pipeline details page to display the correct
+  triggers count on initial load (<a href="https://cdap.atlassian.net/browse/CDAP-21230">CDAP-21230</a>).</li>
+<li>Updated the GraphQL query mechanism to cache the pipelines list and fix the
+  long loading screen in the deployed pipelines list page
+  (<a href="https://cdap.atlassian.net/browse/CDAP-21229">CDAP-21229</a>).</li>
+</ul>]]></content>
+    <summary>Cloud Data Fusion version 6.11.1.2 is now generally available. This release includes fixes for the triggers panel display and improved loading times for the deployed pipelines list.</summary>
+    <title>Fixed: Cloud Data Fusion 6.11.1.2 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-data-fusion:2026-03-02:change:0</id>
+    <published>2026-03-02T00:00:00+00:00</published>
+    <updated>2026-03-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The SAP ODP plugin version 0.12.1 is available in Cloud Data Fusion version
+6.10 and later. This release includes the following features and changes:</p>
+<ul>
+<li>Hierarchy data sources are now supported for extraction.</li>
+<li>ODQ fields are populated with TSN, package number, and record number for full
+  extraction.</li>
+<li>Structured SAP messages are now displayed according to the message type
+  (for example, type <code>E</code> as error and type <code>I</code> as information). Earlier, all
+  messages from SAP displayed as errors.</li>
+<li>You can now use the TVARVC table entries with parameter
+  <code>/GOOG/ODP_TRANSFER_MODE</code> (for all data sources) or <code>/GOOG/M_DatasourceName</code>
+  (for individual data sources) to determine if data is transferred in CHAR or
+  XML format. Maintain 'C' to transfer data in CHAR format. Maintain an empty
+  value to transfer data in XML format.</li>
+</ul>]]></content>
+    <summary>The SAP ODP plugin has been updated to version 0.12.1 in Cloud Data Fusion 6.10+, introducing hierarchy data source support, improved message display, and enhanced data transfer format control. This release also populates ODQ fields with TSN, package, and record numbers for full extractions.</summary>
+    <title>Change: SAP ODP Plugin Update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

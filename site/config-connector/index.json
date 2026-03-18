@@ -1,6 +1,106 @@
 {
   "name": "Config Connector",
   "entries": {
+    "2026-03-10": [
+      {
+        "kind": "Breaking",
+        "content": "Config Connector version 1.144.0 was identified as a bad release. Do not use this version - upgrade directly to 1.145.0 or later.",
+        "summary": {
+          "title": "Config Connector Bad Release Identified",
+          "summary": "Config Connector version 1.144.0 has been identified as a problematic release. Users are strongly advised to avoid this version and upgrade directly to 1.145.0 or a later version to ensure stability and access to the latest features."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "Config Connector version 1.146.0 is now available.",
+        "summary": {
+          "title": "Config Connector 1.146.0 Released",
+          "summary": "Config Connector version 1.146.0 has been released. This update includes various improvements and bug fixes. Users are encouraged to upgrade to the latest version for the best experience."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Bug Fixes:\n\n* [`SQLInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance)\n  + Added client-side default for `RetainedBackups` and `RetentionUnit`, and validated the `edition` field.\n  + Added `replicaConfiguration` as an unmanageable field.\n  + Controller now correctly defaults the field `enablePrivatePathForGoogleCloudServices` to `false`.\n* [`CertificateManagerDnsAuthorization`](https://cloud.google.com/config-connector/docs/reference/resource-docs/certificatemanager/certificatemanagerdnsauthorization)\n  + Sanitized Kubernetes labels to avoid 400 errors from invalid characters.\n* `ConfigConnector` Core\n  + `preview` now performs an early exit when no resources are found to reconcile.\n  + Fixed CRD field description for shared parent.\n  + Fixed incorrect exit status in lint filter.\n  + Updated `mockgcp` to improve compute regional resource mocks and defaults.",
+        "summary": {
+          "title": "Bug Fixes Deployed",
+          "summary": "Several bug fixes have been deployed, including improvements to SQL instance configurations, certificate manager DNS authorization, and the Config Connector core. These updates ensure better stability and resource management."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Fields:\n\n* [`ContainerCluster`](https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster)\n  + Added `spec.controlPlaneEndpointsConfig.dnsEndpointConfig.enableK8sTokensViaDns` field.",
+        "summary": {
+          "title": "K8s Tokens via DNS Enabled",
+          "summary": "A new field, `spec.controlPlaneEndpointsConfig.dnsEndpointConfig.enableK8sTokensViaDns`, has been added to ContainerCluster. This enhancement allows for enabling Kubernetes tokens through DNS."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Improvements:\n\n* [`ContainerCluster`](https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster)\n  + Made `spec.clusterAutoscaling.autoProvisioningDefaults.bootDiskKMSKeyRef` mutable.\n* `NetworkServicesWasmPlugin`\n  + Introduced identity and reference.\n* Added structured reporting diff to numerous direct controllers to enhance diff visibility.",
+        "summary": {
+          "title": "Controller Updates and New Features",
+          "summary": "We've updated several controllers with new features and improvements. Key changes include making `bootDiskKMSKeyRef` mutable for Container Clusters, introducing identity and reference for NetworkServicesWasmPlugin, and enhancing diff visibility with structured reporting across numerous controllers."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Alpha Resources (Direct Reconciler):\n\n* `ParameterManagerParameter`\n  + Manage [Parameter Manager Parameters](https://cloud.google.com/secret-manager/parameter-manager/docs/overview).",
+        "summary": {
+          "title": "New Alpha Resources Available",
+          "summary": "We're excited to announce the release of new Alpha resources, including the ParameterManagerParameter. This allows you to manage Parameter Manager Parameters directly, enhancing your control over configuration settings. Explore the documentation for more details on how to integrate this new feature."
+        }
+      }
+    ],
+    "2026-02-22": [
+      {
+        "kind": "Change",
+        "content": "Added support for structured diff reporting to the following direct controllers to improve logging and debugging:\n\n* [`ApigeeEnvgroup`](https://cloud.google.com/config-connector/docs/reference/resource-docs/apigee/apigeeenvgroup)\n* [`ApigeeInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/apigee/apigeeinstance)\n* [`AssetFeed`](https://cloud.google.com/config-connector/docs/reference/resource-docs/asset/assetfeed)\n* [`AssetSavedQuery`](https://cloud.google.com/config-connector/docs/reference/resource-docs/asset/assetsavedquery)\n* BackupVaultIdentity\n* BigtableLogicalView\n* [`CloudDeployDeliveryPipeline`](https://cloud.google.com/config-connector/docs/reference/resource-docs/clouddeploy/clouddeploydeliverypipeline)\n* ColabRuntime\n* [`RedisCluster`](https://cloud.google.com/config-connector/docs/reference/resource-docs/redis/rediscluster)\n* [`SpannerBackupSchedule`](https://cloud.google.com/config-connector/docs/reference/resource-docs/spanner/spannerbackupschedule)\n* [`SpannerInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/spanner/spannerinstance)\n* SpannerInstanceConfig\n* TaskQueue\n* [`WorkstationConfig`](https://cloud.google.com/config-connector/docs/reference/resource-docs/workstations/workstationconfig)",
+        "summary": {
+          "title": "Improved logging and debugging for controllers",
+          "summary": "Structured diff reporting has been added to several direct controllers, enhancing logging and debugging capabilities. This update benefits controllers such as ApigeeEnvgroup, ApigeeInstance, AssetFeed, and many others, providing more detailed insights into changes."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Fields:\n\n* [`ContainerCluster`](https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster)\n  + Added `spec.clusterAutoscaling.defaultComputeClassConfig` field.\n* [`RunJob`](https://cloud.google.com/config-connector/docs/reference/resource-docs/run/runjob)\n  + Added `spec.template.template.volumes.nfs` field to support NFS backed Volumes.\n  + Added `spec.template.template.volumes.gcs` field to support GCS backed Volumes.\n* [`SQLInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance)\n  + Added `spec.settings.failoverDrReplicaRef` field to support designating CloudSQL Enterprise Plus DR Replicas.",
+        "summary": {
+          "title": "New Configuration Options Available",
+          "summary": "Enhance your infrastructure management with new fields for ContainerCluster, RunJob, and SQLInstance. Support for NFS and GCS backed volumes in RunJobs, default compute class configuration in ContainerClusters, and failover DR replicas for SQLInstances are now available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Beta Resources (Direct Reconciler):\n\n* [`ComputeSecurityPolicy`](https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computesecuritypolicy)\n  + Manage Google Cloud Armor security policies.\n* `MemorystoreInstance`\n  + Manage [Memorystore for Valkey Instances](https://cloud.google.com//memorystore/docs/valkey/reference/rest/v1/projects.locations.instances).",
+        "summary": {
+          "title": "New Beta Resources Available",
+          "summary": "We're excited to announce the beta release of two new resources: ComputeSecurityPolicy for managing Google Cloud Armor security policies and MemorystoreInstance for managing Memorystore for Valkey instances."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "Config Connector version 1.145.0 is now available.",
+        "summary": {
+          "title": "Config Connector 1.145.0 Released",
+          "summary": "Config Connector version 1.145.0 has been released. This update brings new features and improvements to the tool that helps manage your cloud resources."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New features:\n\n* Added the `preview` command to the `config-connector` CLI. The `preview` command has been removed from the experimental `kompanion` tool.",
+        "summary": {
+          "title": "New CLI command for Config Connector",
+          "summary": "The `preview` command is now available in the `config-connector` CLI. This functionality was previously part of the experimental `kompanion` tool and has now been integrated into the main CLI for easier access."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Bug Fixes:\n\n* [`DataformRepository`](https://cloud.google.com/config-connector/docs/reference/resource-docs/dataform/dataformrepository)\n  + Fixed a bug where the `serviceAccountRef` field could not be updated.\n* [`SpannerBackupSchedule`](https://cloud.google.com/config-connector/docs/reference/resource-docs/spanner/spannerbackupschedule)\n  + Fixed an issue with invalid update masks by handling output-only fields.",
+        "summary": {
+          "title": "Fixed repository and backup schedule issues",
+          "summary": "Resolved a bug preventing updates to DataformRepository's serviceAccountRef. Addressed an issue with SpannerBackupSchedule by correctly handling output-only fields in update masks."
+        }
+      }
+    ],
     "2026-01-27": [
       {
         "kind": "Feature",

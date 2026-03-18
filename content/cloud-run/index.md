@@ -1,5 +1,12 @@
 # Cloud Run
 
+## 2026-03-17
+
+### Feature
+
+Support for [Ruby 4.0 runtime](https://docs.cloud.google.com/run/docs/runtime-support#ruby) is in [General Availability](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-03-13
 
 ### Feature

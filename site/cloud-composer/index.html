@@ -2384,21 +2384,7 @@ Cloud Composer 3 environments.</p>
 <hr />
 <h2 id="2026-03-03">2026-03-03</h2>
 <h3 id="change">Change</h3>
-<p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
-are available in Cloud Composer 2:</p>
-<ul>
-<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-6-airflow-2-10-5">composer-2.16.6-airflow-2.10.5</a> (default)</li>
-<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-6-airflow-2-9-3">composer-2.16.6-airflow-2.9.3</a></li>
-</ul>
-<h3 id="feature">Feature</h3>
-<p><a href="https://docs.cloud.google.com/composer/docs/composer-3/airflow-rbac#about-per-folder-registration">Per-folder roles registration</a>
-is available in environments with Airflow 3 (Preview) starting from Airflow version 3.1.7.</p>
-<h3 id="feature_1">Feature</h3>
-<p><a href="https://docs.cloud.google.com/composer/docs/composer-3/set-up-highly-resilient-environments">Highly Resilient environments</a>
-are available in environments with Airflow 3 (Preview) starting from
-Airflow version 3.1.7.</p>
-<h3 id="feature_2">Feature</h3>
-<p><strong>Airflow 3.1.7 is available</strong> in Cloud Composer 3.</p>
+<p>Airflow 3.1.0 is no longer included in Cloud Composer images and builds.</p>
 <h3 id="change_1">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
 are available in Cloud Composer 3:</p>
@@ -2407,21 +2393,36 @@ are available in Cloud Composer 3:</p>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-29">composer-3-airflow-2.10.5-build.29</a> (default)</li>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-49">composer-3-airflow-2.9.3-build.49</a></li>
 </ul>
+<h3 id="feature">Feature</h3>
+<p><strong>Airflow 3.1.7 is available</strong> in Cloud Composer 3.</p>
+<h3 id="feature_1">Feature</h3>
+<p><a href="https://docs.cloud.google.com/composer/docs/composer-3/set-up-highly-resilient-environments">Highly Resilient environments</a>
+are available in environments with Airflow 3 (Preview) starting from
+Airflow version 3.1.7.</p>
+<h3 id="feature_2">Feature</h3>
+<p><a href="https://docs.cloud.google.com/composer/docs/composer-3/airflow-rbac#about-per-folder-registration">Per-folder roles registration</a>
+is available in environments with Airflow 3 (Preview) starting from Airflow version 3.1.7.</p>
 <h3 id="change_2">Change</h3>
-<p>Airflow 3.1.0 is no longer included in Cloud Composer images and builds.</p>
+<p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
+are available in Cloud Composer 2:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-6-airflow-2-10-5">composer-2.16.6-airflow-2.10.5</a> (default)</li>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-6-airflow-2-9-3">composer-2.16.6-airflow-2.9.3</a></li>
+</ul>
 <hr />
 <h2 id="2026-02-20">2026-02-20</h2>
-<h3 id="deprecated">Deprecated</h3>
-<p>The following Cloud Composer versions and builds have reached their
-<a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
-composer-3-airflow-2.9.3-build.16 and composer-2.11.3-*.</p>
+<h3 id="feature_3">Feature</h3>
+<p>Cloud Composer API now accepts the new
+<code>https://www.googleapis.com/auth/cloudcomposer</code> OAuth scope. This scope
+provides access only to the Cloud Composer API and can't be used to call other
+Google Cloud APIs.</p>
 <h3 id="change_3">Change</h3>
-<p>The <code>enable_private_environment</code> boolean field in the Cloud Composer API is
-going to be deprecated in the future. When making direct calls to Cloud
-Composer API, use the new <code>networking_type</code> field instead.</p>
-<p>This change affects only direct calls to the Cloud Composer API.
-Google Cloud CLI commands and the <code>google_composer_environment</code> resource in
-Terraform are not affected.</p>
+<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
+are available in Cloud Composer 2:</p>
+<ul>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-5-airflow-2-10-5">composer-2.16.5-airflow-2.10.5</a> (default)</li>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-5-airflow-2-9-3">composer-2.16.5-airflow-2.9.3</a></li>
+</ul>
 <h3 id="change_4">Change</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
 are available in Cloud Composer 3:</p>
@@ -2431,20 +2432,34 @@ are available in Cloud Composer 3:</p>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-47">composer-3-airflow-2.9.3-build.47</a></li>
 </ul>
 <h3 id="change_5">Change</h3>
+<p>The <code>enable_private_environment</code> boolean field in the Cloud Composer API is
+going to be deprecated in the future. When making direct calls to Cloud
+Composer API, use the new <code>networking_type</code> field instead.</p>
+<p>This change affects only direct calls to the Cloud Composer API.
+Google Cloud CLI commands and the <code>google_composer_environment</code> resource in
+Terraform are not affected.</p>
+<h3 id="deprecated">Deprecated</h3>
+<p>The following Cloud Composer versions and builds have reached their
+<a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
+composer-3-airflow-2.9.3-build.16 and composer-2.11.3-*.</p>
+<hr />
+<h2 id="2026-02-16">2026-02-16</h2>
+<h3 id="feature_4">Feature</h3>
+<p><a href="https://docs.cloud.google.com/composer/docs/composer-3/save-load-snapshots">Environment snapshots</a>
+are available in environments with Airflow 3 (Preview). This change is now
+rolled out to all regions supported by Cloud Composer 3.</p>
+<h3 id="deprecated_1">Deprecated</h3>
+<p>The following Cloud Composer versions and builds have reached their
+<a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
+composer-3-airflow-2.9.3-build.15 and composer-2.11.2-*.</p>
+<h3 id="change_6">Change</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
 are available in Cloud Composer 2:</p>
 <ul>
-<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-5-airflow-2-10-5">composer-2.16.5-airflow-2.10.5</a> (default)</li>
-<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-5-airflow-2-9-3">composer-2.16.5-airflow-2.9.3</a></li>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-4-airflow-2-10-5">composer-2.16.4-airflow-2.10.5</a> (default)</li>
+<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-4-airflow-2-9-3">composer-2.16.4-airflow-2.9.3</a></li>
 </ul>
-<h3 id="feature_3">Feature</h3>
-<p>Cloud Composer API now accepts the new
-<code>https://www.googleapis.com/auth/cloudcomposer</code> OAuth scope. This scope
-provides access only to the Cloud Composer API and can't be used to call other
-Google Cloud APIs.</p>
-<hr />
-<h2 id="2026-02-16">2026-02-16</h2>
-<h3 id="change_6">Change</h3>
+<h3 id="change_7">Change</h3>
 <p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
 are available in Cloud Composer 3:</p>
 <ul>
@@ -2452,21 +2467,6 @@ are available in Cloud Composer 3:</p>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-26">composer-3-airflow-2.10.5-build.26</a> (default)</li>
 <li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-46">composer-3-airflow-2.9.3-build.46</a></li>
 </ul>
-<h3 id="change_7">Change</h3>
-<p>New <a href="https://cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
-are available in Cloud Composer 2:</p>
-<ul>
-<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-4-airflow-2-10-5">composer-2.16.4-airflow-2.10.5</a> (default)</li>
-<li><a href="https://cloud.google.com/composer/docs/versions-packages#composer-2-16-4-airflow-2-9-3">composer-2.16.4-airflow-2.9.3</a></li>
-</ul>
-<h3 id="deprecated_1">Deprecated</h3>
-<p>The following Cloud Composer versions and builds have reached their
-<a href="https://cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
-composer-3-airflow-2.9.3-build.15 and composer-2.11.2-*.</p>
-<h3 id="feature_4">Feature</h3>
-<p><a href="https://docs.cloud.google.com/composer/docs/composer-3/save-load-snapshots">Environment snapshots</a>
-are available in environments with Airflow 3 (Preview). This change is now
-rolled out to all regions supported by Cloud Composer 3.</p>
 <hr />
 <h2 id="2026-02-10">2026-02-10</h2>
 <h3 id="fixed">Fixed</h3>

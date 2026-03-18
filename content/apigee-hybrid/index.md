@@ -2,6 +2,22 @@
 
 ## 2026-03-12
 
+### Fixed
+
+#### Fixed in this release
+
+| Bug ID | Description |
+| --- | --- |
+| **490308770** | **Fixed malformed `http_proxy` and `https_proxy` strings in Helm templates that occurred when using authenticated outbound proxy configurations.** |
+| **488417252** | **Fixed an issue where the Apigee Operator guardrails pod failed to run on EKS with Workload Identity Federation (WIF) by ensuring it runs as the federated principal rather than the default service account.** |
+| **485526221** | **Removed the deprecated `apigee-stackdriver-logging-agent` image from the `apigee-pull-push.sh` tool, resolving image pull failures during automated deployments.** |
+| **484405364** | **Helm chart images with the `1.16.0-hotfix.1` tag are available for download.** |
+| **482209901** | **Added the `watch` permission to the `apigee-manager` role to allow the controller to monitor Deployment resources and resolve watch failures in the namespace.** |
+| **482077193** | **Fixed an issue where proxy chaining failed with HTTP 404 `route_not_found` errors in multi-organization, single-namespace configurations.** |
+| **481793880** | **Fixed a bug in the `apigeeorg` admission webhook controller that prevented upgrading organizations when monetization was enabled.** |
+| **479872706** | **Resolved an issue that prevented loading API products, apps, and developers after migrating data to Apigee hybrid 1.16.0 in configurations using Workload Identity Federation (WIF) with an HTTP Forward Proxy.** |
+| **479040521** | **Resolved a regression where the `apigee-operator-guardrails-sa` ServiceAccount was not correctly created on AKS and EKS platforms with Federated Workload Identity enabled.** |
+
 ### hybrid 1.16.0-hotfix.1
 
 On March 12, 2026 we released an update to Apigee hybrid 1.16.0-hotfix.1.
@@ -98,24 +114,25 @@ Apply this hotfix with the following steps:
    kubectl -n APIGEE_NAMESPACE get apigeeenv
    ```
 
+---
+## 2026-03-11
+
+### hybrid v1.15.2
+
+On March 11, 2026 we released an updated version of the Apigee hybrid software, v1.15.2.
+
+* For information on upgrading, see [Upgrading Apigee hybrid to version v1.15.2](https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/upgrade).
+* For information on new installations, see [The big picture](https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/big-picture).
+
+**Note:** This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).
+
 ### Fixed
 
 #### Fixed in this release
 
 | Bug ID | Description |
 | --- | --- |
-| **490308770** | **Fixed malformed `http_proxy` and `https_proxy` strings in Helm templates that occurred when using authenticated outbound proxy configurations.** |
-| **488417252** | **Fixed an issue where the Apigee Operator guardrails pod failed to run on EKS with Workload Identity Federation (WIF) by ensuring it runs as the federated principal rather than the default service account.** |
-| **485526221** | **Removed the deprecated `apigee-stackdriver-logging-agent` image from the `apigee-pull-push.sh` tool, resolving image pull failures during automated deployments.** |
-| **484405364** | **Helm chart images with the `1.16.0-hotfix.1` tag are available for download.** |
-| **482209901** | **Added the `watch` permission to the `apigee-manager` role to allow the controller to monitor Deployment resources and resolve watch failures in the namespace.** |
-| **482077193** | **Fixed an issue where proxy chaining failed with HTTP 404 `route_not_found` errors in multi-organization, single-namespace configurations.** |
-| **481793880** | **Fixed a bug in the `apigeeorg` admission webhook controller that prevented upgrading organizations when monetization was enabled.** |
-| **479872706** | **Resolved an issue that prevented loading API products, apps, and developers after migrating data to Apigee hybrid 1.16.0 in configurations using Workload Identity Federation (WIF) with an HTTP Forward Proxy.** |
-| **479040521** | **Resolved a regression where the `apigee-operator-guardrails-sa` ServiceAccount was not correctly created on AKS and EKS platforms with Federated Workload Identity enabled.** |
-
----
-## 2026-03-11
+| **469694040** | **Fixed an issue where custom Java security policies were intermittently not applied during runtime pod restarts or environment contract updates, which could lead to "Permission denied" errors in Java callouts.** |
 
 ### Security
 
@@ -139,23 +156,6 @@ Apply this hotfix with the following steps:
 | **N/A** | **Security fixes for `apigee-redis`.**  This addresses the following vulnerabilities:  * [CVE-2025-68121](https://nvd.nist.gov/vuln/detail/CVE-2025-68121) * [CVE-2025-68119](https://nvd.nist.gov/vuln/detail/CVE-2025-68119) * [CVE-2025-61732](https://nvd.nist.gov/vuln/detail/CVE-2025-61732) * [CVE-2025-61731](https://nvd.nist.gov/vuln/detail/CVE-2025-61731) * [CVE-2025-61729](https://nvd.nist.gov/vuln/detail/CVE-2025-61729) * [CVE-2025-61726](https://nvd.nist.gov/vuln/detail/CVE-2025-61726) * [CVE-2025-61725](https://nvd.nist.gov/vuln/detail/CVE-2025-61725) * [CVE-2025-61723](https://nvd.nist.gov/vuln/detail/CVE-2025-61723) * [CVE-2025-58188](https://nvd.nist.gov/vuln/detail/CVE-2025-58188) * [CVE-2025-58187](https://nvd.nist.gov/vuln/detail/CVE-2025-58187) * [CVE-2025-47907](https://nvd.nist.gov/vuln/detail/CVE-2025-47907) * [CVE-2025-4674](https://nvd.nist.gov/vuln/detail/CVE-2025-4674) |
 | **N/A** | **Security fixes for `apigee-stackdriver-logging-agent`.**  This addresses the following vulnerabilities:  * [CVE-2025-61594](https://nvd.nist.gov/vuln/detail/CVE-2025-61594) * [CVE-2025-24294](https://nvd.nist.gov/vuln/detail/CVE-2025-24294) |
 | **N/A** | **Security fixes for `apigee-udca`.**  This addresses the following vulnerabilities:  * [CVE-2026-24051](https://nvd.nist.gov/vuln/detail/CVE-2026-24051) * [CVE-2025-68121](https://nvd.nist.gov/vuln/detail/CVE-2025-68121) * [CVE-2025-68119](https://nvd.nist.gov/vuln/detail/CVE-2025-68119) * [CVE-2025-61732](https://nvd.nist.gov/vuln/detail/CVE-2025-61732) * [CVE-2025-61731](https://nvd.nist.gov/vuln/detail/CVE-2025-61731) * [CVE-2025-61729](https://nvd.nist.gov/vuln/detail/CVE-2025-61729) * [CVE-2025-61726](https://nvd.nist.gov/vuln/detail/CVE-2025-61726) * [CVE-2025-61725](https://nvd.nist.gov/vuln/detail/CVE-2025-61725) * [CVE-2025-61723](https://nvd.nist.gov/vuln/detail/CVE-2025-61723) * [CVE-2025-58188](https://nvd.nist.gov/vuln/detail/CVE-2025-58188) * [CVE-2025-58187](https://nvd.nist.gov/vuln/detail/CVE-2025-58187) * [CVE-2025-47907](https://nvd.nist.gov/vuln/detail/CVE-2025-47907) |
-
-### Fixed
-
-#### Fixed in this release
-
-| Bug ID | Description |
-| --- | --- |
-| **469694040** | **Fixed an issue where custom Java security policies were intermittently not applied during runtime pod restarts or environment contract updates, which could lead to "Permission denied" errors in Java callouts.** |
-
-### hybrid v1.15.2
-
-On March 11, 2026 we released an updated version of the Apigee hybrid software, v1.15.2.
-
-* For information on upgrading, see [Upgrading Apigee hybrid to version v1.15.2](https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/upgrade).
-* For information on new installations, see [The big picture](https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/big-picture).
-
-**Note:** This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).
 
 ---
 ## 2026-02-06

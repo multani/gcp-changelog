@@ -1,5 +1,26 @@
 # Apigee Advanced API Security
 
+## 2026-03-17
+
+### Announcement
+
+On March 17, 2026 we released an updated version of Advanced API Security
+abuse detection
+
+### Feature
+
+**VPC-SC support in abuse detection**
+
+This release includes full support in Advanced API Security abuse detection
+for VPC-SC customers. This includes support for VPC-SC with the Advanced Anomaly
+Detection ML model used for abuse detection, as well as detection exclusion
+lists.
+
+For usage information, see
+[Abuse detection](https://docs.cloud.google.com/apigee/docs/api-security/abuse-detection) in the
+documentation.
+
+---
 ## 2026-03-10
 
 ### Announcement

@@ -1,5 +1,41 @@
 # Apigee X
 
+## 2026-03-17
+
+### Announcement
+
+On March 17th, 2026, we released an updated version of Apigee (1-17-0-apigee-5).
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| **N/A** | **Updates to infrastructure and libraries.** |
+
+---
+## 2026-03-10
+
+### Announcement
+
+On March 10th, 2026, we released an updated version of Apigee (1-17-0-apigee-4).
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+### Security
+
+| Bug ID | Description |
+| --- | --- |
+| **483769763, 481735779** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2025-61726](https://nvd.nist.gov/vuln/detail/CVE-2025-61726) * [CVE-2025-61728](https://nvd.nist.gov/vuln/detail/CVE-2025-61728) * [CVE-2025-61730](https://nvd.nist.gov/vuln/detail/CVE-2025-61730) * [CVE-2025-61731](https://nvd.nist.gov/vuln/detail/CVE-2025-61731) * [CVE-2025-61732](https://nvd.nist.gov/vuln/detail/CVE-2025-61732) * [CVE-2026-24051](https://nvd.nist.gov/vuln/detail/CVE-2026-24051) * [CVE-2026-25765](https://nvd.nist.gov/vuln/detail/CVE-2026-25765 ) |
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| **N/A** | **Updates to infrastructure and libraries.** |
+
+---
 ## 2026-02-24
 
 ### Announcement
@@ -8,12 +44,6 @@ On February 24th, 2026, we released an updated version of Apigee (1-17-0-apigee-
 
 **Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
 
-### Security
-
-| Bug ID | Description |
-| --- | --- |
-| **481735779, 457138941, 471232237** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2025-61730](https://nvd.nist.gov/vuln/detail/CVE-2025-61730) * [CVE-2025-68156](https://nvd.nist.gov/vuln/detail/CVE-2025-68156) * [CVE-2025-54388](https://nvd.nist.gov/vuln/detail/CVE-2025-54388) * [CVE-2025-61727](https://nvd.nist.gov/vuln/detail/CVE-2025-61727) * [CVE-2025-61729](https://nvd.nist.gov/vuln/detail/CVE-2025-61729) |
-
 ### Fixed
 
 | Bug ID | Description |
@@ -21,6 +51,12 @@ On February 24th, 2026, we released an updated version of Apigee (1-17-0-apigee-
 | **470375542** | Fixed a memory leak which could result in a spike in 503 responses with `no_healthy_upstream` messages. |
 | **480997525** | Applied a fix for proxy calls failing with `The URI contains illegal characters` error after Netty upgrade. |
 | **485595627** | Fixed an issue resulting in TLS handshake errors. |
+
+### Security
+
+| Bug ID | Description |
+| --- | --- |
+| **481735779, 457138941, 471232237** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2025-61730](https://nvd.nist.gov/vuln/detail/CVE-2025-61730) * [CVE-2025-68156](https://nvd.nist.gov/vuln/detail/CVE-2025-68156) * [CVE-2025-54388](https://nvd.nist.gov/vuln/detail/CVE-2025-54388) * [CVE-2025-61727](https://nvd.nist.gov/vuln/detail/CVE-2025-61727) * [CVE-2025-61729](https://nvd.nist.gov/vuln/detail/CVE-2025-61729) |
 
 ---
 ## 2026-02-13

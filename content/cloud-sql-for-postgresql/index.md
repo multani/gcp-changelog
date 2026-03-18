@@ -1,5 +1,16 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-03-17
+
+### Feature
+
+You can now cancel an in-place major version upgrade operation during the main
+upgrade phase, when the upgrade is actually being performed.
+
+For more information, see
+[Cancel the major version upgrade](https://docs.cloud.google.com/sql/docs/postgres/upgrade-major-db-version-inplace#cancel-upgrade).
+
+---
 ## 2026-03-13
 
 ### Feature
@@ -58,6 +69,14 @@ For more information, see
 ---
 ## 2026-02-18
 
+### Change
+
+After March 17, 2026, when you enable the Cloud SQL Admin API
+(`sqladmin.googleapis.com`)`, the Cloud SQL remote MCP server is
+enabled automatically.
+
+The Cloud SQL remote MCP server is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
 ### Deprecated
 
 Control of MCP use with organization policies is deprecated.
@@ -66,14 +85,6 @@ After March 17, 2026, organization policies that use the
 and you can control MCP use with IAM deny policies.
 For more information about controlling MCP use, see
 [Control MCP use with IAM](https://docs.cloud.google.com/mcp/control-mcp-use-iam).
-
-### Change
-
-After March 17, 2026, when you enable the Cloud SQL Admin API
-(`sqladmin.googleapis.com`)`, the Cloud SQL remote MCP server is
-enabled automatically.
-
-The Cloud SQL remote MCP server is in [Preview](https://cloud.google.com/products/#product-launch-stages).
 
 ---
 ## 2026-02-17

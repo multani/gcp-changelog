@@ -1,5 +1,14 @@
 # Memorystore for Valkey
 
+## 2026-03-17
+
+### Feature
+
+You can now deploy instances in the `asia-southeast3` (Bangkok), `europe-north2`
+(Stockholm), and `northamerica-south1` (Mexico)
+[regions](https://docs.cloud.google.com/memorystore/docs/valkey/locations).
+
+---
 ## 2026-03-11
 
 ### Feature

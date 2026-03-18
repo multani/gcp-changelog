@@ -2,9 +2,209 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Config Connector</title>
   <subtitle>Changelog for Google Cloud product: Config Connector</subtitle>
-  <updated>2026-01-27T00:00:00+00:00</updated>
+  <updated>2026-03-10T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:config-connector</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/config-connector/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-03-10:breaking:0</id>
+    <published>2026-03-10T00:00:00+00:00</published>
+    <updated>2026-03-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.144.0 was identified as a bad release. Do not use this version - upgrade directly to 1.145.0 or later.</p>]]></content>
+    <summary>Config Connector version 1.144.0 has been identified as a problematic release. Users are strongly advised to avoid this version and upgrade directly to 1.145.0 or a later version to ensure stability and access to the latest features.</summary>
+    <title>Breaking: Config Connector Bad Release Identified</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-03-10:announcement:1</id>
+    <published>2026-03-10T00:00:00+00:00</published>
+    <updated>2026-03-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.146.0 is now available.</p>]]></content>
+    <summary>Config Connector version 1.146.0 has been released. This update includes various improvements and bug fixes. Users are encouraged to upgrade to the latest version for the best experience.</summary>
+    <title>Announcement: Config Connector 1.146.0 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-03-10:fixed:2</id>
+    <published>2026-03-10T00:00:00+00:00</published>
+    <updated>2026-03-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Bug Fixes:</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance"><code>SQLInstance</code></a></li>
+<li>Added client-side default for <code>RetainedBackups</code> and <code>RetentionUnit</code>, and validated the <code>edition</code> field.</li>
+<li>Added <code>replicaConfiguration</code> as an unmanageable field.</li>
+<li>Controller now correctly defaults the field <code>enablePrivatePathForGoogleCloudServices</code> to <code>false</code>.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/certificatemanager/certificatemanagerdnsauthorization"><code>CertificateManagerDnsAuthorization</code></a></li>
+<li>Sanitized Kubernetes labels to avoid 400 errors from invalid characters.</li>
+<li><code>ConfigConnector</code> Core</li>
+<li><code>preview</code> now performs an early exit when no resources are found to reconcile.</li>
+<li>Fixed CRD field description for shared parent.</li>
+<li>Fixed incorrect exit status in lint filter.</li>
+<li>Updated <code>mockgcp</code> to improve compute regional resource mocks and defaults.</li>
+</ul>]]></content>
+    <summary>Several bug fixes have been deployed, including improvements to SQL instance configurations, certificate manager DNS authorization, and the Config Connector core. These updates ensure better stability and resource management.</summary>
+    <title>Fixed: Bug Fixes Deployed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-03-10:feature:3</id>
+    <published>2026-03-10T00:00:00+00:00</published>
+    <updated>2026-03-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Fields:</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster"><code>ContainerCluster</code></a></li>
+<li>Added <code>spec.controlPlaneEndpointsConfig.dnsEndpointConfig.enableK8sTokensViaDns</code> field.</li>
+</ul>]]></content>
+    <summary>A new field, `spec.controlPlaneEndpointsConfig.dnsEndpointConfig.enableK8sTokensViaDns`, has been added to ContainerCluster. This enhancement allows for enabling Kubernetes tokens through DNS.</summary>
+    <title>Feature: K8s Tokens via DNS Enabled</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-03-10:change:4</id>
+    <published>2026-03-10T00:00:00+00:00</published>
+    <updated>2026-03-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Improvements:</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster"><code>ContainerCluster</code></a></li>
+<li>Made <code>spec.clusterAutoscaling.autoProvisioningDefaults.bootDiskKMSKeyRef</code> mutable.</li>
+<li><code>NetworkServicesWasmPlugin</code></li>
+<li>Introduced identity and reference.</li>
+<li>Added structured reporting diff to numerous direct controllers to enhance diff visibility.</li>
+</ul>]]></content>
+    <summary>We've updated several controllers with new features and improvements. Key changes include making `bootDiskKMSKeyRef` mutable for Container Clusters, introducing identity and reference for NetworkServicesWasmPlugin, and enhancing diff visibility with structured reporting across numerous controllers.</summary>
+    <title>Change: Controller Updates and New Features</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-03-10:feature:5</id>
+    <published>2026-03-10T00:00:00+00:00</published>
+    <updated>2026-03-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Alpha Resources (Direct Reconciler):</p>
+<ul>
+<li><code>ParameterManagerParameter</code></li>
+<li>Manage <a href="https://cloud.google.com/secret-manager/parameter-manager/docs/overview">Parameter Manager Parameters</a>.</li>
+</ul>]]></content>
+    <summary>We're excited to announce the release of new Alpha resources, including the ParameterManagerParameter. This allows you to manage Parameter Manager Parameters directly, enhancing your control over configuration settings. Explore the documentation for more details on how to integrate this new feature.</summary>
+    <title>Feature: New Alpha Resources Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-02-22:change:0</id>
+    <published>2026-02-22T00:00:00+00:00</published>
+    <updated>2026-02-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Added support for structured diff reporting to the following direct controllers to improve logging and debugging:</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/apigee/apigeeenvgroup"><code>ApigeeEnvgroup</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/apigee/apigeeinstance"><code>ApigeeInstance</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/asset/assetfeed"><code>AssetFeed</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/asset/assetsavedquery"><code>AssetSavedQuery</code></a></li>
+<li>BackupVaultIdentity</li>
+<li>BigtableLogicalView</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/clouddeploy/clouddeploydeliverypipeline"><code>CloudDeployDeliveryPipeline</code></a></li>
+<li>ColabRuntime</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/redis/rediscluster"><code>RedisCluster</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/spanner/spannerbackupschedule"><code>SpannerBackupSchedule</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/spanner/spannerinstance"><code>SpannerInstance</code></a></li>
+<li>SpannerInstanceConfig</li>
+<li>TaskQueue</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/workstations/workstationconfig"><code>WorkstationConfig</code></a></li>
+</ul>]]></content>
+    <summary>Structured diff reporting has been added to several direct controllers, enhancing logging and debugging capabilities. This update benefits controllers such as ApigeeEnvgroup, ApigeeInstance, AssetFeed, and many others, providing more detailed insights into changes.</summary>
+    <title>Change: Improved logging and debugging for controllers</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-02-22:feature:1</id>
+    <published>2026-02-22T00:00:00+00:00</published>
+    <updated>2026-02-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Fields:</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster"><code>ContainerCluster</code></a></li>
+<li>Added <code>spec.clusterAutoscaling.defaultComputeClassConfig</code> field.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/run/runjob"><code>RunJob</code></a></li>
+<li>Added <code>spec.template.template.volumes.nfs</code> field to support NFS backed Volumes.</li>
+<li>Added <code>spec.template.template.volumes.gcs</code> field to support GCS backed Volumes.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance"><code>SQLInstance</code></a></li>
+<li>Added <code>spec.settings.failoverDrReplicaRef</code> field to support designating CloudSQL Enterprise Plus DR Replicas.</li>
+</ul>]]></content>
+    <summary>Enhance your infrastructure management with new fields for ContainerCluster, RunJob, and SQLInstance. Support for NFS and GCS backed volumes in RunJobs, default compute class configuration in ContainerClusters, and failover DR replicas for SQLInstances are now available.</summary>
+    <title>Feature: New Configuration Options Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-02-22:feature:2</id>
+    <published>2026-02-22T00:00:00+00:00</published>
+    <updated>2026-02-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Beta Resources (Direct Reconciler):</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computesecuritypolicy"><code>ComputeSecurityPolicy</code></a></li>
+<li>Manage Google Cloud Armor security policies.</li>
+<li><code>MemorystoreInstance</code></li>
+<li>Manage <a href="https://cloud.google.com//memorystore/docs/valkey/reference/rest/v1/projects.locations.instances">Memorystore for Valkey Instances</a>.</li>
+</ul>]]></content>
+    <summary>We're excited to announce the beta release of two new resources: ComputeSecurityPolicy for managing Google Cloud Armor security policies and MemorystoreInstance for managing Memorystore for Valkey instances.</summary>
+    <title>Feature: New Beta Resources Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-02-22:announcement:3</id>
+    <published>2026-02-22T00:00:00+00:00</published>
+    <updated>2026-02-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.145.0 is now available.</p>]]></content>
+    <summary>Config Connector version 1.145.0 has been released. This update brings new features and improvements to the tool that helps manage your cloud resources.</summary>
+    <title>Announcement: Config Connector 1.145.0 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-02-22:feature:4</id>
+    <published>2026-02-22T00:00:00+00:00</published>
+    <updated>2026-02-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New features:</p>
+<ul>
+<li>Added the <code>preview</code> command to the <code>config-connector</code> CLI. The <code>preview</code> command has been removed from the experimental <code>kompanion</code> tool.</li>
+</ul>]]></content>
+    <summary>The `preview` command is now available in the `config-connector` CLI. This functionality was previously part of the experimental `kompanion` tool and has now been integrated into the main CLI for easier access.</summary>
+    <title>Feature: New CLI command for Config Connector</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-02-22:fixed:5</id>
+    <published>2026-02-22T00:00:00+00:00</published>
+    <updated>2026-02-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Bug Fixes:</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/dataform/dataformrepository"><code>DataformRepository</code></a></li>
+<li>Fixed a bug where the <code>serviceAccountRef</code> field could not be updated.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/spanner/spannerbackupschedule"><code>SpannerBackupSchedule</code></a></li>
+<li>Fixed an issue with invalid update masks by handling output-only fields.</li>
+</ul>]]></content>
+    <summary>Resolved a bug preventing updates to DataformRepository's serviceAccountRef. Addressed an issue with SpannerBackupSchedule by correctly handling output-only fields in update masks.</summary>
+    <title>Fixed: Fixed repository and backup schedule issues</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

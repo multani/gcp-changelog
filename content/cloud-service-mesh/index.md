@@ -4,50 +4,6 @@
 
 ### Security
 
-**1.27.8-asm.7 is now available for in-cluster Cloud Service Mesh.**
-
-This patch release contains fixes for the security vulnerabilities listed in
-[GCP-2026-013](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-013)
-as well as fixes for the following platform CVEs:
-
-| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
-| --- | --- | --- | --- | --- | --- |
-| [CVE-2025-13151](https://ubuntu.com/security/CVE-2025-13151) | Yes | Yes | No | Yes | Medium (7.5) |
-| [CVE-2025-14831](https://ubuntu.com/security/CVE-2025-14831) | Yes | Yes | No | Yes | Medium (5.3) |
-| [CVE-2025-15281](https://ubuntu.com/security/CVE-2025-15281) | Yes | Yes | No | Yes | Medium (7.5) |
-| [CVE-2025-15467](https://ubuntu.com/security/CVE-2025-15467) | Yes | Yes | Yes | Yes | Medium (9.8) |
-| [CVE-2025-15558](https://ubuntu.com/security/CVE-2025-15558) | Yes | Yes | Yes | - | High (8.0) |
-| [CVE-2025-61726](https://ubuntu.com/security/CVE-2025-61726) | Yes | Yes | Yes | Yes | High (7.5) |
-| [CVE-2025-61728](https://ubuntu.com/security/CVE-2025-61728) | Yes | Yes | Yes | Yes | Medium (6.5) |
-| [CVE-2025-61730](https://ubuntu.com/security/CVE-2025-61730) | Yes | Yes | Yes | Yes | Medium (5.3) |
-| [CVE-2025-61731](https://ubuntu.com/security/CVE-2025-61731) | Yes | Yes | Yes | Yes | High (7.8) |
-| [CVE-2025-61732](https://ubuntu.com/security/CVE-2025-61732) | Yes | Yes | Yes | Yes | High (8.6) |
-| [CVE-2025-68121](https://ubuntu.com/security/CVE-2025-68121) | Yes | Yes | Yes | Yes | Critical (10) |
-| [CVE-2025-68160](https://ubuntu.com/security/CVE-2025-68160) | Yes | Yes | No | Yes | Low (4.7) |
-| [CVE-2025-69418](https://ubuntu.com/security/CVE-2025-69418) | Yes | Yes | No | Yes | Low (4.0) |
-| [CVE-2025-69419](https://ubuntu.com/security/CVE-2025-69419) | Yes | Yes | No | Yes | Low (7.4) |
-| [CVE-2025-69420](https://ubuntu.com/security/CVE-2025-69420) | Yes | Yes | Yes | Yes | Low (7.5) |
-| [CVE-2025-69421](https://ubuntu.com/security/CVE-2025-69421) | Yes | Yes | Yes | Yes | Low (7.5) |
-| [CVE-2025-8277](https://ubuntu.com/security/CVE-2025-8277) | Yes | Yes | No | Yes | Low (0) |
-| [CVE-2025-9820](https://ubuntu.com/security/CVE-2025-9820) | Yes | Yes | No | Yes | Low (4) |
-| [CVE-2026-0861](https://ubuntu.com/security/CVE-2026-0861) | Yes | Yes | No | Yes | Medium (8.4) |
-| [CVE-2026-0915](https://ubuntu.com/security/CVE-2026-0915) | Yes | Yes | No | Yes | Medium (7.5) |
-| [CVE-2026-0964](https://ubuntu.com/security/CVE-2026-0964) | Yes | Yes | No | Yes | Medium |
-| [CVE-2026-0965](https://ubuntu.com/security/CVE-2026-0965) | Yes | Yes | No | Yes | Low |
-| [CVE-2026-0966](https://ubuntu.com/security/CVE-2026-0966) | Yes | Yes | No | Yes | Low |
-| [CVE-2026-0967](https://ubuntu.com/security/CVE-2026-0967) | Yes | Yes | No | Yes | Medium |
-| [CVE-2026-0968](https://ubuntu.com/security/CVE-2026-0968) | Yes | Yes | No | Yes | Medium |
-| [CVE-2026-22795](https://ubuntu.com/security/CVE-2026-22795) | Yes | Yes | No | Yes | Low (5.5) |
-| [CVE-2026-22796](https://ubuntu.com/security/CVE-2026-22796) | Yes | Yes | No | Yes | Low (5.3) |
-| [CVE-2026-24051](https://ubuntu.com/security/CVE-2026-24051) | Yes | Yes | Yes | Yes | High (7.0) |
-| [CVE-2026-25679](https://ubuntu.com/security/CVE-2026-25679) | Yes | Yes | Yes | Yes | High (7.5) |
-
-For details on upgrading Cloud Service Mesh, see
-[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.27/docs/upgrade/upgrade). Cloud Service
-Mesh 1.27.8-asm.7 uses Envoy 1.35.9.
-
-### Security
-
 **1.28.5-asm.9 is now available for in-cluster Cloud Service Mesh.**
 
 This patch release contains fixes for the security vulnerabilities listed in
@@ -92,7 +48,7 @@ Mesh 1.28.5-asm.9 uses Envoy 1.36.5.
 
 ### Security
 
-**1.26.8-asm.3 is now available for in-cluster Cloud Service Mesh.**
+**1.27.8-asm.7 is now available for in-cluster Cloud Service Mesh.**
 
 This patch release contains fixes for the security vulnerabilities listed in
 [GCP-2026-013](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-013)
@@ -112,7 +68,6 @@ as well as fixes for the following platform CVEs:
 | [CVE-2025-61732](https://ubuntu.com/security/CVE-2025-61732) | Yes | Yes | Yes | Yes | High (8.6) |
 | [CVE-2025-68121](https://ubuntu.com/security/CVE-2025-68121) | Yes | Yes | Yes | Yes | Critical (10) |
 | [CVE-2025-68160](https://ubuntu.com/security/CVE-2025-68160) | Yes | Yes | No | Yes | Low (4.7) |
-| [CVE-2025-68973](https://ubuntu.com/security/CVE-2025-68973) | Yes | Yes | Yes | Yes | High (7.8) |
 | [CVE-2025-69418](https://ubuntu.com/security/CVE-2025-69418) | Yes | Yes | No | Yes | Low (4.0) |
 | [CVE-2025-69419](https://ubuntu.com/security/CVE-2025-69419) | Yes | Yes | No | Yes | Low (7.4) |
 | [CVE-2025-69420](https://ubuntu.com/security/CVE-2025-69420) | Yes | Yes | Yes | Yes | Low (7.5) |
@@ -132,8 +87,8 @@ as well as fixes for the following platform CVEs:
 | [CVE-2026-25679](https://ubuntu.com/security/CVE-2026-25679) | Yes | Yes | Yes | Yes | High (7.5) |
 
 For details on upgrading Cloud Service Mesh, see
-[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.26/docs/upgrade/upgrade). Cloud Service
-Mesh 1.26.8-asm.3 uses Envoy 1.34.13.
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.27/docs/upgrade/upgrade). Cloud Service
+Mesh 1.27.8-asm.7 uses Envoy 1.35.9.
 
 ### Security
 
@@ -182,6 +137,51 @@ as well as fixes for the following platform CVEs:
 | [CVE-2026-22796](https://ubuntu.com/security/CVE-2026-22796) | Yes | Yes | No | - | - | Low (5.3) |
 | [CVE-2026-24051](https://ubuntu.com/security/CVE-2026-24051) | - | - | - | Yes | Yes | High (7.0) |
 | [CVE-2026-25679](https://ubuntu.com/security/CVE-2026-25679) | Yes | Yes | - | - | - | High (7.5) |
+
+### Security
+
+**1.26.8-asm.3 is now available for in-cluster Cloud Service Mesh.**
+
+This patch release contains fixes for the security vulnerabilities listed in
+[GCP-2026-013](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-013)
+as well as fixes for the following platform CVEs:
+
+| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
+| --- | --- | --- | --- | --- | --- |
+| [CVE-2025-13151](https://ubuntu.com/security/CVE-2025-13151) | Yes | Yes | No | Yes | Medium (7.5) |
+| [CVE-2025-14831](https://ubuntu.com/security/CVE-2025-14831) | Yes | Yes | No | Yes | Medium (5.3) |
+| [CVE-2025-15281](https://ubuntu.com/security/CVE-2025-15281) | Yes | Yes | No | Yes | Medium (7.5) |
+| [CVE-2025-15467](https://ubuntu.com/security/CVE-2025-15467) | Yes | Yes | Yes | Yes | Medium (9.8) |
+| [CVE-2025-15558](https://ubuntu.com/security/CVE-2025-15558) | Yes | Yes | Yes | - | High (8.0) |
+| [CVE-2025-61726](https://ubuntu.com/security/CVE-2025-61726) | Yes | Yes | Yes | Yes | High (7.5) |
+| [CVE-2025-61728](https://ubuntu.com/security/CVE-2025-61728) | Yes | Yes | Yes | Yes | Medium (6.5) |
+| [CVE-2025-61730](https://ubuntu.com/security/CVE-2025-61730) | Yes | Yes | Yes | Yes | Medium (5.3) |
+| [CVE-2025-61731](https://ubuntu.com/security/CVE-2025-61731) | Yes | Yes | Yes | Yes | High (7.8) |
+| [CVE-2025-61732](https://ubuntu.com/security/CVE-2025-61732) | Yes | Yes | Yes | Yes | High (8.6) |
+| [CVE-2025-68121](https://ubuntu.com/security/CVE-2025-68121) | Yes | Yes | Yes | Yes | Critical (10) |
+| [CVE-2025-68160](https://ubuntu.com/security/CVE-2025-68160) | Yes | Yes | No | Yes | Low (4.7) |
+| [CVE-2025-68973](https://ubuntu.com/security/CVE-2025-68973) | Yes | Yes | Yes | Yes | High (7.8) |
+| [CVE-2025-69418](https://ubuntu.com/security/CVE-2025-69418) | Yes | Yes | No | Yes | Low (4.0) |
+| [CVE-2025-69419](https://ubuntu.com/security/CVE-2025-69419) | Yes | Yes | No | Yes | Low (7.4) |
+| [CVE-2025-69420](https://ubuntu.com/security/CVE-2025-69420) | Yes | Yes | Yes | Yes | Low (7.5) |
+| [CVE-2025-69421](https://ubuntu.com/security/CVE-2025-69421) | Yes | Yes | Yes | Yes | Low (7.5) |
+| [CVE-2025-8277](https://ubuntu.com/security/CVE-2025-8277) | Yes | Yes | No | Yes | Low (0) |
+| [CVE-2025-9820](https://ubuntu.com/security/CVE-2025-9820) | Yes | Yes | No | Yes | Low (4) |
+| [CVE-2026-0861](https://ubuntu.com/security/CVE-2026-0861) | Yes | Yes | No | Yes | Medium (8.4) |
+| [CVE-2026-0915](https://ubuntu.com/security/CVE-2026-0915) | Yes | Yes | No | Yes | Medium (7.5) |
+| [CVE-2026-0964](https://ubuntu.com/security/CVE-2026-0964) | Yes | Yes | No | Yes | Medium |
+| [CVE-2026-0965](https://ubuntu.com/security/CVE-2026-0965) | Yes | Yes | No | Yes | Low |
+| [CVE-2026-0966](https://ubuntu.com/security/CVE-2026-0966) | Yes | Yes | No | Yes | Low |
+| [CVE-2026-0967](https://ubuntu.com/security/CVE-2026-0967) | Yes | Yes | No | Yes | Medium |
+| [CVE-2026-0968](https://ubuntu.com/security/CVE-2026-0968) | Yes | Yes | No | Yes | Medium |
+| [CVE-2026-22795](https://ubuntu.com/security/CVE-2026-22795) | Yes | Yes | No | Yes | Low (5.5) |
+| [CVE-2026-22796](https://ubuntu.com/security/CVE-2026-22796) | Yes | Yes | No | Yes | Low (5.3) |
+| [CVE-2026-24051](https://ubuntu.com/security/CVE-2026-24051) | Yes | Yes | Yes | Yes | High (7.0) |
+| [CVE-2026-25679](https://ubuntu.com/security/CVE-2026-25679) | Yes | Yes | Yes | Yes | High (7.5) |
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.26/docs/upgrade/upgrade). Cloud Service
+Mesh 1.26.8-asm.3 uses Envoy 1.34.13.
 
 ---
 ## 2026-02-18

@@ -1,5 +1,118 @@
 # Config Connector
 
+## 2026-03-10
+
+### Breaking
+
+Config Connector version 1.144.0 was identified as a bad release. Do not use this version - upgrade directly to 1.145.0 or later.
+
+### Announcement
+
+Config Connector version 1.146.0 is now available.
+
+### Fixed
+
+Bug Fixes:
+
+* [`SQLInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance)
+  + Added client-side default for `RetainedBackups` and `RetentionUnit`, and validated the `edition` field.
+  + Added `replicaConfiguration` as an unmanageable field.
+  + Controller now correctly defaults the field `enablePrivatePathForGoogleCloudServices` to `false`.
+* [`CertificateManagerDnsAuthorization`](https://cloud.google.com/config-connector/docs/reference/resource-docs/certificatemanager/certificatemanagerdnsauthorization)
+  + Sanitized Kubernetes labels to avoid 400 errors from invalid characters.
+* `ConfigConnector` Core
+  + `preview` now performs an early exit when no resources are found to reconcile.
+  + Fixed CRD field description for shared parent.
+  + Fixed incorrect exit status in lint filter.
+  + Updated `mockgcp` to improve compute regional resource mocks and defaults.
+
+### Feature
+
+New Fields:
+
+* [`ContainerCluster`](https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster)
+  + Added `spec.controlPlaneEndpointsConfig.dnsEndpointConfig.enableK8sTokensViaDns` field.
+
+### Change
+
+Improvements:
+
+* [`ContainerCluster`](https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster)
+  + Made `spec.clusterAutoscaling.autoProvisioningDefaults.bootDiskKMSKeyRef` mutable.
+* `NetworkServicesWasmPlugin`
+  + Introduced identity and reference.
+* Added structured reporting diff to numerous direct controllers to enhance diff visibility.
+
+### Feature
+
+New Alpha Resources (Direct Reconciler):
+
+* `ParameterManagerParameter`
+  + Manage [Parameter Manager Parameters](https://cloud.google.com/secret-manager/parameter-manager/docs/overview).
+
+---
+## 2026-02-22
+
+### Change
+
+Added support for structured diff reporting to the following direct controllers to improve logging and debugging:
+
+* [`ApigeeEnvgroup`](https://cloud.google.com/config-connector/docs/reference/resource-docs/apigee/apigeeenvgroup)
+* [`ApigeeInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/apigee/apigeeinstance)
+* [`AssetFeed`](https://cloud.google.com/config-connector/docs/reference/resource-docs/asset/assetfeed)
+* [`AssetSavedQuery`](https://cloud.google.com/config-connector/docs/reference/resource-docs/asset/assetsavedquery)
+* BackupVaultIdentity
+* BigtableLogicalView
+* [`CloudDeployDeliveryPipeline`](https://cloud.google.com/config-connector/docs/reference/resource-docs/clouddeploy/clouddeploydeliverypipeline)
+* ColabRuntime
+* [`RedisCluster`](https://cloud.google.com/config-connector/docs/reference/resource-docs/redis/rediscluster)
+* [`SpannerBackupSchedule`](https://cloud.google.com/config-connector/docs/reference/resource-docs/spanner/spannerbackupschedule)
+* [`SpannerInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/spanner/spannerinstance)
+* SpannerInstanceConfig
+* TaskQueue
+* [`WorkstationConfig`](https://cloud.google.com/config-connector/docs/reference/resource-docs/workstations/workstationconfig)
+
+### Feature
+
+New Fields:
+
+* [`ContainerCluster`](https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster)
+  + Added `spec.clusterAutoscaling.defaultComputeClassConfig` field.
+* [`RunJob`](https://cloud.google.com/config-connector/docs/reference/resource-docs/run/runjob)
+  + Added `spec.template.template.volumes.nfs` field to support NFS backed Volumes.
+  + Added `spec.template.template.volumes.gcs` field to support GCS backed Volumes.
+* [`SQLInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance)
+  + Added `spec.settings.failoverDrReplicaRef` field to support designating CloudSQL Enterprise Plus DR Replicas.
+
+### Feature
+
+New Beta Resources (Direct Reconciler):
+
+* [`ComputeSecurityPolicy`](https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computesecuritypolicy)
+  + Manage Google Cloud Armor security policies.
+* `MemorystoreInstance`
+  + Manage [Memorystore for Valkey Instances](https://cloud.google.com//memorystore/docs/valkey/reference/rest/v1/projects.locations.instances).
+
+### Announcement
+
+Config Connector version 1.145.0 is now available.
+
+### Feature
+
+New features:
+
+* Added the `preview` command to the `config-connector` CLI. The `preview` command has been removed from the experimental `kompanion` tool.
+
+### Fixed
+
+Bug Fixes:
+
+* [`DataformRepository`](https://cloud.google.com/config-connector/docs/reference/resource-docs/dataform/dataformrepository)
+  + Fixed a bug where the `serviceAccountRef` field could not be updated.
+* [`SpannerBackupSchedule`](https://cloud.google.com/config-connector/docs/reference/resource-docs/spanner/spannerbackupschedule)
+  + Fixed an issue with invalid update masks by handling output-only fields.
+
+---
 ## 2026-01-27
 
 ### Feature

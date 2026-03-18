@@ -14,18 +14,18 @@
     "2026-03-03": [
       {
         "kind": "Announcement",
-        "content": "In Google Distributed Cloud (software only) for bare metal versions 1.33.0 and later,\n`bmctl` operations can fail to stream logs from pods to the local workspace,\ncausing empty or incomplete logs in `bmctl-workspace/{CLUSTER NAME}/log directory`.\n\nThis issue occurred because a recent Kubernetes library upgrade introduced a\nrequired context parameter for pod log streaming. The bmctl tool was\nincorrectly passing a context with a 10-second timeout, causing the log streamer\nto terminate prematurely for pods with long lifecycles, such as Ansible runner\njobs.\n\nThis issue is resolved in the following versions:\n\n* 1.33.500 and later\n* 1.34.100 and later\n* 1.35.0 and later\n\nIf you use an affected version and require the logs for a failed or ongoing\noperation, check logs using `kubectl`. If the cluster is accessible, you can\nmanually retrieve logs directly from the relevant pods using the `kubectl logs`\ncommand.\n\nIt is recommended to upgrade to a fixed version to ensure that all `bmctl`\noperation logs are correctly captured in your local workspace for troubleshooting\nand auditing purposes",
-        "summary": {
-          "title": "Update bmctl for improved log streaming",
-          "summary": "An issue with bmctl log streaming in Google Distributed Cloud bare metal versions 1.33.0 and later has been resolved. This fix ensures that logs from pods are correctly captured in the local workspace, improving troubleshooting capabilities. Upgrade to a fixed version for reliable log collection."
-        }
-      },
-      {
-        "kind": "Announcement",
         "content": "Google Distributed Cloud (software only) for bare metal 1.33.500-gke.63 is now available for\ndownload. To upgrade, see [Upgrade clusters](how-to/upgrade).\nGoogle Distributed Cloud for bare metal\n1.33.500-gke.63 runs on Kubernetes v1.33.5-gke.2200.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for installations or upgrades with the GKE On-Prem API clients: the\nGoogle Cloud console, the gcloud CLI, and Terraform.\n\nIf you use a third-party storage vendor, check the Google Distributed Cloud-ready\nstorage partners document to make sure the storage vendor has already passed the\nqualification for this release of Google Distributed Cloud for bare metal.",
         "summary": {
           "title": "New GDC Bare Metal Release Available",
           "summary": "Version 1.33.500-gke.63 of Google Distributed Cloud for bare metal is now available for download. This release runs on Kubernetes v1.33.5-gke.2200. Please note that it may take 7-14 days for this version to be available through GKE On-Prem API clients. Additionally, verify storage vendor compatibility with this release."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "In Google Distributed Cloud (software only) for bare metal versions 1.33.0 and later,\n`bmctl` operations can fail to stream logs from pods to the local workspace,\ncausing empty or incomplete logs in `bmctl-workspace/{CLUSTER NAME}/log directory`.\n\nThis issue occurred because a recent Kubernetes library upgrade introduced a\nrequired context parameter for pod log streaming. The bmctl tool was\nincorrectly passing a context with a 10-second timeout, causing the log streamer\nto terminate prematurely for pods with long lifecycles, such as Ansible runner\njobs.\n\nThis issue is resolved in the following versions:\n\n* 1.33.500 and later\n* 1.34.100 and later\n* 1.35.0 and later\n\nIf you use an affected version and require the logs for a failed or ongoing\noperation, check logs using `kubectl`. If the cluster is accessible, you can\nmanually retrieve logs directly from the relevant pods using the `kubectl logs`\ncommand.\n\nIt is recommended to upgrade to a fixed version to ensure that all `bmctl`\noperation logs are correctly captured in your local workspace for troubleshooting\nand auditing purposes",
+        "summary": {
+          "title": "Update bmctl for improved log streaming",
+          "summary": "An issue with bmctl log streaming in Google Distributed Cloud bare metal versions 1.33.0 and later has been resolved. This fix ensures that logs from pods are correctly captured in the local workspace, improving troubleshooting capabilities. Upgrade to a fixed version for reliable log collection."
         }
       }
     ],

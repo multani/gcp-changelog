@@ -1,21 +1,85 @@
 {
   "name": "Looker",
   "entries": {
-    "2026-03-16": [
+    "2026-03-17": [
       {
         "kind": "Feature",
-        "content": "The [**Increased Row Limit** preview feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#increased-row-limit) feature is now available, and is disabled by default.\n\nWhen enabled, the **Increased Row Limit** preview feature lets admins set row limits up to 50,000 rows or datapoints for [map charts](https://docs.cloud.google.com/looker/docs/google-map-options), [scatterplot charts](https://docs.cloud.google.com/looker/docs/scatter-options), and [table charts](https://docs.cloud.google.com/looker/docs/table-options). Admins can set the limits for each visualization type in the [**Visualization limits**](https://docs.cloud.google.com/looker/docs/admin-panel-performance-center-content-guardrails#visualization-limits) setting on the **Content guardrails** admin page.\n\nTable charts, scatterplot charts, and Google Maps charts that have increased row limits are subject to additional limitations when you download, send, or schedule dashboards in PDF format. See [Downloading or delivering dashboards in rendered formats](https://docs.cloud.google.com/looker/docs/best-practices/rendered-format-options-downloading-delivering-dashboards) for more information about scheduling and downloading dashboard PDFs with increased row limits.",
+        "content": "Now available in preview, Gemini in Looker can automatically [generate Quick Start analyses for Explores](https://docs.cloud.google.com/looker/docs/gemini-quick-starts). This feature can be enabled by turning on the **AI-assisted Quick Starts** setting on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.",
         "summary": {
-          "title": "Increased Row Limit Feature Available",
-          "summary": "The Increased Row Limit preview feature is now available. This feature allows admins to set higher row limits for map, scatterplot, and table charts, up to 50,000 rows or datapoints. Be aware of additional limitations when downloading or scheduling dashboards with these increased limits in PDF format."
+          "title": "Gemini in Looker: Quick Start Analyses Now in Preview",
+          "summary": "Gemini in Looker now offers a preview feature for automatically generating Quick Start analyses for Explores. This AI-powered tool can be enabled through the Admin panel, streamlining the initial exploration of your data. Get started faster with AI-assisted insights."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Now available in preview, you can use Gemini in Looker to [assist you in writing Looker expressions](https://docs.cloud.google.com/looker/docs/gemini-expression-asst) for [table calculations](https://docs.cloud.google.com/looker/docs/table-calculations) and [custom fields](https://docs.cloud.google.com/looker/docs/custom-fields). This feature can be enabled by turning on the **Expression Assistant** setting on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.",
+        "summary": {
+          "title": "Gemini Assists Looker Expression Writing",
+          "summary": "Gemini is now available in preview to help you write Looker expressions for table calculations and custom fields. This feature, called Expression Assistant, can be enabled in the Admin panel. It aims to simplify the process of creating complex data manipulations within Looker."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [**Self-service Explores**](https://docs.cloud.google.com/looker/docs/exploring-self-service) feature is now generally available.\n\nIn addition, if your Looker admin has [enabled your Looker instance to support OAuth for Google Sheets uploads](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#enabling_oauth_for_uploads), the self-service Explores feature supports [uploading data from Google Sheets using Google Drive navigation](https://docs.cloud.google.com/looker/docs/exploring-self-service#oauth).",
+        "summary": {
+          "title": "Self-service Explores Now Available",
+          "summary": "The self-service Explores feature is now generally available, allowing users to explore data more freely. Additionally, with OAuth enabled, you can now upload data directly from Google Sheets using Google Drive navigation."
         }
       },
       {
         "kind": "Announcement",
-        "content": "The following features will roll out over a four-day period starting March 17, 2026.",
+        "content": "The following features will begin rolling out on March 17, 2026.",
         "summary": {
-          "title": "New features rolling out starting March 17",
-          "summary": "New features will be available starting March 17, 2026. The rollout will take place over a four-day period."
+          "title": "Upcoming Feature Rollout",
+          "summary": "New features will begin rolling out starting March 17, 2026. This update includes several enhancements designed to improve user experience and functionality. We are excited to bring these advancements to our users."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [content certification](https://docs.cloud.google.com/looker/docs/content-certification) feature is now generally available. In Looker 26.4, the following support has been added:\n\n* LookML Explores can now be certified.\n* Looker admins can now automatically certify all current and future LookML dashboards and LookML Explores.\n* When [Enhanced Search](https://docs.cloud.google.com/looker/docs/finding-content#enhanced_search) is enabled, searching for content now includes the ability to sort and filter search results based on certification status.",
+        "summary": {
+          "title": "Content Certification Now Generally Available",
+          "summary": "The content certification feature is now generally available, allowing LookML Explores and dashboards to be certified. Admins can automate certification, and users can filter search results by certification status with enhanced search."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [**Enhanced Search** preview feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#enhanced-search) is now available.\n\nWhen enabled, [Enhanced Search](https://docs.cloud.google.com/looker/docs/finding-content#enhanced_search) helps you find saved content on your instance using Gemini in Looker. Enhanced Search moves beyond keyword matching to interpreting the conceptual meaning of your search queries, letting you search for saved content using business terms or analytical questions (for example, \"total customer acquisition cost\").\n\nYou can filter your search results to limit them to specific content types, folders, content creators, creation dates, modification dates, and the content certification status.\n\nTo enable Gemini in Looker assistance with searching content, you must also enable the **Semantic Search** setting on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.",
+        "summary": {
+          "title": "Enhanced Search Now Available",
+          "summary": "Find content more effectively with Enhanced Search, now in preview. This feature uses Gemini in Looker to understand your search queries conceptually, going beyond simple keyword matching. You can also filter your results by various criteria to pinpoint exactly what you need."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Available in preview for Looker connections to Snowflake or Google BigQuery databases, Looker supports custom calendars, such as fiscal or retail calendars. The [custom calendar](https://docs.cloud.google.com/looker/docs/custom-calendars) feature lets your Looker developers create a LookML model of a custom calendar table in your database and then create [custom calendar dimension groups](https://docs.cloud.google.com/looker/docs/reference/param-field-dimension-group#custom_calendar_type) that use the custom calendar. Your end users can then create Explore queries using the custom calendar dimension timeframes.\n\nIn addition, your LookML developers can create [period-over-period](https://docs.cloud.google.com/looker/docs/period-over-period) measures based on custom calendar dimension groups.",
+        "summary": {
+          "title": "Custom Calendars for Looker",
+          "summary": "Looker now supports custom calendars, such as fiscal or retail calendars, for Snowflake and BigQuery connections. This feature allows developers to model custom calendars in LookML, enabling end users to explore data using custom timeframes and create period-over-period analyses."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [**Increased Row Limit** preview feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#increased-row-limit) feature is now available, and is disabled by default.\n\nWhen enabled, the **Increased Row Limit** preview feature lets admins set row limits up to 50,000 rows or datapoints for [map charts](https://docs.cloud.google.com/looker/docs/google-map-options), [scatterplot charts](https://docs.cloud.google.com/looker/docs/scatter-options), and [table charts](https://docs.cloud.google.com/looker/docs/table-options). Admins can set the limits for each visualization type in the [**Visualization limits**](https://docs.cloud.google.com/looker/docs/admin-panel-performance-center-content-guardrails#visualization-limits) setting on the **Content guardrails** admin page.\n\nTable charts, scatterplot charts, and Google Maps charts that have increased row limits are subject to additional limitations when you download, send, or schedule dashboards in PDF format. See [Downloading or delivering dashboards in rendered formats](https://docs.cloud.google.com/looker/docs/best-practices/rendered-format-options-downloading-delivering-dashboards) for more information about scheduling and downloading dashboard PDFs with increased row limits.\n\n**Note:** This item was originally published on March 16, 2026 and was updated on March 17, 2026.",
+        "summary": {
+          "title": "Increased Row Limit for Charts Now Available",
+          "summary": "Admins can now enable the Increased Row Limit preview feature to set row limits up to 50,000 for map, scatterplot, and table charts. This feature, disabled by default, allows for greater data visualization capacity but may introduce additional limitations when downloading dashboards in PDF format."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [Continuous Integration (CI)](https://docs.cloud.google.com/looker/docs/continuous-integration) feature is updated for better integration with the Looker user interface:\n\n* Your Looker instance will be migrated to the new version of Looker CI. The migration will take a few minutes.\n* While your instance is migrating, any existing CI suites will not appear on the CI [**Suites**](https://docs.cloud.google.com/looker/docs/ci-create-suite#creating_a_ci_suite) page, and the history on the CI [**Runs**](https://docs.cloud.google.com/looker/docs/ci-view-results) page will be empty. During this time, do not create new suites or initiate manual runs.\n* When the migration is complete, the **Suites** and **Runs** pages will be repopulated.\n* If you encounter an issue during the migration, please report it using the [Looker} Continuous Integration - Preview Issue Tracker form](https://docs.google.com/forms/d/e/1FAIpQLSed30eICYruU45R8WZQH6hIui28xtdDnejfetzpLHQ5PK0ZeA/viewform?usp=dialog).\n\nThe updated Looker Continuous Integration feature includes the following:\n\n* Your Looker admin no longer needs to manually add CI users. After your Looker instance is [enabled for CI](https://docs.cloud.google.com/looker/docs/continuous-integration#enable-ci) (or once your instance is updated to the new CI, if your instance was already enabled for CI), Looker CI users are created automatically. Looker CI users are created in the [Looker CI Users user group](https://docs.cloud.google.com/looker/docs/admin-panel-users-groups#ci-users) with the [Looker CI Users role](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#ci-users). A Looker admin can view the Looker CI users from the **Service Accounts** tab of the [**Users**](https://docs.cloud.google.com/looker/docs/admin-panel-users-users) Admin page.\n* A new [**GitHub** table](https://docs.cloud.google.com/looker/docs/admin-panel-platform-ci#github-table) on the **Continuous Integration** Admin page lists the GitHub repositories that have been granted access to the Looker CI GitHub application, which enables Looker CI to [be triggered automatically when pull requests are created](https://docs.cloud.google.com/looker/docs/ci-create-suite#triggers).",
+        "summary": {
+          "title": "Updated Continuous Integration Feature",
+          "summary": "The Continuous Integration feature has been updated for better integration with the Looker user interface. This update includes automatic user creation and a new GitHub table for improved functionality. Your Looker instance will be migrated to the new version, with minimal downtime expected. Please report any issues encountered during migration."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Looker **Connections Settings** page has a new option, [**Disable Connection**](https://docs.cloud.google.com/looker/docs/connecting-to-your-db#disable_connection), that allows a Looker admin to disable a connection in cases where there are downstream issues with the database, instead of killing queries manually or allowing queries to remain in the query queue. When the connection is disabled, Looker will not send queries to the database and will return an error message to users.",
+        "summary": {
+          "title": "Disable Database Connections in Looker",
+          "summary": "Looker admins can now disable database connections directly from the Connections Settings page. This prevents Looker from sending queries to the database, avoiding manual query killing and reducing the risk of downstream issues."
         }
       }
     ],
@@ -364,6 +428,24 @@
         "summary": {
           "title": "New dashboard for authentication troubleshooting",
           "summary": "The User Activity dashboard has been updated with new information to help you troubleshoot authentication issues. You can now see recent login failures, the authentication method used, error messages, and the time of each attempt."
+        }
+      }
+    ],
+    "2026-03-16": [
+      {
+        "kind": "Feature",
+        "content": "The [**Increased Row Limit** preview feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#increased-row-limit) feature is now available, and is disabled by default.\n\nWhen enabled, the **Increased Row Limit** preview feature lets admins set row limits up to 50,000 rows or datapoints for [map charts](https://docs.cloud.google.com/looker/docs/google-map-options), [scatterplot charts](https://docs.cloud.google.com/looker/docs/scatter-options), and [table charts](https://docs.cloud.google.com/looker/docs/table-options). Admins can set the limits for each visualization type in the [**Visualization limits**](https://docs.cloud.google.com/looker/docs/admin-panel-performance-center-content-guardrails#visualization-limits) setting on the **Content guardrails** admin page.\n\nTable charts, scatterplot charts, and Google Maps charts that have increased row limits are subject to additional limitations when you download, send, or schedule dashboards in PDF format. See [Downloading or delivering dashboards in rendered formats](https://docs.cloud.google.com/looker/docs/best-practices/rendered-format-options-downloading-delivering-dashboards) for more information about scheduling and downloading dashboard PDFs with increased row limits.",
+        "summary": {
+          "title": "Increased Row Limit Feature Available",
+          "summary": "The Increased Row Limit preview feature is now available. This feature allows admins to set higher row limits for map, scatterplot, and table charts, up to 50,000 rows or datapoints. Be aware of additional limitations when downloading or scheduling dashboards with these increased limits in PDF format."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "The following features will roll out over a four-day period starting March 17, 2026.",
+        "summary": {
+          "title": "New features rolling out starting March 17",
+          "summary": "New features will be available starting March 17, 2026. The rollout will take place over a four-day period."
         }
       }
     ],

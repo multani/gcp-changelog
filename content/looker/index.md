@@ -4,11 +4,19 @@
 
 ### Feature
 
+The [**Visualization Assistant**](https://docs.cloud.google.com/looker/docs/custom-looker-visualization-gemini), which lets you customize formatting options for Looker visualizations in natural language with Gemini assistance, is now generally available. This assistant can be enabled by turning on the **Gemini in Looker** and **Looker Assistants** settings on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.
+
+### Feature
+
 Now available in preview, Gemini in Looker can automatically [generate Quick Start analyses for Explores](https://docs.cloud.google.com/looker/docs/gemini-quick-starts). This feature can be enabled by turning on the **AI-assisted Quick Starts** setting on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.
 
 ### Feature
 
 Now available in preview, you can use Gemini in Looker to [assist you in writing Looker expressions](https://docs.cloud.google.com/looker/docs/gemini-expression-asst) for [table calculations](https://docs.cloud.google.com/looker/docs/table-calculations) and [custom fields](https://docs.cloud.google.com/looker/docs/custom-fields). This feature can be enabled by turning on the **Expression Assistant** setting on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.
+
+### Feature
+
+Looker **Connections Settings** page has a new option, [**Disable Connection**](https://docs.cloud.google.com/looker/docs/connecting-to-your-db#disable_connection), that allows a Looker admin to disable a connection in cases where there are downstream issues with the database, instead of killing queries manually or allowing queries to remain in the query queue. When the connection is disabled, Looker will not send queries to the database and will return an error message to users.
 
 ### Feature
 
@@ -56,6 +64,10 @@ Table charts, scatterplot charts, and Google Maps charts that have increased row
 
 ### Feature
 
+The Gemini in Looker assistant that helps you in generate LookML parameters is now available to enable individually from other Gemini in Looker features. This assistant, which continues to be available in preview, suggests LookML parameters that are based on the natural language prompts that you add to your project files. This assistant can be enabled by turning on the **Gemini in Looker** and **LookML Assistant** settings on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.
+
+### Feature
+
 The [Continuous Integration (CI)](https://docs.cloud.google.com/looker/docs/continuous-integration) feature is updated for better integration with the Looker user interface:
 
 * Your Looker instance will be migrated to the new version of Looker CI. The migration will take a few minutes.
@@ -70,7 +82,7 @@ The updated Looker Continuous Integration feature includes the following:
 
 ### Feature
 
-Looker **Connections Settings** page has a new option, [**Disable Connection**](https://docs.cloud.google.com/looker/docs/connecting-to-your-db#disable_connection), that allows a Looker admin to disable a connection in cases where there are downstream issues with the database, instead of killing queries manually or allowing queries to remain in the query queue. When the connection is disabled, Looker will not send queries to the database and will return an error message to users.
+Conversational Analytics now offers [two modes for asking questions](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data#ca-question-mode). Fast mode allows you to get answers more quickly. Thinking mode allows you to ask more complex questions and test your agent's capabilities.
 
 ---
 ## 2026-03-16

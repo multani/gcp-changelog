@@ -1,5 +1,25 @@
 # AlloyDB for PostgreSQL
 
+## 2026-03-16
+
+### Feature
+
+AlloyDB now supports the 2 vCPU C4A machine type (`c4a-highmem-2-lssd`),
+which is powered by Google Axion, Google's custom Arm-based processor.
+This expansion provides a smaller entry point and more flexibility for
+scaling your production workloads using Axion-based instances. For more information,
+see [Choose an AlloyDB machine type](https://docs.cloud.google.com/alloydb/docs/choose-machine-type).
+
+### Feature
+
+AlloyDB enhanced backups are generally available
+([GA](https://cloud.google.com/products#product-launch-stages)).
+You can now select the Enhanced tier during cluster creation, manage your
+project-level backups with tiered tabs, and delete an enhanced backup. For more
+information, see
+[Manage enhanced backups](https://docs.cloud.google.com/alloydb/docs/backup/manage-enhanced-backups).
+
+---
 ## 2026-03-05
 
 ### Feature

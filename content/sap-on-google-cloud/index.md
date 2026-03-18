@@ -1,5 +1,19 @@
 # SAP on Google Cloud
 
+## 2026-03-16
+
+### Announcement
+
+**Google Cloud's Agent for SAP version 3.12**
+
+Version 3.12 of Google Cloud's Agent for SAP is generally available (GA). This
+version introduces enhancements for SAP workload validation and disk snapshot
+based recovery for SAP HANA.
+
+For more information, see
+[What's new with Google Cloud's Agent for SAP](https://docs.cloud.google.com/sap/docs/agent-for-sap/whats-new).
+
+---
 ## 2026-03-10
 
 ### Announcement

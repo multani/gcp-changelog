@@ -4,6 +4,14 @@
     "2026-03-17": [
       {
         "kind": "Feature",
+        "content": "The [**Visualization Assistant**](https://docs.cloud.google.com/looker/docs/custom-looker-visualization-gemini), which lets you customize formatting options for Looker visualizations in natural language with Gemini assistance, is now generally available. This assistant can be enabled by turning on the **Gemini in Looker** and **Looker Assistants** settings on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.",
+        "summary": {
+          "title": "Customize Looker Visualizations with Natural Language",
+          "summary": "The Visualization Assistant, powered by Gemini, is now generally available. This feature allows users to customize Looker visualization formatting using natural language prompts. Enable it through the Admin panel's Gemini in Looker settings."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "Now available in preview, Gemini in Looker can automatically [generate Quick Start analyses for Explores](https://docs.cloud.google.com/looker/docs/gemini-quick-starts). This feature can be enabled by turning on the **AI-assisted Quick Starts** setting on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.",
         "summary": {
           "title": "Gemini in Looker: Quick Start Analyses Now in Preview",
@@ -16,6 +24,14 @@
         "summary": {
           "title": "Gemini Assists Looker Expression Writing",
           "summary": "Gemini is now available in preview to help you write Looker expressions for table calculations and custom fields. This feature, called Expression Assistant, can be enabled in the Admin panel. It aims to simplify the process of creating complex data manipulations within Looker."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Looker **Connections Settings** page has a new option, [**Disable Connection**](https://docs.cloud.google.com/looker/docs/connecting-to-your-db#disable_connection), that allows a Looker admin to disable a connection in cases where there are downstream issues with the database, instead of killing queries manually or allowing queries to remain in the query queue. When the connection is disabled, Looker will not send queries to the database and will return an error message to users.",
+        "summary": {
+          "title": "Disable Database Connections in Looker",
+          "summary": "Looker admins can now disable database connections directly from the Connections Settings page. This prevents Looker from sending queries to the database, avoiding manual query killing and reducing the risk of downstream issues."
         }
       },
       {
@@ -68,6 +84,14 @@
       },
       {
         "kind": "Feature",
+        "content": "The Gemini in Looker assistant that helps you in generate LookML parameters is now available to enable individually from other Gemini in Looker features. This assistant, which continues to be available in preview, suggests LookML parameters that are based on the natural language prompts that you add to your project files. This assistant can be enabled by turning on the **Gemini in Looker** and **LookML Assistant** settings on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.",
+        "summary": {
+          "title": "LookML Assistant Now Available",
+          "summary": "The Gemini in Looker assistant for generating LookML parameters can now be enabled individually. This preview feature suggests LookML parameters based on natural language prompts, enhancing your project development workflow. You can enable it via the Admin panel under Gemini in Looker settings."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "The [Continuous Integration (CI)](https://docs.cloud.google.com/looker/docs/continuous-integration) feature is updated for better integration with the Looker user interface:\n\n* Your Looker instance will be migrated to the new version of Looker CI. The migration will take a few minutes.\n* While your instance is migrating, any existing CI suites will not appear on the CI [**Suites**](https://docs.cloud.google.com/looker/docs/ci-create-suite#creating_a_ci_suite) page, and the history on the CI [**Runs**](https://docs.cloud.google.com/looker/docs/ci-view-results) page will be empty. During this time, do not create new suites or initiate manual runs.\n* When the migration is complete, the **Suites** and **Runs** pages will be repopulated.\n* If you encounter an issue during the migration, please report it using the [Looker} Continuous Integration - Preview Issue Tracker form](https://docs.google.com/forms/d/e/1FAIpQLSed30eICYruU45R8WZQH6hIui28xtdDnejfetzpLHQ5PK0ZeA/viewform?usp=dialog).\n\nThe updated Looker Continuous Integration feature includes the following:\n\n* Your Looker admin no longer needs to manually add CI users. After your Looker instance is [enabled for CI](https://docs.cloud.google.com/looker/docs/continuous-integration#enable-ci) (or once your instance is updated to the new CI, if your instance was already enabled for CI), Looker CI users are created automatically. Looker CI users are created in the [Looker CI Users user group](https://docs.cloud.google.com/looker/docs/admin-panel-users-groups#ci-users) with the [Looker CI Users role](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#ci-users). A Looker admin can view the Looker CI users from the **Service Accounts** tab of the [**Users**](https://docs.cloud.google.com/looker/docs/admin-panel-users-users) Admin page.\n* A new [**GitHub** table](https://docs.cloud.google.com/looker/docs/admin-panel-platform-ci#github-table) on the **Continuous Integration** Admin page lists the GitHub repositories that have been granted access to the Looker CI GitHub application, which enables Looker CI to [be triggered automatically when pull requests are created](https://docs.cloud.google.com/looker/docs/ci-create-suite#triggers).",
         "summary": {
           "title": "Updated Continuous Integration Feature",
@@ -76,10 +100,10 @@
       },
       {
         "kind": "Feature",
-        "content": "Looker **Connections Settings** page has a new option, [**Disable Connection**](https://docs.cloud.google.com/looker/docs/connecting-to-your-db#disable_connection), that allows a Looker admin to disable a connection in cases where there are downstream issues with the database, instead of killing queries manually or allowing queries to remain in the query queue. When the connection is disabled, Looker will not send queries to the database and will return an error message to users.",
+        "content": "Conversational Analytics now offers [two modes for asking questions](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data#ca-question-mode). Fast mode allows you to get answers more quickly. Thinking mode allows you to ask more complex questions and test your agent's capabilities.",
         "summary": {
-          "title": "Disable Database Connections in Looker",
-          "summary": "Looker admins can now disable database connections directly from the Connections Settings page. This prevents Looker from sending queries to the database, avoiding manual query killing and reducing the risk of downstream issues."
+          "title": "New ways to ask questions in Conversational Analytics",
+          "summary": "Conversational Analytics has launched two new modes for asking questions: Fast mode and Thinking mode. Fast mode provides quicker answers, while Thinking mode enables more complex queries and testing of agent capabilities."
         }
       }
     ],

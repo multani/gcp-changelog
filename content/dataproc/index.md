@@ -1,5 +1,22 @@
 # Dataproc
 
+## 2026-03-17
+
+### Announcement
+
+New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions):
+
+* 2.1.111-debian11, 2.1.111-rocky8, 2.1.111-ubuntu20, 2.1.111-ubuntu20-arm
+* 2.2.79-debian12, 2.2.79-rocky9, 2.2.79-ubuntu22, 2.2.79-ubuntu22-arm
+* 2.3.26-debian12, 2.3.26-ml-ubuntu22, 2.3.26-rocky9, 2.3.26-ubuntu22, 2.3.26-ubuntu22-arm
+
+### Fixed
+
+* Fixed CVEs CVE-2025-58057, CVE-2025-53864, CVE-2025-68161, CVE-2025-48924, and CVE-2025-33042.
+* Upgraded Dataproc Metastore Proxy to v0.0.78 to fix CVEs.
+* Default JDK is set to Temurin JDK - 11.0.30 in all `2.1`, `2.2` and `2.3` images.
+
+---
 ## 2026-03-13
 
 ### Announcement
@@ -25,6 +42,11 @@ New [Serverless for Apache Spark runtime versions](https://cloud.google.com/data
 ---
 ## 2026-03-08
 
+### Fixed
+
+* Fixed CVEs CVE-2025-58057, CVE-2025-53864, CVE-2025-68161, CVE-2025-48924 (partial), and CVE-2025-33042.
+* Upgraded Dataproc Metastore Proxy to v0.0.78 to fix CVEs.
+
 ### Announcement
 
 New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions):
@@ -34,11 +56,6 @@ New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.goog
 * 2.3.25-debian12, 2.3.25-ml-ubuntu22, 2.3.25-rocky9, 2.3.25-ubuntu22, 2.3.25-ubuntu22-arm
 
 **Rollback Notice:** These image versions were rolled back on [March 11, 2026](https://docs.cloud.google.com/dataproc/docs/release-notes#March_11_2026).
-
-### Fixed
-
-* Fixed CVEs CVE-2025-58057, CVE-2025-53864, CVE-2025-68161, CVE-2025-48924 (partial), and CVE-2025-33042.
-* Upgraded hms-proxy to v0.0.78 to fix CVEs.
 
 ---
 ## 2026-03-06

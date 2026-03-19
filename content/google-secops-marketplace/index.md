@@ -1,5 +1,1616 @@
 # Google SecOps Marketplace
 
+## 2026-03-18
+
+### Change
+
+**Azure Security Center**: Version 14.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **List Regulatory Standards**
+  + **List Regulatory Standard Controls**
+
+### Change
+
+**Zoho Desk**: Version 9.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Get Ticket Details**
+
+### Change
+
+**Stellar Cyber Starlight**: Version 17.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Advanced Search**
+  + **Simple Search**
+
+### Change
+
+**Siemplify ThreatFuse**: Version 17.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Get Related Associations**
+  + **Get Related Domains**
+  + **Get Related Email Addresses**
+  + **Get Related Hashes**
+  + **Get Related IPs**
+  + **Get Related URLs**
+  + **Submit Observables**
+
+### Change
+
+**Devo**: Version 10.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Advanced Query**
+  + **Simple Query**
+
+### Change
+
+**AWS CloudWatch**: Version 7.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **List Log Groups**
+  + **List Log Streams**
+  + **Search Log Events**
+
+### Change
+
+**ZScaler**: Version 11.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Get Url Categories**
+
+### Change
+
+**Google Workspace**: Version 24.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Add Members To Group**
+  + **Block Extension**
+  + **Create Group**
+  + **Create OU**
+  + **Create User**
+  + **Delete Extension**
+  + **List Group Members**
+  + **List OU Of Account**
+  + **List Users**
+  + **Update OU**
+  + **Update User**
+
+### Change
+
+**Azure Active Directory**: Version 23.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **List Groups**
+  + **List Members in the Group**
+
+### Change
+
+**Trend Micro Cloud App Security**: Version 9.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Entity Email Search**
+
+### Change
+
+**Tanium**: Version 16.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Get Task Details**
+  + **List Connections**
+
+### Change
+
+**Intezer**: Version 11.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Detonate File**
+  + **Detonate Hash**
+  + **Detonate URL**
+  + **Get File Report**
+  + **Get URL Report**
+  + **Index File**
+
+### Change
+
+**RSA NetWitness**: Version 18.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Run General Query**
+
+### Change
+
+**MongoDB**: Version 8.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Free Query**
+
+### Change
+
+**Exchange**: Version 120.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Block Sender by Message ID**
+  + **Delete Mail**
+  + **Download Attachments**
+  + **Extract EML Data**
+  + **List Exchange-Siemplify Inbox Rules**
+  + **Move Mail To Folder**
+  + **Search Mails**
+  + **Unblock Sender by Message ID**
+
+### Change
+
+**ThreatQ**: Version 16.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **List Events**
+  + **List Related Objects**
+
+### Change
+
+**RSA NetWitness Platform**: Version 14.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Run General Query**
+
+### Change
+
+**Carbon Black Response**: Version 36.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Binary Free Query**
+  + **Process Free Query**
+
+### Change
+
+**Symantec Endpoint Protection**: Version 19.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Get Report And Enrich**
+  + **GetReport**
+  + **ListEndpoints**
+  + **ListGroups**
+
+### Change
+
+**AlienVault USM Anywhere**: Version 33.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **List Events**
+
+### Change
+
+**Mandiant Digital Threat Monitoring**: Version 5.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Update Alert**
+
+### Change
+
+**FireEye CM**: Version 12.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Download Custom Rules File**
+  + **Download Quarantined Email**
+  + **List IOC Feeds**
+  + **List Quarantined Emails**
+
+### Change
+
+**Google Threat Intelligence**: Version 11.0
+
+* Updated `is_suspicious` and `is_risky` logic handling in the following
+  actions:
+
+  + **Enrich Entities**
+  + **Submit File**
+
+### Change
+
+**Shodan**: Version 14.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Search**
+  + **SearchForExploits**
+
+### Change
+
+**Snowflake**: Version 7.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Execute Custom Query**
+  + **Execute Simple Query**
+
+### Change
+
+**Proofpoint Threat Protection**: Version 2.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Get Allow List Entries**
+  + **Get Block List Entries**
+
+### Change
+
+**Vectra**: Version 11.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Get Triage Rule Details**
+
+### Change
+
+**MSSQL**: Version 18.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **RunSQLQuery**
+
+### Change
+
+**Rapid7 InsightVm**: Version 13.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **List Scans**
+
+### Change
+
+**ServiceNow**: Version 60.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Add Attachment**
+  + **Download Attachments**
+  + **Get Child Incident Details**
+  + **Get CMDB Record Details**
+  + **Get User Details**
+  + **List CMDB Records**
+  + **List Record Comments**
+  + **Wait For Comments**
+
+### Change
+
+**CiscoUmbrella**: Version 16.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **List Top Domains**
+
+### Change
+
+**RSA NetWitness EDR**: Version 7.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Add IP To Blacklist**
+  + **Add URL To Blacklist**
+
+### Change
+
+**Microsoft 365 Defender**: Version 24.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Execute Custom Query**
+  + **Execute Entity Query**
+  + **Execute Query**
+
+### Change
+
+**Easy Vista**: Version 6.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Get EasyVista Ticket**
+
+### Feature
+
+**Microsoft Graph Mail**: Version 37.0
+
+* A new predefined widget has been added to following action:
+
+  + **Delete Email**
+
+### Change
+
+**Sumologic**: Version 18.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Search**
+
+### Change
+
+**Symantec Endpoint Security Complete Cloud**: Version 6.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **List Device Groups**
+
+### Change
+
+**Google Rapid Response (GRR)**: Version 9.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Get Hunt Details**
+  + **List Hunts**
+  + **Start a Hunt**
+  + **Stop a Hunt**
+
+### Change
+
+**TruSTAR**: Version 7.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Get Related IOCs**
+  + **Get Related Reports**
+  + **List Enclaves**
+
+### Change
+
+**FireEye AX**: Version 6.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Submit File**
+
+### Change
+
+**McAfee ATD**: Version 14.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Get Analyzer Profiles**
+
+### Change
+
+**Mimecast**: Version 13.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Advanced Archive Search**
+  + **Simple Archive Search**
+
+### Change
+
+**Microsoft Azure Sentinel**: Version 60.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **List Alert Rules**
+  + **List Custom Hunting Rules**
+  + **List Incidents**
+  + **Run Custom Hunting Rule Query**
+  + **Run KQL Query**
+
+### Change
+
+**ElasticSearch**: Version 42.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Advanced ES Search**
+  + **DSL Search**
+  + **Simple ES Search**
+
+### Change
+
+**FireEye HX**: Version 20.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Get Alert Group Details**
+  + **Get Alerts**
+  + **Get Alerts in Alert Group**
+  + **Get Indicators**
+
+### Change
+
+**FortiGate**: Version 18.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **List Address Groups**
+  + **List Policies**
+
+### Change
+
+**CBProtection**: Version 10.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Find File**
+
+### Change
+
+**BlueLiv**: Version 11.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Add Comment to a Threat**
+
+### Change
+
+**MISP**: Version 35.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Add Attribute**
+  + **Add Sighting to an Attribute**
+  + **Add Tag to an Attribute**
+  + **Add Tag to an Event**
+  + **Create Url Misp Object**
+  + **Delete an Attribute**
+  + **Delete an Event**
+  + **List Event Objects**
+  + **List Sightings of an Attribute**
+  + **Remove Tag from an Attribute**
+  + **Remove Tag from an Event**
+
+### Change
+
+**Exchange Extension Pack**: Version 11.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Fetch Compliance Search Results**
+  + **List Exchange-Siemplify Mail Flow Rules**
+
+### Change
+
+**Google Cloud Storage**: Version 13.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Download an Object From a Bucket**
+  + **Get a Bucket's Access Control List**
+  + **List Bucket Objects**
+  + **List Buckets**
+  + **Upload an Object To a Bucket**
+
+### Change
+
+**Microsoft Graph Mail Delegated**: Version 14.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Delete Email**
+  + **Download Attachments from Email**
+  + **Extract Data from Attached EML**
+  + **Move Email To Folder**
+  + **Run Microsoft Search Query**
+  + **Search Emails**
+
+### Change
+
+**Ivanti Endpoint Manager**: Version 7.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Execute Task**
+  + **Scan Endpoints**
+
+### Change
+
+**Akamai**: Version 3.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Add Items To Client List**
+  + **Get Client Lists**
+  + **Get Network Lists**
+  + **Remove Items From Client List**
+
+### Change
+
+**CyberArk PAM**: Version 7.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **List Accounts**
+
+### Change
+
+**Nozomi Networks**: Version 8.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **List Vulnerabilities**
+  + **Run a Query**
+
+### Change
+
+**iBoss**: Version 12.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **List Policy Block List Entries**
+
+### Change
+
+**FireEye EX**: Version 12.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Download Alert Artifacts**
+  + **Download Quarantined Email**
+  + **List Quarantined Emails**
+
+### Change
+
+**AWS Security Hub**: Version 9.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Create Insight**
+  + **Get Insight Details**
+
+### Change
+
+**Mandiant ASM**: Version 10.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Get ASM Entity Details**
+  + **Search Issues**
+
+### Change
+
+**Cisco Orbital**: Version 17.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Execute Query**
+
+### Change
+
+**IronScales**: Version 5.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Get Incident Details**
+  + **Get Incident Mitigation Details**
+  + **Get Mitigation Impersonation Detail**
+  + **Get Mitigations Per Mailbox**
+
+### Change
+
+**Google Cloud IAM**: Version 16.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Create Role**
+  + **Create Service Account**
+  + **Delete Role**
+  + **List Roles**
+  + **List Service Accounts**
+
+### Change
+
+**Armis**: Version 13.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **List Alert Connections**
+
+### Change
+
+**Attivo**: Version 8.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **List Critical ThreatPath**
+  + **List Service ThreatPaths**
+  + **List Vulnerability Hosts**
+
+### Change
+
+**Falcon Sandbox**: Version 18.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Analyze File**
+  + **Analyze File URL**
+  + **Search**
+
+### Change
+
+**Tenable.io**: Version 14.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Get Vulnerability Details**
+  + **List Plugin Families**
+  + **List Policies**
+  + **List Scanners**
+
+### Change
+
+**Google Chat**: Version 5.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **List Spaces**
+
+### Change
+
+**IntSights**: Version 24.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Get Alert Image**
+
+### Change
+
+**Jira**: Version 53.0
+
+* **Integration**: Added support for service account token based authentication.
+* **Integration**: Updated issue object handling.
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Download Attachments**
+  + **Get Issues**
+  + **List Relation Types**
+
+### Change
+
+**Google BigQuery**: Version 16.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Run Custom Query**
+  + **Run SQL Query**
+
+### Change
+
+**ArcSight**: Version 43.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Get Activelist Entries**
+  + **Get Query Results**
+  + **Get Report**
+  + **Is Value In Activelist Column**
+  + **Search**
+
+### Change
+
+**Check Point Firewall**: Version 13.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Download Log Attachment**
+  + **List Layers On Site**
+  + **List Policies On Site**
+  + **Show Logs**
+
+### Change
+
+**FortiAnalyzer**: Version 9.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Search Logs**
+
+### Change
+
+**Microsoft Defender ATP**: Version 28.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Create Isolate Machine Task**
+  + **Create Run Antivirus Scan Task**
+  + **Create Stop And Quarantine File Specific Machine Task**
+  + **Create Unisolate Machine Task**
+  + **Get Current Task Status**
+  + **List Alerts**
+  + **List Indicators**
+  + **List Machines**
+  + **Run Advanced Hunting Query**
+  + **Wait Task Status**
+
+### Change
+
+**Microsoft Teams**: Version 33.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **List Chats**
+  + **List Teams**
+  + **List Users**
+  + **Send Message**
+
+### Change
+
+**Recorded Future**: Version 19.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Update Alert**
+
+### Change
+
+**Active Directory**: Version 39.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Get Group Members**
+  + **Search Active Directory**
+
+### Change
+
+**Cofense Triage**: Version 18.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Get Report Headers**
+  + **List Categories**
+  + **List Playbooks**
+  + **List Reports Related To Threat Indicators**
+
+### Change
+
+**ElasticSearchV7**: Version 20.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Advanced ES Search**
+  + **DSL Search**
+  + **Simple ES Search**
+
+### Change
+
+**BMC Remedy ITSM**: Version 10.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Get Incident Details**
+  + **Get Record Details**
+
+### Change
+
+**Cloudflare**: Version 5.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Add IP To Rule List**
+  + **List Firewall Rules**
+
+### Change
+
+**OpenSearch**: Version 2.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Advanced OS Search**
+  + **DSL Search**
+  + **Simple OS Search**
+
+### Change
+
+**Microsoft Graph Mail**: Version 37.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Download Attachments from Email**
+  + **Extract Data from Attached EML**
+  + **Move Email To Folder**
+  + **Search Emails**
+
+### Feature
+
+**CrowdStrike Falcon**: Version 73.0
+
+* The following new action has been added:
+
+  + **Hide Hosts**
+
+### Change
+
+**F5 BIG-IP Access Policy Manager**: Version 6.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **List Active Sessions**
+
+### Change
+
+**McAfee Mvision EPO**: Version 9.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **List Endpoints In Group**
+  + **List Groups**
+  + **List Tags**
+
+### Change
+
+**Palo Alto Cortex XDR**: Version 24.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Execute XQL Search**
+
+### Change
+
+**XForce**: Version 17.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Get IP By Category**
+
+### Change
+
+**Okta**: Version 14.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Get User**
+
+### Change
+
+**Microsoft Intune**: Version 6.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **List Managed Devices**
+
+### Change
+
+**F5 BIG-IP iControl API**: Version 5.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **List Address Lists**
+  + **List Data Groups**
+  + **List Port Lists**
+  + **List iRules**
+
+### Feature
+
+**Endgame**: Version 73.0
+
+* New predefined widgets have been added to following actions:
+
+  + **Get Endpoints**
+  + **Get Host Isolation Config**
+  + **Hunt File**
+  + **Hunt IP**
+  + **Hunt Process**
+  + **Hunt Registry**
+  + **Hunt User**
+  + **List Investigations**
+
+### Change
+
+**AppSheet**: Version 4.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Add Record**
+  + **Delete Record**
+  + **List Tables**
+  + **Search Records**
+  + **Update Record**
+
+### Change
+
+**McAfee ESM**: Version 44.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Send Advanced Query To ESM**
+  + **Send Query To ESM**
+
+### Change
+
+**Google Cloud Recommender**: Version 8.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Get Recommendation**
+  + **List Recommendations**
+  + **Update Recommendation**
+
+### Change
+
+**Any.Run**: Version 9.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Search Report History**
+
+### Change
+
+**FireEye Helix**: Version 16.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Get Lists**
+  + **Get List Items**
+
+### Change
+
+**Area1**: Version 7.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Get Recent Indicators**
+
+### Change
+
+**ExabeamAdvancedAnalytics**: Version 8.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Add Comments To Entity**
+  + **Create Watchlist**
+  + **List Watchlist Items**
+  + **List Watchlists**
+
+### Change
+
+**Azure Monitor**: Version 2.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Search Logs**
+
+### Change
+
+**Rapid7 InsightIDR**: Version 10.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **List Investigations**
+  + **List Saved Queries**
+  + **Run Saved Query**
+
+### Change
+
+**Amazon Macie**: Version 8.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Create Custom Data Identifier**
+  + **List Findings**
+
+### Change
+
+**AWS IAM Access Analyzer**: Version 8.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Scan Resources**
+
+### Change
+
+**ProofPoint TAP**: Version 13.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **DecodeURL**
+  + **Get Threat Forensics**
+  + **GetCampaign**
+  + **List Campaigns**
+  + **Search Events**
+
+### Change
+
+**Splunk**: Version 62.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Execute Entity Query**
+  + **SplunkQuery**
+
+### Change
+
+**LogPoint**: Version 18.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Execute Entity Query**
+  + **Execute Query**
+  + **List Repos**
+
+### Change
+
+**BitSight**: Version 10.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **List Company Highlights**
+  + **List Company Vulnerabilities**
+
+### Change
+
+**WMI**: Version 12.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **ListServices**
+  + **ListUsers**
+  + **RunQuery**
+
+### Change
+
+**AWS Identity and Access Management (IAM)**: Version .0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Create a Group**
+  + **Create a Policy**
+  + **Create a User**
+  + **List Groups**
+  + **List Policies**
+  + **List Users**
+
+### Change
+
+**Fortinet FortiSIEM**: Version 8.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Execute Custom Query**
+  + **Execute Simple Query**
+
+### Change
+
+**Humio**: Version 7.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Execute Custom Search**
+  + **Execute Simple Search**
+
+### Change
+
+**AlgoSec**: Version 5.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **List Templates**
+
+### Change
+
+**AWS WAF**: Version 9.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Create IP Set**
+  + **Create Regex Pattern Set**
+  + **Create Rule Group**
+  + **Create Web ACL**
+  + **List IP Sets**
+  + **List Regex Pattern Sets**
+
+### Change
+
+**CA Service Desk Manager**: Version 24.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Search Tickets**
+  + **Sync Ticket History**
+
+### Change
+
+**Freshworks Freshservice**: Version 16.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Add Ticket Time Entry**
+  + **Add a Ticket Note**
+  + **Add a Ticket Reply**
+  + **Create Requester**
+  + **Create Ticket**
+  + **List Agents**
+  + **List Requesters**
+  + **List Ticket Conversations**
+  + **List Ticket Time Entries**
+  + **List Tickets**
+  + **Update Requester**
+  + **Update Ticket**
+  + **Update Ticket Time Entry**
+
+### Change
+
+**BMC Helix RemedyForce**: Version 15.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Execute Custom Query**
+  + **Execute Simple Query**
+  + **Get Record Details**
+  + **List Record Types**
+
+### Change
+
+**AWS S3**: Version 6.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Download File From Bucket**
+  + **Get Bucket Policy**
+  + **List Bucket Objects**
+  + **List Buckets**
+  + **Upload File To Bucket**
+
+### Change
+
+**Cybereason**: Version 22.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Execute Custom Investigation Search**
+  + **Execute Simple Investigation Search**
+  + **List Malop Affected Machines**
+  + **List Malop Remediations**
+  + **List Processes**
+  + **List files**
+  + **Remediate Malop**
+
+### Change
+
+**SCCM**: Version 19.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Run WQL Query**
+
+### Change
+
+**Netskope**: Version 15.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **List Alerts**
+  + **List Clients**
+  + **List Events**
+
+### Change
+
+**Qradar**: Version .0
+
+* Optimized the caching fetched offenses logic in the following connectors:
+
+  + **Qradar Correlation Events Connector V2**
+  + **Qradar Offenses Connector**
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Get Rule MITRE Coverage**
+  + **List Reference Maps**
+  + **List Reference Maps of Sets**
+  + **List Reference Sets**
+  + **List Reference Tables**
+  + **Lookup for a Key in Reference Map**
+  + **Lookup for a Key in Reference Map of Sets**
+  + **Lookup for a Value in Reference Map**
+  + **Lookup for a Value in Reference Map of Sets**
+  + **Lookup for a Value in Reference Set**
+  + **Lookup for a Value in Reference Tables**
+
+### Change
+
+**Google Cloud Compute**: Version 14.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Add Labels To Instance**
+  + **Get Instance IAM Policy**
+  + **List Instances**
+  + **Remove External IP Addresses**
+  + **Set Instance IAM Policy**
+
+### Change
+
+**Cylance**: Version 17.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Get Global List**
+  + **Get Threats**
+
+### Change
+
+**EmailV2**: Version 38.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Search Email**
+
+### Change
+
+**McAfee EPO**: Version 35.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Execute Custom Query**
+  + **Execute Entity Query**
+  + **Execute Query By ID**
+  + **List Queries**
+  + **List Tasks**
+
+### Change
+
+**ArcSight Logger**: Version 10.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Send Query**
+
+### Feature
+
+**Microsoft Graph Security**: Version 24.0
+
+* A new predefined widget has been added to following action:
+
+  + **List Incidents**
+
+### Change
+
+**SonicWall-Beta**: Version 7.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **List Address Groups**
+  + **List URI Groups**
+  + **List URI Lists**
+
+### Change
+
+**VSphere**: Version 9.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **List Vms**
+
+### Change
+
+**SiemplifyUtilities**: Version 26.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Export Entities as OpenIOC File**
+  + **Extract Top From JSON**
+
+### Change
+
+**Office 365 CloudApp Security**: Version 23.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Enrich Entities**
+  + **List Files**
+
+### Change
+
+**Salesforce**: Version 15.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **List Cases**
+
+### Change
+
+**AWS Elastic Compute Cloud (EC2)**: Version 8.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Start Instance**
+  + **Stop Instance**
+  + **Terminate Instance**
+
+### Change
+
+**McAfee Mvision ePO V2**: Version 6.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **List Devices**
+  + **List Tags**
+
+### Change
+
+**Anomali ThreatStream**: Version 12.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Submit Observables**
+
+### Change
+
+**Automox**: Version 6.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **List Policies**
+
+### Change
+
+**Microsoft Graph Security**: Version 24.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **List Alerts**
+
+### Change
+
+**Qualys VM**: Version 22.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Download Vm Scan Results**
+  + **Launch VM Scan And Fetch Results**
+  + **List Groups**
+  + **List Reports**
+  + **List Scans**
+
+### Change
+
+**Cloud Logging**: Version 4.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Execute Query**
+
+### Change
+
+**Cisco ISE**: Version 14.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **List Endpoint Identity Group**
+
+### Change
+
+**SentinelOneV2**: Version 45.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Create Path Exclusion Record**
+  + **Get Blacklist**
+  + **Get Deep Visibility Query Result**
+  + **Get Site Agents**
+  + **Get Threats**
+  + **Initiate Deep Visibility Query**
+  + **List Sites**
+  + **Mark as Threat**
+  + **Mitigate Threat**
+  + **Resolve Threat**
+
+### Change
+
+**Palo Alto Panorama**: Version 33.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Get Correlated Traffic Between IPs**
+  + **Search logs**
+
+### Change
+
+**Cisco AMP**: Version 20.0
+
+* Introduced Light Theme compatibility for the predefined widget of the following
+  action:
+
+  + **Get File List Items**
+
+### Change
+
+**Slack**: Version 27.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Get Channel Or User Conversation History**
+  + **List Channels**
+  + **List Users**
+  + **Send Interactive Message**
+
+### Change
+
+**LogRhythm**: Version 20.0
+
+* Introduced Light Theme compatibility for predefined widgets of the following
+  actions:
+
+  + **Add Alarm To Case**
+  + **Attach File To Case**
+  + **Get Alarm Details**
+  + **List Case Evidence**
+
+---
+## 2026-03-12
+
+### Feature
+
+**Microsoft Azure Sentinel**: Version 59.0
+
+* The following new job has been added:
+
+  + **Sync Incidents V2**
+
+### Change
+
+**Microsoft Azure Sentinel**: Version 59.0
+
+* Deprecated the following job:
+
+  + **Sync Incidents V2****Note:** Use the Sync Incidents V2 job for syncing.
+
+---
 ## 2026-03-11
 
 ### Change

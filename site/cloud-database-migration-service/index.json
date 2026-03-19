@@ -1,6 +1,16 @@
 {
   "name": "Cloud Database Migration Service",
   "entries": {
+    "2026-03-18": [
+      {
+        "kind": "Announcement",
+        "content": "Database Migration Service for heterogeneous SQL Server migrations now supports\nfailback migration jobs in\n[Preview](https://cloud.google.com/products#product-launch-stages).\nFailback migrations let you push CDC updates back to the original SQL Server\nsource from the destination PostgreSQL database after you complete the standard\nmigration. This feature keeps your original source database alive and up to date in case\nyou need to switch your application back to the source SQL Server database.\nFor more information, see the page relevant for your migration scenario:\n\n* [Failback migration guide for SQL Server to Cloud SQL for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/sqlserver-to-csql-pgsql/guide-failback-migration)\n* [Failback migration guide for SQL Server to AlloyDB for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/sqlserver-to-alloydb/guide-failback-migration)",
+        "summary": {
+          "title": "SQL Server Failback Migration Now in Preview",
+          "summary": "Database Migration Service now supports failback for SQL Server migrations, allowing you to push CDC updates back to your original SQL Server source from PostgreSQL. This feature keeps your source database up-to-date, enabling a potential switch back if needed. It's currently available in preview for migrations to Cloud SQL for PostgreSQL and AlloyDB for PostgreSQL."
+        }
+      }
+    ],
     "2026-02-27": [
       {
         "kind": "Feature",

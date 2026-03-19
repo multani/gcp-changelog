@@ -8,6 +8,12 @@ The [**Visualization Assistant**](https://docs.cloud.google.com/looker/docs/cust
 
 ### Feature
 
+The **Dashboard Tile Limits** preview feature is now available, and is disabled by default.
+
+When enabled, the **Dashboard Tile Limits** preview feature lets admins set limits to how many query tiles can be added to each tab in a dashboard. Admins can set these limits in the **Maximum Query Tiles per tab** setting on the **Content guardrails** admin page.
+
+### Feature
+
 Now available in preview, Gemini in Looker can automatically [generate Quick Start analyses for Explores](https://docs.cloud.google.com/looker/docs/gemini-quick-starts). This feature can be enabled by turning on the **AI-assisted Quick Starts** setting on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.
 
 ### Feature
@@ -23,10 +29,6 @@ Looker **Connections Settings** page has a new option, [**Disable Connection**](
 The [**Self-service Explores**](https://docs.cloud.google.com/looker/docs/exploring-self-service) feature is now generally available.
 
 In addition, if your Looker admin has [enabled your Looker instance to support OAuth for Google Sheets uploads](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#enabling_oauth_for_uploads), the self-service Explores feature supports [uploading data from Google Sheets using Google Drive navigation](https://docs.cloud.google.com/looker/docs/exploring-self-service#oauth).
-
-### Announcement
-
-The following features will begin rolling out on March 17, 2026.
 
 ### Feature
 
@@ -62,9 +64,13 @@ Table charts, scatterplot charts, and Google Maps charts that have increased row
 
 **Note:** This item was originally published on March 16, 2026 and was updated on March 17, 2026.
 
+### Announcement
+
+As part of Looker 26.4, the following features will begin rolling out on March 17, 2026.
+
 ### Feature
 
-The Gemini in Looker assistant that helps you in generate LookML parameters is now available to enable individually from other Gemini in Looker features. This assistant, which continues to be available in preview, suggests LookML parameters that are based on the natural language prompts that you add to your project files. This assistant can be enabled by turning on the **Gemini in Looker** and **LookML Assistant** settings on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.
+The Gemini in Looker assistant that helps you [generate LookML parameters](https://docs.cloud.google.com/looker/docs/write-lookml-gemini) is now available to enable individually from other Gemini in Looker features. This assistant, which continues to be available in preview, suggests LookML parameters that are based on the natural language prompts that you add to your project files. This assistant can be enabled by turning on the **Gemini in Looker** and **LookML Assistant** settings on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.
 
 ### Feature
 
@@ -82,7 +88,7 @@ The updated Looker Continuous Integration feature includes the following:
 
 ### Feature
 
-Conversational Analytics now offers [two modes for asking questions](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data#ca-question-mode). Fast mode allows you to get answers more quickly. Thinking mode allows you to ask more complex questions and test your agent's capabilities.
+Conversational Analytics now offers [new modes for asking questions](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data#ca-question-mode). Fast mode allows you to get answers more quickly. Thinking mode allows you to ask more complex questions and test your agent's capabilities.
 
 ---
 ## 2026-03-16

@@ -1,5 +1,27 @@
 # Container Optimized OS
 
+## 2026-03-14
+
+### Change
+
+
+
+### cos-125-19216-220-57
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.68](https://cos.googlesource.com/third_party/kernel/+/92c9f3ce0777cb6759e4c8a66adac2583c5ba3a8 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.220.57/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Fixed the "CrackArmor" vulnerability in the Linux kernel.
+
+### Fixed
+
+Downgraded ek-cpu-balloon driver to version 1.1.0 to address efficiency daemon issues.
+
+---
 ## 2026-03-10
 
 ### Change

@@ -2417,6 +2417,12 @@ accurate identification during active sessions.</p>
 <p>Here are the prerelease notes for the next version of CCAI Platform.
 When we release the next version, we expect the new capabilities to be as shown
 here.</p>
+<h3 id="feature_4">Feature</h3>
+<p><strong>Support for creating chat virtual agents using CX Agent Studio</strong></p>
+<p>Contact Center AI Platform supports creating chat virtual agents using
+<a href="https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps">Customer Experience Agent Studio</a>
+(CX Agent Studio). This expands on its existing support for creating voice virtual
+agents with CX Agent Studio.</p>
 <h3 id="fixed">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
@@ -2440,6 +2446,8 @@ here.</p>
   displayed the wrap-up screen instead of the new status.</li>
 <li>Fixed an issue where the default global contact list was missing, despite
   being enabled, preventing end-users from accessing this directory.</li>
+<li>Fixed an issue where virtual agent calls weren't recorded and uploaded to
+  external storage even when call recording was turned on.</li>
 <li>Fixed an issue where outbound calls were incorrectly prompting for customer
   satisfaction (CSAT) feedback when a menu was assigned.</li>
 <li>Fixed an issue where the French Canadian translation for "wrap-up" was
@@ -2629,18 +2637,16 @@ here.</p>
   agent.</li>
 <li>Fixed an issue where agent prioritization for deltacast selection was
   incorrect.</li>
+<li>Fixed an issue that occurred when a human agent didn't respond to a
+  transferred or auto-answered session. The system incorrectly recorded the
+  termination reason as "agent stopped responding" instead of "timeout waiting
+  for agent message".</li>
 <li>Fixed a web SDK issue where underscores in text (for example, in email
   addresses like user_name@example.com) were incorrectly removed in messages
   to end-users.</li>
 <li>Fixed a web SDK issue for iOS users where the <strong>Yes</strong> and <strong>No</strong> buttons in
   the survey request at the end of a chat were hidden.</li>
 </ul>
-<h3 id="feature_4">Feature</h3>
-<p><strong>Support for creating chat virtual agents using CX Agent Studio</strong></p>
-<p>Contact Center AI Platform supports creating chat virtual agents using
-<a href="https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps">Customer Experience Agent Studio</a>
-(CX Agent Studio). This expands on its existing support for creating voice virtual
-agents with CX Agent Studio.</p>
 <h3 id="feature_5">Feature</h3>
 <p><strong>Improved support for multiple agent matches for agent extension searches</strong></p>
 <p>When an end-user inputs an agent extension number at the beginning of a call and

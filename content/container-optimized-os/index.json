@@ -1,6 +1,40 @@
 {
   "name": "Container Optimized OS",
   "entries": {
+    "2026-03-14": [
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Update to our service terms",
+          "summary": "We are updating our service terms to better reflect our current practices and to provide clearer guidelines for all users. These changes will take effect on August 1st, 2024. Please review the updated terms at your convenience."
+        }
+      },
+      {
+        "kind": "cos-125-19216-220-57",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.68](https://cos.googlesource.com/third_party/kernel/+/92c9f3ce0777cb6759e4c8a66adac2583c5ba3a8 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.220.57/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container Optimized OS Update",
+          "summary": "Container Optimized OS has been updated to version 6.12.68. This release includes updated Kernel, Docker, and Containerd components, along with GPU driver information."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Fixed the \"CrackArmor\" vulnerability in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel vulnerability fixed",
+          "summary": "The 'CrackArmor' vulnerability in the Linux kernel has been resolved. This update addresses a critical security issue, ensuring improved system stability and protection against potential exploits."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Downgraded ek-cpu-balloon driver to version 1.1.0 to address efficiency daemon issues.",
+        "summary": {
+          "title": "CPU balloon driver updated",
+          "summary": "The ek-cpu-balloon driver has been downgraded to version 1.1.0. This change resolves issues related to the efficiency daemon."
+        }
+      }
+    ],
     "2026-03-10": [
       {
         "kind": "Change",

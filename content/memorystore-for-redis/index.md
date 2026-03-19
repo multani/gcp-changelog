@@ -1,5 +1,13 @@
 # Memorystore for Redis
 
+## 2026-03-18
+
+### Feature
+
+You can deploy instances in the [`asia-southeast3` (Bangkok)](https://docs.cloud.google.com/memorystore/docs/redis/regions)
+region.
+
+---
 ## 2025-10-22
 
 ### Feature

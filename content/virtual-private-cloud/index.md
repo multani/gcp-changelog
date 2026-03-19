@@ -1,5 +1,18 @@
 # Virtual Private Cloud
 
+## 2026-03-18
+
+### Feature
+
+You can
+[update a service attachment's target service without recreating the service attachment](https://docs.cloud.google.com/vpc/docs/manage-private-service-connect-services#change-service).
+Consumer connections are preserved during the update, but traffic is briefly
+disrupted. This feature is available in **General Availability**.
+
+For more information, including a list of supported configurations, see
+[Service mutability](https://docs.cloud.google.com/vpc/docs/about-vpc-hosted-services#service-mutability).
+
+---
 ## 2026-02-26
 
 ### Feature

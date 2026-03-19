@@ -56,6 +56,15 @@ Here are the prerelease notes for the next version of CCAI Platform.
 When we release the next version, we expect the new capabilities to be as shown
 here.
 
+### Feature
+
+**Support for creating chat virtual agents using CX Agent Studio**
+
+Contact Center AI Platform supports creating chat virtual agents using
+[Customer Experience Agent Studio](https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps)
+(CX Agent Studio). This expands on its existing support for creating voice virtual
+agents with CX Agent Studio.
+
 ### Fixed
 
 The following issues were addressed in this release:
@@ -80,6 +89,8 @@ The following issues were addressed in this release:
   displayed the wrap-up screen instead of the new status.
 * Fixed an issue where the default global contact list was missing, despite
   being enabled, preventing end-users from accessing this directory.
+* Fixed an issue where virtual agent calls weren't recorded and uploaded to
+  external storage even when call recording was turned on.
 * Fixed an issue where outbound calls were incorrectly prompting for customer
   satisfaction (CSAT) feedback when a menu was assigned.
 * Fixed an issue where the French Canadian translation for "wrap-up" was
@@ -262,20 +273,15 @@ The following issues were addressed in this release:
   agent.
 * Fixed an issue where agent prioritization for deltacast selection was
   incorrect.
+* Fixed an issue that occurred when a human agent didn't respond to a
+  transferred or auto-answered session. The system incorrectly recorded the
+  termination reason as "agent stopped responding" instead of "timeout waiting
+  for agent message".
 * Fixed a web SDK issue where underscores in text (for example, in email
   addresses like user\_name@example.com) were incorrectly removed in messages
   to end-users.
 * Fixed a web SDK issue for iOS users where the **Yes** and **No** buttons in
   the survey request at the end of a chat were hidden.
-
-### Feature
-
-**Support for creating chat virtual agents using CX Agent Studio**
-
-Contact Center AI Platform supports creating chat virtual agents using
-[Customer Experience Agent Studio](https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps)
-(CX Agent Studio). This expands on its existing support for creating voice virtual
-agents with CX Agent Studio.
 
 ### Feature
 

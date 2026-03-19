@@ -2376,6 +2376,21 @@
 
 
 <h1 id="cloud-database-migration-service">Cloud Database Migration Service</h1>
+<h2 id="2026-03-18">2026-03-18</h2>
+<h3 id="announcement">Announcement</h3>
+<p>Database Migration Service for heterogeneous SQL Server migrations now supports
+failback migration jobs in
+<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.
+Failback migrations let you push CDC updates back to the original SQL Server
+source from the destination PostgreSQL database after you complete the standard
+migration. This feature keeps your original source database alive and up to date in case
+you need to switch your application back to the source SQL Server database.
+For more information, see the page relevant for your migration scenario:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/database-migration/docs/sqlserver-to-csql-pgsql/guide-failback-migration">Failback migration guide for SQL Server to Cloud SQL for PostgreSQL</a></li>
+<li><a href="https://docs.cloud.google.com/database-migration/docs/sqlserver-to-alloydb/guide-failback-migration">Failback migration guide for SQL Server to AlloyDB for PostgreSQL</a></li>
+</ul>
+<hr />
 <h2 id="2026-02-27">2026-02-27</h2>
 <h3 id="feature">Feature</h3>
 <p>Database Migration Service for heterogeneous migrations now supports
@@ -2424,7 +2439,7 @@ source network connectivity in all heterogeneous migration scenarios.</p>
 </ul>
 <hr />
 <h2 id="2025-09-15">2025-09-15</h2>
-<h3 id="announcement">Announcement</h3>
+<h3 id="announcement_1">Announcement</h3>
 <p>Gemini-powered conversion features for heterogeneous migrations
 in Database Migration Service are now generally available
 (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).</p>
@@ -2455,7 +2470,7 @@ in Database Migration Service are now generally available
 </ul>
 <hr />
 <h2 id="2025-06-30">2025-06-30</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p>Database Migration Service support for heterogeneous SQL Server to PostgreSQL migrations is now generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).</p>
 <p>For more information, see:</p>
 <ul>
@@ -2477,6 +2492,9 @@ in Database Migration Service are now generally available
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-database-migration-service">Cloud Database Migration Service</a></li>
+          <li class="nav-item">
+            <a href="#2026-03-18" class="nav-link">2026-03-18</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-02-27" class="nav-link">2026-02-27</a>
           </li>

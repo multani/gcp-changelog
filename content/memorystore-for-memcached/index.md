@@ -1,5 +1,13 @@
 # Memorystore for Memcached
 
+## 2026-03-18
+
+### Feature
+
+You can deploy instances in the [`asia-southeast3` (Bangkok)](https://docs.cloud.google.com/memorystore/docs/memcached/regions)
+region.
+
+---
 ## 2026-01-20
 
 ### Deprecated

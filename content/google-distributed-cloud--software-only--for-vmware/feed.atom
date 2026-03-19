@@ -2,9 +2,55 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Distributed Cloud (software only) for VMware</title>
   <subtitle>Changelog for Google Cloud product: Google Distributed Cloud (software only) for VMware</subtitle>
-  <updated>2026-03-05T00:00:00+00:00</updated>
+  <updated>2026-03-18T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-distributed-cloud--software-only--for-vmware/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-03-18:announcement:0</id>
+    <published>2026-03-18T00:00:00+00:00</published>
+    <updated>2026-03-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for VMware 1.34.200-gke.68 is now available
+for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.
+Google Distributed Cloud 1.34.200-gke.68 runs on Kubernetes v1.34.3-gke.400.</p>
+<p>If you are using a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.</p>]]></content>
+    <summary>Google Distributed Cloud for VMware 1.34.200-gke.68 is now available for download. This release runs on Kubernetes v1.34.3-gke.400. Ensure your third-party storage vendor is qualified for this version before upgrading. Please note that it may take 7-14 days for the new version to be fully available through Google Cloud console and gcloud CLI.</summary>
+    <title>Announcement: New version of Google Distributed Cloud for VMware available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-03-18:announcement:1</id>
+    <published>2026-03-18T00:00:00+00:00</published>
+    <updated>2026-03-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for VMware V2 (Advanced Clusters) versions 1.31
+and earlier were missing a configuration step in the node startup script that
+defined the Docker default bridge IP range. As a result, Docker defaulted to
+using the 172.17.0.0/16 (and in some cases 172.16.0.0/16) address range.</p>]]></content>
+    <summary>Versions 1.31 and earlier of Google Distributed Cloud for VMware V2 had a missing configuration step in the node startup script. This led to Docker defaulting to specific IP address ranges, potentially causing conflicts. An update addresses this configuration oversight.</summary>
+    <title>Announcement: Node startup script issue in VMware V2</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-03-18:announcement:2</id>
+    <published>2026-03-18T00:00:00+00:00</published>
+    <updated>2026-03-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed an issue where an admin cluster upgrade appeared to be stuck indefinitely
+and users would see the <code>VSphereMachine</code> remaining in the <code>Creating</code> phase
+without actionable an error messages.</p>]]></content>
+    <summary>An issue preventing admin cluster upgrades from completing has been fixed. Previously, users encountered stuck upgrades with `VSphereMachine` in the `Creating` phase and no clear error messages. This update ensures upgrades now proceed smoothly.</summary>
+    <title>Announcement: Admin cluster upgrade issue resolved</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

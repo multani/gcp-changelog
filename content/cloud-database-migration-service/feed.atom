@@ -2,9 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Database Migration Service</title>
   <subtitle>Changelog for Google Cloud product: Cloud Database Migration Service</subtitle>
-  <updated>2026-02-27T00:00:00+00:00</updated>
+  <updated>2026-03-18T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-database-migration-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-database-migration-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-database-migration-service:2026-03-18:announcement:0</id>
+    <published>2026-03-18T00:00:00+00:00</published>
+    <updated>2026-03-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Database Migration Service for heterogeneous SQL Server migrations now supports
+failback migration jobs in
+<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.
+Failback migrations let you push CDC updates back to the original SQL Server
+source from the destination PostgreSQL database after you complete the standard
+migration. This feature keeps your original source database alive and up to date in case
+you need to switch your application back to the source SQL Server database.
+For more information, see the page relevant for your migration scenario:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/database-migration/docs/sqlserver-to-csql-pgsql/guide-failback-migration">Failback migration guide for SQL Server to Cloud SQL for PostgreSQL</a></li>
+<li><a href="https://docs.cloud.google.com/database-migration/docs/sqlserver-to-alloydb/guide-failback-migration">Failback migration guide for SQL Server to AlloyDB for PostgreSQL</a></li>
+</ul>]]></content>
+    <summary>Database Migration Service now supports failback for SQL Server migrations, allowing you to push CDC updates back to your original SQL Server source from PostgreSQL. This feature keeps your source database up-to-date, enabling a potential switch back if needed. It's currently available in preview for migrations to Cloud SQL for PostgreSQL and AlloyDB for PostgreSQL.</summary>
+    <title>Announcement: SQL Server Failback Migration Now in Preview</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

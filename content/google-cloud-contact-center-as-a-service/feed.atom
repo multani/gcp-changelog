@@ -94,7 +94,22 @@ here.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-16:fixed:5</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-16:feature:5</id>
+    <published>2026-03-16T00:00:00+00:00</published>
+    <updated>2026-03-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Support for creating chat virtual agents using CX Agent Studio</strong></p>
+<p>Contact Center AI Platform supports creating chat virtual agents using
+<a href="https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps">Customer Experience Agent Studio</a>
+(CX Agent Studio). This expands on its existing support for creating voice virtual
+agents with CX Agent Studio.</p>]]></content>
+    <summary>You can now create chat virtual agents using CX Agent Studio, in addition to voice agents. This new feature expands the capabilities of the Customer Contact AI Platform.</summary>
+    <title>Feature: Create chat agents with CX Agent Studio</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-16:fixed:6</id>
     <published>2026-03-16T00:00:00+00:00</published>
     <updated>2026-03-16T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The following issues were addressed in this release:</p>
@@ -119,6 +134,8 @@ here.</p>]]></content>
   displayed the wrap-up screen instead of the new status.</li>
 <li>Fixed an issue where the default global contact list was missing, despite
   being enabled, preventing end-users from accessing this directory.</li>
+<li>Fixed an issue where virtual agent calls weren't recorded and uploaded to
+  external storage even when call recording was turned on.</li>
 <li>Fixed an issue where outbound calls were incorrectly prompting for customer
   satisfaction (CSAT) feedback when a menu was assigned.</li>
 <li>Fixed an issue where the French Canadian translation for "wrap-up" was
@@ -308,29 +325,18 @@ here.</p>]]></content>
   agent.</li>
 <li>Fixed an issue where agent prioritization for deltacast selection was
   incorrect.</li>
+<li>Fixed an issue that occurred when a human agent didn't respond to a
+  transferred or auto-answered session. The system incorrectly recorded the
+  termination reason as "agent stopped responding" instead of "timeout waiting
+  for agent message".</li>
 <li>Fixed a web SDK issue where underscores in text (for example, in email
   addresses like user_name@example.com) were incorrectly removed in messages
   to end-users.</li>
 <li>Fixed a web SDK issue for iOS users where the <strong>Yes</strong> and <strong>No</strong> buttons in
   the survey request at the end of a chat were hidden.</li>
 </ul>]]></content>
-    <summary>This release addresses numerous issues across the platform, including improvements to call handling, agent experience, reporting accuracy, and user interface consistency. Specific fixes include resolving call recording upload delays, ensuring correct agent status tracking, and enhancing the functionality of CRM integrations and transfer options.</summary>
-    <title>Fixed: Resolved various issues</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-16:feature:6</id>
-    <published>2026-03-16T00:00:00+00:00</published>
-    <updated>2026-03-16T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Support for creating chat virtual agents using CX Agent Studio</strong></p>
-<p>Contact Center AI Platform supports creating chat virtual agents using
-<a href="https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps">Customer Experience Agent Studio</a>
-(CX Agent Studio). This expands on its existing support for creating voice virtual
-agents with CX Agent Studio.</p>]]></content>
-    <summary>You can now create chat virtual agents using CX Agent Studio, in addition to voice agents. This new feature expands the capabilities of the Customer Contact AI Platform.</summary>
-    <title>Feature: Create chat agents with CX Agent Studio</title>
+    <summary>This release addresses numerous bugs and stability issues across the platform, including problems with call recordings, agent status, user interfaces, and integrations. These fixes improve the overall reliability and user experience for agents and administrators.</summary>
+    <title>Fixed: Various issues fixed</title>
   </entry>
   <entry>
     <author>

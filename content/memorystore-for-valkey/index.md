@@ -1,5 +1,12 @@
 # Memorystore for Valkey
 
+## 2026-03-18
+
+### Feature
+
+You can use the Google Cloud console to [find and set maintenance windows](https://docs.cloud.google.com/memorystore/docs/valkey/find-and-set-maintenance-windows) and [perform self-service maintenance](https://docs.cloud.google.com/memorystore/docs/valkey/self-service-maintenance) on instances. This feature is [Generally Available](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-03-17
 
 ### Feature

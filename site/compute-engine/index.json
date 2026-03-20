@@ -1,6 +1,16 @@
 {
   "name": "Compute Engine",
   "entries": {
+    "2026-03-19": [
+      {
+        "kind": "Breaking",
+        "content": "**Changed**: The following operations on the boot disk of a Compute Engine instance\nthat has a service account attached require the `iam.serviceAccounts.actAs` permission\non the service account. In the following list, the boot disk of such an instance is\nreferred to as the *source disk*.\n\n* Creating a standard or archive snapshot of the source disk, including application\n  consistent snapshots\n* Cloning the source disk\n* Creating a machine image of the instance\n* Creating a custom image of the source disk\n* Starting asynchronous replication of the source disk to another region\n* Creating a new disk when you create an instance, if the new disk is\n  created from an instant snapshot of the source disk\n\nIf you have already have the Compute Instance Admin (v1)\n(`roles/compute.instanceAdmin.v1`) role and the Service Account User (v1)\n(`roles/iam.serviceAccountUser`) role on the project, no action is required.\n\nOtherwise, ask your administrator to grant you the `iam.serviceAccounts.actAs`\npermission on the service account. For instructions, see\n[Manage access to other resources](https://docs.cloud.google.com/iam/docs/manage-access-other-resources).",
+        "summary": {
+          "title": "New permissions for Compute Engine operations",
+          "summary": "Operations on Compute Engine instance boot disks now require the `iam.serviceAccounts.actAs` permission. This includes actions like creating snapshots, cloning disks, and creating machine images. If you have the Compute Instance Admin and Service Account User roles, no action is needed. Otherwise, contact your administrator to grant the necessary permission."
+        }
+      }
+    ],
     "2026-03-11": [
       {
         "kind": "Issue",

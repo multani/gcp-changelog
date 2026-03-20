@@ -192,6 +192,54 @@ Runtime sysctl changes:
 Updated cos-gpu-installer to v2.6.0.
 
 ---
+## 2026-03-07
+
+### Change
+
+
+
+### cos-125-19216-220-39
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.68](https://cos.googlesource.com/third_party/kernel/+/7eb31713b3fb44138b65643ab9d3037e22d29e47 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.220.39/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Fixed a kernel bug which could cause traffic drops after NIC resets.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.udp\_mem: 188034 250715 376068 -> 188034 250714 376068
+
+---
+## 2026-03-06
+
+### Change
+
+
+
+### cos-125-19216-220-38
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.68](https://cos.googlesource.com/third_party/kernel/+/7eb31713b3fb44138b65643ab9d3037e22d29e47 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.220.38/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-23100 in the Linux kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.udp\_mem: 188034 250715 376068 -> 188034 250714 376068
+
+---
 ## 2026-03-04
 
 ### Change

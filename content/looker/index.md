@@ -14,10 +14,6 @@ When enabled, the **Dashboard Tile Limits** preview feature lets admins set limi
 
 ### Feature
 
-Now available in preview, Gemini in Looker can automatically [generate Quick Start analyses for Explores](https://docs.cloud.google.com/looker/docs/gemini-quick-starts). This feature can be enabled by turning on the **AI-assisted Quick Starts** setting on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.
-
-### Feature
-
 Now available in preview, you can use Gemini in Looker to [assist you in writing Looker expressions](https://docs.cloud.google.com/looker/docs/gemini-expression-asst) for [table calculations](https://docs.cloud.google.com/looker/docs/table-calculations) and [custom fields](https://docs.cloud.google.com/looker/docs/custom-fields). This feature can be enabled by turning on the **Expression Assistant** setting on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.
 
 ### Feature
@@ -50,9 +46,9 @@ To enable Gemini in Looker assistance with searching content, you must also enab
 
 ### Feature
 
-Available in preview for Looker connections to Snowflake or Google BigQuery databases, Looker supports custom calendars, such as fiscal or retail calendars. The [custom calendar](https://docs.cloud.google.com/looker/docs/custom-calendars) feature lets your Looker developers create a LookML model of a custom calendar table in your database and then create [custom calendar dimension groups](https://docs.cloud.google.com/looker/docs/reference/param-field-dimension-group#custom_calendar_type) that use the custom calendar. Your end users can then create Explore queries using the custom calendar dimension timeframes.
+Now available in preview, Gemini in Looker can automatically [generate Quick Start analyses for Explores](https://docs.cloud.google.com/looker/docs/gemini-quick-starts). This feature can be enabled by turning on the **AI-assisted Quick Starts** setting on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.
 
-In addition, your LookML developers can create [period-over-period](https://docs.cloud.google.com/looker/docs/period-over-period) measures based on custom calendar dimension groups.
+**Note:** This feature is not yet available. This item was modified on March 19, 2026.
 
 ### Feature
 
@@ -85,6 +81,14 @@ The updated Looker Continuous Integration feature includes the following:
 
 * Your Looker admin no longer needs to manually add CI users. After your Looker instance is [enabled for CI](https://docs.cloud.google.com/looker/docs/continuous-integration#enable-ci) (or once your instance is updated to the new CI, if your instance was already enabled for CI), Looker CI users are created automatically. Looker CI users are created in the [Looker CI Users user group](https://docs.cloud.google.com/looker/docs/admin-panel-users-groups#ci-users) with the [Looker CI Users role](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#ci-users). A Looker admin can view the Looker CI users from the **Service Accounts** tab of the [**Users**](https://docs.cloud.google.com/looker/docs/admin-panel-users-users) Admin page.
 * A new [**GitHub** table](https://docs.cloud.google.com/looker/docs/admin-panel-platform-ci#github-table) on the **Continuous Integration** Admin page lists the GitHub repositories that have been granted access to the Looker CI GitHub application, which enables Looker CI to [be triggered automatically when pull requests are created](https://docs.cloud.google.com/looker/docs/ci-create-suite#triggers).
+
+### Feature
+
+Available in preview, you can now use custom calendars, such as fiscal or retail calendars, for [dialects that support it](https://docs.cloud.google.com/looker/docs/custom-calendars#supported_dialects_for_custom_calendars). The [custom calendar](https://docs.cloud.google.com/looker/docs/custom-calendars) feature lets your Looker developers create a LookML model of a custom calendar table in your database and then create [custom calendar dimension groups](https://docs.cloud.google.com/looker/docs/reference/param-field-dimension-group#custom_calendar_type) that use the custom calendar. Your end users can then create Explore queries using the custom calendar dimension timeframes.
+
+In addition, your LookML developers can create [period-over-period](https://docs.cloud.google.com/looker/docs/period-over-period) measures based on custom calendar dimension groups.
+
+**Note:** This item was updated on March 19, 2026.
 
 ### Feature
 

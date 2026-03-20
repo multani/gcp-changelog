@@ -1,5 +1,47 @@
 # Cloud Trace
 
+## 2026-03-19
+
+### Feature
+
+Google Cloud Observability has expanded the supported locations for observability buckets,
+which store your trace data, to include the following:
+
+* africa-south1
+* asia-east1
+* asia-east2
+* asia-northeast2
+* asia-northeast3
+* asia-south1
+* asia-south2
+* asia-southeast2
+* asia-southeast3
+* australia-southeast2
+* europe-north2
+* europe-west1
+* europe-west4
+* europe-west6
+* europe-west8
+* me-central1
+* northamerica-northeast2
+* northamerica-south1
+* southamerica-west1
+* us-east5
+* us-south1
+* us-west2
+* us-west3
+
+For a list of supported locations, see
+[Locations for observability buckets](https://docs.cloud.google.com/stackdriver/docs/observability/observability-bucket-locations).
+
+### Feature
+
+You can create alerting policies that monitor the results of your SQL
+queries. For more information, see
+[Monitor your SQL query results with an alerting policy](https://docs.cloud.google.com/trace/docs/sql-in-alerting).
+This feature is in public preview.
+
+---
 ## 2026-03-09
 
 ### Change

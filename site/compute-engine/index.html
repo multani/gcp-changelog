@@ -2376,6 +2376,29 @@
 
 
 <h1 id="compute-engine">Compute Engine</h1>
+<h2 id="2026-03-19">2026-03-19</h2>
+<h3 id="breaking">Breaking</h3>
+<p><strong>Changed</strong>: The following operations on the boot disk of a Compute Engine instance
+that has a service account attached require the <code>iam.serviceAccounts.actAs</code> permission
+on the service account. In the following list, the boot disk of such an instance is
+referred to as the <em>source disk</em>.</p>
+<ul>
+<li>Creating a standard or archive snapshot of the source disk, including application
+  consistent snapshots</li>
+<li>Cloning the source disk</li>
+<li>Creating a machine image of the instance</li>
+<li>Creating a custom image of the source disk</li>
+<li>Starting asynchronous replication of the source disk to another region</li>
+<li>Creating a new disk when you create an instance, if the new disk is
+  created from an instant snapshot of the source disk</li>
+</ul>
+<p>If you have already have the Compute Instance Admin (v1)
+(<code>roles/compute.instanceAdmin.v1</code>) role and the Service Account User (v1)
+(<code>roles/iam.serviceAccountUser</code>) role on the project, no action is required.</p>
+<p>Otherwise, ask your administrator to grant you the <code>iam.serviceAccounts.actAs</code>
+permission on the service account. For instructions, see
+<a href="https://docs.cloud.google.com/iam/docs/manage-access-other-resources">Manage access to other resources</a>.</p>
+<hr />
 <h2 id="2026-03-11">2026-03-11</h2>
 <h3 id="issue">Issue</h3>
 <p>To address high-severity kernel vulnerabilities (including <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-21756">CVE-2025-21756</a> and <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-38052">CVE-2025-38052</a>) in Rocky Linux 8 and 9, updates are available for the Compute Engine images maintained by <a href="https://ciq.com/products/rocky-linux/">CIQ</a>. If your VM instances use images dated before September 2025 (version <code>v20250912</code>), you must take action to ensure you continue to receive security patches.</p>
@@ -3247,6 +3270,9 @@ in, see
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#compute-engine">Compute Engine</a></li>
+          <li class="nav-item">
+            <a href="#2026-03-19" class="nav-link">2026-03-19</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-03-11" class="nav-link">2026-03-11</a>
           </li>

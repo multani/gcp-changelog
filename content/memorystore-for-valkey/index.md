@@ -11,6 +11,10 @@ You can use the Google Cloud console to [find and set maintenance windows](https
 
 ### Feature
 
+The [simulate maintenance event](https://docs.cloud.google.com/memorystore/docs/valkey/simulate-maintenance) feature for Memorystore for Valkey is [Generally Available](https://docs.cloud.google.com/products#product-launch-stages).
+
+### Feature
+
 You can now deploy instances in the `asia-southeast3` (Bangkok), `europe-north2`
 (Stockholm), and `northamerica-south1` (Mexico)
 [regions](https://docs.cloud.google.com/memorystore/docs/valkey/locations).

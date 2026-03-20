@@ -2,9 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Compute Engine</title>
   <subtitle>Changelog for Google Cloud product: Compute Engine</subtitle>
-  <updated>2026-03-11T00:00:00+00:00</updated>
+  <updated>2026-03-19T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:compute-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/compute-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2026-03-19:breaking:0</id>
+    <published>2026-03-19T00:00:00+00:00</published>
+    <updated>2026-03-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Changed</strong>: The following operations on the boot disk of a Compute Engine instance
+that has a service account attached require the <code>iam.serviceAccounts.actAs</code> permission
+on the service account. In the following list, the boot disk of such an instance is
+referred to as the <em>source disk</em>.</p>
+<ul>
+<li>Creating a standard or archive snapshot of the source disk, including application
+  consistent snapshots</li>
+<li>Cloning the source disk</li>
+<li>Creating a machine image of the instance</li>
+<li>Creating a custom image of the source disk</li>
+<li>Starting asynchronous replication of the source disk to another region</li>
+<li>Creating a new disk when you create an instance, if the new disk is
+  created from an instant snapshot of the source disk</li>
+</ul>
+<p>If you have already have the Compute Instance Admin (v1)
+(<code>roles/compute.instanceAdmin.v1</code>) role and the Service Account User (v1)
+(<code>roles/iam.serviceAccountUser</code>) role on the project, no action is required.</p>
+<p>Otherwise, ask your administrator to grant you the <code>iam.serviceAccounts.actAs</code>
+permission on the service account. For instructions, see
+<a href="https://docs.cloud.google.com/iam/docs/manage-access-other-resources">Manage access to other resources</a>.</p>]]></content>
+    <summary>Operations on Compute Engine instance boot disks now require the `iam.serviceAccounts.actAs` permission. This includes actions like creating snapshots, cloning disks, and creating machine images. If you have the Compute Instance Admin and Service Account User roles, no action is needed. Otherwise, contact your administrator to grant the necessary permission.</summary>
+    <title>Breaking: New permissions for Compute Engine operations</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

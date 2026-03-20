@@ -9,6 +9,19 @@ for the following integration:
 
 * [CX Agent Studio](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_cx_agent_studio)
 
+### Feature
+
+**VPC Service Controls feature (Status: [Preview](https://cloud.google.com/products#product-launch-stages)):**
+VPC Service Controls supports the following identities in ingress and egress
+rules to allow access to resources protected by a service perimeter:
+
+* Agent identities
+* SPIFFE formats for third-party workforce and workload identities
+
+This feature is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [Supported identities for ingress and egress rules](https://docs.cloud.google.com/vpc-service-controls/docs/supported-identities).
+
 ---
 ## 2026-03-10
 

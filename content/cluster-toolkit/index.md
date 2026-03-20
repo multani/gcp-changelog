@@ -1,5 +1,28 @@
 # Cluster Toolkit
 
+## 2026-03-13
+
+### Feature
+
+Cluster Toolkit version v1.84.0 is available. This release adds disk
+type validation in specific zones, updates GKE versioning for GPU
+direct configurations, and fixes an issue with NCCL test scripts on A3 High
+instances. For details, see the [Release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5348).
+
+---
+## 2026-03-11
+
+### Feature
+
+Cluster Toolkit version v1.83.0 is available. This release introduces
+early conditional and required validations, adds support for A4X-Max Bare Metal
+on GKE and Slurm, and enables Dynamic Workload Scheduler Queued Provisioning
+for TPU v6e and 7x. It also includes several module migrations to Helm and pins
+Terraform to version 1.12.2. For details, see the [Release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5312).
+
+---
 ## 2026-02-12
 
 ### Feature

@@ -1,5 +1,68 @@
 # Cloud Composer
 
+## 2026-03-17
+
+### Change
+
+New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)
+are available in Cloud Composer 3:
+
+* [composer-3-airflow-3.1.7-build.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-7-build-1)
+* [composer-3-airflow-2.10.5-build.30](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-30) (default)
+* [composer-3-airflow-2.9.3-build.50](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-50)
+
+### Deprecated
+
+The following Cloud Composer versions and builds have reached their
+[end of support period](https://docs.cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):
+composer-3-airflow-2.9.3-build.18, composer-3-airflow-2.9.3-build.17, composer-2.11.5-\*, and composer-2.11.4-\*.
+
+### Change
+
+*(Airflow 3.1.7)* Starting from version composer-3-airflow-3.1.7-build.1,
+Airflow workers no longer have direct access to the Airflow database of your
+environment.
+
+This change follows the architectural and security improvements
+introduced in the community version of Airflow 3.0. For more information about
+an alternative way to export and access the data stored in the Airflow
+database, see
+[Access the Airflow database](https://docs.cloud.google.com/composer/docs/composer-3/access-airflow-database#export-to-cloudsql).
+
+This change is gradually rolled out to all regions supported by
+Cloud Composer 3.
+
+### Announcement
+
+A new Cloud Composer release has started on **March 17, 2026**. Get ready
+for upcoming changes and features as we roll out the new release to all regions.
+This release is in progress at the moment. Listed changes and features might
+not be available in some regions yet.
+
+### Change
+
+*(Airflow 3.1.7 in Cloud Composer 3)*
+The `apache-airflow-providers-cncf-kubernetes` package was
+[upgraded to version 10.13.0](https://airflow.apache.org/docs/apache-airflow-providers-cncf-kubernetes/stable/changelog.html).
+For changes in other packages, see the
+[preinstalled packages changelog](https://cloud.google.com/composer/docs/versions-packages).
+
+### Change
+
+*(Airflow 3.1.7 in Cloud Composer 3)*
+The `apache-airflow-providers-google` package was upgraded to version 20.0.0.
+For more information about changes, see the
+[apache-airflow-providers-google changelog](https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html).
+
+### Change
+
+New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)
+are available in Cloud Composer 2:
+
+* [composer-2.16.7-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-7-airflow-2-10-5) (default)
+* [composer-2.16.7-airflow-2.9.3](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-7-airflow-2-9-3)
+
+---
 ## 2026-03-10
 
 ### Announcement

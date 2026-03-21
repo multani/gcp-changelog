@@ -1,5 +1,14 @@
 # BigQuery
 
+## 2026-03-19
+
+### Feature
+
+You can now use a [custom organization policy](https://docs.cloud.google.com/bigquery/docs/reservation-custom-constraints)
+to allow or deny specific operations on routines. This feature is in
+[preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-03-17
 
 ### Feature
@@ -74,7 +83,7 @@ Updates to [conversational analytics](https://docs.cloud.google.com/bigquery/doc
   conversational analytics agent are now labeled in [BigQuery Job History](https://docs.cloud.google.com/bigquery/docs/managing-jobs)
   in the Google Cloud Console. You can identify, filter, and analyze the jobs
   run by the conversational analytics agent by referencing labels similar to
-  `{‘ca-bq-job’: ‘true’}`. These labels can help with the following tasks:
+  `{'ca-bq-job': 'true'}`. These labels can help with the following tasks:
   + Monitor and attribute cost.
   + Audit agent activity.
   + Analyze agent-generated query performance.

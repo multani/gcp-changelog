@@ -1,5 +1,17 @@
 # Looker
 
+## 2026-03-20
+
+### Feature
+
+A new version of the Looker mobile app is available for iOS (version 2.2.0) and Android (version 2.0.88). The mobile app now includes the following features and improvements:
+
+* The app supports tabbed dashboards.
+* You can open dashboard links directly in the app.
+* Load time has been improved.
+* Dashboard opening zoom bugs and other issues have been fixed.
+
+---
 ## 2026-03-17
 
 ### Feature

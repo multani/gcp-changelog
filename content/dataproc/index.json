@@ -1,21 +1,31 @@
 {
   "name": "Dataproc",
   "entries": {
-    "2026-03-17": [
+    "2026-03-20": [
       {
         "kind": "Announcement",
-        "content": "New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions):\n\n* 2.1.111-debian11, 2.1.111-rocky8, 2.1.111-ubuntu20, 2.1.111-ubuntu20-arm\n* 2.2.79-debian12, 2.2.79-rocky9, 2.2.79-ubuntu22, 2.2.79-ubuntu22-arm\n* 2.3.26-debian12, 2.3.26-ml-ubuntu22, 2.3.26-rocky9, 2.3.26-ubuntu22, 2.3.26-ubuntu22-arm",
+        "content": "New [Serverless for Apache Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):\n\n* 1.2.76\n* 2.2.76\n* 2.3.29\n* 3.0.12",
         "summary": {
-          "title": "Dataproc image versions updated",
-          "summary": "New subminor image versions for Dataproc on Compute Engine are now available. These updates include the latest patch releases for various operating system distributions, ensuring you have access to the most current and secure components for your data processing workloads."
+          "title": "New Apache Spark runtime versions for Dataproc Serverless",
+          "summary": "We're releasing new runtime versions for Serverless Apache Spark. These updates include versions 1.2.76, 2.2.76, 2.3.29, and 3.0.12, providing enhanced features and stability for your Spark workloads."
         }
-      },
+      }
+    ],
+    "2026-03-18": [
       {
         "kind": "Fixed",
         "content": "* Fixed CVEs CVE-2025-58057, CVE-2025-53864, CVE-2025-68161, CVE-2025-48924, and CVE-2025-33042.\n* Upgraded Dataproc Metastore Proxy to v0.0.78 to fix CVEs.\n* Default JDK is set to Temurin JDK - 11.0.30 in all `2.1`, `2.2` and `2.3` images.",
         "summary": {
-          "title": "Security fixes applied",
-          "summary": "Several common vulnerabilities and exposures (CVEs) have been fixed in this release by upgrading the Dataproc Metastore Proxy. Additionally, the default JDK has been updated to Temurin JDK 11.0.30 across multiple image versions."
+          "title": "Security fixes and dependency upgrades",
+          "summary": "This release addresses several CVEs by upgrading the Dataproc Metastore Proxy and sets Temurin JDK 11.0.30 as the default JDK for 2.1, 2.2, and 2.3 images."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions):\n\n* 2.1.111-debian11, 2.1.111-rocky8, 2.1.111-ubuntu20, 2.1.111-ubuntu20-arm\n* 2.2.79-debian12, 2.2.79-rocky9, 2.2.79-ubuntu22, 2.2.79-ubuntu22-arm\n* 2.3.26-debian12, 2.3.26-ml-ubuntu22, 2.3.26-rocky9, 2.3.26-ubuntu22, 2.3.26-ubuntu22-arm",
+        "summary": {
+          "title": "Dataproc image version updates",
+          "summary": "New Dataproc image versions are now available, including updates for the 2.1, 2.2, and 2.3 lines. These updates provide the latest features and security patches for your Dataproc clusters."
         }
       }
     ],
@@ -128,6 +138,24 @@
         "summary": {
           "title": "New Apache Spark runtime versions available",
           "summary": "We are announcing the release of new serverless for Apache Spark runtime versions: 1.2.71, 2.2.71, 2.3.24, and 3.0.8. These updates provide the latest features and improvements for your Spark workloads."
+        }
+      }
+    ],
+    "2026-03-17": [
+      {
+        "kind": "Announcement",
+        "content": "New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions):\n\n* 2.1.111-debian11, 2.1.111-rocky8, 2.1.111-ubuntu20, 2.1.111-ubuntu20-arm\n* 2.2.79-debian12, 2.2.79-rocky9, 2.2.79-ubuntu22, 2.2.79-ubuntu22-arm\n* 2.3.26-debian12, 2.3.26-ml-ubuntu22, 2.3.26-rocky9, 2.3.26-ubuntu22, 2.3.26-ubuntu22-arm",
+        "summary": {
+          "title": "Dataproc image versions updated",
+          "summary": "New subminor image versions for Dataproc on Compute Engine are now available. These updates include the latest patch releases for various operating system distributions, ensuring you have access to the most current and secure components for your data processing workloads."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "* Fixed CVEs CVE-2025-58057, CVE-2025-53864, CVE-2025-68161, CVE-2025-48924, and CVE-2025-33042.\n* Upgraded Dataproc Metastore Proxy to v0.0.78 to fix CVEs.\n* Default JDK is set to Temurin JDK - 11.0.30 in all `2.1`, `2.2` and `2.3` images.",
+        "summary": {
+          "title": "Security fixes applied",
+          "summary": "Several common vulnerabilities and exposures (CVEs) have been fixed in this release by upgrading the Dataproc Metastore Proxy. Additionally, the default JDK has been updated to Temurin JDK 11.0.30 across multiple image versions."
         }
       }
     ],

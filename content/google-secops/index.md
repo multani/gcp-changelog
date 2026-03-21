@@ -1,5 +1,28 @@
 # Google SecOps
 
+## 2026-03-20
+
+### Feature
+
+**View Triage and Investigation Agent (TIN) results in the Case Summary**
+
+This feature is currently in Preview and is part of a gradual rollout.
+
+You can now view TIN results and verdict summaries directly within the **Case Summary** view. This integration provides real-time progress updates and automated verdicts for true or false positives without leaving the case.
+
+For more information, see [Use Triage and Investigation Agent (TIN) to investigate alerts](https://docs.cloud.google.com/chronicle/docs/secops/triage-investigation-agent#manual_investigations).
+
+### Feature
+
+**Agentic Automation**
+
+This feature is in Public Preview.
+
+You can now use **Agentic Automation** to embed AI Agents directly into your workflows. This feature lets you integrate AI-driven capabilities into your existing playbooks while staying in charge of critical actions by combining agents with deterministic automation steps.
+
+For more information, see [Agentic Automation](https://docs.cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/agentic-automation).
+
+---
 ## 2026-03-17
 
 ### Announcement

@@ -1,5 +1,22 @@
 # Spanner
 
+## 2026-03-19
+
+### Feature
+
+Spanner now offers [AI functions](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/ml-functions),
+as a part of machine learning functions, that help you perform semantic
+operations using Large Language Models (LLMs) in SQL to classify, evaluate, and
+rank your data:
+
+* [`AI.CLASSIFY`](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/ml-functions#aiclassify):
+  Classify a natural language input into user-defined categories.
+* [`AI.IF`](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/ml-functions#aiif): Evaluate a
+  condition described in natural language.
+* [`AI.SCORE`](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/ml-functions#aiscore): Rate
+  natural language input and assign it a score.
+
+---
 ## 2026-03-10
 
 ### Feature

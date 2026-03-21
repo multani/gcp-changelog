@@ -1,5 +1,251 @@
 # Container Optimized OS
 
+## 2026-03-17
+
+### Change
+
+
+
+### cos-beta-129-19506-0-66
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.67](https://cos.googlesource.com/third_party/kernel/+/e2ad9be2a74b62aaf49320d42f7a9ca47132ad5e ) | v27.5.1 | v2.2.2 | [See List](https://storage.googleapis.com/cos-tools/19506.0.66/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+
+
+### cos-dev-133-19619-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.76](https://cos.googlesource.com/third_party/kernel/+/8f01bd7cad431636ba9b859cd3fb0f169e55a58c ) | v27.5.1 | v2.2.1 | [See List](https://storage.googleapis.com/cos-tools/19619.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Updated cos-gpu-installer to v2.6.0.
+
+### Change
+
+Upgraded dev-libs/glib to v2.86.3. This fixes CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.
+
+### Security
+
+Fixed CVE-2026-23229 in the Linux kernel.
+
+### Fixed
+
+Upgraded dev-util/gdbus-codegen to v2.86.3.
+
+### Change
+
+Upgraded CASFS to v0.1.2.
+
+### Security
+
+Fixed a packet header clobbering issue in the IDPF driver occurring when SWIOTLB and header split are enabled.
+
+### Change
+
+Upgraded app-containers/containerd to v2.2.2.
+
+### Fixed
+
+Upgraded app-admin/fluent-bit to v4.2.3.1.
+
+### Breaking
+
+`/run` is now mounted with the `noexec` option.
+
+### Fixed
+
+Fixed performance and efficiency issues in TCPX through optimized netmem handling and scatter-gather list coalescing for large memory mappings.
+
+### Feature
+
+Added support for larger ring sizes for the GVNIC driver in DQO-QPL mode.
+
+### Security
+
+Fixed KCTF-71e99ee in the Linux kernel.
+
+### Breaking
+
+`/dev/hugepages` is now mounted with the `noexec` option.
+
+### Fixed
+
+Upgraded the galog version to v0.0.0-20250924170816-9dbf105986f4 in google-guest-agent to fix an issue with high CPU consumption.
+
+### Security
+
+Fixed CVE-2026-23240 in the Linux kernel.
+
+### Change
+
+Added support for the Lustre 2.14.0\_p246 drivers.
+
+### Change
+
+Fixed the "CrackArmor" vulnerability in the Linux kernel.
+
+### Fixed
+
+Updated cos-gpu-installer to v2.6.1.
+
+### Fixed
+
+Enabled buffer overflow detection for kernel str/mem functions.
+
+### Fixed
+
+Upgraded app-admin/sosreport to v4.11.0.
+
+### Fixed
+
+Fixed a kernel bug which could cause traffic drops after NIC resets.
+
+### Security
+
+Fixed CVE-2026-23230 in the Linux kernel.
+
+### Fixed
+
+Fixed a kernel bug which could cause traffic drops after NIC resets.
+
+### Fixed
+
+Upgraded dev-utils/gdbus-codegen to v2.86.3.
+
+### Fixed
+
+Upgraded the galog version to v0.0.0-20250924170816-9dbf105986f4 in google-guest-agent to fix an issue with high CPU consumption.
+
+### Feature
+
+Added support for larger ring sizes for the GVNIC driver in DQO-QPL mode.
+
+### Feature
+
+Switched to using systemd-resolved stub resolver by default, which fixes DNS caching issues.
+
+### Fixed
+
+Upgraded net-misc/socat to v1.8.1.1.
+
+### Fixed
+
+Updated cos-gpu-installer to v2.6.1.
+
+### Change
+
+Updated cos-gpu-installer to v2.6.0.
+
+### Fixed
+
+Upgraded sys-apps/acl to v2.3.2-r3.
+
+### Change
+
+Upgraded CASFS to v0.1.2.
+
+### Fixed
+
+Upgraded dev-util/gn to v2331.
+
+### Fixed
+
+Upgraded sys-apps/file to v5.47.
+
+### Breaking
+
+`/dev/hugepages` is now mounted with the `noexec` option.
+
+### Change
+
+Added support for the Lustre 2.14.0\_p246 drivers.
+
+### Security
+
+Upgraded dev-libs/glib to v2.86.3. This fixes CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.
+
+### Change
+
+Fixed the "CrackArmor" vulnerability in the Linux kernel.
+
+### Change
+
+Updated the Linux kernel to v6.12.76.
+
+### Fixed
+
+Upgraded app-admin/sosreport to v4.11.0.
+
+### Change
+
+
+
+### cos-121-18867-381-35
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.122](https://cos.googlesource.com/third_party/kernel/+/c11b19e08b7dec3a166539d526b69fca5d0056e1 ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.381.35/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-38162 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38201 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23102 in the Linux kernel.
+
+### Change
+
+
+
+### cos-117-18613-534-36
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.123](https://cos.googlesource.com/third_party/kernel/+/530d6a57e6fea7de26a9600dd43f981ade00d33e ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.534.36/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-38162 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38162 in the Linux kernel.
+
+### Change
+
+
+
+### cos-113-18244-582-42
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.161](https://cos.googlesource.com/third_party/kernel/+/debd483161918f36c7d50ad90146fafe073f6a8f ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.582.42/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-23054 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-71e99ee in the Linux kernel.
+
+---
 ## 2026-03-14
 
 ### Change

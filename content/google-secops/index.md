@@ -23,6 +23,19 @@ You can now use **Agentic Automation** to embed AI Agents directly into your wor
 For more information, see [Agentic Automation](https://docs.cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/agentic-automation).
 
 ---
+## 2026-03-18
+
+### Feature
+
+**Bindplane features for Google SecOps general availability**
+
+The following [Bindplane](https://docs.cloud.google.com/chronicle/docs/ingestion/use-bindplane-agent) features that relate to Google SecOps are now in General Availability (GA):
+
+* **Single sign-on with custom claims role mapping**: gives a production-ready way to manage Bindplane access through your identity provider. For more information, see [Single Sign-On (Cloud)](https://docs.bindplane.com/feature-guides/saas-single-sign-on).
+* **SecOps parser validator**: validates that your logs will be parsed correctly by Google SecOps directly from the snapshot view. Get immediate feedback on parsed events or validation errors without waiting for data to appear in Google SecOps. For more information, see [Validate SecOps Parser](https://docs.bindplane.com/feature-guides/pipeline-intelligence#validate-secops-parser).
+* **Forwarder migration tool**: provides production-ready paths to migrate existing forwarder configurations into Bindplane-managed pipelines. For more information, see [Migrate Configurations](https://docs.bindplane.com/feature-guides/pipeline-intelligence#migrate-configurations).
+
+---
 ## 2026-03-17
 
 ### Announcement

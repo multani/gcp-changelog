@@ -1,5 +1,16 @@
 # Cloud Deploy
 
+## 2026-03-23
+
+### Feature
+
+You can now [analyze the performance of your deployed applications](https://docs.cloud.google.com/deploy/docs/verify-deployment)
+using the monitoring platform of your choice and
+[automatically trigger actions](https://docs.cloud.google.com/deploy/docs/automation-rules)
+such as rollbacks. This feature is now available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-03-02
 
 ### Feature

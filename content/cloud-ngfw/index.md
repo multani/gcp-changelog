@@ -1,10 +1,24 @@
 # Cloud NGFW
 
+## 2026-03-23
+
+### Feature
+
+Secure tags with a `purpose-data` attribute specifying a VPC network or an
+organization now support VPC networks that are connected using VPC Network
+Peering. For more information, see
+[Secure tags for firewalls](https://docs.cloud.google.com/firewall/docs/tags-firewalls-overview).
+This feature is available in **General Availability**.
+
+---
 ## 2026-02-25
 
 ### Feature
 
-You can use network contexts to meet your security goals by using fewer firewall policy rules more efficiently. For more information, see [Network contexts](https://docs.cloud.google.com/firewall/docs/understand-network-contexts). This feature is available in **General Availability**.
+You can use network contexts to meet your security goals by using fewer
+firewall policy rules more efficiently. For more information, see
+[Network contexts](https://docs.cloud.google.com/firewall/docs/understand-network-contexts). This feature
+is available in **General Availability**.
 
 ---
 ## 2026-02-19

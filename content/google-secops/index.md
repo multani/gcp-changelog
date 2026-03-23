@@ -1,5 +1,79 @@
 # Google SecOps
 
+## 2026-03-23
+
+### Announcement
+
+**New parser documentation now available**
+
+New parser documentation is available to help you ingest and normalize logs from the following sources:
+
+* [Collect Cisco Umbrella Cloud Firewall logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/umbrella-firewall)
+* [Collect Cisco Umbrella IP logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/umbrella-ip)
+* [Collect Claroty xDome for Healthcare logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/medigate-iot)
+* [Collect CloudM logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/cloudm)
+* [Collect Digital Guardian EDR logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/digitalguardian-edr)
+* [Collect DNSFilter logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/dnsfilter)
+* [Collect Dope Security SWG logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/dope-swg)
+* [Collect Druva Backup logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/druva-backup)
+* [Collect EfficientIP DDI logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/efficientip-ddi)
+* [Collect Elastic Defend logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/elastic-defend)
+* [Collect Elastic Windows Event Log Beats logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/elastic-winlogbeat)
+* [Collect Ergon Informatik Airlock IAM logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ergon-informatik-airlock-iam)
+* [Collect ESET Threat Intelligence logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/eset-ioc)
+* [Collect F5 Distributed Cloud Services logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/f5-dcs)
+* [Collect F5 Shape logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/f5-shape)
+* [Collect F5 Silverline logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/f5-silverline)
+* [Collect Falco IDS logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/falco-ids)
+* [Collect Fastly CDN logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fastly-cdn)
+* [Collect File Scanning Framework logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/file-scanning-framework)
+* [Collect FireEye ETP logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fireeye-etp)
+* [Collect FireEye HX Audit logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fireeye-hx-audit)
+* [Collect FireEye NX Audit logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fireeye-nx-audit)
+* [Collect Fivetran logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/fivetran)
+* [Collect Forcepoint Mail Relay logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/forcepoint-mail-relay)
+* [Collect GitGuardian Enterprise logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/gitguardian-enterprise)
+* [Collect Google Cloud Looker audit logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/looker-audit)
+* [Collect Guardicore Centra logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/guardicore-centra)
+* [Collect HCL BigFix logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hcl-bigfix)
+* [Collect HID DigitalPersona logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/hid-digitalpersona)
+* [Collect IBM AS/400 logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ibm-as400)
+* [Collect IBM Informix logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/informix)
+* [Collect IBM MaaS360 logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ibm-maas360)
+* [Collect IBM Mainframe Storage logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ibm-mainframe-storage)
+* [Collect IBM OpenPages logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ibm-openpages)
+* [Collect IBM Security Access Manager logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ibm-sam)
+* [Collect IBM Security Identity Manager logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ibm-sim)
+* [Collect iBoss Web Proxy logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/iboss-webproxy)
+* [Collect Intel 471 Watcher Alerts logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/intel471-watcher-alerts)
+* [Collect Intel Endpoint Management Assistant logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/intel-ema)
+* [Collect IONIX Attack Surface Management logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ionix)
+* [Collect Island Enterprise Browser logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/island-browser)
+* [Collect Jamf Protect Telemetry V2 logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/jamf-telemetry-v2)
+* [Collect Keycloak logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/keycloak)
+* [Collect Kong Gateway logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/kong-gateway)
+* [Collect LenelS2 OnGuard logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/lenel-onguard)
+* [Collect Lookout Mobile Endpoint Security logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/lookout-mobile-endpoint-security)
+* [Collect Lucid audit logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/lucid)
+* [Collect ManageEngine Exchange Reporter Plus logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/manage-engine-reporter-plus)
+* [Collect Mandiant Threat Intelligence Custom IOC logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/mandiant-custom-ioc)
+* [Collect Menlo Security Isolation Platform (MSIP) logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/menlo-security)
+* [Collect Metabase logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/metabase)
+* [Collect Microsoft Defender for Endpoint on iOS logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/microsoft-defender-endpoint-ios)
+* [Collect Microsoft Dynamics 365 User Activity logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/microsoft-dynamics-365)
+* [Collect Microsoft IAS / Network Policy Server (NPS) logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/microsoft-ias)
+* [Collect Microsoft Network Policy Server (NPS) logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/microsoft-nps)
+* [Collect OAuth2 Proxy logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/kubernetes-auth-proxy)
+* [Collect Office 365 Message Trace logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/office-365-messagetrace)
+* [Collect Progress MOVEit Transfer logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ipswitch-moveit-transfer)
+* [Collect Netscout Arbor Sightline logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/arbor-sightline)
+* [Collect Skyhigh Secure Web Gateway (On-Premises) logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/mcafee-web-protection)
+* [Collect ThreatDown EDR logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/malwarebytes-edr)
+* [Collect Trellix Endpoint Security (HX) alert logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/trellix-hx-alerts)
+* [Collect Trellix Endpoint Security (HX) audit event logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/trellix-hx-audit)
+* [Collect Trellix Endpoint Security (HX) host inventory logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/trellix-hx-hosts)
+
+---
 ## 2026-03-20
 
 ### Feature

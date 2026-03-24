@@ -1,6 +1,24 @@
 {
   "name": "Google Distributed Cloud (software only) for VMware",
   "entries": {
+    "2026-03-23": [
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.33.600-gke.39:\n\n* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).\n* Fixed an issue where the node-problem-detector was incorrectly deployed onto\n  non-Advanced (V1) VMware clusters, causing the containerd runtime to\n  continuously restart on affected nodes, leading to ETCD/CRI failures and\n  unsuccessful cluster upgrades.\n* Fixed an issue where setting the deprecated stackdriver.enableVPC field to\n  true in a cluster configuration file would block upgrades to an Advanced\n  Cluster. The stackdriver.enableVPC field has been deprecated and its setting is\n  now ignored during the upgrade validation process.\n* Fixes an issue where Advanced Clusters incorrectly deployed the node problem\n  detector onto non-Advanced clusters, which caused containerd to continuously\n  restart and led to cluster upgrade failures.\n* Fixed an issue where retrying the `gkectl upgrade admin` command after a\n  previous failure could fail with \"AlreadyExists\" errors in the bootstrap cluster.\n* Fixed an issue where cluster creation or upgrade failed if the proxy or\n  noProxy configuration fields contained extraneous whitespaces. These spaces\n  interfered with internal command-line argument parsing, causing the control\n  plane load balancer initialization to fail.\n* Fixed an issue where the system certificate pool was ignored when a custom CA\n  certificate was configured for a registry mirror.",
+        "summary": {
+          "title": "Bug Fixes in Release 1.33.600-gke.39",
+          "summary": "This release addresses multiple critical issues, including security vulnerabilities and problems affecting cluster upgrades and creation. Key fixes involve resolving node restart loops caused by incorrect component deployment, preventing upgrade blockages due to deprecated configurations, and ensuring proper handling of proxy settings and custom CA certificates."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "Google Distributed Cloud (software only) for VMware 1.33.600-gke.39 is now available\nfor download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).\nGoogle Distributed Cloud 1.33.600-gke.39 runs on Kubernetes v1.33.5-gke.2200.\n\nIf you are using a third-party storage vendor, check the Google Distributed Cloud-ready\nstorage partners document to make sure the storage vendor has already passed the\nqualification for this release.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for use with GKE On-Prem API clients: the Google Cloud console, the\ngcloud CLI, and Terraform.",
+        "summary": {
+          "title": "New version of Distributed Cloud for VMware available",
+          "summary": "Google Distributed Cloud (software only) for VMware 1.33.600-gke.39 is now available for download. This release runs on Kubernetes v1.33.5-gke.2200. Check the storage partners document if you use third-party storage."
+        }
+      }
+    ],
     "2026-03-20": [
       {
         "kind": "Change",

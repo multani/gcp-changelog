@@ -12,6 +12,18 @@ project where either the source instance or the backup vault is located.
 
 For more information, see [Perform a cross-project PITR](https://docs.cloud.google.com/sql/docs/sqlserver/backup-recovery/pitr#perform_a_cross-project_pitr).
 
+### Change
+
+Point-in-time recovery (PITR) default enablement behavior has changed:
+
+* PITR is now enabled by default when you create a
+  [Cloud SQL Enterprise edition](https://docs.cloud.google.com/sql/docs/sqlserver/editions-intro)
+  instance in the Google Cloud console.
+* PITR is enabled by default when you create a [Cloud SQL Enterprise Plus edition](https://docs.cloud.google.com/sql/docs/sqlserver/editions-intro)
+  instance, regardless of the method used.
+
+For more information, see [Configure point-in-time recovery (PITR)](https://docs.cloud.google.com/sql/docs/sqlserver/backup-recovery/configure-pitr).
+
 ### Feature
 
 [Multi-region backup vaults for Cloud SQL enhanced backups](https://docs.cloud.google.com/backup-disaster-recovery/docs/concepts/backup-vault#multi-regions)

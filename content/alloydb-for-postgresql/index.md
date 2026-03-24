@@ -1,5 +1,15 @@
 # AlloyDB for PostgreSQL
 
+## 2026-03-20
+
+### Feature
+
+AlloyDB lets you monitor node-level metrics in Google Cloud console
+and Metrics Explorer to provide detailed troubleshooting guidance for read
+pools and to identify nodes causing performance regressions. For more
+information, see [System insights metrics reference](https://docs.cloud.google.com/alloydb/docs/reference/system-insights-metrics).
+
+---
 ## 2026-03-16
 
 ### Feature

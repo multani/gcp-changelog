@@ -2383,6 +2383,16 @@ backup and DR (<a href="https://cloud.google.com/products/#product-launch-stages
 <p>This feature lets you restore a Cloud SQL instance to a project other than the
 project where either the source instance or the backup vault is located.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/sqlserver/backup-recovery/pitr#perform_a_cross-project_pitr">Perform a cross-project PITR</a>.</p>
+<h3 id="change">Change</h3>
+<p>Point-in-time recovery (PITR) default enablement behavior has changed:</p>
+<ul>
+<li>PITR is now enabled by default when you create a
+  <a href="https://docs.cloud.google.com/sql/docs/sqlserver/editions-intro">Cloud SQL Enterprise edition</a>
+  instance in the Google Cloud console.</li>
+<li>PITR is enabled by default when you create a <a href="https://docs.cloud.google.com/sql/docs/sqlserver/editions-intro">Cloud SQL Enterprise Plus edition</a>
+  instance, regardless of the method used.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/sqlserver/backup-recovery/configure-pitr">Configure point-in-time recovery (PITR)</a>.</p>
 <h3 id="feature_1">Feature</h3>
 <p><a href="https://docs.cloud.google.com/backup-disaster-recovery/docs/concepts/backup-vault#multi-regions">Multi-region backup vaults for Cloud SQL enhanced backups</a>
 are generally available (GA).</p>
@@ -2407,7 +2417,7 @@ Cloud SQL for SQL Server (<a href="https://cloud.google.com/products/#product-la
 <a href="https://docs.cloud.google.com/sql/docs/sqlserver/troubleshoot-slow-queries">Troubleshoot slow queries with AI assistance</a>.</p>
 <hr />
 <h2 id="2026-02-18">2026-02-18</h2>
-<h3 id="change">Change</h3>
+<h3 id="change_1">Change</h3>
 <p>After March 17, 2026, when you enable the Cloud SQL Admin API
 (<code>sqladmin.googleapis.com</code>), the Cloud SQL remote MCP server is
 enabled automatically.</p>

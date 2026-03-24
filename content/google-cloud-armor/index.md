@@ -1,5 +1,27 @@
 # Google Cloud Armor
 
+## 2026-03-06
+
+### Security
+
+Security fixes and enhancements to Cloud Armor preconfigured WAF `canary`
+rulesets for v3.0. For more information, see [Tuning Google Cloud Armor WAF
+rules](https://docs.cloud.google.com/armor/docs/rule-tuning).
+
+The following rulesets have been updated:
+
+* `sqli-canary`
+* `xss-canary`
+* `lfi-canary`
+* `rfi-canary`
+* `rce-canary`
+* `methodenforcement-canary`
+* `scannerdetection-canary`
+* `protocolattack-canary`
+* `php-canary`
+* `sessionfixation-canary`
+
+---
 ## 2026-02-18
 
 ### Change

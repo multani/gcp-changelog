@@ -16,7 +16,7 @@ This update is available to all customers who have completed [Stage 1](https://d
 
 ### Announcement
 
-Stage 2 of the SOAR migration to Google Cloud has been extended from June 30th to September 30th, 2026.
+Stage 2 of the SOAR migration to Google Cloud deadline has been extended from June 30th to September 30th, 2026.
 
 ---
 ## 2026-03-15

@@ -1,5 +1,12 @@
 # Agent Assist
 
+## 2026-03-23
+
+### Feature
+
+Agent Assist offers [Gemini Enterprise for Customer Experience tools for AI coach](https://docs.cloud.google.com/agent-assist/docs/tool-integration-for-ai-coach) in GA. These tools enable virtual agents to connect with external systems to retrieve, update, format, or analyze information.
+
+---
 ## 2026-01-10
 
 ### Change

@@ -26,6 +26,16 @@ Otherwise, ask your administrator to grant you the `iam.serviceAccounts.actAs`
 permission on the service account. For instructions, see
 [Manage access to other resources](https://docs.cloud.google.com/iam/docs/manage-access-other-resources).
 
+### Feature
+
+**Generally available**: The maximum throughput for a Hyperdisk Balanced High
+Availability disk is increased to 2,400 MiB/s from 1,200 MiB/s.
+Hyperdisk Balanced High Availability provides high availability block storage for
+mission-critical workloads by synchronously replicating data between two zones
+within a region.
+
+For more information, see [Hyperdisk Balanced High Availability overview](https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-balanced-ha).
+
 ---
 ## 2026-03-11
 

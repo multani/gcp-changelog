@@ -1,5 +1,24 @@
 # Cloud Trace
 
+## 2026-03-24
+
+### Feature
+
+The Telemetry API supports trace ingestion of up to 2.4GB per minute for the
+following regions:
+
+* asia-east1, asia-northeast1, asia-southeast1, and asia-south1
+* europe-west1, europe-west2, europe-west3, and europe-west4
+* us-central1, us-east4, and us-west1.
+
+For all other regions, the Telemetry API supports trace ingestion of up to
+300 MB per minute.
+
+These regional byte-based quotas replace a global quota which limited the
+number of requests per minute. To learn more, see
+[Telemetry API limits and quotas](https://docs.cloud.google.com/trace/docs/quotas#telemetry-api-limits).
+
+---
 ## 2026-03-19
 
 ### Feature

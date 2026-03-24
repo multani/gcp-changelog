@@ -1,5 +1,12 @@
 # Cloud Storage
 
+## 2026-03-24
+
+### Announcement
+
+Anywhere Cache has been renamed to Rapid Cache.
+
+---
 ## 2026-03-12
 
 ### Change

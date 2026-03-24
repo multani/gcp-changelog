@@ -1,5 +1,16 @@
 # Cloud NGFW
 
+## 2026-03-24
+
+### Feature
+
+You can use the URL filtering service to filter your workload traffic by using
+domain and Server Name Indication (SNI) information available in the egress
+HTTP(S) messages. For more information, see
+[URL filtering service overview](https://docs.cloud.google.com/firewall/docs/about-url-filtering). This
+feature is available in **General Availability**.
+
+---
 ## 2026-03-23
 
 ### Feature

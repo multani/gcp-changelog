@@ -1,5 +1,14 @@
 # Cloud Monitoring
 
+## 2026-03-24
+
+### Feature
+
+The Telemetry API's supports up to 60,000 metric-ingestion requests per minute
+per region. The regional quota replaces the global quota. To learn more, see
+[Telemetry API quotas and limits for metric ingestion](https://docs.cloud.google.com/monitoring/quotas#telemetry-api-metric-limits).
+
+---
 ## 2026-03-09
 
 ### Feature

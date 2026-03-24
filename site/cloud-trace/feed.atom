@@ -2,9 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Trace</title>
   <subtitle>Changelog for Google Cloud product: Cloud Trace</subtitle>
-  <updated>2026-03-19T00:00:00+00:00</updated>
+  <updated>2026-03-24T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-trace</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-trace/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-trace:2026-03-24:feature:0</id>
+    <published>2026-03-24T00:00:00+00:00</published>
+    <updated>2026-03-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Telemetry API supports trace ingestion of up to 2.4GB per minute for the
+following regions:</p>
+<ul>
+<li>asia-east1, asia-northeast1, asia-southeast1, and asia-south1</li>
+<li>europe-west1, europe-west2, europe-west3, and europe-west4</li>
+<li>us-central1, us-east4, and us-west1.</li>
+</ul>
+<p>For all other regions, the Telemetry API supports trace ingestion of up to
+300 MB per minute.</p>
+<p>These regional byte-based quotas replace a global quota which limited the
+number of requests per minute. To learn more, see
+<a href="https://docs.cloud.google.com/trace/docs/quotas#telemetry-api-limits">Telemetry API limits and quotas</a>.</p>]]></content>
+    <summary>The Telemetry API now supports higher trace ingestion rates, with specific regional quotas replacing the previous global limit. This change aims to provide more flexibility and capacity for trace data processing across various regions.</summary>
+    <title>Feature: Telemetry API trace ingestion limits updated</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

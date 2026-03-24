@@ -1,5 +1,28 @@
 # BigQuery
 
+## 2026-03-23
+
+### Feature
+
+You can clean, transform, and enrich data from files in Cloud Storage and Google
+Drive in your BigQuery data preparations. For more information, see
+[Prepare data with Gemini](https://docs.cloud.google.com/bigquery/docs/data-prep-get-suggestions#open-data-prep-editor).
+This feature is [generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+### Feature
+
+The following functions are now
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA):
+
+* [`AI.EMBED`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-embed):
+  create embeddings from text or image data.
+* [`AI.SIMILARITY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-similarity):
+  compute the semantic similarity between pairs of text, pairs of images, or
+  across text and images.
+
+---
 ## 2026-03-19
 
 ### Feature

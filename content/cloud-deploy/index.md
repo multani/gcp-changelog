@@ -4,11 +4,20 @@
 
 ### Feature
 
-You can now [analyze the performance of your deployed applications](https://docs.cloud.google.com/deploy/docs/verify-deployment)
+You can now [analyze the performance of your deployed applications](https://docs.cloud.google.com/deploy/docs/analysis)
 using the monitoring platform of your choice and
 [automatically trigger actions](https://docs.cloud.google.com/deploy/docs/automation-rules)
-such as rollbacks. This feature is now available in
-[Preview](https://cloud.google.com/products#product-launch-stages).
+such as rollbacks. This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+You can now provide user-defined actions using [`tasks`](https://docs.cloud.google.com/deploy/docs/tasks).
+This includes [deploy hooks](https://docs.cloud.google.com/deploy/docs/hooks),
+[deployment verification](https://docs.cloud.google.com/deploy/docs/verify-deployment),
+[analysis](https://docs.cloud.google.com/deploy/docs/analysis), and [custom target types](https://docs.cloud.google.com/deploy/docs/custom-targets).
+This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages).
 
 ---
 ## 2026-03-02

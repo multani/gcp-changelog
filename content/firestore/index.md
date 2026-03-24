@@ -1,5 +1,26 @@
 # Firestore
 
+## 2026-03-23
+
+### Feature
+
+Regional and Multi-Regional endpoints for the Firestore API
+are now Generally Available ([GA](https://cloud.google.com/products#product-launch-stages)).
+You can use a Regional or a Multi-Regional endpoint to ensure that your
+application's requests are transmitted, stored and processed in the same region
+or multi-region as your database's location.
+
+To learn more, see the
+[Firestore regional endpoints](https://docs.cloud.google.com/firestore/native/docs/regional-endpoints)
+guide.
+
+You can also use
+[Private Service Connect regional endpoints](https://docs.cloud.google.com/vpc/docs/about-accessing-regional-google-apis-endpoints)
+and [Private Service Connect backends](https://docs.cloud.google.com/vpc/docs/private-service-connect-backends)
+to connect to the regional and the multi-regional endpoints of the
+Firestore API.
+
+---
 ## 2026-03-05
 
 ### Feature

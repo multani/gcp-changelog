@@ -1,15 +1,17 @@
 {
   "name": "Google Distributed Cloud (software only) for VMware",
   "entries": {
-    "2026-03-18": [
+    "2026-03-20": [
       {
-        "kind": "Announcement",
-        "content": "Google Distributed Cloud (software only) for VMware 1.34.200-gke.68 is now available\nfor download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).\nGoogle Distributed Cloud 1.34.200-gke.68 runs on Kubernetes v1.34.3-gke.400.\n\nIf you are using a third-party storage vendor, check the Google Distributed Cloud-ready\nstorage partners document to make sure the storage vendor has already passed the\nqualification for this release.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for use with GKE On-Prem API clients: the Google Cloud console, the\ngcloud CLI, and Terraform.",
+        "kind": "Change",
+        "content": "**Important: Mandatory flag for admin cluster upgrades**\n\nIf an update or upgrade to advanced admin clusters fails in versions 1.32 and newer, don't delete the external bootstrap cluster from the workstation. The bootstrap cluster contains required information about states that you need to resume the update or upgrade. If an update or upgrade to admin clusters fails, and you re-run `gkectl upgrade admin`, you must add the flag `--reuse-bootstrap-cluster` or you can lose critical data.",
         "summary": {
-          "title": "New version of Google Distributed Cloud for VMware available",
-          "summary": "Google Distributed Cloud for VMware 1.34.200-gke.68 is now available for download. This release runs on Kubernetes v1.34.3-gke.400. Ensure your third-party storage vendor is qualified for this version before upgrading. Please note that it may take 7-14 days for the new version to be fully available through Google Cloud console and gcloud CLI."
+          "title": "Admin cluster upgrade changes",
+          "summary": "Updates to admin cluster upgrades require a new flag to prevent data loss if an upgrade fails. If an upgrade fails and is re-run, use the --reuse-bootstrap-cluster flag."
         }
-      },
+      }
+    ],
+    "2026-03-18": [
       {
         "kind": "Announcement",
         "content": "Google Distributed Cloud (software only) for VMware V2 (Advanced Clusters) versions 1.31\nand earlier were missing a configuration step in the node startup script that\ndefined the Docker default bridge IP range. As a result, Docker defaulted to\nusing the 172.17.0.0/16 (and in some cases 172.16.0.0/16) address range.",
@@ -25,15 +27,23 @@
           "title": "Admin cluster upgrade issue resolved",
           "summary": "An issue preventing admin cluster upgrades from completing has been fixed. Previously, users encountered stuck upgrades with `VSphereMachine` in the `Creating` phase and no clear error messages. This update ensures upgrades now proceed smoothly."
         }
+      },
+      {
+        "kind": "Announcement",
+        "content": "Google Distributed Cloud (software only) for VMware 1.34.200-gke.68 is now available\nfor download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).\n\n**Important: There is a mandatory flag for admin cluster upgrades; see the updated entry for [March 20, 2026](#March_20_2026).**\n\nGoogle Distributed Cloud 1.34.200-gke.68 runs on Kubernetes v1.34.3-gke.400.\n\nIf you are using a third-party storage vendor, check the Google Distributed Cloud-ready\nstorage partners document to make sure the storage vendor has already passed the\nqualification for this release.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for use with GKE On-Prem API clients: the Google Cloud console, the\ngcloud CLI, and Terraform.",
+        "summary": {
+          "title": "New software version available",
+          "summary": "The latest software-only version of Google Distributed Cloud for VMware, 1.34.200-gke.68, is now ready for download. This release runs on Kubernetes v1.34.3-gke.400. Please review important upgrade notes, including a mandatory flag for admin cluster upgrades, before proceeding."
+        }
       }
     ],
     "2026-03-05": [
       {
         "kind": "Announcement",
-        "content": "Google Distributed Cloud (software only) for VMware 1.32.900-gke.60 is now available\nfor download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).\nGoogle Distributed Cloud 1.32.900-gke.60 runs on Kubernetes v1.32.11-gke.200.\n\nIf you are using a third-party storage vendor, check the Google Distributed Cloud-ready\nstorage partners document to make sure the storage vendor has already passed the\nqualification for this release.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for use with GKE On-Prem API clients: the Google Cloud console, the\ngcloud CLI, and Terraform.",
+        "content": "Google Distributed Cloud (software only) for VMware 1.32.900-gke.60 is now available\nfor download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).\n\n**Important: There is a mandatory flag for admin cluster upgrades; see the updated entry for [March 20, 2026](#March_20_2026).**\n\nGoogle Distributed Cloud 1.32.900-gke.60 runs on Kubernetes v1.32.11-gke.200.\n\nIf you are using a third-party storage vendor, check the Google Distributed Cloud-ready\nstorage partners document to make sure the storage vendor has already passed the\nqualification for this release.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for use with GKE On-Prem API clients: the Google Cloud console, the\ngcloud CLI, and Terraform.",
         "summary": {
-          "title": "New release for VMware environments",
-          "summary": "Google Distributed Cloud for VMware 1.32.900-gke.60 is now available. This update runs on Kubernetes v1.32.11-gke.200. Ensure your third-party storage vendor is qualified for this release if applicable."
+          "title": "New software release available",
+          "summary": "The latest version of Google Distributed Cloud for VMware (1.32.900-gke.60) is now ready for download. Please review the upgrade documentation for instructions and important notes regarding admin cluster upgrades. Ensure your third-party storage is qualified for this release."
         }
       },
       {
@@ -56,10 +66,10 @@
       },
       {
         "kind": "Announcement",
-        "content": "Google Distributed Cloud (software only) for VMware 1.33.500-gke.63 is now available\nfor download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).\nGoogle Distributed Cloud 1.33.500-gke.63 runs on Kubernetes v1.33.5-gke.2200.\n\nIf you are using a third-party storage vendor, check the Google Distributed Cloud-ready\nstorage partners document to make sure the storage vendor has already passed the\nqualification for this release.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for use with GKE On-Prem API clients: the Google Cloud console, the\ngcloud CLI, and Terraform.",
+        "content": "Google Distributed Cloud (software only) for VMware 1.33.500-gke.63 is now available\nfor download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).\n\n**Important: There is a mandatory flag for admin cluster upgrades; see the updated entry for [March 20, 2026](#March_20_2026).**\n\nGoogle Distributed Cloud 1.33.500-gke.63 runs on Kubernetes v1.33.5-gke.2200.\n\nIf you are using a third-party storage vendor, check the Google Distributed Cloud-ready\nstorage partners document to make sure the storage vendor has already passed the\nqualification for this release.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for use with GKE On-Prem API clients: the Google Cloud console, the\ngcloud CLI, and Terraform.",
         "summary": {
-          "title": "New version of Google Distributed Cloud for VMware available",
-          "summary": "The latest version of Google Distributed Cloud for VMware (1.33.500-gke.63) is now ready for download. This release runs on Kubernetes v1.33.5-gke.2200 and may require storage vendor qualification. Please note that full API client availability may take 7-14 days post-release."
+          "title": "New version of Distributed Cloud for VMware released",
+          "summary": "Google Distributed Cloud for VMware 1.33.500-gke.63 is now available for download. This release runs on Kubernetes v1.33.5-gke.2200 and includes important updates. Please review the upgrade documentation and check for storage partner compatibility before upgrading."
         }
       }
     ],

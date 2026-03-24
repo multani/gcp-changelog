@@ -1,5 +1,29 @@
 # Cloud SQL for SQL Server
 
+## 2026-03-17
+
+### Feature
+
+Cloud SQL supports cross-project PITR operations for instances protected by
+backup and DR ([GA](https://cloud.google.com/products/#product-launch-stages)).
+
+This feature lets you restore a Cloud SQL instance to a project other than the
+project where either the source instance or the backup vault is located.
+
+For more information, see [Perform a cross-project PITR](https://docs.cloud.google.com/sql/docs/sqlserver/backup-recovery/pitr#perform_a_cross-project_pitr).
+
+### Feature
+
+[Multi-region backup vaults for Cloud SQL enhanced backups](https://docs.cloud.google.com/backup-disaster-recovery/docs/concepts/backup-vault#multi-regions)
+are generally available (GA).
+
+This feature lets you store your backup data in
+multi-region storage locations, providing higher availability and protection
+against regional outages.
+
+For more information, see [Enhanced backups](https://docs.cloud.google.com/sql/docs/sqlserver/backup-recovery/backup-options#enhanced-backups).
+
+---
 ## 2026-03-13
 
 ### Feature

@@ -10,6 +10,27 @@ upgrade phase, when the upgrade is actually being performed.
 For more information, see
 [Cancel the major version upgrade](https://docs.cloud.google.com/sql/docs/postgres/upgrade-major-db-version-inplace#cancel-upgrade).
 
+### Feature
+
+[Multi-region backup vaults for Cloud SQL enhanced backups](https://docs.cloud.google.com/backup-disaster-recovery/docs/concepts/backup-vault#multi-regions)
+are generally available (GA).
+
+This feature lets you store your backup data in
+multi-region storage locations, providing higher availability and protection
+against regional outages.
+
+For more information, see [Enhanced backups](https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/backup-options#enhanced-backups).
+
+### Feature
+
+Cloud SQL supports cross-project PITR operations for instances protected by
+backup and DR ([GA](https://cloud.google.com/products/#product-launch-stages)).
+
+This feature lets you restore a Cloud SQL instance to a project other than the
+project where either the source instance or the backup vault is located.
+
+For more information, see [Perform a cross-project PITR](https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/pitr#perform_a_cross-project_pitr).
+
 ---
 ## 2026-03-13
 
@@ -27,7 +48,7 @@ your instance, see [Enable automatic server certificate rotation](https://docs.c
 
 ### Feature
 
-You can now execute SQL statements using the [Cloud SQL Data API](https://docs.cloud.google.com/sql/docs/mysql/executesql-instance) for
+You can now execute SQL statements using the [Cloud SQL Data API](https://docs.cloud.google.com/sql/docs/postgres/executesql-instance) for
 administrative queries.
 
 ---
@@ -40,7 +61,7 @@ recovery (PITR) is enabled, as it is by default in the Google Cloud console.
 During instance creation, PITR now initially uses an
 [instant snapshot](https://docs.cloud.google.com/compute/docs/disks/instant-snapshots)
 instead of a
-[standard backup](https://docs.cloud.google.com/sql/docs/mysql/backup-recovery/backups#backup-options).
+[standard backup](https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/backups#backup-options).
 and then later converts the snapshot to a standard backup in the background to support
 [restore operations](https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/restore#tips-pitr).
 

@@ -1,6 +1,16 @@
 {
   "name": "Looker",
   "entries": {
+    "2026-03-23": [
+      {
+        "kind": "Announcement",
+        "content": "To enhance security, the [Looker language SDKs](https://docs.cloud.google.com/looker/docs/api-sdk) and the Looker API [`/login` endpoint](https://docs.cloud.google.com/looker/docs/reference/looker-api/latest/methods/ApiAuth/login) are being modified. They will exclusively accept passing credentials in the HTTP request body and will no longer support using URL query parameters.\n\n**Release date**: This update is expected to take effect with the Looker 26.18 release in October 2026.\n\n**Potential impact**: Any scripts or applications currently passing credentials in the URL query parameters in the Looker SDK libraries, or directly calling the `/login` API endpoint, will fail after this update.\n\n**Who is affected**: All customers using Looker SDKs, custom scripts, or applications that call the `/login` API endpoint directly.\n\n**Action required**:\n\nWe have sent a message to your affected customers. However, to help avoid service disruptions, please recommend that they evaluate their environment and take the following actions before October 2026:\n\n* **Upgrade SDKs:** Upgrade the Looker SDKs to version 26.4 or later as soon as possible.\n* **Update custom scripts:** Modify any scripts or applications that rely on passing Looker API credentials in URL query parameters so that they will pass credentials in the HTTP request body.\n* **Test the environment:** Validate these changes in an environment that can identify these potential misconfigurations.",
+        "summary": {
+          "title": "Looker API authentication update",
+          "summary": "Looker is updating its API authentication to enhance security. Starting with the 26.18 release in October 2026, credentials will only be accepted in the HTTP request body, not as URL query parameters. Customers should upgrade SDKs or update custom scripts to avoid service disruptions."
+        }
+      }
+    ],
     "2026-03-20": [
       {
         "kind": "Feature",
@@ -26,6 +36,14 @@
         "summary": {
           "title": "Dashboard Tile Limits Preview Now Available",
           "summary": "Admins can now set limits on the number of query tiles per dashboard tab with the new Dashboard Tile Limits preview feature. This feature, disabled by default, can be configured on the Content guardrails admin page."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Conversational Analytics now offers [new modes for asking questions](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data#ca-question-mode). Fast mode allows you to get answers more quickly. Thinking mode allows you to ask more complex questions and test your agent's capabilities.",
+        "summary": {
+          "title": "New ways to ask questions",
+          "summary": "Conversational Analytics has introduced new modes for asking questions. Fast mode provides quicker answers, while Thinking mode enables more complex queries and agent testing."
         }
       },
       {
@@ -118,10 +136,10 @@
       },
       {
         "kind": "Feature",
-        "content": "Conversational Analytics now offers [new modes for asking questions](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data#ca-question-mode). Fast mode allows you to get answers more quickly. Thinking mode allows you to ask more complex questions and test your agent's capabilities.",
+        "content": "Looker admins can grant the new [`schedule_without_limit` permission](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#schedule_without_limit) to restrict a user's ability to [deliver all data results from a Look or an Explore](https://docs.cloud.google.com/looker/docs/delivering-looks-explores). This permission must be combined with another Looker permission that permits delivering data.\n\nThis permission will be automatically granted to any existing roles that already contain a data delivery permission. Looker admins must remove this permission from any users whom they wish to prevent from delivering all results from a Look or an Explore.",
         "summary": {
-          "title": "New ways to ask questions",
-          "summary": "Conversational Analytics has introduced new modes for asking questions. Fast mode provides quicker answers, while Thinking mode enables more complex queries and agent testing."
+          "title": "New scheduling permission for Looker",
+          "summary": "Looker admins can now use the `schedule_without_limit` permission to control user access to delivering all data results from Looks or Explores. This permission works in conjunction with other data delivery permissions and will be automatically applied to existing roles. Admins can manually remove it to restrict users' ability to deliver all data."
         }
       }
     ],

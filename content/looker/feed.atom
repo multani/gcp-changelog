@@ -2,9 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Looker</title>
   <subtitle>Changelog for Google Cloud product: Looker</subtitle>
-  <updated>2026-03-20T00:00:00+00:00</updated>
+  <updated>2026-03-23T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:looker</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/looker/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-03-23:announcement:0</id>
+    <published>2026-03-23T00:00:00+00:00</published>
+    <updated>2026-03-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>To enhance security, the <a href="https://docs.cloud.google.com/looker/docs/api-sdk">Looker language SDKs</a> and the Looker API <a href="https://docs.cloud.google.com/looker/docs/reference/looker-api/latest/methods/ApiAuth/login"><code>/login</code> endpoint</a> are being modified. They will exclusively accept passing credentials in the HTTP request body and will no longer support using URL query parameters.</p>
+<p><strong>Release date</strong>: This update is expected to take effect with the Looker 26.18 release in October 2026.</p>
+<p><strong>Potential impact</strong>: Any scripts or applications currently passing credentials in the URL query parameters in the Looker SDK libraries, or directly calling the <code>/login</code> API endpoint, will fail after this update.</p>
+<p><strong>Who is affected</strong>: All customers using Looker SDKs, custom scripts, or applications that call the <code>/login</code> API endpoint directly.</p>
+<p><strong>Action required</strong>:</p>
+<p>We have sent a message to your affected customers. However, to help avoid service disruptions, please recommend that they evaluate their environment and take the following actions before October 2026:</p>
+<ul>
+<li><strong>Upgrade SDKs:</strong> Upgrade the Looker SDKs to version 26.4 or later as soon as possible.</li>
+<li><strong>Update custom scripts:</strong> Modify any scripts or applications that rely on passing Looker API credentials in URL query parameters so that they will pass credentials in the HTTP request body.</li>
+<li><strong>Test the environment:</strong> Validate these changes in an environment that can identify these potential misconfigurations.</li>
+</ul>]]></content>
+    <summary>Looker is updating its API authentication to enhance security. Starting with the 26.18 release in October 2026, credentials will only be accepted in the HTTP request body, not as URL query parameters. Customers should upgrade SDKs or update custom scripts to avoid service disruptions.</summary>
+    <title>Announcement: Looker API authentication update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -52,6 +73,17 @@
     <id>urn:github:multani:gcp-changelog:looker:2026-03-17:feature:2</id>
     <published>2026-03-17T00:00:00+00:00</published>
     <updated>2026-03-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Conversational Analytics now offers <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data#ca-question-mode">new modes for asking questions</a>. Fast mode allows you to get answers more quickly. Thinking mode allows you to ask more complex questions and test your agent's capabilities.</p>]]></content>
+    <summary>Conversational Analytics has introduced new modes for asking questions. Fast mode provides quicker answers, while Thinking mode enables more complex queries and agent testing.</summary>
+    <title>Feature: New ways to ask questions</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-03-17:feature:3</id>
+    <published>2026-03-17T00:00:00+00:00</published>
+    <updated>2026-03-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in preview, you can use Gemini in Looker to <a href="https://docs.cloud.google.com/looker/docs/gemini-expression-asst">assist you in writing Looker expressions</a> for <a href="https://docs.cloud.google.com/looker/docs/table-calculations">table calculations</a> and <a href="https://docs.cloud.google.com/looker/docs/custom-fields">custom fields</a>. This feature can be enabled by turning on the <strong>Expression Assistant</strong> setting on the <strong>Gemini in Looker</strong> page in the <strong>Platform</strong> section of the <strong>Admin</strong> panel.</p>]]></content>
     <summary>Gemini is now available in preview to help you write Looker expressions for table calculations and custom fields. This feature, called Expression Assistant, can be enabled in the Admin panel. It aims to simplify the process of creating complex data manipulations within Looker.</summary>
     <title>Feature: Gemini Assists Looker Expression Writing</title>
@@ -60,7 +92,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-03-17:feature:3</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-03-17:feature:4</id>
     <published>2026-03-17T00:00:00+00:00</published>
     <updated>2026-03-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Looker <strong>Connections Settings</strong> page has a new option, <a href="https://docs.cloud.google.com/looker/docs/connecting-to-your-db#disable_connection"><strong>Disable Connection</strong></a>, that allows a Looker admin to disable a connection in cases where there are downstream issues with the database, instead of killing queries manually or allowing queries to remain in the query queue. When the connection is disabled, Looker will not send queries to the database and will return an error message to users.</p>]]></content>
@@ -71,7 +103,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-03-17:feature:4</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-03-17:feature:5</id>
     <published>2026-03-17T00:00:00+00:00</published>
     <updated>2026-03-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/exploring-self-service"><strong>Self-service Explores</strong></a> feature is now generally available.</p>
@@ -83,7 +115,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-03-17:feature:5</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-03-17:feature:6</id>
     <published>2026-03-17T00:00:00+00:00</published>
     <updated>2026-03-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/content-certification">content certification</a> feature is now generally available. In Looker 26.4, the following support has been added:</p>
@@ -99,7 +131,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-03-17:feature:6</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-03-17:feature:7</id>
     <published>2026-03-17T00:00:00+00:00</published>
     <updated>2026-03-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#enhanced-search"><strong>Enhanced Search</strong> preview feature</a> is now available.</p>
@@ -113,7 +145,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-03-17:feature:7</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-03-17:feature:8</id>
     <published>2026-03-17T00:00:00+00:00</published>
     <updated>2026-03-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in preview, Gemini in Looker can automatically <a href="https://docs.cloud.google.com/looker/docs/gemini-quick-starts">generate Quick Start analyses for Explores</a>. This feature can be enabled by turning on the <strong>AI-assisted Quick Starts</strong> setting on the <strong>Gemini in Looker</strong> page in the <strong>Platform</strong> section of the <strong>Admin</strong> panel.</p>
@@ -125,7 +157,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-03-17:feature:8</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-03-17:feature:9</id>
     <published>2026-03-17T00:00:00+00:00</published>
     <updated>2026-03-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#increased-row-limit"><strong>Increased Row Limit</strong> preview feature</a> feature is now available, and is disabled by default.</p>
@@ -139,7 +171,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-03-17:announcement:9</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-03-17:announcement:10</id>
     <published>2026-03-17T00:00:00+00:00</published>
     <updated>2026-03-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>As part of Looker 26.4, the following features will begin rolling out on March 17, 2026.</p>]]></content>
@@ -150,7 +182,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-03-17:feature:10</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-03-17:feature:11</id>
     <published>2026-03-17T00:00:00+00:00</published>
     <updated>2026-03-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The Gemini in Looker assistant that helps you <a href="https://docs.cloud.google.com/looker/docs/write-lookml-gemini">generate LookML parameters</a> is now available to enable individually from other Gemini in Looker features. This assistant, which continues to be available in preview, suggests LookML parameters that are based on the natural language prompts that you add to your project files. This assistant can be enabled by turning on the <strong>Gemini in Looker</strong> and <strong>LookML Assistant</strong> settings on the <strong>Gemini in Looker</strong> page in the <strong>Platform</strong> section of the <strong>Admin</strong> panel.</p>]]></content>
@@ -161,7 +193,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-03-17:feature:11</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-03-17:feature:12</id>
     <published>2026-03-17T00:00:00+00:00</published>
     <updated>2026-03-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/continuous-integration">Continuous Integration (CI)</a> feature is updated for better integration with the Looker user interface:</p>
@@ -183,7 +215,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-03-17:feature:12</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-03-17:feature:13</id>
     <published>2026-03-17T00:00:00+00:00</published>
     <updated>2026-03-17T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Available in preview, you can now use custom calendars, such as fiscal or retail calendars, for <a href="https://docs.cloud.google.com/looker/docs/custom-calendars#supported_dialects_for_custom_calendars">dialects that support it</a>. The <a href="https://docs.cloud.google.com/looker/docs/custom-calendars">custom calendar</a> feature lets your Looker developers create a LookML model of a custom calendar table in your database and then create <a href="https://docs.cloud.google.com/looker/docs/reference/param-field-dimension-group#custom_calendar_type">custom calendar dimension groups</a> that use the custom calendar. Your end users can then create Explore queries using the custom calendar dimension timeframes.</p>
@@ -196,12 +228,13 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-03-17:feature:13</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-03-17:feature:14</id>
     <published>2026-03-17T00:00:00+00:00</published>
     <updated>2026-03-17T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Conversational Analytics now offers <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data#ca-question-mode">new modes for asking questions</a>. Fast mode allows you to get answers more quickly. Thinking mode allows you to ask more complex questions and test your agent's capabilities.</p>]]></content>
-    <summary>Conversational Analytics has introduced new modes for asking questions. Fast mode provides quicker answers, while Thinking mode enables more complex queries and agent testing.</summary>
-    <title>Feature: New ways to ask questions</title>
+    <content type="html"><![CDATA[<p>Looker admins can grant the new <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#schedule_without_limit"><code>schedule_without_limit</code> permission</a> to restrict a user's ability to <a href="https://docs.cloud.google.com/looker/docs/delivering-looks-explores">deliver all data results from a Look or an Explore</a>. This permission must be combined with another Looker permission that permits delivering data.</p>
+<p>This permission will be automatically granted to any existing roles that already contain a data delivery permission. Looker admins must remove this permission from any users whom they wish to prevent from delivering all results from a Look or an Explore.</p>]]></content>
+    <summary>Looker admins can now use the `schedule_without_limit` permission to control user access to delivering all data results from Looks or Explores. This permission works in conjunction with other data delivery permissions and will be automatically applied to existing roles. Admins can manually remove it to restrict users' ability to deliver all data.</summary>
+    <title>Feature: New scheduling permission for Looker</title>
   </entry>
   <entry>
     <author>

@@ -9,6 +9,22 @@
           "title": "Cancel in-place major version upgrade",
           "summary": "You can now cancel an in-place major version upgrade operation during the main upgrade phase, when the upgrade is actually being performed. This provides more flexibility and control over the upgrade process."
         }
+      },
+      {
+        "kind": "Feature",
+        "content": "[Multi-region backup vaults for Cloud SQL enhanced backups](https://docs.cloud.google.com/backup-disaster-recovery/docs/concepts/backup-vault#multi-regions)\nare generally available (GA).\n\nThis feature lets you store your backup data in\nmulti-region storage locations, providing higher availability and protection\nagainst regional outages.\n\nFor more information, see [Enhanced backups](https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/backup-options#enhanced-backups).",
+        "summary": {
+          "title": "Multi-region backup vaults now available",
+          "summary": "Enhanced backups for Cloud SQL can now be stored in multi-region locations. This provides increased availability and protection against regional outages."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Cloud SQL supports cross-project PITR operations for instances protected by\nbackup and DR ([GA](https://cloud.google.com/products/#product-launch-stages)).\n\nThis feature lets you restore a Cloud SQL instance to a project other than the\nproject where either the source instance or the backup vault is located.\n\nFor more information, see [Perform a cross-project PITR](https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/pitr#perform_a_cross-project_pitr).",
+        "summary": {
+          "title": "Cross-project PITR for Cloud SQL",
+          "summary": "Cloud SQL now supports cross-project point-in-time recovery (PITR) for instances protected by backup and DR. This feature allows you to restore instances to a different project than the source instance or backup vault. This enhances flexibility for disaster recovery and data management scenarios."
+        }
       }
     ],
     "2026-03-13": [
@@ -24,20 +40,20 @@
     "2026-03-09": [
       {
         "kind": "Feature",
-        "content": "You can now execute SQL statements using the [Cloud SQL Data API](https://docs.cloud.google.com/sql/docs/mysql/executesql-instance) for\nadministrative queries.",
+        "content": "You can now execute SQL statements using the [Cloud SQL Data API](https://docs.cloud.google.com/sql/docs/postgres/executesql-instance) for\nadministrative queries.",
         "summary": {
-          "title": "Execute SQL statements on Cloud SQL",
-          "summary": "You can now execute SQL statements directly on your Cloud SQL instances using the Data API. This feature is useful for running administrative queries and managing your database."
+          "title": "Execute SQL statements with Cloud SQL Data API",
+          "summary": "You can now execute SQL statements for administrative queries using the Cloud SQL Data API. This feature provides a convenient way to manage your Cloud SQL instances programmatically."
         }
       }
     ],
     "2026-02-24": [
       {
         "kind": "Feature",
-        "content": "It now takes less time to create a Cloud SQL instance when point-in-time\nrecovery (PITR) is enabled, as it is by default in the Google Cloud console.\nDuring instance creation, PITR now initially uses an\n[instant snapshot](https://docs.cloud.google.com/compute/docs/disks/instant-snapshots)\ninstead of a\n[standard backup](https://docs.cloud.google.com/sql/docs/mysql/backup-recovery/backups#backup-options).\nand then later converts the snapshot to a standard backup in the background to support\n[restore operations](https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/restore#tips-pitr).",
+        "content": "It now takes less time to create a Cloud SQL instance when point-in-time\nrecovery (PITR) is enabled, as it is by default in the Google Cloud console.\nDuring instance creation, PITR now initially uses an\n[instant snapshot](https://docs.cloud.google.com/compute/docs/disks/instant-snapshots)\ninstead of a\n[standard backup](https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/backups#backup-options).\nand then later converts the snapshot to a standard backup in the background to support\n[restore operations](https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/restore#tips-pitr).",
         "summary": {
-          "title": "Faster Cloud SQL instance creation with PITR",
-          "summary": "Creating Cloud SQL instances with point-in-time recovery (PITR) enabled is now faster. This improvement is achieved by using instant snapshots during creation, which are later converted to standard backups in the background. This change streamlines the instance setup process without affecting restore capabilities."
+          "title": "Faster Cloud SQL Instance Creation with PITR",
+          "summary": "Creating Cloud SQL instances with point-in-time recovery enabled is now faster. This improvement is achieved by initially using instant snapshots during creation, which are later converted to standard backups in the background. This change streamlines the instance setup process without affecting restore capabilities."
         }
       }
     ],

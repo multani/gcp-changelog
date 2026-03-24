@@ -1,5 +1,20 @@
 # Document AI
 
+## 2026-03-23
+
+### Feature
+
+[Custom classifier](https://docs.cloud.google.com/document-ai/docs/custom-classifier) models
+`pretrained-classifier-v1.6-2026-03-09` and `pretrained-classifier-v1.6-pro-2026-03-09`
+are available in [Preivew](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+[Custom splitter](https://docs.cloud.google.com/document-ai/docs/custom-splitter) models
+`pretrained-splitter-v1.6-2026-03-09` and `pretrained-splitter-v1.6-pro-2026-03-09`
+are available in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-03-13
 
 ### Feature

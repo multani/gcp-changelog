@@ -1,33 +1,104 @@
 # Gemini Enterprise
 
-## 2026-03-04
+## 2026-03-23
 
 ### Feature
 
-**Gemini Enterprise: Data connector for GitHub (Public preview)**
+**Gemini Enterprise: Data connector for Docusign (Preview)**
 
-You can connect GitHub data stores to Gemini Enterprise. For more information, see [Connect GitHub](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/github)
+You can connect Docusign data stores to Gemini Enterprise.
 
-**Gemini Enterprise: Support for new actions (Public preview)**
+Support for Docusign data stores is in Public Preview. For more information, see [Connect Docusign](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/docusign).
+
+---
+## 2026-03-17
+
+### Feature
+
+**Gemini Enterprise: Grace period for license deactivation**
+
+To ensure a smooth transition and prevent service interruptions when a
+subscription ends early, we've introduced a one-week (seven days) grace period.
+During this time, you can continue to use the service while you transition to a
+new subscription.
+
+This feature is generally available (GA). For more information, see [Handle
+early termination](https://docs.cloud.google.com/gemini/enterprise/docs/licenses#handle-early-termination).
+
+---
+## 2026-03-13
+
+### Feature
+
+**Gemini Enterprise: Search generated images and videos**
+
+You can search your generated images and videos in the Gemini Enterprise
+assistant. You can also search for items directly in the Library.
+
+This feature is generally available (GA). For more information, see
+[Search your Gemini Enterprise content](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-organize#search-your-gemini-enterprise-content)
+and
+[View, download, and search generated images and videos](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-analyze#view_download_and_search_generated_images_and_videos).
+
+### Feature
+
+**Gemini Enterprise: Enhanced filtering for Microsoft SharePoint data stores (Preview)**
+
+You can now configure filters for your Microsoft SharePoint data stores using either the Google Cloud console or the API. These filters allow you to define exactly which content is accessible to the Assistant by including or excluding specific SharePoint sites.
+
+This feature is in Public Preview. For more information, see [Connect Microsoft SharePoint Online](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-sharepoint).
+
+---
+## 2026-03-12
+
+### Feature
+
+**Gemini Enterprise: Observability settings (Preview)**
+
+Gemini Enterprise administrators can enable observability settings to view the
+following data from your interactions with the assistant in your
+Gemini Enterprise web app:
+
+* View metrics in Metrics Explorer.
+* View traces and spans in Trace Explorer.
+
+This feature is in Public Preview. For more information, see
+[Manage observability settings](https://docs.cloud.google.com/gemini/enterprise/docs/manage-observability-settings).
+
+---
+## 2026-03-11
+
+### Feature
+
+**Gemini Enterprise: Configure retention period for assistant chats**
+
+Gemini Enterprise administrators can configure the retention period for assistant
+chat history. This feature is generally available (GA). For more information,
+see [Configure the assistant](https://docs.cloud.google.com/gemini/enterprise/docs/configure-assistant).
+
+### Feature
+
+**Gemini Enterprise: Data connector for Google Chat (Preview)**
+
+You can connect Google Chat data stores to Gemini Enterprise.
+
+Support for Google Chat data stores is in Public Preview. For more information, see [Connect Google Chat](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/gchat).
+
+### Feature
+
+**Gemini Enterprise: Support for new actions (Preview)**
 
 New actions are available for the following data stores:
 
-* [Confluence Data Center](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/confluence-dc)
-* [Monday](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/monday)
+* [GitHub](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/github)
+* [Microsoft SharePoint](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-sharepoint)
+* [Notion](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/notion)
 * [Shopify](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/shopify)
-* [Zendesk](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/zendesk)
 
 For a list of actions for these data stores, see [Supported actions](https://docs.cloud.google.com/gemini/enterprise/docs/connect-third-party-data-source#supported_actions).
 
-### Feature
-
-**Gemini Enterprise: Chat with files in the Microsoft Outlook and Box connectors**
-
-Gemini Enterprise can analyze content and generate answers from email
-attachments in the Microsoft Outlook connector and from CSV, PDF, PPTX, and XLSX
-files in the Box connector, removing the need to upload these files to the
-Gemini Enterprise assistant. For more information, see
-[Chat with files in connectors](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-chat#chat_with_files_in_connectors).
+---
+## 2026-03-04
 
 ### Fixed
 
@@ -36,6 +107,42 @@ Gemini Enterprise assistant. For more information, see
 Fixed an issue in Agent Designer that caused agent model configurations to be
 cleared or fail to appear during the transition from Gemini 3 Pro
 (Preview) to Gemini 3.1 Pro (Preview).
+
+### Feature
+
+**Gemini Enterprise: Support for new actions (Preview)**
+
+New actions are available for the following data stores:
+
+* [Confluence Data Center](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/confluence-dc)
+* [Monday](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/monday)
+* [Shopify](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/shopify)
+* [Zendesk](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/zendesk)
+
+For a list of actions for these data stores, see [Supported
+actions](https://docs.cloud.google.com/gemini/enterprise/docs/connect-third-party-data-source#supported_actions). These
+actions are in Public Preview.
+
+### Feature
+
+**Gemini Enterprise: Data connector for GitHub (Preview)**
+
+You can connect GitHub data stores to Gemini Enterprise. For more information,
+see [Connect GitHub](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/github).
+
+This feature is in Public Preview.
+
+### Feature
+
+**Gemini Enterprise: Chat with files in the Microsoft Outlook and Box connectors**
+
+Gemini Enterprise can analyze content and generate answers from email
+attachments in the Microsoft Outlook connector and from CSV, PDF, PPTX, and XLSX
+files in the Box connector, removing the need to upload these files to the
+Gemini Enterprise assistant.
+
+This feature is generally available (GA). For more information, see [Chat with
+files in connectors](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-chat#chat_with_files_in_connectors).
 
 ---
 ## 2026-03-03
@@ -53,6 +160,8 @@ video generation** setting. For more information about feature controls, see
 [Manage features on the web
 app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
 
+This feature is generally available (GA).
+
 ### Feature
 
 **Gemini Enterprise: Export assistant responses to Google Docs and Google Sheets**
@@ -60,16 +169,18 @@ app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-feature
 You can export chat responses from the assistant to Google Docs. You can also
 export tabular and CSV data from a response to Google Sheets.
 
-For more information, see [Export to Google Docs and Google Sheets](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-chat#export-responses).
+This feature is generally available (GA). For more information, see [Export to
+Google Docs and
+Google Sheets](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-chat#export-responses).
 
 ---
 ## 2026-02-26
 
 ### Feature
 
-**Gemini Enterprise: Support for new data stores (Public preview)**
+**Gemini Enterprise: Support for new data stores (Preview)**
 
-The following data stores are supported in Gemini Enterprise:
+The following data stores are supported in Public Preview:
 
 * [HubSpot](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/hubspot)
 * [Monday](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/monday)
@@ -80,8 +191,36 @@ The following data stores are supported in Gemini Enterprise:
 
 ### Feature
 
+**Gemini Enterprise: Share agents created using Agent Designer**
+
+The agent sharing feature in Agent Designer is generally available (GA) with the
+following enhancements:
+
+* **Direct sharing:** Agent owners can share agents directly with other users
+  in their organization without prior admin approval.
+* **Configurable admin review:** Admins can turn on or
+  turn off the requirement for manual review of sharing requests.
+* **Additional sharing controls:** Admins can share agents with
+  Google Groups and Workforce Identity Federation (WIF) identity pools.
+
+For more information, see
+[Share an agent](https://docs.cloud.google.com/gemini/enterprise/docs/agent-designer/share-agent).
+
+### Feature
+
+**Gemini Enterprise: Sharing controls for employee-made agents**
+
+Employee-made agents can share within an organization. Admins can manage how
+these agents are shared by using the **Enable agent sharing** and **Enable agent
+sharing without admin approval** toggles in the management console.
+
+This feature is generally available (GA). For more information, see [Configure feature
+controls](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features#configure_feature_controls).
+
+### Feature
+
 **Gemini Enterprise: Share Google-made agents, custom agents, and employee-made
-agents that are registered with Gemini Enterprise (GA)**
+agents that are registered with Gemini Enterprise**
 
 Admins can share the following agents:
 
@@ -94,36 +233,8 @@ Admins can share the following agents:
 * Dialogflow agents that are registered with Gemini Enterprise.
 * Agents added from Google Cloud Marketplace
 
-For more information, see [Share agents from Google Cloud
+This feature is generally available (GA). For more information, see [Share agents from Google Cloud
 console](https://docs.cloud.google.com/gemini/enterprise/docs/share-custom-agents).
-
-### Feature
-
-**Gemini Enterprise: Sharing controls for employee-made agents**
-
-Employee-made agents can share within an organization. Admins can manage how
-these agents are shared by using the **Enable agent sharing** and **Enable agent
-sharing without admin approval** toggles in the management console.
-
-For more information, see [Configure feature
-controls](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features#configure_feature_controls).
-
-### Announcement
-
-**Gemini Enterprise: Share agents created using Agent Designer**
-
-The agent sharing feature in Agent Designer is Generally Available (GA) with the
-following enhancements:
-
-* **Direct sharing:** Agent owners can share agents directly with other users
-  in their organization without prior admin approval.
-* **Configurable admin review:** Admins can turn on or
-  turn off the requirement for manual review of sharing requests.
-* **Additional sharing controls:** Admins can share agents with
-  Google Groups and Workforce Identity Federation (WIF) identity pools.
-
-For more information, see
-[Share an agent](https://docs.cloud.google.com/gemini/enterprise/docs/agent-designer/share-agent).
 
 ---
 ## 2026-02-19

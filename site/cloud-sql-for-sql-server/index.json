@@ -1,6 +1,24 @@
 {
   "name": "Cloud SQL for SQL Server",
   "entries": {
+    "2026-03-17": [
+      {
+        "kind": "Feature",
+        "content": "Cloud SQL supports cross-project PITR operations for instances protected by\nbackup and DR ([GA](https://cloud.google.com/products/#product-launch-stages)).\n\nThis feature lets you restore a Cloud SQL instance to a project other than the\nproject where either the source instance or the backup vault is located.\n\nFor more information, see [Perform a cross-project PITR](https://docs.cloud.google.com/sql/docs/sqlserver/backup-recovery/pitr#perform_a_cross-project_pitr).",
+        "summary": {
+          "title": "Cross-project restore for Cloud SQL instances",
+          "summary": "Cloud SQL now supports cross-project Point-in-Time Recovery (PITR) for instances protected by backup and DR. This allows you to restore instances to a different project than where the source instance or backup vault resides. This enhancement provides greater flexibility in managing your database backups and recovery operations across your cloud environment."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "[Multi-region backup vaults for Cloud SQL enhanced backups](https://docs.cloud.google.com/backup-disaster-recovery/docs/concepts/backup-vault#multi-regions)\nare generally available (GA).\n\nThis feature lets you store your backup data in\nmulti-region storage locations, providing higher availability and protection\nagainst regional outages.\n\nFor more information, see [Enhanced backups](https://docs.cloud.google.com/sql/docs/sqlserver/backup-recovery/backup-options#enhanced-backups).",
+        "summary": {
+          "title": "Cloud SQL backup vaults now in preview",
+          "summary": "Enhanced backups for Cloud SQL are now generally available. This feature allows you to store your backup data in multi-region storage locations, enhancing availability and protection against regional outages."
+        }
+      }
+    ],
     "2026-03-13": [
       {
         "kind": "Feature",

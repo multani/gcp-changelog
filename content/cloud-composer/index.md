@@ -1,5 +1,47 @@
 # Cloud Composer
 
+## 2026-03-19
+
+### Change
+
+New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)
+are available in Cloud Composer 3:
+
+* [composer-3-airflow-3.1.7-build.2](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-7-build-2)
+* [composer-3-airflow-2.10.5-build.31](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-31) (default)
+* [composer-3-airflow-2.9.3-build.51](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-51)
+
+### Announcement
+
+Cloud Composer 2 environments can no longer be created in
+Berlin (europe-west10) and Dallas (us-south1). We're switching this region to
+supporting only Cloud Composer 3 environments. Existing Cloud Composer 2
+environments in these regions aren't affected by this change.
+
+### Change
+
+New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)
+are available in Cloud Composer 2:
+
+* [composer-2.16.8-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-8-airflow-2-10-5) (default)
+* [composer-2.16.8-airflow-2.9.3](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-8-airflow-2-9-3)
+
+### Change
+
+*(Airflow 3.1.7 in Cloud Composer 3)*
+The `apache-airflow-providers-cncf-kubernetes` package was
+[upgraded to version 10.14.0](https://airflow.apache.org/docs/apache-airflow-providers-cncf-kubernetes/stable/changelog.html).
+For changes in other packages, see the
+[preinstalled packages changelog](https://cloud.google.com/composer/docs/versions-packages).
+
+### Announcement
+
+A new Cloud Composer release has started on **March 19, 2026**. Get ready
+for upcoming changes and features as we roll out the new release to all regions.
+This release is in progress at the moment. Listed changes and features might
+not be available in some regions yet.
+
+---
 ## 2026-03-17
 
 ### Change
@@ -31,13 +73,6 @@ database, see
 
 This change is gradually rolled out to all regions supported by
 Cloud Composer 3.
-
-### Announcement
-
-A new Cloud Composer release has started on **March 17, 2026**. Get ready
-for upcoming changes and features as we roll out the new release to all regions.
-This release is in progress at the moment. Listed changes and features might
-not be available in some regions yet.
 
 ### Change
 

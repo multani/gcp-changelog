@@ -1,5 +1,26 @@
 # Looker
 
+## 2026-03-23
+
+### Announcement
+
+To enhance security, the [Looker language SDKs](https://docs.cloud.google.com/looker/docs/api-sdk) and the Looker API [`/login` endpoint](https://docs.cloud.google.com/looker/docs/reference/looker-api/latest/methods/ApiAuth/login) are being modified. They will exclusively accept passing credentials in the HTTP request body and will no longer support using URL query parameters.
+
+**Release date**: This update is expected to take effect with the Looker 26.18 release in October 2026.
+
+**Potential impact**: Any scripts or applications currently passing credentials in the URL query parameters in the Looker SDK libraries, or directly calling the `/login` API endpoint, will fail after this update.
+
+**Who is affected**: All customers using Looker SDKs, custom scripts, or applications that call the `/login` API endpoint directly.
+
+**Action required**:
+
+We have sent a message to your affected customers. However, to help avoid service disruptions, please recommend that they evaluate their environment and take the following actions before October 2026:
+
+* **Upgrade SDKs:** Upgrade the Looker SDKs to version 26.4 or later as soon as possible.
+* **Update custom scripts:** Modify any scripts or applications that rely on passing Looker API credentials in URL query parameters so that they will pass credentials in the HTTP request body.
+* **Test the environment:** Validate these changes in an environment that can identify these potential misconfigurations.
+
+---
 ## 2026-03-20
 
 ### Feature
@@ -23,6 +44,10 @@ The [**Visualization Assistant**](https://docs.cloud.google.com/looker/docs/cust
 The **Dashboard Tile Limits** preview feature is now available, and is disabled by default.
 
 When enabled, the **Dashboard Tile Limits** preview feature lets admins set limits to how many query tiles can be added to each tab in a dashboard. Admins can set these limits in the **Maximum Query Tiles per tab** setting on the **Content guardrails** admin page.
+
+### Feature
+
+Conversational Analytics now offers [new modes for asking questions](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data#ca-question-mode). Fast mode allows you to get answers more quickly. Thinking mode allows you to ask more complex questions and test your agent's capabilities.
 
 ### Feature
 
@@ -104,7 +129,9 @@ In addition, your LookML developers can create [period-over-period](https://docs
 
 ### Feature
 
-Conversational Analytics now offers [new modes for asking questions](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data#ca-question-mode). Fast mode allows you to get answers more quickly. Thinking mode allows you to ask more complex questions and test your agent's capabilities.
+Looker admins can grant the new [`schedule_without_limit` permission](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#schedule_without_limit) to restrict a user's ability to [deliver all data results from a Look or an Explore](https://docs.cloud.google.com/looker/docs/delivering-looks-explores). This permission must be combined with another Looker permission that permits delivering data.
+
+This permission will be automatically granted to any existing roles that already contain a data delivery permission. Looker admins must remove this permission from any users whom they wish to prevent from delivering all results from a Look or an Explore.
 
 ---
 ## 2026-03-16

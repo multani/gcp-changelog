@@ -23,6 +23,37 @@ upgrade phase, when the upgrade is actually being performed.</p>
     <author>
       <name>Google Cloud</name>
     </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2026-03-17:feature:1</id>
+    <published>2026-03-17T00:00:00+00:00</published>
+    <updated>2026-03-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/backup-disaster-recovery/docs/concepts/backup-vault#multi-regions">Multi-region backup vaults for Cloud SQL enhanced backups</a>
+are generally available (GA).</p>
+<p>This feature lets you store your backup data in
+multi-region storage locations, providing higher availability and protection
+against regional outages.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/backup-options#enhanced-backups">Enhanced backups</a>.</p>]]></content>
+    <summary>Enhanced backups for Cloud SQL can now be stored in multi-region locations. This provides increased availability and protection against regional outages.</summary>
+    <title>Feature: Multi-region backup vaults now available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2026-03-17:feature:2</id>
+    <published>2026-03-17T00:00:00+00:00</published>
+    <updated>2026-03-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud SQL supports cross-project PITR operations for instances protected by
+backup and DR (<a href="https://cloud.google.com/products/#product-launch-stages">GA</a>).</p>
+<p>This feature lets you restore a Cloud SQL instance to a project other than the
+project where either the source instance or the backup vault is located.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/pitr#perform_a_cross-project_pitr">Perform a cross-project PITR</a>.</p>]]></content>
+    <summary>Cloud SQL now supports cross-project point-in-time recovery (PITR) for instances protected by backup and DR. This feature allows you to restore instances to a different project than the source instance or backup vault. This enhances flexibility for disaster recovery and data management scenarios.</summary>
+    <title>Feature: Cross-project PITR for Cloud SQL</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
     <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2026-03-13:feature:0</id>
     <published>2026-03-13T00:00:00+00:00</published>
     <updated>2026-03-13T00:00:00+00:00</updated>
@@ -41,10 +72,10 @@ your instance, see <a href="https://docs.cloud.google.com/sql/docs/postgres/mana
     <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2026-03-09:feature:0</id>
     <published>2026-03-09T00:00:00+00:00</published>
     <updated>2026-03-09T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>You can now execute SQL statements using the <a href="https://docs.cloud.google.com/sql/docs/mysql/executesql-instance">Cloud SQL Data API</a> for
+    <content type="html"><![CDATA[<p>You can now execute SQL statements using the <a href="https://docs.cloud.google.com/sql/docs/postgres/executesql-instance">Cloud SQL Data API</a> for
 administrative queries.</p>]]></content>
-    <summary>You can now execute SQL statements directly on your Cloud SQL instances using the Data API. This feature is useful for running administrative queries and managing your database.</summary>
-    <title>Feature: Execute SQL statements on Cloud SQL</title>
+    <summary>You can now execute SQL statements for administrative queries using the Cloud SQL Data API. This feature provides a convenient way to manage your Cloud SQL instances programmatically.</summary>
+    <title>Feature: Execute SQL statements with Cloud SQL Data API</title>
   </entry>
   <entry>
     <author>
@@ -58,11 +89,11 @@ recovery (PITR) is enabled, as it is by default in the Google Cloud console.
 During instance creation, PITR now initially uses an
 <a href="https://docs.cloud.google.com/compute/docs/disks/instant-snapshots">instant snapshot</a>
 instead of a
-<a href="https://docs.cloud.google.com/sql/docs/mysql/backup-recovery/backups#backup-options">standard backup</a>.
+<a href="https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/backups#backup-options">standard backup</a>.
 and then later converts the snapshot to a standard backup in the background to support
 <a href="https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/restore#tips-pitr">restore operations</a>.</p>]]></content>
-    <summary>Creating Cloud SQL instances with point-in-time recovery (PITR) enabled is now faster. This improvement is achieved by using instant snapshots during creation, which are later converted to standard backups in the background. This change streamlines the instance setup process without affecting restore capabilities.</summary>
-    <title>Feature: Faster Cloud SQL instance creation with PITR</title>
+    <summary>Creating Cloud SQL instances with point-in-time recovery enabled is now faster. This improvement is achieved by initially using instant snapshots during creation, which are later converted to standard backups in the background. This change streamlines the instance setup process without affecting restore capabilities.</summary>
+    <title>Feature: Faster Cloud SQL Instance Creation with PITR</title>
   </entry>
   <entry>
     <author>

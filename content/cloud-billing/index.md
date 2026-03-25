@@ -1,5 +1,70 @@
 # Cloud Billing
 
+## 2026-03-23
+
+### Change
+
+**Billing account permissions now streamline access to Google payments
+profiles and payments accounts**
+
+We've launched a billing IAM permissions update that simplifies
+and streamlines Cloud Billing account access to the associated
+[Google payments profiles and accounts](https://docs.cloud.google.com/billing/docs/concepts#billing_account), for users who have the `billing.accounts.updatePaymentInfo` permission on their
+Cloud Billing account.
+
+**Prior to this update**: *While working in the Cloud Billing console*,
+to access and edit the associated Google payments profile and account
+information, all Cloud Billing account users **needed *two* sets of
+permissions**:
+
+* Identity and Access Management (IAM)
+  [permissions on the Cloud Billing account](https://docs.cloud.google.com/billing/docs/how-to/billing-access)
+  to access and manage the billing account.
+* Edit or Admin
+  [access permissions on the associated Google payments profile](https://docs.cloud.google.com/billing/docs/how-to/modify-contacts#permissions)
+  in order to add and edit payment methods, make a manual payment, and update
+  payments profile info such as the business name, address,
+  tax info, and payments account settings.
+
+**After this permissions update**: Cloud Billing account users with
+the `billing.accounts.updatePaymentInfo` permission on the billing account
+can access and edit Google payments profile and account information
+directly from the Cloud Billing console, without needing additional permissions on the payments profile itself.
+This includes users with the
+[Billing Account Administrator role](https://docs.cloud.google.com/billing/docs/how-to/billing-access#billing.admin)
+(`roles/billing.admin`) and those granted this permission via a
+[custom role](https://docs.cloud.google.com/billing/docs/how-to/custom-roles#payment_information).
+
+Note that this permissions update applies only to Cloud Billing
+accounts associated with an
+[Organization (or Business)](https://docs.cloud.google.com/billing/docs/concepts#payments_profile_types)
+Google payments profile type. You can verify your account type on the
+[Payment settings](https://console.cloud.google.com/billing/profile)
+page in the Cloud Billing console.
+
+With the `billing.accounts.updatePaymentInfo` permission on the billing account,
+users can do the following:
+
+* [View payments history](https://docs.cloud.google.com/billing/docs/how-to/view-history) and
+  [documents](https://docs.cloud.google.com/billing/docs/how-to/get-invoice) related to the associated
+  Google payments profile.
+* [Add and edit payment methods](https://docs.cloud.google.com/billing/docs/how-to/payment-methods) on a
+  self-serve (online) billing account.
+* [Make a manual payment](https://docs.cloud.google.com/billing/docs/how-to/manual-payment) to a
+  self-serve (online) billing account.
+* [Update payments profile info](https://docs.cloud.google.com/billing/docs/how-to/modify-billing-account)
+  such as the business name, address, tax info, and payments
+  account settings.
+
+Billing account users with the `billing.accounts.updatePaymentInfo` permission
+won't have the *Manage users* or *Admin with all permissions* level of access
+on the Google payments profile. To *fully manage* a payments
+profile and gain
+[*Manage users* and *Admin* permissions](https://docs.cloud.google.com/billing/docs/how-to/modify-contacts#permissions), billing account users still require additional
+[*Google payments user permissions*](https://docs.cloud.google.com/billing/docs/how-to/modify-contacts)
+granted on the associated payments profile.
+
+---
 ## 2026-01-21
 
 ### Feature

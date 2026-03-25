@@ -4,6 +4,14 @@
 
 ### Feature
 
+**Gemini Enterprise: Enhanced filtering for Microsoft OneDrive data stores (Preview)**
+
+You can configure filters for your Microsoft OneDrive data stores using either the Google Cloud console or the API. These filters allow you to define exactly which content is accessible to the Assistant by including or excluding specific OneDrive paths.
+
+This feature is in Public Preview. For more information, see [Set up a Microsoft OneDrive data store](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-onedrive/set-up-data-store) and [Add filters to a Microsoft OneDrive data store](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-onedrive/add-filters-to-onedrive-data-store).
+
+### Feature
+
 **Gemini Enterprise: Get insights with the Data Insights agent (GA with allowlist)**
 
 The Data Insights agent is a Made by Google agent that provides insights from

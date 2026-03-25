@@ -1,5 +1,24 @@
 # Bigtable
 
+## 2026-03-25
+
+### Announcement
+
+Bigtable client for Java has modernized its Admin API. For detailed migration
+steps and code examples, see
+[Upgrading client libraries](https://docs.cloud.google.com/bigtable/docs/upgrading-clients#java).
+
+---
+## 2026-03-24
+
+### Feature
+
+You can manage Bigtable [tiered storage](https://docs.cloud.google.com/bigtable/docs/tiered-storage)
+configuration in Google Cloud console and view tiered storage metrics in
+[system insights](https://docs.cloud.google.com/bigtable/docs/monitoring-instance#console-monitoring-resources).
+For more information, see [Create and manage tables](https://docs.cloud.google.com/bigtable/docs/managing-tables).
+
+---
 ## 2026-03-06
 
 ### Feature

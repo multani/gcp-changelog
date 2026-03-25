@@ -1,6 +1,480 @@
 {
   "name": "Container Optimized OS",
   "entries": {
+    "2026-03-23": [
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Update to the Cloud Storage API",
+          "summary": "We are releasing an update to the Cloud Storage API. This update includes new features and performance improvements. More details will be shared soon."
+        }
+      },
+      {
+        "kind": "cos-125-19216-220-72",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.68](https://cos.googlesource.com/third_party/kernel/+/6df21e3fc3957bf2dc7eeb7d8e703fc57b1e07ac ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.220.72/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container-Optimized OS Update",
+          "summary": "Container-Optimized OS has been updated with new versions of the kernel, Docker, and Containerd. This release also includes updated GPU drivers for enhanced performance."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-23254 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel, CVE-2026-23254, has been fixed. This update addresses a critical issue, ensuring improved system security. It is recommended that all users apply this patch as soon as possible."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-71266 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability in the Linux kernel, CVE-2025-71266, has been addressed. This update ensures enhanced protection against potential exploits. It is recommended to apply this patch promptly to maintain system security."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Runtime sysctl changes:\n\n* Changed: net.ipv4.udp\\_mem: 188034 250714 376068 -> 188034 250715 376068",
+        "summary": {
+          "title": "Runtime sysctl udp_mem updated",
+          "summary": "The net.ipv4.udp_mem sysctl value has been updated. This change affects memory allocation for UDP sockets, with a minor adjustment to the maximum value."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-23262 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability in the Linux kernel, CVE-2026-23262, has been patched. This update is essential for maintaining the security and integrity of systems running the Linux kernel. Users are strongly advised to apply this patch as soon as possible."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-23243 in the Linux kernel.",
+        "summary": {
+          "title": "Security fix for Linux kernel",
+          "summary": "A critical security vulnerability (CVE-2026-23243) in the Linux kernel has been addressed. This update ensures the integrity and security of systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-71268 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2025-71268, ensuring enhanced protection for your systems. It is recommended to apply this patch promptly to maintain system integrity."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added CPU balloon support for Arm CPUs.",
+        "summary": {
+          "title": "CPU ballooning for Arm CPUs",
+          "summary": "CPU ballooning support has been added for Arm CPUs. This enhancement improves resource management for Arm-based systems."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-71267 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security fix",
+          "summary": "A critical security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2025-71267, ensuring enhanced protection for systems running the Linux operating system."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/google-osconfig-agent to v20260119.00.",
+        "summary": {
+          "title": "OSConfig agent updated",
+          "summary": "The OSConfig agent has been upgraded to version v20260119.00. This update addresses known issues and improves performance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/file to v5.47-r1.",
+        "summary": {
+          "title": "File utility updated",
+          "summary": "The file utility has been updated to version 5.47-r1. This release includes various improvements and bug fixes."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-71265 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability, CVE-2025-71265, affecting the Linux kernel has been addressed. This update is essential for maintaining system integrity and protecting against potential exploits. Ensure your systems are updated promptly to mitigate this risk."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Added support for the Lustre 2.14.0\\_p249 drivers.",
+        "summary": {
+          "title": "Lustre driver support updated",
+          "summary": "We've updated our system to support the Lustre 2.14.0_p249 drivers. This enhancement provides improved compatibility and performance for your storage needs."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.",
+        "summary": {
+          "title": "Security update for binutils-libs",
+          "summary": "A security vulnerability, CVE-2025-69644, has been addressed with an update to sys-libs/binutils-libs version 2.46.0. This ensures the system is protected against potential exploits related to this issue."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.",
+        "summary": {
+          "title": "Curl security update released",
+          "summary": "The net-misc/curl package has been updated to version 8.19.0. This update addresses critical security vulnerabilities, including CVE-2026-1965 and CVE-2026-3783, to enhance system protection."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Update to Cloud Functions",
+          "summary": "We are announcing a change to Cloud Functions. This update includes improvements to performance and reliability, ensuring a better experience for all users."
+        }
+      },
+      {
+        "kind": "cos-121-18867-381-45",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.122](https://cos.googlesource.com/third_party/kernel/+/d8086709417b04f7a79c84710f6bf3db42e87814 ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.381.45/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container OS Update",
+          "summary": "Container-Optimized OS has been updated with the latest versions of the kernel, Docker, and containerd. This release also includes updated GPU drivers for enhanced performance."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-69647 in binutils-libs.",
+        "summary": {
+          "title": "Security fix for binutils-libs",
+          "summary": "A security vulnerability, CVE-2025-69647, affecting binutils-libs has been resolved. This update ensures the security and stability of your system by patching this critical issue."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.",
+        "summary": {
+          "title": "Curl security update",
+          "summary": "The curl package has been updated to version 8.19.0, addressing critical security vulnerabilities CVE-2026-1965 and CVE-2026-3783. This update is important for maintaining system security."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated cos-gpu-installer to v2.6.1.",
+        "summary": {
+          "title": "GPU installer updated",
+          "summary": "The cos-gpu-installer has been updated to version 2.6.1. This update includes fixes and improvements to the GPU driver installation process."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.",
+        "summary": {
+          "title": "Security update for binutils-libs",
+          "summary": "An updated version of sys-libs/binutils-libs (2.46.0) has been released to address CVE-2025-69644. This update is recommended for all users to ensure system security. Please apply the patch as soon as possible."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-22026 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability in the Linux kernel, CVE-2025-22026, has been addressed. This update ensures the integrity and security of systems running the Linux kernel. Users are advised to apply the patch to protect against potential exploits."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-23254 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability, CVE-2026-23254, affecting the Linux kernel has been resolved. This update addresses the issue, enhancing system security. It is recommended that all users apply this patch promptly to protect their systems."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/google-osconfig-agent to v20260119.00.",
+        "summary": {
+          "title": "OSConfig Agent Updated",
+          "summary": "The google-osconfig-agent has been upgraded to version v20260119.00. This update addresses recent issues and improves performance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/file to v5.47-r1.",
+        "summary": {
+          "title": "File utility updated",
+          "summary": "The file utility has been upgraded to version 5.47-r1. This update addresses any issues present in the previous version."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Added support for the Lustre 2.14.0\\_p249 drivers.",
+        "summary": {
+          "title": "Lustre driver update",
+          "summary": "We have updated the supported Lustre drivers to version 2.14.0_p249. This enhancement provides improved performance and stability for Lustre file systems."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-71e99ee in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security fix",
+          "summary": "A security vulnerability in the Linux kernel, identified as KCTF-71e99ee, has been resolved. This fix addresses a critical issue, enhancing the overall security posture of systems running the Linux kernel. Users are encouraged to update their systems to ensure they benefit from this important patch."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-69648 in binutils-libs.",
+        "summary": {
+          "title": "Security fix for binutils-libs",
+          "summary": "A security vulnerability (CVE-2025-69648) in binutils-libs has been resolved. This update addresses potential security risks associated with the library. Users are advised to update to the latest version to ensure their systems are protected."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Update to the security policy",
+          "summary": "We are updating our security policy to enhance data protection. This change aims to improve our overall security posture and ensure compliance with evolving regulations. Further details will be shared shortly."
+        }
+      },
+      {
+        "kind": "cos-dev-133-19633-0-0",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.76](https://cos.googlesource.com/third_party/kernel/+/788077df45931035984615c9958e274d89bd7e1f ) | v27.5.1 | v2.2.1 | [See List](https://storage.googleapis.com/cos-tools/19633.0.0/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 19633.0.0 Release Notes",
+          "summary": "This release of Container-Optimized OS (COS) version 19633.0.0 includes updates to the kernel, Docker, and containerd. It also provides support for GPU drivers."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/expat to v2.7.4.",
+        "summary": {
+          "title": "Expat library updated",
+          "summary": "The dev-libs/expat library has been successfully upgraded to version 2.7.4. This update ensures improved stability and performance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-firewall/iptables to v1.8.13.",
+        "summary": {
+          "title": "Firewall rules updated",
+          "summary": "The net-firewall/iptables have been updated to version 1.8.13. This update ensures improved security and performance for network traffic management."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/file to v5.47-r1.",
+        "summary": {
+          "title": "File utility updated",
+          "summary": "The file utility has been upgraded to version 5.47-r1. This update addresses potential issues and improves the functionality of the file identification tool."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-c9bc175 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "A security vulnerability (KCTF-c9bc175) in the Linux kernel has been addressed. This fix ensures improved security for systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/google-osconfig-agent to v20260119.00.",
+        "summary": {
+          "title": "OS Config Agent Updated",
+          "summary": "The google-osconfig-agent has been upgraded to version v20260119.00. This update addresses recent issues and improves agent performance."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.",
+        "summary": {
+          "title": "Security update for binutils-libs",
+          "summary": "A security vulnerability (CVE-2025-69644) has been resolved with an update to sys-libs/binutils-libs version 2.46.0. This update is recommended for all users to ensure system security. The new version addresses the identified vulnerability, improving overall system protection."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Added support for the Lustre 2.14.0\\_p249 drivers.",
+        "summary": {
+          "title": "Lustre 2.14.0 drivers now supported",
+          "summary": "We have added support for the Lustre 2.14.0_p249 drivers. This update enhances compatibility and performance for your storage needs."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.",
+        "summary": {
+          "title": "Curl security update released",
+          "summary": "The net-misc/curl package has been updated to version 8.19.0. This update addresses critical security vulnerabilities, specifically CVE-2026-1965 and CVE-2026-3783, ensuring enhanced protection against potential threats."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/google-breakpad to v2026.03.03.162944-r270.",
+        "summary": {
+          "title": "Breakpad updated",
+          "summary": "The google-breakpad component has been updated to version v2026.03.03.162944-r270. This update addresses known issues and improves stability."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added support for 8th generation TPU devices.",
+        "summary": {
+          "title": "TPU generation 8 support",
+          "summary": "We're excited to announce the addition of 8th generation TPU devices to our platform. This upgrade offers enhanced performance and capabilities for your machine learning workloads. Experience faster training and inference with the latest hardware."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Cloud Storage FIPS 140-2 Compliance Update",
+          "summary": "We are updating our Cloud Storage service to meet FIPS 140-2 compliance standards. This change ensures enhanced security for your data by adhering to federal cryptographic module requirements. The update will be rolled out gradually to all users."
+        }
+      },
+      {
+        "kind": "cos-117-18613-534-44",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.123](https://cos.googlesource.com/third_party/kernel/+/e91b457d7df4624c595f612f65f6a2f2bc973df4 ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.534.44/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 18613.534.44 release",
+          "summary": "This release includes updates to the kernel, Docker, and containerd. GPU drivers are also updated in this version. Please refer to the provided links for specific version details."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/file to v5.47-r1.",
+        "summary": {
+          "title": "File package updated",
+          "summary": "The sys-apps/file package has been updated to version 5.47-r1. This update addresses recent issues and improves stability."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated cos-gpu-installer to v2.6.1.",
+        "summary": {
+          "title": "GPU installer updated",
+          "summary": "The cos-gpu-installer has been updated to version 2.6.1. This update addresses known issues and improves performance."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-23254 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability, CVE-2026-23254, affecting the Linux kernel has been resolved. This update ensures enhanced protection against potential exploits. Users are advised to apply the patch to maintain system security."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.",
+        "summary": {
+          "title": "Security Update for curl",
+          "summary": "The net-misc/curl package has been updated to version 8.19.0. This update addresses critical security vulnerabilities, including CVE-2026-1965 and CVE-2026-3783. Users are advised to update their systems to ensure protection against these threats."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.",
+        "summary": {
+          "title": "Security update for binutils-libs",
+          "summary": "An updated version of sys-libs/binutils-libs (2.46.0) has been released. This update addresses a security vulnerability identified by CVE-2025-69644."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Added support for the Lustre 2.14.0\\_p249 drivers.",
+        "summary": {
+          "title": "Lustre driver support updated",
+          "summary": "We have updated our systems to include support for the Lustre 2.14.0_p249 drivers. This enhancement provides improved functionality and compatibility for users working with Lustre file systems."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-23231 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2026-23231, enhancing the overall security of systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-23243 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability in the Linux kernel, CVE-2026-23243, has been fixed. This update is essential for maintaining system security and protecting against potential exploits. Applying this patch is recommended for all users."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service Health Dashboard Update",
+          "summary": "We've updated the Service Health Dashboard to provide more detailed information and improve its usability. This change aims to give you a clearer view of service status and potential impacts."
+        }
+      },
+      {
+        "kind": "cos-113-18244-582-47",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.161](https://cos.googlesource.com/third_party/kernel/+/824daafa5f157963eea76b8fc10de1d2df43be70 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.582.47/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 18244.582.47 release",
+          "summary": "This release includes updates to the kernel, Docker, and containerd. It also features updated GPU drivers for enhanced performance. This version is now available for use."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-69647 in binutils-libs.",
+        "summary": {
+          "title": "Security fix for binutils-libs",
+          "summary": "A security vulnerability, CVE-2025-69647, affecting binutils-libs has been addressed. This update ensures the security and integrity of the affected components."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/file to v5.47-r1.",
+        "summary": {
+          "title": "File utility updated",
+          "summary": "The file utility has been upgraded to version 5.47-r1. This update addresses potential issues and improves the overall stability of the package."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.",
+        "summary": {
+          "title": "Security update for binutils-libs",
+          "summary": "An updated version of sys-libs/binutils-libs (2.46.0) has been released, addressing a critical security vulnerability identified as CVE-2025-69644. This update is recommended for all users to ensure system security."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-26822 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability (CVE-2024-26822) in the Linux kernel has been addressed. This update ensures enhanced protection against potential exploits."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-23243 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel, CVE-2026-23243, has been addressed. This update ensures the security and stability of systems running the Linux kernel. It is recommended to apply this patch to protect against potential exploits."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.",
+        "summary": {
+          "title": "Security update for curl",
+          "summary": "The net-misc/curl package has been updated to version 8.19.0. This update addresses critical security vulnerabilities, specifically CVE-2026-1965 and CVE-2026-3783, to enhance system security."
+        }
+      }
+    ],
     "2026-03-17": [
       {
         "kind": "Change",

@@ -1,5 +1,21 @@
 # Gemini Enterprise
 
+## 2026-03-24
+
+### Feature
+
+**Gemini Enterprise: Get insights with the Data Insights agent (GA with allowlist)**
+
+The Data Insights agent is a Made by Google agent that provides insights from
+your BigQuery data.
+This feature is available as a GA with allowlist.
+Contact your Google Cloud [sales representative](https://cloud.google.com/contact) to access this
+feature.
+
+For more information, see
+[Get insights with the Data Insights agent](https://docs.cloud.google.com/gemini/enterprise/docs/data-agent).
+
+---
 ## 2026-03-23
 
 ### Feature

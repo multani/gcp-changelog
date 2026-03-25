@@ -1,5 +1,12 @@
 # Policy Controller
 
+## 2026-02-23
+
+### Change
+
+Policy Controller version 1.23.0 is now available.
+
+---
 ## 2025-09-02
 
 ### Announcement

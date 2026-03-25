@@ -965,6 +965,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Cloud router <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../cloud-router/" class="dropdown-item">Cloud Router</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Cloud run <b class="caret"></b>
                         </a>
 
@@ -2377,10 +2389,19 @@
 
 <h1 id="google-distributed-cloud-software-only-for-vmware">Google Distributed Cloud (software only) for VMware</h1>
 <h2 id="2026-03-23">2026-03-23</h2>
+<h3 id="announcement">Announcement</h3>
+<p>Google Distributed Cloud (software only) for VMware 1.33.600-gke.39 is now available
+for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.
+Google Distributed Cloud 1.33.600-gke.39 runs on Kubernetes v1.33.5-gke.2200.</p>
+<p>If you are using a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.</p>
 <h3 id="fixed">Fixed</h3>
 <p>The following issues were fixed in 1.33.600-gke.39:</p>
 <ul>
-<li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 <li>Fixed an issue where the node-problem-detector was incorrectly deployed onto
   non-Advanced (V1) VMware clusters, causing the containerd runtime to
   continuously restart on affected nodes, leading to ETCD/CRI failures and
@@ -2401,16 +2422,6 @@
 <li>Fixed an issue where the system certificate pool was ignored when a custom CA
   certificate was configured for a registry mirror.</li>
 </ul>
-<h3 id="announcement">Announcement</h3>
-<p>Google Distributed Cloud (software only) for VMware 1.33.600-gke.39 is now available
-for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.
-Google Distributed Cloud 1.33.600-gke.39 runs on Kubernetes v1.33.5-gke.2200.</p>
-<p>If you are using a third-party storage vendor, check the Google Distributed Cloud-ready
-storage partners document to make sure the storage vendor has already passed the
-qualification for this release.</p>
-<p>After a release, it takes approximately 7 to 14 days for the version to become
-available for use with GKE On-Prem API clients: the Google Cloud console, the
-gcloud CLI, and Terraform.</p>
 <hr />
 <h2 id="2026-03-20">2026-03-20</h2>
 <h3 id="change">Change</h3>

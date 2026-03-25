@@ -12,10 +12,18 @@
       },
       {
         "kind": "Fixed",
-        "content": "The following issues were fixed in 1.33.600-gke.39:\n\n* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/version-history).\n* Resolved an issue where Certificate Authority (CA) rotation became stuck\n  on self-managed clusters (admin, hybrid, or standalone). This fix resolves an\n  internal resource synchronization error that previously prevented the rotation\n  process from completing successfully.",
+        "content": "The following issues were fixed in 1.33.600-gke.39:\n\n* Resolved an issue where Certificate Authority (CA) rotation became stuck on self-managed clusters (admin, hybrid, or standalone). This fix resolves an internal resource synchronization error that previously prevented the rotation process from completing successfully.",
         "summary": {
-          "title": "Security and Rotation Fixes",
-          "summary": "This release addresses critical security vulnerabilities and resolves a CA rotation issue for self-managed clusters, ensuring improved stability and security."
+          "title": "CA rotation issue resolved",
+          "summary": "An issue preventing Certificate Authority rotation on self-managed clusters has been fixed. This resolves an internal resource synchronization error that blocked the rotation process."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/version-history).",
+        "summary": {
+          "title": "Security updates for bare metal",
+          "summary": "Resolved security vulnerabilities in the latest bare metal release. For a detailed list of fixes, please refer to the version history documentation."
         }
       }
     ],

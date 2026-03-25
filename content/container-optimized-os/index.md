@@ -1,5 +1,261 @@
 # Container Optimized OS
 
+## 2026-03-23
+
+### Change
+
+
+
+### cos-125-19216-220-72
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.68](https://cos.googlesource.com/third_party/kernel/+/6df21e3fc3957bf2dc7eeb7d8e703fc57b1e07ac ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.220.72/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-23254 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71266 in the Linux kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 188034 250715 376068
+
+### Security
+
+Fixed CVE-2026-23262 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23243 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71268 in the Linux kernel.
+
+### Fixed
+
+Added CPU balloon support for Arm CPUs.
+
+### Security
+
+Fixed CVE-2025-71267 in the Linux kernel.
+
+### Fixed
+
+Upgraded app-admin/google-osconfig-agent to v20260119.00.
+
+### Fixed
+
+Upgraded sys-apps/file to v5.47-r1.
+
+### Security
+
+Fixed CVE-2025-71265 in the Linux kernel.
+
+### Change
+
+Added support for the Lustre 2.14.0\_p249 drivers.
+
+### Security
+
+Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.
+
+### Security
+
+Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.
+
+### Change
+
+
+
+### cos-121-18867-381-45
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.122](https://cos.googlesource.com/third_party/kernel/+/d8086709417b04f7a79c84710f6bf3db42e87814 ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.381.45/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-69647 in binutils-libs.
+
+### Security
+
+Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.
+
+### Fixed
+
+Updated cos-gpu-installer to v2.6.1.
+
+### Security
+
+Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.
+
+### Security
+
+Fixed CVE-2025-22026 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23254 in the Linux kernel.
+
+### Fixed
+
+Upgraded app-admin/google-osconfig-agent to v20260119.00.
+
+### Fixed
+
+Upgraded sys-apps/file to v5.47-r1.
+
+### Change
+
+Added support for the Lustre 2.14.0\_p249 drivers.
+
+### Security
+
+Fixed KCTF-71e99ee in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-69648 in binutils-libs.
+
+### Change
+
+
+
+### cos-dev-133-19633-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.76](https://cos.googlesource.com/third_party/kernel/+/788077df45931035984615c9958e274d89bd7e1f ) | v27.5.1 | v2.2.1 | [See List](https://storage.googleapis.com/cos-tools/19633.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Upgraded dev-libs/expat to v2.7.4.
+
+### Fixed
+
+Upgraded net-firewall/iptables to v1.8.13.
+
+### Fixed
+
+Upgraded sys-apps/file to v5.47-r1.
+
+### Security
+
+Fixed KCTF-c9bc175 in the Linux kernel.
+
+### Fixed
+
+Upgraded app-admin/google-osconfig-agent to v20260119.00.
+
+### Security
+
+Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.
+
+### Change
+
+Added support for the Lustre 2.14.0\_p249 drivers.
+
+### Security
+
+Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.
+
+### Fixed
+
+Upgraded chromeos-base/google-breakpad to v2026.03.03.162944-r270.
+
+### Feature
+
+Added support for 8th generation TPU devices.
+
+### Change
+
+
+
+### cos-117-18613-534-44
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.123](https://cos.googlesource.com/third_party/kernel/+/e91b457d7df4624c595f612f65f6a2f2bc973df4 ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.534.44/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Upgraded sys-apps/file to v5.47-r1.
+
+### Fixed
+
+Updated cos-gpu-installer to v2.6.1.
+
+### Security
+
+Fixed CVE-2026-23254 in the Linux kernel.
+
+### Security
+
+Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.
+
+### Security
+
+Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.
+
+### Change
+
+Added support for the Lustre 2.14.0\_p249 drivers.
+
+### Security
+
+Fixed CVE-2026-23231 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23243 in the Linux kernel.
+
+### Change
+
+
+
+### cos-113-18244-582-47
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.161](https://cos.googlesource.com/third_party/kernel/+/824daafa5f157963eea76b8fc10de1d2df43be70 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.582.47/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2025-69647 in binutils-libs.
+
+### Fixed
+
+Upgraded sys-apps/file to v5.47-r1.
+
+### Security
+
+Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.
+
+### Security
+
+Fixed CVE-2024-26822 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23243 in the Linux kernel.
+
+### Security
+
+Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.
+
+---
 ## 2026-03-17
 
 ### Change

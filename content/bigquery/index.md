@@ -1,5 +1,15 @@
 # BigQuery
 
+## 2026-03-24
+
+### Feature
+
+You can now use the [BigQuery Data Transfer Service remote MCP
+server](https://docs.cloud.google.com/bigquery/docs/reference/datatransfer/mcp) to enable AI agents to
+create, manage, and run data transfers. This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-03-23
 
 ### Feature

@@ -965,6 +965,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Cloud router <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../cloud-router/" class="dropdown-item">Cloud Router</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Cloud run <b class="caret"></b>
                         </a>
 
@@ -2391,12 +2403,10 @@ qualification for this release of Google Distributed Cloud for bare metal.</p>
 <h3 id="fixed">Fixed</h3>
 <p>The following issues were fixed in 1.33.600-gke.39:</p>
 <ul>
-<li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/version-history">Vulnerability fixes</a>.</li>
-<li>Resolved an issue where Certificate Authority (CA) rotation became stuck
-  on self-managed clusters (admin, hybrid, or standalone). This fix resolves an
-  internal resource synchronization error that previously prevented the rotation
-  process from completing successfully.</li>
+<li>Resolved an issue where Certificate Authority (CA) rotation became stuck on self-managed clusters (admin, hybrid, or standalone). This fix resolves an internal resource synchronization error that previously prevented the rotation process from completing successfully.</li>
 </ul>
+<h3 id="security">Security</h3>
+<p>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/version-history">Vulnerability fixes</a>.</p>
 <hr />
 <h2 id="2026-03-18">2026-03-18</h2>
 <h3 id="announcement_1">Announcement</h3>
@@ -2502,7 +2512,7 @@ storage partners document to make sure the storage vendor has already passed
 the qualification for this release of Google Distributed Cloud for bare metal.</p>
 <hr />
 <h2 id="2026-01-30">2026-01-30</h2>
-<h3 id="security">Security</h3>
+<h3 id="security_1">Security</h3>
 <p>Multiple security vulnerabilities have been identified in the OpenSSL library.
 The most significant finding is CVE-2025-15467, a critical vulnerability that
 might allow for remote code execution (RCE) or denial of service (DoS) attacks

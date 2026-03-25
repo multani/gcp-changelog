@@ -78,6 +78,7 @@
 - [Cloud NGFW](cloud-ngfw/index.md)
 - [Cloud Product Registry API](cloud-product-registry-api/index.md)
 - [Cloud Quotas](cloud-quotas/index.md)
+- [Cloud Router](cloud-router/index.md)
 - [Cloud Run](cloud-run/index.md)
 - [Cloud Run functions](cloud-run-functions/index.md)
 - [Cloud SQL for MySQL](cloud-sql-for-mysql/index.md)

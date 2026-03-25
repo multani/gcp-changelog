@@ -9,6 +9,204 @@
     <author>
       <name>Google Cloud</name>
     </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-14:feature:0</id>
+    <published>2026-03-14T00:00:00+00:00</published>
+    <updated>2026-03-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Advanced reporting is available in French Canadian</strong></p>
+<p>Advanced reporting dashboards are now available in French Canadian. For more
+information about configuring your instance for location and language, see
+<a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-location#configure-location-and-language">Configure location and
+language</a>.</p>]]></content>
+    <summary>Advanced reporting dashboards are now available in French Canadian. You can configure your instance for location and language to enable this feature.</summary>
+    <title>Feature: Advanced reporting now in French Canadian</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-14:feature:1</id>
+    <published>2026-03-14T00:00:00+00:00</published>
+    <updated>2026-03-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Queue Performance dashboard</strong></p>
+<p>With the <strong>Queue Performance - Calls</strong> and <strong>Queue Performance - Chats</strong>
+dashboards, get performance metrics by queue for your call and chat sessions.
+This includes queue interaction volume, abandons, handle time, callbacks,
+sentiment, and CSAT. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-performance">Queue Performance
+dashboards</a>.</p>]]></content>
+    <summary>Introducing new dashboards to monitor call and chat queue performance. Gain insights into interaction volume, abandons, handle time, and customer satisfaction for each queue.</summary>
+    <title>Feature: New Queue Performance Dashboards</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-14:announcement:2</id>
+    <published>2026-03-14T00:00:00+00:00</published>
+    <updated>2026-03-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Advanced reporting dashboards 4.0</strong></p>
+<p>We've released version 4.0 of the advanced reporting dashboards.</p>]]></content>
+    <summary>We are excited to announce the release of version 4.0 of our advanced reporting dashboards. This latest iteration offers enhanced features and improved performance for your data analysis needs.</summary>
+    <title>Announcement: New Reporting Dashboards Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-14:feature:3</id>
+    <published>2026-03-14T00:00:00+00:00</published>
+    <updated>2026-03-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Voicemails dashboard</strong></p>
+<p>With the <strong>Voicemails</strong> dashboard, get insights into the volume of voicemails
+received by your contact center and the performance of your agents in responding
+to them. This includes the number of voicemails received, the number of
+voicemails accessed by agents, and the average agent response time. For more
+information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-voicemails">Voicemails
+dashboard</a>.</p>]]></content>
+    <summary>Introducing the Voicemails dashboard, offering insights into voicemail volume and agent response performance within your contact center. Track key metrics like received voicemails, agent access, and average response times to optimize your operations.</summary>
+    <title>Feature: New Voicemail Insights Dashboard</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-14:fixed:4</id>
+    <published>2026-03-14T00:00:00+00:00</published>
+    <updated>2026-03-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were addressed in this release:</p>
+<ul>
+<li>Fixed an issue where the <strong>Start Time</strong> and <strong>End Time</strong> filters weren't
+  correctly applied to summary metrics on the <strong>Agent Performance</strong> dashboard
+  and historical reports.</li>
+<li>Fixed an issue where calls returned to queues due to agent connectivity or
+  microphone errors didn't appear in the <strong>Queued Calls</strong> dashboard.</li>
+<li>Fixed an issue on the <strong>CSAT Dashboard - Calls</strong> dashboard where the
+  direction in the <strong>Direction</strong> filter couldn't be selected.</li>
+<li>Fixed an issue in dashboards with a <strong>Time Format</strong> filter. When users
+  selected <strong>Seconds</strong> in this filter, single-value tiles displayed decimals
+  instead of whole numbers.</li>
+<li>Updated the format of time duration fields in Explores from HH:MM:SS to
+  MM:SS for durations of less than one hour. For example, <code>00:10:20</code> changed
+  to <code>10:20</code>.</li>
+<li>Fixed an issue where the <strong>Total Failed</strong> metric incorrectly counted a
+  maximum of one failure per call or chat session.</li>
+<li>Fixed time duration fields so that values represent the number of seconds
+  rather than a fraction of a day.</li>
+<li>Fixed an issue where the <strong>Queue Abandon %</strong> tile was missing from the
+  <strong>Abandons</strong> dashboards.</li>
+<li>Fixed an issue on the <strong>Failed Sessions</strong> dashboards where the <strong>Queue
+  Name</strong> column of the <strong>Historical</strong> table and the <strong>Queue Name</strong> filter
+  weren't appearing.</li>
+<li>Fixed an issue where the <strong>Time Format</strong> filter was missing from dashboards.</li>
+<li>In the <strong>Real-time Calls</strong>, <strong>Real-time Chats</strong>, <strong>Queue Group
+  Performance</strong>, and <strong>Email</strong> dashboards, the naming of fields such as
+  "assigned at", "created at", and "ended at" was improved in the Explores to
+  make them clearer. For example, on the <strong>Real-time Chats - Chats Connected</strong>
+  dashboard, in the <strong>Chat Metrics (Live)</strong> Explore, <strong>Chat &gt;
+  Started At Date &gt; Date</strong> and **Chat &gt; Started At Date<blockquote>
+<p>Month<strong> changed to </strong>Chat &gt; Started At &gt;
+  Started At Date<strong> and </strong>Chat &gt; Started At &gt; Started At
+  Month**.</p>
+</blockquote>
+</li>
+<li>Fixed an issue where the <strong>Agent preferences</strong> table displayed an incorrect
+  date and timestamp.</li>
+<li>Fixed an issue where the <strong>Location</strong> filter on the <strong>All interactions for
+  Chats</strong> dashboard didn't display data in some tiles.</li>
+<li>Fixed an issue where deactivated users appeared in dashboards.</li>
+<li>Fixed an issue where outbound calls that weren't associated with queues
+  appeared in the Queue Performance dashboard.</li>
+<li>Fixed performance issues on the Agent Performance dashboard.</li>
+<li>Fixed an issue on the Failed Interactions dashboard where the <strong>Outbound
+  Phone Numbers</strong> filter didn't display any values.</li>
+<li>Fixed an issue where the <strong>Queue Interactions</strong> metric included the short
+  abandons count.</li>
+<li>Fixed an issue on the Queue Group Performance - All dashboard where the
+  <strong>Locations</strong> filter didn't display all values.</li>
+</ul>]]></content>
+    <summary>Several issues affecting dashboard accuracy, filter functionality, and data display have been resolved. This update ensures more reliable reporting on agent performance, call queues, and interaction metrics.</summary>
+    <title>Fixed: Resolved Dashboard and Reporting Issues</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-14:feature:5</id>
+    <published>2026-03-14T00:00:00+00:00</published>
+    <updated>2026-03-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Update to the Virtual agent dashboard for wait-time virtual agent metrics</strong></p>
+<p>The <strong>Virtual agent</strong> dashboard includes the following new tiles to measure the
+activity of wait-time virtual agents while end-users wait in queue:</p>
+<ul>
+<li><strong>Total VA In-Queue Interactions</strong> (calls only): the number of calls where
+  wait-time virtual agents were active while end-users were in a queue</li>
+<li><strong>Total VA In-Queue Time</strong> (calls only): the total time that wait-time
+  virtual agents were active while end-users were in a queue</li>
+<li><strong>Avg VA In-Queue Time</strong> (calls only): the average time that wait-time
+  virtual agents were active while end-users were in a queue</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-virtual-agent">Virtual agent
+dashboards</a>.</p>]]></content>
+    <summary>The Virtual Agent dashboard now displays new tiles to measure wait-time virtual agent activity. These metrics include total and average in-queue interactions and time for calls, providing deeper insights into agent performance during customer wait times.</summary>
+    <title>Feature: New Virtual Agent Metrics Added</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-14:feature:6</id>
+    <published>2026-03-14T00:00:00+00:00</published>
+    <updated>2026-03-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Improved analytics for Queue Interval and Channel Interval dashboards</strong></p>
+<p>We've improved the detailed information available for the <strong>Queue Interval</strong> and
+<strong>Channel Interval</strong> dashboards:</p>
+<ul>
+<li><strong>Queue Interval dashboards</strong>: Click a bar in the <strong>SLA by Interval</strong> tile
+  to get historical call or chat queue metrics for that interval.</li>
+<li><strong>Channel Interval dashboards</strong>: Click a data point on the trend line in the
+  <strong>Service Level Trend</strong>, <strong>AHT Trend</strong>, <strong>Queue Time Trend</strong>, <strong>CSAT
+  Trend</strong>, or <strong>Transfer Trend</strong> tile to get historical call or chat queue
+  metrics for that interval.</li>
+</ul>]]></content>
+    <summary>We've enhanced the Queue Interval and Channel Interval dashboards with improved analytics. Users can now click on specific data points within the dashboards to access historical call or chat queue metrics for selected intervals, providing deeper insights into performance.</summary>
+    <title>Feature: Enhanced Queue and Channel Analytics</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-10:announcement:0</id>
+    <published>2026-03-10T00:00:00+00:00</published>
+    <updated>2026-03-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Mobile SDK patch</strong></p>
+<p>This patch fixes an iOS SDK issue where end-users were directed to an
+unresponsive support page after closing a chat session and completing the
+post-chat survey.</p>]]></content>
+    <summary>A recent patch addresses an issue where iOS SDK users were sent to an unresponsive support page after completing a post-chat survey. This fix ensures a smoother user experience by correctly handling the closure of chat sessions.</summary>
+    <title>Announcement: iOS SDK Chat Issue Resolved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-02-25:announcement:0</id>
+    <published>2026-02-25T00:00:00+00:00</published>
+    <updated>2026-02-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS 4.0 patch</strong></p>
+<p>This patch does the following:</p>
+<ul>
+<li>Fixes an issue where voicemails were being routed to agents who were not
+  assigned to the intended queue.</li>
+<li>Adds the ability to disable the IVR greeting message, both at the global
+  level and at the Direct Access Point queue level.</li>
+<li>Lets an agent and an end-user join a call simultaneously.</li>
+</ul>]]></content>
+    <summary>This patch for CCaaS 4.0 resolves voicemail routing errors and introduces new features for IVR greeting control. It also enables simultaneous participation of agents and end-users in calls.</summary>
+    <title>Announcement: CCaaS 4.0 Patch Release</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
     <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-16:feature:0</id>
     <published>2026-03-16T00:00:00+00:00</published>
     <updated>2026-03-16T00:00:00+00:00</updated>
@@ -376,204 +574,6 @@ by default. To use this capability, ask your Google contact to turn it on for
 your instance.</p>]]></content>
     <summary>You can now set specific hours for your contact center to fulfill callbacks. This feature helps manage callback scheduling, with options to roll over to the next day or cancel callbacks scheduled outside these hours. Contact your Google representative to enable this capability.</summary>
     <title>Feature: Configure Callback Fulfillment Hours</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-14:feature:0</id>
-    <published>2026-03-14T00:00:00+00:00</published>
-    <updated>2026-03-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Advanced reporting is available in French Canadian</strong></p>
-<p>Advanced reporting dashboards are now available in French Canadian. For more
-information about configuring your instance for location and language, see
-<a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-location#configure-location-and-language">Configure location and
-language</a>.</p>]]></content>
-    <summary>Advanced reporting dashboards are now available in French Canadian. You can configure your instance for location and language to enable this feature.</summary>
-    <title>Feature: Advanced reporting now in French Canadian</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-14:feature:1</id>
-    <published>2026-03-14T00:00:00+00:00</published>
-    <updated>2026-03-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Queue Performance dashboard</strong></p>
-<p>With the <strong>Queue Performance - Calls</strong> and <strong>Queue Performance - Chats</strong>
-dashboards, get performance metrics by queue for your call and chat sessions.
-This includes queue interaction volume, abandons, handle time, callbacks,
-sentiment, and CSAT. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-performance">Queue Performance
-dashboards</a>.</p>]]></content>
-    <summary>Introducing new dashboards to monitor call and chat queue performance. Gain insights into interaction volume, abandons, handle time, and customer satisfaction for each queue.</summary>
-    <title>Feature: New Queue Performance Dashboards</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-14:announcement:2</id>
-    <published>2026-03-14T00:00:00+00:00</published>
-    <updated>2026-03-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Advanced reporting dashboards 4.0</strong></p>
-<p>We've released version 4.0 of the advanced reporting dashboards.</p>]]></content>
-    <summary>We are excited to announce the release of version 4.0 of our advanced reporting dashboards. This latest iteration offers enhanced features and improved performance for your data analysis needs.</summary>
-    <title>Announcement: New Reporting Dashboards Available</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-14:feature:3</id>
-    <published>2026-03-14T00:00:00+00:00</published>
-    <updated>2026-03-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Voicemails dashboard</strong></p>
-<p>With the <strong>Voicemails</strong> dashboard, get insights into the volume of voicemails
-received by your contact center and the performance of your agents in responding
-to them. This includes the number of voicemails received, the number of
-voicemails accessed by agents, and the average agent response time. For more
-information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-voicemails">Voicemails
-dashboard</a>.</p>]]></content>
-    <summary>Introducing the Voicemails dashboard, offering insights into voicemail volume and agent response performance within your contact center. Track key metrics like received voicemails, agent access, and average response times to optimize your operations.</summary>
-    <title>Feature: New Voicemail Insights Dashboard</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-14:fixed:4</id>
-    <published>2026-03-14T00:00:00+00:00</published>
-    <updated>2026-03-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The following issues were addressed in this release:</p>
-<ul>
-<li>Fixed an issue where the <strong>Start Time</strong> and <strong>End Time</strong> filters weren't
-  correctly applied to summary metrics on the <strong>Agent Performance</strong> dashboard
-  and historical reports.</li>
-<li>Fixed an issue where calls returned to queues due to agent connectivity or
-  microphone errors didn't appear in the <strong>Queued Calls</strong> dashboard.</li>
-<li>Fixed an issue on the <strong>CSAT Dashboard - Calls</strong> dashboard where the
-  direction in the <strong>Direction</strong> filter couldn't be selected.</li>
-<li>Fixed an issue in dashboards with a <strong>Time Format</strong> filter. When users
-  selected <strong>Seconds</strong> in this filter, single-value tiles displayed decimals
-  instead of whole numbers.</li>
-<li>Updated the format of time duration fields in Explores from HH:MM:SS to
-  MM:SS for durations of less than one hour. For example, <code>00:10:20</code> changed
-  to <code>10:20</code>.</li>
-<li>Fixed an issue where the <strong>Total Failed</strong> metric incorrectly counted a
-  maximum of one failure per call or chat session.</li>
-<li>Fixed time duration fields so that values represent the number of seconds
-  rather than a fraction of a day.</li>
-<li>Fixed an issue where the <strong>Queue Abandon %</strong> tile was missing from the
-  <strong>Abandons</strong> dashboards.</li>
-<li>Fixed an issue on the <strong>Failed Sessions</strong> dashboards where the <strong>Queue
-  Name</strong> column of the <strong>Historical</strong> table and the <strong>Queue Name</strong> filter
-  weren't appearing.</li>
-<li>Fixed an issue where the <strong>Time Format</strong> filter was missing from dashboards.</li>
-<li>In the <strong>Real-time Calls</strong>, <strong>Real-time Chats</strong>, <strong>Queue Group
-  Performance</strong>, and <strong>Email</strong> dashboards, the naming of fields such as
-  "assigned at", "created at", and "ended at" was improved in the Explores to
-  make them clearer. For example, on the <strong>Real-time Chats - Chats Connected</strong>
-  dashboard, in the <strong>Chat Metrics (Live)</strong> Explore, <strong>Chat &gt;
-  Started At Date &gt; Date</strong> and **Chat &gt; Started At Date<blockquote>
-<p>Month<strong> changed to </strong>Chat &gt; Started At &gt;
-  Started At Date<strong> and </strong>Chat &gt; Started At &gt; Started At
-  Month**.</p>
-</blockquote>
-</li>
-<li>Fixed an issue where the <strong>Agent preferences</strong> table displayed an incorrect
-  date and timestamp.</li>
-<li>Fixed an issue where the <strong>Location</strong> filter on the <strong>All interactions for
-  Chats</strong> dashboard didn't display data in some tiles.</li>
-<li>Fixed an issue where deactivated users appeared in dashboards.</li>
-<li>Fixed an issue where outbound calls that weren't associated with queues
-  appeared in the Queue Performance dashboard.</li>
-<li>Fixed performance issues on the Agent Performance dashboard.</li>
-<li>Fixed an issue on the Failed Interactions dashboard where the <strong>Outbound
-  Phone Numbers</strong> filter didn't display any values.</li>
-<li>Fixed an issue where the <strong>Queue Interactions</strong> metric included the short
-  abandons count.</li>
-<li>Fixed an issue on the Queue Group Performance - All dashboard where the
-  <strong>Locations</strong> filter didn't display all values.</li>
-</ul>]]></content>
-    <summary>Several issues affecting dashboard accuracy, filter functionality, and data display have been resolved. This update ensures more reliable reporting on agent performance, call queues, and interaction metrics.</summary>
-    <title>Fixed: Resolved Dashboard and Reporting Issues</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-14:feature:5</id>
-    <published>2026-03-14T00:00:00+00:00</published>
-    <updated>2026-03-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Update to the Virtual agent dashboard for wait-time virtual agent metrics</strong></p>
-<p>The <strong>Virtual agent</strong> dashboard includes the following new tiles to measure the
-activity of wait-time virtual agents while end-users wait in queue:</p>
-<ul>
-<li><strong>Total VA In-Queue Interactions</strong> (calls only): the number of calls where
-  wait-time virtual agents were active while end-users were in a queue</li>
-<li><strong>Total VA In-Queue Time</strong> (calls only): the total time that wait-time
-  virtual agents were active while end-users were in a queue</li>
-<li><strong>Avg VA In-Queue Time</strong> (calls only): the average time that wait-time
-  virtual agents were active while end-users were in a queue</li>
-</ul>
-<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-virtual-agent">Virtual agent
-dashboards</a>.</p>]]></content>
-    <summary>The Virtual Agent dashboard now displays new tiles to measure wait-time virtual agent activity. These metrics include total and average in-queue interactions and time for calls, providing deeper insights into agent performance during customer wait times.</summary>
-    <title>Feature: New Virtual Agent Metrics Added</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-14:feature:6</id>
-    <published>2026-03-14T00:00:00+00:00</published>
-    <updated>2026-03-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Improved analytics for Queue Interval and Channel Interval dashboards</strong></p>
-<p>We've improved the detailed information available for the <strong>Queue Interval</strong> and
-<strong>Channel Interval</strong> dashboards:</p>
-<ul>
-<li><strong>Queue Interval dashboards</strong>: Click a bar in the <strong>SLA by Interval</strong> tile
-  to get historical call or chat queue metrics for that interval.</li>
-<li><strong>Channel Interval dashboards</strong>: Click a data point on the trend line in the
-  <strong>Service Level Trend</strong>, <strong>AHT Trend</strong>, <strong>Queue Time Trend</strong>, <strong>CSAT
-  Trend</strong>, or <strong>Transfer Trend</strong> tile to get historical call or chat queue
-  metrics for that interval.</li>
-</ul>]]></content>
-    <summary>We've enhanced the Queue Interval and Channel Interval dashboards with improved analytics. Users can now click on specific data points within the dashboards to access historical call or chat queue metrics for selected intervals, providing deeper insights into performance.</summary>
-    <title>Feature: Enhanced Queue and Channel Analytics</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-03-10:announcement:0</id>
-    <published>2026-03-10T00:00:00+00:00</published>
-    <updated>2026-03-10T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Mobile SDK patch</strong></p>
-<p>This patch fixes an iOS SDK issue where end-users were directed to an
-unresponsive support page after closing a chat session and completing the
-post-chat survey.</p>]]></content>
-    <summary>A recent patch addresses an issue where iOS SDK users were sent to an unresponsive support page after completing a post-chat survey. This fix ensures a smoother user experience by correctly handling the closure of chat sessions.</summary>
-    <title>Announcement: iOS SDK Chat Issue Resolved</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-02-25:announcement:0</id>
-    <published>2026-02-25T00:00:00+00:00</published>
-    <updated>2026-02-25T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS 4.0 patch</strong></p>
-<p>This patch does the following:</p>
-<ul>
-<li>Fixes an issue where voicemails were being routed to agents who were not
-  assigned to the intended queue.</li>
-<li>Adds the ability to disable the IVR greeting message, both at the global
-  level and at the Direct Access Point queue level.</li>
-<li>Lets an agent and an end-user join a call simultaneously.</li>
-</ul>]]></content>
-    <summary>This patch for CCaaS 4.0 resolves voicemail routing errors and introduces new features for IVR greeting control. It also enables simultaneous participation of agents and end-users in calls.</summary>
-    <title>Announcement: CCaaS 4.0 Patch Release</title>
   </entry>
   <entry>
     <author>

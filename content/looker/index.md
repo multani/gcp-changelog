@@ -47,7 +47,7 @@ When enabled, the **Dashboard Tile Limits** preview feature lets admins set limi
 
 ### Feature
 
-Conversational Analytics now offers [new modes for asking questions](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data#ca-question-mode). Fast mode allows you to get answers more quickly. Thinking mode allows you to ask more complex questions and test your agent's capabilities.
+Conversational Analytics now offers [new modes for asking questions](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data#ca-question-mode). Fast mode allows you to get answers more quickly. Thinking mode allows you to ask more complex questions and test your agent's capabilities. (Note: Question modes are not yet available. This release note was updated on March 24, 2026.)
 
 ### Feature
 

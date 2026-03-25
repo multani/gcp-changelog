@@ -2,11 +2,24 @@
 
 ## 2026-03-23
 
+### Announcement
+
+Google Distributed Cloud (software only) for VMware 1.33.600-gke.39 is now available
+for download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).
+Google Distributed Cloud 1.33.600-gke.39 runs on Kubernetes v1.33.5-gke.2200.
+
+If you are using a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.
+
 ### Fixed
 
 The following issues were fixed in 1.33.600-gke.39:
 
-* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
 * Fixed an issue where the node-problem-detector was incorrectly deployed onto
   non-Advanced (V1) VMware clusters, causing the containerd runtime to
   continuously restart on affected nodes, leading to ETCD/CRI failures and
@@ -26,20 +39,6 @@ The following issues were fixed in 1.33.600-gke.39:
   plane load balancer initialization to fail.
 * Fixed an issue where the system certificate pool was ignored when a custom CA
   certificate was configured for a registry mirror.
-
-### Announcement
-
-Google Distributed Cloud (software only) for VMware 1.33.600-gke.39 is now available
-for download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).
-Google Distributed Cloud 1.33.600-gke.39 runs on Kubernetes v1.33.5-gke.2200.
-
-If you are using a third-party storage vendor, check the Google Distributed Cloud-ready
-storage partners document to make sure the storage vendor has already passed the
-qualification for this release.
-
-After a release, it takes approximately 7 to 14 days for the version to become
-available for use with GKE On-Prem API clients: the Google Cloud console, the
-gcloud CLI, and Terraform.
 
 ---
 ## 2026-03-20

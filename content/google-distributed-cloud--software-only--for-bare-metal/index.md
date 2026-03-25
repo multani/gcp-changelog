@@ -21,11 +21,11 @@ qualification for this release of Google Distributed Cloud for bare metal.
 
 The following issues were fixed in 1.33.600-gke.39:
 
-* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/version-history).
-* Resolved an issue where Certificate Authority (CA) rotation became stuck
-  on self-managed clusters (admin, hybrid, or standalone). This fix resolves an
-  internal resource synchronization error that previously prevented the rotation
-  process from completing successfully.
+* Resolved an issue where Certificate Authority (CA) rotation became stuck on self-managed clusters (admin, hybrid, or standalone). This fix resolves an internal resource synchronization error that previously prevented the rotation process from completing successfully.
+
+### Security
+
+Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/version-history).
 
 ---
 ## 2026-03-18

@@ -1,6 +1,26 @@
 {
   "name": "Compute Engine",
   "entries": {
+    "2026-03-24": [
+      {
+        "kind": "Feature",
+        "content": "**Generally available**: The maximum throughput for a Hyperdisk Balanced High\nAvailability disk is increased to 2,400 MiB/s from 1,200 MiB/s.\nHyperdisk Balanced High Availability provides high availability block storage for\nmission-critical workloads by synchronously replicating data between two zones\nwithin a region.\n\nFor more information, see [Hyperdisk Balanced High Availability overview](https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-balanced-ha).",
+        "summary": {
+          "title": "Hyperdisk Balanced HA Throughput Doubled",
+          "summary": "The maximum throughput for Hyperdisk Balanced High Availability disks has been increased to 2,400 MiB/s, doubling the previous limit. This enhancement provides even greater performance for mission-critical workloads requiring highly available block storage."
+        }
+      }
+    ],
+    "2026-03-23": [
+      {
+        "kind": "Feature",
+        "content": "**Preview**: The instance flexibility policy of a managed instance group (MIG)\nlets you override the minimum CPU platform and disk definition that is specified\nin the MIG's instance template. With these overrides, you can select machine\ntypes that run on different CPU platforms and that have different architectures.\n\nFor more information, see [About instance flexibility in MIGs](https://docs.cloud.google.com/compute/docs/instance-groups/about-instance-flexibility#overrides-for-instance-properties).",
+        "summary": {
+          "title": "Instance flexibility policy for MIGs",
+          "summary": "You can now override instance template settings for machine types and disks in managed instance groups using the instance flexibility policy. This allows for greater control over the underlying hardware used by your instances."
+        }
+      }
+    ],
     "2026-03-19": [
       {
         "kind": "Breaking",
@@ -8,14 +28,6 @@
         "summary": {
           "title": "New permissions for Compute Engine operations",
           "summary": "Operations on Compute Engine instance boot disks now require the `iam.serviceAccounts.actAs` permission. This includes actions like creating snapshots, cloning disks, and creating machine images. If you have the Compute Instance Admin and Service Account User roles, no action is needed. Otherwise, contact your administrator to grant the necessary permission."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Generally available**: The maximum throughput for a Hyperdisk Balanced High\nAvailability disk is increased to 2,400 MiB/s from 1,200 MiB/s.\nHyperdisk Balanced High Availability provides high availability block storage for\nmission-critical workloads by synchronously replicating data between two zones\nwithin a region.\n\nFor more information, see [Hyperdisk Balanced High Availability overview](https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-balanced-ha).",
-        "summary": {
-          "title": "Hyperdisk Balanced HA Throughput Doubled",
-          "summary": "The maximum throughput for Hyperdisk Balanced High Availability disks has been doubled to 2,400 MiB/s. This enhancement offers improved performance for mission-critical workloads requiring highly available block storage with synchronous data replication across zones."
         }
       }
     ],

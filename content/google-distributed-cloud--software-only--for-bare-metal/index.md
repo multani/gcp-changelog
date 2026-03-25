@@ -26,7 +26,6 @@ The following issues were fixed in 1.33.600-gke.39:
   on self-managed clusters (admin, hybrid, or standalone). This fix resolves an
   internal resource synchronization error that previously prevented the rotation
   process from completing successfully.
-* Allow the metrics-server-operator to clean up legacy resources (secrets, certificates, issuers) for the CA to support rotation.
 
 ---
 ## 2026-03-18

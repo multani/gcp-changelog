@@ -2,9 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Compute Engine</title>
   <subtitle>Changelog for Google Cloud product: Compute Engine</subtitle>
-  <updated>2026-03-19T00:00:00+00:00</updated>
+  <updated>2026-03-24T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:compute-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/compute-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2026-03-24:feature:0</id>
+    <published>2026-03-24T00:00:00+00:00</published>
+    <updated>2026-03-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Generally available</strong>: The maximum throughput for a Hyperdisk Balanced High
+Availability disk is increased to 2,400 MiB/s from 1,200 MiB/s.
+Hyperdisk Balanced High Availability provides high availability block storage for
+mission-critical workloads by synchronously replicating data between two zones
+within a region.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-balanced-ha">Hyperdisk Balanced High Availability overview</a>.</p>]]></content>
+    <summary>The maximum throughput for Hyperdisk Balanced High Availability disks has been increased to 2,400 MiB/s, doubling the previous limit. This enhancement provides even greater performance for mission-critical workloads requiring highly available block storage.</summary>
+    <title>Feature: Hyperdisk Balanced HA Throughput Doubled</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2026-03-23:feature:0</id>
+    <published>2026-03-23T00:00:00+00:00</published>
+    <updated>2026-03-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Preview</strong>: The instance flexibility policy of a managed instance group (MIG)
+lets you override the minimum CPU platform and disk definition that is specified
+in the MIG's instance template. With these overrides, you can select machine
+types that run on different CPU platforms and that have different architectures.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/compute/docs/instance-groups/about-instance-flexibility#overrides-for-instance-properties">About instance flexibility in MIGs</a>.</p>]]></content>
+    <summary>You can now override instance template settings for machine types and disks in managed instance groups using the instance flexibility policy. This allows for greater control over the underlying hardware used by your instances.</summary>
+    <title>Feature: Instance flexibility policy for MIGs</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -34,22 +65,6 @@ permission on the service account. For instructions, see
 <a href="https://docs.cloud.google.com/iam/docs/manage-access-other-resources">Manage access to other resources</a>.</p>]]></content>
     <summary>Operations on Compute Engine instance boot disks now require the `iam.serviceAccounts.actAs` permission. This includes actions like creating snapshots, cloning disks, and creating machine images. If you have the Compute Instance Admin and Service Account User roles, no action is needed. Otherwise, contact your administrator to grant the necessary permission.</summary>
     <title>Breaking: New permissions for Compute Engine operations</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:compute-engine:2026-03-19:feature:1</id>
-    <published>2026-03-19T00:00:00+00:00</published>
-    <updated>2026-03-19T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Generally available</strong>: The maximum throughput for a Hyperdisk Balanced High
-Availability disk is increased to 2,400 MiB/s from 1,200 MiB/s.
-Hyperdisk Balanced High Availability provides high availability block storage for
-mission-critical workloads by synchronously replicating data between two zones
-within a region.</p>
-<p>For more information, see <a href="https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-balanced-ha">Hyperdisk Balanced High Availability overview</a>.</p>]]></content>
-    <summary>The maximum throughput for Hyperdisk Balanced High Availability disks has been doubled to 2,400 MiB/s. This enhancement offers improved performance for mission-critical workloads requiring highly available block storage with synchronous data replication across zones.</summary>
-    <title>Feature: Hyperdisk Balanced HA Throughput Doubled</title>
   </entry>
   <entry>
     <author>

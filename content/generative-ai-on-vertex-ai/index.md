@@ -1,5 +1,47 @@
 # Generative AI on Vertex AI
 
+## 2026-03-24
+
+### Deprecated
+
+**Imagen generation GA endpoints deprecation**
+
+The following table describes image generation endpoints that are deprecated and
+their replacements. We recommend updating your model endpoints before June 30,
+2026, to avoid service disruption.
+
+| Discontinued endpoints | Recommended endpoint migration |
+| --- | --- |
+| `imagegeneration@002` | `gemini-2.5-flash-image` |
+| `imagegeneration@003` | `gemini-2.5-flash-image` |
+| `imagegeneration@004` | `gemini-2.5-flash-image` |
+| `imagegeneration@005` | `gemini-2.5-flash-image` |
+| `imagegeneration@006` | `gemini-2.5-flash-image` |
+| `imagetext@001` | `gemini-2.5-flash-image` |
+| `imagen-3.0-capability-001` | `gemini-2.5-flash-image` |
+| `imagen-3.0-capability-002` | `gemini-2.5-flash-image` |
+| `imagen-3.0-fast-generate-001` | `gemini-2.5-flash-image` |
+| `imagen-3.0-generate-001` | `gemini-2.5-flash-image` |
+| `imagen-3.0-generate-002` | `gemini-2.5-flash-image` |
+| `imagen-4.0-fast-generate-001` | `gemini-2.5-flash-image` |
+| `imagen-4.0-generate-001` | `gemini-2.5-flash-image` |
+| `imagen-4.0-ultra-generate-001` | `gemini-2.5-flash-image` |
+
+### Deprecated
+
+**Video generation GA endpoints deprecation**
+
+The following table describes video generation endpoints that are deprecated and
+their replacements. We recommend updating your model endpoints before June 30,
+2026, to avoid service disruption.
+
+| Discontinued endpoints | Recommended endpoint migration |
+| --- | --- |
+| `veo-3.0-generate-001` | `veo-3.1-generate-001` |
+| `veo-3.0-fast-generate-001` | `veo-3.1-fast-generate-001` |
+| `veo-2.0-generate-001` | `veo-3.1-generate-001` |
+
+---
 ## 2026-03-12
 
 ### Feature

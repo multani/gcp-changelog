@@ -1,5 +1,30 @@
 # Compute Engine
 
+## 2026-03-24
+
+### Feature
+
+**Generally available**: The maximum throughput for a Hyperdisk Balanced High
+Availability disk is increased to 2,400 MiB/s from 1,200 MiB/s.
+Hyperdisk Balanced High Availability provides high availability block storage for
+mission-critical workloads by synchronously replicating data between two zones
+within a region.
+
+For more information, see [Hyperdisk Balanced High Availability overview](https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-balanced-ha).
+
+---
+## 2026-03-23
+
+### Feature
+
+**Preview**: The instance flexibility policy of a managed instance group (MIG)
+lets you override the minimum CPU platform and disk definition that is specified
+in the MIG's instance template. With these overrides, you can select machine
+types that run on different CPU platforms and that have different architectures.
+
+For more information, see [About instance flexibility in MIGs](https://docs.cloud.google.com/compute/docs/instance-groups/about-instance-flexibility#overrides-for-instance-properties).
+
+---
 ## 2026-03-19
 
 ### Breaking
@@ -25,16 +50,6 @@ If you have already have the Compute Instance Admin (v1)
 Otherwise, ask your administrator to grant you the `iam.serviceAccounts.actAs`
 permission on the service account. For instructions, see
 [Manage access to other resources](https://docs.cloud.google.com/iam/docs/manage-access-other-resources).
-
-### Feature
-
-**Generally available**: The maximum throughput for a Hyperdisk Balanced High
-Availability disk is increased to 2,400 MiB/s from 1,200 MiB/s.
-Hyperdisk Balanced High Availability provides high availability block storage for
-mission-critical workloads by synchronously replicating data between two zones
-within a region.
-
-For more information, see [Hyperdisk Balanced High Availability overview](https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-balanced-ha).
 
 ---
 ## 2026-03-11

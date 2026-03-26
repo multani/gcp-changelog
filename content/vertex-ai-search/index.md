@@ -1,5 +1,31 @@
 # Vertex AI Search
 
+## 2026-03-26
+
+### Feature
+
+**Vertex AI Search: Gemini 3.1 Pro and Gemini 3 Flash for answer generation (Preview)**
+
+You can generate answers with the Gemini 3.1 Pro (Preview) and Gemini 3 Flash (Preview)
+models.
+
+For more information, see [Answer generation model versions and
+lifecycle](https://docs.cloud.google.com/generative-ai-app-builder/docs/answer-generation-models), [Gemini
+3.1 Pro](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-1-pro), and [Gemini 3
+Flash](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-flash).
+
+### Announcement
+
+**Vertex AI Search: Gemini 3 Pro (Preview) for answer generation discontinued**
+
+The Gemini 3 Pro (Preview) model has been discontinued and is no longer
+available for answer generation. If you have been using that model, upgrade to
+the Gemini 3.1 Pro (Preview) model.
+
+For information about available models, see [Answer generation model versions
+and lifecycle](https://docs.cloud.google.com/generative-ai-app-builder/docs/answer-generation-models).
+
+---
 ## 2026-02-24
 
 ### Feature

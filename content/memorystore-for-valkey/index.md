@@ -1,5 +1,23 @@
 # Memorystore for Valkey
 
+## 2026-03-26
+
+### Feature
+
+In addition to the [per-instance CA mode](https://docs.cloud.google.com/memorystore/docs/valkey/manage-in-transit-encryption), Memorystore for Valkey offers the following new CA modes:
+
+* [**Shared CA**](https://docs.cloud.google.com/memorystore/docs/valkey/use-shared-ca): a managed,
+  regionalized CA infrastructure. For each region, you can download a single CA
+  certificate bundle. This bundle is valid for all instances located in a region
+  that you configure to use the shared CA. Using a shared CA reduces the number of
+  certificates that clients need to manage. This CA mode is available in [Preview](https://docs.cloud.google.com/products#product-launch-stages).
+* [**Customer-managed CA**](https://docs.cloud.google.com/memorystore/docs/valkey/use-customer-managed-ca):
+  use your own CA pool that's hosted on [Certificate Authority Service](https://docs.cloud.google.com/certificate-authority-service/docs). If your client applications are configured to trust this CA, then your
+  applications can connect to an instance without you having to download and
+  install additional CA certificates. This gives you greater control and helps you
+  meet compliance requirements. This CA mode is available in [Preview](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-03-18
 
 ### Feature

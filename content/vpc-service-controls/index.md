@@ -1,5 +1,25 @@
 # VPC Service Controls
 
+## 2026-03-26
+
+### Feature
+
+[General availability](https://cloud.google.com/products#product-launch-stages) support
+for the following integration:
+
+* [Oracle Database@Google Cloud](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_oracle_database)
+
+---
+## 2026-03-23
+
+### Feature
+
+[Preview stage](https://cloud.google.com/products#product-launch-stages) support
+for the following integration:
+
+* [Oracle Database@Google Cloud](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_oracle_database)
+
+---
 ## 2026-03-16
 
 ### Feature

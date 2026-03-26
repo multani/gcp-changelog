@@ -3,6 +3,14 @@
   "entries": {
     "2026-03-25": [
       {
+        "kind": "Feature",
+        "content": "Database server compatibility with PostgreSQL version 18 is now generally\navailable ([GA](https://cloud.google.com/products#product-launch-stages)):\n\n* You can [create AlloyDB clusters](https://docs.cloud.google.com/alloydb/docs/cluster-create#procedure)\n  with PostgreSQL 18 compatibility.\n* You can [upgrade](https://docs.cloud.google.com/alloydb/docs/upgrade-db-inplace-major-version) existing\n  AlloyDB clusters running PostgreSQL major versions 14, 15, 16, or 17 to\n  PostgreSQL major version 18 with one click.\n* You can use Database Migration Service to\n  [migrate databases to AlloyDB](https://docs.cloud.google.com/database-migration/docs/postgresql-to-alloydb/migration-src-and-dest).",
+        "summary": {
+          "title": "AlloyDB adds PostgreSQL 18 compatibility",
+          "summary": "AlloyDB for PostgreSQL now supports version 18, allowing you to create new clusters or upgrade existing ones with this latest version. You can also migrate your PostgreSQL databases to AlloyDB using Database Migration Service."
+        }
+      },
+      {
         "kind": "Change",
         "content": "When no major version is specified, AlloyDB for PostgreSQL now defaults to\n[PostgreSQL major version 17](https://docs.cloud.google.com/alloydb/docs/db-version-policies#support-table)\nfor new clusters.",
         "summary": {
@@ -12,10 +20,10 @@
       },
       {
         "kind": "Feature",
-        "content": "The following AlloyDB AI features are available in [Preview](https://cloud.google.com/products#product-launch-stages):\n\n* You can now use the `ai.hybrid_search()` function, which fuses results from\n  each search type into a single list using the Reciprocal Rank Fusion (RRF)\n  algorithm. For more information, see [Run hybrid vector similarity\n  search](https://docs.cloud.google.com/alloydb/docs/ai/run-hybrid-vector-similarity-search).\n* AlloyDB now supports the `rum` extension for complex full-text search\n  operations. The `rum` extension extends standard GIN indexes by storing\n  positional information directly in the index. This enables faster phrase\n  searches and relevance ranking without needing to access the table data. For\n  more information, see [Create and manage a RUM\n  index](https://docs.cloud.google.com/alloydb/docs/ai/create-rum-index).",
+        "content": "The following AlloyDB AI features are available in [Preview](https://cloud.google.com/products#product-launch-stages):\n\n* You can now use the `ai.hybrid_search()` function, which fuses results from\n  each search type into a single list using the Reciprocal Rank Fusion (RRF)\n  algorithm. For more information, see [Run hybrid vector similarity search](https://docs.cloud.google.com/alloydb/docs/ai/run-hybrid-vector-similarity-search).\n* AlloyDB supports the `rum` extension for complex full-text search\n  operations. The `rum` extension extends standard GIN indexes by storing\n  positional information directly in the index. This enables faster phrase\n  searches and relevance ranking without needing to access the table data. For\n  more information, see [Create and manage a RUM index](https://docs.cloud.google.com/alloydb/docs/ai/create-rum-index).",
         "summary": {
-          "title": "New AI features in AlloyDB",
-          "summary": "AlloyDB introduces new AI capabilities, including hybrid search with RRF and support for the RUM extension for enhanced full-text search. These features are now available in preview."
+          "title": "AlloyDB AI features now in preview",
+          "summary": "New AI features are now available in AlloyDB, including hybrid search with Reciprocal Rank Fusion and support for the RUM extension for enhanced full-text search capabilities. These features aim to improve search performance and relevance."
         }
       }
     ],

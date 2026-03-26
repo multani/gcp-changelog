@@ -9,7 +9,28 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql:2026-03-25:change:0</id>
+    <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql:2026-03-25:feature:0</id>
+    <published>2026-03-25T00:00:00+00:00</published>
+    <updated>2026-03-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Database server compatibility with PostgreSQL version 18 is now generally
+available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>):</p>
+<ul>
+<li>You can <a href="https://docs.cloud.google.com/alloydb/docs/cluster-create#procedure">create AlloyDB clusters</a>
+  with PostgreSQL 18 compatibility.</li>
+<li>You can <a href="https://docs.cloud.google.com/alloydb/docs/upgrade-db-inplace-major-version">upgrade</a> existing
+  AlloyDB clusters running PostgreSQL major versions 14, 15, 16, or 17 to
+  PostgreSQL major version 18 with one click.</li>
+<li>You can use Database Migration Service to
+  <a href="https://docs.cloud.google.com/database-migration/docs/postgresql-to-alloydb/migration-src-and-dest">migrate databases to AlloyDB</a>.</li>
+</ul>]]></content>
+    <summary>AlloyDB for PostgreSQL now supports version 18, allowing you to create new clusters or upgrade existing ones with this latest version. You can also migrate your PostgreSQL databases to AlloyDB using Database Migration Service.</summary>
+    <title>Feature: AlloyDB adds PostgreSQL 18 compatibility</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql:2026-03-25:change:1</id>
     <published>2026-03-25T00:00:00+00:00</published>
     <updated>2026-03-25T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>When no major version is specified, AlloyDB for PostgreSQL now defaults to
@@ -22,24 +43,22 @@ for new clusters.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql:2026-03-25:feature:1</id>
+    <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql:2026-03-25:feature:2</id>
     <published>2026-03-25T00:00:00+00:00</published>
     <updated>2026-03-25T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The following AlloyDB AI features are available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>:</p>
 <ul>
 <li>You can now use the <code>ai.hybrid_search()</code> function, which fuses results from
   each search type into a single list using the Reciprocal Rank Fusion (RRF)
-  algorithm. For more information, see <a href="https://docs.cloud.google.com/alloydb/docs/ai/run-hybrid-vector-similarity-search">Run hybrid vector similarity
-  search</a>.</li>
-<li>AlloyDB now supports the <code>rum</code> extension for complex full-text search
+  algorithm. For more information, see <a href="https://docs.cloud.google.com/alloydb/docs/ai/run-hybrid-vector-similarity-search">Run hybrid vector similarity search</a>.</li>
+<li>AlloyDB supports the <code>rum</code> extension for complex full-text search
   operations. The <code>rum</code> extension extends standard GIN indexes by storing
   positional information directly in the index. This enables faster phrase
   searches and relevance ranking without needing to access the table data. For
-  more information, see <a href="https://docs.cloud.google.com/alloydb/docs/ai/create-rum-index">Create and manage a RUM
-  index</a>.</li>
+  more information, see <a href="https://docs.cloud.google.com/alloydb/docs/ai/create-rum-index">Create and manage a RUM index</a>.</li>
 </ul>]]></content>
-    <summary>AlloyDB introduces new AI capabilities, including hybrid search with RRF and support for the RUM extension for enhanced full-text search. These features are now available in preview.</summary>
-    <title>Feature: New AI features in AlloyDB</title>
+    <summary>New AI features are now available in AlloyDB, including hybrid search with Reciprocal Rank Fusion and support for the RUM extension for enhanced full-text search capabilities. These features aim to improve search performance and relevance.</summary>
+    <title>Feature: AlloyDB AI features now in preview</title>
   </entry>
   <entry>
     <author>

@@ -1,5 +1,21 @@
 # Google Kubernetes Engine
 
+## 2026-03-25
+
+### Feature
+
+To provide more controls over the control plane version upgrade, you can now do
+the following:
+
+* Configure a frequency of disruption from auto-upgrades by using the cluster
+  disruption budget. For more information, see
+  [Control the frequency of disruption from auto-upgrades](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/cluster-disruption-budget).
+* Continue using an existing control plane patch for a longer period, which
+  facilitates large-scale upgrade and downgrade operations. For more
+  information, see
+  [Patch version support](https://docs.cloud.google.com/kubernetes-engine/versioning#patch-version-support).
+
+---
 ## 2026-03-18
 
 ### Change

@@ -2,6 +2,19 @@
 
 ## 2026-03-25
 
+### Feature
+
+Database server compatibility with PostgreSQL version 18 is now generally
+available ([GA](https://cloud.google.com/products#product-launch-stages)):
+
+* You can [create AlloyDB clusters](https://docs.cloud.google.com/alloydb/docs/cluster-create#procedure)
+  with PostgreSQL 18 compatibility.
+* You can [upgrade](https://docs.cloud.google.com/alloydb/docs/upgrade-db-inplace-major-version) existing
+  AlloyDB clusters running PostgreSQL major versions 14, 15, 16, or 17 to
+  PostgreSQL major version 18 with one click.
+* You can use Database Migration Service to
+  [migrate databases to AlloyDB](https://docs.cloud.google.com/database-migration/docs/postgresql-to-alloydb/migration-src-and-dest).
+
 ### Change
 
 When no major version is specified, AlloyDB for PostgreSQL now defaults to
@@ -14,14 +27,12 @@ The following AlloyDB AI features are available in [Preview](https://cloud.googl
 
 * You can now use the `ai.hybrid_search()` function, which fuses results from
   each search type into a single list using the Reciprocal Rank Fusion (RRF)
-  algorithm. For more information, see [Run hybrid vector similarity
-  search](https://docs.cloud.google.com/alloydb/docs/ai/run-hybrid-vector-similarity-search).
-* AlloyDB now supports the `rum` extension for complex full-text search
+  algorithm. For more information, see [Run hybrid vector similarity search](https://docs.cloud.google.com/alloydb/docs/ai/run-hybrid-vector-similarity-search).
+* AlloyDB supports the `rum` extension for complex full-text search
   operations. The `rum` extension extends standard GIN indexes by storing
   positional information directly in the index. This enables faster phrase
   searches and relevance ranking without needing to access the table data. For
-  more information, see [Create and manage a RUM
-  index](https://docs.cloud.google.com/alloydb/docs/ai/create-rum-index).
+  more information, see [Create and manage a RUM index](https://docs.cloud.google.com/alloydb/docs/ai/create-rum-index).
 
 ---
 ## 2026-03-20

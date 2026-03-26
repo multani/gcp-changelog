@@ -32,30 +32,30 @@
     "2026-03-18": [
       {
         "kind": "Announcement",
-        "content": "Google Distributed Cloud (software only) for VMware V2 (Advanced Clusters) versions 1.31\nand earlier were missing a configuration step in the node startup script that\ndefined the Docker default bridge IP range. As a result, Docker defaulted to\nusing the 172.17.0.0/16 (and in some cases 172.16.0.0/16) address range.",
-        "summary": {
-          "title": "Node startup script issue in VMware V2",
-          "summary": "Versions 1.31 and earlier of Google Distributed Cloud for VMware V2 had a missing configuration step in the node startup script. This led to Docker defaulting to specific IP address ranges, potentially causing conflicts. An update addresses this configuration oversight."
-        }
-      },
-      {
-        "kind": "Announcement",
-        "content": "Fixed an issue where an admin cluster upgrade appeared to be stuck indefinitely\nand users would see the `VSphereMachine` remaining in the `Creating` phase\nwithout actionable an error messages.",
-        "summary": {
-          "title": "Admin cluster upgrade issue resolved",
-          "summary": "An issue preventing admin cluster upgrades from completing has been fixed. Previously, users encountered stuck upgrades with `VSphereMachine` in the `Creating` phase and no clear error messages. This update ensures upgrades now proceed smoothly."
-        }
-      },
-      {
-        "kind": "Announcement",
         "content": "Google Distributed Cloud (software only) for VMware 1.34.200-gke.68 is now available\nfor download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).\n\n**Important: There is a mandatory flag for admin cluster upgrades; see the updated entry for [March 20, 2026](#March_20_2026).**\n\nGoogle Distributed Cloud 1.34.200-gke.68 runs on Kubernetes v1.34.3-gke.400.\n\nIf you are using a third-party storage vendor, check the Google Distributed Cloud-ready\nstorage partners document to make sure the storage vendor has already passed the\nqualification for this release.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for use with GKE On-Prem API clients: the Google Cloud console, the\ngcloud CLI, and Terraform.",
         "summary": {
           "title": "New software version available",
           "summary": "The latest software-only version of Google Distributed Cloud for VMware, 1.34.200-gke.68, is now ready for download. This release runs on Kubernetes v1.34.3-gke.400. Please review important upgrade notes, including a mandatory flag for admin cluster upgrades, before proceeding."
         }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.34.200-gke.68:\n\n* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).\n* Google Distributed Cloud (software only) for VMware V2 (Advanced Clusters) versions 1.31\n  and earlier were missing a configuration step in the node startup script that\n  defined the Docker default bridge IP range. As a result, Docker defaulted to\n  using the 172.17.0.0/16 (and in some cases 172.16.0.0/16) address range.\n* Fixed an issue where an admin cluster upgrade appeared to be stuck indefinitely\n  and users would see the `VSphereMachine` remaining in the `Creating` phase\n  without actionable an error messages.",
+        "summary": {
+          "title": "Security and Stability Updates",
+          "summary": "This release addresses critical security vulnerabilities and resolves an issue that could cause indefinite upgrade hangs. It also corrects a Docker bridge IP range configuration problem."
+        }
       }
     ],
     "2026-03-05": [
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.32.900-gke.60:\n\n* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).",
+        "summary": {
+          "title": "Security fixes applied",
+          "summary": "This release addresses security vulnerabilities. The fixes are detailed in the vulnerability fixes documentation."
+        }
+      },
       {
         "kind": "Announcement",
         "content": "Google Distributed Cloud (software only) for VMware 1.32.900-gke.60 is now available\nfor download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).\n\n**Important: There is a mandatory flag for admin cluster upgrades; see the updated entry for [March 20, 2026](#March_20_2026).**\n\nGoogle Distributed Cloud 1.32.900-gke.60 runs on Kubernetes v1.32.11-gke.200.\n\nIf you are using a third-party storage vendor, check the Google Distributed Cloud-ready\nstorage partners document to make sure the storage vendor has already passed the\nqualification for this release.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for use with GKE On-Prem API clients: the Google Cloud console, the\ngcloud CLI, and Terraform.",
@@ -74,6 +74,14 @@
       }
     ],
     "2026-03-03": [
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.33.500-gke.63:\n\n* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).",
+        "summary": {
+          "title": "Security fixes applied",
+          "summary": "Version 1.33.500-gke.63 addresses several security vulnerabilities. This update ensures improved security for your environment by patching known issues."
+        }
+      },
       {
         "kind": "Announcement",
         "content": "Google Distributed Cloud (software only) for VMware V2 (Advanced Clusters) versions 1.31\nand earlier were missing a configuration step in the node startup script that\ndefined the Docker default bridge IP range. As a result, Docker defaulted to\nusing the 172.17.0.0/16 (and in some cases 172.16.0.0/16) address range.\n\nIf this default range overlaps with customer network infrastructure,\nconnectivity failures during cluster creation or operation can occur.\n\nThis issue has been resolved. The Docker default bridge IP for cluster nodes in\nadvanced clusters is now explicitly set to 169.254.123.1/24.",

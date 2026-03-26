@@ -21,11 +21,11 @@ qualification for this release of Google Distributed Cloud for bare metal.
 
 The following issues were fixed in 1.33.600-gke.39:
 
-* Resolved an issue where Certificate Authority (CA) rotation became stuck on self-managed clusters (admin, hybrid, or standalone). This fix resolves an internal resource synchronization error that previously prevented the rotation process from completing successfully.
-
-### Security
-
-Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/version-history).
+* Resolved an issue where Certificate Authority (CA) rotation became stuck
+  on self-managed clusters (admin, hybrid, or standalone). This fix resolves an
+  internal resource synchronization error that previously prevented the rotation
+  process from completing successfully.
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/version-history).
 
 ---
 ## 2026-03-18
@@ -45,6 +45,12 @@ If you use a third-party storage vendor, check the Google Distributed Cloud-read
 storage partners document to make sure the storage vendor has already passed the
 qualification for this release of Google Distributed Cloud for bare metal.
 
+### Fixed
+
+The following issues were fixed in 1.34.200-gke.68:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/version-history).
+
 ---
 ## 2026-03-05
 
@@ -62,6 +68,12 @@ Google Cloud console, the gcloud CLI, and Terraform.
 If you use a third-party storage vendor, check the Google Distributed Cloud-ready
 storage partners document to make sure the storage vendor has already passed the
 qualification for this release of Google Distributed Cloud for bare metal.
+
+### Fixed
+
+The following issues were fixed in 1.32.900-gke.60:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/version-history).
 
 ---
 ## 2026-03-03
@@ -107,6 +119,12 @@ command.
 It is recommended to upgrade to a fixed version to ensure that all `bmctl`
 operation logs are correctly captured in your local workspace for troubleshooting
 and auditing purposes
+
+### Security
+
+The following issues were fixed in 1.33.500-gke.63:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/version-history).
 
 ---
 ## 2026-02-13

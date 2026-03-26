@@ -1,6 +1,24 @@
 {
   "name": "AlloyDB for PostgreSQL",
   "entries": {
+    "2026-03-25": [
+      {
+        "kind": "Change",
+        "content": "When no major version is specified, AlloyDB for PostgreSQL now defaults to\n[PostgreSQL major version 17](https://docs.cloud.google.com/alloydb/docs/db-version-policies#support-table)\nfor new clusters.",
+        "summary": {
+          "title": "AlloyDB now defaults to PostgreSQL 17",
+          "summary": "New AlloyDB for PostgreSQL clusters will now default to PostgreSQL major version 17 when no specific version is chosen. This change ensures that new deployments benefit from the latest PostgreSQL features and improvements."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The following AlloyDB AI features are available in [Preview](https://cloud.google.com/products#product-launch-stages):\n\n* You can now use the `ai.hybrid_search()` function, which fuses results from\n  each search type into a single list using the Reciprocal Rank Fusion (RRF)\n  algorithm. For more information, see [Run hybrid vector similarity\n  search](https://docs.cloud.google.com/alloydb/docs/ai/run-hybrid-vector-similarity-search).\n* AlloyDB now supports the `rum` extension for complex full-text search\n  operations. The `rum` extension extends standard GIN indexes by storing\n  positional information directly in the index. This enables faster phrase\n  searches and relevance ranking without needing to access the table data. For\n  more information, see [Create and manage a RUM\n  index](https://docs.cloud.google.com/alloydb/docs/ai/create-rum-index).",
+        "summary": {
+          "title": "New AI features in AlloyDB",
+          "summary": "AlloyDB introduces new AI capabilities, including hybrid search with RRF and support for the RUM extension for enhanced full-text search. These features are now available in preview."
+        }
+      }
+    ],
     "2026-03-20": [
       {
         "kind": "Feature",

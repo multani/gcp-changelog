@@ -1,5 +1,69 @@
 # Looker
 
+## 2026-03-25
+
+### Fixed
+
+An issue has been fixed where creating or updating database connections that use OAuth (such as Snowflake or BigQuery) could fail with the error `JDBC Parameter Validation Failed`. This feature now performs as expected.
+
+### Fixed
+
+When no theme is selected, the Theme picker will now display "Default" rather than "None".
+
+### Fixed
+
+An issue has been fixed where dashboard themes were not applying color collections correctly. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where buttons on dashboards that used the extension framework could unnecessarily add `/embed/` to link URLs. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the font and background color picker was not accessible when you edited visualizations on merge queries. This feature now performs as expected.
+
+### Announcement
+
+**Looker 26.6** is expected to include the following changes, features, and fixes:
+
+* Expected Looker (original) deployment start: **Sunday, March 22, 2026**
+* Expected Looker (original) final deployment and download available: **Sunday, April 5, 2026**
+* Expected Looker (Google Cloud core) deployment start: **Monday, March 23, 2026**
+* Expected Looker (Google Cloud core) final deployment: **Friday, April 3, 2026**
+
+### Fixed
+
+An issue has been fixed where opening the **Interaction Details** dialog on the **Historical Analytics Interactions Search** dashboard in a new window could result in a 401 error. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where searching for content could return a 500 error. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where pressing Enter to confirm IME composition when writing a message in Conversational Analytics would prematurely submit the message. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the LookML Assistant could return a 404 error. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where tabs could be automatically added to existing dashboards. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where visualization tooltips on dashboards could use incorrect background or text colors. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the **LookML dashboards** folder could fail to display the complete list of LookML dashboards. This feature now performs as expected.
+
+### Breaking
+
+Tabbed dashboards with unsupported layouts will now display a warning message prompting users to [update to a new layout](https://docs.cloud.google.com/looker/docs/best-practices/troubleshooting-unsupported-dashboard-layout).
+
+---
 ## 2026-03-23
 
 ### Announcement

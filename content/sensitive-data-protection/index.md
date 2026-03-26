@@ -1,10 +1,17 @@
 # Sensitive Data Protection
 
+## 2026-03-13
+
+### Feature
+
+The `USER_NAME` infoType detector is available in all regions. For more information about all built-in infoTypes, see the [InfoType detector reference](https://docs.cloud.google.com/sensitive-data-protection/docs/infotypes-reference).
+
+---
 ## 2026-03-11
 
 ### Feature
 
-The `CRIME_STATUS` infoType detector is available in [Preview](https://cloud.google.com/products#product-launch-stages). For more information about all infoTypes, see [InfoType detector reference](https://cloud.google.com/sensitive-data-protection/docs/infotypes-reference).
+The `CRIME_STATUS` infoType detector is available in [Preview](https://cloud.google.com/products#product-launch-stages). For more information about all infoTypes, see [InfoType detector reference](https://docs.cloud.google.com/sensitive-data-protection/docs/infotypes-reference).
 
 ---
 ## 2026-03-07
@@ -47,7 +54,7 @@ to refine scan results](https://docs.cloud.google.com/sensitive-data-protection/
 
 ### Feature
 
-The `KOREA_BRN` infoType detector is available in all regions. For more information about all built-in infoTypes, see the [InfoType detector reference](https://cloud.google.com/dlp/docs/infotypes-reference).
+The `KOREA_BRN` infoType detector is available in all regions. For more information about all built-in infoTypes, see the [InfoType detector reference](https://docs.cloud.google.com/sensitive-data-protection/docs/infotypes-reference).
 
 ---
 ## 2026-01-20

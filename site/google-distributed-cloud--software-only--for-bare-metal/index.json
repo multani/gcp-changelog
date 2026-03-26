@@ -12,18 +12,10 @@
       },
       {
         "kind": "Fixed",
-        "content": "The following issues were fixed in 1.33.600-gke.39:\n\n* Resolved an issue where Certificate Authority (CA) rotation became stuck on self-managed clusters (admin, hybrid, or standalone). This fix resolves an internal resource synchronization error that previously prevented the rotation process from completing successfully.",
+        "content": "The following issues were fixed in 1.33.600-gke.39:\n\n* Resolved an issue where Certificate Authority (CA) rotation became stuck\n  on self-managed clusters (admin, hybrid, or standalone). This fix resolves an\n  internal resource synchronization error that previously prevented the rotation\n  process from completing successfully.\n* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/version-history).",
         "summary": {
-          "title": "CA rotation issue resolved",
-          "summary": "An issue preventing Certificate Authority rotation on self-managed clusters has been fixed. This resolves an internal resource synchronization error that blocked the rotation process."
-        }
-      },
-      {
-        "kind": "Security",
-        "content": "Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/version-history).",
-        "summary": {
-          "title": "Security updates for bare metal",
-          "summary": "Resolved security vulnerabilities in the latest bare metal release. For a detailed list of fixes, please refer to the version history documentation."
+          "title": "Certificate Authority rotation and security fixes",
+          "summary": "The latest release resolves an issue preventing Certificate Authority rotation on self-managed clusters. Additionally, important security vulnerabilities have been addressed."
         }
       }
     ],
@@ -35,6 +27,14 @@
           "title": "New software release available",
           "summary": "The latest version of our bare metal software is now ready for download. Please review the upgrade instructions and ensure your storage vendor is qualified for this release. The new version runs on Kubernetes v1.34.3-gke.400."
         }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.34.200-gke.68:\n\n* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/version-history).",
+        "summary": {
+          "title": "Security Updates in 1.34.200-gke.68",
+          "summary": "Version 1.34.200-gke.68 includes important security updates, addressing vulnerabilities previously listed. This release ensures enhanced security for your bare-metal Kubernetes environment."
+        }
       }
     ],
     "2026-03-05": [
@@ -44,6 +44,14 @@
         "summary": {
           "title": "New Bare Metal Version Available",
           "summary": "The latest version of Google Distributed Cloud for bare metal, 1.32.900-gke.60, is now available for download. This release runs on Kubernetes v1.32.11-gke.200. Please note that it may take 7-14 days for this version to be available for installations and upgrades via GKE On-Prem API clients. Ensure your third-party storage vendor is qualified for this release by consulting the Google Distributed Cloud-ready storage partners document."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.32.900-gke.60:\n\n* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/version-history).",
+        "summary": {
+          "title": "Security updates applied",
+          "summary": "Version 1.32.900-gke.60 includes important security fixes. These address vulnerabilities previously detailed in the release notes."
         }
       }
     ],
@@ -62,6 +70,14 @@
         "summary": {
           "title": "Update bmctl for improved log streaming",
           "summary": "An issue with bmctl log streaming in Google Distributed Cloud bare metal versions 1.33.0 and later has been resolved. This fix ensures that logs from pods are correctly captured in the local workspace, improving troubleshooting capabilities. Upgrade to a fixed version for reliable log collection."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "The following issues were fixed in 1.33.500-gke.63:\n\n* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/version-history).",
+        "summary": {
+          "title": "Security updates for GKE Bare Metal",
+          "summary": "Version 1.33.500-gke.63 for GKE Bare Metal includes important security updates. These updates address vulnerabilities listed in the official documentation, ensuring a more secure environment for your workloads."
         }
       }
     ],

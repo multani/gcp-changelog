@@ -1,6 +1,120 @@
 {
   "name": "Looker",
   "entries": {
+    "2026-03-25": [
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where creating or updating database connections that use OAuth (such as Snowflake or BigQuery) could fail with the error `JDBC Parameter Validation Failed`. This feature now performs as expected.",
+        "summary": {
+          "title": "Database connection updates now succeed",
+          "summary": "An issue has been fixed where creating or updating database connections using OAuth could fail with a JDBC Parameter Validation Failed error. This problem is now resolved, and the feature performs as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "When no theme is selected, the Theme picker will now display \"Default\" rather than \"None\".",
+        "summary": {
+          "title": "Theme picker now shows 'Default'",
+          "summary": "The theme picker has been updated to display 'Default' when no theme is selected, replacing the previous 'None' indication. This change improves clarity and consistency in the user interface."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where dashboard themes were not applying color collections correctly. This feature now performs as expected.",
+        "summary": {
+          "title": "Dashboard theme colors fixed",
+          "summary": "An issue has been resolved where dashboard themes were not applying color collections correctly. This feature now functions as intended, ensuring accurate color display."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where buttons on dashboards that used the extension framework could unnecessarily add `/embed/` to link URLs. This feature now performs as expected.",
+        "summary": {
+          "title": "Dashboard extension link issue resolved",
+          "summary": "An issue where buttons on dashboards incorrectly added '/embed/' to link URLs has been fixed. The extension framework now functions as expected, ensuring correct URL generation for dashboard buttons."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the font and background color picker was not accessible when you edited visualizations on merge queries. This feature now performs as expected.",
+        "summary": {
+          "title": "Font and background color picker fixed",
+          "summary": "An issue where the font and background color picker was inaccessible when editing visualizations on merge queries has been resolved. This feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "**Looker 26.6** is expected to include the following changes, features, and fixes:\n\n* Expected Looker (original) deployment start: **Sunday, March 22, 2026**\n* Expected Looker (original) final deployment and download available: **Sunday, April 5, 2026**\n* Expected Looker (Google Cloud core) deployment start: **Monday, March 23, 2026**\n* Expected Looker (Google Cloud core) final deployment: **Friday, April 3, 2026**",
+        "summary": {
+          "title": "Looker 26.6 Release Notes",
+          "summary": "Looker 26.6 is scheduled for release in late March and early April 2026. This update includes new features, improvements, and fixes for both Looker (original) and Looker (Google Cloud core) deployments. Key dates for deployment start and final availability are provided."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where opening the **Interaction Details** dialog on the **Historical Analytics Interactions Search** dashboard in a new window could result in a 401 error. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed interaction details dialog error",
+          "summary": "An issue where opening the Interaction Details dialog in a new window resulted in a 401 error has been resolved. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where searching for content could return a 500 error. This feature now performs as expected.",
+        "summary": {
+          "title": "Search functionality restored",
+          "summary": "A fix has been implemented for an issue that caused a 500 error during content searches. The search feature is now working correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where pressing Enter to confirm IME composition when writing a message in Conversational Analytics would prematurely submit the message. This feature now performs as expected.",
+        "summary": {
+          "title": "Enter key now works correctly in Conversational Analytics",
+          "summary": "An issue where pressing Enter to confirm IME composition prematurely submitted messages in Conversational Analytics has been resolved. The feature now functions as intended, ensuring messages are not submitted until explicitly sent."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the LookML Assistant could return a 404 error. This feature now performs as expected.",
+        "summary": {
+          "title": "LookML Assistant 404 error resolved",
+          "summary": "The LookML Assistant previously returned a 404 error for some requests. This issue has now been fixed, and the feature is functioning correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where tabs could be automatically added to existing dashboards. This feature now performs as expected.",
+        "summary": {
+          "title": "Dashboard tab issue resolved",
+          "summary": "An issue causing automatic tab additions to dashboards has been fixed. Dashboards will now function as expected without unintended tab insertions."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where visualization tooltips on dashboards could use incorrect background or text colors. This feature now performs as expected.",
+        "summary": {
+          "title": "Dashboard tooltip colors fixed",
+          "summary": "An issue with dashboard visualization tooltips displaying incorrect colors has been resolved. The tooltips will now show the expected background and text colors, ensuring a better user experience."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the **LookML dashboards** folder could fail to display the complete list of LookML dashboards. This feature now performs as expected.",
+        "summary": {
+          "title": "LookML dashboards folder display fixed",
+          "summary": "An issue preventing the full display of LookML dashboards in their folder has been resolved. The feature now functions correctly, showing all available dashboards as expected."
+        }
+      },
+      {
+        "kind": "Breaking",
+        "content": "Tabbed dashboards with unsupported layouts will now display a warning message prompting users to [update to a new layout](https://docs.cloud.google.com/looker/docs/best-practices/troubleshooting-unsupported-dashboard-layout).",
+        "summary": {
+          "title": "Dashboard layout warning updated",
+          "summary": "Unsupported dashboard layouts will now show a warning. Users are prompted to update to a new layout to ensure proper display and functionality."
+        }
+      }
+    ],
     "2026-03-23": [
       {
         "kind": "Announcement",

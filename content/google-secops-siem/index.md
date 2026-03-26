@@ -1,5 +1,19 @@
 # Google SecOps SIEM
 
+## 2026-03-25
+
+### Feature
+
+**Credential validation for third-party API connectors**
+
+Credential validation is now available for all 49 third-party API connectors.
+
+When you create a feed using a third-party API connector, Google SecOps now automatically validates the provided credentials. This ensures that if credentials are incorrect:
+
+* **Immediate feedback**: The web interface displays an error message explaining the configuration failure.
+* **Prevention of broken feeds**: The system blocks the creation of the feed until valid credentials are provided, preventing the creation of broken feeds that fail to ingest data later.
+
+---
 ## 2026-03-23
 
 ### Announcement

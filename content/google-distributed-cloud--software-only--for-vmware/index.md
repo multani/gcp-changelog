@@ -54,19 +54,6 @@ If an update or upgrade to advanced admin clusters fails in versions 1.32 and ne
 
 ### Announcement
 
-Google Distributed Cloud (software only) for VMware V2 (Advanced Clusters) versions 1.31
-and earlier were missing a configuration step in the node startup script that
-defined the Docker default bridge IP range. As a result, Docker defaulted to
-using the 172.17.0.0/16 (and in some cases 172.16.0.0/16) address range.
-
-### Announcement
-
-Fixed an issue where an admin cluster upgrade appeared to be stuck indefinitely
-and users would see the `VSphereMachine` remaining in the `Creating` phase
-without actionable an error messages.
-
-### Announcement
-
 Google Distributed Cloud (software only) for VMware 1.34.200-gke.68 is now available
 for download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).
 
@@ -82,8 +69,27 @@ After a release, it takes approximately 7 to 14 days for the version to become
 available for use with GKE On-Prem API clients: the Google Cloud console, the
 gcloud CLI, and Terraform.
 
+### Fixed
+
+The following issues were fixed in 1.34.200-gke.68:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
+* Google Distributed Cloud (software only) for VMware V2 (Advanced Clusters) versions 1.31
+  and earlier were missing a configuration step in the node startup script that
+  defined the Docker default bridge IP range. As a result, Docker defaulted to
+  using the 172.17.0.0/16 (and in some cases 172.16.0.0/16) address range.
+* Fixed an issue where an admin cluster upgrade appeared to be stuck indefinitely
+  and users would see the `VSphereMachine` remaining in the `Creating` phase
+  without actionable an error messages.
+
 ---
 ## 2026-03-05
+
+### Fixed
+
+The following issues were fixed in 1.32.900-gke.60:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
 
 ### Announcement
 
@@ -117,6 +123,12 @@ advanced clusters is now explicitly set to 169.254.123.1/24.
 
 ---
 ## 2026-03-03
+
+### Fixed
+
+The following issues were fixed in 1.33.500-gke.63:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
 
 ### Announcement
 

@@ -1,5 +1,23 @@
 # Generative AI on Vertex AI
 
+## 2026-03-25
+
+### Feature
+
+**Lyria 3**
+
+Lyria is available in [public
+preview](https://cloud.google.com/products#product-launch-stages). You can use
+`lyria-3-pro-preview` to generate 184 seconds of audio, or
+`lyria-3-clip-preview` to generate 30 seconds of audio.
+
+For more information, see the following:
+
+* [Lyria 3 Pro
+  Preview](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/lyria/lyria-3#lyria-3-pro-preview)
+* [Lyria 3 Clip Preview](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/lyria/lyria-3#lyria-3-clip-preview)
+
+---
 ## 2026-03-24
 
 ### Deprecated

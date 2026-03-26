@@ -1,5 +1,15 @@
 # Cloud Location Finder
 
+## 2026-03-25
+
+### Announcement
+
+Cloud Location Finder checks service activation and quota for the project that
+you're using to run Cloud Location Finder API queries (the client project), not
+the projects that queries target (the resource project). As a result, you only
+need to enable the Cloud Location Finder API in your client project.
+
+---
 ## 2026-01-13
 
 ### Feature

@@ -1,5 +1,15 @@
 # Cloud Composer
 
+## 2026-03-27
+
+### Announcement
+
+Cloud Composer 2 environments can no longer be created in
+Melbourne (australia-southeast2). We're switching this region to
+supporting only Cloud Composer 3 environments. Existing Cloud Composer 2
+environments in this region aren't affected by this change.
+
+---
 ## 2026-03-19
 
 ### Change
@@ -14,7 +24,7 @@ are available in Cloud Composer 3:
 ### Announcement
 
 Cloud Composer 2 environments can no longer be created in
-Berlin (europe-west10) and Dallas (us-south1). We're switching this region to
+Berlin (europe-west10) and Dallas (us-south1). We're switching these regions to
 supporting only Cloud Composer 3 environments. Existing Cloud Composer 2
 environments in these regions aren't affected by this change.
 
@@ -33,13 +43,6 @@ The `apache-airflow-providers-cncf-kubernetes` package was
 [upgraded to version 10.14.0](https://airflow.apache.org/docs/apache-airflow-providers-cncf-kubernetes/stable/changelog.html).
 For changes in other packages, see the
 [preinstalled packages changelog](https://cloud.google.com/composer/docs/versions-packages).
-
-### Announcement
-
-A new Cloud Composer release has started on **March 19, 2026**. Get ready
-for upcoming changes and features as we roll out the new release to all regions.
-This release is in progress at the moment. Listed changes and features might
-not be available in some regions yet.
 
 ---
 ## 2026-03-17

@@ -1,5 +1,13 @@
 # Access Approval
 
+## 2026-03-19
+
+### Feature
+
+Flow Analyzer is generally available
+[(GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-02-25
 
 ### Feature

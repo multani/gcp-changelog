@@ -1,5 +1,21 @@
 # Anthos Config Management
 
+## 2026-03-26
+
+### Breaking
+
+Upgraded the Open Telemetry image from v0.127.0 to v0.133.0 to pick up vulnerability fixes. This change promotes the `pkg.translator.prometheus.NormalizeName` feature gate to stable.
+To understand the changes in each release, review the full changelog for [opentelemetry-collector-contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/CHANGELOG.md).
+
+### Change
+
+Addressed multiple Common Vulnerabilities and Exposures (CVEs) by updating dependencies.
+
+### Change
+
+Upgraded bundled Helm version from v3.18.6 to [v3.20.0](https://github.com/helm/helm/releases/tag/v3.20.0) to pick up vulnerability fixes. To understand the changes in each release, review the [changelogs](https://github.com/helm/helm/releases).
+
+---
 ## 2026-02-26
 
 ### Change

@@ -1,5 +1,26 @@
 # Apigee X
 
+## 2026-03-26
+
+### Announcement
+
+On March 26th, 2026, we released an updated version of Apigee (1-17-0-apigee-6).
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+### Security
+
+| Bug ID | Description |
+| --- | --- |
+| **495897297, 495909767** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2026-33210](https://nvd.nist.gov/vuln/detail/CVE-2026-33210) * [CVE-2026-25679](https://nvd.nist.gov/vuln/detail/CVE-2026-25679) * [CVE-2026-27139](https://nvd.nist.gov/vuln/detail/CVE-2026-27139) * [CVE-2026-27142](https://nvd.nist.gov/vuln/detail/CVE-2026-27142) * [2026-33186](https://nvd.nist.gov/vuln/detail/CVE-2026-33186) |
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| **N/A** | **Updates to infrastructure and libraries.** |
+
+---
 ## 2026-03-19
 
 ### Announcement

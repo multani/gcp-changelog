@@ -1,5 +1,14 @@
 # Spanner
 
+## 2026-03-25
+
+### Feature
+
+The Spark Spanner connector supports writing a Spark Dataframe to a Spanner
+table using the Spark data source API. For more information, see
+[Use the Spark Spanner connector](https://docs.cloud.google.com/dataproc/docs/tutorials/spanner-connector-spark-example#write-spanner-tables).
+
+---
 ## 2026-03-19
 
 ### Feature

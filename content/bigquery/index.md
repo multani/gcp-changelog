@@ -1,5 +1,16 @@
 # BigQuery
 
+## 2026-03-26
+
+### Feature
+
+You can now use
+[Cloud resource connections with `EXPORT DATA` statements](https://docs.cloud.google.com/bigquery/docs/export-to-spanner#export_using_a_cloud_resource_connection)
+to reverse ETL BigQuery data to Spanner. This
+feature is
+[generally available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+---
 ## 2026-03-25
 
 ### Announcement

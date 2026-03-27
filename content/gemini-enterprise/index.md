@@ -1,5 +1,19 @@
 # Gemini Enterprise
 
+## 2026-03-26
+
+### Feature
+
+**Gemini Enterprise: Chat with files in the Google Drive connector**
+
+Gemini Enterprise can analyze content and generate answers from CSV, PDF, PPTX,
+and XLSX files in the Google Drive connector, eliminating the need to upload
+these files to the assistant.
+
+This feature is generally available (GA). For more information, see [Chat with
+files in connectors](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-chat#chat_with_files_in_connectors).
+
+---
 ## 2026-03-24
 
 ### Feature

@@ -17,6 +17,10 @@ In addition to the [per-instance CA mode](https://docs.cloud.google.com/memoryst
   install additional CA certificates. This gives you greater control and helps you
   meet compliance requirements. This CA mode is available in [Preview](https://docs.cloud.google.com/products#product-launch-stages).
 
+### Feature
+
+Memorystore for Valkey supports version 1.0 of [Bloom filters](https://docs.cloud.google.com/memorystore/docs/valkey/about-bloom-filters) and [JSON documents](https://docs.cloud.google.com/memorystore/docs/valkey/about-json). This feature is available in [Preview](https://docs.cloud.google.com/products#product-launch-stages).
+
 ---
 ## 2026-03-18
 

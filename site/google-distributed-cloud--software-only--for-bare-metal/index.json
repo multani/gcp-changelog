@@ -1,6 +1,24 @@
 {
   "name": "Google Distributed Cloud (software only) for bare metal",
   "entries": {
+    "2026-03-27": [
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.32.1000-gke.57:\n\n* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/version-history).\n* Cluster and\n  node pool failures are now surfaced in the `RecentFailures` field\n  in the cluster status. This change provides a centralized location for viewing\n  errors from both worker node pools and control plane nodes, improving the\n  troubleshooting and debugging experience.\n* Fixed an issue where Metrics API operations—including\n  `kubectl top`, Horizontal Pod Autoscaling (HPA), and Vertical Pod Autoscaling\n  (VPA)—could fail with TLS verification errors during CA rotation.\n* Resolved an issue where Certificate Authority (CA) rotation became stuck\n  on self-managed clusters (admin, hybrid, or standalone). This fix resolves an\n  internal resource synchronization error that previously prevented the rotation\n  process from completing successfully.",
+        "summary": {
+          "title": "Maintenance Release 1.32.1000-gke.57",
+          "summary": "This release addresses security vulnerabilities and improves error reporting for cluster and node pool failures. It also resolves issues with Metrics API operations and CA rotation, enhancing the stability and troubleshooting of your clusters."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "Google Distributed Cloud (software only) for bare metal 1.32.1000-gke.57 is now available for\ndownload. To upgrade, see [Upgrade clusters](how-to/upgrade).\nGoogle Distributed Cloud for bare metal\n1.32.1000-gke.57 runs on Kubernetes v1.32.13-gke.1000.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for installations or upgrades with the GKE On-Prem API clients: the\nGoogle Cloud console, the gcloud CLI, and Terraform.\n\nIf you use a third-party storage vendor, check the Google Distributed Cloud-ready\nstorage partners document to make sure the storage vendor has already passed the\nqualification for this release of Google Distributed Cloud for bare metal.",
+        "summary": {
+          "title": "New software version available",
+          "summary": "The latest software-only release for bare metal is now available. Please check storage partner compatibility for this version before upgrading."
+        }
+      }
+    ],
     "2026-03-23": [
       {
         "kind": "Announcement",

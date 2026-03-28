@@ -115,6 +115,7 @@
 - [Developer Connect](developer-connect/index.md)
 - [Dialogflow](dialogflow/index.md)
 - [Document AI](document-ai/index.md)
+- [Error Reporting](error-reporting/index.md)
 - [Eventarc](eventarc/index.md)
 - [Filestore](filestore/index.md)
 - [Firestore](firestore/index.md)

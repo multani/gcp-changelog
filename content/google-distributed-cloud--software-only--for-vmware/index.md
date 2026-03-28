@@ -1,5 +1,68 @@
 # Google Distributed Cloud (software only) for VMware
 
+## 2026-03-27
+
+### Fixed
+
+The following issues were fixed in 1.33.600-gke.40:
+
+* Fixed an issue where if updates or upgrades to advanced admin clusters failed and the external bootstrap cluster was deleted, you could lose critical data.
+
+### Fixed
+
+The following issues were fixed in 1.32.1000-gke.57:
+
+* Fixed an issue where the node-problem-detector was incorrectly deployed onto
+  non-Advanced (V1) VMware clusters, causing the containerd runtime to
+  continuously restart on affected nodes, leading to ETCD/CRI failures and
+  unsuccessful cluster upgrades.
+* Fixed an issue where setting the deprecated stackdriver.enableVPC field to
+  true in a cluster configuration file would block upgrades to an Advanced
+  Cluster. The stackdriver.enableVPC field has been deprecated and its setting is
+  now ignored during the upgrade validation process.
+* Fixes an issue where Advanced Clusters incorrectly deployed the node problem
+  detector onto non-Advanced clusters, which caused containerd to continuously
+  restart and led to cluster upgrade failures.
+* Fixed an issue where the system certificate pool was ignored when a custom CA
+  certificate was configured for a registry mirror.
+* Fixed an issue where retrying the `gkectl upgrade admin` command after a
+  previous failure could fail with "AlreadyExists" errors in the bootstrap cluster.
+* Fixed an issue where cluster creation or upgrade failed if the proxy or
+  noProxy configuration fields contained extraneous whitespaces. These spaces
+  interfered with internal command-line argument parsing, causing the control
+  plane load balancer initialization to fail.
+* Fixed an issue where if updates or upgrades to advanced admin clusters failed
+  and the external bootstrap cluster was deleted, you could lose critical data.
+
+### Announcement
+
+Google Distributed Cloud (software only) for VMware 1.32.1000-gke.57 is now available
+for download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).
+Google Distributed Cloud 1.32.1000-gke.57 runs on Kubernetes v1.32.13-gke.1000.
+
+If you are using a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.
+
+### Announcement
+
+Google Distributed Cloud (software only) for VMware 1.33.600-gke.40 is now available
+for download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).
+Google Distributed Cloud 1.33.600-gke.40 runs on Kubernetes 1.33.5-gke.2200.
+
+If you are using a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.
+
+---
 ## 2026-03-23
 
 ### Announcement
@@ -52,6 +115,19 @@ If an update or upgrade to advanced admin clusters fails in versions 1.32 and ne
 ---
 ## 2026-03-18
 
+### Fixed
+
+The following issues were fixed in 1.34.200-gke.68:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
+* Google Distributed Cloud (software only) for VMware V2 (Advanced Clusters) versions 1.31
+  and earlier were missing a configuration step in the node startup script that
+  defined the Docker default bridge IP range. As a result, Docker defaulted to
+  using the 172.17.0.0/16 (and in some cases 172.16.0.0/16) address range.
+* Fixed an issue where an admin cluster upgrade appeared to be stuck indefinitely
+  and users would see the `VSphereMachine` remaining in the `Creating` phase
+  without actionable error messages.
+
 ### Announcement
 
 Google Distributed Cloud (software only) for VMware 1.34.200-gke.68 is now available
@@ -68,19 +144,6 @@ qualification for this release.
 After a release, it takes approximately 7 to 14 days for the version to become
 available for use with GKE On-Prem API clients: the Google Cloud console, the
 gcloud CLI, and Terraform.
-
-### Fixed
-
-The following issues were fixed in 1.34.200-gke.68:
-
-* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
-* Google Distributed Cloud (software only) for VMware V2 (Advanced Clusters) versions 1.31
-  and earlier were missing a configuration step in the node startup script that
-  defined the Docker default bridge IP range. As a result, Docker defaulted to
-  using the 172.17.0.0/16 (and in some cases 172.16.0.0/16) address range.
-* Fixed an issue where an admin cluster upgrade appeared to be stuck indefinitely
-  and users would see the `VSphereMachine` remaining in the `Creating` phase
-  without actionable an error messages.
 
 ---
 ## 2026-03-05

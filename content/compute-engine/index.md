@@ -1,5 +1,13 @@
 # Compute Engine
 
+## 2026-03-27
+
+### Security
+
+A vulnerability (CVE-2026-23268) about CrackArmor was discovered and has been addressed.
+For more information, see the [GCP-2026-015 security bulletin](https://docs.cloud.google.com/compute/docs/security-bulletins#gcp-2026-015).
+
+---
 ## 2026-03-24
 
 ### Feature

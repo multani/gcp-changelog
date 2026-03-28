@@ -1,5 +1,140 @@
 # Container Optimized OS
 
+## 2026-03-25
+
+### Change
+
+
+
+### cos-125-19216-220-87
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.68](https://cos.googlesource.com/third_party/kernel/+/98c1b6ad6f970918e8fe029d2ee331c556111ae3 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.220.87/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.
+
+### Security
+
+Fixed CVE-2025-71265 in the Linux kernel.
+
+### Change
+
+Added support for the Lustre 2.14.0\_p249 drivers.
+
+### Feature
+
+Added support for loading the ublk kernel module.
+
+### Fixed
+
+Upgraded app-admin/google-osconfig-agent to v20260119.00.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 188034 250715 376068
+
+### Security
+
+Fixed CVE-2025-71266 in the Linux kernel.
+
+### Fixed
+
+Added CPU balloon support for Arm CPUs.
+
+### Fixed
+
+Upgraded sys-apps/file to v5.47-r1.
+
+### Security
+
+Fixed CVE-2025-71267 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23262 in the Linux kernel.
+
+### Security
+
+Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.
+
+### Security
+
+Fixed CVE-2025-71268 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-32597 with pyjwt package upgrade to 2.12.1.
+
+### Security
+
+Fixed KCTF-329f0b9 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23243 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-c9bc175 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23254 in the Linux kernel.
+
+### Change
+
+
+
+### cos-dev-133-19654-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.76](https://cos.googlesource.com/third_party/kernel/+/8ecb3fb8b4bed2db662e41f5991ae84debec7939 ) | v27.5.1 | v2.2.1 | [See List](https://storage.googleapis.com/cos-tools/19654.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.
+
+### Security
+
+Fixed KCTF-c9bc175 in the Linux kernel.
+
+### Fixed
+
+Upgraded virtual/logger to v0-r3.
+
+### Fixed
+
+Fixed an ek-cpu-balloon bug which would result in CPUs being underreported on ek machines with SMT enabled.
+
+### Fixed
+
+Upgraded dev-libs/expat to v2.7.5.
+
+### Security
+
+Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.51.3.
+
+### Security
+
+Fixed CVE-2026-32597 with pyjwt package upgrade to v2.12.1.
+
+### Security
+
+Fixed KCTF-329f0b9 in the Linux kernel.
+
+---
 ## 2026-03-23
 
 ### Change

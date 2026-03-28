@@ -1,6 +1,24 @@
 {
   "name": "Looker",
   "entries": {
+    "2026-03-26": [
+      {
+        "kind": "Feature",
+        "content": "As part of Looker 26.6, Conversational Analytics now offers [new modes for asking questions](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data#ca-question-mode). Fast mode allows you to get answers more quickly. Thinking mode allows you to ask more complex questions and test your agent's capabilities.",
+        "summary": {
+          "title": "New Ways to Ask Questions in Conversational Analytics",
+          "summary": "Looker's Conversational Analytics now has two new modes for asking questions. Fast mode provides quicker answers, while Thinking mode enables more complex queries and exploration of your agent's abilities."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "As part of Looker 26.6, [Conversational Analytics](https://docs.cloud.google.com/looker/docs/conversational-analytics-overview) will now ask you questions to clarify any ambiguities in your original query.",
+        "summary": {
+          "title": "Conversational Analytics Clarifies Queries",
+          "summary": "Looker 26.6 introduces enhanced Conversational Analytics. This new feature proactively asks clarifying questions to resolve ambiguities in your original queries, ensuring more accurate and relevant results."
+        }
+      }
+    ],
     "2026-03-25": [
       {
         "kind": "Fixed",
@@ -154,14 +172,6 @@
       },
       {
         "kind": "Feature",
-        "content": "Conversational Analytics now offers [new modes for asking questions](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data#ca-question-mode). Fast mode allows you to get answers more quickly. Thinking mode allows you to ask more complex questions and test your agent's capabilities. (Note: Question modes are not yet available. This release note was updated on March 24, 2026.)",
-        "summary": {
-          "title": "New question modes for Conversational Analytics",
-          "summary": "Conversational Analytics has introduced new modes for asking questions, including Fast mode for quicker answers and Thinking mode for more complex queries. These modes will enhance user interaction and agent testing capabilities, although they are not yet available."
-        }
-      },
-      {
-        "kind": "Feature",
         "content": "Now available in preview, you can use Gemini in Looker to [assist you in writing Looker expressions](https://docs.cloud.google.com/looker/docs/gemini-expression-asst) for [table calculations](https://docs.cloud.google.com/looker/docs/table-calculations) and [custom fields](https://docs.cloud.google.com/looker/docs/custom-fields). This feature can be enabled by turning on the **Expression Assistant** setting on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.",
         "summary": {
           "title": "Gemini Assists Looker Expression Writing",
@@ -202,6 +212,14 @@
       },
       {
         "kind": "Feature",
+        "content": "The [Continuous Integration (CI)](https://docs.cloud.google.com/looker/docs/continuous-integration) feature is updated for better integration with the Looker user interface:\n\n* Your Looker instance will be migrated to the new version of Looker CI. The migration will take a few minutes.\n* While your instance is migrating, any existing CI suites will not appear on the CI [**Suites**](https://docs.cloud.google.com/looker/docs/ci-create-suite#creating_a_ci_suite) page, and the history on the CI [**Runs**](https://docs.cloud.google.com/looker/docs/ci-view-results) page will be empty. During this time, do not create new suites or initiate manual runs.\n* When the migration is complete, the **Suites** and **Runs** pages will be repopulated.\n* If you encounter an issue during the migration, please report it using the [Looker Continuous Integration - Preview Issue Tracker form](https://docs.google.com/forms/d/e/1FAIpQLSed30eICYruU45R8WZQH6hIui28xtdDnejfetzpLHQ5PK0ZeA/viewform?usp=dialog).\n\nThe updated Looker Continuous Integration feature includes the following:\n\n* Your Looker admin no longer needs to manually add CI users. After your Looker instance is [enabled for CI](https://docs.cloud.google.com/looker/docs/continuous-integration#enable-ci) (or once your instance is updated to the new CI, if your instance was already enabled for CI), Looker automatically creates ten Looker CI users. The Looker CI users are created in the [Looker CI Users user group](https://docs.cloud.google.com/looker/docs/admin-panel-users-groups#ci-users) with the [Looker CI Users role](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#ci-users). A Looker admin can view the Looker CI users from the **Service Accounts** tab of the [**Users**](https://docs.cloud.google.com/looker/docs/admin-panel-users-users) Admin page.\n* A new [**GitHub** table](https://docs.cloud.google.com/looker/docs/admin-panel-platform-ci#github-table) on the **Continuous Integration** Admin page lists the GitHub repositories that have been granted access to the Looker CI GitHub application, which enables Looker CI to [be triggered automatically when pull requests are created](https://docs.cloud.google.com/looker/docs/ci-create-suite#triggers).\n\n**Note:** This item was updated on March 27, 2026.",
+        "summary": {
+          "title": "Looker CI Enhancements Released",
+          "summary": "The Continuous Integration (CI) feature in Looker has been updated for improved user interface integration. This update includes automatic creation of CI users and a new GitHub table for enhanced repository management. The migration process is automated and should take only a few minutes to complete."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "Now available in preview, Gemini in Looker can automatically [generate Quick Start analyses for Explores](https://docs.cloud.google.com/looker/docs/gemini-quick-starts). This feature can be enabled by turning on the **AI-assisted Quick Starts** setting on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.\n\n**Note:** This feature is not yet available. This item was modified on March 19, 2026.",
         "summary": {
           "title": "New Quick Start Analyses with Gemini",
@@ -234,14 +252,6 @@
       },
       {
         "kind": "Feature",
-        "content": "The [Continuous Integration (CI)](https://docs.cloud.google.com/looker/docs/continuous-integration) feature is updated for better integration with the Looker user interface:\n\n* Your Looker instance will be migrated to the new version of Looker CI. The migration will take a few minutes.\n* While your instance is migrating, any existing CI suites will not appear on the CI [**Suites**](https://docs.cloud.google.com/looker/docs/ci-create-suite#creating_a_ci_suite) page, and the history on the CI [**Runs**](https://docs.cloud.google.com/looker/docs/ci-view-results) page will be empty. During this time, do not create new suites or initiate manual runs.\n* When the migration is complete, the **Suites** and **Runs** pages will be repopulated.\n* If you encounter an issue during the migration, please report it using the [Looker} Continuous Integration - Preview Issue Tracker form](https://docs.google.com/forms/d/e/1FAIpQLSed30eICYruU45R8WZQH6hIui28xtdDnejfetzpLHQ5PK0ZeA/viewform?usp=dialog).\n\nThe updated Looker Continuous Integration feature includes the following:\n\n* Your Looker admin no longer needs to manually add CI users. After your Looker instance is [enabled for CI](https://docs.cloud.google.com/looker/docs/continuous-integration#enable-ci) (or once your instance is updated to the new CI, if your instance was already enabled for CI), Looker CI users are created automatically. Looker CI users are created in the [Looker CI Users user group](https://docs.cloud.google.com/looker/docs/admin-panel-users-groups#ci-users) with the [Looker CI Users role](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#ci-users). A Looker admin can view the Looker CI users from the **Service Accounts** tab of the [**Users**](https://docs.cloud.google.com/looker/docs/admin-panel-users-users) Admin page.\n* A new [**GitHub** table](https://docs.cloud.google.com/looker/docs/admin-panel-platform-ci#github-table) on the **Continuous Integration** Admin page lists the GitHub repositories that have been granted access to the Looker CI GitHub application, which enables Looker CI to [be triggered automatically when pull requests are created](https://docs.cloud.google.com/looker/docs/ci-create-suite#triggers).",
-        "summary": {
-          "title": "Updated Continuous Integration Feature",
-          "summary": "The Continuous Integration feature has been updated for better integration with the Looker user interface. This update includes automatic user creation and a new GitHub table for improved functionality. Your Looker instance will be migrated to the new version, with minimal downtime expected. Please report any issues encountered during migration."
-        }
-      },
-      {
-        "kind": "Feature",
         "content": "Available in preview, you can now use custom calendars, such as fiscal or retail calendars, for [dialects that support it](https://docs.cloud.google.com/looker/docs/custom-calendars#supported_dialects_for_custom_calendars). The [custom calendar](https://docs.cloud.google.com/looker/docs/custom-calendars) feature lets your Looker developers create a LookML model of a custom calendar table in your database and then create [custom calendar dimension groups](https://docs.cloud.google.com/looker/docs/reference/param-field-dimension-group#custom_calendar_type) that use the custom calendar. Your end users can then create Explore queries using the custom calendar dimension timeframes.\n\nIn addition, your LookML developers can create [period-over-period](https://docs.cloud.google.com/looker/docs/period-over-period) measures based on custom calendar dimension groups.\n\n**Note:** This item was updated on March 19, 2026.",
         "summary": {
           "title": "Use Custom Calendars in Looker",
@@ -250,10 +260,10 @@
       },
       {
         "kind": "Feature",
-        "content": "Looker admins can grant the new [`schedule_without_limit` permission](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#schedule_without_limit) to restrict a user's ability to [deliver all data results from a Look or an Explore](https://docs.cloud.google.com/looker/docs/delivering-looks-explores). This permission must be combined with another Looker permission that permits delivering data.\n\nThis permission will be automatically granted to any existing roles that already contain a data delivery permission. Looker admins must remove this permission from any users whom they wish to prevent from delivering all results from a Look or an Explore.",
+        "content": "Conversational Analytics now offers [new modes for asking questions](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data#ca-question-mode). Fast mode allows you to get answers more quickly. Thinking mode allows you to ask more complex questions and test your agent's capabilities. (Note: Question modes are not yet available. This release note was updated on March 24, 2026.)",
         "summary": {
-          "title": "New scheduling permission for Looker",
-          "summary": "Looker admins can now use the `schedule_without_limit` permission to control user access to delivering all data results from Looks or Explores. This permission works in conjunction with other data delivery permissions and will be automatically applied to existing roles. Admins can manually remove it to restrict users' ability to deliver all data."
+          "title": "New question modes for Conversational Analytics",
+          "summary": "Conversational Analytics has introduced new modes for asking questions, including Fast mode for quicker answers and Thinking mode for more complex queries. These modes will enhance user interaction and agent testing capabilities, although they are not yet available."
         }
       }
     ],

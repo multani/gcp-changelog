@@ -1,5 +1,41 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-03-27
+
+### Fixed
+
+The following issues were fixed in 1.32.1000-gke.57:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/version-history).
+* Cluster and
+  node pool failures are now surfaced in the `RecentFailures` field
+  in the cluster status. This change provides a centralized location for viewing
+  errors from both worker node pools and control plane nodes, improving the
+  troubleshooting and debugging experience.
+* Fixed an issue where Metrics API operations—including
+  `kubectl top`, Horizontal Pod Autoscaling (HPA), and Vertical Pod Autoscaling
+  (VPA)—could fail with TLS verification errors during CA rotation.
+* Resolved an issue where Certificate Authority (CA) rotation became stuck
+  on self-managed clusters (admin, hybrid, or standalone). This fix resolves an
+  internal resource synchronization error that previously prevented the rotation
+  process from completing successfully.
+
+### Announcement
+
+Google Distributed Cloud (software only) for bare metal 1.32.1000-gke.57 is now available for
+download. To upgrade, see [Upgrade clusters](how-to/upgrade).
+Google Distributed Cloud for bare metal
+1.32.1000-gke.57 runs on Kubernetes v1.32.13-gke.1000.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release of Google Distributed Cloud for bare metal.
+
+---
 ## 2026-03-23
 
 ### Announcement

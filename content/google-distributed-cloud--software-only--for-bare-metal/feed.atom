@@ -2,9 +2,55 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Distributed Cloud (software only) for bare metal</title>
   <subtitle>Changelog for Google Cloud product: Google Distributed Cloud (software only) for bare metal</subtitle>
-  <updated>2026-03-23T00:00:00+00:00</updated>
+  <updated>2026-03-27T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-distributed-cloud--software-only--for-bare-metal/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2026-03-27:fixed:0</id>
+    <published>2026-03-27T00:00:00+00:00</published>
+    <updated>2026-03-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were fixed in 1.32.1000-gke.57:</p>
+<ul>
+<li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/version-history">Vulnerability fixes</a>.</li>
+<li>Cluster and
+  node pool failures are now surfaced in the <code>RecentFailures</code> field
+  in the cluster status. This change provides a centralized location for viewing
+  errors from both worker node pools and control plane nodes, improving the
+  troubleshooting and debugging experience.</li>
+<li>Fixed an issue where Metrics API operations—including
+  <code>kubectl top</code>, Horizontal Pod Autoscaling (HPA), and Vertical Pod Autoscaling
+  (VPA)—could fail with TLS verification errors during CA rotation.</li>
+<li>Resolved an issue where Certificate Authority (CA) rotation became stuck
+  on self-managed clusters (admin, hybrid, or standalone). This fix resolves an
+  internal resource synchronization error that previously prevented the rotation
+  process from completing successfully.</li>
+</ul>]]></content>
+    <summary>This release addresses security vulnerabilities and improves error reporting for cluster and node pool failures. It also resolves issues with Metrics API operations and CA rotation, enhancing the stability and troubleshooting of your clusters.</summary>
+    <title>Fixed: Maintenance Release 1.32.1000-gke.57</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2026-03-27:announcement:1</id>
+    <published>2026-03-27T00:00:00+00:00</published>
+    <updated>2026-03-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for bare metal 1.32.1000-gke.57 is now available for
+download. To upgrade, see <a href="how-to/upgrade">Upgrade clusters</a>.
+Google Distributed Cloud for bare metal
+1.32.1000-gke.57 runs on Kubernetes v1.32.13-gke.1000.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.</p>
+<p>If you use a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release of Google Distributed Cloud for bare metal.</p>]]></content>
+    <summary>The latest software-only release for bare metal is now available. Please check storage partner compatibility for this version before upgrading.</summary>
+    <title>Announcement: New software version available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

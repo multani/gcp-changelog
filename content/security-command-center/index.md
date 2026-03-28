@@ -1,5 +1,17 @@
 # Security Command Center
 
+## 2026-03-27
+
+### Announcement
+
+Risk Engine has launched enhanced heuristics to help identify default
+high-value resources.
+
+If you are using the default high-value resource set, you might observe changes in the
+exposure scores of their findings, resources, and issues. For information about
+these changes, see [Default high-value resource set](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-learn#default-high-value-resource-set).
+
+---
 ## 2026-03-16
 
 ### Change

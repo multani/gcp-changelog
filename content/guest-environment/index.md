@@ -1,5 +1,43 @@
 # Guest Environment
 
+## 2026-03-30
+
+### Feature
+
+Version `20260329.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)
+is now available for all supported operating systems. This version introduces
+the following features:
+
+* A new local extension, guest telemetry, is introduced, which collects
+  important telemetry data about Independent Software Vendors (ISVs) running
+  on a compute instance. For more information about the telemetry the guest
+  agent collects, see
+  [System telemetry collection](https://docs.cloud.google.com/compute/docs/images/guest-agent-functions#system-telemetry-collection).
+* The `enable_local_plugins` configuration now defaults to `true`.
+* A new configuration flag `connection_type` is introduced to the
+  `PluginConfig` section of the guest agent configuration file. This option
+  forces a specific connection type when the guest agent connects to the
+  extensions it is managing. Supported connection types are UDS and TCP.
+
+### Fixed
+
+Version `20260329.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)
+is now available for all supported operating systems. This version introduces
+the following fixes:
+
+* The guest agent no longer terminates abruptly when an extension's gRPC
+  client is null. Instead, it logs an error.
+* The credentials setup for HTTPS access to the metadata server was moved to
+  prevent it from blocking the guest agent's readiness signal. This mitigates
+  an issue on machines without vTPM, where the guest agent can take an extra
+  10 seconds to signal that it's ready.
+* The core plugin now logs during the startup phase to provide a better signal
+  on when it's started.
+* Locally bundled extensions are now direct child processes of the agent
+  manager process. This helps resolve an issue where plugins remain as
+  running processes but fail to start correctly.
+
+---
 ## 2026-03-05
 
 ### Feature

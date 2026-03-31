@@ -4,10 +4,51 @@
 
 ### Announcement
 
+A new Cloud Composer release has started on **March 27, 2026**. Get ready
+for upcoming changes and features as we roll out the new release to all regions.
+This release is in progress at the moment. Listed changes and features might
+not be available in some regions yet.
+
+### Change
+
+New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)
+are available in Cloud Composer 3:
+
+* [composer-3-airflow-3.1.7-build.3](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-7-build-3)
+* [composer-3-airflow-2.10.5-build.32](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-32) (default)
+* [composer-3-airflow-2.9.3-build.52](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-52)
+
+### Deprecated
+
+The following Cloud Composer versions and builds have reached their
+[end of support period](https://docs.cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):
+composer-3-airflow-2.9.3-build.19 and composer-2.12.0-\*.
+
+### Change
+
+New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)
+are available in Cloud Composer 2:
+
+* [composer-2.16.9-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-9-airflow-2-10-5) (default)
+* [composer-2.16.9-airflow-2.9.3](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-9-airflow-2-9-3)
+
+### Announcement
+
 Cloud Composer 2 environments can no longer be created in
 Melbourne (australia-southeast2). We're switching this region to
 supporting only Cloud Composer 3 environments. Existing Cloud Composer 2
 environments in this region aren't affected by this change.
+
+### Change
+
+*(Airflow 3.1.7)* Starting from version composer-3-airflow-3.1.7-build.1,
+Airflow workers no longer have direct access to the Airflow database of your
+environment.
+
+This feature was
+[announced previously](https://docs.cloud.google.com/composer/docs/release-notes#March_17_2026)
+and has finished gradually rolling out to all regions supported by
+Cloud Composer 3.
 
 ---
 ## 2026-03-19

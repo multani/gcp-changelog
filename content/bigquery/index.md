@@ -1,5 +1,37 @@
 # BigQuery
 
+## 2026-03-30
+
+### Feature
+
+The following forecasting and anomaly detection functions and updates are
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA):
+
+* The
+  [`AI.DETECT_ANOMALIES` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-detect-anomalies)
+  supports providing a custom context window that determines how many of the
+  most recent data points should be used by the model.
+* The
+  [`AI.FORECAST` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-forecast)
+  supports specifying the latest timestamp value for forecasting.
+* The
+  [`AI.EVALUATE` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-evaluate)
+  supports the following:
+
+  + You can provide a custom context window that determines how many of the most
+    recent data points should be used by the model.
+  + The function outputs the
+    [mean absolute scaled error](https://en.wikipedia.org/wiki/Mean_absolute_scaled_error)
+    for the time series.
+
+### Feature
+
+You can now create BigQuery [non-incremental materialized views over Spanner data](https://docs.cloud.google.com/bigquery/docs/materialized-views-create#spanner)
+to improve query performance by periodically caching results. This feature is
+[generally available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+---
 ## 2026-03-26
 
 ### Feature

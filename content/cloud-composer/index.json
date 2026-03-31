@@ -4,10 +4,50 @@
     "2026-03-27": [
       {
         "kind": "Announcement",
+        "content": "A new Cloud Composer release has started on **March 27, 2026**. Get ready\nfor upcoming changes and features as we roll out the new release to all regions.\nThis release is in progress at the moment. Listed changes and features might\nnot be available in some regions yet.",
+        "summary": {
+          "title": "New Cloud Composer Release Now Available",
+          "summary": "A new version of Cloud Composer has begun rolling out as of March 27, 2026. This release introduces several new features and improvements that will be made available across all regions. Please note that the rollout is in progress, so some features may not be immediately accessible in every region."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Cloud Composer 3:\n\n* [composer-3-airflow-3.1.7-build.3](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-7-build-3)\n* [composer-3-airflow-2.10.5-build.32](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-32) (default)\n* [composer-3-airflow-2.9.3-build.52](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-52)",
+        "summary": {
+          "title": "New Airflow Builds Available",
+          "summary": "New Airflow builds are now available for Cloud Composer 3, including updated versions for Airflow 3.1.7, 2.10.5, and 2.9.3. The default version has been updated to Airflow 2.10.5."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "The following Cloud Composer versions and builds have reached their\n[end of support period](https://docs.cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-3-airflow-2.9.3-build.19 and composer-2.12.0-\\*.",
+        "summary": {
+          "title": "Composer versions reaching end of support",
+          "summary": "Certain Cloud Composer versions, including composer-3-airflow-2.9.3-build.19 and composer-2.12.0-\\* builds, are no longer supported. Please update to a supported version to ensure continued service."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)\nare available in Cloud Composer 2:\n\n* [composer-2.16.9-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-9-airflow-2-10-5) (default)\n* [composer-2.16.9-airflow-2.9.3](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-9-airflow-2-9-3)",
+        "summary": {
+          "title": "New Cloud Composer 2 images available",
+          "summary": "New images for Cloud Composer 2 are now available. These include composer-2.16.9 with Airflow 2.10.5 (default) and Airflow 2.9.3."
+        }
+      },
+      {
+        "kind": "Announcement",
         "content": "Cloud Composer 2 environments can no longer be created in\nMelbourne (australia-southeast2). We're switching this region to\nsupporting only Cloud Composer 3 environments. Existing Cloud Composer 2\nenvironments in this region aren't affected by this change.",
         "summary": {
           "title": "Composer 2 no longer available in Melbourne",
           "summary": "You can no longer create Cloud Composer 2 environments in the Melbourne region (australia-southeast2). This region will now only support Cloud Composer 3 environments. Existing Cloud Composer 2 environments in this region will continue to function as normal."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "*(Airflow 3.1.7)* Starting from version composer-3-airflow-3.1.7-build.1,\nAirflow workers no longer have direct access to the Airflow database of your\nenvironment.\n\nThis feature was\n[announced previously](https://docs.cloud.google.com/composer/docs/release-notes#March_17_2026)\nand has finished gradually rolling out to all regions supported by\nCloud Composer 3.",
+        "summary": {
+          "title": "Airflow worker database access changed",
+          "summary": "Starting with Airflow version 3.1.7, workers in your environment will no longer have direct access to the Airflow database. This change has completed its rollout across all supported regions for Cloud Composer 3."
         }
       }
     ],

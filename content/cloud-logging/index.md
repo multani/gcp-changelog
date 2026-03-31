@@ -1,5 +1,16 @@
 # Cloud Logging
 
+## 2026-03-30
+
+### Change
+
+For any new project that is created on or after March 30, 2026, if the
+project enables the
+Cloud Logging API,
+then Google Cloud Observability also enables the
+[Telemetry API](https://docs.cloud.google.com/stackdriver/docs/reference/telemetry/overview).
+
+---
 ## 2026-03-12
 
 ### Issue

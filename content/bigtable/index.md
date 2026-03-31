@@ -1,5 +1,13 @@
 # Bigtable
 
+## 2026-03-30
+
+### Feature
+
+You can view the [details of Bigtable continuous materialized views](https://docs.cloud.google.com/bigtable/docs/manage-continuous-materialized-views#view-details)
+in the Google Cloud console.
+
+---
 ## 2026-03-25
 
 ### Announcement
@@ -14,7 +22,7 @@ steps and code examples, see
 ### Feature
 
 You can manage Bigtable [tiered storage](https://docs.cloud.google.com/bigtable/docs/tiered-storage)
-configuration in Google Cloud console and view tiered storage metrics in
+configuration in the Google Cloud console and view tiered storage metrics in
 [system insights](https://docs.cloud.google.com/bigtable/docs/monitoring-instance#console-monitoring-resources).
 For more information, see [Create and manage tables](https://docs.cloud.google.com/bigtable/docs/managing-tables).
 

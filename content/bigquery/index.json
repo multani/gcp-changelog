@@ -1,6 +1,24 @@
 {
   "name": "BigQuery",
   "entries": {
+    "2026-03-30": [
+      {
+        "kind": "Feature",
+        "content": "The following forecasting and anomaly detection functions and updates are\n[generally available](https://cloud.google.com/products#product-launch-stages)\n(GA):\n\n* The\n  [`AI.DETECT_ANOMALIES` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-detect-anomalies)\n  supports providing a custom context window that determines how many of the\n  most recent data points should be used by the model.\n* The\n  [`AI.FORECAST` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-forecast)\n  supports specifying the latest timestamp value for forecasting.\n* The\n  [`AI.EVALUATE` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-evaluate)\n  supports the following:\n\n  + You can provide a custom context window that determines how many of the most\n    recent data points should be used by the model.\n  + The function outputs the\n    [mean absolute scaled error](https://en.wikipedia.org/wiki/Mean_absolute_scaled_error)\n    for the time series.",
+        "summary": {
+          "title": "Forecasting and anomaly detection functions now generally available",
+          "summary": "New and updated forecasting and anomaly detection functions are now generally available. These include enhancements to AI.DETECT_ANOMALIES and AI.FORECAST, as well as AI.EVALUATE which now supports custom context windows and outputs mean absolute scaled error."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now create BigQuery [non-incremental materialized views over Spanner data](https://docs.cloud.google.com/bigquery/docs/materialized-views-create#spanner)\nto improve query performance by periodically caching results. This feature is\n[generally available](https://cloud.google.com/products/#product-launch-stages) (GA).",
+        "summary": {
+          "title": "Materialized Views for Spanner Data Now Available",
+          "summary": "BigQuery now supports creating non-incremental materialized views over Spanner data. This feature, which is now generally available, helps improve query performance by periodically caching results."
+        }
+      }
+    ],
     "2026-03-26": [
       {
         "kind": "Feature",

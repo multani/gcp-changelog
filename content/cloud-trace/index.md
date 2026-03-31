@@ -1,5 +1,23 @@
 # Cloud Trace
 
+## 2026-03-30
+
+### Change
+
+For any new project that is created on or after March 30, 2026, if the
+project enables the
+Cloud Trace API,
+then Google Cloud Observability also enables the
+[Telemetry API](https://docs.cloud.google.com/stackdriver/docs/reference/telemetry/overview).
+
+### Feature
+
+You can use the
+[Cloud Trace API MCP server](https://docs.cloud.google.com/trace/docs/reference/mcp/mcp)
+to let agents and AI applications interact with your trace data.
+This feature is in [Preview](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-03-24
 
 ### Feature

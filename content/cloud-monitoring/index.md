@@ -1,5 +1,15 @@
 # Cloud Monitoring
 
+## 2026-03-30
+
+### Change
+
+For any new project that is created on or after March 30, 2026, if the
+project enables the
+Cloud Monitoring API,
+[Telemetry API](https://docs.cloud.google.com/stackdriver/docs/reference/telemetry/overview).
+
+---
 ## 2026-03-24
 
 ### Feature

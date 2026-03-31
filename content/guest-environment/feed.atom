@@ -2,9 +2,60 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Guest Environment</title>
   <subtitle>Changelog for Google Cloud product: Guest Environment</subtitle>
-  <updated>2026-03-05T00:00:00+00:00</updated>
+  <updated>2026-03-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:guest-environment</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/guest-environment/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2026-03-30:feature:0</id>
+    <published>2026-03-30T00:00:00+00:00</published>
+    <updated>2026-03-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20260329.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a>
+is now available for all supported operating systems. This version introduces
+the following features:</p>
+<ul>
+<li>A new local extension, guest telemetry, is introduced, which collects
+  important telemetry data about Independent Software Vendors (ISVs) running
+  on a compute instance. For more information about the telemetry the guest
+  agent collects, see
+  <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent-functions#system-telemetry-collection">System telemetry collection</a>.</li>
+<li>The <code>enable_local_plugins</code> configuration now defaults to <code>true</code>.</li>
+<li>A new configuration flag <code>connection_type</code> is introduced to the
+  <code>PluginConfig</code> section of the guest agent configuration file. This option
+  forces a specific connection type when the guest agent connects to the
+  extensions it is managing. Supported connection types are UDS and TCP.</li>
+</ul>]]></content>
+    <summary>A new version of the guest agent is now available, introducing guest telemetry for ISV data collection. The `enable_local_plugins` setting now defaults to true, and a new `connection_type` flag allows specifying connection methods like UDS or TCP.</summary>
+    <title>Feature: New Guest Agent Version Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2026-03-30:fixed:1</id>
+    <published>2026-03-30T00:00:00+00:00</published>
+    <updated>2026-03-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20260329.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a>
+is now available for all supported operating systems. This version introduces
+the following fixes:</p>
+<ul>
+<li>The guest agent no longer terminates abruptly when an extension's gRPC
+  client is null. Instead, it logs an error.</li>
+<li>The credentials setup for HTTPS access to the metadata server was moved to
+  prevent it from blocking the guest agent's readiness signal. This mitigates
+  an issue on machines without vTPM, where the guest agent can take an extra
+  10 seconds to signal that it's ready.</li>
+<li>The core plugin now logs during the startup phase to provide a better signal
+  on when it's started.</li>
+<li>Locally bundled extensions are now direct child processes of the agent
+  manager process. This helps resolve an issue where plugins remain as
+  running processes but fail to start correctly.</li>
+</ul>]]></content>
+    <summary>Version 20260329.00 of the guest agent is now available, including several important fixes. These address abrupt terminations, improve readiness signal reliability, enhance startup logging, and ensure proper execution of bundled extensions.</summary>
+    <title>Fixed: Guest Agent Update Deploys Fixes</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

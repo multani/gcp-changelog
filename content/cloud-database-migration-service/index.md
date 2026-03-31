@@ -1,5 +1,14 @@
 # Cloud Database Migration Service
 
+## 2026-03-30
+
+### Feature
+
+Database Migration Service for homogeneous MySQL migrations now lets you migrate
+individual databases from your source. You can select the databases when you
+[create a migration job for homogeneous MySQL migrations](https://docs.cloud.google.com/database-migration/docs/mysql/create-migration-job-intro).
+
+---
 ## 2026-03-18
 
 ### Announcement

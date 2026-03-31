@@ -1,5 +1,16 @@
 # Cloud SQL for MySQL
 
+## 2026-03-31
+
+### Feature
+
+You can now migrate a subset of databases from an external server to a
+destination Cloud SQL for MySQL instance.
+
+For more information, see
+[Configure Cloud SQL and the external server for replication](https://docs.cloud.google.com/sql/docs/mysql/replication/configure-replication-from-external).
+
+---
 ## 2026-03-30
 
 ### Feature

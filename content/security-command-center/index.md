@@ -1,5 +1,12 @@
 # Security Command Center
 
+## 2026-03-31
+
+### Feature
+
+[Risk Engine](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-supported-features) now supports [`aiplatform.googleapis.com/ReasoningEngine`](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/reference/rest/v1/projects.locations.reasoningEngines) in both [attack paths](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-learn) and [high value resource sets](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-learn#high-value-resource-sets).
+
+---
 ## 2026-03-27
 
 ### Announcement

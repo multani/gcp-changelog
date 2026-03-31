@@ -1,5 +1,14 @@
 # Cloud DNS
 
+## 2026-03-15
+
+### Feature
+
+The `filter` query parameter for [`resourceRecordSets.list`](https://docs.cloud.google.com/dns/docs/reference/rest/v1/resourceRecordSets/list#query-parameters) is generally available ([GA](https://cloud.google.com/products?e=48754805#product-launch-stages)).
+
+You can filter records to match a specified domain using the API.
+
+---
 ## 2026-01-16
 
 ### Feature

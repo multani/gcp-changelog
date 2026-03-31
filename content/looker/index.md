@@ -19,7 +19,7 @@ The [**Enhanced Content Cleanup** preview feature](https://docs.cloud.google.com
 * Lets content owners opt out of automated scheduled cleanups for specific content.
 * Lets admins and users move content to the trash.
 
-This feature is disabled by default.
+This feature is disabled by default. Learn more about [managing unused content with **Enhanced Content Cleanup**](https://docs.cloud.google.com/looker/docs/manage-unused-content).
 
 ### Announcement
 

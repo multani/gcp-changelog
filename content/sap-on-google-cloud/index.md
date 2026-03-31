@@ -1,5 +1,22 @@
 # SAP on Google Cloud
 
+## 2026-03-31
+
+### Announcement
+
+**ABAP SDK for Google Cloud version 1.13 (On-premises or any cloud edition)**
+
+Version 1.13 of the on-premises or any cloud edition of the
+ABAP SDK for Google Cloud is generally available (GA).
+For the latest Gemini 3.1 Pro models, this version includes support for
+function calling with thought signatures and enhanced thinking configurations
+to optimize model reasoning.
+
+Additionally, this version introduces support for the Parameter Manager API and fixes an issue with the `recordstamp` field in the BigQuery toolkit for SAP when multiple records with the same primary key are replicated to BigQuery.
+
+For more information, see [What's new with the on-premises or any cloud edition of the ABAP SDK for Google Cloud](https://docs.cloud.google.com/sap/docs/abap-sdk/on-premises-or-any-cloud/whats-new#version-1-13).
+
+---
 ## 2026-03-16
 
 ### Announcement

@@ -1,5 +1,23 @@
 # Document AI
 
+## 2026-03-31
+
+### Feature
+
+Upgrading fine tuned [custom extractor](https://docs.cloud.google.com/document-ai/docs/ce-with-genai) processors
+is now available in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+The feature allows you to fine tune a new processor version with a newer base
+version, while keeping the configurations of the previously fine-tuned processor
+version selected. This is available through the UI in the **Deploy & use** tab
+in the console.
+
+This is currently supported for upgrading `pretrained-foundation-model-v1.4-2025-02-05`
+to `pretrained-foundation-model-v1.5-2025-05-05`.
+
+For more information, see [training overview](https://docs.cloud.google.com/document-ai/docs/training-overview#upgrade-ui).
+
+---
 ## 2026-03-27
 
 ### Feature

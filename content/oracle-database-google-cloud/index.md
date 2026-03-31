@@ -1,5 +1,13 @@
 # Oracle Database@Google Cloud
 
+## 2026-03-31
+
+### Feature
+
+Oracle Database@Google Cloud supports VPC Service Controls. For more information,
+see [Configure VPC Service Controls](https://docs.cloud.google.com/oracle/database/docs/configure-vpc-service-controls). This feature is [Generally Available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-03-11
 
 ### Feature

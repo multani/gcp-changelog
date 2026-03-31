@@ -115,7 +115,7 @@ The following functions are now
 
 ### Feature
 
-You can now use a [custom organization policy](https://docs.cloud.google.com/bigquery/docs/reservation-custom-constraints)
+You can now use a [custom organization policy](https://docs.cloud.google.com/bigquery/docs/custom-constraints)
 to allow or deny specific operations on routines. This feature is in
 [preview](https://cloud.google.com/products/#product-launch-stages).
 

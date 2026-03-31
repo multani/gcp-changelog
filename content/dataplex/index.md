@@ -1,5 +1,12 @@
 # Dataplex
 
+## 2026-03-30
+
+### Feature
+
+Automated cataloging of Looker (Google Cloud core) metadata as well as data lineage ingestion from BigQuery sources are now available in [preview](https://cloud.google.com/products#product-launch-stages). For more information, see the [Looker (Google Cloud core) documentation](https://docs.cloud.google.com/looker/docs/looker-core-dataplex).
+
+---
 ## 2026-02-24
 
 ### Feature

@@ -1,5 +1,18 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-03-30
+
+### Feature
+
+Cloud SQL for PostgreSQL now offers conversational analytics, which lets users query
+their operational data using natural language. This feature is powered by the
+[Conversational Analytics API](https://docs.cloud.google.com/gemini/data-agents/conversational-analytics-api/overview),
+which can help you translate complex human dialog into precise database queries
+to provide actionable insights. This feature is in
+[Preview](https://docs.cloud.google.com/products#product-launch-stages).
+For more information, see [Conversational analytics for Cloud SQL for PostgreSQL overview](https://docs.cloud.google.com/gemini/data-agents/conversational-analytics/sql-postgres).
+
+---
 ## 2026-03-17
 
 ### Feature

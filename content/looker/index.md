@@ -1,5 +1,66 @@
 # Looker
 
+## 2026-03-30
+
+### Feature
+
+Available in preview, you can [publish the Conversational Analytics data agents](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents) that you create in Looker to Gemini Enterprise.
+
+### Feature
+
+Available in preview for Looker (Google Cloud core), you can now track [end-to-end data lineage](https://docs.cloud.google.com/looker/docs/looker-core-lineage) from BigQuery to Looker content, including views, Explores, dashboards, and Looks, through the Looker and Dataplex lineage integration. This enables impact analysis to see how BigQuery changes affect downstream Looker (Google Cloud core) contents.
+
+### Feature
+
+The [**Enhanced Content Cleanup** preview feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#enhanced-content-cleanup) is now available. When this feature is enabled for your instance, it lets admins and content owners access an enhanced content management experience in Looker. The **Enhanced Content Cleanup** preview feature provides the following capabilities:
+
+* Lets admins and users access a new **Unused content** folder to quickly identify and manage the unused content on a Looker instance.
+* Lets admins programmatically schedule content cleanups for individual content or in bulk, and send automatic notifications to content owners.
+* Lets content owners opt out of automated scheduled cleanups for specific content.
+* Lets admins and users move content to the trash.
+
+This feature is disabled by default.
+
+### Announcement
+
+Starting March 30, 2026, the following features will begin rolling out.
+
+### Feature
+
+Available in preview, you can chat with [Conversational Analytics data agents](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data) in user-defined dashboards and in LookML dashboards.
+
+### Change
+
+The [Looker mobile application](https://docs.cloud.google.com/looker/docs/looker-core-mobile-app) now supports sending [alert notifications as push notifications](https://docs.cloud.google.com/looker/docs/looker-mobile-app-alerts) to users who have the Looker mobile application on their mobile device.
+
+### Feature
+
+Now generally available, Looker has full support for connections with [AlloyDB for PostgreSQL](https://docs.cloud.google.com/looker/docs/db-config-alloydb). When you [create a connection](https://docs.cloud.google.com/looker/docs/connecting-to-your-db) in Looker, you can now select **Google Cloud AlloyDB for PostgreSQL** from the **Dialect** drop-down menu. This update doesn't affect existing AlloyDB connections that were created using the **PostgreSQL 9.5+** option in the Dialect menu.
+
+### Feature
+
+The [**New Looker Explore and Merge Query Experience** preview feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#new-looker-explore-and-merge-query-experience) is now available.
+
+When this feature is enabled for your instance, it lets individual users have the option to try the redesigned Looker Explore and Merge Query interfaces. The streamlined interfaces let Looker users find connections and gain insights from their data more quickly. For an AI-assisted experience, enable additional options on the [**Gemini in Looker**](https://docs.cloud.google.com/looker/docs/admin-panel-platform-gil) page in the **Platform** section of the **Admin** panel.
+
+This feature is disabled by default.
+
+[Learn more about the new Explore and Merge Query experience](https://docs.cloud.google.com/looker/docs/new-explore-experience-overview).
+
+### Feature
+
+Available in preview, Looker (Google Cloud core) now [integrates with Dataplex Universal Catalog](https://docs.cloud.google.com/looker/docs/looker-core-dataplex), providing a unified discovery and management experience for your Looker metadata. This allows you to search for Looker assets like LookML models and dashboards directly within Dataplex, giving you a comprehensive view of your data landscape.
+
+### Feature
+
+When connecting Looker to your database, you can specify [additional Java Database Connectivity (JDBC) parameters](https://docs.cloud.google.com/looker/docs/connecting-to-your-db#additional_jdbc_parameters) that you want Looker to include when it communicates with your database driver. In order to keep your connection secure, Looker now has an allowlist for the additional JDBC parameters that are supported for each database dialect.
+
+* If you try to create or update a connection that uses unsupported JDBC parameters, Looker will display an error message that shows the non-allowed parameters.
+* If you have an existing connection that uses unsupported JDBC parameters, Looker will remove the parameters and then connect to your database.
+
+For a list of the supported JDBC parameters for your dialect, see the "Supported JDBC parameters" section of the [database configuration instructions](https://docs.cloud.google.com/looker/docs/dialects#database_configuration_instructions) page for your dialect.
+
+---
 ## 2026-03-26
 
 ### Feature
@@ -263,14 +324,6 @@ An issue has been fixed where certain tables were being unnecessarily truncated 
 
 An issue has been fixed where the "raw" timeframe of a `dimension_group` could be displayed in a 12-hour format instead of the expected 24-hour format. This feature now performs as expected.
 
-### Feature
-
-The Looker API now includes Looker [Conversational Analytics endpoints](https://docs.cloud.google.com/looker/docs/reference/looker-api/latest/methods/ConversationalAnalytics) that you can use with applications that embed Looker to create and manage agents, conversations, and messages.
-
-For tips on using the Conversational Analytics endpoints, see the "[Best practices for using the ConversationalAnalytics API endpoints in Looker's API](https://docs.cloud.google.com/looker/docs/best-practices/ca-apis-in-looker-api-best-practices)" documentation page.
-
-**Note:** This item was updated March 13, 2026.
-
 ### Fixed
 
 An issue has been fixed where dimension fill could fail to populate values when the row limit is reached. This feature now performs as expected.
@@ -315,6 +368,14 @@ Your enablement status for each feature has not changed. For more information, s
 ### Fixed
 
 An issue has been fixed where Looker could fail to retain sorts when content from a drill modal was being downloaded. This feature now performs as expected.
+
+### Feature
+
+The Looker API now includes Looker [Conversational Analytics endpoints](https://docs.cloud.google.com/looker/docs/reference/looker-api/latest/methods/ConversationalAnalytics) that you can use with applications that embed Looker to create and manage agents, conversations, and messages.
+
+For tips on using the Conversational Analytics endpoints, see the [Best practices for using the ConversationalAnalytics API endpoints in Looker's API](https://docs.cloud.google.com/looker/docs/best-practices/ca-apis-in-looker-api-best-practices) documentation page.
+
+**Note:** This item was updated March 13, 2026.
 
 ### Fixed
 

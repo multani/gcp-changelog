@@ -1,5 +1,20 @@
 # Cloud Billing
 
+## 2026-03-30
+
+### Feature
+
+**Scenario modeling for CUD recommendations is generally available**
+
+Scenario modeling for committed use discount (CUD) recommendations is now
+generally available (GA). You can simulate scenarios for both spend-based and
+resource-based CUDs, and customize recommendations to purchase a commitment that
+maximizes your savings.
+
+For more information, see
+[Simulate scenarios for CUDs savings](https://docs.cloud.google.com/docs/cuds-recommender#simulate-scenarios).
+
+---
 ## 2026-03-23
 
 ### Change

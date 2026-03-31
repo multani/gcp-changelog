@@ -1,5 +1,15 @@
 # Cloud Build
 
+## 2026-03-30
+
+### Feature
+
+Cloud Build now supports uploading generic artifacts to generic
+repositories, and also downloading generic repositories as build dependencies.
+For more information, see [`genericArtifacts`](https://docs.cloud.google.com/build/docs/build-config-file-schema#generic-artifacts)
+and [Specify a generic artifact as a dependency](https://docs.cloud.google.com/build/docs/building/manage-dependencies#specify-generic).
+
+---
 ## 2026-03-16
 
 ### Feature

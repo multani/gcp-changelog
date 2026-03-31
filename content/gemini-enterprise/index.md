@@ -1,5 +1,20 @@
 # Gemini Enterprise
 
+## 2026-03-30
+
+### Feature
+
+**Gemini Enterprise: Include cross-domain documents feature for Google Drive (Preview)**
+
+When configuring a Google Drive data store, the **Include cross-domain
+documents** feature lets you search and index documents outside your
+organization. Enable this setting during app creation or on the **Manage web app
+features** page for existing apps.
+
+This feature is in Public Preview. For more information, see [Create an app](https://docs.cloud.google.com/gemini/enterprise/docs/create-app) and [Manage web app
+features](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
+
+---
 ## 2026-03-26
 
 ### Feature

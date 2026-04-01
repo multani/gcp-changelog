@@ -11,6 +11,20 @@ Gemini Enterprise and NotebookLM Enterprise are certified for
 
 ### Feature
 
+**Gemini Enterprise: Support for new actions (Preview)**
+
+New actions are available for the following data stores:
+
+* [Gmail](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/gmail)
+* [Google Drive](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/gdrive)
+* [GitHub](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/github)
+* [HubSpot](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/hubspot)
+* [Monday](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/monday)
+
+For a list of actions for these data stores, see [Supported actions](https://docs.cloud.google.com/gemini/enterprise/docs/connect-third-party-data-source#supported_actions).
+
+### Feature
+
 **Gemini Enterprise: Connect Salesforce data using data federation (Preview)**
 
 You can connect Salesforce data stores to Gemini Enterprise using data

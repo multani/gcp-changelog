@@ -2,9 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Load Balancing</title>
   <subtitle>Changelog for Google Cloud product: Cloud Load Balancing</subtitle>
-  <updated>2026-02-24T00:00:00+00:00</updated>
+  <updated>2026-03-31T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-load-balancing</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-load-balancing/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-load-balancing:2026-03-31:feature:0</id>
+    <published>2026-03-31T00:00:00+00:00</published>
+    <updated>2026-03-31T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>SNI-based routing for proxy Network Load Balancers is now available in
+<strong>Preview</strong>.</p>
+<p>You can now route TLS traffic based on Server Name Indication (SNI) hostnames
+by using the new <code>TLSRoute</code> resource. The load balancer inspects the
+initial unencrypted <code>ClientHello</code> message to extract the SNI hostname and
+route connections to the appropriate backend service.
+This feature provides pure TLS passthrough without terminating the connection
+at the load balancer. Key benefits include:</p>
+<ul>
+<li><strong>End-to-end encryption</strong>: Clients can establish secure mTLS or TLS sessions
+  directly with origin servers.</li>
+<li><strong>Role-oriented management</strong>: The <code>TLSRoute</code> API lets platform administrators
+  to manage frontend infrastructure while service owners manage their own routes
+  and backends independently.</li>
+<li><strong>Simplified IP management</strong>: Consolidate multiple services behind a single
+  <a href="https://docs.cloud.google.com/vpc/docs/about-accessing-vpc-hosted-services-endpoints">Private Service Connect (PSC) endpoint</a>,
+  reducing IPv4 address exhaustion.</li>
+</ul>
+<p>This feature is available for regional and cross-region proxy Network Load Balancers.</p>
+<p>For more information, see:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/load-balancing/docs/tcp/set-up-ext-reg-tcp-proxy-migs#configure-lb-tls-routes">Create a regional external proxy Network Load Balancer load balancer with TLS routes</a></li>
+<li><a href="https://docs.cloud.google.com/load-balancing/docs/tcp/set-up-int-tcp-proxy-migs#configure-lb-tls-routes">Create a regional internal proxy Network Load Balancer load balancer with TLS routes</a></li>
+<li><a href="https://docs.cloud.google.com/load-balancing/docs/tcp/setup-cross-reg-proxy-migs#configure-lb-tls-routes">Create a cross-region internal proxy Network Load Balancer load balancer with TLS routes</a></li>
+</ul>]]></content>
+    <summary>Route TLS traffic based on Server Name Indication (SNI) hostnames with the new TLSRoute resource. This feature enables pure TLS passthrough for regional and cross-region proxy Network Load Balancers, preserving end-to-end encryption and simplifying IP management.</summary>
+    <title>Feature: SNI-based routing for Network Load Balancers now in Preview</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

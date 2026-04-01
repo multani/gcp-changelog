@@ -1,5 +1,14 @@
 # Cloud Storage
 
+## 2026-03-31
+
+### Feature
+
+You can now use Storage Insights datasets to help manage your data security and compliance. The ability to [identify publicly accessible objects](https://docs.cloud.google.com/storage/docs/insights/datasets#public-accessible-objects) is now [generally available](https://developers.google.com/maps/launch-stages#ga). Additionally, new fields in bucket and object metadata schemas, such as `encryption`, `retentionPeriod`, `encryptionType`, and `retentionExpirationTime`, help you audit encryption configurations and monitor data retention policies. For more information, see
+[Storage Insights datasets](https://docs.cloud.google.com/storage/docs/insights/datasets) and
+[Dataset tables and schemas](https://docs.cloud.google.com/storage/docs/insights/dataset-tables-and-schemas).
+
+---
 ## 2026-03-24
 
 ### Announcement

@@ -1,5 +1,37 @@
 # Cloud Load Balancing
 
+## 2026-03-31
+
+### Feature
+
+SNI-based routing for proxy Network Load Balancers is now available in
+**Preview**.
+
+You can now route TLS traffic based on Server Name Indication (SNI) hostnames
+by using the new `TLSRoute` resource. The load balancer inspects the
+initial unencrypted `ClientHello` message to extract the SNI hostname and
+route connections to the appropriate backend service.
+This feature provides pure TLS passthrough without terminating the connection
+at the load balancer. Key benefits include:
+
+* **End-to-end encryption**: Clients can establish secure mTLS or TLS sessions
+  directly with origin servers.
+* **Role-oriented management**: The `TLSRoute` API lets platform administrators
+  to manage frontend infrastructure while service owners manage their own routes
+  and backends independently.
+* **Simplified IP management**: Consolidate multiple services behind a single
+  [Private Service Connect (PSC) endpoint](https://docs.cloud.google.com/vpc/docs/about-accessing-vpc-hosted-services-endpoints),
+  reducing IPv4 address exhaustion.
+
+This feature is available for regional and cross-region proxy Network Load Balancers.
+
+For more information, see:
+
+* [Create a regional external proxy Network Load Balancer load balancer with TLS routes](https://docs.cloud.google.com/load-balancing/docs/tcp/set-up-ext-reg-tcp-proxy-migs#configure-lb-tls-routes)
+* [Create a regional internal proxy Network Load Balancer load balancer with TLS routes](https://docs.cloud.google.com/load-balancing/docs/tcp/set-up-int-tcp-proxy-migs#configure-lb-tls-routes)
+* [Create a cross-region internal proxy Network Load Balancer load balancer with TLS routes](https://docs.cloud.google.com/load-balancing/docs/tcp/setup-cross-reg-proxy-migs#configure-lb-tls-routes)
+
+---
 ## 2026-02-24
 
 ### Other

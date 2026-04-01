@@ -1,5 +1,18 @@
 # Cluster Toolkit
 
+## 2026-03-25
+
+### Feature
+
+Cluster Toolkit version v1.85.0 is available. This release updates the
+`cloud_dns_config` setting in the `gke-cluster` module to default to `KUBE_DNS`
+(CoreDNS). This version also adds Google Cloud Managed Lustre integration for
+Google Kubernetes Engine with the A4X Max machine type.
+
+For more information about this release and other minor changes, see the [Release
+announcement on GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5397).
+
+---
 ## 2026-03-13
 
 ### Feature
@@ -11,7 +24,30 @@ instances. For details, see the [Release announcement on
 GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5348).
 
 ---
+## 2026-03-12
+
+### Feature
+
+Cluster Toolkit version v1.84.0 is available. This release adds disk
+type validation in specific zones, updates GKE versioning for GPU
+direct configurations, and fixes an issue with NCCL test scripts on A3 High
+instances. For details, see the [Release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5348).
+
+---
 ## 2026-03-11
+
+### Feature
+
+Cluster Toolkit version v1.83.0 is available. This release introduces
+early conditional and required validations, adds support for A4X-Max Bare Metal
+on GKE and Slurm, and enables Dynamic Workload Scheduler Queued Provisioning
+for TPU v6e and 7x. It also includes several module migrations to Helm and pins
+Terraform to version 1.12.2. For details, see the [Release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5312).
+
+---
+## 2026-03-05
 
 ### Feature
 

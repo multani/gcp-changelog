@@ -1,6 +1,16 @@
 {
   "name": "Cloud Load Balancing",
   "entries": {
+    "2026-03-31": [
+      {
+        "kind": "Feature",
+        "content": "SNI-based routing for proxy Network Load Balancers is now available in\n**Preview**.\n\nYou can now route TLS traffic based on Server Name Indication (SNI) hostnames\nby using the new `TLSRoute` resource. The load balancer inspects the\ninitial unencrypted `ClientHello` message to extract the SNI hostname and\nroute connections to the appropriate backend service.\nThis feature provides pure TLS passthrough without terminating the connection\nat the load balancer. Key benefits include:\n\n* **End-to-end encryption**: Clients can establish secure mTLS or TLS sessions\n  directly with origin servers.\n* **Role-oriented management**: The `TLSRoute` API lets platform administrators\n  to manage frontend infrastructure while service owners manage their own routes\n  and backends independently.\n* **Simplified IP management**: Consolidate multiple services behind a single\n  [Private Service Connect (PSC) endpoint](https://docs.cloud.google.com/vpc/docs/about-accessing-vpc-hosted-services-endpoints),\n  reducing IPv4 address exhaustion.\n\nThis feature is available for regional and cross-region proxy Network Load Balancers.\n\nFor more information, see:\n\n* [Create a regional external proxy Network Load Balancer load balancer with TLS routes](https://docs.cloud.google.com/load-balancing/docs/tcp/set-up-ext-reg-tcp-proxy-migs#configure-lb-tls-routes)\n* [Create a regional internal proxy Network Load Balancer load balancer with TLS routes](https://docs.cloud.google.com/load-balancing/docs/tcp/set-up-int-tcp-proxy-migs#configure-lb-tls-routes)\n* [Create a cross-region internal proxy Network Load Balancer load balancer with TLS routes](https://docs.cloud.google.com/load-balancing/docs/tcp/setup-cross-reg-proxy-migs#configure-lb-tls-routes)",
+        "summary": {
+          "title": "SNI-based routing for Network Load Balancers now in Preview",
+          "summary": "Route TLS traffic based on Server Name Indication (SNI) hostnames with the new TLSRoute resource. This feature enables pure TLS passthrough for regional and cross-region proxy Network Load Balancers, preserving end-to-end encryption and simplifying IP management."
+        }
+      }
+    ],
     "2026-02-24": [
       {
         "kind": "Other",

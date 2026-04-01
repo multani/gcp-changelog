@@ -1,5 +1,13 @@
 # Cloud Run
 
+## 2026-03-25
+
+### Feature
+
+[Deploying services using a Compose file](https://docs.cloud.google.com/run/docs/deploy-run-compose)
+is in [General Availability](https://cloud.google.com/products?e=48754805#product-launch-stages).
+
+---
 ## 2026-03-17
 
 ### Feature

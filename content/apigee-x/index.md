@@ -1,5 +1,54 @@
 # Apigee X
 
+## 2026-03-31
+
+### Feature
+
+**General Availability (GA) launch of Model Context Protocol (MCP) in Apigee**
+
+With this release, Model Context Protocol (MCP) in Apigee is [generally available](https://docs.cloud.google.com/products#product-launch-stages), enabling you to expose your Apigee APIs as MCP tools to agentic applications.
+
+Any MCP client that supports remote MCP endpoints over HTTP/S can access these tools. Because the endpoints are managed, you don't need to install or manage local MCP servers, remote MCP servers, or additional infrastructure to enable agentic applications to access your services.
+
+MCP in Apigee is available for Subscription, Pay-as-you-go, and Evaluation organizations, including organizations with Data Residency and VPC Service Controls enabled.
+
+For more information on using MCP in Apigee, see [MCP in Apigee overview](https://docs.cloud.google.com/apigee/docs/api-platform/apigee-mcp/apigee-mcp-overview).
+
+### Change
+
+**Updated MCP server target endpoint for MCP Discovery Proxies**
+
+With the GA launch of Model Context Protocol (MCP) in Apigee, the structure of the MCP server target endpoint for MCP Discover Proxies has changed to `ORG_NAME.mcp.apigee.internal`.
+
+Private preview customers using the previous format (`mcp.apigee.internal`) are encouraged to update their proxies to reflect the new structure. Existing endpoints using the old format will continue to work, but new endpoints will use the new structure.
+
+### Announcement
+
+On March 31st, 2026, we released an updated version of Apigee.
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+### Feature
+
+**Enhanced OAS server URL path handling for MCP in Apigee**
+
+With this feature enhancement, your OpenAPI specification (OAS) configurations behave exactly
+as defined in the OAS standard, automatically combining the `server.url` base path value with individual operation paths.
+
+For example, a server URL of`https://example.com/api/v1` paired with a path of `/users` will now correctly route to `https://example.com/api/v1/users` without additional manual intervention.
+
+If you previously prepended base paths to your OAS paths entries, remove the path segment from your `servers.url` field to prevent
+duplication. For example, change `https://example.com/api/v1` to `https://example.com`.
+
+For more information, see [Create an OpenAPI 3.0 specification](https://docs.cloud.google.com/apigee/docs/api-platform/apigee-mcp/apigee-mcp-quickstart#create-an-openapi-3.0.x-specification-describing-your-api-operations).
+
+### Issue
+
+**Known Issue 496552286: Deployment fails for MCP Discovery Proxies in regions with capacity limitations.**
+
+For more information, see [Apigee known issues](https://docs.cloud.google.com/apigee/docs/release/known-issues).
+
+---
 ## 2026-03-26
 
 ### Announcement

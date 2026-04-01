@@ -1,6 +1,16 @@
 {
   "name": "BigQuery",
   "entries": {
+    "2026-03-31": [
+      {
+        "kind": "Feature",
+        "content": "BigQuery [`ObjectRef` values](https://docs.cloud.google.com/bigquery/docs/work-with-objectref)\nnow support the following:\n\n* You can run [`ObjectRef` functions](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/objectref_functions)\n  with either\n  [direct access or delegated access](https://docs.cloud.google.com/bigquery/docs/work-with-objectref#authorizer_and_permissions).\n* The\n  [`OBJ.MAKE_REF` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/objectref_functions#objmake_ref)\n  automatically fetches the latest Cloud Storage metadata and populates this in\n  the `ref.details` field.\n* The\n  [`OBJ.GET_READ_URL` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/objectref_functions#objget_read_url)\n  returns a `STRUCT` value with a read URL and status columns and renders image\n  results in the Cloud console. Use this function when you don't require a\n  write URL.\n\nThese features are\n[generally available](https://cloud.google.com/products#product-launch-stages)\n(GA).",
+        "summary": {
+          "title": "Easier access to BigQuery object references",
+          "summary": "BigQuery's ObjectRef now supports direct and delegated access for ObjectRef functions. The OBJ.MAKE_REF function automatically fetches the latest Cloud Storage metadata, and OBJ.GET_READ_URL provides a read URL and status for displaying images in the console. These capabilities are now generally available."
+        }
+      }
+    ],
     "2026-03-30": [
       {
         "kind": "Feature",

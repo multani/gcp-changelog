@@ -2,9 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: BigQuery</title>
   <subtitle>Changelog for Google Cloud product: BigQuery</subtitle>
-  <updated>2026-03-30T00:00:00+00:00</updated>
+  <updated>2026-03-31T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:bigquery</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/bigquery/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-03-31:feature:0</id>
+    <published>2026-03-31T00:00:00+00:00</published>
+    <updated>2026-03-31T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>BigQuery <a href="https://docs.cloud.google.com/bigquery/docs/work-with-objectref"><code>ObjectRef</code> values</a>
+now support the following:</p>
+<ul>
+<li>You can run <a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/objectref_functions"><code>ObjectRef</code> functions</a>
+  with either
+  <a href="https://docs.cloud.google.com/bigquery/docs/work-with-objectref#authorizer_and_permissions">direct access or delegated access</a>.</li>
+<li>The
+  <a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/objectref_functions#objmake_ref"><code>OBJ.MAKE_REF</code> function</a>
+  automatically fetches the latest Cloud Storage metadata and populates this in
+  the <code>ref.details</code> field.</li>
+<li>The
+  <a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/objectref_functions#objget_read_url"><code>OBJ.GET_READ_URL</code> function</a>
+  returns a <code>STRUCT</code> value with a read URL and status columns and renders image
+  results in the Cloud console. Use this function when you don't require a
+  write URL.</li>
+</ul>
+<p>These features are
+<a href="https://cloud.google.com/products#product-launch-stages">generally available</a>
+(GA).</p>]]></content>
+    <summary>BigQuery's ObjectRef now supports direct and delegated access for ObjectRef functions. The OBJ.MAKE_REF function automatically fetches the latest Cloud Storage metadata, and OBJ.GET_READ_URL provides a read URL and status for displaying images in the console. These capabilities are now generally available.</summary>
+    <title>Feature: Easier access to BigQuery object references</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

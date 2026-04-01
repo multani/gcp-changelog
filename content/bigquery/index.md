@@ -1,5 +1,30 @@
 # BigQuery
 
+## 2026-03-31
+
+### Feature
+
+BigQuery [`ObjectRef` values](https://docs.cloud.google.com/bigquery/docs/work-with-objectref)
+now support the following:
+
+* You can run [`ObjectRef` functions](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/objectref_functions)
+  with either
+  [direct access or delegated access](https://docs.cloud.google.com/bigquery/docs/work-with-objectref#authorizer_and_permissions).
+* The
+  [`OBJ.MAKE_REF` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/objectref_functions#objmake_ref)
+  automatically fetches the latest Cloud Storage metadata and populates this in
+  the `ref.details` field.
+* The
+  [`OBJ.GET_READ_URL` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/objectref_functions#objget_read_url)
+  returns a `STRUCT` value with a read URL and status columns and renders image
+  results in the Cloud console. Use this function when you don't require a
+  write URL.
+
+These features are
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-03-30
 
 ### Feature

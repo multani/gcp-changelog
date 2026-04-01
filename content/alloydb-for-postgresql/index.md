@@ -1,5 +1,18 @@
 # AlloyDB for PostgreSQL
 
+## 2026-03-31
+
+### Feature
+
+Hot standby enhances the AlloyDB high availability (HA) architecture to improve
+failover times and to ensure consistent performance after failover. AlloyDB
+continuously replicates transactions to the standby node to keep caches warm
+and to ensure that the node is ready to take over quickly during a failover.
+This feature is generally available ([GA](https://cloud.google.com/products#product-launch-stages)) in PostgreSQL 18 and is automatically
+enabled for all new instances. For more information, see the
+[AlloyDB high availability overview](https://docs.cloud.google.com/alloydb/docs/high-availability).
+
+---
 ## 2026-03-30
 
 ### Feature

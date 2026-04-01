@@ -1,6 +1,16 @@
 {
   "name": "Cloud NAT",
   "entries": {
+    "2026-03-31": [
+      {
+        "kind": "Announcement",
+        "content": "The default TCP [`TIME_WAIT`](https://docs.cloud.google.com/nat/docs/tune-nat-configuration#nat-timeouts)\ntimeout for Cloud NAT is scheduled to decrease from 120 seconds to 30 seconds,\nacross all regions, as follows:\n\n* **From June 30 to September 29, 2026**: new Cloud NAT gateways will use either\n  the 120-second or 30-second default, depending on when the update is\n  deployed in a specific region.\n* **On or after September 30, 2026**: all new Cloud NAT gateways in all regions\n  will use the 30-second default.\n\n**Impact on gateways**\n\n* **New gateways**: after the update is deployed in a region, all new Cloud NAT\n  gateways created in that region will use the 30-second default.\n  This change also applies if a pre-update gateway is deleted and then recreated.\n* **Existing gateways**: Cloud NAT gateways created before the regional update\n  will retain the 120-second default. You can adjust this value by using the\n  [--tcp-time-wait-timeout](https://docs.cloud.google.com/nat/docs/tune-nat-configuration#change-conn-timeouts)\n  flag at any time.\n\n  Cloud NAT gateways configured with a custom `TIME_WAIT` value\n  aren't affected and will continue to use your configured custom value.\n\nThe following table outlines the applicable default timeout for new gateways throughout the deployment timeline.\n\n| Gateway type | Default timeout (before June 30) | Default timeout (June 30—September 29) | Default timeout (on or after September 30) |\n| --- | --- | --- | --- |\n| New | 120 seconds | 30 or 120 seconds | 30 seconds |",
+        "summary": {
+          "title": "TCP TIME_WAIT timeout reduction",
+          "summary": "The default TCP TIME_WAIT timeout for new gateways is decreasing from 120 to 30 seconds. This change will be rolled out gradually between June 30 and September 30, 2026. Existing gateways and those with custom timeouts are not affected."
+        }
+      }
+    ],
     "2025-10-21": [
       {
         "kind": "Feature",

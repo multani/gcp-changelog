@@ -1,5 +1,17 @@
 # Network Connectivity Center
 
+## 2026-03-25
+
+### Feature
+
+Include and exclude [spoke filters](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/concepts/spoke-filters-overview)
+for hybrid spokes are available in [public preview](https://cloud.google.com/products#product-launch-stages).
+
+You can use export filters to control which subnets or routes a spoke can
+send to the hub. Import filters control which subnets or routes can be
+accepted by a spoke from the hub.
+
+---
 ## 2026-02-19
 
 ### Feature

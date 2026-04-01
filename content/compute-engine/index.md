@@ -1,5 +1,17 @@
 # Compute Engine
 
+## 2026-03-31
+
+### Feature
+
+**Generally available**: The maximum throughput for a Hyperdisk ML
+disk is increased to 2,097,152 MiB/s from 1,200,000 MiB/s.
+Hyperdisk ML provides the highest throughput per disk for machine learning and
+for workloads that require high read throughput on immutable datasets.
+
+For more information, see [About Hyperdisk ML](https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-ml).
+
+---
 ## 2026-03-27
 
 ### Security

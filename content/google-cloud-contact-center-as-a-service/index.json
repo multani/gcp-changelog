@@ -1,6 +1,40 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
+    "2026-03-30": [
+      {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS prerelease notes**\n\nHere are the pre-release notes for the next version of Google Cloud CCaaS. When\nwe release this version, we expect the new capabilities to be as shown here.",
+        "summary": {
+          "title": "CCaaS Pre-release Notes",
+          "summary": "Discover the upcoming capabilities in the next version of Google Cloud CCaaS with these pre-release notes. We outline the new features expected upon release."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Play pre-recorded audio for virtual agent**\n\nDialogflow lets virtual agents respond with pre-recorded audio. This\nlets you use high-quality audio files instead of standard text-to-speech. This\ncapability is available for all voice channels, including inbound and outbound\ncalls. It's available for support virtual agents, task virtual agents, and\npost-session virtual agents.",
+        "summary": {
+          "title": "Use pre-recorded audio for your virtual agent",
+          "summary": "You can now have your Dialogflow virtual agents respond using pre-recorded audio files. This feature enhances the quality of responses for all voice channels and supports various types of virtual agents."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Configure the ringing timeout for virtual agent transfers to SIP endpoints**\n\nTwilio users can configure the ringing timeout for outbound calls that virtual\nagents transfer to SIP endpoints. Add the `sip_ring_timeout` field to the\nvirtual agent's custom payload to set the ringing period for up to 600 seconds.\nThis allows calls to internal extensions or Unified Communications (UC)\ndestinations sufficient time to be answered before disconnection.",
+        "summary": {
+          "title": "Configure SIP endpoint ringing timeout",
+          "summary": "Virtual agents can now have their ringing timeout for SIP endpoint transfers configured. By adding the `sip_ring_timeout` field to the custom payload, users can set the ringing period for up to 600 seconds, ensuring calls to extensions or UC destinations have enough time to be answered."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were addressed in this release:\n\n* Fixed an issue where calls continued to be recorded after being transferred\n  to a third-party number, even when the **Continue Call recording to Third\n  Party Numbers after the agent leaves the call** setting was cleared.\n* Fixed an issue where emails were automatically assigned to users without\n  agent roles.\n* Fixed an issue where the global **Overcapacity Deflection Messages** setting\n  was configured for **Uploading Audio Recordings**, but queues inheriting\n  global settings incorrectly displayed **Text-to-speech** in the UI.\n* Fixed an issue where agents couldn't transfer a chat within the same queue.\n* Fixed an issue where incoming calls unexpectedly ended with 603 decline\n  errors after ringing for 13 seconds.\n* Fixed an issue in the Agent Desktop where the session ID didn't match the\n  call ID for the same interaction.\n* Fixed an issue where user search results didn't display users in locations\n  with the same first three letters of the name when searching for partial\n  locations.\n* Fixed an issue that let end-users interact with a mailbox immediately after\n  switching to a different mailbox, causing synchronization issues.\n* Fixed an issue where overcapacity deflection didn't work for direct inbound\n  calls.\n* Fixed an issue where the Reporting API changed the data types of some\n  response fields. This caused data type mismatches in the reports that the\n  API returned.",
+        "summary": {
+          "title": "Resolved Several Operational Issues",
+          "summary": "This release addresses multiple bugs impacting call recording, email assignment, agent desktop functionality, and reporting accuracy. Key fixes include resolving call recording continuations after transfers, correcting email assignment for non-agents, and ensuring accurate display of overcapacity deflection settings. Additionally, issues with chat transfers, call declines, session ID mismatches, user search, mailbox synchronization, and overcapacity deflection for direct calls have been resolved."
+        }
+      }
+    ],
     "2026-03-25": [
       {
         "kind": "Announcement",

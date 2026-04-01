@@ -12,6 +12,21 @@ to provide actionable insights. This feature is in
 [Preview](https://docs.cloud.google.com/products#product-launch-stages).
 For more information, see [Conversational analytics for Spanner overview](https://docs.cloud.google.com/gemini/data-agents/conversational-analytics/spanner).
 
+### Feature
+
+You can create BigQuery
+[non-incremental materialized views over Spanner data](https://docs.cloud.google.com/bigquery/docs/materialized-views-create#spanner)
+to improve query performance by periodically caching results. This feature is
+[generally available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+### Feature
+
+You can use
+[Cloud resource connections with `EXPORT DATA` statements](https://docs.cloud.google.com/bigquery/docs/export-to-spanner#export_using_a_cloud_resource_connection)
+to reverse ETL (extract, transform, load) BigQuery data to
+Spanner. This feature is
+[generally available (GA)](https://cloud.google.com/products/#product-launch-stages).
+
 ---
 ## 2026-03-25
 

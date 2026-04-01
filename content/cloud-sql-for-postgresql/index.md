@@ -12,6 +12,11 @@ to provide actionable insights. This feature is in
 [Preview](https://docs.cloud.google.com/products#product-launch-stages).
 For more information, see [Conversational analytics for Cloud SQL for PostgreSQL overview](https://docs.cloud.google.com/gemini/data-agents/conversational-analytics/sql-postgres).
 
+### Breaking
+
+[Vector assist](https://docs.cloud.google.com/sql/docs/postgres/vector-assist-overview) ([Preview](https://docs.cloud.google.com/products#product-launch-stages))
+is temporarily disabled for all Cloud SQL for PostgreSQL instances.
+
 ---
 ## 2026-03-17
 

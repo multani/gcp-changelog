@@ -2400,6 +2400,50 @@
 
 
 <h1 id="cloud-nat">Cloud NAT</h1>
+<h2 id="2026-03-31">2026-03-31</h2>
+<h3 id="announcement">Announcement</h3>
+<p>The default TCP <a href="https://docs.cloud.google.com/nat/docs/tune-nat-configuration#nat-timeouts"><code>TIME_WAIT</code></a>
+timeout for Cloud NAT is scheduled to decrease from 120 seconds to 30 seconds,
+across all regions, as follows:</p>
+<ul>
+<li><strong>From June 30 to September 29, 2026</strong>: new Cloud NAT gateways will use either
+  the 120-second or 30-second default, depending on when the update is
+  deployed in a specific region.</li>
+<li><strong>On or after September 30, 2026</strong>: all new Cloud NAT gateways in all regions
+  will use the 30-second default.</li>
+</ul>
+<p><strong>Impact on gateways</strong></p>
+<ul>
+<li><strong>New gateways</strong>: after the update is deployed in a region, all new Cloud NAT
+  gateways created in that region will use the 30-second default.
+  This change also applies if a pre-update gateway is deleted and then recreated.</li>
+<li><strong>Existing gateways</strong>: Cloud NAT gateways created before the regional update
+  will retain the 120-second default. You can adjust this value by using the
+  <a href="https://docs.cloud.google.com/nat/docs/tune-nat-configuration#change-conn-timeouts">--tcp-time-wait-timeout</a>
+  flag at any time.</li>
+</ul>
+<p>Cloud NAT gateways configured with a custom <code>TIME_WAIT</code> value
+  aren't affected and will continue to use your configured custom value.</p>
+<p>The following table outlines the applicable default timeout for new gateways throughout the deployment timeline.</p>
+<table>
+<thead>
+<tr>
+<th>Gateway type</th>
+<th>Default timeout (before June 30)</th>
+<th>Default timeout (June 30—September 29)</th>
+<th>Default timeout (on or after September 30)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>New</td>
+<td>120 seconds</td>
+<td>30 or 120 seconds</td>
+<td>30 seconds</td>
+</tr>
+</tbody>
+</table>
+<hr />
 <h2 id="2025-10-21">2025-10-21</h2>
 <h3 id="feature">Feature</h3>
 <p>Private NAT supports Cloud Run in <strong>General Availability</strong>. For more
@@ -2423,6 +2467,9 @@ information, see <a href="https://docs.cloud.google.com/nat/docs/overview#suppor
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-nat">Cloud NAT</a></li>
+          <li class="nav-item">
+            <a href="#2026-03-31" class="nav-link">2026-03-31</a>
+          </li>
           <li class="nav-item">
             <a href="#2025-10-21" class="nav-link">2025-10-21</a>
           </li>

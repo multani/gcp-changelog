@@ -1,5 +1,16 @@
 # Identity and Access Management
 
+## 2026-03-31
+
+### Feature
+
+Gemini assistance in the IAM role picker is [generally
+available](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [Get predefined role suggestions with
+Gemini assistance](https://docs.cloud.google.com/iam/docs/role-picker-gemini).
+
+---
 ## 2026-03-03
 
 ### Feature

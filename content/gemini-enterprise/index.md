@@ -1,5 +1,36 @@
 # Gemini Enterprise
 
+## 2026-03-31
+
+### Feature
+
+**Gemini Enterprise and NotebookLM Enterprise: BSI C5:2020 compliance**
+
+Gemini Enterprise and NotebookLM Enterprise are certified for
+[BSI C5:2020](https://cloud.google.com/security/compliance/bsi-c5) compliance.
+
+### Feature
+
+**Gemini Enterprise: Connect Salesforce data using data federation (Preview)**
+
+You can connect Salesforce data stores to Gemini Enterprise using data
+federation.
+
+This feature is in Public Preview. For more information, see
+[Connect Salesforce](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/salesforce).
+
+### Feature
+
+**Gemini Enterprise: Federated connector error logs in Logs Explorer**
+
+You can view detailed error logs for your federated connectors in
+Logs Explorer. These logs include connection problems, data transformation
+issues, or API errors.
+
+For more information, see
+[Access Gemini Enterprise connector error logs with Cloud Logging](https://docs.cloud.google.com/gemini/enterprise/docs/cloud-logging).
+
+---
 ## 2026-03-30
 
 ### Feature

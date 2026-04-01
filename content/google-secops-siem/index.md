@@ -1,5 +1,18 @@
 # Google SecOps SIEM
 
+## 2026-03-31
+
+### Feature
+
+**Multi-stage queries in YARA-L**
+
+The Multi-stage queries feature is now GA. This feature lets you feed the output of one query stage into the input of another, providing more granular data transformation than a single, monolithic query.
+
+You can use multi-stage queries in both Dashboards and Search to build sophisticated detection and visualization logic. No action is required to enable this feature.
+
+Learn more about how to [create multi-stage queries with YARA-L 2.0](https://docs.cloud.google.com/chronicle/docs/investigation/multi-stage-yaral).
+
+---
 ## 2026-03-25
 
 ### Feature

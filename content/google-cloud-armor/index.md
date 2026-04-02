@@ -1,5 +1,14 @@
 # Google Cloud Armor
 
+## 2026-03-31
+
+### Feature
+
+Cloud Armor supports a visual **Match Condition Builder** that allows you to
+create complex expressions in Common Expression Language (CEL) without writing raw
+code. For more information, see [Use the Match Condition Builder](https://docs.cloud.google.com/armor/docs/configure-security-policies#mcb).
+
+---
 ## 2026-03-06
 
 ### Security

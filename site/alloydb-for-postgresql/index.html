@@ -2400,6 +2400,14 @@
 
 
 <h1 id="alloydb-for-postgresql">AlloyDB for PostgreSQL</h1>
+<h2 id="2026-04-02">2026-04-02</h2>
+<h3 id="change">Change</h3>
+<p>You can now enable <a href="https://docs.cloud.google.com/alloydb/docs/cross-region-replication/work-with-cross-region-replication#secondary-cluster-instance">Advanced Query Insights on primary
+clusters</a>
+which have secondary clusters configured. Advanced Query Insights is not supported on secondary
+clusters. If you perform a switchover, you must re-enable Advanced Query
+Insights on the new primary cluster.</p>
+<hr />
 <h2 id="2026-03-31">2026-03-31</h2>
 <h3 id="feature">Feature</h3>
 <p>Hot standby enhances the AlloyDB high availability (HA) architecture to improve
@@ -2433,7 +2441,7 @@ available (<a href="https://cloud.google.com/products#product-launch-stages">GA<
 <li>You can use Database Migration Service to
   <a href="https://docs.cloud.google.com/database-migration/docs/postgresql-to-alloydb/migration-src-and-dest">migrate databases to AlloyDB</a>.</li>
 </ul>
-<h3 id="change">Change</h3>
+<h3 id="change_1">Change</h3>
 <p>When no major version is specified, AlloyDB for PostgreSQL now defaults to
 <a href="https://docs.cloud.google.com/alloydb/docs/db-version-policies#support-table">PostgreSQL major version 17</a>
 for new clusters.</p>
@@ -2582,7 +2590,7 @@ throughout the index build process. You might need to increase your
 <code>maintenance_work_mem settings</code> to align with the real usage estimates.</p>
 <hr />
 <h2 id="2025-12-24">2025-12-24</h2>
-<h3 id="change_1">Change</h3>
+<h3 id="change_2">Change</h3>
 <p>The extension <code>vector</code>, which includes <code>pgvector</code> functions and operators, is updated to version 0.8.1.</p>
 <hr />
 <h2 id="2025-12-18">2025-12-18</h2>
@@ -2626,7 +2634,7 @@ unintended regressions. For more information, see <a href="https://docs.cloud.go
 <p>AlloyDB now supports horizontal <a href="https://docs.cloud.google.com/alloydb/docs/instance-read-pool-scale#autoscale-read-pool">autoscaling for read pool instances</a>. This feature is available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
 <hr />
 <h2 id="2025-11-19">2025-11-19</h2>
-<h3 id="change_2">Change</h3>
+<h3 id="change_3">Change</h3>
 <p>The upper limit of the query plans captured per minute is enhanced to 200. For more information, see <a href="https://docs.cloud.google.com/alloydb/docs/using-advanced-query-insights#gcloud">Improve query performance using advanced query insights features for AlloyDB</a>.</p>
 <h3 id="feature_26">Feature</h3>
 <p>You can now <a href="https://docs.cloud.google.com/alloydb/docs/self-service-maintenance">perform self-service maintenance</a>
@@ -2893,6 +2901,9 @@ generally available
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#alloydb-for-postgresql">AlloyDB for PostgreSQL</a></li>
+          <li class="nav-item">
+            <a href="#2026-04-02" class="nav-link">2026-04-02</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-03-31" class="nav-link">2026-03-31</a>
           </li>

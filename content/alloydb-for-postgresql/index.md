@@ -1,5 +1,16 @@
 # AlloyDB for PostgreSQL
 
+## 2026-04-02
+
+### Change
+
+You can now enable [Advanced Query Insights on primary
+clusters](https://docs.cloud.google.com/alloydb/docs/cross-region-replication/work-with-cross-region-replication#secondary-cluster-instance)
+which have secondary clusters configured. Advanced Query Insights is not supported on secondary
+clusters. If you perform a switchover, you must re-enable Advanced Query
+Insights on the new primary cluster.
+
+---
 ## 2026-03-31
 
 ### Feature

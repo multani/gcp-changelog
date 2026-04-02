@@ -1,5 +1,92 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-04-01
+
+### Feature
+
+**Play pre-recorded audio for virtual agent**
+
+Dialogflow lets virtual agents respond with pre-recorded audio. This
+lets you use high-quality audio files instead of standard text-to-speech. This
+capability is available for all voice channels, including inbound and outbound
+calls. It's available for support virtual agents, task virtual agents, and
+post-session virtual agents.
+
+### Announcement
+
+**Google Cloud CCaaS prerelease notes**
+
+Here are the pre-release notes for the next version of Google Cloud CCaaS. When
+we release this version, we expect the new capabilities to be as shown here.
+
+### Feature
+
+**Agent Assist is available for calls and chats that are unassociated
+with a queue**
+
+You can now turn on Agent Assist for calls and chats at the team level.
+That means that Agent Assist is available for interactions that aren't
+associated with a queue, such as direct inbound calls and outbound calls with no
+queue selected.
+
+Administrators: In the **Settings > Users & Teams > Manage
+Users & Teams >** edit **TEAM\_NAME** pane,
+there's a new **Agent Assist** section.
+
+### Feature
+
+**Configure the ringing timeout for virtual agent transfers to SIP endpoints**
+
+Twilio users can configure the ringing timeout for outbound calls that virtual
+agents transfer to SIP endpoints. Add the `sip_ring_timeout` field to the
+virtual agent's custom payload to set the ringing period for up to 600 seconds.
+This allows calls to internal extensions or Unified Communications (UC)
+destinations sufficient time to be answered before disconnection.
+
+### Feature
+
+**New HubSpot CRM ticket view: Help desk view**
+
+You can now configure which CRM ticket view your HubSpot integration uses:
+**Standard view**, or the new real-time **Help desk view**.
+
+Administrators: In the **Settings > Developer Settings >**
+select **HubSpot** pane, there's a new **CRM Ticket View** section.
+
+### Fixed
+
+The following issues were addressed in this release:
+
+* Fixed an issue with React Native integrations where the email adapter
+  wouldn't load. TBD - confirm that there's only one bug related to the email
+  adapter not loading with React Native integrations.
+* Fixed an issue where enabling chat redaction caused the unredacted messages
+  to be redacted in the chat adapter.
+* Fixed an issue where calls continued to be recorded after being transferred
+  to a third-party number, even when the **Continue Call recording to Third
+  Party Numbers after the agent leaves the call** setting was cleared.
+* Fixed an issue where emails were automatically assigned to users without
+  agent roles.
+* Fixed an issue where the global **Overcapacity Deflection Messages** setting
+  was configured for **Uploading Audio Recordings**, but queues inheriting
+  global settings incorrectly displayed **Text-to-speech** in the UI.
+* Fixed an issue where agents couldn't transfer a chat within the same queue.
+* Fixed an issue where incoming calls unexpectedly ended with 603 decline
+  errors after ringing for 13 seconds.
+* Fixed an issue in the Agent Desktop where the session ID didn't match the
+  call ID for the same interaction.
+* Fixed an issue where user search results didn't display users in locations
+  with the same first three letters of the name when searching for partial
+  locations.
+* Fixed an issue that let end-users interact with a mailbox immediately after
+  switching to a different mailbox, causing synchronization issues.
+* Fixed an issue where overcapacity deflection didn't work for direct inbound
+  calls.
+* Fixed an issue where the Reporting API changed the data types of some
+  response fields. This caused data type mismatches in the reports that the
+  API returned.
+
+---
 ## 2026-03-30
 
 ### Announcement

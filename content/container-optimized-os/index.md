@@ -1,5 +1,186 @@
 # Container Optimized OS
 
+## 2026-03-26
+
+### Change
+
+
+
+### cos-beta-129-19506-0-98
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.67](https://cos.googlesource.com/third_party/kernel/+/665d2061d21ae56123f4de285c75962c6cf56b91 ) | v27.5.1 | v2.2.2 | [See List](https://storage.googleapis.com/cos-tools/19506.0.98/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-23086 in the Linux kernel.
+
+### Security
+
+Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.
+
+### Security
+
+Fixed CVE-2025-71268 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23069 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23243 in the Linux kernel.
+
+### Fixed
+
+Upgraded app-admin/google-osconfig-agent to v20260119.00.
+
+### Security
+
+Fixed CVE-2026-23262 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71267 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23107 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23095 in the Linux kernel.
+
+### Change
+
+Added support for the Lustre 2.14.0\_p249 drivers.
+
+### Security
+
+Fixed CVE-2026-23254 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23099 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23097 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23085 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71266 in the Linux kernel.
+
+### Change
+
+Fixed CVE-2026-32597 with pyjwt package upgrade to 2.12.1.
+
+### Feature
+
+Added support for loading the ublk kernel module.
+
+### Security
+
+Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.
+
+### Security
+
+Fixed CVE-2026-23105 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-329f0b9 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23083 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23103 in the Linux kernel.
+
+### Security
+
+Updated dev-libs/openssl to v3.5.5. This resolves CVE-2025-15467.
+
+### Fixed
+
+Fixed an ek-cpu-balloon bug which would result in CPUs being underreported on ek machines with SMT enabled.
+
+### Security
+
+Fixed CVE-2025-71265 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-c9bc175 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23110 in the Linux kernel.
+
+### Change
+
+
+
+### cos-117-18613-534-48
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.123](https://cos.googlesource.com/third_party/kernel/+/b30c5b2734870c7802c8a3e6691ff29d8e65b739 ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.534.48/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Added support for the Lustre 2.14.0\_p249 drivers.
+
+### Security
+
+Fixed CVE-2026-23243 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23254 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-329f0b9 in the Linux kernel.
+
+### Fixed
+
+Upgraded app-admin/google-osconfig-agent to v20260119.00.
+
+### Security
+
+Fixed CVE-2026-27459 in dev-python/pyopenssl.
+
+### Security
+
+Fixed CVE-2026-32597 with pyjwt package upgrade to 2.12.1.
+
+### Security
+
+Fixed CVE-2026-23231 in the Linux kernel.
+
+### Feature
+
+Added support for loading the ublk kernel module.
+
+### Fixed
+
+Updated cos-gpu-installer to v2.6.1.
+
+### Fixed
+
+Upgraded sys-apps/file to v5.47-r1.
+
+---
 ## 2026-03-25
 
 ### Change

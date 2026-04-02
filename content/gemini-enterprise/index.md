@@ -1,5 +1,19 @@
 # Gemini Enterprise
 
+## 2026-04-01
+
+### Feature
+
+**Gemini Enterprise: Data connector request count metric**
+
+Monitor the total number of requests to your Gemini Enterprise data connectors or
+data stores using the **Gemini Enterprise DataConnector - Gemini Enterprise
+DataConnector Request Count** metric in Metrics Explorer.
+
+This feature is generally available (GA). For more information, see
+[Access metrics in Metrics Explorer](https://docs.cloud.google.com/gemini/enterprise/docs/access-metrics).
+
+---
 ## 2026-03-31
 
 ### Feature

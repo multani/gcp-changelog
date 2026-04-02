@@ -1,5 +1,19 @@
 # Dataform
 
+## 2026-04-02
+
+### Feature
+
+The
+[Dataform folders and repositories](https://docs.cloud.google.com/dataform/docs/organize-code-assets)
+feature is now
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA). This feature lets you organize code assets like notebooks and saved
+queries into a hierarchical structure with IAM policy inheritance. This release
+also introduces `deleteTree` API methods for deleting folders and
+team folders.
+
+---
 ## 2026-01-28
 
 ### Feature

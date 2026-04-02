@@ -1,5 +1,14 @@
 # Cloud Logging
 
+## 2026-04-02
+
+### Feature
+
+The filter capabilities for log views have been extended to include support for
+disjunctive clauses, negation statements, and labels. To learn more, see
+[Filters for log views](https://docs.cloud.google.com/logging/docs/logs-views#view-filter).
+
+---
 ## 2026-03-30
 
 ### Change

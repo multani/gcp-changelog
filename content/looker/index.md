@@ -205,16 +205,6 @@ The [content certification](https://docs.cloud.google.com/looker/docs/content-ce
 
 ### Feature
 
-The [**Enhanced Search** preview feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#enhanced-search) is now available.
-
-When enabled, [Enhanced Search](https://docs.cloud.google.com/looker/docs/finding-content#enhanced_search) helps you find saved content on your instance using Gemini in Looker. Enhanced Search moves beyond keyword matching to interpreting the conceptual meaning of your search queries, letting you search for saved content using business terms or analytical questions (for example, "total customer acquisition cost").
-
-You can filter your search results to limit them to specific content types, folders, content creators, creation dates, modification dates, and the content certification status.
-
-To enable Gemini in Looker assistance with searching content, you must also enable the **Semantic Search** setting on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.
-
-### Feature
-
 The [Continuous Integration (CI)](https://docs.cloud.google.com/looker/docs/continuous-integration) feature is updated for better integration with the Looker user interface:
 
 * Your Looker instance will be migrated to the new version of Looker CI. The migration will take a few minutes.
@@ -228,6 +218,18 @@ The updated Looker Continuous Integration feature includes the following:
 * A new [**GitHub** table](https://docs.cloud.google.com/looker/docs/admin-panel-platform-ci#github-table) on the **Continuous Integration** Admin page lists the GitHub repositories that have been granted access to the Looker CI GitHub application, which enables Looker CI to [be triggered automatically when pull requests are created](https://docs.cloud.google.com/looker/docs/ci-create-suite#triggers).
 
 **Note:** This item was updated on March 27, 2026.
+
+### Feature
+
+The [**Enhanced Search** preview feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#enhanced-search) is now available.
+
+When enabled, [Enhanced Search](https://docs.cloud.google.com/looker/docs/finding-content#enhanced_search) helps you find saved content on your instance using Gemini in Looker. Enhanced Search moves beyond keyword matching to interpreting the conceptual meaning of your search queries, letting you search for saved content using business terms or analytical questions (for example, "total customer acquisition cost").
+
+You can filter your search results to limit them to specific content types, folders, content creators, creation dates, modification dates, and the content certification status.
+
+To enable Gemini in Looker assistance with searching content, you must also enable the **Semantic Search** setting on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.
+
+**Note:** The **Semantic Search** option will begin rolling out on April 6, 2026. This item was updated on April 2, 2026.
 
 ### Feature
 

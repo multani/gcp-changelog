@@ -1,5 +1,20 @@
 # BigQuery
 
+## 2026-04-02
+
+### Feature
+
+The [BigQuery Migration Service supports SQL translations from Snowflake
+SQL to GoogleSQL](https://docs.cloud.google.com/bigquery/docs/migration/snowflake-migration-intro).
+This feature is now [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+With this change, the translation service supports a wider variety of
+Snowflake SQL and has improved support for several data types.
+Among other changes, the translation service maps Snowflake
+`INTEGER` and zero-scale `NUMERIC` types up to precision 38 to `INT64` type in
+GoogleSQL for improved performance by default.
+
+---
 ## 2026-03-31
 
 ### Feature

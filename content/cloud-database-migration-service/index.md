@@ -1,5 +1,15 @@
 # Cloud Database Migration Service
 
+## 2026-04-01
+
+### Feature
+
+You can use the
+[Database Migration Service MCP server](https://docs.cloud.google.com/database-migration/docs/use-database-migration-service-mcp) to enable agents and AI applications to view and
+manage running migration jobs. This feature is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-03-30
 
 ### Feature

@@ -4,6 +4,21 @@
 
 ### Feature
 
+You can now use the
+[`CREATE CONNECTION`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#create_connection_statement),
+[`ALTER CONNECTION SET OPTIONS`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#alter_connection_set_options_statement),
+and [`DROP CONNECTION`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#drop_connection_statement)
+data definition language (DDL) statements to manage Cloud resource connections
+with GoogleSQL. Additionally, you can now use the
+[`connection` user type](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-control-language#user_list)
+and [`PROJECT` resource type](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-control-language#arguments)
+with `GRANT` and `REVOKE` data control language (DCL) statements to manage
+connection and project access. These features are
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+### Feature
+
 The [BigQuery Migration Service supports SQL translations from Snowflake
 SQL to GoogleSQL](https://docs.cloud.google.com/bigquery/docs/migration/snowflake-migration-intro).
 This feature is now [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
@@ -13,6 +28,16 @@ Snowflake SQL and has improved support for several data types.
 Among other changes, the translation service maps Snowflake
 `INTEGER` and zero-scale `NUMERIC` types up to precision 38 to `INT64` type in
 GoogleSQL for improved performance by default.
+
+### Feature
+
+You can set the
+[column granularity](https://docs.cloud.google.com/bigquery/docs/search-index#column-granularity) when you
+[create a search index](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#create_search_index_statement),
+which stores additional column information in your search index to further
+optimize your search query performance. This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
 
 ---
 ## 2026-03-31

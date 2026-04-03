@@ -1,6 +1,16 @@
 {
   "name": "Compute Engine",
   "entries": {
+    "2026-04-02": [
+      {
+        "kind": "Feature",
+        "content": "**Preview**: To control the use of the deprecated container startup agent, an option for\ndeploying containers on Compute Engine instances, you can enforce the\n`constraints/compute.managed.disableVmsWithContainerStartupAgent` organization\npolicy constraint. This constraint prevents the creation of\nCompute Engine instances that use the container startup\nagent and the `gce-container-declaration` metadata.\n\nYou can also enforce this organization policy in dry-run mode to identify\nprojects that use the deprecated metadata, without blocking resource creation.\n\nFor more information, see [Prevent the creation of VMs that use the container\nmetadata](https://docs.cloud.google.com/compute/docs/containers/prevent-konlet-vms) and [Migrate containers\ndeployed on VMs during VM creation](https://docs.cloud.google.com/compute/docs/containers/migrate-containers).",
+        "summary": {
+          "title": "Control Container Startup Agent Usage",
+          "summary": "You can now enforce an organization policy to control the use of the deprecated container startup agent on Compute Engine instances. This policy prevents the creation of instances that use the agent and its associated metadata, with an option for dry-run mode to identify existing usage."
+        }
+      }
+    ],
     "2026-03-31": [
       {
         "kind": "Feature",

@@ -2,9 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Compute Engine</title>
   <subtitle>Changelog for Google Cloud product: Compute Engine</subtitle>
-  <updated>2026-03-31T00:00:00+00:00</updated>
+  <updated>2026-04-02T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:compute-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/compute-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2026-04-02:feature:0</id>
+    <published>2026-04-02T00:00:00+00:00</published>
+    <updated>2026-04-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Preview</strong>: To control the use of the deprecated container startup agent, an option for
+deploying containers on Compute Engine instances, you can enforce the
+<code>constraints/compute.managed.disableVmsWithContainerStartupAgent</code> organization
+policy constraint. This constraint prevents the creation of
+Compute Engine instances that use the container startup
+agent and the <code>gce-container-declaration</code> metadata.</p>
+<p>You can also enforce this organization policy in dry-run mode to identify
+projects that use the deprecated metadata, without blocking resource creation.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/compute/docs/containers/prevent-konlet-vms">Prevent the creation of VMs that use the container
+metadata</a> and <a href="https://docs.cloud.google.com/compute/docs/containers/migrate-containers">Migrate containers
+deployed on VMs during VM creation</a>.</p>]]></content>
+    <summary>You can now enforce an organization policy to control the use of the deprecated container startup agent on Compute Engine instances. This policy prevents the creation of instances that use the agent and its associated metadata, with an option for dry-run mode to identify existing usage.</summary>
+    <title>Feature: Control Container Startup Agent Usage</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

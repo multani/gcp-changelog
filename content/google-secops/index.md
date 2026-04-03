@@ -1,5 +1,30 @@
 # Google SecOps
 
+## 2026-04-02
+
+### Feature
+
+**Chrome Enterprise Premium Integration general availability**
+
+The Chrome Enterprise Premium integration is now GA. This release includes the following new features and updates:
+
+* New [Chrome Enterprise
+  Connector](https://support.google.com/chrome/a/answer/16731355?visit_id=639074578268464336-809360017&p=cep_secops&rd=1)
+  which configures recommended data export settings and sends data through
+  Google Cloud to Google Security Operations. Chrome Enterprise Premium customers can export data
+  with additional security context provided by Google Safe Browsing.
+* Updates to the `CHROME_MANAGEMENT` parser in [Collect Chrome Enterprise data](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/chrome-management)
+  [Chrome Enterprise Premium Threats](https://docs.cloud.google.com/chronicle/docs/detection/chrome-enterprise-threats-category)
+* Curated Detections for Chrome Enterprise Premium
+* Curated Dashboards for Chrome Enterprise Premium
+* Response actions to [block and
+  remove](https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#block_extension)
+  malicious extensions or to [delete blocked
+  extensions](https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#delete_extension)
+  from the extension policy
+  [ExtensionInstallBlocklist](https://chromeenterprise.google/policies/?policy=ExtensionInstallBlocklist).
+
+---
 ## 2026-03-31
 
 ### Feature

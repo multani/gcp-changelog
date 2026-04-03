@@ -1,5 +1,27 @@
 # Cloud SQL for SQL Server
 
+## 2026-04-02
+
+### Feature
+
+Cloud SQL for SQL server read pools are now generally available and provide
+operational simplicity and scaling for your read workloads.
+
+Read pools provide a single endpoint in front of up to seven read pool nodes and
+automatically load balance traffic.
+
+You can scale your read pool in several ways:
+
+* **Scale in or out**: scale load balancing capacity horizontally by modifying
+  the number of read pool nodes in the read pool. Each read pool supports between
+  1 and 7 read pool nodes.
+* **Scale up or down**: scale load balancing capacity vertically by modifying the
+  machine type associated with a read pool node. Once defined, configuration is
+  uniformly applied across each read pool node in the read pool.
+
+For more information, see [About read pools](https://docs.cloud.google.com/sql/docs/sqlserver/about-read-pools).
+
+---
 ## 2026-03-17
 
 ### Feature

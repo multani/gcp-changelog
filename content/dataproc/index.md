@@ -1,5 +1,23 @@
 # Dataproc
 
+## 2026-04-02
+
+### Announcement
+
+New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions):
+
+* 2.3.28-debian12, 2.3.28-ml-ubuntu22, 2.3.28-rocky9, 2.3.28-ubuntu22, 2.3.28-ubuntu22-arm
+
+### Fixed
+
+* Upgraded Dataproc Metastore Proxy to v0.0.79 to fix CVEs.
+* Fixed CVEs CVE-2026-24308 and CVE-2026-24281.
+
+### Change
+
+* **Dataproc on Compute Engine**: Upgraded Apache Zookeeper to version `3.9.5` in image version `2.3`.
+
+---
 ## 2026-03-24
 
 ### Announcement

@@ -4,10 +4,26 @@
     "2026-04-02": [
       {
         "kind": "Feature",
+        "content": "You can now use the\n[`CREATE CONNECTION`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#create_connection_statement),\n[`ALTER CONNECTION SET OPTIONS`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#alter_connection_set_options_statement),\nand [`DROP CONNECTION`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#drop_connection_statement)\ndata definition language (DDL) statements to manage Cloud resource connections\nwith GoogleSQL. Additionally, you can now use the\n[`connection` user type](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-control-language#user_list)\nand [`PROJECT` resource type](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-control-language#arguments)\nwith `GRANT` and `REVOKE` data control language (DCL) statements to manage\nconnection and project access. These features are\n[generally available](https://cloud.google.com/products#product-launch-stages)\n(GA).",
+        "summary": {
+          "title": "Manage Cloud Resource Connections with GoogleSQL",
+          "summary": "You can now use DDL statements like CREATE, ALTER, and DROP CONNECTION to manage Cloud resource connections with GoogleSQL. Additionally, new DCL statements allow granular control over connection and project access. These features are now generally available."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "The [BigQuery Migration Service supports SQL translations from Snowflake\nSQL to GoogleSQL](https://docs.cloud.google.com/bigquery/docs/migration/snowflake-migration-intro).\nThis feature is now [generally available](https://cloud.google.com/products#product-launch-stages) (GA).\n\nWith this change, the translation service supports a wider variety of\nSnowflake SQL and has improved support for several data types.\nAmong other changes, the translation service maps Snowflake\n`INTEGER` and zero-scale `NUMERIC` types up to precision 38 to `INT64` type in\nGoogleSQL for improved performance by default.",
         "summary": {
           "title": "BigQuery Migration Service now supports Snowflake SQL translation",
           "summary": "The BigQuery Migration Service's SQL translation from Snowflake SQL to GoogleSQL is now generally available. This enhancement offers broader support for Snowflake SQL and improved data type mapping, including optimizations for integer and numeric types, leading to better performance."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can set the\n[column granularity](https://docs.cloud.google.com/bigquery/docs/search-index#column-granularity) when you\n[create a search index](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#create_search_index_statement),\nwhich stores additional column information in your search index to further\noptimize your search query performance. This feature is\n[generally available](https://cloud.google.com/products#product-launch-stages)\n(GA).",
+        "summary": {
+          "title": "Optimize search performance with column granularity",
+          "summary": "You can now set column granularity when creating a search index. This stores additional column information to optimize search query performance. This feature is generally available."
         }
       }
     ],

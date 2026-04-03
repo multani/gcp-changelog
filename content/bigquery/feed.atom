@@ -12,6 +12,28 @@
     <id>urn:github:multani:gcp-changelog:bigquery:2026-04-02:feature:0</id>
     <published>2026-04-02T00:00:00+00:00</published>
     <updated>2026-04-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now use the
+<a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#create_connection_statement"><code>CREATE CONNECTION</code></a>,
+<a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#alter_connection_set_options_statement"><code>ALTER CONNECTION SET OPTIONS</code></a>,
+and <a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#drop_connection_statement"><code>DROP CONNECTION</code></a>
+data definition language (DDL) statements to manage Cloud resource connections
+with GoogleSQL. Additionally, you can now use the
+<a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-control-language#user_list"><code>connection</code> user type</a>
+and <a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-control-language#arguments"><code>PROJECT</code> resource type</a>
+with <code>GRANT</code> and <code>REVOKE</code> data control language (DCL) statements to manage
+connection and project access. These features are
+<a href="https://cloud.google.com/products#product-launch-stages">generally available</a>
+(GA).</p>]]></content>
+    <summary>You can now use DDL statements like CREATE, ALTER, and DROP CONNECTION to manage Cloud resource connections with GoogleSQL. Additionally, new DCL statements allow granular control over connection and project access. These features are now generally available.</summary>
+    <title>Feature: Manage Cloud Resource Connections with GoogleSQL</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-04-02:feature:1</id>
+    <published>2026-04-02T00:00:00+00:00</published>
+    <updated>2026-04-02T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/bigquery/docs/migration/snowflake-migration-intro">BigQuery Migration Service supports SQL translations from Snowflake
 SQL to GoogleSQL</a>.
 This feature is now <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>
@@ -22,6 +44,23 @@ Among other changes, the translation service maps Snowflake
 GoogleSQL for improved performance by default.</p>]]></content>
     <summary>The BigQuery Migration Service's SQL translation from Snowflake SQL to GoogleSQL is now generally available. This enhancement offers broader support for Snowflake SQL and improved data type mapping, including optimizations for integer and numeric types, leading to better performance.</summary>
     <title>Feature: BigQuery Migration Service now supports Snowflake SQL translation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-04-02:feature:2</id>
+    <published>2026-04-02T00:00:00+00:00</published>
+    <updated>2026-04-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can set the
+<a href="https://docs.cloud.google.com/bigquery/docs/search-index#column-granularity">column granularity</a> when you
+<a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#create_search_index_statement">create a search index</a>,
+which stores additional column information in your search index to further
+optimize your search query performance. This feature is
+<a href="https://cloud.google.com/products#product-launch-stages">generally available</a>
+(GA).</p>]]></content>
+    <summary>You can now set column granularity when creating a search index. This stores additional column information to optimize search query performance. This feature is generally available.</summary>
+    <title>Feature: Optimize search performance with column granularity</title>
   </entry>
   <entry>
     <author>

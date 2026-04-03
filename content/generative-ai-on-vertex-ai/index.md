@@ -1,5 +1,19 @@
 # Generative AI on Vertex AI
 
+## 2026-04-02
+
+### Feature
+
+**Veo 3.1 Lite**
+
+Veo 3.1 Lite is available in [public
+preview](https://cloud.google.com/products#product-launch-stages). This release
+is our most cost-efficient Veo on Vertex AI model.
+
+For more information, see [3.1 Lite
+Generate](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/veo/3-1-generate#3.1-lite-generate-001)
+
+---
 ## 2026-03-25
 
 ### Feature

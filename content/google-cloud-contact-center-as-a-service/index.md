@@ -1,5 +1,20 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-04-02
+
+### Announcement
+
+**Mobile SDK version 2.15.2 patch**
+
+This patch updates the following for the Android SDK:
+
+* Updates `minSdkVersion` to `25`.
+* Upgrades the following dependencies:
+
+  + Twilio Conversations to 6.2.1
+  + Twilio Voice to 6.10.2
+
+---
 ## 2026-04-01
 
 ### Feature

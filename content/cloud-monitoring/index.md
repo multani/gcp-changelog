@@ -1,5 +1,21 @@
 # Cloud Monitoring
 
+## 2026-04-02
+
+### Feature
+
+Application Monitoring has added support for the following resources:
+
+* Vertex AI Workbench
+* GKE Gateway
+* GKE Ingress
+* Layer 7 cross-regional Application Load Balancers
+
+Additionally, dashboards for Kubernetes workloads display L4 and L7 traffic
+metrics, when both are available. For more information, see
+[Application Monitoring supported infrastructure](https://docs.cloud.google.com/monitoring/docs/application-monitoring-services).
+
+---
 ## 2026-03-30
 
 ### Change

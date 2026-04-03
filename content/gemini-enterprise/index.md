@@ -1,5 +1,28 @@
 # Gemini Enterprise
 
+## 2026-04-02
+
+### Feature
+
+**NotebookLM Enterprise: Autocomplete for email addresses and group
+names when sharing notebooks**
+
+When sharing notebooks with users and groups, autocomplete is available to help
+users quickly select the correct email addresses and group names.
+
+If your organization uses the Google Identity Provider, no action is required.
+If your organization uses Third-party identity and Microsoft Entra ID, a
+Gemini Enterprise administrator must provision a [System for Cross-domain
+Identity Management (SCIM) tenant for
+Workforce Identity Federation](https://docs.cloud.google.com/iam/docs/workforce-identity-federation-scim)
+to enable autocomplete. For more information
+about identity setup, see [Set up
+NotebookLM Enterprise](https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm).
+
+This feature is generally available (GA). For more information, see [Share a
+notebook](https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/share-notebooks).
+
+---
 ## 2026-04-01
 
 ### Feature
@@ -120,7 +143,8 @@ For more information, see
 
 You can connect Docusign data stores to Gemini Enterprise.
 
-Support for Docusign data stores is in Public Preview. For more information, see [Connect Docusign](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/docusign).
+Support for Docusign data stores is in Public Preview. For more information,
+see [Connect Docusign](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/docusign).
 
 ---
 ## 2026-03-17
@@ -156,9 +180,13 @@ and
 
 **Gemini Enterprise: Enhanced filtering for Microsoft SharePoint data stores (Preview)**
 
-You can now configure filters for your Microsoft SharePoint data stores using either the Google Cloud console or the API. These filters allow you to define exactly which content is accessible to the Assistant by including or excluding specific SharePoint sites.
+You can now configure filters for your Microsoft SharePoint data stores using
+either the Google Cloud console or the API. These filters allow you to define
+exactly which content is accessible to the Assistant by including or excluding
+specific SharePoint sites.
 
-This feature is in Public Preview. For more information, see [Connect Microsoft SharePoint Online](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-sharepoint).
+This feature is in Public Preview. For more information, see [Connect Microsoft
+SharePoint Online](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-sharepoint).
 
 ---
 ## 2026-03-12
@@ -194,7 +222,8 @@ see [Configure the assistant](https://docs.cloud.google.com/gemini/enterprise/do
 
 You can connect Google Chat data stores to Gemini Enterprise.
 
-Support for Google Chat data stores is in Public Preview. For more information, see [Connect Google Chat](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/gchat).
+Support for Google Chat data stores is in Public Preview. For more information,
+see [Connect Google Chat](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/gchat).
 
 ### Feature
 
@@ -207,7 +236,8 @@ New actions are available for the following data stores:
 * [Notion](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/notion)
 * [Shopify](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/shopify)
 
-For a list of actions for these data stores, see [Supported actions](https://docs.cloud.google.com/gemini/enterprise/docs/connect-third-party-data-source#supported_actions).
+For a list of actions for these data stores, see [Supported
+actions](https://docs.cloud.google.com/gemini/enterprise/docs/connect-third-party-data-source#supported_actions).
 
 ---
 ## 2026-03-04

@@ -1,6 +1,32 @@
 {
   "name": "Dataproc",
   "entries": {
+    "2026-04-02": [
+      {
+        "kind": "Announcement",
+        "content": "New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions):\n\n* 2.3.28-debian12, 2.3.28-ml-ubuntu22, 2.3.28-rocky9, 2.3.28-ubuntu22, 2.3.28-ubuntu22-arm",
+        "summary": {
+          "title": "Dataproc image versions updated",
+          "summary": "New subminor image versions are now available for Dataproc on Compute Engine. These updates include versions for debian12, ubuntu22 (including ARM), and rocky9. Check the documentation for the full list of supported versions."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "* Upgraded Dataproc Metastore Proxy to v0.0.79 to fix CVEs.\n* Fixed CVEs CVE-2026-24308 and CVE-2026-24281.",
+        "summary": {
+          "title": "Dataproc Metastore Proxy Security Update",
+          "summary": "The Dataproc Metastore Proxy has been upgraded to version 0.0.79 to address critical security vulnerabilities. This update resolves CVE-2026-24308 and CVE-2026-24281, ensuring enhanced security for your metastore services."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "* **Dataproc on Compute Engine**: Upgraded Apache Zookeeper to version `3.9.5` in image version `2.3`.",
+        "summary": {
+          "title": "Dataproc image update",
+          "summary": "Dataproc on Compute Engine image version 2.3 now includes Apache Zookeeper version 3.9.5. This update enhances the stability and performance of your Zookeeper instances within Dataproc clusters."
+        }
+      }
+    ],
     "2026-03-24": [
       {
         "kind": "Announcement",

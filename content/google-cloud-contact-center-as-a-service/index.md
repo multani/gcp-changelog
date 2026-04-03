@@ -2,6 +2,102 @@
 
 ## 2026-04-02
 
+### Feature
+
+**Play pre-recorded audio for virtual agents**
+
+Dialogflow lets virtual agents respond with pre-recorded audio. This
+lets you use high-quality audio files instead of standard text-to-speech. This
+capability is available for all voice channels, including inbound and outbound
+calls. It's available for support virtual agents, task virtual agents, and
+post-session virtual agents.
+
+Documentation coming soon.
+
+### Fixed
+
+The following issues were addressed in this release:
+
+* Fixed an issue with React Native integrations where the email adapter
+  wouldn't load. TBD - confirm that there's only one bug related to the email
+  adapter not loading with React Native integrations.
+* Fixed an issue where enabling chat redaction caused the unredacted messages
+  to be redacted in the chat adapter.
+* Fixed an issue where calls continued to be recorded after being transferred
+  to a third-party number, even when the **Continue Call recording to Third
+  Party Numbers after the agent leaves the call** setting was cleared.
+* Fixed an issue where emails were automatically assigned to users without
+  agent roles.
+* Fixed an issue where the global **Overcapacity Deflection Messages** setting
+  was configured for **Uploading Audio Recordings**, but queues inheriting
+  global settings incorrectly displayed **Text-to-speech** in the UI.
+* Fixed an issue where agents couldn't transfer a chat within the same queue.
+* Fixed an issue where incoming calls unexpectedly ended with 603 decline
+  errors after ringing for 13 seconds.
+* Fixed an issue in the Agent Desktop where the session ID didn't match the
+  call ID for the same interaction.
+* Fixed an issue where user search results didn't display users in locations
+  with the same first three letters of the name when searching for partial
+  locations.
+* Fixed an issue that let end-users interact with a mailbox immediately after
+  switching to a different mailbox, causing synchronization issues.
+* Fixed an issue where overcapacity deflection didn't work for direct inbound
+  calls.
+* Fixed an issue where the Reporting API changed the data types of some
+  response fields. This caused data type mismatches in the reports that the
+  API returned.
+
+### Feature
+
+**Configure the ringing timeout for virtual agent transfers to SIP endpoints**
+
+Twilio users can configure the ringing timeout for outbound calls that virtual
+agents transfer to SIP endpoints. Add the `sip_ring_timeout` field to the
+virtual agent's custom payload to set the ringing period for up to 600 seconds.
+This allows calls to internal extensions or Unified Communications (UC)
+destinations sufficient time to be answered before disconnection. For more
+information, see [Transfer a call to a SIP
+endpoint](https://docs.cloud.google.com/contact-center/ccai-platform/docs/va-custom-payload#transfer-to-SIP-endpoint).
+
+### Feature
+
+**Agent Assist is available for calls and chats that are unassociated
+with a queue**
+
+You can now turn on Agent Assist for calls and chats at the team level.
+That means that Agent Assist is available for interactions that aren't
+associated with a queue, such as direct inbound calls and outbound calls with no
+queue selected.
+
+Administrators: In the **Settings > Users & Teams > Manage
+Users & Teams >** edit **TEAM\_NAME** pane,
+there's a new **Agent Assist** section.
+
+For more information, see [Configure Agent Assist at the team
+level](https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-assist#configure-team-for-agent-assist).
+
+### Feature
+
+**New HubSpot CRM ticket view: Help desk view**
+
+You can now configure which CRM ticket view your HubSpot integration uses:
+**Standard view**, or the new real-time **Help desk view**.
+
+Administrators: In the **Settings > Developer Settings >**
+select **HubSpot** pane, there's a new **CRM Ticket View** section.
+
+Documentation coming soon.
+
+### Announcement
+
+**Google Cloud CCaaS 4.16**
+
+We've released version 4.16 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
 ### Announcement
 
 **Mobile SDK version 2.15.2 patch**

@@ -9,7 +9,135 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-02:announcement:0</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-02:feature:0</id>
+    <published>2026-04-02T00:00:00+00:00</published>
+    <updated>2026-04-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Play pre-recorded audio for virtual agents</strong></p>
+<p>Dialogflow lets virtual agents respond with pre-recorded audio. This
+lets you use high-quality audio files instead of standard text-to-speech. This
+capability is available for all voice channels, including inbound and outbound
+calls. It's available for support virtual agents, task virtual agents, and
+post-session virtual agents.</p>
+<p>Documentation coming soon.</p>]]></content>
+    <summary>Dialogflow now allows virtual agents to respond using pre-recorded audio files instead of standard text-to-speech. This feature enhances audio quality and is available for all voice channels and agent types.</summary>
+    <title>Feature: Use pre-recorded audio for virtual agents</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-02:fixed:1</id>
+    <published>2026-04-02T00:00:00+00:00</published>
+    <updated>2026-04-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were addressed in this release:</p>
+<ul>
+<li>Fixed an issue with React Native integrations where the email adapter
+  wouldn't load. TBD - confirm that there's only one bug related to the email
+  adapter not loading with React Native integrations.</li>
+<li>Fixed an issue where enabling chat redaction caused the unredacted messages
+  to be redacted in the chat adapter.</li>
+<li>Fixed an issue where calls continued to be recorded after being transferred
+  to a third-party number, even when the <strong>Continue Call recording to Third
+  Party Numbers after the agent leaves the call</strong> setting was cleared.</li>
+<li>Fixed an issue where emails were automatically assigned to users without
+  agent roles.</li>
+<li>Fixed an issue where the global <strong>Overcapacity Deflection Messages</strong> setting
+  was configured for <strong>Uploading Audio Recordings</strong>, but queues inheriting
+  global settings incorrectly displayed <strong>Text-to-speech</strong> in the UI.</li>
+<li>Fixed an issue where agents couldn't transfer a chat within the same queue.</li>
+<li>Fixed an issue where incoming calls unexpectedly ended with 603 decline
+  errors after ringing for 13 seconds.</li>
+<li>Fixed an issue in the Agent Desktop where the session ID didn't match the
+  call ID for the same interaction.</li>
+<li>Fixed an issue where user search results didn't display users in locations
+  with the same first three letters of the name when searching for partial
+  locations.</li>
+<li>Fixed an issue that let end-users interact with a mailbox immediately after
+  switching to a different mailbox, causing synchronization issues.</li>
+<li>Fixed an issue where overcapacity deflection didn't work for direct inbound
+  calls.</li>
+<li>Fixed an issue where the Reporting API changed the data types of some
+  response fields. This caused data type mismatches in the reports that the
+  API returned.</li>
+</ul>]]></content>
+    <summary>This release addresses multiple bugs affecting React Native integrations, chat redaction, call recording, email assignments, and overcapacity deflection. Several UI and API inconsistencies have also been resolved to improve overall stability and user experience.</summary>
+    <title>Fixed: Resolved various integration and feature issues</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-02:feature:2</id>
+    <published>2026-04-02T00:00:00+00:00</published>
+    <updated>2026-04-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Configure the ringing timeout for virtual agent transfers to SIP endpoints</strong></p>
+<p>Twilio users can configure the ringing timeout for outbound calls that virtual
+agents transfer to SIP endpoints. Add the <code>sip_ring_timeout</code> field to the
+virtual agent's custom payload to set the ringing period for up to 600 seconds.
+This allows calls to internal extensions or Unified Communications (UC)
+destinations sufficient time to be answered before disconnection. For more
+information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/va-custom-payload#transfer-to-SIP-endpoint">Transfer a call to a SIP
+endpoint</a>.</p>]]></content>
+    <summary>You can now configure the ringing timeout for virtual agent transfers to SIP endpoints. Add the "sip_ring_timeout" field to your virtual agent's custom payload to specify the ringing period for up to 600 seconds, ensuring calls have enough time to be answered.</summary>
+    <title>Feature: Set SIP transfer ringing timeout</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-02:feature:3</id>
+    <published>2026-04-02T00:00:00+00:00</published>
+    <updated>2026-04-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Agent Assist is available for calls and chats that are unassociated
+with a queue</strong></p>
+<p>You can now turn on Agent Assist for calls and chats at the team level.
+That means that Agent Assist is available for interactions that aren't
+associated with a queue, such as direct inbound calls and outbound calls with no
+queue selected.</p>
+<p>Administrators: In the <strong>Settings &gt; Users &amp; Teams &gt; Manage
+Users &amp; Teams &gt;</strong> edit <strong>TEAM_NAME</strong> pane,
+there's a new <strong>Agent Assist</strong> section.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-assist#configure-team-for-agent-assist">Configure Agent Assist at the team
+level</a>.</p>]]></content>
+    <summary>Agent Assist can now be enabled for unassociated calls and chats at the team level. This includes direct inbound and outbound interactions where no queue is selected, providing more flexibility for your support teams. Administrators can configure this new feature in the team settings.</summary>
+    <title>Feature: Agent Assist for Unqueued Calls and Chats</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-02:feature:4</id>
+    <published>2026-04-02T00:00:00+00:00</published>
+    <updated>2026-04-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>New HubSpot CRM ticket view: Help desk view</strong></p>
+<p>You can now configure which CRM ticket view your HubSpot integration uses:
+<strong>Standard view</strong>, or the new real-time <strong>Help desk view</strong>.</p>
+<p>Administrators: In the <strong>Settings &gt; Developer Settings &gt;</strong>
+select <strong>HubSpot</strong> pane, there's a new <strong>CRM Ticket View</strong> section.</p>
+<p>Documentation coming soon.</p>]]></content>
+    <summary>You can now choose between the standard CRM ticket view and the new real-time Help desk view within your HubSpot integration settings. This allows for more flexible ticket management.</summary>
+    <title>Feature: New HubSpot CRM ticket view</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-02:announcement:5</id>
+    <published>2026-04-02T00:00:00+00:00</published>
+    <updated>2026-04-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS 4.16</strong></p>
+<p>We've released version 4.16 of Google Cloud CCaaS.</p>
+<p>The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
+schedules</a>.</p>]]></content>
+    <summary>The latest version of Google Cloud CCaaS, 4.16, has been released. The update schedule for your instance will vary based on your chosen deployment schedule.</summary>
+    <title>Announcement: CCaaS 4.16 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-02:announcement:6</id>
     <published>2026-04-02T00:00:00+00:00</published>
     <updated>2026-04-02T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Mobile SDK version 2.15.2 patch</strong></p>

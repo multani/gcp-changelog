@@ -2,9 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee X</title>
   <subtitle>Changelog for Google Cloud product: Apigee X</subtitle>
-  <updated>2026-03-31T00:00:00+00:00</updated>
+  <updated>2026-04-02T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-x</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-x/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-04-02:breaking:0</id>
+    <published>2026-04-02T00:00:00+00:00</published>
+    <updated>2026-04-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Deployment disruption for Apigee Drupal Portal via Google Cloud Marketplace</strong></p>
+<p>Google Cloud Deployment Manager was deprecated as of March 31, 2026. We are currently transitioning the Apigee Drupal Portal Marketplace solution to use Infrastructure Manager. During this transition period, some deployment and management functionalities are unavailable.</p>
+<p><strong>Impact:</strong></p>
+<ul>
+<li><strong>New Deployments:</strong> Starting April 1, 2026, attempting to deploy a new Apigee Drupal Portal instance using the "Deploy" button on the Google Cloud Marketplace will fail.</li>
+<li><strong>Existing Deployments:</strong> Your underlying resources (such as VMs and Cloud SQL databases) are unaffected and will continue to run normally. However, you can no longer use Deployment Manager-based features to manage the deployment via the Marketplace UI or the <code>gcloud deployment-manager</code> tool.</li>
+</ul>
+<p><strong>Workaround &amp; Resolution:</strong>
+Any configuration changes or management tasks must be performed directly on the individual Google Cloud resources (Compute Engine, Cloud SQL, etc.) rather than through the Marketplace UI.</p>
+<p>We are actively working to release the updated Infrastructure Manager-based solution.</p>]]></content>
+    <summary>Deployments of the Apigee Drupal Portal are currently disrupted due to a transition to a new infrastructure management system. While existing portals remain operational, new deployments and management via the Marketplace are unavailable until the new solution is released.</summary>
+    <title>Breaking: Apigee Drupal Portal Deployment Interrupted</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

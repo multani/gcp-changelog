@@ -1,5 +1,24 @@
 # Apigee X
 
+## 2026-04-02
+
+### Breaking
+
+**Deployment disruption for Apigee Drupal Portal via Google Cloud Marketplace**
+
+Google Cloud Deployment Manager was deprecated as of March 31, 2026. We are currently transitioning the Apigee Drupal Portal Marketplace solution to use Infrastructure Manager. During this transition period, some deployment and management functionalities are unavailable.
+
+**Impact:**
+
+* **New Deployments:** Starting April 1, 2026, attempting to deploy a new Apigee Drupal Portal instance using the "Deploy" button on the Google Cloud Marketplace will fail.
+* **Existing Deployments:** Your underlying resources (such as VMs and Cloud SQL databases) are unaffected and will continue to run normally. However, you can no longer use Deployment Manager-based features to manage the deployment via the Marketplace UI or the `gcloud deployment-manager` tool.
+
+**Workaround & Resolution:**
+Any configuration changes or management tasks must be performed directly on the individual Google Cloud resources (Compute Engine, Cloud SQL, etc.) rather than through the Marketplace UI.
+
+We are actively working to release the updated Infrastructure Manager-based solution.
+
+---
 ## 2026-03-31
 
 ### Feature

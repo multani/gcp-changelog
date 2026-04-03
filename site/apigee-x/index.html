@@ -2400,6 +2400,19 @@
 
 
 <h1 id="apigee-x">Apigee X</h1>
+<h2 id="2026-04-02">2026-04-02</h2>
+<h3 id="breaking">Breaking</h3>
+<p><strong>Deployment disruption for Apigee Drupal Portal via Google Cloud Marketplace</strong></p>
+<p>Google Cloud Deployment Manager was deprecated as of March 31, 2026. We are currently transitioning the Apigee Drupal Portal Marketplace solution to use Infrastructure Manager. During this transition period, some deployment and management functionalities are unavailable.</p>
+<p><strong>Impact:</strong></p>
+<ul>
+<li><strong>New Deployments:</strong> Starting April 1, 2026, attempting to deploy a new Apigee Drupal Portal instance using the "Deploy" button on the Google Cloud Marketplace will fail.</li>
+<li><strong>Existing Deployments:</strong> Your underlying resources (such as VMs and Cloud SQL databases) are unaffected and will continue to run normally. However, you can no longer use Deployment Manager-based features to manage the deployment via the Marketplace UI or the <code>gcloud deployment-manager</code> tool.</li>
+</ul>
+<p><strong>Workaround &amp; Resolution:</strong>
+Any configuration changes or management tasks must be performed directly on the individual Google Cloud resources (Compute Engine, Cloud SQL, etc.) rather than through the Marketplace UI.</p>
+<p>We are actively working to release the updated Infrastructure Manager-based solution.</p>
+<hr />
 <h2 id="2026-03-31">2026-03-31</h2>
 <h3 id="feature">Feature</h3>
 <p><strong>General Availability (GA) launch of Model Context Protocol (MCP) in Apigee</strong></p>
@@ -2941,7 +2954,7 @@ documentation.</p>
 <p>See <a href="https://docs.cloud.google.com/apigee/docs/deprecations/apigee-tool">Gemini Code Assist @Apigee tool deprecation</a> for information.</p>
 <hr />
 <h2 id="2025-10-07">2025-10-07</h2>
-<h3 id="breaking">Breaking</h3>
+<h3 id="breaking_1">Breaking</h3>
 <p><strong>Previously unreported customer DNS misconfigurations now result in DNS errors</strong></p>
 <p>Apigee removed the automatic DNS fallback functionality that was in 1-16-0-apigee-2. This removal surfaces customer DNS misconfigurations that previously did not show as DNS errors.</p>
 <p>See <a href="https://docs.cloud.google.com/apigee/docs/release/known-issues#445936920">Known Issue 445936920</a>.</p>
@@ -3836,6 +3849,9 @@ new services like <code>google-guest-compat-manager.service</code> and
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#apigee-x">Apigee X</a></li>
+          <li class="nav-item">
+            <a href="#2026-04-02" class="nav-link">2026-04-02</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-03-31" class="nav-link">2026-03-31</a>
           </li>

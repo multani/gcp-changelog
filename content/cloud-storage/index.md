@@ -1,5 +1,14 @@
 # Cloud Storage
 
+## 2026-04-02
+
+### Feature
+
+You can configure which encryption types are allowed or prohibited for
+creating new objects in a bucket. For more information, see
+[Enforce or restrict the encryption types for a bucket](https://docs.cloud.google.com/storage/docs/encryption/enforce-encryption-types).
+
+---
 ## 2026-03-31
 
 ### Feature

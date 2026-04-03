@@ -13,14 +13,13 @@ The Chrome Enterprise Premium integration is now GA. This release includes the f
   which configures recommended data export settings and sends data through
   Google Cloud to Google Security Operations. Chrome Enterprise Premium customers can export data
   with additional security context provided by Google Safe Browsing.
-* Updates to the `CHROME_MANAGEMENT` parser in [Collect Chrome Enterprise data](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/chrome-management)
-  [Chrome Enterprise Premium Threats](https://docs.cloud.google.com/chronicle/docs/detection/chrome-enterprise-threats-category)
-* Curated Detections for Chrome Enterprise Premium
-* Curated Dashboards for Chrome Enterprise Premium
-* Response actions to [block and
-  remove](https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#block_extension)
-  malicious extensions or to [delete blocked
-  extensions](https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#delete_extension)
+* Updates to the `CHROME_MANAGEMENT` parser documentation in [Collect Chrome Enterprise data](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/chrome-management) and
+  [Chrome Enterprise Premium Threats](https://docs.cloud.google.com/chronicle/docs/detection/chrome-enterprise-threats-category).
+* Curated Detections for Chrome Enterprise Premium.
+* Curated Dashboards for Chrome Enterprise Premium.
+* Response actions to
+  [block and remove](https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#block_extension)
+  malicious extensions or to [delete blocked extensions](https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/google-workspace#delete_extension)
   from the extension policy
   [ExtensionInstallBlocklist](https://chromeenterprise.google/policies/?policy=ExtensionInstallBlocklist).
 

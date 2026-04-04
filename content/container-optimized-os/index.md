@@ -60,6 +60,571 @@ Fixed CVE-2026-23304 in the Linux kernel.
 Fixed KCTF-7cb9a23 in the Linux kernel.
 
 ---
+## 2026-03-30
+
+### Change
+
+
+
+### cos-beta-129-19506-0-109
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.67](https://cos.googlesource.com/third_party/kernel/+/82c29e7c6b260a76fdf55a67f4339c2bcb44b824 ) | v27.5.1 | v2.2.2 | [See List](https://storage.googleapis.com/cos-tools/19506.0.109/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+
+
+### cos-dev-133-19666-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.77](https://cos.googlesource.com/third_party/kernel/+/ef4e393c358e8c7675d8c2a260cbca1163ead2a3 ) | v27.5.1 | v2.2.1 | [See List](https://storage.googleapis.com/cos-tools/19666.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-23304 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23297 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23390 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23380 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23359 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-9df9578 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23383 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23316 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23300 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23340 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23303 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23292 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23310 in the Linux kernel.
+
+### Feature
+
+Enabled dynamic configuration of FUSE max pages limit.
+
+### Security
+
+Fixed CVE-2026-23360 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23319 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23296 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23381 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23293 in the Linux kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Added: fs.fuse.max\_pages\_limit: 256
+
+### Security
+
+Fixed CVE-2026-23388 in the Linux kernel.
+
+### Change
+
+Fixed CVE-2026-27135 in net-libs/nghttp2.
+
+### Security
+
+Fixed CVE-2026-23352 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-27135 in net-libs/nghttp2.
+
+### Change
+
+Updated the Linux kernel to v6.12.77.
+
+### Feature
+
+Enabled dynamic configuration of FUSE max pages limit.
+
+### Change
+
+Runtime sysctl changes:
+
+* Added: fs.fuse.max\_pages\_limit: 256
+
+### Change
+
+
+
+### cos-125-19216-220-99
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.68](https://cos.googlesource.com/third_party/kernel/+/bcbb125a5a57da7523992b266b4f07d3510bd0de ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.220.99/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-23297 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-27135 in net-libs/nghttp2.
+
+### Security
+
+Fixed CVE-2026-23292 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23296 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23319 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23360 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23293 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23388 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23316 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23381 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23380 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23359 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23383 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-27448 in dev-python/pyopenssl.
+
+### Security
+
+Fixed CVE-2026-23340 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23310 in the Linux kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Added: fs.fuse.max\_pages\_limit: 256
+
+### Security
+
+Fixed CVE-2026-27459 in dev-python/pyopenssl.
+
+### Security
+
+Fixed CVE-2026-23352 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23300 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-9df9578 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23390 in the Linux kernel.
+
+### Feature
+
+Enabled dynamic configuration of FUSE max pages limit.
+
+### Security
+
+Fixed CVE-2026-23303 in the Linux kernel.
+
+### Change
+
+
+
+### cos-121-18867-381-56
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.122](https://cos.googlesource.com/third_party/kernel/+/31a85cce1fd063629a36c894be803b515077311b ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.381.56/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-23386 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23304 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-9df9578 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23292 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23296 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23303 in the Linux kernel.
+
+### Security
+
+Fixed the "CrackArmor" vulnerability in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23293 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23310 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23381 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-27135 in net-libs/nghttp2.
+
+### Security
+
+Fixed KCTF-329f0b9 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-27448 in dev-python/pyopenssl.
+
+### Security
+
+Fixed CVE-2026-23352 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23300 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23359 in the Linux kernel.
+
+### Feature
+
+Added support for loading the ublk kernel module.
+
+### Security
+
+Fixed CVE-2026-23392 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23368 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23340 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-32597 with pyjwt package upgrade to 2.12.1.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: kernel.threads-max: 63487 -> 63199
+* Changed: user.max\_cgroup\_namespaces: 31743 -> 31599
+* Changed: user.max\_ipc\_namespaces: 31743 -> 31599
+* Changed: user.max\_mnt\_namespaces: 31743 -> 31599
+* Changed: user.max\_net\_namespaces: 31743 -> 31599
+* Changed: user.max\_pid\_namespaces: 31743 -> 31599
+* Changed: user.max\_time\_namespaces: 31743 -> 31599
+* Changed: user.max\_user\_namespaces: 31743 -> 31599
+* Changed: user.max\_uts\_namespaces: 31743 -> 31599
+
+### Security
+
+Fixed CVE-2026-27459 in dev-python/pyopenssl.
+
+### Change
+
+
+
+### cos-117-18613-534-53
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.123](https://cos.googlesource.com/third_party/kernel/+/0af9e0905663e609aafa3b8d9c485e534efdd2a9 ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.534.53/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-23386 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23310 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23388 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23300 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23352 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23296 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-27448 in dev-python/pyopenssl.
+
+### Security
+
+Fixed CVE-2026-23391 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23293 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23292 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23392 in the Linux kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: kernel.threads-max: 63487 -> 63199
+* Changed: user.max\_cgroup\_namespaces: 31743 -> 31599
+* Changed: user.max\_ipc\_namespaces: 31743 -> 31599
+* Changed: user.max\_mnt\_namespaces: 31743 -> 31599
+* Changed: user.max\_net\_namespaces: 31743 -> 31599
+* Changed: user.max\_pid\_namespaces: 31743 -> 31599
+* Changed: user.max\_time\_namespaces: 31743 -> 31599
+* Changed: user.max\_user\_namespaces: 31743 -> 31599
+* Changed: user.max\_uts\_namespaces: 31743 -> 31599
+
+### Security
+
+Fixed CVE-2026-27135 in net-libs/nghttp2.
+
+### Security
+
+Fixed the "CrackArmor" vulnerability in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23351 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23368 in the Linux kernel.
+
+### Security
+
+Fixed the "CrackArmor" vulnerability in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23381 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23303 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23359 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23304 in the Linux kernel.
+
+### Change
+
+
+
+### cos-113-18244-582-55
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.161](https://cos.googlesource.com/third_party/kernel/+/a5e67a9c58dc766e562460c826eac46e42da4ada ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.582.55/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-23391 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-329f0b9 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23304 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-32597 with pyjwt package upgrade to 2.12.1.
+
+### Security
+
+Fixed CVE-2026-23292 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23296 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23303 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23293 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23352 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23340 in the Linux kernel.
+
+### Fixed
+
+Updated cos-gpu-installer to v2.6.1.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: kernel.threads-max: 63503 -> 63215
+* Changed: user.max\_cgroup\_namespaces: 31751 -> 31607
+* Changed: user.max\_ipc\_namespaces: 31751 -> 31607
+* Changed: user.max\_mnt\_namespaces: 31751 -> 31607
+* Changed: user.max\_net\_namespaces: 31751 -> 31607
+* Changed: user.max\_pid\_namespaces: 31751 -> 31607
+* Changed: user.max\_time\_namespaces: 31751 -> 31607
+* Changed: user.max\_user\_namespaces: 31751 -> 31607
+* Changed: user.max\_uts\_namespaces: 31751 -> 31607
+
+### Security
+
+Fixed CVE-2026-27459 in dev-python/pyopenssl.
+
+### Security
+
+Fixed CVE-2026-27448 in dev-python/pyopenssl.
+
+### Security
+
+Fixed CVE-2026-23388 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23368 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-27135 in net-libs/nghttp2.
+
+### Security
+
+Fixed CVE-2026-23300 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23359 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23392 in the Linux kernel.
+
+---
 ## 2026-03-26
 
 ### Change

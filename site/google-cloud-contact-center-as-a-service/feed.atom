@@ -2,9 +2,104 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-04-02T00:00:00+00:00</updated>
+  <updated>2026-04-03T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-03:feature:0</id>
+    <published>2026-04-03T00:00:00+00:00</published>
+    <updated>2026-04-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>New Total Queued Answered metric in the Chat Queue Metrics Explore</strong></p>
+<p>The <strong>Chat Queue Metrics</strong> Explore now includes the <strong>Total Queued Answered</strong>
+metric. This metric provides a precise count of chats answered from the queue,
+providing accurate Service Level Agreement (SLA) and answer rate calculations
+where the standard "handled" metric might not apply—for example, if a
+chat is answered and then immediately disconnected.</p>]]></content>
+    <summary>A new metric, Total Queued Answered, is now available in the Chat Queue Metrics Explore. This metric offers a precise count of chats answered from the queue, improving the accuracy of SLA and answer rate calculations. It is particularly useful in scenarios where the standard 'handled' metric might not fully capture the situation, such as when a chat is answered and then quickly disconnected.</summary>
+    <title>Feature: New metric for chat queue analysis</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-03:feature:1</id>
+    <published>2026-04-03T00:00:00+00:00</published>
+    <updated>2026-04-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Repeat contacts data added to advanced reporting dashboards</strong></p>
+<p>Repeat contacts data is now available in the following advanced reporting
+dashboards:</p>
+<ul>
+<li><strong>Real-time Queue Monitoring - Calls</strong> and <strong>Real-time Queue Monitoring -
+  Chats</strong>: new <strong>Total Repeat Contacts</strong> tile.</li>
+<li><strong>All Interactions - Calls</strong> and <strong>All Interactions - Chats</strong>: new <strong>Repeat
+  Contact</strong> column in the <strong>Call Metric Detail</strong> and <strong>Chat Metric Detail</strong>
+  tables.</li>
+<li><strong>Real-time Calls - Calls Connected</strong> and <strong>Real-time Chats - Chats
+  Connected</strong>: new <strong>Repeat Contact</strong> column in the <strong>Connected Calls</strong> and
+  <strong>Connected Chats</strong> tables.</li>
+</ul>]]></content>
+    <summary>Advanced reporting dashboards now include repeat contacts data. You can find new tiles and columns for tracking repeat contacts in various real-time and all interactions dashboards for both calls and chats.</summary>
+    <title>Feature: Repeat Contacts Data Now Available in Advanced Reporting</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-03:fixed:2</id>
+    <published>2026-04-03T00:00:00+00:00</published>
+    <updated>2026-04-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were addressed in this release:</p>
+<ul>
+<li>
+<p>Fixed an issue where dashboard names and favorite buttons were missing,
+  preventing users from renaming dashboards and marking them as favorites.</p>
+</li>
+<li>
+<p>Fixed an issue where fields for hourly and 30-minute intervals in call queue
+  metrics didn't display detailed data over long date ranges.</p>
+</li>
+<li>Fixed an issue where the <strong>Teams Filter</strong> filter displayed incorrect data.</li>
+<li>
+<p>Fixed an issue where calls that started at a specific time didn't appear in
+  their corresponding time windows.</p>
+</li>
+<li>
+<p>Fixed an issue in the Agent Activity dashboard where the <strong>Created By</strong>
+  column attributed status changes to an agent when an administrator performed
+  the changes.</p>
+</li>
+<li>Fixed an issue where historical call and chat metrics displayed incorrect
+  timestamps.</li>
+<li>On the <strong>Real-time Queue Monitoring - Calls</strong> and <strong>Real-time Queue
+  Monitoring - Chats</strong> dashboards, in the <strong>Historical Data</strong> tables, the
+  <strong>Avg CSAT</strong> column was renamed <strong>CSAT</strong>.</li>
+<li>Fixed an issue on the <strong>Channel Interval - Calls</strong> and <strong>Channel Interval -
+  Chats</strong> dashboards where drill-down views in the trend tiles displayed
+  incorrect information or were empty.</li>
+<li>Fixed an issue in the <strong>Queue Group Performance - All</strong> dashboard where blue
+  highlighting wasn't applied to populated fields in the <strong>Queue Group
+  Performance Calls</strong> and <strong>Queue Group Performance Chats</strong> tables.</li>
+</ul>]]></content>
+    <summary>This release addresses multiple issues including missing dashboard elements, inaccurate data in call queue metrics and filters, and incorrect attribution in the Agent Activity dashboard. Several dashboards and historical data tables have also been corrected for improved accuracy and display.</summary>
+    <title>Fixed: Resolved several dashboard and metrics issues</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-03:announcement:3</id>
+    <published>2026-04-03T00:00:00+00:00</published>
+    <updated>2026-04-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Advance reporting dashboards prerelease notes</strong></p>
+<p>Here are the pre-release notes for updates to the advanced reporting dashboards.
+When we release these updates, we expect the new capabilities to be as shown
+here.</p>]]></content>
+    <summary>These are the pre-release notes for upcoming updates to the advanced reporting dashboards. The new capabilities will be available upon release.</summary>
+    <title>Announcement: Advance reporting dashboards updates</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

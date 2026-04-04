@@ -1,5 +1,14 @@
 # Security Command Center
 
+## 2026-04-02
+
+### Feature
+
+Security Command Center [Risk Engine](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-supported-features)
+supports Dataproc resources in attack paths and Dataproc
+clusters and jobs in high-value resource sets.
+
+---
 ## 2026-03-31
 
 ### Feature

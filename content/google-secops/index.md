@@ -1,5 +1,16 @@
 # Google SecOps
 
+## 2026-04-04
+
+### Feature
+
+**Playbook Condition and Multi-Choice Question Flows**
+
+The maximum number of branches supported in Playbook **Conditions** and **Multiple Choice Questions** has been increased from 6 to 20. This allows for more complex branching logic within a single step.
+
+For more information, see [Use flows in playbooks](https://docs.cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/using-flows-in-playbooks).
+
+---
 ## 2026-04-03
 
 ### Change

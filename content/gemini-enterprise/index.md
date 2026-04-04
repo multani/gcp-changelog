@@ -1,5 +1,20 @@
 # Gemini Enterprise
 
+## 2026-04-03
+
+### Feature
+
+**Gemini Enterprise: Jira and Confluence federated connectors**
+
+The Jira and Confluence federated connectors are generally available (GA)
+in Gemini Enterprise.
+
+For more information, see:
+
+* [Jira Cloud](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/jira-cloud)
+* [Confluence Cloud](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/confluence-cloud)
+
+---
 ## 2026-04-02
 
 ### Feature

@@ -1,5 +1,19 @@
 # Virtual Private Cloud
 
+## 2026-04-03
+
+### Feature
+
+[Hybrid Subnets](https://docs.cloud.google.com/vpc/docs/hybrid-subnets) is available in
+**General Availability**. Hybrid subnet routing
+lets a VPC network share a CIDR block with a connected on-premises network.
+This configuration helps you migrate workloads to Google Cloud without needing
+to change any IP addresses. During migration, workloads that have migrated
+to your VPC network can communicate with those remaining in the on-premises
+network by using internal IP addresses. After all workloads have migrated,
+you can disable hybrid subnet routing to restore normal routing behavior.
+
+---
 ## 2026-03-30
 
 ### Feature

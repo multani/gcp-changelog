@@ -1,5 +1,12 @@
 # Dataproc
 
+## 2026-04-03
+
+### Announcement
+
+**Dataproc** and **Google Cloud Serverless for Apache Spark** are now unified under the [**Managed Service for Apache Spark**](https://console.cloud.google.com/dataproc/overview) brand. This change consolidates our managed Spark deployment options into a single umbrella brand that includes the full breadth of our Spark capabilities. No existing functionality is being removed as part of this change, and there will be no impact to the Dataproc API, client library, CLI, or IAM names.
+
+---
 ## 2026-04-02
 
 ### Announcement

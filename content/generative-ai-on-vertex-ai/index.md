@@ -13,6 +13,14 @@ is our most cost-efficient Veo on Vertex AI model.
 For more information, see [3.1 Lite
 Generate](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/veo/3-1-generate#3.1-lite-generate-001)
 
+### Announcement
+
+**Gemini 2.5 model retirement dates updated**
+
+The retirement dates for Gemini 2.5 Pro, Gemini 2.5 Flash-Lite,
+and Gemini 2.5 Flash have been updated to October 16, 2026. For more information,
+see [Model versions and lifecycle](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions).
+
 ---
 ## 2026-03-25
 

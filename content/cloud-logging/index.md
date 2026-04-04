@@ -1,5 +1,13 @@
 # Cloud Logging
 
+## 2026-04-03
+
+### Announcement
+
+Cloud Logging adds support for the `ca` multi-region. For a complete list
+of supported regions, see [Supported regions](https://docs.cloud.google.com/logging/docs/region-support#bucket-regions).
+
+---
 ## 2026-04-02
 
 ### Feature

@@ -1,5 +1,28 @@
 # Cloud Monitoring
 
+## 2026-04-03
+
+### Feature
+
+Application Monitoring has added a **Services and Workloads** tab, which
+lists your registered and discovered services and workloads. From this tab,
+you can do the following:
+
+* Register discovered services and workloads.
+* Search for services and workloads by functional type, such as `Agent` or
+  `MCP server`.
+* Open dashboards that display telemetry. For discovered
+  services and workload, Google Cloud Observability uses the
+  [Cloud Asset Inventory name](https://docs.cloud.google.com/asset-inventory/docs/asset-names)
+  to identify relevant information.
+
+To learn more, see the following:
+
+* [List registered and discovered services and workloads](https://docs.cloud.google.com/monitoring/docs/application-monitoring#list-reg-disc)
+* [Application Monitoring overview](https://docs.cloud.google.com/monitoring/docs/about-application-monitoring)
+* [View application telemetry](https://docs.cloud.google.com/monitoring/docs/application-monitoring)
+
+---
 ## 2026-04-02
 
 ### Feature

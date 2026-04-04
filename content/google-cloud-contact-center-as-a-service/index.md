@@ -2,18 +2,6 @@
 
 ## 2026-04-02
 
-### Feature
-
-**Play pre-recorded audio for virtual agents**
-
-Dialogflow lets virtual agents respond with pre-recorded audio. This
-lets you use high-quality audio files instead of standard text-to-speech. This
-capability is available for all voice channels, including inbound and outbound
-calls. It's available for support virtual agents, task virtual agents, and
-post-session virtual agents.
-
-Documentation coming soon.
-
 ### Fixed
 
 The following issues were addressed in this release:
@@ -86,7 +74,8 @@ You can now configure which CRM ticket view your HubSpot integration uses:
 Administrators: In the **Settings > Developer Settings >**
 select **HubSpot** pane, there's a new **CRM Ticket View** section.
 
-Documentation coming soon.
+For more information, see [Configure
+HubSpot](https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot#configure-hubspot).
 
 ### Announcement
 
@@ -97,6 +86,17 @@ We've released version 4.16 of Google Cloud CCaaS.
 The timing of the update to your instance depends on the deployment schedule
 that you have chosen. For more information, see [Deployment
 schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**Play pre-recorded audio for virtual agents**
+
+Dialogflow lets virtual agents respond with pre-recorded audio. This
+lets you use high-quality audio files instead of standard text-to-speech. This
+capability is available for all voice channels, including inbound and outbound
+calls. It's available for support virtual agents, task virtual agents, and
+post-session virtual agents. For more information, see [Play pre-recorded
+audio](https://docs.cloud.google.com/contact-center/ccai-platform/docs/play-prerecorded-audio).
 
 ### Announcement
 

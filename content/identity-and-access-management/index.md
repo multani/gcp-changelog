@@ -1,5 +1,16 @@
 # Identity and Access Management
 
+## 2026-04-03
+
+### Deprecated
+
+Extended attributes for Workforce Identity Federation are deprecated.
+For group mapping, we recommend using
+[SCIM](https://docs.cloud.google.com/iam/docs/workforce-identity-federation-scim) instead of
+extended attributes. For more information, see
+[IAM deprecations](https://docs.cloud.google.com/iam/docs/deprecations).
+
+---
 ## 2026-03-31
 
 ### Feature

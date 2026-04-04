@@ -1,5 +1,17 @@
 # AlloyDB for PostgreSQL
 
+## 2026-04-03
+
+### Feature
+
+The [`gcloud beta alloydb connect`](https://docs.cloud.google.com/sdk/gcloud/reference/beta/alloydb/connect)
+command is now available in
+[Preview](https://cloud.google.com/products#product-launch-stages). This command
+provides a simplified way to connect securely to AlloyDB
+instances by using the AlloyDB Auth Proxy and `psql`. For more information,
+see [Connect using gcloud CLI](https://docs.cloud.google.com/alloydb/docs/connect-gcloud).
+
+---
 ## 2026-04-02
 
 ### Change

@@ -1,5 +1,65 @@
 # Container Optimized OS
 
+## 2026-04-01
+
+### Change
+
+
+
+### cos-beta-129-19506-0-115
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.67](https://cos.googlesource.com/third_party/kernel/+/808b921cc891c1cb66519d4374662823bfe1713a ) | v27.5.1 | v2.2.2 | [See List](https://storage.googleapis.com/cos-tools/19506.0.115/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+
+
+### cos-dev-133-19672-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.77](https://cos.googlesource.com/third_party/kernel/+/95e3317c03816d2a958f9aee05d52d08c50b7e2c ) | v27.5.1 | v2.2.1 | [See List](https://storage.googleapis.com/cos-tools/19672.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2024-14027 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-7cb9a23 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-7cb9a23 in the Linux kernel.
+
+### Change
+
+
+
+### cos-125-19216-220-106
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.68](https://cos.googlesource.com/third_party/kernel/+/ff3a3595bc985d25661d470eab88dd46aa459d98 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.220.106/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2024-14027 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23304 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-7cb9a23 in the Linux kernel.
+
+---
 ## 2026-03-26
 
 ### Change

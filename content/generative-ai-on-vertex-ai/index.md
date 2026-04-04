@@ -1,5 +1,26 @@
 # Generative AI on Vertex AI
 
+## 2026-04-03
+
+### Feature
+
+**Vertex AI RAG Engine Serverless mode**
+
+Vertex AI RAG Engine Serverless mode is now available in [public
+preview](https://cloud.google.com/products#product-launch-stages). Serverless
+mode provides a fully managed database for storing RAG resources that abstracts
+away database provisioning and scaling. You can seamlessly switch between
+Serverless mode and Spanner mode, which provides dedicated, isolated database
+instances.
+
+For more information, see the following:
+
+* [Deployment modes in Vertex AI RAG Engine](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/rag-engine/deployment-modes)
+* [Serverless mode](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/rag-engine/serverless-mode)
+* [Managing Spanner mode](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/rag-engine/spanner-mode)
+* [Switching between modes](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/rag-engine/switching-modes)
+
+---
 ## 2026-04-02
 
 ### Feature

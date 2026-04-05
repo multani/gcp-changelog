@@ -1,5 +1,66 @@
 # Google SecOps Marketplace
 
+## 2026-04-01
+
+### Change
+
+**Microsoft Teams**: Version 36.0
+
+* Optimized user lookup logic for the following actions:
+
+  + **Add Users To Channel**
+  + **Create Chat**
+
+### Change
+
+**Akamai**: Version 6.0
+
+* Updated the JSON results of the following actions:
+
+  + **Add Items To Client List**
+  + **Remove Items From Client List**
+
+### Feature
+
+**Microsoft 365 Defender**: Version 26.0
+
+* The following new job has been added:
+
+  + **Sync Alerts**
+
+### Change
+
+Source code is now publicly available on [GitHub](https://github.com/chronicle/content-hub)
+for the following integrations:
+
+* **CyberX**: Version 6.0
+* **JuniperVSRX**: Version 11.0
+* **McAfee NSM**: Version 11.0
+* **Micro Focus ITSMA**: Version 7.0
+* **Portnox**: Version 9.0
+* **ReversingLabs A1000**: Version 10.0
+* **Stealthwatch V6.10**: Version 6.0
+* **Symantec Content Analysis**: Version 7.0
+
+### Change
+
+**Azure Active Directory**: Version 25.0
+
+* Added the ability to fetch last login time information to the following
+  actions:
+
+  + **Enrich User**
+  + **Get Manager Contact Details**
+
+### Feature
+
+**SentinelOneV2**: Version 48.0
+
+* The following new job has been added:
+
+  + **Sync Alerts**
+
+---
 ## 2026-03-25
 
 ### Change

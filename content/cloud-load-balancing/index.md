@@ -1,5 +1,29 @@
 # Cloud Load Balancing
 
+## 2026-04-05
+
+### Feature
+
+Certificate Manager certificates are available in Google Cloud console
+while provisioning a load balancer.
+
+You can select a certificate map for the following load balancers:
+
+* [Global external Application Load Balancers](https://docs.cloud.google.com/load-balancing/docs/https/setup-global-ext-https-compute#ssl-cert)
+* [Classic Application Load Balancers](https://docs.cloud.google.com/load-balancing/docs/https/ext-https-lb-simple#ssl-cert)
+* [Global external proxy Network Load Balancers](https://docs.cloud.google.com/load-balancing/docs/tcp/set-up-global-ext-proxy-ssl#ssl-cert)
+* [Classic proxy Network Load Balancers](https://docs.cloud.google.com/load-balancing/docs/ssl/setting-up-ssl#ssl-cert)
+
+You can select a Certificate Manager certificate
+for the following load balancers:
+
+* [Regional external Application Load Balancers](https://docs.cloud.google.com/load-balancing/docs/https/setting-up-reg-ext-https-lb#lb-config)
+* [Regional internal Application Load Balancers](https://docs.cloud.google.com/load-balancing/docs/l7-internal/setting-up-l7-internal#lb-config)
+* [Cross-region internal Application Load Balancers](https://docs.cloud.google.com/load-balancing/docs/l7-internal/setting-up-l7-cross-reg-internal#lb-config)
+
+This feature is in **General availability**.
+
+---
 ## 2026-03-31
 
 ### Feature

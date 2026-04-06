@@ -1,5 +1,16 @@
 # Apigee API hub
 
+## 2026-04-06
+
+### Feature
+
+**Agent Registry integration support for MCP metadata (Preview)**
+
+API hub now includes a managed integration with Agent Registry to automatically synchronize Model Context Protocol (MCP) servers and tools metadata. This feature enables AI agents to discover and interact with the APIs registered in your hub without manual configuration.
+
+This feature is in [Public Preview](https://cloud.google.com/products#product-launch-stages). For more information, see [Manage Agent Registry integration](https://docs.cloud.google.com/apigee/docs/apihub/manage-agent-registry-integration).
+
+---
 ## 2026-03-10
 
 ### Feature

@@ -1,5 +1,16 @@
 # BigQuery
 
+## 2026-04-06
+
+### Feature
+
+You can now use the
+[`AI.AGG` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-agg)
+to semantically aggregate unstructured input data based on natural language
+instructions. This feature is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-04-02
 
 ### Feature

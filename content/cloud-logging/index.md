@@ -1,5 +1,15 @@
 # Cloud Logging
 
+## 2026-04-06
+
+### Libraries
+
+### Go
+
+{: track-name='go'}
+#### [v1.14.0](https://github.com/googleapis/google-cloud-go/compare/logging/v1.13.2...logging/v1.14.0) (2026-04-02)
+
+---
 ## 2026-04-03
 
 ### Announcement

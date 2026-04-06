@@ -1,5 +1,13 @@
 # Buildpacks
 
+## 2026-04-03
+
+### Feature
+
+The Node.js buildpack supports the Bun package manager in [General Availability](https://cloud.google.com/products#product-launch-stages). For more information, see
+[Building a Node.js application](https://docs.cloud.google.com/docs/buildpacks/nodejs#bun_package_manager).
+
+---
 ## 2026-03-13
 
 ### Feature

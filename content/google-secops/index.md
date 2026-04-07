@@ -1,6 +1,44 @@
 # Google SecOps
 
+## 2026-04-07
+
+### Feature
+
+**Health Hub**
+
+This feature is currently in Preview.
+
+The **Health Hub** is the central location in Google Security Operations for you to monitor the status and health of all configured data sources. The **Health Hub** provides crucial information on data sources and log types, offering the context needed to diagnose and remediate data pipeline issues.
+
+The **Health Hub** includes information about the following:
+
+* Ingestion volumes and ingestion health.
+* Parsing volumes from raw logs to [Unified Data Model (UDM) events](https://docs.cloud.google.com/chronicle/docs/event-processing/udm-overview).
+* Context and links to interfaces with additional relevant information and functionality.
+* Irregular and failed sources and log types.
+
+For more information, see [Use the Health Hub](https://docs.cloud.google.com/chronicle/docs/reports/data-health-monitoring-and-troubleshooting-dashboard).
+
+---
 ## 2026-04-06
+
+### Change
+
+**Updates to search query limits and error messaging**
+
+Google SecOps has updated search query limits for programmatic and web interface
+access:
+
+* Increased Queries Per Hour (QPH) limits of up to 2,000 for APIs and 1,000
+  for the web interface.
+* New concurrency limits for both simple and complex queries.
+* More descriptive error messages for quota failures in the API and web interface.
+
+For more information, see [Search limits and quotas](https://docs.cloud.google.com/chronicle/docs/investigation/udm-search#QPHlimits)
+
+**Note:** This change follows a phased rollout from **April 06, 2026**, to
+**April 30, 2026**. Contact Support if you don't see the new limits applied
+to your environment after **April 30, 2026**.
 
 ### Deprecated
 

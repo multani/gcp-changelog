@@ -2,9 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Storage</title>
   <subtitle>Changelog for Google Cloud product: Cloud Storage</subtitle>
-  <updated>2026-04-02T00:00:00+00:00</updated>
+  <updated>2026-04-06T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-storage</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-storage/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2026-04-06:feature:0</id>
+    <published>2026-04-06T00:00:00+00:00</published>
+    <updated>2026-04-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now use <a href="https://docs.cloud.google.com/storage/docs/batch-operations/overview">Storage batch operations</a>
+to update <a href="https://docs.cloud.google.com/storage/docs/object-contexts">object contexts</a> for multiple objects
+in a single job. You can clear all existing contexts from the specified objects,
+remove contexts with specific keys, or update and insert new context key-value
+pairs. For more information, see
+<a href="https://docs.cloud.google.com/storage/docs/batch-operations/create-manage-batch-operation-jobs">Create and manage batch operation jobs</a>.</p>]]></content>
+    <summary>You can now update object contexts for multiple objects in a single job using Storage batch operations. This feature allows you to clear existing contexts, remove specific keys, or update and insert new key-value pairs efficiently.</summary>
+    <title>Feature: Batch operations for object contexts</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2026-04-06:feature:1</id>
+    <published>2026-04-06T00:00:00+00:00</published>
+    <updated>2026-04-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/storage/docs/object-contexts">Object contexts</a> are now
+<a href="https://cloud.google.com/products#product-launch-stages">generally available</a>.
+You can attach key-value pairs to your objects to categorize, track, and search
+your data. Object contexts are preserved by default during copy, rewrite, and
+compose operations. You can help control this behavior by using the
+<a href="https://docs.cloud.google.com/storage/docs/json_api/v1/objects/copy#dropContextGroups"><code>dropContextGroups</code></a>
+JSON API parameter or by providing new contexts in the request.</p>]]></content>
+    <summary>You can now attach key-value pairs to your objects to categorize, track, and search your data. Object contexts are preserved by default during copy, rewrite, and compose operations, with options to control this behavior.</summary>
+    <title>Feature: Object contexts now generally available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

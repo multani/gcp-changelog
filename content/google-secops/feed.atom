@@ -2,14 +2,58 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps</subtitle>
-  <updated>2026-04-06T00:00:00+00:00</updated>
+  <updated>2026-04-07T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops:2026-04-06:deprecated:0</id>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-04-07:feature:0</id>
+    <published>2026-04-07T00:00:00+00:00</published>
+    <updated>2026-04-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Health Hub</strong></p>
+<p>This feature is currently in Preview.</p>
+<p>The <strong>Health Hub</strong> is the central location in Google Security Operations for you to monitor the status and health of all configured data sources. The <strong>Health Hub</strong> provides crucial information on data sources and log types, offering the context needed to diagnose and remediate data pipeline issues.</p>
+<p>The <strong>Health Hub</strong> includes information about the following:</p>
+<ul>
+<li>Ingestion volumes and ingestion health.</li>
+<li>Parsing volumes from raw logs to <a href="https://docs.cloud.google.com/chronicle/docs/event-processing/udm-overview">Unified Data Model (UDM) events</a>.</li>
+<li>Context and links to interfaces with additional relevant information and functionality.</li>
+<li>Irregular and failed sources and log types.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/reports/data-health-monitoring-and-troubleshooting-dashboard">Use the Health Hub</a>.</p>]]></content>
+    <summary>Introducing the Health Hub, a central dashboard for monitoring the status and health of your data sources. It provides insights into ingestion, parsing, and potential issues, helping you diagnose and resolve data pipeline problems efficiently.</summary>
+    <title>Feature: Monitor Data Source Health</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-04-06:change:0</id>
+    <published>2026-04-06T00:00:00+00:00</published>
+    <updated>2026-04-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Updates to search query limits and error messaging</strong></p>
+<p>Google SecOps has updated search query limits for programmatic and web interface
+access:</p>
+<ul>
+<li>Increased Queries Per Hour (QPH) limits of up to 2,000 for APIs and 1,000
+  for the web interface.</li>
+<li>New concurrency limits for both simple and complex queries.</li>
+<li>More descriptive error messages for quota failures in the API and web interface.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/investigation/udm-search#QPHlimits">Search limits and quotas</a></p>
+<p><strong>Note:</strong> This change follows a phased rollout from <strong>April 06, 2026</strong>, to
+<strong>April 30, 2026</strong>. Contact Support if you don't see the new limits applied
+to your environment after <strong>April 30, 2026</strong>.</p>]]></content>
+    <summary>Google SecOps has increased search query limits for both API and web interface access. New concurrency limits have also been introduced, along with more descriptive error messages for quota failures.</summary>
+    <title>Change: Search query limits updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-04-06:deprecated:1</id>
     <published>2026-04-06T00:00:00+00:00</published>
     <updated>2026-04-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>v1 Cloud Storage Feed Types (GCS, S3, SQS, Azure)</strong></p>

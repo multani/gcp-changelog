@@ -1,5 +1,18 @@
 # Datastream
 
+## 2026-04-07
+
+### Feature
+
+You can now use the
+[Datastream remote MCP server](https://docs.cloud.google.com/datastream/docs/use-datastream-mcp)
+to enable LLM agents to perform data-related tasks, such as managing and
+monitoring your streams, connection profiles, and stream objects.
+
+This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-01-28
 
 ### Feature

@@ -2,6 +2,23 @@
 
 ## 2026-04-06
 
+### Change
+
+**Updates to search query limits and error messaging**
+
+Google SecOps has updated search query limits for programmatic and web interface
+access:
+
+* Increased Queries Per Hour (QPH) limits of up to 2,000 for APIs and 1,000
+  for the web interface.
+* New concurrency limits for both simple and complex queries.
+* More descriptive error messages for quota failures in the API and web interface.
+
+For more information, see [Search limits and quotas](https://docs.cloud.google.com/chronicle/docs/investigation/udm-search#QPHlimits)
+
+**Note:** This change follows a phased rollout from **April 06, 2026**, to **April 30, 2026**.
+Contact Support if you don't see the new limits applied to your environment after **April 30, 2026**.
+
 ### Deprecated
 
 **v1 Cloud Storage Feed Types (GCS, S3, SQS, Azure)**

@@ -1,5 +1,27 @@
 # Cloud Storage
 
+## 2026-04-06
+
+### Feature
+
+You can now use [Storage batch operations](https://docs.cloud.google.com/storage/docs/batch-operations/overview)
+to update [object contexts](https://docs.cloud.google.com/storage/docs/object-contexts) for multiple objects
+in a single job. You can clear all existing contexts from the specified objects,
+remove contexts with specific keys, or update and insert new context key-value
+pairs. For more information, see
+[Create and manage batch operation jobs](https://docs.cloud.google.com/storage/docs/batch-operations/create-manage-batch-operation-jobs).
+
+### Feature
+
+[Object contexts](https://docs.cloud.google.com/storage/docs/object-contexts) are now
+[generally available](https://cloud.google.com/products#product-launch-stages).
+You can attach key-value pairs to your objects to categorize, track, and search
+your data. Object contexts are preserved by default during copy, rewrite, and
+compose operations. You can help control this behavior by using the
+[`dropContextGroups`](https://docs.cloud.google.com/storage/docs/json_api/v1/objects/copy#dropContextGroups)
+JSON API parameter or by providing new contexts in the request.
+
+---
 ## 2026-04-02
 
 ### Feature

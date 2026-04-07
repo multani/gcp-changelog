@@ -1,5 +1,22 @@
 # Bigtable
 
+## 2026-04-07
+
+### Feature
+
+You can connect to Bigtable from Java applications and other reporting tools
+that support a generic JDBC adapter by using the [Bigtable JDBC driver](https://docs.cloud.google.com/bigtable/docs/reference/jdbc).
+This feature is [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+You can use [protocol buffer (protobuf) schemas](https://docs.cloud.google.com/bigtable/docs/create-manage-protobuf-schemas)
+to query individual fields within protobuf messages stored as bytes in Bigtable.
+You can query your protobuf data using GoogleSQL for Bigtable, continuous
+materialized views, logical views, or BigQuery external tables. This feature is
+[generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-03-30
 
 ### Feature

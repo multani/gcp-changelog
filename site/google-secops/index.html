@@ -2400,6 +2400,23 @@
 
 
 <h1 id="google-secops">Google SecOps</h1>
+<h2 id="2026-04-06">2026-04-06</h2>
+<h3 id="deprecated">Deprecated</h3>
+<p><strong>v1 Cloud Storage Feed Types (GCS, S3, SQS, Azure)</strong></p>
+<p>The v1 feed types for <code>GOOGLE_CLOUD_STORAGE</code>, <code>AMAZON_S3</code>, <code>AMAZON_SQS</code>, and <code>AZURE_BLOBSTORE</code> are deprecated and will be discontinued on <strong>March 15, 2027</strong>. The new v2 feed types uses the Google Cloud Storage Transfer Service (STS) to provide improved performance, scalability, and reliability.</p>
+<p>To ensure continued ingestion, transition your feeds before the March 15, 2027 shutdown date:</p>
+<ul>
+<li>Google SecOps will automatically migrate your feeds using v1 feed types to v2 in waves starting from April 6, 2026. To facilitate this, some feeds may require additional IP allowlist or service account permission updates. You can also self-migrate by replacing your existing data feeds with new feeds using v2 feed types.</li>
+</ul>
+<p>You can also self-migrate by creating new feeds using v2 feed types to substitute your existing feeds using v1 feed types by following the steps documented in our <a href="https://docs.cloud.google.com/chronicle/docs/reference/feed-management-api#source-types">feed configuration guides</a> before March 15, 2027.</p>
+<p><strong>Key Dates:</strong></p>
+<ul>
+<li><strong>April 6, 2026:</strong> Transition begins; auto-migration available.</li>
+<li><strong>September 15, 2026:</strong> Support for v1 feeds is discontinued.</li>
+<li><strong>March 15, 2027:</strong> v1 feeds reach End of Life (EOL) and will stop returning data.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/deprecations">Feature deprecations</a>.</p>
+<hr />
 <h2 id="2026-04-04">2026-04-04</h2>
 <h3 id="feature">Feature</h3>
 <p><strong>Playbook Condition and Multi-Choice Question Flows</strong></p>
@@ -2444,6 +2461,7 @@
 <li>Cisco Umbrella Audit (<code>CISCO_UMBRELLA_AUDIT</code>)</li>
 <li>Cisco Umbrella DNS (<code>UMBRELLA_DNS</code>)</li>
 <li>Cisco WSA (<code>CISCO_WSA</code>)</li>
+<li>Cloud DNS (<code>GCP_DNS</code>)</li>
 <li>Cloud SQL (<code>GCP_CLOUDSQL</code>)</li>
 <li>Cloudflare (<code>CLOUDFLARE</code>)</li>
 <li>Cloudflare Warp (<code>CLOUDFLARE_WARP</code>)</li>
@@ -2496,7 +2514,6 @@
 <li>NetApp ONTAP (<code>NETAPP_ONTAP</code>)</li>
 <li>Netskope V2 (<code>NETSKOPE_ALERT_V2</code>)</li>
 <li>Netskope Web Proxy (<code>NETSKOPE_WEBPROXY</code>)</li>
-<li>None (<code>GCP_DNS</code>)</li>
 <li>Obsidian (<code>OBSIDIAN</code>)</li>
 <li>Office 365 (<code>OFFICE_365</code>)</li>
 <li>Oort Security Tool (<code>OORT</code>)</li>
@@ -2596,9 +2613,9 @@
 <hr />
 <h2 id="2026-03-25">2026-03-25</h2>
 <h3 id="feature_3">Feature</h3>
-<p><strong>Credential validation for third-party API connectors</strong></p>
+<p><strong>Credential validation for third-party API feed types</strong></p>
 <p>Credential validation is now available for all 49 third-party API connectors.</p>
-<p>When you create a feed using a third-party API connector, Google SecOps now automatically validates the provided credentials. This ensures that if credentials are incorrect:</p>
+<p>When you create a feed using a third-party API feed type, Google SecOps now automatically validates the provided credentials. This ensures that if credentials are incorrect:</p>
 <ul>
 <li><strong>Immediate feedback</strong>: The web interface displays an error message explaining the configuration failure.</li>
 <li><strong>Prevention of broken feeds</strong>: The system blocks the creation of the feed until valid credentials are provided, preventing the creation of broken feeds that fail to ingest data later.</li>
@@ -2924,7 +2941,7 @@ For more information about TIN, see
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage-parser-versions">Manage prebuilt parser versions</a>.</p>
 <hr />
 <h2 id="2026-03-02">2026-03-02</h2>
-<h3 id="deprecated">Deprecated</h3>
+<h3 id="deprecated_1">Deprecated</h3>
 <p><code>Chronicle.soarAnalyst</code>, <code>chronicle.soarViewer</code>, <code>chronicle.soarEngineer</code> roles in Cloud IAM are being deprecated and will be fully removed in six months. Although these roles were accessible and can historically be assigned to users in Cloud IAM, they were non-operational. SOAR roles were managed through Permission Groups and with its migration to Cloud IAM as part of the <a href="https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp#permissions-iam">SOAR Migration to Google Cloud</a>, the preceding roles are being deprecated.</p>
 <p>To maintain seamless access and adhere to the principle of least privilege, transition your SOAR users to the following options:</p>
 <ul>
@@ -3042,7 +3059,7 @@ that protect the resources and data of services that you explicitly specify. For
 </ul>
 <hr />
 <h2 id="2026-02-17">2026-02-17</h2>
-<h3 id="deprecated_1">Deprecated</h3>
+<h3 id="deprecated_2">Deprecated</h3>
 <p>Control of MCP use with organization policies is deprecated. After March 17, 2026, organization policies that use the <code>gcp.managed.allowedMCPServices</code> constraint won't work, and you can control MCP use with IAM deny policies. For more information about controlling MCP use, see <a href="https://docs.cloud.google.com/mcp/control-mcp-use-iam">Control MCP use with IAM</a>.</p>
 <h3 id="change_3">Change</h3>
 <p>After March 17, 2026, when you enable Google SecOps, the Google SecOps MCP server is automatically enabled.</p>
@@ -3137,7 +3154,7 @@ without losing unmatched events.</p>
 <p>Google SecOps now lets you share custom sets of columns in the <strong>Events</strong> table for
 consistent analysis across teams.</p>
 <p>For more details, see <a href="https://cloud.google.com/chronicle/docs/investigation/udm-search">Search for events and alerts</a></p>
-<h3 id="deprecated_2">Deprecated</h3>
+<h3 id="deprecated_3">Deprecated</h3>
 <p><strong>Mute an IoC deprecated</strong></p>
 <p>The Mute an IoC feature is deprecated, and the <strong>IOC details</strong> page no longer displays the <strong>Mute</strong> indicator.</p>
 <h3 id="announcement_9">Announcement</h3>
@@ -4156,7 +4173,7 @@ The following rules have been added to the rulepack:</p>
 <p>This enhanced parser is available as a <strong>Release Candidate</strong> for the next 2 months. To opt in and begin testing it, go to <strong>SIEM Settings &gt; Parsers</strong>. We encourage you to try it out and evaluate the improvements before it becomes the default.</p>
 <hr />
 <h2 id="2025-10-15">2025-10-15</h2>
-<h3 id="deprecated_3">Deprecated</h3>
+<h3 id="deprecated_4">Deprecated</h3>
 <p>The Netskope v1 API feed has been deprecated by Netskope. If you are using the Netskope REST API v1 with Google SecOps, you must switch to the Netskope REST API v2.</p>
 <hr />
 <h2 id="2025-10-09">2025-10-09</h2>
@@ -5411,6 +5428,9 @@ sources directly within a single query.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-secops">Google SecOps</a></li>
+          <li class="nav-item">
+            <a href="#2026-04-06" class="nav-link">2026-04-06</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-04-04" class="nav-link">2026-04-04</a>
           </li>

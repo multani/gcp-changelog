@@ -4,6 +4,12 @@
 
 ### Feature
 
+You can now use a [custom organization policy](https://docs.cloud.google.com/bigquery/docs/custom-constraints)
+to allow or deny specific operations on these BigQuery resources:
+tables, data policies, and row access policies. This feature is in [preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
 You can now use the
 [`AI.AGG` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-agg)
 to semantically aggregate unstructured input data based on natural language

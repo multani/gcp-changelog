@@ -1,5 +1,27 @@
 # Apigee X
 
+## 2026-04-06
+
+### Change
+
+On April 6th, 2026, we released an updated version of Apigee.
+
+This change introduces the new `apigee.coreServiceAgent` IAM role for
+Apigee. **Effective immediately, use `apigee.coreServiceAgent` instead of the
+`apigee.serviceAgent` role.**
+
+For information on the new role, see
+[`apigee.coreServiceAgent`](https://docs.cloud.google.com/iam/docs/roles-permissions/apigee#apigee.coreServiceAgent).
+
+### Fixed
+
+**Correction to [April 2, 2026 release note: Deployment disruption for Apigee Drupal Portal via Google Cloud Marketplace](#April_02_2026)**
+
+For the deployment disruption announced on April 2, the announcement noted that deployment and management functionality using Google Cloud Deployment Manager would definitely be unavailable during the transition. This statement is incorrect. The functionality *might* be unavailable.
+
+See the [Known issue](https://docs.cloud.google.com/apigee/docs/release/known-issues#495305258) for more information.
+
+---
 ## 2026-04-02
 
 ### Breaking

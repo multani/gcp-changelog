@@ -1,5 +1,26 @@
 # Cloud SQL for SQL Server
 
+## 2026-04-06
+
+### Feature
+
+Cloud SQL for SQL Server now supports SQL Server 2025 ([GA](https://cloud.google.com/products/#product-launch-stages)):
+
+* SQL Server 2025 Standard
+* SQL Server 2025 Enterprise
+* SQL Server 2025 Express
+
+For more information, see [Database versions and version policies](https://docs.cloud.google.com/sql/docs/sqlserver/db-versions)
+and [Choose a machine series](https://docs.cloud.google.com/sql/docs/sqlserver/machine-series-overview).
+
+### Feature
+
+[Cloud SQL for SQL Server integration with Microsoft Entra ID](https://docs.cloud.google.com/sql/docs/sqlserver/integration-with-microsoft-entra-id)
+([GA](https://cloud.google.com/products/#product-launch-stages))
+provides centralized identity and access management (IAM) for your databases
+using your existing Microsoft Entra ID tenant.
+
+---
 ## 2026-04-02
 
 ### Feature

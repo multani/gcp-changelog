@@ -2,9 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps</subtitle>
-  <updated>2026-04-04T00:00:00+00:00</updated>
+  <updated>2026-04-06T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-04-06:deprecated:0</id>
+    <published>2026-04-06T00:00:00+00:00</published>
+    <updated>2026-04-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>v1 Cloud Storage Feed Types (GCS, S3, SQS, Azure)</strong></p>
+<p>The v1 feed types for <code>GOOGLE_CLOUD_STORAGE</code>, <code>AMAZON_S3</code>, <code>AMAZON_SQS</code>, and <code>AZURE_BLOBSTORE</code> are deprecated and will be discontinued on <strong>March 15, 2027</strong>. The new v2 feed types uses the Google Cloud Storage Transfer Service (STS) to provide improved performance, scalability, and reliability.</p>
+<p>To ensure continued ingestion, transition your feeds before the March 15, 2027 shutdown date:</p>
+<ul>
+<li>Google SecOps will automatically migrate your feeds using v1 feed types to v2 in waves starting from April 6, 2026. To facilitate this, some feeds may require additional IP allowlist or service account permission updates. You can also self-migrate by replacing your existing data feeds with new feeds using v2 feed types.</li>
+</ul>
+<p>You can also self-migrate by creating new feeds using v2 feed types to substitute your existing feeds using v1 feed types by following the steps documented in our <a href="https://docs.cloud.google.com/chronicle/docs/reference/feed-management-api#source-types">feed configuration guides</a> before March 15, 2027.</p>
+<p><strong>Key Dates:</strong></p>
+<ul>
+<li><strong>April 6, 2026:</strong> Transition begins; auto-migration available.</li>
+<li><strong>September 15, 2026:</strong> Support for v1 feeds is discontinued.</li>
+<li><strong>March 15, 2027:</strong> v1 feeds reach End of Life (EOL) and will stop returning data.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/deprecations">Feature deprecations</a>.</p>]]></content>
+    <summary>The v1 feed types for GCS, S3, SQS, and Azure Blob Storage are deprecated and will be discontinued on March 15, 2027. Users are encouraged to migrate to the new v2 feed types, which offer improved performance and reliability. Automatic migration will begin in April 2026, but manual migration is also supported.</summary>
+    <title>Deprecated: Cloud Storage Feed Types Deprecated</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -61,6 +85,7 @@
 <li>Cisco Umbrella Audit (<code>CISCO_UMBRELLA_AUDIT</code>)</li>
 <li>Cisco Umbrella DNS (<code>UMBRELLA_DNS</code>)</li>
 <li>Cisco WSA (<code>CISCO_WSA</code>)</li>
+<li>Cloud DNS (<code>GCP_DNS</code>)</li>
 <li>Cloud SQL (<code>GCP_CLOUDSQL</code>)</li>
 <li>Cloudflare (<code>CLOUDFLARE</code>)</li>
 <li>Cloudflare Warp (<code>CLOUDFLARE_WARP</code>)</li>
@@ -113,7 +138,6 @@
 <li>NetApp ONTAP (<code>NETAPP_ONTAP</code>)</li>
 <li>Netskope V2 (<code>NETSKOPE_ALERT_V2</code>)</li>
 <li>Netskope Web Proxy (<code>NETSKOPE_WEBPROXY</code>)</li>
-<li>None (<code>GCP_DNS</code>)</li>
 <li>Obsidian (<code>OBSIDIAN</code>)</li>
 <li>Office 365 (<code>OFFICE_365</code>)</li>
 <li>Oort Security Tool (<code>OORT</code>)</li>
@@ -182,7 +206,7 @@
 <li>Versa Director (<code>VERSA_DIRECTOR</code>)</li>
 <li>ZPE Systems NodeGrid (<code>ZPE_SYSTEMS_NODEGRID</code>)</li>
 </ul>]]></content>
-    <summary>The list of supported default parsers has been updated. These changes are gradually reflected in your region over one to four days. Additionally, new log types have been added that do not yet have default parsers.</summary>
+    <summary>The list of supported default parsers has been updated, including new additions and modifications. Please note that changes may take one to four days to reflect in your region.</summary>
     <title>Change: Updated parser list available</title>
   </entry>
   <entry>
@@ -234,15 +258,15 @@
     <id>urn:github:multani:gcp-changelog:google-secops:2026-03-25:feature:0</id>
     <published>2026-03-25T00:00:00+00:00</published>
     <updated>2026-03-25T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Credential validation for third-party API connectors</strong></p>
+    <content type="html"><![CDATA[<p><strong>Credential validation for third-party API feed types</strong></p>
 <p>Credential validation is now available for all 49 third-party API connectors.</p>
-<p>When you create a feed using a third-party API connector, Google SecOps now automatically validates the provided credentials. This ensures that if credentials are incorrect:</p>
+<p>When you create a feed using a third-party API feed type, Google SecOps now automatically validates the provided credentials. This ensures that if credentials are incorrect:</p>
 <ul>
 <li><strong>Immediate feedback</strong>: The web interface displays an error message explaining the configuration failure.</li>
 <li><strong>Prevention of broken feeds</strong>: The system blocks the creation of the feed until valid credentials are provided, preventing the creation of broken feeds that fail to ingest data later.</li>
 </ul>]]></content>
-    <summary>Google SecOps now automatically validates credentials for all 49 third-party API connectors. This provides immediate feedback on incorrect credentials and prevents the creation of broken feeds, ensuring data ingestion.</summary>
-    <title>Feature: Third-party API connector credential validation</title>
+    <summary>Google SecOps now automatically validates credentials for all 49 third-party API connectors. This feature provides immediate feedback on incorrect credentials and prevents the creation of broken feeds, ensuring data ingestion.</summary>
+    <title>Feature: Third-party API credential validation</title>
   </entry>
   <entry>
     <author>

@@ -1,5 +1,18 @@
 # Generative AI on Vertex AI
 
+## 2026-04-06
+
+### Feature
+
+**Metadata search for RAG Engine**
+
+Use schema-based metadata search in Vertex AI RAG Engine.
+You can define a metadata schema for a corpus, attach metadata to files within
+that corpus, and use this metadata to filter contexts during retrieval.
+For more information, see
+[Filter with metadata search](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/rag-engine/use-metadata-search).
+
+---
 ## 2026-04-03
 
 ### Feature

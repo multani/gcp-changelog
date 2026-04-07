@@ -1,6 +1,24 @@
 {
   "name": "Apigee X",
   "entries": {
+    "2026-04-06": [
+      {
+        "kind": "Change",
+        "content": "On April 6th, 2026, we released an updated version of Apigee.\n\nThis change introduces the new `apigee.coreServiceAgent` IAM role for\nApigee. **Effective immediately, use `apigee.coreServiceAgent` instead of the\n`apigee.serviceAgent` role.**\n\nFor information on the new role, see\n[`apigee.coreServiceAgent`](https://docs.cloud.google.com/iam/docs/roles-permissions/apigee#apigee.coreServiceAgent).",
+        "summary": {
+          "title": "Apigee IAM Role Update",
+          "summary": "Apigee has released an updated version with a new IAM role, `apigee.coreServiceAgent`. Effective immediately, this new role should be used in place of the `apigee.serviceAgent` role."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "**Correction to [April 2, 2026 release note: Deployment disruption for Apigee Drupal Portal via Google Cloud Marketplace](#April_02_2026)**\n\nFor the deployment disruption announced on April 2, the announcement noted that deployment and management functionality using Google Cloud Deployment Manager would definitely be unavailable during the transition. This statement is incorrect. The functionality *might* be unavailable.\n\nSee the [Known issue](https://docs.cloud.google.com/apigee/docs/release/known-issues#495305258) for more information.",
+        "summary": {
+          "title": "Apigee Drupal Portal Deployment Correction",
+          "summary": "A previous announcement incorrectly stated that deployment and management functionality for the Apigee Drupal Portal would be unavailable during the transition. This functionality might be unavailable, not definitely unavailable. Refer to the known issues for more details."
+        }
+      }
+    ],
     "2026-04-02": [
       {
         "kind": "Breaking",

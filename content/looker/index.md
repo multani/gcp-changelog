@@ -49,6 +49,10 @@ This feature is disabled by default.
 
 ### Feature
 
+For [customer-hosted](https://docs.cloud.google.com/looker/docs/glossary#customer-hosted) Looker instances, Looker 26.6 supports MySQL 8.4.X for the Looker backend database. For customer-hosted instances that use MySQL 8.0.X for the Looker backend database, it is recommended that you [update to MySQL 8.4.X](https://docs.cloud.google.com/looker/docs/migrating-looker-backend-db-to-mysql#mysql-84x) as soon as you update your Looker instance to 26.6 or later. **Note:** This item was added on April 6, 2026.
+
+### Feature
+
 Available in preview, Looker (Google Cloud core) now [integrates with Dataplex Universal Catalog](https://docs.cloud.google.com/looker/docs/looker-core-dataplex), providing a unified discovery and management experience for your Looker metadata. This allows you to search for Looker assets like LookML models and dashboards directly within Dataplex, giving you a comprehensive view of your data landscape.
 
 ### Feature

@@ -1,5 +1,14 @@
 # Memorystore for Valkey
 
+## 2026-04-06
+
+### Feature
+
+You can use the [Memorystore for Valkey remote MCP server](https://docs.cloud.google.com/memorystore/docs/valkey/use-memorystore-mcp).
+This server lets you connect to Memorystore for Valkey instances from LLMs, AI
+applications, and AI-enabled development platforms. This feature is available in [Preview](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-03-26
 
 ### Feature

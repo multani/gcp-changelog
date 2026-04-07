@@ -1,5 +1,158 @@
 # Assured Workloads
 
+## 2026-04-03
+
+### Feature
+
+The [Data Boundary for ITAR](https://docs.cloud.google.com/assured-workloads/docs/control-packages/itar)
+supports the following products:
+
+* Generative AI on Vertex AI
+* Vertex AI Batch prediction
+* Vertex AI Online prediction
+
+---
+## 2026-03-31
+
+### Feature
+
+The [Data Boundary for FedRAMP High](https://docs.cloud.google.com/assured-workloads/docs/control-packages#fedramp-high)
+supports the following products:
+
+* Model Armor
+
+### Feature
+
+The [Data Boundary for Impact Level 5 (IL5)](https://docs.cloud.google.com/assured-workloads/docs/control-packages/il5)
+supports the following products:
+
+* Access Context Manager
+* AlloyDB for PostgreSQL
+* Cloud Service Mesh
+* Dataplex Universal Catalog
+* Filestore
+* Google Cloud Armor
+* Google Security Operations SOAR
+* Network Connectivity Center
+
+### Feature
+
+The [Data Boundary for Impact Level 2 (IL2)](https://docs.cloud.google.com/assured-workloads/docs/control-packages/il2)
+supports the following products:
+
+* Model Armor
+
+### Feature
+
+The [Data Boundary for Impact Level 4 (IL4)](https://docs.cloud.google.com/assured-workloads/docs/control-packages/il4)
+supports the following products:
+
+* Access Context Manager
+* AlloyDB for PostgreSQL
+* Cloud Service Mesh
+* Dataplex Universal Catalog
+* Filestore
+* Google Cloud Armor
+* Google Security Operations SOAR
+* Network Connectivity Center
+
+### Feature
+
+The [Data Boundary for FedRAMP Moderate](https://docs.cloud.google.com/assured-workloads/docs/control-packages#fedramp-moderate)
+supports the following products:
+
+* Model Armor
+
+---
+## 2026-03-27
+
+### Feature
+
+The [Data Boundary for IRS 1075](https://docs.cloud.google.com/assured-workloads/docs/control-packages/irs-1075)
+supports the following products:
+
+* AI Protection
+* Artifact Analysis
+* AutoML Tables
+* Backup and DR Service
+* Certificate Manager
+* Cloud Domains
+* Cloud Scheduler
+* Cloud TPU
+* Data Security Posture Management
+* GKE Image streaming
+* Google Cloud Managed Service for Apache Kafka
+* Memorystore for Redis Cluster
+* Security Command Center Premium
+* VM Manager
+* Vertex AI Tuning
+
+### Feature
+
+The [US Data Boundary for Healthcare and Life Sciences](https://docs.cloud.google.com/assured-workloads/docs/control-packages/us-data-boundary-healthcare-life-sciences)
+and [US Data Boundary for Healthcare and Life Sciences with Support](https://docs.cloud.google.com/assured-workloads/docs/control-packages/us-data-boundary-healthcare-life-sciences-support)
+support the following products:
+
+* Access Approval
+* Access Context Manager
+* Access Transparency
+* Agent Assist
+* AlloyDB for PostgreSQL
+* Apigee
+* Application Integration
+* AutoML Tables
+* Backup and DR Service
+* Backup for GKE
+* Certificate Manager
+* Cloud Asset Inventory
+* Cloud DNS
+* Cloud Deploy
+* Cloud HSM
+* Cloud Healthcare API
+* Cloud Monitoring
+* Cloud Run functions
+* Cloud Tasks
+* Dialogflow CX
+* Dataform
+* Dataplex Universal Catalog
+* Document AI
+* External passthrough Network Load Balancer
+* Firestore
+* GKE Hub
+* Generative AI on Vertex AI
+* Google Cloud Armor
+* Identity-Aware Proxy
+* Internal passthrough Network Load Balancer
+* Key Access Justifications
+* Looker (Google Cloud core)
+* Model Armor
+* Network Connectivity Center
+* Persistent Disk
+* Regional external Application Load Balancer
+* Regional external proxy Network Load Balancer
+* Regional internal Application Load Balancer
+* Regional internal proxy Network Load Balancer
+* Secure Source Manager
+* Security Command Center Premium
+* Storage Transfer Service
+* Vertex AI Batch prediction
+* Vertex AI Online prediction
+* Vertex AI Search
+* Vertex AI Training
+* Vertex AI Workbench
+
+### Feature
+
+The [Data Boundary for ITAR](https://docs.cloud.google.com/assured-workloads/docs/control-packages/itar)
+supports the following products:
+
+* AlloyDB for PostgreSQL
+* Bigtable
+* Essential Contacts
+* Resource Manager
+* Secure Source Manager
+
+---
 ## 2025-12-12
 
 ### Feature

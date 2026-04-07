@@ -1,5 +1,14 @@
 # Memorystore for Redis
 
+## 2026-04-06
+
+### Feature
+
+You can use the [Memorystore for Redis remote MCP server](https://docs.cloud.google.com/memorystore/docs/redis/use-memorystore-mcp).
+This server lets you connect to Memorystore for Redis instances from LLMs, AI
+applications, and AI-enabled development platforms. This feature is available in [Preview](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-03-18
 
 ### Feature

@@ -1,5 +1,28 @@
 # Google SecOps SIEM
 
+## 2026-04-06
+
+### Deprecated
+
+**v1 Cloud Storage Feed Types (GCS, S3, SQS, Azure)**
+
+The v1 feed types for `GOOGLE_CLOUD_STORAGE`, `AMAZON_S3`, `AMAZON_SQS`, and `AZURE_BLOBSTORE` are deprecated and will be discontinued on **March 15, 2027**. The new v2 feed types uses the Google Cloud Storage Transfer Service (STS) to provide improved performance, scalability, and reliability.
+
+To ensure continued ingestion, transition your feeds before the March 15, 2027 shutdown date:
+
+* Google SecOps will automatically migrate your feeds using v1 feed types to v2 in waves starting from April 6, 2026. To facilitate this, some feeds may require additional IP allowlist or service account permission updates. You can also self-migrate by replacing your existing data feeds with new feeds using v2 feed types.
+
+You can also self-migrate by creating new feeds using v2 feed types to substitute your existing feeds using v1 feed types by following the steps documented in our [feed configuration guides](https://docs.cloud.google.com/chronicle/docs/reference/feed-management-api#source-types) before March 15, 2027.
+
+**Key Dates:**
+
+* **April 6, 2026:** Transition begins; auto-migration available.
+* **September 15, 2026:** Support for v1 feeds is discontinued.
+* **March 15, 2027:** v1 feeds reach End of Life (EOL) and will stop returning data.
+
+For more information, see [Feature deprecations](https://docs.cloud.google.com/chronicle/docs/deprecations).
+
+---
 ## 2026-04-03
 
 ### Change
@@ -41,6 +64,7 @@ The following supported default parsers have been updated. Each parser is listed
 * Cisco Umbrella Audit (`CISCO_UMBRELLA_AUDIT`)
 * Cisco Umbrella DNS (`UMBRELLA_DNS`)
 * Cisco WSA (`CISCO_WSA`)
+* Cloud DNS (`GCP_DNS`)
 * Cloud SQL (`GCP_CLOUDSQL`)
 * Cloudflare (`CLOUDFLARE`)
 * Cloudflare Warp (`CLOUDFLARE_WARP`)
@@ -93,7 +117,6 @@ The following supported default parsers have been updated. Each parser is listed
 * NetApp ONTAP (`NETAPP_ONTAP`)
 * Netskope V2 (`NETSKOPE_ALERT_V2`)
 * Netskope Web Proxy (`NETSKOPE_WEBPROXY`)
-* None (`GCP_DNS`)
 * Obsidian (`OBSIDIAN`)
 * Office 365 (`OFFICE_365`)
 * Oort Security Tool (`OORT`)
@@ -180,11 +203,11 @@ Learn more about how to [create multi-stage queries with YARA-L 2.0](https://doc
 
 ### Feature
 
-**Credential validation for third-party API connectors**
+**Credential validation for third-party API feed types**
 
 Credential validation is now available for all 49 third-party API connectors.
 
-When you create a feed using a third-party API connector, Google SecOps now automatically validates the provided credentials. This ensures that if credentials are incorrect:
+When you create a feed using a third-party API feed type, Google SecOps now automatically validates the provided credentials. This ensures that if credentials are incorrect:
 
 * **Immediate feedback**: The web interface displays an error message explaining the configuration failure.
 * **Prevention of broken feeds**: The system blocks the creation of the feed until valid credentials are provided, preventing the creation of broken feeds that fail to ingest data later.

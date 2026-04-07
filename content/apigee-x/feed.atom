@@ -2,9 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee X</title>
   <subtitle>Changelog for Google Cloud product: Apigee X</subtitle>
-  <updated>2026-04-02T00:00:00+00:00</updated>
+  <updated>2026-04-06T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-x</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-x/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-04-06:change:0</id>
+    <published>2026-04-06T00:00:00+00:00</published>
+    <updated>2026-04-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On April 6th, 2026, we released an updated version of Apigee.</p>
+<p>This change introduces the new <code>apigee.coreServiceAgent</code> IAM role for
+Apigee. <strong>Effective immediately, use <code>apigee.coreServiceAgent</code> instead of the
+<code>apigee.serviceAgent</code> role.</strong></p>
+<p>For information on the new role, see
+<a href="https://docs.cloud.google.com/iam/docs/roles-permissions/apigee#apigee.coreServiceAgent"><code>apigee.coreServiceAgent</code></a>.</p>]]></content>
+    <summary>Apigee has released an updated version with a new IAM role, `apigee.coreServiceAgent`. Effective immediately, this new role should be used in place of the `apigee.serviceAgent` role.</summary>
+    <title>Change: Apigee IAM Role Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-04-06:fixed:1</id>
+    <published>2026-04-06T00:00:00+00:00</published>
+    <updated>2026-04-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Correction to <a href="#April_02_2026">April 2, 2026 release note: Deployment disruption for Apigee Drupal Portal via Google Cloud Marketplace</a></strong></p>
+<p>For the deployment disruption announced on April 2, the announcement noted that deployment and management functionality using Google Cloud Deployment Manager would definitely be unavailable during the transition. This statement is incorrect. The functionality <em>might</em> be unavailable.</p>
+<p>See the <a href="https://docs.cloud.google.com/apigee/docs/release/known-issues#495305258">Known issue</a> for more information.</p>]]></content>
+    <summary>A previous announcement incorrectly stated that deployment and management functionality for the Apigee Drupal Portal would be unavailable during the transition. This functionality might be unavailable, not definitely unavailable. Refer to the known issues for more details.</summary>
+    <title>Fixed: Apigee Drupal Portal Deployment Correction</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

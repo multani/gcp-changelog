@@ -1,5 +1,20 @@
 # Pub/Sub
 
+## 2026-04-06
+
+### Feature
+
+Pub/Sub now offers the AI Inference Single Method Transform (SMT). This SMT lets
+you get inferences on Pub/Sub messages from Vertex AI models. The model's
+inferences are added to each message, making them available for downstream
+processing along with the original message data.
+
+The change is being rolled out in a phased manner over the rest of the week. For
+more information, see [AI Inference SMT](https://docs.cloud.google.com/pubsub/docs/smts/ai-inference-smt).
+This feature is
+[generally available](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-03-13
 
 ### Feature

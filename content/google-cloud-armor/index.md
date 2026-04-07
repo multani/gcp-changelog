@@ -1,5 +1,15 @@
 # Google Cloud Armor
 
+## 2026-04-06
+
+### Feature
+
+Cloud Armor preconfigured rules support [ModSecurity Core Rule Set (CRS)
+4.22](https://github.com/coreruleset/coreruleset/releases/tag/v4.22.0)
+as a rule source. For more information, see [Tuning Google Cloud Armor WAF
+rules](https://docs.cloud.google.com/armor/docs/rule-tuning). This feature is available in Preview.
+
+---
 ## 2026-03-31
 
 ### Feature

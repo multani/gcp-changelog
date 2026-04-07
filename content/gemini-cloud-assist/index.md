@@ -2,10 +2,6 @@
 
 ## 2026-04-06
 
-### Deprecated
-
-
-
 ### Custom IAM roles permission update for Gemini Cloud Assist
 
 On April 8, 2026, Gemini Cloud Assist is replacing the

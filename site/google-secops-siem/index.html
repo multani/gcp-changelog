@@ -2401,6 +2401,23 @@
 
 <h1 id="google-secops-siem">Google SecOps SIEM</h1>
 <h2 id="2026-04-07">2026-04-07</h2>
+<h3 id="change">Change</h3>
+<p><strong>Search query editor enhancements</strong></p>
+<p>Google SecOps has enhanced the search query editor to provide intelligent
+auto-suggestions and improved error handling.</p>
+<ul>
+<li><strong>Auto-suggestions</strong>: The query editor now provides context-aware auto-suggestions
+  for fields, operators, and valid values as you type.</li>
+<li><strong>Error handling</strong>: The editor now highlights syntax errors with a red squiggly
+  line and displays a tooltip with the specific error description when you hover
+  over it. Additionally, runtime errors now display persistently in the <strong>Results panel</strong>
+  to assist with troubleshooting.</li>
+</ul>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/chronicle/docs/investigation/udm-search#search_autosuggestions">Use auto-suggestions to build queries</a>.</p>
+<p><strong>Note:</strong> This change follows a phased rollout from <strong>April 07, 2026</strong>, to <strong>April 10, 2026</strong>.
+Reach out to support if you do not see the new limits applied to your environment
+after <strong>April 10, 2026</strong>.</p>
 <h3 id="feature">Feature</h3>
 <p><strong>Health Hub</strong></p>
 <p>This feature is currently in Preview.</p>
@@ -2415,7 +2432,7 @@
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/reports/data-health-monitoring-and-troubleshooting-dashboard">Use the Health Hub</a>.</p>
 <hr />
 <h2 id="2026-04-06">2026-04-06</h2>
-<h3 id="change">Change</h3>
+<h3 id="change_1">Change</h3>
 <p><strong>Updates to search query limits and error messaging</strong></p>
 <p>Google SecOps has updated search query limits for programmatic and web interface
 access:</p>
@@ -2445,7 +2462,7 @@ Contact Support if you don't see the new limits applied to your environment afte
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/deprecations">Feature deprecations</a>.</p>
 <hr />
 <h2 id="2026-04-03">2026-04-03</h2>
-<h3 id="change_1">Change</h3>
+<h3 id="change_2">Change</h3>
 <p>Google Security Operations has updated the list of <a href="https://docs.cloud.google.com/chronicle/docs/ingestion/parser-list/supported-default-parsers">supported default parsers</a>. Parsers are updated gradually, so it might take one to four days before you see the changes reflected in your region.</p>
 <p>The following supported default parsers have been updated. Each parser is listed by product name and <code>log_type</code> value, where applicable. This list includes both released default parsers and pending parser updates.</p>
 <ul>
@@ -2721,7 +2738,7 @@ Google SecOps Data Pipeline APIs.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/ingestion/data-processing-pipeline">Set up and manage data processing pipelines</a>.</p>
 <hr />
 <h2 id="2026-03-05">2026-03-05</h2>
-<h3 id="change_2">Change</h3>
+<h3 id="change_3">Change</h3>
 <p>Google SecOps has updated the list of supported default parsers. Parsers are updated gradually, so it might take one to four days before you see the changes reflected in your region. For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/ingestion/parser-list/supported-default-parsers">Supported log types and default parsers</a>.</p>
 <p>The following supported default parsers have been updated. Each parser is listed by product name and <code>log_type</code> value, where applicable. This list includes both released default parsers and pending parser updates.</p>
 <ul>
@@ -3014,12 +3031,12 @@ that protect the resources and data of services that you explicitly specify. For
 </ul>
 <hr />
 <h2 id="2026-02-22">2026-02-22</h2>
-<h3 id="change_3">Change</h3>
+<h3 id="change_4">Change</h3>
 <p><strong>Publisher Agent Version 2.6.4</strong> removes support for <strong>Python 3.7</strong> from the remote agent.</p>
 <h3 id="announcement_6">Announcement</h3>
 <p>Release 6.3.77 is being rolled out to the first phase of regions as listed <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
 <p>This release contains the following changes:</p>
-<h3 id="change_4">Change</h3>
+<h3 id="change_5">Change</h3>
 <p><strong>Publisher Agent Version 2.6.4</strong> removes support for <strong>Python 3.7</strong> from the remote agent.</p>
 <hr />
 <h2 id="2026-02-21">2026-02-21</h2>
@@ -3039,7 +3056,7 @@ that protect the resources and data of services that you explicitly specify. For
 </ul>
 <hr />
 <h2 id="2026-02-17">2026-02-17</h2>
-<h3 id="change_5">Change</h3>
+<h3 id="change_6">Change</h3>
 <p>After March 17, 2026, when you enable Google SecOps, the Google SecOps MCP server is automatically enabled.</p>
 <h3 id="deprecated_1">Deprecated</h3>
 <p>Control of MCP use with organization policies is deprecated. After March 17, 2026, organization policies that use the <code>gcp.managed.allowedMCPServices</code> constraint won't work, and you can control MCP use with IAM deny policies. For more information about controlling MCP use, see <a href="https://docs.cloud.google.com/mcp/control-mcp-use-iam">Control MCP use with IAM</a>.</p>
@@ -3205,7 +3222,7 @@ intelligence features.</p>
 February 02, 2026 to February 08, 2026.</p>
 <hr />
 <h2 id="2026-02-02">2026-02-02</h2>
-<h3 id="change_6">Change</h3>
+<h3 id="change_7">Change</h3>
 <p>Google SecOps has updated the list of supported default parsers. Updates
 propagate gradually; changes typically appear in your region within one to four
 business days. For more information, see
@@ -3486,7 +3503,7 @@ released default parsers and pending parser updates.</p>
 <li>Witness AI Control (<code>WITNESS_AI_CONTROL</code>)</li>
 <li>Zendesk Advanced Data Privacy and Protection (<code>ZENDESK_ADPP</code>)</li>
 </ul>
-<h3 id="change_7">Change</h3>
+<h3 id="change_8">Change</h3>
 <p>Google SecOps has updated the list of supported default parsers. Updates
 propagate gradually; changes typically appear in your region within one to four
 business days. For more information, see
@@ -3769,11 +3786,11 @@ released default parsers and pending parser updates.</p>
 </ul>
 <hr />
 <h2 id="2026-02-01">2026-02-01</h2>
-<h3 id="change_8">Change</h3>
+<h3 id="change_9">Change</h3>
 <p>The <strong>Case Federation</strong> feature is no longer dependent on the <strong>Case Federation</strong> integration in the primary platform.</p>
 <p>The primary platform sync job is now disabled. Do not attempt to re-enable it.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/environments/case-federation-secops">Set up federated case access for SecOps</a>.</p>
-<h3 id="change_9">Change</h3>
+<h3 id="change_10">Change</h3>
 <p>The <strong>Case Federation</strong> feature is no longer dependent on the <strong>Case Federation</strong> integration in the primary platform.</p>
 <p>The primary platform sync job is now disabled. Do not attempt to re-enable it.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/environments/case-federation">Set up case federation access for SOAR</a>.</p>
@@ -4007,10 +4024,10 @@ supported for event searches, and results remain limited to a maximum of 1M even
 <h3 id="announcement_32">Announcement</h3>
 <p>Release 6.3.71 is being rolled out to the first phase of regions as listed <a href="https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release">here</a>.</p>
 <p>This release contains the following changes:</p>
-<h3 id="change_10">Change</h3>
+<h3 id="change_11">Change</h3>
 <p><strong>Terminate Playbook capability</strong></p>
 <p>You can now manually terminate a running playbook directly from the Playbook Viewer in the Case Overview. This provides a mechanism to immediately end execution if a loop encounters unwanted or excessive iterations.</p>
-<h3 id="change_11">Change</h3>
+<h3 id="change_12">Change</h3>
 <p><strong>Increased iteration and step limits for Playbook Loops</strong></p>
 <p>To support larger automation requirements, the maximum number of iterations for a single loop has been increased to 1,000, and the number of supported steps within a loop has been increased to 100.</p>
 <h3 id="announcement_33">Announcement</h3>
@@ -4023,12 +4040,12 @@ For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/
 <p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#December_14_2025">Release 6.3.70</a> is now available for all regions.</p>
 <hr />
 <h2 id="2026-01-07">2026-01-07</h2>
-<h3 id="change_12">Change</h3>
+<h3 id="change_13">Change</h3>
 <p><strong>Expanded capabilities for Gemini in SecOps</strong></p>
 <p>You can now use the Gemini assistant in Google SecOps to answer questions beyond the scope of security or the product. You can integrate the full power of Gemini (for example, general knowledge, coding, and data analysis) without switching tabs or leaving your workflow.</p>
 <p>For more information, see
 <a href="https://docs.cloud.google.com/chronicle/docs/secops/gemini-chronicle">Gemini in Google SecOps</a>.</p>
-<h3 id="change_13">Change</h3>
+<h3 id="change_14">Change</h3>
 <p><strong>Expanded capabilities for Gemini in SecOps</strong></p>
 <p>You can now use the Gemini assistant in Google SecOps to answer questions beyond the scope of security or the product. You can integrate the full power of Gemini (for example, general knowledge, coding, and data analysis) without switching tabs or leaving your workflow.</p>
 <p>For more information, see
@@ -4133,7 +4150,7 @@ query syntax.</p>
 <p><a href="https://docs.cloud.google.com/chronicle/docs/soar/release-notes#November_16_2025">Release 6.3.68</a> is now available for all regions.</p>
 <hr />
 <h2 id="2025-12-03">2025-12-03</h2>
-<h3 id="change_14">Change</h3>
+<h3 id="change_15">Change</h3>
 <p>Google SecOps has updated the list of supported default parsers. Parsers are updated gradually, so it might take one to four days before you see the changes reflected in your region.</p>
 <p>The following supported default parsers have been updated. Each parser is listed by product name and <code>log_type</code> value, where applicable. This list includes both released default parsers and pending parser updates.</p>
 <ul>
@@ -4452,7 +4469,7 @@ query syntax.</p>
 <li>Zimbra Mail (<code>ZIMBRA_MAIL</code>)</li>
 <li>Zscaler Email DLP (<code>ZSCALER_EMAIL_DLP</code>)</li>
 </ul>
-<h3 id="change_15">Change</h3>
+<h3 id="change_16">Change</h3>
 <p>Google SecOps has updated the list of supported default parsers. Parsers are updated gradually, so it might take one to four days before you see the changes reflected in your region.</p>
 <p>The following supported default parsers have been updated. Each parser is listed by product name and <code>log_type</code> value, where applicable. This list includes both released default parsers and pending parser updates.</p>
 <ul>

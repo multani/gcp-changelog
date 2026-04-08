@@ -2,6 +2,27 @@
 
 ## 2026-04-07
 
+### Change
+
+**Search query editor enhancements**
+
+Google SecOps has enhanced the search query editor to provide intelligent
+auto-suggestions and improved error handling.
+
+* **Auto-suggestions**: The query editor now provides context-aware auto-suggestions
+  for fields, operators, and valid values as you type.
+* **Error handling**: The editor now highlights syntax errors with a red squiggly
+  line and displays a tooltip with the specific error description when you hover
+  over it. Additionally, runtime errors now display persistently in the **Results panel**
+  to assist with troubleshooting.
+
+For more information, see
+[Use auto-suggestions to build queries](https://docs.cloud.google.com/chronicle/docs/investigation/udm-search#search_autosuggestions).
+
+**Note:** This change follows a phased rollout from **April 07, 2026**, to **April 10, 2026**.
+Reach out to support if you do not see the new limits applied to your environment
+after **April 10, 2026**.
+
 ### Feature
 
 **Health Hub**

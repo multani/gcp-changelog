@@ -1,5 +1,13 @@
 # Artifact Registry
 
+## 2026-04-06
+
+### Feature
+
+You can [manually prewarm images](https://docs.cloud.google.com/artifact-registry/docs/manage/prewarm-images)
+in Artifact Registry to reduce the cold-start latency for deployments. This feature is only available using the API.
+
+---
 ## 2026-01-21
 
 ### Feature

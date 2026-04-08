@@ -1,5 +1,25 @@
 # Google SecOps SIEM
 
+## 2026-04-07
+
+### Feature
+
+**Health Hub**
+
+This feature is currently in Preview.
+
+The **Health Hub** is the central location in Google Security Operations for you to monitor the status and health of all configured data sources. The **Health Hub** provides crucial information on data sources and log types, offering the context needed to diagnose and remediate data pipeline issues.
+
+The **Health Hub** includes information about the following:
+
+* Ingestion volumes and ingestion health.
+* Parsing volumes from raw logs to [Unified Data Model (UDM) events](https://docs.cloud.google.com/chronicle/docs/event-processing/udm-overview).
+* Context and links to interfaces with additional relevant information and functionality.
+* Irregular and failed sources and log types.
+
+For more information, see [Use the Health Hub](https://docs.cloud.google.com/chronicle/docs/reports/data-health-monitoring-and-troubleshooting-dashboard).
+
+---
 ## 2026-04-06
 
 ### Change

@@ -1,6 +1,16 @@
 {
   "name": "Dataflow",
   "entries": {
+    "2026-04-07": [
+      {
+        "kind": "Feature",
+        "content": "When you use `min_ram` or `cpu_count` resource hints for pipeline steps that don't require accelerators, Auto VM Selection (Instance Flexibility) is enabled automatically. With Auto VM Selection, workers are provisioned from a curated list of machine types that meet your RAM and CPU requirements. For more information, see [Auto VM Selection for worker machine types](https://docs.cloud.google.com/dataflow/docs/guides/right-fitting#auto_vm_selection).",
+        "summary": {
+          "title": "Auto VM Selection for Pipeline Steps",
+          "summary": "Auto VM Selection is now automatically enabled for pipeline steps using `min_ram` or `cpu_count` resource hints, provided no accelerators are required. This feature provisions workers from a curated list of suitable machine types, optimizing resource allocation."
+        }
+      }
+    ],
     "2026-02-27": [
       {
         "kind": "Feature",

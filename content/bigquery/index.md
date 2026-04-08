@@ -1,5 +1,31 @@
 # BigQuery
 
+## 2026-04-07
+
+### Feature
+
+The BigQuery Data Transfer Service now supports incremental data transfers for
+the following data source connectors:
+
+* [MySQL](https://docs.cloud.google.com/bigquery/docs/mysql-transfer)
+* [Oracle](https://docs.cloud.google.com/bigquery/docs/oracle-transfer)
+* [PostgreSQL](https://docs.cloud.google.com/bigquery/docs/postgresql-transfer)
+* [ServiceNow](https://docs.cloud.google.com/bigquery/docs/servicenow-transfer)
+
+These features are supported in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+You can now use the built-in text embedding model `embeddinggemma-300m` in the
+[`AI.EMBED`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-embed)
+and
+[`AI.SIMILARITY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-similarity)
+functions. This model uses your BigQuery slots to generate embeddings at scale.
+This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-04-06
 
 ### Feature

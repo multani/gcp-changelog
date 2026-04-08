@@ -1,5 +1,70 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-04-07
+
+### Feature
+
+**Repeat contacts data added to advanced reporting dashboards**
+
+Repeat contacts data is now available in the following advanced reporting
+dashboards:
+
+* **Real-time Queue Monitoring - Calls** and **Real-time Queue Monitoring -
+  Chats**: new **Total Repeat Contacts** tile. For more information, see
+  [Queue monitoring
+  dashboards](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-real-time-queue-monitor).
+* **All Interactions - Calls** and **All Interactions - Chats**: new **Repeat
+  Contact** column in the **Call Metric Detail** and **Chat Metric Detail**
+  tables.
+* **Real-time Calls - Calls Connected** and **Real-time Chats - Chats
+  Connected**: new **Repeat Contact** column in the **Connected Calls** and
+  **Connected Chats** tables.
+
+### Announcement
+
+**Advance reporting dashboards 4.12**
+
+We've released version 4.12 of the advanced reporting dashboards.
+
+### Feature
+
+**New Total Queued Answered metric in the Chat Queue Metrics Explore**
+
+The **Chat Queue Metrics** Explore now includes the **Total Queued Answered**
+metric. This metric provides a precise count of chats answered from the queue,
+providing accurate Service Level Agreement (SLA) and answer rate calculations
+where the standard "handled" metric might not apply—for example, if a
+chat is answered and then immediately disconnected.
+
+### Fixed
+
+The following issues were addressed in this release:
+
+* Fixed an issue where dashboard names and favorite buttons were missing,
+  preventing users from renaming dashboards and marking them as favorites.
+
+* Fixed an issue where fields for hourly and 30-minute intervals in call queue
+  metrics didn't display detailed data over long date ranges.
+* Fixed an issue where the **Teams Filter** filter displayed incorrect data.
+* Fixed an issue where calls that started at a specific time didn't appear in
+  their corresponding time windows.
+
+* Fixed an issue in the Agent Activity dashboard where the **Created By**
+  column attributed status changes to an agent when an administrator performed
+  the changes.
+* Fixed an issue where historical call and chat metrics displayed incorrect
+  timestamps.
+* On the **Real-time Queue Monitoring - Calls** and **Real-time Queue
+  Monitoring - Chats** dashboards, in the **Historical Data** tables, the
+  **Avg CSAT** column was renamed **CSAT**.
+* Fixed an issue on the **Channel Interval - Calls** and **Channel Interval -
+  Chats** dashboards where drill-down views in the trend tiles displayed
+  incorrect information or were empty.
+* Fixed an issue in the **Queue Group Performance - All** dashboard where blue
+  highlighting wasn't applied to populated fields in the **Queue Group
+  Performance Calls** and **Queue Group Performance Chats** tables.
+
+---
 ## 2026-04-03
 
 ### Feature

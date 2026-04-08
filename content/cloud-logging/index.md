@@ -1,5 +1,16 @@
 # Cloud Logging
 
+## 2026-04-07
+
+### Feature
+
+You can now ingest OTLP-formatted logs into Cloud Logging by using an
+OpenTelemetry Collector, an OTLP exporter, and the Telemetry API. For more
+information, see
+[OTLP log ingestion overview](https://docs.cloud.google.com/stackdriver/docs/otlp-logs/overview).
+The Telemetry API for log ingestion is in [Preview](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-04-06
 
 ### Libraries

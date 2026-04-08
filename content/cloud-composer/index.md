@@ -1,5 +1,31 @@
 # Cloud Composer
 
+## 2026-04-01
+
+### Change
+
+New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)
+are available in Cloud Composer 2:
+
+* [composer-2.16.10-airflow-2.11.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-10-airflow-2-11-1)
+* [composer-2.16.10-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-10-airflow-2-10-5) (default)
+* [composer-2.16.10-airflow-2.9.3](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-10-airflow-2-9-3)
+
+### Feature
+
+**Airflow 2.11.1 is available** in Cloud Composer 3 and Cloud Composer 2.
+
+### Change
+
+New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)
+are available in Cloud Composer 3:
+
+* [composer-3-airflow-2.11.1-build.0](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-0)
+* [composer-3-airflow-3.1.7-build.4](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-7-build-4)
+* [composer-3-airflow-2.10.5-build.33](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-33) (default)
+* [composer-3-airflow-2.9.3-build.53](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-53)
+
+---
 ## 2026-03-27
 
 ### Announcement

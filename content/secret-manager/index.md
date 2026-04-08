@@ -1,5 +1,17 @@
 # Secret Manager
 
+## 2026-04-07
+
+### Feature
+
+Parameter Manager supports the `latest` identifier, which lets you fetch the
+most recent parameter value without specifying a version ID. When you use the
+gcloud CLI or REST API, you can use `latest` to retrieve the most recent version
+of a parameter.
+
+For more information, see [Access a parameter version](https://docs.cloud.google.com/secret-manager/parameter-manager/docs/render-parameter-version).
+
+---
 ## 2026-02-06
 
 ### Feature

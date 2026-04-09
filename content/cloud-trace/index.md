@@ -1,5 +1,23 @@
 # Cloud Trace
 
+## 2026-04-08
+
+### Feature
+
+Google Cloud CLI lets you configure trace scopes, manage observability buckets,
+and set default observability settings. These features are in Public Preview.
+For more information, see the following documents:
+
+* Configure trace scopes by using the Google Cloud console, the Google Cloud CLI,
+  Terraform, or the Observability API. For more information, see [Create and
+  manage trace scopes](https://docs.cloud.google.com/trace/docs/trace-scope/create-and-manage).
+* Manage trace storage by using the Google Cloud CLI or the Observability API.
+  For more information, see [Manage trace storage](https://docs.cloud.google.com/trace/docs/storage-manage).
+* Configure default settings by using the Google Cloud CLI, Terraform, or the
+  Observability API. For more information, see
+  [Set defaults for observability buckets](https://docs.cloud.google.com/stackdriver/docs/observability/set-defaults-for-observability-buckets).
+
+---
 ## 2026-03-30
 
 ### Change

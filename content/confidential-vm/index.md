@@ -1,5 +1,18 @@
 # Confidential VM
 
+## 2026-04-07
+
+### Feature
+
+[Live migration](https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/troubleshoot-live-migration)
+is generally available [(GA)](https://cloud.google.com/products#product-launch-stages)
+on Confidential VM instances that meet the following configuration criteria:
+
+* A C3D machine type
+* AMD SEV Confidential Computing technology
+* An operating system image that supports live migration
+
+---
 ## 2026-02-10
 
 ### Security

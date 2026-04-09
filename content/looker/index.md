@@ -1,5 +1,21 @@
 # Looker
 
+## 2026-04-07
+
+### Feature
+
+The **Table Visualization Improvements** preview feature is now available, and is disabled by default.
+
+When this preview feature is enabled, you can use the following features for [table visualizations](https://docs.cloud.google.com/looker/docs/table-options):
+
+* [Pagination](https://docs.cloud.google.com/looker/docs/table-options#pagination)
+* [Show/Hide Table Headers](https://docs.cloud.google.com/looker/docs/table-options#row_and_header_formatting)
+* [Table Borders](https://docs.cloud.google.com/looker/docs/table-options#row_and_header_formatting)
+* [Cell Highlighting](https://docs.cloud.google.com/looker/docs/table-options#cell_highlighting)
+* [Conditional formatting for string fields](https://docs.cloud.google.com/looker/docs/table-options#enable_conditional_formatting)
+  + Note: When [Cell Highlighting](https://docs.cloud.google.com/looker/docs/table-options#cell_highlighting) is enabled, conditional formatting is not available.
+
+---
 ## 2026-03-30
 
 ### Feature

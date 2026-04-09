@@ -1,18 +1,28 @@
 # Gemini Enterprise
 
+## 2026-04-07
+
+### Feature
+
+**Gemini Enterprise: Dropbox federated data store**
+
+The Dropbox federated data store is generally available (GA) in Gemini Enterprise.
+
+For more information, see [Set up a Dropbox data store](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/dropbox/data-store).
+
+---
 ## 2026-04-03
 
 ### Feature
 
-**Gemini Enterprise: Jira and Confluence federated connectors**
+**Gemini Enterprise: Jira and Confluence federated data stores**
 
-The Jira and Confluence federated connectors are generally available (GA)
+The Jira and Confluence federated data stores are generally available (GA)
 in Gemini Enterprise.
 
 For more information, see:
-
-* [Jira Cloud](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/jira-cloud)
-* [Confluence Cloud](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/confluence-cloud)
+\* [Jira Cloud](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/jira-cloud)
+\* [Confluence Cloud](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/confluence-cloud)
 
 ---
 ## 2026-04-02

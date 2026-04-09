@@ -1,5 +1,22 @@
 # BigQuery
 
+## 2026-04-08
+
+### Feature
+
+The BigQuery Data Transfer Service now supports [incremental data transfers](https://docs.cloud.google.com/bigquery/docs/sqlserver-transfer#full_or_incremental_transfers)
+when transferring data from Microsoft SQL Server to BigQuery. This feature is supported in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+You can now use the
+[`@@session_id` system variable](https://docs.cloud.google.com/bigquery/docs/reference/system-variables) with
+SQL user-defined functions, table functions, and logical views. This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-04-07
 
 ### Feature

@@ -1,5 +1,358 @@
 # Container Optimized OS
 
+## 2026-04-06
+
+### Change
+
+
+
+### cos-117-18613-534-62
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.123](https://cos.googlesource.com/third_party/kernel/+/adc0dc9357977720199f700bbea8912f61c934a9 ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.534.62/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-23271 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38704 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23413 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23414 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2024-43826 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68206 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23412 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40135 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23138 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39764 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23050 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23270 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23245 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23277 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23004 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68239 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23398 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23340 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39748 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71161 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23397 in the Linux kernel.
+
+### Change
+
+
+
+### cos-113-18244-582-62
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.161](https://cos.googlesource.com/third_party/kernel/+/bd30b98f1ad2d619c26425f9698025613037e170 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.582.62/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-23381 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-9df9578 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23398 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38192 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68239 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23271 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23397 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71161 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23100 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23245 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68206 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68265 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23277 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40135 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23113 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23270 in the Linux kernel.
+
+### Change
+
+
+
+### cos-121-18867-381-63
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.122](https://cos.googlesource.com/third_party/kernel/+/881eed6735256ed08c042b5ae37423670343957b ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.381.63/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-23138 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68239 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23398 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23270 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68206 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23397 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23388 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23004 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23391 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40135 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23271 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23050 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71161 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23245 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23277 in the Linux kernel.
+
+### Change
+
+
+
+### cos-beta-129-19506-0-121
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.67](https://cos.googlesource.com/third_party/kernel/+/3c72f15648aedcf11689537f9545addd4377da5f ) | v27.5.1 | v2.2.2 | [See List](https://storage.googleapis.com/cos-tools/19506.0.121/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+
+
+### cos-dev-133-19681-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.77](https://cos.googlesource.com/third_party/kernel/+/350c271d1b528bc4fe572d2cadd2a16c3a758e41 ) | v27.5.1 | v2.2.1 | [See List](https://storage.googleapis.com/cos-tools/19681.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Upgraded sys-apps/iproute2 to version 6.18.0.
+
+### Security
+
+Fixed KCTF-7cb9a23 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23270 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2024-14027 in the Linux kernel.
+
+### Fixed
+
+Fixed a kernel panic in virtio\_pci teardown when virtually queues are conditionally skipped.
+
+### Security
+
+Fixed CVE-2026-33997 and CVE-2026-34040 in Docker.
+
+### Change
+
+Upgraded sys-apps/iproute2 to version 6.18.0.
+
+### Security
+
+Fixed KCTF-7cb9a23 in the Linux kernel.
+
+### Change
+
+Fixes a kernel panic in virtio\_pci teardown when virtually queues are conditionally skipped.
+
+### Change
+
+
+
+### cos-125-19216-220-117
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.68](https://cos.googlesource.com/third_party/kernel/+/f66bf9eb15aea83cae027143806b6af01481c296 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.220.117/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Made it so that /mnt/disks is mounted as noexec for cchost boards.
+
+### Fixed
+
+Fixed a kernel panic in virtio\_pci teardown when virtually queues are conditionally skipped.
+
+### Security
+
+Fixed CVE-2026-23304 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23270 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-7cb9a23 in the Linux kernel.
+
+### Change
+
+Made it so that /dev/hugepages is mounted as noexec for cchost boards.
+
+### Change
+
+Upgraded sys-apps/iproute2 to version 6.18.0.
+
+### Security
+
+Fixed CVE-2026-33997 and CVE-2026-34040 in Docker.
+
+### Change
+
+Made it so that /run is mounted as noexec for cchost boards.
+
+### Security
+
+Fixed CVE-2024-14027 in the Linux kernel.
+
+---
 ## 2026-04-01
 
 ### Change

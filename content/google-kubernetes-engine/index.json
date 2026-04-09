@@ -1,6 +1,32 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2026-04-08": [
+      {
+        "kind": "Feature",
+        "content": "[Gateway API v1.5](https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.5.0)\nis supported in GKE version 1.35.2-gke.1842000 and later.\nThe GKE Gateway controller passes core conformance tests for\nthis version of the Gateway API.",
+        "summary": {
+          "title": "Gateway API v1.5 Support",
+          "summary": "The Gateway API v1.5 is now supported in GKE versions 1.35.2-gke.1842000 and later. The GKE Gateway controller successfully passes core conformance tests for this API version, ensuring compatibility and reliability for your gateway configurations."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "GKE managed DRANET is now Generally Available (GA)\nfor GKE version 1.35.2-gke.1842000 or later.\n\nGKE DRANET is a managed feature that implements the\nKubernetes Dynamic Resource Allocation (DRA) API for high-performance\nnetworking. The GA release expands support beyond the preview phase to\ninclude the following hardware:\n\n* NVIDIA GPU Instances: Support for instances starting from A3 Ultra, including A4, A4X, and A4X Max.\n* Cloud TPU Instances: Support for TPU v6e and TPU v7x.\n\nFor more information, see\n[Allocate network resources by using GKE managed DRANET](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/allocate-network-resources-dra).",
+        "summary": {
+          "title": "GKE Managed DRANET Now Generally Available",
+          "summary": "GKE managed DRANET, a feature for high-performance networking using the Kubernetes DRA API, is now Generally Available for GKE version 1.35.2-gke.1842000 and later. This release expands support to include NVIDIA GPU Instances (A3 Ultra and later) and Cloud TPU Instances (TPU v6e and v7x)."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "The feature announced on [November 7, 2025](https://docs.cloud.google.com/kubernetes-engine/docs/release-notes#November_07_2025),\nproviding faster log processing, has been rolled back. The rollback is due\nto an issue in an underlying dependency. The described performance\nimprovements are not currently in effect.",
+        "summary": {
+          "title": "Log processing feature rolled back",
+          "summary": "A feature designed to speed up log processing has been rolled back due to an issue with a dependency. The intended performance improvements are not currently active."
+        }
+      }
+    ],
     "2026-04-02": [
       {
         "kind": "Change",

@@ -1,5 +1,31 @@
 # Google SecOps SIEM
 
+## 2026-04-08
+
+### Announcement
+
+**Emerging Threats Center general availability**
+
+The **Emerging Threats Center** is now in General Availability (GA) and includes
+the following new features and enhancements:
+
+* **Expanded campaign filtering:** Filter the Emerging Threats feed by new
+  categories, including associated malware, tools, and threat actors.
+* **MITRE ATT&CK matrix visualization:** Evaluate your detection rule coverage
+  for specific tactics, techniques, and procedures (TTPs) using the new
+  visualization matrix in the **Associated Rules** panel. You can customize
+  heat map metrics, filter the matrix by rule or alerting status, and view
+  detailed context for specific sub-techniques.
+* **Enhanced Entity context panel:** Investigate an indicator of compromise (IoC)
+  using the **Entity context** panel to view its point-in-time state and related
+  cases.
+* **GTI-associated IoC categories:** Filter GTI-associated IoCs by specific
+  categories, including **Files**, **URLs**, **Domains**, and **IPs**.
+
+For more information, see [Emerging Threats Center overview](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats)
+and [Emerging Threats Center detail view](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats-detailed-view).
+
+---
 ## 2026-04-07
 
 ### Change

@@ -1,5 +1,21 @@
 # Gemini Cloud Assist
 
+## 2026-04-08
+
+### Breaking
+
+
+
+### Custom IAM roles permission update for Gemini Cloud Assist
+
+Gemini Cloud Assist has replaced the `cloudaicompanion.instances.completeTask`
+IAM permission with `geminicloudassist.agents.invoke`. If you have access to
+Gemini Cloud Assist through a custom IAM role, you must update the role to
+continue having access. For more information, see the
+[deprecated IAM permissions](https://docs.cloud.google.com/cloud-assist/deprecations/permissions)
+page.
+
+---
 ## 2026-04-06
 
 ### Custom IAM roles permission update for Gemini Cloud Assist

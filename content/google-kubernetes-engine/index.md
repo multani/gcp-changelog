@@ -1,5 +1,38 @@
 # Google Kubernetes Engine
 
+## 2026-04-08
+
+### Feature
+
+[Gateway API v1.5](https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.5.0)
+is supported in GKE version 1.35.2-gke.1842000 and later.
+The GKE Gateway controller passes core conformance tests for
+this version of the Gateway API.
+
+### Feature
+
+GKE managed DRANET is now Generally Available (GA)
+for GKE version 1.35.2-gke.1842000 or later.
+
+GKE DRANET is a managed feature that implements the
+Kubernetes Dynamic Resource Allocation (DRA) API for high-performance
+networking. The GA release expands support beyond the preview phase to
+include the following hardware:
+
+* NVIDIA GPU Instances: Support for instances starting from A3 Ultra, including A4, A4X, and A4X Max.
+* Cloud TPU Instances: Support for TPU v6e and TPU v7x.
+
+For more information, see
+[Allocate network resources by using GKE managed DRANET](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/allocate-network-resources-dra).
+
+### Change
+
+The feature announced on [November 7, 2025](https://docs.cloud.google.com/kubernetes-engine/docs/release-notes#November_07_2025),
+providing faster log processing, has been rolled back. The rollback is due
+to an issue in an underlying dependency. The described performance
+improvements are not currently in effect.
+
+---
 ## 2026-04-02
 
 ### Change

@@ -47,17 +47,17 @@ This feature is in
 
 ### Feature
 
-You can now use a [custom organization policy](https://docs.cloud.google.com/bigquery/docs/custom-constraints)
-to allow or deny specific operations on these BigQuery resources:
-tables, data policies, and row access policies. This feature is in [preview](https://cloud.google.com/products/#product-launch-stages).
-
-### Feature
-
 You can now use the
 [`AI.AGG` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-agg)
 to semantically aggregate unstructured input data based on natural language
 instructions. This feature is in
 [Preview](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+You can now use a [custom organization policy](https://docs.cloud.google.com/bigquery/docs/custom-constraints)
+to allow or deny specific operations on these BigQuery resources:
+tables, data policies, and row access policies. This feature is in [preview](https://cloud.google.com/products/#product-launch-stages).
 
 ---
 ## 2026-04-02
@@ -217,14 +217,6 @@ create, manage, and run data transfers. This feature is in
 
 ### Feature
 
-You can clean, transform, and enrich data from files in Cloud Storage and Google
-Drive in your BigQuery data preparations. For more information, see
-[Prepare data with Gemini](https://docs.cloud.google.com/bigquery/docs/data-prep-get-suggestions#open-data-prep-editor).
-This feature is [generally available](https://cloud.google.com/products#product-launch-stages)
-(GA).
-
-### Feature
-
 The following functions are now
 [generally available](https://cloud.google.com/products#product-launch-stages)
 (GA):
@@ -234,6 +226,14 @@ The following functions are now
 * [`AI.SIMILARITY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-similarity):
   compute the semantic similarity between pairs of text, pairs of images, or
   across text and images.
+
+### Feature
+
+You can clean, transform, and enrich data from files in Cloud Storage and Google
+Drive in your BigQuery data preparations. For more information, see
+[Prepare data with Gemini](https://docs.cloud.google.com/bigquery/docs/data-prep-get-suggestions#open-data-prep-editor).
+This feature is [generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
 
 ---
 ## 2026-03-19

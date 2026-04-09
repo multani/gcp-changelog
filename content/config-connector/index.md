@@ -10,21 +10,12 @@ Config Connector version 1.144.0 was identified as a bad release. Do not use thi
 
 Config Connector version 1.146.0 is now available.
 
-### Fixed
+### Feature
 
-Bug Fixes:
+New Alpha Resources (Direct Reconciler):
 
-* [`SQLInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance)
-  + Added client-side default for `RetainedBackups` and `RetentionUnit`, and validated the `edition` field.
-  + Added `replicaConfiguration` as an unmanageable field.
-  + Controller now correctly defaults the field `enablePrivatePathForGoogleCloudServices` to `false`.
-* [`CertificateManagerDnsAuthorization`](https://cloud.google.com/config-connector/docs/reference/resource-docs/certificatemanager/certificatemanagerdnsauthorization)
-  + Sanitized Kubernetes labels to avoid 400 errors from invalid characters.
-* `ConfigConnector` Core
-  + `preview` now performs an early exit when no resources are found to reconcile.
-  + Fixed CRD field description for shared parent.
-  + Fixed incorrect exit status in lint filter.
-  + Updated `mockgcp` to improve compute regional resource mocks and defaults.
+* `ParameterManagerParameter`
+  + Manage [Parameter Manager Parameters](https://cloud.google.com/secret-manager/parameter-manager/docs/overview).
 
 ### Feature
 
@@ -43,12 +34,21 @@ Improvements:
   + Introduced identity and reference.
 * Added structured reporting diff to numerous direct controllers to enhance diff visibility.
 
-### Feature
+### Fixed
 
-New Alpha Resources (Direct Reconciler):
+Bug Fixes:
 
-* `ParameterManagerParameter`
-  + Manage [Parameter Manager Parameters](https://cloud.google.com/secret-manager/parameter-manager/docs/overview).
+* [`SQLInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance)
+  + Added client-side default for `RetainedBackups` and `RetentionUnit`, and validated the `edition` field.
+  + Added `replicaConfiguration` as an unmanageable field.
+  + Controller now correctly defaults the field `enablePrivatePathForGoogleCloudServices` to `false`.
+* [`CertificateManagerDnsAuthorization`](https://cloud.google.com/config-connector/docs/reference/resource-docs/certificatemanager/certificatemanagerdnsauthorization)
+  + Sanitized Kubernetes labels to avoid 400 errors from invalid characters.
+* `ConfigConnector` Core
+  + `preview` now performs an early exit when no resources are found to reconcile.
+  + Fixed CRD field description for shared parent.
+  + Fixed incorrect exit status in lint filter.
+  + Updated `mockgcp` to improve compute regional resource mocks and defaults.
 
 ---
 ## 2026-02-22

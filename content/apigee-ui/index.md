@@ -2,6 +2,10 @@
 
 ## 2026-03-13
 
+### Announcement
+
+On March 13, 2026, we released an updated version of the Apigee UI.
+
 ### Feature
 
 **Manage environment-scoped Key Value Maps in the Apigee UI**
@@ -9,10 +13,6 @@
 You can now view, add, edit, and delete environment-scoped Key Value Map (KVM) entries in the Apigee UI.
 For more information, see
 [Using key value maps](https://docs.cloud.google.com/apigee/docs/api-platform/cache/key-value-maps).
-
-### Announcement
-
-On March 13, 2026, we released an updated version of the Apigee UI.
 
 ---
 ## 2026-02-13

@@ -220,27 +220,6 @@ multiple days to complete across all Google Cloud zones.
 ---
 ## 2026-03-25
 
-### Security
-
-#### (2026-R12) Security updates
-
-This release includes new GKE versions that use updated
-Container-Optimized OS images. These updated images are cumulative,
-incorporating security fixes from all Container-Optimized OS
-versions released since the previous GKE release.
-
-To identify the specific vulnerabilities that were resolved in each updated
-Container-Optimized OS image, see the **Security** release notes
-for that image. The following table includes links to the release notes for
-each updated Container-Optimized OS image:
-
-| GKE version | Container-Optimized OS version | Details |
-| --- | --- | --- |
-| 1.30.14-gke.2250000 | cos-117-18613-534-36 | [cos-117-18613-534-36 release notes](https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m117#cos-117-18613-534-36_) |
-| 1.31.14-gke.1634000 | cos-117-18613-534-36 | [cos-117-18613-534-36 release notes](https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m117#cos-117-18613-534-36_) |
-| 1.32.13-gke.1147000 | cos-117-18613-534-24 | [cos-117-18613-534-24 release notes](https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m117#cos-117-18613-534-24_) |
-| 1.33.9-gke.1166000 | cos-121-18867-381-24 | [cos-121-18867-381-24 release notes](https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m121#cos-121-18867-381-24_) |
-
 ### Change
 
 #### (2026-R12) Version updates
@@ -400,6 +379,27 @@ multiple days to complete across all Google Cloud zones.
     - 1.32 to [1.32.12-gke.1127000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v13212)
     - 1.33 to [1.33.8-gke.1026000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1338)
     - 1.34 to [1.34.4-gke.1193000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1344)
+
+### Security
+
+#### (2026-R12) Security updates
+
+This release includes new GKE versions that use updated
+Container-Optimized OS images. These updated images are cumulative,
+incorporating security fixes from all Container-Optimized OS
+versions released since the previous GKE release.
+
+To identify the specific vulnerabilities that were resolved in each updated
+Container-Optimized OS image, see the **Security** release notes
+for that image. The following table includes links to the release notes for
+each updated Container-Optimized OS image:
+
+| GKE version | Container-Optimized OS version | Details |
+| --- | --- | --- |
+| 1.30.14-gke.2250000 | cos-117-18613-534-36 | [cos-117-18613-534-36 release notes](https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m117#cos-117-18613-534-36_) |
+| 1.31.14-gke.1634000 | cos-117-18613-534-36 | [cos-117-18613-534-36 release notes](https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m117#cos-117-18613-534-36_) |
+| 1.32.13-gke.1147000 | cos-117-18613-534-24 | [cos-117-18613-534-24 release notes](https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m117#cos-117-18613-534-24_) |
+| 1.33.9-gke.1166000 | cos-121-18867-381-24 | [cos-121-18867-381-24 release notes](https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m121#cos-121-18867-381-24_) |
 
 ### Change
 

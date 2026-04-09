@@ -31,25 +31,16 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:config-connector:2026-03-10:fixed:2</id>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-03-10:feature:2</id>
     <published>2026-03-10T00:00:00+00:00</published>
     <updated>2026-03-10T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Bug Fixes:</p>
+    <content type="html"><![CDATA[<p>New Alpha Resources (Direct Reconciler):</p>
 <ul>
-<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance"><code>SQLInstance</code></a></li>
-<li>Added client-side default for <code>RetainedBackups</code> and <code>RetentionUnit</code>, and validated the <code>edition</code> field.</li>
-<li>Added <code>replicaConfiguration</code> as an unmanageable field.</li>
-<li>Controller now correctly defaults the field <code>enablePrivatePathForGoogleCloudServices</code> to <code>false</code>.</li>
-<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/certificatemanager/certificatemanagerdnsauthorization"><code>CertificateManagerDnsAuthorization</code></a></li>
-<li>Sanitized Kubernetes labels to avoid 400 errors from invalid characters.</li>
-<li><code>ConfigConnector</code> Core</li>
-<li><code>preview</code> now performs an early exit when no resources are found to reconcile.</li>
-<li>Fixed CRD field description for shared parent.</li>
-<li>Fixed incorrect exit status in lint filter.</li>
-<li>Updated <code>mockgcp</code> to improve compute regional resource mocks and defaults.</li>
+<li><code>ParameterManagerParameter</code></li>
+<li>Manage <a href="https://cloud.google.com/secret-manager/parameter-manager/docs/overview">Parameter Manager Parameters</a>.</li>
 </ul>]]></content>
-    <summary>Several bug fixes have been deployed, including improvements to SQL instance configurations, certificate manager DNS authorization, and the Config Connector core. These updates ensure better stability and resource management.</summary>
-    <title>Fixed: Bug Fixes Deployed</title>
+    <summary>We're excited to announce the release of new Alpha resources, including the ParameterManagerParameter. This allows you to manage Parameter Manager Parameters directly, enhancing your control over configuration settings. Explore the documentation for more details on how to integrate this new feature.</summary>
+    <title>Feature: New Alpha Resources Available</title>
   </entry>
   <entry>
     <author>
@@ -88,16 +79,25 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:config-connector:2026-03-10:feature:5</id>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-03-10:fixed:5</id>
     <published>2026-03-10T00:00:00+00:00</published>
     <updated>2026-03-10T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>New Alpha Resources (Direct Reconciler):</p>
+    <content type="html"><![CDATA[<p>Bug Fixes:</p>
 <ul>
-<li><code>ParameterManagerParameter</code></li>
-<li>Manage <a href="https://cloud.google.com/secret-manager/parameter-manager/docs/overview">Parameter Manager Parameters</a>.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance"><code>SQLInstance</code></a></li>
+<li>Added client-side default for <code>RetainedBackups</code> and <code>RetentionUnit</code>, and validated the <code>edition</code> field.</li>
+<li>Added <code>replicaConfiguration</code> as an unmanageable field.</li>
+<li>Controller now correctly defaults the field <code>enablePrivatePathForGoogleCloudServices</code> to <code>false</code>.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/certificatemanager/certificatemanagerdnsauthorization"><code>CertificateManagerDnsAuthorization</code></a></li>
+<li>Sanitized Kubernetes labels to avoid 400 errors from invalid characters.</li>
+<li><code>ConfigConnector</code> Core</li>
+<li><code>preview</code> now performs an early exit when no resources are found to reconcile.</li>
+<li>Fixed CRD field description for shared parent.</li>
+<li>Fixed incorrect exit status in lint filter.</li>
+<li>Updated <code>mockgcp</code> to improve compute regional resource mocks and defaults.</li>
 </ul>]]></content>
-    <summary>We're excited to announce the release of new Alpha resources, including the ParameterManagerParameter. This allows you to manage Parameter Manager Parameters directly, enhancing your control over configuration settings. Explore the documentation for more details on how to integrate this new feature.</summary>
-    <title>Feature: New Alpha Resources Available</title>
+    <summary>Several bug fixes have been deployed, including improvements to SQL instance configurations, certificate manager DNS authorization, and the Config Connector core. These updates ensure better stability and resource management.</summary>
+    <title>Fixed: Bug Fixes Deployed</title>
   </entry>
   <entry>
     <author>

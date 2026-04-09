@@ -9,7 +9,20 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:apigee-x:2026-04-06:change:0</id>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-04-06:fixed:0</id>
+    <published>2026-04-06T00:00:00+00:00</published>
+    <updated>2026-04-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Correction to <a href="#April_02_2026">April 2, 2026 release note: Deployment disruption for Apigee Drupal Portal via Google Cloud Marketplace</a></strong></p>
+<p>For the deployment disruption announced on April 2, the announcement noted that deployment and management functionality using Google Cloud Deployment Manager would definitely be unavailable during the transition. This statement is incorrect. The functionality <em>might</em> be unavailable.</p>
+<p>See the <a href="https://docs.cloud.google.com/apigee/docs/release/known-issues#495305258">Known issue</a> for more information.</p>]]></content>
+    <summary>A previous announcement incorrectly stated that deployment and management functionality for the Apigee Drupal Portal would be unavailable during the transition. This functionality might be unavailable, not definitely unavailable. Refer to the known issues for more details.</summary>
+    <title>Fixed: Apigee Drupal Portal Deployment Correction</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-04-06:change:1</id>
     <published>2026-04-06T00:00:00+00:00</published>
     <updated>2026-04-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>On April 6th, 2026, we released an updated version of Apigee.</p>
@@ -20,19 +33,6 @@ Apigee. <strong>Effective immediately, use <code>apigee.coreServiceAgent</code> 
 <a href="https://docs.cloud.google.com/iam/docs/roles-permissions/apigee#apigee.coreServiceAgent"><code>apigee.coreServiceAgent</code></a>.</p>]]></content>
     <summary>Apigee has released an updated version with a new IAM role, `apigee.coreServiceAgent`. Effective immediately, this new role should be used in place of the `apigee.serviceAgent` role.</summary>
     <title>Change: Apigee IAM Role Update</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:apigee-x:2026-04-06:fixed:1</id>
-    <published>2026-04-06T00:00:00+00:00</published>
-    <updated>2026-04-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Correction to <a href="#April_02_2026">April 2, 2026 release note: Deployment disruption for Apigee Drupal Portal via Google Cloud Marketplace</a></strong></p>
-<p>For the deployment disruption announced on April 2, the announcement noted that deployment and management functionality using Google Cloud Deployment Manager would definitely be unavailable during the transition. This statement is incorrect. The functionality <em>might</em> be unavailable.</p>
-<p>See the <a href="https://docs.cloud.google.com/apigee/docs/release/known-issues#495305258">Known issue</a> for more information.</p>]]></content>
-    <summary>A previous announcement incorrectly stated that deployment and management functionality for the Apigee Drupal Portal would be unavailable during the transition. This functionality might be unavailable, not definitely unavailable. Refer to the known issues for more details.</summary>
-    <title>Fixed: Apigee Drupal Portal Deployment Correction</title>
   </entry>
   <entry>
     <author>
@@ -58,7 +58,19 @@ Any configuration changes or management tasks must be performed directly on the 
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:apigee-x:2026-03-31:feature:0</id>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-03-31:announcement:0</id>
+    <published>2026-03-31T00:00:00+00:00</published>
+    <updated>2026-03-31T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On March 31st, 2026, we released an updated version of Apigee.</p>
+<p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>]]></content>
+    <summary>A new version of Apigee was released on March 31st, 2026. The rollout across all zones began today and may take several business days to complete. Your instances will have the new features and fixes available once the rollout is finished.</summary>
+    <title>Announcement: Apigee updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-03-31:feature:1</id>
     <published>2026-03-31T00:00:00+00:00</published>
     <updated>2026-03-31T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>General Availability (GA) launch of Model Context Protocol (MCP) in Apigee</strong></p>
@@ -73,32 +85,7 @@ Any configuration changes or management tasks must be performed directly on the 
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:apigee-x:2026-03-31:change:1</id>
-    <published>2026-03-31T00:00:00+00:00</published>
-    <updated>2026-03-31T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Updated MCP server target endpoint for MCP Discovery Proxies</strong></p>
-<p>With the GA launch of Model Context Protocol (MCP) in Apigee, the structure of the MCP server target endpoint for MCP Discover Proxies has changed to <code>ORG_NAME.mcp.apigee.internal</code>.</p>
-<p>Private preview customers using the previous format (<code>mcp.apigee.internal</code>) are encouraged to update their proxies to reflect the new structure. Existing endpoints using the old format will continue to work, but new endpoints will use the new structure.</p>]]></content>
-    <summary>The MCP server target endpoint for MCP Discovery Proxies has been updated to ORG_NAME.mcp.apigee.internal with the General Availability launch of Model Context Protocol. While old endpoints will remain functional, new configurations should use the updated structure.</summary>
-    <title>Change: MCP Endpoint Update</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:apigee-x:2026-03-31:announcement:2</id>
-    <published>2026-03-31T00:00:00+00:00</published>
-    <updated>2026-03-31T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>On March 31st, 2026, we released an updated version of Apigee.</p>
-<p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>]]></content>
-    <summary>A new version of Apigee was released on March 31st, 2026. The rollout across all zones began today and may take several business days to complete. Your instances will have the new features and fixes available once the rollout is finished.</summary>
-    <title>Announcement: Apigee updated</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:apigee-x:2026-03-31:feature:3</id>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-03-31:feature:2</id>
     <published>2026-03-31T00:00:00+00:00</published>
     <updated>2026-03-31T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Enhanced OAS server URL path handling for MCP in Apigee</strong></p>
@@ -110,6 +97,19 @@ duplication. For example, change <code>https://example.com/api/v1</code> to <cod
 <p>For more information, see <a href="https://docs.cloud.google.com/apigee/docs/api-platform/apigee-mcp/apigee-mcp-quickstart#create-an-openapi-3.0.x-specification-describing-your-api-operations">Create an OpenAPI 3.0 specification</a>.</p>]]></content>
     <summary>Apigee now automatically combines OpenAPI server URLs with operation paths, adhering to the OAS standard for correct routing. This eliminates the need for manual path concatenation and simplifies your OAS configurations.</summary>
     <title>Feature: Improved OAS Server URL Handling</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-03-31:change:3</id>
+    <published>2026-03-31T00:00:00+00:00</published>
+    <updated>2026-03-31T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Updated MCP server target endpoint for MCP Discovery Proxies</strong></p>
+<p>With the GA launch of Model Context Protocol (MCP) in Apigee, the structure of the MCP server target endpoint for MCP Discover Proxies has changed to <code>ORG_NAME.mcp.apigee.internal</code>.</p>
+<p>Private preview customers using the previous format (<code>mcp.apigee.internal</code>) are encouraged to update their proxies to reflect the new structure. Existing endpoints using the old format will continue to work, but new endpoints will use the new structure.</p>]]></content>
+    <summary>The MCP server target endpoint for MCP Discovery Proxies has been updated to ORG_NAME.mcp.apigee.internal with the General Availability launch of Model Context Protocol. While old endpoints will remain functional, new configurations should use the updated structure.</summary>
+    <title>Change: MCP Endpoint Update</title>
   </entry>
   <entry>
     <author>
@@ -222,20 +222,7 @@ next seven to 21 days. A notification containing the expected date of upgrade wi
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:apigee-x:2026-03-10:security:1</id>
-    <published>2026-03-10T00:00:00+00:00</published>
-    <updated>2026-03-10T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>| Bug ID | Description |
-| --- | --- |
-| <strong>483769763, 481735779</strong> | <strong>Security fix for Apigee infrastructure.</strong> This addresses the following vulnerabilities:   * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61726">CVE-2025-61726</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61728">CVE-2025-61728</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61730">CVE-2025-61730</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61731">CVE-2025-61731</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61732">CVE-2025-61732</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24051">CVE-2026-24051</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25765">CVE-2026-25765</a> |</p>]]></content>
-    <summary>A security update has been released for Apigee infrastructure to address several critical vulnerabilities. This update is essential for maintaining the security and integrity of your API management environment.</summary>
-    <title>Security: Security Update for Apigee</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:apigee-x:2026-03-10:fixed:2</id>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-03-10:fixed:1</id>
     <published>2026-03-10T00:00:00+00:00</published>
     <updated>2026-03-10T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>| Bug ID | Description |
@@ -243,6 +230,19 @@ next seven to 21 days. A notification containing the expected date of upgrade wi
 | <strong>N/A</strong> | <strong>Updates to infrastructure and libraries.</strong> |</p>]]></content>
     <summary>We have made updates to our underlying infrastructure and libraries. These changes improve system stability and performance.</summary>
     <title>Fixed: Infrastructure and library updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-03-10:security:2</id>
+    <published>2026-03-10T00:00:00+00:00</published>
+    <updated>2026-03-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| <strong>483769763, 481735779</strong> | <strong>Security fix for Apigee infrastructure.</strong> This addresses the following vulnerabilities:   * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61726">CVE-2025-61726</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61728">CVE-2025-61728</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61730">CVE-2025-61730</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61731">CVE-2025-61731</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61732">CVE-2025-61732</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-24051">CVE-2026-24051</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25765">CVE-2026-25765</a> |</p>]]></content>
+    <summary>A security update has been released for Apigee infrastructure to address several critical vulnerabilities. This update is essential for maintaining the security and integrity of your API management environment.</summary>
+    <title>Security: Security Update for Apigee</title>
   </entry>
   <entry>
     <author>

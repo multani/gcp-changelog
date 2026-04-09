@@ -2,6 +2,12 @@
 
 ## 2026-04-07
 
+### Announcement
+
+**Advance reporting dashboards 4.12**
+
+We've released version 4.12 of the advanced reporting dashboards.
+
 ### Feature
 
 **Repeat contacts data added to advanced reporting dashboards**
@@ -19,12 +25,6 @@ dashboards:
 * **Real-time Calls - Calls Connected** and **Real-time Chats - Chats
   Connected**: new **Repeat Contact** column in the **Connected Calls** and
   **Connected Chats** tables.
-
-### Announcement
-
-**Advance reporting dashboards 4.12**
-
-We've released version 4.12 of the advanced reporting dashboards.
 
 ### Feature
 
@@ -132,6 +132,69 @@ here.
 ---
 ## 2026-04-02
 
+### Announcement
+
+**Google Cloud CCaaS 4.16**
+
+We've released version 4.16 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**Agent Assist is available for calls and chats that are unassociated
+with a queue**
+
+You can now turn on Agent Assist for calls and chats at the team level.
+That means that Agent Assist is available for interactions that aren't
+associated with a queue, such as direct inbound calls and outbound calls with no
+queue selected.
+
+Administrators: In the **Settings > Users & Teams > Manage
+Users & Teams >** edit **TEAM\_NAME** pane,
+there's a new **Agent Assist** section.
+
+For more information, see [Configure Agent Assist at the team
+level](https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-assist#configure-team-for-agent-assist).
+
+### Feature
+
+**New HubSpot CRM ticket view: Help desk view**
+
+You can now configure which CRM ticket view your HubSpot integration uses:
+**Standard view**, or the new real-time **Help desk view**.
+
+Administrators: In the **Settings > Developer Settings >**
+select **HubSpot** pane, there's a new **CRM Ticket View** section.
+
+For more information, see [Configure
+HubSpot](https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot#configure-hubspot).
+
+### Feature
+
+**Play pre-recorded audio for virtual agents**
+
+Dialogflow lets virtual agents respond with pre-recorded audio. This
+lets you use high-quality audio files instead of standard text-to-speech. This
+capability is available for all voice channels, including inbound and outbound
+calls. It's available for support virtual agents, task virtual agents, and
+post-session virtual agents. For more information, see [Play pre-recorded
+audio](https://docs.cloud.google.com/contact-center/ccai-platform/docs/play-prerecorded-audio).
+
+### Feature
+
+**Configure the ringing timeout for virtual agent transfers to SIP endpoints**
+
+Twilio users can configure the ringing timeout for outbound calls that virtual
+agents transfer to SIP endpoints. Add the `sip_ring_timeout` field to the
+virtual agent's custom payload to set the ringing period for up to 600 seconds.
+This allows calls to internal extensions or Unified Communications (UC)
+destinations sufficient time to be answered before disconnection. For more
+information, see [Transfer a call to a SIP
+endpoint](https://docs.cloud.google.com/contact-center/ccai-platform/docs/va-custom-payload#transfer-to-SIP-endpoint).
+
 ### Fixed
 
 The following issues were addressed in this release:
@@ -164,69 +227,6 @@ The following issues were addressed in this release:
 * Fixed an issue where the Reporting API changed the data types of some
   response fields. This caused data type mismatches in the reports that the
   API returned.
-
-### Feature
-
-**Configure the ringing timeout for virtual agent transfers to SIP endpoints**
-
-Twilio users can configure the ringing timeout for outbound calls that virtual
-agents transfer to SIP endpoints. Add the `sip_ring_timeout` field to the
-virtual agent's custom payload to set the ringing period for up to 600 seconds.
-This allows calls to internal extensions or Unified Communications (UC)
-destinations sufficient time to be answered before disconnection. For more
-information, see [Transfer a call to a SIP
-endpoint](https://docs.cloud.google.com/contact-center/ccai-platform/docs/va-custom-payload#transfer-to-SIP-endpoint).
-
-### Feature
-
-**Agent Assist is available for calls and chats that are unassociated
-with a queue**
-
-You can now turn on Agent Assist for calls and chats at the team level.
-That means that Agent Assist is available for interactions that aren't
-associated with a queue, such as direct inbound calls and outbound calls with no
-queue selected.
-
-Administrators: In the **Settings > Users & Teams > Manage
-Users & Teams >** edit **TEAM\_NAME** pane,
-there's a new **Agent Assist** section.
-
-For more information, see [Configure Agent Assist at the team
-level](https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-assist#configure-team-for-agent-assist).
-
-### Feature
-
-**New HubSpot CRM ticket view: Help desk view**
-
-You can now configure which CRM ticket view your HubSpot integration uses:
-**Standard view**, or the new real-time **Help desk view**.
-
-Administrators: In the **Settings > Developer Settings >**
-select **HubSpot** pane, there's a new **CRM Ticket View** section.
-
-For more information, see [Configure
-HubSpot](https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot#configure-hubspot).
-
-### Announcement
-
-**Google Cloud CCaaS 4.16**
-
-We've released version 4.16 of Google Cloud CCaaS.
-
-The timing of the update to your instance depends on the deployment schedule
-that you have chosen. For more information, see [Deployment
-schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
-
-### Feature
-
-**Play pre-recorded audio for virtual agents**
-
-Dialogflow lets virtual agents respond with pre-recorded audio. This
-lets you use high-quality audio files instead of standard text-to-speech. This
-capability is available for all voice channels, including inbound and outbound
-calls. It's available for support virtual agents, task virtual agents, and
-post-session virtual agents. For more information, see [Play pre-recorded
-audio](https://docs.cloud.google.com/contact-center/ccai-platform/docs/play-prerecorded-audio).
 
 ### Announcement
 
@@ -402,6 +402,83 @@ We are no longer adding new features to the web SDK v2.
 ---
 ## 2026-03-24
 
+### Announcement
+
+**Google Cloud CCaaS 4.12**
+
+We've released version 4.12 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**Support for creating chat virtual agents using CX Agent Studio**
+
+Contact Center AI Platform supports creating chat virtual agents using
+[Customer Experience Agent Studio](https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps)
+(CX Agent Studio). This expands on its existing support for creating voice virtual
+agents with CX Agent Studio.
+
+For more information, see [Create and integrate Customer Experience Agent Studio
+agents](https://docs.cloud.google.com/contact-center/ccai-platform/docs/create-a-cx-agent-studio-agent).
+
+### Feature
+
+**Callback fulfillment hours**
+
+You can configure callback fulfillment hours, which are the hours when your
+contact center fulfills callbacks. If you enable callback rollovers to the next
+day, callbacks that are scheduled outside of these hours are rolled over to the
+next day. If you don't enable callback rollovers, callbacks that are scheduled
+outside of these hours are canceled. Callback fulfillment hours aren't available
+by default. To use this capability, ask your Google contact to turn it on for
+your instance. For more information, see [Callback fulfillment
+hours](https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#callback-fulfillment-hours).
+
+### Feature
+
+**Improved support for multiple agent matches for agent extension searches**
+
+When an end-user inputs an agent extension number at the beginning of a call and
+there are multiple agent matches, the system now reads agent matches in groups
+of eight. This gets the end-user to the correct agent faster. We've added the
+following new extension directory messages to help guide the end-user to the
+correct agent:
+
+* Multiple agents found
+* Search results next page
+* End of search results
+
+For more information, see [Extension directory
+messages](https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#extension-directory-messages).
+
+### Feature
+
+**HubSpot lookup against company profiles**
+
+HubSpot integrations now support lookups against Company profiles.
+Administrators can configure primary and secondary lookup objects, allowing the
+system to search for end-users across both Contacts and Companies to ensure
+accurate identification during active sessions.
+
+For more information, see [HubSpot lookup against company
+profiles](https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot-lookups).
+
+### Feature
+
+**HubSpot: Mobile Phone Number Lookup**
+
+Admins can now enable mobile phone number lookups for HubSpot integrations to
+ensure callers are accurately matched with existing contacts. To activate this,
+navigate to **Settings > Developer Settings > CRM** and check the **Mobile phone
+number lookup** box in the new **Phone Number Lookup** section. Once enabled,
+the system will automatically search both the "Phone number" and "Mobile phone
+number" fields in HubSpot during incoming voice or chat sessions. For more
+information, see [HubSpot mobile phone number
+lookup](https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot-mobile-phone-lookup).
+
 ### Feature
 
 **Improved controls for predictive campaigns**
@@ -433,48 +510,6 @@ chat history to both the end-user and the agent.
 
 For more information, see
 [Resume a chat](https://docs.cloud.google.com/contact-center/ccai-platform/docs/resume-a-chat).
-
-### Feature
-
-**Callback fulfillment hours**
-
-You can configure callback fulfillment hours, which are the hours when your
-contact center fulfills callbacks. If you enable callback rollovers to the next
-day, callbacks that are scheduled outside of these hours are rolled over to the
-next day. If you don't enable callback rollovers, callbacks that are scheduled
-outside of these hours are canceled. Callback fulfillment hours aren't available
-by default. To use this capability, ask your Google contact to turn it on for
-your instance. For more information, see [Callback fulfillment
-hours](https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#callback-fulfillment-hours).
-
-### Feature
-
-**Support for creating chat virtual agents using CX Agent Studio**
-
-Contact Center AI Platform supports creating chat virtual agents using
-[Customer Experience Agent Studio](https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps)
-(CX Agent Studio). This expands on its existing support for creating voice virtual
-agents with CX Agent Studio.
-
-For more information, see [Create and integrate Customer Experience Agent Studio
-agents](https://docs.cloud.google.com/contact-center/ccai-platform/docs/create-a-cx-agent-studio-agent).
-
-### Feature
-
-**Improved support for multiple agent matches for agent extension searches**
-
-When an end-user inputs an agent extension number at the beginning of a call and
-there are multiple agent matches, the system now reads agent matches in groups
-of eight. This gets the end-user to the correct agent faster. We've added the
-following new extension directory messages to help guide the end-user to the
-correct agent:
-
-* Multiple agents found
-* Search results next page
-* End of search results
-
-For more information, see [Extension directory
-messages](https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#extension-directory-messages).
 
 ### Fixed
 
@@ -693,41 +728,6 @@ The following issues were addressed in this release:
   to end-users.
 * Fixed a web SDK issue for iOS users where the **Yes** and **No** buttons in
   the survey request at the end of a chat were hidden.
-
-### Feature
-
-**HubSpot lookup against company profiles**
-
-HubSpot integrations now support lookups against Company profiles.
-Administrators can configure primary and secondary lookup objects, allowing the
-system to search for end-users across both Contacts and Companies to ensure
-accurate identification during active sessions.
-
-For more information, see [HubSpot lookup against company
-profiles](https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot-lookups).
-
-### Announcement
-
-**Google Cloud CCaaS 4.12**
-
-We've released version 4.12 of Google Cloud CCaaS.
-
-The timing of the update to your instance depends on the deployment schedule
-that you have chosen. For more information, see [Deployment
-schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
-
-### Feature
-
-**HubSpot: Mobile Phone Number Lookup**
-
-Admins can now enable mobile phone number lookups for HubSpot integrations to
-ensure callers are accurately matched with existing contacts. To activate this,
-navigate to **Settings > Developer Settings > CRM** and check the **Mobile phone
-number lookup** box in the new **Phone Number Lookup** section. Once enabled,
-the system will automatically search both the "Phone number" and "Mobile phone
-number" fields in HubSpot during incoming voice or chat sessions. For more
-information, see [HubSpot mobile phone number
-lookup](https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot-mobile-phone-lookup).
 
 ---
 ## 2026-03-16
@@ -1042,25 +1042,6 @@ your instance.
 ---
 ## 2026-03-14
 
-### Feature
-
-**Advanced reporting is available in French Canadian**
-
-Advanced reporting dashboards are now available in French Canadian. For more
-information about configuring your instance for location and language, see
-[Configure location and
-language](https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-location#configure-location-and-language).
-
-### Feature
-
-**Queue Performance dashboard**
-
-With the **Queue Performance - Calls** and **Queue Performance - Chats**
-dashboards, get performance metrics by queue for your call and chat sessions.
-This includes queue interaction volume, abandons, handle time, callbacks,
-sentiment, and CSAT. For more information, see [Queue Performance
-dashboards](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-performance).
-
 ### Announcement
 
 **Advanced reporting dashboards 4.0**
@@ -1077,6 +1058,56 @@ to them. This includes the number of voicemails received, the number of
 voicemails accessed by agents, and the average agent response time. For more
 information, see [Voicemails
 dashboard](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-voicemails).
+
+### Feature
+
+**Queue Performance dashboard**
+
+With the **Queue Performance - Calls** and **Queue Performance - Chats**
+dashboards, get performance metrics by queue for your call and chat sessions.
+This includes queue interaction volume, abandons, handle time, callbacks,
+sentiment, and CSAT. For more information, see [Queue Performance
+dashboards](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-performance).
+
+### Feature
+
+**Update to the Virtual agent dashboard for wait-time virtual agent metrics**
+
+The **Virtual agent** dashboard includes the following new tiles to measure the
+activity of wait-time virtual agents while end-users wait in queue:
+
+* **Total VA In-Queue Interactions** (calls only): the number of calls where
+  wait-time virtual agents were active while end-users were in a queue
+* **Total VA In-Queue Time** (calls only): the total time that wait-time
+  virtual agents were active while end-users were in a queue
+* **Avg VA In-Queue Time** (calls only): the average time that wait-time
+  virtual agents were active while end-users were in a queue
+
+For more information, see [Virtual agent
+dashboards](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-virtual-agent).
+
+### Feature
+
+**Advanced reporting is available in French Canadian**
+
+Advanced reporting dashboards are now available in French Canadian. For more
+information about configuring your instance for location and language, see
+[Configure location and
+language](https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-location#configure-location-and-language).
+
+### Feature
+
+**Improved analytics for Queue Interval and Channel Interval dashboards**
+
+We've improved the detailed information available for the **Queue Interval** and
+**Channel Interval** dashboards:
+
+* **Queue Interval dashboards**: Click a bar in the **SLA by Interval** tile
+  to get historical call or chat queue metrics for that interval.
+* **Channel Interval dashboards**: Click a data point on the trend line in the
+  **Service Level Trend**, **AHT Trend**, **Queue Time Trend**, **CSAT
+  Trend**, or **Transfer Trend** tile to get historical call or chat queue
+  metrics for that interval.
 
 ### Fixed
 
@@ -1128,37 +1159,6 @@ The following issues were addressed in this release:
   abandons count.
 * Fixed an issue on the Queue Group Performance - All dashboard where the
   **Locations** filter didn't display all values.
-
-### Feature
-
-**Update to the Virtual agent dashboard for wait-time virtual agent metrics**
-
-The **Virtual agent** dashboard includes the following new tiles to measure the
-activity of wait-time virtual agents while end-users wait in queue:
-
-* **Total VA In-Queue Interactions** (calls only): the number of calls where
-  wait-time virtual agents were active while end-users were in a queue
-* **Total VA In-Queue Time** (calls only): the total time that wait-time
-  virtual agents were active while end-users were in a queue
-* **Avg VA In-Queue Time** (calls only): the average time that wait-time
-  virtual agents were active while end-users were in a queue
-
-For more information, see [Virtual agent
-dashboards](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-virtual-agent).
-
-### Feature
-
-**Improved analytics for Queue Interval and Channel Interval dashboards**
-
-We've improved the detailed information available for the **Queue Interval** and
-**Channel Interval** dashboards:
-
-* **Queue Interval dashboards**: Click a bar in the **SLA by Interval** tile
-  to get historical call or chat queue metrics for that interval.
-* **Channel Interval dashboards**: Click a data point on the trend line in the
-  **Service Level Trend**, **AHT Trend**, **Queue Time Trend**, **CSAT
-  Trend**, or **Transfer Trend** tile to get historical call or chat queue
-  metrics for that interval.
 
 ---
 ## 2026-03-10

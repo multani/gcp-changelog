@@ -4,7 +4,7 @@
 
 ### Feature
 
-Context sets (previously known as data agents) enable you to interact with the data in your database using conversational language and are used by tools like [QueryData](https://docs.cloud.google.com/gemini/data-agents/reference/rest/v1beta/projects.locations/queryData) to build conversation agents. For more information, see [Context sets overview](https://docs.cloud.google.com/sql/docs/mysql/data-agent-overview). This feature is available in ([Preview](https://cloud.google.com/products#product-launch-stages)).
+The QueryData tool lets you to query the data in your database using conversational language and build data agents. For more information, see [QueryData tool overview](https://docs.cloud.google.com/sql/docs/mysql/data-agent-overview). This feature is available in ([Preview](https://cloud.google.com/products#product-launch-stages)).
 
 The preview release increases the accuracy of SQL generation with value search queries which match values and their context within a database. Value search queries trigger automatically.
 

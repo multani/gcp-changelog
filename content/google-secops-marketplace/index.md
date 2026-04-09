@@ -2,6 +2,22 @@
 
 ## 2026-04-01
 
+### Feature
+
+**Microsoft 365 Defender**: Version 26.0
+
+* The following new job has been added:
+
+  + **Sync Alerts**
+
+### Feature
+
+**SentinelOneV2**: Version 48.0
+
+* The following new job has been added:
+
+  + **Sync Alerts**
+
 ### Change
 
 **Microsoft Teams**: Version 36.0
@@ -19,14 +35,6 @@
 
   + **Add Items To Client List**
   + **Remove Items From Client List**
-
-### Feature
-
-**Microsoft 365 Defender**: Version 26.0
-
-* The following new job has been added:
-
-  + **Sync Alerts**
 
 ### Change
 
@@ -52,16 +60,53 @@ for the following integrations:
   + **Enrich User**
   + **Get Manager Contact Details**
 
-### Feature
-
-**SentinelOneV2**: Version 48.0
-
-* The following new job has been added:
-
-  + **Sync Alerts**
-
 ---
 ## 2026-03-25
+
+### Feature
+
+**Azure API**: Version 3.0
+
+* Added predefined widget to the following action:
+
+  + **Ping**
+
+### Feature
+
+**Microsoft Graph Security**: Version 26.0
+
+* Added predefined widget to the following action:
+
+  + **Get Incident**
+
+### Feature
+
+**Google Cloud IAM**: Version 20.0
+
+* The following new action has been added:
+
+  + **Rotate Service Account Keys**
+
+### Feature
+
+**Siemplify**: Version 106.0
+
+* The following new action has been added:
+
+  + **Search Cases**
+* Added predefined widget to the following action:
+
+  + **Search Cases**
+
+### Feature
+
+**Microsoft Defender ATP**: Version 30.0
+
+* The following new actions have been added:
+
+  + **Get Machine Recommendations**
+  + **Get Machine Vulnerabilities**
+  + **Get User Related Alerts**
 
 ### Change
 
@@ -148,14 +193,6 @@ for the following integrations:
 
   + **List Rule Groups**
   + **List Web ACLs**
-
-### Feature
-
-**Azure API**: Version 3.0
-
-* Added predefined widget to the following action:
-
-  + **Ping**
 
 ### Change
 
@@ -598,14 +635,6 @@ for the following integrations:
   + **DNS Reverse**
   + **Get Api Info**
 
-### Feature
-
-**Microsoft Graph Security**: Version 26.0
-
-* Added predefined widget to the following action:
-
-  + **Get Incident**
-
 ### Change
 
 **Google Kubernetes Engine**: Version 9.0
@@ -635,14 +664,6 @@ for the following integrations:
   + **Get Deployment URL**
   + **List Operations**
   + **Parse EML to JSON**
-
-### Feature
-
-**Google Cloud IAM**: Version 20.0
-
-* The following new action has been added:
-
-  + **Rotate Service Account Keys**
 
 ### Change
 
@@ -962,17 +983,6 @@ for the following integrations:
   + **Wait for mail from user**
   + **Wait for Vote Mail Results**
 
-### Feature
-
-**Siemplify**: Version 106.0
-
-* The following new action has been added:
-
-  + **Search Cases**
-* Added predefined widget to the following action:
-
-  + **Search Cases**
-
 ### Change
 
 **Symantec ATP**: Version 12.0
@@ -1182,16 +1192,6 @@ for the following integrations:
   action:
 
   + **Is Exit Node**
-
-### Feature
-
-**Microsoft Defender ATP**: Version 30.0
-
-* The following new actions have been added:
-
-  + **Get Machine Recommendations**
-  + **Get Machine Vulnerabilities**
-  + **Get User Related Alerts**
 
 ### Change
 
@@ -1492,6 +1492,45 @@ for the following integrations:
 
 ---
 ## 2026-03-18
+
+### Feature
+
+**Microsoft Graph Mail**: Version 37.0
+
+* A new predefined widget has been added to following action:
+
+  + **Delete Email**
+
+### Feature
+
+**CrowdStrike Falcon**: Version 73.0
+
+* The following new action has been added:
+
+  + **Hide Hosts**
+
+### Feature
+
+**Endgame**: Version 73.0
+
+* New predefined widgets have been added to following actions:
+
+  + **Get Endpoints**
+  + **Get Host Isolation Config**
+  + **Hunt File**
+  + **Hunt IP**
+  + **Hunt Process**
+  + **Hunt Registry**
+  + **Hunt User**
+  + **List Investigations**
+
+### Feature
+
+**Microsoft Graph Security**: Version 24.0
+
+* A new predefined widget has been added to following action:
+
+  + **List Incidents**
 
 ### Change
 
@@ -1855,14 +1894,6 @@ for the following integrations:
   action:
 
   + **Get EasyVista Ticket**
-
-### Feature
-
-**Microsoft Graph Mail**: Version 37.0
-
-* A new predefined widget has been added to following action:
-
-  + **Delete Email**
 
 ### Change
 
@@ -2401,14 +2432,6 @@ for the following integrations:
   + **Move Email To Folder**
   + **Search Emails**
 
-### Feature
-
-**CrowdStrike Falcon**: Version 73.0
-
-* The following new action has been added:
-
-  + **Hide Hosts**
-
 ### Change
 
 **F5 BIG-IP Access Policy Manager**: Version 6.0
@@ -2476,21 +2499,6 @@ for the following integrations:
   + **List Data Groups**
   + **List Port Lists**
   + **List iRules**
-
-### Feature
-
-**Endgame**: Version 73.0
-
-* New predefined widgets have been added to following actions:
-
-  + **Get Endpoints**
-  + **Get Host Isolation Config**
-  + **Hunt File**
-  + **Hunt IP**
-  + **Hunt Process**
-  + **Hunt Registry**
-  + **Hunt User**
-  + **List Investigations**
 
 ### Change
 
@@ -2884,14 +2892,6 @@ for the following integrations:
   action:
 
   + **Send Query**
-
-### Feature
-
-**Microsoft Graph Security**: Version 24.0
-
-* A new predefined widget has been added to following action:
-
-  + **List Incidents**
 
 ### Change
 

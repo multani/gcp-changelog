@@ -1,5 +1,19 @@
 # Cluster Toolkit
 
+## 2026-04-02
+
+### Feature
+
+Cluster Toolkit version v1.86.0 is available. This release implements
+and configures the Google Container Filesystem (GCFS) to stream images at the
+cluster level for Google Kubernetes Engine. This release also migrates the
+`kubectl_apply_manifest` module to Helm and upgrades the command-line interface
+(DCGMI) for the NVIDIA Data Center GPU Manager (DCGM).
+
+For more information about version v1.86.0, see the [Release
+announcement on GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5447).
+
+---
 ## 2026-03-25
 
 ### Feature

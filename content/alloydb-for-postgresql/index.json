@@ -4,10 +4,10 @@
     "2026-04-06": [
       {
         "kind": "Feature",
-        "content": "The QueryData tool lets you to query with the data in your database using\nconversational language and build data agents. For more information, see\n[QueryData tool\noverview](https://docs.cloud.google.com/alloydb/docs/ai/data-agent-overview).\nThis feature is available in\n([Preview](https://cloud.google.com/products#product-launch-stages)).\n\nThe preview release increases the accuracy of SQL generation with value search queries which match values and their context within a database. Value search queries trigger automatically. QueryData also adds support for Parameterized secure views (PSVs) to help secure applications that use natural language queries. For more information, see [Secure and control access to application data using parameterized secure views](https://cloud.google.com/alloydb/docs/ai/secure-app-data-parameterized-secure-views).",
+        "content": "The QueryData tool lets you to query the data in your database using\nconversational language and build data agents. For more information, see\n[QueryData tool\noverview](https://docs.cloud.google.com/alloydb/docs/ai/data-agent-overview).\nThis feature is available in\n([Preview](https://cloud.google.com/products#product-launch-stages)).\n\nThe preview release increases the accuracy of SQL generation with value search queries which match values and their context within a database. Value search queries trigger automatically. QueryData also adds support for Parameterized secure views (PSVs) to help secure applications that use natural language queries. For more information, see [Secure and control access to application data using parameterized secure views](https://cloud.google.com/alloydb/docs/ai/secure-app-data-parameterized-secure-views).",
         "summary": {
-          "title": "QueryData: Natural Language Database Queries",
-          "summary": "Introducing QueryData, a new feature that allows you to query your database using conversational language and build data agents. This preview release enhances SQL generation accuracy and introduces support for Parameterized Secure Views (PSVs) to improve application data security when using natural language queries."
+          "title": "QueryData tool now in preview",
+          "summary": "The QueryData tool, now in preview, allows you to query your database using natural language and build data agents. This release enhances SQL generation accuracy with automatic value search queries and adds support for Parameterized Secure Views to improve data security."
         }
       }
     ],
@@ -61,19 +61,19 @@
         }
       },
       {
-        "kind": "Change",
-        "content": "When no major version is specified, AlloyDB for PostgreSQL now defaults to\n[PostgreSQL major version 17](https://docs.cloud.google.com/alloydb/docs/db-version-policies#support-table)\nfor new clusters.",
-        "summary": {
-          "title": "AlloyDB now defaults to PostgreSQL 17",
-          "summary": "New AlloyDB for PostgreSQL clusters will now default to PostgreSQL major version 17 when no specific version is chosen. This change ensures that new deployments benefit from the latest PostgreSQL features and improvements."
-        }
-      },
-      {
         "kind": "Feature",
         "content": "The following AlloyDB AI features are available in [Preview](https://cloud.google.com/products#product-launch-stages):\n\n* You can now use the `ai.hybrid_search()` function, which fuses results from\n  each search type into a single list using the Reciprocal Rank Fusion (RRF)\n  algorithm. For more information, see [Run hybrid vector similarity search](https://docs.cloud.google.com/alloydb/docs/ai/run-hybrid-vector-similarity-search).\n* AlloyDB supports the `rum` extension for complex full-text search\n  operations. The `rum` extension extends standard GIN indexes by storing\n  positional information directly in the index. This enables faster phrase\n  searches and relevance ranking without needing to access the table data. For\n  more information, see [Create and manage a RUM index](https://docs.cloud.google.com/alloydb/docs/ai/create-rum-index).",
         "summary": {
           "title": "AlloyDB AI features now in preview",
           "summary": "New AI features are now available in AlloyDB, including hybrid search with Reciprocal Rank Fusion and support for the RUM extension for enhanced full-text search capabilities. These features aim to improve search performance and relevance."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "When no major version is specified, AlloyDB for PostgreSQL now defaults to\n[PostgreSQL major version 17](https://docs.cloud.google.com/alloydb/docs/db-version-policies#support-table)\nfor new clusters.",
+        "summary": {
+          "title": "AlloyDB now defaults to PostgreSQL 17",
+          "summary": "New AlloyDB for PostgreSQL clusters will now default to PostgreSQL major version 17 when no specific version is chosen. This change ensures that new deployments benefit from the latest PostgreSQL features and improvements."
         }
       }
     ],

@@ -4,6 +4,20 @@
 
 ### Feature
 
+If the storage capacity of a Cloud SQL instance is larger than your application
+needs, then you can manually reduce, or shrink, your storage capacity to a smaller
+size.
+
+Depending on underlying disk size, storage shrink operations might incur
+considerable downtime. If your instance requires limited downtime, rather than
+using storage shrink capabilities, we recommend migrating your data to a new,
+smaller instance using Database Migration Service.
+
+For more information, see
+[About storage shrink](https://docs.cloud.google.com/sql/docs/sqlserver/about-storage-shrink).
+
+### Feature
+
 Cloud SQL for SQL Server now supports SQL Server 2025 ([GA](https://cloud.google.com/products/#product-launch-stages)):
 
 * SQL Server 2025 Standard

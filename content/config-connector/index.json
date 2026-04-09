@@ -19,11 +19,11 @@
         }
       },
       {
-        "kind": "Fixed",
-        "content": "Bug Fixes:\n\n* [`SQLInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance)\n  + Added client-side default for `RetainedBackups` and `RetentionUnit`, and validated the `edition` field.\n  + Added `replicaConfiguration` as an unmanageable field.\n  + Controller now correctly defaults the field `enablePrivatePathForGoogleCloudServices` to `false`.\n* [`CertificateManagerDnsAuthorization`](https://cloud.google.com/config-connector/docs/reference/resource-docs/certificatemanager/certificatemanagerdnsauthorization)\n  + Sanitized Kubernetes labels to avoid 400 errors from invalid characters.\n* `ConfigConnector` Core\n  + `preview` now performs an early exit when no resources are found to reconcile.\n  + Fixed CRD field description for shared parent.\n  + Fixed incorrect exit status in lint filter.\n  + Updated `mockgcp` to improve compute regional resource mocks and defaults.",
+        "kind": "Feature",
+        "content": "New Alpha Resources (Direct Reconciler):\n\n* `ParameterManagerParameter`\n  + Manage [Parameter Manager Parameters](https://cloud.google.com/secret-manager/parameter-manager/docs/overview).",
         "summary": {
-          "title": "Bug Fixes Deployed",
-          "summary": "Several bug fixes have been deployed, including improvements to SQL instance configurations, certificate manager DNS authorization, and the Config Connector core. These updates ensure better stability and resource management."
+          "title": "New Alpha Resources Available",
+          "summary": "We're excited to announce the release of new Alpha resources, including the ParameterManagerParameter. This allows you to manage Parameter Manager Parameters directly, enhancing your control over configuration settings. Explore the documentation for more details on how to integrate this new feature."
         }
       },
       {
@@ -43,11 +43,11 @@
         }
       },
       {
-        "kind": "Feature",
-        "content": "New Alpha Resources (Direct Reconciler):\n\n* `ParameterManagerParameter`\n  + Manage [Parameter Manager Parameters](https://cloud.google.com/secret-manager/parameter-manager/docs/overview).",
+        "kind": "Fixed",
+        "content": "Bug Fixes:\n\n* [`SQLInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance)\n  + Added client-side default for `RetainedBackups` and `RetentionUnit`, and validated the `edition` field.\n  + Added `replicaConfiguration` as an unmanageable field.\n  + Controller now correctly defaults the field `enablePrivatePathForGoogleCloudServices` to `false`.\n* [`CertificateManagerDnsAuthorization`](https://cloud.google.com/config-connector/docs/reference/resource-docs/certificatemanager/certificatemanagerdnsauthorization)\n  + Sanitized Kubernetes labels to avoid 400 errors from invalid characters.\n* `ConfigConnector` Core\n  + `preview` now performs an early exit when no resources are found to reconcile.\n  + Fixed CRD field description for shared parent.\n  + Fixed incorrect exit status in lint filter.\n  + Updated `mockgcp` to improve compute regional resource mocks and defaults.",
         "summary": {
-          "title": "New Alpha Resources Available",
-          "summary": "We're excited to announce the release of new Alpha resources, including the ParameterManagerParameter. This allows you to manage Parameter Manager Parameters directly, enhancing your control over configuration settings. Explore the documentation for more details on how to integrate this new feature."
+          "title": "Bug Fixes Deployed",
+          "summary": "Several bug fixes have been deployed, including improvements to SQL instance configurations, certificate manager DNS authorization, and the Config Connector core. These updates ensure better stability and resource management."
         }
       }
     ],

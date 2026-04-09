@@ -1,5 +1,15 @@
 # Service Extensions
 
+## 2026-04-09
+
+### Feature
+
+Google Kubernetes Engine (GKE) Gateway support for using extensions by using
+callouts to add custom logic into the load balancing processing path is in
+**General Availability**. For more information, see
+[GKE extensions](https://docs.cloud.google.com/service-extensions/docs/overview#integration-gke).
+
+---
 ## 2025-12-08
 
 ### Feature

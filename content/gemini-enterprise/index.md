@@ -66,13 +66,6 @@ This feature is generally available (GA). For more information, see
 
 ### Feature
 
-**Gemini Enterprise and NotebookLM Enterprise: BSI C5:2020 compliance**
-
-Gemini Enterprise and NotebookLM Enterprise are certified for
-[BSI C5:2020](https://cloud.google.com/security/compliance/bsi-c5) compliance.
-
-### Feature
-
 **Gemini Enterprise: Support for new actions (Preview)**
 
 New actions are available for the following data stores:
@@ -105,6 +98,13 @@ issues, or API errors.
 
 For more information, see
 [Access Gemini Enterprise connector error logs with Cloud Logging](https://docs.cloud.google.com/gemini/enterprise/docs/cloud-logging).
+
+### Feature
+
+**Gemini Enterprise and NotebookLM Enterprise: BSI C5:2020 compliance**
+
+Gemini Enterprise and NotebookLM Enterprise are certified for
+[BSI C5:2020](https://cloud.google.com/security/compliance/bsi-c5) compliance.
 
 ---
 ## 2026-03-30
@@ -191,18 +191,6 @@ early termination](https://docs.cloud.google.com/gemini/enterprise/docs/licenses
 
 ### Feature
 
-**Gemini Enterprise: Search generated images and videos**
-
-You can search your generated images and videos in the Gemini Enterprise
-assistant. You can also search for items directly in the Library.
-
-This feature is generally available (GA). For more information, see
-[Search your Gemini Enterprise content](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-organize#search-your-gemini-enterprise-content)
-and
-[View, download, and search generated images and videos](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-analyze#view_download_and_search_generated_images_and_videos).
-
-### Feature
-
 **Gemini Enterprise: Enhanced filtering for Microsoft SharePoint data stores (Preview)**
 
 You can now configure filters for your Microsoft SharePoint data stores using
@@ -212,6 +200,18 @@ specific SharePoint sites.
 
 This feature is in Public Preview. For more information, see [Connect Microsoft
 SharePoint Online](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-sharepoint).
+
+### Feature
+
+**Gemini Enterprise: Search generated images and videos**
+
+You can search your generated images and videos in the Gemini Enterprise
+assistant. You can also search for items directly in the Library.
+
+This feature is generally available (GA). For more information, see
+[Search your Gemini Enterprise content](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-organize#search-your-gemini-enterprise-content)
+and
+[View, download, and search generated images and videos](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-analyze#view_download_and_search_generated_images_and_videos).
 
 ---
 ## 2026-03-12

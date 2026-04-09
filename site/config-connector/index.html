@@ -2405,22 +2405,13 @@
 <p>Config Connector version 1.144.0 was identified as a bad release. Do not use this version - upgrade directly to 1.145.0 or later.</p>
 <h3 id="announcement">Announcement</h3>
 <p>Config Connector version 1.146.0 is now available.</p>
-<h3 id="fixed">Fixed</h3>
-<p>Bug Fixes:</p>
-<ul>
-<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance"><code>SQLInstance</code></a></li>
-<li>Added client-side default for <code>RetainedBackups</code> and <code>RetentionUnit</code>, and validated the <code>edition</code> field.</li>
-<li>Added <code>replicaConfiguration</code> as an unmanageable field.</li>
-<li>Controller now correctly defaults the field <code>enablePrivatePathForGoogleCloudServices</code> to <code>false</code>.</li>
-<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/certificatemanager/certificatemanagerdnsauthorization"><code>CertificateManagerDnsAuthorization</code></a></li>
-<li>Sanitized Kubernetes labels to avoid 400 errors from invalid characters.</li>
-<li><code>ConfigConnector</code> Core</li>
-<li><code>preview</code> now performs an early exit when no resources are found to reconcile.</li>
-<li>Fixed CRD field description for shared parent.</li>
-<li>Fixed incorrect exit status in lint filter.</li>
-<li>Updated <code>mockgcp</code> to improve compute regional resource mocks and defaults.</li>
-</ul>
 <h3 id="feature">Feature</h3>
+<p>New Alpha Resources (Direct Reconciler):</p>
+<ul>
+<li><code>ParameterManagerParameter</code></li>
+<li>Manage <a href="https://cloud.google.com/secret-manager/parameter-manager/docs/overview">Parameter Manager Parameters</a>.</li>
+</ul>
+<h3 id="feature_1">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster"><code>ContainerCluster</code></a></li>
@@ -2435,11 +2426,20 @@
 <li>Introduced identity and reference.</li>
 <li>Added structured reporting diff to numerous direct controllers to enhance diff visibility.</li>
 </ul>
-<h3 id="feature_1">Feature</h3>
-<p>New Alpha Resources (Direct Reconciler):</p>
+<h3 id="fixed">Fixed</h3>
+<p>Bug Fixes:</p>
 <ul>
-<li><code>ParameterManagerParameter</code></li>
-<li>Manage <a href="https://cloud.google.com/secret-manager/parameter-manager/docs/overview">Parameter Manager Parameters</a>.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance"><code>SQLInstance</code></a></li>
+<li>Added client-side default for <code>RetainedBackups</code> and <code>RetentionUnit</code>, and validated the <code>edition</code> field.</li>
+<li>Added <code>replicaConfiguration</code> as an unmanageable field.</li>
+<li>Controller now correctly defaults the field <code>enablePrivatePathForGoogleCloudServices</code> to <code>false</code>.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/certificatemanager/certificatemanagerdnsauthorization"><code>CertificateManagerDnsAuthorization</code></a></li>
+<li>Sanitized Kubernetes labels to avoid 400 errors from invalid characters.</li>
+<li><code>ConfigConnector</code> Core</li>
+<li><code>preview</code> now performs an early exit when no resources are found to reconcile.</li>
+<li>Fixed CRD field description for shared parent.</li>
+<li>Fixed incorrect exit status in lint filter.</li>
+<li>Updated <code>mockgcp</code> to improve compute regional resource mocks and defaults.</li>
 </ul>
 <hr />
 <h2 id="2026-02-22">2026-02-22</h2>

@@ -15,11 +15,79 @@
 
 ### Security
 
-Fixed CVE-2026-23271 in the Linux kernel.
+Fixed CVE-2024-43826 in the Linux kernel.
 
 ### Security
 
 Fixed CVE-2025-38704 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39748 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39764 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40135 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68206 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68239 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71161 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23004 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23050 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23138 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23245 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23270 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23271 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23277 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23340 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23397 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23398 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23412 in the Linux kernel.
 
 ### Security
 
@@ -28,74 +96,6 @@ Fixed CVE-2026-23413 in the Linux kernel.
 ### Security
 
 Fixed CVE-2026-23414 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2024-43826 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-68206 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23412 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-40135 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23138 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-39764 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23050 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23270 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23245 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23277 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23004 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-68239 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23398 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23340 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-39748 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-71161 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23397 in the Linux kernel.
 
 ### Change
 
@@ -110,19 +110,15 @@ Fixed CVE-2026-23397 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23381 in the Linux kernel.
-
-### Security
-
-Fixed KCTF-9df9578 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23398 in the Linux kernel.
-
-### Security
-
 Fixed CVE-2025-38192 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40135 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-68206 in the Linux kernel.
 
 ### Security
 
@@ -130,11 +126,7 @@ Fixed CVE-2025-68239 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23271 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23397 in the Linux kernel.
+Fixed CVE-2025-68265 in the Linux kernel.
 
 ### Security
 
@@ -146,15 +138,19 @@ Fixed CVE-2026-23100 in the Linux kernel.
 
 ### Security
 
+Fixed CVE-2026-23113 in the Linux kernel.
+
+### Security
+
 Fixed CVE-2026-23245 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2025-68206 in the Linux kernel.
+Fixed CVE-2026-23270 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2025-68265 in the Linux kernel.
+Fixed CVE-2026-23271 in the Linux kernel.
 
 ### Security
 
@@ -162,15 +158,19 @@ Fixed CVE-2026-23277 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2025-40135 in the Linux kernel.
+Fixed CVE-2026-23381 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23113 in the Linux kernel.
+Fixed CVE-2026-23397 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23270 in the Linux kernel.
+Fixed CVE-2026-23398 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-9df9578 in the Linux kernel.
 
 ### Change
 
@@ -185,19 +185,7 @@ Fixed CVE-2026-23270 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23138 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-68239 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23398 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23270 in the Linux kernel.
+Fixed CVE-2025-40135 in the Linux kernel.
 
 ### Security
 
@@ -205,31 +193,7 @@ Fixed CVE-2025-68206 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23397 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23388 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23004 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23391 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-40135 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23271 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23050 in the Linux kernel.
+Fixed CVE-2025-68239 in the Linux kernel.
 
 ### Security
 
@@ -237,11 +201,47 @@ Fixed CVE-2025-71161 in the Linux kernel.
 
 ### Security
 
+Fixed CVE-2026-23004 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23050 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23138 in the Linux kernel.
+
+### Security
+
 Fixed CVE-2026-23245 in the Linux kernel.
 
 ### Security
 
+Fixed CVE-2026-23270 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23271 in the Linux kernel.
+
+### Security
+
 Fixed CVE-2026-23277 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23388 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23391 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23397 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23398 in the Linux kernel.
 
 ### Change
 
@@ -269,17 +269,9 @@ Fixed CVE-2026-23277 in the Linux kernel.
 
 Upgraded sys-apps/iproute2 to version 6.18.0.
 
-### Security
+### Change
 
-Fixed KCTF-7cb9a23 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23270 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2024-14027 in the Linux kernel.
+Fixes a kernel panic in virtio\_pci teardown when virtually queues are conditionally skipped.
 
 ### Fixed
 
@@ -289,6 +281,18 @@ Fixed a kernel panic in virtio\_pci teardown when virtually queues are condition
 
 Fixed CVE-2026-33997 and CVE-2026-34040 in Docker.
 
+### Security
+
+Fixed CVE-2024-14027 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-7cb9a23 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23270 in the Linux kernel.
+
 ### Change
 
 Upgraded sys-apps/iproute2 to version 6.18.0.
@@ -296,10 +300,6 @@ Upgraded sys-apps/iproute2 to version 6.18.0.
 ### Security
 
 Fixed KCTF-7cb9a23 in the Linux kernel.
-
-### Change
-
-Fixes a kernel panic in virtio\_pci teardown when virtually queues are conditionally skipped.
 
 ### Change
 
@@ -314,7 +314,19 @@ Fixes a kernel panic in virtio\_pci teardown when virtually queues are condition
 
 ### Change
 
+Made it so that /dev/hugepages is mounted as noexec for cchost boards.
+
+### Change
+
 Made it so that /mnt/disks is mounted as noexec for cchost boards.
+
+### Change
+
+Made it so that /run is mounted as noexec for cchost boards.
+
+### Change
+
+Upgraded sys-apps/iproute2 to version 6.18.0.
 
 ### Fixed
 
@@ -322,7 +334,7 @@ Fixed a kernel panic in virtio\_pci teardown when virtually queues are condition
 
 ### Security
 
-Fixed CVE-2026-23304 in the Linux kernel.
+Fixed CVE-2024-14027 in the Linux kernel.
 
 ### Security
 
@@ -330,27 +342,15 @@ Fixed CVE-2026-23270 in the Linux kernel.
 
 ### Security
 
-Fixed KCTF-7cb9a23 in the Linux kernel.
-
-### Change
-
-Made it so that /dev/hugepages is mounted as noexec for cchost boards.
-
-### Change
-
-Upgraded sys-apps/iproute2 to version 6.18.0.
+Fixed CVE-2026-23304 in the Linux kernel.
 
 ### Security
 
 Fixed CVE-2026-33997 and CVE-2026-34040 in Docker.
 
-### Change
-
-Made it so that /run is mounted as noexec for cchost boards.
-
 ### Security
 
-Fixed CVE-2024-14027 in the Linux kernel.
+Fixed KCTF-7cb9a23 in the Linux kernel.
 
 ---
 ## 2026-04-01
@@ -437,57 +437,17 @@ Fixed KCTF-7cb9a23 in the Linux kernel.
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.12.77](https://cos.googlesource.com/third_party/kernel/+/ef4e393c358e8c7675d8c2a260cbca1163ead2a3 ) | v27.5.1 | v2.2.1 | [See List](https://storage.googleapis.com/cos-tools/19666.0.0/lakitu/gpu_driver_versions.textproto) |
 
-### Security
+### Change
 
-Fixed CVE-2026-23304 in the Linux kernel.
+Fixed CVE-2026-27135 in net-libs/nghttp2.
 
-### Security
+### Change
 
-Fixed CVE-2026-23297 in the Linux kernel.
+Updated the Linux kernel to v6.12.77.
 
-### Security
+### Feature
 
-Fixed CVE-2026-23390 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23380 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23359 in the Linux kernel.
-
-### Security
-
-Fixed KCTF-9df9578 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23383 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23316 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23300 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23340 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23303 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23292 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23310 in the Linux kernel.
+Enabled dynamic configuration of FUSE max pages limit.
 
 ### Feature
 
@@ -495,19 +455,11 @@ Enabled dynamic configuration of FUSE max pages limit.
 
 ### Security
 
-Fixed CVE-2026-23360 in the Linux kernel.
+Fixed CVE-2026-23292 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23319 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23296 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23381 in the Linux kernel.
+Fixed CVE-2026-27135 in net-libs/nghttp2.
 
 ### Security
 
@@ -521,11 +473,39 @@ Runtime sysctl changes:
 
 ### Security
 
-Fixed CVE-2026-23388 in the Linux kernel.
+Fixed CVE-2026-23296 in the Linux kernel.
 
-### Change
+### Security
 
-Fixed CVE-2026-27135 in net-libs/nghttp2.
+Fixed CVE-2026-23297 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23300 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23303 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23304 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23310 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23316 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23319 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23340 in the Linux kernel.
 
 ### Security
 
@@ -533,15 +513,35 @@ Fixed CVE-2026-23352 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-27135 in net-libs/nghttp2.
+Fixed CVE-2026-23359 in the Linux kernel.
 
-### Change
+### Security
 
-Updated the Linux kernel to v6.12.77.
+Fixed CVE-2026-23360 in the Linux kernel.
 
-### Feature
+### Security
 
-Enabled dynamic configuration of FUSE max pages limit.
+Fixed CVE-2026-23380 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23381 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23383 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23388 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23390 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-9df9578 in the Linux kernel.
 
 ### Change
 
@@ -560,13 +560,9 @@ Runtime sysctl changes:
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.12.68](https://cos.googlesource.com/third_party/kernel/+/bcbb125a5a57da7523992b266b4f07d3510bd0de ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.220.99/lakitu/gpu_driver_versions.textproto) |
 
-### Security
+### Feature
 
-Fixed CVE-2026-23297 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-27135 in net-libs/nghttp2.
+Enabled dynamic configuration of FUSE max pages limit.
 
 ### Security
 
@@ -574,69 +570,15 @@ Fixed CVE-2026-23292 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23296 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23319 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23360 in the Linux kernel.
-
-### Security
-
 Fixed CVE-2026-23293 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23388 in the Linux kernel.
+Fixed CVE-2026-23296 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23316 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23381 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23380 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23359 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23383 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-27448 in dev-python/pyopenssl.
-
-### Security
-
-Fixed CVE-2026-23340 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23310 in the Linux kernel.
-
-### Change
-
-Runtime sysctl changes:
-
-* Added: fs.fuse.max\_pages\_limit: 256
-
-### Security
-
-Fixed CVE-2026-27459 in dev-python/pyopenssl.
-
-### Security
-
-Fixed CVE-2026-23352 in the Linux kernel.
+Fixed CVE-2026-23297 in the Linux kernel.
 
 ### Security
 
@@ -644,19 +586,77 @@ Fixed CVE-2026-23300 in the Linux kernel.
 
 ### Security
 
-Fixed KCTF-9df9578 in the Linux kernel.
+Fixed CVE-2026-23303 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23310 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23316 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23319 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23340 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23352 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23359 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23360 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23380 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23381 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23383 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23388 in the Linux kernel.
 
 ### Security
 
 Fixed CVE-2026-23390 in the Linux kernel.
 
-### Feature
+### Security
 
-Enabled dynamic configuration of FUSE max pages limit.
+Fixed CVE-2026-27135 in net-libs/nghttp2.
 
 ### Security
 
-Fixed CVE-2026-23303 in the Linux kernel.
+Fixed CVE-2026-27448 in dev-python/pyopenssl.
+
+### Security
+
+Fixed CVE-2026-27459 in dev-python/pyopenssl.
+
+### Security
+
+Fixed KCTF-9df9578 in the Linux kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Added: fs.fuse.max\_pages\_limit: 256
 
 ### Change
 
@@ -669,17 +669,9 @@ Fixed CVE-2026-23303 in the Linux kernel.
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.6.122](https://cos.googlesource.com/third_party/kernel/+/31a85cce1fd063629a36c894be803b515077311b ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.381.56/lakitu/gpu_driver_versions.textproto) |
 
-### Security
+### Feature
 
-Fixed CVE-2026-23386 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23304 in the Linux kernel.
-
-### Security
-
-Fixed KCTF-9df9578 in the Linux kernel.
+Added support for loading the ublk kernel module.
 
 ### Security
 
@@ -687,43 +679,11 @@ Fixed CVE-2026-23292 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23296 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23303 in the Linux kernel.
-
-### Security
-
-Fixed the "CrackArmor" vulnerability in the Linux kernel.
-
-### Security
-
 Fixed CVE-2026-23293 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23310 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23381 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-27135 in net-libs/nghttp2.
-
-### Security
-
-Fixed KCTF-329f0b9 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-27448 in dev-python/pyopenssl.
-
-### Security
-
-Fixed CVE-2026-23352 in the Linux kernel.
+Fixed CVE-2026-23296 in the Linux kernel.
 
 ### Security
 
@@ -731,19 +691,15 @@ Fixed CVE-2026-23300 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23359 in the Linux kernel.
-
-### Feature
-
-Added support for loading the ublk kernel module.
+Fixed CVE-2026-23303 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23392 in the Linux kernel.
+Fixed CVE-2026-23304 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23368 in the Linux kernel.
+Fixed CVE-2026-23310 in the Linux kernel.
 
 ### Security
 
@@ -751,7 +707,55 @@ Fixed CVE-2026-23340 in the Linux kernel.
 
 ### Security
 
+Fixed CVE-2026-23352 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23359 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23368 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23381 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23386 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23392 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-27135 in net-libs/nghttp2.
+
+### Security
+
+Fixed CVE-2026-27448 in dev-python/pyopenssl.
+
+### Security
+
+Fixed CVE-2026-27459 in dev-python/pyopenssl.
+
+### Security
+
 Fixed CVE-2026-32597 with pyjwt package upgrade to 2.12.1.
+
+### Security
+
+Fixed KCTF-329f0b9 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-9df9578 in the Linux kernel.
+
+### Security
+
+Fixed the "CrackArmor" vulnerability in the Linux kernel.
 
 ### Change
 
@@ -766,10 +770,6 @@ Runtime sysctl changes:
 * Changed: user.max\_time\_namespaces: 31743 -> 31599
 * Changed: user.max\_user\_namespaces: 31743 -> 31599
 * Changed: user.max\_uts\_namespaces: 31743 -> 31599
-
-### Security
-
-Fixed CVE-2026-27459 in dev-python/pyopenssl.
 
 ### Change
 
@@ -784,35 +784,7 @@ Fixed CVE-2026-27459 in dev-python/pyopenssl.
 
 ### Security
 
-Fixed CVE-2026-23386 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23310 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23388 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23300 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23352 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23296 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-27448 in dev-python/pyopenssl.
-
-### Security
-
-Fixed CVE-2026-23391 in the Linux kernel.
+Fixed CVE-2026-23292 in the Linux kernel.
 
 ### Security
 
@@ -820,11 +792,75 @@ Fixed CVE-2026-23293 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23292 in the Linux kernel.
+Fixed CVE-2026-23296 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23300 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23303 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23304 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23310 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23351 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23352 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23359 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23368 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23381 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23386 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23388 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23391 in the Linux kernel.
 
 ### Security
 
 Fixed CVE-2026-23392 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-27135 in net-libs/nghttp2.
+
+### Security
+
+Fixed CVE-2026-27448 in dev-python/pyopenssl.
+
+### Security
+
+Fixed the "CrackArmor" vulnerability in the Linux kernel.
+
+### Security
+
+Fixed the "CrackArmor" vulnerability in the Linux kernel.
 
 ### Change
 
@@ -840,42 +876,6 @@ Runtime sysctl changes:
 * Changed: user.max\_user\_namespaces: 31743 -> 31599
 * Changed: user.max\_uts\_namespaces: 31743 -> 31599
 
-### Security
-
-Fixed CVE-2026-27135 in net-libs/nghttp2.
-
-### Security
-
-Fixed the "CrackArmor" vulnerability in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23351 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23368 in the Linux kernel.
-
-### Security
-
-Fixed the "CrackArmor" vulnerability in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23381 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23303 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23359 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23304 in the Linux kernel.
-
 ### Change
 
 
@@ -887,21 +887,9 @@ Fixed CVE-2026-23304 in the Linux kernel.
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.1.161](https://cos.googlesource.com/third_party/kernel/+/a5e67a9c58dc766e562460c826eac46e42da4ada ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.582.55/lakitu/gpu_driver_versions.textproto) |
 
-### Security
+### Fixed
 
-Fixed CVE-2026-23391 in the Linux kernel.
-
-### Security
-
-Fixed KCTF-329f0b9 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23304 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-32597 with pyjwt package upgrade to 2.12.1.
+Updated cos-gpu-installer to v2.6.1.
 
 ### Security
 
@@ -909,7 +897,15 @@ Fixed CVE-2026-23292 in the Linux kernel.
 
 ### Security
 
+Fixed CVE-2026-23293 in the Linux kernel.
+
+### Security
+
 Fixed CVE-2026-23296 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23300 in the Linux kernel.
 
 ### Security
 
@@ -917,7 +913,11 @@ Fixed CVE-2026-23303 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23293 in the Linux kernel.
+Fixed CVE-2026-23304 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23340 in the Linux kernel.
 
 ### Security
 
@@ -925,11 +925,43 @@ Fixed CVE-2026-23352 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23340 in the Linux kernel.
+Fixed CVE-2026-23359 in the Linux kernel.
 
-### Fixed
+### Security
 
-Updated cos-gpu-installer to v2.6.1.
+Fixed CVE-2026-23368 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23388 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23391 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23392 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-27135 in net-libs/nghttp2.
+
+### Security
+
+Fixed CVE-2026-27448 in dev-python/pyopenssl.
+
+### Security
+
+Fixed CVE-2026-27459 in dev-python/pyopenssl.
+
+### Security
+
+Fixed CVE-2026-32597 with pyjwt package upgrade to 2.12.1.
+
+### Security
+
+Fixed KCTF-329f0b9 in the Linux kernel.
 
 ### Change
 
@@ -945,38 +977,6 @@ Runtime sysctl changes:
 * Changed: user.max\_user\_namespaces: 31751 -> 31607
 * Changed: user.max\_uts\_namespaces: 31751 -> 31607
 
-### Security
-
-Fixed CVE-2026-27459 in dev-python/pyopenssl.
-
-### Security
-
-Fixed CVE-2026-27448 in dev-python/pyopenssl.
-
-### Security
-
-Fixed CVE-2026-23388 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23368 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-27135 in net-libs/nghttp2.
-
-### Security
-
-Fixed CVE-2026-23300 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23359 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23392 in the Linux kernel.
-
 ---
 ## 2026-03-26
 
@@ -991,13 +991,37 @@ Fixed CVE-2026-23392 in the Linux kernel.
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.12.67](https://cos.googlesource.com/third_party/kernel/+/665d2061d21ae56123f4de285c75962c6cf56b91 ) | v27.5.1 | v2.2.2 | [See List](https://storage.googleapis.com/cos-tools/19506.0.98/lakitu/gpu_driver_versions.textproto) |
 
+### Change
+
+Added support for the Lustre 2.14.0\_p249 drivers.
+
+### Change
+
+Fixed CVE-2026-32597 with pyjwt package upgrade to 2.12.1.
+
+### Feature
+
+Added support for loading the ublk kernel module.
+
+### Fixed
+
+Fixed an ek-cpu-balloon bug which would result in CPUs being underreported on ek machines with SMT enabled.
+
+### Fixed
+
+Upgraded app-admin/google-osconfig-agent to v20260119.00.
+
 ### Security
 
-Fixed CVE-2026-23086 in the Linux kernel.
+Fixed CVE-2025-71265 in the Linux kernel.
 
 ### Security
 
-Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.
+Fixed CVE-2025-71266 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71267 in the Linux kernel.
 
 ### Security
 
@@ -1009,43 +1033,7 @@ Fixed CVE-2026-23069 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23243 in the Linux kernel.
-
-### Fixed
-
-Upgraded app-admin/google-osconfig-agent to v20260119.00.
-
-### Security
-
-Fixed CVE-2026-23262 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-71267 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23107 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23095 in the Linux kernel.
-
-### Change
-
-Added support for the Lustre 2.14.0\_p249 drivers.
-
-### Security
-
-Fixed CVE-2026-23254 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23099 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23097 in the Linux kernel.
+Fixed CVE-2026-23083 in the Linux kernel.
 
 ### Security
 
@@ -1053,31 +1041,19 @@ Fixed CVE-2026-23085 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2025-71266 in the Linux kernel.
-
-### Change
-
-Fixed CVE-2026-32597 with pyjwt package upgrade to 2.12.1.
-
-### Feature
-
-Added support for loading the ublk kernel module.
+Fixed CVE-2026-23086 in the Linux kernel.
 
 ### Security
 
-Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.
+Fixed CVE-2026-23095 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23105 in the Linux kernel.
+Fixed CVE-2026-23097 in the Linux kernel.
 
 ### Security
 
-Fixed KCTF-329f0b9 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23083 in the Linux kernel.
+Fixed CVE-2026-23099 in the Linux kernel.
 
 ### Security
 
@@ -1085,15 +1061,31 @@ Fixed CVE-2026-23103 in the Linux kernel.
 
 ### Security
 
-Updated dev-libs/openssl to v3.5.5. This resolves CVE-2025-15467.
-
-### Fixed
-
-Fixed an ek-cpu-balloon bug which would result in CPUs being underreported on ek machines with SMT enabled.
+Fixed CVE-2026-23105 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2025-71265 in the Linux kernel.
+Fixed CVE-2026-23107 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23110 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23243 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23254 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23262 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-329f0b9 in the Linux kernel.
 
 ### Security
 
@@ -1101,7 +1093,15 @@ Fixed KCTF-c9bc175 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23110 in the Linux kernel.
+Updated dev-libs/openssl to v3.5.5. This resolves CVE-2025-15467.
+
+### Security
+
+Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.
+
+### Security
+
+Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.
 
 ### Change
 
@@ -1118,6 +1118,26 @@ Fixed CVE-2026-23110 in the Linux kernel.
 
 Added support for the Lustre 2.14.0\_p249 drivers.
 
+### Feature
+
+Added support for loading the ublk kernel module.
+
+### Fixed
+
+Updated cos-gpu-installer to v2.6.1.
+
+### Fixed
+
+Upgraded app-admin/google-osconfig-agent to v20260119.00.
+
+### Fixed
+
+Upgraded sys-apps/file to v5.47-r1.
+
+### Security
+
+Fixed CVE-2026-23231 in the Linux kernel.
+
 ### Security
 
 Fixed CVE-2026-23243 in the Linux kernel.
@@ -1125,14 +1145,6 @@ Fixed CVE-2026-23243 in the Linux kernel.
 ### Security
 
 Fixed CVE-2026-23254 in the Linux kernel.
-
-### Security
-
-Fixed KCTF-329f0b9 in the Linux kernel.
-
-### Fixed
-
-Upgraded app-admin/google-osconfig-agent to v20260119.00.
 
 ### Security
 
@@ -1144,19 +1156,7 @@ Fixed CVE-2026-32597 with pyjwt package upgrade to 2.12.1.
 
 ### Security
 
-Fixed CVE-2026-23231 in the Linux kernel.
-
-### Feature
-
-Added support for loading the ublk kernel module.
-
-### Fixed
-
-Updated cos-gpu-installer to v2.6.1.
-
-### Fixed
-
-Upgraded sys-apps/file to v5.47-r1.
+Fixed KCTF-329f0b9 in the Linux kernel.
 
 ---
 ## 2026-03-25
@@ -1172,14 +1172,6 @@ Upgraded sys-apps/file to v5.47-r1.
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.12.68](https://cos.googlesource.com/third_party/kernel/+/98c1b6ad6f970918e8fe029d2ee331c556111ae3 ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.220.87/lakitu/gpu_driver_versions.textproto) |
 
-### Security
-
-Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.
-
-### Security
-
-Fixed CVE-2025-71265 in the Linux kernel.
-
 ### Change
 
 Added support for the Lustre 2.14.0\_p249 drivers.
@@ -1190,21 +1182,11 @@ Added support for loading the ublk kernel module.
 
 ### Fixed
 
-Upgraded app-admin/google-osconfig-agent to v20260119.00.
-
-### Change
-
-Runtime sysctl changes:
-
-* Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 188034 250715 376068
-
-### Security
-
-Fixed CVE-2025-71266 in the Linux kernel.
+Added CPU balloon support for Arm CPUs.
 
 ### Fixed
 
-Added CPU balloon support for Arm CPUs.
+Upgraded app-admin/google-osconfig-agent to v20260119.00.
 
 ### Fixed
 
@@ -1212,19 +1194,31 @@ Upgraded sys-apps/file to v5.47-r1.
 
 ### Security
 
+Fixed CVE-2025-71265 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71266 in the Linux kernel.
+
+### Security
+
 Fixed CVE-2025-71267 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23262 in the Linux kernel.
-
-### Security
-
-Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.
-
-### Security
-
 Fixed CVE-2025-71268 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23243 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23254 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23262 in the Linux kernel.
 
 ### Security
 
@@ -1236,15 +1230,21 @@ Fixed KCTF-329f0b9 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23243 in the Linux kernel.
-
-### Security
-
 Fixed KCTF-c9bc175 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23254 in the Linux kernel.
+Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.
+
+### Security
+
+Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 188034 250715 376068
 
 ### Change
 
@@ -1257,33 +1257,21 @@ Fixed CVE-2026-23254 in the Linux kernel.
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.12.76](https://cos.googlesource.com/third_party/kernel/+/8ecb3fb8b4bed2db662e41f5991ae84debec7939 ) | v27.5.1 | v2.2.1 | [See List](https://storage.googleapis.com/cos-tools/19654.0.0/lakitu/gpu_driver_versions.textproto) |
 
-### Security
-
-Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.
-
-### Security
-
-Fixed KCTF-c9bc175 in the Linux kernel.
-
-### Fixed
-
-Upgraded virtual/logger to v0-r3.
-
 ### Fixed
 
 Fixed an ek-cpu-balloon bug which would result in CPUs being underreported on ek machines with SMT enabled.
 
 ### Fixed
 
-Upgraded dev-libs/expat to v2.7.5.
-
-### Security
-
-Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.
+Upgraded dev-db/sqlite to v3.51.3.
 
 ### Fixed
 
-Upgraded dev-db/sqlite to v3.51.3.
+Upgraded dev-libs/expat to v2.7.5.
+
+### Fixed
+
+Upgraded virtual/logger to v0-r3.
 
 ### Security
 
@@ -1292,6 +1280,18 @@ Fixed CVE-2026-32597 with pyjwt package upgrade to v2.12.1.
 ### Security
 
 Fixed KCTF-329f0b9 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-c9bc175 in the Linux kernel.
+
+### Security
+
+Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.
+
+### Security
+
+Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.
 
 ---
 ## 2026-03-23
@@ -1307,39 +1307,13 @@ Fixed KCTF-329f0b9 in the Linux kernel.
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.12.68](https://cos.googlesource.com/third_party/kernel/+/6df21e3fc3957bf2dc7eeb7d8e703fc57b1e07ac ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.220.72/lakitu/gpu_driver_versions.textproto) |
 
-### Security
-
-Fixed CVE-2026-23254 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-71266 in the Linux kernel.
-
 ### Change
 
-Runtime sysctl changes:
-
-* Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 188034 250715 376068
-
-### Security
-
-Fixed CVE-2026-23262 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23243 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-71268 in the Linux kernel.
+Added support for the Lustre 2.14.0\_p249 drivers.
 
 ### Fixed
 
 Added CPU balloon support for Arm CPUs.
-
-### Security
-
-Fixed CVE-2025-71267 in the Linux kernel.
 
 ### Fixed
 
@@ -1353,17 +1327,43 @@ Upgraded sys-apps/file to v5.47-r1.
 
 Fixed CVE-2025-71265 in the Linux kernel.
 
-### Change
+### Security
 
-Added support for the Lustre 2.14.0\_p249 drivers.
+Fixed CVE-2025-71266 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71267 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-71268 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23243 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23254 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23262 in the Linux kernel.
+
+### Security
+
+Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.
 
 ### Security
 
 Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.
 
-### Security
+### Change
 
-Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.
+Runtime sysctl changes:
+
+* Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 188034 250715 376068
 
 ### Change
 
@@ -1376,29 +1376,13 @@ Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.6.122](https://cos.googlesource.com/third_party/kernel/+/d8086709417b04f7a79c84710f6bf3db42e87814 ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.381.45/lakitu/gpu_driver_versions.textproto) |
 
-### Security
+### Change
 
-Fixed CVE-2025-69647 in binutils-libs.
-
-### Security
-
-Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.
+Added support for the Lustre 2.14.0\_p249 drivers.
 
 ### Fixed
 
 Updated cos-gpu-installer to v2.6.1.
-
-### Security
-
-Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.
-
-### Security
-
-Fixed CVE-2025-22026 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23254 in the Linux kernel.
 
 ### Fixed
 
@@ -1408,9 +1392,21 @@ Upgraded app-admin/google-osconfig-agent to v20260119.00.
 
 Upgraded sys-apps/file to v5.47-r1.
 
-### Change
+### Security
 
-Added support for the Lustre 2.14.0\_p249 drivers.
+Fixed CVE-2025-22026 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-69647 in binutils-libs.
+
+### Security
+
+Fixed CVE-2025-69648 in binutils-libs.
+
+### Security
+
+Fixed CVE-2026-23254 in the Linux kernel.
 
 ### Security
 
@@ -1418,7 +1414,11 @@ Fixed KCTF-71e99ee in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2025-69648 in binutils-libs.
+Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.
+
+### Security
+
+Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.
 
 ### Change
 
@@ -1430,6 +1430,22 @@ Fixed CVE-2025-69648 in binutils-libs.
 | --- | --- | --- | --- |
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.12.76](https://cos.googlesource.com/third_party/kernel/+/788077df45931035984615c9958e274d89bd7e1f ) | v27.5.1 | v2.2.1 | [See List](https://storage.googleapis.com/cos-tools/19633.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Added support for the Lustre 2.14.0\_p249 drivers.
+
+### Feature
+
+Added support for 8th generation TPU devices.
+
+### Fixed
+
+Upgraded app-admin/google-osconfig-agent to v20260119.00.
+
+### Fixed
+
+Upgraded chromeos-base/google-breakpad to v2026.03.03.162944-r270.
 
 ### Fixed
 
@@ -1447,29 +1463,13 @@ Upgraded sys-apps/file to v5.47-r1.
 
 Fixed KCTF-c9bc175 in the Linux kernel.
 
-### Fixed
-
-Upgraded app-admin/google-osconfig-agent to v20260119.00.
-
-### Security
-
-Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.
-
-### Change
-
-Added support for the Lustre 2.14.0\_p249 drivers.
-
 ### Security
 
 Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.
 
-### Fixed
+### Security
 
-Upgraded chromeos-base/google-breakpad to v2026.03.03.162944-r270.
-
-### Feature
-
-Added support for 8th generation TPU devices.
+Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.
 
 ### Change
 
@@ -1482,13 +1482,25 @@ Added support for 8th generation TPU devices.
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.6.123](https://cos.googlesource.com/third_party/kernel/+/e91b457d7df4624c595f612f65f6a2f2bc973df4 ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.534.44/lakitu/gpu_driver_versions.textproto) |
 
-### Fixed
+### Change
 
-Upgraded sys-apps/file to v5.47-r1.
+Added support for the Lustre 2.14.0\_p249 drivers.
 
 ### Fixed
 
 Updated cos-gpu-installer to v2.6.1.
+
+### Fixed
+
+Upgraded sys-apps/file to v5.47-r1.
+
+### Security
+
+Fixed CVE-2026-23231 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23243 in the Linux kernel.
 
 ### Security
 
@@ -1504,18 +1516,6 @@ Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.
 
 ### Change
 
-Added support for the Lustre 2.14.0\_p249 drivers.
-
-### Security
-
-Fixed CVE-2026-23231 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23243 in the Linux kernel.
-
-### Change
-
 
 
 ### cos-113-18244-582-47
@@ -1525,21 +1525,17 @@ Fixed CVE-2026-23243 in the Linux kernel.
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.1.161](https://cos.googlesource.com/third_party/kernel/+/824daafa5f157963eea76b8fc10de1d2df43be70 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.582.47/lakitu/gpu_driver_versions.textproto) |
 
-### Security
-
-Fixed CVE-2025-69647 in binutils-libs.
-
 ### Fixed
 
 Upgraded sys-apps/file to v5.47-r1.
 
 ### Security
 
-Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.
+Fixed CVE-2024-26822 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2024-26822 in the Linux kernel.
+Fixed CVE-2025-69647 in binutils-libs.
 
 ### Security
 
@@ -1548,6 +1544,10 @@ Fixed CVE-2026-23243 in the Linux kernel.
 ### Security
 
 Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.
+
+### Security
+
+Updated sys-libs/binutils-libs to 2.46.0. This resolves CVE-2025-69644.
 
 ---
 ## 2026-03-17
@@ -1576,63 +1576,7 @@ Updated net-misc/curl to v8.19.0. This resolves CVE-2026-1965 and CVE-2026-3783.
 
 ### Change
 
-Updated cos-gpu-installer to v2.6.0.
-
-### Change
-
-Upgraded dev-libs/glib to v2.86.3. This fixes CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.
-
-### Security
-
-Fixed CVE-2026-23229 in the Linux kernel.
-
-### Fixed
-
-Upgraded dev-util/gdbus-codegen to v2.86.3.
-
-### Change
-
-Upgraded CASFS to v0.1.2.
-
-### Security
-
-Fixed a packet header clobbering issue in the IDPF driver occurring when SWIOTLB and header split are enabled.
-
-### Change
-
-Upgraded app-containers/containerd to v2.2.2.
-
-### Fixed
-
-Upgraded app-admin/fluent-bit to v4.2.3.1.
-
-### Breaking
-
-`/run` is now mounted with the `noexec` option.
-
-### Fixed
-
-Fixed performance and efficiency issues in TCPX through optimized netmem handling and scatter-gather list coalescing for large memory mappings.
-
-### Feature
-
-Added support for larger ring sizes for the GVNIC driver in DQO-QPL mode.
-
-### Security
-
-Fixed KCTF-71e99ee in the Linux kernel.
-
-### Breaking
-
-`/dev/hugepages` is now mounted with the `noexec` option.
-
-### Fixed
-
-Upgraded the galog version to v0.0.0-20250924170816-9dbf105986f4 in google-guest-agent to fix an issue with high CPU consumption.
-
-### Security
-
-Fixed CVE-2026-23240 in the Linux kernel.
+Added support for the Lustre 2.14.0\_p246 drivers.
 
 ### Change
 
@@ -1641,6 +1585,66 @@ Added support for the Lustre 2.14.0\_p246 drivers.
 ### Change
 
 Fixed the "CrackArmor" vulnerability in the Linux kernel.
+
+### Change
+
+Fixed the "CrackArmor" vulnerability in the Linux kernel.
+
+### Breaking
+
+`/dev/hugepages` is now mounted with the `noexec` option.
+
+### Breaking
+
+`/dev/hugepages` is now mounted with the `noexec` option.
+
+### Change
+
+Updated cos-gpu-installer to v2.6.0.
+
+### Breaking
+
+`/run` is now mounted with the `noexec` option.
+
+### Change
+
+Updated the Linux kernel to v6.12.76.
+
+### Change
+
+Updated cos-gpu-installer to v2.6.0.
+
+### Change
+
+Upgraded CASFS to v0.1.2.
+
+### Change
+
+Upgraded CASFS to v0.1.2.
+
+### Feature
+
+Switched to using systemd-resolved stub resolver by default, which fixes DNS caching issues.
+
+### Change
+
+Upgraded app-containers/containerd to v2.2.2.
+
+### Feature
+
+Added support for larger ring sizes for the GVNIC driver in DQO-QPL mode.
+
+### Change
+
+Upgraded dev-libs/glib to v2.86.3. This fixes CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.
+
+### Feature
+
+Added support for larger ring sizes for the GVNIC driver in DQO-QPL mode.
+
+### Fixed
+
+Fixed a kernel bug which could cause traffic drops after NIC resets.
 
 ### Fixed
 
@@ -1658,29 +1662,13 @@ Upgraded app-admin/sosreport to v4.11.0.
 
 Fixed a kernel bug which could cause traffic drops after NIC resets.
 
-### Security
+### Fixed
 
-Fixed CVE-2026-23230 in the Linux kernel.
+Upgraded dev-util/gn to v2331.
 
 ### Fixed
 
-Fixed a kernel bug which could cause traffic drops after NIC resets.
-
-### Fixed
-
-Upgraded dev-utils/gdbus-codegen to v2.86.3.
-
-### Fixed
-
-Upgraded the galog version to v0.0.0-20250924170816-9dbf105986f4 in google-guest-agent to fix an issue with high CPU consumption.
-
-### Feature
-
-Added support for larger ring sizes for the GVNIC driver in DQO-QPL mode.
-
-### Feature
-
-Switched to using systemd-resolved stub resolver by default, which fixes DNS caching issues.
+Fixed performance and efficiency issues in TCPX through optimized netmem handling and scatter-gather list coalescing for large memory mappings.
 
 ### Fixed
 
@@ -1688,51 +1676,63 @@ Upgraded net-misc/socat to v1.8.1.1.
 
 ### Fixed
 
-Updated cos-gpu-installer to v2.6.1.
-
-### Change
-
-Updated cos-gpu-installer to v2.6.0.
-
-### Fixed
-
 Upgraded sys-apps/acl to v2.3.2-r3.
-
-### Change
-
-Upgraded CASFS to v0.1.2.
-
-### Fixed
-
-Upgraded dev-util/gn to v2331.
 
 ### Fixed
 
 Upgraded sys-apps/file to v5.47.
 
-### Breaking
+### Fixed
 
-`/dev/hugepages` is now mounted with the `noexec` option.
+Updated cos-gpu-installer to v2.6.1.
 
-### Change
+### Fixed
 
-Added support for the Lustre 2.14.0\_p246 drivers.
+Upgraded the galog version to v0.0.0-20250924170816-9dbf105986f4 in google-guest-agent to fix an issue with high CPU consumption.
+
+### Fixed
+
+Upgraded dev-utils/gdbus-codegen to v2.86.3.
 
 ### Security
 
 Upgraded dev-libs/glib to v2.86.3. This fixes CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.
 
-### Change
+### Fixed
 
-Fixed the "CrackArmor" vulnerability in the Linux kernel.
-
-### Change
-
-Updated the Linux kernel to v6.12.76.
+Upgraded app-admin/fluent-bit to v4.2.3.1.
 
 ### Fixed
 
 Upgraded app-admin/sosreport to v4.11.0.
+
+### Fixed
+
+Upgraded dev-util/gdbus-codegen to v2.86.3.
+
+### Fixed
+
+Upgraded the galog version to v0.0.0-20250924170816-9dbf105986f4 in google-guest-agent to fix an issue with high CPU consumption.
+
+### Security
+
+Fixed CVE-2026-23229 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23230 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23240 in the Linux kernel.
+
+### Security
+
+Fixed a packet header clobbering issue in the IDPF driver occurring when SWIOTLB and header split are enabled.
+
+### Security
+
+Fixed KCTF-71e99ee in the Linux kernel.
 
 ### Change
 
@@ -1831,13 +1831,13 @@ Downgraded ek-cpu-balloon driver to version 1.1.0 to address efficiency daemon i
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.1.161](https://cos.googlesource.com/third_party/kernel/+/da5dc8347ba20698e2b8e3a27f2f4b5783e11c98 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.582.40/lakitu/gpu_driver_versions.textproto) |
 
+### Fixed
+
+Upgraded sys-apps/file to v5.47.
+
 ### Security
 
-Fixed CVE-2025-38201 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2025-40251 in the Linux kernel.
+Fixed CVE-2023-53421 in the Linux kernel.
 
 ### Security
 
@@ -1846,7 +1846,7 @@ dev-libs/glib.
 
 ### Security
 
-Fixed CVE-2026-23176 in the Linux kernel.
+Fixed CVE-2025-22026 in the Linux kernel.
 
 ### Security
 
@@ -1854,7 +1854,15 @@ Fixed CVE-2025-37920 in the Linux kernel.
 
 ### Security
 
+Fixed CVE-2025-38201 in the Linux kernel.
+
+### Security
+
 Fixed CVE-2025-38591 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-40251 in the Linux kernel.
 
 ### Security
 
@@ -1862,19 +1870,11 @@ Fixed CVE-2025-71089 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2023-53421 in the Linux kernel.
+Fixed CVE-2026-23176 in the Linux kernel.
 
 ### Security
 
 Fixed CVE-2026-23216 in the Linux kernel.
-
-### Fixed
-
-Upgraded sys-apps/file to v5.47.
-
-### Security
-
-Fixed CVE-2025-22026 in the Linux kernel.
 
 ### Change
 
@@ -1887,18 +1887,13 @@ Fixed CVE-2025-22026 in the Linux kernel.
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.6.123](https://cos.googlesource.com/third_party/kernel/+/810772cc40b9bc07245d9d7059e7f2d697995adf ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.534.35/lakitu/gpu_driver_versions.textproto) |
 
-### Security
+### Fixed
 
-Fixed CVE-2025-38234 in the Linux kernel.
+Upgraded net-misc/socat to v1.8.1.1.
 
-### Security
+### Fixed
 
-Upgraded dev-libs/glib to v2.86.3 and gdbus-codegen to v2.86.3. This fixes
-CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.
-
-### Security
-
-Fixed CVE-2026-23229 in the Linux kernel.
+Upgraded sys-apps/file to v5.47.
 
 ### Security
 
@@ -1910,23 +1905,28 @@ Fixed CVE-2025-38201 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-23216 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-23230 in the Linux kernel.
-
-### Fixed
-
-Upgraded net-misc/socat to v1.8.1.1.
+Fixed CVE-2025-38234 in the Linux kernel.
 
 ### Security
 
 Fixed CVE-2026-23100 in the Linux kernel.
 
-### Fixed
+### Security
 
-Upgraded sys-apps/file to v5.47.
+Fixed CVE-2026-23216 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23229 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23230 in the Linux kernel.
+
+### Security
+
+Upgraded dev-libs/glib to v2.86.3 and gdbus-codegen to v2.86.3. This fixes
+CVE-2025-14087, CVE-2025-14512 and CVE-2025-13601.
 
 ### Change
 
@@ -1939,9 +1939,13 @@ Upgraded sys-apps/file to v5.47.
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.6.122](https://cos.googlesource.com/third_party/kernel/+/894f17dcc8a978b3bd6e85e3cfe41e97d55a87d8 ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.381.30/lakitu/gpu_driver_versions.textproto) |
 
-### Security
+### Fixed
 
-Fixed CVE-2026-23100 in the Linux kernel.
+Upgraded app-admin/sosreport to v4.11.0.
+
+### Fixed
+
+Upgraded net-misc/socat to v1.8.1.1.
 
 ### Fixed
 
@@ -1951,13 +1955,9 @@ Upgraded sys-apps/file to v5.47.
 
 Fixed CVE-2025-38234 in the Linux kernel.
 
-### Fixed
+### Security
 
-Upgraded net-misc/socat to v1.8.1.1.
-
-### Fixed
-
-Upgraded app-admin/sosreport to v4.11.0.
+Fixed CVE-2026-23100 in the Linux kernel.
 
 ---
 ## 2026-03-08

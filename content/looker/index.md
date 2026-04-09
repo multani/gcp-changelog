@@ -18,13 +18,21 @@ When this preview feature is enabled, you can use the following features for [ta
 ---
 ## 2026-03-30
 
+### Announcement
+
+Starting March 30, 2026, the following features will begin rolling out.
+
+### Feature
+
+Available in preview for Looker (Google Cloud core), you can now track [end-to-end data lineage](https://docs.cloud.google.com/looker/docs/looker-core-lineage) from BigQuery to Looker content, including views, Explores, dashboards, and Looks, through the Looker and Dataplex lineage integration. This enables impact analysis to see how BigQuery changes affect downstream Looker (Google Cloud core) contents.
+
 ### Feature
 
 Available in preview, you can [publish the Conversational Analytics data agents](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents) that you create in Looker to Gemini Enterprise.
 
 ### Feature
 
-Available in preview for Looker (Google Cloud core), you can now track [end-to-end data lineage](https://docs.cloud.google.com/looker/docs/looker-core-lineage) from BigQuery to Looker content, including views, Explores, dashboards, and Looks, through the Looker and Dataplex lineage integration. This enables impact analysis to see how BigQuery changes affect downstream Looker (Google Cloud core) contents.
+Available in preview, you can chat with [Conversational Analytics data agents](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data) in user-defined dashboards and in LookML dashboards.
 
 ### Feature
 
@@ -36,18 +44,6 @@ The [**Enhanced Content Cleanup** preview feature](https://docs.cloud.google.com
 * Lets admins and users move content to the trash.
 
 This feature is disabled by default. Learn more about [managing unused content with **Enhanced Content Cleanup**](https://docs.cloud.google.com/looker/docs/manage-unused-content).
-
-### Announcement
-
-Starting March 30, 2026, the following features will begin rolling out.
-
-### Feature
-
-Available in preview, you can chat with [Conversational Analytics data agents](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data) in user-defined dashboards and in LookML dashboards.
-
-### Change
-
-The [Looker mobile application](https://docs.cloud.google.com/looker/docs/looker-core-mobile-app) now supports sending [alert notifications as push notifications](https://docs.cloud.google.com/looker/docs/looker-mobile-app-alerts) to users who have the Looker mobile application on their mobile device.
 
 ### Feature
 
@@ -62,6 +58,10 @@ When this feature is enabled for your instance, it lets individual users have th
 This feature is disabled by default.
 
 [Learn more about the new Explore and Merge Query experience](https://docs.cloud.google.com/looker/docs/new-explore-experience-overview).
+
+### Change
+
+The [Looker mobile application](https://docs.cloud.google.com/looker/docs/looker-core-mobile-app) now supports sending [alert notifications as push notifications](https://docs.cloud.google.com/looker/docs/looker-mobile-app-alerts) to users who have the Looker mobile application on their mobile device.
 
 ### Feature
 
@@ -94,6 +94,15 @@ As part of Looker 26.6, [Conversational Analytics](https://docs.cloud.google.com
 ---
 ## 2026-03-25
 
+### Announcement
+
+**Looker 26.6** is expected to include the following changes, features, and fixes:
+
+* Expected Looker (original) deployment start: **Sunday, March 22, 2026**
+* Expected Looker (original) final deployment and download available: **Sunday, April 5, 2026**
+* Expected Looker (Google Cloud core) deployment start: **Monday, March 23, 2026**
+* Expected Looker (Google Cloud core) final deployment: **Friday, April 3, 2026**
+
 ### Fixed
 
 An issue has been fixed where creating or updating database connections that use OAuth (such as Snowflake or BigQuery) could fail with the error `JDBC Parameter Validation Failed`. This feature now performs as expected.
@@ -113,15 +122,6 @@ An issue has been fixed where buttons on dashboards that used the extension fram
 ### Fixed
 
 An issue has been fixed where the font and background color picker was not accessible when you edited visualizations on merge queries. This feature now performs as expected.
-
-### Announcement
-
-**Looker 26.6** is expected to include the following changes, features, and fixes:
-
-* Expected Looker (original) deployment start: **Sunday, March 22, 2026**
-* Expected Looker (original) final deployment and download available: **Sunday, April 5, 2026**
-* Expected Looker (Google Cloud core) deployment start: **Monday, March 23, 2026**
-* Expected Looker (Google Cloud core) final deployment: **Friday, April 3, 2026**
 
 ### Fixed
 
@@ -191,23 +191,17 @@ A new version of the Looker mobile app is available for iOS (version 2.2.0) and 
 ---
 ## 2026-03-17
 
-### Feature
+### Announcement
 
-The [**Visualization Assistant**](https://docs.cloud.google.com/looker/docs/custom-looker-visualization-gemini), which lets you customize formatting options for Looker visualizations in natural language with Gemini assistance, is now generally available. This assistant can be enabled by turning on the **Gemini in Looker** and **Looker Assistants** settings on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.
-
-### Feature
-
-The **Dashboard Tile Limits** preview feature is now available, and is disabled by default.
-
-When enabled, the **Dashboard Tile Limits** preview feature lets admins set limits to how many query tiles can be added to each tab in a dashboard. Admins can set these limits in the **Maximum Query Tiles per tab** setting on the **Content guardrails** admin page.
-
-### Feature
-
-Now available in preview, you can use Gemini in Looker to [assist you in writing Looker expressions](https://docs.cloud.google.com/looker/docs/gemini-expression-asst) for [table calculations](https://docs.cloud.google.com/looker/docs/table-calculations) and [custom fields](https://docs.cloud.google.com/looker/docs/custom-fields). This feature can be enabled by turning on the **Expression Assistant** setting on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.
+As part of Looker 26.4, the following features will begin rolling out on March 17, 2026.
 
 ### Feature
 
 Looker **Connections Settings** page has a new option, [**Disable Connection**](https://docs.cloud.google.com/looker/docs/connecting-to-your-db#disable_connection), that allows a Looker admin to disable a connection in cases where there are downstream issues with the database, instead of killing queries manually or allowing queries to remain in the query queue. When the connection is disabled, Looker will not send queries to the database and will return an error message to users.
+
+### Feature
+
+The [**Visualization Assistant**](https://docs.cloud.google.com/looker/docs/custom-looker-visualization-gemini), which lets you customize formatting options for Looker visualizations in natural language with Gemini assistance, is now generally available. This assistant can be enabled by turning on the **Gemini in Looker** and **Looker Assistants** settings on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.
 
 ### Feature
 
@@ -241,6 +235,30 @@ The updated Looker Continuous Integration feature includes the following:
 
 ### Feature
 
+The **Dashboard Tile Limits** preview feature is now available, and is disabled by default.
+
+When enabled, the **Dashboard Tile Limits** preview feature lets admins set limits to how many query tiles can be added to each tab in a dashboard. Admins can set these limits in the **Maximum Query Tiles per tab** setting on the **Content guardrails** admin page.
+
+### Feature
+
+The Gemini in Looker assistant that helps you [generate LookML parameters](https://docs.cloud.google.com/looker/docs/write-lookml-gemini) is now available to enable individually from other Gemini in Looker features. This assistant, which continues to be available in preview, suggests LookML parameters that are based on the natural language prompts that you add to your project files. This assistant can be enabled by turning on the **Gemini in Looker** and **LookML Assistant** settings on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.
+
+### Feature
+
+The [**Increased Row Limit** preview feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#increased-row-limit) feature is now available, and is disabled by default.
+
+When enabled, the **Increased Row Limit** preview feature lets admins set row limits up to 50,000 rows or datapoints for [map charts](https://docs.cloud.google.com/looker/docs/google-map-options), [scatterplot charts](https://docs.cloud.google.com/looker/docs/scatter-options), and [table charts](https://docs.cloud.google.com/looker/docs/table-options). Admins can set the limits for each visualization type in the [**Visualization limits**](https://docs.cloud.google.com/looker/docs/admin-panel-performance-center-content-guardrails#visualization-limits) setting on the **Content guardrails** admin page.
+
+Table charts, scatterplot charts, and Google Maps charts that have increased row limits are subject to additional limitations when you download, send, or schedule dashboards in PDF format. See [Downloading or delivering dashboards in rendered formats](https://docs.cloud.google.com/looker/docs/best-practices/rendered-format-options-downloading-delivering-dashboards) for more information about scheduling and downloading dashboard PDFs with increased row limits.
+
+**Note:** This item was originally published on March 16, 2026 and was updated on March 17, 2026.
+
+### Feature
+
+Now available in preview, you can use Gemini in Looker to [assist you in writing Looker expressions](https://docs.cloud.google.com/looker/docs/gemini-expression-asst) for [table calculations](https://docs.cloud.google.com/looker/docs/table-calculations) and [custom fields](https://docs.cloud.google.com/looker/docs/custom-fields). This feature can be enabled by turning on the **Expression Assistant** setting on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.
+
+### Feature
+
 The [**Enhanced Search** preview feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#enhanced-search) is now available.
 
 When enabled, [Enhanced Search](https://docs.cloud.google.com/looker/docs/finding-content#enhanced_search) helps you find saved content on your instance using Gemini in Looker. Enhanced Search moves beyond keyword matching to interpreting the conceptual meaning of your search queries, letting you search for saved content using business terms or analytical questions (for example, "total customer acquisition cost").
@@ -256,24 +274,6 @@ To enable Gemini in Looker assistance with searching content, you must also enab
 Now available in preview, Gemini in Looker can automatically [generate Quick Start analyses for Explores](https://docs.cloud.google.com/looker/docs/gemini-quick-starts). This feature can be enabled by turning on the **AI-assisted Quick Starts** setting on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.
 
 **Note:** This feature is not yet available. This item was modified on March 19, 2026.
-
-### Feature
-
-The [**Increased Row Limit** preview feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#increased-row-limit) feature is now available, and is disabled by default.
-
-When enabled, the **Increased Row Limit** preview feature lets admins set row limits up to 50,000 rows or datapoints for [map charts](https://docs.cloud.google.com/looker/docs/google-map-options), [scatterplot charts](https://docs.cloud.google.com/looker/docs/scatter-options), and [table charts](https://docs.cloud.google.com/looker/docs/table-options). Admins can set the limits for each visualization type in the [**Visualization limits**](https://docs.cloud.google.com/looker/docs/admin-panel-performance-center-content-guardrails#visualization-limits) setting on the **Content guardrails** admin page.
-
-Table charts, scatterplot charts, and Google Maps charts that have increased row limits are subject to additional limitations when you download, send, or schedule dashboards in PDF format. See [Downloading or delivering dashboards in rendered formats](https://docs.cloud.google.com/looker/docs/best-practices/rendered-format-options-downloading-delivering-dashboards) for more information about scheduling and downloading dashboard PDFs with increased row limits.
-
-**Note:** This item was originally published on March 16, 2026 and was updated on March 17, 2026.
-
-### Announcement
-
-As part of Looker 26.4, the following features will begin rolling out on March 17, 2026.
-
-### Feature
-
-The Gemini in Looker assistant that helps you [generate LookML parameters](https://docs.cloud.google.com/looker/docs/write-lookml-gemini) is now available to enable individually from other Gemini in Looker features. This assistant, which continues to be available in preview, suggests LookML parameters that are based on the natural language prompts that you add to your project files. This assistant can be enabled by turning on the **Gemini in Looker** and **LookML Assistant** settings on the **Gemini in Looker** page in the **Platform** section of the **Admin** panel.
 
 ### Feature
 

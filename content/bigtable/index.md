@@ -1,5 +1,14 @@
 # Bigtable
 
+## 2026-04-09
+
+### Feature
+
+You can use Gemini in Bigtable Studio to help you write GoogleSQL queries. This
+feature is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+For more information, see [Write SQL with Gemini assistance](https://docs.cloud.google.com/bigtable/docs/write-sql-gemini).
+
+---
 ## 2026-04-07
 
 ### Feature

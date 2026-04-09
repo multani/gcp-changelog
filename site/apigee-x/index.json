@@ -3,19 +3,19 @@
   "entries": {
     "2026-04-06": [
       {
-        "kind": "Change",
-        "content": "On April 6th, 2026, we released an updated version of Apigee.\n\nThis change introduces the new `apigee.coreServiceAgent` IAM role for\nApigee. **Effective immediately, use `apigee.coreServiceAgent` instead of the\n`apigee.serviceAgent` role.**\n\nFor information on the new role, see\n[`apigee.coreServiceAgent`](https://docs.cloud.google.com/iam/docs/roles-permissions/apigee#apigee.coreServiceAgent).",
-        "summary": {
-          "title": "Apigee IAM Role Update",
-          "summary": "Apigee has released an updated version with a new IAM role, `apigee.coreServiceAgent`. Effective immediately, this new role should be used in place of the `apigee.serviceAgent` role."
-        }
-      },
-      {
         "kind": "Fixed",
         "content": "**Correction to [April 2, 2026 release note: Deployment disruption for Apigee Drupal Portal via Google Cloud Marketplace](#April_02_2026)**\n\nFor the deployment disruption announced on April 2, the announcement noted that deployment and management functionality using Google Cloud Deployment Manager would definitely be unavailable during the transition. This statement is incorrect. The functionality *might* be unavailable.\n\nSee the [Known issue](https://docs.cloud.google.com/apigee/docs/release/known-issues#495305258) for more information.",
         "summary": {
           "title": "Apigee Drupal Portal Deployment Correction",
           "summary": "A previous announcement incorrectly stated that deployment and management functionality for the Apigee Drupal Portal would be unavailable during the transition. This functionality might be unavailable, not definitely unavailable. Refer to the known issues for more details."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "On April 6th, 2026, we released an updated version of Apigee.\n\nThis change introduces the new `apigee.coreServiceAgent` IAM role for\nApigee. **Effective immediately, use `apigee.coreServiceAgent` instead of the\n`apigee.serviceAgent` role.**\n\nFor information on the new role, see\n[`apigee.coreServiceAgent`](https://docs.cloud.google.com/iam/docs/roles-permissions/apigee#apigee.coreServiceAgent).",
+        "summary": {
+          "title": "Apigee IAM Role Update",
+          "summary": "Apigee has released an updated version with a new IAM role, `apigee.coreServiceAgent`. Effective immediately, this new role should be used in place of the `apigee.serviceAgent` role."
         }
       }
     ],
@@ -31,22 +31,6 @@
     ],
     "2026-03-31": [
       {
-        "kind": "Feature",
-        "content": "**General Availability (GA) launch of Model Context Protocol (MCP) in Apigee**\n\nWith this release, Model Context Protocol (MCP) in Apigee is [generally available](https://docs.cloud.google.com/products#product-launch-stages), enabling you to expose your Apigee APIs as MCP tools to agentic applications.\n\nAny MCP client that supports remote MCP endpoints over HTTP/S can access these tools. Because the endpoints are managed, you don't need to install or manage local MCP servers, remote MCP servers, or additional infrastructure to enable agentic applications to access your services.\n\nMCP in Apigee is available for Subscription, Pay-as-you-go, and Evaluation organizations, including organizations with Data Residency and VPC Service Controls enabled.\n\nFor more information on using MCP in Apigee, see [MCP in Apigee overview](https://docs.cloud.google.com/apigee/docs/api-platform/apigee-mcp/apigee-mcp-overview).",
-        "summary": {
-          "title": "Apigee launches Model Context Protocol",
-          "summary": "Model Context Protocol (MCP) is now generally available in Apigee, allowing you to expose Apigee APIs as MCP tools for agentic applications. This simplifies integration by removing the need for local or remote MCP server management. MCP in Apigee supports various organization types, including those with Data Residency and VPC Service Controls."
-        }
-      },
-      {
-        "kind": "Change",
-        "content": "**Updated MCP server target endpoint for MCP Discovery Proxies**\n\nWith the GA launch of Model Context Protocol (MCP) in Apigee, the structure of the MCP server target endpoint for MCP Discover Proxies has changed to `ORG_NAME.mcp.apigee.internal`.\n\nPrivate preview customers using the previous format (`mcp.apigee.internal`) are encouraged to update their proxies to reflect the new structure. Existing endpoints using the old format will continue to work, but new endpoints will use the new structure.",
-        "summary": {
-          "title": "MCP Endpoint Update",
-          "summary": "The MCP server target endpoint for MCP Discovery Proxies has been updated to ORG_NAME.mcp.apigee.internal with the General Availability launch of Model Context Protocol. While old endpoints will remain functional, new configurations should use the updated structure."
-        }
-      },
-      {
         "kind": "Announcement",
         "content": "On March 31st, 2026, we released an updated version of Apigee.\n\n**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.",
         "summary": {
@@ -56,10 +40,26 @@
       },
       {
         "kind": "Feature",
+        "content": "**General Availability (GA) launch of Model Context Protocol (MCP) in Apigee**\n\nWith this release, Model Context Protocol (MCP) in Apigee is [generally available](https://docs.cloud.google.com/products#product-launch-stages), enabling you to expose your Apigee APIs as MCP tools to agentic applications.\n\nAny MCP client that supports remote MCP endpoints over HTTP/S can access these tools. Because the endpoints are managed, you don't need to install or manage local MCP servers, remote MCP servers, or additional infrastructure to enable agentic applications to access your services.\n\nMCP in Apigee is available for Subscription, Pay-as-you-go, and Evaluation organizations, including organizations with Data Residency and VPC Service Controls enabled.\n\nFor more information on using MCP in Apigee, see [MCP in Apigee overview](https://docs.cloud.google.com/apigee/docs/api-platform/apigee-mcp/apigee-mcp-overview).",
+        "summary": {
+          "title": "Apigee launches Model Context Protocol",
+          "summary": "Model Context Protocol (MCP) is now generally available in Apigee, allowing you to expose Apigee APIs as MCP tools for agentic applications. This simplifies integration by removing the need for local or remote MCP server management. MCP in Apigee supports various organization types, including those with Data Residency and VPC Service Controls."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "**Enhanced OAS server URL path handling for MCP in Apigee**\n\nWith this feature enhancement, your OpenAPI specification (OAS) configurations behave exactly\nas defined in the OAS standard, automatically combining the `server.url` base path value with individual operation paths.\n\nFor example, a server URL of`https://example.com/api/v1` paired with a path of `/users` will now correctly route to `https://example.com/api/v1/users` without additional manual intervention.\n\nIf you previously prepended base paths to your OAS paths entries, remove the path segment from your `servers.url` field to prevent\nduplication. For example, change `https://example.com/api/v1` to `https://example.com`.\n\nFor more information, see [Create an OpenAPI 3.0 specification](https://docs.cloud.google.com/apigee/docs/api-platform/apigee-mcp/apigee-mcp-quickstart#create-an-openapi-3.0.x-specification-describing-your-api-operations).",
         "summary": {
           "title": "Improved OAS Server URL Handling",
           "summary": "Apigee now automatically combines OpenAPI server URLs with operation paths, adhering to the OAS standard for correct routing. This eliminates the need for manual path concatenation and simplifies your OAS configurations."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Updated MCP server target endpoint for MCP Discovery Proxies**\n\nWith the GA launch of Model Context Protocol (MCP) in Apigee, the structure of the MCP server target endpoint for MCP Discover Proxies has changed to `ORG_NAME.mcp.apigee.internal`.\n\nPrivate preview customers using the previous format (`mcp.apigee.internal`) are encouraged to update their proxies to reflect the new structure. Existing endpoints using the old format will continue to work, but new endpoints will use the new structure.",
+        "summary": {
+          "title": "MCP Endpoint Update",
+          "summary": "The MCP server target endpoint for MCP Discovery Proxies has been updated to ORG_NAME.mcp.apigee.internal with the General Availability launch of Model Context Protocol. While old endpoints will remain functional, new configurations should use the updated structure."
         }
       },
       {
@@ -135,19 +135,19 @@
         }
       },
       {
-        "kind": "Security",
-        "content": "| Bug ID | Description |\n| --- | --- |\n| **483769763, 481735779** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2025-61726](https://nvd.nist.gov/vuln/detail/CVE-2025-61726) * [CVE-2025-61728](https://nvd.nist.gov/vuln/detail/CVE-2025-61728) * [CVE-2025-61730](https://nvd.nist.gov/vuln/detail/CVE-2025-61730) * [CVE-2025-61731](https://nvd.nist.gov/vuln/detail/CVE-2025-61731) * [CVE-2025-61732](https://nvd.nist.gov/vuln/detail/CVE-2025-61732) * [CVE-2026-24051](https://nvd.nist.gov/vuln/detail/CVE-2026-24051) * [CVE-2026-25765](https://nvd.nist.gov/vuln/detail/CVE-2026-25765 ) |",
-        "summary": {
-          "title": "Security Update for Apigee",
-          "summary": "A security update has been released for Apigee infrastructure to address several critical vulnerabilities. This update is essential for maintaining the security and integrity of your API management environment."
-        }
-      },
-      {
         "kind": "Fixed",
         "content": "| Bug ID | Description |\n| --- | --- |\n| **N/A** | **Updates to infrastructure and libraries.** |",
         "summary": {
           "title": "Infrastructure and library updates",
           "summary": "We have made updates to our underlying infrastructure and libraries. These changes improve system stability and performance."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "| Bug ID | Description |\n| --- | --- |\n| **483769763, 481735779** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2025-61726](https://nvd.nist.gov/vuln/detail/CVE-2025-61726) * [CVE-2025-61728](https://nvd.nist.gov/vuln/detail/CVE-2025-61728) * [CVE-2025-61730](https://nvd.nist.gov/vuln/detail/CVE-2025-61730) * [CVE-2025-61731](https://nvd.nist.gov/vuln/detail/CVE-2025-61731) * [CVE-2025-61732](https://nvd.nist.gov/vuln/detail/CVE-2025-61732) * [CVE-2026-24051](https://nvd.nist.gov/vuln/detail/CVE-2026-24051) * [CVE-2026-25765](https://nvd.nist.gov/vuln/detail/CVE-2026-25765 ) |",
+        "summary": {
+          "title": "Security Update for Apigee",
+          "summary": "A security update has been released for Apigee infrastructure to address several critical vulnerabilities. This update is essential for maintaining the security and integrity of your API management environment."
         }
       }
     ],

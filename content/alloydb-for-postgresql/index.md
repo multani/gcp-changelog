@@ -4,7 +4,7 @@
 
 ### Feature
 
-The QueryData tool lets you to query with the data in your database using
+The QueryData tool lets you to query the data in your database using
 conversational language and build data agents. For more information, see
 [QueryData tool
 overview](https://docs.cloud.google.com/alloydb/docs/ai/data-agent-overview).
@@ -78,12 +78,6 @@ available ([GA](https://cloud.google.com/products#product-launch-stages)):
 * You can use Database Migration Service to
   [migrate databases to AlloyDB](https://docs.cloud.google.com/database-migration/docs/postgresql-to-alloydb/migration-src-and-dest).
 
-### Change
-
-When no major version is specified, AlloyDB for PostgreSQL now defaults to
-[PostgreSQL major version 17](https://docs.cloud.google.com/alloydb/docs/db-version-policies#support-table)
-for new clusters.
-
 ### Feature
 
 The following AlloyDB AI features are available in [Preview](https://cloud.google.com/products#product-launch-stages):
@@ -96,6 +90,12 @@ The following AlloyDB AI features are available in [Preview](https://cloud.googl
   positional information directly in the index. This enables faster phrase
   searches and relevance ranking without needing to access the table data. For
   more information, see [Create and manage a RUM index](https://docs.cloud.google.com/alloydb/docs/ai/create-rum-index).
+
+### Change
+
+When no major version is specified, AlloyDB for PostgreSQL now defaults to
+[PostgreSQL major version 17](https://docs.cloud.google.com/alloydb/docs/db-version-policies#support-table)
+for new clusters.
 
 ---
 ## 2026-03-20

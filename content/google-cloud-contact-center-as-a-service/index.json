@@ -3,19 +3,19 @@
   "entries": {
     "2026-04-07": [
       {
-        "kind": "Feature",
-        "content": "**Repeat contacts data added to advanced reporting dashboards**\n\nRepeat contacts data is now available in the following advanced reporting\ndashboards:\n\n* **Real-time Queue Monitoring - Calls** and **Real-time Queue Monitoring -\n  Chats**: new **Total Repeat Contacts** tile. For more information, see\n  [Queue monitoring\n  dashboards](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-real-time-queue-monitor).\n* **All Interactions - Calls** and **All Interactions - Chats**: new **Repeat\n  Contact** column in the **Call Metric Detail** and **Chat Metric Detail**\n  tables.\n* **Real-time Calls - Calls Connected** and **Real-time Chats - Chats\n  Connected**: new **Repeat Contact** column in the **Connected Calls** and\n  **Connected Chats** tables.",
-        "summary": {
-          "title": "Repeat contacts data in reporting",
-          "summary": "Advanced reporting dashboards now include repeat contacts data. You can find this information in real-time monitoring and all interaction dashboards, with new tiles and columns providing insights into repeat customer interactions."
-        }
-      },
-      {
         "kind": "Announcement",
         "content": "**Advance reporting dashboards 4.12**\n\nWe've released version 4.12 of the advanced reporting dashboards.",
         "summary": {
           "title": "New Reporting Dashboards Released",
           "summary": "Version 4.12 of the advanced reporting dashboards has been released. This update brings new features and improvements to your reporting capabilities."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Repeat contacts data added to advanced reporting dashboards**\n\nRepeat contacts data is now available in the following advanced reporting\ndashboards:\n\n* **Real-time Queue Monitoring - Calls** and **Real-time Queue Monitoring -\n  Chats**: new **Total Repeat Contacts** tile. For more information, see\n  [Queue monitoring\n  dashboards](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-real-time-queue-monitor).\n* **All Interactions - Calls** and **All Interactions - Chats**: new **Repeat\n  Contact** column in the **Call Metric Detail** and **Chat Metric Detail**\n  tables.\n* **Real-time Calls - Calls Connected** and **Real-time Chats - Chats\n  Connected**: new **Repeat Contact** column in the **Connected Calls** and\n  **Connected Chats** tables.",
+        "summary": {
+          "title": "Repeat contacts data in reporting",
+          "summary": "Advanced reporting dashboards now include repeat contacts data. You can find this information in real-time monitoring and all interaction dashboards, with new tiles and columns providing insights into repeat customer interactions."
         }
       },
       {
@@ -37,19 +37,11 @@
     ],
     "2026-04-02": [
       {
-        "kind": "Fixed",
-        "content": "The following issues were addressed in this release:\n\n* Fixed an issue with React Native integrations where the email adapter\n  wouldn't load. TBD - confirm that there's only one bug related to the email\n  adapter not loading with React Native integrations.\n* Fixed an issue where enabling chat redaction caused the unredacted messages\n  to be redacted in the chat adapter.\n* Fixed an issue where calls continued to be recorded after being transferred\n  to a third-party number, even when the **Continue Call recording to Third\n  Party Numbers after the agent leaves the call** setting was cleared.\n* Fixed an issue where emails were automatically assigned to users without\n  agent roles.\n* Fixed an issue where the global **Overcapacity Deflection Messages** setting\n  was configured for **Uploading Audio Recordings**, but queues inheriting\n  global settings incorrectly displayed **Text-to-speech** in the UI.\n* Fixed an issue where agents couldn't transfer a chat within the same queue.\n* Fixed an issue where incoming calls unexpectedly ended with 603 decline\n  errors after ringing for 13 seconds.\n* Fixed an issue in the Agent Desktop where the session ID didn't match the\n  call ID for the same interaction.\n* Fixed an issue where user search results didn't display users in locations\n  with the same first three letters of the name when searching for partial\n  locations.\n* Fixed an issue that let end-users interact with a mailbox immediately after\n  switching to a different mailbox, causing synchronization issues.\n* Fixed an issue where overcapacity deflection didn't work for direct inbound\n  calls.\n* Fixed an issue where the Reporting API changed the data types of some\n  response fields. This caused data type mismatches in the reports that the\n  API returned.",
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS 4.16**\n\nWe've released version 4.16 of Google Cloud CCaaS.\n\nThe timing of the update to your instance depends on the deployment schedule\nthat you have chosen. For more information, see [Deployment\nschedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).",
         "summary": {
-          "title": "Resolved various integration and feature issues",
-          "summary": "This release addresses multiple bugs affecting React Native integrations, chat redaction, call recording, email assignments, and overcapacity deflection. Several UI and API inconsistencies have also been resolved to improve overall stability and user experience."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Configure the ringing timeout for virtual agent transfers to SIP endpoints**\n\nTwilio users can configure the ringing timeout for outbound calls that virtual\nagents transfer to SIP endpoints. Add the `sip_ring_timeout` field to the\nvirtual agent's custom payload to set the ringing period for up to 600 seconds.\nThis allows calls to internal extensions or Unified Communications (UC)\ndestinations sufficient time to be answered before disconnection. For more\ninformation, see [Transfer a call to a SIP\nendpoint](https://docs.cloud.google.com/contact-center/ccai-platform/docs/va-custom-payload#transfer-to-SIP-endpoint).",
-        "summary": {
-          "title": "Set SIP transfer ringing timeout",
-          "summary": "You can now configure the ringing timeout for virtual agent transfers to SIP endpoints. Add the \"sip_ring_timeout\" field to your virtual agent's custom payload to specify the ringing period for up to 600 seconds, ensuring calls have enough time to be answered."
+          "title": "CCaaS 4.16 Released",
+          "summary": "The latest version of Google Cloud CCaaS, 4.16, has been released. The update schedule for your instance will vary based on your chosen deployment schedule."
         }
       },
       {
@@ -69,19 +61,27 @@
         }
       },
       {
-        "kind": "Announcement",
-        "content": "**Google Cloud CCaaS 4.16**\n\nWe've released version 4.16 of Google Cloud CCaaS.\n\nThe timing of the update to your instance depends on the deployment schedule\nthat you have chosen. For more information, see [Deployment\nschedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).",
-        "summary": {
-          "title": "CCaaS 4.16 Released",
-          "summary": "The latest version of Google Cloud CCaaS, 4.16, has been released. The update schedule for your instance will vary based on your chosen deployment schedule."
-        }
-      },
-      {
         "kind": "Feature",
         "content": "**Play pre-recorded audio for virtual agents**\n\nDialogflow lets virtual agents respond with pre-recorded audio. This\nlets you use high-quality audio files instead of standard text-to-speech. This\ncapability is available for all voice channels, including inbound and outbound\ncalls. It's available for support virtual agents, task virtual agents, and\npost-session virtual agents. For more information, see [Play pre-recorded\naudio](https://docs.cloud.google.com/contact-center/ccai-platform/docs/play-prerecorded-audio).",
         "summary": {
           "title": "Use pre-recorded audio for agents",
           "summary": "Dialogflow now allows virtual agents to respond with high-quality pre-recorded audio files instead of standard text-to-speech. This feature is available for all voice channels and across different types of virtual agents."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Configure the ringing timeout for virtual agent transfers to SIP endpoints**\n\nTwilio users can configure the ringing timeout for outbound calls that virtual\nagents transfer to SIP endpoints. Add the `sip_ring_timeout` field to the\nvirtual agent's custom payload to set the ringing period for up to 600 seconds.\nThis allows calls to internal extensions or Unified Communications (UC)\ndestinations sufficient time to be answered before disconnection. For more\ninformation, see [Transfer a call to a SIP\nendpoint](https://docs.cloud.google.com/contact-center/ccai-platform/docs/va-custom-payload#transfer-to-SIP-endpoint).",
+        "summary": {
+          "title": "Set SIP transfer ringing timeout",
+          "summary": "You can now configure the ringing timeout for virtual agent transfers to SIP endpoints. Add the \"sip_ring_timeout\" field to your virtual agent's custom payload to specify the ringing period for up to 600 seconds, ensuring calls have enough time to be answered."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were addressed in this release:\n\n* Fixed an issue with React Native integrations where the email adapter\n  wouldn't load. TBD - confirm that there's only one bug related to the email\n  adapter not loading with React Native integrations.\n* Fixed an issue where enabling chat redaction caused the unredacted messages\n  to be redacted in the chat adapter.\n* Fixed an issue where calls continued to be recorded after being transferred\n  to a third-party number, even when the **Continue Call recording to Third\n  Party Numbers after the agent leaves the call** setting was cleared.\n* Fixed an issue where emails were automatically assigned to users without\n  agent roles.\n* Fixed an issue where the global **Overcapacity Deflection Messages** setting\n  was configured for **Uploading Audio Recordings**, but queues inheriting\n  global settings incorrectly displayed **Text-to-speech** in the UI.\n* Fixed an issue where agents couldn't transfer a chat within the same queue.\n* Fixed an issue where incoming calls unexpectedly ended with 603 decline\n  errors after ringing for 13 seconds.\n* Fixed an issue in the Agent Desktop where the session ID didn't match the\n  call ID for the same interaction.\n* Fixed an issue where user search results didn't display users in locations\n  with the same first three letters of the name when searching for partial\n  locations.\n* Fixed an issue that let end-users interact with a mailbox immediately after\n  switching to a different mailbox, causing synchronization issues.\n* Fixed an issue where overcapacity deflection didn't work for direct inbound\n  calls.\n* Fixed an issue where the Reporting API changed the data types of some\n  response fields. This caused data type mismatches in the reports that the\n  API returned.",
+        "summary": {
+          "title": "Resolved various integration and feature issues",
+          "summary": "This release addresses multiple bugs affecting React Native integrations, chat redaction, call recording, email assignments, and overcapacity deflection. Several UI and API inconsistencies have also been resolved to improve overall stability and user experience."
         }
       },
       {
@@ -105,6 +105,54 @@
     ],
     "2026-03-24": [
       {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS 4.12**\n\nWe've released version 4.12 of Google Cloud CCaaS.\n\nThe timing of the update to your instance depends on the deployment schedule\nthat you have chosen. For more information, see [Deployment\nschedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).",
+        "summary": {
+          "title": "CCaaS 4.12 Released",
+          "summary": "Version 4.12 of Google Cloud CCaaS has been released. The update schedule for your instance will depend on your chosen deployment schedule. For more details, please refer to the deployment schedules documentation."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Support for creating chat virtual agents using CX Agent Studio**\n\nContact Center AI Platform supports creating chat virtual agents using\n[Customer Experience Agent Studio](https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps)\n(CX Agent Studio). This expands on its existing support for creating voice virtual\nagents with CX Agent Studio.\n\nFor more information, see [Create and integrate Customer Experience Agent Studio\nagents](https://docs.cloud.google.com/contact-center/ccai-platform/docs/create-a-cx-agent-studio-agent).",
+        "summary": {
+          "title": "Create chat agents with CX Agent Studio",
+          "summary": "You can now create chat virtual agents using CX Agent Studio, complementing the existing voice agent capabilities. This new feature expands the ways you can build conversational experiences."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Callback fulfillment hours**\n\nYou can configure callback fulfillment hours, which are the hours when your\ncontact center fulfills callbacks. If you enable callback rollovers to the next\nday, callbacks that are scheduled outside of these hours are rolled over to the\nnext day. If you don't enable callback rollovers, callbacks that are scheduled\noutside of these hours are canceled. Callback fulfillment hours aren't available\nby default. To use this capability, ask your Google contact to turn it on for\nyour instance. For more information, see [Callback fulfillment\nhours](https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#callback-fulfillment-hours).",
+        "summary": {
+          "title": "Configure Callback Fulfillment Hours",
+          "summary": "You can now set specific hours for fulfilling callbacks in your contact center. This feature helps manage callback scheduling, with options to roll over to the next day or cancel if outside configured hours. Contact your Google representative to enable this capability."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Improved support for multiple agent matches for agent extension searches**\n\nWhen an end-user inputs an agent extension number at the beginning of a call and\nthere are multiple agent matches, the system now reads agent matches in groups\nof eight. This gets the end-user to the correct agent faster. We've added the\nfollowing new extension directory messages to help guide the end-user to the\ncorrect agent:\n\n* Multiple agents found\n* Search results next page\n* End of search results\n\nFor more information, see [Extension directory\nmessages](https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#extension-directory-messages).",
+        "summary": {
+          "title": "Faster Agent Matching",
+          "summary": "The system now groups agent matches by eight when multiple agents are found for an extension number, speeding up connection times. New messages guide users through the search results, including options for navigating to the next page or indicating the end of results."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**HubSpot lookup against company profiles**\n\nHubSpot integrations now support lookups against Company profiles.\nAdministrators can configure primary and secondary lookup objects, allowing the\nsystem to search for end-users across both Contacts and Companies to ensure\naccurate identification during active sessions.\n\nFor more information, see [HubSpot lookup against company\nprofiles](https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot-lookups).",
+        "summary": {
+          "title": "HubSpot lookup enhancement",
+          "summary": "New HubSpot integration feature allows lookups against company profiles in addition to contacts. This ensures more accurate end-user identification by enabling searches across both object types."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**HubSpot: Mobile Phone Number Lookup**\n\nAdmins can now enable mobile phone number lookups for HubSpot integrations to\nensure callers are accurately matched with existing contacts. To activate this,\nnavigate to **Settings > Developer Settings > CRM** and check the **Mobile phone\nnumber lookup** box in the new **Phone Number Lookup** section. Once enabled,\nthe system will automatically search both the \"Phone number\" and \"Mobile phone\nnumber\" fields in HubSpot during incoming voice or chat sessions. For more\ninformation, see [HubSpot mobile phone number\nlookup](https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot-mobile-phone-lookup).",
+        "summary": {
+          "title": "HubSpot Mobile Phone Number Lookup Enabled",
+          "summary": "Admins can now enable mobile phone number lookups for HubSpot integrations to accurately match callers with existing contacts. This feature enhances contact identification during incoming voice or chat sessions by searching both standard and mobile phone number fields."
+        }
+      },
+      {
         "kind": "Feature",
         "content": "**Improved controls for predictive campaigns**\n\nWe've added the following controls to predictive campaigns to reduce the risk of\ncall abandonment due to overdialing. These controls let you ramp up dialing\nrates more naturally and consistently.\n\n* **Max Calls Per Agent**\n* **Target Agent Occupancy**\n\nWe've also made the **Max Abandonment %** setting optional, for campaigns that\ndon't require maintaining a maximum abandonment percentage.\n\nAdministrators: When you click **Campaigns > Add Campaign\n> Mode > Predictive**, the new controls appear in the\n**Add Campaign** dialog.\n\nFor more information, see [Predictive\ncampaigns](https://docs.cloud.google.com/contact-center/ccai-platform/docs/campaign-predictive).",
         "summary": {
@@ -121,79 +169,15 @@
         }
       },
       {
-        "kind": "Feature",
-        "content": "**Callback fulfillment hours**\n\nYou can configure callback fulfillment hours, which are the hours when your\ncontact center fulfills callbacks. If you enable callback rollovers to the next\nday, callbacks that are scheduled outside of these hours are rolled over to the\nnext day. If you don't enable callback rollovers, callbacks that are scheduled\noutside of these hours are canceled. Callback fulfillment hours aren't available\nby default. To use this capability, ask your Google contact to turn it on for\nyour instance. For more information, see [Callback fulfillment\nhours](https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#callback-fulfillment-hours).",
-        "summary": {
-          "title": "Configure Callback Fulfillment Hours",
-          "summary": "You can now set specific hours for fulfilling callbacks in your contact center. This feature helps manage callback scheduling, with options to roll over to the next day or cancel if outside configured hours. Contact your Google representative to enable this capability."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Support for creating chat virtual agents using CX Agent Studio**\n\nContact Center AI Platform supports creating chat virtual agents using\n[Customer Experience Agent Studio](https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps)\n(CX Agent Studio). This expands on its existing support for creating voice virtual\nagents with CX Agent Studio.\n\nFor more information, see [Create and integrate Customer Experience Agent Studio\nagents](https://docs.cloud.google.com/contact-center/ccai-platform/docs/create-a-cx-agent-studio-agent).",
-        "summary": {
-          "title": "Create chat agents with CX Agent Studio",
-          "summary": "You can now create chat virtual agents using CX Agent Studio, complementing the existing voice agent capabilities. This new feature expands the ways you can build conversational experiences."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Improved support for multiple agent matches for agent extension searches**\n\nWhen an end-user inputs an agent extension number at the beginning of a call and\nthere are multiple agent matches, the system now reads agent matches in groups\nof eight. This gets the end-user to the correct agent faster. We've added the\nfollowing new extension directory messages to help guide the end-user to the\ncorrect agent:\n\n* Multiple agents found\n* Search results next page\n* End of search results\n\nFor more information, see [Extension directory\nmessages](https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#extension-directory-messages).",
-        "summary": {
-          "title": "Faster Agent Matching",
-          "summary": "The system now groups agent matches by eight when multiple agents are found for an extension number, speeding up connection times. New messages guide users through the search results, including options for navigating to the next page or indicating the end of results."
-        }
-      },
-      {
         "kind": "Fixed",
         "content": "The following issues were addressed in this release:\n\n* Fixed an issue for Zendesk users where using click-to-dial from a private\n  note failed to display existing tickets for outbound calls, forcing agents\n  to create new tickets.\n* Fixed an issue for Brightspeed users where the CRM link in the agent adapter\n  didn't open during calls or chats.\n* Fixed an issue where call recordings between agents and end-users didn't\n  upload to Salesforce promptly.\n* Fixed an issue where agents placing an outbound call couldn't select queues\n  from their parent team.\n* Fixed an issue where agent status durations continued to accrue even after\n  agents logged out or went offline.\n* Fixed an issue where web queue redirects didn't work with domains ending in\n  `.today`.\n* Fixed an issue in the **Agent** dashboard where team names with a forward\n  slash displayed the HTML character entity (`&#x2F;`) instead of the forward\n  slash.\n* Fixed an issue where changing agent status after completing wrap-up\n  displayed the wrap-up screen instead of the new status.\n* Fixed an issue where the default global contact list was missing, despite\n  being enabled, preventing end-users from accessing this directory.\n* Fixed an issue where virtual agent calls weren't recorded and uploaded to\n  external storage even when call recording was turned on.\n* Fixed an issue where outbound calls were incorrectly prompting for customer\n  satisfaction (CSAT) feedback when a menu was assigned.\n* Fixed an issue where the French Canadian translation for \"wrap-up\" was\n  inconsistent between the chat adapter and notes panel.\n* Fixed an issue where filtering agents by Team on the Agents tab resulted in\n  significant delays.\n* Fixed an issue where users were unable to download reports from the virtual\n  agent dashboard and chat history if the requested date range exceeded the\n  storage retention period.\n* Fixed an issue where SMS, WhatsApp, and AMB queues that were copied from Web\n  or IVR channels incorrectly inherited transfer restrictions, preventing\n  agents from transferring chats.\n* Fixed an issue where users were unable to upload a key when adding or\n  editing a redaction platform under developer settings.\n* Fixed an issue where call recording links were not being pushed to HubSpot\n  cases as expected.\n* Fixed an issue where agents intermittently failed to connect to incoming\n  calls and were immediately disconnected, causing calls to requeue or drop\n  unexpectedly.\n* Fixed an issue where chat and call queues appeared unavailable for transfers\n  when destination agents reached maximum capacity or were in an unavailable\n  status.\n* Fixed an issue where toggling the Whisper Announcement or Countdown settings\n  in Automatic Redirection would unintentionally disable the Customize\n  Greetings Announcement option.\n* Fixed an issue where callback selections made after a virtual agent handover\n  were not accurately reflected in downloadable reports.\n* Fixed an issue where the **Available** filter didn't display agents that\n  were available to receive a transfer.\n* Fixed an issue with Alvaria Workforce integrations where files were rejected\n  due to a random suffix added to the RECORDKEY value.\n* Fixed an issue where two end-users could be connected simultaneously to a\n  single agent during campaign calls.\n* Fixed an issue where the inactive chat dismissal timer did not reset after a\n  conversation was escalated from a virtual agent to a live agent queue.\n* Fixed an issue where transcript metadata files were sometimes stored in the\n  folder for the following day instead of matching the transcript file date,\n  ensuring all metadata and transcript files are now consistently organized by\n  the correct chat end date.\n* Fixed an issue where agents appeared available but were unable to receive or\n  be re-offered calls due to repeated WebSocket presence updates and\n  connection expirations.\n* Fixed an issue where Direct Access Points configured with SIP URIs\n  containing spaces or non-standard formats failed to route calls correctly.\n* Fixed an issue where the Agents tab filter in the UJET Portal displayed \"All\n  undefined\" and was unclickable, preventing manual agent selection.\n* Fixed an issue where managers could access queue reports requested by other\n  managers, even if they were not involved in the relevant queues.\n* Fixed an issue where searching by Location on the Users & Teams page could\n  return agents who no longer matched the search criteria. Search results now\n  accurately reflect current agent locations.\n* Fixed an issue where users did not see a message indicating that no time\n  slots were available when selecting a queue with no available time slots.\n* Fixed an issue where the fetch time slots endpoint incorrectly included\n  non-working days when calculating available future time slots.\n* Fixed an issue where call recordings failed to convert from MP3 to WAV,\n  preventing playback in Call Quality Assurance tools that require WAV format.\n* Fixed an issue where, after a warm call transfer, if Agent 1 left the call\n  and Agent 2 resumed the conversation, there was no audio between Agent 2 and\n  the end user.\n* Fixed a 500 Internal Server Error that occurred when administrators tried to\n  add a new language (for example, Danish) under the \"Languages and Message\"\n  settings. This error prevented the language from being added to the list.\n* Fixed an issue where the chat widget landmark was missing an accessible\n  label. The chat widget now includes an aria-label matching the chat button\n  label.\n* We have updated the session metadata to provide a strict distinction between\n  Escalations and Transfers. This ensures that reporting accurately reflects\n  the business context of how a session moves between resources. The session\n  metadata will now categorize these events as follows:\n\n  + **Escalation**: Recorded only when a Virtual Agent transfers a session\n    to a Human Agent.\n  + **Transfer**: Recorded for all other routing scenarios, including:\n\n    - Human Agent > Human Agent\n    - Virtual Agent > Virtual Agent (Support or Task)\n    - Human Agent > Virtual Agent\n* Fixed an issue where updating a contact's mobile phone number during an\n  interaction would incorrectly overwrite the existing phone number field.\n* Fixed an issue where chats that ended due to end user timeout or\n  disconnection were incorrectly shown as \"undefined\" in the Interaction\n  Outcome column of platform reports.\n* Fixed an issue in WFM data where the handle count was showing incorrect\n  information if a chat spanned multiple intervals.\n* Fixed a data discrepancy in NICE WFM interval reports where chat metrics\n  (specifically ContactsReceived and HandledLong) were incorrectly showing\n  activity during time intervals where no chats actually occurred.\n* Fixed an issue where calls transferred using warm transfer to another queue\n  were incorrectly deflected due to overcapacity, resulting in a cold transfer\n  instead.\n* Fixed an issue where agents with multiple custom roles were incorrectly\n  prevented from changing to certain statuses due to role restriction logic.\n* Fixed an issue where changing the \"Custom After Hours Deflection\" setting in\n  queue configuration would incorrectly reset wrap up settings from \"Queue\" to\n  \"Global.\"\n* Fixed an issue where users with custom roles and correct permissions for\n  Queues were unable to add teams.\n* Fixed an issue where the right-side columns on the outbound phone numbers\n  page were not visible and could not be accessed when the browser window was\n  too small.\n* Fixed a web SDK issue where the chat modal on Android Chrome was not\n  recognized by screen readers due to a missing dialog role.\n* Fixed a web SDK issue where elements behind the Text size menu overlay were\n  focusable, ensuring that keyboard focus now remains on the Text size menu\n  until it is dismissed by the user.\n* Fixed a web SDK issue where the \"Request a call\" option in the chat widget\n  was not accessible to screen reader or keyboard-only users.\n* Fixed an issue where agents were incorrectly presented with a manual\n  \"Answer\" button and placed in \"Missed Call\" status after a single missed\n  Deltacast, even when auto answer was enabled.\n* Fixed an issue where transferring a direct outbound call to a queue could\n  fail with a \"Not Found\" error, even when the target menu and agents were\n  available.\n* Fixed an issue where the disposition list was not displaying in the\n  configured custom order and instead appeared alphabetically in both Agent\n  Desktop and standard Agent Adapter.\n* Fixed an issue where the user inactivity timeout setting did not\n  consistently log out users as configured.\n* Fixed an issue where queue channels and menu options would intermittently\n  disappear or fail to load correctly due to delays in feature flag\n  initialization.\n* Fixed an issue where adding multiple agents to a team would fail if any\n  selected user was already a member, resulting in a vague error and no agents\n  being added.\n* Fixed an issue in Progressive Campaigns where agents were intermittently\n  connected to two outbound call targets simultaneously. This occurred when a\n  dial attempt terminated immediately but failed to detach from the conference\n  bridge before the next attempt connected.\n* Fixed an issue where deleting a queue that was the target of an automatic\n  redirection could cause transfer options to fail to load for agents.\n* Fixed an issue where adding multiple agents to a team would fail if any\n  selected user was already a member, resulting in a vague error and no agents\n  being added.\n* Fixed the following issues that occurred with dual-channel and segmented\n  call recordings:\n\n  + Calls escalated from virtual agents weren't being recorded properly.\n  + Recordings of conversations with transferred agents were missing.\n* Fixed an issue where chats escalated from a virtual agent to a human agent\n  queue were incorrectly set to auto answer.\n* Fixed an issue where the call recording warning message didn't play for\n  callbacks initiated by virtual agent escalation when the destination queue\n  exceeded capacity.\n* Fixed an issue where search results in the **Directory** tab of the\n  **Transfer/Add party** screen in the call adapter persisted after closing\n  and reopening the screen.\n* Fixed an issue where the call adapter displayed an error when the **Call**\n  button was clicked.\n* Fixed an issue where uploading an automatic-redirection audio recording in\n  one IVR queue caused the recording to incorrectly appear in a different IVR\n  queue.\n* Fixed an issue where custom agent statuses restricted to specific roles\n  weren't visible to users assigned those roles.\n* Fixed an issue where contacts added to an outbound campaign using the\n  `/outbound_dialer/campaigns/CAMPAIGN_ID/contacts` endpoint weren't dialed.\n* Fixed an issue where users who authenticated with Single Sign-On (SSO)\n  couldn't update their profiles due to an invalid password error.\n* Fixed an issue where the queue list on the **Settings > Queues**\n  page didn't load for instances with a large number of queues.\n* Fixed an issue where the interaction history in the agent adapter\n  incorrectly displayed as empty.\n* Fixed an issue where Salesforce account lookup settings couldn't be saved\n  when selecting the `Person Account` object and record types.\n* Fixed an issue in the chat adapter where the **Previous Interactions**\n  summary displayed duplicate section headings (**Customer Satisfaction** and\n  **Action**) and an incorrect section heading (**Label**).\n* Fixed an issue where team managers couldn't download agent reports when\n  selecting the **All Agents** filter.\n* Fixed an issue where the system didn't record the failure reason when a\n  virtual agent tried to escalate a chat to a human agent outside of\n  operating hours.\n* Fixed an issue where using the **Bulk User Management** tool to deactivate\n  users failed.\n* Fixed an issue where the **Monitoring Chat** screen displayed chats\n  incorrectly, with misaligned chat bubbles, incorrectly formatted bullets,\n  and missing sender names and timestamps.\n* Fixed an issue where the **Directory** screen in the call adapter appeared\n  empty when an agent tried to start an internal call transfer to another\n  agent.\n* Fixed an issue where agent prioritization for deltacast selection was\n  incorrect.\n* Fixed an issue that occurred when a human agent didn't respond to a\n  transferred or auto-answered session. The system incorrectly recorded the\n  termination reason as \"agent stopped responding\" instead of \"timeout waiting\n  for agent message\".\n* Fixed a web SDK issue where underscores in text (for example, in email\n  addresses like user\\_name@example.com) were incorrectly removed in messages\n  to end-users.\n* Fixed a web SDK issue for iOS users where the **Yes** and **No** buttons in\n  the survey request at the end of a chat were hidden.",
         "summary": {
           "title": "Resolved various issues",
           "summary": "This release addresses numerous bugs and system errors across agent tools, call recordings, reporting, and integrations. Key fixes include improved call handling, accurate data recording, and enhanced user interface stability for a smoother agent experience."
         }
-      },
-      {
-        "kind": "Feature",
-        "content": "**HubSpot lookup against company profiles**\n\nHubSpot integrations now support lookups against Company profiles.\nAdministrators can configure primary and secondary lookup objects, allowing the\nsystem to search for end-users across both Contacts and Companies to ensure\naccurate identification during active sessions.\n\nFor more information, see [HubSpot lookup against company\nprofiles](https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot-lookups).",
-        "summary": {
-          "title": "HubSpot lookup enhancement",
-          "summary": "New HubSpot integration feature allows lookups against company profiles in addition to contacts. This ensures more accurate end-user identification by enabling searches across both object types."
-        }
-      },
-      {
-        "kind": "Announcement",
-        "content": "**Google Cloud CCaaS 4.12**\n\nWe've released version 4.12 of Google Cloud CCaaS.\n\nThe timing of the update to your instance depends on the deployment schedule\nthat you have chosen. For more information, see [Deployment\nschedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).",
-        "summary": {
-          "title": "CCaaS 4.12 Released",
-          "summary": "Version 4.12 of Google Cloud CCaaS has been released. The update schedule for your instance will depend on your chosen deployment schedule. For more details, please refer to the deployment schedules documentation."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**HubSpot: Mobile Phone Number Lookup**\n\nAdmins can now enable mobile phone number lookups for HubSpot integrations to\nensure callers are accurately matched with existing contacts. To activate this,\nnavigate to **Settings > Developer Settings > CRM** and check the **Mobile phone\nnumber lookup** box in the new **Phone Number Lookup** section. Once enabled,\nthe system will automatically search both the \"Phone number\" and \"Mobile phone\nnumber\" fields in HubSpot during incoming voice or chat sessions. For more\ninformation, see [HubSpot mobile phone number\nlookup](https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot-mobile-phone-lookup).",
-        "summary": {
-          "title": "HubSpot Mobile Phone Number Lookup Enabled",
-          "summary": "Admins can now enable mobile phone number lookups for HubSpot integrations to accurately match callers with existing contacts. This feature enhances contact identification during incoming voice or chat sessions by searching both standard and mobile phone number fields."
-        }
       }
     ],
     "2026-03-14": [
-      {
-        "kind": "Feature",
-        "content": "**Advanced reporting is available in French Canadian**\n\nAdvanced reporting dashboards are now available in French Canadian. For more\ninformation about configuring your instance for location and language, see\n[Configure location and\nlanguage](https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-location#configure-location-and-language).",
-        "summary": {
-          "title": "Advanced reporting now in French Canadian",
-          "summary": "Advanced reporting dashboards are now available in French Canadian. You can configure your instance for location and language to enable this feature."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Queue Performance dashboard**\n\nWith the **Queue Performance - Calls** and **Queue Performance - Chats**\ndashboards, get performance metrics by queue for your call and chat sessions.\nThis includes queue interaction volume, abandons, handle time, callbacks,\nsentiment, and CSAT. For more information, see [Queue Performance\ndashboards](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-performance).",
-        "summary": {
-          "title": "New Queue Performance Dashboards",
-          "summary": "Introducing new dashboards to monitor call and chat queue performance. Gain insights into interaction volume, abandons, handle time, and customer satisfaction for each queue."
-        }
-      },
       {
         "kind": "Announcement",
         "content": "**Advanced reporting dashboards 4.0**\n\nWe've released version 4.0 of the advanced reporting dashboards.",
@@ -211,11 +195,11 @@
         }
       },
       {
-        "kind": "Fixed",
-        "content": "The following issues were addressed in this release:\n\n* Fixed an issue where the **Start Time** and **End Time** filters weren't\n  correctly applied to summary metrics on the **Agent Performance** dashboard\n  and historical reports.\n* Fixed an issue where calls returned to queues due to agent connectivity or\n  microphone errors didn't appear in the **Queued Calls** dashboard.\n* Fixed an issue on the **CSAT Dashboard - Calls** dashboard where the\n  direction in the **Direction** filter couldn't be selected.\n* Fixed an issue in dashboards with a **Time Format** filter. When users\n  selected **Seconds** in this filter, single-value tiles displayed decimals\n  instead of whole numbers.\n* Updated the format of time duration fields in Explores from HH:MM:SS to\n  MM:SS for durations of less than one hour. For example, `00:10:20` changed\n  to `10:20`.\n* Fixed an issue where the **Total Failed** metric incorrectly counted a\n  maximum of one failure per call or chat session.\n* Fixed time duration fields so that values represent the number of seconds\n  rather than a fraction of a day.\n* Fixed an issue where the **Queue Abandon %** tile was missing from the\n  **Abandons** dashboards.\n* Fixed an issue on the **Failed Sessions** dashboards where the **Queue\n  Name** column of the **Historical** table and the **Queue Name** filter\n  weren't appearing.\n* Fixed an issue where the **Time Format** filter was missing from dashboards.\n* In the **Real-time Calls**, **Real-time Chats**, **Queue Group\n  Performance**, and **Email** dashboards, the naming of fields such as\n  \"assigned at\", \"created at\", and \"ended at\" was improved in the Explores to\n  make them clearer. For example, on the **Real-time Chats - Chats Connected**\n  dashboard, in the **Chat Metrics (Live)** Explore, **Chat >\n  Started At Date > Date** and **Chat > Started At Date\n  > Month** changed to **Chat > Started At >\n  Started At Date** and **Chat > Started At > Started At\n  Month**.\n* Fixed an issue where the **Agent preferences** table displayed an incorrect\n  date and timestamp.\n* Fixed an issue where the **Location** filter on the **All interactions for\n  Chats** dashboard didn't display data in some tiles.\n* Fixed an issue where deactivated users appeared in dashboards.\n* Fixed an issue where outbound calls that weren't associated with queues\n  appeared in the Queue Performance dashboard.\n* Fixed performance issues on the Agent Performance dashboard.\n* Fixed an issue on the Failed Interactions dashboard where the **Outbound\n  Phone Numbers** filter didn't display any values.\n* Fixed an issue where the **Queue Interactions** metric included the short\n  abandons count.\n* Fixed an issue on the Queue Group Performance - All dashboard where the\n  **Locations** filter didn't display all values.",
+        "kind": "Feature",
+        "content": "**Queue Performance dashboard**\n\nWith the **Queue Performance - Calls** and **Queue Performance - Chats**\ndashboards, get performance metrics by queue for your call and chat sessions.\nThis includes queue interaction volume, abandons, handle time, callbacks,\nsentiment, and CSAT. For more information, see [Queue Performance\ndashboards](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-performance).",
         "summary": {
-          "title": "Resolved Dashboard and Reporting Issues",
-          "summary": "Several issues affecting dashboard accuracy, filter functionality, and data display have been resolved. This update ensures more reliable reporting on agent performance, call queues, and interaction metrics."
+          "title": "New Queue Performance Dashboards",
+          "summary": "Introducing new dashboards to monitor call and chat queue performance. Gain insights into interaction volume, abandons, handle time, and customer satisfaction for each queue."
         }
       },
       {
@@ -228,10 +212,26 @@
       },
       {
         "kind": "Feature",
+        "content": "**Advanced reporting is available in French Canadian**\n\nAdvanced reporting dashboards are now available in French Canadian. For more\ninformation about configuring your instance for location and language, see\n[Configure location and\nlanguage](https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-location#configure-location-and-language).",
+        "summary": {
+          "title": "Advanced reporting now in French Canadian",
+          "summary": "Advanced reporting dashboards are now available in French Canadian. You can configure your instance for location and language to enable this feature."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "**Improved analytics for Queue Interval and Channel Interval dashboards**\n\nWe've improved the detailed information available for the **Queue Interval** and\n**Channel Interval** dashboards:\n\n* **Queue Interval dashboards**: Click a bar in the **SLA by Interval** tile\n  to get historical call or chat queue metrics for that interval.\n* **Channel Interval dashboards**: Click a data point on the trend line in the\n  **Service Level Trend**, **AHT Trend**, **Queue Time Trend**, **CSAT\n  Trend**, or **Transfer Trend** tile to get historical call or chat queue\n  metrics for that interval.",
         "summary": {
           "title": "Enhanced Queue and Channel Analytics",
           "summary": "We've enhanced the Queue Interval and Channel Interval dashboards with improved analytics. Users can now click on specific data points within the dashboards to access historical call or chat queue metrics for selected intervals, providing deeper insights into performance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were addressed in this release:\n\n* Fixed an issue where the **Start Time** and **End Time** filters weren't\n  correctly applied to summary metrics on the **Agent Performance** dashboard\n  and historical reports.\n* Fixed an issue where calls returned to queues due to agent connectivity or\n  microphone errors didn't appear in the **Queued Calls** dashboard.\n* Fixed an issue on the **CSAT Dashboard - Calls** dashboard where the\n  direction in the **Direction** filter couldn't be selected.\n* Fixed an issue in dashboards with a **Time Format** filter. When users\n  selected **Seconds** in this filter, single-value tiles displayed decimals\n  instead of whole numbers.\n* Updated the format of time duration fields in Explores from HH:MM:SS to\n  MM:SS for durations of less than one hour. For example, `00:10:20` changed\n  to `10:20`.\n* Fixed an issue where the **Total Failed** metric incorrectly counted a\n  maximum of one failure per call or chat session.\n* Fixed time duration fields so that values represent the number of seconds\n  rather than a fraction of a day.\n* Fixed an issue where the **Queue Abandon %** tile was missing from the\n  **Abandons** dashboards.\n* Fixed an issue on the **Failed Sessions** dashboards where the **Queue\n  Name** column of the **Historical** table and the **Queue Name** filter\n  weren't appearing.\n* Fixed an issue where the **Time Format** filter was missing from dashboards.\n* In the **Real-time Calls**, **Real-time Chats**, **Queue Group\n  Performance**, and **Email** dashboards, the naming of fields such as\n  \"assigned at\", \"created at\", and \"ended at\" was improved in the Explores to\n  make them clearer. For example, on the **Real-time Chats - Chats Connected**\n  dashboard, in the **Chat Metrics (Live)** Explore, **Chat >\n  Started At Date > Date** and **Chat > Started At Date\n  > Month** changed to **Chat > Started At >\n  Started At Date** and **Chat > Started At > Started At\n  Month**.\n* Fixed an issue where the **Agent preferences** table displayed an incorrect\n  date and timestamp.\n* Fixed an issue where the **Location** filter on the **All interactions for\n  Chats** dashboard didn't display data in some tiles.\n* Fixed an issue where deactivated users appeared in dashboards.\n* Fixed an issue where outbound calls that weren't associated with queues\n  appeared in the Queue Performance dashboard.\n* Fixed performance issues on the Agent Performance dashboard.\n* Fixed an issue on the Failed Interactions dashboard where the **Outbound\n  Phone Numbers** filter didn't display any values.\n* Fixed an issue where the **Queue Interactions** metric included the short\n  abandons count.\n* Fixed an issue on the Queue Group Performance - All dashboard where the\n  **Locations** filter didn't display all values.",
+        "summary": {
+          "title": "Resolved Dashboard and Reporting Issues",
+          "summary": "Several issues affecting dashboard accuracy, filter functionality, and data display have been resolved. This update ensures more reliable reporting on agent performance, call queues, and interaction metrics."
         }
       }
     ],

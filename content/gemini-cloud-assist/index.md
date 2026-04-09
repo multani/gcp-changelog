@@ -2,10 +2,6 @@
 
 ## 2026-04-08
 
-### Breaking
-
-
-
 ### Custom IAM roles permission update for Gemini Cloud Assist
 
 Gemini Cloud Assist has replaced the `cloudaicompanion.instances.completeTask`

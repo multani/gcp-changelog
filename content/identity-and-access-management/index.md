@@ -1,5 +1,18 @@
 # Identity and Access Management
 
+## 2026-04-07
+
+### Feature
+
+Organization Policy Service custom constraints are available for managed workload identity
+and Workload Identity Federation. You can use custom constraints to control how
+managed workload identity and Workload Identity Federation are used in your
+organization. For more information, see
+[Custom organization policy constraints for managed workload identity](https://docs.cloud.google.com/iam/docs/managed-workload-identity-custom-constraints)
+and
+[Custom organization policy constraints for Workload Identity Federation](https://docs.cloud.google.com/iam/docs/workload-identity-federation-custom-constraints).
+
+---
 ## 2026-04-03
 
 ### Deprecated

@@ -1,5 +1,17 @@
 # Cloud Storage
 
+## 2026-04-08
+
+### Feature
+
+You can delete up to 1,000 objects in a single request by using the
+Cloud Storage multi-object delete XML API. If you use Amazon S3-compatible tools or
+libraries, you can point your request to the Cloud Storage endpoint to use this
+feature with your existing workflows. For more information, see
+[Delete objects](https://docs.cloud.google.com/storage/docs/deleting-objects) and
+[Delete multiple objects](https://docs.cloud.google.com/storage/docs/xml-api/post-bucket).
+
+---
 ## 2026-04-06
 
 ### Feature

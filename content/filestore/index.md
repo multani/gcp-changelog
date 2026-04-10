@@ -1,5 +1,15 @@
 # Filestore
 
+## 2026-04-09
+
+### Feature
+
+Filestore is integrated with [Backup and Disaster Recovery (DR) Service](https://docs.cloud.google.com/backup-disaster-recovery/docs) allowing you to centrally manage your backups with advanced features for data protection.
+This feature is [generally available](https://cloud.google.com/products?#product-launch-stages) for Filestore instances.
+
+For more information, see [Backups overview](https://docs.cloud.google.com/filestore/docs/backups).
+
+---
 ## 2026-01-20
 
 ### Feature

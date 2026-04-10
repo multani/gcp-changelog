@@ -1,5 +1,14 @@
 # Service Extensions
 
+## 2026-04-10
+
+### Feature
+
+When configuring extensions by using plugins or callouts, you can specify some
+request and connection attributes to forward to backend services. For more
+information, see [supported attributes](https://docs.cloud.google.com/service-extensions/docs/attributes).
+
+---
 ## 2026-04-09
 
 ### Feature

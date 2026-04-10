@@ -1,5 +1,15 @@
 # Firestore with MongoDB compatibility
 
+## 2026-04-09
+
+### Feature
+
+You can now use
+Gemini Code Assist to get AI-powered assistance in Firestore
+to [generate MQL queries using natural language prompts](https://docs.cloud.google.com/firestore/mongodb-compatibility/docs/write-mql-gemini).
+This feature is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-03-16
 
 ### Feature

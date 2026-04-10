@@ -1,6 +1,16 @@
 {
   "name": "Apigee X",
   "entries": {
+    "2026-04-09": [
+      {
+        "kind": "Change",
+        "content": "**Relaxed limitation on header name for Client IP resolution**\n\nThe client IP can now be resolved from any header, not just the `X-Forwarded-For` header. The most common headers are `X-Forwarded-For` or `True-Client-Ip`.\n\nFor more information, see [Client IP resolution](https://docs.cloud.google.com/apigee/docs/api-platform/system-administration/client-ip-resolution).",
+        "summary": {
+          "title": "Client IP Resolution from Any Header",
+          "summary": "You can now resolve the client IP address from any header, not just X-Forwarded-For. This provides more flexibility in identifying the originating IP address of client requests. Common headers like X-Forwarded-For or True-Client-Ip can be utilized."
+        }
+      }
+    ],
     "2026-04-06": [
       {
         "kind": "Fixed",

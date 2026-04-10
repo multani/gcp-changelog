@@ -1,5 +1,40 @@
 # BigQuery
 
+## 2026-04-09
+
+### Feature
+
+The BigQuery Data Transfer Service can now
+[transfer data from Snowflake to BigQuery](https://docs.cloud.google.com/bigquery/docs/migration/snowflake-transfer).
+This feature is [generally available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+### Feature
+
+You can now use stateful operations in [continuous
+queries](https://docs.cloud.google.com/bigquery/docs/continuous-queries-introduction#supported_stateful_operations),
+which let you perform complex analysis by retaining information across multiple
+rows or time intervals using `JOIN`s and windowing aggregations. This feature is
+in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+You can now use [BigQuery Graph](https://docs.cloud.google.com/bigquery/docs/graph-overview) to model your
+data as a graph and perform analysis on a large scale.
+
+* [Create a graph](https://docs.cloud.google.com/bigquery/docs/graph-create) directly from tables that store
+  entities and relationships between entities. You don't need to modify your
+  existing workflows or replicate your data to use it in graph queries.
+* Use
+  [Graph Query Language (GQL)](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/graph-intro)
+  to find complex, hidden relationships between data points that would be
+  challenging to find using SQL.
+* [Visualize](https://docs.cloud.google.com/bigquery/docs/graph-visualization) your graph schema and graph
+  query results in a notebook.
+
+This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-04-08
 
 ### Feature

@@ -1,5 +1,19 @@
 # Gemini Enterprise
 
+## 2026-04-09
+
+### Feature
+
+**Gemini Enterprise: Support for new actions (Preview)**
+
+New actions are available for the following data stores:
+
+* [Microsoft Outlook](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-outlook)
+* [Salesforce](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/salesforce)
+
+This feature is in Public Preview. For a list of actions for these data stores, see [Supported actions](https://docs.cloud.google.com/gemini/enterprise/docs/connect-third-party-data-source#supported_actions).
+
+---
 ## 2026-04-07
 
 ### Feature

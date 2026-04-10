@@ -1,5 +1,12 @@
 # Cloud Hub
 
+## 2026-04-09
+
+### Feature
+
+[Security & compliance](https://docs.cloud.google.com/hub/docs/security) in Cloud Hub is now in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2025-12-16
 
 ### Announcement

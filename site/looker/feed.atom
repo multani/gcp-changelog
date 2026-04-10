@@ -2,9 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Looker</title>
   <subtitle>Changelog for Google Cloud product: Looker</subtitle>
-  <updated>2026-04-07T00:00:00+00:00</updated>
+  <updated>2026-04-09T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:looker</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/looker/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-04-09:announcement:0</id>
+    <published>2026-04-09T00:00:00+00:00</published>
+    <updated>2026-04-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Starting with the Looker 26.8 release, which will release in May 2026, the following changes will occur:</p>
+<ul>
+<li>Looker (original) admins will no longer be able to access or manage the API credentials of their standard users</li>
+<li>Looker (original) admins will be able to manage which users have access to individually owned API credentials</li>
+<li>Users with access to API credentials will be able to access and manage their own API credentials.</li>
+</ul>
+<p>Before your Looker instance is upgraded to the Looker 26.8 release, your admin must follow the steps in the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-users#migrating">Migrating users to service accounts</a> documentation page. This is to ensure admins can either create or migrate service accounts from existing standard users if they require access to users' API credentials.</p>
+<p>For more information, see the <a href="https://docs.cloud.google.com/looker/docs/best-practices/admin-managed-api-keys-deprecation">Discontinuing the admin capability to create, view, and manage API credentials for a standard user</a> deprecation notice.</p>]]></content>
+    <summary>Starting with the Looker 26.8 release in May 2026, Looker admins will lose the ability to manage standard user API credentials. Users will gain control over their own API credentials, and admins can manage access to individually owned credentials. Admins should review migration documentation before the release to ensure a smooth transition.</summary>
+    <title>Announcement: Looker API Credential Management Changes</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -43,6 +61,17 @@
     <id>urn:github:multani:gcp-changelog:looker:2026-03-30:feature:1</id>
     <published>2026-03-30T00:00:00+00:00</published>
     <updated>2026-03-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/looker-core-mobile-app">Looker mobile application</a> now supports sending <a href="https://docs.cloud.google.com/looker/docs/mobile-app-alerts">alert notifications as push notifications</a> to users who have the Looker mobile application on their mobile device. (This release note was updated on April 9, 2026 to reflect that this update is a feature and to correct a documentation link.)</p>]]></content>
+    <summary>Users can now receive Looker alert notifications directly as push notifications on their mobile devices. This feature requires the Looker mobile application to be installed.</summary>
+    <title>Feature: Mobile alerts now available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-03-30:feature:2</id>
+    <published>2026-03-30T00:00:00+00:00</published>
+    <updated>2026-03-30T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Available in preview for Looker (Google Cloud core), you can now track <a href="https://docs.cloud.google.com/looker/docs/looker-core-lineage">end-to-end data lineage</a> from BigQuery to Looker content, including views, Explores, dashboards, and Looks, through the Looker and Dataplex lineage integration. This enables impact analysis to see how BigQuery changes affect downstream Looker (Google Cloud core) contents.</p>]]></content>
     <summary>You can now track end-to-end data lineage from BigQuery to Looker content, including views, Explores, dashboards, and Looks, through the Looker and Dataplex lineage integration. This feature, available in preview, enables impact analysis to understand how changes in BigQuery affect downstream Looker content.</summary>
     <title>Feature: Track Data Lineage from BigQuery to Looker</title>
@@ -51,7 +80,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-03-30:feature:2</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-03-30:feature:3</id>
     <published>2026-03-30T00:00:00+00:00</published>
     <updated>2026-03-30T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Available in preview, you can <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents">publish the Conversational Analytics data agents</a> that you create in Looker to Gemini Enterprise.</p>]]></content>
@@ -62,7 +91,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-03-30:feature:3</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-03-30:feature:4</id>
     <published>2026-03-30T00:00:00+00:00</published>
     <updated>2026-03-30T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Available in preview, you can chat with <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data">Conversational Analytics data agents</a> in user-defined dashboards and in LookML dashboards.</p>]]></content>
@@ -73,7 +102,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-03-30:feature:4</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-03-30:feature:5</id>
     <published>2026-03-30T00:00:00+00:00</published>
     <updated>2026-03-30T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#enhanced-content-cleanup"><strong>Enhanced Content Cleanup</strong> preview feature</a> is now available. When this feature is enabled for your instance, it lets admins and content owners access an enhanced content management experience in Looker. The <strong>Enhanced Content Cleanup</strong> preview feature provides the following capabilities:</p>
@@ -91,7 +120,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-03-30:feature:5</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-03-30:feature:6</id>
     <published>2026-03-30T00:00:00+00:00</published>
     <updated>2026-03-30T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now generally available, Looker has full support for connections with <a href="https://docs.cloud.google.com/looker/docs/db-config-alloydb">AlloyDB for PostgreSQL</a>. When you <a href="https://docs.cloud.google.com/looker/docs/connecting-to-your-db">create a connection</a> in Looker, you can now select <strong>Google Cloud AlloyDB for PostgreSQL</strong> from the <strong>Dialect</strong> drop-down menu. This update doesn't affect existing AlloyDB connections that were created using the <strong>PostgreSQL 9.5+</strong> option in the Dialect menu.</p>]]></content>
@@ -102,7 +131,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-03-30:feature:6</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-03-30:feature:7</id>
     <published>2026-03-30T00:00:00+00:00</published>
     <updated>2026-03-30T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#new-looker-explore-and-merge-query-experience"><strong>New Looker Explore and Merge Query Experience</strong> preview feature</a> is now available.</p>
@@ -111,17 +140,6 @@
 <p><a href="https://docs.cloud.google.com/looker/docs/new-explore-experience-overview">Learn more about the new Explore and Merge Query experience</a>.</p>]]></content>
     <summary>The redesigned Looker Explore and Merge Query interfaces are now available as a preview feature. This streamlined experience helps users find data connections and gain insights more quickly. For an AI-assisted experience, consider enabling Gemini in Looker.</summary>
     <title>Feature: New Looker Explore and Merge Query Experience Available</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-03-30:change:7</id>
-    <published>2026-03-30T00:00:00+00:00</published>
-    <updated>2026-03-30T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/looker-core-mobile-app">Looker mobile application</a> now supports sending <a href="https://docs.cloud.google.com/looker/docs/looker-mobile-app-alerts">alert notifications as push notifications</a> to users who have the Looker mobile application on their mobile device.</p>]]></content>
-    <summary>The Looker mobile application now supports sending alert notifications as push notifications. Users with the Looker mobile app installed on their devices will receive these alerts directly.</summary>
-    <title>Change: Alert notifications on mobile</title>
   </entry>
   <entry>
     <author>

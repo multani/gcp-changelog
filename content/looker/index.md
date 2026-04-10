@@ -1,5 +1,20 @@
 # Looker
 
+## 2026-04-09
+
+### Announcement
+
+Starting with the Looker 26.8 release, which will release in May 2026, the following changes will occur:
+
+* Looker (original) admins will no longer be able to access or manage the API credentials of their standard users
+* Looker (original) admins will be able to manage which users have access to individually owned API credentials
+* Users with access to API credentials will be able to access and manage their own API credentials.
+
+Before your Looker instance is upgraded to the Looker 26.8 release, your admin must follow the steps in the [Migrating users to service accounts](https://docs.cloud.google.com/looker/docs/admin-panel-users-users#migrating) documentation page. This is to ensure admins can either create or migrate service accounts from existing standard users if they require access to users' API credentials.
+
+For more information, see the [Discontinuing the admin capability to create, view, and manage API credentials for a standard user](https://docs.cloud.google.com/looker/docs/best-practices/admin-managed-api-keys-deprecation) deprecation notice.
+
+---
 ## 2026-04-07
 
 ### Feature
@@ -21,6 +36,10 @@ When this preview feature is enabled, you can use the following features for [ta
 ### Announcement
 
 Starting March 30, 2026, the following features will begin rolling out.
+
+### Feature
+
+The [Looker mobile application](https://docs.cloud.google.com/looker/docs/looker-core-mobile-app) now supports sending [alert notifications as push notifications](https://docs.cloud.google.com/looker/docs/mobile-app-alerts) to users who have the Looker mobile application on their mobile device. (This release note was updated on April 9, 2026 to reflect that this update is a feature and to correct a documentation link.)
 
 ### Feature
 
@@ -58,10 +77,6 @@ When this feature is enabled for your instance, it lets individual users have th
 This feature is disabled by default.
 
 [Learn more about the new Explore and Merge Query experience](https://docs.cloud.google.com/looker/docs/new-explore-experience-overview).
-
-### Change
-
-The [Looker mobile application](https://docs.cloud.google.com/looker/docs/looker-core-mobile-app) now supports sending [alert notifications as push notifications](https://docs.cloud.google.com/looker/docs/looker-mobile-app-alerts) to users who have the Looker mobile application on their mobile device.
 
 ### Feature
 

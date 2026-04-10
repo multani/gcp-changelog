@@ -2400,12 +2400,18 @@
 
 
 <h1 id="apigee-x">Apigee X</h1>
+<h2 id="2026-04-09">2026-04-09</h2>
+<h3 id="change">Change</h3>
+<p><strong>Relaxed limitation on header name for Client IP resolution</strong></p>
+<p>The client IP can now be resolved from any header, not just the <code>X-Forwarded-For</code> header. The most common headers are <code>X-Forwarded-For</code> or <code>True-Client-Ip</code>.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/apigee/docs/api-platform/system-administration/client-ip-resolution">Client IP resolution</a>.</p>
+<hr />
 <h2 id="2026-04-06">2026-04-06</h2>
 <h3 id="fixed">Fixed</h3>
 <p><strong>Correction to <a href="#April_02_2026">April 2, 2026 release note: Deployment disruption for Apigee Drupal Portal via Google Cloud Marketplace</a></strong></p>
 <p>For the deployment disruption announced on April 2, the announcement noted that deployment and management functionality using Google Cloud Deployment Manager would definitely be unavailable during the transition. This statement is incorrect. The functionality <em>might</em> be unavailable.</p>
 <p>See the <a href="https://docs.cloud.google.com/apigee/docs/release/known-issues#495305258">Known issue</a> for more information.</p>
-<h3 id="change">Change</h3>
+<h3 id="change_1">Change</h3>
 <p>On April 6th, 2026, we released an updated version of Apigee.</p>
 <p>This change introduces the new <code>apigee.coreServiceAgent</code> IAM role for
 Apigee. <strong>Effective immediately, use <code>apigee.coreServiceAgent</code> instead of the
@@ -2444,7 +2450,7 @@ as defined in the OAS standard, automatically combining the <code>server.url</co
 <p>If you previously prepended base paths to your OAS paths entries, remove the path segment from your <code>servers.url</code> field to prevent
 duplication. For example, change <code>https://example.com/api/v1</code> to <code>https://example.com</code>.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/apigee/docs/api-platform/apigee-mcp/apigee-mcp-quickstart#create-an-openapi-3.0.x-specification-describing-your-api-operations">Create an OpenAPI 3.0 specification</a>.</p>
-<h3 id="change_1">Change</h3>
+<h3 id="change_2">Change</h3>
 <p><strong>Updated MCP server target endpoint for MCP Discovery Proxies</strong></p>
 <p>With the GA launch of Model Context Protocol (MCP) in Apigee, the structure of the MCP server target endpoint for MCP Discover Proxies has changed to <code>ORG_NAME.mcp.apigee.internal</code>.</p>
 <p>Private preview customers using the previous format (<code>mcp.apigee.internal</code>) are encouraged to update their proxies to reflect the new structure. Existing endpoints using the old format will continue to work, but new endpoints will use the new structure.</p>
@@ -3862,6 +3868,9 @@ new services like <code>google-guest-compat-manager.service</code> and
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#apigee-x">Apigee X</a></li>
+          <li class="nav-item">
+            <a href="#2026-04-09" class="nav-link">2026-04-09</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-04-06" class="nav-link">2026-04-06</a>
           </li>

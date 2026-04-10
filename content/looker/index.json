@@ -1,6 +1,16 @@
 {
   "name": "Looker",
   "entries": {
+    "2026-04-09": [
+      {
+        "kind": "Announcement",
+        "content": "Starting with the Looker 26.8 release, which will release in May 2026, the following changes will occur:\n\n* Looker (original) admins will no longer be able to access or manage the API credentials of their standard users\n* Looker (original) admins will be able to manage which users have access to individually owned API credentials\n* Users with access to API credentials will be able to access and manage their own API credentials.\n\nBefore your Looker instance is upgraded to the Looker 26.8 release, your admin must follow the steps in the [Migrating users to service accounts](https://docs.cloud.google.com/looker/docs/admin-panel-users-users#migrating) documentation page. This is to ensure admins can either create or migrate service accounts from existing standard users if they require access to users' API credentials.\n\nFor more information, see the [Discontinuing the admin capability to create, view, and manage API credentials for a standard user](https://docs.cloud.google.com/looker/docs/best-practices/admin-managed-api-keys-deprecation) deprecation notice.",
+        "summary": {
+          "title": "Looker API Credential Management Changes",
+          "summary": "Starting with the Looker 26.8 release in May 2026, Looker admins will lose the ability to manage standard user API credentials. Users will gain control over their own API credentials, and admins can manage access to individually owned credentials. Admins should review migration documentation before the release to ensure a smooth transition."
+        }
+      }
+    ],
     "2026-04-07": [
       {
         "kind": "Feature",
@@ -18,6 +28,14 @@
         "summary": {
           "title": "Feature Rollout Begins March 30, 2026",
           "summary": "A new set of features will start rolling out to users beginning March 30, 2026. This update introduces enhancements and new capabilities designed to improve user experience and functionality. Further details on specific features will be shared closer to the release date."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [Looker mobile application](https://docs.cloud.google.com/looker/docs/looker-core-mobile-app) now supports sending [alert notifications as push notifications](https://docs.cloud.google.com/looker/docs/mobile-app-alerts) to users who have the Looker mobile application on their mobile device. (This release note was updated on April 9, 2026 to reflect that this update is a feature and to correct a documentation link.)",
+        "summary": {
+          "title": "Mobile alerts now available",
+          "summary": "Users can now receive Looker alert notifications directly as push notifications on their mobile devices. This feature requires the Looker mobile application to be installed."
         }
       },
       {
@@ -66,14 +84,6 @@
         "summary": {
           "title": "New Looker Explore and Merge Query Experience Available",
           "summary": "The redesigned Looker Explore and Merge Query interfaces are now available as a preview feature. This streamlined experience helps users find data connections and gain insights more quickly. For an AI-assisted experience, consider enabling Gemini in Looker."
-        }
-      },
-      {
-        "kind": "Change",
-        "content": "The [Looker mobile application](https://docs.cloud.google.com/looker/docs/looker-core-mobile-app) now supports sending [alert notifications as push notifications](https://docs.cloud.google.com/looker/docs/looker-mobile-app-alerts) to users who have the Looker mobile application on their mobile device.",
-        "summary": {
-          "title": "Alert notifications on mobile",
-          "summary": "The Looker mobile application now supports sending alert notifications as push notifications. Users with the Looker mobile app installed on their devices will receive these alerts directly."
         }
       },
       {

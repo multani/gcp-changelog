@@ -4,6 +4,14 @@
     "2026-04-06": [
       {
         "kind": "Feature",
+        "content": "If the storage capacity of a Cloud SQL instance is larger than your application\nneeds, then you can manually reduce, or shrink, your storage capacity to a smaller\nsize.\n\nDepending on underlying disk size, storage shrink operations might incur\nconsiderable downtime. If your instance requires limited downtime, rather than\nusing storage shrink capabilities, we recommend migrating your data to a new,\nsmaller instance using Database Migration Service.\n\nFor more information, see\n[About storage shrink](https://docs.cloud.google.com/sql/docs/postgres/about-storage-shrink).",
+        "summary": {
+          "title": "Reduce Cloud SQL storage capacity",
+          "summary": "You can now manually reduce the storage capacity of your Cloud SQL instances if they are larger than your application needs. Be aware that storage shrink operations might incur considerable downtime depending on the underlying disk size. For instances requiring limited downtime, consider migrating your data to a new, smaller instance using Database Migration Service."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "The QueryData tool lets you to query the data in your database using conversational language and build data agents. For more information, see [QueryData tool overview](https://docs.cloud.google.com/sql/docs/postgres/data-agent-overview). This feature is available in ([Preview](https://cloud.google.com/products#product-launch-stages)).\n\nThe preview release increases the accuracy of SQL generation with value search queries which match values and their context within a database. Value search queries trigger automatically.",
         "summary": {
           "title": "Query your database with natural language",

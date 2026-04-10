@@ -12,6 +12,25 @@
     <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2026-04-06:feature:0</id>
     <published>2026-04-06T00:00:00+00:00</published>
     <updated>2026-04-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>If the storage capacity of a Cloud SQL instance is larger than your application
+needs, then you can manually reduce, or shrink, your storage capacity to a smaller
+size.</p>
+<p>Depending on underlying disk size, storage shrink operations might incur
+considerable downtime. If your instance requires limited downtime, rather than
+using storage shrink capabilities, we recommend migrating your data to a new,
+smaller instance using Database Migration Service.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/sql/docs/postgres/about-storage-shrink">About storage shrink</a>.</p>]]></content>
+    <summary>You can now manually reduce the storage capacity of your Cloud SQL instances if they are larger than your application needs. Be aware that storage shrink operations might incur considerable downtime depending on the underlying disk size. For instances requiring limited downtime, consider migrating your data to a new, smaller instance using Database Migration Service.</summary>
+    <title>Feature: Reduce Cloud SQL storage capacity</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2026-04-06:feature:1</id>
+    <published>2026-04-06T00:00:00+00:00</published>
+    <updated>2026-04-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The QueryData tool lets you to query the data in your database using conversational language and build data agents. For more information, see <a href="https://docs.cloud.google.com/sql/docs/postgres/data-agent-overview">QueryData tool overview</a>. This feature is available in (<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>).</p>
 <p>The preview release increases the accuracy of SQL generation with value search queries which match values and their context within a database. Value search queries trigger automatically.</p>]]></content>
     <summary>Introducing the QueryData tool, now in preview. This feature allows you to query your database using conversational language and build data agents. It enhances SQL generation accuracy with automatic value search queries that match values and their context within your database.</summary>

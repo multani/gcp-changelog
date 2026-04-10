@@ -5,7 +5,7 @@
 ### Feature
 
 Security Command Center [Risk Engine](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-supported-features)
-supports Dataproc resources in attack paths and Dataproc
+supports Managed Service for Apache Spark resources in attack paths and Managed Service for Apache Spark
 clusters and jobs in high-value resource sets.
 
 ---

@@ -2,10 +2,6 @@
 
 ## 2026-04-09
 
-### Fixed
-
-
-
 ### Agent mode logs now attributed to Gemini Code Assist
 
 VS Code Gemini Code Assist `2.77.1` now attributes agent mode logs to Gemini
@@ -13,10 +9,6 @@ Code Assist. In previous versions, agent mode logs are being attributed to
 Gemini CLI instead of Gemini Code Assist. This discrepancy is resolved in the
 latest release, and we recommend that you update to version `2.77.1` or higher
 to ensure your usage metrics are correctly reported.
-
-### Fixed
-
-
 
 ### Agent mode logs now attributed to Gemini Code Assist
 

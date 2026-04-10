@@ -4,7 +4,24 @@
 
 ### Feature
 
-Automated cataloging of Looker (Google Cloud core) metadata as well as data lineage ingestion from BigQuery sources are now available in [preview](https://cloud.google.com/products#product-launch-stages). For more information, see the [Looker (Google Cloud core) documentation](https://docs.cloud.google.com/looker/docs/looker-core-dataplex).
+Automated cataloging of Looker (Google Cloud core) metadata as well as data
+lineage ingestion from BigQuery sources are now available in
+[preview](https://cloud.google.com/products#product-launch-stages). For more
+information, see the [Looker (Google Cloud core) documentation](https://docs.cloud.google.com/looker/docs/looker-core-dataplex).
+
+---
+## 2026-03-23
+
+### Feature
+
+You can now specify a custom execution identity for data quality and
+data profile scans. By default, scans are executed using the Service
+Agent. You can now use a custom service account (Bring Your Own Service Account)
+or End-User Credentials (EUC). Using a custom execution identity lets you
+enforce the principle of least privilege, use fine-grained BigQuery access
+controls, and unify scan processing costs directly under BigQuery.
+
+For more information, see [Configure execution identity for data quality scans](https://cloud.google.com/dataplex/docs/use-auto-data-quality#configure-execution-identity) and [Configure execution identity for data profile scans](https://cloud.google.com/dataplex/docs/use-data-profiling#configure-execution-identity).
 
 ---
 ## 2026-02-24

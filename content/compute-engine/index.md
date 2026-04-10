@@ -1,5 +1,22 @@
 # Compute Engine
 
+## 2026-04-09
+
+### Feature
+
+**Generally available**: Hyperdisk ML disks are supported by the following machine
+series:
+
+* [A3 Ultra](https://docs.cloud.google.com/compute/docs/accelerator-optimized-machines#a3-disks)
+* [C4D](https://docs.cloud.google.com/compute/docs/general-purpose-machines#supported_disk_types_for_c4d)
+* [N4](https://docs.cloud.google.com/compute/docs/general-purpose-machines#supported_disk_types_for_n4)
+* [N4D](https://docs.cloud.google.com/compute/docs/general-purpose-machines#supported_disk_types_for_n4d)
+
+Hyperdisk ML offers the highest throughput of all Google Cloud Hyperdisk types,
+up to 2 TiB/s (2,097,152 MiB/s). For more information,
+see [Hyperdisk ML overview](https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-ml).
+
+---
 ## 2026-04-02
 
 ### Feature

@@ -1,6 +1,48 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
+    "2026-04-10": [
+      {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS prerelease notes**\n\nHere are the prerelease notes for the next version of Google Cloud CCaaS. When\nwe release this version, we expect the new capabilities to be as shown here.",
+        "summary": {
+          "title": "New CCaaS Features Arriving Soon",
+          "summary": "Get ready for the next iteration of our Contact Center as a Service platform. This upcoming release will introduce exciting new capabilities designed to enhance your customer engagement strategies. We're providing these prerelease notes so you can anticipate the improvements."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Language selection support for direct calls**\n\nEnd-users making direct calls to agent phone numbers and agent extension numbers\ncan select their language at the start of a call.\n\nAdministrators: The **Add Number** and **Edit a Number** dialogs, located at\n**Settings > Call > Phone Numbers > Phone\nNumber Management**, have a new **Set a default language** checkbox (when the\n**Set as a direct number** checkbox is selected). A list of languages appears\nwhen you select the **Set a default language** checkbox.",
+        "summary": {
+          "title": "Language selection for direct calls",
+          "summary": "Users can now select their preferred language when making direct calls to agent phone numbers or extensions. Administrators can configure default languages for direct numbers within the Phone Number Management settings."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**\"Improved controls for predictive campaigns\" is available without assistance\nfrom the Google account team**\n\nThis feature was announced on [March 24,\n2026](https://docs.cloud.google.com/contact-center/ccai-platform/docs/release-notes#March_24_2026) but\npreviously required the Google account team to enable it. You no longer need\nassistance from the Google account team to use this capability. For more\ninformation, see [Predictive\ncampaigns](https://docs.cloud.google.com/contact-center/ccai-platform/docs/campaign-predictive).",
+        "summary": {
+          "title": "Enhanced predictive campaign controls",
+          "summary": "Improved controls for predictive campaigns are now available without needing assistance from your Google account team. You can now manage these capabilities directly. For more details, refer to the documentation on predictive campaigns."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Virtual agents can transfer calls to a specific human agent**\n\nVirtual agents can transfer calls directly to a specific human agent using the\nagent ID or agent extension number. Include the `agent_extension` or `agent_id`\nfield in the transfer payload to direct the call to the correct agent.",
+        "summary": {
+          "title": "Transfer calls to specific agents",
+          "summary": "Virtual agents can now transfer calls directly to a specific human agent. Use the agent ID or agent extension number in the transfer payload to ensure the call reaches the intended recipient."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were addressed in this release:\n\n* Fixed an issue where backslash characters in chat shortcuts and chat\n  messages weren't displayed correctly, resulting in missing or empty message\n  chat bubbles.\n* Fixed an issue where virtual agent chat transcripts didn't match the actual\n  conversation.\n* Fixed an issue where call times in session metadata for virtual agent to\n  human agent escalations were shorter than the actual call times.\n* Fixed an issue where agents were able to join a conference call despite\n  receiving microphone permission errors.\n* Fixed an issue where direct inbound calls to Twilio numbers assigned at the\n  user level continuously rang without reaching the agent.\n* Fixed an issue where chat transfers from auto-answer queues to manual-answer\n  queues were incorrectly recorded as manual-to-manual in reporting.\n* Fixed an agent desktop issue where French (Canadian) translations were\n  missing or incorrect during outbound calls.\n* Fixed an issue where the **All Teams** filter didn't block interactions with\n  background elements, which could cause unintended end-user interactions with\n  the UI.\n* Fixed an issue where missed call volumes didn't appear on the agent\n  monitoring page.\n* Fixed an issue that occurred when the **Display transfer history in agent\n  adapter** capability was enabled. After a virtual agent escalation,\n  escalated queue names were shown in English instead of the correct target\n  language.\n* Fixed an issue where virtual agent audio sessions ended after 15 minutes,\n  causing calls to be escalated unexpectedly.\n* Fixed an issue where underscores within email addresses were incorrectly\n  removed in CRM transcripts.\n* Fixed an issue where chat transcript PDFs weren't generated when real-time\n  redaction was enabled and conversations included non-text message types such\n  as inline buttons or content cards.\n* Fixed an issue where content cards sent by virtual agents during\n  conversations were missing from the PDF chat transcript.\n* Fixed an issue where chat transcripts created through the API weren't\n  appearing in agent conversations.\n* Fixed an issue where voicemails disappeared from the agent's queue and\n  didn't appear in voicemail history or reports.\n* Fixed an issue where the agent adapter displayed **Escalated Virtual Agent\n  Call** instead of **IVR Callback** after connecting during a callback.\n* Fixed an issue where chat disposition selections reset during wrap-up,\n  particularly when Agent Assist was enabled.\n* Fixed an issue where custom fields in dialer list uploads worked only if the\n  column headers were in all caps.\n* Fixed an issue where the email adapter didn't start up.",
+        "summary": {
+          "title": "Resolved various issues",
+          "summary": "This release addresses multiple issues, including incorrect display of chat characters, inaccurate call times, and problems with call routing and agent desktop translations. Several fixes also improve chat transcript generation and voicemail handling."
+        }
+      }
+    ],
     "2026-04-07": [
       {
         "kind": "Announcement",

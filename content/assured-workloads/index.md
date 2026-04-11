@@ -23,20 +23,6 @@ supports the following products:
 
 ### Feature
 
-The [Data Boundary for Impact Level 5 (IL5)](https://docs.cloud.google.com/assured-workloads/docs/control-packages/il5)
-supports the following products:
-
-* Access Context Manager
-* AlloyDB for PostgreSQL
-* Cloud Service Mesh
-* Dataplex Universal Catalog
-* Filestore
-* Google Cloud Armor
-* Google Security Operations SOAR
-* Network Connectivity Center
-
-### Feature
-
 The [Data Boundary for Impact Level 2 (IL2)](https://docs.cloud.google.com/assured-workloads/docs/control-packages/il2)
 supports the following products:
 
@@ -50,7 +36,7 @@ supports the following products:
 * Access Context Manager
 * AlloyDB for PostgreSQL
 * Cloud Service Mesh
-* Dataplex Universal Catalog
+* Knowledge Catalog
 * Filestore
 * Google Cloud Armor
 * Google Security Operations SOAR
@@ -62,6 +48,20 @@ The [Data Boundary for FedRAMP Moderate](https://docs.cloud.google.com/assured-w
 supports the following products:
 
 * Model Armor
+
+### Feature
+
+The [Data Boundary for Impact Level 5 (IL5)](https://docs.cloud.google.com/assured-workloads/docs/control-packages/il5)
+supports the following products:
+
+* Access Context Manager
+* AlloyDB for PostgreSQL
+* Cloud Service Mesh
+* Knowledge Catalog
+* Filestore
+* Google Cloud Armor
+* Google Security Operations SOAR
+* Network Connectivity Center
 
 ---
 ## 2026-03-27
@@ -114,7 +114,7 @@ support the following products:
 * Cloud Tasks
 * Dialogflow CX
 * Dataform
-* Dataplex Universal Catalog
+* Knowledge Catalog
 * Document AI
 * External passthrough Network Load Balancer
 * Firestore

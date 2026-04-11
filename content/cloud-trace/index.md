@@ -1,5 +1,14 @@
 # Cloud Trace
 
+## 2026-04-10
+
+### Feature
+
+Use Cloud Trace to troubleshoot your MCP server usage, tool failures, and
+latency causes. For more information, see
+[Investigate MCP calls using Trace](https://docs.cloud.google.com/trace/docs/trace-remote-mcp-server-calls).
+
+---
 ## 2026-04-08
 
 ### Feature

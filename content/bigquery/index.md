@@ -1,5 +1,14 @@
 # BigQuery
 
+## 2026-04-10
+
+### Feature
+
+[SQL cells](https://docs.cloud.google.com/colab/docs/sql-cells) in BigQuery notebooks are now
+[generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
+
+---
 ## 2026-04-09
 
 ### Feature

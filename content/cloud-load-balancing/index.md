@@ -1,5 +1,19 @@
 # Cloud Load Balancing
 
+## 2026-04-10
+
+### Feature
+
+Published service backends let you configure [supported load balancers](https://docs.cloud.google.com/vpc/docs/about-accessing-vpc-hosted-services-endpoints#published-service-backend-support)
+or [regional Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/docs/regional-cloud-service-mesh#configuring-published-service-backends) to route
+traffic to published services through Private Service Connect endpoints.
+
+For more information, see
+[Published service backends](https://docs.cloud.google.com/load-balancing/docs/backend-service#Published-service-backends).
+
+This feature is in **Preview**.
+
+---
 ## 2026-04-05
 
 ### Feature

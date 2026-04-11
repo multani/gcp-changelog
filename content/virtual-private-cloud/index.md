@@ -1,5 +1,17 @@
 # Virtual Private Cloud
 
+## 2026-04-10
+
+### Feature
+
+Private Service Connect consumers can configure supported load
+balancers or regional Cloud Service Mesh to access published services through
+Private Service Connect endpoints. This feature is available in **Preview**.
+
+For more information, see
+[Published service backends](https://docs.cloud.google.com/vpc/docs/about-accessing-vpc-hosted-services-endpoints#published-service-backends).
+
+---
 ## 2026-04-03
 
 ### Feature

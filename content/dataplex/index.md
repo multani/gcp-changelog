@@ -1,5 +1,17 @@
 # Dataplex
 
+## 2026-04-10
+
+### Feature
+
+The lightweight profiling mode for data profile scans is available in
+[preview](https://cloud.google.com/products#product-launch-stages).
+
+The lightweight mode provides low-latency profile scans that return results in
+seconds, making it ideal for grounding AI agent responses and interactive data
+exploration. For more information, see [Profiling modes](https://cloud.google.com/dataplex/docs/data-profiling-overview#profiling-modes).
+
+---
 ## 2026-03-30
 
 ### Feature

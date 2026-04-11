@@ -1,5 +1,19 @@
 # Batch
 
+## 2026-03-20
+
+### Feature
+
+Flex-start VMs and calendar-mode reservations are generally available
+([GA](https://cloud.google.com/products#product-launch-stages)).
+
+Both consumption options use
+[Dynamic Workload Scheduler pricing](https://cloud.google.com/products/dws/pricing),
+which offers discounts of up to 53% off of on-demand pricing.
+For more information, see [Create and run a job that uses GPUs](https://docs.cloud.google.com/batch/docs/create-run-job-gpus)
+and [Ensure resource availability using VM reservations](https://docs.cloud.google.com/batch/docs/create-run-job-reservation).
+
+---
 ## 2025-10-30
 
 ### Changed

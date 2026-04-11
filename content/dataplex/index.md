@@ -2,6 +2,11 @@
 
 ## 2026-04-10
 
+### Announcement
+
+Dataplex Universal Catalog is now called Knowledge Catalog. The API, client
+library, CLI, and Identity and Access Management (IAM) names remain unchanged.
+
 ### Feature
 
 The lightweight profiling mode for data profile scans is available in
@@ -9,7 +14,21 @@ The lightweight profiling mode for data profile scans is available in
 
 The lightweight mode provides low-latency profile scans that return results in
 seconds, making it ideal for grounding AI agent responses and interactive data
-exploration. For more information, see [Profiling modes](https://cloud.google.com/dataplex/docs/data-profiling-overview#profiling-modes).
+exploration. For more information, see [Profiling modes](https://cloud.google.com/dataplex/docs/data-profiling-overview#profiling_modes).
+
+---
+## 2026-04-09
+
+### Feature
+
+You can now specify a custom execution identity for data quality and
+data profile scans. By default, scans are executed using the Service
+Agent. You can now use a custom service account (Bring Your Own Service Account)
+or End-User Credentials (EUC). Using a custom execution identity lets you
+enforce the principle of least privilege, use fine-grained BigQuery access
+controls, and unify scan processing costs directly under BigQuery.
+
+For more information, see [Configure execution identity for data quality scans](https://cloud.google.com/dataplex/docs/use-auto-data-quality#configure-execution-identity) and [Configure execution identity for data profile scans](https://cloud.google.com/dataplex/docs/use-data-profiling#configure-execution-identity).
 
 ---
 ## 2026-03-30

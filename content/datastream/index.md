@@ -1,5 +1,18 @@
 # Datastream
 
+## 2026-04-10
+
+### Feature
+
+Datastream is now integrated with Knowledge Catalog.
+This integration lets you search for and browse your Datastream
+resources, such as streams, connection profiles, and connectivity configurations
+directly in Knowledge Catalog.
+
+For more information, see
+[the documentation](https://docs.cloud.google.com/datastream/docs/knowledge-catalog-integration).
+
+---
 ## 2026-04-07
 
 ### Feature

@@ -2,17 +2,9 @@
 
 ## 2026-04-13
 
-### Fixed
-
-
-
 ### Quota issues fixed in VS Code
 
 Various bug fixes related to quota issues.
-
-### Fixed
-
-
 
 ### Quota issues fixed in VS Code
 

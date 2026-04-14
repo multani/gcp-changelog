@@ -6,8 +6,8 @@
 
 Starting with the Looker 26.8 release, which will release in May 2026, the following changes will occur:
 
-* Looker (original) admins will no longer be able to access or manage the API credentials of their standard users
-* Looker (original) admins will be able to manage which users have access to individually owned API credentials
+* Looker (original) admins will no longer be able to access or manage the API credentials of their standard users.
+* Looker (original) admins will be able to manage which users have access to individually owned API credentials.
 * Users with access to API credentials will be able to access and manage their own API credentials.
 
 Before your Looker instance is upgraded to the Looker 26.8 release, your admin must follow the steps in the [Migrating users to service accounts](https://docs.cloud.google.com/looker/docs/admin-panel-users-users#migrating) documentation page. This is to ensure admins can either create or migrate service accounts from existing standard users if they require access to users' API credentials.
@@ -19,7 +19,7 @@ For more information, see the [Discontinuing the admin capability to create, vie
 
 ### Feature
 
-The **Table Visualization Improvements** preview feature is now available, and is disabled by default.
+The **Table Visualization Improvements** preview feature is now available and is disabled by default.
 
 When this preview feature is enabled, you can use the following features for [table visualizations](https://docs.cloud.google.com/looker/docs/table-options):
 

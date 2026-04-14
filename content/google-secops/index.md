@@ -310,24 +310,22 @@ The Chrome Enterprise Premium integration is now GA. This release includes the f
 
 ### Feature
 
-**Multi-stage queries in YARA-L**
+**[Spotlight Feature] Multi-stage queries in YARA-L**
 
-The Multi-stage queries feature is now GA. This feature lets you feed the output of one query stage into the input of another, providing more granular data transformation than a single, monolithic query.
+The Multi-stage queries feature is now GA. This feature lets you feed the output of one query stage into the input of another, providing more granular data transformation than a single, monolithic query. You can use multi-stage queries in both Dashboards and Search to build sophisticated detection and visualization logic. No action is required to enable this feature.
 
-You can use multi-stage queries in both Dashboards and Search to build sophisticated detection and visualization logic. No action is required to enable this feature.
-
-Learn more about how to [create multi-stage queries with YARA-L 2.0](https://docs.cloud.google.com/chronicle/docs/investigation/multi-stage-yaral).
+For more information, see [create multi-stage queries with YARA-L 2.0](https://docs.cloud.google.com/chronicle/docs/investigation/multi-stage-yaral).
 
 ---
 ## 2026-03-25
 
 ### Feature
 
-**Credential validation for third-party API feed types**
+**[Spotlight Feature] Credential validation for third-party API feed types**
 
-Credential validation is now available for all 49 third-party API connectors.
+Credential validation is now available for all 49 third-party API connectors. When you create a feed using a third-party API feed type, Google SecOps now automatically validates the provided credentials.
 
-When you create a feed using a third-party API feed type, Google SecOps now automatically validates the provided credentials. This ensures that if credentials are incorrect:
+This ensures that if credentials are incorrect, the following happens:
 
 * **Immediate feedback**: The web interface displays an error message explaining the configuration failure.
 * **Prevention of broken feeds**: The system blocks the creation of the feed until valid credentials are provided, preventing the creation of broken feeds that fail to ingest data later.
@@ -411,21 +409,17 @@ New parser documentation is available to help you ingest and normalize logs from
 
 ### Feature
 
-**View Triage and Investigation Agent (TIN) results in the Case Summary**
+**[Spotlight Feature] View Triage and Investigation Agent (TIN) results in the Case Summary**
 
-This feature is currently in Preview and is part of a gradual rollout.
-
-You can now view TIN results and verdict summaries directly within the **Case Summary** view. This integration provides real-time progress updates and automated verdicts for true or false positives without leaving the case.
+The TIN feature is currently in Preview and is part of a gradual rollout. You can now view TIN results and verdict summaries directly within the **Case Summary** view. This integration provides real-time progress updates and automated verdicts for true or false positives without leaving the case.
 
 For more information, see [Use Triage and Investigation Agent (TIN) to investigate alerts](https://docs.cloud.google.com/chronicle/docs/secops/triage-investigation-agent#manual_investigations).
 
 ### Feature
 
-**Agentic Automation**
+**[Spotlight Feature] Agentic Automation**
 
-This feature is in Public Preview.
-
-You can now use **Agentic Automation** to embed AI Agents directly into your workflows. This feature lets you integrate AI-driven capabilities into your existing playbooks while staying in charge of critical actions by combining agents with deterministic automation steps.
+The Agentic Automation feature is in Public Preview. You can now use **Agentic Automation** to embed AI Agents directly into your workflows. This feature lets you integrate AI-driven capabilities into your existing playbooks while staying in charge of critical actions by combining agents with deterministic automation steps.
 
 For more information, see [Agentic Automation](https://docs.cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/agentic-automation).
 
@@ -434,13 +428,17 @@ For more information, see [Agentic Automation](https://docs.cloud.google.com/chr
 
 ### Feature
 
-**Bindplane features for Google SecOps general availability**
+**[Spotlight Feature] Bindplane features for Google SecOps**
 
-The following [Bindplane](https://docs.cloud.google.com/chronicle/docs/ingestion/use-bindplane-agent) features that relate to Google SecOps are now in General Availability (GA):
+The following Bindplane features that relate to Google SecOps are now in General Availability (GA): Single sign-on with custom claims role mapping, SecOps parser validator and Forwarder migration tool.
+
+Some of the main enhancements include:
 
 * **Single sign-on with custom claims role mapping**: gives a production-ready way to manage Bindplane access through your identity provider. For more information, see [Single Sign-On (Cloud)](https://docs.bindplane.com/feature-guides/saas-single-sign-on).
 * **SecOps parser validator**: validates that your logs will be parsed correctly by Google SecOps directly from the snapshot view. Get immediate feedback on parsed events or validation errors without waiting for data to appear in Google SecOps. For more information, see [Validate SecOps Parser](https://docs.bindplane.com/feature-guides/pipeline-intelligence#validate-secops-parser).
 * **Forwarder migration tool**: provides production-ready paths to migrate existing forwarder configurations into Bindplane-managed pipelines. For more information, see [Migrate Configurations](https://docs.bindplane.com/feature-guides/pipeline-intelligence#migrate-configurations).
+
+For more information, see [Bindplane](https://docs.cloud.google.com/chronicle/docs/ingestion/use-bindplane-agent)
 
 ---
 ## 2026-03-17

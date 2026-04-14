@@ -17,7 +17,7 @@ For more information, see
 
 ### Feature
 
-**Gemma 4 26B A4B IT** is available as an experimental launch in Model Garden. This is an open model built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output.
+**Gemma 4 26B A4B IT** is available as an experimental launch in Model Garden. This is an open model built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input and generating text output.
 Gemma 4 26B A4B IT is available as a managed API in Model Garden. To learn more, see
 [Gemma 4 26B A4B IT](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/maas/google/gemma-4-26b-a4b-it).
 

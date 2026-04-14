@@ -1,5 +1,18 @@
 # Spanner
 
+## 2026-04-13
+
+### Feature
+
+Spanner supports importing data from Cloud SQL for MySQL.
+This feature lets you migrate the schema and perform a one-time bulk data load
+to evaluate Spanner for your use case.
+For more information, see
+[Import from Cloud SQL to Spanner](https://docs.cloud.google.com/spanner/docs/import-database-cloudsql).
+
+This feature is [generally available](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-04-06
 
 ### Feature

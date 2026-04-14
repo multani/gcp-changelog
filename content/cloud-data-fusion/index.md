@@ -9,6 +9,8 @@ Cloud Data Fusion version 6.11.1.2 is
 
 This release includes the following changes:
 
+* Fixed an issue that caused pipelines to get stuck in the provisioning state
+  when processing large run records ([CDAP-21234](https://cdap.atlassian.net/browse/CDAP-21234)).
 * Fixed the triggers panel in the pipeline details page to display the correct
   triggers count on initial load ([CDAP-21230](https://cdap.atlassian.net/browse/CDAP-21230)).
 * Updated the GraphQL query mechanism to cache the pipelines list and fix the

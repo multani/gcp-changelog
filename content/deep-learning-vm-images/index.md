@@ -1,5 +1,21 @@
 # Deep Learning VM Images
 
+## 2026-04-13
+
+### Breaking
+
+Images with Nvidia 570 drivers have been deprecated as Nvidia officially stopped supporting these versions. You can use images with Nvidia 580 drivers instead.
+
+---
+## 2026-04-08
+
+### Feature
+
+**M132 release**
+
+* Ubuntu 22.04 and Ubuntu 24.04 images with Nvidia 580 drivers and CUDA 12.9 stack are now available for Common and PyTorch 2.9 images.
+
+---
 ## 2025-07-14
 
 ### Breaking

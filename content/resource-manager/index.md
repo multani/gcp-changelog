@@ -1,5 +1,16 @@
 # Resource Manager
 
+## 2026-04-07
+
+### Feature
+
+You can now create tag keys and tag bindings with dynamic values using the
+Google Cloud console. You can also use a new [unified API](https://docs.cloud.google.com/resource-manager/reference/rest/v3/locations.tagBindingCollections/patch) and Google Cloud CLI to
+add or update tags on a resource.
+
+For more information, see [Create and define a new tag](https://docs.cloud.google.com/resource-manager/docs/tags/tags-creating-and-managing#creating).
+
+---
 ## 2026-02-15
 
 ### Deprecated

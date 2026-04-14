@@ -1,5 +1,17 @@
 # Firestore
 
+## 2026-04-13
+
+### Feature
+
+* You can now use the **Usage Insights** dashboard in the
+  Google Cloud console to monitor and analyze your billable usage for specific
+  Firestore databases. Usage insights help you track granular usage
+  data, optimize costs, and monitor historical trends.
+
+  To learn more, see the guide to analyze usage insights for [Native mode](https://docs.cloud.google.com/firestore/native/docs/usage-insights) and [MongoDB compabatibility mode](https://docs.cloud.google.com/firestore/mongodb-compatibility/docs/usage-insights).
+
+---
 ## 2026-03-23
 
 ### Feature

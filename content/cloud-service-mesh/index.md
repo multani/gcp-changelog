@@ -1,5 +1,110 @@
 # Cloud Service Mesh
 
+## 2026-04-13
+
+### Announcement
+
+**1.28.5-asm.12 is now available for in-cluster Cloud Service Mesh.**
+
+This patch release contains fixes for the following platform CVEs:
+
+| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
+| --- | --- | --- | --- | --- | --- |
+| [CVE-2026-33186](https://security-tracker.debian.org/tracker/CVE-2026-33186) | Yes | Yes | Yes | Yes | Critical (9.1) |
+| [CVE-2026-3731](https://security-tracker.debian.org/tracker/CVE-2026-3731) | Yes | Yes | No | Yes | High (7.5) |
+| [CVE-2026-3784](https://security-tracker.debian.org/tracker/CVE-2026-3784) | Yes | Yes | No | Yes | Medium (6.5) |
+| [CVE-2026-1965](https://security-tracker.debian.org/tracker/CVE-2026-1965) | Yes | Yes | No | Yes | Medium (6.5) |
+| [CVE-2026-29111](https://security-tracker.debian.org/tracker/CVE-2026-29111) | Yes | Yes | No | Yes | Medium (5.5) |
+| [CVE-2026-3783](https://security-tracker.debian.org/tracker/CVE-2026-3783) | Yes | Yes | No | Yes | Medium (5.3) |
+| [CVE-2025-0167](https://security-tracker.debian.org/tracker/CVE-2025-0167) | Yes | Yes | No | Yes | Low (3.4) |
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service
+Mesh 1.28.5-asm.12 uses Envoy 1.36.5-dev.
+
+### Announcement
+
+**1.27.8-asm.9 is now available for in-cluster Cloud Service Mesh.**
+
+This patch release contains fixes for the following platform CVEs:
+
+| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
+| --- | --- | --- | --- | --- | --- |
+| [CVE-2026-33186](https://security-tracker.debian.org/tracker/CVE-2026-33186) | Yes | Yes | Yes | Yes | Critical (9.1) |
+| [CVE-2026-3731](https://security-tracker.debian.org/tracker/CVE-2026-3731) | Yes | Yes | No | Yes | High (7.5) |
+| [CVE-2026-3784](https://security-tracker.debian.org/tracker/CVE-2026-3784) | Yes | Yes | No | Yes | Medium (6.5) |
+| [CVE-2026-1965](https://security-tracker.debian.org/tracker/CVE-2026-1965) | Yes | Yes | No | Yes | Medium (6.5) |
+| [CVE-2026-29111](https://security-tracker.debian.org/tracker/CVE-2026-29111) | Yes | Yes | No | Yes | Medium (5.5) |
+| [CVE-2026-3783](https://security-tracker.debian.org/tracker/CVE-2026-3783) | Yes | Yes | No | Yes | Medium (5.3) |
+| [CVE-2025-0167](https://security-tracker.debian.org/tracker/CVE-2025-0167) | Yes | Yes | No | Yes | Low (3.4) |
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.27/docs/upgrade/upgrade). Cloud Service
+Mesh 1.27.8-asm.9 uses Envoy 1.35.10-dev.
+
+### Announcement
+
+The following images are now rolling out for managed Cloud Service Mesh:
+
+* 1.21.6-asm.19 is rolling out to the rapid release channel.
+* 1.20.8-asm.73 is rolling out to the regular release channel.
+* 1.19.10-asm.66 is rolling out to the stable release channel.
+
+These patch releases contain the fixes for the following CVEs:
+
+| CVE | Proxy | Control Plane | Distroless | CNI | MDPC | Severity |
+| --- | --- | --- | --- | --- | --- | --- |
+| [CVE-2022-27943](https://security-tracker.debian.org/tracker/CVE-2022-27943) | Yes | Yes | Yes | No | No | Medium (5.5) |
+| [CVE-2023-4039](https://security-tracker.debian.org/tracker/CVE-2023-4039) | Yes | Yes | Yes | No | No | Medium (4.8) |
+| [CVE-2023-4527](https://security-tracker.debian.org/tracker/CVE-2023-4527) | Yes | Yes | Yes | No | No | Medium (6.5) |
+| [CVE-2023-4806](https://security-tracker.debian.org/tracker/CVE-2023-4806) | Yes | Yes | Yes | No | No | Medium (5.9) |
+| [CVE-2023-4911](https://security-tracker.debian.org/tracker/CVE-2023-4911) | Yes | Yes | Yes | No | No | High (7.8) |
+| [CVE-2023-5156](https://security-tracker.debian.org/tracker/CVE-2023-5156) | Yes | Yes | Yes | No | No | High (7.5) |
+| [CVE-2023-6246](https://security-tracker.debian.org/tracker/CVE-2023-6246) | Yes | Yes | Yes | No | No | High (7.8) |
+| [CVE-2024-2961](https://security-tracker.debian.org/tracker/CVE-2024-2961) | Yes | Yes | Yes | No | No | High (7.3) |
+| [CVE-2024-33599](https://security-tracker.debian.org/tracker/CVE-2024-33599) | Yes | Yes | Yes | No | No | High (8.1) |
+| [CVE-2024-33600](https://security-tracker.debian.org/tracker/CVE-2024-33600) | Yes | Yes | Yes | No | No | Medium (5.9) |
+| [CVE-2024-33601](https://security-tracker.debian.org/tracker/CVE-2024-33601) | Yes | Yes | Yes | No | No | High (7.3) |
+| [CVE-2024-33602](https://security-tracker.debian.org/tracker/CVE-2024-33602) | Yes | Yes | Yes | No | No | High (7.4) |
+| [CVE-2025-0167](https://security-tracker.debian.org/tracker/CVE-2025-0167) | Yes | Yes | No | No | No | Low (3.4) |
+| [CVE-2025-0395](https://security-tracker.debian.org/tracker/CVE-2025-0395) | Yes | Yes | Yes | Yes | No | Medium (6.2) |
+| [CVE-2025-15281](https://security-tracker.debian.org/tracker/CVE-2025-15281) | Yes | Yes | Yes | No | No | High (7.5) |
+| [CVE-2025-4802](https://security-tracker.debian.org/tracker/CVE-2025-4802) | Yes | Yes | Yes | Yes | No | High (7.8) |
+| [CVE-2025-68972](https://security-tracker.debian.org/tracker/CVE-2025-68972) | Yes | Yes | No | No | No | Medium (4.7) |
+| [CVE-2025-8058](https://security-tracker.debian.org/tracker/CVE-2025-8058) | Yes | Yes | Yes | No | No | Low (0.0) |
+| [CVE-2025-8941](https://security-tracker.debian.org/tracker/CVE-2025-8941) | Yes | Yes | No | No | No | Low (0.0) |
+| [CVE-2026-0861](https://security-tracker.debian.org/tracker/CVE-2026-0861) | Yes | Yes | Yes | No | No | High (8.4) |
+| [CVE-2026-0915](https://security-tracker.debian.org/tracker/CVE-2026-0915) | Yes | Yes | Yes | No | No | High (7.5) |
+| [CVE-2026-1965](https://security-tracker.debian.org/tracker/CVE-2026-1965) | Yes | Yes | No | Yes | Yes | Medium (6.5) |
+| [CVE-2026-29111](https://security-tracker.debian.org/tracker/CVE-2026-29111) | Yes | Yes | No | Yes | Yes | Medium (5.5) |
+| [CVE-2026-33186](https://security-tracker.debian.org/tracker/CVE-2026-33186) | Yes | Yes | Yes | No | No | Critical (9.1) |
+| [CVE-2026-3731](https://security-tracker.debian.org/tracker/CVE-2026-3731) | Yes | Yes | No | Yes | Yes | High (7.5) |
+| [CVE-2026-3783](https://security-tracker.debian.org/tracker/CVE-2026-3783) | Yes | Yes | No | Yes | Yes | Medium (5.3) |
+| [CVE-2026-3784](https://security-tracker.debian.org/tracker/CVE-2026-3784) | Yes | Yes | No | No | No | Medium (6.5) |
+
+### Announcement
+
+**1.26.8-asm.5 is now available for in-cluster Cloud Service Mesh.**
+
+This patch release contains fixes for the following platform CVEs:
+
+| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
+| --- | --- | --- | --- | --- | --- |
+| [CVE-2026-33186](https://security-tracker.debian.org/tracker/CVE-2026-33186) | Yes | Yes | Yes | Yes | Critical (9.1) |
+| [CVE-2026-3731](https://security-tracker.debian.org/tracker/CVE-2026-3731) | Yes | Yes | No | Yes | High (7.5) |
+| [CVE-2026-3784](https://security-tracker.debian.org/tracker/CVE-2026-3784) | Yes | Yes | No | Yes | Medium (6.5) |
+| [CVE-2026-1965](https://security-tracker.debian.org/tracker/CVE-2026-1965) | Yes | Yes | No | Yes | Medium (6.5) |
+| [CVE-2026-29111](https://security-tracker.debian.org/tracker/CVE-2026-29111) | Yes | Yes | No | Yes | Medium (5.5) |
+| [CVE-2026-3783](https://security-tracker.debian.org/tracker/CVE-2026-3783) | Yes | Yes | No | Yes | Medium (5.3) |
+| [CVE-2025-68972](https://security-tracker.debian.org/tracker/CVE-2025-68972) | Yes | No | No | Yes | Medium (4.7) |
+| [CVE-2025-0167](https://security-tracker.debian.org/tracker/CVE-2025-0167) | Yes | Yes | No | Yes | Low (3.4) |
+| [CVE-2025-8941](https://security-tracker.debian.org/tracker/CVE-2025-8941) | Yes | No | No | Yes | Low (0.0) |
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.26/docs/upgrade/upgrade). Cloud Service
+Mesh 1.26.8-asm.5 uses Envoy 1.34.14-dev.
+
+---
 ## 2026-04-02
 
 ### Announcement

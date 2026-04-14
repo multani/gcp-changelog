@@ -2,9 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud NAT</title>
   <subtitle>Changelog for Google Cloud product: Cloud NAT</subtitle>
-  <updated>2026-03-31T00:00:00+00:00</updated>
+  <updated>2026-04-13T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-nat</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-nat/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-nat:2026-04-13:feature:0</id>
+    <published>2026-04-13T00:00:00+00:00</published>
+    <updated>2026-04-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>General Availability</strong>: Cloud NAT gateways for Public NAT support
+<a href="https://docs.cloud.google.com/nat/docs/nat-rules-overview">source-based NAT rules</a> for IPv4 addresses.</p>]]></content>
+    <summary>Cloud NAT gateways now support source-based NAT rules for IPv4 addresses, enabling more flexible network configurations. This feature allows for granular control over how traffic is translated, enhancing security and management capabilities for your public-facing services.</summary>
+    <title>Feature: Public NAT Gateway Support for Source-based NAT Rules</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -34,11 +46,12 @@ across all regions, as follows:</p>
 </ul>
 <p>Cloud NAT gateways configured with a custom <code>TIME_WAIT</code> value
   aren't affected and will continue to use your configured custom value.</p>
-<p>The following table outlines the applicable default timeout for new gateways throughout the deployment timeline.</p>
+<p>The following table outlines the applicable default timeout for new gateways
+throughout the deployment timeline.</p>
 <p>| Gateway type | Default timeout (before June 30) | Default timeout (June 30—September 29) | Default timeout (on or after September 30) |
 | --- | --- | --- | --- |
 | New | 120 seconds | 30 or 120 seconds | 30 seconds |</p>]]></content>
-    <summary>The default TCP TIME_WAIT timeout for new gateways is decreasing from 120 to 30 seconds. This change will be rolled out gradually between June 30 and September 30, 2026. Existing gateways and those with custom timeouts are not affected.</summary>
+    <summary>The default TCP TIME_WAIT timeout for new gateways is decreasing from 120 seconds to 30 seconds. This change will be rolled out across all regions between June 30 and September 29, 2026, with all new gateways using the 30-second default by September 30, 2026. Existing gateways will retain their current timeout unless manually changed.</summary>
     <title>Announcement: TCP TIME_WAIT timeout reduction</title>
   </entry>
   <entry>

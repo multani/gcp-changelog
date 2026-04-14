@@ -1,5 +1,19 @@
 # Colab Enterprise
 
+## 2026-04-13
+
+### Feature
+
+**Visualization cells**
+
+[Generally available](https://cloud.google.com/products#product-launch-stages):
+You can use visualization cells to generate interactive and editable
+visualizations from within a Colab Enterprise notebook. You can
+configure the chart type, aggregation, colors, labels, and other aspects of the
+visualization to help you explore data and discover insights. For more
+information, see [Use visualization cells](https://docs.cloud.google.com/colab/docs/visualization-cells).
+
+---
 ## 2026-04-10
 
 ### Feature

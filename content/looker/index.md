@@ -39,11 +39,11 @@ Starting March 30, 2026, the following features will begin rolling out.
 
 ### Feature
 
-The [Looker mobile application](https://docs.cloud.google.com/looker/docs/looker-core-mobile-app) now supports sending [alert notifications as push notifications](https://docs.cloud.google.com/looker/docs/mobile-app-alerts) to users who have the Looker mobile application on their mobile device. (This release note was updated on April 9, 2026 to reflect that this update is a feature and to correct a documentation link.)
+Available in preview for Looker (Google Cloud core), you can now track [end-to-end data lineage](https://docs.cloud.google.com/looker/docs/looker-core-lineage) from BigQuery to Looker content, including views, Explores, dashboards, and Looks, through the Looker and Dataplex lineage integration. This enables impact analysis to see how BigQuery changes affect downstream Looker (Google Cloud core) contents.
 
 ### Feature
 
-Available in preview for Looker (Google Cloud core), you can now track [end-to-end data lineage](https://docs.cloud.google.com/looker/docs/looker-core-lineage) from BigQuery to Looker content, including views, Explores, dashboards, and Looks, through the Looker and Dataplex lineage integration. This enables impact analysis to see how BigQuery changes affect downstream Looker (Google Cloud core) contents.
+The [Looker mobile application](https://docs.cloud.google.com/looker/docs/looker-core-mobile-app) now supports sending [alert notifications as push notifications](https://docs.cloud.google.com/looker/docs/mobile-app-alerts) to users who have the Looker mobile application on their mobile device. (This release note was updated on April 9, 2026 to reflect that this update is a feature and to correct a documentation link.)
 
 ### Feature
 

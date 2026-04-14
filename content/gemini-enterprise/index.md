@@ -1,5 +1,16 @@
 # Gemini Enterprise
 
+## 2026-04-13
+
+### Feature
+
+**Gemini Enterprise: Enhanced filtering for Google Chat data stores (Preview)**
+
+You can configure filters for your Google Chat data stores using either the Google Cloud console or the API. These filters allow you to define exactly which Google Chat data is accessible to the Assistant by including or excluding specific content.
+
+This feature is in Public Preview and is applicable for federated search only. For more information, see [Set up a Google Chat data store](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/gchat/set-up-data-store) and [Add filters to a Google Chat data store](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/gchat/add-filters-to-gchat-data-store).
+
+---
 ## 2026-04-09
 
 ### Feature

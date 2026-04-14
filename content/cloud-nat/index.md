@@ -1,5 +1,13 @@
 # Cloud NAT
 
+## 2026-04-13
+
+### Feature
+
+**General Availability**: Cloud NAT gateways for Public NAT support
+[source-based NAT rules](https://docs.cloud.google.com/nat/docs/nat-rules-overview) for IPv4 addresses.
+
+---
 ## 2026-03-31
 
 ### Announcement
@@ -27,7 +35,8 @@ across all regions, as follows:
   Cloud NAT gateways configured with a custom `TIME_WAIT` value
   aren't affected and will continue to use your configured custom value.
 
-The following table outlines the applicable default timeout for new gateways throughout the deployment timeline.
+The following table outlines the applicable default timeout for new gateways
+throughout the deployment timeline.
 
 | Gateway type | Default timeout (before June 30) | Default timeout (June 30—September 29) | Default timeout (on or after September 30) |
 | --- | --- | --- | --- |

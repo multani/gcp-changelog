@@ -1,5 +1,22 @@
 # Cloud Monitoring
 
+## 2026-04-13
+
+### Feature
+
+Application Monitoring can display a single, dynamic topology map showing your
+App Hub applications and your registered and discovered services and
+workloads. This interactive map identifies services and workloads that have open
+incidents. It also displays the error rates and P95 latency between your
+services and workloads.
+
+To learn more, see the following:
+
+* [View application topology](https://docs.cloud.google.com/monitoring/docs/application-topology)
+* [Application Monitoring overview](https://docs.cloud.google.com/monitoring/docs/about-application-monitoring)
+* [View application telemetry](https://docs.cloud.google.com/monitoring/docs/application-monitoring)
+
+---
 ## 2026-04-03
 
 ### Feature

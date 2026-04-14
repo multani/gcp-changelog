@@ -1,5 +1,54 @@
 # BigQuery
 
+## 2026-04-13
+
+### Feature
+
+Support for the `AI.AGG` function [preview](https://cloud.google.com/products/#product-launch-stages)
+has been temporarily disabled. We are working to restore this feature as soon as
+possible.
+
+### Feature
+
+To reduce LLM token consumption and query latency when processing large
+datasets, enable [optimized mode](https://docs.cloud.google.com/bigquery/docs/optimize-ai-functions)
+using the following [managed AI functions](https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#managed_ai_functions):
+
+* [`AI.IF`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-if)
+* [`AI.CLASSIFY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-classify)
+
+This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+The following [managed AI functions](https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#managed_ai_functions)
+use Gemini to help you filter, join, rank, and classify your data:
+
+* [`AI.IF`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-if):
+  Filter and join text and unstructured data (such as images, PDFs, audio, or
+  video) based on a condition described in natural language.
+* [`AI.SCORE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-score):
+  Rate text and unstructured data (such as images, PDFs, audio, or video) to
+  rank your data by quality, similarity, or other criteria.
+* [`AI.CLASSIFY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-classify):
+  Classify text and unstructured data (such as images, PDFs, audio, or video)
+  into user-defined categories.
+
+These functions are [generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+### Feature
+
+You can use [visualization cells](https://docs.cloud.google.com/bigquery/docs/create-notebooks#cells) to
+automatically [generate a visualization](https://docs.cloud.google.com/bigquery/docs/visualize-data-colab)
+of any DataFrame in your notebook. You can customize the columns, chart type,
+aggregations, colors, labels, and title.
+
+This feature is [generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-04-10
 
 ### Feature

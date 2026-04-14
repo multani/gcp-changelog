@@ -1,5 +1,31 @@
 # Google Kubernetes Engine
 
+## 2026-04-13
+
+### Change
+
+The validation of the `HealthCheckPolicy` custom resource from the
+GKE Gateway API is more rigorous in GKE
+version 1.34 and later. Existing `HealthCheckPolicy` resources that already
+contain mismatched type fields in the `config` are exempted and continue to
+function. However, updates to any existing policy must not introduce a
+mismatched type field in the `config` or change currently mismatched
+fields to new invalid values.
+
+When the `HealthCheckPolicy` custom resource is validated, the type field
+is now verified against the specified health check. For example, if
+`type: TCP` is specified but `httpHealthCheck` is configured, then the fields
+are mismatched and `kubectl` rejects the policy. However, for this same example,
+if `type: TCP` is specified and `tcpHealthCheck` is configured, then the
+fields are valid.
+
+Earlier versions of GKE accept custom resources that don't have matching fields. If you use an earlier version, the type field is used
+and the configuration in the health check field is ignored.
+
+For more details, see
+[Configure health checks](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/configure-gateway-resources#configure_health_check).
+
+---
 ## 2026-04-09
 
 ### Change

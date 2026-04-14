@@ -1,5 +1,14 @@
 # Cloud Run
 
+## 2026-04-13
+
+### Feature
+
+Support for NVIDIA RTX PRO 6000 Blackwell GPU is in [General Availability](https://cloud.google.com/products#product-launch-stages).
+For more information, see GPU support for [services](https://docs.cloud.google.com/run/docs/configuring/services/gpu),
+[jobs](https://docs.cloud.google.com/run/docs/configuring/jobs/gpu), and [worker pools](https://docs.cloud.google.com/run/docs/configuring/workerpools/gpu).
+
+---
 ## 2026-03-25
 
 ### Feature

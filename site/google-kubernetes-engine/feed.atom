@@ -2,9 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2026-04-09T00:00:00+00:00</updated>
+  <updated>2026-04-13T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-04-13:change:0</id>
+    <published>2026-04-13T00:00:00+00:00</published>
+    <updated>2026-04-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The validation of the <code>HealthCheckPolicy</code> custom resource from the
+GKE Gateway API is more rigorous in GKE
+version 1.34 and later. Existing <code>HealthCheckPolicy</code> resources that already
+contain mismatched type fields in the <code>config</code> are exempted and continue to
+function. However, updates to any existing policy must not introduce a
+mismatched type field in the <code>config</code> or change currently mismatched
+fields to new invalid values.</p>
+<p>When the <code>HealthCheckPolicy</code> custom resource is validated, the type field
+is now verified against the specified health check. For example, if
+<code>type: TCP</code> is specified but <code>httpHealthCheck</code> is configured, then the fields
+are mismatched and <code>kubectl</code> rejects the policy. However, for this same example,
+if <code>type: TCP</code> is specified and <code>tcpHealthCheck</code> is configured, then the
+fields are valid.</p>
+<p>Earlier versions of GKE accept custom resources that don't have matching fields. If you use an earlier version, the type field is used
+and the configuration in the health check field is ignored.</p>
+<p>For more details, see
+<a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/configure-gateway-resources#configure_health_check">Configure health checks</a>.</p>]]></content>
+    <summary>GKE version 1.34 and later introduces more rigorous validation for HealthCheckPolicy custom resources. While existing policies with mismatched fields are exempt, future updates must ensure type fields align with the specified health check to avoid rejection.</summary>
+    <title>Change: Stricter HealthCheckPolicy validation</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

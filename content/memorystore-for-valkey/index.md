@@ -1,5 +1,12 @@
 # Memorystore for Valkey
 
+## 2026-04-13
+
+### Feature
+
+Version 1.0 of [Bloom filters](https://docs.cloud.google.com/memorystore/docs/valkey/about-bloom-filters) and [JSON documents](https://docs.cloud.google.com/memorystore/docs/valkey/about-json) is [Generally Available](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-04-06
 
 ### Feature

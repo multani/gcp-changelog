@@ -1,6 +1,40 @@
 {
   "name": "BigQuery",
   "entries": {
+    "2026-04-13": [
+      {
+        "kind": "Feature",
+        "content": "Support for the `AI.AGG` function [preview](https://cloud.google.com/products/#product-launch-stages)\nhas been temporarily disabled. We are working to restore this feature as soon as\npossible.",
+        "summary": {
+          "title": "AI.AGG function support disabled",
+          "summary": "Support for the AI.AGG function has been temporarily disabled. We are working to restore this feature as soon as possible."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "To reduce LLM token consumption and query latency when processing large\ndatasets, enable [optimized mode](https://docs.cloud.google.com/bigquery/docs/optimize-ai-functions)\nusing the following [managed AI functions](https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#managed_ai_functions):\n\n* [`AI.IF`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-if)\n* [`AI.CLASSIFY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-classify)\n\nThis feature is in\n[Preview](https://cloud.google.com/products/#product-launch-stages).",
+        "summary": {
+          "title": "Optimize LLM performance with new AI functions",
+          "summary": "Reduce LLM token consumption and query latency for large datasets by enabling optimized mode with new managed AI functions like AI.IF and AI.CLASSIFY. This feature is currently in Preview."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The following [managed AI functions](https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#managed_ai_functions)\nuse Gemini to help you filter, join, rank, and classify your data:\n\n* [`AI.IF`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-if):\n  Filter and join text and unstructured data (such as images, PDFs, audio, or\n  video) based on a condition described in natural language.\n* [`AI.SCORE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-score):\n  Rate text and unstructured data (such as images, PDFs, audio, or video) to\n  rank your data by quality, similarity, or other criteria.\n* [`AI.CLASSIFY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-classify):\n  Classify text and unstructured data (such as images, PDFs, audio, or video)\n  into user-defined categories.\n\nThese functions are [generally available](https://cloud.google.com/products#product-launch-stages)\n(GA).",
+        "summary": {
+          "title": "New AI functions for data analysis",
+          "summary": "Introducing new managed AI functions that leverage Gemini to enhance your data analysis capabilities. These functions allow you to filter, score, and classify text and unstructured data using natural language prompts. They are now generally available for use."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can use [visualization cells](https://docs.cloud.google.com/bigquery/docs/create-notebooks#cells) to\nautomatically [generate a visualization](https://docs.cloud.google.com/bigquery/docs/visualize-data-colab)\nof any DataFrame in your notebook. You can customize the columns, chart type,\naggregations, colors, labels, and title.\n\nThis feature is [generally available](https://cloud.google.com/products#product-launch-stages)\n(GA).",
+        "summary": {
+          "title": "Visualize your data with notebook cells",
+          "summary": "You can now automatically generate visualizations of your DataFrames directly within your notebooks. Customize charts with various options like columns, chart types, aggregations, colors, labels, and titles. This feature is now generally available."
+        }
+      }
+    ],
     "2026-04-10": [
       {
         "kind": "Feature",

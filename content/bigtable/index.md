@@ -1,5 +1,21 @@
 # Bigtable
 
+## 2026-04-13
+
+### Feature
+
+You can now use GoogleSQL geography functions to work with geospatial data in Bigtable.
+This feature is [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+For more information, see [Work with geospatial data](https://docs.cloud.google.com/bigtable/docs/work-with-geo-data)
+and [Geography functions reference](https://docs.cloud.google.com/bigtable/docs/reference/sql/geography_functions).
+
+### Feature
+
+Bigtable supports [pipe syntax](https://docs.cloud.google.com/bigtable/docs/reference/sql/pipe-syntax),
+an extension to GoogleSQL that lets you build simpler and more concise queries.
+This feature is [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-04-09
 
 ### Feature

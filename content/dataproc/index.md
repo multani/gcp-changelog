@@ -25,6 +25,18 @@ New [Dataproc on Compute Engine subminor image versions](https://docs.cloud.goog
 * Fixed CVEs CVE-2026-24308 and CVE-2026-24281.
 
 ---
+## 2026-03-27
+
+### Announcement
+
+New [Serverless for Apache Spark runtime versions](https://cloud.google.com/dataproc-serverless/docs/concepts/versions/dataproc-serverless-versions):
+
+* 1.2.77
+* 2.2.77
+* 2.3.30
+* 3.0.13
+
+---
 ## 2026-03-24
 
 ### Announcement

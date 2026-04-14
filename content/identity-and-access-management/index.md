@@ -1,5 +1,18 @@
 # Identity and Access Management
 
+## 2026-04-13
+
+### Feature
+
+Requesters can schedule grant requests in Privileged Access Manager up to seven days in
+advance. This lets requesters align access with scheduled maintenance or on-call
+shifts.
+
+This feature is in [preview](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [Privileged Access Manager overview](https://docs.cloud.google.com/iam/docs/pam-overview#grant-scheduling).
+
+---
 ## 2026-04-07
 
 ### Feature

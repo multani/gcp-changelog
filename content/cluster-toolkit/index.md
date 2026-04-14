@@ -1,5 +1,17 @@
 # Cluster Toolkit
 
+## 2026-04-13
+
+### Feature
+
+Cluster Toolkit version v1.87.0 is available. This release adds Kueue
+support for GKE A4X-Max and introduces support for Customer Managed Encryption
+Keys (CMEK) in Google Cloud Managed Lustre. This release also migrates the
+`install_asapd_lite` module to Helm and updates the Google Kubernetes Engine A3 High
+blueprint. For details, see the [Release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5469).
+
+---
 ## 2026-04-02
 
 ### Feature

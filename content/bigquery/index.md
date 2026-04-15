@@ -1,5 +1,15 @@
 # BigQuery
 
+## 2026-04-15
+
+### Feature
+
+You can now use [`EXPORT DATA`
+statements](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/export-statements#export_to_alloydb) to [reverse
+ETL BigQuery data to AlloyDB](https://docs.cloud.google.com/bigquery/docs/export-to-alloydb). This feature is
+in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-04-13
 
 ### Feature

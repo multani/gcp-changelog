@@ -1,5 +1,18 @@
 # Security Command Center
 
+## 2026-04-15
+
+### Change
+
+When you activate Security Command Center Standard or Premium tier for a project, several
+[services](https://docs.cloud.google.com/security-command-center/docs/activate-scc-for-a-project#services) are
+automatically enabled and [service-specific service
+agents](https://docs.cloud.google.com/iam/docs/service-account-types#service-specific) are provisioned with
+the required IAM roles and permissions.
+
+For more information, see [Activate for a project when Security Command Center is not active in the organization](https://docs.cloud.google.com/security-command-center/docs/activate-scc-for-a-project#project-activation-scc-inactive-in-org).
+
+---
 ## 2026-04-14
 
 ### Feature
@@ -8,6 +21,15 @@
 [Cloud Run worker pools](https://docs.cloud.google.com/run/docs/resource-model#workerpools).
 For a list of resources that Cloud Run Threat Detection monitors, see [Supported
 resources](https://docs.cloud.google.com/security-command-center/docs/cloud-run-threat-detection-overview#supported-resources).
+
+---
+## 2026-04-09
+
+### Announcement
+
+Key insights from Security Command Center are available on the [Security & compliance](https://docs.cloud.google.com/hub/docs/security)
+page in [Cloud Hub](https://docs.cloud.google.com/hub/docs/overview). This feature is available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
 
 ---
 ## 2026-04-02
@@ -23,7 +45,11 @@ clusters and jobs in high-value resource sets.
 
 ### Feature
 
-[Risk Engine](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-supported-features) now supports [`aiplatform.googleapis.com/ReasoningEngine`](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/reference/rest/v1/projects.locations.reasoningEngines) in both [attack paths](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-learn) and [high value resource sets](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-learn#high-value-resource-sets).
+[Risk Engine](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-supported-features) supports
+[`aiplatform.googleapis.com/ReasoningEngine`](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/reference/rest/v1/projects.locations.reasoningEngines)
+in both [attack paths](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-learn) and [high value
+resource
+sets](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-learn#high-value-resource-sets).
 
 ---
 ## 2026-03-27

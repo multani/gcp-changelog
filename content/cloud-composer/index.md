@@ -1,5 +1,19 @@
 # Cloud Composer
 
+## 2026-04-15
+
+### Feature
+
+[Cloud Composer remote Model Context Protocol (MCP) server](https://docs.cloud.google.com/composer/docs/composer-3/use-composer-mcp) is available
+in Preview.
+
+You can use Cloud Composer remote Model Context Protocol (MCP) server to
+connect to Cloud Composer from AI applications such as Gemini CLI, ChatGPT,
+Claude, or in AI applications that you're developing. The Cloud Composer MCP
+server lets you manage Cloud Composer environments and get details about
+executed DAG runs and Airflow tasks.
+
+---
 ## 2026-04-01
 
 ### Feature

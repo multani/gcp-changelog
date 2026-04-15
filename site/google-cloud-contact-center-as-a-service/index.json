@@ -1,6 +1,48 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
+    "2026-04-14": [
+      {
+        "kind": "Announcement",
+        "content": "**Advance reporting dashboards prerelease notes**\n\nHere are the pre-release notes for updates to the advanced reporting dashboards.\nWhen we release these updates, we expect the new capabilities to be as shown\nhere.",
+        "summary": {
+          "title": "New reporting dashboards available",
+          "summary": "Updates to advanced reporting dashboards are coming soon. These new capabilities will offer enhanced features for your reporting needs."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Added a Location filter to dashboards**\n\nThe following dashboards now include a **Location** filter:\n\n* **Real-time Channel Performance**\n* **Transfers**\n* **Queue Interval**",
+        "summary": {
+          "title": "New Location Filter for Dashboards",
+          "summary": "You can now filter your Channel Performance, Transfers, and Queue Interval dashboards by location. This new filter helps you analyze data more granularly based on specific geographical areas."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Queue Performance dashboard improvements**\n\nWe've made the following improvements to the **Queue Performance - Calls** and\n**Queue Performance - Chats** dashboards:\n\n* Added the dashboards to the Advanced Reporting Landing Page.\n* Added a **Support Phone Number** filter.\n* Renamed the **Total Inbound Handled** tile (calls only) to **Total Queue\n  Answered**.\n* Added a **Total Failed** tile.\n* In the **Queue Summary** table, removed the **Total Inbound Calls Handled**\n  column and added the following columns: **Total Queue Interactions**,\n  **Total Queue Entries**, **Total Queue Answered**, **Total Failed**, and\n  **Total Transfers**.",
+        "summary": {
+          "title": "Enhanced Queue Performance Dashboards",
+          "summary": "The Queue Performance dashboards for Calls and Chats have been significantly improved with new filters, tiles, and updated columns in the Queue Summary table. These enhancements provide more granular insights into queue activity and performance, including tracking failed interactions and transfers."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**General dashboard updates**\n\n* In the **Performance Overview** dashboard, we renamed the following tiles:\n\n  + **Queued Now** to **Current Queued Now**\n  + **Max Queue Time** to **Current Max Queue Time**\n* The **Real-time Connected - Calls** and **Real-time Connected - Chats**\n  dashboards now include the following tiles:\n\n  + **Total Connected Calls** (calls only)\n  + **Total Connected Chats** (chats only)\n  + **Avg Current Sentiment Score**\n* In the **Queue Group Performance - All** dashboard, we renamed the **Lang**\n  filter to **Language**.",
+        "summary": {
+          "title": "Dashboard Improvements",
+          "summary": "We've updated several dashboards to improve clarity and provide more insights. Key changes include renaming tiles in the Performance Overview, adding new real-time tiles for calls and chats, and updating filter names for better usability."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were addressed in this release:\n\n* Fixed an issue where the CSAT scores in the **Performance Overview** and\n  **CSAT** dashboards didn't match.\n* Fixed an issue where the **Queue Performance** dashboard incorrectly totaled\n  queue interactions, resulting in lower counts than expected.\n* Fixed an issue in the **All Interactions - Chat** dashboard where the\n  **Virtual Agents Chats** table displayed the wrong chat.\n* Fixed an issue in the **All Interactions - Chat** dashboard where the\n  **Failed Interaction** column of the **Chat Metric Detail** table displayed\n  `False` for a failed interaction.\n* Fixed an issue where the **Chat ID** filter on the **Queue Performance -\n  Chats** dashboard incorrectly displayed placeholder values.\n* Fixed an issue where scheduled exports of large queries were limited to 500\n  rows, causing reporting delays.\n* Fixed an issue in the **Historical Data** table of the **Agent Activity**\n  dashboard where the **Start Time** and **End Time** columns indicated\n  incorrect durations for agents belonging to multiple teams.\n* Fixed an issue where short abandoned calls and chats were incorrectly\n  included in the **Abandons** dashboard, causing inaccurate reporting of\n  queue abandon times.\n* Fixed an issue where dashboard windows didn't fully display their contents.",
+        "summary": {
+          "title": "Resolved Dashboard and Reporting Issues",
+          "summary": "Several issues affecting dashboard accuracy and reporting have been resolved. This includes corrections to CSAT scores, queue performance totals, chat data, and filter displays. Additionally, problems with scheduled exports, agent activity times, abandon call reporting, and dashboard display have been fixed."
+        }
+      }
+    ],
     "2026-04-10": [
       {
         "kind": "Announcement",

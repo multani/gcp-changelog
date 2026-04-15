@@ -1,5 +1,492 @@
 # Container Optimized OS
 
+## 2026-04-13
+
+### Change
+
+
+
+### cos-beta-129-19506-0-140
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.77](https://cos.googlesource.com/third_party/kernel/+/3dee22804a41a202d6d8646c9504236d05170730 ) | v27.5.1 | v2.2.2 | [See List](https://storage.googleapis.com/cos-tools/19506.0.140/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+
+
+### cos-dev-133-19700-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.77](https://cos.googlesource.com/third_party/kernel/+/e1d779f9a514b8e89a4661da858601d143841c0c ) | v27.5.1 | v2.2.1 | [See List](https://storage.googleapis.com/cos-tools/19700.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)
+
+### Change
+
+Added support for 8th generation TPU devices.
+
+### Change
+
+Fixed CVE-2026-33997 and CVE-2026-34040 in Docker.
+
+### Feature
+
+Changed default sysctl networking values on A4x-max machine type only.
+
+### Change
+
+Upgraded sys-apps/iproute2 to version 6.18.0.
+
+### Feature
+
+Reverted iproute2 to v5.16.0.
+
+### Feature
+
+Changed default sysctl networking values on A4x-max machine type only.
+
+### Fixed
+
+Upgraded app-arch/unzip to v6.0\_p29-r2.
+
+### Feature
+
+Reverted iproute2 to v5.16.0.
+
+### Fixed
+
+Upgraded app-containers/cni-plugins to v1.9.1.
+
+### Fixed
+
+Fixed a kernel panic in virtio\_pci teardown when virtual queues are conditionally skipped.
+
+### Fixed
+
+Upgraded app-shells/dash to v0.5.13.2.
+
+### Fixed
+
+Upgraded net-misc/rsync to v3.4.1-r3.
+
+### Fixed
+
+Upgraded sys-apps/hwdata to v0.401.
+
+### Fixed
+
+Upgraded sys-apps/pv to v1.10.4.
+
+### Fixed
+
+Upgraded sys-libs/zlib to v1.3.2-r1.
+
+### Fixed
+
+Upgraded app-shells/dash to v0.5.13.2.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.udp\_mem: 188034 250715 376068 -> 188034 250714 376068
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.51.2.
+
+### Fixed
+
+Upgraded net-misc/rsync to v3.4.1-r3.
+
+### Fixed
+
+Upgraded net-misc/socat to v1.8.1.1.
+
+### Fixed
+
+Upgraded sys-apps/hwdata to v0.401.
+
+### Fixed
+
+Upgraded sys-process/procps to v4.0.6.
+
+### Fixed
+
+Upgraded virtual/logger to v0-r3.
+
+### Security
+
+Fixed CVE-2024-14027 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23270 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-7cb9a23 in the Linux kernel.
+
+### Change
+
+
+
+### cos-121-18867-381-81
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.122](https://cos.googlesource.com/third_party/kernel/+/71cd44c2ce14a7098a606eb6f627d68348342bae ) | v27.5.1 | v2.0.7 | [See List](https://storage.googleapis.com/cos-tools/18867.381.81/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Upgraded app-shells/dash to v0.5.13.2.
+
+### Security
+
+Fixed CVE-2024-14027 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2024-43826 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38704 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39748 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39764 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23154 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23243 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23343 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23360 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23401 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23412 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23413 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23414 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23439 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23441 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23449 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23452 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23455 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23456 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23457 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23458 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23471 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31392 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31400 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31402 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31403 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-33997 and CVE-2026-34040 in Docker.
+
+### Change
+
+
+
+### cos-117-18613-534-80
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.123](https://cos.googlesource.com/third_party/kernel/+/fd4744a57de7a7334d4bade6ccb2ae20d0a0fdf3 ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.534.80/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Upgraded app-shells/dash to v0.5.13.2.
+
+### Fixed
+
+Upgraded sys-apps/hwdata to v0.401.
+
+### Fixed
+
+Upgraded virtual/logger to v0-r3.
+
+### Security
+
+Fixed CVE-2024-14027 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23154 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23244 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23319 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23343 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23360 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23401 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23439 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23441 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23449 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23452 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23455 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23456 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23457 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23458 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23471 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31392 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31400 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31402 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31403 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-33997 and CVE-2026-34040 in Docker.
+
+### Change
+
+
+
+### cos-113-18244-582-80
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.161](https://cos.googlesource.com/third_party/kernel/+/c6ca9a3a76c52435cb9459a6c724d8e25cc02e22 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.582.80/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Upgraded app-shells/dash to v0.5.13.2.
+
+### Fixed
+
+Upgraded sys-apps/hwdata to v0.401.
+
+### Fixed
+
+Upgraded virtual/logger to v0-r3.
+
+### Security
+
+Fixed CVE-2025-38162 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-39764 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23154 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23343 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23439 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23449 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23452 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23455 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23456 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23457 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23458 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31392 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31400 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31402 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31403 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-33997 and CVE-2026-34040 in Docker.
+
+### Change
+
+
+
+### cos-125-19216-220-130
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.68](https://cos.googlesource.com/third_party/kernel/+/ac718bd9b1307ca355c5ad6cfcd520cdd7f6e27d ) | v27.5.1 | v2.1.5 | [See List](https://storage.googleapis.com/cos-tools/19216.220.130/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Changed default sysctl networking values on A4x-max machine type only.
+
+### Feature
+
+Reverted iproute2 to v5.16.0.
+
+### Fixed
+
+Upgraded net-misc/rsync to v3.4.1-r3.
+
+### Fixed
+
+Upgraded sys-apps/hwdata to v0.401.
+
+### Fixed
+
+Upgraded virtual/logger to v0-r3.
+
+### Security
+
+Fixed CVE-2026-23343 in the Linux kernel.
+
+---
 ## 2026-04-06
 
 ### Change

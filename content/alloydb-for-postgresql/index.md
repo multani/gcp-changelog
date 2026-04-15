@@ -1,5 +1,19 @@
 # AlloyDB for PostgreSQL
 
+## 2026-04-14
+
+### Breaking
+
+As of April 10, 2026, you can create, run, and edit
+[Gemini Cloud Assist investigations](https://docs.cloud.google.com/cloud-assist/investigations)
+only if you have a [Premium Support contract](https://cloud.google.com/support/premium).
+You can use Gemini Cloud Assist investigations to
+[monitor and troubleshoot your AlloyDB for PostgreSQL instance with AI assistance](https://docs.cloud.google.com/alloydb/docs/monitor-troubleshoot-with-ai).
+
+If you ran an investigation prior to April 10, 2026, then the results of the
+investigation continue to be available to you in the Google Cloud console.
+
+---
 ## 2026-04-06
 
 ### Feature

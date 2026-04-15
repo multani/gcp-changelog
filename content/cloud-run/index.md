@@ -1,5 +1,12 @@
 # Cloud Run
 
+## 2026-04-14
+
+### Feature
+
+Support for [worker pools](https://docs.cloud.google.com/run/docs/deploy-worker-pools) is in [General Availability (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-04-13
 
 ### Feature

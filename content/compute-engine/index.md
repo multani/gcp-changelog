@@ -1,5 +1,13 @@
 # Compute Engine
 
+## 2026-04-14
+
+### Security
+
+A vulnerability (CVE-2025-54510) about AMD SEV-SNP guest memory integrity has been addressed.
+For more information, see the [GCP-2026-019 security bulletin](https://docs.cloud.google.com/compute/docs/security-bulletins#gcp-2026-019).
+
+---
 ## 2026-04-09
 
 ### Feature

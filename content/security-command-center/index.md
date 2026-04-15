@@ -1,5 +1,15 @@
 # Security Command Center
 
+## 2026-04-14
+
+### Feature
+
+[Cloud Run Threat Detection](https://docs.cloud.google.com/security-command-center/docs/cloud-run-threat-detection-overview) monitors
+[Cloud Run worker pools](https://docs.cloud.google.com/run/docs/resource-model#workerpools).
+For a list of resources that Cloud Run Threat Detection monitors, see [Supported
+resources](https://docs.cloud.google.com/security-command-center/docs/cloud-run-threat-detection-overview#supported-resources).
+
+---
 ## 2026-04-02
 
 ### Feature

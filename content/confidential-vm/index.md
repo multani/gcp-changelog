@@ -1,5 +1,14 @@
 # Confidential VM
 
+## 2026-04-14
+
+### Security
+
+A vulnerability affecting AMD SEV-SNP Confidential VM instances was discovered
+and has been addressed. For more information, see the
+[GCP-2026-021 security bulletin](https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/security-bulletins#gcp-2026-020).
+
+---
 ## 2026-04-07
 
 ### Feature

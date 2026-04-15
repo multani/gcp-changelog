@@ -1,5 +1,19 @@
 # Cloud Interconnect
 
+## 2026-04-14
+
+### Feature
+
+Partner Cross-Cloud Interconnect for Amazon Web Services (AWS) with VPC Network
+Peering is Generally Available.
+
+Network Connectivity Center (NCC) support for Partner Cross-Cloud Interconnect
+for Amazon Web Services (AWS) is available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [Partner Cross-Cloud Interconnect for AWS overview](https://docs.cloud.google.com/network-connectivity/docs/interconnect/concepts/partner-cci-for-aws-overview). For available locations, see [Choose a paired location](https://docs.cloud.google.com/network-connectivity/docs/interconnect/how-to/partner-cci-for-aws/paired-locations).
+
+---
 ## 2026-03-03
 
 ### Feature

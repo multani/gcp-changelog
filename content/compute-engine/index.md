@@ -7,6 +7,25 @@
 A vulnerability (CVE-2025-54510) about AMD SEV-SNP guest memory integrity has been addressed.
 For more information, see the [GCP-2026-019 security bulletin](https://docs.cloud.google.com/compute/docs/security-bulletins#gcp-2026-019).
 
+### Security
+
+A vulnerability affecting AMD SEV-SNP Confidential VM instances was discovered
+and has been addressed. For more information, see the
+[GCP-2026-021 security bulletin](https://docs.cloud.google.com/compute/docs/security-bulletins#gcp-2026-021).
+
+### Feature
+
+**Generally available**: Hyperdisk ML disks are supported by the following machine
+series:
+
+* [C3 bare metal](https://docs.cloud.google.com/compute/docs/general-purpose-machines#c3_disks)
+* [C4](https://docs.cloud.google.com/compute/docs/general-purpose-machines#supported_disk_types_for_c4),
+  including bare metal instances.
+* [C4A bare metal instances](https://docs.cloud.google.com/compute/docs/general-purpose-machines#supported_disk_types_for_c4a)
+* [N4A](https://docs.cloud.google.com/compute/docs/general-purpose-machines#supported_disk_types_for_n4a)
+
+For more information, see [Hyperdisk ML overview](https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-ml).
+
 ---
 ## 2026-04-09
 

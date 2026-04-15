@@ -1,5 +1,24 @@
 # Compute Engine
 
+## 2026-04-15
+
+### Announcement
+
+You can view the physical location of your Compute Engine instances in a zone
+to understand your cluster topology. This information helps you reduce network
+latency between your compute instances. For more information, see
+[View Compute Engine instance topology](https://docs.cloud.google.com/compute/docs/instances/view-instance-topology).
+
+### Feature
+
+**Generally available**: You can control the physical location of the
+Compute Engine instances in a MIG by using workload policies. Workload
+policies help you to, for example, place your compute instances close together
+to minimize network latency when running AI or ML workloads. For more
+information, see
+[About workload policies in MIGs](https://docs.cloud.google.com/compute/docs/instance-groups/about-workload-policies).
+
+---
 ## 2026-04-14
 
 ### Security

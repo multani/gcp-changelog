@@ -1,5 +1,18 @@
 # Datastream
 
+## 2026-04-16
+
+### Feature
+
+You can now create a Datastream stream directly from the overview page
+of your AlloyDB for PostgreSQL instance using the automated flow. The
+automated flow simplifies the process of moving data to BigQuery by reducing the
+number of steps that you need to perform.
+
+For more information, see
+[Create an AlloyDB for PostgreSQL stream using the automated flow](https://docs.cloud.google.com/datastream/docs/create-alloydb-stream-automated).
+
+---
 ## 2026-04-10
 
 ### Feature

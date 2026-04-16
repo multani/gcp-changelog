@@ -1,5 +1,12 @@
 # Memorystore for Valkey
 
+## 2026-04-16
+
+### Feature
+
+The [shared](https://docs.cloud.google.com/memorystore/docs/valkey/use-shared-ca) and [customer-managed](https://docs.cloud.google.com/memorystore/docs/valkey/use-customer-managed-ca) Certificate Authority (CA) modes are [Generally Available](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-04-15
 
 ### Feature

@@ -1,5 +1,15 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-04-16
+
+### Feature
+
+The [Cloud SQL remote MCP server](https://docs.cloud.google.com/sql/docs/postgres/use-cloudsql-mcp)
+is generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
+The Cloud SQL remote MCP server lets you interact easily with Cloud SQL
+instances from LLMs, AI applications, and AI-enabled development platforms.
+
+---
 ## 2026-04-14
 
 ### Breaking

@@ -1,5 +1,17 @@
 # Dataform
 
+## 2026-04-16
+
+### Feature
+
+You can
+[connect Dataform repositories to third-party Git repositories using Developer Connect](https://docs.cloud.google.com/dataform/docs/connect-repository#dev-connect),
+removing the need for manual secrets management and enabling support for
+repositories in privately hosted networks. This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-04-02
 
 ### Feature

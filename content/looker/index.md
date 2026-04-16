@@ -1,5 +1,14 @@
 # Looker
 
+## 2026-04-15
+
+### Breaking
+
+Migrate your Teams webhook to "Workflows"
+
+Microsoft is [retiring](https://mc.merill.net/message/MC1181996) the legacy Office 365 Connectors in favor of Power Automate Workflows. Connectors will stop working by the end of April 2026. To ensure that your Looker alerts continue to deliver to Teams, you must replace your current webhook URL with a new "Workflow" URL. For more information, see the [Migrate your Teams webhook to "Workflows"](https://docs.cloud.google.com/looker/docs/best-practices/migrate-teams-webhook-to-workflows) Best Practices notice.
+
+---
 ## 2026-04-09
 
 ### Announcement

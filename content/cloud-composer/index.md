@@ -2,6 +2,18 @@
 
 ## 2026-04-15
 
+### Announcement
+
+To more strongly embrace the success and growing customer preference
+for OSS solutions, Cloud Composer is evolving to become
+**Managed Service for Apache Airflow**. This name change provides improved
+customer understanding of our portfolio while reinforcing our
+commitment to being the most open cloud ecosystem.
+
+### Feature
+
+**Airflow 3** is now generally available (GA) in Cloud Composer 3.
+
 ### Feature
 
 [Cloud Composer remote Model Context Protocol (MCP) server](https://docs.cloud.google.com/composer/docs/composer-3/use-composer-mcp) is available

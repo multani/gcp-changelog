@@ -4,6 +4,16 @@
 
 ### Feature
 
+BigQuery agent analytics is now [generally available](https://cloud.google.com/products#product-launch-stages) (GA) in the Google Agent Developer Kit. [BigQuery agent analytics](https://docs.cloud.google.com/bigquery/docs/bigquery-agent-analytics)
+is an open source solution that lets you capture, analyze, and visualize
+multimodal agent interaction data at scale.
+
+### Announcement
+
+A known issue has been resolved where a materialized view refresh could expose could expose masked or filtered data from fine grained access control policies in error messages. No further action is needed.
+
+### Feature
+
 You can now use [`EXPORT DATA`
 statements](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/export-statements#export_to_alloydb) to [reverse
 ETL BigQuery data to AlloyDB](https://docs.cloud.google.com/bigquery/docs/export-to-alloydb). This feature is

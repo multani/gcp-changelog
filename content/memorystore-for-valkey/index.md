@@ -1,5 +1,12 @@
 # Memorystore for Valkey
 
+## 2026-04-15
+
+### Feature
+
+Memorystore for Valkey has new [node types](https://docs.cloud.google.com/memorystore/docs/valkey/instance-node-specification) that you can select for your instances. This feature is [Generally Available](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-04-13
 
 ### Feature

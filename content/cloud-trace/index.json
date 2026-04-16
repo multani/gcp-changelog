@@ -1,6 +1,24 @@
 {
   "name": "Cloud Trace",
   "entries": {
+    "2026-04-15": [
+      {
+        "kind": "Feature",
+        "content": "Your trace data can be encrypted with a customer-managed encryption key (CMEK).\nTo enable CMEK, set a default storage location and for that location, set a\ndefault Cloud Key Management Service key.\n\nYou can set these defaults for an organization, a folder, or a project.\nWhen set for an organization or folder, the settings apply to\nthat resource and to its descendants. For more information, see\n[Set defaults for observability buckets](https://docs.cloud.google.com/stackdriver/docs/observability/set-defaults-for-observability-buckets).",
+        "summary": {
+          "title": "Encrypt trace data with CMEK",
+          "summary": "Your trace data can now be encrypted using customer-managed encryption keys (CMEK). Enable this feature by setting a default storage location and a default Cloud KMS key for that location. These settings can be applied at the organization, folder, or project level."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "When you configure a default storage location, you control the location of your\nnew observability buckets. These buckets store your trace data.\n\nYou can set a default storage location for an organization, a folder, or a\nproject. When set for an organization or folder, the setting applies to that\nresource and to its descendants. For more information, see\n[Set defaults for observability buckets](https://docs.cloud.google.com/stackdriver/docs/observability/set-defaults-for-observability-buckets).",
+        "summary": {
+          "title": "Control observability bucket storage location",
+          "summary": "You can now set a default storage location for your new observability buckets, which store trace data. This setting can be applied at the organization, folder, or project level, with the location cascading down to descendant resources."
+        }
+      }
+    ],
     "2026-04-10": [
       {
         "kind": "Feature",

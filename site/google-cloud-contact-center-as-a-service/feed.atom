@@ -128,126 +128,6 @@ here.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-10:announcement:0</id>
-    <published>2026-04-10T00:00:00+00:00</published>
-    <updated>2026-04-10T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS prerelease notes</strong></p>
-<p>Here are the prerelease notes for the next version of Google Cloud CCaaS. When
-we release this version, we expect the new capabilities to be as shown here.</p>]]></content>
-    <summary>Get ready for the next iteration of our Contact Center as a Service platform. This upcoming release will introduce exciting new capabilities designed to enhance your customer engagement strategies. We're providing these prerelease notes so you can anticipate the improvements.</summary>
-    <title>Announcement: New CCaaS Features Arriving Soon</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-10:feature:1</id>
-    <published>2026-04-10T00:00:00+00:00</published>
-    <updated>2026-04-10T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Language selection support for direct calls</strong></p>
-<p>End-users making direct calls to agent phone numbers and agent extension numbers
-can select their language at the start of a call.</p>
-<p>Administrators: The <strong>Add Number</strong> and <strong>Edit a Number</strong> dialogs, located at
-<strong>Settings &gt; Call &gt; Phone Numbers &gt; Phone
-Number Management</strong>, have a new <strong>Set a default language</strong> checkbox (when the
-<strong>Set as a direct number</strong> checkbox is selected). A list of languages appears
-when you select the <strong>Set a default language</strong> checkbox.</p>]]></content>
-    <summary>Users can now select their preferred language when making direct calls to agent phone numbers or extensions. Administrators can configure default languages for direct numbers within the Phone Number Management settings.</summary>
-    <title>Feature: Language selection for direct calls</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-10:feature:2</id>
-    <published>2026-04-10T00:00:00+00:00</published>
-    <updated>2026-04-10T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>"Improved controls for predictive campaigns" is available without assistance
-from the Google account team</strong></p>
-<p>This feature was announced on <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/release-notes#March_24_2026">March 24,
-2026</a> but
-previously required the Google account team to enable it. You no longer need
-assistance from the Google account team to use this capability. For more
-information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/campaign-predictive">Predictive
-campaigns</a>.</p>]]></content>
-    <summary>Improved controls for predictive campaigns are now available without needing assistance from your Google account team. You can now manage these capabilities directly. For more details, refer to the documentation on predictive campaigns.</summary>
-    <title>Feature: Enhanced predictive campaign controls</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-10:feature:3</id>
-    <published>2026-04-10T00:00:00+00:00</published>
-    <updated>2026-04-10T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Virtual agents can transfer calls to a specific human agent</strong></p>
-<p>Virtual agents can transfer calls directly to a specific human agent using the
-agent ID or agent extension number. Include the <code>agent_extension</code> or <code>agent_id</code>
-field in the transfer payload to direct the call to the correct agent.</p>]]></content>
-    <summary>Virtual agents can now transfer calls directly to a specific human agent. Use the agent ID or agent extension number in the transfer payload to ensure the call reaches the intended recipient.</summary>
-    <title>Feature: Transfer calls to specific agents</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-10:fixed:4</id>
-    <published>2026-04-10T00:00:00+00:00</published>
-    <updated>2026-04-10T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The following issues were addressed in this release:</p>
-<ul>
-<li>Fixed an issue where backslash characters in chat shortcuts and chat
-  messages weren't displayed correctly, resulting in missing or empty message
-  chat bubbles.</li>
-<li>Fixed an issue where virtual agent chat transcripts didn't match the actual
-  conversation.</li>
-<li>Fixed an issue where call times in session metadata for virtual agent to
-  human agent escalations were shorter than the actual call times.</li>
-<li>Fixed an issue where agents were able to join a conference call despite
-  receiving microphone permission errors.</li>
-<li>Fixed an issue where direct inbound calls to Twilio numbers assigned at the
-  user level continuously rang without reaching the agent.</li>
-<li>Fixed an issue where chat transfers from auto-answer queues to manual-answer
-  queues were incorrectly recorded as manual-to-manual in reporting.</li>
-<li>Fixed an agent desktop issue where French (Canadian) translations were
-  missing or incorrect during outbound calls.</li>
-<li>Fixed an issue where the <strong>All Teams</strong> filter didn't block interactions with
-  background elements, which could cause unintended end-user interactions with
-  the UI.</li>
-<li>Fixed an issue where missed call volumes didn't appear on the agent
-  monitoring page.</li>
-<li>Fixed an issue that occurred when the <strong>Display transfer history in agent
-  adapter</strong> capability was enabled. After a virtual agent escalation,
-  escalated queue names were shown in English instead of the correct target
-  language.</li>
-<li>Fixed an issue where virtual agent audio sessions ended after 15 minutes,
-  causing calls to be escalated unexpectedly.</li>
-<li>Fixed an issue where underscores within email addresses were incorrectly
-  removed in CRM transcripts.</li>
-<li>Fixed an issue where chat transcript PDFs weren't generated when real-time
-  redaction was enabled and conversations included non-text message types such
-  as inline buttons or content cards.</li>
-<li>Fixed an issue where content cards sent by virtual agents during
-  conversations were missing from the PDF chat transcript.</li>
-<li>Fixed an issue where chat transcripts created through the API weren't
-  appearing in agent conversations.</li>
-<li>Fixed an issue where voicemails disappeared from the agent's queue and
-  didn't appear in voicemail history or reports.</li>
-<li>Fixed an issue where the agent adapter displayed <strong>Escalated Virtual Agent
-  Call</strong> instead of <strong>IVR Callback</strong> after connecting during a callback.</li>
-<li>Fixed an issue where chat disposition selections reset during wrap-up,
-  particularly when Agent Assist was enabled.</li>
-<li>Fixed an issue where custom fields in dialer list uploads worked only if the
-  column headers were in all caps.</li>
-<li>Fixed an issue where the email adapter didn't start up.</li>
-</ul>]]></content>
-    <summary>This release addresses multiple issues, including incorrect display of chat characters, inaccurate call times, and problems with call routing and agent desktop translations. Several fixes also improve chat transcript generation and voicemail handling.</summary>
-    <title>Fixed: Resolved various issues</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
     <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-07:announcement:0</id>
     <published>2026-04-07T00:00:00+00:00</published>
     <updated>2026-04-07T00:00:00+00:00</updated>
@@ -1057,6 +937,126 @@ language</a>.</p>]]></content>
 </ul>]]></content>
     <summary>Several issues affecting dashboard accuracy, filter functionality, and data display have been resolved. This update ensures more reliable reporting on agent performance, call queues, and interaction metrics.</summary>
     <title>Fixed: Resolved Dashboard and Reporting Issues</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-10:announcement:0</id>
+    <published>2026-04-10T00:00:00+00:00</published>
+    <updated>2026-04-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS prerelease notes</strong></p>
+<p>Here are the prerelease notes for the next version of Google Cloud CCaaS. When
+we release this version, we expect the new capabilities to be as shown here.</p>]]></content>
+    <summary>Get ready for the next iteration of our Contact Center as a Service platform. This upcoming release will introduce exciting new capabilities designed to enhance your customer engagement strategies. We're providing these prerelease notes so you can anticipate the improvements.</summary>
+    <title>Announcement: New CCaaS Features Arriving Soon</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-10:feature:1</id>
+    <published>2026-04-10T00:00:00+00:00</published>
+    <updated>2026-04-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Language selection support for direct calls</strong></p>
+<p>End-users making direct calls to agent phone numbers and agent extension numbers
+can select their language at the start of a call.</p>
+<p>Administrators: The <strong>Add Number</strong> and <strong>Edit a Number</strong> dialogs, located at
+<strong>Settings &gt; Call &gt; Phone Numbers &gt; Phone
+Number Management</strong>, have a new <strong>Set a default language</strong> checkbox (when the
+<strong>Set as a direct number</strong> checkbox is selected). A list of languages appears
+when you select the <strong>Set a default language</strong> checkbox.</p>]]></content>
+    <summary>Users can now select their preferred language when making direct calls to agent phone numbers or extensions. Administrators can configure default languages for direct numbers within the Phone Number Management settings.</summary>
+    <title>Feature: Language selection for direct calls</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-10:feature:2</id>
+    <published>2026-04-10T00:00:00+00:00</published>
+    <updated>2026-04-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>"Improved controls for predictive campaigns" is available without assistance
+from the Google account team</strong></p>
+<p>This feature was announced on <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/release-notes#March_24_2026">March 24,
+2026</a> but
+previously required the Google account team to enable it. You no longer need
+assistance from the Google account team to use this capability. For more
+information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/campaign-predictive">Predictive
+campaigns</a>.</p>]]></content>
+    <summary>Improved controls for predictive campaigns are now available without needing assistance from your Google account team. You can now manage these capabilities directly. For more details, refer to the documentation on predictive campaigns.</summary>
+    <title>Feature: Enhanced predictive campaign controls</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-10:feature:3</id>
+    <published>2026-04-10T00:00:00+00:00</published>
+    <updated>2026-04-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Virtual agents can transfer calls to a specific human agent</strong></p>
+<p>Virtual agents can transfer calls directly to a specific human agent using the
+agent ID or agent extension number. Include the <code>agent_extension</code> or <code>agent_id</code>
+field in the transfer payload to direct the call to the correct agent.</p>]]></content>
+    <summary>Virtual agents can now transfer calls directly to a specific human agent. Use the agent ID or agent extension number in the transfer payload to ensure the call reaches the intended recipient.</summary>
+    <title>Feature: Transfer calls to specific agents</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-10:fixed:4</id>
+    <published>2026-04-10T00:00:00+00:00</published>
+    <updated>2026-04-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were addressed in this release:</p>
+<ul>
+<li>Fixed an issue where backslash characters in chat shortcuts and chat
+  messages weren't displayed correctly, resulting in missing or empty message
+  chat bubbles.</li>
+<li>Fixed an issue where virtual agent chat transcripts didn't match the actual
+  conversation.</li>
+<li>Fixed an issue where call times in session metadata for virtual agent to
+  human agent escalations were shorter than the actual call times.</li>
+<li>Fixed an issue where agents were able to join a conference call despite
+  receiving microphone permission errors.</li>
+<li>Fixed an issue where direct inbound calls to Twilio numbers assigned at the
+  user level continuously rang without reaching the agent.</li>
+<li>Fixed an issue where chat transfers from auto-answer queues to manual-answer
+  queues were incorrectly recorded as manual-to-manual in reporting.</li>
+<li>Fixed an agent desktop issue where French (Canadian) translations were
+  missing or incorrect during outbound calls.</li>
+<li>Fixed an issue where the <strong>All Teams</strong> filter didn't block interactions with
+  background elements, which could cause unintended end-user interactions with
+  the UI.</li>
+<li>Fixed an issue where missed call volumes didn't appear on the agent
+  monitoring page.</li>
+<li>Fixed an issue that occurred when the <strong>Display transfer history in agent
+  adapter</strong> capability was enabled. After a virtual agent escalation,
+  escalated queue names were shown in English instead of the correct target
+  language.</li>
+<li>Fixed an issue where virtual agent audio sessions ended after 15 minutes,
+  causing calls to be escalated unexpectedly.</li>
+<li>Fixed an issue where underscores within email addresses were incorrectly
+  removed in CRM transcripts.</li>
+<li>Fixed an issue where chat transcript PDFs weren't generated when real-time
+  redaction was enabled and conversations included non-text message types such
+  as inline buttons or content cards.</li>
+<li>Fixed an issue where content cards sent by virtual agents during
+  conversations were missing from the PDF chat transcript.</li>
+<li>Fixed an issue where chat transcripts created through the API weren't
+  appearing in agent conversations.</li>
+<li>Fixed an issue where voicemails disappeared from the agent's queue and
+  didn't appear in voicemail history or reports.</li>
+<li>Fixed an issue where the agent adapter displayed <strong>Escalated Virtual Agent
+  Call</strong> instead of <strong>IVR Callback</strong> after connecting during a callback.</li>
+<li>Fixed an issue where chat disposition selections reset during wrap-up,
+  particularly when Agent Assist was enabled.</li>
+<li>Fixed an issue where custom fields in dialer list uploads worked only if the
+  column headers were in all caps.</li>
+<li>Fixed an issue where the email adapter didn't start up.</li>
+</ul>]]></content>
+    <summary>This release addresses multiple issues, including incorrect display of chat characters, inaccurate call times, and problems with call routing and agent desktop translations. Several fixes also improve chat transcript generation and voicemail handling.</summary>
+    <title>Fixed: Resolved various issues</title>
   </entry>
   <entry>
     <author>

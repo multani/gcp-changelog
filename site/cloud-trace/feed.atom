@@ -2,9 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Trace</title>
   <subtitle>Changelog for Google Cloud product: Cloud Trace</subtitle>
-  <updated>2026-04-10T00:00:00+00:00</updated>
+  <updated>2026-04-15T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-trace</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-trace/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-trace:2026-04-15:feature:0</id>
+    <published>2026-04-15T00:00:00+00:00</published>
+    <updated>2026-04-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Your trace data can be encrypted with a customer-managed encryption key (CMEK).
+To enable CMEK, set a default storage location and for that location, set a
+default Cloud Key Management Service key.</p>
+<p>You can set these defaults for an organization, a folder, or a project.
+When set for an organization or folder, the settings apply to
+that resource and to its descendants. For more information, see
+<a href="https://docs.cloud.google.com/stackdriver/docs/observability/set-defaults-for-observability-buckets">Set defaults for observability buckets</a>.</p>]]></content>
+    <summary>Your trace data can now be encrypted using customer-managed encryption keys (CMEK). Enable this feature by setting a default storage location and a default Cloud KMS key for that location. These settings can be applied at the organization, folder, or project level.</summary>
+    <title>Feature: Encrypt trace data with CMEK</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-trace:2026-04-15:feature:1</id>
+    <published>2026-04-15T00:00:00+00:00</published>
+    <updated>2026-04-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>When you configure a default storage location, you control the location of your
+new observability buckets. These buckets store your trace data.</p>
+<p>You can set a default storage location for an organization, a folder, or a
+project. When set for an organization or folder, the setting applies to that
+resource and to its descendants. For more information, see
+<a href="https://docs.cloud.google.com/stackdriver/docs/observability/set-defaults-for-observability-buckets">Set defaults for observability buckets</a>.</p>]]></content>
+    <summary>You can now set a default storage location for your new observability buckets, which store trace data. This setting can be applied at the organization, folder, or project level, with the location cascading down to descendant resources.</summary>
+    <title>Feature: Control observability bucket storage location</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

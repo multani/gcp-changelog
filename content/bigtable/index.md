@@ -1,5 +1,15 @@
 # Bigtable
 
+## 2026-04-15
+
+### Feature
+
+Dataplex Universal Catalog is now called Knowledge Catalog. The API, client
+library, CLI, and Identity and Access Management (IAM) names remain unchanged.
+For more information about how Bigtable metadata interacts with Knowledge
+Catalog, see [Manage data assets using Knowledge Catalog](https://docs.cloud.google.com/bigtable/docs/manage-data-assets-using-knowledge-catalog).
+
+---
 ## 2026-04-13
 
 ### Feature

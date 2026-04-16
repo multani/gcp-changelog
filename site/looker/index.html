@@ -2400,6 +2400,11 @@
 
 
 <h1 id="looker">Looker</h1>
+<h2 id="2026-04-15">2026-04-15</h2>
+<h3 id="breaking">Breaking</h3>
+<p>Migrate your Teams webhook to "Workflows"</p>
+<p>Microsoft is <a href="https://mc.merill.net/message/MC1181996">retiring</a> the legacy Office 365 Connectors in favor of Power Automate Workflows. Connectors will stop working by the end of April 2026. To ensure that your Looker alerts continue to deliver to Teams, you must replace your current webhook URL with a new "Workflow" URL. For more information, see the <a href="https://docs.cloud.google.com/looker/docs/best-practices/migrate-teams-webhook-to-workflows">Migrate your Teams webhook to "Workflows"</a> Best Practices notice.</p>
+<hr />
 <h2 id="2026-04-09">2026-04-09</h2>
 <h3 id="announcement">Announcement</h3>
 <p>Starting with the Looker 26.8 release, which will release in May 2026, the following changes will occur:</p>
@@ -2502,7 +2507,7 @@
 <p>An issue has been fixed where visualization tooltips on dashboards could use incorrect background or text colors. This feature now performs as expected.</p>
 <h3 id="fixed_11">Fixed</h3>
 <p>An issue has been fixed where the <strong>LookML dashboards</strong> folder could fail to display the complete list of LookML dashboards. This feature now performs as expected.</p>
-<h3 id="breaking">Breaking</h3>
+<h3 id="breaking_1">Breaking</h3>
 <p>Tabbed dashboards with unsupported layouts will now display a warning message prompting users to <a href="https://docs.cloud.google.com/looker/docs/best-practices/troubleshooting-unsupported-dashboard-layout">update to a new layout</a>.</p>
 <hr />
 <h2 id="2026-03-23">2026-03-23</h2>
@@ -2705,7 +2710,7 @@
 <li>Looker (Google Cloud core): <a href="https://docs.cloud.google.com/looker/docs/looker-core-admin-gemini">Administer Gemini on your Looker (Google Cloud core) instance</a></li>
 <li>Looker: <a href="https://docs.cloud.google.com/looker/docs/admin-panel-platform-gil">Admin settings – Gemini in Looker</a></li>
 </ul>
-<h3 id="breaking_1">Breaking</h3>
+<h3 id="breaking_2">Breaking</h3>
 <p>Project-level local git hooks are no longer supported for security reasons. This change will have no effect on Looker-hosted instances, but it may affect customer-hosted instances depending on your Git setup.</p>
 <h3 id="feature_39">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features">Preview Features page</a> is now available in the <strong>Admin</strong> panel for Looker (Google Cloud core). This page lets you enable or disable new features that are currently in preview.</p>
@@ -2803,7 +2808,7 @@ LookML dashboards. This feature now performs as expected.</p>
 <p>An issue has been fixed where adding a new field to a conditionally formatted result set could fail to apply the conditional formatting to the new field. This feature now performs as expected.</p>
 <h3 id="fixed_40">Fixed</h3>
 <p>An issue has been fixed where dashboard tiles with titles that included the % symbol could not be downloaded in the Safari 26.0 browser. This feature now performs as expected.</p>
-<h3 id="breaking_2">Breaking</h3>
+<h3 id="breaking_3">Breaking</h3>
 <p>When you use <a href="https://docs.cloud.google.com/looker/docs/elite-system-activity">Elite System Activity</a>, all System Activity fields of the <code>longtext</code> type that have a size greater than 2 MB will be truncated. If a table has only one column with a <code>longtext</code> type, that column will be set to a maximum of 1.9 MB in size. If a table has multiple columns of the <code>longtext</code> type, the total maximum size across all such columns is 2 MB, and this limit is distributed uniformly among those columns. For example, if a table has <code>x</code> <code>longtext</code> columns, each column will have a maximum length of 2 MB divided by <code>x</code>.</p>
 <h3 id="announcement_8">Announcement</h3>
 <p><strong>Looker 26.2</strong> is expected to include the following changes, features, and fixes:</p>
@@ -2903,7 +2908,7 @@ LookML dashboards. This feature now performs as expected.</p>
 <p>An issue has been fixed where long content in tooltips could not be scrolled. This feature now performs as expected.</p>
 <h3 id="fixed_53">Fixed</h3>
 <p>A retry limit has been added for scheduled jobs. If a scheduled job fails five times in a row, then it's skipped until the next time the schedule is triggered.</p>
-<h3 id="breaking_3">Breaking</h3>
+<h3 id="breaking_4">Breaking</h3>
 <p>HTML characters are now displayed in plaintext in table visualizations to match other visualization types. For example, <code>&amp;quot;</code> is no longer rendered as <code>"</code>.</p>
 <h3 id="announcement_10">Announcement</h3>
 <p><strong>Looker 26.0</strong> is expected to include the following changes, features, and fixes:</p>
@@ -2963,7 +2968,7 @@ LookML dashboards. This feature now performs as expected.</p>
 <p>An issue has been fixed where very long dashboard names were not properly truncated. This feature now performs as expected.</p>
 <h3 id="fixed_76">Fixed</h3>
 <p>An issue has been fixed where an empty <code>sorts:</code> property in a LookML <code>explore</code> file definition could cause Looker to return a 500 error. This feature now performs as expected.</p>
-<h3 id="breaking_4">Breaking</h3>
+<h3 id="breaking_5">Breaking</h3>
 <p>When you use <a href="https://docs.cloud.google.com/looker/docs/elite-system-activity">Elite System Activity</a>, the System Activity field <code>scheduled_plan.filters_string</code> is limited to a length of 1.9 MB. Any data beyond the 1.9 MB limit is truncated.</p>
 <h3 id="fixed_77">Fixed</h3>
 <p>An issue has been fixed where tooltips incorrectly displayed the text <code>[object Object]</code>. This feature now performs as expected.</p>
@@ -3091,12 +3096,12 @@ LookML dashboards. This feature now performs as expected.</p>
 <li>The drill links in a single value visualization are now classified as buttons and can be accessed using the keyboard.</li>
 <li>The destination of an alert is now a required field.</li>
 </ul>
-<h3 id="breaking_5">Breaking</h3>
+<h3 id="breaking_6">Breaking</h3>
 <p>Looker now recognizes results from the <code>YEAR</code> function as a number and not a date in MySQL 8.4. This change replicates the behavior of MySQL 8.0 and earlier.</p>
 <p>To undo this change for a MySQL connection, add the following parameter to the Additional JDBC parameters section: <code>yearIsDateType=true</code></p>
 <h3 id="feature_102">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/connecting-to-your-db#max_number_of_pdt_builder_connections">Max Number of PDT Builder Connections</a> limit has been increased from 10 to 100.</p>
-<h3 id="breaking_6">Breaking</h3>
+<h3 id="breaking_7">Breaking</h3>
 <p>When you use <a href="https://docs.cloud.google.com/looker/docs/elite-system-activity">Elite System Activity</a>, the System Activity fields <code>sql_query.sql</code> and <code>sql_text.text</code> are limited to a length of 1.9 MB. Any data beyond the 1.9 MB limit will be truncated. (This release note was updated on November 10, 2025 to specify Elite System Activity.)</p>
 <h3 id="other">Other</h3>
 <p><strong>Looker 25.20</strong> is expected to include the following changes, features, and fixes:</p>
@@ -3235,7 +3240,7 @@ LookML dashboards. This feature now performs as expected.</p>
 <p>The Data History Playback feature is now generally available on the Admin &gt; Settings page.</p>
 <h3 id="feature_118">Feature</h3>
 <p>The Reduce Filter Queries feature is now generally available on the Admin &gt; Settings page.</p>
-<h3 id="breaking_7">Breaking</h3>
+<h3 id="breaking_8">Breaking</h3>
 <p>Looker admins can no longer create or edit individual users' API keys. Instead, from the Admin &gt; Users page, admins can enable users to manage their own API keys. Once a user has API key management enabled, they can create, view, edit, and delete their API keys from their Looker account page. <strong>Note:</strong> This item was changed on October 9, 2025 to specify that it supports Looker (Google Cloud core) only, and it was changed again on October 22, 2025 to indicate that it's a breaking change.</p>
 <h3 id="feature_119">Feature</h3>
 <p>The Prerender iframes for custom visualizations feature is now out of Labs and generally available on the Admin &gt; Content Guardrails page.</p>
@@ -3275,7 +3280,7 @@ LookML dashboards. This feature now performs as expected.</p>
 <li>Expected Looker (Google Cloud core) deployment start: <strong>Monday, September 15, 2025</strong></li>
 <li>Expected Looker (Google Cloud core) final deployment: <strong>Monday, September 29, 2025</strong></li>
 </ul>
-<h3 id="breaking_8">Breaking</h3>
+<h3 id="breaking_9">Breaking</h3>
 <p>Looker no longer supports connections to Firebolt.</p>
 <h3 id="feature_127">Feature</h3>
 <p>Suggest queries now respect the concurrency limit in the connection configuration.</p>
@@ -3477,7 +3482,7 @@ LookML dashboards. This feature now performs as expected.</p>
 <li>Expected Looker (Google Cloud core) deployment start: <strong>Monday, July 28, 2025</strong></li>
 <li>Expected Looker (Google Cloud core) final deployment: <strong>Wednesday, July 30, 2025</strong></li>
 </ul>
-<h3 id="breaking_9">Breaking</h3>
+<h3 id="breaking_10">Breaking</h3>
 <p>Because of security concerns, text tiles no longer support the <code>form</code> and <code>input</code> Markdown elements.</p>
 <h3 id="feature_150">Feature</h3>
 <p>The Oracle JDBC driver has been updated to version 19.25.</p>
@@ -3572,7 +3577,7 @@ LookML dashboards. This feature now performs as expected.</p>
 <li>Expected Looker (Google Cloud core) deployment start: <strong>Monday, June 16, 2025</strong></li>
 <li>Expected Looker (Google Cloud core) final deployment: <strong>Monday, June 30, 2025</strong></li>
 </ul>
-<h3 id="breaking_10">Breaking</h3>
+<h3 id="breaking_11">Breaking</h3>
 <p>The <a href="https://cloud.google.com/looker/docs/embed-sdk-intro">Embed SDK</a> has been upgraded to release 2.0.0. While the 2.0.0 API is backwards-compatible with Embed SDK 1.8.x, the underlying implementation has changed for some functionality. SDK 1.8.x exported a number of classes. SDK 2.0.0 replaces these classes with interfaces that are marked as deprecated (alternative interfaces are identified). We recommend that applications use the interfaces that have an 'I' prefix (the interfaces that have prefixes are identical to the interfaces that don't have them). Applications that are upgraded to SDK 2.0.0 should continue to work and behave as they did previously. To take advantage of the API improvements, some refactoring will be required. The following major changes are included in Embed SDK 2.0.0:</p>
 <ul>
 <li>Navigating between dashboards, Explores, and Looks no longer requires that an iframe be recreated. Instead, the <code>loadDashboard</code>, <code>loadLook</code>, <code>loadExplore</code>, and <code>loadUrl</code> methods can be used to navigate within the Looker iframe.</li>
@@ -3671,6 +3676,9 @@ is created automatically for instances that use an <a href="https://cloud.google
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#looker">Looker</a></li>
+          <li class="nav-item">
+            <a href="#2026-04-15" class="nav-link">2026-04-15</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-04-09" class="nav-link">2026-04-09</a>
           </li>

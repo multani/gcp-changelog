@@ -1,5 +1,21 @@
 # Gemini Enterprise
 
+## 2026-04-15
+
+### Feature
+
+**Gemini Enterprise: Use Gemini Enterprise Admin and Gemini Enterprise User IAM roles**
+
+Use the Gemini Enterprise Admin and Gemini Enterprise User roles.
+
+The Gemini Enterprise Admin and Gemini Enterprise User roles still map to the
+Discovery Engine admin and user roles, so existing customers do not need to make
+any changes.
+
+For more information, see [IAM roles and
+permissions](https://docs.cloud.google.com/gemini/enterprise/docs/access-control).
+
+---
 ## 2026-04-13
 
 ### Feature

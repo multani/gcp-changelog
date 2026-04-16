@@ -1,5 +1,29 @@
 # Cloud Trace
 
+## 2026-04-15
+
+### Feature
+
+Your trace data can be encrypted with a customer-managed encryption key (CMEK).
+To enable CMEK, set a default storage location and for that location, set a
+default Cloud Key Management Service key.
+
+You can set these defaults for an organization, a folder, or a project.
+When set for an organization or folder, the settings apply to
+that resource and to its descendants. For more information, see
+[Set defaults for observability buckets](https://docs.cloud.google.com/stackdriver/docs/observability/set-defaults-for-observability-buckets).
+
+### Feature
+
+When you configure a default storage location, you control the location of your
+new observability buckets. These buckets store your trace data.
+
+You can set a default storage location for an organization, a folder, or a
+project. When set for an organization or folder, the setting applies to that
+resource and to its descendants. For more information, see
+[Set defaults for observability buckets](https://docs.cloud.google.com/stackdriver/docs/observability/set-defaults-for-observability-buckets).
+
+---
 ## 2026-04-10
 
 ### Feature

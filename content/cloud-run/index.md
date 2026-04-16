@@ -1,5 +1,12 @@
 # Cloud Run
 
+## 2026-04-15
+
+### Feature
+
+The [Cloud Run remote MCP server](https://docs.cloud.google.com/run/docs/use-cloud-run-mcp), which lets agents and AI applications deploy with Cloud Run, is in [General Availability (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-04-14
 
 ### Feature

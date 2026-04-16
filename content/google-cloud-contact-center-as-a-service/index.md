@@ -1,5 +1,108 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-04-15
+
+### Announcement
+
+**Google Cloud CCaaS 4.21**
+
+We've released version 4.21 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**Language selection support for direct calls**
+
+End-users making direct calls to agent phone numbers and agent extension numbers
+can select their language at the start of a call.
+
+Administrators: The **Add Number** and **Edit a Number** dialogs, located at
+**Settings > Call > Phone Numbers > Phone
+Number Management**, have a new **Set languages** checkbox (when the **Set as a
+direct number** checkbox is selected). When you select the **Set languages**
+checkbox, the **Select languages** list appears.
+
+For more information, see [Create a direct phone
+number](https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#create-direct-phone-number).
+
+### Feature
+
+**"Improved controls for predictive campaigns" is available without assistance
+from the Google account team**
+
+This feature was announced on [March 24,
+2026](https://docs.cloud.google.com/contact-center/ccai-platform/docs/release-notes#March_24_2026) but
+previously required the Google account team to enable it. You no longer need
+assistance from the Google account team to use this capability. For more
+information, see [Predictive
+campaigns](https://docs.cloud.google.com/contact-center/ccai-platform/docs/campaign-predictive).
+
+### Feature
+
+**Virtual agents can transfer calls to a specific human agent**
+
+Virtual support agents can transfer calls directly to a specific human agent
+using the agent ID or agent extension number. Include the `agent_extension` or
+`agent_id` field in the transfer payload to direct the call to the correct
+agent. Transferring directly to a human agent eliminates the intermediate step
+of transferring to a queue before transferring to the agent. This can improve
+wait times and customer satisfaction. For more information, see [Virtual agent
+to human agent
+transfers](https://docs.cloud.google.com/contact-center/ccai-platform/docs/virtual-agent-to-human-agent-transfers).
+
+### Fixed
+
+The following issues were addressed in this release:
+
+* Fixed an issue where backslash characters in chat shortcuts and chat
+  messages weren't displayed correctly, resulting in missing or empty message
+  chat bubbles.
+* Fixed an issue where virtual agent chat transcripts didn't match the actual
+  conversation.
+* Fixed an issue where call times in session metadata for virtual agent to
+  human agent escalations were shorter than the actual call times.
+* Fixed an issue where agents were able to join a conference call despite
+  receiving microphone permission errors.
+* Fixed an issue where direct inbound calls to Twilio numbers assigned at the
+  user level continuously rang without reaching the agent.
+* Fixed an issue where chat transfers from auto-answer queues to manual-answer
+  queues were incorrectly recorded as manual-to-manual in reporting.
+* Fixed an agent desktop issue where French (Canadian) translations were
+  missing or incorrect during outbound calls.
+* Fixed an issue where the **All Teams** filter didn't block interactions with
+  background elements, which could cause unintended end-user interactions with
+  the UI.
+* Fixed an issue where missed call volumes didn't appear on the agent
+  monitoring page.
+* Fixed an issue that occurred when the **Display transfer history in agent
+  adapter** capability was enabled. After a virtual agent escalation,
+  escalated queue names were shown in English instead of the correct target
+  language.
+* Fixed an issue where virtual agent audio sessions ended after 15 minutes,
+  causing calls to be escalated unexpectedly.
+* Fixed an issue where underscores within email addresses were incorrectly
+  removed in CRM transcripts.
+* Fixed an issue where chat transcript PDFs weren't generated when real-time
+  redaction was enabled and conversations included non-text message types such
+  as inline buttons or content cards.
+* Fixed an issue where content cards sent by virtual agents during
+  conversations were missing from the PDF chat transcript.
+* Fixed an issue where chat transcripts created through the API weren't
+  appearing in agent conversations.
+* Fixed an issue where voicemails disappeared from the agent's queue and
+  didn't appear in voicemail history or reports.
+* Fixed an issue where the agent adapter displayed **Escalated Virtual Agent
+  Call** instead of **IVR Callback** after connecting during a callback.
+* Fixed an issue where chat disposition selections reset during wrap-up,
+  particularly when Agent Assist was enabled.
+* Fixed an issue where custom fields in dialer list uploads worked only if the
+  column headers were in all caps.
+* Fixed an issue where the email adapter didn't start up.
+
+---
 ## 2026-04-14
 
 ### Announcement

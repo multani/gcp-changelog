@@ -19,6 +19,13 @@ Service Management is generally available
 [(GA)](https://cloud.google.com/products#product-launch-stages).
 
 ---
+## 2026-03-27
+
+### Feature
+
+DNS Armor is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-03-19
 
 ### Feature

@@ -1,5 +1,1684 @@
 # Google SecOps Marketplace
 
+## 2026-04-15
+
+### Feature
+
+**SentinelOneV2**: Version 50.0
+
+* The following new job has been added:
+
+  + **Sync Threats**
+
+### Feature
+
+**CrowdStrike Falcon**: Version 76.0
+
+* The following new job has been added:
+
+  + **Sync Alerts**
+
+### Change
+
+**ServiceNow**: Version 64.0
+
+* Added support for disabling overflow settings and updated ticket processing
+  and environment mapping logic in the following connector:
+
+  + **ServiceNow Connector**
+
+### Change
+
+**Zscaler**: Version 14.0
+
+* Added the ability to provide IOCs using input parameters to the following
+  actions:
+
+  + **Add To Blacklist**
+  + **Add To Whitelist**
+  + **Remove From Blacklist**
+  + **Remove From Whitelist**
+* **Integration**: Added support for OAuth authentication.
+
+### Change
+
+**Mandiant Threat Intelligence**: Version 17.0
+
+* Optimized execution performance and entity processing logic in the following
+  action:
+
+  + **Enrich Entities**
+
+---
+## 2026-04-10
+
+### Feature
+
+**Gmail**: Version 9.0
+
+* A new predefined widget has been added to the following action:
+
+  + **Delete Email**
+
+### Feature
+
+**Tanium**: Version 19.0
+
+* A new predefined widget has been added to the following action:
+
+  + **Create Connection**
+
+### Feature
+
+**Cynet**: Version 13.0
+
+* New predefined widgets have been added to the following actions:
+
+  + **Delete Hash In Hosts**
+  + **Kill Hash In Hosts**
+  + **Quarantine Hash In Hosts**
+
+### Feature
+
+**Area1**: Version 9.0
+
+* A new predefined widget has been added to the following action:
+
+  + **Search Indicator**
+
+### Feature
+
+**Azure Active Directory**: Version 26.0
+
+* A new predefined widget has been added to the following action:
+
+  + **Is User In a Group**
+
+### Feature
+
+**MX ToolBox**: Version 14.0
+
+* A new predefined widget has been added to the following action:
+
+  + **SPF Lookup**
+
+### Feature
+
+**Active Directory**: Version 41.0
+
+* New predefined widgets have been added to the following actions:
+
+  + **Is User In Group**
+  + **List User Groups**
+
+### Feature
+
+**Cisco Threat Grid**: Version 18.0
+
+* New predefined widgets have been added to the following actions:
+
+  + **Get Hash Associated Domains**
+  + **Get Hash Associated IPs**
+
+### Feature
+
+**Google Chronicle**: Version 81.0
+
+* The following new action has been added:
+
+  + **Is CIDR In Data Table**
+
+### Feature
+
+**Endgame**: Version 15.0
+
+* New predefined widgets have been added to the following actions:
+
+  + **Collect Autoruns**
+  + **Drivers Survey** (Windows only)
+  + **Firewall Survey** (Windows only)
+  + **Process Survey**
+  + **Removable Media Survey** (Windows only)
+  + **Software Survey** (Windows only)
+  + **User Sessions Survey**
+
+### Feature
+
+**AWS Identity and Access Management (IAM)**: Version 10.0
+
+* A new predefined widget has been added to the following action:
+
+  + **Disable User Access**
+
+### Feature
+
+**Carbon Black Response**: Version 39.0
+
+* A new predefined widget has been added to the following action:
+
+  + **Download Binary**
+
+### Feature
+
+**Carbon Black Protection**: Version 13.0
+
+* A new predefined widget has been added to the following action:
+
+  + **Get Computers By File**
+
+### Feature
+
+**McAfee ATD**: Version 17.0
+
+* A new predefined widget has been added to the following action:
+
+  + **Check Hash**
+
+### Feature
+
+**UnshortenMe**: Version 9.0
+
+* A new predefined widget has been added to the following action:
+
+  + **Unshorten URL**
+
+### Feature
+
+**CiscoUmbrella**: Version 19.0
+
+* A new predefined widget has been added to the following action:
+
+  + **Get Associated Domains**
+
+### Feature
+
+**Microsoft Graph Mail**: Version 40.0
+
+* A new predefined widget has been added to the following action:
+
+  + **Get Mailbox Account Out Of Facility Settings**
+
+### Change
+
+**Exabeam Advanced Analytics**: Version 10.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Entities**
+
+### Change
+
+**Check Point SandBlast**: Version 8.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Query**
+  + **Upload File**
+
+### Change
+
+**Palo Alto AutoFocus**: Version 12.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Hunt Domain**
+  + **Hunt File**
+  + **Hunt Ip**
+  + **Hunt Url**
+
+### Change
+
+**XForce**: Version 19.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Get Hash Info**
+  + **Get IP Info**
+  + **Get IP malware**
+  + **Get Url Info**
+
+### Change
+
+**Trend Micro Apex Central**: Version 7.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Create Entity UDSO**
+  + **Create File UDSO**
+  + **Enrich Entities**
+
+### Change
+
+**BulkWhoIs**: Version 18.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **WhoIs Details**
+
+### Change
+
+**Any.Run**: Version 12.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Get Report**
+
+### Change
+
+**Siemplify ThreatFuse**: Version 19.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Entities**
+
+### Change
+
+**Google Cloud Policy Intelligence**: Version 7.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Search Service Account Activity**
+
+### Change
+
+**MISP**: Version 38.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Entities**
+  + **Get Event Details**
+  + **Get Related Events**
+
+### Change
+
+**ReversingLabs Titanium**: Version 12.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Get Malware Details**
+
+### Change
+
+**MX ToolBox**: Version 14.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **A Record Lookup**
+  + **Blacklist Check**
+  + **MX Record Lookup**
+  + **Reverse DNS Lookup**
+
+### Change
+
+**Google Rapid Response (GRR)**: Version 11.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Get Client Details**
+  + **List Clients**
+  + **List Launched Flows**
+
+### Change
+
+**Armis**: Version 15.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Entities**
+
+### Change
+
+**Lastline**: Version 9.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Get Analysis Results**
+
+### Change
+
+**McAfee Mvision EPO**: Version 11.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Endpoint**
+
+### Change
+
+**Office 365 Cloud App Security**: Version 26.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Get IP related activities**
+  + **Get User related activities**
+
+### Change
+
+**SSL Labs**: Version 11.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Analyse Entity**
+
+### Change
+
+**Qualys VM**: Version 25.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Host**
+  + **List Endpoint Detections**
+
+### Change
+
+**Exchange**: Version 123.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Get Account Out Of Facility Settings**
+  + **Send Email And Wait**
+
+### Change
+
+**Microsoft Defender ATP**: Version 31.0
+
+* Added Graph API V2 version support to the following actions:
+
+  + **Get User Related Alerts**
+  + **List Alerts**
+  + **Ping**
+  + **Update Alert**
+* Deprecated the following actions:
+
+  + **Get File Related Alerts**
+  + **Get Machine Related Alerts**
+* Added Graph API V2 version support to the following connector:
+
+  (REGRESSIVE) The connector must be updated by April 10, 2026.
+
+  **Note:** You must update ontology mapping. Alerts created with the new API have a different
+  structure and require additional permissions. We recommend using
+  **Microsoft 365 Defender - Incidents Connector** as a replacement.
+  + **Microsoft Defender ATP Connector V2**
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Entities**
+  + **Execute Live Response Command**
+  + **Get File Related Alerts**
+  + **Get File Related Machines**
+  + **Get Machine Logon Users**
+  + **Get Machine Recommendations**
+  + **Get Machine Related Alerts**
+  + **Get Machine Vulnerabilities**
+  + **Get User Related Alerts**
+
+### Change
+
+**Cisco AMP**: Version 23.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Get Computer Info**
+  + **Get Computers By File Hash**
+  + **Get Computers By File Name**
+  + **Get Computers By Network Activity (Ip)**
+  + **Get Computers By Network Activity (URL)**
+  + **Isolate Machine**
+  + **Unisolate Machine**
+
+### Change
+
+**HaveIBeenPwned**: Version 10.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Check Account**
+
+### Change
+
+**Symantec Blue Coat ProxySG**: Version 7.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Block Entities**
+  + **Enrich Entities**
+
+### Change
+
+**Cybereason**: Version 25.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Entities**
+  + **Get Sensor Details**
+  + **Is Probe Connected**
+
+### Change
+
+**Cofense Triage**: Version 21.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **EnrichURL**
+  + **Get Domain Details**
+  + **Get Threat Indicator Details**
+
+### Change
+
+**Slack**: Version 30.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Send Advanced Message**
+  + **Send Message**
+
+### Change
+
+**IPVoid**: Version 12.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Get Ip Reputation**
+
+### Change
+
+**RSA NetWitness EDR**: Version 9.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Endpoint**
+  + **Get IOC Details**
+
+### Change
+
+**Microsoft Intune**: Version 8.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Get Managed Device**
+
+### Change
+
+**Trend Micro DDAN**: Version 6.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Submit File**
+  + **Submit File URL**
+
+### Change
+
+**Tenable.io**: Version 17.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Entities**
+  + **List Endpoint Vulnerabilities**
+
+### Change
+
+**JoeSandbox**: Version 11.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Search Hash**
+  + **Search Url**
+
+### Change
+
+**Endgame**: Version 15.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Entities**
+  + **Network Survey**
+  + **System Survey**
+
+### Change
+
+**ThreatQ**: Version 19.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich CVE**
+  + **Enrich Email**
+  + **Enrich Hash**
+  + **Enrich IP**
+  + **Enrich URL**
+  + **Get Indicator Details**
+  + **Get Malware Details**
+  + **Link Entities**
+  + **Link Entities To Object**
+  + **List Entity Related Objects**
+  + **Update Indicator Score**
+  + **Update Indicator Status**
+
+### Change
+
+**RSA NetWitness Platform**: Version 17.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Endpoint**
+  + **Enrich File**
+  + **Query NetWitness For Events Around Host**
+  + **Query NetWitness For Events Around IP**
+  + **Query NetWitness For Events Around User**
+
+### Change
+
+**McAfee TIEDXL**: Version 9.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Get File Reputation**
+
+### Change
+
+**Symantec Endpoint Protection 14**: Version 21.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **GetSystemInfo**
+
+### Change
+
+**FireEye AX**: Version 9.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Submit URL**
+
+### Change
+
+**Splash**: Version 7.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Entities**
+
+### Change
+
+**MalShare**: Version 11.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Hash**
+
+### Change
+
+**Elastica CloudSOC**: Version 8.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Get User Activities**
+
+### Change
+
+**Amazon Macie**: Version 10.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Get Findings**
+
+### Change
+
+**CiscoUmbrella**: Version 19.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Get Domain Security Info**
+  + **Get Domain Status**
+  + **Get Whois**
+  + **Is Domain In Cisco Popularity List**
+
+### Change
+
+**SCCM**: Version 21.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Entities**
+  + **Get Computer Properties**
+  + **Get Login History**
+
+### Change
+
+**Web Risk**: Version 4.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Entities**
+  + **Submit Entities**
+
+### Change
+
+**DShield**: Version 8.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Get Ip Info**
+
+### Change
+
+**Tenable Security Center**: Version 22.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich IP**
+  + **Get Related Assets**
+  + **Get Vulnerabilities for IP**
+
+### Change
+
+**ServiceNow**: Version 63.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **List Records Related To User**
+
+### Change
+
+**McAfee EPO**: Version 37.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Compare Server and Agent DAT**
+  + **Get Agent Information**
+  + **Get Dat Version**
+  + **Get Endpoint Events**
+  + **Get Events For Hash**
+  + **Get Host IPS Status**
+  + **Get Host Network IPS Status**
+  + **Get Last Communication Time**
+  + **Get McAfee Epo Agent Version**
+  + **Get System Information**
+  + **Get Virus Engine Agent Version**
+  + **Run Full Scan**
+  + **Update Mcafee Agent**
+
+### Change
+
+**RSA NetWitness**: Version 20.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Query NetWitness For Events Around Host**
+  + **Query NetWitness For Events Around IP**
+  + **Query NetWitness For Events Around User**
+
+### Change
+
+**Axonius**: Version 7.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Add Note**
+  + **Enrich Entities**
+
+### Change
+
+**Automox**: Version 8.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Entities**
+  + **Execute Device Command**
+  + **Execute Policy**
+
+### Change
+
+**Cylance**: Version 19.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Entities**
+  + **Get Threat**
+  + **Get Threat Devices**
+  + **Get Threat Download Link**
+
+### Change
+
+**Anomali**: Version 15.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **GetThreatInfo**
+
+### Change
+
+**TruSTAR**: Version 9.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Entities**
+
+### Change
+
+**PhishingInitiative**: Version 12.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Get Url Status**
+
+### Change
+
+**Digital Shadows**: Version 12.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **EnrichCVE**
+  + **EnrichHash**
+  + **EnrichIP**
+  + **EnrichURL**
+
+### Change
+
+**iBoss**: Version 14.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **URL Lookup**
+
+### Change
+
+**Google Cloud IAM**: Version 19.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Entities**
+  + **Get Service Account IAM Policy**
+  + **Rotate Service Account Keys**
+  + **Set Service Account IAM Policy**
+
+### Change
+
+**Sumo Logic Cloud SIEM**: Version 13.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Entities**
+  + **Search Entity Signals**
+
+### Change
+
+**Microsoft Teams**: Version 37.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Create Chat**
+  + **Send User Message**
+
+### Change
+
+**FortiAnalyzer**: Version 12.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Entities**
+
+### Change
+
+**Sophos**: Version 21.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Entities**
+  + **Get Events Log**
+  + **Get Services Status**
+
+### Change
+
+**Palo Alto Cortex XDR**: Version 27.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Entities**
+  + **Scan Endpoint**
+
+### Change
+
+**Cisco Threat Grid**: Version 18.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Get Submissions**
+
+### Change
+
+**Intezer**: Version 14.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Submit Hash**
+
+### Change
+
+**Recorded Future**: Version 22.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich CVE**
+  + **Enrich Hash**
+  + **Enrich Host**
+  + **Enrich IP**
+  + **Enrich IOC**
+  + **Enrich URL**
+
+### Change
+
+**Gmail**: Version 9.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Search For Emails**
+  + **Wait For Thread Reply**
+
+### Change
+
+**Illusive Networks**: Version 7.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Entities**
+  + **Run Forensic Scan**
+
+### Change
+
+**VirusTotal**: Version 42.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Get Domain Report**
+  + **Scan Hash**
+  + **Scan IP**
+  + **Scan URL**
+  + **Upload And Scan Files**
+
+### Change
+
+**Anomali ThreatStream**: Version 15.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Entities**
+
+### Change
+
+**ThreatConnect**: Version 17.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Entities**
+
+### Change
+
+**Azure Active Directory**: Version 26.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Host**
+  + **Enrich User**
+  + **Get Manager Contact Details**
+  + **List Users**
+  + **List User's Groups Membership**
+  + **Revoke User Session**
+
+### Change
+
+**Splunk**: Version 65.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Get Host Events**
+
+### Change
+
+**Attivo**: Version 10.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Entities**
+
+### Change
+
+**Cisco ISE**: Version 16.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Add Endpoint To Endpoint Identity Group**
+
+### Change
+
+**DeepSight**: Version 11.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Scan Domain**
+  + **Scan Email**
+  + **Scan File Name**
+  + **Scan Hash**
+  + **Scan IP**
+  + **Scan URL**
+
+### Change
+
+**Symantec Email Security Cloud**: Version 5.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Block Entities**
+
+### Change
+
+**GSuite**: Version 26.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Entities**
+  + **Get Extension Details**
+  + **Get Group Details**
+  + **Get Host Browser Details**
+  + **List Group Privileges**
+  + **List User Privileges**
+  + **Revoke User Session**
+  + **Search User Activity Events**
+
+### Change
+
+**SymantecESCC**: Version 9.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Entities**
+
+### Change
+
+**Google Cloud Compute**: Version 17.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Entities**
+
+### Change
+
+**FireEye HX**: Version 23.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Get Host Alert Groups**
+  + **Get Host Info**
+  + **Get List of File Acquisitions For Host**
+  + **Is Contain Malware Alerts**
+
+### Change
+
+**Rapid7 InsightVm**: Version 16.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Asset**
+
+### Change
+
+**McAfee Mvision EDRV2**: Version 5.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Create Investigation**
+
+### Change
+
+**HCL BigFix Inventory**: Version 5.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Entities**
+
+### Change
+
+**SiemplifyUtilities**: Version 29.0
+
+* Added support for a custom delimiter in the following action:
+
+  + **Query Joiner**
+
+### Change
+
+**Nmap**: Version 4.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Scan Entities**
+
+### Change
+
+**VMware Carbon Black Enterprise EDR**: Version 10.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Hash**
+  + **Get Events Associated With Process by Process Guide**
+  + **Process Search**
+
+### Change
+
+**Outpost24**: Version 8.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Entities**
+
+### Change
+
+**PassiveTotal**: Version 14.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **WhoIs Address Reputation**
+  + **Whois Host Reputation**
+  + **WhoIs Scan Address**
+  + **WhoIs Scan Domain**
+
+### Change
+
+**Carbon Black Defense**: Version 12.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Get Device Info**
+  + **Get Events**
+  + **Get Processes**
+
+### Change
+
+**QRadar**: Version 67.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Similar Events Query**
+  + **Similar Flows Query**
+
+### Change
+
+**SentinelOneV2**: Version 49.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Create Hash Blacklist Record**
+  + **Create Hash Exclusion Record**
+  + **Get Agent Status**
+  + **Get Application List For Endpoint**
+  + **Get Events For Endpoint Hours Back**
+  + **Get Group Details**
+  + **Get Hash Reputation**
+
+### Change
+
+**Zscaler**: Version 13.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Get Sandbox Report**
+  + **Lookup Entity**
+
+### Change
+
+**McAfee Mvision EDR**: Version 11.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Endpoint**
+
+### Change
+
+**Tanium**: Version 19.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Delete File**
+  + **Enrich Entities**
+  + **List Endpoint Events**
+  + **Quarantine Endpoint**
+
+### Change
+
+**VMware Carbon Black Endpoint Standard Live Response**: Version 10.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Create Memdump**
+  + **Delete File**
+  + **Delete File from Cloud Storage**
+  + **Download File**
+  + **Execute File**
+  + **Kill Process**
+  + **List Files**
+  + **List Files in Cloud Storage**
+  + **List Processes**
+  + **Put File**
+
+### Change
+
+**VSphere**: Version 12.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Get Vm By Ip**
+
+### Change
+
+**Nozomi Networks**: Version 10.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Entities**
+
+### Change
+
+**Active Directory**: Version 41.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich entities**
+  + **Get Manager Contact Details**
+
+### Change
+
+**Talos**: Version 20.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Get Reputation**
+  + **WhoIs**
+
+### Change
+
+**Check Point Threat Reputation**: Version 8.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Get File Hash Reputation**
+  + **Get Host Reputation**
+  + **Get IP Reputation**
+
+### Change
+
+**Zabbix**: Version 16.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Execute Script**
+
+### Change
+
+**FireEye Helix**: Version 19.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Add Entities To a List**
+
+### Change
+
+**Malware Domain List**: Version 11.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Check URL**
+
+### Change
+
+**AlienVault USM Appliance**: Version 26.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Assets**
+  + **Enrich Vulnerabilities**
+
+### Change
+
+**Alexa**: Version 9.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Get URL Rank**
+
+### Change
+
+**AWS GuardDuty**: Version 12.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Get a Trusted IP List**
+  + **Get Detector Details**
+  + **Get Threat Intelligence Set Details**
+
+### Change
+
+**HTTP**: Version 15.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Get URL Data**
+
+### Change
+
+**BlueLiv**: Version 13.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Entities**
+  + **List Entity Threats**
+
+### Change
+
+**Azure AD Identity Protection**: Version 9.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Entities**
+
+### Change
+
+**Carbon Black Response**: Version 39.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Binary**
+  + **Enrich Process**
+  + **Get System Info**
+  + **Hosts By Process**
+  + **List Processes**
+
+### Change
+
+**Falcon Sandbox**: Version 21.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Get Hash Scan Report**
+  + **Scan URL**
+  + **Submit File**
+
+### Change
+
+**CSV**: Version 41.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **CSV Search by Entity**
+  + **CSV Search by String**
+
+### Change
+
+**URLVoid**: Version 14.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Get domain reputation**
+
+### Change
+
+**Harmony Mobile**: Version 7.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Entities**
+
+### Change
+
+**Cloudflare**: Version 8.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Add URL To Rule List**
+
+### Change
+
+**Carbon Black Protection**: Version 13.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Analyze File**
+
+### Change
+
+**Jira**: Version 56.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Search Users**
+
+### Change
+
+**Microsoft Graph Mail Delegated**: Version 17.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Get Mailbox Account Out Of Facility Settings**
+
+### Change
+
+**Trend Vision One**: Version 9.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Entities**
+  + **Execute Custom Script**
+  + **Isolate Endpoint**
+  + **Submit File**
+  + **Submit URL**
+  + **Unisolate Endpoint**
+
+### Change
+
+**Internet Storm Center**: Version 6.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Entities**
+
+### Change
+
+**AlienVaultTI**: Version 14.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enriches Entities**
+
+### Change
+
+**Google Threat Intelligence**: Version 14.0
+
+* Migrated the following connector to new API endpoints:
+
+  **Note:** Duplicate notifications may occur temporarily during the transition.
+  + **Google Threat Intelligence - Livehunt Connector**
+
+### Change
+
+**Shodan**: Version 17.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Get Ip Info**
+
+### Change
+
+**Cisco Vulnerability Management**: Version 3.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Entities**
+  + **List Asset Vulnerabilities**
+
+### Change
+
+**ForeScout CounterACT**: Version 6.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Entities**
+
+### Change
+
+**McAfee ESM**: Version 46.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Get Similar Events**
+  + **Send Entity Query To ESM**
+
+### Change
+
+**LogRhythm**: Version 23.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Entities**
+  + **List Entity Events**
+
+### Change
+
+**Mandiant ASM**: Version 13.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Search ASM Entities**
+
+### Change
+
+**Ivanti Endpoint Manager**: Version 10.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Enrich Entities**
+  + **List Endpoint Vulnerabilities**
+
+### Change
+
+**Cuckoo**: Version 14.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Detonate Url**
+
+### Change
+
+**IntSights**: Version 27.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Search IOCs**
+
+### Change
+
+**Vectra**: Version 13.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Endpoint**
+
+### Change
+
+**McAfee ATD**: Version 17.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Submit URL**
+
+### Change
+
+**FortinetFortiSIEM**: Version 10.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Entities**
+
+### Change
+
+**ThreatCrowd**: Version 9.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **EnrichEntities**
+
+### Change
+
+**APIVoid**: Version 14.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Get domain reputation**
+  + **Get Ip Reputation**
+  + **Get Screenshot**
+  + **Get URL Reputation**
+  + **Verify Email**
+
+### Change
+
+**McAfee Mvision EPOV2**: Version 8.0
+
+* Introduced light theme support for the predefined widget of the following
+  action:
+
+  + **Enrich Endpoint**
+
+### Change
+
+**VMRay**: Version 19.0
+
+* Introduced light theme support for predefined widgets of the following
+  actions:
+
+  + **Scan Hash**
+  + **Scan URL**
+
+### Change
+
+**Google Chronicle**: Version 81.0
+
+* Added support for CIDR matching to the following action:
+
+  + **Is Value In Reference List**
+
+---
 ## 2026-04-01
 
 ### Feature
@@ -1497,7 +3176,7 @@ for the following integrations:
 
 **Microsoft Graph Mail**: Version 37.0
 
-* A new predefined widget has been added to following action:
+* A new predefined widget has been added to the following action:
 
   + **Delete Email**
 
@@ -1528,7 +3207,7 @@ for the following integrations:
 
 **Microsoft Graph Security**: Version 24.0
 
-* A new predefined widget has been added to following action:
+* A new predefined widget has been added to the following action:
 
   + **List Incidents**
 

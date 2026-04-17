@@ -4,6 +4,10 @@
 
 ### Feature
 
+You can [migrate your workloads](https://docs.cloud.google.com/memorystore/docs/valkey/migrate-workloads) from your self-managed Redis and Valkey instances that run in Google Cloud Platform into Memorystore for Valkey. This feature is available in [Preview](https://docs.cloud.google.com/products#product-launch-stages).
+
+### Feature
+
 The [shared](https://docs.cloud.google.com/memorystore/docs/valkey/use-shared-ca) and [customer-managed](https://docs.cloud.google.com/memorystore/docs/valkey/use-customer-managed-ca) Certificate Authority (CA) modes are [Generally Available](https://docs.cloud.google.com/products#product-launch-stages).
 
 ---

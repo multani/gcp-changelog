@@ -1,6 +1,48 @@
 {
   "name": "Config Connector",
   "entries": {
+    "2026-03-25": [
+      {
+        "kind": "Announcement",
+        "content": "Config Connector version 1.147.1 is now available.",
+        "summary": {
+          "title": "Config Connector 1.147.1 Released",
+          "summary": "Config Connector version 1.147.1 has been released. This update includes new features and improvements."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Alpha Resources (Direct Reconciler):\n\n* `CloudDeployCustomTargetType`\n  + Please replace any instances of the `DeployCustomTargetType` resource with the new `CloudDeployCustomTargetType` (v1alpha1) resource.",
+        "summary": {
+          "title": "New Alpha Resources Available",
+          "summary": "Introducing new Alpha resources, including the CloudDeployCustomTargetType. Please update your configurations to use the new CloudDeployCustomTargetType (v1alpha1) resource, replacing any existing DeployCustomTargetType instances."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Reconciliation Improvements:\n\n* Improved structured reporting diffs to provide better visibility into what changed during reconciliation for the following resources:\n  + `BigQueryDataset`\n  + `BigQueryReservationAssignment`\n  + `BigQueryTable`\n  + `CertificateManagerDNSAuthorization`\n  + `CloudIdentityGroup`\n  + `DataformRepository`\n  + `MetastoreService`\n  + `PrivilegedAccessManagerEntitlement`\n  + `WorkflowsWorkflow`",
+        "summary": {
+          "title": "Reconciliation reporting enhanced",
+          "summary": "We've improved structured reporting diffs for reconciliation. This change offers better visibility into what changed for a variety of BigQuery and other resources during reconciliation."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New features:\n\n* Enhanced `config-connector preview` to support side-by-side comparison between default and alternative controllers.\n* Added a `--skip-name-validation` flag to Config Connector controllers to bypass duplicate controller name checks during registration.",
+        "summary": {
+          "title": "Config Connector Enhancements",
+          "summary": "The latest release of Config Connector introduces side-by-side comparison for controllers via `config-connector preview` and a new flag to skip name validation during controller registration."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Bug Fixes:\n\n* Added CRD filtering for the preview recorder to skip non-CNRM objects.",
+        "summary": {
+          "title": "Recorder CRD Filtering Improved",
+          "summary": "The preview recorder has been updated to filter CRD objects, specifically excluding non-CNRM resources. This fix enhances the recorder's accuracy by focusing only on relevant objects."
+        }
+      }
+    ],
     "2026-03-10": [
       {
         "kind": "Breaking",

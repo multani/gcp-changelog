@@ -1,5 +1,17 @@
 # Bigtable
 
+## 2026-04-16
+
+### Feature
+
+You can stream messages from [Pub/Sub](https://docs.cloud.google.com/pubsub/docs/subscription-overview)
+directly to a Bigtable table using
+[Bigtable subscriptions](https://docs.cloud.google.com/pubsub/docs/bigtable-subscriptions). This feature lets
+you write streaming messages to Bigtable without needing a separate subscriber
+such as Dataflow. This feature is available in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-04-15
 
 ### Feature

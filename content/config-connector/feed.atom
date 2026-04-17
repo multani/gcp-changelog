@@ -2,9 +2,87 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Config Connector</title>
   <subtitle>Changelog for Google Cloud product: Config Connector</subtitle>
-  <updated>2026-03-10T00:00:00+00:00</updated>
+  <updated>2026-03-25T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:config-connector</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/config-connector/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-03-25:announcement:0</id>
+    <published>2026-03-25T00:00:00+00:00</published>
+    <updated>2026-03-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.147.1 is now available.</p>]]></content>
+    <summary>Config Connector version 1.147.1 has been released. This update includes new features and improvements.</summary>
+    <title>Announcement: Config Connector 1.147.1 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-03-25:feature:1</id>
+    <published>2026-03-25T00:00:00+00:00</published>
+    <updated>2026-03-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Alpha Resources (Direct Reconciler):</p>
+<ul>
+<li><code>CloudDeployCustomTargetType</code></li>
+<li>Please replace any instances of the <code>DeployCustomTargetType</code> resource with the new <code>CloudDeployCustomTargetType</code> (v1alpha1) resource.</li>
+</ul>]]></content>
+    <summary>Introducing new Alpha resources, including the CloudDeployCustomTargetType. Please update your configurations to use the new CloudDeployCustomTargetType (v1alpha1) resource, replacing any existing DeployCustomTargetType instances.</summary>
+    <title>Feature: New Alpha Resources Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-03-25:change:2</id>
+    <published>2026-03-25T00:00:00+00:00</published>
+    <updated>2026-03-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Reconciliation Improvements:</p>
+<ul>
+<li>Improved structured reporting diffs to provide better visibility into what changed during reconciliation for the following resources:</li>
+<li><code>BigQueryDataset</code></li>
+<li><code>BigQueryReservationAssignment</code></li>
+<li><code>BigQueryTable</code></li>
+<li><code>CertificateManagerDNSAuthorization</code></li>
+<li><code>CloudIdentityGroup</code></li>
+<li><code>DataformRepository</code></li>
+<li><code>MetastoreService</code></li>
+<li><code>PrivilegedAccessManagerEntitlement</code></li>
+<li><code>WorkflowsWorkflow</code></li>
+</ul>]]></content>
+    <summary>We've improved structured reporting diffs for reconciliation. This change offers better visibility into what changed for a variety of BigQuery and other resources during reconciliation.</summary>
+    <title>Change: Reconciliation reporting enhanced</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-03-25:feature:3</id>
+    <published>2026-03-25T00:00:00+00:00</published>
+    <updated>2026-03-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New features:</p>
+<ul>
+<li>Enhanced <code>config-connector preview</code> to support side-by-side comparison between default and alternative controllers.</li>
+<li>Added a <code>--skip-name-validation</code> flag to Config Connector controllers to bypass duplicate controller name checks during registration.</li>
+</ul>]]></content>
+    <summary>The latest release of Config Connector introduces side-by-side comparison for controllers via `config-connector preview` and a new flag to skip name validation during controller registration.</summary>
+    <title>Feature: Config Connector Enhancements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-03-25:fixed:4</id>
+    <published>2026-03-25T00:00:00+00:00</published>
+    <updated>2026-03-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Bug Fixes:</p>
+<ul>
+<li>Added CRD filtering for the preview recorder to skip non-CNRM objects.</li>
+</ul>]]></content>
+    <summary>The preview recorder has been updated to filter CRD objects, specifically excluding non-CNRM resources. This fix enhances the recorder's accuracy by focusing only on relevant objects.</summary>
+    <title>Fixed: Recorder CRD Filtering Improved</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,12 @@
 # Cloud Run
 
+## 2026-04-16
+
+### Feature
+
+Support for specifying custom CPU or concurrency targets using [scaling controls](https://docs.cloud.google.com/run/docs/configuring/scaling-controls) is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-04-15
 
 ### Feature

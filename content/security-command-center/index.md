@@ -1,5 +1,23 @@
 # Security Command Center
 
+## 2026-04-16
+
+### Feature
+
+[AI Protection](https://docs.cloud.google.com/security-command-center/docs/ai-protection-overview) supports
+agentic workloads in [Preview](https://cloud.google.com/products#product-launch-stages),
+including [Vertex AI Agent Engine](https://docs.cloud.google.com/agent-builder/agent-engine/overview)
+and Model Context Protocol (MCP) servers. This update includes the following:
+
+* **Agent vulnerability scanner**: Identifies software vulnerabilities (CVEs)
+  in workloads deployed with Agent Engine.
+* **Expanded detection and controls**: Includes new threat detection findings
+  and recommended security controls for AI agents and MCP servers.
+* **Enhanced inventory and filtering**: Provides an updated [AI security
+  dashboard](https://docs.cloud.google.com/security-command-center/docs/assess-risk#ai-protection) view and new
+  filtering options for agentic resources in the [console](https://docs.cloud.google.com/security-command-center/docs/work-with-resources-in-the-console).
+
+---
 ## 2026-04-15
 
 ### Change

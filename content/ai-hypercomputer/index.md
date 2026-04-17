@@ -1,5 +1,36 @@
 # AI Hypercomputer
 
+## 2026-04-16
+
+### Feature
+
+**Generally available**: The AI Hypercomputer documentation includes support for
+the A3 Mega and A3 High machine types. The addition of A3 Mega and A3 High
+expand the available compute options for training and serving large-scale AI
+models on Google Kubernetes Engine (GKE) and Compute Engine.
+
+To support this effort, several new pages have been added and existing pages
+updated in the AI Hypercomputer documentation where relevant. These updates
+provide comprehensive guidance for deploying, managing, and optimizing the A3
+Mega and A3 High machine types within the AI Hypercomputer stack.
+
+New documentation pages include the following:
+
+* [Create an AI-optimized instance with A3 High or A3 Mega](https://docs.cloud.google.com/ai-hypercomputer/docs/create/create-vm-a3-high-mega)
+* [Create AI-optimized instances in bulk with A3 High or A3 Mega](https://docs.cloud.google.com/ai-hypercomputer/docs/create/create-vms-in-bulk-a3-high-mega)
+* [Create GKE Autopilot clusters which use A3 Mega or A3 High](https://docs.cloud.google.com/ai-hypercomputer/docs/create/gke-ai-hypercompute-autopilot-a3-high-mega)
+* [Create GKE Standard clusters which use A3 Mega or A3 High](https://docs.cloud.google.com/ai-hypercomputer/docs/create/gke-ai-hypercompute-standard-a3-high-mega)
+* [Run NCCL on custom GKE clusters that use A3 Mega and A3 High](https://docs.cloud.google.com/ai-hypercomputer/docs/nccl/test-gke-custom-a3-mega-high)
+
+**Note:** [Cluster management capabilities](https://docs.cloud.google.com/ai-hypercomputer/docs/cluster-capabilities)
+aren't supported for A3 Mega or A3 High VMs that you created before October 1,
+2025. To check if your A3 Mega or A3 High VMs have cluster management
+capabilities, verify that the `deploymentType` field in the reservation that you
+used to create the VMs is set to [DENSE](https://docs.cloud.google.com/ai-hypercomputer/docs/view-reserved-capacity#view-reservation).
+For more information about using A3 Mega or A3 High VMs in a cluster, contact
+your account team.
+
+---
 ## 2026-03-02
 
 ### Feature

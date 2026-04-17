@@ -1,5 +1,55 @@
 # Google Distributed Cloud (software only) for VMware
 
+## 2026-04-15
+
+### Announcement
+
+Google Distributed Cloud (software only) for VMware 1.34.300-gke.59 is now available
+for download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).
+Google Distributed Cloud 1.34.300-gke.59 runs on Kubernetes v1.34.3-gke.400.
+
+If you are using a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.
+
+### Fixed
+
+The following issues were fixed in 1.34.300-gke.59:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
+* Fixed an issue where upgrading to an Advanced Cluster caused an unexpected -np suffix
+  to be appended to node pool labels (such as cloud.google.com/gke-nodepool). This could
+  prevent pods from being scheduled on the correct nodes if they rely on node selectors
+  with exact matches for these labels.
+* Fixed an issue where setting the deprecated `stackdriver.enableVPC` field to `true` in
+  a cluster configuration file blocked upgrades to an Advanced Cluster. This field has no
+  current function, and the upgrade validation now ignores it, allowing
+  upgrades to proceed.
+* Fixed an issue where, during migration to Advanced Clusters, a new version of the
+  node-problem-detector was incorrectly deployed onto existing non-Advanced (V1) nodes.
+  Because its health check logic was incompatible with these older nodes, it repeatedly
+  restarted the container runtime (containerd), causing cluster upgrade failures.
+* Fixed an issue where retrying the `gkectl upgrade admin` command after a previous
+  failure failed with `AlreadyExists` errors (such as failing to create the credential
+  namespace) in the bootstrap cluster. The command was updated to automatically
+  handle resources left over from a previous attempt, making it safe to retry directly
+  and eliminating the need for manual cleanup.
+* Fixed an issue where cluster creation or upgrade failed if the proxy or
+  noProxy configuration fields contained leading or trailing whitespaces. These spaces
+  resulted in malformed arguments for the control plane load balancer initialization
+  job, causing the control plane load balancer initialization to fail.
+* Fixed an issue where the system certificate pool was ignored when a custom CA certificate
+  was configured for a registry mirror. This caused image pull failures (such as `certificate
+  signed by unknown authority` when pulling the Kind image) during cluster upgrades.
+* Fixed an issue where if updates or upgrades to advanced admin clusters failed and the external
+  bootstrap cluster was deleted, you could lose critical data related to cluster state (not user workload
+  data).
+
+---
 ## 2026-03-27
 
 ### Fixed

@@ -1,5 +1,47 @@
 # Config Connector
 
+## 2026-03-25
+
+### Announcement
+
+Config Connector version 1.147.1 is now available.
+
+### Feature
+
+New Alpha Resources (Direct Reconciler):
+
+* `CloudDeployCustomTargetType`
+  + Please replace any instances of the `DeployCustomTargetType` resource with the new `CloudDeployCustomTargetType` (v1alpha1) resource.
+
+### Change
+
+Reconciliation Improvements:
+
+* Improved structured reporting diffs to provide better visibility into what changed during reconciliation for the following resources:
+  + `BigQueryDataset`
+  + `BigQueryReservationAssignment`
+  + `BigQueryTable`
+  + `CertificateManagerDNSAuthorization`
+  + `CloudIdentityGroup`
+  + `DataformRepository`
+  + `MetastoreService`
+  + `PrivilegedAccessManagerEntitlement`
+  + `WorkflowsWorkflow`
+
+### Feature
+
+New features:
+
+* Enhanced `config-connector preview` to support side-by-side comparison between default and alternative controllers.
+* Added a `--skip-name-validation` flag to Config Connector controllers to bypass duplicate controller name checks during registration.
+
+### Fixed
+
+Bug Fixes:
+
+* Added CRD filtering for the preview recorder to skip non-CNRM objects.
+
+---
 ## 2026-03-10
 
 ### Breaking

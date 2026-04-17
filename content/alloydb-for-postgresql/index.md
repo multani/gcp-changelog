@@ -1,5 +1,68 @@
 # AlloyDB for PostgreSQL
 
+## 2026-04-16
+
+### Announcement
+
+The following vector search improvements are now available in
+[Preview](https://cloud.google.com/products#product-launch-stages):
+
+* AlloyDB now supports Vector assist. Vector assist is an
+  AlloyDB extension that simplifies the deployment and management of your
+  AlloyDB vector workloads. It helps you set up production-ready vector search
+  capabilities, such as embedding generation, query optimization, and index
+  creation for vector types like HNSW. For more information about vector
+  assist, how it works, and its limitations, see
+  [Vector assist overview](https://docs.cloud.google.com/alloydb/docs/ai/vector-assist-overview).
+* You can now defer ScaNN index creation on an empty table or a table with
+  insufficient rows until the table has sufficient data. For more information,
+  see [Create a ScaNN index](https://docs.cloud.google.com/alloydb/docs/ai/create-scann-index#deferred-index-creation-for-empty-tables-insufficient-rows).
+* The `alloydb_scann` extension now supports four-level tree indexes,
+  providing support for tables with up to 10 billion vector rows. For more
+  information, see [Four-level ScaNN tree
+  indexes](https://docs.cloud.google.com/alloydb/docs/ai/create-scann-index#create-scann-index-manual).
+
+### Feature
+
+Adaptive filtering from inline filtering to pre-filtering is now generally
+available ([GA](https://cloud.google.com/products#product-launch-stages)).
+With AlloyDB AI, you can use adaptive filtering to optimize filtered
+vector searches. This feature enables the query optimizer to use cost-based
+analysis to dynamically choose the most efficient filtering strategy—either
+inline filtering or pre-filtering—based on real-time data distributions. This
+improves filtered vector search performance without requiring manual tuning or
+intervention. Note that the feature adaptive filtering from pre-filtering to inline
+filtering is still in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [Understand adaptive filtering in AlloyDB AI](https://docs.cloud.google.com/alloydb/docs/ai/adaptive-filtering).
+
+### Announcement
+
+The `alloydb_scann` extension is updated to include the following
+vector search improvements. These features are generally available
+([GA](https://cloud.google.com/products#product-launch-stages)):
+
+* By default, new ScaNN vector index builds are automatically tuned.
+  Manually-tuned indexes can be converted to automatically-tuned indexes. For
+  more information, see [Create a ScaNN
+  index](https://docs.cloud.google.com/alloydb/docs/ai/create-scann-index).
+* You can now automatically maintain your ScaNN vector indexes. AlloyDB
+  incrementally manages your index such that when your dataset grows, AlloyDB
+  updates centroids and splits large outlier partitions to provide better QPS
+  and search results. For more information, see [Maintain indexes
+  automatically](https://docs.cloud.google.com/alloydb/docs/ai/maintain-vector-indexes#maintain-index-automatically).
+
+---
+## 2026-04-15
+
+### Feature
+
+The AlloyDB for PostgreSQL index advisor is enabled by default. It provides vector
+search index recommendations for Scalable Nearest Neighbors (ScaNN) indexes. For
+more information, see [Use the index advisor](https://docs.cloud.google.com/alloydb/docs/use-index-advisor).
+
+---
 ## 2026-04-14
 
 ### Breaking

@@ -1,6 +1,24 @@
 {
   "name": "Google Distributed Cloud (software only) for VMware",
   "entries": {
+    "2026-04-15": [
+      {
+        "kind": "Announcement",
+        "content": "Google Distributed Cloud (software only) for VMware 1.34.300-gke.59 is now available\nfor download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).\nGoogle Distributed Cloud 1.34.300-gke.59 runs on Kubernetes v1.34.3-gke.400.\n\nIf you are using a third-party storage vendor, check the Google Distributed Cloud-ready\nstorage partners document to make sure the storage vendor has already passed the\nqualification for this release.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for use with GKE On-Prem API clients: the Google Cloud console, the\ngcloud CLI, and Terraform.",
+        "summary": {
+          "title": "New software version available",
+          "summary": "Google Distributed Cloud for VMware 1.34.300-gke.59 is now available for download. Check storage partner compatibility and note the rollout period for API clients."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.34.300-gke.59:\n\n* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).\n* Fixed an issue where upgrading to an Advanced Cluster caused an unexpected -np suffix\n  to be appended to node pool labels (such as cloud.google.com/gke-nodepool). This could\n  prevent pods from being scheduled on the correct nodes if they rely on node selectors\n  with exact matches for these labels.\n* Fixed an issue where setting the deprecated `stackdriver.enableVPC` field to `true` in\n  a cluster configuration file blocked upgrades to an Advanced Cluster. This field has no\n  current function, and the upgrade validation now ignores it, allowing\n  upgrades to proceed.\n* Fixed an issue where, during migration to Advanced Clusters, a new version of the\n  node-problem-detector was incorrectly deployed onto existing non-Advanced (V1) nodes.\n  Because its health check logic was incompatible with these older nodes, it repeatedly\n  restarted the container runtime (containerd), causing cluster upgrade failures.\n* Fixed an issue where retrying the `gkectl upgrade admin` command after a previous\n  failure failed with `AlreadyExists` errors (such as failing to create the credential\n  namespace) in the bootstrap cluster. The command was updated to automatically\n  handle resources left over from a previous attempt, making it safe to retry directly\n  and eliminating the need for manual cleanup.\n* Fixed an issue where cluster creation or upgrade failed if the proxy or\n  noProxy configuration fields contained leading or trailing whitespaces. These spaces\n  resulted in malformed arguments for the control plane load balancer initialization\n  job, causing the control plane load balancer initialization to fail.\n* Fixed an issue where the system certificate pool was ignored when a custom CA certificate\n  was configured for a registry mirror. This caused image pull failures (such as `certificate\n  signed by unknown authority` when pulling the Kind image) during cluster upgrades.\n* Fixed an issue where if updates or upgrades to advanced admin clusters failed and the external\n  bootstrap cluster was deleted, you could lose critical data related to cluster state (not user workload\n  data).",
+        "summary": {
+          "title": "Maintenance release 1.34.300-gke.59 fixes multiple issues",
+          "summary": "Version 1.34.300-gke.59 addresses various vulnerabilities and resolves issues related to node pool labels, cluster upgrades, and component deployments. It also improves the reliability of upgrade and creation commands by handling existing resources and proxy configurations more robustly."
+        }
+      }
+    ],
     "2026-03-27": [
       {
         "kind": "Fixed",

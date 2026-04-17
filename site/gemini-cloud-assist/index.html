@@ -2400,12 +2400,30 @@
 
 
 <h1 id="gemini-cloud-assist">Gemini Cloud Assist</h1>
+<h2 id="2026-04-16">2026-04-16</h2>
+<h3 id="announcement">Announcement</h3>
+<h3 id="geminicloudassist-api-automatically-enabled-for-gemini-cloud-assist-chat-users">geminicloudassist API automatically enabled for Gemini Cloud Assist chat users</h3>
+<p>As of April 16th, 2026, the <code>geminicloudassist.googleapis.com</code> API has been
+automatically enabled on projects that meet <strong>all</strong> of the following criteria:</p>
+<ul>
+<li>Had used <a href="https://docs.cloud.google.com/cloud-assist/chat-panel">Gemini Cloud Assist chat</a> in the prior
+  60 days.</li>
+<li>Had the <code>cloudaicompanion.googleapis.com</code> API enabled on April 16, 2026.</li>
+<li>Did not have the <code>geminicloudassist.googleapis.com</code> API enabled on
+  April 16, 2026.</li>
+</ul>
+<p>The Gemini Cloud Assist chat functionality that was previously served by
+<code>cloudaicompanion.googleapis.com</code> is now served by
+<code>geminicloudassist.googleapis.com</code>, and both APIs are dependencies to use
+Gemini Cloud Assist. This automatic API enablement ensures that users have
+access to the same functionality without any loss of service.</p>
+<hr />
 <h2 id="2026-04-08">2026-04-08</h2>
 <h3 id="custom-iam-roles-permission-update-for-gemini-cloud-assist">Custom IAM roles permission update for Gemini Cloud Assist</h3>
 <p>Gemini Cloud Assist has replaced the <code>cloudaicompanion.instances.completeTask</code>
-IAM permission with <code>geminicloudassist.agents.invoke</code>. If you have access to
-Gemini Cloud Assist through a custom IAM role, you must update the role to
-continue having access. For more information, see the
+IAM permission with <code>geminicloudassist.agents.invoke</code>. If you
+have access to Gemini Cloud Assist through a custom IAM role,
+you must update the role to continue having access. For more information, see the
 <a href="https://docs.cloud.google.com/cloud-assist/deprecations/permissions">deprecated IAM permissions</a>
 page.</p>
 <hr />
@@ -2413,10 +2431,10 @@ page.</p>
 <h3 id="custom-iam-roles-permission-update-for-gemini-cloud-assist_1">Custom IAM roles permission update for Gemini Cloud Assist</h3>
 <p>On April 8, 2026, Gemini Cloud Assist is replacing the
 <code>cloudaicompanion.instances.completeTask</code> IAM permission with
-<code>geminicloudassist.agents.invoke</code>. Updates to standard IAM roles will be done
-automatically, but if you have access to Gemini Cloud Assist through a custom
-IAM role, you must update the role before April 8, 2026 to ensure continued
-access. For more information, see the
+<code>geminicloudassist.agents.invoke</code>. Updates to standard IAM roles
+will be done automatically, but if you have access to Gemini Cloud Assist
+through a custom IAM role, you must update the role before
+April 8, 2026 to ensure continued access. For more information, see the
 <a href="https://docs.cloud.google.com/cloud-assist/deprecations/permissions">deprecated IAM permissions</a>
 page.</p>
 <hr />
@@ -2436,6 +2454,9 @@ see the <a href="https://docs.cloud.google.com/gemini/docs/release-notes">Gemini
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#gemini-cloud-assist">Gemini Cloud Assist</a></li>
+          <li class="nav-item">
+            <a href="#2026-04-16" class="nav-link">2026-04-16</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-04-08" class="nav-link">2026-04-08</a>
           </li>

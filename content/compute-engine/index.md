@@ -1,5 +1,31 @@
 # Compute Engine
 
+## 2026-04-16
+
+### Feature
+
+**Generally available**: To ensure data consistency when backing up multiple disks,
+you can use consistency groups of instant snapshots to back up a group of disks at
+the same point in time.
+
+For more information, see
+[About instant snapshots](https://docs.cloud.google.com/compute/docs/disks/instant-snapshots).
+
+### Feature
+
+**Generally available**: You can rotate the customer-managed encryption key
+(CMEK) used to encrypt a disk, standard snapshot, or archive snapshot to a new key version without
+downtime.
+
+**Generally available**: You can change the CMEK used to encrypt a disk, standard
+snapshot, or archive snapshot to a different key without downtime.
+
+For more information, see
+[Rotate the CMEK for a disk or standard snapshot](https://docs.cloud.google.com/compute/docs/disks/customer-managed-encryption#rotate_encryption)
+and
+[Change the CMEK for a disk or standard snapshot](https://docs.cloud.google.com/compute/docs/disks/customer-managed-encryption#change-key).
+
+---
 ## 2026-04-15
 
 ### Announcement

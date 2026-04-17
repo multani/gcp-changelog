@@ -2,9 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: AI Hypercomputer</title>
   <subtitle>Changelog for Google Cloud product: AI Hypercomputer</subtitle>
-  <updated>2026-03-02T00:00:00+00:00</updated>
+  <updated>2026-04-16T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:ai-hypercomputer</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/ai-hypercomputer/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:ai-hypercomputer:2026-04-16:feature:0</id>
+    <published>2026-04-16T00:00:00+00:00</published>
+    <updated>2026-04-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Generally available</strong>: The AI Hypercomputer documentation includes support for
+the A3 Mega and A3 High machine types. The addition of A3 Mega and A3 High
+expand the available compute options for training and serving large-scale AI
+models on Google Kubernetes Engine (GKE) and Compute Engine.</p>
+<p>To support this effort, several new pages have been added and existing pages
+updated in the AI Hypercomputer documentation where relevant. These updates
+provide comprehensive guidance for deploying, managing, and optimizing the A3
+Mega and A3 High machine types within the AI Hypercomputer stack.</p>
+<p>New documentation pages include the following:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/ai-hypercomputer/docs/create/create-vm-a3-high-mega">Create an AI-optimized instance with A3 High or A3 Mega</a></li>
+<li><a href="https://docs.cloud.google.com/ai-hypercomputer/docs/create/create-vms-in-bulk-a3-high-mega">Create AI-optimized instances in bulk with A3 High or A3 Mega</a></li>
+<li><a href="https://docs.cloud.google.com/ai-hypercomputer/docs/create/gke-ai-hypercompute-autopilot-a3-high-mega">Create GKE Autopilot clusters which use A3 Mega or A3 High</a></li>
+<li><a href="https://docs.cloud.google.com/ai-hypercomputer/docs/create/gke-ai-hypercompute-standard-a3-high-mega">Create GKE Standard clusters which use A3 Mega or A3 High</a></li>
+<li><a href="https://docs.cloud.google.com/ai-hypercomputer/docs/nccl/test-gke-custom-a3-mega-high">Run NCCL on custom GKE clusters that use A3 Mega and A3 High</a></li>
+</ul>
+<p><strong>Note:</strong> <a href="https://docs.cloud.google.com/ai-hypercomputer/docs/cluster-capabilities">Cluster management capabilities</a>
+aren't supported for A3 Mega or A3 High VMs that you created before October 1,
+2025. To check if your A3 Mega or A3 High VMs have cluster management
+capabilities, verify that the <code>deploymentType</code> field in the reservation that you
+used to create the VMs is set to <a href="https://docs.cloud.google.com/ai-hypercomputer/docs/view-reserved-capacity#view-reservation">DENSE</a>.
+For more information about using A3 Mega or A3 High VMs in a cluster, contact
+your account team.</p>]]></content>
+    <summary>The AI Hypercomputer documentation now supports the A3 Mega and A3 High machine types, expanding compute options for large-scale AI model training and serving on GKE and Compute Engine. New documentation guides users on deploying and managing these powerful new instances.</summary>
+    <title>Feature: New AI Hypercomputer machine types available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

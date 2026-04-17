@@ -1,6 +1,36 @@
 # BigQuery
 
+## 2026-04-16
+
+### Feature
+
+You can now use [Colab Data Apps](https://docs.cloud.google.com/bigquery/docs/colab-data-apps)
+to transform your data analyses from Colab notebooks into
+polished, interactive applications.
+
+This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+You can now use the
+[`AI.KEY_DRIVERS` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-key-drivers)
+to identify segments of data that cause statistically significant changes to a
+summable metric.
+
+This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-04-15
+
+### Feature
+
+BigQuery Apache Iceberg external tables now support
+[Iceberg version 3](https://iceberg.apache.org/spec/#version-3-extended-types-and-capabilities),
+including binary deletion vectors. For more information, see
+[Apache Iceberg external tables](https://docs.cloud.google.com/bigquery/docs/iceberg-external-tables).
+This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
 
 ### Feature
 

@@ -1,14 +1,44 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-04-15
+
+### Announcement
+
+Google Distributed Cloud (software only) for bare metal 1.34.300-gke.59 is now available for
+download. To upgrade, see [Upgrade clusters](how-to/upgrade).
+Google Distributed Cloud for bare metal
+1.34.300-gke.59 runs on Kubernetes v1.34.3-gke.400.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release of Google Distributed Cloud for bare metal.
+
+### Fixed
+
+The following issues were fixed in 1.34.300-gke.59:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities)
+* Cluster and node pool failures are now surfaced in the `RecentFailures` field
+  in the cluster status. This change provides a centralized location for viewing
+  errors from both worker node pools and control plane nodes, improving the
+  troubleshooting and debugging experience.
+* Fixed an issue where Metrics API operations—including
+  `kubectl top`, Horizontal Pod Autoscaling (HPA), and Vertical Pod Autoscaling
+  (VPA)—could fail with TLS verification errors during CA rotation.
+
+---
 ## 2026-03-27
 
 ### Fixed
 
 The following issues were fixed in 1.32.1000-gke.57:
 
-* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/version-history).
-* Cluster and
-  node pool failures are now surfaced in the `RecentFailures` field
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
+* Cluster and node pool failures are now surfaced in the `RecentFailures` field
   in the cluster status. This change provides a centralized location for viewing
   errors from both worker node pools and control plane nodes, improving the
   troubleshooting and debugging experience.
@@ -61,7 +91,7 @@ The following issues were fixed in 1.33.600-gke.39:
   on self-managed clusters (admin, hybrid, or standalone). This fix resolves an
   internal resource synchronization error that previously prevented the rotation
   process from completing successfully.
-* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/version-history).
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
 
 ---
 ## 2026-03-18
@@ -85,7 +115,7 @@ qualification for this release of Google Distributed Cloud for bare metal.
 
 The following issues were fixed in 1.34.200-gke.68:
 
-* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/version-history).
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
 
 ---
 ## 2026-03-05

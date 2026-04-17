@@ -27,6 +27,24 @@ the same point in time.</p>
     <id>urn:github:multani:gcp-changelog:compute-engine:2026-04-16:feature:1</id>
     <published>2026-04-16T00:00:00+00:00</published>
     <updated>2026-04-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Preview</strong>: You can specify a 120-second preemption notice duration while
+creating Spot VMs. Use this feature for workloads on Spot VMs
+where you want up to an additional 120 seconds for handling preemption. If you
+want to migrate existing Spot VMs workloads, make sure you update
+your workload to handle preemption outside of a shutdown script and test
+preemption. For more information, see
+<a href="https://docs.cloud.google.com/compute/docs/instances/spot#preemption-notice-duration">Spot VMs</a>
+and <a href="https://docs.cloud.google.com/compute/docs/instances/create-use-spot">Create and use Spot VMs</a>.</p>]]></content>
+    <summary>You can now specify a 120-second preemption notice duration for Spot VMs. This extended notice allows more time for workloads to handle preemption, improving resilience. Ensure your workloads are updated to manage preemption effectively outside of shutdown scripts.</summary>
+    <title>Feature: Spot VM preemption notice extended</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2026-04-16:feature:2</id>
+    <published>2026-04-16T00:00:00+00:00</published>
+    <updated>2026-04-16T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Generally available</strong>: You can rotate the customer-managed encryption key
 (CMEK) used to encrypt a disk, standard snapshot, or archive snapshot to a new key version without
 downtime.</p>

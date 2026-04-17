@@ -12,6 +12,14 @@
       },
       {
         "kind": "Feature",
+        "content": "**Preview**: You can specify a 120-second preemption notice duration while\ncreating Spot VMs. Use this feature for workloads on Spot VMs\nwhere you want up to an additional 120 seconds for handling preemption. If you\nwant to migrate existing Spot VMs workloads, make sure you update\nyour workload to handle preemption outside of a shutdown script and test\npreemption. For more information, see\n[Spot VMs](https://docs.cloud.google.com/compute/docs/instances/spot#preemption-notice-duration)\nand [Create and use Spot VMs](https://docs.cloud.google.com/compute/docs/instances/create-use-spot).",
+        "summary": {
+          "title": "Spot VM preemption notice extended",
+          "summary": "You can now specify a 120-second preemption notice duration for Spot VMs. This extended notice allows more time for workloads to handle preemption, improving resilience. Ensure your workloads are updated to manage preemption effectively outside of shutdown scripts."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "**Generally available**: You can rotate the customer-managed encryption key\n(CMEK) used to encrypt a disk, standard snapshot, or archive snapshot to a new key version without\ndowntime.\n\n**Generally available**: You can change the CMEK used to encrypt a disk, standard\nsnapshot, or archive snapshot to a different key without downtime.\n\nFor more information, see\n[Rotate the CMEK for a disk or standard snapshot](https://docs.cloud.google.com/compute/docs/disks/customer-managed-encryption#rotate_encryption)\nand\n[Change the CMEK for a disk or standard snapshot](https://docs.cloud.google.com/compute/docs/disks/customer-managed-encryption#change-key).",
         "summary": {
           "title": "Rotate and change disk encryption keys",

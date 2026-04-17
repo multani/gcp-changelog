@@ -4,6 +4,15 @@
 
 ### Feature
 
+[Conversational analytics](https://docs.cloud.google.com/bigquery/docs/conversational-analytics) now supports
+querying Lakehouse tables that connect to the Apache Iceberg REST catalog or are
+federated to an external catalog. For more information, see [Query BigLake data
+with natural language](https://docs.cloud.google.com/biglake/docs/conversational-analytics).
+
+This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
 You can now use [Colab Data Apps](https://docs.cloud.google.com/bigquery/docs/colab-data-apps)
 to transform your data analyses from Colab notebooks into
 polished, interactive applications.

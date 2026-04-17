@@ -2,10 +2,6 @@
 
 ## 2026-04-16
 
-### Announcement
-
-
-
 ### geminicloudassist API automatically enabled for Gemini Cloud Assist chat users
 
 As of April 16th, 2026, the `geminicloudassist.googleapis.com` API has been

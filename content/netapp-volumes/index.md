@@ -1,5 +1,25 @@
 # NetApp Volumes
 
+## 2026-04-17
+
+### Feature
+
+The ONTAP-mode for the Flex Unified pools is generally available (GA). For more
+information about this new mode, see [About ONTAP-mode](https://docs.cloud.google.com/netapp/volumes/docs/ontap/overview#about_ontap-mode).
+
+### Feature
+
+Google Cloud NetApp Volumes Flex Unified service level is generally available
+(GA) for NFS, SMB, and NVMe/TCP protocols. For more information,
+see [Key features](https://docs.cloud.google.com/netapp/volumes/docs/discover/overview#key_features).
+
+### Feature
+
+The large capacity volumes feature, a file-only solution with NFS and SMB
+protocols for massive datasets, is generally available (GA) for the Flex Unified
+service level. For more information, see [Large capacity volumes](https://docs.cloud.google.com/netapp/volumes/docs/configure-and-use/volumes/overview#large-capacity-volumes).
+
+---
 ## 2026-03-02
 
 ### Feature

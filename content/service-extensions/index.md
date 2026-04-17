@@ -1,5 +1,20 @@
 # Service Extensions
 
+## 2026-04-17
+
+### Feature
+
+You can use authorization extensions to insert custom services directly into
+the Secure Web Proxy processing path. This feature is in **Preview**. For more
+information, see
+[Callouts for Secure Web Proxy](https://docs.cloud.google.com/service-extensions/docs/swp-extensions-overview).
+
+### Feature
+
+[Authorization extensions](https://docs.cloud.google.com/service-extensions/docs/lb-extensions-overview#authorization-extensions)
+support authorization policy request and content profiles in **Preview**.
+
+---
 ## 2026-04-10
 
 ### Feature

@@ -26,6 +26,36 @@ server lets you manage Cloud Composer environments and get details about
 executed DAG runs and Airflow tasks.
 
 ---
+## 2026-04-10
+
+### Fixed
+
+Fixed a problem with missing DAG description and schedule in the DAG UI which
+occurred in environments with Airflow 3 in some cases.
+
+Fixed an issue where DAG descriptions and schedules occasionally weren't
+displayed in DAG UI for environments with Airflow 3.
+
+### Change
+
+New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)
+are available in Cloud Composer 3:
+
+* [composer-3-airflow-3.1.7-build.4](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-7-build-4)
+* [composer-3-airflow-2.11.1-build.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-1)
+* [composer-3-airflow-2.10.5-build.34](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-34) (default)
+* [composer-3-airflow-2.9.3-build.54](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-54)
+
+### Change
+
+New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)
+are available in Cloud Composer 2:
+
+* [composer-2.16.11-airflow-2.11.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-11-airflow-2-11-1)
+* [composer-2.16.11-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-11-airflow-2-10-5) (default)
+* [composer-2.16.11-airflow-2.9.3](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-11-airflow-2-9-3)
+
+---
 ## 2026-04-01
 
 ### Feature

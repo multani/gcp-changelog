@@ -18,6 +18,19 @@ You can now build and run a Knowledge Catalog discovery agent to get more releva
 For more information, see [Build an agent to discover your data](https://cloud.google.com/dataplex/docs/use-discovery-agent).
 
 ---
+## 2026-04-16
+
+### Feature
+
+Data insights for unstructured data transforms dark data or
+unstructured files in the form of PDFs in Cloud Storage into structured,
+queryable assets. This feature is now available in
+[preview](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [About data insights for unstructured
+data](https://docs.cloud.google.com/dataplex/docs/data-insights-unstructured-data).
+
+---
 ## 2026-04-10
 
 ### Announcement

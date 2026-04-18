@@ -1,5 +1,14 @@
 # Pub/Sub
 
+## 2026-04-17
+
+### Feature
+
+The [Pub/Sub remote MCP server](https://docs.cloud.google.com/pubsub/docs/use-pubsub-mcp) is
+[generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
+
+---
 ## 2026-04-16
 
 ### Feature

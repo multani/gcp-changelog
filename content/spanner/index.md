@@ -1,5 +1,27 @@
 # Spanner
 
+## 2026-04-17
+
+### Feature
+
+Repeatable read isolation is [generally available](https://docs.cloud.google.com/products#product-launch-stages).
+You can use it to reduce latency and transaction failure rates for workloads
+that have many reads contending with fewer writes. For more information, see
+[Repeatable read isolation](https://docs.cloud.google.com/spanner/docs/isolation-levels#repeatable-read).
+
+### Feature
+
+Columnar engine for Spanner is now [generally available
+(GA)](https://cloud.google.com/products/#product-launch-stages). Columnar engine
+is a storage technique used with analytical queries to make scans up to 200
+times faster on live operational data without affecting transaction workloads.
+This release enables support for Columnar Engine in databases that use the
+[Postgres interface](https://docs.cloud.google.com/spanner/docs/configure-columnar-engine#enable-columnar-engine-postgres).
+
+For more information, see the
+[Columnar engine for Spanner overview](https://docs.cloud.google.com/spanner/docs/configure-columnar-engine#enable-columnar-engine-postgres).
+
+---
 ## 2026-04-13
 
 ### Feature
@@ -17,9 +39,15 @@ This feature is [generally available](https://docs.cloud.google.com/products#pro
 
 ### Feature
 
-The QueryData tool lets you to query the data in your database using conversational language and build data agents. For more information, see [QueryData tool overview](https://docs.cloud.google.com/spanner/docs/data-agent-overview). This feature is available in ([Preview](https://cloud.google.com/products#product-launch-stages)).
+The QueryData tool lets you to query the data in your database using
+conversational language and build data agents. For more information, see
+[QueryData tool overview](https://docs.cloud.google.com/spanner/docs/data-agent-overview). This
+feature is available in
+([Preview](https://cloud.google.com/products#product-launch-stages)).
 
-The preview release increases the accuracy of SQL generation with value search queries which match values and their context within a database. Value search queries trigger automatically.
+The preview release increases the accuracy of SQL generation with value search
+queries which match values and their context within a database. Value search
+queries trigger automatically.
 
 ---
 ## 2026-03-30

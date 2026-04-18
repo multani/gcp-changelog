@@ -1,5 +1,19 @@
 # BigQuery
 
+## 2026-04-17
+
+### Feature
+
+Using
+[folders](https://docs.cloud.google.com/bigquery/docs/code-asset-folders)
+to organize and control access to single file code assets is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA). In addition, you can perform bulk move and delete operations, refresh
+folder contents, and view full breadcrumb paths based on resource permissions.
+For more information, see
+[Create and manage folders](https://docs.cloud.google.com/bigquery/docs/create-manage-folders).
+
+---
 ## 2026-04-16
 
 ### Feature

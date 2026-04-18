@@ -2,9 +2,62 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: AlloyDB for PostgreSQL</title>
   <subtitle>Changelog for Google Cloud product: AlloyDB for PostgreSQL</subtitle>
-  <updated>2026-04-16T00:00:00+00:00</updated>
+  <updated>2026-04-17T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/alloydb-for-postgresql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql:2026-04-17:issue:0</id>
+    <published>2026-04-17T00:00:00+00:00</published>
+    <updated>2026-04-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>When querying your Elasticsearch data using
+<a href="https://docs.cloud.google.com/alloydb/docs/elastic-search#sql-query">standard SQL queries</a> and specifying an
+<code>OFFSET</code>, if the <code>OFFSET</code> gets pushed down, it gets applied twice. For example,
+if your SQL query contains <code>OFFSET 5</code>, AlloyDB tries
+to push the <code>OFFSET</code> down. Then, AlloyDB applies the
+<code>OFFSET</code> again when the results are returned.</p>]]></content>
+    <summary>A bug in Elasticsearch queries using standard SQL with OFFSET can lead to the offset being applied twice when pushed down. This results in incorrect data retrieval.</summary>
+    <title>Issue: Elasticsearch query offset issue</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql:2026-04-17:feature:1</id>
+    <published>2026-04-17T00:00:00+00:00</published>
+    <updated>2026-04-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>External search with AlloyDB now supports Elasticsearch in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
+<p>With this update, you can use the <code>external_search_fdw</code> extension to connect to Elasticsearch and perform hybrid searches within AlloyDB. This integration allows you to combine the capabilities of AlloyDB with Elasticsearch for advanced search scenarios. For more information, see <a href="https://docs.cloud.google.com/alloydb/docs/ai/search/access-elasticsearch-data-from-alloydb">Access Elasticsearch data from AlloyDB</a>.</p>]]></content>
+    <summary>External search with AlloyDB now supports Elasticsearch in Preview. Use the external_search_fdw extension to connect to Elasticsearch and perform hybrid searches within AlloyDB, combining its capabilities with Elasticsearch for advanced search scenarios.</summary>
+    <title>Feature: AlloyDB adds Elasticsearch support</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql:2026-04-17:announcement:2</id>
+    <published>2026-04-17T00:00:00+00:00</published>
+    <updated>2026-04-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following AlloyDB AI functions are available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>:</p>
+<ul>
+<li>You can now use AI function acceleration and the new <code>AI Function Apply</code> node to run faster queries with AI functions. This feature optimizes the execution of SQL queries that use the <code>ai.if</code> and <code>ai.rank</code> functions in PostgreSQL 17. For more information, see <a href="https://docs.cloud.google.com/alloydb/docs/ai/accelerate-ai-queries">Accelerate performance for queries with AI functions</a>.</li>
+<li>You can now use optimized AI functions to accelerate your AI queries while reducing operational costs. By training a smaller, faster proxy model on a sample
+  of your data, AlloyDB can process most AI queries locally and only fall back to a remote LLM when necessary. For more information, see <a href="https://docs.cloud.google.com/alloydb/docs/ai/accelerate-queries-optimized-functions">Accelerate queries using optimized functions</a>.</li>
+<li>
+<p>You can now use the sentiment analysis and summarization functions. These functions let you process and analyze unstructured data directly in your database:</p>
+</li>
+<li>
+<p><code>ai.analyze_sentiment</code>: classifies the emotional tone of text as positive, negative, or neutral, helping you analyze real-time customer feedback from thousands of raw, unstructured product reviews.</p>
+</li>
+<li><code>ai.summarize</code>: condenses lengthy text into its essential information. Use this to extract key decisions and action items from sources like meeting transcripts or technical documentation.</li>
+<li><code>ai.agg_summarize</code>: an aggregate function that processes multiple rows in a column to generate a single, unified summary for a group. For instance, you can summarize all reviews for a specific seller using a <code>GROUP BY</code> clause.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/alloydb/docs/ai/evaluate-sentiment">Evaluate sentiment</a> and <a href="https://docs.cloud.google.com/alloydb/docs/ai/summarize-content">Summarize content</a>.</p>]]></content>
+    <summary>New AI functions are now available in preview, enabling faster query execution and optimized AI query processing to reduce costs. You can also leverage sentiment analysis and summarization functions to process unstructured data directly within your database.</summary>
+    <title>Announcement: New AI functions for faster queries</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

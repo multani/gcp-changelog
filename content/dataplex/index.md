@@ -1,5 +1,23 @@
 # Dataplex
 
+## 2026-04-17
+
+### Feature
+
+Data quality now supports rule reusability. You can now define data quality
+rules as templates and reuse them across multiple catalog entries to standardize
+your data quality processes. You can also use a shared library of
+[system rule templates](https://docs.cloud.google.com/dataplex/docs/reuse-data-quality-rules#system-templates)
+for common data validation scenarios. For more information, see
+[Reuse data quality rules](https://docs.cloud.google.com/dataplex/docs/reuse-data-quality-rules).
+
+### Feature
+
+You can now build and run a Knowledge Catalog discovery agent to get more relevant search results for complex natural language queries.
+
+For more information, see [Build an agent to discover your data](https://cloud.google.com/dataplex/docs/use-discovery-agent).
+
+---
 ## 2026-04-10
 
 ### Announcement

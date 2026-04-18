@@ -1,5 +1,38 @@
 # AlloyDB for PostgreSQL
 
+## 2026-04-17
+
+### Issue
+
+When querying your Elasticsearch data using
+[standard SQL queries](https://docs.cloud.google.com/alloydb/docs/elastic-search#sql-query) and specifying an
+`OFFSET`, if the `OFFSET` gets pushed down, it gets applied twice. For example,
+if your SQL query contains `OFFSET 5`, AlloyDB tries
+to push the `OFFSET` down. Then, AlloyDB applies the
+`OFFSET` again when the results are returned.
+
+### Feature
+
+External search with AlloyDB now supports Elasticsearch in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+With this update, you can use the `external_search_fdw` extension to connect to Elasticsearch and perform hybrid searches within AlloyDB. This integration allows you to combine the capabilities of AlloyDB with Elasticsearch for advanced search scenarios. For more information, see [Access Elasticsearch data from AlloyDB](https://docs.cloud.google.com/alloydb/docs/ai/search/access-elasticsearch-data-from-alloydb).
+
+### Announcement
+
+The following AlloyDB AI functions are available in [Preview](https://cloud.google.com/products#product-launch-stages):
+
+* You can now use AI function acceleration and the new `AI Function Apply` node to run faster queries with AI functions. This feature optimizes the execution of SQL queries that use the `ai.if` and `ai.rank` functions in PostgreSQL 17. For more information, see [Accelerate performance for queries with AI functions](https://docs.cloud.google.com/alloydb/docs/ai/accelerate-ai-queries).
+* You can now use optimized AI functions to accelerate your AI queries while reducing operational costs. By training a smaller, faster proxy model on a sample
+  of your data, AlloyDB can process most AI queries locally and only fall back to a remote LLM when necessary. For more information, see [Accelerate queries using optimized functions](https://docs.cloud.google.com/alloydb/docs/ai/accelerate-queries-optimized-functions).
+* You can now use the sentiment analysis and summarization functions. These functions let you process and analyze unstructured data directly in your database:
+
+  + `ai.analyze_sentiment`: classifies the emotional tone of text as positive, negative, or neutral, helping you analyze real-time customer feedback from thousands of raw, unstructured product reviews.
+  + `ai.summarize`: condenses lengthy text into its essential information. Use this to extract key decisions and action items from sources like meeting transcripts or technical documentation.
+  + `ai.agg_summarize`: an aggregate function that processes multiple rows in a column to generate a single, unified summary for a group. For instance, you can summarize all reviews for a specific seller using a `GROUP BY` clause.
+
+  For more information, see [Evaluate sentiment](https://docs.cloud.google.com/alloydb/docs/ai/evaluate-sentiment) and [Summarize content](https://docs.cloud.google.com/alloydb/docs/ai/summarize-content).
+
+---
 ## 2026-04-16
 
 ### Announcement

@@ -1,6 +1,24 @@
 {
   "name": "Spanner",
   "entries": {
+    "2026-04-17": [
+      {
+        "kind": "Feature",
+        "content": "Repeatable read isolation is [generally available](https://docs.cloud.google.com/products#product-launch-stages).\nYou can use it to reduce latency and transaction failure rates for workloads\nthat have many reads contending with fewer writes. For more information, see\n[Repeatable read isolation](https://docs.cloud.google.com/spanner/docs/isolation-levels#repeatable-read).",
+        "summary": {
+          "title": "Repeatable read isolation now available",
+          "summary": "Repeatable read isolation is now generally available. This feature can help reduce latency and transaction failure rates for workloads with high read contention. Learn more about how it works in the documentation."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Columnar engine for Spanner is now [generally available\n(GA)](https://cloud.google.com/products/#product-launch-stages). Columnar engine\nis a storage technique used with analytical queries to make scans up to 200\ntimes faster on live operational data without affecting transaction workloads.\nThis release enables support for Columnar Engine in databases that use the\n[Postgres interface](https://docs.cloud.google.com/spanner/docs/configure-columnar-engine#enable-columnar-engine-postgres).\n\nFor more information, see the\n[Columnar engine for Spanner overview](https://docs.cloud.google.com/spanner/docs/configure-columnar-engine#enable-columnar-engine-postgres).",
+        "summary": {
+          "title": "Spanner Columnar Engine Now Generally Available",
+          "summary": "The columnar engine for Spanner is now generally available, offering up to 200x faster scans on live operational data for analytical queries. This feature is now supported for databases using the Postgres interface, enabling faster analytics without impacting transaction workloads."
+        }
+      }
+    ],
     "2026-04-13": [
       {
         "kind": "Feature",
@@ -14,10 +32,10 @@
     "2026-04-06": [
       {
         "kind": "Feature",
-        "content": "The QueryData tool lets you to query the data in your database using conversational language and build data agents. For more information, see [QueryData tool overview](https://docs.cloud.google.com/spanner/docs/data-agent-overview). This feature is available in ([Preview](https://cloud.google.com/products#product-launch-stages)).\n\nThe preview release increases the accuracy of SQL generation with value search queries which match values and their context within a database. Value search queries trigger automatically.",
+        "content": "The QueryData tool lets you to query the data in your database using\nconversational language and build data agents. For more information, see\n[QueryData tool overview](https://docs.cloud.google.com/spanner/docs/data-agent-overview). This\nfeature is available in\n([Preview](https://cloud.google.com/products#product-launch-stages)).\n\nThe preview release increases the accuracy of SQL generation with value search\nqueries which match values and their context within a database. Value search\nqueries trigger automatically.",
         "summary": {
-          "title": "Query data with natural language",
-          "summary": "Introducing the QueryData tool, now in Preview. You can now query your database using conversational language to build data agents. This feature automatically enhances SQL generation accuracy with value search queries."
+          "title": "Query your data with natural language",
+          "summary": "Introducing the QueryData tool, now in preview. This feature allows you to query your database using conversational language and build data agents. It enhances SQL generation accuracy with automatically triggered value search queries."
         }
       }
     ],

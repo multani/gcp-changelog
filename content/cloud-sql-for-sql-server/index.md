@@ -9,6 +9,17 @@ is generally available ([GA](https://cloud.google.com/products#product-launch-st
 The Cloud SQL remote MCP server lets you interact easily with Cloud SQL
 instances from LLMs, AI applications, and AI-enabled development platforms.
 
+### Feature
+
+You can use
+[DNS automation](https://docs.cloud.google.com/sql/docs/mysql/about-private-service-connect#dns-automation)
+on Cloud SQL instances where Private Service Connect is enabled to provision
+and manage per-instance DNS records automatically. On Enterprise Plus edition
+instances where DNS automation is enabled, you can also enable a global write
+endpoint DNS that automatically resolves to your current primary instance.
+
+This feature is in [Preview](https://docs.cloud.google.com/products#product-launch-stages).
+
 ---
 ## 2026-04-14
 

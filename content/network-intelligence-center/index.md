@@ -1,5 +1,14 @@
 # Network Intelligence Center
 
+## 2026-04-17
+
+### Feature
+
+You can use the [Network Management API](https://docs.cloud.google.com/network-intelligence-center/docs/reference/networkmanagement/mcp)
+remote Model Context Protocol (MCP) server to create, view, and delete
+[Connectivity Tests](https://docs.cloud.google.com/network-intelligence-center/docs/connectivity-tests/concepts/overview).
+
+---
 ## 2026-03-05
 
 ### Feature

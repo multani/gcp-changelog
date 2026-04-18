@@ -1,5 +1,15 @@
 # Cloud Workstations
 
+## 2026-04-06
+
+### Feature
+
+You can automatically redirect and restart stopped workstations by configuring
+the `workstation_launch_url` Workstation cluster field. To set a custom URL or
+use the built-in Google Cloud Console launcher,
+[update your cluster](https://docs.cloud.google.com/workstations/docs/create-cluster#workstation-cluster).
+
+---
 ## 2026-03-06
 
 ### Announcement

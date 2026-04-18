@@ -1,5 +1,18 @@
 # Security Command Center
 
+## 2026-04-17
+
+### Feature
+
+Through the
+[Application Design Center](https://docs.cloud.google.com/application-design-center/docs/overview),
+Security Command Center helps you perform proactive security assessments ([Preview](https://cloud.google.com/products/#product-launch-stages))
+throughout your application development lifecycle. This integration shows both
+design-time and runtime findings in Security Command Center. For more information, see
+[Application lifecycle security
+assessments](https://docs.cloud.google.com/security-command-center/docs/concepts-security-sources#application-security-assessments).
+
+---
 ## 2026-04-16
 
 ### Feature

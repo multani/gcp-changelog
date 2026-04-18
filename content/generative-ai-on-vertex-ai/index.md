@@ -1,5 +1,16 @@
 # Generative AI on Vertex AI
 
+## 2026-04-17
+
+### Feature
+
+**RAG Cross Corpus Retrieval**
+
+RAG Cross Corpus Retrieval is available in [public preview](https://cloud.google.com/products#product-launch-stages). This feature allows you to retrieve relevant contexts or generate answers from multiple RAG corpora simultaneously using the `AsyncRetrieveContexts` and `AskContexts` APIs.
+
+For more information, see [RAG Cross Corpus Retrieval](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/rag-engine/cross-corpus-retrieval).
+
+---
 ## 2026-04-14
 
 ### Feature

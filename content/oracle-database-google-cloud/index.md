@@ -1,5 +1,16 @@
 # Oracle Database@Google Cloud
 
+## 2026-04-17
+
+### Feature
+
+You can now use the [Oracle Database@Google Cloud remote MCP server](https://docs.cloud.google.com/oracle/database/docs/use-oracledatabase-mcp).
+The remote MCP server lets you interact easily with Oracle Database@Google Cloud resources
+from LLMs, AI applications, and AI-enabled development platforms.
+
+This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-03-31
 
 ### Feature

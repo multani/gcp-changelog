@@ -2,9 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Spanner</title>
   <subtitle>Changelog for Google Cloud product: Spanner</subtitle>
-  <updated>2026-04-13T00:00:00+00:00</updated>
+  <updated>2026-04-17T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:spanner</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/spanner/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2026-04-17:feature:0</id>
+    <published>2026-04-17T00:00:00+00:00</published>
+    <updated>2026-04-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Repeatable read isolation is <a href="https://docs.cloud.google.com/products#product-launch-stages">generally available</a>.
+You can use it to reduce latency and transaction failure rates for workloads
+that have many reads contending with fewer writes. For more information, see
+<a href="https://docs.cloud.google.com/spanner/docs/isolation-levels#repeatable-read">Repeatable read isolation</a>.</p>]]></content>
+    <summary>Repeatable read isolation is now generally available. This feature can help reduce latency and transaction failure rates for workloads with high read contention. Learn more about how it works in the documentation.</summary>
+    <title>Feature: Repeatable read isolation now available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2026-04-17:feature:1</id>
+    <published>2026-04-17T00:00:00+00:00</published>
+    <updated>2026-04-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Columnar engine for Spanner is now <a href="https://cloud.google.com/products/#product-launch-stages">generally available
+(GA)</a>. Columnar engine
+is a storage technique used with analytical queries to make scans up to 200
+times faster on live operational data without affecting transaction workloads.
+This release enables support for Columnar Engine in databases that use the
+<a href="https://docs.cloud.google.com/spanner/docs/configure-columnar-engine#enable-columnar-engine-postgres">Postgres interface</a>.</p>
+<p>For more information, see the
+<a href="https://docs.cloud.google.com/spanner/docs/configure-columnar-engine#enable-columnar-engine-postgres">Columnar engine for Spanner overview</a>.</p>]]></content>
+    <summary>The columnar engine for Spanner is now generally available, offering up to 200x faster scans on live operational data for analytical queries. This feature is now supported for databases using the Postgres interface, enabling faster analytics without impacting transaction workloads.</summary>
+    <title>Feature: Spanner Columnar Engine Now Generally Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -28,10 +60,16 @@ For more information, see
     <id>urn:github:multani:gcp-changelog:spanner:2026-04-06:feature:0</id>
     <published>2026-04-06T00:00:00+00:00</published>
     <updated>2026-04-06T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The QueryData tool lets you to query the data in your database using conversational language and build data agents. For more information, see <a href="https://docs.cloud.google.com/spanner/docs/data-agent-overview">QueryData tool overview</a>. This feature is available in (<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>).</p>
-<p>The preview release increases the accuracy of SQL generation with value search queries which match values and their context within a database. Value search queries trigger automatically.</p>]]></content>
-    <summary>Introducing the QueryData tool, now in Preview. You can now query your database using conversational language to build data agents. This feature automatically enhances SQL generation accuracy with value search queries.</summary>
-    <title>Feature: Query data with natural language</title>
+    <content type="html"><![CDATA[<p>The QueryData tool lets you to query the data in your database using
+conversational language and build data agents. For more information, see
+<a href="https://docs.cloud.google.com/spanner/docs/data-agent-overview">QueryData tool overview</a>. This
+feature is available in
+(<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>).</p>
+<p>The preview release increases the accuracy of SQL generation with value search
+queries which match values and their context within a database. Value search
+queries trigger automatically.</p>]]></content>
+    <summary>Introducing the QueryData tool, now in preview. This feature allows you to query your database using conversational language and build data agents. It enhances SQL generation accuracy with automatically triggered value search queries.</summary>
+    <title>Feature: Query your data with natural language</title>
   </entry>
   <entry>
     <author>

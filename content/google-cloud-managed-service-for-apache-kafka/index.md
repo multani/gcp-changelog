@@ -1,5 +1,13 @@
 # Google Cloud Managed Service for Apache Kafka
 
+## 2026-04-17
+
+### Feature
+
+The [Managed Service for Apache Kafka remote MCP server](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/use-managed-service-for-apache-kafka-mcp)
+is [generally available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+---
 ## 2026-03-03
 
 ### Feature

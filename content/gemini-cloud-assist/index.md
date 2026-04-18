@@ -20,6 +20,21 @@ Gemini Cloud Assist. This automatic API enablement ensures that users have
 access to the same functionality without any loss of service.
 
 ---
+## 2026-04-10
+
+### Breaking
+
+
+
+### Update for Gemini Cloud Assist investigations
+
+From April 10, 2026, creating, running, and editing Gemini Cloud Assist
+[investigations](https://docs.cloud.google.com/cloud-assist/investigations) will only be available to users
+with a Premium Support contract or who have requested access through their
+account team. If you ran an investigation prior to April 10, 2026, the results
+of the investigation continue to be available to you in the Google Cloud console.
+
+---
 ## 2026-04-08
 
 ### Custom IAM roles permission update for Gemini Cloud Assist

@@ -1,5 +1,24 @@
 # Cloud SQL for SQL Server
 
+## 2026-04-17
+
+### Feature
+
+You can now integrate Cloud SQL for SQL Server with Vertex AI and third-party models ([Preview](https://docs.cloud.google.com/products#product-launch-stages)).
+
+By integrating your Cloud SQL for SQL Server instance with Vertex AI, you can
+generate vector embeddings from models hosted in Vertex AI directly from your
+Cloud SQL instance.
+
+Cloud SQL for SQL Server supports model endpoints from the following sources:
+
+* Vertex AI
+* Hugging Face
+* OpenAI
+
+For more information, see [Integrate Cloud SQL for SQL Server with Vertex AI](https://docs.cloud.google.com/sql/docs/sqlserver/integrate-cloud-sql-with-vertex-ai).
+
+---
 ## 2026-04-16
 
 ### Feature

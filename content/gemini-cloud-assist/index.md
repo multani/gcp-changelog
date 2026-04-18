@@ -22,10 +22,6 @@ access to the same functionality without any loss of service.
 ---
 ## 2026-04-10
 
-### Breaking
-
-
-
 ### Update for Gemini Cloud Assist investigations
 
 From April 10, 2026, creating, running, and editing Gemini Cloud Assist

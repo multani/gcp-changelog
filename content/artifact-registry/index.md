@@ -1,5 +1,14 @@
 # Artifact Registry
 
+## 2026-04-15
+
+### Feature
+
+Platform logs can record data about successful and failed requests made
+to Artifact Registry repositories. For more information, see
+[Access and use platform logs](https://docs.cloud.google.com/artifact-registry/docs/platform-logs).
+
+---
 ## 2026-04-06
 
 ### Feature

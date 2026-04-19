@@ -1,5 +1,22 @@
 # Cloud SQL for SQL Server
 
+## 2026-04-18
+
+### Feature
+
+Newly created Cloud SQL instances are integrating with Knowledge Catalog
+(formerly Dataplex Universal Catalog) for data discovery. As part of this
+automatic enablement, we will send metadata to Knowledge Catalog. You can verify
+if your instance is enabled for integration with Knowledge Catalog by looking at
+the configuration pane in the Knowledge Catalog console. If you don't want your
+instance to be integrated with Knowledge Catalog, you can [turn off this
+feature](https://docs.cloud.google.com/sql/docs/sqlserver/dataplex-catalog-integration#deactivate-dataplex-catalog).
+
+For more information, see [Create a new instance with Knowledge Catalog
+integration
+enabled](https://docs.cloud.google.com/sql/docs/sqlserver/dataplex-catalog-integration#enable-new).
+
+---
 ## 2026-04-17
 
 ### Feature

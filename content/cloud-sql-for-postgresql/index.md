@@ -1,5 +1,23 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-04-18
+
+### Feature
+
+Newly created Cloud SQL instances are integrating with Knowledge Catalog
+(formerly Dataplex Universal Catalog) for data discovery. Instances on
+PostgreSQL version 14.0 or later will have updates sent to Knowledge Catalog in
+near real-time. As part of this automatic enablement, we will send metadata to
+Knowledge Catalog. You can verify if your instance is enabled for integration
+with Knowledge Catalog by looking at the configuration pane in the Knowledge
+Catalog console. If you don't want your instance to be integrated with Knowledge
+Catalog, you can [turn off this
+feature](https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration#deactivate-dataplex-catalog).
+
+For more information, see [Near
+real-time](https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration#near-real-time).
+
+---
 ## 2026-04-16
 
 ### Feature

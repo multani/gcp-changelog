@@ -1,5 +1,48 @@
 # Google SecOps SIEM
 
+## 2026-04-19
+
+### Announcement
+
+**New parser documentation now available**
+
+New parser documentation is available to help you ingest and normalize logs from the following sources:
+
+* [Collect Group-IB Threat Intelligence logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/group-ib)
+* [Collect Microsoft System Center Endpoint Protection (SCEP) logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/microsoft-scep)
+* [Collect Nagios XI logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/nagios)
+* [Collect Neo4j Aura logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/neo4j)
+* [Collect Nucleus Security - Nucleus Unified Vulnerability Management logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/nucleus-vulnerability)
+* [Collect Nyansa Voyance / VMware Edge Network Intelligence logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/nyansa-events)
+* [Collect Okera Dynamic Access Platform (ODAP) audit logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/okera-dap)
+* [Collect Okta Advanced Server Access logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/okta-scaleft)
+* [Collect Onapsis Platform logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/onapsis)
+* [Collect One Identity TPAM logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/oneidentity-tpam)
+* [Collect Oracle Cloud Infrastructure - Oracle Cloud Guard logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/oci-cloudguard)
+* [Collect Cisco Identity Intelligence logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/oort)
+* [Collect Microsoft SharePoint (Office 365) logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/sharepoint)
+* [Collect NetApp Console (formerly BlueXP) audit logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/netapp-bluexp)
+* [Collect Netwrix Auditor logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/netwrix)
+* [Collect Nokia VitalQIP DDI logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/vitalqip)
+* [Collect OpenAI Audit logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/openai-auditlog)
+* [Collect OpenTelemetry Netflow Receiver logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/netflow-otel)
+* [Collect Oracle Fusion Cloud Applications logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/oracle-fusion)
+* [Collect Oracle NetSuite - NetSuite Applications Suite logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/net-suite)
+* [Collect Oracle NetSuite logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/oracle-netsuite)
+* [Collect Vectra Alerts logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/vectra-alerts)
+* [Collect Vectra XDR logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/vectra-xdr)
+* [Collect Windows Event logs (XML format)](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/winevtlog-xml)
+* [Collect WinSCP logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/winscp)
+* [Collect Workday User Activity logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/workday-user-activity)
+* [Collect WP Engine logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/wpengine)
+* [Collect XAMS by Xiting logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/xiting-xams)
+* [Collect Yubico OTP logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/yubico-otp)
+* [Collect Zero Networks logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/zero-networks)
+* [Collect Zix Email Encryption logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/zix-email-encryption)
+* [Collect Zscaler NSS Feeds for Alerts logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/zscaler-nss-feeds)
+* [Collect ZyXEL ZyWALL logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/zywall)
+
+---
 ## 2026-04-08
 
 ### Announcement

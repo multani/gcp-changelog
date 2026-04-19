@@ -1,5 +1,18 @@
 # Compute Engine
 
+## 2026-04-17
+
+### Feature
+
+**Generally available**: You can create a Hyperdisk Balanced High Availability disk
+by cloning a zonal Hyperdisk Balanced or Hyperdisk Extreme disk. This lets you
+make your zonal workloads highly available by adding a replica of the data in
+another zone within the same region.
+
+For more information, see
+[Create a regional disk clone from a zonal disk](https://docs.cloud.google.com/compute/docs/disks/clone-duplicate-disks#create-regional-clone).
+
+---
 ## 2026-04-16
 
 ### Feature

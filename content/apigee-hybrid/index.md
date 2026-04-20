@@ -1,5 +1,50 @@
 # Apigee hybrid
 
+## 2026-04-20
+
+### Announcement
+
+
+
+### v1.16.1
+
+On April 20, 2026 we released an updated version of the Apigee hybrid software, v1.16.1.
+
+* For information on upgrading, see [Upgrading Apigee hybrid to version v1.16.1](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/upgrade).
+* For information on new installations, see [The big picture](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture).
+
+**Note:** This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).
+
+### Fixed
+
+#### Fixed in this release
+
+| Bug ID | Description |
+| --- | --- |
+| **469900037** | **Apigee hybrid now supports `LLMTokenQuota` and `PromptTokenLimit` policies.** |
+| **502577947** | **Enhanced the `ParsePayload` policy to support a broader set of Model Context Protocol (MCP) methods and implemented governance bypass for essential system-level methods.** |
+| **503029410** | **Removed PII from `ParsePayload` policy outputs to improve security and privacy.** |
+
+### Security
+
+| Bug ID | Description |
+| --- | --- |
+| **485998102, 482978613** | **Security fixes for `apigee-runtime`, `apigee-mart-server`, and `apigee-synchronizer`.**  This addresses the following vulnerabilities:  * [CVE-2026-21945](https://nvd.nist.gov/vuln/detail/CVE-2026-21945) * [CVE-2026-21932](https://nvd.nist.gov/vuln/detail/CVE-2026-21932) * [CVE-2025-55163](https://nvd.nist.gov/vuln/detail/CVE-2025-55163) * [CVE-2023-2976](https://nvd.nist.gov/vuln/detail/CVE-2023-2976) * [CVE-2022-48174](https://nvd.nist.gov/vuln/detail/CVE-2022-48174) * [CVE-2022-1471](https://nvd.nist.gov/vuln/detail/CVE-2022-1471) |
+| **471527485, 471173296, 471172082, 471171833** | **Security fixes for `apigee-synchronizer`.**  This addresses the following vulnerabilities:  * [CVE-2025-67735](https://nvd.nist.gov/vuln/detail/CVE-2025-67735) * [CVE-2025-58057](https://nvd.nist.gov/vuln/detail/CVE-2025-58057) * [CVE-2025-58056](https://nvd.nist.gov/vuln/detail/CVE-2025-58056) * [CVE-2025-55163](https://nvd.nist.gov/vuln/detail/CVE-2025-55163) |
+| **454672970** | **Security fix for `apigee-runtime`.**  This adds strict input validation to the `IntegrationRegion` parameter in the `SetIntegrationRequest` policy to prevent potential server-side request forgery (SSRF). |
+| **493067053, 493061344, 492959383, 492957334, 492359443, 492358696, 492067139, 490280970, 489908390, 489907729, 489489437, 488070159, 485580973** | **Security fixes for `apigee-hybrid-cassandra`.**  This addresses the following vulnerabilities:  * [CVE-2025-66566](https://nvd.nist.gov/vuln/detail/CVE-2025-66566) * [CVE-2025-4802](https://nvd.nist.gov/vuln/detail/CVE-2025-4802) * [CVE-2025-12183](https://nvd.nist.gov/vuln/detail/CVE-2025-12183) * [CVE-2023-6246](https://nvd.nist.gov/vuln/detail/CVE-2023-6246) * [CVE-2023-5156](https://nvd.nist.gov/vuln/detail/CVE-2023-5156) * [CVE-2023-4911](https://nvd.nist.gov/vuln/detail/CVE-2023-4911) * [CVE-2023-0687](https://nvd.nist.gov/vuln/detail/CVE-2023-0687) * [CVE-2022-3715](https://nvd.nist.gov/vuln/detail/CVE-2022-3715) |
+| **494902472, 493902764, 493747531, 493747186, 493066364, 492956556, 492812098, 492810982, 492737291, 492733739, 492067214, 491191150, 490628133, 490627481, 490279890, 490278396, 489905507, 489904404, 477290192** | **Security fixes for `apigee-kube-rbac-proxy`.**  This addresses the following vulnerabilities:  * [CVE-2026-24051](https://nvd.nist.gov/vuln/detail/CVE-2026-24051) * [CVE-2025-68119](https://nvd.nist.gov/vuln/detail/CVE-2025-68119) * [CVE-2025-61731](https://nvd.nist.gov/vuln/detail/CVE-2025-61731) * [CVE-2025-61729](https://nvd.nist.gov/vuln/detail/CVE-2025-61729) * [CVE-2025-61728](https://nvd.nist.gov/vuln/detail/CVE-2025-61728) * [CVE-2025-61726](https://nvd.nist.gov/vuln/detail/CVE-2025-61726) * [CVE-2025-61724](https://nvd.nist.gov/vuln/detail/CVE-2025-61724) * [CVE-2025-61723](https://nvd.nist.gov/vuln/detail/CVE-2025-61723) * [CVE-2025-58188](https://nvd.nist.gov/vuln/detail/CVE-2025-58188) * [CVE-2025-58186](https://nvd.nist.gov/vuln/detail/CVE-2025-58186) * [CVE-2025-58185](https://nvd.nist.gov/vuln/detail/CVE-2025-58185) |
+| **494874583, 493352686, 493350530, 493065065, 492958506, 492958221, 492810419, 492734198, 492360831, 491606491, 491602959, 490628958, 490628720, 490625335, 489487288, 477290192** | **Security fixes for `apigee-watcher`.**  This addresses the following vulnerabilities:  * [CVE-2025-61731](https://nvd.nist.gov/vuln/detail/CVE-2025-61731) * [CVE-2025-61729](https://nvd.nist.gov/vuln/detail/CVE-2025-61729) * [CVE-2025-61725](https://nvd.nist.gov/vuln/detail/CVE-2025-61725) * [CVE-2025-61724](https://nvd.nist.gov/vuln/detail/CVE-2025-61724) * [CVE-2025-58188](https://nvd.nist.gov/vuln/detail/CVE-2025-58188) * [CVE-2025-58187](https://nvd.nist.gov/vuln/detail/CVE-2025-58187) * [CVE-2025-47912](https://nvd.nist.gov/vuln/detail/CVE-2025-47912) |
+| **493904046, 493748763, 493353749, 492959837, 492959353, 492958532, 492734063, 492358967, 491163162, 489907974, 489494841, 477290192** | **Security fixes for `apigee-operators`.**  This addresses the following vulnerabilities:  * [CVE-2026-27139](https://nvd.nist.gov/vuln/detail/CVE-2026-27139) * [CVE-2025-61729](https://nvd.nist.gov/vuln/detail/CVE-2025-61729) * [CVE-2025-61728](https://nvd.nist.gov/vuln/detail/CVE-2025-61728) * [CVE-2025-61726](https://nvd.nist.gov/vuln/detail/CVE-2025-61726) * [CVE-2025-58181](https://nvd.nist.gov/vuln/detail/CVE-2025-58181) |
+| **493940049, 493935866, 492812693, 492811208, 490847438, 490285784, 443494822, 430609333, 428036268, 428035602** | **Security fixes for `apigee-fluent-bit`.**  This addresses the following vulnerabilities:  * [CVE-2026-22795](https://nvd.nist.gov/vuln/detail/CVE-2026-22795) * [CVE-2025-69419](https://nvd.nist.gov/vuln/detail/CVE-2025-69419) * [CVE-2025-69418](https://nvd.nist.gov/vuln/detail/CVE-2025-69418) * [CVE-2018-5709](https://nvd.nist.gov/vuln/detail/CVE-2018-5709) |
+| **494873893, 492957899, 492811896, 492735230, 492734621, 492362013, 492358145, 492044636, 491192904, 491163716, 490628292, 490283689, 489908590, 489487798, 485998102, 482978613** | **Security fixes for `apigee-open-telemetry-collector`.**  This addresses the following vulnerabilities:  * [CVE-2025-68156](https://nvd.nist.gov/vuln/detail/CVE-2025-68156) * [CVE-2025-47913](https://nvd.nist.gov/vuln/detail/CVE-2025-47913) |
+| **495206280, 492736206, 492358267, 491606961, 491603879, 490845184, 490842872, 490626346, 490625529, 490278258, 489155677** | **Security fixes for `apigee-udca`.**  This addresses the following vulnerability:  * [CVE-2026-25679](https://nvd.nist.gov/vuln/detail/CVE-2026-25679) |
+| **492959491, 492959470, 492959266, 492812323, 492736535, 492736355, 492736200, 492734720, 492549333, 492528258, 492528186, 492361814, 492360845, 492359742, 492359020, 492039084, 490625473, 489488025, 489120498** | **Security fixes for `apigee-prometheus-adapter`.**  This addresses the following vulnerability:  * [CVE-2026-25679](https://nvd.nist.gov/vuln/detail/CVE-2026-25679) |
+| **492959323, 492958717, 492813153, 492736850, 492736096, 492735265, 492360419, 492359937, 492359237, 492041473, 491604321, 491602140, 490847572, 490627493, 490282905, 489151338, 489127231** | **Security fixes for `apigee-redis`.**  This addresses the following vulnerability:  * [CVE-2025-61726](https://nvd.nist.gov/vuln/detail/CVE-2025-61726) |
+| **492736867, 492735320, 492550947, 492549407, 492360316, 492359543, 492358244, 491608063, 491603446, 491169265, 490282128, 490278007, 490276323, 489127588, 489124394** | **Security fixes for `apigee-asm-ingress`.**  This addresses the following vulnerability:  * [CVE-2025-15558](https://nvd.nist.gov/vuln/detail/CVE-2025-15558) |
+| **492956844, 492956300, 492812417, 492811007, 492810814, 492528300, 492361776, 492360457, 492360310, 492360053, 492358006, 492037890, 491606683, 489492294, 489152529** | **Security fixes for `apigee-asm-istiod`.**  This addresses the following vulnerabilities:  * [CVE-2025-61729](https://nvd.nist.gov/vuln/detail/CVE-2025-61729) |
+
+---
 ## 2026-03-12
 
 ### Fixed

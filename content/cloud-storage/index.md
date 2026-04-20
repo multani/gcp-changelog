@@ -1,5 +1,18 @@
 # Cloud Storage
 
+## 2026-04-20
+
+### Feature
+
+Cloud Storage Model Context Protocol (MCP) server is [generally
+available](https://cloud.google.com/products#product-launch-stages). You can
+connect to Cloud Storage from AI applications using the server. It lets AI
+applications and agents create buckets, retrieve object metadata, read and write
+object data, and list buckets and objects. For more information, see [Use the
+Cloud Storage MCP server](https://docs.cloud.google.com/storage/docs/use-cloud-storage-mcp) and [Cloud
+Storage MCP reference](https://docs.cloud.google.com/storage/docs/reference/mcp).
+
+---
 ## 2026-04-08
 
 ### Feature

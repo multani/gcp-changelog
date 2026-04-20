@@ -4,6 +4,10 @@
 
 ### Feature
 
+The [Memorystore for Valkey remote MCP server](https://docs.cloud.google.com/memorystore/docs/valkey/use-memorystore-mcp) is [Generally Available](https://docs.cloud.google.com/products#product-launch-stages).
+
+### Feature
+
 You can secure access to your instances by using [basic token-based authentication](https://docs.cloud.google.com/memorystore/docs/valkey/manage-basic-auth). This feature is available in [Preview](https://docs.cloud.google.com/products#product-launch-stages).
 
 ---

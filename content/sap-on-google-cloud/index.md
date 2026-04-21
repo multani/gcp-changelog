@@ -1,5 +1,19 @@
 # SAP on Google Cloud
 
+## 2026-04-20
+
+### Announcement
+
+**Google SecOps for SAP is in Preview**
+
+Google SecOps for SAP is in Preview. This service helps you
+secure your SAP applications by integrating business-critical telemetry into the
+Google Security Operations platform, providing unified visibility and AI-powered
+threat detection across your SAP landscape.
+
+For more information, see [Google SecOps for SAP overview](https://docs.cloud.google.com/sap/docs/secops/overview).
+
+---
 ## 2026-03-31
 
 ### Announcement

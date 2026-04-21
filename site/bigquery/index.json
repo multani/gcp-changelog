@@ -1,6 +1,48 @@
 {
   "name": "BigQuery",
   "entries": {
+    "2026-04-20": [
+      {
+        "kind": "Change",
+        "content": "Starting July 25, 2026, the [BigQuery Data Transfer Service for Facebook Ads\nconnector](https://docs.cloud.google.com/bigquery/docs/facebook-ads-transfer) will update the data type\nmapping for the `ActionValue` field in the `AdInsightsActions` report from `INT`\nto `FLOAT`.",
+        "summary": {
+          "title": "Facebook Ads connector data type update",
+          "summary": "The Facebook Ads connector will update the data type for the ActionValue field from INT to FLOAT starting July 25, 2026. This change affects the AdInsightsActions report. Ensure your data pipelines are prepared for this type modification."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The following features have been added to [Python UDFs](https://docs.cloud.google.com/bigquery/docs/user-defined-functions-python)\nduring [Preview](https://cloud.google.com/products/#product-launch-stages):\n\n* Vectorized UDFs with Apache Arrow. You can now create [vectorized Python\n  UDFs](https://docs.cloud.google.com/bigquery/docs/user-defined-functions-python#create-vector-udf-apache)\n  using the Apache Arrow `RecordBatch` interface for improved performance.\n* Cloud Monitoring integration. Python UDFs now export\n  [metrics](https://docs.cloud.google.com/bigquery/docs/user-defined-functions-python#view_python_udf_metrics)\n  to Cloud Monitoring, including CPU utilization, memory utilization, and\n  maximum concurrent requests per instance.\n* Container request concurrency. A new option,\n  `container_request_concurrency`, is available for the `CREATE FUNCTION`\n  statement. This option controls the maximum number of concurrent requests\n  per Python UDF container instance.\n* New quotas. Python UDFs are now subject to [new quotas](https://docs.cloud.google.com/bigquery/quotas#udf_limits)\n  on image storage bytes (10 GiB per project per region) and mutation rate\n  (30 per minute per project per region).\n* Cost visibility. Python UDF costs can be seen in the\n  `external_service_costs` column in the `INFORMATION_SCHEMA.JOBS` view and in\n  the `ExternalServiceCosts` field in the [Job API](https://docs.cloud.google.com/bigquery/docs/reference/rest/v2/Job#externalservicecost).",
+        "summary": {
+          "title": "New Python UDF Features Available",
+          "summary": "Enhancements to Python UDFs are now in Preview, including vectorized UDFs with Apache Arrow for better performance, Cloud Monitoring integration for metrics, and new options for container concurrency. Cost visibility and updated quotas are also included."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now [migrate metadata from external data catalogs to BigLake tables for\nApache\nIceberg](https://docs.cloud.google.com/bigquery/docs/migration/external-metastore-lakehouse-migration). This\nfeature supports external data catalogs such as such as Apache Hive Metastore\nand Apache Iceberg REST Catalog. This feature is in\n[Preview](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "Metadata migration to BigLake tables",
+          "summary": "You can now migrate metadata from external data catalogs, including Apache Hive Metastore and Apache Iceberg REST Catalog, to BigLake tables for Apache Iceberg. This new feature is currently in Preview."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can use the [BigQuery MCP server](https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp)\nto perform a range of data-related tasks with your AI applications including:\n\n* Examining BigQuery resources.\n* Generating accurate and efficient SQL queries.\n* Securely executing queries.\n* Interpreting query results.\n\nThis feature is [Generally Available](https://cloud.google.com/products#product-launch-stages)\n(GA).",
+        "summary": {
+          "title": "BigQuery MCP Server Now Generally Available",
+          "summary": "The BigQuery MCP server is now Generally Available, enabling you to perform various data-related tasks with your AI applications, including examining resources, generating and executing SQL queries, and interpreting results."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now use the [notebook gallery](https://docs.cloud.google.com/bigquery/docs/notebooks-introduction#notebook_gallery)\nin the BigQuery web UI as your central hub for discovering and using prebuilt notebook\ntemplates. This feature is [generally available](https://cloud.google.com/products/#product-launch-stages)\n(GA).",
+        "summary": {
+          "title": "Notebook Gallery Now Available in BigQuery",
+          "summary": "The notebook gallery is now generally available in the BigQuery web UI. This feature serves as a central hub for discovering and using prebuilt notebook templates, making it easier to get started with BigQuery analysis."
+        }
+      }
+    ],
     "2026-04-17": [
       {
         "kind": "Feature",

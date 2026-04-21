@@ -1,5 +1,35 @@
 # Bigtable
 
+## 2026-04-20
+
+### Feature
+
+You can use the [Database Insights remote MCP server](https://docs.cloud.google.com/bigtable/docs/reference/admin/mcp/databaseinsights/mcp)
+to analyze Bigtable's performance and system metrics. This feature is
+[generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+Bigtable [continuous materialized views](https://docs.cloud.google.com/bigtable/docs/continuous-materialized-views)
+are [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+These views let you create precomputed tables that Bigtable automatically keeps
+in sync with your source data for low-latency queries and real-time insights.
+
+### Feature
+
+Bigtable free trial instances are [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+These instances let you learn and explore Bigtable features for 90 days at no
+cost, providing a 1-node SSD cluster and up to 500 GB of storage. For more
+information, see [Free trial instances overview](https://docs.cloud.google.com/bigtable/docs/free-trial-instance).
+
+### Feature
+
+The [Bigtable remote MCP server](https://docs.cloud.google.com/bigtable/docs/use-bigtable-mcp) is
+[generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+The Bigtable remote MCP server lets you interact with Bigtable instances
+from LLMs, AI applications, and AI-enabled development platforms.
+
+---
 ## 2026-04-16
 
 ### Feature

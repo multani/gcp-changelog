@@ -1,5 +1,16 @@
 # Compute Engine
 
+## 2026-04-20
+
+### Feature
+
+**Generally available**: You can use the Compute Engine remote
+Model Context Protocol (MCP) server to let AI agents
+and AI applications manage Compute Engine resources, such as Compute Engine
+instances, managed instance groups, disks, and snapshots. For more information, see
+[Use the Compute Engine remote MCP server](https://docs.cloud.google.com/compute/docs/use-compute-engine-mcp).
+
+---
 ## 2026-04-17
 
 ### Feature

@@ -2,9 +2,104 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: BigQuery</title>
   <subtitle>Changelog for Google Cloud product: BigQuery</subtitle>
-  <updated>2026-04-17T00:00:00+00:00</updated>
+  <updated>2026-04-20T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:bigquery</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/bigquery/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-04-20:change:0</id>
+    <published>2026-04-20T00:00:00+00:00</published>
+    <updated>2026-04-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Starting July 25, 2026, the <a href="https://docs.cloud.google.com/bigquery/docs/facebook-ads-transfer">BigQuery Data Transfer Service for Facebook Ads
+connector</a> will update the data type
+mapping for the <code>ActionValue</code> field in the <code>AdInsightsActions</code> report from <code>INT</code>
+to <code>FLOAT</code>.</p>]]></content>
+    <summary>The Facebook Ads connector will update the data type for the ActionValue field from INT to FLOAT starting July 25, 2026. This change affects the AdInsightsActions report. Ensure your data pipelines are prepared for this type modification.</summary>
+    <title>Change: Facebook Ads connector data type update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-04-20:feature:1</id>
+    <published>2026-04-20T00:00:00+00:00</published>
+    <updated>2026-04-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following features have been added to <a href="https://docs.cloud.google.com/bigquery/docs/user-defined-functions-python">Python UDFs</a>
+during <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>:</p>
+<ul>
+<li>Vectorized UDFs with Apache Arrow. You can now create <a href="https://docs.cloud.google.com/bigquery/docs/user-defined-functions-python#create-vector-udf-apache">vectorized Python
+  UDFs</a>
+  using the Apache Arrow <code>RecordBatch</code> interface for improved performance.</li>
+<li>Cloud Monitoring integration. Python UDFs now export
+  <a href="https://docs.cloud.google.com/bigquery/docs/user-defined-functions-python#view_python_udf_metrics">metrics</a>
+  to Cloud Monitoring, including CPU utilization, memory utilization, and
+  maximum concurrent requests per instance.</li>
+<li>Container request concurrency. A new option,
+  <code>container_request_concurrency</code>, is available for the <code>CREATE FUNCTION</code>
+  statement. This option controls the maximum number of concurrent requests
+  per Python UDF container instance.</li>
+<li>New quotas. Python UDFs are now subject to <a href="https://docs.cloud.google.com/bigquery/quotas#udf_limits">new quotas</a>
+  on image storage bytes (10 GiB per project per region) and mutation rate
+  (30 per minute per project per region).</li>
+<li>Cost visibility. Python UDF costs can be seen in the
+  <code>external_service_costs</code> column in the <code>INFORMATION_SCHEMA.JOBS</code> view and in
+  the <code>ExternalServiceCosts</code> field in the <a href="https://docs.cloud.google.com/bigquery/docs/reference/rest/v2/Job#externalservicecost">Job API</a>.</li>
+</ul>]]></content>
+    <summary>Enhancements to Python UDFs are now in Preview, including vectorized UDFs with Apache Arrow for better performance, Cloud Monitoring integration for metrics, and new options for container concurrency. Cost visibility and updated quotas are also included.</summary>
+    <title>Feature: New Python UDF Features Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-04-20:feature:2</id>
+    <published>2026-04-20T00:00:00+00:00</published>
+    <updated>2026-04-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now <a href="https://docs.cloud.google.com/bigquery/docs/migration/external-metastore-lakehouse-migration">migrate metadata from external data catalogs to BigLake tables for
+Apache
+Iceberg</a>. This
+feature supports external data catalogs such as such as Apache Hive Metastore
+and Apache Iceberg REST Catalog. This feature is in
+<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>]]></content>
+    <summary>You can now migrate metadata from external data catalogs, including Apache Hive Metastore and Apache Iceberg REST Catalog, to BigLake tables for Apache Iceberg. This new feature is currently in Preview.</summary>
+    <title>Feature: Metadata migration to BigLake tables</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-04-20:feature:3</id>
+    <published>2026-04-20T00:00:00+00:00</published>
+    <updated>2026-04-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can use the <a href="https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp">BigQuery MCP server</a>
+to perform a range of data-related tasks with your AI applications including:</p>
+<ul>
+<li>Examining BigQuery resources.</li>
+<li>Generating accurate and efficient SQL queries.</li>
+<li>Securely executing queries.</li>
+<li>Interpreting query results.</li>
+</ul>
+<p>This feature is <a href="https://cloud.google.com/products#product-launch-stages">Generally Available</a>
+(GA).</p>]]></content>
+    <summary>The BigQuery MCP server is now Generally Available, enabling you to perform various data-related tasks with your AI applications, including examining resources, generating and executing SQL queries, and interpreting results.</summary>
+    <title>Feature: BigQuery MCP Server Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-04-20:feature:4</id>
+    <published>2026-04-20T00:00:00+00:00</published>
+    <updated>2026-04-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now use the <a href="https://docs.cloud.google.com/bigquery/docs/notebooks-introduction#notebook_gallery">notebook gallery</a>
+in the BigQuery web UI as your central hub for discovering and using prebuilt notebook
+templates. This feature is <a href="https://cloud.google.com/products/#product-launch-stages">generally available</a>
+(GA).</p>]]></content>
+    <summary>The notebook gallery is now generally available in the BigQuery web UI. This feature serves as a central hub for discovering and using prebuilt notebook templates, making it easier to get started with BigQuery analysis.</summary>
+    <title>Feature: Notebook Gallery Now Available in BigQuery</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

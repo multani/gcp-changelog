@@ -1,5 +1,31 @@
 # AlloyDB for PostgreSQL
 
+## 2026-04-20
+
+### Feature
+
+You can now use the [Database Insights remote MCP server](https://docs.cloud.google.com/alloydb/docs/reference/mcp/databaseinsights/mcp/index) to analyze AlloyDB's performance and system metrics. This feature is in [GA](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+The AlloyDB remote MCP server—available through the global endpoint—is now generally
+available ([GA](https://cloud.google.com/products#product-launch-stages))
+and includes support for the following:
+
+* Read-only execute SQL.
+* Tools to help you update your instance, export and import data, create a
+  backup, and restore your cluster.
+* Public IP.
+* Private Service Connect endpoint automation.
+
+For more information, see [Use the AlloyDB remote MCP server](https://docs.cloud.google.com/alloydb/docs/ai/use-alloydb-mcp).
+
+### Issue
+
+ChatGPT users aren't able to list or use the AlloyDB toolset provided
+by the AlloyDB remote MCP server.
+
+---
 ## 2026-04-17
 
 ### Issue
@@ -15,7 +41,7 @@ to push the `OFFSET` down. Then, AlloyDB applies the
 
 External search with AlloyDB now supports Elasticsearch in [Preview](https://cloud.google.com/products#product-launch-stages).
 
-With this update, you can use the `external_search_fdw` extension to connect to Elasticsearch and perform hybrid searches within AlloyDB. This integration allows you to combine the capabilities of AlloyDB with Elasticsearch for advanced search scenarios. For more information, see [Access Elasticsearch data from AlloyDB](https://docs.cloud.google.com/alloydb/docs/ai/search/access-elasticsearch-data-from-alloydb).
+With this update, you can use the `external_search_fdw` extension to connect to Elasticsearch and perform hybrid searches within AlloyDB. This integration allows you to combine the capabilities of AlloyDB with Elasticsearch for advanced search scenarios. For more information, see [Access Elasticsearch data from AlloyDB](https://docs.cloud.google.com/alloydb/docs/elastic-search).
 
 ### Announcement
 

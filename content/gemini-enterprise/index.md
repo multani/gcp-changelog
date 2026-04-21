@@ -1,5 +1,35 @@
 # Gemini Enterprise
 
+## 2026-04-20
+
+### Feature
+
+**Gemini Enterprise: Request access to Google Cloud Marketplace agents**
+
+End users can request access to Google Cloud Marketplace agents from
+Agent Gallery. Admins can configure the visibility of these agents,
+view purchase requests, and manage access requests.
+
+For more information, see:
+
+* [Browse agents with Agent Gallery](https://docs.cloud.google.com/gemini/enterprise/docs/agent-gallery)
+* [Add and manage A2A agents from Google Cloud Marketplace](https://docs.cloud.google.com/gemini/enterprise/docs/register-and-manage-marketplace-agents)
+
+### Feature
+
+**Gemini Enterprise: Register ADK agents hosted on Vertex AI Agent Engine**
+
+You can register ADK agents hosted on Vertex AI Agent Engine with
+Gemini Enterprise. This includes agents running within
+Vertex AI Agent Engine in a different Google Cloud project. This
+feature is generally available (GA).
+
+For more information, see:
+
+* [Register and manage ADK agents hosted on Vertex AI Agent Engine](https://docs.cloud.google.com/gemini/enterprise/docs/register-and-manage-an-adk-agent)
+* [Configure cross-project ADK agents](https://docs.cloud.google.com/gemini/enterprise/docs/configure-cross-project-adk-agents)
+
+---
 ## 2026-04-15
 
 ### Feature
@@ -62,8 +92,9 @@ The Jira and Confluence federated data stores are generally available (GA)
 in Gemini Enterprise.
 
 For more information, see:
-\* [Jira Cloud](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/jira-cloud)
-\* [Confluence Cloud](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/confluence-cloud)
+
+* [Jira Cloud](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/jira-cloud)
+* [Confluence Cloud](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/confluence-cloud)
 
 ---
 ## 2026-04-02

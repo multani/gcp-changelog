@@ -1,5 +1,17 @@
 # Cloud Scheduler
 
+## 2026-04-17
+
+### Change
+
+Cloud Scheduler is available in the following [locations](https://docs.cloud.google.com/scheduler/docs/locations):
+
+* `europe-west4` (Eemshaven, Netherlands)
+* `me-central1` (Doha, Qatar)
+* `me-central2` (Dammam, Saudi Arabia)
+* `me-west1` (Tel Aviv, Israel)
+
+---
 ## 2025-09-29
 
 ### Changed

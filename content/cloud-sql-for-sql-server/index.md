@@ -1,5 +1,14 @@
 # Cloud SQL for SQL Server
 
+## 2026-04-20
+
+### Feature
+
+You can use the [Database Insights remote MCP server](https://docs.cloud.google.com/sql/docs/sqlserver/reference/mcp/databaseinsights/mcp)
+to analyze Cloud SQL for SQL Server's performance and system metrics. This
+feature is in [GA](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-04-18
 
 ### Feature

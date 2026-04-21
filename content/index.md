@@ -38,6 +38,7 @@
 - [App Engine standard environment Python](app-engine-standard-environment-python/index.md)
 - [App Engine standard environment Ruby](app-engine-standard-environment-ruby/index.md)
 - [App Hub](app-hub/index.md)
+- [App Optimize API](app-optimize-api/index.md)
 - [Application Design Center](application-design-center/index.md)
 - [Application Integration](application-integration/index.md)
 - [Artifact Registry](artifact-registry/index.md)

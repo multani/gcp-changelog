@@ -1,5 +1,12 @@
 # Cloud Run
 
+## 2026-04-20
+
+### Feature
+
+Cloud Run ephemeral disk, which allows you to mount a volume that persists only for the duration of your [service](https://docs.cloud.google.com/run/docs/configuring/services/ephemeral-disk), [job](https://docs.cloud.google.com/run/docs/configuring/jobs/ephemeral-disk), or [worker pool](https://docs.cloud.google.com/run/docs/configuring/workerpools/ephemeral-disk) instance, is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-04-16
 
 ### Feature

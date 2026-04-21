@@ -1,6 +1,32 @@
 {
   "name": "AlloyDB for PostgreSQL",
   "entries": {
+    "2026-04-20": [
+      {
+        "kind": "Feature",
+        "content": "You can now use the [Database Insights remote MCP server](https://docs.cloud.google.com/alloydb/docs/reference/mcp/databaseinsights/mcp/index) to analyze AlloyDB's performance and system metrics. This feature is in [GA](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "AlloyDB performance analysis now available",
+          "summary": "Analyze AlloyDB performance and system metrics with the new Database Insights remote MCP server. This feature is now generally available, offering enhanced insights into your database's health and efficiency."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The AlloyDB remote MCP server—available through the global endpoint—is now generally\navailable ([GA](https://cloud.google.com/products#product-launch-stages))\nand includes support for the following:\n\n* Read-only execute SQL.\n* Tools to help you update your instance, export and import data, create a\n  backup, and restore your cluster.\n* Public IP.\n* Private Service Connect endpoint automation.\n\nFor more information, see [Use the AlloyDB remote MCP server](https://docs.cloud.google.com/alloydb/docs/ai/use-alloydb-mcp).",
+        "summary": {
+          "title": "AlloyDB remote MCP server now generally available",
+          "summary": "The AlloyDB remote MCP server is now generally available, offering features like read-only SQL execution, instance management tools, and enhanced connectivity options. This release simplifies instance updates, data management, and backup/restore processes."
+        }
+      },
+      {
+        "kind": "Issue",
+        "content": "ChatGPT users aren't able to list or use the AlloyDB toolset provided\nby the AlloyDB remote MCP server.",
+        "summary": {
+          "title": "AlloyDB toolset access issue",
+          "summary": "Users are experiencing problems accessing and listing the AlloyDB toolset through the AlloyDB remote MCP server. This issue prevents them from utilizing the full capabilities of the AlloyDB toolset."
+        }
+      }
+    ],
     "2026-04-17": [
       {
         "kind": "Issue",
@@ -12,10 +38,10 @@
       },
       {
         "kind": "Feature",
-        "content": "External search with AlloyDB now supports Elasticsearch in [Preview](https://cloud.google.com/products#product-launch-stages).\n\nWith this update, you can use the `external_search_fdw` extension to connect to Elasticsearch and perform hybrid searches within AlloyDB. This integration allows you to combine the capabilities of AlloyDB with Elasticsearch for advanced search scenarios. For more information, see [Access Elasticsearch data from AlloyDB](https://docs.cloud.google.com/alloydb/docs/ai/search/access-elasticsearch-data-from-alloydb).",
+        "content": "External search with AlloyDB now supports Elasticsearch in [Preview](https://cloud.google.com/products#product-launch-stages).\n\nWith this update, you can use the `external_search_fdw` extension to connect to Elasticsearch and perform hybrid searches within AlloyDB. This integration allows you to combine the capabilities of AlloyDB with Elasticsearch for advanced search scenarios. For more information, see [Access Elasticsearch data from AlloyDB](https://docs.cloud.google.com/alloydb/docs/elastic-search).",
         "summary": {
-          "title": "AlloyDB adds Elasticsearch support",
-          "summary": "External search with AlloyDB now supports Elasticsearch in Preview. Use the external_search_fdw extension to connect to Elasticsearch and perform hybrid searches within AlloyDB, combining its capabilities with Elasticsearch for advanced search scenarios."
+          "title": "AlloyDB external search now supports Elasticsearch",
+          "summary": "External search with AlloyDB now supports Elasticsearch in preview. You can use the external_search_fdw extension to connect to Elasticsearch and perform hybrid searches within AlloyDB, combining its capabilities with Elasticsearch for advanced search scenarios."
         }
       },
       {

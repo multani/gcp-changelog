@@ -4,9 +4,9 @@
 
 ### Feature
 
-You can use [Filestore CSI driver](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/persistent-volumes/filestore-csi-driver) to dynamically configure custom performance for zonal and regional instances using the Kubernetes `VolumeAttributesClass`.
+You can use [Filestore CSI driver](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/persistent-volumes/filestore-csi-driver) to dynamically scale custom performance for zonal and regional Filestore instances.
 
-For more information, see [Dynamically scale Filestore performance using VolumeAttributesClass](filestore/docs/csi-driver#custom-performance).
+For more information, see [Dynamically scale Filestore performance using VolumeAttributesClass](https://docs.cloud.google.com/filestore/docs/csi-driver#custom-performance).
 
 ---
 ## 2026-04-09

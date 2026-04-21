@@ -1,5 +1,14 @@
 # Network Connectivity Center
 
+## 2026-04-14
+
+### Feature
+
+Network Connectivity Center (NCC) support for
+[Partner Cross-Cloud Interconnect for Amazon Web Services (AWS)](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/concepts/overview#partner-cross-cloud-interconnect-spokes)
+is available in [public preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-03-25
 
 ### Feature

@@ -1,5 +1,31 @@
 # Spanner
 
+## 2026-04-20
+
+### Feature
+
+The [Spanner remote MCP server](https://docs.cloud.google.com/spanner/docs/use-spanner-mcp)
+is generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
+The Spanner remote MCP server lets you interact with
+Spanner instances from LLMs, AI applications, and
+AI-enabled development platforms.
+
+### Feature
+
+You can use the
+[Database Insights remote MCP server](https://docs.cloud.google.com/spanner/docs/reference/mcp/databaseinsights/mcp)
+to analyze Spanner's performance and system metrics.
+This feature is generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
+
+### Feature
+
+You can now use Spanner Studio to
+[visually create and manage a Spanner Graph schema](https://docs.cloud.google.com/spanner/docs/graph/create-update-drop-schema-visually).
+Visual modeling simplifies graph design by enabling you to map nodes and edges
+through an intuitive interface instead of creating manual DDL statements. This
+feature is available in [Preview](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-04-17
 
 ### Feature
@@ -14,8 +40,7 @@ that have many reads contending with fewer writes. For more information, see
 Spanner supports Gemini Cloud Assist investigation
 capabilities. You can create, run, and edit
 [Gemini Cloud Assist investigations](https://docs.cloud.google.com/cloud-assist/investigations)
-only if you have a
-[Premium support contract](https://docs.cloud.google.com/support/premium).
+only if you have a [Premium support contract](https://docs.cloud.google.com/support/premium).
 
 For more information, see
 [monitor and troubleshoot your Spanner instance with AI assistance](https://docs.cloud.google.com/spanner/docs/monitor-troubleshoot-with-ai).
@@ -52,8 +77,8 @@ This feature is [generally available](https://docs.cloud.google.com/products#pro
 
 The QueryData tool lets you to query the data in your database using
 conversational language and build data agents. For more information, see
-[QueryData tool overview](https://docs.cloud.google.com/spanner/docs/data-agent-overview). This
-feature is available in
+[QueryData tool overview](https://docs.cloud.google.com/spanner/docs/data-agent-overview).
+This feature is available in
 ([Preview](https://cloud.google.com/products#product-launch-stages)).
 
 The preview release increases the accuracy of SQL generation with value search

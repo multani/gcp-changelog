@@ -2412,19 +2412,41 @@
 
 
 <h1 id="firestore-with-mongodb-compatibility">Firestore with MongoDB compatibility</h1>
-<h2 id="2026-04-09">2026-04-09</h2>
+<h2 id="2026-04-20">2026-04-20</h2>
 <h3 id="feature">Feature</h3>
+<p>The maximum document size has been
+increased to 16 MiB. To learn more, see <a href="https://docs.cloud.google.com/firestore/mongodb-compatibility/docs/behavior-differences#documents">Behavior differences</a>.</p>
+<h3 id="feature_1">Feature</h3>
+<p>Support for text and geospatial search. You
+can create text indexes, perform text and geospatial search queries using
+the <code>$text</code> and <code>$near</code> operators, handle language settings, and calculate
+relevance scores. To learn more, see <a href="https://docs.cloud.google.com/firestore/mongodb-compatibility/docs/text-query">Text search</a>
+and <a href="https://docs.cloud.google.com/firestore/mongodb-compatibility/docs/geo-query">Geospatial search</a>.</p>
+<p>These features are available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
+<h3 id="feature_2">Feature</h3>
+<p><code>$lookup</code> now supports <code>let</code> and <code>pipeline</code>.</p>
+<h3 id="feature_3">Feature</h3>
+<p>Support for <a href="https://docs.cloud.google.com/firestore/mongodb-compatibility/docs/change-streams">Change Streams</a>.
+Change streams let applications access real-time changes (inserts, updates, and deletes) made to a
+collection or to an entire database.</p>
+<p>This feature is available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
+<h3 id="feature_4">Feature</h3>
+<p>Support for the <code>drop()</code> command to delete entire collections.</p>
+<p>This feature is available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
+<hr />
+<h2 id="2026-04-09">2026-04-09</h2>
+<h3 id="feature_5">Feature</h3>
 <p>You can now use
 Gemini Code Assist to get AI-powered assistance in Firestore
 to <a href="https://docs.cloud.google.com/firestore/mongodb-compatibility/docs/write-mql-gemini">generate MQL queries using natural language prompts</a>.
 This feature is available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
 <hr />
 <h2 id="2026-03-16">2026-03-16</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p>Support for <a href="https://cloud.google.com/firestore/mongodb-compatibility/docs/ttl#create_ttl_index">managing TTL indexes</a> in the MongoDB API.</p>
 <hr />
 <h2 id="2026-02-02">2026-02-02</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p>The Firestore databases page in the Google Cloud console now includes
 a status column. Possible statuses include:</p>
 <ul>
@@ -2437,7 +2459,7 @@ a status column. Possible statuses include:</p>
 <p>For the cloning and restore statuses, the status column updates upon completion.</p>
 <hr />
 <h2 id="2025-11-21">2025-11-21</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p>Support for Object as document <code>_id</code> identifier.</p>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
@@ -2450,6 +2472,9 @@ a status column. Possible statuses include:</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#firestore-with-mongodb-compatibility">Firestore with MongoDB compatibility</a></li>
+          <li class="nav-item">
+            <a href="#2026-04-20" class="nav-link">2026-04-20</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-04-09" class="nav-link">2026-04-09</a>
           </li>

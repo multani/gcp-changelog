@@ -56,6 +56,13 @@ This feature is [Generally Available](https://cloud.google.com/products#product-
 
 ### Feature
 
+You can now publish a [BigQuery Conversational Analytics agent in Gemini
+Enterprise](https://docs.cloud.google.com/bigquery/docs/create-data-agents#publish-agent-gemini-enterprise).
+This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
 You can now use the [notebook gallery](https://docs.cloud.google.com/bigquery/docs/notebooks-introduction#notebook_gallery)
 in the BigQuery web UI as your central hub for discovering and using prebuilt notebook
 templates. This feature is [generally available](https://cloud.google.com/products/#product-launch-stages)

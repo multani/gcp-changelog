@@ -1,6 +1,48 @@
 {
   "name": "Firestore with MongoDB compatibility",
   "entries": {
+    "2026-04-20": [
+      {
+        "kind": "Feature",
+        "content": "The maximum document size has been\nincreased to 16 MiB. To learn more, see [Behavior differences](https://docs.cloud.google.com/firestore/mongodb-compatibility/docs/behavior-differences#documents).",
+        "summary": {
+          "title": "Document size limit increased",
+          "summary": "The maximum document size limit has been increased to 16 MiB. This change allows for larger data storage within documents. For more details on how this impacts behavior, please refer to the documentation on behavior differences."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Support for text and geospatial search. You\ncan create text indexes, perform text and geospatial search queries using\nthe `$text` and `$near` operators, handle language settings, and calculate\nrelevance scores. To learn more, see [Text search](https://docs.cloud.google.com/firestore/mongodb-compatibility/docs/text-query)\nand [Geospatial search](https://docs.cloud.google.com/firestore/mongodb-compatibility/docs/geo-query).\n\nThese features are available in [Preview](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "New Text and Geospatial Search Capabilities",
+          "summary": "Enhance your applications with powerful text and geospatial search features. You can now create text indexes, perform text and geospatial queries, manage language settings, and calculate relevance scores. These capabilities are available in preview."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "`$lookup` now supports `let` and `pipeline`.",
+        "summary": {
+          "title": "$lookup now supports let and pipeline",
+          "summary": "The $lookup aggregation stage now includes support for the 'let' and 'pipeline' options. This enhancement provides more flexibility and power when performing correlated subqueries within your MongoDB aggregations."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Support for [Change Streams](https://docs.cloud.google.com/firestore/mongodb-compatibility/docs/change-streams).\nChange streams let applications access real-time changes (inserts, updates, and deletes) made to a\ncollection or to an entire database.\n\nThis feature is available in [Preview](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "Real-time Data Change Streams Available",
+          "summary": "Applications can now access real-time changes like inserts, updates, and deletes to collections or entire databases using Change Streams. This feature is currently in Preview."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Support for the `drop()` command to delete entire collections.\n\nThis feature is available in [Preview](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "Collection deletion support",
+          "summary": "You can now delete entire collections using the `drop()` command. This feature is currently in Preview."
+        }
+      }
+    ],
     "2026-04-09": [
       {
         "kind": "Feature",

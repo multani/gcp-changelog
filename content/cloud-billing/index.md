@@ -1,5 +1,19 @@
 # Cloud Billing
 
+## 2026-04-20
+
+### Feature
+
+**GKE workload recommenders now available in the FinOps hub**
+
+You can now view recommendations for right-sizing overprovisioned workloads and
+optimizing underprovisioned workloads for Google Kubernetes Engine (GKE)
+clusters directly in the FinOps hub.
+
+For more information, see
+[Optimize workload resource utilization](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/optimize-workload-resource-utilization).
+
+---
 ## 2026-03-30
 
 ### Feature

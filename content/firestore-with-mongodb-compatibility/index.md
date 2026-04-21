@@ -1,5 +1,41 @@
 # Firestore with MongoDB compatibility
 
+## 2026-04-20
+
+### Feature
+
+The maximum document size has been
+increased to 16 MiB. To learn more, see [Behavior differences](https://docs.cloud.google.com/firestore/mongodb-compatibility/docs/behavior-differences#documents).
+
+### Feature
+
+Support for text and geospatial search. You
+can create text indexes, perform text and geospatial search queries using
+the `$text` and `$near` operators, handle language settings, and calculate
+relevance scores. To learn more, see [Text search](https://docs.cloud.google.com/firestore/mongodb-compatibility/docs/text-query)
+and [Geospatial search](https://docs.cloud.google.com/firestore/mongodb-compatibility/docs/geo-query).
+
+These features are available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+`$lookup` now supports `let` and `pipeline`.
+
+### Feature
+
+Support for [Change Streams](https://docs.cloud.google.com/firestore/mongodb-compatibility/docs/change-streams).
+Change streams let applications access real-time changes (inserts, updates, and deletes) made to a
+collection or to an entire database.
+
+This feature is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+Support for the `drop()` command to delete entire collections.
+
+This feature is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-04-09
 
 ### Feature

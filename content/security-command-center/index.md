@@ -12,6 +12,19 @@ design-time and runtime findings in Security Command Center. For more informatio
 [Application lifecycle security
 assessments](https://docs.cloud.google.com/security-command-center/docs/concepts-security-sources#application-security-assessments).
 
+### Feature
+
+[Data Security Posture Management](https://docs.cloud.google.com/security-command-center/docs/dspm-data-security) has new controls in
+[Preview](https://cloud.google.com/products#product-launch-stages). The controls
+help you secure Cloud Storage objects and include the following:
+
+* Govern the minimum retention period for Cloud Storage objects
+* Require Customer-Managed Encryption for Cloud Storage objects
+* Restrict Public Access to Cloud Storage objects
+
+For more information, see
+[Advanced data governance and security cloud controls](https://docs.cloud.google.com/security-command-center/docs/dspm-data-security#advanced-cloud-controls).
+
 ---
 ## 2026-04-16
 

@@ -1,5 +1,17 @@
 # Google Kubernetes Engine
 
+## 2026-04-20
+
+### Feature
+
+Accelerator network profile is Generally Available (GA), simplifying your
+AI/ML node pool setup. Accelerator network profile automates networking
+configuration, including the creation of necessary VPCs and subnets, removing
+the need for complex, manual steps previously required for configuring
+GPU and TPU workloads. For details, see
+[Configure automated networking for accelerator VMs](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/config-auto-net-for-accelerators).
+
+---
 ## 2026-04-15
 
 ### Change

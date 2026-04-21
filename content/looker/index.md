@@ -1,5 +1,12 @@
 # Looker
 
+## 2026-04-20
+
+### Feature
+
+Now available in preview, the [Looker VS Code Extension](https://docs.cloud.google.com/looker/docs/getting-started-vscode-extension) brings LookML development to local desktop IDEs like Visual Studio Code, Claude Code, and Cursor. The extension supports syntax highlighting, autocomplete, real-time file synchronization with your Looker instance, and LookML validation. With the Looker MCP server, it enables [AI-assisted development](https://docs.cloud.google.com/looker/docs/ai-assisted-development-vscode), allowing you to use natural language with agents like Gemini to generate and edit LookML code.
+
+---
 ## 2026-04-15
 
 ### Breaking

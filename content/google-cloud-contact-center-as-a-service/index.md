@@ -1,5 +1,101 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-04-20
+
+### Announcement
+
+**Google Cloud CCaaS prerelease notes**
+
+Here are the pre-release notes for the next version of Google Cloud CCaaS. When
+we release this version, we expect the new capabilities to be as shown here.
+
+### Feature
+
+**Custom field mapping for HubSpot**
+
+You can map your web or mobile SDK custom data fields to your HubSpot
+installation's custom fields. At runtime, when the SDK sends a custom data
+value, the system writes the value to the mapped HubSpot custom field.
+
+Administrators: On the **Settings > Operation Management** page,
+there's a new **Custom Field Mapping** pane.
+
+### Feature
+
+**Web SDK v3: advanced call scheduling**
+
+Advanced call scheduling has the following capabilities:
+
+* **Day-based time slot selection**. End-users can browse available time
+  slots organized by day, with configurable intervals.
+* **Rescheduling**. If an end-user reopens the web SDK and has an existing
+  scheduled call, they're prompted to manage that appointment (reschedule or
+  cancel) before starting a new flow.
+* **Cancellation**. End-users can cancel a previously scheduled call using the
+  web SDK.
+
+### Feature
+
+**Headless web SDK updates**
+
+We've made the following updates to the headless web SDK:
+
+* New methods:
+
+  + **getFeatureFlags**. Get the current state of feature flags.
+  + **fetchTimeSlotAvailability**. Check if time slots are available for a
+    given menu.
+  + **restoreCobrowseSession**. Restores a cobrowse session after the
+    browser window is reopened.
+  + **getLogs**. Gets the internal debug logs collected by the SDK.
+* Updated signatures:
+
+  + **getTimeSlots**. Now includes a `GetTimeSlotsRequest` options object.
+  + **updatePostSession**. Now includes an `optInSelection` parameter.
+
+### Feature
+
+**Accessibility and design improvements**
+
+We've made the following accessibility and design improvements to the web SDK v3
+and the headless web SDK:
+
+* **WCAG Compliance**. Updated to comply with Web Content Accessibility
+  Guidelines (WCAG).
+* **Right-to-left support**. Now supports right-to-left languages: Arabic,
+  Hebrew, Farsi, and Urdu.
+* **Improved screen reader compatibility**. Improved support for screen
+  readers.
+* **Improved spacing**. Uses 4px-based spacing to improve the look and feel of
+  page displays.
+
+### Fixed
+
+The following issues were addressed in this release:
+
+* Fixed an issue where chats escalated by a virtual agent disconnected seconds
+  after assignment to a human agent, preventing the human agent and the end
+  user from interacting.
+* Fixed an issue where spurious chat interactions appeared in the **All
+  Interactions** dashboard, causing discrepancies in handled chat reporting
+  and incorrect failed session filtering.
+* Fixed a web SDK v3 issue where the out-of-office (OOO) deflection message
+  displayed in the end-user's chat window didn't match the message in the chat
+  transcript.
+* Fixed an issue where agents received incorrect **Missed target response
+  time** notifications in agent desktop SMS chats, even when responding
+  promptly.
+* Fixed an issue where agents attempting to access their contact center using
+  private ingress couldn't connect.
+* Fixed an issue where the **Allow transfers to queues outside of hours of
+  operation** checkbox was unexpectedly unavailable.
+* Fixed an issue where verified outbound phone numbers couldn't be added to a
+  queue because the selection field was empty, preventing administrators from
+  assigning new phone numbers.
+* Fixed an issue where attempts to rename IVR queues using redirection data in
+  legacy YAML files resulted in errors.
+
+---
 ## 2026-04-15
 
 ### Announcement

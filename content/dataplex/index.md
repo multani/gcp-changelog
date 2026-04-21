@@ -17,6 +17,14 @@ You can now build and run a Knowledge Catalog discovery agent to get more releva
 
 For more information, see [Build an agent to discover your data](https://cloud.google.com/dataplex/docs/use-discovery-agent).
 
+### Feature
+
+To further refine lineage graphs, Knowledge Catalog lineage views include new
+highlight and filter modes. This feature is available in
+[preview](https://cloud.google.com/products#product-launch-stages).
+For more information, see
+[Apply filters and highlighting for a focused view](https://cloud.google.com/dataplex/docs/lineage-views#lineage-filtered-view).
+
 ---
 ## 2026-04-16
 

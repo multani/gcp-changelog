@@ -2,9 +2,148 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-04-15T00:00:00+00:00</updated>
+  <updated>2026-04-20T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-20:announcement:0</id>
+    <published>2026-04-20T00:00:00+00:00</published>
+    <updated>2026-04-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS prerelease notes</strong></p>
+<p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
+we release this version, we expect the new capabilities to be as shown here.</p>]]></content>
+    <summary>Get ready for the next version of our Contact Center as a Service offering. These pre-release notes provide a glimpse into the upcoming capabilities that will enhance your customer experience.</summary>
+    <title>Announcement: New CCaaS Version Coming Soon</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-20:feature:1</id>
+    <published>2026-04-20T00:00:00+00:00</published>
+    <updated>2026-04-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Custom field mapping for HubSpot</strong></p>
+<p>You can map your web or mobile SDK custom data fields to your HubSpot
+installation's custom fields. At runtime, when the SDK sends a custom data
+value, the system writes the value to the mapped HubSpot custom field.</p>
+<p>Administrators: On the <strong>Settings &gt; Operation Management</strong> page,
+there's a new <strong>Custom Field Mapping</strong> pane.</p>]]></content>
+    <summary>You can now map your web or mobile SDK custom data fields directly to your HubSpot installation's custom fields. This allows the system to automatically write custom data values to the corresponding HubSpot fields when sent by the SDK. Administrators can configure these mappings on the Settings &gt; Operation Management page.</summary>
+    <title>Feature: Map SDK data to HubSpot fields</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-20:feature:2</id>
+    <published>2026-04-20T00:00:00+00:00</published>
+    <updated>2026-04-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Web SDK v3: advanced call scheduling</strong></p>
+<p>Advanced call scheduling has the following capabilities:</p>
+<ul>
+<li><strong>Day-based time slot selection</strong>. End-users can browse available time
+  slots organized by day, with configurable intervals.</li>
+<li><strong>Rescheduling</strong>. If an end-user reopens the web SDK and has an existing
+  scheduled call, they're prompted to manage that appointment (reschedule or
+  cancel) before starting a new flow.</li>
+<li><strong>Cancellation</strong>. End-users can cancel a previously scheduled call using the
+  web SDK.</li>
+</ul>]]></content>
+    <summary>Web SDK v3 now supports advanced call scheduling, allowing users to select day-based time slots, reschedule existing appointments, and cancel calls directly through the SDK.</summary>
+    <title>Feature: Schedule calls with Web SDK v3</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-20:feature:3</id>
+    <published>2026-04-20T00:00:00+00:00</published>
+    <updated>2026-04-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Headless web SDK updates</strong></p>
+<p>We've made the following updates to the headless web SDK:</p>
+<ul>
+<li>
+<p>New methods:</p>
+</li>
+<li>
+<p><strong>getFeatureFlags</strong>. Get the current state of feature flags.</p>
+</li>
+<li><strong>fetchTimeSlotAvailability</strong>. Check if time slots are available for a
+    given menu.</li>
+<li><strong>restoreCobrowseSession</strong>. Restores a cobrowse session after the
+    browser window is reopened.</li>
+<li><strong>getLogs</strong>. Gets the internal debug logs collected by the SDK.</li>
+<li>
+<p>Updated signatures:</p>
+</li>
+<li>
+<p><strong>getTimeSlots</strong>. Now includes a <code>GetTimeSlotsRequest</code> options object.</p>
+</li>
+<li><strong>updatePostSession</strong>. Now includes an <code>optInSelection</code> parameter.</li>
+</ul>]]></content>
+    <summary>The headless web SDK has been updated with new methods for feature flags, time slot availability, cobrowse session restoration, and log retrieval. Additionally, existing methods like getTimeSlots and updatePostSession have received signature updates to provide more functionality.</summary>
+    <title>Feature: Headless SDK Improvements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-20:feature:4</id>
+    <published>2026-04-20T00:00:00+00:00</published>
+    <updated>2026-04-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Accessibility and design improvements</strong></p>
+<p>We've made the following accessibility and design improvements to the web SDK v3
+and the headless web SDK:</p>
+<ul>
+<li><strong>WCAG Compliance</strong>. Updated to comply with Web Content Accessibility
+  Guidelines (WCAG).</li>
+<li><strong>Right-to-left support</strong>. Now supports right-to-left languages: Arabic,
+  Hebrew, Farsi, and Urdu.</li>
+<li><strong>Improved screen reader compatibility</strong>. Improved support for screen
+  readers.</li>
+<li><strong>Improved spacing</strong>. Uses 4px-based spacing to improve the look and feel of
+  page displays.</li>
+</ul>]]></content>
+    <summary>The web SDK v3 and headless web SDK have received significant accessibility and design improvements, including WCAG compliance, right-to-left language support, enhanced screen reader compatibility, and refined spacing for a better user experience.</summary>
+    <title>Feature: SDK Accessibility and Design Enhancements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-04-20:fixed:5</id>
+    <published>2026-04-20T00:00:00+00:00</published>
+    <updated>2026-04-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were addressed in this release:</p>
+<ul>
+<li>Fixed an issue where chats escalated by a virtual agent disconnected seconds
+  after assignment to a human agent, preventing the human agent and the end
+  user from interacting.</li>
+<li>Fixed an issue where spurious chat interactions appeared in the <strong>All
+  Interactions</strong> dashboard, causing discrepancies in handled chat reporting
+  and incorrect failed session filtering.</li>
+<li>Fixed a web SDK v3 issue where the out-of-office (OOO) deflection message
+  displayed in the end-user's chat window didn't match the message in the chat
+  transcript.</li>
+<li>Fixed an issue where agents received incorrect <strong>Missed target response
+  time</strong> notifications in agent desktop SMS chats, even when responding
+  promptly.</li>
+<li>Fixed an issue where agents attempting to access their contact center using
+  private ingress couldn't connect.</li>
+<li>Fixed an issue where the <strong>Allow transfers to queues outside of hours of
+  operation</strong> checkbox was unexpectedly unavailable.</li>
+<li>Fixed an issue where verified outbound phone numbers couldn't be added to a
+  queue because the selection field was empty, preventing administrators from
+  assigning new phone numbers.</li>
+<li>Fixed an issue where attempts to rename IVR queues using redirection data in
+  legacy YAML files resulted in errors.</li>
+</ul>]]></content>
+    <summary>Several issues have been resolved, including chat disconnections after agent assignment, inaccurate reporting on the All Interactions dashboard, and discrepancies in out-of-office messages. Additionally, fixes have been implemented for agent notifications, connectivity problems with private ingress, queue transfer settings, verified outbound number assignments, and IVR queue renaming.</summary>
+    <title>Fixed: Resolved chat and reporting issues</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

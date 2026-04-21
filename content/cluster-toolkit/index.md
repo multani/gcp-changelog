@@ -1,5 +1,17 @@
 # Cluster Toolkit
 
+## 2026-04-16
+
+### Feature
+
+Cluster Toolkit version v1.88.0 is available. This release adds dynamic
+machine configurations by using the Compute Engine API. This release also
+refactors the naming convention for Helm releases within the `kubectl-apply`
+module, which helps to improve the predictability and maintainability of
+deployed resources. For details, see the [Release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5506).
+
+---
 ## 2026-04-13
 
 ### Feature

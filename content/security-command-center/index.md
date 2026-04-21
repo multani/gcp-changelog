@@ -108,6 +108,24 @@ exposure scores of their findings, resources, and issues. For information about
 these changes, see [Default high-value resource set](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-learn#default-high-value-resource-set).
 
 ---
+## 2026-03-25
+
+### Change
+
+The following Compliance Manager frameworks were updated:
+
+* CIS GKE 1.7 (version 3.0)
+* CIS Critical Security Controls v8 (version 6.0)
+* CSA Cloud Controls Matrix v4.0.11 (version 5.0)
+* ISO 27001:2022 (version 7.0)
+* Qutar National Information Assurance Standard v2.1 (version 4.0)
+* NIST 800-53 Revision 5 (version 7.0)
+* NIST Cybersecurity Framework 1.1 (version 6.0)
+* PCI DSS v4.0.1 (version 4.0)
+* Security Essentials (version 12.0)
+* SOC 2017 (version 5.0)
+
+---
 ## 2026-03-16
 
 ### Change

@@ -1,5 +1,15 @@
 # Spanner
 
+## 2026-04-21
+
+### Feature
+
+Spanner full-text search supports
+[custom dictionaries](https://docs.cloud.google.com/spanner/docs/full-text-search/search-query-enhancement#custom-dictionaries)
+to create custom synonym mappings. You can use custom dictionaries with the
+`SEARCH`, `SCORE`, and `SNIPPET` functions.
+
+---
 ## 2026-04-20
 
 ### Feature

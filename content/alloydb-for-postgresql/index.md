@@ -1,5 +1,27 @@
 # AlloyDB for PostgreSQL
 
+## 2026-04-21
+
+### Feature
+
+The integration between AlloyDB for PostgreSQL and Knowledge Catalog (in [Preview](https://cloud.google.com/products#product-launch-stages)) is now enabled by default for all new AlloyDB clusters.
+
+This integration provides a unified view of your metadata to simplify data governance and analysis. Recent enhancements feature near real-time synchronization, with updates reflecting in Knowledge Catalog within minutes, as well as expanded metadata details that now include Primary Keys and Foreign Keys.
+
+For more information, see [Integrate AlloyDB for PostgreSQL with Knowledge Catalog](https://docs.cloud.google.com/alloydb/docs/knowledge-catalog-integration).
+
+### Feature
+
+You can now use the AlloyDB columnar engine to act as a read-optimized,
+in-memory cache for HNSW indexes. This
+increases the number of queries per second (QPS) that your database can handle
+for vector search workloads. This feature is available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [Accelerate vector search with the
+columnar engine](https://docs.cloud.google.com/alloydb/docs/ai/accelerate-with-ce).
+
+---
 ## 2026-04-20
 
 ### Feature

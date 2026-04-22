@@ -1,16 +1,33 @@
 # Gemini Enterprise
 
+## 2026-04-21
+
+### Feature
+
+**Gemini Enterprise: Register agents using A2UI and A2A with Gemini Enterprise (Preview)**
+
+Gemini Enterprise administrators can register and manage agents using [Agent to
+UI (A2UI)](https://a2ui.org/introduction/what-is-a2ui/) to build custom
+interfaces and the [Agent2Agent (A2A) Protocol](https://a2a-protocol.org/) for
+communication with Gemini Enterprise.
+
+This feature is in Public Preview. For more information, see:
+
+* [Register and manage agents using A2UI and A2A](https://docs.cloud.google.com/gemini/enterprise/docs/a2ui-agents/register-and-manage-an-a2ui-agent)
+* [A2UI component gallery reference](https://docs.cloud.google.com/gemini/enterprise/docs/a2ui-agents/a2ui-component-gallery-reference)
+
+---
 ## 2026-04-20
 
 ### Feature
 
-**Gemini Enterprise: Request access to Google Cloud Marketplace agents**
+**Gemini Enterprise: Request access to Google Cloud Marketplace agents (Preview)**
 
 End users can request access to Google Cloud Marketplace agents from
 Agent Gallery. Admins can configure the visibility of these agents,
 view purchase requests, and manage access requests.
 
-For more information, see:
+This feature is in Public Preview. For more information, see:
 
 * [Browse agents with Agent Gallery](https://docs.cloud.google.com/gemini/enterprise/docs/agent-gallery)
 * [Add and manage A2A agents from Google Cloud Marketplace](https://docs.cloud.google.com/gemini/enterprise/docs/register-and-manage-marketplace-agents)
@@ -190,8 +207,7 @@ documents** feature lets you search and index documents outside your
 organization. Enable this setting during app creation or on the **Manage web app
 features** page for existing apps.
 
-This feature is in Public Preview. For more information, see [Create an app](https://docs.cloud.google.com/gemini/enterprise/docs/create-app) and [Manage web app
-features](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
+This feature is in Public Preview. For more information, see [Create an app](https://docs.cloud.google.com/gemini/enterprise/docs/create-app) and [Manage web app features](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
 
 ---
 ## 2026-03-26

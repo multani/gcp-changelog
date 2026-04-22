@@ -1,5 +1,31 @@
 # Google Kubernetes Engine
 
+## 2026-04-21
+
+### Feature
+
+For clusters running GKE version 1.35.3-gke.1389000 or later,
+you can now use the `c4a-highmem-96-metal`
+([Preview](https://cloud.google.com/products#product-launch-stages)) machine
+type from the C4A machine series with the following features:
+
+* [Autopilot](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview) mode
+* [Node auto-provisioning](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/node-auto-provisioning#cluster-level-enablement)
+* [ComputeClasses](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/about-compute-classes)
+  that auto-create node pools
+* [Cluster autoscaling](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/cluster-autoscaler)
+
+### Feature
+
+Starting in GKE version 1.35.2-gke.1842000, you can install
+the Slurm Operator add-on for GKE ([Preview](https://cloud.google.com/products#product-launch-stages)).
+This managed installation of the Slurm Operator allows you to enable Slurm
+scheduling capabilities on any GKE cluster. The add-on provides
+the foundation to build customized AI and HPC platforms, including CPU, GPU,
+and TPU machines (covering specific scenarios). For more information, see
+[About Slurm on GKE](https://docs.cloud.google.com/kubernetes-engine/docs/add-on/slurm-on-gke/concepts/overview).
+
+---
 ## 2026-04-20
 
 ### Feature

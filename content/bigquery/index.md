@@ -1,5 +1,15 @@
 # BigQuery
 
+## 2026-04-21
+
+### Feature
+
+You can now [visualize BigQuery graph query results and graph
+schemas](https://docs.cloud.google.com/bigquery/docs/graph-visualization#visualization-results) directly in
+BigQuery Studio, without the need of a notebook environment. This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-04-20
 
 ### Change
